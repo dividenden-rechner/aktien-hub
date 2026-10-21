@@ -16,3 +16,9 @@
 #hub-global-header .hub-brand-name{color:#14202b;font-weight:700}
 #hub-global-header .hub-brand-name span{color:#2f9e5b;font-weight:600}
 @media(max-width:420px){#hub-global-header .hub-brand{font-size:16px}#hub-global-header .hub-logo{width:32px;height:32px}}
+
+/* Gleiche Header-Darstellung auf Aktien und Rechner wie auf allen anderen Seiten */
+#hub-global-header{width:100%;margin:0;padding:0;box-shadow:none;line-height:1.5}
+#hub-global-header .hub-nav-inner{width:100%;min-height:64px}
+#hub-global-header .hub-brand-name{font-size:inherit;line-height:1.4}
+#hub-global-header .hub-links a{display:inline-block}
