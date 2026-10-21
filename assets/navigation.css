@@ -1,0 +1,18 @@
+/* Einheitliche Hauptnavigation des Aktien-Hubs */
+#hub-global-header{position:sticky;top:0;z-index:1000;background:#fff;border-bottom:1px solid #dfe5ea;font-family:"IBM Plex Sans",system-ui,-apple-system,"Segoe UI",sans-serif;color:#14202b}
+#hub-global-header *{box-sizing:border-box}
+#hub-global-header .hub-nav-inner{max-width:1080px;margin:auto;padding:10px 16px;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:8px 20px}
+#hub-global-header .hub-brand{color:#14202b;text-decoration:none;font-weight:700;font-size:19px;line-height:1.4;white-space:nowrap}
+#hub-global-header .hub-brand span{color:#2f9e5b;font-weight:600}
+#hub-global-header .hub-links{display:flex;align-items:center;flex-wrap:wrap;gap:2px 5px}
+#hub-global-header .hub-links a{color:#14202b;text-decoration:none;font-size:15px;font-weight:500;line-height:1.5;padding:6px 9px;border-radius:8px}
+#hub-global-header .hub-links a:hover{background:#f0f8f3;color:#1a7a45}
+#hub-global-header .hub-links a[aria-current="page"]{background:#f0f8f3;color:#1a7a45;font-weight:700}
+@media(max-width:680px){#hub-global-header{position:relative}#hub-global-header .hub-nav-inner{gap:6px}#hub-global-header .hub-links{width:100%;overflow-x:auto;flex-wrap:nowrap;padding-bottom:2px}#hub-global-header .hub-links a{white-space:nowrap;font-size:14px;padding:6px 8px}}
+
+/* Kompaktes Original-Logo in der globalen Kopfzeile */
+#hub-global-header .hub-brand{display:inline-flex;align-items:center;gap:10px}
+#hub-global-header .hub-logo{display:block;width:36px;height:36px;object-fit:contain;flex:none}
+#hub-global-header .hub-brand-name{color:#14202b;font-weight:700}
+#hub-global-header .hub-brand-name span{color:#2f9e5b;font-weight:600}
+@media(max-width:420px){#hub-global-header .hub-brand{font-size:16px}#hub-global-header .hub-logo{width:32px;height:32px}}
