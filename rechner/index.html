@@ -135,7 +135,47 @@ article.wide>.calc-wrap{max-width:none}
 .tool .tablewrap[hidden]{display:none}
 
 </style>
-<link rel="stylesheet" href="../assets/navigation.css"></head>
+<link rel="stylesheet" href="../assets/navigation.css?v=header-20261022"><style>
+/* Einheitliche Hauptnavigation des Aktien-Hubs */
+#hub-global-header{position:sticky;top:0;z-index:1000;background:#fff;border-bottom:1px solid #dfe5ea;font-family:"IBM Plex Sans",system-ui,-apple-system,"Segoe UI",sans-serif;color:#14202b}
+#hub-global-header *{box-sizing:border-box}
+#hub-global-header .hub-nav-inner{max-width:1080px;margin:auto;padding:10px 16px;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:8px 20px}
+#hub-global-header .hub-brand{color:#14202b;text-decoration:none;font-weight:700;font-size:19px;line-height:1.4;white-space:nowrap}
+#hub-global-header .hub-brand span{color:#2f9e5b;font-weight:600}
+#hub-global-header .hub-links{display:flex;align-items:center;flex-wrap:wrap;gap:2px 5px}
+#hub-global-header .hub-links a{color:#14202b;text-decoration:none;font-size:15px;font-weight:500;line-height:1.5;padding:6px 9px;border-radius:8px}
+#hub-global-header .hub-links a:hover{background:#f0f8f3;color:#1a7a45}
+#hub-global-header .hub-links a[aria-current="page"]{background:#f0f8f3;color:#1a7a45;font-weight:700}
+@media(max-width:680px){#hub-global-header{position:relative}#hub-global-header .hub-nav-inner{gap:6px}#hub-global-header .hub-links{width:100%;overflow-x:auto;flex-wrap:nowrap;padding-bottom:2px}#hub-global-header .hub-links a{white-space:nowrap;font-size:14px;padding:6px 8px}}
+
+/* Kompaktes Original-Logo in der globalen Kopfzeile */
+#hub-global-header .hub-brand{display:inline-flex;align-items:center;gap:10px}
+#hub-global-header .hub-logo{display:block;width:36px;height:36px;object-fit:contain;flex:none}
+#hub-global-header .hub-brand-name{color:#14202b;font-weight:700}
+#hub-global-header .hub-brand-name span{color:#2f9e5b;font-weight:600}
+@media(max-width:420px){#hub-global-header .hub-brand{font-size:16px}#hub-global-header .hub-logo{width:32px;height:32px}}
+
+/* Gleiche Header-Darstellung auf Aktien und Rechner wie auf allen anderen Seiten */
+#hub-global-header{width:100%;margin:0;padding:0;box-shadow:none;line-height:1.5}
+#hub-global-header .hub-nav-inner{width:100%;min-height:64px}
+#hub-global-header .hub-brand-name{font-size:inherit;line-height:1.4}
+#hub-global-header .hub-links a{display:inline-block}
+
+/* Einheitliche Screener-Kopfzeile: unabhängig von Seiten-CSS */
+#hub-global-header{display:block!important;position:sticky!important;top:0!important;left:0!important;right:0!important;width:100%!important;max-width:none!important;margin:0!important;padding:0!important;background:#fff!important;border-bottom:1px solid #dfe5ea!important;z-index:1000!important;box-sizing:border-box!important}
+#hub-global-header .hub-nav-inner{box-sizing:border-box!important;max-width:1080px!important;width:100%!important;min-height:64px!important;margin:0 auto!important;padding:10px 16px!important;display:flex!important;align-items:center!important;justify-content:space-between!important;gap:8px 20px!important}
+#hub-global-header .hub-brand{display:inline-flex!important;align-items:center!important;gap:10px!important;flex:none!important;font-size:19px!important;font-weight:700!important;text-decoration:none!important;color:#14202b!important;white-space:nowrap!important}
+#hub-global-header .hub-brand-name{color:#14202b!important}
+#hub-global-header .hub-brand-name span{color:#2f9e5b!important}
+#hub-global-header .hub-logo{display:block!important;width:36px!important;height:36px!important;object-fit:contain!important;flex:none!important}
+#hub-global-header .hub-links{display:flex!important;align-items:center!important;justify-content:flex-end!important;gap:2px 5px!important;flex-wrap:wrap!important;width:auto!important;margin:0!important;padding:0!important}
+#hub-global-header .hub-links a{display:inline-block!important;width:auto!important;color:#14202b!important;text-decoration:none!important;font-size:15px!important;font-weight:500!important;line-height:1.5!important;padding:6px 9px!important;border-radius:8px!important}
+#hub-global-header .hub-links a:hover,#hub-global-header .hub-links a[aria-current="page"]{background:#f0f8f3!important;color:#1a7a45!important}
+#hub-global-header .hub-links a[aria-current="page"]{font-weight:700!important}
+@media(max-width:760px){#hub-global-header .hub-nav-inner{flex-wrap:wrap!important}#hub-global-header .hub-links{width:100%!important;justify-content:flex-start!important;flex-wrap:nowrap!important;overflow-x:auto!important}#hub-global-header .hub-links a{white-space:nowrap!important}}
+
+</style>
+</head>
 <body class="tools">
 <header id="hub-global-header"><div class="hub-nav-inner"><a class="hub-brand" href="../"><img class="hub-logo" src="../assets/logo.png" alt="" width="36" height="36"> <span class="hub-brand-name">Dividenden-Rechner <span>Aktien-Hub</span></span></a><nav class="hub-links" aria-label="Hauptmenü"><a href="../rechner/" aria-current="page">Rechner</a><a href="../aktien/">Aktien</a><a href="../screener/">Screener</a><a href="../einfuehrung/">Einführung</a><a href="../grundlagen/">Grundlagen</a><a href="../fortgeschrittene/">Fortgeschrittene</a></nav></div></header>
 <main class="wrap"><article class="wide">
