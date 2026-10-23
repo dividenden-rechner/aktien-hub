@@ -1,64 +1,673 @@
-<!doctype html><html lang="de"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Aktien-Screener | Dividenden-Rechner Aktien-Hub</title><style>
-:root{--green:#10b981;--deep:#087f60;--ink:#10243c;--muted:#617187;--line:#dce4eb;--bg:#f6f9f8}*{box-sizing:border-box}body{margin:0;font-family:Arial,Helvetica,sans-serif;color:var(--ink);background:#fff}header{border-bottom:1px solid var(--line);background:#fff}.wrap{max-width:1360px;margin:auto;padding:0 24px}.head{display:flex;align-items:center;justify-content:space-between;min-height:66px;gap:15px}.brand{font-size:20px;font-weight:800;color:var(--ink);text-decoration:none}.brand span{color:var(--green)}nav{display:flex;gap:8px;flex-wrap:wrap}nav a{padding:10px 13px;text-decoration:none;color:#24374e;font-size:14px;border-radius:7px}nav a.active{background:#e6f8f1;color:var(--deep);font-weight:700}main{padding:30px 24px 60px;max-width:1360px;margin:auto}.crumb{font-size:13px;color:var(--muted)}h1{font-size:34px;margin:14px 0 8px;letter-spacing:-.8px}p.lead{color:var(--muted);margin:0 0 26px;line-height:1.6}.panel{border:1px solid var(--line);border-radius:13px;overflow:hidden;background:#fff;box-shadow:0 7px 24px #0a493e08}.toolbar{display:flex;flex-wrap:wrap;align-items:end;gap:12px;padding:16px;background:#fbfdfc;border-bottom:1px solid var(--line)}label{font-size:12px;font-weight:700;color:#52647a;display:block;margin-bottom:6px}select,input{font:inherit;border:1px solid #ccd7e1;border-radius:7px;background:#fff;color:var(--ink);padding:10px;min-height:40px}select:focus,input:focus{outline:2px solid #7bdec0;outline-offset:1px}.field{min-width:150px;flex:1}.field select,.field input{width:100%}button{font:inherit;cursor:pointer;border-radius:7px;border:1px solid #cbd8df;background:#fff;color:var(--ink);padding:10px 14px;font-weight:700}button.primary{background:var(--green);border-color:var(--green);color:#fff}button.primary:hover{background:var(--deep)}button.ghost:hover{background:#eff9f5}.tabs{display:flex;gap:5px;flex-wrap:wrap;padding:12px 16px;border-bottom:1px solid var(--line)}.tab{padding:9px 13px;border:0;background:transparent;color:#607187}.tab.on{background:#e5f7f0;color:#087f60}.filters{padding:18px}.filters-header{display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap}.filters-header h2{font-size:17px;margin:0}.muted{color:var(--muted);font-size:13px}.grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px 20px;margin:18px 0}.filter{display:grid;grid-template-columns:minmax(95px,1fr) minmax(105px,1.15fr);align-items:center;gap:9px}.filter>label{margin:0;text-align:right;line-height:1.3}.filter select{width:100%;min-width:0;padding:8px;font-size:13px}.custom{border-top:1px solid var(--line);padding-top:16px}.rule{display:grid;grid-template-columns: minmax(180px,2.4fr) minmax(115px,1fr) minmax(90px,1fr) minmax(95px,1fr) 36px;gap:9px;margin:10px 0}.rule select,.rule input{width:100%;min-width:0}.rule button{padding:8px;color:#ad3343}.rowactions{display:flex;gap:9px;flex-wrap:wrap;margin:16px 0}.note{background:#effaf5;border-left:3px solid var(--green);padding:12px 15px;border-radius:5px;font-size:13px;line-height:1.55}.result{margin-top:22px}.result-head{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:10px}.result h2{font-size:21px;margin:0 0 14px}.tablewrap{overflow:auto;border:1px solid var(--line);border-radius:11px}table{border-collapse:collapse;width:100%;font-size:13px;min-width:850px}th{background:#f0f8f4;color:#174a3c;text-align:left;white-space:nowrap;cursor:pointer}td,th{padding:13px;border-bottom:1px solid #e8edef}tr:hover td{background:#fbfefc}td.ticker{font-weight:800;color:var(--deep)}.badge{background:#e7f7ef;border-radius:20px;padding:4px 8px;font-size:11px;color:#087f60}.empty{text-align:center;color:var(--muted);padding:35px}.footer{color:var(--muted);font-size:12px;margin-top:16px;line-height:1.6}@media(max-width:1050px){.grid{grid-template-columns:repeat(2,minmax(0,1fr))}}@media(max-width:650px){.wrap{padding:0 14px}main{padding:22px 14px}.head{align-items:flex-start;flex-direction:column;padding:12px 0}.grid{grid-template-columns:1fr}.filter{grid-template-columns:120px 1fr}.rule{grid-template-columns:1fr 1fr}.rule select:first-child{grid-column:1/-1}.rule button{grid-column:2}h1{font-size:27px}}
-</style><link rel="stylesheet" href="../assets/navigation.css"></head><body><header id="hub-global-header"><div class="hub-nav-inner"><a class="hub-brand" href="../"><img class="hub-logo" src="../assets/logo.png" alt="" width="36" height="36"> <span class="hub-brand-name">Dividenden-Rechner <span>Aktien-Hub</span></span></a><nav class="hub-links" aria-label="Hauptmenü"><a href="../rechner/">Rechner</a><a href="../aktien/">Aktien</a><a href="../screener/" aria-current="page">Screener</a><a href="../einfuehrung/">Einführung</a><a href="../grundlagen/">Grundlagen</a><a href="../fortgeschrittene/">Fortgeschrittene</a></nav></div></header><main><div class="crumb">Start › Aktien › Screener</div><h1>Aktien-Screener</h1><p class="lead">Finde Aktien nach Bewertung, Wachstum, Dividenden, Bilanz und Cashflow. Auch mit Kennzahlen für REITs und BDCs.</p><section class="panel"><div class="toolbar"><div class="field"><label for="preset">Strategie-Vorlage</label><select id="preset"><option value="">Eigene Auswahl</option><option value="dividend">Dividendenqualität</option><option value="growth">Profitables Wachstum</option><option value="value">Günstige Bewertung</option><option value="reit">REITs – AFFO &amp; NAV</option><option value="bdc">BDCs – NII &amp; NAV</option></select></div><div class="field"><label for="sort">Sortieren nach</label><select id="sort"><option value="marketCap">Marktkapitalisierung</option><option value="yield">Dividendenrendite</option><option value="revenueGrowth">Umsatzwachstum</option><option value="pe">KGV</option><option value="roe">Eigenkapitalrendite</option></select></div><div class="field"><label for="direction">Reihenfolge</label><select id="direction"><option value="desc">Absteigend</option><option value="asc">Aufsteigend</option></select></div><div class="field"><label for="search">Aktien / Kürzel suchen</label><input id="search" placeholder="z. B. ALP"></div><button id="reset">Zurücksetzen</button></div><div class="tabs" id="tabs"><button class="tab on" data-tab="all">Alle Kennzahlen</button><button class="tab" data-tab="valuation">Bewertung</button><button class="tab" data-tab="growth">Wachstum</button><button class="tab" data-tab="dividend">Dividenden</button><button class="tab" data-tab="quality">Rentabilität</button><button class="tab" data-tab="cashflow">Cashflow</button><button class="tab" data-tab="debt">Bilanz</button><button class="tab" data-tab="reit">REITs</button><button class="tab" data-tab="bdc">BDCs</button></div><div class="filters"><div class="filters-header"><h2>Fundamentaldaten auswählen</h2><span class="muted">Schnellfilter oben · beliebig viele Detailfilter unten</span></div><div class="grid" id="quick"></div><div class="custom"><div class="filters-header"><h2>Individuelle Filter</h2><span class="muted">Alle aktiven Bedingungen werden mit UND verknüpft.</span></div><div id="rules"></div><div class="rowactions"><button class="primary" id="add">+ Kennzahl hinzufügen</button><button id="run">Aktien suchen</button><button id="csv">Ergebnisse als CSV</button></div></div><div class="note"><strong>FMP-Live-Daten:</strong> Keine erfundenen Firmen. Verwendet denselben persönlichen FMP-API-Key wie deine Aktienseite. Der Schlüssel wird nur in deinem Browser gespeichert. Es werden ausschließlich tatsächlich gelieferte Daten angezeigt. Spezialkennzahlen wie AFFO/NII bleiben leer, wenn FMP sie nicht strukturiert liefert. <a href="https://site.financialmodelingprep.com/de/developer/docs" target="_blank" rel="noopener">FMP-Dokumentation</a>.</div><div class="toolbar" style="margin-top:14px"><div class="field"><label for="endpoint">FMP-Verbindung</label><input id="endpoint" type="text" value="FMP Stable API · gleicher Browser-Key wie Aktienseite" readonly aria-label="FMP-Datenquelle"></div><div class="field"><label for="symbols">Aktien-Kürzel (optional, Komma getrennt)</label><input id="symbols" placeholder="AAPL, MSFT, JNJ, O, ARCC"></div><div class="field" style="flex:0 0 auto"><button id="keybtn" type="button">🔑 API-Key ändern</button><button class="primary" id="load">Echte FMP-Daten laden</button></div></div><p class="muted" id="status" role="status" aria-live="polite">Noch keine Daten geladen. Dein Key wird aus der Aktienseite übernommen, falls vorhanden.</p></div></section><section class="result"><div class="result-head"><h2>Ergebnisse <span class="muted" id="count"></span></h2><span class="muted">Spaltenüberschriften zum Sortieren anklicken</span></div><div class="tablewrap"><table><thead><tr id="columns"></tr></thead><tbody id="body"></tbody></table></div><p class="footer">Keine Anlageberatung. Datenquelle: Financial Modeling Prep (FMP). Kennzahlen sind nicht zwingend zeitgleich aktualisiert. Fehlende Kennzahlen werden nicht als null bewertet; Aktien mit fehlendem Wert erfüllen einen entsprechenden Filter nicht.</p></section></main><script>
-const defs=[
-['marketCap','Marktkapitalisierung','valuation','Mrd. €'],['pe','KGV','valuation','x'],['forwardPe','Erwartetes KGV','valuation','x'],['pb','KBV','valuation','x'],['ps','KUV','valuation','x'],['peg','PEG-Verhältnis','valuation','x'],['evEbitda','EV / EBITDA','valuation','x'],['evEbit','EV / EBIT','valuation','x'],['pFcf','Kurs / Free Cashflow','valuation','x'],['evSales','EV / Umsatz','valuation','x'],['earningsYield','Gewinnrendite','valuation','%'],['fcfYield','Free-Cashflow-Rendite','valuation','%'],
-['revenue','Umsatz','growth','Mrd. €'],['revenueGrowth','Umsatzwachstum (1 Jahr)','growth','%'],['revenueGrowth3','Umsatzwachstum (3 Jahre p. a.)','growth','%'],['revenueGrowth5','Umsatzwachstum (5 Jahre p. a.)','growth','%'],['epsGrowth','Gewinnwachstum je Aktie (1 Jahr)','growth','%'],['epsGrowth3','Gewinnwachstum je Aktie (3 Jahre p. a.)','growth','%'],['epsGrowth5','Gewinnwachstum je Aktie (5 Jahre p. a.)','growth','%'],['netIncomeGrowth','Jahresüberschuss-Wachstum','growth','%'],['fcfGrowth','Free-Cashflow-Wachstum','growth','%'],['divGrowth','Dividendenwachstum (5 Jahre p. a.)','growth','%'],
-['yield','Dividendenrendite','dividend','%'],['divPerShare','Dividende je Aktie','dividend','€'],['payout','Ausschüttungsquote (Gewinn)','dividend','%'],['payoutFcf','Ausschüttungsquote (Free Cashflow)','dividend','%'],['divYears','Jahre ohne Dividendenkürzung','dividend','Jahre'],['divGrowth1','Dividendenwachstum (1 Jahr)','dividend','%'],['divCoverage','Dividenden-Deckungsgrad','dividend','x'],
-['roe','Eigenkapitalrendite (ROE)','quality','%'],['roic','Kapitalrendite (ROIC)','quality','%'],['roce','Rendite auf eingesetztes Kapital (ROCE)','quality','%'],['roa','Gesamtkapitalrendite (ROA)','quality','%'],['grossMargin','Bruttomarge','quality','%'],['operatingMargin','Operative Marge','quality','%'],['netMargin','Nettomarge','quality','%'],['ebitdaMargin','EBITDA-Marge','quality','%'],['eps','Gewinn je Aktie (EPS)','quality','€'],['netIncome','Jahresüberschuss','quality','Mio. €'],
-['operatingCash','Operativer Cashflow','cashflow','Mio. €'],['fcf','Free Cashflow','cashflow','Mio. €'],['capex','Investitionen (CapEx)','cashflow','Mio. €'],['capexRevenue','CapEx / Umsatz','cashflow','%'],['fcfMargin','Free-Cashflow-Marge','cashflow','%'],['fcfConversion','Gewinn-zu-Cashflow-Umwandlung','cashflow','%'],['interestPaid','Gezahlte Zinsen','cashflow','Mio. €'],
-['netDebt','Nettoverschuldung','debt','Mio. €'],['totalDebt','Gesamtschulden','debt','Mio. €'],['debtEquity','Schulden / Eigenkapital','debt','x'],['netDebtEbitda','Nettoverschuldung / EBITDA','debt','x'],['interestCoverage','Zinsdeckungsgrad','debt','x'],['currentRatio','Liquidität 3. Grades','debt','x'],['quickRatio','Liquidität 2. Grades','debt','x'],['equityRatio','Eigenkapitalquote','debt','%'],
-['ffo','Funds from Operations (FFO)','reit','Mio. €'],['ffoShare','FFO je Aktie','reit','€'],['affo','Adjusted FFO (AFFO)','reit','Mio. €'],['affoShare','AFFO je Aktie','reit','€'],['pAffo','Kurs / AFFO','reit','x'],['pFfo','Kurs / FFO','reit','x'],['navShare','Nettoinventarwert (NAV) je Aktie','reit','€'],['pNav','Kurs / NAV','reit','x'],['affoPayout','AFFO-Ausschüttungsquote','reit','%'],['occupancy','Vermietungsquote','reit','%'],['ltv','Beleihungsquote (LTV)','reit','%'],
-['nii','Net Investment Income (NII)','bdc','Mio. €'],['niiShare','NII je Aktie','bdc','€'],['niiCoverage','NII-Ausschüttungsdeckung','bdc','x'],['bdcNav','BDC-NAV je Aktie','bdc','€'],['bdcPnav','Kurs / BDC-NAV','bdc','x'],['nonAccrual','Notleidende Kredite (Non-Accrual)','bdc','%'],['portfolioYield','Portfoliorendite','bdc','%'],['bdcLeverage','Fremdkapital / Eigenkapital (BDC)','bdc','x']
-];const D=Object.fromEntries(defs.map(x=>[x[0],{key:x[0],name:x[1],cat:x[2],unit:x[3]}]));const groups={valuation:['marketCap','pe','forwardPe','pb','ps','peg','evEbitda','pFcf'],growth:['revenue','revenueGrowth','revenueGrowth3','epsGrowth','epsGrowth5','fcfGrowth'],dividend:['yield','payout','payoutFcf','divGrowth','divYears'],quality:['roe','roic','roce','netMargin','operatingMargin'],cashflow:['fcf','fcfYield','capex','capexRevenue','interestPaid'],debt:['netDebt','netDebtEbitda','interestCoverage','equityRatio','debtEquity'],reit:['ffoShare','affoShare','pAffo','navShare','affoPayout','occupancy'],bdc:['niiShare','niiCoverage','bdcNav','bdcPnav','nonAccrual','bdcLeverage']};let stocks=[];let loading=false;
-const numeric=(v)=>v===null||v===undefined||v===''?undefined:Number.isFinite(Number(v))?Number(v):undefined;
-const ratio=(v)=>{const n=numeric(v);return n===undefined?undefined:n*100};
-const billion=(v)=>{const n=numeric(v);return n===undefined?undefined:n/1e9};
-const million=(v)=>{const n=numeric(v);return n===undefined?undefined:n/1e6};
-const pick=(obj,...keys)=>{for(const k of keys){if(obj&&obj[k]!==undefined&&obj[k]!==null)return obj[k]}return undefined};
-function mapFmp(p,ra={},km={},inc={},cf={},bs={}){
- const v=(...ks)=>numeric(pick(ra,...ks));const k=(...ks)=>numeric(pick(km,...ks));
- const rev=numeric(inc.revenue),fc=numeric(cf.freeCashFlow),div=numeric(cf.dividendsPaid);
- const cap=numeric(p.marketCap);
- const out={ticker:p.symbol,name:p.companyName||p.name||p.symbol,type:'Aktie',currency:p.currency||inc.reportedCurrency||'',marketCap:billion(cap),pe:v('priceToEarningsRatioTTM'),forwardPe:undefined,pb:v('priceToBookRatioTTM'),ps:v('priceToSalesRatioTTM'),peg:v('priceToEarningsGrowthRatioTTM'),pFcf:v('priceToFreeCashFlowRatioTTM'),evEbitda:k('evToEBITDA'),evSales:k('evToSales'),yield:ratio(pick(ra,'dividendYieldTTM')),payout:ratio(pick(ra,'dividendPayoutRatioTTM')),payoutFcf:fc>0&&div!==undefined?Math.abs(div)/fc*100:undefined,roe:ratio(pick(km,'returnOnEquityTTM','returnOnEquity')),roic:ratio(pick(km,'returnOnInvestedCapitalTTM','returnOnInvestedCapital')),roce:ratio(pick(km,'returnOnCapitalEmployedTTM','returnOnCapitalEmployed')),netMargin:ratio(pick(ra,'netProfitMarginTTM')),operatingMargin:ratio(pick(ra,'operatingProfitMarginTTM')),grossMargin:ratio(pick(ra,'grossProfitMarginTTM')),fcf:million(fc),fcfYield:ratio(pick(km,'freeCashFlowYieldTTM','freeCashFlowYield')),capex:million(cf.capitalExpenditure===undefined?undefined:Math.abs(cf.capitalExpenditure)),capexRevenue:ratio(pick(km,'capexToRevenueTTM','capexToRevenue')),interestPaid:million(inc.interestExpense),netDebt:million(bs.netDebt),netDebtEbitda:k('netDebtToEBITDATTM','netDebtToEBITDA'),interestCoverage:v('interestCoverageRatioTTM'),currentRatio:v('currentRatioTTM'),quickRatio:v('quickRatioTTM'),debtEquity:v('debtToEquityRatioTTM'),equityRatio:bs.totalAssets&&bs.totalStockholdersEquity?bs.totalStockholdersEquity/bs.totalAssets*100:undefined,revenue:billion(rev),netIncome:million(inc.netIncome),eps:numeric(inc.eps),revenueGrowth:undefined,epsGrowth:undefined};
- return out;
-}
-const FMP_BASE='https://financialmodelingprep.com/stable/';
-let KEY=(()=>{try{return localStorage.getItem('fmpkey')||''}catch(e){return ''}})();
-function askKey(){const k=prompt('Dein persönlicher FMP-API-Key (nur im Browser gespeichert):',KEY);if(k!==null){KEY=k.trim();try{if(KEY)localStorage.setItem('fmpkey',KEY);else localStorage.removeItem('fmpkey')}catch(e){}$('status').textContent=KEY?'FMP-Key gespeichert. Klicke auf „Echte FMP-Daten laden“.':'Kein API-Key hinterlegt.'}}
-async function getFmp(path,params={}){
- if(!KEY)throw Error('Kein FMP-API-Key gespeichert. Bitte über „API-Key ändern“ eingeben.');
- const u=new URL(FMP_BASE+path);Object.entries(params).forEach(([k,v])=>u.searchParams.set(k,v));
- const cacheKey='fmp:'+u.toString();
- try{const c=JSON.parse(localStorage.getItem(cacheKey)||'null');if(c&&Date.now()-c.t<12*60*60*1000&&Array.isArray(c.j))return c.j}catch(e){}
- u.searchParams.set('apikey',KEY);
- let res;try{res=await fetch(u,{headers:{Accept:'application/json'}})}catch(e){throw Error('Netzwerk-/CORS-Fehler beim Abruf von FMP: '+e.message)}
- const text=await res.text();let data;try{data=JSON.parse(text)}catch(e){throw Error('FMP liefert keine gültigen JSON-Daten (HTTP '+res.status+').')}
- if(!res.ok)throw Error('FMP HTTP '+res.status+': '+String(data?.['Error Message']||data?.message||'Zugriff nicht möglich').slice(0,160));
- if(data?.['Error Message'])throw Error(String(data['Error Message']));
- if(!Array.isArray(data))throw Error('Unerwartete FMP-Antwort für '+path);
- if(text.length<250000)try{localStorage.setItem(cacheKey,JSON.stringify({t:Date.now(),j:data}))}catch(e){}
- return data;
-}
-async function loadLive(){if(loading)return;loading=true;$('load').disabled=true;$('status').textContent='Verbindung wird geprüft …';try{
- let entered=$('symbols').value.split(',').map(x=>x.trim().toUpperCase()).filter(x=>/^[A-Z0-9.\-]{1,16}$/.test(x));
- let profiles=[];
- if(!entered.length){let found=await getFmp('company-screener',{limit:30,isEtf:false,isFund:false,isActivelyTrading:true});entered=found.map(x=>x.symbol).filter(Boolean).slice(0,12);}
- if(!entered.length)throw Error('FMP hat keine Aktien geliefert.');
- entered=[...new Set(entered)].slice(0,15);const rows=[];let failures=[];
- for(let i=0;i<entered.length;i++){
- const symbol=entered[i];$('status').textContent='Lade '+(i+1)+' von '+entered.length+': '+symbol;
- try{
- const endpoints=['profile','ratios-ttm','key-metrics-ttm','income-statement-ttm','cash-flow-statement-ttm','balance-sheet-statement-ttm'];
- const responses=await Promise.allSettled(endpoints.map(path=>getFmp(path,{symbol})));
- const values=responses.map(r=>r.status==='fulfilled'?(r.value[0]||{}):{});
- if(!values[0].symbol)throw Error(responses[0].status==='rejected'?responses[0].reason.message:'Kein Unternehmensprofil');
- rows.push(mapFmp(...values));
- const unavailable=responses.map((r,j)=>r.status==='rejected'?endpoints[j]:null).filter(Boolean);
- if(unavailable.length)failures.push(symbol+': nicht verfügbare Datensätze '+unavailable.join(', '));
- }catch(e){failures.push(symbol+': '+e.message)}
- }
- if(!rows.length)throw Error('Keine Aktie geladen. '+failures.slice(0,2).join(' | '));stocks=rows;run();$('status').textContent=rows.length+' echte Unternehmen von FMP geladen. '+(failures.length?failures.length+' fehlgeschlagen (API-Zugriff/Plan prüfen).':'')+' Währungen wie von FMP gemeldet; Beträge sind nicht in Euro umgerechnet.';
- }catch(e){stocks=[];run();$('status').textContent='FMP-Verbindung fehlgeschlagen: '+e.message;}finally{loading=false;$('load').disabled=false}}
-let tab='all',rules=[],quickValues={},result=[];const $=id=>document.getElementById(id);const opts=(items,selected)=>items.map(([v,t])=>`<option value="${v}" ${v===selected?'selected':''}>${t}</option>`).join('');function quickKeys(){return tab==='all'?['marketCap','pe','forwardPe','pb','revenueGrowth','epsGrowth','yield','payoutFcf','roe','roic','netMargin','fcfYield','netDebtEbitda','interestCoverage','affoShare','niiCoverage']:groups[tab]||[]};function drawQuick(){let box=$('quick');box.innerHTML=quickKeys().map(k=>`<div class="filter"><label for="q-${k}">${D[k].name}</label><select id="q-${k}" data-key="${k}">${opts([['','Beliebig'],['gt:0','Über 0'],['gt:5','Über 5'],['gt:10','Über 10'],['gt:20','Über 20'],['lt:10','Unter 10'],['lt:15','Unter 15'],['lt:20','Unter 20'],['lt:30','Unter 30'],['lt:50','Unter 50'],['lt:100','Unter 100']],quickValues[k]||'')}</select></div>`).join('');box.querySelectorAll('select').forEach(el=>el.addEventListener('change',()=>{quickValues[el.dataset.key]=el.value;run()}))};function drawRules(){const options=defs.map(x=>[x[0],x[1]+' ('+x[3]+')']);$('rules').innerHTML=rules.map((r,i)=>`<div class="rule"><select aria-label="Kennzahl" data-i="${i}" data-part="key">${opts(options,r.key)}</select><select aria-label="Vergleich" data-i="${i}" data-part="op">${opts([['gt','Größer als'],['gte','Mindestens'],['lt','Kleiner als'],['lte','Höchstens'],['eq','Gleich'],['between','Zwischen']],r.op)}</select><input aria-label="Wert" type="number" step="any" data-i="${i}" data-part="value" value="${r.value}"><input aria-label="Zweiter Wert" type="number" step="any" data-i="${i}" data-part="value2" value="${r.value2||''}" placeholder="Bis (optional)" ${r.op==='between'?'':'disabled'}><button title="Filter entfernen" aria-label="Filter entfernen" data-remove="${i}">×</button></div>`).join('');$('rules').querySelectorAll('[data-part]').forEach(el=>el.addEventListener('change',()=>{let r=rules[+el.dataset.i];r[el.dataset.part]=el.value;drawRules();run()}));$('rules').querySelectorAll('[data-remove]').forEach(el=>el.addEventListener('click',()=>{rules.splice(+el.dataset.remove,1);drawRules();run()}))};function check(v,op,a,b){if(!Number.isFinite(v)||!Number.isFinite(a))return false;return op==='gt'?v>a:op==='gte'?v>=a:op==='lt'?v<a:op==='lte'?v<=a:op==='eq'?v===a:op==='between'?Number.isFinite(b)&&v>=Math.min(a,b)&&v<=Math.max(a,b):true};function run(){let q=$('search').value.trim().toLowerCase();result=stocks.filter(s=>{if(q&&!`${s.ticker} ${s.name}`.toLowerCase().includes(q))return false;for(let [key,expr] of Object.entries(quickValues)){if(!expr)continue;let [op,v]=expr.split(':');if(!check(s[key],op,+v))return false}for(let r of rules){if(r.value==='')continue;if(!check(s[r.key],r.op,+r.value,r.value2===''?NaN:+r.value2))return false}return true});let key=$('sort').value,dir=$('direction').value==='asc'?1:-1;result.sort((a,b)=>(a[key]??-Infinity)-(b[key]??-Infinity)?dir*((a[key]??-Infinity)-(b[key]??-Infinity)):a.ticker.localeCompare(b.ticker));render()};const cols=[['ticker','Kürzel'],['name','Unternehmen'],['type','Typ'],['marketCap','Marktkap. (Mrd., Handelswährung)'],['pe','KGV'],['revenueGrowth','Umsatzwachstum (%)'],['yield','Dividende (%)'],['payoutFcf','FCF-Ausschüttung (%)'],['roe','ROE (%)'],['netDebtEbitda','Net Debt / EBITDA'],['affoShare','AFFO/Aktie (Währung)'],['niiCoverage','NII-Deckung (x)']];function render(){$('count').textContent=`(${result.length} von ${stocks.length} FMP-Unternehmen)`;$('columns').innerHTML=cols.map(([k,n])=>`<th data-sort="${k}">${n}</th>`).join('');$('body').innerHTML=result.length?result.map(s=>`<tr>${cols.map(([k])=>`<td class="${k==='ticker'?'ticker':''}">${k==='type'?`<span class="badge">${s[k]}</span>`:s[k]===undefined?'–':typeof s[k]==='number'?s[k].toLocaleString('de-DE',{maximumFractionDigits:2}):s[k]}</td>`).join('')}</tr>`).join(''):'<tr><td class="empty" colspan="12">Keine Treffer oder noch keine Daten geladen. Lade FMP-Daten oder entferne einzelne Filter.</td></tr>';$('columns').querySelectorAll('th').forEach(el=>el.addEventListener('click',()=>{let k=el.dataset.sort;if(!D[k]&&k!=='marketCap')return;if(!Array.from($('sort').options).some(o=>o.value===k))$('sort').add(new Option(D[k]?.name||k,k));$('sort').value=k;run()}))};$('tabs').addEventListener('click',e=>{let b=e.target.closest('[data-tab]');if(!b)return;tab=b.dataset.tab;document.querySelectorAll('.tab').forEach(x=>x.classList.toggle('on',x===b));drawQuick()});$('add').addEventListener('click',()=>{rules.push({key:'revenueGrowth',op:'gte',value:'5',value2:''});drawRules();run()});$('run').addEventListener('click',run);$('search').addEventListener('input',run);$('sort').addEventListener('change',run);$('direction').addEventListener('change',run);$('reset').addEventListener('click',()=>{rules=[];quickValues={};$('search').value='';$('preset').value='';drawQuick();drawRules();run()});$('preset').addEventListener('change',()=>{const presets={dividend:[['yield','gte','3'],['payoutFcf','lte','70'],['divYears','gte','8']],growth:[['revenueGrowth','gte','10'],['roic','gte','12']],value:[['pe','lte','15'],['fcfYield','gte','5']],reit:[['pAffo','lte','18'],['affoPayout','lte','85']],bdc:[['niiCoverage','gte','1.1'],['bdcPnav','lte','1.1'],['nonAccrual','lte','2']]};rules=(presets[$('preset').value]||[]).map(([key,op,value])=>({key,op,value,value2:''}));quickValues={};drawQuick();drawRules();run()});$('csv').addEventListener('click',()=>{let data=[cols.map(x=>x[1]),...result.map(s=>cols.map(([k])=>s[k]??''))];let csv='\ufeff'+data.map(row=>row.map(v=>'"'+String(v).replaceAll('"','""')+'"').join(';')).join('\r\n');let a=document.createElement('a');a.href=URL.createObjectURL(new Blob([csv],{type:'text/csv;charset=utf-8'}));a.download='aktien-screener-fmp.csv';a.click();URL.revokeObjectURL(a.href)});$('load').addEventListener('click',loadLive);$('keybtn').addEventListener('click',askKey);if(KEY)$('status').textContent='Gespeicherter FMP-Key gefunden. Bereit zum Laden echter Unternehmensdaten.';drawQuick();drawRules();run();
-</script></body></html>
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Aktien-Screener: Dividendenaktien mit eigenen Kriterien filtern</title>
+<meta name="description" content="Aktien-Screener mit Kriterien-Baukasten: über 70 Kennzahlen wie Dividendenrendite, Ausschüttungsquote, KGV, ROCE, Schulden, Capex sowie FFO und NAV für REITs und BDCs frei kombinieren.">
+<meta name="robots" content="index,follow">
+<link rel="canonical" href="https://dividenden-rechner.github.io/aktien-hub/screener/">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="de_DE">
+<meta property="og:site_name" content="Dividenden-Rechner Aktien-Hub">
+<meta property="og:title" content="Aktien-Screener: Dividendenaktien mit eigenen Kriterien filtern">
+<meta property="og:description" content="Aktien-Screener mit Kriterien-Baukasten: über 70 Kennzahlen wie Dividendenrendite, Ausschüttungsquote, KGV, ROCE, Schulden, Capex sowie FFO und NAV für REITs und BDCs frei kombinieren.">
+<meta property="og:url" content="https://dividenden-rechner.github.io/aktien-hub/screener/">
+<meta name="theme-color" content="#ffffff">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "WebApplication", "name": "Aktien-Screener", "description": "Aktien-Screener mit Kriterien-Baukasten: über 70 Kennzahlen wie Dividendenrendite, Ausschüttungsquote, KGV, ROCE, Schulden, Capex sowie FFO und NAV für REITs und BDCs frei kombinieren.", "inLanguage": "de", "url": "https://dividenden-rechner.github.io/aktien-hub/screener/", "applicationCategory": "FinanceApplication", "operatingSystem": "Alle", "dateModified": "2026-10-22"}</script>
+<style>
+:root{color-scheme:light;--bg:#fff;--ink:#14202b;--mut:#5d6b78;--line:#dfe5ea;--soft:#f0f8f3;--acc:#2f9e5b;--accd:#1a7a45;--warn:#fff7e6;--warnl:#f0d9a8;--primary:#2563eb;--primary-d:#1d4ed8;--success:#10b981;--success-d:#059669;--danger:#ef4444;--border:#d1d5db}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--ink);font:17px/1.65 "IBM Plex Sans",system-ui,-apple-system,"Segoe UI",sans-serif}
+a{color:var(--accd);text-underline-offset:2px}
+a:hover{color:var(--acc)}
+.wrap{max-width:1080px;margin:0 auto;padding:0 16px}
+.site-header{border-bottom:1px solid var(--line);background:#fff;position:sticky;top:0;z-index:10}
+.site-header .wrap{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:6px 24px;padding-top:10px;padding-bottom:10px}
+.brand{font-weight:700;font-size:19px;color:var(--ink);text-decoration:none}
+.brand span{color:var(--acc);font-weight:600}
+.site-header nav{display:flex;flex-wrap:wrap;gap:2px 6px}
+.site-header nav a{color:var(--ink);text-decoration:none;padding:6px 10px;border-radius:8px;font-size:15px;font-weight:500}
+.site-header nav a:hover{background:var(--soft)}
+.site-header nav a[aria-current="page"]{background:var(--soft);color:var(--accd);font-weight:700}
+main.wrap{padding-top:22px;padding-bottom:56px}
+.crumbs{font-size:14px;color:var(--mut);margin:0 0 14px}
+.crumbs a{color:var(--mut)}
+article{max-width:760px}
+h1{font-size:clamp(28px,5vw,40px);line-height:1.2;margin:0 0 14px;letter-spacing:-.01em}
+h2{font-size:clamp(21px,3.4vw,26px);line-height:1.3;margin:36px 0 10px}
+h3{font-size:18px;margin:24px 0 6px}
+p,ul,ol{margin:0 0 14px}
+li{margin-bottom:5px}
+.lead{font-size:19px;color:#2b3a47}
+.formula{background:var(--soft);border-left:4px solid var(--acc);padding:12px 16px;border-radius:0 10px 10px 0;margin:16px 0;font-weight:600}
+.example{border:1px solid var(--line);border-radius:12px;padding:14px 18px;margin:16px 0;background:#fff}
+.example strong:first-child{display:block;margin-bottom:4px;color:var(--accd)}
+.note{background:var(--warn);border:1px solid var(--warnl);border-radius:12px;padding:12px 16px;font-size:15px;margin:26px 0}
+table{border-collapse:collapse;width:100%;margin:14px 0 20px;font-size:15px}
+th,td{border-bottom:1px solid var(--line);padding:8px 10px;text-align:left;vertical-align:top}
+th{background:var(--soft)}
+td.n,th.n{text-align:right;font-variant-numeric:tabular-nums}
+.tablewrap{overflow-x:auto}
+.cards{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:14px;margin:18px 0 8px}
+.card{display:block;border:1px solid var(--line);border-radius:14px;padding:16px 18px;text-decoration:none;color:var(--ink);background:#fff;transition:border-color .15s,transform .15s}
+.card:hover{border-color:var(--acc);transform:translateY(-2px)}
+.card h3{margin:0 0 4px;font-size:18px;color:var(--accd)}
+.card p{margin:0;font-size:15px;color:var(--mut)}
+.hero{padding:26px 0 8px;max-width:760px}
+.hero p{font-size:19px}
+.btn{display:inline-block;background:var(--acc);color:#fff;padding:11px 20px;border-radius:10px;text-decoration:none;font-weight:600;font-size:16px;border:0;cursor:pointer;font-family:inherit}
+.btn:hover{background:var(--accd);color:#fff}
+.btn.alt{background:#fff;color:var(--accd);border:1px solid var(--acc)}
+.btn.alt:hover{background:var(--soft);color:var(--accd)}
+.actions{display:flex;flex-wrap:wrap;gap:10px;margin:18px 0}
+details{border:1px solid var(--line);border-radius:12px;padding:0 16px;margin:10px 0;background:#fff}
+summary{cursor:pointer;font-weight:600;padding:12px 0}
+details p{margin:0 0 12px}
+.related{margin-top:36px;padding-top:6px;border-top:1px solid var(--line)}
+.meta{font-size:14px;color:var(--mut);margin:0 0 18px}
+.site-footer{border-top:1px solid var(--line);background:#fafbfc;font-size:14px;color:var(--mut)}
+.site-footer .wrap{padding-top:22px;padding-bottom:30px}
+.site-footer a{color:var(--mut)}
+.site-footer .cols{display:flex;flex-wrap:wrap;gap:8px 28px;margin-bottom:10px}
+.todo{background:#ffecec;border:1px dashed #d98;padding:1px 6px;border-radius:5px}
+
+/* ===== Werkzeug-Design (Grundlage aller Rechner/Tools, Vorlage: Dividenden-Rechner) ===== */
+body.tools{background:#fff}
+article.wide{max-width:none}
+article.wide>:not(.tool):not(.cards){max-width:760px}
+.tool{width:100%;max-width:1100px;margin:18px 0;background:#fff;padding:2rem;border-radius:12px;box-shadow:0 4px 18px -4px rgba(0,0,0,.14);border:1px solid #eceff2}
+.tool h2{margin:0 0 1.2rem;padding-bottom:10px;border-bottom:2px solid #e5e7eb;color:var(--success)}
+.tool .form-container{display:grid;grid-template-columns:repeat(3,1fr);gap:1.5rem;margin-bottom:2rem}
+.tool .form-container.two{grid-template-columns:repeat(2,1fr)}
+@media (max-width:900px){.tool .form-container,.tool .form-container.two{grid-template-columns:repeat(2,1fr)}}
+@media (max-width:600px){.tool{padding:1.2rem}.tool .form-container,.tool .form-container.two{grid-template-columns:1fr}}
+.tool .form-group{display:flex;flex-direction:column}
+.tool label{font-weight:600;margin-bottom:.4rem;font-size:.9rem;color:#374151;display:block}
+.tool .hint{font-size:.8rem;color:#6b7280;font-weight:400}
+.tool input,.tool select{width:100%;font:inherit;padding:.75rem;border:1px solid var(--border);border-radius:6px;background:#fff;color:var(--ink)}
+.tool input:focus,.tool select:focus{outline:2px solid var(--primary);outline-offset:1px}
+.tool input[type=checkbox]{width:auto}
+.tool .tax-hint{font-size:.8rem;color:#6b7280;margin-top:5px;font-style:italic;background:#fffbeb;padding:5px;border-radius:4px;border-left:3px solid #f59e0b}
+.tool button{font:inherit;padding:.75rem 1.5rem;font-size:1rem;font-weight:600;background:var(--primary);color:#fff;border:0;border-radius:6px;cursor:pointer;transition:.2s}
+.tool button:hover{background:var(--primary-d)}
+.tool button.outline{background:transparent;border:1px solid var(--border);color:var(--ink);width:100%;text-align:left;display:flex;justify-content:space-between}
+.tool button.outline:hover{background:#f9fafb}
+.tool .main-action-btn{width:100%;padding:1rem;margin-top:1rem;background:var(--success);font-size:1.2rem}
+.tool .main-action-btn:hover{background:var(--success-d)}
+.tool .presetbox{background:#f9fafb;padding:1rem;border:1px solid var(--border);margin-top:.5rem;display:grid;grid-template-columns:repeat(3,1fr);gap:10px}
+.tool .presetbox label{margin:0;font-weight:500;display:flex;gap:8px;align-items:center}
+.tool .presetbox input{width:auto}
+.tool .result{margin-top:2rem;padding:1.5rem;background:#ecfdf5;border:1px solid #a7f3d0;border-radius:8px;text-align:center;font-size:1.2rem;color:#065f46}
+.tool .result strong{color:var(--primary);font-size:1.4em}
+.tool .result .sub{font-size:.9em;margin-top:5px}
+.tool .kpis{display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:12px;margin-top:2rem}
+.tool .kpi{background:#ecfdf5;border:1px solid #a7f3d0;border-radius:8px;padding:12px 14px;text-align:center}
+.tool .kpi b{display:block;font-size:1.35rem;line-height:1.3;color:#065f46}
+.tool .kpi span{font-size:.8rem;color:#4b5563}
+.tool .kpi.blue b{color:var(--primary)}
+.tool .chart-wrapper{width:100%;margin-top:2.5rem;padding:1rem;background:#fff;border:1px solid #e5e7eb;border-radius:10px;height:400px;position:relative}
+.tool .chart-wrapper.short{height:320px}
+.tool .err{color:#b3372d;font-size:.9rem;min-height:20px;margin-top:8px}
+.tool .tablewrap{overflow-x:auto;margin-top:1rem}
+.tool table{width:100%;border-collapse:collapse;margin:10px 0 0;font-size:.9rem}
+.tool th,.tool td{border:1px solid #e5e7eb;padding:8px;text-align:right}
+.tool th{background:var(--success);color:#fff;text-align:center}
+.tool td.pos{color:#10b981;font-weight:700}
+.tool td.neg{color:#ef4444}
+.tool .note-small{font-size:.8rem;color:#6b7280;margin:12px 0 0}
+
+[hidden]{display:none!important}
+.tool textarea{width:100%;font:inherit;padding:.75rem;border:1px solid var(--border);border-radius:6px;min-height:84px;resize:vertical;color:var(--ink);background:#fff}
+.mode{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin:0 0 1rem}
+.tool .mode button{background:#fff;color:var(--ink);border:1px solid var(--border)}
+.tool .mode button:hover{background:#f0fdf4;border-color:var(--success)}
+.tool .mode button[aria-pressed=true]{background:var(--success);border-color:var(--success);color:#fff}
+.tool .chips{display:flex;flex-wrap:wrap;gap:8px;align-items:center;margin:0 0 .9rem}
+.tool .chips .lbl{font-size:.9rem;color:#4b5563}
+.tool .chips button{background:#fff;color:var(--ink);border:1px solid var(--border);border-radius:999px;padding:.4rem .85rem;font-size:.88rem}
+.tool .chips button:hover{background:#f0fdf4;border-color:var(--success)}
+.sv{display:inline-flex;border:1px solid var(--border);border-radius:999px;overflow:hidden;background:#fff}
+.tool .chips .sv button{border:0;border-radius:0;padding:.4rem .75rem}
+.tool .chips .sv button.x{padding:.4rem .6rem;color:#6b7280;border-left:1px solid var(--border)}
+.tool button.ghost{background:#fff;color:var(--ink);border:1px solid var(--border)}
+.tool button.ghost:hover{background:#f9fafb}
+.tool button:disabled{opacity:.55;cursor:default}
+.tool .btnrow{display:flex;flex-wrap:wrap;gap:10px;align-items:center;margin-top:1.1rem}
+.tool .btnrow .main-action-btn{width:auto;margin-top:0;flex:1 1 220px}
+.keybar{display:flex;flex-wrap:wrap;gap:10px;align-items:center;margin:0 0 1rem;font-size:.9rem;color:#4b5563}
+.tool .keybar button{padding:.4rem .85rem;font-size:.85rem}
+.tool h3.sec{margin:1.5rem 0 .6rem;font-size:1.05rem;color:#111827}
+.addrow select#addcrit{width:100%;font:inherit;font-size:1rem;padding:.8rem .9rem;border:2px solid var(--success);border-radius:8px;background:#f0fdf4;color:var(--ink);cursor:pointer}
+.crithint{margin:.7rem 0;padding:.9rem 1rem;border:1px dashed var(--border);border-radius:8px;color:#4b5563;font-size:.93rem}
+#crits{margin:.7rem 0 0}
+.crit{display:flex;flex-wrap:wrap;align-items:center;gap:8px 10px;padding:10px 12px;border:1px solid var(--border);border-radius:8px;margin:0 0 8px;background:#fff}
+.crit.bad{border-color:#b3372d;background:#fdf3f2}
+.crit .cname{flex:1 1 210px;min-width:0}
+.crit .cname b{font-size:.95rem}
+.crit .cname small{display:block;color:#6b7280;font-size:.78rem;line-height:1.3}
+.crit select,.crit input{font:inherit;font-size:.95rem;padding:.5rem .6rem;border:1px solid var(--border);border-radius:6px;background:#fff;color:var(--ink);width:auto;margin:0}
+.crit input{width:92px;text-align:right}
+.crit .cand,.crit .cunit,.crit .cu2{color:#6b7280;font-size:.9rem}
+.crit .cu{display:inline-flex;gap:6px;align-items:center}
+.crit .crm{background:none;border:0;color:#6b7280;font-size:1.1rem;cursor:pointer;padding:.3rem .5rem;border-radius:6px;width:auto;margin:0}
+.crit .crm:hover{background:#fbeceb;color:#b3372d}
+.moreopt{margin:1.1rem 0 0;border:1px solid var(--border);border-radius:8px;padding:.6rem 1rem}
+.moreopt summary{cursor:pointer;font-weight:600}
+.moreopt .form-container{margin-top:.9rem}
+.saverow{display:flex;flex-wrap:wrap;gap:8px;align-items:center;margin-top:.9rem}
+.saverow input{font:inherit;padding:.5rem .7rem;border:1px solid var(--border);border-radius:6px;min-width:200px}
+.tool .saverow button{padding:.5rem .9rem;font-size:.88rem}
+.status{min-height:1.4em;margin:12px 0 0;font-size:.95rem;color:#4b5563;white-space:pre-line}
+.status.ok{color:#065f46}.status.err{color:#b3372d}
+.xhead2{display:flex;flex-wrap:wrap;gap:8px 14px;align-items:center;margin:1.6rem 0 .6rem}
+.xhead2 b{font-size:1.05rem}
+.xhead2 .sp{margin-left:auto;display:flex;flex-wrap:wrap;gap:8px}
+.tool .xhead2 .sp button{padding:.45rem .8rem;font-size:.85rem}
+.xw{overflow:auto;max-height:72vh;border:1px solid var(--line);border-radius:8px}
+.tool .xw table{border-collapse:collapse;width:100%;font-size:.85rem;margin:0}
+.tool .xw th,.tool .xw td{padding:7px 12px;border:0;border-bottom:1px solid var(--line);text-align:right;white-space:nowrap;background:#fff;color:var(--ink)}
+.tool .xw th{position:sticky;top:0;background:#f0fdf4;z-index:2;padding:0}
+.tool .xw th button{all:unset;display:block;box-sizing:border-box;width:100%;padding:8px 12px;cursor:pointer;font-weight:600;font-size:.85rem;color:var(--ink);text-align:right}
+.tool .xw th button:hover{background:#dcfce7}
+.tool .xw th button:focus-visible{outline:2px solid var(--primary);outline-offset:-2px}
+.tool .xw td.l,.tool .xw th:nth-child(-n+3) button{text-align:left}
+.tool .xw td.l{max-width:260px;overflow:hidden;text-overflow:ellipsis}
+.tool .xw tbody tr:hover td{background:#f7fbf9}
+.legend-x{font-size:.8rem;color:#6b7280;margin:8px 0 0}
+@media(max-width:560px){.crit input{width:78px}.mode{grid-template-columns:1fr}}
+
+</style>
+<link rel="icon" href="../favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="32x32" href="../assets/favicon-32.png">
+<link rel="icon" type="image/png" sizes="192x192" href="../assets/favicon-192.png">
+<link rel="apple-touch-icon" href="../assets/apple-touch-icon.png">
+<link rel="stylesheet" href="../assets/navigation.css?v=20261022c">
+</head>
+<body class="tools">
+<header id="hub-global-header"><div class="hub-nav-inner"><a class="hub-brand" href="../"><img class="hub-logo" src="../assets/logo.png" alt="" width="36" height="36"> <span class="hub-brand-name">Dividenden-Rechner <span>Aktien-Hub</span></span></a><nav class="hub-links" aria-label="Hauptmenü"><a href="../rechner/">Rechner</a><a href="../aktien/">Aktien</a><a href="../news/">News</a><a href="../screener/" aria-current="page">Screener</a><a href="../einfuehrung/">Einführung</a><a href="../grundlagen/">Grundlagen</a><a href="../fortgeschrittene/">Fortgeschrittene</a></nav></div></header>
+<main class="wrap"><article class="wide">
+<nav class="crumbs" aria-label="Brotkrumen"><a href="../">Start</a> › <span aria-current="page">Screener</span></nav>
+<h1>Aktien-Screener</h1>
+<p class="lead">Baue dir deinen eigenen Filter: Kennzahl wählen, Bedingung und Wert eintragen, weitere Kriterien hinzufügen.</p>
+<section class="tool" aria-labelledby="sc-h">
+<h2 id="sc-h">Kriterien wählen</h2>
+
+<div class="keybar"><span id="keystate"></span><button type="button" class="ghost" id="keybtn">API-Key ändern</button></div>
+<div class="mode" role="group" aria-label="Datenquelle wählen">
+<button type="button" id="m-markt" aria-pressed="true">Gesamter Markt</button>
+<button type="button" id="m-liste" aria-pressed="false">Eigene Liste (auch Gratis-Tarif)</button>
+</div>
+<p class="note-small" id="marktnote" style="margin:0 0 1rem">Der Screener von FMP liefert vorab alle Aktien, die zu deinen groben Kriterien (Marktkapitalisierung, Kurs, Beta, Dividende, Volumen) passen. Er ist nicht in jedem FMP-Tarif enthalten.</p>
+<div id="listbox" hidden style="margin-bottom:1rem"><label for="f-list" style="display:block;font-weight:600;font-size:.9rem;margin-bottom:.4rem">Symbole (Komma oder Leerzeichen getrennt, höchstens 300)</label><textarea id="f-list">KO, PEP, JNJ, PG, MCD, O, MSFT, AAPL, XOM, CVX, ABBV, PFE, VZ, T, MMM, IBM, CAT, WMT, HD, LOW, TGT, KMB, CL, GIS, SO, DUK, MO, PM, MDLZ, KHC, MAIN, ARCC, STAG, NNN, WPC</textarea>
+<p class="note-small">Pro Symbol wird zuerst das Profil geladen, danach nur noch für Aktien, die bisher alle Kriterien erfüllen.</p></div>
+<div class="chips" aria-label="Vorlagen"><span class="lbl">Vorlagen:</span><span id="tpls" class="chips" style="margin:0"></span></div>
+<div class="chips"><span class="lbl" id="savedlbl" hidden>Gespeichert:</span><span id="savedchips" class="chips" style="margin:0" hidden></span></div>
+<h3 class="sec">Kriterien</h3>
+<div class="addrow"><select id="addcrit" aria-label="Kennzahl als Kriterium hinzufügen"></select></div>
+<div class="crithint" id="crithint">Noch keine Kriterien. Wähle oben eine Kennzahl, zum Beispiel „Dividendenrendite“ oder „Ausschüttungsquote“, stelle „größer als“ oder „kleiner als“ ein und gib einen Wert ein. Du kannst beliebig viele Kriterien kombinieren, oder eine Vorlage laden.</div>
+<div id="crits"></div>
+<details class="moreopt"><summary>Weitere Optionen</summary>
+<div class="form-container">
+<div class="form-group"><label for="f-sector">Sektor</label><select id="f-sector"><option value="">Alle Sektoren</option><option value="Technology">Technologie</option><option value="Healthcare">Gesundheit</option><option value="Financial Services">Finanzdienstleistungen</option><option value="Consumer Defensive">Basiskonsumgüter</option><option value="Consumer Cyclical">Zyklischer Konsum</option><option value="Industrials">Industrie</option><option value="Energy">Energie</option><option value="Utilities">Versorger</option><option value="Real Estate">Immobilien</option><option value="Basic Materials">Grundstoffe</option><option value="Communication Services">Kommunikation</option></select></div><div class="form-group"><label for="f-country">Land</label><select id="f-country"><option value="">Alle Länder</option><option value="US">USA</option><option value="DE">Deutschland</option><option value="CH">Schweiz</option><option value="GB">Großbritannien</option><option value="FR">Frankreich</option><option value="NL">Niederlande</option><option value="DK">Dänemark</option><option value="SE">Schweden</option><option value="CA">Kanada</option><option value="IE">Irland</option><option value="JP">Japan</option></select></div><div class="form-group"><label for="f-exchange">Börse</label><select id="f-exchange"><option value="">Alle Börsen</option><option value="NASDAQ">NASDAQ</option><option value="NYSE">NYSE</option><option value="AMEX">AMEX</option><option value="XETRA">XETRA</option><option value="LSE">London (LSE)</option></select></div>
+<div class="form-group"><label for="f-ind">Branche enthält <span class="hint">(z. B. REIT, Bank)</span></label><input id="f-ind" autocomplete="off"></div>
+<div class="form-group" id="limitbox"><label for="f-limit">Höchstens vom Screener laden <span class="hint">(1 bis 1000)</span></label><input id="f-limit" inputmode="numeric" value="500"></div>
+<div class="form-group"><label for="f-max">Höchstens API-Aufrufe je Suche <span class="hint">(Schutz vor Tageslimit)</span></label><input id="f-max" inputmode="numeric" value="250"></div>
+<div class="form-group" style="justify-content:flex-end"><label style="display:flex;gap:8px;align-items:center;margin:0 0 .6rem"><input type="checkbox" id="f-etf" checked style="width:auto"> ETFs und Fonds ausschließen</label></div>
+</div></details>
+<div class="saverow"><input id="savename" placeholder="Name für diese Kriterien" aria-label="Name der Vorlage" maxlength="40"><button type="button" class="ghost" id="save">Als Vorlage speichern</button></div>
+<div class="btnrow"><button type="button" class="main-action-btn" id="go">Screener starten</button><button type="button" class="ghost" id="stop">Abbrechen</button><button type="button" class="ghost" id="clear">Kriterien leeren</button></div>
+<p class="status" id="status" role="status" aria-live="polite"></p>
+<div class="xhead2" id="actions" hidden><b id="count"></b><div class="sp"><button type="button" class="ghost" id="towl">In Watchlist übernehmen</button><button type="button" class="ghost" id="copy">Symbole kopieren</button><button type="button" class="ghost" id="tolist">In eigene Liste</button><button type="button" class="ghost" id="csv">CSV speichern</button></div></div>
+<div id="res"></div>
+<p class="legend-x">Fehlende Werte werden als „–“ angezeigt. Eine Aktie, bei der FMP für ein Kriterium keinen Wert liefert, fällt aus dem Ergebnis heraus.</p>
+
+</section>
+<div class="calc-wrap explain" style="max-width:760px">
+<h2>So nutzt du den Aktien-Screener</h2>
+<p>Ein Screener sucht aus vielen Aktien diejenigen heraus, die deine Bedingungen erfüllen. Hier baust du dir die Bedingungen selbst zusammen: Du wählst aus einer Liste eine Kennzahl, legst fest, ob sie größer oder kleiner als ein Wert (oder zwischen zwei Werten) liegen soll, und gibst den Wert ein. Bei Beträgen wählst du die Einheit Mio., Mrd. oder Bio. Danach fügst du das nächste Kriterium hinzu, so oft du möchtest.</p>
+<h3>Welche Kennzahlen gibt es?</h3>
+<ul>
+<li><strong>Größe und Kurs:</strong> Marktkapitalisierung, Kurs, Beta, Handelsvolumen.</li>
+<li><strong>Bewertung:</strong> KGV, PEG, KBV, KUV, Kurs-Cashflow-Verhältnis, EV/EBITDA, Free-Cashflow-Rendite, Abstand zum DCF-Wert und zum Analystenkursziel.</li>
+<li><strong>Dividende:</strong> Dividendenrendite, Ausschüttungsquote (Gewinn und Free Cashflow), Jahre mit steigender Dividende, Dividendenwachstum über mehrere Jahre.</li>
+<li><strong>Wachstum:</strong> Umsatz-, Gewinn-, Cashflow- und EBITDA-Wachstum.</li>
+<li><strong>Profitabilität:</strong> Brutto-, Betriebs- und Nettomarge, Eigenkapital-, Gesamtkapital- und Investitionsrendite (ROE, ROA, ROIC, ROCE).</li>
+<li><strong>Bilanz und Schulden:</strong> Verschuldungsgrad, Nettoverschuldung zum EBITDA, Zinsdeckung, Liquiditätskennzahlen, Zinszahlungen.</li>
+<li><strong>Cashflow und Investitionen:</strong> operativer Cashflow, Free Cashflow, Investitionsausgaben (Capex) absolut und im Verhältnis zu Umsatz und Cashflow.</li>
+<li><strong>Qualität:</strong> Piotroski-Score und Altman-Z-Score.</li>
+<li><strong>REITs und BDCs:</strong> Nettovermögenswert (NAV) je Aktie, Kurs/NAV, FFO und Kurs/FFO, Ausschüttung im Verhältnis zum FFO.</li>
+</ul>
+<h3>Wichtig bei REITs und BDCs</h3>
+<p>FMP liefert für REITs weder AFFO noch für BDCs das Nettoanlageergebnis (NII). Der Screener nähert deshalb an: FFO ist hier Nettogewinn plus Abschreibungen, der NAV ist das bilanzielle Eigenkapital je Aktie. Das ist grob. Echte FFO-, AFFO- und NAV-Werte findest du in den Quartalsberichten der Unternehmen. Nutze die Näherungen nur zum Vorsortieren.</p>
+<h3>Wie viele API-Aufrufe braucht eine Suche?</h3>
+<p>Der Screener lädt schrittweise: Erst kommen die Profile, dann pro benötigter Datenquelle nur noch die Aktien, die bisher alle Kriterien erfüllen. Je selektiver deine ersten Kriterien sind, desto weniger Aufrufe werden verbraucht. Unter „Weitere Optionen“ legst du eine Obergrenze fest. Der Gratis-Tarif von FMP erlaubt aktuell 250 Aufrufe pro Tag.</p>
+<details><summary>Warum zeigt der Screener keine Treffer?</summary><p>Meist sind die Kriterien zu streng, oder FMP liefert für eine Kennzahl keinen Wert (dann fällt die Aktie heraus). Lockere ein Kriterium oder nutze die eigene Liste. Im Gratis-Tarif ist der Marktscreener meist nicht enthalten.</p></details>
+<details><summary>Wo wird mein API-Key gespeichert?</summary><p>Nur in deinem Browser (localStorage). Er wird nur an Financial Modeling Prep gesendet und ist derselbe wie im Aktien-Hub. Gespeicherte Vorlagen liegen ebenfalls nur in deinem Browser.</p></details>
+<details><summary>Sind die Daten verlässlich?</summary><p>Die Daten stammen von Financial Modeling Prep und können Lücken oder Fehler enthalten. Alle Angaben ohne Gewähr, keine Anlageberatung. Prüfe jede Aktie selbst, bevor du entscheidest.</p></details>
+</div>
+<p class="note"><strong>Hinweis:</strong> Alle Inhalte dienen der allgemeinen Information und sind keine Anlage-, Steuer- oder Rechtsberatung. Kapitalanlagen sind mit Risiken verbunden, bis hin zum Totalverlust.</p>
+</article></main>
+<footer class="site-footer"><div class="wrap">
+<div class="cols">
+<a href="../rechner/">Rechner</a><a href="../aktien/">Aktien-Hub</a><a href="../news/">News</a><a href="../screener/">Screener</a><a href="../einfuehrung/">Einführung</a><a href="../grundlagen/">Grundlagen</a><a href="../fortgeschrittene/">Fortgeschrittene</a>
+<a href="../impressum/">Impressum</a><a href="../datenschutz/">Datenschutz</a>
+</div>
+<p>Alle Inhalte dienen der allgemeinen Information und sind keine Anlage-, Steuer- oder Rechtsberatung. Kapitalanlagen sind mit Risiken verbunden.</p>
+</div></footer>
+<script>
+/* Aktien-Screener (Baukasten) auf Basis der Financial Modeling Prep (FMP) stable API.
+   Du wählst beliebig viele Kriterien aus einer Liste (Kennzahl, größer/kleiner/zwischen, Wert, Einheit).
+   Die Daten werden schrittweise geladen: nach jeder Datenquelle fallen Aktien heraus, die ein Kriterium nicht erfüllen.
+   So werden nur wenige API-Aufrufe verbraucht. Alle Werte stammen von FMP, ohne Gewähr. */
+(function (root) {
+  "use strict";
+
+  /* ---------- Hilfsfunktionen ---------- */
+  var nz = function (v) { return v === null || v === undefined || v === "" || (typeof v === "number" && isNaN(v)) ? null : v; };
+  var first = function (o, keys) { if (!o) return null; for (var i = 0; i < keys.length; i++) { var v = o[keys[i]]; if (nz(v) !== null && !isNaN(Number(v))) return Number(v); } return null; };
+  var one = function (j) { return Array.isArray(j) ? (j[0] || null) : (j || null); };
+  var div = function (a, b) { return (a === null || b === null || b === 0) ? null : a / b; };
+
+  /* Datenquellen: Endpunkt, Parameter. Reihenfolge = Ladereihenfolge (günstige und selektive zuerst). */
+  var SOURCES = {
+    ratios: { path: "ratios-ttm", label: "Kennzahlen (Ratios TTM)" },
+    metrics: { path: "key-metrics-ttm", label: "Key Metrics TTM" },
+    growth: { path: "financial-growth", label: "Wachstum", p: { limit: 1 }, alt: {} },
+    scores: { path: "financial-scores", label: "Scores" },
+    isttm: { path: "income-statement-ttm", label: "GuV TTM" },
+    cfttm: { path: "cash-flow-statement-ttm", label: "Kapitalfluss TTM" },
+    bsttm: { path: "balance-sheet-statement-ttm", label: "Bilanz TTM" },
+    divs: { path: "dividends", label: "Dividendenhistorie", p: { limit: 120 }, alt: {} },
+    dcf: { path: "discounted-cash-flow", label: "DCF-Bewertung" },
+    target: { path: "price-target-consensus", label: "Kursziele" }
+  };
+  var ORDER = ["ratios", "metrics", "growth", "scores", "isttm", "cfttm", "bsttm", "divs", "dcf", "target"];
+
+  /* Dividenden je Kalenderjahr (ohne das älteste, evtl. unvollständige Jahr und ohne das laufende Jahr). */
+  function divStats(rows, nowYear) {
+    var byY = {}; (rows || []).forEach(function (r) {
+      var y = String(r.date || "").slice(0, 4), v = first(r, ["adjDividend", "dividend"]); if (!y || v === null) return; byY[y] = (byY[y] || 0) + v;
+    });
+    var ys = Object.keys(byY).map(Number).sort(function (a, b) { return a - b; });
+    if (ys.length) ys.shift();
+    ys = ys.filter(function (y) { return y < nowYear; });
+    var streak = 0;
+    for (var i = ys.length - 1; i > 0; i--) { if (byY[ys[i]] > byY[ys[i - 1]] * 1.0001 && ys[i] - ys[i - 1] === 1) streak++; else break; }
+    var cagr = null;
+    if (ys.length >= 6) { var a = byY[ys[ys.length - 6]], b = byY[ys[ys.length - 1]]; if (a > 0 && b > 0) cagr = (Math.pow(b / a, 1 / 5) - 1) * 100; }
+    return { streak: ys.length >= 2 ? streak : null, cagr: cagr, last: ys.length ? byY[ys[ys.length - 1]] : null };
+  }
+
+  /* Metrik-Katalog. u: pct (Prozent), x (Faktor), usd (USD je Aktie), big (USD gesamt), num, yrs (Jahre).
+     s: benötigte Quellen (profile = immer vorhanden). dir: sinnvolle Standardrichtung. */
+  var P = function (keys, k) { return function (D) { var v = first(D.profile, keys); return v === null ? null : v * (k || 1); }; };
+  var S = function (src, keys, k) { return function (D) { var v = first(D[src], keys); return v === null ? null : v * (k === undefined ? 1 : k); }; };
+  var cfFFO = function (D) { var n = first(D.cfttm, ["netIncome"]), d = first(D.cfttm, ["depreciationAndAmortization"]); return (n === null || d === null) ? null : n + d; };
+  var shares = function (D) { var m = first(D.profile, ["mcap"]), p = first(D.profile, ["price"]); return div(m, p); };
+  var ffops = function (D) { return div(cfFFO(D), shares(D)); };
+  var cat = [
+    ["Größe und Kurs", [
+      { id: "mcap", l: "Marktkapitalisierung", u: "big", s: [], dir: "gt", get: P(["mcap"]) },
+      { id: "price", l: "Aktienkurs", u: "usd", s: [], dir: "lt", get: P(["price"]) },
+      { id: "beta", l: "Beta (Schwankung)", u: "num", s: [], dir: "lt", get: P(["beta"]), d: "Unter 1 = weniger Schwankung als der Markt" },
+      { id: "volume", l: "Handelsvolumen", u: "num", s: [], dir: "gt", get: P(["volume"]) },
+      { id: "ev", l: "Unternehmenswert (EV)", u: "big", s: ["metrics"], dir: "gt", get: S("metrics", ["enterpriseValueTTM"]) }
+    ]],
+    ["Bewertung", [
+      { id: "pe", l: "KGV (Kurs/Gewinn)", u: "x", s: ["ratios"], dir: "lt", get: S("ratios", ["priceToEarningsRatioTTM", "peRatioTTM"]) },
+      { id: "peg", l: "PEG (KGV/Wachstum)", u: "x", s: ["ratios"], dir: "lt", get: S("ratios", ["priceToEarningsGrowthRatioTTM", "pegRatioTTM"]) },
+      { id: "pb", l: "KBV (Kurs/Buchwert)", u: "x", s: ["ratios"], dir: "lt", get: S("ratios", ["priceToBookRatioTTM", "pbRatioTTM"]) },
+      { id: "ps", l: "KUV (Kurs/Umsatz)", u: "x", s: ["ratios"], dir: "lt", get: S("ratios", ["priceToSalesRatioTTM", "priceSalesRatioTTM"]) },
+      { id: "pfcf", l: "Kurs/Free Cashflow", u: "x", s: ["ratios"], dir: "lt", get: S("ratios", ["priceToFreeCashFlowRatioTTM", "pfcfRatioTTM"]) },
+      { id: "pocf", l: "Kurs/operativer Cashflow", u: "x", s: ["ratios"], dir: "lt", get: S("ratios", ["priceToOperatingCashFlowRatioTTM", "pocfratioTTM"]) },
+      { id: "evebitda", l: "EV/EBITDA", u: "x", s: ["metrics"], dir: "lt", get: S("metrics", ["evToEBITDATTM", "enterpriseValueOverEBITDATTM"]) },
+      { id: "evsales", l: "EV/Umsatz", u: "x", s: ["metrics"], dir: "lt", get: S("metrics", ["evToSalesTTM"]) },
+      { id: "evfcf", l: "EV/Free Cashflow", u: "x", s: ["metrics"], dir: "lt", get: S("metrics", ["evToFreeCashFlowTTM"]) },
+      { id: "fcfyield", l: "Free-Cashflow-Rendite", u: "pct", s: ["metrics"], dir: "gt", get: S("metrics", ["freeCashFlowYieldTTM"], 100) },
+      { id: "earnyield", l: "Gewinnrendite (1/KGV)", u: "pct", s: ["metrics"], dir: "gt", get: S("metrics", ["earningsYieldTTM"], 100) },
+      { id: "dcfup", l: "Abstand zum DCF-Wert (Potenzial)", u: "pct", s: ["dcf"], dir: "gt", get: function (D) { var d = first(D.dcf, ["dcf"]), p = first(D.dcf, ["Stock Price", "stockPrice"]) || first(D.profile, ["price"]); return (d === null || !p) ? null : (d - p) / p * 100; }, d: "Positiv = Kurs liegt unter dem DCF-Wert von FMP" },
+      { id: "tgtup", l: "Abstand zum Analysten-Kursziel", u: "pct", s: ["target"], dir: "gt", get: function (D) { var t = first(D.target, ["targetConsensus", "targetMedian"]), p = first(D.profile, ["price"]); return (t === null || !p) ? null : (t - p) / p * 100; } }
+    ]],
+    ["Dividende", [
+      { id: "yield", l: "Dividendenrendite (aktuell)", u: "pct", s: [], dir: "gt", get: function (D) { var d = first(D.profile, ["div"]), p = first(D.profile, ["price"]); return (d === null || !p) ? null : d / p * 100; }, d: "Letzte Jahresdividende geteilt durch Kurs" },
+      { id: "dps", l: "Dividende je Aktie (Jahr)", u: "usd", s: [], dir: "gt", get: P(["div"]) },
+      { id: "dyttm", l: "Dividendenrendite (TTM)", u: "pct", s: ["ratios"], dir: "gt", get: S("ratios", ["dividendYieldTTM", "dividendYieldPercentageTTM"], 100) },
+      { id: "payout", l: "Ausschüttungsquote (Gewinn)", u: "pct", s: ["ratios"], dir: "lt", get: S("ratios", ["dividendPayoutRatioTTM", "payoutRatioTTM"], 100), d: "Dividende / Gewinn" },
+      { id: "fcfpayout", l: "Ausschüttungsquote (Free Cashflow)", u: "pct", s: ["ratios"], dir: "lt", get: function (D) { var d = first(D.ratios, ["dividendPerShareTTM"]), f = first(D.ratios, ["freeCashFlowPerShareTTM"]); var v = div(d, f); return v === null ? null : v * 100; }, d: "Dividende / Free Cashflow je Aktie" },
+      { id: "divstreak", l: "Jahre mit Dividendenerhöhung in Folge", u: "yrs", s: ["divs"], dir: "gt", get: function (D) { return D.divs ? D.divs.streak : null; }, d: "Aus den Zahlungen je Kalenderjahr berechnet" },
+      { id: "divcagr", l: "Dividendenwachstum 5 Jahre p. a.", u: "pct", s: ["divs"], dir: "gt", get: function (D) { return D.divs ? D.divs.cagr : null; } },
+      { id: "divg1", l: "Dividendenwachstum letztes Jahr", u: "pct", s: ["growth"], dir: "gt", get: S("growth", ["dividendsPerShareGrowth", "dividendsperShareGrowth"], 100) },
+      { id: "divg5", l: "Dividendenwachstum je Aktie 5 J. (FMP)", u: "pct", s: ["growth"], dir: "gt", get: S("growth", ["fiveYDividendperShareGrowthPerShare", "fiveYDividendPerShareGrowthPerShare"], 100) },
+      { id: "divpaid", l: "Gezahlte Dividenden (TTM)", u: "big", s: ["cfttm"], dir: "gt", get: function (D) { var v = first(D.cfttm, ["commonDividendsPaid", "netDividendsPaid", "dividendsPaid"]); return v === null ? null : Math.abs(v); } }
+    ]],
+    ["Wachstum", [
+      { id: "revg", l: "Umsatzwachstum (letztes Jahr)", u: "pct", s: ["growth"], dir: "gt", get: S("growth", ["revenueGrowth"], 100) },
+      { id: "revg3", l: "Umsatzwachstum je Aktie 3 J.", u: "pct", s: ["growth"], dir: "gt", get: S("growth", ["threeYRevenueGrowthPerShare"], 100) },
+      { id: "revg5", l: "Umsatzwachstum je Aktie 5 J.", u: "pct", s: ["growth"], dir: "gt", get: S("growth", ["fiveYRevenueGrowthPerShare"], 100) },
+      { id: "epsg", l: "Gewinn-je-Aktie-Wachstum (letztes Jahr)", u: "pct", s: ["growth"], dir: "gt", get: S("growth", ["epsgrowth", "epsGrowth", "epsdilutedGrowth"], 100) },
+      { id: "nig", l: "Nettogewinn-Wachstum (letztes Jahr)", u: "pct", s: ["growth"], dir: "gt", get: S("growth", ["netIncomeGrowth"], 100) },
+      { id: "nig5", l: "Nettogewinn-Wachstum je Aktie 5 J.", u: "pct", s: ["growth"], dir: "gt", get: S("growth", ["fiveYNetIncomeGrowthPerShare"], 100) },
+      { id: "opg", l: "Wachstum operatives Ergebnis", u: "pct", s: ["growth"], dir: "gt", get: S("growth", ["operatingIncomeGrowth"], 100) },
+      { id: "fcfg", l: "Free-Cashflow-Wachstum", u: "pct", s: ["growth"], dir: "gt", get: S("growth", ["freeCashFlowGrowth"], 100) }
+    ]],
+    ["Profitabilität und Rendite auf Kapital", [
+      { id: "gm", l: "Bruttomarge", u: "pct", s: ["ratios"], dir: "gt", get: S("ratios", ["grossProfitMarginTTM"], 100) },
+      { id: "om", l: "Operative Marge", u: "pct", s: ["ratios"], dir: "gt", get: S("ratios", ["operatingProfitMarginTTM"], 100) },
+      { id: "nm", l: "Nettomarge", u: "pct", s: ["ratios"], dir: "gt", get: S("ratios", ["netProfitMarginTTM"], 100) },
+      { id: "em", l: "EBITDA-Marge", u: "pct", s: ["ratios"], dir: "gt", get: S("ratios", ["ebitdaMarginTTM"], 100) },
+      { id: "roe", l: "Eigenkapitalrendite (ROE)", u: "pct", s: ["metrics"], dir: "gt", get: S("metrics", ["returnOnEquityTTM"], 100) },
+      { id: "roa", l: "Gesamtkapitalrendite (ROA)", u: "pct", s: ["metrics"], dir: "gt", get: S("metrics", ["returnOnAssetsTTM"], 100) },
+      { id: "roic", l: "ROIC (Rendite auf investiertes Kapital)", u: "pct", s: ["metrics"], dir: "gt", get: S("metrics", ["returnOnInvestedCapitalTTM"], 100) },
+      { id: "roce", l: "ROCE (Rendite auf eingesetztes Kapital)", u: "pct", s: ["metrics"], dir: "gt", get: S("metrics", ["returnOnCapitalEmployedTTM"], 100) }
+    ]],
+    ["Bilanz und Schulden", [
+      { id: "de", l: "Schulden/Eigenkapital", u: "x", s: ["ratios"], dir: "lt", get: S("ratios", ["debtToEquityRatioTTM", "debtEquityRatioTTM"]) },
+      { id: "da", l: "Schulden/Gesamtkapital", u: "pct", s: ["ratios"], dir: "lt", get: S("ratios", ["debtToAssetsRatioTTM", "debtRatioTTM"], 100) },
+      { id: "nde", l: "Nettoschulden/EBITDA", u: "x", s: ["metrics"], dir: "lt", get: S("metrics", ["netDebtToEBITDATTM"]) },
+      { id: "cov", l: "Zinsdeckung (EBIT/Zinsen)", u: "x", s: ["ratios"], dir: "gt", get: S("ratios", ["interestCoverageRatioTTM"]) },
+      { id: "cr", l: "Current Ratio", u: "x", s: ["ratios"], dir: "gt", get: S("ratios", ["currentRatioTTM"]) },
+      { id: "qr", l: "Quick Ratio", u: "x", s: ["ratios"], dir: "gt", get: S("ratios", ["quickRatioTTM"]) },
+      { id: "debt", l: "Gesamtschulden", u: "big", s: ["bsttm"], dir: "lt", get: S("bsttm", ["totalDebt"]) },
+      { id: "netdebt", l: "Nettoschulden", u: "big", s: ["bsttm"], dir: "lt", get: S("bsttm", ["netDebt"]) },
+      { id: "cash", l: "Liquide Mittel", u: "big", s: ["bsttm"], dir: "gt", get: S("bsttm", ["cashAndCashEquivalents", "cashAndShortTermInvestments"]) },
+      { id: "equity", l: "Eigenkapital", u: "big", s: ["bsttm"], dir: "gt", get: S("bsttm", ["totalStockholdersEquity", "totalEquity"]) },
+      { id: "intexp", l: "Zinsaufwand (TTM)", u: "big", s: ["isttm"], dir: "lt", get: function (D) { var v = first(D.isttm, ["interestExpense"]); return v === null ? null : Math.abs(v); } },
+      { id: "intshare", l: "Zinsaufwand in % vom EBITDA", u: "pct", s: ["isttm"], dir: "lt", get: function (D) { var i = first(D.isttm, ["interestExpense"]), e = first(D.isttm, ["ebitda"]); var v = (i === null || !e) ? null : Math.abs(i) / e * 100; return v; } }
+    ]],
+    ["Cashflow und Investitionen", [
+      { id: "ocf", l: "Operativer Cashflow (TTM)", u: "big", s: ["cfttm"], dir: "gt", get: S("cfttm", ["operatingCashFlow", "netCashProvidedByOperatingActivities"]) },
+      { id: "fcf", l: "Free Cashflow (TTM)", u: "big", s: ["cfttm"], dir: "gt", get: S("cfttm", ["freeCashFlow"]) },
+      { id: "capex", l: "Investitionen (Capex, TTM)", u: "big", s: ["cfttm"], dir: "lt", get: function (D) { var v = first(D.cfttm, ["capitalExpenditure"]); return v === null ? null : Math.abs(v); } },
+      { id: "capexrev", l: "Capex in % vom Umsatz", u: "pct", s: ["metrics"], dir: "lt", get: function (D) { var v = first(D.metrics, ["capexToRevenueTTM"]); return v === null ? null : Math.abs(v) * 100; } },
+      { id: "capexocf", l: "Capex in % vom operativen Cashflow", u: "pct", s: ["metrics"], dir: "lt", get: function (D) { var v = first(D.metrics, ["capexToOperatingCashFlowTTM"]); return v === null ? null : Math.abs(v) * 100; } },
+      { id: "revenue", l: "Umsatz (TTM)", u: "big", s: ["isttm"], dir: "gt", get: S("isttm", ["revenue"]) },
+      { id: "ebitda", l: "EBITDA (TTM)", u: "big", s: ["isttm"], dir: "gt", get: S("isttm", ["ebitda"]) },
+      { id: "netinc", l: "Nettogewinn (TTM)", u: "big", s: ["isttm"], dir: "gt", get: S("isttm", ["netIncome"]) }
+    ]],
+    ["Qualität (Scores)", [
+      { id: "pio", l: "Piotroski-Score (0 bis 9)", u: "num", s: ["scores"], dir: "gt", get: S("scores", ["piotroskiScore"]), d: "Höher ist besser, 7 und mehr gilt als stark" },
+      { id: "alt", l: "Altman-Z-Score", u: "num", s: ["scores"], dir: "gt", get: S("scores", ["altmanZScore"]), d: "Über 3 gilt als solide, unter 1,8 als Risiko" }
+    ]],
+    ["REITs und BDCs (Näherungen)", [
+      { id: "nav", l: "NAV je Aktie (≈ Buchwert je Aktie)", u: "usd", s: ["ratios"], dir: "gt", get: S("ratios", ["bookValuePerShareTTM"]), d: "Näherung über den bilanziellen Buchwert, kein gemeldeter NAV" },
+      { id: "pnav", l: "Kurs/NAV (≈ Kurs/Buchwert)", u: "x", s: ["ratios"], dir: "lt", get: function (D) { var b = first(D.ratios, ["bookValuePerShareTTM"]), p = first(D.profile, ["price"]); var v = div(p, b); return v !== null && v > 0 ? v : null; }, d: "Unter 1 = Abschlag zum Buchwert. Gemeldeten NAV liefert FMP nicht." },
+      { id: "ffo", l: "FFO (Näherung, TTM)", u: "big", s: ["cfttm"], dir: "gt", get: cfFFO, d: "Nettogewinn + Abschreibungen. Gewinne aus Immobilienverkäufen sind nicht herausgerechnet." },
+      { id: "ffops", l: "FFO je Aktie (Näherung)", u: "usd", s: ["cfttm"], dir: "gt", get: ffops },
+      { id: "pffo", l: "Kurs/FFO (Näherung)", u: "x", s: ["cfttm"], dir: "lt", get: function (D) { var f = ffops(D), p = first(D.profile, ["price"]); var v = div(p, f); return v !== null && v > 0 ? v : null; } },
+      { id: "ffopayout", l: "FFO-Ausschüttungsquote (Näherung)", u: "pct", s: ["cfttm"], dir: "lt", get: function (D) { var d = first(D.profile, ["div"]), f = ffops(D); var v = div(d, f); return v !== null && v > 0 ? v * 100 : null; }, d: "Dividende / FFO je Aktie" },
+      { id: "ocfpayout", l: "Ausschüttung in % vom operativen Cashflow", u: "pct", s: ["cfttm"], dir: "lt", get: function (D) { var d = first(D.cfttm, ["commonDividendsPaid", "netDividendsPaid", "dividendsPaid"]), o = first(D.cfttm, ["operatingCashFlow", "netCashProvidedByOperatingActivities"]); var v = (d === null || !o) ? null : Math.abs(d) / o * 100; return v; }, d: "Hilfsgröße für REITs und BDCs. AFFO und Net Investment Income (NII) liefert FMP nicht." }
+    ]]
+  ];
+  var CAT = {}; cat.forEach(function (g) { g[1].forEach(function (m) { m.g = g[0]; CAT[m.id] = m; }); });
+
+  var UNITS = { big: { Mio: 1e6, Mrd: 1e9, Bio: 1e12 } };
+  function toBase(m, v, um) { return m.u === "big" ? v * (UNITS.big[um] || 1e9) : v; }
+  /** Prüft einen Wert gegen ein Kriterium. Fehlender Wert = nicht erfüllt. */
+  function check(val, c) {
+    if (val === null || val === undefined || isNaN(val)) return false;
+    if (c.op === "gt") return val > c.v1;
+    if (c.op === "lt") return val < c.v1;
+    return val >= Math.min(c.v1, c.v2) && val <= Math.max(c.v1, c.v2);
+  }
+  function normProfile(x, fromProfile) {
+    var price = nz(x.price) === null ? null : Number(x.price);
+    return {
+      symbol: String(x.symbol || ""), name: x.companyName || x.name || "", sector: x.sector || "", industry: x.industry || "", country: x.country || "",
+      exchange: (fromProfile ? x.exchange : (x.exchangeShortName || x.exchange)) || "", price: price, mcap: first(x, ["marketCap", "mktCap"]), beta: first(x, ["beta"]),
+      volume: first(x, ["volume", "averageVolume"]), div: first(x, ["lastAnnualDividend", "lastDividend", "lastDiv"]), isEtf: !!x.isEtf || !!x.isFund
+    };
+  }
+  function serverParams(crit, base) {
+    var p = {}, map = { mcap: ["marketCapMoreThan", "marketCapLowerThan"], price: ["priceMoreThan", "priceLowerThan"], beta: ["betaMoreThan", "betaLowerThan"], volume: ["volumeMoreThan", "volumeLowerThan"] };
+    crit.forEach(function (c) {
+      var m = map[c.id]; if (!m) return;
+      var v1 = c.v1, v2 = c.v2;
+      if (c.op === "gt") p[m[0]] = v1; else if (c.op === "lt") p[m[1]] = v1; else { p[m[0]] = Math.min(v1, v2); p[m[1]] = Math.max(v1, v2); }
+    });
+    if (crit.some(function (c) { return c.id === "yield" || c.id === "dps" || c.id === "payout" || c.id === "dyttm" || c.id === "divstreak"; })) p.dividendMoreThan = 0.01;
+    if (base.sector) p.sector = base.sector; if (base.country) p.country = base.country; if (base.exchange) p.exchange = base.exchange;
+    if (base.noEtf) { p.isEtf = "false"; p.isFund = "false"; }
+    p.isActivelyTrading = "true"; p.limit = base.limit || 500;
+    return p;
+  }
+  var api = { CAT: CAT, cat: cat, check: check, toBase: toBase, divStats: divStats, normProfile: normProfile, serverParams: serverParams, ORDER: ORDER, SOURCES: SOURCES };
+  if (typeof module !== "undefined" && module.exports) module.exports = api;
+  root.ScreenerCore = api;
+  if (typeof document === "undefined") return;
+
+  /* ---------- Oberfläche ---------- */
+  var $ = function (id) { return document.getElementById(id); };
+  var esc = function (s) { return String(s === null || s === undefined ? "" : s).replace(/[&<>"]/g, function (c) { return { "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]; }); };
+  var dec = function (v, d) { return v === null || v === undefined || isNaN(v) ? "–" : Number(v).toLocaleString("de-DE", { minimumFractionDigits: d, maximumFractionDigits: d }); };
+  var big = function (v) { if (v === null || v === undefined || isNaN(v)) return "–"; var a = Math.abs(v); return a >= 1e12 ? dec(v / 1e12, 2) + " Bio" : a >= 1e9 ? dec(v / 1e9, 2) + " Mrd" : a >= 1e6 ? dec(v / 1e6, 1) + " Mio" : dec(v, 0); };
+  var fmt = function (m, v) { return v === null || v === undefined || isNaN(v) ? "–" : m.u === "pct" ? dec(v, 1) + " %" : m.u === "x" ? dec(v, 2) : m.u === "usd" ? dec(v, 2) : m.u === "big" ? big(v) : m.u === "yrs" ? dec(v, 0) : dec(v, 2); };
+  var parse = function (s) {
+    var v = String(s === undefined ? "" : s).trim().replace(/\s/g, ""); if (v === "") return null;
+    if (v.indexOf(",") > -1) v = v.replace(/\./g, "").replace(",", "."); else if (/^\d{1,3}(\.\d{3})+$/.test(v)) v = v.replace(/\./g, "");
+    var n = Number(v); return isNaN(n) ? null : n;
+  };
+  var B = "https://financialmodelingprep.com/stable/";
+  var KEY = ""; try { KEY = localStorage.getItem("fmpkey") || ""; } catch (e) { }
+  function askKey() { var k = prompt("FMP API-Key (wird nur in deinem Browser gespeichert):", KEY); if (k !== null) { KEY = k.trim(); try { localStorage.setItem("fmpkey", KEY); } catch (e) { } showKey(); } }
+  function showKey() { var e = $("keystate"); if (e) e.textContent = KEY ? "API-Key gespeichert (••••" + KEY.slice(-4) + ")" : "Kein API-Key hinterlegt"; }
+  var RUN = { calls: 0, max: 250, abort: false, busy: false };
+  async function call(path, params) {
+    if (!KEY) { askKey(); if (!KEY) throw new Error("Kein API-Key hinterlegt"); }
+    var u = new URL(B + path); Object.keys(params || {}).forEach(function (k) { u.searchParams.set(k, params[k]); });
+    var ck = "fmp:" + u.toString();
+    try { var c = JSON.parse(localStorage.getItem(ck) || "null"); if (c && Date.now() - c.t < 432e5) { if (c.err) throw new Error(c.err); return c.j; } } catch (e) { if (/^HTTP 40[23]/.test(e.message)) throw e; }
+    if (RUN.calls >= RUN.max) { var le = new Error("LIMIT"); le.limit = true; throw le; }
+    RUN.calls++;
+    u.searchParams.set("apikey", KEY);
+    var r = await fetch(u), txt = await r.text(), j = null; try { j = JSON.parse(txt); } catch (e) { }
+    if (!r.ok) { var m = ("HTTP " + r.status + ": " + ((j && (j["Error Message"] || j.message)) || txt)).slice(0, 160); if (r.status === 402 || r.status === 403) try { localStorage.setItem(ck, JSON.stringify({ t: Date.now(), err: m })); } catch (e) { } throw new Error(m); }
+    if (j && j["Error Message"]) throw new Error(String(j["Error Message"]).slice(0, 160));
+    if (Array.isArray(j) && !j.length) throw new Error("leere Antwort");
+    if (txt.length < 3e5) try { localStorage.setItem(ck, JSON.stringify({ t: Date.now(), j: j })); } catch (e) { }
+    return j;
+  }
+  async function fetchSource(src, sym) {
+    var S0 = SOURCES[src], p = Object.assign({ symbol: sym }, S0.p || {});
+    var j;
+    try { j = await call(S0.path, p); }
+    catch (e) { if (S0.alt && !e.limit && !/HTTP 40[23]|HTTP 429|leere/.test(e.message)) j = await call(S0.path, Object.assign({ symbol: sym }, S0.alt)); else throw e; }
+    if (src === "divs") return divStats(Array.isArray(j) ? j : (j && j.historical) || [], new Date().getFullYear());
+    return one(j);
+  }
+
+  var ST = { mode: "markt", rows: [], crit: [], sort: "mcap", dir: "desc", view: [] };
+  function rowHTML(m, c) {
+    c = c || { op: m.dir || "gt", v1: "", v2: "", um: "Mrd" };
+    var unit = m.u === "big" ? '<select class="cum" aria-label="Einheit">' + Object.keys(UNITS.big).map(function (k) { return '<option' + (k === c.um ? " selected" : "") + ">" + k + "</option>"; }).join("") + "</select><span class=\"cu2\">USD</span>"
+      : '<span class="cunit">' + ({ pct: "%", x: "x", usd: "USD", yrs: "Jahre", num: "" }[m.u] || "") + "</span>";
+    return '<div class="crit" data-id="' + m.id + '"><div class="cname"><b>' + esc(m.l) + '</b><small>' + esc(m.d || m.g) + '</small></div>'
+      + '<select class="cop" aria-label="Bedingung"><option value="gt"' + (c.op === "gt" ? " selected" : "") + '>größer als</option><option value="lt"' + (c.op === "lt" ? " selected" : "") + '>kleiner als</option><option value="btw"' + (c.op === "btw" ? " selected" : "") + '>zwischen</option></select>'
+      + '<input class="cv1" inputmode="decimal" aria-label="Wert" value="' + esc(c.v1) + '"><span class="cand"' + (c.op === "btw" ? "" : " hidden") + '>und</span><input class="cv2" inputmode="decimal" aria-label="Zweiter Wert" value="' + esc(c.v2) + '"' + (c.op === "btw" ? "" : " hidden") + '>'
+      + '<span class="cu">' + unit + '</span><button type="button" class="crm" aria-label="Kriterium entfernen">✕</button></div>';
+  }
+  function addCrit(id, c) {
+    var m = CAT[id]; if (!m) return;
+    var d = document.createElement("div"); d.innerHTML = rowHTML(m, c); var el = d.firstChild; $("crits").appendChild(el);
+    el.querySelector(".crm").onclick = function () { el.remove(); emptyHint(); };
+    el.querySelector(".cop").onchange = function (e) { var b = e.target.value === "btw"; el.querySelector(".cand").hidden = !b; el.querySelector(".cv2").hidden = !b; };
+    emptyHint();
+  }
+  function emptyHint() { $("crithint").hidden = $("crits").children.length > 0; }
+  function readCrit() {
+    var out = [], bad = null;
+    $("crits").querySelectorAll(".crit").forEach(function (el) {
+      var m = CAT[el.dataset.id], op = el.querySelector(".cop").value, v1 = parse(el.querySelector(".cv1").value), v2 = parse(el.querySelector(".cv2").value), um = el.querySelector(".cum") ? el.querySelector(".cum").value : null;
+      el.classList.remove("bad");
+      if (v1 === null || (op === "btw" && v2 === null)) { el.classList.add("bad"); bad = bad || m.l; return; }
+      out.push({ id: m.id, op: op, v1: toBase(m, v1, um), v2: v2 === null ? null : toBase(m, v2, um), raw1: v1, raw2: v2, um: um });
+    });
+    return { crit: out, bad: bad };
+  }
+  function status(msg, cls) { var e = $("status"); e.className = "status" + (cls ? " " + cls : ""); e.textContent = msg; }
+  function errText(e) {
+    var m = String(e && e.message || e);
+    if (/HTTP 402|HTTP 403/.test(m)) return ST.mode === "markt" ? "Der Marktscreener ist im aktuellen FMP-Tarif nicht enthalten (402). Nutze „Eigene Liste“." : "Nicht im Tarif enthalten (402).";
+    if (/HTTP 429/.test(m)) return "Tageslimit des FMP-Tarifs erreicht (429). Bitte später erneut versuchen.";
+    if (/leere Antwort/.test(m)) return "Keine Daten gefunden.";
+    return "Fehler: " + m;
+  }
+  function evalAll(D, crit) { return crit.every(function (c) { return check(CAT[c.id].get(D), c); }); }
+
+  async function pool(items, fn, n) { var i = 0; var w = async function () { while (i < items.length && !RUN.abort) { var it = items[i++]; await fn(it); } }; var ws = []; for (var k = 0; k < n; k++) ws.push(w()); await Promise.all(ws); }
+
+  async function run() {
+    if (RUN.busy) return;
+    var rc = readCrit();
+    if (rc.bad) { status("Bitte für „" + rc.bad + "“ einen Wert eintragen.", "err"); return; }
+    var crit = rc.crit;
+    RUN.busy = true; RUN.abort = false; RUN.calls = 0; RUN.max = Math.max(1, Math.min(5000, parse($("f-max").value) || 250)); $("go").disabled = true;
+    var log = [], warn = [], stopped = false, truncated = 0;
+    try {
+      var base = { sector: $("f-sector").value, country: $("f-country").value, exchange: $("f-exchange").value, noEtf: $("f-etf").checked, limit: Math.min(1000, Math.max(1, parse($("f-limit").value) || 500)) };
+      var ind = $("f-ind").value.trim().toLowerCase();
+      var uni = [];
+      if (ST.mode === "markt") {
+        status("Screener-Abfrage läuft …");
+        var j = await call("company-screener", serverParams(crit, base));
+        uni = (Array.isArray(j) ? j : []).map(function (x) { return { profile: normProfile(x, false) }; });
+        log.push("Marktscreener: " + uni.length);
+      } else {
+        var syms = $("f-list").value.split(/[\s,;]+/).map(function (s) { return s.trim().toUpperCase(); }).filter(Boolean).filter(function (s, i, a) { return a.indexOf(s) === i; }).slice(0, 300), skipped = 0;
+        await pool(syms, async function (s) {
+          try { var p = one(await call("profile", { symbol: s })); if (p) uni.push({ profile: normProfile(p, true) }); else skipped++; }
+          catch (e) { if (e.limit || /HTTP 429/.test(e.message)) { stopped = true; RUN.abort = true; } else skipped++; }
+          status("Lade Profile … " + (uni.length + skipped) + " von " + syms.length);
+        }, 3);
+        uni.sort(function (a, b) { return (b.profile.mcap || 0) - (a.profile.mcap || 0); });
+        log.push("Eigene Liste: " + uni.length + " von " + syms.length + (skipped ? " (" + skipped + " nicht verfügbar)" : ""));
+      }
+      // Basisfilter (Sektor, Land, Börse, ETF, Branche) auch lokal anwenden
+      var work = uni.filter(function (D) {
+        var p = D.profile;
+        if (base.sector && p.sector !== base.sector) return false; if (base.country && p.country !== base.country) return false; if (base.exchange && p.exchange !== base.exchange) return false;
+        if (base.noEtf && p.isEtf) return false; if (ind && p.industry.toLowerCase().indexOf(ind) < 0) return false; return true;
+      });
+      if (work.length !== uni.length) log.push("nach Sektor/Land/Börse/Branche: " + work.length);
+      var done = {}; // Kriterien-Index -> bereits angewendet
+      var apply = function (srcLoaded) {
+        crit.forEach(function (c, i) {
+          if (done[i]) return; var m = CAT[c.id];
+          if (m.s.every(function (s) { return srcLoaded.indexOf(s) > -1; })) {
+            var before = work.length, nodata = 0;
+            work = work.filter(function (D) { var v = m.get(D); if (v === null || v === undefined || isNaN(v)) { nodata++; return false; } return check(v, c); });
+            done[i] = true; log.push(m.l + ": " + work.length + (nodata ? " (" + nodata + " ohne Daten)" : ""));
+            if (before > 0 && nodata === before && m.s.length) warn.push("Für „" + m.l + "“ lieferte FMP keine Werte (Feld fehlt oder nicht im Tarif enthalten).");
+          }
+        });
+      };
+      var loaded = ["profile"]; apply(loaded);
+      var need = ORDER.filter(function (s) { return crit.some(function (c) { return CAT[c.id].s.indexOf(s) > -1; }); });
+      for (var si = 0; si < need.length && !RUN.abort; si++) {
+        var src = need[si], todo = work.filter(function (D) { return D[src] === undefined; }), cnt = 0, fails = 0;
+        await pool(todo, async function (D) {
+          try { D[src] = await fetchSource(src, D.profile.symbol); }
+          catch (e) { if (e.limit || /HTTP 429/.test(e.message)) { stopped = true; RUN.abort = true; } else { D[src] = null; fails++; } }
+          cnt++; status(SOURCES[src].label + " laden … " + cnt + " von " + todo.length + " (Aufrufe: " + RUN.calls + " von " + RUN.max + ")");
+        }, 3);
+        if (RUN.abort) { truncated = work.filter(function (D) { return D[src] === undefined; }).length; work = work.filter(function (D) { return D[src] !== undefined; }); }
+        loaded.push(src); apply(loaded);
+      }
+      ST.rows = work; ST.crit = crit;
+      var msg = work.length + " Treffer. Verlauf: " + log.join(" → ") + ". API-Aufrufe: " + RUN.calls + ".";
+      if (stopped) msg += " Abgebrochen, weil das Limit von " + RUN.max + " Aufrufen oder das Tageslimit erreicht wurde" + (truncated ? " (" + truncated + " Aktien nicht mehr geprüft)" : "") + ". Das Ergebnis ist unvollständig.";
+      if (warn.length) msg += " Hinweis: " + warn.join(" ");
+      status(msg, (stopped || warn.length) ? "err" : "ok");
+    } catch (e) { ST.rows = []; status(errText(e), "err"); }
+    finally { RUN.busy = false; $("go").disabled = false; render(); }
+  }
+
+  function colsFor() {
+    var cols = [{ k: "symbol", l: "Symbol", get: function (D) { return D.profile.symbol; }, f: function (D) { return "<b>" + esc(D.profile.symbol) + "</b>"; }, t: 1 },
+    { k: "name", l: "Name", get: function (D) { return D.profile.name; }, f: function (D) { return esc(D.profile.name); }, t: 1 },
+    { k: "sector", l: "Sektor", get: function (D) { return D.profile.sector; }, f: function (D) { return esc(D.profile.sector); }, t: 1 },
+    { k: "price", l: "Kurs", get: function (D) { return D.profile.price; }, f: function (D) { return dec(D.profile.price, 2); } },
+    { k: "mcap", l: "Marktkap.", get: function (D) { return D.profile.mcap; }, f: function (D) { return big(D.profile.mcap); } }];
+    var seen = { price: 1, mcap: 1 };
+    ST.crit.forEach(function (c) { if (seen[c.id]) return; seen[c.id] = 1; var m = CAT[c.id]; cols.push({ k: c.id, l: m.l, get: m.get, f: function (D) { return fmt(m, m.get(D)); } }); });
+    if (!seen.yield) cols.splice(5, 0, { k: "yield", l: "Div.-Rendite", get: CAT.yield.get, f: function (D) { return fmt(CAT.yield, CAT.yield.get(D)); } });
+    return cols;
+  }
+  function render() {
+    var cols = colsFor(), key = cols.some(function (c) { return c.k === ST.sort; }) ? ST.sort : "mcap", m = ST.dir === "asc" ? 1 : -1, g = cols.filter(function (c) { return c.k === key; })[0].get;
+    var rows = ST.rows.slice().sort(function (a, b) { var x = g(a), y = g(b); if (x === null || x === undefined) return (y === null || y === undefined) ? 0 : 1; if (y === null || y === undefined) return -1; return (typeof x === "string" ? x.localeCompare(y, "de") : x - y) * m; });
+    ST.view = rows; ST.cols = cols;
+    var th = cols.map(function (c) { var on = c.k === key; return '<th><button type="button" data-sort="' + c.k + '" aria-sort="' + (on ? (ST.dir === "asc" ? "ascending" : "descending") : "none") + '">' + esc(c.l) + (on ? (ST.dir === "asc" ? " ▲" : " ▼") : "") + "</button></th>"; }).join("");
+    var tb = rows.slice(0, 500).map(function (D) { return "<tr>" + cols.map(function (c) { return '<td class="' + (c.t ? "l" : "") + '">' + c.f(D) + "</td>"; }).join("") + "</tr>"; }).join("");
+    $("res").innerHTML = rows.length ? '<div class="xw"><table><thead><tr>' + th + "</tr></thead><tbody>" + tb + "</tbody></table></div>" : "";
+    $("actions").hidden = !rows.length; $("count").textContent = rows.length ? rows.length + " Treffer" : "";
+    $("res").querySelectorAll("[data-sort]").forEach(function (b) { b.onclick = function () { var k = b.dataset.sort; if (ST.sort === k) ST.dir = ST.dir === "asc" ? "desc" : "asc"; else { ST.sort = k; ST.dir = (k === "symbol" || k === "name" || k === "sector") ? "asc" : "desc"; } render(); }; });
+  }
+
+  /* ---------- Vorlagen ---------- */
+  var T = {
+    "Dividenden-Klassiker": { c: [["yield", "gt", 3], ["payout", "lt", 75], ["divstreak", "gt", 9], ["mcap", "gt", 10, "Mrd"], ["nde", "lt", 3.5]] },
+    "Dividendenwachstum": { c: [["divcagr", "gt", 7], ["payout", "lt", 60], ["revg5", "gt", 5], ["roce", "gt", 12]] },
+    "Qualitätswerte": { c: [["roce", "gt", 15], ["nm", "gt", 10], ["revg", "gt", 5], ["nde", "lt", 3], ["pio", "gt", 6]] },
+    "Günstig bewertet": { c: [["pe", "lt", 15], ["pb", "lt", 2], ["fcfyield", "gt", 5], ["de", "lt", 1.5]] },
+    "REITs": { c: [["yield", "gt", 4], ["pffo", "lt", 18], ["ffopayout", "lt", 90], ["nde", "lt", 7]], ind: "REIT" },
+    "BDCs": { c: [["pnav", "lt", 1.1], ["yield", "gt", 8], ["de", "lt", 1.25]] }
+  };
+  function loadSet(c, ind) {
+    $("crits").innerHTML = ""; c.forEach(function (x) { addCrit(x[0], { op: x[1], v1: String(x[2]).replace(".", ","), v2: x[4] === undefined || x[4] === "" ? "" : String(x[4]).replace(".", ","), um: x[3] || "Mrd" }); });
+    $("f-ind").value = ind || "";
+  }
+  function saved() { try { return JSON.parse(localStorage.getItem("screens") || "{}"); } catch (e) { return {}; } }
+  function renderSaved() {
+    var s = saved(), k = Object.keys(s), box = $("savedchips");
+    box.innerHTML = k.map(function (n) { return '<span class="sv"><button type="button" data-sv="' + esc(n) + '">' + esc(n) + '</button><button type="button" class="x" data-del="' + esc(n) + '" aria-label="Vorlage ' + esc(n) + ' löschen">✕</button></span>'; }).join("");
+    box.hidden = !k.length; $("savedlbl").hidden = !k.length;
+    box.querySelectorAll("[data-sv]").forEach(function (b) { b.onclick = function () { var d = saved()[b.dataset.sv]; if (d) loadSet(d.c, d.ind); }; });
+    box.querySelectorAll("[data-del]").forEach(function (b) { b.onclick = function () { var s2 = saved(); delete s2[b.dataset.del]; try { localStorage.setItem("screens", JSON.stringify(s2)); } catch (e) { } renderSaved(); }; });
+  }
+  function setMode(m) {
+    ST.mode = m; $("m-markt").setAttribute("aria-pressed", String(m === "markt")); $("m-liste").setAttribute("aria-pressed", String(m === "liste"));
+    $("listbox").hidden = m !== "liste"; $("marktnote").hidden = m !== "markt"; $("limitbox").hidden = m !== "markt";
+  }
+  function init() {
+    if (!$("go")) return;
+    showKey(); $("keybtn").onclick = askKey;
+    var sel = $("addcrit"); sel.innerHTML = '<option value="">+ Kriterium hinzufügen …</option>' + cat.map(function (g) { return '<optgroup label="' + esc(g[0]) + '">' + g[1].map(function (m) { return '<option value="' + m.id + '">' + esc(m.l) + "</option>"; }).join("") + "</optgroup>"; }).join("");
+    sel.onchange = function () { if (sel.value) addCrit(sel.value); sel.value = ""; };
+    $("tpls").innerHTML = Object.keys(T).map(function (n) { return '<button type="button" data-t="' + esc(n) + '">' + esc(n) + "</button>"; }).join("");
+    $("tpls").querySelectorAll("[data-t]").forEach(function (b) { b.onclick = function () { var t = T[b.dataset.t]; loadSet(t.c, t.ind); }; });
+    $("m-markt").onclick = function () { setMode("markt"); }; $("m-liste").onclick = function () { setMode("liste"); };
+    $("go").onclick = run; $("stop").onclick = function () { RUN.abort = true; };
+    $("clear").onclick = function () { $("crits").innerHTML = ""; emptyHint(); $("f-ind").value = ""; };
+    $("save").onclick = function () {
+      var rc = readCrit(); if (rc.bad || !rc.crit.length) { status("Zum Speichern bitte mindestens ein vollständiges Kriterium eintragen.", "err"); return; }
+      var n = ($("savename").value || "").trim(); if (!n) { status("Bitte einen Namen für die Vorlage eintragen.", "err"); $("savename").focus(); return; }
+      var s = saved(); s[n] = { c: rc.crit.map(function (c) { return [c.id, c.op, c.raw1 === null ? "" : c.raw1, c.um || "Mrd", c.raw2 === null ? "" : c.raw2]; }), ind: $("f-ind").value };
+      try { localStorage.setItem("screens", JSON.stringify(s)); status("Vorlage „" + n + "“ gespeichert (nur in diesem Browser).", "ok"); } catch (e) { status("Speichern nicht möglich.", "err"); }
+      $("savename").value = ""; renderSaved();
+    };
+    $("copy").onclick = function () {
+      var t = ST.view.map(function (D) { return D.profile.symbol; }).join(", "), done = function () { status(ST.view.length + " Symbole kopiert.", "ok"); };
+      if (navigator.clipboard && navigator.clipboard.writeText) navigator.clipboard.writeText(t).then(done, function () { $("f-list").value = t; status("Kopieren nicht möglich. Die Symbole stehen im Feld „Eigene Liste“.", "err"); }); else { $("f-list").value = t; status("Die Symbole stehen im Feld „Eigene Liste“.", "ok"); }
+    };
+    $("towl").onclick = function () {
+      var wl = []; try { wl = JSON.parse(localStorage.getItem("wl") || "[]"); if (!Array.isArray(wl)) wl = []; } catch (e) { wl = []; }
+      var have = {}; wl.forEach(function (x) { have[x.s] = 1; }); var n = 0;
+      ST.view.slice(0, 50).forEach(function (D) { var s = String(D.profile.symbol || "").toUpperCase(); if (s && !have[s]) { have[s] = 1; wl.push({ s: s, n: String(D.profile.companyName || D.profile.name || s) }); n++; } });
+      try { localStorage.setItem("wl", JSON.stringify(wl)); status(n + " Aktien in die Watchlist übernommen" + (ST.view.length > 50 ? " (die ersten 50)" : "") + ". Du findest sie im Aktien-Hub und bei den News.", "ok"); } catch (e) { status("Speichern nicht möglich.", "err"); }
+    };
+    $("tolist").onclick = function () { $("f-list").value = ST.view.map(function (D) { return D.profile.symbol; }).join(", "); setMode("liste"); status("Symbole in „Eigene Liste“ übernommen.", "ok"); };
+    $("csv").onclick = function () {
+      var q = function (v) { if (v === null || v === undefined || (typeof v === "number" && isNaN(v))) return ""; if (typeof v === "number") return String(Math.round(v * 10000) / 10000).replace(".", ","); var s = String(v); return /[;"\n]/.test(s) ? '"' + s.replace(/"/g, '""') + '"' : s; };
+      var txt = "﻿" + [ST.cols.map(function (c) { return q(c.l); }).join(";")].concat(ST.view.map(function (D) { return ST.cols.map(function (c) { return q(c.get(D)); }).join(";"); })).join("\r\n");
+      var u = URL.createObjectURL(new Blob([txt], { type: "text/csv;charset=utf-8" })), a = document.createElement("a"); a.href = u; a.download = "screener.csv"; document.body.appendChild(a); a.click(); a.remove(); setTimeout(function () { URL.revokeObjectURL(u); }, 2000);
+    };
+    setMode("markt"); renderSaved(); emptyHint();
+  }
+  if (document.readyState === "loading") document.addEventListener("DOMContentLoaded", init); else init();
+})(typeof window !== "undefined" ? window : globalThis);
+
+</script>
+</body>
+</html>

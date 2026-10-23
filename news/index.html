@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Aktien-News: Nachrichten zu deiner Watchlist</title>
+<meta name="description" content="Aktuelle Nachrichten und Pressemitteilungen zu den Aktien in deiner Watchlist, dazu allgemeine Börsen-News. Daten von Financial Modeling Prep.">
+<meta name="robots" content="index,follow">
+<link rel="canonical" href="https://dividenden-rechner.github.io/aktien-hub/news/">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="de_DE">
+<meta property="og:site_name" content="Dividenden-Rechner Aktien-Hub">
+<meta property="og:title" content="Aktien-News: Nachrichten zu deiner Watchlist">
+<meta property="og:description" content="Aktuelle Nachrichten und Pressemitteilungen zu den Aktien in deiner Watchlist, dazu allgemeine Börsen-News. Daten von Financial Modeling Prep.">
+<meta property="og:url" content="https://dividenden-rechner.github.io/aktien-hub/news/">
+<meta name="theme-color" content="#ffffff">
+<link rel="stylesheet" href="../assets/site.css">
+<style>
+.nw h1{margin-bottom:6px}
+.nw .lead{color:var(--mut);margin:0 0 18px}
+.bar{display:flex;flex-wrap:wrap;gap:10px 14px;align-items:center;margin:0 0 12px}
+.seg{display:inline-flex;border:1px solid var(--line);border-radius:10px;overflow:hidden}
+.seg button{font:inherit;font-size:15px;font-weight:500;padding:8px 14px;border:0;background:#fff;color:var(--ink);cursor:pointer;border-right:1px solid var(--line)}
+.seg button:last-child{border-right:0}
+.seg button[aria-pressed="true"]{background:var(--soft);color:var(--accd);font-weight:600}
+.chips{display:flex;flex-wrap:wrap;gap:6px;margin:0 0 12px}
+.chip{display:inline-flex;align-items:center;gap:2px;border:1px solid var(--line);border-radius:999px;background:#fff;font-size:14px}
+.chip button{font:inherit;border:0;background:none;color:var(--ink);cursor:pointer;padding:4px 6px 4px 11px;border-radius:999px 0 0 999px}
+.chip button.x{padding:4px 10px 4px 4px;color:var(--mut);border-radius:0 999px 999px 0}
+.chip button.x:hover{color:#b3372d}
+.chip.on{background:var(--soft);border-color:#b9e0c8}.chip.on button:first-child{color:var(--accd);font-weight:600}
+.addf{display:inline-flex;gap:6px}
+.addf input{font:inherit;font-size:14px;width:150px;padding:5px 10px;border:1px solid var(--line);border-radius:8px;text-transform:uppercase}
+.addf input::placeholder{text-transform:none}
+.nbtn{font:inherit;font-size:14px;font-weight:600;padding:5px 12px;border:0;border-radius:8px;background:#98e6b3;color:#14202b;cursor:pointer}
+.nbtn.alt{background:var(--soft);border:1px solid var(--line)}
+input:focus-visible,button:focus-visible{outline:2px solid var(--acc);outline-offset:2px}
+#msg{margin:10px 0;color:var(--mut);min-height:1.5em}
+#msg.err{color:#b3372d}
+.box{border:1px solid var(--line);border-radius:10px;padding:14px 16px;background:#fff;margin:0 0 14px}
+.news{list-style:none;margin:0;padding:0}
+.ni{display:flex;gap:14px;padding:14px 0;border-bottom:1px solid var(--line)}
+.ni:first-child{border-top:1px solid var(--line)}
+.ni img{flex:none;width:112px;height:76px;object-fit:cover;border-radius:8px;background:var(--soft)}
+.ni h3{margin:0 0 3px;font-size:17px;line-height:1.35}
+.ni h3 a{color:var(--ink);text-decoration:none}.ni h3 a:hover{color:var(--accd);text-decoration:underline}
+.ni p{margin:4px 0 0;color:var(--mut);font-size:14.5px;line-height:1.5;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden}
+.meta2{font-size:13px;color:var(--mut);display:flex;flex-wrap:wrap;gap:2px 10px;align-items:center}
+.sym{text-decoration:none;font-weight:700;font-size:12px;color:var(--accd);background:var(--soft);border-radius:6px;padding:1px 7px}
+.more{text-align:center;margin:18px 0}
+details.src{margin:22px 0 0;border:1px solid var(--line);border-radius:10px;padding:10px 16px}
+details.src summary{cursor:pointer;font-weight:600}
+details.src ul{margin:10px 0 4px;padding-left:18px;columns:2;column-gap:28px}
+@media(max-width:600px){.ni img{width:84px;height:64px}.ni h3{font-size:16px}details.src ul{columns:1}.seg button{padding:8px 10px;font-size:14px}}
+</style>
+<link rel="icon" href="../favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="32x32" href="../assets/favicon-32.png">
+<link rel="icon" type="image/png" sizes="192x192" href="../assets/favicon-192.png">
+<link rel="apple-touch-icon" href="../assets/apple-touch-icon.png">
+<link rel="stylesheet" href="../assets/navigation.css?v=20261022c">
+</head>
+<body>
+<header id="hub-global-header"><div class="hub-nav-inner"><a class="hub-brand" href="../"><img class="hub-logo" src="../assets/logo.png" alt="" width="36" height="36"> <span class="hub-brand-name">Dividenden-Rechner <span>Aktien-Hub</span></span></a><nav class="hub-links" aria-label="Hauptmenü"><a href="../rechner/">Rechner</a><a href="../aktien/">Aktien</a><a href="../news/" aria-current="page">News</a><a href="../screener/">Screener</a><a href="../einfuehrung/">Einführung</a><a href="../grundlagen/">Grundlagen</a><a href="../fortgeschrittene/">Fortgeschrittene</a></nav></div></header>
+<main class="wrap nw">
+<h1>Aktien-News</h1>
+<p class="lead">Nachrichten und Pressemitteilungen zu den Aktien in deiner <a href="../aktien/">Watchlist</a>. Die Meldungen kommen von Financial Modeling Prep und sind überwiegend englisch.</p>
+
+<div class="bar">
+  <div class="seg" role="group" aria-label="Art der Meldungen">
+    <button type="button" data-mode="watch" aria-pressed="true">Meine Aktien</button>
+    <button type="button" data-mode="pr" aria-pressed="false">Pressemitteilungen</button>
+    <button type="button" data-mode="general" aria-pressed="false">Allgemein</button>
+  </div>
+  <form class="addf" id="addf" autocomplete="off"><input id="add" maxlength="12" placeholder="Ticker hinzufügen" aria-label="Ticker zur Watchlist hinzufügen"><button class="nbtn" type="submit">＋</button></form>
+  <button type="button" class="nbtn alt" id="key">🔑 API-Key</button>
+</div>
+<div class="chips" id="chips" aria-label="Watchlist-Filter"></div>
+<div id="msg" role="status"></div>
+<ul class="news" id="list"></ul>
+<div class="more"><button type="button" class="nbtn" id="more" hidden>Mehr laden</button></div>
+
+<details class="src"><summary>Weitere Quellen zu deiner Watchlist (deutsch, öffnet extern)</summary><ul id="ext"></ul></details>
+
+<p class="note" style="margin-top:22px"><strong>Hinweis:</strong> Die Watchlist wird nur in deinem Browser gespeichert (gleiche Liste wie im <a href="../aktien/">Aktien-Hub</a>). Die Meldungen werden direkt von deinem Browser bei Financial Modeling Prep abgerufen, dafür brauchst du deinen eigenen API-Key. Ob News in der kostenlosen Stufe enthalten sind, bestimmt der Anbieter. Alle Angaben ohne Gewähr, keine Anlageberatung.</p>
+</main>
+<footer class="site-footer"><div class="wrap">
+<div class="cols">
+<a href="../rechner/">Rechner</a><a href="../aktien/">Aktien-Hub</a><a href="../news/">News</a><a href="../screener/">Screener</a><a href="../einfuehrung/">Einführung</a><a href="../grundlagen/">Grundlagen</a><a href="../fortgeschrittene/">Fortgeschrittene</a>
+<a href="../impressum/">Impressum</a><a href="../datenschutz/">Datenschutz</a>
+</div>
+<p>Alle Inhalte dienen der allgemeinen Information und sind keine Anlage-, Steuer- oder Rechtsberatung. Kapitalanlagen sind mit Risiken verbunden.</p>
+</div></footer>
+<script>
+(()=>{
+const BASE="https://financialmodelingprep.com/stable/",LIMIT=20,MAXSYM=40,TTL=10*60*1000;
+const POP=[["KO","Coca-Cola"],["PEP","PepsiCo"],["JNJ","Johnson & Johnson"],["PG","Procter & Gamble"],["MCD","McDonald's"],["O","Realty Income"],["MSFT","Microsoft"],["AAPL","Apple"]];
+const $=id=>document.getElementById(id);
+const esc=s=>String(s??"").replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
+let mem=null;
+const ls={get(k){try{return localStorage.getItem(k)}catch(e){return null}},set(k,v){try{localStorage.setItem(k,v)}catch(e){}}};
+let KEY=ls.get("fmpkey")||"";
+function wlLoad(){try{const a=JSON.parse(ls.get("wl")||"null");if(Array.isArray(a))return a.filter(x=>x&&x.s).map(x=>({s:String(x.s).toUpperCase(),n:String(x.n||x.s)}))}catch(e){}return mem}
+function wlSave(){mem=WL;ls.set("wl",JSON.stringify(WL))}
+let WL=wlLoad();if(!WL){WL=POP.map(([s,n])=>({s,n}));wlSave()}
+const st={mode:"watch",sel:new Set(),page:0,items:[],seq:0,done:false};
+
+function askKey(){const k=prompt("FMP API-Key (wird nur in deinem Browser gespeichert):",KEY);if(k!==null){KEY=k.trim();ls.set("fmpkey",KEY);load(true)}}
+function msg(t,err){const m=$("msg");m.textContent=t||"";m.className=err?"err":""}
+
+async function api(path,params){
+  const u=new URL(BASE+path);for(const k in params)u.searchParams.set(k,params[k]);
+  const ck="news:"+u.toString();
+  try{const c=JSON.parse(ls.get(ck)||"null");if(c&&Date.now()-c.t<TTL)return c.j}catch(e){}
+  u.searchParams.set("apikey",KEY);
+  const r=await fetch(u);const txt=await r.text();let j;try{j=JSON.parse(txt)}catch(e){j=null}
+  if(!r.ok||(j&&!Array.isArray(j)&&(j["Error Message"]||j.message))){
+    const e=new Error((j&&(j["Error Message"]||j.message))||txt.slice(0,120)||"Fehler");e.status=r.status;throw e}
+  if(!Array.isArray(j))j=[];
+  if(txt.length<2e5)ls.set(ck,JSON.stringify({t:Date.now(),j}));
+  return j;
+}
+const fmtDate=s=>{const m=/^(\d{4})-(\d\d)-(\d\d)[ T](\d\d):(\d\d)/.exec(s||"");return m?`${m[3]}.${m[2]}.${m[1]}, ${m[4]}:${m[5]}`:(s||"")};
+const safeUrl=u=>/^https?:\/\//i.test(u||"")?u:"";
+
+function chips(){
+  $("chips").innerHTML=WL.length?WL.map(x=>`<span class="chip${st.sel.has(x.s)?" on":""}"><button type="button" data-f="${esc(x.s)}" title="${esc(x.n)}" aria-pressed="${st.sel.has(x.s)}">${esc(x.s)}</button><button type="button" class="x" data-rm="${esc(x.s)}" aria-label="${esc(x.n)} aus Watchlist entfernen" title="Aus Watchlist entfernen">×</button></span>`).join(""):"";
+  $("ext").innerHTML=WL.map(x=>`<li>${esc(x.n)} (${esc(x.s)}): <a href="https://news.google.com/search?q=${encodeURIComponent(x.n+" Aktie")}&hl=de&gl=DE&ceid=DE:de" target="_blank" rel="noopener nofollow">Google News</a> · <a href="https://finance.yahoo.com/quote/${encodeURIComponent(x.s)}/news/" target="_blank" rel="noopener nofollow">Yahoo Finance</a></li>`).join("")||"<li>Noch keine Aktien in der Watchlist.</li>";
+  document.querySelectorAll(".seg button").forEach(b=>b.setAttribute("aria-pressed",b.dataset.mode===st.mode));
+}
+function draw(){
+  $("list").innerHTML=st.items.map(n=>{
+    const u=safeUrl(n.url);if(!u)return"";
+    const img=safeUrl(n.image);
+    return `<li class="ni">${img?`<img src="${esc(img)}" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.remove()">`:""}<div><div class="meta2">${n.symbol?`<a class="sym" href="../aktien/?s=${encodeURIComponent(n.symbol)}" title="Kennzahlen im Aktien-Hub">${esc(n.symbol)}</a>`:""}<span>${esc(n.publisher||n.site||"")}</span><time>${esc(fmtDate(n.publishedDate||n.publishDate))}</time></div><h3><a href="${esc(u)}" target="_blank" rel="noopener nofollow">${esc(n.title||u)}</a></h3>${n.text?`<p>${esc(n.text)}</p>`:""}</div></li>`}).join("");
+  $("more").hidden=st.done||!st.items.length;
+}
+async function load(reset){
+  if(reset){st.page=0;st.items=[];st.done=false;draw()}
+  chips();
+  if(!KEY){msg("Für die News brauchst du einen eigenen FMP-API-Key (kostenlos bei Financial Modeling Prep). Klicke oben auf „API-Key“.");return}
+  let path,params={page:st.page,limit:LIMIT};
+  if(st.mode==="general")path="news/general-latest";
+  else{
+    const base=st.sel.size?[...st.sel]:WL.map(x=>x.s);
+    if(!base.length){msg("Deine Watchlist ist leer. Füge oben einen Ticker hinzu oder lege Aktien im Aktien-Hub über ＋ ab.");return}
+    params.symbols=base.slice(0,MAXSYM).join(",");
+    path=st.mode==="pr"?"news/press-releases":"news/stock";
+  }
+  const my=++st.seq;msg("Lade …");$("more").disabled=true;
+  try{
+    const r=await api(path,params);if(my!==st.seq)return;
+    const seen=new Set(st.items.map(x=>x.url));
+    r.forEach(x=>{if(x&&x.url&&!seen.has(x.url)){seen.add(x.url);st.items.push(x)}});
+    st.items.sort((a,b)=>String(b.publishedDate||b.publishDate||"").localeCompare(String(a.publishedDate||a.publishDate||"")));
+    st.done=r.length<LIMIT;draw();
+    msg(st.items.length?"":"Keine Meldungen gefunden."+(st.mode==="pr"?" Nicht für jede Aktie gibt es Pressemitteilungen.":""));
+    if(st.mode!=="general"&&st.sel.size===0&&WL.length>MAXSYM)msg("Es werden nur die ersten "+MAXSYM+" Aktien der Watchlist berücksichtigt.");
+  }catch(e){
+    if(my!==st.seq)return;
+    const c=e.status;
+    msg(c===402||c===403?"Diese News-Funktion ist in deinem FMP-Plan nicht enthalten ("+c+"). Unten findest du Links zu deutschen Nachrichtenquellen für deine Watchlist.":c===401?"Der API-Key wurde abgelehnt. Bitte prüfe ihn über „API-Key“.":c===429?"Das Abruflimit deines FMP-Plans ist erreicht. Bitte später erneut versuchen.":"News konnten nicht geladen werden: "+e.message,true);
+    if(c===402||c===403)$("list").closest("main").querySelector("details.src").open=true;
+  }finally{$("more").disabled=false}
+}
+document.addEventListener("click",e=>{
+  const m=e.target.closest("[data-mode]");if(m){st.mode=m.dataset.mode;load(true);return}
+  const f=e.target.closest("[data-f]");if(f){const s=f.dataset.f;st.sel.has(s)?st.sel.delete(s):st.sel.add(s);load(true);return}
+  const rm=e.target.closest("[data-rm]");if(rm){const s=rm.dataset.rm;WL=WL.filter(x=>x.s!==s);st.sel.delete(s);wlSave();load(true);return}
+});
+$("more").onclick=()=>{st.page++;load(false)};
+$("key").onclick=askKey;
+$("addf").onsubmit=e=>{e.preventDefault();const s=$("add").value.trim().toUpperCase().replace(/[^A-Z0-9.\-^]/g,"");if(!s)return;if(!WL.some(x=>x.s===s)){WL=[...WL,{s,n:s}];wlSave()}$("add").value="";load(true)};
+if(!KEY)setTimeout(()=>{if(!KEY)msg("Für die News brauchst du einen eigenen FMP-API-Key (kostenlos bei Financial Modeling Prep). Klicke oben auf „API-Key“.")},0);
+load(true);
+})();
+</script>
+</body>
+</html>

@@ -1,0 +1,10 @@
+UPDATE AKTIEN-HUB (22.10.2026)
+
+So spielst du es ein:
+1. Ordner-Inhalt dieses ZIPs in dein GitHub-Repo kopieren (bestehende Dateien ersetzen). Diese Datei nicht hochladen.
+2. Im Repo LÖSCHEN:  rechner/index (4).html   (Dublette, wird öffentlich ausgeliefert)
+3. Nach dem Commit im Browser einmal hart neu laden (Strg+Shift+R), damit das neue CSS und das Favicon geladen werden.
+
+Neu:    news/index.html, favicon.ico, assets/favicon-32.png, assets/favicon-192.png, assets/apple-touch-icon.png
+Neu gebaut: screener/index.html (Kriterien-Baukasten)
+Geändert: assets/navigation.css (Header-Fix), alle anderen HTML-Seiten (Favicon, Menüpunkt News, Footer), aktien/index.html (Watchlist), datenschutz/index.html, sitemap.xml
