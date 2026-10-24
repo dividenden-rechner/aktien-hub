@@ -12,9 +12,8 @@ html{overflow-y:scroll;scrollbar-gutter:stable}
 #hub-global-header .hub-logo{display:block;width:36px;height:36px;object-fit:contain;flex:none}
 #hub-global-header .hub-brand-name{color:#14202b;font-weight:700}
 #hub-global-header .hub-brand-name span{color:#2f9e5b;font-weight:600}
-#hub-global-header .hub-links{display:flex;align-items:center;justify-content:flex-end;flex-wrap:wrap;gap:2px 4px;width:auto;margin:0;padding:0}
-#hub-global-header .hub-links a{display:inline-block;width:auto;margin:0;color:#14202b;text-decoration:none;font-size:15px;font-weight:500;line-height:1.5;padding:6px 9px;border-radius:8px;white-space:nowrap}
+#hub-global-header .hub-links{display:flex;align-items:center;justify-content:flex-end;flex-wrap:wrap;gap:2px 2px;width:auto;margin:0;padding:0}
+#hub-global-header .hub-links a{display:inline-block;width:auto;margin:0;color:#14202b;text-decoration:none;font-size:15px;font-weight:500;line-height:1.5;padding:6px 7px;border-radius:8px;white-space:nowrap}
 #hub-global-header .hub-links a:hover,#hub-global-header .hub-links a[aria-current="page"]{background:#f0f8f3;color:#1a7a45}
-@media(max-width:1000px){#hub-global-header .hub-links a{padding:6px 7px}}
-@media(max-width:860px){#hub-global-header{position:relative}#hub-global-header .hub-nav-inner{min-height:0}#hub-global-header .hub-links{width:100%;justify-content:flex-start;flex-wrap:nowrap;overflow-x:auto;padding-bottom:2px}}
+@media(max-width:1119px){#hub-global-header{position:relative}#hub-global-header .hub-nav-inner{min-height:0}#hub-global-header .hub-links{width:100%;justify-content:flex-start;flex-wrap:nowrap;overflow-x:auto;padding-bottom:2px}}
 @media(max-width:420px){#hub-global-header .hub-brand{font-size:16px}#hub-global-header .hub-logo{width:32px;height:32px}}
