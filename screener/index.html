@@ -15,6 +15,11 @@
 <meta property="og:url" content="https://dividenden-rechner.github.io/aktien-hub/screener/">
 <meta name="theme-color" content="#ffffff">
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "WebApplication", "name": "Aktien-Screener", "description": "Aktien-Screener mit Kriterien-Baukasten: über 70 Kennzahlen wie Dividendenrendite, Ausschüttungsquote, KGV, ROCE, Schulden, Capex sowie FFO und NAV für REITs und BDCs frei kombinieren.", "inLanguage": "de", "url": "https://dividenden-rechner.github.io/aktien-hub/screener/", "applicationCategory": "FinanceApplication", "operatingSystem": "Alle", "dateModified": "2026-10-22"}</script>
+<link rel="icon" href="../favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="32x32" href="../assets/favicon-32.png">
+<link rel="icon" type="image/png" sizes="192x192" href="../assets/favicon-192.png">
+<link rel="apple-touch-icon" href="../assets/apple-touch-icon.png">
+<link rel="stylesheet" href="../assets/navigation.css?v=20261025a">
 <style>
 :root{color-scheme:light;--bg:#fff;--ink:#14202b;--mut:#5d6b78;--line:#dfe5ea;--soft:#f0f8f3;--acc:#2f9e5b;--accd:#1a7a45;--warn:#fff7e6;--warnl:#f0d9a8;--primary:#2563eb;--primary-d:#1d4ed8;--success:#10b981;--success-d:#059669;--danger:#ef4444;--border:#d1d5db}
 *{box-sizing:border-box}
@@ -117,6 +122,7 @@ article.wide>:not(.tool):not(.cards){max-width:760px}
 .tool td.pos{color:#10b981;font-weight:700}
 .tool td.neg{color:#ef4444}
 .tool .note-small{font-size:.8rem;color:#6b7280;margin:12px 0 0}
+@media (max-width:560px){body{font-size:16px}.site-header{position:static}}
 
 [hidden]{display:none!important}
 .tool textarea{width:100%;font:inherit;padding:.75rem;border:1px solid var(--border);border-radius:6px;min-height:84px;resize:vertical;color:var(--ink);background:#fff}
@@ -165,6 +171,8 @@ article.wide>:not(.tool):not(.cards){max-width:760px}
 .xhead2 b{font-size:1.05rem}
 .xhead2 .sp{margin-left:auto;display:flex;flex-wrap:wrap;gap:8px}
 .tool .xhead2 .sp button{padding:.45rem .8rem;font-size:.85rem}
+.tool a.slk{display:inline-flex;align-items:center;gap:8px;color:inherit;text-decoration:none}.tool a.slk:hover{color:var(--primary);text-decoration:underline}
+.tool .lg{width:24px;height:24px;border-radius:5px;object-fit:contain;background:#fff;border:1px solid #e5e7eb;flex:none}
 .xw{overflow:auto;max-height:72vh;border:1px solid var(--line);border-radius:8px}
 .tool .xw table{border-collapse:collapse;width:100%;font-size:.85rem;margin:0}
 .tool .xw th,.tool .xw td{padding:7px 12px;border:0;border-bottom:1px solid var(--line);text-align:right;white-space:nowrap;background:#fff;color:var(--ink)}
@@ -179,14 +187,10 @@ article.wide>:not(.tool):not(.cards){max-width:760px}
 @media(max-width:560px){.crit input{width:78px}.mode{grid-template-columns:1fr}}
 
 </style>
-<link rel="icon" href="../favicon.ico" sizes="any">
-<link rel="icon" type="image/png" sizes="32x32" href="../assets/favicon-32.png">
-<link rel="icon" type="image/png" sizes="192x192" href="../assets/favicon-192.png">
-<link rel="apple-touch-icon" href="../assets/apple-touch-icon.png">
-<link rel="stylesheet" href="../assets/navigation.css?v=20261024a">
 </head>
 <body class="tools">
 <header id="hub-global-header"><div class="hub-nav-inner"><a class="hub-brand" href="../"><img class="hub-logo" src="../assets/logo.png" alt="" width="36" height="36"> <span class="hub-brand-name">Dividenden-Rechner <span>Aktien-Hub</span></span></a><nav class="hub-links" aria-label="Hauptmenü"><a href="../rechner/">Rechner</a><a href="../aktien/">Aktien</a><a href="../depot/">Depot</a><a href="../news/">News</a><a href="../screener/" aria-current="page">Screener</a><a href="../einfuehrung/">Einführung</a><a href="../grundlagen/">Grundlagen</a><a href="../fortgeschrittene/">Fortgeschrittene</a></nav></div></header>
+<script src="../assets/navigation.js"></script>
 <main class="wrap"><article class="wide">
 <nav class="crumbs" aria-label="Brotkrumen"><a href="../">Start</a> › <span aria-current="page">Screener</span></nav>
 <h1>Aktien-Screener</h1>
@@ -251,7 +255,7 @@ article.wide>:not(.tool):not(.cards){max-width:760px}
 </article></main>
 <footer class="site-footer"><div class="wrap">
 <div class="cols">
-<a href="../rechner/">Rechner</a><a href="../aktien/">Aktien-Hub</a><a href="../depot/">Depot</a><a href="../news/">News</a><a href="../screener/">Screener</a><a href="../einfuehrung/">Einführung</a><a href="../grundlagen/">Grundlagen</a><a href="../fortgeschrittene/">Fortgeschrittene</a>
+<a href="../rechner/">Rechner</a><a href="../aktien/">Aktien-Hub</a><a href="../news/">News</a><a href="../screener/">Screener</a><a href="../einfuehrung/">Einführung</a><a href="../grundlagen/">Grundlagen</a><a href="../fortgeschrittene/">Fortgeschrittene</a>
 <a href="../impressum/">Impressum</a><a href="../datenschutz/">Datenschutz</a>
 </div>
 <p>Alle Inhalte dienen der allgemeinen Information und sind keine Anlage-, Steuer- oder Rechtsberatung. Kapitalanlagen sind mit Risiken verbunden.</p>
@@ -583,9 +587,14 @@ article.wide>:not(.tool):not(.cards){max-width:760px}
     finally { RUN.busy = false; $("go").disabled = false; render(); }
   }
 
+  /* Logo und Name führen zur Aktienseite (../aktien/?s=SYMBOL) */
+  function slink(sym, inner, logo) {
+    sym = String(sym || ""); if (!/^[A-Za-z0-9.\-^]{1,12}$/.test(sym)) return inner;
+    return '<a class="slk" href="../aktien/?s=' + encodeURIComponent(sym) + '" title="' + esc(sym) + ' öffnen">' + (logo ? '<img class="lg" src="https://images.financialmodelingprep.com/symbol/' + encodeURIComponent(sym) + '.png" alt="" loading="lazy" onerror="this.style.visibility=\'hidden\'">' : "") + inner + "</a>";
+  }
   function colsFor() {
-    var cols = [{ k: "symbol", l: "Symbol", get: function (D) { return D.profile.symbol; }, f: function (D) { return "<b>" + esc(D.profile.symbol) + "</b>"; }, t: 1 },
-    { k: "name", l: "Name", get: function (D) { return D.profile.name; }, f: function (D) { return esc(D.profile.name); }, t: 1 },
+    var cols = [{ k: "symbol", l: "Symbol", get: function (D) { return D.profile.symbol; }, f: function (D) { return slink(D.profile.symbol, "<b>" + esc(D.profile.symbol) + "</b>", true); }, t: 1 },
+    { k: "name", l: "Name", get: function (D) { return D.profile.name; }, f: function (D) { return slink(D.profile.symbol, esc(D.profile.name), false); }, t: 1 },
     { k: "sector", l: "Sektor", get: function (D) { return D.profile.sector; }, f: function (D) { return esc(D.profile.sector); }, t: 1 },
     { k: "price", l: "Kurs", get: function (D) { return D.profile.price; }, f: function (D) { return dec(D.profile.price, 2); } },
     { k: "mcap", l: "Marktkap.", get: function (D) { return D.profile.mcap; }, f: function (D) { return big(D.profile.mcap); } }];

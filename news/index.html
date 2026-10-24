@@ -52,15 +52,18 @@ details.src{margin:22px 0 0;border:1px solid var(--line);border-radius:10px;padd
 details.src summary{cursor:pointer;font-weight:600}
 details.src ul{margin:10px 0 4px;padding-left:18px;columns:2;column-gap:28px}
 @media(max-width:600px){.ni img{width:84px;height:64px}.ni h3{font-size:16px}details.src ul{columns:1}.seg button{padding:8px 10px;font-size:14px}}
+.meta2 a.sym{display:inline-flex;align-items:center;gap:6px}.slg{width:20px;height:20px;border-radius:4px;object-fit:contain;background:#fff;border:1px solid #e5e7eb}
 </style>
 <link rel="icon" href="../favicon.ico" sizes="any">
 <link rel="icon" type="image/png" sizes="32x32" href="../assets/favicon-32.png">
 <link rel="icon" type="image/png" sizes="192x192" href="../assets/favicon-192.png">
 <link rel="apple-touch-icon" href="../assets/apple-touch-icon.png">
-<link rel="stylesheet" href="../assets/navigation.css?v=20261024a">
+<link rel="stylesheet" href="../assets/navigation.css?v=20261025a">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "CollectionPage", "name": "Aktien-News", "description": "Nachrichten zu den Aktien in deiner Watchlist.", "inLanguage": "de", "url": "https://dividenden-rechner.github.io/aktien-hub/news/"}</script>
 </head>
 <body>
 <header id="hub-global-header"><div class="hub-nav-inner"><a class="hub-brand" href="../"><img class="hub-logo" src="../assets/logo.png" alt="" width="36" height="36"> <span class="hub-brand-name">Dividenden-Rechner <span>Aktien-Hub</span></span></a><nav class="hub-links" aria-label="Hauptmenü"><a href="../rechner/">Rechner</a><a href="../aktien/">Aktien</a><a href="../depot/">Depot</a><a href="../news/" aria-current="page">News</a><a href="../screener/">Screener</a><a href="../einfuehrung/">Einführung</a><a href="../grundlagen/">Grundlagen</a><a href="../fortgeschrittene/">Fortgeschrittene</a></nav></div></header>
+<script src="../assets/navigation.js"></script>
 <main class="wrap nw">
 <h1>Aktien-News</h1>
 <p class="lead">Nachrichten und Pressemitteilungen zu den Aktien in deiner <a href="../aktien/">Watchlist</a>. Die Meldungen kommen von Financial Modeling Prep und sind überwiegend englisch.</p>
@@ -131,7 +134,7 @@ function draw(){
   $("list").innerHTML=st.items.map(n=>{
     const u=safeUrl(n.url);if(!u)return"";
     const img=safeUrl(n.image);
-    return `<li class="ni">${img?`<img src="${esc(img)}" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.remove()">`:""}<div><div class="meta2">${n.symbol?`<a class="sym" href="../aktien/?s=${encodeURIComponent(n.symbol)}" title="Kennzahlen im Aktien-Hub">${esc(n.symbol)}</a>`:""}<span>${esc(n.publisher||n.site||"")}</span><time>${esc(fmtDate(n.publishedDate||n.publishDate))}</time></div><h3><a href="${esc(u)}" target="_blank" rel="noopener nofollow">${esc(n.title||u)}</a></h3>${n.text?`<p>${esc(n.text)}</p>`:""}</div></li>`}).join("");
+    return `<li class="ni">${img?`<img src="${esc(img)}" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.remove()">`:""}<div><div class="meta2">${n.symbol?`<a class="sym" href="../aktien/?s=${encodeURIComponent(n.symbol)}" title="Kennzahlen im Aktien-Hub"><img class="slg" src="https://images.financialmodelingprep.com/symbol/${encodeURIComponent(n.symbol)}.png" alt="" loading="lazy" onerror="this.remove()">${esc(n.symbol)}</a>`:""}<span>${esc(n.publisher||n.site||"")}</span><time>${esc(fmtDate(n.publishedDate||n.publishDate))}</time></div><h3><a href="${esc(u)}" target="_blank" rel="noopener nofollow">${esc(n.title||u)}</a></h3>${n.text?`<p>${esc(n.text)}</p>`:""}</div></li>`}).join("");
   $("more").hidden=st.done||!st.items.length;
 }
 async function load(reset){

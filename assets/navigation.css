@@ -15,5 +15,23 @@ html{overflow-y:scroll;scrollbar-gutter:stable}
 #hub-global-header .hub-links{display:flex;align-items:center;justify-content:flex-end;flex-wrap:wrap;gap:2px 2px;width:auto;margin:0;padding:0}
 #hub-global-header .hub-links a{display:inline-block;width:auto;margin:0;color:#14202b;text-decoration:none;font-size:15px;font-weight:500;line-height:1.5;padding:6px 7px;border-radius:8px;white-space:nowrap}
 #hub-global-header .hub-links a:hover,#hub-global-header .hub-links a[aria-current="page"]{background:#f0f8f3;color:#1a7a45}
-@media(max-width:1119px){#hub-global-header{position:relative}#hub-global-header .hub-nav-inner{min-height:0}#hub-global-header .hub-links{width:100%;justify-content:flex-start;flex-wrap:nowrap;overflow-x:auto;padding-bottom:2px}}
-@media(max-width:420px){#hub-global-header .hub-brand{font-size:16px}#hub-global-header .hub-logo{width:32px;height:32px}}
+#hub-global-header .hub-burger{display:none;flex:none;width:44px;height:44px;margin:0;padding:0;border:1px solid #dfe5ea;border-radius:10px;background:#fff;cursor:pointer;align-items:center;justify-content:center;flex-direction:column;gap:5px}
+#hub-global-header .hub-burger span{display:block;width:20px;height:2px;border-radius:2px;background:#14202b;transition:transform .2s,opacity .2s}
+#hub-global-header .hub-burger:hover{background:#f0f8f3}
+#hub-global-header .hub-burger:focus-visible{outline:2px solid #2f9e5b;outline-offset:2px}
+#hub-global-header.hub-open .hub-burger span:nth-child(1){transform:translateY(7px) rotate(45deg)}
+#hub-global-header.hub-open .hub-burger span:nth-child(2){opacity:0}
+#hub-global-header.hub-open .hub-burger span:nth-child(3){transform:translateY(-7px) rotate(-45deg)}
+/* Unter 1120 px: ohne JavaScript scrollt die Menüzeile, mit JavaScript (Klasse hub-js) wird sie zum Dreistrich-Menü. */
+@media(max-width:1119px){
+#hub-global-header{position:relative}
+#hub-global-header .hub-nav-inner{min-height:0;flex-wrap:wrap}
+#hub-global-header .hub-links{width:100%;justify-content:flex-start;flex-wrap:nowrap;overflow-x:auto;padding-bottom:2px}
+#hub-global-header.hub-js .hub-nav-inner{flex-wrap:wrap;justify-content:space-between}
+#hub-global-header.hub-js .hub-brand{flex:0 1 auto;min-width:0}
+#hub-global-header.hub-js .hub-burger{display:inline-flex}
+#hub-global-header.hub-js .hub-links{display:none;flex-direction:column;align-items:stretch;flex-wrap:nowrap;overflow:visible;gap:2px;padding:6px 0 4px;border-top:1px solid #eef1f4}
+#hub-global-header.hub-js.hub-open .hub-links{display:flex}
+#hub-global-header.hub-js .hub-links a{padding:12px 10px;font-size:16px}
+}
+@media(max-width:420px){#hub-global-header .hub-brand{font-size:14.5px;gap:8px}#hub-global-header .hub-logo{width:30px;height:30px}#hub-global-header .hub-nav-inner{gap:6px 10px}}

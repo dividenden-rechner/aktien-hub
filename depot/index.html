@@ -15,11 +15,12 @@
 <meta property="og:url" content="https://dividenden-rechner.github.io/aktien-hub/depot/">
 <meta name="theme-color" content="#ffffff">
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "WebApplication", "name": "Depot-Tracker", "description": "Depot einladen (Trade Republic, Scalable Capital, Portfolio Performance), Aufteilung, Gewinne, Dividenden pro Monat, Forecast, XIRR und TWR. Alle Daten bleiben in deinem Browser.", "inLanguage": "de", "url": "https://dividenden-rechner.github.io/aktien-hub/depot/", "applicationCategory": "FinanceApplication", "operatingSystem": "Alle", "dateModified": "2026-10-24"}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Wie lade ich mein Depot von Trade Republic oder Scalable Capital hoch?", "acceptedAnswer": {"@type": "Answer", "text": "Exportiere deine Transaktionen als CSV-Datei aus der App bzw. dem Broker und ziehe die Datei im Reiter Import auf die Fläche. Der Tracker erkennt das Format von Trade Republic, Scalable Capital und Portfolio Performance automatisch. Andere Broker lassen sich über die Spaltenzuordnung einlesen."}}, {"@type": "Question", "name": "Werden meine Depotdaten gespeichert oder übertragen?", "acceptedAnswer": {"@type": "Answer", "text": "Nein, nicht an uns. Dein Depot liegt ausschließlich im Speicher deines Browsers. Für Kurse und Kennzahlen gehen nur ISIN bzw. Börsenkürzel an Financial Modeling Prep, keine Stückzahlen oder Beträge. Ein Backup kannst du als Datei speichern."}}, {"@type": "Question", "name": "Was zeigt der Dividendenkalender?", "acceptedAnswer": {"@type": "Answer", "text": "Er zeigt, wann in den nächsten zwölf Monaten Dividenden zu erwarten sind. Angekündigte Termine stammen von FMP, übrige Zahlungen werden aus deinen Dividenden der letzten zwölf Monate geschätzt."}}, {"@type": "Question", "name": "Was ist der Unterschied zwischen XIRR und TWR?", "acceptedAnswer": {"@type": "Answer", "text": "Der XIRR ist die geldgewichtete Rendite pro Jahr und berücksichtigt, wann du wie viel eingezahlt hast. Der TWR ist die zeitgewichtete Rendite, die Ein- und Auszahlungen herausrechnet und so die Leistung der Anlagen selbst misst."}}, {"@type": "Question", "name": "Wie genau ist der Forecast?", "acceptedAnswer": {"@type": "Answer", "text": "Der Forecast ist eine Rechnung mit Annahmen, keine Prognose. Er nutzt die Dividendenhistorie und das Wachstum je Firma, zeigt ein vorsichtiges, ein neutrales und ein optimistisches Szenario und lässt sich mit Sparrate, Steuer und Reinvestition anpassen."}}]}</script>
 <link rel="icon" href="../favicon.ico" sizes="any">
 <link rel="icon" type="image/png" sizes="32x32" href="../assets/favicon-32.png">
 <link rel="icon" type="image/png" sizes="192x192" href="../assets/favicon-192.png">
 <link rel="apple-touch-icon" href="../assets/apple-touch-icon.png">
-<link rel="stylesheet" href="../assets/navigation.css?v=20261024a">
+<link rel="stylesheet" href="../assets/navigation.css?v=20261025a">
 <style>
 :root{color-scheme:light;--bg:#fff;--ink:#14202b;--mut:#5d6b78;--line:#dfe5ea;--soft:#f0f8f3;--acc:#2f9e5b;--accd:#1a7a45;--warn:#fff7e6;--warnl:#f0d9a8;--primary:#2563eb;--primary-d:#1d4ed8;--success:#10b981;--success-d:#059669;--danger:#ef4444;--border:#d1d5db}
 *{box-sizing:border-box}
@@ -167,12 +168,23 @@ table.dt{border-collapse:collapse;width:100%;font-size:.9rem;min-width:620px}
 .dnote{font-size:.85rem;color:#6b7280;margin:.5rem 0}
 .dempty{padding:1.5rem;border:1px dashed var(--border);border-radius:10px;color:#4b5563}
 .banner{background:#fffbeb;border-left:3px solid #f59e0b;padding:.6rem .9rem;margin:0 0 1rem;border-radius:4px;font-size:.92rem}
+.nc{display:flex;align-items:center;gap:10px}
+.lg{width:28px;height:28px;border-radius:6px;object-fit:contain;background:#fff;border:1px solid #e5e7eb;flex:none}
+.lgph{display:inline-flex;align-items:center;justify-content:center;background:#f0fdf4;color:#047857;font-weight:700;font-size:.8rem}
+.tool a.slk,.dt a.slk{color:inherit;text-decoration:none}.dt a.slk:hover b{color:var(--primary);text-decoration:underline}
+.calm{border:1px solid #e5e7eb;border-radius:10px;margin:0 0 12px;overflow:hidden}
+.calh{display:flex;justify-content:space-between;padding:.6rem .9rem;background:#f9fafb;border-bottom:1px solid #e5e7eb}.calh span{color:#047857;font-weight:700}
+.cale{display:grid;grid-template-columns:52px 1fr auto 96px;gap:10px;align-items:center;padding:.5rem .9rem;border-bottom:1px solid #f1f3f5}.cale:last-child{border-bottom:0}
+.cald{color:#6b7280;font-size:.9rem}.cala{font-weight:600;text-align:right}
+.calb{font-size:.75rem;text-align:center;border-radius:999px;padding:.15rem .5rem;background:#f3f4f6;color:#4b5563}.calb.ok{background:#dcfce7;color:#065f46}
+@media(max-width:600px){.cale{grid-template-columns:44px 1fr auto}.calb{display:none}}
 #imports-list ul{margin:.3rem 0 0 1.1rem;font-size:.9rem}
 
 </style>
 </head>
 <body class="tools">
 <header id="hub-global-header"><div class="hub-nav-inner"><a class="hub-brand" href="../"><img class="hub-logo" src="../assets/logo.png" alt="" width="36" height="36"> <span class="hub-brand-name">Dividenden-Rechner <span>Aktien-Hub</span></span></a><nav class="hub-links" aria-label="Hauptmenü"><a href="../rechner/">Rechner</a><a href="../aktien/">Aktien</a><a href="../depot/" aria-current="page">Depot</a><a href="../news/">News</a><a href="../screener/">Screener</a><a href="../einfuehrung/">Einführung</a><a href="../grundlagen/">Grundlagen</a><a href="../fortgeschrittene/">Fortgeschrittene</a></nav></div></header>
+<script src="../assets/navigation.js"></script>
 <main class="wrap"><article class="wide">
 <nav class="crumbs" aria-label="Brotkrumen"><a href="../">Start</a> › <span aria-current="page">Depot</span></nav>
 <h1>Depot-Tracker</h1>
@@ -181,7 +193,7 @@ table.dt{border-collapse:collapse;width:100%;font-size:.9rem;min-width:620px}
 
 <div id="depot">
 <div id="d-banner" class="banner" hidden><b>Beispieldepot:</b> alle Zahlen sind erfunden und dienen nur zum Ausprobieren.</div>
-<div class="dtabs" role="tablist"><button type="button" class="dtab" role="tab" data-tab="import" aria-selected="false">Import</button><button type="button" class="dtab" role="tab" data-tab="insight" aria-selected="false">Insight</button><button type="button" class="dtab" role="tab" data-tab="dividenden" aria-selected="false">Dividenden</button><button type="button" class="dtab" role="tab" data-tab="forecast" aria-selected="false">Forecast</button><button type="button" class="dtab" role="tab" data-tab="analyse" aria-selected="false">Analyse</button></div>
+<div class="dtabs" role="tablist"><button type="button" class="dtab" role="tab" data-tab="import" aria-selected="false">Import</button><button type="button" class="dtab" role="tab" data-tab="insight" aria-selected="false">Insight</button><button type="button" class="dtab" role="tab" data-tab="dividenden" aria-selected="false">Dividenden</button><button type="button" class="dtab" role="tab" data-tab="kalender" aria-selected="false">Kalender</button><button type="button" class="dtab" role="tab" data-tab="forecast" aria-selected="false">Forecast</button><button type="button" class="dtab" role="tab" data-tab="analyse" aria-selected="false">Analyse</button></div>
 
 <section id="p-import">
 <p id="d-summary"></p>
@@ -232,6 +244,14 @@ table.dt{border-collapse:collapse;width:100%;font-size:.9rem;min-width:620px}
 <p class="dnote">Beträge so, wie sie im Export stehen (meist netto nach Steuer).</p>
 </div></section>
 
+<section id="p-kalender" hidden><div class="dempty">Noch kein Depot geladen. Wechsle zu <a href="#import">Import</a> und lade dein Depot oder das Beispieldepot.</div><div class="dbody">
+<div class="toolbar"><div class="form-group"><label for="ka-tax">Steuer auf angekündigte Dividenden (%)</label><input id="ka-tax" inputmode="decimal" value="26,375"></div></div>
+<div id="ka-kpis" class="kpis"></div>
+<h3>Die nächsten 12 Monate</h3><div class="cbox sm"><canvas id="ka-chart"></canvas></div>
+<div id="ka-list"></div>
+<p id="ka-note" class="dnote"></p>
+</div></section>
+
 <section id="p-forecast" hidden><div class="dempty">Noch kein Depot geladen. Wechsle zu <a href="#import">Import</a> und lade dein Depot oder das Beispieldepot.</div><div class="dbody">
 <div class="form-container">
 <div class="form-group"><label for="fc-years">Jahre</label><input id="fc-years" inputmode="numeric" value="10"></div>
@@ -263,6 +283,13 @@ table.dt{border-collapse:collapse;width:100%;font-size:.9rem;min-width:620px}
 </div>
 
 </section>
+<div class="calc-wrap explain" style="max-width:760px">
+<h2>So funktioniert der Depot-Tracker</h2>
+<p>Der Depot-Tracker zeigt dir, wie dein Depot aufgebaut ist, wie viel Gewinn jede Position gemacht hat und welche Dividenden du bekommst. Du lädst dein Depot als CSV-Export von Trade Republic, Scalable Capital, Portfolio Performance oder einem anderen Broker. Danach findest du fünf Bereiche: <strong>Insight</strong> mit Kreisdiagramm und Positionstabelle, <strong>Dividenden</strong> pro Jahr und Monat, den <strong>Dividendenkalender</strong> für die nächsten zwölf Monate, den <strong>Forecast</strong> für kommende Jahre und die <strong>Analyse</strong> mit XIRR, TWR, Dividendenwachstum und Firmenkennzahlen.</p>
+<p>Wie die Kennzahlen entstehen, erklären diese Seiten: <a href="../grundlagen/dividendenrendite/">Dividendenrendite</a>, <a href="../grundlagen/ausschuettungsquote/">Ausschüttungsquote</a>, <a href="../grundlagen/ex-dividenden-tag/">Ex-Dividenden-Tag</a>, <a href="../grundlagen/dividendenbesteuerung/">Besteuerung von Dividenden</a>, <a href="../fortgeschrittene/dividendenwachstum/">Dividendenwachstum</a> und <a href="../fortgeschrittene/bewertung-kgv-dcf/">Bewertung mit KGV und DCF</a>. Einzelne Aktien prüfst du im <a href="../aktien/">Aktien-Hub</a>, neue Ideen findest du mit dem <a href="../screener/">Screener</a>, Zukunftsrechnungen gelingen mit dem <a href="../rechner/dividenden-zinseszins-rechner/">Zinseszins-Rechner</a>.</p>
+<h2>Häufige Fragen</h2>
+<h3>Wie lade ich mein Depot von Trade Republic oder Scalable Capital hoch?</h3><p>Exportiere deine Transaktionen als CSV-Datei aus der App bzw. dem Broker und ziehe die Datei im Reiter Import auf die Fläche. Der Tracker erkennt das Format von Trade Republic, Scalable Capital und Portfolio Performance automatisch. Andere Broker lassen sich über die Spaltenzuordnung einlesen.</p><h3>Werden meine Depotdaten gespeichert oder übertragen?</h3><p>Nein, nicht an uns. Dein Depot liegt ausschließlich im Speicher deines Browsers. Für Kurse und Kennzahlen gehen nur ISIN bzw. Börsenkürzel an Financial Modeling Prep, keine Stückzahlen oder Beträge. Ein Backup kannst du als Datei speichern.</p><h3>Was zeigt der Dividendenkalender?</h3><p>Er zeigt, wann in den nächsten zwölf Monaten Dividenden zu erwarten sind. Angekündigte Termine stammen von FMP, übrige Zahlungen werden aus deinen Dividenden der letzten zwölf Monate geschätzt.</p><h3>Was ist der Unterschied zwischen XIRR und TWR?</h3><p>Der XIRR ist die geldgewichtete Rendite pro Jahr und berücksichtigt, wann du wie viel eingezahlt hast. Der TWR ist die zeitgewichtete Rendite, die Ein- und Auszahlungen herausrechnet und so die Leistung der Anlagen selbst misst.</p><h3>Wie genau ist der Forecast?</h3><p>Der Forecast ist eine Rechnung mit Annahmen, keine Prognose. Er nutzt die Dividendenhistorie und das Wachstum je Firma, zeigt ein vorsichtiges, ein neutrales und ein optimistisches Szenario und lässt sich mit Sparrate, Steuer und Reinvestition anpassen.</p>
+</div>
 <p class="note"><strong>Hinweis:</strong> Alle Inhalte dienen der allgemeinen Information und sind keine Anlage-, Steuer- oder Rechtsberatung. Berechnungen beruhen auf deinen Importdaten und Annahmen; sie sind keine Prognose.</p>
 </article></main>
 <footer class="site-footer"><div class="wrap">
@@ -594,8 +621,10 @@ table.dt{border-collapse:collapse;width:100%;font-size:.9rem;min-width:620px}
 
   /* ---------- Forecast ---------- */
   /* pos: [{key,name,shares,price,dps,g}] (Euro). o: {years, reinvest, priceGrowth, saving (€ pro Monat), gMul, taxRate, gFixed (null = je Position), gDefault} */
+  /* Szenario-Faktor vorzeichenrichtig: positives Wachstum mal m, negatives Wachstum durch m (m<1 = vorsichtiger) */
+  function scaleG(g, m) { return g >= 0 ? g * m : g / m; }
   function forecast(pos, o) {
-    var P = pos.map(function (p) { return { key: p.key, name: p.name, shares: p.shares, price: p.price, dps: p.dps, g: o.gFixed != null ? o.gFixed : Math.max(-0.05, Math.min(0.15, (p.g == null ? o.gDefault : p.g))) * (o.gMul == null ? 1 : o.gMul) }; });
+    var P = pos.map(function (p) { return { key: p.key, name: p.name, shares: p.shares, price: p.price, dps: p.dps, g: o.gFixed != null ? o.gFixed : scaleG(Math.max(-0.05, Math.min(0.15, (p.g == null ? o.gDefault : p.g))), o.gMul == null ? 1 : o.gMul) }; });
     var out = [], cum = 0, cumNet = 0, year0 = o.startYear || new Date().getFullYear();
     for (var y = 0; y <= o.years; y++) {
       var gross = 0, value = 0;
@@ -710,6 +739,15 @@ table.dt{border-collapse:collapse;width:100%;font-size:.9rem;min-width:620px}
     var P = C.positions(S.tx); Object.keys(P).forEach(function (k) { t.base += P[k].cost + P[k].soldCost; });
     t.total = t.unreal + t.realized + t.divs; return t;
   }
+  /* Logo + Name als Link zur Aktienseite (../aktien/?s=KÜRZEL). Ohne bekanntes Kürzel: Buchstaben-Platzhalter ohne Link. */
+  function symOf(k) { var m = S.meta[k] || {}; var v = m.sym || (!C.isIsin(k) ? k : ""); return /^[A-Za-z0-9.\-^]{1,12}$/.test(v) ? v.toUpperCase() : ""; }
+  function nameCell(k, name, sub) {
+    var sy = symOf(k), ph = '<span class="lg lgph">' + esc((name || k).charAt(0).toUpperCase()) + "</span>";
+    var im = sy ? '<img class="lg" src="https://images.financialmodelingprep.com/symbol/' + encodeURIComponent(sy) + '.png" alt="" loading="lazy" onerror="this.outerHTML=this.dataset.ph" data-ph="' + esc(ph) + '">' : ph;
+    var txt = "<b>" + esc(name) + "</b>" + (sub ? "<small>" + sub + "</small>" : "");
+    var href = sy ? "../aktien/?s=" + encodeURIComponent(sy) : "";
+    return '<div class="nc">' + (sy ? '<a class="slk" href="' + href + '" title="Aktie ' + esc(sy) + ' öffnen">' + im + "</a>" : im) + "<div>" + (sy ? '<a class="slk" href="' + href + '">' + txt + "</a>" : txt) + "</div></div>";
+  }
   var kpi = function (label, val, cls) { return '<div class="kpi ' + (cls || "") + '"><b>' + val + "</b><span>" + label + "</span></div>"; };
   var charts = {};
   function chart(id, cfg) {
@@ -721,7 +759,7 @@ table.dt{border-collapse:collapse;width:100%;font-size:.9rem;min-width:620px}
   function setMsg(id, t, cls) { var e = $(id); if (!e) return; e.className = "dmsg" + (cls ? " " + cls : ""); e.textContent = t || ""; }
 
   /* ---------- Tabs ---------- */
-  var TABS = ["import", "insight", "dividenden", "forecast", "analyse"], cur = "import";
+  var TABS = ["import", "insight", "dividenden", "kalender", "forecast", "analyse"], cur = "import";
   function show(tab) {
     if (TABS.indexOf(tab) < 0) tab = "import"; cur = tab;
     TABS.forEach(function (t) { $("p-" + t).hidden = t !== tab; var b = document.querySelector('.dtab[data-tab="' + t + '"]'); b.setAttribute("aria-selected", String(t === tab)); b.classList.toggle("on", t === tab); });
@@ -735,7 +773,7 @@ table.dt{border-collapse:collapse;width:100%;font-size:.9rem;min-width:620px}
       TABS.forEach(function (t) { if (t !== "import") { var empty = $("p-" + t).querySelector(".dempty"), body = $("p-" + t).querySelector(".dbody"); if (empty) empty.hidden = has; if (body) body.hidden = !has; } });
       if (!has) return;
     }
-    ({ import: renderImport, insight: renderInsight, dividenden: renderDiv, forecast: renderForecast, analyse: renderAnalyse })[cur]();
+    ({ import: renderImport, insight: renderInsight, dividenden: renderDiv, kalender: renderCal, forecast: renderForecast, analyse: renderAnalyse })[cur]();
   }
 
   /* ---------- Import ---------- */
@@ -886,6 +924,8 @@ table.dt{border-collapse:collapse;width:100%;font-size:.9rem;min-width:620px}
             var dv = await fmp("dividends", { symbol: m.sym }), rowsD = Array.isArray(dv) ? dv : (dv && dv.historical) || [];
             var h = C.dpsHistory(rowsD, today), fx2 = await fxRate(m.cur || "USD");
             m.dps = fx2 ? h.ttm / fx2 : null; m.g = h.cagr; m.streak = h.streak; m.dpsTs = Date.now();
+            var nowD = new Date(Date.now() - 20 * 864e5).toISOString().slice(0, 10);
+            m.divUp = fx2 ? rowsD.filter(function (x) { var pd = x.paymentDate || x.date; return x.date >= nowD || (pd && pd >= today); }).slice(0, 12).map(function (x) { return { d: x.date, p: x.paymentDate || "", a: Number(x.dividend != null ? x.dividend : x.adjDividend) / fx2 }; }).filter(function (x) { return x.a > 0; }) : [];
           }
         } catch (e) { if (e.limit) { RUN.abort = true; } else fail.push((m.name || k) + ": " + e.message); }
         done++; st("Aktualisiere … " + done + " von " + keys.length + " (" + RUN.calls + " API-Aufrufe)");
@@ -916,7 +956,7 @@ table.dt{border-collapse:collapse;width:100%;font-size:.9rem;min-width:620px}
     var tv = act.reduce(function (s, x) { return s + x.value; }, 0);
     $("in-table").innerHTML = '<table class="dt"><thead><tr>' + th("name", "Name") + th("type", "Typ") + th("shares", "Stück") + th("avg", "Ø Kauf") + th("price", "Kurs") + th("value", "Wert") + th("share", "Anteil") + th("gain", (mode === "kurs" ? "Kursgewinn" : "Gesamtgewinn") + (unit === "eur" ? " €" : " %")) + th("divs", "Dividenden") + "</tr></thead><tbody>" + list.map(function (x) {
       var gv = gain(x), opts = Object.keys(TYPES).map(function (k) { return '<option value="' + k + '"' + (k === x.type ? " selected" : "") + ">" + TYPES[k] + "</option>"; }).join("");
-      return "<tr" + (x.closed ? ' class="closed"' : "") + '><td class="l"><b>' + esc(x.name) + "</b><small>" + esc(x.key) + (x.closed ? " · verkauft" : "") + (x.oversold ? " · Verkäufe übersteigen Käufe (Import unvollständig?)" : "") + (x.note ? " · " + esc(x.note) : "") + '</small></td><td><select class="tsel" data-type="' + esc(x.key) + '">' + opts + "</select></td><td>" + nf(x.shares, x.shares < 10 ? 4 : 2) + "</td><td>" + eur(x.avg, 2) + '</td><td><button type="button" class="link" data-price="' + esc(x.key) + '" title="Kursquelle: ' + esc(x.src) + '. Klicken zum Ändern.">' + eur(x.price, 2) + (x.src === "FMP" || x.src === "manuell" ? "" : "*") + "</button></td><td>" + eur(x.value) + "</td><td>" + (x.closed ? "–" : pct0(tv > 0 ? x.value / tv : 0)) + '</td><td class="' + sg(gv) + '">' + (unit === "eur" ? (gv == null ? "–" : (gv > 0 ? "+" : "") + eur(gv)) : pct(gv)) + "</td><td>" + eur(x.divs) + "</td></tr>";
+      return "<tr" + (x.closed ? ' class="closed"' : "") + '><td class="l">' + nameCell(x.key, x.name, esc(x.key) + (x.closed ? " · verkauft" : "") + (x.oversold ? " · Verkäufe übersteigen Käufe (Import unvollständig?)" : "") + (x.note ? " · " + esc(x.note) : "")) + '</td><td><select class="tsel" data-type="' + esc(x.key) + '">' + opts + "</select></td><td>" + nf(x.shares, x.shares < 10 ? 4 : 2) + "</td><td>" + eur(x.avg, 2) + '</td><td><button type="button" class="link" data-price="' + esc(x.key) + '" title="Kursquelle: ' + esc(x.src) + '. Klicken zum Ändern.">' + eur(x.price, 2) + (x.src === "FMP" || x.src === "manuell" ? "" : "*") + "</button></td><td>" + eur(x.value) + "</td><td>" + (x.closed ? "–" : pct0(tv > 0 ? x.value / tv : 0)) + '</td><td class="' + sg(gv) + '">' + (unit === "eur" ? (gv == null ? "–" : (gv > 0 ? "+" : "") + eur(gv)) : pct(gv)) + "</td><td>" + eur(x.divs) + "</td></tr>";
     }).join("") + "</tbody></table>";
     var est = act.filter(function (x) { return x.src !== "FMP" && x.src !== "manuell"; }).length;
     $("in-note").textContent = est ? "* " + est + " Kurs(e) stammen vom letzten Handel im Export, nicht live. Über „Import → Kurse aktualisieren“ lädt FMP aktuelle Kurse (im Gratis-Tarif überwiegend US-Aktien), oder du klickst auf den Kurs und trägst ihn selbst ein." : "Kurse: FMP bzw. von dir eingetragen. Gewinne ohne Gewähr, Steuern sind nur dort berücksichtigt, wo der Export sie enthält.";
@@ -936,7 +976,47 @@ table.dt{border-collapse:collapse;width:100%;font-size:.9rem;min-width:620px}
     $("dv-matrix").innerHTML = '<table class="dt mx"><thead><tr><th>Monat</th>' + years.map(function (y) { return "<th>" + y + "</th>"; }).join("") + "</tr></thead><tbody>" + MN.map(function (m, i) { return "<tr><td class=\"l\"><b>" + m + "</b></td>" + years.map(function (y) { var v = d.byMonth[y][i]; return '<td style="background:rgba(16,185,129,' + (v > 0 && mx ? 0.08 + 0.5 * v / mx : 0) + ')">' + (v > 0 ? eur(v) : "") + "</td>"; }).join("") + "</tr>"; }).join("") + "<tr class=\"sum\"><td class=\"l\"><b>Summe</b></td>" + years.map(function (y) { return "<td><b>" + eur(d.byYear[y]) + "</b></td>"; }).join("") + "</tr></tbody></table>";
     var names = {}; rows().forEach(function (r) { names[r.key] = r.name; });
     var top = Object.keys(d.keys12).sort(function (a, b) { return d.keys12[b] - d.keys12[a]; }).slice(0, 10);
-    $("dv-top").innerHTML = '<table class="dt"><thead><tr><th>Top-Zahler (12 Monate)</th><th>Dividenden</th><th>Anteil</th></tr></thead><tbody>' + top.map(function (k) { return '<tr><td class="l">' + esc(names[k] || k) + "</td><td>" + eur(d.keys12[k], 2) + "</td><td>" + pct0(d.keys12[k] / d.last12) + "</td></tr>"; }).join("") + "</tbody></table>";
+    $("dv-top").innerHTML = '<table class="dt"><thead><tr><th>Top-Zahler (12 Monate)</th><th>Dividenden</th><th>Anteil</th></tr></thead><tbody>' + top.map(function (k) { return '<tr><td class="l">' + nameCell(k, names[k] || k) + "</td><td>" + eur(d.keys12[k], 2) + "</td><td>" + pct0(d.keys12[k] / d.last12) + "</td></tr>"; }).join("") + "</tbody></table>";
+  }
+
+
+  /* ---------- Dividendenkalender ---------- */
+  var MNL = ["Januar", "Februar", "März", "April", "Mai", "Juni", "Juli", "August", "September", "Oktober", "November", "Dezember"];
+  function calEvents(taxRate) {
+    var ev = [], R = rows().filter(function (r) { return !r.closed && r.shares > 0; }), cut = C.addDays(today, -365), end = C.addDays(today, 365);
+    var P = {}; R.forEach(function (r) { P[r.key] = r; });
+    R.forEach(function (r) {
+      var m = S.meta[r.key] || {}, decl = (m.divUp || []).filter(function (x) { return (x.p || x.d) >= today && (x.p || x.d) <= end; });
+      decl.forEach(function (x) { ev.push({ key: r.key, name: r.name, date: x.p || x.d, ex: x.d, pay: !!x.p, amount: r.shares * x.a * (1 - taxRate), src: "FMP" }); });
+      var g = m.g == null ? 0 : Math.max(-0.05, Math.min(0.15, m.g));
+      S.tx.forEach(function (t) {
+        if (t.type !== "div" || t.key !== r.key || t.date < cut || t.date > today || !(t.amount > 0)) return;
+        var d = C.addDays(t.date, 365), f = t.shares > 0 ? r.shares / t.shares : 1;
+        if (decl.some(function (x) { return Math.abs(C.dayN(x.p || x.d) - C.dayN(d)) < 25; })) return;
+        if (d < today) return;
+        ev.push({ key: r.key, name: r.name, date: d, amount: t.amount * f * (1 + g), src: "Schätzung" });
+      });
+    });
+    ev.sort(function (a, b) { return a.date < b.date ? -1 : a.date > b.date ? 1 : 0; });
+    return ev;
+  }
+  function renderCal() {
+    var tx = Math.max(0, Math.min(60, C.num($("ka-tax").value, ",") == null ? 26.375 : C.num($("ka-tax").value, ","))) / 100;
+    var ev = calEvents(tx), by = {}, tot = 0, in30 = 0, lim30 = C.addDays(today, 30);
+    ev.forEach(function (e) { var k = e.date.slice(0, 7); (by[k] = by[k] || []).push(e); tot += e.amount; if (e.date <= lim30) in30 += e.amount; });
+    var next = ev[0], nFmp = ev.filter(function (e) { return e.src === "FMP"; }).length;
+    $("ka-kpis").innerHTML = kpi("Nächste Zahlung", next ? eur(next.amount, 2) + "<small> " + esc(next.name) + ", " + new Date(next.date).toLocaleDateString("de-DE") + "</small>" : "–") + kpi("In den nächsten 30 Tagen", eur(in30)) + kpi("In den nächsten 12 Monaten", eur(tot), "blue") + kpi("Davon von FMP bestätigt", nFmp + " von " + ev.length + " Zahlungen");
+    var keys = []; var d0 = new Date(today + "T00:00:00"); for (var i = 0; i < 13; i++) { var d = new Date(d0.getFullYear(), d0.getMonth() + i, 1); keys.push(d.getFullYear() + "-" + String(d.getMonth() + 1).padStart(2, "0")); }
+    chart("ka-chart", { type: "bar", data: { labels: keys.map(function (k) { return MNL[+k.slice(5) - 1].slice(0, 3) + " " + k.slice(2, 4); }), datasets: [{ label: "Dividenden (netto)", data: keys.map(function (k) { return Math.round((by[k] || []).reduce(function (s, e) { return s + e.amount; }, 0) * 100) / 100; }), backgroundColor: "#10b981", borderRadius: 5 }] }, options: { plugins: { legend: { display: false }, tooltip: { callbacks: { label: function (c) { return eur(c.parsed.y, 2); } } } }, scales: { y: { beginAtZero: true, ticks: { callback: function (v) { return eur(v); } } } } } });
+    if (!ev.length) { $("ka-list").innerHTML = '<p class="dnote">Noch keine Zahlungen absehbar. Der Kalender nutzt deine Dividenden der letzten 12 Monate aus dem Import und, nach „Import → Kurse aktualisieren“, angekündigte Termine von FMP.</p>'; $("ka-note").textContent = ""; return; }
+    $("ka-list").innerHTML = Object.keys(by).sort().map(function (k) {
+      var sum = by[k].reduce(function (s, e) { return s + e.amount; }, 0);
+      return '<div class="calm"><div class="calh"><b>' + MNL[+k.slice(5) - 1] + " " + k.slice(0, 4) + "</b><span>" + eur(sum, 2) + "</span></div>" + by[k].map(function (e) {
+        var dt = new Date(e.date + "T00:00:00").toLocaleDateString("de-DE", { day: "2-digit", month: "2-digit" });
+        return '<div class="cale"><span class="cald">' + dt + (e.src === "Schätzung" ? "*" : "") + "</span>" + nameCell(e.key, e.name, e.ex ? "Ex-Tag " + new Date(e.ex + "T00:00:00").toLocaleDateString("de-DE") : "") + '<span class="cala">' + eur(e.amount, 2) + '</span><span class="calb ' + (e.src === "FMP" ? "ok" : "") + '">' + (e.src === "FMP" ? "angekündigt" : "geschätzt") + "</span></div>";
+      }).join("") + "</div>";
+    }).join("");
+    $("ka-note").textContent = "Angekündigte Termine kommen von FMP (Brutto je Aktie mal deine Stückzahl, abzüglich der oben eingestellten Steuer). Geschätzt (*) heißt: gleiche Zahlung wie vor einem Jahr aus deinem Import, angepasst an heutige Stückzahl und Wachstum. Zahlungstermine können abweichen; keine Gewähr.";
   }
 
   /* ---------- Forecast ---------- */
@@ -957,16 +1037,16 @@ table.dt{border-collapse:collapse;width:100%;font-size:.9rem;min-width:620px}
   }
   function renderForecast() {
     var p = fcParams(), pos = fcPositions(p.base), ys = new Date().getFullYear();
-    var run = function (gMul, pg) { return C.forecast(pos, { years: p.years, reinvest: p.reinv, priceGrowth: pg, saving: p.save, taxRate: p.tax, gDefault: p.gDef, gFixed: p.gMode === "fix" ? p.gFix : null, gMul: p.gMode === "fix" ? 1 : gMul, startYear: ys }); };
-    var base = run(1, p.pg), low = run(0.5, Math.max(0, p.pg - 0.04)), high = run(1.5, p.pg + 0.02);
-    if (p.gMode === "fix") { low = C.forecast(pos, { years: p.years, reinvest: p.reinv, priceGrowth: Math.max(0, p.pg - 0.04), saving: p.save, taxRate: p.tax, gDefault: p.gDef, gFixed: Math.max(0, p.gFix - 0.02), startYear: ys }); high = C.forecast(pos, { years: p.years, reinvest: p.reinv, priceGrowth: p.pg + 0.02, saving: p.save, taxRate: p.tax, gDefault: p.gDef, gFixed: p.gFix + 0.02, startYear: ys }); }
+    /* Nur das Dividendenwachstum unterscheidet die Szenarien. Das Kurswachstum bleibt gleich, sonst würden bei Reinvestition niedrigere Kurse mehr Aktien kaufen und das vorsichtige Szenario sähe besser aus. */
+    var run = function (gMul, gFix) { return C.forecast(pos, { years: p.years, reinvest: p.reinv, priceGrowth: p.pg, saving: p.save, taxRate: p.tax, gDefault: p.gDef, gFixed: p.gMode === "fix" ? gFix : null, gMul: gMul, startYear: ys }); };
+    var base = run(1, p.gFix), low = run(0.5, p.gFix - 0.02), high = run(1.5, p.gFix + 0.02);
     var last = base[base.length - 1], first = base[0];
     var noDiv = pos.filter(function (x) { return x.dps <= 0 && x.type !== "etf"; }).length;
     $("fc-kpis").innerHTML = kpi("Dividenden heute (Hochrechnung, netto)", eur(first.net), "") + kpi("In " + p.years + " Jahren (Basis, netto)", eur(last.net), "blue") + kpi("Pro Monat in " + p.years + " J.", eur(last.net / 12), "blue") + kpi("Summe netto bis dahin", eur(last.cumNet)) + kpi("Depotwert in " + p.years + " J. (Schätzung)", eur(last.value));
     chart("fc-chart", { type: "line", data: { labels: base.map(function (x) { return x.year; }), datasets: [{ label: "Optimistisch", data: high.map(function (x) { return Math.round(x.net); }), borderColor: "#10b981", backgroundColor: "#10b981", tension: .25, pointRadius: 2 }, { label: "Basis", data: base.map(function (x) { return Math.round(x.net); }), borderColor: "#2563eb", backgroundColor: "#2563eb", borderWidth: 3, tension: .25, pointRadius: 3 }, { label: "Vorsichtig", data: low.map(function (x) { return Math.round(x.net); }), borderColor: "#f59e0b", backgroundColor: "#f59e0b", tension: .25, pointRadius: 2 }] }, options: { plugins: { tooltip: { callbacks: { label: function (c) { return c.dataset.label + ": " + eur(c.parsed.y); } } } }, scales: { y: { beginAtZero: true, ticks: { callback: function (v) { return eur(v); } } } } } });
     $("fc-table").innerHTML = '<table class="dt"><thead><tr><th>Jahr</th><th>Brutto</th><th>Netto</th><th>Netto pro Monat</th><th>Summe netto</th><th>Depotwert</th></tr></thead><tbody>' + base.map(function (x, i) { return "<tr><td>" + x.year + (i === 0 ? " (heute)" : "") + "</td><td>" + eur(x.gross) + "</td><td>" + eur(x.net) + "</td><td>" + eur(x.net / 12) + "</td><td>" + eur(x.cumNet) + "</td><td>" + eur(x.value) + "</td></tr>"; }).join("") + "</tbody></table>";
     var bs = {}; pos.forEach(function (x) { bs[x.src] = (bs[x.src] || 0) + 1; });
-    $("fc-note").innerHTML = "Datenbasis je Position: " + Object.keys(bs).map(function (k) { return bs[k] + "× " + k; }).join(", ") + (noDiv ? ". " + noDiv + " Position(en) ohne Dividendendaten fließen nicht ein (über „Import → Kurse aktualisieren“ lädt FMP die Dividendenhistorie)" : "") + ". Szenarien: vorsichtig = halbes Wachstum und 4 Prozentpunkte weniger Kurswachstum, optimistisch = 1,5-faches Wachstum und 2 Punkte mehr. Das ist eine Rechnung mit Annahmen, keine Prognose. Steuer pauschal; Teilfreistellung bei ETFs und Freibetrag nicht berücksichtigt.";
+    $("fc-note").innerHTML = "Datenbasis je Position: " + Object.keys(bs).map(function (k) { return bs[k] + "× " + k; }).join(", ") + (noDiv ? ". " + noDiv + " Position(en) ohne Dividendendaten fließen nicht ein (über „Import → Kurse aktualisieren“ lädt FMP die Dividendenhistorie)" : "") + ". Szenarien ändern nur das Dividendenwachstum: vorsichtig = halbes Wachstum (negatives Wachstum doppelt so stark; bei festem Wert 2 Punkte weniger), optimistisch = 1,5-faches Wachstum (bei festem Wert 2 Punkte mehr). Das ist eine Rechnung mit Annahmen, keine Prognose. Steuer pauschal; Teilfreistellung bei ETFs und Freibetrag nicht berücksichtigt.";
   }
 
   /* ---------- Analyse ---------- */
@@ -1023,7 +1103,7 @@ table.dt{border-collapse:collapse;width:100%;font-size:.9rem;min-width:620px}
     var grp = function (id, f) { var g = {}; r.forEach(function (x) { var k = f(x) || "Unbekannt"; g[k] = (g[k] || 0) + x.value; }); var ks = Object.keys(g).sort(function (a, b) { return g[b] - g[a]; }); chart(id, { type: "doughnut", data: { labels: ks, datasets: [{ data: ks.map(function (k) { return g[k]; }), backgroundColor: ks.map(function (k, i) { return COL[i % COL.length]; }), borderWidth: 2, borderColor: "#fff" }] }, options: { cutout: "55%", plugins: { legend: { position: "right", labels: { generateLabels: function () { return ks.map(function (k, i) { return { text: k + "  " + pct0(g[k] / tv), fillStyle: COL[i % COL.length], strokeStyle: "#fff", index: i }; }); } } }, tooltip: { callbacks: { label: function (c) { return c.label + ": " + pct0(c.parsed / tv); } } } } } }); };
     grp("an-sector", function (x) { return x.sector; }); grp("an-country", function (x) { return x.country; });
     var th = '<table class="dt"><thead><tr><th>Name</th><th>Anteil</th><th>Div.-Rendite</th><th>Div.-Wachstum 5 J.</th><th>Jahre mit Erhöhung</th><th>KGV</th><th>Ausschüttungsquote</th><th>Umsatzwachstum</th><th>Gewinnwachstum</th></tr></thead><tbody>';
-    $("an-table").innerHTML = th + top.map(function (x) { var m = S.meta[x.key] || {}, f = m.fund || {}; return '<tr><td class="l">' + esc(x.name) + "</td><td>" + pct0(tv ? x.value / tv : 0) + "</td><td>" + (m.dps > 0 && x.price ? pct0(m.dps / x.price) : "–") + "</td><td>" + (m.g != null ? pct0(m.g) : "–") + "</td><td>" + (m.streak != null ? m.streak : "–") + "</td><td>" + (f.pe > 0 ? nf(f.pe, 1) : "–") + "</td><td>" + (f.po != null ? pct0(f.po, 0) : "–") + "</td><td>" + (f.rg != null ? pct(f.rg) : "–") + "</td><td>" + (f.eg != null ? pct(f.eg) : "–") + "</td></tr>"; }).join("") + "</tbody></table>";
+    $("an-table").innerHTML = th + top.map(function (x) { var m = S.meta[x.key] || {}, f = m.fund || {}; return '<tr><td class="l">' + nameCell(x.key, x.name) + "</td><td>" + pct0(tv ? x.value / tv : 0) + "</td><td>" + (m.dps > 0 && x.price ? pct0(m.dps / x.price) : "–") + "</td><td>" + (m.g != null ? pct0(m.g) : "–") + "</td><td>" + (m.streak != null ? m.streak : "–") + "</td><td>" + (f.pe > 0 ? nf(f.pe, 1) : "–") + "</td><td>" + (f.po != null ? pct0(f.po, 0) : "–") + "</td><td>" + (f.rg != null ? pct(f.rg) : "–") + "</td><td>" + (f.eg != null ? pct(f.eg) : "–") + "</td></tr>"; }).join("") + "</tbody></table>";
   }
   async function loadHist() {
     if (RUN.busy || S.demo) { setMsg("an-status", S.demo ? "Beim Beispieldepot ist der Kursverlauf schon enthalten." : ""); return; } if (!KEY && !askKey()) return;
@@ -1083,7 +1163,7 @@ table.dt{border-collapse:collapse;width:100%;font-size:.9rem;min-width:620px}
     });
     document.addEventListener("change", function (e) { var t = e.target.closest("[data-type]"); if (t) { meta(t.dataset.type).type = t.value; save(); invalidate(); renderInsight(); } });
     ["in-group", "in-mode", "in-unit", "in-closed"].forEach(function (id) { $(id).onchange = renderInsight; });
-    $("in-filter").oninput = renderInsight; $("dv-month-year").onchange = renderDiv;
+    $("in-filter").oninput = renderInsight; $("dv-month-year").onchange = renderDiv; $("ka-tax").oninput = function () { renderCal(); };
     var dbt; ["fc-years", "fc-base", "fc-gmode", "fc-gfix", "fc-gdef", "fc-pg", "fc-reinv", "fc-save", "fc-tax"].forEach(function (id) { $(id).oninput = $(id).onchange = function () { clearTimeout(dbt); dbt = setTimeout(renderForecast, 120); }; });
     window.addEventListener("hashchange", function () { show(location.hash.slice(1)); });
     show(location.hash.slice(1) || (S.tx.length ? "insight" : "import"));
