@@ -66,3 +66,6 @@ details p{margin:0 0 12px}
 .site-footer .cols{display:flex;flex-wrap:wrap;gap:8px 28px;margin-bottom:10px}
 .todo{background:#ffecec;border:1px dashed #d98;padding:1px 6px;border-radius:5px}
 @media (max-width:560px){body{font-size:16px}.site-header{position:static}}
+.toc{background:var(--soft);border-radius:12px;padding:12px 18px;margin:18px 0 22px;font-size:15px}.toc ul{margin:6px 0 0;padding-left:20px}.toc li{margin:2px 0}
+address{font-style:normal;background:var(--soft);border-left:3px solid var(--acc);border-radius:6px;padding:10px 14px;margin:10px 0 18px}
+article h2[id]{scroll-margin-top:16px}

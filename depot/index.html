@@ -272,6 +272,9 @@ table.dt{border-collapse:collapse;width:100%;font-size:.9rem;min-width:620px}
 <div id="fc-kpis" class="kpis"></div>
 <div class="cbox"><canvas id="fc-chart"></canvas></div>
 <div class="tw" id="fc-table"></div>
+<h3>Dividenden-Check je Position</h3>
+<p class="dnote">So rechnet der Forecast: Welche Dividende je Aktie pro Jahr wird für jede Position angesetzt? Stimmt ein Wert nicht, stellst du oben bei „Dividendenbasis“ um.</p>
+<div class="tw" id="fc-check"></div>
 <p id="fc-note" class="dnote"></p>
 </div></section>
 
@@ -299,7 +302,7 @@ table.dt{border-collapse:collapse;width:100%;font-size:.9rem;min-width:620px}
 </article></main>
 <footer class="site-footer"><div class="wrap">
 <div class="cols">
-<a href="../rechner/">Rechner</a><a href="../aktien/">Aktien-Hub</a><a href="../news/">News</a><a href="../screener/">Screener</a><a href="../einfuehrung/">Einführung</a><a href="../grundlagen/">Grundlagen</a><a href="../fortgeschrittene/">Fortgeschrittene</a>
+<a href="../rechner/">Rechner</a><a href="../aktien/">Aktien-Hub</a><a href="../depot/">Depot</a><a href="../news/">News</a><a href="../screener/">Screener</a><a href="../einfuehrung/">Einführung</a><a href="../grundlagen/">Grundlagen</a><a href="../fortgeschrittene/">Fortgeschrittene</a>
 <a href="../impressum/">Impressum</a><a href="../datenschutz/">Datenschutz</a>
 </div>
 <p>Alle Inhalte dienen der allgemeinen Information und sind keine Anlage-, Steuer- oder Rechtsberatung. Kapitalanlagen sind mit Risiken verbunden.</p>
@@ -548,17 +551,22 @@ table.dt{border-collapse:collapse;width:100%;font-size:.9rem;min-width:620px}
   /* Dividende je Aktie nach Kalenderjahr aus einer Dividendenhistorie (FMP) und Wachstumsrate über 5 Jahre. */
   function dpsHistory(rows, today) {
     today = today || todayIso();
-    var byY = {}, y0 = +today.slice(0, 4), t12 = 0, from12 = addDays(today, -365);
+    var byY = {}, y0 = +today.slice(0, 4), t12 = 0, n12 = 0, from12 = addDays(today, -365), list = [];
     (rows || []).forEach(function (r) {
-      var d = String(r.date || "").slice(0, 10), v = Number(r.adjDividend != null ? r.adjDividend : r.dividend); if (!d || !isFinite(v)) return;
-      var y = +d.slice(0, 4); byY[y] = (byY[y] || 0) + v; if (d > from12 && d <= today) t12 += v;
+      var d = String(r.date || "").slice(0, 10), v = Number(r.adjDividend != null ? r.adjDividend : r.dividend); if (!d || !isFinite(v) || v <= 0) return;
+      list.push({ d: d, v: v });
     });
+    list.sort(function (a, b) { return a.d < b.d ? -1 : a.d > b.d ? 1 : 0; });
+    /* Doppelte Zeilen (gleicher Betrag innerhalb von 10 Tagen, z. B. Ex- und Record-Datum getrennt geführt) nur einmal zählen */
+    var kept = [];
+    list.forEach(function (x) { var l = kept[kept.length - 1]; if (l && Math.abs(l.v - x.v) <= Math.abs(l.v) * 0.001 && dayN(x.d) - dayN(l.d) <= 10) return; kept.push(x); });
+    kept.forEach(function (x) { var y = +x.d.slice(0, 4); byY[y] = (byY[y] || 0) + x.v; if (x.d > from12 && x.d <= today) { t12 += x.v; n12++; } });
     var ys = Object.keys(byY).map(Number).filter(function (y) { return y < y0; }).sort(function (a, b) { return a - b; });
     var cagr = null;
     if (ys.length >= 6) { var a = byY[ys[ys.length - 6]], b = byY[ys[ys.length - 1]]; if (a > 0 && b > 0) cagr = Math.pow(b / a, 1 / 5) - 1; }
     else if (ys.length >= 3) { var a2 = byY[ys[0]], b2 = byY[ys[ys.length - 1]], n = ys[ys.length - 1] - ys[0]; if (a2 > 0 && b2 > 0 && n > 0) cagr = Math.pow(b2 / a2, 1 / n) - 1; }
     var streak = 0; for (var i = ys.length - 1; i > 0; i--) { if (byY[ys[i]] > byY[ys[i - 1]] * 1.0001 && ys[i] - ys[i - 1] === 1) streak++; else break; }
-    return { ttm: t12, cagr: cagr, streak: ys.length >= 2 ? streak : null, byYear: byY };
+    return { ttm: t12, n: n12, cagr: cagr, streak: ys.length >= 2 ? streak : null, byYear: byY };
   }
 
   /* ---------- Rendite: XIRR ---------- */
@@ -918,7 +926,7 @@ table.dt{border-collapse:collapse;width:100%;font-size:.9rem;min-width:620px}
             if (C.isIsin(k)) {
               var r = []; try { r = await fmp("search-isin", { isin: k }); } catch (e0) { if (e0.limit) throw e0; }
               var list = Array.isArray(r) ? r : [];
-              var pick = list.filter(function (x) { return /NASDAQ|NYSE|AMEX/i.test(x.exchange || x.exchangeFullName || ""); })[0] || list[0];
+              var isUS = /^US/.test(k), pick = list.filter(function (x) { return /NASDAQ|NYSE|AMEX|NYS\b|NMS\b|New York|Nasdaq/i.test((x.exchange || "") + " " + (x.exchangeFullName || "")) && !/\./.test(x.symbol || ""); })[0] || (isUS ? list.filter(function (x) { return !/[.]/.test(x.symbol || "") && String(x.currency || "USD").toUpperCase() === "USD"; })[0] : null) || list[0];
               if (pick) { m.sym = pick.symbol; m.cur = pick.currency || m.cur; }
             } else m.sym = k;
             if (!m.sym) { var bn = HL.byName(m.name || k); if (bn && bn.sym) m.sym = bn.sym; }
@@ -934,7 +942,7 @@ table.dt{border-collapse:collapse;width:100%;font-size:.9rem;min-width:620px}
           if (!m.isEtf || true) {
             var dv = await fmp("dividends", { symbol: m.sym }), rowsD = Array.isArray(dv) ? dv : (dv && dv.historical) || [];
             var h = C.dpsHistory(rowsD, today), fx2 = await fxRate(m.cur || "USD");
-            m.dps = fx2 ? h.ttm / fx2 : null; m.g = h.cagr; m.streak = h.streak; m.dpsTs = Date.now();
+            m.dps = fx2 ? h.ttm / fx2 : null; m.dpsN = h.n; m.g = h.cagr; m.streak = h.streak; m.dpsTs = Date.now();
             var nowD = new Date(Date.now() - 20 * 864e5).toISOString().slice(0, 10);
             m.divUp = fx2 ? rowsD.filter(function (x) { var pd = x.paymentDate || x.date; return x.date >= nowD || (pd && pd >= today); }).slice(0, 12).map(function (x) { return { d: x.date, p: x.paymentDate || "", a: Number(x.dividend != null ? x.dividend : x.adjDividend) / fx2 }; }).filter(function (x) { return x.a > 0; }) : [];
           }
@@ -1012,7 +1020,7 @@ table.dt{border-collapse:collapse;width:100%;font-size:.9rem;min-width:620px}
     var ev = [], R = rows().filter(function (r) { return !r.closed && r.shares > 0; }), cut = C.addDays(today, -365), end = C.addDays(today, 365), d12 = C.divStats(S.tx, today).keys12;
     R.forEach(function (r) {
       var m = S.meta[r.key] || {}, decl = (m.divUp || []).filter(function (x) { var q = x.p || x.d; return q >= C.addDays(today, -1) && q <= end || (x.d >= today && x.d <= end); });
-      var cur = m.dps > 0 ? m.dps : (d12[r.key] && r.shares ? d12[r.key] / r.shares : null);
+      var di = dpsInfo(r, "auto", taxRate), cur = di.dps > 0 ? di.dps : null;
       decl.forEach(function (x) { ev.push({ key: r.key, name: r.name, pay: x.p || "", ex: x.d, dps: x.a, shares: r.shares, cur: cur, amount: r.shares * x.a * (1 - taxRate), src: "FMP" }); });
       var g = m.g == null ? 0 : Math.max(-0.05, Math.min(0.15, m.g));
       S.tx.forEach(function (t) {
@@ -1053,14 +1061,27 @@ table.dt{border-collapse:collapse;width:100%;font-size:.9rem;min-width:620px}
   }
 
   /* ---------- Forecast ---------- */
-  function fcPositions(baseMode) {
-    var d = C.divStats(S.tx, today), out = [];
+  /* Dividende je Aktie (brutto, Euro, 12 Monate): FMP gegen eigene Zahlungen prüfen.
+     Eigene Zahlungen stehen netto im Export, daher mit dem Steuersatz auf brutto hochgerechnet; je Zahlung wird die damalige Stückzahl genutzt (falls im Export). */
+  function dpsInfo(r, mode, tax) {
+    var m = S.meta[r.key] || {}, cut = C.addDays(today, -365), net = 0, n = 0;
+    S.tx.forEach(function (t) { if (t.type === "div" && t.key === r.key && t.date > cut && t.date <= today && t.amount > 0) { var sh = t.shares > 0 ? t.shares : r.shares; if (sh > 0) { net += t.amount / sh; n++; } } });
+    var own = n && tax < 0.95 ? net / (1 - tax) : null, ext = m.dps > 0 ? m.dps : null, flag = "", dps = 0, src = "keine";
+    var bad = false;
+    if (ext && n >= 2 && own > 0 && ext > 1.5 * own) { bad = true; flag = "FMP-Wert liegt mehr als 1,5-mal über deinen eigenen Zahlungen"; }
+    else if (ext && r.price > 0 && ext / r.price > 0.2) { bad = true; flag = "FMP-Wert entspricht über 20 % Rendite, unplausibel"; }
+    if (mode === "own") { dps = own || 0; src = own ? "eigene Zahlungen" : "keine"; }
+    else if (mode === "fmp") { dps = ext || 0; src = ext ? "FMP" : "keine"; }
+    else if (ext && !bad) { dps = ext; src = "FMP"; }
+    else if (own) { dps = own; src = "eigene Zahlungen"; if (bad) flag += ", eigene Zahlungen genutzt"; }
+    else if (ext) { dps = ext; src = "FMP"; }
+    return { dps: dps, src: src, flag: flag, ext: ext, own: own, n: n, nExt: m.dpsN || null };
+  }
+  function fcPositions(baseMode, tax) {
+    var out = [];
     rows().filter(function (r) { return !r.closed && r.shares > 0; }).forEach(function (r) {
-      var m = S.meta[r.key] || {}, own = r.shares > 0 && d.keys12[r.key] ? d.keys12[r.key] / r.shares : null, ext = m.dps != null && m.dps > 0 ? m.dps : null, dps = 0, srcN = "keine";
-      if (baseMode === "own") { dps = own || 0; srcN = own ? "eigene Zahlungen" : "keine"; }
-      else if (baseMode === "fmp") { dps = ext || 0; srcN = ext ? "FMP" : "keine"; }
-      else if (ext) { dps = ext; srcN = "FMP"; } else if (own) { dps = own; srcN = "eigene Zahlungen"; }
-      out.push({ key: r.key, name: r.name, shares: r.shares, price: r.price, dps: dps, g: m.g == null ? null : m.g, src: srcN, type: r.type });
+      var m = S.meta[r.key] || {}, di = dpsInfo(r, baseMode, tax);
+      out.push({ key: r.key, name: r.name, shares: r.shares, price: r.price, dps: di.dps, g: m.g == null ? null : m.g, src: di.src, type: r.type, info: di });
     });
     return out;
   }
@@ -1069,7 +1090,7 @@ table.dt{border-collapse:collapse;width:100%;font-size:.9rem;min-width:620px}
     return { years: Math.max(1, Math.min(40, Math.round(v("fc-years", 10)))), gMode: $("fc-gmode").value, gFix: v("fc-gfix", 4) / 100, gDef: v("fc-gdef", 3) / 100, pg: v("fc-pg", 4) / 100, reinv: $("fc-reinv").value === "ja", save: Math.max(0, v("fc-save", 0)), tax: Math.max(0, Math.min(60, v("fc-tax", 26.375))) / 100, base: $("fc-base").value };
   }
   function renderForecast() {
-    var p = fcParams(), pos = fcPositions(p.base), ys = new Date().getFullYear();
+    var p = fcParams(), pos = fcPositions(p.base, p.tax), ys = new Date().getFullYear();
     /* Nur das Dividendenwachstum unterscheidet die Szenarien. Das Kurswachstum bleibt gleich, sonst würden bei Reinvestition niedrigere Kurse mehr Aktien kaufen und das vorsichtige Szenario sähe besser aus. */
     var run = function (gMul, gFix) { return C.forecast(pos, { years: p.years, reinvest: p.reinv, priceGrowth: p.pg, saving: p.save, taxRate: p.tax, gDefault: p.gDef, gFixed: p.gMode === "fix" ? gFix : null, gMul: gMul, startYear: ys }); };
     var base = run(1, p.gFix), low = run(0.5, p.gFix - 0.02), high = run(1.5, p.gFix + 0.02);
@@ -1078,6 +1099,7 @@ table.dt{border-collapse:collapse;width:100%;font-size:.9rem;min-width:620px}
     $("fc-kpis").innerHTML = kpi("Dividenden heute (Hochrechnung, netto)", eur(first.net), "") + kpi("In " + p.years + " Jahren (Basis, netto)", eur(last.net), "blue") + kpi("Pro Monat in " + p.years + " J.", eur(last.net / 12), "blue") + kpi("Summe netto bis dahin", eur(last.cumNet)) + kpi("Depotwert in " + p.years + " J. (Schätzung)", eur(last.value));
     chart("fc-chart", { type: "line", data: { labels: base.map(function (x) { return x.year; }), datasets: [{ label: "Optimistisch", data: high.map(function (x) { return Math.round(x.net); }), borderColor: "#10b981", backgroundColor: "#10b981", tension: .25, pointRadius: 2 }, { label: "Basis", data: base.map(function (x) { return Math.round(x.net); }), borderColor: "#2563eb", backgroundColor: "#2563eb", borderWidth: 3, tension: .25, pointRadius: 3 }, { label: "Vorsichtig", data: low.map(function (x) { return Math.round(x.net); }), borderColor: "#f59e0b", backgroundColor: "#f59e0b", tension: .25, pointRadius: 2 }] }, options: { plugins: { tooltip: { callbacks: { label: function (c) { return c.dataset.label + ": " + eur(c.parsed.y); } } } }, scales: { y: { beginAtZero: true, ticks: { callback: function (v) { return eur(v); } } } } } });
     $("fc-table").innerHTML = '<table class="dt"><thead><tr><th>Jahr</th><th>Brutto</th><th>Netto</th><th>Netto pro Monat</th><th>Summe netto</th><th>Depotwert</th></tr></thead><tbody>' + base.map(function (x, i) { return "<tr><td>" + x.year + (i === 0 ? " (heute)" : "") + "</td><td>" + eur(x.gross) + "</td><td>" + eur(x.net) + "</td><td>" + eur(x.net / 12) + "</td><td>" + eur(x.cumNet) + "</td><td>" + eur(x.value) + "</td></tr>"; }).join("") + "</tbody></table>";
+    $("fc-check").innerHTML = '<table class="dt"><thead><tr><th>Position</th><th>Stück</th><th>Kurs</th><th>FMP je Aktie</th><th>Eigene je Aktie (brutto)</th><th>Verwendet</th><th>Rendite</th><th>Hinweis</th></tr></thead><tbody>' + pos.filter(function (x) { return x.type !== "etf" || x.dps > 0 || x.info.ext || x.info.own; }).map(function (x) { var i = x.info, f = function (v) { return v == null ? "–" : eur(v, v < 1 ? 3 : 2); }; return '<tr><td class="l">' + nameCell(x.key, x.name) + "</td><td>" + nf(x.shares, x.shares < 10 ? 2 : 0) + "</td><td>" + eur(x.price, 2) + "</td><td>" + f(i.ext) + (i.nExt ? "<small>" + i.nExt + " Zahlungen</small>" : "") + "</td><td>" + f(i.own) + (i.n ? "<small>" + i.n + " Zahlungen</small>" : "") + "</td><td><b>" + f(x.dps) + "</b><small>" + esc(x.src) + "</small></td><td>" + (x.price > 0 && x.dps > 0 ? pct0(x.dps / x.price) : "–") + '</td><td class="l">' + esc(i.flag || "") + "</td></tr>"; }).join("") + "</tbody></table>";
     var bs = {}; pos.forEach(function (x) { bs[x.src] = (bs[x.src] || 0) + 1; });
     $("fc-note").innerHTML = "Datenbasis je Position: " + Object.keys(bs).map(function (k) { return bs[k] + "× " + k; }).join(", ") + (noDiv ? ". " + noDiv + " Position(en) ohne Dividendendaten fließen nicht ein (über „Import → Kurse aktualisieren“ lädt FMP die Dividendenhistorie)" : "") + ". Szenarien ändern nur das Dividendenwachstum: vorsichtig = halbes Wachstum (negatives Wachstum doppelt so stark; bei festem Wert 2 Punkte weniger), optimistisch = 1,5-faches Wachstum (bei festem Wert 2 Punkte mehr). Das ist eine Rechnung mit Annahmen, keine Prognose. Steuer pauschal; Teilfreistellung bei ETFs und Freibetrag nicht berücksichtigt.";
   }
