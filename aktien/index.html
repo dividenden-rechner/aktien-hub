@@ -149,6 +149,7 @@ svg text{fill:var(--mut);font-size:11px;font-family:inherit}
 <body>
 <header id="hub-global-header"><div class="hub-nav-inner"><a class="hub-brand" href="../"><img class="hub-logo" src="../assets/logo.png" alt="" width="36" height="36"> <span class="hub-brand-name">Dividenden-Rechner <span>Aktien-Hub</span></span></a><nav class="hub-links" aria-label="Hauptmenü"><a href="../rechner/">Rechner</a><a href="../aktien/" aria-current="page">Aktien</a><a href="../depot/">Depot</a><a href="../news/">News</a><a href="../screener/">Screener</a><a href="../einfuehrung/">Einführung</a><a href="../grundlagen/">Grundlagen</a><a href="../fortgeschrittene/">Fortgeschrittene</a></nav></div></header>
 <script src="../assets/navigation.js"></script>
+<script src="../assets/logos.js"></script>
 <main>
 <div class="top">
   <input id="q" autocomplete="off" aria-label="Aktie suchen" placeholder="Aktie suchen: Name oder Ticker, z. B. Coca-Cola, SAP, O">
@@ -178,7 +179,7 @@ if(!KEY)setTimeout(askKey,300);
 const BASE = "https://financialmodelingprep.com/stable/";
 const $ = id => document.getElementById(id);
 const logo = s => `https://images.financialmodelingprep.com/symbol/${encodeURIComponent(s)}.png`;
-const img = s => `<img class="logo" src="${logo(s)}" alt="" onerror="this.style.visibility='hidden'">`;
+const img = (s,web,nm) => { const d = web ? String(web).replace(/^https?:\/\/(www\.)?/, "").split("/")[0] : ""; return window.HubLogos ? HubLogos.img("logo", s, d, nm || s) : `<img class="logo" src="${logo(s)}" alt="" onerror="this.style.visibility='hidden'">`; };
 const esc = s => String(s??"").replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
 
 async function api(path, params={}){
@@ -304,7 +305,7 @@ async function openStock(sym){
   const kp=(l,v,c="")=>`<div><b class="${c}">${v}</b><span>${l}</span></div>`;
   LAST={sym,p,price,chg,cur,pts,divs,inc,est:d.est,g:one(d.grades),tgt,pt,r};
   hub.innerHTML=`
-  <div class="head">${img(sym)}<div><h1>${esc(p.companyName||sym)}</h1><p>${esc(sym)} · ${esc(p.exchange||"")} · ${esc(p.sector||"")}${p.industry?" · "+esc(p.industry):""}</p></div>
+  <div class="head">${img(sym,p.website,p.companyName)}<div><h1>${esc(p.companyName||sym)}</h1><p>${esc(sym)} · ${esc(p.exchange||"")} · ${esc(p.sector||"")}${p.industry?" · "+esc(p.industry):""}</p></div>
   <div class="price">${num(price)} ${esc(p.currency||"")}<small class="${sg(chg)}">${chg==null?"":(chg>0?"+":"")+num(chg)+" % heute"}</small></div></div>
   <p><button class="sbtn" id="sb">📱 Instagram-Story anzeigen</button> <button class="sbtn" id="wlb" data-wl="${esc(sym)}" data-n="${esc(p.companyName||sym)}">${wlHas(sym)?"★ In der Watchlist":"☆ Zur Watchlist"}</button></p>
   <div class="kpis">

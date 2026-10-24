@@ -191,6 +191,7 @@ article.wide>:not(.tool):not(.cards){max-width:760px}
 <body class="tools">
 <header id="hub-global-header"><div class="hub-nav-inner"><a class="hub-brand" href="../"><img class="hub-logo" src="../assets/logo.png" alt="" width="36" height="36"> <span class="hub-brand-name">Dividenden-Rechner <span>Aktien-Hub</span></span></a><nav class="hub-links" aria-label="Hauptmenü"><a href="../rechner/">Rechner</a><a href="../aktien/">Aktien</a><a href="../depot/">Depot</a><a href="../news/">News</a><a href="../screener/" aria-current="page">Screener</a><a href="../einfuehrung/">Einführung</a><a href="../grundlagen/">Grundlagen</a><a href="../fortgeschrittene/">Fortgeschrittene</a></nav></div></header>
 <script src="../assets/navigation.js"></script>
+<script src="../assets/logos.js"></script>
 <main class="wrap"><article class="wide">
 <nav class="crumbs" aria-label="Brotkrumen"><a href="../">Start</a> › <span aria-current="page">Screener</span></nav>
 <h1>Aktien-Screener</h1>
@@ -590,7 +591,7 @@ article.wide>:not(.tool):not(.cards){max-width:760px}
   /* Logo und Name führen zur Aktienseite (../aktien/?s=SYMBOL) */
   function slink(sym, inner, logo) {
     sym = String(sym || ""); if (!/^[A-Za-z0-9.\-^]{1,12}$/.test(sym)) return inner;
-    return '<a class="slk" href="../aktien/?s=' + encodeURIComponent(sym) + '" title="' + esc(sym) + ' öffnen">' + (logo ? '<img class="lg" src="https://images.financialmodelingprep.com/symbol/' + encodeURIComponent(sym) + '.png" alt="" loading="lazy" onerror="this.style.visibility=\'hidden\'">' : "") + inner + "</a>";
+    return '<a class="slk" href="../aktien/?s=' + encodeURIComponent(sym) + '" title="' + esc(sym) + ' öffnen">' + (logo ? (window.HubLogos ? HubLogos.img("lg", sym, "", sym) : "") : "") + inner + "</a>";
   }
   function colsFor() {
     var cols = [{ k: "symbol", l: "Symbol", get: function (D) { return D.profile.symbol; }, f: function (D) { return slink(D.profile.symbol, "<b>" + esc(D.profile.symbol) + "</b>", true); }, t: 1 },

@@ -168,16 +168,17 @@ table.dt{border-collapse:collapse;width:100%;font-size:.9rem;min-width:620px}
 .dnote{font-size:.85rem;color:#6b7280;margin:.5rem 0}
 .dempty{padding:1.5rem;border:1px dashed var(--border);border-radius:10px;color:#4b5563}
 .banner{background:#fffbeb;border-left:3px solid #f59e0b;padding:.6rem .9rem;margin:0 0 1rem;border-radius:4px;font-size:.92rem}
-.nc{display:flex;align-items:center;gap:10px}
+.nc{display:flex;align-items:center;gap:10px;min-width:0}.nc small{display:block;color:#6b7280;font-size:.75rem;font-weight:400}
 .lg{width:28px;height:28px;border-radius:6px;object-fit:contain;background:#fff;border:1px solid #e5e7eb;flex:none}
 .lgph{display:inline-flex;align-items:center;justify-content:center;background:#f0fdf4;color:#047857;font-weight:700;font-size:.8rem}
 .tool a.slk,.dt a.slk{color:inherit;text-decoration:none}.dt a.slk:hover b{color:var(--primary);text-decoration:underline}
 .calm{border:1px solid #e5e7eb;border-radius:10px;margin:0 0 12px;overflow:hidden}
 .calh{display:flex;justify-content:space-between;padding:.6rem .9rem;background:#f9fafb;border-bottom:1px solid #e5e7eb}.calh span{color:#047857;font-weight:700}
-.cale{display:grid;grid-template-columns:52px 1fr auto 96px;gap:10px;align-items:center;padding:.5rem .9rem;border-bottom:1px solid #f1f3f5}.cale:last-child{border-bottom:0}
+.cale{display:grid;grid-template-columns:54px minmax(0,1fr) 80px 90px 64px 90px 92px;gap:10px;align-items:center;padding:.5rem .9rem;border-bottom:1px solid #f1f3f5}.cale:last-child{border-bottom:0}
+.calhd{border:0;background:none;color:#6b7280;font-size:.78rem;font-weight:600;padding:.2rem .9rem}.calhd span:nth-child(n+3){text-align:right}.calc2,.calc3,.calc4{text-align:right;font-size:.9rem;color:#374151}
 .cald{color:#6b7280;font-size:.9rem}.cala{font-weight:600;text-align:right}
 .calb{font-size:.75rem;text-align:center;border-radius:999px;padding:.15rem .5rem;background:#f3f4f6;color:#4b5563}.calb.ok{background:#dcfce7;color:#065f46}
-@media(max-width:600px){.cale{grid-template-columns:44px 1fr auto}.calb{display:none}}
+@media(max-width:760px){.cale{grid-template-columns:46px minmax(0,1fr) 74px 84px}.calc3,.calc4,.calb,.calhd span:nth-child(5),.calhd span:nth-child(4),.calhd span:nth-child(7){display:none}.cale .cala{grid-column:auto}}
 #imports-list ul{margin:.3rem 0 0 1.1rem;font-size:.9rem}
 
 </style>
@@ -185,6 +186,7 @@ table.dt{border-collapse:collapse;width:100%;font-size:.9rem;min-width:620px}
 <body class="tools">
 <header id="hub-global-header"><div class="hub-nav-inner"><a class="hub-brand" href="../"><img class="hub-logo" src="../assets/logo.png" alt="" width="36" height="36"> <span class="hub-brand-name">Dividenden-Rechner <span>Aktien-Hub</span></span></a><nav class="hub-links" aria-label="Hauptmenü"><a href="../rechner/">Rechner</a><a href="../aktien/">Aktien</a><a href="../depot/" aria-current="page">Depot</a><a href="../news/">News</a><a href="../screener/">Screener</a><a href="../einfuehrung/">Einführung</a><a href="../grundlagen/">Grundlagen</a><a href="../fortgeschrittene/">Fortgeschrittene</a></nav></div></header>
 <script src="../assets/navigation.js"></script>
+<script src="../assets/logos.js"></script>
 <main class="wrap"><article class="wide">
 <nav class="crumbs" aria-label="Brotkrumen"><a href="../">Start</a> › <span aria-current="page">Depot</span></nav>
 <h1>Depot-Tracker</h1>
@@ -231,21 +233,24 @@ table.dt{border-collapse:collapse;width:100%;font-size:.9rem;min-width:620px}
 </div>
 <div class="tw" id="in-table"></div>
 <p id="in-note" class="dnote"></p>
+<div id="in-status" class="dmsg" role="status"></div>
 </div></section>
 
 <section id="p-dividenden" hidden><div class="dempty">Noch kein Depot geladen. Wechsle zu <a href="#import">Import</a> und lade dein Depot oder das Beispieldepot.</div><div class="dbody">
 <div id="dv-kpis" class="kpis"></div>
-<h3>Dividenden pro Jahr</h3><div class="cbox sm"><canvas id="dv-year"></canvas></div>
+<h3>Dividenden pro Jahr, aufgebaut aus den einzelnen Aktien</h3><div class="cbox"><canvas id="dv-year"></canvas></div>
 <h3>Monat für Monat</h3>
 <div class="toolbar"><div class="form-group"><label for="dv-month-year">Jahr</label><select id="dv-month-year"></select></div></div>
-<div class="cbox sm"><canvas id="dv-month"></canvas></div>
-<h3>Monate im Jahresvergleich</h3><div class="tw" id="dv-matrix"></div>
+<div class="cbox"><canvas id="dv-month"></canvas></div>
+<h3>Alle Jahre im Vergleich: jeder Monat, Jahr für Jahr nebeneinander</h3><div class="cbox"><canvas id="dv-cmp"></canvas></div>
+<h3>Zahlen im Überblick</h3><div class="tw" id="dv-matrix"></div>
 <h3>Wer zahlt am meisten?</h3><div class="tw" id="dv-top"></div>
 <p class="dnote">Beträge so, wie sie im Export stehen (meist netto nach Steuer).</p>
 </div></section>
 
 <section id="p-kalender" hidden><div class="dempty">Noch kein Depot geladen. Wechsle zu <a href="#import">Import</a> und lade dein Depot oder das Beispieldepot.</div><div class="dbody">
-<div class="toolbar"><div class="form-group"><label for="ka-tax">Steuer auf angekündigte Dividenden (%)</label><input id="ka-tax" inputmode="decimal" value="26,375"></div></div>
+<div class="toolbar"><div class="form-group"><label for="ka-mode">Termine nach</label><select id="ka-mode"><option value="pay">Zahltag</option><option value="ex">Ex-Tag</option></select></div><div class="form-group"><label for="ka-tax">Steuer auf angekündigte Dividenden (%)</label><input id="ka-tax" inputmode="decimal" value="26,375"></div></div>
+<div id="ka-status" class="dmsg" role="status"></div>
 <div id="ka-kpis" class="kpis"></div>
 <h3>Die nächsten 12 Monate</h3><div class="cbox sm"><canvas id="ka-chart"></canvas></div>
 <div id="ka-list"></div>
@@ -739,13 +744,17 @@ table.dt{border-collapse:collapse;width:100%;font-size:.9rem;min-width:620px}
     var P = C.positions(S.tx); Object.keys(P).forEach(function (k) { t.base += P[k].cost + P[k].soldCost; });
     t.total = t.unreal + t.realized + t.divs; return t;
   }
-  /* Logo + Name als Link zur Aktienseite (../aktien/?s=KÜRZEL). Ohne bekanntes Kürzel: Buchstaben-Platzhalter ohne Link. */
-  function symOf(k) { var m = S.meta[k] || {}; var v = m.sym || (!C.isIsin(k) ? k : ""); return /^[A-Za-z0-9.\-^]{1,12}$/.test(v) ? v.toUpperCase() : ""; }
+  /* Logo + Name als Link zur Aktienseite (../aktien/?s=KÜRZEL). Kürzel aus FMP-Daten, sonst aus der eingebauten Namensliste. */
+  var HL = window.HubLogos || { byName: function () { return null; }, dom: function () { return ""; }, img: function (c, s2, d, n) { return '<span class="' + c + ' lgph">' + esc(String(n || s2 || "?").charAt(0).toUpperCase()) + "</span>"; } };
+  function symOf(k, name) {
+    var m = S.meta[k] || {}, v = m.sym || (!C.isIsin(k) ? k : "");
+    if (!v) { var b = HL.byName(name || m.name); v = b ? b.sym : ""; }
+    return /^[A-Za-z0-9.\-^]{1,12}$/.test(v) ? v.toUpperCase() : "";
+  }
+  function domOf(k, name) { var m = S.meta[k] || {}, b = HL.byName(name || m.name); return m.dom || (b && b.dom) || ""; }
   function nameCell(k, name, sub) {
-    var sy = symOf(k), ph = '<span class="lg lgph">' + esc((name || k).charAt(0).toUpperCase()) + "</span>";
-    var im = sy ? '<img class="lg" src="https://images.financialmodelingprep.com/symbol/' + encodeURIComponent(sy) + '.png" alt="" loading="lazy" onerror="this.outerHTML=this.dataset.ph" data-ph="' + esc(ph) + '">' : ph;
-    var txt = "<b>" + esc(name) + "</b>" + (sub ? "<small>" + sub + "</small>" : "");
-    var href = sy ? "../aktien/?s=" + encodeURIComponent(sy) : "";
+    var sy = symOf(k, name), im = HL.img("lg", sy, domOf(k, name), name || k);
+    var txt = "<b>" + esc(name) + "</b>" + (sub ? "<small>" + sub + "</small>" : ""), href = sy ? "../aktien/?s=" + encodeURIComponent(sy) : "";
     return '<div class="nc">' + (sy ? '<a class="slk" href="' + href + '" title="Aktie ' + esc(sy) + ' öffnen">' + im + "</a>" : im) + "<div>" + (sy ? '<a class="slk" href="' + href + '">' + txt + "</a>" : txt) + "</div></div>";
   }
   var kpi = function (label, val, cls) { return '<div class="kpi ' + (cls || "") + '"><b>' + val + "</b><span>" + label + "</span></div>"; };
@@ -900,24 +909,26 @@ table.dt{border-collapse:collapse;width:100%;font-size:.9rem;min-width:620px}
     if (RUN.busy || S.demo) return; if (!KEY && !askKey()) return;
     RUN.busy = true; RUN.abort = false; RUN.calls = 0; FX = {}; RUN.max = 250; $("btn-refresh").disabled = true; $("btn-stop").hidden = false;
     var keys = activeKeys(), done = 0, fail = [], noSym = [];
-    var st = function (t) { setMsg("d-status", t); };
+    var st = function (t) { ["d-status", "in-status", "ka-status"].forEach(function (id) { setMsg(id, t); }); };
     try {
       await pool(keys, async function (k) {
         var m = meta(k);
         try {
           if (!m.sym) {
             if (C.isIsin(k)) {
-              var r = await fmp("search-isin", { isin: k }), list = Array.isArray(r) ? r : [];
+              var r = []; try { r = await fmp("search-isin", { isin: k }); } catch (e0) { if (e0.limit) throw e0; }
+              var list = Array.isArray(r) ? r : [];
               var pick = list.filter(function (x) { return /NASDAQ|NYSE|AMEX/i.test(x.exchange || x.exchangeFullName || ""); })[0] || list[0];
-              if (!pick) { noSym.push(m.name || k); return; }
-              m.sym = pick.symbol; m.cur = pick.currency || m.cur;
+              if (pick) { m.sym = pick.symbol; m.cur = pick.currency || m.cur; }
             } else m.sym = k;
+            if (!m.sym) { var bn = HL.byName(m.name || k); if (bn && bn.sym) m.sym = bn.sym; }
+            if (!m.sym) { noSym.push(m.name || k); return; }
           }
           var pf = one(await fmp("profile", { symbol: m.sym }));
           if (pf) {
             var cu = pf.currency || m.cur || "USD", fx = await fxRate(cu), px = Number(pf.price);
             if (fx && px > 0) { m.price = (cu === "GBp" || cu === "GBX" ? px : px) / fx; m.cur = cu; m.priceTs = Date.now(); }
-            m.sector = pf.sector || m.sector || ""; m.country = pf.country || m.country || ""; m.isEtf = !!(pf.isEtf || pf.isFund); m.beta = Number(pf.beta) || null;
+            if (pf.website) m.dom = String(pf.website).replace(/^https?:\/\/(www\.)?/, "").split("/")[0]; m.sector = pf.sector || m.sector || ""; m.country = pf.country || m.country || ""; m.isEtf = !!(pf.isEtf || pf.isFund); m.beta = Number(pf.beta) || null;
             if (!m.name || m.name === k) m.name = pf.companyName || m.name;
           } else noSym.push(m.name || k);
           if (!m.isEtf || true) {
@@ -959,64 +970,86 @@ table.dt{border-collapse:collapse;width:100%;font-size:.9rem;min-width:620px}
       return "<tr" + (x.closed ? ' class="closed"' : "") + '><td class="l">' + nameCell(x.key, x.name, esc(x.key) + (x.closed ? " · verkauft" : "") + (x.oversold ? " · Verkäufe übersteigen Käufe (Import unvollständig?)" : "") + (x.note ? " · " + esc(x.note) : "")) + '</td><td><select class="tsel" data-type="' + esc(x.key) + '">' + opts + "</select></td><td>" + nf(x.shares, x.shares < 10 ? 4 : 2) + "</td><td>" + eur(x.avg, 2) + '</td><td><button type="button" class="link" data-price="' + esc(x.key) + '" title="Kursquelle: ' + esc(x.src) + '. Klicken zum Ändern.">' + eur(x.price, 2) + (x.src === "FMP" || x.src === "manuell" ? "" : "*") + "</button></td><td>" + eur(x.value) + "</td><td>" + (x.closed ? "–" : pct0(tv > 0 ? x.value / tv : 0)) + '</td><td class="' + sg(gv) + '">' + (unit === "eur" ? (gv == null ? "–" : (gv > 0 ? "+" : "") + eur(gv)) : pct(gv)) + "</td><td>" + eur(x.divs) + "</td></tr>";
     }).join("") + "</tbody></table>";
     var est = act.filter(function (x) { return x.src !== "FMP" && x.src !== "manuell"; }).length;
-    $("in-note").textContent = est ? "* " + est + " Kurs(e) stammen vom letzten Handel im Export, nicht live. Über „Import → Kurse aktualisieren“ lädt FMP aktuelle Kurse (im Gratis-Tarif überwiegend US-Aktien), oder du klickst auf den Kurs und trägst ihn selbst ein." : "Kurse: FMP bzw. von dir eingetragen. Gewinne ohne Gewähr, Steuern sind nur dort berücksichtigt, wo der Export sie enthält.";
+    $("in-note").innerHTML = est ? "* " + est + " Kurs(e) stammen vom letzten Handel im Export, nicht live. " + (S.demo ? "" : '<button type="button" class="link" data-act="refresh">Jetzt Kurse, Kürzel und Dividendendaten von FMP laden</button> (im Gratis-Tarif überwiegend US-Aktien), oder klicke auf einen Kurs und trage ihn selbst ein.') : "Kurse: FMP bzw. von dir eingetragen. Gewinne ohne Gewähr, Steuern sind nur dort berücksichtigt, wo der Export sie enthält.";
   }
 
   /* ---------- Dividenden ---------- */
+  var MN = ["Jan", "Feb", "Mär", "Apr", "Mai", "Jun", "Jul", "Aug", "Sep", "Okt", "Nov", "Dez"];
+  var YCOL = ["#93c5fd", "#3b82f6", "#10b981", "#f59e0b", "#ef4444", "#8b5cf6", "#14b8a6", "#ec4899", "#64748b", "#84cc16"];
+  var SCOL = ["#10b981", "#2563eb", "#f59e0b", "#8b5cf6", "#ef4444", "#14b8a6", "#ec4899", "#0ea5e9", "#84cc16", "#f97316", "#a855f7", "#22c55e", "#eab308", "#6366f1", "#06b6d4", "#d946ef", "#65a30d", "#dc2626", "#0d9488", "#7c3aed"];
+  function payRows() { return S.tx.filter(function (t) { return t.type === "div" && t.amount > 0; }); }
+  function stockColors(rowsP) {
+    var tot = {}; rowsP.forEach(function (t) { tot[t.key] = (tot[t.key] || 0) + t.amount; });
+    var ks = Object.keys(tot).sort(function (a, b) { return tot[b] - tot[a]; }), col = {};
+    ks.forEach(function (k, i) { col[k] = i < SCOL.length - 1 ? SCOL[i] : "#9ca3af"; });
+    return { keys: ks, col: col };
+  }
+  function stackChart(id, labels, bucket, rowsP, sc, names) {
+    var ds = sc.keys.map(function (k) { return { label: names[k] || k, key: k, data: labels.map(function (l, i) { return Math.round((bucket(rowsP, k, i) || 0) * 100) / 100; }), backgroundColor: sc.col[k], borderColor: "#fff", borderWidth: 1, stack: "s" }; }).filter(function (d) { return d.data.some(function (v) { return v > 0; }); });
+    chart(id, { type: "bar", data: { labels: labels, datasets: ds }, options: { interaction: { mode: "nearest", intersect: true }, plugins: { legend: { display: ds.length <= 20, position: "bottom", labels: { boxWidth: 12, font: { size: 11 } } }, tooltip: { callbacks: { label: function (c) { return c.dataset.label + ": " + eur(c.parsed.y, 2); }, footer: function (items) { var i = items[0].dataIndex, t = 0; ds.forEach(function (d) { t += d.data[i]; }); return "Summe: " + eur(t, 2); } } } }, scales: { x: { stacked: true }, y: { stacked: true, ticks: { callback: function (v) { return eur(v); } } } } } });
+  }
   function renderDiv() {
     var d = C.divStats(S.tx, today), t = totals(), years = Object.keys(d.byYear).sort(), ym = $("dv-month-year");
     var yoc = t.cost > 0 ? d.last12 / t.cost : null, yld = t.value > 0 ? d.last12 / t.value : null;
     $("dv-kpis").innerHTML = kpi("Dividenden gesamt", eur(d.total)) + kpi("Letzte 12 Monate", eur(d.last12)) + kpi("Ø pro Monat (12 M.)", eur(d.perMonth12, 0), "blue") + kpi("Rendite auf Depotwert", pct0(yld)) + kpi("Rendite auf Einstand", pct0(yoc));
-    if (!years.length) { $("dv-matrix").innerHTML = "<p>Im Import sind keine Dividenden enthalten.</p>"; $("dv-top").innerHTML = ""; if (charts["dv-year"]) { charts["dv-year"].destroy(); delete charts["dv-year"]; } if (charts["dv-month"]) { charts["dv-month"].destroy(); delete charts["dv-month"]; } return; }
-    chart("dv-year", { type: "bar", data: { labels: years, datasets: [{ label: "Dividenden", data: years.map(function (y) { return Math.round(d.byYear[y] * 100) / 100; }), backgroundColor: "#10b981", borderRadius: 5 }] }, options: { plugins: { legend: { display: false }, tooltip: { callbacks: { label: function (c) { return eur(c.parsed.y, 2); } } } }, scales: { y: { ticks: { callback: function (v) { return eur(v); } } } } } });
+    var ids = ["dv-year", "dv-month", "dv-cmp"];
+    if (!years.length) { $("dv-matrix").innerHTML = "<p>Im Import sind keine Dividenden enthalten.</p>"; $("dv-top").innerHTML = ""; ids.forEach(function (i) { if (charts[i]) { charts[i].destroy(); delete charts[i]; } }); return; }
+    var names = {}; rows().forEach(function (r) { names[r.key] = r.name; });
+    var P = payRows(), sc = stockColors(P);
+    stackChart("dv-year", years, function (rs, k, i) { var s2 = 0; rs.forEach(function (x) { if (x.key === k && x.date.slice(0, 4) === years[i]) s2 += x.amount; }); return s2; }, P, sc, names);
     var sel = ym.value || years[years.length - 1]; ym.innerHTML = years.map(function (y) { return "<option" + (y === sel ? " selected" : "") + ">" + y + "</option>"; }).join(""); sel = ym.value;
-    var MN = ["Jan", "Feb", "Mär", "Apr", "Mai", "Jun", "Jul", "Aug", "Sep", "Okt", "Nov", "Dez"];
-    chart("dv-month", { type: "bar", data: { labels: MN, datasets: [{ label: "Dividenden " + sel, data: d.byMonth[sel].map(function (v) { return Math.round(v * 100) / 100; }), backgroundColor: "#2563eb", borderRadius: 5 }] }, options: { plugins: { legend: { display: false }, tooltip: { callbacks: { label: function (c) { return eur(c.parsed.y, 2); } } } }, scales: { y: { ticks: { callback: function (v) { return eur(v); } } } } } });
+    stackChart("dv-month", MN, function (rs, k, i) { var s2 = 0; rs.forEach(function (x) { if (x.key === k && x.date.slice(0, 4) === sel && +x.date.slice(5, 7) === i + 1) s2 += x.amount; }); return s2; }, P, sc, names);
+    chart("dv-cmp", { type: "bar", data: { labels: MN, datasets: years.map(function (y, i) { return { label: y, data: d.byMonth[y].map(function (v) { return Math.round(v * 100) / 100; }), backgroundColor: YCOL[i % YCOL.length], borderRadius: 3 }; }) }, options: { plugins: { legend: { position: "bottom", labels: { boxWidth: 12 } }, tooltip: { callbacks: { label: function (c) { return c.dataset.label + ": " + eur(c.parsed.y, 2); } } } }, scales: { y: { beginAtZero: true, ticks: { callback: function (v) { return eur(v); } } } } } });
     var mx = 0; years.forEach(function (y) { d.byMonth[y].forEach(function (v) { if (v > mx) mx = v; }); });
     $("dv-matrix").innerHTML = '<table class="dt mx"><thead><tr><th>Monat</th>' + years.map(function (y) { return "<th>" + y + "</th>"; }).join("") + "</tr></thead><tbody>" + MN.map(function (m, i) { return "<tr><td class=\"l\"><b>" + m + "</b></td>" + years.map(function (y) { var v = d.byMonth[y][i]; return '<td style="background:rgba(16,185,129,' + (v > 0 && mx ? 0.08 + 0.5 * v / mx : 0) + ')">' + (v > 0 ? eur(v) : "") + "</td>"; }).join("") + "</tr>"; }).join("") + "<tr class=\"sum\"><td class=\"l\"><b>Summe</b></td>" + years.map(function (y) { return "<td><b>" + eur(d.byYear[y]) + "</b></td>"; }).join("") + "</tr></tbody></table>";
-    var names = {}; rows().forEach(function (r) { names[r.key] = r.name; });
     var top = Object.keys(d.keys12).sort(function (a, b) { return d.keys12[b] - d.keys12[a]; }).slice(0, 10);
     $("dv-top").innerHTML = '<table class="dt"><thead><tr><th>Top-Zahler (12 Monate)</th><th>Dividenden</th><th>Anteil</th></tr></thead><tbody>' + top.map(function (k) { return '<tr><td class="l">' + nameCell(k, names[k] || k) + "</td><td>" + eur(d.keys12[k], 2) + "</td><td>" + pct0(d.keys12[k] / d.last12) + "</td></tr>"; }).join("") + "</tbody></table>";
   }
 
-
   /* ---------- Dividendenkalender ---------- */
   var MNL = ["Januar", "Februar", "März", "April", "Mai", "Juni", "Juli", "August", "September", "Oktober", "November", "Dezember"];
   function calEvents(taxRate) {
-    var ev = [], R = rows().filter(function (r) { return !r.closed && r.shares > 0; }), cut = C.addDays(today, -365), end = C.addDays(today, 365);
-    var P = {}; R.forEach(function (r) { P[r.key] = r; });
+    var ev = [], R = rows().filter(function (r) { return !r.closed && r.shares > 0; }), cut = C.addDays(today, -365), end = C.addDays(today, 365), d12 = C.divStats(S.tx, today).keys12;
     R.forEach(function (r) {
-      var m = S.meta[r.key] || {}, decl = (m.divUp || []).filter(function (x) { return (x.p || x.d) >= today && (x.p || x.d) <= end; });
-      decl.forEach(function (x) { ev.push({ key: r.key, name: r.name, date: x.p || x.d, ex: x.d, pay: !!x.p, amount: r.shares * x.a * (1 - taxRate), src: "FMP" }); });
+      var m = S.meta[r.key] || {}, decl = (m.divUp || []).filter(function (x) { var q = x.p || x.d; return q >= C.addDays(today, -1) && q <= end || (x.d >= today && x.d <= end); });
+      var cur = m.dps > 0 ? m.dps : (d12[r.key] && r.shares ? d12[r.key] / r.shares : null);
+      decl.forEach(function (x) { ev.push({ key: r.key, name: r.name, pay: x.p || "", ex: x.d, dps: x.a, shares: r.shares, cur: cur, amount: r.shares * x.a * (1 - taxRate), src: "FMP" }); });
       var g = m.g == null ? 0 : Math.max(-0.05, Math.min(0.15, m.g));
       S.tx.forEach(function (t) {
         if (t.type !== "div" || t.key !== r.key || t.date < cut || t.date > today || !(t.amount > 0)) return;
         var d = C.addDays(t.date, 365), f = t.shares > 0 ? r.shares / t.shares : 1;
-        if (decl.some(function (x) { return Math.abs(C.dayN(x.p || x.d) - C.dayN(d)) < 25; })) return;
         if (d < today) return;
-        ev.push({ key: r.key, name: r.name, date: d, amount: t.amount * f * (1 + g), src: "Schätzung" });
+        if (decl.some(function (x) { return Math.abs(C.dayN(x.p || x.d) - C.dayN(d)) < 25; })) return;
+        var amt = t.amount * f * (1 + g);
+        ev.push({ key: r.key, name: r.name, pay: d, ex: "", dps: r.shares > 0 ? amt / r.shares : null, shares: r.shares, cur: cur, amount: amt, src: "Schätzung" });
       });
     });
-    ev.sort(function (a, b) { return a.date < b.date ? -1 : a.date > b.date ? 1 : 0; });
     return ev;
   }
   function renderCal() {
-    var tx = Math.max(0, Math.min(60, C.num($("ka-tax").value, ",") == null ? 26.375 : C.num($("ka-tax").value, ","))) / 100;
-    var ev = calEvents(tx), by = {}, tot = 0, in30 = 0, lim30 = C.addDays(today, 30);
+    var tx = Math.max(0, Math.min(60, C.num($("ka-tax").value, ",") == null ? 26.375 : C.num($("ka-tax").value, ","))) / 100, mode = $("ka-mode").value;
+    var ev = calEvents(tx);
+    ev.forEach(function (e) { e.date = mode === "ex" ? (e.ex || e.pay) : (e.pay || e.ex); e.approx = mode === "ex" ? !e.ex : !e.pay || e.src === "Schätzung"; });
+    ev.sort(function (a, b) { return a.date < b.date ? -1 : a.date > b.date ? 1 : 0; });
+    var by = {}, tot = 0, in30 = 0, lim30 = C.addDays(today, 30);
     ev.forEach(function (e) { var k = e.date.slice(0, 7); (by[k] = by[k] || []).push(e); tot += e.amount; if (e.date <= lim30) in30 += e.amount; });
-    var next = ev[0], nFmp = ev.filter(function (e) { return e.src === "FMP"; }).length;
-    $("ka-kpis").innerHTML = kpi("Nächste Zahlung", next ? eur(next.amount, 2) + "<small> " + esc(next.name) + ", " + new Date(next.date).toLocaleDateString("de-DE") + "</small>" : "–") + kpi("In den nächsten 30 Tagen", eur(in30)) + kpi("In den nächsten 12 Monaten", eur(tot), "blue") + kpi("Davon von FMP bestätigt", nFmp + " von " + ev.length + " Zahlungen");
+    var next = ev.filter(function (e) { return e.date >= today; })[0], nFmp = ev.filter(function (e) { return e.src === "FMP"; }).length;
+    var fd = function (d) { return new Date(d + "T00:00:00").toLocaleDateString("de-DE"); };
+    $("ka-kpis").innerHTML = kpi((mode === "ex" ? "Nächster Ex-Tag" : "Nächste Zahlung"), next ? eur(next.amount, 2) + "<small> " + esc(next.name) + ", " + fd(next.date) + "</small>" : "–") + kpi("In den nächsten 30 Tagen", eur(in30)) + kpi("In den nächsten 12 Monaten", eur(tot), "blue") + kpi("Von FMP bestätigt", nFmp + " von " + ev.length + " Terminen");
     var keys = []; var d0 = new Date(today + "T00:00:00"); for (var i = 0; i < 13; i++) { var d = new Date(d0.getFullYear(), d0.getMonth() + i, 1); keys.push(d.getFullYear() + "-" + String(d.getMonth() + 1).padStart(2, "0")); }
-    chart("ka-chart", { type: "bar", data: { labels: keys.map(function (k) { return MNL[+k.slice(5) - 1].slice(0, 3) + " " + k.slice(2, 4); }), datasets: [{ label: "Dividenden (netto)", data: keys.map(function (k) { return Math.round((by[k] || []).reduce(function (s, e) { return s + e.amount; }, 0) * 100) / 100; }), backgroundColor: "#10b981", borderRadius: 5 }] }, options: { plugins: { legend: { display: false }, tooltip: { callbacks: { label: function (c) { return eur(c.parsed.y, 2); } } } }, scales: { y: { beginAtZero: true, ticks: { callback: function (v) { return eur(v); } } } } } });
-    if (!ev.length) { $("ka-list").innerHTML = '<p class="dnote">Noch keine Zahlungen absehbar. Der Kalender nutzt deine Dividenden der letzten 12 Monate aus dem Import und, nach „Import → Kurse aktualisieren“, angekündigte Termine von FMP.</p>'; $("ka-note").textContent = ""; return; }
-    $("ka-list").innerHTML = Object.keys(by).sort().map(function (k) {
-      var sum = by[k].reduce(function (s, e) { return s + e.amount; }, 0);
+    var sc = stockColors(ev.map(function (e) { return { key: e.key, amount: e.amount }; })), names = {}; ev.forEach(function (e) { names[e.key] = e.name; });
+    stackChart("ka-chart", keys.map(function (k) { return MN[+k.slice(5) - 1] + " " + k.slice(2, 4); }), function (rs, k, i) { var s2 = 0; (by[keys[i]] || []).forEach(function (e) { if (e.key === k) s2 += e.amount; }); return s2; }, ev, sc, names);
+    if (!ev.length) { $("ka-list").innerHTML = '<p class="dnote">Noch keine Zahlungen absehbar. Der Kalender nutzt deine Dividenden der letzten 12 Monate aus dem Import und, nach dem Laden der FMP-Daten, angekündigte Termine.</p>'; $("ka-note").textContent = ""; return; }
+    var hd = '<div class="cale calhd"><span>' + (mode === "ex" ? "Ex-Tag" : "Zahltag") + "</span><span>Firma</span><span>je Aktie</span><span>aktuell p. a.</span><span>Stück</span><span>Betrag</span><span></span></div>";
+    $("ka-list").innerHTML = hd + Object.keys(by).sort().map(function (k) {
+      var sum = by[k].reduce(function (s2, e) { return s2 + e.amount; }, 0);
       return '<div class="calm"><div class="calh"><b>' + MNL[+k.slice(5) - 1] + " " + k.slice(0, 4) + "</b><span>" + eur(sum, 2) + "</span></div>" + by[k].map(function (e) {
-        var dt = new Date(e.date + "T00:00:00").toLocaleDateString("de-DE", { day: "2-digit", month: "2-digit" });
-        return '<div class="cale"><span class="cald">' + dt + (e.src === "Schätzung" ? "*" : "") + "</span>" + nameCell(e.key, e.name, e.ex ? "Ex-Tag " + new Date(e.ex + "T00:00:00").toLocaleDateString("de-DE") : "") + '<span class="cala">' + eur(e.amount, 2) + '</span><span class="calb ' + (e.src === "FMP" ? "ok" : "") + '">' + (e.src === "FMP" ? "angekündigt" : "geschätzt") + "</span></div>";
+        var dt = new Date(e.date + "T00:00:00").toLocaleDateString("de-DE", { day: "2-digit", month: "2-digit" }), other = mode === "ex" ? (e.pay ? "Zahltag " + fd(e.pay) : "Zahltag unbekannt") : (e.ex ? "Ex-Tag " + fd(e.ex) : "Ex-Tag unbekannt");
+        var dp = function (v) { return v == null ? "–" : eur(v, v < 1 ? 3 : 2); };
+        return '<div class="cale"><span class="cald">' + dt + (e.approx ? "*" : "") + "</span>" + nameCell(e.key, e.name, other) + '<span class="calc2">' + dp(e.dps) + '</span><span class="calc3">' + dp(e.cur) + '</span><span class="calc4">' + nf(e.shares, e.shares < 10 ? 2 : 0) + '</span><span class="cala">' + eur(e.amount, 2) + '</span><span class="calb ' + (e.src === "FMP" ? "ok" : "") + '">' + (e.src === "FMP" ? "angekündigt" : "geschätzt") + "</span></div>";
       }).join("") + "</div>";
     }).join("");
-    $("ka-note").textContent = "Angekündigte Termine kommen von FMP (Brutto je Aktie mal deine Stückzahl, abzüglich der oben eingestellten Steuer). Geschätzt (*) heißt: gleiche Zahlung wie vor einem Jahr aus deinem Import, angepasst an heutige Stückzahl und Wachstum. Zahlungstermine können abweichen; keine Gewähr.";
+    $("ka-note").textContent = "Ex-Tag = Stichtag, an dem die Aktie ohne Dividende gehandelt wird; Zahltag = Auszahlung. Angekündigte Termine kommen von FMP (Dividende je Aktie brutto, Betrag abzüglich der oben eingestellten Steuer). Geschätzt heißt: gleiche Zahlung wie vor einem Jahr aus deinem Import (netto, je Aktie umgerechnet), angepasst an heutige Stückzahl und Wachstum; * = Datum geschätzt bzw. nicht bekannt. „aktuell p. a.“ = Dividende je Aktie der letzten 12 Monate. Termine können abweichen; keine Gewähr.";
   }
 
   /* ---------- Forecast ---------- */
@@ -1158,12 +1191,13 @@ table.dt{border-collapse:collapse;width:100%;font-size:.9rem;min-width:620px}
     $("restore-file").onchange = function (e) { var f = e.target.files[0]; if (!f) return; var rd = new FileReader(); rd.onload = function () { try { var o = JSON.parse(rd.result); if (!Array.isArray(o.tx)) throw 0; S = Object.assign({ tx: [], meta: {}, imports: [], hist: {}, demo: false }, o); save(); invalidate(); setMsg("imp-msg", "Backup geladen: " + S.tx.length + " Transaktionen.", "ok"); renderImport(); } catch (x) { setMsg("imp-msg", "Das ist keine gültige Backup-Datei.", "err"); } }; rd.readAsText(f); e.target.value = ""; };
     document.addEventListener("click", function (e) {
       var u = e.target.closest("[data-undo]"); if (u) { var im = S.imports[+u.dataset.undo]; if (im) { var ids = {}; (im.ids || []).forEach(function (i) { ids[i] = 1; }); S.tx = S.tx.filter(function (t) { return !ids[t.id]; }); S.imports.splice(+u.dataset.undo, 1); if (im.label.indexOf("Beispiel") === 0) S.demo = false; save(); invalidate(); renderImport(); setMsg("imp-msg", "Import rückgängig gemacht.", "ok"); } return; }
+      if (e.target.closest("[data-act=refresh]")) { refresh(); return; }
       var s = e.target.closest("[data-sort]"); if (s) { var k = s.dataset.sort; if (sortK === k) sortD = -sortD; else { sortK = k; sortD = k === "name" || k === "type" ? 1 : -1; } renderInsight(); return; }
       var p = e.target.closest("[data-price]"); if (p) { var key = p.dataset.price, m = meta(key), v = prompt("Aktueller Kurs in Euro (leer = automatisch):", m.priceManual || ""); if (v !== null) { var n = C.num(v, ","); m.priceManual = n > 0 ? n : null; save(); invalidate(); renderInsight(); } return; }
     });
     document.addEventListener("change", function (e) { var t = e.target.closest("[data-type]"); if (t) { meta(t.dataset.type).type = t.value; save(); invalidate(); renderInsight(); } });
     ["in-group", "in-mode", "in-unit", "in-closed"].forEach(function (id) { $(id).onchange = renderInsight; });
-    $("in-filter").oninput = renderInsight; $("dv-month-year").onchange = renderDiv; $("ka-tax").oninput = function () { renderCal(); };
+    $("in-filter").oninput = renderInsight; $("dv-month-year").onchange = renderDiv; $("ka-tax").oninput = function () { renderCal(); }; $("ka-mode").onchange = renderCal;
     var dbt; ["fc-years", "fc-base", "fc-gmode", "fc-gfix", "fc-gdef", "fc-pg", "fc-reinv", "fc-save", "fc-tax"].forEach(function (id) { $(id).oninput = $(id).onchange = function () { clearTimeout(dbt); dbt = setTimeout(renderForecast, 120); }; });
     window.addEventListener("hashchange", function () { show(location.hash.slice(1)); });
     show(location.hash.slice(1) || (S.tx.length ? "insight" : "import"));
