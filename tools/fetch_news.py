@@ -57,12 +57,65 @@ def from_fmp(sym, key):
     for x in json.loads(get(u)):
         out.append({"title": (x.get("title") or "").strip(), "link": x.get("url") or "", "date": dt((x.get("publishedDate") or "").replace(" ", "T")), "text": text(x.get("text") or "")})
     return out
+SEC_UA = os.environ.get("SEC_USER_AGENT") or "Dividenden-Rechner aktien-hub GitHub-Actions-Bot"
+ITEMS = {"1.01": "Wesentlicher Vertrag", "1.02": "Vertrag beendet", "2.01": "Übernahme/Verkauf abgeschlossen", "2.02": "Quartalszahlen", "2.03": "Neue Schulden", "3.02": "Aktienausgabe", "5.02": "Führungswechsel", "5.07": "Hauptversammlung", "7.01": "Mitteilung (Reg FD)", "8.01": "Sonstige Ereignisse", "9.01": "Anlagen"}
+def sec_get(url):
+    import time; time.sleep(0.15)
+    r = urllib.request.Request(url, headers={"User-Agent": SEC_UA, "Accept-Encoding": "identity"})
+    with urllib.request.urlopen(r, timeout=25) as f: return f.read()
+def headline(txt, fallback):
+    skip = re.compile(r"^(exhibit|ex-|for immediate|news release|press release|contact|media|investor|\d{1,2}/\d{1,2}|[A-Z][a-z]{2,8} \d{1,2}, \d{4})", re.I)
+    for ln in txt.split("\n"):
+        ln = ln.strip()
+        if len(ln) >= 25 and not skip.match(ln): return ln[:220]
+    return fallback
+def from_sec(sym, cik, known, lim):
+    out = []
+    j = json.loads(sec_get("https://data.sec.gov/submissions/CIK%010d.json" % cik)); rec = j["filings"]["recent"]
+    for i, form in enumerate(rec["form"]):
+        if form not in ("8-K", "6-K"): continue
+        d = dt(rec["acceptanceDateTime"][i] or rec["filingDate"][i])
+        if not d or d < lim: continue
+        acc = rec["accessionNumber"][i]; nd = acc.replace("-", "")
+        base = "https://www.sec.gov/Archives/edgar/data/%d/%s/" % (cik, nd)
+        link = base + (rec["primaryDocument"][i] or "")
+        its = [x for x in (rec.get("items", [""] * len(rec["form"]))[i] or "").split(",") if x]
+        label = ", ".join(ITEMS.get(x, "Item " + x) for x in its if x != "9.01") or ("Meldung (" + form + ")")
+        if link in known: out.append(dict(known[link])); continue
+        title, body = label, ""
+        try:
+            idx = json.loads(sec_get(base + "index.json"))["directory"]["item"]
+            ex = [x["name"] for x in idx if re.search(r"ex[-_]?99", x["name"], re.I) and re.search(r"\.html?$", x["name"], re.I)]
+            if ex:
+                body = text(sec_get(base + ex[0]).decode("utf-8", "replace"))
+                title = headline(body, label)
+        except Exception as e:
+            pass
+        out.append({"title": title, "link": link, "date": d, "text": body[:6000], "kat": label, "form": form})
+    return out
 def main():
     cfg = json.load(open(os.path.join(ROOT, "data", "feeds.json"), encoding="utf-8"))["feeds"]
     key = os.environ.get("FMP_API_KEY", ""); now = datetime.now(timezone.utc); lim = now - timedelta(days=KEEP_DAYS)
     items, errors = [], []
+    try: prev = json.load(open(os.path.join(ROOT, "data", "news.json"), encoding="utf-8"))["items"]
+    except Exception: prev = []
+    known = {}
+    for p in prev:
+        if p.get("quelle") == "SEC": known[p["link"]] = {"title": p["title"], "link": p["link"], "date": p["date"], "text": p.get("text", ""), "kat": p.get("kat", ""), "form": p.get("form", "")}
+    CIK = {}
+    try:
+        for v in json.loads(sec_get("https://www.sec.gov/files/company_tickers.json")).values(): CIK[v["ticker"].upper()] = int(v["cik_str"])
+    except Exception as e:
+        errors.append({"sym": "SEC", "fehler": "Tickerliste: " + str(e)[:140]})
     for f in cfg:
         sym, url = f["sym"], (f.get("url") or "").strip()
+        if f.get("edgar", True) and sym in CIK:
+            try:
+                for r in from_sec(sym, CIK[sym], known, lim):
+                    items.append({"sym": sym, "name": f["name"], "title": r["title"], "link": r["link"], "date": (r["date"] if isinstance(r["date"], str) else r["date"].isoformat()), "text": r.get("text", ""), "quelle": "SEC", "kat": r.get("kat", ""), "form": r.get("form", "")})
+            except Exception as e:
+                errors.append({"sym": sym, "fehler": "SEC: " + str(e)[:140]})
+            if not url and not key: continue
         try:
             if url: rows, src = parse(get(url)), "RSS"
             elif key: rows, src = from_fmp(sym, key), "FMP"
