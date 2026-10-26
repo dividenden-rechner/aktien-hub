@@ -910,10 +910,10 @@ function story(S){
   const gb=(g.strongBuy||0)+(g.buy||0),gh=g.hold||0,gs=(g.sell||0)+(g.strongSell||0),tot=gb+gh+gs;
   const donut=()=>{
     const items=[["Kaufen",gb,GD],["Halten",gh,"#eebb44"],["Verkaufen",gs,"#c0392b"]];
-    const cx=50,cy=40,r=31,lx=176,rows=[14,40,66],rad=a=>a*Math.PI/180,P=(a,d)=>[cx+d*Math.cos(rad(a)),cy+d*Math.sin(rad(a))];
+    const cx=66,cy=60,r=46,lx=180,rows=[24,60,96],rad=a=>a*Math.PI/180,P=(a,d)=>[cx+d*Math.cos(rad(a)),cy+d*Math.sin(rad(a))];
     const hs=(gh+gs)/tot*360;let a=-hs/2;const ang={};
     [1,2,0].forEach(i=>{const v=items[i][1]/tot*360;ang[i]=[a,a+v];a+=v});
-    let svg=`<svg viewBox="0 0 300 80" role="img" aria-label="Analysten: ${items.map(x=>x[0]+" "+Math.round(x[1]/tot*100)+" %").join(", ")}">`,lines="",labs="";
+    let svg=`<svg viewBox="0 0 300 120" role="img" aria-label="Analysten: ${items.map(x=>x[0]+" "+Math.round(x[1]/tot*100)+" %").join(", ")}">`,lines="",labs="";
     items.forEach((it,i)=>{
       const [a0,a1]=ang[i],v=a1-a0,pc=Math.round(it[1]/tot*100);
       if(v>0){
@@ -924,7 +924,7 @@ function story(S){
         const [sx,sy]=P(best,r+5),ex=lx-8;
         lines+=`<polyline points="${(sx+ox-cx).toFixed(1)},${(sy+oy-cy).toFixed(1)} ${ex-14},${rows[i]} ${ex},${rows[i]}" fill="none" stroke="${it[2]}" stroke-width="1.6"/><circle cx="${(sx+ox-cx).toFixed(1)}" cy="${(sy+oy-cy).toFixed(1)}" r="2.2" fill="${it[2]}"/>`;
       }
-      labs+=`<text x="${lx}" y="${rows[i]+5}" font-size="13" fill="#5d6b78">${it[0]}</text><text x="296" y="${rows[i]+7}" text-anchor="end" font-size="20" font-weight="700" style="fill:${it[2]}">${pc} %</text>`;
+      labs+=`<text x="${lx}" y="${rows[i]+5}" font-size="15" fill="#5d6b78">${it[0]}</text><text x="296" y="${rows[i]+8}" text-anchor="end" font-size="22" font-weight="700" style="fill:${it[2]}">${pc} %</text>`;
     });
     return svg+lines+labs+"</svg>";
   };
@@ -934,9 +934,8 @@ function story(S){
    <div class="tt">${img(sym)}<div><b>${esc(p.companyName||sym)}</b><span>${esc(sym)}${p.sector?" · "+esc(p.sector):""}</span></div></div>
    <div class="pr"><b>${num(price)} ${cc}</b>${chg!=null?`<em class="${chg<0?"neg":""}">${chg>0?"+":""}${num(chg)} %</em>`:""}<small>Stand ${new Date().toLocaleDateString("de-DE")}</small></div>
    <div><h4>Kurs, 5 Jahre${tgt!=null&&upT!=null?` · Kursziel ${num(tgt,0)} ${cc} (${upT>0?"+":""}${num(upT*100,1)} %)`:""}</h4>${sline(pts,tgt,pt.targetLow,pt.targetHigh)}</div>
-   <div><h4>Dividende je Aktie (${cc})</h4>${sbars(divs.slice(-9).map(x=>({y:x.y,v:x.v,p:x.part})),v=>num(v),GD,300,66)}
+   <div><h4>Dividende je Aktie (${cc})${divs.some(x=>x.part)?" · e = Prognose":""}</h4>${sbars(divs.slice(-9).map(x=>({y:x.y,v:x.v,p:x.part})),v=>num(v),GD,300,66)}
     <div class="ch"><span><b>${pct(dy)}</b>Dividendenrendite</span><span><b>${pct(po)}</b>Ausschüttung</span><span><b>${cg==null?"–":pct(cg)}</b>Wachstum 5 J. p. a.</span></div></div>
-   <div><div class="two"><div><h4>Umsatz in ${a.ul} ${esc(cur)}</h4>${a.svg}</div><div><h4>Gewinn in ${b.ul} ${esc(cur)}</h4>${b.svg}</div></div>${fut.length?`<small class="fn">e = Analystenprognose</small>`:""}</div>
    <div><h4>Analysten-Einstufung${tot?` · ${tot} Urteile`:""}</h4>${tot?donut():`<div class="na">Keine Analystendaten verfügbar</div>`}</div>
   </div><div class="sf">www.dividenden-rechner.de</div></div>`;
   document.getElementById("ov")?.remove();
