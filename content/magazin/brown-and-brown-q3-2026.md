@@ -6,7 +6,6 @@ author: "Kilian Treß"
 author_bio: "Kilian Treß betreibt dividenden-rechner.de und schreibt dort über Dividendenaktien, Kennzahlen und Steuerthemen für Privatanleger. Die Rechner und Auswertungen auf der Seite baut er selbst."
 category: Quartalszahlen
 logo_symbol: BRO
-draft: true
 ---
 <!-- PRÜFEN: Kein freies Aufmacherfoto gefunden, das Titelbild entsteht automatisch. Eigenes Foto: image, image_alt, image_credit ergaenzen. -->
 
