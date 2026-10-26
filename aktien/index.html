@@ -101,6 +101,13 @@ svg text{fill:var(--mut);font-size:11px;font-family:inherit}
 .xbar input.wide{width:200px}
 .xbar .go{font:inherit;font-weight:600;font-size:15px;padding:10px 16px;border:0;border-radius:8px;background:var(--acc);color:#fff;cursor:pointer}
 .xnote{font-size:13px;color:var(--mut);margin:4px 0 14px;max-width:80ch}
+.nwl{border:1px solid var(--line);border-radius:8px;background:#fff;overflow:hidden;color:var(--mut);padding:0}
+.nwl:not(:has(.nwi)){padding:14px 16px}
+.nwi,.nwm{display:block;padding:11px 16px;border-top:1px solid var(--line);color:var(--ink);text-decoration:none}
+.nwi:first-child{border-top:0}.nwi:hover,.nwm:hover{background:#f0f8f3}
+.nwi b{display:block;font-weight:600;font-size:14.5px}.nwi span{font-size:12.5px;color:var(--mut)}
+.nwm{font-size:13px;color:#2563eb}
+.xhead button[aria-pressed=true]{background:#e8f5ee;border-color:#2c8f5a}
 .xhead{display:flex;flex-wrap:wrap;gap:8px 14px;align-items:center;margin:14px 0 8px}
 .xhead h3{margin:0;font-size:17px}
 .xhead small{color:var(--mut)}
@@ -147,7 +154,7 @@ svg text{fill:var(--mut);font-size:11px;font-family:inherit}
 <link rel="stylesheet" href="../assets/navigation.css?v=20261025a">
 </head>
 <body>
-<header id="hub-global-header"><div class="hub-nav-inner"><a class="hub-brand" href="../"><img class="hub-logo" src="../assets/logo.png" alt="" width="36" height="36"> <span class="hub-brand-name">Dividenden-Rechner <span>Aktien-Hub</span></span></a><nav class="hub-links" aria-label="Hauptmenü"><a href="../rechner/">Rechner</a><a href="../aktien/" aria-current="page">Aktien</a><a href="../depot/">Depot</a><a href="../news/">News</a><a href="../screener/">Screener</a><a href="../einfuehrung/">Einführung</a><a href="../grundlagen/">Grundlagen</a><a href="../fortgeschrittene/">Fortgeschrittene</a></nav></div></header>
+<header id="hub-global-header"><div class="hub-nav-inner"><a class="hub-brand" href="../"><img class="hub-logo" src="../assets/logo.png" alt="" width="36" height="36"> <span class="hub-brand-name">Dividenden-Rechner <span>Aktien-Hub</span></span></a><nav class="hub-links" aria-label="Hauptmenü"><a href="../rechner/">Rechner</a><a href="../aktien/" aria-current="page">Aktien</a><a href="../depot/">Depot</a><a href="../news/">News</a><a href="../earnings/">Earnings</a><a href="../screener/">Screener</a><a href="../einfuehrung/">Einführung</a><a href="../grundlagen/">Grundlagen</a><a href="../fortgeschrittene/">Fortgeschrittene</a></nav></div></header>
 <script src="../assets/navigation.js"></script>
 <script src="../assets/logos.js"></script>
 <main>
@@ -330,10 +337,12 @@ async function openStock(sym){
    ${bars("Gewinn je Aktie (verwässert)","Jahreswerte, "+esc(cur),inc.map(x=>({y:x.y,v:first(x,"epsDiluted","eps")})),"var(--bar2)",v=>num(v))}
    ${bars("Bruttomarge","Bruttogewinn / Umsatz",inc.map(x=>({y:x.y,v:x.revenue?x.grossProfit/x.revenue:null})),"var(--bar)",v=>num(v*100,0)+" %")}
   </div>
+  <div id="nw"></div>
   ${p.description?`<p class="desc">${esc(p.description)}</p>`:""}
   ${p.website?`<p class="desc"><a href="${esc(p.website)}" target="_blank" rel="noopener">${esc(p.website)}</a></p>`:""}`;
   $("start").hidden=true;hub.hidden=false;msg.textContent="";$("sb").onclick=()=>story(LAST);
   try{initExplorer(sym,p,cur)}catch(e){console.error(e)}
+  try{initNews(sym,p)}catch(e){console.error(e)}
   const L={profile:"Profil",quote:"Kurs","ratios-ttm":"Kennzahlen","key-metrics-ttm":"Kennzahlen","discounted-cash-flow":"DCF","price-target-consensus":"Kursziele",income:"Umsatz/Gewinn",cash:"Cashflow",div:"Dividenden",price:"Kursverlauf",grades:"Analysten",est:"Prognosen"};
   const fails=names.map((n,i)=>res[i].status==="rejected"?{l:L[n],m:res[i].reason.message}:null).filter(Boolean);
   if(fails.length){
@@ -346,6 +355,28 @@ async function openStock(sym){
     msg.className=oth.length||lim.length?"err":"";msg.innerHTML=h;msg.title=fails.map(f=>f.l+": "+f.m).join("\n");
   }
   scrollTo(0,0);
+}
+/* ===== Unternehmens-News (Google News ueber eigenen Cloudflare-Worker) ===== */
+const NEWS_API="https://news-proxy.dividenden-rechner.workers.dev/";
+function initNews(sym,p){
+  const box=$("nw");if(!box)return;
+  const nm=String(p.companyName||sym).replace(/,?\s+(Inc\.?|Corp\.?|Corporation|Company|Co\.|Ltd\.?|plc|PLC|N\.V\.|S\.A\.|SE|AG|Holdings?)\b\.?/g,"").replace(/^The\s+/i,"").trim()||sym;
+  box.innerHTML=`<div class="xhead"><h3>Unternehmens-News</h3><small id="nwsub"></small><span class="sp"><button type="button" data-l="de" aria-pressed="true">Deutsch</button><button type="button" data-l="en" aria-pressed="false">Englisch</button></span></div><div id="nwl" class="nwl" role="status">Lade News …</div>`;
+  const ago=d=>{if(!d)return"";const m=Math.round((Date.now()-new Date(d))/6e4);if(m<60)return`vor ${Math.max(m,1)} Min.`;const h=Math.round(m/60);if(h<24)return`vor ${h} Std.`;const t=Math.round(h/24);return t===1?"gestern":`vor ${t} Tagen`};
+  async function load(l){
+    const q=l==="de"?`"${nm}" Aktie`:`"${nm}" stock`,ck="news:"+l+":"+q,out=$("nwl");
+    out.textContent="Lade News …";
+    const gl="https://news.google.com/search?q="+encodeURIComponent(q);
+    let j=null;
+    try{const c=JSON.parse(localStorage.getItem(ck)||"null");if(c&&Date.now()-c.t<36e5)j=c.j}catch(e){}
+    if(!j){try{const r=await fetch(NEWS_API+"?lang="+l+"&q="+encodeURIComponent(q));if(!r.ok)throw new Error("HTTP "+r.status);j=await r.json();try{localStorage.setItem(ck,JSON.stringify({t:Date.now(),j}))}catch(e){}}
+      catch(e){out.innerHTML=`News-Dienst gerade nicht erreichbar. <a href="${gl}" target="_blank" rel="noopener nofollow">Suche bei Google News öffnen</a>`;return}}
+    const it=j.items||[];
+    out.innerHTML=it.length?it.map(x=>`<a class="nwi" href="${esc(x.link)}" target="_blank" rel="noopener nofollow"><b>${esc(x.title)}</b><span>${esc(x.source||"")}${x.source&&x.date?" · ":""}${esc(ago(x.date))}</span></a>`).join("")+`<a class="nwm" href="${gl}" target="_blank" rel="noopener nofollow">Mehr bei Google News</a>`:`Keine Treffer. <a href="${gl}" target="_blank" rel="noopener nofollow">Bei Google News suchen</a>`;
+    $("nwsub").textContent="Suche: "+q;
+  }
+  box.querySelectorAll("button[data-l]").forEach(b=>b.onclick=()=>{box.querySelectorAll("button[data-l]").forEach(x=>x.setAttribute("aria-pressed",x===b));load(b.dataset.l)});
+  load("de");
 }
 /* ===== Daten-Explorer: weitere FMP-Daten je Kategorie ===== */
 /* Kategorien und Datensätze folgen der Einteilung von Financial Modeling Prep (FMP). */

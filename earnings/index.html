@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Earnings-Kalender: Quartalszahlen, Gewinn- und Umsatzschätzungen, Dividendenwachstum</title>
+<meta name="description" content="Wann berichten Dividendenunternehmen Quartalszahlen? Termine mit Logo, erwartetem Gewinn und Umsatz, Wachstum zum Vorjahr und Dividendenänderung in Prozent.">
+<meta name="robots" content="index,follow">
+<link rel="canonical" href="https://dividenden-rechner.github.io/aktien-hub/earnings/">
+<meta property="og:type" content="website"><meta property="og:locale" content="de_DE"><meta property="og:title" content="Earnings-Kalender: Quartalszahlen, Gewinn- und Umsatzschätzungen, Dividendenwachstum"><meta property="og:description" content="Wann berichten Dividendenunternehmen Quartalszahlen? Termine mit Logo, erwartetem Gewinn und Umsatz, Wachstum zum Vorjahr und Dividendenänderung in Prozent."><meta property="og:url" content="https://dividenden-rechner.github.io/aktien-hub/earnings/">
+<link rel="stylesheet" href="../assets/site.css">
+<link rel="icon" href="../favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="32x32" href="../assets/favicon-32.png">
+<link rel="icon" type="image/png" sizes="192x192" href="../assets/favicon-192.png">
+<link rel="apple-touch-icon" href="../assets/apple-touch-icon.png">
+<link rel="stylesheet" href="../assets/navigation.css?v=20261025a">
+<style>
+[hidden]{display:none!important}
+.ek-days{display:flex;gap:10px;overflow-x:auto;padding:4px 2px 12px;margin:0 0 12px}
+.ek-day{flex:0 0 auto;width:104px;border:1px solid #e2e8f0;background:#fff;border-radius:16px;padding:10px 8px;text-align:center;cursor:pointer;font:inherit;color:#0f172a}
+.ek-day:hover{border-color:#93c5fd}.ek-day[aria-pressed=true]{background:#eff6ff;border-color:#2563eb}.ek-day.today .ek-n{color:#2563eb}.ek-day.past{opacity:.75}
+.ek-n{font-size:1.5rem;font-weight:700;line-height:1.1}.ek-l{font-size:.78rem;color:#64748b;margin-bottom:6px}
+.ek-c{display:inline-block;min-width:24px;padding:1px 7px;border-radius:8px;background:#f1f5f9;font-size:.75rem;color:#334155;margin-bottom:8px}.ek-c.zero{opacity:.45}
+.ek-lg{display:flex;justify-content:center;min-height:28px}.ek-lg .ek-logo{margin-left:-8px;border:2px solid #fff}.ek-lg .ek-logo:first-child{margin-left:0}
+.ek-logo{width:28px;height:28px;border-radius:8px;object-fit:contain;flex:0 0 auto;display:inline-flex;align-items:center;justify-content:center;font-weight:700;color:#475569;background:#f1f5f9}
+img.ek-logo{background:#fff}
+.ek-bar{display:flex;gap:10px;flex-wrap:wrap;align-items:center;margin:0 0 12px}
+.ek-bar select,.ek-bar input,.ek-bar button{padding:8px 12px;border:1px solid #cbd5e1;border-radius:10px;font:inherit;background:#fff}
+.ek-bar select{max-width:100%}.ek-bar input{flex:1 1 180px}.ek-bar button{cursor:pointer}
+.ek-grp{margin:18px 0 6px;font-weight:700;color:#334155}
+.ek-list{border:1px solid #e2e8f0;border-radius:16px;background:#fff;overflow:hidden}
+.ek-item{border-top:1px solid #e2e8f0}.ek-item:first-child{border-top:0}
+.ek-row{display:flex;gap:12px;width:100%;text-align:left;padding:12px 14px;background:none;border:0;font:inherit;color:inherit;cursor:pointer;align-items:center}
+.ek-row:hover{background:#f8fafc}
+.ek-row .ek-logo{width:40px;height:40px;border-radius:11px}
+.ek-m{flex:1;min-width:0}.ek-nm{font-weight:600}.ek-nm a{color:inherit;text-decoration:none}.ek-nm a:hover{text-decoration:underline}
+.ek-sub{font-size:.85rem;color:#64748b}
+.ek-fig{display:flex;gap:16px;text-align:right;font-size:.88rem}.ek-fig div{min-width:84px}.ek-fig span{display:block;color:#64748b;font-size:.75rem}
+.ek-badge{display:inline-block;padding:1px 8px;border-radius:8px;font-size:.72rem;background:#f1f5f9;color:#475569;margin-left:6px}
+.ek-badge.done{background:#dcfce7;color:#166534}
+.pos{color:#15803d}.neg{color:#b91c1c}
+.ek-body{display:none;padding:2px 14px 16px 66px}.ek-item.open .ek-body{display:block}
+.ek-body table{width:100%;max-width:560px;border-collapse:collapse;font-size:.92rem}.ek-body td,.ek-body th{padding:6px 8px;border-bottom:1px solid #e2e8f0;text-align:right}.ek-body th:first-child,.ek-body td:first-child{text-align:left}
+.ek-body .ek-go{display:inline-block;margin-top:10px}
+.ek-empty{padding:22px;color:#475569}
+@media(max-width:640px){.ek-fig div:nth-child(2){display:none}.ek-body{padding-left:14px;padding-right:14px;overflow-x:auto}.ek-fig div{min-width:64px}.ek-row{gap:10px;padding:12px 10px}}
+</style>
+</head>
+<body>
+<header id="hub-global-header"><div class="hub-nav-inner"><a class="hub-brand" href="../"><img class="hub-logo" src="../assets/logo.png" alt="" width="36" height="36"> <span class="hub-brand-name">Dividenden-Rechner <span>Aktien-Hub</span></span></a><nav class="hub-links" aria-label="Hauptmenü"><a href="../rechner/">Rechner</a><a href="../aktien/">Aktien</a><a href="../depot/">Depot</a><a href="../news/">News</a><a href="../earnings/" aria-current="page">Earnings</a><a href="../screener/">Screener</a><a href="../einfuehrung/">Einführung</a><a href="../grundlagen/">Grundlagen</a><a href="../fortgeschrittene/">Fortgeschrittene</a></nav></div></header>
+<script src="../assets/navigation.js"></script>
+<script src="../assets/logos.js"></script>
+<main class="wrap"><article>
+<nav class="crumbs" aria-label="Brotkrumen"><a href="../">Start</a> › <span aria-current="page">Earnings-Kalender</span></nav>
+<h1>Earnings-Kalender</h1>
+<p class="lead">Wann veröffentlichen Dividendenunternehmen ihre Quartalszahlen? Tippe auf einen Tag, um die Termine zu filtern, und auf eine Firma, um erwarteten Gewinn und Umsatz im Vergleich zum Vorjahresquartal sowie die Dividendenveränderung zu sehen. Logo und Name führen zur Aktie im Aktien-Hub.</p>
+<div id="days" class="ek-days" aria-label="Tage"></div>
+<div class="ek-bar"><select id="scope" aria-label="Auswahl"><option value="mp">Meine Werte und beliebte Dividendenaktien</option><option value="mine">Nur meine Werte (Watchlist, Depot)</option><option value="all">Alle US-Firmen</option></select><input id="q" type="search" placeholder="Firma oder Kürzel suchen" aria-label="Suchen"><button id="clear" type="button" hidden>Filter zurücksetzen</button><span id="upd" class="ek-sub"></span></div>
+<div id="list" aria-live="polite"><div class="ek-empty">Lade Termine …</div></div>
+<h2>So liest du die Tabelle</h2>
+<ul>
+<li><strong>Gewinn je Aktie und Umsatz:</strong> Vor der Veröffentlichung steht die Schätzung der Analysten, danach der gemeldete Wert. Die Veränderung vergleicht mit dem gleichen Quartal des Vorjahres.</li>
+<li><strong>Dividende:</strong> Die letzte Zahlung im Vergleich zur Zahlung ein Jahr davor und die Summe der letzten zwölf Monate gegen die zwölf Monate davor. So siehst du Erhöhungen und Kürzungen in Prozent.</li>
+<li><strong>Meine Werte:</strong> Der Kalender liest deine Watchlist aus dem Aktien-Hub und die Werte aus deinem Depot, alles nur in deinem Browser.</li>
+</ul>
+<p>Die Daten stammen von Financial Modeling Prep und brauchen deinen FMP-Schlüssel (derselbe wie im Aktien-Hub). Der kostenlose Tarif deckt vor allem US-Werte ab. Termine können sich ändern, und Schätzungen sind keine Prognosen der Firma.</p>
+<p>Weitere Werkzeuge: <a href="../aktien/">Aktien-Hub</a>, <a href="../depot/">Depot mit Dividendenkalender</a>, <a href="../news/">News-Kalender</a>.</p>
+<p class="note"><strong>Hinweis:</strong> Keine Anlageberatung. Angaben ohne Gewähr.</p>
+</article></main>
+<footer class="site-footer"><div class="wrap">
+<div class="cols">
+<a href="../rechner/">Rechner</a><a href="../aktien/">Aktien-Hub</a><a href="../depot/">Depot</a><a href="../news/">News</a><a href="../screener/">Screener</a><a href="../einfuehrung/">Einführung</a><a href="../grundlagen/">Grundlagen</a><a href="../fortgeschrittene/">Fortgeschrittene</a>
+<a href="../impressum/">Impressum</a><a href="../datenschutz/">Datenschutz</a>
+</div>
+<p>Alle Inhalte dienen der allgemeinen Information und sind keine Anlage-, Steuer- oder Rechtsberatung. Kapitalanlagen sind mit Risiken verbunden.</p>
+</div></footer>
+<script>
+(function(){
+var BASE="https://financialmodelingprep.com/stable/",KEY="";
+try{KEY=localStorage.getItem("fmpkey")||""}catch(e){}
+function $(i){return document.getElementById(i)}
+function esc(s){return String(s==null?"":s).replace(/[&<>"']/g,function(c){return{"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]})}
+function askKey(){var k=prompt("FMP API-Key (wird nur in deinem Browser gespeichert):",KEY);if(k!==null){KEY=k.trim();try{localStorage.setItem("fmpkey",KEY)}catch(e){}}}
+async function api(path,params){
+  if(!KEY){askKey();if(!KEY)throw new Error("Kein API-Key hinterlegt")}
+  var u=new URL(BASE+path);Object.keys(params||{}).forEach(function(k){u.searchParams.set(k,params[k])});
+  var ck="fmp:"+u.toString();
+  try{var c=JSON.parse(localStorage.getItem(ck)||"null");if(c&&Date.now()-c.t<432e5){if(c.err)throw new Error(c.err);return c.j}}catch(e){if(/^HTTP 40[23]/.test(e.message))throw e}
+  u.searchParams.set("apikey",KEY);
+  var r=await fetch(u),txt=await r.text(),j=null;try{j=JSON.parse(txt)}catch(e){}
+  if(!r.ok){var m=("HTTP "+r.status+": "+((j&&(j["Error Message"]||j.message))||txt)).slice(0,160);if(r.status===402||r.status===403)try{localStorage.setItem(ck,JSON.stringify({t:Date.now(),err:m}))}catch(e){}throw new Error(m)}
+  if(j&&j["Error Message"])throw new Error(String(j["Error Message"]).slice(0,160));
+  if(txt.length<3e5)try{localStorage.setItem(ck,JSON.stringify({t:Date.now(),j:j}))}catch(e){}
+  return j;
+}
+var POP=[["AAPL","Apple"],["MSFT","Microsoft"],["JNJ","Johnson & Johnson"],["KO","Coca-Cola"],["PEP","PepsiCo"],["PG","Procter & Gamble"],["LLY","Eli Lilly"],["BMY","Bristol-Myers Squibb"],["ABBV","AbbVie"],["PFE","Pfizer"],["MRK","Merck & Co."],["O","Realty Income"],["V","Visa"],["MA","Mastercard"],["JPM","JPMorgan Chase"],["BAC","Bank of America"],["WFC","Wells Fargo"],["XOM","Exxon Mobil"],["CVX","Chevron"],["MCD","McDonald's"],["SBUX","Starbucks"],["VZ","Verizon"],["T","AT&T"],["HD","Home Depot"],["LOW","Lowe's"],["TXN","Texas Instruments"],["AVGO","Broadcom"],["CSCO","Cisco"],["IBM","IBM"],["INTC","Intel"],["MDLZ","Mondelez"],["MMM","3M"],["CAT","Caterpillar"],["DE","Deere"],["HON","Honeywell"],["LMT","Lockheed Martin"],["UPS","UPS"],["WMT","Walmart"],["COST","Costco"],["TGT","Target"],["NVDA","Nvidia"],["GOOGL","Alphabet"],["AMZN","Amazon"],["META","Meta"],["NEE","NextEra Energy"],["DUK","Duke Energy"],["SO","Southern Company"],["MO","Altria"],["PM","Philip Morris"],["CL","Colgate-Palmolive"],["KMB","Kimberly-Clark"],["GIS","General Mills"],["KHC","Kraft Heinz"],["AMGN","Amgen"],["GILD","Gilead"],["MDT","Medtronic"],["ABT","Abbott"],["UNH","UnitedHealth"],["BLK","BlackRock"],["GS","Goldman Sachs"],["MS","Morgan Stanley"],["STAG","STAG Industrial"],["VICI","VICI Properties"],["MAIN","Main Street Capital"],["ADC","Agree Realty"],["NNN","NNN REIT"],["WPC","W. P. Carey"],["IRM","Iron Mountain"],["SPG","Simon Property"],["PLD","Prologis"],["TSM","TSMC"],["NVO","Novo Nordisk"],["SAP","SAP"],["TTE","TotalEnergies"],["SHEL","Shell"]];
+var NAMES={};POP.forEach(function(p){NAMES[p[0]]=p[1]});
+function mine(){
+  var out={};
+  try{(JSON.parse(localStorage.getItem("wl")||"[]")||[]).forEach(function(x){if(x&&x.s){out[String(x.s).toUpperCase()]=x.n||x.s}})}catch(e){}
+  try{var D=JSON.parse(localStorage.getItem("depot1")||"null");if(D&&D.meta)Object.keys(D.meta).forEach(function(k){var m=D.meta[k];if(m&&m.sym&&!m.isEtf)out[String(m.sym).toUpperCase()]=m.name||m.sym})}catch(e){}
+  return out;
+}
+var MINE=mine(),CAL=[],sel=null,scope="mp",q="",DAYS_BACK=3,DAYS_FWD=11,H={};
+function logo(sym,name){return window.HubLogos?HubLogos.img("ek-logo",sym,"",name||sym):'<span class="ek-logo">'+esc((name||sym||"?").charAt(0))+"</span>"}
+function key(d){var x=new Date(d);return x.getFullYear()+"-"+("0"+(x.getMonth()+1)).slice(-2)+"-"+("0"+x.getDate()).slice(-2)}
+function nm(s){return MINE[s]||NAMES[s]||s}
+function num(v,d){return v==null||isNaN(v)?"–":Number(v).toLocaleString("de-DE",{minimumFractionDigits:d==null?2:d,maximumFractionDigits:d==null?2:d})}
+function big(v){if(v==null||isNaN(v))return"–";var a=Math.abs(v);return a>=1e12?num(v/1e12)+" Bio.":a>=1e9?num(v/1e9)+" Mrd.":a>=1e6?num(v/1e6,0)+" Mio.":num(v,0)}
+function gp(v){return v==null||!isFinite(v)?'<span>–</span>':'<span class="'+(v>=0?"pos":"neg")+'">'+(v>0?"+":"")+num(v*100,1)+" %</span>"}
+function gr(c,p){return c==null||p==null||p===0||isNaN(c)||isNaN(p)?null:(c-p)/Math.abs(p)}
+function fv(o,a,b){return o[a]!=null?o[a]:o[b]}
+function inScope(r){
+  var s=r.symbol;
+  if(scope==="mine"&&!MINE[s])return false;
+  if(scope==="mp"&&!(MINE[s]||NAMES[s]))return false;
+  if(q&&(s+" "+nm(s)).toLowerCase().indexOf(q)<0)return false;
+  return true;
+}
+function view(){return CAL.filter(inScope)}
+function renderDays(){
+  var by={};view().forEach(function(r){(by[r.date]=by[r.date]||[]).push(r)});
+  var h="",wd=["So","Mo","Di","Mi","Do","Fr","Sa"];
+  for(var i=-DAYS_BACK;i<=DAYS_FWD;i++){var dd=new Date();dd.setDate(dd.getDate()+i);var k=key(dd),L=by[k]||[];
+    var lab=i===0?"Heute":i===1?"Morgen":i===-1?"Gestern":wd[dd.getDay()];
+    h+='<button type="button" class="ek-day'+(i===0?" today":"")+(i<0?" past":"")+'" data-k="'+k+'" aria-pressed="'+(sel===k)+'"><div class="ek-n">'+dd.getDate()+'</div><div class="ek-l">'+lab+'</div><div class="ek-c'+(L.length?"":" zero")+'">'+L.length+'</div><div class="ek-lg">'+(L.length?L.slice(0,3).map(function(r){return logo(r.symbol,nm(r.symbol))}).join(""):'<span class="ek-l">keine</span>')+"</div></button>"}
+  $("days").innerHTML=h;
+}
+function fmtDay(k){return new Date(k+"T12:00:00").toLocaleDateString("de-DE",{weekday:"long",day:"numeric",month:"long"})}
+function renderList(){
+  var L=view().filter(function(r){return !sel||r.date===sel}).sort(function(a,b){return a.date<b.date?-1:a.date>b.date?1:(NAMES[a.symbol]||MINE[a.symbol]?0:1)-(NAMES[b.symbol]||MINE[b.symbol]?0:1)||a.symbol.localeCompare(b.symbol)}).slice(0,400);
+  if(!L.length){$("list").innerHTML='<div class="ek-empty">'+(CAL.length?"Keine Termine für diese Auswahl. Stelle oben „Alle US-Firmen“ ein oder wähle einen anderen Tag.":"Keine Daten geladen.")+"</div>";return}
+  var h="",cur="";
+  L.forEach(function(r,i){
+    if(r.date!==cur){if(cur)h+="</div>";cur=r.date;h+='<div class="ek-grp">'+esc(fmtDay(cur))+'</div><div class="ek-list">'}
+    var done=r.epsActual!=null||r.revenueActual!=null,s=r.symbol;
+    var eps=done?r.epsActual:r.epsEstimated,rev=done?r.revenueActual:r.revenueEstimated;
+    h+='<div class="ek-item" data-s="'+esc(s)+'" data-d="'+esc(r.date)+'"><button type="button" class="ek-row" aria-expanded="false">'+logo(s,nm(s))+'<span class="ek-m"><span class="ek-nm"><a href="../aktien/?s='+encodeURIComponent(s)+'">'+esc(nm(s))+'</a><span class="ek-badge'+(done?" done":"")+'">'+(done?"berichtet":"erwartet")+'</span></span><span class="ek-sub">'+esc(s)+'</span></span><span class="ek-fig"><div>'+num(eps)+'<span>Gewinn/Aktie'+(done?"":" (Schätzung)")+'</span></div><div>'+big(rev)+'<span>Umsatz'+(done?"":" (Schätzung)")+'</span></div></span></button><div class="ek-body"><p class="ek-sub">Lade Details …</p></div></div>';
+  });
+  $("list").innerHTML=h+"</div>";
+}
+function prior(list,date){var t=new Date(date).getTime()-365*864e5,best=null,bd=1e18;list.forEach(function(x){var dd=Math.abs(new Date(x.date).getTime()-t);if(dd<bd&&dd<50*864e5){bd=dd;best=x}});return best}
+async function details(item){
+  var s=item.dataset.s,date=item.dataset.d,box=item.querySelector(".ek-body"),r=CAL.filter(function(x){return x.symbol===s&&x.date===date})[0]||{};
+  if(H[s+date]){box.innerHTML=H[s+date];return}
+  var res=await Promise.allSettled([api("earnings",{symbol:s,limit:12}),api("dividends",{symbol:s,limit:24})]);
+  var hist=res[0].status==="fulfilled"&&Array.isArray(res[0].value)?res[0].value:[],dv=res[1].status==="fulfilled"&&Array.isArray(res[1].value)?res[1].value:[];
+  var cur=hist.filter(function(x){return x.date===date})[0]||r,pr=prior(hist.filter(function(x){return x.date<date}),date);
+  var done=cur.epsActual!=null,epsN=done?cur.epsActual:cur.epsEstimated,revN=cur.revenueActual!=null?cur.revenueActual:cur.revenueEstimated;
+  var epsP=pr?pr.epsActual:null,revP=pr?pr.revenueActual:null;
+  var rows='<tr><td>Gewinn je Aktie</td><td>'+num(epsN)+'</td><td>'+num(epsP)+'</td><td>'+gp(gr(epsN,epsP))+'</td></tr><tr><td>Umsatz</td><td>'+big(revN)+'</td><td>'+big(revP)+'</td><td>'+gp(gr(revN,revP))+"</td></tr>";
+  var sur="";if(done&&cur.epsEstimated){sur='<tr><td>Überraschung (Gewinn)</td><td colspan="2">Schätzung '+num(cur.epsEstimated)+'</td><td>'+gp(gr(cur.epsActual,cur.epsEstimated))+"</td></tr>"}
+  var h='<table><thead><tr><th></th><th>'+(done?"Aktuell":"Erwartet")+"</th><th>Vorjahresquartal</th><th>Veränderung</th></tr></thead><tbody>"+rows+sur+"</tbody></table>";
+  if(!hist.length)h='<p class="ek-sub">Für dieses Unternehmen konnten keine Vorjahreswerte geladen werden'+(res[0].status==="rejected"?" ("+esc(res[0].reason.message)+")":"")+".</p>";
+  dv=dv.filter(function(x){return(x.adjDividend!=null||x.dividend!=null)}).sort(function(a,b){return a.date<b.date?1:-1});
+  var dh="";
+  if(dv.length){var L=dv[0],lv=fv(L,"adjDividend","dividend"),pv=prior(dv.slice(1),L.date),pvv=pv?fv(pv,"adjDividend","dividend"):null;
+    var now=Date.now(),a=0,b=0,na=0,nb=0;dv.forEach(function(x){var t=new Date(x.date).getTime(),v=fv(x,"adjDividend","dividend");if(t>now-365*864e5&&t<=now){a+=v;na++}else if(t>now-730*864e5&&t<=now-365*864e5){b+=v;nb++}});
+    dh='<table style="margin-top:12px"><thead><tr><th>Dividende</th><th>Aktuell</th><th>Vor einem Jahr</th><th>Veränderung</th></tr></thead><tbody><tr><td>Letzte Zahlung ('+esc(String(L.date).slice(0,10))+')</td><td>'+num(lv,3)+"</td><td>"+num(pvv,3)+"</td><td>"+gp(gr(lv,pvv))+"</td></tr>"+(na&&nb?"<tr><td>Summe letzte 12 Monate</td><td>"+num(a,3)+"</td><td>"+num(b,3)+"</td><td>"+gp(gr(a,b))+"</td></tr>":"")+"</tbody></table>";
+  }else if(res[1].status==="rejected")dh='<p class="ek-sub">Dividendendaten nicht verfügbar ('+esc(res[1].reason.message)+").</p>";
+  else dh='<p class="ek-sub">Keine Dividendenzahlungen gefunden.</p>';
+  var out=h+dh+'<a class="ek-go" href="../aktien/?s='+encodeURIComponent(s)+'">Zur Aktie: Kennzahlen, Dividendenverlauf, News →</a>';
+  H[s+date]=out;box.innerHTML=out;
+}
+function render(){renderDays();renderList();$("clear").hidden=!(sel||q)}
+$("days").onclick=function(e){var b=e.target.closest(".ek-day");if(!b)return;sel=sel===b.dataset.k?null:b.dataset.k;render()};
+$("scope").onchange=function(){scope=this.value;render()};
+$("q").oninput=function(){q=this.value.trim().toLowerCase();render()};
+$("clear").onclick=function(){sel=null;q="";$("q").value="";render()};
+$("list").onclick=function(e){if(e.target.closest("a"))return;var r=e.target.closest(".ek-row");if(!r)return;var it=r.parentNode,o=it.classList.toggle("open");r.setAttribute("aria-expanded",o);if(o&&!it.dataset.loaded){it.dataset.loaded=1;details(it).catch(function(x){it.querySelector(".ek-body").innerHTML='<p class="ek-sub">Details nicht ladbar: '+esc(x.message)+"</p>"})}};
+(async function(){
+  var f=new Date(),t=new Date();f.setDate(f.getDate()-DAYS_BACK);t.setDate(t.getDate()+DAYS_FWD+10);
+  try{var j=await api("earnings-calendar",{from:key(f),to:key(t)});CAL=(Array.isArray(j)?j:[]).filter(function(x){return x&&x.symbol&&x.date&&!/[.]/.test(x.symbol)}).map(function(x){x.date=String(x.date).slice(0,10);return x});
+    $("upd").textContent=CAL.length+" Termine geladen";if(Object.keys(MINE).length)$("scope").value="mp"}
+  catch(e){$("list").innerHTML='<div class="ek-empty">Termine konnten nicht geladen werden: '+esc(e.message)+(/40[23]/.test(e.message)?" – Der Earnings-Kalender ist in deinem FMP-Tarif möglicherweise nicht enthalten.":"")+"</div>"}
+  render();
+})();
+})();
+</script>
+</body>
+</html>
