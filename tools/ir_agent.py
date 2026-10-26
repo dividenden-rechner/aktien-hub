@@ -279,7 +279,7 @@ def sec_release(ticker):
         txt = html_to_text(rawtxt) if not name.lower().endswith(".txt") else rawtxt
         if name.lower().endswith((".htm", ".html")) and html_to_pdf(rawtxt, base, "/tmp/sec_release.pdf"):
             print("Pressemitteilung als PDF gerendert (Seiten und Ausschnitte moeglich).")
-            return {"kind": "pdf", "path": "/tmp/sec_release.pdf", "company": hit["title"], "url": base + name, "date": fdate}
+            return {"kind": "pdf", "path": "/tmp/sec_release.pdf", "company": hit["title"], "url": base + name, "date": fdate, "pages_real": False}
         return {"kind": "text", "text": txt, "company": hit["title"], "url": base + name, "date": fdate}
     fail(f"Keine Ergebnismeldung (8-K, Item 2.02) von {t} gefunden.")
 
@@ -320,9 +320,7 @@ def render_figure(pdf_path, fig, out_path):
         if (y1 - y0) * (x1 - x0) >= 0.06 and y1 > y0 and x1 > x0:
             pad = 0.012
             im = im.crop((int(max(0, x0 - pad) * W), int(max(0, y0 - pad) * H), int(min(1, x1 + pad) * W), int(min(1, y1 + pad) * H)))
-    if im.width > 1400:
-        im = im.resize((1400, int(im.height * 1400 / im.width)), Image.LANCZOS)
-    im.save(out_path, "PNG", optimize=True)
+    im.save(out_path, "PNG", optimize=True)   # unveraenderte Pixel, nur zugeschnitten
     return True
 
 
@@ -580,7 +578,8 @@ def draw_graphic(out, path):
         lf = font(22); ly = bot + 18
         for ln in wrap(d, b["label"], lf, bw - 10)[:2]:
             d.text(((x0 + x1) / 2 - tw(d, ln, lf) / 2, ly), ln, font=lf, fill=grey); ly += 26
-    d.text((70, H - 46), f"Quelle: {out['company']}, {out['period']}-Bericht, S. {ch['page']}  ·  dividenden-rechner.de", font=font(22), fill=grey)
+    pg = ch.get("page") or 0
+    d.text((70, H - 46), f"Quelle: {out['company']}, Pressemitteilung {out['period']}" + (f", S. {pg}" if pg else "") + "  ·  dividenden-rechner.de", font=font(22), fill=grey)
     im.save(path, "PNG", optimize=True)
 
 
@@ -589,7 +588,7 @@ def q(v):
     return '"' + str(v).replace('"', "'").replace("\n", " ") + '"'
 
 
-def build(out, text, src_note, force=False, calc_rows=None, fmp_used=False, figs=None):
+def build(out, text, src_note, force=False, calc_rows=None, fmp_used=False, figs=None, src=None):
     slug = re.sub(r"[^a-z0-9]+", "-", out["article"]["slug"].lower()).strip("-") or "bericht"
     mdpath = os.path.join(ROOT, "content", "magazin", f"{slug}.md")
     if os.path.exists(mdpath) and not force:
@@ -640,12 +639,15 @@ def build(out, text, src_note, force=False, calc_rows=None, fmp_used=False, figs
             import shutil
             shutil.copy(f["tmp"], os.path.join(ROOT, rel)); used.append(fid)
             alt = f["title"].replace("[", "(").replace("]", ")")
-            body_md = body_md.replace(tag, f"![{alt}](/{rel})\n*{f['title']} (Auszug aus der Veröffentlichung von {out['company']})*")
+            pg = f.get("page") if (src or {}).get("pages_real", True) and f.get("page") else None
+            link = f" · [Original]({src['url']})" if (src or {}).get("url", "").startswith("http") else ""
+            body_md = body_md.replace(tag, f"![{alt}](/{rel})\n*{f['title']}. Quelle: {out['company']}, Pressemitteilung zum {out['period']} vom {out['report_date']}" + (f", S. {pg}" if pg else "") + f"{link}. Ausschnitt nur zugeschnitten, sonst unverändert.*")
     body_md = re.sub(r"\{\{FIG:[^}]*\}\}", "", body_md)
     if used:
         hinweise.append("Ausschnitte aus dem Bericht im Text (" + ", ".join(used) + "): bitte prüfen, ob Zuschnitt und Platz passen. Unpassende Bildzeilen einfach löschen.")
     parts = body_md.split("\n\n", 1)
-    body_md = parts[0] + f"\n\n![{chart_alt}](/assets/magazin/{slug}-grafik.png)\n\n" + (parts[1] if len(parts) > 1 else "")
+    glink = f" · [Original]({src['url']})" if (src or {}).get("url", "").startswith("http") else ""
+    body_md = parts[0] + f"\n\n![{chart_alt}](/assets/magazin/{slug}-grafik.png)\n*Eigene Darstellung nach Daten aus: {out['company']}, Pressemitteilung zum {out['period']} vom {out['report_date']}{glink}.*\n\n" + (parts[1] if len(parts) > 1 else "")
     head = "".join(f"<!-- PRÜFEN: {h} -->\n" for h in hinweise) + "\n"
     calc_md = ""
     if calc_rows:
@@ -709,7 +711,7 @@ def main():
         out["article"] = _generate([doc_part(src), {"text": prompt2}], ARTICLE_SCHEMA, api_key())
         print("FAKTEN:\n" + fakten)
     note = src.get("url") or ""
-    md, g, bad, photo = build(out, text, note, a.force, calc_rows, fmp_used, figs if not a.mock else None)
+    md, g, bad, photo = build(out, text, note, a.force, calc_rows, fmp_used, figs if not a.mock else None, src)
     print("Entwurf:", md); print("Grafik:", g); print("Foto:", photo["title"] if photo else "keins")
     print("Nicht verifizierte Zahlen:", bad if bad else "keine")
 
