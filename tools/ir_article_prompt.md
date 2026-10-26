@@ -19,6 +19,8 @@ Aufbau (Zwischenüberschriften mit ##, jeweils sprechend, nicht "Einleitung"):
 4. Bewertung: Kurs-Gewinn-Verhältnis, Dividendenrendite und Ausschüttungsquote aus FAKTEN einordnen, und: wann das Unternehmen die Dividende üblicherweise erhöht (Muster aus FAKTEN, ausdrücklich als Muster der Vergangenheit, keine Zusage), wenn dazu etwas in FAKTEN steht. Ohne Daten in FAKTEN entfällt dieser Abschnitt komplett.
 5. Ausblick und offene Punkte: Prognose des Unternehmens und mindestens ein Risiko oder Punkt, der kritisch zu sehen ist.
 
+Bildausschnitte: Unter VERFUEGBARE AUSSCHNITTE stehen Tabellen oder Grafiken aus dem Bericht. Du darfst höchstens drei einsetzen, und nur, wenn sie wirklich etwas zeigen, das der Text braucht (zum Beispiel ein auffälliger Capex-Sprung, ein negativer Free Cashflow, eine Prognosetabelle). Setze sie an die Stelle im Text, an der du die Aussage machst, als eigene Zeile {{FIG:f1}} (mit der jeweiligen Kennung) direkt nach dem passenden Absatz. Beziehe dich im Text kurz darauf ("wie die Tabelle unten zeigt"). Setze keinen Ausschnitt ein, der nur Zahlen wiederholt, die du ohnehin nennst. Auch null Ausschnitte sind in Ordnung.
+
 title: unter 70 Zeichen, konkret, mit Unternehmen und Kern der Nachricht, kein Clickbait.
 description: ein bis zwei Sätze, unter 160 Zeichen.
 slug: kleinbuchstaben-mit-bindestrichen, mit Unternehmen und Quartal, zum Beispiel coca-cola-q2-2026.

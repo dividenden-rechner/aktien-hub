@@ -36,7 +36,7 @@ Lokal testen: `pip install markdown pillow` und `python3 tools/build_magazin.py`
 
 **US-Titel (empfohlen):** Actions > "IR-Agent" > Run workflow > Feld `ticker` (z. B. `KO` oder `KO,PEP,O`). Der Agent holt die neueste
 Ergebnis-Pressemitteilung selbst von der SEC (8-K, Item 2.02), Gemini liest sie, Code zeichnet die Grafik, und aus Wikimedia Commons
-wird ein frei lizenziertes Aufmacherfoto gesucht (mit Bildnachweis unter dem Foto). Die Grafik steht im Text unter dem Einstieg.
+wird ein frei lizenziertes Aufmacherfoto gesucht (mit Bildnachweis unter dem Foto). Die Grafik steht im Text unter dem Einstieg. Der Agent darf außerdem bis zu drei Ausschnitte (Tabellen/Grafiken) aus dem Bericht an passender Stelle in den Text setzen, etwa bei auffälligem Capex oder negativem Free Cashflow; unpassende Bildzeilen löschst du einfach.
 **Andere Titel:** `pdf_url` eintragen oder die PDF in `content/ir-inbox/` hochladen.
 
 Ergebnis: ein Entwurf (`draft: true`) in `content/magazin/`. Hinweise für dich stehen als `<!-- PRÜFEN: ... -->` am Textanfang

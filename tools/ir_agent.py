@@ -32,6 +32,13 @@ SCHEMA = {   # Aufruf 1: Zahlen aus dem Bericht
             "properties": {"text_original": {"type": "STRING", "description": "Exakter Wortlaut wie im Bericht, ohne Auslassungen"},
                            "text_de": {"type": "STRING", "description": "Deutsche Uebersetzung des Zitats"},
                            "speaker": {"type": "STRING"}, "role": {"type": "STRING", "description": "z. B. CEO"}}},
+        "figures": {"type": "ARRAY", "description": "0 bis 5 Tabellen oder Grafiken aus dem Bericht, die als Ausschnitt im Artikel stehen koennten",
+            "items": {"type": "OBJECT", "required": ["id", "page", "box", "title", "shows"],
+                "properties": {"id": {"type": "STRING", "description": "f1, f2, ..."},
+                               "page": {"type": "INTEGER", "description": "Seitenzahl im PDF, ab 1"},
+                               "box": {"type": "ARRAY", "items": {"type": "INTEGER"}, "description": "Bereich auf der Seite als [ymin, xmin, ymax, xmax], Werte 0 bis 1000"},
+                               "title": {"type": "STRING", "description": "Kurze deutsche Bildunterschrift"},
+                               "shows": {"type": "STRING", "description": "Ein Satz: was zeigt der Ausschnitt und warum ist er relevant"}}}},
         "period_end": {"type": "STRING", "description": "Ende des Berichtszeitraums, YYYY-MM-DD"},
         "prior_period_end": {"type": "STRING", "description": "Ende des Vergleichszeitraums im Vorjahr, YYYY-MM-DD"},
         "kpis": {"type": "ARRAY", "items": {"type": "OBJECT",
@@ -268,9 +275,56 @@ def sec_release(ticker):
         if name.lower().endswith(".pdf"):
             path = "/tmp/sec_release.pdf"; open(path, "wb").write(raw)
             return {"kind": "pdf", "path": path, "company": hit["title"], "url": base + name, "date": fdate}
-        txt = html_to_text(raw.decode("utf-8", "replace")) if not name.lower().endswith(".txt") else raw.decode("utf-8", "replace")
+        rawtxt = raw.decode("utf-8", "replace")
+        txt = html_to_text(rawtxt) if not name.lower().endswith(".txt") else rawtxt
+        if name.lower().endswith((".htm", ".html")) and html_to_pdf(rawtxt, base, "/tmp/sec_release.pdf"):
+            print("Pressemitteilung als PDF gerendert (Seiten und Ausschnitte moeglich).")
+            return {"kind": "pdf", "path": "/tmp/sec_release.pdf", "company": hit["title"], "url": base + name, "date": fdate}
         return {"kind": "text", "text": txt, "company": hit["title"], "url": base + name, "date": fdate}
     fail(f"Keine Ergebnismeldung (8-K, Item 2.02) von {t} gefunden.")
+
+def html_to_pdf(raw_html, base_url, out_path):
+    """Rendert eine HTML-Pressemitteilung mit Chrome zu PDF (damit es Seiten und Ausschnitte gibt)."""
+    exe = next((c for c in ("google-chrome", "google-chrome-stable", "chromium", "chromium-browser") if subprocess.run(["which", c], capture_output=True).returncode == 0), None)
+    if not exe:
+        return False
+    h = re.sub(r"(?i)<head([^>]*)>", lambda m: m.group(0) + f'<base href="{base_url}">', raw_html, count=1) if "<head" in raw_html.lower() else f'<base href="{base_url}">' + raw_html
+    tmp = "/tmp/release.html"; open(tmp, "w", encoding="utf-8").write(h)
+    try:
+        subprocess.run([exe, "--headless=new", "--no-sandbox", "--disable-gpu", "--no-pdf-header-footer", f"--print-to-pdf={out_path}", "file://" + tmp],
+                       capture_output=True, timeout=150)
+    except Exception as e:
+        print("HTML-zu-PDF fehlgeschlagen:", e); return False
+    return os.path.exists(out_path) and os.path.getsize(out_path) > 5000
+
+
+def render_figure(pdf_path, fig, out_path):
+    """Seite als Bild rendern und auf den Bereich zuschneiden; ist der Bereich unplausibel, die ganze Seite."""
+    pg = int(fig.get("page") or 0)
+    if pg < 1:
+        return False
+    prefix = "/tmp/pg"
+    try:
+        subprocess.run(["pdftoppm", "-r", "170", "-f", str(pg), "-l", str(pg), "-png", pdf_path, prefix], check=True, capture_output=True, timeout=120)
+    except Exception as e:
+        print("Seite nicht renderbar:", e); return False
+    cand = [f for f in os.listdir("/tmp") if f.startswith("pg-") and f.endswith(".png")]
+    if not cand:
+        return False
+    f = os.path.join("/tmp", sorted(cand)[-1])
+    im = Image.open(f).convert("RGB"); os.remove(f)
+    W, H = im.size
+    b = fig.get("box") or []
+    if len(b) == 4 and all(isinstance(v, (int, float)) for v in b):
+        y0, x0, y1, x1 = [max(0, min(1000, v)) / 1000 for v in b]
+        if (y1 - y0) * (x1 - x0) >= 0.06 and y1 > y0 and x1 > x0:
+            pad = 0.012
+            im = im.crop((int(max(0, x0 - pad) * W), int(max(0, y0 - pad) * H), int(min(1, x1 + pad) * W), int(min(1, y1 + pad) * H)))
+    if im.width > 1400:
+        im = im.resize((1400, int(im.height * 1400 / im.width)), Image.LANCZOS)
+    im.save(out_path, "PNG", optimize=True)
+    return True
+
 
 
 # ---------------------------------------------------------------- Aufmacherfoto (Wikimedia Commons, freie Lizenz)
@@ -535,7 +589,7 @@ def q(v):
     return '"' + str(v).replace('"', "'").replace("\n", " ") + '"'
 
 
-def build(out, text, src_note, force=False, calc_rows=None, fmp_used=False):
+def build(out, text, src_note, force=False, calc_rows=None, fmp_used=False, figs=None):
     slug = re.sub(r"[^a-z0-9]+", "-", out["article"]["slug"].lower()).strip("-") or "bericht"
     mdpath = os.path.join(ROOT, "content", "magazin", f"{slug}.md")
     if os.path.exists(mdpath) and not force:
@@ -576,11 +630,23 @@ def build(out, text, src_note, force=False, calc_rows=None, fmp_used=False):
         hinweise.append("Berichtstext nicht lesbar, Zahlen nicht automatisch geprueft.")
     if src_note:
         hinweise.append("Quelle: " + src_note)
-    head = "".join(f"<!-- PRÜFEN: {h} -->\n" for h in hinweise) + "\n"
     chart_alt = f"{out['chart']['title']} ({out['company']}, {out['period']})"
     body_md = a["body_markdown"].strip()
+    used = []
+    for fid, f in (figs or {}).items():
+        tag = "{{FIG:" + fid + "}}"
+        if tag in body_md:
+            rel = f"assets/magazin/{slug}-{fid}.png"
+            import shutil
+            shutil.copy(f["tmp"], os.path.join(ROOT, rel)); used.append(fid)
+            alt = f["title"].replace("[", "(").replace("]", ")")
+            body_md = body_md.replace(tag, f"![{alt}](/{rel})\n*{f['title']} (Auszug aus der Veröffentlichung von {out['company']})*")
+    body_md = re.sub(r"\{\{FIG:[^}]*\}\}", "", body_md)
+    if used:
+        hinweise.append("Ausschnitte aus dem Bericht im Text (" + ", ".join(used) + "): bitte prüfen, ob Zuschnitt und Platz passen. Unpassende Bildzeilen einfach löschen.")
     parts = body_md.split("\n\n", 1)
     body_md = parts[0] + f"\n\n![{chart_alt}](/assets/magazin/{slug}-grafik.png)\n\n" + (parts[1] if len(parts) > 1 else "")
+    head = "".join(f"<!-- PRÜFEN: {h} -->\n" for h in hinweise) + "\n"
     calc_md = ""
     if calc_rows:
         calc_md = ("## Dividendenkennzahlen im Überblick (eigene Berechnung)\n\n| Kennzahl | Wert | Rechenweg |\n|---|---|---|\n"
@@ -607,7 +673,7 @@ def main():
     else:
         src = {"kind": "pdf", "path": a.pdf, "url": "", "date": ""}
     text = pdf_text(src["path"]) if src["kind"] == "pdf" else src["text"]
-    calc_rows, fmp_used = [], False
+    calc_rows, fmp_used, figs = [], False, {}
     if a.mock:
         out = json.load(open(a.mock, encoding="utf-8"))
         facts, calc_rows = derive_report(out)
@@ -629,10 +695,21 @@ def main():
         summary = json.dumps({k: out.get(k) for k in ("company", "ticker", "period", "report_date", "period_end", "prior_period_end", "kpis", "chart", "cashflow")}, ensure_ascii=False)
         fakten = "\n".join("- " + f for f in facts) if facts else "- (keine berechneten Kennzahlen verfuegbar)"
         prompt2 = read_prompt("ir_article_prompt.md") + "\n\nFAKTEN (vom Programm berechnet, Zahlen exakt so uebernehmen):\n" + fakten + "\n\nEXTRAHIERTE KENNZAHLEN (JSON):\n" + summary
+        figs = {}
+        if src["kind"] == "pdf":
+            os.makedirs("/tmp/figs", exist_ok=True)
+            for fg in (out.get("figures") or [])[:5]:
+                fid = re.sub(r"[^a-z0-9]", "", str(fg.get("id", "")).lower()) or f"f{len(figs) + 1}"
+                tmp = f"/tmp/figs/{fid}.png"
+                if render_figure(src["path"], fg, tmp):
+                    figs[fid] = {"tmp": tmp, "title": fg.get("title") or "Auszug", "page": fg.get("page"), "shows": fg.get("shows") or ""}
+        if figs:
+            prompt2 += "\n\nVERFUEGBARE AUSSCHNITTE AUS DEM BERICHT (Bilder; setze hoechstens drei davon ein):\n" + "\n".join(
+                f"- {fid}: {f['title']} | {f['shows']}" for fid, f in figs.items())
         out["article"] = _generate([doc_part(src), {"text": prompt2}], ARTICLE_SCHEMA, api_key())
         print("FAKTEN:\n" + fakten)
     note = src.get("url") or ""
-    md, g, bad, photo = build(out, text, note, a.force, calc_rows, fmp_used)
+    md, g, bad, photo = build(out, text, note, a.force, calc_rows, fmp_used, figs if not a.mock else None)
     print("Entwurf:", md); print("Grafik:", g); print("Foto:", photo["title"] if photo else "keins")
     print("Nicht verifizierte Zahlen:", bad if bad else "keine")
 
