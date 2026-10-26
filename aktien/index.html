@@ -101,6 +101,17 @@ svg text{fill:var(--mut);font-size:11px;font-family:inherit}
 .xbar input.wide{width:200px}
 .xbar .go{font:inherit;font-weight:600;font-size:15px;padding:10px 16px;border:0;border-radius:8px;background:var(--acc);color:#fff;cursor:pointer}
 .xnote{font-size:13px;color:var(--mut);margin:4px 0 14px;max-width:80ch}
+.fin{margin:22px 0}.fin h3{margin:0 0 4px;font-size:17px}.fin .fsub{color:var(--mut);font-size:13px;margin:0 0 10px}
+.fcard{border:1px solid var(--line);border-radius:8px;background:#fff;padding:14px 16px;margin:0 0 16px}
+.fscroll{overflow-x:auto}.fscroll svg{display:block;min-width:620px;width:100%;height:auto}
+.fctl{display:flex;flex-wrap:wrap;gap:8px 10px;align-items:center;margin:0 0 10px}
+.fctl select,.fctl button{font:inherit;font-size:13px;padding:6px 10px;border:1px solid var(--line);border-radius:8px;background:#fff;color:var(--ink);cursor:pointer}
+.fctl button[aria-pressed=true]{background:#e8f5ee;border-color:#2c8f5a}
+.fchips{display:flex;flex-wrap:wrap;gap:6px;margin:0 0 10px}
+.fchip{display:inline-flex;align-items:center;gap:6px;font-size:12.5px;padding:4px 10px;border:1px solid var(--line);border-radius:999px;background:#fff;cursor:pointer;color:var(--ink)}
+.fchip i{width:10px;height:10px;border-radius:3px;display:inline-block}.fchip[aria-pressed=false]{opacity:.45}
+.ftab{width:100%;border-collapse:collapse;font-size:13.5px}.ftab th,.ftab td{padding:6px 8px;border-bottom:1px solid var(--line);text-align:right;white-space:nowrap}.ftab th:first-child,.ftab td:first-child{text-align:left}
+.fnote{font-size:12.5px;color:var(--mut);margin:8px 0 0}
 .nrb{display:block;width:100%;text-align:left;padding:11px 16px;background:none;border:0;border-top:1px solid var(--line);font:inherit;color:var(--ink);cursor:pointer}
 .nri:first-child .nrb{border-top:0}.nrb:hover{background:#f0f8f3}.nrb b{display:block;font-weight:600;font-size:14.5px}.nrb span{font-size:12.5px;color:var(--mut)}
 .nrt{padding:2px 16px 14px;font-size:14px;color:var(--ink)}.nrt p{margin:.5em 0}
@@ -341,12 +352,14 @@ async function openStock(sym){
    ${bars("Gewinn je Aktie (verwässert)","Jahreswerte, "+esc(cur),inc.map(x=>({y:x.y,v:first(x,"epsDiluted","eps")})),"var(--bar2)",v=>num(v))}
    ${bars("Bruttomarge","Bruttogewinn / Umsatz",inc.map(x=>({y:x.y,v:x.revenue?x.grossProfit/x.revenue:null})),"var(--bar)",v=>num(v*100,0)+" %")}
   </div>
+  <div id="fin"></div>
   <div id="nr"></div>
   <div id="nw"></div>
   ${p.description?`<p class="desc">${esc(p.description)}</p>`:""}
   ${p.website?`<p class="desc"><a href="${esc(p.website)}" target="_blank" rel="noopener">${esc(p.website)}</a></p>`:""}`;
   $("start").hidden=true;hub.hidden=false;msg.textContent="";$("sb").onclick=()=>story(LAST);
   try{initExplorer(sym,p,cur)}catch(e){console.error(e)}
+  try{initFinance(sym,p,cur,inc,cf)}catch(e){console.error(e)}
   try{initReports(sym,p)}catch(e){console.error(e)}
   try{initNews(sym,p)}catch(e){console.error(e)}
   const L={profile:"Profil",quote:"Kurs","ratios-ttm":"Kennzahlen","key-metrics-ttm":"Kennzahlen","discounted-cash-flow":"DCF","price-target-consensus":"Kursziele",income:"Umsatz/Gewinn",cash:"Cashflow",div:"Dividenden",price:"Kursverlauf",grades:"Analysten",est:"Prognosen"};
@@ -361,6 +374,88 @@ async function openStock(sym){
     msg.className=oth.length||lim.length?"err":"";msg.innerHTML=h;msg.title=fails.map(f=>f.l+": "+f.m).join("\n");
   }
   scrollTo(0,0);
+}
+/* ===== Finanzen: Gewinnfluss, Kennzahlen uebereinander, Capex ===== */
+const FCOL=["#2563eb","#16a34a","#f59e0b","#dc2626","#7c3aed","#0891b2","#db2777","#65a30d","#475569","#ea580c","#0d9488","#9333ea","#b45309"];
+async function initFinance(sym,p,cur,inc,cf){
+  const box=$("fin");if(!box||!inc.length)return;
+  const yr=x=>String(x.fiscalYear||x.calendarYear||String(x.date).slice(0,4));
+  let bs=[];try{bs=await chain("balance-sheet-statement",{symbol:sym},[{limit:10},{limit:5},{}])}catch(e){}
+  if(!document.body.contains(box))return;
+  const B={},I={},C={};
+  inc.forEach(x=>I[String(x.y)]=x);cf.forEach(x=>C[String(x.y)]=x);(Array.isArray(bs)?bs:[]).forEach(x=>B[yr(x)]=x);
+  const years=inc.map(x=>String(x.y)).slice(-10);
+  const ab=v=>v==null?null:Math.abs(v);
+  const S=[
+    {k:"rev",l:"Umsatz",g:y=>I[y]?.revenue},{k:"gp",l:"Bruttogewinn",g:y=>I[y]?.grossProfit},{k:"op",l:"Operatives Ergebnis",g:y=>I[y]?.operatingIncome},
+    {k:"ni",l:"Nettogewinn",g:y=>I[y]?.netIncome},{k:"ocf",l:"Operativer Cashflow",g:y=>first(C[y]||{},"operatingCashFlow","netCashProvidedByOperatingActivities")},
+    {k:"fcf",l:"Freier Cashflow",g:y=>C[y]?.freeCashFlow},{k:"capex",l:"Capex (Investitionen)",g:y=>ab(C[y]?.capitalExpenditure)},
+    {k:"da",l:"Abschreibungen",g:y=>first(C[y]||{},"depreciationAndAmortization")??I[y]?.depreciationAndAmortization},
+    {k:"div",l:"Dividenden gezahlt",g:y=>ab(first(C[y]||{},"commonDividendsPaid","netDividendsPaid","dividendsPaid"))},
+    {k:"buy",l:"Aktienrückkäufe",g:y=>ab(first(C[y]||{},"commonStockRepurchased"))},
+    {k:"cash",l:"Cash",g:y=>first(B[y]||{},"cashAndCashEquivalents","cashAndShortTermInvestments")},
+    {k:"debt",l:"Schulden gesamt",g:y=>B[y]?.totalDebt},{k:"nd",l:"Nettoschulden",g:y=>B[y]?.netDebt}
+  ];
+  S.forEach((s,i)=>{s.c=FCOL[i%FCOL.length];s.v=years.map(y=>{const v=s.g(y);return v==null||isNaN(v)?null:+v})});
+  const have=S.filter(s=>s.v.some(v=>v!=null));
+  let on=new Set(["ni","fcf","cash","debt"].filter(k=>have.some(s=>s.k===k)));let mode="line",sy=years[years.length-1];
+  box.className="fin";
+  box.innerHTML=`<h3>Finanzen im Überblick</h3><p class="fsub">Jahreswerte in ${esc(cur||"Berichtswährung")}. Quelle: FMP.</p>
+  <div class="fcard"><div class="fctl"><b>Gewinnfluss</b><select id="fsy" aria-label="Jahr">${years.slice().reverse().map(y=>`<option>${y}</option>`).join("")}</select></div><div class="fscroll" id="fsk"></div><p class="fnote">Vom Umsatz bis zum Nettogewinn. Die Breite der Bänder ist proportional zum Betrag.</p></div>
+  <div class="fcard"><div class="fctl"><b>Kennzahlen übereinander legen</b><button type="button" data-m="line" aria-pressed="true">Linien</button><button type="button" data-m="bar" aria-pressed="false">Balken</button></div><div class="fchips" id="fch"></div><div class="fscroll" id="fcm"></div><p class="fnote" id="fmn"></p></div>
+  <div class="fcard"><div class="fctl"><b>Investitionen (Capex) und Dividendendeckung</b></div><div class="fscroll" id="fcx"></div><p class="fnote">Capex-Quote = Investitionen / Umsatz. Capex / Abschreibungen über 100 % heißt: Das Unternehmen investiert mehr, als sich Anlagen abnutzen. Deckung = freier Cashflow / gezahlte Dividenden; unter 100 % wird die Dividende nicht aus dem freien Cashflow bezahlt.</p></div>`;
+  /* Sankey */
+  function sankey(){
+    const x=I[sy]||{},R=x.revenue,cog=Math.max(x.costOfRevenue||0,0),gp=x.grossProfit!=null?x.grossProfit:(R!=null?R-cog:null),op=x.operatingIncome,ni=x.netIncome,tax=Math.max(x.incomeTaxExpense||0,0);
+    const el=$("fsk");if(!(R>0)||gp==null){el.innerHTML='<p class="fnote">Für dieses Jahr fehlen Umsatzdaten.</p>';return}
+    const W=760,Ht=330,top=14,gap=12,nw=14,xs=[0,230,460,W-190-nw];
+    const nodes=[],L=[];const nd=(id,col,v,lab,c)=>{if(v>0){nodes.push({id,col,v,lab,c})}};
+    nd("rev",0,R,"Umsatz","#2563eb");nd("cog",1,cog,"Herstellungskosten","#94a3b8");nd("gp",1,Math.max(gp,0),"Bruttogewinn","#16a34a");
+    const opex=Math.max(gp-(op??gp),0);
+    if(op!=null&&op>0&&gp>0){nd("opex",2,opex,"Betriebskosten","#94a3b8");nd("op",2,op,"Operatives Ergebnis","#16a34a");
+      const oth=op-tax-(ni??0);nd("tax",3,tax,"Steuern","#f59e0b");nd("oth",3,Math.abs(oth),oth>=0?"Zinsen und Sonstiges":"Sonstige Erträge","#a78bfa");nd("ni",3,Math.max(ni||0,0),"Nettogewinn","#15803d");}
+    const nm=Object.fromEntries(nodes.map(n=>[n.id,n]));
+    const lk=(a,b,v)=>{if(nm[a]&&nm[b]&&v>0)L.push({a,b,v,c:nm[b].c})};
+    lk("rev","cog",cog);lk("rev","gp",Math.max(gp,0));lk("gp","opex",opex);lk("gp","op",op>0?op:0);
+    if(nm.op){lk("op","tax",tax);lk("op","oth",nm.oth?.v||0);lk("op","ni",Math.max(ni||0,0))}
+    const sc=(Ht-top*2-gap*2)/R;let svg=`<svg viewBox="0 0 ${W} ${Ht}" role="img" aria-label="Gewinnfluss ${sy}">`;
+    for(let c=0;c<4;c++){let yy=top;nodes.filter(n=>n.col===c).forEach(n=>{n.h=Math.max(n.v*sc,2);n.y=yy;n.o=0;n.i=0;yy+=n.h+gap})}
+    L.forEach(l=>{const a=nm[l.a],b=nm[l.b],hh=l.v*sc,x0=xs[a.col]+nw,x1=xs[b.col],y0=a.y+a.o,y1=b.y+b.i;a.o+=hh;b.i+=hh;const m=(x0+x1)/2;
+      svg+=`<path d="M${x0},${y0} C${m},${y0} ${m},${y1} ${x1},${y1} L${x1},${y1+hh} C${m},${y1+hh} ${m},${y0+hh} ${x0},${y0+hh}Z" fill="${l.c}" opacity=".28"><title>${esc(a.lab)} → ${esc(b.lab)}: ${big(l.v)}</title></path>`});
+    nodes.forEach(n=>{const x0=xs[n.col],right=n.col===3,tx=right?x0+nw+8:(n.col===0?x0+nw+8:x0+nw+8);
+      svg+=`<rect x="${x0}" y="${n.y}" width="${nw}" height="${n.h}" rx="3" fill="${n.c}"/>`;
+      if(n.col===0)svg+=`<text x="${x0+nw+8}" y="${n.y+16}" font-size="13" font-weight="700" fill="#14202b">${esc(n.lab)}</text><text x="${x0+nw+8}" y="${n.y+32}" font-size="12" fill="#5d6b78">${big(n.v)}</text>`;
+      else if(right)svg+=`<text x="${tx}" y="${n.y+Math.min(n.h,40)/2}" font-size="12.5" font-weight="600" fill="#14202b">${esc(n.lab)}</text><text x="${tx}" y="${n.y+Math.min(n.h,40)/2+15}" font-size="12" fill="#5d6b78">${big(n.v)} · ${num(n.v/R*100,1)} %</text>`;
+      else svg+=`<text x="${x0+nw+6}" y="${n.y-3}" font-size="12" font-weight="600" fill="#14202b">${esc(n.lab)}</text><text x="${x0+nw+6}" y="${n.y+n.h+12}" font-size="11.5" fill="#5d6b78">${big(n.v)} · ${num(n.v/R*100,1)} %</text>`});
+    el.innerHTML=svg+"</svg>"+(op!=null&&op<=0?'<p class="fnote">In diesem Jahr war das operative Ergebnis nicht positiv, deshalb endet der Fluss beim Bruttogewinn.</p>':"");
+  }
+  /* Uebereinander */
+  function multi(){
+    $("fch").innerHTML=have.map(s=>`<button type="button" class="fchip" data-k="${s.k}" aria-pressed="${on.has(s.k)}"><i style="background:${s.c}"></i>${esc(s.l)}</button>`).join("");
+    const act=have.filter(s=>on.has(s.k)),el=$("fcm");
+    if(!act.length){el.innerHTML='<p class="fnote">Wähle oben mindestens eine Kennzahl.</p>';return}
+    const vals=act.flatMap(s=>s.v.filter(v=>v!=null)),mx=Math.max(0,...vals),mn=Math.min(0,...vals),W=760,Ht=300,l=64,r=12,t=14,b=28,iw=W-l-r,ih=Ht-t-b,rng=(mx-mn)||1;
+    const Y=v=>t+ih*(1-(v-mn)/rng),Xc=i=>l+iw*(i+.5)/years.length;
+    let svg=`<svg viewBox="0 0 ${W} ${Ht}" role="img" aria-label="Kennzahlen im Jahresvergleich">`;
+    for(let i=0;i<=4;i++){const v=mn+rng*i/4,yy=Y(v);svg+=`<line x1="${l}" x2="${W-r}" y1="${yy}" y2="${yy}" stroke="#e5eaee"/><text x="${l-6}" y="${yy+4}" text-anchor="end" font-size="11" fill="#5d6b78">${short(v)}</text>`}
+    svg+=`<line x1="${l}" x2="${W-r}" y1="${Y(0)}" y2="${Y(0)}" stroke="#9aa7b2"/>`;
+    years.forEach((y,i)=>svg+=`<text x="${Xc(i)}" y="${Ht-8}" text-anchor="middle" font-size="11" fill="#5d6b78">${y}</text>`);
+    if(mode==="bar"){const bw=Math.min(22,iw/years.length/(act.length+.6));act.forEach((s,si)=>s.v.forEach((v,i)=>{if(v==null)return;const x0=Xc(i)-bw*act.length/2+si*bw,y0=Y(Math.max(v,0)),hh=Math.max(Math.abs(Y(v)-Y(0)),1);svg+=`<rect x="${x0}" y="${y0}" width="${bw-1}" height="${hh}" fill="${s.c}" rx="2"><title>${esc(s.l)} ${years[i]}: ${big(v)}</title></rect>`}))}
+    else act.forEach(s=>{let d="";s.v.forEach((v,i)=>{if(v==null)return;d+=(d?"L":"M")+Xc(i)+","+Y(v)});svg+=`<path d="${d}" fill="none" stroke="${s.c}" stroke-width="2.4" stroke-linejoin="round"/>`;s.v.forEach((v,i)=>{if(v!=null)svg+=`<circle cx="${Xc(i)}" cy="${Y(v)}" r="3.4" fill="${s.c}"><title>${esc(s.l)} ${years[i]}: ${big(v)}</title></circle>`})});
+    el.innerHTML=svg+"</svg>";
+    const miss=S.filter(s=>!have.includes(s)).map(s=>s.l);$("fmn").textContent=miss.length?"Nicht verfügbar: "+miss.join(", ")+" (im FMP-Tarif oder in den Daten nicht enthalten).":"";
+  }
+  /* Capex-Tabelle */
+  function capex(){
+    const g=k=>S.find(s=>s.k===k),cx=g("capex"),rv=g("rev"),da=g("da"),dv=g("div"),fc=g("fcf");
+    const pc=(a,b)=>a==null||b==null||!b?"–":num(a/b*100,0)+" %";
+    let h=`<table class="ftab"><thead><tr><th>Jahr</th><th>Capex</th><th>Capex-Quote</th><th>Capex / Abschreibungen</th><th>Dividenden</th><th>Deckung aus FCF</th></tr></thead><tbody>`;
+    years.slice().reverse().forEach(y=>{const i=years.indexOf(y);h+=`<tr><td>${y}</td><td>${big(cx.v[i])}</td><td>${pc(cx.v[i],rv.v[i])}</td><td>${pc(cx.v[i],da.v[i])}</td><td>${big(dv.v[i])}</td><td>${pc(fc.v[i],dv.v[i])}</td></tr>`});
+    $("fcx").innerHTML=cx.v.some(v=>v!=null)?h+"</tbody></table>":'<p class="fnote">Für dieses Unternehmen liegen keine Cashflow-Daten vor.</p>';
+  }
+  $("fsy").onchange=e=>{sy=e.target.value;sankey()};$("fsy").value=sy;
+  box.addEventListener("click",e=>{const c=e.target.closest(".fchip");if(c){on.has(c.dataset.k)?on.delete(c.dataset.k):on.add(c.dataset.k);multi();return}const m=e.target.closest("button[data-m]");if(m){mode=m.dataset.m;box.querySelectorAll("button[data-m]").forEach(x=>x.setAttribute("aria-pressed",x===m));multi()}});
+  sankey();multi();capex();
 }
 /* ===== Unternehmensmeldungen (IR-Feeds und SEC, vom GitHub-Workflow in data/news.json gesammelt) ===== */
 function initReports(sym,p){
