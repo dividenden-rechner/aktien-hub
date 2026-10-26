@@ -191,6 +191,7 @@ table.dt{border-collapse:collapse;width:100%;font-size:.9rem;min-width:620px}
 <body class="tools">
 <header id="hub-global-header"><div class="hub-nav-inner"><a class="hub-brand" href="../"><img class="hub-logo" src="../assets/logo.png" alt="" width="36" height="36"> <span class="hub-brand-name">Dividenden-Rechner <span>Aktien-Hub</span></span></a><nav class="hub-links" aria-label="Hauptmenü"><a href="../">Rechner</a><a href="../aktien/">Aktien</a><a href="../depot/" aria-current="page">Depot</a><a href="../news/">News</a><a href="../earnings/">Earnings</a><a href="../screener/">Screener</a><a href="../einfuehrung/">Einführung</a><a href="../grundlagen/">Grundlagen</a><a href="../fortgeschrittene/">Fortgeschrittene</a></nav></div></header>
 <script src="../assets/navigation.js"></script>
+<script src="../assets/fmpcount.js"></script>
 <script src="../assets/logos.js"></script>
 <main class="wrap"><article class="wide">
 <nav class="crumbs" aria-label="Brotkrumen"><a href="../">Start</a> › <span aria-current="page">Depot</span></nav>
@@ -948,6 +949,9 @@ table.dt{border-collapse:collapse;width:100%;font-size:.9rem;min-width:620px}
             var dv = await fmp("dividends", { symbol: m.sym }), rowsD = Array.isArray(dv) ? dv : (dv && dv.historical) || [];
             var h = C.dpsHistory(rowsD, today), fx2 = await fxRate(m.cur || "USD");
             m.dps = fx2 ? h.ttm / fx2 : null; m.dpsN = h.n; m.g = h.cagr; m.streak = h.streak; m.dpsTs = Date.now();
+            var hl = []; rowsD.forEach(function (x) { var d0 = String(x.date || "").slice(0, 10), a0 = Number(x.adjDividend != null ? x.adjDividend : x.dividend); if (d0 && a0 > 0 && d0 > C.addDays(today, -430) && d0 <= today && fx2) hl.push({ d: d0, p: String(x.paymentDate || "").slice(0, 10), a: a0 / fx2 }); });
+            hl.sort(function (a, b) { return a.d < b.d ? -1 : a.d > b.d ? 1 : 0; });
+            m.divHist = hl.filter(function (x, i) { var l = hl[i - 1]; return !(l && Math.abs(l.a - x.a) <= l.a * 0.001 && C.dayN(x.d) - C.dayN(l.d) <= 10); });
             var nowD = new Date(Date.now() - 20 * 864e5).toISOString().slice(0, 10);
             m.divUp = fx2 ? rowsD.filter(function (x) { var pd = x.paymentDate || x.date; return x.date >= nowD || (pd && pd >= today); }).slice(0, 12).map(function (x) { return { d: x.date, p: x.paymentDate || "", a: Number(x.dividend != null ? x.dividend : x.adjDividend) / fx2 }; }).filter(function (x) { return x.a > 0; }) : [];
           }
@@ -964,6 +968,10 @@ table.dt{border-collapse:collapse;width:100%;font-size:.9rem;min-width:620px}
   var sortK = "value", sortD = -1;
   function renderInsight() {
     var r = rows(), t = totals(), act = r.filter(function (x) { return !x.closed; });
+    var warn = $("in-warn"); if (!warn) { warn = document.createElement("p"); warn.id = "in-warn"; warn.className = "dmsg err"; $("in-kpis").parentNode.insertBefore(warn, $("in-kpis")); }
+    var noLive = act.filter(function (x) { return x.src !== "FMP" && x.src !== "manuell"; }), pv = noLive.reduce(function (a, x) { return a + x.value; }, 0);
+    warn.hidden = !noLive.length;
+    if (noLive.length) warn.innerHTML = "<b>" + noLive.length + " von " + act.length + " Positionen ohne aktuellen Kurs</b> (" + noLive.slice(0, 6).map(function (x) { return esc(x.name) + " (" + x.src + ")"; }).join(", ") + (noLive.length > 6 ? " …" : "") + "). Für diese wird der letzte Handelskurs aus dem Import bzw. dein Einstand angesetzt, Kursgewinn und Depotwert stimmen daher nicht. Meist ist das Tageslimit des FMP-Gratis-Keys (250 Aufrufe, geteilt mit Screener und Aktienseite) aufgebraucht: morgen unter „Kurse aktualisieren“ erneut laden. Nicht-US-Titel liefert der Gratis-Tarif oft gar nicht, dort hilft ein Klick auf den Kurs in der Tabelle (manueller Kurs).";
     $("in-kpis").innerHTML = kpi("Depotwert", eur(t.value)) + kpi("Investiert (Einstand)", eur(t.cost), "blue") + kpi("Kursgewinn", eur(t.unreal) + "<small> " + (t.cost > 0 ? pct(t.unreal / t.cost) : "") + "</small>", sg(t.unreal) === "neg" ? "negk" : "") + kpi("Dividenden gesamt", eur(t.divs)) + kpi("Gesamtgewinn", eur(t.total) + "<small> " + (t.base > 0 ? pct(t.total / t.base) : "") + "</small>", sg(t.total) === "neg" ? "negk" : "");
     var g = $("in-group").value, groups = {};
     act.forEach(function (x) { var k = g === "type" ? TYPES[x.type] : g === "pos" ? x.name : g === "sector" ? (x.sector || "Unbekannt") : (x.country || "Unbekannt"); groups[k] = (groups[k] || 0) + x.value; });
@@ -1028,12 +1036,29 @@ table.dt{border-collapse:collapse;width:100%;font-size:.9rem;min-width:620px}
       var di = dpsInfo(r, "auto", taxRate), cur = di.dps > 0 ? di.dps : null;
       decl.forEach(function (x) { ev.push({ key: r.key, name: r.name, pay: x.p || "", ex: x.d, dps: x.a, shares: r.shares, cur: cur, amount: r.shares * x.a * (1 - taxRate), src: "FMP" }); });
       var g = m.g == null ? 0 : Math.max(-0.05, Math.min(0.15, m.g));
+      var hist = (m.divHist || []).filter(function (x) { return x.d > cut; });
+      if (hist.length) {
+        /* Zahlungsrhythmus aus der FMP-Dividendenhistorie (zuverlässiger als einzelne Buchungen im Import) */
+        hist.forEach(function (h) {
+          var ex = C.addDays(h.d, 365), pay = h.p ? C.addDays(h.p, 365) : "", q = pay || ex;
+          if (q < today || q > end) return;
+          if (decl.some(function (x) { return Math.abs(C.dayN(x.p || x.d) - C.dayN(q)) < 25; })) return;
+          var a = h.a * (1 + g);
+          ev.push({ key: r.key, name: r.name, pay: pay, ex: ex, dps: a, shares: r.shares, cur: cur, amount: r.shares * a * (1 - taxRate), src: "Schätzung" });
+        });
+        return;
+      }
+      /* Ohne FMP-Historie: eigene Zahlungen des letzten Jahres, Buchungen am selben Tag gebündelt */
+      var byDay = {};
       S.tx.forEach(function (t) {
         if (t.type !== "div" || t.key !== r.key || t.date < cut || t.date > today || !(t.amount > 0)) return;
-        var d = C.addDays(t.date, 365), f = t.shares > 0 ? r.shares / t.shares : 1;
-        if (d < today) return;
+        var f = t.shares > 0 ? r.shares / t.shares : 1, o = byDay[t.date] = byDay[t.date] || { amt: 0 };
+        o.amt += t.amount * f * (1 + g);
+      });
+      Object.keys(byDay).forEach(function (day) {
+        var d = C.addDays(day, 365); if (d < today) return;
         if (decl.some(function (x) { return Math.abs(C.dayN(x.p || x.d) - C.dayN(d)) < 25; })) return;
-        var amt = t.amount * f * (1 + g);
+        var amt = byDay[day].amt;
         ev.push({ key: r.key, name: r.name, pay: d, ex: "", dps: r.shares > 0 ? amt / r.shares : null, shares: r.shares, cur: cur, amount: amt, src: "Schätzung" });
       });
     });
@@ -1042,7 +1067,7 @@ table.dt{border-collapse:collapse;width:100%;font-size:.9rem;min-width:620px}
   function renderCal() {
     var tx = Math.max(0, Math.min(60, C.num($("ka-tax").value, ",") == null ? 26.375 : C.num($("ka-tax").value, ","))) / 100, mode = $("ka-mode").value;
     var ev = calEvents(tx);
-    ev.forEach(function (e) { e.date = mode === "ex" ? (e.ex || e.pay) : (e.pay || e.ex); e.approx = mode === "ex" ? !e.ex : !e.pay || e.src === "Schätzung"; });
+    ev.forEach(function (e) { e.date = mode === "ex" ? (e.ex || e.pay) : (e.pay || e.ex); e.approx = mode === "ex" ? (!e.ex || e.src !== "FMP") : (!e.pay || e.src !== "FMP"); });
     ev.sort(function (a, b) { return a.date < b.date ? -1 : a.date > b.date ? 1 : 0; });
     var by = {}, tot = 0, in30 = 0, lim30 = C.addDays(today, 30);
     ev.forEach(function (e) { var k = e.date.slice(0, 7); (by[k] = by[k] || []).push(e); tot += e.amount; if (e.date <= lim30) in30 += e.amount; });
@@ -1078,7 +1103,7 @@ table.dt{border-collapse:collapse;width:100%;font-size:.9rem;min-width:620px}
     if (mode === "own") { dps = own || 0; src = own ? "eigene Zahlungen" : "keine"; }
     else if (mode === "fmp") { dps = ext || 0; src = ext ? "FMP" : "keine"; }
     else if (ext && !bad) { dps = ext; src = "FMP"; }
-    else if (own) { dps = own; src = "eigene Zahlungen"; if (bad) flag += ", eigene Zahlungen genutzt"; }
+    else if (own) { dps = own; src = "eigene Zahlungen"; if (bad) flag += ", eigene Zahlungen genutzt"; if (n > 13) flag += (flag ? ", " : "") + n + " Zahlungen in 12 Monaten sind ungewöhnlich viele, Import auf Doppelbuchungen prüfen"; }
     else if (ext) { dps = ext; src = "FMP"; }
     return { dps: dps, src: src, flag: flag, ext: ext, own: own, n: n, nExt: m.dpsN || null };
   }
