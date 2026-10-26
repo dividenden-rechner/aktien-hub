@@ -10,13 +10,6 @@ kpis: genau 4 Kennzahlen, die für Dividendenanleger am wichtigsten sind (typisc
 
 chart: eine Datenreihe mit 4 bis 6 Balken, die die Geschichte des Quartals zeigt, zum Beispiel Mengenwachstum oder organisches Umsatzwachstum nach Regionen oder Segmenten in Prozent. Alle Werte müssen aus derselben Tabelle des Berichts stammen.
 
-article:
-- title: unter 70 Zeichen, konkret, mit Unternehmen und Kern der Nachricht, kein Clickbait.
-- description: ein bis zwei Sätze, unter 160 Zeichen.
-- slug: kleinbuchstaben-mit-bindestrichen, mit Unternehmen und Quartal, zum Beispiel coca-cola-q2-2026.
-- body_markdown: 450 bis 700 Wörter, sachlich und journalistisch, ohne Floskeln und ohne Werbesprache. Beginne mit einem Einstieg von zwei bis drei Sätzen, der das Wichtigste nennt. Nutze Zwischenüberschriften (##). Erkläre kurz, was für Dividendenanleger daran relevant ist (Wachstumstreiber, Marge, Cashflow, Ausblick), und nenne mindestens einen Punkt, der kritisch zu sehen ist oder offen bleibt. Gib keine Kauf- oder Verkaufsempfehlung, keine Kursziele. Füge keine Überschrift erster Ebene (#) ein und keine Tabelle der Kennzahlen, die wird automatisch angehängt. Verweise auf Grundlagen-Seiten nur mit diesen Links: [Payout Ratio](/grundlagen/ausschuettungsquote/), [KGV](/grundlagen/kgv/).
+period_end und prior_period_end: Enddatum des Berichtszeitraums und des Vergleichszeitraums im Vorjahr (stehen in den Überschriften der Tabellen, zum Beispiel "Six Months Ended July 3, 2026 / June 27, 2025").
 
-Ton und Nüchternheit (wichtig):
-- Übernimm keine Werbe- oder Selbstdarstellungssprache des Unternehmens. Wörter wie "stark", "robust", "überzeugend", "beeindruckend", "Meilenstein" vermeidest du, außer eine Zahl belegt es unmittelbar. Marketingaussagen des Unternehmens (Kampagnen, Innovationen, Reichweite) erwähnst du höchstens kurz und kennzeichnest sie als Aussage des Unternehmens ("nach Unternehmensangaben").
-- Schreibe nichts, was nicht im Bericht steht und was du nur aus Allgemeinwissen ableitest. Insbesondere keine Aussagen wie "das untermauert die Fähigkeit, Dividenden stabil zu halten" oder Folgerungen zur Dividendensicherheit, solange der Bericht dazu keine Zahl nennt (Dividende je Aktie, Ausschüttungsquote). Wenn du die Relevanz für Dividendenanleger erklärst, bleibe bei dem, was die Zahlen zeigen, und sage offen, was der Bericht nicht beantwortet.
-- Kurze, klare Sätze. Keine Ausrufe, keine rhetorischen Fragen.
+cashflow: Aus der Kapitalflussrechnung des Berichts (Zeitraum "seit Jahresbeginn" bzw. der längste angegebene Zeitraum, nicht das Einzelquartal, falls nur Halbjahres- oder Neunmonatswerte dastehen). operating_cash_flow = Netto-Cashflow aus laufender Geschäftstätigkeit, capex = Investitionen in Sachanlagen (positiv), dividends_paid = gezahlte Dividenden (positiv), share_repurchases = Aktienrückkäufe (positiv, wenn ausgewiesen), prior_dividends_paid = gezahlte Dividenden im Vorjahreszeitraum. Zahlen exakt wie im Bericht, in der Berichtseinheit (meist Millionen). Wenn der Bericht keine Kapitalflussrechnung enthält, lass cashflow weg. Rechne hier nichts aus.

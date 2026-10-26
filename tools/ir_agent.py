@@ -19,13 +19,16 @@ ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 CFG = json.load(open(os.path.join(ROOT, "tools", "ir_config.json"), encoding="utf-8"))
 MODEL = os.environ.get("GEMINI_MODEL") or CFG.get("model", "gemini-2.5-flash")
 
-SCHEMA = {
+NUM = {"type": "NUMBER"}
+SCHEMA = {   # Aufruf 1: Zahlen aus dem Bericht
     "type": "OBJECT",
-    "required": ["company", "period", "report_date", "kpis", "chart", "article"],
+    "required": ["company", "period", "report_date", "kpis", "chart"],
     "properties": {
         "company": {"type": "STRING"}, "ticker": {"type": "STRING"},
         "period": {"type": "STRING", "description": "z. B. Q2 2026"},
         "report_date": {"type": "STRING", "description": "YYYY-MM-DD"},
+        "period_end": {"type": "STRING", "description": "Ende des Berichtszeitraums, YYYY-MM-DD"},
+        "prior_period_end": {"type": "STRING", "description": "Ende des Vergleichszeitraums im Vorjahr, YYYY-MM-DD"},
         "kpis": {"type": "ARRAY", "items": {"type": "OBJECT",
             "required": ["label", "value"],
             "properties": {"label": {"type": "STRING"}, "value": {"type": "STRING", "description": "Wert exakt wie im Bericht, z. B. 13,4 Mrd. USD"},
@@ -35,10 +38,16 @@ SCHEMA = {
             "properties": {"title": {"type": "STRING"}, "unit": {"type": "STRING"}, "page": {"type": "INTEGER", "description": "0 wenn keine Seiten"},
                            "bars": {"type": "ARRAY", "items": {"type": "OBJECT", "required": ["label", "value"],
                                "properties": {"label": {"type": "STRING"}, "value": {"type": "NUMBER"}}}}}},
-        "article": {"type": "OBJECT", "required": ["title", "description", "slug", "body_markdown"],
-            "properties": {"title": {"type": "STRING"}, "description": {"type": "STRING"}, "slug": {"type": "STRING"},
-                           "body_markdown": {"type": "STRING"}}},
+        "cashflow": {"type": "OBJECT", "description": "Aus der Kapitalflussrechnung des Berichts, Zahlen exakt wie dort (positiv, in der Berichtseinheit)",
+            "properties": {"period_label": {"type": "STRING", "description": "z. B. Halbjahr 2026 oder 6 Monate"}, "unit": {"type": "STRING", "description": "z. B. Mio. USD"},
+                           "operating_cash_flow": NUM, "capex": NUM, "dividends_paid": NUM, "share_repurchases": NUM,
+                           "prior_dividends_paid": NUM, "page": {"type": "INTEGER"}}},
     },
+}
+ARTICLE_SCHEMA = {   # Aufruf 2: Artikeltext
+    "type": "OBJECT", "required": ["title", "description", "slug", "body_markdown"],
+    "properties": {"title": {"type": "STRING"}, "description": {"type": "STRING"}, "slug": {"type": "STRING"},
+                   "body_markdown": {"type": "STRING"}},
 }
 
 
@@ -101,16 +110,21 @@ def api_key():
     return key
 
 
-def call_gemini(src, prompt):
-    key = api_key()
+def doc_part(src):
     if src["kind"] == "pdf":
         data = open(src["path"], "rb").read()
         if len(data) > 18 * 1024 * 1024:
             fail("PDF ist groesser als 18 MB, bitte kuerzen.")
-        doc = {"inline_data": {"mime_type": "application/pdf", "data": base64.b64encode(data).decode()}}
-    else:
-        doc = {"text": "BERICHT (Text der Pressemitteilung):\n\n" + src["text"][:600000]}
-    return _generate([doc, {"text": prompt}], SCHEMA, key)
+        return {"inline_data": {"mime_type": "application/pdf", "data": base64.b64encode(data).decode()}}
+    return {"text": "BERICHT (Text der Pressemitteilung):\n\n" + src["text"][:600000]}
+
+
+def call_gemini(src, prompt, schema=None):
+    return _generate([doc_part(src), {"text": prompt}], schema or SCHEMA, api_key())
+
+
+def read_prompt(name):
+    return open(os.path.join(ROOT, "tools", name), encoding="utf-8").read()
 
 
 def candidate_models(key):
@@ -163,6 +177,13 @@ def check_numbers(out, text):
                 if not any(c and c in flat_raw for c in cand):
                     bad.append(f"{k['label']} ({field}: {v})")
                     break
+    cf = out.get("cashflow") or {}
+    for f in ("operating_cash_flow", "capex", "dividends_paid", "share_repurchases", "prior_dividends_paid"):
+        v = cf.get(f)
+        if v:
+            cands = {f"{v:,.0f}", f"{v:,.0f}".replace(",", "."), f"{v:,.0f}".replace(",", " "), "%g" % v}
+            if not any(c in flat_raw for c in cands):
+                bad.append(f"Kapitalflussrechnung {f}: {v:g}")
     for b in out["chart"]["bars"]:
         n = ("%g" % b["value"])
         if not any(c in flat_raw for c in {n, n.replace(".", ",")}):
@@ -319,6 +340,99 @@ def save_photo(c, slug):
     return rel
 
 
+# ---------------------------------------------------------------- Berechnete Dividenden-Kennzahlen
+def de(v, d=1):
+    return f"{v:,.{d}f}".replace(",", "X").replace(".", ",").replace("X", ".")
+
+
+def derive_report(out):
+    """Quoten aus der Kapitalflussrechnung des Berichts (rein rechnerisch, vom Programm berechnet)."""
+    cf = out.get("cashflow") or {}
+    cfo, capex, div = cf.get("operating_cash_flow"), cf.get("capex"), cf.get("dividends_paid")
+    if not (cfo and capex is not None and div):
+        return [], []
+    u, per = cf.get("unit") or "", cf.get("period_label") or "Berichtszeitraum"
+    fcf = cfo - capex
+    facts, rows = [], []
+    facts.append(f"Rechnerischer Free Cashflow {per} = operativer Cashflow {de(cfo,0)} minus Investitionen in Sachanlagen {de(capex,0)} = {de(fcf,0)} {u}.")
+    rows.append((f"Free Cashflow, rechnerisch ({per})", f"{de(fcf,0)} {u}", f"{de(cfo,0)} − {de(capex,0)}"))
+    facts.append(f"Gezahlte Dividenden {per}: {de(div,0)} {u}" + (f" (Vorjahreszeitraum: {de(cf['prior_dividends_paid'],0)} {u})." if cf.get("prior_dividends_paid") else "."))
+    rows.append((f"Gezahlte Dividenden ({per})", f"{de(div,0)} {u}", "Kapitalflussrechnung"))
+    if fcf > 0:
+        facts.append(f"Dividenden in Prozent des rechnerischen Free Cashflows ({per}): {de(div / fcf * 100, 0)} %.")
+        rows.append((f"Dividenden / Free Cashflow ({per})", f"{de(div / fcf * 100, 0)} %", f"{de(div,0)} ÷ {de(fcf,0)}"))
+        if cf.get("share_repurchases"):
+            tot = div + cf["share_repurchases"]
+            facts.append(f"Dividenden plus Aktienrueckkaeufe ({de(cf['share_repurchases'],0)} {u}) in Prozent des Free Cashflows: {de(tot / fcf * 100, 0)} %.")
+            rows.append((f"Dividenden + Rückkäufe / Free Cashflow ({per})", f"{de(tot / fcf * 100, 0)} %", f"({de(div,0)} + {de(cf['share_repurchases'],0)}) ÷ {de(fcf,0)}"))
+    return facts, rows
+
+
+def fmp_get(path, **params):
+    key = os.environ.get("FMP_API_KEY")
+    if not key:
+        return None
+    qs = urllib.parse.urlencode({**params, "apikey": key})
+    try:
+        return json.loads(http(f"https://financialmodelingprep.com/stable/{path}?{qs}", timeout=60))
+    except urllib.error.HTTPError as e:
+        print(f"FMP {path}: HTTP {e.code}")
+    except Exception as e:
+        print(f"FMP {path}: {type(e).__name__}")
+    return None
+
+
+def fmp_metrics(symbol):
+    """Dividendenkennzahlen aus FMP (nur mit FMP_API_KEY, praktisch nur US-Titel). Gibt (facts, rows) zurueck."""
+    if not symbol or not os.environ.get("FMP_API_KEY"):
+        return [], []
+    q = fmp_get("quote", symbol=symbol); dv = fmp_get("dividends", symbol=symbol)
+    inc = fmp_get("income-statement", symbol=symbol, period="quarter", limit=4)
+    cfs = fmp_get("cash-flow-statement", symbol=symbol, period="quarter", limit=4)
+    if not (isinstance(q, list) and q and isinstance(dv, list) and dv):
+        print("FMP: keine Kurs-/Dividendendaten fuer", symbol); return [], []
+    price = float(q[0].get("price") or 0); today = date.today()
+    ds = sorted([(x["date"], float(x.get("dividend") or 0)) for x in dv if x.get("date") and float(x.get("dividend") or 0) > 0], reverse=True)
+    last12 = [a for d, a in ds if (today - datetime.strptime(d[:10], "%Y-%m-%d").date()).days <= 365]
+    n12 = len(last12)
+    facts, rows = [], []
+    src = f"Financial Modeling Prep, Stand {today.strftime('%d.%m.%Y')}"
+    if n12 and price > 0:
+        run = ds[0][1] * n12
+        facts.append(f"[{src}] Aktuelle Jahresdividende hochgerechnet: {de(run,2)} USD je Aktie ({n12} Zahlungen in 12 Monaten, letzte Zahlung {de(ds[0][1],2)} USD), Kurs {de(price,2)} USD, Dividendenrendite {de(run / price * 100, 1)} %.")
+        rows.append(("Dividendenrendite", f"{de(run / price * 100, 1)} %", f"{de(run,2)} USD ÷ Kurs {de(price,2)} USD"))
+        eps = sum(float(x.get("epsDiluted") if x.get("epsDiluted") is not None else (x.get("eps") or 0)) for x in (inc or [])) if isinstance(inc, list) and len(inc) >= 4 else None
+        if eps and eps > 0:
+            facts.append(f"[{src}] Ergebnis je Aktie der letzten vier Quartale {de(eps,2)} USD: Ausschuettungsquote {de(run / eps * 100, 0)} %, KGV {de(price / eps, 1)}.")
+            rows.append(("Ausschüttungsquote (Ergebnis je Aktie)", f"{de(run / eps * 100, 0)} %", f"{de(run,2)} USD ÷ {de(eps,2)} USD (4 Quartale)"))
+            rows.append(("KGV", de(price / eps, 1), f"Kurs ÷ {de(eps,2)} USD"))
+        if isinstance(cfs, list) and len(cfs) >= 4:
+            fcf = sum(float(x.get("freeCashFlow") or 0) for x in cfs)
+            dp = abs(sum(float(x.get("commonDividendsPaid") if x.get("commonDividendsPaid") is not None else (x.get("netDividendsPaid") or 0)) for x in cfs))
+            if fcf > 0 and dp > 0:
+                facts.append(f"[{src}] Letzte vier Quartale: Free Cashflow {de(fcf / 1e6,0)} Mio. USD, gezahlte Dividenden {de(dp / 1e6,0)} Mio. USD, Anteil {de(dp / fcf * 100, 0)} %.")
+                rows.append(("Dividenden / Free Cashflow (12 Monate)", f"{de(dp / fcf * 100, 0)} %", f"{de(dp / 1e6,0)} ÷ {de(fcf / 1e6,0)} Mio. USD"))
+    yr = {}
+    for d, a in ds:
+        yr[int(d[:4])] = yr.get(int(d[:4]), 0) + a
+    full = sorted(y for y in yr if y < today.year)
+    if len(full) >= 2:
+        streak = 0
+        for y in reversed(full[1:]):
+            if yr[y] > yr[y - 1] * 1.0005 if (y - 1) in yr else False:
+                streak += 1
+            else:
+                break
+        facts.append(f"[{src}] Dividende je Aktie in Folge erhöht: {streak} Jahre (bis {full[-1]}, jeweils Summe der Kalenderjahre).")
+        rows.append(("Dividendenerhöhungen in Folge", f"{streak} Jahre", f"Kalenderjahressummen bis {full[-1]}"))
+        y0 = full[-1] - 5
+        if y0 in yr and yr[y0] > 0:
+            cagr = (yr[full[-1]] / yr[y0]) ** (1 / 5) - 1
+            facts.append(f"[{src}] Dividendenwachstum {y0}–{full[-1]}: {de(cagr * 100, 1)} % pro Jahr.")
+            rows.append((f"Dividendenwachstum {y0}–{full[-1]}", f"{de(cagr * 100, 1)} % p. a.", "Kalenderjahressummen"))
+    return facts, rows
+
+
 
 def font(size, bold=False):
     for f in (("/usr/share/fonts/opentype/inter/Inter-Bold.otf" if bold else "/usr/share/fonts/opentype/inter/Inter-Regular.otf"),
@@ -395,7 +509,7 @@ def q(v):
     return '"' + str(v).replace('"', "'").replace("\n", " ") + '"'
 
 
-def build(out, text, src_note, force=False):
+def build(out, text, src_note, force=False, calc_rows=None, fmp_used=False):
     slug = re.sub(r"[^a-z0-9]+", "-", out["article"]["slug"].lower()).strip("-") or "bericht"
     mdpath = os.path.join(ROOT, "content", "magazin", f"{slug}.md")
     if os.path.exists(mdpath) and not force:
@@ -435,9 +549,14 @@ def build(out, text, src_note, force=False):
     body_md = a["body_markdown"].strip()
     parts = body_md.split("\n\n", 1)
     body_md = parts[0] + f"\n\n![{chart_alt}](/assets/magazin/{slug}-grafik.png)\n\n" + (parts[1] if len(parts) > 1 else "")
+    calc_md = ""
+    if calc_rows:
+        calc_md = ("## Dividendenkennzahlen im Überblick (eigene Berechnung)\n\n| Kennzahl | Wert | Rechenweg |\n|---|---|---|\n"
+                   + "\n".join(f"| {a} | {b} | {c} |" for a, b, c in calc_rows) + "\n\n")
+    quelle_txt = f"{out['company']}, Pressemitteilung zum {out['period']} vom {out['report_date']}" + (f"; Kurs- und Dividendendaten: Financial Modeling Prep" if fmp_used else "")
     body = (head + body_md + "\n\n## Die wichtigsten Zahlen im Überblick\n\n"
-            "| Kennzahl | Wert | Veränderung zum Vorjahr | Quelle |\n|---|---|---|---|\n" + rows + "\n\n"
-            f"*Quelle: {out['company']}, Pressemitteilung zum {out['period']} vom {out['report_date']}. Keine Anlageberatung.*\n")
+            "| Kennzahl | Wert | Veränderung zum Vorjahr | Quelle |\n|---|---|---|---|\n" + rows + "\n\n" + calc_md +
+            f"*Quelle: {quelle_txt}. Rechenwege eigene Berechnung. Keine Anlageberatung.*\n")
     open(mdpath, "w", encoding="utf-8").write("\n".join(fm) + body)
     return mdpath, gpath, bad, photo
 
@@ -456,13 +575,24 @@ def main():
     else:
         src = {"kind": "pdf", "path": a.pdf, "url": "", "date": ""}
     text = pdf_text(src["path"]) if src["kind"] == "pdf" else src["text"]
+    calc_rows, fmp_used = [], False
     if a.mock:
         out = json.load(open(a.mock, encoding="utf-8"))
+        facts, calc_rows = derive_report(out)
     else:
-        prompt = open(os.path.join(ROOT, "tools", "ir_prompt.md"), encoding="utf-8").read()
-        out = call_gemini(src, prompt)
+        out = call_gemini(src, read_prompt("ir_prompt.md"))
+        facts, calc_rows = derive_report(out)
+        sym = (a.ticker or out.get("ticker") or "").upper()
+        ff, fr = fmp_metrics(sym) if re.match(r"^[A-Z0-9.\-]{1,10}$", sym) else ([], [])
+        if ff:
+            facts += ff; calc_rows += fr; fmp_used = True
+        summary = json.dumps({k: out.get(k) for k in ("company", "ticker", "period", "report_date", "period_end", "prior_period_end", "kpis", "chart", "cashflow")}, ensure_ascii=False)
+        fakten = "\n".join("- " + f for f in facts) if facts else "- (keine berechneten Kennzahlen verfuegbar)"
+        prompt2 = read_prompt("ir_article_prompt.md") + "\n\nFAKTEN (vom Programm berechnet, Zahlen exakt so uebernehmen):\n" + fakten + "\n\nEXTRAHIERTE KENNZAHLEN (JSON):\n" + summary
+        out["article"] = _generate([doc_part(src), {"text": prompt2}], ARTICLE_SCHEMA, api_key())
+        print("FAKTEN:\n" + fakten)
     note = src.get("url") or ""
-    md, g, bad, photo = build(out, text, note, a.force)
+    md, g, bad, photo = build(out, text, note, a.force, calc_rows, fmp_used)
     print("Entwurf:", md); print("Grafik:", g); print("Foto:", photo["title"] if photo else "keins")
     print("Nicht verifizierte Zahlen:", bad if bad else "keine")
 
