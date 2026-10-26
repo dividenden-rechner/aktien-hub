@@ -8,7 +8,7 @@ category: Zahlen
 image: assets/magazin/coca-cola-q2-2026-grafik.png
 image_alt: "Grafik: Organisches Umsatzwachstum nach Segmenten (Q2 2026) bei The Coca-Cola Company (Q2 2026)"
 ---
-Die Coca-Cola Company hat die Ergebnisse für das zweite Quartal 2026 vorgelegt und gleichzeitig ihre Prognose für das Gesamtjahr angehoben. Getragen von einem weltweiten Mengenwachstum und soliden Preisanpassungen stieg der berichtete Nettoumsatz im Vergleich zum Vorjahresquartal um 7 Prozent auf 13,4 Milliarden USD. Das Unternehmen profitierte von einer robusten Nachfrage nach Erfrischungsgetränken und einer starken Marktorientierung bei globalen Marketingkampagnen.
+Die Coca-Cola Company hat die Ergebnisse für das zweite Quartal 2026 vorgelegt und gleichzeitig ihre Prognose für das Gesamtjahr angehoben. Getragen von einem weltweiten Mengenwachstum und soliden Preisanpassungen stieg der berichtete Nettoumsatz im Vergleich zum Vorjahresquartal um 7 Prozent auf 13,4 Milliarden USD.
 
 ## Umsatz- und Gewinnentwicklung im Detail
 
@@ -26,7 +26,7 @@ In der Region Asien-Pazifik kletterte das Kistenvolumen zwar um 8 Prozent, aller
 
 Für Dividendeninvestoren sind neben der laufenden Ertragskraft vor allem der Cashflow und die Bewertung über Kennzahlen wie das [KGV](/grundlagen/kgv/) relevant. Der Cashflow aus der Geschäftstätigkeit belief sich in den ersten sechs Monaten des Jahres 2026 auf 7,5 Milliarden USD. Nach Abzug der Investitionen in Sachanlagen ergab sich ein Free Cashflow von 6,9 Milliarden USD.
 
-Aufgrund der guten Geschäftsentwicklung hob das Management die Ziele für das Gesamtjahr 2026 an. Das organische Umsatzwachstum wird nun bei etwa 5 Prozent erwartet (zuvor 4 bis 5 Prozent). Der vergleichbare währungsneutrale Gewinn je Aktie ohne Übernahmen und Verkäufe soll um 7 bis 8 Prozent zulegen (zuvor 6 bis 7 Prozent). Für das Gesamtjahr prognostiziert das Unternehmen nun einen Free Cashflow von rund 12,4 Milliarden USD (zuvor etwa 12,2 Milliarden USD), basierend auf einem operativen Cashflow von 14,6 Milliarden USD und Investitionen von 2,2 Milliarden USD. Die kontinuierliche Generierung von freiem Cashflow untermauert die Fähigkeit des Konzerns, Ausschüttungen stabil zu halten, was sich direkt auf die [Payout Ratio](/grundlagen/ausschuettungsquote/) auswirkt.
+Aufgrund der guten Geschäftsentwicklung hob das Management die Ziele für das Gesamtjahr 2026 an. Das organische Umsatzwachstum wird nun bei etwa 5 Prozent erwartet (zuvor 4 bis 5 Prozent). Der vergleichbare währungsneutrale Gewinn je Aktie ohne Übernahmen und Verkäufe soll um 7 bis 8 Prozent zulegen (zuvor 6 bis 7 Prozent). Für das Gesamtjahr prognostiziert das Unternehmen nun einen Free Cashflow von rund 12,4 Milliarden USD (zuvor etwa 12,2 Milliarden USD), basierend auf einem operativen Cashflow von 14,6 Milliarden USD und Investitionen von 2,2 Milliarden USD. Ob dieser Cashflow die Dividende trägt, zeigt erst die [Payout Ratio](/grundlagen/ausschuettungsquote/): Dazu nennt die Pressemitteilung keine Zahl.
 
 ## Kritische Punkte und Unsicherheiten
 

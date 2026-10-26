@@ -6,8 +6,11 @@ on:
       - "content/ir-inbox/*.pdf"
   workflow_dispatch:
     inputs:
+      ticker:
+        description: "US-Kürzel, z. B. KO oder O (mehrere mit Komma: KO,PEP). Der Bericht wird automatisch von der SEC geholt."
+        required: false
       pdf_url:
-        description: "Direkter Link zu einer PDF (optional; sonst werden neue PDFs aus content/ir-inbox verarbeitet)"
+        description: "Oder: direkter Link zu einer PDF (für Titel außerhalb der USA)"
         required: false
 permissions:
   contents: write
@@ -26,21 +29,36 @@ jobs:
           python-version: "3.12"
       - run: pip install pillow
       - run: sudo apt-get update -qq && sudo apt-get install -y -qq poppler-utils fonts-dejavu-core
-      - name: PDFs bestimmen
+      - name: Quellen bestimmen
+        env:
+          TICKERS: ${{ github.event.inputs.ticker }}
+          PDF_URL: ${{ github.event.inputs.pdf_url }}
         run: |
           mkdir -p content/ir-inbox
-          if [ -n "${{ github.event.inputs.pdf_url }}" ]; then
-            curl -fsSL -A "Mozilla/5.0" -o content/ir-inbox/download.pdf "${{ github.event.inputs.pdf_url }}"
-            echo "content/ir-inbox/download.pdf" > /tmp/todo.txt
-          else
+          : > /tmp/todo.txt
+          if [ -n "$TICKERS" ]; then
+            echo "$TICKERS" | tr ',' '\n' | tr -d ' ' | sed '/^$/d' | sed 's/^/ticker:/' >> /tmp/todo.txt
+          fi
+          if [ -n "$PDF_URL" ]; then
+            curl -fsSL -A "Mozilla/5.0" -o content/ir-inbox/download.pdf "$PDF_URL"
+            echo "content/ir-inbox/download.pdf" >> /tmp/todo.txt
+          fi
+          if [ ! -s /tmp/todo.txt ]; then
             git diff --name-only --diff-filter=AM HEAD~1 HEAD -- 'content/ir-inbox/*.pdf' > /tmp/todo.txt || true
           fi
           cat /tmp/todo.txt
       - name: Entwuerfe erzeugen
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          SEC_USER_AGENT: ${{ vars.SEC_USER_AGENT }}
         run: |
-          while read -r f; do [ -n "$f" ] && python3 tools/ir_agent.py "$f"; done < /tmp/todo.txt
+          while read -r f; do
+            [ -z "$f" ] && continue
+            case "$f" in
+              ticker:*) python3 tools/ir_agent.py --ticker "${f#ticker:}" ;;
+              *) python3 tools/ir_agent.py "$f" ;;
+            esac
+          done < /tmp/todo.txt
       - name: Committen
         run: |
           rm -f content/ir-inbox/download.pdf

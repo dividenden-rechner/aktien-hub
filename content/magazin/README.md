@@ -34,8 +34,13 @@ Lokal testen: `pip install markdown pillow` und `python3 tools/build_magazin.py`
 
 ## IR-Agent: Entwurf aus einem Quartalsbericht
 
-PDF in `content/ir-inbox/` hochladen (oder unter Actions > "IR-Agent" einen PDF-Link eingeben). Gemini liest den Bericht,
-Code zeichnet die Grafik, und es entsteht ein Entwurf (`draft: true`) in `content/magazin/`. Der Prompt steht in `tools/ir_prompt.md`,
-Autor und Bio in `tools/ir_config.json`. Zahlen, die nicht im PDF-Text stehen, werden im Entwurf als `<!-- PRÜFEN -->` markiert.
-Zum Veröffentlichen: Entwurf lesen, Zahlen prüfen, `draft: true` löschen.
-Voraussetzung: Secret `GEMINI_API_KEY` (Settings > Secrets and variables > Actions).
+**US-Titel (empfohlen):** Actions > "IR-Agent" > Run workflow > Feld `ticker` (z. B. `KO` oder `KO,PEP,O`). Der Agent holt die neueste
+Ergebnis-Pressemitteilung selbst von der SEC (8-K, Item 2.02), Gemini liest sie, Code zeichnet die Grafik, und aus Wikimedia Commons
+wird ein frei lizenziertes Aufmacherfoto gesucht (mit Bildnachweis unter dem Foto). Die Grafik steht im Text unter dem Einstieg.
+**Andere Titel:** `pdf_url` eintragen oder die PDF in `content/ir-inbox/` hochladen.
+
+Ergebnis: ein Entwurf (`draft: true`) in `content/magazin/`. Hinweise für dich stehen als `<!-- PRÜFEN: ... -->` am Textanfang
+(werden nie veröffentlicht): Foto passend? Zahlen im Bericht gefunden? Prompt: `tools/ir_prompt.md`, Autor/Bio: `tools/ir_config.json`.
+Gibt es den Artikel schon, bricht der Agent ab, damit nichts überschrieben wird.
+Zum Veröffentlichen: lesen, Zahlen prüfen, `draft: true` löschen.
+Voraussetzungen: Secret `GEMINI_API_KEY`; optional Variable `SEC_USER_AGENT` (Name und E-Mail, so verlangt es die SEC).

@@ -82,3 +82,6 @@ article p,article li,article td{overflow-wrap:anywhere}
 .admonition.formula{background:var(--soft);border-left:4px solid var(--acc);border-radius:0 10px 10px 0}
 .admonition.note,.admonition.hinweis{background:var(--warn);border-color:var(--warnl)}
 .post h2{scroll-margin-top:80px}
+
+.cover figcaption{margin-top:6px;font-size:13px;color:#5d6b78}.cover figcaption a{color:inherit}
+.post p>img{display:block;max-width:100%;height:auto;border-radius:12px;border:1px solid var(--line);margin:18px 0}

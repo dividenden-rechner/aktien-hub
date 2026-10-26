@@ -1,15 +1,18 @@
 #!/usr/bin/env python3
-"""IR-Agent: Quartalsbericht (PDF) -> Kennzahlen (JSON) -> Grafik (PNG) + Artikelentwurf (Markdown).
+"""IR-Agent: Quartalsbericht -> Kennzahlen (JSON) -> Grafik (PNG) + Aufmacherfoto + Artikelentwurf (Markdown).
 
 Aufruf:
-  python3 tools/ir_agent.py content/ir-inbox/bericht.pdf        # echter Lauf (braucht GEMINI_API_KEY)
+  python3 tools/ir_agent.py --ticker KO                         # US-Titel: Bericht selbst von der SEC holen
+  python3 tools/ir_agent.py content/ir-inbox/bericht.pdf        # eigene PDF
   python3 tools/ir_agent.py bericht.pdf --mock antwort.json     # Test ohne API (fertige Modell-Antwort)
 
 Der Entwurf landet mit `draft: true` in content/magazin/. Nichts wird veroeffentlicht,
-bevor du `draft: true` entfernst. Zahlen werden gegen den PDF-Text geprueft.
+bevor du `draft: true` entfernst. Zahlen werden gegen den Berichtstext geprueft.
 """
-import argparse, base64, json, os, re, subprocess, sys, time, urllib.request, urllib.error
-from datetime import date
+import argparse, base64, html, json, os, re, subprocess, sys, time, urllib.parse, urllib.request, urllib.error
+from datetime import date, datetime
+from html.parser import HTMLParser
+from io import BytesIO
 from PIL import Image, ImageDraw, ImageFont
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -24,12 +27,12 @@ SCHEMA = {
         "period": {"type": "STRING", "description": "z. B. Q2 2026"},
         "report_date": {"type": "STRING", "description": "YYYY-MM-DD"},
         "kpis": {"type": "ARRAY", "items": {"type": "OBJECT",
-            "required": ["label", "value", "page"],
+            "required": ["label", "value"],
             "properties": {"label": {"type": "STRING"}, "value": {"type": "STRING", "description": "Wert exakt wie im Bericht, z. B. 13,4 Mrd. USD"},
                            "change": {"type": "STRING", "description": "Veraenderung zum Vorjahr, z. B. +7 %"},
-                           "page": {"type": "INTEGER"}}}},
-        "chart": {"type": "OBJECT", "required": ["title", "unit", "bars", "page"],
-            "properties": {"title": {"type": "STRING"}, "unit": {"type": "STRING"}, "page": {"type": "INTEGER"},
+                           "page": {"type": "INTEGER", "description": "Seite im PDF, 0 wenn der Bericht keine Seiten hat"}}}},
+        "chart": {"type": "OBJECT", "required": ["title", "unit", "bars"],
+            "properties": {"title": {"type": "STRING"}, "unit": {"type": "STRING"}, "page": {"type": "INTEGER", "description": "0 wenn keine Seiten"},
                            "bars": {"type": "ARRAY", "items": {"type": "OBJECT", "required": ["label", "value"],
                                "properties": {"label": {"type": "STRING"}, "value": {"type": "NUMBER"}}}}}},
         "article": {"type": "OBJECT", "required": ["title", "description", "slug", "body_markdown"],
@@ -52,20 +55,18 @@ def pdf_text(path):
         return ""
 
 
-def call_gemini(pdf_path, prompt):
-    key = os.environ.get("GEMINI_API_KEY")
-    if not key:
-        fail("GEMINI_API_KEY fehlt (GitHub: Settings > Secrets and variables > Actions).")
-    data = open(pdf_path, "rb").read()
-    if len(data) > 18 * 1024 * 1024:
-        fail("PDF ist groesser als 18 MB, bitte kuerzen.")
-    body = {
-        "contents": [{"parts": [{"inline_data": {"mime_type": "application/pdf", "data": base64.b64encode(data).decode()}}, {"text": prompt}]}],
-        "generationConfig": {"temperature": 0.3, "responseMimeType": "application/json", "responseSchema": SCHEMA},
-    }
+GOOD_MODEL = None
+
+
+def _generate(parts, schema, key):
+    """Ruft Gemini auf (mit Wiederholung bei Ueberlastung, Modellwechsel bei Fehlern)."""
+    global GOOD_MODEL
+    body = {"contents": [{"parts": parts}],
+            "generationConfig": {"temperature": 0.3, "responseMimeType": "application/json", "responseSchema": schema}}
     last = ""
-    for model in candidate_models(key):
+    for model in ([GOOD_MODEL] if GOOD_MODEL else candidate_models(key)):
         url = f"https://generativelanguage.googleapis.com/v1beta/models/{model}:generateContent"
+        res = None
         for attempt in range(3):
             req = urllib.request.Request(url, data=json.dumps(body).encode(), headers={"Content-Type": "application/json", "x-goog-api-key": key})
             try:
@@ -77,22 +78,39 @@ def call_gemini(pdf_path, prompt):
                 print("Modell-Problem ->", last)
                 if e.code in (429, 500, 502, 503, 504) and attempt < 2:
                     time.sleep(25 * (attempt + 1)); continue
-                res = None
                 break
             except Exception as e:
                 last = f"{model}: {e}"; print("Modell-Problem ->", last)
-                res = None
                 break
         if res is None:
             continue
         try:
             out = json.loads(res["candidates"][0]["content"]["parts"][0]["text"])
             print("Modell:", model)
+            GOOD_MODEL = model
             return out
         except Exception:
             last = f"{model}: unerwartete Antwort " + json.dumps(res)[:300]
-            continue
     fail("Kein Gemini-Modell hat funktioniert. Letzter Fehler: " + last)
+
+
+def api_key():
+    key = os.environ.get("GEMINI_API_KEY")
+    if not key:
+        fail("GEMINI_API_KEY fehlt (GitHub: Settings > Secrets and variables > Actions).")
+    return key
+
+
+def call_gemini(src, prompt):
+    key = api_key()
+    if src["kind"] == "pdf":
+        data = open(src["path"], "rb").read()
+        if len(data) > 18 * 1024 * 1024:
+            fail("PDF ist groesser als 18 MB, bitte kuerzen.")
+        doc = {"inline_data": {"mime_type": "application/pdf", "data": base64.b64encode(data).decode()}}
+    else:
+        doc = {"text": "BERICHT (Text der Pressemitteilung):\n\n" + src["text"][:600000]}
+    return _generate([doc, {"text": prompt}], SCHEMA, key)
 
 
 def candidate_models(key):
@@ -150,6 +168,156 @@ def check_numbers(out, text):
         if not any(c in flat_raw for c in {n, n.replace(".", ",")}):
             bad.append(f"Grafik {b['label']}: {n}")
     return bad if text else None
+
+# ---------------------------------------------------------------- Berichtsquellen
+UA = os.environ.get("SEC_USER_AGENT") or "dividenden-rechner.de Magazin-Agent (Kontakt ueber die Website)"
+
+
+def http(url, binary=False, ua=None, timeout=60):
+    req = urllib.request.Request(url, headers={"User-Agent": ua or UA, "Accept-Encoding": "identity"})
+    with urllib.request.urlopen(req, timeout=timeout) as r:
+        data = r.read()
+    return data if binary else data.decode("utf-8", "replace")
+
+
+class _Text(HTMLParser):
+    BLOCK = {"p", "div", "br", "tr", "li", "h1", "h2", "h3", "h4", "table", "section"}
+
+    def __init__(self):
+        super().__init__(); self.out = []; self.skip = 0
+
+    def handle_starttag(self, t, a):
+        if t in ("script", "style"): self.skip += 1
+        elif t in ("td", "th"): self.out.append(" | ")
+        elif t in self.BLOCK: self.out.append("\n")
+
+    def handle_endtag(self, t):
+        if t in ("script", "style"): self.skip = max(0, self.skip - 1)
+        elif t in self.BLOCK: self.out.append("\n")
+
+    def handle_data(self, d):
+        if not self.skip: self.out.append(d)
+
+
+def html_to_text(h):
+    p = _Text(); p.feed(h)
+    t = html.unescape("".join(p.out)).replace("\xa0", " ")
+    t = re.sub(r"[ \t]+", " ", t)
+    return re.sub(r"\n\s*\n+", "\n\n", t).strip()
+
+
+def sec_release(ticker):
+    """Neueste Ergebnis-Pressemitteilung (8-K, Item 2.02, Exhibit 99.1) eines US-Titels von der SEC."""
+    t = ticker.upper().strip()
+    if not re.match(r"^[A-Z0-9.\-]{1,10}$", t):
+        fail(f"Ungueltiges Kuerzel: {ticker}")
+    try:
+        tick = json.loads(http("https://www.sec.gov/files/company_tickers.json"))
+    except Exception as e:
+        fail(f"SEC nicht erreichbar ({e}). Tipp: Variable SEC_USER_AGENT mit Name und E-Mail setzen oder eine PDF hochladen.")
+    hit = next((v for v in tick.values() if v["ticker"].upper() == t), None)
+    if not hit:
+        fail(f"{t} nicht bei der SEC gefunden. Fuer Titel ausserhalb der USA bitte eine PDF hochladen oder einen PDF-Link angeben.")
+    cik = int(hit["cik_str"])
+    sub = json.loads(http(f"https://data.sec.gov/submissions/CIK{cik:010d}.json"))
+    rec = sub["filings"]["recent"]
+    for i, form in enumerate(rec["form"]):
+        if form != "8-K" or "2.02" not in str(rec["items"][i]).split(","):
+            continue
+        acc = rec["accessionNumber"][i]; nod = acc.replace("-", ""); fdate = rec["filingDate"][i]
+        base = f"https://www.sec.gov/Archives/edgar/data/{cik}/{nod}/"
+        files = [x["name"] for x in json.loads(http(base + "index.json"))["directory"]["item"]]
+        cand = [f for f in files if re.search(r"\.(htm|html|txt|pdf)$", f, re.I) and not re.search(r"(-index|^R\d+\.|xbrl)", f, re.I)]
+        prim = rec["primaryDocument"][i]
+        order = ([f for f in cand if re.search(r"99[-_.]?0?1", f)] or [f for f in cand if "99" in f]
+                 or [f for f in cand if re.search(r"(earnings|release)", f, re.I)] or [f for f in cand if f != prim] or cand)
+        if not order:
+            continue
+        name = order[0]
+        raw = http(base + name, binary=True)
+        age = (date.today() - datetime.strptime(fdate, "%Y-%m-%d").date()).days
+        if age > 150:
+            print(f"::warning title=IR-Agent::Neueste Ergebnismeldung von {t} ist {age} Tage alt ({fdate}).")
+        print(f"SEC: {hit['title']} ({t}), 8-K vom {fdate}, Datei {name}")
+        if name.lower().endswith(".pdf"):
+            path = "/tmp/sec_release.pdf"; open(path, "wb").write(raw)
+            return {"kind": "pdf", "path": path, "company": hit["title"], "url": base + name, "date": fdate}
+        txt = html_to_text(raw.decode("utf-8", "replace")) if not name.lower().endswith(".txt") else raw.decode("utf-8", "replace")
+        return {"kind": "text", "text": txt, "company": hit["title"], "url": base + name, "date": fdate}
+    fail(f"Keine Ergebnismeldung (8-K, Item 2.02) von {t} gefunden.")
+
+
+# ---------------------------------------------------------------- Aufmacherfoto (Wikimedia Commons, freie Lizenz)
+OK_LIC = re.compile(r"^(CC0|Public domain|PD[- ]|CC[- ]BY(-SA)?[- ]\d\.\d)", re.I)
+BAD_TITLE = re.compile(r"(logo|icon|flag|map|chart|diagram|stamp|coin|signature|screenshot|\.svg|poster|advert|label|can\b|bottle|stock price|graph)", re.I)
+
+
+def _strip(h):
+    return re.sub(r"\s+", " ", html.unescape(re.sub(r"<[^>]+>", " ", h or ""))).strip()
+
+
+def brand_of(company):
+    b = re.sub(r"\b(the|company|inc\.?|corp\.?|corporation|co\.?|ltd\.?|plc|holdings?|group|/de/|\.com)\b", " ", company, flags=re.I)
+    return re.sub(r"\s+", " ", b).strip(" ,.") or company
+
+
+def commons_candidates(company):
+    brand = brand_of(company); seen = {}; ua = "dividenden-rechner.de Magazin-Agent (https://www.dividenden-rechner.de)"
+    for term in (f"{brand} headquarters", f"{brand} building", f"{brand} filetype:bitmap"):
+        qs = urllib.parse.urlencode({"action": "query", "format": "json", "generator": "search", "gsrsearch": term, "gsrnamespace": 6,
+                                     "gsrlimit": 25, "prop": "imageinfo", "iiprop": "url|size|mime|extmetadata", "iiurlwidth": 1600})
+        try:
+            data = json.loads(http("https://commons.wikimedia.org/w/api.php?" + qs, ua=ua))
+        except Exception as e:
+            print("Commons nicht erreichbar:", e); continue
+        for pg in (data.get("query", {}).get("pages", {}) or {}).values():
+            ii = (pg.get("imageinfo") or [{}])[0]; md = ii.get("extmetadata", {})
+            title = pg.get("title", "")
+            lic = _strip(md.get("LicenseShortName", {}).get("value", ""))
+            w, h = ii.get("width", 0), ii.get("height", 0)
+            if (ii.get("mime") != "image/jpeg" or w < 1400 or h < 700 or not (1.25 <= w / max(h, 1) <= 2.2) or BAD_TITLE.search(title)
+                    or not OK_LIC.search(lic) or re.search(r"-(NC|ND)", lic) or _strip(md.get("Restrictions", {}).get("value", ""))
+                    or not ii.get("thumburl")):
+                continue
+            seen[title] = {"title": title, "thumb": ii["thumburl"], "page": ii.get("descriptionurl", ""),
+                           "artist": _strip(md.get("Artist", {}).get("value", "")) or "Unbekannt", "lic": lic,
+                           "desc": _strip(md.get("ImageDescription", {}).get("value", ""))[:200],
+                           "date": _strip(md.get("DateTimeOriginal", {}).get("value", ""))[:10]}
+    return list(seen.values())[:12], brand
+
+
+def pick_photo(company, ticker, key):
+    cands, brand = commons_candidates(company)
+    print(f"Foto-Kandidaten bei Wikimedia Commons: {len(cands)}")
+    if not cands or not key:
+        return None
+    listing = "\n".join(f"{i}: {c['title']} | {c['desc']} | {c['date']}" for i, c in enumerate(cands))
+    prompt = (f"Waehle ein Aufmacherfoto fuer einen sachlichen Boersenartikel ueber die Quartalszahlen von {company}. "
+              "Gut: Unternehmenszentrale, Werk, Filiale, Produkt im Alltag, Strassenszene mit klarem Bezug zum Unternehmen. "
+              "Schlecht: Portraets von Personen, Logos, Karten, Werbung, Fotos, die nicht eindeutig zu diesem Unternehmen gehoeren, "
+              "veraltete oder unpassende Motive. Wenn nichts wirklich passt, antworte -1.\n\n" + listing)
+    schema = {"type": "OBJECT", "required": ["index"], "properties": {"index": {"type": "INTEGER"}}}
+    try:
+        idx = _generate([{"text": prompt}], schema, key)["index"]
+    except SystemExit:
+        return None
+    return cands[idx] if isinstance(idx, int) and 0 <= idx < len(cands) else None
+
+
+def save_photo(c, slug):
+    raw = http(c["thumb"], binary=True, ua="dividenden-rechner.de Magazin-Agent (https://www.dividenden-rechner.de)")
+    im = Image.open(BytesIO(raw)).convert("RGB")
+    w, h = im.size; tgt = 16 / 9
+    if w / h > tgt:
+        nw = int(h * tgt); im = im.crop(((w - nw) // 2, 0, (w - nw) // 2 + nw, h))
+    else:
+        nh = int(w / tgt); im = im.crop((0, (h - nh) // 2, w, (h - nh) // 2 + nh))
+    im = im.resize((1600, 900), Image.LANCZOS)
+    rel = f"assets/magazin/{slug}-foto.jpg"
+    os.makedirs(os.path.join(ROOT, "assets", "magazin"), exist_ok=True)
+    im.save(os.path.join(ROOT, rel), "JPEG", quality=85, optimize=True)
+    return rel
+
 
 
 def font(size, bold=False):
@@ -227,46 +395,75 @@ def q(v):
     return '"' + str(v).replace('"', "'").replace("\n", " ") + '"'
 
 
-def build(pdf_path, out, text):
+def build(out, text, src_note, force=False):
     slug = re.sub(r"[^a-z0-9]+", "-", out["article"]["slug"].lower()).strip("-") or "bericht"
+    mdpath = os.path.join(ROOT, "content", "magazin", f"{slug}.md")
+    if os.path.exists(mdpath) and not force:
+        fail(f"Es gibt schon einen Artikel '{slug}.md'. Zum Ueberschreiben --force nutzen oder die Datei vorher loeschen.")
     gpath = os.path.join(ROOT, "assets", "magazin", f"{slug}-grafik.png")
     os.makedirs(os.path.dirname(gpath), exist_ok=True)
     draw_graphic(out, gpath)
     bad = check_numbers(out, text)
     a = out["article"]
-    rows = "\n".join(f"| {k['label']} | {k['value']} | {k.get('change') or '–'} | S. {k['page']} |" for k in out["kpis"])
-    desc = a["description"].replace('"', "'")
-    fm = [
-        "---", f"title: {q(a['title'])}", f"description: {q(desc)}",
-        f"date: {date.today().isoformat()} 08:00", f"author: {q(CFG['author'])}", f"author_bio: {q(CFG['author_bio'])}",
-        f"category: {CFG.get('category', 'Zahlen')}", f"image: assets/magazin/{slug}-grafik.png",
-        f"image_alt: {q('Grafik: ' + out['chart']['title'] + ' bei ' + out['company'] + ' (' + out['period'] + ')')}", "draft: true", "---", "",
-    ]
-    prüf = ""
+    quelle = lambda pg: f"S. {pg}" if (pg or 0) > 0 else "Pressemitteilung"
+    rows = "\n".join(f"| {k['label']} | {k['value']} | {k.get('change') or '–'} | {quelle(k.get('page'))} |" for k in out["kpis"])
+    photo = None
+    try:
+        photo = pick_photo(out["company"], out.get("ticker", ""), os.environ.get("GEMINI_API_KEY") if not os.environ.get("IR_MOCK") else None)
+    except Exception as e:
+        print("Foto-Suche fehlgeschlagen:", e)
+    fm = ["---", f"title: {q(a['title'])}", f"description: {q(a['description'])}",
+          f"date: {date.today().isoformat()} 08:00", f"author: {q(CFG['author'])}", f"author_bio: {q(CFG['author_bio'])}",
+          f"category: {CFG.get('category', 'Zahlen')}"]
+    hinweise = []
+    if photo:
+        rel = save_photo(photo, slug)
+        fm += [f"image: {rel}", f"image_alt: {q('Foto zu ' + out['company'] + ': ' + (photo['desc'] or photo['title'].replace('File:', '')))}",
+               f"image_credit: {q('Foto: ' + photo['artist'] + ' / Wikimedia Commons, ' + photo['lic'])}", f"image_source: {photo['page']}"]
+        hinweise.append("Aufmacherfoto ist automatisch von Wikimedia Commons gewaehlt: bitte pruefen, ob es zum Artikel passt (sonst image-Zeilen entfernen, dann entsteht ein Titelbild automatisch).")
+    else:
+        hinweise.append("Kein freies Aufmacherfoto gefunden, das Titelbild entsteht automatisch. Eigenes Foto: image, image_alt, image_credit ergaenzen.")
+    fm += ["draft: true", "---", ""]
     if bad:
-        prüf = "<!-- PRÜFEN: Diese Werte wurden im PDF-Text nicht gefunden: " + "; ".join(bad) + " -->\n\n"
+        hinweise.append("Diese Werte wurden im Berichtstext nicht gefunden: " + "; ".join(bad))
     elif bad is None:
-        prüf = "<!-- PRÜFEN: PDF-Text nicht lesbar, Zahlen nicht automatisch geprüft -->\n\n"
-    body = (prüf + a["body_markdown"].strip() + "\n\n## Die wichtigsten Zahlen im Überblick\n\n"
+        hinweise.append("Berichtstext nicht lesbar, Zahlen nicht automatisch geprueft.")
+    if src_note:
+        hinweise.append("Quelle: " + src_note)
+    head = "".join(f"<!-- PRÜFEN: {h} -->\n" for h in hinweise) + "\n"
+    chart_alt = f"{out['chart']['title']} ({out['company']}, {out['period']})"
+    body_md = a["body_markdown"].strip()
+    parts = body_md.split("\n\n", 1)
+    body_md = parts[0] + f"\n\n![{chart_alt}](/assets/magazin/{slug}-grafik.png)\n\n" + (parts[1] if len(parts) > 1 else "")
+    body = (head + body_md + "\n\n## Die wichtigsten Zahlen im Überblick\n\n"
             "| Kennzahl | Wert | Veränderung zum Vorjahr | Quelle |\n|---|---|---|---|\n" + rows + "\n\n"
             f"*Quelle: {out['company']}, Pressemitteilung zum {out['period']} vom {out['report_date']}. Keine Anlageberatung.*\n")
-    mdpath = os.path.join(ROOT, "content", "magazin", f"{slug}.md")
     open(mdpath, "w", encoding="utf-8").write("\n".join(fm) + body)
-    return mdpath, gpath, bad
+    return mdpath, gpath, bad, photo
 
 
 def main():
     ap = argparse.ArgumentParser()
-    ap.add_argument("pdf"); ap.add_argument("--mock")
+    ap.add_argument("pdf", nargs="?"); ap.add_argument("--ticker"); ap.add_argument("--mock"); ap.add_argument("--force", action="store_true")
     a = ap.parse_args()
-    text = pdf_text(a.pdf)
+    if not a.pdf and not a.ticker:
+        fail("Bitte --ticker KO oder eine PDF angeben.")
+    if a.mock:
+        os.environ["IR_MOCK"] = "1"
+    src = None
+    if a.ticker:
+        src = sec_release(a.ticker)
+    else:
+        src = {"kind": "pdf", "path": a.pdf, "url": "", "date": ""}
+    text = pdf_text(src["path"]) if src["kind"] == "pdf" else src["text"]
     if a.mock:
         out = json.load(open(a.mock, encoding="utf-8"))
     else:
         prompt = open(os.path.join(ROOT, "tools", "ir_prompt.md"), encoding="utf-8").read()
-        out = call_gemini(a.pdf, prompt)
-    md, g, bad = build(a.pdf, out, text)
-    print("Entwurf:", md); print("Grafik:", g)
+        out = call_gemini(src, prompt)
+    note = src.get("url") or ""
+    md, g, bad, photo = build(out, text, note, a.force)
+    print("Entwurf:", md); print("Grafik:", g); print("Foto:", photo["title"] if photo else "keins")
     print("Nicht verifizierte Zahlen:", bad if bad else "keine")
 
 

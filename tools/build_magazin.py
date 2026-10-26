@@ -55,6 +55,7 @@ def read_post(path):
 
 def md_to_html(md_text, depth):
     pre = "../" * depth
+    md_text = re.sub(r"<!--\s*PRÜFEN.*?-->\s*", "", md_text, flags=re.S)   # Redaktionshinweise des IR-Agenten nie veröffentlichen
     md = markdown.Markdown(extensions=["tables", "sane_lists", "admonition", "attr_list", "toc"], extension_configs={"toc": {"permalink": False}})
     h = md.convert(md_text)
     h = re.sub(r'(href|src)="/(?!/)', lambda m: f'{m.group(1)}="{pre}', h)       # /pfad/ -> relativ
@@ -174,7 +175,13 @@ def build_post(p, posts):
     upd = f' · Aktualisiert: <time datetime="{iso(p["upd"])}">{de_date(p["upd"])}</time>' if p["upd"].date() > p["dt"].date() else ""
     o += f'<p class="byline">Von <strong>{esc(author)}</strong> · <time datetime="{iso(p["dt"])}">{de_date(p["dt"])}</time>{upd} · {mins} Min. Lesezeit</p>\n'
     alt = p.get("image_alt") or p["title"]
-    o += f'<figure class="cover"><img src="{pre}{img}" alt="{esc(alt)}" width="1200" height="675" fetchpriority="high"></figure>\n'
+    cred = p.get("image_credit") or ""
+    if cred and p.get("image_source", "").startswith("http"):
+        cred = f'<a href="{esc(p["image_source"])}" rel="noopener nofollow" target="_blank">{esc(cred)}</a>'
+    else:
+        cred = esc(cred)
+    cap = f'<figcaption>{cred}</figcaption>' if cred else ""
+    o += f'<figure class="cover"><img src="{pre}{img}" alt="{esc(alt)}" width="1200" height="675" fetchpriority="high">{cap}</figure>\n'
     o += body + "\n"
     bio = p.get("author_bio") or "Die Redaktion von dividenden-rechner.de erklärt Dividenden, Kennzahlen und Steuerthemen für Privatanleger in Deutschland."
     o += f'<aside class="authorbox"><strong>{esc(author)}</strong><p>{esc(bio)}</p></aside>\n'
