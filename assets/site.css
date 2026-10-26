@@ -70,3 +70,15 @@ details p{margin:0 0 12px}
 address{font-style:normal;background:var(--soft);border-left:3px solid var(--acc);border-radius:6px;padding:10px 14px;margin:10px 0 18px}
 article h2[id]{scroll-margin-top:16px}
 article p,article li,article td{overflow-wrap:anywhere}
+/* ===== Magazin ===== */
+.post .kicker,.magcards .kicker{margin:0 0 4px;font-size:13px;font-weight:700;letter-spacing:.04em;text-transform:uppercase;color:var(--accd)}
+.byline{font-size:14px;color:var(--mut);margin:0 0 16px}
+.cover{margin:0 0 22px}.cover img{display:block;width:100%;height:auto;border-radius:12px;border:1px solid var(--line)}
+.authorbox{border:1px solid var(--line);border-radius:12px;padding:12px 16px;margin:28px 0;background:#fafbfc}.authorbox p{margin:4px 0 0;font-size:15px;color:var(--mut)}
+.magcards .card{padding:0;overflow:hidden}.magcards .card>*:not(.mcover){margin-left:16px;margin-right:16px}.magcards .card p.kicker{margin-top:12px}.magcards .card p:last-child{margin-bottom:16px}
+.mcover{display:block;width:100%;height:auto;aspect-ratio:16/9;object-fit:cover;border-bottom:1px solid var(--line)}
+.admonition{border:1px solid var(--line);border-radius:12px;padding:12px 18px;margin:16px 0;background:#fff}
+.admonition-title{font-weight:700;margin:0 0 4px!important;color:var(--accd)}
+.admonition.formula{background:var(--soft);border-left:4px solid var(--acc);border-radius:0 10px 10px 0}
+.admonition.note,.admonition.hinweis{background:var(--warn);border-color:var(--warnl)}
+.post h2{scroll-margin-top:80px}
