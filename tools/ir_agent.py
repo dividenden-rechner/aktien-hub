@@ -39,6 +39,12 @@ SCHEMA = {
 }
 
 
+def fail(msg):
+    msg = " ".join(str(msg).split())
+    print("::error title=IR-Agent::" + msg[:900])
+    sys.exit(msg)
+
+
 def pdf_text(path):
     try:
         return subprocess.run(["pdftotext", "-layout", path, "-"], capture_output=True, text=True, check=True).stdout
@@ -49,10 +55,10 @@ def pdf_text(path):
 def call_gemini(pdf_path, prompt):
     key = os.environ.get("GEMINI_API_KEY")
     if not key:
-        sys.exit("GEMINI_API_KEY fehlt (GitHub: Settings > Secrets and variables > Actions).")
+        fail("GEMINI_API_KEY fehlt (GitHub: Settings > Secrets and variables > Actions).")
     data = open(pdf_path, "rb").read()
     if len(data) > 18 * 1024 * 1024:
-        sys.exit("PDF ist groesser als 18 MB, bitte kuerzen.")
+        fail("PDF ist groesser als 18 MB, bitte kuerzen.")
     body = {
         "contents": [{"parts": [{"inline_data": {"mime_type": "application/pdf", "data": base64.b64encode(data).decode()}}, {"text": prompt}]}],
         "generationConfig": {"temperature": 0.3, "responseMimeType": "application/json", "responseSchema": SCHEMA},
@@ -63,11 +69,11 @@ def call_gemini(pdf_path, prompt):
         with urllib.request.urlopen(req, timeout=240) as r:
             res = json.load(r)
     except urllib.error.HTTPError as e:
-        sys.exit(f"Gemini-Fehler {e.code}: {e.read().decode()[:500]}")
+        fail(f"Gemini-Fehler {e.code}: {e.read().decode()[:500]}")
     try:
         return json.loads(res["candidates"][0]["content"]["parts"][0]["text"])
     except Exception:
-        sys.exit("Unerwartete Gemini-Antwort: " + json.dumps(res)[:500])
+        fail("Unerwartete Gemini-Antwort: " + json.dumps(res)[:500])
 
 
 def digits(s):
