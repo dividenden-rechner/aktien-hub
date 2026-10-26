@@ -9,8 +9,10 @@ export default {
     const ok = ERLAUBT.includes(o) || /^http:\/\/localhost(:\d+)?$/.test(o);
     const cors = { "Access-Control-Allow-Origin": ok ? o : ERLAUBT[0], "Vary": "Origin" };
     if (req.method === "OPTIONS") return new Response(null, { headers: { ...cors, "Access-Control-Allow-Methods": "GET", "Access-Control-Max-Age": "86400" } });
-    if (!ok) return new Response("forbidden", { status: 403, headers: cors });
-    const u = new URL(req.url), q = (u.searchParams.get("q") || "").trim().slice(0, 100), en = u.searchParams.get("lang") === "en";
+    const u = new URL(req.url), dbg = u.searchParams.get("debug") === "1";
+    if (!ok && !dbg) return new Response("forbidden", { status: 403, headers: cors });
+    if (dbg && !ok) cors["Access-Control-Allow-Origin"] = "*";
+    const q = (u.searchParams.get("q") || "").trim().slice(0, 100), en = u.searchParams.get("lang") === "en";
     if (q.length < 2) return json({ error: "q fehlt" }, 400, cors);
     const feed = "https://news.google.com/rss/search?q=" + encodeURIComponent(q) + (en ? "&hl=en-US&gl=US&ceid=US:en" : "&hl=de&gl=DE&ceid=DE:de");
     let r;

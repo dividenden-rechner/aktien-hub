@@ -101,6 +101,10 @@ svg text{fill:var(--mut);font-size:11px;font-family:inherit}
 .xbar input.wide{width:200px}
 .xbar .go{font:inherit;font-weight:600;font-size:15px;padding:10px 16px;border:0;border-radius:8px;background:var(--acc);color:#fff;cursor:pointer}
 .xnote{font-size:13px;color:var(--mut);margin:4px 0 14px;max-width:80ch}
+.nrb{display:block;width:100%;text-align:left;padding:11px 16px;background:none;border:0;border-top:1px solid var(--line);font:inherit;color:var(--ink);cursor:pointer}
+.nri:first-child .nrb{border-top:0}.nrb:hover{background:#f0f8f3}.nrb b{display:block;font-weight:600;font-size:14.5px}.nrb span{font-size:12.5px;color:var(--mut)}
+.nrt{padding:2px 16px 14px;font-size:14px;color:var(--ink)}.nrt p{margin:.5em 0}
+.nrl{margin-bottom:14px}
 .nwl{border:1px solid var(--line);border-radius:8px;background:#fff;overflow:hidden;color:var(--mut);padding:0}
 .nwl:not(:has(.nwi)){padding:14px 16px}
 .nwi,.nwm{display:block;padding:11px 16px;border-top:1px solid var(--line);color:var(--ink);text-decoration:none}
@@ -337,11 +341,13 @@ async function openStock(sym){
    ${bars("Gewinn je Aktie (verwässert)","Jahreswerte, "+esc(cur),inc.map(x=>({y:x.y,v:first(x,"epsDiluted","eps")})),"var(--bar2)",v=>num(v))}
    ${bars("Bruttomarge","Bruttogewinn / Umsatz",inc.map(x=>({y:x.y,v:x.revenue?x.grossProfit/x.revenue:null})),"var(--bar)",v=>num(v*100,0)+" %")}
   </div>
+  <div id="nr"></div>
   <div id="nw"></div>
   ${p.description?`<p class="desc">${esc(p.description)}</p>`:""}
   ${p.website?`<p class="desc"><a href="${esc(p.website)}" target="_blank" rel="noopener">${esc(p.website)}</a></p>`:""}`;
   $("start").hidden=true;hub.hidden=false;msg.textContent="";$("sb").onclick=()=>story(LAST);
   try{initExplorer(sym,p,cur)}catch(e){console.error(e)}
+  try{initReports(sym,p)}catch(e){console.error(e)}
   try{initNews(sym,p)}catch(e){console.error(e)}
   const L={profile:"Profil",quote:"Kurs","ratios-ttm":"Kennzahlen","key-metrics-ttm":"Kennzahlen","discounted-cash-flow":"DCF","price-target-consensus":"Kursziele",income:"Umsatz/Gewinn",cash:"Cashflow",div:"Dividenden",price:"Kursverlauf",grades:"Analysten",est:"Prognosen"};
   const fails=names.map((n,i)=>res[i].status==="rejected"?{l:L[n],m:res[i].reason.message}:null).filter(Boolean);
@@ -356,6 +362,16 @@ async function openStock(sym){
   }
   scrollTo(0,0);
 }
+/* ===== Unternehmensmeldungen (IR-Feeds und SEC, vom GitHub-Workflow in data/news.json gesammelt) ===== */
+function initReports(sym,p){
+  const box=$("nr");if(!box)return;
+  fetch("../data/news.json?v="+Math.floor(Date.now()/6e5)).then(r=>r.json()).then(j=>{
+    const it=(j.items||[]).filter(x=>String(x.sym).toUpperCase()===String(sym).toUpperCase()).sort((a,b)=>new Date(b.date)-new Date(a.date)).slice(0,10);
+    if(!it.length)return;
+    box.innerHTML=`<div class="xhead"><h3>Unternehmensmeldungen</h3><small>direkt von der Firma (IR-Feed) oder der SEC, Stand ${j.updated?esc(new Date(j.updated).toLocaleString("de-DE",{dateStyle:"medium",timeStyle:"short"})):""}</small></div><div class="nwl nrl">`+it.map((x,i)=>`<div class="nri"><button type="button" class="nrb" aria-expanded="false"><b>${esc(x.title)}</b><span>${x.quelle==="SEC"?"SEC "+esc(x.form||"8-K")+(x.kat?" · "+esc(x.kat):""):"Pressemitteilung"} · ${esc(new Date(x.date).toLocaleDateString("de-DE",{day:"numeric",month:"short",year:"numeric"}))}</span></button><div class="nrt" hidden>${x.text?String(x.text).split(/\n+/).filter(Boolean).map(t=>"<p>"+esc(t)+"</p>").join(""):"<p>Der Feed liefert keinen Text.</p>"}${x.link?`<p><a href="${esc(x.link)}" target="_blank" rel="noopener nofollow">Originalmeldung öffnen</a></p>`:""}</div></div>`).join("")+"</div>";
+    box.querySelectorAll(".nrb").forEach(b=>b.onclick=()=>{const t=b.nextElementSibling,o=t.hidden;t.hidden=!o;b.setAttribute("aria-expanded",o)});
+  }).catch(()=>{});
+}
 /* ===== Unternehmens-News (Google News ueber eigenen Cloudflare-Worker) ===== */
 const NEWS_API="https://news-proxy.dividenden-rechner.workers.dev/";
 function initNews(sym,p){
@@ -369,8 +385,8 @@ function initNews(sym,p){
     const gl="https://news.google.com/search?q="+encodeURIComponent(q);
     let j=null;
     try{const c=JSON.parse(localStorage.getItem(ck)||"null");if(c&&Date.now()-c.t<36e5)j=c.j}catch(e){}
-    if(!j){try{const r=await fetch(NEWS_API+"?lang="+l+"&q="+encodeURIComponent(q));if(!r.ok)throw new Error("HTTP "+r.status);j=await r.json();try{localStorage.setItem(ck,JSON.stringify({t:Date.now(),j}))}catch(e){}}
-      catch(e){out.innerHTML=`News-Dienst gerade nicht erreichbar. <a href="${gl}" target="_blank" rel="noopener nofollow">Suche bei Google News öffnen</a>`;return}}
+    if(!j){try{const r=await fetch(NEWS_API+"?lang="+l+"&q="+encodeURIComponent(q));j=await r.json().catch(()=>null);if(!r.ok)throw new Error("HTTP "+r.status+(j&&j.error?": "+j.error:""));try{localStorage.setItem(ck,JSON.stringify({t:Date.now(),j}))}catch(e){}}
+      catch(e){out.innerHTML=`News-Dienst gerade nicht erreichbar (${esc(e.message)}). <a href="${gl}" target="_blank" rel="noopener nofollow">Suche bei Google News öffnen</a>`;return}}
     const it=j.items||[];
     out.innerHTML=it.length?it.map(x=>`<a class="nwi" href="${esc(x.link)}" target="_blank" rel="noopener nofollow"><b>${esc(x.title)}</b><span>${esc(x.source||"")}${x.source&&x.date?" · ":""}${esc(ago(x.date))}</span></a>`).join("")+`<a class="nwm" href="${gl}" target="_blank" rel="noopener nofollow">Mehr bei Google News</a>`:`Keine Treffer. <a href="${gl}" target="_blank" rel="noopener nofollow">Bei Google News suchen</a>`;
     $("nwsub").textContent="Suche: "+q;

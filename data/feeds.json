@@ -18,7 +18,7 @@
     {"sym":"XOM","name":"Exxon Mobil","url":"https://investor.exxonmobil.com/company-information/press-releases/rss","geprueft":true},
     {"sym":"CVX","name":"Chevron","url":""},
     {"sym":"MCD","name":"McDonald's","url":""},
-    {"sym":"VZ","name":"Verizon","url":""},
+    {"sym":"VZ","name":"Verizon","url":"https://www.verizon.com/about/news/verizon-news.xml"},
     {"sym":"T","name":"AT&T","url":"https://feeds.feedburner.com/AttAllCategoriesRssFeeds"},
     {"sym":"HD","name":"Home Depot","url":""},
     {"sym":"TXN","name":"Texas Instruments","url":""},
