@@ -222,6 +222,11 @@ def draw_graphic(out, path):
     im.save(path, "PNG", optimize=True)
 
 
+def q(v):
+    """YAML-sicher: in Anfuehrungszeichen setzen (Doppelpunkte im Text)."""
+    return '"' + str(v).replace('"', "'").replace("\n", " ") + '"'
+
+
 def build(pdf_path, out, text):
     slug = re.sub(r"[^a-z0-9]+", "-", out["article"]["slug"].lower()).strip("-") or "bericht"
     gpath = os.path.join(ROOT, "assets", "magazin", f"{slug}-grafik.png")
@@ -232,10 +237,10 @@ def build(pdf_path, out, text):
     rows = "\n".join(f"| {k['label']} | {k['value']} | {k.get('change') or '–'} | S. {k['page']} |" for k in out["kpis"])
     desc = a["description"].replace('"', "'")
     fm = [
-        "---", f"title: {a['title']}", f"description: {desc}",
-        f"date: {date.today().isoformat()} 08:00", f"author: {CFG['author']}", f"author_bio: {CFG['author_bio']}",
+        "---", f"title: {q(a['title'])}", f"description: {q(desc)}",
+        f"date: {date.today().isoformat()} 08:00", f"author: {q(CFG['author'])}", f"author_bio: {q(CFG['author_bio'])}",
         f"category: {CFG.get('category', 'Zahlen')}", f"image: assets/magazin/{slug}-grafik.png",
-        f"image_alt: Grafik: {out['chart']['title']} bei {out['company']} ({out['period']})", "draft: true", "---", "",
+        f"image_alt: {q('Grafik: ' + out['chart']['title'] + ' bei ' + out['company'] + ' (' + out['period'] + ')')}", "draft: true", "---", "",
     ]
     prüf = ""
     if bad:

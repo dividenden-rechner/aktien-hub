@@ -1,12 +1,12 @@
 ---
-title: Coca-Cola hebt Jahresausblick nach starkem zweiten Quartal 2026 an
-description: Coca-Cola steigert den Umsatz im zweiten Quartal 2026 um 7 Prozent und erhöht die Jahresprognose für Gewinn und Cashflow.
+title: "Coca-Cola hebt Jahresausblick nach starkem zweiten Quartal 2026 an"
+description: "Coca-Cola steigert den Umsatz im zweiten Quartal 2026 um 7 Prozent und erhöht die Jahresprognose für Gewinn und Cashflow."
 date: 2026-10-26 08:00
 author: Kilian Treß
-author_bio: Kilian Treß betreibt dividenden-rechner.de und schreibt dort über Dividendenaktien, Kennzahlen und Steuerthemen für Privatanleger. Die Rechner und Auswertungen auf der Seite baut er selbst.
+author_bio: "Kilian Treß betreibt dividenden-rechner.de und schreibt dort über Dividendenaktien, Kennzahlen und Steuerthemen für Privatanleger. Die Rechner und Auswertungen auf der Seite baut er selbst."
 category: Zahlen
 image: assets/magazin/coca-cola-q2-2026-grafik.png
-image_alt: Grafik: Organisches Umsatzwachstum nach Segmenten (Q2 2026) bei The Coca-Cola Company (Q2 2026)
+image_alt: "Grafik: Organisches Umsatzwachstum nach Segmenten (Q2 2026) bei The Coca-Cola Company (Q2 2026)"
 ---
 Die Coca-Cola Company hat die Ergebnisse für das zweite Quartal 2026 vorgelegt und gleichzeitig ihre Prognose für das Gesamtjahr angehoben. Getragen von einem weltweiten Mengenwachstum und soliden Preisanpassungen stieg der berichtete Nettoumsatz im Vergleich zum Vorjahresquartal um 7 Prozent auf 13,4 Milliarden USD. Das Unternehmen profitierte von einer robusten Nachfrage nach Erfrischungsgetränken und einer starken Marktorientierung bei globalen Marketingkampagnen.
 
