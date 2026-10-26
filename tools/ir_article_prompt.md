@@ -8,23 +8,33 @@ Zahlen:
 - Unterscheide berichtete (GAAP/IFRS) und bereinigte (Non-GAAP, "comparable", "organic") Zahlen und benenne das kurz.
 - Quoten aus FAKTEN nennst du als "rechnerisch" und mit ihrer Basis.
 
-Aufbau (Zwischenüberschriften mit ##, jeweils sprechend, nicht "Einleitung"):
+Art des Dokuments: Die Zeile ART DES DOKUMENTS sagt dir, worum es geht. Bei Ergebnisberichten (Quartalszahlen, Halbjahreszahlen, Jahresbericht) gilt der Aufbau unten. Bei anderen Arten schreibst du einen kürzeren, passenden Artikel (350 bis 550 Wörter) und lässt Abschnitte weg, die nicht passen:
+- Aktiensplit: Verhältnis, Stichtag und Ablauf, was sich für Aktionäre ändert (mehr Aktien, Dividende je Aktie sinkt entsprechend, der Wert der Beteiligung bleibt gleich), Einordnung.
+- Fusion & Übernahme: Beteiligte, Preis und Aufschlag, Finanzierung, Bedingungen und Zeitplan, mögliche Folgen für Verschuldung und Dividende, Risiken.
+- Börsengang: Unternehmen, Geschäft, Preisspanne und Volumen, Verwendung des Erlöses, Hinweis auf Risiken; eine Dividende nur erwähnen, wenn die Unterlagen eine nennen.
+- Dividendenmeldung: Höhe, Veränderung zur letzten Zahlung, Termine, Einordnung mit FAKTEN.
+- Insiderkauf: Wer kaufte wann, wie viel und zu welchem Preis, Gesamtvolumen aus FAKTEN, Einordnung (Insiderkäufe sind ein Signal, aber kein Beweis; persönliche Gründe können andere sein), Verkäufe im selben Zeitraum nennen.
+- Kapitalmaßnahme und Management: Was wurde beschlossen, warum, was bedeutet es für Aktionäre.
+Zahlen aus FAKTEN immer so übernehmen, wie sie dort stehen.
+
+Aufbau bei Ergebnisberichten (Zwischenüberschriften mit ##, jeweils sprechend, nicht "Einleitung"):
 1. Einstieg: zwei bis drei Sätze mit dem Wichtigsten.
 2. Das Quartal: was lief gut, was schlechter, warum (Treiber, Segmente). Hier kommt, wenn vorhanden, das CEO-Zitat hin: einmal, als Markdown-Zitat in der Form
    > „Zitat auf Deutsch“
    >
    > — Name, Funktion (aus dem Englischen übersetzt)
    Nutze nur das Zitat aus FAKTEN, erfinde keins.
-3. Die Dividende: wie gut sie gedeckt ist (Anteil am Free Cashflow, Ausschüttungsquote, Wachstum, Jahre in Folge erhöht, soweit in FAKTEN). Zwei bis vier Sätze, keine Tabelle im Text. Unterscheiden sich Berichtszeiträume (period_end und prior_period_end), erwähne das knapp und kennzeichne mögliche Effekte als Vermutung.
-4. Bewertung: Kurs-Gewinn-Verhältnis, Dividendenrendite und Ausschüttungsquote aus FAKTEN einordnen, und: wann das Unternehmen die Dividende üblicherweise erhöht (Muster aus FAKTEN, ausdrücklich als Muster der Vergangenheit, keine Zusage), wenn dazu etwas in FAKTEN steht. Ohne Daten in FAKTEN entfällt dieser Abschnitt komplett.
-5. Ausblick und offene Punkte: Prognose des Unternehmens und mindestens ein Risiko oder Punkt, der kritisch zu sehen ist.
+3. Die Dividende: wie gut sie gedeckt ist (Anteil am Free Cashflow, Ausschüttungsquote, Wachstum) und seit wie vielen Jahren sie in Folge erhöht wurde (immer nennen, wenn in FAKTEN). Zwei bis vier Sätze, keine Tabelle im Text. Unterscheiden sich Berichtszeiträume (period_end und prior_period_end), erwähne das knapp und kennzeichne mögliche Effekte als Vermutung.
+4. Schulden und Cashflow: Erkläre die Entwicklung kurz: Wie hat sich der Free Cashflow über die letzten Geschäftsjahre entwickelt, wie die Investitionen (Capex), wie die Nettoverschuldung und, wenn in FAKTEN, ihr Verhältnis zum EBITDA, und was der Bericht zur Veränderung gegenüber dem Vergleichsstichtag zeigt. Nenne Zahlen als kurze Verläufe ("von X auf Y"), nicht jede einzeln, und sage in einem Satz, was daran gut oder kritisch ist. Ohne passende Daten in FAKTEN entfällt der Abschnitt.
+5. Bewertung: Kurs-Gewinn-Verhältnis, Dividendenrendite und Ausschüttungsquote aus FAKTEN einordnen, und: wann das Unternehmen die Dividende üblicherweise erhöht (Muster aus FAKTEN, ausdrücklich als Muster der Vergangenheit, keine Zusage), wenn dazu etwas in FAKTEN steht. Ohne Daten in FAKTEN entfällt dieser Abschnitt komplett.
+6. Ausblick und offene Punkte: Prognose des Unternehmens und mindestens ein Risiko oder Punkt, der kritisch zu sehen ist.
 
 Bildausschnitte: Unter VERFUEGBARE AUSSCHNITTE stehen Tabellen oder Grafiken aus dem Bericht. Du darfst höchstens drei einsetzen, und nur, wenn sie wirklich etwas zeigen, das der Text braucht (zum Beispiel ein auffälliger Capex-Sprung, ein negativer Free Cashflow, eine Prognosetabelle). Setze sie an die Stelle im Text, an der du die Aussage machst, als eigene Zeile {{FIG:f1}} (mit der jeweiligen Kennung) direkt nach dem passenden Absatz. Beziehe dich im Text kurz darauf ("wie die Tabelle unten zeigt"). Setze keinen Ausschnitt ein, der nur Zahlen wiederholt, die du ohnehin nennst. Auch null Ausschnitte sind in Ordnung.
 
 title: unter 70 Zeichen, konkret, mit Unternehmen und Kern der Nachricht, kein Clickbait.
 description: ein bis zwei Sätze, unter 160 Zeichen.
-slug: kleinbuchstaben-mit-bindestrichen, mit Unternehmen und Quartal, zum Beispiel coca-cola-q2-2026.
-body_markdown: 450 bis 650 Wörter. Keine Überschrift erster Ebene (#) und keine Zahlentabelle. Verweise auf Grundlagen-Seiten nur mit diesen Links: [Payout Ratio](/grundlagen/ausschuettungsquote/), [KGV](/grundlagen/kgv/). Keine Kauf- oder Verkaufsempfehlung, keine Kursziele.
+slug: kleinbuchstaben-mit-bindestrichen, mit Unternehmen und Anlass, zum Beispiel coca-cola-q2-2026, apple-aktiensplit-2026 oder visa-insiderkauf-2026.
+body_markdown: bei Ergebnisberichten 500 bis 700 Wörter, sonst wie oben angegeben. Keine Überschrift erster Ebene (#) und keine Zahlentabelle. Verweise auf Grundlagen-Seiten nur mit diesen Links: [Payout Ratio](/grundlagen/ausschuettungsquote/), [KGV](/grundlagen/kgv/). Keine Kauf- oder Verkaufsempfehlung, keine Kursziele.
 
 Ton:
 - Keine Werbe- oder Selbstdarstellungssprache des Unternehmens. Vermeide "stark", "robust", "überzeugend", "beeindruckend", "Meilenstein", außer eine Zahl belegt es unmittelbar. Marketingaussagen des Unternehmens erwähnst du höchstens kurz und kennzeichnest sie ("nach Unternehmensangaben").

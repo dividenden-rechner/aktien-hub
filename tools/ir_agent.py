@@ -19,13 +19,15 @@ ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 CFG = json.load(open(os.path.join(ROOT, "tools", "ir_config.json"), encoding="utf-8"))
 MODEL = os.environ.get("GEMINI_MODEL") or CFG.get("model", "gemini-2.5-flash")
 
+REPORT_TYPES = ["Quartalszahlen", "Halbjahreszahlen", "Jahresbericht", "Dividendenmeldung", "Aktiensplit", "Fusion & Übernahme", "Börsengang", "Insiderkauf", "Kapitalmaßnahme", "Management", "Sonstige Meldung"]
 NUM = {"type": "NUMBER"}
 SCHEMA = {   # Aufruf 1: Zahlen aus dem Bericht
     "type": "OBJECT",
-    "required": ["company", "period", "report_date", "kpis", "chart"],
+    "required": ["company", "report_type", "report_date"],
     "properties": {
         "company": {"type": "STRING"}, "ticker": {"type": "STRING"},
-        "period": {"type": "STRING", "description": "z. B. Q2 2026"},
+        "report_type": {"type": "STRING", "enum": REPORT_TYPES, "description": "Art des Dokuments"},
+        "period": {"type": "STRING", "description": "z. B. Q2 2026, H1 2026, GJ 2025; leer bei Ereignismeldungen"},
         "report_date": {"type": "STRING", "description": "YYYY-MM-DD"},
         "website_domain": {"type": "STRING", "description": "Domain der Unternehmenswebsite, nur wenn im Bericht genannt, z. B. verizon.com"},
         "ceo_quote": {"type": "OBJECT", "description": "Ein aussagekraeftiges, woertliches Zitat des CEO oder CFO aus dem Bericht",
@@ -54,6 +56,10 @@ SCHEMA = {   # Aufruf 1: Zahlen aus dem Bericht
             "properties": {"period_label": {"type": "STRING", "description": "z. B. Halbjahr 2026 oder 6 Monate"}, "unit": {"type": "STRING", "description": "z. B. Mio. USD"},
                            "operating_cash_flow": NUM, "capex": NUM, "dividends_paid": NUM, "share_repurchases": NUM,
                            "prior_dividends_paid": NUM, "page": {"type": "INTEGER"}}},
+        "balance": {"type": "OBJECT", "description": "Aus der Bilanz: Schulden und liquide Mittel am Berichtsstichtag und am Vergleichsstichtag (Vorjahresende oder Vorjahresquartal), positive Zahlen in der Berichtseinheit",
+            "properties": {"unit": {"type": "STRING"}, "cash": NUM, "short_term_debt": NUM, "long_term_debt": NUM,
+                           "prior_cash": NUM, "prior_short_term_debt": NUM, "prior_long_term_debt": NUM,
+                           "prior_label": {"type": "STRING", "description": "z. B. 31. Dezember 2025"}}},
     },
 }
 ARTICLE_SCHEMA = {   # Aufruf 2: Artikeltext
@@ -180,7 +186,7 @@ def check_numbers(out, text):
     flat = re.sub(r"[^0-9]", "", text) if text else ""
     flat_raw = text or ""
     bad = []
-    for k in out["kpis"]:
+    for k in out.get("kpis") or []:
         for field in ("value", "change"):
             v = k.get(field) or ""
             nums = re.findall(r"\d+[.,]?\d*", v)
@@ -196,7 +202,14 @@ def check_numbers(out, text):
             cands = {f"{v:,.0f}", f"{v:,.0f}".replace(",", "."), f"{v:,.0f}".replace(",", " "), "%g" % v}
             if not any(c in flat_raw for c in cands):
                 bad.append(f"Kapitalflussrechnung {f}: {v:g}")
-    for b in out["chart"]["bars"]:
+    bl = out.get("balance") or {}
+    for f in ("cash", "short_term_debt", "long_term_debt", "prior_cash", "prior_short_term_debt", "prior_long_term_debt"):
+        v = bl.get(f)
+        if v:
+            cands = {f"{v:,.0f}", f"{v:,.0f}".replace(",", "."), f"{v:,.0f}".replace(",", " "), "%g" % v}
+            if not any(c in flat_raw for c in cands):
+                bad.append(f"Bilanz {f}: {v:g}")
+    for b in (out.get("chart") or {}).get("bars", []):
         n = ("%g" % b["value"])
         if not any(c in flat_raw for c in {n, n.replace(".", ",")}):
             bad.append(f"Grafik {b['label']}: {n}")
@@ -239,8 +252,7 @@ def html_to_text(h):
     return re.sub(r"\n\s*\n+", "\n\n", t).strip()
 
 
-def sec_release(ticker):
-    """Neueste Ergebnis-Pressemitteilung (8-K, Item 2.02, Exhibit 99.1) eines US-Titels von der SEC."""
+def sec_lookup(ticker):
     t = ticker.upper().strip()
     if not re.match(r"^[A-Z0-9.\-]{1,10}$", t):
         fail(f"Ungueltiges Kuerzel: {ticker}")
@@ -253,35 +265,128 @@ def sec_release(ticker):
         fail(f"{t} nicht bei der SEC gefunden. Fuer Titel ausserhalb der USA bitte eine PDF hochladen oder einen PDF-Link angeben.")
     cik = int(hit["cik_str"])
     sub = json.loads(http(f"https://data.sec.gov/submissions/CIK{cik:010d}.json"))
-    rec = sub["filings"]["recent"]
-    for i, form in enumerate(rec["form"]):
-        if form != "8-K" or "2.02" not in str(rec["items"][i]).split(","):
+    return t, hit, cik, sub["filings"]["recent"]
+
+
+def _age(fdate):
+    return (date.today() - datetime.strptime(fdate, "%Y-%m-%d").date()).days
+
+
+def _src_from_file(raw, name, base, hit, fdate, render=True):
+    if name.lower().endswith(".pdf"):
+        path = "/tmp/sec_release.pdf"; open(path, "wb").write(raw)
+        return {"kind": "pdf", "path": path, "company": hit["title"], "url": base + name, "date": fdate}
+    rawtxt = raw.decode("utf-8", "replace")
+    txt = html_to_text(rawtxt) if not name.lower().endswith(".txt") else rawtxt
+    if render and name.lower().endswith((".htm", ".html")) and html_to_pdf(rawtxt, base, "/tmp/sec_release.pdf"):
+        print("Meldung als PDF gerendert (Seiten und Ausschnitte moeglich).")
+        return {"kind": "pdf", "path": "/tmp/sec_release.pdf", "company": hit["title"], "url": base + name, "date": fdate, "pages_real": False}
+    return {"kind": "text", "text": txt, "company": hit["title"], "url": base + name, "date": fdate, "pages_real": False}
+
+
+def _exhibit(base, rec, i):
+    files = [x["name"] for x in json.loads(http(base + "index.json"))["directory"]["item"]]
+    cand = [f for f in files if re.search(r"\.(htm|html|txt|pdf)$", f, re.I) and not re.search(r"(-index|^R\d+\.|xbrl)", f, re.I)]
+    prim = rec["primaryDocument"][i]
+    order = ([f for f in cand if re.search(r"99[-_.]?0?1", f)] or [f for f in cand if "99" in f]
+             or [f for f in cand if re.search(r"(earnings|release)", f, re.I)] or [f for f in cand if f != prim] or cand)
+    return order[0] if order else prim
+
+
+EVENT_ITEMS = {"1.01", "2.01", "3.03", "5.01", "5.02", "5.03", "8.01"}
+
+
+def sec_release(ticker, art="ergebnisse"):
+    """Dokument eines US-Titels von der SEC: Ergebnismeldung (8-K 2.02), Jahresbericht (10-K), Quartalsbericht (10-Q),
+    neueste Ereignismeldung (8-K) oder Insidergeschaefte (Form 4)."""
+    t, hit, cik, rec = sec_lookup(ticker)
+    n = len(rec["form"])
+    if art == "insider":
+        return sec_insider(t, hit, cik, rec)
+    if art in ("jahresbericht", "quartalsbericht"):
+        form = "10-K" if art == "jahresbericht" else "10-Q"
+        for i in range(n):
+            if rec["form"][i] != form:
+                continue
+            nod = rec["accessionNumber"][i].replace("-", ""); prim = rec["primaryDocument"][i]
+            base = f"https://www.sec.gov/Archives/edgar/data/{cik}/{nod}/"
+            raw = http(base + prim, binary=True, timeout=120)
+            print(f"SEC: {hit['title']} ({t}), {form} vom {rec['filingDate'][i]}, Datei {prim}")
+            src = _src_from_file(raw, prim, base, hit, rec["filingDate"][i], render=False)
+            if src["kind"] == "text":
+                src["text"] = src["text"][:450000]
+            return src
+        fail(f"Kein {form} von {t} gefunden.")
+    for i in range(n):
+        if rec["form"][i] != "8-K":
             continue
-        acc = rec["accessionNumber"][i]; nod = acc.replace("-", ""); fdate = rec["filingDate"][i]
+        items = set(str(rec["items"][i]).split(","))
+        if art == "ergebnisse" and "2.02" not in items:
+            continue
+        if art == "meldung" and (not (items & EVENT_ITEMS) or _age(rec["filingDate"][i]) > 90):
+            continue
+        fdate = rec["filingDate"][i]; nod = rec["accessionNumber"][i].replace("-", "")
         base = f"https://www.sec.gov/Archives/edgar/data/{cik}/{nod}/"
-        files = [x["name"] for x in json.loads(http(base + "index.json"))["directory"]["item"]]
-        cand = [f for f in files if re.search(r"\.(htm|html|txt|pdf)$", f, re.I) and not re.search(r"(-index|^R\d+\.|xbrl)", f, re.I)]
-        prim = rec["primaryDocument"][i]
-        order = ([f for f in cand if re.search(r"99[-_.]?0?1", f)] or [f for f in cand if "99" in f]
-                 or [f for f in cand if re.search(r"(earnings|release)", f, re.I)] or [f for f in cand if f != prim] or cand)
-        if not order:
-            continue
-        name = order[0]
+        name = _exhibit(base, rec, i)
         raw = http(base + name, binary=True)
-        age = (date.today() - datetime.strptime(fdate, "%Y-%m-%d").date()).days
-        if age > 150:
-            print(f"::warning title=IR-Agent::Neueste Ergebnismeldung von {t} ist {age} Tage alt ({fdate}).")
-        print(f"SEC: {hit['title']} ({t}), 8-K vom {fdate}, Datei {name}")
-        if name.lower().endswith(".pdf"):
-            path = "/tmp/sec_release.pdf"; open(path, "wb").write(raw)
-            return {"kind": "pdf", "path": path, "company": hit["title"], "url": base + name, "date": fdate}
-        rawtxt = raw.decode("utf-8", "replace")
-        txt = html_to_text(rawtxt) if not name.lower().endswith(".txt") else rawtxt
-        if name.lower().endswith((".htm", ".html")) and html_to_pdf(rawtxt, base, "/tmp/sec_release.pdf"):
-            print("Pressemitteilung als PDF gerendert (Seiten und Ausschnitte moeglich).")
-            return {"kind": "pdf", "path": "/tmp/sec_release.pdf", "company": hit["title"], "url": base + name, "date": fdate, "pages_real": False}
-        return {"kind": "text", "text": txt, "company": hit["title"], "url": base + name, "date": fdate}
-    fail(f"Keine Ergebnismeldung (8-K, Item 2.02) von {t} gefunden.")
+        if art == "ergebnisse" and _age(fdate) > 150:
+            print(f"::warning title=IR-Agent::Neueste Ergebnismeldung von {t} ist {_age(fdate)} Tage alt ({fdate}).")
+        print(f"SEC: {hit['title']} ({t}), 8-K ({', '.join(sorted(items))}) vom {fdate}, Datei {name}")
+        return _src_from_file(raw, name, base, hit, fdate)
+    fail("Keine Ergebnismeldung (8-K, Item 2.02) von %s gefunden." % t if art == "ergebnisse" else "Keine passende Meldung (8-K der letzten 90 Tage) von %s gefunden." % t)
+
+
+def sec_insider(t, hit, cik, rec):
+    """Insiderkaeufe und -verkaeufe (Form 4, offener Markt) der letzten 120 Tage, Summen rechnet das Programm."""
+    import xml.etree.ElementTree as ET
+    tx = []; seen = 0
+    for i in range(len(rec["form"])):
+        if rec["form"][i] not in ("4", "4/A") or _age(rec["filingDate"][i]) > 120:
+            continue
+        seen += 1
+        if seen > 40:
+            break
+        nod = rec["accessionNumber"][i].replace("-", ""); prim = rec["primaryDocument"][i].split("/")[-1]
+        base = f"https://www.sec.gov/Archives/edgar/data/{cik}/{nod}/"
+        try:
+            root = ET.fromstring(http(base + prim))
+        except Exception as e:
+            print("Form 4 nicht lesbar:", prim, type(e).__name__); continue
+        name = (root.findtext(".//reportingOwner/reportingOwnerId/rptOwnerName") or "").strip().title()
+        rel = root.find(".//reportingOwner/reportingOwnerRelationship")
+        role = ""
+        if rel is not None:
+            role = (rel.findtext("officerTitle") or "").strip() or ("Direktor" if rel.findtext("isDirector") in ("1", "true") else "") or ("10-%-Eigner" if rel.findtext("isTenPercentOwner") in ("1", "true") else "")
+        for e in root.findall(".//nonDerivativeTransaction"):
+            code = e.findtext("transactionCoding/transactionCode")
+            if code not in ("P", "S"):
+                continue
+            try:
+                sh = float(e.findtext("transactionAmounts/transactionShares/value")); pr = float(e.findtext("transactionAmounts/transactionPricePerShare/value") or 0)
+            except Exception:
+                continue
+            tx.append({"date": e.findtext("transactionDate/value")[:10], "name": name, "role": role, "code": code, "shares": sh, "price": pr})
+    buys = [x for x in tx if x["code"] == "P"]; sells = [x for x in tx if x["code"] == "S"]
+    if not buys:
+        print(f"::notice title=IR-Agent::Keine Insiderkaeufe von {t} in den letzten 120 Tagen (Verkaeufe: {len(sells)}). Kein Artikel erzeugt.")
+        return None
+    tx.sort(key=lambda x: x["date"], reverse=True)
+    lines = ["Datum | Name | Funktion | Art | Stück | Preis (USD) | Betrag (USD)"]
+    for x in tx:
+        lines.append(f"{x['date']} | {x['name']} | {x['role'] or '–'} | {'Kauf' if x['code'] == 'P' else 'Verkauf'} (offener Markt) | {x['shares']:,.0f} | {x['price']:,.2f} | {x['shares'] * x['price']:,.0f}")
+    tot = lambda L: sum(x["shares"] * x["price"] for x in L)
+    facts = [f"Insiderkäufe am offenen Markt in den letzten 120 Tagen: {len(buys)} Transaktionen von {len({x['name'] for x in buys})} Personen, zusammen {de(tot(buys),0)} USD ({de(sum(x['shares'] for x in buys),0)} Aktien, Durchschnittspreis {de(tot(buys) / sum(x['shares'] for x in buys), 2)} USD)."]
+    big = max(buys, key=lambda x: x["shares"] * x["price"])
+    facts.append(f"Größter Kauf: {big['name']} ({big['role'] or 'Insider'}) am {big['date']}, {de(big['shares'],0)} Aktien zu {de(big['price'],2)} USD = {de(big['shares'] * big['price'],0)} USD.")
+    if sells:
+        facts.append(f"Im selben Zeitraum gab es {len(sells)} Verkäufe am offenen Markt über zusammen {de(tot(sells),0)} USD.")
+    else:
+        facts.append("Im selben Zeitraum gab es keine Verkäufe am offenen Markt.")
+    text = f"INSIDERGESCHÄFTE {hit['title']} ({t}), Meldungen nach SEC Form 4, Stand {date.today().isoformat()}\n\n" + "\n".join(lines)
+    print(f"SEC Form 4: {len(buys)} Kaeufe, {len(sells)} Verkaeufe")
+    return {"kind": "text", "text": text, "company": hit["title"], "url": f"https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK={cik}&type=4&dateb=&owner=include&count=40",
+            "date": date.today().isoformat(), "pages_real": False, "extra_facts": facts}
+
 
 def html_to_pdf(raw_html, base_url, out_path):
     """Rendert eine HTML-Pressemitteilung mit Chrome zu PDF (damit es Seiten und Ausschnitte gibt)."""
@@ -423,6 +528,25 @@ def derive_report(out):
     return facts, rows
 
 
+def derive_balance(out):
+    """Nettoverschuldung aus der Bilanz des Berichts (Stichtag gegen Vergleichsstichtag)."""
+    b = out.get("balance") or {}
+    if b.get("cash") is None or (b.get("short_term_debt") is None and b.get("long_term_debt") is None):
+        return [], []
+    u = b.get("unit") or "Mio."
+    debt = (b.get("short_term_debt") or 0) + (b.get("long_term_debt") or 0)
+    net = debt - b["cash"]
+    facts = [f"Bilanz zum Stichtag: Finanzschulden {de(debt,0)} {u} (kurz- plus langfristig), liquide Mittel {de(b['cash'],0)} {u}, Nettoverschuldung rechnerisch {de(net,0)} {u}."]
+    rows = [("Nettoverschuldung (Bilanzstichtag)", f"{de(net,0)} {u}", f"{de(debt,0)} − {de(b['cash'],0)}")]
+    if b.get("prior_cash") is not None and (b.get("prior_short_term_debt") is not None or b.get("prior_long_term_debt") is not None):
+        pdebt = (b.get("prior_short_term_debt") or 0) + (b.get("prior_long_term_debt") or 0)
+        pnet = pdebt - b["prior_cash"]; lab = b.get("prior_label") or "Vergleichsstichtag"
+        ch = net - pnet
+        facts.append(f"Zum Vergleichsstichtag ({lab}) lag die Nettoverschuldung rechnerisch bei {de(pnet,0)} {u}; Veränderung {'+' if ch >= 0 else '−'}{de(abs(ch),0)} {u}. Finanzschulden damals {de(pdebt,0)} {u}.")
+        rows.append((f"Nettoverschuldung ({lab})", f"{de(pnet,0)} {u}", f"{de(pdebt,0)} − {de(b['prior_cash'],0)}"))
+    return facts, rows
+
+
 def fmp_get(path, **params):
     key = os.environ.get("FMP_API_KEY")
     if not key:
@@ -468,6 +592,33 @@ def fmp_metrics(symbol, have_report_rows=False):
                 facts.append(f"[{src}] Letzte vier Quartale: Free Cashflow {de(fcf / 1e6,0)} Mio. USD, gezahlte Dividenden {de(dp / 1e6,0)} Mio. USD, Anteil {de(dp / fcf * 100, 0)} %.")
                 if not have_report_rows:
                     rows.append(("Dividenden / Free Cashflow (12 Monate)", f"{de(dp / fcf * 100, 0)} %", f"{de(dp / 1e6,0)} ÷ {de(fcf / 1e6,0)} Mio. USD"))
+    # Mehrjahres-Entwicklung: Cashflow, Investitionen, Verschuldung (Geschaeftsjahre)
+    cfa = fmp_get("cash-flow-statement", symbol=symbol, period="annual", limit=5)
+    bsa = fmp_get("balance-sheet-statement", symbol=symbol, period="annual", limit=5)
+    ina = fmp_get("income-statement", symbol=symbol, period="annual", limit=5)
+    def yearkey(x): return str(x.get("fiscalYear") or (x.get("date") or "")[:4])
+    if isinstance(cfa, list) and cfa:
+        cs = sorted(cfa, key=yearkey)
+        fcfs = "; ".join(f"{yearkey(x)}: {de(float(x.get('freeCashFlow') or 0) / 1e9, 1)}" for x in cs)
+        cap = "; ".join(f"{yearkey(x)}: {de(abs(float(x.get('capitalExpenditure') or 0)) / 1e9, 1)}" for x in cs)
+        facts.append(f"[{src}] Free Cashflow der letzten Geschäftsjahre in Mrd. USD: {fcfs}. Investitionen (Capex) in Mrd. USD: {cap}.")
+        rows.append(("Free Cashflow, Geschäftsjahre (Mrd. USD)", fcfs, "Kapitalflussrechnung laut FMP"))
+    if isinstance(bsa, list) and bsa:
+        bs = sorted(bsa, key=yearkey); eb = {yearkey(x): float(x.get("ebitda") or 0) for x in (ina if isinstance(ina, list) else [])}
+        nd = []
+        for x in bs:
+            net = x.get("netDebt")
+            net = float(net) if net is not None else float(x.get("totalDebt") or 0) - float(x.get("cashAndCashEquivalents") or 0)
+            nd.append((yearkey(x), net))
+        nds = "; ".join(f"{y}: {de(v / 1e9, 1)}" for y, v in nd)
+        facts.append(f"[{src}] Nettoverschuldung zum Jahresende in Mrd. USD: {nds}.")
+        lev = [(y, v / eb[y]) for y, v in nd if eb.get(y, 0) > 0 and v > 0]
+        if lev:
+            ls = "; ".join(f"{y}: {de(v, 1)}" for y, v in lev)
+            facts.append(f"[{src}] Nettoverschuldung im Verhältnis zum EBITDA (Faktor): {ls}.")
+            rows.append(("Nettoverschuldung / EBITDA, Jahresende", ls, "Bilanz und Gewinn- und Verlustrechnung laut FMP"))
+        else:
+            rows.append(("Nettoverschuldung, Jahresende (Mrd. USD)", nds, "Bilanz laut FMP"))
     # Wann wird die Dividende ueblicherweise erhoeht? (Ankuendigungsmonat der Erhoehungen)
     MON = ["Januar", "Februar", "März", "April", "Mai", "Juni", "Juli", "August", "September", "Oktober", "November", "Dezember"]
     asc = sorted([x for x in dv if x.get("date") and float(x.get("dividend") or 0) > 0], key=lambda x: x["date"])
@@ -541,7 +692,7 @@ def draw_graphic(out, path):
     green, dark, grey = "#2f9e5b", "#14202b", "#5d6b78"
     d.rectangle([0, 0, W, 16], fill=green)
     d.text((70, 52), f"{out['company']} · {out['period']}".upper(), font=font(28, True), fill=green)
-    kp = out["kpis"][:4]
+    kp = (out.get("kpis") or [])[:4]
     n = max(1, len(kp)); gap = 24; cw = (W - 140 - gap * (n - 1)) // n
     for i, k in enumerate(kp):
         x = 70 + i * (cw + gap)
@@ -595,11 +746,15 @@ def build(out, text, src_note, force=False, calc_rows=None, fmp_used=False, figs
         fail(f"Es gibt schon einen Artikel '{slug}.md'. Zum Ueberschreiben --force nutzen oder die Datei vorher loeschen.")
     gpath = os.path.join(ROOT, "assets", "magazin", f"{slug}-grafik.png")
     os.makedirs(os.path.dirname(gpath), exist_ok=True)
-    draw_graphic(out, gpath)
+    has_chart = bool((out.get("chart") or {}).get("bars"))
+    if has_chart:
+        draw_graphic(out, gpath)
     bad = check_numbers(out, text)
+    rtype = out.get("report_type") or "Quartalszahlen"
+    doc = f"{rtype} {out.get('period') or ''}".strip()
     a = out["article"]
     quelle = lambda pg: f"S. {pg}" if (pg or 0) > 0 else "Pressemitteilung"
-    rows = "\n".join(f"| {k['label']} | {k['value']} | {k.get('change') or '–'} | {quelle(k.get('page'))} |" for k in out["kpis"])
+    rows = "\n".join(f"| {k['label']} | {k['value']} | {k.get('change') or '–'} | {quelle(k.get('page'))} |" for k in (out.get("kpis") or []))
     photo = None
     try:
         photo = pick_photo(out["company"], out.get("ticker", ""), os.environ.get("GEMINI_API_KEY") if not os.environ.get("IR_MOCK") else None)
@@ -607,7 +762,7 @@ def build(out, text, src_note, force=False, calc_rows=None, fmp_used=False, figs
         print("Foto-Suche fehlgeschlagen:", e)
     fm = ["---", f"title: {q(a['title'])}", f"description: {q(a['description'])}",
           f"date: {date.today().isoformat()} 08:00", f"author: {q(CFG['author'])}", f"author_bio: {q(CFG['author_bio'])}",
-          f"category: {CFG.get('category', 'Zahlen')}"]
+          f"category: {rtype}"]
     hinweise = []
     if photo:
         rel = save_photo(photo, slug)
@@ -629,7 +784,7 @@ def build(out, text, src_note, force=False, calc_rows=None, fmp_used=False, figs
         hinweise.append("Berichtstext nicht lesbar, Zahlen nicht automatisch geprueft.")
     if src_note:
         hinweise.append("Quelle: " + src_note)
-    chart_alt = f"{out['chart']['title']} ({out['company']}, {out['period']})"
+    chart_alt = f"{out['chart']['title']} ({out['company']}, {doc})" if has_chart else ""
     body_md = a["body_markdown"].strip()
     used = []
     for fid, f in (figs or {}).items():
@@ -641,21 +796,22 @@ def build(out, text, src_note, force=False, calc_rows=None, fmp_used=False, figs
             alt = f["title"].replace("[", "(").replace("]", ")")
             pg = f.get("page") if (src or {}).get("pages_real", True) and f.get("page") else None
             link = f" · [Original]({src['url']})" if (src or {}).get("url", "").startswith("http") else ""
-            body_md = body_md.replace(tag, f"![{alt}](/{rel})\n*{f['title']}. Quelle: {out['company']}, Pressemitteilung zum {out['period']} vom {out['report_date']}" + (f", S. {pg}" if pg else "") + f"{link}. Ausschnitt nur zugeschnitten, sonst unverändert.*")
+            body_md = body_md.replace(tag, f"![{alt}](/{rel})\n*{f['title']}. Quelle: {out['company']}, {doc} vom {out['report_date']}" + (f", S. {pg}" if pg else "") + f"{link}. Ausschnitt nur zugeschnitten, sonst unverändert.*")
     body_md = re.sub(r"\{\{FIG:[^}]*\}\}", "", body_md)
     if used:
         hinweise.append("Ausschnitte aus dem Bericht im Text (" + ", ".join(used) + "): bitte prüfen, ob Zuschnitt und Platz passen. Unpassende Bildzeilen einfach löschen.")
-    parts = body_md.split("\n\n", 1)
-    glink = f" · [Original]({src['url']})" if (src or {}).get("url", "").startswith("http") else ""
-    body_md = parts[0] + f"\n\n![{chart_alt}](/assets/magazin/{slug}-grafik.png)\n*Eigene Darstellung nach Daten aus: {out['company']}, Pressemitteilung zum {out['period']} vom {out['report_date']}{glink}.*\n\n" + (parts[1] if len(parts) > 1 else "")
+    if has_chart:
+        parts = body_md.split("\n\n", 1)
+        glink = f" · [Original]({src['url']})" if (src or {}).get("url", "").startswith("http") else ""
+        body_md = parts[0] + f"\n\n![{chart_alt}](/assets/magazin/{slug}-grafik.png)\n*Eigene Darstellung nach Daten aus: {out['company']}, {doc} vom {out['report_date']}{glink}.*\n\n" + (parts[1] if len(parts) > 1 else "")
     head = "".join(f"<!-- PRÜFEN: {h} -->\n" for h in hinweise) + "\n"
     calc_md = ""
     if calc_rows:
-        calc_md = ("## Dividendenkennzahlen im Überblick (eigene Berechnung)\n\n| Kennzahl | Wert | Rechenweg |\n|---|---|---|\n"
+        calc_md = (("## Dividendenkennzahlen im Überblick (eigene Berechnung)" if rtype in ("Quartalszahlen", "Halbjahreszahlen", "Jahresbericht", "Dividendenmeldung") else "## Kennzahlen im Überblick (eigene Berechnung)") + "\n\n| Kennzahl | Wert | Rechenweg |\n|---|---|---|\n"
                    + "\n".join(f"| {a} | {b} | {c} |" for a, b, c in calc_rows) + "\n\n")
-    quelle_txt = f"{out['company']}, Pressemitteilung zum {out['period']} vom {out['report_date']}" + (f"; Kurs- und Dividendendaten: Financial Modeling Prep" if fmp_used else "")
-    body = (head + body_md + "\n\n## Die wichtigsten Zahlen im Überblick\n\n"
-            "| Kennzahl | Wert | Veränderung zum Vorjahr | Quelle |\n|---|---|---|---|\n" + rows + "\n\n" + calc_md +
+    quelle_txt = f"{out['company']}, {doc} vom {out['report_date']}" + (f"; Kurs- und Dividendendaten: Financial Modeling Prep" if fmp_used else "")
+    kpi_md = ("## Die wichtigsten Zahlen im Überblick\n\n| Kennzahl | Wert | Veränderung zum Vorjahr | Quelle |\n|---|---|---|---|\n" + rows + "\n\n") if rows else ""
+    body = (head + body_md + "\n\n" + kpi_md + calc_md +
             f"*Quelle: {quelle_txt}. Rechenwege eigene Berechnung. Keine Anlageberatung.*\n")
     open(mdpath, "w", encoding="utf-8").write("\n".join(fm) + body)
     return mdpath, gpath, bad, photo
@@ -663,7 +819,7 @@ def build(out, text, src_note, force=False, calc_rows=None, fmp_used=False, figs
 
 def main():
     ap = argparse.ArgumentParser()
-    ap.add_argument("pdf", nargs="?"); ap.add_argument("--ticker"); ap.add_argument("--mock"); ap.add_argument("--force", action="store_true")
+    ap.add_argument("pdf", nargs="?"); ap.add_argument("--ticker"); ap.add_argument("--art", default=os.environ.get("ART") or "ergebnisse"); ap.add_argument("--mock"); ap.add_argument("--force", action="store_true")
     a = ap.parse_args()
     if not a.pdf and not a.ticker:
         fail("Bitte --ticker KO oder eine PDF angeben.")
@@ -671,7 +827,9 @@ def main():
         os.environ["IR_MOCK"] = "1"
     src = None
     if a.ticker:
-        src = sec_release(a.ticker)
+        src = sec_release(a.ticker, a.art)
+        if src is None:
+            return
     else:
         src = {"kind": "pdf", "path": a.pdf, "url": "", "date": ""}
     text = pdf_text(src["path"]) if src["kind"] == "pdf" else src["text"]
@@ -682,8 +840,11 @@ def main():
     else:
         out = call_gemini(src, read_prompt("ir_prompt.md"))
         facts, calc_rows = derive_report(out)
+        have_rep = bool(calc_rows)
+        bf, br = derive_balance(out)
+        facts += bf + (src.get("extra_facts") or []); calc_rows += br
         sym = (a.ticker or out.get("ticker") or "").upper()
-        ff, fr = fmp_metrics(sym, bool(calc_rows)) if re.match(r"^[A-Z0-9.\-]{1,10}$", sym) else ([], [])
+        ff, fr = fmp_metrics(sym, have_rep) if re.match(r"^[A-Z0-9.\-]{1,10}$", sym) else ([], [])
         if ff:
             facts += ff; calc_rows += fr; fmp_used = True
         qt = out.get("ceo_quote") or {}
@@ -694,9 +855,9 @@ def main():
             else:
                 print("Zitat nicht im Berichtstext gefunden, wird weggelassen.")
                 out["ceo_quote"] = None
-        summary = json.dumps({k: out.get(k) for k in ("company", "ticker", "period", "report_date", "period_end", "prior_period_end", "kpis", "chart", "cashflow")}, ensure_ascii=False)
+        summary = json.dumps({k: out.get(k) for k in ("company", "ticker", "report_type", "period", "report_date", "period_end", "prior_period_end", "kpis", "chart", "cashflow", "balance")}, ensure_ascii=False)
         fakten = "\n".join("- " + f for f in facts) if facts else "- (keine berechneten Kennzahlen verfuegbar)"
-        prompt2 = read_prompt("ir_article_prompt.md") + "\n\nFAKTEN (vom Programm berechnet, Zahlen exakt so uebernehmen):\n" + fakten + "\n\nEXTRAHIERTE KENNZAHLEN (JSON):\n" + summary
+        prompt2 = read_prompt("ir_article_prompt.md") + f"\n\nART DES DOKUMENTS: {out.get('report_type')}" + "\n\nFAKTEN (vom Programm berechnet, Zahlen exakt so uebernehmen):\n" + fakten + "\n\nEXTRAHIERTE KENNZAHLEN (JSON):\n" + summary
         figs = {}
         if src["kind"] == "pdf":
             os.makedirs("/tmp/figs", exist_ok=True)
