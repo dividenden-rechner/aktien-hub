@@ -82,10 +82,7 @@ svg text{fill:var(--mut);font-size:11px;font-family:inherit}
 .story .ch b{display:block;color:#14202b;font-size:3.8cqw}
 .story .two{display:grid;grid-template-columns:1fr 1fr;gap:3cqw}
 .story .fn{font-size:2.8cqw;color:#6a7783;display:block;text-align:right}
-.story .ar{display:flex;align-items:center;gap:2.5cqw;font-size:3.8cqw;margin-top:.8cqw}
-.story .ar span{width:16cqw}.story .ar b{width:11cqw;text-align:right}
-.story .ar i{flex:1;height:3.6cqw;border-radius:2cqw;background:#e6ebef;overflow:hidden}
-.story .ar u{display:block;height:100%;border-radius:2cqw}
+.story svg[role=img][aria-label^=Analysten]{display:block;width:100%;height:auto}
 .story .na{font-size:3.4cqw;color:#6a7783;padding:4cqw 0}
 /* ===== Daten-Explorer ===== */
 .xtabs{display:flex;gap:6px;overflow-x:auto;padding:14px 0 10px;margin-top:6px;border-bottom:1px solid var(--line);scrollbar-width:thin}
@@ -103,7 +100,9 @@ svg text{fill:var(--mut);font-size:11px;font-family:inherit}
 .xnote{font-size:13px;color:var(--mut);margin:4px 0 14px;max-width:80ch}
 .fin{margin:22px 0}.fin h3{margin:0 0 4px;font-size:17px}.fin .fsub{color:var(--mut);font-size:13px;margin:0 0 10px}
 .fcard{border:1px solid var(--line);border-radius:8px;background:#fff;padding:14px 16px;margin:0 0 16px}
-.fscroll{overflow-x:auto}.fscroll svg{display:block;min-width:620px;width:100%;height:auto}
+.fscroll{overflow-x:auto}.fscroll svg{display:block;min-width:620px;width:100%;height:auto}.fscroll.fit svg{min-width:0}
+.ftoggle{display:inline-flex;gap:0;margin-left:auto}.ftoggle button{border-radius:0!important}.ftoggle button:first-child{border-radius:8px 0 0 8px!important}.ftoggle button:last-child{border-radius:0 8px 8px 0!important;border-left:0!important}
+@media(max-width:560px){.ftab{font-size:12px}.ftab th,.ftab td{padding:5px 3px;white-space:normal}.ftab th{font-size:11px;line-height:1.2}.fcard{padding:12px 10px}}
 .fctl{display:flex;flex-wrap:wrap;gap:8px 10px;align-items:center;margin:0 0 10px}
 .fctl select,.fctl button{font:inherit;font-size:13px;padding:6px 10px;border:1px solid var(--line);border-radius:8px;background:#fff;color:var(--ink);cursor:pointer}
 .fctl button[aria-pressed=true]{background:#e8f5ee;border-color:#2c8f5a}
@@ -111,6 +110,7 @@ svg text{fill:var(--mut);font-size:11px;font-family:inherit}
 .fchip{display:inline-flex;align-items:center;gap:6px;font-size:12.5px;padding:4px 10px;border:1px solid var(--line);border-radius:999px;background:#fff;cursor:pointer;color:var(--ink)}
 .fchip i{width:10px;height:10px;border-radius:3px;display:inline-block}.fchip[aria-pressed=false]{opacity:.45}
 .ftab{width:100%;border-collapse:collapse;font-size:13.5px}.ftab th,.ftab td{padding:6px 8px;border-bottom:1px solid var(--line);text-align:right;white-space:nowrap}.ftab th:first-child,.ftab td:first-child{text-align:left}
+.fleg{list-style:none;margin:10px 0 0;padding:0;display:grid;gap:5px;font-size:13px}.fleg li{display:flex;gap:8px;align-items:center}.fleg i{width:10px;height:10px;border-radius:3px;flex:none}.fleg span{margin-left:auto;color:var(--mut);white-space:nowrap;padding-left:8px}
 .fnote{font-size:12.5px;color:var(--mut);margin:8px 0 0}
 .nrb{display:block;width:100%;text-align:left;padding:11px 16px;background:none;border:0;border-top:1px solid var(--line);font:inherit;color:var(--ink);cursor:pointer}
 .nri:first-child .nrb{border-top:0}.nrb:hover{background:#f0f8f3}.nrb b{display:block;font-weight:600;font-size:14.5px}.nrb span{font-size:12.5px;color:var(--mut)}
@@ -401,14 +401,17 @@ async function initFinance(sym,p,cur,inc,cf){
   let on=new Set(["ni","fcf","cash","debt"].filter(k=>have.some(s=>s.k===k)));let mode="line",sy=years[years.length-1];
   box.className="fin";
   box.innerHTML=`<h3>Finanzen im Überblick</h3><p class="fsub">Jahreswerte in ${esc(cur||"Berichtswährung")}. Quelle: FMP.</p>
-  <div class="fcard"><div class="fctl"><b>Gewinnfluss</b><select id="fsy" aria-label="Jahr">${years.slice().reverse().map(y=>`<option>${y}</option>`).join("")}</select></div><div class="fscroll" id="fsk"></div><p class="fnote">Vom Umsatz bis zum Nettogewinn. Die Breite der Bänder ist proportional zum Betrag.</p></div>
-  <div class="fcard"><div class="fctl"><b>Kennzahlen übereinander legen</b><button type="button" data-m="line" aria-pressed="true">Linien</button><button type="button" data-m="bar" aria-pressed="false">Balken</button></div><div class="fchips" id="fch"></div><div class="fscroll" id="fcm"></div><p class="fnote" id="fmn"></p></div>
+  <div class="fcard"><div class="fctl"><b id="fst">Gewinnfluss</b><span class="ftoggle"><button type="button" data-f="gw" aria-pressed="true">Gewinn</button><button type="button" data-f="cf" aria-pressed="false">Cashflow</button></span><select id="fsy" aria-label="Jahr">${years.slice().reverse().map(y=>`<option>${y}</option>`).join("")}</select></div><div class="fscroll" id="fsk"></div><p class="fnote" id="fsn">Vom Umsatz bis zum Nettogewinn. Die Breite der Bänder ist proportional zum Betrag.</p></div>
+  <div class="fcard"><div class="fctl"><b>Kennzahlen übereinander legen</b><button type="button" data-m="line" aria-pressed="true">Linien</button><button type="button" data-m="bar" aria-pressed="false">Balken</button></div><div class="fchips" id="fch"></div><div class="fscroll fit" id="fcm"></div><p class="fnote" id="fmn"></p></div>
   <div class="fcard"><div class="fctl"><b>Investitionen (Capex) und Dividendendeckung</b></div><div class="fscroll" id="fcx"></div><p class="fnote">Capex-Quote = Investitionen / Umsatz. Capex / Abschreibungen über 100 % heißt: Das Unternehmen investiert mehr, als sich Anlagen abnutzen. Deckung = freier Cashflow / gezahlte Dividenden; unter 100 % wird die Dividende nicht aus dem freien Cashflow bezahlt.</p></div>`;
   /* Sankey */
-  function sankey(){
+  let flow="gw";
+  function sankey(){flow==="cf"?cashflow():sankeyP()}
+  function sankeyP(){
+    $("fst").textContent="Gewinnfluss";$("fsn").textContent="Vom Umsatz bis zum Nettogewinn. Die Breite der Bänder ist proportional zum Betrag.";
     const x=I[sy]||{},R=x.revenue,cog=Math.max(x.costOfRevenue||0,0),gp=x.grossProfit!=null?x.grossProfit:(R!=null?R-cog:null),op=x.operatingIncome,ni=x.netIncome,tax=Math.max(x.incomeTaxExpense||0,0);
     const el=$("fsk");if(!(R>0)||gp==null){el.innerHTML='<p class="fnote">Für dieses Jahr fehlen Umsatzdaten.</p>';return}
-    const W=760,Ht=330,top=14,gap=12,nw=14,xs=[0,230,460,W-190-nw];
+    const nar=el.clientWidth>0&&el.clientWidth<560;el.classList.toggle("fit",nar);const W=nar?Math.max(300,el.clientWidth):760,Ht=nar?300:330,top=14,gap=12,nw=14,xs=nar?[0,(W-nw)/3,(W-nw)*2/3,W-nw]:[0,230,460,W-190-nw];
     const nodes=[],L=[];const nd=(id,col,v,lab,c)=>{if(v>0){nodes.push({id,col,v,lab,c})}};
     nd("rev",0,R,"Umsatz","#2563eb");nd("cog",1,cog,"Herstellungskosten","#94a3b8");nd("gp",1,Math.max(gp,0),"Bruttogewinn","#16a34a");
     const opex=Math.max(gp-(op??gp),0);
@@ -424,22 +427,47 @@ async function initFinance(sym,p,cur,inc,cf){
       svg+=`<path d="M${x0},${y0} C${m},${y0} ${m},${y1} ${x1},${y1} L${x1},${y1+hh} C${m},${y1+hh} ${m},${y0+hh} ${x0},${y0+hh}Z" fill="${l.c}" opacity=".28"><title>${esc(a.lab)} → ${esc(b.lab)}: ${big(l.v)}</title></path>`});
     nodes.forEach(n=>{const x0=xs[n.col],right=n.col===3,tx=right?x0+nw+8:(n.col===0?x0+nw+8:x0+nw+8);
       svg+=`<rect x="${x0}" y="${n.y}" width="${nw}" height="${n.h}" rx="3" fill="${n.c}"/>`;
+      if(nar)return;
       if(n.col===0)svg+=`<text x="${x0+nw+8}" y="${n.y+16}" font-size="13" font-weight="700" fill="#14202b">${esc(n.lab)}</text><text x="${x0+nw+8}" y="${n.y+32}" font-size="12" fill="#5d6b78">${big(n.v)}</text>`;
       else if(right)svg+=`<text x="${tx}" y="${n.y+Math.min(n.h,40)/2}" font-size="12.5" font-weight="600" fill="#14202b">${esc(n.lab)}</text><text x="${tx}" y="${n.y+Math.min(n.h,40)/2+15}" font-size="12" fill="#5d6b78">${big(n.v)} · ${num(n.v/R*100,1)} %</text>`;
       else svg+=`<text x="${x0+nw+6}" y="${n.y-3}" font-size="12" font-weight="600" fill="#14202b">${esc(n.lab)}</text><text x="${x0+nw+6}" y="${n.y+n.h+12}" font-size="11.5" fill="#5d6b78">${big(n.v)} · ${num(n.v/R*100,1)} %</text>`});
-    el.innerHTML=svg+"</svg>"+(op!=null&&op<=0?'<p class="fnote">In diesem Jahr war das operative Ergebnis nicht positiv, deshalb endet der Fluss beim Bruttogewinn.</p>':"");
+    el.innerHTML=svg+"</svg>"+(nar?'<ul class="fleg">'+nodes.map(n=>`<li><i style="background:${n.c}"></i>${esc(n.lab)}<span>${big(n.v)} · ${num(n.v/R*100,1)} %</span></li>`).join("")+'</ul>':"")+(op!=null&&op<=0?'<p class="fnote">In diesem Jahr war das operative Ergebnis nicht positiv, deshalb endet der Fluss beim Bruttogewinn.</p>':"");
+  }
+  /* Cashflow-Verwendung */
+  function cashflow(){
+    $("fst").textContent="Wohin fließt der Cashflow?";
+    $("fsn").textContent="Operativer Cashflow und seine Verwendung: Investitionen, Dividenden, Aktienrückkäufe, Schuldentilgung und Zukäufe. Netto gerechnet, die Breite der Bänder ist proportional zum Betrag.";
+    const el=$("fsk"),c=C[sy]||{},ocf=first(c,"operatingCashFlow","netCashProvidedByOperatingActivities");
+    if(!(ocf>0)){el.innerHTML='<p class="fnote">Für dieses Jahr liegt kein positiver operativer Cashflow vor.</p>';return}
+    const ndi=first(c,"netDebtIssuance")??first(c,"debtRepayment"),acq=first(c,"acquisitionsNet");
+    const n0=v=>v==null||isNaN(v)?0:+v;
+    const newDebt=n0(first(c,"netDebtIssuance"))>0?n0(first(c,"netDebtIssuance")):0;
+    const repay=ndi==null?0:(first(c,"netDebtIssuance")!=null?Math.max(-n0(ndi),0):Math.abs(n0(ndi)));
+    const U=[["capex","Investitionen (Capex)",Math.abs(n0(c.capitalExpenditure)),"#0ea5e9"],["div","Dividenden",Math.abs(n0(first(c,"commonDividendsPaid","netDividendsPaid","dividendsPaid"))),"#16a34a"],["buy","Aktienrückkäufe",Math.abs(n0(first(c,"commonStockRepurchased"))),"#f59e0b"],["rep","Schuldentilgung (netto)",repay,"#a78bfa"],["acq","Zukäufe",Math.max(-n0(acq),0),"#ec4899"]].filter(u=>u[2]>0);
+    const L=[["ocf","Operativer Cashflow",ocf,"#2563eb"]];if(newDebt>0)L.push(["nd","Neue Schulden (netto)",newDebt,"#8b5cf6"]);
+    const sumU=U.reduce((a,u)=>a+u[2],0),sumL=L.reduce((a,u)=>a+u[2],0),diff=sumL-sumU;
+    if(diff>0)U.push(["rest","Bleibt übrig (Kasse u. a.)",diff,"#94a3b8"]);else if(diff<0)L.push(["gap","Aus Kasse und Sonstigem",-diff,"#94a3b8"]);
+    const nar=el.clientWidth>0&&el.clientWidth<560;el.classList.toggle("fit",nar);const T2=Math.max(sumL,sumU),W=nar?Math.max(300,el.clientWidth):760,Ht=nar?300:330,top=14,gap=12,nw=14,xr=nar?W-nw:W-210-nw;
+    const sc=(Ht-top*2-gap*Math.max(L.length,U.length))/T2;let svg=`<svg viewBox="0 0 ${W} ${Ht}" role="img" aria-label="Verwendung des Cashflows ${sy}">`;
+    let yy=top;L.forEach(n=>{n.h=Math.max(n[2]*sc,2);n.y=yy;n.o=0;yy+=n.h+gap});yy=top;U.forEach(n=>{n.h=Math.max(n[2]*sc,2);n.y=yy;n.i=0;yy+=n.h+gap});
+    const tot=U.reduce((a,u)=>a+u[2],0);
+    L.forEach(l=>U.forEach(u=>{const v=l[2]*u[2]/tot,hh=v*sc,x0=nw,x1=xr,y0=l.y+l.o,y1=u.y+u.i;l.o+=hh;u.i+=hh;const m=(x0+x1)/2;
+      svg+=`<path d="M${x0},${y0} C${m},${y0} ${m},${y1} ${x1},${y1} L${x1},${y1+hh} C${m},${y1+hh} ${m},${y0+hh} ${x0},${y0+hh}Z" fill="${u[3]}" opacity=".28"><title>${esc(l[1])} → ${esc(u[1])}: ${big(v)}</title></path>`}));
+    L.forEach(n=>{if(nar){svg+=`<rect x="0" y="${n.y}" width="${nw}" height="${n.h}" rx="3" fill="${n[3]}"/>`;return}svg+=`<rect x="0" y="${n.y}" width="${nw}" height="${n.h}" rx="3" fill="${n[3]}"/><text x="${nw+8}" y="${n.y+16}" font-size="13" font-weight="700" fill="#14202b">${esc(n[1])}</text><text x="${nw+8}" y="${n.y+32}" font-size="12" fill="#5d6b78">${big(n[2])}</text>`});
+    U.forEach(n=>{if(nar){svg+=`<rect x="${xr}" y="${n.y}" width="${nw}" height="${n.h}" rx="3" fill="${n[3]}"/>`;return}const ty=n.y+Math.min(n.h,40)/2;svg+=`<rect x="${xr}" y="${n.y}" width="${nw}" height="${n.h}" rx="3" fill="${n[3]}"/><text x="${xr+nw+8}" y="${ty}" font-size="12.5" font-weight="600" fill="#14202b">${esc(n[1])}</text><text x="${xr+nw+8}" y="${ty+15}" font-size="12" fill="#5d6b78">${big(n[2])} · ${num(n[2]/ocf*100,0)} % des Cashflows</text>`});
+    el.innerHTML=svg+"</svg>"+(nar?'<ul class="fleg">'+L.concat(U).map(n=>`<li><i style="background:${n[3]}"></i>${esc(n[1])}<span>${big(n[2])} · ${num(n[2]/ocf*100,0)} %</span></li>`).join("")+"</ul>":"");
   }
   /* Uebereinander */
   function multi(){
     $("fch").innerHTML=have.map(s=>`<button type="button" class="fchip" data-k="${s.k}" aria-pressed="${on.has(s.k)}"><i style="background:${s.c}"></i>${esc(s.l)}</button>`).join("");
     const act=have.filter(s=>on.has(s.k)),el=$("fcm");
     if(!act.length){el.innerHTML='<p class="fnote">Wähle oben mindestens eine Kennzahl.</p>';return}
-    const vals=act.flatMap(s=>s.v.filter(v=>v!=null)),mx=Math.max(0,...vals),mn=Math.min(0,...vals),W=760,Ht=300,l=64,r=12,t=14,b=28,iw=W-l-r,ih=Ht-t-b,rng=(mx-mn)||1;
+    const vals=act.flatMap(s=>s.v.filter(v=>v!=null)),mx=Math.max(0,...vals),mn=Math.min(0,...vals),W=Math.max(300,Math.min(760,el.clientWidth||760)),narrow=W<560,Ht=narrow?260:300,l=narrow?46:64,r=narrow?18:12,t=14,b=28,iw=W-l-r,ih=Ht-t-b,rng=(mx-mn)||1;
     const Y=v=>t+ih*(1-(v-mn)/rng),Xc=i=>l+iw*(i+.5)/years.length;
     let svg=`<svg viewBox="0 0 ${W} ${Ht}" role="img" aria-label="Kennzahlen im Jahresvergleich">`;
     for(let i=0;i<=4;i++){const v=mn+rng*i/4,yy=Y(v);svg+=`<line x1="${l}" x2="${W-r}" y1="${yy}" y2="${yy}" stroke="#e5eaee"/><text x="${l-6}" y="${yy+4}" text-anchor="end" font-size="11" fill="#5d6b78">${short(v)}</text>`}
     svg+=`<line x1="${l}" x2="${W-r}" y1="${Y(0)}" y2="${Y(0)}" stroke="#9aa7b2"/>`;
-    years.forEach((y,i)=>svg+=`<text x="${Xc(i)}" y="${Ht-8}" text-anchor="middle" font-size="11" fill="#5d6b78">${y}</text>`);
+    years.forEach((y,i)=>{if(narrow&&i%2!==years.length%2)return;svg+=`<text x="${Xc(i)}" y="${Ht-8}" text-anchor="middle" font-size="11" fill="#5d6b78">${narrow?"'"+String(y).slice(2):y}</text>`});
     if(mode==="bar"){const bw=Math.min(22,iw/years.length/(act.length+.6));act.forEach((s,si)=>s.v.forEach((v,i)=>{if(v==null)return;const x0=Xc(i)-bw*act.length/2+si*bw,y0=Y(Math.max(v,0)),hh=Math.max(Math.abs(Y(v)-Y(0)),1);svg+=`<rect x="${x0}" y="${y0}" width="${bw-1}" height="${hh}" fill="${s.c}" rx="2"><title>${esc(s.l)} ${years[i]}: ${big(v)}</title></rect>`}))}
     else act.forEach(s=>{let d="";s.v.forEach((v,i)=>{if(v==null)return;d+=(d?"L":"M")+Xc(i)+","+Y(v)});svg+=`<path d="${d}" fill="none" stroke="${s.c}" stroke-width="2.4" stroke-linejoin="round"/>`;s.v.forEach((v,i)=>{if(v!=null)svg+=`<circle cx="${Xc(i)}" cy="${Y(v)}" r="3.4" fill="${s.c}"><title>${esc(s.l)} ${years[i]}: ${big(v)}</title></circle>`})});
     el.innerHTML=svg+"</svg>";
@@ -449,13 +477,14 @@ async function initFinance(sym,p,cur,inc,cf){
   function capex(){
     const g=k=>S.find(s=>s.k===k),cx=g("capex"),rv=g("rev"),da=g("da"),dv=g("div"),fc=g("fcf");
     const pc=(a,b)=>a==null||b==null||!b?"–":num(a/b*100,0)+" %";
-    let h=`<table class="ftab"><thead><tr><th>Jahr</th><th>Capex</th><th>Capex-Quote</th><th>Capex / Abschreibungen</th><th>Dividenden</th><th>Deckung aus FCF</th></tr></thead><tbody>`;
+    let h=`<table class="ftab"><thead><tr><th>Jahr</th><th>Capex</th><th title="Capex / Umsatz">Capex-Quote</th><th title="Capex / Abschreibungen">Capex / Abschr.</th><th>Dividenden</th><th title="Freier Cashflow / Dividenden">FCF-Deckung</th></tr></thead><tbody>`;
     years.slice().reverse().forEach(y=>{const i=years.indexOf(y);h+=`<tr><td>${y}</td><td>${big(cx.v[i])}</td><td>${pc(cx.v[i],rv.v[i])}</td><td>${pc(cx.v[i],da.v[i])}</td><td>${big(dv.v[i])}</td><td>${pc(fc.v[i],dv.v[i])}</td></tr>`});
     $("fcx").innerHTML=cx.v.some(v=>v!=null)?h+"</tbody></table>":'<p class="fnote">Für dieses Unternehmen liegen keine Cashflow-Daten vor.</p>';
   }
   $("fsy").onchange=e=>{sy=e.target.value;sankey()};$("fsy").value=sy;
-  box.addEventListener("click",e=>{const c=e.target.closest(".fchip");if(c){on.has(c.dataset.k)?on.delete(c.dataset.k):on.add(c.dataset.k);multi();return}const m=e.target.closest("button[data-m]");if(m){mode=m.dataset.m;box.querySelectorAll("button[data-m]").forEach(x=>x.setAttribute("aria-pressed",x===m));multi()}});
+  box.addEventListener("click",e=>{const c=e.target.closest(".fchip");if(c){on.has(c.dataset.k)?on.delete(c.dataset.k):on.add(c.dataset.k);multi();return}const f=e.target.closest("button[data-f]");if(f){flow=f.dataset.f;box.querySelectorAll("button[data-f]").forEach(x=>x.setAttribute("aria-pressed",x===f));sankey();return}const m=e.target.closest("button[data-m]");if(m){mode=m.dataset.m;box.querySelectorAll("button[data-m]").forEach(x=>x.setAttribute("aria-pressed",x===m));multi()}});
   sankey();multi();capex();
+  let rw=innerWidth;addEventListener("resize",()=>{if(!document.body.contains(box)){return}if(Math.abs(innerWidth-rw)>40){rw=innerWidth;multi();sankey()}});
 }
 /* ===== Unternehmensmeldungen (IR-Feeds und SEC, vom GitHub-Workflow in data/news.json gesammelt) ===== */
 function initReports(sym,p){
@@ -856,7 +885,7 @@ function sbars(data,fmt,col,W=300,H=95){
 }
 function sline(pts,tgt,lo,hi){
   if(pts.length<2)return `<div class="na">Keine Kursdaten verfügbar</div>`;
-  const W=300,H=100,pl=3,pr=tgt!=null?52:3,vs=pts.map(d=>d.v),ex=[tgt,lo,hi].filter(v=>v!=null);
+  const W=300,H=74,pl=3,pr=tgt!=null?52:3,vs=pts.map(d=>d.v),ex=[tgt,lo,hi].filter(v=>v!=null);
   const mn=Math.min(...vs,...ex),mx=Math.max(...vs,...ex),rg=(mx-mn)||1,k=pts.length-1;
   const X=i=>pl+i/k*(W-pl-pr),Y=v=>12+(mx-v)/rg*(H-34);
   const path=pts.map((d,i)=>`${i?"L":"M"}${X(i).toFixed(1)},${Y(d.v).toFixed(1)}`).join("");
@@ -873,23 +902,42 @@ function story(S){
   const act=inc.slice(-5).map(x=>({y:x.y,rev:x.revenue,ni:x.netIncome}));
   const fut=(Array.isArray(est)?est:[]).map(x=>({y:+String(x.date).slice(0,4),rev:x.revenueAvg,ni:x.netIncomeAvg,p:1})).filter(x=>x.y>lastY).sort((a,b)=>a.y-b.y).slice(0,2);
   const rows=[...act,...fut];
-  const mk=k=>{const [dv,ul]=unit(rows.map(x=>x[k]).filter(v=>v!=null));return {ul,svg:sbars(rows.map(x=>({y:x.y,v:x[k]!=null?x[k]/dv:null,p:x.p})),v=>num(v,Math.abs(v)<10?1:0),k==="rev"?"#5cc98a":GD,170,100)}};
+  const mk=k=>{const [dv,ul]=unit(rows.map(x=>x[k]).filter(v=>v!=null));return {ul,svg:sbars(rows.map(x=>({y:x.y,v:x[k]!=null?x[k]/dv:null,p:x.p})),v=>num(v,Math.abs(v)<10?1:0),k==="rev"?"#5cc98a":GD,170,66)}};
   const a=mk("rev"),b=mk("ni");
   const full=divs.filter(x=>!x.part),n=full.length;
   const cg=n>=6&&full[n-6].v>0?Math.pow(full[n-1].v/full[n-6].v,1/5)-1:null;
   const dy=first(r,"dividendYieldTTM"),po=first(r,"dividendPayoutRatioTTM");
   const gb=(g.strongBuy||0)+(g.buy||0),gh=g.hold||0,gs=(g.sell||0)+(g.strongSell||0),tot=gb+gh+gs;
-  const row=(l,v,c)=>`<div class="ar"><span>${l}</span><i><u style="width:${tot?v/tot*100:0}%;background:${c}"></u></i><b>${tot?Math.round(v/tot*100):0} %</b></div>`;
+  const donut=()=>{
+    const items=[["Kaufen",gb,GD],["Halten",gh,"#eebb44"],["Verkaufen",gs,"#c0392b"]];
+    const cx=50,cy=40,r=31,lx=176,rows=[14,40,66],rad=a=>a*Math.PI/180,P=(a,d)=>[cx+d*Math.cos(rad(a)),cy+d*Math.sin(rad(a))];
+    const hs=(gh+gs)/tot*360;let a=-hs/2;const ang={};
+    [1,2,0].forEach(i=>{const v=items[i][1]/tot*360;ang[i]=[a,a+v];a+=v});
+    let svg=`<svg viewBox="0 0 300 80" role="img" aria-label="Analysten: ${items.map(x=>x[0]+" "+Math.round(x[1]/tot*100)+" %").join(", ")}">`,lines="",labs="";
+    items.forEach((it,i)=>{
+      const [a0,a1]=ang[i],v=a1-a0,pc=Math.round(it[1]/tot*100);
+      if(v>0){
+        const mid=(a0+a1)/2,[ox,oy]=P(mid,4),c0=P(a0,r),c1=P(a1,r);
+        svg+=v>=359.9?`<circle cx="${cx+ox-cx}" cy="${cy+oy-cy}" r="${r}" fill="${it[2]}"/>`:`<path transform="translate(${(ox-cx).toFixed(1)},${(oy-cy).toFixed(1)})" d="M${cx},${cy} L${c0[0].toFixed(1)},${c0[1].toFixed(1)} A${r},${r} 0 ${v>180?1:0} 1 ${c1[0].toFixed(1)},${c1[1].toFixed(1)}Z" fill="${it[2]}" stroke="#fff" stroke-width="1.5"/>`;
+        const phi=Math.atan2(rows[i]-cy,lx-8-cx)*180/Math.PI;let best=mid,bd=1e9;
+        for(let t=a0;t<=a1;t+=1){const dd=Math.abs(((t-phi+540)%360)-180);if(dd<bd){bd=dd;best=t}}
+        const [sx,sy]=P(best,r+5),ex=lx-8;
+        lines+=`<polyline points="${(sx+ox-cx).toFixed(1)},${(sy+oy-cy).toFixed(1)} ${ex-14},${rows[i]} ${ex},${rows[i]}" fill="none" stroke="${it[2]}" stroke-width="1.6"/><circle cx="${(sx+ox-cx).toFixed(1)}" cy="${(sy+oy-cy).toFixed(1)}" r="2.2" fill="${it[2]}"/>`;
+      }
+      labs+=`<text x="${lx}" y="${rows[i]+5}" font-size="13" fill="#5d6b78">${it[0]}</text><text x="296" y="${rows[i]+7}" text-anchor="end" font-size="20" font-weight="700" style="fill:${it[2]}">${pc} %</text>`;
+    });
+    return svg+lines+labs+"</svg>";
+  };
   const ov=document.createElement("div");ov.id="ov";
   ov.innerHTML=`<div class="ctl"><button id="cl">✕ Schließen</button></div><div class="hint">Tippen blendet die Buttons aus, dann Screenshot</div>
   <div class="story"><div class="top"></div><div class="sh">Aktuelle Meldung</div><div class="bd">
    <div class="tt">${img(sym)}<div><b>${esc(p.companyName||sym)}</b><span>${esc(sym)}${p.sector?" · "+esc(p.sector):""}</span></div></div>
    <div class="pr"><b>${num(price)} ${cc}</b>${chg!=null?`<em class="${chg<0?"neg":""}">${chg>0?"+":""}${num(chg)} %</em>`:""}<small>Stand ${new Date().toLocaleDateString("de-DE")}</small></div>
    <div><h4>Kurs, 5 Jahre${tgt!=null&&upT!=null?` · Kursziel ${num(tgt,0)} ${cc} (${upT>0?"+":""}${num(upT*100,1)} %)`:""}</h4>${sline(pts,tgt,pt.targetLow,pt.targetHigh)}</div>
-   <div><h4>Dividende je Aktie (${cc})</h4>${sbars(divs.slice(-9).map(x=>({y:x.y,v:x.v,p:x.part})),v=>num(v),GD)}
+   <div><h4>Dividende je Aktie (${cc})</h4>${sbars(divs.slice(-9).map(x=>({y:x.y,v:x.v,p:x.part})),v=>num(v),GD,300,66)}
     <div class="ch"><span><b>${pct(dy)}</b>Dividendenrendite</span><span><b>${pct(po)}</b>Ausschüttung</span><span><b>${cg==null?"–":pct(cg)}</b>Wachstum 5 J. p. a.</span></div></div>
    <div><div class="two"><div><h4>Umsatz in ${a.ul} ${esc(cur)}</h4>${a.svg}</div><div><h4>Gewinn in ${b.ul} ${esc(cur)}</h4>${b.svg}</div></div>${fut.length?`<small class="fn">e = Analystenprognose</small>`:""}</div>
-   <div><h4>Analysten-Einstufung</h4>${tot?row("Kaufen",gb,GD)+row("Halten",gh,"#eebb44")+row("Verkaufen",gs,"#c0392b"):`<div class="na">Keine Analystendaten verfügbar</div>`}</div>
+   <div><h4>Analysten-Einstufung${tot?` · ${tot} Urteile`:""}</h4>${tot?donut():`<div class="na">Keine Analystendaten verfügbar</div>`}</div>
   </div><div class="sf">www.dividenden-rechner.de</div></div>`;
   document.getElementById("ov")?.remove();
   ov.querySelector("#cl").onclick=e=>{e.stopPropagation();ov.remove()};
