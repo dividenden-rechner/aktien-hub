@@ -8,7 +8,7 @@ Aufruf:
 Der Entwurf landet mit `draft: true` in content/magazin/. Nichts wird veroeffentlicht,
 bevor du `draft: true` entfernst. Zahlen werden gegen den PDF-Text geprueft.
 """
-import argparse, base64, json, os, re, subprocess, sys, urllib.request, urllib.error
+import argparse, base64, json, os, re, subprocess, sys, time, urllib.request, urllib.error
 from datetime import date
 from PIL import Image, ImageDraw, ImageFont
 
@@ -66,16 +66,25 @@ def call_gemini(pdf_path, prompt):
     last = ""
     for model in candidate_models(key):
         url = f"https://generativelanguage.googleapis.com/v1beta/models/{model}:generateContent"
-        req = urllib.request.Request(url, data=json.dumps(body).encode(), headers={"Content-Type": "application/json", "x-goog-api-key": key})
-        try:
-            with urllib.request.urlopen(req, timeout=240) as r:
-                res = json.load(r)
-        except urllib.error.HTTPError as e:
-            last = f"{model}: Fehler {e.code}: {e.read().decode()[:300]}"
-            print("Modell uebersprungen ->", last)
-            if e.code in (404, 400):
-                continue
-            fail("Gemini-" + last)
+        for attempt in range(3):
+            req = urllib.request.Request(url, data=json.dumps(body).encode(), headers={"Content-Type": "application/json", "x-goog-api-key": key})
+            try:
+                with urllib.request.urlopen(req, timeout=240) as r:
+                    res = json.load(r)
+                break
+            except urllib.error.HTTPError as e:
+                last = f"{model}: Fehler {e.code}: {e.read().decode()[:300]}"
+                print("Modell-Problem ->", last)
+                if e.code in (429, 500, 502, 503, 504) and attempt < 2:
+                    time.sleep(25 * (attempt + 1)); continue
+                res = None
+                break
+            except Exception as e:
+                last = f"{model}: {e}"; print("Modell-Problem ->", last)
+                res = None
+                break
+        if res is None:
+            continue
         try:
             out = json.loads(res["candidates"][0]["content"]["parts"][0]["text"])
             print("Modell:", model)
