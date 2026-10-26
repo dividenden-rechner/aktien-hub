@@ -24,7 +24,8 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: "3.12"
-      - run: pip install pillow && sudo apt-get install -y -qq poppler-utils fonts-inter >/dev/null
+      - run: pip install pillow
+      - run: sudo apt-get update -qq && sudo apt-get install -y -qq poppler-utils fonts-dejavu-core
       - name: PDFs bestimmen
         run: |
           mkdir -p content/ir-inbox
