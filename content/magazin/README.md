@@ -31,3 +31,11 @@ draft: true                      (optional: true = noch nicht veröffentlichen)
 
 Dateien, die mit `_` beginnen, und Artikel mit `draft: true` oder einem Datum in der Zukunft werden nicht veröffentlicht.
 Lokal testen: `pip install markdown pillow` und `python3 tools/build_magazin.py`.
+
+## IR-Agent: Entwurf aus einem Quartalsbericht
+
+PDF in `content/ir-inbox/` hochladen (oder unter Actions > "IR-Agent" einen PDF-Link eingeben). Gemini liest den Bericht,
+Code zeichnet die Grafik, und es entsteht ein Entwurf (`draft: true`) in `content/magazin/`. Der Prompt steht in `tools/ir_prompt.md`,
+Autor und Bio in `tools/ir_config.json`. Zahlen, die nicht im PDF-Text stehen, werden im Entwurf als `<!-- PRÜFEN -->` markiert.
+Zum Veröffentlichen: Entwurf lesen, Zahlen prüfen, `draft: true` löschen.
+Voraussetzung: Secret `GEMINI_API_KEY` (Settings > Secrets and variables > Actions).
