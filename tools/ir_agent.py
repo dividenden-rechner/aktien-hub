@@ -63,17 +63,59 @@ def call_gemini(pdf_path, prompt):
         "contents": [{"parts": [{"inline_data": {"mime_type": "application/pdf", "data": base64.b64encode(data).decode()}}, {"text": prompt}]}],
         "generationConfig": {"temperature": 0.3, "responseMimeType": "application/json", "responseSchema": SCHEMA},
     }
-    url = f"https://generativelanguage.googleapis.com/v1beta/models/{MODEL}:generateContent"
-    req = urllib.request.Request(url, data=json.dumps(body).encode(), headers={"Content-Type": "application/json", "x-goog-api-key": key})
+    last = ""
+    for model in candidate_models(key):
+        url = f"https://generativelanguage.googleapis.com/v1beta/models/{model}:generateContent"
+        req = urllib.request.Request(url, data=json.dumps(body).encode(), headers={"Content-Type": "application/json", "x-goog-api-key": key})
+        try:
+            with urllib.request.urlopen(req, timeout=240) as r:
+                res = json.load(r)
+        except urllib.error.HTTPError as e:
+            last = f"{model}: Fehler {e.code}: {e.read().decode()[:300]}"
+            print("Modell uebersprungen ->", last)
+            if e.code in (404, 400):
+                continue
+            fail("Gemini-" + last)
+        try:
+            out = json.loads(res["candidates"][0]["content"]["parts"][0]["text"])
+            print("Modell:", model)
+            return out
+        except Exception:
+            last = f"{model}: unerwartete Antwort " + json.dumps(res)[:300]
+            continue
+    fail("Kein Gemini-Modell hat funktioniert. Letzter Fehler: " + last)
+
+
+def candidate_models(key):
+    """Fragt bei Google ab, welche Flash-Modelle der Key nutzen darf; neueste Version zuerst."""
+    names = []
+    if os.environ.get("GEMINI_MODEL"):
+        names.append(os.environ["GEMINI_MODEL"])
     try:
-        with urllib.request.urlopen(req, timeout=240) as r:
-            res = json.load(r)
-    except urllib.error.HTTPError as e:
-        fail(f"Gemini-Fehler {e.code}: {e.read().decode()[:500]}")
-    try:
-        return json.loads(res["candidates"][0]["content"]["parts"][0]["text"])
-    except Exception:
-        fail("Unerwartete Gemini-Antwort: " + json.dumps(res)[:500])
+        req = urllib.request.Request("https://generativelanguage.googleapis.com/v1beta/models?pageSize=200", headers={"x-goog-api-key": key})
+        with urllib.request.urlopen(req, timeout=60) as r:
+            ms = json.load(r).get("models", [])
+        found = []
+        for m in ms:
+            n = m["name"].split("/")[-1]
+            if "generateContent" not in m.get("supportedGenerationMethods", []):
+                continue
+            if "flash" not in n or any(x in n for x in ("image", "tts", "live", "audio", "embedding", "thinking", "robotics", "computer", "customtools")):
+                continue
+            v = re.search(r"gemini-(\d+(?:\.\d+)?)", n)
+            ver = float(v.group(1)) if v else 0
+            found.append((-ver, "preview" in n, "lite" in n, n))
+        found.sort()
+        names += [x[3] for x in found]
+        print("Verfuegbare Flash-Modelle:", ", ".join(x[3] for x in found) or "keine")
+    except Exception as e:
+        print("Modellliste nicht abrufbar:", e)
+    names += [MODEL, "gemini-flash-latest"]
+    seen = []
+    for n in names:
+        if n and n not in seen:
+            seen.append(n)
+    return seen[:6]
 
 
 def digits(s):
