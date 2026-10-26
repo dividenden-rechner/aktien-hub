@@ -446,9 +446,27 @@ def brand_of(company):
 
 def commons_candidates(company):
     brand = brand_of(company); seen = {}; ua = "dividenden-rechner.de Magazin-Agent (https://www.dividenden-rechner.de)"
-    for term in (f"{brand} headquarters", f"{brand} building", f"{brand} filetype:bitmap"):
-        qs = urllib.parse.urlencode({"action": "query", "format": "json", "generator": "search", "gsrsearch": term, "gsrnamespace": 6,
-                                     "gsrlimit": 25, "prop": "imageinfo", "iiprop": "url|size|mime|extmetadata", "iiurlwidth": 1600})
+    iip = {"prop": "imageinfo", "iiprop": "url|size|mime|extmetadata", "iiurlwidth": 1600}
+    queries = []
+    # Bilder aus dem Wikipedia-Artikel des Unternehmens (meist Zentrale, Standorte)
+    try:
+        for lang in ("en", "de"):
+            s = json.loads(http(f"https://{lang}.wikipedia.org/w/api.php?" + urllib.parse.urlencode(
+                {"action": "query", "format": "json", "list": "search", "srsearch": f"{company} company", "srlimit": 1}), ua=ua))
+            hit = (s.get("query", {}).get("search") or [{}])[0].get("title")
+            if hit:
+                im_ = json.loads(http(f"https://{lang}.wikipedia.org/w/api.php?" + urllib.parse.urlencode(
+                    {"action": "query", "format": "json", "titles": hit, "prop": "images", "imlimit": 40}), ua=ua))
+                names = [i["title"] for pg in im_.get("query", {}).get("pages", {}).values() for i in pg.get("images", [])
+                         if i["title"].lower().endswith((".jpg", ".jpeg"))]
+                if names:
+                    queries.append({"action": "query", "format": "json", "titles": "|".join(names[:40]), **iip})
+    except Exception as e:
+        print("Wikipedia-Bilder nicht erreichbar:", e)
+    for term in (f"{brand} headquarters", f"{brand} building", f"{brand} office", f"{company} headquarters", f"{brand} filetype:bitmap"):
+        queries.append({"action": "query", "format": "json", "generator": "search", "gsrsearch": term, "gsrnamespace": 6, "gsrlimit": 25, **iip})
+    for qd in queries:
+        qs = urllib.parse.urlencode(qd)
         try:
             data = json.loads(http("https://commons.wikimedia.org/w/api.php?" + qs, ua=ua))
         except Exception as e:
@@ -458,7 +476,7 @@ def commons_candidates(company):
             title = pg.get("title", "")
             lic = _strip(md.get("LicenseShortName", {}).get("value", ""))
             w, h = ii.get("width", 0), ii.get("height", 0)
-            if (ii.get("mime") != "image/jpeg" or w < 1400 or h < 700 or not (1.25 <= w / max(h, 1) <= 2.2) or BAD_TITLE.search(title)
+            if (ii.get("mime") != "image/jpeg" or w < 1200 or h < 650 or not (1.2 <= w / max(h, 1) <= 2.4) or BAD_TITLE.search(title)
                     or not OK_LIC.search(lic) or re.search(r"-(NC|ND)", lic) or _strip(md.get("Restrictions", {}).get("value", ""))
                     or not ii.get("thumburl")):
                 continue
@@ -466,7 +484,7 @@ def commons_candidates(company):
                            "artist": _strip(md.get("Artist", {}).get("value", "")) or "Unbekannt", "lic": lic,
                            "desc": _strip(md.get("ImageDescription", {}).get("value", ""))[:200],
                            "date": _strip(md.get("DateTimeOriginal", {}).get("value", ""))[:10]}
-    return list(seen.values())[:12], brand
+    return list(seen.values())[:15], brand
 
 
 def pick_photo(company, ticker, key):
@@ -747,6 +765,16 @@ def build(out, text, src_note, force=False, calc_rows=None, fmp_used=False, figs
     gpath = os.path.join(ROOT, "assets", "magazin", f"{slug}-grafik.png")
     os.makedirs(os.path.dirname(gpath), exist_ok=True)
     has_chart = bool((out.get("chart") or {}).get("bars"))
+    cf_ = out.get("cashflow") or {}
+    if not has_chart and out.get("kpis") and cf_.get("operating_cash_flow") and cf_.get("capex") is not None:
+        bars = [{"label": "Operativer Cashflow", "value": cf_["operating_cash_flow"]},
+                {"label": "Investitionen", "value": cf_["capex"]},
+                {"label": "Free Cashflow (berechnet)", "value": round(cf_["operating_cash_flow"] - cf_["capex"], 1)}]
+        if cf_.get("dividends_paid"):
+            bars.append({"label": "Gezahlte Dividenden", "value": cf_["dividends_paid"]})
+        out["chart"] = {"title": f"Cashflow und Dividenden, {cf_.get('period_label') or 'Berichtszeitraum'}", "unit": cf_.get("unit") or "",
+                        "bars": bars, "page": 0}
+        has_chart = True
     if has_chart:
         draw_graphic(out, gpath)
     bad = check_numbers(out, text)
