@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Eigenkapitalrendite (ROE) und ROIC: Wie profitabel arbeitet ein Unternehmen?</title>
+<meta name="description" content="ROE und ROIC erklärt: Formeln, DuPont-Zerlegung, warum hohe Eigenkapitalrenditen täuschen können und wie die Kennzahlen zur Dividendensicherheit beitragen.">
+<meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large">
+<link rel="canonical" href="https://dividenden-rechner.github.io/aktien-hub/grundlagen/eigenkapitalrendite/">
+<meta property="og:type" content="article">
+<meta property="og:locale" content="de_DE">
+<meta property="og:site_name" content="Dividenden-Rechner Aktien-Hub">
+<meta property="og:title" content="Eigenkapitalrendite (ROE) und ROIC: Wie profitabel arbeitet ein Unternehmen?">
+<meta property="og:description" content="ROE und ROIC erklärt: Formeln, DuPont-Zerlegung, warum hohe Eigenkapitalrenditen täuschen können und wie die Kennzahlen zur Dividendensicherheit beitragen.">
+<meta property="og:url" content="https://dividenden-rechner.github.io/aktien-hub/grundlagen/eigenkapitalrendite/">
+<meta name="theme-color" content="#ffffff">
+<link rel="stylesheet" href="../../assets/site.css">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Start", "item": "https://dividenden-rechner.github.io/aktien-hub/"}, {"@type": "ListItem", "position": 2, "name": "Grundlagen", "item": "https://dividenden-rechner.github.io/aktien-hub/grundlagen/"}, {"@type": "ListItem", "position": 3, "name": "Eigenkapitalrendite (ROE) und ROIC: Wie profitabel arbeitet ein Unternehmen?", "item": "https://dividenden-rechner.github.io/aktien-hub/grundlagen/eigenkapitalrendite/"}]}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "Eigenkapitalrendite (ROE) und ROIC: Wie profitabel arbeitet ein Unternehmen?", "description": "ROE und ROIC erklärt: Formeln, DuPont-Zerlegung, warum hohe Eigenkapitalrenditen täuschen können und wie die Kennzahlen zur Dividendensicherheit beitragen.", "inLanguage": "de", "datePublished": "2026-10-26", "dateModified": "2026-10-26", "mainEntityOfPage": "https://dividenden-rechner.github.io/aktien-hub/grundlagen/eigenkapitalrendite/", "author": {"@type": "Organization", "name": "Dividenden-Rechner Aktien-Hub"}, "publisher": {"@type": "Organization", "name": "Dividenden-Rechner Aktien-Hub"}}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Was ist eine gute Eigenkapitalrendite?", "acceptedAnswer": {"@type": "Answer", "text": "Viele Anleger sehen dauerhaft 10 bis 15 Prozent oder mehr als solide an. Entscheidend ist, dass sie nicht durch hohe Schulden oder Einmaleffekte entsteht und im Branchenvergleich besteht."}}, {"@type": "Question", "name": "Was ist der Unterschied zwischen ROE und ROIC?", "acceptedAnswer": {"@type": "Answer", "text": "Der ROE bezieht den Gewinn nur auf das Eigenkapital. Der ROIC bezieht den operativen Gewinn auf Eigen- und Fremdkapital zusammen und ist damit weniger von der Finanzierung abhängig."}}, {"@type": "Question", "name": "Warum ist ein hoher ROE nicht immer gut?", "acceptedAnswer": {"@type": "Answer", "text": "Er kann durch hohe Verschuldung, Aktienrückkäufe oder Einmalgewinne entstehen. Dann spiegelt er höheres Risiko wider, nicht bessere Geschäfte."}}, {"@type": "Question", "name": "Wie hängen ROIC und Dividenden zusammen?", "acceptedAnswer": {"@type": "Answer", "text": "Ein hoher und stabiler ROIC erlaubt es, Gewinne rentabel zu reinvestieren und trotzdem Dividenden zu steigern. Fällt er unter die Kapitalkosten, wird Wachstum unrentabel."}}]}</script>
+<link rel="icon" href="../../favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="32x32" href="../../assets/favicon-32.png">
+<link rel="icon" type="image/png" sizes="192x192" href="../../assets/favicon-192.png">
+<link rel="apple-touch-icon" href="../../assets/apple-touch-icon.png">
+<link rel="stylesheet" href="../../assets/navigation.css?v=20261025a">
+</head>
+<body>
+<header id="hub-global-header"><div class="hub-nav-inner"><a class="hub-brand" href="../../"><img class="hub-logo" src="../../assets/logo.png" alt="" width="36" height="36"> <span class="hub-brand-name">Dividenden-Rechner <span>Aktien-Hub</span></span></a><nav class="hub-links" aria-label="Hauptmenü"><a href="../../">Rechner</a><a href="../../aktien/">Aktien</a><a href="../../depot/">Depot</a><a href="../../news/">News</a><a href="../../earnings/">Earnings</a><a href="../../screener/">Screener</a><a href="../../einfuehrung/">Einführung</a><a href="../../grundlagen/" aria-current="page">Grundlagen</a><a href="../../fortgeschrittene/">Fortgeschrittene</a></nav></div></header>
+<script src="../../assets/navigation.js"></script>
+<script src="../../assets/logos.js"></script>
+<main class="wrap"><article>
+<nav class="crumbs" aria-label="Brotkrumen"><a href="../../">Start</a> › <a href="../../grundlagen/">Grundlagen</a> › <span aria-current="page">Eigenkapitalrendite (ROE) und ROIC: Wie profitabel arbeitet ein Unternehmen?</span></nav>
+<h1>Eigenkapitalrendite (ROE) und ROIC: Wie profitabel arbeitet ein Unternehmen?</h1>
+<p class="meta">Zuletzt aktualisiert: 26. Oktober 2026 · 3 Min. Lesezeit</p>
+<p class="lead">Zwei Unternehmen verdienen je 100 Millionen Euro. Das eine braucht dafür 500 Millionen Euro Kapital, das andere 2 Milliarden. Welches ist die bessere Dividendenaktie? Die Antwort liefern ROE und ROIC.</p>
+<h2>Eigenkapitalrendite (ROE)</h2>
+<p>Die Eigenkapitalrendite (<em>return on equity</em>, ROE) misst, wie viel Gewinn ein Unternehmen mit dem Geld seiner Aktionäre erwirtschaftet.</p><p class="formula">ROE (%) = Jahresüberschuss ÷ durchschnittliches Eigenkapital × 100</p>
+<div class="example"><strong>Beispiel</strong>Ein Unternehmen verdient 100&nbsp;Mio.&nbsp;€ bei 800&nbsp;Mio.&nbsp;€ Eigenkapital. ROE = 12,5&nbsp;%. Je Euro Eigenkapital entstehen gut 12 Cent Gewinn.</div>
+<p>Dauerhaft hohe ROE-Werte deuten auf ein starkes Geschäftsmodell hin: Marken, Marktstellung, Preissetzungsmacht. Solche Unternehmen können Gewinne zu hohen Renditen reinvestieren und Dividenden steigern, ohne neues Kapital zu brauchen. Diese Verbindung beschreibt der Artikel zum <a href="../../fortgeschrittene/dividendenwachstum/">Dividendenwachstum</a>.</p>
+
+<h3>Die DuPont-Zerlegung: Woher kommt der ROE?</h3>
+<p>Der ROE lässt sich in drei Faktoren zerlegen:</p><p class="formula">ROE = Nettomarge × Kapitalumschlag × Eigenkapitalhebel</p>
+<ul>
+<li><strong>Nettomarge:</strong> Gewinn geteilt durch Umsatz. Wie viel bleibt vom Verkauf hängen?</li>
+<li><strong>Kapitalumschlag:</strong> Umsatz geteilt durch Gesamtvermögen. Wie effizient wird das Vermögen genutzt?</li>
+<li><strong>Eigenkapitalhebel:</strong> Gesamtvermögen geteilt durch Eigenkapital. Wie stark ist das Unternehmen mit Schulden finanziert?</li>
+</ul>
+<div class="example"><strong>Gleiche Zahl, anderes Risiko</strong>Zwei Unternehmen mit je 20&nbsp;% ROE. Unternehmen A: Marge 20&nbsp;%, Umsatzumschlag 0,8, Hebel 1,25. Unternehmen B: Marge 4&nbsp;%, Umsatzumschlag 1,0, Hebel 5,0. Beide zeigen dieselbe Zahl, aber A verdient sein Geld im Geschäft, B über geliehenes Kapital. Fällt der Gewinn, trifft es B ungleich härter.</div>
+<h3>Wann der ROE täuscht</h3>
+<ul>
+<li><strong>Schulden treiben ihn.</strong> Mehr Fremdkapital senkt das Eigenkapital im Nenner und erhöht den ROE, ohne dass das Geschäft besser wird.</li>
+<li><strong>Aktienrückkäufe verkleinern das Eigenkapital.</strong> Der ROE steigt rechnerisch, auch wenn der Gewinn stagniert. Bei negativem Eigenkapital ist er nicht definiert, siehe <a href="../../grundlagen/kbv-kuv/">KBV und KUV</a>.</li>
+<li><strong>Einmalgewinne und Zyklen.</strong> Ein Spitzenjahr liefert einen Spitzen-ROE. Besser ist ein Durchschnitt über fünf bis zehn Jahre.</li>
+</ul>
+
+<h2>ROIC: die robustere Alternative</h2>
+<p>Der <em>return on invested capital</em> (ROIC) misst den Ertrag auf das gesamte eingesetzte Kapital, Eigen- und Fremdkapital zusammen. Er ist damit weniger anfällig für Finanzierungstricks.</p><p class="formula">ROIC (%) = operativer Gewinn nach Steuern (NOPAT) ÷ investiertes Kapital × 100</p>
+<p>NOPAT ist der operative Gewinn (EBIT) abzüglich der Steuern, die darauf anfielen, so als hätte das Unternehmen keine Schulden. Investiertes Kapital ist grob Eigenkapital plus verzinsliche Schulden minus überschüssige Barmittel.</p>
+<div class="example"><strong>Beispiel</strong>EBIT 150&nbsp;Mio.&nbsp;€, Steuersatz 25&nbsp;%: NOPAT = 112,5&nbsp;Mio.&nbsp;€. Investiertes Kapital: 1.000&nbsp;Mio.&nbsp;€. ROIC = <strong>11,25&nbsp;%</strong>.</div>
+<p>Entscheidend ist der Vergleich mit den Kapitalkosten (WACC), also dem, was Eigen- und Fremdkapitalgeber mindestens erwarten, meist grob 7 bis 10&nbsp;%. Liegt der ROIC dauerhaft darüber, schafft das Unternehmen Wert, und Wachstum macht die Aktionäre reicher. Liegt er darunter, vernichtet Wachstum Wert. Dann ist eine hohe Ausschüttung manchmal sogar die bessere Wahl als Reinvestition.</p>
+
+<h2>Was das für Dividendeninvestoren bedeutet</h2>
+<ul>
+<li>Ein <strong>stabil hoher ROIC</strong> ist eine gute Basis für wachsende Dividenden, weil das Unternehmen Gewinne rentabel reinvestieren kann.</li>
+<li>Ein <strong>sinkender ROIC</strong> bei steigender Ausschüttung ist ein Warnzeichen. Das Geschäft wird weniger profitabel, die Dividende bleibt.</li>
+<li>Sehr hohe Kapitalrenditen sind oft ein Zeichen für eine <strong>wirtschaftliche Schutzmauer</strong>: Marke, Netzwerk, Kostenvorteile. Prüfe, ob sie dauerhaft ist.</li>
+</ul>
+<p>Im <a href="../../aktien/">Aktien-Hub</a> kannst du Gewinn und Eigenkapital über mehrere Jahre vergleichen und so die Entwicklung der Rendite nachverfolgen. Kombiniere sie mit <a href="../../grundlagen/free-cashflow/">Free Cashflow</a> und <a href="../../grundlagen/verschuldung/">Verschuldung</a>.</p>
+<h2>Häufige Fragen</h2>
+<details><summary>Was ist eine gute Eigenkapitalrendite?</summary><p>Viele Anleger sehen dauerhaft 10 bis 15 Prozent oder mehr als solide an. Entscheidend ist, dass sie nicht durch hohe Schulden oder Einmaleffekte entsteht und im Branchenvergleich besteht.</p></details>
+<details><summary>Was ist der Unterschied zwischen ROE und ROIC?</summary><p>Der ROE bezieht den Gewinn nur auf das Eigenkapital. Der ROIC bezieht den operativen Gewinn auf Eigen- und Fremdkapital zusammen und ist damit weniger von der Finanzierung abhängig.</p></details>
+<details><summary>Warum ist ein hoher ROE nicht immer gut?</summary><p>Er kann durch hohe Verschuldung, Aktienrückkäufe oder Einmalgewinne entstehen. Dann spiegelt er höheres Risiko wider, nicht bessere Geschäfte.</p></details>
+<details><summary>Wie hängen ROIC und Dividenden zusammen?</summary><p>Ein hoher und stabiler ROIC erlaubt es, Gewinne rentabel zu reinvestieren und trotzdem Dividenden zu steigern. Fällt er unter die Kapitalkosten, wird Wachstum unrentabel.</p></details>
+<aside class="related"><h2>Weiterlesen</h2><ul>
+<li><a href="../../grundlagen/kbv-kuv/">KBV und KUV</a></li>
+<li><a href="../../grundlagen/verschuldung/">Verschuldung: Wie viel Schulden sind zu viel?</a></li>
+<li><a href="../../fortgeschrittene/dividendenwachstum/">Dividendenwachstum und Yield on Cost</a></li>
+</ul></aside>
+<p class="note"><strong>Hinweis:</strong> Dieser Text dient der allgemeinen Information und ist weder Anlage-, Steuer- noch Rechtsberatung. Kapitalanlagen sind mit Risiken verbunden, bis hin zum Totalverlust. Die Zahlenbeispiele sind frei gewählt und keine Prognose.</p>
+</article></main>
+<footer class="site-footer"><div class="wrap">
+<div class="cols">
+<a href="../../">Rechner</a><a href="../../aktien/">Aktien</a><a href="../../depot/">Depot</a><a href="../../news/">News</a><a href="../../screener/">Screener</a><a href="../../einfuehrung/">Einführung</a><a href="../../grundlagen/">Grundlagen</a><a href="../../fortgeschrittene/">Fortgeschrittene</a>
+<a href="../../impressum/">Impressum</a><a href="../../datenschutz/">Datenschutz</a>
+</div>
+<p>Alle Inhalte dienen der allgemeinen Information und sind keine Anlage-, Steuer- oder Rechtsberatung. Kapitalanlagen sind mit Risiken verbunden.</p>
+</div></footer>
+</body>
+</html>
