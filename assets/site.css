@@ -85,3 +85,5 @@ article p,article li,article td{overflow-wrap:anywhere}
 
 .cover figcaption{margin-top:6px;font-size:13px;color:#5d6b78}.cover figcaption a{color:inherit}
 .post p>img{display:block;max-width:100%;height:auto;border-radius:12px;border:1px solid var(--line);margin:18px 0}
+.titlerow{display:flex;align-items:center;gap:14px;margin:0 0 10px}.titlerow h1{margin:0}.hlogo{flex:none;width:56px;height:56px;object-fit:contain;background:#fff;border:1px solid var(--line);border-radius:12px;padding:6px}
+.post blockquote{margin:18px 0;padding:6px 18px;border-left:4px solid #2f9e5b;background:#f6faf7;border-radius:0 10px 10px 0}.post blockquote p{margin:8px 0}

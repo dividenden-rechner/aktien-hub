@@ -27,6 +27,11 @@ SCHEMA = {   # Aufruf 1: Zahlen aus dem Bericht
         "company": {"type": "STRING"}, "ticker": {"type": "STRING"},
         "period": {"type": "STRING", "description": "z. B. Q2 2026"},
         "report_date": {"type": "STRING", "description": "YYYY-MM-DD"},
+        "website_domain": {"type": "STRING", "description": "Domain der Unternehmenswebsite, nur wenn im Bericht genannt, z. B. verizon.com"},
+        "ceo_quote": {"type": "OBJECT", "description": "Ein aussagekraeftiges, woertliches Zitat des CEO oder CFO aus dem Bericht",
+            "properties": {"text_original": {"type": "STRING", "description": "Exakter Wortlaut wie im Bericht, ohne Auslassungen"},
+                           "text_de": {"type": "STRING", "description": "Deutsche Uebersetzung des Zitats"},
+                           "speaker": {"type": "STRING"}, "role": {"type": "STRING", "description": "z. B. CEO"}}},
         "period_end": {"type": "STRING", "description": "Ende des Berichtszeitraums, YYYY-MM-DD"},
         "prior_period_end": {"type": "STRING", "description": "Ende des Vergleichszeitraums im Vorjahr, YYYY-MM-DD"},
         "kpis": {"type": "ARRAY", "items": {"type": "OBJECT",
@@ -355,16 +360,14 @@ def derive_report(out):
     fcf = cfo - capex
     facts, rows = [], []
     facts.append(f"Rechnerischer Free Cashflow {per} = operativer Cashflow {de(cfo,0)} minus Investitionen in Sachanlagen {de(capex,0)} = {de(fcf,0)} {u}.")
-    rows.append((f"Free Cashflow, rechnerisch ({per})", f"{de(fcf,0)} {u}", f"{de(cfo,0)} − {de(capex,0)}"))
     facts.append(f"Gezahlte Dividenden {per}: {de(div,0)} {u}" + (f" (Vorjahreszeitraum: {de(cf['prior_dividends_paid'],0)} {u})." if cf.get("prior_dividends_paid") else "."))
-    rows.append((f"Gezahlte Dividenden ({per})", f"{de(div,0)} {u}", "Kapitalflussrechnung"))
     if fcf > 0:
         facts.append(f"Dividenden in Prozent des rechnerischen Free Cashflows ({per}): {de(div / fcf * 100, 0)} %.")
-        rows.append((f"Dividenden / Free Cashflow ({per})", f"{de(div / fcf * 100, 0)} %", f"{de(div,0)} ÷ {de(fcf,0)}"))
+        rows.append((f"Dividenden / Free Cashflow ({per})", f"{de(div / fcf * 100, 0)} %", f"{de(div,0)} ÷ ({de(cfo,0)} − {de(capex,0)}) Mio."))
         if cf.get("share_repurchases"):
             tot = div + cf["share_repurchases"]
             facts.append(f"Dividenden plus Aktienrueckkaeufe ({de(cf['share_repurchases'],0)} {u}) in Prozent des Free Cashflows: {de(tot / fcf * 100, 0)} %.")
-            rows.append((f"Dividenden + Rückkäufe / Free Cashflow ({per})", f"{de(tot / fcf * 100, 0)} %", f"({de(div,0)} + {de(cf['share_repurchases'],0)}) ÷ {de(fcf,0)}"))
+            rows.append((f"Dividenden + Rückkäufe / Free Cashflow ({per})", f"{de(tot / fcf * 100, 0)} %", f"({de(div,0)} + {de(cf['share_repurchases'],0)}) ÷ {de(fcf,0)} Mio."))
     return facts, rows
 
 
@@ -382,7 +385,7 @@ def fmp_get(path, **params):
     return None
 
 
-def fmp_metrics(symbol):
+def fmp_metrics(symbol, have_report_rows=False):
     """Dividendenkennzahlen aus FMP (nur mit FMP_API_KEY, praktisch nur US-Titel). Gibt (facts, rows) zurueck."""
     if not symbol or not os.environ.get("FMP_API_KEY"):
         return [], []
@@ -411,7 +414,30 @@ def fmp_metrics(symbol):
             dp = abs(sum(float(x.get("commonDividendsPaid") if x.get("commonDividendsPaid") is not None else (x.get("netDividendsPaid") or 0)) for x in cfs))
             if fcf > 0 and dp > 0:
                 facts.append(f"[{src}] Letzte vier Quartale: Free Cashflow {de(fcf / 1e6,0)} Mio. USD, gezahlte Dividenden {de(dp / 1e6,0)} Mio. USD, Anteil {de(dp / fcf * 100, 0)} %.")
-                rows.append(("Dividenden / Free Cashflow (12 Monate)", f"{de(dp / fcf * 100, 0)} %", f"{de(dp / 1e6,0)} ÷ {de(fcf / 1e6,0)} Mio. USD"))
+                if not have_report_rows:
+                    rows.append(("Dividenden / Free Cashflow (12 Monate)", f"{de(dp / fcf * 100, 0)} %", f"{de(dp / 1e6,0)} ÷ {de(fcf / 1e6,0)} Mio. USD"))
+    # Wann wird die Dividende ueblicherweise erhoeht? (Ankuendigungsmonat der Erhoehungen)
+    MON = ["Januar", "Februar", "März", "April", "Mai", "Juni", "Juli", "August", "September", "Oktober", "November", "Dezember"]
+    asc = sorted([x for x in dv if x.get("date") and float(x.get("dividend") or 0) > 0], key=lambda x: x["date"])
+    inc_ev = []
+    for i in range(1, len(asc)):
+        if float(asc[i]["dividend"]) > float(asc[i - 1]["dividend"]) * 1.005 and asc[i]["date"][:4] != asc[i - 1]["date"][:4]:
+            dd = (asc[i].get("declarationDate") or "")[:10]
+            inc_ev.append((asc[i]["date"][:10], dd, float(asc[i - 1]["dividend"]), float(asc[i]["dividend"])))
+    recent = [e for e in inc_ev if int(e[0][:4]) >= today.year - 6][-5:]
+    if len(recent) >= 3:
+        use_decl = all(e[1] for e in recent)
+        months = [int((e[1] if use_decl else e[0])[5:7]) for e in recent]
+        top = max(set(months), key=months.count)
+        hits = months.count(top)
+        label = "angekündigt" if use_decl else "ex"
+        years = ", ".join(f"{(e[1] if use_decl else e[0])[:4]}" for e in recent)
+        facts.append((f"[{src}] Die Dividendenerhöhungen wurden in {hits} von {len(recent)} Jahren ({years}) im {MON[top - 1]} angekündigt." if use_decl else f"[{src}] Die Dividendenerhöhungen traten in {hits} von {len(recent)} Jahren ({years}) mit dem Ex-Dividenden-Termin im {MON[top - 1]} in Kraft.") + f" Die letzte Erhöhung: von {de(recent[-1][2],2)} auf {de(recent[-1][3],2)} USD je Quartalszahlung ({(recent[-1][1] or recent[-1][0])}). Das ist ein Muster der Vergangenheit, keine Zusage des Unternehmens.")
+        rows.append(("Übliche Erhöhung der Dividende", f"{MON[top - 1]}", f"{hits} von {len(recent)} Jahren ({years}), " + ("Ankündigung" if use_decl else "Ex-Termin")))
+        if any(int(e[0][:4]) == today.year for e in inc_ev):
+            facts.append(f"[{src}] In {today.year} wurde die Dividende bereits erhöht.")
+        else:
+            facts.append(f"[{src}] In {today.year} gab es bisher keine Erhöhung.")
     yr = {}
     for d, a in ds:
         yr[int(d[:4])] = yr.get(int(d[:4]), 0) + a
@@ -537,6 +563,12 @@ def build(out, text, src_note, force=False, calc_rows=None, fmp_used=False):
         hinweise.append("Aufmacherfoto ist automatisch von Wikimedia Commons gewaehlt: bitte pruefen, ob es zum Artikel passt (sonst image-Zeilen entfernen, dann entsteht ein Titelbild automatisch).")
     else:
         hinweise.append("Kein freies Aufmacherfoto gefunden, das Titelbild entsteht automatisch. Eigenes Foto: image, image_alt, image_credit ergaenzen.")
+    tk = re.sub(r"[^A-Za-z0-9.\-]", "", out.get("ticker") or "")
+    dom_ = re.sub(r"^(https?://)?(www\.)?|/.*$", "", out.get("website_domain") or "")
+    if tk:
+        fm.append(f"logo_symbol: {tk}")
+    if dom_ and re.match(r"^[a-z0-9.\-]+\.[a-z]{2,}$", dom_, re.I):
+        fm.append(f"logo_domain: {dom_}")
     fm += ["draft: true", "---", ""]
     if bad:
         hinweise.append("Diese Werte wurden im Berichtstext nicht gefunden: " + "; ".join(bad))
@@ -583,9 +615,17 @@ def main():
         out = call_gemini(src, read_prompt("ir_prompt.md"))
         facts, calc_rows = derive_report(out)
         sym = (a.ticker or out.get("ticker") or "").upper()
-        ff, fr = fmp_metrics(sym) if re.match(r"^[A-Z0-9.\-]{1,10}$", sym) else ([], [])
+        ff, fr = fmp_metrics(sym, bool(calc_rows)) if re.match(r"^[A-Z0-9.\-]{1,10}$", sym) else ([], [])
         if ff:
             facts += ff; calc_rows += fr; fmp_used = True
+        qt = out.get("ceo_quote") or {}
+        if qt.get("text_original") and qt.get("text_de"):
+            norm = lambda t: re.sub(r"[^a-z0-9]+", "", (t or "").lower().replace("\u2019", "'"))
+            if norm(qt["text_original"]) and norm(qt["text_original"]) in norm(text):
+                facts.append(f"CEO-Zitat (Originalwortlaut im Bericht verifiziert, hier auf Deutsch): \u201e{qt['text_de']}\u201c \u2013 {qt.get('speaker') or 'Unternehmensleitung'}, {qt.get('role') or ''}".strip(", "))
+            else:
+                print("Zitat nicht im Berichtstext gefunden, wird weggelassen.")
+                out["ceo_quote"] = None
         summary = json.dumps({k: out.get(k) for k in ("company", "ticker", "period", "report_date", "period_end", "prior_period_end", "kpis", "chart", "cashflow")}, ensure_ascii=False)
         fakten = "\n".join("- " + f for f in facts) if facts else "- (keine berechneten Kennzahlen verfuegbar)"
         prompt2 = read_prompt("ir_article_prompt.md") + "\n\nFAKTEN (vom Programm berechnet, Zahlen exakt so uebernehmen):\n" + fakten + "\n\nEXTRAHIERTE KENNZAHLEN (JSON):\n" + summary

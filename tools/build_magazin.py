@@ -135,6 +135,20 @@ def make_cover(path, title, category):
     d.text((70, H-52), "Dividenden verstehen, Aktien prüfen", font=font(24, False), fill="#5d6b78")
     im.save(path, optimize=True)
 
+def logo_html(p):
+    """Titel mit Firmenlogo (FMP-Symbolbild, Rueckfall Favicon der Firmenwebsite, sonst ohne Logo)."""
+    sym = re.sub(r"[^A-Za-z0-9.\-]", "", p.get("logo_symbol", "")); dom = re.sub(r"[^a-z0-9.\-]", "", p.get("logo_domain", "").lower())
+    fav = (f"https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https://{dom}&size=128") if dom else ""
+    if sym:
+        src = f"https://images.financialmodelingprep.com/symbol/{sym}.png"
+        fb = f"this.onerror=null;this.src='{fav}'" if fav else "this.parentNode.removeChild(this)"
+    elif fav:
+        src, fb = fav, "this.parentNode.removeChild(this)"
+    else:
+        return f'<h1>{esc(p["title"])}</h1>\n'
+    return (f'<div class="titlerow"><img class="hlogo" src="{src}" alt="" width="56" height="56" onerror="{fb}">'
+            f'<h1>{esc(p["title"])}</h1></div>\n')
+
 def build_post(p, posts):
     slug = p["slug"]; depth = 2; pre = "../" * depth
     url = f"magazin/{slug}/"
@@ -171,7 +185,7 @@ def build_post(p, posts):
     o = head(depth, p["title"], p["description"], url, "article", img_url, extra) + nav_html(depth, "magazin") + "</nav></div></header>\n"
     o += f'<script src="{pre}assets/navigation.js"></script>\n<script src="{pre}assets/logos.js"></script>\n<main class="wrap"><article class="post">\n'
     o += f'<nav class="crumbs" aria-label="Brotkrumen"><a href="{pre}">Start</a> › <a href="{pre}magazin/">Magazin</a> › <span aria-current="page">{esc(p["title"])}</span></nav>\n'
-    o += f'<p class="kicker">{esc(p["category"])}</p>\n<h1>{esc(p["title"])}</h1>\n<p class="lead">{esc(p["description"])}</p>\n'
+    o += f'<p class="kicker">{esc(p["category"])}</p>\n{logo_html(p)}<p class="lead">{esc(p["description"])}</p>\n'
     upd = f' · Aktualisiert: <time datetime="{iso(p["upd"])}">{de_date(p["upd"])}</time>' if p["upd"].date() > p["dt"].date() else ""
     o += f'<p class="byline">Von <strong>{esc(author)}</strong> · <time datetime="{iso(p["dt"])}">{de_date(p["dt"])}</time>{upd} · {mins} Min. Lesezeit</p>\n'
     alt = p.get("image_alt") or p["title"]
@@ -266,6 +280,33 @@ def patch_home(posts):
     if 'id="mag-css"' not in s: s = s.replace("</head>", css + "\n</head>", 1)
     open(p, "w", encoding="utf-8").write(s)
 
+MAGCSS = ('<style id="mag-css">.home-mag .magcards{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:14px}'
+          '.home-mag .mcover{display:block;width:100%;height:auto;aspect-ratio:16/9;object-fit:cover}'
+          '.home-mag .card{display:block;padding:0;overflow:hidden;text-decoration:none;color:inherit;border:1px solid #e3e8ee;border-radius:12px;background:#fff}'
+          '.home-mag .card>*:not(.mcover){margin-left:16px;margin-right:16px}'
+          '.home-mag .card h3{margin-top:4px;font-size:18px;line-height:1.3}.home-mag .card p{font-size:15px;color:#3d4955}'
+          '.home-mag .kicker{margin-top:12px;margin-bottom:4px;font-size:13px;font-weight:700;letter-spacing:.04em;text-transform:uppercase;color:#1a7a45}'
+          '.home-mag .card p:last-child{margin-bottom:16px}</style>')
+
+def patch_news(posts):
+    """Neue Magazin-Artikel ganz oben auf der News-Seite."""
+    p = "news/index.html"
+    if not os.path.exists(p): return
+    s = open(p, encoding="utf-8").read()
+    block = ""
+    if posts:
+        block = '<section class="home-mag"><h2>Neu im Magazin</h2>\n<div class="cards magcards">\n'
+        for x in posts[:3]:
+            block += (f'<a class="card" href="../magazin/{x["slug"]}/"><img class="mcover" src="../{x["img"]}" alt="" width="1200" height="675" loading="lazy">'
+                      f'<p class="kicker">{esc(x["category"])} · {de_date(x["dt"])}</p><h3>{esc(x["title"])}</h3><p>{esc(x["description"])}</p></a>\n')
+        block += '</div>\n<p><a href="../magazin/">Alle Artikel</a></p></section>\n'
+    mk = "<!-- magazin-neu -->"
+    if mk not in s:
+        s = s.replace('<div id="days"', mk + "\n" + mk.replace("neu", "ende") + '\n<div id="days"', 1)
+    s = re.sub(r"<!-- magazin-neu -->.*?<!-- magazin-ende -->", lambda m: mk + "\n" + block + "<!-- magazin-ende -->", s, flags=re.S)
+    if 'id="mag-css"' not in s: s = s.replace("</head>", MAGCSS + "\n</head>", 1)
+    open(p, "w", encoding="utf-8").write(s)
+
 def patch_nav_everywhere(has_posts):
     """Magazin-Link in Kopf- und Fußzeile aller Seiten ein- bzw. austragen."""
     for f in glob.glob("**/*.html", recursive=True):
@@ -298,7 +339,7 @@ def main():
     else:
         for f in ("magazin/index.html", "magazin/feed.xml"):
             if os.path.exists(f): os.remove(f)
-    patch_sitemap(posts); patch_llms(posts); patch_home(posts); patch_nav_everywhere(bool(posts))
+    patch_sitemap(posts); patch_llms(posts); patch_home(posts); patch_news(posts); patch_nav_everywhere(bool(posts))
     print(f"{len(posts)} Artikel gebaut")
 
 if __name__ == "__main__":
