@@ -932,16 +932,39 @@ def build(out, text, src_note, force=False, calc_rows=None, fmp_used=False, figs
     return mdpath, gpath, bad, photo
 
 
+def web_source(url):
+    """Normale Webseite (z. B. Ad-hoc-Meldung, Pressemitteilung) als Quelle: Text lesen und als PDF rendern."""
+    try:
+        raw = http(url, binary=True, ua="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124 Safari/537.36", timeout=90)
+    except Exception as e:
+        fail(f"Webseite nicht abrufbar ({e}). Bitte stattdessen eine PDF nutzen.")
+    if raw[:5] == b"%PDF-":
+        open("/tmp/web_source.pdf", "wb").write(raw)
+        return {"kind": "pdf", "path": "/tmp/web_source.pdf", "url": url, "date": ""}
+    h = raw.decode("utf-8", "replace")
+    m = re.search(r"(?is)<main\b.*?</main>|<article\b.*?</article>", h)
+    txt = html_to_text(m.group(0) if m and len(html_to_text(m.group(0))) > 600 else h)
+    if len(txt.strip()) < 600:
+        fail("Die Webseite enthaelt kaum Text (vermutlich per JavaScript nachgeladen). Bitte die Seite als PDF speichern und die PDF nutzen.")
+    base = url if url.endswith("/") else url.rsplit("/", 1)[0] + "/"
+    if html_to_pdf(h, base, "/tmp/web_source.pdf"):
+        print("Webseite als PDF gerendert (Seiten und Ausschnitte moeglich).")
+        return {"kind": "pdf", "path": "/tmp/web_source.pdf", "url": url, "date": "", "pages_real": False}
+    return {"kind": "text", "text": txt, "url": url, "date": "", "pages_real": False}
+
+
 def main():
     ap = argparse.ArgumentParser()
-    ap.add_argument("pdf", nargs="?"); ap.add_argument("--ticker"); ap.add_argument("--art", default=os.environ.get("ART") or "ergebnisse"); ap.add_argument("--mock"); ap.add_argument("--force", action="store_true")
+    ap.add_argument("pdf", nargs="?"); ap.add_argument("--ticker"); ap.add_argument("--url"); ap.add_argument("--art", default=os.environ.get("ART") or "ergebnisse"); ap.add_argument("--mock"); ap.add_argument("--force", action="store_true")
     a = ap.parse_args()
-    if not a.pdf and not a.ticker:
-        fail("Bitte --ticker KO oder eine PDF angeben.")
+    if not a.pdf and not a.ticker and not a.url:
+        fail("Bitte --ticker KO, eine PDF oder --url angeben.")
     if a.mock:
         os.environ["IR_MOCK"] = "1"
     src = None
-    if a.ticker:
+    if a.url:
+        src = web_source(a.url)
+    elif a.ticker:
         src = sec_release(a.ticker, a.art)
         if src is None:
             return

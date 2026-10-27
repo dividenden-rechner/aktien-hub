@@ -21,7 +21,7 @@ on:
           - meldung
           - insider
       pdf_url:
-        description: "Oder: direkter Link zu einer PDF (für Titel außerhalb der USA)"
+        description: "Oder: Link zu einer PDF oder zu einer normalen Webseite (z. B. Ad-hoc-Meldung), für Titel außerhalb der USA"
         required: false
 permissions:
   contents: write
@@ -51,8 +51,12 @@ jobs:
             echo "$TICKERS" | tr ',' '\n' | tr -d ' ' | sed '/^$/d' | sed 's/^/ticker:/' >> /tmp/todo.txt
           fi
           if [ -n "$PDF_URL" ]; then
-            curl -fsSL -A "Mozilla/5.0" -o content/ir-inbox/download.pdf "$PDF_URL"
-            echo "content/ir-inbox/download.pdf" >> /tmp/todo.txt
+            if curl -fsSL -A "Mozilla/5.0" -o /tmp/dl.bin "$PDF_URL" && [ "$(head -c 5 /tmp/dl.bin)" = "%PDF-" ]; then
+              cp /tmp/dl.bin content/ir-inbox/download.pdf
+              echo "content/ir-inbox/download.pdf" >> /tmp/todo.txt
+            else
+              echo "url:$PDF_URL" >> /tmp/todo.txt
+            fi
           fi
           if [ ! -s /tmp/todo.txt ]; then
             git diff --name-only --diff-filter=AM HEAD~1 HEAD -- 'content/ir-inbox/*.pdf' > /tmp/todo.txt || true
@@ -69,6 +73,7 @@ jobs:
             [ -z "$f" ] && continue
             case "$f" in
               ticker:*) python3 tools/ir_agent.py --ticker "${f#ticker:}" ;;
+              url:*) python3 tools/ir_agent.py --url "${f#url:}" ;;
               *) python3 tools/ir_agent.py "$f" ;;
             esac
           done < /tmp/todo.txt
