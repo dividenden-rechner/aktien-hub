@@ -9,7 +9,6 @@ image: assets/magazin/novartis-q3-2026-ergebnisse-foto.jpg
 image_alt: "Foto zu Novartis: Pays : Suisse🇨🇭 Canton : Bâle-Ville Commune : Bâle Quartier : St. Johann Adresse : St. Johanns-Hafen-Weg 5 Fonction : Éducation / Culture Construction : 2021 → 2022 ► Architectes : Blaser Architekten "
 image_credit: "Foto: Alexandre Prevot from Nancy, France / Wikimedia Commons, CC BY-SA 2.0"
 image_source: https://commons.wikimedia.org/wiki/File:Novartis_Campus_-_Novartis_Pavillon_(53992600334).jpg
-draft: true
 ---
 <!-- PRÜFEN: Aufmacherfoto ist automatisch von Wikimedia Commons gewaehlt: bitte pruefen, ob es zum Artikel passt (sonst image-Zeilen entfernen, dann entsteht ein Titelbild automatisch). -->
 
