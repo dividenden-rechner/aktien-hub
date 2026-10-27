@@ -1,6 +1,33 @@
 {
- "updated": "2026-10-27T05:04:45.345842+00:00",
+ "updated": "2026-10-27T12:11:47.151847+00:00",
  "items": [
+  {
+   "sym": "JNJ",
+   "name": "Johnson & Johnson",
+   "title": "Johnson & Johnson to Host Enterprise Business Review",
+   "link": "https://www.investor.jnj.com/investor-news/news-details/2026/Johnson--Johnson-to-Host-Enterprise-Business-Review/default.aspx",
+   "date": "2026-10-27T11:30:00+00:00",
+   "text": "",
+   "quelle": "RSS"
+  },
+  {
+   "sym": "KO",
+   "name": "Coca-Cola",
+   "title": "Coca-Cola Reports Third Quarter 2026 Results and Raises Full Year Guidance",
+   "link": "https://investors.coca-colacompany.com/news-events/press-releases/detail/1176/coca-cola-reports-third-quarter-2026-results-and-raises-full-year-guidance",
+   "date": "2026-10-27T10:55:00+00:00",
+   "text": "",
+   "quelle": "RSS"
+  },
+  {
+   "sym": "NVDA",
+   "name": "Nvidia",
+   "title": "NVIDIA and Meta to Expand Collaboration on Muse and Muse Family of Models Amid Robust Growth",
+   "link": "https://nvidianews.nvidia.com/news/nvidia-and-meta-to-expand-collaboration-on-muse-and-muse-family-of-models-amid-robust-growth",
+   "date": "2026-10-27T05:52:00+00:00",
+   "text": "",
+   "quelle": "RSS"
+  },
   {
    "sym": "IBM",
    "name": "IBM",
@@ -524,15 +551,6 @@
    "quelle": "RSS"
   },
   {
-   "sym": "NVDA",
-   "name": "Nvidia",
-   "title": "NVIDIA cuDSS Now Generally Available to Accelerate Engineering and Scientific Simulations",
-   "link": "https://blogs.nvidia.com/blog/cudss-generally-available-engineering-scientific-simulation/",
-   "date": "2026-10-21T10:30:25+00:00",
-   "text": "",
-   "quelle": "RSS"
-  },
-  {
    "sym": "T",
    "name": "AT&T",
    "title": "AT&T Delivers Strong Third-Quarter 2026 Results",
@@ -852,15 +870,6 @@
    "name": "Johnson & Johnson",
    "title": "TREMFYA® (guselkumab) demonstrated sustained clinical and endoscopic remission through 3 years in moderately to severely active Crohn's disease",
    "link": "https://www.investor.jnj.com/investor-news/news-details/2026/TREMFYA-guselkumab-demonstrated-sustained-clinical-and-endoscopic-remission-through-3-years-in-moderately-to-severely-active-Crohns-disease/default.aspx",
-   "date": "2026-10-12T20:05:00+00:00",
-   "text": "",
-   "quelle": "RSS"
-  },
-  {
-   "sym": "JNJ",
-   "name": "Johnson & Johnson",
-   "title": "New TREMFYA® (guselkumab) study shows consistent perianal fistula remission across key Crohn's disease patient subgroups",
-   "link": "https://www.investor.jnj.com/investor-news/news-details/2026/New-TREMFYA-guselkumab-study-shows-consistent-perianal-fistula-remission-across-key-Crohns-disease-patient-subgroups/default.aspx",
    "date": "2026-10-12T20:05:00+00:00",
    "text": "",
    "quelle": "RSS"
