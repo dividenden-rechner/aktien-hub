@@ -1,6 +1,51 @@
 {
- "updated": "2026-10-26T22:40:01.043647+00:00",
+ "updated": "2026-10-27T05:04:45.345842+00:00",
  "items": [
+  {
+   "sym": "IBM",
+   "name": "IBM",
+   "title": "IBM Introduces Identity and Control for AI Agents, Securing Frontier Intelligence for the Enterprise",
+   "link": "https://newsroom.ibm.com/campaign?item=3005",
+   "date": "2026-10-27T04:01:00+00:00",
+   "text": "At TechXchange 2026, IBM (NYSE: IBM) is announcing new capabilities to help developers, IT and security teams put AI agents to work across business systems with clear authority and accountability. IBM brings together agent discovery, verified identities, access controls and performance evaluation to help organizations understand who owns each agent, control what it can access, and trace its actions across existing applications and infrastructure.",
+   "quelle": "RSS"
+  },
+  {
+   "sym": "IBM",
+   "name": "IBM",
+   "title": "Navigating infrastructure complexity with system intelligence",
+   "link": "https://newsroom.ibm.com/campaign?item=3021",
+   "date": "2026-10-27T04:00:00+00:00",
+   "text": "IBM Z environments are more interconnected than ever. Applications, middleware, infrastructure, security controls, and operational processes all depend on one another, making even routine changes...",
+   "quelle": "RSS"
+  },
+  {
+   "sym": "IBM",
+   "name": "IBM",
+   "title": "IBM Concert platform advances the path to cross-domain agentic IT operations",
+   "link": "https://newsroom.ibm.com/campaign?item=3019",
+   "date": "2026-10-27T04:00:00+00:00",
+   "text": "AI adoption is accelerating change and multiplying complexity across the technology estate. IT teams must manage more services, models and dependencies, all while maintaining performance, managing...",
+   "quelle": "RSS"
+  },
+  {
+   "sym": "IBM",
+   "name": "IBM",
+   "title": "IBM watsonx Orchestrate advances enterprise AI agent management with new capabilities at TechXchange 2026",
+   "link": "https://newsroom.ibm.com/campaign?item=3018",
+   "date": "2026-10-27T04:00:00+00:00",
+   "text": "AI agents are rapidly becoming part of how enterprises operate. Organizations are building agents to automate workflows, improve employee productivity and transform customer experiences. But as...",
+   "quelle": "RSS"
+  },
+  {
+   "sym": "IBM",
+   "name": "IBM",
+   "title": "Terraform advances infrastructure lifecycle management for the agentic era",
+   "link": "https://newsroom.ibm.com/campaign?item=3007",
+   "date": "2026-10-27T02:00:00+00:00",
+   "text": "AI agents are becoming active participants in infrastructure delivery and operations, fundamentally increasing the speed and scale at which infrastructure work can happen. This shift requires...",
+   "quelle": "RSS"
+  },
   {
    "sym": "AMZN",
    "name": "Amazon",
@@ -44,24 +89,6 @@
    "link": "https://techcommunity.microsoft.com/blog/microsoft-discovery-blog/adapting-biological-monitoring-for-food-security-with-agents/4565992",
    "date": "2026-10-26T17:59:18+00:00",
    "text": "The post How AI could help scientists track a pest threatening citrus trees appeared first on Source.",
-   "quelle": "RSS"
-  },
-  {
-   "sym": "IBM",
-   "name": "IBM",
-   "title": "IBM Integration Intelligence Hub gives AI the context to act, not just access",
-   "link": "https://newsroom.ibm.com/campaign?item=3004",
-   "date": "2026-10-26T17:37:00+00:00",
-   "text": "AI agents are getting remarkably good at reasoning, coding and acting. But inside the enterprise, access alone is not enough. To act reliably, an agent needs to understand the environment it is...",
-   "quelle": "RSS"
-  },
-  {
-   "sym": "IBM",
-   "name": "IBM",
-   "title": "Securing AI agents from identity to access to action",
-   "link": "https://newsroom.ibm.com/campaign?item=3003",
-   "date": "2026-10-26T17:29:00+00:00",
-   "text": "AI agents are moving from experimentation into enterprise environments, where they can access data and systems, use tools, invoke other agents, and take action on behalf of users and...",
    "quelle": "RSS"
   },
   {
@@ -281,15 +308,6 @@
    "quelle": "RSS"
   },
   {
-   "sym": "IBM",
-   "name": "IBM",
-   "title": "IBM and Scuderia Ferrari HP Expand AI-Powered Fan Experience Ahead of the United States Grand Prix",
-   "link": "https://newsroom.ibm.com/campaign?item=3001",
-   "date": "2026-10-22T13:02:00+00:00",
-   "text": "As Formula 1 returns to Austin’s Circuit of the Americas for this weekend’s United States Grand Prix, IBM (NYSE: IBM) and Scuderia Ferrari HP are introducing new AI-powered features to the Scuderia Ferrari mobile app. Built using IBM Bob and IBM Consulting Advantage, the new and enhanced features offer even more ways for fans to engage with each other and the team they love, creating a definitive home for Scuderia Ferrari's passionate global community of nearly 400 million Tifosi.",
-   "quelle": "RSS"
-  },
-  {
    "sym": "NVDA",
    "name": "Nvidia",
    "title": "Cloud Deployment Incoming: ‘Call of Duty: Modern Warfare 4’ Arrives on GeForce NOW",
@@ -403,15 +421,6 @@
    "title": "NVIDIA Open Models Power a New Wave of European Public Sector Projects",
    "link": "https://blogs.nvidia.com/blog/european-public-sector-open-models/",
    "date": "2026-10-22T05:00:02+00:00",
-   "text": "",
-   "quelle": "RSS"
-  },
-  {
-   "sym": "IBM",
-   "name": "IBM",
-   "title": "IBM RELEASES THIRD-QUARTER RESULTS",
-   "link": "https://newsroom.ibm.com/campaign?item=3002",
-   "date": "2026-10-21T20:09:00+00:00",
    "text": "",
    "quelle": "RSS"
   },
@@ -557,15 +566,6 @@
    "link": "https://about.att.com/blogs/2026/att-oats-connecting-older-adults.html",
    "date": "2026-10-20T14:00:00+00:00",
    "text": "From online scams to AI-powered deception, learn how AT&T and OATS are helping older adults stay informed and protected.",
-   "quelle": "RSS"
-  },
-  {
-   "sym": "IBM",
-   "name": "IBM",
-   "title": "llm-d 1.0 Advances Open, Cost-Efficient AI Inference for Production Scale",
-   "link": "https://newsroom.ibm.com/campaign?item=2998",
-   "date": "2026-10-20T12:04:00+00:00",
-   "text": "Today, llm-d project contributors announced the release of llm-d 1.0, a major milestone for the open source project designed to help organizations deploy and scale large language model inference more efficiently across modern infrastructure. Founded in 2025 by Red Hat, IBM (NYSE: IBM), Google Cloud, CoreWeave and NVIDIA, and now governed by the Cloud Native Computing Foundation (CNCF), llm-d plays a key role in the open foundation for enterprises deploying AI at scale in production.",
    "quelle": "RSS"
   },
   {
