@@ -63,7 +63,8 @@ SCHEMA = {   # Aufruf 1: Zahlen aus dem Bericht
         "cashflow": {"type": "OBJECT", "description": "Aus der Kapitalflussrechnung des Berichts, Zahlen exakt wie dort (positiv, in der Berichtseinheit)",
             "properties": {"period_label": {"type": "STRING", "description": "z. B. Halbjahr 2026 oder 6 Monate"}, "unit": {"type": "STRING", "description": "z. B. Mio. USD"},
                            "operating_cash_flow": NUM, "capex": NUM, "dividends_paid": NUM, "share_repurchases": NUM,
-                           "prior_dividends_paid": NUM, "page": {"type": "INTEGER"}}},
+                           "prior_dividends_paid": NUM, "prior_operating_cash_flow": NUM, "prior_capex": NUM, "prior_share_repurchases": NUM,
+                           "page": {"type": "INTEGER"}}},
         "balance": {"type": "OBJECT", "description": "Aus der Bilanz: Schulden und liquide Mittel am Berichtsstichtag und am Vergleichsstichtag (Vorjahresende oder Vorjahresquartal), positive Zahlen in der Berichtseinheit",
             "properties": {"unit": {"type": "STRING"}, "cash": NUM, "short_term_debt": NUM, "long_term_debt": NUM,
                            "prior_cash": NUM, "prior_short_term_debt": NUM, "prior_long_term_debt": NUM,
@@ -76,6 +77,13 @@ ARTICLE_SCHEMA = {   # Aufruf 2: Artikeltext
                    "body_markdown": {"type": "STRING"}},
 }
 
+
+CORE_SCHEMA = {"type": "OBJECT", "properties": {k: SCHEMA["properties"][k] for k in ("kpis", "cashflow", "balance", "period_end", "prior_period_end")}}
+CORE_PROMPT = """Lies aus dem angehaengten Ergebnisdokument nur diese Pflichtangaben, exakt wie im Dokument (Zahlen in der Berichtseinheit, keine Berechnungen):
+- kpis: bis zu 6 Kennzahlen in dieser Reihenfolge, soweit im Dokument vorhanden: Umsatz, operatives Ergebnis bzw. operatives Kerngeschaeft, Nettogewinn, Gewinn je Aktie (bereinigt, wenn ausgewiesen), Free Cashflow oder operativer Cashflow, Dividende je Aktie. value auf Deutsch (Komma, Mrd. USD), change = Veraenderung zum Vorjahr nur wenn genannt, page = Seite.
+- cashflow: Kapitalflussrechnung, laengster ausgewiesener Zeitraum seit Jahresbeginn: operating_cash_flow, capex (positiv), dividends_paid (positiv), share_repurchases (positiv) und dieselben Werte des Vorjahreszeitraums (prior_*), dazu unit und period_label.
+- balance: liquide Mittel, kurzfristige und langfristige Finanzschulden (ohne Leasing) am Stichtag und am Vergleichsstichtag (prior_*), unit, prior_label.
+Lass nur weg, was im Dokument wirklich nicht steht."""
 
 EARNINGS = ("Quartalszahlen", "Halbjahreszahlen", "Jahresbericht")
 FIG_SCHEMA = {"type": "OBJECT", "properties": {
@@ -865,6 +873,45 @@ def q(v):
     return '"' + str(v).replace('"', "'").replace("\n", " ") + '"'
 
 
+def compare_table(out):
+    """Vergleichstabelle Cashflow und Bilanz: aktuell gegen Vorjahr bzw. Vergleichsstichtag (aus dem Bericht, FCF und Nettoschulden gerechnet)."""
+    cf, bl = out.get("cashflow") or {}, out.get("balance") or {}
+    rows = []
+
+    def row(label, cur, pri, unit, calc=False):
+        if cur is None:
+            return
+        ch = ""
+        if pri not in (None, 0):
+            pc = (cur / pri - 1) * 100
+            ch = f"{'+' if pc >= 0 else '−'}{de(abs(pc), 1)} %"
+        rows.append(f"| {label}{' (berechnet)' if calc else ''} | {de(cur, 0)} {unit} | {(de(pri, 0) + ' ' + unit) if pri is not None else '–'} | {ch or '–'} |")
+    u = cf.get("unit") or "Mio."
+    per = cf.get("period_label") or "Berichtszeitraum"
+    if cf.get("operating_cash_flow") is not None:
+        cfo, cap, pcfo, pcap = cf["operating_cash_flow"], cf.get("capex"), cf.get("prior_operating_cash_flow"), cf.get("prior_capex")
+        row(f"Operativer Cashflow, {per}", cfo, pcfo, u)
+        row("Investitionen (Capex)", cap, pcap, u)
+        if cap is not None:
+            row("Free Cashflow", cfo - cap, (pcfo - pcap) if (pcfo is not None and pcap is not None) else None, u, True)
+        row("Gezahlte Dividenden", cf.get("dividends_paid"), cf.get("prior_dividends_paid"), u)
+        row("Aktienrückkäufe", cf.get("share_repurchases"), cf.get("prior_share_repurchases"), u)
+    if bl.get("cash") is not None and (bl.get("short_term_debt") is not None or bl.get("long_term_debt") is not None):
+        bu = bl.get("unit") or "Mio."
+        debt = (bl.get("short_term_debt") or 0) + (bl.get("long_term_debt") or 0)
+        pdebt = None
+        if bl.get("prior_cash") is not None and (bl.get("prior_short_term_debt") is not None or bl.get("prior_long_term_debt") is not None):
+            pdebt = (bl.get("prior_short_term_debt") or 0) + (bl.get("prior_long_term_debt") or 0)
+        row("Liquide Mittel", bl["cash"], bl.get("prior_cash"), bu)
+        row("Finanzschulden", debt, pdebt, bu)
+        row("Nettoverschuldung", debt - bl["cash"], (pdebt - bl["prior_cash"]) if pdebt is not None else None, bu, True)
+    if not rows:
+        return ""
+    lab = bl.get("prior_label") or "Vorjahr"
+    return ("## Cashflow und Bilanz im Vergleich\n\n| Kennzahl | Aktuell | Vorjahr / " + lab + " | Veränderung |\n|---|---|---|---|\n" + "\n".join(rows) +
+            "\n\n*Cashflow: Zeitraum seit Jahresbeginn, Vergleich mit dem Vorjahreszeitraum. Bilanz: Vergleich mit dem angegebenen Stichtag. Free Cashflow und Nettoverschuldung eigene Berechnung aus Angaben des Berichts.*\n\n")
+
+
 def build(out, text, src_note, force=False, calc_rows=None, fmp_used=False, figs=None, src=None):
     out["period"] = out.get("period") or ""
     out["report_date"] = out.get("report_date") or date.today().isoformat()
@@ -959,7 +1006,7 @@ def build(out, text, src_note, force=False, calc_rows=None, fmp_used=False, figs
                    + "\n".join(f"| {a} | {b} | {c} |" for a, b, c in calc_rows) + "\n\n")
     quelle_txt = f"{out['company']}, {doc} vom {out['report_date']}" + (f"; Kurs- und Dividendendaten: Financial Modeling Prep" if fmp_used else "")
     kpi_md = ("## Die wichtigsten Zahlen im Überblick\n\n| Kennzahl | Wert | Veränderung zum Vorjahr | Quelle |\n|---|---|---|---|\n" + rows + "\n\n") if rows else ""
-    body = (head + body_md + "\n\n" + kpi_md + calc_md +
+    body = (head + body_md + "\n\n" + kpi_md + compare_table(out) + calc_md +
             f"*Quelle: {quelle_txt}. Rechenwege eigene Berechnung. Keine Anlageberatung.*\n")
     open(mdpath, "w", encoding="utf-8").write("\n".join(fm) + body)
     return mdpath, gpath, bad, photo
@@ -1050,6 +1097,15 @@ def main():
         facts, calc_rows = derive_report(out)
     else:
         out = call_gemini(src, read_prompt("ir_prompt.md"))
+        if out.get("report_type") in EARNINGS and not (out.get("kpis") and out.get("cashflow") and out.get("balance")):
+            print("::notice title=IR-Agent::Kennzahlen, Cashflow oder Bilanz fehlten, gezielte Nachfrage.")
+            try:
+                core = _generate([doc_part(src), {"text": CORE_PROMPT}], CORE_SCHEMA, api_key())
+                for k in ("kpis", "cashflow", "balance", "period_end", "prior_period_end"):
+                    if core.get(k) and not out.get(k):
+                        out[k] = core[k]
+            except SystemExit:
+                print("::notice title=IR-Agent::Gezielte Nachfrage fehlgeschlagen.")
         if out.get("report_type") in EARNINGS and src["kind"] == "pdf" and not (out.get("figures") and (out.get("chart") or {}).get("bars")):
             try:
                 extra = _generate([doc_part(src), {"text": FIG_PROMPT + f"\n\nUnternehmen: {out.get('company')}, Branche: {out.get('industry') or 'unbekannt'}."}], FIG_SCHEMA, api_key())
