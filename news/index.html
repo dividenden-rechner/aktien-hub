@@ -44,7 +44,7 @@ img.nk-logo{background:#fff}
 .nk-rss svg{width:12px;height:12px;fill:none;stroke:#475569;stroke-width:2.4;stroke-linecap:round}
 .nk-m{flex:1;min-width:0}.nk-top{display:flex;justify-content:space-between;gap:8px;font-weight:600}
 .nk-top a{color:inherit;text-decoration:none}.nk-top a:hover{text-decoration:underline}
-.nk-t{color:#64748b;font-weight:400;font-size:.85rem;white-space:nowrap}
+.nk-mag{display:inline-block;margin:2px 0 4px;font-size:.85rem;font-weight:600;color:#1a7a43}.nk-t{color:#64748b;font-weight:400;font-size:.85rem;white-space:nowrap}
 .nk-h{color:#334155;margin-top:2px}.nk-h b{color:#64748b;font-weight:400}
 .nk-body{display:none;padding:0 14px 16px 70px;color:#1e293b}
 .nk-item.open .nk-body{display:block}.nk-body p{margin:.5em 0}
@@ -111,11 +111,26 @@ function renderList(){
   var rss='<span class="nk-rss"><svg viewBox="0 0 24 24"><path d="M5 12a7 7 0 0 1 7 7M5 5a14 14 0 0 1 14 14"/><circle cx="6" cy="18" r="1.5"/></svg></span>';
   if(!L.length){el("list").innerHTML='<div class="nk-empty">'+(all.length?"Keine Meldungen für diese Auswahl.":"Noch keine Meldungen geladen. Die Daten kommen aus <code>data/news.json</code>, die der GitHub-Workflow „News aktualisieren“ befüllt (siehe Hinweis unten).")+"</div>";return}
   el("list").innerHTML=L.map(function(n,i){return'<div class="nk-item" data-i="'+i+'"><button type="button" class="nk-row" aria-expanded="false"><span class="nk-ic">'+logo(n.sym,n.name)+rss+'</span><span class="nk-m"><span class="nk-top"><span><a href="../aktien/?s='+encodeURIComponent(n.sym)+'" class="nk-nm">'+esc(n.name)+'</a></span><span class="nk-t">'+ago(n.date)+'</span></span><span class="nk-h"><b>'+(n.quelle==="SEC"?"SEC "+esc(n.form||"8-K")+(n.kat?" · "+esc(n.kat):""):"Pressemitteilung")+' – </b>'+esc(n.title)+'</span></span></button><div class="nk-body">'+(n.text?paras(n.text):"<p>Der Feed liefert für diese Meldung keinen Text.</p>")+'<p class="nk-src">'+new Date(n.date).toLocaleString("de-DE",{dateStyle:"medium",timeStyle:"short"})+(n.link?' · <a href="'+esc(n.link)+'" target="_blank" rel="noopener nofollow">Originalmeldung öffnen</a>':"")+"</p></div></div>"}).join("");
+  addMag(L);
   el("list").onclick=function(e){if(e.target.closest("a"))return;var r=e.target.closest(".nk-row");if(!r)return;var it=r.parentNode,o=it.classList.toggle("open");r.setAttribute("aria-expanded",o)}}
+var MAG=[];
+function base(s){return String(s||"").toUpperCase().split(".")[0]}
+function addMag(L){
+  if(!MAG.length)return;
+  var items=el("list").querySelectorAll(".nk-item");
+  MAG.forEach(function(a){
+    var tok=a.slug.split("-")[0].replace(/[^a-z0-9]+/g,""),best=null,bd=3;
+    L.forEach(function(n,i){var d=Math.abs(new Date(a.date)-new Date(n.date))/864e5;if(d>bd)return;
+      var nm=String(n.name||"").toLowerCase().replace(/[^a-z0-9]+/g,"");
+      if((a.sym&&base(a.sym)===base(n.sym))||(tok.length>3&&nm.indexOf(tok)>=0)){best=i;bd=d}});
+    if(best===null)return;
+    var it=items[best];if(!it||it.querySelector(".nk-mag"))return;
+    var top=it.querySelector(".nk-top");if(top)top.insertAdjacentHTML("afterend",'<a class="nk-mag" href="../magazin/'+a.slug+'/">Unsere Einordnung im Magazin →</a>')})}
 function render(){renderDays();renderList();var c=el("clear");c.hidden=!(sel||q)}
 el("days").onclick=function(e){var b=e.target.closest(".nk-day");if(!b)return;sel=sel===b.dataset.k?null:b.dataset.k;render()};
 el("q").oninput=function(){q=this.value.trim().toLowerCase();renderList();el("clear").hidden=!(sel||q)};
 el("clear").onclick=function(){sel=null;q="";el("q").value="";render()};
+fetch("../data/magazin.json?v="+Math.floor(Date.now()/6e5)).then(function(r){return r.json()}).then(function(j){MAG=j.items||[];renderList()}).catch(function(){});
 fetch("../data/news.json?v="+Math.floor(Date.now()/6e5)).then(function(r){return r.json()}).then(function(j){
   all=(j.items||[]).sort(function(a,b){return new Date(b.date)-new Date(a.date)});errs=j.errors||[];
   el("upd").textContent=j.updated?"Stand: "+new Date(j.updated).toLocaleString("de-DE",{dateStyle:"medium",timeStyle:"short"})+" Uhr":"Noch nicht aktualisiert";

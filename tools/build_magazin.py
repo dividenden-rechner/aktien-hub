@@ -288,6 +288,13 @@ MAGCSS = ('<style id="mag-css">.home-mag .magcards{display:grid;grid-template-co
           '.home-mag .kicker{margin-top:12px;margin-bottom:4px;font-size:13px;font-weight:700;letter-spacing:.04em;text-transform:uppercase;color:#1a7a45}'
           '.home-mag .card p:last-child{margin-bottom:16px}</style>')
 
+def write_mag_index(posts):
+    """data/magazin.json: damit die News-Seite zu Meldungen auf passende Artikel verlinken kann."""
+    items = [{"slug": x["slug"], "title": x["title"], "sym": re.sub(r"[^A-Za-z0-9.\-]", "", x.get("logo_symbol", "")), "date": iso(x["dt"])} for x in posts]
+    os.makedirs("data", exist_ok=True)
+    open("data/magazin.json", "w", encoding="utf-8").write(json.dumps({"items": items}, ensure_ascii=False, indent=1))
+
+
 def patch_news(posts):
     """Neue Magazin-Artikel ganz oben auf der News-Seite."""
     p = "news/index.html"
@@ -339,7 +346,7 @@ def main():
     else:
         for f in ("magazin/index.html", "magazin/feed.xml"):
             if os.path.exists(f): os.remove(f)
-    patch_sitemap(posts); patch_llms(posts); patch_home(posts); patch_news(posts); patch_nav_everywhere(bool(posts))
+    patch_sitemap(posts); patch_llms(posts); patch_home(posts); patch_news(posts); write_mag_index(posts); patch_nav_everywhere(bool(posts))
     print(f"{len(posts)} Artikel gebaut")
 
 if __name__ == "__main__":

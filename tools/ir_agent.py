@@ -29,7 +29,7 @@ SCHEMA = {   # Aufruf 1: Zahlen aus dem Bericht
         "report_type": {"type": "STRING", "enum": REPORT_TYPES, "description": "Art des Dokuments"},
         "period": {"type": "STRING", "description": "z. B. Q2 2026, H1 2026, GJ 2025; leer bei Ereignismeldungen"},
         "report_date": {"type": "STRING", "description": "YYYY-MM-DD"},
-        "website_domain": {"type": "STRING", "description": "Domain der Unternehmenswebsite, nur wenn im Bericht genannt, z. B. verizon.com"},
+        "website_domain": {"type": "STRING", "description": "Domain der offiziellen Unternehmenswebsite, z. B. verizon.com oder mercedes-benz.com"},
         "ceo_quote": {"type": "OBJECT", "description": "Ein aussagekraeftiges, woertliches Zitat des CEO oder CFO aus dem Bericht",
             "properties": {"text_original": {"type": "STRING", "description": "Exakter Wortlaut wie im Bericht, ohne Auslassungen"},
                            "text_de": {"type": "STRING", "description": "Deutsche Uebersetzung des Zitats"},
@@ -887,6 +887,14 @@ def build(out, text, src_note, force=False, calc_rows=None, fmp_used=False, figs
     else:
         hinweise.append("Kein freies Aufmacherfoto gefunden, das Titelbild entsteht automatisch. Eigenes Foto: image, image_alt, image_credit ergaenzen.")
     tk = re.sub(r"[^A-Za-z0-9.\-]", "", out.get("ticker") or "")
+    if os.environ.get("FMP_API_KEY") and not os.environ.get("IR_MOCK"):
+        try:   # passendes FMP-Symbol (auch Auslandsboersen wie MBG.DE) ueber die Namenssuche
+            res = fmp_get("search-name", query=out["company"], limit=6) or []
+            syms = [r.get("symbol", "") for r in res if r.get("symbol")]
+            if syms and tk not in syms:
+                tk = syms[0]
+        except Exception as e:
+            print("Symbolsuche fehlgeschlagen:", e)
     dom_ = re.sub(r"^(https?://)?(www\.)?|/.*$", "", out.get("website_domain") or "")
     if tk:
         fm.append(f"logo_symbol: {tk}")

@@ -14,7 +14,7 @@ period_end und prior_period_end: Enddatum des Berichtszeitraums und des Vergleic
 
 cashflow: Aus der Kapitalflussrechnung des Berichts (Zeitraum "seit Jahresbeginn" bzw. der längste angegebene Zeitraum, nicht das Einzelquartal, falls nur Halbjahres- oder Neunmonatswerte dastehen). operating_cash_flow = Netto-Cashflow aus laufender Geschäftstätigkeit, capex = Investitionen in Sachanlagen (positiv), dividends_paid = gezahlte Dividenden (positiv), share_repurchases = Aktienrückkäufe (positiv, wenn ausgewiesen), prior_dividends_paid = gezahlte Dividenden im Vorjahreszeitraum. Zahlen exakt wie im Bericht, in der Berichtseinheit (meist Millionen). Wenn der Bericht keine Kapitalflussrechnung enthält, lass cashflow weg. Rechne hier nichts aus.
 
-website_domain: nur die Domain der Unternehmenswebsite, wenn sie im Bericht steht (zum Beispiel verizon.com), sonst weglassen.
+website_domain: die Domain der offiziellen Unternehmenswebsite (zum Beispiel verizon.com oder mercedes-benz.com). Steht sie nicht im Dokument, nenne sie aus deinem Wissen, aber nur, wenn du sicher bist. ticker: Börsenkürzel; bei Nicht-US-Titeln mit Börsensuffix, zum Beispiel MBG.DE, SAP.DE, NESN.SW, HSBA.L.
 
 ceo_quote: Ein wörtliches Zitat des CEO oder CFO aus dem Bericht, das etwas Aussagekräftiges zur Lage oder Strategie sagt (keine reine Floskel). text_original muss Zeichen für Zeichen im Bericht stehen, ohne Auslassungen und ohne Änderungen. text_de ist eine sinngetreue deutsche Übersetzung. Findest du kein passendes Zitat, lass das Feld weg.
 
