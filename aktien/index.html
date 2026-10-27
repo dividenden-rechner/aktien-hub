@@ -28,7 +28,7 @@ h2{font-size:15px;margin:26px 0 10px;color:var(--mut);font-weight:600}
 .wlx:hover,.wlx:focus-visible{background:#fbeceb;color:var(--neg)}
 .wlhead{display:flex;flex-wrap:wrap;align-items:baseline;gap:4px 14px;margin:26px 0 10px}.wlhead h2{margin:0;font-size:18px;color:var(--ink)}
 .wlsub{color:var(--mut);font-size:14px}.wlnews{display:inline-flex;align-items:center;gap:6px;font-size:14px;font-weight:600;background:#eef7f1;border-radius:999px;padding:4px 12px;text-decoration:none}.wlsub{flex-basis:100%}
-.wlfoot{color:var(--mut);font-size:13.5px;margin:12px 0 0}.wlfoot .sbtn{margin:0 8px 0 0}
+.wlfoot{display:flex;flex-wrap:wrap;gap:10px;margin:14px 0 0}.wlfoot .sbtn{flex:1 1 220px;margin:0;font-size:15px}
 .wlempty{grid-column:1/-1;border:1px dashed var(--line);border-radius:8px;padding:16px;color:var(--mut)}
 .sr{display:flex;align-items:stretch;border-bottom:1px solid var(--line)}.sr:last-child{border-bottom:0}.sr .it{border-bottom:0;flex:1;min-width:0}
 .wlp{flex:none;width:48px;border:0;border-left:1px solid var(--line);background:none;color:var(--acc);font:inherit;font-size:22px;line-height:1;cursor:pointer}
@@ -181,15 +181,15 @@ svg text{fill:var(--mut);font-size:11px;font-family:inherit}
 <div id="msg" role="status"></div>
 <p><button class="sbtn" style="background:#f0f8f3;margin-top:0" onclick="askKey()">🔑 API-Key ändern</button></p>
 <section id="start">
-  <div class="wlhead"><h2>Watchlist</h2><a class="wlnews" href="../news/"><svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><path d="M5 12a7 7 0 0 1 7 7M5 5a14 14 0 0 1 14 14" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/><circle cx="6" cy="18" r="1.8" fill="currentColor"/></svg> Meldungen zu meiner Watchlist</a><span class="wlsub">Deine Aktien, gespeichert in diesem Browser. Zum Start mit beliebten Dividendenwerten gefüllt.</span></div>
+  <div class="wlhead"><h2>Watchlist</h2></div>
   <div class="tiles" id="tiles"></div>
-  <p class="wlfoot"><button class="sbtn" id="wlreset">Standardliste wiederherstellen</button>Mit ＋ in den Suchvorschlägen oder ☆ auf der Aktienseite fügst du Aktien hinzu, mit × entfernst du sie.</p>
+  <p class="wlfoot"><button class="sbtn" id="wlreset">Standardliste wiederherstellen</button><button class="sbtn" id="xmk">Indizes, Krypto &amp; Forex</button></p>
 </section>
 <section id="hub" hidden></section>
 </main>
 <section style="max-width:1080px;margin:36px auto 0;padding-top:8px;border-top:1px solid #dfe5ea;color:#14202b">
 <h2 style="font-size:20px">So nutzt du den Aktien-Hub</h2>
-<p>Gib oben den Namen oder das Kürzel einer Aktie ein, zum Beispiel Coca-Cola oder SAP. Mit ＋ legst du sie in deine Watchlist; zu den Aktien dort zeigt dir die <a href="../news/" style="color:#1a7a45">News-Seite</a> passende Nachrichten. Im Hub siehst du zu jedem Unternehmen Kennzahlen, Dividendenverlauf, Umsatz, Gewinn und Free Cashflow der letzten Jahre sowie Bewertungs- und Analystendaten. Daraus lassen sich Kennzahlen wie <a href="../grundlagen/dividendenrendite/" style="color:#1a7a45">Dividendenrendite</a> und <a href="../grundlagen/ausschuettungsquote/" style="color:#1a7a45">Ausschüttungsquote</a> einordnen.</p>
+<p>Gib oben den Namen oder das Kürzel einer Aktie ein, zum Beispiel Coca-Cola oder SAP. Mit ＋ legst du sie in deine Watchlist; zu den Aktien dort zeigen dir die <a href="../news/" style="color:#1a7a45">News</a> passende Nachrichten. Im Hub siehst du zu jedem Unternehmen Kennzahlen, Dividendenverlauf, Umsatz, Gewinn und Free Cashflow der letzten Jahre sowie Bewertungs- und Analystendaten. Daraus lassen sich Kennzahlen wie <a href="../grundlagen/dividendenrendite/" style="color:#1a7a45">Dividendenrendite</a> und <a href="../grundlagen/ausschuettungsquote/" style="color:#1a7a45">Ausschüttungsquote</a> einordnen.</p>
 <p>Die Daten stammen von Financial Modeling Prep. Du brauchst dafür einen eigenen API-Key, den du kostenlos dort erstellen kannst. Er wird nur in deinem Browser gespeichert. Der kostenlose Zugang deckt nur eine begrenzte Auswahl überwiegend US-amerikanischer Aktien ab, deutsche und andere europäische Titel sind dort nicht in jedem Fall verfügbar. Alle Angaben ohne Gewähr, keine Anlageberatung.</p>
 <p style="font-size:14px"><a href="../impressum/" style="color:#5d6b78">Impressum</a> · <a href="../datenschutz/" style="color:#5d6b78">Datenschutz</a></p>
 </section>
@@ -865,7 +865,6 @@ function openMarkets(){
   $("xback").onclick=()=>{hub.hidden=true;hub.innerHTML="";$("start").hidden=false};
   xcatShow("oth");
 }
-$("start").insertAdjacentHTML("beforeend",`<div class="xmk"><h2>Weitere Märkte</h2><button class="sbtn" id="xmk" style="margin-top:0">🌐 Indizes, Rohstoffe, Krypto und Forex ansehen</button></div>`);
 $("xmk").onclick=openMarkets;
 
 /* ===== Instagram-Story-Ansicht ===== */
