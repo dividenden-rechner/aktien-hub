@@ -262,13 +262,7 @@ def patch_llms(posts):
 
 def patch_home(posts):
     p = "index.html"; s = open(p, encoding="utf-8").read()
-    block = ""
-    if posts:
-        block = '<section class="home-mag"><h2>Neu im Magazin</h2>\n<div class="cards magcards">\n'
-        for x in posts[:3]:
-            block += (f'<a class="card" href="magazin/{x["slug"]}/"><img class="mcover" src="{x["img"]}" alt="" width="1200" height="675" loading="lazy">'
-                      f'<p class="kicker">{esc(x["category"])} · {de_date(x["dt"])}</p><h3>{esc(x["title"])}</h3><p>{esc(x["description"])}</p></a>\n')
-        block += '</div>\n<p><a href="magazin/">Alle Artikel</a></p></section>\n'
+    block = ""   # Magazin-Teaser stehen auf Startseite und Magazin, nicht auf der News-Seite
     mk = "<!-- magazin-neu -->"
     if mk not in s:
         s = s.replace('<section class="home-more">', mk + "\n" + mk.replace("neu", "ende") + '\n<section class="home-more">', 1)
@@ -300,18 +294,11 @@ def patch_news(posts):
     p = "news/index.html"
     if not os.path.exists(p): return
     s = open(p, encoding="utf-8").read()
-    block = ""
-    if posts:
-        block = '<section class="home-mag"><h2>Neu im Magazin</h2>\n<div class="cards magcards">\n'
-        for x in posts[:3]:
-            block += (f'<a class="card" href="../magazin/{x["slug"]}/"><img class="mcover" src="../{x["img"]}" alt="" width="1200" height="675" loading="lazy">'
-                      f'<p class="kicker">{esc(x["category"])} · {de_date(x["dt"])}</p><h3>{esc(x["title"])}</h3><p>{esc(x["description"])}</p></a>\n')
-        block += '</div>\n<p><a href="../magazin/">Alle Artikel</a></p></section>\n'
+    block = ""   # Magazin-Teaser stehen auf Startseite und Magazin, nicht auf der News-Seite
     mk = "<!-- magazin-neu -->"
     if mk not in s:
         s = s.replace('<div id="days"', mk + "\n" + mk.replace("neu", "ende") + '\n<div id="days"', 1)
     s = re.sub(r"<!-- magazin-neu -->.*?<!-- magazin-ende -->", lambda m: mk + "\n" + block + "<!-- magazin-ende -->", s, flags=re.S)
-    if 'id="mag-css"' not in s: s = s.replace("</head>", MAGCSS + "\n</head>", 1)
     open(p, "w", encoding="utf-8").write(s)
 
 def patch_nav_everywhere(has_posts):

@@ -44,7 +44,7 @@ img.nk-logo{background:#fff}
 .nk-rss svg{width:12px;height:12px;fill:none;stroke:#475569;stroke-width:2.4;stroke-linecap:round}
 .nk-m{flex:1;min-width:0}.nk-top{display:flex;justify-content:space-between;gap:8px;font-weight:600}
 .nk-top a{color:inherit;text-decoration:none}.nk-top a:hover{text-decoration:underline}
-.nk-mag{display:inline-block;margin:2px 0 4px;font-size:.85rem;font-weight:600;color:#1a7a43}.nk-t{color:#64748b;font-weight:400;font-size:.85rem;white-space:nowrap}
+.nk-sc{display:inline-flex;border:1px solid #cfd8d3;border-radius:999px;overflow:hidden;margin-right:8px}.nk-sc button{font:inherit;font-size:.9rem;font-weight:600;padding:8px 14px;border:0;background:#fff;color:#14202b;cursor:pointer}.nk-sc button.on{background:#98e6b3}.nk-mag{display:inline-block;margin:2px 0 4px;font-size:.85rem;font-weight:600;color:#1a7a43}.nk-t{color:#64748b;font-weight:400;font-size:.85rem;white-space:nowrap}
 .nk-h{color:#334155;margin-top:2px}.nk-h b{color:#64748b;font-weight:400}
 .nk-body{display:none;padding:0 14px 16px 70px;color:#1e293b}
 .nk-item.open .nk-body{display:block}.nk-body p{margin:.5em 0}
@@ -62,18 +62,11 @@ img.nk-logo{background:#fff}
 <main class="wrap"><article>
 <nav class="crumbs" aria-label="Brotkrumen"><a href="../">Start</a> › <span aria-current="page">News-Kalender</span></nav>
 <h1>News-Kalender</h1>
-<p class="lead">Die neuesten Pressemitteilungen großer Dividendenunternehmen, direkt aus ihren Investor-Relations-Feeds. Tippe auf einen Tag, um die Meldungen zu filtern, und auf eine Meldung, um den Text zu lesen. Logo oder Name führen zur Aktie.</p>
+<p class="lead">Aktuelle Unternehmensmeldungen zu deinen Aktien, direkt aus den Investor-Relations-Feeds. Tippe auf einen Tag, um zu filtern, und auf eine Meldung, um den Text zu lesen. Logo oder Name führen zur Aktie.</p>
 <!-- magazin-neu -->
-<section class="home-mag"><h2>Neu im Magazin</h2>
-<div class="cards magcards">
-<a class="card" href="../magazin/boeing-q3-ergebnis-2026/"><img class="mcover" src="../assets/magazin/boeing-q3-ergebnis-2026-foto.jpg" alt="" width="1200" height="675" loading="lazy"><p class="kicker">Quartalszahlen · 27. Oktober 2026</p><h3>Boeing steigert Umsatz im dritten Quartal 2026</h3><p>Boeing verzeichnet im dritten Quartal 2026 einen Umsatz von 24,2 Milliarden US-Dollar, schreibt jedoch operativ weiterhin rote Zahlen.</p></a>
-<a class="card" href="../magazin/coca-cola-q3-2026-ergebnisse/"><img class="mcover" src="../assets/magazin/coca-cola-q3-2026-ergebnisse-foto.jpg" alt="" width="1200" height="675" loading="lazy"><p class="kicker">Quartalszahlen · 27. Oktober 2026</p><h3>Coca-Cola im 3. Quartal 2026: Umsatz und Ergebnis legen zu</h3><p>The Coca-Cola Company legt die Zahlen für das dritte Quartal 2026 vor. Der Nettoumsatz und das Konzernergebnis steigen im Vergleich zum Vorjahr.</p></a>
-<a class="card" href="../magazin/hsbc-q3-2026/"><img class="mcover" src="../assets/magazin/hsbc-q3-2026-foto.jpg" alt="" width="1200" height="675" loading="lazy"><p class="kicker">Quartalszahlen · 27. Oktober 2026</p><h3>HSBC mit starkem Q3 2026: Zinsgewinne treiben Vorsteuerergebnis</h3><p>HSBC steigert den Vorsteuergewinn im dritten Quartal 2026 auf 9,6 Mrd. USD. Neben einer Dividende von 0,10 USD folgt ein neuer Aktienrückkauf.</p></a>
-</div>
-<p><a href="../magazin/">Alle Artikel</a></p></section>
 <!-- magazin-ende -->
 <div id="days" class="nk-days" aria-label="Tage"></div>
-<div class="nk-bar"><input id="q" type="search" placeholder="Firma oder Stichwort suchen" aria-label="Suchen"><button id="clear" type="button" hidden>Filter zurücksetzen</button><span id="upd" class="nk-t"></span></div>
+<div class="nk-bar"><div class="nk-sc" role="group" aria-label="Auswahl"><button type="button" id="sc-mine">Meine Werte</button><button type="button" id="sc-all">Alle</button></div><input id="q" type="search" placeholder="Firma oder Stichwort suchen" aria-label="Suchen"><button id="clear" type="button" hidden>Filter zurücksetzen</button><span id="upd" class="nk-t"></span></div>
 <h2>Neueste Meldungen</h2>
 <div id="list" class="nk-list" aria-live="polite"></div>
 <p id="errs" class="nk-err"></p>
@@ -91,14 +84,16 @@ img.nk-logo{background:#fff}
 </div></footer>
 <script>
 (function(){
-var DAYS=14,all=[],sel=null,q="",errs=[];
+var DAYS=14,all=[],sel=null,q="",errs=[],scope="mine";
+function wlSet(){var o={};try{(JSON.parse(localStorage.getItem("wl")||"[]")||[]).forEach(function(x){if(x&&x.s)o[String(x.s).toUpperCase().split(".")[0]]=1})}catch(e){}return o}
+function vis(){if(scope!=="mine")return all;var w=wlSet();if(!Object.keys(w).length)return all;return all.filter(function(n){return w[String(n.sym||"").toUpperCase().split(".")[0]]})}
 var el=function(i){return document.getElementById(i)};
 function esc(s){return String(s==null?"":s).replace(/[&<>"']/g,function(c){return{"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]})}
 function key(d){var x=new Date(d);return x.getFullYear()+"-"+("0"+(x.getMonth()+1)).slice(-2)+"-"+("0"+x.getDate()).slice(-2)}
 function ago(d){var m=Math.round((Date.now()-new Date(d))/6e4);if(m<1)return"gerade eben";if(m<60)return"vor "+m+" Min.";var h=Math.round(m/60);if(h<24)return"vor "+h+" Std.";var t=Math.round(h/24);return t===1?"gestern":"vor "+t+" Tagen"}
 function logo(sym,name,cls){return window.HubLogos?HubLogos.img(cls||"nk-logo",sym,"",name):'<span class="'+(cls||"nk-logo")+'">'+esc((name||sym||"?").charAt(0))+"</span>"}
 function renderDays(){
-  var by={};all.forEach(function(n){(by[key(n.date)]=by[key(n.date)]||[]).push(n)});
+  var by={};vis().forEach(function(n){(by[key(n.date)]=by[key(n.date)]||[]).push(n)});
   var h="",wd=["So","Mo","Di","Mi","Do","Fr","Sa"];
   for(var i=0;i<DAYS;i++){var dd=new Date();dd.setDate(dd.getDate()-i);var k=key(dd),L=by[k]||[];
     var syms=[],seen={};L.forEach(function(n){if(!seen[n.sym]){seen[n.sym]=1;syms.push(n)}});
@@ -107,10 +102,10 @@ function renderDays(){
   el("days").innerHTML=h}
 function paras(t){return String(t||"").split(/\n+/).filter(Boolean).map(function(p){return"<p>"+esc(p)+"</p>"}).join("")}
 function renderList(){
-  var L=all.filter(function(n){return(!sel||key(n.date)===sel)&&(!q||(n.name+" "+n.sym+" "+n.title).toLowerCase().indexOf(q)>=0)}).slice(0,200);
+  var L=vis().filter(function(n){return(!sel||key(n.date)===sel)&&(!q||(n.name+" "+n.sym+" "+n.title).toLowerCase().indexOf(q)>=0)}).slice(0,200);
   var rss='<span class="nk-rss"><svg viewBox="0 0 24 24"><path d="M5 12a7 7 0 0 1 7 7M5 5a14 14 0 0 1 14 14"/><circle cx="6" cy="18" r="1.5"/></svg></span>';
-  if(!L.length){el("list").innerHTML='<div class="nk-empty">'+(all.length?"Keine Meldungen für diese Auswahl.":"Noch keine Meldungen geladen. Die Daten kommen aus <code>data/news.json</code>, die der GitHub-Workflow „News aktualisieren“ befüllt (siehe Hinweis unten).")+"</div>";return}
-  el("list").innerHTML=L.map(function(n,i){return'<div class="nk-item" data-i="'+i+'"><button type="button" class="nk-row" aria-expanded="false"><span class="nk-ic">'+logo(n.sym,n.name)+rss+'</span><span class="nk-m"><span class="nk-top"><span><a href="../aktien/?s='+encodeURIComponent(n.sym)+'" class="nk-nm">'+esc(n.name)+'</a></span><span class="nk-t">'+ago(n.date)+'</span></span><span class="nk-h"><b>'+(n.quelle==="SEC"?"SEC "+esc(n.form||"8-K")+(n.kat?" · "+esc(n.kat):""):"Pressemitteilung")+' – </b>'+esc(n.title)+'</span></span></button><div class="nk-body">'+(n.text?paras(n.text):"<p>Der Feed liefert für diese Meldung keinen Text.</p>")+'<p class="nk-src">'+new Date(n.date).toLocaleString("de-DE",{dateStyle:"medium",timeStyle:"short"})+(n.link?' · <a href="'+esc(n.link)+'" target="_blank" rel="noopener nofollow">Originalmeldung öffnen</a>':"")+"</p></div></div>"}).join("");
+  if(!L.length){el("list").innerHTML='<div class="nk-empty">'+(all.length?(scope==="mine"?"Keine Meldungen zu deinen Werten. Mit „Alle“ siehst du alle Meldungen.":"Keine Meldungen für diese Auswahl."):"Noch keine Meldungen geladen. Die Daten kommen aus <code>data/news.json</code>, die der GitHub-Workflow „News aktualisieren“ befüllt (siehe Hinweis unten).")+"</div>";return}
+  el("list").innerHTML=L.map(function(n,i){return'<div class="nk-item" data-i="'+i+'"><button type="button" class="nk-row" aria-expanded="false"><span class="nk-ic">'+logo(n.sym,n.name)+rss+'</span><span class="nk-m"><span class="nk-top"><span><a href="../aktien/?s='+encodeURIComponent(n.sym)+'" class="nk-nm">'+esc(n.name)+'</a></span><span class="nk-t">'+ago(n.date)+'</span></span><span class="nk-h"><b>'+(n.quelle==="SEC"?"SEC "+esc(n.form||"8-K")+(n.kat?" · "+esc(n.kat):""):"Unternehmensmeldung")+' – </b>'+esc(n.title)+'</span></span></button><div class="nk-body">'+(n.text?paras(n.text):"<p>Der Feed liefert für diese Meldung keinen Text.</p>")+'<p class="nk-src">'+new Date(n.date).toLocaleString("de-DE",{dateStyle:"medium",timeStyle:"short"})+(n.link?' · <a href="'+esc(n.link)+'" target="_blank" rel="noopener nofollow">Originalmeldung öffnen</a>':"")+"</p></div></div>"}).join("");
   addMag(L);
   el("list").onclick=function(e){if(e.target.closest("a"))return;var r=e.target.closest(".nk-row");if(!r)return;var it=r.parentNode,o=it.classList.toggle("open");r.setAttribute("aria-expanded",o)}}
 var MAG=[];
@@ -126,6 +121,8 @@ function addMag(L){
     if(best===null)return;
     var it=items[best];if(!it||it.querySelector(".nk-mag"))return;
     var top=it.querySelector(".nk-top");if(top)top.insertAdjacentHTML("afterend",'<a class="nk-mag" href="../magazin/'+a.slug+'/">Unsere Einordnung im Magazin →</a>')})}
+function setScope(v){scope=v;el("sc-mine").className=v==="mine"?"on":"";el("sc-all").className=v==="all"?"on":"";render()}
+el("sc-mine").onclick=function(){setScope("mine")};el("sc-all").onclick=function(){setScope("all")};
 function render(){renderDays();renderList();var c=el("clear");c.hidden=!(sel||q)}
 el("days").onclick=function(e){var b=e.target.closest(".nk-day");if(!b)return;sel=sel===b.dataset.k?null:b.dataset.k;render()};
 el("q").oninput=function(){q=this.value.trim().toLowerCase();renderList();el("clear").hidden=!(sel||q)};
@@ -135,7 +132,7 @@ fetch("../data/news.json?v="+Math.floor(Date.now()/6e5)).then(function(r){return
   all=(j.items||[]).sort(function(a,b){return new Date(b.date)-new Date(a.date)});errs=j.errors||[];
   el("upd").textContent=j.updated?"Stand: "+new Date(j.updated).toLocaleString("de-DE",{dateStyle:"medium",timeStyle:"short"})+" Uhr":"Noch nicht aktualisiert";
   if(errs.length)el("errs").innerHTML="Ohne Meldungen: "+errs.map(function(e){return esc(e.sym)}).join(", ")+".";
-  render()}).catch(function(){all=[];el("upd").textContent="Daten nicht ladbar";render()});
+  setScope(Object.keys(wlSet()).length?"mine":"all")}).catch(function(){all=[];el("upd").textContent="Daten nicht ladbar";render()});
 })();
 </script>
 </body>
