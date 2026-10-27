@@ -11,7 +11,6 @@ image_credit: "Foto: mr_t_77 / Wikimedia Commons, CC BY-SA 2.0"
 image_source: https://commons.wikimedia.org/wiki/File:Boeing_Virginia_Headquarters_(cropped_and_brighter).jpg
 logo_symbol: BA
 logo_domain: boeing.com
-draft: true
 ---
 <!-- PRÜFEN: Aufmacherfoto ist automatisch von Wikimedia Commons gewaehlt: bitte pruefen, ob es zum Artikel passt (sonst image-Zeilen entfernen, dann entsteht ein Titelbild automatisch). -->
 <!-- PRÜFEN: Diese Werte wurden im Berichtstext nicht gefunden: Grafik Commercial Airplanes Umsatz: 10720; Grafik Defense, Space & Security Umsatz: 7935; Grafik Global Services Umsatz: 5574; Grafik Commercial Airplanes Ergebnis: -697; Grafik Global Services Ergebnis: 1019 -->
