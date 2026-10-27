@@ -791,7 +791,7 @@ def draw_graphic(out, path):
     im = Image.new("RGB", (W, H), "#ffffff"); d = ImageDraw.Draw(im)
     green, dark, grey = "#2f9e5b", "#14202b", "#5d6b78"
     d.rectangle([0, 0, W, 16], fill=green)
-    d.text((70, 52), f"{out['company']} · {out['period']}".upper(), font=font(28, True), fill=green)
+    d.text((70, 52), f"{out['company']} · {out.get('period') or out.get('report_type') or ''}".strip(" ·").upper(), font=font(28, True), fill=green)
     kp = (out.get("kpis") or [])[:4]
     n = max(1, len(kp)); gap = 24; cw = (W - 140 - gap * (n - 1)) // n
     for i, k in enumerate(kp):
@@ -833,7 +833,7 @@ def draw_graphic(out, path):
         for ln in wrap(d, b["label"], lf, bw - 10)[:2]:
             d.text(((x0 + x1) / 2 - tw(d, ln, lf) / 2, ly), ln, font=lf, fill=grey); ly += 26
     pg = ch.get("page") or 0
-    d.text((70, H - 46), f"Quelle: {out['company']}, Pressemitteilung {out['period']}" + (f", S. {pg}" if pg else "") + "  ·  dividenden-rechner.de", font=font(22), fill=grey)
+    d.text((70, H - 46), f"Quelle: {out['company']}, Pressemitteilung {out.get('period') or ''}".strip() + (f", S. {pg}" if pg else "") + "  ·  dividenden-rechner.de", font=font(22), fill=grey)
     im.save(path, "PNG", optimize=True)
 
 
@@ -843,6 +843,8 @@ def q(v):
 
 
 def build(out, text, src_note, force=False, calc_rows=None, fmp_used=False, figs=None, src=None):
+    out["period"] = out.get("period") or ""
+    out["report_date"] = out.get("report_date") or date.today().isoformat()
     slug = re.sub(r"[^a-z0-9]+", "-", out["article"]["slug"].lower()).strip("-") or "bericht"
     mdpath = os.path.join(ROOT, "content", "magazin", f"{slug}.md")
     if os.path.exists(mdpath) and not force:
