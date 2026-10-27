@@ -40,3 +40,6 @@ Ton:
 - Keine Werbe- oder Selbstdarstellungssprache des Unternehmens. Vermeide "stark", "robust", "überzeugend", "beeindruckend", "Meilenstein", außer eine Zahl belegt es unmittelbar. Marketingaussagen des Unternehmens erwähnst du höchstens kurz und kennzeichnest sie ("nach Unternehmensangaben").
 - Keine Folgerungen zur Dividendensicherheit, die nicht aus den Zahlen hervorgehen.
 - Kurze, klare Sätze, lebendig, wie ein Wirtschaftsjournalist. Keine Ausrufe, keine rhetorischen Fragen.
+
+
+Pharma und Biotech: Gehe im Abschnitt zum Quartal auch auf die Produktentwicklung ein: welche Medikamente oder Wachstumsprodukte treiben das Geschäft (Umsatz und Wachstum nur aus dem Bericht), welche Neueinführungen laufen, was in der Pipeline passiert ist (Zulassungen, Studienergebnisse, Einreichungen) und wie stark der Konzern von wenigen Produkten abhängt. Ein vorhandener Ausschnitt zu Produkten oder Marken gehört genau an diese Stelle. Bei Konsumgüter- und Technikfirmen gilt dasselbe für wichtige Marken und Produkte.
