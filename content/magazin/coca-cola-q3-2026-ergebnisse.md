@@ -11,7 +11,7 @@ image_credit: "Foto: Luis García ( Zaqarbal ) / Wikimedia Commons, CC BY-SA 3.0
 image_source: https://commons.wikimedia.org/wiki/File:Coca-Cola_offices_(Madrid,_Spain)_04.jpg
 logo_symbol: KO
 logo_domain: coca-colacompany.com
-draft: true
+
 ---
 <!-- PRÜFEN: Aufmacherfoto ist automatisch von Wikimedia Commons gewaehlt: bitte pruefen, ob es zum Artikel passt (sonst image-Zeilen entfernen, dann entsteht ein Titelbild automatisch). -->
 <!-- PRÜFEN: Diese Werte wurden im Berichtstext nicht gefunden: Grafik Netto-Umsatz: 13380; Grafik Bruttogewinn: 8450; Grafik Operatives Ergebnis: 4465; Grafik Konzernergebnis: 4056 -->
