@@ -81,8 +81,8 @@ EARNINGS = ("Quartalszahlen", "Halbjahreszahlen", "Jahresbericht")
 FIG_SCHEMA = {"type": "OBJECT", "properties": {
     "figures": SCHEMA["properties"]["figures"], "chart": SCHEMA["properties"]["chart"]}}
 FIG_PROMPT = """Du suchst im angehaengten Ergebnisdokument Material fuer einen Artikel. Gib zurueck:
-1. figures: zwei bis vier Stellen (Seite ab 1, Bereich [ymin, xmin, ymax, xmax] mit Werten 0 bis 1000, eng um die Tabelle oder Grafik inklusive Ueberschrift, Einheit und Fussnoten). Bevorzugt: Umsatz nach Region oder Segment, Umsatz der wichtigsten Produkte, Marken oder Medikamente, Kapitalflussrechnung, Verschuldung und Bilanz, Prognosetabelle, Portfolio- oder NAV-Tabellen bei BDCs. Keine Deckblaetter, keine Textseiten, keine Rechtshinweise. title kurz auf Deutsch, shows ein Satz.
-2. chart: eine Datenreihe mit 4 bis 6 Balken aus EINER Tabelle des Dokuments (zum Beispiel Umsatz je Produkt, Region oder Segment, oder Wachstum in Prozent). Werte wortgetreu aus dem Dokument, title und Balkenbeschriftungen auf Deutsch, unit angeben, page = Seite.
+1. figures: zwei bis vier Stellen (Seite ab 1, Bereich [ymin, xmin, ymax, xmax] mit Werten 0 bis 1000, eng um die Tabelle oder Grafik inklusive Ueberschrift, Einheit und Fussnoten). Waehle je nach Branche das, was die Lage am besten zeigt: Gewinn- und Verlustrechnung mit Umsatz, Betriebsergebnis und Nettogewinn bzw. -verlust; Umsatz oder Ertrag nach Region, Segment oder Geschaeftsbereich; Umsatz der wichtigsten Produkte, Marken oder Medikamente; bei Banken und Versicherern Zinsueberschuss, Provisionen, Kreditrisikovorsorge, Kapitalquoten (CET1); bei BDCs und REITs NAV, Net Investment Income, FFO, Portfolio und Ausfaelle; Kapitalflussrechnung; Verschuldung, Bilanz und Faelligkeiten; Prognose. Keine Deckblaetter, keine Textseiten, keine Rechtshinweise. title kurz auf Deutsch, shows ein Satz.
+2. chart: eine Datenreihe mit 3 bis 6 Balken aus EINER Tabelle des Dokuments, die die Geschichte der Periode zeigt, zum Beispiel Umsatz, Betriebsergebnis und Nettogewinn (auch Verluste als negative Werte), oder Ertrag je Region, Segment oder Produkt, oder Wachstum in Prozent. Werte wortgetreu aus dem Dokument, title und Balkenbeschriftungen auf Deutsch, unit angeben, page = Seite.
 Es gibt in nahezu jedem Ergebnisdokument solche Tabellen: liefere sie."""
 
 
@@ -808,7 +808,10 @@ def draw_graphic(out, path):
         d.text((x + 18, 190), vs, font=vf, fill=dark)
         if k.get("change"):
             d.text((x + 18, 244), k["change"] + " ggü. Vorjahr", font=font(21, True), fill=green if not k["change"].strip().startswith(("-", "−", "–")) else "#c0392b")
-    ch = out["chart"]
+    ch = out.get("chart") or {}
+    if not ch.get("bars"):
+        d.text((70, 312), f"Quelle: {out['company']}, {out.get('report_type') or 'Bericht'} {out.get('period') or ''}  ·  dividenden-rechner.de", font=font(20), fill=grey)
+        im.crop((0, 0, W, 360)).save(path, "PNG", optimize=True); return
     d.text((70, 330), ch["title"], font=font(30, True), fill=dark)
     d.text((70, 370), ch["unit"], font=font(22), fill=grey)
     bars = ch["bars"][:8]
@@ -848,6 +851,7 @@ def build(out, text, src_note, force=False, calc_rows=None, fmp_used=False, figs
     os.makedirs(os.path.dirname(gpath), exist_ok=True)
     has_chart = bool((out.get("chart") or {}).get("bars"))
     cf_ = out.get("cashflow") or {}
+    has_tiles = bool(out.get("kpis")) and out.get("report_type") in EARNINGS
     if not has_chart and out.get("kpis") and cf_.get("operating_cash_flow") and cf_.get("capex") is not None:
         bars = [{"label": "Operativer Cashflow", "value": cf_["operating_cash_flow"]},
                 {"label": "Investitionen", "value": cf_["capex"]},
@@ -857,8 +861,9 @@ def build(out, text, src_note, force=False, calc_rows=None, fmp_used=False, figs
         out["chart"] = {"title": f"Cashflow und Dividenden, {cf_.get('period_label') or 'Berichtszeitraum'}", "unit": cf_.get("unit") or "",
                         "bars": bars, "page": 0}
         has_chart = True
-    if has_chart:
+    if has_chart or has_tiles:
         draw_graphic(out, gpath)
+        has_chart = True
     bad = check_numbers(out, text)
     rtype = out.get("report_type") or "Quartalszahlen"
     doc = f"{rtype} {out.get('period') or ''}".strip()
@@ -894,7 +899,7 @@ def build(out, text, src_note, force=False, calc_rows=None, fmp_used=False, figs
         hinweise.append("Berichtstext nicht lesbar, Zahlen nicht automatisch geprueft.")
     if src_note:
         hinweise.append("Quelle: " + src_note)
-    chart_alt = f"{out['chart']['title']} ({out['company']}, {doc})" if has_chart else ""
+    chart_alt = (f"{(out.get('chart') or {}).get('title') or 'Kennzahlen'} ({out['company']}, {doc})") if has_chart else ""
     body_md = a["body_markdown"].strip()
     used = []
     for fid, f in (figs or {}).items():
