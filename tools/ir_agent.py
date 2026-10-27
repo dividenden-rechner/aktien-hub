@@ -121,13 +121,24 @@ def pdf_text(path):
 GOOD_MODEL = None
 
 
+MODELS = None
+
+
+def model_order(key):
+    """Bewaehrtes Modell zuerst, danach die anderen (jedes Modell hat ein eigenes Kontingent)."""
+    global MODELS
+    if MODELS is None:
+        MODELS = candidate_models(key)
+    return ([GOOD_MODEL] if GOOD_MODEL else []) + [m for m in MODELS if m != GOOD_MODEL]
+
+
 def _generate(parts, schema, key):
     """Ruft Gemini auf (mit Wiederholung bei Ueberlastung, Modellwechsel bei Fehlern)."""
     global GOOD_MODEL
     body = {"contents": [{"parts": parts}],
             "generationConfig": {"temperature": 0.3, "responseMimeType": "application/json", "responseSchema": schema}}
     last = ""
-    for model in ([GOOD_MODEL] if GOOD_MODEL else candidate_models(key)):
+    for model in model_order(key):
         url = f"https://generativelanguage.googleapis.com/v1beta/models/{model}:generateContent"
         res = None
         for attempt in range(3):
@@ -137,10 +148,14 @@ def _generate(parts, schema, key):
                     res = json.load(r)
                 break
             except urllib.error.HTTPError as e:
-                last = f"{model}: Fehler {e.code}: {e.read().decode()[:300]}"
+                eb = e.read().decode()
+                last = f"{model}: Fehler {e.code}: {eb[:300]}"
                 print("Modell-Problem ->", last)
+                if e.code == 429 and ("PerDay" in eb or "per day" in eb.lower()):
+                    print("Tageskontingent dieses Modells aufgebraucht, naechstes Modell.")
+                    break
                 if e.code in (429, 500, 502, 503, 504) and attempt < 2:
-                    time.sleep(25 * (attempt + 1)); continue
+                    time.sleep((45 if e.code == 429 else 25) * (attempt + 1)); continue
                 break
             except Exception as e:
                 last = f"{model}: {e}"; print("Modell-Problem ->", last)
@@ -155,6 +170,9 @@ def _generate(parts, schema, key):
         except Exception:
             last = f"{model}: unerwartete Antwort " + json.dumps(res)[:300]
     fail("Kein Gemini-Modell hat funktioniert. Letzter Fehler: " + last)
+
+
+RESEARCH_OFF = False
 
 
 def research(out, key):
@@ -177,7 +195,10 @@ def research(out, key):
               "5. Schulden: Fälligkeitsprofil und Refinanzierung, Ratings. "
               "Nenne zu jeder Zahl Jahr oder Quartal. Erfinde nichts; was du nicht findest, lässt du weg.")
     body = {"contents": [{"parts": [{"text": prompt}]}], "tools": [{"google_search": {}}], "generationConfig": {"temperature": 0.2}}
-    for model in ([GOOD_MODEL] if GOOD_MODEL else candidate_models(key))[:3]:
+    global RESEARCH_OFF
+    if RESEARCH_OFF:
+        return "", []
+    for model in model_order(key)[:2]:
         url = f"https://generativelanguage.googleapis.com/v1beta/models/{model}:generateContent"
         try:
             req = urllib.request.Request(url, data=json.dumps(body).encode(), headers={"Content-Type": "application/json", "x-goog-api-key": key})
@@ -194,7 +215,9 @@ def research(out, key):
                 return text, src[:8]
         except urllib.error.HTTPError as e:
             print("Recherche-Problem ->", model, e.code, e.read().decode()[:200])
-            if e.code in (400, 403, 404):
+            if e.code in (400, 403, 404, 429):
+                if e.code == 429:
+                    RESEARCH_OFF = True; break
                 continue
             time.sleep(20)
         except Exception as e:
@@ -1027,7 +1050,7 @@ def main():
         facts, calc_rows = derive_report(out)
     else:
         out = call_gemini(src, read_prompt("ir_prompt.md"))
-        if out.get("report_type") in EARNINGS and src["kind"] == "pdf":
+        if out.get("report_type") in EARNINGS and src["kind"] == "pdf" and not (out.get("figures") and (out.get("chart") or {}).get("bars")):
             try:
                 extra = _generate([doc_part(src), {"text": FIG_PROMPT + f"\n\nUnternehmen: {out.get('company')}, Branche: {out.get('industry') or 'unbekannt'}."}], FIG_SCHEMA, api_key())
                 if extra.get("figures") and not out.get("figures"):
