@@ -867,6 +867,19 @@ def main():
         facts, calc_rows = derive_report(out)
     else:
         out = call_gemini(src, read_prompt("ir_prompt.md"))
+        if out.get("report_type") in ("Quartalszahlen", "Halbjahreszahlen", "Jahresbericht") and not (out.get("chart") or {}).get("bars") \
+                and not out.get("figures"):
+            print("::notice title=IR-Agent::Weder Diagramm noch Ausschnitte erkannt, zweiter Versuch.")
+            try:
+                extra = call_gemini(src, read_prompt("ir_prompt.md") + "\n\nNACHBESSERUNG (Pflicht): Im ersten Durchlauf fehlten chart und figures. "
+                                    "Liefere jetzt chart (4 bis 6 Balken aus EINER Tabelle des Dokuments, zum Beispiel Umsatz oder operatives Ergebnis nach Segment, Region oder Quartal) "
+                                    "und mindestens zwei figures (Seite und Bereich der Kapitalflussrechnung, der Segmenttabelle, der Prognose oder der Bilanz), "
+                                    "falls das Dokument solche Tabellen enthaelt. Alle anderen Felder wie im ersten Durchlauf.")
+                for k in ("chart", "figures", "cashflow", "balance"):
+                    if extra.get(k) and not out.get(k):
+                        out[k] = extra[k]
+            except SystemExit:
+                print("::notice title=IR-Agent::Zweiter Versuch fehlgeschlagen, weiter ohne.")
         facts, calc_rows = derive_report(out)
         have_rep = bool(calc_rows)
         bf, br = derive_balance(out)
@@ -894,6 +907,7 @@ def main():
                 tmp = f"/tmp/figs/{fid}.png"
                 if render_figure(src["path"], fg, tmp):
                     figs[fid] = {"tmp": tmp, "title": fg.get("title") or "Auszug", "page": fg.get("page"), "shows": fg.get("shows") or ""}
+        print(f"::notice title=IR-Agent::Ausschnitte: {len(figs)} von {len(out.get('figures') or [])} gerendert, Diagramm: {'ja' if (out.get('chart') or {}).get('bars') else 'nein'}, Quelle: {src['kind']}")
         if figs:
             prompt2 += "\n\nVERFUEGBARE AUSSCHNITTE AUS DEM BERICHT (Bilder; setze hoechstens drei davon ein):\n" + "\n".join(
                 f"- {fid}: {f['title']} | {f['shows']}" for fid, f in figs.items())
