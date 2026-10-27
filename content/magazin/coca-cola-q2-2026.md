@@ -2,8 +2,8 @@
 title: "Coca-Cola hebt Jahresprognose nach solidem zweiten Quartal an"
 description: "Coca-Cola steigert Umsatz und bereinigten Gewinn im zweiten Quartal 2026 und erhöht die Jahresziele für Free Cashflow und Gewinn je Aktie."
 date: 2026-10-26 08:00
-author: "Kilian Treß"
-author_bio: "Kilian Treß betreibt dividenden-rechner.de und schreibt dort über Dividendenaktien, Kennzahlen und Steuerthemen für Privatanleger. Die Rechner und Auswertungen auf der Seite baut er selbst."
+author: "Redaktions-Team Dividenden-Rechner.de"
+author_bio: "Das Redaktions-Team von Dividenden-Rechner.de schreibt über Dividendenaktien, Kennzahlen und Steuerthemen für Privatanleger. Die Rechner und Auswertungen auf der Seite entstehen im eigenen Haus."
 category: Zahlen
 image: assets/magazin/coca-cola-q2-2026-foto.jpg
 image_alt: "Foto zu The Coca-Cola Company: Camion Coca-Cola (le tracteur est de marque Peterbilt) devant le 'World of Coca-Cola' à Atlanta à l'approche de Noël, avec, au fond à gauche, le siège mondial de Coca-Cola."

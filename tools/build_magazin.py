@@ -72,7 +72,7 @@ def nav_html(depth, cur, with_mag=True):
 def footer_html(depth):
     p = "../" * depth
     l = "".join(f'<a href="{p}{u}">{n}</a>' for k, u, n in NAV if k != "earnings")
-    return (f'<footer class="site-footer"><div class="wrap">\n<div class="cols">\n{l}\n<a href="{p}impressum/">Impressum</a><a href="{p}datenschutz/">Datenschutz</a>\n</div>\n'
+    return (f'<footer class="site-footer"><div class="wrap">\n<div class="cols">\n{l}\n<a href="{p}ueber-uns/">Über uns</a><a href="{p}impressum/">Impressum</a><a href="{p}datenschutz/">Datenschutz</a><a href="https://www.instagram.com/dividenden.rechner" rel="noopener nofollow me" target="_blank">Instagram</a>\n</div>\n'
             '<p>Alle Inhalte dienen der allgemeinen Information und sind keine Anlage-, Steuer- oder Rechtsberatung. Kapitalanlagen sind mit Risiken verbunden.</p>\n</div></footer>')
 
 def head(depth, title, desc, url, og_type, image_url, extra=""):
@@ -175,7 +175,7 @@ def build_post(p, posts):
         {"@context": "https://schema.org", "@type": "NewsArticle", "headline": p["title"][:110], "description": p["description"],
          "inLanguage": "de", "datePublished": iso(p["dt"]), "dateModified": iso(p["upd"]), "mainEntityOfPage": BASE + url,
          "image": [img_url], "articleSection": p["category"], "wordCount": n_words,
-         "author": {"@type": "Person", "name": author, **({"url": p["author_url"]} if p.get("author_url") else {})},
+         "author": {"@type": "Organization" if "redaktion" in author.lower() else "Person", "name": author, **({"url": BASE + "ueber-uns/"} if "redaktion" in author.lower() else {}), **({"url": p["author_url"]} if p.get("author_url") else {})},
          "publisher": {"@type": "Organization", "name": SITE, "logo": {"@type": "ImageObject", "url": BASE + CFG["publisher_logo"]}}}]
     if faq:
         ld.append({"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [
@@ -197,8 +197,8 @@ def build_post(p, posts):
     cap = f'<figcaption>{cred}</figcaption>' if cred else ""
     o += f'<figure class="cover"><img src="{pre}{img}" alt="{esc(alt)}" width="1200" height="675" fetchpriority="high">{cap}</figure>\n'
     o += body + "\n"
-    bio = p.get("author_bio") or "Die Redaktion von dividenden-rechner.de erklärt Dividenden, Kennzahlen und Steuerthemen für Privatanleger in Deutschland."
-    o += f'<aside class="authorbox"><strong>{esc(author)}</strong><p>{esc(bio)}</p></aside>\n'
+    bio = p.get("author_bio") or 'Das Redaktions-Team von Dividenden-Rechner.de schreibt über Dividendenaktien, Kennzahlen und Steuerthemen für Privatanleger. Die Rechner und Auswertungen auf der Seite entstehen im eigenen Haus.'
+    o += f'<aside class="authorbox"><strong>{esc(author)}</strong><p>{esc(bio)} <a href="{pre}ueber-uns/">Über uns</a></p></aside>\n'
     others = [x for x in posts if x["slug"] != slug][:3]
     if others:
         o += '<aside class="related"><h2>Weitere Artikel</h2><ul>\n' + "\n".join(f'<li><a href="{pre}magazin/{x["slug"]}/">{esc(x["title"])}</a></li>' for x in others) + "\n</ul></aside>\n"

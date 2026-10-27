@@ -2,8 +2,8 @@
 title: "Novartis mit höherer Prognose nach Wachstum im dritten Quartal 2026"
 description: "Novartis hebt die Gewinnprognose für das Gesamtjahr 2026 an. Grund sind ein höheres operatives Kernergebnis und stark nachgefragte Wachstums-Medikamente."
 date: 2026-10-27 08:00
-author: "Kilian Treß"
-author_bio: "Kilian Treß betreibt dividenden-rechner.de und schreibt dort über Dividendenaktien, Kennzahlen und Steuerthemen für Privatanleger. Die Rechner und Auswertungen auf der Seite baut er selbst."
+author: "Redaktions-Team Dividenden-Rechner.de"
+author_bio: "Das Redaktions-Team von Dividenden-Rechner.de schreibt über Dividendenaktien, Kennzahlen und Steuerthemen für Privatanleger. Die Rechner und Auswertungen auf der Seite entstehen im eigenen Haus."
 category: Quartalszahlen
 image: assets/magazin/novartis-q3-2026-ergebnisse-foto.jpg
 image_alt: "Foto zu Novartis: Pays : Suisse🇨🇭 Canton : Bâle-Ville Commune : Bâle Quartier : St. Johann Adresse : St. Johanns-Hafen-Weg 5 Fonction : Éducation / Culture Construction : 2021 → 2022 ► Architectes : Blaser Architekten "

@@ -2,8 +2,8 @@
 title: "Brown & Brown wächst im dritten Quartal 2026 bei Umsatz und Gewinn"
 description: "Der Versicherungsmakler Brown & Brown steigert im dritten Quartal 2026 seinen Umsatz auf 1,7 Milliarden US-Dollar und verbucht ein höheres Nettoeinkommen."
 date: 2026-10-26 08:00
-author: "Kilian Treß"
-author_bio: "Kilian Treß betreibt dividenden-rechner.de und schreibt dort über Dividendenaktien, Kennzahlen und Steuerthemen für Privatanleger. Die Rechner und Auswertungen auf der Seite baut er selbst."
+author: "Redaktions-Team Dividenden-Rechner.de"
+author_bio: "Das Redaktions-Team von Dividenden-Rechner.de schreibt über Dividendenaktien, Kennzahlen und Steuerthemen für Privatanleger. Die Rechner und Auswertungen auf der Seite entstehen im eigenen Haus."
 category: Quartalszahlen
 logo_symbol: BRO
 ---
