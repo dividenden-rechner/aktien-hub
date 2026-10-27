@@ -11,7 +11,7 @@ image_credit: "Foto: Luis García ( Zaqarbal ) / Wikimedia Commons, CC BY-SA 3.0
 image_source: https://commons.wikimedia.org/wiki/File:Coca-Cola_offices_(Madrid,_Spain)_04.jpg
 logo_symbol: KO
 logo_domain: coca-colacompany.com
-draft: true
+
 ---
 <!-- PRÜFEN: Aufmacherfoto ist automatisch von Wikimedia Commons gewaehlt: bitte pruefen, ob es zum Artikel passt (sonst image-Zeilen entfernen, dann entsteht ein Titelbild automatisch). -->
 <!-- PRÜFEN: Ausschnitte aus dem Bericht im Text (f1): bitte prüfen, ob Zuschnitt und Platz passen. Unpassende Bildzeilen einfach löschen. -->
