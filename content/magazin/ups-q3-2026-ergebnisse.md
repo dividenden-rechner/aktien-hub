@@ -10,7 +10,7 @@ image_alt: "Foto zu United Parcel Service, Inc.: United Parcel Service package c
 image_credit: "Foto: MobiusDaXter / Wikimedia Commons, CC BY-SA 3.0"
 image_source: https://commons.wikimedia.org/wiki/File:HTS_Systems_UPS_Ground.jpg
 logo_symbol: UPS
-draft: true
+
 ---
 <!-- PRÜFEN: Aufmacherfoto ist automatisch von Wikimedia Commons gewaehlt: bitte pruefen, ob es zum Artikel passt (sonst image-Zeilen entfernen, dann entsteht ein Titelbild automatisch). -->
 <!-- PRÜFEN: Diese Werte wurden im Berichtstext nicht gefunden: Grafik U.S. Domestic Package: 14865; Grafik International Segment: 5007; Grafik Supply Chain Solutions: 2981 -->
