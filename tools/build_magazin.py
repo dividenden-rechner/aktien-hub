@@ -198,7 +198,7 @@ def build_post(p, posts):
     o += f'<figure class="cover"><img src="{pre}{img}" alt="{esc(alt)}" width="1200" height="675" fetchpriority="high">{cap}</figure>\n'
     o += body + "\n"
     bio = p.get("author_bio") or 'Das Redaktions-Team von Dividenden-Rechner.de schreibt über Dividendenaktien, Kennzahlen und Steuerthemen für Privatanleger. Die Rechner und Auswertungen auf der Seite entstehen im eigenen Haus.'
-    o += f'<aside class="authorbox"><strong>{esc(author)}</strong><p>{esc(bio)} <a href="{pre}ueber-uns/">Über uns</a></p></aside>\n'
+    o += f'<aside class="authorbox"><strong>{esc(author)}</strong><p>{esc(bio)}</p><p>Dieser Artikel wurde mithilfe von KI erstellt und vor der Veröffentlichung manuell geprüft. <a href="{pre}ueber-uns/">Mehr über uns</a></p></aside>\n'
     others = [x for x in posts if x["slug"] != slug][:3]
     if others:
         o += '<aside class="related"><h2>Weitere Artikel</h2><ul>\n' + "\n".join(f'<li><a href="{pre}magazin/{x["slug"]}/">{esc(x["title"])}</a></li>' for x in others) + "\n</ul></aside>\n"
