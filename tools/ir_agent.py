@@ -932,23 +932,63 @@ def build(out, text, src_note, force=False, calc_rows=None, fmp_used=False, figs
     return mdpath, gpath, bad, photo
 
 
+def chrome_exe():
+    return next((c for c in ("google-chrome", "google-chrome-stable", "chromium", "chromium-browser") if subprocess.run(["which", c], capture_output=True).returncode == 0), None)
+
+
+CHROME_UA = "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36"
+
+
+def chrome_fetch(url):
+    """Seite mit echtem Chrome laden (umgeht einfache Bot-Sperren, fuehrt JavaScript aus). Gibt (HTML, PDF-Pfad oder None) zurueck."""
+    exe = chrome_exe()
+    if not exe:
+        return "", None
+    base = [exe, "--headless=new", "--no-sandbox", "--disable-gpu", f"--user-agent={CHROME_UA}", "--lang=de-DE", "--virtual-time-budget=15000"]
+    htm = ""
+    try:
+        r = subprocess.run(base + ["--dump-dom", url], capture_output=True, timeout=120)
+        htm = r.stdout.decode("utf-8", "replace")
+    except Exception as e:
+        print("Chrome-Abruf fehlgeschlagen:", e)
+    pdf = None
+    try:
+        subprocess.run(base + ["--no-pdf-header-footer", "--print-to-pdf=/tmp/web_source.pdf", url], capture_output=True, timeout=150)
+        if os.path.exists("/tmp/web_source.pdf") and os.path.getsize("/tmp/web_source.pdf") > 5000:
+            pdf = "/tmp/web_source.pdf"
+    except Exception as e:
+        print("Chrome-PDF fehlgeschlagen:", e)
+    return htm, pdf
+
+
 def web_source(url):
     """Normale Webseite (z. B. Ad-hoc-Meldung, Pressemitteilung) als Quelle: Text lesen und als PDF rendern."""
+    raw = b""
     try:
-        raw = http(url, binary=True, ua="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124 Safari/537.36", timeout=90)
+        raw = http(url, binary=True, ua=CHROME_UA, timeout=90)
     except Exception as e:
-        fail(f"Webseite nicht abrufbar ({e}). Bitte stattdessen eine PDF nutzen.")
+        print(f"Direkter Abruf nicht moeglich ({e}), versuche es mit Chrome.")
     if raw[:5] == b"%PDF-":
         open("/tmp/web_source.pdf", "wb").write(raw)
         return {"kind": "pdf", "path": "/tmp/web_source.pdf", "url": url, "date": ""}
-    h = raw.decode("utf-8", "replace")
-    m = re.search(r"(?is)<main\b.*?</main>|<article\b.*?</article>", h)
-    txt = html_to_text(m.group(0) if m and len(html_to_text(m.group(0))) > 600 else h)
+
+    def extract(h):
+        m = re.search(r"(?is)<main\b.*?</main>|<article\b.*?</article>", h)
+        mt = html_to_text(m.group(0)) if m else ""
+        return mt if len(mt.strip()) > 600 else html_to_text(h)
+    h = raw.decode("utf-8", "replace") if raw else ""
+    txt = extract(h) if h else ""
+    pdf = None
     if len(txt.strip()) < 600:
-        fail("Die Webseite enthaelt kaum Text (vermutlich per JavaScript nachgeladen). Bitte die Seite als PDF speichern und die PDF nutzen.")
+        h, pdf = chrome_fetch(url)
+        txt = extract(h) if h else ""
+    if len(txt.strip()) < 600:
+        fail("Die Webseite ist fuer den Agenten nicht lesbar (Bot-Sperre oder kaum Text). Bitte die Seite im Browser als PDF speichern und die PDF nutzen.")
+    if pdf:
+        print("Webseite mit Chrome geladen und als PDF gerendert (Seiten und Ausschnitte moeglich).")
+        return {"kind": "pdf", "path": pdf, "url": url, "date": "", "pages_real": False}
     base = url if url.endswith("/") else url.rsplit("/", 1)[0] + "/"
     if html_to_pdf(h, base, "/tmp/web_source.pdf"):
-        print("Webseite als PDF gerendert (Seiten und Ausschnitte moeglich).")
         return {"kind": "pdf", "path": "/tmp/web_source.pdf", "url": url, "date": "", "pages_real": False}
     return {"kind": "text", "text": txt, "url": url, "date": "", "pages_real": False}
 
