@@ -41,6 +41,14 @@ SCHEMA = {   # Aufruf 1: Zahlen aus dem Bericht
                                "box": {"type": "ARRAY", "items": {"type": "INTEGER"}, "description": "Bereich auf der Seite als [ymin, xmin, ymax, xmax], Werte 0 bis 1000"},
                                "title": {"type": "STRING", "description": "Kurze deutsche Bildunterschrift"},
                                "shows": {"type": "STRING", "description": "Ein Satz: was zeigt der Ausschnitt und warum ist er relevant"}}}},
+        "industry": {"type": "STRING", "enum": ["Pharma", "Tabak", "Konsumgueter", "Finanzen", "BDC", "REIT", "Telekom", "Technologie", "Energie", "Industrie", "Handel", "Versorger", "Sonstige"],
+                     "description": "Branche des Unternehmens; BDC fuer Business Development Companies"},
+        "details": {"type": "ARRAY", "description": "Fakten aus dem Dokument zur Entwicklung nach Region, Produkt, Segment und zu Branchenkennzahlen, auch Negatives",
+            "items": {"type": "OBJECT", "required": ["topic", "fact", "direction"],
+                "properties": {"topic": {"type": "STRING", "description": "z. B. Region Asien, Produkt Kisqali, NAV je Aktie, Refinanzierung"},
+                               "fact": {"type": "STRING", "description": "Kurzer Satz mit Zahl und Vergleich, wie im Dokument"},
+                               "direction": {"type": "STRING", "enum": ["positiv", "negativ", "neutral"]},
+                               "page": {"type": "INTEGER"}}}},
         "period_end": {"type": "STRING", "description": "Ende des Berichtszeitraums, YYYY-MM-DD"},
         "prior_period_end": {"type": "STRING", "description": "Ende des Vergleichszeitraums im Vorjahr, YYYY-MM-DD"},
         "kpis": {"type": "ARRAY", "items": {"type": "OBJECT",
@@ -119,6 +127,52 @@ def _generate(parts, schema, key):
         except Exception:
             last = f"{model}: unerwartete Antwort " + json.dumps(res)[:300]
     fail("Kein Gemini-Modell hat funktioniert. Letzter Fehler: " + last)
+
+
+def research(out, key):
+    """Hintergrundrecherche mit Google-Suche (Gemini Grounding): Vergangenheit, Makro, Branche. Liefert (Text, [(Titel, URL)])."""
+    ind = out.get("industry") or "Sonstige"
+    spez = {
+        "BDC": "NAV je Aktie im Verlauf der letzten Quartale, Net Investment Income (NII) je Aktie und Deckung der Dividende, PIK-Anteil, Non-Accruals, Kurs im Vergleich zum NAV (Aufschlag/Abschlag), Zinsumfeld (Basiszinsen, Spreads), Fälligkeiten und Refinanzierung der Schulden.",
+        "Tabak": "Entwicklung der klassischen Zigarette (Absatzmengen, Preise) gegenüber neuen Produkten (rauchfreie Produkte, Nikotinbeutel, Heat-not-Burn, E-Zigaretten) mit Wachstum und Verlusten je Produkt, Regulierung, Rechtsstreit.",
+        "Pharma": "Wachstumsprodukte, Patentabläufe, Pipeline und Studienergebnisse, Preisdruck und Gesundheitspolitik, Zölle.",
+        "Konsumgueter": "Entwicklung nach Weltregionen, Mengen und Preise, Rohstoffkosten, Konsumstimmung.",
+        "Finanzen": "Zinsmarge, Kreditausfälle, Kapitalquoten, Zinsumfeld, Regulierung.",
+        "REIT": "FFO/AFFO je Aktie, Belegung, Mietwachstum, Zinsumfeld, Fälligkeiten und Refinanzierung der Schulden, Kurs im Vergleich zum NAV.",
+    }.get(ind, "Entwicklung nach Regionen und Produkten, Branchenlage.")
+    prompt = (f"Recherchiere mit der Websuche Hintergrund für einen Artikel über {out.get('company')} ({out.get('ticker') or ''}), Dokument: {out.get('report_type')} {out.get('period') or ''}, "
+              f"Branche {ind}. Berichte sachlich und kritisch, nicht nur Positives. Liefere knappe Stichpunkte auf Deutsch mit konkreten Zahlen und Zeitangaben zu: "
+              "1. Entwicklung des Unternehmens in den letzten zwei bis drei Jahren und den letzten Quartalen (Umsatz, Gewinn, Dividende, Schulden), damit Trends erkennbar sind. "
+              "2. Dem Makroumfeld, soweit es für dieses Unternehmen relevant ist (Inflation, Zinsen, Währungen, Rohstoffe). "
+              "3. Geopolitischer Lage und Regulierung, soweit relevant (Zölle, Sanktionen, Konflikte). "
+              f"4. Branchenspezifisch: {spez} "
+              "5. Schulden: Fälligkeitsprofil und Refinanzierung, Ratings. "
+              "Nenne zu jeder Zahl Jahr oder Quartal. Erfinde nichts; was du nicht findest, lässt du weg.")
+    body = {"contents": [{"parts": [{"text": prompt}]}], "tools": [{"google_search": {}}], "generationConfig": {"temperature": 0.2}}
+    for model in ([GOOD_MODEL] if GOOD_MODEL else candidate_models(key))[:3]:
+        url = f"https://generativelanguage.googleapis.com/v1beta/models/{model}:generateContent"
+        try:
+            req = urllib.request.Request(url, data=json.dumps(body).encode(), headers={"Content-Type": "application/json", "x-goog-api-key": key})
+            with urllib.request.urlopen(req, timeout=240) as r:
+                res = json.load(r)
+            cand = res["candidates"][0]
+            text = "".join(p.get("text", "") for p in cand["content"]["parts"]).strip()
+            src = []
+            for ch in (cand.get("groundingMetadata", {}).get("groundingChunks") or []):
+                w = ch.get("web") or {}
+                if w.get("uri") and (w.get("title"), w["uri"]) not in src:
+                    src.append((w.get("title") or w["uri"], w["uri"]))
+            if text:
+                return text, src[:8]
+        except urllib.error.HTTPError as e:
+            print("Recherche-Problem ->", model, e.code, e.read().decode()[:200])
+            if e.code in (400, 403, 404):
+                continue
+            time.sleep(20)
+        except Exception as e:
+            print("Recherche-Problem ->", model, e)
+    print("::notice title=IR-Agent::Hintergrundrecherche nicht moeglich (Websuche des Keys nicht verfuegbar), Artikel nur aus dem Dokument.")
+    return "", []
 
 
 def api_key():
@@ -896,9 +950,13 @@ def main():
             else:
                 print("Zitat nicht im Berichtstext gefunden, wird weggelassen.")
                 out["ceo_quote"] = None
-        summary = json.dumps({k: out.get(k) for k in ("company", "ticker", "report_type", "period", "report_date", "period_end", "prior_period_end", "kpis", "chart", "cashflow", "balance")}, ensure_ascii=False)
+        summary = json.dumps({k: out.get(k) for k in ("company", "ticker", "report_type", "industry", "period", "report_date", "period_end", "prior_period_end", "kpis", "chart", "cashflow", "balance", "details")}, ensure_ascii=False)
         fakten = "\n".join("- " + f for f in facts) if facts else "- (keine berechneten Kennzahlen verfuegbar)"
         prompt2 = read_prompt("ir_article_prompt.md") + f"\n\nART DES DOKUMENTS: {out.get('report_type')}" + "\n\nFAKTEN (vom Programm berechnet, Zahlen exakt so uebernehmen):\n" + fakten + "\n\nEXTRAHIERTE KENNZAHLEN (JSON):\n" + summary
+        bg_text, bg_src = research(out, api_key())
+        if bg_text:
+            prompt2 += ("\n\nHINTERGRUND (per Websuche recherchiert; nutze ihn fuer Einordnung, Vergleich mit frueheren Quartalen, Makro- und Branchenlage; "
+                        "Zahlen daraus nur mit Zeit- bzw. Quellenbezug im Text, etwa 'laut Medienberichten' oder 'im Vorjahr'; Unsicheres weglassen):\n" + bg_text[:9000])
         figs = {}
         if src["kind"] == "pdf":
             os.makedirs("/tmp/figs", exist_ok=True)
@@ -912,6 +970,8 @@ def main():
             prompt2 += "\n\nVERFUEGBARE AUSSCHNITTE AUS DEM BERICHT (Bilder; setze hoechstens drei davon ein):\n" + "\n".join(
                 f"- {fid}: {f['title']} | {f['shows']}" for fid, f in figs.items())
         out["article"] = _generate([doc_part(src), {"text": prompt2}], ARTICLE_SCHEMA, api_key())
+        if bg_src:
+            out["article"]["body_markdown"] = out["article"]["body_markdown"].rstrip() + "\n\nWeitere Quellen zum Hintergrund: " + " · ".join(f"[{(ti or u)[:60]}]({u})" for ti, u in bg_src) + "\n"
         print("FAKTEN:\n" + fakten)
     note = src.get("url") or ""
     md, g, bad, photo = build(out, text, note, a.force, calc_rows, fmp_used, figs if not a.mock else None, src)
