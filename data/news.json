@@ -1,6 +1,69 @@
 {
- "updated": "2026-10-27T12:11:47.151847+00:00",
+ "updated": "2026-10-27T18:00:37.193872+00:00",
  "items": [
+  {
+   "sym": "NVDA",
+   "name": "Nvidia",
+   "title": "NVIDIA and Oracle Expand NVIDIA Vera Rubin to Multi-Gigawatt Scale and Bring NVIDIA Vera CPU to Oracle Cloud Infrastructure",
+   "link": "https://nvidianews.nvidia.com/news/nvidia-and-oracle-expand-nvidia-vera-rubin-to-multi-gigawatt-scale-and-bring-nvidia-vera-cpu-to-oracle-cloud-infrastructure",
+   "date": "2026-10-27T16:00:00+00:00",
+   "text": "",
+   "quelle": "RSS"
+  },
+  {
+   "sym": "NVDA",
+   "name": "Nvidia",
+   "title": "How AI Is Changing the Pace of Discovery for Millions Living With Dementia",
+   "link": "https://blogs.nvidia.com/blog/open-source-ai-tools-cbrain-dementia/",
+   "date": "2026-10-27T15:00:20+00:00",
+   "text": "",
+   "quelle": "RSS"
+  },
+  {
+   "sym": "AMZN",
+   "name": "Amazon",
+   "title": "Mintlify Taps AWS to Deliver Billions of Agent Visits with 99.999% Uptime, Launches Enterprise Offering in AWS Marketplace",
+   "link": "https://press.aboutamazon.com/aws/2026/10/mintlify-taps-aws-to-deliver-billions-of-agent-visits-with-99-999-uptime-launches-enterprise-offering-in-aws-marketplace",
+   "date": "2026-10-27T14:00:00+00:00",
+   "text": "[MEDIA ALERT]Customers can now deploy Mintlify on their existing AWS environments with streamlined procurement and billing, enabling teams to ship docs at the pace of AI[MEDIA ALERT]",
+   "quelle": "RSS"
+  },
+  {
+   "sym": "AAPL",
+   "name": "Apple",
+   "title": "Apple introduces the new 14-inch MacBook Pro with M6",
+   "link": "https://www.apple.com/newsroom/2026/10/apple-introduces-the-new-14-inch-macbook-pro-with-m6/",
+   "date": "2026-10-27T12:59:39.082000+00:00",
+   "text": "Apple today announced the new 14-inch MacBook Pro with M6, delivering more performance, powerful on-device AI capabilities, and faster connectivity.",
+   "quelle": "RSS"
+  },
+  {
+   "sym": "AAPL",
+   "name": "Apple",
+   "title": "Apple unveils new iMac with M6",
+   "link": "https://www.apple.com/newsroom/2026/10/apple-unveils-new-imac-with-m6/",
+   "date": "2026-10-27T12:59:15.245000+00:00",
+   "text": "Apple today announced the new iMac featuring the superfast M6, delivering even more performance and powerful AI capabilities.",
+   "quelle": "RSS"
+  },
+  {
+   "sym": "AAPL",
+   "name": "Apple",
+   "title": "Apple Creator Studio adds powerful new AI features and even more creative tools",
+   "link": "https://www.apple.com/newsroom/2026/10/apple-creator-studio-adds-powerful-new-ai-features-and-even-more-creative-tools/",
+   "date": "2026-10-27T12:58:45.444000+00:00",
+   "text": "Apple introduces updates to Apple Creator Studio, the collection of creative apps designed to put studio-grade tools into the hands of creators.",
+   "quelle": "RSS"
+  },
+  {
+   "sym": "VZ",
+   "name": "Verizon",
+   "title": "Verizon names Christina Schelling as Executive Vice President, Chief People Officer",
+   "link": "https://www.verizon.com/about/news/verizon-names-christina-schelling-as-executive-vice-president-chief-people-officer",
+   "date": "2026-10-27T11:37:06+00:00",
+   "text": "",
+   "quelle": "RSS"
+  },
   {
    "sym": "JNJ",
    "name": "Johnson & Johnson",
@@ -17,6 +80,15 @@
    "link": "https://investors.coca-colacompany.com/news-events/press-releases/detail/1176/coca-cola-reports-third-quarter-2026-results-and-raises-full-year-guidance",
    "date": "2026-10-27T10:55:00+00:00",
    "text": "",
+   "quelle": "RSS"
+  },
+  {
+   "sym": "VZ",
+   "name": "Verizon",
+   "title": "Play, pause, ask. Helping kids deal with online scams in games",
+   "link": "https://www.verizon.com/about/parenting/online-scams-in-games",
+   "date": "2026-10-27T09:30:00+00:00",
+   "text": "Your kid knows their favorite online game inside and out. But do they know how to spot a scam inside the game? A digital safety expert and e-sports insider breaks down what online scams to watch for.",
    "quelle": "RSS"
   },
   {
@@ -533,24 +605,6 @@
    "quelle": "RSS"
   },
   {
-   "sym": "NVDA",
-   "name": "Nvidia",
-   "title": "NVIDIA Cloud Partners Scale Across Europe — Sovereign, Open and Built for Safe AI Agents",
-   "link": "https://blogs.nvidia.com/blog/cloud-partners-europe-sovereign-safety-open-agents/",
-   "date": "2026-10-21T10:30:41+00:00",
-   "text": "",
-   "quelle": "RSS"
-  },
-  {
-   "sym": "NVDA",
-   "name": "Nvidia",
-   "title": "Europe’s Industrial Leaders Reinvent Engineering and Manufacturing With NVIDIA",
-   "link": "https://blogs.nvidia.com/blog/europe-industrial-leaders-engineering-manufacturing/",
-   "date": "2026-10-21T10:30:40+00:00",
-   "text": "",
-   "quelle": "RSS"
-  },
-  {
    "sym": "T",
    "name": "AT&T",
    "title": "AT&T Delivers Strong Third-Quarter 2026 Results",
@@ -695,24 +749,6 @@
    "quelle": "RSS"
   },
   {
-   "sym": "VZ",
-   "name": "Verizon",
-   "title": "Partners in preparedness: How Verizon Frontline connected PATRIOT 26",
-   "link": "https://www.verizon.com/about/news/verizon-frontline-connects-patriot-26",
-   "date": "2026-10-19T10:01:24+00:00",
-   "text": "In high-stakes public safety exercises, seamless communication is vital. Many teams, including Verizon Frontline, united during PATRIOT 26 to simulate complex disaster responses.",
-   "quelle": "RSS"
-  },
-  {
-   "sym": "VZ",
-   "name": "Verizon",
-   "title": "Straight Talk supercharges unlimited plans with more data, faster 5G and expanded benefits",
-   "link": "https://www.verizon.com/about/news/straight-talk-supercharges-unlimited-plans",
-   "date": "2026-10-19T09:46:20+00:00",
-   "text": "Straight Talk Wireless supercharged its Silver, Gold and Platinum Unlimited plans with 5G Ultra Wideband access, increased hotspot data and Home Internet savings without raising monthly base prices.",
-   "quelle": "RSS"
-  },
-  {
    "sym": "XOM",
    "name": "Exxon Mobil",
    "title": "ExxonMobil to Release Third Quarter 2026 Financial Results",
@@ -737,15 +773,6 @@
    "link": "https://investors.coca-colacompany.com/news-events/press-releases/detail/1174/coca-cola-board-of-directors-declares-regular-quarterly-dividend",
    "date": "2026-10-15T18:00:00+00:00",
    "text": "",
-   "quelle": "RSS"
-  },
-  {
-   "sym": "AMZN",
-   "name": "Amazon",
-   "title": "New Whole Foods Market in Scottsdale, Arizona, to Open November 12",
-   "link": "https://press.aboutamazon.com/2026/10/new-whole-foods-market-in-scottsdale-arizona-to-open-november-12",
-   "date": "2026-10-15T16:00:00+00:00",
-   "text": "Retailer’s newest location to feature more than 260 products from 70+ Arizona-based suppliers",
    "quelle": "RSS"
   },
   {
@@ -830,15 +857,6 @@
    "quelle": "RSS"
   },
   {
-   "sym": "AAPL",
-   "name": "Apple",
-   "title": "Introducing Apple Home Collection, a new lineup of smart home accessories",
-   "link": "https://www.apple.com/newsroom/2026/10/introducing-apple-home-collection-a-new-lineup-of-smart-home-accessories/",
-   "date": "2026-10-13T12:56:12.276000+00:00",
-   "text": "Apple today announced Apple Home Collection, a new lineup of smart home accessories built in collaboration with LG Electronics and Schneider Electric.",
-   "quelle": "RSS"
-  },
-  {
    "sym": "JNJ",
    "name": "Johnson & Johnson",
    "title": "Johnson & Johnson Announces Quarterly Dividend for Fourth Quarter 2026",
@@ -872,15 +890,6 @@
    "link": "https://www.investor.jnj.com/investor-news/news-details/2026/TREMFYA-guselkumab-demonstrated-sustained-clinical-and-endoscopic-remission-through-3-years-in-moderately-to-severely-active-Crohns-disease/default.aspx",
    "date": "2026-10-12T20:05:00+00:00",
    "text": "",
-   "quelle": "RSS"
-  },
-  {
-   "sym": "AAPL",
-   "name": "Apple",
-   "title": "App Store Indie Games Week kicks off today",
-   "link": "https://www.apple.com/newsroom/2026/10/app-store-indie-games-week-kicks-off-today/",
-   "date": "2026-10-12T13:59:49.734000+00:00",
-   "text": "Today, Indie Games Week lights up the App Store with a celebration of the catalog of imaginative games made by independent teams with big dreams.",
    "quelle": "RSS"
   },
   {
@@ -944,15 +953,6 @@
    "link": "https://news.bms.com/news/details/2026/Bristol-Myers-Squibb-Announces-ZENBEXUSTM-iberdomide-in-Combination-with-Daratumumab-and-Dexamethasone-ZDd-Demonstrates-Superior-Progression-Free-Survival-vs--Standard-of-Care-in-Relapsed-and-Refractory-Multiple-Myeloma-in-Phase-3---/default.aspx",
    "date": "2026-10-08T10:59:00+00:00",
    "text": "",
-   "quelle": "RSS"
-  },
-  {
-   "sym": "AAPL",
-   "name": "Apple",
-   "title": "Apple, The King’s Trust launch initiative to empower young creatives",
-   "link": "https://www.apple.com/newsroom/2026/10/apple-the-kings-trust-launch-initiative-to-empower-young-creatives/",
-   "date": "2026-10-07T21:01:58.215000+00:00",
-   "text": "Apple and The King’s Trust are building on their longstanding partnership by launching an immersive new education program to help young people move into the world of work.",
    "quelle": "RSS"
   },
   {
