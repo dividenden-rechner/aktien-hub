@@ -77,6 +77,34 @@ ARTICLE_SCHEMA = {   # Aufruf 2: Artikeltext
 }
 
 
+EARNINGS = ("Quartalszahlen", "Halbjahreszahlen", "Jahresbericht")
+FIG_SCHEMA = {"type": "OBJECT", "properties": {
+    "figures": SCHEMA["properties"]["figures"], "chart": SCHEMA["properties"]["chart"]}}
+FIG_PROMPT = """Du suchst im angehaengten Ergebnisdokument Material fuer einen Artikel. Gib zurueck:
+1. figures: zwei bis vier Stellen (Seite ab 1, Bereich [ymin, xmin, ymax, xmax] mit Werten 0 bis 1000, eng um die Tabelle oder Grafik inklusive Ueberschrift, Einheit und Fussnoten). Bevorzugt: Umsatz nach Region oder Segment, Umsatz der wichtigsten Produkte, Marken oder Medikamente, Kapitalflussrechnung, Verschuldung und Bilanz, Prognosetabelle, Portfolio- oder NAV-Tabellen bei BDCs. Keine Deckblaetter, keine Textseiten, keine Rechtshinweise. title kurz auf Deutsch, shows ein Satz.
+2. chart: eine Datenreihe mit 4 bis 6 Balken aus EINER Tabelle des Dokuments (zum Beispiel Umsatz je Produkt, Region oder Segment, oder Wachstum in Prozent). Werte wortgetreu aus dem Dokument, title und Balkenbeschriftungen auf Deutsch, unit angeben, page = Seite.
+Es gibt in nahezu jedem Ergebnisdokument solche Tabellen: liefere sie."""
+
+
+def keyword_pages(pdf_path, n=2):
+    """Notfall: Seiten mit Kapitalflussrechnung, Segment-/Regionen- oder Produkttabellen per Stichwort finden."""
+    words = [("cash flow", 3), ("cash flows", 3), ("net sales by", 3), ("revenue by", 3), ("by region", 3), ("by segment", 3), ("segment", 1),
+             ("guidance", 2), ("outlook", 2), ("balance sheet", 3), ("net asset value", 3), ("by product", 3), ("brands", 1), ("top 10", 1)]
+    try:
+        raw = subprocess.run(["pdftotext", "-layout", pdf_path, "-"], capture_output=True, text=True, check=True).stdout
+    except Exception:
+        return []
+    pages = raw.split("\f"); scored = []
+    for i, tx in enumerate(pages, 1):
+        low = tx.lower(); digits = len(re.findall(r"\d[\d.,]*", tx))
+        if len(tx) < 400 or digits < 25 or i == 1:
+            continue
+        s = sum(w * low.count(k) for k, w in words) + min(digits, 200) / 40
+        scored.append((s, i))
+    scored.sort(reverse=True)
+    return [i for _, i in scored[:n]]
+
+
 def fail(msg):
     msg = " ".join(str(msg).split())
     print("::error title=IR-Agent::" + msg[:900])
@@ -921,19 +949,15 @@ def main():
         facts, calc_rows = derive_report(out)
     else:
         out = call_gemini(src, read_prompt("ir_prompt.md"))
-        if out.get("report_type") in ("Quartalszahlen", "Halbjahreszahlen", "Jahresbericht") and not (out.get("chart") or {}).get("bars") \
-                and not out.get("figures"):
-            print("::notice title=IR-Agent::Weder Diagramm noch Ausschnitte erkannt, zweiter Versuch.")
+        if out.get("report_type") in EARNINGS and src["kind"] == "pdf":
             try:
-                extra = call_gemini(src, read_prompt("ir_prompt.md") + "\n\nNACHBESSERUNG (Pflicht): Im ersten Durchlauf fehlten chart und figures. "
-                                    "Liefere jetzt chart (4 bis 6 Balken aus EINER Tabelle des Dokuments, zum Beispiel Umsatz oder operatives Ergebnis nach Segment, Region oder Quartal) "
-                                    "und mindestens zwei figures (Seite und Bereich der Kapitalflussrechnung, der Segmenttabelle, der Prognose oder der Bilanz), "
-                                    "falls das Dokument solche Tabellen enthaelt. Alle anderen Felder wie im ersten Durchlauf.")
-                for k in ("chart", "figures", "cashflow", "balance"):
-                    if extra.get(k) and not out.get(k):
-                        out[k] = extra[k]
+                extra = _generate([doc_part(src), {"text": FIG_PROMPT + f"\n\nUnternehmen: {out.get('company')}, Branche: {out.get('industry') or 'unbekannt'}."}], FIG_SCHEMA, api_key())
+                if extra.get("figures") and not out.get("figures"):
+                    out["figures"] = extra["figures"]
+                if (extra.get("chart") or {}).get("bars") and not (out.get("chart") or {}).get("bars"):
+                    out["chart"] = extra["chart"]
             except SystemExit:
-                print("::notice title=IR-Agent::Zweiter Versuch fehlgeschlagen, weiter ohne.")
+                print("::notice title=IR-Agent::Gezielte Suche nach Ausschnitten fehlgeschlagen.")
         facts, calc_rows = derive_report(out)
         have_rep = bool(calc_rows)
         bf, br = derive_balance(out)
@@ -965,6 +989,13 @@ def main():
                 tmp = f"/tmp/figs/{fid}.png"
                 if render_figure(src["path"], fg, tmp):
                     figs[fid] = {"tmp": tmp, "title": fg.get("title") or "Auszug", "page": fg.get("page"), "shows": fg.get("shows") or ""}
+        if not figs and src["kind"] == "pdf" and out.get("report_type") in EARNINGS:
+            os.makedirs("/tmp/figs", exist_ok=True)
+            for k, pg in enumerate(keyword_pages(src["path"]), 1):
+                tmp = f"/tmp/figs/k{k}.png"
+                if render_figure(src["path"], {"page": pg, "box": []}, tmp):
+                    figs[f"k{k}"] = {"tmp": tmp, "title": f"Auszug aus dem Bericht (Seite {pg})", "page": pg, "shows": "Tabelle oder Folie aus dem Bericht mit Zahlen zum Thema"}
+            out.setdefault("figures", [])
         print(f"::notice title=IR-Agent::Ausschnitte: {len(figs)} von {len(out.get('figures') or [])} gerendert, Diagramm: {'ja' if (out.get('chart') or {}).get('bars') else 'nein'}, Quelle: {src['kind']}")
         if figs:
             prompt2 += "\n\nVERFUEGBARE AUSSCHNITTE AUS DEM BERICHT (Bilder; setze hoechstens drei davon ein):\n" + "\n".join(

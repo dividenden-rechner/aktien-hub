@@ -51,3 +51,5 @@ Analyse und Kritik (bei Ergebnisberichten Pflicht): Der Artikel ist kein Lob des
 - BDC: NAV je Aktie im Verlauf, Net Investment Income je Aktie im Verhältnis zur Dividende (gedeckt oder nicht), Anteil der PIK-Erträge, Non-Accruals, Kurs gegenüber NAV (Aufschlag oder Abschlag, mit Datum der Kursangabe), Verschuldungsgrad.
 - REIT: FFO und AFFO je Aktie im Verhältnis zur Dividende, Belegung, Kurs gegenüber NAV.
 Schulden und Refinanzierung sind bei jedem Unternehmen Pflicht: Wann werden Schulden fällig, zu welchen Zinsen wird refinanziert, wie sieht das Rating aus (wenn in details, FAKTEN oder HINTERGRUND). Zahlen aus dem HINTERGRUND, die nicht im Bericht stehen, schreibst du mit Zeitbezug und als Einordnung ("laut Medienberichten", "im Vorjahr"), und nutzt davon nur wenige. Das Zahlenlimit gilt weiter: lieber eine Aussage erklären als viele Zahlen nennen. Länge bei Ergebnisberichten bis etwa 900 Wörter.
+
+Hervorhebung: Setze die wichtigsten Zahlen im Fließtext fett (**so**), pro Artikel etwa fünf bis acht, nämlich die, die die Aussage tragen (zum Beispiel Umsatz, Gewinn je Aktie, Free Cashflow, Ausschüttungsquote, Verschuldung). Nicht ganze Sätze fetten.
