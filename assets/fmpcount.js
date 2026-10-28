@@ -12,7 +12,7 @@
     var o = get(), L = lim(), full = o.full || o.n >= L;
     if (!el) {
       el = document.createElement("div"); el.setAttribute("role", "status");
-      el.style.cssText = "position:fixed;left:10px;bottom:10px;z-index:40;font:12.5px/1.35 system-ui,sans-serif;padding:6px 10px;border-radius:999px;border:1px solid #dfe5ea;background:#fff;color:#5d6b78;box-shadow:0 2px 8px rgba(0,0,0,.08);max-width:calc(100vw - 20px);cursor:pointer";
+      el.style.cssText = "font:12px/1.4 system-ui,sans-serif;padding:10px 16px 18px;text-align:center;color:#8a97a3;cursor:pointer";
       el.title = "Anzahl der FMP-Datenabrufe heute in diesem Browser (Tageslimit deines Tarifs, bei Gratis 250). Klick blendet aus.";
       el.onclick = function () { el.hidden = true; try { sessionStorage.setItem("fmphide", "1"); } catch (e) { } };
       document.body.appendChild(el);
@@ -20,8 +20,8 @@
     try { if (sessionStorage.getItem("fmphide") && !full) { el.hidden = true; return; } } catch (e) { }
     el.hidden = false;
     el.textContent = full ? "FMP-Tageslimit erreicht: neue Daten gibt es erst morgen" : "FMP-Abrufe heute: " + o.n + " von " + L;
-    el.style.background = full ? "#fde3e0" : o.n >= L * 0.8 ? "#fff7e6" : "#fff";
-    el.style.color = full ? "#b3372d" : "#5d6b78";
+    el.style.background = full ? "#fde3e0" : "transparent";
+    el.style.color = full ? "#b3372d" : o.n >= L * 0.8 ? "#b26a00" : "#8a97a3";
   }
   window.fetch = function (u) {
     var url = typeof u === "string" ? u : (u && u.url) || "", p = of.apply(this, arguments);

@@ -8,7 +8,8 @@
 <meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large,max-video-preview:-1">
 <link rel="canonical" href="https://dividenden-rechner.github.io/aktien-hub/aktien/">
 <style>
-:root{color-scheme:light;--bg:#fff;--ink:#14202b;--mut:#5d6b78;--line:#dfe5ea;--card:#fff;--acc:#2f9e5b;--pos:#1a7a45;--neg:#b3372d;--bar:#2f9e5b;--bar2:#3a6ea5}
+:root{color-scheme:light;--bg:#fff;--ink:#14202b;--mut:#5d6b78;--line:#dfe5ea;--card:#fff;--acc:#2f9e5b;--pos:#1a7a45;--neg:#b3372d;--bar:#2f9e5b;--bar2:#3a6ea5;--c-umsatz:#2f6fdb;--c-umsatz-l:#c9dafa;--c-gewinn:#1f9d55;--c-gewinn-m:#6cc190;--c-gewinn-l:#bfe5cf;--c-cash:#0e9aa7;--c-cash-l:#bde6ea;--c-kosten:#f08a24;--c-gold:#d4a017}
+.kern{font-size:22px;font-weight:700;margin:2px 0 2px;line-height:1.25}.kern small{font-size:13px;font-weight:600;margin-left:8px;color:var(--mut)}.kleg{display:flex;gap:12px;flex-wrap:wrap;font-size:12px;color:var(--mut);margin:4px 0 2px}.kleg i{display:inline-block;width:10px;height:10px;border-radius:2px;margin-right:4px;vertical-align:-1px}
 *{box-sizing:border-box}
 body{margin:0;background:var(--bg);color:var(--ink);font:15px/1.5 "IBM Plex Sans",system-ui,sans-serif;padding:0}
 main{max-width:1080px;margin:0 auto;padding:20px 16px 48px}
@@ -287,6 +288,78 @@ function bars(title,note,data,color="var(--bar)",f=short){
   });
   return `<div class="card"><h3>${title}</h3>${note?`<p>${note}</p>`:""}${s}</svg></div>`;
 }
+
+/* ===== Neue Diagramme: Farben nach Bedeutung ===== */
+const pcs=v=>v==null||!isFinite(v)?"":(v>0?"+":"")+num(v*100,0)+" %";
+const growth=(a,k)=>{const n=a.length;if(n<2)return null;const x=a[n-1][k],y=a[n-2][k];return x!=null&&y>0?x/y-1:null};
+const kern=(t,main,col,sub)=>`<h3>${t}</h3><div class="kern" style="color:${col}">${main}${sub?`<small>${sub}</small>`:""}</div>`;
+const yl=(y,n)=>n>7?"’"+String(y).slice(-2):String(y);
+const nodata=t=>`<div class="card"><h3>${t}</h3><p>Keine Daten verfügbar.</p></div>`;
+function combo(inc,cur){
+  const D=inc.filter(x=>x.revenue!=null&&!isNaN(x.revenue));if(!D.length)return nodata("Umsatz &amp; Nettogewinn");
+  const W=370,H=190,top=24,bot=H-22,n=D.length,mx=Math.max(...D.map(x=>x.revenue),1),mn=Math.min(0,...D.map(x=>x.netIncome||0)),rg=(mx-mn)||1,Y=v=>top+(mx-v)/rg*(bot-top),z=Y(0),bw=Math.min(44,(W-12)/n*.78);
+  let s=`<svg viewBox="0 0 ${W} ${H}" role="img" aria-label="Umsatz und Nettogewinn"><line x1="0" x2="${W}" y1="${z}" y2="${z}" stroke="var(--line)"/>`;
+  D.forEach((d,i)=>{const cx=6+(W-6)*(i+.5)/n,last=i===n-1,h=Math.max(1,z-Y(d.revenue));
+    s+=`<rect x="${cx-bw/2}" y="${z-h}" width="${bw}" height="${h}" rx="3" fill="${last?"var(--c-umsatz)":"var(--c-umsatz-l)"}"><title>${d.y} Umsatz: ${big(d.revenue)}</title></rect>`;
+    const g=d.netIncome;if(g!=null){const gh=Math.max(1,Math.abs(Y(g)-z)),gy=g>=0?z-gh:z,gw=Math.min(18,bw*.42);
+      s+=`<rect x="${cx-gw/2}" y="${gy}" width="${gw}" height="${gh}" rx="2" fill="${g<0?"var(--neg)":last?"var(--c-gewinn)":"var(--c-gewinn-m)"}"><title>${d.y} Nettogewinn: ${big(g)}</title></rect>`;}
+    if(i===0||last)s+=`<text x="${cx}" y="${z-h-5}" text-anchor="middle" font-size="11" font-weight="700" fill="${last?"var(--c-umsatz)":"var(--mut)"}">${short(d.revenue)}</text>`;
+    s+=`<text x="${cx}" y="${H-5}" text-anchor="middle" font-size="11" ${last?'font-weight="700" style="fill:var(--ink)"':""}>${yl(d.y,n)}</text>`});
+  const L=D[n-1],gu=growth(D,"revenue"),gg=growth(D.filter(x=>x.netIncome!=null),"netIncome");
+  return `<div class="card">${kern("Umsatz &amp; Nettogewinn",big(L.revenue)+" "+esc(cur),"var(--c-umsatz)",gu!=null?pcs(gu):"")}<div class="kleg"><span><i style="background:var(--c-umsatz-l)"></i>Umsatz</span><span><i style="background:var(--c-gewinn)"></i>Nettogewinn${L.netIncome!=null?" "+big(L.netIncome)+(gg!=null?" ("+pcs(gg)+")":""):""}</span></div>${s}</svg></div>`;
+}
+function margins(inc){
+  const D=inc.filter(x=>x.revenue>0);if(!D.length)return nodata("Margen");
+  const W=370,H=170,pl=8,pr=84,top=14,bot=H-24,n=D.length;
+  const S=[["Brutto","grossProfit","var(--c-umsatz)"],["Operativ","operatingIncome","var(--c-gewinn-m)"],["Netto","netIncome","var(--c-gewinn)"]].map(([l,k,c])=>({l,c,v:D.map(x=>x[k]==null?null:x[k]/x.revenue*100)})).filter(a=>a.v.some(v=>v!=null));
+  const all=S.flatMap(a=>a.v.filter(v=>v!=null));if(!all.length)return nodata("Margen");
+  const mx=Math.max(10,Math.ceil(Math.max(...all)/10)*10),mn=Math.min(0,Math.floor(Math.min(...all)/10)*10),rg=mx-mn,Y=v=>top+(mx-v)/rg*(bot-top),X=i=>pl+(W-pl-pr)*(i+.5)/n;
+  let s=`<svg viewBox="0 0 ${W} ${H}" role="img" aria-label="Margen">`;
+  [mn,(mn+mx)/2,mx].forEach(g=>{s+=`<line x1="0" x2="${W}" y1="${Y(g)}" y2="${Y(g)}" stroke="var(--line)"/><text x="2" y="${Y(g)-3}" font-size="10">${num(g,0)} %</text>`});
+  const ends=[];
+  S.forEach(a=>{const pts=a.v.map((v,i)=>v==null?null:[X(i),Y(v)]).filter(Boolean);if(!pts.length)return;
+    s+=`<polyline points="${pts.map(q=>q.join(",")).join(" ")}" fill="none" stroke="${a.c}" stroke-width="3" stroke-linejoin="round"/>`;
+    pts.forEach((q,i)=>s+=`<circle cx="${q[0]}" cy="${q[1]}" r="${i===pts.length-1?5:3}" fill="${a.c}"/>`);
+    const lv=a.v[a.v.length-1];if(lv!=null)ends.push({y:pts[pts.length-1][1],x:pts[pts.length-1][0],t:a.l+" "+num(lv,0)+" %",c:a.c})});
+  ends.sort((a,b)=>a.y-b.y);for(let i=1;i<ends.length;i++)if(ends[i].y-ends[i-1].y<13)ends[i].y=ends[i-1].y+13;
+  ends.forEach(e=>s+=`<text x="${e.x+9}" y="${e.y+4}" font-size="11" font-weight="700" style="fill:${e.c}">${e.t}</text>`);
+  D.forEach((d,i)=>s+=`<text x="${X(i)}" y="${H-5}" text-anchor="middle" font-size="11" ${i===n-1?'font-weight="700" style="fill:var(--ink)"':""}>${yl(d.y,n)}</text>`);
+  const gl=S.find(a=>a.l==="Brutto"),ol=S.find(a=>a.l==="Operativ"),nl=S.find(a=>a.l==="Netto"),f=a=>a&&a.v[a.v.length-1]!=null?num(a.v[a.v.length-1],0)+" %":null;
+  return `<div class="card">${kern("Margen",f(gl)||f(nl)||"–","var(--ink)",[f(gl)?"Brutto":"",f(ol)?f(ol)+" operativ":"",f(nl)?f(nl)+" netto":""].filter(Boolean).join(" · "))}<p>Anteil vom Umsatz</p>${s}</svg></div>`;
+}
+function fcfChart(cf,cur){
+  const D=cf.filter(x=>x.freeCashFlow!=null&&!isNaN(x.freeCashFlow));if(!D.length)return nodata("Free Cashflow");
+  const W=370,H=205,top=22,bot=H-52,n=D.length,mx=Math.max(0,...D.map(x=>x.freeCashFlow)),mn=Math.min(0,...D.map(x=>x.freeCashFlow)),rg=(mx-mn)||1,Y=v=>top+(mx-v)/rg*(bot-top),z=Y(0),bw=Math.min(44,(W-12)/n*.78),mi=D.findIndex(x=>x.freeCashFlow===mx);
+  let s=`<svg viewBox="0 0 ${W} ${H}" role="img" aria-label="Free Cashflow"><line x1="0" x2="${W}" y1="${z}" y2="${z}" stroke="var(--line)"/>`;
+  D.forEach((d,i)=>{const v=d.freeCashFlow,cx=6+(W-6)*(i+.5)/n,last=i===n-1,h=Math.max(3,Math.abs(Y(v)-z));
+    s+=`<rect x="${cx-bw/2}" y="${v>=0?z-h:z}" width="${bw}" height="${h}" rx="3" fill="${v<0?"var(--neg)":last?"var(--c-cash)":"var(--c-cash-l)"}"><title>${d.y}: ${big(v)}</title></rect>`;
+    if(v<0)s+=`<text x="${cx}" y="${z+h+12}" text-anchor="middle" font-size="10" font-weight="700" style="fill:var(--neg)">−${short(Math.abs(v))}</text>`;
+    else if(i===0||last||i===mi)s+=`<text x="${cx}" y="${z-h-5}" text-anchor="middle" font-size="11" font-weight="700" style="fill:${last?"var(--c-cash)":"var(--mut)"}">${short(v)}</text>`;
+    s+=`<text x="${cx}" y="${H-6}" text-anchor="middle" font-size="11" ${last?'font-weight="700" style="fill:var(--ink)"':""}>${yl(d.y,n)}</text>`});
+  const L=D[n-1],g=n>1&&D[n-2].freeCashFlow>0?L.freeCashFlow/D[n-2].freeCashFlow-1:null;
+  return `<div class="card">${kern("Free Cashflow",big(L.freeCashFlow)+" "+esc(cur),L.freeCashFlow<0?"var(--neg)":"var(--c-cash)",g!=null?pcs(g):"")}<p>Rot = negativer Cashflow</p>${s}</svg></div>`;
+}
+function epsChart(inc,cur){
+  const D=inc.map(x=>({y:x.y,v:first(x,"epsDiluted","eps")})).filter(x=>x.v!=null&&!isNaN(x.v));if(!D.length)return nodata("Gewinn je Aktie (verwässert)");
+  const W=370,H=150,pl=20,pr=30,top=28,bot=H-26,n=D.length,vs=D.map(x=>x.v),mx0=Math.max(...vs),mn0=Math.min(...vs),pad=((mx0-mn0)||Math.abs(mx0)||1)*.15,mx=mx0+pad*.6,mn=mn0<0?mn0-pad:Math.max(0,mn0-pad*2.5)*(mn0>0?1:0)||mn0-pad,rg=(mx-mn)||1,Y=v=>top+(mx-v)/rg*(bot-top),X=i=>pl+(W-pl-pr)*(i+.5)/n;
+  const pts=D.map((d,i)=>[X(i),Y(d.v)]);
+  let s=`<svg viewBox="0 0 ${W} ${H}" role="img" aria-label="Gewinn je Aktie">`;
+  if(mn<0&&mx>0)s+=`<line x1="0" x2="${W}" y1="${Y(0)}" y2="${Y(0)}" stroke="var(--line)"/>`;
+  s+=`<polygon points="${pts.map(q=>q.join(",")).join(" ")} ${pts[n-1][0]},${bot} ${pts[0][0]},${bot}" fill="var(--c-gewinn-l)" opacity=".55"/><polyline points="${pts.map(q=>q.join(",")).join(" ")}" fill="none" stroke="var(--c-gewinn)" stroke-width="3" stroke-linejoin="round"/>`;
+  pts.forEach((q,i)=>{const last=i===n-1;s+=`<circle cx="${q[0]}" cy="${q[1]}" r="${last?5.5:3.5}" fill="${D[i].v<0?"var(--neg)":"var(--c-gewinn)"}"><title>${D[i].y}: ${num(D[i].v)}</title></circle>`;
+    if(i===0||last)s+=`<text x="${q[0]}" y="${q[1]-10}" text-anchor="middle" font-size="11" font-weight="700" style="fill:${last?"var(--c-gewinn)":"var(--mut)"}">${num(D[i].v)}</text>`;
+    s+=`<text x="${q[0]}" y="${H-6}" text-anchor="middle" font-size="11" ${last?'font-weight="700" style="fill:var(--ink)"':""}>${yl(D[i].y,n)}</text>`});
+  const g=n>1&&D[n-2].v>0?D[n-1].v/D[n-2].v-1:null;
+  return `<div class="card">${kern("Gewinn je Aktie (verwässert)",num(D[n-1].v)+" "+esc(cur),D[n-1].v<0?"var(--neg)":"var(--c-gewinn)",g!=null?pcs(g):"")}${s}</svg></div>`;
+}
+/* Wasserfall: rows = {l,s,e,c,t(total),val} */
+function wf(rows,W=370){
+  const pl=124,pr=82,rh=26,H=rows.length*rh+8,mx=Math.max(...rows.map(r=>Math.max(r.s,r.e)),1),sc=(W-pl-pr)/mx;
+  let s=`<svg viewBox="0 0 ${W} ${H}" role="img" aria-label="Wasserfall">`;
+  rows.forEach((r,i)=>{const y=4+i*rh,a=Math.min(r.s,r.e),b=Math.max(r.s,r.e),x=pl+a*sc,w=Math.max(3,(b-a)*sc),sg=r.t?"":(r.e<r.s?"−":"+");
+    s+=`<text x="${pl-8}" y="${y+14}" text-anchor="end" font-size="11" ${r.t?'font-weight="700" style="fill:var(--ink)"':""}>${esc(r.l)}</text><rect x="${x}" y="${y+2}" width="${w}" height="17" rx="3" fill="${r.c}"/><text x="${x+w+6}" y="${y+15}" font-size="11" font-weight="700" style="fill:${r.c}">${sg}${big(Math.abs(r.val))}</text>`});
+  return s+"</svg>";
+}
 function line(title,pts){
   if(pts.length<2)return `<div class="card"><h3>${title}</h3><p>Keine Daten verfügbar.</p></div>`;
   const W=480,H=210,p=24,vs=pts.map(d=>d.v),mn=Math.min(...vs),mx=Math.max(...vs),r=(mx-mn)||1;
@@ -345,13 +418,11 @@ async function openStock(sym){
   </div>
   <div class="grid">
    ${line("Kurs, letzte 5 Jahre ("+esc(p.currency||"")+")",pts)}
-   ${bars("Dividende je Aktie","Summe pro Jahr, "+esc(p.currency||"")+(divs.some(x=>x.part)?"; laufendes Jahr blass (unvollständig)":""),divs,"var(--bar2)",v=>num(v))}
-   ${bars("Umsatz","Jahreswerte, "+esc(cur),inc.map(x=>({y:x.y,v:x.revenue})))}
-   ${bars("Nettogewinn","Jahreswerte, "+esc(cur),inc.map(x=>({y:x.y,v:x.netIncome})))}
-   ${bars("Operatives Ergebnis","Jahreswerte, "+esc(cur),inc.map(x=>({y:x.y,v:x.operatingIncome})),"var(--bar2)")}
-   ${bars("Free Cashflow","Jahreswerte, "+esc(cur),cf.map(x=>({y:x.y,v:x.freeCashFlow})))}
-   ${bars("Gewinn je Aktie (verwässert)","Jahreswerte, "+esc(cur),inc.map(x=>({y:x.y,v:first(x,"epsDiluted","eps")})),"var(--bar2)",v=>num(v))}
-   ${bars("Bruttomarge","Bruttogewinn / Umsatz",inc.map(x=>({y:x.y,v:x.revenue?x.grossProfit/x.revenue:null})),"var(--bar)",v=>num(v*100,0)+" %")}
+   ${bars("Dividende je Aktie","Summe pro Jahr, "+esc(p.currency||"")+(divs.some(x=>x.part)?"; laufendes Jahr blass (unvollständig)":""),divs,"var(--c-gold)",v=>num(v))}
+   ${combo(inc,cur)}
+   ${margins(inc)}
+   ${fcfChart(cf,cur)}
+   ${epsChart(inc,cur)}
   </div>
   <div id="fin"></div>
   <div id="nr"></div>
@@ -405,58 +476,40 @@ async function initFinance(sym,p,cur,inc,cf){
   <div class="fcard"><div class="fctl"><b id="fst">Gewinnfluss</b><span class="ftoggle"><button type="button" data-f="gw" aria-pressed="true">Gewinn</button><button type="button" data-f="cf" aria-pressed="false">Cashflow</button></span><select id="fsy" aria-label="Jahr">${years.slice().reverse().map(y=>`<option>${y}</option>`).join("")}</select></div><div class="fscroll" id="fsk"></div><p class="fnote" id="fsn">Vom Umsatz bis zum Nettogewinn. Die Breite der Bänder ist proportional zum Betrag.</p></div>
   <div class="fcard"><div class="fctl"><b>Kennzahlen übereinander legen</b><button type="button" data-m="line" aria-pressed="true">Linien</button><button type="button" data-m="bar" aria-pressed="false">Balken</button></div><div class="fchips" id="fch"></div><div class="fscroll fit" id="fcm"></div><p class="fnote" id="fmn"></p></div>
   <div class="fcard"><div class="fctl"><b>Investitionen (Capex) und Dividendendeckung</b></div><div class="fscroll" id="fcx"></div><p class="fnote">Capex-Quote = Investitionen / Umsatz. Capex / Abschreibungen über 100 % heißt: Das Unternehmen investiert mehr, als sich Anlagen abnutzen. Deckung = freier Cashflow / gezahlte Dividenden; unter 100 % wird die Dividende nicht aus dem freien Cashflow bezahlt.</p></div>`;
-  /* Sankey */
+  /* Wasserfall statt Sankey */
   let flow="gw";
   function sankey(){flow==="cf"?cashflow():sankeyP()}
   function sankeyP(){
-    $("fst").textContent="Gewinnfluss";$("fsn").textContent="Vom Umsatz bis zum Nettogewinn. Die Breite der Bänder ist proportional zum Betrag.";
+    $("fst").textContent="Vom Umsatz zum Gewinn";$("fsn").textContent="Blau = Umsatz, Orange = Kosten, Grün = Gewinn. Die Länge der Balken entspricht dem Betrag.";
     const x=I[sy]||{},R=x.revenue,cog=Math.max(x.costOfRevenue||0,0),gp=x.grossProfit!=null?x.grossProfit:(R!=null?R-cog:null),op=x.operatingIncome,ni=x.netIncome,tax=Math.max(x.incomeTaxExpense||0,0);
-    const el=$("fsk");if(!(R>0)||gp==null){el.innerHTML='<p class="fnote">Für dieses Jahr fehlen Umsatzdaten.</p>';return}
-    const nar=el.clientWidth>0&&el.clientWidth<560;el.classList.toggle("fit",nar);const W=nar?Math.max(300,el.clientWidth):760,Ht=nar?300:330,top=14,gap=12,nw=14,xs=nar?[0,(W-nw)/3,(W-nw)*2/3,W-nw]:[0,230,460,W-190-nw];
-    const nodes=[],L=[];const nd=(id,col,v,lab,c)=>{if(v>0){nodes.push({id,col,v,lab,c})}};
-    nd("rev",0,R,"Umsatz","#2563eb");nd("cog",1,cog,"Herstellungskosten","#94a3b8");nd("gp",1,Math.max(gp,0),"Bruttogewinn","#16a34a");
-    const opex=Math.max(gp-(op??gp),0);
-    if(op!=null&&op>0&&gp>0){nd("opex",2,opex,"Betriebskosten","#94a3b8");nd("op",2,op,"Operatives Ergebnis","#16a34a");
-      const oth=op-tax-(ni??0);nd("tax",3,tax,"Steuern","#f59e0b");nd("oth",3,Math.abs(oth),oth>=0?"Zinsen und Sonstiges":"Sonstige Erträge","#a78bfa");nd("ni",3,Math.max(ni||0,0),"Nettogewinn","#15803d");}
-    const nm=Object.fromEntries(nodes.map(n=>[n.id,n]));
-    const lk=(a,b,v)=>{if(nm[a]&&nm[b]&&v>0)L.push({a,b,v,c:nm[b].c})};
-    lk("rev","cog",cog);lk("rev","gp",Math.max(gp,0));lk("gp","opex",opex);lk("gp","op",op>0?op:0);
-    if(nm.op){lk("op","tax",tax);lk("op","oth",nm.oth?.v||0);lk("op","ni",Math.max(ni||0,0))}
-    const sc=(Ht-top*2-gap*2)/R;let svg=`<svg viewBox="0 0 ${W} ${Ht}" role="img" aria-label="Gewinnfluss ${sy}">`;
-    for(let c=0;c<4;c++){let yy=top;nodes.filter(n=>n.col===c).forEach(n=>{n.h=Math.max(n.v*sc,2);n.y=yy;n.o=0;n.i=0;yy+=n.h+gap})}
-    L.forEach(l=>{const a=nm[l.a],b=nm[l.b],hh=l.v*sc,x0=xs[a.col]+nw,x1=xs[b.col],y0=a.y+a.o,y1=b.y+b.i;a.o+=hh;b.i+=hh;const m=(x0+x1)/2;
-      svg+=`<path d="M${x0},${y0} C${m},${y0} ${m},${y1} ${x1},${y1} L${x1},${y1+hh} C${m},${y1+hh} ${m},${y0+hh} ${x0},${y0+hh}Z" fill="${l.c}" opacity=".28"><title>${esc(a.lab)} → ${esc(b.lab)}: ${big(l.v)}</title></path>`});
-    nodes.forEach(n=>{const x0=xs[n.col],right=n.col===3,tx=right?x0+nw+8:(n.col===0?x0+nw+8:x0+nw+8);
-      svg+=`<rect x="${x0}" y="${n.y}" width="${nw}" height="${n.h}" rx="3" fill="${n.c}"/>`;
-      if(nar)return;
-      if(n.col===0)svg+=`<text x="${x0+nw+8}" y="${n.y+16}" font-size="13" font-weight="700" fill="#14202b">${esc(n.lab)}</text><text x="${x0+nw+8}" y="${n.y+32}" font-size="12" fill="#5d6b78">${big(n.v)}</text>`;
-      else if(right)svg+=`<text x="${tx}" y="${n.y+Math.min(n.h,40)/2}" font-size="12.5" font-weight="600" fill="#14202b">${esc(n.lab)}</text><text x="${tx}" y="${n.y+Math.min(n.h,40)/2+15}" font-size="12" fill="#5d6b78">${big(n.v)} · ${num(n.v/R*100,1)} %</text>`;
-      else svg+=`<text x="${x0+nw+6}" y="${n.y-3}" font-size="12" font-weight="600" fill="#14202b">${esc(n.lab)}</text><text x="${x0+nw+6}" y="${n.y+n.h+12}" font-size="11.5" fill="#5d6b78">${big(n.v)} · ${num(n.v/R*100,1)} %</text>`});
-    el.innerHTML=svg+"</svg>"+(nar?'<ul class="fleg">'+nodes.map(n=>`<li><i style="background:${n.c}"></i>${esc(n.lab)}<span>${big(n.v)} · ${num(n.v/R*100,1)} %</span></li>`).join("")+'</ul>':"")+(op!=null&&op<=0?'<p class="fnote">In diesem Jahr war das operative Ergebnis nicht positiv, deshalb endet der Fluss beim Bruttogewinn.</p>':"");
+    const el=$("fsk");el.classList.add("fit");if(!(R>0)||gp==null){el.innerHTML='<p class="fnote">Für dieses Jahr fehlen Umsatzdaten.</p>';return}
+    const U="var(--c-umsatz)",K="var(--c-kosten)",G="var(--c-gewinn)",rows=[{l:"Umsatz",s:0,e:R,c:U,t:1,val:R}];
+    if(cog>0)rows.push({l:"Herstellungskosten",s:R,e:R-cog,c:K,val:cog});
+    rows.push({l:"Bruttogewinn",s:0,e:Math.max(gp,0),c:G,t:1,val:gp});
+    if(op!=null&&op>0&&gp>0){
+      rows.push({l:"Betriebskosten",s:gp,e:op,c:K,val:Math.max(gp-op,0)});rows.push({l:"Operatives Ergebnis",s:0,e:op,c:G,t:1,val:op});
+      let cur2=op;if(tax>0){rows.push({l:"Steuern",s:cur2,e:cur2-tax,c:K,val:tax});cur2-=tax}
+      const oth=(ni??cur2)-cur2;if(Math.abs(oth)>R*0.0005){rows.push(oth<0?{l:"Zinsen & Sonstiges",s:cur2,e:cur2+oth,c:K,val:-oth}:{l:"Sonstige Erträge",s:cur2,e:cur2+oth,c:G,val:oth});}
+      if(ni!=null)rows.push({l:"Nettogewinn",s:0,e:Math.max(ni,0),c:ni<0?"var(--neg)":G,t:1,val:ni});
+    }
+    el.innerHTML=wf(rows)+(op!=null&&op<=0?'<p class="fnote">In diesem Jahr war das operative Ergebnis nicht positiv, deshalb endet die Darstellung beim Bruttogewinn.</p>':"");
   }
   /* Cashflow-Verwendung */
   function cashflow(){
     $("fst").textContent="Wohin fließt der Cashflow?";
-    $("fsn").textContent="Operativer Cashflow und seine Verwendung: Investitionen, Dividenden, Aktienrückkäufe, Schuldentilgung und Zukäufe. Netto gerechnet, die Breite der Bänder ist proportional zum Betrag.";
-    const el=$("fsk"),c=C[sy]||{},ocf=first(c,"operatingCashFlow","netCashProvidedByOperatingActivities");
+    $("fsn").textContent="Operativer Cashflow und seine Verwendung: Investitionen, Dividenden, Aktienrückkäufe, Schuldentilgung und Zukäufe (netto gerechnet).";
+    const el=$("fsk"),c=C[sy]||{},ocf=first(c,"operatingCashFlow","netCashProvidedByOperatingActivities");el.classList.add("fit");
     if(!(ocf>0)){el.innerHTML='<p class="fnote">Für dieses Jahr liegt kein positiver operativer Cashflow vor.</p>';return}
-    const ndi=first(c,"netDebtIssuance")??first(c,"debtRepayment"),acq=first(c,"acquisitionsNet");
-    const n0=v=>v==null||isNaN(v)?0:+v;
+    const n0=v=>v==null||isNaN(v)?0:+v,ndi=first(c,"netDebtIssuance")??first(c,"debtRepayment"),acq=first(c,"acquisitionsNet");
     const newDebt=n0(first(c,"netDebtIssuance"))>0?n0(first(c,"netDebtIssuance")):0;
     const repay=ndi==null?0:(first(c,"netDebtIssuance")!=null?Math.max(-n0(ndi),0):Math.abs(n0(ndi)));
-    const U=[["capex","Investitionen (Capex)",Math.abs(n0(c.capitalExpenditure)),"#0ea5e9"],["div","Dividenden",Math.abs(n0(first(c,"commonDividendsPaid","netDividendsPaid","dividendsPaid"))),"#16a34a"],["buy","Aktienrückkäufe",Math.abs(n0(first(c,"commonStockRepurchased"))),"#f59e0b"],["rep","Schuldentilgung (netto)",repay,"#a78bfa"],["acq","Zukäufe",Math.max(-n0(acq),0),"#ec4899"]].filter(u=>u[2]>0);
-    const L=[["ocf","Operativer Cashflow",ocf,"#2563eb"]];if(newDebt>0)L.push(["nd","Neue Schulden (netto)",newDebt,"#8b5cf6"]);
-    const sumU=U.reduce((a,u)=>a+u[2],0),sumL=L.reduce((a,u)=>a+u[2],0),diff=sumL-sumU;
-    if(diff>0)U.push(["rest","Bleibt übrig (Kasse u. a.)",diff,"#94a3b8"]);else if(diff<0)L.push(["gap","Aus Kasse und Sonstigem",-diff,"#94a3b8"]);
-    const nar=el.clientWidth>0&&el.clientWidth<560;el.classList.toggle("fit",nar);const T2=Math.max(sumL,sumU),W=nar?Math.max(300,el.clientWidth):760,Ht=nar?300:330,top=14,gap=12,nw=14,xr=nar?W-nw:W-210-nw;
-    const sc=(Ht-top*2-gap*Math.max(L.length,U.length))/T2;let svg=`<svg viewBox="0 0 ${W} ${Ht}" role="img" aria-label="Verwendung des Cashflows ${sy}">`;
-    let yy=top;L.forEach(n=>{n.h=Math.max(n[2]*sc,2);n.y=yy;n.o=0;yy+=n.h+gap});yy=top;U.forEach(n=>{n.h=Math.max(n[2]*sc,2);n.y=yy;n.i=0;yy+=n.h+gap});
-    const tot=U.reduce((a,u)=>a+u[2],0);
-    L.forEach(l=>U.forEach(u=>{const v=l[2]*u[2]/tot,hh=v*sc,x0=nw,x1=xr,y0=l.y+l.o,y1=u.y+u.i;l.o+=hh;u.i+=hh;const m=(x0+x1)/2;
-      svg+=`<path d="M${x0},${y0} C${m},${y0} ${m},${y1} ${x1},${y1} L${x1},${y1+hh} C${m},${y1+hh} ${m},${y0+hh} ${x0},${y0+hh}Z" fill="${u[3]}" opacity=".28"><title>${esc(l[1])} → ${esc(u[1])}: ${big(v)}</title></path>`}));
-    L.forEach(n=>{if(nar){svg+=`<rect x="0" y="${n.y}" width="${nw}" height="${n.h}" rx="3" fill="${n[3]}"/>`;return}svg+=`<rect x="0" y="${n.y}" width="${nw}" height="${n.h}" rx="3" fill="${n[3]}"/><text x="${nw+8}" y="${n.y+16}" font-size="13" font-weight="700" fill="#14202b">${esc(n[1])}</text><text x="${nw+8}" y="${n.y+32}" font-size="12" fill="#5d6b78">${big(n[2])}</text>`});
-    U.forEach(n=>{if(nar){svg+=`<rect x="${xr}" y="${n.y}" width="${nw}" height="${n.h}" rx="3" fill="${n[3]}"/>`;return}const ty=n.y+Math.min(n.h,40)/2;svg+=`<rect x="${xr}" y="${n.y}" width="${nw}" height="${n.h}" rx="3" fill="${n[3]}"/><text x="${xr+nw+8}" y="${ty}" font-size="12.5" font-weight="600" fill="#14202b">${esc(n[1])}</text><text x="${xr+nw+8}" y="${ty+15}" font-size="12" fill="#5d6b78">${big(n[2])} · ${num(n[2]/ocf*100,0)} % des Cashflows</text>`});
-    el.innerHTML=svg+"</svg>"+(nar?'<ul class="fleg">'+L.concat(U).map(n=>`<li><i style="background:${n[3]}"></i>${esc(n[1])}<span>${big(n[2])} · ${num(n[2]/ocf*100,0)} %</span></li>`).join("")+"</ul>":"");
+    const K="var(--c-kosten)",U=[["Investitionen",Math.abs(n0(c.capitalExpenditure)),K],["Dividenden",Math.abs(n0(first(c,"commonDividendsPaid","netDividendsPaid","dividendsPaid"))),"var(--c-gold)"],["Aktienrückkäufe",Math.abs(n0(first(c,"commonStockRepurchased"))),K],["Schuldentilgung",repay,K],["Zukäufe",Math.max(-n0(acq),0),K]].filter(u=>u[1]>0);
+    const rows=[{l:"Operativer Cashflow",s:0,e:ocf,c:"var(--c-cash)",t:1,val:ocf}];let run=ocf;
+    if(newDebt>0){rows.push({l:"Neue Schulden",s:run,e:run+newDebt,c:"var(--c-cash)",val:newDebt});run+=newDebt}
+    const sumU=U.reduce((a,u)=>a+u[1],0);if(sumU>run){const gap=sumU-run;rows.push({l:"Aus Kasse u. a.",s:run,e:run+gap,c:"var(--c-cash)",val:gap});run+=gap}
+    U.forEach(u=>{rows.push({l:u[0],s:run,e:run-u[1],c:u[2],val:u[1]});run-=u[1]});
+    if(run>ocf*0.005)rows.push({l:"Bleibt übrig",s:0,e:run,c:"var(--c-gewinn)",t:1,val:run});
+    el.innerHTML=wf(rows);
   }
   /* Uebereinander */
   function multi(){
