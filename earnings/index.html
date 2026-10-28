@@ -40,7 +40,9 @@ img.ek-logo{background:#fff}
 .ek-row .ek-logo{width:40px;height:40px;border-radius:11px}
 .ek-m{flex:1;min-width:0}.ek-nm{font-weight:600}.ek-nm a{color:inherit;text-decoration:none}.ek-nm a:hover{text-decoration:underline}
 .ek-sub{font-size:.85rem;color:#64748b}
-.ek-fig{display:flex;gap:16px;text-align:right;font-size:.88rem}.ek-fig div{min-width:84px}.ek-fig span{display:block;color:#64748b;font-size:.75rem}.ek-fig span .pos,.ek-fig span .neg{display:inline}
+.ek-fig{display:flex;gap:16px;text-align:right;font-size:.88rem}.ek-fig div{min-width:84px}.ek-fig span{display:block;color:#64748b;font-size:.75rem}.ek-fig span .pos,.ek-fig span .neg{display:inline;color:inherit}
+.ek-fig span.t-up{color:#15803d;font-weight:600}.ek-fig span.t-dn{color:#b91c1c;font-weight:600}.ek-fig span.t-eq{color:#64748b}
+.ek-bar2{display:block;width:100%;height:10px;margin-top:5px;overflow:visible}.ek-bar2 .bg{fill:#e8edf2}.ek-bar2 .fg{fill:#94a3b8}.ek-bar2.up .fg{fill:#16a34a}.ek-bar2.dn .fg{fill:#dc2626}.ek-bar2 .tk{stroke:#0f172a;stroke-width:2;vector-effect:non-scaling-stroke}
 .ek-badge{display:inline-block;padding:1px 8px;border-radius:8px;font-size:.72rem;background:#f1f5f9;color:#475569;margin-left:6px}
 .ek-badge.done{background:#dcfce7;color:#166534}.ek-badge.up{background:#16a34a;color:#fff}.ek-badge.dn{background:#dc2626;color:#fff}.ek-badge.eq,.ek-badge.mix{background:#e2e8f0;color:#334155}.ek-nm{display:block;line-height:1.3}.ek-tk{color:#64748b;font-weight:400;font-size:.85rem;margin-left:4px}.ek-pills{display:flex;flex-direction:column;align-items:flex-start;gap:4px;margin-top:6px}.ek-pills .ek-badge{margin-left:0}
 .pos{color:#15803d}.neg{color:#b91c1c}
@@ -69,7 +71,7 @@ img.ek-logo{background:#fff}
 <li><strong>Dividende:</strong> Die letzte Zahlung im Vergleich zur Zahlung ein Jahr davor und die Summe der letzten zwölf Monate gegen die zwölf Monate davor. So siehst du Erhöhungen und Kürzungen in Prozent.</li>
 <li><strong>Meine Werte:</strong> Der Kalender liest deine Watchlist aus dem Aktien-Hub und die Werte aus deinem Depot, alles nur in deinem Browser.</li>
 </ul>
-<p>Die Daten stammen von Financial Modeling Prep und laufen über einen Server dieser Seite, du musst nichts eingeben. Das Datenpaket deckt vor allem US-Werte ab. Bei berichteten Zahlen zeigt ein Etikett, ob Gewinn und Umsatz die Erwartung der Analysten übertroffen, verfehlt oder erfüllt haben (Abweichung ab ein Prozent). Termine können sich ändern, und Schätzungen sind keine Prognosen der Firma.</p>
+<p>Die Daten stammen von Financial Modeling Prep und laufen über einen Server dieser Seite, du musst nichts eingeben. Das Datenpaket deckt vor allem US-Werte ab. Bei berichteten Zahlen zeigt ein Etikett, ob Gewinn und Umsatz die Erwartung der Analysten übertroffen, verfehlt oder erfüllt haben (Abweichung ab ein Prozent). Der kleine Balken zeigt das tatsächliche Ergebnis, der dunkle Strich die Erwartung; grün heißt besser, rot schlechter als erwartet. Termine können sich ändern, und Schätzungen sind keine Prognosen der Firma.</p>
 <p>Weitere Werkzeuge: <a href="../aktien/">Aktien-Hub</a>, <a href="../depot/">Depot mit Dividendenkalender</a>, <a href="../news/">News-Kalender</a>.</p>
 <p class="note"><strong>Hinweis:</strong> Keine Anlageberatung. Angaben ohne Gewähr.</p>
 </article></main>
@@ -122,6 +124,12 @@ function verdict(ge,gv){
   var up=a.some(function(x){return x>=0.01}),dn=a.some(function(x){return x<=-0.01});
   return up&&dn?["gemischt","mix"]:up?["übertroffen","up"]:dn?["verfehlt","dn"]:["erfüllt","eq"];
 }
+function tone(g){return g==null||!isFinite(g)?"eq":g>=0.01?"up":g<=-0.01?"dn":"eq"}
+function bar(a,e,g){
+  if(a==null||e==null||isNaN(a)||isNaN(e))return"";
+  var hi=Math.max(a,e,0),lo=Math.min(a,e,0),sp=(hi-lo)||1,X=function(v){return(v-lo)/sp*100},z=X(0),xa=X(a),xe=X(e);
+  return '<svg class="ek-bar2 '+tone(g)+'" viewBox="0 0 100 10" preserveAspectRatio="none" aria-hidden="true"><rect x="0" y="2" width="100" height="6" rx="3" class="bg"/><rect x="'+Math.min(z,xa).toFixed(2)+'" y="2" width="'+Math.max(1.5,Math.abs(xa-z)).toFixed(2)+'" height="6" rx="3" class="fg"/><line x1="'+xe.toFixed(2)+'" x2="'+xe.toFixed(2)+'" y1="0" y2="10" class="tk"/></svg>';
+}
 function inScope(r){
   var s=r.symbol;
   if(scope==="mine"&&!MINE[s])return false;
@@ -150,7 +158,8 @@ function renderList(){
     var eps=done?r.epsActual:r.epsEstimated,rev=done?r.revenueActual:r.revenueEstimated;
     var ge=done?gr(r.epsActual,r.epsEstimated):null,gv=done?gr(r.revenueActual,r.revenueEstimated):null,vd=verdict(ge,gv);
     var ee=done&&r.epsEstimated!=null?" · Erw. "+num(r.epsEstimated)+" "+gp(ge):"",ev=done&&r.revenueEstimated!=null?" · Erw. "+big(r.revenueEstimated)+" "+gp(gv):"";
-    h+='<div class="ek-item" data-s="'+esc(s)+'" data-d="'+esc(r.date)+'"><button type="button" class="ek-row" aria-expanded="false">'+logo(s,nm(s))+'<span class="ek-m"><span class="ek-nm"><a href="../aktien/?s='+encodeURIComponent(s)+'">'+esc(nm(s))+'</a>'+'</span><span class="ek-pills"><span class="ek-badge'+(done?" done":"")+'">'+(done?"berichtet":"erwartet")+'</span>'+(vd?'<span class="ek-badge '+vd[1]+'" title="Gewinn und Umsatz im Vergleich zur Analystenerwartung">'+vd[0]+'</span>':"")+'</span></span><span class="ek-fig"><div>'+num(eps)+'<span>Gewinn/Aktie'+(done?ee:" (Schätzung)")+'</span></div><div>'+big(rev)+'<span>Umsatz'+(done?ev:" (Schätzung)")+'</span></div></span></button><div class="ek-body"><p class="ek-sub">Lade Details …</p></div></div>';
+    var be=done&&r.epsEstimated!=null?bar(r.epsActual,r.epsEstimated,ge):"",bv=done&&r.revenueEstimated!=null?bar(r.revenueActual,r.revenueEstimated,gv):"";
+    h+='<div class="ek-item" data-s="'+esc(s)+'" data-d="'+esc(r.date)+'"><button type="button" class="ek-row" aria-expanded="false">'+logo(s,nm(s))+'<span class="ek-m"><span class="ek-nm"><a href="../aktien/?s='+encodeURIComponent(s)+'">'+esc(nm(s))+'</a>'+'</span><span class="ek-pills"><span class="ek-badge'+(done?" done":"")+'">'+(done?"berichtet":"erwartet")+'</span>'+(vd?'<span class="ek-badge '+vd[1]+'" title="Gewinn und Umsatz im Vergleich zur Analystenerwartung">'+vd[0]+'</span>':"")+'</span></span><span class="ek-fig"><div>'+num(eps)+'<span class="'+(done?"t-"+tone(ge):"")+'">Gewinn/Aktie'+(done?ee:" (Schätzung)")+'</span>'+be+'</div><div>'+big(rev)+'<span class="'+(done?"t-"+tone(gv):"")+'">Umsatz'+(done?ev:" (Schätzung)")+'</span>'+bv+'</div></span></button><div class="ek-body"><p class="ek-sub">Lade Details …</p></div></div>';
   });
   $("list").innerHTML=h+"</div>";
 }
