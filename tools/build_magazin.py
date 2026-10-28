@@ -89,6 +89,12 @@ def footer_html(depth):
     return (f'<footer class="site-footer"><div class="wrap">\n<div class="cols">\n{l}\n<a href="{p}ueber-uns/">Über uns</a><a href="{p}impressum/">Impressum</a><a href="{p}datenschutz/">Datenschutz</a><a href="https://www.instagram.com/dividenden.rechner" rel="noopener nofollow me" target="_blank">Instagram</a>\n</div>\n'
             '<p>Alle Inhalte dienen der allgemeinen Information und sind keine Anlage-, Steuer- oder Rechtsberatung. Kapitalanlagen sind mit Risiken verbunden.</p>\n</div></footer>')
 
+def _cssv():
+    import hashlib
+    try: return hashlib.md5(open("assets/site.css", "rb").read()).hexdigest()[:8]
+    except Exception: return "1"
+CSSV = _cssv()
+
 def head(depth, title, desc, url, og_type, image_url, extra=""):
     p = "../" * depth
     return f'''<!DOCTYPE html>
@@ -113,7 +119,7 @@ def head(depth, title, desc, url, og_type, image_url, extra=""):
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:image" content="{image_url}">
 <meta name="theme-color" content="#ffffff">
-<link rel="stylesheet" href="{p}assets/site.css">
+<link rel="stylesheet" href="{p}assets/site.css?v={CSSV}">
 {extra}<link rel="icon" href="{p}favicon.ico" sizes="any">
 <link rel="icon" type="image/png" sizes="32x32" href="{p}assets/favicon-32.png">
 <link rel="icon" type="image/png" sizes="192x192" href="{p}assets/favicon-192.png">
@@ -241,12 +247,16 @@ def logo_is_light(path):
         return False
 
 def card_logo(x, pre):
-    """Logo-Plakette links oben im Titelbild der Magazinkarten (immer vorhanden: Datei, sonst Buchstabe)."""
+    """Logo-Plakette links oben im Titelbild der Magazinkarten (immer vorhanden: Datei, sonst Buchstabe).
+    Stil steht zusaetzlich inline, damit es auch mit einer alten, zwischengespeicherten site.css richtig sitzt."""
+    base = "position:absolute;left:12px;top:12px;width:52px;height:52px;box-sizing:border-box;border-radius:12px;box-shadow:0 2px 10px rgba(0,0,0,.22);display:flex;align-items:center;justify-content:center;"
     lf = x.get("logo_file", "")
     if lf and os.path.exists(lf):
-        return f'<span class="mclogo{" dark" if logo_is_light(lf) else ""}"><img src="{pre}{esc(lf)}" alt="" width="40" height="40" loading="lazy"></span>'
+        dark = logo_is_light(lf)
+        return (f'<span class="mclogo{" dark" if dark else ""}" style="{base}padding:6px;background:{"#14202b" if dark else "#fff"}">'
+                f'<img src="{pre}{esc(lf)}" alt="" width="40" height="40" loading="lazy" style="display:block;max-width:100%;max-height:100%;object-fit:contain"></span>')
     name = re.sub(r"[^A-Za-z0-9]", "", x.get("title", "?")) or "?"
-    return f'<span class="mclogo mcmono">{esc(name[0].upper())}</span>'
+    return f'<span class="mclogo mcmono" style="{base}background:#2f9e5b;color:#fff;font-weight:800;font-size:24px">{esc(name[0].upper())}</span>'
 
 def build_index(posts):
     depth = 1; pre = "../"; url = "magazin/"
@@ -260,7 +270,7 @@ def build_index(posts):
     o += f'<script src="{pre}assets/navigation.js"></script>\n<script src="{pre}assets/logos.js"></script>\n<main class="wrap">\n'
     o += f'<nav class="crumbs" aria-label="Brotkrumen"><a href="{pre}">Start</a> › <span aria-current="page">Magazin</span></nav>\n<h1>Magazin</h1>\n<p class="lead">{esc(desc)}</p>\n<div class="cards magcards">\n'
     for x in posts:
-        o += (f'<a class="card" href="{x["slug"]}/"><div class="mcwrap"><img class="mcover" src="{pre}{x["img"]}" alt="" width="1200" height="675" loading="lazy">{card_logo(x, pre)}</div>'
+        o += (f'<a class="card" href="{x["slug"]}/"><div class="mcwrap" style="position:relative;margin:0"><img class="mcover" src="{pre}{x["img"]}" alt="" width="1200" height="675" loading="lazy">{card_logo(x, pre)}</div>'
               f'<p class="kicker">{esc(x["category"])} · {de_dt_kurz(x["dt"])}</p><h3>{esc(x["title"])}</h3><p>{esc(x["description"])}</p></a>\n')
     o += '</div>\n<p class="meta"><a href="feed.xml">RSS-Feed abonnieren</a></p>\n' + HINT + "\n</main>\n" + footer_html(depth) + "\n</body>\n</html>\n"
     open("magazin/index.html", "w", encoding="utf-8").write(o)
