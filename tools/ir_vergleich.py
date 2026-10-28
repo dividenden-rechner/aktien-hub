@@ -11,8 +11,14 @@ sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 import ir_agent as ia
 
 ARTICLE_SCHEMA = {
-    "type": "OBJECT", "required": ["title", "description", "slug", "body_markdown", "table"],
+    "type": "OBJECT", "required": ["title", "description", "slug", "body_markdown", "table", "chart"],
     "properties": {
+        "chart": {"type": "OBJECT", "required": ["title", "unit", "series"], "properties": {
+            "title": {"type": "STRING"}, "unit": {"type": "STRING"},
+            "series": {"type": "ARRAY", "items": {"type": "OBJECT", "required": ["name", "values"], "properties": {
+                "name": {"type": "STRING"},
+                "values": {"type": "ARRAY", "items": {"type": "OBJECT", "required": ["company", "value"], "properties": {
+                    "company": {"type": "STRING"}, "value": {"type": "NUMBER"}}}}}}}}},
         "title": {"type": "STRING"}, "description": {"type": "STRING"}, "slug": {"type": "STRING"}, "body_markdown": {"type": "STRING"},
         "table": {"type": "OBJECT", "required": ["rows"], "properties": {"rows": {"type": "ARRAY", "items": {
             "type": "OBJECT", "required": ["metric", "values"], "properties": {
@@ -82,6 +88,52 @@ def tabelle_md(table, entries):
     return "| Kennzahl | " + " | ".join(namen) + " |\n|---|" + "---|" * len(namen) + "\n" + "\n".join(zeilen) + "\n"
 
 
+def draw_vergleich(chart, path):
+    """Gruppiertes Balkendiagramm: je Unternehmen eine Gruppe, je Reihe ein Balken (Hub-Farben)."""
+    from PIL import Image, ImageDraw
+    series = [x for x in (chart.get("series") or []) if x.get("values")][:3]
+    firms = []
+    for x in series:
+        for v in x["values"]:
+            if v["company"] not in firms: firms.append(v["company"])
+    if not series or len(firms) < 2:
+        return False
+    W, H = 1600, 900
+    im = Image.new("RGB", (W, H), "#ffffff"); d = ImageDraw.Draw(im)
+    cols = ["#2f6fdb", "#1f9d55", "#0e9aa7"]; red = "#c0392b"; dark, grey = "#14202b", "#5d6b78"
+    d.rectangle([0, 0, W, 16], fill="#2f9e5b")
+    d.text((70, 50), chart.get("title") or "Vergleich", font=ia.font(34, True), fill=dark)
+    d.text((70, 96), chart.get("unit") or "", font=ia.font(22), fill=grey)
+    # Legende
+    lx = 70
+    for i, x in enumerate(series):
+        d.rounded_rectangle([lx, 150, lx + 26, 176], 5, fill=cols[i]); d.text((lx + 38, 148), x["name"], font=ia.font(24), fill=dark)
+        lx += 60 + int(d.textlength(x["name"], font=ia.font(24)))
+    allv = [v["value"] for x in series for v in x["values"]] + [0]
+    vmax, vmin = max(allv), min(allv); span = (vmax - vmin) or 1
+    top, bot, left, right = 230, H - 150, 70, W - 70
+    zero = bot - (0 - vmin) / span * (bot - top)
+    gw = (right - left) / len(firms)
+    d.line([left, zero, right, zero], fill="#c9d3dc", width=2)
+    bw = gw * 0.72 / len(series)
+    for gi, f in enumerate(firms):
+        gx = left + gi * gw + gw * 0.14
+        for si, x in enumerate(series):
+            val = next((v["value"] for v in x["values"] if v["company"] == f), None)
+            if val is None: continue
+            x0 = gx + si * bw + 6; x1 = gx + (si + 1) * bw - 6
+            yv = zero - val / span * (bot - top)
+            y0, y1 = (yv, zero) if val >= 0 else (zero, yv)
+            d.rounded_rectangle([x0, y0, x1, max(y1, y0 + 2)], 6, fill=cols[si] if val >= 0 else red)
+            t = ("%g" % val).replace(".", ","); tf = ia.font(26, True)
+            d.text(((x0 + x1) / 2 - d.textlength(t, font=tf) / 2, (y0 - 36) if val >= 0 else (y1 + 6)), t, font=tf, fill=dark)
+        lf = ia.font(26, True)
+        d.text((gx + gw * 0.36 - d.textlength(f, font=lf) / 2, bot + 24), f, font=lf, fill=dark)
+    d.text((70, H - 50), "Quelle: Unternehmensberichte, eigene Darstellung  ·  dividenden-rechner.de", font=ia.font(22), fill=grey)
+    im.save(path, "PNG", optimize=True)
+    return True
+
+
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--src", action="append", default=[], help="ticker:KO, url:https://..., oder Pfad zu einer PDF (mehrfach)")
@@ -95,27 +147,76 @@ def main():
         specs += sorted(glob.glob(os.path.join(a.dir, "*.pdf")))
     if len(specs) < 2:
         ia.fail("Fuer einen Vergleich werden mindestens zwei Berichte gebraucht (--src mehrfach oder --dir).")
+    key = ia.api_key()
     entries = []
-    for s in specs:
+    for s_ in specs:
         try:
-            e = lade(s, a.art)
+            e = lade(s_, a.art)
         except SystemExit:
             e = None
         if e:
+            if e["src"]["kind"] == "pdf":   # eigene Kopie, damit spaetere Quellen sie nicht ueberschreiben
+                import shutil
+                cp = f"/tmp/vg{len(entries) + 1}.pdf"; shutil.copy(e["src"]["path"], cp); e["src"]["path"] = cp
             entries.append(e); print("Gelesen:", e["out"].get("company"), e["out"].get("period"))
         else:
-            print(f"::warning::Quelle {s} konnte nicht gelesen werden, wird uebersprungen.")
+            print(f"::warning::Quelle {s_} konnte nicht gelesen werden, wird uebersprungen.")
     if len(entries) < 2:
         ia.fail("Weniger als zwei Berichte lesbar, kein Vergleich moeglich.")
+    namen = [e["out"]["company"] for e in entries]
+    # Hintergrund: je Unternehmen (letzte Quartale und Jahre) und Markt/Politik
+    hint = ""; weitere = []
+    for i, e in enumerate(entries):
+        try:
+            t, srcs = ia.research(e["out"], key)
+        except SystemExit:
+            t, srcs = "", []
+        if t:
+            hint += f"\n\nHINTERGRUND {e['out']['company']}:\n{t[:7000]}"
+            weitere += srcs[:4]
+    try:
+        mt, ms = ia.ground(("Recherchiere mit der Websuche fuer einen Vergleichsartikel ueber " + ", ".join(namen) + (f" (Thema: {a.fokus})" if a.fokus.strip() else "") +
+                            ". Liefere knappe Stichpunkte auf Deutsch mit Zahlen und Zeitangaben zu: 1. Lage und Nachfrage in der Branche, aktuelle Marktentwicklung (Preise, Lieferketten, Auftragslage, Bewertung der Branche). "
+                            "2. Geopolitik und Regulierung (Zoelle, Sanktionen, Konflikte, Genehmigungen), die diese Unternehmen unterschiedlich treffen. 3. Konjunktur, Zinsen, Waehrungen. "
+                            "4. Wie die Prognosen (Guidance) der Unternehmen von Analysten eingeschaetzt werden. Sachlich und kritisch, Chancen und Risiken. Erfinde nichts, lass Unbelegtes weg."), key)
+    except SystemExit:
+        mt, ms = "", []
+    if mt:
+        hint += "\n\nMARKT UND POLITIK:\n" + mt[:8000]; weitere += ms[:6]
+    # Ausschnitte aus den Berichten
+    os.makedirs("/tmp/vfigs", exist_ok=True); figs = {}
+    for i, e in enumerate(entries, 1):
+        if e["src"]["kind"] != "pdf": continue
+        for j, fg in enumerate((e["out"].get("figures") or [])[:3], 1):
+            fid = f"c{i}f{j}"; tmp = f"/tmp/vfigs/{fid}.png"
+            if ia.render_figure(e["src"]["path"], fg, tmp):
+                figs[fid] = {"tmp": tmp, "title": fg.get("title") or "Auszug", "page": fg.get("page"), "shows": fg.get("shows") or "", "company": e["out"]["company"], "e": e}
     daten = [{k: e["out"].get(k) for k in ("company", "ticker", "report_type", "industry", "period", "report_date", "period_end", "prior_period_end", "kpis", "cashflow", "balance", "details")} for e in entries]
     fakten = "\n".join(f"- {n}: Free Cashflow ({per}) {f}; Nettoverschuldung {nd} (eigene Berechnung aus Angaben des Berichts)" for n, per, f, nd in netto(entries))
     prompt = (ia.read_prompt("ir_vergleich_prompt.md") + (f"\n\nFOKUS DES REDAKTEURS: {a.fokus}" if a.fokus.strip() else "")
               + "\n\nFAKTEN (vom Programm berechnet, exakt uebernehmen):\n" + fakten
-              + "\n\nEXTRAHIERTE KENNZAHLEN JE UNTERNEHMEN (JSON):\n" + json.dumps(daten, ensure_ascii=False))
-    art = ia.clean_article(ia._generate([{"text": prompt}], ARTICLE_SCHEMA, ia.api_key()))
+              + "\n\nEXTRAHIERTE KENNZAHLEN JE UNTERNEHMEN (JSON):\n" + json.dumps(daten, ensure_ascii=False) + hint
+              + ("\n\nAUSSCHNITTE (Bilder aus den Berichten):\n" + "\n".join(f"- {k}: {v['company']}: {v['title']} | {v['shows']}" for k, v in figs.items()) if figs else ""))
+    parts = [{"text": f"BERICHT {e['out']['company']} ({e['out'].get('report_type') or ''} {e['out'].get('period') or ''}):\n\n{(e['text'] or '')[:140000]}"} for e in entries] + [{"text": prompt}]
+    art = ia.clean_article(ia._generate(parts, ARTICLE_SCHEMA, key))
     bad = pruefen_werte(art.get("table") or {}, entries)
-    # Schreiben
+    # Diagramm pruefen und zeichnen
     slug = re.sub(r"[^a-z0-9]+", "-", art["slug"].lower()).strip("-") or "vergleich"
+    chart = art.get("chart") or {}
+    toks = set()
+    for d_ in daten:
+        for k in d_.get("kpis") or []:
+            for fld in ("value", "change"):
+                for n in re.findall(r"\d+(?:[.,]\d+)?", k.get(fld) or ""):
+                    toks.add(n.replace(",", ".").rstrip("0").rstrip(".") if "." in n.replace(",", ".") else n)
+    def belegt(x):
+        t = ("%g" % abs(x)); return t in toks
+    for ser in chart.get("series") or []:
+        ser["values"] = [v for v in ser.get("values") or [] if belegt(v["value"])]
+    gpath = os.path.join(ia.ROOT, "assets", "magazin", f"{slug}-vergleich.png")
+    os.makedirs(os.path.dirname(gpath), exist_ok=True)
+    has_chart = draw_vergleich(chart, gpath)
+    # Schreiben
     stamp = datetime.now(ZoneInfo("Europe/Berlin")).strftime("%Y-%m-%d-%H%M")
     vorh = [v for v in glob.glob(os.path.join(ia.ROOT, "content", "magazin", f"*{slug}.md"))
             if re.fullmatch(r"(\d{4}-\d{2}-\d{2}(-\d{4})?-)?" + re.escape(slug) + r"\.md", os.path.basename(v))]
@@ -127,11 +228,25 @@ def main():
     dom = re.sub(r"^(https?://)?(www\.)?|/.*$", "", first.get("website_domain") or "")
     fm = ["---", f"title: {ia.q(art['title'])}", f"description: {ia.q(art['description'])}",
           f"date: {datetime.now(ZoneInfo('Europe/Berlin')).strftime('%Y-%m-%d %H:%M')}", f"author: {ia.q(ia.CFG['author'])}",
-          f"author_bio: {ia.q(ia.CFG['author_bio'])}", "category: Branchenvergleich", "logo_name: " + ia.q(first["company"])]
+          f"author_bio: {ia.q(ia.CFG['author_bio'])}", "category: Branchenvergleich"]
+    hinweise = []
+    photo = None
+    try:
+        photo = ia.pick_photo(first["company"], first.get("ticker", ""), key)
+    except Exception as ex:
+        print("Foto-Suche fehlgeschlagen:", ex)
+    if photo:
+        rel = ia.save_photo(photo, slug)
+        fm += [f"image: {rel}", f"image_alt: {ia.q('Foto zu ' + first['company'] + ': ' + (photo['desc'] or photo['title'].replace('File:', '')))}",
+               f"image_credit: {ia.q('Foto: ' + photo['artist'] + ' / Wikimedia Commons, ' + photo['lic'])}", f"image_source: {photo['page']}"]
+        hinweise.append(f"Aufmacherfoto ist automatisch von Wikimedia Commons gewaehlt ({first['company']}): bitte pruefen, ob es zum Vergleich passt.")
+    else:
+        hinweise.append("Kein freies Aufmacherfoto gefunden, das Titelbild entsteht automatisch. Eigenes Foto: image, image_alt, image_credit ergaenzen.")
+    fm.append("logo_name: " + ia.q(first["company"]))
     if tk: fm.append(f"logo_symbol: {tk}")
     if dom and re.match(r"^[a-z0-9.\-]+\.[a-z]{2,}$", dom, re.I): fm.append(f"logo_domain: {dom}")
     fm += ["draft: true", "---", ""]
-    hinweise = ["Vergleichsartikel: Kasten, Tabelle und Aussagen bitte gegen die Berichte pruefen. Titelbild entsteht automatisch (Logo: " + first["company"] + "); eigenes Foto: image, image_alt, image_credit ergaenzen."]
+    hinweise.insert(0, "Vergleichsartikel: Kasten, Tabelle, Diagramm und Aussagen bitte gegen die Berichte pruefen; Hintergrundaussagen stammen aus einer Websuche.")
     if bad:
         hinweise.append("Diese Tabellenwerte stehen nicht woertlich in den ausgelesenen Kennzahlen: " + "; ".join(bad))
     quellen = []
@@ -145,13 +260,34 @@ def main():
         body = body.replace("{{TABELLE}}", "## Die Zahlen im Vergleich\n\n" + tab + "\n*Werte aus den jeweiligen Berichten, nicht umgerechnet; Zeiträume und Rechnungslegung können abweichen.*\n")
     elif tab:
         body += "\n\n## Die Zahlen im Vergleich\n\n" + tab
+    gtxt = f"![{chart.get('title') or 'Vergleich'}](/assets/magazin/{slug}-vergleich.png)\n*Eigene Darstellung nach Daten aus den Berichten ({', '.join(namen)}).*"
+    if has_chart:
+        if "{{GRAFIK}}" in body: body = body.replace("{{GRAFIK}}", gtxt)
+        else:
+            m_ = re.search(r"## Die ausführliche Version\n+(?:###[^\n]*\n+)?[^\n]+\n", body)
+            body = (body[:m_.end()] + "\n" + gtxt + "\n" + body[m_.end():]) if m_ else body + "\n\n" + gtxt
+    body = body.replace("{{GRAFIK}}", "")
+    used = []
+    import shutil
+    for fid, f in figs.items():
+        tag = "{{FIG:" + fid + "}}"
+        if tag in body:
+            rel = f"assets/magazin/{slug}-{fid}.png"; shutil.copy(f["tmp"], os.path.join(ia.ROOT, rel)); used.append(fid)
+            o = f["e"]["out"]; link = f["e"]["src"].get("url", ""); lk = f" · [Original]({link})" if link.startswith("http") else ""
+            pg = f.get("page") if f["e"]["src"].get("pages_real", True) and f.get("page") else None
+            body = body.replace(tag, f"![{f['title'].replace('[', '(').replace(']', ')')}](/{rel})\n*{f['title']}. Quelle: {o['company']}, {o.get('report_type') or 'Bericht'} {o.get('period') or ''}" + (f", S. {pg}" if pg else "") + f"{lk}. Ausschnitt nur zugeschnitten, sonst unverändert.*")
+    body = re.sub(r"\{\{FIG:[^}]*\}\}", "", body)
+    if used: hinweise.append("Ausschnitte aus den Berichten im Text (" + ", ".join(used) + "): bitte Zuschnitt und Platz pruefen, unpassende Bildzeilen loeschen.")
     nd = netto(entries)
     if any(f != "–" or n != "–" for _, _, f, n in nd):
         body += "\n\n## Cashflow und Schulden im Vergleich\n\n| Unternehmen | Free Cashflow | Nettoverschuldung |\n|---|---|---|\n" + "\n".join(f"| {c} | {f} ({p}) | {n} |" for c, p, f, n in nd) + "\n\n*Free Cashflow = operativer Cashflow minus Investitionen, Nettoverschuldung = Finanzschulden minus liquide Mittel. Eigene Berechnung aus Angaben der Berichte.*\n"
+    if weitere:
+        seen = []; [seen.append(x) for x in weitere if x[1] not in [y[1] for y in seen]]
+        body += "\nWeitere Quellen zum Hintergrund: " + " · ".join(f"[{(ti or u)[:60]}]({u})" for ti, u in seen[:8]) + "\n"
     body += "\n*Quellen: " + "; ".join(re.sub(r"\s*\(\[Link\]\([^)]*\)\)", "", q) for q in quellen) + ". Keine Anlageberatung.*\n"
     head = "".join(f"<!-- PRÜFEN: {h} -->\n" for h in hinweise) + "\n"
     open(md, "w", encoding="utf-8").write("\n".join(fm) + head + body + "\n")
-    print("Entwurf:", md); print("Nicht verifizierte Tabellenwerte:", bad if bad else "keine")
+    print("Entwurf:", md); print("Nicht verifizierte Tabellenwerte:", bad if bad else "keine"); print("Diagramm:", "ja" if has_chart else "nein", "· Ausschnitte:", ", ".join(used) or "keine")
 
 
 if __name__ == "__main__":

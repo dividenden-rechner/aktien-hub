@@ -203,6 +203,11 @@ def research(out, key):
               f"4. Branchenspezifisch: {spez} "
               "5. Schulden: Fälligkeitsprofil und Refinanzierung, Ratings. "
               "Nenne zu jeder Zahl Jahr oder Quartal. Erfinde nichts; was du nicht findest, lässt du weg.")
+    return ground(prompt, key)
+
+
+def ground(prompt, key):
+    """Websuche (Gemini Grounding) mit beliebigem Auftrag. Liefert (Text, [(Titel, URL)])."""
     body = {"contents": [{"parts": [{"text": prompt}]}], "tools": [{"google_search": {}}], "generationConfig": {"temperature": 0.2}}
     global RESEARCH_OFF
     if RESEARCH_OFF:
