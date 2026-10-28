@@ -72,9 +72,9 @@ jobs:
           while read -r f; do
             [ -z "$f" ] && continue
             case "$f" in
-              ticker:*) python3 tools/ir_agent.py --ticker "${f#ticker:}" ;;
-              url:*) python3 tools/ir_agent.py --url "${f#url:}" ;;
-              *) python3 tools/ir_agent.py "$f" ;;
+              ticker:*) python3 tools/ir_agent.py --ticker "${f#ticker:}" || echo "::warning::Fehler bei $f, weiter mit dem naechsten" ;;
+              url:*) python3 tools/ir_agent.py --url "${f#url:}" || echo "::warning::Fehler bei $f, weiter mit dem naechsten" ;;
+              *) python3 tools/ir_agent.py "$f" || echo "::warning::Fehler bei $f, weiter mit dem naechsten" ;;
             esac
           done < /tmp/todo.txt
       - name: Committen
