@@ -28,11 +28,11 @@ Teil 1, Kurzfassung als hervorgehobener Kasten. Beginne body_markdown mit genau 
     2. **[Stichwort]:** ...
     3. **[Stichwort]:** ...
 
-Die erste Zeile im Kasten nennt die beiden Kennzahlen (Werte und Prozent aus Bericht oder FAKTEN, Prozent ist die Veränderung zum Vorjahreszeitraum; gib bei Gewinn an, ob berichtet oder bereinigt, wenn das nicht eindeutig ist; steht keine Prozentangabe im Bericht oder in FAKTEN, lässt du die Klammer weg). Darunter stehen genau drei Schlüsselpunkte, jeder höchstens zwei kurze Sätze:
-1. Zahlen: Steigen oder fallen Umsatz und Gewinn, und wie deutlich. Beispiel für ein Stichwort: "Umsatz und Gewinn".
-2. Ursache: Warum ist das so, was hat es getrieben oder gebremst, in einfachen Worten und mit konkreten Produkten, Regionen oder Kosten. Beispiel für ein Stichwort: "Der Grund".
-3. Größtes Problem: Wo hakt es in diesem Quartal oder Jahr am meisten (Rückgang, Margendruck, Schulden, Rechtsrisiko, Abhängigkeit von einem Produkt). Gibt es wirklich nichts Kritisches, nenne den größten offenen Punkt im Ausblick. Beispiel für ein Stichwort: "Wunder Punkt".
-Die Stichworte sind kurz (ein bis drei Wörter) und sollen von Artikel zu Artikel abwechseln, genauso wie Satzanfänge und Wortwahl: Die Kästen verschiedener Artikel dürfen nicht nach Schablone klingen. Ausblick und Dividendenerhöhung kommen nur in die ausführliche Version, außer eines von beiden ist die Hauptnachricht.
+Die erste Zeile im Kasten nennt die beiden Kennzahlen (Werte und Prozent aus Bericht oder FAKTEN, Prozent ist die Veränderung zum Vorjahreszeitraum; gib bei Gewinn an, ob berichtet oder bereinigt, wenn das nicht eindeutig ist; steht keine Prozentangabe im Bericht oder in FAKTEN, lässt du die Klammer weg; fehlt eine der beiden Kennzahlen ganz, nennst du nur die andere, schreibe nie "n.a." oder "k. A."). Darunter stehen genau drei Schlüsselpunkte, jeder höchstens zwei kurze Sätze:
+1. Zahlen: Steigen oder fallen Umsatz und Gewinn, und wie deutlich.
+2. Ursache: Warum ist das so, was hat es getrieben oder gebremst, in einfachen Worten und mit konkreten Produkten, Regionen oder Kosten.
+3. Größtes Problem: Wo hakt es in diesem Quartal oder Jahr am meisten (Rückgang, Margendruck, Schulden, Rechtsrisiko, Abhängigkeit von einem Produkt). Gibt es wirklich nichts Kritisches, nenne den größten offenen Punkt im Ausblick.
+Die Stichworte sind kurz (ein bis drei Wörter), sachlich und sollen von Artikel zu Artikel abwechseln (zum Beispiel "Zahlen", "Ergebnis", "Ursache", "Treiber", "Bremse", "Knackpunkt", "Risiko", "Schwachstelle"; nie umgangssprachliche Wortspiele), genauso wie Satzanfänge und Wortwahl: Die Kästen verschiedener Artikel dürfen nicht nach Schablone klingen. Ausblick und Dividendenerhöhung kommen nur in die ausführliche Version, außer eines von beiden ist die Hauptnachricht.
 
 Teil 2, ausführliche Version. Nach dem Kasten folgt die Zwischenüberschrift "## Die ausführliche Version" und darunter dasselbe noch einmal ausführlich und journalistisch, mit den Abschnitten unten. Die Zwischenüberschriften dieser Abschnitte setzt du mit ### (nicht mit ##).
 

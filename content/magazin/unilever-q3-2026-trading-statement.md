@@ -20,14 +20,15 @@ logo_file: assets/logos/ulvr-l.png
 <!-- PRÜFEN: Ausschnitte aus dem Bericht im Text (f1, f2, f3): bitte prüfen, ob Zuschnitt und Platz passen. Unpassende Bildzeilen einfach löschen. -->
 
 !!! kurz "Kurz gesagt"
-    **Umsatz:** 13,3 Mrd. EUR (+6,7 %) · **Gewinn:** n.a.
+    **Umsatz:** 13,3 Mrd. EUR (+6,7 %)
 
-![Umsatzwachstum nach Region im Q3 2026 (Unilever, Quartalszahlen Q3 2026)](/assets/magazin/unilever-q3-2026-trading-statement-grafik.png)
-*Eigene Darstellung nach Daten aus: Unilever, Quartalszahlen Q3 2026 vom 2026-10-28.*
 
     1. **Umsatz und Volumen:** Der Konzernumsatz steigt im dritten Quartal auf 13,3 Milliarden Euro, gestützt von einem organischen Wachstum von 5,2 Prozent.
     2. **Der Grund:** Vor allem starke Volumina und notwendige Preiserhöhungen als Reaktion auf gestiegene Rohstoffkosten treiben die Erlöse.
-    3. **Wunder Punkt:** In den Regionen Nordamerika und Europa sinken die Umsätze organisch, was die Gesamtdynamik bremst.
+    3. **Knackpunkt:** In den Regionen Nordamerika und Europa sinken die Umsätze organisch, was die Gesamtdynamik bremst.
+
+![Umsatzwachstum nach Region im Q3 2026 (Unilever, Quartalszahlen Q3 2026)](/assets/magazin/unilever-q3-2026-trading-statement-grafik.png)
+*Eigene Darstellung nach Daten aus: Unilever, Quartalszahlen Q3 2026 vom 2026-10-28.*
 
 ## Die ausführliche Version
 

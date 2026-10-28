@@ -1017,7 +1017,11 @@ def build(out, text, src_note, force=False, calc_rows=None, fmp_used=False, figs
     if used:
         hinweise.append("Ausschnitte aus dem Bericht im Text (" + ", ".join(used) + "): bitte prüfen, ob Zuschnitt und Platz passen. Unpassende Bildzeilen einfach löschen.")
     if has_chart:
-        parts = body_md.split("\n\n", 1)
+        mm = re.search(r"## Die ausführliche Version\n+(?:###[^\n]*\n+)?[^\n]+\n", body_md)   # nach dem Einstieg der ausfuehrlichen Version, nie im Kurz-Kasten
+        if mm:
+            parts = [body_md[:mm.end()].rstrip("\n"), body_md[mm.end():].lstrip("\n")]
+        else:
+            parts = body_md.split("\n\n", 1)
         glink = f" · [Original]({src['url']})" if (src or {}).get("url", "").startswith("http") else ""
         body_md = parts[0] + f"\n\n![{chart_alt}](/assets/magazin/{slug}-grafik.png)\n*Eigene Darstellung nach Daten aus: {out['company']}, {doc} vom {out['report_date']}{glink}.*\n\n" + (parts[1] if len(parts) > 1 else "")
     head = "".join(f"<!-- PRÜFEN: {h} -->\n" for h in hinweise) + "\n"

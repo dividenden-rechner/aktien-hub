@@ -21,12 +21,13 @@ logo_file: assets/logos/2318-hk.png
 !!! kurz "Kurz gesagt"
     **Umsatz:** 787.634 Mio. RMB (-12,6 %) · **Gewinn:** 96.645 Mio. RMB (-27,3 %)
 
-![Wichtige Finanzkennzahlen der Ping An Gruppe (9M 2026) (Ping An Insurance (Group) Company of China, Ltd., Quartalszahlen Q3 2026)](/assets/magazin/ping-an-q3-2026-grafik.png)
-*Eigene Darstellung nach Daten aus: Ping An Insurance (Group) Company of China, Ltd., Quartalszahlen Q3 2026 vom 2026-10-28.*
 
     1. **Entwicklung:** Der operative Gewinn stieg dank Stärke im Kerngeschäft, während der berichtete Nettogewinn durch Marktschwankungen nachgab.
     2. **Geschäftstreiber:** Stabile Zuwächse in der Lebensversicherung und bei der Banktochter stützten den operativen Verlauf.
     3. **Knackpunkt:** Niedrigere Investmenterträge und ein Rückgang beim Neugeschäftswert bremsten das Gesamtergebnis.
+
+![Wichtige Finanzkennzahlen der Ping An Gruppe (9M 2026) (Ping An Insurance (Group) Company of China, Ltd., Quartalszahlen Q3 2026)](/assets/magazin/ping-an-q3-2026-grafik.png)
+*Eigene Darstellung nach Daten aus: Ping An Insurance (Group) Company of China, Ltd., Quartalszahlen Q3 2026 vom 2026-10-28.*
 
 ## Die ausführliche Version
 

@@ -55,6 +55,25 @@ def clean_entities(t, keep_markup=False):
     return re.sub(r"&(?!(?:lt|gt|amp|quot|#39);)(#\d+|#x[0-9a-fA-F]+|[A-Za-z][A-Za-z0-9]+);", lambda m: html.unescape(m.group(0)), t)
 
 
+def fix_kurz(body):
+    """Der Kurz-Kasten (!!! kurz) darf nicht durch Bilder oder Absaetze unterbrochen sein, sonst wird die Liste zum Codeblock.
+    Unterbrechungen (nicht eingerueckte Zeilen mitten im Kasten) werden hinter den Kasten verschoben."""
+    lines = body.split("\n")
+    st = next((i for i, l in enumerate(lines) if l.startswith("!!! kurz")), None)
+    if st is None: return body
+    block, moved, i, seen_indented_after_break = [lines[st]], [], st + 1, False
+    n = len(lines)
+    # Ende des Kastens: bis zur naechsten Ueberschrift (## ...)
+    end = next((j for j in range(st + 1, n) if lines[j].startswith("#")), n)
+    for j in range(st + 1, end):
+        l = lines[j]
+        if l.startswith("    ") or not l.strip(): block.append(l)
+        else: moved.append(l)
+    if not moved: return body
+    while block and not block[-1].strip(): block.pop()
+    return "\n".join(lines[:st] + block + [""] + moved + [""] + lines[end:])
+
+
 def read_post(path):
     raw = clean_entities(open(path, encoding="utf-8").read(), keep_markup=True)
     m = re.match(r"^---\s*\n(.*?)\n---\s*\n(.*)$", raw, re.S)
@@ -70,7 +89,7 @@ def read_post(path):
     meta["file"] = os.path.basename(path)
     meta["dt"] = parse_date(meta["date"])
     meta["upd"] = parse_date(meta["updated"]) if meta.get("updated") else meta["dt"]
-    meta["body_md"] = m.group(2).strip()
+    meta["body_md"] = fix_kurz(m.group(2).strip())
     meta["draft"] = meta.get("draft", "").lower() in ("true", "ja", "1", "yes")
     meta["author"] = meta.get("author") or CFG["default_author"]
     meta["category"] = meta.get("category") or "Analyse"

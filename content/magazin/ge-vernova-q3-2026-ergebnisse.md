@@ -21,12 +21,13 @@ logo_file: assets/logos/gev.png
 !!! kurz "Kurz gesagt"
     **Umsatz:** 12,6 Mrd. USD (+18 %) · **Gewinn:** 1,3 Mrd. USD (+185 %)
 
-![Segmentumsatz 3Q 2026 (GE Vernova, Quartalszahlen Q3 2026)](/assets/magazin/ge-vernova-q3-2026-ergebnisse-grafik.png)
-*Eigene Darstellung nach Daten aus: GE Vernova, Quartalszahlen Q3 2026 vom 2026-10-28.*
 
     1. **Starkes Wachstum:** Umsatz und Nettogewinn legen im dritten Quartal kräftig zu.
     2. **Der Grund:** Vor allem die Segmente Power und Electrification treiben das Geschäft.
     3. **Großer Auftragsbestand:** Der Backlog wächst weiter an und nähert sich der Marke von 200 Milliarden US-Dollar.
+
+![Segmentumsatz 3Q 2026 (GE Vernova, Quartalszahlen Q3 2026)](/assets/magazin/ge-vernova-q3-2026-ergebnisse-grafik.png)
+*Eigene Darstellung nach Daten aus: GE Vernova, Quartalszahlen Q3 2026 vom 2026-10-28.*
 
 ## Die ausführliche Version
 
