@@ -11,7 +11,7 @@ image_credit: "Foto: Nemausensis Asinus / Wikimedia Commons, CC0"
 image_source: https://commons.wikimedia.org/wiki/File:Toulouse_Si%C3%A8ge_Airbus.jpg
 logo_name: "Airbus SE"
 logo_symbol: AIR.PA
-
+logo_file: assets/logos/air-pa.mono.png
 ---
 <!-- PRÜFEN: Vergleichsartikel: Kasten, Tabelle, Diagramm und Aussagen bitte gegen die Berichte pruefen; Hintergrundaussagen stammen aus einer Websuche. -->
 <!-- PRÜFEN: Aufmacherfoto ist automatisch von Wikimedia Commons gewaehlt (Airbus SE): bitte pruefen, ob es zum Vergleich passt. -->
