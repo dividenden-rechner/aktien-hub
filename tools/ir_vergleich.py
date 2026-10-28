@@ -19,6 +19,12 @@ ARTICLE_SCHEMA = {
                 "name": {"type": "STRING"},
                 "values": {"type": "ARRAY", "items": {"type": "OBJECT", "required": ["company", "value"], "properties": {
                     "company": {"type": "STRING"}, "value": {"type": "NUMBER"}}}}}}}}},
+        "chart2": {"type": "OBJECT", "required": ["title", "unit", "series"], "properties": {
+            "title": {"type": "STRING"}, "unit": {"type": "STRING"},
+            "series": {"type": "ARRAY", "items": {"type": "OBJECT", "required": ["name", "values"], "properties": {
+                "name": {"type": "STRING"},
+                "values": {"type": "ARRAY", "items": {"type": "OBJECT", "required": ["company", "value"], "properties": {
+                    "company": {"type": "STRING"}, "value": {"type": "NUMBER"}}}}}}}}},
         "title": {"type": "STRING"}, "description": {"type": "STRING"}, "slug": {"type": "STRING"}, "body_markdown": {"type": "STRING"},
         "table": {"type": "OBJECT", "required": ["rows"], "properties": {"rows": {"type": "ARRAY", "items": {
             "type": "OBJECT", "required": ["metric", "values"], "properties": {
@@ -134,6 +140,59 @@ def draw_vergleich(chart, path):
     return True
 
 
+def cash_chart(entries):
+    """Free Cashflow und Nettoverschuldung als Diagramm (rein rechnerisch aus den Berichten; nur bei gleicher Einheit)."""
+    fc, nd, unit_f, unit_n = [], [], set(), set()
+    for e in entries:
+        o = e["out"]; cf = o.get("cashflow") or {}; bl = o.get("balance") or {}
+        if cf.get("operating_cash_flow") is not None and cf.get("capex") is not None:
+            fc.append({"company": o["company"], "value": round(cf["operating_cash_flow"] - cf["capex"], 1)}); unit_f.add(cf.get("unit") or "Mio.")
+        if bl.get("cash") is not None and (bl.get("short_term_debt") is not None or bl.get("long_term_debt") is not None):
+            nd.append({"company": o["company"], "value": round((bl.get("short_term_debt") or 0) + (bl.get("long_term_debt") or 0) - bl["cash"], 1)}); unit_n.add(bl.get("unit") or "Mio.")
+    series = []
+    if len(fc) >= 2 and len(unit_f) == 1: series.append({"name": "Free Cashflow", "values": fc})
+    if len(nd) >= 2 and len(unit_n) == 1 and unit_n == unit_f: series.append({"name": "Nettoverschuldung", "values": nd})
+    if not series and len(nd) >= 2 and len(unit_n) == 1: series.append({"name": "Nettoverschuldung", "values": nd}); unit_f = unit_n
+    if not series: return None
+    return {"title": "Cashflow und Schulden im Vergleich", "unit": "Angaben in " + (next(iter(unit_f)) if unit_f else "Mio.") + " (Währung wie im Bericht, nicht umgerechnet)", "series": series}
+
+
+def combo_logo(entries, slug):
+    """Logos der Unternehmen als leicht ueberlappende Plaketten in einer PNG-Datei (assets/logos/combo-<slug>.png)."""
+    import io
+    from PIL import Image, ImageDraw, ImageFilter
+    import fetch_logos as fl
+    tiles = []
+    for e in entries[:3]:
+        o = e["out"]; tk = re.sub(r"[^A-Za-z0-9.\-]", "", o.get("ticker") or "")
+        dom = re.sub(r"^(https?://)?(www\.)?|/.*$", "", (o.get("website_domain") or "").lower())
+        png = None
+        for fn, arg in ((fl.from_fmp, tk), (fl.from_site, dom), (fl.from_google, dom), (fl.from_ddg, dom)):
+            try: png = fn(arg)
+            except Exception: png = None
+            if png: break
+        if png: tiles.append(Image.open(io.BytesIO(png)).convert("RGBA"))
+        else: tiles.append(Image.open(io.BytesIO(fl.monogram(o["company"]))).convert("RGBA"))
+    S, step, pad = 104, 70, 12
+    W, H = S + step * (len(tiles) - 1) + 2 * pad, S + 2 * pad
+    out = Image.new("RGBA", (W, H), (0, 0, 0, 0))
+    for i, lg in enumerate(tiles):
+        x = pad + i * step
+        px = [q for q in lg.resize((48, 48)).getdata() if q[3] > 128]
+        lum = sum(0.299 * r + 0.587 * g + 0.114 * b for r, g, b, a in px) / len(px) if px else 0
+        bg = "#14202b" if lum > 215 else "#ffffff"
+        sh = Image.new("RGBA", (W, H), (0, 0, 0, 0)); ImageDraw.Draw(sh).rounded_rectangle([x, pad + 4, x + S, pad + 4 + S], 24, fill=(0, 0, 0, 80))
+        out = Image.alpha_composite(out, sh.filter(ImageFilter.GaussianBlur(5)))
+        tile = Image.new("RGBA", (W, H), (0, 0, 0, 0)); d = ImageDraw.Draw(tile)
+        d.rounded_rectangle([x, pad, x + S, pad + S], 24, fill=bg, outline="#ffffff" if i else None, width=4)
+        inner = lg.resize((S - 28, S - 28), Image.LANCZOS); tile.paste(inner, (x + 14, pad + 14), inner)
+        out = Image.alpha_composite(out, tile)
+    rel = f"assets/logos/combo-{slug}.png"
+    os.makedirs(os.path.join(ia.ROOT, "assets", "logos"), exist_ok=True)
+    out.save(os.path.join(ia.ROOT, rel), "PNG", optimize=True)
+    return rel
+
+
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--src", action="append", default=[], help="ticker:KO, url:https://..., oder Pfad zu einer PDF (mehrfach)")
@@ -185,9 +244,16 @@ def main():
         hint += "\n\nMARKT UND POLITIK:\n" + mt[:8000]; weitere += ms[:6]
     # Ausschnitte aus den Berichten
     os.makedirs("/tmp/vfigs", exist_ok=True); figs = {}
+    for e in entries:
+        if e["src"]["kind"] == "pdf" and len(e["out"].get("figures") or []) < 2:
+            try:
+                extra = ia._generate([ia.doc_part(e["src"]), {"text": ia.FIG_PROMPT + f"\n\nUnternehmen: {e['out'].get('company')}, Branche: {e['out'].get('industry') or 'unbekannt'}."}], ia.FIG_SCHEMA, key)
+                if extra.get("figures"): e["out"]["figures"] = (e["out"].get("figures") or []) + [f for f in extra["figures"] if f not in (e["out"].get("figures") or [])]
+            except SystemExit:
+                print("::notice title=IR-Vergleich::Gezielte Suche nach Ausschnitten fehlgeschlagen.")
     for i, e in enumerate(entries, 1):
         if e["src"]["kind"] != "pdf": continue
-        for j, fg in enumerate((e["out"].get("figures") or [])[:3], 1):
+        for j, fg in enumerate((e["out"].get("figures") or [])[:4], 1):
             fid = f"c{i}f{j}"; tmp = f"/tmp/vfigs/{fid}.png"
             if ia.render_figure(e["src"]["path"], fg, tmp):
                 figs[fid] = {"tmp": tmp, "title": fg.get("title") or "Auszug", "page": fg.get("page"), "shows": fg.get("shows") or "", "company": e["out"]["company"], "e": e}
@@ -213,9 +279,17 @@ def main():
         t = ("%g" % abs(x)); return t in toks
     for ser in chart.get("series") or []:
         ser["values"] = [v for v in ser.get("values") or [] if belegt(v["value"])]
+    chart2 = art.get("chart2") or {}
+    for ser in chart2.get("series") or []:
+        ser["values"] = [v for v in ser.get("values") or [] if belegt(v["value"])]
     gpath = os.path.join(ia.ROOT, "assets", "magazin", f"{slug}-vergleich.png")
     os.makedirs(os.path.dirname(gpath), exist_ok=True)
     has_chart = draw_vergleich(chart, gpath)
+    g2path = os.path.join(ia.ROOT, "assets", "magazin", f"{slug}-vergleich2.png")
+    has_chart2 = draw_vergleich(chart2, g2path) if chart2 else False
+    cchart = cash_chart(entries)
+    cpath = os.path.join(ia.ROOT, "assets", "magazin", f"{slug}-cash.png")
+    has_cash = draw_vergleich(cchart, cpath) if cchart else False
     # Schreiben
     stamp = datetime.now(ZoneInfo("Europe/Berlin")).strftime("%Y-%m-%d-%H%M")
     vorh = [v for v in glob.glob(os.path.join(ia.ROOT, "content", "magazin", f"*{slug}.md"))
@@ -232,19 +306,25 @@ def main():
     hinweise = []
     photo = None
     try:
-        photo = ia.pick_photo(first["company"], first.get("ticker", ""), key)
+        photo = ia.pick_photo_topic(namen, a.fokus, first.get("industry") or "", key)
+        if not photo:
+            photo = ia.pick_photo(first["company"], first.get("ticker", ""), key)
     except Exception as ex:
         print("Foto-Suche fehlgeschlagen:", ex)
     if photo:
         rel = ia.save_photo(photo, slug)
-        fm += [f"image: {rel}", f"image_alt: {ia.q('Foto zu ' + first['company'] + ': ' + (photo['desc'] or photo['title'].replace('File:', '')))}",
+        fm += [f"image: {rel}", f"image_alt: {ia.q('Foto zum Thema ' + ' und '.join(namen) + ': ' + (photo['desc'] or photo['title'].replace('File:', '')))}",
                f"image_credit: {ia.q('Foto: ' + photo['artist'] + ' / Wikimedia Commons, ' + photo['lic'])}", f"image_source: {photo['page']}"]
-        hinweise.append(f"Aufmacherfoto ist automatisch von Wikimedia Commons gewaehlt ({first['company']}): bitte pruefen, ob es zum Vergleich passt.")
+        hinweise.append("Aufmacherfoto ist automatisch von Wikimedia Commons zum Thema gewaehlt: bitte pruefen, ob es zum Vergleich passt.")
     else:
         hinweise.append("Kein freies Aufmacherfoto gefunden, das Titelbild entsteht automatisch. Eigenes Foto: image, image_alt, image_credit ergaenzen.")
     fm.append("logo_name: " + ia.q(first["company"]))
     if tk: fm.append(f"logo_symbol: {tk}")
     if dom and re.match(r"^[a-z0-9.\-]+\.[a-z]{2,}$", dom, re.I): fm.append(f"logo_domain: {dom}")
+    try:
+        fm.append("logo_file: " + combo_logo(entries, slug))
+    except Exception as ex:
+        print("Gemeinsames Logo nicht erstellt:", ex)
     fm += ["draft: true", "---", ""]
     hinweise.insert(0, "Vergleichsartikel: Kasten, Tabelle, Diagramm und Aussagen bitte gegen die Berichte pruefen; Hintergrundaussagen stammen aus einer Websuche.")
     if bad:
@@ -267,6 +347,16 @@ def main():
             m_ = re.search(r"## Die ausführliche Version\n+(?:###[^\n]*\n+)?[^\n]+\n", body)
             body = (body[:m_.end()] + "\n" + gtxt + "\n" + body[m_.end():]) if m_ else body + "\n\n" + gtxt
     body = body.replace("{{GRAFIK}}", "")
+    def bild(path_key, title, has, marker, alt_after):
+        nonlocal body
+        if not has: body = body.replace(marker, ""); return
+        txt = f"![{title}](/assets/magazin/{slug}-{path_key}.png)\n*Eigene Darstellung nach Daten aus den Berichten ({', '.join(namen)}).*"
+        if marker in body: body = body.replace(marker, txt)
+        else:
+            m_ = re.search(alt_after, body)
+            body = (body[:m_.start()] + txt + "\n\n" + body[m_.start():]) if m_ else body + "\n\n" + txt
+    bild("vergleich2", chart2.get("title") or "Vergleich", has_chart2, "{{GRAFIK2}}", r"\n###? [^\n]*(Ausblick|Prognose|Chancen)[^\n]*\n")
+    bild("cash", (cchart or {}).get("title") or "Cashflow", has_cash, "{{CASHGRAFIK}}", r"\n###? [^\n]*(Ausblick|Prognose|Chancen)[^\n]*\n")
     used = []
     import shutil
     for fid, f in figs.items():

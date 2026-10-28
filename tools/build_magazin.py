@@ -186,6 +186,9 @@ def make_cover(path, title, category):
 def logo_html(p):
     """Titel mit Firmenlogo (FMP-Symbolbild, Rueckfall Favicon der Firmenwebsite, sonst ohne Logo)."""
     lf = p.get("logo_file", "")
+    if lf and os.path.exists(lf) and os.path.basename(lf).startswith("combo-"):
+        return (f'<div class="titlerow"><img class="hlogo combo" src="../../{esc(lf)}" alt="" style="height:64px;width:auto;border:0;background:none;padding:0;object-fit:contain">'
+                f'<h1>{esc(p["title"])}</h1></div>\n')
     if lf and os.path.exists(lf):
         return (f'<div class="titlerow"><img class="hlogo{" dark" if logo_is_light(lf) else ""}" src="../../{esc(lf)}" alt="" width="56" height="56">'
                 f'<h1>{esc(p["title"])}</h1></div>\n')
@@ -279,6 +282,8 @@ def card_logo(x, pre):
     Stil steht zusaetzlich inline, damit es auch mit einer alten, zwischengespeicherten site.css richtig sitzt."""
     base = "position:absolute;left:12px;top:12px;width:52px;height:52px;box-sizing:border-box;border-radius:12px;box-shadow:0 2px 10px rgba(0,0,0,.22);display:flex;align-items:center;justify-content:center;"
     lf = x.get("logo_file", "")
+    if lf and os.path.exists(lf) and os.path.basename(lf).startswith("combo-"):
+        return (f'<span class="mclogo combo" style="position:absolute;left:6px;top:6px;display:block;line-height:0;width:auto;height:auto;padding:0;background:none;box-shadow:none;border-radius:0"><img src="{pre}{esc(lf)}" alt="" height="64" loading="lazy" style="display:block;height:64px;width:auto;max-width:none"></span>')
     if lf and os.path.exists(lf):
         dark = logo_is_light(lf)
         return (f'<span class="mclogo{" dark" if dark else ""}" style="{base}padding:6px;background:{"#14202b" if dark else "#fff"}">'

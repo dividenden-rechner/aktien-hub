@@ -579,13 +579,13 @@ def brand_of(company):
     return re.sub(r"\s+", " ", b).strip(" ,.") or company
 
 
-def commons_candidates(company):
+def commons_candidates(company, terms=None):
     brand = brand_of(company); seen = {}; ua = "dividenden-rechner.de Magazin-Agent (https://www.dividenden-rechner.de)"
     iip = {"prop": "imageinfo", "iiprop": "url|size|mime|extmetadata", "iiurlwidth": 1600}
     queries = []
     # Bilder aus dem Wikipedia-Artikel des Unternehmens (meist Zentrale, Standorte)
     try:
-        for lang in ("en", "de"):
+        for lang in (() if terms else ("en", "de")):
             s = json.loads(http(f"https://{lang}.wikipedia.org/w/api.php?" + urllib.parse.urlencode(
                 {"action": "query", "format": "json", "list": "search", "srsearch": f"{company} company", "srlimit": 1}), ua=ua))
             hit = (s.get("query", {}).get("search") or [{}])[0].get("title")
@@ -598,7 +598,7 @@ def commons_candidates(company):
                     queries.append({"action": "query", "format": "json", "titles": "|".join(names[:40]), **iip})
     except Exception as e:
         print("Wikipedia-Bilder nicht erreichbar:", e)
-    for term in (f"{brand} headquarters", f"{brand} building", f"{brand} office", f"{company} headquarters", f"{brand} filetype:bitmap"):
+    for term in (list(terms) if terms else (f"{brand} headquarters", f"{brand} building", f"{brand} office", f"{company} headquarters", f"{brand} filetype:bitmap")):
         queries.append({"action": "query", "format": "json", "generator": "search", "gsrsearch": term, "gsrnamespace": 6, "gsrlimit": 25, **iip})
     for qd in queries:
         qs = urllib.parse.urlencode(qd)
@@ -619,7 +619,7 @@ def commons_candidates(company):
                            "artist": _strip(md.get("Artist", {}).get("value", "")) or "Unbekannt", "lic": lic,
                            "desc": _strip(md.get("ImageDescription", {}).get("value", ""))[:200],
                            "date": _strip(md.get("DateTimeOriginal", {}).get("value", ""))[:10]}
-    return list(seen.values())[:15], brand
+    return list(seen.values())[:(30 if terms else 15)], brand
 
 
 def pick_photo(company, ticker, key):
@@ -635,6 +635,36 @@ def pick_photo(company, ticker, key):
     schema = {"type": "OBJECT", "required": ["index"], "properties": {"index": {"type": "INTEGER"}}}
     try:
         idx = _generate([{"text": prompt}], schema, key)["index"]
+    except SystemExit:
+        return None
+    return cands[idx] if isinstance(idx, int) and 0 <= idx < len(cands) else None
+
+
+def pick_photo_topic(companies, fokus, industry, key):
+    """Aufmacherfoto zum Thema (Produkte, Branche, Szene) statt Firmenzentrale: Gemini nennt Suchbegriffe, dann Auswahl."""
+    names = ", ".join(companies)
+    schema = {"type": "OBJECT", "required": ["terms"], "properties": {"terms": {"type": "ARRAY", "items": {"type": "STRING"}}}}
+    try:
+        t = _generate([{"text": f"Ein Boersenartikel vergleicht {names}" + (f" (Branche: {industry})" if industry else "") + (f", Thema: {fokus}" if (fokus or '').strip() else "") +
+                        ". Nenne acht englische Suchbegriffe fuer Wikimedia Commons, um ein Aufmacherfoto zu finden: Produkte der Unternehmen im Einsatz oder typische Szenen der Branche "
+                        "(zum Beispiel 'Airbus A350 in flight', 'Boeing 737 MAX landing', 'airliner takeoff sunset', 'aircraft assembly line'). Keine Firmenzentralen, keine Buerogebaeude, keine Personen, keine Logos. "
+                        "Mische konkrete Produkte der einzelnen Unternehmen mit allgemeinen Branchenszenen."}], schema, key)
+        terms = [x for x in (t.get("terms") or []) if isinstance(x, str) and x.strip()][:8]
+    except SystemExit:
+        return None
+    if not terms:
+        return None
+    print("Foto-Suchbegriffe:", terms)
+    cands, _ = commons_candidates(companies[0], terms=terms)
+    print(f"Foto-Kandidaten (Thema) bei Wikimedia Commons: {len(cands)}")
+    if not cands:
+        return None
+    listing = "\n".join(f"{i}: {c['title']} | {c['desc']} | {c['date']}" for i, c in enumerate(cands))
+    prompt = (f"Waehle ein Aufmacherfoto fuer einen Vergleichsartikel ueber {names}" + (f" (Thema: {fokus})" if (fokus or '').strip() else "") + ". "
+              "Gut: Produkt im Einsatz (zum Beispiel ein Flugzeug im Flug), Werk oder Montage, typische Szene der Branche, ansprechende Bildkomposition, gern mit Produkten mehrerer der Unternehmen. "
+              "Schlecht: Firmenzentralen und Buerogebaeude, Portraets, Logos, Karten, Werbung, Detailaufnahmen ohne Aussage, historische oder unpassende Motive. Wenn nichts wirklich passt, antworte -1.\n\n" + listing)
+    try:
+        idx = _generate([{"text": prompt}], {"type": "OBJECT", "required": ["index"], "properties": {"index": {"type": "INTEGER"}}}, key)["index"]
     except SystemExit:
         return None
     return cands[idx] if isinstance(idx, int) and 0 <= idx < len(cands) else None
