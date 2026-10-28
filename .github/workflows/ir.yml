@@ -21,7 +21,7 @@ on:
           - meldung
           - insider
       pdf_url:
-        description: "Oder: Link zu einer PDF oder zu einer normalen Webseite (z. B. Ad-hoc-Meldung), für Titel außerhalb der USA"
+        description: "Oder: Link zu einer PDF oder normalen Webseite (z. B. Ad-hoc-Meldung), für Titel außerhalb der USA. Mehrere Links mit Leerzeichen oder Komma trennen."
         required: false
 permissions:
   contents: write
@@ -51,12 +51,17 @@ jobs:
             echo "$TICKERS" | tr ',' '\n' | tr -d ' ' | sed '/^$/d' | sed 's/^/ticker:/' >> /tmp/todo.txt
           fi
           if [ -n "$PDF_URL" ]; then
-            if curl -fsSL -A "Mozilla/5.0" -o /tmp/dl.bin "$PDF_URL" && [ "$(head -c 5 /tmp/dl.bin)" = "%PDF-" ]; then
-              cp /tmp/dl.bin content/ir-inbox/download.pdf
-              echo "content/ir-inbox/download.pdf" >> /tmp/todo.txt
-            else
-              echo "url:$PDF_URL" >> /tmp/todo.txt
-            fi
+            i=0
+            echo "$PDF_URL" | sed 's/,[[:space:]]*http/\nhttp/g' | tr -s ' \t' '\n\n' | sed '/^$/d' > /tmp/urls.txt
+            while read -r u; do
+              i=$((i+1))
+              if curl -fsSL -A "Mozilla/5.0" -o "/tmp/dl$i.bin" "$u" && [ "$(head -c 5 /tmp/dl$i.bin)" = "%PDF-" ]; then
+                cp "/tmp/dl$i.bin" "content/ir-inbox/download_$i.pdf"
+                echo "content/ir-inbox/download_$i.pdf" >> /tmp/todo.txt
+              else
+                echo "url:$u" >> /tmp/todo.txt
+              fi
+            done < /tmp/urls.txt
           fi
           if [ ! -s /tmp/todo.txt ]; then
             git diff --name-only --diff-filter=AM HEAD~1 HEAD -- 'content/ir-inbox/*.pdf' > /tmp/todo.txt || true
@@ -79,7 +84,7 @@ jobs:
           done < /tmp/todo.txt
       - name: Committen
         run: |
-          rm -f content/ir-inbox/download.pdf
+          rm -f content/ir-inbox/download.pdf content/ir-inbox/download_*.pdf
           git config user.name "ir-bot"
           git config user.email "actions@users.noreply.github.com"
           git add -A
