@@ -3,18 +3,17 @@
 <!-- uebersicht-start -->
 ## Übersicht (wird automatisch erstellt, neueste zuerst)
 
-### Zur Freigabe: Entwürfe (1)
+### Zur Freigabe: Entwürfe (0)
 
 Datei anklicken, dann Stift-Symbol: Zeile `draft: true` löschen und speichern, dann geht der Artikel online.
+
+_Keine Entwürfe._
+
+### Online (12)
 
 | Datum | Titel | Datei |
 |---|---|---|
 | 28.10.2026 15:47 | Unilever steigert Umsatz auf 13,3 Milliarden Euro und hebt Ausblick an | [unilever-q3-2026-trading-statement.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/unilever-q3-2026-trading-statement.md) |
-
-### Online (11)
-
-| Datum | Titel | Datei |
-|---|---|---|
 | 28.10.2026 15:33 | GE Vernova steigert Quartalsumsatz auf 12,6 Milliarden US-Dollar | [ge-vernova-q3-2026-ergebnisse.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/ge-vernova-q3-2026-ergebnisse.md) |
 | 28.10.2026 15:18 | Ping An steigert operatives Ergebnis auf 125,9 Milliarden RMB | [ping-an-q3-2026.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/ping-an-q3-2026.md) |
 | 27.10.2026 20:20 | UPS setzt 22,9 Milliarden um, Sondereffekte drücken das Ergebnis | [2026-10-27-2020-ups-q3-2026-ergebnisse.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/2026-10-27-2020-ups-q3-2026-ergebnisse.md) |
