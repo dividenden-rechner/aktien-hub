@@ -1,7 +1,34 @@
 # Magazin: So schreibst du einen Artikel
 
-1. Lege hier in `content/magazin/` eine neue Datei an, zum Beispiel `dividendenfalle-erkennen.md`
-   (GitHub: Add file → Create new file). Der Dateiname wird zur Adresse: `/magazin/dividendenfalle-erkennen/`.
+<!-- uebersicht-start -->
+## Übersicht (wird automatisch erstellt, neueste zuerst)
+
+### Zur Freigabe: Entwürfe (1)
+
+Datei anklicken, dann Stift-Symbol: Zeile `draft: true` löschen und speichern, dann geht der Artikel online.
+
+| Datum | Titel | Datei |
+|---|---|---|
+| 28.10.2026 06:55 | Equinor verdient dank höherer Preise und mehr Förderung deutlich mehr | [2026-10-28-0655-equinor-q2-2026.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/2026-10-28-0655-equinor-q2-2026.md) |
+
+### Online (9)
+
+| Datum | Titel | Datei |
+|---|---|---|
+| 27.10.2026 20:20 | UPS setzt 22,9 Milliarden um, Sondereffekte drücken das Ergebnis | [2026-10-27-2020-ups-q3-2026-ergebnisse.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/2026-10-27-2020-ups-q3-2026-ergebnisse.md) |
+| 27.10.2026 13:23 | Boeing setzt 24,2 Milliarden um und bleibt operativ im Minus | [2026-10-27-1323-boeing-q3-ergebnis-2026.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/2026-10-27-1323-boeing-q3-ergebnis-2026.md) |
+| 27.10.2026 12:58 | Coca-Cola verdient mehr: Umsatz und Konzernergebnis steigen | [2026-10-27-1258-coca-cola-q3-2026-ergebnisse.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/2026-10-27-1258-coca-cola-q3-2026-ergebnisse.md) |
+| 27.10.2026 11:50 | Mercedes-Benz senkt Ausblick für 2026 wegen China und Kosten | [2026-10-27-1150-mercedes-benz-prognoseanpassung-2026.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/2026-10-27-1150-mercedes-benz-prognoseanpassung-2026.md) |
+| 27.10.2026 10:13 | HSBC verdient 9,6 Milliarden vor Steuern und kauft Aktien zurück | [2026-10-27-1013-hsbc-q3-2026.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/2026-10-27-1013-hsbc-q3-2026.md) |
+| 27.10.2026 09:40 | Novartis erhöht die Gewinnprognose, neue Medikamente laufen gut | [2026-10-27-0940-novartis-q3-2026-ergebnisse.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/2026-10-27-0940-novartis-q3-2026-ergebnisse.md) |
+| 27.10.2026 00:21 | Brown & Brown legt zu: 1,7 Milliarden Umsatz, mehr Gewinn | [2026-10-27-0021-brown-and-brown-q3-2026.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/2026-10-27-0021-brown-and-brown-q3-2026.md) |
+| 26.10.2026 22:28 | Verizon steigert bereinigtes EPS und hebt Jahresziele für 2026 an | [2026-10-26-2228-verizon-q3-2026.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/2026-10-26-2228-verizon-q3-2026.md) |
+| 26.10.2026 21:48 | Coca-Cola hebt die Ziele für Cashflow und Gewinn je Aktie an | [2026-10-26-2148-coca-cola-q2-2026.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/2026-10-26-2148-coca-cola-q2-2026.md) |
+<!-- uebersicht-ende -->
+
+1. Lege hier in `content/magazin/` eine neue Datei an. Der Dateiname beginnt mit Jahr-Monat-Tag und Uhrzeit, zum Beispiel
+   `2026-10-28-1452-dividendenfalle-erkennen.md` (GitHub: Add file → Create new file). Dadurch ist die Liste nach Datum geordnet.
+   Der Teil nach dem Datum wird zur Adresse: `/magazin/dividendenfalle-erkennen/`. Die Artikel des IR-Agenten heißen automatisch so.
 2. Beginne mit dem Kopfbereich zwischen zwei `---` Zeilen:
 
 ```

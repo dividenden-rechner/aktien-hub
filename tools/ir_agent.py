@@ -9,7 +9,7 @@ Aufruf:
 Der Entwurf landet mit `draft: true` in content/magazin/. Nichts wird veroeffentlicht,
 bevor du `draft: true` entfernst. Zahlen werden gegen den Berichtstext geprueft.
 """
-import argparse, base64, html, json, os, re, subprocess, sys, time, urllib.parse, urllib.request, urllib.error
+import argparse, base64, glob, html, json, os, re, subprocess, sys, time, urllib.parse, urllib.request, urllib.error
 from datetime import date, datetime
 from zoneinfo import ZoneInfo
 from html.parser import HTMLParser
@@ -917,7 +917,10 @@ def build(out, text, src_note, force=False, calc_rows=None, fmp_used=False, figs
     out["period"] = out.get("period") or ""
     out["report_date"] = out.get("report_date") or date.today().isoformat()
     slug = re.sub(r"[^a-z0-9]+", "-", out["article"]["slug"].lower()).strip("-") or "bericht"
-    mdpath = os.path.join(ROOT, "content", "magazin", f"{slug}.md")
+    stamp = datetime.now(ZoneInfo("Europe/Berlin")).strftime("%Y-%m-%d-%H%M")   # Dateiname beginnt mit Datum, damit die Liste auf GitHub geordnet ist
+    vorhanden = glob.glob(os.path.join(ROOT, "content", "magazin", f"*{slug}.md"))
+    vorhanden = [v for v in vorhanden if re.fullmatch(r"(\d{4}-\d{2}-\d{2}(-\d{4})?-)?" + re.escape(slug) + r"\.md", os.path.basename(v))]
+    mdpath = vorhanden[0] if vorhanden else os.path.join(ROOT, "content", "magazin", f"{stamp}-{slug}.md")
     if os.path.exists(mdpath) and not force:
         fail(f"Es gibt schon einen Artikel '{slug}.md'. Zum Ueberschreiben --force nutzen oder die Datei vorher loeschen.")
     gpath = os.path.join(ROOT, "assets", "magazin", f"{slug}-grafik.png")

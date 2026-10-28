@@ -58,7 +58,9 @@ def read_post(path):
             k, v = line.split(":", 1); meta[k.strip().lower()] = v.strip().strip('"').strip("'")
     for k in ("title", "description", "date"):
         if not meta.get(k): raise SystemExit(f"{path}: Feld '{k}' fehlt im Kopfbereich")
-    meta["slug"] = meta.get("slug") or re.sub(r"[^a-z0-9]+", "-", os.path.splitext(os.path.basename(path))[0].lower()).strip("-")
+    stem = re.sub(r"^\d{4}-\d{2}-\d{2}(-\d{4})?-", "", os.path.splitext(os.path.basename(path))[0])   # Datum vor dem Dateinamen gehoert nicht zur Adresse
+    meta["slug"] = meta.get("slug") or re.sub(r"[^a-z0-9]+", "-", stem.lower()).strip("-")
+    meta["file"] = os.path.basename(path)
     meta["dt"] = parse_date(meta["date"])
     meta["upd"] = parse_date(meta["updated"]) if meta.get("updated") else meta["dt"]
     meta["body_md"] = m.group(2).strip()
@@ -363,11 +365,37 @@ def patch_nav_everywhere(has_posts):
             s = s.replace(f'<a href="{pre}screener/">Screener</a>', f'<a href="{pre}screener/">Screener</a>{link}', 1)
         if s != o: open(f, "w", encoding="utf-8").write(s)
 
+REPO = "dividenden-rechner/aktien-hub"
+
+def write_overview(allp):
+    """Uebersicht aller Artikel (Entwuerfe zuerst, neueste oben) in content/magazin/README.md, mit Links zum Bearbeiten."""
+    path = "content/magazin/README.md"
+    if not os.path.exists(path): return
+    def rows(items):
+        out = ["| Datum | Titel | Datei |", "|---|---|---|"]
+        for x in items:
+            link = f"https://github.com/{REPO}/edit/main/content/magazin/{x['file']}"
+            out.append(f"| {x['dt'].strftime('%d.%m.%Y %H:%M')} | {x['title'].replace('|', '/')} | [{x['file']}]({link}) |")
+        return "\n".join(out)
+    drafts = sorted([x for x in allp if x["draft"]], key=lambda x: (x["dt"], x["slug"]), reverse=True)
+    live = sorted([x for x in allp if not x["draft"]], key=lambda x: (x["dt"], x["slug"]), reverse=True)
+    blk = "<!-- uebersicht-start -->\n## Übersicht (wird automatisch erstellt, neueste zuerst)\n\n"
+    blk += f"### Zur Freigabe: Entwürfe ({len(drafts)})\n\nDatei anklicken, dann Stift-Symbol: Zeile `draft: true` löschen und speichern, dann geht der Artikel online.\n\n" + (rows(drafts) if drafts else "_Keine Entwürfe._") + "\n\n"
+    blk += f"### Online ({len(live)})\n\n" + (rows(live) if live else "_Noch nichts online._") + "\n<!-- uebersicht-ende -->"
+    s = open(path, encoding="utf-8").read()
+    if "<!-- uebersicht-start -->" in s:
+        s = re.sub(r"<!-- uebersicht-start -->.*?<!-- uebersicht-ende -->", lambda m: blk, s, flags=re.S)
+    else:
+        first, _, rest = s.partition("\n")
+        s = first + "\n\n" + blk + "\n" + rest
+    if s != open(path, encoding="utf-8").read():
+        open(path, "w", encoding="utf-8").write(s)
+
 def main():
-    posts = []
+    posts, allp = [], []
     for f in sorted(glob.glob("content/magazin/*.md")):
         if os.path.basename(f).startswith(("_", "README")): continue
-        p = read_post(f)
+        p = read_post(f); allp.append(p)
         if p["draft"]: print("Entwurf übersprungen:", f); continue
         if p["dt"] > datetime.datetime.now() + datetime.timedelta(days=1): print("Zukunftsdatum übersprungen:", f); continue
         posts.append(p)
@@ -382,6 +410,7 @@ def main():
         for f in ("magazin/index.html", "magazin/feed.xml"):
             if os.path.exists(f): os.remove(f)
     patch_sitemap(posts); patch_llms(posts); patch_home(posts); patch_news(posts); write_mag_index(posts); patch_nav_everywhere(bool(posts))
+    write_overview(allp)
     print(f"{len(posts)} Artikel gebaut")
 
 if __name__ == "__main__":
