@@ -40,15 +40,15 @@ img.ek-logo{background:#fff}
 .ek-row .ek-logo{width:40px;height:40px;border-radius:11px}
 .ek-m{flex:1;min-width:0}.ek-nm{font-weight:600}.ek-nm a{color:inherit;text-decoration:none}.ek-nm a:hover{text-decoration:underline}
 .ek-sub{font-size:.85rem;color:#64748b}
-.ek-fig{display:flex;gap:16px;text-align:right;font-size:.88rem}.ek-fig div{min-width:84px}.ek-fig span{display:block;color:#64748b;font-size:.75rem}
+.ek-fig{display:flex;gap:16px;text-align:right;font-size:.88rem}.ek-fig div{min-width:84px}.ek-fig span{display:block;color:#64748b;font-size:.75rem}.ek-fig span .pos,.ek-fig span .neg{display:inline}
 .ek-badge{display:inline-block;padding:1px 8px;border-radius:8px;font-size:.72rem;background:#f1f5f9;color:#475569;margin-left:6px}
-.ek-badge.done{background:#dcfce7;color:#166534}
+.ek-badge.done{background:#dcfce7;color:#166534}.ek-badge.up{background:#16a34a;color:#fff}.ek-badge.dn{background:#dc2626;color:#fff}.ek-badge.eq,.ek-badge.mix{background:#e2e8f0;color:#334155}.ek-nm{line-height:1.9}
 .pos{color:#15803d}.neg{color:#b91c1c}
 .ek-body{display:none;padding:2px 14px 16px 66px}.ek-item.open .ek-body{display:block}
 .ek-body table{width:100%;max-width:560px;border-collapse:collapse;font-size:.92rem}.ek-body td,.ek-body th{padding:6px 8px;border-bottom:1px solid #e2e8f0;text-align:right}.ek-body th:first-child,.ek-body td:first-child{text-align:left}
 .ek-body .ek-go{display:inline-block;margin-top:10px}
 .ek-empty{padding:22px;color:#475569}
-@media(max-width:640px){.ek-fig div:nth-child(2){display:none}.ek-body{padding-left:14px;padding-right:14px;overflow-x:auto}.ek-fig div{min-width:64px}.ek-row{gap:10px;padding:12px 10px}}
+@media(max-width:640px){.ek-fig{flex-direction:column;gap:6px;max-width:48%}.ek-fig div{min-width:0}.ek-body{padding-left:14px;padding-right:14px;overflow-x:auto}.ek-fig div{min-width:64px}.ek-row{gap:10px;padding:12px 10px}}
 </style>
 </head>
 <body>
@@ -69,7 +69,7 @@ img.ek-logo{background:#fff}
 <li><strong>Dividende:</strong> Die letzte Zahlung im Vergleich zur Zahlung ein Jahr davor und die Summe der letzten zwölf Monate gegen die zwölf Monate davor. So siehst du Erhöhungen und Kürzungen in Prozent.</li>
 <li><strong>Meine Werte:</strong> Der Kalender liest deine Watchlist aus dem Aktien-Hub und die Werte aus deinem Depot, alles nur in deinem Browser.</li>
 </ul>
-<p>Die Daten stammen von Financial Modeling Prep und brauchen deinen FMP-Schlüssel (derselbe wie im Aktien-Hub). Der kostenlose Tarif deckt vor allem US-Werte ab. Termine können sich ändern, und Schätzungen sind keine Prognosen der Firma.</p>
+<p>Die Daten stammen von Financial Modeling Prep und laufen über einen Server dieser Seite, du musst nichts eingeben. Das Datenpaket deckt vor allem US-Werte ab. Bei berichteten Zahlen zeigt ein Etikett, ob Gewinn und Umsatz die Erwartung der Analysten übertroffen, verfehlt oder erfüllt haben (Abweichung ab ein Prozent). Termine können sich ändern, und Schätzungen sind keine Prognosen der Firma.</p>
 <p>Weitere Werkzeuge: <a href="../aktien/">Aktien-Hub</a>, <a href="../depot/">Depot mit Dividendenkalender</a>, <a href="../news/">News-Kalender</a>.</p>
 <p class="note"><strong>Hinweis:</strong> Keine Anlageberatung. Angaben ohne Gewähr.</p>
 </article></main>
@@ -117,6 +117,11 @@ function big(v){if(v==null||isNaN(v))return"–";var a=Math.abs(v);return a>=1e1
 function gp(v){return v==null||!isFinite(v)?'<span>–</span>':'<span class="'+(v>=0?"pos":"neg")+'">'+(v>0?"+":"")+num(v*100,1)+" %</span>"}
 function gr(c,p){return c==null||p==null||p===0||isNaN(c)||isNaN(p)?null:(c-p)/Math.abs(p)}
 function fv(o,a,b){return o[a]!=null?o[a]:o[b]}
+function verdict(ge,gv){
+  var a=[ge,gv].filter(function(x){return x!=null&&isFinite(x)});if(!a.length)return null;
+  var up=a.some(function(x){return x>=0.01}),dn=a.some(function(x){return x<=-0.01});
+  return up&&dn?["gemischt","mix"]:up?["übertroffen","up"]:dn?["verfehlt","dn"]:["erfüllt","eq"];
+}
 function inScope(r){
   var s=r.symbol;
   if(scope==="mine"&&!MINE[s])return false;
@@ -142,7 +147,9 @@ function renderList(){
     if(r.date!==cur){if(cur)h+="</div>";cur=r.date;h+='<div class="ek-grp">'+esc(fmtDay(cur))+'</div><div class="ek-list">'}
     var done=r.epsActual!=null||r.revenueActual!=null,s=r.symbol;
     var eps=done?r.epsActual:r.epsEstimated,rev=done?r.revenueActual:r.revenueEstimated;
-    h+='<div class="ek-item" data-s="'+esc(s)+'" data-d="'+esc(r.date)+'"><button type="button" class="ek-row" aria-expanded="false">'+logo(s,nm(s))+'<span class="ek-m"><span class="ek-nm"><a href="../aktien/?s='+encodeURIComponent(s)+'">'+esc(nm(s))+'</a><span class="ek-badge'+(done?" done":"")+'">'+(done?"berichtet":"erwartet")+'</span></span><span class="ek-sub">'+esc(s)+'</span></span><span class="ek-fig"><div>'+num(eps)+'<span>Gewinn/Aktie'+(done?"":" (Schätzung)")+'</span></div><div>'+big(rev)+'<span>Umsatz'+(done?"":" (Schätzung)")+'</span></div></span></button><div class="ek-body"><p class="ek-sub">Lade Details …</p></div></div>';
+    var ge=done?gr(r.epsActual,r.epsEstimated):null,gv=done?gr(r.revenueActual,r.revenueEstimated):null,vd=verdict(ge,gv);
+    var ee=done&&r.epsEstimated!=null?" · Erw. "+num(r.epsEstimated)+" "+gp(ge):"",ev=done&&r.revenueEstimated!=null?" · Erw. "+big(r.revenueEstimated)+" "+gp(gv):"";
+    h+='<div class="ek-item" data-s="'+esc(s)+'" data-d="'+esc(r.date)+'"><button type="button" class="ek-row" aria-expanded="false">'+logo(s,nm(s))+'<span class="ek-m"><span class="ek-nm"><a href="../aktien/?s='+encodeURIComponent(s)+'">'+esc(nm(s))+'</a><span class="ek-badge'+(done?" done":"")+'">'+(done?"berichtet":"erwartet")+'</span>'+(vd?'<span class="ek-badge '+vd[1]+'" title="Gewinn und Umsatz im Vergleich zur Analystenerwartung">'+vd[0]+'</span>':"")+'</span><span class="ek-sub">'+esc(s)+'</span></span><span class="ek-fig"><div>'+num(eps)+'<span>Gewinn/Aktie'+(done?ee:" (Schätzung)")+'</span></div><div>'+big(rev)+'<span>Umsatz'+(done?ev:" (Schätzung)")+'</span></div></span></button><div class="ek-body"><p class="ek-sub">Lade Details …</p></div></div>';
   });
   $("list").innerHTML=h+"</div>";
 }

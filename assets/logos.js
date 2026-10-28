@@ -20,20 +20,34 @@
   function byName(n) { n = String(n || ""); for (var i = 0; i < L.length; i++) if (L[i].re.test(n)) return L[i]; return null; }
   function fav(d) { return "https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https://" + encodeURIComponent(d) + "&size=64"; }
   function dom(sym) { return BY[String(sym || "").toUpperCase()] || ""; }
-  /* <img> mit Rückfällen. sym/dom/name können teilweise leer sein. */
+  /* Logos kommen ueber den Zwischenserver (CORS), damit weisse Logos erkannt und auf dunklem Grund gezeigt werden koennen. */
+  var LP = "https://fmp-proxy.dividenden-rechner.workers.dev/logo/";
   function img(cls, sym, d, name) {
     sym = String(sym || ""); d = d || dom(sym);
     var ph = String(name || sym || "?").charAt(0).toUpperCase(), esc = function (s) { return String(s).replace(/[&<>"']/g, function (c) { return { "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]; }); };
-    var src = sym ? "https://images.financialmodelingprep.com/symbol/" + encodeURIComponent(sym) + ".png" : (d ? fav(d) : "");
+    var src = sym ? LP + encodeURIComponent(sym) + (d ? "?d=" + encodeURIComponent(d) : "") : (d ? fav(d) : "");
     if (!src) return '<span class="' + esc(cls) + ' lgph">' + esc(ph) + "</span>";
-    return '<img class="' + esc(cls) + '" src="' + esc(src) + '" alt="" loading="lazy" data-sym="' + esc(sym) + '" data-dom="' + esc(d || "") + '" data-ph="' + esc(ph) + '"' + (sym ? "" : ' data-st="1"') + ">";
+    return '<img class="' + esc(cls) + '" src="' + esc(src) + '" alt="" loading="lazy"' + (sym ? ' crossorigin="anonymous"' : "") + ' data-sym="' + esc(sym) + '" data-dom="' + esc(d || "") + '" data-ph="' + esc(ph) + '"' + (sym ? "" : ' data-st="1"') + ">";
   }
+  /* Rueckfaelle: 0 Zwischenserver -> 1 FMP direkt -> 2 Favicon -> 3 Buchstabe */
   document.addEventListener("error", function (e) {
     var i = e.target; if (!i || i.tagName !== "IMG" || !i.dataset || (i.dataset.sym === undefined && i.dataset.dom === undefined)) return;
     var st = +i.dataset.st || 0, d = i.dataset.dom || dom(i.dataset.sym);
-    i.dataset.st = st + 1;
-    if (st === 0 && d) { i.src = fav(d); return; }
+    i.dataset.st = st + 1; i.removeAttribute("crossorigin");
+    if (st === 0 && i.dataset.sym) { i.src = "https://images.financialmodelingprep.com/symbol/" + encodeURIComponent(i.dataset.sym) + ".png"; return; }
+    if (st <= 1 && d) { i.dataset.st = 2; i.src = fav(d); return; }
     var s = document.createElement("span"); s.className = i.className + " lgph"; s.textContent = i.dataset.ph || "?"; i.replaceWith(s);
+  }, true);
+  /* Weisse oder sehr helle Logos auf dunklen Grund setzen (nur wenn das Bild per CORS lesbar ist). */
+  document.addEventListener("load", function (e) {
+    var i = e.target; if (!i || i.tagName !== "IMG" || !i.dataset || i.dataset.sym === undefined || i.dataset.chk) return;
+    i.dataset.chk = "1";
+    try {
+      var c = document.createElement("canvas"), w = c.width = 24, h = c.height = 24, x = c.getContext("2d"); x.drawImage(i, 0, 0, w, h);
+      var px = x.getImageData(0, 0, w, h).data, n = 0, lum = 0;
+      for (var k = 0; k < px.length; k += 4) if (px[k + 3] > 128) { n++; lum += 0.2126 * px[k] + 0.7152 * px[k + 1] + 0.0722 * px[k + 2]; }
+      if (n > 8 && lum / n > 205) { i.style.background = "#14202b"; i.style.padding = "4px"; i.style.boxSizing = "border-box"; i.classList.add("lgdark"); }
+    } catch (err) { /* nicht lesbar: so lassen */ }
   }, true);
   window.HubLogos = { byName: byName, dom: dom, fav: fav, img: img };
 })();

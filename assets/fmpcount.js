@@ -27,7 +27,7 @@
      Der echte Schluessel liegt dort als Secret und kommt nie in den Browser. */
   var PROXY = "https://fmp-proxy.dividenden-rechner.workers.dev/";
   window.fetch = function (u, init) {
-    var url = typeof u === "string" ? u : (u && u.url) || "";
+    var url = typeof u === "string" ? u : (u && (u.href || u.url)) || "";   // fetch bekommt Text, URL-Objekt oder Request
     if (/financialmodelingprep\.com\/stable\//.test(url)) {
       var pu = null; try { pu = new URL(url); } catch (e) { }
       if (pu && pu.searchParams.get("apikey") === "proxy") {

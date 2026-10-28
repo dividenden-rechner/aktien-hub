@@ -32,6 +32,29 @@ export default {
     if (req.method === "OPTIONS") return new Response(null, { headers: { ...cors, "Access-Control-Allow-Methods": "GET", "Access-Control-Max-Age": "86400" } });
     if (req.method !== "GET") return new Response("method not allowed", { status: 405, headers: cors });
     if (!ok) return new Response("forbidden", { status: 403, headers: cors });
+    // Firmenlogos (ohne API-Schluessel): FMP-Bild, sonst Favicon der Firmen-Website. Mit CORS, damit die Seite Helligkeit pruefen kann.
+    const lu = new URL(req.url), lm = lu.pathname.match(/^\/logo\/([A-Za-z0-9.\-]{1,12})(?:\.png)?$/);
+    if (lm) {
+      const sym = lm[1].toUpperCase(), dom = (lu.searchParams.get("d") || "").toLowerCase();
+      const lkey = new Request("https://cache.fmp-proxy.internal/logo/" + sym + "?d=" + dom);
+      const lc = caches.default, lhit = await lc.match(lkey);
+      const mk = (body, type, age) => new Response(body, { headers: { ...cors, "Content-Type": type, "Cache-Control": "public, max-age=" + age } });
+      if (lhit) { const b = await lhit.arrayBuffer(); return mk(b, lhit.headers.get("Content-Type") || "image/png", 604800); }
+      const quellen = ["https://images.financialmodelingprep.com/symbol/" + encodeURIComponent(sym) + ".png"];
+      if (/^[a-z0-9.\-]+\.[a-z]{2,}$/.test(dom)) quellen.push("https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https://" + dom + "&size=128");
+      for (const q of quellen) {
+        try {
+          const r = await fetch(q, { headers: { "User-Agent": "dividenden-rechner-proxy" } });
+          const t = r.headers.get("Content-Type") || "";
+          if (!r.ok || !/^image\//.test(t)) continue;
+          const b = await r.arrayBuffer();
+          if (b.byteLength < 400) continue;
+          ctx.waitUntil(lc.put(lkey, new Response(b, { headers: { "Content-Type": t, "Cache-Control": "public, max-age=604800" } })));
+          return mk(b, t, 604800);
+        } catch (e) { /* naechste Quelle */ }
+      }
+      return new Response("kein Logo", { status: 404, headers: { ...cors, "Cache-Control": "public, max-age=3600" } });
+    }
     if (!env.FMP_API_KEY) return new Response(JSON.stringify({ "Error Message": "Server nicht eingerichtet (FMP_API_KEY fehlt)" }), { status: 503, headers: { ...cors, "Content-Type": "application/json" } });
 
     const u = new URL(req.url), pfad = u.pathname.replace(/^\/+/, "");
