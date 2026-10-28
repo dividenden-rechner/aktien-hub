@@ -1,7 +1,7 @@
 ---
-title: "UPS steigert Quartalsumsatz im dritten Quartal 2026 auf 22,9 Mrd. USD"
+title: "UPS setzt 22,9 Milliarden um, Sondereffekte drücken das Ergebnis"
 description: "UPS legt die Ergebnisse für das dritte Quartal 2026 vor: Der Umsatz steigt auf 22,9 Mrd. USD, während Sondereffekte das operative Ergebnis belasten."
-date: 2026-10-27 08:00
+date: 2026-10-27 20:20
 author: "Redaktions-Team Dividenden-Rechner.de"
 author_bio: "Das Redaktions-Team von Dividenden-Rechner.de schreibt über Dividendenaktien, Kennzahlen und Steuerthemen für Privatanleger. Die Rechner und Auswertungen auf der Seite entstehen im eigenen Haus."
 category: Quartalszahlen

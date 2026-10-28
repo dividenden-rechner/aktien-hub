@@ -11,6 +11,7 @@ bevor du `draft: true` entfernst. Zahlen werden gegen den Berichtstext geprueft.
 """
 import argparse, base64, html, json, os, re, subprocess, sys, time, urllib.parse, urllib.request, urllib.error
 from datetime import date, datetime
+from zoneinfo import ZoneInfo
 from html.parser import HTMLParser
 from io import BytesIO
 from PIL import Image, ImageDraw, ImageFont
@@ -948,7 +949,7 @@ def build(out, text, src_note, force=False, calc_rows=None, fmp_used=False, figs
     except Exception as e:
         print("Foto-Suche fehlgeschlagen:", e)
     fm = ["---", f"title: {q(a['title'])}", f"description: {q(a['description'])}",
-          f"date: {date.today().isoformat()} 08:00", f"author: {q(CFG['author'])}", f"author_bio: {q(CFG['author_bio'])}",
+          f"date: {datetime.now(ZoneInfo('Europe/Berlin')).strftime('%Y-%m-%d %H:%M')}", f"author: {q(CFG['author'])}", f"author_bio: {q(CFG['author_bio'])}",
           f"category: {rtype}"]
     hinweise = []
     if photo:

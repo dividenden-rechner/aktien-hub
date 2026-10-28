@@ -1,7 +1,7 @@
 ---
 title: "Mercedes-Benz senkt Ausblick für 2026 wegen China und Kosten"
 description: "Die Mercedes-Benz Group passt wegen hoher Materialkosten und Gegenwind in China ihren Ausblick für das Gesamtjahr 2026 an."
-date: 2026-10-27 08:00
+date: 2026-10-27 11:50
 author: "Redaktions-Team Dividenden-Rechner.de"
 author_bio: "Das Redaktions-Team von Dividenden-Rechner.de schreibt über Dividendenaktien, Kennzahlen und Steuerthemen für Privatanleger. Die Rechner und Auswertungen auf der Seite entstehen im eigenen Haus."
 category: Sonstige Meldung

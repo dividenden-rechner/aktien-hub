@@ -3,6 +3,7 @@
 Startseiten-Teaser und Navigationseintrag. Aufruf im Repo-Hauptordner:  python3 tools/build_magazin.py
 Benötigt: pip install markdown pillow"""
 import re, os, sys, json, html, glob, datetime, email.utils
+from zoneinfo import ZoneInfo
 import markdown
 from PIL import Image, ImageDraw, ImageFont
 
@@ -23,6 +24,10 @@ HINT = ('<p class="note"><strong>Hinweis:</strong> Dieser Text dient der allgeme
 def de_date(d):
     return f"{d.day}. {MONTHS[d.month-1]} {d.year}"
 
+def de_dt(d):
+    """Datum mit Uhrzeit, z. B. 28. Oktober 2026, 14:52 Uhr"""
+    return f"{de_date(d)}, {d.strftime('%H:%M')} Uhr"
+
 def parse_date(s):
     s = str(s).strip()
     for f in ("%Y-%m-%d %H:%M", "%Y-%m-%dT%H:%M", "%Y-%m-%d"):
@@ -30,9 +35,14 @@ def parse_date(s):
         except ValueError: pass
     raise ValueError("Datum nicht lesbar: " + s)
 
-def iso(d):  # mit Zeitzone Deutschland (Winter-/Sommerzeit grob)
-    off = "+02:00" if 4 <= d.month <= 10 else "+01:00"
-    return d.strftime("%Y-%m-%dT%H:%M:%S") + off
+def iso(d):  # mit deutscher Zeitzone (Sommer- und Winterzeit korrekt)
+    try:
+        from zoneinfo import ZoneInfo
+        d = d.replace(tzinfo=ZoneInfo("Europe/Berlin"))
+        return d.strftime("%Y-%m-%dT%H:%M:%S%z")[:-2] + ":" + d.strftime("%z")[-2:]
+    except Exception:
+        off = "+02:00" if 4 <= d.month <= 10 else "+01:00"
+        return d.strftime("%Y-%m-%dT%H:%M:%S") + off
 
 def read_post(path):
     raw = open(path, encoding="utf-8").read()
@@ -187,7 +197,7 @@ def build_post(p, posts):
     o += f'<nav class="crumbs" aria-label="Brotkrumen"><a href="{pre}">Start</a> › <a href="{pre}magazin/">Magazin</a> › <span aria-current="page">{esc(p["title"])}</span></nav>\n'
     o += f'<p class="kicker">{esc(p["category"])}</p>\n{logo_html(p)}<p class="lead">{esc(p["description"])}</p>\n'
     upd = f' · Aktualisiert: <time datetime="{iso(p["upd"])}">{de_date(p["upd"])}</time>' if p["upd"].date() > p["dt"].date() else ""
-    o += f'<p class="byline">Von <strong>{esc(author)}</strong> · <time datetime="{iso(p["dt"])}">{de_date(p["dt"])}</time>{upd} · {mins} Min. Lesezeit</p>\n'
+    o += f'<p class="byline">Von <strong>{esc(author)}</strong> · <time datetime="{iso(p["dt"])}">{de_dt(p["dt"])}</time>{upd} · {mins} Min. Lesezeit</p>\n'
     alt = p.get("image_alt") or p["title"]
     cred = p.get("image_credit") or ""
     if cred and p.get("image_source", "").startswith("http"):
@@ -223,7 +233,7 @@ def build_index(posts):
     o += f'<nav class="crumbs" aria-label="Brotkrumen"><a href="{pre}">Start</a> › <span aria-current="page">Magazin</span></nav>\n<h1>Magazin</h1>\n<p class="lead">{esc(desc)}</p>\n<div class="cards magcards">\n'
     for x in posts:
         o += (f'<a class="card" href="{x["slug"]}/"><img class="mcover" src="{pre}{x["img"]}" alt="" width="1200" height="675" loading="lazy">'
-              f'<p class="kicker">{esc(x["category"])} · {de_date(x["dt"])}</p><h3>{esc(x["title"])}</h3><p>{esc(x["description"])}</p></a>\n')
+              f'<p class="kicker">{esc(x["category"])} · {de_dt(x["dt"])}</p><h3>{esc(x["title"])}</h3><p>{esc(x["description"])}</p></a>\n')
     o += '</div>\n<p class="meta"><a href="feed.xml">RSS-Feed abonnieren</a></p>\n' + HINT + "\n</main>\n" + footer_html(depth) + "\n</body>\n</html>\n"
     open("magazin/index.html", "w", encoding="utf-8").write(o)
 
@@ -233,7 +243,7 @@ def build_feed(posts):
     for x in posts[:30]:
         link = f'{BASE}magazin/{x["slug"]}/'
         content = re.sub(r'(href|src)="(\.\./)+', lambda m: f'{m.group(1)}="{BASE}', x["html"])
-        pub = email.utils.format_datetime(x["dt"].replace(tzinfo=datetime.timezone(datetime.timedelta(hours=2 if 4 <= x["dt"].month <= 10 else 1))))
+        pub = email.utils.format_datetime(x["dt"].replace(tzinfo=ZoneInfo("Europe/Berlin")))
         items += (f'<item><title>{esc(x["title"])}</title><link>{link}</link><guid isPermaLink="true">{link}</guid><pubDate>{pub}</pubDate>'
                   f'<category>{esc(x["category"])}</category><dc:creator>{esc(x["author"])}</dc:creator><description>{esc(x["description"])}</description>'
                   f'<enclosure url="{BASE}{x["img"]}" type="image/{"jpeg" if x["img"].lower().endswith(("jpg","jpeg")) else "png"}" length="0"/>'
@@ -323,7 +333,7 @@ def main():
         if p["draft"]: print("Entwurf übersprungen:", f); continue
         if p["dt"] > datetime.datetime.now() + datetime.timedelta(days=1): print("Zukunftsdatum übersprungen:", f); continue
         posts.append(p)
-    posts.sort(key=lambda x: x["dt"], reverse=True)
+    posts.sort(key=lambda x: (x["dt"], x["upd"], x["slug"]), reverse=True)
     for x in glob.glob("magazin/*/"):
         if os.path.basename(os.path.normpath(x)) not in [p["slug"] for p in posts]:
             import shutil; shutil.rmtree(x)

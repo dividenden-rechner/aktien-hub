@@ -1,7 +1,7 @@
 ---
-title: "Novartis mit höherer Prognose nach Wachstum im dritten Quartal 2026"
+title: "Novartis erhöht die Gewinnprognose, neue Medikamente laufen gut"
 description: "Novartis hebt die Gewinnprognose für das Gesamtjahr 2026 an. Grund sind ein höheres operatives Kernergebnis und stark nachgefragte Wachstums-Medikamente."
-date: 2026-10-27 08:00
+date: 2026-10-27 09:40
 author: "Redaktions-Team Dividenden-Rechner.de"
 author_bio: "Das Redaktions-Team von Dividenden-Rechner.de schreibt über Dividendenaktien, Kennzahlen und Steuerthemen für Privatanleger. Die Rechner und Auswertungen auf der Seite entstehen im eigenen Haus."
 category: Quartalszahlen

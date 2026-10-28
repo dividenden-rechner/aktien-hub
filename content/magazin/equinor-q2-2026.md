@@ -1,7 +1,7 @@
 ---
-title: "Equinor steigert Gewinn im zweiten Quartal 2026 deutlich"
+title: "Equinor verdient dank höherer Preise und mehr Förderung deutlich mehr"
 description: "Höhere Rohstoffpreise und ein Förderplus treiben das Ergebnis von Equinor im zweiten Quartal 2026 deutlich nach oben."
-date: 2026-10-28 08:00
+date: 2026-10-28 06:55
 author: "Redaktions-Team Dividenden-Rechner.de"
 author_bio: "Das Redaktions-Team von Dividenden-Rechner.de schreibt über Dividendenaktien, Kennzahlen und Steuerthemen für Privatanleger. Die Rechner und Auswertungen auf der Seite entstehen im eigenen Haus."
 category: Quartalszahlen

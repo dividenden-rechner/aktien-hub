@@ -1,7 +1,7 @@
 ---
 title: "Verizon steigert bereinigtes EPS und hebt Jahresziele für 2026 an"
 description: "Verizon verzeichnet im dritten Quartal 2026 Zuwächse bei Service-Umsatz und bereinigtem EPS. Die Jahresprognose wurde in mehreren Punkten angehoben."
-date: 2026-10-26 08:00
+date: 2026-10-26 22:28
 author: "Redaktions-Team Dividenden-Rechner.de"
 author_bio: "Das Redaktions-Team von Dividenden-Rechner.de schreibt über Dividendenaktien, Kennzahlen und Steuerthemen für Privatanleger. Die Rechner und Auswertungen auf der Seite entstehen im eigenen Haus."
 category: Zahlen

@@ -8,7 +8,7 @@
 ---
 title: Überschrift, möglichst unter 70 Zeichen
 description: Ein bis zwei Sätze, die Lust aufs Lesen machen (max. ca. 160 Zeichen).
-date: 2026-10-27 08:00
+date: 2026-10-27 08:00        (Veröffentlichung: Datum und Uhrzeit, Berliner Zeit; danach wird sortiert, neueste zuerst)
 updated: 2026-11-02 09:30        (optional, nur bei echten Änderungen)
 author: Divi
 author_bio: Ein Satz zu dir als Autor (optional)

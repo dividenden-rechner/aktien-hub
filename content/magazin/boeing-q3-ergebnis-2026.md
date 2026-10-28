@@ -1,7 +1,7 @@
 ---
-title: "Boeing steigert Umsatz im dritten Quartal 2026"
+title: "Boeing setzt 24,2 Milliarden um und bleibt operativ im Minus"
 description: "Boeing verzeichnet im dritten Quartal 2026 einen Umsatz von 24,2 Milliarden US-Dollar, schreibt jedoch operativ weiterhin rote Zahlen."
-date: 2026-10-27 08:00
+date: 2026-10-27 13:23
 author: "Redaktions-Team Dividenden-Rechner.de"
 author_bio: "Das Redaktions-Team von Dividenden-Rechner.de schreibt über Dividendenaktien, Kennzahlen und Steuerthemen für Privatanleger. Die Rechner und Auswertungen auf der Seite entstehen im eigenen Haus."
 category: Quartalszahlen

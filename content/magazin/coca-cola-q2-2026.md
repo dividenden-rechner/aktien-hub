@@ -1,7 +1,7 @@
 ---
-title: "Coca-Cola hebt Jahresprognose nach solidem zweiten Quartal an"
+title: "Coca-Cola hebt die Ziele für Cashflow und Gewinn je Aktie an"
 description: "Coca-Cola steigert Umsatz und bereinigten Gewinn im zweiten Quartal 2026 und erhöht die Jahresziele für Free Cashflow und Gewinn je Aktie."
-date: 2026-10-26 08:00
+date: 2026-10-26 21:48
 author: "Redaktions-Team Dividenden-Rechner.de"
 author_bio: "Das Redaktions-Team von Dividenden-Rechner.de schreibt über Dividendenaktien, Kennzahlen und Steuerthemen für Privatanleger. Die Rechner und Auswertungen auf der Seite entstehen im eigenen Haus."
 category: Zahlen

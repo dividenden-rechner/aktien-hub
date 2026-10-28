@@ -1,7 +1,7 @@
 ---
-title: "Coca-Cola im 3. Quartal 2026: Umsatz und Ergebnis legen zu"
+title: "Coca-Cola verdient mehr: Umsatz und Konzernergebnis steigen"
 description: "The Coca-Cola Company legt die Zahlen für das dritte Quartal 2026 vor. Der Nettoumsatz und das Konzernergebnis steigen im Vergleich zum Vorjahr."
-date: 2026-10-27 08:00
+date: 2026-10-27 12:58
 author: "Redaktions-Team Dividenden-Rechner.de"
 author_bio: "Das Redaktions-Team von Dividenden-Rechner.de schreibt über Dividendenaktien, Kennzahlen und Steuerthemen für Privatanleger. Die Rechner und Auswertungen auf der Seite entstehen im eigenen Haus."
 category: Quartalszahlen
