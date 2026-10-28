@@ -12,7 +12,7 @@ image_source: https://commons.wikimedia.org/wiki/File:GE_building_@_Boulogne-Bil
 logo_name: "GE Vernova"
 logo_symbol: GEV
 logo_domain: gevernova.com
-
+logo_file: assets/logos/gev.png
 ---
 <!-- PRÜFEN: Aufmacherfoto ist automatisch von Wikimedia Commons gewaehlt: bitte pruefen, ob es zum Artikel passt (sonst image-Zeilen entfernen, dann entsteht ein Titelbild automatisch). -->
 <!-- PRÜFEN: Diese Werte wurden im Berichtstext nicht gefunden: Grafik Power: 6067; Grafik Electrification: 3862; Grafik Wind: 2741 -->

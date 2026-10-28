@@ -12,6 +12,7 @@ image_source: https://commons.wikimedia.org/wiki/File:20240927_Ping_An_Financial
 logo_name: "Ping An Insurance (Group) Company of China, Ltd."
 logo_symbol: 2318.HK
 draft: true
+logo_file: assets/logos/2318-hk.png
 ---
 <!-- PRÜFEN: Aufmacherfoto ist automatisch von Wikimedia Commons gewaehlt: bitte pruefen, ob es zum Artikel passt (sonst image-Zeilen entfernen, dann entsteht ein Titelbild automatisch). -->
 <!-- PRÜFEN: Diese Werte wurden im Berichtstext nicht gefunden: Grafik Umsatz: 787634; Grafik Betriebsergebnis: 125905; Grafik Nettogewinn: 96645; Grafik Neugeschäftswert Life & Health: 30987 -->

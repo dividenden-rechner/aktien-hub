@@ -13,6 +13,7 @@ logo_name: "Unilever"
 logo_symbol: ULVR.L
 logo_domain: unilever.com
 draft: true
+logo_file: assets/logos/ulvr-l.png
 ---
 <!-- PRÜFEN: Aufmacherfoto ist automatisch von Wikimedia Commons gewaehlt: bitte pruefen, ob es zum Artikel passt (sonst image-Zeilen entfernen, dann entsteht ein Titelbild automatisch). -->
 <!-- PRÜFEN: Diese Werte wurden im Berichtstext nicht gefunden: Grafik North America: -0.7; Grafik Europe: -1.7 -->
