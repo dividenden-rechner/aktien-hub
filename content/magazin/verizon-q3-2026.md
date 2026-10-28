@@ -12,6 +12,7 @@ image_source: https://commons.wikimedia.org/wiki/File:One_Verizon_Way_in_Basking
 
 logo_symbol: VZ
 logo_domain: verizon.com
+logo_file: assets/logos/vz.png
 ---
 <!-- PRÜFEN: Aufmacherfoto ist automatisch von Wikimedia Commons gewaehlt: bitte pruefen, ob es zum Artikel passt (sonst image-Zeilen entfernen, dann entsteht ein Titelbild automatisch). -->
 <!-- PRÜFEN: Diese Werte wurden im Berichtstext nicht gefunden: Mobility and Broadband Service Revenue (value: 23,5 Mrd. USD); Bereinigtes EBITDA (Adjusted EBITDA) (value: 13,8 Mrd. USD); Bereinigter Gewinn je Aktie (Adjusted EPS) (value: 1,31 USD); Grafik 3Q 25: 44; Grafik 4Q 25: 616; Grafik 1Q 26: 55; Grafik 2Q 26: 184; Grafik 3Q 26: 406 -->

@@ -11,7 +11,7 @@ image_credit: "Foto: Rundvald / Wikimedia Commons, Public domain"
 image_source: https://commons.wikimedia.org/wiki/File:Coca-Cola-truck-Peterbilt.jpg
 logo_symbol: KO
 logo_domain: coca-colacompany.com
-
+logo_file: assets/logos/ko.png
 ---
 <!-- PRÜFEN: Aufmacherfoto ist automatisch von Wikimedia Commons gewaehlt: bitte pruefen, ob es zum Artikel passt (sonst image-Zeilen entfernen, dann entsteht ein Titelbild automatisch). -->
 <!-- PRÜFEN: Ausschnitte aus dem Bericht im Text (f1, f2): bitte prüfen, ob Zuschnitt und Platz passen. Unpassende Bildzeilen einfach löschen. -->

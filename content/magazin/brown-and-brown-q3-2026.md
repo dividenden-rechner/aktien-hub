@@ -7,6 +7,7 @@ author_bio: "Das Redaktions-Team von Dividenden-Rechner.de schreibt über Divide
 category: Quartalszahlen
 logo_symbol: BRO
 logo_domain: bbrown.com
+logo_file: assets/logos/bro.png
 ---
 <!-- PRÜFEN: Kein freies Aufmacherfoto gefunden, das Titelbild entsteht automatisch. Eigenes Foto: image, image_alt, image_credit ergaenzen. -->
 

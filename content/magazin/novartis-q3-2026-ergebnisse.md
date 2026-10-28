@@ -11,6 +11,7 @@ image_credit: "Foto: Alexandre Prevot from Nancy, France / Wikimedia Commons, CC
 image_source: https://commons.wikimedia.org/wiki/File:Novartis_Campus_-_Novartis_Pavillon_(53992600334).jpg
 logo_symbol: NVS
 logo_domain: novartis.com
+logo_file: assets/logos/nvs.png
 ---
 <!-- PRÜFEN: Aufmacherfoto ist automatisch von Wikimedia Commons gewaehlt: bitte pruefen, ob es zum Artikel passt (sonst image-Zeilen entfernen, dann entsteht ein Titelbild automatisch). -->
 

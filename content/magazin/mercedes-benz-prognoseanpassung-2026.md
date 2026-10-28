@@ -11,7 +11,7 @@ image_credit: "Foto: Julian Herzog ( Website ) / Wikimedia Commons, CC BY 4.0"
 image_source: https://commons.wikimedia.org/wiki/File:Mercedes-Benz_Werk_Untert%C3%BCrkheim_Neckarpark_Stuttgart_2015_02.jpg
 logo_symbol: MBG.DE
 logo_domain: mercedes-benz.com
-
+logo_file: assets/logos/mbg-de.png
 ---
 <!-- PRÜFEN: Aufmacherfoto ist automatisch von Wikimedia Commons gewaehlt: bitte pruefen, ob es zum Artikel passt (sonst image-Zeilen entfernen, dann entsteht ein Titelbild automatisch). -->
 <!-- PRÜFEN: Quelle: https://group.mercedes-benz.com/investoren/berichte-news/ad-hoc/ad-hoc-meldung-453568.html -->

@@ -12,6 +12,7 @@ image_source: https://commons.wikimedia.org/wiki/File:Equinor,_Martin_Linges_vei
 logo_symbol: EQNR
 logo_domain: equinor.com
 draft: true
+logo_file: assets/logos/eqnr.png
 ---
 <!-- PRÜFEN: Aufmacherfoto ist automatisch von Wikimedia Commons gewaehlt: bitte pruefen, ob es zum Artikel passt (sonst image-Zeilen entfernen, dann entsteht ein Titelbild automatisch). -->
 <!-- PRÜFEN: Diese Werte wurden im Berichtstext nicht gefunden: Grafik E&P Norwegen: 9187; Grafik Power: -30 -->
