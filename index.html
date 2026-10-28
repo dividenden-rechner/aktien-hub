@@ -154,14 +154,109 @@ article.wide>.calc-wrap{max-width:none}
 <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
 <link rel="stylesheet" href="assets/navigation.css?v=20261025a">
 <style id="mag-css">.home-mag .mcover{display:block;width:100%;height:auto;aspect-ratio:16/9;object-fit:cover}.home-mag .card{padding:0;overflow:hidden}.home-mag .card>*:not(.mcover){margin-left:16px;margin-right:16px}.home-mag .kicker{margin-top:12px;margin-bottom:4px;font-size:13px;font-weight:700;letter-spacing:.04em;text-transform:uppercase;color:#1a7a45}.home-mag .card p:last-child{margin-bottom:16px}</style>
+<style id="home-css">
+.hh{background:linear-gradient(180deg,#f0f8f3 0%,#fff 100%);padding:34px 0 30px}
+.hh .wrap{display:grid;grid-template-columns:1.05fr .95fr;gap:34px;align-items:center}
+.hh .kick{display:inline-block;background:#fff;border:1px solid #cfe8d9;color:#1a7a45;font-size:13px;font-weight:600;padding:4px 12px;border-radius:99px;margin-bottom:12px}
+.hh h1{font-size:clamp(28px,4.4vw,44px);line-height:1.14;margin:0 0 14px;letter-spacing:-.02em;max-width:none}
+.hh h1 em{font-style:normal;color:#2f9e5b}
+.hh .lead{font-size:19px;color:#2b3a47;margin:0 0 18px;max-width:none}
+.hh .trust{display:flex;flex-wrap:wrap;gap:4px 18px;font-size:14px;color:#5d6b78;margin:0;padding:0;list-style:none}
+.hh .trust li{margin:0}.hh .trust li::before{content:"✓ ";color:#2f9e5b;font-weight:700}
+.hh-mini{background:#fff;border:1px solid #dfe5ea;border-radius:18px;padding:20px;box-shadow:0 10px 30px rgba(20,32,43,.07);min-width:0}
+.hh-mini h2{font-size:14px;margin:0 0 12px;color:#5d6b78;font-weight:600;text-transform:uppercase;letter-spacing:.04em}
+.hh-f{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}
+.hh-f label{font-size:13px;color:#5d6b78;display:block}
+.hh-f input[type=number]{width:100%;font:inherit;font-size:16px;padding:8px 10px;border:1px solid #cfd6dc;border-radius:9px;margin-top:2px}
+.hh-f input:focus{outline:2px solid #2f9e5b;border-color:#2f9e5b}
+.hh-f .rng{grid-column:1/-1}.hh-f .rng input{width:100%;padding:0;border:0;accent-color:#2f9e5b}
+.hh-big{display:flex;gap:16px;margin:14px 0 4px}.hh-big div{flex:1;min-width:0}.hh-big small{display:block;color:#5d6b78;font-size:13px}
+.hh-big b{font-size:clamp(20px,3vw,27px);line-height:1.2;font-variant-numeric:tabular-nums;display:block}.hh-big .g{color:#1a7a45}
+svg.hh-ch{width:100%;height:auto;display:block}
+.hh-leg{display:flex;gap:16px;font-size:12.5px;color:#5d6b78;margin:2px 0 10px}.hh-leg i{display:inline-block;width:10px;height:10px;border-radius:2px;margin-right:5px;vertical-align:-1px}
+.hh-btn{display:block;text-align:center;background:#2f9e5b;color:#fff;padding:12px 16px;border-radius:10px;text-decoration:none;font-weight:600}
+.hh-btn:hover{background:#1a7a45;color:#fff}.hh-fine{font-size:12px;color:#5d6b78;margin:8px 0 0}
+.home-tiles,.home-mag,.home-alle{margin-top:34px}
+.home-tiles h2,.home-mag h2,.home-alle h2,.home-more h2{margin-top:0}
+.home-tiles .sub,.home-mag .sub,.home-alle .sub{color:#5d6b78;margin:0 0 16px}
+.home-tiles .tiles{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:16px;max-width:none}
+.tile{display:flex;flex-direction:column;border:1px solid #dfe5ea;border-radius:16px;padding:18px;text-decoration:none;color:#14202b;background:#fff;transition:.15s}
+.tile:hover{border-color:#2f9e5b;transform:translateY(-3px);box-shadow:0 8px 22px rgba(20,32,43,.08)}
+.tile .pv{height:78px;border-radius:10px;background:#f0f8f3;margin-bottom:12px;display:flex;align-items:center;justify-content:center;overflow:hidden}
+.tile h3{margin:0 0 4px;font-size:18px;color:#1a7a45}.tile p{margin:0;font-size:14.5px;color:#5d6b78;flex:1}
+.tile .go{margin-top:10px;font-weight:600;font-size:14px;color:#1a7a45}
+.home-mag .more{margin:12px 0 0}
+.home-mag .magcards{grid-template-columns:repeat(auto-fit,minmax(260px,1fr))}
+body.tools article.wide>section.home-tiles,body.tools article.wide>section.home-mag,body.tools article.wide>section.home-more{max-width:1100px}
+@media(max-width:900px){.hh .wrap{grid-template-columns:minmax(0,1fr)}.home-tiles .tiles{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:520px){.hh{padding:22px 0 20px}.hh .lead{font-size:17px}.hh-mini{padding:16px}.home-tiles .tiles{grid-template-columns:1fr}.tile{flex-direction:row;flex-wrap:wrap;align-items:center;gap:0 14px}.tile .pv{width:84px;height:64px;margin:0}.tile>div.tx{flex:1}.hh-big{gap:10px}}
+</style>
 </head>
 <body class="tools">
 <header id="hub-global-header"><div class="hub-nav-inner"><a class="hub-brand" href=""><img class="hub-logo" src="assets/logo.png" alt="" width="36" height="36"> <span class="hub-brand-name">Dividenden-Rechner <span>Aktien-Hub</span></span></a><nav class="hub-links" aria-label="Hauptmenü"><a href="rechner/" aria-current="page">Rechner</a><a href="aktien/">Aktien</a><a href="depot/">Depot</a><a href="news/">News</a><a href="earnings/">Earnings</a><a href="screener/">Screener</a><a href="magazin/">Magazin</a><a href="einfuehrung/">Einführung</a><a href="grundlagen/">Grundlagen</a><a href="fortgeschrittene/">Fortgeschrittene</a></nav></div></header>
 <script src="assets/navigation.js"></script>
 <script src="assets/logos.js"></script>
+<section class="hh" id="start"><div class="wrap">
+<div>
+<span class="kick">Kostenlos · ohne Anmeldung</span>
+<h1>Dividenden-Rechner: Was wird aus deiner Dividende in <em>20 Jahren?</em></h1>
+<p class="lead">Dein kostenloser Dividendenrechner und weitere Finanzrechner: Rechne in Sekunden aus, wie Dividenden, Sparrate und Zinseszins dein Depot wachsen lassen, und prüfe danach echte Aktien im Aktien-Hub.</p>
+<ul class="trust"><li>Läuft in deinem Browser</li><li>Eingaben werden nicht gespeichert</li><li>Aktiendaten von Financial Modeling Prep</li></ul>
+</div>
+<div class="hh-mini" role="group" aria-label="Schnellrechner">
+<h2>Schnellrechner Dividendenwachstum</h2>
+<div class="hh-f">
+<label>Startkapital (€)<input id="hk0" type="number" inputmode="decimal" value="10000" min="0" step="1000"></label>
+<label>Sparrate pro Monat (€)<input id="hsp" type="number" inputmode="decimal" value="300" min="0" step="50"></label>
+<label>Dividendenrendite (%)<input id="hdy" type="number" inputmode="decimal" value="3.5" min="0" step="0.1"></label>
+<label>Dividendenwachstum (% p. a.)<input id="hdg" type="number" inputmode="decimal" value="5" min="0" step="0.5"></label>
+<label class="rng">Laufzeit: <b id="hjl">20</b> Jahre<input id="hjy" type="range" min="5" max="40" value="20"></label>
+</div>
+<div class="hh-big"><div><small>Depotwert nach <span id="hj2">20</span> Jahren</small><b id="hrw">–</b></div><div><small>Dividende pro Jahr dann</small><b class="g" id="hrd">–</b></div></div>
+<svg class="hh-ch" id="hch" viewBox="0 0 440 170" role="img" aria-label="Depotwert über die Jahre"></svg>
+<div class="hh-leg"><span><i style="background:#c9d3dc"></i>eingezahlt</span><span><i style="background:#2f6fdb"></i>Depotwert</span></div>
+<a class="hh-btn" href="#rechner-alle">Alle Rechner und Einstellungen →</a>
+<p class="hh-fine">Szenario auf Basis deiner Annahmen, vor Steuern, keine Prognose. Dividenden werden reinvestiert, der Kurs wächst so schnell wie die Dividende.</p>
+</div>
+</div></section>
+<script>
+(function(){var $=function(i){return document.getElementById(i)};if(!$("hk0"))return;
+function eur(v){return Math.round(v).toLocaleString("de-DE")+" €"}
+function calc(){var k0=+$("hk0").value||0,sp=(+$("hsp").value||0)*12,dy=(+$("hdy").value||0)/100,dg=(+$("hdg").value||0)/100,n=+$("hjy").value;
+$("hjl").textContent=$("hj2").textContent=n;
+var v=k0,ein=k0,pts=[[0,v,ein]];for(var y=1;y<=n;y++){v=(v+sp/2)*(1+dy+dg)+sp/2;ein+=sp;pts.push([y,v,ein])}
+$("hrw").textContent=eur(v);$("hrd").textContent=eur(v*dy);
+var W=440,H=170,pl=6,pb=20,mx=Math.max.apply(null,pts.map(function(p){return p[1]}))||1;
+function X(y){return pl+(W-pl*2)*y/n}function Y(a){return H-pb-(H-pb-8)*a/mx}
+function line(i){return pts.map(function(p){return X(p[0]).toFixed(1)+","+Y(p[i]).toFixed(1)}).join(" ")}
+var s='<line x1="'+pl+'" x2="'+(W-pl)+'" y1="'+(H-pb)+'" y2="'+(H-pb)+'" stroke="#e6ebef"/>';
+s+='<polygon fill="#c9d3dc" opacity=".55" points="'+X(0)+","+(H-pb)+" "+line(2)+" "+X(n)+","+(H-pb)+'"/>';
+s+='<polygon fill="#2f6fdb" opacity=".15" points="'+X(0)+","+(H-pb)+" "+line(1)+" "+X(n)+","+(H-pb)+'"/>';
+s+='<polyline fill="none" stroke="#2f6fdb" stroke-width="2.6" stroke-linejoin="round" points="'+line(1)+'"/><polyline fill="none" stroke="#8d9aa6" stroke-width="1.6" points="'+line(2)+'"/>';
+[0,Math.round(n/2),n].forEach(function(y){s+='<text x="'+(y==0?pl:y==n?W-pl:X(y))+'" y="'+(H-5)+'" font-size="11" fill="#5d6b78" text-anchor="'+(y==0?"start":y==n?"end":"middle")+'">'+(y==0?"heute":"Jahr "+y)+'</text>'});
+$("hch").innerHTML=s}
+["hk0","hsp","hdy","hdg","hjy"].forEach(function(i){$(i).addEventListener("input",calc)});calc()})();
+</script>
 <main class="wrap"><article class="wide">
-<h1>Dividenden-Rechner</h1>
-<p class="lead">Dein kostenloser Dividendenrechner und weitere Finanzrechner: Wähle einen Rechner. Alles läuft in deinem Browser, deine Eingaben werden nicht gespeichert oder übertragen. Alle Ergebnisse sind Szenarien auf Basis deiner Annahmen und keine Prognose.</p>
+<section class="home-tiles" aria-labelledby="h-tools"><h2 id="h-tools">Mehr als ein Rechner</h2>
+<p class="sub">Vom ersten Gedanken bis zur Aktie im Depot: alles an einem Ort.</p>
+<div class="tiles">
+<a class="tile" href="aktien/"><div class="pv"><svg viewBox="0 0 120 50" width="120" height="50" aria-hidden="true"><polyline fill="none" stroke="#2f6fdb" stroke-width="3" points="4,40 24,34 44,36 64,22 84,24 116,8"/><rect x="8" y="42" width="8" height="6" fill="#d4a017"/><rect x="30" y="40" width="8" height="8" fill="#d4a017"/><rect x="52" y="38" width="8" height="10" fill="#d4a017"/></svg></div><div class="tx"><h3>Aktien-Hub</h3><p>Kennzahlen, Dividendenverlauf, Gewinnfluss und Fair Value zu jeder Aktie.</p><span class="go">Aktie prüfen →</span></div></a>
+<a class="tile" href="screener/"><div class="pv"><svg viewBox="0 0 120 50" width="120" height="50" aria-hidden="true"><g fill="#fff" stroke="#9fd2b4"><rect x="6" y="6" width="108" height="10" rx="3"/><rect x="6" y="20" width="108" height="10" rx="3"/><rect x="6" y="34" width="108" height="10" rx="3"/></g><g fill="#2f9e5b"><rect x="10" y="9" width="30" height="4" rx="2"/><rect x="10" y="23" width="52" height="4" rx="2"/><rect x="10" y="37" width="20" height="4" rx="2"/></g></svg></div><div class="tx"><h3>Screener</h3><p>Aktien nach Dividendenrendite, Wachstum und Bewertung filtern.</p><span class="go">Aktien finden →</span></div></a>
+<a class="tile" href="depot/"><div class="pv"><svg viewBox="0 0 60 60" width="56" height="56" aria-hidden="true"><circle cx="30" cy="30" r="22" fill="none" stroke="#2f6fdb" stroke-width="12" stroke-dasharray="50 138"/><circle cx="30" cy="30" r="22" fill="none" stroke="#2f9e5b" stroke-width="12" stroke-dasharray="40 138" stroke-dashoffset="-50"/><circle cx="30" cy="30" r="22" fill="none" stroke="#d4a017" stroke-width="12" stroke-dasharray="48 138" stroke-dashoffset="-90"/></svg></div><div class="tx"><h3>Depot-Tracker</h3><p>Dein Depot, deine Dividenden und die Verteilung auf einen Blick.</p><span class="go">Depot ansehen →</span></div></a>
+<a class="tile" href="earnings/"><div class="pv"><svg viewBox="0 0 120 50" width="120" height="50" aria-hidden="true"><rect x="10" y="6" width="100" height="38" rx="5" fill="#fff" stroke="#9fd2b4"/><g fill="#2f9e5b"><circle cx="30" cy="22" r="4"/><circle cx="52" cy="22" r="4"/><circle cx="74" cy="32" r="4"/><circle cx="96" cy="22" r="4"/></g></svg></div><div class="tx"><h3>Earnings-Kalender</h3><p>Wann melden deine Unternehmen Zahlen? Mit Terminen und Schätzungen.</p><span class="go">Termine ansehen →</span></div></a>
+</div></section>
+<!-- magazin-neu -->
+<section class="home-mag" id="magazin"><h2>Neu im Magazin</h2><p class="sub">Quartalszahlen verständlich erklärt, mit Kurzfassung in drei Punkten.</p>
+<div class="cards magcards">
+<a class="card" href="magazin/unilever-q3-2026-trading-statement/"><div class="mcwrap" style="position:relative;margin:0"><img class="mcover" src="assets/magazin/unilever-q3-2026-trading-statement-foto.jpg" alt="" width="1200" height="675" loading="lazy"><span class="mclogo" style="position:absolute;left:12px;top:12px;width:52px;height:52px;box-sizing:border-box;border-radius:12px;box-shadow:0 2px 10px rgba(0,0,0,.22);display:flex;align-items:center;justify-content:center;padding:6px;background:#fff"><img src="assets/logos/ulvr-l.png" alt="" width="40" height="40" loading="lazy" style="display:block;max-width:100%;max-height:100%;object-fit:contain"></span></div><p class="kicker">Quartalszahlen · 28.10.2026, 15:47 Uhr</p><h3>Unilever steigert Umsatz auf 13,3 Milliarden Euro und hebt Ausblick an</h3></a>
+<a class="card" href="magazin/ge-vernova-q3-2026-ergebnisse/"><div class="mcwrap" style="position:relative;margin:0"><img class="mcover" src="assets/magazin/ge-vernova-q3-2026-ergebnisse-foto.jpg" alt="" width="1200" height="675" loading="lazy"><span class="mclogo" style="position:absolute;left:12px;top:12px;width:52px;height:52px;box-sizing:border-box;border-radius:12px;box-shadow:0 2px 10px rgba(0,0,0,.22);display:flex;align-items:center;justify-content:center;padding:6px;background:#fff"><img src="assets/logos/gev.png" alt="" width="40" height="40" loading="lazy" style="display:block;max-width:100%;max-height:100%;object-fit:contain"></span></div><p class="kicker">Quartalszahlen · 28.10.2026, 15:33 Uhr</p><h3>GE Vernova steigert Quartalsumsatz auf 12,6 Milliarden US-Dollar</h3></a>
+<a class="card" href="magazin/ping-an-q3-2026/"><div class="mcwrap" style="position:relative;margin:0"><img class="mcover" src="assets/magazin/ping-an-q3-2026-foto.jpg" alt="" width="1200" height="675" loading="lazy"><span class="mclogo" style="position:absolute;left:12px;top:12px;width:52px;height:52px;box-sizing:border-box;border-radius:12px;box-shadow:0 2px 10px rgba(0,0,0,.22);display:flex;align-items:center;justify-content:center;padding:6px;background:#fff"><img src="assets/logos/2318-hk.png" alt="" width="40" height="40" loading="lazy" style="display:block;max-width:100%;max-height:100%;object-fit:contain"></span></div><p class="kicker">Quartalszahlen · 28.10.2026, 15:18 Uhr</p><h3>Ping An steigert operatives Ergebnis auf 125,9 Milliarden RMB</h3></a>
+</div>
+<p class="more"><a href="magazin/">Alle Artikel im Magazin →</a></p></section>
+<!-- magazin-ende -->
+<section class="home-alle" id="rechner-alle"><h2>Alle Rechner</h2>
+<p class="sub">Wähle einen Rechner. Alles läuft in deinem Browser, deine Eingaben werden nicht gespeichert oder übertragen. Alle Ergebnisse sind Szenarien auf Basis deiner Annahmen und keine Prognose.</p></section>
 <nav class="calc-menu" id="calc-menu" aria-label="Rechner auswählen"><button type="button" id="m-dividenden-rechner" aria-pressed="false">Dividenden-Rechner</button><button type="button" id="m-dividenden-vergleich" aria-pressed="false">Dividenden-Vergleich</button><button type="button" id="m-von-dividenden-leben" aria-pressed="false">Von Dividenden leben</button><button type="button" id="m-rentenluecke" aria-pressed="false">Rentenlücke füllen</button><button type="button" id="m-rentenstrategie" aria-pressed="false">Rentenstrategie</button><button type="button" id="m-reinvestieren" aria-pressed="false">Dividenden reinvestieren</button><button type="button" id="m-altersvorsorgedepot" aria-pressed="false">Altersvorsorge-Depot</button><button type="button" id="m-vorabpauschale" aria-pressed="false">Vorabsteuer bei ETF/Fonds</button><button type="button" id="m-etf-rechner" aria-pressed="false">ETF-Rechner</button></nav>
 <div class="calc-wrap" id="t-dividenden-rechner">
 
@@ -403,19 +498,13 @@ article.wide>.calc-wrap{max-width:none}
 </div>
 <aside class="note" style="background:#f0fdf4;border-left-color:#10b981"><strong>Passende Werkzeuge:</strong> Prüfe Aktien im <a href="aktien/">Aktien-Hub</a>, filtere mit dem <a href="screener/">Screener</a>, verfolge dein <a href="depot/">Depot samt Dividendenkalender</a> oder rechne mit dem <a href="rechner/dividenden-zinseszins-rechner/">Zinseszins-Rechner</a>.</aside>
 <p class="note"><strong>Hinweis:</strong> Dieser Text dient der allgemeinen Information und ist weder Anlage-, Steuer- noch Rechtsberatung. Kapitalanlagen sind mit Risiken verbunden, bis hin zum Totalverlust. Die Zahlenbeispiele sind frei gewählt und keine Prognose.</p>
-<!-- magazin-neu -->
-<!-- magazin-ende -->
 <section class="home-more">
-<h2>Mehr als Rechner</h2>
+<h2>Wissen und News</h2>
 <div class="cards">
-<a class="card" href="aktien/"><h3>Aktien-Hub</h3><p>Dividendenverlauf, Umsatz, Gewinn, Finanzen und Kennzahlen jeder Aktie.</p></a>
-<a class="card" href="depot/"><h3>Depot-Tracker</h3><p>Depot einladen: Aufbau, Dividendenkalender, Forecast, XIRR und TWR.</p></a>
-<a class="card" href="screener/"><h3>Screener</h3><p>Aktien nach Dividendenrendite, Ausschüttungsquote, KGV und mehr filtern.</p></a>
-<a class="card" href="earnings/"><h3>Earnings-Kalender</h3><p>Quartalszahlen, Schätzungen und Dividendenänderungen im Überblick.</p></a>
 <a class="card" href="news/"><h3>News</h3><p>Unternehmensmeldungen zu den Aktien deiner Watchlist.</p></a>
+<a class="card" href="einfuehrung/"><h3>Einführung</h3><p>Was Dividenden sind und worauf Einsteiger achten sollten.</p></a>
 <a class="card" href="grundlagen/"><h3>Wissen: Grundlagen</h3><p>KGV, Ausschüttungsquote, PEG, Free Cashflow und weitere Kennzahlen erklärt.</p></a>
 <a class="card" href="fortgeschrittene/"><h3>Wissen: Fortgeschrittene</h3><p>REITs, BDCs, Banken bewerten, Dividendenwachstum, DCF und Quellensteuer.</p></a>
-<a class="card" href="einfuehrung/"><h3>Einführung</h3><p>Was Dividenden sind und worauf Einsteiger achten sollten.</p></a>
 </div>
 </section>
 </article></main>

@@ -312,7 +312,13 @@ def patch_llms(posts):
 
 def patch_home(posts):
     p = "index.html"; s = open(p, encoding="utf-8").read()
-    block = ""   # Magazin-Teaser stehen auf Startseite und Magazin, nicht auf der News-Seite
+    block = ""
+    if posts:
+        block = ('<section class="home-mag" id="magazin"><h2>Neu im Magazin</h2><p class="sub">Quartalszahlen verständlich erklärt, mit Kurzfassung in drei Punkten.</p>\n<div class="cards magcards">\n')
+        for x in posts[:3]:
+            block += (f'<a class="card" href="magazin/{x["slug"]}/"><div class="mcwrap" style="position:relative;margin:0"><img class="mcover" src="{x["img"]}" alt="" width="1200" height="675" loading="lazy">{card_logo(x, "")}</div>'
+                      f'<p class="kicker">{esc(x["category"])} · {de_dt_kurz(x["dt"])}</p><h3>{esc(x["title"])}</h3></a>\n')
+        block += '</div>\n<p class="more"><a href="magazin/">Alle Artikel im Magazin →</a></p></section>\n'
     mk = "<!-- magazin-neu -->"
     if mk not in s:
         s = s.replace('<section class="home-more">', mk + "\n" + mk.replace("neu", "ende") + '\n<section class="home-more">', 1)
