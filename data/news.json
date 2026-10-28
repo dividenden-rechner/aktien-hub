@@ -1,6 +1,96 @@
 {
- "updated": "2026-10-28T12:54:15.710868+00:00",
+ "updated": "2026-10-28T20:16:41.780363+00:00",
  "items": [
+  {
+   "sym": "MSFT",
+   "name": "Microsoft",
+   "title": "Microsoft earnings press release available on Investor Relations website",
+   "link": "https://news.microsoft.com/source/2026/10/28/microsoft-earnings-press-release-available-on-investor-relations-website-31/",
+   "date": "2026-10-28T20:08:01+00:00",
+   "text": "The post Microsoft earnings press release available on Investor Relations website appeared first on Source.",
+   "quelle": "RSS"
+  },
+  {
+   "sym": "AAPL",
+   "name": "Apple",
+   "title": "Apple unveils groundbreaking MacBook Pro with PROLED XDR Display",
+   "link": "https://www.apple.com/newsroom/2026/10/apple-unveils-groundbreaking-macbook-pro-with-proled-xdr-display/",
+   "date": "2026-10-28T17:09:28.430000+00:00",
+   "text": "Apple today introduced the all-new MacBook Pro with PROLED XDR Display featuring breakthrough tandem OLED technology.",
+   "quelle": "RSS"
+  },
+  {
+   "sym": "AMZN",
+   "name": "Amazon",
+   "title": "BINUS UNIVERSITY Becomes First in Indonesia to Offer Students Free Access to Kiro from AWS",
+   "link": "https://press.aboutamazon.com/aws/2026/10/binus-university-becomes-first-in-indonesia-to-offer-students-free-access-to-kiro-from-aws",
+   "date": "2026-10-28T16:25:38+00:00",
+   "text": "[MEDIA ALERT]Through Kiro for students, BINUS University will give students free access for one year to Amazon Web Service’s (AWS) AI-powered development tools to turn ideas into real-world projects and build industry-relevant skills.",
+   "quelle": "RSS"
+  },
+  {
+   "sym": "AMZN",
+   "name": "Amazon",
+   "title": "BINUS UNIVERSITY Becomes First in Indonesia to Offer Students Free Access to Kiro from AWS",
+   "link": "https://press.aboutamazon.com/2026/10/binus-university-becomes-first-in-indonesia-to-offer-students-free-access-to-kiro-from-aws",
+   "date": "2026-10-28T16:12:56+00:00",
+   "text": "[MEDIA ALERT]Through Kiro for students, BINUS University will give students free access for one year to Amazon Web Service’s (AWS) AI-powered development tools to turn ideas into real-world projects and build industry-relevant skills.",
+   "quelle": "RSS"
+  },
+  {
+   "sym": "AMZN",
+   "name": "Amazon",
+   "title": "FIA PARTNERS WITH AWS TO DRIVE INNOVATION ACROSS GLOBAL MOTOR SPORT",
+   "link": "https://press.aboutamazon.com/aws/2026/10/fia-partners-with-aws-to-drive-innovation-across-global-motor-sport",
+   "date": "2026-10-28T15:15:00+00:00",
+   "text": "AWS becomes the Official Artificial Intelligence, Cloud Computing, Machine Learning and Cloud Infrastructure Partner of the FIAFIA will use AWS technology to drive innovation and participation in motor sportAWS will also become an Official Partner of the FIA Awards and of the FIA Sustainable Innovation Series",
+   "quelle": "RSS"
+  },
+  {
+   "sym": "NVDA",
+   "name": "Nvidia",
+   "title": "NVIDIA RTX Spark Windows Laptops Gain New Models, Agent Tools and Games",
+   "link": "https://blogs.nvidia.com/blog/local-ai-rtx-spark-laptops-updates-models-agents-games/",
+   "date": "2026-10-28T15:00:46+00:00",
+   "text": "",
+   "quelle": "RSS"
+  },
+  {
+   "sym": "IBM",
+   "name": "IBM",
+   "title": "Expanding enterprise data engineering with Apache Flink® stream processing",
+   "link": "https://newsroom.ibm.com/campaign?item=3033",
+   "date": "2026-10-28T14:15:00+00:00",
+   "text": "Real-time data has moved from a specialist requirement to an enterprise requirement. Fraud detection, supply-chain responses, customer experiences and AI systems increasingly depend on data that...",
+   "quelle": "RSS"
+  },
+  {
+   "sym": "IBM",
+   "name": "IBM",
+   "title": "USTA and IBM Announce Five-Year Renewal of Longstanding Partnership",
+   "link": "https://newsroom.ibm.com/campaign?item=3030",
+   "date": "2026-10-28T14:08:00+00:00",
+   "text": "",
+   "quelle": "RSS"
+  },
+  {
+   "sym": "T",
+   "name": "AT&T",
+   "title": "Beyond the Network: Supporting Those Who Answer the Call",
+   "link": "https://about.att.com/blogs/2026/beyond-the-network.html",
+   "date": "2026-10-28T14:00:00+00:00",
+   "text": "On National First Responders Day, we reaffirm our responsibility to support the people behind the mission—not only with the technology they rely on, but in meaningful ways beyond the network.",
+   "quelle": "RSS"
+  },
+  {
+   "sym": "VZ",
+   "name": "Verizon",
+   "title": "Verizon Frontline challenges innovators to build future of public safety",
+   "link": "https://www.verizon.com/about/news/verizon-frontline-app-developer-challenge",
+   "date": "2026-10-28T11:56:24+00:00",
+   "text": "Verizon Frontline launched its 2nd annual App Developer Challenge offering a $25,000 grand prize for innovative public safety mobile apps, accepting entries until April 2027.",
+   "quelle": "RSS"
+  },
   {
    "sym": "AMZN",
    "name": "Amazon",
@@ -26,6 +116,15 @@
    "link": "https://blogs.nvidia.com/blog/open-source-ai-tools-cbrain-dementia/",
    "date": "2026-10-27T15:00:20+00:00",
    "text": "",
+   "quelle": "RSS"
+  },
+  {
+   "sym": "IBM",
+   "name": "IBM",
+   "title": "Securing AI-assisted software delivery with IBM Bob Premium Package for DevSecOps",
+   "link": "https://newsroom.ibm.com/campaign?item=3032",
+   "date": "2026-10-27T14:30:00+00:00",
+   "text": "As AI takes on more multi-step development work, traditional security controls can arrive after risky dependencies or code changes have already entered the workflow. Some risks also depend on...",
    "quelle": "RSS"
   },
   {
@@ -62,6 +161,15 @@
    "link": "https://www.apple.com/newsroom/2026/10/apple-creator-studio-adds-powerful-new-ai-features-and-even-more-creative-tools/",
    "date": "2026-10-27T12:58:45.444000+00:00",
    "text": "Apple introduces updates to Apple Creator Studio, the collection of creative apps designed to put studio-grade tools into the hands of creators.",
+   "quelle": "RSS"
+  },
+  {
+   "sym": "IBM",
+   "name": "IBM",
+   "title": "What’s New: IBM Quantum Safe enables confident post-quantum cryptography migration",
+   "link": "https://newsroom.ibm.com/campaign?item=3031",
+   "date": "2026-10-27T12:10:00+00:00",
+   "text": "The approach to becoming quantum safe continues to evolve. Advancements in quantum computing, emerging standards and regulatory pressure are making post-quantum cryptography (PQC) migration an...",
    "quelle": "RSS"
   },
   {
@@ -116,42 +224,6 @@
    "link": "https://newsroom.ibm.com/campaign?item=3005",
    "date": "2026-10-27T04:01:00+00:00",
    "text": "At TechXchange 2026, IBM (NYSE: IBM) is announcing new capabilities to help developers, IT and security teams put AI agents to work across business systems with clear authority and accountability. IBM brings together agent discovery, verified identities, access controls and performance evaluation to help organizations understand who owns each agent, control what it can access, and trace its actions across existing applications and infrastructure.",
-   "quelle": "RSS"
-  },
-  {
-   "sym": "IBM",
-   "name": "IBM",
-   "title": "Navigating infrastructure complexity with system intelligence",
-   "link": "https://newsroom.ibm.com/campaign?item=3021",
-   "date": "2026-10-27T04:00:00+00:00",
-   "text": "IBM Z environments are more interconnected than ever. Applications, middleware, infrastructure, security controls, and operational processes all depend on one another, making even routine changes...",
-   "quelle": "RSS"
-  },
-  {
-   "sym": "IBM",
-   "name": "IBM",
-   "title": "IBM Concert platform advances the path to cross-domain agentic IT operations",
-   "link": "https://newsroom.ibm.com/campaign?item=3019",
-   "date": "2026-10-27T04:00:00+00:00",
-   "text": "AI adoption is accelerating change and multiplying complexity across the technology estate. IT teams must manage more services, models and dependencies, all while maintaining performance, managing...",
-   "quelle": "RSS"
-  },
-  {
-   "sym": "IBM",
-   "name": "IBM",
-   "title": "IBM watsonx Orchestrate advances enterprise AI agent management with new capabilities at TechXchange 2026",
-   "link": "https://newsroom.ibm.com/campaign?item=3018",
-   "date": "2026-10-27T04:00:00+00:00",
-   "text": "AI agents are rapidly becoming part of how enterprises operate. Organizations are building agents to automate workflows, improve employee productivity and transform customer experiences. But as...",
-   "quelle": "RSS"
-  },
-  {
-   "sym": "IBM",
-   "name": "IBM",
-   "title": "Terraform advances infrastructure lifecycle management for the agentic era",
-   "link": "https://newsroom.ibm.com/campaign?item=3007",
-   "date": "2026-10-27T02:00:00+00:00",
-   "text": "AI agents are becoming active participants in infrastructure delivery and operations, fundamentally increasing the speed and scale at which infrastructure work can happen. This shift requires...",
    "quelle": "RSS"
   },
   {
@@ -389,15 +461,6 @@
    "quelle": "RSS"
   },
   {
-   "sym": "MSFT",
-   "name": "Microsoft",
-   "title": "In my annual letter, I share how we’re building a frontier ecosystem to turn technological progress into real-world outcomes and economic opportunity for people, organizations, and communities everywhere.",
-   "link": "https://www.linkedin.com/feed/update/urn:li:activity:7518773411783921665/",
-   "date": "2026-10-22T14:14:59+00:00",
-   "text": "The post In my annual letter, I share how we’re building a frontier ecosystem to turn technological progress into real-world outcomes and economic opportunity for people, organizations, and communities everywhere. appeared first on Source.",
-   "quelle": "RSS"
-  },
-  {
    "sym": "T",
    "name": "AT&T",
    "title": "The AI-Grade Network: Where Bytes Meet Tokens",
@@ -524,33 +587,6 @@
    "quelle": "RSS"
   },
   {
-   "sym": "AMZN",
-   "name": "Amazon",
-   "title": "New Whole Foods Market in West Chester, Ohio, to Open November 18",
-   "link": "https://press.aboutamazon.com/2026/10/new-whole-foods-market-in-west-chester-ohio-to-open-november-18",
-   "date": "2026-10-21T16:28:55+00:00",
-   "text": "Retailer’s newest location to feature more than 300 products from Ohio and neighboring states",
-   "quelle": "RSS"
-  },
-  {
-   "sym": "AMZN",
-   "name": "Amazon",
-   "title": "New Whole Foods Market in Midlothian, Virginia, to Open November 19",
-   "link": "https://press.aboutamazon.com/2026/10/new-whole-foods-market-in-midlothian-virginia-to-open-november-19",
-   "date": "2026-10-21T16:21:23+00:00",
-   "text": "Retailer’s newest location to feature more than 390 products from Virginia and neighboring states",
-   "quelle": "RSS"
-  },
-  {
-   "sym": "AMZN",
-   "name": "Amazon",
-   "title": "Scaling agentic AI across the enterprise with Amazon Quick",
-   "link": "https://press.aboutamazon.com/aws/2026/10/scaling-agentic-ai-across-the-enterprise-with-amazon-quick",
-   "date": "2026-10-21T15:36:21+00:00",
-   "text": "Key takeaways:\nMany companies are struggling with disconnected AI tools and workflow, lack of access to data, and business value that doesn’t often spread beyond one team.Amazon Quick combines deterministic (rules-based) and non-deterministic (AI) in a single, low-code agentic platform with human-in-the-loop throughout.PwC is helping organizations across industries leverage Amazon Quick, including two large enterprises based in the US.The results are concrete. A financial services CIO’s investment assessment dropped from weeks or months to days, and a tech company’s sales team is cutting an administrative load that consumed over 60% of sellers’ days.PwC pairs Quick with workforce readiness, governance, and business value realization so AI scales beyond isolated wins.",
-   "quelle": "RSS"
-  },
-  {
    "sym": "MMM",
    "name": "3M",
    "title": "3M and AWS collaborate to advance optical connectivity innovation",
@@ -583,15 +619,6 @@
    "title": "Google Cloud and NVIDIA Announce General Availability of NVIDIA Vera Rubin Infrastructure",
    "link": "https://blogs.nvidia.com/blog/google-cloud-vera-rubin-infrastructure/",
    "date": "2026-10-21T10:45:17+00:00",
-   "text": "",
-   "quelle": "RSS"
-  },
-  {
-   "sym": "NVDA",
-   "name": "Nvidia",
-   "title": "NVIDIA and Supply Chain Partners Expand Capacity to Accelerate AI Infrastructure Buildout",
-   "link": "https://nvidianews.nvidia.com/news/nvidia-and-supply-chain-partners-expand-capacity-to-accelerate-ai-infrastructure-buildout",
-   "date": "2026-10-21T10:33:00+00:00",
    "text": "",
    "quelle": "RSS"
   },
@@ -629,15 +656,6 @@
    "link": "https://www.apple.com/newsroom/2026/10/apple-announces-american-manufacturing-program-partners-for-latest-iphone-lineup/",
    "date": "2026-10-20T12:00:22.992000+00:00",
    "text": "Apple announced new and expanded partnerships with American companies that are supplying critical materials and components for iPhone Duo and iPhone 18 Pro.",
-   "quelle": "RSS"
-  },
-  {
-   "sym": "VZ",
-   "name": "Verizon",
-   "title": "What families need to know about Verizon Family Plus",
-   "link": "https://www.verizon.com/about/parenting/what-parents-need-to-know-about-verizon-family-plus",
-   "date": "2026-10-20T12:00:00+00:00",
-   "text": "Learn how Verizon Family Plus helps families stay connected with Parental Controls, location sharing, Driving Insights and additional support, all in one app.",
    "quelle": "RSS"
   },
   {
@@ -803,15 +821,6 @@
    "quelle": "RSS"
   },
   {
-   "sym": "AAPL",
-   "name": "Apple",
-   "title": "Apple announces the next generation of HomePod mini",
-   "link": "https://www.apple.com/newsroom/2026/10/apple-announces-the-next-generation-of-homepod-mini/",
-   "date": "2026-10-13T12:57:08.267000+00:00",
-   "text": "Apple today announced HomePod mini 2, featuring Siri AI, gorgeous new colors, and enhanced audio experiences.",
-   "quelle": "RSS"
-  },
-  {
    "sym": "JNJ",
    "name": "Johnson & Johnson",
    "title": "Johnson & Johnson Announces Quarterly Dividend for Fourth Quarter 2026",
@@ -947,15 +956,6 @@
    "quelle": "RSS"
   },
   {
-   "sym": "T",
-   "name": "AT&T",
-   "title": "AT&T Proof of Concept Labs™ Has Spent 30 Years Validating Technology for Customers",
-   "link": "https://about.att.com/story/2026/att-proof-of-concept-labs.html",
-   "date": "2026-09-30T15:50:00+00:00",
-   "text": "The AT&T Proof of Concept Labs is one of the industry's first customer-led labs, helping test and validate networking technologies.",
-   "quelle": "RSS"
-  },
-  {
    "sym": "KO",
    "name": "Coca-Cola",
    "title": "The Coca-Cola Company Announces Timing of Third Quarter 2026 Earnings Release",
@@ -1053,11 +1053,11 @@
   },
   {
    "sym": "PEP",
-   "fehler": "keine Feed-URL und kein FMP_API_KEY"
+   "fehler": "HTTP Error 402: Payment Required"
   },
   {
    "sym": "PG",
-   "fehler": "keine Feed-URL und kein FMP_API_KEY"
+   "fehler": "HTTP Error 402: Payment Required"
   },
   {
    "sym": "LLY",
@@ -1069,15 +1069,15 @@
   },
   {
    "sym": "PFE",
-   "fehler": "keine Feed-URL und kein FMP_API_KEY"
+   "fehler": "HTTP Error 402: Payment Required"
   },
   {
    "sym": "MRK",
-   "fehler": "keine Feed-URL und kein FMP_API_KEY"
+   "fehler": "HTTP Error 402: Payment Required"
   },
   {
    "sym": "O",
-   "fehler": "keine Feed-URL und kein FMP_API_KEY"
+   "fehler": "HTTP Error 402: Payment Required"
   },
   {
    "sym": "V",
@@ -1085,23 +1085,23 @@
   },
   {
    "sym": "JPM",
-   "fehler": "keine Feed-URL und kein FMP_API_KEY"
+   "fehler": "HTTP Error 402: Payment Required"
   },
   {
    "sym": "CVX",
-   "fehler": "keine Feed-URL und kein FMP_API_KEY"
+   "fehler": "HTTP Error 402: Payment Required"
   },
   {
    "sym": "MCD",
-   "fehler": "keine Feed-URL und kein FMP_API_KEY"
+   "fehler": "HTTP Error 402: Payment Required"
   },
   {
    "sym": "HD",
-   "fehler": "keine Feed-URL und kein FMP_API_KEY"
+   "fehler": "HTTP Error 402: Payment Required"
   },
   {
    "sym": "TXN",
-   "fehler": "keine Feed-URL und kein FMP_API_KEY"
+   "fehler": "HTTP Error 402: Payment Required"
   },
   {
    "sym": "AVGO",
@@ -1109,7 +1109,7 @@
   },
   {
    "sym": "CSCO",
-   "fehler": "keine Feed-URL und kein FMP_API_KEY"
+   "fehler": "HTTP Error 402: Payment Required"
   },
   {
    "sym": "MDLZ",
@@ -1121,7 +1121,7 @@
   },
   {
    "sym": "GOOGL",
-   "fehler": "keine Feed-URL und kein FMP_API_KEY"
+   "fehler": "HTTP Error 402: Payment Required"
   }
  ]
 }
