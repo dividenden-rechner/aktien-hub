@@ -24,6 +24,10 @@ HINT = ('<p class="note"><strong>Hinweis:</strong> Dieser Text dient der allgeme
 def de_date(d):
     return f"{d.day}. {MONTHS[d.month-1]} {d.year}"
 
+def de_dt_kurz(d):
+    """kompakt fuer Karten: 27.10.2026, 20:20 Uhr"""
+    return d.strftime("%d.%m.%Y, %H:%M") + " Uhr"
+
 def de_dt(d):
     """Datum mit Uhrzeit, z. B. 28. Oktober 2026, 14:52 Uhr"""
     return f"{de_date(d)}, {d.strftime('%H:%M')} Uhr"
@@ -147,6 +151,10 @@ def make_cover(path, title, category):
 
 def logo_html(p):
     """Titel mit Firmenlogo (FMP-Symbolbild, Rueckfall Favicon der Firmenwebsite, sonst ohne Logo)."""
+    lf = p.get("logo_file", "")
+    if lf and os.path.exists(lf):
+        return (f'<div class="titlerow"><img class="hlogo" src="../../{esc(lf)}" alt="" width="56" height="56">'
+                f'<h1>{esc(p["title"])}</h1></div>\n')
     sym = re.sub(r"[^A-Za-z0-9.\-]", "", p.get("logo_symbol", "")); dom = re.sub(r"[^a-z0-9.\-]", "", p.get("logo_domain", "").lower())
     fav = (f"https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https://{dom}&size=128") if dom else ""
     if sym:
@@ -220,6 +228,14 @@ def build_post(p, posts):
     p["img"] = img; p["html"] = body; p["mins"] = mins
     return p
 
+def card_logo(x, pre):
+    """Logo-Plakette links oben im Titelbild der Magazinkarten (immer vorhanden: Datei, sonst Buchstabe)."""
+    lf = x.get("logo_file", "")
+    if lf and os.path.exists(lf):
+        return f'<span class="mclogo"><img src="{pre}{esc(lf)}" alt="" width="40" height="40" loading="lazy"></span>'
+    name = re.sub(r"[^A-Za-z0-9]", "", x.get("title", "?")) or "?"
+    return f'<span class="mclogo mcmono">{esc(name[0].upper())}</span>'
+
 def build_index(posts):
     depth = 1; pre = "../"; url = "magazin/"
     title = "Magazin: Dividenden, Kennzahlen und Steuern erklärt"
@@ -232,8 +248,8 @@ def build_index(posts):
     o += f'<script src="{pre}assets/navigation.js"></script>\n<script src="{pre}assets/logos.js"></script>\n<main class="wrap">\n'
     o += f'<nav class="crumbs" aria-label="Brotkrumen"><a href="{pre}">Start</a> › <span aria-current="page">Magazin</span></nav>\n<h1>Magazin</h1>\n<p class="lead">{esc(desc)}</p>\n<div class="cards magcards">\n'
     for x in posts:
-        o += (f'<a class="card" href="{x["slug"]}/"><img class="mcover" src="{pre}{x["img"]}" alt="" width="1200" height="675" loading="lazy">'
-              f'<p class="kicker">{esc(x["category"])} · {de_dt(x["dt"])}</p><h3>{esc(x["title"])}</h3><p>{esc(x["description"])}</p></a>\n')
+        o += (f'<a class="card" href="{x["slug"]}/"><div class="mcwrap"><img class="mcover" src="{pre}{x["img"]}" alt="" width="1200" height="675" loading="lazy">{card_logo(x, pre)}</div>'
+              f'<p class="kicker">{esc(x["category"])} · {de_dt_kurz(x["dt"])}</p><h3>{esc(x["title"])}</h3><p>{esc(x["description"])}</p></a>\n')
     o += '</div>\n<p class="meta"><a href="feed.xml">RSS-Feed abonnieren</a></p>\n' + HINT + "\n</main>\n" + footer_html(depth) + "\n</body>\n</html>\n"
     open("magazin/index.html", "w", encoding="utf-8").write(o)
 

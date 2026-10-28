@@ -969,6 +969,7 @@ def build(out, text, src_note, force=False, calc_rows=None, fmp_used=False, figs
         except Exception as e:
             print("Symbolsuche fehlgeschlagen:", e)
     dom_ = re.sub(r"^(https?://)?(www\.)?|/.*$", "", out.get("website_domain") or "")
+    fm.append("logo_name: " + q(out["company"]))
     if tk:
         fm.append(f"logo_symbol: {tk}")
     if dom_ and re.match(r"^[a-z0-9.\-]+\.[a-z]{2,}$", dom_, re.I):

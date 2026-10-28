@@ -75,8 +75,8 @@ article p,article li,article td{overflow-wrap:anywhere}
 .byline{font-size:14px;color:var(--mut);margin:0 0 16px}
 .cover{margin:0 0 22px}.cover img{display:block;width:100%;height:auto;border-radius:12px;border:1px solid var(--line)}
 .authorbox{border:1px solid var(--line);border-radius:12px;padding:12px 16px;margin:28px 0;background:#fafbfc}.authorbox p{margin:4px 0 0;font-size:15px;color:var(--mut)}
-.magcards .card{padding:0;overflow:hidden}.magcards .card>*:not(.mcover){margin-left:16px;margin-right:16px}.magcards .card p.kicker{margin-top:12px}.magcards .card p:last-child{margin-bottom:16px}
-.mcover{display:block;width:100%;height:auto;aspect-ratio:16/9;object-fit:cover;border-bottom:1px solid var(--line)}
+.magcards .card{padding:0;overflow:hidden}.magcards .card>*:not(.mcover):not(.mcwrap){margin-left:16px;margin-right:16px}.mcwrap{position:relative;margin:0}.mclogo{position:absolute;left:12px;top:12px;width:52px;height:52px;box-sizing:border-box;padding:6px;border-radius:12px;background:#fff;box-shadow:0 2px 10px rgba(0,0,0,.22);display:flex;align-items:center;justify-content:center}.mclogo img{display:block;max-width:100%;max-height:100%;object-fit:contain}.mclogo.mcmono{background:var(--acc);color:#fff;font-weight:800;font-size:24px}.magcards .card p.kicker{margin-top:12px}.magcards .card p:last-child{margin-bottom:16px}
+.mcover{display:block;width:100%;height:auto;aspect-ratio:16/9;object-fit:cover}.mcwrap{border-bottom:1px solid var(--line)}
 .admonition{border:1px solid var(--line);border-radius:12px;padding:12px 18px;margin:16px 0;background:#fff}
 .admonition-title{font-weight:700;margin:0 0 4px!important;color:var(--accd)}
 .admonition.formula{background:var(--soft);border-left:4px solid var(--acc);border-radius:0 10px 10px 0}

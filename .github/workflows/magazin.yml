@@ -5,6 +5,7 @@ on:
     paths:
       - "content/magazin/**"
       - "tools/build_magazin.py"
+      - "tools/fetch_logos.py"
       - "tools/site.json"
       - "assets/magazin/**"
   schedule:
@@ -24,6 +25,8 @@ jobs:
         with:
           python-version: "3.12"
       - run: pip install markdown pillow
+      - name: Firmenlogos holen
+        run: python3 tools/fetch_logos.py
       - run: python3 tools/build_magazin.py
       - name: Änderungen committen
         run: |
