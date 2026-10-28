@@ -1,6 +1,6 @@
 ---
-title: "Fed bel&auml;sst Leitzins im Oktober 2026 bei 3,75 bis 4 Prozent"
-description: "Die Federal Reserve h&auml;lt den Leitzins unver&auml;ndert in der Spanne von 3,75 bis 4 Prozent. Zwei Notenbanker stimmten gegen die Entscheidung."
+title: "Fed belässt Leitzins im Oktober 2026 bei 3,75 bis 4 Prozent"
+description: "Die Federal Reserve hält den Leitzins unverändert in der Spanne von 3,75 bis 4 Prozent. Zwei Notenbanker stimmten gegen die Entscheidung."
 date: 2026-10-28 19:15
 author: "Redaktions-Team Dividenden-Rechner.de"
 author_bio: "Das Redaktions-Team von Dividenden-Rechner.de schreibt über Dividendenaktien, Kennzahlen und Steuerthemen für Privatanleger. Die Rechner und Auswertungen auf der Seite entstehen im eigenen Haus."
@@ -14,7 +14,7 @@ logo_file: assets/logos/federal-reserve.mono.png
 ---
 <!-- PRÜFEN: Aufmacherfoto ist automatisch von Wikimedia Commons gewaehlt: bitte pruefen, ob es zum Artikel passt (sonst image-Zeilen entfernen, dann entsteht ein Titelbild automatisch). -->
 
-Die US-Notenbank Fed hat auf ihrer Sitzung am 28. Oktober 2026 beschlossen, den Leitzins unverändert in einer Zielspanne von **3-3/4 bis 4 Prozent** zu belassen. Die Entscheidung fiel mit einer Mehrheit von 10 zu 2 Stimmen.
+Die US-Notenbank Fed hat auf ihrer Sitzung am 28. Oktober 2026 beschlossen, den Leitzins unverändert in einer Zielspanne von **3,75 bis 4 Prozent** zu belassen. Die Entscheidung fiel mit einer Mehrheit von 10 zu 2 Stimmen.
 
 ## Die ausführliche Version
 

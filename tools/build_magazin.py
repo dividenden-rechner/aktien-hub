@@ -48,14 +48,21 @@ def iso(d):  # mit deutscher Zeitzone (Sommer- und Winterzeit korrekt)
         off = "+02:00" if 4 <= d.month <= 10 else "+01:00"
         return d.strftime("%Y-%m-%dT%H:%M:%S") + off
 
+def clean_entities(t, keep_markup=False):
+    """HTML-Entities (&auml; &amp; &#8211; ...) in lesbare Zeichen umwandeln. Im Text bleiben &lt; &gt; &amp; erhalten, damit kein Markup entsteht."""
+    if not t or "&" not in t: return t
+    if not keep_markup: return html.unescape(t)
+    return re.sub(r"&(?!(?:lt|gt|amp|quot|#39);)(#\d+|#x[0-9a-fA-F]+|[A-Za-z][A-Za-z0-9]+);", lambda m: html.unescape(m.group(0)), t)
+
+
 def read_post(path):
-    raw = open(path, encoding="utf-8").read()
+    raw = clean_entities(open(path, encoding="utf-8").read(), keep_markup=True)
     m = re.match(r"^---\s*\n(.*?)\n---\s*\n(.*)$", raw, re.S)
     if not m: raise SystemExit(f"{path}: Kopfbereich zwischen --- fehlt")
     meta = {}
     for line in m.group(1).splitlines():
         if ":" in line and not line.strip().startswith("#"):
-            k, v = line.split(":", 1); meta[k.strip().lower()] = v.strip().strip('"').strip("'")
+            k, v = line.split(":", 1); meta[k.strip().lower()] = clean_entities(v.strip().strip('"').strip("'"))
     for k in ("title", "description", "date"):
         if not meta.get(k): raise SystemExit(f"{path}: Feld '{k}' fehlt im Kopfbereich")
     stem = re.sub(r"^\d{4}-\d{2}-\d{2}(-\d{4})?-", "", os.path.splitext(os.path.basename(path))[0])   # Datum vor dem Dateinamen gehoert nicht zur Adresse

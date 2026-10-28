@@ -255,6 +255,22 @@ def call_gemini(src, prompt, schema=None):
     return _generate([doc_part(src), {"text": prompt}], schema or SCHEMA, api_key())
 
 
+def clean_text(t):
+    """Gemini liefert manchmal HTML-Entities (&auml;) oder Bruchschreibweise (3-3/4); beides wird lesbar gemacht."""
+    t = html.unescape(t or "")
+    t = re.sub(r"(\d+)[- ]3/4\b", lambda m: f"{m.group(1)},75", t)
+    t = re.sub(r"(\d+)[- ]1/2\b", lambda m: f"{m.group(1)},5", t)
+    t = re.sub(r"(\d+)[- ]1/4\b", lambda m: f"{m.group(1)},25", t)
+    return t
+
+
+def clean_article(a):
+    for k in ("title", "description", "slug", "body_markdown"):
+        if isinstance(a.get(k), str):
+            a[k] = clean_text(a[k])
+    return a
+
+
 def read_prompt(name):
     return open(os.path.join(ROOT, "tools", name), encoding="utf-8").read()
 
@@ -1162,7 +1178,7 @@ def main():
         if figs:
             prompt2 += "\n\nVERFUEGBARE AUSSCHNITTE AUS DEM BERICHT (Bilder; setze hoechstens drei davon ein):\n" + "\n".join(
                 f"- {fid}: {f['title']} | {f['shows']}" for fid, f in figs.items())
-        out["article"] = _generate([doc_part(src), {"text": prompt2}], ARTICLE_SCHEMA, api_key())
+        out["article"] = clean_article(_generate([doc_part(src), {"text": prompt2}], ARTICLE_SCHEMA, api_key()))
         if bg_src:
             out["article"]["body_markdown"] = out["article"]["body_markdown"].rstrip() + "\n\nWeitere Quellen zum Hintergrund: " + " · ".join(f"[{(ti or u)[:60]}]({u})" for ti, u in bg_src) + "\n"
         print("FAKTEN:\n" + fakten)

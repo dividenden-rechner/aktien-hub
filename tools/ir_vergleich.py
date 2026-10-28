@@ -112,7 +112,7 @@ def main():
     prompt = (ia.read_prompt("ir_vergleich_prompt.md") + (f"\n\nFOKUS DES REDAKTEURS: {a.fokus}" if a.fokus.strip() else "")
               + "\n\nFAKTEN (vom Programm berechnet, exakt uebernehmen):\n" + fakten
               + "\n\nEXTRAHIERTE KENNZAHLEN JE UNTERNEHMEN (JSON):\n" + json.dumps(daten, ensure_ascii=False))
-    art = ia._generate([{"text": prompt}], ARTICLE_SCHEMA, ia.api_key())
+    art = ia.clean_article(ia._generate([{"text": prompt}], ARTICLE_SCHEMA, ia.api_key()))
     bad = pruefen_werte(art.get("table") or {}, entries)
     # Schreiben
     slug = re.sub(r"[^a-z0-9]+", "-", art["slug"].lower()).strip("-") or "vergleich"
