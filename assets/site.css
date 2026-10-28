@@ -80,6 +80,7 @@ article p,article li,article td{overflow-wrap:anywhere}
 .admonition{border:1px solid var(--line);border-radius:12px;padding:12px 18px;margin:16px 0;background:#fff}
 .admonition-title{font-weight:700;margin:0 0 4px!important;color:var(--accd)}
 .admonition.formula{background:var(--soft);border-left:4px solid var(--acc);border-radius:0 10px 10px 0}
+.admonition.kurz{background:var(--soft);border:1px solid #bfe0cd;border-left:5px solid var(--acc);border-radius:0 12px 12px 0;padding:14px 18px}.admonition.kurz .admonition-title{font-size:13px;letter-spacing:.06em;text-transform:uppercase;margin-bottom:8px!important}.admonition.kurz ol{margin:8px 0 0;padding-left:20px}.admonition.kurz li{margin:6px 0}.admonition.kurz p{margin:0}
 .admonition.note,.admonition.hinweis{background:var(--warn);border-color:var(--warnl)}
 .post h2{scroll-margin-top:80px}
 

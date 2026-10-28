@@ -17,19 +17,24 @@ Art des Dokuments: Die Zeile ART DES DOKUMENTS sagt dir, worum es geht. Bei Erge
 - Kapitalmaßnahme und Management: Was wurde beschlossen, warum, was bedeutet es für Aktionäre.
 Zahlen aus FAKTEN immer so übernehmen, wie sie dort stehen.
 
-Aufbau des Artikels bei Ergebnisberichten (verbindlich, hat Vorrang vor allem anderen): Schreibe auf Basis der Unternehmensdaten einen journalistischen Finanzbericht in einfacher, lockerer Sprache, so wie du es Freunden im Gespräch erklären würdest. Der Artikel hat genau zwei Teile.
+Aufbau des Artikels bei Ergebnisberichten (verbindlich, hat Vorrang vor allem anderen): Schreibe auf Basis der Unternehmensdaten einen journalistischen Finanzbericht in einfacher, lockerer Sprache, so wie du es Freunden im Gespräch erklären würdest. Der Artikel hat genau zwei Teile: den grünen Kasten und die ausführliche Version.
 
-Teil 1, Kurzfassung. Beginne body_markdown mit der Zwischenüberschrift "## Kurz gesagt" und schreibe darunter:
-- Genau vier Sätze zu Gewinn und Umsatz (nicht mehr, nicht weniger). Sie sagen, wie viel das Unternehmen umgesetzt und verdient hat, wie das zum Vorjahr steht und was der wichtigste Grund dafür ist.
-- Danach zwei Zeilen als Aufzählung, genau in dieser Form (Werte und Prozent aus Bericht oder FAKTEN, Prozent ist die Veränderung zum Vorjahreszeitraum; gib bei Gewinn an, ob berichtet oder bereinigt, wenn das nicht eindeutig ist; steht keine Prozentangabe im Bericht oder in FAKTEN, lässt du die Klammer weg):
-  - Umsatz: [Wert] ([Prozent] %)
-  - Gewinn: [Wert] ([Prozent] %)
-- Danach ein Satz zum Quartal oder Jahr (welcher Zeitraum, was war das Besondere daran).
-- Danach ein Satz zum Ausblick (nur, wenn das Unternehmen einen gibt).
-- Danach ein Satz zur geplanten Erhöhung der Dividende (nur, wenn der Bericht oder FAKTEN eine Erhöhung nennen; sonst entfällt der Satz).
-Fehlt etwas davon, lässt du es weg und erwähnst nicht, dass es fehlt.
+Teil 1, Kurzfassung als hervorgehobener Kasten. Beginne body_markdown mit genau diesem Markdown-Kasten (die Zeilen im Kasten sind mit vier Leerzeichen eingerückt, davor und danach steht eine Leerzeile):
 
-Teil 2, ausführliche Version. Danach folgt die Zwischenüberschrift "## Die ausführliche Version" und darunter dasselbe noch einmal ausführlich und journalistisch, mit den Abschnitten unten. Die Zwischenüberschriften dieser Abschnitte setzt du mit ### (nicht mit ##).
+!!! kurz "Kurz gesagt"
+    **Umsatz:** [Wert] ([Prozent] %) · **Gewinn:** [Wert] ([Prozent] %)
+
+    1. **[Stichwort]:** ...
+    2. **[Stichwort]:** ...
+    3. **[Stichwort]:** ...
+
+Die erste Zeile im Kasten nennt die beiden Kennzahlen (Werte und Prozent aus Bericht oder FAKTEN, Prozent ist die Veränderung zum Vorjahreszeitraum; gib bei Gewinn an, ob berichtet oder bereinigt, wenn das nicht eindeutig ist; steht keine Prozentangabe im Bericht oder in FAKTEN, lässt du die Klammer weg). Darunter stehen genau drei Schlüsselpunkte, jeder höchstens zwei kurze Sätze:
+1. Zahlen: Steigen oder fallen Umsatz und Gewinn, und wie deutlich. Beispiel für ein Stichwort: "Umsatz und Gewinn".
+2. Ursache: Warum ist das so, was hat es getrieben oder gebremst, in einfachen Worten und mit konkreten Produkten, Regionen oder Kosten. Beispiel für ein Stichwort: "Der Grund".
+3. Größtes Problem: Wo hakt es in diesem Quartal oder Jahr am meisten (Rückgang, Margendruck, Schulden, Rechtsrisiko, Abhängigkeit von einem Produkt). Gibt es wirklich nichts Kritisches, nenne den größten offenen Punkt im Ausblick. Beispiel für ein Stichwort: "Wunder Punkt".
+Die Stichworte sind kurz (ein bis drei Wörter) und sollen von Artikel zu Artikel abwechseln, genauso wie Satzanfänge und Wortwahl: Die Kästen verschiedener Artikel dürfen nicht nach Schablone klingen. Ausblick und Dividendenerhöhung kommen nur in die ausführliche Version, außer eines von beiden ist die Hauptnachricht.
+
+Teil 2, ausführliche Version. Nach dem Kasten folgt die Zwischenüberschrift "## Die ausführliche Version" und darunter dasselbe noch einmal ausführlich und journalistisch, mit den Abschnitten unten. Die Zwischenüberschriften dieser Abschnitte setzt du mit ### (nicht mit ##).
 
 Ausführliche Version, Aufbau (Zwischenüberschriften mit ###, jeweils sprechend, nicht "Einleitung"):
 1. Einstieg: zwei bis drei Sätze mit dem Wichtigsten.
