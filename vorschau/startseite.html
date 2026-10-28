@@ -1,0 +1,175 @@
+<!doctype html>
+<html lang="de"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>VORSCHAU Startseite | Dividenden-Rechner</title>
+<link rel="icon" href="../favicon.ico">
+<style>
+:root{--bg:#fff;--ink:#14202b;--mut:#5d6b78;--line:#dfe5ea;--soft:#f0f8f3;--acc:#2f9e5b;--accd:#1a7a45;--gold:#d4a017;--blue:#2f6fdb}
+*{box-sizing:border-box}html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--ink);font:17px/1.6 "IBM Plex Sans",system-ui,-apple-system,"Segoe UI",sans-serif}
+a{color:var(--accd)}
+.wrap{max-width:1080px;margin:0 auto;padding:0 16px}
+.vbanner{background:#fff7e6;border-bottom:1px solid #f0d9a8;text-align:center;font-size:14px;padding:6px 12px}
+header.top{border-bottom:1px solid var(--line);background:#fff;position:sticky;top:0;z-index:20}
+header.top .wrap{display:flex;align-items:center;justify-content:space-between;gap:12px;height:60px}
+.brand{display:flex;align-items:center;gap:10px;font-weight:700;font-size:18px;color:var(--ink);text-decoration:none}
+.brand img{width:34px;height:34px}.brand span{color:var(--acc)}
+header nav{display:flex;gap:2px;flex-wrap:wrap}
+header nav a{color:var(--ink);text-decoration:none;padding:7px 12px;border-radius:8px;font-size:15px;font-weight:500}
+header nav a:hover{background:var(--soft)}
+header nav a.cta{background:var(--acc);color:#fff}
+/* HERO */
+.hero{background:linear-gradient(180deg,#f0f8f3 0%,#fff 100%);padding:44px 0 36px}
+.hero .wrap{display:grid;grid-template-columns:1.05fr .95fr;gap:36px;align-items:center}
+.kick{display:inline-block;background:#fff;border:1px solid #cfe8d9;color:var(--accd);font-size:13px;font-weight:600;padding:4px 12px;border-radius:99px;margin-bottom:14px}
+h1{font-size:clamp(30px,4.6vw,46px);line-height:1.13;margin:0 0 14px;letter-spacing:-.02em}
+h1 em{font-style:normal;color:var(--acc)}
+.lead{font-size:19px;color:#2b3a47;margin:0 0 20px}
+.trust{display:flex;flex-wrap:wrap;gap:6px 18px;font-size:14px;color:var(--mut);margin:0}
+.trust span::before{content:"✓ ";color:var(--acc);font-weight:700}
+.mini{background:#fff;border:1px solid var(--line);border-radius:18px;padding:20px;box-shadow:0 10px 30px rgba(20,32,43,.07)}
+.mini h2{font-size:16px;margin:0 0 12px;color:var(--mut);font-weight:600;text-transform:uppercase;letter-spacing:.04em}
+.fields{display:grid;grid-template-columns:repeat(2,1fr);gap:10px}
+.fields label{font-size:13px;color:var(--mut);display:block}
+.fields input{width:100%;font:inherit;font-size:16px;padding:8px 10px;border:1px solid #cfd6dc;border-radius:9px;margin-top:2px}
+.fields input:focus{outline:2px solid var(--acc);border-color:var(--acc)}
+.rng{grid-column:1/-1}.rng input{padding:0;border:0;accent-color:var(--acc)}
+.big{display:flex;gap:18px;margin:14px 0 4px}
+.big div{flex:1}.big small{display:block;color:var(--mut);font-size:13px}
+.big b{font-size:clamp(22px,3vw,28px);line-height:1.2;font-variant-numeric:tabular-nums}
+.big .g{color:var(--accd)}
+svg.ch{width:100%;height:auto;display:block}
+.legend{display:flex;gap:16px;font-size:12.5px;color:var(--mut);margin:2px 0 10px}
+.legend i{display:inline-block;width:10px;height:10px;border-radius:2px;margin-right:5px;vertical-align:-1px}
+.btn{display:block;text-align:center;background:var(--acc);color:#fff;padding:11px 16px;border-radius:10px;text-decoration:none;font-weight:600}
+.btn:hover{background:var(--accd);color:#fff}
+.fine{font-size:12px;color:var(--mut);margin:8px 0 0}
+section.blk{padding:46px 0 6px}
+h2.sec{font-size:clamp(23px,3.4vw,30px);line-height:1.25;margin:0 0 6px;letter-spacing:-.01em}
+.sub{color:var(--mut);margin:0 0 22px}
+.tiles{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+.tile{display:flex;flex-direction:column;border:1px solid var(--line);border-radius:16px;padding:18px;text-decoration:none;color:var(--ink);background:#fff;transition:.15s}
+.tile:hover{border-color:var(--acc);transform:translateY(-3px);box-shadow:0 8px 22px rgba(20,32,43,.08)}
+.tile .pv{height:78px;border-radius:10px;background:var(--soft);margin-bottom:12px;display:flex;align-items:center;justify-content:center;overflow:hidden}
+.tile h3{margin:0 0 4px;font-size:18px;color:var(--accd)}
+.tile p{margin:0;font-size:14.5px;color:var(--mut);flex:1}
+.tile .go{margin-top:10px;font-weight:600;font-size:14px;color:var(--accd)}
+.news{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.nc{display:flex;gap:12px;border:1px solid var(--line);border-radius:14px;padding:14px;text-decoration:none;color:var(--ink);background:#fff}
+.nc:hover{border-color:var(--acc)}
+.nc .sy{flex:0 0 52px;height:52px;border-radius:12px;background:var(--soft);color:var(--accd);font-weight:700;font-size:13px;display:flex;align-items:center;justify-content:center}
+.nc h3{font-size:15.5px;line-height:1.35;margin:0 0 4px}
+.nc time{font-size:12.5px;color:var(--mut)}
+.more{margin-top:14px}
+.calcs{display:grid;grid-template-columns:repeat(3,1fr);gap:10px}
+.calcs a{display:block;border:1px solid var(--line);border-radius:12px;padding:12px 14px;text-decoration:none;color:var(--ink);font-weight:600;font-size:15.5px;background:#fff}
+.calcs a small{display:block;font-weight:400;color:var(--mut);font-size:13px}
+.calcs a:hover{border-color:var(--acc);background:var(--soft)}
+.seo{margin-top:44px;border-top:1px solid var(--line);padding-top:18px;color:var(--mut);font-size:15px}
+footer{margin-top:40px;border-top:1px solid var(--line);padding:22px 0 30px;font-size:14px;color:var(--mut)}
+@media(max-width:900px){.hero .wrap{grid-template-columns:1fr}.tiles{grid-template-columns:repeat(2,1fr)}.news{grid-template-columns:1fr}.calcs{grid-template-columns:repeat(2,1fr)}header nav a:not(.cta){display:none}header nav a.keep{display:block}}
+@media(max-width:520px){.tiles,.calcs{grid-template-columns:1fr}}
+</style></head><body>
+<div class="vbanner">VORSCHAU: so könnte die neue Startseite aussehen. Die echte Seite ist unverändert.</div>
+<header class="top"><div class="wrap">
+<a class="brand" href="#"><img src="../assets/logo.png" alt=""><div>Dividenden-Rechner <span>Aktien-Hub</span></div></a>
+<nav aria-label="Hauptmenü"><a href="#rechner" class="keep">Rechner</a><a href="#tools">Aktien</a><a href="#tools">Depot</a><a href="#magazin">Magazin</a><a href="#wissen">Wissen</a><a class="cta keep" href="#rechner">Jetzt rechnen</a></nav>
+</div></header>
+
+<section class="hero" id="rechner"><div class="wrap">
+<div>
+<span class="kick">Kostenlos · ohne Anmeldung</span>
+<h1>Was wird aus deiner Dividende in <em>20 Jahren?</em></h1>
+<p class="lead">Rechne in Sekunden aus, wie Dividenden, Sparrate und Zinseszins dein Depot wachsen lassen. Danach prüfst du echte Aktien im Aktien-Hub.</p>
+<p class="trust"><span>Läuft in deinem Browser</span><span>Eingaben bleiben bei dir</span><span>Daten von Financial Modeling Prep</span></p>
+</div>
+<div class="mini" aria-label="Schnellrechner">
+<h2>Schnellrechner Dividendenwachstum</h2>
+<div class="fields">
+<label>Startkapital (€)<input id="k0" type="number" value="10000" min="0" step="1000"></label>
+<label>Sparrate pro Monat (€)<input id="sp" type="number" value="300" min="0" step="50"></label>
+<label>Dividendenrendite (%)<input id="dy" type="number" value="3.5" min="0" step="0.1"></label>
+<label>Dividendenwachstum (% p. a.)<input id="dg" type="number" value="5" min="0" step="0.5"></label>
+<label class="rng">Laufzeit: <b id="jl">20</b> Jahre<input id="jy" type="range" min="5" max="40" value="20"></label>
+</div>
+<div class="big"><div><small>Depotwert nach <span id="j2">20</span> Jahren</small><b id="rw">–</b></div><div><small>Dividende pro Jahr dann</small><b class="g" id="rd">–</b></div></div>
+<svg class="ch" id="ch" viewBox="0 0 440 170" role="img" aria-label="Depotwert über die Jahre"></svg>
+<div class="legend"><span><i style="background:#c9d3dc"></i>eingezahlt</span><span><i style="background:var(--blue)"></i>Depotwert</span></div>
+<a class="btn" href="../rechner/">Alle Einstellungen im Dividenden-Rechner →</a>
+<p class="fine">Szenario auf Basis deiner Annahmen, vor Steuern, keine Prognose. Dividenden werden reinvestiert, der Kurs wächst so schnell wie die Dividende.</p>
+</div>
+</div></section>
+
+<div class="wrap">
+<section class="blk" id="tools">
+<h2 class="sec">Mehr als ein Rechner</h2>
+<p class="sub">Vom ersten Gedanken bis zur Aktie im Depot: alles an einem Ort.</p>
+<div class="tiles">
+<a class="tile" href="../aktien/"><div class="pv"><svg viewBox="0 0 120 50" width="120" height="50"><polyline fill="none" stroke="#2f6fdb" stroke-width="3" points="4,40 24,34 44,36 64,22 84,24 116,8"/><rect x="8" y="42" width="8" height="6" fill="#d4a017"/><rect x="30" y="40" width="8" height="8" fill="#d4a017"/><rect x="52" y="38" width="8" height="10" fill="#d4a017"/></svg></div><h3>Aktien-Hub</h3><p>Kennzahlen, Dividendenverlauf, Gewinnfluss und Fair Value zu jeder Aktie.</p><span class="go">Aktie prüfen →</span></a>
+<a class="tile" href="../screener/"><div class="pv"><svg viewBox="0 0 120 50" width="120" height="50"><g fill="#fff" stroke="#9fd2b4"><rect x="6" y="6" width="108" height="10" rx="3"/><rect x="6" y="20" width="108" height="10" rx="3"/><rect x="6" y="34" width="108" height="10" rx="3"/></g><g fill="#2f9e5b"><rect x="10" y="9" width="30" height="4" rx="2"/><rect x="10" y="23" width="52" height="4" rx="2"/><rect x="10" y="37" width="20" height="4" rx="2"/></g></svg></div><h3>Screener</h3><p>Aktien nach Dividendenrendite, Wachstum und Bewertung filtern.</p><span class="go">Aktien finden →</span></a>
+<a class="tile" href="../depot/"><div class="pv"><svg viewBox="0 0 60 60" width="56" height="56"><circle cx="30" cy="30" r="22" fill="none" stroke="#2f6fdb" stroke-width="12" stroke-dasharray="50 138"/><circle cx="30" cy="30" r="22" fill="none" stroke="#2f9e5b" stroke-width="12" stroke-dasharray="40 138" stroke-dashoffset="-50"/><circle cx="30" cy="30" r="22" fill="none" stroke="#d4a017" stroke-width="12" stroke-dasharray="48 138" stroke-dashoffset="-90"/></svg></div><h3>Depot-Tracker</h3><p>Dein Depot, deine Dividenden und die Verteilung auf einen Blick.</p><span class="go">Depot ansehen →</span></a>
+<a class="tile" href="../earnings/"><div class="pv"><svg viewBox="0 0 120 50" width="120" height="50"><g fill="#fff" stroke="#9fd2b4"><rect x="10" y="6" width="100" height="38" rx="5"/></g><g fill="#2f9e5b"><circle cx="30" cy="22" r="4"/><circle cx="52" cy="22" r="4"/><circle cx="74" cy="32" r="4"/><circle cx="96" cy="22" r="4"/></g></svg></div><h3>Earnings-Kalender</h3><p>Wann melden deine Unternehmen Zahlen? Mit Terminen und Erwartungen.</p><span class="go">Termine ansehen →</span></a>
+</div>
+</section>
+
+<section class="blk" id="magazin">
+<h2 class="sec">Neu im Magazin</h2>
+<p class="sub">Quartalszahlen verständlich erklärt, mit Kurzfassung in drei Punkten.</p>
+<div class="news" id="news"></div>
+<p class="more"><a href="../magazin/">Alle Artikel im Magazin →</a></p>
+</section>
+
+<section class="blk" id="alle">
+<h2 class="sec">Alle Rechner</h2>
+<p class="sub">Für jede Frage rund um Dividenden, Rente und Steuern.</p>
+<div class="calcs">
+<a href="../rechner/">Dividenden-Rechner<small>Wachstum und Zinseszins</small></a>
+<a href="../rechner/">Dividenden-Vergleich<small>Zwei Aktien gegenüberstellen</small></a>
+<a href="../rechner/">Von Dividenden leben<small>Wie viel Kapital brauchst du?</small></a>
+<a href="../rechner/">Rentenlücke füllen<small>Was fehlt im Alter?</small></a>
+<a href="../rechner/">Rentenstrategie-Vergleich<small>Entnahme-Varianten</small></a>
+<a href="../rechner/">Dividenden reinvestieren<small>Mit und ohne Wiederanlage</small></a>
+<a href="../rechner/">Altersvorsorgedepot<small>Stand Oktober 2026</small></a>
+<a href="../rechner/">Vorabpauschale<small>ETF und Fonds</small></a>
+<a href="../rechner/">ETF-Sparplan<small>Sparrate und Endwert</small></a>
+</div>
+</section>
+
+<section class="blk" id="wissen">
+<h2 class="sec">Wissen für Einsteiger und Profis</h2>
+<p class="sub">Von der ersten Kennzahl bis zur Bewertung.</p>
+<div class="calcs">
+<a href="../einfuehrung/">Einführung<small>Dividenden von Null an</small></a>
+<a href="../grundlagen/">Grundlagen<small>Rendite, Ausschüttungsquote, KGV</small></a>
+<a href="../fortgeschrittene/">Fortgeschrittene<small>Bewertung, Cashflow, Strategien</small></a>
+</div>
+<div class="seo">Hier stünden unverändert die bisherigen Rechner-Texte („So wird gerechnet", „Häufige Fragen"), eingeklappt unter dem jeweiligen Rechner, damit Google den Inhalt weiter findet.</div>
+</section>
+</div>
+<footer><div class="wrap">Dividenden-Rechner · <a href="../impressum/">Impressum</a> · <a href="../datenschutz/">Datenschutz</a> · Alle Angaben ohne Gewähr, keine Anlageberatung.</div></footer>
+
+<script>
+const $=id=>document.getElementById(id),eur=v=>Math.round(v).toLocaleString("de-DE")+" €";
+function calc(){
+  const k0=+$("k0").value||0,sp=(+$("sp").value||0)*12,dy=(+$("dy").value||0)/100,dg=(+$("dg").value||0)/100,n=+$("jy").value;
+  $("jl").textContent=$("j2").textContent=n;
+  // Vereinfachung: Depot waechst mit Dividendenrendite + Kursplus (Kurs waechst wie die Dividende), Dividenden werden reinvestiert
+  let v=k0,ein=k0;const pts=[[0,v,ein]];
+  for(let y=1;y<=n;y++){v=(v+sp/2)*(1+dy+dg)+sp/2;ein+=sp;pts.push([y,v,ein])}
+  const div=v*dy;
+  $("rw").textContent=eur(v);$("rd").textContent=eur(div);
+  const W=440,H=170,pl=6,pb=20,mx=Math.max(...pts.map(p=>p[1]))||1,X=y=>pl+(W-pl*2)*y/n,Y=a=>H-pb-(H-pb-8)*a/mx;
+  const line=i=>pts.map(p=>X(p[0]).toFixed(1)+","+Y(p[i]).toFixed(1)).join(" ");
+  let s='<g stroke="#e6ebef"><line x1="'+pl+'" x2="'+(W-pl)+'" y1="'+(H-pb)+'" y2="'+(H-pb)+'"/></g>';
+  s+='<polygon fill="#c9d3dc" opacity=".55" points="'+X(0)+","+(H-pb)+" "+line(2)+" "+X(n)+","+(H-pb)+'"/>';
+  s+='<polygon fill="#2f6fdb" opacity=".15" points="'+X(0)+","+(H-pb)+" "+line(1)+" "+X(n)+","+(H-pb)+'"/>';
+  s+='<polyline fill="none" stroke="#2f6fdb" stroke-width="2.6" stroke-linejoin="round" points="'+line(1)+'"/>';
+  s+='<polyline fill="none" stroke="#8d9aa6" stroke-width="1.6" points="'+line(2)+'"/>';
+  [0,Math.round(n/2),n].forEach(y=>{s+='<text x="'+(y==0?pl:y==n?W-pl:X(y))+'" y="'+(H-5)+'" font-size="11" fill="#5d6b78" text-anchor="'+(y==0?'start':y==n?'end':'middle')+'">'+(y==0?'heute':'Jahr '+y)+'</text>'});
+  $("ch").innerHTML=s;
+}
+["k0","sp","dy","dg","jy"].forEach(i=>$(i).addEventListener("input",calc));calc();
+fetch("../data/magazin.json").then(r=>r.json()).then(d=>{
+  const f=new Intl.DateTimeFormat("de-DE",{day:"2-digit",month:"2-digit",year:"numeric",hour:"2-digit",minute:"2-digit",timeZone:"Europe/Berlin"});
+  $("news").innerHTML=d.items.slice(0,3).map(i=>'<a class="nc" href="../magazin/'+i.slug+'/"><div class="sy">'+(i.sym||"")+'</div><div><h3>'+i.title.replace(/</g,"&lt;")+'</h3><time>'+f.format(new Date(i.date))+' Uhr</time></div></a>').join("")}).catch(()=>{$("news").textContent="Magazin-Vorschau nicht geladen."});
+</script></body></html>
