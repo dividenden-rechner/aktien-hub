@@ -11,7 +11,7 @@ image_credit: "Foto: Windmemories / Wikimedia Commons, CC BY-SA 4.0"
 image_source: https://commons.wikimedia.org/wiki/File:20240927_Ping_An_Financial_Center,_Zhengzhou.jpg
 logo_name: "Ping An Insurance (Group) Company of China, Ltd."
 logo_symbol: 2318.HK
-draft: true
+
 logo_file: assets/logos/2318-hk.png
 ---
 <!-- PRÜFEN: Aufmacherfoto ist automatisch von Wikimedia Commons gewaehlt: bitte pruefen, ob es zum Artikel passt (sonst image-Zeilen entfernen, dann entsteht ein Titelbild automatisch). -->
