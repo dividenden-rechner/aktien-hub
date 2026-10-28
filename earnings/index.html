@@ -42,7 +42,7 @@ img.ek-logo{background:#fff}
 .ek-sub{font-size:.85rem;color:#64748b}
 .ek-fig{display:flex;gap:16px;text-align:right;font-size:.88rem}.ek-fig div{min-width:84px}.ek-fig span{display:block;color:#64748b;font-size:.75rem}.ek-fig span .pos,.ek-fig span .neg{display:inline}
 .ek-badge{display:inline-block;padding:1px 8px;border-radius:8px;font-size:.72rem;background:#f1f5f9;color:#475569;margin-left:6px}
-.ek-badge.done{background:#dcfce7;color:#166534}.ek-badge.up{background:#16a34a;color:#fff}.ek-badge.dn{background:#dc2626;color:#fff}.ek-badge.eq,.ek-badge.mix{background:#e2e8f0;color:#334155}.ek-nm{line-height:1.9}
+.ek-badge.done{background:#dcfce7;color:#166534}.ek-badge.up{background:#16a34a;color:#fff}.ek-badge.dn{background:#dc2626;color:#fff}.ek-badge.eq,.ek-badge.mix{background:#e2e8f0;color:#334155}.ek-nm{display:block;line-height:1.3}.ek-tk{color:#64748b;font-weight:400;font-size:.85rem;margin-left:4px}.ek-pills{display:flex;flex-direction:column;align-items:flex-start;gap:4px;margin-top:6px}.ek-pills .ek-badge{margin-left:0}
 .pos{color:#15803d}.neg{color:#b91c1c}
 .ek-body{display:none;padding:2px 14px 16px 66px}.ek-item.open .ek-body{display:block}
 .ek-body table{width:100%;max-width:560px;border-collapse:collapse;font-size:.92rem}.ek-body td,.ek-body th{padding:6px 8px;border-bottom:1px solid #e2e8f0;text-align:right}.ek-body th:first-child,.ek-body td:first-child{text-align:left}
@@ -149,7 +149,7 @@ function renderList(){
     var eps=done?r.epsActual:r.epsEstimated,rev=done?r.revenueActual:r.revenueEstimated;
     var ge=done?gr(r.epsActual,r.epsEstimated):null,gv=done?gr(r.revenueActual,r.revenueEstimated):null,vd=verdict(ge,gv);
     var ee=done&&r.epsEstimated!=null?" · Erw. "+num(r.epsEstimated)+" "+gp(ge):"",ev=done&&r.revenueEstimated!=null?" · Erw. "+big(r.revenueEstimated)+" "+gp(gv):"";
-    h+='<div class="ek-item" data-s="'+esc(s)+'" data-d="'+esc(r.date)+'"><button type="button" class="ek-row" aria-expanded="false">'+logo(s,nm(s))+'<span class="ek-m"><span class="ek-nm"><a href="../aktien/?s='+encodeURIComponent(s)+'">'+esc(nm(s))+'</a><span class="ek-badge'+(done?" done":"")+'">'+(done?"berichtet":"erwartet")+'</span>'+(vd?'<span class="ek-badge '+vd[1]+'" title="Gewinn und Umsatz im Vergleich zur Analystenerwartung">'+vd[0]+'</span>':"")+'</span><span class="ek-sub">'+esc(s)+'</span></span><span class="ek-fig"><div>'+num(eps)+'<span>Gewinn/Aktie'+(done?ee:" (Schätzung)")+'</span></div><div>'+big(rev)+'<span>Umsatz'+(done?ev:" (Schätzung)")+'</span></div></span></button><div class="ek-body"><p class="ek-sub">Lade Details …</p></div></div>';
+    h+='<div class="ek-item" data-s="'+esc(s)+'" data-d="'+esc(r.date)+'"><button type="button" class="ek-row" aria-expanded="false">'+logo(s,nm(s))+'<span class="ek-m"><span class="ek-nm"><a href="../aktien/?s='+encodeURIComponent(s)+'">'+esc(nm(s))+'</a>'+(nm(s)!==s?' <span class="ek-tk">'+esc(s)+'</span>':'')+'</span><span class="ek-pills"><span class="ek-badge'+(done?" done":"")+'">'+(done?"berichtet":"erwartet")+'</span>'+(vd?'<span class="ek-badge '+vd[1]+'" title="Gewinn und Umsatz im Vergleich zur Analystenerwartung">'+vd[0]+'</span>':"")+'</span></span><span class="ek-fig"><div>'+num(eps)+'<span>Gewinn/Aktie'+(done?ee:" (Schätzung)")+'</span></div><div>'+big(rev)+'<span>Umsatz'+(done?ev:" (Schätzung)")+'</span></div></span></button><div class="ek-body"><p class="ek-sub">Lade Details …</p></div></div>';
   });
   $("list").innerHTML=h+"</div>";
 }
