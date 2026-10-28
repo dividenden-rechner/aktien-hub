@@ -14,10 +14,10 @@ const PFADE = new Set([
 ]);
 // Wie lange eine Antwort gemerkt wird (Sekunden).
 function ttl(pfad) {
-  if (/^(quote|quote-short)$/.test(pfad)) return 900;                       // Kurse: 15 Minuten
-  if (/^(earnings-calendar|dividends-calendar|company-screener|earnings)$/.test(pfad)) return 3600;
-  if (/^historical-price/.test(pfad)) return 6 * 3600;
-  return 12 * 3600;                                                          // Berichte und Kennzahlen: 12 Stunden
+  if (/^(quote|quote-short)$/.test(pfad)) return 900;                        // Kurse: 15 Minuten
+  if (/^(earnings-calendar|dividends-calendar|company-screener|earnings)$/.test(pfad)) return 6 * 3600;  // Termine und Screener: 6 Stunden
+  if (/^historical-price/.test(pfad)) return 12 * 3600;                      // Tagesschlusskurse: 12 Stunden
+  return 24 * 3600;                                                          // Berichte, Kennzahlen, Profile, Dividenden: 24 Stunden
 }
 const MAX_PRO_MINUTE = 40;   // neue (nicht gemerkte) Abrufe pro Besucher und Minute
 
