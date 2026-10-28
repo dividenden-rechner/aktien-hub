@@ -55,7 +55,7 @@ jobs:
           if [ -n "$TICKERS$PDF_URL" ]; then
             args=()
             for t in $(echo "$TICKERS" | tr ',' ' '); do args+=(--src "ticker:$t"); done
-            for u in $(echo "$PDF_URL" | sed 's/,[[:space:]]*http/\nhttp/g' | tr -s ' \t' '\n\n' | sed '/^$/d'); do args+=(--src "url:$u"); done
+            for u in $(echo "$PDF_URL" | sed 's/,[[:space:]]*http/\nhttp/g' | tr -s ' \t' '\n\n' | grep -E '^https?://'); do args+=(--src "url:$u"); done
             python3 tools/ir_vergleich.py "${args[@]}" --fokus "$FOKUS"
           else
             git diff --name-only --diff-filter=AM HEAD~1 HEAD -- 'content/ir-vergleich/*/*.pdf' | xargs -r -n1 dirname | sort -u > /tmp/gruppen.txt

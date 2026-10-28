@@ -201,7 +201,7 @@ def main():
     ap.add_argument("--art", default=os.environ.get("ART") or "ergebnisse")
     ap.add_argument("--force", action="store_true")
     a = ap.parse_args()
-    specs = list(a.src)
+    specs = [x for x in a.src if not x.startswith("url:") or x[4:].startswith("http")]
     if a.dir:
         specs += sorted(glob.glob(os.path.join(a.dir, "*.pdf")))
     if len(specs) < 2:
