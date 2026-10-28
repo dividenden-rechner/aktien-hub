@@ -13,7 +13,7 @@
     if (!el) {
       el = document.createElement("div"); el.setAttribute("role", "status");
       el.style.cssText = "font:12px/1.4 system-ui,sans-serif;padding:10px 16px 18px;text-align:center;color:#8a97a3;cursor:pointer";
-      el.title = "Anzahl der FMP-Datenabrufe heute in diesem Browser (Tageslimit deines Tarifs, bei Gratis 250). Klick blendet aus.";
+      el.title = "Anzahl der neuen FMP-Datenabrufe heute durch diesen Browser (bereits gemerkte Daten zählen nicht). Klick blendet aus.";
       el.onclick = function () { el.hidden = true; try { sessionStorage.setItem("fmphide", "1"); } catch (e) { } };
       document.body.appendChild(el);
     }
@@ -23,13 +23,30 @@
     el.style.background = full ? "#fde3e0" : "transparent";
     el.style.color = full ? "#b3372d" : o.n >= L * 0.8 ? "#b26a00" : "#8a97a3";
   }
-  window.fetch = function (u) {
-    var url = typeof u === "string" ? u : (u && u.url) || "", p = of.apply(this, arguments);
+  /* Zwischenserver (Cloudflare-Worker): Seiten ohne eigenen Schluessel rufen ihn mit apikey=proxy auf.
+     Der echte Schluessel liegt dort als Secret und kommt nie in den Browser. */
+  var PROXY = "https://fmp-proxy.dividenden-rechner.workers.dev/";
+  window.fetch = function (u, init) {
+    var url = typeof u === "string" ? u : (u && u.url) || "";
     if (/financialmodelingprep\.com\/stable\//.test(url)) {
+      var pu = null; try { pu = new URL(url); } catch (e) { }
+      if (pu && pu.searchParams.get("apikey") === "proxy") {
+        pu.searchParams.delete("apikey");
+        var target = PROXY + pu.pathname.replace(/^\/stable\//, "") + pu.search;
+        var pp = of.call(this, target, init);
+        pp.then(function (r) {
+          if (!r) return;
+          if (r.headers && r.headers.get("x-fmp-cache") === "MISS") { var o = get(); o.n++; put(o); badge(); }
+          if (r.status === 429) { var q = get(); q.full = 1; put(q); badge(); }
+        }, function () { });
+        return pp;
+      }
       var o = get(); o.n++; put(o); badge();
+      var p = of.apply(this, arguments);
       p.then(function (r) { if (r && r.status === 429) { var q = get(); q.full = 1; put(q); badge(); } }, function () { });
+      return p;
     }
-    return p;
+    return of.apply(this, arguments);
   };
   if (document.readyState === "loading") document.addEventListener("DOMContentLoaded", badge); else badge();
 })();

@@ -84,6 +84,7 @@ img.ek-logo{background:#fff}
 (function(){
 var BASE="https://financialmodelingprep.com/stable/",KEY="";
 try{KEY=localStorage.getItem("fmpkey")||""}catch(e){}
+if(!KEY)KEY="proxy";
 function $(i){return document.getElementById(i)}
 function esc(s){return String(s==null?"":s).replace(/[&<>"']/g,function(c){return{"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]})}
 function askKey(){var k=prompt("FMP API-Key (wird nur in deinem Browser gespeichert):",KEY);if(k!==null){KEY=k.trim();try{localStorage.setItem("fmpkey",KEY)}catch(e){}}}

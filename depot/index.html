@@ -218,7 +218,7 @@ table.dt{border-collapse:collapse;width:100%;font-size:.9rem;min-width:620px}
 <div id="imp-msg" class="dmsg" role="status"></div>
 <div id="imports-list"></div>
 <h3>Kurse und Dividenden aktualisieren</h3>
-<p class="dnote">Lädt über FMP aktuelle Kurse, Sektor, Land und die Dividendenhistorie. Nur ISIN bzw. Kürzel werden übertragen, nie Stückzahlen oder Beträge. Dafür brauchst du einen FMP-API-Key (der Gratis-Tarif deckt überwiegend US-Aktien ab).</p>
+<p class="dnote">Lädt über FMP aktuelle Kurse, Sektor, Land und die Dividendenhistorie. Nur ISIN bzw. Kürzel werden übertragen, nie Stückzahlen oder Beträge. Die Abrufe laufen über einen Server dieser Seite, du musst keinen Schlüssel eingeben (das Datenpaket deckt überwiegend US-Aktien ab).</p>
 <div class="btnrow"><button type="button" id="btn-refresh" disabled>Kurse aktualisieren</button><button type="button" id="btn-stop" class="ghost" hidden>Stoppen</button></div>
 <div id="d-status" class="dmsg" role="status"></div>
 <h3>Deine Daten</h3>
@@ -699,6 +699,7 @@ table.dt{border-collapse:collapse;width:100%;font-size:.9rem;min-width:620px}
   /* ---------- FMP ---------- */
   var BASE = "https://financialmodelingprep.com/stable/", KEY = "";
   try { KEY = localStorage.getItem("fmpkey") || ""; } catch (e) { }
+  if (!KEY) KEY = "proxy";
   var RUN = { calls: 0, max: 200, abort: false, busy: false };
   function askKey() { var k = prompt("FMP API-Key (wird nur in deinem Browser gespeichert):", KEY); if (k !== null) { KEY = k.trim(); try { localStorage.setItem("fmpkey", KEY); } catch (e) { } } return KEY; }
   async function fmp(path, params) {

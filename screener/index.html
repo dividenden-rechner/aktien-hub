@@ -205,7 +205,7 @@ article.wide>:not(.tool):not(.cards){max-width:760px}
 <section class="tool" aria-labelledby="sc-h">
 <h2 id="sc-h">Kriterien wählen</h2>
 
-<div class="keybar"><span id="keystate"></span><button type="button" class="ghost" id="keybtn">API-Key ändern</button></div>
+<div class="keybar"><span id="keystate"></span><button type="button" class="ghost" id="keybtn">Eigenen API-Key nutzen (optional)</button></div>
 <div class="mode" role="group" aria-label="Datenquelle wählen">
 <button type="button" id="m-markt" aria-pressed="true">Gesamter Markt</button>
 <button type="button" id="m-liste" aria-pressed="false">Eigene Liste (auch Gratis-Tarif)</button>
@@ -255,7 +255,7 @@ article.wide>:not(.tool):not(.cards){max-width:760px}
 <h3>Wie viele API-Aufrufe braucht eine Suche?</h3>
 <p>Der Screener lädt schrittweise: Erst kommen die Profile, dann pro benötigter Datenquelle nur noch die Aktien, die bisher alle Kriterien erfüllen. Je selektiver deine ersten Kriterien sind, desto weniger Aufrufe werden verbraucht. Unter „Weitere Optionen“ legst du eine Obergrenze fest. Der Gratis-Tarif von FMP erlaubt aktuell 250 Aufrufe pro Tag.</p>
 <details><summary>Warum zeigt der Screener keine Treffer?</summary><p>Meist sind die Kriterien zu streng, oder FMP liefert für eine Kennzahl keinen Wert (dann fällt die Aktie heraus). Lockere ein Kriterium oder nutze die eigene Liste. Im Gratis-Tarif ist der Marktscreener meist nicht enthalten.</p></details>
-<details><summary>Wo wird mein API-Key gespeichert?</summary><p>Nur in deinem Browser (localStorage). Er wird nur an Financial Modeling Prep gesendet und ist derselbe wie im Aktien-Hub. Gespeicherte Vorlagen liegen ebenfalls nur in deinem Browser.</p></details>
+<details><summary>Brauche ich einen API-Key?</summary><p>Nein, die Abrufe laufen über einen Server dieser Seite. Wenn du einen eigenen Key einträgst, liegt er nur in deinem Browser (localStorage), geht nur an Financial Modeling Prep und gilt auch im Aktien-Hub. Gespeicherte Vorlagen liegen ebenfalls nur in deinem Browser.</p></details>
 <details><summary>Sind die Daten verlässlich?</summary><p>Die Daten stammen von Financial Modeling Prep und können Lücken oder Fehler enthalten. Alle Angaben ohne Gewähr, keine Anlageberatung. Prüfe jede Aktie selbst, bevor du entscheidest.</p></details>
 </div>
 <p class="note"><strong>Hinweis:</strong> Alle Inhalte dienen der allgemeinen Information und sind keine Anlage-, Steuer- oder Rechtsberatung. Kapitalanlagen sind mit Risiken verbunden, bis hin zum Totalverlust.</p>
@@ -461,8 +461,9 @@ article.wide>:not(.tool):not(.cards){max-width:760px}
   };
   var B = "https://financialmodelingprep.com/stable/";
   var KEY = ""; try { KEY = localStorage.getItem("fmpkey") || ""; } catch (e) { }
+  if (!KEY) KEY = "proxy";
   function askKey() { var k = prompt("FMP API-Key (wird nur in deinem Browser gespeichert):", KEY); if (k !== null) { KEY = k.trim(); try { localStorage.setItem("fmpkey", KEY); } catch (e) { } showKey(); } }
-  function showKey() { var e = $("keystate"); if (e) e.textContent = KEY ? "API-Key gespeichert (••••" + KEY.slice(-4) + ")" : "Kein API-Key hinterlegt"; }
+  function showKey() { var e = $("keystate"); if (e) e.textContent = KEY === "proxy" ? "Daten laufen über den Server der Seite" : "Eigener API-Key gespeichert (••••" + KEY.slice(-4) + ")"; }
   var RUN = { calls: 0, max: 250, abort: false, busy: false };
   async function call(path, params) {
     if (!KEY) { askKey(); if (!KEY) throw new Error("Kein API-Key hinterlegt"); }

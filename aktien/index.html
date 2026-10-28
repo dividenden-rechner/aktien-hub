@@ -180,7 +180,7 @@ svg text{fill:var(--mut);font-size:11px;font-family:inherit}
   <div id="sug" hidden></div>
 </div>
 <div id="msg" role="status"></div>
-<p><button class="sbtn" style="background:#f0f8f3;margin-top:0" onclick="askKey()">🔑 API-Key ändern</button></p>
+<p><button class="sbtn" style="background:#f0f8f3;margin-top:0" onclick="askKey()">🔑 Eigenen API-Key nutzen (optional)</button></p>
 <section id="start">
   <div class="wlhead"><h2>Watchlist</h2></div>
   <div class="tiles" id="tiles"></div>
@@ -191,12 +191,12 @@ svg text{fill:var(--mut);font-size:11px;font-family:inherit}
 <section style="max-width:1080px;margin:36px auto 0;padding-top:8px;border-top:1px solid #dfe5ea;color:#14202b">
 <h2 style="font-size:20px">So nutzt du den Aktien-Hub</h2>
 <p>Gib oben den Namen oder das Kürzel einer Aktie ein, zum Beispiel Coca-Cola oder SAP. Mit ＋ legst du sie in deine Watchlist; zu den Aktien dort zeigen dir die <a href="../news/" style="color:#1a7a45">News</a> passende Nachrichten. Im Hub siehst du zu jedem Unternehmen Kennzahlen, Dividendenverlauf, Umsatz, Gewinn und Free Cashflow der letzten Jahre sowie Bewertungs- und Analystendaten. Daraus lassen sich Kennzahlen wie <a href="../grundlagen/dividendenrendite/" style="color:#1a7a45">Dividendenrendite</a> und <a href="../grundlagen/ausschuettungsquote/" style="color:#1a7a45">Ausschüttungsquote</a> einordnen.</p>
-<p>Die Daten stammen von Financial Modeling Prep. Du brauchst dafür einen eigenen API-Key, den du kostenlos dort erstellen kannst. Er wird nur in deinem Browser gespeichert. Der kostenlose Zugang deckt nur eine begrenzte Auswahl überwiegend US-amerikanischer Aktien ab, deutsche und andere europäische Titel sind dort nicht in jedem Fall verfügbar. Alle Angaben ohne Gewähr, keine Anlageberatung.</p>
+<p>Die Daten stammen von Financial Modeling Prep. Die Abrufe laufen über einen Server dieser Seite, du musst nichts eingeben. Die Auswahl hängt vom Datenpaket ab: überwiegend US-amerikanische Aktien, deutsche und andere europäische Titel sind nicht in jedem Fall verfügbar. Wenn du einen eigenen API-Key hast, kannst du ihn oben eintragen, er wird nur in deinem Browser gespeichert. Alle Angaben ohne Gewähr, keine Anlageberatung.</p>
 <p style="font-size:14px"><a href="../impressum/" style="color:#5d6b78">Impressum</a> · <a href="../datenschutz/" style="color:#5d6b78">Datenschutz</a></p>
 </section>
 <script>
-// Nur in einem PRIVATEN Repo eintragen. In öffentlichen Repos leer lassen: jeder Besucher gibt dann seinen eigenen Key ein.
-const DEFAULT_KEY = "";
+// "proxy" = Daten laufen ueber den Zwischenserver der Seite (der echte Schluessel liegt dort als Secret). Ein eigener Schluessel im Browser hat Vorrang.
+const DEFAULT_KEY = "proxy";
 let KEY = (()=>{try{return localStorage.getItem("fmpkey")||""}catch(e){return ""}})() || DEFAULT_KEY;
 function askKey(){const k=prompt("FMP API-Key (wird nur in deinem Browser gespeichert):",KEY);if(k!==null){KEY=k.trim();try{localStorage.setItem("fmpkey",KEY)}catch(e){}}}
 if(!KEY)setTimeout(askKey,300);
