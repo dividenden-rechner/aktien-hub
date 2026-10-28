@@ -68,6 +68,8 @@ wird ein frei lizenziertes Aufmacherfoto gesucht (mit Bildnachweis unter dem Fot
 **Anderes Dokument bei einem US-Kürzel:** Feld `art` wählen: `ergebnisse` (Standard, Quartals-/Halbjahres-/Jahreszahlen als Pressemitteilung), `jahresbericht` (10-K), `quartalsbericht` (10-Q), `meldung` (neueste Ereignismeldung der letzten 90 Tage, z. B. Aktiensplit, Fusion, Management) oder `insider` (Insiderkäufe und -verkäufe der letzten 120 Tage). Die Kategorie über dem Titel setzt der Agent nach Dokumentart.
 **Andere Titel:** `pdf_url` eintragen oder die PDF in `content/ir-inbox/` hochladen.
 
+**Vergleich mehrerer Unternehmen (Peer Group):** Actions → „IR-Vergleich (Peer Group)" → Kürzel, Links oder (Ordner `content/ir-vergleich/<name>/` mit mehreren PDFs) eintragen. Es entsteht ein Entwurf mit Kurz-Kasten, Vergleichstabelle und Analyse, wer wo vorn liegt.
+
 Ergebnis: ein Entwurf (`draft: true`) in `content/magazin/`. Hinweise für dich stehen als `<!-- PRÜFEN: ... -->` am Textanfang
 (werden nie veröffentlicht): Foto passend? Zahlen im Bericht gefunden? Prompt: `tools/ir_prompt.md`, Autor/Bio: `tools/ir_config.json`.
 Gibt es den Artikel schon, bricht der Agent ab, damit nichts überschrieben wird.

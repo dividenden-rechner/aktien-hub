@@ -1,0 +1,76 @@
+name: IR-Vergleich (Peer Group)
+on:
+  push:
+    branches: [main]
+    paths:
+      - "content/ir-vergleich/**/*.pdf"
+  workflow_dispatch:
+    inputs:
+      ticker:
+        description: "US-Kürzel mit Komma, z. B. BA,GE (Berichte kommen automatisch von der SEC). Mit Links kombinierbar."
+        required: false
+      pdf_url:
+        description: "Links zu PDFs oder Webseiten (z. B. Airbus, Rolls-Royce), mehrere mit Leerzeichen oder Komma trennen."
+        required: false
+      fokus:
+        description: "Optional: Worum soll es gehen? z. B. 'Triebwerkshersteller zusammen mit Airbus' oder 'Wer hat im Quartal gewonnen?'"
+        required: false
+      art:
+        description: "Welches Dokument bei einem Kürzel? (Standard: Ergebnismeldung)"
+        required: false
+        default: ergebnisse
+        type: choice
+        options:
+          - ergebnisse
+          - jahresbericht
+          - quartalsbericht
+permissions:
+  contents: write
+concurrency:
+  group: ir-agent
+  cancel-in-progress: false
+jobs:
+  vergleich:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 2
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install pillow
+      - run: sudo apt-get update -qq && sudo apt-get install -y -qq poppler-utils fonts-dejavu-core
+      - name: Vergleich erzeugen
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          SEC_USER_AGENT: ${{ vars.SEC_USER_AGENT }}
+          FMP_API_KEY: ${{ secrets.FMP_API_KEY }}
+          ART: ${{ github.event.inputs.art }}
+          TICKERS: ${{ github.event.inputs.ticker }}
+          PDF_URL: ${{ github.event.inputs.pdf_url }}
+          FOKUS: ${{ github.event.inputs.fokus }}
+        run: |
+          mkdir -p content/ir-vergleich
+          if [ -n "$TICKERS$PDF_URL" ]; then
+            args=()
+            for t in $(echo "$TICKERS" | tr ',' ' '); do args+=(--src "ticker:$t"); done
+            for u in $(echo "$PDF_URL" | sed 's/,[[:space:]]*http/\nhttp/g' | tr -s ' \t' '\n\n' | sed '/^$/d'); do args+=(--src "url:$u"); done
+            python3 tools/ir_vergleich.py "${args[@]}" --fokus "$FOKUS"
+          else
+            git diff --name-only --diff-filter=AM HEAD~1 HEAD -- 'content/ir-vergleich/*/*.pdf' | xargs -r -n1 dirname | sort -u > /tmp/gruppen.txt
+            cat /tmp/gruppen.txt
+            while read -r d; do
+              [ -z "$d" ] && continue
+              python3 tools/ir_vergleich.py --dir "$d" --fokus "$(basename "$d" | tr '-' ' ')" || echo "::warning::Vergleich für $d fehlgeschlagen"
+            done < /tmp/gruppen.txt
+          fi
+      - name: Committen
+        run: |
+          git config user.name "ir-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add -A
+          if git diff --cached --quiet; then echo "Keine Änderungen"; exit 0; fi
+          git commit -m "IR-Vergleich: Entwurf erzeugt"
+          git pull --rebase -q
+          git push
