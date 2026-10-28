@@ -3,13 +3,11 @@
 <!-- uebersicht-start -->
 ## Übersicht (wird automatisch erstellt, neueste zuerst)
 
-### Zur Freigabe: Entwürfe (1)
+### Zur Freigabe: Entwürfe (0)
 
 Datei anklicken, dann Stift-Symbol: Zeile `draft: true` löschen und speichern, dann geht der Artikel online.
 
-| Datum | Titel | Datei |
-|---|---|---|
-| 28.10.2026 06:55 | Equinor verdient dank höherer Preise und mehr Förderung deutlich mehr | [2026-10-28-0655-equinor-q2-2026.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/2026-10-28-0655-equinor-q2-2026.md) |
+_Keine Entwürfe._
 
 ### Online (9)
 
