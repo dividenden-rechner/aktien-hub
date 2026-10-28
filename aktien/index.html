@@ -352,14 +352,6 @@ function epsChart(inc,cur){
   const g=n>1&&D[n-2].v>0?D[n-1].v/D[n-2].v-1:null;
   return `<div class="card">${kern("Gewinn je Aktie (verwässert)",num(D[n-1].v)+" "+esc(cur),D[n-1].v<0?"var(--neg)":"var(--c-gewinn)",g!=null?pcs(g):"")}${s}</svg></div>`;
 }
-/* Wasserfall: rows = {l,s,e,c,t(total),val} */
-function wf(rows,W=370){
-  const pl=124,pr=82,rh=26,H=rows.length*rh+8,mx=Math.max(...rows.map(r=>Math.max(r.s,r.e)),1),sc=(W-pl-pr)/mx;
-  let s=`<svg viewBox="0 0 ${W} ${H}" role="img" aria-label="Wasserfall">`;
-  rows.forEach((r,i)=>{const y=4+i*rh,a=Math.min(r.s,r.e),b=Math.max(r.s,r.e),x=pl+a*sc,w=Math.max(3,(b-a)*sc),sg=r.t?"":(r.e<r.s?"−":"+");
-    s+=`<text x="${pl-8}" y="${y+14}" text-anchor="end" font-size="11" ${r.t?'font-weight="700" style="fill:var(--ink)"':""}>${esc(r.l)}</text><rect x="${x}" y="${y+2}" width="${w}" height="17" rx="3" fill="${r.c}"/><text x="${x+w+6}" y="${y+15}" font-size="11" font-weight="700" style="fill:${r.c}">${sg}${big(Math.abs(r.val))}</text>`});
-  return s+"</svg>";
-}
 function line(title,pts){
   if(pts.length<2)return `<div class="card"><h3>${title}</h3><p>Keine Daten verfügbar.</p></div>`;
   const W=480,H=210,p=24,vs=pts.map(d=>d.v),mn=Math.min(...vs),mx=Math.max(...vs),r=(mx-mn)||1;
@@ -424,6 +416,7 @@ async function openStock(sym){
    ${fcfChart(cf,cur)}
    ${epsChart(inc,cur)}
   </div>
+  <div id="val"></div>
   <div id="fin"></div>
   <div id="nr"></div>
   <div id="nw"></div>
@@ -431,6 +424,7 @@ async function openStock(sym){
   ${p.website?`<p class="desc"><a href="${esc(p.website)}" target="_blank" rel="noopener">${esc(p.website)}</a></p>`:""}`;
   $("start").hidden=true;hub.hidden=false;msg.textContent="";$("sb").onclick=()=>story(LAST);
   try{initExplorer(sym,p,cur)}catch(e){console.error(e)}
+  try{initValuation(sym,{p,price,r,m,fair,pt,tgt,inc,pts,cur}).catch(e=>console.error(e))}catch(e){console.error(e)}
   try{initFinance(sym,p,cur,inc,cf)}catch(e){console.error(e)}
   try{initReports(sym,p)}catch(e){console.error(e)}
   try{initNews(sym,p)}catch(e){console.error(e)}
@@ -446,6 +440,83 @@ async function openStock(sym){
     msg.className=oth.length||lim.length?"err":"";msg.innerHTML=h;msg.title=fails.map(f=>f.l+": "+f.m).join("\n");
   }
   scrollTo(0,0);
+}
+/* ===== Bewertung: historische Multiples und Fair-Value-Spanne ===== */
+async function initValuation(sym,c){
+  const box=$("val");if(!box)return;
+  const {p,price,r,m,fair,pt,tgt,inc,pts,cur}=c;
+  let rat=[],km=[];
+  try{rat=await chain("ratios",{symbol:sym},[{limit:10},{limit:5},{}])}catch(e){}
+  try{km=await chain("key-metrics",{symbol:sym},[{limit:10},{limit:5},{}])}catch(e){}
+  if(!document.body.contains(box))return;
+  const yr=x=>String(x.fiscalYear||x.calendarYear||String(x.date).slice(0,4));
+  const R={},K={};(Array.isArray(rat)?rat:[]).forEach(x=>R[yr(x)]=x);(Array.isArray(km)?km:[]).forEach(x=>K[yr(x)]=x);
+  const ok=v=>v!=null&&isFinite(v)&&v>0&&v<300?+v:null;
+  const px=ds=>{if(!pts||!pts.length)return null;const t=new Date(ds).getTime();let b=null,bd=1/0;pts.forEach(q=>{const dd=Math.abs(new Date(q.d).getTime()-t);if(dd<bd){bd=dd;b=q}});return bd<60*864e5?b.v:null};
+  const yrs=[...new Set([...Object.keys(R),...Object.keys(K)])].sort().slice(-10);
+  const M=[
+    {k:"pe",l:"KGV",h:y=>ok(first(R[y]||{},"priceToEarningsRatio","peRatio"))??(()=>{const x=inc.find(i=>String(i.y)===y);const e=x&&first(x,"epsDiluted","eps"),pp=x&&px(x.date);return e>0&&pp?ok(pp/e):null})(),t:ok(first(r||{},"priceToEarningsRatioTTM","peRatioTTM"))},
+    {k:"pb",l:"KBV",h:y=>ok(first(R[y]||{},"priceToBookRatio","pbRatio")),t:ok(first(r||{},"priceToBookRatioTTM"))},
+    {k:"ps",l:"KUV",h:y=>ok(first(R[y]||{},"priceToSalesRatio")),t:ok(first(r||{},"priceToSalesRatioTTM"))},
+    {k:"pf",l:"Kurs/FCF",h:y=>ok(first(R[y]||{},"priceToFreeCashFlowRatio","pfcfRatio","priceToFreeCashFlowsRatio")),t:ok(first(r||{},"priceToFreeCashFlowRatioTTM"))},
+    {k:"ev",l:"EV/EBITDA",h:y=>ok(first(K[y]||{},"evToEBITDA")??first(R[y]||{},"enterpriseValueMultiple")),t:ok(first(m||{},"evToEBITDATTM")??first(r||{},"enterpriseValueMultipleTTM"))}
+  ];
+  M.forEach(x=>{x.v=yrs.map(y=>({y,v:x.h(y)})).filter(d=>d.v!=null)});
+  const have=M.filter(x=>x.v.length>=3);
+  const q=(a,f)=>{const b=a.slice().sort((x,y)=>x-y),i=(b.length-1)*f,lo=Math.floor(i),hi=Math.ceil(i);return b[lo]+(b[hi]-b[lo])*(i-lo)};
+  const st=x=>{const a=x.v.map(d=>d.v);return a.length?{avg:a.reduce((u,v)=>u+v,0)/a.length,med:q(a,.5),lo:a.length>=4?q(a,.25):Math.min(...a),hi:a.length>=4?q(a,.75):Math.max(...a),min:Math.min(...a),max:Math.max(...a),n:a.length}:null};
+  /* Fair-Value-Methoden */
+  const meth=[];
+  const base={pe:M[0].t&&price?price/M[0].t:null,pb:M[1].t&&price?price/M[1].t:null,pf:M[3].t&&price?price/M[3].t:null};
+  [["pe","KGV-Methode","Gewinn je Aktie × historisches KGV"],["pb","KBV-Methode","Buchwert je Aktie × historisches KBV"],["pf","FCF-Methode","Free Cashflow je Aktie × historisches Kurs/FCF"]].forEach(([k,l,d])=>{
+    const x=M.find(z=>z.k===k),S=st(x);if(S&&base[k]>0&&x.v.length>=3)meth.push({l,d,lo:base[k]*S.lo,mid:base[k]*S.med,hi:base[k]*S.hi,c:"var(--c-umsatz)"})});
+  if(fair>0)meth.push({l:"DCF",d:"Diskontierte Cashflows laut FMP",lo:fair,mid:fair,hi:fair,c:"var(--c-gewinn)"});
+  const tl=pt&&first(pt,"targetLow"),th=pt&&first(pt,"targetHigh");
+  if(tgt>0)meth.push({l:"Analysten",d:"Kursziele der Analysten",lo:tl>0?tl:tgt,mid:tgt,hi:th>0?th:tgt,c:"var(--c-cash)"});
+  box.className="fin";
+  let h=`<h3>Bewertung</h3><p class="fsub">Wie teuer ist die Aktie im Vergleich zu ihrer eigenen Geschichte? Multiples in den letzten ${yrs.length||0} Jahren, Quelle: FMP.</p>`;
+  if(!have.length&&!meth.length){box.innerHTML=h+'<div class="fcard"><p class="fnote">Für diese Aktie liefert der aktuelle FMP-Tarif keine Bewertungsverläufe.</p></div>';return}
+  let sel=(have[0]||{}).k;
+  if(have.length)h+=`<div class="fcard"><div class="fctl"><b>Bewertung im Verlauf</b></div><div class="fchips" id="vch">${have.map(x=>`<button type="button" class="fchip" data-v="${x.k}" aria-pressed="${x.k===sel}">${x.l}</button>`).join("")}</div><div id="vtx"></div><div class="fscroll fit" id="vsv"></div><p class="fnote" id="vfn"></p></div>`;
+  if(meth.length)h+=`<div class="fcard"><div class="fctl"><b>Fair-Value-Spanne</b></div><div id="vfv"></div></div>`;
+  box.innerHTML=h;
+  function band(){
+    const x=M.find(z=>z.k===sel),S=st(x),T=x.t,el=$("vsv");
+    const W=370,H=190,pl=8,pr=8,top=22,bot=H-24,n=x.v.length+(T!=null?1:0);
+    const all=x.v.map(d=>d.v).concat(T!=null?[T]:[]),mx0=Math.max(...all),mn0=Math.min(...all),pad=(mx0-mn0||1)*.18,mx=mx0+pad,mn=Math.max(0,mn0-pad),Y=v=>top+(mx-v)/(mx-mn)*(bot-top),X=i=>pl+(W-pl-pr)*(i+.5)/n;
+    let sv=`<svg viewBox="0 0 ${W} ${H}" role="img" aria-label="${x.l} im Verlauf">`;
+    if(S){sv+=`<rect x="0" y="${Y(S.hi)}" width="${W}" height="${Math.max(2,Y(S.lo)-Y(S.hi))}" fill="var(--c-umsatz-l)" opacity=".5"/><line x1="0" x2="${W}" y1="${Y(S.avg)}" y2="${Y(S.avg)}" stroke="var(--c-umsatz)" stroke-dasharray="5 4" stroke-width="1.5"/><text x="${W-4}" y="${Y(S.avg)-5}" text-anchor="end" font-size="11" font-weight="700" style="fill:var(--c-umsatz)">Ø ${num(S.avg,1)}</text>`}
+    const pts2=x.v.map((d,i)=>[X(i),Y(d.v),d]);
+    sv+=`<polyline points="${pts2.map(a=>a[0]+","+a[1]).join(" ")}" fill="none" stroke="var(--c-umsatz)" stroke-width="3" stroke-linejoin="round"/>`;
+    pts2.forEach(a=>{sv+=`<circle cx="${a[0]}" cy="${a[1]}" r="3.5" fill="var(--c-umsatz)"><title>${a[2].y}: ${num(a[2].v,1)}</title></circle>`});
+    const yl2=(i,t,b)=>`<text x="${X(i)}" y="${H-5}" text-anchor="middle" font-size="11" ${b?'font-weight="700" style="fill:var(--ink)"':""}>${t}</text>`;
+    x.v.forEach((d,i)=>sv+=yl2(i,x.v.length>7?"’"+d.y.slice(-2):d.y,false));
+    let txt="";
+    if(T!=null){const tx=X(n-1),ty=Y(T),dif=S?T/S.avg-1:null,col=dif==null?"var(--ink)":dif>.15?"var(--c-kosten)":dif<-.15?"var(--c-gewinn)":"var(--mut)";
+      if(pts2.length)sv+=`<line x1="${pts2[pts2.length-1][0]}" y1="${pts2[pts2.length-1][1]}" x2="${tx}" y2="${ty}" stroke="${col}" stroke-width="2" stroke-dasharray="3 3"/>`;
+      sv+=`<circle cx="${tx}" cy="${ty}" r="6" fill="${col}"/><text x="${tx}" y="${ty-11}" text-anchor="middle" font-size="11" font-weight="700" style="fill:${col}">${num(T,1)}</text>`+yl2(n-1,"heute",true);
+      txt=`<div class="kern" style="color:${col}">${x.l} ${num(T,1)}<small>${dif==null?"":(dif>0?"+":"")+num(dif*100,0)+" % zum Ø der letzten "+S.n+" Jahre"}</small></div>`;}
+    else if(S)txt=`<div class="kern">${x.l} Ø ${num(S.avg,1)}</div>`;
+    const verdict=!S||T==null?"":T/S.avg-1>.15?"Die Aktie ist derzeit teurer bewertet als im Durchschnitt.":T/S.avg-1<-.15?"Die Aktie ist derzeit günstiger bewertet als im Durchschnitt.":"Die Bewertung liegt derzeit etwa im Durchschnitt.";
+    $("vtx").innerHTML=txt;el.innerHTML=sv+"</svg>";
+    $("vfn").textContent=(S?`Spanne: ${num(S.min,1)} bis ${num(S.max,1)}; das blaue Band zeigt die mittleren 50 % der Jahre. `:"")+verdict+" Ein hohes Multiple ist nicht automatisch schlecht, es kann auch für schnelleres Wachstum stehen.";
+  }
+  if(have.length)band();
+  /* Fair Value zeichnen */
+  if(meth.length){
+    const mids=meth.map(a=>a.mid),med=q(mids,.5),pad=0,lo=Math.min(price||1/0,...meth.map(a=>a.lo)),hi=Math.max(price||0,...meth.map(a=>a.hi)),rg=(hi-lo)||1,W=370,pl=112,pr=14,rh=34,top=28,H=top+meth.length*rh+8;
+    const X=v=>pl+(v-lo)/rg*(W-pl-pr);
+    let sv=`<svg viewBox="0 0 ${W} ${H}" role="img" aria-label="Fair-Value-Spanne">`;
+    meth.forEach((a,i)=>{const y=top+i*rh;
+      sv+=`<text x="${pl-8}" y="${y+17}" text-anchor="end" font-size="11" style="fill:var(--ink)" font-weight="700">${esc(a.l)}</text>`;
+      if(a.hi>a.lo)sv+=`<rect x="${X(a.lo)}" y="${y+7}" width="${Math.max(3,X(a.hi)-X(a.lo))}" height="14" rx="4" fill="${a.c}" opacity=".35"><title>${esc(a.d)}: ${num(a.lo)} bis ${num(a.hi)}</title></rect>`;
+      sv+=`<rect x="${X(a.mid)-3}" y="${y+4}" width="6" height="20" rx="2" fill="${a.c}"><title>${esc(a.d)}: ${num(a.mid)}</title></rect><text x="${X(a.mid)}" y="${y+2}" text-anchor="middle" font-size="10.5" font-weight="700" style="fill:${a.c}">${num(a.mid)}</text>`});
+    if(price)sv+=`<line x1="${X(price)}" x2="${X(price)}" y1="${top-8}" y2="${H-4}" stroke="var(--ink)" stroke-width="1.5" stroke-dasharray="4 3"/><text x="${X(price)}" y="${top-12}" text-anchor="middle" font-size="11" font-weight="700" style="fill:var(--ink)">Kurs ${num(price)}</text>`;
+    const dif=price?med/price-1:null,col=dif==null?"var(--ink)":dif>.15?"var(--c-gewinn)":dif<-.15?"var(--c-kosten)":"var(--mut)";
+    const sec=(p.sector||"")+" "+(p.industry||""),spec=/bank|insurance|reit|real estate|asset management|capital markets|financial/i.test(sec);
+    $("vfv").innerHTML=`<div class="kern" style="color:${col}">Mittel: ${num(med)} ${esc(p.currency||cur)}<small>${dif==null?"":(dif>0?"+":"")+num(dif*100,0)+" % zum Kurs"}</small></div><div class="fscroll fit">${sv}</svg></div><p class="fnote">Der Balken zeigt die Spanne (mittlere 50 % der historischen Multiples bzw. niedrigstes bis höchstes Kursziel), der Strich den mittleren Wert. ${meth.map(a=>esc(a.l)+": "+esc(a.d)).join("; ")}. Vereinfachte Schätzung auf Basis vergangener Zahlen, keine Anlageempfehlung. Das historische Niveau muss nicht wiederkehren.${spec?" Bei Banken, Versicherungen und Immobilien- bzw. BDC-Werten sind Gewinn- und FCF-Multiples nur eingeschränkt aussagekräftig; hier zählen eher KBV und Kennzahlen wie FFO/AFFO, die FMP nicht zuverlässig liefert.":""}</p>`;
+  }
+  box.addEventListener("click",e=>{const b=e.target.closest("button[data-v]");if(!b)return;sel=b.dataset.v;box.querySelectorAll("button[data-v]").forEach(z=>z.setAttribute("aria-pressed",z===b));band()});
 }
 /* ===== Finanzen: Gewinnfluss, Kennzahlen uebereinander, Capex ===== */
 const FCOL=["#2563eb","#16a34a","#f59e0b","#dc2626","#7c3aed","#0891b2","#db2777","#65a30d","#475569","#ea580c","#0d9488","#9333ea","#b45309"];
@@ -475,41 +546,77 @@ async function initFinance(sym,p,cur,inc,cf){
   box.innerHTML=`<h3>Finanzen im Überblick</h3><p class="fsub">Jahreswerte in ${esc(cur||"Berichtswährung")}. Quelle: FMP.</p>
   <div class="fcard"><div class="fctl"><b id="fst">Gewinnfluss</b><span class="ftoggle"><button type="button" data-f="gw" aria-pressed="true">Gewinn</button><button type="button" data-f="cf" aria-pressed="false">Cashflow</button></span><select id="fsy" aria-label="Jahr">${years.slice().reverse().map(y=>`<option>${y}</option>`).join("")}</select></div><div class="fscroll" id="fsk"></div><p class="fnote" id="fsn">Vom Umsatz bis zum Nettogewinn. Die Breite der Bänder ist proportional zum Betrag.</p></div>
   <div class="fcard"><div class="fctl"><b>Kennzahlen übereinander legen</b><button type="button" data-m="line" aria-pressed="true">Linien</button><button type="button" data-m="bar" aria-pressed="false">Balken</button></div><div class="fchips" id="fch"></div><div class="fscroll fit" id="fcm"></div><p class="fnote" id="fmn"></p></div>
+  ${debtCard()}
   <div class="fcard"><div class="fctl"><b>Investitionen (Capex) und Dividendendeckung</b></div><div class="fscroll" id="fcx"></div><p class="fnote">Capex-Quote = Investitionen / Umsatz. Capex / Abschreibungen über 100 % heißt: Das Unternehmen investiert mehr, als sich Anlagen abnutzen. Deckung = freier Cashflow / gezahlte Dividenden; unter 100 % wird die Dividende nicht aus dem freien Cashflow bezahlt.</p></div>`;
-  /* Wasserfall statt Sankey */
+  /* Schulden, Cash, Zinsdeckung */
+  function debtCard(){
+    const D=years.map(y=>{const b=B[y]||{},i=I[y]||{};const debt=first(b,"totalDebt"),cash=first(b,"cashAndCashEquivalents","cashAndShortTermInvestments");const nd=first(b,"netDebt")??(debt!=null&&cash!=null?debt-cash:null);
+      const da=first(C[y]||{},"depreciationAndAmortization")??i.depreciationAndAmortization,ebitda=i.ebitda??(i.operatingIncome!=null&&da!=null?i.operatingIncome+da:null);
+      return {y,debt,cash,nd,ebitda,ic:i.interestExpense>0&&i.operatingIncome!=null?i.operatingIncome/i.interestExpense:null}}).filter(d=>d.debt!=null);
+    if(D.length<1)return "";
+    const W=370,H=190,top=24,bot=H-22,n=D.length,mx=Math.max(...D.map(d=>d.debt),1),Y=v=>top+(mx-v)/mx*(bot-top),bw=Math.min(44,(W-12)/n*.78);
+    let sv=`<svg viewBox="0 0 ${W} ${H}" role="img" aria-label="Schulden und Cash"><line x1="0" x2="${W}" y1="${bot}" y2="${bot}" stroke="var(--line)"/>`;
+    D.forEach((d,i)=>{const cx=6+(W-6)*(i+.5)/n,last=i===n-1,h=Math.max(1,bot-Y(d.debt));
+      sv+=`<rect x="${cx-bw/2}" y="${bot-h}" width="${bw}" height="${h}" rx="3" fill="${last?"var(--c-kosten)":"#f9d2a8"}"><title>${d.y} Schulden: ${big(d.debt)}</title></rect>`;
+      if(d.cash!=null){const ch=Math.max(1,Math.min(bot-Y(d.cash),h)),gw=Math.min(18,bw*.42);sv+=`<rect x="${cx-gw/2}" y="${bot-ch}" width="${gw}" height="${ch}" rx="2" fill="${last?"var(--c-cash)":"#6cc4cc"}"><title>${d.y} Cash: ${big(d.cash)}</title></rect>`}
+      if(i===0||last)sv+=`<text x="${cx}" y="${bot-h-5}" text-anchor="middle" font-size="11" font-weight="700" style="fill:${last?"var(--c-kosten)":"var(--mut)"}">${short(d.debt)}</text>`;
+      sv+=`<text x="${cx}" y="${H-5}" text-anchor="middle" font-size="11" ${last?'font-weight="700" style="fill:var(--ink)"':""}>${D.length>7?"’"+String(d.y).slice(-2):d.y}</text>`});
+    const L=D[n-1],P=n>1?D[n-2]:null,chg=P&&P.nd!=null&&L.nd!=null?L.nd-P.nd:null,lev=L.nd!=null&&L.ebitda>0?L.nd/L.ebitda:null;
+    const sub=[chg!=null?(chg<=0?"Abbau ":"Aufbau ")+big(Math.abs(chg))+" zum Vorjahr":"",lev!=null?"Nettoschulden/EBITDA "+num(lev,1)+"×":"",L.ic!=null?"Zinsdeckung "+num(L.ic,1)+"×":""].filter(Boolean);
+    return `<div class="fcard"><div class="fctl"><b>Schulden, Cash und Zinsdeckung</b></div><div class="kern" style="color:${L.nd!=null&&L.nd<0?"var(--c-cash)":"var(--c-kosten)"}">${L.nd!=null?(L.nd<0?"Nettokasse "+big(-L.nd):"Nettoschulden "+big(L.nd)):big(L.debt)} ${esc(cur)}</div><div class="kleg"><span><i style="background:var(--c-kosten)"></i>Schulden gesamt</span><span><i style="background:var(--c-cash)"></i>Cash</span></div>${sv}</svg><p class="fnote">${sub.length?esc(sub.join(" · "))+". ":""}Nettoschulden = Schulden minus Cash. Zinsdeckung = Operatives Ergebnis / Zinsaufwand; je höher, desto sicherer lassen sich die Zinsen bezahlen.</p></div>`;
+  }
+  /* Sankey */
   let flow="gw";
   function sankey(){flow==="cf"?cashflow():sankeyP()}
   function sankeyP(){
-    $("fst").textContent="Vom Umsatz zum Gewinn";$("fsn").textContent="Blau = Umsatz, Orange = Kosten, Grün = Gewinn. Die Länge der Balken entspricht dem Betrag.";
-    const x=I[sy]||{},R=x.revenue,cog=Math.max(x.costOfRevenue||0,0),gp=x.grossProfit!=null?x.grossProfit:(R!=null?R-cog:null),op=x.operatingIncome,ni=x.netIncome,tax=Math.max(x.incomeTaxExpense||0,0);
-    const el=$("fsk");el.classList.add("fit");if(!(R>0)||gp==null){el.innerHTML='<p class="fnote">Für dieses Jahr fehlen Umsatzdaten.</p>';return}
-    const U="var(--c-umsatz)",K="var(--c-kosten)",G="var(--c-gewinn)",rows=[{l:"Umsatz",s:0,e:R,c:U,t:1,val:R}];
-    if(cog>0)rows.push({l:"Herstellungskosten",s:R,e:R-cog,c:K,val:cog});
-    rows.push({l:"Bruttogewinn",s:0,e:Math.max(gp,0),c:G,t:1,val:gp});
-    if(op!=null&&op>0&&gp>0){
-      rows.push({l:"Betriebskosten",s:gp,e:op,c:K,val:Math.max(gp-op,0)});rows.push({l:"Operatives Ergebnis",s:0,e:op,c:G,t:1,val:op});
-      let cur2=op;if(tax>0){rows.push({l:"Steuern",s:cur2,e:cur2-tax,c:K,val:tax});cur2-=tax}
-      const oth=(ni??cur2)-cur2;if(Math.abs(oth)>R*0.0005){rows.push(oth<0?{l:"Zinsen & Sonstiges",s:cur2,e:cur2+oth,c:K,val:-oth}:{l:"Sonstige Erträge",s:cur2,e:cur2+oth,c:G,val:oth});}
-      if(ni!=null)rows.push({l:"Nettogewinn",s:0,e:Math.max(ni,0),c:ni<0?"var(--neg)":G,t:1,val:ni});
-    }
-    el.innerHTML=wf(rows)+(op!=null&&op<=0?'<p class="fnote">In diesem Jahr war das operative Ergebnis nicht positiv, deshalb endet die Darstellung beim Bruttogewinn.</p>':"");
+    $("fst").textContent="Gewinnfluss";$("fsn").textContent="Vom Umsatz bis zum Nettogewinn. Die Breite der Bänder ist proportional zum Betrag.";
+    const x=I[sy]||{},R=x.revenue,cog=Math.max(x.costOfRevenue||0,0),gp=x.grossProfit!=null?x.grossProfit:(R!=null?R-cog:null),op=x.operatingIncome,ni=x.netIncome,tax=Math.max(x.incomeTaxExpense||0,0),intr=Math.max(x.interestExpense||0,0);
+    const el=$("fsk");if(!(R>0)||gp==null){el.innerHTML='<p class="fnote">Für dieses Jahr fehlen Umsatzdaten.</p>';return}
+    const nar=el.clientWidth>0&&el.clientWidth<560;el.classList.toggle("fit",nar);const W=nar?Math.max(300,el.clientWidth):760,Ht=nar?300:330,top=14,gap=12,nw=14,xs=nar?[0,(W-nw)/3,(W-nw)*2/3,W-nw]:[0,215,385,W-190-nw];
+    const nodes=[],L=[];const nd=(id,col,v,lab,c)=>{if(v>0){nodes.push({id,col,v,lab,c})}};
+    nd("rev",0,R,"Umsatz","#2563eb");nd("cog",1,cog,"Herstellungskosten","#94a3b8");nd("gp",1,Math.max(gp,0),"Bruttogewinn","#16a34a");
+    const opex=Math.max(gp-(op??gp),0);
+    if(op!=null&&op>0&&gp>0){nd("opex",2,opex,"Betriebskosten","#94a3b8");nd("op",2,op,"Operatives Ergebnis","#16a34a");
+      const intc=Math.min(intr,Math.max(op-tax,0)),oth=op-tax-intc-(ni??0);nd("tax",3,tax,"Steuern","#f59e0b");nd("int",3,intc,"Zinsaufwand","#ef4444");nd("oth",3,Math.abs(oth),oth>=0?"Sonstiges":"Sonstige Erträge","#a78bfa");nd("ni",3,Math.max(ni||0,0),"Nettogewinn","#15803d");}
+    const nm=Object.fromEntries(nodes.map(n=>[n.id,n]));
+    const lk=(a,b,v)=>{if(nm[a]&&nm[b]&&v>0)L.push({a,b,v,c:nm[b].c})};
+    lk("rev","cog",cog);lk("rev","gp",Math.max(gp,0));lk("gp","opex",opex);lk("gp","op",op>0?op:0);
+    if(nm.op){lk("op","tax",tax);lk("op","int",nm.int?.v||0);lk("op","oth",nm.oth?.v||0);lk("op","ni",Math.max(ni||0,0))}
+    const sc=(Ht-top*2-70)/R;let svg=`<svg viewBox="0 0 ${W} ${Ht}" role="img" aria-label="Gewinnfluss ${sy}">`;
+    for(let c=0;c<4;c++){let yy=top;nodes.filter(n=>n.col===c).forEach(n=>{n.h=Math.max(n.v*sc,2);n.y=yy;n.o=0;n.i=0;yy+=c===3?Math.max(n.h+gap,36):c===0?n.h+gap:n.h+30})}
+    L.forEach(l=>{const a=nm[l.a],b=nm[l.b],hh=l.v*sc,x0=xs[a.col]+nw,x1=xs[b.col],y0=a.y+a.o,y1=b.y+b.i;a.o+=hh;b.i+=hh;const m=(x0+x1)/2;
+      svg+=`<path d="M${x0},${y0} C${m},${y0} ${m},${y1} ${x1},${y1} L${x1},${y1+hh} C${m},${y1+hh} ${m},${y0+hh} ${x0},${y0+hh}Z" fill="${l.c}" opacity=".28"><title>${esc(a.lab)} → ${esc(b.lab)}: ${big(l.v)}</title></path>`});
+    nodes.forEach(n=>{const x0=xs[n.col],right=n.col===3,tx=right?x0+nw+8:(n.col===0?x0+nw+8:x0+nw+8);
+      svg+=`<rect x="${x0}" y="${n.y}" width="${nw}" height="${n.h}" rx="3" fill="${n.c}"/>`;
+      if(nar)return;
+      if(n.col===0)svg+=`<text x="${x0+nw+8}" y="${n.y+16}" font-size="13" font-weight="700" fill="#14202b">${esc(n.lab)}</text><text x="${x0+nw+8}" y="${n.y+32}" font-size="12" fill="#5d6b78">${big(n.v)}</text>`;
+      else if(right)svg+=`<text x="${tx}" y="${n.y+Math.min(n.h,40)/2}" font-size="12.5" font-weight="600" fill="#14202b">${esc(n.lab)}</text><text x="${tx}" y="${n.y+Math.min(n.h,40)/2+15}" font-size="12" fill="#5d6b78">${big(n.v)} · ${num(n.v/R*100,1)} %</text>`;
+      else svg+=`<text x="${x0+nw+6}" y="${n.y-3}" font-size="12" font-weight="600" fill="#14202b">${esc(n.lab)}</text><text x="${x0+nw+6}" y="${n.y+n.h+12}" font-size="11.5" fill="#5d6b78">${big(n.v)} · ${num(n.v/R*100,1)} %</text>`});
+    el.innerHTML=svg+"</svg>"+(nar?'<ul class="fleg">'+nodes.map(n=>`<li><i style="background:${n.c}"></i>${esc(n.lab)}<span>${big(n.v)} · ${num(n.v/R*100,1)} %</span></li>`).join("")+'</ul>':"")+(op!=null&&op<=0?'<p class="fnote">In diesem Jahr war das operative Ergebnis nicht positiv, deshalb endet der Fluss beim Bruttogewinn.</p>':"");
   }
   /* Cashflow-Verwendung */
   function cashflow(){
     $("fst").textContent="Wohin fließt der Cashflow?";
-    $("fsn").textContent="Operativer Cashflow und seine Verwendung: Investitionen, Dividenden, Aktienrückkäufe, Schuldentilgung und Zukäufe (netto gerechnet).";
-    const el=$("fsk"),c=C[sy]||{},ocf=first(c,"operatingCashFlow","netCashProvidedByOperatingActivities");el.classList.add("fit");
+    $("fsn").textContent="Operativer Cashflow und seine Verwendung: Investitionen, Dividenden, Aktienrückkäufe, Schuldentilgung und Zukäufe. Netto gerechnet, die Breite der Bänder ist proportional zum Betrag.";
+    const el=$("fsk"),c=C[sy]||{},ocf=first(c,"operatingCashFlow","netCashProvidedByOperatingActivities");
     if(!(ocf>0)){el.innerHTML='<p class="fnote">Für dieses Jahr liegt kein positiver operativer Cashflow vor.</p>';return}
-    const n0=v=>v==null||isNaN(v)?0:+v,ndi=first(c,"netDebtIssuance")??first(c,"debtRepayment"),acq=first(c,"acquisitionsNet");
+    const ndi=first(c,"netDebtIssuance")??first(c,"debtRepayment"),acq=first(c,"acquisitionsNet");
+    const n0=v=>v==null||isNaN(v)?0:+v;
     const newDebt=n0(first(c,"netDebtIssuance"))>0?n0(first(c,"netDebtIssuance")):0;
     const repay=ndi==null?0:(first(c,"netDebtIssuance")!=null?Math.max(-n0(ndi),0):Math.abs(n0(ndi)));
-    const K="var(--c-kosten)",U=[["Investitionen",Math.abs(n0(c.capitalExpenditure)),K],["Dividenden",Math.abs(n0(first(c,"commonDividendsPaid","netDividendsPaid","dividendsPaid"))),"var(--c-gold)"],["Aktienrückkäufe",Math.abs(n0(first(c,"commonStockRepurchased"))),K],["Schuldentilgung",repay,K],["Zukäufe",Math.max(-n0(acq),0),K]].filter(u=>u[1]>0);
-    const rows=[{l:"Operativer Cashflow",s:0,e:ocf,c:"var(--c-cash)",t:1,val:ocf}];let run=ocf;
-    if(newDebt>0){rows.push({l:"Neue Schulden",s:run,e:run+newDebt,c:"var(--c-cash)",val:newDebt});run+=newDebt}
-    const sumU=U.reduce((a,u)=>a+u[1],0);if(sumU>run){const gap=sumU-run;rows.push({l:"Aus Kasse u. a.",s:run,e:run+gap,c:"var(--c-cash)",val:gap});run+=gap}
-    U.forEach(u=>{rows.push({l:u[0],s:run,e:run-u[1],c:u[2],val:u[1]});run-=u[1]});
-    if(run>ocf*0.005)rows.push({l:"Bleibt übrig",s:0,e:run,c:"var(--c-gewinn)",t:1,val:run});
-    el.innerHTML=wf(rows);
+    const U=[["capex","Investitionen (Capex)",Math.abs(n0(c.capitalExpenditure)),"#0ea5e9"],["div","Dividenden",Math.abs(n0(first(c,"commonDividendsPaid","netDividendsPaid","dividendsPaid"))),"#16a34a"],["buy","Aktienrückkäufe",Math.abs(n0(first(c,"commonStockRepurchased"))),"#f59e0b"],["rep","Schuldenabbau (netto)",repay,"#a78bfa"],["acq","Zukäufe",Math.max(-n0(acq),0),"#ec4899"]].filter(u=>u[2]>0);
+    const L=[["ocf","Operativer Cashflow",ocf,"#2563eb"]];if(newDebt>0)L.push(["nd","Neue Schulden (netto)",newDebt,"#8b5cf6"]);
+    const sumU=U.reduce((a,u)=>a+u[2],0),sumL=L.reduce((a,u)=>a+u[2],0),diff=sumL-sumU;
+    if(diff>0)U.push(["rest","Bleibt übrig (Kasse u. a.)",diff,"#94a3b8"]);else if(diff<0)L.push(["gap","Aus Kasse und Sonstigem",-diff,"#94a3b8"]);
+    const nar=el.clientWidth>0&&el.clientWidth<560;el.classList.toggle("fit",nar);const T2=Math.max(sumL,sumU),W=nar?Math.max(300,el.clientWidth):760,Ht=nar?300:330,top=14,gap=12,nw=14,xr=nar?W-nw:W-210-nw;
+    const sc=(Ht-top*2-gap*Math.max(L.length,U.length))/T2;let svg=`<svg viewBox="0 0 ${W} ${Ht}" role="img" aria-label="Verwendung des Cashflows ${sy}">`;
+    let yy=top;L.forEach(n=>{n.h=Math.max(n[2]*sc,2);n.y=yy;n.o=0;yy+=n.h+gap});yy=top;U.forEach(n=>{n.h=Math.max(n[2]*sc,2);n.y=yy;n.i=0;yy+=n.h+gap});
+    const tot=U.reduce((a,u)=>a+u[2],0);
+    L.forEach(l=>U.forEach(u=>{const v=l[2]*u[2]/tot,hh=v*sc,x0=nw,x1=xr,y0=l.y+l.o,y1=u.y+u.i;l.o+=hh;u.i+=hh;const m=(x0+x1)/2;
+      svg+=`<path d="M${x0},${y0} C${m},${y0} ${m},${y1} ${x1},${y1} L${x1},${y1+hh} C${m},${y1+hh} ${m},${y0+hh} ${x0},${y0+hh}Z" fill="${u[3]}" opacity=".28"><title>${esc(l[1])} → ${esc(u[1])}: ${big(v)}</title></path>`}));
+    L.forEach(n=>{if(nar){svg+=`<rect x="0" y="${n.y}" width="${nw}" height="${n.h}" rx="3" fill="${n[3]}"/>`;return}svg+=`<rect x="0" y="${n.y}" width="${nw}" height="${n.h}" rx="3" fill="${n[3]}"/><text x="${nw+8}" y="${n.y+16}" font-size="13" font-weight="700" fill="#14202b">${esc(n[1])}</text><text x="${nw+8}" y="${n.y+32}" font-size="12" fill="#5d6b78">${big(n[2])}</text>`});
+    U.forEach(n=>{if(nar){svg+=`<rect x="${xr}" y="${n.y}" width="${nw}" height="${n.h}" rx="3" fill="${n[3]}"/>`;return}const ty=n.y+Math.min(n.h,40)/2;svg+=`<rect x="${xr}" y="${n.y}" width="${nw}" height="${n.h}" rx="3" fill="${n[3]}"/><text x="${xr+nw+8}" y="${ty}" font-size="12.5" font-weight="600" fill="#14202b">${esc(n[1])}</text><text x="${xr+nw+8}" y="${ty+15}" font-size="12" fill="#5d6b78">${big(n[2])} · ${num(n[2]/ocf*100,0)} % des Cashflows</text>`});
+    el.innerHTML=svg+"</svg>"+(nar?'<ul class="fleg">'+L.concat(U).map(n=>`<li><i style="background:${n[3]}"></i>${esc(n[1])}<span>${big(n[2])} · ${num(n[2]/ocf*100,0)} %</span></li>`).join("")+"</ul>":"");
   }
   /* Uebereinander */
   function multi(){
