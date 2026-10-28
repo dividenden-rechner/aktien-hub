@@ -10,7 +10,7 @@ image_alt: "Foto zu Federal Reserve: The Eccles Building of the Federal Reserve 
 image_credit: "Foto: Federalreserve / Wikimedia Commons, Public domain"
 image_source: https://commons.wikimedia.org/wiki/File:Eccles_Building_(26088200676).jpg
 logo_name: "Federal Reserve"
-
+logo_file: assets/logos/federal-reserve.mono.png
 ---
 <!-- PRÜFEN: Aufmacherfoto ist automatisch von Wikimedia Commons gewaehlt: bitte pruefen, ob es zum Artikel passt (sonst image-Zeilen entfernen, dann entsteht ein Titelbild automatisch). -->
 
