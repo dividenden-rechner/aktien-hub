@@ -9,11 +9,10 @@ Datei anklicken, dann Stift-Symbol: Zeile `draft: true` löschen und speichern, 
 
 _Keine Entwürfe._
 
-### Online (14)
+### Online (13)
 
 | Datum | Titel | Datei |
 |---|---|---|
-| 28.10.2026 23:16 | Airbus und Boeing im Q3-Vergleich: Luftfahrt unter Druck | [2026-10-28-2316-airbus-boeing-q3-2026-vergleich.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/2026-10-28-2316-airbus-boeing-q3-2026-vergleich.md) |
 | 28.10.2026 19:15 | Fed belässt Leitzins im Oktober 2026 bei 3,75 bis 4 Prozent | [2026-10-28-1914-fed-zinsentscheid-oktober-2026.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/2026-10-28-1914-fed-zinsentscheid-oktober-2026.md) |
 | 28.10.2026 15:47 | Unilever steigert Umsatz auf 13,3 Milliarden Euro und hebt Ausblick an | [unilever-q3-2026-trading-statement.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/unilever-q3-2026-trading-statement.md) |
 | 28.10.2026 15:33 | GE Vernova steigert Quartalsumsatz auf 12,6 Milliarden US-Dollar | [ge-vernova-q3-2026-ergebnisse.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/ge-vernova-q3-2026-ergebnisse.md) |
