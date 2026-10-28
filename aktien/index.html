@@ -180,7 +180,8 @@ svg text{fill:var(--mut);font-size:11px;font-family:inherit}
   <div id="sug" hidden></div>
 </div>
 <div id="msg" role="status"></div>
-<p><button class="sbtn" style="background:#f0f8f3;margin-top:0" onclick="askKey()">🔑 Eigenen API-Key nutzen (optional)</button></p>
+<p id="keyp" hidden><button class="sbtn" style="background:#f0f8f3;margin-top:0" onclick="askKey()">🔑 Eigenen API-Key nutzen</button></p>
+<script>if(/key/.test(location.hash))document.getElementById("keyp").hidden=false</script>
 <section id="start">
   <div class="wlhead"><h2>Watchlist</h2></div>
   <div class="tiles" id="tiles"></div>

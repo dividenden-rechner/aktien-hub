@@ -205,7 +205,8 @@ article.wide>:not(.tool):not(.cards){max-width:760px}
 <section class="tool" aria-labelledby="sc-h">
 <h2 id="sc-h">Kriterien wählen</h2>
 
-<div class="keybar"><span id="keystate"></span><button type="button" class="ghost" id="keybtn">Eigenen API-Key nutzen (optional)</button></div>
+<div class="keybar" id="keybar" hidden><span id="keystate"></span><button type="button" class="ghost" id="keybtn">Eigenen API-Key nutzen</button></div>
+<script>if(/key/.test(location.hash))document.getElementById("keybar").hidden=false</script>
 <div class="mode" role="group" aria-label="Datenquelle wählen">
 <button type="button" id="m-markt" aria-pressed="true">Gesamter Markt</button>
 <button type="button" id="m-liste" aria-pressed="false">Eigene Liste (auch Gratis-Tarif)</button>
