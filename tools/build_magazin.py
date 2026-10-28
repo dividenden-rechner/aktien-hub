@@ -153,7 +153,7 @@ def logo_html(p):
     """Titel mit Firmenlogo (FMP-Symbolbild, Rueckfall Favicon der Firmenwebsite, sonst ohne Logo)."""
     lf = p.get("logo_file", "")
     if lf and os.path.exists(lf):
-        return (f'<div class="titlerow"><img class="hlogo" src="../../{esc(lf)}" alt="" width="56" height="56">'
+        return (f'<div class="titlerow"><img class="hlogo{" dark" if logo_is_light(lf) else ""}" src="../../{esc(lf)}" alt="" width="56" height="56">'
                 f'<h1>{esc(p["title"])}</h1></div>\n')
     sym = re.sub(r"[^A-Za-z0-9.\-]", "", p.get("logo_symbol", "")); dom = re.sub(r"[^a-z0-9.\-]", "", p.get("logo_domain", "").lower())
     fav = (f"https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https://{dom}&size=128") if dom else ""
@@ -228,11 +228,23 @@ def build_post(p, posts):
     p["img"] = img; p["html"] = body; p["mins"] = mins
     return p
 
+def logo_is_light(path):
+    """True, wenn das Logo fast nur aus hellen Pixeln besteht (z. B. weisses Logo): dann dunkle Plakette."""
+    try:
+        from PIL import Image
+        im = Image.open(path).convert("RGBA").resize((48, 48))
+        px = [p for p in im.getdata() if p[3] > 128]
+        if not px: return False
+        lum = sum(0.299 * r + 0.587 * g + 0.114 * b for r, g, b, a in px) / len(px)
+        return lum > 215
+    except Exception:
+        return False
+
 def card_logo(x, pre):
     """Logo-Plakette links oben im Titelbild der Magazinkarten (immer vorhanden: Datei, sonst Buchstabe)."""
     lf = x.get("logo_file", "")
     if lf and os.path.exists(lf):
-        return f'<span class="mclogo"><img src="{pre}{esc(lf)}" alt="" width="40" height="40" loading="lazy"></span>'
+        return f'<span class="mclogo{" dark" if logo_is_light(lf) else ""}"><img src="{pre}{esc(lf)}" alt="" width="40" height="40" loading="lazy"></span>'
     name = re.sub(r"[^A-Za-z0-9]", "", x.get("title", "?")) or "?"
     return f'<span class="mclogo mcmono">{esc(name[0].upper())}</span>'
 
