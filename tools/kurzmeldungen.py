@@ -29,6 +29,8 @@ STATE = os.path.join(ROOT, "data", "kurz-state.json")
 NEWS = os.path.join(ROOT, "data", "news.json")
 OUT_DIR = os.path.join(ROOT, "content", "magazin")
 CONSTITUENTS = "https://raw.githubusercontent.com/datasets/s-and-p-500-companies/main/data/constituents.csv"
+WATCHLIST = os.path.join(ROOT, "data", "ir-watchlist.json")
+MAX_LONG = 4          # hoechstens so viele lange Artikel (IR-Agent) pro Lauf
 CATEGORIES = ["Dividende", "Quartalszahlen", "Ausblick", "Aktienrückkauf", "Übernahme", "Management", "Geschäft", "Recht & Regulierung", "Sonstige Meldung"]
 SKIP_ITEMS = {"5.07", "5.03", "9.01", "3.03", "2.04", "5.08"}   # Abstimmungsergebnisse, Satzung, nur Anlagen usw.
 MAX_AGE_H = 40
@@ -242,6 +244,28 @@ def write_post(c, out, url, bad):
     return path
 
 
+def long_article(c, state):
+    """Bei Quartalszahlen einer Firma aus der Beobachtungsliste: IR-Agent starten (langer Artikel als Entwurf)."""
+    import subprocess
+    done = state["done"]; fails = state.setdefault("fails", {})
+    key = "ir:" + c["acc"]
+    if key in done or fails.get(key, 0) >= 3:
+        return False
+    cmd = [sys.executable, os.path.join(ROOT, "tools", "ir_agent.py"), "--ticker", c["sym"], "--art", "ergebnisse"]
+    log(f"  IR-Agent startet fuer {c['sym']} (Entwurf)")
+    try:
+        r = subprocess.run(cmd, capture_output=True, text=True, timeout=900, cwd=ROOT)
+    except Exception as e:
+        fails[key] = fails.get(key, 0) + 1; log("  IR-Agent Fehler:", str(e)[:100]); return False
+    tail = (r.stdout + r.stderr).strip().splitlines()[-3:]
+    if r.returncode == 0:
+        done[key] = datetime.now(timezone.utc).strftime("%Y-%m-%d"); log("  IR-Agent fertig:", " | ".join(tail)[:200]); return True
+    msg = " ".join(tail)
+    if "gibt es schon" in msg or "Es gibt schon einen Artikel" in msg:
+        done[key] = datetime.now(timezone.utc).strftime("%Y-%m-%d"); log("  Artikel gibt es schon"); return False
+    fails[key] = fails.get(key, 0) + 1; log("  IR-Agent gescheitert:", msg[:200]); return False
+
+
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--update-universe", action="store_true")
@@ -262,7 +286,8 @@ def main():
         firmen = uni["firmen"]
         cands = edgar_candidates(firmen, done) + feed_candidates({f["sym"] for f in firmen}, done)
     log(f"{len(cands)} neue Kandidaten")
-    made = 0
+    made = 0; longs = 0
+    watch = set(load_json(WATCHLIST, {}).get("tickers", []))
     now_iso = datetime.now(timezone.utc).strftime("%Y-%m-%d")
     for c in cands:
         if made >= a.max:
@@ -286,6 +311,9 @@ def main():
         except Exception as e:
             log(f"  Fehler: {str(e)[:120]}"); continue
         done[c["key"]] = now_iso
+        if (c.get("src") == "sec" and "2.02" in c.get("items", []) and c["sym"] in watch and longs < MAX_LONG and not a.dry
+                and not os.environ.get("KURZ_MOCK")):
+            if long_article(c, state): longs += 1
         if not out or not out.get("relevant"):
             log("  nicht relevant:", (out or {}).get("reason", "")[:100]); continue
         if not (out.get("title") and out.get("body_markdown") and out.get("description")):
@@ -300,7 +328,7 @@ def main():
     state["done"] = {k: v for k, v in done.items() if v >= cut}
     if not a.dry:
         json.dump(state, open(STATE, "w", encoding="utf-8"), indent=0)
-    log(f"{made} Kurzmeldungen erstellt")
+    log(f"{made} Kurzmeldungen, {longs} lange Entwuerfe erstellt")
 
 
 if __name__ == "__main__":
