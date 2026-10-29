@@ -39,6 +39,8 @@ def main():
         uns = ia.unsplash_candidates(terms)
         cands = cands + uns
         print(f"Foto-Kandidaten: {len(cands)} (Commons {len(cands) - len(uns)}, Unsplash {len(uns)})")
+        for i, c in enumerate(cands[:30]):
+            print(f"  {i}: {c['title']} | {c['desc'][:80]}")
         if cands:
             listing = "\n".join(f"{i}: {c['title']} | {c['desc']} | {c['date']}" for i, c in enumerate(cands))
             prompt = (f"Waehle ein Titelfoto fuer einen Boersenartikel ueber {name}" + (f" ({a.fokus})" if a.fokus else "") + ". "
@@ -46,6 +48,7 @@ def main():
                       "Schlecht: Firmenzentrale aus der Ferne, Logos, Karten, Werbung, Portraets, unscharfe oder dunkle Bilder, historische Motive. "
                       "Wenn nichts wirklich passt, antworte -1.\n\n" + listing)
             idx = ia._generate([{"text": prompt}], {"type": "OBJECT", "required": ["index"], "properties": {"index": {"type": "INTEGER"}}}, ia.api_key())["index"]
+            print("Auswahl durch das Modell:", idx)
             if isinstance(idx, int) and 0 <= idx < len(cands):
                 ph = cands[idx]
                 slug = a.slug

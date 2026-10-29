@@ -26,7 +26,7 @@ jobs:
           SEC_USER_AGENT: ${{ vars.SEC_USER_AGENT }}
         run: |
           # Eine Zeile pro Artikel:  kennung | Suchbegriffe (Komma) | Logo-Kuerzel | Logo-Domain | Bildthema
-          while IFS='|' read -r slug terms sym dom fokus; do
+          { while IFS='|' read -r slug terms sym dom fokus; do
             slug=$(echo "$slug" | xargs); [ -z "$slug" ] && continue
             case "$slug" in \#*) continue;; esac
             args=("$slug")
@@ -35,7 +35,7 @@ jobs:
             [ -n "$(echo "$dom" | xargs)" ] && args+=(--domain "$(echo "$dom" | xargs)")
             [ -n "$(echo "$fokus" | xargs)" ] && args+=(--fokus "$(echo "$fokus" | xargs)")
             python3 tools/refresh_assets.py "${args[@]}" || echo "::warning::Fehler bei $slug"
-          done < tools/asset.request
+          done < tools/asset.request; } 2>&1 | tee tools/asset.log
       - name: Logos holen und Seite bauen
         run: |
           python3 tools/fetch_logos.py
