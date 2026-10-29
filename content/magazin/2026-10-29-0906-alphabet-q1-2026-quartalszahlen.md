@@ -11,7 +11,7 @@ image_credit: "Foto: Austin McKinley / Wikimedia Commons, CC BY 3.0"
 image_source: https://commons.wikimedia.org/wiki/File:Google_Campus,_Mountain_View,_CA.jpg
 logo_name: "Alphabet"
 logo_symbol: ABEC.F
-draft: true
+
 logo_file: assets/logos/abec-f.png
 ---
 <!-- PRÜFEN: Aufmacherfoto ist automatisch von Wikimedia Commons gewaehlt: bitte pruefen, ob es zum Artikel passt (sonst image-Zeilen entfernen, dann entsteht ein Titelbild automatisch). -->
