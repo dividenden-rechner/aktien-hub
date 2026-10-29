@@ -1,0 +1,45 @@
+name: Freigabe-Dienst bereitstellen
+on:
+  push:
+    branches: [main]
+    paths:
+      - "worker/freigabe/**"
+  workflow_dispatch:
+permissions:
+  contents: read
+concurrency:
+  group: freigabe-worker
+  cancel-in-progress: false
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    env:
+      CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+      CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+      - name: Zugangsdaten pruefen
+        env:
+          APPROVE_SECRET: ${{ secrets.APPROVE_SECRET }}
+          GH_APPROVE_TOKEN: ${{ secrets.GH_APPROVE_TOKEN }}
+        run: |
+          for v in CLOUDFLARE_API_TOKEN CLOUDFLARE_ACCOUNT_ID APPROVE_SECRET GH_APPROVE_TOKEN; do
+            if [ -z "${!v}" ]; then echo "::error::Es fehlt das Secret $v (Settings > Secrets and variables > Actions)."; exit 1; fi
+          done
+      - name: Worker hochladen
+        run: npx --yes wrangler@3 deploy --config worker/freigabe/wrangler.toml 2>&1 | tee /tmp/deploy.log
+      - name: Secrets im Worker ablegen
+        env:
+          APPROVE_SECRET: ${{ secrets.APPROVE_SECRET }}
+          GH_APPROVE_TOKEN: ${{ secrets.GH_APPROVE_TOKEN }}
+        run: |
+          printf '%s' "$APPROVE_SECRET" | npx --yes wrangler@3 secret put APPROVE_SECRET --config worker/freigabe/wrangler.toml
+          printf '%s' "$GH_APPROVE_TOKEN" | npx --yes wrangler@3 secret put GH_TOKEN --config worker/freigabe/wrangler.toml
+      - name: Adresse des Dienstes anzeigen
+        run: |
+          url=$(grep -o 'https://[^ ]*workers.dev' /tmp/deploy.log | head -1)
+          echo "::notice title=Freigabe-Dienst::Adresse: $url  (als Variable FREIGABE_URL in GitHub eintragen)"
+          echo "Adresse des Freigabe-Dienstes: $url" >> "$GITHUB_STEP_SUMMARY"

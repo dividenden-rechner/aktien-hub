@@ -83,7 +83,11 @@ jobs:
               *) python3 tools/ir_agent.py "$f" || echo "::warning::Fehler bei $f, weiter mit dem naechsten" ;;
             esac
           done < /tmp/todo.txt
-      - name: Committen
+      - name: Committen und Push-Meldung senden
+        env:
+          NTFY_TOPIC: ${{ secrets.NTFY_TOPIC }}
+          APPROVE_SECRET: ${{ secrets.APPROVE_SECRET }}
+          FREIGABE_URL: ${{ vars.FREIGABE_URL }}
         run: |
           rm -f content/ir-inbox/download.pdf content/ir-inbox/download_*.pdf
           git config user.name "ir-bot"
@@ -93,3 +97,4 @@ jobs:
           git commit -m "IR-Agent: Entwurf erzeugt"
           git pull --rebase -q
           git push
+          python3 tools/notify_drafts.py --rev HEAD~1 || true

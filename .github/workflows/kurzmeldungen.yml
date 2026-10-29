@@ -42,7 +42,11 @@ jobs:
         run: |
           python3 tools/fetch_logos.py
           python3 tools/build_magazin.py
-      - name: Änderungen committen
+      - name: Änderungen committen und Push-Meldung senden
+        env:
+          NTFY_TOPIC: ${{ secrets.NTFY_TOPIC }}
+          APPROVE_SECRET: ${{ secrets.APPROVE_SECRET }}
+          FREIGABE_URL: ${{ vars.FREIGABE_URL }}
         run: |
           git config user.name "kurz-bot"
           git config user.email "actions@users.noreply.github.com"
@@ -51,3 +55,4 @@ jobs:
           git commit -m "Kurzmeldungen erzeugt"
           git pull --rebase -q || { git checkout --theirs . 2>/dev/null; git add -A; GIT_EDITOR=true git rebase --continue; }
           git push
+          python3 tools/notify_drafts.py --rev HEAD~1 || true
