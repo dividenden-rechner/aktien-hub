@@ -1,0 +1,19 @@
+{
+  "_hinweis": "Voreingestellte Peer-Gruppen fuer aktien/vergleich/. Jede Gruppe: name, Mitglieder als [Ticker, Anzeigename]. Die erste Gruppe, in der ein Ticker steht, ist sein Standard-Peer-Set. Tickers im FMP-Format (US-Boersenkuerzel).",
+  "gruppen": [
+    {"id": "luftfahrt", "name": "Luftfahrt & Rüstung", "members": [["BA","Boeing"],["EADSY","Airbus"],["LMT","Lockheed Martin"],["RTX","RTX"],["GD","General Dynamics"],["NOC","Northrop Grumman"],["GE","GE Aerospace"]]},
+    {"id": "getraenke", "name": "Getränke & Basiskonsum", "members": [["KO","Coca-Cola"],["PEP","PepsiCo"],["KDP","Keurig Dr Pepper"],["MDLZ","Mondelez"],["PG","Procter & Gamble"],["CL","Colgate-Palmolive"],["KMB","Kimberly-Clark"],["GIS","General Mills"]]},
+    {"id": "tabak", "name": "Tabak & Konsum", "members": [["PM","Philip Morris"],["MO","Altria"],["BTI","British American Tobacco"],["UL","Unilever"]]},
+    {"id": "pharma", "name": "Pharma & Gesundheit", "members": [["JNJ","Johnson & Johnson"],["PFE","Pfizer"],["MRK","Merck & Co."],["ABBV","AbbVie"],["LLY","Eli Lilly"],["NVS","Novartis"],["AZN","AstraZeneca"],["BMY","Bristol Myers Squibb"],["NVO","Novo Nordisk"]]},
+    {"id": "banken", "name": "Banken", "members": [["JPM","JPMorgan Chase"],["BAC","Bank of America"],["C","Citigroup"],["WFC","Wells Fargo"],["GS","Goldman Sachs"],["MS","Morgan Stanley"],["USB","U.S. Bancorp"],["HSBC","HSBC"]]},
+    {"id": "versicherer", "name": "Versicherer & Makler", "members": [["BRO","Brown & Brown"],["MMC","Marsh McLennan"],["AON","Aon"],["CB","Chubb"],["TRV","Travelers"],["ALL","Allstate"],["MET","MetLife"]]},
+    {"id": "tech", "name": "Technologie", "members": [["MSFT","Microsoft"],["AAPL","Apple"],["GOOGL","Alphabet"],["AMZN","Amazon"],["META","Meta Platforms"],["NVDA","Nvidia"],["ORCL","Oracle"],["CSCO","Cisco"]]},
+    {"id": "telekom", "name": "Telekommunikation", "members": [["VZ","Verizon"],["T","AT&T"],["TMUS","T-Mobile US"]]},
+    {"id": "versorger", "name": "Versorger", "members": [["NEE","NextEra Energy"],["DUK","Duke Energy"],["SO","Southern Company"],["D","Dominion Energy"],["AEP","American Electric Power"],["XEL","Xcel Energy"]]},
+    {"id": "energie", "name": "Öl & Gas", "members": [["XOM","ExxonMobil"],["CVX","Chevron"],["COP","ConocoPhillips"],["SHEL","Shell"],["BP","BP"],["TTE","TotalEnergies"]]},
+    {"id": "reits", "name": "Immobilien (REITs)", "members": [["O","Realty Income"],["PLD","Prologis"],["SPG","Simon Property"],["VICI","VICI Properties"],["WPC","W. P. Carey"],["AMT","American Tower"],["PSA","Public Storage"]]},
+    {"id": "restaurants", "name": "Restaurants", "members": [["MCD","McDonald's"],["SBUX","Starbucks"],["YUM","Yum! Brands"],["CMG","Chipotle"]]},
+    {"id": "industrie", "name": "Industrie & Logistik", "members": [["CAT","Caterpillar"],["DE","Deere"],["HON","Honeywell"],["MMM","3M"],["UPS","UPS"],["FDX","FedEx"],["EMR","Emerson Electric"]]},
+    {"id": "auto", "name": "Automobil", "members": [["TSLA","Tesla"],["F","Ford"],["GM","General Motors"],["TM","Toyota"],["STLA","Stellantis"]]}
+  ]
+}
