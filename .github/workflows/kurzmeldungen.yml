@@ -10,6 +10,7 @@ on:
         default: "30"
 permissions:
   contents: write
+  pull-requests: write
 concurrency:
   group: magazin
   cancel-in-progress: false
@@ -38,15 +39,15 @@ jobs:
           UNSPLASH_ACCESS_KEY: ${{ secrets.UNSPLASH_ACCESS_KEY }}
         timeout-minutes: 60
         run: python3 tools/kurzmeldungen.py --max "${{ github.event.inputs.max || '30' }}"
+      - name: Entwürfe als Pull Requests zur Freigabe anlegen
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: python3 tools/draft_prs.py
       - name: Logos holen und Seite bauen
         run: |
           python3 tools/fetch_logos.py
           python3 tools/build_magazin.py
-      - name: Änderungen committen und Push-Meldung senden
-        env:
-          NTFY_TOPIC: ${{ secrets.NTFY_TOPIC }}
-          APPROVE_SECRET: ${{ secrets.APPROVE_SECRET }}
-          FREIGABE_URL: ${{ vars.FREIGABE_URL }}
+      - name: Änderungen committen
         run: |
           git config user.name "kurz-bot"
           git config user.email "actions@users.noreply.github.com"
@@ -55,4 +56,3 @@ jobs:
           git commit -m "Kurzmeldungen erzeugt"
           git pull --rebase -q || { git checkout --theirs . 2>/dev/null; git add -A; GIT_EDITOR=true git rebase --continue; }
           git push
-          python3 tools/notify_drafts.py --rev HEAD~1 || true
