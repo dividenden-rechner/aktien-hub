@@ -1,0 +1,49 @@
+name: Kurzmeldungen (Pressemitteilungen zu News)
+on:
+  schedule:
+    - cron: "41 */2 * * *"
+  workflow_dispatch:
+    inputs:
+      max:
+        description: "Höchstzahl neuer Kurzmeldungen in diesem Lauf"
+        required: false
+        default: "30"
+permissions:
+  contents: write
+concurrency:
+  group: magazin
+  cancel-in-progress: false
+jobs:
+  kurz:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install markdown pillow
+      - name: Unternehmensliste (S&P 500) erneuern
+        env:
+          SEC_USER_AGENT: ${{ vars.SEC_USER_AGENT }}
+        run: |
+          if [ ! -f data/universe.json ] || [ -n "$(find data/universe.json -mtime +7)" ]; then
+            python3 tools/kurzmeldungen.py --update-universe || echo "::warning::Liste nicht erneuert"
+          fi
+      - name: Kurzmeldungen erzeugen
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          SEC_USER_AGENT: ${{ vars.SEC_USER_AGENT }}
+        run: python3 tools/kurzmeldungen.py --max "${{ github.event.inputs.max || '30' }}"
+      - name: Logos holen und Seite bauen
+        run: |
+          python3 tools/fetch_logos.py
+          python3 tools/build_magazin.py
+      - name: Änderungen committen
+        run: |
+          git config user.name "kurz-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add -A
+          if git diff --cached --quiet; then echo "Keine Änderungen"; exit 0; fi
+          git commit -m "Kurzmeldungen erzeugt"
+          git pull --rebase -q || { git checkout --theirs . 2>/dev/null; git add -A; GIT_EDITOR=true git rebase --continue; }
+          git push

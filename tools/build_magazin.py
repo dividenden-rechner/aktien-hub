@@ -21,6 +21,8 @@ NAV = [("rechner", "", "Rechner"), ("aktien", "aktien/", "Aktien"), ("depot", "d
        ("einfuehrung", "einfuehrung/", "Einführung"), ("grundlagen", "grundlagen/", "Grundlagen"),
        ("fortgeschrittene", "fortgeschrittene/", "Fortgeschrittene")]
 MONTHS = ["Januar", "Februar", "März", "April", "Mai", "Juni", "Juli", "August", "September", "Oktober", "November", "Dezember"]
+KURZ_HINWEIS = ('Diese Kurzmeldung wurde automatisch aus der Pressemitteilung des Unternehmens erstellt und nicht vorab redaktionell geprüft. '
+               'Maßgeblich ist die verlinkte Originalmeldung.')
 HINT = ('<p class="note"><strong>Hinweis:</strong> Dieser Text dient der allgemeinen Information und ist weder Anlage-, '
         'Steuer- noch Rechtsberatung. Kapitalanlagen sind mit Risiken verbunden, bis hin zum Totalverlust.</p>')
 
@@ -255,11 +257,16 @@ def build_post(p, posts):
     else:
         cred = esc(cred)
     cap = f'<figcaption>{cred}</figcaption>' if cred else ""
-    o += f'<figure class="cover"><img src="{pre}{img}" alt="{esc(alt)}" width="1200" height="675" fetchpriority="high">{cap}</figure>\n'
-    o += body + "\n" + glossar.box(hits, pre)
+    kurz = p.get("typ") == "kurz"
+    if not kurz:
+        o += f'<figure class="cover"><img src="{pre}{img}" alt="{esc(alt)}" width="1200" height="675" fetchpriority="high">{cap}</figure>\n'
+    o += body + "\n"
+    if kurz and p.get("quelle_url", "").startswith("http"):
+        o += (f'<p class="kurzquelle">Quelle: <a href="{esc(p["quelle_url"])}" rel="noopener nofollow" target="_blank">{esc(p.get("quelle_name") or "Originalmeldung des Unternehmens")}</a></p>\n')
+    o += glossar.box(hits, pre)
     bio = p.get("author_bio") or 'Das Redaktions-Team von Dividenden-Rechner.de schreibt über Dividendenaktien, Kennzahlen und Steuerthemen für Privatanleger. Die Rechner und Auswertungen auf der Seite entstehen im eigenen Haus.'
-    o += f'<aside class="authorbox"><strong>{esc(author)}</strong><p>{esc(bio)}</p><p>Artikel können mit Unterstützung von KI entstehen. Jeder Beitrag wird manuell geprüft und geht erst danach online. <a href="{pre}ueber-uns/">Mehr über uns</a></p></aside>\n'
-    others = [x for x in posts if x["slug"] != slug][:3]
+    o += f'<aside class="authorbox"><strong>{esc(author)}</strong><p>{esc(bio)}</p><p>{KURZ_HINWEIS if kurz else "Artikel können mit Unterstützung von KI entstehen. Jeder Beitrag wird manuell geprüft und geht erst danach online."} <a href="{pre}ueber-uns/">Mehr über uns</a></p></aside>\n'
+    others = [x for x in posts if x["slug"] != slug and x.get("typ") != "kurz"][:3]
     if others:
         o += '<aside class="related"><h2>Weitere Artikel</h2><ul>\n' + "\n".join(f'<li><a href="{pre}magazin/{x["slug"]}/">{esc(x["title"])}</a></li>' for x in others) + "\n</ul></aside>\n"
     o += (f'<aside class="note" style="background:#f0fdf4;border-left-color:#10b981"><strong>Passende Werkzeuge:</strong> Prüfe Aktien im <a href="{pre}aktien/">Aktien-Hub</a>, '
@@ -318,11 +325,13 @@ def build_index(posts):
     o += f'<script src="{pre}assets/navigation.js"></script>\n<script src="{pre}assets/logos.js"></script>\n<main class="wrap">\n'
     o += f'<nav class="crumbs" aria-label="Brotkrumen"><a href="{pre}">Start</a> › <span aria-current="page">News</span></nav>\n<h1>News</h1>\n<p class="lead">{esc(desc)}</p>\n'
     # Aufmacher: Standard ist der neueste Artikel; mit "aufmacher: ja" im Kopfbereich wird ein juengerer Artikel (max. 3 Tage hinter dem neuesten) zum Hauptthema
-    hero = posts[0]
-    for x in posts:
+    longp = [x for x in posts if x.get("typ") != "kurz"] or posts
+    hero = longp[0]
+    for x in longp:
         if x.get("aufmacher", "").lower() in ("ja", "true", "1", "yes") and (posts[0]["dt"] - x["dt"]).days <= 3:
             hero = x; break
-    rest = [x for x in posts if x is not hero]
+    kurz_posts = [x for x in posts if x.get("typ") == "kurz"]
+    rest = [x for x in posts if x is not hero and x.get("typ") != "kurz"]
     side, grid, archiv = rest[:4], rest[4:12], rest[12:]
     o += (f'<section class="mag-top" aria-label="Thema des Tages"><a class="mag-hero" href="{hero["slug"]}/"><div class="mcwrap" style="position:relative;margin:0"><img class="mcover" src="{pre}{hero["img"]}" alt="" width="1200" height="675" fetchpriority="high">{card_logo(hero, pre)}</div>'
           f'<div class="mag-hero-body"><p class="kicker"><span class="mag-badge">Thema des Tages</span> {esc(hero["category"])} · {de_dt_kurz(hero["dt"])}</p><h2>{esc(hero["title"])}</h2><p class="mag-lead">{esc(hero["description"])}</p><span class="mag-more">Artikel lesen →</span></div></a>\n')
@@ -332,6 +341,12 @@ def build_index(posts):
             o += (f'<li><a href="{x["slug"]}/"><span class="mag-thumb"><img src="{pre}{x["img"]}" alt="" width="120" height="68" loading="lazy">{card_logo(x, pre)}<span class="kicker"><b>{esc(x["category"])}</b>{de_dt_kurz(x["dt"])}</span></span><strong>{esc(x["title"])}</strong></a></li>\n')
         o += '</ul></aside>\n'
     o += '</section>\n'
+    if kurz_posts:
+        o += '<h2 class="mag-more-h">Kurzmeldungen</h2>\n<ul class="mag-archiv mag-kurz">\n'
+        for x in kurz_posts[:16]:
+            o += (f'<li><a href="{x["slug"]}/">{mini_logo(x, pre)}<span class="artx"><span class="kicker">{esc(x["category"])} · {de_dt_kurz(x["dt"])}</span>'
+                  f'<strong>{esc(x["title"])}</strong></span></a></li>\n')
+        o += '</ul>\n'
     if grid:
         o += '<h2 class="mag-more-h">Weitere Artikel</h2>\n<div class="cards magcards">\n'
         for x in grid:
@@ -489,8 +504,9 @@ def main():
     else:
         for f in ("magazin/index.html", "magazin/feed.xml"):
             if os.path.exists(f): os.remove(f)
-    glossar.patch_erklaerseiten(posts)
-    patch_sitemap(posts); patch_llms(posts); patch_home(posts); patch_news(posts); write_mag_index(posts); patch_nav_everywhere(bool(posts))
+    longp = [x for x in posts if x.get("typ") != "kurz"]
+    glossar.patch_erklaerseiten(longp)
+    patch_sitemap(posts); patch_llms(posts); patch_home(longp); patch_news(posts); write_mag_index(posts); patch_nav_everywhere(bool(posts))
     write_overview(allp)
     print(f"{len(posts)} Artikel gebaut")
 

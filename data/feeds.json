@@ -1,35 +1,414 @@
 {
-  "hinweis": "Pro Unternehmen eine IR-/Newsroom-RSS-URL. Eintraege ohne url werden - wenn das Secret FMP_API_KEY gesetzt ist - ueber FMP (Pressemitteilungen) geholt. Neue Firma = neue Zeile. 'geprueft' = Feed wurde bei der Recherche tatsaechlich abgerufen.",
-  "feeds": [
-    {"sym":"AAPL","name":"Apple","url":"https://www.apple.com/newsroom/rss-feed.rss"},
-    {"sym":"MSFT","name":"Microsoft","url":"https://news.microsoft.com/source/feed/","geprueft":true},
-    {"sym":"JNJ","name":"Johnson & Johnson","url":"https://investor.jnj.com/rss/pressrelease.aspx","geprueft":true},
-    {"sym":"KO","name":"Coca-Cola","url":"https://investors.coca-colacompany.com/news-events/press-releases/rss","geprueft":true},
-    {"sym":"PEP","name":"PepsiCo","url":""},
-    {"sym":"PG","name":"Procter & Gamble","url":""},
-    {"sym":"LLY","name":"Eli Lilly","url":"https://investor.lilly.com/rss/news-releases.xml"},
-    {"sym":"BMY","name":"Bristol-Myers Squibb","url":"https://news.bms.com/rss/pressrelease.aspx"},
-    {"sym":"ABBV","name":"AbbVie","url":"https://investors.abbvie.com/rss/news-releases.xml"},
-    {"sym":"PFE","name":"Pfizer","url":""},
-    {"sym":"MRK","name":"Merck & Co.","url":""},
-    {"sym":"O","name":"Realty Income","url":""},
-    {"sym":"V","name":"Visa","url":"https://investor.visa.com/rss/PressRelease.aspx?LanguageId=1&CategoryWorkflowId=00000000-0000-0000-0000-000000000000&tags=","geprueft":true},
-    {"sym":"JPM","name":"JPMorgan Chase","url":""},
-    {"sym":"XOM","name":"Exxon Mobil","url":"https://investor.exxonmobil.com/company-information/press-releases/rss","geprueft":true},
-    {"sym":"CVX","name":"Chevron","url":""},
-    {"sym":"MCD","name":"McDonald's","url":""},
-    {"sym":"VZ","name":"Verizon","url":"https://www.verizon.com/about/news/verizon-news.xml"},
-    {"sym":"T","name":"AT&T","url":"https://feeds.feedburner.com/AttAllCategoriesRssFeeds"},
-    {"sym":"HD","name":"Home Depot","url":""},
-    {"sym":"TXN","name":"Texas Instruments","url":""},
-    {"sym":"AVGO","name":"Broadcom","url":"https://investors.broadcom.com/rss/news-releases.xml"},
-    {"sym":"CSCO","name":"Cisco","url":""},
-    {"sym":"IBM","name":"IBM","url":"https://newsroom.ibm.com/campaign?pagetemplate=rss","geprueft":true},
-    {"sym":"MDLZ","name":"Mondelez","url":"https://ir.mondelezinternational.com/rss/news-releases.xml"},
-    {"sym":"MMM","name":"3M","url":"https://news.3m.com/press-releases?pagetemplate=rss"},
-    {"sym":"WMT","name":"Walmart","url":"https://news.walmart.com/rss/?feedName=allnews"},
-    {"sym":"NVDA","name":"Nvidia","url":"https://nvidianews.nvidia.com/releases.xml"},
-    {"sym":"GOOGL","name":"Alphabet","url":""},
-    {"sym":"AMZN","name":"Amazon","url":"https://press.aboutamazon.com/.rss","geprueft":true}
-  ]
+ "hinweis": "Pro Unternehmen eine IR-/Newsroom-RSS-URL. Eintraege ohne url werden - wenn das Secret FMP_API_KEY gesetzt ist - ueber FMP (Pressemitteilungen) geholt. Neue Firma = neue Zeile. 'geprueft' = Feed wurde bei der Recherche tatsaechlich abgerufen.",
+ "feeds": [
+  {
+   "sym": "AAPL",
+   "name": "Apple",
+   "url": "https://www.apple.com/newsroom/rss-feed.rss"
+  },
+  {
+   "sym": "MSFT",
+   "name": "Microsoft",
+   "url": "https://news.microsoft.com/source/feed/",
+   "geprueft": true
+  },
+  {
+   "sym": "JNJ",
+   "name": "Johnson & Johnson",
+   "url": "https://investor.jnj.com/rss/pressrelease.aspx",
+   "geprueft": true
+  },
+  {
+   "sym": "KO",
+   "name": "Coca-Cola",
+   "url": "https://investors.coca-colacompany.com/news-events/press-releases/rss",
+   "geprueft": true
+  },
+  {
+   "sym": "PEP",
+   "name": "PepsiCo",
+   "url": ""
+  },
+  {
+   "sym": "PG",
+   "name": "Procter & Gamble",
+   "url": ""
+  },
+  {
+   "sym": "LLY",
+   "name": "Eli Lilly",
+   "url": "https://investor.lilly.com/rss/news-releases.xml"
+  },
+  {
+   "sym": "BMY",
+   "name": "Bristol-Myers Squibb",
+   "url": "https://news.bms.com/rss/pressrelease.aspx"
+  },
+  {
+   "sym": "ABBV",
+   "name": "AbbVie",
+   "url": "https://investors.abbvie.com/rss/news-releases.xml"
+  },
+  {
+   "sym": "PFE",
+   "name": "Pfizer",
+   "url": ""
+  },
+  {
+   "sym": "MRK",
+   "name": "Merck & Co.",
+   "url": ""
+  },
+  {
+   "sym": "O",
+   "name": "Realty Income",
+   "url": ""
+  },
+  {
+   "sym": "V",
+   "name": "Visa",
+   "url": "https://investor.visa.com/rss/PressRelease.aspx?LanguageId=1&CategoryWorkflowId=00000000-0000-0000-0000-000000000000&tags=",
+   "geprueft": true
+  },
+  {
+   "sym": "JPM",
+   "name": "JPMorgan Chase",
+   "url": ""
+  },
+  {
+   "sym": "XOM",
+   "name": "Exxon Mobil",
+   "url": "https://investor.exxonmobil.com/company-information/press-releases/rss",
+   "geprueft": true
+  },
+  {
+   "sym": "CVX",
+   "name": "Chevron",
+   "url": ""
+  },
+  {
+   "sym": "MCD",
+   "name": "McDonald's",
+   "url": ""
+  },
+  {
+   "sym": "VZ",
+   "name": "Verizon",
+   "url": "https://www.verizon.com/about/news/verizon-news.xml"
+  },
+  {
+   "sym": "T",
+   "name": "AT&T",
+   "url": "https://feeds.feedburner.com/AttAllCategoriesRssFeeds"
+  },
+  {
+   "sym": "HD",
+   "name": "Home Depot",
+   "url": ""
+  },
+  {
+   "sym": "TXN",
+   "name": "Texas Instruments",
+   "url": ""
+  },
+  {
+   "sym": "AVGO",
+   "name": "Broadcom",
+   "url": "https://investors.broadcom.com/rss/news-releases.xml"
+  },
+  {
+   "sym": "CSCO",
+   "name": "Cisco",
+   "url": ""
+  },
+  {
+   "sym": "IBM",
+   "name": "IBM",
+   "url": "https://newsroom.ibm.com/campaign?pagetemplate=rss",
+   "geprueft": true
+  },
+  {
+   "sym": "MDLZ",
+   "name": "Mondelez",
+   "url": "https://ir.mondelezinternational.com/rss/news-releases.xml"
+  },
+  {
+   "sym": "MMM",
+   "name": "3M",
+   "url": "https://news.3m.com/press-releases?pagetemplate=rss"
+  },
+  {
+   "sym": "WMT",
+   "name": "Walmart",
+   "url": "https://news.walmart.com/rss/?feedName=allnews"
+  },
+  {
+   "sym": "NVDA",
+   "name": "Nvidia",
+   "url": "https://nvidianews.nvidia.com/releases.xml"
+  },
+  {
+   "sym": "GOOGL",
+   "name": "Alphabet",
+   "url": ""
+  },
+  {
+   "sym": "AMZN",
+   "name": "Amazon",
+   "url": "https://press.aboutamazon.com/.rss",
+   "geprueft": true
+  },
+  {
+   "sym": "SAP.DE",
+   "name": "SAP",
+   "url": "",
+   "region": "Welt"
+  },
+  {
+   "sym": "SIE.DE",
+   "name": "Siemens",
+   "url": "",
+   "region": "Welt"
+  },
+  {
+   "sym": "ALV.DE",
+   "name": "Allianz",
+   "url": "",
+   "region": "Welt"
+  },
+  {
+   "sym": "MBG.DE",
+   "name": "Mercedes-Benz",
+   "url": "",
+   "region": "Welt"
+  },
+  {
+   "sym": "BMW.DE",
+   "name": "BMW",
+   "url": "",
+   "region": "Welt"
+  },
+  {
+   "sym": "VOW3.DE",
+   "name": "Volkswagen",
+   "url": "",
+   "region": "Welt"
+  },
+  {
+   "sym": "DTE.DE",
+   "name": "Deutsche Telekom",
+   "url": "",
+   "region": "Welt"
+  },
+  {
+   "sym": "BAS.DE",
+   "name": "BASF",
+   "url": "",
+   "region": "Welt"
+  },
+  {
+   "sym": "MUV2.DE",
+   "name": "Munich Re",
+   "url": "",
+   "region": "Welt"
+  },
+  {
+   "sym": "DHL.DE",
+   "name": "DHL Group",
+   "url": "",
+   "region": "Welt"
+  },
+  {
+   "sym": "ADS.DE",
+   "name": "Adidas",
+   "url": "",
+   "region": "Welt"
+  },
+  {
+   "sym": "RWE.DE",
+   "name": "RWE",
+   "url": "",
+   "region": "Welt"
+  },
+  {
+   "sym": "EOAN.DE",
+   "name": "E.ON",
+   "url": "",
+   "region": "Welt"
+  },
+  {
+   "sym": "DBK.DE",
+   "name": "Deutsche Bank",
+   "url": "",
+   "region": "Welt"
+  },
+  {
+   "sym": "ASML.AS",
+   "name": "ASML",
+   "url": "",
+   "region": "Welt"
+  },
+  {
+   "sym": "MC.PA",
+   "name": "LVMH",
+   "url": "",
+   "region": "Welt"
+  },
+  {
+   "sym": "OR.PA",
+   "name": "L'Oréal",
+   "url": "",
+   "region": "Welt"
+  },
+  {
+   "sym": "TTE.PA",
+   "name": "TotalEnergies",
+   "url": "",
+   "region": "Welt"
+  },
+  {
+   "sym": "SAN.PA",
+   "name": "Sanofi",
+   "url": "",
+   "region": "Welt"
+  },
+  {
+   "sym": "AIR.PA",
+   "name": "Airbus",
+   "url": "",
+   "region": "Welt"
+  },
+  {
+   "sym": "SU.PA",
+   "name": "Schneider Electric",
+   "url": "",
+   "region": "Welt"
+  },
+  {
+   "sym": "NESN.SW",
+   "name": "Nestlé",
+   "url": "",
+   "region": "Welt"
+  },
+  {
+   "sym": "NOVN.SW",
+   "name": "Novartis",
+   "url": "",
+   "region": "Welt"
+  },
+  {
+   "sym": "ROG.SW",
+   "name": "Roche",
+   "url": "",
+   "region": "Welt"
+  },
+  {
+   "sym": "UBSG.SW",
+   "name": "UBS",
+   "url": "",
+   "region": "Welt"
+  },
+  {
+   "sym": "NOVO-B.CO",
+   "name": "Novo Nordisk",
+   "url": "",
+   "region": "Welt"
+  },
+  {
+   "sym": "ULVR.L",
+   "name": "Unilever",
+   "url": "",
+   "region": "Welt"
+  },
+  {
+   "sym": "SHEL.L",
+   "name": "Shell",
+   "url": "",
+   "region": "Welt"
+  },
+  {
+   "sym": "AZN.L",
+   "name": "AstraZeneca",
+   "url": "",
+   "region": "Welt"
+  },
+  {
+   "sym": "HSBA.L",
+   "name": "HSBC",
+   "url": "",
+   "region": "Welt"
+  },
+  {
+   "sym": "BP.L",
+   "name": "BP",
+   "url": "",
+   "region": "Welt"
+  },
+  {
+   "sym": "ENEL.MI",
+   "name": "Enel",
+   "url": "",
+   "region": "Welt"
+  },
+  {
+   "sym": "ISP.MI",
+   "name": "Intesa Sanpaolo",
+   "url": "",
+   "region": "Welt"
+  },
+  {
+   "sym": "IBE.MC",
+   "name": "Iberdrola",
+   "url": "",
+   "region": "Welt"
+  },
+  {
+   "sym": "SAN.MC",
+   "name": "Santander",
+   "url": "",
+   "region": "Welt"
+  },
+  {
+   "sym": "TSM",
+   "name": "Taiwan Semiconductor",
+   "url": "",
+   "region": "Welt"
+  },
+  {
+   "sym": "9988.HK",
+   "name": "Alibaba",
+   "url": "",
+   "region": "Welt"
+  },
+  {
+   "sym": "0700.HK",
+   "name": "Tencent",
+   "url": "",
+   "region": "Welt"
+  },
+  {
+   "sym": "7203.T",
+   "name": "Toyota",
+   "url": "",
+   "region": "Welt"
+  },
+  {
+   "sym": "6758.T",
+   "name": "Sony",
+   "url": "",
+   "region": "Welt"
+  },
+  {
+   "sym": "005930.KS",
+   "name": "Samsung Electronics",
+   "url": "",
+   "region": "Welt"
+  },
+  {
+   "sym": "BHP.AX",
+   "name": "BHP",
+   "url": "",
+   "region": "Welt"
+  }
+ ]
 }

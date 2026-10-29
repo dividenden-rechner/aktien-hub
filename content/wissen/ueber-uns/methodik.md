@@ -29,6 +29,9 @@ Wo möglich nennen wir die Quelle direkt im Artikel.
 
 Wir kennzeichnen den Einsatz von KI. Sie ist ein Werkzeug für Entwurf und Struktur, kein Ersatz für die redaktionelle Prüfung.
 
+### Kurzmeldungen
+Eine Ausnahme sind die **Kurzmeldungen** in den News. Sie entstehen automatisch aus Pressemitteilungen großer Unternehmen (bei US-Konzernen aus den Meldungen bei der Börsenaufsicht SEC, bei anderen Unternehmen aus deren Pressebereichen). Ein KI-Modell entscheidet, ob die Meldung für Anleger relevant ist, und fasst sie in drei bis fünf Sätzen zusammen. Jede Kurzmeldung nennt die Originalquelle. Jede Zahl wird automatisch mit dem Originaltext abgeglichen. Findet sich eine Zahl dort nicht, wird die Meldung nicht veröffentlicht. Eine redaktionelle Durchsicht vor der Veröffentlichung gibt es bei Kurzmeldungen nicht. Maßgeblich ist immer die verlinkte Originalmeldung.
+
 ## Wie wir Kennzahlen darstellen
 
 - Wir nennen, ob ein Wert berichtet oder bereinigt ist.
