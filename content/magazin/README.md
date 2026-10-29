@@ -15,10 +15,11 @@ Datei anklicken, dann Stift-Symbol: Zeile `draft: true` löschen und speichern, 
 | 29.10.2026 22:42 | Amazon steigert Umsatz im dritten Quartal auf 201,9 Milliarden Dollar | [2026-10-29-2242-amazon-q3-2026-zahlen.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/2026-10-29-2242-amazon-q3-2026-zahlen.md) |
 | 29.10.2026 10:12 | Shell erzielt im dritten Quartal 10,8 Milliarden Dollar Gewinn | [2026-10-29-1012-shell-q3-2026-ergebnisse.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/2026-10-29-1012-shell-q3-2026-ergebnisse.md) |
 
-### Online (74)
+### Online (75)
 
 | Datum | Titel | Datei |
 |---|---|---|
+| 29.10.2026 23:52 | Starbucks steigert Umsatz im Geschäftsjahr 2026 auf 37,9 Milliarden Dollar | [2026-10-29-2352-starbucks-geschaeftsbericht-2026.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/2026-10-29-2352-starbucks-geschaeftsbericht-2026.md) |
 | 29.10.2026 23:52 | Baxter International: Umsatz steigt auf 2,98 Milliarden US-Dollar im dritten Quartal 2026 | [2026-10-29-2352-baxter-international-quartalszahlen-q3-2026.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/2026-10-29-2352-baxter-international-quartalszahlen-q3-2026.md) |
 | 29.10.2026 23:51 | West Pharmaceutical Services steigert Quartalsdividende auf 0,26 US-Dollar je Aktie | [2026-10-29-2351-west-pharmaceutical-services-q3-2026-dividende.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/2026-10-29-2351-west-pharmaceutical-services-q3-2026-dividende.md) |
 | 29.10.2026 23:51 | Linde plc: Umsatz steigt im dritten Quartal 2026 auf 9,4 Milliarden US-Dollar | [2026-10-29-2351-linde-quartalszahlen-q3-2026.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/2026-10-29-2351-linde-quartalszahlen-q3-2026.md) |
