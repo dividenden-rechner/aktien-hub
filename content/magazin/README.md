@@ -15,7 +15,7 @@ Datei anklicken, dann Stift-Symbol: Zeile `draft: true` löschen und speichern, 
 
 | Datum | Titel | Datei |
 |---|---|---|
-| 29.10.2026 21:59 | Intel steigert den Umsatz im dritten Quartal um 21 Prozent | [2026-10-29-2159-intel-q3-2026-zahlen.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/2026-10-29-2159-intel-q3-2026-zahlen.md) |
+| 29.10.2026 21:59 | Intel steigert den Umsatz - Kurs bricht aber ein | [2026-10-29-2159-intel-q3-2026-zahlen.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/2026-10-29-2159-intel-q3-2026-zahlen.md) |
 | 29.10.2026 14:54 | Altria steigert bereinigten Gewinn je Aktie im dritten Quartal | [2026-10-29-1453-altria-q3-2026-ergebnisse.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/2026-10-29-1453-altria-q3-2026-ergebnisse.md) |
 | 29.10.2026 09:26 | Microsoft steigert Umsatz im ersten Quartal auf 92,3 Milliarden US-Dollar | [2026-10-29-0926-microsoft-q1-2027-zahlen.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/2026-10-29-0926-microsoft-q1-2027-zahlen.md) |
 | 29.10.2026 09:15 | Alphabets Rekordumsatz trifft auf Milliardeninvestitionen in KI | [2026-10-29-0915-alphabet-q3-2026-quartalszahlen.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/2026-10-29-0915-alphabet-q3-2026-quartalszahlen.md) |
