@@ -202,8 +202,9 @@ def research(out, key):
               "3. Geopolitischer Lage und Regulierung, soweit relevant (Zölle, Sanktionen, Konflikte). "
               f"4. Branchenspezifisch: {spez} "
               "5. Schulden: Fälligkeitsprofil und Refinanzierung, Ratings. "
-              "6. Vergleich mit den wichtigsten Wettbewerbern und der Branche (Wachstum, Marge, Bewertung, Dividendenrendite). "
+              "6. Vergleich mit den konkreten Wettbewerbern und der Branche (Wachstum, Marge, Bewertung, Dividendenrendite). "
               "7. Aktuellen Unternehmensthemen: Strategie, Führungswechsel, Rechtsstreit, Regulierung, Übernahmen, Produktzyklen, Politik. "
+              "Finde heraus, was für dieses Unternehmen JETZT die entscheidenden Themen sind, und gewichte danach, nicht nach einem festen Schema. "
               "Nenne zu jeder Zahl Jahr oder Quartal. Erfinde nichts; was du nicht findest, lässt du weg.")
     return ground(prompt, key)
 

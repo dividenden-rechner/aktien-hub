@@ -57,14 +57,18 @@ CTX_SCHEMA = {
     },
 }
 CTX_PROMPT = """Schreibe die Einordnung zu dieser Kurzmeldung fuer ein deutsches Finanzportal fuer Privatanleger.
-Die Einordnung ist Pflicht und beantwortet, soweit durch TEXT und HINTERGRUND belegt:
-- Wie ist das im Vergleich zu den wichtigsten Wettbewerbern (Peers) oder zur Branche zu sehen?
-- Was war in den letzten Quartalen und Jahren (Trend oder Ausreisser)?
-- Welche aktuellen Themen des Unternehmens spielen hinein (Strategie, Fuehrung, Rechtsstreit, Regulierung, Zoelle, Uebernahmen)?
-- Wie ist die Finanzlage (Schulden, Cashflow, Dividendendeckung), soweit bekannt?
-Regeln: Nutze nur Fakten aus der PRESSEMITTEILUNG und dem HINTERGRUND. Zahlen aus dem HINTERGRUND nur mit Zeitbezug und als Einordnung
-('im Vorjahr', 'laut Medienberichten'); nenne wenige Zahlen. Nichts erfinden, keine Kaufempfehlung, keine Kursprognose.
-Wenn der HINTERGRUND wenig hergibt, schreibe lieber kurz und beschraenke dich auf das Belegte. Sachlich, auch Kritisches nennen. Deutsch."""
+Sie soll zeigen, wie diese Meldung zur AKTUELLEN, INDIVIDUELLEN Lage genau dieses Unternehmens passt. Es ist keine Checkliste und kein Schema:
+Entscheide anhand von PRESSEMITTEILUNG und HINTERGRUND, was fuer dieses Unternehmen JETZT wirklich zaehlt, und schreibe darueber.
+Moegliche Blickwinkel, von denen du nur die ein bis drei nimmst, die hier den Unterschied machen: Stellung gegenueber den konkreten Wettbewerbern
+oder der Branche in dieser Phase; die Entwicklung der letzten Quartale und Jahre (Trend, Wendepunkt oder Ausreisser); die Themen, die das Unternehmen
+gerade bewegen (Strategie, Fuehrung, Rechtsstreit, Regulierung, Zoelle, Uebernahmen, Produktzyklus); die Finanzlage (Schulden, Cashflow, Dividendendeckung).
+Regeln:
+- Beginne mit dem Punkt, der die Lage dieses Unternehmens heute am besten beschreibt, nicht mit Allgemeinplaetzen.
+- Die Zwischenueberschrift benennt diese konkrete Lage (Firma, Thema, Zahl oder Konflikt), nicht das Wort 'Einordnung' und keine Formel,
+  die auf jedes Unternehmen passen wuerde. Uebernimm keine Beispiele aus diesem Auftrag.
+- Nutze nur Fakten aus PRESSEMITTEILUNG und HINTERGRUND. Zahlen aus dem HINTERGRUND mit Zeitbezug und als Einordnung
+  ('im Vorjahr', 'laut Medienberichten'), wenige Zahlen. Nichts erfinden, keine Kaufempfehlung, keine Kursprognose.
+- Gibt der HINTERGRUND wenig her, schreibe kurz und bleibe beim Belegten. Sachlich, Kritisches nennen. Deutsch."""
 PROMPT = """Du schreibst Kurzmeldungen fuer ein deutsches Finanzportal fuer Privatanleger (Schwerpunkt Dividenden).
 Unten steht eine Pressemitteilung. Entscheide zuerst, ob sie fuer Anleger relevant ist.
 
@@ -220,10 +224,7 @@ def background(c, text):
         m = json.load(open(os.environ["KURZ_MOCK"], encoding="utf-8")).get("_hintergrund", "")
         return m, []
     prompt = (f"Recherchiere mit der Websuche knappen Hintergrund zu {c['name']} ({c['sym']}) zu dieser Meldung: {text[:1500]}\n\n"
-              "Liefere Stichpunkte auf Deutsch mit Zahlen und Zeitangaben zu: 1. Vergleich mit den wichtigsten Wettbewerbern und der Branche. "
-              "2. Entwicklung in den letzten Quartalen und zwei bis drei Jahren. 3. Aktuelle Unternehmensthemen (Strategie, Fuehrungswechsel, Rechtsstreit, "
-              "Regulierung, Zoelle, Uebernahmen). 4. Finanzlage (Schulden, Cashflow, Rating, Dividendenhistorie). "
-              "Berichte sachlich und kritisch. Nenne zu jeder Zahl Jahr oder Quartal. Erfinde nichts; was du nicht findest, laesst du weg.")
+              "Finde zuerst heraus, was fuer dieses Unternehmen gerade die entscheidenden Themen sind, und liefere dazu Stichpunkte auf Deutsch mit Zahlen und Zeitangaben. Beruecksichtige, soweit sie jetzt wichtig sind: Vergleich mit den konkreten Wettbewerbern und der Branche, Entwicklung der letzten Quartale und Jahre, aktuelle Unternehmensthemen (Strategie, Fuehrungswechsel, Rechtsstreit, Regulierung, Zoelle, Uebernahmen) und Finanzlage (Schulden, Cashflow, Rating, Dividendenhistorie). Die Gewichtung richtet sich nach der aktuellen Lage dieses Unternehmens, nicht nach einem festen Schema. Berichte sachlich und kritisch. Nenne zu jeder Zahl Jahr oder Quartal. Erfinde nichts; was du nicht findest, laesst du weg.")
     return ia.ground(prompt, ia.api_key())
 
 
