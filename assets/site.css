@@ -107,10 +107,11 @@ article p,article li,article td{overflow-wrap:anywhere}
 .mag-side ul{list-style:none;margin:0;padding:0}
 .mag-side li{border-top:1px solid var(--line)}.mag-side li:first-child{border-top:0}
 .mag-side a{display:flex;gap:12px;padding:12px 0;text-decoration:none;color:var(--ink);align-items:flex-start}
-.mag-thumb{position:relative;flex:0 0 112px;width:112px;display:block}.mag-thumb>img{display:block;width:100%;height:auto;aspect-ratio:16/9;object-fit:cover;border-radius:8px;border:1px solid var(--line)}
+.mag-thumb{position:relative;flex:0 0 128px;width:128px;display:block}.mag-thumb .kicker{display:block;margin:5px 0 0;font-size:11.5px;line-height:1.35;font-weight:600;letter-spacing:0;text-transform:none;color:var(--accd)}.mag-thumb>img{display:block;width:100%;height:auto;aspect-ratio:16/9;object-fit:cover;border-radius:8px;border:1px solid var(--line)}
 .mag-thumb .mclogo{transform:scale(.6);transform-origin:top left;left:5px!important;top:5px!important}
 .mag-side .kicker{display:block;margin:0 0 2px;font-size:12px;font-weight:700;letter-spacing:.04em;text-transform:uppercase;color:var(--accd)}
-.mag-side strong{display:block;font-size:16px;line-height:1.3}
+.mag-side strong{display:block;font-size:16px;line-height:1.3;margin-top:-2px}
 .mag-side a:hover strong{color:var(--accd)}
 .mag-more-h{margin:8px 0 0;font-size:22px}
 @media (max-width:900px){.mag-top{grid-template-columns:1fr}.mag-hero-body{padding:16px 18px 20px}}
+.mag-side .mag-thumb .kicker{text-transform:none;letter-spacing:0;font-size:11.5px;font-weight:500;color:var(--mut);margin-top:6px}.mag-side .mag-thumb .kicker b{display:block;font-weight:700;color:var(--accd)}

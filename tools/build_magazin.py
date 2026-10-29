@@ -314,7 +314,7 @@ def build_index(posts):
     if side:
         o += '<aside class="mag-side" aria-label="Weitere aktuelle Artikel"><h2>Außerdem aktuell</h2><ul>\n'
         for x in side:
-            o += (f'<li><a href="{x["slug"]}/"><span class="mag-thumb"><img src="{pre}{x["img"]}" alt="" width="120" height="68" loading="lazy">{card_logo(x, pre)}</span><span><span class="kicker">{esc(x["category"])} · {de_dt_kurz(x["dt"])}</span><strong>{esc(x["title"])}</strong></span></a></li>\n')
+            o += (f'<li><a href="{x["slug"]}/"><span class="mag-thumb"><img src="{pre}{x["img"]}" alt="" width="120" height="68" loading="lazy">{card_logo(x, pre)}<span class="kicker"><b>{esc(x["category"])}</b>{de_dt_kurz(x["dt"])}</span></span><strong>{esc(x["title"])}</strong></a></li>\n')
         o += '</ul></aside>\n'
     o += '</section>\n'
     if grid:
