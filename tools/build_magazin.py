@@ -16,8 +16,8 @@ CFG = json.load(open("tools/site.json", encoding="utf-8"))
 BASE = CFG["base"] if CFG["base"].endswith("/") else CFG["base"] + "/"
 SITE = CFG["name"]
 esc = lambda s: html.escape(str(s), quote=True)
-NAV = [("rechner", "", "Rechner"), ("aktien", "aktien/", "Aktien"), ("depot", "depot/", "Depot"), ("news", "news/", "News"),
-       ("earnings", "earnings/", "Earnings"), ("screener", "screener/", "Screener"), ("magazin", "magazin/", "Magazin"),
+NAV = [("rechner", "", "Rechner"), ("aktien", "aktien/", "Aktien"), ("depot", "depot/", "Depot"), ("magazin", "magazin/", "News"),
+       ("news", "news/", "Unternehmensmeldungen"), ("earnings", "earnings/", "Earnings"), ("screener", "screener/", "Screener"),
        ("einfuehrung", "einfuehrung/", "Einführung"), ("grundlagen", "grundlagen/", "Grundlagen"),
        ("fortgeschrittene", "fortgeschrittene/", "Fortgeschrittene")]
 MONTHS = ["Januar", "Februar", "März", "April", "Mai", "Juni", "Juli", "August", "September", "Oktober", "November", "Dezember"]
@@ -137,7 +137,7 @@ def head(depth, title, desc, url, og_type, image_url, extra=""):
 <meta name="description" content="{esc(desc)}">
 <meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large,max-video-preview:-1">
 <link rel="canonical" href="{BASE}{url}">
-<link rel="alternate" type="application/rss+xml" title="{esc(SITE)}: Magazin" href="{p}magazin/feed.xml">
+<link rel="alternate" type="application/rss+xml" title="{esc(SITE)}: News" href="{p}magazin/feed.xml">
 <meta property="og:type" content="{og_type}">
 <meta property="og:locale" content="de_DE">
 <meta property="og:site_name" content="{esc(SITE)}">
@@ -230,7 +230,7 @@ def build_post(p, posts):
     ld = [
         {"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [
             {"@type": "ListItem", "position": 1, "name": "Start", "item": BASE},
-            {"@type": "ListItem", "position": 2, "name": "Magazin", "item": BASE + "magazin/"},
+            {"@type": "ListItem", "position": 2, "name": "News", "item": BASE + "magazin/"},
             {"@type": "ListItem", "position": 3, "name": p["title"], "item": BASE + url}]},
         {"@context": "https://schema.org", "@type": "NewsArticle", "headline": p["title"][:110], "description": p["description"],
          "inLanguage": "de", "datePublished": iso(p["dt"]), "dateModified": iso(p["upd"]), "mainEntityOfPage": BASE + url,
@@ -244,7 +244,7 @@ def build_post(p, posts):
     extra += "".join('<script type="application/ld+json">%s</script>\n' % json.dumps(x, ensure_ascii=False) for x in ld)
     o = head(depth, p["title"], p["description"], url, "article", img_url, extra) + nav_html(depth, "magazin") + "</nav></div></header>\n"
     o += f'<script src="{pre}assets/navigation.js"></script>\n<script src="{pre}assets/logos.js"></script>\n<main class="wrap"><article class="post">\n'
-    o += f'<nav class="crumbs" aria-label="Brotkrumen"><a href="{pre}">Start</a> › <a href="{pre}magazin/">Magazin</a> › <span aria-current="page">{esc(p["title"])}</span></nav>\n'
+    o += f'<nav class="crumbs" aria-label="Brotkrumen"><a href="{pre}">Start</a> › <a href="{pre}magazin/">News</a> › <span aria-current="page">{esc(p["title"])}</span></nav>\n'
     o += f'<p class="kicker">{esc(p["category"])}</p>\n{logo_html(p)}<p class="lead">{esc(p["description"])}</p>\n'
     upd = f' · Aktualisiert: <time datetime="{iso(p["upd"])}">{de_date(p["upd"])}</time>' if p["upd"].date() > p["dt"].date() else ""
     o += f'<p class="byline">Von <strong>{esc(author)}</strong> · <time datetime="{iso(p["dt"])}">{de_dt(p["dt"])}</time>{upd} · {mins} Min. Lesezeit</p>\n'
@@ -298,7 +298,7 @@ def card_logo(x, pre):
 
 def build_index(posts):
     depth = 1; pre = "../"; url = "magazin/"
-    title = "Magazin: Dividenden, Kennzahlen und Steuern erklärt"
+    title = "News: Dividenden, Kennzahlen und Steuern erklärt"
     desc = "Analysen, Erklärstücke und Einordnungen zu Dividendenaktien, Kennzahlen, Quellensteuer und Depot, geschrieben für Privatanleger in Deutschland."
     ld = {"@context": "https://schema.org", "@type": "CollectionPage", "name": title, "description": desc, "url": BASE + url, "inLanguage": "de",
           "hasPart": [{"@type": "Article", "headline": x["title"], "url": f'{BASE}magazin/{x["slug"]}/', "datePublished": iso(x["dt"])} for x in posts[:20]]}
@@ -306,7 +306,7 @@ def build_index(posts):
     default_img = BASE + (posts[0]["img"] if posts else "assets/logo.png")
     o = head(depth, title, desc, url, "website", default_img, extra) + nav_html(depth, "magazin") + "</nav></div></header>\n"
     o += f'<script src="{pre}assets/navigation.js"></script>\n<script src="{pre}assets/logos.js"></script>\n<main class="wrap">\n'
-    o += f'<nav class="crumbs" aria-label="Brotkrumen"><a href="{pre}">Start</a> › <span aria-current="page">Magazin</span></nav>\n<h1>Magazin</h1>\n<p class="lead">{esc(desc)}</p>\n'
+    o += f'<nav class="crumbs" aria-label="Brotkrumen"><a href="{pre}">Start</a> › <span aria-current="page">News</span></nav>\n<h1>News</h1>\n<p class="lead">{esc(desc)}</p>\n'
     # Aufmacher: Standard ist der neueste Artikel; mit "aufmacher: ja" im Kopfbereich wird ein juengerer Artikel (max. 3 Tage hinter dem neuesten) zum Hauptthema
     hero = posts[0]
     for x in posts:
@@ -342,7 +342,7 @@ def build_feed(posts):
                   f'<enclosure url="{BASE}{x["img"]}" type="image/{"jpeg" if x["img"].lower().endswith(("jpg","jpeg")) else "png"}" length="0"/>'
                   f'<content:encoded><![CDATA[{content}]]></content:encoded></item>\n')
     feed = (f'<?xml version="1.0" encoding="UTF-8"?>\n<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:dc="http://purl.org/dc/elements/1.1/">\n'
-            f'<channel><title>{esc(SITE)}: Magazin</title><link>{BASE}magazin/</link><description>Dividenden, Kennzahlen und Steuern erklärt</description><language>de-DE</language>'
+            f'<channel><title>{esc(SITE)}: News</title><link>{BASE}magazin/</link><description>Dividenden, Kennzahlen und Steuern erklärt</description><language>de-DE</language>'
             f'<lastBuildDate>{now}</lastBuildDate><atom:link href="{BASE}magazin/feed.xml" rel="self" type="application/rss+xml"/>\n{items}</channel></rss>\n')
     open("magazin/feed.xml", "w", encoding="utf-8").write(feed)
 
@@ -359,7 +359,7 @@ def patch_llms(posts):
     s = open("llms.txt", encoding="utf-8").read()
     s = re.sub(r"- \[[^\]]*\]\(%smagazin/[^)]*\)[^\n]*\n" % re.escape(BASE), "", s)
     add = "".join(f"- [{x['title']}]({BASE}magazin/{x['slug']}/): {x['description']}\n" for x in posts)
-    if posts: add = f"- [Magazin: Artikel zu Dividenden, Kennzahlen und Steuern]({BASE}magazin/)\n" + add
+    if posts: add = f"- [News: Artikel zu Dividenden, Kennzahlen und Steuern]({BASE}magazin/)\n" + add
     s = s.replace("\n## Hinweis", "\n" + add + "\n## Hinweis", 1) if "\n## Hinweis" in s else s + "\n" + add
     open("llms.txt", "w", encoding="utf-8").write(s)
 
@@ -367,11 +367,11 @@ def patch_home(posts):
     p = "index.html"; s = open(p, encoding="utf-8").read()
     block = ""
     if posts:
-        block = ('<section class="home-mag" id="magazin"><h2>Neu im Magazin</h2><p class="sub">Quartalszahlen verständlich erklärt, mit Kurzfassung in drei Punkten.</p>\n<div class="cards magcards">\n')
+        block = ('<section class="home-mag" id="magazin"><h2>Neu in den News</h2><p class="sub">Quartalszahlen verständlich erklärt, mit Kurzfassung in drei Punkten.</p>\n<div class="cards magcards">\n')
         for x in posts[:3]:
             block += (f'<a class="card" href="magazin/{x["slug"]}/"><div class="mcwrap" style="position:relative;margin:0"><img class="mcover" src="{x["img"]}" alt="" width="1200" height="675" loading="lazy">{card_logo(x, "")}</div>'
                       f'<p class="kicker">{esc(x["category"])} · {de_dt_kurz(x["dt"])}</p><h3>{esc(x["title"])}</h3></a>\n')
-        block += '</div>\n<p class="more"><a href="magazin/">Alle Artikel im Magazin →</a></p></section>\n'
+        block += '</div>\n<p class="more"><a href="magazin/">Alle Artikel in den News →</a></p></section>\n'
     mk = "<!-- magazin-neu -->"
     if mk not in s:
         s = s.replace('<section class="home-more">', mk + "\n" + mk.replace("neu", "ende") + '\n<section class="home-more">', 1)
@@ -418,10 +418,13 @@ def patch_nav_everywhere(has_posts):
         m = re.search(r'<a href="((?:\.\./)*)screener/"[^>]*>Screener</a>', s)
         if not m: continue
         pre = m.group(1)
-        link = f'<a href="{pre}magazin/">Magazin</a>'
+        link = f'<a href="{pre}magazin/">News</a>'
         s = s.replace(link, "")
         if has_posts:
-            s = re.sub(r'(<a href="%sscreener/"[^>]*>Screener</a>)' % re.escape(pre), lambda mm: mm.group(1) + link, s, count=1)
+            if re.search(r'<a href="%snews/"[^>]*>Unternehmensmeldungen</a>' % re.escape(pre), s):
+                s = re.sub(r'(<a href="%snews/"[^>]*>Unternehmensmeldungen</a>)' % re.escape(pre), lambda mm: link + mm.group(1), s, count=1)
+            else:
+                s = re.sub(r'(<a href="%sscreener/"[^>]*>Screener</a>)' % re.escape(pre), lambda mm: mm.group(1) + link, s, count=1)
         if s != o: open(f, "w", encoding="utf-8").write(s)
 
 REPO = "dividenden-rechner/aktien-hub"

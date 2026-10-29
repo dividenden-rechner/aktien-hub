@@ -26,7 +26,7 @@ Viele Unternehmen zeigen zwei Gewinnzahlen:
 - **Berichtet** (nach Rechnungslegung wie US-GAAP oder IFRS): enthält alle Posten, auch Einmalkosten und Wertberichtigungen.
 - **Bereinigt** (adjusted, non-GAAP): ohne Sondereffekte wie Restrukturierung, Abschreibungen auf Übernahmen oder Rechtsstreitigkeiten.
 
-Bereinigte Zahlen zeigen das laufende Geschäft klarer, sind aber Eigenwerk des Unternehmens. Prüfe, was herausgerechnet wurde und ob die gleichen Posten jedes Jahr auftauchen. Dann sind es keine Einmalkosten, sondern Normalität. In den Magazin-Artikeln nennen wir deshalb immer, welche Zahl gemeint ist.
+Bereinigte Zahlen zeigen das laufende Geschäft klarer, sind aber Eigenwerk des Unternehmens. Prüfe, was herausgerechnet wurde und ob die gleichen Posten jedes Jahr auftauchen. Dann sind es keine Einmalkosten, sondern Normalität. In unseren News-Artikeln nennen wir deshalb immer, welche Zahl gemeint ist.
 
 !!! example "Beispiel"
     Ein Konzern meldet bereinigtes EPS von 2,10 Dollar nach 1,90 Dollar im Vorjahr, ein Plus von gut 10 %. Berichtet liegt das EPS wegen einer Abschreibung nur bei 1,40 Dollar, nach 1,85 Dollar im Vorjahr. Beide Zahlen stimmen. Welche besser passt, hängt davon ab, ob die Abschreibung einmalig war.
@@ -58,7 +58,7 @@ An der Börse zählt oft nicht, ob die Zahlen gut sind, sondern ob sie besser si
 ## Häufige Fragen
 
 ### Wo finde ich die Zahlen?
-Auf der Investor-Relations-Seite des Unternehmens, in der Pressemeldung und im Bericht bei der Börsenaufsicht. In den Artikeln im [Magazin](/magazin/) fassen wir die Berichte zusammen und nennen die Quelle.
+Auf der Investor-Relations-Seite des Unternehmens, in der Pressemeldung und im Bericht bei der Börsenaufsicht. In den Artikeln in den [News](/magazin/) fassen wir die Berichte zusammen und nennen die Quelle.
 
 ### Was ist ein Geschäftsjahr, das nicht dem Kalenderjahr entspricht?
 Manche Unternehmen enden ihr Jahr nicht im Dezember. Dann heißt das erste Quartal vielleicht „Q1 2027“, obwohl es 2026 endet. Der Bericht nennt den Zeitraum.

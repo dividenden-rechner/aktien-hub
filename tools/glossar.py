@@ -122,7 +122,7 @@ def box(hits, pre):
     return f'<aside class="related glossar"><h2>Hintergrund zum Thema</h2><ul>\n{items}\n</ul></aside>\n'
 
 def patch_erklaerseiten(posts):
-    """Auf den Erklaerseiten: Kasten 'Aktuell im Magazin' mit bis zu 3 neuesten Artikeln, die das Thema behandeln."""
+    """Auf den Erklaerseiten: Kasten 'Aktuell in den News' mit bis zu 3 neuesten Artikeln, die das Thema behandeln."""
     pro_seite = {}
     for p in posts:
         for h in p.get("glossar_hits", []):
@@ -136,7 +136,7 @@ def patch_erklaerseiten(posts):
         arts = pro_seite.get(url, [])[:3]
         if arts:
             pre = "../" * (url.strip("/").count("/") + 1)
-            blk = ('<!-- mag-artikel -->\n<aside class="related glossar"><h2>Aktuell im Magazin</h2><ul>\n' +
+            blk = ('<!-- mag-artikel -->\n<aside class="related glossar"><h2>Aktuell in den News</h2><ul>\n' +
                    "\n".join(f'<li><a href="{pre}magazin/{x["slug"]}/">{esc(x["title"])}</a></li>' for x in arts) + '\n</ul></aside>\n<!-- /mag-artikel -->\n')
             m = re.search(r'<p class="note"><strong>Hinweis:', s)
             if not m: continue

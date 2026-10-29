@@ -84,4 +84,4 @@ Voraussetzungen: Secret `GEMINI_API_KEY`; optional Variable `SEC_USER_AGENT` (Na
 
 ## Erklaerartikel automatisch verlinken
 
-Stichworte, die im Magazin automatisch auf Grundlagen- und Fortgeschrittenen-Artikel verlinken, stehen in `tools/glossar.json` (neue Erklaerartikel dort eintragen). Der Build setzt Textlinks, den Kasten "Hintergrund zum Thema" und auf den Erklaerseiten den Kasten "Aktuell im Magazin". Quellensteuer plus Boersenkuerzel oder Landesname fuehrt zur Laenderseite, eine Ausschuettungsquote ab 75 % zusaetzlich zur Dividendenfalle.
+Stichworte, die im Magazin automatisch auf Grundlagen- und Fortgeschrittenen-Artikel verlinken, stehen in `tools/glossar.json` (neue Erklaerartikel dort eintragen). Der Build setzt Textlinks, den Kasten "Hintergrund zum Thema" und auf den Erklaerseiten den Kasten "Aktuell in den News". Quellensteuer plus Boersenkuerzel oder Landesname fuehrt zur Laenderseite, eine Ausschuettungsquote ab 75 % zusaetzlich zur Dividendenfalle.
