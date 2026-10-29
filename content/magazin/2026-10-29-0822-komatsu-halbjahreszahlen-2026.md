@@ -11,7 +11,7 @@ image_credit: "Foto: 妖精書士 / Wikimedia Commons, CC BY-SA 4.0"
 image_source: https://commons.wikimedia.org/wiki/File:KOMATSU_Buildng,_2017.jpg
 logo_name: "Komatsu Ltd."
 logo_symbol: 6301.T
-draft: true
+
 logo_file: assets/logos/6301-t.png
 ---
 <!-- PRÜFEN: Aufmacherfoto ist automatisch von Wikimedia Commons gewaehlt: bitte pruefen, ob es zum Artikel passt (sonst image-Zeilen entfernen, dann entsteht ein Titelbild automatisch). -->
