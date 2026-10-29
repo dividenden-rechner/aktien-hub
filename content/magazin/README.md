@@ -13,6 +13,7 @@ _Keine Entwürfe._
 
 | Datum | Titel | Datei |
 |---|---|---|
+| 29.10.2026 09:15 | Alphabets Rekordumsatz trifft auf Milliardeninvestitionen in KI | [2026-10-29-0915-alphabet-q3-2026-quartalszahlen.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/2026-10-29-0915-alphabet-q3-2026-quartalszahlen.md) |
 | 29.10.2026 08:22 | Komatsu hebt Jahresprognose nach Umsatzplus im Halbjahr an | [2026-10-29-0822-komatsu-halbjahreszahlen-2026.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/2026-10-29-0822-komatsu-halbjahreszahlen-2026.md) |
 | 28.10.2026 19:15 | Fed belässt Leitzins im Oktober 2026 bei 3,75 bis 4 Prozent | [2026-10-28-1914-fed-zinsentscheid-oktober-2026.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/2026-10-28-1914-fed-zinsentscheid-oktober-2026.md) |
 | 28.10.2026 15:47 | Unilever steigert Umsatz auf 13,3 Milliarden Euro und hebt Ausblick an | [unilever-q3-2026-trading-statement.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/unilever-q3-2026-trading-statement.md) |
@@ -24,7 +25,6 @@ _Keine Entwürfe._
 | 27.10.2026 11:50 | Mercedes-Benz senkt Ausblick für 2026 wegen China und Kosten | [2026-10-27-1150-mercedes-benz-prognoseanpassung-2026.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/2026-10-27-1150-mercedes-benz-prognoseanpassung-2026.md) |
 | 27.10.2026 10:13 | HSBC verdient 9,6 Milliarden vor Steuern und kauft Aktien zurück | [2026-10-27-1013-hsbc-q3-2026.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/2026-10-27-1013-hsbc-q3-2026.md) |
 | 27.10.2026 09:40 | Novartis erhöht die Gewinnprognose, neue Medikamente laufen gut | [2026-10-27-0940-novartis-q3-2026-ergebnisse.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/2026-10-27-0940-novartis-q3-2026-ergebnisse.md) |
-| 27.10.2026 00:21 | Brown & Brown legt zu: 1,7 Milliarden Umsatz, mehr Gewinn | [2026-10-27-0021-brown-and-brown-q3-2026.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/2026-10-27-0021-brown-and-brown-q3-2026.md) |
 | 26.10.2026 22:28 | Verizon steigert bereinigtes EPS und hebt Jahresziele für 2026 an | [2026-10-26-2228-verizon-q3-2026.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/2026-10-26-2228-verizon-q3-2026.md) |
 | 26.10.2026 21:48 | Coca-Cola hebt die Ziele für Cashflow und Gewinn je Aktie an | [2026-10-26-2148-coca-cola-q2-2026.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/2026-10-26-2148-coca-cola-q2-2026.md) |
 <!-- uebersicht-ende -->
