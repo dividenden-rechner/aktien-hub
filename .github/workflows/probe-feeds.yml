@@ -1,0 +1,23 @@
+name: Test der Meldungswege (Europa und Asien)
+on:
+  push:
+    branches: [main]
+    paths:
+      - "tools/probe.trigger"
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  probe:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install pillow
+      - name: Wege testen
+        env:
+          FMP_API_KEY: ${{ secrets.FMP_API_KEY }}
+          SEC_USER_AGENT: ${{ vars.SEC_USER_AGENT }}
+        run: python3 tools/probe_feeds.py

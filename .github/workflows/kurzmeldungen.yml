@@ -32,7 +32,7 @@ jobs:
         env:
           SEC_USER_AGENT: ${{ vars.SEC_USER_AGENT }}
         run: |
-          if [ ! -f data/universe.json ] || [ -n "$(find data/universe.json -mtime +7)" ]; then
+          if [ ! -f data/universe.json ] || ! grep -q '"fpi"' data/universe.json || [ -n "$(find data/universe.json -mtime +7)" ]; then
             python3 tools/kurzmeldungen.py --update-universe || echo "::warning::Liste nicht erneuert"
           fi
       - name: Kurzmeldungen erzeugen

@@ -31,6 +31,13 @@ OUT_DIR = os.path.join(ROOT, "content", "magazin")
 CONSTITUENTS = "https://raw.githubusercontent.com/datasets/s-and-p-500-companies/main/data/constituents.csv"
 WATCHLIST = os.path.join(ROOT, "data", "ir-watchlist.json")
 MAX_LONG = int(os.environ.get("MAX_LONG", "4"))   # hoechstens so viele lange Artikel (IR-Agent) pro Lauf
+# Auslaendische Konzerne mit US-Notierung (ADR): melden Pressemitteilungen als Formular 6-K bei der SEC.
+# Kuerzel an der SEC -> Kuerzel in data/feeds.json (damit dieselbe Meldung nicht ueber zwei Wege kommt)
+ADR = {"NVO": "NOVO-B.CO", "ASML": "ASML.AS", "SAP": "SAP.DE", "SHEL": "SHEL.L", "UL": "ULVR.L", "HSBC": "HSBA.L", "NVS": "NOVN.SW",
+       "AZN": "AZN.L", "TM": "7203.T", "SONY": "6758.T", "TSM": "TSM", "BABA": "9988.HK", "BP": "BP.L", "SAN": "SAN.MC", "UBS": "UBSG.SW",
+       "GSK": "GSK.L", "SNY": "SAN.PA", "TTE": "TTE.PA", "DEO": "DGE.L", "BTI": "BATS.L", "RIO": "RIO.L", "BHP": "BHP.AX", "HMC": "7267.T",
+       "ING": "INGA.AS", "PHG": "PHIA.AS", "ERIC": "ERIC-B.ST", "NOK": "NOKIA.HE", "STLA": "STLAM.MI", "E": "ENI.MI", "BCS": "BARC.L",
+       "LYG": "LLOY.L", "DB": "DBK.DE", "MUFG": "8306.T", "SMFG": "8316.T", "TEF": "TEF.MC", "BBVA": "BBVA.MC", "ABBNY": "ABBN.SW", "VOD": "VOD.L"}
 CATEGORIES = ["Dividende", "Quartalszahlen", "Ausblick", "Aktienrückkauf", "Übernahme", "Management", "Geschäft", "Recht & Regulierung", "Sonstige Meldung"]
 SKIP_ITEMS = {"5.07", "5.03", "9.01", "3.03", "2.04", "5.08"}   # Abstimmungsergebnisse, Satzung, nur Anlagen usw.
 MAX_AGE_H = 40
@@ -111,6 +118,17 @@ def update_universe():
         except Exception:
             continue
         out.append({"sym": r["Symbol"].strip().replace(".", "-"), "name": r["Security"].strip(), "cik": cik, "sektor": r.get("GICS Sector", "")})
+    try:
+        tick = json.loads(ia.http("https://www.sec.gov/files/company_tickers.json", ua=UA_HDR))
+        by = {v["ticker"].upper(): v for v in tick.values()}
+        for t in ADR:
+            v = by.get(t)
+            if v:
+                out.append({"sym": t, "name": v["title"].title() if v["title"].isupper() else v["title"], "cik": int(v["cik_str"]), "sektor": "", "fpi": True})
+            else:
+                log(f"Hinweis: {t} nicht in der SEC-Liste")
+    except Exception as e:
+        log("Hinweis: ADR-Liste nicht ladbar:", str(e)[:100])
     if len(out) < 300:
         ia.fail(f"S&P-500-Liste unplausibel kurz ({len(out)}), nichts gespeichert.")
     json.dump({"updated": datetime.now(timezone.utc).strftime("%Y-%m-%d"), "quelle": CONSTITUENTS, "firmen": out},
@@ -138,8 +156,8 @@ def edgar_candidates(firmen, done):
             if i < 3 or i % 100 == 0:
                 log(f"Hinweis: {f['sym']} nicht abrufbar ({str(e)[:80]})")
             time.sleep(0.15); continue
-        for j, form in enumerate(rec.get("form", [])[:25]):
-            if form != "8-K":
+        for j, form in enumerate(rec.get("form", [])[:40]):
+            if form != ("6-K" if f.get("fpi") else "8-K"):
                 continue
             acc = rec["accessionNumber"][j]
             acc_dt = _parse_dt(rec["acceptanceDateTime"][j]) if rec.get("acceptanceDateTime") else None
@@ -152,7 +170,8 @@ def edgar_candidates(firmen, done):
             if items and items <= SKIP_ITEMS:
                 continue
             found.append({"key": key, "sym": f["sym"], "name": f["name"], "acc": acc, "cik": f["cik"], "items": sorted(items),
-                          "when": acc_dt.isoformat() if acc_dt else "", "src": "sec"})
+                          "when": acc_dt.isoformat() if acc_dt else "", "src": "sec",
+                          "primary": (rec.get("primaryDocument") or [""] * 999)[j], "fpi": bool(f.get("fpi"))})
         time.sleep(0.12)   # SEC erlaubt hoechstens 10 Abrufe pro Sekunde
     found.sort(key=lambda x: x["when"])
     return found
@@ -166,6 +185,8 @@ def edgar_press_release(c):
     cand = [f for f in files if re.search(r"\.(htm|html|txt)$", f, re.I) and not re.search(r"(-index|^R\d+\.|xbrl|\.xml)", f, re.I)]
     ex = [f for f in cand if re.search(r"(^|[^0-9])99[-_.]?0?[1-9]?", f)]
     ex = [f for f in ex if re.search(r"99", f)]
+    if not ex and c.get("fpi") and c.get("primary") and re.search(r"\.(htm|html|txt)$", c["primary"], re.I):
+        ex = [c["primary"]]          # 6-K ohne eigene Anlage: Das Hauptdokument ist die Meldung
     if not ex:
         return None
     ex.sort(key=lambda f: (0 if re.search(r"99[-_.]?0?1", f) else 1, f))
@@ -176,6 +197,7 @@ def edgar_press_release(c):
 
 
 def feed_candidates(sp_syms, done):
+    sp_syms = set(sp_syms) | set(ADR.values())
     """Eintraege aus data/news.json fuer Titel, die nicht ueber die SEC laufen (Europa, Asien, ...)."""
     d = load_json(NEWS, {"items": []})
     cutoff = datetime.now(timezone.utc) - timedelta(hours=MAX_AGE_H)
