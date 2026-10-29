@@ -11,7 +11,7 @@ image_credit: "Foto: Austin McKinley / Wikimedia Commons, CC BY 3.0"
 image_source: https://commons.wikimedia.org/wiki/File:Google_Campus,_Mountain_View,_CA.jpg
 logo_name: "Alphabet"
 logo_symbol: ABEC.F
-draft: true
+
 ---
 <!-- PRÜFEN: Aufmacherfoto ist automatisch von Wikimedia Commons gewaehlt: bitte pruefen, ob es zum Artikel passt (sonst image-Zeilen entfernen, dann entsteht ein Titelbild automatisch). -->
 <!-- PRÜFEN: Diese Werte wurden im Berichtstext nicht gefunden: Grafik Q3 2025: 23953; Grafik Q4 2025: 27851; Grafik Q1 2026: 35674; Grafik Q2 2026: 44924; Grafik Q3 2026: 51355 -->
