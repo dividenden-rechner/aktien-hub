@@ -15,7 +15,7 @@ Datei anklicken, dann Stift-Symbol: Zeile `draft: true` löschen und speichern, 
 | 29.10.2026 22:42 | Amazon steigert Umsatz im dritten Quartal auf 201,9 Milliarden Dollar | [2026-10-29-2242-amazon-q3-2026-zahlen.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/2026-10-29-2242-amazon-q3-2026-zahlen.md) |
 | 29.10.2026 10:12 | Shell erzielt im dritten Quartal 10,8 Milliarden Dollar Gewinn | [2026-10-29-1012-shell-q3-2026-ergebnisse.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/2026-10-29-1012-shell-q3-2026-ergebnisse.md) |
 
-### Online (73)
+### Online (74)
 
 | Datum | Titel | Datei |
 |---|---|---|
@@ -48,6 +48,7 @@ Datei anklicken, dann Stift-Symbol: Zeile `draft: true` löschen und speichern, 
 | 29.10.2026 23:48 | Microsoft: Umsatz steigt im Geschäftsjahr 2026 auf 331.839 Millionen US-Dollar | [2026-10-29-2348-microsoft-geschaeftszahlen-gj-2026.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/2026-10-29-2348-microsoft-geschaeftszahlen-gj-2026.md) |
 | 29.10.2026 23:48 | Equinix: Umsatz von 2,571 Milliarden US-Dollar im dritten Quartal 2026 | [2026-10-29-2348-equinix-q3-2026-zahlen.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/2026-10-29-2348-equinix-q3-2026-zahlen.md) |
 | 29.10.2026 23:48 | Chipotle Mexican Grill: 3.3 Milliarden US-Dollar Umsatz im Q3 2026 | [2026-10-29-2348-chipotle-mexican-grill-q3-2026-zahlen.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/2026-10-29-2348-chipotle-mexican-grill-q3-2026-zahlen.md) |
+| 29.10.2026 23:46 | Mondelēz steigert Umsatz und Nettogewinn im dritten Quartal | [2026-10-29-2346-mondelez-q3-2026-zahlen.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/2026-10-29-2346-mondelez-q3-2026-zahlen.md) |
 | 29.10.2026 23:30 | Honeywell Aerospace: Quartalszahlen und erste Dividende von 0,40 US-Dollar | [2026-10-29-2330-honeywell-aerospace-q3-2026-dividende.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/2026-10-29-2330-honeywell-aerospace-q3-2026-dividende.md) |
 | 29.10.2026 23:30 | Gen Digital steigert Umsatz auf 1,369 Milliarden US-Dollar und erhöht Jahresprognose | [2026-10-29-2330-gen-digital-quartalszahlen-q2-2027.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/2026-10-29-2330-gen-digital-quartalszahlen-q2-2027.md) |
 | 29.10.2026 23:30 | Ford Motor Company: 49,5 Mrd. US-Dollar Umsatz im dritten Quartal 2026 | [2026-10-29-2330-ford-quartalszahlen-q3-2026-dividende.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/2026-10-29-2330-ford-quartalszahlen-q3-2026-dividende.md) |
