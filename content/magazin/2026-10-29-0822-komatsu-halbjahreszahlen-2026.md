@@ -12,6 +12,7 @@ image_source: https://commons.wikimedia.org/wiki/File:KOMATSU_Buildng,_2017.jpg
 logo_name: "Komatsu Ltd."
 logo_symbol: 6301.T
 draft: true
+logo_file: assets/logos/6301-t.png
 ---
 <!-- PRÜFEN: Aufmacherfoto ist automatisch von Wikimedia Commons gewaehlt: bitte pruefen, ob es zum Artikel passt (sonst image-Zeilen entfernen, dann entsteht ein Titelbild automatisch). -->
 <!-- PRÜFEN: Diese Werte wurden im Berichtstext nicht gefunden: Grafik Umsatz: 2158.6 -->
