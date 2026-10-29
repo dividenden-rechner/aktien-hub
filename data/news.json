@@ -1,6 +1,42 @@
 {
- "updated": "2026-10-29T09:58:00.176270+00:00",
+ "updated": "2026-10-29T18:28:34.108632+00:00",
  "items": [
+  {
+   "sym": "NVDA",
+   "name": "Nvidia",
+   "title": "Slice Into GFN Thursday: ‘Phantom Blade Zero’ Launches on GeForce NOW",
+   "link": "https://blogs.nvidia.com/blog/geforce-now-thursday-phantom-blade-zero/",
+   "date": "2026-10-29T13:00:16+00:00",
+   "text": "",
+   "quelle": "RSS"
+  },
+  {
+   "sym": "BMY",
+   "name": "Bristol-Myers Squibb",
+   "title": "Bristol Myers Squibb Reports Third Quarter Financial Results for 2026",
+   "link": "https://news.bms.com/news/details/2026/Bristol-Myers-Squibb-Reports-Third-Quarter-Financial-Results-for-2026/default.aspx",
+   "date": "2026-10-29T10:59:00+00:00",
+   "text": "",
+   "quelle": "RSS"
+  },
+  {
+   "sym": "VZ",
+   "name": "Verizon",
+   "title": "Verizon announces tender offers for five series of notes",
+   "link": "https://www.verizon.com/about/news/verizon-tender-offers-five-series-notes",
+   "date": "2026-10-29T09:12:17+00:00",
+   "text": "Verizon commenced cash tender offers for up to $500 million aggregate purchase price across five series of outstanding notes using a waterfall priority structure.",
+   "quelle": "RSS"
+  },
+  {
+   "sym": "MSFT",
+   "name": "Microsoft",
+   "title": "Just wrapped our earnings call. It was a fast start to our fiscal year. Microsoft Cloud revenue surpassed $63B, with growth accelerating to 30% YoY. Lots of innovation as we build the new tech stack for the agentic wave. [Read more]",
+   "link": "https://www.linkedin.com/feed/update/urn:li:activity:7521344259774660609/",
+   "date": "2026-10-28T23:15:00+00:00",
+   "text": "The post Just wrapped our earnings call. It was a fast start to our fiscal year. Microsoft Cloud revenue surpassed $63B, with growth accelerating to 30% YoY. Lots of innovation as we build the new tech stack for the agentic wave. [Read more] appeared first on Source.",
+   "quelle": "RSS"
+  },
   {
    "sym": "NVDA",
    "name": "Nvidia",
@@ -35,6 +71,15 @@
    "link": "https://news.microsoft.com/source/2026/10/28/microsoft-earnings-press-release-available-on-investor-relations-website-31/",
    "date": "2026-10-28T20:08:01+00:00",
    "text": "The post Microsoft earnings press release available on Investor Relations website appeared first on Source.",
+   "quelle": "RSS"
+  },
+  {
+   "sym": "MSFT",
+   "name": "Microsoft",
+   "title": "We’re redefining the SDLC for the agentic era. Lots of GitHub updates this morning at Universe [Read more]",
+   "link": "https://www.linkedin.com/feed/update/urn:li:activity:7521256785148706816/",
+   "date": "2026-10-28T18:00:00+00:00",
+   "text": "The post We’re redefining the SDLC for the agentic era. Lots of GitHub updates this morning at Universe [Read more] appeared first on Source.",
    "quelle": "RSS"
   },
   {
@@ -416,24 +461,6 @@
    "quelle": "RSS"
   },
   {
-   "sym": "MSFT",
-   "name": "Microsoft",
-   "title": "Important work from our team in Science Magazine today, showing how our diagnostic orchestrator can reason through complex medical cases, achieving greater diagnostic accuracy while reducing testing costs.",
-   "link": "https://www.linkedin.com/feed/update/urn:li:activity:7519138392542953472/",
-   "date": "2026-10-23T00:36:00+00:00",
-   "text": "The post Important work from our team in Science Magazine today, showing how our diagnostic orchestrator can reason through complex medical cases, achieving greater diagnostic accuracy while reducing testing costs. appeared first on Source.",
-   "quelle": "RSS"
-  },
-  {
-   "sym": "MSFT",
-   "name": "Microsoft",
-   "title": "Beyond static charts: Helping AI create visualizations you can explore",
-   "link": "https://www.microsoft.com/en-us/research/blog/flint-interactive-a-language-for-creating-interactive-data-visualizations/",
-   "date": "2026-10-22T21:22:46+00:00",
-   "text": "The post Beyond static charts: Helping AI create visualizations you can explore appeared first on Source.",
-   "quelle": "RSS"
-  },
-  {
    "sym": "KO",
    "name": "Coca-Cola",
    "title": "The Coca-Cola Company Selects Agency Partners to Accelerate the Future of Marketing",
@@ -614,15 +641,6 @@
    "quelle": "RSS"
   },
   {
-   "sym": "NVDA",
-   "name": "Nvidia",
-   "title": "Bringing the Spark to Europe: Local Intelligence Powers Next Wave of Agents",
-   "link": "https://blogs.nvidia.com/blog/local-ai-gtc-rtx-dgx-spark-station-sync/",
-   "date": "2026-10-21T10:50:37+00:00",
-   "text": "",
-   "quelle": "RSS"
-  },
-  {
    "sym": "T",
    "name": "AT&T",
    "title": "AT&T Delivers Strong Third-Quarter 2026 Results",
@@ -683,15 +701,6 @@
    "link": "https://www.verizon.com/about/news/verizon-equips-nyc-flood-heat-resilience",
    "date": "2026-10-20T09:01:24+00:00",
    "text": "Verizon Community Disaster Resilience and United Way build disaster readiness through community events and vital safety education across New York City.",
-   "quelle": "RSS"
-  },
-  {
-   "sym": "VZ",
-   "name": "Verizon",
-   "title": "Bringing schools together IRL",
-   "link": "https://www.verizon.com/about/news/students-organize-screen-free-connection-hunt",
-   "date": "2026-10-20T09:01:24+00:00",
-   "text": "A teen-led scavenger hunt empowered New York classmates to build healthier relationships with technology and spend more time connecting in real life.",
    "quelle": "RSS"
   },
   {
@@ -1035,15 +1044,6 @@
    "date": "2026-09-08T13:00:00+00:00",
    "text": "",
    "quelle": "RSS"
-  },
-  {
-   "sym": "BMY",
-   "name": "Bristol-Myers Squibb",
-   "title": "Bristol Myers Squibb Announces Positive Topline Results from Registrational Phase 2 QUINTESSENTIAL Trial of the Potential First-in-Class GPRC5D-Directed CAR T Cell Therapy, Arlocabtagene Autoleucel ...",
-   "link": "https://news.bms.com/news/details/2026/Bristol-Myers-Squibb-Announces-Positive-Topline-Results-from-Registrational-Phase-2-QUINTESSENTIAL-Trial-of-the-Potential-First-in-Class-GPRC5D-Directed-CAR-T-Cell-Therapy-Arlocabtagene-Autoleucel----/default.aspx",
-   "date": "2026-09-08T10:59:00+00:00",
-   "text": "",
-   "quelle": "RSS"
   }
  ],
  "errors": [
@@ -1053,11 +1053,11 @@
   },
   {
    "sym": "PEP",
-   "fehler": "HTTP Error 402: Payment Required"
+   "fehler": "HTTP Error 429: Too Many Requests"
   },
   {
    "sym": "PG",
-   "fehler": "HTTP Error 402: Payment Required"
+   "fehler": "HTTP Error 429: Too Many Requests"
   },
   {
    "sym": "LLY",
@@ -1069,15 +1069,15 @@
   },
   {
    "sym": "PFE",
-   "fehler": "HTTP Error 402: Payment Required"
+   "fehler": "HTTP Error 429: Too Many Requests"
   },
   {
    "sym": "MRK",
-   "fehler": "HTTP Error 402: Payment Required"
+   "fehler": "HTTP Error 429: Too Many Requests"
   },
   {
    "sym": "O",
-   "fehler": "HTTP Error 402: Payment Required"
+   "fehler": "HTTP Error 429: Too Many Requests"
   },
   {
    "sym": "V",
@@ -1085,23 +1085,23 @@
   },
   {
    "sym": "JPM",
-   "fehler": "HTTP Error 402: Payment Required"
+   "fehler": "HTTP Error 429: Too Many Requests"
   },
   {
    "sym": "CVX",
-   "fehler": "HTTP Error 402: Payment Required"
+   "fehler": "HTTP Error 429: Too Many Requests"
   },
   {
    "sym": "MCD",
-   "fehler": "HTTP Error 402: Payment Required"
+   "fehler": "HTTP Error 429: Too Many Requests"
   },
   {
    "sym": "HD",
-   "fehler": "HTTP Error 402: Payment Required"
+   "fehler": "HTTP Error 429: Too Many Requests"
   },
   {
    "sym": "TXN",
-   "fehler": "HTTP Error 402: Payment Required"
+   "fehler": "HTTP Error 429: Too Many Requests"
   },
   {
    "sym": "AVGO",
@@ -1109,7 +1109,7 @@
   },
   {
    "sym": "CSCO",
-   "fehler": "HTTP Error 402: Payment Required"
+   "fehler": "HTTP Error 429: Too Many Requests"
   },
   {
    "sym": "MDLZ",
@@ -1121,7 +1121,7 @@
   },
   {
    "sym": "GOOGL",
-   "fehler": "HTTP Error 402: Payment Required"
+   "fehler": "HTTP Error 429: Too Many Requests"
   }
  ]
 }
