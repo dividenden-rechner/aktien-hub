@@ -18,7 +18,8 @@ jobs:
           GH_TOKEN: ${{ github.token }}
         run: |
           d=$(date +%Y-%m-%d-%H%M)
-          cat > "content/magazin/$d-testmeldung-freigabe.md" <<'EOF'
+          f="content/magazin/$d-testmeldung-freigabe-$RANDOM.md"
+          cat > "$f" <<'EOF'
           ---
           title: "Testmeldung: So sieht eine Freigabe aus"
           description: "Nur ein Test der Push-Meldung. Bitte den Pull Request schließen, nicht mergen."
@@ -29,5 +30,5 @@ jobs:
           ---
           Dies ist ein Test der Freigabe-Meldung. Bitte **Close** tippen und nicht mergen.
           EOF
-          sed -i 's/^          //' "content/magazin/$d-testmeldung-freigabe.md"
+          sed -i 's/^          //' "$f"
           python3 tools/draft_prs.py
