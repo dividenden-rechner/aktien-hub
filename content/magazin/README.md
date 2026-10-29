@@ -15,11 +15,12 @@ Datei anklicken, dann Stift-Symbol: Zeile `draft: true` löschen und speichern, 
 | 29.10.2026 22:42 | Amazon steigert Umsatz im dritten Quartal auf 201,9 Milliarden Dollar | [2026-10-29-2242-amazon-q3-2026-zahlen.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/2026-10-29-2242-amazon-q3-2026-zahlen.md) |
 | 29.10.2026 10:12 | Shell erzielt im dritten Quartal 10,8 Milliarden Dollar Gewinn | [2026-10-29-1012-shell-q3-2026-ergebnisse.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/2026-10-29-1012-shell-q3-2026-ergebnisse.md) |
 
-### Online (102)
+### Online (103)
 
 | Datum | Titel | Datei |
 |---|---|---|
 | 30.10.2026 00:28 | Shell plc: Interimsdividende von 0,3906 US-Dollar für Q3 2026 | [2026-10-30-0028-shell-dividende-q3-2026.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/2026-10-30-0028-shell-dividende-q3-2026.md) |
+| 30.10.2026 00:28 | Hershey Company: Nettoumsatz steigt im dritten Quartal 2026 auf 3.275,5 Millionen US-Dollar | [2026-10-30-0028-hershey-q3-2026-zahlen.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/2026-10-30-0028-hershey-q3-2026-zahlen.md) |
 | 30.10.2026 00:28 | Emcor Group steigert Q3-Umsatz 2026 auf 5,54 Milliarden US-Dollar | [2026-10-30-0028-emcor-group-q3-2026-zahlen-prognose.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/2026-10-30-0028-emcor-group-q3-2026-zahlen-prognose.md) |
 | 30.10.2026 00:28 | Banco Bilbao Vizcaya Argentaria, S.A.: Ergebnisse für das Q3 2026 | [2026-10-30-0028-bbva-q3-2026-quartalszahlen-dividende.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/2026-10-30-0028-bbva-q3-2026-quartalszahlen-dividende.md) |
 | 30.10.2026 00:28 | BBVA: 9,07 Mrd. Euro Gewinn in den ersten neun Monaten 2026 | [2026-10-30-0028-bbva-neunmonatszahlen-2026-dividende.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/2026-10-30-0028-bbva-neunmonatszahlen-2026-dividende.md) |

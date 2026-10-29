@@ -12,6 +12,7 @@ image_source: https://commons.wikimedia.org/wiki/File:SODO_-_Starbucks_Headquart
 logo_name: "Starbucks Corporation"
 logo_symbol: SBUX
 logo_domain: starbucks.com
+logo_file: assets/logos/sbux.png
 ---
 <!-- PRÜFEN: Aufmacherfoto ist automatisch von Wikimedia Commons gewaehlt: bitte pruefen, ob es zum Artikel passt (sonst image-Zeilen entfernen, dann entsteht ein Titelbild automatisch). -->
 <!-- PRÜFEN: Diese Werte wurden im Berichtstext nicht gefunden: Grafik North America: 7.33 -->
