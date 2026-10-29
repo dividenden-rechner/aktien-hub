@@ -5,6 +5,8 @@ Benötigt: pip install markdown pillow"""
 import re, os, sys, json, html, glob, datetime, email.utils
 from zoneinfo import ZoneInfo
 import markdown
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+import glossar
 from PIL import Image, ImageDraw, ImageFont
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -214,6 +216,8 @@ def build_post(p, posts):
     img = img.lstrip("/")
     img_url = BASE + img
     body = md_to_html(p["body_md"], depth)
+    hits = glossar.analyse(p, body)                    # Stichworte -> Erklaerartikel
+    body = glossar.verlinke(body, hits, pre)
     n_words = words(body); mins = max(1, round(n_words / 200))
     # FAQ aus Überschriften "## Häufige Fragen" mit ### Frage
     faq = []
@@ -251,7 +255,7 @@ def build_post(p, posts):
         cred = esc(cred)
     cap = f'<figcaption>{cred}</figcaption>' if cred else ""
     o += f'<figure class="cover"><img src="{pre}{img}" alt="{esc(alt)}" width="1200" height="675" fetchpriority="high">{cap}</figure>\n'
-    o += body + "\n"
+    o += body + "\n" + glossar.box(hits, pre)
     bio = p.get("author_bio") or 'Das Redaktions-Team von Dividenden-Rechner.de schreibt über Dividendenaktien, Kennzahlen und Steuerthemen für Privatanleger. Die Rechner und Auswertungen auf der Seite entstehen im eigenen Haus.'
     o += f'<aside class="authorbox"><strong>{esc(author)}</strong><p>{esc(bio)}</p><p>Artikel können mit Unterstützung von KI entstehen. Jeder Beitrag wird manuell geprüft und geht erst danach online. <a href="{pre}ueber-uns/">Mehr über uns</a></p></aside>\n'
     others = [x for x in posts if x["slug"] != slug][:3]
@@ -262,7 +266,7 @@ def build_post(p, posts):
     o += HINT + "\n</article></main>\n" + footer_html(depth) + "\n</body>\n</html>\n"
     os.makedirs(f"magazin/{slug}", exist_ok=True)
     open(f"magazin/{slug}/index.html", "w", encoding="utf-8").write(o)
-    p["img"] = img; p["html"] = body; p["mins"] = mins
+    p["img"] = img; p["html"] = body; p["mins"] = mins; p["glossar_hits"] = [{k: h[k] for k in ("id", "url", "title")} for h in hits]
     return p
 
 def logo_is_light(path):
@@ -463,6 +467,7 @@ def main():
     else:
         for f in ("magazin/index.html", "magazin/feed.xml"):
             if os.path.exists(f): os.remove(f)
+    glossar.patch_erklaerseiten(posts)
     patch_sitemap(posts); patch_llms(posts); patch_home(posts); patch_news(posts); write_mag_index(posts); patch_nav_everywhere(bool(posts))
     write_overview(allp)
     print(f"{len(posts)} Artikel gebaut")

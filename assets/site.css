@@ -115,3 +115,8 @@ article p,article li,article td{overflow-wrap:anywhere}
 .mag-more-h{margin:8px 0 0;font-size:22px}
 @media (max-width:900px){.mag-top{grid-template-columns:1fr}.mag-hero-body{padding:16px 18px 20px}}
 .mag-side .mag-thumb .kicker{text-transform:none;letter-spacing:0;font-size:11.5px;font-weight:500;color:var(--mut);margin-top:6px}.mag-side .mag-thumb .kicker b{display:block;font-weight:700;color:var(--accd)}
+
+/* Verlinkung Magazin <-> Erklaerartikel */
+.glossar-link{color:inherit;text-decoration:underline;text-decoration-color:var(--acc);text-decoration-thickness:2px;text-underline-offset:2px}
+.glossar-link:hover{color:var(--accd)}
+.related.glossar .glossar-grund{display:block;font-size:14px;color:var(--mut)}

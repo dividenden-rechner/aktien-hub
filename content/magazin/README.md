@@ -78,3 +78,7 @@ Ergebnis: ein Entwurf (`draft: true`) in `content/magazin/`. Hinweise für dich 
 Gibt es den Artikel schon, bricht der Agent ab, damit nichts überschrieben wird.
 Zum Veröffentlichen: lesen, Zahlen prüfen, `draft: true` löschen.
 Voraussetzungen: Secret `GEMINI_API_KEY`; optional Variable `SEC_USER_AGENT` (Name und E-Mail, so verlangt es die SEC).
+
+## Erklaerartikel automatisch verlinken
+
+Stichworte, die im Magazin automatisch auf Grundlagen- und Fortgeschrittenen-Artikel verlinken, stehen in `tools/glossar.json` (neue Erklaerartikel dort eintragen). Der Build setzt Textlinks, den Kasten "Hintergrund zum Thema" und auf den Erklaerseiten den Kasten "Aktuell im Magazin". Quellensteuer plus Boersenkuerzel oder Landesname fuehrt zur Laenderseite, eine Ausschuettungsquote ab 75 % zusaetzlich zur Dividendenfalle.
