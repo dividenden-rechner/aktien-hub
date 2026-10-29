@@ -414,13 +414,13 @@ def patch_nav_everywhere(has_posts):
     for f in glob.glob("**/*.html", recursive=True):
         if f.startswith(("magazin/", "node_modules/")) or f == "404.html": continue
         s = open(f, encoding="utf-8").read(); o = s
-        m = re.search(r'<a href="((?:\.\./)*)screener/">Screener</a>', s)
+        m = re.search(r'<a href="((?:\.\./)*)screener/"[^>]*>Screener</a>', s)
         if not m: continue
         pre = m.group(1)
         link = f'<a href="{pre}magazin/">Magazin</a>'
         s = s.replace(link, "")
         if has_posts:
-            s = s.replace(f'<a href="{pre}screener/">Screener</a>', f'<a href="{pre}screener/">Screener</a>{link}', 1)
+            s = re.sub(r'(<a href="%sscreener/"[^>]*>Screener</a>)' % re.escape(pre), lambda mm: mm.group(1) + link, s, count=1)
         if s != o: open(f, "w", encoding="utf-8").write(s)
 
 REPO = "dividenden-rechner/aktien-hub"
