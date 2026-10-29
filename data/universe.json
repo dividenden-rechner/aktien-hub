@@ -3019,6 +3019,265 @@
 "name": "Zoetis",
 "cik": 1555280,
 "sektor": "Health Care"
+},
+{
+"sym": "NVO",
+"name": "Novo Nordisk A S",
+"cik": 353278,
+"sektor": "",
+"fpi": true
+},
+{
+"sym": "ASML",
+"name": "Asml Holding Nv",
+"cik": 937966,
+"sektor": "",
+"fpi": true
+},
+{
+"sym": "SAP",
+"name": "Sap Se",
+"cik": 1000184,
+"sektor": "",
+"fpi": true
+},
+{
+"sym": "SHEL",
+"name": "Shell plc",
+"cik": 1306965,
+"sektor": "",
+"fpi": true
+},
+{
+"sym": "UL",
+"name": "Unilever Plc",
+"cik": 217410,
+"sektor": "",
+"fpi": true
+},
+{
+"sym": "HSBC",
+"name": "Hsbc Holdings Plc",
+"cik": 1089113,
+"sektor": "",
+"fpi": true
+},
+{
+"sym": "NVS",
+"name": "Novartis Ag",
+"cik": 1114448,
+"sektor": "",
+"fpi": true
+},
+{
+"sym": "AZN",
+"name": "Astrazeneca Plc",
+"cik": 901832,
+"sektor": "",
+"fpi": true
+},
+{
+"sym": "TM",
+"name": "Toyota Motor Corp/",
+"cik": 1094517,
+"sektor": "",
+"fpi": true
+},
+{
+"sym": "SONY",
+"name": "Sony Group Corp",
+"cik": 313838,
+"sektor": "",
+"fpi": true
+},
+{
+"sym": "TSM",
+"name": "Taiwan Semiconductor Manufacturing Co Ltd",
+"cik": 1046179,
+"sektor": "",
+"fpi": true
+},
+{
+"sym": "BABA",
+"name": "Alibaba Group Holding Ltd",
+"cik": 1577552,
+"sektor": "",
+"fpi": true
+},
+{
+"sym": "BP",
+"name": "Bp Plc",
+"cik": 313807,
+"sektor": "",
+"fpi": true
+},
+{
+"sym": "SAN",
+"name": "Banco Santander, S.A.",
+"cik": 891478,
+"sektor": "",
+"fpi": true
+},
+{
+"sym": "UBS",
+"name": "UBS Group AG",
+"cik": 1610520,
+"sektor": "",
+"fpi": true
+},
+{
+"sym": "GSK",
+"name": "GSK plc",
+"cik": 1131399,
+"sektor": "",
+"fpi": true
+},
+{
+"sym": "SNY",
+"name": "Sanofi",
+"cik": 1121404,
+"sektor": "",
+"fpi": true
+},
+{
+"sym": "TTE",
+"name": "TotalEnergies SE",
+"cik": 879764,
+"sektor": "",
+"fpi": true
+},
+{
+"sym": "DEO",
+"name": "Diageo Plc",
+"cik": 835403,
+"sektor": "",
+"fpi": true
+},
+{
+"sym": "BTI",
+"name": "British American Tobacco p.l.c.",
+"cik": 1303523,
+"sektor": "",
+"fpi": true
+},
+{
+"sym": "RIO",
+"name": "Rio Tinto Plc",
+"cik": 863064,
+"sektor": "",
+"fpi": true
+},
+{
+"sym": "BHP",
+"name": "BHP Group Ltd",
+"cik": 811809,
+"sektor": "",
+"fpi": true
+},
+{
+"sym": "HMC",
+"name": "Honda Motor Co Ltd",
+"cik": 715153,
+"sektor": "",
+"fpi": true
+},
+{
+"sym": "ING",
+"name": "Ing Groep Nv",
+"cik": 1039765,
+"sektor": "",
+"fpi": true
+},
+{
+"sym": "PHG",
+"name": "Koninklijke Philips Nv",
+"cik": 313216,
+"sektor": "",
+"fpi": true
+},
+{
+"sym": "ERIC",
+"name": "Ericsson Lm Telephone Co",
+"cik": 717826,
+"sektor": "",
+"fpi": true
+},
+{
+"sym": "NOK",
+"name": "Nokia Corp",
+"cik": 924613,
+"sektor": "",
+"fpi": true
+},
+{
+"sym": "STLA",
+"name": "Stellantis N.V.",
+"cik": 1605484,
+"sektor": "",
+"fpi": true
+},
+{
+"sym": "E",
+"name": "Eni Spa",
+"cik": 1002242,
+"sektor": "",
+"fpi": true
+},
+{
+"sym": "BCS",
+"name": "Barclays Plc",
+"cik": 312069,
+"sektor": "",
+"fpi": true
+},
+{
+"sym": "LYG",
+"name": "Lloyds Banking Group plc",
+"cik": 1160106,
+"sektor": "",
+"fpi": true
+},
+{
+"sym": "DB",
+"name": "Deutsche Bank Aktiengesellschaft",
+"cik": 1159508,
+"sektor": "",
+"fpi": true
+},
+{
+"sym": "MUFG",
+"name": "Mitsubishi Ufj Financial Group Inc",
+"cik": 67088,
+"sektor": "",
+"fpi": true
+},
+{
+"sym": "SMFG",
+"name": "Sumitomo Mitsui Financial Group, Inc.",
+"cik": 1022837,
+"sektor": "",
+"fpi": true
+},
+{
+"sym": "BBVA",
+"name": "Banco Bilbao Vizcaya Argentaria, S.A.",
+"cik": 842180,
+"sektor": "",
+"fpi": true
+},
+{
+"sym": "ABBNY",
+"name": "Abb Ltd",
+"cik": 1091587,
+"sektor": "",
+"fpi": true
+},
+{
+"sym": "VOD",
+"name": "Vodafone Group Public Ltd Co",
+"cik": 839923,
+"sektor": "",
+"fpi": true
 }
 ]
 }

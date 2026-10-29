@@ -1,6 +1,168 @@
 {
  "items": [
   {
+   "slug": "shell-dividende-q3-2026",
+   "title": "Shell plc: Interimsdividende von 0,3906 US-Dollar für Q3 2026",
+   "sym": "SHEL",
+   "date": "2026-10-30T00:28:00+01:00"
+  },
+  {
+   "slug": "emcor-group-q3-2026-zahlen-prognose",
+   "title": "Emcor Group steigert Q3-Umsatz 2026 auf 5,54 Milliarden US-Dollar",
+   "sym": "EME",
+   "date": "2026-10-30T00:28:00+01:00"
+  },
+  {
+   "slug": "bbva-q3-2026-quartalszahlen-dividende",
+   "title": "Banco Bilbao Vizcaya Argentaria, S.A.: Ergebnisse für das Q3 2026",
+   "sym": "BBVA",
+   "date": "2026-10-30T00:28:00+01:00"
+  },
+  {
+   "slug": "bbva-neunmonatszahlen-2026-dividende",
+   "title": "BBVA: 9,07 Mrd. Euro Gewinn in den ersten neun Monaten 2026",
+   "sym": "BBVA",
+   "date": "2026-10-30T00:28:00+01:00"
+  },
+  {
+   "slug": "totalenergies-q3-2026-zahlen",
+   "title": "TotalEnergies SE: Nettogewinn von 8.263 Mio. USD im Q3 2026",
+   "sym": "TTE",
+   "date": "2026-10-30T00:27:00+01:00"
+  },
+  {
+   "slug": "shell-q3-2026-zwischenfinanzbericht",
+   "title": "Shell plc: Zwischenfinanzbericht zum 30. September 2026",
+   "sym": "SHEL",
+   "date": "2026-10-30T00:27:00+01:00"
+  },
+  {
+   "slug": "mastercard-q3-2026-finanzresultate",
+   "title": "Mastercard steigert Nettoumsatz im dritten Quartal 2026 auf 9,8 Milliarden US-Dollar",
+   "sym": "MA",
+   "date": "2026-10-30T00:27:00+01:00"
+  },
+  {
+   "slug": "lloyds-banking-group-q3-2026-zahlen",
+   "title": "Lloyds Banking Group: Q3-Ergebnis 2026 und Ausblick",
+   "sym": "LYG",
+   "date": "2026-10-30T00:27:00+01:00"
+  },
+  {
+   "slug": "intercontinental-exchange-quartalszahlen-q3-2026",
+   "title": "Intercontinental Exchange meldet 2,8 Mrd. USD Umsatz für das Q3 2026",
+   "sym": "ICE",
+   "date": "2026-10-30T00:27:00+01:00"
+  },
+  {
+   "slug": "ing-groep-q3-2026-ergebnisse-ausschuttung",
+   "title": "ING Groep N.V.: Nettoergebnis im 3Q 2026 bei 1.850 Millionen Euro",
+   "sym": "ING",
+   "date": "2026-10-30T00:27:00+01:00"
+  },
+  {
+   "slug": "doordash-uebernimmt-instacart-17-milliarden-dollar",
+   "title": "DoorDash übernimmt Instacart für rund 17 Milliarden US-Dollar",
+   "sym": "DASH",
+   "date": "2026-10-30T00:27:00+01:00"
+  },
+  {
+   "slug": "doordash-q3-2026-zahlen-instacart-uebernahme",
+   "title": "DoorDash: Umsatz steigt in Q3 2026 auf 4,6 Milliarden US-Dollar",
+   "sym": "DASH",
+   "date": "2026-10-30T00:27:00+01:00"
+  },
+  {
+   "slug": "carrier-global-q3-2026-zahlen",
+   "title": "Carrier Global: Umsatz steigt im dritten Quartal 2026 auf 6,263 Milliarden US-Dollar",
+   "sym": "CARR",
+   "date": "2026-10-30T00:27:00+01:00"
+  },
+  {
+   "slug": "bbva-quartalszahlen-q3-2026",
+   "title": "Banco Bilbao Vizcaya Argentaria, S.A.: Nettogewinn von 9.066 Mio. Euro in 9M 2026",
+   "sym": "BBVA",
+   "date": "2026-10-30T00:27:00+01:00"
+  },
+  {
+   "slug": "ing-groep-kapitalausschettung-programm-1-9-milliarden-euro-2026",
+   "title": "ING Groep N.V. kündigt Kapitalausschüttung von bis zu 1,9 Milliarden Euro an",
+   "sym": "ING",
+   "date": "2026-10-30T00:26:00+01:00"
+  },
+  {
+   "slug": "eni-aktienrueckkauf-oktober-2026",
+   "title": "Eni: Aktienrückkauf im Wert von 99.999.920,28 Euro im Oktober 2026",
+   "sym": "E",
+   "date": "2026-10-30T00:26:00+01:00"
+  },
+  {
+   "slug": "vodafone-wechsel-executive-committee-dezember-2026",
+   "title": "Vodafone Group: Wechsel im Executive Committee zum 31. Dezember 2026",
+   "sym": "VOD",
+   "date": "2026-10-30T00:25:00+01:00"
+  },
+  {
+   "slug": "ubs-q3-2026-pillar3-bericht",
+   "title": "UBS Group AG: CET1-Kapital steigt im dritten Quartal 2026 auf 73,1 Mrd. USD",
+   "sym": "UBS",
+   "date": "2026-10-30T00:25:00+01:00"
+  },
+  {
+   "slug": "hsbc-holdings-plc-aktienrueckkauf-oktober-2026",
+   "title": "HSBC Holdings plc kündigt Aktienrückkauf über bis zu 1.000.000.000 US-Dollar an",
+   "sym": "HSBC",
+   "date": "2026-10-30T00:25:00+01:00"
+  },
+  {
+   "slug": "gsk-q3-2026-zahlen-und-dividende",
+   "title": "GSK: Q3-Umsatz von 8,887 Mrd. Pfund und Dividende von 17p",
+   "sym": "GSK",
+   "date": "2026-10-30T00:25:00+01:00"
+  },
+  {
+   "slug": "british-american-tobacco-board-wechsel-januar-2027",
+   "title": "British American Tobacco: Neuer Non-Executive Director ab Januar 2027",
+   "sym": "BTI",
+   "date": "2026-10-30T00:25:00+01:00"
+  },
+  {
+   "slug": "ubs-group-q3-2026-zahlen",
+   "title": "UBS Group AG: Nettogewinn von 2.690 Mio. USD im dritten Quartal 2026",
+   "sym": "UBS",
+   "date": "2026-10-30T00:24:00+01:00"
+  },
+  {
+   "slug": "ubs-group-ag-q3-2026-finanzresultate",
+   "title": "UBS Group AG veröffentlicht Finanzergebnisse für das dritte Quartal 2026",
+   "sym": "UBS",
+   "date": "2026-10-30T00:24:00+01:00"
+  },
+  {
+   "slug": "ing-group-srep-prozess-2026-kapitalanforderungen",
+   "title": "ING Group: EZB legt Kapitalanforderungen fuer 2027 fest",
+   "sym": "ING",
+   "date": "2026-10-30T00:24:00+01:00"
+  },
+  {
+   "slug": "deutsche-bank-quartalsbericht-q3-2026",
+   "title": "Deutsche Bank: Finanzbericht zum 30. September 2026 vorgelegt",
+   "sym": "DB",
+   "date": "2026-10-30T00:24:00+01:00"
+  },
+  {
+   "slug": "banco-santander-q3-2026-zahlen-dividende",
+   "title": "Banco Santander: Underlying profit steigt in 9M 2026 auf 11.176 Mio. Euro",
+   "sym": "SAN",
+   "date": "2026-10-30T00:24:00+01:00"
+  },
+  {
+   "slug": "banco-santander-ergebnisse-9m-2026",
+   "title": "Banco Santander erzielt 11,176 Mrd. Euro zugrundeliegenden Gewinn in 9M",
+   "sym": "SAN",
+   "date": "2026-10-30T00:24:00+01:00"
+  },
+  {
    "slug": "starbucks-geschaeftsbericht-2026",
    "title": "Starbucks steigert Umsatz im Geschäftsjahr 2026 auf 37,9 Milliarden Dollar",
    "sym": "SBUX.TO",
