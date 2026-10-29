@@ -45,8 +45,26 @@ SCHEMA = {
         "description": {"type": "STRING", "description": "Ein bis zwei Saetze, hoechstens 200 Zeichen"},
         "body_markdown": {"type": "STRING", "description": "Drei bis fuenf Saetze Fliesstext auf Deutsch, hoechstens 120 Woerter"},
         "slug": {"type": "STRING", "description": "kurze URL-Kennung in Kleinbuchstaben, z. B. altria-dividende-q4-2026"},
+        "foto_person": {"type": "STRING", "description": "Voller Name einer Person, die im Mittelpunkt der Meldung steht (neuer CEO, neuer Finanzchef, Ruecktritt), sonst leer"},
     },
 }
+CTX_SCHEMA = {
+    "type": "OBJECT",
+    "required": ["einordnung_titel", "einordnung_markdown"],
+    "properties": {
+        "einordnung_titel": {"type": "STRING", "description": "Kurze, konkrete Zwischenueberschrift (3 bis 8 Woerter), die den Kern der Einordnung benennt; nicht 'Einordnung'"},
+        "einordnung_markdown": {"type": "STRING", "description": "Ein bis zwei Absaetze, zusammen 70 bis 140 Woerter"},
+    },
+}
+CTX_PROMPT = """Schreibe die Einordnung zu dieser Kurzmeldung fuer ein deutsches Finanzportal fuer Privatanleger.
+Die Einordnung ist Pflicht und beantwortet, soweit durch TEXT und HINTERGRUND belegt:
+- Wie ist das im Vergleich zu den wichtigsten Wettbewerbern (Peers) oder zur Branche zu sehen?
+- Was war in den letzten Quartalen und Jahren (Trend oder Ausreisser)?
+- Welche aktuellen Themen des Unternehmens spielen hinein (Strategie, Fuehrung, Rechtsstreit, Regulierung, Zoelle, Uebernahmen)?
+- Wie ist die Finanzlage (Schulden, Cashflow, Dividendendeckung), soweit bekannt?
+Regeln: Nutze nur Fakten aus der PRESSEMITTEILUNG und dem HINTERGRUND. Zahlen aus dem HINTERGRUND nur mit Zeitbezug und als Einordnung
+('im Vorjahr', 'laut Medienberichten'); nenne wenige Zahlen. Nichts erfinden, keine Kaufempfehlung, keine Kursprognose.
+Wenn der HINTERGRUND wenig hergibt, schreibe lieber kurz und beschraenke dich auf das Belegte. Sachlich, auch Kritisches nennen. Deutsch."""
 PROMPT = """Du schreibst Kurzmeldungen fuer ein deutsches Finanzportal fuer Privatanleger (Schwerpunkt Dividenden).
 Unten steht eine Pressemitteilung. Entscheide zuerst, ob sie fuer Anleger relevant ist.
 
@@ -61,7 +79,8 @@ Wenn relevant, schreibe:
   (zum Beispiel '1,02 US-Dollar je Aktie', 'im dritten Quartal 2026'). Nichts hinzuerfinden, nichts umrechnen.
 - Erster Satz: Was ist passiert? Danach die wichtigsten Zahlen, zuletzt ein Satz mit dem naechsten Termin (zum Beispiel Zahltag), falls genannt.
 - Keine woertlichen Zitate, keine Ueberschriften, keine Aufzaehlungen.
-- Der Firmenname steht im Titel."""
+- Der Firmenname steht im Titel.
+- foto_person: nur setzen, wenn eine einzelne Person im Mittelpunkt steht (zum Beispiel Ernennung eines neuen Vorstandschefs), sonst leer."""
 
 UA_HDR = ia.UA
 
@@ -195,6 +214,82 @@ def generate(c, text):
     return ia._generate([{"text": prompt}], SCHEMA, ia.api_key())
 
 
+def background(c, text):
+    """Websuche (Gemini) mit Hintergrund zu Peers, Vergangenheit, aktuellen Themen und Finanzlage. Liefert (Text, Quellen)."""
+    if os.environ.get("KURZ_MOCK"):
+        m = json.load(open(os.environ["KURZ_MOCK"], encoding="utf-8")).get("_hintergrund", "")
+        return m, []
+    prompt = (f"Recherchiere mit der Websuche knappen Hintergrund zu {c['name']} ({c['sym']}) zu dieser Meldung: {text[:1500]}\n\n"
+              "Liefere Stichpunkte auf Deutsch mit Zahlen und Zeitangaben zu: 1. Vergleich mit den wichtigsten Wettbewerbern und der Branche. "
+              "2. Entwicklung in den letzten Quartalen und zwei bis drei Jahren. 3. Aktuelle Unternehmensthemen (Strategie, Fuehrungswechsel, Rechtsstreit, "
+              "Regulierung, Zoelle, Uebernahmen). 4. Finanzlage (Schulden, Cashflow, Rating, Dividendenhistorie). "
+              "Berichte sachlich und kritisch. Nenne zu jeder Zahl Jahr oder Quartal. Erfinde nichts; was du nicht findest, laesst du weg.")
+    return ia.ground(prompt, ia.api_key())
+
+
+def context_part(c, text, out, bg):
+    """Zweiter Modellaufruf: Einordnung aus Pressemitteilung und Hintergrund."""
+    mock = os.environ.get("KURZ_MOCK")
+    if mock:
+        d = json.load(open(mock, encoding="utf-8")).get("_einordnung")
+        return d
+    prompt = (f"{CTX_PROMPT}\n\nUNTERNEHMEN: {c['name']} ({c['sym']})\n\nKURZMELDUNG (bereits geschrieben):\n{out['body_markdown']}\n\n"
+              f"PRESSEMITTEILUNG (Auszug):\n{text[:8000]}\n\nHINTERGRUND (per Websuche):\n{bg[:8000] or '(keiner verfuegbar)'}")
+    return ia._generate([{"text": prompt}], CTX_SCHEMA, ia.api_key())
+
+
+def person_photo(c, person, slug):
+    """Portraet der genannten Person von Wikimedia Commons (freie Lizenz); None, wenn keins eindeutig passt."""
+    import urllib.parse
+    from io import BytesIO
+    from PIL import Image
+    if os.environ.get("KURZ_MOCK"):
+        return None
+    ua = "dividenden-rechner.de Magazin-Agent (https://www.dividenden-rechner.de)"
+    seen = {}
+    for term in (person, f"{person} {c['name']}"):
+        q = urllib.parse.urlencode({"action": "query", "format": "json", "generator": "search", "gsrsearch": term, "gsrnamespace": 6, "gsrlimit": 15,
+                                    "prop": "imageinfo", "iiprop": "url|size|mime|extmetadata", "iiurlwidth": 900})
+        try:
+            data = json.loads(ia.http("https://commons.wikimedia.org/w/api.php?" + q, ua=ua))
+        except Exception as e:
+            log("  Commons nicht erreichbar:", str(e)[:80]); continue
+        for pg in (data.get("query", {}).get("pages", {}) or {}).values():
+            ii = (pg.get("imageinfo") or [{}])[0]; md = ii.get("extmetadata", {})
+            title = pg.get("title", ""); lic = ia._strip(md.get("LicenseShortName", {}).get("value", ""))
+            if (ii.get("mime") != "image/jpeg" or ii.get("width", 0) < 500 or ia.BAD_TITLE.search(title) or not ia.OK_LIC.search(lic)
+                    or re.search(r"-(NC|ND)", lic) or ia._strip(md.get("Restrictions", {}).get("value", "")) or not ii.get("thumburl")):
+                continue
+            seen[title] = {"title": title, "thumb": ii["thumburl"], "page": ii.get("descriptionurl", ""), "lic": lic,
+                           "artist": ia._strip(md.get("Artist", {}).get("value", "")) or "Unbekannt",
+                           "desc": ia._strip(md.get("ImageDescription", {}).get("value", ""))[:200],
+                           "date": ia._strip(md.get("DateTimeOriginal", {}).get("value", ""))[:10]}
+    cands = list(seen.values())[:20]
+    log(f"  Foto-Kandidaten fuer {person}: {len(cands)}")
+    if not cands:
+        return None
+    listing = "\n".join(f"{i}: {x['title']} | {x['desc']} | {x['date']}" for i, x in enumerate(cands))
+    prompt = (f"Welches Foto zeigt eindeutig {person} ({c['name']})? Der Name muss im Dateititel oder in der Beschreibung stehen, "
+              "das Foto soll die Person allein oder klar erkennbar im Mittelpunkt zeigen und nicht stark veraltet sein. "
+              "Wenn keins sicher passt, antworte -1.\n\n" + listing)
+    try:
+        idx = ia._generate([{"text": prompt}], {"type": "OBJECT", "required": ["index"], "properties": {"index": {"type": "INTEGER"}}}, ia.api_key())["index"]
+    except SystemExit:
+        return None
+    if not (isinstance(idx, int) and 0 <= idx < len(cands)):
+        return None
+    ph = cands[idx]
+    try:
+        im = Image.open(BytesIO(ia.http(ph["thumb"], binary=True, ua=ua))).convert("RGB")
+        im.thumbnail((900, 900))
+        rel = f"assets/magazin/{slug}-foto.jpg"
+        os.makedirs(os.path.join(ROOT, "assets", "magazin"), exist_ok=True)
+        im.save(os.path.join(ROOT, rel), "JPEG", quality=85, optimize=True)
+    except Exception as e:
+        log("  Foto nicht speicherbar:", str(e)[:80]); return None
+    return {"rel": rel, "alt": f"Foto von {person}", "credit": ia.photo_credit(ph), "source": ph["page"]}
+
+
 def _nums(t):
     return [re.sub(r"[.,]", "", x) for x in re.findall(r"\d[\d.,]*\d|\d", t)]
 
@@ -222,7 +317,7 @@ def esc_yaml(s):
     return str(s).replace("\\", " ").replace('"', "'").replace("\n", " ").strip()
 
 
-def write_post(c, out, url, bad):
+def write_post(c, out, url, bad, ctx=None, srcs=None, photo=None):
     now = datetime.now(ZoneInfo("Europe/Berlin"))
     slug = slugify(out.get("slug") or out["title"])
     existing = [f for f in os.listdir(OUT_DIR) if f.endswith(f"{slug}.md")]
@@ -234,10 +329,16 @@ def write_post(c, out, url, bad):
     head = ["---", f'title: "{esc_yaml(out["title"])}"', f'description: "{esc_yaml(out["description"])}"', f"date: {now.strftime('%Y-%m-%d %H:%M')}",
             f'author: "{ia.CFG["author"]}"', f'author_bio: "{esc_yaml(ia.CFG["author_bio"])}"', f'category: {out.get("category") or "Sonstige Meldung"}',
             "typ: kurz", f'quelle_url: {url}', f'quelle_name: "{esc_yaml(name)}"', f'logo_symbol: {c["sym"]}', f'logo_name: "{esc_yaml(c["name"])}"']
+    if photo:
+        head += [f'image: {photo["rel"]}', f'image_alt: "{esc_yaml(photo["alt"])}"', f'image_credit: "{esc_yaml(photo["credit"])}"', f'image_source: {photo["source"]}']
     if bad:
         head.append("draft: true")
     head.append("---")
     body = out["body_markdown"].strip()
+    if ctx:
+        body += f"\n\n## {ctx['einordnung_titel'].strip()}\n\n{ctx['einordnung_markdown'].strip()}"
+        if srcs:
+            body += "\n\nWeitere Quellen zum Hintergrund: " + " · ".join(f"[{(ti or u)[:60]}]({u})" for ti, u in srcs[:5])
     if bad:
         body = f"<!-- PRÜFEN: Diese Zahlen stehen nicht im Originaltext: {', '.join(bad)}. Bitte pruefen, dann 'draft: true' loeschen. -->\n\n" + body
     open(path, "w", encoding="utf-8").write("\n".join(head) + "\n" + body + "\n")
@@ -338,9 +439,22 @@ def main():
         if not (out.get("title") and out.get("body_markdown") and out.get("description")):
             log("  Antwort unvollstaendig"); continue
         bad = unverified_numbers(out["body_markdown"] + " " + out["title"] + " " + out["description"], text)
+        bg, srcs = "", []
+        ctx = None
+        try:
+            bg, srcs = background(c, text)
+            ctx = context_part(c, text, out, bg)
+        except SystemExit:
+            log("  Einordnung: Modell-Fehler")
+        if ctx and ctx.get("einordnung_markdown") and ctx.get("einordnung_titel"):
+            bad += ["Einordnung: " + t for t in unverified_numbers(ctx["einordnung_markdown"], text + " " + bg)]
+        else:
+            ctx = None; bad.append("Einordnung fehlt (Hintergrundrecherche nicht verfuegbar)")
+        slug_guess = slugify(out.get("slug") or out["title"])
+        photo = person_photo(c, out["foto_person"].strip(), slug_guess) if (out.get("foto_person") or "").strip() and not a.dry else None
         if a.dry:
             log("  [dry]", out["title"], "| ungeprueft:", bad); continue
-        p = write_post(c, out, url, bad)
+        p = write_post(c, out, url, bad, ctx, srcs, photo)
         if p:
             made += 1; log("  geschrieben:", os.path.basename(p), "(Entwurf)" if bad else "")
     cut = (datetime.now(timezone.utc) - timedelta(days=30)).strftime("%Y-%m-%d")

@@ -258,8 +258,9 @@ def build_post(p, posts):
         cred = esc(cred)
     cap = f'<figcaption>{cred}</figcaption>' if cred else ""
     kurz = p.get("typ") == "kurz"
-    if not kurz:
-        o += f'<figure class="cover"><img src="{pre}{img}" alt="{esc(alt)}" width="1200" height="675" fetchpriority="high">{cap}</figure>\n'
+    if not kurz or p.get("image"):
+        o += (f'<figure class="cover kurzcover"><img src="{pre}{img}" alt="{esc(alt)}" loading="lazy">{cap}</figure>\n' if kurz else
+              f'<figure class="cover"><img src="{pre}{img}" alt="{esc(alt)}" width="1200" height="675" fetchpriority="high">{cap}</figure>\n')
     o += body + "\n"
     if kurz and p.get("quelle_url", "").startswith("http"):
         o += (f'<p class="kurzquelle">Quelle: <a href="{esc(p["quelle_url"])}" rel="noopener nofollow" target="_blank">{esc(p.get("quelle_name") or "Originalmeldung des Unternehmens")}</a></p>\n')

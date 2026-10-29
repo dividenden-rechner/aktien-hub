@@ -84,3 +84,10 @@ Stil (verbindlich, gilt für alles oben): Schreibe wie ein erfahrener Wirtschaft
 Sprache (verbindlich, gilt für den ganzen Artikel, auch für Dokumente, die keine Ergebnisberichte sind, und hat Vorrang vor dem Handelsblatt-Ton oben): Der Inhalt bleibt genau und analytisch, die Wortwahl ist einfach und locker, wie im Gespräch mit Freunden. Kurze Sätze, normale Wörter, keine Behörden- oder Beraterdeutsch. Vermeide typische KI-Floskeln, zum Beispiel "getrieben von", "geprägt von", "unterstreicht", "spiegelt wider", "im Zuge", "vor dem Hintergrund", "bleibt abzuwarten", "insgesamt zeigt sich", "ein Zeichen für", "Fokus auf", "Dynamik", "Landschaft". Sag stattdessen einfach, was passiert ist und warum.
 
 Zeichen (verbindlich): Schreibe Umlaute und Sonderzeichen direkt als echte Zeichen (ä, ö, ü, ß, é, €, %, –), niemals als HTML-Schreibweise wie &auml; oder &amp;. Brüche schreibst du als Dezimalzahl mit Komma (3,75 statt 3-3/4). Zahlen deutsch: Komma als Dezimalzeichen, Punkt oder Leerzeichen als Tausendertrenner.
+
+Einordnung (Pflicht in jedem Artikel, auch bei Dividenden-, Insider-, Split- und Meldungen zu Ereignissen): Jeder Artikel enthält einen eigenen Abschnitt mit individueller H2, die den Kern der Einordnung benennt (nicht "Einordnung"), mit ein bis drei Absätzen. Er beantwortet, soweit durch Dokument, FAKTEN und HINTERGRUND belegt:
+1. Peers: Wie steht das Unternehmen im Vergleich zu den wichtigsten Wettbewerbern und zur Branche da (Wachstum, Marge, Bewertung, Dividendenrendite)?
+2. Vergangenheit: Was war in den letzten Quartalen und Jahren, ist das ein Trend oder ein Ausreißer?
+3. Aktuelle Unternehmensthemen: Strategie, Führungswechsel, Rechtsstreit, Regulierung, Zölle, Übernahmen, Produktzyklen, Politik.
+4. Finanzlage: Verschuldung, Cashflow, Dividendendeckung, Rating, Refinanzierung.
+Zahlen aus dem HINTERGRUND mit Zeitbezug und als Einordnung, nichts erfinden, Negatives deutlich nennen. Gibt der HINTERGRUND zu einem Punkt nichts her, lässt du diesen Punkt weg, statt zu spekulieren, aber der Abschnitt entfällt nie ganz.

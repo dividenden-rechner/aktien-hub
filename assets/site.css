@@ -135,3 +135,4 @@ article p,article li,article td{overflow-wrap:anywhere}
 .mag-archiv a:hover strong{color:var(--accd)}
 @media(max-width:760px){.mag-archiv{grid-template-columns:1fr}}
 .kurzquelle{font-size:14px;color:var(--mut);margin:14px 0}.mag-kurz{margin-bottom:28px}
+.kurzcover{max-width:260px}
