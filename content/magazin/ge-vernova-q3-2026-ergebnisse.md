@@ -29,7 +29,7 @@ logo_file: assets/logos/gev.png
 ![Segmentumsatz 3Q 2026 (GE Vernova, Quartalszahlen Q3 2026)](/assets/magazin/ge-vernova-q3-2026-ergebnisse-grafik.png)
 *Eigene Darstellung nach Daten aus: GE Vernova, Quartalszahlen Q3 2026 vom 2026-10-28.*
 
-## Die ausführliche Version
+## Energietechnik und Netzlösungen treiben GE Vernova
 
 GE Vernova hat im dritten Quartal 2026 die Geschäftszahlen vorgelegt und ein deutliches Wachstum bei Umsatz und Gewinn verzeichnet. Der Konzern profitiert von einer hohen Nachfrage nach Energietechnik und netzbezogenen Lösungen.
 

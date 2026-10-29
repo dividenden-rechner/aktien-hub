@@ -34,7 +34,7 @@ Die erste Zeile im Kasten nennt die beiden Kennzahlen (Werte und Prozent aus Ber
 3. Größtes Problem: Wo hakt es in diesem Quartal oder Jahr am meisten (Rückgang, Margendruck, Schulden, Rechtsrisiko, Abhängigkeit von einem Produkt). Gibt es wirklich nichts Kritisches, nenne den größten offenen Punkt im Ausblick.
 Die Stichworte sind kurz (ein bis drei Wörter), sachlich und sollen von Artikel zu Artikel abwechseln (zum Beispiel "Zahlen", "Ergebnis", "Ursache", "Treiber", "Bremse", "Knackpunkt", "Risiko", "Schwachstelle"; nie umgangssprachliche Wortspiele), genauso wie Satzanfänge und Wortwahl: Die Kästen verschiedener Artikel dürfen nicht nach Schablone klingen. Ausblick und Dividendenerhöhung kommen nur in die ausführliche Version, außer eines von beiden ist die Hauptnachricht.
 
-Teil 2, ausführliche Version. Nach dem Kasten folgt die Zwischenüberschrift "## Die ausführliche Version" und darunter dasselbe noch einmal ausführlich und journalistisch, mit den Abschnitten unten. Die Zwischenüberschriften dieser Abschnitte setzt du mit ### (nicht mit ##).
+Teil 2, ausführliche Version. Nach dem Kasten folgt eine individuelle Hauptüberschrift mit ## (genau eine, kurze Aussage, die den Fokus auf das Kernthema des Artikels lenkt, zum Beispiel "Ping An wächst operativ, Marktverluste drücken den Nettogewinn"). Schreibe NIE "Die ausführliche Version", "Ausführliche Version", "Details" oder ähnliche Etiketten als Überschrift. Darunter folgt dasselbe noch einmal ausführlich und journalistisch, mit den Abschnitten unten. Die Zwischenüberschriften dieser Abschnitte setzt du mit ### (nicht mit ##).
 
 Ausführliche Version, Aufbau (Zwischenüberschriften mit ###, jeweils sprechend, nicht "Einleitung"):
 1. Einstieg: zwei bis drei Sätze mit dem Wichtigsten.

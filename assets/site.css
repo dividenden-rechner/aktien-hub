@@ -90,3 +90,26 @@ article p,article li,article td{overflow-wrap:anywhere}
 .post blockquote{margin:18px 0;padding:6px 18px;border-left:4px solid #2f9e5b;background:#f6faf7;border-radius:0 10px 10px 0}.post blockquote p{margin:8px 0}
 
 .mclogo.combo{width:auto;height:auto;padding:0;background:none;box-shadow:none;border-radius:0}.titlerow .hlogo.combo{width:auto;height:64px;border:0;background:none;padding:0}
+
+/* Magazin-Startseite: Aufmacher */
+.mag-top{display:grid;grid-template-columns:minmax(0,1.9fr) minmax(0,1fr);gap:22px;margin:20px 0 30px;align-items:stretch}
+.mag-hero{display:flex;flex-direction:column;border:1px solid var(--line);border-radius:16px;overflow:hidden;text-decoration:none;color:var(--ink);background:#fff;transition:border-color .15s,box-shadow .15s}
+.mag-hero:hover{border-color:var(--acc);box-shadow:0 6px 24px rgba(0,0,0,.08)}
+.mag-hero .mcover{aspect-ratio:16/9}
+.mag-hero-body{padding:18px 24px 24px}
+.mag-hero .kicker{margin:0 0 8px;font-size:13px;font-weight:700;letter-spacing:.04em;text-transform:uppercase;color:var(--accd)}
+.mag-badge{display:inline-block;background:var(--acc);color:#fff;border-radius:6px;padding:2px 8px;margin-right:6px;letter-spacing:.03em}
+.mag-hero h2{margin:0 0 10px;font-size:clamp(26px,3.2vw,40px);line-height:1.15;color:var(--ink)}
+.mag-lead{margin:0 0 14px;font-size:17px;color:var(--mut)}
+.mag-more{font-weight:700;color:var(--accd)}
+.mag-side{border:1px solid var(--line);border-radius:16px;padding:6px 18px 10px;background:#fff}
+.mag-side h2{margin:12px 0 4px;font-size:15px;letter-spacing:.05em;text-transform:uppercase;color:var(--mut)}
+.mag-side ul{list-style:none;margin:0;padding:0}
+.mag-side li{border-top:1px solid var(--line)}.mag-side li:first-child{border-top:0}
+.mag-side a{display:flex;gap:12px;padding:12px 0;text-decoration:none;color:var(--ink);align-items:flex-start}
+.mag-side img{flex:0 0 96px;width:96px;height:auto;aspect-ratio:16/9;object-fit:cover;border-radius:8px;border:1px solid var(--line)}
+.mag-side .kicker{display:block;margin:0 0 2px;font-size:12px;font-weight:700;letter-spacing:.04em;text-transform:uppercase;color:var(--accd)}
+.mag-side strong{display:block;font-size:16px;line-height:1.3}
+.mag-side a:hover strong{color:var(--accd)}
+.mag-more-h{margin:8px 0 0;font-size:22px}
+@media (max-width:900px){.mag-top{grid-template-columns:1fr}.mag-hero-body{padding:16px 18px 20px}}

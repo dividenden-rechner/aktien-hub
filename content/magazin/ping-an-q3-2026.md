@@ -29,7 +29,7 @@ logo_file: assets/logos/2318-hk.png
 ![Wichtige Finanzkennzahlen der Ping An Gruppe (9M 2026) (Ping An Insurance (Group) Company of China, Ltd., Quartalszahlen Q3 2026)](/assets/magazin/ping-an-q3-2026-grafik.png)
 *Eigene Darstellung nach Daten aus: Ping An Insurance (Group) Company of China, Ltd., Quartalszahlen Q3 2026 vom 2026-10-28.*
 
-## Die ausführliche Version
+## Ping An wächst operativ, Marktverluste drücken den Nettogewinn
 
 ### Operatives Wachstum trotzt Marktturbulenzen
 Der chinesische Finanzkonzern Ping An verzeichnete in den ersten neun Monaten 2026 eine solide operative Entwicklung. Während das laufende Geschäft in den Kernsparten zulegen konnte, drückten Wertschwankungen am Kapitalmarkt auf den ausgewiesenen Nettogewinn.

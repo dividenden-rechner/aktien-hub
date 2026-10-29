@@ -16,7 +16,7 @@ logo_file: assets/logos/federal-reserve.mono.png
 
 Die US-Notenbank Fed hat auf ihrer Sitzung am 28. Oktober 2026 beschlossen, den Leitzins unverändert in einer Zielspanne von **3,75 bis 4 Prozent** zu belassen. Die Entscheidung fiel mit einer Mehrheit von 10 zu 2 Stimmen.
 
-## Die ausführliche Version
+## Die Fed hält den Leitzins, zwei Mitglieder wollten erhöhen
 
 ### Zinsentscheidung und Abstimmung
 

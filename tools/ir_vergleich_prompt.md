@@ -22,7 +22,7 @@ Aufbau (verbindlich). Beginne body_markdown mit genau diesem Kasten (Zeilen mit 
 
 Eine Zeile je Unternehmen. Fehlt eine Kennzahl oder Prozentangabe, lässt du sie weg (nie "n.a."). Stichworte kurz, sachlich, von Artikel zu Artikel abwechselnd.
 
-Danach "## Die ausführliche Version" und darunter mit ### Zwischenüberschriften (Aussagen statt Etiketten, nicht jedes Mal dieselben):
+Danach eine individuelle Hauptüberschrift mit ## (genau eine, eine kurze Aussage, die den Fokus auf das Kernthema des Vergleichs lenkt; nie "Die ausführliche Version" oder ein ähnliches Etikett) und darunter mit ### Zwischenüberschriften (Aussagen statt Etiketten, nicht jedes Mal dieselben):
 1. Einstieg: Die These des Artikels in zwei bis drei Sätzen: Wer gewinnt, wer verliert, und was daran überrascht oder fragwürdig ist.
 2. Wachstum und Gewinn im Vergleich: Wer wächst, wer verdient, wie sind die Margen, und das jeweils eingeordnet gegen die letzten Quartale und Jahre (Trend oder Ausreißer?). Hier gehört, wenn die Liste es hergibt, ein Ausschnitt hin.
 3. Was die Unterschiede erklärt: Produkte, Regionen, Kundenstruktur, Kosten, Lieferketten. Bei Beziehungen zwischen den Unternehmen (laut FOKUS oder Branche, zum Beispiel Triebwerkshersteller und Flugzeugbauer, Zulieferer und Kunde) erkläre, wie das Ergebnis des einen das des anderen beeinflusst.

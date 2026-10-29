@@ -1052,7 +1052,7 @@ def build(out, text, src_note, force=False, calc_rows=None, fmp_used=False, figs
     if used:
         hinweise.append("Ausschnitte aus dem Bericht im Text (" + ", ".join(used) + "): bitte prüfen, ob Zuschnitt und Platz passen. Unpassende Bildzeilen einfach löschen.")
     if has_chart:
-        mm = re.search(r"## Die ausführliche Version\n+(?:###[^\n]*\n+)?[^\n]+\n", body_md)   # nach dem Einstieg der ausfuehrlichen Version, nie im Kurz-Kasten
+        mm = re.search(r"(?m)^## [^\n]+\n+(?:###[^\n]*\n+)?[^\n]+\n", body_md)   # nach dem Einstieg unter der ersten H2 (individuelle Ueberschrift), nie im Kurz-Kasten
         if mm:
             parts = [body_md[:mm.end()].rstrip("\n"), body_md[mm.end():].lstrip("\n")]
         else:

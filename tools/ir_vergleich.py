@@ -344,7 +344,7 @@ def main():
     if has_chart:
         if "{{GRAFIK}}" in body: body = body.replace("{{GRAFIK}}", gtxt)
         else:
-            m_ = re.search(r"## Die ausführliche Version\n+(?:###[^\n]*\n+)?[^\n]+\n", body)
+            m_ = re.search(r"(?m)^## [^\n]+\n+(?:###[^\n]*\n+)?[^\n]+\n", body)
             body = (body[:m_.end()] + "\n" + gtxt + "\n" + body[m_.end():]) if m_ else body + "\n\n" + gtxt
     body = body.replace("{{GRAFIK}}", "")
     def bild(path_key, title, has, marker, alt_after):

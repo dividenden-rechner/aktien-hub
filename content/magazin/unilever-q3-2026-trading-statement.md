@@ -30,7 +30,7 @@ logo_file: assets/logos/ulvr-l.png
 ![Umsatzwachstum nach Region im Q3 2026 (Unilever, Quartalszahlen Q3 2026)](/assets/magazin/unilever-q3-2026-trading-statement-grafik.png)
 *Eigene Darstellung nach Daten aus: Unilever, Quartalszahlen Q3 2026 vom 2026-10-28.*
 
-## Die ausführliche Version
+## Unilever wächst über Kernmarken und Preise und hebt den Ausblick an
 
 Unilever hat im dritten Quartal 2026 seinen Umsatz kräftig gesteigert und den Ausblick für das Gesamtjahr angehoben. Der Konsumgüterkonzern profitierte dabei von einer anhaltend starken Nachfrage nach seinen Kernmarken und einer schrittweisen Preisanpassung in wichtigen Märkten.
 
