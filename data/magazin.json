@@ -1,6 +1,168 @@
 {
  "items": [
   {
+   "slug": "honeywell-aerospace-q3-2026-dividende",
+   "title": "Honeywell Aerospace: Quartalszahlen und erste Dividende von 0,40 US-Dollar",
+   "sym": "HONA",
+   "date": "2026-10-29T23:30:00+01:00"
+  },
+  {
+   "slug": "gen-digital-quartalszahlen-q2-2027",
+   "title": "Gen Digital steigert Umsatz auf 1,369 Milliarden US-Dollar und erhöht Jahresprognose",
+   "sym": "GEN",
+   "date": "2026-10-29T23:30:00+01:00"
+  },
+  {
+   "slug": "ford-quartalszahlen-q3-2026-dividende",
+   "title": "Ford Motor Company: 49,5 Mrd. US-Dollar Umsatz im dritten Quartal 2026",
+   "sym": "F",
+   "date": "2026-10-29T23:30:00+01:00"
+  },
+  {
+   "slug": "ebay-quartalszahlen-q3-2026",
+   "title": "eBay: Umsatz steigt auf 3,2 Milliarden US-Dollar im dritten Quartal 2026",
+   "sym": "EBAY",
+   "date": "2026-10-29T23:30:00+01:00"
+  },
+  {
+   "slug": "t-mobile-us-quartalszahlen-q3-2026",
+   "title": "T-Mobile US steigert Gewinn je Aktie im dritten Quartal 2026 auf 3,22 US-Dollar",
+   "sym": "TMUS",
+   "date": "2026-10-29T23:29:00+01:00"
+  },
+  {
+   "slug": "microsoft-quartalszahlen-q1-2027",
+   "title": "Microsoft: Umsatz steigt im ersten Quartal 2027 auf 92,3 Milliarden US-Dollar",
+   "sym": "MSFT",
+   "date": "2026-10-29T23:29:00+01:00"
+  },
+  {
+   "slug": "fedex-finanzdaten-anpassung-2026",
+   "title": "FedEx veröffentlicht angepasste Finanzzahlen für 2026",
+   "sym": "FDX",
+   "date": "2026-10-29T23:29:00+01:00"
+  },
+  {
+   "slug": "carvana-quartalszahlen-q3-2026",
+   "title": "Carvana: Umsatz steigt im dritten Quartal 2026 auf 8,040 Milliarden US-Dollar",
+   "sym": "CVNA",
+   "date": "2026-10-29T23:29:00+01:00"
+  },
+  {
+   "slug": "align-technology-ceo-wechsel-2026",
+   "title": "Align Technology: Jennifer L. Davis wird neue CEO ab 31. Dezember 2026",
+   "sym": "ALGN",
+   "date": "2026-10-29T23:29:00+01:00"
+  },
+  {
+   "slug": "alphabet-quartalszahlen-q3-2026-dividende",
+   "title": "Alphabet Inc.: Quartalszahlen Q3 2026 und Dividende von 0,22 US-Dollar",
+   "sym": "GOOGL",
+   "date": "2026-10-29T23:27:00+01:00"
+  },
+  {
+   "slug": "mgm-resorts-stimmrechtsvereinbarung-oktober-2026",
+   "title": "MGM Resorts: Geänderte Stimmrechtsvereinbarung nach Rücknahme der Übernahme",
+   "sym": "MGM",
+   "date": "2026-10-29T23:26:00+01:00"
+  },
+  {
+   "slug": "masco-q3-2026-zahlen-und-dividende",
+   "title": "Masco Corporation: Q3-Zahlen 2026 und Quartalsdividende von 0,32 US-Dollar",
+   "sym": "MAS",
+   "date": "2026-10-29T23:26:00+01:00"
+  },
+  {
+   "slug": "idex-corporation-q3-2026-zahlen",
+   "title": "IDEX Corporation: Rekordumsatz von 952 Mio. US-Dollar im Q3 2026",
+   "sym": "IEX",
+   "date": "2026-10-29T23:26:00+01:00"
+  },
+  {
+   "slug": "garmin-q3-2026-zahlen-prognose",
+   "title": "Garmin: Rekordumsatz von 1,99 Mrd. USD im dritten Quartal 2026",
+   "sym": "GRMN",
+   "date": "2026-10-29T23:26:00+01:00"
+  },
+  {
+   "slug": "flex-ltd-q2-zahlen-fiskaljahr-2027",
+   "title": "Flex Ltd.: 8,5 Milliarden US-Dollar Nettoumsatz im zweiten Quartal 2027",
+   "sym": "FLEX",
+   "date": "2026-10-29T23:26:00+01:00"
+  },
+  {
+   "slug": "ch-robinson-q3-2026-ergebnisse",
+   "title": "C.H. Robinson: Nettogewinn steigt im Q3 2026 auf 198,469 Mio. US-Dollar",
+   "sym": "CHRW",
+   "date": "2026-10-29T23:26:00+01:00"
+  },
+  {
+   "slug": "amphenol-q3-2026-dividende-erhoehung",
+   "title": "Amphenol steigert Q3-Umsatz 2026 auf 10,2 Mrd. USD und erhöht Dividende um 20 %",
+   "sym": "APH",
+   "date": "2026-10-29T23:26:00+01:00"
+  },
+  {
+   "slug": "smurfit-westrock-q3-2026-dividende",
+   "title": "Smurfit Westrock: Q3-Umsatz von 8.161 Mio. USD und Dividende",
+   "sym": "SW",
+   "date": "2026-10-29T23:24:00+01:00"
+  },
+  {
+   "slug": "phillips-66-quartalszahlen-q3-2026",
+   "title": "Phillips 66: Gewinn von 14,08 US-Dollar je Aktie im dritten Quartal 2026",
+   "sym": "PSX",
+   "date": "2026-10-29T23:24:00+01:00"
+  },
+  {
+   "slug": "otis-worldwide-q3-2026-zahlen",
+   "title": "Otis Worldwide: Q3-Nettoumsatz steigt auf 3,9 Milliarden US-Dollar",
+   "sym": "OTIS",
+   "date": "2026-10-29T23:24:00+01:00"
+  },
+  {
+   "slug": "nisource-q3-zahlen-2026",
+   "title": "NiSource meldet Q3-Ergebnis von 0,27 US-Dollar je Aktie",
+   "sym": "NI",
+   "date": "2026-10-29T23:24:00+01:00"
+  },
+  {
+   "slug": "lennox-international-q3-2026-zahlen",
+   "title": "Lennox International: 1,6 Milliarden US-Dollar Umsatz im Q3 2026",
+   "sym": "LII",
+   "date": "2026-10-29T23:24:00+01:00"
+  },
+  {
+   "slug": "labcorp-q3-2026-zahlen-prognoseerhoehung",
+   "title": "Labcorp steigert Quartalsumsatz auf 3,81 Milliarden US-Dollar und erhöht Prognose",
+   "sym": "LH",
+   "date": "2026-10-29T23:24:00+01:00"
+  },
+  {
+   "slug": "biogen-q3-2026-ergebnisse-prognose",
+   "title": "Biogen: 2,8 Mrd. USD Umsatz im Q3 2026 und angehobene Jahresprognose",
+   "sym": "BIIB",
+   "date": "2026-10-29T23:24:00+01:00"
+  },
+  {
+   "slug": "automatic-data-processing-q1-2027-zahlen",
+   "title": "Automatic Data Processing: Umsätze im ersten Quartal 2027 bei 5,5 Milliarden US-Dollar",
+   "sym": "ADP",
+   "date": "2026-10-29T23:24:00+01:00"
+  },
+  {
+   "slug": "aon-q3-2026-zahlen",
+   "title": "Aon plc: 3 Prozent Umsatzwachstum im dritten Quartal 2026",
+   "sym": "AON",
+   "date": "2026-10-29T23:24:00+01:00"
+  },
+  {
+   "slug": "vertiv-q3-2026-zahlen",
+   "title": "Vertiv steigert Quartalsumsatz um 61 Prozent",
+   "sym": "VRT",
+   "date": "2026-10-29T23:23:00+01:00"
+  },
+  {
    "slug": "intel-q3-2026-zahlen",
    "title": "Intel steigert den Umsatz - Kurs bricht aber ein",
    "sym": "INTC.NE",

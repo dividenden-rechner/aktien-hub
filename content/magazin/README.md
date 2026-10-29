@@ -3,19 +3,49 @@
 <!-- uebersicht-start -->
 ## Übersicht (wird automatisch erstellt, neueste zuerst)
 
-### Zur Freigabe: Entwürfe (2)
+### Zur Freigabe: Entwürfe (5)
 
 Datei anklicken, dann Stift-Symbol: Zeile `draft: true` löschen und speichern, dann geht der Artikel online.
 
 | Datum | Titel | Datei |
 |---|---|---|
+| 29.10.2026 23:27 | Comfort Systems USA: Umsatz steigt im Q3 2026 auf 3,77 Milliarden US-Dollar | [2026-10-29-2327-comfort-systems-usa-q3-2026-zahlen.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/2026-10-29-2327-comfort-systems-usa-q3-2026-zahlen.md) |
+| 29.10.2026 23:26 | Oracle Corporation: Langfristiger Ausblick und Finanzziele bis FY30 | [2026-10-29-2326-oracle-ausblick-investor-day-2026.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/2026-10-29-2326-oracle-ausblick-investor-day-2026.md) |
+| 29.10.2026 23:26 | Old Dominion: 1,65 US-Dollar Gewinn je Aktie im Q3 2026 | [2026-10-29-2326-old-dominion-q3-2026-zahlen.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/2026-10-29-2326-old-dominion-q3-2026-zahlen.md) |
 | 29.10.2026 22:42 | Amazon steigert Umsatz im dritten Quartal auf 201,9 Milliarden Dollar | [2026-10-29-2242-amazon-q3-2026-zahlen.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/2026-10-29-2242-amazon-q3-2026-zahlen.md) |
 | 29.10.2026 10:12 | Shell erzielt im dritten Quartal 10,8 Milliarden Dollar Gewinn | [2026-10-29-1012-shell-q3-2026-ergebnisse.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/2026-10-29-1012-shell-q3-2026-ergebnisse.md) |
 
-### Online (17)
+### Online (44)
 
 | Datum | Titel | Datei |
 |---|---|---|
+| 29.10.2026 23:30 | Honeywell Aerospace: Quartalszahlen und erste Dividende von 0,40 US-Dollar | [2026-10-29-2330-honeywell-aerospace-q3-2026-dividende.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/2026-10-29-2330-honeywell-aerospace-q3-2026-dividende.md) |
+| 29.10.2026 23:30 | Gen Digital steigert Umsatz auf 1,369 Milliarden US-Dollar und erhöht Jahresprognose | [2026-10-29-2330-gen-digital-quartalszahlen-q2-2027.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/2026-10-29-2330-gen-digital-quartalszahlen-q2-2027.md) |
+| 29.10.2026 23:30 | Ford Motor Company: 49,5 Mrd. US-Dollar Umsatz im dritten Quartal 2026 | [2026-10-29-2330-ford-quartalszahlen-q3-2026-dividende.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/2026-10-29-2330-ford-quartalszahlen-q3-2026-dividende.md) |
+| 29.10.2026 23:30 | eBay: Umsatz steigt auf 3,2 Milliarden US-Dollar im dritten Quartal 2026 | [2026-10-29-2330-ebay-quartalszahlen-q3-2026.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/2026-10-29-2330-ebay-quartalszahlen-q3-2026.md) |
+| 29.10.2026 23:29 | T-Mobile US steigert Gewinn je Aktie im dritten Quartal 2026 auf 3,22 US-Dollar | [2026-10-29-2329-t-mobile-us-quartalszahlen-q3-2026.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/2026-10-29-2329-t-mobile-us-quartalszahlen-q3-2026.md) |
+| 29.10.2026 23:29 | Microsoft: Umsatz steigt im ersten Quartal 2027 auf 92,3 Milliarden US-Dollar | [2026-10-29-2329-microsoft-quartalszahlen-q1-2027.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/2026-10-29-2329-microsoft-quartalszahlen-q1-2027.md) |
+| 29.10.2026 23:29 | FedEx veröffentlicht angepasste Finanzzahlen für 2026 | [2026-10-29-2329-fedex-finanzdaten-anpassung-2026.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/2026-10-29-2329-fedex-finanzdaten-anpassung-2026.md) |
+| 29.10.2026 23:29 | Carvana: Umsatz steigt im dritten Quartal 2026 auf 8,040 Milliarden US-Dollar | [2026-10-29-2329-carvana-quartalszahlen-q3-2026.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/2026-10-29-2329-carvana-quartalszahlen-q3-2026.md) |
+| 29.10.2026 23:29 | Align Technology: Jennifer L. Davis wird neue CEO ab 31. Dezember 2026 | [2026-10-29-2329-align-technology-ceo-wechsel-2026.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/2026-10-29-2329-align-technology-ceo-wechsel-2026.md) |
+| 29.10.2026 23:27 | Alphabet Inc.: Quartalszahlen Q3 2026 und Dividende von 0,22 US-Dollar | [2026-10-29-2327-alphabet-quartalszahlen-q3-2026-dividende.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/2026-10-29-2327-alphabet-quartalszahlen-q3-2026-dividende.md) |
+| 29.10.2026 23:26 | MGM Resorts: Geänderte Stimmrechtsvereinbarung nach Rücknahme der Übernahme | [2026-10-29-2326-mgm-resorts-stimmrechtsvereinbarung-oktober-2026.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/2026-10-29-2326-mgm-resorts-stimmrechtsvereinbarung-oktober-2026.md) |
+| 29.10.2026 23:26 | Masco Corporation: Q3-Zahlen 2026 und Quartalsdividende von 0,32 US-Dollar | [2026-10-29-2326-masco-q3-2026-zahlen-und-dividende.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/2026-10-29-2326-masco-q3-2026-zahlen-und-dividende.md) |
+| 29.10.2026 23:26 | IDEX Corporation: Rekordumsatz von 952 Mio. US-Dollar im Q3 2026 | [2026-10-29-2326-idex-corporation-q3-2026-zahlen.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/2026-10-29-2326-idex-corporation-q3-2026-zahlen.md) |
+| 29.10.2026 23:26 | Garmin: Rekordumsatz von 1,99 Mrd. USD im dritten Quartal 2026 | [2026-10-29-2326-garmin-q3-2026-zahlen-prognose.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/2026-10-29-2326-garmin-q3-2026-zahlen-prognose.md) |
+| 29.10.2026 23:26 | Flex Ltd.: 8,5 Milliarden US-Dollar Nettoumsatz im zweiten Quartal 2027 | [2026-10-29-2326-flex-ltd-q2-zahlen-fiskaljahr-2027.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/2026-10-29-2326-flex-ltd-q2-zahlen-fiskaljahr-2027.md) |
+| 29.10.2026 23:26 | C.H. Robinson: Nettogewinn steigt im Q3 2026 auf 198,469 Mio. US-Dollar | [2026-10-29-2326-ch-robinson-q3-2026-ergebnisse.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/2026-10-29-2326-ch-robinson-q3-2026-ergebnisse.md) |
+| 29.10.2026 23:26 | Amphenol steigert Q3-Umsatz 2026 auf 10,2 Mrd. USD und erhöht Dividende um 20 % | [2026-10-29-2326-amphenol-q3-2026-dividende-erhoehung.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/2026-10-29-2326-amphenol-q3-2026-dividende-erhoehung.md) |
+| 29.10.2026 23:24 | Smurfit Westrock: Q3-Umsatz von 8.161 Mio. USD und Dividende | [2026-10-29-2324-smurfit-westrock-q3-2026-dividende.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/2026-10-29-2324-smurfit-westrock-q3-2026-dividende.md) |
+| 29.10.2026 23:24 | Phillips 66: Gewinn von 14,08 US-Dollar je Aktie im dritten Quartal 2026 | [2026-10-29-2324-phillips-66-quartalszahlen-q3-2026.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/2026-10-29-2324-phillips-66-quartalszahlen-q3-2026.md) |
+| 29.10.2026 23:24 | Otis Worldwide: Q3-Nettoumsatz steigt auf 3,9 Milliarden US-Dollar | [2026-10-29-2324-otis-worldwide-q3-2026-zahlen.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/2026-10-29-2324-otis-worldwide-q3-2026-zahlen.md) |
+| 29.10.2026 23:24 | NiSource meldet Q3-Ergebnis von 0,27 US-Dollar je Aktie | [2026-10-29-2324-nisource-q3-zahlen-2026.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/2026-10-29-2324-nisource-q3-zahlen-2026.md) |
+| 29.10.2026 23:24 | Lennox International: 1,6 Milliarden US-Dollar Umsatz im Q3 2026 | [2026-10-29-2324-lennox-international-q3-2026-zahlen.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/2026-10-29-2324-lennox-international-q3-2026-zahlen.md) |
+| 29.10.2026 23:24 | Labcorp steigert Quartalsumsatz auf 3,81 Milliarden US-Dollar und erhöht Prognose | [2026-10-29-2324-labcorp-q3-2026-zahlen-prognoseerhoehung.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/2026-10-29-2324-labcorp-q3-2026-zahlen-prognoseerhoehung.md) |
+| 29.10.2026 23:24 | Biogen: 2,8 Mrd. USD Umsatz im Q3 2026 und angehobene Jahresprognose | [2026-10-29-2324-biogen-q3-2026-ergebnisse-prognose.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/2026-10-29-2324-biogen-q3-2026-ergebnisse-prognose.md) |
+| 29.10.2026 23:24 | Automatic Data Processing: Umsätze im ersten Quartal 2027 bei 5,5 Milliarden US-Dollar | [2026-10-29-2324-automatic-data-processing-q1-2027-zahlen.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/2026-10-29-2324-automatic-data-processing-q1-2027-zahlen.md) |
+| 29.10.2026 23:24 | Aon plc: 3 Prozent Umsatzwachstum im dritten Quartal 2026 | [2026-10-29-2324-aon-q3-2026-zahlen.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/2026-10-29-2324-aon-q3-2026-zahlen.md) |
+| 29.10.2026 23:23 | Vertiv steigert Quartalsumsatz um 61 Prozent | [2026-10-29-2323-vertiv-q3-2026-zahlen.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/2026-10-29-2323-vertiv-q3-2026-zahlen.md) |
 | 29.10.2026 21:59 | Intel steigert den Umsatz - Kurs bricht aber ein | [2026-10-29-2159-intel-q3-2026-zahlen.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/2026-10-29-2159-intel-q3-2026-zahlen.md) |
 | 29.10.2026 14:54 | Altria steigert bereinigten Gewinn je Aktie im dritten Quartal | [2026-10-29-1453-altria-q3-2026-ergebnisse.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/2026-10-29-1453-altria-q3-2026-ergebnisse.md) |
 | 29.10.2026 09:26 | Microsoft steigert Umsatz im ersten Quartal auf 92,3 Milliarden US-Dollar | [2026-10-29-0926-microsoft-q1-2027-zahlen.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/2026-10-29-0926-microsoft-q1-2027-zahlen.md) |
