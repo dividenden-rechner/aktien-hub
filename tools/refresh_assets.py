@@ -45,7 +45,7 @@ def main():
             listing = "\n".join(f"{i}: {c['title']} | {c['desc']} | {c['date']}" for i, c in enumerate(cands))
             prompt = (f"Waehle ein Titelfoto fuer einen Boersenartikel ueber {name}" + (f" ({a.fokus})" if a.fokus else "") + ". "
                       "Gut: Filiale, Produkt im Alltag, Szene, die eindeutig zum Unternehmen gehoert, ansprechende Komposition, helles scharfes Bild. "
-                      "Schlecht: Firmenzentrale aus der Ferne, Logos, Karten, Werbung, Portraets, unscharfe oder dunkle Bilder, historische Motive. "
+                      "Schlecht: Firmenzentralen und Buerogebaeude (auch aus der Naehe), Logos, Karten, Werbung, Portraets, unscharfe oder dunkle Bilder, historische Motive. "
                       "Wenn nichts wirklich passt, antworte -1.\n\n" + listing)
             idx = ia._generate([{"text": prompt}], {"type": "OBJECT", "required": ["index"], "properties": {"index": {"type": "INTEGER"}}}, ia.api_key())["index"]
             print("Auswahl durch das Modell:", idx)

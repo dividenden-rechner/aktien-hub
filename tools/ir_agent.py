@@ -656,7 +656,36 @@ def photo_credit(photo):
     return f"Foto: {photo['artist']} / {photo.get('quelle', 'Wikimedia Commons')}" + ("" if photo.get("quelle") == "Unsplash" else f", {photo['lic']}")
 
 
-def pick_photo(company, ticker, key):
+def recent_motifs(n=12):
+    """Bildbeschreibungen der letzten Artikel, damit nicht immer dasselbe Motiv gewaehlt wird."""
+    files = sorted(glob.glob(os.path.join(ROOT, "content", "magazin", "*.md")), reverse=True)[:n * 3]
+    out = []
+    for f in files:
+        try:
+            m = re.search(r'^image_alt:\s*"?(.*?)"?\s*$', open(f, encoding="utf-8").read(3000), re.M)
+        except Exception:
+            continue
+        if m and m.group(1) not in out:
+            out.append(m.group(1)[:110])
+        if len(out) >= n:
+            break
+    return out
+
+
+def pick_photo(company, ticker, key, industry="", fokus=""):
+    """Aufmacherfoto: bevorzugt Produkt, Filiale, Werk oder Szene aus dem Alltag, abwechslungsreich; Firmenzentrale nur als letzter Ausweg."""
+    if key:
+        try:
+            p = pick_photo_topic([company], fokus, industry, key)
+        except SystemExit:
+            p = None
+        if p:
+            return p
+        print("Kein Szenen- oder Produktfoto gefunden, Rueckfall auf Firmenfotos.")
+    return pick_photo_hq(company, ticker, key)
+
+
+def pick_photo_hq(company, ticker, key):
     cands, brand = commons_candidates(company)
     print(f"Foto-Kandidaten bei Wikimedia Commons: {len(cands)}")
     if not key:
@@ -686,7 +715,7 @@ def pick_photo_topic(companies, fokus, industry, key, only_unsplash=False):
         t = _generate([{"text": f"Ein Boersenartikel vergleicht {names}" + (f" (Branche: {industry})" if industry else "") + (f", Thema: {fokus}" if (fokus or '').strip() else "") +
                         ". Nenne acht englische Suchbegriffe fuer Wikimedia Commons und Unsplash, um ein Aufmacherfoto zu finden: Produkte der Unternehmen im Einsatz oder typische Szenen der Branche "
                         "(zum Beispiel 'Airbus A350 in flight', 'Boeing 737 MAX landing', 'airliner takeoff sunset', 'aircraft assembly line'). Keine Firmenzentralen, keine Buerogebaeude, keine Personen, keine Logos. "
-                        "Mische konkrete Produkte der einzelnen Unternehmen mit allgemeinen Branchenszenen."}], schema, key)
+                        "Mische konkrete Produkte der einzelnen Unternehmen mit allgemeinen Branchenszenen und variiere die Motivart: Produkt im Einsatz, Filiale oder Laden von innen, Werk oder Produktion, Menschen bei der Arbeit, Transport und Logistik."}], schema, key)
         terms = [x for x in (t.get("terms") or []) if isinstance(x, str) and x.strip()][:8]
     except SystemExit:
         return None
@@ -702,8 +731,10 @@ def pick_photo_topic(companies, fokus, industry, key, only_unsplash=False):
     if not cands:
         return None
     listing = "\n".join(f"{i}: {c['title']} | {c['desc']} | {c['date']}" for i, c in enumerate(cands))
-    prompt = (f"Waehle ein Aufmacherfoto fuer einen Vergleichsartikel ueber {names}" + (f" (Thema: {fokus})" if (fokus or '').strip() else "") + ". "
-              "Gut: Produkt im Einsatz (zum Beispiel ein Flugzeug im Flug), Werk oder Montage, typische Szene der Branche, ansprechende Bildkomposition, gern mit Produkten mehrerer der Unternehmen. "
+    rec = recent_motifs()
+    prompt = (f"Waehle ein Aufmacherfoto fuer einen Artikel ueber {names}" + (f" (Thema: {fokus})" if (fokus or '').strip() else "") + ". "
+              + ("Die zuletzt auf der Seite verwendeten Motive waren (waehle ein ANDERES Motiv, damit die Seite abwechslungsreich bleibt, zum Beispiel Produkt, Filiale, Werk, Menschen bei der Arbeit, Verkehr oder Logistik): " + " || ".join(rec) + ". " if rec else "")
+              + "Gut: Produkt im Einsatz (zum Beispiel ein Flugzeug im Flug), Werk oder Montage, typische Szene der Branche, ansprechende Bildkomposition, gern mit Produkten mehrerer der Unternehmen. "
               "Schlecht: Firmenzentralen und Buerogebaeude, Portraets, Logos, Karten, Werbung, Detailaufnahmen ohne Aussage, historische oder unpassende Motive. Wenn nichts wirklich passt, antworte -1.\n\n" + listing)
     try:
         idx = _generate([{"text": prompt}], {"type": "OBJECT", "required": ["index"], "properties": {"index": {"type": "INTEGER"}}}, key)["index"]
@@ -1046,7 +1077,8 @@ def build(out, text, src_note, force=False, calc_rows=None, fmp_used=False, figs
     rows = "\n".join(f"| {k['label']} | {k['value']} | {k.get('change') or '–'} | {quelle(k.get('page'))} |" for k in (out.get("kpis") or []))
     photo = None
     try:
-        photo = pick_photo(out["company"], out.get("ticker", ""), os.environ.get("GEMINI_API_KEY") if not os.environ.get("IR_MOCK") else None)
+        photo = pick_photo(out["company"], out.get("ticker", ""), os.environ.get("GEMINI_API_KEY") if not os.environ.get("IR_MOCK") else None,
+                           industry=out.get("industry") or "", fokus=out.get("report_type") or "")
     except Exception as e:
         print("Foto-Suche fehlgeschlagen:", e)
     fm = ["---", f"title: {q(a['title'])}", f"description: {q(a['description'])}",
