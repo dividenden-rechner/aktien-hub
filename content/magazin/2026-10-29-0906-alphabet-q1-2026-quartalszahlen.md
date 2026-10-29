@@ -12,6 +12,7 @@ image_source: https://commons.wikimedia.org/wiki/File:Google_Campus,_Mountain_Vi
 logo_name: "Alphabet"
 logo_symbol: ABEC.F
 draft: true
+logo_file: assets/logos/abec-f.png
 ---
 <!-- PRÜFEN: Aufmacherfoto ist automatisch von Wikimedia Commons gewaehlt: bitte pruefen, ob es zum Artikel passt (sonst image-Zeilen entfernen, dann entsteht ein Titelbild automatisch). -->
 <!-- PRÜFEN: Diese Werte wurden im Berichtstext nicht gefunden: Grafik Q1'25: 17197; Grafik Q2'25: 22446; Grafik Q3'25: 23953; Grafik Q4'25: 27851; Grafik Q1'26: 35674 -->

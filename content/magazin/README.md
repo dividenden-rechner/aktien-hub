@@ -9,13 +9,14 @@ Datei anklicken, dann Stift-Symbol: Zeile `draft: true` löschen und speichern, 
 
 | Datum | Titel | Datei |
 |---|---|---|
-| 29.10.2026 08:22 | Komatsu hebt Jahresprognose nach Umsatzplus im Halbjahr an | [2026-10-29-0822-komatsu-halbjahreszahlen-2026.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/2026-10-29-0822-komatsu-halbjahreszahlen-2026.md) |
+| 29.10.2026 09:06 | Alphabet steigert Umsatz im ersten Quartal auf 109,9 Milliarden Dollar | [2026-10-29-0906-alphabet-q1-2026-quartalszahlen.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/2026-10-29-0906-alphabet-q1-2026-quartalszahlen.md) |
 
-### Online (14)
+### Online (15)
 
 | Datum | Titel | Datei |
 |---|---|---|
 | 29.10.2026 08:45 | Komatsu steigert Umsatz um knapp 15 Prozent, Marge sinkt leicht | [2026-10-29-0836-komatsu-q1-2026.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/2026-10-29-0836-komatsu-q1-2026.md) |
+| 29.10.2026 08:22 | Komatsu hebt Jahresprognose nach Umsatzplus im Halbjahr an | [2026-10-29-0822-komatsu-halbjahreszahlen-2026.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/2026-10-29-0822-komatsu-halbjahreszahlen-2026.md) |
 | 28.10.2026 19:15 | Fed belässt Leitzins im Oktober 2026 bei 3,75 bis 4 Prozent | [2026-10-28-1914-fed-zinsentscheid-oktober-2026.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/2026-10-28-1914-fed-zinsentscheid-oktober-2026.md) |
 | 28.10.2026 15:47 | Unilever steigert Umsatz auf 13,3 Milliarden Euro und hebt Ausblick an | [unilever-q3-2026-trading-statement.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/unilever-q3-2026-trading-statement.md) |
 | 28.10.2026 15:33 | GE Vernova steigert Quartalsumsatz auf 12,6 Milliarden US-Dollar | [ge-vernova-q3-2026-ergebnisse.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/ge-vernova-q3-2026-ergebnisse.md) |
