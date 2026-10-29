@@ -9,10 +9,11 @@ Datei anklicken, dann Stift-Symbol: Zeile `draft: true` löschen und speichern, 
 
 _Keine Entwürfe._
 
-### Online (14)
+### Online (15)
 
 | Datum | Titel | Datei |
 |---|---|---|
+| 29.10.2026 09:26 | Microsoft steigert Umsatz im ersten Quartal auf 92,3 Milliarden US-Dollar | [2026-10-29-0926-microsoft-q1-2027-zahlen.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/2026-10-29-0926-microsoft-q1-2027-zahlen.md) |
 | 29.10.2026 09:15 | Alphabets Rekordumsatz trifft auf Milliardeninvestitionen in KI | [2026-10-29-0915-alphabet-q3-2026-quartalszahlen.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/2026-10-29-0915-alphabet-q3-2026-quartalszahlen.md) |
 | 29.10.2026 08:22 | Komatsu hebt Jahresprognose nach Umsatzplus im Halbjahr an | [2026-10-29-0822-komatsu-halbjahreszahlen-2026.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/2026-10-29-0822-komatsu-halbjahreszahlen-2026.md) |
 | 28.10.2026 19:15 | Fed belässt Leitzins im Oktober 2026 bei 3,75 bis 4 Prozent | [2026-10-28-1914-fed-zinsentscheid-oktober-2026.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/2026-10-28-1914-fed-zinsentscheid-oktober-2026.md) |
