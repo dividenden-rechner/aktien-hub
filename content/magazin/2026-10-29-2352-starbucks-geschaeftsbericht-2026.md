@@ -5,14 +5,14 @@ date: 2026-10-29 23:52
 author: "Redaktions-Team Dividenden-Rechner.de"
 author_bio: "Das Redaktions-Team von Dividenden-Rechner.de schreibt über Dividendenaktien, Kennzahlen und Steuerthemen für Privatanleger. Die Rechner und Auswertungen auf der Seite entstehen im eigenen Haus."
 category: Jahresbericht
-image: assets/magazin/starbucks-geschaeftsbericht-2026-foto.jpg
-image_alt: "Foto zu Starbucks Corporation: Starbucks Headquarters tower in the distance alongside Puget Sound. Port of Seattle in the distance."
-image_credit: "Foto: Latoya Ralliford / Wikimedia Commons, CC BY-SA 4.0"
-image_source: https://commons.wikimedia.org/wiki/File:SODO_-_Starbucks_Headquarters_-_Port_of_Seattle.jpg
 logo_name: "Starbucks Corporation"
 logo_symbol: SBUX
 logo_domain: starbucks.com
 logo_file: assets/logos/sbux.png
+image: assets/magazin/starbucks-geschaeftsbericht-2026-foto.jpg
+image_alt: "Foto zu Starbucks Corporation: A branch of 'Starbucks Coffee shop' located in the MAR shopping mall south the city of Loulé , Algarve, Portugal."
+image_credit: "Foto: Kolforn ( Kolforn ) I'd appreciate if you could mail me (Kolforn@gmail.com) if you want to use this picture out of the Wikimedia project scope. This file is licensed under the Creative Commons Attribution-Share Alike 4.0 International license. You are free: to share – to copy, distribute and transmit the work to remix – to adapt the work Under the following conditions: attribution – You must give appropriate credit, provide a link to the license, and indicate if changes were made. You may do so in any reasonable manner, but not in any way that suggests the licensor endorses you or your use. share alike – If you remix, transform, or build upon the material, you must distribute your contributions under the same or compatible license as the original. https://creativecommons.org/licenses/by-sa/4.0 CC BY-SA 4.0 Creative Commons Attribution-Share Alike 4.0 true true / Wikimedia Commons, CC BY-SA 4.0"
+image_source: https://commons.wikimedia.org/wiki/File:2017-12-24_Starbucks_coffee_shop,_MAR_shopping_mall,_Loul%C3%A9.JPG
 ---
 <!-- PRÜFEN: Aufmacherfoto ist automatisch von Wikimedia Commons gewaehlt: bitte pruefen, ob es zum Artikel passt (sonst image-Zeilen entfernen, dann entsteht ein Titelbild automatisch). -->
 <!-- PRÜFEN: Diese Werte wurden im Berichtstext nicht gefunden: Grafik North America: 7.33 -->
