@@ -25,7 +25,7 @@ logo_file: assets/logos/6301-t.png
     2. **Treiber:** Das Baumaschinen- und Bergbaugeschäft legt in Nord- und Lateinamerika kräftig zu und gleicht Schwächen in Asien aus.
     3. **Knackpunkt:** Gestiegene Produktions- und Fixkosten sowie Zollbelastungen dämpfen die Marge im Kerngeschäft.
 
-## Die ausführliche Version
+## Komatsu profitiert vom schwachen Yen und hebt die Prognose an
 
 ### Umsatz springt dank schwachem Yen und höheren Preisen an
 

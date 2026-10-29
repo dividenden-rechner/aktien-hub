@@ -24,7 +24,7 @@ logo_file: assets/logos/abec-f.png
     2. **KI-Boom:** Google Cloud explodiert beim Umsatz um 103 % und treibt das Geschäft.
     3. **Investitionen:** Hohe Ausgaben für KI-Infrastruktur drücken den Free Cashflow ins Minus.
 
-## Die ausführliche Version
+## Alphabet wächst kräftig, doch die KI-Investitionen fressen den Cashflow
 
 Alphabet hat die Bücher für das dritte Quartal 2026 geöffnet und zeigt ein zweigeteiltes Bild. Während das operative Geschäft kräftig wächst, belasten enorme Investitionen in Künstliche Intelligenz den Kassenbestand. Der Konzernumsatz kletterte im Jahresvergleich um 25 % auf **127.577 Mio. USD**, verglichen mit **102.346 Mio. USD** im Vorjahreszeitraum. Das operative Ergebnis legte um 30 % auf **40,576 Mio. USD** zu. Unterm Strich sank der Nettogewinn jedoch auf **26.170 Mio. USD** nach **34.979 Mio. USD** im Vorjahr, was einem Rückgang von 25 % beim Gewinn je Aktie auf **2,12 USD** entspricht. Wie die Gewinn- und Verlustrechnung zeigt, schlugen vor allem höhere Kosten bei Forschung und Entwicklung sowie gestiegene Steuern zu Buche.
 
