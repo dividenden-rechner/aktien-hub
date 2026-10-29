@@ -1,41 +1,422 @@
 {
   "_hinweis": "Stichworte, die im Magazin automatisch auf Erklaerartikel verlinken. 'terms': Schreibweisen (Kuerzel bis 4 Buchstaben nur exakt in Grossschreibung, sonst ohne Beachtung der Gross-/Kleinschreibung). 'grund': Kurztext im Kasten 'Hintergrund zum Thema'. Neue Erklaerartikel hier eintragen, dann python3 tools/build_magazin.py.",
   "entries": [
-    {"id": "kgv", "url": "grundlagen/kgv/", "terms": ["KGV", "Kurs-Gewinn-Verhältnis"], "grund": "Was das KGV wirklich aussagt"},
-    {"id": "peg", "url": "grundlagen/peg-ratio/", "terms": ["PEG-Ratio", "PEG Ratio", "PEG"], "grund": "KGV im Verhältnis zum Wachstum"},
-    {"id": "kbv", "url": "grundlagen/kbv-kuv/", "terms": ["KBV", "KUV", "Kurs-Buchwert-Verhältnis", "Kurs-Umsatz-Verhältnis"], "grund": "Kurs im Verhältnis zu Buchwert und Umsatz"},
-    {"id": "payout", "url": "grundlagen/ausschuettungsquote/", "terms": ["Ausschüttungsquote", "Payout Ratio", "Payout-Ratio"], "grund": "Wie sicher ist die Dividende?"},
-    {"id": "fcf", "url": "grundlagen/free-cashflow/", "terms": ["Free Cashflow", "Free Cash Flow", "FCF"], "grund": "Wie viel Geld bleibt wirklich übrig?"},
-    {"id": "schulden", "url": "grundlagen/verschuldung/", "terms": ["Net Debt/EBITDA", "Nettoverschuldung", "Verschuldungsgrad", "Eigenkapitalquote", "Zinsdeckung", "Verschuldung"], "grund": "Wie viele Schulden sind zu viel?"},
-    {"id": "roe", "url": "grundlagen/eigenkapitalrendite/", "terms": ["Eigenkapitalrendite", "ROE", "ROIC"], "grund": "Wie profitabel arbeitet das Unternehmen?"},
-    {"id": "rendite", "url": "grundlagen/dividendenrendite/", "terms": ["Dividendenrendite", "Dividend Yield"], "grund": "So wird die Dividendenrendite berechnet"},
-    {"id": "extag", "url": "grundlagen/ex-dividenden-tag/", "terms": ["Ex-Dividenden-Tag", "Ex-Dividend-Tag", "Ex-Tag"], "grund": "Bis wann man kaufen muss, um die Dividende zu bekommen"},
-    {"id": "steuer", "url": "grundlagen/dividendenbesteuerung/", "terms": ["Abgeltungsteuer", "Sparer-Pauschbetrag", "Freistellungsauftrag"], "grund": "Dividenden versteuern in Deutschland"},
-    {"id": "falle", "url": "grundlagen/dividendenfalle/", "terms": ["Dividendenfalle", "Dividendenkürzung", "Dividendenkürzungen"], "grund": "Warnsignale für gekürzte Dividenden"},
-    {"id": "aristo", "url": "grundlagen/dividendenaristokraten/", "terms": ["Dividendenaristokrat", "Dividendenaristokraten", "Dividend King", "Dividend Kings", "Dividend Aristocrat", "Dividend Aristocrats"], "grund": "Dividendenaristokraten und Dividend Kings erklärt"},
-    {"id": "thesa", "url": "grundlagen/ausschuettend-thesaurierend/", "terms": ["thesaurierend", "Thesaurierer"], "grund": "Ausschüttend oder thesaurierend?"},
-    {"id": "qst", "url": "fortgeschrittene/quellensteuer/", "terms": ["Quellensteuer"], "grund": "Quellensteuer auf Dividenden: Anrechnung, Rückerstattung, Sätze"},
-    {"id": "wachstum", "url": "fortgeschrittene/dividendenwachstum/", "terms": ["Dividendenwachstum", "Yield on Cost", "Dividendensteigerung", "Dividendenerhöhung"], "grund": "Dividendenwachstum berechnen und einordnen"},
-    {"id": "shy", "url": "fortgeschrittene/shareholder-yield/", "terms": ["Shareholder Yield", "Aktienrückkaufprogramm", "Aktienrückkauf", "Aktienrückkäufe", "Rückkaufprogramm"], "grund": "Dividenden und Rückkäufe zusammen betrachtet"},
-    {"id": "banken", "url": "fortgeschrittene/banken-bewerten/", "terms": ["KTBV", "ROTCE", "CET1", "Kernkapitalquote", "Kapitalquote"], "grund": "Banken bewerten: Kennzahlen im Überblick"},
-    {"id": "reit", "url": "fortgeschrittene/reits-bewerten/", "terms": ["AFFO", "FFO", "REIT"], "grund": "REITs bewerten: FFO, AFFO und NAV"},
-    {"id": "bdc", "url": "fortgeschrittene/bdcs-bewerten/", "terms": ["BDC"], "grund": "BDCs bewerten: NII, NAV und Dividendendeckung"},
-    {"id": "dcf", "url": "fortgeschrittene/bewertung-kgv-dcf/", "terms": ["Discounted Cash Flow", "DCF", "Dividendendiskontierungsmodell"], "grund": "Aktien bewerten mit KGV, Dividendenmodell und DCF"},
-    {"id": "zins", "url": "fortgeschrittene/zinsen-und-dividendenaktien/", "terms": ["Leitzins", "Zinsentscheid", "Zinswende"], "grund": "Wie Zinsen auf Dividendenaktien wirken"}
+    {
+      "id": "kgv",
+      "url": "grundlagen/kgv/",
+      "terms": [
+        "KGV",
+        "Kurs-Gewinn-Verhältnis"
+      ],
+      "grund": "Was das KGV wirklich aussagt"
+    },
+    {
+      "id": "peg",
+      "url": "grundlagen/peg-ratio/",
+      "terms": [
+        "PEG-Ratio",
+        "PEG Ratio",
+        "PEG"
+      ],
+      "grund": "KGV im Verhältnis zum Wachstum"
+    },
+    {
+      "id": "kbv",
+      "url": "grundlagen/kbv-kuv/",
+      "terms": [
+        "KBV",
+        "KUV",
+        "Kurs-Buchwert-Verhältnis",
+        "Kurs-Umsatz-Verhältnis"
+      ],
+      "grund": "Kurs im Verhältnis zu Buchwert und Umsatz"
+    },
+    {
+      "id": "payout",
+      "url": "grundlagen/ausschuettungsquote/",
+      "terms": [
+        "Ausschüttungsquote",
+        "Payout Ratio",
+        "Payout-Ratio"
+      ],
+      "grund": "Wie sicher ist die Dividende?"
+    },
+    {
+      "id": "fcf",
+      "url": "grundlagen/free-cashflow/",
+      "terms": [
+        "Free Cashflow",
+        "Free Cash Flow",
+        "FCF"
+      ],
+      "grund": "Wie viel Geld bleibt wirklich übrig?"
+    },
+    {
+      "id": "schulden",
+      "url": "grundlagen/verschuldung/",
+      "terms": [
+        "Net Debt/EBITDA",
+        "Nettoverschuldung",
+        "Verschuldungsgrad",
+        "Eigenkapitalquote",
+        "Zinsdeckung",
+        "Verschuldung"
+      ],
+      "grund": "Wie viele Schulden sind zu viel?"
+    },
+    {
+      "id": "roe",
+      "url": "grundlagen/eigenkapitalrendite/",
+      "terms": [
+        "Eigenkapitalrendite",
+        "ROE",
+        "ROIC"
+      ],
+      "grund": "Wie profitabel arbeitet das Unternehmen?"
+    },
+    {
+      "id": "rendite",
+      "url": "grundlagen/dividendenrendite/",
+      "terms": [
+        "Dividendenrendite",
+        "Dividend Yield"
+      ],
+      "grund": "So wird die Dividendenrendite berechnet"
+    },
+    {
+      "id": "extag",
+      "url": "grundlagen/ex-dividenden-tag/",
+      "terms": [
+        "Ex-Dividenden-Tag",
+        "Ex-Dividend-Tag",
+        "Ex-Tag"
+      ],
+      "grund": "Bis wann man kaufen muss, um die Dividende zu bekommen"
+    },
+    {
+      "id": "steuer",
+      "url": "grundlagen/dividendenbesteuerung/",
+      "terms": [
+        "Abgeltungsteuer",
+        "Sparer-Pauschbetrag",
+        "Freistellungsauftrag"
+      ],
+      "grund": "Dividenden versteuern in Deutschland"
+    },
+    {
+      "id": "falle",
+      "url": "grundlagen/dividendenfalle/",
+      "terms": [
+        "Dividendenfalle",
+        "Dividendenkürzung",
+        "Dividendenkürzungen"
+      ],
+      "grund": "Warnsignale für gekürzte Dividenden"
+    },
+    {
+      "id": "aristo",
+      "url": "grundlagen/dividendenaristokraten/",
+      "terms": [
+        "Dividendenaristokrat",
+        "Dividendenaristokraten",
+        "Dividend King",
+        "Dividend Kings",
+        "Dividend Aristocrat",
+        "Dividend Aristocrats"
+      ],
+      "grund": "Dividendenaristokraten und Dividend Kings erklärt"
+    },
+    {
+      "id": "thesa",
+      "url": "grundlagen/ausschuettend-thesaurierend/",
+      "terms": [
+        "thesaurierend",
+        "Thesaurierer"
+      ],
+      "grund": "Ausschüttend oder thesaurierend?"
+    },
+    {
+      "id": "qst",
+      "url": "fortgeschrittene/quellensteuer/",
+      "terms": [
+        "Quellensteuer"
+      ],
+      "grund": "Quellensteuer auf Dividenden: Anrechnung, Rückerstattung, Sätze"
+    },
+    {
+      "id": "wachstum",
+      "url": "fortgeschrittene/dividendenwachstum/",
+      "terms": [
+        "Dividendenwachstum",
+        "Yield on Cost",
+        "Dividendensteigerung",
+        "Dividendenerhöhung"
+      ],
+      "grund": "Dividendenwachstum berechnen und einordnen"
+    },
+    {
+      "id": "shy",
+      "url": "fortgeschrittene/shareholder-yield/",
+      "terms": [
+        "Shareholder Yield",
+        "Aktienrückkaufprogramm",
+        "Aktienrückkauf",
+        "Aktienrückkäufe",
+        "Rückkaufprogramm"
+      ],
+      "grund": "Dividenden und Rückkäufe zusammen betrachtet"
+    },
+    {
+      "id": "banken",
+      "url": "fortgeschrittene/banken-bewerten/",
+      "terms": [
+        "KTBV",
+        "ROTCE",
+        "CET1",
+        "Kernkapitalquote",
+        "Kapitalquote"
+      ],
+      "grund": "Banken bewerten: Kennzahlen im Überblick"
+    },
+    {
+      "id": "reit",
+      "url": "fortgeschrittene/reits-bewerten/",
+      "terms": [
+        "AFFO",
+        "FFO",
+        "REIT"
+      ],
+      "grund": "REITs bewerten: FFO, AFFO und NAV"
+    },
+    {
+      "id": "bdc",
+      "url": "fortgeschrittene/bdcs-bewerten/",
+      "terms": [
+        "BDC"
+      ],
+      "grund": "BDCs bewerten: NII, NAV und Dividendendeckung"
+    },
+    {
+      "id": "dcf",
+      "url": "fortgeschrittene/bewertung-kgv-dcf/",
+      "terms": [
+        "Discounted Cash Flow",
+        "DCF",
+        "Dividendendiskontierungsmodell"
+      ],
+      "grund": "Aktien bewerten mit KGV, Dividendenmodell und DCF"
+    },
+    {
+      "id": "zins",
+      "url": "fortgeschrittene/zinsen-und-dividendenaktien/",
+      "terms": [
+        "Leitzins",
+        "Zinsentscheid",
+        "Zinswende"
+      ],
+      "grund": "Wie Zinsen auf Dividendenaktien wirken"
+    },
+    {
+      "id": "eps",
+      "url": "grundlagen/eps-gewinn-je-aktie/",
+      "terms": [
+        "Gewinn je Aktie",
+        "EPS"
+      ],
+      "grund": "Wie das Gewinn je Aktie entsteht"
+    },
+    {
+      "id": "ebitda",
+      "url": "grundlagen/ebitda-ebit/",
+      "terms": [
+        "EBITDA",
+        "EBIT"
+      ],
+      "grund": "Was EBIT und EBITDA aussagen"
+    },
+    {
+      "id": "dart",
+      "url": "grundlagen/dividendenarten/",
+      "terms": [
+        "Sonderdividende",
+        "Stockdividende",
+        "Vorzugsaktie",
+        "Vorzugsaktien"
+      ],
+      "grund": "Dividendenarten im Überblick"
+    },
+    {
+      "id": "qz",
+      "url": "grundlagen/quartalszahlen-lesen/",
+      "terms": [
+        "Quartalszahlen",
+        "Guidance"
+      ],
+      "grund": "Quartalszahlen richtig lesen"
+    },
+    {
+      "id": "peer",
+      "url": "fortgeschrittene/peer-group-analyse/",
+      "terms": [
+        "Peer Group",
+        "Peer-Group",
+        "Peer-Group-Analyse"
+      ],
+      "grund": "Aktien mit Wettbewerbern vergleichen"
+    },
+    {
+      "id": "strat",
+      "url": "fortgeschrittene/dividendenstrategien/",
+      "terms": [
+        "Dogs of the Dow",
+        "Dividendenstrategie",
+        "Dividendenstrategien"
+      ],
+      "grund": "Dividendenstrategien im Überblick"
+    },
+    {
+      "id": "drip",
+      "url": "fortgeschrittene/dividenden-reinvestieren/",
+      "terms": [
+        "Wiederanlage",
+        "DRIP",
+        "Dividenden reinvestieren"
+      ],
+      "grund": "Dividenden reinvestieren"
+    }
   ],
   "laender": {
-    "daenemark": {"name": "Dänemark", "namen": ["Dänemark", "dänisch", "Dänen"], "suffix": [".CO"]},
-    "schweden": {"name": "Schweden", "namen": ["Schweden", "schwedisch"], "suffix": [".ST"]},
-    "norwegen": {"name": "Norwegen", "namen": ["Norwegen", "norwegisch"], "suffix": [".OL"]},
-    "finnland": {"name": "Finnland", "namen": ["Finnland", "finnisch"], "suffix": [".HE"]},
-    "schweiz": {"name": "Schweiz", "namen": ["Schweiz", "schweizerisch"], "suffix": [".SW"]},
-    "frankreich": {"name": "Frankreich", "namen": ["Frankreich", "französisch"], "suffix": [".PA"]},
-    "italien": {"name": "Italien", "namen": ["Italien", "italienisch"], "suffix": [".MI"]},
-    "spanien": {"name": "Spanien", "namen": ["Spanien", "spanisch"], "suffix": [".MC"]},
-    "oesterreich": {"name": "Österreich", "namen": ["Österreich", "österreichisch"], "suffix": [".VI"]},
-    "belgien": {"name": "Belgien", "namen": ["Belgien", "belgisch"], "suffix": [".BR"]},
-    "irland": {"name": "Irland", "namen": ["Irland", "irisch"], "suffix": [".IR"]},
-    "kanada": {"name": "Kanada", "namen": ["Kanada", "kanadisch"], "suffix": [".TO", ".V"]},
-    "usa": {"name": "USA", "namen": ["USA", "US-amerikanisch", "US-Quellensteuer", "W-8BEN"], "suffix": []}
+    "daenemark": {
+      "name": "Dänemark",
+      "namen": [
+        "Dänemark",
+        "dänisch",
+        "Dänen"
+      ],
+      "suffix": [
+        ".CO"
+      ]
+    },
+    "schweden": {
+      "name": "Schweden",
+      "namen": [
+        "Schweden",
+        "schwedisch"
+      ],
+      "suffix": [
+        ".ST"
+      ]
+    },
+    "norwegen": {
+      "name": "Norwegen",
+      "namen": [
+        "Norwegen",
+        "norwegisch"
+      ],
+      "suffix": [
+        ".OL"
+      ]
+    },
+    "finnland": {
+      "name": "Finnland",
+      "namen": [
+        "Finnland",
+        "finnisch"
+      ],
+      "suffix": [
+        ".HE"
+      ]
+    },
+    "schweiz": {
+      "name": "Schweiz",
+      "namen": [
+        "Schweiz",
+        "schweizerisch"
+      ],
+      "suffix": [
+        ".SW"
+      ]
+    },
+    "frankreich": {
+      "name": "Frankreich",
+      "namen": [
+        "Frankreich",
+        "französisch"
+      ],
+      "suffix": [
+        ".PA"
+      ]
+    },
+    "italien": {
+      "name": "Italien",
+      "namen": [
+        "Italien",
+        "italienisch"
+      ],
+      "suffix": [
+        ".MI"
+      ]
+    },
+    "spanien": {
+      "name": "Spanien",
+      "namen": [
+        "Spanien",
+        "spanisch"
+      ],
+      "suffix": [
+        ".MC"
+      ]
+    },
+    "oesterreich": {
+      "name": "Österreich",
+      "namen": [
+        "Österreich",
+        "österreichisch"
+      ],
+      "suffix": [
+        ".VI"
+      ]
+    },
+    "belgien": {
+      "name": "Belgien",
+      "namen": [
+        "Belgien",
+        "belgisch"
+      ],
+      "suffix": [
+        ".BR"
+      ]
+    },
+    "irland": {
+      "name": "Irland",
+      "namen": [
+        "Irland",
+        "irisch"
+      ],
+      "suffix": [
+        ".IR"
+      ]
+    },
+    "kanada": {
+      "name": "Kanada",
+      "namen": [
+        "Kanada",
+        "kanadisch"
+      ],
+      "suffix": [
+        ".TO",
+        ".V"
+      ]
+    },
+    "usa": {
+      "name": "USA",
+      "namen": [
+        "USA",
+        "US-amerikanisch",
+        "US-Quellensteuer",
+        "W-8BEN"
+      ],
+      "suffix": []
+    }
   }
 }

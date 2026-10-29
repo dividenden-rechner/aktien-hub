@@ -38,6 +38,10 @@ def load():
 
 ENTRIES, LAENDER = load()
 
+def reload():
+    global ENTRIES, LAENDER
+    ENTRIES, LAENDER = load()
+
 def _text(body):
     return html.unescape(re.sub(r"<[^>]+>", " ", body))
 

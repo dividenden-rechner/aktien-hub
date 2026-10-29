@@ -7,6 +7,7 @@ from zoneinfo import ZoneInfo
 import markdown
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 import glossar
+import build_wissen
 from PIL import Image, ImageDraw, ImageFont
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -450,6 +451,7 @@ def write_overview(allp):
         open(path, "w", encoding="utf-8").write(s)
 
 def main():
+    build_wissen.run(sys.modules[__name__])        # Wissensartikel zuerst: Magazin-Verlinkung und Rueck-Links brauchen die fertigen Seiten
     posts, allp = [], []
     for f in sorted(glob.glob("content/magazin/*.md")):
         if os.path.basename(f).startswith(("_", "README")): continue
