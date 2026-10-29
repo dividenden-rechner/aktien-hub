@@ -15,7 +15,7 @@ Datei anklicken, dann Stift-Symbol: Zeile `draft: true` löschen und speichern, 
 | 29.10.2026 22:42 | Amazon steigert Umsatz im dritten Quartal auf 201,9 Milliarden Dollar | [2026-10-29-2242-amazon-q3-2026-zahlen.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/2026-10-29-2242-amazon-q3-2026-zahlen.md) |
 | 29.10.2026 10:12 | Shell erzielt im dritten Quartal 10,8 Milliarden Dollar Gewinn | [2026-10-29-1012-shell-q3-2026-ergebnisse.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/2026-10-29-1012-shell-q3-2026-ergebnisse.md) |
 
-### Online (103)
+### Online (104)
 
 | Datum | Titel | Datei |
 |---|---|---|
@@ -24,6 +24,7 @@ Datei anklicken, dann Stift-Symbol: Zeile `draft: true` löschen und speichern, 
 | 30.10.2026 00:28 | Emcor Group steigert Q3-Umsatz 2026 auf 5,54 Milliarden US-Dollar | [2026-10-30-0028-emcor-group-q3-2026-zahlen-prognose.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/2026-10-30-0028-emcor-group-q3-2026-zahlen-prognose.md) |
 | 30.10.2026 00:28 | Banco Bilbao Vizcaya Argentaria, S.A.: Ergebnisse für das Q3 2026 | [2026-10-30-0028-bbva-q3-2026-quartalszahlen-dividende.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/2026-10-30-0028-bbva-q3-2026-quartalszahlen-dividende.md) |
 | 30.10.2026 00:28 | BBVA: 9,07 Mrd. Euro Gewinn in den ersten neun Monaten 2026 | [2026-10-30-0028-bbva-neunmonatszahlen-2026-dividende.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/2026-10-30-0028-bbva-neunmonatszahlen-2026-dividende.md) |
+| 30.10.2026 00:27 | UBS Group AG: Nettogewinn von 2,7 Milliarden US-Dollar im dritten Quartal 2026 | [2026-10-30-0027-ubs-q3-2026-zahlen-aktienrueckkauf-dividende.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/2026-10-30-0027-ubs-q3-2026-zahlen-aktienrueckkauf-dividende.md) |
 | 30.10.2026 00:27 | TotalEnergies SE: Nettogewinn von 8.263 Mio. USD im Q3 2026 | [2026-10-30-0027-totalenergies-q3-2026-zahlen.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/2026-10-30-0027-totalenergies-q3-2026-zahlen.md) |
 | 30.10.2026 00:27 | Shell plc: Zwischenfinanzbericht zum 30. September 2026 | [2026-10-30-0027-shell-q3-2026-zwischenfinanzbericht.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/2026-10-30-0027-shell-q3-2026-zwischenfinanzbericht.md) |
 | 30.10.2026 00:27 | Mastercard steigert Nettoumsatz im dritten Quartal 2026 auf 9,8 Milliarden US-Dollar | [2026-10-30-0027-mastercard-q3-2026-finanzresultate.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/2026-10-30-0027-mastercard-q3-2026-finanzresultate.md) |

@@ -10,6 +10,7 @@ quelle_url: https://www.sec.gov/Archives/edgar/data/1610520/000161052026000113/i
 quelle_name: "Pressemitteilung UBS Group AG (SEC-Meldung)"
 logo_symbol: UBS
 logo_name: "UBS Group AG"
+logo_file: assets/logos/ubs.png
 ---
 <!-- PRÜFEN: Diese Zahlen stehen nicht im Originaltext: 0,85. Bitte pruefen, dann 'draft: true' loeschen. -->
 
