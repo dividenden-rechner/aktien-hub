@@ -3,18 +3,17 @@
 <!-- uebersicht-start -->
 ## Übersicht (wird automatisch erstellt, neueste zuerst)
 
-### Zur Freigabe: Entwürfe (1)
+### Zur Freigabe: Entwürfe (0)
 
 Datei anklicken, dann Stift-Symbol: Zeile `draft: true` löschen und speichern, dann geht der Artikel online.
+
+_Keine Entwürfe._
+
+### Online (16)
 
 | Datum | Titel | Datei |
 |---|---|---|
 | 29.10.2026 09:06 | Alphabet steigert Umsatz im ersten Quartal auf 109,9 Milliarden Dollar | [2026-10-29-0906-alphabet-q1-2026-quartalszahlen.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/2026-10-29-0906-alphabet-q1-2026-quartalszahlen.md) |
-
-### Online (15)
-
-| Datum | Titel | Datei |
-|---|---|---|
 | 29.10.2026 08:45 | Komatsu steigert Umsatz um knapp 15 Prozent, Marge sinkt leicht | [2026-10-29-0836-komatsu-q1-2026.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/2026-10-29-0836-komatsu-q1-2026.md) |
 | 29.10.2026 08:22 | Komatsu hebt Jahresprognose nach Umsatzplus im Halbjahr an | [2026-10-29-0822-komatsu-halbjahreszahlen-2026.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/2026-10-29-0822-komatsu-halbjahreszahlen-2026.md) |
 | 28.10.2026 19:15 | Fed belässt Leitzins im Oktober 2026 bei 3,75 bis 4 Prozent | [2026-10-28-1914-fed-zinsentscheid-oktober-2026.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/2026-10-28-1914-fed-zinsentscheid-oktober-2026.md) |
