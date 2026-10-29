@@ -30,7 +30,7 @@ NEWS = os.path.join(ROOT, "data", "news.json")
 OUT_DIR = os.path.join(ROOT, "content", "magazin")
 CONSTITUENTS = "https://raw.githubusercontent.com/datasets/s-and-p-500-companies/main/data/constituents.csv"
 WATCHLIST = os.path.join(ROOT, "data", "ir-watchlist.json")
-MAX_LONG = 4          # hoechstens so viele lange Artikel (IR-Agent) pro Lauf
+MAX_LONG = int(os.environ.get("MAX_LONG", "4"))   # hoechstens so viele lange Artikel (IR-Agent) pro Lauf
 CATEGORIES = ["Dividende", "Quartalszahlen", "Ausblick", "Aktienrückkauf", "Übernahme", "Management", "Geschäft", "Recht & Regulierung", "Sonstige Meldung"]
 SKIP_ITEMS = {"5.07", "5.03", "9.01", "3.03", "2.04", "5.08"}   # Abstimmungsergebnisse, Satzung, nur Anlagen usw.
 MAX_AGE_H = 40
@@ -244,11 +244,30 @@ def write_post(c, out, url, bad):
     return path
 
 
+def has_recent_article(sym, days=3):
+    """True, wenn es zu dieser Firma in den letzten Tagen schon einen langen Artikel (oder Entwurf) gibt."""
+    cut = datetime.now() - timedelta(days=days)
+    for f in os.listdir(OUT_DIR):
+        if not f.endswith(".md") or f.startswith(("_", "README")):
+            continue
+        try:
+            t = open(os.path.join(OUT_DIR, f), encoding="utf-8").read(2500)
+        except Exception:
+            continue
+        if re.search(rf"^logo_symbol:\s*\"?{re.escape(sym)}\"?\s*$", t, re.M) and not re.search(r"^typ:\s*kurz", t, re.M):
+            m = re.search(r"^date:\s*(\d{4}-\d{2}-\d{2})", t, re.M)
+            if m and datetime.strptime(m.group(1), "%Y-%m-%d") >= cut:
+                return True
+    return False
+
+
 def long_article(c, state):
     """Bei Quartalszahlen einer Firma aus der Beobachtungsliste: IR-Agent starten (langer Artikel als Entwurf)."""
     import subprocess
     done = state["done"]; fails = state.setdefault("fails", {})
     key = "ir:" + c["acc"]
+    if has_recent_article(c["sym"]):
+        done[key] = datetime.now(timezone.utc).strftime("%Y-%m-%d"); log(f"  {c['sym']}: es gibt schon einen aktuellen Artikel"); return False
     if key in done or fails.get(key, 0) >= 3:
         return False
     cmd = [sys.executable, os.path.join(ROOT, "tools", "ir_agent.py"), "--ticker", c["sym"], "--art", "ergebnisse"]

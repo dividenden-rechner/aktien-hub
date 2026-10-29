@@ -1,5 +1,9 @@
 name: Kurzmeldungen (Pressemitteilungen zu News)
 on:
+  push:
+    branches: [main]
+    paths:
+      - "tools/kurz.trigger"
   schedule:
     - cron: "41 */2 * * *"
   workflow_dispatch:
@@ -37,6 +41,7 @@ jobs:
           SEC_USER_AGENT: ${{ vars.SEC_USER_AGENT }}
           FMP_API_KEY: ${{ secrets.FMP_API_KEY }}
           UNSPLASH_ACCESS_KEY: ${{ secrets.UNSPLASH_ACCESS_KEY }}
+          MAX_LONG: ${{ github.event_name == 'push' && '0' || '4' }}
         timeout-minutes: 60
         run: python3 tools/kurzmeldungen.py --max "${{ github.event.inputs.max || '30' }}"
       - name: Entwürfe als Pull Requests zur Freigabe anlegen

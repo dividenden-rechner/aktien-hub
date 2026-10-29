@@ -4,6 +4,7 @@ on:
     branches: [main]
     paths:
       - "content/ir-inbox/*.pdf"
+      - "content/ir-inbox/auftrag.txt"
   workflow_dispatch:
     inputs:
       ticker:
@@ -63,6 +64,9 @@ jobs:
                 echo "url:$u" >> /tmp/todo.txt
               fi
             done < /tmp/urls.txt
+          fi
+          if [ -f content/ir-inbox/auftrag.txt ] && git diff --name-only HEAD~1 HEAD | grep -q 'content/ir-inbox/auftrag.txt'; then
+            tr ',' '\n' < content/ir-inbox/auftrag.txt | tr -d ' \r' | sed '/^$/d;/^#/d' | sed 's/^/ticker:/' >> /tmp/todo.txt
           fi
           if [ ! -s /tmp/todo.txt ]; then
             git diff --name-only --diff-filter=AM HEAD~1 HEAD -- 'content/ir-inbox/*.pdf' > /tmp/todo.txt || true
