@@ -652,7 +652,14 @@ def unsplash_candidates(terms, per=8):
     return list(out.values())
 
 
+def _short_artist(a):
+    a = re.split(r"\s(?:I'd appreciate|This file is|Licensed|Lizenz|Attribution|CC[ -]BY|https?://)", a or "", 1)[0]
+    a = re.sub(r"\s*\(\s*[^)]*\)\s*", " ", a).strip(" ,.-")
+    return (a[:60].rsplit(" ", 1)[0] if len(a) > 60 else a) or "Unbekannt"
+
+
 def photo_credit(photo):
+    photo = dict(photo, artist=_short_artist(photo.get("artist", "")))
     return f"Foto: {photo['artist']} / {photo.get('quelle', 'Wikimedia Commons')}" + ("" if photo.get("quelle") == "Unsplash" else f", {photo['lic']}")
 
 
