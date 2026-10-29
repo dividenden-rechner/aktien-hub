@@ -46,6 +46,7 @@ jobs:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
           SEC_USER_AGENT: ${{ vars.SEC_USER_AGENT }}
           FMP_API_KEY: ${{ secrets.FMP_API_KEY }}
+          UNSPLASH_ACCESS_KEY: ${{ secrets.UNSPLASH_ACCESS_KEY }}
           ART: ${{ github.event.inputs.art }}
           TICKERS: ${{ github.event.inputs.ticker }}
           PDF_URL: ${{ github.event.inputs.pdf_url }}

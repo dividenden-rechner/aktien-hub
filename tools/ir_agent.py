@@ -622,11 +622,44 @@ def commons_candidates(company, terms=None):
     return list(seen.values())[:(30 if terms else 15)], brand
 
 
+def unsplash_candidates(terms, per=8):
+    """Zusaetzliche Fotoquelle: Unsplash (nur mit UNSPLASH_ACCESS_KEY). Unsplash-Lizenz: kostenlos, auch kommerziell, Namensnennung erwuenscht."""
+    key = os.environ.get("UNSPLASH_ACCESS_KEY")
+    if not key or os.environ.get("IR_MOCK"):
+        return []
+    out = {}
+    for term in terms:
+        qs = urllib.parse.urlencode({"query": term, "orientation": "landscape", "content_filter": "high", "per_page": per})
+        try:
+            req = urllib.request.Request("https://api.unsplash.com/search/photos?" + qs,
+                                         headers={"Authorization": "Client-ID " + key, "Accept-Version": "v1", "User-Agent": "dividenden-rechner.de Magazin-Agent"})
+            with urllib.request.urlopen(req, timeout=30) as r:
+                data = json.loads(r.read().decode("utf-8", "replace"))
+        except Exception as e:
+            print("Unsplash nicht erreichbar:", e); break
+        for it in data.get("results", []):
+            if it.get("width", 0) < 1800 or it.get("id") in out:
+                continue
+            u = (it.get("user") or {}); links = it.get("links") or {}
+            desc = _strip(it.get("description") or it.get("alt_description") or "")[:200]
+            out[it["id"]] = {"title": "Unsplash " + it["id"], "thumb": it["urls"]["raw"] + ("&" if "?" in it["urls"]["raw"] else "?") + "w=1600&q=80&fm=jpg&fit=max",
+                             "page": (links.get("html") or "https://unsplash.com") + "?utm_source=dividenden-rechner&utm_medium=referral",
+                             "artist": u.get("name") or "Unbekannt", "lic": "Unsplash-Lizenz", "quelle": "Unsplash", "desc": desc,
+                             "date": (it.get("created_at") or "")[:10], "download": links.get("download_location", "")}
+    return list(out.values())
+
+
+def photo_credit(photo):
+    return f"Foto: {photo['artist']} / {photo.get('quelle', 'Wikimedia Commons')}" + ("" if photo.get("quelle") == "Unsplash" else f", {photo['lic']}")
+
+
 def pick_photo(company, ticker, key):
     cands, brand = commons_candidates(company)
     print(f"Foto-Kandidaten bei Wikimedia Commons: {len(cands)}")
-    if not cands or not key:
+    if not key:
         return None
+    if not cands:
+        return pick_photo_topic([company], "", "", key, only_unsplash=True)       # nichts bei Commons: Unsplash-Szenenfoto
     listing = "\n".join(f"{i}: {c['title']} | {c['desc']} | {c['date']}" for i, c in enumerate(cands))
     prompt = (f"Waehle ein Aufmacherfoto fuer einen sachlichen Boersenartikel ueber die Quartalszahlen von {company}. "
               "Gut: Unternehmenszentrale, Werk, Filiale, Produkt im Alltag, Strassenszene mit klarem Bezug zum Unternehmen. "
@@ -637,16 +670,18 @@ def pick_photo(company, ticker, key):
         idx = _generate([{"text": prompt}], schema, key)["index"]
     except SystemExit:
         return None
-    return cands[idx] if isinstance(idx, int) and 0 <= idx < len(cands) else None
+    if isinstance(idx, int) and 0 <= idx < len(cands):
+        return cands[idx]
+    return pick_photo_topic([company], "", "", key, only_unsplash=True)           # Commons passt nicht: Unsplash probieren
 
 
-def pick_photo_topic(companies, fokus, industry, key):
+def pick_photo_topic(companies, fokus, industry, key, only_unsplash=False):
     """Aufmacherfoto zum Thema (Produkte, Branche, Szene) statt Firmenzentrale: Gemini nennt Suchbegriffe, dann Auswahl."""
     names = ", ".join(companies)
     schema = {"type": "OBJECT", "required": ["terms"], "properties": {"terms": {"type": "ARRAY", "items": {"type": "STRING"}}}}
     try:
         t = _generate([{"text": f"Ein Boersenartikel vergleicht {names}" + (f" (Branche: {industry})" if industry else "") + (f", Thema: {fokus}" if (fokus or '').strip() else "") +
-                        ". Nenne acht englische Suchbegriffe fuer Wikimedia Commons, um ein Aufmacherfoto zu finden: Produkte der Unternehmen im Einsatz oder typische Szenen der Branche "
+                        ". Nenne acht englische Suchbegriffe fuer Wikimedia Commons und Unsplash, um ein Aufmacherfoto zu finden: Produkte der Unternehmen im Einsatz oder typische Szenen der Branche "
                         "(zum Beispiel 'Airbus A350 in flight', 'Boeing 737 MAX landing', 'airliner takeoff sunset', 'aircraft assembly line'). Keine Firmenzentralen, keine Buerogebaeude, keine Personen, keine Logos. "
                         "Mische konkrete Produkte der einzelnen Unternehmen mit allgemeinen Branchenszenen."}], schema, key)
         terms = [x for x in (t.get("terms") or []) if isinstance(x, str) and x.strip()][:8]
@@ -655,8 +690,12 @@ def pick_photo_topic(companies, fokus, industry, key):
     if not terms:
         return None
     print("Foto-Suchbegriffe:", terms)
-    cands, _ = commons_candidates(companies[0], terms=terms)
-    print(f"Foto-Kandidaten (Thema) bei Wikimedia Commons: {len(cands)}")
+    cands, _ = ([], None) if only_unsplash else commons_candidates(companies[0], terms=terms)
+    uns = unsplash_candidates(terms)
+    if uns:
+        print(f"Foto-Kandidaten bei Unsplash: {len(uns)}")
+    cands = cands + uns
+    print(f"Foto-Kandidaten (Thema) gesamt: {len(cands)}")
     if not cands:
         return None
     listing = "\n".join(f"{i}: {c['title']} | {c['desc']} | {c['date']}" for i, c in enumerate(cands))
@@ -672,6 +711,11 @@ def pick_photo_topic(companies, fokus, industry, key):
 
 def save_photo(c, slug):
     raw = http(c["thumb"], binary=True, ua="dividenden-rechner.de Magazin-Agent (https://www.dividenden-rechner.de)")
+    if c.get("download") and os.environ.get("UNSPLASH_ACCESS_KEY"):      # Unsplash-API-Vorgabe: genutzte Fotos ueber download_location melden
+        try:
+            urllib.request.urlopen(urllib.request.Request(c["download"], headers={"Authorization": "Client-ID " + os.environ["UNSPLASH_ACCESS_KEY"], "User-Agent": "dividenden-rechner.de Magazin-Agent"}), timeout=20).read()
+        except Exception as e:
+            print("Unsplash-Downloadmeldung fehlgeschlagen:", e)
     im = Image.open(BytesIO(raw)).convert("RGB")
     w, h = im.size; tgt = 16 / 9
     if w / h > tgt:
@@ -1009,8 +1053,8 @@ def build(out, text, src_note, force=False, calc_rows=None, fmp_used=False, figs
     if photo:
         rel = save_photo(photo, slug)
         fm += [f"image: {rel}", f"image_alt: {q('Foto zu ' + out['company'] + ': ' + (photo['desc'] or photo['title'].replace('File:', '')))}",
-               f"image_credit: {q('Foto: ' + photo['artist'] + ' / Wikimedia Commons, ' + photo['lic'])}", f"image_source: {photo['page']}"]
-        hinweise.append("Aufmacherfoto ist automatisch von Wikimedia Commons gewaehlt: bitte pruefen, ob es zum Artikel passt (sonst image-Zeilen entfernen, dann entsteht ein Titelbild automatisch).")
+               f"image_credit: {q(photo_credit(photo))}", f"image_source: {photo['page']}"]
+        hinweise.append(f"Aufmacherfoto ist automatisch von {photo.get('quelle', 'Wikimedia Commons')} gewaehlt: bitte pruefen, ob es zum Artikel passt (sonst image-Zeilen entfernen, dann entsteht ein Titelbild automatisch).")
     else:
         hinweise.append("Kein freies Aufmacherfoto gefunden, das Titelbild entsteht automatisch. Eigenes Foto: image, image_alt, image_credit ergaenzen.")
     tk = re.sub(r"[^A-Za-z0-9.\-]", "", out.get("ticker") or "")
