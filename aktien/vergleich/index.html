@@ -176,6 +176,19 @@ thead th{font-size:12px;color:var(--mut);font-weight:600;background:#fafbfc}
 tr.self td,tr.self td:first-child{background:#f0f8f3}tr.med td{font-weight:600;color:var(--mut);background:#fafbfc}
 td.co{display:flex;align-items:center;gap:10px}td.co small{display:block;color:var(--mut);font-size:12px}
 td.co .logo{width:28px;height:28px}
+.hb{margin:8px 0 4px}
+.hbr{display:grid;grid-template-columns:minmax(120px,190px) 1fr;align-items:center;min-height:46px}
+.hbn{display:flex;align-items:center;gap:10px;font-size:14px;padding-right:10px}.hbn span{line-height:1.25}.hbn small{display:block;color:var(--mut);font-size:12px}
+.hbr.self .hbn span{font-weight:700}
+.hbn .logo{width:30px;height:30px}
+.hbt{position:relative;height:46px}
+.hbar{position:absolute;top:10px;height:26px;border-radius:3px}
+.hbv{position:absolute;top:12px;font-style:normal;font-weight:600;font-size:14px;line-height:22px;white-space:nowrap;background:#ffffffcc;padding:0 2px}
+.hz{position:absolute;top:0;bottom:0;width:1px;background:var(--line)}
+.hm{position:absolute;top:0;bottom:0;width:0;border-left:2px dashed #14202b99;z-index:1}
+.mkey{display:inline-block;width:0;height:12px;border-left:2px dashed #14202b99;margin-right:8px;vertical-align:-2px}
+.kleg .lk{display:inline-flex;align-items:center;gap:6px}.kleg .lk .logo{width:20px;height:20px;border-radius:4px}
+@media(max-width:520px){.hbr{grid-template-columns:minmax(96px,128px) 1fr}.hbn{gap:6px;font-size:13px;padding-right:6px}.hbn .logo{width:24px;height:24px}.hbn small{display:none}}
 </style>
 <style>
 /* Einheitliche Hauptnavigation des Aktien-Hubs */
@@ -310,20 +323,19 @@ function hbars(m){
   const miss=all().filter(s=>!rows.find(r=>r.s===s));
   if(!rows.length)return `<p class="fnote">Für diese Auswahl liegen keine Werte vor.</p>`;
   rows.sort((a,b)=>b.v-a.v);
-  const W=Math.max(300,Math.min(720,($('chart').clientWidth||720)-34)),nar=W<520,L=nar?118:170,R=nar?64:84,rowH=nar?36:40,top=10,H=top+rows.length*rowH+34;
-  const mx=Math.max(0,...rows.map(r=>r.v)),mn=Math.min(0,...rows.map(r=>r.v)),rng=(mx-mn)||1,pw=W-L-R;
-  const X=v=>L+(v-mn)/rng*pw,z=X(0);
+  const mx=Math.max(0,...rows.map(r=>r.v)),mn=Math.min(0,...rows.map(r=>r.v)),rng=(mx-mn)||1;
+  const pl=mn<0?16:0,pr=18,X=v=>pl+(v-mn)/rng*(100-pl-pr),z=X(0);
   const med=median(rows.filter(r=>r.s!==S.sel).map(r=>r.v));
-  let s=`<svg viewBox="0 0 ${W} ${H}" role="img" aria-label="${esc(m.l)} im Vergleich">`;
-  rows.forEach((r,i)=>{
-    const y=top+i*rowH,x0=Math.min(z,X(r.v)),w=Math.max(2,Math.abs(X(r.v)-z)),self=r.s===S.sel;
-    s+=`<text x="${L-10}" y="${y+rowH/2+4}" text-anchor="end" style="font-size:13px;fill:var(--ink);font-weight:${self?700:500}">${esc(short(nameOf(r.s)).slice(0,nar?14:22))}</text>`;
-    s+=`<rect x="${x0}" y="${y+7}" width="${w}" height="${rowH-14}" rx="3" fill="${r.v<0?"var(--neg)":self?"var(--acc)":"var(--bar2)"}"><title>${esc(nameOf(r.s))}: ${m.fmt(r.v)}</title></rect>`;
-    s+=`<text x="${r.v>=0?x0+w+8:x0-8}" y="${y+rowH/2+4}" text-anchor="${r.v>=0?"start":"end"}" style="font-size:13px;fill:var(--ink);font-weight:600;paint-order:stroke;stroke:#fff;stroke-width:4px">${m.fmt(r.v)}</text>`;
+  let h=`<div class="hb" role="img" aria-label="${esc(m.l)} im Vergleich">`;
+  rows.forEach(r=>{
+    const self=r.s===S.sel,a=Math.min(z,X(r.v)),w=Math.max(.6,Math.abs(X(r.v)-z)),w0=D[r.s]&&D[r.s].p&&D[r.s].p.website;
+    h+=`<div class="hbr${self?" self":""}"><div class="hbn">${logoImg(r.s,w0)}<span>${esc(short(nameOf(r.s)))}<small>${esc(r.s)}</small></span></div>`+
+       `<div class="hbt"><i class="hz" style="left:${z}%"></i>${med!=null&&rows.length>2?`<i class="hm" style="left:${X(med)}%"></i>`:""}`+
+       `<b class="hbar" style="left:${a}%;width:${w}%;background:${r.v<0?"var(--neg)":self?"var(--acc)":"var(--bar2)"}" title="${esc(nameOf(r.s))}: ${m.fmt(r.v)}"></b>`+
+       `<em class="hbv" style="${r.v>=0?`left:calc(${a+w}% + 8px)`:`right:calc(${100-a}% + 8px)`}">${m.fmt(r.v)}</em></div></div>`;
   });
-  s+=`<line x1="${z}" x2="${z}" y1="${top}" y2="${top+rows.length*rowH}" stroke="var(--line)"/>`;
-  if(med!=null&&rows.length>2){const xm=X(med);s+=`<line x1="${xm}" x2="${xm}" y1="${top}" y2="${top+rows.length*rowH}" stroke="#14202b" stroke-dasharray="4 4" opacity=".55"/><text x="${xm}" y="${H-10}" text-anchor="middle" style="font-size:12px">Peer-Median ${m.fmt(med)}</text>`}
-  return s+`</svg>`+(miss.length?`<p class="fnote">Keine Werte für: ${miss.map(x=>esc(nameOf(x))).join(", ")}.</p>`:"");
+  h+=`</div>`+(med!=null&&rows.length>2?`<p class="fnote"><span class="mkey"></span>gestrichelte Linie: Peer-Median ${m.fmt(med)}</p>`:"");
+  return h+(miss.length?`<p class="fnote">Keine Werte für: ${miss.map(x=>esc(nameOf(x))).join(", ")}.</p>`:"");
 }
 function lines(m){
   const ser=all().map((s,i)=>({s,i,pts:HD[s]?m.h(HD[s]).filter(p=>p[1]!=null):[]})).filter(x=>x.pts.length);
@@ -337,7 +349,7 @@ function lines(m){
   ser.forEach(x=>{const self=x.s===S.sel,c=self?"var(--acc)":COL[x.i%COL.length];
     s+=`<path d="${x.pts.map((p,j)=>(j?"L":"M")+X(p[0])+","+Y(p[1])).join("")}" fill="none" stroke="${c}" stroke-width="${self?3.5:2}"/>`;
     x.pts.forEach(p=>s+=`<circle cx="${X(p[0])}" cy="${Y(p[1])}" r="${self?4:3}" fill="${c}"><title>${esc(nameOf(x.s))} ${esc(p[0])}: ${m.fmt(p[1])}</title></circle>`)});
-  s+=`</svg><div class="kleg">${ser.map(x=>`<span><i style="background:${x.s===S.sel?"var(--acc)":COL[x.i%COL.length]}"></i>${esc(short(nameOf(x.s)))}</span>`).join("")}</div>`;
+  s+=`</svg><div class="kleg">${ser.map(x=>`<span class="lk">${logoImg(x.s,D[x.s]&&D[x.s].p&&D[x.s].p.website)}<i style="background:${x.s===S.sel?"var(--acc)":COL[x.i%COL.length]}"></i>${esc(short(nameOf(x.s)))}</span>`).join("")}</div>`;
   const miss=all().filter(s=>!ser.find(x=>x.s===s));
   return s+(miss.length?`<p class="fnote">Keine Werte für: ${miss.map(x=>esc(nameOf(x))).join(", ")}.</p>`:"");
 }
