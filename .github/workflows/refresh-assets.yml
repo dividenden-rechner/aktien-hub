@@ -1,0 +1,51 @@
+name: Foto und Logo erneuern
+on:
+  push:
+    branches: [main]
+    paths:
+      - "tools/asset.request"
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: magazin
+  cancel-in-progress: false
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install markdown pillow
+      - name: Foto und Logo erneuern
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          UNSPLASH_ACCESS_KEY: ${{ secrets.UNSPLASH_ACCESS_KEY }}
+          SEC_USER_AGENT: ${{ vars.SEC_USER_AGENT }}
+        run: |
+          # Eine Zeile pro Artikel:  kennung | Suchbegriffe (Komma) | Logo-Kuerzel | Logo-Domain | Bildthema
+          while IFS='|' read -r slug terms sym dom fokus; do
+            slug=$(echo "$slug" | xargs); [ -z "$slug" ] && continue
+            case "$slug" in \#*) continue;; esac
+            args=("$slug")
+            [ -n "$(echo "$terms" | xargs)" ] && args+=(--terms "$(echo "$terms" | xargs)")
+            [ -n "$(echo "$sym" | xargs)" ] && args+=(--symbol "$(echo "$sym" | xargs)")
+            [ -n "$(echo "$dom" | xargs)" ] && args+=(--domain "$(echo "$dom" | xargs)")
+            [ -n "$(echo "$fokus" | xargs)" ] && args+=(--fokus "$(echo "$fokus" | xargs)")
+            python3 tools/refresh_assets.py "${args[@]}" || echo "::warning::Fehler bei $slug"
+          done < tools/asset.request
+      - name: Logos holen und Seite bauen
+        run: |
+          python3 tools/fetch_logos.py
+          python3 tools/build_magazin.py
+      - name: Änderungen committen
+        run: |
+          git config user.name "asset-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add -A
+          if git diff --cached --quiet; then echo "Keine Änderungen"; exit 0; fi
+          git commit -m "Foto und Logo erneuert"
+          git pull --rebase -q || { git checkout --theirs . 2>/dev/null; git add -A; GIT_EDITOR=true git rebase --continue; }
+          git push
