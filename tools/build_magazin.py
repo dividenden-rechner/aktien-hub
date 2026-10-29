@@ -296,6 +296,16 @@ def card_logo(x, pre):
     name = re.sub(r"[^A-Za-z0-9]", "", x.get("title", "?")) or "?"
     return f'<span class="mclogo mcmono" style="{base}background:#2f9e5b;color:#fff;font-weight:800;font-size:24px">{esc(name[0].upper())}</span>'
 
+def mini_logo(x, pre):
+    """Kleines Logo fuer die Archivliste (ohne Titelbild)."""
+    lf = x.get("logo_file", "")
+    if lf and os.path.exists(lf):
+        dark = logo_is_light(lf) and not os.path.basename(lf).startswith("combo-")
+        cls = "arlogo combo" if os.path.basename(lf).startswith("combo-") else ("arlogo dark" if dark else "arlogo")
+        return f'<span class="{cls}"><img src="{pre}{esc(lf)}" alt="" loading="lazy"></span>'
+    name = re.sub(r"[^A-Za-z0-9]", "", x.get("title", "?")) or "?"
+    return f'<span class="arlogo mono">{esc(name[0].upper())}</span>'
+
 def build_index(posts):
     depth = 1; pre = "../"; url = "magazin/"
     title = "News: Dividenden, Kennzahlen und Steuern erklärt"
@@ -313,7 +323,7 @@ def build_index(posts):
         if x.get("aufmacher", "").lower() in ("ja", "true", "1", "yes") and (posts[0]["dt"] - x["dt"]).days <= 3:
             hero = x; break
     rest = [x for x in posts if x is not hero]
-    side, grid = rest[:4], rest[4:]
+    side, grid, archiv = rest[:4], rest[4:12], rest[12:]
     o += (f'<section class="mag-top" aria-label="Thema des Tages"><a class="mag-hero" href="{hero["slug"]}/"><div class="mcwrap" style="position:relative;margin:0"><img class="mcover" src="{pre}{hero["img"]}" alt="" width="1200" height="675" fetchpriority="high">{card_logo(hero, pre)}</div>'
           f'<div class="mag-hero-body"><p class="kicker"><span class="mag-badge">Thema des Tages</span> {esc(hero["category"])} · {de_dt_kurz(hero["dt"])}</p><h2>{esc(hero["title"])}</h2><p class="mag-lead">{esc(hero["description"])}</p><span class="mag-more">Artikel lesen →</span></div></a>\n')
     if side:
@@ -327,7 +337,14 @@ def build_index(posts):
         for x in grid:
             o += (f'<a class="card" href="{x["slug"]}/"><div class="mcwrap" style="position:relative;margin:0"><img class="mcover" src="{pre}{x["img"]}" alt="" width="1200" height="675" loading="lazy">{card_logo(x, pre)}</div>'
                   f'<p class="kicker">{esc(x["category"])} · {de_dt_kurz(x["dt"])}</p><h3>{esc(x["title"])}</h3><p>{esc(x["description"])}</p></a>\n')
-    o += ('</div>\n' if grid else '') + '<p class="meta"><a href="feed.xml">RSS-Feed abonnieren</a></p>\n' + HINT + "\n</main>\n" + footer_html(depth) + "\n</body>\n</html>\n"
+    if grid: o += '</div>\n'
+    if archiv:
+        o += '<h2 class="mag-more-h">Älter</h2>\n<ul class="mag-archiv">\n'
+        for x in archiv:
+            o += (f'<li><a href="{x["slug"]}/">{mini_logo(x, pre)}<span class="artx"><span class="kicker">{esc(x["category"])} · {de_dt_kurz(x["dt"])}</span>'
+                  f'<strong>{esc(x["title"])}</strong></span></a></li>\n')
+        o += '</ul>\n'
+    o += '<p class="meta"><a href="feed.xml">RSS-Feed abonnieren</a></p>\n' + HINT + "\n</main>\n" + footer_html(depth) + "\n</body>\n</html>\n"
     open("magazin/index.html", "w", encoding="utf-8").write(o)
 
 def build_feed(posts):

@@ -101,6 +101,8 @@ svg text{fill:var(--mut);font-size:11px;font-family:inherit}
 .xnote{font-size:13px;color:var(--mut);margin:4px 0 14px;max-width:80ch}
 .fin{margin:22px 0}.fin h3{margin:0 0 4px;font-size:17px}.fin .fsub{color:var(--mut);font-size:13px;margin:0 0 10px}
 .fcard{border:1px solid var(--line);border-radius:8px;background:#fff;padding:14px 16px;margin:0 0 16px}
+/* Desktop: Diagramme nicht mit der Seitenbreite aufblasen (Schrift bliebe sonst 2-3x zu gross) */
+@media(min-width:760px){.fcard svg[viewBox^="0 0 370 "],.fscroll svg[viewBox^="0 0 370 "]{min-width:0;max-width:540px;margin:0 auto}.fcard svg[viewBox^="0 0 480 "],.fscroll svg[viewBox^="0 0 480 "]{min-width:0;max-width:640px;margin:0 auto}.fcard .kern,#vtx .kern,#vfv .kern{font-size:18px}}
 .fscroll{overflow-x:auto}.fscroll svg{display:block;min-width:620px;width:100%;height:auto}.fscroll.fit svg{min-width:0}
 .ftoggle{display:inline-flex;gap:0;margin-left:auto}.ftoggle button{border-radius:0!important}.ftoggle button:first-child{border-radius:8px 0 0 8px!important}.ftoggle button:last-child{border-radius:0 8px 8px 0!important;border-left:0!important}
 @media(max-width:560px){.ftab{font-size:12px}.ftab th,.ftab td{padding:5px 3px;white-space:normal}.ftab th{font-size:11px;line-height:1.2}.fcard{padding:12px 10px}}
