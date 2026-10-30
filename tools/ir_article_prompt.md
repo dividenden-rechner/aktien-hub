@@ -100,5 +100,5 @@ Einordnung (Pflicht in jedem Artikel, auch bei Dividenden-, Insider-, Split- und
 
 ## Überschriften und Zahlenformat (verbindlich)
 - Die Überschrift nennt die eigentliche Nachricht dieses Berichts, nicht automatisch den Umsatz. Die Formel „X steigert Umsatz auf Y“ ist zu vermeiden. Wähle, was bei diesem Unternehmen in diesem Quartal auffällt (Gewinn, Marge, Prognose, Dividende, Rückkauf, Schulden, ein Segment, Rekord oder Einbruch) und variiere Verben und Satzbau.
-- Beträge ab 1.000 Millionen schreibst du in Milliarden (Mrd.) mit höchstens zwei Nachkommastellen, zum Beispiel „rund 1,85 Mrd. Euro“ statt „1.857 Mio. Euro“.
+- Beträge ab 1.000 Millionen schreibst du in Milliarden (Mrd.) mit genau einer Nachkommastelle, zum Beispiel „17,4 Mrd. USD“ statt „17,404 Mrd. USD“ oder „1,9 Mrd. Euro“ statt „1.857 Mio. Euro“. Dasselbe gilt für Millionen: „938,3 Mio.“ statt „938,347 Mio.“. Nie drei Nachkommastellen. Prozentwerte höchstens mit einer Nachkommastelle.
 - Vorgehen: Lies die Kernzahlen auf der ersten Seite des Berichts. Sammle vier bis sechs mögliche Nachrichtenwinkel (Gewinn, Marge, Prognose, Free Cashflow, Segment oder Region, Dividende, Rückkauf, Schulden, Sonderposten, Aussagen des Managements) und wähle den mit dem höchsten Nachrichtenwert. Der Umsatz ist nur dann der Aufhänger, wenn er wirklich die Nachricht ist.

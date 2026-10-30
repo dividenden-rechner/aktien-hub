@@ -95,10 +95,25 @@ def read_post(path):
     meta["dt"] = parse_date(meta["date"])
     meta["upd"] = parse_date(meta["updated"]) if meta.get("updated") else meta["dt"]
     meta["body_md"] = fix_kurz(m.group(2).strip())
+    for k in ("title", "description"):
+        if meta.get(k): meta[k] = round_big(meta[k])
     meta["draft"] = meta.get("draft", "").lower() in ("true", "ja", "1", "yes")
     meta["author"] = meta.get("author") or CFG["default_author"]
     meta["category"] = meta.get("category") or "Analyse"
     return meta
+
+_BIG = re.compile(r"(?<![\d,.])(\d{1,3}(?:\.\d{3})*|\d+),(\d{2,})(\s*(?:Mrd\.|Mio\.|Bio\.|Milliarden|Millionen|Billionen)(?!\w))")
+
+
+def round_big(t):
+    """Betraege in Milliarden/Millionen mit genau einer Nachkommastelle (17,404 Mrd. -> 17,4 Mrd.)."""
+    from decimal import Decimal, ROUND_HALF_UP
+    def r(m):
+        v = Decimal(m.group(1).replace(".", "") + "." + m.group(2)).quantize(Decimal("0.1"), ROUND_HALF_UP)
+        i, d = str(v).split(".")
+        return "{:,}".format(int(i)).replace(",", ".") + "," + d + m.group(3)
+    return _BIG.sub(r, t or "")
+
 
 def fix_kurz(t):
     """Kennzahlenzeile im Kurz-gesagt-Kasten: Umsatz und Gewinn untereinander (alte Einzeiler werden umgeformt, leere Werte entfallen)."""
@@ -107,6 +122,7 @@ def fix_kurz(t):
         parts = [x for x in parts if not re.search(r":\*\*\s*(n\.\s?a\.|k\.\s?A\.|keine Angabe)\s*$", x, re.I)]
         return "".join("    " + x + "  \n" for x in parts).rstrip(" \n") if parts else ""
     t = re.sub(r"^    (\*\*(?:Umsatz|Erlöse?|Einnahmen)[^\n]*? · \*\*[^\n]+)$", one, t, flags=re.M)
+    t = round_big(t)
     t = re.sub(r"^    \*\*[^*\n]+:\*\*\s*(?:n\.\s?a\.|k\.\s?A\.|keine Angabe)\s*\n", "", t, flags=re.M | re.I)   # leere Kennzahlzeilen entfallen
     # bereits untereinander geschriebene Zeilen: Zeilenumbruch erzwingen
     t = re.sub(r"^(    \*\*(?:Umsatz|Erlöse?|Einnahmen):\*\*[^\n]*?)[ ]*\n(    \*\*(?!\s))", r"\1  \n\2", t, flags=re.M)
