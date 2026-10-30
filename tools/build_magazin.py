@@ -335,26 +335,18 @@ def post_region(x):
         return "europa"
     return "usa"
 
-TOPICS = [("zahlen", "Finanzberichte"), ("dividende", "Dividenden"), ("management", "Management"), ("rueckkauf", "Aktienrückkauf"),
-          ("uebernahme", "Übernahmen"), ("recht", "Recht & Regulierung"), ("analyse", "Analysen & Wissen"), ("sonstige", "Weitere Meldungen")]
-
 def post_topics(x):
-    c = x.get("category", ""); t = x.get("title", "").lower()
-    if c == "Dividende" or "dividende" in t: return "dividende"
-    if c in _FIN: return "zahlen"
-    if c == "Management": return "management"
-    if c == "Aktienrückkauf": return "rueckkauf"
-    if c == "Übernahme": return "uebernahme"
-    if c == "Recht & Regulierung": return "recht"
-    if x.get("typ") != "kurz": return "analyse"
-    return "sonstige"
+    t = []
+    if x.get("category") in _FIN: t.append("zahlen")
+    if x.get("category") == "Dividende" or "dividende" in x.get("title", "").lower(): t.append("dividende")
+    return " ".join(t)
 
 FILTER_JS = """<script>(function(){var R="alle",T="alle",nb=document.getElementById("mag-normal"),fl=document.getElementById("mag-filtered"),li=fl.querySelectorAll("li"),em=document.getElementById("mag-empty");
-function ap(){var on=R!=="alle"||T!=="alle";nb.hidden=on;fl.hidden=!on;var n=0;li.forEach(function(e){var ok=(R==="alle"||e.dataset.r===R)&&(T==="alle"||e.dataset.t===T);e.hidden=!ok;if(ok)n++});em.hidden=!on||n>0;
-document.querySelectorAll(".mag-chip").forEach(function(b){var a=(b.dataset.g==="r"?R:T)===b.dataset.v;b.setAttribute("aria-pressed",String(a));if(a&&b.scrollIntoView)try{b.scrollIntoView({block:"nearest",inline:"center"})}catch(e){}});
-try{history.replaceState(null,"",on?"#"+R+"~"+T:location.pathname)}catch(e){}}
+function ap(){var on=R!=="alle"||T!=="alle";nb.hidden=on;fl.hidden=!on;var n=0;li.forEach(function(e){var ok=(R==="alle"||e.dataset.r===R)&&(T==="alle"||(" "+e.dataset.t+" ").indexOf(" "+T+" ")>-1);e.hidden=!ok;if(ok)n++});em.hidden=!on||n>0;
+document.querySelectorAll(".mag-chip").forEach(function(b){b.setAttribute("aria-pressed",String((b.dataset.g==="r"?R:T)===b.dataset.v))});
+try{history.replaceState(null,"",on?"#"+R+(T!=="alle"?"-"+T:""):location.pathname)}catch(e){}}
 document.querySelector(".mag-filter").addEventListener("click",function(e){var b=e.target.closest(".mag-chip");if(!b)return;if(b.dataset.g==="r")R=b.dataset.v;else T=b.dataset.v;ap()});
-var h=location.hash.slice(1).split("~");if(/^(usa|europa|asien)$/.test(h[0]))R=h[0];if(h[1]&&document.querySelector('.mag-chip[data-g="t"][data-v="'+h[1].replace(/[^a-z]/g,"")+'"]'))T=h[1];ap()})();</script>
+var h=location.hash.slice(1).split("-");if(h[0]&&/^(usa|europa|asien)$/.test(h[0]))R=h[0];if(h[1]&&/^(zahlen|dividende)$/.test(h[1]))T=h[1];if(/^(zahlen|dividende)$/.test(h[0]))T=h[0];ap()})();</script>
 """
 
 def build_index(posts):
@@ -377,15 +369,11 @@ def build_index(posts):
     kurz_posts = [x for x in posts if x.get("typ") == "kurz"]
     rest = [x for x in posts if x is not hero and x.get("typ") != "kurz"]
     side, grid, archiv = rest[:4], rest[4:12], rest[12:]
-    import collections
-    rc = collections.Counter(post_region(x) for x in posts); tc = collections.Counter(post_topics(x) for x in posts)
-    def chip(g, v, l, n=None):
-        return (f'<button type="button" class="mag-chip" data-g="{g}" data-v="{v}" aria-pressed="{"true" if v == "alle" else "false"}">{l}'
-                + (f' <span class="mag-n">{n}</span>' if n is not None else "") + '</button>')
-    chips = ('<div class="mag-filter" role="group" aria-label="News filtern"><div class="mag-tabs" aria-label="Region">'
-             + chip("r", "alle", "Weltweit") + "".join(chip("r", v, l, rc[v]) for v, l in [("usa", "USA"), ("europa", "Europa"), ("asien", "Asien")] if rc[v])
-             + '</div><div class="mag-tabs sub" aria-label="Thema">' + chip("t", "alle", "Alle Themen")
-             + "".join(chip("t", v, l, tc[v]) for v, l in TOPICS if tc[v]) + '</div></div>\n<div id="mag-normal">\n')
+    chips = ('<div class="mag-filter" role="group" aria-label="News filtern"><div class="mag-fgrp"><span class="mag-flab">Region</span>'
+             + "".join(f'<button type="button" class="mag-chip" data-g="r" data-v="{v}" aria-pressed="{"true" if v == "alle" else "false"}">{l}</button>' for v, l in [("alle", "Weltweit"), ("usa", "USA"), ("europa", "Europa"), ("asien", "Asien")])
+             + '</div><div class="mag-fgrp"><span class="mag-flab">Thema</span>'
+             + "".join(f'<button type="button" class="mag-chip" data-g="t" data-v="{v}" aria-pressed="{"true" if v == "alle" else "false"}">{l}</button>' for v, l in [("alle", "Alle"), ("zahlen", "Finanzberichte"), ("dividende", "Dividenden")])
+             + '</div></div>\n<div id="mag-normal">\n')
     o += chips
     o += (f'<section class="mag-top" aria-label="Thema des Tages"><a class="mag-hero" href="{hero["slug"]}/"><div class="mcwrap" style="position:relative;margin:0"><img class="mcover" src="{pre}{hero["img"]}" alt="" width="1200" height="675" fetchpriority="high">{card_logo(hero, pre)}</div>'
           f'<div class="mag-hero-body"><p class="kicker"><span class="mag-badge">Thema des Tages</span> {esc(hero["category"])} · {de_dt_kurz(hero["dt"])}</p><h2>{esc(hero["title"])}</h2><p class="mag-lead">{esc(hero["description"])}</p><span class="mag-more">Artikel lesen →</span></div></a>\n')
