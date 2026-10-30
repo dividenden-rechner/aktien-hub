@@ -41,15 +41,22 @@
         if (draw) { c.save(); rr(c, 60, y, 960, ph, 28); c.clip(); c.drawImage(photo, 60 + (960 - w) / 2, y + (ph - h) / 2, w, h); c.restore(); }
         y += ph + 30;
       }
-      if (logo || S.cat || S.ct) {
-        var sz = ph && ph < 380 ? 104 : 128;
-        if (logo && draw) {
-          c.save(); c.shadowColor = "rgba(0,0,0,.14)"; c.shadowBlur = 14; c.shadowOffsetY = 4; c.fillStyle = light(logo) ? "#14202b" : "#fff"; rr(c, 60, y, sz, sz, 26); c.fill(); c.restore();
-          c.strokeStyle = "#dbe5ec"; c.lineWidth = 2; rr(c, 60, y, sz, sz, 26); c.stroke();
-          var q = Math.min((sz - 36) / logo.width, (sz - 36) / logo.height); c.drawImage(logo, 60 + (sz - logo.width * q) / 2, y + (sz - logo.height * q) / 2, logo.width * q, logo.height * q);
-        }
-        if ((S.cat || S.ct) && draw) { c.fillStyle = G; c.font = "700 32px " + F; c.fillText(((S.cat || "") + (S.ct ? (S.cat ? "  ·  " : "") + S.ct : "")).toUpperCase(), logo ? 60 + sz + 28 : 60, logo ? y + sz / 2 - 18 : y); }
-        y += logo ? sz + 24 : 48;
+      /* Logo wie auf den Uebersichtsseiten: Plakette oben links im Foto. Rubrik steht schon in der Vorlage. */
+      var sz = 132, tag = S.ct || "";
+      function plaque(px, py) {
+        c.save(); c.shadowColor = "rgba(0,0,0,.28)"; c.shadowBlur = 20; c.shadowOffsetY = 5; c.fillStyle = light(logo) ? "#14202b" : "#fff"; rr(c, px, py, sz, sz, 28); c.fill(); c.restore();
+        var q = Math.min((sz - 34) / logo.width, (sz - 34) / logo.height); c.drawImage(logo, px + (sz - logo.width * q) / 2, py + (sz - logo.height * q) / 2, logo.width * q, logo.height * q);
+      }
+      function pill(px, py) {
+        c.font = "700 34px " + F; var w = c.measureText(tag).width + 40; c.fillStyle = "rgba(20,32,43,.82)"; rr(c, px, py, w, 56, 28); c.fill(); c.fillStyle = "#fff"; c.fillText(tag, px + 20, py + 11);
+      }
+      if (photo) {
+        if (draw && logo) plaque(60 + 24, 232 + 24);
+        if (draw && tag) pill(60 + 24, 232 + ph - 80);
+      } else if (logo || tag) {
+        if (draw && logo) plaque(60, y);
+        if (draw && tag) { c.fillStyle = G; c.font = "700 40px " + F; c.fillText(tag, logo ? 60 + sz + 28 : 60, y + (logo ? sz / 2 - 20 : 0)); }
+        y += (logo ? sz : 44) + 26;
       }
       if (S.title) { c.font = "700 " + (fs + 25) + "px " + F; c.fillStyle = D; wrap(c, S.title, 960, 5).forEach(function (l) { if (draw) c.fillText(l, 60, y); y += Math.round((fs + 25) * 1.2); }); y += 16; }
       lns.forEach(function (l) {
@@ -70,6 +77,7 @@
     while (photo && ph > 300 && layout(false, ph, fs) > LIM) ph -= 30;
     while (fs > 26 && layout(false, ph, fs) > LIM) fs -= 1;
     while (photo && ph > 200 && layout(false, ph, fs) > LIM) ph -= 20;
+    while (photo && ph < 620 && layout(false, ph + 20, fs) <= LIM - 20) ph += 20;
     var yy = layout(true, ph, fs);
     if (S.text) {
       var lh2 = Math.round((fs + 2) * 1.35); c.fillStyle = "#33414d"; c.font = "400 " + (fs + 2) + "px " + F;

@@ -99,6 +99,7 @@ def read_post(path):
         if meta.get(k): meta[k] = round_big(meta[k])
     meta["draft"] = meta.get("draft", "").lower() in ("true", "ja", "1", "yes")
     meta["author"] = meta.get("author") or CFG["default_author"]
+    if "redaktion" in meta["author"].lower(): meta["author"] = "Aus der Redaktion"
     meta["category"] = meta.get("category") or "Analyse"
     return meta
 
@@ -456,7 +457,7 @@ def build_post(p, posts):
         {"@context": "https://schema.org", "@type": "NewsArticle", "headline": p["title"][:110], "description": p["description"],
          "inLanguage": "de", "datePublished": iso(p["dt"]), "dateModified": iso(p["upd"]), "mainEntityOfPage": BASE + url,
          "image": [img_url], "articleSection": p["category"], "wordCount": n_words,
-         "author": {"@type": "Organization" if "redaktion" in author.lower() else "Person", "name": author, **({"url": BASE + "ueber-uns/"} if "redaktion" in author.lower() else {}), **({"url": p["author_url"]} if p.get("author_url") else {})},
+         "author": {"@type": "Organization" if "redaktion" in author.lower() else "Person", "name": SITE if "redaktion" in author.lower() else author, **({"url": BASE + "ueber-uns/"} if "redaktion" in author.lower() else {}), **({"url": p["author_url"]} if p.get("author_url") else {})},
          "publisher": {"@type": "Organization", "name": SITE, "logo": {"@type": "ImageObject", "url": BASE + CFG["publisher_logo"]}}}]
     if faq:
         ld.append({"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [
@@ -468,7 +469,7 @@ def build_post(p, posts):
     o += f'<nav class="crumbs" aria-label="Brotkrumen"><a href="{pre}">Start</a> › <a href="{pre}news/">News</a> › <span aria-current="page">{esc(p["title"])}</span></nav>\n'
     o += f'<p class="kicker">{esc(p["category"])}</p>\n{logo_html(p)}<p class="lead">{esc(p["description"])}</p>\n'
     upd = f' · Aktualisiert: <time datetime="{iso(p["upd"])}">{de_date(p["upd"])}</time>' if p["upd"].date() > p["dt"].date() else ""
-    o += f'<p class="byline">Von <strong>{esc(author)}</strong> · <time datetime="{iso(p["dt"])}">{de_dt(p["dt"])}</time>{upd} · {mins} Min. Lesezeit</p>\n'
+    o += f'<p class="byline">{('<strong><a href="' + pre + 'ueber-uns/">Aus der Redaktion</a></strong>') if 'redaktion' in author.lower() else 'Von <strong>' + esc(author) + '</strong>'} · <time datetime="{iso(p["dt"])}">{de_dt(p["dt"])}</time>{upd} · {mins} Min. Lesezeit</p>\n'
     o += share_html(p, url, img if ext(img) else pre + img)
     alt = p.get("image_alt") or p["title"]
     cred = credit_html(p)
@@ -481,7 +482,7 @@ def build_post(p, posts):
     if kurz and p.get("quelle_url", "").startswith("http"):
         o += (f'<p class="kurzquelle">Quelle: <a href="{esc(p["quelle_url"])}" rel="noopener nofollow" target="_blank">{esc(p.get("quelle_name") or "Originalmeldung des Unternehmens")}</a></p>\n')
     o += glossar.box(hits, pre)
-    bio = p.get("author_bio") or 'Das Redaktions-Team von Dividenden-Rechner.de schreibt über Dividendenaktien, Kennzahlen und Steuerthemen für Privatanleger. Die Rechner und Auswertungen auf der Seite entstehen im eigenen Haus.'
+    bio = p.get("author_bio") or 'Die Redaktion von Dividenden-Rechner.de schreibt über Dividendenaktien, Kennzahlen und Steuerthemen für Privatanleger. Die Rechner und Auswertungen auf der Seite entstehen im eigenen Haus.'
     o += f'<aside class="authorbox"><strong>{esc(author)}</strong><p>{esc(bio)}</p><p>{KURZ_HINWEIS if kurz else "Artikel können mit Unterstützung von KI entstehen. Jeder Beitrag wird manuell geprüft und geht erst danach online."} <a href="{pre}ueber-uns/">Mehr über uns</a></p></aside>\n'
     others = [x for x in posts if x["slug"] != slug and x.get("typ") != "kurz"][:3]
     if others:
