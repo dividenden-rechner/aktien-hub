@@ -1,5 +1,5 @@
 ---
-title: "Caterpillar setzt 2,0 Mrd. US-Dollar für Aktienrückkäufe und Dividenden ein"
+title: "Caterpillar: Gewinn je Aktie bei 7,13 US-Dollar im Q3 2026"
 description: "Caterpillar legt die Ergebnisse fuer das dritte Quartal 2026 vor und meldet einen Umsatz von 20,7 Milliarden US-Dollar."
 date: 2026-10-29 23:49
 author: "Redaktions-Team Dividenden-Rechner.de"

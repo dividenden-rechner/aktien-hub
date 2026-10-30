@@ -1,5 +1,5 @@
 ---
-title: "Gen Digital prognostiziert 5,465 bis 5,515 Mrd. US-Dollar Jahresumsatz"
+title: "Gen Digital: Verwässerter Gewinn je Aktie im Q2 bei 0,48 US-Dollar"
 description: "Gen Digital steigert den Umsatz im zweiten Quartal 2027 um 12 Prozent auf 1,369 Milliarden US-Dollar und erhöht die Jahresprognose."
 date: 2026-10-29 23:30
 author: "Redaktions-Team Dividenden-Rechner.de"

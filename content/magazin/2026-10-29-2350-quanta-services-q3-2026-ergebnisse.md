@@ -1,5 +1,5 @@
 ---
-title: "Quanta Services schließt Q3 mit 694,9 Millionen US-Dollar Nettogewinn ab"
+title: "Quanta Services verzeichnet 694,9 Millionen US-Dollar Q3-Nettogewinn"
 description: "Quanta Services legt Ergebnisse für das dritte Quartal 2026 vor und erhöht die Gesamtjahresprognose."
 date: 2026-10-29 23:50
 author: "Redaktions-Team Dividenden-Rechner.de"

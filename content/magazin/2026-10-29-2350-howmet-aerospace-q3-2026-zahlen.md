@@ -1,5 +1,5 @@
 ---
-title: "Howmet Aerospace genehmigt Aktienrückkaufprogramm von 5 Mrd. US-Dollar"
+title: "Howmet Aerospace genehmigt Aktienrückkauf von 5 Mrd. US-Dollar"
 description: "Howmet Aerospace meldet Ergebnisse fuer das dritte Quartal 2026 mit Umsatzwachstum, hoeherer Dividende und angehobener Prognose."
 date: 2026-10-29 23:50
 author: "Redaktions-Team Dividenden-Rechner.de"

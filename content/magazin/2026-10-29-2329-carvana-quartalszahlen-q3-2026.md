@@ -1,5 +1,5 @@
 ---
-title: "Carvana erzielt 483 Millionen US-Dollar Nettogewinn im dritten Quartal 2026"
+title: "Carvana erzielt im dritten Quartal 2026 einen Nettogewinn von 483 Mio. USD"
 description: "Carvana meldet fuer das dritte Quartal 2026 einen Umsatz von 8,040 Milliarden US-Dollar und einen Nettogewinn von 483 Millionen US-Dollar."
 date: 2026-10-29 23:29
 author: "Redaktions-Team Dividenden-Rechner.de"

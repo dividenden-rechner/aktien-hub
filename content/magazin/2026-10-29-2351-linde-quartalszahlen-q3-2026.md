@@ -1,5 +1,5 @@
 ---
-title: "Linde plc erwartet 2026 bereinigtes Ergebnis je Aktie von 17,82 bis 17,92 US-Dollar"
+title: "Linde plc peilt 2026 bereinigten Gewinn von bis zu 17,92 Dollar je Aktie an"
 description: "Linde plc legt die Ergebnisse für das dritte Quartal 2026 vor und präzisiert die Jahresprognose."
 date: 2026-10-29 23:51
 author: "Redaktions-Team Dividenden-Rechner.de"

@@ -1,5 +1,5 @@
 ---
-title: "Labcorp hebt Prognose für bereinigtes Ergebnis je Aktie auf bis zu 18,70 USD an"
+title: "Labcorp nennt neues Ziel für bereinigten Gewinn von 18,30 bis 18,70 US-Dollar je Aktie"
 description: "Labcorp legt Zahlen für das dritte Quartal 2026 vor, hebt die Jahresprognose an und bestätigt die Quartalsdividende von 0,72 US-Dollar je Aktie."
 date: 2026-10-29 23:24
 author: "Redaktions-Team Dividenden-Rechner.de"

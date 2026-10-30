@@ -1,5 +1,5 @@
 ---
-title: "Alphabet erzielt im dritten Quartal 2026 Gewinn je Aktie von 2,12 US-Dollar"
+title: "Alphabet Inc.: Nettogewinn von 26,2 Milliarden US-Dollar im dritten Quartal 2026"
 description: "Alphabet legt die Geschäftszahlen für das dritte Quartal 2026 vor und kündigt eine Quartalsdividende an."
 date: 2026-10-29 23:27
 author: "Redaktions-Team Dividenden-Rechner.de"

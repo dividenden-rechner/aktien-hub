@@ -1,0 +1,126 @@
+Verfuegbare Flash-Modelle: gemini-3.8-flash, gemini-3.7-flash, gemini-3.6-flash, gemini-3.5-flash, gemini-3.5-flash-lite, gemini-3.1-flash-lite, gemini-3.1-flash-lite-preview, gemini-3-flash-preview, gemini-2.5-flash, gemini-2.5-flash-lite, gemini-flash-latest, gemini-omni-1.1-flash, gemini-flash-lite-latest, gemini-omni-flash-preview
+Modell: gemini-3.8-flash
+Hershey Company: Nettoumsatz steigt im dritten Quartal 2026 auf 3.275,5 Millionen US-Dollar -> Hershey Company verbucht 580,8 Millionen US-Dollar Nettogewinn im Q3 2026
+Modell-Problem -> gemini-3.8-flash: Fehler 429: {
+  "error": {
+    "code": 429,
+    "message": "You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota ex
+Tageskontingent dieses Modells aufgebraucht, naechstes Modell.
+Modell-Problem -> gemini-3.7-flash: Fehler 503: {
+  "error": {
+    "code": 503,
+    "message": "This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.",
+    "status": "UNAVAILABLE"
+  }
+}
+
+Modell: gemini-3.7-flash
+Mastercard steigert Nettoumsatz im dritten Quartal 2026 auf 9,8 Milliarden US-Dollar -> Mastercard kauft im dritten Quartal Aktien für 3,0 Mrd. US-Dollar zurück
+Modell-Problem -> gemini-3.7-flash: Fehler 429: {
+  "error": {
+    "code": 429,
+    "message": "You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota ex
+Tageskontingent dieses Modells aufgebraucht, naechstes Modell.
+Modell: gemini-3.8-flash
+DoorDash: Umsatz steigt in Q3 2026 auf 4,6 Milliarden US-Dollar -> DoorDash schließt Q3 2026 mit 466 Millionen US-Dollar Nettogewinn ab
+Modell: gemini-3.8-flash
+Carrier Global: Umsatz steigt im dritten Quartal 2026 auf 6,263 Milliarden US-Dollar -> Carrier Global verbucht 3,1 Mrd. US-Dollar Goodwill-Abschreibung
+Modell-Problem -> gemini-3.8-flash: Fehler 429: {
+  "error": {
+    "code": 429,
+    "message": "You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota ex
+Tageskontingent dieses Modells aufgebraucht, naechstes Modell.
+Modell-Problem -> gemini-3.7-flash: Fehler 429: {
+  "error": {
+    "code": 429,
+    "message": "You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota ex
+Tageskontingent dieses Modells aufgebraucht, naechstes Modell.
+Modell: gemini-3.6-flash
+Baxter International: Umsatz steigt auf 2,98 Milliarden US-Dollar im dritten Quartal 2026 -> Baxter International hebt Jahresprognose auf 2,05 bis 2,15 US-Dollar je Aktie an
+Modell: gemini-3.6-flash
+Linde plc: Umsatz steigt im dritten Quartal 2026 auf 9,4 Milliarden US-Dollar -> Linde plc peilt 2026 bereinigten Gewinn von bis zu 17,92 Dollar je Aktie an
+Modell-Problem -> gemini-3.6-flash: Fehler 503: {
+  "error": {
+    "code": 503,
+    "message": "This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.",
+    "status": "UNAVAILABLE"
+  }
+}
+
+Modell: gemini-3.6-flash
+Quanta Services: Umsatz steigt im dritten Quartal 2026 auf 12,01 Milliarden US-Dollar -> Quanta Services verzeichnet 694,9 Millionen US-Dollar Q3-Nettogewinn
+Modell-Problem -> gemini-3.6-flash: Fehler 503: {
+  "error": {
+    "code": 503,
+    "message": "This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.",
+    "status": "UNAVAILABLE"
+  }
+}
+
+Modell-Problem -> gemini-3.6-flash: Fehler 503: {
+  "error": {
+    "code": 503,
+    "message": "This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.",
+    "status": "UNAVAILABLE"
+  }
+}
+
+Modell: gemini-3.6-flash
+Howmet Aerospace: Umsatz steigt im Q3 2026 um 29% auf 2,703 Mrd. US-Dollar -> Howmet Aerospace genehmigt Aktienrückkauf von 5 Mrd. US-Dollar
+Modell: gemini-3.6-flash
+Bristol Myers Squibb: Umsatz steigt im Q3 2026 auf 13,1 Mrd. USD -> Bristol Myers Squibb hebt Jahresprognose auf bis zu 50,25 Mrd. USD an
+Modell: gemini-3.6-flash
+Willis Towers Watson: Umsatz steigt im dritten Quartal 2026 auf 2,5 Mrd. USD -> Willis Towers Watson erzielt 309 Mio. US-Dollar Nettogewinn im Q3 2026
+Modell: gemini-3.6-flash
+Tyler Technologies: Quartalszahlen Q3 2026 -> Tyler Technologies erzielt 95,1 Millionen US-Dollar Nettogewinn in Q3 2026
+Modell-Problem -> gemini-3.6-flash: Fehler 503: {
+  "error": {
+    "code": 503,
+    "message": "This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.",
+    "status": "UNAVAILABLE"
+  }
+}
+
+Modell-Problem -> gemini-3.6-flash: Fehler 429: {
+  "error": {
+    "code": 429,
+    "message": "You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota ex
+Tageskontingent dieses Modells aufgebraucht, naechstes Modell.
+Modell-Problem -> gemini-3.8-flash: Fehler 429: {
+  "error": {
+    "code": 429,
+    "message": "You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota ex
+Tageskontingent dieses Modells aufgebraucht, naechstes Modell.
+Modell-Problem -> gemini-3.7-flash: Fehler 429: {
+  "error": {
+    "code": 429,
+    "message": "You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota ex
+Tageskontingent dieses Modells aufgebraucht, naechstes Modell.
+Modell-Problem -> gemini-3.5-flash: Fehler 429: {
+  "error": {
+    "code": 429,
+    "message": "You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota ex
+Tageskontingent dieses Modells aufgebraucht, naechstes Modell.
+Modell: gemini-3.5-flash-lite
+O'Reilly Automotive steigert Quartalsumsatz auf 5,12 Milliarden US-Dollar -> O'Reilly Automotive: 786 Mio. USD Nettogewinn im dritten Quartal 2026
+Modell: gemini-3.5-flash-lite
+MGM Resorts: Quartalszahlen Q3 2026 -> MGM Resorts: Nettoverlust von 17 Millionen US-Dollar im Q3 2026
+Modell: gemini-3.5-flash-lite
+Merck & Co.: Umsatz steigt im Q3 2026 auf 18,1 Milliarden US-Dollar -> Merck & Co.: Non-GAAP-Ergebnis je Aktie von 2,49 US-Dollar im Q3 2026
+Modell: gemini-3.5-flash-lite
+Caterpillar steigert Quartalsumsatz auf 20,7 Milliarden US-Dollar -> Caterpillar: Gewinn je Aktie bei 7,13 US-Dollar im Q3 2026
+Modell: gemini-3.5-flash-lite
+Gen Digital steigert Umsatz auf 1,369 Milliarden US-Dollar und erhöht Jahresprognose -> Gen Digital: Verwässerter Gewinn je Aktie im Q2 bei 0,48 US-Dollar
+Modell: gemini-3.5-flash-lite
+eBay: Umsatz steigt auf 3,2 Milliarden US-Dollar im dritten Quartal 2026 -> eBay: Aktienrückkäufe von 689 Millionen US-Dollar im dritten Quartal 2026
+Modell: gemini-3.5-flash-lite
+Carvana: Umsatz steigt im dritten Quartal 2026 auf 8,040 Milliarden US-Dollar -> Carvana erzielt im dritten Quartal 2026 einen Nettogewinn von 483 Mio. USD
+Modell: gemini-3.5-flash-lite
+Alphabet Inc.: Quartalszahlen Q3 2026 und Dividende von 0,22 US-Dollar -> Alphabet Inc.: Nettogewinn von 26,2 Milliarden US-Dollar im dritten Quartal 2026
+Modell: gemini-3.5-flash-lite
+Otis Worldwide: Q3-Nettoumsatz steigt auf 3,9 Milliarden US-Dollar -> Otis Worldwide: 800 Millionen US-Dollar fuer Aktienrueckkaeufe im bisherigen Jahr
+Modell: gemini-3.5-flash-lite
+Labcorp steigert Quartalsumsatz auf 3,81 Milliarden US-Dollar und erhöht Prognose -> Labcorp nennt neues Ziel für bereinigten Gewinn von 18,30 bis 18,70 US-Dollar je Aktie
+Modell: gemini-3.5-flash-lite
+Vertiv steigert Quartalsumsatz um 61 Prozent -> Vertiv: Verwässerter Gewinn je Aktie bei 1,95 US-Dollar im Q3 2026
+22 Ueberschriften neu

@@ -1,5 +1,5 @@
 ---
-title: "eBay kauft im dritten Quartal eigene Aktien für 689 Millionen US-Dollar zurück"
+title: "eBay: Aktienrückkäufe von 689 Millionen US-Dollar im dritten Quartal 2026"
 description: "eBay steigert den Umsatz im dritten Quartal 2026 auf 3,2 Milliarden US-Dollar und kündigt eine Dividende von 0,31 US-Dollar je Aktie an."
 date: 2026-10-29 23:30
 author: "Redaktions-Team Dividenden-Rechner.de"

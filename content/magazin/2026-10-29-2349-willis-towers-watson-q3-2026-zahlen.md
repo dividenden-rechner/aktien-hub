@@ -1,5 +1,5 @@
 ---
-title: "Willis Towers Watson schließt Q3 2026 mit 309 Millionen US-Dollar Nettogewinn ab"
+title: "Willis Towers Watson erzielt 309 Mio. US-Dollar Nettogewinn im Q3 2026"
 description: "Willis Towers Watson legt die Finanzzahlen für das dritte Quartal 2026 vor."
 date: 2026-10-29 23:49
 author: "Redaktions-Team Dividenden-Rechner.de"

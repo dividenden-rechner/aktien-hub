@@ -1,5 +1,5 @@
 ---
-title: "Baxter International hebt Jahresausblick auf 2,05 bis 2,15 US-Dollar je Aktie"
+title: "Baxter International hebt Jahresprognose auf 2,05 bis 2,15 US-Dollar je Aktie an"
 description: "Baxter International steigert Umsatz im dritten Quartal 2026 auf 2,98 Milliarden US-Dollar und hebt die Prognose für das Gesamtjahr an."
 date: 2026-10-29 23:52
 author: "Redaktions-Team Dividenden-Rechner.de"

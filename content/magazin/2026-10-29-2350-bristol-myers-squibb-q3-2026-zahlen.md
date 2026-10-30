@@ -1,5 +1,5 @@
 ---
-title: "Bristol Myers Squibb hebt Umsatzprognose 2026 auf bis zu 50,25 Mrd. US-Dollar an"
+title: "Bristol Myers Squibb hebt Jahresprognose auf bis zu 50,25 Mrd. USD an"
 description: "Bristol Myers Squibb legt die Ergebnisse für das dritte Quartal 2026 vor und hebt die Umsatzprognose für das Gesamtjahr an."
 date: 2026-10-29 23:50
 author: "Redaktions-Team Dividenden-Rechner.de"

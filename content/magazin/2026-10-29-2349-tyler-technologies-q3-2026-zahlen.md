@@ -1,5 +1,5 @@
 ---
-title: "Tyler Technologies weist 95,1 Millionen US-Dollar Nettogewinn für Q3 2026 aus"
+title: "Tyler Technologies erzielt 95,1 Millionen US-Dollar Nettogewinn in Q3 2026"
 description: "Tyler Technologies legt die Geschäftsergebnisse für das dritte Quartal 2026 vor und nennt Details zur Umsatzentwicklung und zum Gewinn."
 date: 2026-10-29 23:49
 author: "Redaktions-Team Dividenden-Rechner.de"
