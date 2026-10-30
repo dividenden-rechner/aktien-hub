@@ -1,0 +1,24 @@
+{
+ "_hinweis": "Leitfragen je Branche (industry) und je Firma (ticker). Werden in Recherche und Artikel-Prompt eingesetzt. Nach und nach erweitern; Firmeneintraege gehen vor Branchenfragen.",
+ "branche": {
+  "Pharma": ["Welches Altprodukt verliert gerade Umsatz (Patentablauf, Biosimilars) und wie schnell?", "Welche neuen Wachstumsprodukte wachsen und gleichen das aus: schneller oder langsamer als erhofft?", "Wie sieht die Pipeline aus, wann kommen die naechsten Zulassungen?", "Preisdruck, Zoelle, Gesundheitspolitik: was trifft diese Firma konkret?"],
+  "Tabak": ["Wie laufen die neuen rauchfreien Produkte (Nikotinbeutel, Heat-not-Burn, E-Zigaretten): Menge, Umsatz, Marge, wachsen sie weiter stark?", "Koennen sie die klassische Zigarette nach und nach ersetzen oder wird die Zigarette noch ausgemolken (Preiserhoehungen gegen sinkende Mengen)?", "Welche Maerkte und Regulierung (Verbote, Steuern, Aromen) sind die Achillesferse?", "Reicht der Cashflow fuer Dividende und Schulden?"],
+  "Konsumgueter": ["Welche Weltregion oder Marke zieht, welche schwaechelt (zum Beispiel China/Asien)?", "Wird der Kernmarkt verteidigt oder verliert die Marke Marktanteile?", "Menge gegen Preis: waechst der Umsatz nur durch Preiserhoehungen?", "Zoelle, Rohstoffe, Lagerbestand und Rabatte: wie stark drueckt das die Marge?"],
+  "Energie": ["Wie schnitten Raffinerie und Foerderung (und Chemie) jeweils gegenueber Vorquartal ab, und wer kompensiert wen?", "Foerdermenge: steigt, stagniert oder sinkt sie, und was sind die grossen Projekte?", "Beat oder Miss gegenueber der Erwartung, Cashflow, Rueckkaeufe, Dividende, Schulden.", "Oelpreis, Raffineriemargen, Gas und geopolitische Lage."],
+  "Technologie": ["Welches Segment (Cloud, Werbung, Hardware, Abos) traegt das Wachstum, welches bremst?", "KI-Investitionen: wie hoch sind sie im Verhaeltnis zu Cashflow und Gewinn, und zahlen sie sich schon aus?", "Wettbewerb und Regulierung: wo droht Marktanteilsverlust?"],
+  "Finanzen": ["Zinsmarge, Kreditausfaelle, Kapitalquoten: wo ist der Druck?", "Welche Sparte (Privatkunden, Investmentbanking, Vermoegensverwaltung) traegt, welche schwaechelt?", "Rueckkaeufe und Dividende gegen Kapitalpuffer."],
+  "Handel": ["Umsatz auf vergleichbarer Flaeche und Kundenfrequenz: waechst das Kerngeschaeft oder nur neue Filialen?", "Online gegen Filiale, Eigenmarken, Marge und Lagerbestand.", "Zoelle und Konsumstimmung."],
+  "Industrie": ["Auftragsbestand und Book-to-Bill: waechst die Zukunft oder schrumpft sie?", "Welche Sparte hat die beste, welche die schlechteste Marge?", "Lieferketten, Zoelle, Prognose angehoben oder gesenkt."],
+  "Versorger": ["Netzinvestitionen und Schulden gegen Zinskosten: wer zahlt die Energiewende?", "Regulierte gegen freie Erloese, Strompreise, Dividendendeckung durch den freien Cashflow."],
+  "Telekom": ["Kundenzahlen und Preise je Netz, Netzausbau (Capex) gegen Cashflow.", "Schulden, Zinsen und Dividendendeckung."]
+ },
+ "firma": {
+  "ABBV": ["Wie schnell faellt Humira und wie viel fangen Skyrizi und Rinvoq auf (Umsatz je Produkt, gegen Erwartung)?", "Wie entwickelt sich die aesthetische Sparte (Botox Cosmetic, Allergan) und was bremst sie?", "Prognose und Dividendenwachstum im Verhaeltnis zum Gewinn."],
+  "PM": ["Wie schnell wachsen ZYN und IQOS (Mengen, Umsatz, Marge) und decken sie den Rueckgang der Zigarette?", "Welche Regionen und welche Regulierung sind der Engpass (zum Beispiel USA, EU)?", "Schulden nach der Swedish-Match-Uebernahme."],
+  "MO": ["Wie stark schrumpfen die Zigarettenmengen in den USA und kompensieren Preiserhoehungen das?", "Wie laufen on! und NJOY, und wie weit ist Altria mit rauchfreien Produkten?", "Dividendendeckung und Rueckkaeufe."],
+  "BTI": ["Wie laufen Vuse, Velo und Glo gegen den Rueckgang der klassischen Zigarette?", "Wie hoch ist die Verschuldung, wie wird sie abgebaut?"],
+  "NKE": ["Kann Nike den Kernmarkt (Nordamerika, Laufschuhe) gegen On, Hoka und Adidas verteidigen?", "Was ist in China und Asien los (Umsatz, Rabatte, Lagerbestand)?", "Wie weit ist die Neuausrichtung und was kosten Zoelle und Rabatte an Marge?"],
+  "XOM": ["Raffinerie, Chemie und Foerderung je gegen Vorquartal, und die Foerdermenge (Guyana, Perm).", "Beat oder Miss, Cashflow, Rueckkaeufe, Dividendenerhoehung, Schuldenstand."],
+  "CVX": ["Wirkung der Hess-Uebernahme, Foerdermenge und Raffinerie gegen Vorquartal.", "Cashflow, Rueckkaeufe, Dividende, Schulden."]
+ }
+}

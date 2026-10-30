@@ -241,6 +241,16 @@ def claude_generate(parts, schema):
 RESEARCH_OFF = False
 
 
+def leitfragen(out):
+    """Leitfragen aus data/fokus.json: Firma (Ticker) geht vor Branche. Leere Liste, wenn nichts hinterlegt ist."""
+    try:
+        d = json.load(open(os.path.join(ROOT, "data", "fokus.json"), encoding="utf-8"))
+    except Exception:
+        return []
+    t = re.sub(r"\..*$", "", (out.get("ticker") or "").upper())
+    return (d.get("firma") or {}).get(t) or (d.get("branche") or {}).get(out.get("industry") or "") or []
+
+
 def research(out, key):
     """Hintergrundrecherche mit Google-Suche (Gemini Grounding): Vergangenheit, Makro, Branche. Liefert (Text, [(Titel, URL)])."""
     ind = out.get("industry") or "Sonstige"
@@ -265,6 +275,8 @@ def research(out, key):
               "5. Schulden: Fälligkeitsprofil und Refinanzierung, Ratings. "
               "6. Vergleich mit den konkreten Wettbewerbern und der Branche (Wachstum, Marge, Bewertung, Dividendenrendite). "
               "7. Aktuellen Unternehmensthemen: Strategie, Führungswechsel, Rechtsstreit, Regulierung, Übernahmen, Produktzyklen, Politik. "
+              + ("8. Beantworte diese Leitfragen zu genau dieser Firma mit Zahlen und Zeitangabe: " + " ".join(leitfragen(out)) + " " if leitfragen(out) else "")
+              + "9. Was war bei dieser Firma zuletzt die Achillesferse (Analystendebatte, Enttaeuschung im Vorquartal)? Welche Segmente oder Produkte sind schwach, welche stark, und was kompensiert was? "
               "Finde heraus, was für dieses Unternehmen JETZT die entscheidenden Themen sind, und gewichte danach, nicht nach einem festen Schema. "
               "Nenne zu jeder Zahl Jahr oder Quartal. Erfinde nichts; was du nicht findest, lässt du weg.")
     return ground(prompt, key)
@@ -1581,7 +1593,7 @@ def main():
                 out["ceo_quote"] = None
         summary = json.dumps({k: out.get(k) for k in ("company", "ticker", "report_type", "industry", "period", "report_date", "period_end", "prior_period_end", "kpis", "chart", "cashflow", "balance", "capital", "details")}, ensure_ascii=False)
         fakten = "\n".join("- " + f for f in facts) if facts else "- (keine berechneten Kennzahlen verfuegbar)"
-        prompt2 = read_prompt("ir_article_prompt.md") + ("\n\nMEHRERE UNTERLAGEN: Zum Hauptdokument liegen weitere Unterlagen derselben Firma vor (zum Beispiel die Ergebnispraesentation). Werte alle gemeinsam aus und schreibe EINE grosse, zusammenhaengende Analyse (bis etwa 1600 Woerter): Praesentationen enthalten oft die wichtigsten Angaben zur Kapitalverwendung (Dividendenerhoehung, Schuldenabbau, Rueckkaeufe), zum Ausblick und zu Segmenten; nutze diese Zahlen und stelle sie dem Hauptdokument gegenueber. Nenne in einem Satz, dass die Praesentation mit ausgewertet wurde." if src.get("extra") else "") + f"\n\nART DES DOKUMENTS: {out.get('report_type')}" + "\n\nFAKTEN (vom Programm berechnet, Zahlen exakt so uebernehmen):\n" + fakten + "\n\nEXTRAHIERTE KENNZAHLEN (JSON):\n" + summary
+        prompt2 = read_prompt("ir_article_prompt.md") + ("\n\nMEHRERE UNTERLAGEN: Zum Hauptdokument liegen weitere Unterlagen derselben Firma vor (zum Beispiel die Ergebnispraesentation). Werte alle gemeinsam aus und schreibe EINE grosse, zusammenhaengende Analyse (bis etwa 1600 Woerter): Praesentationen enthalten oft die wichtigsten Angaben zur Kapitalverwendung (Dividendenerhoehung, Schuldenabbau, Rueckkaeufe), zum Ausblick und zu Segmenten; nutze diese Zahlen und stelle sie dem Hauptdokument gegenueber. Nenne in einem Satz, dass die Praesentation mit ausgewertet wurde." if src.get("extra") else "") + ("\n\nLEITFRAGEN DIESER FIRMA (beantworte sie im Kasten und in der Analyse, soweit Dokument, FAKTEN oder HINTERGRUND es belegen; was nicht belegt ist, lässt du weg): " + " | ".join(leitfragen(out)) if leitfragen(out) else "") + f"\n\nART DES DOKUMENTS: {out.get('report_type')}" + "\n\nFAKTEN (vom Programm berechnet, Zahlen exakt so uebernehmen):\n" + fakten + "\n\nEXTRAHIERTE KENNZAHLEN (JSON):\n" + summary
         bg_text, bg_src = research(out, api_key())
         if bg_text:
             prompt2 += ("\n\nHINTERGRUND (per Websuche recherchiert; nutze ihn fuer Einordnung, Vergleich mit frueheren Quartalen, Makro- und Branchenlage; "
