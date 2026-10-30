@@ -215,14 +215,9 @@ $("list").onclick=function(e){if(e.target.closest("a"))return;var r=e.target.clo
   catch(e){$("list").innerHTML='<div class="ek-empty">Termine konnten nicht geladen werden: '+esc(e.message)+(/40[23]/.test(e.message)?" – Der Earnings-Kalender ist in deinem FMP-Tarif möglicherweise nicht enthalten.":"")+"</div>"}
   try{var td=key(new Date()),TJ=[];
     try{var tr=await fetch("../data/termine.json",{cache:"no-cache"});if(tr.ok)TJ=((await tr.json()).termine||[]).filter(function(x){return x.datum>=td})}catch(e5){}
-    try{var kr=await fetch("../data/termine-kalender.json",{cache:"no-cache"});if(kr.ok){((await kr.json()).termine||[]).forEach(function(x){
-      if(x.datum<td)return;
-      if(x.art==="ergebnis"&&x.sym&&CAL.some(function(c){return c.symbol===x.sym&&c.date===x.datum}))return;
-      var t="";if(x.zeit_utc){var d=new Date(x.datum+"T"+x.zeit_utc+":00Z");t=d.toLocaleTimeString("de-DE",{hour:"2-digit",minute:"2-digit",timeZone:"Europe/Berlin"})+" Uhr"}
-      TJ.push({sym:x.sym,name:x.firma,art:"k_"+x.art,datum:x.datum,zeit:t,was:x.was})})}}catch(e6){}
     TJ.sort(function(a,b){return a.datum<b.datum?-1:a.datum>b.datum?1:(a.zeit||"")<(b.zeit||"")?-1:1});
     if(TJ.length){var ART={ergebnis:"Zahlen",dividende_exdatum:"Ex-Dividenden-Tag",dividende_zahltag:"Dividenden-Zahltag",k_ergebnis:"Zahlen",k_investorentag:"Investorentag",k_hauptversammlung:"Hauptversammlung","k_trading-update":"Trading Update"};
-      $("termine").innerHTML='<h2>Weitere angekündigte Termine</h2><p class="ek-sub">Aus Unternehmensmeldungen und unserem Terminkalender, vor allem für Firmen außerhalb der USA. Uhrzeiten in deutscher Zeit, sofern bekannt.</p><div class="ek-list">'+TJ.map(function(x){
+      $("termine").innerHTML='<h2>Angekündigte Termine aus Unternehmensmeldungen</h2><p class="ek-sub">Aus Pressemitteilungen übernommen, vor allem für Firmen außerhalb der USA. Nur Termine, die im Original genannt werden.</p><div class="ek-list">'+TJ.map(function(x){
         var nmh=x.sym?'<a href="../aktien/?s='+encodeURIComponent(x.sym)+'">'+esc(x.name)+"</a>":esc(x.name);
         return '<div class="ek-item"><div class="ek-row" style="cursor:default">'+logo(x.sym||x.name,x.name)+'<span class="ek-m"><span class="ek-nm">'+nmh+'</span><span class="ek-pills"><span class="ek-badge">'+esc(ART[x.art]||x.art)+(x.was&&/^k_/.test(x.art)&&x.art==="k_ergebnis"?" "+esc(x.was):"")+'</span></span></span><span class="ek-fig"><div>'+esc(fmtDay(x.datum))+'<span>'+(x.zeit?esc(x.zeit):"")+(x.betrag?(x.zeit?" · ":"")+esc(x.betrag)+" "+esc(x.waehrung||"")+" je Aktie":"")+(x.quelle?' · <a href="'+esc(x.quelle)+'" rel="noopener nofollow">Quelle</a>':"")+'</span></div></span></div></div>'}).join("")+"</div>"}}catch(e3){}
   try{var mr=await fetch("../data/magazin.json?v="+Math.floor(Date.now()/6e5));if(mr.ok){NEWS=((await mr.json()).items||[]).slice().sort(function(a,b){return a.date<b.date?1:-1})}}catch(e4){}
