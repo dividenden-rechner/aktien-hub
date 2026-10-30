@@ -12,6 +12,7 @@ image_source: https://unsplash.com/photos/workers-are-inside-a-clean-room-manufa
 image_artist_url: https://unsplash.com/@tecnic?utm_source=dividenden-rechner&utm_medium=referral
 logo_name: "AbbVie Inc."
 logo_symbol: ABBV
+logo_file: assets/logos/abbv.png
 ---
 <!-- PRÜFEN: Aufmacherfoto ist automatisch von Unsplash gewaehlt: bitte pruefen, ob es zum Artikel passt (sonst image-Zeilen entfernen, dann entsteht ein Titelbild automatisch). -->
 <!-- PRÜFEN: Quelle: https://www.sec.gov/Archives/edgar/data/1551152/000155115226000033/abbv-20260930xexhibit991.htm -->
