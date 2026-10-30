@@ -35,7 +35,15 @@ def discover():
     found["startseite_laenge"] = len(html)
     scripts = re.findall(r'src="([^"]+\.js[^"]*)"', html)
     found["scripte"] = scripts[:15]
-    for sc in scripts[:15]:
+    extra = []
+    for cfg in ("assets/config.json", "config.json", "assets/environment.json", "environment.json", "assets/env.json", "assets/appconfig.json"):
+        t = get("https://data.fca.org.uk/" + cfg)
+        found.setdefault("config", {})[cfg] = t[:400]
+    mainjs = get("https://data.fca.org.uk/" + [x for x in scripts if x.startswith("main")][0]) if any(x.startswith("main") for x in scripts) else ""
+    chunks = sorted(set(re.findall(r"chunk-[A-Z0-9]+\.js", mainjs)))
+    found["chunks"] = chunks[:40]
+    scripts = scripts + chunks[:40]
+    for sc in scripts[:60]:
         u = sc if sc.startswith("http") else "https://data.fca.org.uk/" + sc.lstrip("/")
         js = get(u)
         for m in re.finditer(r"api\.data\.fca\.org\.uk[^\"'`\s]{0,120}", js):
