@@ -401,14 +401,141 @@
   {
    "sym": "005930.KS",
    "name": "Samsung Electronics",
-   "url": "",
-   "region": "Welt"
+   "url": "https://news.samsung.com/global/feed",
+   "region": "Welt",
+   "geprueft": true
   },
   {
    "sym": "BHP.AX",
    "name": "BHP",
    "url": "",
    "region": "Welt"
+  },
+  {
+   "sym": "2454.TW",
+   "name": "MediaTek",
+   "url": "https://www.mediatek.com/press-room/rss.xml",
+   "region": "Welt",
+   "geprueft": true
+  },
+  {
+   "sym": "000660.KS",
+   "name": "SK Hynix",
+   "url": "https://news.skhynix.com/en/feed/",
+   "region": "Welt",
+   "geprueft": true
+  },
+  {
+   "sym": "005380.KS",
+   "name": "Hyundai Motor",
+   "url": "https://www.hyundai.com/wsvc/ww/rss/newsroom.newsroom.do",
+   "region": "Welt",
+   "geprueft": true
+  },
+  {
+   "sym": "9432.T",
+   "name": "NTT",
+   "url": "https://group.ntt/en/newsrelease/rss/release.rdf",
+   "region": "Welt",
+   "geprueft": true
+  },
+  {
+   "sym": "8001.T",
+   "name": "Itochu",
+   "url": "https://www.itochu.co.jp:443/en/ir/news/index.xml",
+   "region": "Welt",
+   "geprueft": true
+  },
+  {
+   "sym": "9983.T",
+   "name": "Fast Retailing",
+   "url": "https://www.fastretailing.com/eng/ir/news/index.xml",
+   "region": "Welt",
+   "geprueft": true
+  },
+  {
+   "sym": "6098.T",
+   "name": "Recruit Holdings",
+   "url": "https://recruit-holdings.com/en/newsroom/rss.xml",
+   "region": "Welt",
+   "geprueft": true
+  },
+  {
+   "sym": "9433.T",
+   "name": "KDDI",
+   "url": "https://newsroom.kddi.com/english/news/newsrelease.xml",
+   "region": "Welt",
+   "geprueft": true
+  },
+  {
+   "sym": "4519.T",
+   "name": "Chugai Pharma",
+   "url": "https://www.chugai-pharm.co.jp/rss/news_releases_en.php",
+   "region": "Welt",
+   "geprueft": true
+  },
+  {
+   "sym": "6981.T",
+   "name": "Murata",
+   "url": "https://www.murata.com/en-global/news/rssfeed",
+   "region": "Welt",
+   "geprueft": true
+  },
+  {
+   "sym": "7741.T",
+   "name": "HOYA",
+   "url": "https://www.hoya.com/en/news/feed/",
+   "region": "Welt",
+   "geprueft": true
+  },
+  {
+   "sym": "8766.T",
+   "name": "Tokio Marine",
+   "url": "https://www.tokiomarinehd.com/en/feed/news.xml",
+   "region": "Welt",
+   "geprueft": true
+  },
+  {
+   "sym": "0005.HK",
+   "name": "HSBC Holdings Asia",
+   "url": "https://www.hsbc.com/rss-feed",
+   "region": "Welt",
+   "geprueft": true
+  },
+  {
+   "sym": "0027.HK",
+   "name": "Galaxy Entertainment",
+   "url": "https://www.galaxyentertainment.com/en/xmlfeed.xml",
+   "region": "Welt",
+   "geprueft": true
+  },
+  {
+   "sym": "2269.HK",
+   "name": "WuXi Biologics",
+   "url": "https://www.wuxibiologics.com/feed/",
+   "region": "Welt",
+   "geprueft": true
+  },
+  {
+   "sym": "RELIANCE.NS",
+   "name": "Reliance Industries",
+   "url": "https://www.ril.com/rss.xml",
+   "region": "Welt",
+   "geprueft": true
+  },
+  {
+   "sym": "SUNPHARMA.NS",
+   "name": "Sun Pharma",
+   "url": "https://sunpharma.com/feed/",
+   "region": "Welt",
+   "geprueft": true
+  },
+  {
+   "sym": "TATAMOTORS.NS",
+   "name": "Tata Motors",
+   "url": "https://www.tatamotors.com/feed/",
+   "region": "Welt",
+   "geprueft": true
   }
  ]
 }
