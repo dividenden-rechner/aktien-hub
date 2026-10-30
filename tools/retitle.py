@@ -14,7 +14,7 @@ def main():
     ap = argparse.ArgumentParser(); ap.add_argument("--max", type=int, default=40); ap.add_argument("--dry", action="store_true"); a = ap.parse_args()
     done = 0
     titles = k.recent_titles(40)
-    for f in sorted(glob.glob(os.path.join(k.OUT_DIR, "2*.md")), reverse=True):
+    for f in k.A.all_md():
         if done >= a.max: break
         t = open(f, encoding="utf-8").read()
         head, _, body = t.partition("\n---\n")

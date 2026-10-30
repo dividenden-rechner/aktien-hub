@@ -21,7 +21,7 @@ def main():
     ap.add_argument("slug"); ap.add_argument("--terms", default=""); ap.add_argument("--symbol", default=""); ap.add_argument("--domain", default="")
     ap.add_argument("--fokus", default="")
     a = ap.parse_args()
-    path = next((p for p in glob.glob(os.path.join(ia.ROOT, "content", "magazin", "*.md")) if re.sub(r"^\d{4}-\d{2}-\d{2}(-\d{4})?-", "", os.path.basename(p))[:-3] == a.slug), None)
+    path = __import__("artikel").find(a.slug)
     if not path:
         ia.fail(f"Artikel '{a.slug}' nicht gefunden.")
     raw = open(path, encoding="utf-8").read()

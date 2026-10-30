@@ -89,9 +89,9 @@ def read_post(path):
             k, v = line.split(":", 1); meta[k.strip().lower()] = clean_entities(v.strip().strip('"').strip("'"))
     for k in ("title", "description", "date"):
         if not meta.get(k): raise SystemExit(f"{path}: Feld '{k}' fehlt im Kopfbereich")
-    stem = re.sub(r"^\d{4}-\d{2}-\d{2}(-\d{4})?-", "", os.path.splitext(os.path.basename(path))[0])   # Datum vor dem Dateinamen gehoert nicht zur Adresse
+    import artikel; stem = artikel.slug_of(path)   # Datum und Zaehler vor dem Dateinamen gehoeren nicht zur Adresse
     meta["slug"] = meta.get("slug") or re.sub(r"[^a-z0-9]+", "-", stem.lower()).strip("-")
-    meta["file"] = os.path.basename(path)
+    meta["file"] = os.path.relpath(path, "content/magazin").replace(os.sep, "/")
     meta["dt"] = parse_date(meta["date"])
     meta["upd"] = parse_date(meta["updated"]) if meta.get("updated") else meta["dt"]
     meta["body_md"] = fix_kurz(m.group(2).strip())
@@ -724,8 +724,8 @@ def write_redirects(posts):
 def main():
     build_wissen.run(sys.modules[__name__])        # Wissensartikel zuerst: Magazin-Verlinkung und Rueck-Links brauchen die fertigen Seiten
     posts, allp = [], []
-    for f in sorted(glob.glob("content/magazin/*.md")):
-        if os.path.basename(f).startswith(("_", "README")): continue
+    import artikel; artikel.sortiere()
+    for f in sorted(artikel.all_md()):
         p = read_post(f); allp.append(p)
         if p["draft"]: print("Entwurf übersprungen:", f); continue
         if p["dt"] > datetime.datetime.now() + datetime.timedelta(days=1): print("Zukunftsdatum übersprungen:", f); continue

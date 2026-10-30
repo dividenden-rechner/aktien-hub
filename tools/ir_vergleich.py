@@ -292,9 +292,9 @@ def main():
     has_cash = draw_vergleich(cchart, cpath) if cchart else False
     # Schreiben
     stamp = datetime.now(ZoneInfo("Europe/Berlin")).strftime("%Y-%m-%d-%H%M")
-    vorh = [v for v in glob.glob(os.path.join(ia.ROOT, "content", "magazin", f"*{slug}.md"))
-            if re.fullmatch(r"(\d{4}-\d{2}-\d{2}(-\d{4})?-)?" + re.escape(slug) + r"\.md", os.path.basename(v))]
-    md = vorh[0] if vorh else os.path.join(ia.ROOT, "content", "magazin", f"{stamp}-{slug}.md")
+    import artikel as A
+    vorh = [A.find(slug)] if A.find(slug) else []
+    md = vorh[0] if vorh else A.path_for(stamp, slug)
     if os.path.exists(md) and not a.force:
         ia.fail(f"Es gibt schon einen Artikel '{slug}.md'. Datei vorher loeschen oder --force nutzen.")
     first = entries[0]["out"]

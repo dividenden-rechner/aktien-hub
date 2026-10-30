@@ -160,7 +160,7 @@ def front(path):
 
 def main():
     os.makedirs(OUT, exist_ok=True)
-    for path in sorted(glob.glob("content/magazin/*.md")):
+    for path in sorted(__import__("artikel").all_md()):
         if path.endswith("README.md"):
             continue
         meta, m, raw = front(path)

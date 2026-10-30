@@ -29,6 +29,7 @@ UNIVERSE = os.path.join(ROOT, "data", "universe.json")
 STATE = os.path.join(ROOT, "data", "kurz-state.json")
 NEWS = os.path.join(ROOT, "data", "news.json")
 OUT_DIR = os.path.join(ROOT, "content", "magazin")
+import artikel as A
 CONSTITUENTS = "https://raw.githubusercontent.com/datasets/s-and-p-500-companies/main/data/constituents.csv"
 WATCHLIST = os.path.join(ROOT, "data", "ir-watchlist.json")
 MAX_LONG = int(os.environ.get("MAX_LONG", "4"))   # hoechstens so viele lange Artikel (IR-Agent) pro Lauf
@@ -257,7 +258,7 @@ def feed_text(c):
 
 # ---------------------------------------------------------------- Schreiben
 def recent_titles(n=25):
-    fs = sorted(glob.glob(os.path.join(OUT_DIR, "2*.md")), reverse=True)[:n]
+    fs = A.all_md()[:n]
     out = []
     for f in fs:
         m = re.search(r'^title:\s*"?(.*?)"?\s*$', open(f, encoding="utf-8").read(1500), re.M)
@@ -442,11 +443,11 @@ def esc_yaml(s):
 def write_post(c, out, url, bad, ctx=None, srcs=None, photo=None, slides=None):
     now = datetime.now(ZoneInfo("Europe/Berlin"))
     slug = slugify(out.get("slug") or out["title"])
-    existing = [f for f in os.listdir(OUT_DIR) if f.endswith(f"{slug}.md")]
+    existing = A.find(slug)
     if existing:
-        log("  gibt es schon:", existing[0]); return None
+        log("  gibt es schon:", os.path.basename(existing)); return None
     stamp = now.strftime("%Y-%m-%d-%H%M")
-    path = os.path.join(OUT_DIR, f"{stamp}-{slug}.md")
+    path = A.path_for(stamp, slug)
     name = "Pressemitteilung " + c["name"] + (" (SEC-Meldung)" if c["src"] == "sec" else "")
     head = ["---", f'title: "{esc_yaml(out["title"])}"', f'description: "{esc_yaml(out["description"])}"', f"date: {now.strftime('%Y-%m-%d %H:%M')}",
             f'author: "{ia.CFG["author"]}"', f'author_bio: "{esc_yaml(ia.CFG["author_bio"])}"', f'category: {out.get("category") or "Sonstige Meldung"}',
@@ -474,7 +475,7 @@ def write_post(c, out, url, bad, ctx=None, srcs=None, photo=None, slides=None):
 def has_recent_article(sym, days=3):
     """True, wenn es zu dieser Firma in den letzten Tagen schon einen langen Artikel (oder Entwurf) gibt."""
     cut = datetime.now() - timedelta(days=days)
-    for f in os.listdir(OUT_DIR):
+    for f in A.rel_all():
         if not f.endswith(".md") or f.startswith(("_", "README")):
             continue
         try:
@@ -499,7 +500,7 @@ def duplicate_of(sym, category, days=3):
     """Dateiname eines Artikels (lang, kurz oder Entwurf) zur selben Firma und Themengruppe in den letzten Tagen, sonst ''.
     Verhindert mehrere Meldungen zum selben Ereignis (zum Beispiel 6-K, Anlagen und Feed-Eintraege zum selben Quartalsbericht)."""
     cut = datetime.now() - timedelta(days=days)
-    for f in os.listdir(OUT_DIR):
+    for f in A.rel_all():
         if not f.endswith(".md") or f.startswith(("_", "README")):
             continue
         try:

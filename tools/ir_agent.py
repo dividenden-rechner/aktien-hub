@@ -799,7 +799,8 @@ def photo_credit(photo):
 
 def recent_motifs(n=12):
     """Bildbeschreibungen der letzten Artikel, damit nicht immer dasselbe Motiv gewaehlt wird."""
-    files = sorted(glob.glob(os.path.join(ROOT, "content", "magazin", "*.md")), reverse=True)[:n * 3]
+    import artikel as A
+    files = A.all_md()[:n * 3]
     out = []
     for f in files:
         try:
@@ -1349,9 +1350,9 @@ def build(out, text, src_note, force=False, calc_rows=None, fmp_used=False, figs
     out["report_date"] = out.get("report_date") or date.today().isoformat()
     slug = re.sub(r"[^a-z0-9]+", "-", out["article"]["slug"].lower()).strip("-") or "bericht"
     stamp = datetime.now(ZoneInfo("Europe/Berlin")).strftime("%Y-%m-%d-%H%M")   # Dateiname beginnt mit Datum, damit die Liste auf GitHub geordnet ist
-    vorhanden = glob.glob(os.path.join(ROOT, "content", "magazin", f"*{slug}.md"))
-    vorhanden = [v for v in vorhanden if re.fullmatch(r"(\d{4}-\d{2}-\d{2}(-\d{4})?-)?" + re.escape(slug) + r"\.md", os.path.basename(v))]
-    mdpath = vorhanden[0] if vorhanden else os.path.join(ROOT, "content", "magazin", f"{stamp}-{slug}.md")
+    import artikel as A
+    vorhanden = [A.find(slug)] if A.find(slug) else []
+    mdpath = vorhanden[0] if vorhanden else A.path_for(stamp, slug)
     if os.path.exists(mdpath) and not force:
         fail(f"Es gibt schon einen Artikel '{slug}.md'. Zum Ueberschreiben --force nutzen oder die Datei vorher loeschen.")
     gpath = os.path.join(ROOT, "assets", "magazin", f"{slug}-grafik.png")

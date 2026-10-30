@@ -5,7 +5,7 @@ sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 import ir_agent as ia
 
 n = 0
-for path in sorted(glob.glob(os.path.join(ia.ROOT, "content", "magazin", "2*.md")), reverse=True):
+for path in __import__("artikel").all_md():
     t = open(path, encoding="utf-8").read(4000)
     m = re.match(r"^---\s*\n(.*?)\n---", t, re.S)
     if not m:

@@ -16,7 +16,7 @@ def meta(f):
 
 def main():
     dry = "--dry" in sys.argv
-    ms = [meta(f) for f in glob.glob(os.path.join(ROOT, "content/magazin/2*.md"))]
+    ms = [meta(f) for f in __import__("artikel").all_md()]
     groups = collections.defaultdict(list)
     for m in ms:
         if m["sym"]: groups[(m["sym"], cat_group(m["cat"]))].append(m)

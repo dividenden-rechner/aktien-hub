@@ -36,7 +36,7 @@ def meta(t, k):
 
 def assets_for(md_path, text):
     """Dateien, die zum Entwurf gehoeren (Bilder, Grafiken, Logos), soweit neu oder geaendert."""
-    base = re.sub(r"^\d{4}-\d{2}-\d{2}(-\d{4})?-", "", os.path.splitext(os.path.basename(md_path))[0])
+    base = __import__("artikel").slug_of(md_path)
     cand = set(re.findall(r"assets/[A-Za-z0-9_./\-]+\.(?:png|jpe?g|webp|svg|gif)", text))
     for g in sh("git", "ls-files", "--others", "--exclude-standard", "assets").split("\n"):
         if g and base in g:
@@ -54,7 +54,7 @@ def main():
     start = sh("git", "rev-parse", "--abbrev-ref", "HEAD")
     for md in drafts:
         text = open(md, encoding="utf-8").read()
-        slug = re.sub(r"^\d{4}-\d{2}-\d{2}(-\d{4})?-", "", os.path.splitext(os.path.basename(md))[0])
+        slug = __import__("artikel").slug_of(md)
         title, desc, kurz = meta(text, "title"), meta(text, "description"), meta(text, "typ") == "kurz"
         extra = assets_for(md, text)
         branch = f"freigabe/{slug}"[:80]
@@ -76,7 +76,7 @@ def main():
         pruef = re.search(r"<!--\s*PRÜFEN(.*?)-->", text, re.S)
         body = (f"**{title}**\n\n{desc}\n\n"
                 f"{'Kurzmeldung, automatisch erstellt.' if kurz else 'Lange Ausarbeitung des IR-Agenten.'} "
-                f"Datei: `content/magazin/{os.path.basename(md)}`\n\n"
+                f"Datei: `{md}`\n\n"
                 + (f"⚠️ **Prüfen:**{pruef.group(1).strip()[:600]}\n\n" if pruef else "")
                 + "**Merge** = freigeben, der Artikel geht nach etwa einer Minute online. **Close** = verwerfen.")
         if a.no_pr:
