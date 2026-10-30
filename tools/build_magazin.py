@@ -365,6 +365,18 @@ def kurz_points(md_text):
     return out[:3]
 
 
+def story_vorlage(p):
+    """Welche Instagram-Vorlage zu welcher Rubrik passt (Dateien in assets/story-vorlagen)."""
+    c = (p.get("category") or "").lower()
+    if p.get("typ") == "kurz":
+        return "aktuelle-meldung"
+    if "quartal" in c or "jahres" in c or "halbjahr" in c:
+        return "quartalsbericht"
+    if "vergleich" in c or "analyse" in c:
+        return "daten-fakten"
+    return "aktuelle-meldung"
+
+
 def share_html(p, url, img):
     """Teilen-Leiste mit Symbolen: X (Text, Cashtag, Link; Bild ueber die Vorschaukarte), Facebook, LinkedIn, WhatsApp, Telegram, E-Mail,
     Link kopieren und Instagram-Story (9:16-Bild wird im Browser erzeugt und ueber das Teilen-Menue des Handys geteilt)."""
@@ -375,7 +387,8 @@ def share_html(p, url, img):
     x_text = p["title"] + "\n\n" + " ".join(([ct] if ct else []) + tags)
     lf = p.get("logo_file") or ""
     story = {"title": p["title"], "lines": kurz_lines(p.get("body_md", "")), "points": kurz_points(p.get("body_md", "")), "ct": ct, "img": img,
-             "logo": ("../../" + lf) if lf and not lf.endswith(".mono.png") and os.path.exists(lf) else "", "cat": p.get("category", "")}
+             "logo": ("../../" + lf) if lf and not lf.endswith(".mono.png") and os.path.exists(lf) else "", "cat": p.get("category", ""),
+             "tpl": "../../assets/story-vorlagen/" + story_vorlage(p) + ".png"}
     links = [
         ("x", "Auf X teilen", "https://twitter.com/intent/tweet?text=" + q(x_text) + "&url=" + q(page)),
         ("facebook", "Auf Facebook teilen", "https://www.facebook.com/sharer/sharer.php?u=" + q(page)),
@@ -393,32 +406,10 @@ def share_html(p, url, img):
     return h
 
 
-SHARE_JS = r"""<script>(function(){var bar=document.querySelector(".sharebar");if(!bar)return;var m=document.getElementById("igmsg"),pg=bar.getAttribute("data-url"),S=JSON.parse(bar.getAttribute("data-story")||"{}");
+SHARE_JS = r"""<script src="../../assets/story.js"></script>
+<script>(function(){var bar=document.querySelector(".sharebar");if(!bar)return;var m=document.getElementById("igmsg"),pg=bar.getAttribute("data-url"),S=JSON.parse(bar.getAttribute("data-story")||"{}");
 document.getElementById("cpshare").onclick=async function(){try{await navigator.clipboard.writeText(pg);m.textContent="Link kopiert."}catch(e){m.textContent=pg}};
-function load(u){return new Promise(function(res){if(!u)return res(null);var i=new Image();i.crossOrigin="anonymous";i.onload=function(){res(i)};i.onerror=function(){res(null)};i.src=u})}
-function wrap(c,t,w,max){var o=[],cur="";t.split(/\s+/).forEach(function(x){var y=cur?cur+" "+x:x;if(c.measureText(y).width<=w)cur=y;else{o.push(cur);cur=x}});if(cur)o.push(cur);if(o.length>max){o=o.slice(0,max);o[max-1]=o[max-1].replace(/\s+\S*$/,"")+" …"}return o}
-async function draw(photo,logo){var W=1080,H=1920,cv=document.createElement("canvas");cv.width=W;cv.height=H;var c=cv.getContext("2d");
-var g=c.createLinearGradient(0,0,0,H);g.addColorStop(0,"#0f2a1c");g.addColorStop(1,"#14202b");c.fillStyle=g;c.fillRect(0,0,W,H);
-var F='Inter,"Segoe UI",Roboto,Helvetica,Arial,sans-serif';
-if(photo){var ph=560,r=Math.max(W/photo.width,ph/photo.height),w=photo.width*r,h=photo.height*r;c.save();c.beginPath();c.rect(0,0,W,ph);c.clip();c.drawImage(photo,(W-w)/2,(ph-h)/2,w,h);c.restore();
-var gg=c.createLinearGradient(0,ph-260,0,ph);gg.addColorStop(0,"rgba(15,42,28,0)");gg.addColorStop(1,"#0f2a1c");c.fillStyle=gg;c.fillRect(0,ph-260,W,260)}
-var y=photo?610:260;
-if(logo){c.fillStyle="#fff";c.beginPath();c.roundRect?c.roundRect(60,y-30,150,150,32):c.rect(60,y-30,150,150);c.fill();var s=Math.min(110/logo.width,110/logo.height);c.drawImage(logo,60+(150-logo.width*s)/2,y-30+(150-logo.height*s)/2,logo.width*s,logo.height*s)}
-c.fillStyle="#7fd6a3";c.font="700 34px "+F;c.textBaseline="top";var lab=(S.cat||"News").toUpperCase()+(S.ct?"  ·  "+S.ct:"");c.fillText(lab,logo?240:60,logo?y+40:y);
-y+=170;c.fillStyle="#fff";c.font="800 66px "+F;wrap(c,S.title||"",960,6).forEach(function(l){c.fillText(l,60,y);y+=82});
-y+=40;(S.lines||[]).forEach(function(l){var i=l.indexOf(":"),k=i>0?l.slice(0,i+1):"",v=i>0?l.slice(i+1).trim():l;c.fillStyle="#7fd6a3";c.font="700 46px "+F;c.fillText(k,60,y);var kw=c.measureText(k+" ").width;c.fillStyle="#fff";c.font="800 56px "+F;wrap(c,v,960-kw,2).forEach(function(t,n){c.fillText(t,60+kw,y+(n?66:-6));if(n)y+=66});y+=96});
-y+=10;var stop=false;(S.points||[]).forEach(function(t,n){if(stop)return;c.font="500 34px "+F;var ls=wrap(c,t,880,3);if(y+ls.length*46>H-330){stop=true;return}c.fillStyle="#7fd6a3";c.font="800 36px "+F;c.fillText(String(n+1)+".",60,y);c.fillStyle="#e6efe9";c.font="500 34px "+F;ls.forEach(function(l){c.fillText(l,125,y);y+=46});y+=22});
-c.fillStyle="#9fb3a7";c.font="600 36px "+F;c.fillText("dividenden-rechner.de",60,H-260);
-return new Promise(function(res){cv.toBlob(res,"image/png")})}
-document.getElementById("igshare").onclick=async function(){m.textContent="Story-Bild wird erstellt …";
-try{if(document.fonts&&document.fonts.load)await document.fonts.load("800 66px Inter")}catch(e){}
-var photo=await load(S.img),logo=await load(S.logo),bl=null;
-try{bl=await draw(photo,logo)}catch(e){bl=null}
-if(!bl)try{bl=await draw(null,logo)}catch(e){}
-if(!bl){m.textContent="Das Story-Bild konnte nicht erstellt werden.";return}
-var f=new File([bl],"story.png",{type:"image/png"});m.textContent="";
-try{if(navigator.canShare&&navigator.canShare({files:[f]})){await navigator.share({files:[f]});return}}catch(e){if(e&&e.name==="AbortError")return}
-var a=document.createElement("a");a.href=URL.createObjectURL(bl);a.download="story.png";document.body.appendChild(a);a.click();a.remove();m.textContent="Bild gespeichert. In Instagram: Story → Bild aus der Galerie wählen."}})();</script>"""
+document.getElementById("igshare").onclick=function(){window.StoryShare(S,m)}})();</script>"""
 
 
 def build_post(p, posts):

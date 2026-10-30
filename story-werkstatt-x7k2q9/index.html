@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="de"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow,noarchive"><title>Story-Werkstatt</title>
+<style>
+body{font-family:system-ui,Segoe UI,Roboto,sans-serif;margin:0;background:#f3f6f8;color:#14202b}
+.w{max-width:1000px;margin:0 auto;padding:16px;display:grid;gap:20px;grid-template-columns:1fr 300px}
+@media(max-width:760px){.w{grid-template-columns:1fr}}
+h1{font-size:20px;margin:0 0 10px}label{display:block;font-size:13px;font-weight:600;margin:12px 0 4px}
+input,textarea,select{width:100%;box-sizing:border-box;padding:9px;border:1px solid #c9d4dc;border-radius:8px;font:inherit;background:#fff}
+textarea{min-height:90px}.tp{display:flex;gap:6px;flex-wrap:wrap}.tp button{flex:1;min-width:110px;padding:8px;border:2px solid #c9d4dc;border-radius:8px;background:#fff;cursor:pointer;font:inherit;font-size:12px}
+.tp button.on{border-color:#1a7a45;background:#e7f7ee;font-weight:700}
+.act{display:flex;gap:8px;margin-top:16px}.act button{flex:1;padding:12px;border:0;border-radius:10px;background:#1a7a45;color:#fff;font-weight:700;font-size:15px;cursor:pointer}
+.act button.s{background:#14202b}
+#pv{width:100%;border:1px solid #c9d4dc;border-radius:10px;background:#fff;position:sticky;top:12px}small{color:#667}
+</style></head><body><div class="w"><div>
+<h1>Instagram-Story bauen</h1>
+<label>Vorlage</label><div class="tp" id="tp"></div>
+<label>Artikel übernehmen (optional)</label><select id="art"><option value="">– eigener Text –</option></select>
+<label>Überschrift</label><input id="title">
+<label>Kennzahlen (je Zeile, z. B. „Umsatz: 50 Mrd. USD (+4 %)“)</label><textarea id="lines"></textarea>
+<label>Punkte (je Zeile ein Punkt)</label><textarea id="points"></textarea>
+<label>Freitext (optional, unter den Punkten)</label><textarea id="text"></textarea>
+<label>Rubrik / Kürzel (z. B. Quartalszahlen / $CVX)</label><input id="cat" placeholder="Quartalszahlen"><input id="ct" placeholder="$CVX" style="margin-top:6px">
+<label>Foto (Bild-URL oder Datei)</label><input id="img" placeholder="https://… oder Pfad"><input type="file" id="imgf" accept="image/*" style="margin-top:6px">
+<label>Logo (Datei oder Kürzel, z. B. cvx)</label><input id="logo" placeholder="cvx"><input type="file" id="logof" accept="image/*" style="margin-top:6px">
+<div class="act"><button id="go">Vorschau</button><button class="s" id="sh">Teilen / Speichern</button></div>
+<p id="msg"><small></small></p></div>
+<div><img id="pv" alt="Vorschau"></div></div>
+<script src="../assets/story.js"></script>
+<script>
+var T=[["marktuebersicht","Marktübersicht"],["daten-fakten","Daten & Fakten"],["quartalsbericht","Quartalsbericht"],["aktuelle-meldung","Aktuelle Meldung"],["kompakt","Kompakt"]],tpl="quartalsbericht",$=function(i){return document.getElementById(i)};
+var files={img:null,logo:null};
+function mk(){$("tp").innerHTML="";T.forEach(function(t){var b=document.createElement("button");b.textContent=t[1];b.className=t[0]==tpl?"on":"";b.onclick=function(){tpl=t[0];mk();pv()};$("tp").appendChild(b)})}
+function S(){var l=function(i){return $(i).value.split("\n").map(function(x){return x.trim()}).filter(Boolean)},lg=$("logo").value.trim();
+ return{tpl:"../assets/story-vorlagen/"+tpl+".png",title:$("title").value.trim(),cat:$("cat").value.trim(),ct:$("ct").value.trim(),lines:l("lines"),points:l("points"),text:$("text").value.trim(),
+ img:files.img||$("img").value.trim(),logo:files.logo||(lg&&!/[\/.]/.test(lg)?"../assets/logos/"+lg.toLowerCase()+".png":lg)}}
+function pv(){window.StoryRender(S()).then(function(b){if(b)$("pv").src=URL.createObjectURL(b)})}
+["img","logo"].forEach(function(k){$(k+"f").onchange=function(){var f=this.files[0];files[k]=f?URL.createObjectURL(f):null;pv()}});
+$("go").onclick=pv;$("sh").onclick=function(){window.StoryShare(S(),$("msg"))};
+fetch("../data/magazin.json").then(function(r){return r.json()}).then(function(d){(d.items||[]).slice(0,40).forEach(function(p,i){var o=document.createElement("option");o.value=i;o.textContent=p.title;$("art").appendChild(o)});
+ $("art").onchange=function(){var p=d.items[this.value];if(!p)return;$("title").value=p.title;$("ct").value=p.sym?"$"+p.sym.replace(/\..*/,""):"";$("logo").value=(p.sym||"").toLowerCase().replace(".","-");pv()}}).catch(function(){});
+mk();
+</script></body></html>
