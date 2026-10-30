@@ -250,6 +250,7 @@ def research(out, key):
         "Pharma": "Wachstumsprodukte, Patentabläufe, Pipeline und Studienergebnisse, Preisdruck und Gesundheitspolitik, Zölle.",
         "Konsumgueter": "Entwicklung nach Weltregionen, Mengen und Preise, Rohstoffkosten, Konsumstimmung.",
         "Finanzen": "Zinsmarge, Kreditausfälle, Kapitalquoten, Zinsumfeld, Regulierung.",
+        "Energie": "Bereinigter Gewinn und bereinigter Gewinn je Aktie gegenüber der Analystenerwartung (Konsens), Gewinn je Segment (Upstream/Förderung, Downstream/Raffinerie, Chemie) gegenüber Vorquartal und Vorjahr, Fördermenge (Barrel Öläquivalent pro Tag) und Trend, Raffinerie-Auslastung und Raffineriemargen (Diesel, Benzin), Ölpreis (Brent/WTI) und Gaspreis im Quartal, freier Cashflow gegenüber Vorquartal, Dividende je Aktie und Erhöhung in Prozent, Aktienrückkaufprogramm (Betrag, Zeitraum), Nettoschulden und Verschuldungsquote, Investitionen (Capex) und Prognose.",
         "REIT": "FFO/AFFO je Aktie, Belegung, Mietwachstum, Zinsumfeld, Fälligkeiten und Refinanzierung der Schulden, Kurs im Vergleich zum NAV.",
     }.get(ind, "Entwicklung nach Regionen und Produkten, Branchenlage.")
     prompt = (f"Recherchiere mit der Websuche Hintergrund für einen Artikel über {out.get('company')} ({out.get('ticker') or ''}), Dokument: {out.get('report_type')} {out.get('period') or ''}, "
