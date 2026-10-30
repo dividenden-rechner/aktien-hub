@@ -1,0 +1,319 @@
+{
+ "termine": [
+  {
+   "sym": "DVA",
+   "name": "DaVita",
+   "art": "ergebnis",
+   "datum": "2026-10-29",
+   "betrag": "",
+   "waehrung": "",
+   "quelle": "https://www.sec.gov/Archives/edgar/data/927066/000092706626000132/dva93026ex991.htm"
+  },
+  {
+   "sym": "EIX",
+   "name": "Edison International",
+   "art": "ergebnis",
+   "datum": "2026-10-29",
+   "betrag": "",
+   "waehrung": "",
+   "quelle": "https://www.sec.gov/Archives/edgar/data/827052/000082705226000072/eix-2026x0930exx991.htm"
+  },
+  {
+   "sym": "GILD",
+   "name": "Gilead Sciences",
+   "art": "ergebnis",
+   "datum": "2026-10-29",
+   "betrag": "",
+   "waehrung": "",
+   "quelle": "https://www.sec.gov/Archives/edgar/data/882095/000088209526000037/exhibit991earningspressrel.htm"
+  },
+  {
+   "sym": "MPWR",
+   "name": "Monolithic Power Systems",
+   "art": "ergebnis",
+   "datum": "2026-10-29",
+   "betrag": "",
+   "waehrung": "",
+   "quelle": "https://www.sec.gov/Archives/edgar/data/1280452/000162828026068202/mpwr-20260930xexx991.htm"
+  },
+  {
+   "sym": "RDDT",
+   "name": "Reddit",
+   "art": "ergebnis",
+   "datum": "2026-10-29",
+   "betrag": "",
+   "waehrung": "",
+   "quelle": "https://www.sec.gov/Archives/edgar/data/1713445/000171344526000114/exhibit992q326.htm"
+  },
+  {
+   "sym": "RMD",
+   "name": "ResMed",
+   "art": "ergebnis",
+   "datum": "2026-10-29",
+   "betrag": "",
+   "waehrung": "",
+   "quelle": "https://www.sec.gov/Archives/edgar/data/943819/000119312526437783/d170451dex991.htm"
+  },
+  {
+   "sym": "RSG",
+   "name": "Republic Services",
+   "art": "ergebnis",
+   "datum": "2026-10-29",
+   "betrag": "",
+   "waehrung": "",
+   "quelle": "https://www.sec.gov/Archives/edgar/data/1060391/000106039126000326/exhibit991q32026.htm"
+  },
+  {
+   "sym": "SYK",
+   "name": "Stryker Corporation",
+   "art": "ergebnis",
+   "datum": "2026-10-29",
+   "betrag": "",
+   "waehrung": "",
+   "quelle": "https://www.sec.gov/Archives/edgar/data/310764/000031076426000059/sykex991earningsq32026.htm"
+  },
+  {
+   "sym": "ERIE",
+   "name": "Erie Indemnity",
+   "art": "ergebnis",
+   "datum": "2026-10-30",
+   "betrag": "",
+   "waehrung": "",
+   "quelle": "https://www.sec.gov/Archives/edgar/data/922621/000162828026068265/ex-99109302026.htm"
+  },
+  {
+   "sym": "LYB",
+   "name": "LyondellBasell",
+   "art": "ergebnis",
+   "datum": "2026-10-30",
+   "betrag": "",
+   "waehrung": "",
+   "quelle": "https://www.sec.gov/Archives/edgar/data/1489393/000148939326000067/a2026q3ex991_pressrelease.htm"
+  },
+  {
+   "sym": "REGN",
+   "name": "Regeneron Pharmaceuticals",
+   "art": "ergebnis",
+   "datum": "2026-10-30",
+   "betrag": "",
+   "waehrung": "",
+   "quelle": "https://www.sec.gov/Archives/edgar/data/872589/000087258926000032/exhibit991q32026.htm"
+  },
+  {
+   "sym": "WY",
+   "name": "Weyerhaeuser",
+   "art": "ergebnis",
+   "datum": "2026-10-30",
+   "betrag": "",
+   "waehrung": "",
+   "quelle": "https://www.sec.gov/Archives/edgar/data/106535/000119312526437799/wy-ex99_1.htm"
+  },
+  {
+   "sym": "SAN",
+   "name": "Banco Santander, S.A.",
+   "art": "dividende_zahltag",
+   "datum": "2026-11-02",
+   "betrag": "0.127",
+   "waehrung": "EUR",
+   "quelle": "https://www.sec.gov/Archives/edgar/data/891478/000089147826000098/financieroq326ingles.htm"
+  },
+  {
+   "sym": "SNDK",
+   "name": "Sandisk",
+   "art": "dividende_exdatum",
+   "datum": "2026-11-09",
+   "betrag": "",
+   "waehrung": "",
+   "quelle": "https://www.sec.gov/Archives/edgar/data/2023554/000162828026068243/sndkq1-27ex991xpressrelease.htm"
+  },
+  {
+   "sym": "HEN3.DE",
+   "name": "Henkel",
+   "art": "ergebnis",
+   "datum": "2026-11-10",
+   "betrag": "",
+   "waehrung": "",
+   "quelle": "https://www.henkel.com/press-and-media/press-releases-and-kits/2026-10-29-henkel-achieves-very-strong-organic-sales-growth-in-the-third-quarter-and-updates-outlook-for-2026-2272164"
+  },
+  {
+   "sym": "RMD",
+   "name": "ResMed",
+   "art": "dividende_exdatum",
+   "datum": "2026-11-11",
+   "betrag": "0.66",
+   "waehrung": "USD",
+   "quelle": "https://www.sec.gov/Archives/edgar/data/943819/000119312526437783/d170451dex991.htm"
+  },
+  {
+   "sym": "DHI",
+   "name": "D. R. Horton",
+   "art": "dividende_exdatum",
+   "datum": "2026-11-12",
+   "betrag": "0.50",
+   "waehrung": "USD",
+   "quelle": "https://www.sec.gov/Archives/edgar/data/882184/000088218426000119/a9302026exhibit991.htm"
+  },
+  {
+   "sym": "CVX",
+   "name": "Chevron Corporation",
+   "art": "dividende_exdatum",
+   "datum": "2026-11-18",
+   "betrag": "1.78",
+   "waehrung": "USD",
+   "quelle": "https://www.sec.gov/Archives/edgar/data/93410/000009341026000196/a09302026ex9918-k.htm"
+  },
+  {
+   "sym": "DHI",
+   "name": "D. R. Horton",
+   "art": "dividende_zahltag",
+   "datum": "2026-11-19",
+   "betrag": "0.50",
+   "waehrung": "USD",
+   "quelle": "https://www.sec.gov/Archives/edgar/data/882184/000088218426000119/a9302026exhibit991.htm"
+  },
+  {
+   "sym": "SNDK",
+   "name": "Sandisk",
+   "art": "dividende_zahltag",
+   "datum": "2026-11-19",
+   "betrag": "",
+   "waehrung": "",
+   "quelle": "https://www.sec.gov/Archives/edgar/data/2023554/000162828026068243/sndkq1-27ex991xpressrelease.htm"
+  },
+  {
+   "sym": "REGN",
+   "name": "Regeneron Pharmaceuticals",
+   "art": "dividende_exdatum",
+   "datum": "2026-11-20",
+   "betrag": "",
+   "waehrung": "",
+   "quelle": "https://www.sec.gov/Archives/edgar/data/872589/000087258926000032/exhibit991q32026.htm"
+  },
+  {
+   "sym": "REGN",
+   "name": "Regeneron Pharmaceuticals",
+   "art": "dividende_zahltag",
+   "datum": "2026-12-03",
+   "betrag": "0.94",
+   "waehrung": "USD",
+   "quelle": "https://www.sec.gov/Archives/edgar/data/872589/000087258926000032/exhibit991q32026.htm"
+  },
+  {
+   "sym": "CVX",
+   "name": "Chevron Corporation",
+   "art": "dividende_zahltag",
+   "datum": "2026-12-10",
+   "betrag": "1.78",
+   "waehrung": "USD",
+   "quelle": "https://www.sec.gov/Archives/edgar/data/93410/000009341026000196/a09302026ex9918-k.htm"
+  },
+  {
+   "sym": "EXC",
+   "name": "Exelon",
+   "art": "dividende_zahltag",
+   "datum": "2026-12-15",
+   "betrag": "0.42",
+   "waehrung": "USD",
+   "quelle": "https://www.sec.gov/Archives/edgar/data/1109357/000110935726000092/exc-20261030ex991.htm"
+  },
+  {
+   "sym": "GILD",
+   "name": "Gilead Sciences",
+   "art": "dividende_exdatum",
+   "datum": "2026-12-15",
+   "betrag": "0.82",
+   "waehrung": "USD",
+   "quelle": "https://www.sec.gov/Archives/edgar/data/882095/000088209526000037/exhibit991earningspressrel.htm"
+  },
+  {
+   "sym": "RMD",
+   "name": "ResMed",
+   "art": "dividende_zahltag",
+   "datum": "2026-12-17",
+   "betrag": "0.66",
+   "waehrung": "USD",
+   "quelle": "https://www.sec.gov/Archives/edgar/data/943819/000119312526437783/d170451dex991.htm"
+  },
+  {
+   "sym": "GILD",
+   "name": "Gilead Sciences",
+   "art": "dividende_zahltag",
+   "datum": "2026-12-30",
+   "betrag": "0.82",
+   "waehrung": "USD",
+   "quelle": "https://www.sec.gov/Archives/edgar/data/882095/000088209526000037/exhibit991earningspressrel.htm"
+  },
+  {
+   "sym": "RSG",
+   "name": "Republic Services",
+   "art": "dividende_exdatum",
+   "datum": "2027-01-04",
+   "betrag": "",
+   "waehrung": "",
+   "quelle": "https://www.sec.gov/Archives/edgar/data/1060391/000106039126000326/exhibit991q32026.htm"
+  },
+  {
+   "sym": "ABBV",
+   "name": "AbbVie",
+   "art": "dividende_exdatum",
+   "datum": "2027-01-15",
+   "betrag": "1.82",
+   "waehrung": "USD",
+   "quelle": "https://www.sec.gov/Archives/edgar/data/1551152/000155115226000033/abbv-20260930xexhibit991.htm"
+  },
+  {
+   "sym": "RSG",
+   "name": "Republic Services",
+   "art": "dividende_zahltag",
+   "datum": "2027-01-15",
+   "betrag": "0.670",
+   "waehrung": "USD",
+   "quelle": "https://www.sec.gov/Archives/edgar/data/1060391/000106039126000326/exhibit991q32026.htm"
+  },
+  {
+   "sym": "DHI",
+   "name": "D. R. Horton",
+   "art": "ergebnis",
+   "datum": "2027-01-19",
+   "betrag": "",
+   "waehrung": "",
+   "quelle": "https://www.sec.gov/Archives/edgar/data/882184/000088218426000119/a9302026exhibit991.htm"
+  },
+  {
+   "sym": "ABBV",
+   "name": "AbbVie",
+   "art": "dividende_zahltag",
+   "datum": "2027-02-16",
+   "betrag": "1.82",
+   "waehrung": "USD",
+   "quelle": "https://www.sec.gov/Archives/edgar/data/1551152/000155115226000033/abbv-20260930xexhibit991.htm"
+  },
+  {
+   "sym": "DHI",
+   "name": "D. R. Horton",
+   "art": "ergebnis",
+   "datum": "2027-04-20",
+   "betrag": "",
+   "waehrung": "",
+   "quelle": "https://www.sec.gov/Archives/edgar/data/882184/000088218426000119/a9302026exhibit991.htm"
+  },
+  {
+   "sym": "DHI",
+   "name": "D. R. Horton",
+   "art": "ergebnis",
+   "datum": "2027-07-22",
+   "betrag": "",
+   "waehrung": "",
+   "quelle": "https://www.sec.gov/Archives/edgar/data/882184/000088218426000119/a9302026exhibit991.htm"
+  },
+  {
+   "sym": "DHI",
+   "name": "D. R. Horton",
+   "art": "ergebnis",
+   "datum": "2027-10-26",
+   "betrag": "",
+   "waehrung": "",
+   "quelle": "https://www.sec.gov/Archives/edgar/data/882184/000088218426000119/a9302026exhibit991.htm"
+  }
+ ]
+}

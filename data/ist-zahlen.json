@@ -1,0 +1,304 @@
+{
+ "items": [
+  {
+   "sym": "CS.PA",
+   "name": "AXA",
+   "datum": "2026-10-29",
+   "eps": null,
+   "eps_basis": "",
+   "revenue": 93000000000.0,
+   "waehrung": "EUR",
+   "quelle": "https://www.axa.com/en/press/press-releases/9m26-activity-indicators"
+  },
+  {
+   "sym": "DHI",
+   "name": "D. R. Horton",
+   "datum": "2026-10-29",
+   "eps": 2.67,
+   "eps_basis": "berichtet",
+   "revenue": 9400000000.0,
+   "waehrung": "USD",
+   "quelle": "https://www.sec.gov/Archives/edgar/data/882184/000088218426000119/a9302026exhibit991.htm"
+  },
+  {
+   "sym": "DLR",
+   "name": "Digital Realty",
+   "datum": "2026-10-29",
+   "eps": 0.48,
+   "eps_basis": "berichtet",
+   "revenue": 1900000000.0,
+   "waehrung": "USD",
+   "quelle": "https://www.sec.gov/Archives/edgar/data/1297996/000110465926120212/dlr-ex99d1.htm"
+  },
+  {
+   "sym": "DVA",
+   "name": "DaVita",
+   "datum": "2026-10-29",
+   "eps": 3.82,
+   "eps_basis": "bereinigt",
+   "revenue": null,
+   "waehrung": "USD",
+   "quelle": "https://www.sec.gov/Archives/edgar/data/927066/000092706626000132/dva93026ex991.htm"
+  },
+  {
+   "sym": "DXCM",
+   "name": "Dexcom",
+   "datum": "2026-10-29",
+   "eps": 0.73,
+   "eps_basis": "bereinigt",
+   "revenue": 1344500000.0,
+   "waehrung": "USD",
+   "quelle": "https://www.sec.gov/Archives/edgar/data/1093557/000109355726000193/dxcm09302026-exhibit991.htm"
+  },
+  {
+   "sym": "EIX",
+   "name": "Edison International",
+   "datum": "2026-10-29",
+   "eps": 1.92,
+   "eps_basis": "bereinigt",
+   "revenue": 4890000000.0,
+   "waehrung": "USD",
+   "quelle": "https://www.sec.gov/Archives/edgar/data/827052/000082705226000072/eix-2026x0930exx991.htm"
+  },
+  {
+   "sym": "ERIE",
+   "name": "Erie Indemnity",
+   "datum": "2026-10-29",
+   "eps": 3.48,
+   "eps_basis": "berichtet",
+   "revenue": 207382000.0,
+   "waehrung": "USD",
+   "quelle": "https://www.sec.gov/Archives/edgar/data/922621/000162828026068265/ex-99109302026.htm"
+  },
+  {
+   "sym": "FSLR",
+   "name": "First Solar",
+   "datum": "2026-10-29",
+   "eps": 5.3,
+   "eps_basis": "berichtet",
+   "revenue": 1230000000.0,
+   "waehrung": "USD",
+   "quelle": "https://www.sec.gov/Archives/edgar/data/1274494/000127449426000211/ex991pressreleaseq3-2026.htm"
+  },
+  {
+   "sym": "GDDY",
+   "name": "GoDaddy",
+   "datum": "2026-10-29",
+   "eps": 2.08,
+   "eps_basis": "berichtet",
+   "revenue": null,
+   "waehrung": "USD",
+   "quelle": "https://www.sec.gov/Archives/edgar/data/1609711/000160971126000117/gddyex991-20260930xq3earni.htm"
+  },
+  {
+   "sym": "GILD",
+   "name": "Gilead Sciences",
+   "datum": "2026-10-29",
+   "eps": 2.55,
+   "eps_basis": "bereinigt",
+   "revenue": 8300000000.000001,
+   "waehrung": "USD",
+   "quelle": "https://www.sec.gov/Archives/edgar/data/882095/000088209526000037/exhibit991earningspressrel.htm"
+  },
+  {
+   "sym": "HEN3.DE",
+   "name": "Henkel",
+   "datum": "2026-10-29",
+   "eps": null,
+   "eps_basis": "",
+   "revenue": 5713000000.0,
+   "waehrung": "Euro",
+   "quelle": "https://www.henkel.com/press-and-media/press-releases-and-kits/2026-10-29-henkel-achieves-very-strong-organic-sales-growth-in-the-third-quarter-and-updates-outlook-for-2026-2272164"
+  },
+  {
+   "sym": "IR",
+   "name": "Ingersoll Rand",
+   "datum": "2026-10-29",
+   "eps": 1.07,
+   "eps_basis": "bereinigt",
+   "revenue": null,
+   "waehrung": "USD",
+   "quelle": "https://www.sec.gov/Archives/edgar/data/1699150/000162828026068260/ir2026q3ex991.htm"
+  },
+  {
+   "sym": "LNT",
+   "name": "Alliant Energy",
+   "datum": "2026-10-29",
+   "eps": 1.52,
+   "eps_basis": "berichtet",
+   "revenue": 1285000000.0,
+   "waehrung": "USD",
+   "quelle": "https://www.sec.gov/Archives/edgar/data/352541/000035254126000045/lnt102920268-kex991.htm"
+  },
+  {
+   "sym": "MPWR",
+   "name": "Monolithic Power Systems",
+   "datum": "2026-10-29",
+   "eps": 5.51,
+   "eps_basis": "berichtet",
+   "revenue": 1202400000.0,
+   "waehrung": "USD",
+   "quelle": "https://www.sec.gov/Archives/edgar/data/1280452/000162828026068202/mpwr-20260930xexx991.htm"
+  },
+  {
+   "sym": "RDDT",
+   "name": "Reddit",
+   "datum": "2026-10-29",
+   "eps": 1.4,
+   "eps_basis": "berichtet",
+   "revenue": 895000000.0,
+   "waehrung": "USD",
+   "quelle": "https://www.sec.gov/Archives/edgar/data/1713445/000171344526000114/exhibit992q326.htm"
+  },
+  {
+   "sym": "RMD",
+   "name": "ResMed",
+   "datum": "2026-10-29",
+   "eps": 2.92,
+   "eps_basis": "berichtet",
+   "revenue": 1415000000.0,
+   "waehrung": "USD",
+   "quelle": "https://www.sec.gov/Archives/edgar/data/943819/000119312526437783/d170451dex991.htm"
+  },
+  {
+   "sym": "RSG",
+   "name": "Republic Services",
+   "datum": "2026-10-29",
+   "eps": 1.93,
+   "eps_basis": "berichtet",
+   "revenue": 4559000000.0,
+   "waehrung": "USD",
+   "quelle": "https://www.sec.gov/Archives/edgar/data/1060391/000106039126000326/exhibit991q32026.htm"
+  },
+  {
+   "sym": "SNDK",
+   "name": "Sandisk",
+   "datum": "2026-10-29",
+   "eps": 52.6,
+   "eps_basis": "berichtet",
+   "revenue": 11031000000.0,
+   "waehrung": "USD",
+   "quelle": "https://www.sec.gov/Archives/edgar/data/2023554/000162828026068243/sndkq1-27ex991xpressrelease.htm"
+  },
+  {
+   "sym": "SYK",
+   "name": "Stryker Corporation",
+   "datum": "2026-10-29",
+   "eps": 3.52,
+   "eps_basis": "bereinigt",
+   "revenue": 6520000000.0,
+   "waehrung": "USD",
+   "quelle": "https://www.sec.gov/Archives/edgar/data/310764/000031076426000059/sykex991earningsq32026.htm"
+  },
+  {
+   "sym": "TWLO",
+   "name": "Twilio",
+   "datum": "2026-10-29",
+   "eps": 1.65,
+   "eps_basis": "bereinigt",
+   "revenue": 1560000000.0,
+   "waehrung": "USD",
+   "quelle": "https://www.sec.gov/Archives/edgar/data/1447669/000144766926000106/twloq326ex991.htm"
+  },
+  {
+   "sym": "VLTO",
+   "name": "Veralto",
+   "datum": "2026-10-29",
+   "eps": 1.18,
+   "eps_basis": "bereinigt",
+   "revenue": null,
+   "waehrung": "USD",
+   "quelle": "https://www.sec.gov/Archives/edgar/data/1967680/000196768026000047/vlto-20261029xex991.htm"
+  },
+  {
+   "sym": "WY",
+   "name": "Weyerhaeuser",
+   "datum": "2026-10-29",
+   "eps": 0.08,
+   "eps_basis": "berichtet",
+   "revenue": 1900000000.0,
+   "waehrung": "USD",
+   "quelle": "https://www.sec.gov/Archives/edgar/data/106535/000119312526437799/wy-ex99_1.htm"
+  },
+  {
+   "sym": "ABBV",
+   "name": "AbbVie",
+   "datum": "2026-10-30",
+   "eps": 3.82,
+   "eps_basis": "bereinigt",
+   "revenue": 17404000000.0,
+   "waehrung": "USD",
+   "quelle": "https://www.sec.gov/Archives/edgar/data/1551152/000155115226000033/abbv-20260930xexhibit991.htm"
+  },
+  {
+   "sym": "CBOE",
+   "name": "Cboe Global Markets",
+   "datum": "2026-10-30",
+   "eps": 3.63,
+   "eps_basis": "bereinigt",
+   "revenue": 712200000.0,
+   "waehrung": "USD",
+   "quelle": "https://www.sec.gov/Archives/edgar/data/1374310/000162828026068432/cboe-20261030xex991.htm"
+  },
+  {
+   "sym": "CHD",
+   "name": "Church & Dwight",
+   "datum": "2026-10-30",
+   "eps": 0.92,
+   "eps_basis": "bereinigt",
+   "revenue": 1602000000.0,
+   "waehrung": "USD",
+   "quelle": "https://www.sec.gov/Archives/edgar/data/313927/000119312526439864/chd-ex99_1.htm"
+  },
+  {
+   "sym": "CVX",
+   "name": "Chevron Corporation",
+   "datum": "2026-10-30",
+   "eps": 5.06,
+   "eps_basis": "berichtet",
+   "revenue": 65236999999.99999,
+   "waehrung": "USD",
+   "quelle": "https://www.sec.gov/Archives/edgar/data/93410/000009341026000196/a09302026ex9918-k.htm"
+  },
+  {
+   "sym": "EXC",
+   "name": "Exelon",
+   "datum": "2026-10-30",
+   "eps": 0.87,
+   "eps_basis": "bereinigt",
+   "revenue": 7320000000.0,
+   "waehrung": "USD",
+   "quelle": "https://www.sec.gov/Archives/edgar/data/1109357/000110935726000092/exc-20261030ex991.htm"
+  },
+  {
+   "sym": "LYB",
+   "name": "LyondellBasell",
+   "datum": "2026-10-30",
+   "eps": 2.54,
+   "eps_basis": "bereinigt",
+   "revenue": 8499000000.000001,
+   "waehrung": "USD",
+   "quelle": "https://www.sec.gov/Archives/edgar/data/1489393/000148939326000067/a2026q3ex991_pressrelease.htm"
+  },
+  {
+   "sym": "REGN",
+   "name": "Regeneron Pharmaceuticals",
+   "datum": "2026-10-30",
+   "eps": 20.07,
+   "eps_basis": "bereinigt",
+   "revenue": null,
+   "waehrung": "USD",
+   "quelle": "https://www.sec.gov/Archives/edgar/data/872589/000087258926000032/exhibit991q32026.htm"
+  },
+  {
+   "sym": "SAN",
+   "name": "Banco Santander, S.A.",
+   "datum": "2026-10-30",
+   "eps": 0.83,
+   "eps_basis": "berichtet",
+   "revenue": null,
+   "waehrung": "EUR",
+   "quelle": "https://www.sec.gov/Archives/edgar/data/891478/000089147826000098/financieroq326ingles.htm"
+  }
+ ]
+}

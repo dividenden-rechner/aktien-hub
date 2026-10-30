@@ -1,6 +1,150 @@
 {
  "items": [
   {
+   "slug": "regeneron-pharmaceuticals-q3-2026-zahlen-dividende",
+   "title": "Regeneron Pharmaceuticals steigert bereinigten Q3-Gewinn auf 20,07 US-Dollar je Aktie",
+   "sym": "REGN",
+   "date": "2026-10-30T18:08:00+01:00"
+  },
+  {
+   "slug": "exelon-q3-zahlen-dividende-2026",
+   "title": "Exelon übertrifft mit 0,87 US-Dollar bereinigtem Q3-Gewinn Erwartungen",
+   "sym": "EXC",
+   "date": "2026-10-30T18:08:00+01:00"
+  },
+  {
+   "slug": "church-dwight-q3-zahlen-2026",
+   "title": "Church & Dwight steigert bereinigten Q3-Gewinn auf 0,92 US-Dollar je Aktie",
+   "sym": "CHD",
+   "date": "2026-10-30T18:08:00+01:00"
+  },
+  {
+   "slug": "cboe-global-markets-q3-2026-zahlen",
+   "title": "Cboe Global Markets erzielt im Q3 2026 Rekordgewinn je Aktie von 4,08 US-Dollar",
+   "sym": "CBOE",
+   "date": "2026-10-30T18:08:00+01:00"
+  },
+  {
+   "slug": "veralto-q3-zahlen-2026",
+   "title": "Veralto steigert bereinigten Q3-Gewinn auf 1,18 US-Dollar je Aktie und hebt Jahresprognose an",
+   "sym": "VLTO",
+   "date": "2026-10-30T18:07:00+01:00"
+  },
+  {
+   "slug": "valero-energy-uebernahme-raffinerie-lyondellbasell-2026",
+   "title": "Valero Energy übernimmt LyondellBasell-Raffinerie für 320,5 Millionen US-Dollar",
+   "sym": "VLO",
+   "date": "2026-10-30T18:07:00+01:00"
+  },
+  {
+   "slug": "marathon-petroleum-bestellt-david-constable-in-den-verwaltungsrat",
+   "title": "Marathon Petroleum beruft David E. Constable in den Verwaltungsrat",
+   "sym": "MPC",
+   "date": "2026-10-30T18:07:00+01:00"
+  },
+  {
+   "slug": "ingersoll-rand-q3-2026-zahlen-prognose",
+   "title": "Ingersoll Rand steigert bereinigten Q3-Gewinn auf 1,07 US-Dollar je Aktie und hebt Prognose an",
+   "sym": "IR",
+   "date": "2026-10-30T18:07:00+01:00"
+  },
+  {
+   "slug": "digital-realty-q3-2026-zahlen",
+   "title": "Digital Realty steigert Q3-Gewinn je Aktie auf 0,48 US-Dollar und hebt Prognose an",
+   "sym": "DLR",
+   "date": "2026-10-30T18:07:00+01:00"
+  },
+  {
+   "slug": "alliant-energy-q3-zahlen-dividende-2026",
+   "title": "Alliant Energy steigert Q3-Gewinn auf 1,52 US-Dollar je Aktie und erhoeht Dividendenziel",
+   "sym": "LNT",
+   "date": "2026-10-30T18:07:00+01:00"
+  },
+  {
+   "slug": "weyerhaeuser-q3-ergebnisse-2026",
+   "title": "Weyerhaeuser steigert bereinigtes EBITDA im Q3 2026 auf 248 Millionen US-Dollar",
+   "sym": "WY",
+   "date": "2026-10-30T18:06:00+01:00"
+  },
+  {
+   "slug": "stryker-quartalszahlen-q3-2026",
+   "title": "Stryker steigert bereinigten Q3-Gewinn je Aktie auf 3,52 US-Dollar",
+   "sym": "SYK",
+   "date": "2026-10-30T18:06:00+01:00"
+  },
+  {
+   "slug": "sandisk-q1-2027-zahlen",
+   "title": "Sandisk erzielt im Q1 2027 Nettogewinn von 8,101 Milliarden US-Dollar",
+   "sym": "SNDK",
+   "date": "2026-10-30T18:06:00+01:00"
+  },
+  {
+   "slug": "republic-services-q3-2026-zahlen-dividende",
+   "title": "Republic Services erhöht Q3-Gewinn je Aktie auf 1,93 US-Dollar",
+   "sym": "RSG",
+   "date": "2026-10-30T18:06:00+01:00"
+  },
+  {
+   "slug": "twilio-q3-zahlen-2026",
+   "title": "Twilio übertrifft im Q3 2026 Erwartungen und hebt Jahresprognose an",
+   "sym": "TWLO",
+   "date": "2026-10-30T18:05:00+01:00"
+  },
+  {
+   "slug": "resmed-q1-ergebnis-2027",
+   "title": "ResMed steigert Q1-Gewinn je Aktie auf 2,92 US-Dollar und erhöht Dividende",
+   "sym": "RMD",
+   "date": "2026-10-30T18:05:00+01:00"
+  },
+  {
+   "slug": "reddit-q3-2026-zahlen",
+   "title": "Reddit erzielt im Q3 2026 895 Millionen US-Dollar Umsatz und steigert Gewinn",
+   "sym": "RDDT",
+   "date": "2026-10-30T18:05:00+01:00"
+  },
+  {
+   "slug": "edison-international-q3-ergebnis-2026",
+   "title": "Edison International erzielt im Q3 2026 bereinigten Gewinn von 1,92 US-Dollar je Aktie",
+   "sym": "EIX",
+   "date": "2026-10-30T18:05:00+01:00"
+  },
+  {
+   "slug": "monolithic-power-systems-q3-2026-zahlen",
+   "title": "Monolithic Power Systems knackt im dritten Quartal erstmals Milliardenmarke beim Umsatz",
+   "sym": "MPWR",
+   "date": "2026-10-30T18:04:00+01:00"
+  },
+  {
+   "slug": "gilead-sciences-q3-2026-zahlen-dividende",
+   "title": "Gilead Sciences steigert bereinigten Gewinn im Q3 2026 auf 2,55 US-Dollar je Aktie",
+   "sym": "GILD",
+   "date": "2026-10-30T18:04:00+01:00"
+  },
+  {
+   "slug": "first-solar-q3-2026-zahlen-aktienrueckkauf",
+   "title": "First Solar steigert Q3-Gewinn auf 571 Millionen US-Dollar",
+   "sym": "FSLR",
+   "date": "2026-10-30T18:04:00+01:00"
+  },
+  {
+   "slug": "samsung-electronics-q3-2026-zahlen-dividende",
+   "title": "Samsung Electronics erzielt im dritten Quartal 107,4 Billionen KRW operativen Gewinn",
+   "sym": "005930.KS",
+   "date": "2026-10-30T18:02:00+01:00"
+  },
+  {
+   "slug": "hyundai-motor-q3-ergebnis-2026",
+   "title": "Hyundai Motor steigert operativen Gewinn auf 2,68 Billionen KRW",
+   "sym": "005380.KS",
+   "date": "2026-10-30T18:02:00+01:00"
+  },
+  {
+   "slug": "henkel-q3-zahlen-2026-prognose-erhoehung",
+   "title": "Henkel erhöht Jahresprognose nach starkem organischem Q3-Wachstum",
+   "sym": "HEN3.DE",
+   "date": "2026-10-30T18:02:00+01:00"
+  },
+  {
    "slug": "chevron-q3-2026-ergebnisse",
    "title": "Chevron meldet 9,9 Milliarden Dollar Gewinn im dritten Quartal",
    "sym": "CVX",
