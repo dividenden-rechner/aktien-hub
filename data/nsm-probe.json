@@ -1,142 +1,200 @@
 {
- "0:mit_datum": {
-  "status": 400,
-  "laenge": 13,
-  "anfang": "Invalid index"
+ "ohne_datum": {
+  "status": 200,
+  "laenge": 65780,
+  "anfang": "{\"took\":482,\"timed_out\":false,\"_shards\":{\"failed\":0.0,\"skipped\":0.0,\"successful\":4.0,\"total\":4.0},\"hits\":{\"total\":{\"relation\":\"eq\",\"value\":5535012},\"hits\":[{\"_index\":\"fca-nsm-searchdata\",\"_id\":\"fe9d9dca-1cf4-4bdc-ab36-f88ac76abe35\",\"_source\":{\"submitted_date\":\"2026-10-30T08:51:13Z\",\"tag_esef\":\"\",\"classifications_code\":\"\",\"document_date\":\"2026-10-30T08:51:13Z\",\"source\":\"GNW\",\"type\":\"Form 8.5 (EPT/RI)\",\"related_org\":[{\"lei\":\"8945007OZHZDN4LW1G21\",\"company\":\"CAB Payments Holdings PLC\"}],\"lei_remediation_flag\":\"N\",\"document_format\":\"Plain text\",\"category_group\":\"Mergers and acquisitions\",\"classifications\":\"\",\"lei\":\"2138009KZO3MK7TV6372\",\"download_link\":\"NSM/GNW/fe9d9dca-1cf4-4bdc-ab36-f88ac76abe35.html\",\"disclosure_id\":\"fe9d9dca-1cf4-4bdc-ab36-f88ac76abe35\",\"latest_flag\":\"Y\",\"hist_seq\":\"1\",\"publication_date\":\"2026-10-30T08:51:13Z\",\"seq_id\":\"fe9d9dca-1cf4-4bdc-ab36-f88ac76abe35\",\"company\":\"SHORE CAPITAL STOCKBROKERS LIMITED\",\"last_updated_date\":\"2026-10-30T08:51:13Z\",\"headline\":\"Form 8.5 (EPT/RI) - CAB Payments Holdings Plc\",\"type_code\":\"FER\"},\"sort\":[1793350273000]},{\"_index\":\"fca-nsm-searchdata\",\"_id\":\"768bf71b-b1b1-4588-bf52-c90d28e6ca73\",\"_source\":{\"submitted_date\":\"2026-10-30T08:49:04Z\",\"tag_esef\":\"\",\"classifications_code\":\"\",\"document_date\":\"2026-10-30T08:49:04Z\",\"source\":\"GNW\",\"type\":\"Form 8.5 (EPT/RI)\",\"related_org\":[{\"lei\":\"549300DDKLXYLLO4N524\",\"company\":\"PHAROS ENERGY PLC\"}],\"lei_remediation_flag\":\"N\",\"document_format\":\"Plain text\",\"category_group\":\"Mergers and acquisit",
+  "treffer_gesamt": {
+   "relation": "eq",
+   "value": 5535012
+  },
+  "erste_quellen": [
+   {
+    "submitted_date": "2026-10-30T08:51:13Z",
+    "tag_esef": "",
+    "classifications_code": "",
+    "document_date": "2026-10-30T08:51:13Z",
+    "source": "GNW",
+    "type": "Form 8.5 (EPT/RI)",
+    "related_org": [
+     {
+      "lei": "8945007OZHZDN4LW1G21",
+      "company": "CAB Payments Holdings PLC"
+     }
+    ],
+    "lei_remediation_flag": "N",
+    "document_format": "Plain text",
+    "category_group": "Mergers and acquisitions",
+    "classifications": "",
+    "lei": "2138009KZO3MK7TV6372",
+    "download_link": "NSM/GNW/fe9d9dca-1cf4-4bdc-ab36-f88ac76abe35.html",
+    "disclosure_id": "fe9d9dca-1cf4-4bdc-ab36-f88ac76abe35",
+    "latest_flag": "Y",
+    "hist_seq": "1",
+    "publication_date": "2026-10-30T08:51:13Z",
+    "seq_id": "fe9d9dca-1cf4-4bdc-ab36-f88ac76abe35",
+    "company": "SHORE CAPITAL STOCKBROKERS LIMITED",
+    "last_updated_date": "2026-10-30T08:51:13Z",
+    "headline": "Form 8.5 (EPT/RI) - CAB Payments Holdings Plc",
+    "type_code": "FER"
+   },
+   {
+    "submitted_date": "2026-10-30T08:49:04Z",
+    "tag_esef": "",
+    "classifications_code": "",
+    "document_date": "2026-10-30T08:49:04Z",
+    "source": "GNW",
+    "type": "Form 8.5 (EPT/RI)",
+    "related_org": [
+     {
+      "lei": "549300DDKLXYLLO4N524",
+      "company": "PHAROS ENERGY PLC"
+     }
+    ],
+    "lei_remediation_flag": "N",
+    "document_format": "Plain text",
+    "category_group": "Mergers and acquisitions",
+    "classifications": "",
+    "lei": "2138009KZO3MK7TV6372",
+    "download_link": "NSM/GNW/768bf71b-b1b1-4588-bf52-c90d28e6ca73.html",
+    "disclosure_id": "768bf71b-b1b1-4588-bf52-c90d28e6ca73",
+    "latest_flag": "Y",
+    "hist_seq": "1",
+    "publication_date": "2026-10-30T08:49:04Z",
+    "seq_id": "768bf71b-b1b1-4588-bf52-c90d28e6ca73",
+    "company": "SHORE CAPITAL STOCKBROKERS LIMITED",
+    "last_updated_date": "2026-10-30T08:49:04Z",
+    "headline": "Form 8.5 (EPT/RI) - Pharos Energy Plc",
+    "type_code": "FER"
+   },
+   {
+    "submitted_date": "2026-10-30T08:48:10Z",
+    "tag_esef": "",
+    "classifications_code": "",
+    "document_date": "2026-10-30T08:48:10Z",
+    "source": "RNS",
+    "type": "3rd Quarter Results",
+    "related_org": [],
+    "lei_remediation_flag": "N",
+    "document_format": "Plain text",
+    "category_group": "Financial Results",
+    "classifications": "",
+    "lei": "213800I9TWC9K22N4502",
+    "download_link": "NSM/RNS/582ab2fc-987a-4462-b72f-1b500a98526a.html",
+    "disclosure_id": "582ab2fc-987a-4462-b72f-1b500a98526a",
+    "latest_flag": "Y",
+    "hist_seq": "1",
+    "publication_date": "2026-10-30T08:35:38Z",
+    "seq_id": "582ab2fc-987a-4462-b72f-1b500a98526a",
+    "company": "AIR CHINA LIMITED",
+    "last_updated_date": "2026-10-30T08:35:38Z",
+    "headline": "THIRD QUARTERLY REPORT OF 2026 ",
+    "type_code": "QRT"
+   }
+  ]
  },
- "0:einfach": {
-  "status": 400,
-  "laenge": 13,
-  "anfang": "Invalid index"
+ "datum_us": {
+  "status": 404,
+  "laenge": 25,
+  "anfang": "Unable to search the data",
+  "fehler": "Expecting value: line 1 column 1 (char 0)"
  },
- "I:mit_datum": {
-  "status": 400,
-  "laenge": 13,
-  "anfang": "Invalid index"
+ "datum_iso": {
+  "status": 200,
+  "laenge": 40058,
+  "anfang": "{\"took\":37,\"timed_out\":false,\"_shards\":{\"failed\":0.0,\"skipped\":0.0,\"successful\":4.0,\"total\":4.0},\"hits\":{\"total\":{\"relation\":\"eq\",\"value\":5596},\"hits\":[{\"_index\":\"fca-nsm-searchdata\",\"_id\":\"fe9d9dca-1cf4-4bdc-ab36-f88ac76abe35\",\"_source\":{\"submitted_date\":\"2026-10-30T08:51:13Z\",\"tag_esef\":\"\",\"classifications_code\":\"\",\"document_date\":\"2026-10-30T08:51:13Z\",\"source\":\"GNW\",\"type\":\"Form 8.5 (EPT/RI)\",\"related_org\":[{\"lei\":\"8945007OZHZDN4LW1G21\",\"company\":\"CAB Payments Holdings PLC\"}],\"lei_remediation_flag\":\"N\",\"document_format\":\"Plain text\",\"category_group\":\"Mergers and acquisitions\",\"classifications\":\"\",\"lei\":\"2138009KZO3MK7TV6372\",\"download_link\":\"NSM/GNW/fe9d9dca-1cf4-4bdc-ab36-f88ac76abe35.html\",\"disclosure_id\":\"fe9d9dca-1cf4-4bdc-ab36-f88ac76abe35\",\"latest_flag\":\"Y\",\"hist_seq\":\"1\",\"publication_date\":\"2026-10-30T08:51:13Z\",\"seq_id\":\"fe9d9dca-1cf4-4bdc-ab36-f88ac76abe35\",\"company\":\"SHORE CAPITAL STOCKBROKERS LIMITED\",\"last_updated_date\":\"2026-10-30T08:51:13Z\",\"headline\":\"Form 8.5 (EPT/RI) - CAB Payments Holdings Plc\",\"type_code\":\"FER\"},\"sort\":[1793350273000]},{\"_index\":\"fca-nsm-searchdata\",\"_id\":\"768bf71b-b1b1-4588-bf52-c90d28e6ca73\",\"_source\":{\"submitted_date\":\"2026-10-30T08:49:04Z\",\"tag_esef\":\"\",\"classifications_code\":\"\",\"document_date\":\"2026-10-30T08:49:04Z\",\"source\":\"GNW\",\"type\":\"Form 8.5 (EPT/RI)\",\"related_org\":[{\"lei\":\"549300DDKLXYLLO4N524\",\"company\":\"PHAROS ENERGY PLC\"}],\"lei_remediation_flag\":\"N\",\"document_format\":\"Plain text\",\"category_group\":\"Mergers and acquisitions",
+  "treffer_gesamt": {
+   "relation": "eq",
+   "value": 5596
+  },
+  "erste_quellen": [
+   {
+    "submitted_date": "2026-10-30T08:51:13Z",
+    "tag_esef": "",
+    "classifications_code": "",
+    "document_date": "2026-10-30T08:51:13Z",
+    "source": "GNW",
+    "type": "Form 8.5 (EPT/RI)",
+    "related_org": [
+     {
+      "lei": "8945007OZHZDN4LW1G21",
+      "company": "CAB Payments Holdings PLC"
+     }
+    ],
+    "lei_remediation_flag": "N",
+    "document_format": "Plain text",
+    "category_group": "Mergers and acquisitions",
+    "classifications": "",
+    "lei": "2138009KZO3MK7TV6372",
+    "download_link": "NSM/GNW/fe9d9dca-1cf4-4bdc-ab36-f88ac76abe35.html",
+    "disclosure_id": "fe9d9dca-1cf4-4bdc-ab36-f88ac76abe35",
+    "latest_flag": "Y",
+    "hist_seq": "1",
+    "publication_date": "2026-10-30T08:51:13Z",
+    "seq_id": "fe9d9dca-1cf4-4bdc-ab36-f88ac76abe35",
+    "company": "SHORE CAPITAL STOCKBROKERS LIMITED",
+    "last_updated_date": "2026-10-30T08:51:13Z",
+    "headline": "Form 8.5 (EPT/RI) - CAB Payments Holdings Plc",
+    "type_code": "FER"
+   },
+   {
+    "submitted_date": "2026-10-30T08:49:04Z",
+    "tag_esef": "",
+    "classifications_code": "",
+    "document_date": "2026-10-30T08:49:04Z",
+    "source": "GNW",
+    "type": "Form 8.5 (EPT/RI)",
+    "related_org": [
+     {
+      "lei": "549300DDKLXYLLO4N524",
+      "company": "PHAROS ENERGY PLC"
+     }
+    ],
+    "lei_remediation_flag": "N",
+    "document_format": "Plain text",
+    "category_group": "Mergers and acquisitions",
+    "classifications": "",
+    "lei": "2138009KZO3MK7TV6372",
+    "download_link": "NSM/GNW/768bf71b-b1b1-4588-bf52-c90d28e6ca73.html",
+    "disclosure_id": "768bf71b-b1b1-4588-bf52-c90d28e6ca73",
+    "latest_flag": "Y",
+    "hist_seq": "1",
+    "publication_date": "2026-10-30T08:49:04Z",
+    "seq_id": "768bf71b-b1b1-4588-bf52-c90d28e6ca73",
+    "company": "SHORE CAPITAL STOCKBROKERS LIMITED",
+    "last_updated_date": "2026-10-30T08:49:04Z",
+    "headline": "Form 8.5 (EPT/RI) - Pharos Energy Plc",
+    "type_code": "FER"
+   },
+   {
+    "submitted_date": "2026-10-30T08:48:10Z",
+    "tag_esef": "",
+    "classifications_code": "",
+    "document_date": "2026-10-30T08:48:10Z",
+    "source": "RNS",
+    "type": "3rd Quarter Results",
+    "related_org": [],
+    "lei_remediation_flag": "N",
+    "document_format": "Plain text",
+    "category_group": "Financial Results",
+    "classifications": "",
+    "lei": "213800I9TWC9K22N4502",
+    "download_link": "NSM/RNS/582ab2fc-987a-4462-b72f-1b500a98526a.html",
+    "disclosure_id": "582ab2fc-987a-4462-b72f-1b500a98526a",
+    "latest_flag": "Y",
+    "hist_seq": "1",
+    "publication_date": "2026-10-30T08:35:38Z",
+    "seq_id": "582ab2fc-987a-4462-b72f-1b500a98526a",
+    "company": "AIR CHINA LIMITED",
+    "last_updated_date": "2026-10-30T08:35:38Z",
+    "headline": "THIRD QUARTERLY REPORT OF 2026 ",
+    "type_code": "QRT"
+   }
+  ]
  },
- "I:einfach": {
-  "status": 400,
-  "laenge": 13,
-  "anfang": "Invalid index"
- },
- "e:mit_datum": {
-  "status": 400,
-  "laenge": 13,
-  "anfang": "Invalid index"
- },
- "e:einfach": {
-  "status": 400,
-  "laenge": 13,
-  "anfang": "Invalid index"
- },
- "f:mit_datum": {
-  "status": 400,
-  "laenge": 13,
-  "anfang": "Invalid index"
- },
- "f:einfach": {
-  "status": 400,
-  "laenge": 13,
-  "anfang": "Invalid index"
- },
- "fca-nsm-searchdata:mit_datum": {
-  "status": 400,
-  "laenge": 13,
-  "anfang": "Invalid index"
- },
- "fca-nsm-searchdata:einfach": {
-  "status": 400,
-  "laenge": 13,
-  "anfang": "Invalid index"
- },
- "h:mit_datum": {
-  "status": 400,
-  "laenge": 13,
-  "anfang": "Invalid index"
- },
- "h:einfach": {
-  "status": 400,
-  "laenge": 13,
-  "anfang": "Invalid index"
- },
- "i:mit_datum": {
-  "status": 400,
-  "laenge": 13,
-  "anfang": "Invalid index"
- },
- "i:einfach": {
-  "status": 400,
-  "laenge": 13,
-  "anfang": "Invalid index"
- },
- "n:mit_datum": {
-  "status": 400,
-  "laenge": 13,
-  "anfang": "Invalid index"
- },
- "n:einfach": {
-  "status": 400,
-  "laenge": 13,
-  "anfang": "Invalid index"
- },
- "o:mit_datum": {
-  "status": 400,
-  "laenge": 13,
-  "anfang": "Invalid index"
- },
- "o:einfach": {
-  "status": 400,
-  "laenge": 13,
-  "anfang": "Invalid index"
- },
- "r:mit_datum": {
-  "status": 400,
-  "laenge": 13,
-  "anfang": "Invalid index"
- },
- "r:einfach": {
-  "status": 400,
-  "laenge": 13,
-  "anfang": "Invalid index"
- },
- "s:mit_datum": {
-  "status": 400,
-  "laenge": 13,
-  "anfang": "Invalid index"
- },
- "s:einfach": {
-  "status": 400,
-  "laenge": 13,
-  "anfang": "Invalid index"
- },
- "t:mit_datum": {
-  "status": 400,
-  "laenge": 13,
-  "anfang": "Invalid index"
- },
- "t:einfach": {
-  "status": 400,
-  "laenge": 13,
-  "anfang": "Invalid index"
- },
- "w:mit_datum": {
-  "status": 400,
-  "laenge": 13,
-  "anfang": "Invalid index"
- },
- "w:einfach": {
-  "status": 400,
-  "laenge": 13,
-  "anfang": "Invalid index"
- },
- "x:mit_datum": {
-  "status": 400,
-  "laenge": 13,
-  "anfang": "Invalid index"
- },
- "x:einfach": {
-  "status": 400,
-  "laenge": 13,
-  "anfang": "Invalid index"
+ "firma_lei": {
+  "status": 404,
+  "laenge": 25,
+  "anfang": "Unable to search the data",
+  "fehler": "Expecting value: line 1 column 1 (char 0)"
  }
 }
