@@ -7,10 +7,12 @@ author_bio: "Das Redaktions-Team von Dividenden-Rechner.de schreibt über Divide
 category: Analyse
 kein_logo: ja
 image: assets/magazin/tech-ausverkauf-intel-nasdaq-marktueberblick-foto.jpg
-image_alt: "Foto zu Tech-Ausverkauf:: Stock-exchange-trading-floor.jpg"
-image_credit: "Foto: S.aderogba / Wikimedia Commons, CC BY-SA 4.0"
-image_source: https://commons.wikimedia.org/wiki/File:Stock-exchange-trading-floor.jpg
-image_artist_url: 
+image_alt: "Collage aus zwei Fotos: Aktienkurse als Kerzendiagramm auf dunklem Bildschirm und ein Mann im Anzug auf der Strasse"
+image_credit: "Fotos: Maxim Hopman und Ryoji Iwata auf Unsplash"
+image_source: https://unsplash.com/photos/stock-market-candlestick-chart-on-dark-screen-fiXLQXAhCfk?utm_source=dividenden-rechner&utm_medium=referral
+image_artist_url: https://unsplash.com/@nampoh?utm_source=dividenden-rechner&utm_medium=referral
+image_artist_url2: https://unsplash.com/@ryoji__iwata?utm_source=dividenden-rechner&utm_medium=referral
+image_source2: https://unsplash.com/photos/man-in-black-formal-suit-jacket-and-pants-carrying-black-bag-while-walking-on-pedestrian-lane-during-daytime-wUZjnOv7t0g?utm_source=dividenden-rechner&utm_medium=referral
 ---
 !!! kurz "Kurz gesagt"
     **Nasdaq 100:** −3,5 % auf 28.370 Punkte
