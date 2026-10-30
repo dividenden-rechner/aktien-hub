@@ -15,13 +15,11 @@ Datei anklicken, dann Stift-Symbol: Zeile `draft: true` löschen und speichern, 
 | 29.10.2026 22:42 | Amazon steigert Umsatz im dritten Quartal auf 201,9 Milliarden Dollar | [2026-10-29-2242-amazon-q3-2026-zahlen.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/2026-10-29-2242-amazon-q3-2026-zahlen.md) |
 | 29.10.2026 10:12 | Shell erzielt im dritten Quartal 10,8 Milliarden Dollar Gewinn | [2026-10-29-1012-shell-q3-2026-ergebnisse.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/2026-10-29-1012-shell-q3-2026-ergebnisse.md) |
 
-### Online (99)
+### Online (97)
 
 | Datum | Titel | Datei |
 |---|---|---|
 | 30.10.2026 11:43 | LyondellBasell verdient im Quartal 758 Millionen US-Dollar | [2026-10-30-1142-lyondellbasell-q3-2026.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/2026-10-30-1142-lyondellbasell-q3-2026.md) |
-| 30.10.2026 11:38 | Chevron steigert Gewinn auf 24,2 Milliarden Dollar im Neunmonatszeitraum | [2026-10-30-1137-chevron-q3-2026-zahlen.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/2026-10-30-1137-chevron-q3-2026-zahlen.md) |
-| 30.10.2026 11:36 | ExxonMobil erzielt im dritten Quartal 17,5 Milliarden Dollar bereinigten Gewinn | [2026-10-30-1136-exxonmobil-q3-2026-ergebnisse.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/2026-10-30-1136-exxonmobil-q3-2026-ergebnisse.md) |
 | 30.10.2026 10:02 | BP senkt Finanzverbindlichkeiten und steigert bereinigten Gewinn deutlich | [2026-10-30-1001-bp-q3-2026-finanzzahlen.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/2026-10-30-1001-bp-q3-2026-finanzzahlen.md) |
 | 30.10.2026 00:28 | Shell plc: Interimsdividende von 0,3906 US-Dollar für Q3 2026 | [2026-10-30-0028-shell-dividende-q3-2026.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/2026-10-30-0028-shell-dividende-q3-2026.md) |
 | 30.10.2026 00:28 | Hershey Company verbucht 580,8 Millionen US-Dollar Nettogewinn im Q3 2026 | [2026-10-30-0028-hershey-q3-2026-zahlen.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/2026-10-30-0028-hershey-q3-2026-zahlen.md) |
