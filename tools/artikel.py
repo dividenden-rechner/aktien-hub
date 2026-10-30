@@ -64,10 +64,15 @@ def sortiere():
     n = 0
     for f in glob.glob(os.path.join(DIR, "*.md")):
         b = os.path.basename(f)
+        if b.startswith(("README", "_")): continue
         m = OLD.match(b)
-        if not m or b.startswith("README"): continue
-        stamp = "%s-%s-%s-%s%s" % (m.group(1), m.group(2), m.group(3), m.group(4) or "00", m.group(5) or "00")
-        dst = path_for(stamp, m.group(6))
+        if m:
+            stamp = "%s-%s-%s-%s%s" % (m.group(1), m.group(2), m.group(3), m.group(4) or "00", m.group(5) or "00"); slug = m.group(6)
+        else:   # Name ohne Datum: Datum aus dem Kopfbereich
+            d = re.search(r"^date:\s*(\d{4})-(\d{2})-(\d{2})(?:[ T](\d{2}):(\d{2}))?", open(f, encoding="utf-8").read(2000), re.M)
+            if not d: continue
+            stamp = "%s-%s-%s-%s%s" % (d.group(1), d.group(2), d.group(3), d.group(4) or "00", d.group(5) or "00"); slug = b[:-3]
+        dst = path_for(stamp, slug)
         if os.path.exists(dst): continue
         shutil.move(f, dst); n += 1
     return n
