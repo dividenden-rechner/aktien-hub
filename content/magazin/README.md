@@ -19,7 +19,7 @@ Datei anklicken, dann Stift-Symbol: Zeile `draft: true` löschen und speichern, 
 
 | Datum | Titel | Datei |
 |---|---|---|
-| 30.10.2026 21:45 | Tech-Ausverkauf: Intel bricht um 30 % ein, der Nasdaq 100 verliert 3,5 % | [79738969_2026-10-30/7854_2145-tech-ausverkauf-intel-nasdaq-marktueberblick.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/79738969_2026-10-30/7854_2145-tech-ausverkauf-intel-nasdaq-marktueberblick.md) |
+| 30.10.2026 21:45 | Intel implodiert, Amazon und Co. enttäuschen den Markt | [79738969_2026-10-30/7854_2145-tech-ausverkauf-intel-nasdaq-marktueberblick.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/79738969_2026-10-30/7854_2145-tech-ausverkauf-intel-nasdaq-marktueberblick.md) |
 | 30.10.2026 18:20 | Sanofi wächst im dritten Quartal kräftig und hebt Jahresprognose an | [79738969_2026-10-30/8179_1820-sanofi-q3-2026-zahlen.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/79738969_2026-10-30/8179_1820-sanofi-q3-2026-zahlen.md) |
 | 30.10.2026 18:08 | Regeneron Pharmaceuticals steigert bereinigten Q3-Gewinn auf 20,07 US-Dollar je Aktie | [79738969_2026-10-30/8191_1808-regeneron-pharmaceuticals-q3-2026-zahlen-dividende.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/79738969_2026-10-30/8191_1808-regeneron-pharmaceuticals-q3-2026-zahlen-dividende.md) |
 | 30.10.2026 18:08 | Exelon übertrifft mit 0,87 US-Dollar bereinigtem Q3-Gewinn Erwartungen | [79738969_2026-10-30/8191_1808-exelon-q3-zahlen-dividende-2026.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/79738969_2026-10-30/8191_1808-exelon-q3-zahlen-dividende-2026.md) |

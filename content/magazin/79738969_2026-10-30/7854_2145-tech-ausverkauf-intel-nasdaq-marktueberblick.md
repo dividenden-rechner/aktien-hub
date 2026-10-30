@@ -1,5 +1,5 @@
 ---
-title: "Tech-Ausverkauf: Intel bricht um 30 % ein, der Nasdaq 100 verliert 3,5 %"
+title: "Intel implodiert, Amazon und Co. enttäuschen den Markt"
 description: "Enttäuschende Zahlen von Alphabet, Amazon und Intel schicken die US-Börsen am Freitag ins Minus. Dazu kommen ein Milliarden-Hack bei Binance, ein Ölpreis um 112 Dollar und Signale der Fed für eine Zinserhöhung im Dezember."
 date: 2026-10-30 21:45
 author: "Redaktions-Team Dividenden-Rechner.de"
