@@ -3,7 +3,7 @@
 Schritte je Firma: IR-Seite und Startseite abrufen -> <link rel=alternate>, Links mit rss/feed/.xml, uebliche Pfade -> Feed pruefen
 (XML mit Eintraegen, neuester Eintrag). Ergebnis: data/asia-feeds.json (alles) und Eintrag in data/feeds.json (nur geprueft, ohne bisherige URL).
 Ohne KI, verbraucht kein Kontingent."""
-import json, os, re, sys, time, html, urllib.request, urllib.parse
+import json, os, re, sys, time, html, datetime, email.utils, urllib.request, urllib.parse
 from concurrent.futures import ThreadPoolExecutor
 import xml.etree.ElementTree as ET
 

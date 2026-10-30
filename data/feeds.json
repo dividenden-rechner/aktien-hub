@@ -168,9 +168,7 @@
   {
    "sym": "SIE.DE",
    "name": "Siemens",
-   "url": "https://press.siemens.com/en/rss.xml",
-   "region": "Welt",
-   "geprueft": true
+   "region": "Welt"
   },
   {
    "sym": "ALV.DE",
@@ -370,9 +368,7 @@
   {
    "sym": "SAN.MC",
    "name": "Santander",
-   "url": "https://www.santander.com/content/santander-corporate/san-global/en/sala-de-comunicacion/insights.sitefeed.rss.xml",
-   "region": "Welt",
-   "geprueft": true
+   "region": "Welt"
   },
   {
    "sym": "TSM",
@@ -511,9 +507,7 @@
   {
    "sym": "0027.HK",
    "name": "Galaxy Entertainment",
-   "url": "https://www.galaxyentertainment.com/en/xmlfeed.xml",
-   "region": "Welt",
-   "geprueft": true
+   "region": "Welt"
   },
   {
    "sym": "2269.HK",
@@ -525,9 +519,7 @@
   {
    "sym": "RELIANCE.NS",
    "name": "Reliance Industries",
-   "url": "https://www.ril.com/rss.xml",
-   "region": "Welt",
-   "geprueft": true
+   "region": "Welt"
   },
   {
    "sym": "SUNPHARMA.NS",
@@ -539,16 +531,12 @@
   {
    "sym": "TATAMOTORS.NS",
    "name": "Tata Motors",
-   "url": "https://www.tatamotors.com/feed/",
-   "region": "Welt",
-   "geprueft": true
+   "region": "Welt"
   },
   {
    "sym": "HEI.DE",
    "name": "Heidelberg Materials",
-   "url": "https://www.heidelbergmaterials.com/en/rss.xml",
-   "region": "Welt",
-   "geprueft": true
+   "region": "Welt"
   },
   {
    "sym": "HEN3.DE",
@@ -602,9 +590,7 @@
   {
    "sym": "HOLN.SW",
    "name": "Holcim",
-   "url": "https://www.holcim.com/rss.xml",
-   "region": "Welt",
-   "geprueft": true
+   "region": "Welt"
   },
   {
    "sym": "VOLV-B.ST",
@@ -630,23 +616,17 @@
   {
    "sym": "DGE.L",
    "name": "Diageo",
-   "url": "https://www.diageo.com/en/rss/financial-calendar",
-   "region": "Welt",
-   "geprueft": true
+   "region": "Welt"
   },
   {
    "sym": "REL.L",
    "name": "RELX",
-   "url": "https://www.relx.com/rss/financial-calendar",
-   "region": "Welt",
-   "geprueft": true
+   "region": "Welt"
   },
   {
    "sym": "AAL.L",
    "name": "Anglo American",
-   "url": "https://www.angloamerican.com/rss/investor-calendar",
-   "region": "Welt",
-   "geprueft": true
+   "region": "Welt"
   },
   {
    "sym": "BT-A.L",
@@ -658,9 +638,7 @@
   {
    "sym": "NOKIA.HE",
    "name": "Nokia",
-   "url": "https://www.nokia.com/partner-releases-rss/",
-   "region": "Welt",
-   "geprueft": true
+   "region": "Welt"
   }
  ]
 }
