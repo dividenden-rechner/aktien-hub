@@ -166,6 +166,8 @@ def main():
         meta, m, raw = front(path)
         if meta is None:
             continue
+        if meta.get("kein_logo", "").lower() in ("ja", "true", "1", "yes"):
+            continue
         sym = re.sub(r"[^A-Za-z0-9.\-]", "", meta.get("logo_symbol", ""))
         dom = re.sub(r"^(https?://)?(www\.)?|/.*$", "", meta.get("logo_domain", "").lower())
         if not re.fullmatch(r"[a-z0-9\-]+(\.[a-z0-9\-]+){1,3}", dom) or re.search(r"invalid|example|dummy|avoided", dom):

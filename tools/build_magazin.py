@@ -97,6 +97,8 @@ def read_post(path):
     meta["body_md"] = fix_kurz(m.group(2).strip())
     for k in ("title", "description"):
         if meta.get(k): meta[k] = round_big(meta[k])
+    if meta.get("kein_logo", "").lower() in ("ja", "true", "1", "yes"):   # Artikel ohne Firmenlogo (zum Beispiel Marktueberblick)
+        meta["logo_file"] = meta["logo_symbol"] = meta["logo_domain"] = ""; meta["kein_logo"] = True
     meta["draft"] = meta.get("draft", "").lower() in ("true", "ja", "1", "yes")
     meta["author"] = meta.get("author") or CFG["default_author"]
     if "redaktion" in meta["author"].lower(): meta["author"] = "Aus der Redaktion"
@@ -319,6 +321,7 @@ def kurs_chip(p):
 
 
 def logo_html(p):
+    if p.get("kein_logo"): return f'<h1>{esc(p["title"])}</h1>\n'
     """Titel mit Firmenlogo (FMP-Symbolbild, Rueckfall Favicon der Firmenwebsite, sonst ohne Logo)."""
     lf = p.get("logo_file", "")
     if lf and os.path.exists(lf) and os.path.basename(lf).startswith("combo-"):
@@ -516,6 +519,7 @@ def logo_is_light(path):
         return False
 
 def card_logo(x, pre):
+    if x.get("kein_logo"): return ""
     """Logo-Plakette links oben im Titelbild der Magazinkarten (immer vorhanden: Datei, sonst Buchstabe).
     Stil steht zusaetzlich inline, damit es auch mit einer alten, zwischengespeicherten site.css richtig sitzt."""
     base = "position:absolute;left:12px;top:12px;width:52px;height:52px;box-sizing:border-box;border-radius:12px;box-shadow:0 2px 10px rgba(0,0,0,.22);display:flex;align-items:center;justify-content:center;"
@@ -530,6 +534,7 @@ def card_logo(x, pre):
     return f'<span class="mclogo mcmono" style="{base}background:#2f9e5b;color:#fff;font-weight:800;font-size:24px">{esc(name[0].upper())}</span>'
 
 def mini_logo(x, pre):
+    if x.get("kein_logo"): return ""
     """Kleines Logo fuer die Archivliste (ohne Titelbild)."""
     lf = x.get("logo_file", "")
     if lf and os.path.exists(lf):
