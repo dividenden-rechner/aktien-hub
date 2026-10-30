@@ -16,8 +16,8 @@ CFG = json.load(open("tools/site.json", encoding="utf-8"))
 BASE = CFG["base"] if CFG["base"].endswith("/") else CFG["base"] + "/"
 SITE = CFG["name"]
 esc = lambda s: html.escape(str(s), quote=True)
-NAV = [("rechner", "", "Rechner"), ("aktien", "aktien/", "Aktien"), ("depot", "depot/", "Depot"), ("magazin", "magazin/", "News"),
-       ("news", "news/", "Unternehmensmeldungen"), ("earnings", "earnings/", "Earnings"), ("screener", "screener/", "Screener"),
+NAV = [("rechner", "", "Rechner"), ("aktien", "aktien/", "Aktien"), ("depot", "depot/", "Depot"), ("news", "news/", "News"),
+       ("meldungen", "unternehmensmeldungen/", "Unternehmensmeldungen"), ("earnings", "earnings/", "Earnings"), ("screener", "screener/", "Screener"),
        ("einfuehrung", "einfuehrung/", "Einführung"), ("grundlagen", "grundlagen/", "Grundlagen"),
        ("fortgeschrittene", "fortgeschrittene/", "Fortgeschrittene")]
 MONTHS = ["Januar", "Februar", "März", "April", "Mai", "Juni", "Juli", "August", "September", "Oktober", "November", "Dezember"]
@@ -114,7 +114,7 @@ def words(s): return len(re.sub(r"<[^>]+>", " ", s).split())
 
 def nav_html(depth, cur, with_mag=True):
     p = "../" * depth
-    return "".join(f'<a href="{p}{u}"{" aria-current=\"page\"" if k == cur else ""}>{n}</a>' for k, u, n in NAV if with_mag or k != "magazin")
+    return "".join(f'<a href="{p}{u}"{" aria-current=\"page\"" if k == cur else ""}>{n}</a>' for k, u, n in NAV if with_mag or k != "news")
 
 def footer_html(depth):
     p = "../" * depth
@@ -139,7 +139,7 @@ def head(depth, title, desc, url, og_type, image_url, extra=""):
 <meta name="description" content="{esc(desc)}">
 <meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large,max-video-preview:-1">
 <link rel="canonical" href="{BASE}{url}">
-<link rel="alternate" type="application/rss+xml" title="{esc(SITE)}: News" href="{p}magazin/feed.xml">
+<link rel="alternate" type="application/rss+xml" title="{esc(SITE)}: News" href="{p}news/feed.xml">
 <meta property="og:type" content="{og_type}">
 <meta property="og:locale" content="de_DE">
 <meta property="og:site_name" content="{esc(SITE)}">
@@ -211,7 +211,7 @@ def logo_html(p):
 
 def build_post(p, posts):
     slug = p["slug"]; depth = 2; pre = "../" * depth
-    url = f"magazin/{slug}/"
+    url = f"news/{slug}/"
     img = p.get("image")
     if not img:
         img = f"assets/magazin/{slug}.png"
@@ -232,7 +232,7 @@ def build_post(p, posts):
     ld = [
         {"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [
             {"@type": "ListItem", "position": 1, "name": "Start", "item": BASE},
-            {"@type": "ListItem", "position": 2, "name": "News", "item": BASE + "magazin/"},
+            {"@type": "ListItem", "position": 2, "name": "News", "item": BASE + "news/"},
             {"@type": "ListItem", "position": 3, "name": p["title"], "item": BASE + url}]},
         {"@context": "https://schema.org", "@type": "NewsArticle", "headline": p["title"][:110], "description": p["description"],
          "inLanguage": "de", "datePublished": iso(p["dt"]), "dateModified": iso(p["upd"]), "mainEntityOfPage": BASE + url,
@@ -244,9 +244,9 @@ def build_post(p, posts):
             {"@type": "Question", "name": q, "acceptedAnswer": {"@type": "Answer", "text": a}} for q, a in faq]})
     extra = '<meta property="article:published_time" content="%s">\n<meta property="article:modified_time" content="%s">\n<meta property="article:section" content="%s">\n' % (iso(p["dt"]), iso(p["upd"]), esc(p["category"]))
     extra += "".join('<script type="application/ld+json">%s</script>\n' % json.dumps(x, ensure_ascii=False) for x in ld)
-    o = head(depth, p["title"], p["description"], url, "article", img_url, extra) + nav_html(depth, "magazin") + "</nav></div></header>\n"
+    o = head(depth, p["title"], p["description"], url, "article", img_url, extra) + nav_html(depth, "news") + "</nav></div></header>\n"
     o += f'<script src="{pre}assets/navigation.js"></script>\n<script src="{pre}assets/logos.js"></script>\n<main class="wrap"><article class="post">\n'
-    o += f'<nav class="crumbs" aria-label="Brotkrumen"><a href="{pre}">Start</a> › <a href="{pre}magazin/">News</a> › <span aria-current="page">{esc(p["title"])}</span></nav>\n'
+    o += f'<nav class="crumbs" aria-label="Brotkrumen"><a href="{pre}">Start</a> › <a href="{pre}news/">News</a> › <span aria-current="page">{esc(p["title"])}</span></nav>\n'
     o += f'<p class="kicker">{esc(p["category"])}</p>\n{logo_html(p)}<p class="lead">{esc(p["description"])}</p>\n'
     upd = f' · Aktualisiert: <time datetime="{iso(p["upd"])}">{de_date(p["upd"])}</time>' if p["upd"].date() > p["dt"].date() else ""
     o += f'<p class="byline">Von <strong>{esc(author)}</strong> · <time datetime="{iso(p["dt"])}">{de_dt(p["dt"])}</time>{upd} · {mins} Min. Lesezeit</p>\n'
@@ -269,12 +269,12 @@ def build_post(p, posts):
     o += f'<aside class="authorbox"><strong>{esc(author)}</strong><p>{esc(bio)}</p><p>{KURZ_HINWEIS if kurz else "Artikel können mit Unterstützung von KI entstehen. Jeder Beitrag wird manuell geprüft und geht erst danach online."} <a href="{pre}ueber-uns/">Mehr über uns</a></p></aside>\n'
     others = [x for x in posts if x["slug"] != slug and x.get("typ") != "kurz"][:3]
     if others:
-        o += '<aside class="related"><h2>Weitere Artikel</h2><ul>\n' + "\n".join(f'<li><a href="{pre}magazin/{x["slug"]}/">{esc(x["title"])}</a></li>' for x in others) + "\n</ul></aside>\n"
+        o += '<aside class="related"><h2>Weitere Artikel</h2><ul>\n' + "\n".join(f'<li><a href="{pre}news/{x["slug"]}/">{esc(x["title"])}</a></li>' for x in others) + "\n</ul></aside>\n"
     o += (f'<aside class="note" style="background:#f0fdf4;border-left-color:#10b981"><strong>Passende Werkzeuge:</strong> Prüfe Aktien im <a href="{pre}aktien/">Aktien-Hub</a>, '
           f'filtere mit dem <a href="{pre}screener/">Screener</a> oder rechne mit den <a href="{pre}">Rechnern</a>.</aside>\n')
     o += HINT + "\n</article></main>\n" + footer_html(depth) + "\n</body>\n</html>\n"
-    os.makedirs(f"magazin/{slug}", exist_ok=True)
-    open(f"magazin/{slug}/index.html", "w", encoding="utf-8").write(o)
+    os.makedirs(f"news/{slug}", exist_ok=True)
+    open(f"news/{slug}/index.html", "w", encoding="utf-8").write(o)
     p["img"] = img; p["html"] = body; p["mins"] = mins; p["glossar_hits"] = [{k: h[k] for k in ("id", "url", "title")} for h in hits]
     return p
 
@@ -315,14 +315,14 @@ def mini_logo(x, pre):
     return f'<span class="arlogo mono">{esc(name[0].upper())}</span>'
 
 def build_index(posts):
-    depth = 1; pre = "../"; url = "magazin/"
+    depth = 1; pre = "../"; url = "news/"
     title = "News: Dividenden, Kennzahlen und Steuern erklärt"
     desc = "Analysen, Erklärstücke und Einordnungen zu Dividendenaktien, Kennzahlen, Quellensteuer und Depot, geschrieben für Privatanleger in Deutschland."
     ld = {"@context": "https://schema.org", "@type": "CollectionPage", "name": title, "description": desc, "url": BASE + url, "inLanguage": "de",
-          "hasPart": [{"@type": "Article", "headline": x["title"], "url": f'{BASE}magazin/{x["slug"]}/', "datePublished": iso(x["dt"])} for x in posts[:20]]}
+          "hasPart": [{"@type": "Article", "headline": x["title"], "url": f'{BASE}news/{x["slug"]}/', "datePublished": iso(x["dt"])} for x in posts[:20]]}
     extra = '<script type="application/ld+json">%s</script>\n' % json.dumps(ld, ensure_ascii=False)
     default_img = BASE + (posts[0]["img"] if posts else "assets/logo.png")
-    o = head(depth, title, desc, url, "website", default_img, extra) + nav_html(depth, "magazin") + "</nav></div></header>\n"
+    o = head(depth, title, desc, url, "website", default_img, extra) + nav_html(depth, "news") + "</nav></div></header>\n"
     o += f'<script src="{pre}assets/navigation.js"></script>\n<script src="{pre}assets/logos.js"></script>\n<main class="wrap">\n'
     o += f'<nav class="crumbs" aria-label="Brotkrumen"><a href="{pre}">Start</a> › <span aria-current="page">News</span></nav>\n<h1>News</h1>\n<p class="lead">{esc(desc)}</p>\n'
     # Aufmacher: Standard ist der neueste Artikel; mit "aufmacher: ja" im Kopfbereich wird ein juengerer Artikel (max. 3 Tage hinter dem neuesten) zum Hauptthema
@@ -361,13 +361,13 @@ def build_index(posts):
                   f'<strong>{esc(x["title"])}</strong></span></a></li>\n')
         o += '</ul>\n'
     o += '<p class="meta"><a href="feed.xml">RSS-Feed abonnieren</a></p>\n' + HINT + "\n</main>\n" + footer_html(depth) + "\n</body>\n</html>\n"
-    open("magazin/index.html", "w", encoding="utf-8").write(o)
+    open("news/index.html", "w", encoding="utf-8").write(o)
 
 def build_feed(posts):
     now = email.utils.format_datetime(datetime.datetime.now(datetime.timezone.utc))
     items = ""
     for x in posts[:30]:
-        link = f'{BASE}magazin/{x["slug"]}/'
+        link = f'{BASE}news/{x["slug"]}/'
         content = re.sub(r'(href|src)="(\.\./)+', lambda m: f'{m.group(1)}="{BASE}', x["html"])
         pub = email.utils.format_datetime(x["dt"].replace(tzinfo=ZoneInfo("Europe/Berlin")))
         items += (f'<item><title>{esc(x["title"])}</title><link>{link}</link><guid isPermaLink="true">{link}</guid><pubDate>{pub}</pubDate>'
@@ -375,24 +375,24 @@ def build_feed(posts):
                   f'<enclosure url="{BASE}{x["img"]}" type="image/{"jpeg" if x["img"].lower().endswith(("jpg","jpeg")) else "png"}" length="0"/>'
                   f'<content:encoded><![CDATA[{content}]]></content:encoded></item>\n')
     feed = (f'<?xml version="1.0" encoding="UTF-8"?>\n<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:dc="http://purl.org/dc/elements/1.1/">\n'
-            f'<channel><title>{esc(SITE)}: News</title><link>{BASE}magazin/</link><description>Dividenden, Kennzahlen und Steuern erklärt</description><language>de-DE</language>'
-            f'<lastBuildDate>{now}</lastBuildDate><atom:link href="{BASE}magazin/feed.xml" rel="self" type="application/rss+xml"/>\n{items}</channel></rss>\n')
-    open("magazin/feed.xml", "w", encoding="utf-8").write(feed)
+            f'<channel><title>{esc(SITE)}: News</title><link>{BASE}news/</link><description>Dividenden, Kennzahlen und Steuern erklärt</description><language>de-DE</language>'
+            f'<lastBuildDate>{now}</lastBuildDate><atom:link href="{BASE}news/feed.xml" rel="self" type="application/rss+xml"/>\n{items}</channel></rss>\n')
+    open("news/feed.xml", "w", encoding="utf-8").write(feed)
 
 def patch_sitemap(posts):
     s = open("sitemap.xml", encoding="utf-8").read()
     s = re.sub(r"<url><loc>%smagazin/[^<]*</loc>.*?</url>\n?" % re.escape(BASE), "", s)
-    add = f"<url><loc>{BASE}magazin/</loc><lastmod>{posts[0]['upd'].date()}</lastmod><priority>0.8</priority></url>\n" if posts else ""
+    add = f"<url><loc>{BASE}news/</loc><lastmod>{posts[0]['upd'].date()}</lastmod><priority>0.8</priority></url>\n" if posts else ""
     for x in posts:
-        add += f"<url><loc>{BASE}magazin/{x['slug']}/</loc><lastmod>{x['upd'].date()}</lastmod><priority>0.8</priority></url>\n"
+        add += f"<url><loc>{BASE}news/{x['slug']}/</loc><lastmod>{x['upd'].date()}</lastmod><priority>0.8</priority></url>\n"
     s = s.replace("</urlset>", add + "</urlset>")
     open("sitemap.xml", "w", encoding="utf-8").write(s)
 
 def patch_llms(posts):
     s = open("llms.txt", encoding="utf-8").read()
     s = re.sub(r"- \[[^\]]*\]\(%smagazin/[^)]*\)[^\n]*\n" % re.escape(BASE), "", s)
-    add = "".join(f"- [{x['title']}]({BASE}magazin/{x['slug']}/): {x['description']}\n" for x in posts)
-    if posts: add = f"- [News: Artikel zu Dividenden, Kennzahlen und Steuern]({BASE}magazin/)\n" + add
+    add = "".join(f"- [{x['title']}]({BASE}news/{x['slug']}/): {x['description']}\n" for x in posts)
+    if posts: add = f"- [News: Artikel zu Dividenden, Kennzahlen und Steuern]({BASE}news/)\n" + add
     s = s.replace("\n## Hinweis", "\n" + add + "\n## Hinweis", 1) if "\n## Hinweis" in s else s + "\n" + add
     open("llms.txt", "w", encoding="utf-8").write(s)
 
@@ -402,9 +402,9 @@ def patch_home(posts):
     if posts:
         block = ('<section class="home-mag" id="magazin"><h2>Neu in den News</h2><p class="sub">Quartalszahlen verständlich erklärt, mit Kurzfassung in drei Punkten.</p>\n<div class="cards magcards">\n')
         for x in posts[:3]:
-            block += (f'<a class="card" href="magazin/{x["slug"]}/"><div class="mcwrap" style="position:relative;margin:0"><img class="mcover" src="{x["img"]}" alt="" width="1200" height="675" loading="lazy">{card_logo(x, "")}</div>'
+            block += (f'<a class="card" href="news/{x["slug"]}/"><div class="mcwrap" style="position:relative;margin:0"><img class="mcover" src="{x["img"]}" alt="" width="1200" height="675" loading="lazy">{card_logo(x, "")}</div>'
                       f'<p class="kicker">{esc(x["category"])} · {de_dt_kurz(x["dt"])}</p><h3>{esc(x["title"])}</h3></a>\n')
-        block += '</div>\n<p class="more"><a href="magazin/">Alle Artikel in den News →</a></p></section>\n'
+        block += '</div>\n<p class="more"><a href="news/">Alle Artikel in den News →</a></p></section>\n'
     mk = "<!-- magazin-neu -->"
     if mk not in s:
         s = s.replace('<section class="home-more">', mk + "\n" + mk.replace("neu", "ende") + '\n<section class="home-more">', 1)
@@ -433,7 +433,7 @@ def write_mag_index(posts):
 
 def patch_news(posts):
     """Neue Magazin-Artikel ganz oben auf der News-Seite."""
-    p = "news/index.html"
+    p = "unternehmensmeldungen/index.html"
     if not os.path.exists(p): return
     s = open(p, encoding="utf-8").read()
     block = ""   # Magazin-Teaser stehen auf Startseite und Magazin, nicht auf der News-Seite
@@ -446,16 +446,16 @@ def patch_news(posts):
 def patch_nav_everywhere(has_posts):
     """Magazin-Link in Kopf- und Fußzeile aller Seiten ein- bzw. austragen."""
     for f in glob.glob("**/*.html", recursive=True):
-        if f.startswith(("magazin/", "node_modules/")) or f == "404.html": continue
+        if f.startswith(("news/", "magazin/", "node_modules/")) or f == "404.html": continue
         s = open(f, encoding="utf-8").read(); o = s
         m = re.search(r'<a href="((?:\.\./)*)screener/"[^>]*>Screener</a>', s)
         if not m: continue
         pre = m.group(1)
-        link = f'<a href="{pre}magazin/">News</a>'
+        link = f'<a href="{pre}news/">News</a>'
         s = s.replace(link, "")
         if has_posts:
-            if re.search(r'<a href="%snews/"[^>]*>Unternehmensmeldungen</a>' % re.escape(pre), s):
-                s = re.sub(r'(<a href="%snews/"[^>]*>Unternehmensmeldungen</a>)' % re.escape(pre), lambda mm: link + mm.group(1), s, count=1)
+            if re.search(r'<a href="%sunternehmensmeldungen/"[^>]*>Unternehmensmeldungen</a>' % re.escape(pre), s):
+                s = re.sub(r'(<a href="%sunternehmensmeldungen/"[^>]*>Unternehmensmeldungen</a>)' % re.escape(pre), lambda mm: link + mm.group(1), s, count=1)
             else:
                 s = re.sub(r'(<a href="%sscreener/"[^>]*>Screener</a>)' % re.escape(pre), lambda mm: mm.group(1) + link, s, count=1)
         if s != o: open(f, "w", encoding="utf-8").write(s)
@@ -486,6 +486,24 @@ def write_overview(allp):
     if s != open(path, encoding="utf-8").read():
         open(path, "w", encoding="utf-8").write(s)
 
+def write_redirects(posts):
+    """Alte Adressen /magazin/... -> /news/... (GitHub Pages kennt keine 301: Meta-Refresh mit Canonical, noindex)."""
+    import shutil
+    if os.path.isdir("magazin"): shutil.rmtree("magazin")
+    def stub(path, target, depth):
+        os.makedirs(os.path.dirname(path), exist_ok=True)
+        t = BASE + target
+        open(path, "w", encoding="utf-8").write(
+            f'<!DOCTYPE html>\n<html lang="de"><head><meta charset="utf-8"><title>Weitergeleitet</title><meta name="robots" content="noindex">'
+            f'<link rel="canonical" href="{t}"><meta http-equiv="refresh" content="0; url={"../" * depth}{target}">'
+            f'<script>location.replace("{"../" * depth}{target}"+location.search+location.hash)</script></head>'
+            f'<body><p>Diese Seite ist umgezogen: <a href="{"../" * depth}{target}">{t}</a></p></body></html>\n')
+    stub("magazin/index.html", "news/", 1)
+    for x in posts:
+        stub(f"magazin/{x['slug']}/index.html", f"news/{x['slug']}/", 2)
+    if os.path.exists("news/feed.xml"):
+        shutil.copy("news/feed.xml", "magazin/feed.xml")
+
 def main():
     build_wissen.run(sys.modules[__name__])        # Wissensartikel zuerst: Magazin-Verlinkung und Rueck-Links brauchen die fertigen Seiten
     posts, allp = [], []
@@ -496,19 +514,20 @@ def main():
         if p["dt"] > datetime.datetime.now() + datetime.timedelta(days=1): print("Zukunftsdatum übersprungen:", f); continue
         posts.append(p)
     posts.sort(key=lambda x: (x["dt"], x["upd"], x["slug"]), reverse=True)
-    for x in glob.glob("magazin/*/"):
+    for x in glob.glob("news/*/"):
         if os.path.basename(os.path.normpath(x)) not in [p["slug"] for p in posts]:
             import shutil; shutil.rmtree(x)
     posts = [build_post(p, posts) for p in posts]
     if posts:
         build_index(posts); build_feed(posts)
     else:
-        for f in ("magazin/index.html", "magazin/feed.xml"):
+        for f in ("news/index.html", "news/feed.xml"):
             if os.path.exists(f): os.remove(f)
     longp = [x for x in posts if x.get("typ") != "kurz"]
     glossar.patch_erklaerseiten(longp)
     patch_sitemap(posts); patch_llms(posts); patch_home(longp); patch_news(posts); write_mag_index(posts); patch_nav_everywhere(bool(posts))
     write_overview(allp)
+    write_redirects(posts)
     print(f"{len(posts)} Artikel gebaut")
 
 if __name__ == "__main__":

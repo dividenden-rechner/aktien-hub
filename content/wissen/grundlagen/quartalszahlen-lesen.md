@@ -58,7 +58,7 @@ An der Börse zählt oft nicht, ob die Zahlen gut sind, sondern ob sie besser si
 ## Häufige Fragen
 
 ### Wo finde ich die Zahlen?
-Auf der Investor-Relations-Seite des Unternehmens, in der Pressemeldung und im Bericht bei der Börsenaufsicht. In den Artikeln in den [News](/magazin/) fassen wir die Berichte zusammen und nennen die Quelle.
+Auf der Investor-Relations-Seite des Unternehmens, in der Pressemeldung und im Bericht bei der Börsenaufsicht. In den Artikeln in den [News](/news/) fassen wir die Berichte zusammen und nennen die Quelle.
 
 ### Was ist ein Geschäftsjahr, das nicht dem Kalenderjahr entspricht?
 Manche Unternehmen enden ihr Jahr nicht im Dezember. Dann heißt das erste Quartal vielleicht „Q1 2027“, obwohl es 2026 endet. Der Bericht nennt den Zeitraum.

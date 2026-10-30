@@ -137,7 +137,7 @@ def patch_erklaerseiten(posts):
         if arts:
             pre = "../" * (url.strip("/").count("/") + 1)
             blk = ('<!-- mag-artikel -->\n<aside class="related glossar"><h2>Aktuell in den News</h2><ul>\n' +
-                   "\n".join(f'<li><a href="{pre}magazin/{x["slug"]}/">{esc(x["title"])}</a></li>' for x in arts) + '\n</ul></aside>\n<!-- /mag-artikel -->\n')
+                   "\n".join(f'<li><a href="{pre}news/{x["slug"]}/">{esc(x["title"])}</a></li>' for x in arts) + '\n</ul></aside>\n<!-- /mag-artikel -->\n')
             m = re.search(r'<p class="note"><strong>Hinweis:', s)
             if not m: continue
             s = s[:m.start()] + blk + s[m.start():]
