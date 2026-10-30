@@ -421,6 +421,33 @@ def has_recent_article(sym, days=3):
     return False
 
 
+_ZAHLEN = {"Quartalszahlen", "Zahlen", "Jahresbericht", "Halbjahreszahlen", "Ausblick"}
+
+
+def cat_group(cat):
+    return "zahlen" if cat in _ZAHLEN else cat
+
+
+def duplicate_of(sym, category, days=3):
+    """Dateiname eines Artikels (lang, kurz oder Entwurf) zur selben Firma und Themengruppe in den letzten Tagen, sonst ''.
+    Verhindert mehrere Meldungen zum selben Ereignis (zum Beispiel 6-K, Anlagen und Feed-Eintraege zum selben Quartalsbericht)."""
+    cut = datetime.now() - timedelta(days=days)
+    for f in os.listdir(OUT_DIR):
+        if not f.endswith(".md") or f.startswith(("_", "README")):
+            continue
+        try:
+            t = open(os.path.join(OUT_DIR, f), encoding="utf-8").read(3000)
+        except Exception:
+            continue
+        if not re.search(rf"^logo_symbol:\s*\"?{re.escape(sym)}\"?\s*$", t, re.M):
+            continue
+        mc = re.search(r"^category:\s*\"?([^\"\n]+?)\"?\s*$", t, re.M)
+        md = re.search(r"^date:\s*(\d{4}-\d{2}-\d{2})", t, re.M)
+        if mc and md and cat_group(mc.group(1).strip()) == cat_group(category) and datetime.strptime(md.group(1), "%Y-%m-%d") >= cut:
+            return f
+    return ""
+
+
 def long_article(c, state):
     """Bei Quartalszahlen einer Firma aus der Beobachtungsliste: IR-Agent starten (langer Artikel als Entwurf)."""
     import subprocess
@@ -499,6 +526,9 @@ def main():
             log("  nicht relevant:", (out or {}).get("reason", "")[:100]); continue
         if not (out.get("title") and out.get("body_markdown") and out.get("description")):
             log("  Antwort unvollstaendig"); continue
+        dup = duplicate_of(c["sym"], out.get("category", ""))
+        if dup:
+            log("  schon behandelt in:", dup); continue
         bad = unverified_numbers(out["body_markdown"] + " " + out["title"] + " " + out["description"], text)
         bg, srcs = "", []
         ctx = None
