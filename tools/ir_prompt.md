@@ -22,7 +22,11 @@ figures: Wähle null bis fünf Stellen im PDF, die als Bildausschnitt im Artikel
 
 report_type: Bestimme die Art des Dokuments und wähle genau einen Wert aus der Liste: Quartalszahlen (Ergebnis eines Quartals), Halbjahreszahlen, Jahresbericht (Geschäftsjahresergebnis oder Jahresbericht, auch das vierte Quartal mit Jahreszahlen), Dividendenmeldung (Dividendenerhöhung, -kürzung oder -ankündigung als Hauptthema), Aktiensplit, Fusion & Übernahme, Börsengang, Insiderkauf (Zusammenstellung von Insiderkäufen), Kapitalmaßnahme (Kapitalerhöhung, Aktienrückkauf, Anleihe), Management (Wechsel im Vorstand oder Aufsichtsrat), Sonstige Meldung. period: Q2 2026, H1 2026 oder GJ 2025; bei Ereignismeldungen leer.
 
-Nur bei Ergebnisberichten (Quartals-, Halbjahres-, Jahreszahlen) füllst du kpis, chart, cashflow, balance, period_end und prior_period_end. Bei allen anderen Dokumenten lässt du diese Felder weg. Auch figures nur dort, wo eine Tabelle oder Grafik wirklich etwas zeigt.
+cashflow zusätzlich: interest_paid (gezahlte Zinsen im selben Zeitraum, positiv) und prior_interest_paid, falls in der Kapitalflussrechnung oder den Ergänzungsangaben ausgewiesen.
+
+capital: Nur was das Dokument ausdrücklich nennt, Zahlen exakt wie dort: Dividende je Aktie (dividend_per_share, prior_dividend_per_share) und ihre Veränderung in Prozent (dividend_change_pct), Schuldenabbau (debt_reduction mit Betrag, debt_reduction_note kurz), Aktienrückkaufprogramm (buyback_amount, buyback_period), Zinsaufwand der Periode (interest_expense, prior_interest_expense), dazu unit. Nichts schätzen oder berechnen.
+
+Nur bei Ergebnisberichten (Quartals-, Halbjahres-, Jahreszahlen) füllst du kpis, chart, cashflow, balance, capital, period_end und prior_period_end. Bei allen anderen Dokumenten lässt du diese Felder weg. Auch figures nur dort, wo eine Tabelle oder Grafik wirklich etwas zeigt.
 
 balance: Aus der Bilanz: liquide Mittel (cash), kurzfristige Finanzschulden inklusive des kurzfristigen Teils langfristiger Schulden (short_term_debt) und langfristige Finanzschulden (long_term_debt) zum Berichtsstichtag, dazu dieselben drei Werte zum Vergleichsstichtag (prior_*; meist das letzte Geschäftsjahresende, bei Vergleich mit dem Vorjahresquartal dieses) und prior_label (zum Beispiel "31. Dezember 2025"). Zahlen exakt wie im Bericht, positiv, in der Berichtseinheit. Keine Leasingverbindlichkeiten, nur Schulden aus Anleihen, Krediten und Commercial Paper. Lass balance weg, wenn die Bilanz fehlt.
 

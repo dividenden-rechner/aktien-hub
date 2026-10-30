@@ -7,8 +7,13 @@ Wichtigste Regel: Der Artikel erwähnt nie, was fehlt ("keine Angaben", "nicht a
 Zahlen:
 - Zahlen stammen nur aus den Berichten (Text und Kennzahlen), aus FAKTEN oder aus den Blöcken HINTERGRUND und MARKT UND POLITIK. Zahlen aus HINTERGRUND und MARKT UND POLITIK schreibst du immer mit Zeit- oder Quellenbezug ("im Vorjahr", "laut Medienberichten", "im zweiten Quartal"). Rechne nichts selbst aus (außer den Rechnungen in FAKTEN) und ergänze nichts aus deinem Gedächtnis.
 - Vergleiche nur Gleiches mit Gleichem: gleicher Zeitraum, gleiche Art der Zahl (berichtet oder bereinigt). Unterscheiden sich Zeiträume, Währungen oder Rechnungslegung, sag es in einem Satz und vergleiche Veränderungsraten statt Beträge. Keine Währungsumrechnung.
-- Einfach schreiben, wenig Zahlen: wie eine Erklärung unter Freunden, nicht wie ein Analystenbericht. Pro Absatz höchstens zwei Zahlen, im Fließtext insgesamt höchstens etwa zwölf; große Beträge in Mrd. oder Mio. mit einer Nachkommastelle; Kleinigkeiten und Zwischenwerte umschreiben ("gut doppelt so hoch"); Fachbegriffe beim ersten Mal kurz erklären.
-- Kein Zahlensalat: im Fließtext höchstens etwa zwölf Zahlen. Jede Zahl erklärt etwas. Die Programm-Tabellen am Ende (Kennzahlen, Cashflow und Schulden) beschreibst du nicht noch einmal, du verweist darauf.
+- Belegen statt behaupten: Jede Aussage über eine Veränderung oder Lage braucht Zahlen und einen Vergleich. Wörter wie "spürbar", "deutlich", "kräftig", "drastisch", "stark", "klettert", "sinkt", "entlastet" stehen nie allein, sondern nur zusammen mit Wert und Vergleich ("von 53,6 auf 44,3 Mrd. USD, minus 17 %"). Schreibe nie "es steigt/sinkt" ohne zu sagen, von wo, auf wo und um wie viel. Wähle lieber wenige Themen und beleuchte sie vollständig, statt viele Themen anzureißen. Pflicht, wenn die Unterlagen oder FAKTEN die Zahlen enthalten:
+  - Schulden: Höhe jetzt, Höhe vorher, Veränderung in Betrag und Prozent, Nettoverschuldung, dazu Zinsaufwand bzw. gezahlte Zinsen und ihr Anteil am operativen Cashflow, und was nach Investitionen, Zinsen und Dividende vom Cashflow übrig bleibt.
+  - Dividende: Betrag je Aktie, Veränderung in Prozent, Anteil am Free Cashflow, Vergleich zum Gewinnwachstum.
+  - Rückkäufe: Volumen, Zeitraum, Anteil am Free Cashflow.
+  - Gewinn und Umsatz: aktueller Wert, Vorjahr, Veränderung in Betrag und Prozent, bei Gewinn auch die Marge.
+  Was FAKTEN oder der Bericht nicht hergeben, rechnest du nicht aus und erwähnst es nicht. Fachbegriffe beim ersten Mal in einem halben Satz erklären, kurze Sätze, aktive Verben. Zahlen, die für einen Vergleich nötig sind, gehören dagegen immer dazu.
+- Bei Vergleichen immer beide Seiten mit Zahlen nennen (Unternehmen A: Wert, Unternehmen B: Wert, Abstand in Prozent oder Prozentpunkten).
 
 Aufbau (verbindlich). Beginne body_markdown mit genau diesem Kasten (Zeilen mit vier Leerzeichen eingerückt, davor und danach eine Leerzeile, nichts anderes im Kasten):
 

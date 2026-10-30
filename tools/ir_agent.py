@@ -65,7 +65,13 @@ SCHEMA = {   # Aufruf 1: Zahlen aus dem Bericht
             "properties": {"period_label": {"type": "STRING", "description": "z. B. Halbjahr 2026 oder 6 Monate"}, "unit": {"type": "STRING", "description": "z. B. Mio. USD"},
                            "operating_cash_flow": NUM, "capex": NUM, "dividends_paid": NUM, "share_repurchases": NUM,
                            "prior_dividends_paid": NUM, "prior_operating_cash_flow": NUM, "prior_capex": NUM, "prior_share_repurchases": NUM,
+                           "interest_paid": NUM, "prior_interest_paid": NUM,
                            "page": {"type": "INTEGER"}}},
+        "capital": {"type": "OBJECT", "description": "Kapitalverwendung laut Bericht, Praesentation oder Mitteilung, Zahlen exakt wie dort",
+            "properties": {"unit": {"type": "STRING"}, "dividend_per_share": NUM, "prior_dividend_per_share": NUM, "dividend_change_pct": NUM,
+                           "debt_reduction": NUM, "debt_reduction_note": {"type": "STRING"},
+                           "buyback_amount": NUM, "buyback_period": {"type": "STRING", "description": "z. B. 2027 oder naechste 12 Monate"},
+                           "interest_expense": NUM, "prior_interest_expense": NUM}},
         "balance": {"type": "OBJECT", "description": "Aus der Bilanz: Schulden und liquide Mittel am Berichtsstichtag und am Vergleichsstichtag (Vorjahresende oder Vorjahresquartal), positive Zahlen in der Berichtseinheit",
             "properties": {"unit": {"type": "STRING"}, "cash": NUM, "short_term_debt": NUM, "long_term_debt": NUM,
                            "prior_cash": NUM, "prior_short_term_debt": NUM, "prior_long_term_debt": NUM,
@@ -79,11 +85,13 @@ ARTICLE_SCHEMA = {   # Aufruf 2: Artikeltext
 }
 
 
-CORE_SCHEMA = {"type": "OBJECT", "properties": {k: SCHEMA["properties"][k] for k in ("kpis", "cashflow", "balance", "period_end", "prior_period_end")}}
+CORE_SCHEMA = {"type": "OBJECT", "properties": {k: SCHEMA["properties"][k] for k in ("kpis", "cashflow", "balance", "capital", "period_end", "prior_period_end")}}
 CORE_PROMPT = """Lies aus dem angehaengten Ergebnisdokument nur diese Pflichtangaben, exakt wie im Dokument (Zahlen in der Berichtseinheit, keine Berechnungen):
 - kpis: bis zu 6 Kennzahlen in dieser Reihenfolge, soweit im Dokument vorhanden: Umsatz, operatives Ergebnis bzw. operatives Kerngeschaeft, Nettogewinn, Gewinn je Aktie (bereinigt, wenn ausgewiesen), Free Cashflow oder operativer Cashflow, Dividende je Aktie. value auf Deutsch (Komma, Mrd. USD), change = Veraenderung zum Vorjahr nur wenn genannt, page = Seite.
 - cashflow: Kapitalflussrechnung, laengster ausgewiesener Zeitraum seit Jahresbeginn: operating_cash_flow, capex (positiv), dividends_paid (positiv), share_repurchases (positiv) und dieselben Werte des Vorjahreszeitraums (prior_*), dazu unit und period_label.
+- cashflow zusaetzlich: interest_paid (gezahlte Zinsen im selben Zeitraum, positiv) und prior_interest_paid, falls ausgewiesen.
 - balance: liquide Mittel, kurzfristige und langfristige Finanzschulden (ohne Leasing) am Stichtag und am Vergleichsstichtag (prior_*), unit, prior_label.
+- capital: Dividende je Aktie (jetzt und vorher) und ihre Veraenderung in Prozent, genannter Schuldenabbau (Betrag), Aktienrueckkaufprogramm (Betrag, Zeitraum), Zinsaufwand der Periode (interest_expense, prior_interest_expense), nur wenn das Dokument es ausdruecklich nennt.
 Lass nur weg, was im Dokument wirklich nicht steht."""
 
 EARNINGS = ("Quartalszahlen", "Halbjahreszahlen", "Jahresbericht")
@@ -379,7 +387,7 @@ def check_numbers(out, text):
                     bad.append(f"{k['label']} ({field}: {v})")
                     break
     cf = out.get("cashflow") or {}
-    for f in ("operating_cash_flow", "capex", "dividends_paid", "share_repurchases", "prior_dividends_paid"):
+    for f in ("operating_cash_flow", "capex", "dividends_paid", "share_repurchases", "prior_dividends_paid", "interest_paid"):
         v = cf.get(f)
         if v:
             cands = {f"{v:,.0f}", f"{v:,.0f}".replace(",", "."), f"{v:,.0f}".replace(",", " "), "%g" % v}
@@ -877,7 +885,36 @@ def derive_report(out):
             tot = div + cf["share_repurchases"]
             facts.append(f"Dividenden plus Aktienrueckkaeufe ({de(cf['share_repurchases'],0)} {u}) in Prozent des Free Cashflows: {de(tot / fcf * 100, 0)} %.")
             rows.append((f"Dividenden + Rückkäufe / Free Cashflow ({per})", f"{de(tot / fcf * 100, 0)} %", f"({de(div,0)} + {de(cf['share_repurchases'],0)}) ÷ {de(fcf,0)} Mio."))
+    ip = cf.get("interest_paid")
+    if ip:
+        facts.append(f"Gezahlte Zinsen {per}: {de(ip,0)} {u}" + (f" (Vorjahreszeitraum: {de(cf['prior_interest_paid'],0)} {u})" if cf.get("prior_interest_paid") else "") +
+                     f"; das sind {de(ip / cfo * 100, 0)} % des operativen Cashflows.")
+        rest = fcf - div - (cf.get("share_repurchases") or 0)
+        facts.append(f"Rechnerisch bleiben {per} nach Investitionen ({de(capex,0)}), Dividenden ({de(div,0)})" + (f" und Rueckkaeufen ({de(cf['share_repurchases'],0)})" if cf.get("share_repurchases") else "") +
+                     f" vom operativen Cashflow {de(cfo,0)} noch {de(rest,0)} {u} uebrig (Zinsen sind im operativen Cashflow bereits enthalten, wenn der Bericht sie dort verbucht).")
+        rows.append((f"Gezahlte Zinsen / operativer Cashflow ({per})", f"{de(ip / cfo * 100, 0)} %", f"{de(ip,0)} ÷ {de(cfo,0)} Mio."))
     return facts, rows
+
+
+def derive_capital(out):
+    """Faktenzeilen zur Kapitalverwendung (Dividende, Schuldenabbau, Rueckkauf, Zinsen) nur aus dem, was das Dokument ausdruecklich nennt."""
+    c = out.get("capital") or {}
+    u = c.get("unit") or ""
+    facts = []
+    if c.get("dividend_per_share") is not None:
+        t = f"Dividende je Aktie: {de(c['dividend_per_share'], 2)}"
+        if c.get("prior_dividend_per_share"):
+            t += f" (vorher {de(c['prior_dividend_per_share'], 2)})"
+        if c.get("dividend_change_pct") is not None:
+            t += f", Veraenderung {'+' if c['dividend_change_pct'] >= 0 else '−'}{de(abs(c['dividend_change_pct']), 1)} %"
+        facts.append(t + ".")
+    if c.get("debt_reduction"):
+        facts.append(f"Schuldenabbau laut Dokument: {de(c['debt_reduction'], 1)} {u}" + (f" ({c['debt_reduction_note']})" if c.get("debt_reduction_note") else "") + ".")
+    if c.get("buyback_amount"):
+        facts.append(f"Aktienrueckkauf laut Dokument: {de(c['buyback_amount'], 1)} {u}" + (f", Zeitraum {c['buyback_period']}" if c.get("buyback_period") else "") + ".")
+    if c.get("interest_expense"):
+        facts.append(f"Zinsaufwand der Periode: {de(c['interest_expense'], 0)} {u}" + (f" (Vorjahr {de(c['prior_interest_expense'], 0)} {u})" if c.get("prior_interest_expense") else "") + ".")
+    return facts
 
 
 def derive_balance(out):
@@ -1369,7 +1406,7 @@ def main():
             print("::notice title=IR-Agent::Kennzahlen, Cashflow oder Bilanz fehlten, gezielte Nachfrage.")
             try:
                 core = _generate([doc_part(src), {"text": CORE_PROMPT}], CORE_SCHEMA, api_key())
-                for k in ("kpis", "cashflow", "balance", "period_end", "prior_period_end"):
+                for k in ("kpis", "cashflow", "balance", "capital", "period_end", "prior_period_end"):
                     if core.get(k) and not out.get(k):
                         out[k] = core[k]
             except SystemExit:
@@ -1386,7 +1423,7 @@ def main():
         facts, calc_rows = derive_report(out)
         have_rep = bool(calc_rows)
         bf, br = derive_balance(out)
-        facts += bf + (src.get("extra_facts") or []); calc_rows += br
+        facts += bf + derive_capital(out) + (src.get("extra_facts") or []); calc_rows += br
         sym = (a.ticker or out.get("ticker") or "").upper()
         ff, fr = fmp_metrics(sym, have_rep) if re.match(r"^[A-Z0-9.\-]{1,10}$", sym) else ([], [])
         if ff:
@@ -1399,7 +1436,7 @@ def main():
             else:
                 print("Zitat nicht im Berichtstext gefunden, wird weggelassen.")
                 out["ceo_quote"] = None
-        summary = json.dumps({k: out.get(k) for k in ("company", "ticker", "report_type", "industry", "period", "report_date", "period_end", "prior_period_end", "kpis", "chart", "cashflow", "balance", "details")}, ensure_ascii=False)
+        summary = json.dumps({k: out.get(k) for k in ("company", "ticker", "report_type", "industry", "period", "report_date", "period_end", "prior_period_end", "kpis", "chart", "cashflow", "balance", "capital", "details")}, ensure_ascii=False)
         fakten = "\n".join("- " + f for f in facts) if facts else "- (keine berechneten Kennzahlen verfuegbar)"
         prompt2 = read_prompt("ir_article_prompt.md") + f"\n\nART DES DOKUMENTS: {out.get('report_type')}" + "\n\nFAKTEN (vom Programm berechnet, Zahlen exakt so uebernehmen):\n" + fakten + "\n\nEXTRAHIERTE KENNZAHLEN (JSON):\n" + summary
         bg_text, bg_src = research(out, api_key())
