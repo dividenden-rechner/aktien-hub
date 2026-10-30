@@ -343,13 +343,13 @@ TERMINE = os.path.join(ia.ROOT, "data", "termine.json")
 
 def save_termine(c, termine, text, url):
     """Termine aus der Meldung in data/termine.json (Earnings-Seite). Nur, wenn Jahr, Tag und Betrag im Original stehen."""
-    nums = set(re.findall(r"\d+", text)); allnums = set(_nums(text))
+    nums = {str(int(x)) for x in re.findall(r"\d+", text)}; allnums = set(_nums(text))
     d = load_json(TERMINE, {"termine": []})
     have = {(t["sym"], t["art"], t["datum"]) for t in d["termine"]}
     new = 0
     for t in termine:
         m = re.fullmatch(r"(\d{4})-(\d{2})-(\d{2})", (t.get("datum") or "").strip())
-        if not m or m.group(1) not in nums or str(int(m.group(3))) not in nums:
+        if not m or str(int(m.group(1))) not in nums or str(int(m.group(3))) not in nums:
             continue
         b = (t.get("betrag") or "").strip()
         if b and re.sub(r"[.,]", "", b) not in allnums and re.sub(r"[.,]", "", b).rstrip("0") not in allnums:
