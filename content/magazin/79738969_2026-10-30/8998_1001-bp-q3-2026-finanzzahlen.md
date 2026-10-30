@@ -8,7 +8,7 @@ category: Quartalszahlen
 logo_name: "bp"
 logo_symbol: BP
 logo_domain: bp.com
-image: https://images.unsplash.com/photo-1578356058390-f58c575337a2?ixid=M3wxMTE3OTgzfDB8MXxzZWFyY2h8NXx8b2lsJTIwcGxhdGZvcm18ZW58MHx8fHwxNzkzMzU4MzYzfDA&ixlib=rb-4.1.0&w=1600&h=900&fit=crop&crop=entropy&q=80&fm=jpg
+image: https://images.unsplash.com/photo-1578356058390-f58c575337a2?ixid=M3wxMTE3OTgzfDB8MXxzZWFyY2h8NHx8b2lsJTIwcGxhdGZvcm18ZW58MHx8fHwxNzkzMzk0MjE0fDA&ixlib=rb-4.1.0&w=1600&h=900&fit=crop&crop=entropy&q=80&fm=jpg
 image_alt: "Foto zu bp: oil rig"
 image_credit: "Foto: Zach Theo auf Unsplash"
 image_source: https://unsplash.com/photos/oil-rig-guADzpF9pDI?utm_source=dividenden-rechner&utm_medium=referral

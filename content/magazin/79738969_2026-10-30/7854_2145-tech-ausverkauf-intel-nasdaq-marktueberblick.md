@@ -6,6 +6,11 @@ author: "Redaktions-Team Dividenden-Rechner.de"
 author_bio: "Das Redaktions-Team von Dividenden-Rechner.de schreibt über Dividendenaktien, Kennzahlen und Steuerthemen für Privatanleger. Die Rechner und Auswertungen auf der Seite entstehen im eigenen Haus."
 category: Analyse
 kein_logo: ja
+image: assets/magazin/tech-ausverkauf-intel-nasdaq-marktueberblick-foto.jpg
+image_alt: "Foto zu Tech-Ausverkauf:: Stock-exchange-trading-floor.jpg"
+image_credit: "Foto: S.aderogba / Wikimedia Commons, CC BY-SA 4.0"
+image_source: https://commons.wikimedia.org/wiki/File:Stock-exchange-trading-floor.jpg
+image_artist_url: 
 ---
 !!! kurz "Kurz gesagt"
     **Nasdaq 100:** −3,5 % auf 28.370 Punkte
