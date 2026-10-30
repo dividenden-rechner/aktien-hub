@@ -47,6 +47,8 @@ SCHEMA = {
     "properties": {
         "relevant": {"type": "BOOLEAN", "description": "Ist die Meldung fuer Privatanleger in Dividendenwerte relevant?"},
         "reason": {"type": "STRING", "description": "Kurze Begruendung, warum relevant oder nicht"},
+        "winkel_kandidaten": {"type": "ARRAY", "items": {"type": "STRING"}, "description": "Vier bis sechs moegliche Nachrichtenwinkel dieser Meldung, jeweils mit der konkreten Zahl aus dem Text (nicht nur Umsatz)"},
+        "winkel": {"type": "STRING", "description": "Der Winkel mit dem hoechsten Nachrichtenwert fuer Anleger, den die Ueberschrift aufgreift"},
         "category": {"type": "STRING", "enum": CATEGORIES},
         "title": {"type": "STRING", "description": "Sachlicher deutscher Titel, hoechstens 90 Zeichen, Kernzahl nennen"},
         "description": {"type": "STRING", "description": "Ein bis zwei Saetze, hoechstens 200 Zeichen"},
@@ -97,6 +99,11 @@ Wenn relevant, schreibe:
 - Erster Satz: Was ist passiert? Danach die wichtigsten Zahlen, zuletzt ein Satz mit dem naechsten Termin (zum Beispiel Zahltag), falls genannt.
 - Ausschliesslich deutsche Sprache und deutsche Zahlenschreibweise (Dezimalkomma, Punkt als Tausendertrenner, 'US-Dollar' statt '$', 'Millionen' statt 'million'); keine englischen Fachbegriffe wie 'underlying profit', sondern 'zugrunde liegender Gewinn'.
 - Betraege ab 1.000 Millionen immer in Milliarden (Mrd.) mit hoechstens zwei Nachkommastellen: 'rund 1,85 Mrd. Euro' statt '1.857 Mio. Euro' (Titel und Text).
+- Vorgehen fuer die Ueberschrift: Lies besonders die erste Seite, dort stehen die Kernzahlen. Sammle zuerst vier bis sechs moegliche Nachrichtenwinkel (winkel_kandidaten)
+  aus den Daten: Gewinn oder Gewinn je Aktie gegenueber Vorjahr oder Erwartung, Marge, operativer Gewinn, Free Cashflow, Prognose angehoben oder gesenkt oder bestaetigt,
+  Dividende oder Rueckkauf, Schulden, ein starkes oder schwaches Segment oder eine Region, Sonderposten oder Abschreibung, Kosten, Auftragsbestand, Mengen gegen Preise,
+  Aussagen des Managements zu Zukunft oder Risiken. Waehle dann den Winkel mit dem hoechsten Nachrichtenwert fuer Anleger (winkel) und baue die Ueberschrift darauf.
+  Der Umsatz ist nur dann Aufhaenger, wenn er wirklich die Nachricht ist (zum Beispiel Rekord, deutlicher Einbruch, grosse Abweichung). Sonst kommt er hoechstens im Text vor.
 - Titel abwechslungsreich: Nenne die eigentliche Nachricht dieser Meldung, nicht immer den Umsatz. Waehle, was bei diesem Unternehmen heute auffaellt
   (Gewinn, Marge, Prognose, Dividende, Rueckkauf, Schulden, ein Segment, Rekord oder Einbruch, Abweichung zum Vorjahr). Die Formel 'X steigert Umsatz auf Y'
   ist verboten, ebenso 'legt Zahlen vor'. Variiere Verben und Satzbau (zum Beispiel 'verdient', 'wächst', 'rutscht ins Minus', 'hebt Prognose', 'Gewinn je Aktie',
@@ -253,13 +260,30 @@ def recent_titles(n=25):
     return "\n".join(out)
 
 
+BORING = re.compile(r"(steigert|erhöht|erhoeht|verbessert|steigt|wächst|waechst|legt zu|sinkt|senkt|verringert)\s+(\w+\s+){0,3}(Quartals|Jahres|Halbjahres|Netto)?[-]?(Umsatz|Erlös|Erloes)|Umsatz\s+(steigt|wächst|waechst|sinkt|legt|klettert|fällt|faellt)|\blegt Zahlen vor\b|veröffentlicht (Finanz)?(ergebnisse|zahlen)|Quartalszahlen Q\d", re.I)
+
+
 def generate(c, text):
     mock = os.environ.get("KURZ_MOCK")
     if mock:
         d = json.load(open(mock, encoding="utf-8"))
         return d.get(c["key"]) or d.get("*")
     prompt = f"{PROMPT}\n\nJUENGSTE UEBERSCHRIFTEN (nicht nachahmen):\n{recent_titles()}\n\nUNTERNEHMEN: {c['name']} ({c['sym']})\n\nPRESSEMITTEILUNG:\n{text[:60000]}"
-    return ia._generate([{"text": prompt}], SCHEMA, ia.api_key())
+    out = ia._generate([{"text": prompt}], SCHEMA, ia.api_key())
+    if out and out.get("relevant") and BORING.search(out.get("title", "")):
+        print("  Ueberschrift zu uebliche Formel, zweiter Versuch:", out["title"])
+        hint = (f"\n\nDEIN ERSTER TITEL WAR ZU UEBLICH: '{out['title']}'. Winkel zur Auswahl waren: {'; '.join(out.get('winkel_kandidaten') or [])}. "
+                "Schreibe die Ueberschrift neu auf Basis eines anderen Winkels als dem Umsatz (zum Beispiel Gewinn, Marge, Prognose, Segment, Dividende, Rueckkauf), "
+                "ohne 'Umsatz steigt', 'steigert Umsatz' oder 'legt Zahlen vor'. Titel und Beschreibung entsprechend anpassen, Text nur wenn noetig.")
+        try:
+            out2 = ia._generate([{"text": prompt + hint}], SCHEMA, ia.api_key())
+            if out2 and out2.get("title") and not BORING.search(out2["title"]):
+                return out2
+            if out2 and out2.get("title"):
+                out["title"] = out2["title"]; out["description"] = out2.get("description") or out["description"]
+        except SystemExit:
+            pass
+    return out
 
 
 def background(c, text):

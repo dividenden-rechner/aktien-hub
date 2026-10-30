@@ -1,0 +1,35 @@
+name: Ueberschriften auffrischen
+on:
+  push:
+    branches: [main]
+    paths:
+      - "tools/retitle.trigger"
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: magazin
+  cancel-in-progress: false
+jobs:
+  retitle:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install markdown pillow matplotlib
+      - name: Ueberschriften neu schreiben
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+        run: python3 tools/retitle.py --max 40
+      - name: Bauen und speichern
+        run: |
+          python3 tools/build_magazin.py
+          git config user.name "magazin-bot"
+          git config user.email "actions@github.com"
+          git add -A
+          git diff --cached --quiet || git commit -m "Ueberschriften abwechslungsreicher"
+          git pull --rebase -q || { git checkout --theirs . 2>/dev/null; git add -A; GIT_EDITOR=true git rebase --continue; }
+          git push
