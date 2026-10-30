@@ -1,0 +1,47 @@
+name: Wochenvorschau
+on:
+  schedule:
+    - cron: "0 16 * * 0"     # sonntags 16:00 UTC (17 oder 18 Uhr deutsche Zeit): Vorschau auf die kommende Woche
+  workflow_dispatch:
+    inputs:
+      von:
+        description: "Optional: Montag der Woche, z. B. 2026-11-02 (Standard: kommende Woche)"
+        required: false
+permissions:
+  contents: write
+  pull-requests: write
+concurrency:
+  group: ir-agent
+  cancel-in-progress: false
+jobs:
+  vorschau:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install pillow markdown
+      - name: Wochenvorschau erzeugen
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          FMP_API_KEY: ${{ secrets.FMP_API_KEY }}
+          UNSPLASH_ACCESS_KEY: ${{ secrets.UNSPLASH_ACCESS_KEY }}
+          VON: ${{ github.event.inputs.von }}
+        run: |
+          if [ -n "$VON" ]; then python3 tools/wochenvorschau.py --von "$VON"; else python3 tools/wochenvorschau.py; fi
+      - name: Entwurf als Pull Request zur Freigabe anlegen
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: python3 tools/draft_prs.py
+      - name: Committen
+        run: |
+          git config user.name "ir-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add -A
+          if git diff --cached --quiet; then echo "Keine Änderungen"; exit 0; fi
+          git commit -m "Wochenvorschau: Entwurf erzeugt"
+          git pull --rebase -q
+          git push
