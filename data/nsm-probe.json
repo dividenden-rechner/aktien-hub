@@ -1,10 +1,140 @@
 {
+ "0:mit_datum": {
+  "status": 400,
+  "laenge": 13,
+  "anfang": "Invalid index"
+ },
+ "0:einfach": {
+  "status": 400,
+  "laenge": 13,
+  "anfang": "Invalid index"
+ },
+ "I:mit_datum": {
+  "status": 400,
+  "laenge": 13,
+  "anfang": "Invalid index"
+ },
+ "I:einfach": {
+  "status": 400,
+  "laenge": 13,
+  "anfang": "Invalid index"
+ },
+ "e:mit_datum": {
+  "status": 400,
+  "laenge": 13,
+  "anfang": "Invalid index"
+ },
+ "e:einfach": {
+  "status": 400,
+  "laenge": 13,
+  "anfang": "Invalid index"
+ },
+ "f:mit_datum": {
+  "status": 400,
+  "laenge": 13,
+  "anfang": "Invalid index"
+ },
+ "f:einfach": {
+  "status": 400,
+  "laenge": 13,
+  "anfang": "Invalid index"
+ },
  "fca-nsm-searchdata:mit_datum": {
   "status": 400,
   "laenge": 13,
   "anfang": "Invalid index"
  },
  "fca-nsm-searchdata:einfach": {
+  "status": 400,
+  "laenge": 13,
+  "anfang": "Invalid index"
+ },
+ "h:mit_datum": {
+  "status": 400,
+  "laenge": 13,
+  "anfang": "Invalid index"
+ },
+ "h:einfach": {
+  "status": 400,
+  "laenge": 13,
+  "anfang": "Invalid index"
+ },
+ "i:mit_datum": {
+  "status": 400,
+  "laenge": 13,
+  "anfang": "Invalid index"
+ },
+ "i:einfach": {
+  "status": 400,
+  "laenge": 13,
+  "anfang": "Invalid index"
+ },
+ "n:mit_datum": {
+  "status": 400,
+  "laenge": 13,
+  "anfang": "Invalid index"
+ },
+ "n:einfach": {
+  "status": 400,
+  "laenge": 13,
+  "anfang": "Invalid index"
+ },
+ "o:mit_datum": {
+  "status": 400,
+  "laenge": 13,
+  "anfang": "Invalid index"
+ },
+ "o:einfach": {
+  "status": 400,
+  "laenge": 13,
+  "anfang": "Invalid index"
+ },
+ "r:mit_datum": {
+  "status": 400,
+  "laenge": 13,
+  "anfang": "Invalid index"
+ },
+ "r:einfach": {
+  "status": 400,
+  "laenge": 13,
+  "anfang": "Invalid index"
+ },
+ "s:mit_datum": {
+  "status": 400,
+  "laenge": 13,
+  "anfang": "Invalid index"
+ },
+ "s:einfach": {
+  "status": 400,
+  "laenge": 13,
+  "anfang": "Invalid index"
+ },
+ "t:mit_datum": {
+  "status": 400,
+  "laenge": 13,
+  "anfang": "Invalid index"
+ },
+ "t:einfach": {
+  "status": 400,
+  "laenge": 13,
+  "anfang": "Invalid index"
+ },
+ "w:mit_datum": {
+  "status": 400,
+  "laenge": 13,
+  "anfang": "Invalid index"
+ },
+ "w:einfach": {
+  "status": 400,
+  "laenge": 13,
+  "anfang": "Invalid index"
+ },
+ "x:mit_datum": {
+  "status": 400,
+  "laenge": 13,
+  "anfang": "Invalid index"
+ },
+ "x:einfach": {
   "status": 400,
   "laenge": 13,
   "anfang": "Invalid index"
