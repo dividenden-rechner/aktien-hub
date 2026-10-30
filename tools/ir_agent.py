@@ -751,6 +751,55 @@ def unsplash_candidates(terms, per=8):
     return list(out.values())
 
 
+def unsplash_by_id(pid):
+    """Ein bestimmtes Unsplash-Foto ueber seine Kennung (letzter Teil der Foto-Adresse, zum Beispiel fiXLQXAhCfk)."""
+    key = os.environ.get("UNSPLASH_ACCESS_KEY")
+    if not key:
+        return None
+    try:
+        req = urllib.request.Request("https://api.unsplash.com/photos/" + urllib.parse.quote(pid),
+                                     headers={"Authorization": "Client-ID " + key, "Accept-Version": "v1", "User-Agent": "dividenden-rechner.de Magazin-Agent"})
+        with urllib.request.urlopen(req, timeout=30) as r:
+            it = json.loads(r.read().decode("utf-8", "replace"))
+    except Exception as e:
+        print("Unsplash-Foto nicht gefunden:", pid, e); return None
+    u = it.get("user") or {}; links = it.get("links") or {}
+    return {"title": "Unsplash " + it["id"], "raw": it["urls"]["raw"], "page": (links.get("html") or "https://unsplash.com") + "?utm_source=dividenden-rechner&utm_medium=referral",
+            "artist": u.get("name") or "Unbekannt", "artist_url": ((u.get("links") or {}).get("html") or "https://unsplash.com") + "?utm_source=dividenden-rechner&utm_medium=referral",
+            "desc": _strip(it.get("description") or it.get("alt_description") or "")[:200], "download": links.get("download_location", "")}
+
+
+def merge_photos(a, b, slug):
+    """Zwei Fotos zu einem Titelbild (16:9) verschmelzen: a links, b rechts, weicher Uebergang. Speichert assets/magazin/<slug>-foto.jpg."""
+    from PIL import ImageEnhance
+    W, H = 1600, 900
+    def load(ph):
+        url = ph["raw"] + ("&" if "?" in ph["raw"] else "?") + "w=2000&q=85&fm=jpg&fit=max"
+        im = Image.open(BytesIO(http(url, binary=True, ua="dividenden-rechner.de Magazin-Agent"))).convert("RGB")
+        w, h = im.size; r = max(W / w, H / h)
+        im = im.resize((int(w * r) + 1, int(h * r) + 1), Image.LANCZOS)
+        w, h = im.size; return im.crop(((w - W) // 2, (h - H) // 2, (w - W) // 2 + W, (h - H) // 2 + H))
+    ia_, ib_ = load(a), load(b)
+    ib_ = ImageEnhance.Brightness(ib_).enhance(0.9)
+    mask = Image.new("L", (W, H))
+    row = []
+    for x in range(W):
+        t = min(1.0, max(0.0, (x / W - 0.38) / 0.28)); t = t * t * (3 - 2 * t)     # weicher Uebergang zwischen 38 % und 66 % der Breite
+        row.append(int(255 * t))
+    mask.putdata(row * H)
+    out = Image.composite(ib_, ia_, mask)
+    rel = f"assets/magazin/{slug}-foto.jpg"
+    os.makedirs(os.path.join(ROOT, "assets", "magazin"), exist_ok=True)
+    out.save(os.path.join(ROOT, rel), "JPEG", quality=85, optimize=True)
+    for ph in (a, b):       # Nutzung bei Unsplash melden (API-Vorgabe)
+        if ph.get("download") and os.environ.get("UNSPLASH_ACCESS_KEY"):
+            try:
+                urllib.request.urlopen(urllib.request.Request(ph["download"], headers={"Authorization": "Client-ID " + os.environ["UNSPLASH_ACCESS_KEY"], "User-Agent": "dividenden-rechner.de Magazin-Agent"}), timeout=30).read()
+            except Exception as e:
+                print("Unsplash-Downloadmeldung fehlgeschlagen:", e)
+    return rel
+
+
 def unsplash_find(match, terms, pages=3):
     """Sucht ein bestimmtes Unsplash-Foto (Teil der Bildadresse, z. B. photo-1578356058390-f58c575337a2) ueber Suchbegriffe."""
     key = os.environ.get("UNSPLASH_ACCESS_KEY")

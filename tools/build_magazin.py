@@ -303,6 +303,12 @@ def absu(u):
 
 def credit_html(p):
     cred = p.get("image_credit") or ""
+    if "unsplash.com" in (p.get("image_source") or "") and p.get("image_artist_url") and p.get("image_artist_url2"):
+        m = re.match(r"Fotos:\s*(.*?)\s+und\s+(.*?)\s+auf Unsplash\s*$", cred)
+        n1, n2 = (esc(m.group(1)), esc(m.group(2))) if m else ("Foto 1", "Foto 2")
+        return (f'Fotos: <a href="{esc(p["image_artist_url"])}" rel="noopener nofollow" target="_blank">{n1}</a> und '
+                f'<a href="{esc(p["image_artist_url2"])}" rel="noopener nofollow" target="_blank">{n2}</a> auf '
+                f'<a href="https://unsplash.com/?utm_source=dividenden-rechner&amp;utm_medium=referral" rel="noopener nofollow" target="_blank">Unsplash</a>')
     if "unsplash.com" in (p.get("image_source") or "") and p.get("image_artist_url"):
         m = re.match(r"Foto:\s*(.*?)\s+auf Unsplash\s*$", cred)
         nm = esc(m.group(1) if m else cred.replace("Foto:", "").strip())

@@ -35,9 +35,28 @@ def main():
         print("Logo-Angaben gesetzt, fetch_logos holt das Logo neu.")
     if a.terms:
         terms = [t.strip() for t in a.terms.split(",") if t.strip()]
+        mer = [t[6:].strip() for t in terms if t.startswith("merge:")]
         want = [t[6:].strip() for t in terms if t.startswith("match:")]
         urls = [t[4:].strip() for t in terms if t.startswith("url:")]
-        terms = [t for t in terms if not t.startswith(("match:", "url:"))]
+        terms = [t for t in terms if not t.startswith(("match:", "url:", "merge:"))]
+        if mer:       # zwei vom Redakteur ausgesuchte Unsplash-Fotos zu einem Titelbild verschmelzen: merge:ID1+ID2
+            ids = [x.strip() for x in mer[0].split("+") if x.strip()]
+            phs = [ia.unsplash_by_id(i) for i in ids[:2]]
+            if len(phs) == 2 and all(phs):
+                rel = ia.merge_photos(phs[0], phs[1], a.slug)
+                q = lambda t: '"' + str(t).replace('"', "'") + '"'
+                head = setf(head, "image", rel)
+                head = setf(head, "image_alt", q("Collage aus zwei Fotos: Aktienkurse als Kerzendiagramm auf dunklem Bildschirm und ein Mann im Anzug auf der Strasse"))
+                head = setf(head, "image_credit", q(f"Fotos: {phs[0]['artist']} und {phs[1]['artist']} auf Unsplash"))
+                head = setf(head, "image_source", phs[0]["page"])
+                head = setf(head, "image_artist_url", phs[0]["artist_url"])
+                head = setf(head, "image_artist_url2", phs[1]["artist_url"])
+                head = setf(head, "image_source2", phs[1]["page"])
+                print("Zwei Fotos verschmolzen ->", rel)
+            else:
+                print("Verschmelzen nicht moeglich: Foto nicht gefunden.")
+            open(path, "w", encoding="utf-8").write(f"---\n{head}\n---\n{body}")
+            return
         if urls:      # Bild von einer Adresse (zum Beispiel Pressebild), Quelle ist das Unternehmen
             ph = {"title": "Pressebild " + name, "thumb": urls[0], "page": urls[0], "artist": name, "lic": "Pressematerial", "quelle": "Unternehmen",
                   "desc": "Bild des Unternehmens", "date": "", "download": ""}
