@@ -582,7 +582,7 @@ def build_index(posts):
     default_img = absu(posts[0]["img"]) if posts else BASE + "assets/logo.png"
     o = head(depth, title, desc, url, "website", default_img, extra) + nav_html(depth, "news") + "</nav></div></header>\n"
     o += f'<script src="{pre}assets/navigation.js"></script>\n<script src="{pre}assets/logos.js"></script>\n<main class="wrap">\n'
-    o += f'<nav class="crumbs" aria-label="Brotkrumen"><a href="{pre}">Start</a> › <span aria-current="page">News</span></nav>\n<h1>News</h1>\n<p class="lead">{esc(desc)}</p>\n'
+    o += f'<nav class="crumbs" aria-label="Brotkrumen"><a href="{pre}">Start</a> › <span aria-current="page">News</span></nav>\n<h1>News</h1>\n'
     # Aufmacher: Standard ist der neueste Artikel; mit "aufmacher: ja" im Kopfbereich wird ein juengerer Artikel (max. 3 Tage hinter dem neuesten) zum Hauptthema
     longp = [x for x in posts if x.get("typ") != "kurz"] or posts
     hero = longp[0]
