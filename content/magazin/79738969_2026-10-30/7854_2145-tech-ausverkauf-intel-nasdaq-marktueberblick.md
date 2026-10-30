@@ -5,7 +5,6 @@ date: 2026-10-30 21:45
 author: "Redaktions-Team Dividenden-Rechner.de"
 author_bio: "Das Redaktions-Team von Dividenden-Rechner.de schreibt über Dividendenaktien, Kennzahlen und Steuerthemen für Privatanleger. Die Rechner und Auswertungen auf der Seite entstehen im eigenen Haus."
 category: Analyse
-draft: true
 logo_file: assets/logos/tech-ausverkauf.mono.png
 ---
 !!! kurz "Kurz gesagt"
