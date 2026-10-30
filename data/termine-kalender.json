@@ -1,0 +1,1166 @@
+{
+ "stand": "2026-10-30",
+ "quelle": "eigener Kalender (Unternehmenstermine)",
+ "termine": [
+  {
+   "firma": "BP",
+   "sym": "BP.L",
+   "art": "ergebnis",
+   "was": "Q3 2026",
+   "datum": "2026-10-30",
+   "zeit_utc": ""
+  },
+  {
+   "firma": "Regeneron Pharmaceuticals",
+   "sym": "REGN",
+   "art": "ergebnis",
+   "was": "Q3 2026",
+   "datum": "2026-10-30",
+   "zeit_utc": "12:30"
+  },
+  {
+   "firma": "Sanofi",
+   "sym": "SAN.PA",
+   "art": "ergebnis",
+   "was": "Q3 2026",
+   "datum": "2026-10-30",
+   "zeit_utc": "12:30"
+  },
+  {
+   "firma": "AbbVie",
+   "sym": "ABBV",
+   "art": "ergebnis",
+   "was": "Q3 2026",
+   "datum": "2026-10-30",
+   "zeit_utc": "13:00"
+  },
+  {
+   "firma": "Exxon Mobil",
+   "sym": "XOM",
+   "art": "ergebnis",
+   "was": "Q3 2026",
+   "datum": "2026-10-30",
+   "zeit_utc": "13:30"
+  },
+  {
+   "firma": "AstraZeneca",
+   "sym": "AZN.L",
+   "art": "ergebnis",
+   "was": "Q3 2026",
+   "datum": "2026-10-30",
+   "zeit_utc": "14:30"
+  },
+  {
+   "firma": "Chevron",
+   "sym": "CVX",
+   "art": "ergebnis",
+   "was": "Q3 2026",
+   "datum": "2026-10-30",
+   "zeit_utc": "15:00"
+  },
+  {
+   "firma": "LyondellBasell Industries",
+   "sym": "LYB",
+   "art": "ergebnis",
+   "was": "Q3 2026",
+   "datum": "2026-10-30",
+   "zeit_utc": "15:00"
+  },
+  {
+   "firma": "DroneShield",
+   "sym": "",
+   "art": "ergebnis",
+   "was": "Q3 2026",
+   "datum": "2026-11-02",
+   "zeit_utc": ""
+  },
+  {
+   "firma": "Vertex Pharmaceuticals",
+   "sym": "VRTX",
+   "art": "ergebnis",
+   "was": "Q3 2026",
+   "datum": "2026-11-02",
+   "zeit_utc": "21:30"
+  },
+  {
+   "firma": "Apple",
+   "sym": "AAPL",
+   "art": "ergebnis",
+   "was": "Q4 2026",
+   "datum": "2026-11-02",
+   "zeit_utc": "22:00"
+  },
+  {
+   "firma": "Palantir Technologies",
+   "sym": "PLTR",
+   "art": "ergebnis",
+   "was": "Q3 2026",
+   "datum": "2026-11-02",
+   "zeit_utc": "22:00"
+  },
+  {
+   "firma": "Realty Income",
+   "sym": "O",
+   "art": "ergebnis",
+   "was": "Q3 2026",
+   "datum": "2026-11-02",
+   "zeit_utc": "22:00"
+  },
+  {
+   "firma": "CRISPR Therapeutics",
+   "sym": "",
+   "art": "ergebnis",
+   "was": "Q3 2026",
+   "datum": "2026-11-03",
+   "zeit_utc": ""
+  },
+  {
+   "firma": "Bayer",
+   "sym": "BAYN.DE",
+   "art": "ergebnis",
+   "was": "Q3 2026",
+   "datum": "2026-11-03",
+   "zeit_utc": "13:00"
+  },
+  {
+   "firma": "DuPont De Nemours",
+   "sym": "DD",
+   "art": "ergebnis",
+   "was": "Q3 2026",
+   "datum": "2026-11-03",
+   "zeit_utc": "13:00"
+  },
+  {
+   "firma": "Keurig Dr Pepper",
+   "sym": "KDP",
+   "art": "ergebnis",
+   "was": "Q3 2026",
+   "datum": "2026-11-03",
+   "zeit_utc": "13:00"
+  },
+  {
+   "firma": "Archer Daniels Midland Company",
+   "sym": "ADM",
+   "art": "ergebnis",
+   "was": "Q3 2026",
+   "datum": "2026-11-03",
+   "zeit_utc": "13:30"
+  },
+  {
+   "firma": "Ferrari",
+   "sym": "RACE",
+   "art": "ergebnis",
+   "was": "Q3 2026",
+   "datum": "2026-11-03",
+   "zeit_utc": "14:00"
+  },
+  {
+   "firma": "Celanese",
+   "sym": "CE",
+   "art": "ergebnis",
+   "was": "Q3 2026",
+   "datum": "2026-11-03",
+   "zeit_utc": "15:00"
+  },
+  {
+   "firma": "Pfizer",
+   "sym": "PFE",
+   "art": "ergebnis",
+   "was": "Q3 2026",
+   "datum": "2026-11-03",
+   "zeit_utc": "15:00"
+  },
+  {
+   "firma": "Capital Southwest",
+   "sym": "CSWC",
+   "art": "ergebnis",
+   "was": "Q2 2027",
+   "datum": "2026-11-03",
+   "zeit_utc": "16:00"
+  },
+  {
+   "firma": "Marathon Petroleum",
+   "sym": "MPC",
+   "art": "ergebnis",
+   "was": "Q3 2026",
+   "datum": "2026-11-03",
+   "zeit_utc": "16:00"
+  },
+  {
+   "firma": "Lam Research",
+   "sym": "LRCX",
+   "art": "hauptversammlung",
+   "was": "AGM 2026",
+   "datum": "2026-11-03",
+   "zeit_utc": "17:30"
+  },
+  {
+   "firma": "Amgen",
+   "sym": "AMGN",
+   "art": "ergebnis",
+   "was": "Q3 2026",
+   "datum": "2026-11-03",
+   "zeit_utc": "21:30"
+  },
+  {
+   "firma": "AMD",
+   "sym": "AMD",
+   "art": "ergebnis",
+   "was": "Q3 2026",
+   "datum": "2026-11-03",
+   "zeit_utc": "22:00"
+  },
+  {
+   "firma": "BMW Group",
+   "sym": "BMW.DE",
+   "art": "ergebnis",
+   "was": "Q3 2026",
+   "datum": "2026-11-04",
+   "zeit_utc": "08:05"
+  },
+  {
+   "firma": "Koninklijke Ahold Delhaize",
+   "sym": "",
+   "art": "ergebnis",
+   "was": "Q3 2026",
+   "datum": "2026-11-04",
+   "zeit_utc": "09:00"
+  },
+  {
+   "firma": "Novo Nordisk",
+   "sym": "NOVO-B.CO",
+   "art": "ergebnis",
+   "was": "Q3 2026",
+   "datum": "2026-11-04",
+   "zeit_utc": "12:00"
+  },
+  {
+   "firma": "Fresenius",
+   "sym": "FRE.DE",
+   "art": "ergebnis",
+   "was": "Q3 2026",
+   "datum": "2026-11-04",
+   "zeit_utc": "12:30"
+  },
+  {
+   "firma": "Gladstone Commercial",
+   "sym": "GOOD",
+   "art": "ergebnis",
+   "was": "Q3 2026",
+   "datum": "2026-11-04",
+   "zeit_utc": "13:30"
+  },
+  {
+   "firma": "McDonald’s",
+   "sym": "MCD",
+   "art": "ergebnis",
+   "was": "Q3 2026",
+   "datum": "2026-11-04",
+   "zeit_utc": "13:30"
+  },
+  {
+   "firma": "Sixth Street Specialty Lending",
+   "sym": "",
+   "art": "ergebnis",
+   "was": "Q3 2026",
+   "datum": "2026-11-04",
+   "zeit_utc": "13:30"
+  },
+  {
+   "firma": "Unilever",
+   "sym": "ULVR.L",
+   "art": "investorentag",
+   "was": "CMD 2026",
+   "datum": "2026-11-04",
+   "zeit_utc": "13:30"
+  },
+  {
+   "firma": "The Kraft Heinz Company",
+   "sym": "KHC",
+   "art": "ergebnis",
+   "was": "Q3 2026 [Q&A]",
+   "datum": "2026-11-04",
+   "zeit_utc": "14:00"
+  },
+  {
+   "firma": "Trinity Capital",
+   "sym": "",
+   "art": "ergebnis",
+   "was": "Q3 2026",
+   "datum": "2026-11-04",
+   "zeit_utc": "17:00"
+  },
+  {
+   "firma": "Revolution Medicines",
+   "sym": "",
+   "art": "ergebnis",
+   "was": "Q3 2026",
+   "datum": "2026-11-04",
+   "zeit_utc": "21:30"
+  },
+  {
+   "firma": "Qualcomm",
+   "sym": "QCOM",
+   "art": "ergebnis",
+   "was": "Q4 2026",
+   "datum": "2026-11-04",
+   "zeit_utc": "21:45"
+  },
+  {
+   "firma": "MercadoLibre",
+   "sym": "MELI",
+   "art": "ergebnis",
+   "was": "Q3 2026",
+   "datum": "2026-11-04",
+   "zeit_utc": "22:00"
+  },
+  {
+   "firma": "Gladstone Land",
+   "sym": "LAND",
+   "art": "ergebnis",
+   "was": "Q3 2026",
+   "datum": "2026-11-05",
+   "zeit_utc": ""
+  },
+  {
+   "firma": "DBS Group",
+   "sym": "D05.SI",
+   "art": "trading-update",
+   "was": "Q3 2026 TU",
+   "datum": "2026-11-05",
+   "zeit_utc": "02:30"
+  },
+  {
+   "firma": "Sony Group",
+   "sym": "6758.T",
+   "art": "ergebnis",
+   "was": "Q2 2027",
+   "datum": "2026-11-05",
+   "zeit_utc": "07:30"
+  },
+  {
+   "firma": "Commerzbank",
+   "sym": "CBK.DE",
+   "art": "ergebnis",
+   "was": "Q3 2026",
+   "datum": "2026-11-05",
+   "zeit_utc": "08:00"
+  },
+  {
+   "firma": "Diageo",
+   "sym": "DEO",
+   "art": "trading-update",
+   "was": "Q1 2027 TU",
+   "datum": "2026-11-05",
+   "zeit_utc": "09:30"
+  },
+  {
+   "firma": "Maersk",
+   "sym": "MAERSK-B.CO",
+   "art": "ergebnis",
+   "was": "Q3 2026",
+   "datum": "2026-11-05",
+   "zeit_utc": "10:00"
+  },
+  {
+   "firma": "Air Products and Chemicals",
+   "sym": "APD",
+   "art": "ergebnis",
+   "was": "Q4 2026",
+   "datum": "2026-11-05",
+   "zeit_utc": "13:00"
+  },
+  {
+   "firma": "Deutsche Telekom",
+   "sym": "DTE.DE",
+   "art": "ergebnis",
+   "was": "Q3 2026",
+   "datum": "2026-11-05",
+   "zeit_utc": "13:00"
+  },
+  {
+   "firma": "Rheinmetall",
+   "sym": "",
+   "art": "ergebnis",
+   "was": "Q3 2026",
+   "datum": "2026-11-05",
+   "zeit_utc": "13:00"
+  },
+  {
+   "firma": "Iron Mountain",
+   "sym": "IRM",
+   "art": "ergebnis",
+   "was": "Q3 2026",
+   "datum": "2026-11-05",
+   "zeit_utc": "13:30"
+  },
+  {
+   "firma": "The Carlyle Group",
+   "sym": "",
+   "art": "ergebnis",
+   "was": "Q3 2026",
+   "datum": "2026-11-05",
+   "zeit_utc": "13:30"
+  },
+  {
+   "firma": "Blue Owl Capital Corporation",
+   "sym": "OBDC",
+   "art": "ergebnis",
+   "was": "Q3 2026",
+   "datum": "2026-11-05",
+   "zeit_utc": "15:00"
+  },
+  {
+   "firma": "Nexstar Media Group",
+   "sym": "NXST",
+   "art": "ergebnis",
+   "was": "Q3 2026",
+   "datum": "2026-11-05",
+   "zeit_utc": "15:00"
+  },
+  {
+   "firma": "Nutrien",
+   "sym": "NTR",
+   "art": "ergebnis",
+   "was": "Q3 2026",
+   "datum": "2026-11-05",
+   "zeit_utc": "15:00"
+  },
+  {
+   "firma": "Pan American Silver",
+   "sym": "",
+   "art": "ergebnis",
+   "was": "Q3 2026",
+   "datum": "2026-11-05",
+   "zeit_utc": "15:00"
+  },
+  {
+   "firma": "Arcturus Therapeutics",
+   "sym": "",
+   "art": "ergebnis",
+   "was": "Q3 2026",
+   "datum": "2026-11-05",
+   "zeit_utc": "21:30"
+  },
+  {
+   "firma": "MP Materials",
+   "sym": "MP",
+   "art": "ergebnis",
+   "was": "Q3 2026",
+   "datum": "2026-11-05",
+   "zeit_utc": "22:00"
+  },
+  {
+   "firma": "Microchip",
+   "sym": "MCHP",
+   "art": "ergebnis",
+   "was": "Q2 2027",
+   "datum": "2026-11-05",
+   "zeit_utc": "22:00"
+  },
+  {
+   "firma": "Simon Property Group",
+   "sym": "SPG",
+   "art": "ergebnis",
+   "was": "Q3 2026",
+   "datum": "2026-11-05",
+   "zeit_utc": "22:00"
+  },
+  {
+   "firma": "Mitsui & Co",
+   "sym": "8031.T",
+   "art": "ergebnis",
+   "was": "Q2 2027",
+   "datum": "2026-11-06",
+   "zeit_utc": "01:00"
+  },
+  {
+   "firma": "Mitsubishi Heavy Industries",
+   "sym": "8058.T",
+   "art": "ergebnis",
+   "was": "Q2 2027",
+   "datum": "2026-11-06",
+   "zeit_utc": "06:30"
+  },
+  {
+   "firma": "Enbridge",
+   "sym": "ENB",
+   "art": "ergebnis",
+   "was": "Q3 2026",
+   "datum": "2026-11-06",
+   "zeit_utc": "14:00"
+  },
+  {
+   "firma": "EOG Resources",
+   "sym": "EOG",
+   "art": "ergebnis",
+   "was": "Q3 2026",
+   "datum": "2026-11-06",
+   "zeit_utc": "15:00"
+  },
+  {
+   "firma": "Main Street Capital",
+   "sym": "MAIN",
+   "art": "ergebnis",
+   "was": "Q3 2026",
+   "datum": "2026-11-06",
+   "zeit_utc": "15:00"
+  },
+  {
+   "firma": "Hannover Rück",
+   "sym": "HNR1.DE",
+   "art": "ergebnis",
+   "was": "Q3 2026",
+   "datum": "2026-11-09",
+   "zeit_utc": ""
+  },
+  {
+   "firma": "KKR",
+   "sym": "KKR",
+   "art": "ergebnis",
+   "was": "Q3 2026",
+   "datum": "2026-11-09",
+   "zeit_utc": "15:00"
+  },
+  {
+   "firma": "Barrick Mining",
+   "sym": "B",
+   "art": "ergebnis",
+   "was": "Q3 2026",
+   "datum": "2026-11-09",
+   "zeit_utc": "16:00"
+  },
+  {
+   "firma": "Nebius",
+   "sym": "NBIS",
+   "art": "ergebnis",
+   "was": "Q3 2026",
+   "datum": "2026-11-10",
+   "zeit_utc": ""
+  },
+  {
+   "firma": "Infineon Technologies",
+   "sym": "IFX.DE",
+   "art": "ergebnis",
+   "was": "Q4 2026",
+   "datum": "2026-11-10",
+   "zeit_utc": "06:30"
+  },
+  {
+   "firma": "Vodafone",
+   "sym": "VOD",
+   "art": "ergebnis",
+   "was": "Q2 2027",
+   "datum": "2026-11-10",
+   "zeit_utc": "07:00"
+  },
+  {
+   "firma": "SoftBank Group",
+   "sym": "9984.T",
+   "art": "ergebnis",
+   "was": "Q2 2027",
+   "datum": "2026-11-10",
+   "zeit_utc": "07:30"
+  },
+  {
+   "firma": "Sea",
+   "sym": "",
+   "art": "ergebnis",
+   "was": "Q3 2026",
+   "datum": "2026-11-10",
+   "zeit_utc": "12:30"
+  },
+  {
+   "firma": "On",
+   "sym": "ONON",
+   "art": "ergebnis",
+   "was": "Q3 2026",
+   "datum": "2026-11-10",
+   "zeit_utc": "13:00"
+  },
+  {
+   "firma": "Gladstone Investment",
+   "sym": "GAIN",
+   "art": "ergebnis",
+   "was": "Q2 2027",
+   "datum": "2026-11-10",
+   "zeit_utc": "13:30"
+  },
+  {
+   "firma": "Occidental Petroleum",
+   "sym": "OXY",
+   "art": "ergebnis",
+   "was": "Q3 2026",
+   "datum": "2026-11-10",
+   "zeit_utc": "18:00"
+  },
+  {
+   "firma": "Cisco Systems",
+   "sym": "CSCO",
+   "art": "ergebnis",
+   "was": "Q1 2027",
+   "datum": "2026-11-11",
+   "zeit_utc": ""
+  },
+  {
+   "firma": "RWE",
+   "sym": "RWE.DE",
+   "art": "ergebnis",
+   "was": "Q3 2026",
+   "datum": "2026-11-11",
+   "zeit_utc": ""
+  },
+  {
+   "firma": "Siemens Energy",
+   "sym": "SIE.DE",
+   "art": "ergebnis",
+   "was": "Q4 2026",
+   "datum": "2026-11-11",
+   "zeit_utc": ""
+  },
+  {
+   "firma": "Domino's Pizza Enterprises",
+   "sym": "DPZ",
+   "art": "hauptversammlung",
+   "was": "AGM 2026",
+   "datum": "2026-11-11",
+   "zeit_utc": "05:00"
+  },
+  {
+   "firma": "Swiss Life",
+   "sym": "",
+   "art": "trading-update",
+   "was": "Q3 2026 TU",
+   "datum": "2026-11-11",
+   "zeit_utc": "08:00"
+  },
+  {
+   "firma": "Petrobras",
+   "sym": "",
+   "art": "ergebnis",
+   "was": "Q3 2026",
+   "datum": "2026-11-11",
+   "zeit_utc": "14:30"
+  },
+  {
+   "firma": "Tencent",
+   "sym": "0700.HK",
+   "art": "ergebnis",
+   "was": "Q3 2026",
+   "datum": "2026-11-12",
+   "zeit_utc": ""
+  },
+  {
+   "firma": "Siemens",
+   "sym": "SIE.DE",
+   "art": "ergebnis",
+   "was": "Q4 2026",
+   "datum": "2026-11-12",
+   "zeit_utc": "08:30"
+  },
+  {
+   "firma": "3i Group",
+   "sym": "III.L",
+   "art": "ergebnis",
+   "was": "H1 2027",
+   "datum": "2026-11-12",
+   "zeit_utc": "09:00"
+  },
+  {
+   "firma": "Hapag-Lloyd",
+   "sym": "HLAG.DE",
+   "art": "ergebnis",
+   "was": "Q3 2026",
+   "datum": "2026-11-12",
+   "zeit_utc": "10:00"
+  },
+  {
+   "firma": "Munich RE",
+   "sym": "MUV2.DE",
+   "art": "ergebnis",
+   "was": "Q3 2026",
+   "datum": "2026-11-12",
+   "zeit_utc": "10:00"
+  },
+  {
+   "firma": "Franco-Nevada",
+   "sym": "FNV",
+   "art": "ergebnis",
+   "was": "Q3 2026",
+   "datum": "2026-11-12",
+   "zeit_utc": "13:00"
+  },
+  {
+   "firma": "Merck",
+   "sym": "MRK",
+   "art": "ergebnis",
+   "was": "Q3 2026",
+   "datum": "2026-11-12",
+   "zeit_utc": "13:00"
+  },
+  {
+   "firma": "Zealand Pharma",
+   "sym": "",
+   "art": "ergebnis",
+   "was": "Q3 2026",
+   "datum": "2026-11-12",
+   "zeit_utc": "13:00"
+  },
+  {
+   "firma": "Allianz",
+   "sym": "ALV.DE",
+   "art": "ergebnis",
+   "was": "Q3 2026",
+   "datum": "2026-11-12",
+   "zeit_utc": "13:30"
+  },
+  {
+   "firma": "EnerSys",
+   "sym": "ENS",
+   "art": "ergebnis",
+   "was": "Q2 2027",
+   "datum": "2026-11-12",
+   "zeit_utc": "14:00"
+  },
+  {
+   "firma": "Brookfield",
+   "sym": "",
+   "art": "ergebnis",
+   "was": "Q3 2026",
+   "datum": "2026-11-12",
+   "zeit_utc": "15:00"
+  },
+  {
+   "firma": "The Kraft Heinz Company",
+   "sym": "KHC",
+   "art": "investorentag",
+   "was": "Investor Day 2026",
+   "datum": "2026-11-12",
+   "zeit_utc": "15:30"
+  },
+  {
+   "firma": "Mitsubishi UFJ Financial Group",
+   "sym": "MUFG",
+   "art": "ergebnis",
+   "was": "Q2 2027",
+   "datum": "2026-11-13",
+   "zeit_utc": "10:30"
+  },
+  {
+   "firma": "Legal & General Group",
+   "sym": "LGEN.L",
+   "art": "trading-update",
+   "was": "Q3 2026 TU",
+   "datum": "2026-11-16",
+   "zeit_utc": "07:00"
+  },
+  {
+   "firma": "Baidu",
+   "sym": "9888.HK",
+   "art": "ergebnis",
+   "was": "Q3 2026",
+   "datum": "2026-11-16",
+   "zeit_utc": "12:30"
+  },
+  {
+   "firma": "Imperial Brands",
+   "sym": "IMB.L",
+   "art": "ergebnis",
+   "was": "H2 2026",
+   "datum": "2026-11-17",
+   "zeit_utc": ""
+  },
+  {
+   "firma": "Medtronic",
+   "sym": "MDT",
+   "art": "ergebnis",
+   "was": "Q2 2027",
+   "datum": "2026-11-17",
+   "zeit_utc": ""
+  },
+  {
+   "firma": "PDD",
+   "sym": "PDD",
+   "art": "ergebnis",
+   "was": "Q3 2026",
+   "datum": "2026-11-17",
+   "zeit_utc": ""
+  },
+  {
+   "firma": "The Campbell’s Company",
+   "sym": "",
+   "art": "hauptversammlung",
+   "was": "AGM 2026",
+   "datum": "2026-11-17",
+   "zeit_utc": "14:00"
+  },
+  {
+   "firma": "The Home Depot",
+   "sym": "HD",
+   "art": "ergebnis",
+   "was": "Q3 2027",
+   "datum": "2026-11-17",
+   "zeit_utc": "14:00"
+  },
+  {
+   "firma": "Oaktree Specialty Lending",
+   "sym": "OCSL",
+   "art": "ergebnis",
+   "was": "Q4 2026",
+   "datum": "2026-11-17",
+   "zeit_utc": "16:00"
+  },
+  {
+   "firma": "Nike",
+   "sym": "NKE",
+   "art": "investorentag",
+   "was": "Investor Day 2026",
+   "datum": "2026-11-17",
+   "zeit_utc": "16:30"
+  },
+  {
+   "firma": "NVIDIA",
+   "sym": "NVDA",
+   "art": "ergebnis",
+   "was": "Q3 2027",
+   "datum": "2026-11-17",
+   "zeit_utc": "22:00"
+  },
+  {
+   "firma": "Palo Alto Networks",
+   "sym": "PANW",
+   "art": "ergebnis",
+   "was": "Q1 2027",
+   "datum": "2026-11-18",
+   "zeit_utc": ""
+  },
+  {
+   "firma": "TJX Companies",
+   "sym": "TJX",
+   "art": "ergebnis",
+   "was": "Q3 2027",
+   "datum": "2026-11-18",
+   "zeit_utc": ""
+  },
+  {
+   "firma": "Target",
+   "sym": "TGT",
+   "art": "ergebnis",
+   "was": "Q3 2027",
+   "datum": "2026-11-18",
+   "zeit_utc": "13:00"
+  },
+  {
+   "firma": "Gladstone Capital",
+   "sym": "GLAD",
+   "art": "ergebnis",
+   "was": "Q4 2026",
+   "datum": "2026-11-18",
+   "zeit_utc": "13:30"
+  },
+  {
+   "firma": "Oracle",
+   "sym": "ORCL",
+   "art": "hauptversammlung",
+   "was": "AGM 2026",
+   "datum": "2026-11-18",
+   "zeit_utc": "15:00"
+  },
+  {
+   "firma": "Walmart",
+   "sym": "WMT",
+   "art": "ergebnis",
+   "was": "Q3 2027",
+   "datum": "2026-11-19",
+   "zeit_utc": "13:00"
+  },
+  {
+   "firma": "Intuit",
+   "sym": "INTU",
+   "art": "ergebnis",
+   "was": "Q1 2027",
+   "datum": "2026-11-19",
+   "zeit_utc": "21:30"
+  },
+  {
+   "firma": "Pernod Ricard",
+   "sym": "",
+   "art": "hauptversammlung",
+   "was": "AGM 2026",
+   "datum": "2026-11-20",
+   "zeit_utc": ""
+  },
+  {
+   "firma": "Alibaba Group",
+   "sym": "9988.HK",
+   "art": "ergebnis",
+   "was": "Q2 2027",
+   "datum": "2026-11-24",
+   "zeit_utc": ""
+  },
+  {
+   "firma": "Alimentation Couche-Tard",
+   "sym": "ATD.TO",
+   "art": "ergebnis",
+   "was": "Q2 2027",
+   "datum": "2026-11-24",
+   "zeit_utc": ""
+  },
+  {
+   "firma": "Dell Technologies",
+   "sym": "DELL",
+   "art": "ergebnis",
+   "was": "Q3 2027",
+   "datum": "2026-11-24",
+   "zeit_utc": ""
+  },
+  {
+   "firma": "Kohl’s",
+   "sym": "KSS",
+   "art": "ergebnis",
+   "was": "Q3 2027",
+   "datum": "2026-11-24",
+   "zeit_utc": ""
+  },
+  {
+   "firma": "The J. M. Smucker Company",
+   "sym": "SJM",
+   "art": "ergebnis",
+   "was": "Q2 2027",
+   "datum": "2026-11-24",
+   "zeit_utc": ""
+  },
+  {
+   "firma": "BASF",
+   "sym": "BAS.DE",
+   "art": "investorentag",
+   "was": "CMD 2026",
+   "datum": "2026-11-24",
+   "zeit_utc": "08:00"
+  },
+  {
+   "firma": "Analog Devices",
+   "sym": "ADI",
+   "art": "ergebnis",
+   "was": "Q4 2026",
+   "datum": "2026-11-24",
+   "zeit_utc": "15:00"
+  },
+  {
+   "firma": "Deere & Company",
+   "sym": "DE",
+   "art": "ergebnis",
+   "was": "Q4 2026",
+   "datum": "2026-11-25",
+   "zeit_utc": ""
+  },
+  {
+   "firma": "Hannover Rück",
+   "sym": "HNR1.DE",
+   "art": "investorentag",
+   "was": "CMD 2026",
+   "datum": "2026-11-25",
+   "zeit_utc": "09:30"
+  },
+  {
+   "firma": "Rheinmetall",
+   "sym": "",
+   "art": "investorentag",
+   "was": "CMD 2026",
+   "datum": "2026-11-27",
+   "zeit_utc": ""
+  },
+  {
+   "firma": "Nutrien",
+   "sym": "NTR",
+   "art": "investorentag",
+   "was": "Investor Day 2026",
+   "datum": "2026-11-30",
+   "zeit_utc": "18:00"
+  },
+  {
+   "firma": "Marvell Technology",
+   "sym": "MRVL",
+   "art": "ergebnis",
+   "was": "Q3 2027",
+   "datum": "2026-12-01",
+   "zeit_utc": ""
+  },
+  {
+   "firma": "Alexandria Real Estate Equities",
+   "sym": "ARE",
+   "art": "investorentag",
+   "was": "Investor Day 2026",
+   "datum": "2026-12-02",
+   "zeit_utc": ""
+  },
+  {
+   "firma": "Salesforce",
+   "sym": "CRM",
+   "art": "ergebnis",
+   "was": "Q3 2027",
+   "datum": "2026-12-02",
+   "zeit_utc": ""
+  },
+  {
+   "firma": "Snowflake",
+   "sym": "",
+   "art": "ergebnis",
+   "was": "Q3 2027",
+   "datum": "2026-12-02",
+   "zeit_utc": ""
+  },
+  {
+   "firma": "Hormel Foods",
+   "sym": "HRL",
+   "art": "ergebnis",
+   "was": "Q4 2026",
+   "datum": "2026-12-03",
+   "zeit_utc": ""
+  },
+  {
+   "firma": "Mitsui & Co",
+   "sym": "8031.T",
+   "art": "investorentag",
+   "was": "Investor Day 2026",
+   "datum": "2026-12-03",
+   "zeit_utc": ""
+  },
+  {
+   "firma": "The Kroger Co",
+   "sym": "KR",
+   "art": "ergebnis",
+   "was": "Q3 2027",
+   "datum": "2026-12-03",
+   "zeit_utc": ""
+  },
+  {
+   "firma": "Tesla",
+   "sym": "TSLA",
+   "art": "hauptversammlung",
+   "was": "AGM 2026",
+   "datum": "2026-12-03",
+   "zeit_utc": "21:00"
+  },
+  {
+   "firma": "Oracle",
+   "sym": "ORCL",
+   "art": "ergebnis",
+   "was": "Q2 2027",
+   "datum": "2026-12-07",
+   "zeit_utc": ""
+  },
+  {
+   "firma": "The Campbell’s Company",
+   "sym": "",
+   "art": "ergebnis",
+   "was": "Q1 2027",
+   "datum": "2026-12-08",
+   "zeit_utc": ""
+  },
+  {
+   "firma": "Microsoft",
+   "sym": "MSFT",
+   "art": "hauptversammlung",
+   "was": "AGM 2026",
+   "datum": "2026-12-08",
+   "zeit_utc": "16:30"
+  },
+  {
+   "firma": "Adobe",
+   "sym": "ADBE",
+   "art": "ergebnis",
+   "was": "Q4 2026",
+   "datum": "2026-12-09",
+   "zeit_utc": "22:00"
+  },
+  {
+   "firma": "Broadcom",
+   "sym": "AVGO",
+   "art": "ergebnis",
+   "was": "Q4 2026",
+   "datum": "2026-12-10",
+   "zeit_utc": ""
+  },
+  {
+   "firma": "Costco Wholesale",
+   "sym": "COST",
+   "art": "ergebnis",
+   "was": "Q1 2027",
+   "datum": "2026-12-10",
+   "zeit_utc": "22:00"
+  },
+  {
+   "firma": "ABIVAX",
+   "sym": "",
+   "art": "ergebnis",
+   "was": "Q3 2026",
+   "datum": "2026-12-14",
+   "zeit_utc": ""
+  },
+  {
+   "firma": "General Mills",
+   "sym": "GIS",
+   "art": "ergebnis",
+   "was": "Q2 2027",
+   "datum": "2026-12-16",
+   "zeit_utc": ""
+  },
+  {
+   "firma": "Micron Technology",
+   "sym": "MU",
+   "art": "ergebnis",
+   "was": "Q1 2027",
+   "datum": "2026-12-16",
+   "zeit_utc": ""
+  },
+  {
+   "firma": "Cintas",
+   "sym": "CTAS",
+   "art": "ergebnis",
+   "was": "Q2 2027",
+   "datum": "2026-12-17",
+   "zeit_utc": ""
+  },
+  {
+   "firma": "Nike",
+   "sym": "NKE",
+   "art": "ergebnis",
+   "was": "Q2 2027",
+   "datum": "2026-12-17",
+   "zeit_utc": ""
+  },
+  {
+   "firma": "Accenture",
+   "sym": "ACN",
+   "art": "ergebnis",
+   "was": "Q1 2027",
+   "datum": "2026-12-17",
+   "zeit_utc": "13:00"
+  },
+  {
+   "firma": "Carnival Corporation",
+   "sym": "CCL",
+   "art": "ergebnis",
+   "was": "Q4 2026",
+   "datum": "2026-12-18",
+   "zeit_utc": ""
+  },
+  {
+   "firma": "Conagra Brands",
+   "sym": "CAG",
+   "art": "ergebnis",
+   "was": "Q2 2027",
+   "datum": "2026-12-18",
+   "zeit_utc": ""
+  },
+  {
+   "firma": "Paychex",
+   "sym": "PAYX",
+   "art": "ergebnis",
+   "was": "Q2 2027",
+   "datum": "2026-12-18",
+   "zeit_utc": ""
+  }
+ ]
+}

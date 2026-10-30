@@ -539,7 +539,8 @@ def main():
         cands = edgar_candidates(firmen, done) + feed_candidates({f["sym"] for f in firmen}, done)
     watch = set(load_json(WATCHLIST, {}).get("tickers", []))
     big = {f["sym"] for f in load_json(os.path.join(ia.ROOT, "data", "feeds.json"), {"feeds": []})["feeds"]}
-    cands.sort(key=lambda c: 0 if c["sym"] in watch else (1 if c["sym"] in big else 2))   # Wichtige Firmen zuerst
+    followed = {t["sym"] for t in load_json(os.path.join(ia.ROOT, "data", "termine-kalender.json"), {"termine": []})["termine"] if t.get("sym")}
+    cands.sort(key=lambda c: 0 if c["sym"] in watch else (1 if (c["sym"] in followed or c["sym"] in big) else 2))   # Wichtige Firmen zuerst
     bud = state.setdefault("budget", {"day": "", "n": 0})
     if bud["day"] != budget_day():
         bud.update(day=budget_day(), n=0)
