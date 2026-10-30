@@ -177,7 +177,7 @@ def head(depth, title, desc, url, og_type, image_url, extra=""):
 <header id="hub-global-header"><div class="hub-nav-inner"><a class="hub-brand" href="{p}"><img class="hub-logo" src="{p}assets/logo.png" alt="" width="36" height="36"> <span class="hub-brand-name">Dividenden-Rechner <span>Aktien-Hub</span></span></a><nav class="hub-links" aria-label="Hauptmenü">'''
 
 def font(size, bold=True):
-    for f in ("/usr/share/fonts/opentype/inter/Inter-Bold.otf" if bold else "/usr/share/fonts/opentype/inter/Inter-Regular.otf",
+    for f in ("assets/fonts/Inter-Bold.otf" if bold else "assets/fonts/Inter-Regular.otf","/usr/share/fonts/opentype/inter/Inter-Bold.otf" if bold else "/usr/share/fonts/opentype/inter/Inter-Regular.otf",
               "/usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf" if bold else "/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf"):
         if os.path.exists(f): return ImageFont.truetype(f, size)
     return ImageFont.load_default()
@@ -201,6 +201,73 @@ def make_cover(path, title, category):
     d.text((70, H-100), "dividenden-rechner.de", font=font(36), fill="#1a7a45")
     d.text((70, H-52), "Dividenden verstehen, Aktien prüfen", font=font(24, False), fill="#5d6b78")
     im.save(path, optimize=True)
+
+def make_share_card(p, slug, img):
+    """Vorschaubild fuer X, Facebook, LinkedIn und WhatsApp (1200x675): Foto (nur eigene Dateien), Firmenlogo, Ueberschrift, Umsatz und Gewinn."""
+    import hashlib
+    lf = p.get("logo_file") or ""
+    logo_ok = bool(lf) and not lf.endswith(".mono.png") and os.path.exists(lf)
+    photo_ok = bool(img) and not ext(img) and os.path.exists(img) and "-foto" in img
+    lines = kurz_lines(p.get("body_md", ""))
+    key = hashlib.md5(json.dumps([p["title"], lines, lf if logo_ok else "", img if photo_ok else "", cashtag(p), p.get("category")], ensure_ascii=False).encode()).hexdigest()[:8]
+    rel = f"assets/share/{slug}-{key}.jpg"
+    if os.path.exists(rel):
+        return rel
+    os.makedirs("assets/share", exist_ok=True)
+    for old in glob.glob(f"assets/share/{slug}-*.*"):
+        os.remove(old)
+    W, H = 1200, 675
+    im = Image.new("RGB", (W, H), "#0f2a1c")
+    d = ImageDraw.Draw(im)
+    for yy in range(H):                       # Verlauf
+        t = yy / H
+        d.line([(0, yy), (W, yy)], fill=(int(15 + 5 * t), int(42 - 10 * t), int(28 - 2 * t)))
+    if photo_ok:
+        try:
+            ph = Image.open(img).convert("RGB")
+            r = max(W / ph.width, H / ph.height)
+            ph = ph.resize((int(ph.width * r) + 1, int(ph.height * r) + 1), Image.LANCZOS)
+            im.paste(ph.crop(((ph.width - W) // 2, (ph.height - H) // 2, (ph.width - W) // 2 + W, (ph.height - H) // 2 + H)), (0, 0))
+            ov = Image.new("RGBA", (W, H))
+            od = ImageDraw.Draw(ov)
+            for yy in range(H):
+                a = int(255 * (0.5 + 0.43 * min(1, max(0, (yy - 60) / 330))))
+                od.line([(0, yy), (W, yy)], fill=(15, 36, 26, a))
+            im = Image.alpha_composite(im.convert("RGBA"), ov).convert("RGB")
+            d = ImageDraw.Draw(im)
+        except Exception:
+            pass
+    green = "#7fd6a3"
+    x = 60
+    if logo_ok:
+        try:
+            lg = Image.open(lf).convert("RGBA").resize((96, 96), Image.LANCZOS)
+            d.rounded_rectangle([60, 48, 60 + 128, 48 + 128], 26, fill="#ffffff")
+            im.paste(lg, (60 + 16, 48 + 16), lg)
+            x = 60 + 128 + 28
+        except Exception:
+            pass
+    lab = (p.get("category") or "News").upper() + (("  ·  " + cashtag(p)) if cashtag(p) else "")
+    d.text((x, 48 + 46), lab, font=font(30), fill=green)
+    f = font(58)
+    words_, tl, cur = p["title"].split(), [], ""
+    for w in words_:
+        t = (cur + " " + w).strip()
+        if d.textlength(t, font=f) > W - 120: tl.append(cur); cur = w
+        else: cur = t
+    tl.append(cur)
+    y = 250
+    for ln in tl[:3]:
+        d.text((60, y), ln, font=f, fill="#ffffff"); y += 72
+    y += 14
+    for ln in lines[:2]:
+        k, _, v = ln.partition(":")
+        d.text((60, y), k + ":", font=font(38), fill=green)
+        d.text((60 + d.textlength(k + ": ", font=font(38)) + 6, y - 4), v.strip(), font=font(44), fill="#ffffff"); y += 62
+    d.text((60, H - 56), "dividenden-rechner.de", font=font(28, False), fill="#a9bdb1")
+    im.save(rel, quality=88, optimize=True)
+    return rel
+
 
 def ext(u):
     return u.startswith("http")
@@ -389,7 +456,7 @@ def build_post(p, posts):
             {"@type": "Question", "name": q, "acceptedAnswer": {"@type": "Answer", "text": a}} for q, a in faq]})
     extra = '<meta property="article:published_time" content="%s">\n<meta property="article:modified_time" content="%s">\n<meta property="article:section" content="%s">\n' % (iso(p["dt"]), iso(p["upd"]), esc(p["category"]))
     extra += "".join('<script type="application/ld+json">%s</script>\n' % json.dumps(x, ensure_ascii=False) for x in ld)
-    o = head(depth, p["title"], p["description"], url, "article", img_url.replace("&", "&amp;"), extra) + nav_html(depth, "news") + "</nav></div></header>\n"
+    o = head(depth, p["title"], p["description"], url, "article", absu(make_share_card(p, slug, img)).replace("&", "&amp;"), extra) + nav_html(depth, "news") + "</nav></div></header>\n"
     o += f'<script src="{pre}assets/navigation.js"></script>\n<script src="{pre}assets/logos.js"></script>\n<main class="wrap"><article class="post">\n'
     o += f'<nav class="crumbs" aria-label="Brotkrumen"><a href="{pre}">Start</a> › <a href="{pre}news/">News</a> › <span aria-current="page">{esc(p["title"])}</span></nav>\n'
     o += f'<p class="kicker">{esc(p["category"])}</p>\n{logo_html(p)}<p class="lead">{esc(p["description"])}</p>\n'
