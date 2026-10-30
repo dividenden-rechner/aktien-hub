@@ -95,6 +95,7 @@ Wenn relevant, schreibe:
 - Nenne nur Fakten und Zahlen, die woertlich im Text stehen. Zahlen exakt uebernehmen, Waehrung und Zeitraum nennen
   (zum Beispiel '1,02 US-Dollar je Aktie', 'im dritten Quartal 2026'). Nichts hinzuerfinden, nichts umrechnen.
 - Erster Satz: Was ist passiert? Danach die wichtigsten Zahlen, zuletzt ein Satz mit dem naechsten Termin (zum Beispiel Zahltag), falls genannt.
+- Ausschliesslich deutsche Sprache und deutsche Zahlenschreibweise (Dezimalkomma, Punkt als Tausendertrenner, 'US-Dollar' statt '$', 'Millionen' statt 'million'); keine englischen Fachbegriffe wie 'underlying profit', sondern 'zugrunde liegender Gewinn'.
 - Keine woertlichen Zitate, keine Ueberschriften, keine Aufzaehlungen.
 - Der Firmenname steht im Titel.
 - termine: Veroeffentlichungstermine von Zahlen, Ex-Dividenden-Tage und Zahltage, die mit Tag, Monat und Jahr im Text stehen (auch bei nicht relevanten Meldungen). Nichts schaetzen.

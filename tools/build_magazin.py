@@ -381,7 +381,7 @@ def build_feed(posts):
 
 def patch_sitemap(posts):
     s = open("sitemap.xml", encoding="utf-8").read()
-    s = re.sub(r"<url><loc>%smagazin/[^<]*</loc>.*?</url>\n?" % re.escape(BASE), "", s)
+    s = re.sub(r"<url><loc>%snews/[^<]*</loc>.*?</url>\n?" % re.escape(BASE), "", s)
     add = f"<url><loc>{BASE}news/</loc><lastmod>{posts[0]['upd'].date()}</lastmod><priority>0.8</priority></url>\n" if posts else ""
     for x in posts:
         add += f"<url><loc>{BASE}news/{x['slug']}/</loc><lastmod>{x['upd'].date()}</lastmod><priority>0.8</priority></url>\n"
@@ -390,7 +390,7 @@ def patch_sitemap(posts):
 
 def patch_llms(posts):
     s = open("llms.txt", encoding="utf-8").read()
-    s = re.sub(r"- \[[^\]]*\]\(%smagazin/[^)]*\)[^\n]*\n" % re.escape(BASE), "", s)
+    s = re.sub(r"- \[[^\]]*\]\(%snews/[^)]*\)[^\n]*\n" % re.escape(BASE), "", s)
     add = "".join(f"- [{x['title']}]({BASE}news/{x['slug']}/): {x['description']}\n" for x in posts)
     if posts: add = f"- [News: Artikel zu Dividenden, Kennzahlen und Steuern]({BASE}news/)\n" + add
     s = s.replace("\n## Hinweis", "\n" + add + "\n## Hinweis", 1) if "\n## Hinweis" in s else s + "\n" + add
