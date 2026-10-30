@@ -42,9 +42,15 @@ def discover():
             found.setdefault("api_treffer", []).append(m.group(0))
         for m in re.finditer(r"index=[A-Za-z0-9_\-]+", js):
             found.setdefault("index_treffer", []).append(m.group(0))
-        for m in re.finditer(r".{200}criteriaObj.{400}", js, re.S):
-            found.setdefault("anfrage_beispiele", []).append(m.group(0))
-            break
+        for pat in (r"search\?[^\"'`]{0,80}", r"[\"'`][^\"'`]{0,60}fca[^\"'`]{0,80}[\"'`]", r"[A-Za-z_]*[Uu]rl[\"']?\s*[:=]\s*[\"'`][^\"'`]{5,120}[\"'`]", r"[\"'`]fca-nsm[^\"'`]*[\"'`]"):
+            for m in re.finditer(pat, js):
+                found.setdefault("kontext", []).append(m.group(0)[:200])
+        for m in re.finditer(r".{300}criteriaObj=\{[^;]{0,500}", js, re.S):
+            found.setdefault("anfrage_beispiele", []).append(m.group(0)); break
+        for m in re.finditer(r"\.post\([^)]{0,200}\)", js):
+            found.setdefault("post_aufrufe", []).append(m.group(0))
+    found["kontext"] = sorted(set(found.get("kontext", [])))[:60]
+    found["post_aufrufe"] = sorted(set(found.get("post_aufrufe", [])))[:20]
     for k in ("api_treffer", "index_treffer"):
         found[k] = sorted(set(found.get(k, [])))[:20]
     return found
