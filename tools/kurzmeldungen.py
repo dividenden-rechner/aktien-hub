@@ -53,6 +53,12 @@ SCHEMA = {
         "body_markdown": {"type": "STRING", "description": "Drei bis fuenf Saetze Fliesstext auf Deutsch, hoechstens 120 Woerter"},
         "slug": {"type": "STRING", "description": "kurze URL-Kennung in Kleinbuchstaben, z. B. altria-dividende-q4-2026"},
         "foto_person": {"type": "STRING", "description": "Voller Name einer Person, die im Mittelpunkt der Meldung steht (neuer CEO, neuer Finanzchef, Ruecktritt), sonst leer"},
+        "termine": {"type": "ARRAY", "description": "Termine, die woertlich in der Meldung genannt werden (auch wenn die Meldung sonst nicht relevant ist); leer, wenn keine",
+                    "items": {"type": "OBJECT", "required": ["art", "datum"], "properties": {
+                        "art": {"type": "STRING", "enum": ["ergebnis", "dividende_exdatum", "dividende_zahltag"], "description": "ergebnis = Veroeffentlichung von Quartals- oder Jahreszahlen"},
+                        "datum": {"type": "STRING", "description": "YYYY-MM-DD, nur wenn Tag, Monat und Jahr im Text stehen"},
+                        "betrag": {"type": "STRING", "description": "Dividende je Aktie als Zahl wie im Text (zum Beispiel 1.02), sonst leer"},
+                        "waehrung": {"type": "STRING", "description": "Waehrungskuerzel (USD, JPY, HKD ...), sonst leer"}}}},
     },
 }
 CTX_SCHEMA = {
@@ -91,6 +97,7 @@ Wenn relevant, schreibe:
 - Erster Satz: Was ist passiert? Danach die wichtigsten Zahlen, zuletzt ein Satz mit dem naechsten Termin (zum Beispiel Zahltag), falls genannt.
 - Keine woertlichen Zitate, keine Ueberschriften, keine Aufzaehlungen.
 - Der Firmenname steht im Titel.
+- termine: Veroeffentlichungstermine von Zahlen, Ex-Dividenden-Tage und Zahltage, die mit Tag, Monat und Jahr im Text stehen (auch bei nicht relevanten Meldungen). Nichts schaetzen.
 - foto_person: nur setzen, wenn eine einzelne Person im Mittelpunkt steht (zum Beispiel Ernennung eines neuen Vorstandschefs), sonst leer."""
 
 UA_HDR = ia.UA
@@ -331,6 +338,35 @@ def unverified_numbers(body, source):
     return bad
 
 
+TERMINE = os.path.join(ia.ROOT, "data", "termine.json")
+
+
+def save_termine(c, termine, text, url):
+    """Termine aus der Meldung in data/termine.json (Earnings-Seite). Nur, wenn Jahr, Tag und Betrag im Original stehen."""
+    nums = set(re.findall(r"\d+", text)); allnums = set(_nums(text))
+    d = load_json(TERMINE, {"termine": []})
+    have = {(t["sym"], t["art"], t["datum"]) for t in d["termine"]}
+    new = 0
+    for t in termine:
+        m = re.fullmatch(r"(\d{4})-(\d{2})-(\d{2})", (t.get("datum") or "").strip())
+        if not m or m.group(1) not in nums or str(int(m.group(3))) not in nums:
+            continue
+        b = (t.get("betrag") or "").strip()
+        if b and re.sub(r"[.,]", "", b) not in allnums and re.sub(r"[.,]", "", b).rstrip("0") not in allnums:
+            b = ""
+        key = (c["sym"], t["art"], t["datum"])
+        if key in have:
+            continue
+        d["termine"].append({"sym": c["sym"], "name": c.get("name", c["sym"]), "art": t["art"], "datum": t["datum"],
+                             "betrag": b, "waehrung": (t.get("waehrung") or "").strip()[:4], "quelle": url})
+        have.add(key); new += 1
+    cut = (datetime.now(timezone.utc) - timedelta(days=14)).strftime("%Y-%m-%d")
+    d["termine"] = sorted([t for t in d["termine"] if t["datum"] >= cut], key=lambda t: (t["datum"], t["sym"]))
+    json.dump(d, open(TERMINE, "w", encoding="utf-8"), ensure_ascii=False, indent=1)
+    if new:
+        log(f"  {new} Termin(e) gespeichert")
+
+
 def slugify(s):
     s = s.lower().replace("ä", "ae").replace("ö", "oe").replace("ü", "ue").replace("ß", "ss")
     return re.sub(r"[^a-z0-9]+", "-", s).strip("-")[:70] or "meldung"
@@ -457,6 +493,8 @@ def main():
         if (c.get("src") == "sec" and "2.02" in c.get("items", []) and c["sym"] in watch and longs < MAX_LONG and not a.dry
                 and not os.environ.get("KURZ_MOCK")):
             if long_article(c, state): longs += 1
+        if out and out.get("termine") and not a.dry:
+            save_termine(c, out["termine"], text, url)
         if not out or not out.get("relevant"):
             log("  nicht relevant:", (out or {}).get("reason", "")[:100]); continue
         if not (out.get("title") and out.get("body_markdown") and out.get("description")):

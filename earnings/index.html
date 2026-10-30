@@ -65,6 +65,7 @@ img.ek-logo{background:#fff}
 <div id="days" class="ek-days" aria-label="Tage"></div>
 <div class="ek-bar"><select id="scope" aria-label="Auswahl"><option value="big">Große Unternehmen weltweit</option><option value="mp">Meine Werte und beliebte Dividendenaktien</option><option value="mine">Nur meine Werte (Watchlist, Depot)</option><option value="all">Alle US-Firmen (auch kleine)</option></select><input id="q" type="search" placeholder="Firma oder Kürzel suchen" aria-label="Suchen"><button id="clear" type="button" hidden>Filter zurücksetzen</button><span id="upd" class="ek-sub"></span></div>
 <div id="list" aria-live="polite"><div class="ek-empty">Lade Termine …</div></div>
+<div id="termine"></div>
 <h2>So liest du die Tabelle</h2>
 <ul>
 <li><strong>Gewinn je Aktie und Umsatz:</strong> Vor der Veröffentlichung steht die Schätzung der Analysten, danach der gemeldete Wert. Die Veränderung vergleicht mit dem gleichen Quartal des Vorjahres.</li>
@@ -202,6 +203,11 @@ $("list").onclick=function(e){if(e.target.closest("a"))return;var r=e.target.clo
     $("scope").value=scope;
     $("upd").textContent=CAL.length+" Termine geladen"}
   catch(e){$("list").innerHTML='<div class="ek-empty">Termine konnten nicht geladen werden: '+esc(e.message)+(/40[23]/.test(e.message)?" – Der Earnings-Kalender ist in deinem FMP-Tarif möglicherweise nicht enthalten.":"")+"</div>"}
+  try{var tr=await fetch("../data/termine.json",{cache:"no-cache"});if(tr.ok){var TJ=(await tr.json()).termine||[],td=key(new Date());
+    TJ=TJ.filter(function(x){return x.datum>=td});
+    if(TJ.length){var ART={ergebnis:"Zahlen",dividende_exdatum:"Ex-Dividenden-Tag",dividende_zahltag:"Dividenden-Zahltag"};
+      $("termine").innerHTML='<h2>Angekündigte Termine aus Unternehmensmeldungen</h2><p class="ek-sub">Aus Pressemitteilungen übernommen, vor allem für Firmen außerhalb der USA. Nur Termine, die im Original genannt werden.</p><div class="ek-list">'+TJ.map(function(x){
+        return '<div class="ek-item"><div class="ek-row" style="cursor:default">'+logo(x.sym,x.name)+'<span class="ek-m"><span class="ek-nm"><a href="../aktien/?s='+encodeURIComponent(x.sym)+'">'+esc(x.name)+'</a></span><span class="ek-pills"><span class="ek-badge">'+esc(ART[x.art]||x.art)+'</span></span></span><span class="ek-fig"><div>'+esc(fmtDay(x.datum))+'<span>'+(x.betrag?esc(x.betrag)+" "+esc(x.waehrung)+" je Aktie":"")+(x.quelle?' · <a href="'+esc(x.quelle)+'" rel="noopener nofollow">Quelle</a>':"")+'</span></div></span></div></div>'}).join("")+"</div>"}}}catch(e3){}
   render();
 })();
 })();
