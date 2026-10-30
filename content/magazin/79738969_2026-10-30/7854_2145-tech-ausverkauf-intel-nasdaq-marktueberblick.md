@@ -4,7 +4,7 @@ description: "Enttäuschende Zahlen von Alphabet, Amazon und Intel schicken die 
 date: 2026-10-30 21:45
 author: "Redaktions-Team Dividenden-Rechner.de"
 author_bio: "Das Redaktions-Team von Dividenden-Rechner.de schreibt über Dividendenaktien, Kennzahlen und Steuerthemen für Privatanleger. Die Rechner und Auswertungen auf der Seite entstehen im eigenen Haus."
-category: Marktüberblick
+category: Analyse
 draft: true
 ---
 <!-- PRÜFEN: Marktüberblick aus Screenshots und Textauszug des Redakteurs (Wall Street Journal Live-Ticker vom 30.10.2026, Handelsblatt Marktbericht vom 30.10.2026, 20:57 Uhr). Links zu den Originalartikeln bitte unten bei "Quellen" einsetzen. Kursstände können sich im Tagesverlauf von den Zahlen der Quellen unterscheiden. -->
