@@ -11,6 +11,7 @@ image_credit: "Foto: Berardo62 / Wikimedia Commons, CC BY-SA 2.0"
 image_source: https://commons.wikimedia.org/wiki/File:Offshore_oil_rig.jpg
 logo_name: "Chevron Corporation"
 logo_symbol: CVX
+logo_file: assets/logos/cvx.png
 ---
 <!-- PRÜFEN: Aufmacherfoto ist automatisch von  gewaehlt: bitte pruefen, ob es zum Artikel passt (sonst image-Zeilen entfernen, dann entsteht ein Titelbild automatisch). -->
 <!-- PRÜFEN: Diese Werte wurden im Berichtstext nicht gefunden: Grafik U.S. Upstream: 3293; Grafik Int'l Upstream: 2405; Grafik U.S. Downstream: 3585; Grafik Int'l Downstream: 1346; Grafik All Other: -705 -->
