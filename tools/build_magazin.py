@@ -556,15 +556,15 @@ def rubrik_html(posts, pre):
     names = [n for n, _ in RUBRIKEN if n in cnt] + (["Weitere Meldungen"] if "Weitere Meldungen" in cnt else [])
     data = [{"s": x["slug"], "t": x["title"], "r": rubrik_of(x["category"]), "c": x["category"], "d": de_dt_kurz(x["dt"]),
              "l": (pre + x["logo_file"]) if x.get("logo_file") and os.path.exists(x["logo_file"]) and not x["logo_file"].endswith(".mono.png") else ""} for x in posts]
-    h = '<nav class="rubriken" aria-label="Nach Rubrik filtern"><button type="button" class="rb on" data-r="">Alle <span>%d</span></button>' % len(posts)
-    h += "".join('<button type="button" class="rb" data-r="%s">%s <span>%d</span></button>' % (esc(n), esc(n), cnt[n]) for n in names) + "</nav>\n"
+    h = '<nav class="rubriken" aria-label="Nach Rubrik filtern"><button type="button" class="rb on" data-r="">Alle</button>'
+    h += "".join('<button type="button" class="rb" data-r="%s">%s</button>' % (esc(n), esc(n)) for n in names) + "</nav>\n"
     h += '<div id="catres" hidden></div>\n<script type="application/json" id="magdata">%s</script>\n' % json.dumps(data, ensure_ascii=False).replace("</", "<\\/")
     h += """<script>(function(){var d=JSON.parse(document.getElementById("magdata").textContent),bs=document.querySelectorAll(".rb"),res=document.getElementById("catres"),mn;
 function e(s){return String(s).replace(/[&<>"]/g,function(c){return{"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]})}
 function go(r,push){mn=document.getElementById("magmain");Array.prototype.forEach.call(bs,function(b){b.classList.toggle("on",b.getAttribute("data-r")===r)});
 if(!r){res.hidden=true;mn.hidden=false;if(push)history.replaceState(null,"",location.pathname);return}
 var l=d.filter(function(x){return x.r===r});mn.hidden=true;res.hidden=false;
-res.innerHTML='<h2 class="mag-more-h">'+e(r)+' ('+l.length+')</h2><ul class="mag-archiv">'+l.map(function(x){return '<li><a href="'+e(x.s)+'/"><span class="arlogo">'+(x.l?'<img src="'+e(x.l)+'" alt="" loading="lazy">':e(x.t.charAt(0)))+'</span><span class="artx"><span class="kicker">'+e(x.c)+' · '+e(x.d)+'</span><strong>'+e(x.t)+'</strong></span></a></li>'}).join("")+'</ul>';
+res.innerHTML='<h2 class="mag-more-h">'+e(r)+'</h2><ul class="mag-archiv">'+l.map(function(x){return '<li><a href="'+e(x.s)+'/"><span class="arlogo">'+(x.l?'<img src="'+e(x.l)+'" alt="" loading="lazy">':e(x.t.charAt(0)))+'</span><span class="artx"><span class="kicker">'+e(x.c)+' · '+e(x.d)+'</span><strong>'+e(x.t)+'</strong></span></a></li>'}).join("")+'</ul>';
 if(push)history.replaceState(null,"","#rubrik="+encodeURIComponent(r))}
 Array.prototype.forEach.call(bs,function(b){b.onclick=function(){go(b.getAttribute("data-r"),true)}});
 document.addEventListener("DOMContentLoaded",function(){var m=/#rubrik=([^&]+)/.exec(location.hash);if(m)go(decodeURIComponent(m[1]),false)})})();</script>
