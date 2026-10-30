@@ -262,27 +262,96 @@ def cashtag(p):
     return "$" + base
 
 
+ICONS = {
+    "x": '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>',
+    "instagram": '<svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5.2" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="12" cy="12" r="4.1" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="17.3" cy="6.7" r="1.3"/></svg>',
+    "facebook": '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>',
+    "linkedin": '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>',
+    "whatsapp": '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a10 10 0 00-8.6 15.1L2 22l5-1.3A10 10 0 1012 2zm0 18.2c-1.5 0-3-.4-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1112 20.2zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1-1.4-.7-2.4-1.3-3.3-2.9-.2-.4.2-.4.7-1.3.1-.2 0-.3 0-.5l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5c-.2 0-.5.1-.7.3-.8.8-1 1.7-.9 2.6.2 1.1.8 2.1 1.6 3 1.4 1.7 3.1 2.6 5.2 3.2.7.2 1.3.2 1.8.1.6-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.2-1.2-.1-.1-.3-.2-.5-.3z"/></svg>',
+    "telegram": '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9.78 18.65l.28-4.23 7.68-6.92c.34-.31-.07-.46-.52-.19L7.74 13.3 3.64 12c-.88-.25-.89-.86.2-1.3l15.97-6.16c.73-.33 1.43.18 1.15 1.3l-2.72 12.81c-.19.91-.74 1.13-1.5.71L12.6 16.3l-1.99 1.93c-.23.23-.42.42-.83.42z"/></svg>',
+    "mail": '<svg viewBox="0 0 24 24" aria-hidden="true"><rect x="2.5" y="5" width="19" height="14" rx="2.2" fill="none" stroke="currentColor" stroke-width="2"/><path d="M3.5 7l8.5 6.2L20.5 7" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg>',
+    "link": '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M10 14a4 4 0 005.7 0l3-3a4 4 0 00-5.7-5.7l-1 1M14 10a4 4 0 00-5.7 0l-3 3a4 4 0 005.7 5.7l1-1" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>',
+}
+
+
+def kurz_lines(md_text):
+    """Kennzahlzeilen (Umsatz, Gewinn) aus dem Kurz-gesagt-Kasten, ohne Markdown-Zeichen."""
+    m = re.search(r'^!!! kurz[^\n]*\n((?:    [^\n]*\n|\n)+)', fix_kurz(md_text), re.M)
+    out = []
+    if m:
+        for ln in m.group(1).splitlines():
+            t = ln.strip()
+            if re.match(r"\*\*[^*]+:\*\*", t) and not re.match(r"\d+\.", t):
+                out.append(re.sub(r"\*\*", "", t).strip())
+    return out[:3]
+
+
+def kurz_points(md_text):
+    """Die drei nummerierten Punkte aus dem Kurz-gesagt-Kasten als kurze Texte."""
+    m = re.search(r'^!!! kurz[^\n]*\n((?:    [^\n]*\n|\n)+)', fix_kurz(md_text), re.M)
+    out = []
+    if m:
+        for ln in m.group(1).splitlines():
+            t = re.match(r"\s*\d+\.\s*(.+)", ln)
+            if t:
+                out.append(re.sub(r"\*\*", "", t.group(1)).strip())
+    return out[:3]
+
+
 def share_html(p, url, img):
-    """Teilen-Leiste: X (Text, Cashtag und Link; das Bild kommt ueber die Vorschaukarte des Links) und Instagram (Bild und Text ueber das Teilen-Menue des Handys)."""
+    """Teilen-Leiste mit Symbolen: X (Text, Cashtag, Link; Bild ueber die Vorschaukarte), Facebook, LinkedIn, WhatsApp, Telegram, E-Mail,
+    Link kopieren und Instagram-Story (9:16-Bild wird im Browser erzeugt und ueber das Teilen-Menue des Handys geteilt)."""
     page = BASE + url
+    q = urllib.parse.quote
     ct = cashtag(p)
     tags = ["#Dividende", "#Aktien"] + (["#Quartalszahlen"] if p.get("category") == "Quartalszahlen" else [])
     x_text = p["title"] + "\n\n" + " ".join(([ct] if ct else []) + tags)
-    ig_tag = ("#" + ct[1:] + " ") if ct else ""
-    ig_text = f'{p["title"]}\n\n{p["description"]}\n\n{ig_tag}' + " ".join(tags) + f"\n\n{page}"
-    xurl = "https://twitter.com/intent/tweet?text=" + urllib.parse.quote(x_text) + "&url=" + urllib.parse.quote(page)
-    return ('<div class="sharebar" data-ig="%s" data-img="%s" data-url="%s"><span class="sharelab">Teilen</span>'
-            '<a class="sharebtn" href="%s" target="_blank" rel="noopener nofollow">Auf X teilen</a>'
-            '<button type="button" class="sharebtn" id="igshare">Instagram (Bild + Text)</button>'
-            '<span class="sharemsg" id="igmsg" role="status"></span></div>\n' % (esc(ig_text), esc(img), esc(page), esc(xurl)))
+    lf = p.get("logo_file") or ""
+    story = {"title": p["title"], "lines": kurz_lines(p.get("body_md", "")), "points": kurz_points(p.get("body_md", "")), "ct": ct, "img": img,
+             "logo": ("../../" + lf) if lf and not lf.endswith(".mono.png") and os.path.exists(lf) else "", "cat": p.get("category", "")}
+    links = [
+        ("x", "Auf X teilen", "https://twitter.com/intent/tweet?text=" + q(x_text) + "&url=" + q(page)),
+        ("facebook", "Auf Facebook teilen", "https://www.facebook.com/sharer/sharer.php?u=" + q(page)),
+        ("linkedin", "Auf LinkedIn teilen", "https://www.linkedin.com/sharing/share-offsite/?url=" + q(page)),
+        ("whatsapp", "Per WhatsApp senden", "https://wa.me/?text=" + q(p["title"] + " " + page)),
+        ("telegram", "Per Telegram senden", "https://t.me/share/url?url=" + q(page) + "&text=" + q(p["title"])),
+        ("mail", "Per E-Mail senden", "mailto:?subject=" + q(p["title"]) + "&body=" + q(p["description"] + "\n\n" + page)),
+    ]
+    h = '<div class="sharebar" data-url="%s" data-story="%s"><span class="sharelab">Teilen</span>' % (esc(page), esc(json.dumps(story, ensure_ascii=False)))
+    h += '<button type="button" class="sharebtn ig" id="igshare" title="Als Instagram-Story teilen" aria-label="Als Instagram-Story teilen">%s</button>' % ICONS["instagram"]
+    for k, label, href in links:
+        h += '<a class="sharebtn %s" href="%s" target="_blank" rel="noopener nofollow" title="%s" aria-label="%s">%s</a>' % (k, esc(href), label, label, ICONS[k])
+    h += '<button type="button" class="sharebtn" id="cpshare" title="Link kopieren" aria-label="Link kopieren">%s</button>' % ICONS["link"]
+    h += '<span class="sharemsg" id="igmsg" role="status"></span></div>\n'
+    return h
 
 
-SHARE_JS = ('''<script>(function(){var b=document.getElementById("igshare");if(!b)return;var bar=b.parentNode,m=document.getElementById("igmsg");
-b.onclick=async function(){var txt=bar.getAttribute("data-ig"),img=bar.getAttribute("data-img");m.textContent="";
-try{var r=await fetch(img),bl=await r.blob(),f=new File([bl],"beitrag.jpg",{type:bl.type||"image/jpeg"});
-if(navigator.canShare&&navigator.canShare({files:[f]})){await navigator.share({files:[f],text:txt});return}}catch(e){if(e&&e.name==="AbortError")return}
-try{await navigator.clipboard.writeText(txt);m.textContent="Text kopiert. Das Bild wird geladen, dann in Instagram einfügen."}catch(e){m.textContent="Bild wird geladen, Text bitte selbst kopieren."}
-var a=document.createElement("a");a.href=img;a.download="beitrag.jpg";a.target="_blank";document.body.appendChild(a);a.click();a.remove()}})();</script>''')
+SHARE_JS = r"""<script>(function(){var bar=document.querySelector(".sharebar");if(!bar)return;var m=document.getElementById("igmsg"),pg=bar.getAttribute("data-url"),S=JSON.parse(bar.getAttribute("data-story")||"{}");
+document.getElementById("cpshare").onclick=async function(){try{await navigator.clipboard.writeText(pg);m.textContent="Link kopiert."}catch(e){m.textContent=pg}};
+function load(u){return new Promise(function(res){if(!u)return res(null);var i=new Image();i.crossOrigin="anonymous";i.onload=function(){res(i)};i.onerror=function(){res(null)};i.src=u})}
+function wrap(c,t,w,max){var o=[],cur="";t.split(/\s+/).forEach(function(x){var y=cur?cur+" "+x:x;if(c.measureText(y).width<=w)cur=y;else{o.push(cur);cur=x}});if(cur)o.push(cur);if(o.length>max){o=o.slice(0,max);o[max-1]=o[max-1].replace(/\s+\S*$/,"")+" …"}return o}
+async function draw(photo,logo){var W=1080,H=1920,cv=document.createElement("canvas");cv.width=W;cv.height=H;var c=cv.getContext("2d");
+var g=c.createLinearGradient(0,0,0,H);g.addColorStop(0,"#0f2a1c");g.addColorStop(1,"#14202b");c.fillStyle=g;c.fillRect(0,0,W,H);
+var F='Inter,"Segoe UI",Roboto,Helvetica,Arial,sans-serif';
+if(photo){var ph=560,r=Math.max(W/photo.width,ph/photo.height),w=photo.width*r,h=photo.height*r;c.save();c.beginPath();c.rect(0,0,W,ph);c.clip();c.drawImage(photo,(W-w)/2,(ph-h)/2,w,h);c.restore();
+var gg=c.createLinearGradient(0,ph-260,0,ph);gg.addColorStop(0,"rgba(15,42,28,0)");gg.addColorStop(1,"#0f2a1c");c.fillStyle=gg;c.fillRect(0,ph-260,W,260)}
+var y=photo?610:260;
+if(logo){c.fillStyle="#fff";c.beginPath();c.roundRect?c.roundRect(60,y-30,150,150,32):c.rect(60,y-30,150,150);c.fill();var s=Math.min(110/logo.width,110/logo.height);c.drawImage(logo,60+(150-logo.width*s)/2,y-30+(150-logo.height*s)/2,logo.width*s,logo.height*s)}
+c.fillStyle="#7fd6a3";c.font="700 34px "+F;c.textBaseline="top";var lab=(S.cat||"News").toUpperCase()+(S.ct?"  ·  "+S.ct:"");c.fillText(lab,logo?240:60,logo?y+40:y);
+y+=170;c.fillStyle="#fff";c.font="800 66px "+F;wrap(c,S.title||"",960,6).forEach(function(l){c.fillText(l,60,y);y+=82});
+y+=40;(S.lines||[]).forEach(function(l){var i=l.indexOf(":"),k=i>0?l.slice(0,i+1):"",v=i>0?l.slice(i+1).trim():l;c.fillStyle="#7fd6a3";c.font="700 46px "+F;c.fillText(k,60,y);var kw=c.measureText(k+" ").width;c.fillStyle="#fff";c.font="800 56px "+F;wrap(c,v,960-kw,2).forEach(function(t,n){c.fillText(t,60+kw,y+(n?66:-6));if(n)y+=66});y+=96});
+y+=10;var stop=false;(S.points||[]).forEach(function(t,n){if(stop)return;c.font="500 34px "+F;var ls=wrap(c,t,880,3);if(y+ls.length*46>H-330){stop=true;return}c.fillStyle="#7fd6a3";c.font="800 36px "+F;c.fillText(String(n+1)+".",60,y);c.fillStyle="#e6efe9";c.font="500 34px "+F;ls.forEach(function(l){c.fillText(l,125,y);y+=46});y+=22});
+c.fillStyle="#9fb3a7";c.font="600 36px "+F;c.fillText("dividenden-rechner.de",60,H-260);
+return new Promise(function(res){cv.toBlob(res,"image/png")})}
+document.getElementById("igshare").onclick=async function(){m.textContent="Story-Bild wird erstellt …";
+try{if(document.fonts&&document.fonts.load)await document.fonts.load("800 66px Inter")}catch(e){}
+var photo=await load(S.img),logo=await load(S.logo),bl=null;
+try{bl=await draw(photo,logo)}catch(e){bl=null}
+if(!bl)try{bl=await draw(null,logo)}catch(e){}
+if(!bl){m.textContent="Das Story-Bild konnte nicht erstellt werden.";return}
+var f=new File([bl],"story.png",{type:"image/png"});m.textContent="";
+try{if(navigator.canShare&&navigator.canShare({files:[f]})){await navigator.share({files:[f]});return}}catch(e){if(e&&e.name==="AbortError")return}
+var a=document.createElement("a");a.href=URL.createObjectURL(bl);a.download="story.png";document.body.appendChild(a);a.click();a.remove();m.textContent="Bild gespeichert. In Instagram: Story → Bild aus der Galerie wählen."}})();</script>"""
 
 
 def build_post(p, posts):
@@ -326,7 +395,7 @@ def build_post(p, posts):
     o += f'<p class="kicker">{esc(p["category"])}</p>\n{logo_html(p)}<p class="lead">{esc(p["description"])}</p>\n'
     upd = f' · Aktualisiert: <time datetime="{iso(p["upd"])}">{de_date(p["upd"])}</time>' if p["upd"].date() > p["dt"].date() else ""
     o += f'<p class="byline">Von <strong>{esc(author)}</strong> · <time datetime="{iso(p["dt"])}">{de_dt(p["dt"])}</time>{upd} · {mins} Min. Lesezeit</p>\n'
-    o += share_html(p, url, absu(img))
+    o += share_html(p, url, img if ext(img) else pre + img)
     alt = p.get("image_alt") or p["title"]
     cred = credit_html(p)
     cap = f'<figcaption>{cred}</figcaption>' if cred else ""
