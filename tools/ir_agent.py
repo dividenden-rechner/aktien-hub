@@ -697,6 +697,35 @@ def unsplash_candidates(terms, per=8):
     return list(out.values())
 
 
+def unsplash_find(match, terms, pages=3):
+    """Sucht ein bestimmtes Unsplash-Foto (Teil der Bildadresse, z. B. photo-1578356058390-f58c575337a2) ueber Suchbegriffe."""
+    key = os.environ.get("UNSPLASH_ACCESS_KEY")
+    if not key:
+        return None
+    for term in terms:
+        for pg in range(1, pages + 1):
+            qs = urllib.parse.urlencode({"query": term, "per_page": 30, "page": pg})
+            try:
+                req = urllib.request.Request("https://api.unsplash.com/search/photos?" + qs,
+                                             headers={"Authorization": "Client-ID " + key, "Accept-Version": "v1", "User-Agent": "dividenden-rechner.de Magazin-Agent"})
+                with urllib.request.urlopen(req, timeout=30) as r:
+                    data = json.loads(r.read().decode("utf-8", "replace"))
+            except Exception as e:
+                print("Unsplash nicht erreichbar:", e); return None
+            for it in data.get("results", []):
+                if match in (it.get("urls") or {}).get("raw", ""):
+                    u = it.get("user") or {}; links = it.get("links") or {}
+                    return {"title": "Unsplash " + it["id"], "thumb": it["urls"]["raw"] + ("&" if "?" in it["urls"]["raw"] else "?") + "w=1600&q=80&fm=jpg&fit=max",
+                            "page": (links.get("html") or "https://unsplash.com") + "?utm_source=dividenden-rechner&utm_medium=referral",
+                            "artist": u.get("name") or "Unbekannt",
+                            "artist_url": ((u.get("links") or {}).get("html") or "https://unsplash.com") + "?utm_source=dividenden-rechner&utm_medium=referral",
+                            "lic": "Unsplash-Lizenz", "quelle": "Unsplash", "desc": _strip(it.get("description") or it.get("alt_description") or "")[:200],
+                            "date": (it.get("created_at") or "")[:10], "download": links.get("download_location", "")}
+            if len(data.get("results", [])) < 30:
+                break
+    return None
+
+
 def _short_artist(a):
     a = re.split(r"\s(?:I'd appreciate|This file is|Licensed|Lizenz|Attribution|CC[ -]BY|https?://)", a or "", 1)[0]
     a = re.sub(r"\s*\(\s*[^)]*\)\s*", " ", a).strip(" ,.-")

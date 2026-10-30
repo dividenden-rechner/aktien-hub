@@ -35,13 +35,23 @@ def main():
         print("Logo-Angaben gesetzt, fetch_logos holt das Logo neu.")
     if a.terms:
         terms = [t.strip() for t in a.terms.split(",") if t.strip()]
-        cands, _ = ia.commons_candidates(name, terms=terms)
-        uns = ia.unsplash_candidates(terms)
+        want = [t[6:].strip() for t in terms if t.startswith("match:")]
+        terms = [t for t in terms if not t.startswith("match:")]
+        if want:      # bestimmtes Unsplash-Foto (vom Redakteur ausgesucht) statt Modellauswahl
+            ph = ia.unsplash_find(want[0], terms)
+            print("Gefunden:" if ph else "Foto ueber die Suche nicht gefunden (andere Suchbegriffe angeben).", (ph or {}).get("title", ""))
+            cands = [ph] if ph else []
+        else:
+            cands, _ = ia.commons_candidates(name, terms=terms)
+        uns = [] if want else ia.unsplash_candidates(terms)
         cands = cands + uns
         print(f"Foto-Kandidaten: {len(cands)} (Commons {len(cands) - len(uns)}, Unsplash {len(uns)})")
         for i, c in enumerate(cands[:30]):
             print(f"  {i}: {c['title']} | {c['desc'][:80]}")
-        if cands:
+        idx = -1
+        if want and cands:
+            idx = 0
+        elif cands:
             listing = "\n".join(f"{i}: {c['title']} | {c['desc']} | {c['date']}" for i, c in enumerate(cands))
             prompt = (f"Waehle ein Titelfoto fuer einen Boersenartikel ueber {name}" + (f" ({a.fokus})" if a.fokus else "") + ". "
                       "Gut: Filiale, Produkt im Alltag, Szene, die eindeutig zum Unternehmen gehoert, ansprechende Komposition, helles scharfes Bild. "
@@ -49,19 +59,19 @@ def main():
                       "Wenn nichts wirklich passt, antworte -1.\n\n" + listing)
             idx = ia._generate([{"text": prompt}], {"type": "OBJECT", "required": ["index"], "properties": {"index": {"type": "INTEGER"}}}, ia.api_key())["index"]
             print("Auswahl durch das Modell:", idx)
-            if isinstance(idx, int) and 0 <= idx < len(cands):
-                ph = cands[idx]
-                slug = a.slug
-                rel = ia.save_photo(ph, slug)
-                q = lambda t: '"' + str(t).replace('"', "'") + '"'
-                head = setf(head, "image", rel)
-                head = setf(head, "image_alt", q(f"Foto zu {name}: " + (ph["desc"] or ph["title"].replace("File:", ""))))
-                head = setf(head, "image_credit", q(ia.photo_credit(ph)))
-                head = setf(head, "image_source", ph["page"])
-                head = setf(head, "image_artist_url", ph.get("artist_url") or "")
-                print("Neues Foto:", ph["title"], "->", rel)
-            else:
-                print("Kein passendes Foto gefunden, altes bleibt.")
+        if isinstance(idx, int) and 0 <= idx < len(cands):
+            ph = cands[idx]
+            slug = a.slug
+            rel = ia.save_photo(ph, slug)
+            q = lambda t: '"' + str(t).replace('"', "'") + '"'
+            head = setf(head, "image", rel)
+            head = setf(head, "image_alt", q(f"Foto zu {name}: " + (ph["desc"] or ph["title"].replace("File:", ""))))
+            head = setf(head, "image_credit", q(ia.photo_credit(ph)))
+            head = setf(head, "image_source", ph["page"])
+            head = setf(head, "image_artist_url", ph.get("artist_url") or "")
+            print("Neues Foto:", ph["title"], "->", rel)
+        else:
+            print("Kein passendes Foto gefunden, altes bleibt.")
     open(path, "w", encoding="utf-8").write(f"---\n{head}\n---\n{body}")
 
 
