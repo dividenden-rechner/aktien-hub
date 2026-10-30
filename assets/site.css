@@ -136,3 +136,5 @@ article p,article li,article td{overflow-wrap:anywhere}
 @media(max-width:760px){.mag-archiv{grid-template-columns:1fr}}
 .kurzquelle{font-size:14px;color:var(--mut);margin:14px 0}.mag-kurz{margin-bottom:28px}
 .kurzcover{max-width:260px}
+
+.sharebar{display:flex;flex-wrap:wrap;align-items:center;gap:8px;margin:0 0 18px}.sharelab{font-size:13px;color:var(--mut);text-transform:uppercase;letter-spacing:.06em;margin-right:4px}.sharebtn{font:inherit;font-size:14px;font-weight:600;color:var(--acc);background:#fff;border:1px solid #bfe0cd;border-radius:999px;padding:7px 14px;cursor:pointer;text-decoration:none}.sharebtn:hover{background:var(--soft)}.sharemsg{font-size:13px;color:var(--mut);flex-basis:100%}

@@ -2,7 +2,7 @@
 """Baut das Magazin: Markdown-Dateien in content/magazin/*.md -> HTML-Seiten, Übersicht, RSS-Feed, Sitemap, llms.txt,
 Startseiten-Teaser und Navigationseintrag. Aufruf im Repo-Hauptordner:  python3 tools/build_magazin.py
 Benötigt: pip install markdown pillow"""
-import re, os, sys, json, html, glob, datetime, email.utils
+import urllib.parse, re, os, sys, json, html, glob, datetime, email.utils
 from zoneinfo import ZoneInfo
 import markdown
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
@@ -248,6 +248,43 @@ def logo_html(p):
     return (f'<div class="titlerow"><img class="hlogo" src="{src}" alt="" width="56" height="56" onerror="{fb}">'
             f'<h1>{esc(p["title"])}</h1></div>\n')
 
+_BOERSEN_ZUSATZ = {"F", "NE", "BE", "DU", "MU", "SG", "HM", "HA", "VI"}      # Nebenplaetze: dafuer gibt es keinen sinnvollen Cashtag
+
+
+def cashtag(p):
+    """$TICKER fuer X (nur Buchstaben; Boersenzusatz wie .L oder .DE entfaellt, Nebenplaetze und Zahlenkuerzel nicht)."""
+    sym = (p.get("x_cashtag") or p.get("logo_symbol") or "").strip().upper()
+    if not sym:
+        return ""
+    base, _, suf = sym.partition(".")
+    if suf in _BOERSEN_ZUSATZ or not re.fullmatch(r"[A-Z]{1,6}", base):
+        return ""
+    return "$" + base
+
+
+def share_html(p, url, img):
+    """Teilen-Leiste: X (Text, Cashtag und Link; das Bild kommt ueber die Vorschaukarte des Links) und Instagram (Bild und Text ueber das Teilen-Menue des Handys)."""
+    page = BASE + url
+    ct = cashtag(p)
+    tags = ["#Dividende", "#Aktien"] + (["#Quartalszahlen"] if p.get("category") == "Quartalszahlen" else [])
+    x_text = p["title"] + "\n\n" + " ".join(([ct] if ct else []) + tags)
+    ig_tag = ("#" + ct[1:] + " ") if ct else ""
+    ig_text = f'{p["title"]}\n\n{p["description"]}\n\n{ig_tag}' + " ".join(tags) + f"\n\n{page}"
+    xurl = "https://twitter.com/intent/tweet?text=" + urllib.parse.quote(x_text) + "&url=" + urllib.parse.quote(page)
+    return ('<div class="sharebar" data-ig="%s" data-img="%s" data-url="%s"><span class="sharelab">Teilen</span>'
+            '<a class="sharebtn" href="%s" target="_blank" rel="noopener nofollow">Auf X teilen</a>'
+            '<button type="button" class="sharebtn" id="igshare">Instagram (Bild + Text)</button>'
+            '<span class="sharemsg" id="igmsg" role="status"></span></div>\n' % (esc(ig_text), esc(img), esc(page), esc(xurl)))
+
+
+SHARE_JS = ('''<script>(function(){var b=document.getElementById("igshare");if(!b)return;var bar=b.parentNode,m=document.getElementById("igmsg");
+b.onclick=async function(){var txt=bar.getAttribute("data-ig"),img=bar.getAttribute("data-img");m.textContent="";
+try{var r=await fetch(img),bl=await r.blob(),f=new File([bl],"beitrag.jpg",{type:bl.type||"image/jpeg"});
+if(navigator.canShare&&navigator.canShare({files:[f]})){await navigator.share({files:[f],text:txt});return}}catch(e){if(e&&e.name==="AbortError")return}
+try{await navigator.clipboard.writeText(txt);m.textContent="Text kopiert. Das Bild wird geladen, dann in Instagram einfügen."}catch(e){m.textContent="Bild wird geladen, Text bitte selbst kopieren."}
+var a=document.createElement("a");a.href=img;a.download="beitrag.jpg";a.target="_blank";document.body.appendChild(a);a.click();a.remove()}})();</script>''')
+
+
 def build_post(p, posts):
     slug = p["slug"]; depth = 2; pre = "../" * depth
     url = f"news/{slug}/"
@@ -289,6 +326,7 @@ def build_post(p, posts):
     o += f'<p class="kicker">{esc(p["category"])}</p>\n{logo_html(p)}<p class="lead">{esc(p["description"])}</p>\n'
     upd = f' · Aktualisiert: <time datetime="{iso(p["upd"])}">{de_date(p["upd"])}</time>' if p["upd"].date() > p["dt"].date() else ""
     o += f'<p class="byline">Von <strong>{esc(author)}</strong> · <time datetime="{iso(p["dt"])}">{de_dt(p["dt"])}</time>{upd} · {mins} Min. Lesezeit</p>\n'
+    o += share_html(p, url, absu(img))
     alt = p.get("image_alt") or p["title"]
     cred = credit_html(p)
     cap = f'<figcaption>{cred}</figcaption>' if cred else ""
@@ -307,7 +345,7 @@ def build_post(p, posts):
         o += '<aside class="related"><h2>Weitere Artikel</h2><ul>\n' + "\n".join(f'<li><a href="{pre}news/{x["slug"]}/">{esc(x["title"])}</a></li>' for x in others) + "\n</ul></aside>\n"
     o += (f'<aside class="note" style="background:#f0fdf4;border-left-color:#10b981"><strong>Passende Werkzeuge:</strong> Prüfe Aktien im <a href="{pre}aktien/">Aktien-Hub</a>, '
           f'filtere mit dem <a href="{pre}screener/">Screener</a> oder rechne mit den <a href="{pre}">Rechnern</a>.</aside>\n')
-    o += HINT + "\n</article></main>\n" + footer_html(depth) + "\n</body>\n</html>\n"
+    o += HINT + "\n</article></main>\n" + footer_html(depth) + "\n" + SHARE_JS + "\n</body>\n</html>\n"
     os.makedirs(f"news/{slug}", exist_ok=True)
     open(f"news/{slug}/index.html", "w", encoding="utf-8").write(o)
     p["img"] = img; p["html"] = body; p["mins"] = mins; p["glossar_hits"] = [{k: h[k] for k in ("id", "url", "title")} for h in hits]
