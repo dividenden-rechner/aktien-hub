@@ -141,3 +141,5 @@ article p,article li,article td{overflow-wrap:anywhere}
 .kchip{display:inline-flex;align-items:center;gap:8px;flex-wrap:wrap;margin:0 0 12px;padding:5px 12px;border:1px solid var(--line);border-radius:999px;background:#fff;font-size:14px;font-weight:700;color:#14202b}
 .kchip-kurs{font-weight:600;color:#33414d}.kchip-kurs .up{color:#1a7a45}.kchip-kurs .down{color:#c0392b}
 .kchip-row{margin:0 0 6px}
+.rubriken{display:flex;flex-wrap:wrap;gap:8px;margin:14px 0 22px}.rb{font:inherit;font-size:14px;font-weight:600;padding:7px 14px;border:1px solid var(--line);border-radius:999px;background:#fff;color:var(--ink);cursor:pointer}.rb span{font-weight:500;color:#667;margin-left:4px}.rb.on{background:#1a7a45;border-color:#1a7a45;color:#fff}.rb.on span{color:#d6f2e2}
+#magmain[hidden],#catres[hidden]{display:none}

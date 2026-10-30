@@ -539,6 +539,39 @@ def mini_logo(x, pre):
     name = re.sub(r"[^A-Za-z0-9]", "", x.get("title", "?")) or "?"
     return f'<span class="arlogo mono">{esc(name[0].upper())}</span>'
 
+RUBRIKEN = [("Quartalszahlen & Berichte", {"Quartalszahlen", "Zahlen", "Jahresbericht", "Halbjahreszahlen"}), ("Dividende", {"Dividende"}), ("Aktienrückkauf", {"Aktienrückkauf"}),
+            ("Übernahme", {"Übernahme"}), ("Management", {"Management"}), ("Ausblick", {"Ausblick"}), ("Recht & Regulierung", {"Recht & Regulierung"})]
+
+
+def rubrik_of(cat):
+    for n, cs in RUBRIKEN:
+        if cat in cs: return n
+    return "Weitere Meldungen"
+
+
+def rubrik_html(posts, pre):
+    """Filterleiste nach Rubrik (Schaltflaechen) mit eingebetteter Artikelliste; die Ergebnisse zeigt ein kleines Skript."""
+    cnt = {}
+    for x in posts: cnt[rubrik_of(x["category"])] = cnt.get(rubrik_of(x["category"]), 0) + 1
+    names = [n for n, _ in RUBRIKEN if n in cnt] + (["Weitere Meldungen"] if "Weitere Meldungen" in cnt else [])
+    data = [{"s": x["slug"], "t": x["title"], "r": rubrik_of(x["category"]), "c": x["category"], "d": de_dt_kurz(x["dt"]),
+             "l": (pre + x["logo_file"]) if x.get("logo_file") and os.path.exists(x["logo_file"]) and not x["logo_file"].endswith(".mono.png") else ""} for x in posts]
+    h = '<nav class="rubriken" aria-label="Nach Rubrik filtern"><button type="button" class="rb on" data-r="">Alle <span>%d</span></button>' % len(posts)
+    h += "".join('<button type="button" class="rb" data-r="%s">%s <span>%d</span></button>' % (esc(n), esc(n), cnt[n]) for n in names) + "</nav>\n"
+    h += '<div id="catres" hidden></div>\n<script type="application/json" id="magdata">%s</script>\n' % json.dumps(data, ensure_ascii=False).replace("</", "<\\/")
+    h += """<script>(function(){var d=JSON.parse(document.getElementById("magdata").textContent),bs=document.querySelectorAll(".rb"),res=document.getElementById("catres"),mn;
+function e(s){return String(s).replace(/[&<>"]/g,function(c){return{"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]})}
+function go(r,push){mn=document.getElementById("magmain");Array.prototype.forEach.call(bs,function(b){b.classList.toggle("on",b.getAttribute("data-r")===r)});
+if(!r){res.hidden=true;mn.hidden=false;if(push)history.replaceState(null,"",location.pathname);return}
+var l=d.filter(function(x){return x.r===r});mn.hidden=true;res.hidden=false;
+res.innerHTML='<h2 class="mag-more-h">'+e(r)+' ('+l.length+')</h2><ul class="mag-archiv">'+l.map(function(x){return '<li><a href="'+e(x.s)+'/"><span class="arlogo">'+(x.l?'<img src="'+e(x.l)+'" alt="" loading="lazy">':e(x.t.charAt(0)))+'</span><span class="artx"><span class="kicker">'+e(x.c)+' · '+e(x.d)+'</span><strong>'+e(x.t)+'</strong></span></a></li>'}).join("")+'</ul>';
+if(push)history.replaceState(null,"","#rubrik="+encodeURIComponent(r))}
+Array.prototype.forEach.call(bs,function(b){b.onclick=function(){go(b.getAttribute("data-r"),true)}});
+document.addEventListener("DOMContentLoaded",function(){var m=/#rubrik=([^&]+)/.exec(location.hash);if(m)go(decodeURIComponent(m[1]),false)})})();</script>
+"""
+    return h
+
+
 def build_index(posts):
     depth = 1; pre = "../"; url = "news/"
     title = "News: Dividenden, Kennzahlen und Steuern erklärt"
@@ -559,6 +592,7 @@ def build_index(posts):
     kurz_posts = [x for x in posts if x.get("typ") == "kurz"]
     rest = [x for x in posts if x is not hero and x.get("typ") != "kurz"]
     side, grid, archiv = rest[:4], rest[4:12], rest[12:]
+    o += rubrik_html(posts, pre) + '<div id="magmain">\n'
     o += (f'<section class="mag-top" aria-label="Thema des Tages"><a class="mag-hero" href="{hero["slug"]}/"><div class="mcwrap" style="position:relative;margin:0"><img class="mcover" src="{src(pre, hero["img"])}" alt="" width="1200" height="675" fetchpriority="high">{card_logo(hero, pre)}</div>'
           f'<div class="mag-hero-body"><p class="kicker"><span class="mag-badge">Thema des Tages</span> {esc(hero["category"])} · {de_dt_kurz(hero["dt"])}</p><h2>{esc(hero["title"])}</h2><p class="mag-lead">{esc(hero["description"])}</p><span class="mag-more">Artikel lesen →</span></div></a>\n')
     if side:
@@ -585,6 +619,7 @@ def build_index(posts):
             o += (f'<li><a href="{x["slug"]}/">{mini_logo(x, pre)}<span class="artx"><span class="kicker">{esc(x["category"])} · {de_dt_kurz(x["dt"])}</span>'
                   f'<strong>{esc(x["title"])}</strong></span></a></li>\n')
         o += '</ul>\n'
+    o += '</div>\n'
     o += ('<section class="ek-embed" aria-label="Unternehmenskalender"><h2 class="mag-more-h">Unternehmenskalender</h2>\n'
           '<p class="meta">Wann veröffentlichen Dividendenunternehmen ihre Quartalszahlen? <a href="../earnings/">Vollständigen Kalender öffnen</a></p>\n'
           '<iframe src="../earnings/?embed=1" title="Earnings-Kalender" loading="lazy" style="width:100%;height:760px;border:1px solid var(--line);border-radius:12px;background:#fff"></iframe></section>\n')
