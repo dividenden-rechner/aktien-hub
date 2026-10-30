@@ -46,7 +46,7 @@ def main():
                 rel = ia.merge_photos(phs[0], phs[1], a.slug)
                 q = lambda t: '"' + str(t).replace('"', "'") + '"'
                 head = setf(head, "image", rel)
-                head = setf(head, "image_alt", q("Collage aus zwei Fotos: Aktienkurse als Kerzendiagramm auf dunklem Bildschirm und ein Mann im Anzug auf der Strasse"))
+                head = setf(head, "image_alt", q("Collage aus zwei Fotos: " + (a.fokus or "Fotos zum Thema des Artikels")))
                 head = setf(head, "image_credit", q(f"Fotos: {phs[0]['artist']} und {phs[1]['artist']} auf Unsplash"))
                 head = setf(head, "image_source", phs[0]["page"])
                 head = setf(head, "image_artist_url", phs[0]["artist_url"])
