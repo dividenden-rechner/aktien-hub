@@ -178,7 +178,52 @@ def _generate(parts, schema, key):
             return out
         except Exception:
             last = f"{model}: unerwartete Antwort " + json.dumps(res)[:300]
+    out = claude_generate(parts, schema)
+    if out is not None:
+        return out
     fail("Kein Gemini-Modell hat funktioniert. Letzter Fehler: " + last)
+
+
+CLAUDE_CALLS = 0
+
+
+def _lower_schema(x):
+    if isinstance(x, dict):
+        return {k: (v.lower() if k == "type" and isinstance(v, str) else _lower_schema(v)) for k, v in x.items()}
+    if isinstance(x, list):
+        return [_lower_schema(i) for i in x]
+    return x
+
+
+def claude_generate(parts, schema):
+    """Ausweichanbieter, wenn alle Gemini-Modelle ausfallen (zum Beispiel Tageskontingent leer). Nur aktiv mit Secret ANTHROPIC_API_KEY.
+    Antwort kommt als erzwungener Werkzeugaufruf im selben Schema wie bei Gemini. Nur Text, keine Bilder oder PDFs. Liefert None, wenn nicht moeglich."""
+    global CLAUDE_CALLS
+    key = os.environ.get("ANTHROPIC_API_KEY", "").strip()
+    if not key or any("text" not in p for p in parts):
+        return None
+    if CLAUDE_CALLS >= int(os.environ.get("CLAUDE_MAX_PER_RUN", "40")):
+        print("Claude-Ausweichanbieter: Obergrenze fuer diesen Lauf erreicht.")
+        return None
+    body = {"model": os.environ.get("CLAUDE_MODEL", "claude-haiku-5-5"), "max_tokens": 4096, "temperature": 0.3,
+            "tools": [{"name": "antwort", "description": "Gibt das Ergebnis im vorgegebenen Format zurueck.", "input_schema": _lower_schema(schema)}],
+            "tool_choice": {"type": "tool", "name": "antwort"},
+            "messages": [{"role": "user", "content": "\n\n".join(p["text"] for p in parts)}]}
+    req = urllib.request.Request("https://api.anthropic.com/v1/messages", data=json.dumps(body).encode(),
+                                 headers={"Content-Type": "application/json", "x-api-key": key, "anthropic-version": "2023-06-01"})
+    CLAUDE_CALLS += 1
+    try:
+        with urllib.request.urlopen(req, timeout=240) as r:
+            res = json.load(r)
+        for blk in res.get("content", []):
+            if blk.get("type") == "tool_use" and isinstance(blk.get("input"), dict):
+                print("Modell: Claude (Ausweichanbieter)", body["model"])
+                return blk["input"]
+    except urllib.error.HTTPError as e:
+        print("Claude-Problem ->", e.code, e.read().decode()[:300])
+    except Exception as e:
+        print("Claude-Problem ->", e)
+    return None
 
 
 RESEARCH_OFF = False

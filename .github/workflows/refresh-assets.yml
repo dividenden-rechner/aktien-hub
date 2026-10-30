@@ -22,6 +22,7 @@ jobs:
       - name: Foto und Logo erneuern
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
           UNSPLASH_ACCESS_KEY: ${{ secrets.UNSPLASH_ACCESS_KEY }}
           SEC_USER_AGENT: ${{ vars.SEC_USER_AGENT }}
         run: |
