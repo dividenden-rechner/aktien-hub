@@ -120,6 +120,13 @@
   "api.data.fca.org.uk/search",
   "api.data.fca.org.uk/searchsts"
  ],
+ "tiefe": [
+  "index:\"equity-ct\"",
+  "index:\"fca-security\"",
+  "index:\"nsm-category\"",
+  "ontent-%COMP%]{background:#0009;text-align:center;padding:0!important;overflow:auto}.modal-dialog[_ngcontent-%COMP%]{display:inline-block;text-align:left;vertical-align:middle}.modal[_ngcontent-%COMP%]:before{content:\"\";display:inline-block;height:100%;vertical-align:middle;margin-right:-4px}']})}return n})();var _h=(()=>{class n{_http;DEFAULT_MAX_RETRIES=5;DEFAULT_BACKOFF=1e3;CRA_RegistrationData;commonConfiguration;holidaysList;commonConfigSubject=new be(null);commonConfig$=this.commonConfigSubject.asObservable();constructor(e){this._http=e}fetchData(e,o,i){let r=new Je().append(\"Content-Type\",\"application/json\"),a=new Xe().set(\"index\",o);return i&&(a=a.set(\"instrument_type\",i)),this._http.post(Fl.search_api,e,{headers:r,params:a}).pipe(Ei(4),Ce(this.handleError))}fetchDropdownData(e,o){let i=new Je().append(\"Content-Type\",\"application/json\"),r=new Xe().set(\"index\",Fl.nsm_index_name);return this._http.po",
+  "search_api:\"https://api.data.fca.org.uk/search\""
+ ],
  "post_aufrufe": [
   ".post(Fl.search_api,e,{headers:r,params:a})",
   ".post(Fl.sec_serach_api,e,{headers:a,params:s})",
