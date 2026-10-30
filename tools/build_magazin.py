@@ -107,6 +107,7 @@ def fix_kurz(t):
         parts = [x for x in parts if not re.search(r":\*\*\s*(n\.\s?a\.|k\.\s?A\.|keine Angabe)\s*$", x, re.I)]
         return "".join("    " + x + "  \n" for x in parts).rstrip(" \n") if parts else ""
     t = re.sub(r"^    (\*\*(?:Umsatz|Erlöse?|Einnahmen)[^\n]*? · \*\*[^\n]+)$", one, t, flags=re.M)
+    t = re.sub(r"^    \*\*[^*\n]+:\*\*\s*(?:n\.\s?a\.|k\.\s?A\.|keine Angabe)\s*\n", "", t, flags=re.M | re.I)   # leere Kennzahlzeilen entfallen
     # bereits untereinander geschriebene Zeilen: Zeilenumbruch erzwingen
     t = re.sub(r"^(    \*\*(?:Umsatz|Erlöse?|Einnahmen):\*\*[^\n]*?)[ ]*\n(    \*\*(?!\s))", r"\1  \n\2", t, flags=re.M)
     return t
