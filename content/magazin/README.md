@@ -15,7 +15,7 @@ Datei anklicken, dann Stift-Symbol: Zeile `draft: true` löschen und speichern, 
 | 29.10.2026 22:42 | Amazon steigert Umsatz im dritten Quartal auf 201,9 Milliarden Dollar | [79738970_2026-10-29/7757_2242-amazon-q3-2026-zahlen.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/79738970_2026-10-29/7757_2242-amazon-q3-2026-zahlen.md) |
 | 29.10.2026 10:12 | Shell erzielt im dritten Quartal 10,8 Milliarden Dollar Gewinn | [79738970_2026-10-29/8987_1012-shell-q3-2026-ergebnisse.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/79738970_2026-10-29/8987_1012-shell-q3-2026-ergebnisse.md) |
 
-### Online (127)
+### Online (128)
 
 | Datum | Titel | Datei |
 |---|---|---|
@@ -41,6 +41,7 @@ Datei anklicken, dann Stift-Symbol: Zeile `draft: true` löschen und speichern, 
 | 30.10.2026 18:04 | Monolithic Power Systems knackt im dritten Quartal erstmals Milliardenmarke beim Umsatz | [79738969_2026-10-30/8195_1804-monolithic-power-systems-q3-2026-zahlen.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/79738969_2026-10-30/8195_1804-monolithic-power-systems-q3-2026-zahlen.md) |
 | 30.10.2026 18:04 | Gilead Sciences steigert bereinigten Gewinn im Q3 2026 auf 2,55 US-Dollar je Aktie | [79738969_2026-10-30/8195_1804-gilead-sciences-q3-2026-zahlen-dividende.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/79738969_2026-10-30/8195_1804-gilead-sciences-q3-2026-zahlen-dividende.md) |
 | 30.10.2026 18:04 | First Solar steigert Q3-Gewinn auf 571 Millionen US-Dollar | [79738969_2026-10-30/8195_1804-first-solar-q3-2026-zahlen-aktienrueckkauf.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/79738969_2026-10-30/8195_1804-first-solar-q3-2026-zahlen-aktienrueckkauf.md) |
+| 30.10.2026 18:04 | D. R. Horton erhöht Quartalsdividende auf 0,50 US-Dollar und meldet Q4-Gewinn | [79738969_2026-10-30/8195_1804-dr-horton-dividende-q4-2026.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/79738969_2026-10-30/8195_1804-dr-horton-dividende-q4-2026.md) |
 | 30.10.2026 18:04 | Dexcom steigert Q3-Umsatz auf 1,3 Milliarden US-Dollar und erhöht Prognose | [79738969_2026-10-30/8195_1804-dexcom-q3-zahlen-2026.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/79738969_2026-10-30/8195_1804-dexcom-q3-zahlen-2026.md) |
 | 30.10.2026 18:02 | Samsung Electronics erzielt im dritten Quartal 107,4 Billionen KRW operativen Gewinn | [79738969_2026-10-30/8197_1802-samsung-electronics-q3-2026-zahlen-dividende.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/79738969_2026-10-30/8197_1802-samsung-electronics-q3-2026-zahlen-dividende.md) |
 | 30.10.2026 18:02 | Hyundai Motor steigert operativen Gewinn auf 2,7 Billionen KRW | [79738969_2026-10-30/8197_1802-hyundai-motor-q3-ergebnis-2026.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/79738969_2026-10-30/8197_1802-hyundai-motor-q3-ergebnis-2026.md) |

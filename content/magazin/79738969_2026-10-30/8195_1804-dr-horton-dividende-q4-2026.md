@@ -10,6 +10,7 @@ quelle_url: https://www.sec.gov/Archives/edgar/data/882184/000088218426000119/a9
 quelle_name: "Pressemitteilung D. R. Horton (SEC-Meldung)"
 logo_symbol: DHI
 logo_name: "D. R. Horton"
+logo_file: assets/logos/dhi.png
 ---
 <!-- PRÜFEN: Diese Zahlen stehen nicht im Originaltext: Einordnung: 21. Bitte pruefen, dann 'draft: true' loeschen. -->
 
