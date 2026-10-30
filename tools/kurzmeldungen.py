@@ -405,7 +405,7 @@ def esc_yaml(s):
     return str(s).replace("\\", " ").replace('"', "'").replace("\n", " ").strip()
 
 
-def write_post(c, out, url, bad, ctx=None, srcs=None, photo=None):
+def write_post(c, out, url, bad, ctx=None, srcs=None, photo=None, slides=None):
     now = datetime.now(ZoneInfo("Europe/Berlin"))
     slug = slugify(out.get("slug") or out["title"])
     existing = [f for f in os.listdir(OUT_DIR) if f.endswith(f"{slug}.md")]
@@ -423,6 +423,10 @@ def write_post(c, out, url, bad, ctx=None, srcs=None, photo=None):
         head.append("draft: true")
     head.append("---")
     body = out["body_markdown"].strip()
+    if slides:
+        first, _, rest = body.partition("\n\n")
+        figs = "".join(f"\n\n![{esc_yaml(sl['alt'])}](/{sl['rel']})\n*Folie aus der Ergebnispraesentation von {c['name']} (Quelle: Unternehmen)*" for sl in slides)
+        body = first + figs + ("\n\n" + rest if rest else "")
     if ctx:
         body += f"\n\n## {ctx['einordnung_titel'].strip()}\n\n{ctx['einordnung_markdown'].strip()}"
         if srcs:
@@ -475,6 +479,73 @@ def duplicate_of(sym, category, days=3):
         if mc and md and cat_group(mc.group(1).strip()) == cat_group(category) and datetime.strptime(md.group(1), "%Y-%m-%d") >= cut:
             return f
     return ""
+
+
+SLIDE_SCHEMA = {"type": "OBJECT", "required": ["folien"], "properties": {"folien": {"type": "ARRAY", "description": "Hoechstens zwei geeignete Folien, sonst leer", "items": {
+    "type": "OBJECT", "required": ["index", "alt"], "properties": {
+        "index": {"type": "INTEGER", "description": "Nummer des Bildes (ab 0)"},
+        "alt": {"type": "STRING", "description": "Sachliche Bildbeschreibung auf Deutsch, ein Satz, ohne Zahlen"}}}}}}
+
+
+def edgar_slide_images(c, limit=12):
+    """Folien aus Anlagen EX-99.2 ff. der 8-K/6-K: Bilder in HTML-Anlagen oder Seiten einer PDF-Anlage. Liefert [(name, PIL-Bild)]."""
+    import io, subprocess, tempfile
+    from PIL import Image
+    nodash = c["acc"].replace("-", "")
+    base = f"https://www.sec.gov/Archives/edgar/data/{c['cik']}/{nodash}/"
+    files = [x["name"] for x in json.loads(ia.http(base + "index.json", ua=UA_HDR))["directory"]["item"]]
+    ex = [f for f in files if re.search(r"99[-_.]?0?[2-9]", f) and re.search(r"\.(htm|html|pdf)$", f, re.I)]
+    out = []
+    for f in ex[:3]:
+        try:
+            if f.lower().endswith(".pdf"):
+                with tempfile.TemporaryDirectory() as td:
+                    pdf = os.path.join(td, "d.pdf"); open(pdf, "wb").write(ia.http(base + f, binary=True, ua=UA_HDR))
+                    subprocess.run(["pdftoppm", "-r", "80", "-f", "1", "-l", "14", "-png", pdf, os.path.join(td, "p")], check=True, capture_output=True, timeout=120)
+                    for pg in sorted(glob.glob(os.path.join(td, "p*.png"))):
+                        out.append((f, Image.open(pg).convert("RGB").copy()))
+            else:
+                htm = ia.http(base + f, ua=UA_HDR)
+                for src in re.findall(r"<img[^>]+src=[\"']([^\"']+)", htm, re.I)[:40]:
+                    if not re.search(r"\.(jpe?g|png|gif)$", src, re.I) or src.startswith("http"):
+                        continue
+                    data = ia.http(base + src, binary=True, ua=UA_HDR); time.sleep(0.12)
+                    if len(data) < 30000:
+                        continue
+                    im = Image.open(io.BytesIO(data)).convert("RGB")
+                    if im.width >= 600 and 1.2 <= im.width / max(im.height, 1) <= 2.2:
+                        out.append((src, im))
+        except Exception as e:
+            log("  Folien-Anlage nicht lesbar:", f, str(e)[:80])
+        if len(out) >= limit:
+            break
+    return out[:limit]
+
+
+def slides_for(c, slug):
+    """Waehlt per Gemini (Bilder) ein bis zwei aussagekraeftige Folien, speichert sie unter assets/magazin/ und liefert [{rel, alt}]."""
+    import io, base64
+    imgs = edgar_slide_images(c)
+    if len(imgs) < 3:
+        return []
+    parts = [{"text": f"Das sind {len(imgs)} Folien (Nummer 0 bis {len(imgs) - 1}) aus der Ergebnispraesentation von {c['name']}. Waehle hoechstens zwei Folien, die ein "
+                      "aussagekraeftiges Diagramm oder eine Tabelle mit Kernzahlen zeigen (Umsatz, Gewinn, Segmente, Prognose, Kapitalrueckfluss). Nicht geeignet: Titelfolie, "
+                      "Haftungsausschluss, Agenda, Portraets, reine Fotos, Textwuesten. Wenn keine geeignet ist, gib eine leere Liste zurueck."}]
+    for i, (_, im) in enumerate(imgs):
+        t = im.copy(); t.thumbnail((900, 900)); b = io.BytesIO(); t.save(b, "JPEG", quality=70)
+        parts += [{"text": f"Folie {i}:"}, {"inline_data": {"mime_type": "image/jpeg", "data": base64.b64encode(b.getvalue()).decode()}}]
+    sel = ia._generate(parts, SLIDE_SCHEMA, ia.api_key()) or {}
+    res = []
+    for n, f in enumerate((sel.get("folien") or [])[:2], 1):
+        i = f.get("index")
+        if not isinstance(i, int) or not (0 <= i < len(imgs)):
+            continue
+        im = imgs[i][1]; im.thumbnail((1600, 1600))
+        rel = f"assets/magazin/{slug}-folie{n}.jpg"
+        os.makedirs(os.path.join(ia.ROOT, "assets", "magazin"), exist_ok=True)
+        im.save(os.path.join(ia.ROOT, rel), "JPEG", quality=85)
+        res.append({"rel": rel, "alt": (f.get("alt") or "Folie aus der Ergebnispraesentation").strip()})
+    return res
 
 
 def long_article(c, state):
@@ -588,6 +659,18 @@ def main():
         dup = duplicate_of(c["sym"], out.get("category", ""))
         if dup:
             log("  schon behandelt in:", dup); continue
+        slides = []
+        if (c.get("src") == "sec" and cat_group(out.get("category", "")) == "zahlen" and (c["sym"] in watch or c["sym"] in followed or c["sym"] in big)
+                and not a.dry and not os.environ.get("KURZ_MOCK") and bud["n"] + 1 <= budget_allowed()):
+            try:
+                bud["n"] += 1
+                slides = slides_for(c, slugify(out.get("slug") or out["title"]))
+                if slides:
+                    log(f"  {len(slides)} Folie(n) uebernommen")
+            except SystemExit:
+                log("  Folienauswahl: Modell-Fehler")
+            except Exception as e:
+                log("  Folien nicht moeglich:", str(e)[:100])
         bad = unverified_numbers(out["body_markdown"] + " " + out["title"] + " " + out["description"], text)
         bg, srcs = "", []
         ctx = None
@@ -605,7 +688,7 @@ def main():
         photo = person_photo(c, out["foto_person"].strip(), slug_guess) if (out.get("foto_person") or "").strip() and not a.dry else None
         if a.dry:
             log("  [dry]", out["title"], "| ungeprueft:", bad); continue
-        p = write_post(c, out, url, bad, ctx, srcs, photo)
+        p = write_post(c, out, url, bad, ctx, srcs, photo, slides)
         if p:
             made += 1; log("  geschrieben:", os.path.basename(p), "(Entwurf)" if bad else "")
     cut = (datetime.now(timezone.utc) - timedelta(days=30)).strftime("%Y-%m-%d")
