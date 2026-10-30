@@ -14,7 +14,7 @@
   }
   function wrap(c, t, w, max) {
     var out = [], cur = "";
-    String(t || "").split(/\s+/).forEach(function (x) { if (!x) return; var y = cur ? cur + " " + x : x; if (c.measureText(y).width <= w) cur = y; else { out.push(cur); cur = x; } });
+    String(t || "").replace(/\u202f/g, "\u00a0").split(/[ \t\r\n]+/).forEach(function (x) { if (!x) return; var y = cur ? cur + " " + x : x; if (c.measureText(y).width <= w) cur = y; else { out.push(cur); cur = x; } });
     if (cur) out.push(cur);
     if (max && out.length > max) { out = out.slice(0, max); out[max - 1] = out[max - 1].replace(/\s+\S*$/, "") + " …"; }
     return out;

@@ -96,7 +96,8 @@ def read_post(path):
     meta["upd"] = parse_date(meta["updated"]) if meta.get("updated") else meta["dt"]
     meta["body_md"] = fix_kurz(m.group(2).strip())
     for k in ("title", "description"):
-        if meta.get(k): meta[k] = round_big(meta[k])
+        if meta.get(k): meta[k] = nbsp_units(round_big(meta[k]))
+    meta["body_md"] = nbsp_units(meta["body_md"])
     if meta.get("kein_logo", "").lower() in ("ja", "true", "1", "yes"):   # Artikel ohne Firmenlogo (zum Beispiel Marktueberblick)
         meta["logo_file"] = meta["logo_symbol"] = meta["logo_domain"] = ""; meta["kein_logo"] = True
     meta["draft"] = meta.get("draft", "").lower() in ("true", "ja", "1", "yes")
@@ -116,6 +117,15 @@ def round_big(t):
         i, d = str(v).split(".")
         return "{:,}".format(int(i)).replace(",", ".") + "," + d + m.group(3)
     return _BIG.sub(r, t or "")
+
+
+_NB = re.compile(r"(\d) (%|Prozent\b|Mrd\.|Mio\.|Bio\.|USD\b|EUR\b|US-Dollar\b|Euro\b|Dollar\b|Punkte\b|Cent\b|Pence\b)")
+
+
+def nbsp_units(t):
+    """Zahl und Einheit zusammenhalten (feines geschuetztes Leerzeichen), damit '%' nie allein in die naechste Zeile rutscht."""
+    t = _NB.sub("\\1\u202f\\2", t or "")
+    return re.sub(r"(Mrd\.|Mio\.|Bio\.) (USD|EUR|Euro|Dollar|US-Dollar)\b", "\\1\u202f\\2", t)
 
 
 def fix_kurz(t):
