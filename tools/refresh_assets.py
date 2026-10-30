@@ -58,6 +58,7 @@ def main():
                 head = setf(head, "image_alt", q(f"Foto zu {name}: " + (ph["desc"] or ph["title"].replace("File:", ""))))
                 head = setf(head, "image_credit", q(ia.photo_credit(ph)))
                 head = setf(head, "image_source", ph["page"])
+                head = setf(head, "image_artist_url", ph.get("artist_url") or "")
                 print("Neues Foto:", ph["title"], "->", rel)
             else:
                 print("Kein passendes Foto gefunden, altes bleibt.")

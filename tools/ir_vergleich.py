@@ -314,7 +314,7 @@ def main():
     if photo:
         rel = ia.save_photo(photo, slug)
         fm += [f"image: {rel}", f"image_alt: {ia.q('Foto zum Thema ' + ' und '.join(namen) + ': ' + (photo['desc'] or photo['title'].replace('File:', '')))}",
-               f"image_credit: {ia.q(ia.photo_credit(photo))}", f"image_source: {photo['page']}"]
+               f"image_credit: {ia.q(ia.photo_credit(photo))}", f"image_source: {photo['page']}"] + ia.photo_extra(photo)
         hinweise.append(f"Aufmacherfoto ist automatisch von {photo.get('quelle', 'Wikimedia Commons')} zum Thema gewaehlt: bitte pruefen, ob es zum Vergleich passt.")
     else:
         hinweise.append("Kein freies Aufmacherfoto gefunden, das Titelbild entsteht automatisch. Eigenes Foto: image, image_alt, image_credit ergaenzen.")

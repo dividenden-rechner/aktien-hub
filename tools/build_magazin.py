@@ -188,6 +188,31 @@ def make_cover(path, title, category):
     d.text((70, H-52), "Dividenden verstehen, Aktien prüfen", font=font(24, False), fill="#5d6b78")
     im.save(path, optimize=True)
 
+def ext(u):
+    return u.startswith("http")
+
+
+def src(pre, u):
+    """Bildadresse: externe Adressen (Unsplash-Hotlink) unveraendert, eigene Dateien relativ."""
+    return u.replace("&", "&amp;") if ext(u) else pre + u
+
+
+def absu(u):
+    return u if ext(u) else BASE + u
+
+
+def credit_html(p):
+    cred = p.get("image_credit") or ""
+    if "unsplash.com" in (p.get("image_source") or "") and p.get("image_artist_url"):
+        m = re.match(r"Foto:\s*(.*?)\s+auf Unsplash\s*$", cred)
+        nm = esc(m.group(1) if m else cred.replace("Foto:", "").strip())
+        return (f'Foto: <a href="{esc(p["image_artist_url"])}" rel="noopener nofollow" target="_blank">{nm}</a> auf '
+                f'<a href="https://unsplash.com/?utm_source=dividenden-rechner&amp;utm_medium=referral" rel="noopener nofollow" target="_blank">Unsplash</a>')
+    if cred and p.get("image_source", "").startswith("http"):
+        return f'<a href="{esc(p["image_source"])}" rel="noopener nofollow" target="_blank">{esc(cred)}</a>'
+    return esc(cred)
+
+
 def logo_html(p):
     """Titel mit Firmenlogo (FMP-Symbolbild, Rueckfall Favicon der Firmenwebsite, sonst ohne Logo)."""
     lf = p.get("logo_file", "")
@@ -217,7 +242,7 @@ def build_post(p, posts):
         img = f"assets/magazin/{slug}.png"
         if not os.path.exists(img): make_cover(img, p["title"], p["category"])
     img = img.lstrip("/")
-    img_url = BASE + img
+    img_url = absu(img)
     body = md_to_html(p["body_md"], depth)
     hits = glossar.analyse(p, body)                    # Stichworte -> Erklaerartikel
     body = glossar.verlinke(body, hits, pre)
@@ -244,23 +269,19 @@ def build_post(p, posts):
             {"@type": "Question", "name": q, "acceptedAnswer": {"@type": "Answer", "text": a}} for q, a in faq]})
     extra = '<meta property="article:published_time" content="%s">\n<meta property="article:modified_time" content="%s">\n<meta property="article:section" content="%s">\n' % (iso(p["dt"]), iso(p["upd"]), esc(p["category"]))
     extra += "".join('<script type="application/ld+json">%s</script>\n' % json.dumps(x, ensure_ascii=False) for x in ld)
-    o = head(depth, p["title"], p["description"], url, "article", img_url, extra) + nav_html(depth, "news") + "</nav></div></header>\n"
+    o = head(depth, p["title"], p["description"], url, "article", img_url.replace("&", "&amp;"), extra) + nav_html(depth, "news") + "</nav></div></header>\n"
     o += f'<script src="{pre}assets/navigation.js"></script>\n<script src="{pre}assets/logos.js"></script>\n<main class="wrap"><article class="post">\n'
     o += f'<nav class="crumbs" aria-label="Brotkrumen"><a href="{pre}">Start</a> › <a href="{pre}news/">News</a> › <span aria-current="page">{esc(p["title"])}</span></nav>\n'
     o += f'<p class="kicker">{esc(p["category"])}</p>\n{logo_html(p)}<p class="lead">{esc(p["description"])}</p>\n'
     upd = f' · Aktualisiert: <time datetime="{iso(p["upd"])}">{de_date(p["upd"])}</time>' if p["upd"].date() > p["dt"].date() else ""
     o += f'<p class="byline">Von <strong>{esc(author)}</strong> · <time datetime="{iso(p["dt"])}">{de_dt(p["dt"])}</time>{upd} · {mins} Min. Lesezeit</p>\n'
     alt = p.get("image_alt") or p["title"]
-    cred = p.get("image_credit") or ""
-    if cred and p.get("image_source", "").startswith("http"):
-        cred = f'<a href="{esc(p["image_source"])}" rel="noopener nofollow" target="_blank">{esc(cred)}</a>'
-    else:
-        cred = esc(cred)
+    cred = credit_html(p)
     cap = f'<figcaption>{cred}</figcaption>' if cred else ""
     kurz = p.get("typ") == "kurz"
     if not kurz or p.get("image"):
-        o += (f'<figure class="cover kurzcover"><img src="{pre}{img}" alt="{esc(alt)}" loading="lazy">{cap}</figure>\n' if kurz else
-              f'<figure class="cover"><img src="{pre}{img}" alt="{esc(alt)}" width="1200" height="675" fetchpriority="high">{cap}</figure>\n')
+        o += (f'<figure class="cover kurzcover"><img src="{src(pre, img)}" alt="{esc(alt)}" loading="lazy">{cap}</figure>\n' if kurz else
+              f'<figure class="cover"><img src="{src(pre, img)}" alt="{esc(alt)}" width="1200" height="675" fetchpriority="high">{cap}</figure>\n')
     o += body + "\n"
     if kurz and p.get("quelle_url", "").startswith("http"):
         o += (f'<p class="kurzquelle">Quelle: <a href="{esc(p["quelle_url"])}" rel="noopener nofollow" target="_blank">{esc(p.get("quelle_name") or "Originalmeldung des Unternehmens")}</a></p>\n')
@@ -321,7 +342,7 @@ def build_index(posts):
     ld = {"@context": "https://schema.org", "@type": "CollectionPage", "name": title, "description": desc, "url": BASE + url, "inLanguage": "de",
           "hasPart": [{"@type": "Article", "headline": x["title"], "url": f'{BASE}news/{x["slug"]}/', "datePublished": iso(x["dt"])} for x in posts[:20]]}
     extra = '<script type="application/ld+json">%s</script>\n' % json.dumps(ld, ensure_ascii=False)
-    default_img = BASE + (posts[0]["img"] if posts else "assets/logo.png")
+    default_img = absu(posts[0]["img"]) if posts else BASE + "assets/logo.png"
     o = head(depth, title, desc, url, "website", default_img, extra) + nav_html(depth, "news") + "</nav></div></header>\n"
     o += f'<script src="{pre}assets/navigation.js"></script>\n<script src="{pre}assets/logos.js"></script>\n<main class="wrap">\n'
     o += f'<nav class="crumbs" aria-label="Brotkrumen"><a href="{pre}">Start</a> › <span aria-current="page">News</span></nav>\n<h1>News</h1>\n<p class="lead">{esc(desc)}</p>\n'
@@ -334,12 +355,12 @@ def build_index(posts):
     kurz_posts = [x for x in posts if x.get("typ") == "kurz"]
     rest = [x for x in posts if x is not hero and x.get("typ") != "kurz"]
     side, grid, archiv = rest[:4], rest[4:12], rest[12:]
-    o += (f'<section class="mag-top" aria-label="Thema des Tages"><a class="mag-hero" href="{hero["slug"]}/"><div class="mcwrap" style="position:relative;margin:0"><img class="mcover" src="{pre}{hero["img"]}" alt="" width="1200" height="675" fetchpriority="high">{card_logo(hero, pre)}</div>'
+    o += (f'<section class="mag-top" aria-label="Thema des Tages"><a class="mag-hero" href="{hero["slug"]}/"><div class="mcwrap" style="position:relative;margin:0"><img class="mcover" src="{src(pre, hero["img"])}" alt="" width="1200" height="675" fetchpriority="high">{card_logo(hero, pre)}</div>'
           f'<div class="mag-hero-body"><p class="kicker"><span class="mag-badge">Thema des Tages</span> {esc(hero["category"])} · {de_dt_kurz(hero["dt"])}</p><h2>{esc(hero["title"])}</h2><p class="mag-lead">{esc(hero["description"])}</p><span class="mag-more">Artikel lesen →</span></div></a>\n')
     if side:
         o += '<aside class="mag-side" aria-label="Weitere aktuelle Artikel"><h2>Außerdem aktuell</h2><ul>\n'
         for x in side:
-            o += (f'<li><a href="{x["slug"]}/"><span class="mag-thumb"><img src="{pre}{x["img"]}" alt="" width="120" height="68" loading="lazy">{card_logo(x, pre)}<span class="kicker"><b>{esc(x["category"])}</b>{de_dt_kurz(x["dt"])}</span></span><strong>{esc(x["title"])}</strong></a></li>\n')
+            o += (f'<li><a href="{x["slug"]}/"><span class="mag-thumb"><img src="{src(pre, x["img"])}" alt="" width="120" height="68" loading="lazy">{card_logo(x, pre)}<span class="kicker"><b>{esc(x["category"])}</b>{de_dt_kurz(x["dt"])}</span></span><strong>{esc(x["title"])}</strong></a></li>\n')
         o += '</ul></aside>\n'
     o += '</section>\n'
     if kurz_posts:
@@ -351,7 +372,7 @@ def build_index(posts):
     if grid:
         o += '<h2 class="mag-more-h">Weitere Artikel</h2>\n<div class="cards magcards">\n'
         for x in grid:
-            o += (f'<a class="card" href="{x["slug"]}/"><div class="mcwrap" style="position:relative;margin:0"><img class="mcover" src="{pre}{x["img"]}" alt="" width="1200" height="675" loading="lazy">{card_logo(x, pre)}</div>'
+            o += (f'<a class="card" href="{x["slug"]}/"><div class="mcwrap" style="position:relative;margin:0"><img class="mcover" src="{src(pre, x["img"])}" alt="" width="1200" height="675" loading="lazy">{card_logo(x, pre)}</div>'
                   f'<p class="kicker">{esc(x["category"])} · {de_dt_kurz(x["dt"])}</p><h3>{esc(x["title"])}</h3><p>{esc(x["description"])}</p></a>\n')
     if grid: o += '</div>\n'
     if archiv:
@@ -372,7 +393,7 @@ def build_feed(posts):
         pub = email.utils.format_datetime(x["dt"].replace(tzinfo=ZoneInfo("Europe/Berlin")))
         items += (f'<item><title>{esc(x["title"])}</title><link>{link}</link><guid isPermaLink="true">{link}</guid><pubDate>{pub}</pubDate>'
                   f'<category>{esc(x["category"])}</category><dc:creator>{esc(x["author"])}</dc:creator><description>{esc(x["description"])}</description>'
-                  f'<enclosure url="{BASE}{x["img"]}" type="image/{"jpeg" if x["img"].lower().endswith(("jpg","jpeg")) else "png"}" length="0"/>'
+                  f'<enclosure url="{absu(x["img"]).replace("&", "&amp;")}" type="image/{"png" if x["img"].lower().split("?")[0].endswith("png") else "jpeg"}" length="0"/>'
                   f'<content:encoded><![CDATA[{content}]]></content:encoded></item>\n')
     feed = (f'<?xml version="1.0" encoding="UTF-8"?>\n<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:dc="http://purl.org/dc/elements/1.1/">\n'
             f'<channel><title>{esc(SITE)}: News</title><link>{BASE}news/</link><description>Dividenden, Kennzahlen und Steuern erklärt</description><language>de-DE</language>'
@@ -402,7 +423,7 @@ def patch_home(posts):
     if posts:
         block = ('<section class="home-mag" id="magazin"><h2>Neu in den News</h2><p class="sub">Quartalszahlen verständlich erklärt, mit Kurzfassung in drei Punkten.</p>\n<div class="cards magcards">\n')
         for x in posts[:3]:
-            block += (f'<a class="card" href="news/{x["slug"]}/"><div class="mcwrap" style="position:relative;margin:0"><img class="mcover" src="{x["img"]}" alt="" width="1200" height="675" loading="lazy">{card_logo(x, "")}</div>'
+            block += (f'<a class="card" href="news/{x["slug"]}/"><div class="mcwrap" style="position:relative;margin:0"><img class="mcover" src="{src("", x["img"])}" alt="" width="1200" height="675" loading="lazy">{card_logo(x, "")}</div>'
                       f'<p class="kicker">{esc(x["category"])} · {de_dt_kurz(x["dt"])}</p><h3>{esc(x["title"])}</h3></a>\n')
         block += '</div>\n<p class="more"><a href="news/">Alle Artikel in den News →</a></p></section>\n'
     mk = "<!-- magazin-neu -->"

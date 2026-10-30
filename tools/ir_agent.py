@@ -692,7 +692,7 @@ def unsplash_candidates(terms, per=8):
             desc = _strip(it.get("description") or it.get("alt_description") or "")[:200]
             out[it["id"]] = {"title": "Unsplash " + it["id"], "thumb": it["urls"]["raw"] + ("&" if "?" in it["urls"]["raw"] else "?") + "w=1600&q=80&fm=jpg&fit=max",
                              "page": (links.get("html") or "https://unsplash.com") + "?utm_source=dividenden-rechner&utm_medium=referral",
-                             "artist": u.get("name") or "Unbekannt", "lic": "Unsplash-Lizenz", "quelle": "Unsplash", "desc": desc,
+                             "artist": u.get("name") or "Unbekannt", "artist_url": ((u.get("links") or {}).get("html") or "https://unsplash.com") + "?utm_source=dividenden-rechner&utm_medium=referral", "lic": "Unsplash-Lizenz", "quelle": "Unsplash", "desc": desc,
                              "date": (it.get("created_at") or "")[:10], "download": links.get("download_location", "")}
     return list(out.values())
 
@@ -705,7 +705,9 @@ def _short_artist(a):
 
 def photo_credit(photo):
     photo = dict(photo, artist=_short_artist(photo.get("artist", "")))
-    return f"Foto: {photo['artist']} / {photo.get('quelle', 'Wikimedia Commons')}" + ("" if photo.get("quelle") == "Unsplash" else f", {photo['lic']}")
+    if photo.get("quelle") == "Unsplash":
+        return f"Foto: {photo['artist']} auf Unsplash"
+    return f"Foto: {photo['artist']} / {photo.get('quelle', 'Wikimedia Commons')}, {photo['lic']}"
 
 
 def recent_motifs(n=12):
@@ -795,13 +797,21 @@ def pick_photo_topic(companies, fokus, industry, key, only_unsplash=False):
     return cands[idx] if isinstance(idx, int) and 0 <= idx < len(cands) else None
 
 
+def photo_extra(photo):
+    """Zusatzzeile fuer den Artikelkopf (Unsplash: Profil-Link des Fotografen fuer die Namensnennung)."""
+    return [f"image_artist_url: {photo['artist_url']}"] if photo.get("artist_url") else []
+
+
 def save_photo(c, slug):
-    raw = http(c["thumb"], binary=True, ua="dividenden-rechner.de Magazin-Agent (https://www.dividenden-rechner.de)")
-    if c.get("download") and os.environ.get("UNSPLASH_ACCESS_KEY"):      # Unsplash-API-Vorgabe: genutzte Fotos ueber download_location melden
+    if c.get("download") and os.environ.get("UNSPLASH_ACCESS_KEY"):
+        # Unsplash-API-Vorgaben: Foto direkt von Unsplash einbinden (Hotlink, ixid bleibt erhalten) und die Nutzung melden
         try:
             urllib.request.urlopen(urllib.request.Request(c["download"], headers={"Authorization": "Client-ID " + os.environ["UNSPLASH_ACCESS_KEY"], "User-Agent": "dividenden-rechner.de Magazin-Agent"}), timeout=20).read()
         except Exception as e:
             print("Unsplash-Downloadmeldung fehlgeschlagen:", e)
+        base = c["thumb"].split("&w=")[0].split("?w=")[0]
+        return base + ("&" if "?" in base else "?") + "w=1600&h=900&fit=crop&crop=entropy&q=80&fm=jpg"
+    raw = http(c["thumb"], binary=True, ua="dividenden-rechner.de Magazin-Agent (https://www.dividenden-rechner.de)")
     im = Image.open(BytesIO(raw)).convert("RGB")
     w, h = im.size; tgt = 16 / 9
     if w / h > tgt:
@@ -1140,7 +1150,7 @@ def build(out, text, src_note, force=False, calc_rows=None, fmp_used=False, figs
     if photo:
         rel = save_photo(photo, slug)
         fm += [f"image: {rel}", f"image_alt: {q('Foto zu ' + out['company'] + ': ' + (photo['desc'] or photo['title'].replace('File:', '')))}",
-               f"image_credit: {q(photo_credit(photo))}", f"image_source: {photo['page']}"]
+               f"image_credit: {q(photo_credit(photo))}", f"image_source: {photo['page']}"] + photo_extra(photo)
         hinweise.append(f"Aufmacherfoto ist automatisch von {photo.get('quelle', 'Wikimedia Commons')} gewaehlt: bitte pruefen, ob es zum Artikel passt (sonst image-Zeilen entfernen, dann entsteht ein Titelbild automatisch).")
     else:
         hinweise.append("Kein freies Aufmacherfoto gefunden, das Titelbild entsteht automatisch. Eigenes Foto: image, image_alt, image_credit ergaenzen.")
