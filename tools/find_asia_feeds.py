@@ -19,6 +19,28 @@ def get(u, t=15):
     except Exception:
         return None, None
 
+def fresh(datestr, days=90):
+    """True, wenn das Datum des neuesten Eintrags jung genug ist (unbekanntes Datum zaehlt als nicht frisch)."""
+    if not datestr:
+        return False
+    try:
+        d = email.utils.parsedate_to_datetime(datestr)
+    except Exception:
+        m = re.search(r"(\d{4})-(\d{2})-(\d{2})", datestr)
+        if not m:
+            m2 = re.search(r"(\d{1,2}) (\w{3})\w* (\d{4})", datestr)
+            if not m2:
+                return False
+            try:
+                d = datetime.datetime.strptime(f"{m2.group(1)} {m2.group(2)} {m2.group(3)}", "%d %b %Y")
+            except Exception:
+                return False
+        else:
+            d = datetime.datetime(int(m.group(1)), int(m.group(2)), int(m.group(3)))
+    d = d.replace(tzinfo=None)
+    return datetime.datetime.utcnow() - d < datetime.timedelta(days=days) and d < datetime.datetime.utcnow() + datetime.timedelta(days=2)
+
+
 def check_feed(u):
     final, body = get(u)
     if not body or "<" not in body[:2000]:
@@ -28,7 +50,7 @@ def check_feed(u):
     except Exception:
         return None
     items = [e for e in root.iter() if e.tag.split("}")[-1] in ("item", "entry")]
-    if not items:
+    if not items or re.search(r"calendar|kalender|partner|podcast|events?\b", u, re.I):
         return None
     dates = []
     for it in items[:30]:
@@ -36,7 +58,9 @@ def check_feed(u):
             if c.tag.split("}")[-1] in ("pubDate", "published", "updated", "date") and c.text:
                 dates.append(c.text.strip())
                 break
-    return {"url": final or u, "eintraege": len(items), "neueste": dates[0] if dates else ""}
+    if not fresh(dates[0] if dates else ""):
+        return None
+    return {"url": final or u, "eintraege": len(items), "neueste": dates[0]}
 
 def candidates(base_pages):
     found = []
