@@ -208,6 +208,12 @@ $("list").onclick=function(e){if(e.target.closest("a"))return;var r=e.target.clo
 (async function(){
   var f=new Date(),t=new Date();f.setDate(f.getDate()-DAYS_BACK);t.setDate(t.getDate()+DAYS_FWD+10);
   try{var j=await api("earnings-calendar",{from:key(f),to:key(t)});CAL=(Array.isArray(j)?j:[]).filter(function(x){return x&&x.symbol&&x.date}).map(function(x){x.date=String(x.date).slice(0,10);return x});
+    try{var ij=await fetch("../data/ist-zahlen.json",{cache:"no-cache"});if(ij.ok)((await ij.json()).items||[]).forEach(function(it){
+      var d0=Date.parse(it.datum);CAL.forEach(function(r){
+        if(r.epsActual!=null||r.revenueActual!=null)return;
+        if(r.symbol!==it.sym&&r.symbol.split(".")[0]!==it.sym.split(".")[0])return;
+        if(Math.abs(Date.parse(r.date)-d0)>4*864e5)return;
+        if(it.eps!=null)r.epsActual=it.eps;if(it.revenue!=null)r.revenueActual=it.revenue;r._own=1})})}catch(e6){}
     try{var sj=await api("company-screener",{marketCapMoreThan:1e10,isActivelyTrading:"true",limit:1500});(Array.isArray(sj)?sj:[]).forEach(function(x){if(x&&x.symbol)BIG[x.symbol]={n:x.companyName||x.symbol,m:x.marketCap||0}})}catch(e2){}
     if(!Object.keys(BIG).length)scope="mp";
     $("scope").value=scope;

@@ -24,6 +24,8 @@ report_type: Bestimme die Art des Dokuments und wähle genau einen Wert aus der 
 
 cashflow zusätzlich: interest_paid (gezahlte Zinsen im selben Zeitraum, positiv) und prior_interest_paid, falls in der Kapitalflussrechnung oder den Ergänzungsangaben ausgewiesen.
 
+ist: Nur bei Ergebnisberichten: Gewinn je Aktie des Berichtszeitraums (eps; bereinigt, wenn das Unternehmen einen bereinigten Wert ausweist, sonst berichtet; eps_basis entsprechend) und Umsatz (revenue als Zahl, unit = Mrd oder Mio, currency), exakt wie im Dokument, keine Berechnung.
+
 capital: Nur was das Dokument ausdrücklich nennt, Zahlen exakt wie dort: Dividende je Aktie (dividend_per_share, prior_dividend_per_share) und ihre Veränderung in Prozent (dividend_change_pct), Schuldenabbau (debt_reduction mit Betrag, debt_reduction_note kurz), Aktienrückkaufprogramm (buyback_amount, buyback_period), Zinsaufwand der Periode (interest_expense, prior_interest_expense), dazu unit. Nichts schätzen oder berechnen.
 
 Nur bei Ergebnisberichten (Quartals-, Halbjahres-, Jahreszahlen) füllst du kpis, chart, cashflow, balance, capital, period_end und prior_period_end. Bei allen anderen Dokumenten lässt du diese Felder weg. Auch figures nur dort, wo eine Tabelle oder Grafik wirklich etwas zeigt.

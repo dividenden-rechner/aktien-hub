@@ -56,6 +56,9 @@ SCHEMA = {
         "body_markdown": {"type": "STRING", "description": "Drei bis fuenf Saetze Fliesstext auf Deutsch, hoechstens 120 Woerter"},
         "slug": {"type": "STRING", "description": "kurze URL-Kennung in Kleinbuchstaben, z. B. altria-dividende-q4-2026"},
         "foto_person": {"type": "STRING", "description": "Voller Name einer Person, die im Mittelpunkt der Meldung steht (neuer CEO, neuer Finanzchef, Ruecktritt), sonst leer"},
+        "ist": {"type": "OBJECT", "description": "Nur bei Meldungen mit Quartals-, Halbjahres- oder Jahreszahlen: Ist-Zahlen des Berichtszeitraums exakt wie im Text, sonst weglassen",
+                "properties": {"eps": {"type": "NUMBER", "description": "Gewinn je Aktie (bereinigt, wenn ausgewiesen)"}, "eps_basis": {"type": "STRING", "description": "bereinigt oder berichtet"},
+                               "revenue": {"type": "NUMBER"}, "unit": {"type": "STRING", "description": "Mrd oder Mio, passend zu revenue"}, "currency": {"type": "STRING"}}},
         "termine": {"type": "ARRAY", "description": "Termine, die woertlich in der Meldung genannt werden (auch wenn die Meldung sonst nicht relevant ist); leer, wenn keine",
                     "items": {"type": "OBJECT", "required": ["art", "datum"], "properties": {
                         "art": {"type": "STRING", "enum": ["ergebnis", "dividende_exdatum", "dividende_zahltag"], "description": "ergebnis = Veroeffentlichung von Quartals- oder Jahreszahlen"},
@@ -111,6 +114,7 @@ Wenn relevant, schreibe:
   'bricht ein', 'übertrifft'). Der Titel darf nicht wie eine der unten genannten juengsten Ueberschriften beginnen oder gebaut sein.
 - Keine woertlichen Zitate, keine Ueberschriften, keine Aufzaehlungen.
 - Der Firmenname steht im Titel.
+- ist: nur bei Quartals-, Halbjahres- oder Jahreszahlen: Gewinn je Aktie (eps, bereinigt wenn ausgewiesen) und Umsatz (revenue, unit Mrd oder Mio) des Berichtszeitraums, exakt wie im Text; sonst leer lassen.
 - termine: Veroeffentlichungstermine von Zahlen, Ex-Dividenden-Tage und Zahltage, die mit Tag, Monat und Jahr im Text stehen (auch bei nicht relevanten Meldungen). Nichts schaetzen.
 - foto_person: nur setzen, wenn eine einzelne Person im Mittelpunkt steht (zum Beispiel Ernennung eines neuen Vorstandschefs), sonst leer."""
 
@@ -397,6 +401,35 @@ def unverified_numbers(body, source):
     return bad
 
 
+TERMINE = os.path.join(ia.ROOT, "data", "termine.json")
+
+
+def save_termine(c, termine, text, url):
+    """Termine aus der Meldung in data/termine.json (Earnings-Seite). Nur, wenn Jahr, Tag und Betrag im Original stehen."""
+    nums = {str(int(x)) for x in re.findall(r"\d+", text)}; allnums = set(_nums(text))
+    d = load_json(TERMINE, {"termine": []})
+    have = {(t["sym"], t["art"], t["datum"]) for t in d["termine"]}
+    new = 0
+    for t in termine:
+        m = re.fullmatch(r"(\d{4})-(\d{2})-(\d{2})", (t.get("datum") or "").strip())
+        if not m or str(int(m.group(1))) not in nums or str(int(m.group(3))) not in nums:
+            continue
+        b = (t.get("betrag") or "").strip()
+        if b and re.sub(r"[.,]", "", b) not in allnums and re.sub(r"[.,]", "", b).rstrip("0") not in allnums:
+            b = ""
+        key = (c["sym"], t["art"], t["datum"])
+        if key in have:
+            continue
+        d["termine"].append({"sym": c["sym"], "name": c.get("name", c["sym"]), "art": t["art"], "datum": t["datum"],
+                             "betrag": b, "waehrung": (t.get("waehrung") or "").strip()[:4], "quelle": url})
+        have.add(key); new += 1
+    cut = (datetime.now(timezone.utc) - timedelta(days=14)).strftime("%Y-%m-%d")
+    d["termine"] = sorted([t for t in d["termine"] if t["datum"] >= cut], key=lambda t: (t["datum"], t["sym"]))
+    json.dump(d, open(TERMINE, "w", encoding="utf-8"), ensure_ascii=False, indent=1)
+    if new:
+        log(f"  {new} Termin(e) gespeichert")
+
+
 def slugify(s):
     s = s.lower().replace("ä", "ae").replace("ö", "oe").replace("ü", "ue").replace("ß", "ss")
     return re.sub(r"[^a-z0-9]+", "-", s).strip("-")[:70] or "meldung"
@@ -654,6 +687,8 @@ def main():
             if long_article(c, state): longs += 1
         if out and out.get("termine") and not a.dry:
             save_termine(c, out["termine"], text, url)
+        if out and out.get("ist") and not a.dry:
+            ia.save_ist(c["sym"], c.get("name", c["sym"]), (c.get("when") or "")[:10] or now_iso, out["ist"], text, url)
         if not out or not out.get("relevant"):
             log("  nicht relevant:", (out or {}).get("reason", "")[:100]); continue
         if not (out.get("title") and out.get("body_markdown") and out.get("description")):

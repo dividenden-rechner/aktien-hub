@@ -61,6 +61,9 @@ SCHEMA = {   # Aufruf 1: Zahlen aus dem Bericht
             "properties": {"title": {"type": "STRING"}, "unit": {"type": "STRING"}, "page": {"type": "INTEGER", "description": "0 wenn keine Seiten"},
                            "bars": {"type": "ARRAY", "items": {"type": "OBJECT", "required": ["label", "value"],
                                "properties": {"label": {"type": "STRING"}, "value": {"type": "NUMBER"}}}}}},
+        "ist": {"type": "OBJECT", "description": "Nur bei Ergebnisberichten: Ist-Zahlen des Berichtszeitraums, Zahlen exakt wie im Text",
+            "properties": {"eps": NUM, "eps_basis": {"type": "STRING", "description": "bereinigt oder berichtet"},
+                           "revenue": NUM, "unit": {"type": "STRING", "description": "Mrd, Mio oder leer, passend zu revenue"}, "currency": {"type": "STRING"}}},
         "cashflow": {"type": "OBJECT", "description": "Aus der Kapitalflussrechnung des Berichts, Zahlen exakt wie dort (positiv, in der Berichtseinheit)",
             "properties": {"period_label": {"type": "STRING", "description": "z. B. Halbjahr 2026 oder 6 Monate"}, "unit": {"type": "STRING", "description": "z. B. Mio. USD"},
                            "operating_cash_flow": NUM, "capex": NUM, "dividends_paid": NUM, "share_repurchases": NUM,
@@ -85,10 +88,11 @@ ARTICLE_SCHEMA = {   # Aufruf 2: Artikeltext
 }
 
 
-CORE_SCHEMA = {"type": "OBJECT", "properties": {k: SCHEMA["properties"][k] for k in ("kpis", "cashflow", "balance", "capital", "period_end", "prior_period_end")}}
+CORE_SCHEMA = {"type": "OBJECT", "properties": {k: SCHEMA["properties"][k] for k in ("kpis", "ist", "cashflow", "balance", "capital", "period_end", "prior_period_end")}}
 CORE_PROMPT = """Lies aus dem angehaengten Ergebnisdokument nur diese Pflichtangaben, exakt wie im Dokument (Zahlen in der Berichtseinheit, keine Berechnungen):
 - kpis: bis zu 6 Kennzahlen in dieser Reihenfolge, soweit im Dokument vorhanden: Umsatz, operatives Ergebnis bzw. operatives Kerngeschaeft, Nettogewinn, Gewinn je Aktie (bereinigt, wenn ausgewiesen), Free Cashflow oder operativer Cashflow, Dividende je Aktie. value auf Deutsch (Komma, Mrd. USD), change = Veraenderung zum Vorjahr nur wenn genannt, page = Seite.
 - cashflow: Kapitalflussrechnung, laengster ausgewiesener Zeitraum seit Jahresbeginn: operating_cash_flow, capex (positiv), dividends_paid (positiv), share_repurchases (positiv) und dieselben Werte des Vorjahreszeitraums (prior_*), dazu unit und period_label.
+- ist: Gewinn je Aktie des Berichtszeitraums (eps, bereinigt wenn ausgewiesen, eps_basis) und Umsatz (revenue mit unit Mrd oder Mio und currency), exakt wie im Dokument.
 - cashflow zusaetzlich: interest_paid (gezahlte Zinsen im selben Zeitraum, positiv) und prior_interest_paid, falls ausgewiesen.
 - balance: liquide Mittel, kurzfristige und langfristige Finanzschulden (ohne Leasing) am Stichtag und am Vergleichsstichtag (prior_*), unit, prior_label.
 - capital: Dividende je Aktie (jetzt und vorher) und ihre Veraenderung in Prozent, genannter Schuldenabbau (Betrag), Aktienrueckkaufprogramm (Betrag, Zeitraum), Zinsaufwand der Periode (interest_expense, prior_interest_expense), nur wenn das Dokument es ausdruecklich nennt.
@@ -1112,6 +1116,38 @@ def fmp_metrics(symbol, have_report_rows=False):
 
 
 
+IST = os.path.join(ROOT, "data", "ist-zahlen.json")
+
+
+def save_ist(sym, name, datum, ist, text, url):
+    """Ist-Zahlen (EPS, Umsatz) aus der Pressemitteilung fuer die Earnings-Seite merken, damit sie nicht auf den Datenanbieter warten muss.
+    Nur wenn die Zahlen im Originaltext stehen."""
+    if not sym or not ist or not re.fullmatch(r"\d{4}-\d{2}-\d{2}", datum or ""):
+        return
+    toks = {re.sub(r"[.,\s]", "", t).rstrip("0") for t in re.findall(r"\d[\d.,]*\d|\d", text or "")}
+    def ok(v):
+        return v is not None and (re.sub(r"[.,\s]", "", ("%g" % abs(v))).rstrip("0") in toks)
+    eps, rev = ist.get("eps"), ist.get("revenue")
+    mult = {"mrd": 1e9, "mio": 1e6, "tsd": 1e3, "": 1}.get((ist.get("unit") or "").lower().replace(".", "").strip(), None)
+    if eps is not None and not ok(eps):
+        eps = None
+    if rev is not None and (mult is None or not ok(rev)):
+        rev = None
+    if eps is None and rev is None:
+        return
+    try:
+        d = json.load(open(IST, encoding="utf-8"))
+    except Exception:
+        d = {"items": []}
+    d["items"] = [x for x in d["items"] if not (x["sym"] == sym and x["datum"] == datum)]
+    d["items"].append({"sym": sym, "name": name, "datum": datum, "eps": eps, "eps_basis": ist.get("eps_basis") or "",
+                       "revenue": (rev * mult) if rev is not None else None, "waehrung": (ist.get("currency") or "")[:4], "quelle": url})
+    cut = (datetime.now() - __import__("datetime").timedelta(days=30)).strftime("%Y-%m-%d")
+    d["items"] = sorted([x for x in d["items"] if x["datum"] >= cut], key=lambda x: (x["datum"], x["sym"]))
+    json.dump(d, open(IST, "w", encoding="utf-8"), ensure_ascii=False, indent=1)
+    print(f"Ist-Zahlen fuer {sym} gemerkt (EPS {eps}, Umsatz {rev} {ist.get('unit') or ''}).")
+
+
 def font(size, bold=False):
     """Inter aus dem Repo (assets/fonts), damit Grafiken auf jedem Rechner gleich aussehen; Rueckfall DejaVu."""
     nm = "Inter-Bold.otf" if bold else "Inter-Regular.otf"
@@ -1294,6 +1330,8 @@ def build(out, text, src_note, force=False, calc_rows=None, fmp_used=False, figs
         draw_graphic(out, gpath)
         has_chart = True
     bad = check_numbers(out, text)
+    if out.get("report_type") in EARNINGS and out.get("ist"):
+        save_ist((out.get("ticker") or "").upper(), out.get("company"), out.get("report_date"), out["ist"], text, (src or {}).get("url") or "")
     rtype = out.get("report_type") or "Quartalszahlen"
     doc = f"{rtype} {out.get('period') or ''}".strip()
     a = out["article"]
