@@ -316,8 +316,34 @@ def doc_part(src):
     return {"text": "BERICHT (Text der Pressemitteilung):\n\n" + src["text"][:600000]}
 
 
+def doc_parts(src):
+    """Hauptdokument plus weitere Unterlagen derselben Firma (Praesentation, Anhang ...) als gemeinsame Quelle."""
+    parts = [doc_part(src)]
+    if src.get("extra"):
+        parts.append({"text": "WEITERE UNTERLAGEN DERSELBEN FIRMA (gemeinsam mit dem Hauptdokument auswerten):\n\n" +
+                      "\n\n".join(f"[Unterlage {i}: {x['url']}]\n{x['text'][:250000]}" for i, x in enumerate(src["extra"], 2))})
+    return parts
+
+
+def extra_source(url):
+    """Weitere Unterlage (PDF oder Webseite) als reiner Text."""
+    r = web_source(url)
+    txt = pdf_text(r["path"]) if r["kind"] == "pdf" else r["text"]
+    return {"url": url, "text": txt}
+
+
+def orig_links(src):
+    out = ""
+    if (src or {}).get("url", "").startswith("http"):
+        out += f" · [Original]({src['url']})"
+    for i, x in enumerate((src or {}).get("extra") or [], 2):
+        if x["url"].startswith("http"):
+            out += f" · [Unterlage {i}]({x['url']})"
+    return out
+
+
 def call_gemini(src, prompt, schema=None):
-    return _generate([doc_part(src), {"text": prompt}], schema or SCHEMA, api_key())
+    return _generate([*doc_parts(src), {"text": prompt}], schema or SCHEMA, api_key())
 
 
 def clean_text(t):
@@ -1390,7 +1416,7 @@ def build(out, text, src_note, force=False, calc_rows=None, fmp_used=False, figs
             shutil.copy(f["tmp"], os.path.join(ROOT, rel)); used.append(fid)
             alt = f["title"].replace("[", "(").replace("]", ")")
             pg = f.get("page") if (src or {}).get("pages_real", True) and f.get("page") else None
-            link = f" · [Original]({src['url']})" if (src or {}).get("url", "").startswith("http") else ""
+            link = orig_links(src)
             body_md = body_md.replace(tag, f"![{alt}](/{rel})\n*{f['title']}. Quelle: {out['company']}, {doc} vom {out['report_date']}" + (f", S. {pg}" if pg else "") + f"{link}. Ausschnitt nur zugeschnitten, sonst unverändert.*")
     body_md = re.sub(r"\{\{FIG:[^}]*\}\}", "", body_md)
     if used:
@@ -1401,7 +1427,7 @@ def build(out, text, src_note, force=False, calc_rows=None, fmp_used=False, figs
             parts = [body_md[:mm.end()].rstrip("\n"), body_md[mm.end():].lstrip("\n")]
         else:
             parts = body_md.split("\n\n", 1)
-        glink = f" · [Original]({src['url']})" if (src or {}).get("url", "").startswith("http") else ""
+        glink = orig_links(src)
         body_md = parts[0] + f"\n\n![{chart_alt}](/assets/magazin/{slug}-grafik.png)\n*Eigene Darstellung nach Daten aus: {out['company']}, {doc} vom {out['report_date']}{glink}.*\n\n" + (parts[1] if len(parts) > 1 else "")
     head = "".join(f"<!-- PRÜFEN: {h} -->\n" for h in hinweise) + "\n"
     calc_md = ""
@@ -1479,7 +1505,7 @@ def web_source(url):
 
 def main():
     ap = argparse.ArgumentParser()
-    ap.add_argument("pdf", nargs="?"); ap.add_argument("--ticker"); ap.add_argument("--url"); ap.add_argument("--art", default=os.environ.get("ART") or "ergebnisse"); ap.add_argument("--mock"); ap.add_argument("--force", action="store_true")
+    ap.add_argument("pdf", nargs="?"); ap.add_argument("--ticker"); ap.add_argument("--url"); ap.add_argument("--extra", action="append", default=[]); ap.add_argument("--art", default=os.environ.get("ART") or "ergebnisse"); ap.add_argument("--mock"); ap.add_argument("--force", action="store_true")
     a = ap.parse_args()
     if not a.pdf and not a.ticker and not a.url:
         fail("Bitte --ticker KO, eine PDF oder --url angeben.")
@@ -1494,7 +1520,21 @@ def main():
             return
     else:
         src = {"kind": "pdf", "path": a.pdf, "url": "", "date": ""}
+    if src["kind"] == "pdf" and src.get("path") == "/tmp/web_source.pdf" and a.extra:      # Hauptdokument sichern, bevor weitere Unterlagen geladen werden
+        import shutil; shutil.copyfile(src["path"], "/tmp/primary_src.pdf"); src["path"] = "/tmp/primary_src.pdf"
+    if a.extra:
+        src["extra"] = []
+        for u in a.extra:
+            try:
+                x = extra_source(u)
+                if len(x["text"].strip()) > 200:
+                    src["extra"].append(x); print(f"Weitere Unterlage gelesen: {u[:90]} ({len(x['text'])} Zeichen)")
+                else:
+                    print("::warning::Unterlage ohne lesbaren Text:", u)
+            except SystemExit:
+                print("::warning::Unterlage nicht lesbar:", u)
     text = pdf_text(src["path"]) if src["kind"] == "pdf" else src["text"]
+    text += "".join("\n\n" + x["text"] for x in src.get("extra") or [])
     calc_rows, fmp_used, figs = [], False, {}
     if a.mock:
         out = json.load(open(a.mock, encoding="utf-8"))
@@ -1504,7 +1544,7 @@ def main():
         if out.get("report_type") in EARNINGS and not (out.get("kpis") and out.get("cashflow") and out.get("balance")):
             print("::notice title=IR-Agent::Kennzahlen, Cashflow oder Bilanz fehlten, gezielte Nachfrage.")
             try:
-                core = _generate([doc_part(src), {"text": CORE_PROMPT}], CORE_SCHEMA, api_key())
+                core = _generate([*doc_parts(src), {"text": CORE_PROMPT}], CORE_SCHEMA, api_key())
                 for k in ("kpis", "cashflow", "balance", "capital", "period_end", "prior_period_end"):
                     if core.get(k) and not out.get(k):
                         out[k] = core[k]
@@ -1512,7 +1552,7 @@ def main():
                 print("::notice title=IR-Agent::Gezielte Nachfrage fehlgeschlagen.")
         if out.get("report_type") in EARNINGS and src["kind"] == "pdf" and not (out.get("figures") and (out.get("chart") or {}).get("bars")):
             try:
-                extra = _generate([doc_part(src), {"text": FIG_PROMPT + f"\n\nUnternehmen: {out.get('company')}, Branche: {out.get('industry') or 'unbekannt'}."}], FIG_SCHEMA, api_key())
+                extra = _generate([*doc_parts(src), {"text": FIG_PROMPT + f"\n\nUnternehmen: {out.get('company')}, Branche: {out.get('industry') or 'unbekannt'}."}], FIG_SCHEMA, api_key())
                 if extra.get("figures") and not out.get("figures"):
                     out["figures"] = extra["figures"]
                 if (extra.get("chart") or {}).get("bars") and not (out.get("chart") or {}).get("bars"):
@@ -1537,7 +1577,7 @@ def main():
                 out["ceo_quote"] = None
         summary = json.dumps({k: out.get(k) for k in ("company", "ticker", "report_type", "industry", "period", "report_date", "period_end", "prior_period_end", "kpis", "chart", "cashflow", "balance", "capital", "details")}, ensure_ascii=False)
         fakten = "\n".join("- " + f for f in facts) if facts else "- (keine berechneten Kennzahlen verfuegbar)"
-        prompt2 = read_prompt("ir_article_prompt.md") + f"\n\nART DES DOKUMENTS: {out.get('report_type')}" + "\n\nFAKTEN (vom Programm berechnet, Zahlen exakt so uebernehmen):\n" + fakten + "\n\nEXTRAHIERTE KENNZAHLEN (JSON):\n" + summary
+        prompt2 = read_prompt("ir_article_prompt.md") + ("\n\nMEHRERE UNTERLAGEN: Zum Hauptdokument liegen weitere Unterlagen derselben Firma vor (zum Beispiel die Ergebnispraesentation). Werte alle gemeinsam aus und schreibe EINE grosse, zusammenhaengende Analyse (bis etwa 1600 Woerter): Praesentationen enthalten oft die wichtigsten Angaben zur Kapitalverwendung (Dividendenerhoehung, Schuldenabbau, Rueckkaeufe), zum Ausblick und zu Segmenten; nutze diese Zahlen und stelle sie dem Hauptdokument gegenueber. Nenne in einem Satz, dass die Praesentation mit ausgewertet wurde." if src.get("extra") else "") + f"\n\nART DES DOKUMENTS: {out.get('report_type')}" + "\n\nFAKTEN (vom Programm berechnet, Zahlen exakt so uebernehmen):\n" + fakten + "\n\nEXTRAHIERTE KENNZAHLEN (JSON):\n" + summary
         bg_text, bg_src = research(out, api_key())
         if bg_text:
             prompt2 += ("\n\nHINTERGRUND (per Websuche recherchiert; nutze ihn fuer Einordnung, Vergleich mit frueheren Quartalen, Makro- und Branchenlage; "
@@ -1561,7 +1601,7 @@ def main():
         if figs:
             prompt2 += "\n\nVERFUEGBARE AUSSCHNITTE AUS DEM BERICHT (Bilder; setze hoechstens drei davon ein):\n" + "\n".join(
                 f"- {fid}: {f['title']} | {f['shows']}" for fid, f in figs.items())
-        out["article"] = clean_article(_generate([doc_part(src), {"text": prompt2}], ARTICLE_SCHEMA, api_key()))
+        out["article"] = clean_article(_generate([*doc_parts(src), {"text": prompt2}], ARTICLE_SCHEMA, api_key()))
         if bg_src:
             out["article"]["body_markdown"] = out["article"]["body_markdown"].rstrip() + "\n\nWeitere Quellen zum Hintergrund: " + " · ".join(f"[{(ti or u)[:60]}]({u})" for ti, u in bg_src) + "\n"
         print("FAKTEN:\n" + fakten)

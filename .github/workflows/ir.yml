@@ -22,7 +22,7 @@ on:
           - meldung
           - insider
       pdf_url:
-        description: "Oder: Link zu einer PDF oder normalen Webseite (z. B. Ad-hoc-Meldung), für Titel außerhalb der USA. Mehrere Links mit Leerzeichen oder Komma trennen."
+        description: "Link zu einer PDF oder Webseite (z. B. Ad-hoc-Meldung), auch für Titel außerhalb der USA. Mehrere Links für verschiedene Firmen mit Leerzeichen trennen. Mehrere Links DERSELBEN Firma mit ' + ' verbinden (Leerzeichen, Plus, Leerzeichen): sie werden gemeinsam gelesen und ergeben einen großen Artikel. Zusammen mit genau einem Kürzel oben gehören die Links zu diesem Kürzel (SEC-Meldung plus Präsentation)."
         required: false
 permissions:
   contents: write
@@ -49,8 +49,17 @@ jobs:
         run: |
           mkdir -p content/ir-inbox
           : > /tmp/todo.txt
-          if [ -n "$TICKERS" ]; then
+          NT=$(echo "$TICKERS" | tr ',' '\n' | tr -d ' ' | sed '/^$/d' | wc -l)
+          if [ -n "$TICKERS" ] && [ -n "$PDF_URL" ] && [ "$NT" = "1" ]; then
+            # ein Kuerzel plus Links: gehoeren zusammen (SEC-Meldung und weitere Unterlagen)
+            echo "multi:ticker=$(echo "$TICKERS" | tr -d ' ')|$(echo "$PDF_URL" | sed 's/ + /|/g; s/,[[:space:]]*http/|http/g; s/[[:space:]]\+/|/g')" >> /tmp/todo.txt
+            PDF_URL=""
+          elif [ -n "$TICKERS" ]; then
             echo "$TICKERS" | tr ',' '\n' | tr -d ' ' | sed '/^$/d' | sed 's/^/ticker:/' >> /tmp/todo.txt
+          fi
+          if [ -n "$PDF_URL" ] && echo "$PDF_URL" | grep -q ' + '; then
+            echo "multi:$(echo "$PDF_URL" | sed 's/[[:space:]]\+[+][[:space:]]\+/|/g; s/[[:space:]]\+/|/g')" >> /tmp/todo.txt
+            PDF_URL=""
           fi
           if [ -n "$PDF_URL" ]; then
             i=0
@@ -84,6 +93,7 @@ jobs:
           while read -r f; do
             [ -z "$f" ] && continue
             case "$f" in
+              multi:*) IFS='|' read -ra P <<< "${f#multi:}"; first="${P[0]}"; args=(); case "$first" in ticker=*) args+=(--ticker "${first#ticker=}");; *) args+=(--url "$first");; esac; for e in "${P[@]:1}"; do [ -n "$e" ] && args+=(--extra "$e"); done; python3 tools/ir_agent.py "${args[@]}" || echo "::warning::Fehler bei $f, weiter mit dem naechsten" ;;
               ticker:*) python3 tools/ir_agent.py --ticker "${f#ticker:}" || echo "::warning::Fehler bei $f, weiter mit dem naechsten" ;;
               url:*) python3 tools/ir_agent.py --url "${f#url:}" || echo "::warning::Fehler bei $f, weiter mit dem naechsten" ;;
               *) python3 tools/ir_agent.py "$f" || echo "::warning::Fehler bei $f, weiter mit dem naechsten" ;;
