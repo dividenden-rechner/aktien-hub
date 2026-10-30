@@ -89,3 +89,7 @@ Einordnung (Pflicht in jedem Artikel, auch bei Dividenden-, Insider-, Split- und
 - Beginne mit dem Punkt, der die Lage des Unternehmens heute am besten beschreibt, nicht mit Allgemeinplätzen.
 - Die H2 des Abschnitts benennt diese konkrete Lage (Firma, Thema, Zahl oder Konflikt), nicht das Wort "Einordnung" und keine Formel, die auf jedes Unternehmen passen würde. Übernimm keine Beispiele aus diesem Auftrag.
 - Zahlen aus dem HINTERGRUND mit Zeitbezug und als Einordnung, nichts erfinden, Negatives deutlich nennen. Gibt der HINTERGRUND zu einem Blickwinkel nichts her, lässt du ihn weg, statt zu spekulieren. Der Abschnitt entfällt nie ganz.
+
+## Überschriften und Zahlenformat (verbindlich)
+- Die Überschrift nennt die eigentliche Nachricht dieses Berichts, nicht automatisch den Umsatz. Die Formel „X steigert Umsatz auf Y“ ist zu vermeiden. Wähle, was bei diesem Unternehmen in diesem Quartal auffällt (Gewinn, Marge, Prognose, Dividende, Rückkauf, Schulden, ein Segment, Rekord oder Einbruch) und variiere Verben und Satzbau.
+- Beträge ab 1.000 Millionen schreibst du in Milliarden (Mrd.) mit höchstens zwei Nachkommastellen, zum Beispiel „rund 1,85 Mrd. Euro“ statt „1.857 Mio. Euro“.

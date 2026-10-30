@@ -16,7 +16,7 @@ Aufruf:
   python3 tools/kurzmeldungen.py [--max 30] [--dry]    # Meldungen holen und schreiben
 Test ohne Netz: KURZ_MOCK=antwort.json und --offline kandidaten.json
 """
-import argparse, csv, io, json, os, re, sys, time, urllib.request
+import glob, argparse, csv, io, json, os, re, sys, time, urllib.request
 from datetime import datetime, timedelta, timezone
 from zoneinfo import ZoneInfo
 
@@ -96,6 +96,11 @@ Wenn relevant, schreibe:
   (zum Beispiel '1,02 US-Dollar je Aktie', 'im dritten Quartal 2026'). Nichts hinzuerfinden, nichts umrechnen.
 - Erster Satz: Was ist passiert? Danach die wichtigsten Zahlen, zuletzt ein Satz mit dem naechsten Termin (zum Beispiel Zahltag), falls genannt.
 - Ausschliesslich deutsche Sprache und deutsche Zahlenschreibweise (Dezimalkomma, Punkt als Tausendertrenner, 'US-Dollar' statt '$', 'Millionen' statt 'million'); keine englischen Fachbegriffe wie 'underlying profit', sondern 'zugrunde liegender Gewinn'.
+- Betraege ab 1.000 Millionen immer in Milliarden (Mrd.) mit hoechstens zwei Nachkommastellen: 'rund 1,85 Mrd. Euro' statt '1.857 Mio. Euro' (Titel und Text).
+- Titel abwechslungsreich: Nenne die eigentliche Nachricht dieser Meldung, nicht immer den Umsatz. Waehle, was bei diesem Unternehmen heute auffaellt
+  (Gewinn, Marge, Prognose, Dividende, Rueckkauf, Schulden, ein Segment, Rekord oder Einbruch, Abweichung zum Vorjahr). Die Formel 'X steigert Umsatz auf Y'
+  ist verboten, ebenso 'legt Zahlen vor'. Variiere Verben und Satzbau (zum Beispiel 'verdient', 'wächst', 'rutscht ins Minus', 'hebt Prognose', 'Gewinn je Aktie',
+  'bricht ein', 'übertrifft'). Der Titel darf nicht wie eine der unten genannten juengsten Ueberschriften beginnen oder gebaut sein.
 - Keine woertlichen Zitate, keine Ueberschriften, keine Aufzaehlungen.
 - Der Firmenname steht im Titel.
 - termine: Veroeffentlichungstermine von Zahlen, Ex-Dividenden-Tage und Zahltage, die mit Tag, Monat und Jahr im Text stehen (auch bei nicht relevanten Meldungen). Nichts schaetzen.
@@ -239,12 +244,21 @@ def feed_text(c):
 
 
 # ---------------------------------------------------------------- Schreiben
+def recent_titles(n=25):
+    fs = sorted(glob.glob(os.path.join(OUT_DIR, "2*.md")), reverse=True)[:n]
+    out = []
+    for f in fs:
+        m = re.search(r'^title:\s*"?(.*?)"?\s*$', open(f, encoding="utf-8").read(1500), re.M)
+        if m: out.append("- " + m.group(1)[:110])
+    return "\n".join(out)
+
+
 def generate(c, text):
     mock = os.environ.get("KURZ_MOCK")
     if mock:
         d = json.load(open(mock, encoding="utf-8"))
         return d.get(c["key"]) or d.get("*")
-    prompt = f"{PROMPT}\n\nUNTERNEHMEN: {c['name']} ({c['sym']})\n\nPRESSEMITTEILUNG:\n{text[:60000]}"
+    prompt = f"{PROMPT}\n\nJUENGSTE UEBERSCHRIFTEN (nicht nachahmen):\n{recent_titles()}\n\nUNTERNEHMEN: {c['name']} ({c['sym']})\n\nPRESSEMITTEILUNG:\n{text[:60000]}"
     return ia._generate([{"text": prompt}], SCHEMA, ia.api_key())
 
 
@@ -325,47 +339,37 @@ def _nums(t):
     return [re.sub(r"[.,]", "", x) for x in re.findall(r"\d[\d.,]*\d|\d", t)]
 
 
+def _mrd_ok(d, have, tok=""):
+    """'1,85 Mrd.' ist eine zulaessige Umrechnung, wenn im Original eine Zahl >= 1.000 (Millionen) mit diesen fuehrenden Ziffern steht."""
+    for h in have:
+        if len(h) >= 4 and h[0] != "0":
+            parts = re.split(r"[.,]", tok)
+            ints = len(parts[0]) if len(parts) > 1 and len(parts[-1]) <= 2 else len(d)
+            if tok and ints != len(h) - 3:
+                continue
+            for n in (2, 3):
+                if len(d) == n and len(h) >= n and (d == h[:n] or d == str(int(h[:n]) + (1 if int(h[n]) >= 5 else 0))):
+                    return True
+    return False
+
+
 def unverified_numbers(body, source):
-    """Zahlen im Text, die nicht als eigene Zahl im Original vorkommen (Trennzeichen werden ignoriert)."""
+    """Zahlen im Text, die nicht als eigene Zahl im Original vorkommen (Trennzeichen werden ignoriert).
+    Erlaubt: Millionen -> Milliarden (Mrd.), wenn der Wert aus einer Zahl im Original gerundet wurde."""
     have = set(_nums(source))
     have |= {h.rstrip("0") for h in have if h.rstrip("0")}
     bad = []
-    for tok in re.findall(r"\d[\d.,]*\d|\d", body):
+    for m in re.finditer(r"\d[\d.,]*\d|\d", body):
+        tok = m.group(0)
         d = re.sub(r"[.,]", "", tok)
         if len(d) <= 1:
             continue
-        if d not in have and d.rstrip("0") not in have:
-            bad.append(tok)
+        if d in have or d.rstrip("0") in have:
+            continue
+        if re.match(r"\s*(Mrd|Milliarden)", body[m.end():m.end() + 14]) and _mrd_ok(d.rstrip("0") or d, have, tok):
+            continue
+        bad.append(tok)
     return bad
-
-
-TERMINE = os.path.join(ia.ROOT, "data", "termine.json")
-
-
-def save_termine(c, termine, text, url):
-    """Termine aus der Meldung in data/termine.json (Earnings-Seite). Nur, wenn Jahr, Tag und Betrag im Original stehen."""
-    nums = {str(int(x)) for x in re.findall(r"\d+", text)}; allnums = set(_nums(text))
-    d = load_json(TERMINE, {"termine": []})
-    have = {(t["sym"], t["art"], t["datum"]) for t in d["termine"]}
-    new = 0
-    for t in termine:
-        m = re.fullmatch(r"(\d{4})-(\d{2})-(\d{2})", (t.get("datum") or "").strip())
-        if not m or str(int(m.group(1))) not in nums or str(int(m.group(3))) not in nums:
-            continue
-        b = (t.get("betrag") or "").strip()
-        if b and re.sub(r"[.,]", "", b) not in allnums and re.sub(r"[.,]", "", b).rstrip("0") not in allnums:
-            b = ""
-        key = (c["sym"], t["art"], t["datum"])
-        if key in have:
-            continue
-        d["termine"].append({"sym": c["sym"], "name": c.get("name", c["sym"]), "art": t["art"], "datum": t["datum"],
-                             "betrag": b, "waehrung": (t.get("waehrung") or "").strip()[:4], "quelle": url})
-        have.add(key); new += 1
-    cut = (datetime.now(timezone.utc) - timedelta(days=14)).strftime("%Y-%m-%d")
-    d["termine"] = sorted([t for t in d["termine"] if t["datum"] >= cut], key=lambda t: (t["datum"], t["sym"]))
-    json.dump(d, open(TERMINE, "w", encoding="utf-8"), ensure_ascii=False, indent=1)
-    if new:
-        log(f"  {new} Termin(e) gespeichert")
 
 
 def slugify(s):
