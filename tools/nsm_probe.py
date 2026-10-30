@@ -69,23 +69,26 @@ def discover():
 
 
 def main():
-    disc = discover()
-    print(json.dumps(disc, ensure_ascii=False, indent=1)[:4000])
-    json.dump(disc, open(os.path.join(ROOT, "data", "nsm-discover.json"), "w", encoding="utf-8"), ensure_ascii=False, indent=1)
-    now = datetime.datetime.utcnow(); frm = (now - datetime.timedelta(days=2)).strftime("%Y-%m-%dT00:00:00Z"); to = now.strftime("%Y-%m-%dT23:59:59Z")
+    now = datetime.datetime.utcnow(); d0 = now - datetime.timedelta(days=2)
+    iso = (d0.strftime("%Y-%m-%dT00:00:00Z"), now.strftime("%Y-%m-%dT23:59:59Z"))
+    us = (d0.strftime("%m/%d/%Y"), now.strftime("%m/%d/%Y"))
+    base = {"from": 0, "size": 20, "sort": "submitted_date", "sortorder": "desc", "latestFlag": "Y", "primarySearch": []}
     variants = {
-        "mit_datum": {"from": 0, "size": 20, "sort": "submitted_date", "sortorder": "desc",
-                      "criteriaObj": {"criteria": [{"name": "latest_flag", "value": "Y"}],
-                                      "dateCriteria": [{"name": "submitted_date", "value": {"from": frm, "to": to}}]}},
-        "einfach": {"from": 0, "size": 20, "sort": "submitted_date", "sortorder": "desc", "criteriaObj": {"criteria": [], "dateCriteria": []}},
+        "ohne_datum": dict(base, criteriaObj={"criteria": [], "dateCriteria": []}),
+        "datum_us": dict(base, criteriaObj={"criteria": [], "dateCriteria": [{"name": "submitted_date", "value": {"from": us[0], "to": us[1]}}]}),
+        "datum_iso": dict(base, criteriaObj={"criteria": [], "dateCriteria": [{"name": "submitted_date", "value": {"from": iso[0], "to": iso[1]}}]}),
+        "firma_lei": dict(base, criteriaObj={"criteria": [{"name": "company_lei", "value": ["213800QAFRA3HPXKAG33"]}], "dateCriteria": []}),
     }
     out = {}
-    idxs = sorted({i.split("=")[1] for i in disc.get("index_treffer", [])} | {"fca-nsm-searchdata"})
-    for idx in idxs:
-        for k, b in variants.items():
-            st, txt = post(b, idx)
-            out[idx + ":" + k] = {"status": st, "laenge": len(txt), "anfang": txt[:3000]}
-            print(idx, k, st, len(txt)); print(txt[:400])
+    for k, b in variants.items():
+        st, txt = post(b, "nsm-search")
+        info = {"status": st, "laenge": len(txt), "anfang": txt[:1500]}
+        try:
+            j = json.loads(txt); hits = j["hits"]["hits"]; info["treffer_gesamt"] = j["hits"]["total"]; info["erste_quellen"] = [h["_source"] for h in hits[:3]]
+        except Exception as e:
+            info["fehler"] = str(e)[:100]
+        out[k] = info
+        print(k, st, len(txt), info.get("treffer_gesamt")); print(json.dumps(info.get("erste_quellen", [])[:1], ensure_ascii=False)[:800])
     json.dump(out, open(os.path.join(ROOT, "data", "nsm-probe.json"), "w", encoding="utf-8"), ensure_ascii=False, indent=1)
 
 if __name__ == "__main__":
