@@ -231,6 +231,26 @@
    "quelle": "https://www.sec.gov/Archives/edgar/data/1551152/000155115226000033/abbv-20260930xexhibit991.htm"
   },
   {
+   "sym": "AZN",
+   "name": "Astrazeneca Plc",
+   "datum": "2026-10-30",
+   "eps": 2.79,
+   "eps_basis": "bereinigt",
+   "revenue": 16210000000.0,
+   "waehrung": "USD",
+   "quelle": "https://www.sec.gov/Archives/edgar/data/901832/000165495426009256/a0835b.htm"
+  },
+  {
+   "sym": "BP",
+   "name": "Bp Plc",
+   "datum": "2026-10-30",
+   "eps": 54.37,
+   "eps_basis": "bereinigt",
+   "revenue": null,
+   "waehrung": "USD",
+   "quelle": "https://www.sec.gov/Archives/edgar/data/313807/000165495426009265/a0767b.htm"
+  },
+  {
    "sym": "CBOE",
    "name": "Cboe Global Markets",
    "datum": "2026-10-30",
@@ -269,6 +289,26 @@
    "revenue": 7320000000.0,
    "waehrung": "USD",
    "quelle": "https://www.sec.gov/Archives/edgar/data/1109357/000110935726000092/exc-20261030ex991.htm"
+  },
+  {
+   "sym": "FRT",
+   "name": "Federal Realty Investment Trust",
+   "datum": "2026-10-30",
+   "eps": 0.74,
+   "eps_basis": "berichtet",
+   "revenue": 339024000.0,
+   "waehrung": "USD",
+   "quelle": "https://www.sec.gov/Archives/edgar/data/34903/000003490326000054/frt-9302026xex991.htm"
+  },
+  {
+   "sym": "GD",
+   "name": "General Dynamics",
+   "datum": "2026-10-30",
+   "eps": 4.49,
+   "eps_basis": "berichtet",
+   "revenue": null,
+   "waehrung": "USD",
+   "quelle": "https://www.sec.gov/Archives/edgar/data/40533/000004053326000036/gd-20261004exhibit991.htm"
   },
   {
    "sym": "LYB",

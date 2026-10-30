@@ -82,6 +82,15 @@
    "quelle": "https://www.sec.gov/Archives/edgar/data/922621/000162828026068265/ex-99109302026.htm"
   },
   {
+   "sym": "GD",
+   "name": "General Dynamics",
+   "art": "ergebnis",
+   "datum": "2026-10-30",
+   "betrag": "",
+   "waehrung": "",
+   "quelle": "https://www.sec.gov/Archives/edgar/data/40533/000004053326000036/gd-20261004exhibit991.htm"
+  },
+  {
    "sym": "LYB",
    "name": "LyondellBasell",
    "art": "ergebnis",
@@ -208,6 +217,15 @@
    "quelle": "https://www.sec.gov/Archives/edgar/data/93410/000009341026000196/a09302026ex9918-k.htm"
   },
   {
+   "sym": "BP",
+   "name": "Bp Plc",
+   "art": "ergebnis",
+   "datum": "2026-12-15",
+   "betrag": "",
+   "waehrung": "",
+   "quelle": "https://www.sec.gov/Archives/edgar/data/313807/000165495426009265/a0767b.htm"
+  },
+  {
    "sym": "EXC",
    "name": "Exelon",
    "art": "dividende_zahltag",
@@ -262,6 +280,15 @@
    "quelle": "https://www.sec.gov/Archives/edgar/data/1551152/000155115226000033/abbv-20260930xexhibit991.htm"
   },
   {
+   "sym": "FRT",
+   "name": "Federal Realty Investment Trust",
+   "art": "dividende_zahltag",
+   "datum": "2027-01-15",
+   "betrag": "1.16",
+   "waehrung": "USD",
+   "quelle": "https://www.sec.gov/Archives/edgar/data/34903/000003490326000054/frt-9302026xex991.htm"
+  },
+  {
    "sym": "RSG",
    "name": "Republic Services",
    "art": "dividende_zahltag",
@@ -278,6 +305,15 @@
    "betrag": "",
    "waehrung": "",
    "quelle": "https://www.sec.gov/Archives/edgar/data/882184/000088218426000119/a9302026exhibit991.htm"
+  },
+  {
+   "sym": "AZN",
+   "name": "Astrazeneca Plc",
+   "art": "ergebnis",
+   "datum": "2027-02-09",
+   "betrag": "",
+   "waehrung": "",
+   "quelle": "https://www.sec.gov/Archives/edgar/data/901832/000165495426009256/a0835b.htm"
   },
   {
    "sym": "ABBV",
