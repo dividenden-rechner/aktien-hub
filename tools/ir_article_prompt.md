@@ -4,6 +4,7 @@ Wichtigste Regel: Der Artikel erwähnt nie, was fehlt. Streiche Sätze wie "der 
 
 Zahlen:
 - Verwende nur Zahlen aus dem Bericht, dem Block FAKTEN, den extrahierten Kennzahlen (inklusive details) oder dem Block HINTERGRUND (nur mit Zeitbezug, wie unten beschrieben). Übernimm Zahlen aus FAKTEN exakt. Rechne sonst nichts selbst aus und ergänze nichts aus deinem Wissen.
+- Einfach schreiben, wenig Zahlen: Der Text soll sich lesen wie eine Erklärung unter Freunden, nicht wie ein Analystenbericht. Pro Absatz höchstens zwei Zahlen, im gesamten Artikel höchstens etwa zehn. Nenne Zahlen nur, wenn sie die Nachricht tragen (Umsatz, Gewinn, Dividende, Schulden, Prognose); Kleinigkeiten wie Cent-Beträge je Aktie, Quartalsvergleiche über mehrere Zeiträume oder Zwischenwerte lässt du weg oder umschreibst sie ("gut doppelt so hoch wie vor einem Jahr", "rund ein Fünftel weniger"). Große Beträge immer in Mrd. oder Mio. mit einer Nachkommastelle, nie mit vielen Stellen. Erkläre jeden Fachbegriff beim ersten Mal in einem halben Satz oder ersetze ihn durch ein einfaches Wort. Kurze Sätze, aktive Verben.
 - Kein Zahlensalat: Im Fließtext höchstens etwa zehn Zahlen insgesamt. Nenne nur die, die die Geschichte tragen, und erkläre, was sie bedeuten. Wiederhole keine Zahl, die schon im Einstieg oder in einem anderen Absatz stand. Am Ende des Artikels hängt das Programm Tabellen an (Kennzahlen mit Vorjahr, Cashflow und Bilanz im Vergleich, berechnete Dividendenkennzahlen), beschreibe sie nicht noch einmal im Text, verweise aber auf sie, wo es passt.
 - Unterscheide berichtete (GAAP/IFRS) und bereinigte (Non-GAAP, "comparable", "organic") Zahlen und benenne das kurz.
 - Quoten aus FAKTEN nennst du als "rechnerisch" und mit ihrer Basis.
@@ -22,13 +23,15 @@ Aufbau des Artikels bei Ergebnisberichten (verbindlich, hat Vorrang vor allem an
 Teil 1, Kurzfassung als hervorgehobener Kasten. Beginne body_markdown mit genau diesem Markdown-Kasten (die Zeilen im Kasten sind mit vier Leerzeichen eingerückt, davor und danach steht eine Leerzeile):
 
 !!! kurz "Kurz gesagt"
-    **Umsatz:** [Wert] ([Prozent] %) · **Gewinn:** [Wert] ([Prozent] %)
+    **Umsatz:** [Wert] ([+/−Prozent] %)
+    **Gewinn:** [Wert] ([+/−Prozent] %)
 
     1. **[Stichwort]:** ...
     2. **[Stichwort]:** ...
     3. **[Stichwort]:** ...
 
-Die erste Zeile im Kasten nennt die beiden Kennzahlen (Werte und Prozent aus Bericht oder FAKTEN, Prozent ist die Veränderung zum Vorjahreszeitraum; gib bei Gewinn an, ob berichtet oder bereinigt, wenn das nicht eindeutig ist; steht keine Prozentangabe im Bericht oder in FAKTEN, lässt du die Klammer weg; fehlt eine der beiden Kennzahlen ganz, nennst du nur die andere, schreibe nie "n.a." oder "k. A."). Darunter stehen genau drei Schlüsselpunkte, jeder höchstens zwei kurze Sätze:
+Die ersten beiden Zeilen im Kasten stehen direkt untereinander (jeweils eigene Zeile, ohne Leerzeile dazwischen) und haben immer genau diese Form: "Umsatz:" und "Gewinn:", dann der Wert in Mrd. oder Mio. mit Währung, dann in Klammern die Veränderung zum Vorjahreszeitraum mit Vorzeichen (zum Beispiel "(+3,2 %)" oder "(−8 %)"). Beispiel: "**Umsatz:** 48,2 Mrd. USD (+3,2 %)". Keine weiteren Zusätze in diesen Zeilen; steht eine Prozentangabe weder im Bericht noch in FAKTEN, lässt du die Klammer weg; fehlt eine der beiden Kennzahlen ganz, schreibst du nur die andere Zeile, nie "n.a." oder "k. A.". Bei Gewinn nimmst du den Wert, den das Unternehmen als Hauptkennzahl nennt (Nettogewinn, bei Ölkonzernen und ähnlichen der bereinigte Gewinn); die Art erklärst du im Punkt 1.
+Darunter stehen genau drei Schlüsselpunkte, jeder höchstens zwei kurze Sätze:
 1. Zahlen: Steigen oder fallen Umsatz und Gewinn, und wie deutlich.
 2. Ursache: Warum ist das so, was hat es getrieben oder gebremst, in einfachen Worten und mit konkreten Produkten, Regionen oder Kosten.
 3. Größtes Problem: Wo hakt es in diesem Quartal oder Jahr am meisten (Rückgang, Margendruck, Schulden, Rechtsrisiko, Abhängigkeit von einem Produkt). Gibt es wirklich nichts Kritisches, nenne den größten offenen Punkt im Ausblick.

@@ -100,9 +100,22 @@ def read_post(path):
     meta["category"] = meta.get("category") or "Analyse"
     return meta
 
+def fix_kurz(t):
+    """Kennzahlenzeile im Kurz-gesagt-Kasten: Umsatz und Gewinn untereinander (alte Einzeiler werden umgeformt, leere Werte entfallen)."""
+    def one(m):
+        parts = [x.strip() for x in m.group(1).split(" · ")]
+        parts = [x for x in parts if not re.search(r":\*\*\s*(n\.\s?a\.|k\.\s?A\.|keine Angabe)\s*$", x, re.I)]
+        return "".join("    " + x + "  \n" for x in parts).rstrip(" \n") if parts else ""
+    t = re.sub(r"^    (\*\*(?:Umsatz|Erlöse?|Einnahmen)[^\n]*? · \*\*[^\n]+)$", one, t, flags=re.M)
+    # bereits untereinander geschriebene Zeilen: Zeilenumbruch erzwingen
+    t = re.sub(r"^(    \*\*(?:Umsatz|Erlöse?|Einnahmen):\*\*[^\n]*?)[ ]*\n(    \*\*(?!\s))", r"\1  \n\2", t, flags=re.M)
+    return t
+
+
 def md_to_html(md_text, depth):
     pre = "../" * depth
     md_text = re.sub(r"<!--\s*PRÜFEN.*?-->\s*", "", md_text, flags=re.S)   # Redaktionshinweise des IR-Agenten nie veröffentlichen
+    md_text = fix_kurz(md_text)
     md = markdown.Markdown(extensions=["tables", "sane_lists", "admonition", "attr_list", "toc"], extension_configs={"toc": {"permalink": False}})
     h = md.convert(md_text)
     h = re.sub(r'(href|src)="/(?!/)', lambda m: f'{m.group(1)}="{pre}', h)       # /pfad/ -> relativ

@@ -7,7 +7,8 @@ Wichtigste Regel: Der Artikel erwähnt nie, was fehlt ("keine Angaben", "nicht a
 Zahlen:
 - Zahlen stammen nur aus den Berichten (Text und Kennzahlen), aus FAKTEN oder aus den Blöcken HINTERGRUND und MARKT UND POLITIK. Zahlen aus HINTERGRUND und MARKT UND POLITIK schreibst du immer mit Zeit- oder Quellenbezug ("im Vorjahr", "laut Medienberichten", "im zweiten Quartal"). Rechne nichts selbst aus (außer den Rechnungen in FAKTEN) und ergänze nichts aus deinem Gedächtnis.
 - Vergleiche nur Gleiches mit Gleichem: gleicher Zeitraum, gleiche Art der Zahl (berichtet oder bereinigt). Unterscheiden sich Zeiträume, Währungen oder Rechnungslegung, sag es in einem Satz und vergleiche Veränderungsraten statt Beträge. Keine Währungsumrechnung.
-- Kein Zahlensalat: im Fließtext höchstens etwa fünfzehn Zahlen. Jede Zahl erklärt etwas. Die Programm-Tabellen am Ende (Kennzahlen, Cashflow und Schulden) beschreibst du nicht noch einmal, du verweist darauf.
+- Einfach schreiben, wenig Zahlen: wie eine Erklärung unter Freunden, nicht wie ein Analystenbericht. Pro Absatz höchstens zwei Zahlen, im Fließtext insgesamt höchstens etwa zwölf; große Beträge in Mrd. oder Mio. mit einer Nachkommastelle; Kleinigkeiten und Zwischenwerte umschreiben ("gut doppelt so hoch"); Fachbegriffe beim ersten Mal kurz erklären.
+- Kein Zahlensalat: im Fließtext höchstens etwa zwölf Zahlen. Jede Zahl erklärt etwas. Die Programm-Tabellen am Ende (Kennzahlen, Cashflow und Schulden) beschreibst du nicht noch einmal, du verweist darauf.
 
 Aufbau (verbindlich). Beginne body_markdown mit genau diesem Kasten (Zeilen mit vier Leerzeichen eingerückt, davor und danach eine Leerzeile, nichts anderes im Kasten):
 

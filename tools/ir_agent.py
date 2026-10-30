@@ -987,11 +987,42 @@ def fmp_metrics(symbol, have_report_rows=False):
 
 
 def font(size, bold=False):
-    for f in (("/usr/share/fonts/opentype/inter/Inter-Bold.otf" if bold else "/usr/share/fonts/opentype/inter/Inter-Regular.otf"),
+    """Inter aus dem Repo (assets/fonts), damit Grafiken auf jedem Rechner gleich aussehen; Rueckfall DejaVu."""
+    nm = "Inter-Bold.otf" if bold else "Inter-Regular.otf"
+    for f in (os.path.join(ROOT, "assets", "fonts", nm), "/usr/share/fonts/opentype/inter/" + nm,
               ("/usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf" if bold else "/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf")):
         if os.path.exists(f):
             return ImageFont.truetype(f, size)
     return ImageFont.load_default()
+
+
+def graphic_logo(out):
+    """Firmenlogo fuer die Grafik (PIL-Bild oder None): erst Datei in assets/logos, sonst wie in fetch_logos abrufen und dort ablegen."""
+    try:
+        import fetch_logos as fl
+    except Exception:
+        return None
+    sym = re.sub(r"[^A-Za-z0-9.\-]", "", out.get("ticker") or "")
+    dom = re.sub(r"^(https?://)?(www\.)?|/.*$", "", (out.get("website_domain") or "").lower())
+    key = re.sub(r"[^a-z0-9]+", "-", (sym or dom or out.get("company") or "").lower()).strip("-")
+    if not key:
+        return None
+    path = os.path.join(ROOT, "assets", "logos", key + ".png")
+    try:
+        if not os.path.exists(path):
+            png = None
+            for fn, arg in ((fl.from_fmp, sym), (fl.from_site, dom), (fl.from_google, dom)):
+                png = fn(arg) if arg else None
+                if png:
+                    break
+            if not png:
+                return None
+            os.makedirs(os.path.dirname(path), exist_ok=True)
+            open(path, "wb").write(png)
+        return Image.open(path).convert("RGBA")
+    except Exception as e:
+        print("Logo fuer Grafik nicht moeglich:", str(e)[:80])
+        return None
 
 
 def tw(d, t, f):
@@ -1014,6 +1045,11 @@ def draw_graphic(out, path):
     im = Image.new("RGB", (W, H), "#ffffff"); d = ImageDraw.Draw(im)
     green, dark, grey = "#2f9e5b", "#14202b", "#5d6b78"
     d.rectangle([0, 0, W, 16], fill=green)
+    logo = graphic_logo(out)
+    if logo:        # Firmenlogo oben rechts auf weisser Plakette
+        lg = logo.resize((56, 56), Image.LANCZOS)
+        d.rounded_rectangle([W - 70 - 76, 30, W - 70, 100], 16, fill="#ffffff", outline="#dbe5ec", width=2)
+        im.paste(lg, (W - 70 - 66, 37), lg)
     d.text((70, 52), f"{out['company']} · {out.get('period') or out.get('report_type') or ''}".strip(" ·").upper(), font=font(28, True), fill=green)
     kp = (out.get("kpis") or [])[:4]
     n = max(1, len(kp)); gap = 24; cw = (W - 140 - gap * (n - 1)) // n
