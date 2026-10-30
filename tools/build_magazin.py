@@ -311,6 +311,13 @@ def credit_html(p):
     return esc(cred)
 
 
+def kurs_chip(p):
+    """Aktienkuerzel mit Kurs (assets/kurse.js fuellt den Kurs). Nur bei Artikeln zu einer einzelnen Firma mit Kuerzel."""
+    sym = re.sub(r"[^A-Za-z0-9.\-]", "", (p.get("logo_symbol") or "")).upper()
+    if not sym or p.get("typ") == "vergleich": return ""
+    return f'<p class="kchip-row"><span class="kchip" data-kurs="{esc(sym)}">${esc(re.sub(r"[.]L$|[.][A-Z]+$", "", sym))}</span></p>\n'
+
+
 def logo_html(p):
     """Titel mit Firmenlogo (FMP-Symbolbild, Rueckfall Favicon der Firmenwebsite, sonst ohne Logo)."""
     lf = p.get("logo_file", "")
@@ -424,6 +431,7 @@ def share_html(p, url, img):
 
 
 SHARE_JS = r"""<script src="../../assets/story.js"></script>
+<script src="../../assets/kurse.js"></script>
 <script>(function(){var bar=document.querySelector(".sharebar");if(!bar)return;var m=document.getElementById("igmsg"),pg=bar.getAttribute("data-url"),S=JSON.parse(bar.getAttribute("data-story")||"{}");
 document.getElementById("cpshare").onclick=async function(){try{await navigator.clipboard.writeText(pg);m.textContent="Link kopiert."}catch(e){m.textContent=pg}};
 document.getElementById("igshare").onclick=function(){window.StoryShare(S,m)}})();</script>"""
@@ -467,7 +475,7 @@ def build_post(p, posts):
     o = head(depth, p["title"], p["description"], url, "article", absu(make_share_card(p, slug, img)).replace("&", "&amp;"), extra) + nav_html(depth, "news") + "</nav></div></header>\n"
     o += f'<script src="{pre}assets/navigation.js"></script>\n<script src="{pre}assets/logos.js"></script>\n<main class="wrap"><article class="post">\n'
     o += f'<nav class="crumbs" aria-label="Brotkrumen"><a href="{pre}">Start</a> › <a href="{pre}news/">News</a> › <span aria-current="page">{esc(p["title"])}</span></nav>\n'
-    o += f'<p class="kicker">{esc(p["category"])}</p>\n{logo_html(p)}<p class="lead">{esc(p["description"])}</p>\n'
+    o += f'<p class="kicker">{esc(p["category"])}</p>\n{logo_html(p)}{kurs_chip(p)}<p class="lead">{esc(p["description"])}</p>\n'
     upd = f' · Aktualisiert: <time datetime="{iso(p["upd"])}">{de_date(p["upd"])}</time>' if p["upd"].date() > p["dt"].date() else ""
     o += f'<p class="byline">{('<strong><a href="' + pre + 'ueber-uns/">Aus der Redaktion</a></strong>') if 'redaktion' in author.lower() else 'Von <strong>' + esc(author) + '</strong>'} · <time datetime="{iso(p["dt"])}">{de_dt(p["dt"])}</time>{upd} · {mins} Min. Lesezeit</p>\n'
     o += share_html(p, url, img if ext(img) else pre + img)
