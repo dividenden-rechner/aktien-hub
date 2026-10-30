@@ -1,5 +1,5 @@
 ---
-title: "Otis Worldwide: Q3-Nettoumsatz steigt auf 3,9 Milliarden US-Dollar"
+title: "Otis Worldwide wendet 2026 rund 800 Mio. USD für Aktienrückkäufe auf"
 description: "Otis Worldwide meldet im dritten Quartal 2026 einen Nettoumsatz von 3,9 Milliarden US-Dollar und bestaetigt den Gesamtjahresausblick."
 date: 2026-10-29 23:24
 author: "Redaktions-Team Dividenden-Rechner.de"

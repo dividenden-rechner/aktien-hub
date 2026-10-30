@@ -1,5 +1,5 @@
 ---
-title: "Carrier Global: Umsatz steigt im dritten Quartal 2026 auf 6,263 Milliarden US-Dollar"
+title: "Carrier Global verbucht 3,1 Mrd. US-Dollar Goodwill-Abschreibung in Q3"
 description: "Carrier Global veröffentlicht die Ergebnisse für das dritte Quartal 2026 und hebt die Gesamtjahresprognose an."
 date: 2026-10-30 00:27
 author: "Redaktions-Team Dividenden-Rechner.de"

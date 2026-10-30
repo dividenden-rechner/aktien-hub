@@ -1,5 +1,5 @@
 ---
-title: "Howmet Aerospace: Umsatz steigt im Q3 2026 um 29% auf 2,703 Mrd. US-Dollar"
+title: "Howmet Aerospace genehmigt Aktienrückkaufprogramm von 5 Mrd. US-Dollar"
 description: "Howmet Aerospace meldet Ergebnisse fuer das dritte Quartal 2026 mit Umsatzwachstum, hoeherer Dividende und angehobener Prognose."
 date: 2026-10-29 23:50
 author: "Redaktions-Team Dividenden-Rechner.de"

@@ -1,5 +1,5 @@
 ---
-title: "Willis Towers Watson: Umsatz steigt im dritten Quartal 2026 auf 2,5 Mrd. USD"
+title: "Willis Towers Watson schließt Q3 2026 mit 309 Millionen US-Dollar Nettogewinn ab"
 description: "Willis Towers Watson legt die Finanzzahlen für das dritte Quartal 2026 vor."
 date: 2026-10-29 23:49
 author: "Redaktions-Team Dividenden-Rechner.de"

@@ -1,5 +1,5 @@
 ---
-title: "Mastercard steigert Nettoumsatz im dritten Quartal 2026 auf 9,8 Milliarden US-Dollar"
+title: "Mastercard kauft im dritten Quartal Aktien für 3,0 Mrd. US-Dollar zurück"
 description: "Mastercard meldet für das dritte Quartal 2026 einen Nettoumsatz von 9,8 Milliarden US-Dollar und ein verwässertes Ergebnis je Aktie von 5,28 US-Dollar."
 date: 2026-10-30 00:27
 author: "Redaktions-Team Dividenden-Rechner.de"

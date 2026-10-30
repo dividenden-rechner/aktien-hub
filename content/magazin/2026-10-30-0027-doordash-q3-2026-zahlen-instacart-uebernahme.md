@@ -1,5 +1,5 @@
 ---
-title: "DoorDash: Umsatz steigt in Q3 2026 auf 4,6 Milliarden US-Dollar"
+title: "DoorDash verbucht im Q3 2026 einen Nettogewinn von 466 Millionen US-Dollar"
 description: "DoorDash veröffentlicht die Finanzergebnisse für das dritte Quartal 2026 und kündigt die Übernahme von Instacart an."
 date: 2026-10-30 00:27
 author: "Redaktions-Team Dividenden-Rechner.de"

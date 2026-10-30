@@ -1,5 +1,5 @@
 ---
-title: "O'Reilly Automotive steigert Quartalsumsatz auf 5,12 Milliarden US-Dollar"
+title: "O'Reilly Automotive schließt Q3 2026 mit 786 Millionen US-Dollar Nettogewinn ab"
 description: "O'Reilly Automotive meldet Rekordergebnisse für das dritte Quartal 2026 und hebt die Gesamtjahresprognose an."
 date: 2026-10-29 23:49
 author: "Redaktions-Team Dividenden-Rechner.de"
