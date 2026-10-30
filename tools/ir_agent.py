@@ -1150,7 +1150,9 @@ def build(out, text, src_note, force=False, calc_rows=None, fmp_used=False, figs
             res = fmp_get("search-name", query=out["company"], limit=6) or []
             syms = [r.get("symbol", "") for r in res if r.get("symbol")]
             if syms and tk not in syms:
-                tk = syms[0]
+                nn = re.sub(r"[^a-z0-9]", "", out["company"].lower())
+                gut = [r["symbol"] for r in res if r.get("symbol") and re.sub(r"[^a-z0-9]", "", (r.get("name") or "").lower()).startswith(nn[:8])]
+                tk = gut[0] if gut else (tk or syms[0])    # nur Treffer mit passendem Namen (sonst z. B. BPP.L statt BP)
         except Exception as e:
             print("Symbolsuche fehlgeschlagen:", e)
     dom_ = re.sub(r"^(https?://)?(www\.)?|/.*$", "", out.get("website_domain") or "")

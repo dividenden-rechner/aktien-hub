@@ -66,6 +66,8 @@ def to_logo(raw, min_side=48):
 def from_fmp(sym):
     if not sym:
         return None
+    if sym.upper().endswith(".L") and not get(f"https://images.financialmodelingprep.com/symbol/{urllib.parse.quote(sym)}.png"):
+        sym = sym[:-2]      # Londoner Titel: Bild der Hauptnotiz/ADR (z. B. BP.L -> BP)
     return to_logo(get(f"https://images.financialmodelingprep.com/symbol/{urllib.parse.quote(sym)}.png"), 48)
 
 
@@ -166,6 +168,8 @@ def main():
             continue
         sym = re.sub(r"[^A-Za-z0-9.\-]", "", meta.get("logo_symbol", ""))
         dom = re.sub(r"^(https?://)?(www\.)?|/.*$", "", meta.get("logo_domain", "").lower())
+        if not re.fullmatch(r"[a-z0-9\-]+(\.[a-z0-9\-]+){1,3}", dom) or "dummy" in dom:
+            dom = ""          # unbrauchbare Domain (vom Modell erfunden) ignorieren
         name = meta.get("logo_name") or re.split(r"[ :,]", meta.get("title", ""))[0]
         cur = meta.get("logo_file", "")
         if cur and os.path.exists(cur) and not cur.endswith(".mono.png"):
