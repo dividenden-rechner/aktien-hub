@@ -1,5 +1,5 @@
 ---
-title: "AbbVie wächst - Immunologie mit Skyrizi und Rinvoq tragen"
+title: "AbbVie wächst - Skyrizi und Rinvoq machen Humira vergessen"
 description: "AbbVie wächst im dritten Quartal 2026 um 10,3 Prozent. Die Immunologie mit Skyrizi und Rinvoq legt um 16,3 Prozent zu und trägt das Wachstum, die Dividende steigt um 5,2 Prozent."
 date: 2026-10-30 18:02
 author: "Redaktions-Team Dividenden-Rechner.de"
@@ -22,7 +22,7 @@ logo_file: assets/logos/abbv.png
     **Umsatz:** 17,404 Mrd. USD (+10,3 %)
     **Gewinn:** 4,218 Mrd. USD (>100 %)
 
-    1. **Zahlen:** Der Umsatz klettert auf 17,404 Mrd. USD, während der Nettogewinn auf 4,218 Mrd. USD steigt, angetrieben von starken Portfoliobereichen wie Immunology und Neuroscience.
+    1. **Zahlen:** Der Umsatz klettert auf 17,4 Mrd. USD, während der Nettogewinn auf 4,2 Mrd. USD steigt, angetrieben von starken Portfoliobereichen wie Immunology und Neuroscience.
     2. **Ausschüttung:** Der Vorstand erhöht die Quartalsdividende um 5,2 Prozent auf 1,82 USD je Aktie, zahlbar im Februar 2027.
     3. **Prognose:** AbbVie hebt die Jahresprognose für das bereinigte verwässerte Ergebnis je Aktie auf 13,95 bis 13,99 USD an.
 
@@ -35,12 +35,12 @@ AbbVie legt den Finanzbericht für das dritte Quartal 2026 vor und zeigt ein deu
 
 ### Starkes Portfolio treibt das Geschäft
 
-Im abgelaufenen Quartal erwirtschaftete der Konzern einen Umsatz von **17,404 Mrd. USD**, was einem Plus von 10,3 Prozent gegenüber dem Vorjahreszeitraum entspricht. Auf bereinigter Basis lag das Wachstum bei 10,5 Prozent. Der Nettogewinn, der auf das Unternehmen entfällt, sprang auf **4,218 Mrd. USD** nach oben, nachdem im Vorjahreszeitraum 186 Mio. USD erzielt worden waren. Der verwässerte Gewinn je Aktie erreichte auf GAAP-Basis 2,37 USD, während der bereinigte Gewinn je Aktie (**3,82 USD**) mehr als doppelt so hoch ausfiel wie im Vorjahr.
+Im abgelaufenen Quartal erwirtschaftete der Konzern einen Umsatz von **17,4 Mrd. USD**, was einem Plus von 10,3 Prozent gegenüber dem Vorjahreszeitraum entspricht. Auf bereinigter Basis lag das Wachstum bei 10,5 Prozent. Der Nettogewinn, der auf das Unternehmen entfällt, sprang auf **4,2 Mrd. USD** nach oben, nachdem im Vorjahreszeitraum 186 Mio. USD erzielt worden waren. Der verwässerte Gewinn je Aktie erreichte auf GAAP-Basis 2,37 USD, während der bereinigte Gewinn je Aktie (**3,82 USD**) mehr als doppelt so hoch ausfiel wie im Vorjahr.
 
 ![Wichtigste Produktumsätze im 3. Quartal 2026](/assets/magazin/abbvie-q3-2026-zahlen-umsatz-gewinn-f1.png)
 *Wichtigste Produktumsätze im 3. Quartal 2026. Quelle: AbbVie Inc., Quartalszahlen Q3 2026 vom 2026-10-30 · [Original](https://www.sec.gov/Archives/edgar/data/1551152/000155115226000033/abbv-20260930xexhibit991.htm). Ausschnitt nur zugeschnitten, sonst unverändert.*
 
-Das wichtigste Segment bleibt die Immunologie mit Umsätzen von **9,165 Mrd. USD** (plus 16,3 Prozent). Vor allem das Mittel Skyrizi mit Erlösen von 5,776 Mrd. USD und Rinvoq mit 2,706 Mrd. USD stützten das Wachstum. Auch der Bereich Neuroscience legte kräftig zu und steuerte 3,389 Mrd. USD bei, gestützt durch Produkte wie Vraylar und Botox Therapeutic. Im Onkologiebereich beliefen sich die Erlöse auf 1,696 Mrd. USD, während die Ästhetik-Sparte mit 1,176 Mrd. USD leicht unter dem Vorjahreswert lag.
+Das wichtigste Segment bleibt die Immunologie mit Umsätzen von **9,2 Mrd. USD** (plus 16,3 Prozent). Vor allem das Mittel Skyrizi mit Erlösen von 5,8 Mrd. USD und Rinvoq mit 2,7 Mrd. USD stützten das Wachstum. Auch der Bereich Neuroscience legte kräftig zu und steuerte 3,4 Mrd. USD bei, gestützt durch Produkte wie Vraylar und Botox Therapeutic. Im Onkologiebereich beliefen sich die Erlöse auf 1,7 Mrd. USD, während die Ästhetik-Sparte mit rund 1,18 Mrd. USD leicht unter dem Vorjahreswert lag.
 
 > „AbbVie continues to deliver outstanding results, reflecting solid execution across our diverse portfolio.“
 >
