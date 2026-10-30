@@ -10,6 +10,7 @@ quelle_url: https://www.axa.com/en/press/press-releases/9m26-activity-indicators
 quelle_name: "Pressemitteilung AXA"
 logo_symbol: CS.PA
 logo_name: "AXA"
+logo_file: assets/logos/cs-pa.png
 ---
 <!-- PRÜFEN: Diese Zahlen stehen nicht im Originaltext: 2025. Bitte pruefen, dann 'draft: true' loeschen. -->
 

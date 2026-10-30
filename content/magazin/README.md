@@ -15,7 +15,7 @@ Datei anklicken, dann Stift-Symbol: Zeile `draft: true` löschen und speichern, 
 | 29.10.2026 22:42 | Amazon steigert Umsatz im dritten Quartal auf 201,9 Milliarden Dollar | [2026-10-29-2242-amazon-q3-2026-zahlen.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/2026-10-29-2242-amazon-q3-2026-zahlen.md) |
 | 29.10.2026 10:12 | Shell erzielt im dritten Quartal 10,8 Milliarden Dollar Gewinn | [2026-10-29-1012-shell-q3-2026-ergebnisse.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/2026-10-29-1012-shell-q3-2026-ergebnisse.md) |
 
-### Online (124)
+### Online (125)
 
 | Datum | Titel | Datei |
 |---|---|---|
@@ -43,6 +43,7 @@ Datei anklicken, dann Stift-Symbol: Zeile `draft: true` löschen und speichern, 
 | 30.10.2026 18:02 | Samsung Electronics erzielt im dritten Quartal 107,4 Billionen KRW operativen Gewinn | [2026-10-30-1802-samsung-electronics-q3-2026-zahlen-dividende.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/2026-10-30-1802-samsung-electronics-q3-2026-zahlen-dividende.md) |
 | 30.10.2026 18:02 | Hyundai Motor steigert operativen Gewinn auf 2,68 Billionen KRW | [2026-10-30-1802-hyundai-motor-q3-ergebnis-2026.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/2026-10-30-1802-hyundai-motor-q3-ergebnis-2026.md) |
 | 30.10.2026 18:02 | Henkel erhöht Jahresprognose nach starkem organischem Q3-Wachstum | [2026-10-30-1802-henkel-q3-zahlen-2026-prognose-erhoehung.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/2026-10-30-1802-henkel-q3-zahlen-2026-prognose-erhoehung.md) |
+| 30.10.2026 18:02 | AXA steigert Bruttoprämien in den ersten neun Monaten auf 93,0 Milliarden Euro | [2026-10-30-1802-axa-9m-2026-praemien-prognose.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/2026-10-30-1802-axa-9m-2026-praemien-prognose.md) |
 | 30.10.2026 18:02 | AbbVie steigert den Umsatz auf 17,4 Milliarden US-Dollar und erhöht die Dividende | [2026-10-30-1801-abbvie-q3-2026-zahlen-umsatz-gewinn.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/2026-10-30-1801-abbvie-q3-2026-zahlen-umsatz-gewinn.md) |
 | 30.10.2026 12:30 | Chevron meldet 9,9 Milliarden Dollar Gewinn im dritten Quartal | [2026-10-30-1230-chevron-q3-2026-ergebnisse.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/2026-10-30-1230-chevron-q3-2026-ergebnisse.md) |
 | 30.10.2026 12:23 | ExxonMobil erzielt im dritten Quartal 15,4 Milliarden US-Dollar Nettogewinn | [2026-10-30-1223-exxonmobil-q3-2026-quartalszahlen.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/2026-10-30-1223-exxonmobil-q3-2026-quartalszahlen.md) |
