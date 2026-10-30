@@ -477,6 +477,23 @@ def long_article(c, state):
     fails[key] = fails.get(key, 0) + 1; log("  IR-Agent gescheitert:", msg[:200]); return False
 
 
+DAILY_CALLS = int(os.environ.get("KURZ_DAILY_CALLS", "400"))   # Gemini-Aufrufe pro Tag, die der Agent insgesamt einplant
+DAY_SHARE = float(os.environ.get("KURZ_DAY_SHARE", "0.5"))      # Anteil, der tagsueber (Berlin 6 bis 20 Uhr) verbraucht werden darf; Rest bleibt fuer den Abend
+CALLS_PER_POST = 3                                              # Auswahl und Text, Hintergrundrecherche, Einordnung
+
+
+def budget_day():
+    """Google zaehlt die Tageskontingente ab Mitternacht US-Westkueste (PT)."""
+    from zoneinfo import ZoneInfo
+    return datetime.now(ZoneInfo("America/Los_Angeles")).strftime("%Y-%m-%d")
+
+
+def budget_allowed():
+    from zoneinfo import ZoneInfo
+    h = datetime.now(ZoneInfo("Europe/Berlin")).hour
+    return int(DAILY_CALLS * (DAY_SHARE if 6 <= h < 20 else 1.0))
+
+
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--update-universe", action="store_true")
@@ -496,13 +513,22 @@ def main():
             ia.fail("data/universe.json fehlt: erst --update-universe ausfuehren.")
         firmen = uni["firmen"]
         cands = edgar_candidates(firmen, done) + feed_candidates({f["sym"] for f in firmen}, done)
-    log(f"{len(cands)} neue Kandidaten")
-    made = 0; longs = 0
     watch = set(load_json(WATCHLIST, {}).get("tickers", []))
+    big = {f["sym"] for f in load_json(os.path.join(ia.ROOT, "data", "feeds.json"), {"feeds": []})["feeds"]}
+    cands.sort(key=lambda c: 0 if c["sym"] in watch else (1 if c["sym"] in big else 2))   # Wichtige Firmen zuerst
+    bud = state.setdefault("budget", {"day": "", "n": 0})
+    if bud["day"] != budget_day():
+        bud.update(day=budget_day(), n=0)
+    log(f"{len(cands)} neue Kandidaten, Budget heute {bud['n']}/{budget_allowed()} Aufrufe")
+    made = 0; longs = 0; fails = 0
     now_iso = datetime.now(timezone.utc).strftime("%Y-%m-%d")
     for c in cands:
         if made >= a.max:
             log("Obergrenze erreicht, Rest beim naechsten Lauf."); break
+        if not os.environ.get("KURZ_MOCK") and bud["n"] + CALLS_PER_POST > budget_allowed():
+            log(f"Tagesbudget fuer diese Tageszeit erreicht ({bud['n']}/{budget_allowed()}), Rest spaeter."); break
+        if fails >= 2:
+            log("Modelle liefern nichts mehr (Kontingent?), Lauf wird beendet."); break
         log(f"- {c['sym']} {c['key']}")
         try:
             if c.get("text"):
@@ -516,8 +542,11 @@ def main():
                 text, url = feed_text(c)
             if len(text) < 300:
                 log("  zu wenig Text"); done[c["key"]] = now_iso; continue
+            bud["n"] += 1
             out = generate(c, text)
+            fails = 0
         except SystemExit:
+            fails += 1
             log("  Modell-Fehler, spaeter erneut"); continue
         except Exception as e:
             log(f"  Fehler: {str(e)[:120]}"); continue
@@ -538,6 +567,7 @@ def main():
         bg, srcs = "", []
         ctx = None
         try:
+            bud["n"] += 2
             bg, srcs = background(c, text)
             ctx = context_part(c, text, out, bg)
         except SystemExit:
