@@ -79,11 +79,12 @@ def work(line):
     return res
 
 def main():
-    lines = [l for l in open(os.path.join(ROOT, "data", "asia-seed.txt"), encoding="utf-8") if l.strip() and not l.startswith("#")]
+    name = sys.argv[1] if len(sys.argv) > 1 else "asia"      # asia oder europa: liest data/<name>-seed.txt, schreibt data/<name>-feeds.json
+    lines = [l for l in open(os.path.join(ROOT, "data", name + "-seed.txt"), encoding="utf-8") if l.strip() and not l.startswith("#")]
     with ThreadPoolExecutor(8) as ex:
         results = list(ex.map(work, lines))
     out = {"stand": time.strftime("%Y-%m-%d"), "firmen": results}
-    json.dump(out, open(os.path.join(ROOT, "data", "asia-feeds.json"), "w", encoding="utf-8"), ensure_ascii=False, indent=1)
+    json.dump(out, open(os.path.join(ROOT, "data", name + "-feeds.json"), "w", encoding="utf-8"), ensure_ascii=False, indent=1)
     fp = os.path.join(ROOT, "data", "feeds.json")
     fd = json.load(open(fp, encoding="utf-8"))
     have = {f["sym"]: f for f in fd["feeds"]}
