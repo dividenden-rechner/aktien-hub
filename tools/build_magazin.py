@@ -314,6 +314,41 @@ def mini_logo(x, pre):
     name = re.sub(r"[^A-Za-z0-9]", "", x.get("title", "?")) or "?"
     return f'<span class="arlogo mono">{esc(name[0].upper())}</span>'
 
+_EU = (".DE", ".PA", ".AS", ".SW", ".CO", ".L", ".MI", ".MC", ".BR", ".ST", ".HE", ".OL", ".LS", ".VI", ".IR")
+_ASIA = (".T", ".HK", ".KS", ".KQ", ".TW", ".TWO", ".NS", ".BO", ".SI", ".AX", ".SS", ".SZ", ".BK", ".JK", ".KL")
+_ADR_ASIA = {"TSM", "BABA", "PDD", "NIO", "LI", "XPEV", "BIDU", "JD", "NTES", "SONY", "TM", "HMC", "MUFG", "SMFG", "MFG", "INFY", "HDB", "IBN",
+             "TCOM", "BEKE", "YUMC", "KB", "SHG", "KT", "LPL", "WIT", "TME", "NMR", "CHT", "UMC", "ASX", "BILI", "ZTO"}
+_FIN = {"Quartalszahlen", "Zahlen", "Jahresbericht", "Halbjahreszahlen", "Ausblick"}
+
+def post_region(x):
+    r = (x.get("region") or "").lower().strip()
+    if r in ("usa", "europa", "asien"):
+        return r
+    sym = (x.get("logo_symbol") or "").upper().strip()
+    if not sym:
+        return ""
+    if sym.endswith(".F"):          # Frankfurter Notierung dient nur dem Logo-Abruf, Herkunft unbekannt
+        return "usa"
+    if sym.endswith(_ASIA) or sym in _ADR_ASIA:
+        return "asien"
+    if sym.endswith(_EU):
+        return "europa"
+    return "usa"
+
+def post_topics(x):
+    t = []
+    if x.get("category") in _FIN: t.append("zahlen")
+    if x.get("category") == "Dividende" or "dividende" in x.get("title", "").lower(): t.append("dividende")
+    return " ".join(t)
+
+FILTER_JS = """<script>(function(){var R="alle",T="alle",nb=document.getElementById("mag-normal"),fl=document.getElementById("mag-filtered"),li=fl.querySelectorAll("li"),em=document.getElementById("mag-empty");
+function ap(){var on=R!=="alle"||T!=="alle";nb.hidden=on;fl.hidden=!on;var n=0;li.forEach(function(e){var ok=(R==="alle"||e.dataset.r===R)&&(T==="alle"||(" "+e.dataset.t+" ").indexOf(" "+T+" ")>-1);e.hidden=!ok;if(ok)n++});em.hidden=!on||n>0;
+document.querySelectorAll(".mag-chip").forEach(function(b){b.setAttribute("aria-pressed",String((b.dataset.g==="r"?R:T)===b.dataset.v))});
+try{history.replaceState(null,"",on?"#"+R+(T!=="alle"?"-"+T:""):location.pathname)}catch(e){}}
+document.querySelector(".mag-filter").addEventListener("click",function(e){var b=e.target.closest(".mag-chip");if(!b)return;if(b.dataset.g==="r")R=b.dataset.v;else T=b.dataset.v;ap()});
+var h=location.hash.slice(1).split("-");if(h[0]&&/^(usa|europa|asien)$/.test(h[0]))R=h[0];if(h[1]&&/^(zahlen|dividende)$/.test(h[1]))T=h[1];if(/^(zahlen|dividende)$/.test(h[0]))T=h[0];ap()})();</script>
+"""
+
 def build_index(posts):
     depth = 1; pre = "../"; url = "magazin/"
     title = "News: Dividenden, Kennzahlen und Steuern erklärt"
@@ -334,6 +369,12 @@ def build_index(posts):
     kurz_posts = [x for x in posts if x.get("typ") == "kurz"]
     rest = [x for x in posts if x is not hero and x.get("typ") != "kurz"]
     side, grid, archiv = rest[:4], rest[4:12], rest[12:]
+    chips = ('<div class="mag-filter" role="group" aria-label="News filtern"><div class="mag-fgrp"><span class="mag-flab">Region</span>'
+             + "".join(f'<button type="button" class="mag-chip" data-g="r" data-v="{v}" aria-pressed="{"true" if v == "alle" else "false"}">{l}</button>' for v, l in [("alle", "Weltweit"), ("usa", "USA"), ("europa", "Europa"), ("asien", "Asien")])
+             + '</div><div class="mag-fgrp"><span class="mag-flab">Thema</span>'
+             + "".join(f'<button type="button" class="mag-chip" data-g="t" data-v="{v}" aria-pressed="{"true" if v == "alle" else "false"}">{l}</button>' for v, l in [("alle", "Alle"), ("zahlen", "Finanzberichte"), ("dividende", "Dividenden")])
+             + '</div></div>\n<div id="mag-normal">\n')
+    o += chips
     o += (f'<section class="mag-top" aria-label="Thema des Tages"><a class="mag-hero" href="{hero["slug"]}/"><div class="mcwrap" style="position:relative;margin:0"><img class="mcover" src="{pre}{hero["img"]}" alt="" width="1200" height="675" fetchpriority="high">{card_logo(hero, pre)}</div>'
           f'<div class="mag-hero-body"><p class="kicker"><span class="mag-badge">Thema des Tages</span> {esc(hero["category"])} · {de_dt_kurz(hero["dt"])}</p><h2>{esc(hero["title"])}</h2><p class="mag-lead">{esc(hero["description"])}</p><span class="mag-more">Artikel lesen →</span></div></a>\n')
     if side:
@@ -360,6 +401,11 @@ def build_index(posts):
             o += (f'<li><a href="{x["slug"]}/">{mini_logo(x, pre)}<span class="artx"><span class="kicker">{esc(x["category"])} · {de_dt_kurz(x["dt"])}</span>'
                   f'<strong>{esc(x["title"])}</strong></span></a></li>\n')
         o += '</ul>\n'
+    o += '</div>\n<section id="mag-filtered" hidden aria-label="Gefilterte News"><ul class="mag-archiv">\n'
+    for x in posts[:150]:
+        o += (f'<li data-r="{post_region(x)}" data-t="{post_topics(x)}"><a href="{x["slug"]}/">{mini_logo(x, pre)}<span class="artx"><span class="kicker">{esc(x["category"])} · {de_dt_kurz(x["dt"])}</span>'
+              f'<strong>{esc(x["title"])}</strong></span></a></li>\n')
+    o += '</ul></section>\n<p id="mag-empty" class="note" hidden>Zu dieser Auswahl gibt es noch keine Meldungen.</p>\n' + FILTER_JS
     o += '<p class="meta"><a href="feed.xml">RSS-Feed abonnieren</a></p>\n' + HINT + "\n</main>\n" + footer_html(depth) + "\n</body>\n</html>\n"
     open("magazin/index.html", "w", encoding="utf-8").write(o)
 

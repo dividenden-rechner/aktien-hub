@@ -136,3 +136,10 @@ article p,article li,article td{overflow-wrap:anywhere}
 @media(max-width:760px){.mag-archiv{grid-template-columns:1fr}}
 .kurzquelle{font-size:14px;color:var(--mut);margin:14px 0}.mag-kurz{margin-bottom:28px}
 .kurzcover{max-width:260px}
+.mag-filter{display:flex;flex-wrap:wrap;gap:10px 28px;margin:6px 0 22px;padding:12px 0;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.mag-fgrp{display:flex;flex-wrap:wrap;align-items:center;gap:8px}
+.mag-flab{font-size:.78rem;font-weight:700;text-transform:uppercase;letter-spacing:.05em;color:var(--muted,#6b7280);margin-right:2px}
+.mag-chip{font:inherit;font-size:.9rem;padding:6px 14px;border:1px solid var(--line);border-radius:999px;background:transparent;color:var(--ink);cursor:pointer}
+.mag-chip:hover{border-color:var(--ink)}
+.mag-chip[aria-pressed="true"]{background:var(--ink);color:var(--bg,#fff);border-color:var(--ink)}
+[hidden]{display:none!important}
