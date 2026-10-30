@@ -22,6 +22,7 @@ from zoneinfo import ZoneInfo
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 import ir_agent as ia
+import nsm
 
 ROOT = ia.ROOT
 UNIVERSE = os.path.join(ROOT, "data", "universe.json")
@@ -607,7 +608,7 @@ def main():
         if not uni:
             ia.fail("data/universe.json fehlt: erst --update-universe ausfuehren.")
         firmen = uni["firmen"]
-        cands = edgar_candidates(firmen, done) + feed_candidates({f["sym"] for f in firmen}, done)
+        cands = edgar_candidates(firmen, done) + feed_candidates({f["sym"] for f in firmen}, done) + nsm.candidates(MAX_AGE_H, done, log)
     watch = set(load_json(WATCHLIST, {}).get("tickers", []))
     big = {f["sym"] for f in load_json(os.path.join(ia.ROOT, "data", "feeds.json"), {"feeds": []})["feeds"]}
     cands.sort(key=lambda c: 0 if c["sym"] in watch else (1 if c["sym"] in big else 2))   # Wichtige Firmen zuerst
@@ -633,6 +634,8 @@ def main():
                 if not r:
                     log("  keine Pressemitteilung in der Meldung"); done[c["key"]] = now_iso; continue
                 text, url = r
+            elif c["src"] == "nsm":
+                text, url = nsm.fetch_text(c["link"], ia.html_to_text, ia.http), c["link"]
             else:
                 text, url = feed_text(c)
             if len(text) < 300:
