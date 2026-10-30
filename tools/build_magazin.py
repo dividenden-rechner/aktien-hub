@@ -539,7 +539,7 @@ def mini_logo(x, pre):
     name = re.sub(r"[^A-Za-z0-9]", "", x.get("title", "?")) or "?"
     return f'<span class="arlogo mono">{esc(name[0].upper())}</span>'
 
-RUBRIKEN = [("Quartalszahlen & Berichte", {"Quartalszahlen", "Zahlen", "Jahresbericht", "Halbjahreszahlen"}), ("Dividende", {"Dividende"}), ("Aktienrückkauf", {"Aktienrückkauf"}),
+RUBRIKEN = [("Märkte", {"Marktüberblick"}), ("Quartalszahlen & Berichte", {"Quartalszahlen", "Zahlen", "Jahresbericht", "Halbjahreszahlen"}), ("Dividende", {"Dividende"}), ("Aktienrückkauf", {"Aktienrückkauf"}),
             ("Übernahme", {"Übernahme"}), ("Management", {"Management"}), ("Ausblick", {"Ausblick"}), ("Recht & Regulierung", {"Recht & Regulierung"})]
 
 
