@@ -55,7 +55,7 @@ def discover():
                 found.setdefault("kontext", []).append(m.group(0)[:200])
         for m in re.finditer(r".{300}criteriaObj=\{[^;]{0,500}", js, re.S):
             found.setdefault("anfrage_beispiele", []).append(m.group(0)); break
-        for pat in (r".{700}\.post\(Fl\.search_api.{200}", r"search_api\s*[:=][^,;]{0,160}", r"index\s*:\s*[\"'`][^\"'`]{2,40}[\"'`]", r"fca-[a-z\-]+(?:data|index)[a-z\-]*", r"[\"'`]x-[a-z\-]+[\"'`]\s*:\s*[^,}]{0,80}", r"[Aa]pi[Kk]ey[^,;]{0,100}"):
+        for pat in (r".{700}\.post\(Fl\.search_api.{200}", r"search_api\s*[:=][^,;]{0,160}", r"index\s*:\s*[\"'`][^\"'`]{2,40}[\"'`]", r"nsm_index_name\s*:\s*[\"'`][^\"'`]+[\"'`]", r"[a-z_]*index_name\s*:\s*[\"'`][^\"'`]+[\"'`]", r".{400}fetchData\([^)]*\).{300}", r"fca-[a-z\-]+(?:data|index)[a-z\-]*", r"[\"'`]x-[a-z\-]+[\"'`]\s*:\s*[^,}]{0,80}", r"[Aa]pi[Kk]ey[^,;]{0,100}"):
             for m in re.finditer(pat, js, re.S):
                 found.setdefault("tiefe", []).append(m.group(0)[:1000])
         for m in re.finditer(r"\.post\([^)]{0,200}\)", js):
