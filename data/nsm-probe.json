@@ -1,10 +1,10 @@
 {
- "mit_datum": {
+ "fca-nsm-searchdata:mit_datum": {
   "status": 400,
   "laenge": 13,
   "anfang": "Invalid index"
  },
- "einfach": {
+ "fca-nsm-searchdata:einfach": {
   "status": 400,
   "laenge": 13,
   "anfang": "Invalid index"

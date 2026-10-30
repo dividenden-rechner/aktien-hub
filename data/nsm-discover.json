@@ -1,0 +1,12 @@
+{
+ "startseite_laenge": 62045,
+ "scripte": [
+  "polyfills-5CFQRCPP.js",
+  "main-UXJOXE43.js"
+ ],
+ "anfrage_beispiele": [
+  "o_date;keyword;file_type;recordSize;msg=!1;showTable=!1;tableStartIndex=0;tableSortValue=\"asc\";tableSortfeild=\"publication_date\";page=0;totalRecords;pager={};errMsg;dateCriteriaObjArray=[];requestObj;criteriaObj;criteriaObjArray=[];data=[];response;pastDate;currDate;recordslist;typelist;headingList=[];isDesc=!0;column=\"Publication Date\";direction=-1;selectedRegister;printCsvArray=[];colList=new zn;lastPage=!1;invalidDate=!1;updatedetails;showRegisterName=!0;tempRecordSize;isShowMaintenance=!1;dateFormat=\"dd/MM/yyyy\";constructor(t,i,r,s){this.pagerService=t,this.spinnerService=i,this.homepageComponent=r,t"
+ ],
+ "api_treffer": [],
+ "index_treffer": []
+}
