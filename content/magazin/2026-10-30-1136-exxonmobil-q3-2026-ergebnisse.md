@@ -12,6 +12,7 @@ image_source: https://unsplash.com/photos/industrial-refinery-with-storage-tanks
 image_artist_url: https://unsplash.com/@mirrors_are_more_fun?utm_source=dividenden-rechner&utm_medium=referral
 logo_name: "Exxon Mobil Corporation"
 logo_symbol: XOM
+logo_file: assets/logos/xom.png
 ---
 <!-- PRÜFEN: Aufmacherfoto ist automatisch von Unsplash gewaehlt: bitte pruefen, ob es zum Artikel passt (sonst image-Zeilen entfernen, dann entsteht ein Titelbild automatisch). -->
 <!-- PRÜFEN: Diese Werte wurden im Berichtstext nicht gefunden: Grafik Upstream: 7088; Grafik Energy Products: 7169; Grafik Specialty Products: 1285 -->
