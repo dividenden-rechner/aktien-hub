@@ -1,6 +1,6 @@
 ---
-title: "AbbVie steigert den Umsatz auf 17,4 Milliarden US-Dollar und erhöht die Dividende"
-description: "AbbVie legt die Zahlen für das dritte Quartal 2026 vor. Der Umsatz wächst um 10,3 Prozent, der Gewinn legt deutlich zu und die Dividende steigt."
+title: "AbbVie wächst um 10 %: Immunologie legt um 16 % zu, Skyrizi und Rinvoq tragen"
+description: "AbbVie wächst im dritten Quartal 2026 um 10,3 Prozent. Die Immunologie mit Skyrizi und Rinvoq legt um 16,3 Prozent zu und trägt das Wachstum, die Dividende steigt um 5,2 Prozent."
 date: 2026-10-30 18:02
 author: "Redaktions-Team Dividenden-Rechner.de"
 author_bio: "Das Redaktions-Team von Dividenden-Rechner.de schreibt über Dividendenaktien, Kennzahlen und Steuerthemen für Privatanleger. Die Rechner und Auswertungen auf der Seite entstehen im eigenen Haus."
