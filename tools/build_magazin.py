@@ -17,7 +17,7 @@ BASE = CFG["base"] if CFG["base"].endswith("/") else CFG["base"] + "/"
 SITE = CFG["name"]
 esc = lambda s: html.escape(str(s), quote=True)
 NAV = [("rechner", "", "Rechner"), ("aktien", "aktien/", "Aktien"), ("depot", "depot/", "Depot"), ("news", "news/", "News"),
-       ("meldungen", "unternehmensmeldungen/", "Unternehmensmeldungen"), ("earnings", "earnings/", "Earnings"), ("screener", "screener/", "Screener"),
+       ("meldungen", "unternehmensmeldungen/", "Unternehmensmeldungen"), ("screener", "screener/", "Screener"),
        ("einfuehrung", "einfuehrung/", "Einführung"), ("grundlagen", "grundlagen/", "Grundlagen"),
        ("fortgeschrittene", "fortgeschrittene/", "Fortgeschrittene")]
 MONTHS = ["Januar", "Februar", "März", "April", "Mai", "Juni", "Juli", "August", "September", "Oktober", "November", "Dezember"]
@@ -585,6 +585,9 @@ def build_index(posts):
             o += (f'<li><a href="{x["slug"]}/">{mini_logo(x, pre)}<span class="artx"><span class="kicker">{esc(x["category"])} · {de_dt_kurz(x["dt"])}</span>'
                   f'<strong>{esc(x["title"])}</strong></span></a></li>\n')
         o += '</ul>\n'
+    o += ('<section class="ek-embed" aria-label="Unternehmenskalender"><h2 class="mag-more-h">Unternehmenskalender</h2>\n'
+          '<p class="meta">Wann veröffentlichen Dividendenunternehmen ihre Quartalszahlen? <a href="../earnings/">Vollständigen Kalender öffnen</a></p>\n'
+          '<iframe src="../earnings/?embed=1" title="Earnings-Kalender" loading="lazy" style="width:100%;height:760px;border:1px solid var(--line);border-radius:12px;background:#fff"></iframe></section>\n')
     o += '<p class="meta"><a href="feed.xml">RSS-Feed abonnieren</a></p>\n' + HINT + "\n</main>\n" + footer_html(depth) + "\n</body>\n</html>\n"
     open("news/index.html", "w", encoding="utf-8").write(o)
 
