@@ -168,7 +168,7 @@ def main():
             continue
         sym = re.sub(r"[^A-Za-z0-9.\-]", "", meta.get("logo_symbol", ""))
         dom = re.sub(r"^(https?://)?(www\.)?|/.*$", "", meta.get("logo_domain", "").lower())
-        if not re.fullmatch(r"[a-z0-9\-]+(\.[a-z0-9\-]+){1,3}", dom) or "dummy" in dom:
+        if not re.fullmatch(r"[a-z0-9\-]+(\.[a-z0-9\-]+){1,3}", dom) or re.search(r"invalid|example|dummy|avoided", dom):
             dom = ""          # unbrauchbare Domain (vom Modell erfunden) ignorieren
         name = meta.get("logo_name") or re.split(r"[ :,]", meta.get("title", ""))[0]
         cur = meta.get("logo_file", "")

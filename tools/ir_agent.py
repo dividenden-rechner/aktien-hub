@@ -744,6 +744,8 @@ def photo_credit(photo):
     photo = dict(photo, artist=_short_artist(photo.get("artist", "")))
     if photo.get("quelle") == "Unsplash":
         return f"Foto: {photo['artist']} auf Unsplash"
+    if photo.get("lic") == "Pressematerial":
+        return f"Bild: {photo['artist']} (Pressematerial)"
     return f"Foto: {photo['artist']} / {photo.get('quelle', 'Wikimedia Commons')}, {photo['lic']}"
 
 
@@ -763,8 +765,41 @@ def recent_motifs(n=12):
     return out
 
 
+BIB = os.path.join(ROOT, "data", "bildbibliothek.json")
+
+
+def bib_load():
+    try:
+        return json.load(open(BIB, encoding="utf-8"))
+    except Exception:
+        return {}
+
+
+def bib_set(sym, photo):
+    """Vom Redakteur ausgesuchtes Foto zur Firma merken (ersetzt das alte Foto dieser Firma)."""
+    d = bib_load()
+    d[sym.upper()] = photo
+    json.dump(d, open(BIB, "w", encoding="utf-8"), ensure_ascii=False, indent=1)
+
+
+def bib_get(ticker, company=""):
+    d = bib_load()
+    t = (ticker or "").upper()
+    if t in d:
+        return d[t]
+    nm = re.sub(r"[^a-z0-9]", "", (company or "").lower())
+    for k, v in d.items():
+        if nm and re.sub(r"[^a-z0-9]", "", (v.get("firma") or "").lower()) == nm:
+            return v
+    return None
+
+
 def pick_photo(company, ticker, key, industry="", fokus=""):
     """Aufmacherfoto: bevorzugt Produkt, Filiale, Werk oder Szene aus dem Alltag, abwechslungsreich; Firmenzentrale nur als letzter Ausweg."""
+    mine = bib_get(ticker, company)
+    if mine:
+        print("Foto aus der Bildbibliothek:", mine.get("title"))
+        return dict(mine)
     if key:
         try:
             p = pick_photo_topic([company], fokus, industry, key)
@@ -1271,7 +1306,7 @@ def build(out, text, src_note, force=False, calc_rows=None, fmp_used=False, figs
     fm.append("logo_name: " + q(out["company"]))
     if tk:
         fm.append(f"logo_symbol: {tk}")
-    if dom_ and re.match(r"^[a-z0-9.\-]+\.[a-z]{2,}$", dom_, re.I):
+    if dom_ and re.match(r"^[a-z0-9.\-]+\.[a-z]{2,}$", dom_, re.I) and not re.search(r"invalid|example|dummy|avoided", dom_, re.I):
         fm.append(f"logo_domain: {dom_}")
     fm += ["draft: true", "---", ""]
     if bad:

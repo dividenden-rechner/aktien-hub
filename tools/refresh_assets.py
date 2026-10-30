@@ -36,8 +36,14 @@ def main():
     if a.terms:
         terms = [t.strip() for t in a.terms.split(",") if t.strip()]
         want = [t[6:].strip() for t in terms if t.startswith("match:")]
-        terms = [t for t in terms if not t.startswith("match:")]
-        if want:      # bestimmtes Unsplash-Foto (vom Redakteur ausgesucht) statt Modellauswahl
+        urls = [t[4:].strip() for t in terms if t.startswith("url:")]
+        terms = [t for t in terms if not t.startswith(("match:", "url:"))]
+        if urls:      # Bild von einer Adresse (zum Beispiel Pressebild), Quelle ist das Unternehmen
+            ph = {"title": "Pressebild " + name, "thumb": urls[0], "page": urls[0], "artist": name, "lic": "Pressematerial", "quelle": "Unternehmen",
+                  "desc": "Bild des Unternehmens", "date": "", "download": ""}
+            cands = [ph]; want = ["-"]
+            print("Bild von Adresse:", urls[0][:90])
+        elif want:      # bestimmtes Unsplash-Foto (vom Redakteur ausgesucht) statt Modellauswahl
             ph = ia.unsplash_find(want[0], terms)
             print("Gefunden:" if ph else "Foto ueber die Suche nicht gefunden (andere Suchbegriffe angeben).", (ph or {}).get("title", ""))
             cands = [ph] if ph else []
@@ -70,6 +76,11 @@ def main():
             head = setf(head, "image_source", ph["page"])
             head = setf(head, "image_artist_url", ph.get("artist_url") or "")
             print("Neues Foto:", ph["title"], "->", rel)
+            if want:      # vom Redakteur ausgesucht: fuer kuenftige Artikel dieser Firma merken (ersetzt das alte)
+                sym = (a.symbol or (re.search(r"^logo_symbol:\s*\"?([A-Za-z0-9.\-]+)", head, re.M) or [None, ""])[1]).strip()
+                if sym:
+                    ia.bib_set(sym, dict(ph, firma=name))
+                    print("In der Bildbibliothek gemerkt fuer", sym)
         else:
             print("Kein passendes Foto gefunden, altes bleibt.")
     open(path, "w", encoding="utf-8").write(f"---\n{head}\n---\n{body}")
