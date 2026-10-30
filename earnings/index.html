@@ -38,6 +38,7 @@ img.ek-logo{background:#fff}
 .ek-row{display:flex;gap:12px;width:100%;text-align:left;padding:12px 14px;background:none;border:0;font:inherit;color:inherit;cursor:pointer;align-items:center}
 .ek-row:hover{background:#f8fafc}
 .ek-row .ek-logo{width:40px;height:40px;border-radius:11px}
+.ek-art{flex:0 0 auto;display:inline-flex;align-items:center;justify-content:center;width:34px;height:34px;border-radius:50%;color:#1a7a45;background:#e8f5ed;text-decoration:none;margin:0 4px}.ek-art:hover,.ek-art:focus-visible{background:#1a7a45;color:#fff}.ek-art svg{width:18px;height:18px;fill:currentColor}@media(max-width:640px){.ek-art{width:30px;height:30px;margin:0}}
 .ek-m{flex:1;min-width:0}.ek-nm{font-weight:600}.ek-nm a{color:inherit;text-decoration:none}.ek-nm a:hover{text-decoration:underline}
 .ek-sub{font-size:.85rem;color:#64748b}
 .ek-fig{display:flex;gap:16px;text-align:right;font-size:.88rem}.ek-fig div{min-width:84px}.ek-fig span{display:block;color:#64748b;font-size:.75rem}.ek-fig span .pos,.ek-fig span .neg{display:inline;color:inherit}
@@ -114,6 +115,15 @@ function mine(){
 var MINE=mine(),CAL=[],BIG={},sel=null,scope="big",q="",DAYS_BACK=3,DAYS_FWD=11,H={};
 function logo(sym,name){return window.HubLogos?HubLogos.img("ek-logo",sym,"",name||sym):'<span class="ek-logo">'+esc((name||sym||"?").charAt(0))+"</span>"}
 function key(d){var x=new Date(d);return x.getFullYear()+"-"+("0"+(x.getMonth()+1)).slice(-2)+"-"+("0"+x.getDate()).slice(-2)}
+var NEWS=[];
+var GENERIC={american:1,united:1,general:1,national:1,first:1,global:1,group:1,international:1,financial:1,corporation:1,company:1};
+function artFor(sym){
+  if(!NEWS.length)return null;var i,x,u=String(sym).toUpperCase();
+  for(i=0;i<NEWS.length;i++){x=NEWS[i];if(x.sym&&x.sym.toUpperCase()===u)return x}
+  var w=String(nm(sym)||"").toLowerCase().split(/[\s,.]+/)[0];
+  if(w.length>=5&&!GENERIC[w])for(i=0;i<NEWS.length;i++){x=NEWS[i];if(x.title.toLowerCase().indexOf(w)>-1)return x}
+  return null}
+function artIcon(sym){var a=artFor(sym);if(!a)return"";return '<a class="ek-art" href="../news/'+esc(a.slug)+'/" title="Dazu gibt es einen Artikel in den News: '+esc(a.title)+'" aria-label="Artikel in den News: '+esc(a.title)+'"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="5" cy="19" r="2.6"/><path d="M3 9.5v3.2a8.3 8.3 0 0 1 8.3 8.3h3.2A11.5 11.5 0 0 0 3 9.5z"/><path d="M3 3v3.2A14.8 14.8 0 0 1 17.8 21H21A18 18 0 0 0 3 3z"/></svg></a>'}
 function nm(s){return MINE[s]||NAMES[s]||(BIG[s]&&BIG[s].n)||s}
 function num(v,d){return v==null||isNaN(v)?"–":Number(v).toLocaleString("de-DE",{minimumFractionDigits:d==null?2:d,maximumFractionDigits:d==null?2:d})}
 function big(v){if(v==null||isNaN(v))return"–";var a=Math.abs(v);return a>=1e12?num(v/1e12)+" Bio.":a>=1e9?num(v/1e9)+" Mrd.":a>=1e6?num(v/1e6,0)+" Mio.":num(v,0)}
@@ -162,7 +172,7 @@ function renderList(){
     var ge=done?gr(r.epsActual,r.epsEstimated):null,gv=done?gr(r.revenueActual,r.revenueEstimated):null,vd=verdict(ge,gv);
     var ee=done&&r.epsEstimated!=null?" · Erw. "+num(r.epsEstimated)+" "+gp(ge):"",ev=done&&r.revenueEstimated!=null?" · Erw. "+big(r.revenueEstimated)+" "+gp(gv):"";
     var be=done&&r.epsEstimated!=null?bar(r.epsActual,r.epsEstimated,ge):"",bv=done&&r.revenueEstimated!=null?bar(r.revenueActual,r.revenueEstimated,gv):"";
-    h+='<div class="ek-item" data-s="'+esc(s)+'" data-d="'+esc(r.date)+'"><button type="button" class="ek-row" aria-expanded="false">'+logo(s,nm(s))+'<span class="ek-m"><span class="ek-nm"><a href="../aktien/?s='+encodeURIComponent(s)+'">'+esc(nm(s))+'</a>'+'</span><span class="ek-pills"><span class="ek-badge'+(done?" done":"")+'">'+(done?"berichtet":"erwartet")+'</span>'+(vd?'<span class="ek-badge '+vd[1]+'" title="Gewinn und Umsatz im Vergleich zur Analystenerwartung">'+vd[0]+'</span>':"")+'</span></span><span class="ek-fig"><div>'+num(eps)+'<span class="'+(done?"t-"+tone(ge):"")+'">Gewinn/Aktie'+(done?ee:" (Schätzung)")+'</span>'+be+'</div><div>'+big(rev)+'<span class="'+(done?"t-"+tone(gv):"")+'">Umsatz'+(done?ev:" (Schätzung)")+'</span>'+bv+'</div></span></button><div class="ek-body"><p class="ek-sub">Lade Details …</p></div></div>';
+    h+='<div class="ek-item" data-s="'+esc(s)+'" data-d="'+esc(r.date)+'"><button type="button" class="ek-row" aria-expanded="false">'+logo(s,nm(s))+'<span class="ek-m"><span class="ek-nm"><a href="../aktien/?s='+encodeURIComponent(s)+'">'+esc(nm(s))+'</a>'+'</span><span class="ek-pills"><span class="ek-badge'+(done?" done":"")+'">'+(done?"berichtet":"erwartet")+'</span>'+(vd?'<span class="ek-badge '+vd[1]+'" title="Gewinn und Umsatz im Vergleich zur Analystenerwartung">'+vd[0]+'</span>':"")+'</span></span>'+artIcon(s)+'<span class="ek-fig"><div>'+num(eps)+'<span class="'+(done?"t-"+tone(ge):"")+'">Gewinn/Aktie'+(done?ee:" (Schätzung)")+'</span>'+be+'</div><div>'+big(rev)+'<span class="'+(done?"t-"+tone(gv):"")+'">Umsatz'+(done?ev:" (Schätzung)")+'</span>'+bv+'</div></span></button><div class="ek-body"><p class="ek-sub">Lade Details …</p></div></div>';
   });
   $("list").innerHTML=h+"</div>";
 }
@@ -208,6 +218,7 @@ $("list").onclick=function(e){if(e.target.closest("a"))return;var r=e.target.clo
     if(TJ.length){var ART={ergebnis:"Zahlen",dividende_exdatum:"Ex-Dividenden-Tag",dividende_zahltag:"Dividenden-Zahltag"};
       $("termine").innerHTML='<h2>Angekündigte Termine aus Unternehmensmeldungen</h2><p class="ek-sub">Aus Pressemitteilungen übernommen, vor allem für Firmen außerhalb der USA. Nur Termine, die im Original genannt werden.</p><div class="ek-list">'+TJ.map(function(x){
         return '<div class="ek-item"><div class="ek-row" style="cursor:default">'+logo(x.sym,x.name)+'<span class="ek-m"><span class="ek-nm"><a href="../aktien/?s='+encodeURIComponent(x.sym)+'">'+esc(x.name)+'</a></span><span class="ek-pills"><span class="ek-badge">'+esc(ART[x.art]||x.art)+'</span></span></span><span class="ek-fig"><div>'+esc(fmtDay(x.datum))+'<span>'+(x.betrag?esc(x.betrag)+" "+esc(x.waehrung)+" je Aktie":"")+(x.quelle?' · <a href="'+esc(x.quelle)+'" rel="noopener nofollow">Quelle</a>':"")+'</span></div></span></div></div>'}).join("")+"</div>"}}}catch(e3){}
+  try{var mr=await fetch("../data/magazin.json?v="+Math.floor(Date.now()/6e5));if(mr.ok){NEWS=((await mr.json()).items||[]).slice().sort(function(a,b){return a.date<b.date?1:-1})}}catch(e4){}
   render();
 })();
 })();
