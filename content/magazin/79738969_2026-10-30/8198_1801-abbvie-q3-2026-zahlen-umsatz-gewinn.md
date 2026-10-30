@@ -1,5 +1,5 @@
 ---
-title: "AbbVie wächst um 10 %: Immunologie legt um 16 % zu, Skyrizi und Rinvoq tragen"
+title: "AbbVie wächst - Immunologie mit Skyrizi und Rinvoq tragen"
 description: "AbbVie wächst im dritten Quartal 2026 um 10,3 Prozent. Die Immunologie mit Skyrizi und Rinvoq legt um 16,3 Prozent zu und trägt das Wachstum, die Dividende steigt um 5,2 Prozent."
 date: 2026-10-30 18:02
 author: "Redaktions-Team Dividenden-Rechner.de"
