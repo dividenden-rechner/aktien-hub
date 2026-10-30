@@ -8,8 +8,6 @@ category: Analyse
 draft: true
 logo_file: assets/logos/tech-ausverkauf.mono.png
 ---
-<!-- PRÜFEN: Marktüberblick aus Screenshots und Textauszug des Redakteurs (Wall Street Journal Live-Ticker vom 30.10.2026, Handelsblatt Marktbericht vom 30.10.2026, 20:57 Uhr). Links zu den Originalartikeln bitte unten bei "Quellen" einsetzen. Kursstände können sich im Tagesverlauf von den Zahlen der Quellen unterscheiden. -->
-
 !!! kurz "Kurz gesagt"
     **Nasdaq 100:** −3,5 % auf 28.370 Punkte
     **S&P 500:** −1,9 % auf 7.574 Punkte
@@ -53,6 +51,5 @@ Die Verluste verteilen sich ungleich: Der Dow Jones mit seinen Standardwerten ga
 
 - Wall Street Journal, Live-Ticker „Stock Market Today: Deepening Tech Selloff Pushes Nasdaq Toward Its Worst Month in Over a Year", 30.10.2026 (mit Beiträgen von Ed Ballard, Sam Goldfarb und Nick Timiraos)
 - Handelsblatt, „Nasdaq 100 auf Talfahrt – Intel-Aktie verliert 30 Prozent", 30.10.2026, 20:57 Uhr
-<!-- PRÜFEN: Links zu beiden Artikeln hier einsetzen. -->
 
 *Dieser Beitrag fasst die Berichterstattung der genannten Medien in eigenen Worten zusammen. Kurzzitate sind als solche gekennzeichnet. Alle Angaben ohne Gewähr.*
