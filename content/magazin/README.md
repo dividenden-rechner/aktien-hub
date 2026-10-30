@@ -15,10 +15,11 @@ Datei anklicken, dann Stift-Symbol: Zeile `draft: true` löschen und speichern, 
 | 29.10.2026 22:42 | Amazon steigert Umsatz im dritten Quartal auf 201,9 Milliarden Dollar | [2026-10-29-2242-amazon-q3-2026-zahlen.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/2026-10-29-2242-amazon-q3-2026-zahlen.md) |
 | 29.10.2026 10:12 | Shell erzielt im dritten Quartal 10,8 Milliarden Dollar Gewinn | [2026-10-29-1012-shell-q3-2026-ergebnisse.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/2026-10-29-1012-shell-q3-2026-ergebnisse.md) |
 
-### Online (126)
+### Online (127)
 
 | Datum | Titel | Datei |
 |---|---|---|
+| 30.10.2026 18:20 | Sanofi wächst im dritten Quartal kräftig und hebt Jahresprognose an | [2026-10-30-1820-sanofi-q3-2026-zahlen.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/2026-10-30-1820-sanofi-q3-2026-zahlen.md) |
 | 30.10.2026 18:08 | Regeneron Pharmaceuticals steigert bereinigten Q3-Gewinn auf 20,07 US-Dollar je Aktie | [2026-10-30-1808-regeneron-pharmaceuticals-q3-2026-zahlen-dividende.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/2026-10-30-1808-regeneron-pharmaceuticals-q3-2026-zahlen-dividende.md) |
 | 30.10.2026 18:08 | Exelon übertrifft mit 0,87 US-Dollar bereinigtem Q3-Gewinn Erwartungen | [2026-10-30-1808-exelon-q3-zahlen-dividende-2026.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/2026-10-30-1808-exelon-q3-zahlen-dividende-2026.md) |
 | 30.10.2026 18:08 | Church & Dwight steigert bereinigten Q3-Gewinn auf 0,92 US-Dollar je Aktie | [2026-10-30-1808-church-dwight-q3-zahlen-2026.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/2026-10-30-1808-church-dwight-q3-zahlen-2026.md) |
