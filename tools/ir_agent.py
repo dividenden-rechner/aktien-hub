@@ -741,6 +741,8 @@ def _short_artist(a):
 
 
 def photo_credit(photo):
+    if photo.get("credit"):
+        return photo["credit"]
     photo = dict(photo, artist=_short_artist(photo.get("artist", "")))
     if photo.get("quelle") == "Unsplash":
         return f"Foto: {photo['artist']} auf Unsplash"
@@ -874,7 +876,30 @@ def photo_extra(photo):
     return [f"image_artist_url: {photo['artist_url']}"] if photo.get("artist_url") else []
 
 
+def bib_remember(ticker, photo, rel, company=""):
+    """Gewaehltes Foto fuer kommende Berichte dieser Firma merken, wenn es noch keins gibt (ein Foto vom Redakteur wird nie ueberschrieben)."""
+    t = (ticker or "").upper()
+    if not t or t in bib_load():
+        return
+    if rel.startswith("http"):
+        e = dict(photo)
+    else:
+        e = {"title": photo.get("title", ""), "file": rel, "credit": photo_credit(photo), "page": photo.get("page", ""),
+             "artist_url": photo.get("artist_url", ""), "desc": photo.get("desc", ""), "quelle": photo.get("quelle", "")}
+    e["firma"] = company
+    bib_set(t, e)
+
+
 def save_photo(c, slug):
+    if c.get("file"):          # Foto aus der Bildbibliothek, schon als Datei im Repo
+        import shutil
+        dst = f"assets/magazin/{slug}-foto.jpg"
+        os.makedirs(os.path.join(ROOT, "assets", "magazin"), exist_ok=True)
+        if os.path.exists(os.path.join(ROOT, c["file"])) and c["file"] != dst:
+            shutil.copyfile(os.path.join(ROOT, c["file"]), os.path.join(ROOT, dst))
+        return dst
+    if c.get("quelle") == "Unsplash" and not c.get("download") and (c.get("thumb") or "").startswith("https://images.unsplash.com/"):
+        return c["thumb"]       # gemerktes Unsplash-Foto: Adresse direkt weiterverwenden (Hotlink)
     if c.get("download") and os.environ.get("UNSPLASH_ACCESS_KEY"):
         # Unsplash-API-Vorgaben: Foto direkt von Unsplash einbinden (Hotlink, ixid bleibt erhalten) und die Nutzung melden
         try:
@@ -1286,6 +1311,7 @@ def build(out, text, src_note, force=False, calc_rows=None, fmp_used=False, figs
     hinweise = []
     if photo:
         rel = save_photo(photo, slug)
+        bib_remember(out.get("ticker") or "", photo, rel, out.get("company") or "")
         fm += [f"image: {rel}", f"image_alt: {q('Foto zu ' + out['company'] + ': ' + (photo['desc'] or photo['title'].replace('File:', '')))}",
                f"image_credit: {q(photo_credit(photo))}", f"image_source: {photo['page']}"] + photo_extra(photo)
         hinweise.append(f"Aufmacherfoto ist automatisch von {photo.get('quelle', 'Wikimedia Commons')} gewaehlt: bitte pruefen, ob es zum Artikel passt (sonst image-Zeilen entfernen, dann entsteht ein Titelbild automatisch).")

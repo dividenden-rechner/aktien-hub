@@ -23,5 +23,185 @@
   "date": "2020-01-07",
   "download": "https://api.unsplash.com/photos/guADzpF9pDI/download?ixid=M3wxMTE3OTgzfDB8MXxzZWFyY2h8NXx8b2lsJTIwcGxhdGZvcm18ZW58MHx8fHwxNzkzMzU4MzYzfDA",
   "firma": "bp"
+ },
+ "CVX": {
+  "title": "Foto Chevron Corporation",
+  "page": "https://commons.wikimedia.org/wiki/File:Offshore_oil_rig.jpg",
+  "artist_url": "",
+  "credit": "Foto: Berardo62 / Wikimedia Commons, CC BY-SA 2.0",
+  "desc": "Foto zu Chevron Corporation: oil platform, gulf of mexico, california, oil, drilling, platform, ocean, water, energy, environment, santa barbara",
+  "firma": "Chevron Corporation",
+  "quelle": "",
+  "file": "assets/magazin/chevron-q3-2026-zahlen-foto.jpg"
+ },
+ "XOM": {
+  "title": "Foto Exxon Mobil Corporation",
+  "page": "https://unsplash.com/photos/industrial-refinery-with-storage-tanks-Wb4vcBqyGT8?utm_source=dividenden-rechner&utm_medium=referral",
+  "artist_url": "https://unsplash.com/@mirrors_are_more_fun?utm_source=dividenden-rechner&utm_medium=referral",
+  "credit": "Foto: Red Shuheart auf Unsplash",
+  "desc": "Foto zu Exxon Mobil Corporation: Industrial refinery with storage tanks and metal pipes under a warm golden sky",
+  "firma": "Exxon Mobil Corporation",
+  "quelle": "Unsplash",
+  "thumb": "https://images.unsplash.com/photo-1786532852011-443cba5dc9fe?ixid=M3wxMTE3OTgzfDB8MXxzZWFyY2h8M3x8b2lsJTIwcmVmaW5lcnklMjBwbGFudCUyMGF0JTIwbmlnaHR8ZW58MXwwfHx8MTc5MzM1NjU3Nnww&ixlib=rb-4.1.0&w=1600&h=900&fit=crop&crop=entropy&q=80&fm=jpg"
+ },
+ "SBUX": {
+  "title": "Foto Starbucks Corporation",
+  "page": "https://commons.wikimedia.org/wiki/File:2017-12-24_Starbucks_coffee_shop,_MAR_shopping_mall,_Loul%C3%A9.JPG",
+  "artist_url": "",
+  "credit": "Foto: Kolforn / Wikimedia Commons, CC BY-SA 4.0",
+  "desc": "Foto zu Starbucks Corporation: A branch of 'Starbucks Coffee shop' located in the MAR shopping mall south the city of Loulé , Algarve, Portugal.",
+  "firma": "Starbucks Corporation",
+  "quelle": "",
+  "file": "assets/magazin/starbucks-geschaeftsbericht-2026-foto.jpg"
+ },
+ "MDLZ": {
+  "title": "Foto Mondelēz International, Inc.",
+  "page": "https://commons.wikimedia.org/wiki/File:ThreeParkwayNorth3.jpeg",
+  "artist_url": "",
+  "credit": "Foto: Mike Mitchell / Wikimedia Commons, CC BY-SA 3.0",
+  "desc": "Foto zu Mondelēz International, Inc.: Photograph of Mondelēz International Headquarters, Three Parkway North Deerfield, IL 60015",
+  "firma": "Mondelēz International, Inc.",
+  "quelle": "",
+  "file": "assets/magazin/mondelez-q3-2026-zahlen-foto.jpg"
+ },
+ "AMZN": {
+  "title": "Foto Amazon.com, Inc.",
+  "page": "https://commons.wikimedia.org/wiki/File:Amazon_Hyderabad_Campus_(HYD13)_32.jpg",
+  "artist_url": "",
+  "credit": "Foto: Wasiul Bahar / Wikimedia Commons, CC BY-SA 4.0",
+  "desc": "Foto zu Amazon.com, Inc.: Amazon Hyderabad Campus (HYD13)",
+  "firma": "Amazon.com, Inc.",
+  "quelle": "",
+  "file": "assets/magazin/amazon-q3-2026-zahlen-foto.jpg"
+ },
+ "INTC.NE": {
+  "title": "Foto Intel Corporation",
+  "page": "https://commons.wikimedia.org/wiki/File:Intel_Headquarters_in_2023.jpg",
+  "artist_url": "",
+  "credit": "Foto: Coolcaesar / Wikimedia Commons, CC BY-SA 4.0",
+  "desc": "Foto zu Intel Corporation: Intel headquarters at 2200 Mission College Boulevard in Santa Clara, California. At the time this photo was taken in 2023, the Robert Noyce Building was wrapped with a temporary poster honoring the li",
+  "firma": "Intel Corporation",
+  "quelle": "",
+  "file": "assets/magazin/intel-q3-2026-zahlen-foto.jpg"
+ },
+ "MO": {
+  "title": "Foto Altria",
+  "page": "https://commons.wikimedia.org/wiki/File:Altria_Center_For_Research_and_Technology.jpg",
+  "artist_url": "",
+  "credit": "Foto: Casseb / Wikimedia Commons, CC BY-SA 4.0",
+  "desc": "Foto zu Altria: This is an image of the Altria Center For Research and Technology as seen in March 2020.",
+  "firma": "Altria",
+  "quelle": "",
+  "file": "assets/magazin/altria-q3-2026-ergebnisse-foto.jpg"
+ },
+ "RDSA.L": {
+  "title": "Foto Shell plc",
+  "page": "https://commons.wikimedia.org/wiki/File:Shell_kantoor_Den_Haag.JPG",
+  "artist_url": "",
+  "credit": "Foto: P.L. van Till at nl.wikipedia / Wikimedia Commons, CC BY-SA 3.0",
+  "desc": "Foto zu Shell plc: Royal Dutch Shell former head office, Carel van Bylandtlaan, The Hague",
+  "firma": "Shell plc",
+  "quelle": "",
+  "file": "assets/magazin/shell-q3-2026-ergebnisse-foto.jpg"
+ },
+ "MSFT": {
+  "title": "Foto Microsoft Corp.",
+  "page": "https://commons.wikimedia.org/wiki/File:Microsoft_Redmond_Campus_redevelopment_aerial_view,_Sept._2021.jpg",
+  "artist_url": "",
+  "credit": "Foto: Atomic Taco / Wikimedia Commons, CC BY-SA 2.0",
+  "desc": "Foto zu Microsoft Corp.: The redevelopment of the Microsoft campus , the company's headquarters in Redmond, Washington , as seen from a plane flying to the east.",
+  "firma": "Microsoft Corp.",
+  "quelle": "",
+  "file": "assets/magazin/microsoft-q1-2027-zahlen-foto.jpg"
+ },
+ "ABEC.F": {
+  "title": "Foto Alphabet",
+  "page": "https://commons.wikimedia.org/wiki/File:Google_Campus,_Mountain_View,_CA.jpg",
+  "artist_url": "",
+  "credit": "Foto: Austin McKinley / Wikimedia Commons, CC BY 3.0",
+  "desc": "Foto zu Alphabet: Aerial view of the main Google Campus in Mountain View, CA.",
+  "firma": "Alphabet",
+  "quelle": "",
+  "file": "assets/magazin/alphabet-q3-2026-quartalszahlen-foto.jpg"
+ },
+ "6301.T": {
+  "title": "Foto Komatsu Ltd.",
+  "page": "https://commons.wikimedia.org/wiki/File:KOMATSU_Buildng,_2017.jpg",
+  "artist_url": "",
+  "credit": "Foto: 妖精書士 / Wikimedia Commons, CC BY-SA 4.0",
+  "desc": "Foto zu Komatsu Ltd.: 東京都港区 赤坂 、 コマツビル",
+  "firma": "Komatsu Ltd.",
+  "quelle": "",
+  "file": "assets/magazin/komatsu-halbjahreszahlen-2026-foto.jpg"
+ },
+ "UPS": {
+  "title": "Foto UPS",
+  "page": "https://commons.wikimedia.org/wiki/File:HTS_Systems_UPS_Ground.jpg",
+  "artist_url": "",
+  "credit": "Foto: MobiusDaXter / Wikimedia Commons, CC BY-SA 3.0",
+  "desc": "Foto zu United Parcel Service, Inc.: United Parcel Service package car prepares for HTS Systems customer pick-up in Pennsylvania.",
+  "firma": "",
+  "quelle": "",
+  "file": "assets/magazin/ups-q3-2026-ergebnisse-foto.jpg"
+ },
+ "BA": {
+  "title": "Foto BA",
+  "page": "https://commons.wikimedia.org/wiki/File:Boeing_Virginia_Headquarters_(cropped_and_brighter).jpg",
+  "artist_url": "",
+  "credit": "Foto: mr_t_77 / Wikimedia Commons, CC BY-SA 2.0",
+  "desc": "Foto zu The Boeing Company: Boeing's offices in Arlington County, Virginia, the corporate headquarters of the company as of 2022.",
+  "firma": "",
+  "quelle": "",
+  "file": "assets/magazin/boeing-q3-ergebnis-2026-foto.jpg"
+ },
+ "KO": {
+  "title": "Foto KO",
+  "page": "https://commons.wikimedia.org/wiki/File:Coca-Cola_offices_(Madrid,_Spain)_04.jpg",
+  "artist_url": "",
+  "credit": "Foto: Luis García ( Zaqarbal ) / Wikimedia Commons, CC BY-SA 3.0",
+  "desc": "Foto zu The Coca-Cola Company: View of Coca-Cola offices in Madrid ( Spain ).",
+  "firma": "",
+  "quelle": "",
+  "file": "assets/magazin/coca-cola-q3-2026-ergebnisse-foto.jpg"
+ },
+ "MBG.DE": {
+  "title": "Foto MBG.DE",
+  "page": "https://commons.wikimedia.org/wiki/File:Mercedes-Benz_Werk_Untert%C3%BCrkheim_Neckarpark_Stuttgart_2015_02.jpg",
+  "artist_url": "",
+  "credit": "Foto: Julian Herzog ( Website ) / Wikimedia Commons, CC BY 4.0",
+  "desc": "Foto zu Mercedes-Benz Group AG: Mercedes-Benz Werk Untertürkheim (Werk 1/Konzernzentrale Daimler AG), Neckarpark, Mercedes-Benz Arena in Stuttgart.",
+  "firma": "",
+  "quelle": "",
+  "file": "assets/magazin/mercedes-benz-prognoseanpassung-2026-foto.jpg"
+ },
+ "HSBC": {
+  "title": "Foto HSBC",
+  "page": "https://commons.wikimedia.org/wiki/File:HSBC_Building_(Hong_Kong)_20170808.jpg",
+  "artist_url": "",
+  "credit": "Foto: Suicasmo / Wikimedia Commons, CC BY-SA 4.0",
+  "desc": "Foto zu HSBC Holdings plc: HSBC Building (Hong Kong)",
+  "firma": "",
+  "quelle": "",
+  "file": "assets/magazin/hsbc-q3-2026-foto.jpg"
+ },
+ "NVS": {
+  "title": "Foto NVS",
+  "page": "https://commons.wikimedia.org/wiki/File:Novartis_Campus_-_Novartis_Pavillon_(53992600334).jpg",
+  "artist_url": "",
+  "credit": "Foto: Alexandre Prevot from Nancy, France / Wikimedia Commons, CC BY-SA 2.0",
+  "desc": "Foto zu Novartis: Pays : Suisse🇨🇭 Canton : Bâle-Ville Commune : Bâle Quartier : St. Johann Adresse : St. Johanns-Hafen-Weg 5 Fonction : Éducation / Culture Construction : 2021 → 2022 ► Architectes : Blaser Architekten ",
+  "firma": "",
+  "quelle": "",
+  "file": "assets/magazin/novartis-q3-2026-ergebnisse-foto.jpg"
+ },
+ "VZ": {
+  "title": "Foto VZ",
+  "page": "https://commons.wikimedia.org/wiki/File:One_Verizon_Way_in_Basking_Ridge,_NJ.jpg",
+  "artist_url": "",
+  "credit": "Foto: Mmsass / Wikimedia Commons, CC BY-SA 4.0",
+  "desc": "Foto zu Verizon: Verizon operational headquarters at One Verizon Way pictured from above",
+  "firma": "",
+  "quelle": "",
+  "file": "assets/magazin/verizon-q3-2026-foto.jpg"
  }
 }
