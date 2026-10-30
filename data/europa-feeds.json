@@ -1,0 +1,960 @@
+{
+ "stand": "2026-10-30",
+ "firmen": [
+  {
+   "sym": "SAP.DE",
+   "name": "SAP",
+   "homepage": "https://www.sap.com",
+   "ir_seite": "https://news.sap.com",
+   "ir_seite_ok": true,
+   "feed": {
+    "url": "https://news.sap.com/feed/",
+    "eintraege": 30,
+    "neueste": "Thu, 29 Oct 2026 11:00:00 +0000"
+   }
+  },
+  {
+   "sym": "SIE.DE",
+   "name": "Siemens",
+   "homepage": "https://www.siemens.com",
+   "ir_seite": "https://press.siemens.com/global/en",
+   "ir_seite_ok": true,
+   "feed": {
+    "url": "https://press.siemens.com/en/rss.xml",
+    "eintraege": 2,
+    "neueste": "Mon, 12 Aug 2019 10:41:08 +0000"
+   }
+  },
+  {
+   "sym": "ALV.DE",
+   "name": "Allianz",
+   "homepage": "https://www.allianz.com",
+   "ir_seite": "https://www.allianz.com/en/press.html",
+   "ir_seite_ok": false
+  },
+  {
+   "sym": "MBG.DE",
+   "name": "Mercedes-Benz",
+   "homepage": "https://group.mercedes-benz.com",
+   "ir_seite": "https://group.mercedes-benz.com/investors",
+   "ir_seite_ok": false
+  },
+  {
+   "sym": "BMW.DE",
+   "name": "BMW",
+   "homepage": "https://www.bmwgroup.com",
+   "ir_seite": "https://www.bmwgroup.com/en/news.html",
+   "ir_seite_ok": false
+  },
+  {
+   "sym": "VOW3.DE",
+   "name": "Volkswagen",
+   "homepage": "https://www.volkswagen-group.com",
+   "ir_seite": "https://www.volkswagen-group.com/en/press-releases",
+   "ir_seite_ok": true,
+   "feed": {
+    "url": "https://www.volkswagen-group.com/en/feeds/press-releases",
+    "eintraege": 100,
+    "neueste": "Thu, 29 Oct 2026 00:00:00 +0000"
+   }
+  },
+  {
+   "sym": "DTE.DE",
+   "name": "Deutsche Telekom",
+   "homepage": "https://www.telekom.com",
+   "ir_seite": "https://www.telekom.com/en/newsroom/latest-updates/media-information",
+   "ir_seite_ok": true,
+   "feed": {
+    "url": "https://www.telekom.com/en/newsroom/latest-updates/media-information.rss.feed.418728.xml",
+    "eintraege": 10,
+    "neueste": "Wed, 28 Oct 2026 00:00:00 GMT"
+   }
+  },
+  {
+   "sym": "BAS.DE",
+   "name": "BASF",
+   "homepage": "https://www.basf.com",
+   "ir_seite": "https://www.basf.com/global/en/media/news-releases",
+   "ir_seite_ok": true
+  },
+  {
+   "sym": "MUV2.DE",
+   "name": "Munich Re",
+   "homepage": "https://www.munichre.com",
+   "ir_seite": "https://www.munichre.com/en/company/media-relations/media-information-and-corporate-news.html",
+   "ir_seite_ok": true
+  },
+  {
+   "sym": "DHL.DE",
+   "name": "DHL Group",
+   "homepage": "https://group.dhl.com",
+   "ir_seite": "https://group.dhl.com/en/media-relations/press-releases.html",
+   "ir_seite_ok": false
+  },
+  {
+   "sym": "ADS.DE",
+   "name": "Adidas",
+   "homepage": "https://www.adidas-group.com",
+   "ir_seite": "https://www.adidas-group.com/en/media/news-archive",
+   "ir_seite_ok": false
+  },
+  {
+   "sym": "RWE.DE",
+   "name": "RWE",
+   "homepage": "https://www.rwe.com",
+   "ir_seite": "https://www.rwe.com/en/press-media",
+   "ir_seite_ok": false
+  },
+  {
+   "sym": "EOAN.DE",
+   "name": "E.ON",
+   "homepage": "https://www.eon.com",
+   "ir_seite": "https://www.eon.com/en/about-us/media/press-release.html",
+   "ir_seite_ok": false
+  },
+  {
+   "sym": "DBK.DE",
+   "name": "Deutsche Bank",
+   "homepage": "https://www.db.com",
+   "ir_seite": "https://investor-relations.db.com",
+   "ir_seite_ok": true
+  },
+  {
+   "sym": "BAYN.DE",
+   "name": "Bayer",
+   "homepage": "https://www.bayer.com",
+   "ir_seite": "https://www.bayer.com/media/en-us",
+   "ir_seite_ok": true
+  },
+  {
+   "sym": "IFX.DE",
+   "name": "Infineon",
+   "homepage": "https://www.infineon.com",
+   "ir_seite": "https://www.infineon.com/cms/en/about-infineon/press",
+   "ir_seite_ok": false
+  },
+  {
+   "sym": "HEI.DE",
+   "name": "Heidelberg Materials",
+   "homepage": "https://www.heidelbergmaterials.com",
+   "ir_seite": "https://www.heidelbergmaterials.com/en/media/press-releases",
+   "ir_seite_ok": true,
+   "feed": {
+    "url": "https://www.heidelbergmaterials.com/en/rss.xml",
+    "eintraege": 7,
+    "neueste": "Mon, 11 Apr 2022 11:29:58 +0000"
+   }
+  },
+  {
+   "sym": "HEN3.DE",
+   "name": "Henkel",
+   "homepage": "https://www.henkel.com",
+   "ir_seite": "https://www.henkel.com/press-and-media/press-releases-and-downloads",
+   "ir_seite_ok": false,
+   "feed": {
+    "url": "https://www.henkel.com/service/en/39580/asFeed/index.xml",
+    "eintraege": 10,
+    "neueste": "Thu, 29 Oct 2026 07:00:00 GMT"
+   }
+  },
+  {
+   "sym": "FRE.DE",
+   "name": "Fresenius",
+   "homepage": "https://www.fresenius.com",
+   "ir_seite": "https://www.fresenius.com/media",
+   "ir_seite_ok": true,
+   "feed": {
+    "url": "https://www.fresenius.com/rss.xml",
+    "eintraege": 10,
+    "neueste": "Wed, 28 Oct 2026 16:48:15 +0000"
+   }
+  },
+  {
+   "sym": "FME.DE",
+   "name": "Fresenius Medical Care",
+   "homepage": "https://www.freseniusmedicalcare.com",
+   "ir_seite": "https://www.freseniusmedicalcare.com/en/newsroom",
+   "ir_seite_ok": false
+  },
+  {
+   "sym": "CBK.DE",
+   "name": "Commerzbank",
+   "homepage": "https://www.commerzbank.com",
+   "ir_seite": "https://www.commerzbank.com/media/en/aktuell",
+   "ir_seite_ok": false
+  },
+  {
+   "sym": "CON.DE",
+   "name": "Continental",
+   "homepage": "https://www.continental.com",
+   "ir_seite": "https://www.continental.com/en/press/",
+   "ir_seite_ok": true
+  },
+  {
+   "sym": "HNR1.DE",
+   "name": "Hannover Rück",
+   "homepage": "https://www.hannover-re.com",
+   "ir_seite": "https://www.hannover-re.com/en/media",
+   "ir_seite_ok": false
+  },
+  {
+   "sym": "SY1.DE",
+   "name": "Symrise",
+   "homepage": "https://www.symrise.com",
+   "ir_seite": "https://www.symrise.com/newsroom",
+   "ir_seite_ok": true,
+   "feed": {
+    "url": "https://www.symrise.com/newsroom/press-releases/rss.xml",
+    "eintraege": 585,
+    "neueste": "Wed, 28 Oct 2026 07:30:00 +0100"
+   }
+  },
+  {
+   "sym": "MRK.DE",
+   "name": "Merck KGaA",
+   "homepage": "https://www.merckgroup.com",
+   "ir_seite": "https://www.merckgroup.com/en/news.html",
+   "ir_seite_ok": false
+  },
+  {
+   "sym": "RHM.DE",
+   "name": "Rheinmetall",
+   "homepage": "https://www.rheinmetall.com",
+   "ir_seite": "https://www.rheinmetall.com/en/search/media",
+   "ir_seite_ok": true
+  },
+  {
+   "sym": "ENR.DE",
+   "name": "Siemens Energy",
+   "homepage": "https://www.siemens-energy.com",
+   "ir_seite": "https://www.siemens-energy.com/global/en/home/press-releases.html",
+   "ir_seite_ok": true
+  },
+  {
+   "sym": "P911.DE",
+   "name": "Porsche AG",
+   "homepage": "https://www.porsche.com",
+   "ir_seite": "https://newsroom.porsche.com/en.html",
+   "ir_seite_ok": true
+  },
+  {
+   "sym": "ZAL.DE",
+   "name": "Zalando",
+   "homepage": "https://corporate.zalando.com",
+   "ir_seite": "https://corporate.zalando.com/en/newsroom",
+   "ir_seite_ok": true
+  },
+  {
+   "sym": "DB1.DE",
+   "name": "Deutsche Boerse",
+   "homepage": "https://www.deutsche-boerse.com",
+   "ir_seite": "https://www.deutsche-boerse-group.com/dbg-en/media/press-releases",
+   "ir_seite_ok": false
+  },
+  {
+   "sym": "LIN.DE",
+   "name": "Linde",
+   "homepage": "https://www.linde.com",
+   "ir_seite": "https://investors.linde.com/news-and-events",
+   "ir_seite_ok": false
+  },
+  {
+   "sym": "MC.PA",
+   "name": "LVMH",
+   "homepage": "https://www.lvmh.com",
+   "ir_seite": "https://www.lvmh.com/en/news-lvmh",
+   "ir_seite_ok": true
+  },
+  {
+   "sym": "OR.PA",
+   "name": "L'Oreal",
+   "homepage": "https://www.loreal.com",
+   "ir_seite": "https://www.loreal-finance.com/en/news",
+   "ir_seite_ok": false
+  },
+  {
+   "sym": "TTE.PA",
+   "name": "TotalEnergies",
+   "homepage": "https://totalenergies.com",
+   "ir_seite": "https://totalenergies.com/news",
+   "ir_seite_ok": true
+  },
+  {
+   "sym": "SAN.PA",
+   "name": "Sanofi",
+   "homepage": "https://www.sanofi.com",
+   "ir_seite": "https://www.sanofi.com/en/media-room/press-releases",
+   "ir_seite_ok": true
+  },
+  {
+   "sym": "AIR.PA",
+   "name": "Airbus",
+   "homepage": "https://www.airbus.com",
+   "ir_seite": "https://www.airbus.com/en/newsroom/press-releases",
+   "ir_seite_ok": true
+  },
+  {
+   "sym": "SU.PA",
+   "name": "Schneider Electric",
+   "homepage": "https://www.se.com",
+   "ir_seite": "https://www.se.com/ww/en/about-us/newsroom",
+   "ir_seite_ok": false
+  },
+  {
+   "sym": "RMS.PA",
+   "name": "Hermes",
+   "homepage": "https://www.hermes.com",
+   "ir_seite": "https://finance.hermes.com/en/",
+   "ir_seite_ok": true
+  },
+  {
+   "sym": "KER.PA",
+   "name": "Kering",
+   "homepage": "https://www.kering.com",
+   "ir_seite": "https://www.kering.com/en/news",
+   "ir_seite_ok": false
+  },
+  {
+   "sym": "CDI.PA",
+   "name": "Christian Dior",
+   "homepage": "https://www.dior.com",
+   "ir_seite": "https://www.lvmh.com/en/news-lvmh",
+   "ir_seite_ok": true
+  },
+  {
+   "sym": "EL.PA",
+   "name": "EssilorLuxottica",
+   "homepage": "https://www.essilorluxottica.com",
+   "ir_seite": "https://www.essilorluxottica.com/en/newsroom/",
+   "ir_seite_ok": true
+  },
+  {
+   "sym": "AI.PA",
+   "name": "Air Liquide",
+   "homepage": "https://www.airliquide.com",
+   "ir_seite": "https://www.airliquide.com/group/press-releases-news",
+   "ir_seite_ok": true
+  },
+  {
+   "sym": "BNP.PA",
+   "name": "BNP Paribas",
+   "homepage": "https://group.bnpparibas",
+   "ir_seite": "https://group.bnpparibas/en/press-release",
+   "ir_seite_ok": false
+  },
+  {
+   "sym": "CS.PA",
+   "name": "AXA",
+   "homepage": "https://www.axa.com",
+   "ir_seite": "https://www.axa.com/en/press/press-releases",
+   "ir_seite_ok": true,
+   "feed": {
+    "url": "https://www.axa.com/rss",
+    "eintraege": 30,
+    "neueste": "Thu, 29 Oct 2026 16:45:00 GMT"
+   }
+  },
+  {
+   "sym": "SAF.PA",
+   "name": "Safran",
+   "homepage": "https://www.safran-group.com",
+   "ir_seite": "https://www.safran-group.com/media",
+   "ir_seite_ok": false
+  },
+  {
+   "sym": "DG.PA",
+   "name": "Vinci",
+   "homepage": "https://www.vinci.com",
+   "ir_seite": "https://www.vinci.com/en/newsroom",
+   "ir_seite_ok": true
+  },
+  {
+   "sym": "RI.PA",
+   "name": "Pernod Ricard",
+   "homepage": "https://www.pernod-ricard.com",
+   "ir_seite": "https://www.pernod-ricard.com/en/media",
+   "ir_seite_ok": true
+  },
+  {
+   "sym": "CAP.PA",
+   "name": "Capgemini",
+   "homepage": "https://www.capgemini.com",
+   "ir_seite": "https://www.capgemini.com/news/press-releases/",
+   "ir_seite_ok": true,
+   "feed": {
+    "url": "https://www.capgemini.com/feed/",
+    "eintraege": 10,
+    "neueste": "Thu, 29 Oct 2026 10:57:39 +0000"
+   }
+  },
+  {
+   "sym": "ORA.PA",
+   "name": "Orange",
+   "homepage": "https://www.orange.com",
+   "ir_seite": "https://newsroom.orange.com/enedis-accelerates-its-industrial-strategy-to-develop-the-smart-power-network-of-the-future-with-orange-business-services/?lang=eng",
+   "ir_seite_ok": true
+  },
+  {
+   "sym": "GLE.PA",
+   "name": "Societe Generale",
+   "homepage": "https://www.societegenerale.com",
+   "ir_seite": "https://www.societegenerale.com/en/news/press-releases",
+   "ir_seite_ok": false
+  },
+  {
+   "sym": "ACA.PA",
+   "name": "Credit Agricole",
+   "homepage": "https://www.credit-agricole.com",
+   "ir_seite": "https://www.credit-agricole.com/en/pressroom",
+   "ir_seite_ok": false
+  },
+  {
+   "sym": "ENGI.PA",
+   "name": "Engie",
+   "homepage": "https://www.engie.com",
+   "ir_seite": "https://www.engie.com/en/journalists/press-releases",
+   "ir_seite_ok": false
+  },
+  {
+   "sym": "STLAP.PA",
+   "name": "Stellantis",
+   "homepage": "https://www.stellantis.com",
+   "ir_seite": "https://www.stellantis.com/en/news/press-releases",
+   "ir_seite_ok": false
+  },
+  {
+   "sym": "MT.AS",
+   "name": "ArcelorMittal",
+   "homepage": "https://corporate.arcelormittal.com",
+   "ir_seite": "https://corporate.arcelormittal.com/media/press-releases",
+   "ir_seite_ok": false
+  },
+  {
+   "sym": "ASML.AS",
+   "name": "ASML",
+   "homepage": "https://www.asml.com",
+   "ir_seite": "https://www.asml.com/en/news/press-releases",
+   "ir_seite_ok": false
+  },
+  {
+   "sym": "PRX.AS",
+   "name": "Prosus",
+   "homepage": "https://www.prosus.com",
+   "ir_seite": "https://www.prosus.com/news-insights",
+   "ir_seite_ok": true,
+   "feed": {
+    "url": "https://www.prosus.com/rss/group-updates",
+    "eintraege": 10,
+    "neueste": "Tue, 27 Oct 2026 00:00:00 GMT"
+   }
+  },
+  {
+   "sym": "HEIA.AS",
+   "name": "Heineken",
+   "homepage": "https://www.theheinekencompany.com",
+   "ir_seite": "https://www.theheinekencompany.com/newsroom",
+   "ir_seite_ok": true
+  },
+  {
+   "sym": "INGA.AS",
+   "name": "ING Groep",
+   "homepage": "https://www.ing.com",
+   "ir_seite": "https://www.ing.com/Newsroom/All-news.htm",
+   "ir_seite_ok": false
+  },
+  {
+   "sym": "AD.AS",
+   "name": "Ahold Delhaize",
+   "homepage": "https://www.aholddelhaize.com",
+   "ir_seite": "https://www.aholddelhaize.com/media/news",
+   "ir_seite_ok": false
+  },
+  {
+   "sym": "PHIA.AS",
+   "name": "Philips",
+   "homepage": "https://www.philips.com",
+   "ir_seite": "https://www.philips.com/a-w/about/news/archive.html",
+   "ir_seite_ok": true
+  },
+  {
+   "sym": "NESN.SW",
+   "name": "Nestle",
+   "homepage": "https://www.nestle.com",
+   "ir_seite": "https://www.nestle.com/media/pressreleases",
+   "ir_seite_ok": false
+  },
+  {
+   "sym": "NOVN.SW",
+   "name": "Novartis",
+   "homepage": "https://www.novartis.com",
+   "ir_seite": "https://www.novartis.com/news/media-releases",
+   "ir_seite_ok": false
+  },
+  {
+   "sym": "ROG.SW",
+   "name": "Roche",
+   "homepage": "https://www.roche.com",
+   "ir_seite": "https://www.roche.com/media/releases",
+   "ir_seite_ok": true
+  },
+  {
+   "sym": "UBSG.SW",
+   "name": "UBS",
+   "homepage": "https://www.ubs.com",
+   "ir_seite": "https://www.ubs.com/global/en/media.html",
+   "ir_seite_ok": false
+  },
+  {
+   "sym": "ZURN.SW",
+   "name": "Zurich Insurance",
+   "homepage": "https://www.zurich.com",
+   "ir_seite": "https://www.zurich.com/media/news-releases",
+   "ir_seite_ok": true
+  },
+  {
+   "sym": "ABBN.SW",
+   "name": "ABB",
+   "homepage": "https://global.abb",
+   "ir_seite": "https://new.abb.com/news",
+   "ir_seite_ok": false
+  },
+  {
+   "sym": "CFR.SW",
+   "name": "Richemont",
+   "homepage": "https://www.richemont.com",
+   "ir_seite": "https://www.richemont.com/news-media/",
+   "ir_seite_ok": true
+  },
+  {
+   "sym": "SREN.SW",
+   "name": "Swiss Re",
+   "homepage": "https://www.swissre.com",
+   "ir_seite": "https://www.swissre.com/media.html",
+   "ir_seite_ok": true
+  },
+  {
+   "sym": "SIKA.SW",
+   "name": "Sika",
+   "homepage": "https://www.sika.com",
+   "ir_seite": "https://www.sika.com/en/media.html",
+   "ir_seite_ok": true
+  },
+  {
+   "sym": "LONN.SW",
+   "name": "Lonza",
+   "homepage": "https://www.lonza.com",
+   "ir_seite": "https://www.lonza.com/news",
+   "ir_seite_ok": false
+  },
+  {
+   "sym": "GIVN.SW",
+   "name": "Givaudan",
+   "homepage": "https://www.givaudan.com",
+   "ir_seite": "https://www.givaudan.com/media",
+   "ir_seite_ok": true,
+   "feed": {
+    "url": "https://www.givaudan.com/rss",
+    "eintraege": 25,
+    "neueste": "21 September 2026"
+   }
+  },
+  {
+   "sym": "HOLN.SW",
+   "name": "Holcim",
+   "homepage": "https://www.holcim.com",
+   "ir_seite": "https://www.holcim.com/media",
+   "ir_seite_ok": true,
+   "feed": {
+    "url": "https://www.holcim.com/rss.xml",
+    "eintraege": 1,
+    "neueste": "Tue, 02 Nov 2021 13:18:32 +0000"
+   }
+  },
+  {
+   "sym": "NOVO-B.CO",
+   "name": "Novo Nordisk",
+   "homepage": "https://www.novonordisk.com",
+   "ir_seite": "https://www.novonordisk.com/news-and-media/news-and-ir-materials.html",
+   "ir_seite_ok": true
+  },
+  {
+   "sym": "MAERSK-B.CO",
+   "name": "Maersk",
+   "homepage": "https://www.maersk.com",
+   "ir_seite": "https://www.maersk.com/news",
+   "ir_seite_ok": true
+  },
+  {
+   "sym": "ORSTED.CO",
+   "name": "Orsted",
+   "homepage": "https://orsted.com",
+   "ir_seite": "https://orsted.com/en/media",
+   "ir_seite_ok": true
+  },
+  {
+   "sym": "VWS.CO",
+   "name": "Vestas",
+   "homepage": "https://www.vestas.com",
+   "ir_seite": "https://www.vestas.com/en/media/company-news",
+   "ir_seite_ok": true
+  },
+  {
+   "sym": "DSV.CO",
+   "name": "DSV",
+   "homepage": "https://www.dsv.com",
+   "ir_seite": "https://investor.dsv.com",
+   "ir_seite_ok": false
+  },
+  {
+   "sym": "VOLV-B.ST",
+   "name": "Volvo",
+   "homepage": "https://www.volvogroup.com",
+   "ir_seite": "https://www.volvogroup.com/en/news-and-media/press-releases.html",
+   "ir_seite_ok": true,
+   "feed": {
+    "url": "https://www.volvogroup.com/en/news-and-media/press-releases/_jcr_content/root/responsivegrid/articlelist.feed.xml",
+    "eintraege": 10,
+    "neueste": "Fri, 23 Oct 2026 05:23:36 GMT"
+   }
+  },
+  {
+   "sym": "ERIC-B.ST",
+   "name": "Ericsson",
+   "homepage": "https://www.ericsson.com",
+   "ir_seite": "https://www.ericsson.com/en/press-releases",
+   "ir_seite_ok": false
+  },
+  {
+   "sym": "ATCO-A.ST",
+   "name": "Atlas Copco",
+   "homepage": "https://www.atlascopcogroup.com",
+   "ir_seite": "https://www.atlascopcogroup.com/en/media",
+   "ir_seite_ok": true
+  },
+  {
+   "sym": "INVE-B.ST",
+   "name": "Investor AB",
+   "homepage": "https://www.investorab.com",
+   "ir_seite": "https://www.investorab.com/media",
+   "ir_seite_ok": false
+  },
+  {
+   "sym": "HM-B.ST",
+   "name": "H&M",
+   "homepage": "https://about.hm.com",
+   "ir_seite": "https://about.hm.com/news",
+   "ir_seite_ok": false
+  },
+  {
+   "sym": "SAND.ST",
+   "name": "Sandvik",
+   "homepage": "https://www.home.sandvik",
+   "ir_seite": "https://www.home.sandvik/en/news-and-media",
+   "ir_seite_ok": true,
+   "feed": {
+    "url": "https://www.home.sandvik/en/news.xml",
+    "eintraege": 15,
+    "neueste": "Thu, 22 Oct 2026 08:00:00 +0200"
+   }
+  },
+  {
+   "sym": "ENEL.MI",
+   "name": "Enel",
+   "homepage": "https://www.enel.com",
+   "ir_seite": "https://www.enel.com/",
+   "ir_seite_ok": true
+  },
+  {
+   "sym": "ISP.MI",
+   "name": "Intesa Sanpaolo",
+   "homepage": "https://group.intesasanpaolo.com",
+   "ir_seite": "https://group.intesasanpaolo.com/en/newsroom/press-releases",
+   "ir_seite_ok": true
+  },
+  {
+   "sym": "UCG.MI",
+   "name": "UniCredit",
+   "homepage": "https://www.unicreditgroup.eu",
+   "ir_seite": "https://www.unicreditgroup.eu/en/press-media",
+   "ir_seite_ok": false
+  },
+  {
+   "sym": "ENI.MI",
+   "name": "Eni",
+   "homepage": "https://www.eni.com",
+   "ir_seite": "https://www.eni.com/en-IT/media/press-release.html",
+   "ir_seite_ok": true
+  },
+  {
+   "sym": "RACE.MI",
+   "name": "Ferrari",
+   "homepage": "https://www.ferrari.com",
+   "ir_seite": "https://corporate.ferrari.com/en/media",
+   "ir_seite_ok": false
+  },
+  {
+   "sym": "G.MI",
+   "name": "Generali",
+   "homepage": "https://www.generali.com",
+   "ir_seite": "https://www.generali.com/media",
+   "ir_seite_ok": true
+  },
+  {
+   "sym": "IBE.MC",
+   "name": "Iberdrola",
+   "homepage": "https://www.iberdrola.com",
+   "ir_seite": "https://www.iberdrola.com/press-room",
+   "ir_seite_ok": false
+  },
+  {
+   "sym": "SAN.MC",
+   "name": "Santander",
+   "homepage": "https://www.santander.com",
+   "ir_seite": "https://www.santander.com/en/press-room",
+   "ir_seite_ok": true,
+   "feed": {
+    "url": "https://www.santander.com/content/santander-corporate/san-global/en/sala-de-comunicacion/insights.sitefeed.rss.xml",
+    "eintraege": 20,
+    "neueste": "Thu, 28 May 2026 12:40:00 +0200"
+   }
+  },
+  {
+   "sym": "BBVA.MC",
+   "name": "BBVA",
+   "homepage": "https://www.bbva.com",
+   "ir_seite": "https://www.bbva.com/en/press-release",
+   "ir_seite_ok": false,
+   "feed": {
+    "url": "https://www.bbva.com/en/rss/press-releases/",
+    "eintraege": 10,
+    "neueste": "Fri, 02 Oct 2026 08:22:41 +0000"
+   }
+  },
+  {
+   "sym": "ITX.MC",
+   "name": "Inditex",
+   "homepage": "https://www.inditex.com",
+   "ir_seite": "https://www.inditex.com/itxcomweb/us/en/press/news",
+   "ir_seite_ok": true
+  },
+  {
+   "sym": "TEF.MC",
+   "name": "Telefonica",
+   "homepage": "https://www.telefonica.com",
+   "ir_seite": "https://www.telefonica.com/en/communication-room/press-room/",
+   "ir_seite_ok": true
+  },
+  {
+   "sym": "ULVR.L",
+   "name": "Unilever",
+   "homepage": "https://www.unilever.com",
+   "ir_seite": "https://www.unilever.com/news/press-and-media",
+   "ir_seite_ok": false
+  },
+  {
+   "sym": "SHEL.L",
+   "name": "Shell",
+   "homepage": "https://www.shell.com",
+   "ir_seite": "https://www.shell.com/media/news-and-media-releases.html",
+   "ir_seite_ok": false
+  },
+  {
+   "sym": "AZN.L",
+   "name": "AstraZeneca",
+   "homepage": "https://www.astrazeneca.com",
+   "ir_seite": "https://www.astrazeneca.com/media-centre/press-releases.html",
+   "ir_seite_ok": false
+  },
+  {
+   "sym": "HSBA.L",
+   "name": "HSBC",
+   "homepage": "https://www.hsbc.com",
+   "ir_seite": "https://www.hsbc.com/news-and-views/news",
+   "ir_seite_ok": true,
+   "feed": {
+    "url": "https://www.hsbc.com/rss-feed",
+    "eintraege": 89,
+    "neueste": "Fri, 16 Oct 2026 00:00:00 Z"
+   }
+  },
+  {
+   "sym": "BP.L",
+   "name": "BP",
+   "homepage": "https://www.bp.com",
+   "ir_seite": "https://www.bp.com/press-and-publications/press-releases",
+   "ir_seite_ok": true
+  },
+  {
+   "sym": "GSK.L",
+   "name": "GSK",
+   "homepage": "https://www.gsk.com",
+   "ir_seite": "https://www.gsk.com/en-gb/media/press-releases",
+   "ir_seite_ok": true
+  },
+  {
+   "sym": "DGE.L",
+   "name": "Diageo",
+   "homepage": "https://www.diageo.com",
+   "ir_seite": "https://www.diageo.com/en/news-and-media",
+   "ir_seite_ok": true,
+   "feed": {
+    "url": "https://www.diageo.com/en/rss/financial-calendar",
+    "eintraege": 10,
+    "neueste": "Thu, 03 Dec 2026 09:00:00 GMT"
+   }
+  },
+  {
+   "sym": "RIO.L",
+   "name": "Rio Tinto",
+   "homepage": "https://www.riotinto.com",
+   "ir_seite": "https://www.riotinto.com/en/news/releases",
+   "ir_seite_ok": true
+  },
+  {
+   "sym": "BATS.L",
+   "name": "British American Tobacco",
+   "homepage": "https://www.bat.com",
+   "ir_seite": "https://www.bat.com/media",
+   "ir_seite_ok": true
+  },
+  {
+   "sym": "REL.L",
+   "name": "RELX",
+   "homepage": "https://www.relx.com",
+   "ir_seite": "https://www.relx.com/media/press-releases/year-2026",
+   "ir_seite_ok": true,
+   "feed": {
+    "url": "https://www.relx.com/rss/financial-calendar",
+    "eintraege": 15,
+    "neueste": ""
+   }
+  },
+  {
+   "sym": "LSEG.L",
+   "name": "London Stock Exchange Group",
+   "homepage": "https://www.lseg.com",
+   "ir_seite": "https://www.lseg.com/en/media-centre/press-releases",
+   "ir_seite_ok": true
+  },
+  {
+   "sym": "GLEN.L",
+   "name": "Glencore",
+   "homepage": "https://www.glencore.com",
+   "ir_seite": "https://www.glencore.com/media-and-insights/news",
+   "ir_seite_ok": true
+  },
+  {
+   "sym": "BARC.L",
+   "name": "Barclays",
+   "homepage": "https://home.barclays",
+   "ir_seite": "https://home.barclays/news/press-releases/",
+   "ir_seite_ok": true
+  },
+  {
+   "sym": "LLOY.L",
+   "name": "Lloyds Banking Group",
+   "homepage": "https://www.lloydsbankinggroup.com",
+   "ir_seite": "https://www.lloydsbankinggroup.com/media/press-releases.html",
+   "ir_seite_ok": true
+  },
+  {
+   "sym": "NG.L",
+   "name": "National Grid",
+   "homepage": "https://www.nationalgrid.com",
+   "ir_seite": "https://www.nationalgrid.com/media-centre",
+   "ir_seite_ok": false
+  },
+  {
+   "sym": "VOD.L",
+   "name": "Vodafone",
+   "homepage": "https://www.vodafone.com",
+   "ir_seite": "https://www.vodafone.com/news-and-media",
+   "ir_seite_ok": false
+  },
+  {
+   "sym": "IMB.L",
+   "name": "Imperial Brands",
+   "homepage": "https://www.imperialbrandsplc.com",
+   "ir_seite": "https://www.imperialbrandsplc.com/media",
+   "ir_seite_ok": true
+  },
+  {
+   "sym": "LGEN.L",
+   "name": "Legal and General",
+   "homepage": "https://group.legalandgeneral.com",
+   "ir_seite": "https://group.legalandgeneral.com/newsroom",
+   "ir_seite_ok": true
+  },
+  {
+   "sym": "SSE.L",
+   "name": "SSE",
+   "homepage": "https://www.sse.com",
+   "ir_seite": "https://www.sse.com/news-and-views",
+   "ir_seite_ok": true
+  },
+  {
+   "sym": "TSCO.L",
+   "name": "Tesco",
+   "homepage": "https://www.tescoplc.com",
+   "ir_seite": "https://www.tescoplc.com/news",
+   "ir_seite_ok": false
+  },
+  {
+   "sym": "PRU.L",
+   "name": "Prudential",
+   "homepage": "https://www.prudentialplc.com",
+   "ir_seite": "https://www.prudentialplc.com/en/media",
+   "ir_seite_ok": false
+  },
+  {
+   "sym": "AAL.L",
+   "name": "Anglo American",
+   "homepage": "https://www.angloamerican.com",
+   "ir_seite": "https://www.angloamerican.com/media/press-releases/2026",
+   "ir_seite_ok": true,
+   "feed": {
+    "url": "https://www.angloamerican.com/rss/investor-calendar",
+    "eintraege": 20,
+    "neueste": "Tue, 20 Oct 2026 07:00:00 GMT"
+   }
+  },
+  {
+   "sym": "RKT.L",
+   "name": "Reckitt",
+   "homepage": "https://www.reckitt.com",
+   "ir_seite": "https://www.reckitt.com/media-centre/news-and-media",
+   "ir_seite_ok": false
+  },
+  {
+   "sym": "BT-A.L",
+   "name": "BT Group",
+   "homepage": "https://www.bt.com",
+   "ir_seite": "https://newsroom.bt.com",
+   "ir_seite_ok": true,
+   "feed": {
+    "url": "https://newsroom.bt.com/feed/en",
+    "eintraege": 25,
+    "neueste": "Mon, 26 Oct 2026 09:00:00 +0000"
+   }
+  },
+  {
+   "sym": "EQNR.OL",
+   "name": "Equinor",
+   "homepage": "https://www.equinor.com",
+   "ir_seite": "https://www.equinor.com/news",
+   "ir_seite_ok": true
+  },
+  {
+   "sym": "NOKIA.HE",
+   "name": "Nokia",
+   "homepage": "https://www.nokia.com",
+   "ir_seite": "https://www.nokia.com/newsroom/",
+   "ir_seite_ok": true,
+   "feed": {
+    "url": "https://www.nokia.com/partner-releases-rss/",
+    "eintraege": 50,
+    "neueste": "Wed 21 Oct 2026"
+   }
+  }
+ ]
+}

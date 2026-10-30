@@ -161,14 +161,16 @@
   {
    "sym": "SAP.DE",
    "name": "SAP",
-   "url": "",
-   "region": "Welt"
+   "url": "https://news.sap.com/feed/",
+   "region": "Welt",
+   "geprueft": true
   },
   {
    "sym": "SIE.DE",
    "name": "Siemens",
-   "url": "",
-   "region": "Welt"
+   "url": "https://press.siemens.com/en/rss.xml",
+   "region": "Welt",
+   "geprueft": true
   },
   {
    "sym": "ALV.DE",
@@ -191,14 +193,16 @@
   {
    "sym": "VOW3.DE",
    "name": "Volkswagen",
-   "url": "",
-   "region": "Welt"
+   "url": "https://www.volkswagen-group.com/en/feeds/press-releases",
+   "region": "Welt",
+   "geprueft": true
   },
   {
    "sym": "DTE.DE",
    "name": "Deutsche Telekom",
-   "url": "",
-   "region": "Welt"
+   "url": "https://www.telekom.com/en/newsroom/latest-updates/media-information.rss.feed.418728.xml",
+   "region": "Welt",
+   "geprueft": true
   },
   {
    "sym": "BAS.DE",
@@ -335,8 +339,9 @@
   {
    "sym": "HSBA.L",
    "name": "HSBC",
-   "url": "",
-   "region": "Welt"
+   "url": "https://www.hsbc.com/rss-feed",
+   "region": "Welt",
+   "geprueft": true
   },
   {
    "sym": "BP.L",
@@ -365,8 +370,9 @@
   {
    "sym": "SAN.MC",
    "name": "Santander",
-   "url": "",
-   "region": "Welt"
+   "url": "https://www.santander.com/content/santander-corporate/san-global/en/sala-de-comunicacion/insights.sitefeed.rss.xml",
+   "region": "Welt",
+   "geprueft": true
   },
   {
    "sym": "TSM",
@@ -534,6 +540,125 @@
    "sym": "TATAMOTORS.NS",
    "name": "Tata Motors",
    "url": "https://www.tatamotors.com/feed/",
+   "region": "Welt",
+   "geprueft": true
+  },
+  {
+   "sym": "HEI.DE",
+   "name": "Heidelberg Materials",
+   "url": "https://www.heidelbergmaterials.com/en/rss.xml",
+   "region": "Welt",
+   "geprueft": true
+  },
+  {
+   "sym": "HEN3.DE",
+   "name": "Henkel",
+   "url": "https://www.henkel.com/service/en/39580/asFeed/index.xml",
+   "region": "Welt",
+   "geprueft": true
+  },
+  {
+   "sym": "FRE.DE",
+   "name": "Fresenius",
+   "url": "https://www.fresenius.com/rss.xml",
+   "region": "Welt",
+   "geprueft": true
+  },
+  {
+   "sym": "SY1.DE",
+   "name": "Symrise",
+   "url": "https://www.symrise.com/newsroom/press-releases/rss.xml",
+   "region": "Welt",
+   "geprueft": true
+  },
+  {
+   "sym": "CS.PA",
+   "name": "AXA",
+   "url": "https://www.axa.com/rss",
+   "region": "Welt",
+   "geprueft": true
+  },
+  {
+   "sym": "CAP.PA",
+   "name": "Capgemini",
+   "url": "https://www.capgemini.com/feed/",
+   "region": "Welt",
+   "geprueft": true
+  },
+  {
+   "sym": "PRX.AS",
+   "name": "Prosus",
+   "url": "https://www.prosus.com/rss/group-updates",
+   "region": "Welt",
+   "geprueft": true
+  },
+  {
+   "sym": "GIVN.SW",
+   "name": "Givaudan",
+   "url": "https://www.givaudan.com/rss",
+   "region": "Welt",
+   "geprueft": true
+  },
+  {
+   "sym": "HOLN.SW",
+   "name": "Holcim",
+   "url": "https://www.holcim.com/rss.xml",
+   "region": "Welt",
+   "geprueft": true
+  },
+  {
+   "sym": "VOLV-B.ST",
+   "name": "Volvo",
+   "url": "https://www.volvogroup.com/en/news-and-media/press-releases/_jcr_content/root/responsivegrid/articlelist.feed.xml",
+   "region": "Welt",
+   "geprueft": true
+  },
+  {
+   "sym": "SAND.ST",
+   "name": "Sandvik",
+   "url": "https://www.home.sandvik/en/news.xml",
+   "region": "Welt",
+   "geprueft": true
+  },
+  {
+   "sym": "BBVA.MC",
+   "name": "BBVA",
+   "url": "https://www.bbva.com/en/rss/press-releases/",
+   "region": "Welt",
+   "geprueft": true
+  },
+  {
+   "sym": "DGE.L",
+   "name": "Diageo",
+   "url": "https://www.diageo.com/en/rss/financial-calendar",
+   "region": "Welt",
+   "geprueft": true
+  },
+  {
+   "sym": "REL.L",
+   "name": "RELX",
+   "url": "https://www.relx.com/rss/financial-calendar",
+   "region": "Welt",
+   "geprueft": true
+  },
+  {
+   "sym": "AAL.L",
+   "name": "Anglo American",
+   "url": "https://www.angloamerican.com/rss/investor-calendar",
+   "region": "Welt",
+   "geprueft": true
+  },
+  {
+   "sym": "BT-A.L",
+   "name": "BT Group",
+   "url": "https://newsroom.bt.com/feed/en",
+   "region": "Welt",
+   "geprueft": true
+  },
+  {
+   "sym": "NOKIA.HE",
+   "name": "Nokia",
+   "url": "https://www.nokia.com/partner-releases-rss/",
    "region": "Welt",
    "geprueft": true
   }

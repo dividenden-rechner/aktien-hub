@@ -6,7 +6,7 @@
    "name": "Taiwan Semiconductor",
    "homepage": "https://www.tsmc.com",
    "ir_seite": "https://investor.tsmc.com/english",
-   "ir_seite_ok": false
+   "ir_seite_ok": true
   },
   {
    "sym": "2330.TW",
@@ -83,7 +83,7 @@
    "feed": {
     "url": "https://news.skhynix.com/en/feed/",
     "eintraege": 10,
-    "neueste": "Thu, 29 Oct 2026 04:53:56 +0000"
+    "neueste": "Fri, 30 Oct 2026 04:50:32 +0000"
    }
   },
   {
@@ -108,8 +108,8 @@
    "ir_seite_ok": true,
    "feed": {
     "url": "https://www.hyundai.com/wsvc/ww/rss/newsroom.newsroom.do",
-    "eintraege": 1239,
-    "neueste": "Thu, 29 Oct 2026 05:30:00 GMT"
+    "eintraege": 1241,
+    "neueste": "Fri, 30 Oct 2026 08:00:00 GMT"
    }
   },
   {
@@ -217,7 +217,7 @@
    "feed": {
     "url": "https://www.itochu.co.jp:443/en/ir/news/index.xml",
     "eintraege": 20,
-    "neueste": "2026-10-08T07:40:00Z"
+    "neueste": "2026-10-30T06:30:00Z"
    }
   },
   {
@@ -788,8 +788,8 @@
    "sym": "TATAMOTORS.NS",
    "name": "Tata Motors",
    "homepage": "https://www.tatamotors.com",
-   "ir_seite": "https://www.tatamotors.com/investors",
-   "ir_seite_ok": false,
+   "ir_seite": "https://www.tatamotors.com/",
+   "ir_seite_ok": true,
    "feed": {
     "url": "https://www.tatamotors.com/feed/",
     "eintraege": 4,
