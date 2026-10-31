@@ -17,7 +17,7 @@ BASE = CFG["base"] if CFG["base"].endswith("/") else CFG["base"] + "/"
 SITE = CFG["name"]
 esc = lambda s: html.escape(str(s), quote=True)
 NAV = [("rechner", "", "Rechner"), ("aktien", "aktien/", "Aktien"), ("depot", "depot/", "Depot"), ("news", "news/", "News"),
-       ("meldungen", "unternehmensmeldungen/", "Unternehmensmeldungen"), ("screener", "screener/", "Screener"),
+       ("earnings", "earnings/", "Earnings"), ("screener", "screener/", "Screener"),
        ("einfuehrung", "einfuehrung/", "Einführung"), ("grundlagen", "grundlagen/", "Grundlagen"),
        ("fortgeschrittene", "fortgeschrittene/", "Fortgeschrittene")]
 MONTHS = ["Januar", "Februar", "März", "April", "Mai", "Juni", "Juli", "August", "September", "Oktober", "November", "Dezember"]
@@ -161,7 +161,7 @@ def nav_html(depth, cur, with_mag=True):
 
 def footer_html(depth):
     p = "../" * depth
-    l = "".join(f'<a href="{p}{u}">{n}</a>' for k, u, n in NAV if k != "earnings")
+    l = "".join(f'<a href="{p}{u}">{n}</a>' for k, u, n in NAV)
     return (f'<footer class="site-footer"><div class="wrap">\n<div class="cols">\n{l}\n<a href="{p}ueber-uns/">Über uns</a><a href="{p}impressum/">Impressum</a><a href="{p}datenschutz/">Datenschutz</a><a href="https://www.instagram.com/dividenden.rechner" rel="noopener nofollow me" target="_blank">Instagram</a>\n</div>\n'
             '<p>Alle Inhalte dienen der allgemeinen Information und sind keine Anlage-, Steuer- oder Rechtsberatung. Kapitalanlagen sind mit Risiken verbunden.</p>\n</div></footer>')
 
@@ -641,9 +641,9 @@ def build_index(posts):
                   f'<strong>{esc(x["title"])}</strong></span></a></li>\n')
         o += '</ul>\n'
     o += '</div>\n'
-    o += ('<section class="ek-embed" aria-label="Unternehmenskalender"><h2 class="mag-more-h">Unternehmenskalender</h2>\n'
-          '<p class="meta">Wann veröffentlichen Dividendenunternehmen ihre Quartalszahlen? <a href="../earnings/">Vollständigen Kalender öffnen</a></p>\n'
-          '<iframe src="../earnings/?embed=1" title="Earnings-Kalender" loading="lazy" style="width:100%;height:760px;border:1px solid var(--line);border-radius:12px;background:#fff"></iframe></section>\n')
+    o += ('<section class="ek-embed" aria-label="Unternehmensmeldungen"><h2 class="mag-more-h">Unternehmensmeldungen</h2>\n'
+          '<p class="meta">Aktuelle Meldungen und Investorenberichte aus den Investor-Relations-Feeds. <a href="../unternehmensmeldungen/">Seite einzeln öffnen</a></p>\n'
+          '<iframe src="../unternehmensmeldungen/?embed=1" title="Unternehmensmeldungen" loading="lazy" style="width:100%;height:900px;border:1px solid var(--line);border-radius:12px;background:#fff"></iframe></section>\n')
     o += '<p class="meta"><a href="feed.xml">RSS-Feed abonnieren</a></p>\n' + HINT + "\n</main>\n" + footer_html(depth) + "\n</body>\n</html>\n"
     open("news/index.html", "w", encoding="utf-8").write(o)
 
@@ -738,10 +738,10 @@ def patch_nav_everywhere(has_posts):
         link = f'<a href="{pre}news/">News</a>'
         s = s.replace(link, "")
         if has_posts:
-            if re.search(r'<a href="%sunternehmensmeldungen/"[^>]*>Unternehmensmeldungen</a>' % re.escape(pre), s):
-                s = re.sub(r'(<a href="%sunternehmensmeldungen/"[^>]*>Unternehmensmeldungen</a>)' % re.escape(pre), lambda mm: link + mm.group(1), s, count=1)
+            if re.search(r'<a href="%searnings/"[^>]*>Earnings</a>' % re.escape(pre), s):
+                s = re.sub(r'(<a href="%searnings/"[^>]*>Earnings</a>)' % re.escape(pre), lambda mm: link + mm.group(1), s, count=1)
             else:
-                s = re.sub(r'(<a href="%sscreener/"[^>]*>Screener</a>)' % re.escape(pre), lambda mm: mm.group(1) + link, s, count=1)
+                s = re.sub(r'(<a href="%sscreener/"[^>]*>Screener</a>)' % re.escape(pre), lambda mm: link + mm.group(1), s, count=1)
         if s != o: open(f, "w", encoding="utf-8").write(s)
 
 REPO = "dividenden-rechner/aktien-hub"
