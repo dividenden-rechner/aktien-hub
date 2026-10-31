@@ -1,0 +1,16 @@
+name: Öl-Test (OilPriceAPI)
+on:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: python3 tools/oil_test.py
+        env:
+          OILPRICE_API_KEY: ${{ secrets.OILPRICE_API_KEY }}
