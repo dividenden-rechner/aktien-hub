@@ -43,6 +43,18 @@ def main():
             for x in arr:
                 if x.get("unit") in ("USD/shares", "USD/Share", "USD") and (best is None or (x["end"], x.get("filed", "")) > (best[1]["end"], best[1].get("filed", ""))): best = (k, x)
         if best: o["nav"] = {"tag": best[0], "wert": best[1]["val"], "stichtag": best[1]["end"], "form": best[1].get("form"), "eingereicht": best[1].get("filed")}
+        # Besserer Weg: Nettovermoegen / ausstehende Aktien am selben Stichtag
+        net = [x for arr in facts_of(cf, lambda g: g == "AssetsNet").values() for x in arr if x.get("unit") == "USD" and "start" not in x]
+        shs = [x for arr in facts_of(cf, lambda g: g in ("CommonStockSharesOutstanding", "SharesOutstanding", "EntityCommonStockSharesOutstanding")).values() for x in arr if x.get("unit") == "shares"]
+        if net and shs:
+            n0 = max(net, key=lambda x: (x["end"], x.get("filed", "")))
+            same = [x for x in shs if x["end"] == n0["end"]]
+            sh = max(same, key=lambda x: x.get("filed", "")) if same else None
+            if not sh:
+                near = [x for x in shs if 0 <= (datetime.date.fromisoformat(x["end"]) - datetime.date.fromisoformat(n0["end"])).days <= 60]
+                sh = max(near, key=lambda x: x["end"]) if near else None
+            if sh and sh["val"] > 0:
+                o["nav_calc"] = {"wert": round(n0["val"] / sh["val"], 2), "stichtag": n0["end"], "nettovermoegen": n0["val"], "aktien": sh["val"], "aktien_stichtag": sh["end"], "eingereicht": n0.get("filed")}
         dv = facts_of(cf, lambda g: ("DividendsDeclared" in g or "DistributionsDeclared" in g or "DividendsPerShare" in g or "DividendsCommonStock" in g and "PerShare" in g) and "PerShare" in g)
         qd = {}
         for k, arr in dv.items():
@@ -58,10 +70,11 @@ def main():
         o["status"] = "ok" if ("nav" in o and "dps" in o) else ("nur NAV" if "nav" in o else ("nur Dividende" if "dps" in o else "weder NAV noch Dividende"))
         res.append(o)
     json.dump(res, open("data/bdc-test.json", "w"), ensure_ascii=False, indent=1)
-    L = ["| Ticker | Status | NAV SEC | Stichtag | NAV Sheet | Dividende 4Q SEC | Dividende Sheet |", "|---|---|---|---|---|---|---|"]
+    L = ["| Ticker | NAV berechnet (Nettovermögen / Aktien) | Stichtag | NAV Sheet | Abweichung | NAV Tag (alt) |", "|---|---|---|---|---|---|"]
     for o in res:
         n = o.get("nav"); d = o.get("dps")
-        L.append(f"| {o['ticker']} | {o['status']} | {n['wert'] if n else '–'} | {n['stichtag'] if n else '–'} | {o['sheet_nav']} | {d['summe_4q'] if d else '–'} | {o['sheet_dps']} |")
+        c = o.get("nav_calc"); ab = f"{(c['wert']/o['sheet_nav']-1)*100:+.0f} %" if c else "–"
+        L.append(f"| {o['ticker']} | {c['wert'] if c else '–'} | {c['stichtag'] if c else '–'} | {o['sheet_nav']} | {ab} | {n['wert'] if n else '–'} |")
     open("data/bdc-test.md", "w").write("\n".join(L) + "\n")
     from collections import Counter; print(Counter(o["status"] for o in res))
 
