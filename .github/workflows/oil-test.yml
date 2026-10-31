@@ -2,7 +2,7 @@ name: Öl-Test (OilPriceAPI)
 on:
   workflow_dispatch:
 permissions:
-  contents: read
+  contents: write
 jobs:
   test:
     runs-on: ubuntu-latest
@@ -14,3 +14,12 @@ jobs:
       - run: python3 tools/oil_test.py
         env:
           OILPRICE_API_KEY: ${{ secrets.OILPRICE_API_KEY }}
+      - name: Ergebnis auf Test-Branch (nicht veröffentlicht)
+        run: |
+          git config user.name "oil-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git checkout --orphan oil-test-result
+          git rm -rf -q . 
+          git add oil-test-result.txt
+          git commit -qm "Öl-Test Ergebnis"
+          git push -f origin oil-test-result

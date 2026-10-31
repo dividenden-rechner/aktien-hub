@@ -16,13 +16,15 @@ def get(path):
     except Exception as e:
         return 0, {}, repr(e)
 
+out=[]
 for pfad in ["/v1/prices/latest?by_code=BRENT_CRUDE_USD",
              "/v1/prices/latest?by_code=WTI_USD",
              "/v1/prices/past_week?by_code=BRENT_CRUDE_USD",
              "/v1/prices/past_week?by_code=WTI_USD"]:
     st, h, body = get(pfad)
-    print("=" * 70); print(pfad, "->", st)
+    out.append("=" * 70); out.append(f"{pfad} -> {st}")
     for k in ("x-ratelimit-limit", "x-ratelimit-remaining", "x-ratelimit-reset"):
         if k in {a.lower() for a in h}:
-            print(k, [v for a, v in h.items() if a.lower() == k][0])
-    print(body[:1800])
+            out.append(f"{k} {[v for a, v in h.items() if a.lower() == k][0]}")
+    out.append(body[:1800])
+open("oil-test-result.txt","w",encoding="utf-8").write("\n".join(out))
