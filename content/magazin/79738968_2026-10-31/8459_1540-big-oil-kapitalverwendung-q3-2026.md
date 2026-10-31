@@ -12,32 +12,38 @@ image_credit: "Foto: Jakub Pabis auf Unsplash"
 image_source: https://unsplash.com/photos/a-factory-with-pipes-and-a-sky-background-vOtSZd_8Af4?utm_source=dividenden-rechner&utm_medium=referral
 image_artist_url: https://unsplash.com/@jakubpabis?utm_source=dividenden-rechner&utm_medium=referral
 ---
-<!-- PRÜFEN: Entwurf. Zahlen stammen aus den Quartalsberichten (Shell, BP, TotalEnergies, Equinor als PDF, Exxon und Chevron aus den eigenen Artikeln und SEC-Meldungen). Mit * markierte Werte sind eigene Rechnungen. Aufmacherfoto fehlt, ohne image-Zeilen entsteht ein Titelbild automatisch. -->
-<!-- PRÜFEN: Chevron und Shell: gezahlte Dividendensumme steht nicht im ausgewerteten Material, deshalb nur Dividende je Aktie. Equinor: Gesamtsumme des Rückkaufprogramms 2026 und Zahl der Tranchen vor der Veröffentlichung noch einmal im Bericht gegenlesen. -->
+<!-- PRÜFEN: Zahlen stammen aus den Quartalsberichten (Shell, BP, TotalEnergies, Equinor als PDF, Exxon und Chevron aus den eigenen Artikeln und SEC-Meldungen). Mit * markierte Werte sind eigene Rechnungen. -->
+<!-- PRÜFEN: Chevron und Shell: gezahlte Dividendensumme steht nicht im ausgewerteten Material, deshalb nur Dividende je Aktie. Equinor: Gesamtsumme des Rückkaufprogramms 2026 und Zahl der Tranchen noch einmal im Bericht gegenlesen. -->
+<!-- PRÜFEN: Einstieg: Brent rund 117 und WTI rund 107 Dollar sind Redaktionsangaben ohne Quelle im Text. Andere Werte vom Samstag: Brent rund 113, WTI rund 103 (interne Abfrage, nicht veröffentlichen), WSJ im Marktüberblick 112 bis 113. Bitte Stichtag und Quelle klären. -->
+<!-- PRÜFEN: Einstieg: Aussage zu iranischem Öl, das per Schiff in die Märkte (auch in die USA) kommt und direkt in die Raffinerien geht, ist Redaktionsaussage, nicht aus den Berichten belegt. Russland: Benzinimporte aus Indien und Verlängerung des Benzinexportstopps laut Berliner Zeitung (nur die Meldungstitel gesehen, nicht den Volltext). -->
 
 !!! kurz "Kurz gesagt"
-    **Thema:** Sechs Ölkonzerne, ein Quartal mit hohen Raffineriemargen: Was machen sie mit dem Geld?
-    **Brent im Q3:** rund 97 US-Dollar je Barrel
+    **Lage:** Der Iran-Krieg treibt den Ölpreis, der Ukraine-Konflikt den Dieselpreis. Brent liegt zuletzt bei rund 117, WTI bei rund 107 Dollar.
+    **Frage:** Was machen Exxon, Chevron, Shell, BP, TotalEnergies und Equinor mit ihren Gewinnen?
 
     1. **Rückkäufe:** ExxonMobil gibt 5,1 Mrd. USD für Aktienrückkäufe aus, Shell kündigt neue 5,0 Mrd. USD an, Chevron verwendet 2,5 Mrd. USD. TotalEnergies hat 1,5 Mrd. USD eingesetzt, Equinor startet eine Tranche über bis zu 1,125 Mrd. USD.
     2. **Schulden:** BP senkt die Nettoverschuldung in einem Quartal von 22,3 auf 13,9 Mrd. USD und kauft laut Präsentation keine Aktien zurück.
     3. **Dividenden:** TotalEnergies hebt die Zwischendividende um 5,9 % auf 0,90 Euro, BP und Equinor zahlen die Dividende des Vorquartals unverändert weiter.
 
-## Ein Quartal mit Rückenwind aus dem Raffineriegeschäft
+## Geopolitik treibt Öl und Diesel
 
-Im dritten Quartal 2026 lag der Brent-Preis nach Angaben von Shell und Chevron bei durchschnittlich 97 US-Dollar je Barrel, nach 104 Dollar im zweiten Quartal bei Shell. Was die Ergebnisse trug, waren vor allem die Margen im Raffineriegeschäft. Shell nennt für seine indikative Raffineriemarge 42 Dollar je Barrel nach 24 Dollar im Vorquartal, TotalEnergies spricht von historisch hohen Raffineriemargen in Europa und weltweit. [ExxonMobil](../exxonmobil-q3-2026-quartalszahlen/) meldet eine Auslastung von 100 % an den Raffinerien an der US-Küste, [Chevron](../chevron-q3-2026-ergebnisse/) spricht von Rekorden in den US-Raffinerien.
+Der Iran-Krieg treibt den Ölpreis, der Ukraine-Konflikt den Dieselpreis. Brent kostet zuletzt rund 117 Dollar je Barrel, WTI rund 107 Dollar. Noch stärker als Rohöl verteuern sich Raffinerieprodukte wie Diesel und Heizöl.
 
-## Ölpreis, Gas und der Konflikt im Nahen Osten
+Beide Konflikte verstärken sich. In Russland haben ukrainische Angriffe Raffinerien zerstört. Das Land, sonst ein großer Exporteur von Raffinerieprodukten, muss Berichten zufolge Benzin aus Indien einführen und hat seinen Benzinexportstopp bis Ende Januar 2027 verlängert. Gleichzeitig kommt aus dem Iran wieder mehr Öl per Schiff auf den Markt, auch in den USA kommt es an. Weil die Lager weltweit auf einem Tiefstand sind, wie TotalEnergies schreibt, füllt dieses Öl keine Tanks auf. Es wird sofort in die Raffinerien gedrückt, die daraus Diesel und Heizöl machen. Das hält die Preise der Raffinerieprodukte hoch, und mit ihnen die Margen der Konzerne.
 
-Der Hintergrund der Zahlen ist der Konflikt im Nahen Osten, der die Straße von Hormus betrifft. TotalEnergies beziffert die Folgen für die eigene Förderung im dritten Quartal auf rund 5 %, vor allem wegen begrenzter LNG-Exporte durch die Meerenge. Ohne diesen Effekt wäre die Produktion gegenüber dem Vorjahr um mehr als 4 % gewachsen. Auch BP rechnet im vierten Quartal weiter mit Störungen im Nahen Osten und nennt die „erhöhte Volatilität“ der Öl- und Gaspreise als Risiko für ihre Förderverträge.
+Daraus ergibt sich die Frage dieses Artikels: Machen die großen Energiekonzerne in den USA und vor allem in Europa tatsächlich mehr Gewinn? Wohin fließt das Geld? Und was schreiben sie dazu in ihren Berichten für das dritte Quartal, das Ende September zu Ende ging?
 
-Die Preise sind seit dem Quartalsende nicht gefallen. TotalEnergies schreibt, der Ölpreis liege zu Beginn des vierten Quartals weiter über 100 US-Dollar je Barrel, der Markt für Raffinerieprodukte sei „sehr volatil“, die weltweiten Lagerbestände seien auf einem Tiefstand. Für Gas erwartet der Konzern im vierten Quartal einen durchschnittlichen LNG-Verkaufspreis von über 14 US-Dollar je Mbtu. BP legt seinen Annahmen für das vierte Quartal einen Brent-Preis von 110 US-Dollar je Barrel zugrunde. Unser [Marktüberblick vom Freitag](../tech-ausverkauf-intel-nasdaq-marktueberblick/) nennt unter Berufung auf das Wall Street Journal für Brent zuletzt rund 112 bis 113 Dollar.
+Die kurze Antwort: Ja, sie verdienen deutlich mehr, und das Geld geht in drei Richtungen. Es fließt in Aktienrückkäufe, in den Schuldenabbau und in neue Projekte, vor allem Gas und LNG. Die Dividenden steigen dagegen kaum.
 
-Das heißt für die Quartalszahlen: Der Durchschnittspreis von 97 Dollar im dritten Quartal liegt unter dem aktuellen Niveau. Die Raffineriemargen sind der zweite Treiber: BP nennt 46,7 Dollar je Barrel nach der eigenen Raffineriemarge, Shell 42 Dollar. TotalEnergies-Chef Patrick Pouyanné spricht von einem Umfeld mit historischen Raffineriemargen und einem „Bullenmarkt“ bei Gas (aus dem Englischen übersetzt).
+## Was die Konzerne selbst zu Preisen und Konflikt schreiben
 
-<!-- PRÜFEN: WTI und die Preisentwicklung der letzten Wochen fehlen noch, sie stehen nicht in den Berichten. Quelle nachtragen, wenn gewünscht. -->
+Im Schnitt lag Brent im dritten Quartal bei 97 US-Dollar je Barrel, nach 104 Dollar im zweiten Quartal (Shell). Was die Ergebnisse trug, waren vor allem die Margen im Raffineriegeschäft. Shell nennt für seine indikative Raffineriemarge 42 Dollar je Barrel nach 24 Dollar im Vorquartal, BP 46,7 Dollar. [ExxonMobil](../exxonmobil-q3-2026-quartalszahlen/) meldet eine Auslastung von 100 % an den Raffinerien an der US-Küste, [Chevron](../chevron-q3-2026-ergebnisse/) spricht von Rekorden in den US-Raffinerien. Bei Chevron stieg der Nettogewinn von 3,54 auf 9,92 Mrd. USD.
 
-Dieser Artikel stellt die sechs Konzerne nebeneinander. Er beantwortet eine Frage: Wie viel verdienen sie, und wohin fließt das Geld? Es ist keine Kaufempfehlung.
+TotalEnergies beziffert die Folgen des Konflikts für die eigene Förderung im dritten Quartal auf rund 5 %, vor allem wegen begrenzter LNG-Exporte durch die Straße von Hormus. Ohne diesen Effekt wäre die Produktion gegenüber dem Vorjahr um mehr als 4 % gewachsen. Konzernchef Patrick Pouyanné spricht von historischen Raffineriemargen und einem „Bullenmarkt“ bei Gas (aus dem Englischen übersetzt).
+
+Zum Beginn des vierten Quartals bleibe der Ölpreis über 100 Dollar, schreibt TotalEnergies. Der Markt für Raffinerieprodukte sei „sehr volatil“, die Lagerbestände seien weltweit auf einem Tiefstand. Für Gas erwartet der Konzern im vierten Quartal einen durchschnittlichen LNG-Verkaufspreis von über 14 Dollar je Mbtu. BP legt seinen Annahmen für das vierte Quartal einen Brent-Preis von 110 Dollar je Barrel zugrunde und rechnet weiter mit Störungen im Nahen Osten. Der aktuelle Preis liegt damit über dem Durchschnitt des dritten Quartals und über der BP-Annahme.
+
+Dieser Artikel stellt die sechs Konzerne nebeneinander. Es ist keine Kaufempfehlung.
 
 ## Cashflow und Investitionen
 
@@ -135,3 +141,4 @@ Eines fehlt in dieser Übersicht noch: die Aussicht auf den Ölpreis selbst. All
 - BP, Präsentation zum dritten Quartal 2026
 - TotalEnergies, Pressemitteilung zum dritten Quartal 2026, 29.10.2026
 - Equinor, Quartalsbericht Q3 2026
+- Berliner Zeitung, Berichte zu Kraftstoffengpässen in Russland, Benzinimporten aus Indien und zur Verlängerung des Benzinexportstopps: [Benzinimporte aus Indien](https://www.berliner-zeitung.de/article/kraftstoffengpaesse-in-russland-moskau-greift-auf-benzin-importe-aus-indien-zurueck-bericht-10155342), [Exportstopp bis Ende Januar 2027](https://www.berliner-zeitung.de/article/russland-verlaengert-benzinexportstopp-bis-ende-januar-2027-10249784)
