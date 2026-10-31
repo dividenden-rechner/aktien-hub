@@ -28,6 +28,8 @@ Der Freitag war der Höhepunkt einer Woche, in der die Stimmung gegenüber der k
 
 [**Intel**](../intel-q3-2026-zahlen/) traf es am härtesten: Die Aktie verlor rund 30 %, laut Wall Street Journal der größte Tagesverlust, den es bei dem Konzern je gab. Seit Anfang Juli ist sie nach den Daten des Handelsblatts von 109,10 auf 59,32 US-Dollar gefallen, ein Minus von 45,6 %. Der Grund liegt im Kerngeschäft: Die hohen Preise für Speicherchips bremsen den PC-Absatz. Hinzu kommt ein Ausblick, den das Handelsblatt als massiv unter den Erwartungen beschreibt. Die Details zu den Zahlen stehen in unserer Analyse.
 
+[[firma: INTC | intel-q3-2026-zahlen]]
+
 **Amazon** lieferte ein gemischtes Bild. Der Nettogewinn lag im dritten Quartal über 20 Milliarden Dollar, das Cloud-Geschäft wuchs so stark wie seit Jahren nicht. Der freie Cashflow brach jedoch ein, und die Aktie gab zeitweise bis zu 8 % nach, am Ende blieb ein Minus von etwa 1,5 bis 2 %. Der Markt wollte nach der Alphabet-Enttäuschung mehr sehen. Dazu passt, was John Higgins von Capital Economics dem Wall Street Journal sagte: Die Anleger würden nervöser, weil der Investitionsboom der Cloud-Konzerne teils von externer Finanzierung abhängt.
 
 Auch der Speicherspezialist [SanDisk](../sandisk-q1-2027-zahlen/) und der Cloud-Anbieter Coreweave gaben nach Angaben des Handelsblatts deutlich nach. Wie sehr die Furcht vor dem Ende des KI-Booms auch Firmen abseits der Technologie trifft, zeigt [**Caterpillar**](../caterpillar-q3-2026-zahlen/). Der Maschinenbauer profitierte von der Nachfrage der Rechenzentren nach Generatoren. Die Aktie ist im Monatsverlauf um über 20 % gefallen, obwohl die Quartalszahlen nach Angaben des Journals solide waren.

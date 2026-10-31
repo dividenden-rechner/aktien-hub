@@ -142,10 +142,70 @@ def fix_kurz(t):
     return t
 
 
+
+FK_TOK = re.compile(r"^\[\[\s*firma\s*:\s*([A-Za-z0-9.\-]+)\s*(?:\|\s*([a-z0-9\-]+))?\s*\]\]\s*$", re.M)
+_FK = None
+def _fk_data():
+    global _FK
+    if _FK is None:
+        try: _FK = json.load(open("data/firmenkarten.json", encoding="utf-8"))
+        except Exception: _FK = {}
+    return _FK
+
+def _fk_name(sym):
+    try:
+        for f in json.load(open("data/universe.json", encoding="utf-8"))["firmen"]:
+            if f.get("sym") == sym: return f.get("name", sym)
+    except Exception: pass
+    return sym
+
+def _fk_big(v):
+    a = abs(v)
+    if a >= 1e9: return ("−" if v < 0 else "") + f"{a/1e9:.1f}".replace(".", ",") + "\u202fMrd.\u00a0$"
+    return ("−" if v < 0 else "") + f"{a/1e6:.0f}".replace(".", ",") + "\u202fMio.\u00a0$"
+
+def _fk_bars(vals, labels, neg_red):
+    W, H, base = 130, 54, 40
+    mx = max(abs(v) for v in vals) or 1
+    lo = min(0, min(vals)); hi = max(0, max(vals)); span = (hi - lo) or 1
+    zero = 4 + (H - 14) * hi / span; sc = (H - 14) / span
+    s = f'<svg viewBox="0 0 {W} {H}" class="fk-ch" role="img" aria-hidden="true"><line x1="0" x2="{W}" y1="{zero:.1f}" y2="{zero:.1f}" stroke="#dfe5ea"/>'
+    n = len(vals); bw = 11; gap = (W - n * bw) / (n + 1)
+    for i, v in enumerate(vals):
+        x = gap + i * (bw + gap); h = max(1.5, abs(v) * sc); last = i == n - 1
+        y = zero - h if v >= 0 else zero
+        col = ("#d64545" if v < 0 and neg_red else "#2f6fdb") if last else ("#e8a5a5" if v < 0 and neg_red else "#cddcf8")
+        s += f'<rect x="{x:.1f}" y="{y:.1f}" width="{bw}" height="{h:.1f}" rx="2" fill="{col}"/>'
+        if i in (0, n - 1): s += f'<text x="{x+bw/2:.1f}" y="{H-1}" font-size="7.5" text-anchor="middle" fill="#5d6b78">{labels[i]}</text>'
+    return s + "</svg>"
+
+def _fk_card(m, depth):
+    sym = m.group(1).upper(); slug = m.group(2); pre = "../" * depth
+    d = _fk_data().get(sym); name = esc(_fk_name(sym))
+    lg = f"assets/logos/{sym.lower().replace('.', '-')}.png"
+    logo = f'<img class="fk-logo" src="{pre}{lg}" alt="" width="36" height="36" loading="lazy">' if os.path.exists(lg) else ""
+    head = f'{logo}<span class="fk-t"><b>{name}</b><small>{esc(sym)}</small></span>'
+    href = f'{pre}news/{slug}/' if slug else ""
+    if not d:
+        return (f'\n<p class="fk-row"><a class="fkarte" href="{href}">{head}<span class="go">Analyse lesen →</span></a></p>\n' if href else "")
+    q = d["q"]; lab = [f"{x['p']} {x['y'][2:]}" for x in q]
+    def kpi(key, title, neg_red):
+        v = [x[key] for x in q]; last, prev = v[-1], v[-5]
+        yoy = ""
+        if prev and prev > 0 and last is not None:
+            g = (last / prev - 1) * 100; yoy = f'<em class="{"up" if g >= 0 else "down"}">{"+" if g >= 0 else "−"}{abs(g):.0f}\u202f%</em>'
+        elif key == "ni" and prev is not None: yoy = ""
+        return f'<div class="fk-k"><small>{title}</small><b>{_fk_big(last)}</b>{yoy}{_fk_bars(v, lab, neg_red)}</div>'
+    body = f'<div class="fk-grid">{kpi("rev", "Umsatz je Quartal", False)}{kpi("ni", "Nettogewinn je Quartal", True)}</div>'
+    foot = f'<span class="fk-src">Quelle: Financial Modeling Prep, Stand {d["stand"][8:]}.{d["stand"][5:7]}.{d["stand"][:4]}</span>'
+    tag = "a" if href else "div"; ha = f' href="{href}"' if href else ""
+    return f'\n<{tag} class="fkarte"{ha}><span class="fk-h">{head}{"<span class=go>Analyse lesen →</span>" if href else ""}</span>{body}{foot}</{tag}>\n'
+
 def md_to_html(md_text, depth):
     pre = "../" * depth
     md_text = re.sub(r"<!--\s*PRÜFEN.*?-->\s*", "", md_text, flags=re.S)   # Redaktionshinweise des IR-Agenten nie veröffentlichen
     md_text = fix_kurz(md_text)
+    md_text = FK_TOK.sub(lambda m: "\n\n" + _fk_card(m, depth).strip() + "\n\n", md_text)
     md = markdown.Markdown(extensions=["tables", "sane_lists", "admonition", "attr_list", "toc"], extension_configs={"toc": {"permalink": False}})
     h = md.convert(md_text)
     h = re.sub(r'(href|src)="/(?!/)', lambda m: f'{m.group(1)}="{pre}', h)       # /pfad/ -> relativ
