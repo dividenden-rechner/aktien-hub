@@ -10,6 +10,7 @@ quelle_url: https://www.sec.gov/Archives/edgar/data/40533/000004053326000036/gd-
 quelle_name: "Pressemitteilung General Dynamics (SEC-Meldung)"
 logo_symbol: GD
 logo_name: "General Dynamics"
+logo_file: assets/logos/gd.png
 ---
 <!-- PRÜFEN: Diese Zahlen stehen nicht im Originaltext: 14,57, 220,34, Einordnung: 14,57, Einordnung: 220,34. Bitte pruefen, dann 'draft: true' loeschen. -->
 

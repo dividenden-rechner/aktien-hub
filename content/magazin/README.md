@@ -15,12 +15,13 @@ Datei anklicken, dann Stift-Symbol: Zeile `draft: true` löschen und speichern, 
 | 29.10.2026 22:42 | Amazon steigert Umsatz im dritten Quartal auf 201,9 Milliarden Dollar | [79738970_2026-10-29/7757_2242-amazon-q3-2026-zahlen.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/79738970_2026-10-29/7757_2242-amazon-q3-2026-zahlen.md) |
 | 29.10.2026 10:12 | Shell erzielt im dritten Quartal 10,8 Milliarden Dollar Gewinn | [79738970_2026-10-29/8987_1012-shell-q3-2026-ergebnisse.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/79738970_2026-10-29/8987_1012-shell-q3-2026-ergebnisse.md) |
 
-### Online (133)
+### Online (134)
 
 | Datum | Titel | Datei |
 |---|---|---|
 | 30.10.2026 23:48 | Ingersoll Rand ernennt neue Führungskräfte und verlängert Vertrag von CEO Vicente Reynal | [79738969_2026-10-30/7651_2348-ingersoll-rand-fuehrungswechsel-oktober-2026.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/79738969_2026-10-30/7651_2348-ingersoll-rand-fuehrungswechsel-oktober-2026.md) |
 | 30.10.2026 23:48 | Arch Capital Group: Tochter übernimmt Premier Dealer Services | [79738969_2026-10-30/7651_2348-arch-capital-group-uebernimmt-premier-dealer-services.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/79738969_2026-10-30/7651_2348-arch-capital-group-uebernimmt-premier-dealer-services.md) |
+| 30.10.2026 23:46 | General Dynamics steigert Q3-Gewinn je Aktie auf 4,49 US-Dollar | [79738969_2026-10-30/7653_2346-general-dynamics-q3-2026-zahlen.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/79738969_2026-10-30/7653_2346-general-dynamics-q3-2026-zahlen.md) |
 | 30.10.2026 23:46 | Federal Realty Investment Trust steigert Q3-Core-FFO auf 1,87 US-Dollar | [79738969_2026-10-30/7653_2346-federal-realty-investment-trust-q3-2026-ergebnisse.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/79738969_2026-10-30/7653_2346-federal-realty-investment-trust-q3-2026-ergebnisse.md) |
 | 30.10.2026 23:46 | AstraZeneca steigert bereinigten Q3-Gewinn auf 2,79 US-Dollar je Aktie | [79738969_2026-10-30/7653_2346-astrazeneca-q3-zahlen-2026.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/79738969_2026-10-30/7653_2346-astrazeneca-q3-zahlen-2026.md) |
 | 30.10.2026 21:45 | Intel implodiert, Amazon und Co. enttäuschen den Markt | [79738969_2026-10-30/7854_2145-tech-ausverkauf-intel-nasdaq-marktueberblick.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/79738969_2026-10-30/7854_2145-tech-ausverkauf-intel-nasdaq-marktueberblick.md) |
