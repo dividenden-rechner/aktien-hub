@@ -6,7 +6,6 @@ author: "Redaktions-Team Dividenden-Rechner.de"
 author_bio: "Das Redaktions-Team von Dividenden-Rechner.de schreibt über Dividendenaktien, Kennzahlen und Steuerthemen für Privatanleger. Die Rechner und Auswertungen auf der Seite entstehen im eigenen Haus."
 category: Analyse
 kein_logo: ja
-draft: true
 ---
 <!-- PRÜFEN: Entwurf. Zahlen stammen aus den Quartalsberichten (Shell, BP, TotalEnergies, Equinor als PDF, Exxon und Chevron aus den eigenen Artikeln und SEC-Meldungen). Mit * markierte Werte sind eigene Rechnungen. Aufmacherfoto fehlt, ohne image-Zeilen entsteht ein Titelbild automatisch. -->
 <!-- PRÜFEN: Chevron und Shell: gezahlte Dividendensumme steht nicht im ausgewerteten Material, deshalb nur Dividende je Aktie. Equinor: Gesamtsumme des Rückkaufprogramms 2026 und Zahl der Tranchen vor der Veröffentlichung noch einmal im Bericht gegenlesen. -->
