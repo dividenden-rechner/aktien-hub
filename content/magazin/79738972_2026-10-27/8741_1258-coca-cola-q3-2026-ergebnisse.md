@@ -24,6 +24,8 @@ logo_file: assets/logos/ko.png
 
 The Coca-Cola Company hat die Ergebnisse für das dritte Quartal 2026 vorgelegt und verzeichnet Zuwächse bei Umsatz und Gewinn. Der Nettoumsatz kletterte auf **13.380 Millionen USD**, während im Vorjahreszeitraum ein Wert von 12.455 Millionen USD erzielt worden war. Das entspricht einem Anstieg von 7 Prozent. Getrieben wurde diese Entwicklung unter anderem von einer Zunahme der abgegebenen Konzentratmengen sowie Preisanpassungen in verschiedenen Märkten.
 
+[[firma: KO]]
+
 ![Konzerngewinn- und -verlustrechnung für das 3. Quartal 2026](/assets/magazin/coca-cola-q3-2026-ergebnisse-f1.png)
 *Konzerngewinn- und -verlustrechnung für das 3. Quartal 2026. Quelle: The Coca-Cola Company, Quartalszahlen vom 2026-10-27, S. 9. Ausschnitt nur zugeschnitten, sonst unverändert.*
 
