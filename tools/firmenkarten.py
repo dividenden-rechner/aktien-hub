@@ -24,6 +24,10 @@ def main():
             png = fl.from_fmp(s)
             if png: os.makedirs('assets/logos', exist_ok=True); open(lp, 'wb').write(png)
         inc = ia.fmp_get("income-statement", symbol=s, period="annual", limit=5)
+        if inc is None:
+            import urllib.parse
+            try: ia.http("https://financialmodelingprep.com/stable/income-statement?" + urllib.parse.urlencode({"symbol": s, "period": "annual", "limit": 5, "apikey": os.environ.get("FMP_API_KEY", "")}), timeout=60)
+            except Exception as e: log[s + "_fehler"] = str(e)[:200] + " | " + str(getattr(e, "read", lambda: b"")()[:200])
         log[s] = (type(inc).__name__ + (":" + str(len(inc)) if isinstance(inc, list) else ""))
         if not isinstance(inc, list) or len(inc) < 3: print(s, ": keine Daten"); continue
         inc = sorted(inc, key=lambda x: x.get("date", ""))[-5:]
