@@ -170,7 +170,7 @@ def _fk_bars(vals, labels, neg_red):
     lo = min(0, min(vals)); hi = max(0, max(vals)); span = (hi - lo) or 1
     zero = 4 + (H - 14) * hi / span; sc = (H - 14) / span
     s = f'<svg viewBox="0 0 {W} {H}" class="fk-ch" role="img" aria-hidden="true"><line x1="0" x2="{W}" y1="{zero:.1f}" y2="{zero:.1f}" stroke="#dfe5ea"/>'
-    n = len(vals); bw = 11; gap = (W - n * bw) / (n + 1)
+    n = len(vals); bw = 16; gap = (W - n * bw) / (n + 1)
     for i, v in enumerate(vals):
         x = gap + i * (bw + gap); h = max(1.5, abs(v) * sc); last = i == n - 1
         y = zero - h if v >= 0 else zero
@@ -188,15 +188,15 @@ def _fk_card(m, depth):
     href = f'{pre}news/{slug}/' if slug else ""
     if not d:
         return (f'\n<p class="fk-row"><a class="fkarte" href="{href}">{head}<span class="go">Analyse lesen →</span></a></p>\n' if href else "")
-    q = d["q"]; lab = [f"{x['p']} {x['y'][2:]}" for x in q]
+    q = d["q"]; lab = [x["y"] for x in q]
     def kpi(key, title, neg_red):
-        v = [x[key] for x in q]; last, prev = v[-1], v[-5]
+        v = [x[key] for x in q]; last, prev = v[-1], v[-2]
         yoy = ""
         if prev and prev > 0 and last is not None:
             g = (last / prev - 1) * 100; yoy = f'<em class="{"up" if g >= 0 else "down"}">{"+" if g >= 0 else "−"}{abs(g):.0f}\u202f%</em>'
         elif key == "ni" and prev is not None: yoy = ""
         return f'<div class="fk-k"><small>{title}</small><b>{_fk_big(last)}</b>{yoy}{_fk_bars(v, lab, neg_red)}</div>'
-    body = f'<div class="fk-grid">{kpi("rev", "Umsatz je Quartal", False)}{kpi("ni", "Nettogewinn je Quartal", True)}</div>'
+    body = f'<div class="fk-grid">{kpi("rev", "Umsatz je Geschäftsjahr", False)}{kpi("ni", "Nettogewinn je Geschäftsjahr", True)}</div>'
     foot = f'<span class="fk-src">Quelle: Financial Modeling Prep, Stand {d["stand"][8:]}.{d["stand"][5:7]}.{d["stand"][:4]}</span>'
     tag = "a" if href else "div"; ha = f' href="{href}"' if href else ""
     return f'\n<{tag} class="fkarte"{ha}><span class="fk-h">{head}{"<span class=go>Analyse lesen →</span>" if href else ""}</span>{body}{foot}</{tag}>\n'

@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Holt fuer Firmenkarten in Artikeln ([[firma: SYM | artikel-slug]]) die letzten 8 Quartale (Umsatz, Nettogewinn) von FMP
+"""Holt fuer Firmenkarten in Artikeln ([[firma: SYM | artikel-slug]]) die letzten 5 Geschaeftsjahre (Umsatz, Nettogewinn) von FMP
 und schreibt data/firmenkarten.json. Ohne Daten bleibt der bisherige Stand erhalten; nichts wird geschaetzt."""
 import os, re, sys, json, datetime
 sys.path.insert(0, os.path.dirname(__file__))
@@ -22,9 +22,9 @@ def main():
         if not os.path.exists(lp):
             png = fl.from_fmp(s)
             if png: os.makedirs('assets/logos', exist_ok=True); open(lp, 'wb').write(png)
-        inc = ia.fmp_get("income-statement", symbol=s, period="quarter", limit=8)
-        if not isinstance(inc, list) or len(inc) < 5: print(s, ": keine Quartalsdaten"); continue
-        inc = sorted(inc, key=lambda x: x.get("date", ""))[-8:]
+        inc = ia.fmp_get("income-statement", symbol=s, period="annual", limit=5)
+        if not isinstance(inc, list) or len(inc) < 3: print(s, ": keine Quartalsdaten"); continue
+        inc = sorted(inc, key=lambda x: x.get("date", ""))[-5:]
         q = [{"d": x["date"], "p": x.get("period", ""), "y": str(x.get("fiscalYear") or x["date"][:4]),
               "rev": x.get("revenue"), "ni": x.get("netIncome")} for x in inc]
         if any(a["rev"] is None or a["ni"] is None for a in q): print(s, ": unvollstaendig"); continue
