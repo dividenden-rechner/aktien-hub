@@ -17,19 +17,22 @@ def main():
         syms |= {m.upper() for m in TOK.findall(open(p, encoding="utf-8").read())}
     try: cur = json.load(open(OUT, encoding="utf-8"))
     except Exception: cur = {}
+    log = {"gefunden": sorted(syms), "key": bool(os.environ.get("FMP_API_KEY"))}
     for s in sorted(syms):
         lp = f"assets/logos/{s.lower().replace('.', '-')}.png"
         if not os.path.exists(lp):
             png = fl.from_fmp(s)
             if png: os.makedirs('assets/logos', exist_ok=True); open(lp, 'wb').write(png)
         inc = ia.fmp_get("income-statement", symbol=s, period="annual", limit=5)
-        if not isinstance(inc, list) or len(inc) < 3: print(s, ": keine Quartalsdaten"); continue
+        log[s] = (type(inc).__name__ + (":" + str(len(inc)) if isinstance(inc, list) else ""))
+        if not isinstance(inc, list) or len(inc) < 3: print(s, ": keine Daten"); continue
         inc = sorted(inc, key=lambda x: x.get("date", ""))[-5:]
         q = [{"d": x["date"], "p": x.get("period", ""), "y": str(x.get("fiscalYear") or x["date"][:4]),
               "rev": x.get("revenue"), "ni": x.get("netIncome")} for x in inc]
         if any(a["rev"] is None or a["ni"] is None for a in q): print(s, ": unvollstaendig"); continue
         cur[s] = {"q": q, "stand": datetime.date.today().isoformat()}; print(s, ": ok,", len(q), "Quartale")
     os.makedirs("data", exist_ok=True)
+    open("data/firmenkarten-log.json", "w").write(json.dumps(log, ensure_ascii=False))
     open(OUT, "w", encoding="utf-8").write(json.dumps(cur, ensure_ascii=False, indent=1))
 
 if __name__ == "__main__": main()
