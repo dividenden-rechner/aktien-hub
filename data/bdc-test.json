@@ -104,6 +104,14 @@
    "form": "10-Q",
    "eingereicht": "2026-08-06"
   },
+  "nav_calc": {
+   "wert": 18.3,
+   "stichtag": "2026-06-30",
+   "nettovermoegen": 5118000000,
+   "aktien": 279688633,
+   "aktien_stichtag": "2026-06-30",
+   "eingereicht": "2026-08-06"
+  },
   "dps_teilweise": {
    "2023-09-30": 0.75,
    "2024-03-31": 0.75,
@@ -146,6 +154,14 @@
    "form": "10-Q",
    "eingereicht": "2026-10-29"
   },
+  "nav_calc": {
+   "wert": -10.96,
+   "stichtag": "2023-06-30",
+   "nettovermoegen": -1585510000,
+   "aktien": 144641000,
+   "aktien_stichtag": "2023-06-30",
+   "eingereicht": "2023-08-03"
+  },
   "dps_teilweise": {
    "2022-09-30": 0.5
   },
@@ -164,6 +180,14 @@
    "form": "DEF 14A",
    "eingereicht": "2026-04-09"
   },
+  "nav_calc": {
+   "wert": -16.24,
+   "stichtag": "2026-06-30",
+   "nettovermoegen": -1548554000,
+   "aktien": 95343139,
+   "aktien_stichtag": "2026-06-30",
+   "eingereicht": "2026-08-04"
+  },
   "status": "nur NAV"
  },
  {
@@ -178,6 +202,14 @@
    "stichtag": "2026-06-30",
    "form": "10-Q",
    "eingereicht": "2026-08-06"
+  },
+  "nav_calc": {
+   "wert": 19.81,
+   "stichtag": "2026-03-31",
+   "nettovermoegen": 1690467000,
+   "aktien": 85335813,
+   "aktien_stichtag": "2026-03-31",
+   "eingereicht": "2026-05-07"
   },
   "dps_teilweise": {
    "2022-03-31": 0.48,
@@ -198,6 +230,14 @@
    "form": "10-K",
    "eingereicht": "2026-08-20"
   },
+  "nav_calc": {
+   "wert": 5.71,
+   "stichtag": "2026-06-30",
+   "nettovermoegen": 2928846000,
+   "aktien": 512746556,
+   "aktien_stichtag": "2026-06-30",
+   "eingereicht": "2026-08-20"
+  },
   "status": "nur NAV"
  },
  {
@@ -211,6 +251,14 @@
    "wert": 15.7,
    "stichtag": "2026-06-30",
    "form": "10-Q",
+   "eingereicht": "2026-08-05"
+  },
+  "nav_calc": {
+   "wert": 15.7,
+   "stichtag": "2026-06-30",
+   "nettovermoegen": 1383055000,
+   "aktien": 88086000,
+   "aktien_stichtag": "2026-06-30",
    "eingereicht": "2026-08-05"
   },
   "status": "nur NAV"
@@ -227,6 +275,14 @@
    "stichtag": "2026-06-30",
    "form": "424B3",
    "eingereicht": "2026-08-07"
+  },
+  "nav_calc": {
+   "wert": -165.36,
+   "stichtag": "2012-12-31",
+   "nettovermoegen": -628089000,
+   "aktien": 3798393,
+   "aktien_stichtag": "2012-12-31",
+   "eingereicht": "2013-02-07"
   },
   "dps": {
    "quartale": {
@@ -253,6 +309,14 @@
    "form": "10-Q",
    "eingereicht": "2026-08-06"
   },
+  "nav_calc": {
+   "wert": 12.17,
+   "stichtag": "2026-03-31",
+   "nettovermoegen": 1369989000,
+   "aktien": 112569067,
+   "aktien_stichtag": "2026-03-31",
+   "eingereicht": "2026-05-07"
+  },
   "status": "nur NAV"
  },
  {
@@ -266,6 +330,14 @@
    "wert": 9052000,
    "stichtag": "2026-06-30",
    "form": "10-Q",
+   "eingereicht": "2026-08-06"
+  },
+  "nav_calc": {
+   "wert": 13.37,
+   "stichtag": "2026-06-30",
+   "nettovermoegen": 1101320000,
+   "aktien": 82372628,
+   "aktien_stichtag": "2026-06-30",
    "eingereicht": "2026-08-06"
   },
   "status": "nur NAV"
@@ -282,6 +354,14 @@
    "stichtag": "2026-06-30",
    "form": "10-Q",
    "eingereicht": "2026-08-05"
+  },
+  "nav_calc": {
+   "wert": 13.27,
+   "stichtag": "2026-03-31",
+   "nettovermoegen": 1166255000,
+   "aktien": 87903645,
+   "aktien_stichtag": "2026-03-31",
+   "eingereicht": "2026-05-06"
   },
   "dps_teilweise": {
    "2026-03-31": 11.76
@@ -322,6 +402,14 @@
    "form": "10-Q",
    "eingereicht": "2026-08-05"
   },
+  "nav_calc": {
+   "wert": 10.94,
+   "stichtag": "2026-06-30",
+   "nettovermoegen": 1145886000,
+   "aktien": 104706884,
+   "aktien_stichtag": "2026-06-30",
+   "eingereicht": "2026-08-05"
+  },
   "dps_teilweise": {
    "2025-06-30": 0.31,
    "2025-09-30": 0.31,
@@ -343,6 +431,14 @@
    "form": "10-Q",
    "eingereicht": "2026-08-10"
   },
+  "nav_calc": {
+   "wert": 16.86,
+   "stichtag": "2026-03-31",
+   "nettovermoegen": 1093555000,
+   "aktien": 64868507,
+   "aktien_stichtag": "2026-03-31",
+   "eingereicht": "2026-05-11"
+  },
   "status": "nur NAV"
  },
  {
@@ -356,6 +452,14 @@
    "wert": 15.61,
    "stichtag": "2026-06-30",
    "form": "10-Q",
+   "eingereicht": "2026-08-06"
+  },
+  "nav_calc": {
+   "wert": 15.61,
+   "stichtag": "2026-06-30",
+   "nettovermoegen": 1079748000,
+   "aktien": 69160814,
+   "aktien_stichtag": "2026-06-30",
    "eingereicht": "2026-08-06"
   },
   "dps_teilweise": {
@@ -379,6 +483,14 @@
    "form": "10-Q",
    "eingereicht": "2026-08-10"
   },
+  "nav_calc": {
+   "wert": 10.47,
+   "stichtag": "2026-03-31",
+   "nettovermoegen": 1038657000,
+   "aktien": 99217896,
+   "aktien_stichtag": "2026-03-31",
+   "eingereicht": "2026-05-07"
+  },
   "status": "nur NAV"
  },
  {
@@ -394,6 +506,14 @@
    "form": "10-Q",
    "eingereicht": "2026-08-04"
   },
+  "nav_calc": {
+   "wert": 18.0,
+   "stichtag": "2026-06-30",
+   "nettovermoegen": 982107000,
+   "aktien": 54554634,
+   "aktien_stichtag": "2026-06-30",
+   "eingereicht": "2026-08-04"
+  },
   "status": "nur NAV"
  },
  {
@@ -407,6 +527,14 @@
    "wert": 19.46,
    "stichtag": "2026-06-30",
    "form": "10-Q",
+   "eingereicht": "2026-08-06"
+  },
+  "nav_calc": {
+   "wert": 19.46,
+   "stichtag": "2026-06-30",
+   "nettovermoegen": 738478000,
+   "aktien": 37954364,
+   "aktien_stichtag": "2026-06-30",
    "eingereicht": "2026-08-06"
   },
   "dps_teilweise": {
@@ -458,12 +586,20 @@
   "sheet_nav": 13.53,
   "sheet_dps": 0.96,
   "cik": 1321741,
-  "name": "GLADSTONE INVESTMENT CORPORATION\\DE",
+  "name": "GLADSTONE INVESTMENT CORPORATIONDE",
   "nav": {
    "tag": "us-gaap:NetAssetValuePerShare",
    "wert": 16.24,
    "stichtag": "2026-06-30",
    "form": "10-Q",
+   "eingereicht": "2026-08-06"
+  },
+  "nav_calc": {
+   "wert": 16.24,
+   "stichtag": "2026-06-30",
+   "nettovermoegen": 646813000,
+   "aktien": 39821967,
+   "aktien_stichtag": "2026-06-30",
    "eingereicht": "2026-08-06"
   },
   "dps_teilweise": {
@@ -487,6 +623,14 @@
    "form": "10-Q",
    "eingereicht": "2026-08-10"
   },
+  "nav_calc": {
+   "wert": 18.27,
+   "stichtag": "2026-03-31",
+   "nettovermoegen": 674028000,
+   "aktien": 36897356,
+   "aktien_stichtag": "2026-03-31",
+   "eingereicht": "2026-05-13"
+  },
   "status": "nur NAV"
  },
  {
@@ -500,6 +644,14 @@
    "wert": 0.24,
    "stichtag": "2026-06-30",
    "form": "10-Q",
+   "eingereicht": "2026-08-06"
+  },
+  "nav_calc": {
+   "wert": 13.57,
+   "stichtag": "2026-06-30",
+   "nettovermoegen": 667776000,
+   "aktien": 49202704,
+   "aktien_stichtag": "2026-06-30",
    "eingereicht": "2026-08-06"
   },
   "dps": {
@@ -527,6 +679,14 @@
    "form": "10-Q",
    "eingereicht": "2026-08-06"
   },
+  "nav_calc": {
+   "wert": 6.58,
+   "stichtag": "2026-06-30",
+   "nettovermoegen": 552006827,
+   "aktien": 83902775,
+   "aktien_stichtag": "2026-06-30",
+   "eingereicht": "2026-08-06"
+  },
   "dps_teilweise": {
    "2023-03-31": 0.32,
    "2024-03-31": 0.34,
@@ -546,6 +706,14 @@
    "wert": 21.5,
    "stichtag": "2026-06-30",
    "form": "10-Q",
+   "eingereicht": "2026-08-04"
+  },
+  "nav_calc": {
+   "wert": 21.5,
+   "stichtag": "2026-06-30",
+   "nettovermoegen": 485717000,
+   "aktien": 22593069,
+   "aktien_stichtag": "2026-06-30",
    "eingereicht": "2026-08-04"
   },
   "dps_teilweise": {
@@ -569,6 +737,14 @@
    "form": "10-Q",
    "eingereicht": "2026-08-10"
   },
+  "nav_calc": {
+   "wert": 7.11,
+   "stichtag": "2025-09-30",
+   "nettovermoegen": 463950000,
+   "aktien": 65296094,
+   "aktien_stichtag": "2025-09-30",
+   "eingereicht": "2026-01-23"
+  },
   "status": "nur NAV"
  },
  {
@@ -583,6 +759,14 @@
    "stichtag": "2026-06-30",
    "form": "10-Q",
    "eingereicht": "2026-08-05"
+  },
+  "nav_calc": {
+   "wert": 13.3,
+   "stichtag": "2026-03-31",
+   "nettovermoegen": 413782758,
+   "aktien": 31120814,
+   "aktien_stichtag": "2026-03-31",
+   "eingereicht": "2026-05-06"
   },
   "status": "nur NAV"
  },
@@ -599,6 +783,14 @@
    "form": "10-Q",
    "eingereicht": "2026-08-06"
   },
+  "nav_calc": {
+   "wert": 12127.85,
+   "stichtag": "2026-03-31",
+   "nettovermoegen": 438228000000,
+   "aktien": 36134037,
+   "aktien_stichtag": "2026-03-31",
+   "eingereicht": "2026-05-07"
+  },
   "status": "nur NAV"
  },
  {
@@ -612,6 +804,14 @@
    "wert": 22.15,
    "stichtag": "2026-08-31",
    "form": "10-Q",
+   "eingereicht": "2026-10-06"
+  },
+  "nav_calc": {
+   "wert": 22.15,
+   "stichtag": "2026-08-31",
+   "nettovermoegen": 352576823,
+   "aktien": 15915928,
+   "aktien_stichtag": "2026-08-31",
    "eingereicht": "2026-10-06"
   },
   "dps_teilweise": {
@@ -630,6 +830,14 @@
    "wert": 12.8,
    "stichtag": "2026-06-30",
    "form": "10-Q",
+   "eingereicht": "2026-08-10"
+  },
+  "nav_calc": {
+   "wert": 12.8,
+   "stichtag": "2026-06-30",
+   "nettovermoegen": 366957946,
+   "aktien": 28672911,
+   "aktien_stichtag": "2026-06-30",
    "eingereicht": "2026-08-10"
   },
   "dps_teilweise": {
@@ -653,6 +861,14 @@
    "form": "10-Q",
    "eingereicht": "2026-08-04"
   },
+  "nav_calc": {
+   "wert": 8.43,
+   "stichtag": "2024-12-31",
+   "nettovermoegen": 336183000,
+   "aktien": 39875847,
+   "aktien_stichtag": "2024-12-31",
+   "eingereicht": "2025-03-04"
+  },
   "dps_teilweise": {
    "2025-06-30": 0.33,
    "2025-09-30": 0.33,
@@ -673,6 +889,14 @@
    "stichtag": "2026-06-30",
    "form": "N-2/A",
    "eingereicht": "2026-08-24"
+  },
+  "nav_calc": {
+   "wert": 13.33,
+   "stichtag": "2026-03-31",
+   "nettovermoegen": 304184461,
+   "aktien": 22820590,
+   "aktien_stichtag": "2026-03-31",
+   "eingereicht": "2026-05-14"
   },
   "status": "nur NAV"
  },
@@ -720,6 +944,14 @@
    "form": "10-Q",
    "eingereicht": "2026-08-10"
   },
+  "nav_calc": {
+   "wert": 11.77,
+   "stichtag": "2026-06-30",
+   "nettovermoegen": 252812000,
+   "aktien": 21476471,
+   "aktien_stichtag": "2026-06-30",
+   "eingereicht": "2026-08-10"
+  },
   "dps_teilweise": {
    "2025-06-30": 0.39,
    "2025-09-30": 0.39,
@@ -747,6 +979,14 @@
    "form": "10-Q",
    "eingereicht": "2026-08-10"
   },
+  "nav_calc": {
+   "wert": -1.95,
+   "stichtag": "2025-09-30",
+   "nettovermoegen": -158955146,
+   "aktien": 81669408,
+   "aktien_stichtag": "2025-09-30",
+   "eingereicht": "2025-11-07"
+  },
   "status": "nur NAV"
  },
  {
@@ -760,6 +1000,14 @@
    "wert": -0.53,
    "stichtag": "2026-06-30",
    "form": "10-Q",
+   "eingereicht": "2026-08-05"
+  },
+  "nav_calc": {
+   "wert": 7.95,
+   "stichtag": "2026-06-30",
+   "nettovermoegen": 110418000,
+   "aktien": 13889750,
+   "aktien_stichtag": "2026-06-30",
    "eingereicht": "2026-08-05"
   },
   "status": "nur NAV"
@@ -796,6 +1044,14 @@
    "form": "10-Q",
    "eingereicht": "2026-08-14"
   },
+  "nav_calc": {
+   "wert": 3.44,
+   "stichtag": "2026-06-30",
+   "nettovermoegen": 49691773,
+   "aktien": 14432472,
+   "aktien_stichtag": "2026-06-30",
+   "eingereicht": "2026-08-14"
+  },
   "dps_teilweise": {
    "2025-06-30": 0.12,
    "2025-09-30": 0.14,
@@ -815,6 +1071,14 @@
    "wert": -0.24,
    "stichtag": "2026-06-30",
    "form": "10-Q",
+   "eingereicht": "2026-08-05"
+  },
+  "nav_calc": {
+   "wert": 17.33,
+   "stichtag": "2026-06-30",
+   "nettovermoegen": 51459887,
+   "aktien": 2969814,
+   "aktien_stichtag": "2026-06-30",
    "eingereicht": "2026-08-05"
   },
   "status": "nur NAV"
