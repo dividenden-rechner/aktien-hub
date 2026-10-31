@@ -45,7 +45,7 @@ def kachel_hub():
     for i, (x, val) in enumerate(zip(cf, v)):
         h = max(6, round(58 * val / mx)); xx = 8 + i * 36; last = i == 4
         s += f'<rect x="{xx}" y="{82-h}" width="26" height="{h}" rx="2" fill="{"#2f6fdb" if last else "#cddcf8"}"/>'
-        s += f'<text x="{xx+13}" y="93" font-size="7.5" text-anchor="middle" fill="#5d6b78"{" font-weight=\"700\"" if last else ""}>{x["date"][:4]}</text>'
+        s += f'<text x="{xx+13}" y="93" font-size="7.5" text-anchor="middle" fill="#5d6b78"{" font-weight=\"700\"" if last else ""}>{x.get("fiscalYear") or x.get("calendarYear") or x["date"][:4]}</text>'
     return s + '<line x1="4" x2="196" y1="82" y2="82" stroke="#dfe5ea"/>'
 
 
