@@ -3,12 +3,13 @@
 <!-- uebersicht-start -->
 ## Übersicht (wird automatisch erstellt, neueste zuerst)
 
-### Zur Freigabe: Entwürfe (5)
+### Zur Freigabe: Entwürfe (6)
 
 Datei anklicken, dann Stift-Symbol: Zeile `draft: true` löschen und speichern, dann geht der Artikel online.
 
 | Datum | Titel | Datei |
 |---|---|---|
+| 31.10.2026 15:40 | Big Oil im Quartalsvergleich: Wer zahlt aus, wer tilgt, wer investiert? | [79738968_2026-10-31/8459_1540-big-oil-kapitalverwendung-q3-2026.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/79738968_2026-10-31/8459_1540-big-oil-kapitalverwendung-q3-2026.md) |
 | 29.10.2026 23:27 | Comfort Systems USA: Umsatz steigt im Q3 2026 auf 3,8 Milliarden US-Dollar | [79738970_2026-10-29/7672_2327-comfort-systems-usa-q3-2026-zahlen.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/79738970_2026-10-29/7672_2327-comfort-systems-usa-q3-2026-zahlen.md) |
 | 29.10.2026 23:26 | Oracle Corporation: Langfristiger Ausblick und Finanzziele bis FY30 | [79738970_2026-10-29/7673_2326-oracle-ausblick-investor-day-2026.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/79738970_2026-10-29/7673_2326-oracle-ausblick-investor-day-2026.md) |
 | 29.10.2026 23:26 | Old Dominion: 1,65 US-Dollar Gewinn je Aktie im Q3 2026 | [79738970_2026-10-29/7673_2326-old-dominion-q3-2026-zahlen.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/79738970_2026-10-29/7673_2326-old-dominion-q3-2026-zahlen.md) |
