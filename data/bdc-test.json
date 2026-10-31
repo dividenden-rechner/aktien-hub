@@ -1,0 +1,822 @@
+[
+ {
+  "ticker": "ARCC",
+  "sheet_nav": 20.01,
+  "sheet_dps": 1.92,
+  "cik": 1287750,
+  "name": "ARES CAPITAL CORP",
+  "nav": {
+   "tag": "us-gaap:NetAssetValuePerShare",
+   "wert": 19.31,
+   "stichtag": "2026-09-30",
+   "form": "10-Q",
+   "eingereicht": "2026-10-27"
+  },
+  "dps": {
+   "quartale": {
+    "2025-12-31": 0.48,
+    "2026-03-31": 0.48,
+    "2026-06-30": 0.48,
+    "2026-09-30": 0.48
+   },
+   "summe_4q": 1.92,
+   "tag": "us-gaap:CommonStockDividendsPerShareDeclared"
+  },
+  "status": "ok"
+ },
+ {
+  "ticker": "OBDC",
+  "sheet_nav": 14.89,
+  "sheet_dps": 1.48,
+  "cik": 1655888,
+  "name": "Blue Owl Capital Corp",
+  "nav": {
+   "tag": "us-gaap:InvestmentCompanyNetAssetValuePerSharePeriodIncreaseDecrease",
+   "wert": -0.55,
+   "stichtag": "2026-06-30",
+   "form": "10-Q",
+   "eingereicht": "2026-08-05"
+  },
+  "dps_teilweise": {
+   "2023-09-30": 0.33,
+   "2024-03-31": 0.37,
+   "2024-06-30": 0.37,
+   "2024-09-30": 0.37
+  },
+  "status": "nur NAV"
+ },
+ {
+  "ticker": "BXSL",
+  "sheet_nav": 27.33,
+  "sheet_dps": 3.08,
+  "cik": 1736035,
+  "name": "Blackstone Secured Lending Fund",
+  "nav": {
+   "tag": "us-gaap:InvestmentCompanyNetAssetValuePerSharePeriodIncreaseDecrease",
+   "wert": -1.39,
+   "stichtag": "2026-06-30",
+   "form": "10-Q",
+   "eingereicht": "2026-08-06"
+  },
+  "dps": {
+   "quartale": {
+    "2025-09-30": 0.77,
+    "2025-12-31": 0.77,
+    "2026-03-31": 0.77,
+    "2026-06-30": 0.77
+   },
+   "summe_4q": 3.08,
+   "tag": "us-gaap:CommonStockDividendsPerShareDeclared"
+  },
+  "status": "ok"
+ },
+ {
+  "ticker": "MAIN",
+  "sheet_nav": 33.546,
+  "sheet_dps": 3.06,
+  "cik": 1396440,
+  "name": "Main Street Capital CORP",
+  "nav": {
+   "tag": "us-gaap:NetAssetValuePerShare",
+   "wert": 33.92,
+   "stichtag": "2026-06-30",
+   "form": "10-Q",
+   "eingereicht": "2026-08-07"
+  },
+  "dps_teilweise": {
+   "2025-06-30": 1.05,
+   "2025-09-30": 1.065,
+   "2026-03-31": 1.08,
+   "2026-06-30": 1.08
+  },
+  "status": "nur NAV"
+ },
+ {
+  "ticker": "FSK",
+  "sheet_nav": 21.99,
+  "sheet_dps": 2.56,
+  "cik": 1422183,
+  "name": "FS KKR Capital Corp",
+  "nav": {
+   "tag": "us-gaap:NetAssetValuePerShare",
+   "wert": 18.3,
+   "stichtag": "2026-06-30",
+   "form": "10-Q",
+   "eingereicht": "2026-08-06"
+  },
+  "dps_teilweise": {
+   "2023-09-30": 0.75,
+   "2024-03-31": 0.75,
+   "2025-03-31": 0.7,
+   "2026-03-31": 0.48
+  },
+  "status": "nur NAV"
+ },
+ {
+  "ticker": "GBDC",
+  "sheet_nav": 15.0,
+  "sheet_dps": 1.56,
+  "cik": 1476765,
+  "name": "GOLUB CAPITAL BDC, Inc.",
+  "nav": {
+   "tag": "us-gaap:NetAssetValuePerShare",
+   "wert": 14.25,
+   "stichtag": "2026-06-30",
+   "form": "10-Q",
+   "eingereicht": "2026-08-03"
+  },
+  "dps_teilweise": {
+   "2025-06-30": 0.39,
+   "2025-12-31": 0.39,
+   "2026-03-31": 0.33,
+   "2026-06-30": 0.33
+  },
+  "status": "nur NAV"
+ },
+ {
+  "ticker": "HTGC",
+  "sheet_nav": 11.9,
+  "sheet_dps": 1.88,
+  "cik": 1280784,
+  "name": "Hercules Capital, Inc.",
+  "nav": {
+   "tag": "us-gaap:NetAssetValuePerShare",
+   "wert": 12.26,
+   "stichtag": "2026-09-30",
+   "form": "10-Q",
+   "eingereicht": "2026-10-29"
+  },
+  "dps_teilweise": {
+   "2022-09-30": 0.5
+  },
+  "status": "nur NAV"
+ },
+ {
+  "ticker": "TSLX",
+  "sheet_nav": 17.14,
+  "sheet_dps": 1.84,
+  "cik": 1508655,
+  "name": "Sixth Street Specialty Lending, Inc.",
+  "nav": {
+   "tag": "us-gaap:NetAssetValuePerShare",
+   "wert": 16.98,
+   "stichtag": "2026-12-31",
+   "form": "DEF 14A",
+   "eingereicht": "2026-04-09"
+  },
+  "status": "nur NAV"
+ },
+ {
+  "ticker": "MSDL",
+  "sheet_nav": 20.41,
+  "sheet_dps": 2.0,
+  "cik": 1782524,
+  "name": "Morgan Stanley Direct Lending Fund",
+  "nav": {
+   "tag": "us-gaap:InvestmentCompanyNetAssetValuePerSharePeriodIncreaseDecrease",
+   "wert": -0.76,
+   "stichtag": "2026-06-30",
+   "form": "10-Q",
+   "eingereicht": "2026-08-06"
+  },
+  "dps_teilweise": {
+   "2022-03-31": 0.48,
+   "2023-03-31": 0.5
+  },
+  "status": "nur NAV"
+ },
+ {
+  "ticker": "PSEC",
+  "sheet_nav": 6.45,
+  "sheet_dps": 0.54,
+  "cik": 1287032,
+  "name": "PROSPECT CAPITAL CORP",
+  "nav": {
+   "tag": "us-gaap:NetAssetValuePerShare",
+   "wert": 5.71,
+   "stichtag": "2026-06-30",
+   "form": "10-K",
+   "eingereicht": "2026-08-20"
+  },
+  "status": "nur NAV"
+ },
+ {
+  "ticker": "OCSL",
+  "sheet_nav": 16.64,
+  "sheet_dps": 1.6,
+  "cik": 1414932,
+  "name": "Oaktree Specialty Lending Corp",
+  "nav": {
+   "tag": "us-gaap:NetAssetValuePerShare",
+   "wert": 15.7,
+   "stichtag": "2026-06-30",
+   "form": "10-Q",
+   "eingereicht": "2026-08-05"
+  },
+  "status": "nur NAV"
+ },
+ {
+  "ticker": "SFW",
+  "sheet_nav": 16.69,
+  "sheet_dps": 2.32,
+  "cik": 17313,
+  "name": "CAPITAL SOUTHWEST CORP",
+  "nav": {
+   "tag": "us-gaap:NetAssetValuePerShare",
+   "wert": 16.61,
+   "stichtag": "2026-06-30",
+   "form": "424B3",
+   "eingereicht": "2026-08-07"
+  },
+  "dps": {
+   "quartale": {
+    "2024-09-30": 0.64,
+    "2024-12-31": 0.63,
+    "2025-03-31": 0.64,
+    "2025-06-30": 0.64
+   },
+   "summe_4q": 2.55,
+   "tag": "us-gaap:CommonStockDividendsPerShareDeclared"
+  },
+  "status": "ok"
+ },
+ {
+  "ticker": "GSBD",
+  "sheet_nav": 12.75,
+  "sheet_dps": 1.28,
+  "cik": 1572694,
+  "name": "Goldman Sachs BDC, Inc.",
+  "nav": {
+   "tag": "us-gaap:InvestmentCompanyNetAssetValuePerSharePeriodIncreaseDecrease",
+   "wert": -0.58,
+   "stichtag": "2026-06-30",
+   "form": "10-Q",
+   "eingereicht": "2026-08-06"
+  },
+  "status": "nur NAV"
+ },
+ {
+  "ticker": "MFIC",
+  "sheet_nav": 14.66,
+  "sheet_dps": 1.52,
+  "cik": 1278752,
+  "name": "MidCap Financial Investment Corp",
+  "nav": {
+   "tag": "us-gaap:FairValueInvestmentsEntitiesThatCalculateNetAssetValuePerShareUnfundedCommittments",
+   "wert": 9052000,
+   "stichtag": "2026-06-30",
+   "form": "10-Q",
+   "eingereicht": "2026-08-06"
+  },
+  "status": "nur NAV"
+ },
+ {
+  "ticker": "TRIN",
+  "sheet_nav": 13.27,
+  "sheet_dps": 2.04,
+  "cik": 1786108,
+  "name": "Trinity Capital Inc.",
+  "nav": {
+   "tag": "us-gaap:InvestmentCompanyNetAssetValuePerSharePeriodIncreaseDecrease",
+   "wert": 0.05,
+   "stichtag": "2026-06-30",
+   "form": "10-Q",
+   "eingereicht": "2026-08-05"
+  },
+  "dps_teilweise": {
+   "2026-03-31": 11.76
+  },
+  "status": "nur NAV"
+ },
+ {
+  "ticker": "NMFC",
+  "sheet_nav": 12.06,
+  "sheet_dps": 1.28,
+  "cik": 1496099,
+  "name": "New Mountain Finance Corp",
+  "nav": {
+   "tag": "us-gaap:NetAssetValuePerShare",
+   "wert": 10.89,
+   "stichtag": "2026-06-30",
+   "form": "10-Q",
+   "eingereicht": "2026-08-03"
+  },
+  "dps_teilweise": {
+   "2025-06-30": 0.32,
+   "2025-09-30": 0.32,
+   "2026-03-31": 0.32,
+   "2026-06-30": 0.25
+  },
+  "status": "nur NAV"
+ },
+ {
+  "ticker": "BBDC",
+  "sheet_nav": 11.1,
+  "sheet_dps": 1.04,
+  "cik": 1379785,
+  "name": "Barings BDC, Inc.",
+  "nav": {
+   "tag": "us-gaap:InvestmentCompanyNetAssetValuePerSharePeriodIncreaseDecrease",
+   "wert": 0.36,
+   "stichtag": "2026-06-30",
+   "form": "10-Q",
+   "eingereicht": "2026-08-05"
+  },
+  "dps_teilweise": {
+   "2025-06-30": 0.31,
+   "2025-09-30": 0.31,
+   "2026-03-31": 0.26,
+   "2026-06-30": 0.26
+  },
+  "status": "nur NAV"
+ },
+ {
+  "ticker": "BCSF",
+  "sheet_nav": 17.56,
+  "sheet_dps": 1.8,
+  "cik": 1655050,
+  "name": "Bain Capital Specialty Finance, Inc.",
+  "nav": {
+   "tag": "us-gaap:NetAssetValuePerShare",
+   "wert": 16.65,
+   "stichtag": "2026-06-30",
+   "form": "10-Q",
+   "eingereicht": "2026-08-10"
+  },
+  "status": "nur NAV"
+ },
+ {
+  "ticker": "CGBD",
+  "sheet_nav": 16.36,
+  "sheet_dps": 1.6,
+  "cik": 1544206,
+  "name": "Carlyle Secured Lending, Inc.",
+  "nav": {
+   "tag": "us-gaap:NetAssetValuePerShare",
+   "wert": 15.61,
+   "stichtag": "2026-06-30",
+   "form": "10-Q",
+   "eingereicht": "2026-08-06"
+  },
+  "dps_teilweise": {
+   "2024-03-31": 0.438,
+   "2024-06-30": 0.438,
+   "2024-09-30": 0.438,
+   "2025-03-31": 0.413
+  },
+  "status": "nur NAV"
+ },
+ {
+  "ticker": "PFLT",
+  "sheet_nav": 10.96,
+  "sheet_dps": 1.24,
+  "cik": 1504619,
+  "name": "PennantPark Floating Rate Capital Ltd.",
+  "nav": {
+   "tag": "us-gaap:InvestmentCompanyNetAssetValuePerSharePeriodIncreaseDecrease",
+   "wert": 0,
+   "stichtag": "2026-06-30",
+   "form": "10-Q",
+   "eingereicht": "2026-08-10"
+  },
+  "status": "nur NAV"
+ },
+ {
+  "ticker": "SLRC",
+  "sheet_nav": 18.21,
+  "sheet_dps": 1.64,
+  "cik": 1418076,
+  "name": "SLR Investment Corp.",
+  "nav": {
+   "tag": "us-gaap:NetAssetValuePerShare",
+   "wert": 18,
+   "stichtag": "2026-06-30",
+   "form": "10-Q",
+   "eingereicht": "2026-08-04"
+  },
+  "status": "nur NAV"
+ },
+ {
+  "ticker": "FDUS",
+  "sheet_nav": 19.56,
+  "sheet_dps": 1.72,
+  "cik": 1513363,
+  "name": "FIDUS INVESTMENT Corp",
+  "nav": {
+   "tag": "us-gaap:NetAssetValuePerShare",
+   "wert": 19.46,
+   "stichtag": "2026-06-30",
+   "form": "10-Q",
+   "eingereicht": "2026-08-06"
+  },
+  "dps_teilweise": {
+   "2025-06-30": 0.54,
+   "2025-09-30": 0.57,
+   "2026-03-31": 0.52,
+   "2026-06-30": 0.62
+  },
+  "status": "nur NAV"
+ },
+ {
+  "ticker": "NCDL",
+  "sheet_nav": 17.85,
+  "sheet_dps": 1.8,
+  "cik": 1737924,
+  "name": "Nuveen Churchill Direct Lending Corp.",
+  "nav": {
+   "tag": "us-gaap:InvestmentCompanyNetAssetValuePerSharePeriodIncreaseDecrease",
+   "wert": 0.25,
+   "stichtag": "2026-06-30",
+   "form": "10-Q",
+   "eingereicht": "2026-08-06"
+  },
+  "status": "nur NAV"
+ },
+ {
+  "ticker": "MSIF",
+  "sheet_nav": 15.33,
+  "sheet_dps": 1.4,
+  "cik": 1535778,
+  "name": "MSC INCOME FUND, INC.",
+  "nav": {
+   "tag": "us-gaap:NetAssetValuePerShare",
+   "wert": 16.51,
+   "stichtag": "2026-06-30",
+   "form": "10-Q",
+   "eingereicht": "2026-08-07"
+  },
+  "dps_teilweise": {
+   "2025-06-30": 0.36,
+   "2025-09-30": 0.36,
+   "2026-03-31": 0.36,
+   "2026-06-30": 0.36
+  },
+  "status": "nur NAV"
+ },
+ {
+  "ticker": "GAIN",
+  "sheet_nav": 13.53,
+  "sheet_dps": 0.96,
+  "cik": 1321741,
+  "name": "GLADSTONE INVESTMENT CORPORATION\\DE",
+  "nav": {
+   "tag": "us-gaap:NetAssetValuePerShare",
+   "wert": 16.24,
+   "stichtag": "2026-06-30",
+   "form": "10-Q",
+   "eingereicht": "2026-08-06"
+  },
+  "dps_teilweise": {
+   "2023-06-30": 0.36,
+   "2024-06-30": 0.24,
+   "2025-06-30": 0.78,
+   "2026-06-30": 0.24
+  },
+  "status": "nur NAV"
+ },
+ {
+  "ticker": "CCAP",
+  "sheet_nav": 19.55,
+  "sheet_dps": 1.68,
+  "cik": 1633336,
+  "name": "Crescent Capital BDC, Inc.",
+  "nav": {
+   "tag": "us-gaap:InvestmentCompanyNetAssetValuePerSharePeriodIncreaseDecrease",
+   "wert": -1.28,
+   "stichtag": "2026-06-30",
+   "form": "10-Q",
+   "eingereicht": "2026-08-10"
+  },
+  "status": "nur NAV"
+ },
+ {
+  "ticker": "CION",
+  "sheet_nav": 8.71,
+  "sheet_dps": 1.0,
+  "cik": 1534254,
+  "name": "CION Investment Corp",
+  "nav": {
+   "tag": "us-gaap:InvestmentCompanyNetAssetValuePerSharePeriodIncreaseDecrease",
+   "wert": 0.24,
+   "stichtag": "2026-06-30",
+   "form": "10-Q",
+   "eingereicht": "2026-08-06"
+  },
+  "dps": {
+   "quartale": {
+    "2025-09-30": 0.36,
+    "2025-12-31": 0.36,
+    "2026-03-31": 0.3,
+    "2026-06-30": 0.3
+   },
+   "summe_4q": 1.32,
+   "tag": "us-gaap:CommonStockDividendsPerShareDeclared"
+  },
+  "status": "ok"
+ },
+ {
+  "ticker": "TCPC",
+  "sheet_nav": 8.71,
+  "sheet_dps": 1.0,
+  "cik": 1370755,
+  "name": "BlackRock TCP Capital Corp.",
+  "nav": {
+   "tag": "us-gaap:NetAssetValuePerShare",
+   "wert": 6.58,
+   "stichtag": "2026-06-30",
+   "form": "10-Q",
+   "eingereicht": "2026-08-06"
+  },
+  "dps_teilweise": {
+   "2023-03-31": 0.32,
+   "2024-03-31": 0.34,
+   "2025-03-31": 0.29,
+   "2026-03-31": 0.17
+  },
+  "status": "nur NAV"
+ },
+ {
+  "ticker": "GLAD",
+  "sheet_nav": 21.34,
+  "sheet_dps": 1.98,
+  "cik": 1143513,
+  "name": "GLADSTONE CAPITAL CORP",
+  "nav": {
+   "tag": "us-gaap:NetAssetValuePerShare",
+   "wert": 21.5,
+   "stichtag": "2026-06-30",
+   "form": "10-Q",
+   "eingereicht": "2026-08-04"
+  },
+  "dps_teilweise": {
+   "2022-12-31": 0.21,
+   "2023-12-31": 0.2475,
+   "2024-12-31": 0.895,
+   "2025-12-31": 0.45
+  },
+  "status": "nur NAV"
+ },
+ {
+  "ticker": "PNNT",
+  "sheet_nav": 7.36,
+  "sheet_dps": 0.96,
+  "cik": 1383414,
+  "name": "PENNANTPARK INVESTMENT CORP",
+  "nav": {
+   "tag": "us-gaap:InvestmentCompanyNetAssetValuePerSharePeriodIncreaseDecrease",
+   "wert": 0.17,
+   "stichtag": "2026-06-30",
+   "form": "10-Q",
+   "eingereicht": "2026-08-10"
+  },
+  "status": "nur NAV"
+ },
+ {
+  "ticker": "PSBD",
+  "sheet_nav": 15.39,
+  "sheet_dps": 1.68,
+  "cik": 1794776,
+  "name": "Palmer Square Capital BDC Inc.",
+  "nav": {
+   "tag": "us-gaap:InvestmentCompanyNetAssetValuePerSharePeriodIncreaseDecrease",
+   "wert": -0.76,
+   "stichtag": "2026-06-30",
+   "form": "10-Q",
+   "eingereicht": "2026-08-05"
+  },
+  "status": "nur NAV"
+ },
+ {
+  "ticker": "RWAY",
+  "sheet_nav": 13.55,
+  "sheet_dps": 1.32,
+  "cik": 1653384,
+  "name": "Runway Growth Finance Corp.",
+  "nav": {
+   "tag": "us-gaap:NetAssetValuePerShare",
+   "wert": 11.91,
+   "stichtag": "2026-06-30",
+   "form": "10-Q",
+   "eingereicht": "2026-08-06"
+  },
+  "status": "nur NAV"
+ },
+ {
+  "ticker": "SAR",
+  "sheet_nav": 25.61,
+  "sheet_dps": 3.0,
+  "cik": 1377936,
+  "name": "SARATOGA INVESTMENT CORP.",
+  "nav": {
+   "tag": "us-gaap:NetAssetValuePerShare",
+   "wert": 22.15,
+   "stichtag": "2026-08-31",
+   "form": "10-Q",
+   "eingereicht": "2026-10-06"
+  },
+  "dps_teilweise": {
+   "2026-05-31": 0.75
+  },
+  "status": "nur NAV"
+ },
+ {
+  "ticker": "SCM",
+  "sheet_nav": 13.21,
+  "sheet_dps": 1.6,
+  "cik": 1551901,
+  "name": "Stellus Capital Investment Corp",
+  "nav": {
+   "tag": "us-gaap:NetAssetValuePerShare",
+   "wert": 12.8,
+   "stichtag": "2026-06-30",
+   "form": "10-Q",
+   "eingereicht": "2026-08-10"
+  },
+  "dps_teilweise": {
+   "2025-06-30": 0.4,
+   "2025-09-30": 0.4,
+   "2026-03-31": 0.34,
+   "2026-06-30": 0.34
+  },
+  "status": "nur NAV"
+ },
+ {
+  "ticker": "HRZN",
+  "sheet_nav": 7.12,
+  "sheet_dps": 1.32,
+  "cik": 1487428,
+  "name": "Horizon Technology Finance Corp",
+  "nav": {
+   "tag": "us-gaap:InvestmentCompanyNetAssetValuePerSharePeriodIncreaseDecrease",
+   "wert": -0.61,
+   "stichtag": "2026-06-30",
+   "form": "10-Q",
+   "eingereicht": "2026-08-04"
+  },
+  "dps_teilweise": {
+   "2025-06-30": 0.33,
+   "2025-09-30": 0.33,
+   "2026-03-31": 0.18,
+   "2026-06-30": 0.27
+  },
+  "status": "nur NAV"
+ },
+ {
+  "ticker": "LIEN",
+  "sheet_nav": 13.23,
+  "sheet_dps": 1.36,
+  "cik": 1843162,
+  "name": "Chicago Atlantic BDC, Inc.",
+  "nav": {
+   "tag": "us-gaap:NetAssetValuePerShare",
+   "wert": 13.26,
+   "stichtag": "2026-06-30",
+   "form": "N-2/A",
+   "eingereicht": "2026-08-24"
+  },
+  "status": "nur NAV"
+ },
+ {
+  "ticker": "SSSS",
+  "sheet_nav": 9.23,
+  "sheet_dps": 1.12,
+  "status": "kein CIK zum Ticker"
+ },
+ {
+  "ticker": "TPVG",
+  "sheet_nav": 8.79,
+  "sheet_dps": 0.92,
+  "cik": 1580345,
+  "name": "TriplePoint Venture Growth BDC Corp.",
+  "nav": {
+   "tag": "us-gaap:InvestmentCompanyNetAssetValuePerSharePeriodIncreaseDecrease",
+   "wert": 0.41,
+   "stichtag": "2026-06-30",
+   "form": "10-Q",
+   "eingereicht": "2026-08-05"
+  },
+  "dps": {
+   "quartale": {
+    "2023-09-30": 400,
+    "2023-12-31": 400,
+    "2024-03-31": 400,
+    "2024-06-30": 400
+   },
+   "summe_4q": 1600,
+   "tag": "us-gaap:CommonStockDividendsPerShareDeclared"
+  },
+  "status": "ok"
+ },
+ {
+  "ticker": "WHF",
+  "sheet_nav": 11.82,
+  "sheet_dps": 1.54,
+  "cik": 1552198,
+  "name": "WhiteHorse Finance, Inc.",
+  "nav": {
+   "tag": "us-gaap:NetAssetValuePerShare",
+   "wert": 11.77,
+   "stichtag": "2026-06-30",
+   "form": "10-Q",
+   "eingereicht": "2026-08-10"
+  },
+  "dps_teilweise": {
+   "2025-06-30": 0.39,
+   "2025-09-30": 0.39,
+   "2026-03-31": 0.26,
+   "2026-06-30": 0.25
+  },
+  "status": "nur NAV"
+ },
+ {
+  "ticker": "MRCC",
+  "sheet_nav": 7.99,
+  "sheet_dps": 1.0,
+  "status": "kein CIK zum Ticker"
+ },
+ {
+  "ticker": "OXSQ",
+  "sheet_nav": 1.32,
+  "sheet_dps": 0.42,
+  "cik": 1259429,
+  "name": "Oxford Square Capital Corp.",
+  "nav": {
+   "tag": "us-gaap:NetAssetValuePerShare",
+   "wert": 1.29,
+   "stichtag": "2026-06-30",
+   "form": "10-Q",
+   "eingereicht": "2026-08-10"
+  },
+  "status": "nur NAV"
+ },
+ {
+  "ticker": "GECC",
+  "sheet_nav": 10.01,
+  "sheet_dps": 1.48,
+  "cik": 1675033,
+  "name": "Great Elm Capital Corp.",
+  "nav": {
+   "tag": "us-gaap:InvestmentCompanyNetAssetValuePerSharePeriodIncreaseDecrease",
+   "wert": -0.53,
+   "stichtag": "2026-06-30",
+   "form": "10-Q",
+   "eingereicht": "2026-08-05"
+  },
+  "status": "nur NAV"
+ },
+ {
+  "ticker": "OFS",
+  "sheet_nav": 10.17,
+  "sheet_dps": 1.36,
+  "cik": 1487918,
+  "name": "OFS Capital Corp",
+  "nav": {
+   "tag": "us-gaap:NetAssetValuePerShare",
+   "wert": 7.38,
+   "stichtag": "2026-09-30",
+   "form": "10-Q",
+   "eingereicht": "2026-10-30"
+  },
+  "dps_teilweise": {
+   "2021-09-30": 0.24,
+   "2022-09-30": 0.29
+  },
+  "status": "nur NAV"
+ },
+ {
+  "ticker": "ICMB",
+  "sheet_nav": 5.27,
+  "sheet_dps": 0.48,
+  "cik": 1578348,
+  "name": "Investcorp Credit Management BDC, Inc.",
+  "nav": {
+   "tag": "us-gaap:NetAssetValuePerShare",
+   "wert": 3.44,
+   "stichtag": "2026-06-30",
+   "form": "10-Q",
+   "eingereicht": "2026-08-14"
+  },
+  "dps_teilweise": {
+   "2025-06-30": 0.12,
+   "2025-09-30": 0.14,
+   "2026-03-31": 0,
+   "2026-06-30": 0
+  },
+  "status": "nur NAV"
+ },
+ {
+  "ticker": "RAND",
+  "sheet_nav": 18.06,
+  "sheet_dps": 1.16,
+  "cik": 81955,
+  "name": "RAND CAPITAL CORP",
+  "nav": {
+   "tag": "us-gaap:InvestmentCompanyNetAssetValuePerSharePeriodIncreaseDecrease",
+   "wert": -0.24,
+   "stichtag": "2026-06-30",
+   "form": "10-Q",
+   "eingereicht": "2026-08-05"
+  },
+  "status": "nur NAV"
+ }
+]
