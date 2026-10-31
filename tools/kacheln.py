@@ -110,7 +110,7 @@ def kachel_earnings():
 
 def main():
     s = open("index.html", encoding="utf-8").read(); n = 0
-    for href, fn in (("aktien", kachel_hub), ("screener", kachel_screener), ("depot", kachel_depot), ("earnings", kachel_earnings)):
+    for href, fn in (("aktien", kachel_hub), ("screener", kachel_screener), ("earnings", kachel_earnings)):
         try: body = fn()
         except Exception as e: print(href, "Fehler:", type(e).__name__, e); body = None
         if not body: print(href, ": keine Daten, bleibt unveraendert"); continue
