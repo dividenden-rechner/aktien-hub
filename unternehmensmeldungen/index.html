@@ -137,5 +137,6 @@ fetch("../data/news.json?v="+Math.floor(Date.now()/6e5)).then(function(r){return
   setScope(Object.keys(wlSet()).length?"mine":"all")}).catch(function(){all=[];el("upd").textContent="Daten nicht ladbar";render()});
 })();
 </script>
+<script>(function(){try{var q=new URLSearchParams(location.search).get("q");if(!q)return;var i=document.getElementById("q");if(!i)return;i.value=q;var all=document.getElementById("sc-all");if(all)all.click();i.dispatchEvent(new Event("input"))}catch(e){}})()</script>
 </body>
 </html>
