@@ -23,6 +23,16 @@ draft: true
 
 Im dritten Quartal 2026 lag der Brent-Preis nach Angaben von Shell und Chevron bei durchschnittlich 97 US-Dollar je Barrel, nach 104 Dollar im zweiten Quartal bei Shell. Was die Ergebnisse trug, waren vor allem die Margen im Raffineriegeschäft. Shell nennt für seine indikative Raffineriemarge 42 Dollar je Barrel nach 24 Dollar im Vorquartal, TotalEnergies spricht von historisch hohen Raffineriemargen in Europa und weltweit. [ExxonMobil](../exxonmobil-q3-2026-quartalszahlen/) meldet eine Auslastung von 100 % an den Raffinerien an der US-Küste, [Chevron](../chevron-q3-2026-ergebnisse/) spricht von Rekorden in den US-Raffinerien.
 
+## Ölpreis, Gas und der Konflikt im Nahen Osten
+
+Der Hintergrund der Zahlen ist der Konflikt im Nahen Osten, der die Straße von Hormus betrifft. TotalEnergies beziffert die Folgen für die eigene Förderung im dritten Quartal auf rund 5 %, vor allem wegen begrenzter LNG-Exporte durch die Meerenge. Ohne diesen Effekt wäre die Produktion gegenüber dem Vorjahr um mehr als 4 % gewachsen. Auch BP rechnet im vierten Quartal weiter mit Störungen im Nahen Osten und nennt die „erhöhte Volatilität“ der Öl- und Gaspreise als Risiko für ihre Förderverträge.
+
+Die Preise sind seit dem Quartalsende nicht gefallen. TotalEnergies schreibt, der Ölpreis liege zu Beginn des vierten Quartals weiter über 100 US-Dollar je Barrel, der Markt für Raffinerieprodukte sei „sehr volatil“, die weltweiten Lagerbestände seien auf einem Tiefstand. Für Gas erwartet der Konzern im vierten Quartal einen durchschnittlichen LNG-Verkaufspreis von über 14 US-Dollar je Mbtu. BP legt seinen Annahmen für das vierte Quartal einen Brent-Preis von 110 US-Dollar je Barrel zugrunde. Unser [Marktüberblick vom Freitag](../tech-ausverkauf-intel-nasdaq-marktueberblick/) nennt unter Berufung auf das Wall Street Journal für Brent zuletzt rund 112 bis 113 Dollar.
+
+Das heißt für die Quartalszahlen: Der Durchschnittspreis von 97 Dollar im dritten Quartal liegt unter dem aktuellen Niveau. Die Raffineriemargen sind der zweite Treiber: BP nennt 46,7 Dollar je Barrel nach der eigenen Raffineriemarge, Shell 42 Dollar. TotalEnergies-Chef Patrick Pouyanné spricht von einem Umfeld mit historischen Raffineriemargen und einem „Bullenmarkt“ bei Gas (aus dem Englischen übersetzt).
+
+<!-- PRÜFEN: WTI und die Preisentwicklung der letzten Wochen fehlen noch, sie stehen nicht in den Berichten. Quelle nachtragen, wenn gewünscht. -->
+
 Dieser Artikel stellt die sechs Konzerne nebeneinander. Er beantwortet eine Frage: Wie viel verdienen sie, und wohin fließt das Geld? Es ist keine Kaufempfehlung.
 
 ## Cashflow und Investitionen
@@ -93,10 +103,25 @@ TotalEnergies senkte das Gearing in einem Quartal um vier Prozentpunkte auf 9,1 
 ![Nettoverschuldung Ende September 2026](/assets/magazin/big-oil-kapitalverwendung-q3-2026-schulden.png)
 *Eigene Darstellung nach den Quartalsberichten. Shell inklusive Leasing, die übrigen ohne. Für Equinor liegt nur eine Quote vor.*
 
+## Wer stellt sich wie auf?
+
+| Konzern | Investitionen 2026 | Wohin das Geld strategisch geht | Besonderheit im Quartal |
+|---|---|---|---|
+| ExxonMobil | – | Raffinerien und Förderung, Struktureinsparungen 16,9 Mrd. USD seit 2019 | höchster Free Cashflow der Gruppe |
+| Chevron | 4,0 Mrd. USD im Q3 | Ausbau der Förderung, geplante Investitionen in Venezuela | Schulden in neun Monaten von 40,8 auf 33,5 Mrd. USD gesenkt |
+| Shell | 23–25 Mrd. USD (mit ARC), 2027/28: 20–22 Mrd. USD je Jahr | Kanada: ARC-Übernahme, Investitionsentscheidung für LNG Canada Phase 2 | Verkäufe von Randgeschäften (z. B. Jiffy Lube) |
+| BP | 13,5–14,0 Mrd. USD | Schulden und Hybridkapital abbauen, Portfolio verschlanken | Verkauf von Castrol (rund 6 Mrd. USD erwartet), Verkäufe insgesamt rund 8 Mrd. USD |
+| TotalEnergies | rund 15 Mrd. USD | Gas und LNG, vier Investitionsentscheidungen (Zypern, Nigeria, Abu Dhabi, Aserbaidschan) | übernimmt 4 GW Onshore-Erneuerbare von Shell, verkauft 50 % eines 1,2-GW-Portfolios an KKR |
+| Equinor | rund 13 Mrd. USD (organisch) | Förderung auf Rekordniveau, Gaskraftwerk in den USA, Bay du Nord (Kanada) | Förderziel für 2026 von 3 auf rund 4 % Wachstum angehoben |
+
+*Quellen: Quartalsberichte und Präsentationen der Konzerne. Bei ExxonMobil und Chevron stammen die Angaben aus den Meldungen vom 30.10.2026 und unseren Quartalsartikeln. Keine Anlageberatung.*
+
 ## Was daraus folgt
 
 Die Konzerne wählen unterschiedliche Wege: Die Amerikaner und Shell bevorzugen große Rückkäufe, TotalEnergies und Equinor halten die Rückkäufe moderat und senken die Schulden, BP stellt die Bilanz vor die Aktionärsrendite. Für Dividendenanleger sind das unterschiedliche Signale. Eine hohe Rückkaufsumme hängt vom Cashflow und damit von den Margen im Raffineriegeschäft ab. Die Dividende selbst ist bei TotalEnergies gestiegen und bei BP und Equinor gleich geblieben. 
-Eines fehlt in dieser Übersicht: die Aussicht. Alle Zahlen beschreiben das dritte Quartal. Ob die Raffineriemargen und der Ölpreis auf diesem Niveau bleiben, lässt sich aus den Berichten nicht ablesen. Das ist keine Empfehlung und keine Prognose, sondern der Vergleich der berichteten Zahlen.
+Die Positionierung lässt sich in drei Sätzen zusammenfassen. ExxonMobil und Chevron schütten viel aus und bauen zugleich Schulden ab. Shell setzt auf Kanada und LNG und trennt sich von Randgeschäften, TotalEnergies setzt auf Gas und LNG und kauft nebenbei Erneuerbaren-Portfolios. BP stellt Bilanz und Portfolio an die erste Stelle. Equinor wächst in der Förderung und investiert zusätzlich in ein Gaskraftwerk in den USA.
+
+Eines fehlt in dieser Übersicht noch: die Aussicht auf den Ölpreis selbst. Alle Zahlen beschreiben das dritte Quartal. Ob die Raffineriemargen und der Ölpreis auf diesem Niveau bleiben, lässt sich aus den Berichten nicht ablesen. Das ist keine Empfehlung und keine Prognose, sondern der Vergleich der berichteten Zahlen.
 
 ## Quellen
 
