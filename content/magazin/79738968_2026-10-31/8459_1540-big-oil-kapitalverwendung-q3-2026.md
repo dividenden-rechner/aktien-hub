@@ -27,7 +27,7 @@ Dieser Artikel stellt die sechs Konzerne nebeneinander. Er beantwortet eine Frag
 
 ## Cashflow und Investitionen
 
-![Operativer Cashflow und Investitionen im 3. Quartal 2026](/assets/magazin/big-oil-kapitalverwendung-q3-2026-grafik.png)
+![Cashflow, Investitionen und Free Cashflow im 3. Quartal 2026](/assets/magazin/big-oil-kapitalverwendung-q3-2026-cashflow.png)
 *Eigene Darstellung nach den Quartalsberichten von ExxonMobil, Chevron, Shell, BP, TotalEnergies und Equinor. Definitionen weichen ab.*
 
 | Konzern | Bereinigter Gewinn | Operativer Cashflow | Investitionen | Free Cashflow |
@@ -70,6 +70,9 @@ Bei BP steht die Dividende bei 8,66 US-Cent je Aktie, im Vorquartal waren es ebe
 
 Equinor zahlt unverändert 0,39 US-Dollar je Aktie und kauft weiter Aktien zurück.
 
+![Aktienrückkäufe im Überblick](/assets/magazin/big-oil-kapitalverwendung-q3-2026-rueckkauf.png)
+*Eigene Darstellung nach den Quartalsberichten. Shell: angekündigter Rückkauf für drei Monate, Equinor: laufende Tranche.*
+
 ## Wer tilgt Schulden?
 
 | Konzern | Nettoverschuldung | Kennzahl |
@@ -86,6 +89,9 @@ Equinor zahlt unverändert 0,39 US-Dollar je Aktie und kauft weiter Aktien zurü
 BP ist der Sonderfall. Die Nettoverschuldung ist in einem Quartal um 8,4 Mrd. USD gesunken, die sogenannten Finanzverpflichtungen (Nettoschulden, Hybridanleihen, Leasing und der Gulf-of-America-Vergleich) von 53,6 auf 44,3 Mrd. USD. Die Konzernleitung nennt sie weiterhin „zu hoch“. Mit 13,9 Mrd. USD liegt die Nettoverschuldung bereits unter dem Zielkorridor von 14 bis 18 Mrd. USD, den BP für Ende 2027 nennt. Die Präsentation nennt die Stärkung der Bilanz als erste Priorität und weist keinen Aktienrückkauf aus.
 
 TotalEnergies senkte das Gearing in einem Quartal um vier Prozentpunkte auf 9,1 %, Equinor von 10,4 auf 3,8 %.
+
+![Nettoverschuldung Ende September 2026](/assets/magazin/big-oil-kapitalverwendung-q3-2026-schulden.png)
+*Eigene Darstellung nach den Quartalsberichten. Shell inklusive Leasing, die übrigen ohne. Für Equinor liegt nur eine Quote vor.*
 
 ## Was daraus folgt
 
