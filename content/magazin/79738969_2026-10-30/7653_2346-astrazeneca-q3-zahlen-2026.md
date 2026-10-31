@@ -10,6 +10,7 @@ quelle_url: https://www.sec.gov/Archives/edgar/data/901832/000165495426009256/a0
 quelle_name: "Pressemitteilung Astrazeneca Plc (SEC-Meldung)"
 logo_symbol: AZN
 logo_name: "Astrazeneca Plc"
+logo_file: assets/logos/azn.png
 ---
 <!-- PRÜFEN: Diese Zahlen stehen nicht im Originaltext: 46,88. Bitte pruefen, dann 'draft: true' loeschen. -->
 
