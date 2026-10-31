@@ -60,7 +60,7 @@ Auffällig ist Equinor: Dem bereinigten operativen Ergebnis von 12,35 Mrd. USD s
 
 ExxonMobil schüttet insgesamt 9,4 Mrd. USD aus. Das sind rund 37 %* des operativen Cashflows von 25,7 Mrd. USD und rund 49 %* des Free Cashflows von 19,1 Mrd. USD. Der Konzern blickt auf 44 aufeinanderfolgende Jahre mit Dividendenerhöhung zurück.
 
-Bei Chevron gehen die 2,5 Mrd. USD Rückkäufe zu rund 21 %* am Free Cashflow von 12,0 Mrd. USD. Wie viel Dividende Chevron im Quartal tatsächlich gezahlt hat, steht im ausgewerteten Material nicht.
+Bei Chevron entsprechen die 2,5 Mrd. USD Rückkäufe rund 21 %* des Free Cashflows von 12,0 Mrd. USD. Wie viel Dividende Chevron im Quartal tatsächlich gezahlt hat, steht im ausgewerteten Material nicht.
 
 Shell hat die Ausschüttungsquote am klarsten benannt, 40 bis 50 % des operativen Cashflows. Der angekündigte Rückkauf liegt mit 5,0 Mrd. USD höher als zuvor. Shell nennt außerdem eine Dividende, die jedes Jahr um etwa 4 % steigt.
 
