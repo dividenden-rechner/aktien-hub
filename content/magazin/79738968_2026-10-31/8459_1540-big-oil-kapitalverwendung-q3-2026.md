@@ -7,7 +7,7 @@ author_bio: "Das Redaktions-Team von Dividenden-Rechner.de schreibt über Divide
 category: Analyse
 kein_logo: ja
 image: https://images.unsplash.com/photo-1678984239420-43cdc183bce6?ixid=M3wxMTE3OTgzfDB8MXxzZWFyY2h8MXx8cmVmaW5lcnklMjB0b3dlcnN8ZW58MXwwfHx8MTc5MzQ2NjM5Mnww&ixlib=rb-4.1.0&w=1600&h=900&fit=crop&crop=entropy&q=80&fm=jpg
-image_alt: "Foto zu Big: Oil refinery plant. Petroleum refinery tower building. Trzebinia, Poland."
+image_alt: "Foto einer Erdölraffinerie mit Destillationstürmen und Rohrleitungen unter freiem Himmel"
 image_credit: "Foto: Jakub Pabis auf Unsplash"
 image_source: https://unsplash.com/photos/a-factory-with-pipes-and-a-sky-background-vOtSZd_8Af4?utm_source=dividenden-rechner&utm_medium=referral
 image_artist_url: https://unsplash.com/@jakubpabis?utm_source=dividenden-rechner&utm_medium=referral
