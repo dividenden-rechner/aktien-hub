@@ -89,11 +89,22 @@ def main():
     tab, n = tabellen(mon, names, wl, cal)
     print(f"Woche ab {mon}: {n} Earnings aus Universum/Watchlist")
     text, srcs = recherche(mon, key)
+    fr = mon + timedelta(days=4)
     if not text:
-        ia.fail("Keine Recherche moeglich (Websuche nicht verfuegbar), Wochenvorschau nicht erstellt.")
-    prompt = (ia.read_prompt("wochenvorschau_prompt.md") + f"\n\nWOCHE: {de(mon)} bis {de(mon + timedelta(days=4))} {mon.year}\nHEUTE: {now.strftime('%d.%m.%Y')}"
-              + f"\n\nRECHERCHE:\n{text}\n\nQUELLEN DER RECHERCHE: " + "; ".join(t for t, _ in srcs))
-    out = ia._generate([{"text": prompt}], SCHEMA, key)
+        # Ohne Websuche: Entwurf nur aus den Earnings-Daten (keine erfundenen Texte), Konjunktur und Zinsen ergaenzt die Redaktion
+        if not tab:
+            ia.fail("Keine Recherche moeglich (Websuche nicht verfuegbar) und keine Earnings-Termine, Wochenvorschau nicht erstellt.")
+        print("Hinweis: Websuche nicht verfuegbar, Entwurf nur mit Earnings-Daten.")
+        out = {"title": f"Wer in der Börsenwoche vom {de(mon)} bis {de(fr)} meldet", "slug": f"wochenvorschau-{mon.isoformat()}",
+               "description": f"Die Quartalszahlen der Woche vom {de(mon)} bis {de(fr)} {fr.year}: wer wann berichtet und was Analysten erwarten.",
+               "intro_md": f"In der Woche vom {de(mon)} bis {de(fr)} melden {n} Unternehmen aus dem S&P 500 und unserer Beobachtungsliste. Die Tabellen zeigen je Tag die wichtigsten Termine mit den Erwartungen der Analysten.",
+               "makro_md": "", "zins_md": "", "quellen": ["Financial Modeling Prep (Earnings-Kalender)"]}
+        no_makro = True
+    else:
+        no_makro = False
+        prompt = (ia.read_prompt("wochenvorschau_prompt.md") + f"\n\nWOCHE: {de(mon)} bis {de(mon + timedelta(days=4))} {mon.year}\nHEUTE: {now.strftime('%d.%m.%Y')}"
+                  + f"\n\nRECHERCHE:\n{text}\n\nQUELLEN DER RECHERCHE: " + "; ".join(t for t, _ in srcs))
+        out = ia._generate([{"text": prompt}], SCHEMA, key)
     slug = re.sub(r"[^a-z0-9]+", "-", out["slug"].lower()).strip("-") or f"wochenvorschau-{mon.isoformat()}"
     if A.find(slug): ia.fail(f"Es gibt schon einen Artikel '{slug}'.")
     q = lambda t: '"' + str(t).replace('"', "'") + '"'
@@ -109,12 +120,12 @@ def main():
     except Exception as e:
         print("Foto uebersprungen:", e)
     head.append("---")
-    body = ("<!-- PRÜFEN: Wochenvorschau automatisch erstellt. Earnings-Tabellen direkt aus FMP (Erwartungen laut Datenanbieter), Texte aus Recherche mit Websuche. "
+    body = (("<!-- PRÜFEN: Websuche war nicht verfügbar. Abschnitt 'Konjunktur und Zentralbanken' (Termine, Fed/EZB-Erwartungen) fehlt und muss ergänzt werden. -->\n" if no_makro else "") + "<!-- PRÜFEN: Wochenvorschau automatisch erstellt. Earnings-Tabellen direkt aus FMP (Erwartungen laut Datenanbieter), Texte aus Recherche mit Websuche. "
             "Termine und Zinserwartungen bitte kurz gegenprüfen, dann 'draft: true' löschen. -->\n\n"
             + out["intro_md"].strip() + "\n\n## Wer meldet wann\n"
             + (tab if tab else "\nFür diese Woche liegen noch keine Termine großer Unternehmen vor.\n")
             + "\n*Erwartungen laut Datenanbieter Financial Modeling Prep, Termine können sich verschieben.*\n\n"
-            + "## Konjunktur und Zentralbanken\n\n" + out["makro_md"].strip() + "\n\n" + out["zins_md"].strip() + "\n\n"
+            + ("" if no_makro else "## Konjunktur und Zentralbanken\n\n" + out["makro_md"].strip() + "\n\n" + out["zins_md"].strip() + "\n\n")
             + "## Quellen\n\n" + "\n".join("- " + s for s in out["quellen"]) + "\n\n"
             + "*Dieser Beitrag fasst Informationen aus den genannten Quellen in eigenen Worten zusammen. Prognosen sind keine Gewissheiten. Keine Anlageberatung.*\n")
     stamp = now.strftime("%Y-%m-%d-%H%M"); path = A.path_for(stamp, slug)
