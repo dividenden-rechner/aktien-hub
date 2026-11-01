@@ -15,10 +15,12 @@ Datei anklicken, dann Stift-Symbol: Zeile `draft: true` löschen und speichern, 
 | 29.10.2026 22:42 | Amazon steigert Umsatz im dritten Quartal auf 201,9 Milliarden Dollar | [79738970_2026-10-29/7757_2242-amazon-q3-2026-zahlen.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/79738970_2026-10-29/7757_2242-amazon-q3-2026-zahlen.md) |
 | 29.10.2026 10:12 | Shell erzielt im dritten Quartal 10,8 Milliarden Dollar Gewinn | [79738970_2026-10-29/8987_1012-shell-q3-2026-ergebnisse.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/79738970_2026-10-29/8987_1012-shell-q3-2026-ergebnisse.md) |
 
-### Online (136)
+### Online (138)
 
 | Datum | Titel | Datei |
 |---|---|---|
+| 01.11.2026 14:30 | Johnson & Johnson: Impella-Daten beim TCT 2026 zeigen niedrigere Sterblichkeit als CHIP-BCIS3 | [79738967_2026-11-01/9170_1430-johnson-johnson-impella-tct-2026-daten.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/79738967_2026-11-01/9170_1430-johnson-johnson-impella-tct-2026-daten.md) |
+| 01.11.2026 14:30 | ArcelorMittal: CO2-Abscheidung im Stahlwerk Gent erreicht über 90 Prozent | [79738967_2026-11-01/9170_1430-arcelormittal-gent-co2-abscheidung-pilotversuch.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/79738967_2026-11-01/9170_1430-arcelormittal-gent-co2-abscheidung-pilotversuch.md) |
 | 01.11.2026 13:09 | Die Chiphersteller finanzieren ihre Kunden, und alle sichern sich ab | [79738967_2026-11-01/9210_1309-ki-finanzierungsnetz-nvidia-meta-coreweave.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/79738967_2026-11-01/9210_1309-ki-finanzierungsnetz-nvidia-meta-coreweave.md) |
 | 31.10.2026 15:40 | Big Oil verdient am Krieg, tilgt aber zuerst Schulden | [79738968_2026-10-31/8459_1540-big-oil-kapitalverwendung-q3-2026.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/79738968_2026-10-31/8459_1540-big-oil-kapitalverwendung-q3-2026.md) |
 | 30.10.2026 23:48 | Ingersoll Rand ernennt neue Führungskräfte und verlängert Vertrag von CEO Vicente Reynal | [79738969_2026-10-30/7651_2348-ingersoll-rand-fuehrungswechsel-oktober-2026.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/79738969_2026-10-30/7651_2348-ingersoll-rand-fuehrungswechsel-oktober-2026.md) |
