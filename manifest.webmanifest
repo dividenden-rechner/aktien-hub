@@ -1,0 +1,20 @@
+{
+  "name": "Dividenden-Rechner Aktien-Hub",
+  "short_name": "Dividenden",
+  "description": "Dividenden-Rechner, Aktienanalysen, Quartalszahlen und Magazin.",
+  "lang": "de",
+  "start_url": "./?source=app",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#ffffff",
+  "icons": [
+    {"src": "assets/icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any"},
+    {"src": "assets/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any"},
+    {"src": "assets/icon-maskable-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable"}
+  ],
+  "shortcuts": [
+    {"name": "Dividenden-Zinseszins-Rechner", "url": "rechner/dividenden-zinseszins-rechner/"},
+    {"name": "Magazin", "url": "magazin/"}
+  ]
+}

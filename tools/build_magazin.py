@@ -261,6 +261,7 @@ def head(depth, title, desc, url, og_type, image_url, extra=""):
 <link rel="icon" type="image/png" sizes="192x192" href="{p}assets/favicon-192.png">
 <link rel="apple-touch-icon" href="{p}assets/apple-touch-icon.png">
 <link rel="stylesheet" href="{p}assets/navigation.css?v=20261025a">
+<link rel="manifest" href="{p}manifest.webmanifest">
 </head>
 <body>
 <header id="hub-global-header"><div class="hub-nav-inner"><a class="hub-brand" href="{p}"><img class="hub-logo" src="{p}assets/logo.png" alt="" width="36" height="36"> <span class="hub-brand-name">Dividenden-Rechner <span>Aktien-Hub</span></span></a><nav class="hub-links" aria-label="Hauptmenü">'''

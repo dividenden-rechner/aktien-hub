@@ -14,3 +14,15 @@
   nav.addEventListener("click", function (e) { if (e.target.closest("a")) set(false); });
   window.addEventListener("resize", function () { if (window.innerWidth >= 1120) set(false); });
 })();
+
+/* App-Installation (PWA): Manifest ergänzen, falls die Seite keins hat, und Service Worker anmelden. */
+(function () {
+  try {
+    var s = document.querySelector('script[src*="assets/navigation.js"]'); if (!s) return;
+    var root = new URL(s.getAttribute("src").split("assets/navigation.js")[0] || "./", location.href).href;
+    if (!document.querySelector('link[rel="manifest"]')) {
+      var l = document.createElement("link"); l.rel = "manifest"; l.href = root + "manifest.webmanifest"; document.head.appendChild(l);
+    }
+    if ("serviceWorker" in navigator) navigator.serviceWorker.register(root + "sw.js", { scope: root }).catch(function () {});
+  } catch (e) {}
+})();
