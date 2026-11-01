@@ -54,6 +54,20 @@ svg text{fill:var(--mut);font-size:11px;font-family:inherit}
 .desc{color:var(--mut);max-width:78ch;margin-top:14px}
 #msg{color:var(--mut);margin:10px 0}#msg.err{color:var(--neg)}
 .sbtn{font:inherit;font-weight:600;padding:10px 16px;border:0;border-radius:8px;background:#98e6b3;color:#14202b;cursor:pointer;margin-top:14px}
+.nm{display:flex;flex-wrap:wrap;align-items:center;gap:6px 10px}
+.nm h1{margin:0}
+.wlh{font:inherit;font-size:13px;font-weight:600;padding:4px 10px;border:1px solid var(--line);border-radius:6px;background:none;color:var(--mut);cursor:pointer}
+.wlh:hover,.wlh:focus-visible{background:#f0f8f3;color:var(--ink)}
+.igh{width:28px;height:28px;display:inline-grid;place-items:center;border:0;border-radius:6px;background:none;color:var(--mut);cursor:pointer;padding:0}
+.igh:hover,.igh:focus-visible{background:#f0f8f3;color:var(--ink)}
+.stk h3{font-size:15px;margin:22px 0 8px;color:var(--mut);font-weight:600}
+.stk table{width:100%;border-collapse:collapse;font-size:14px;border-top:1px solid var(--line);table-layout:fixed}
+.stk td{padding:9px 6px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top;overflow-wrap:anywhere}
+.stk .k{width:150px;font-weight:600}.stk .v{width:96px;font-weight:600}.stk .d{color:var(--mut)}
+.stk .dot{display:inline-block;width:11px;height:11px;border-radius:50%;margin-right:9px;vertical-align:-1px;background:#b8c2cb}
+.stk .dot.g{background:#2f9e5b}.stk .dot.y{background:#d4a017}.stk .dot.r{background:#c0392b}
+.stk .sn{font-size:12px;color:var(--mut);margin:8px 0 0}
+@media(max-width:560px){.stk tbody,.stk tr{display:block}.stk tr{display:grid;grid-template-columns:1fr auto;padding:8px 0;border-bottom:1px solid var(--line)}.stk td{border:0;padding:2px 4px;width:auto!important}.stk .d{grid-column:1/-1}}
 #ov{position:fixed;inset:0;background:#fff;z-index:50;display:flex;align-items:center;justify-content:center;overflow:auto}
 .ctl{position:fixed;top:8px;right:8px;z-index:60}
 .ctl button{font:600 13px system-ui;padding:8px 12px;border:0;border-radius:8px;background:#14202b;color:#fff}
@@ -249,7 +263,7 @@ function wlToggle(s,n){s=String(s).toUpperCase();if(wlHas(s))WL=WL.filter(x=>x.s
 function renderWL(){
   $("tiles").innerHTML=WL.length?WL.map(x=>`<div class="tile"><button class="it" data-s="${esc(x.s)}">${img(x.s)}<span>${esc(x.n)}</span><small>${esc(x.s)}</small></button><button class="wlx" data-wlrm="${esc(x.s)}" title="Aus Watchlist entfernen" aria-label="${esc(x.n)} aus der Watchlist entfernen">×</button></div>`).join(""):`<div class="wlempty">Deine Watchlist ist leer. Suche oben eine Aktie und klicke auf ＋, um sie hier zu speichern.</div>`;
   document.querySelectorAll(".wlp[data-wl]").forEach(b=>{const on=wlHas(b.dataset.wl);b.classList.toggle("on",on);b.textContent=on?"✓":"＋";b.title=on?"In der Watchlist, klicken zum Entfernen":"Zur Watchlist hinzufügen"});
-  const wb=$("wlb");if(wb)wb.textContent=wlHas(wb.dataset.wl)?"★ In der Watchlist":"☆ Zur Watchlist";
+  const wb=$("wlb");if(wb)wb.textContent=wlHas(wb.dataset.wl)?"★ Watchlist":"☆ Watchlist";
 }
 renderWL();
 $("wlreset").onclick=()=>{if(confirm("Watchlist auf die Standardliste zurücksetzen? Eigene Einträge gehen verloren.")){WL=POP.map(([s,n])=>({s,n}));wlSave(WL);renderWL()}};
@@ -365,6 +379,40 @@ function line(title,pts){
   return `<div class="card"><h3>${title}</h3><svg viewBox="0 0 ${W} ${H}" role="img" aria-label="${title}"><path d="${path}L${X(pts.length-1)},${H-24}L${X(0)},${H-24}Z" fill="${up?"var(--pos)":"var(--neg)"}" opacity=".12"/><path d="${path}" fill="none" stroke="${up?"var(--pos)":"var(--neg)"}" stroke-width="2"/><text x="${p}" y="${H-6}">${pts[0].d}</text><text x="${W-p}" y="${H-6}" text-anchor="end">${pts[pts.length-1].d}</text><text x="${W-p}" y="12" text-anchor="end">Hoch ${num(mx)}</text><text x="${p}" y="12">Tief ${num(mn)}</text></svg></div>`;
 }
 
+
+/* Steckbrief: Ampel nach festen Regeln, Zahlen aus FMP (TTM) */
+function steckbrief(sym,p,r,m,inc,cf){
+  const f=(o,...ks)=>{for(const k of ks)if(o&&o[k]!=null&&isFinite(o[k]))return +o[k]};
+  const pe=f(r,"priceToEarningsRatioTTM","peRatioTTM"),pb=f(r,"priceToBookRatioTTM"),ev=f(m,"evToEBITDATTM")??f(r,"enterpriseValueMultipleTTM");
+  const dyl=f(r,"dividendYieldTTM"),po=f(r,"dividendPayoutRatioTTM"),fy=f(m,"freeCashFlowYieldTTM");
+  const roic=f(m,"returnOnInvestedCapitalTTM"),roe=f(m,"returnOnEquityTTM"),om=f(r,"operatingProfitMarginTTM");
+  const ic=f(r,"interestCoverageRatioTTM"),nd=f(m,"netDebtToEBITDATTM");
+  const fin=/financ|real estate/i.test(p.sector||"");
+  const cagr=(a,b,n)=>a>0&&b>0&&n>0?Math.pow(b/a,1/n)-1:null;
+  const yrs=inc.slice(-6),n=yrs.length-1;
+  const rc=n>=2?cagr(yrs[0].revenue,yrs[n].revenue,n):null;
+  const e0=yrs[0]&&f(yrs[0],"epsDiluted","eps"),e1=yrs[n]&&f(yrs[n],"epsDiluted","eps");
+  const ec=n>=2?cagr(e0,e1,n):null;
+  const P=(v,d=1)=>v==null?"–":num(v*100,d)+" %",X=(v)=>v==null?"–":num(v,1)+"×";
+  const rows=[];
+  rows.push(["Bewertung","g0","wird geladen",[pe!=null&&pe>0?"KGV "+num(pe,1):null,pb!=null&&pb>0?"KBV "+num(pb,1):null,ev!=null&&ev>0?"EV/EBITDA "+num(ev,1):null].filter(Boolean).join(" · ")||"keine Daten","bew"]);
+  let dc,dg,dv;
+  if(!(dyl>0)){dg="";dv="Keine Dividende";dc="–"}
+  else{const cov=fy!=null?fy/dyl:null;dg=cov==null?"":cov>=1.5?"g":cov>=1?"y":"r";dv=cov==null?"k. A.":cov>=1.5?"Gedeckt":cov>=1?"Knapp":"Nicht gedeckt";dc=[ "Rendite "+P(dyl),po!=null?"Ausschüttung "+P(po,0):null,fy!=null?"FCF-Rendite "+P(fy):null].filter(Boolean).join(" · ")}
+  rows.push(["Dividende",dg,dv,dc]);
+  const pg=roic==null?"":roic>=.10?"g":roic>=.05?"y":"r";
+  rows.push(["Profitabilität",pg,pg==="g"?"Stark":pg==="y"?"Mittel":pg==="r"?"Schwach":"k. A.",[roic!=null?"ROIC "+P(roic,0):null,roe!=null?"ROE "+P(roe,0):null,om!=null?"Operative Marge "+P(om):null].filter(Boolean).join(" · ")||"keine Daten"]);
+  let bg="",bv="k. A.";
+  if(fin){bv="nicht bewertet"}
+  else if(ic!=null||nd!=null){bg=(ic==null||ic>=6)&&(nd==null||nd<=3)?"g":(ic==null||ic>=3)&&(nd==null||nd<=4.5)?"y":"r";bv=bg==="g"?"Solide":bg==="y"?"Angespannt":"Schwach"}
+  rows.push(["Bilanz",bg,bv,[ic!=null?"Zinsdeckung "+X(ic):null,nd!=null?(nd<0?"Netto-Cash":"Nettoschulden "+X(nd)+" EBITDA"):null].filter(Boolean).join(" · ")||(fin?"Bei Banken, Versicherern und Immobilien nicht sinnvoll vergleichbar":"keine Daten")]);
+  let wg="",wv="k. A.";
+  if(rc!=null||ec!=null){const sc=(rc==null?0:rc>=.05?1:rc<.02?-1:0)+(ec==null?0:ec>=.05?1:ec<0?-1:0);wg=sc>=2?"g":sc<=-1?"r":"y";wv=sc>=2?"Stark":sc<=-1?"Schwach":"Mittel"}
+  rows.push(["Wachstum",wg,wv,[rc!=null?"Umsatz "+P(rc)+" p. a.":null,ec!=null?"Gewinn je Aktie "+P(ec)+" p. a.":null].filter(Boolean).join(" · ")+(n>=2?" ("+n+" J.)":"")||"keine Daten"]);
+  const tr=rows.map(x=>`<tr${x[4]?` id="st-${x[4]}"`:""}><td class="k"><span class="dot ${x[1]==="g0"?"":x[1]}"></span>${x[0]}</td><td class="v">${x[2]}</td><td class="d">${esc(x[3])}</td></tr>`).join("");
+  return `<div class="stk"><h3>Steckbrief</h3><table><tbody>${tr}</tbody></table><p class="sn">Ampel nach festen Regeln, keine Anlageberatung. Grün, gelb und rot ordnen nur ein, wie die Zahlen im Vergleich zu üblichen Schwellen oder zur eigenen Geschichte stehen.</p></div>`;
+}
+
 /* Hub laden */
 async function openStock(sym){
   const msg=$("msg"),hub=$("hub");
@@ -397,21 +445,9 @@ async function openStock(sym){
   const kp=(l,v,c="")=>`<div><b class="${c}">${v}</b><span>${l}</span></div>`;
   LAST={sym,p,price,chg,cur,pts,divs,inc,est:d.est,g:one(d.grades),tgt,pt,r};
   hub.innerHTML=`
-  <div class="head">${img(sym,p.website,p.companyName)}<div><h1>${esc(p.companyName||sym)}</h1><p>${esc(sym)} · ${esc(p.exchange||"")} · ${esc(p.sector||"")}${p.industry?" · "+esc(p.industry):""}</p></div>
+  <div class="head">${img(sym,p.website,p.companyName)}<div><div class="nm"><h1>${esc(p.companyName||sym)}</h1><button class="wlh" id="wlb" data-wl="${esc(sym)}" data-n="${esc(p.companyName||sym)}">${wlHas(sym)?"★ Watchlist":"☆ Watchlist"}</button><button class="igh" id="sb" title="Instagram-Story erstellen" aria-label="Instagram-Story erstellen"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r=".6" fill="currentColor"/></svg></button></div><p>${esc(sym)} · ${esc(p.exchange||"")} · ${esc(p.sector||"")}${p.industry?" · "+esc(p.industry):""} · Börsenwert ${big(first(q,"marketCap")??p.marketCap)}</p></div>
   <div class="price">${num(price)} ${esc(p.currency||"")}<small class="${sg(chg)}">${chg==null?"":(chg>0?"+":"")+num(chg)+" % heute"}</small></div></div>
-  <p><button class="sbtn" id="sb">📱 Instagram-Story anzeigen</button> <button class="sbtn" id="wlb" data-wl="${esc(sym)}" data-n="${esc(p.companyName||sym)}">${wlHas(sym)?"★ In der Watchlist":"☆ Zur Watchlist"}</button></p>
-  <div class="kpis">
-   ${kp("Marktkapitalisierung",big(first(q,"marketCap")??p.marketCap))}
-   ${kp("KGV",num(first(r,"priceToEarningsRatioTTM","peRatioTTM")))}
-   ${kp("KBV",num(first(r,"priceToBookRatioTTM")))}
-   ${kp("EV/EBITDA",num(first(m,"evToEBITDATTM")??first(r,"enterpriseValueMultipleTTM")))}
-   ${kp("Dividendenrendite",pct(first(r,"dividendYieldTTM")))}
-   ${kp("Ausschüttungsquote",pct(first(r,"dividendPayoutRatioTTM")))}
-   ${kp("FCF-Rendite",pct(first(m,"freeCashFlowYieldTTM")))}
-   ${kp("ROE",pct(first(m,"returnOnEquityTTM")))}
-   ${kp("DCF-Wert",num(fair)+" ("+pc(up(fair))+")",sg(up(fair)))}
-   ${kp("Kursziel Konsens",num(tgt)+" ("+pc(up(tgt))+")",sg(up(tgt)))}
-  </div>
+  ${steckbrief(sym,p,r,m,inc,cf)}
   <div class="grid">
    ${line("Kurs, letzte 5 Jahre ("+esc(p.currency||"")+")",pts)}
    ${bars("Dividende je Aktie","Summe pro Jahr, "+esc(p.currency||"")+(divs.some(x=>x.part)?"; laufendes Jahr blass (unvollständig)":""),divs,"var(--c-gold)",v=>num(v))}
@@ -469,6 +505,7 @@ async function initValuation(sym,c){
   const have=M.filter(x=>x.v.length>=3);
   const q=(a,f)=>{const b=a.slice().sort((x,y)=>x-y),i=(b.length-1)*f,lo=Math.floor(i),hi=Math.ceil(i);return b[lo]+(b[hi]-b[lo])*(i-lo)};
   const st=x=>{const a=x.v.map(d=>d.v);return a.length?{avg:a.reduce((u,v)=>u+v,0)/a.length,med:q(a,.5),lo:a.length>=4?q(a,.25):Math.min(...a),hi:a.length>=4?q(a,.75):Math.max(...a),min:Math.min(...a),max:Math.max(...a),n:a.length}:null};
+  try{const tr=document.getElementById("st-bew"),S0=st(M[0]),T0=M[0].t;if(tr&&S0&&T0!=null&&M[0].v.length>=3){const dif=T0/S0.avg-1,g=dif>.15?"r":dif<-.15?"g":"y";tr.querySelector(".dot").className="dot "+g;tr.querySelector(".v").textContent=dif>.15?"Teuer":dif<-.15?"Günstig":"Fair";tr.querySelector(".d").textContent=tr.querySelector(".d").textContent+" · Ø KGV "+num(S0.avg,1)+" ("+S0.n+" J.)"}else if(tr){tr.querySelector(".v").textContent="–"}}catch(e){}
   /* Fair-Value-Methoden */
   const meth=[];
   const base={pe:M[0].t&&price?price/M[0].t:null,pb:M[1].t&&price?price/M[1].t:null,pf:M[3].t&&price?price/M[3].t:null};
