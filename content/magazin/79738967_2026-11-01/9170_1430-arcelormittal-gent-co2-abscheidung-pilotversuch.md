@@ -9,6 +9,7 @@ typ: kurz
 quelle_name: "Pressemitteilung ArcelorMittal, MHI, BHP, MDP (JCN Newswire), 1. November 2026"
 logo_symbol: MT
 logo_name: "ArcelorMittal"
+logo_file: assets/logos/mt.png
 ---
 <!-- PRÜFEN: Grundlage sind Screenshots der Pressemitteilung (JCN Newswire, Gent, 1.11.2026, 10:24). Ein Link zur Originalmeldung fehlt (quelle_url ergänzen). Logo-Kürzel MT: bitte prüfen, ob das Logo geladen wurde. -->
 
