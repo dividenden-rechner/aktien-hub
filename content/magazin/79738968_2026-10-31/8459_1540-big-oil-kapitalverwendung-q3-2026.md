@@ -12,133 +12,111 @@ image_credit: "Foto: Jakub Pabis auf Unsplash"
 image_source: https://unsplash.com/photos/a-factory-with-pipes-and-a-sky-background-vOtSZd_8Af4?utm_source=dividenden-rechner&utm_medium=referral
 image_artist_url: https://unsplash.com/@jakubpabis?utm_source=dividenden-rechner&utm_medium=referral
 ---
-<!-- PRÜFEN: Zahlen stammen aus den Quartalsberichten (Shell, BP, TotalEnergies, Equinor als PDF, Exxon und Chevron aus den eigenen Artikeln und SEC-Meldungen). Mit * markierte Werte sind eigene Rechnungen. -->
-<!-- PRÜFEN: Chevron und Shell: gezahlte Dividendensumme steht nicht im ausgewerteten Material, deshalb nur Dividende je Aktie. Equinor: Gesamtsumme des Rückkaufprogramms 2026 und Zahl der Tranchen noch einmal im Bericht gegenlesen. -->
-<!-- PRÜFEN: Einstieg: Brent rund 117 und WTI rund 107 Dollar sind Redaktionsangaben ohne Quelle im Text. Andere Werte vom Samstag: Brent rund 113, WTI rund 103 (interne Abfrage, nicht veröffentlichen), WSJ im Marktüberblick 112 bis 113. Bitte Stichtag und Quelle klären. -->
-<!-- PRÜFEN: Einstieg: Aussage zu iranischem Öl, das per Schiff in die Märkte (auch in die USA) kommt und direkt in die Raffinerien geht, ist Redaktionsaussage, nicht aus den Berichten belegt. Russland: Benzinimporte aus Indien und Verlängerung des Benzinexportstopps laut Berliner Zeitung (nur die Meldungstitel gesehen, nicht den Volltext). -->
+<!-- PRÜFEN: Zahlen stammen aus den Quartalsberichten (Shell, BP, TotalEnergies, Equinor als PDF, Exxon und Chevron aus den SEC-Meldungen). Mit * markierte Werte sind eigene Rechnungen. -->
+<!-- PRÜFEN: Vorquartalswerte für ExxonMobil, Chevron und Shell stammen aus den Q2-Meldungen (Exxon: SEC 8-K, Zahlen per Auszug gelesen; Chevron: SEC 8-K; Shell: Pressemitteilung Q2). Exxon meldet für Q2 und Q3 identische Ausschüttungen (9,4 Mrd., davon 5,1 Rückkäufe): bitte im Original gegenlesen. -->
+<!-- PRÜFEN: Brent rund 117 und WTI rund 107 Dollar sind Redaktionsangaben ohne Quelle. Andere Werte vom Samstag: Brent rund 113, WTI rund 103 (interne Abfrage, nicht veröffentlichen), WSJ im Marktüberblick 112 bis 113. Stichtag und Quelle klären. -->
+<!-- PRÜFEN: Aussage zu iranischem Öl, das per Schiff in die Märkte kommt und direkt in die Raffinerien geht, ist Redaktionsaussage, nicht aus den Berichten belegt. Russland: Benzinimporte aus Indien und Verlängerung des Benzinexportstopps laut Berliner Zeitung (nur die Meldungstitel gesehen). -->
+<!-- PRÜFEN: Chevron und Shell: gezahlte Dividendensumme im Q3 steht nicht im ausgewerteten Material. Equinor: Rückkaufprogramm 2026 (bis zu 3 Mrd. USD) und Zahl der Tranchen noch einmal im Bericht gegenlesen. -->
 
 !!! kurz "Kurz gesagt"
     **Lage:** Der Iran-Krieg treibt den Ölpreis, der Ukraine-Konflikt den Dieselpreis. Brent liegt zuletzt bei rund 117, WTI bei rund 107 Dollar.
-    **Frage:** Was machen Exxon, Chevron, Shell, BP, TotalEnergies und Equinor mit ihren Gewinnen?
+    **Ergebnis:** Gegenüber dem Vorjahr verdienen die Konzerne deutlich mehr. Gegenüber dem Vorquartal ist das Bild gemischt: TotalEnergies +51 %, BP +49 %, Chevron −14 %, Equinor −11 %.
 
-    1. **Rückkäufe:** ExxonMobil gibt 5,1 Mrd. USD für Aktienrückkäufe aus, Shell kündigt neue 5,0 Mrd. USD an, Chevron verwendet 2,5 Mrd. USD. TotalEnergies hat 1,5 Mrd. USD eingesetzt, Equinor startet eine Tranche über bis zu 1,125 Mrd. USD.
-    2. **Schulden:** BP senkt die Nettoverschuldung in einem Quartal von 22,3 auf 13,9 Mrd. USD und kauft laut Präsentation keine Aktien zurück.
-    3. **Dividenden:** TotalEnergies hebt die Zwischendividende um 5,9 % auf 0,90 Euro, BP und Equinor zahlen die Dividende des Vorquartals unverändert weiter.
+    1. **Rückkäufe:** Nur Shell erhöht kräftig, von 3,0 auf 5,0 Mrd. USD (+67 %). ExxonMobil und Equinor bleiben unverändert, Chevron kürzt um 20 %, BP kauft nichts zurück.
+    2. **Schulden:** Sie sinken überall, am stärksten bei BP (−38 %), TotalEnergies (−30 %) und Chevron (−27 %).
+    3. **Dividenden:** ExxonMobil hebt um 3,9 % auf 1,07 USD, TotalEnergies um 5,9 % auf 0,90 Euro. Chevron und Equinor zahlen unverändert.
 
 ## Geopolitik treibt Öl und Diesel
 
 Der Iran-Krieg treibt den Ölpreis, der Ukraine-Konflikt den Dieselpreis. Brent kostet zuletzt rund 117 Dollar je Barrel, WTI rund 107 Dollar. Noch stärker als Rohöl verteuern sich Raffinerieprodukte wie Diesel und Heizöl.
 
-Beide Konflikte verstärken sich. In Russland haben ukrainische Angriffe Raffinerien zerstört. Das Land, sonst ein großer Exporteur von Raffinerieprodukten, muss Berichten zufolge Benzin aus Indien einführen und hat seinen Benzinexportstopp bis Ende Januar 2027 verlängert. Gleichzeitig kommt aus dem Iran wieder mehr Öl per Schiff auf den Markt, auch in den USA kommt es an. Weil die Lager weltweit auf einem Tiefstand sind, wie TotalEnergies schreibt, füllt dieses Öl keine Tanks auf. Es wird sofort in die Raffinerien gedrückt, die daraus Diesel und Heizöl machen. Das hält die Preise der Raffinerieprodukte hoch, und mit ihnen die Margen der Konzerne.
+Beide Konflikte verstärken sich. In Russland haben ukrainische Angriffe Raffinerien zerstört. Das Land, sonst ein großer Exporteur von Raffinerieprodukten, muss Berichten zufolge Benzin aus Indien einführen und hat seinen Benzinexportstopp bis Ende Januar 2027 verlängert. Gleichzeitig kommt aus dem Iran wieder mehr Öl per Schiff auf den Markt, auch in den USA kommt es an. Weil die Lager weltweit auf einem Tiefstand sind, füllt dieses Öl keine Tanks auf. Es geht sofort in die Raffinerien, die daraus Diesel und Heizöl machen. Das hält die Preise der Raffinerieprodukte hoch und mit ihnen die Margen der Konzerne.
 
-Daraus ergibt sich die Frage dieses Artikels: Machen die großen Energiekonzerne in den USA und vor allem in Europa tatsächlich mehr Gewinn? Wohin fließt das Geld? Und was schreiben sie dazu in ihren Berichten für das dritte Quartal, das Ende September zu Ende ging?
+Die Konzerne rechnen nicht mit schneller Entspannung. TotalEnergies sieht den Ölpreis auch zu Beginn des vierten Quartals über 100 Dollar, bei Raffinerieprodukten spricht der Konzern von einem „sehr volatilen“ Markt. Für LNG erwartet TotalEnergies im vierten Quartal im Schnitt über 14 Dollar je Mbtu. BP plant das vierte Quartal mit 110 Dollar je Barrel und rechnet weiter mit Störungen im Nahen Osten. Konzernchef Patrick Pouyanné spricht von historischen Raffineriemargen und einem „Bullenmarkt“ bei Gas (aus dem Englischen übersetzt).
 
-Die kurze Antwort: Ja, sie verdienen deutlich mehr, und das Geld geht in drei Richtungen. Es fließt in Aktienrückkäufe, in den Schuldenabbau und in neue Projekte, vor allem Gas und LNG. Die Dividenden steigen dagegen kaum.
+## Verdienen die Konzerne wirklich mehr?
 
-## Was die Konzerne selbst zu Preisen und Konflikt schreiben
+Gegenüber dem Vorjahr ja, und zwar kräftig. [Chevron](../chevron-q3-2026-ergebnisse/) hat den Nettogewinn von 3,54 auf 9,92 Mrd. Dollar fast verdreifacht (+180 %). BP verdient bereinigt 8,5 statt 2,2 Mrd. Dollar. Gegenüber dem zweiten Quartal ist das Bild gemischt:
 
-Im Schnitt lag Brent im dritten Quartal bei 97 US-Dollar je Barrel, nach 104 Dollar im zweiten Quartal (Shell). Was die Ergebnisse trug, waren vor allem die Margen im Raffineriegeschäft. Shell nennt für seine indikative Raffineriemarge 42 Dollar je Barrel nach 24 Dollar im Vorquartal, BP 46,7 Dollar. [ExxonMobil](../exxonmobil-q3-2026-quartalszahlen/) meldet eine Auslastung von 100 % an den Raffinerien an der US-Küste, [Chevron](../chevron-q3-2026-ergebnisse/) spricht von Rekorden in den US-Raffinerien. Bei Chevron stieg der Nettogewinn von 3,54 auf 9,92 Mrd. USD.
+![Gewinn im 3. Quartal gegenüber dem 2. Quartal](/assets/magazin/big-oil-kapitalverwendung-q3-2026-gewinn.png)
+*Eigene Darstellung nach den Quartalsberichten von Q2 und Q3 2026. Bereinigte Gewinne, bei BP der „Underlying Replacement Cost Profit“, bei Equinor der bereinigte Nettogewinn.*
 
-TotalEnergies beziffert die Folgen des Konflikts für die eigene Förderung im dritten Quartal auf rund 5 %, vor allem wegen begrenzter LNG-Exporte durch die Straße von Hormus. Ohne diesen Effekt wäre die Produktion gegenüber dem Vorjahr um mehr als 4 % gewachsen. Konzernchef Patrick Pouyanné spricht von historischen Raffineriemargen und einem „Bullenmarkt“ bei Gas (aus dem Englischen übersetzt).
+Der Grund liegt im Mix aus Förderung und Raffinerie. Der Brent-Preis fiel im Schnitt von 104 auf 97 Dollar je Barrel (−7 %), das drückt die Förderung. Dafür sprangen die Raffineriemargen: Shell nennt 42 statt 24 Dollar je Barrel, BP 46,7 Dollar. Wer viel verarbeitet und handelt, gewinnt. TotalEnergies meldet im Downstream mit 4,1 Mrd. Dollar einen Rekord, bei Shell steigt der Gewinn in Chemie und Produkten von 2,9 auf 3,9 Mrd. Dollar.
 
-Zum Beginn des vierten Quartals bleibe der Ölpreis über 100 Dollar, schreibt TotalEnergies. Der Markt für Raffinerieprodukte sei „sehr volatil“, die Lagerbestände seien weltweit auf einem Tiefstand. Für Gas erwartet der Konzern im vierten Quartal einen durchschnittlichen LNG-Verkaufspreis von über 14 Dollar je Mbtu. BP legt seinen Annahmen für das vierte Quartal einen Brent-Preis von 110 Dollar je Barrel zugrunde und rechnet weiter mit Störungen im Nahen Osten. Der aktuelle Preis liegt damit über dem Durchschnitt des dritten Quartals und über der BP-Annahme.
+[ExxonMobil](../exxonmobil-q3-2026-quartalszahlen/) legt bereinigt um 19 % zu (14,7 auf 17,5 Mrd. Dollar) und kommt an der US-Küste auf eine Auslastung von 100 %. Bei Chevron sinkt der bereinigte Gewinn von 12,0 auf 10,4 Mrd. Dollar, dazu kommen Rückstellungen von 160 Mio. Dollar und negative Timing-Effekte. Equinor steigert das bereinigte operative Ergebnis um 8 %, nach Steuern bleibt aber weniger übrig als im zweiten Quartal.
 
-Dieser Artikel stellt die sechs Konzerne nebeneinander. Es ist keine Kaufempfehlung.
+## Wohin fließt das Geld?
 
-## Cashflow und Investitionen
+Es gibt drei Wege: investieren, Schulden zurückzahlen, Geld an die Aktionäre geben. Gemessen am operativen Cashflow investiert Equinor mit 40 % am meisten, gefolgt von Shell mit 38 %. BP investiert nur 20 %.
 
-![Cashflow, Investitionen und Free Cashflow im 3. Quartal 2026](/assets/magazin/big-oil-kapitalverwendung-q3-2026-cashflow.png)
-*Eigene Darstellung nach den Quartalsberichten von ExxonMobil, Chevron, Shell, BP, TotalEnergies und Equinor. Definitionen weichen ab.*
+![Wie viel vom Cashflow fließt in Investitionen?](/assets/magazin/big-oil-kapitalverwendung-q3-2026-invest.png)
+*Eigene Darstellung nach den Quartalsberichten. Shell inklusive der Kosten der ARC-Übernahme, Equinor organische Investitionen.*
 
-| Konzern | Bereinigter Gewinn | Operativer Cashflow | Investitionen | Free Cashflow |
+| Konzern | Operativer Cashflow | Investitionen | Free Cashflow | Veränderung zum Vorquartal |
 |---|---|---|---|---|
-| ExxonMobil | 17,5 Mrd. USD | 25,7 Mrd. USD | 7,2 Mrd. USD | 19,1 Mrd. USD |
-| Shell | 10,8 Mrd. USD | 21,0 Mrd. USD | 7,9 Mrd. USD | 16,3 Mrd. USD |
-| Chevron | 10,4 Mrd. USD | 16,0 Mrd. USD | 4,0 Mrd. USD | 12,0 Mrd. USD |
-| BP | 8,5 Mrd. USD | 14,8 Mrd. USD | 3,0 Mrd. USD | 11,8 Mrd. USD* |
-| TotalEnergies | 9,1 Mrd. USD | 12,3 Mrd. USD | 3,3 Mrd. USD | 9,0 Mrd. USD* |
-| Equinor | 2,9 Mrd. USD | 8,1 Mrd. USD | 3,3 Mrd. USD | 5,2 Mrd. USD |
+| ExxonMobil | 25,7 Mrd. USD | 7,2 Mrd. USD | 19,1 Mrd. USD | +11 % |
+| Shell | 21,0 Mrd. USD | 7,9 Mrd. USD | 16,3 Mrd. USD | −7 % |
+| Chevron | 16,0 Mrd. USD | 4,0 Mrd. USD | 12,0 Mrd. USD | −34 % |
+| BP | 14,8 Mrd. USD | 3,0 Mrd. USD | 11,8 Mrd. USD* | +51 %* |
+| TotalEnergies | 12,3 Mrd. USD | 3,3 Mrd. USD | 9,0 Mrd. USD* | +25 % (Cashflow) |
+| Equinor | 8,1 Mrd. USD | 3,3 Mrd. USD | 5,2 Mrd. USD | −5 % |
 
-*Quellen: Quartalsberichte der Konzerne vom 29. und 30.10.2026. Bei BP und TotalEnergies eigene Rechnung (Cashflow minus Investitionen).*
+*Quellen: Quartalsberichte der Konzerne. Der Free Cashflow ist bei ExxonMobil, Chevron und Shell die Angabe der Konzerne und enthält auch weitere Zahlungsströme wie Verkaufserlöse. Bei BP und TotalEnergies eigene Rechnung (Cashflow minus Investitionen). Bei TotalEnergies zählt der Cashflow ohne Betriebskapital, bei Equinor der Cashflow vor Kapitalausschüttung.*
 
-Die Zahlen sind nicht eins zu eins vergleichbar. Bei BP ist der Gewinn der „Underlying Replacement Cost Profit“, bei TotalEnergies zählt der Cashflow ohne Veränderung des Betriebskapitals, bei Equinor der Cashflow nach gezahlten Steuern. Der Free Cashflow stammt bei ExxonMobil, Chevron und Shell von den Konzernen selbst und berücksichtigt auch weitere Zahlungsströme, etwa Verkaufserlöse, deshalb ergibt er nicht immer genau den Cashflow minus Investitionen. Bei Shell sind in den Investitionen die Kosten der Übernahme von ARC Resources enthalten. Bei Equinor entspricht die letzte Spalte dem „Netto-Cashflow vor Kapitalausschüttung“, die Investitionen sind mit 3,3 Mrd. USD die organischen, insgesamt waren es 3,8 Mrd. USD.
+## Aktienrückkäufe: nur Shell legt zu
 
-Auffällig ist Equinor: Dem bereinigten operativen Ergebnis von 12,35 Mrd. USD steht ein bereinigter Nettogewinn von nur 2,86 Mrd. USD gegenüber.
+Die Rückkäufe folgen nicht dem Gewinn. Shell erhöht kräftig, von 3,0 auf 5,0 Mrd. Dollar für die nächsten drei Monate (+67 %). ExxonMobil bleibt bei 5,1 Mrd. Dollar, Equinor bei 1,125 Mrd. Dollar je Tranche. Chevron kürzt von 3,1 auf 2,5 Mrd. Dollar (−20 %). TotalEnergies kauft im dritten Quartal für 1,5 Mrd. Dollar zurück, rund ein Drittel mehr als im Schnitt der ersten beiden Quartale (1,1 Mrd.). Für das vierte und das erste Quartal sind zusammen 2,5 Mrd. Dollar geplant, das sind 1,25 Mrd. je Quartal. BP kauft laut Präsentation nichts zurück.
 
-## Wer zahlt wie viel aus?
+![Aktienrückkäufe: 3. Quartal gegenüber Vorquartal](/assets/magazin/big-oil-kapitalverwendung-q3-2026-rueckkauf.png)
+*Eigene Darstellung nach den Quartalsberichten. Shell: angekündigter Rückkauf für je drei Monate. TotalEnergies: Vorquartal als Schnitt der Quartale eins und zwei.*
 
-| Konzern | Dividende je Aktie | Aktienrückkauf | Vorgabe des Konzerns |
-|---|---|---|---|
-| ExxonMobil | 1,07 USD | 5,1 Mrd. USD im Q3 (Dividenden 4,3 Mrd. USD) | keine Quote genannt |
-| Shell | 0,3906 USD | 5,0 Mrd. USD für die nächsten drei Monate | 40–50 % des operativen Cashflows im Zyklus |
-| Chevron | 1,78 USD | 2,5 Mrd. USD im Q3 | keine Quote genannt |
-| BP | 8,66 US-Cent | laut Präsentation keiner | Schuldenabbau hat Vorrang |
-| TotalEnergies | 0,90 Euro (Zwischendividende) | 1,5 Mrd. USD im Q3, danach 2,5 Mrd. USD für Q4 und Q1 2027 | 40 % des Cashflows |
-| Equinor | 0,39 USD | Tranche über bis zu 1,125 Mrd. USD, Programm 2026 bis zu 3 Mrd. USD | – |
+Gemessen am Free Cashflow ist Shell am großzügigsten und gibt 31 % für Rückkäufe aus. Es folgen ExxonMobil mit 27 %, Equinor mit 22 % und Chevron mit 21 %. TotalEnergies liegt bei 17 %, BP bei null.
+
+![Wie viel vom Free Cashflow geht in Aktienrückkäufe?](/assets/magazin/big-oil-kapitalverwendung-q3-2026-rueckkauf-fcf.png)
+*Eigene Darstellung nach den Quartalsberichten. Shell: angekündigter Rückkauf im Verhältnis zum Free Cashflow des Quartals. TotalEnergies: eigene Rechnung.*
+
+ExxonMobil schüttet insgesamt 9,4 Mrd. Dollar aus, davon 4,3 Mrd. als Dividende. Das sind rund 37 %* des operativen Cashflows und rund 49 %* des Free Cashflows.
+
+## Dividenden: kleine Schritte
+
+Die Dividenden steigen langsamer als die Gewinne. ExxonMobil hebt von 1,03 auf 1,07 Dollar je Aktie (+3,9 %), das ist das 44. Jahr in Folge mit einer Erhöhung. TotalEnergies zahlt eine dritte Zwischendividende von 0,90 Euro, 5,9 % mehr als im Vorjahr. BP zahlt 8,66 US-Cent je Aktie, wie im Vorquartal und rund 4 %* mehr als vor einem Jahr. Chevron (1,78 Dollar) und Equinor (0,39 Dollar) zahlen unverändert. Shell zahlt 0,3906 Dollar und verspricht eine Dividende, die jedes Jahr um etwa 4 % steigt.
+
+## Schulden: BP und TotalEnergies räumen auf
+
+Die Nettoverschuldung sinkt überall. BP drückt sie in einem Quartal von 22,3 auf 13,9 Mrd. Dollar (−38 %), TotalEnergies von 19,7 auf 13,8 Mrd. (−30 %), Chevron von 28,5 auf 20,7 Mrd. (−27 %). Bei Shell sind es 41,8 auf 39,7 Mrd. (−5 %), dort sind aber Leasingverbindlichkeiten eingerechnet, bei den anderen nicht. ExxonMobil hat die Nettoverschuldung seit Jahresbeginn um fast 11 Mrd. auf 22,1 Mrd. Dollar gesenkt*. Equinor meldet das Verhältnis von Nettoschulden zu eingesetztem Kapital: 3,8 % nach 10,4 % im Vorquartal.
+
+![Schuldenabbau im 3. Quartal](/assets/magazin/big-oil-kapitalverwendung-q3-2026-schulden.png)
+*Eigene Darstellung nach den Quartalsberichten. Shell inklusive Leasing. ExxonMobil und Equinor ohne vergleichbare Vorquartalswerte.*
+
+Bei BP ist die Lage damit noch nicht erledigt. Zusammen mit Hybridanleihen, Leasing und dem Vergleich zur Ölpest im Golf von Amerika kommt der Konzern auf Finanzverpflichtungen von 44,3 Mrd. Dollar nach 53,6 Mrd. im Vorquartal. BP selbst nennt sie weiter zu hoch. Die Nettoverschuldung von 13,9 Mrd. Dollar liegt aber schon unter dem Zielkorridor von 14 bis 18 Mrd. Dollar, den der Konzern für Ende 2027 genannt hat.
+
+## Wer setzt worauf?
+
+| Konzern | Schwerpunkt | Das steckt dahinter |
+|---|---|---|
+| ExxonMobil | Aktionäre und Raffinerie | Ausschüttung 9,4 Mrd. USD im Quartal, Rückkäufe unverändert, Struktureinsparungen von 16,9 Mrd. USD seit 2019 |
+| Chevron | Schuldenabbau und Förderung | Nettoschulden −27 %, Rückkäufe gekürzt, geplante Investitionen in Venezuela |
+| Shell | Rückkäufe, Kanada und LNG | Rückkauf +67 %, Übernahme von ARC Resources, Investitionsentscheidung für LNG Canada Phase 2, Investitionen 2026 von 23 bis 25 Mrd. USD |
+| BP | Bilanz | Nettoschulden −38 %, kein Rückkauf, Verkauf von Castrol (rund 6 Mrd. USD erwartet), Investitionen 13,5 bis 14,0 Mrd. USD |
+| TotalEnergies | Gas und LNG, dazu Schulden | Vier Investitionsentscheidungen (Zypern, Nigeria, Abu Dhabi, Aserbaidschan), kauft 4 GW Onshore-Erneuerbare von Shell, Investitionen rund 15 Mrd. USD |
+| Equinor | Förderwachstum | Förderziel 2026 von 3 auf rund 4 % Wachstum angehoben, Gaskraftwerk in den USA, Bay du Nord in Kanada, organisch rund 13 Mrd. USD |
 
 *Quellen: Quartalsberichte und Präsentationen der Konzerne. Keine Anlageberatung.*
 
-ExxonMobil schüttet insgesamt 9,4 Mrd. USD aus. Das sind rund 37 %* des operativen Cashflows von 25,7 Mrd. USD und rund 49 %* des Free Cashflows von 19,1 Mrd. USD. Der Konzern blickt auf 44 aufeinanderfolgende Jahre mit Dividendenerhöhung zurück.
+## Was sich aus den Zahlen ablesen lässt
 
-Bei Chevron entsprechen die 2,5 Mrd. USD Rückkäufe rund 21 %* des Free Cashflows von 12,0 Mrd. USD. Wie viel Dividende Chevron im Quartal tatsächlich gezahlt hat, steht im ausgewerteten Material nicht.
+Einen einfachen Zusammenhang zwischen Gewinn und Ausschüttung gibt es nicht. BP (+49 %) und TotalEnergies (+51 %) haben die größten Gewinnsprünge und erhöhen die Rückkäufe nicht oder kaum. Sie zahlen Schulden zurück (−38 % und −30 %). Chevron, dessen Gewinn fällt, kürzt die Rückkäufe um 20 %. Nur Shell erhöht sie deutlich, obwohl die Nettoverschuldung mit 39,7 Mrd. Dollar die höchste der sechs ist (mit Leasing gerechnet).
 
-Shell hat die Ausschüttungsquote am klarsten benannt, 40 bis 50 % des operativen Cashflows. Der angekündigte Rückkauf liegt mit 5,0 Mrd. USD höher als zuvor. Shell nennt außerdem eine Dividende, die jedes Jahr um etwa 4 % steigt.
+Auch die Investitionsquote erklärt wenig: Equinor und Shell investieren 40 und 38 % ihres Cashflows, kaufen aber 22 und 31 % des Free Cashflows zurück, BP investiert 20 % und kauft nichts zurück. Erklärungsstärker ist die Bilanz. Wo noch Altlasten drücken (BP), fließt das Geld in den Schuldenabbau. Wo die Bilanz aufgeräumt ist (Chevron, TotalEnergies, Equinor), laufen die Rückkäufe moderat weiter. Bei sechs Konzernen ist das ein Muster, keine Statistik.
 
-TotalEnergies verlangsamt den Rückkauf rechnerisch: 2,5 Mrd. USD für zwei Quartale sind 1,25 Mrd. USD* je Quartal, im dritten Quartal waren es 1,5 Mrd. USD. Die Zwischendividende von 0,90 Euro liegt 5,9 % über dem Vorjahr.
-
-Bei BP steht die Dividende bei 8,66 US-Cent je Aktie, im Vorquartal waren es ebenfalls 8,66 Cent, vor einem Jahr 8,32 Cent, also rund 4,1 %* mehr. Gezahlt hat BP im dritten Quartal 1,3 Mrd. USD Dividenden.
-
-Equinor zahlt unverändert 0,39 US-Dollar je Aktie und kauft weiter Aktien zurück.
-
-![Aktienrückkäufe im Überblick](/assets/magazin/big-oil-kapitalverwendung-q3-2026-rueckkauf.png)
-*Eigene Darstellung nach den Quartalsberichten. Shell: angekündigter Rückkauf für drei Monate, Equinor: laufende Tranche.*
-
-## Wer tilgt Schulden?
-
-| Konzern | Nettoverschuldung | Kennzahl |
-|---|---|---|
-| ExxonMobil | 22,1 Mrd. USD* | 34,3 Mrd. USD Bruttoschulden minus 12,2 Mrd. USD Barmittel |
-| Shell | 39,7 Mrd. USD (Vorquartal 41,8) | Gearing 16,6 % (ohne Leasing 2,7 %) |
-| Chevron | 20,7 Mrd. USD (Jahresende 2025: 34,5) | Net-Debt-Ratio 9,6 % |
-| BP | 13,9 Mrd. USD (Vorquartal 22,3) | zusätzlich 12,1 Mrd. USD Hybridanleihen und 13,3 Mrd. USD Leasing |
-| TotalEnergies | 13,8 Mrd. USD (Vorquartal 19,7) | Gearing 9,1 % (Vorquartal 13,1 %) |
-| Equinor | – | Nettoschulden zu eingesetztem Kapital 3,8 % (Vorquartal 10,4 %) |
-
-*Quellen: Quartalsberichte der Konzerne. Die Definitionen von „Nettoverschuldung“ unterscheiden sich: Bei Shell ist Leasing eingerechnet, bei BP und TotalEnergies nicht.*
-
-BP ist der Sonderfall. Die Nettoverschuldung ist in einem Quartal um 8,4 Mrd. USD gesunken, die sogenannten Finanzverpflichtungen (Nettoschulden, Hybridanleihen, Leasing und der Gulf-of-America-Vergleich) von 53,6 auf 44,3 Mrd. USD. Die Konzernleitung nennt sie weiterhin „zu hoch“. Mit 13,9 Mrd. USD liegt die Nettoverschuldung bereits unter dem Zielkorridor von 14 bis 18 Mrd. USD, den BP für Ende 2027 nennt. Die Präsentation nennt die Stärkung der Bilanz als erste Priorität und weist keinen Aktienrückkauf aus.
-
-TotalEnergies senkte das Gearing in einem Quartal um vier Prozentpunkte auf 9,1 %, Equinor von 10,4 auf 3,8 %.
-
-![Nettoverschuldung Ende September 2026](/assets/magazin/big-oil-kapitalverwendung-q3-2026-schulden.png)
-*Eigene Darstellung nach den Quartalsberichten. Shell inklusive Leasing, die übrigen ohne. Für Equinor liegt nur eine Quote vor.*
-
-## Wer stellt sich wie auf?
-
-| Konzern | Investitionen 2026 | Wohin das Geld strategisch geht | Besonderheit im Quartal |
-|---|---|---|---|
-| ExxonMobil | – | Raffinerien und Förderung, Struktureinsparungen 16,9 Mrd. USD seit 2019 | höchster Free Cashflow der Gruppe |
-| Chevron | 4,0 Mrd. USD im Q3 | Ausbau der Förderung, geplante Investitionen in Venezuela | Schulden in neun Monaten von 40,8 auf 33,5 Mrd. USD gesenkt |
-| Shell | 23–25 Mrd. USD (mit ARC), 2027/28: 20–22 Mrd. USD je Jahr | Kanada: ARC-Übernahme, Investitionsentscheidung für LNG Canada Phase 2 | Verkäufe von Randgeschäften (z. B. Jiffy Lube) |
-| BP | 13,5–14,0 Mrd. USD | Schulden und Hybridkapital abbauen, Portfolio verschlanken | Verkauf von Castrol (rund 6 Mrd. USD erwartet), Verkäufe insgesamt rund 8 Mrd. USD |
-| TotalEnergies | rund 15 Mrd. USD | Gas und LNG, vier Investitionsentscheidungen (Zypern, Nigeria, Abu Dhabi, Aserbaidschan) | übernimmt 4 GW Onshore-Erneuerbare von Shell, verkauft 50 % eines 1,2-GW-Portfolios an KKR |
-| Equinor | rund 13 Mrd. USD (organisch) | Förderung auf Rekordniveau, Gaskraftwerk in den USA, Bay du Nord (Kanada) | Förderziel für 2026 von 3 auf rund 4 % Wachstum angehoben |
-
-*Quellen: Quartalsberichte und Präsentationen der Konzerne. Bei ExxonMobil und Chevron stammen die Angaben aus den Meldungen vom 30.10.2026 und unseren Quartalsartikeln. Keine Anlageberatung.*
-
-## Was daraus folgt
-
-Die Konzerne wählen unterschiedliche Wege: Die Amerikaner und Shell bevorzugen große Rückkäufe, TotalEnergies und Equinor halten die Rückkäufe moderat und senken die Schulden, BP stellt die Bilanz vor die Aktionärsrendite. Für Dividendenanleger sind das unterschiedliche Signale. Eine hohe Rückkaufsumme hängt vom Cashflow und damit von den Margen im Raffineriegeschäft ab. Die Dividende selbst ist bei TotalEnergies gestiegen und bei BP und Equinor gleich geblieben. 
-Die Positionierung lässt sich in drei Sätzen zusammenfassen. ExxonMobil und Chevron schütten viel aus und bauen zugleich Schulden ab. Shell setzt auf Kanada und LNG und trennt sich von Randgeschäften, TotalEnergies setzt auf Gas und LNG und kauft nebenbei Erneuerbaren-Portfolios. BP stellt Bilanz und Portfolio an die erste Stelle. Equinor wächst in der Förderung und investiert zusätzlich in ein Gaskraftwerk in den USA.
-
-Eines fehlt in dieser Übersicht noch: die Aussicht auf den Ölpreis selbst. Alle Zahlen beschreiben das dritte Quartal. Ob die Raffineriemargen und der Ölpreis auf diesem Niveau bleiben, lässt sich aus den Berichten nicht ablesen. Das ist keine Empfehlung und keine Prognose, sondern der Vergleich der berichteten Zahlen.
+Für das vierte Quartal sind die Voraussetzungen besser als im Durchschnitt des dritten. Brent liegt mit rund 117 Dollar deutlich über den 97 Dollar des Quartalsdurchschnitts und über den 110 Dollar, mit denen BP plant. Ob die Konzerne ihr Geld dann anders verteilen, zeigen erst die nächsten Berichte. Das ist keine Kaufempfehlung und keine Prognose, sondern der Vergleich der berichteten Zahlen.
 
 ## Quellen
 
-- ExxonMobil, Quartalsbericht Q3 2026 (SEC-Meldung vom 30.10.2026)
-- Chevron, Quartalsbericht Q3 2026 (SEC-Meldung vom 30.10.2026)
-- Shell plc, Präsentation zum dritten Quartal 2026, 29.10.2026
+- ExxonMobil, Quartalsberichte Q2 und Q3 2026 (SEC-Meldungen, [Q2](https://www.sec.gov/Archives/edgar/data/0002115436/000211543626000006/livef8k2q26991.htm))
+- Chevron, Quartalsberichte Q2 und Q3 2026 (SEC-Meldungen, [Q2](https://www.sec.gov/Archives/edgar/data/0000093410/000009341026000162/a06302026ex9918-k.htm))
+- Shell plc, Präsentation zum dritten Quartal 2026 (29.10.2026) und [Pressemitteilung zum zweiten Quartal](https://www.investegate.co.uk/announcement/gnw/shell--shel/shell-plc-publishes-second-quarter-2026-press-/9694970)
 - BP, Präsentation zum dritten Quartal 2026
-- TotalEnergies, Pressemitteilung zum dritten Quartal 2026, 29.10.2026
+- TotalEnergies, Pressemitteilung zum dritten Quartal 2026 (29.10.2026)
 - Equinor, Quartalsbericht Q3 2026
-- Berliner Zeitung, Berichte zu Kraftstoffengpässen in Russland, Benzinimporten aus Indien und zur Verlängerung des Benzinexportstopps: [Benzinimporte aus Indien](https://www.berliner-zeitung.de/article/kraftstoffengpaesse-in-russland-moskau-greift-auf-benzin-importe-aus-indien-zurueck-bericht-10155342), [Exportstopp bis Ende Januar 2027](https://www.berliner-zeitung.de/article/russland-verlaengert-benzinexportstopp-bis-ende-januar-2027-10249784)
+- Berliner Zeitung, Berichte zu Kraftstoffengpässen in Russland: [Benzinimporte aus Indien](https://www.berliner-zeitung.de/article/kraftstoffengpaesse-in-russland-moskau-greift-auf-benzin-importe-aus-indien-zurueck-bericht-10155342), [Exportstopp bis Ende Januar 2027](https://www.berliner-zeitung.de/article/russland-verlaengert-benzinexportstopp-bis-ende-januar-2027-10249784)

@@ -134,7 +134,7 @@ def draw_vergleich(chart, path):
             t = ("%g" % val).replace(".", ","); tf = ia.font(26, True)
             d.text(((x0 + x1) / 2 - d.textlength(t, font=tf) / 2, (y0 - 36) if val >= 0 else (y1 + 6)), t, font=tf, fill=dark)
         lf = ia.font(26, True)
-        d.text((gx + gw * 0.36 - d.textlength(f, font=lf) / 2, bot + 24), f, font=lf, fill=dark)
+        d.text((gx + gw * 0.36 - d.textlength(f, font=lf) / 2, bot + 24 + (40 if vmin < 0 else 0)), f, font=lf, fill=dark)
     d.text((70, H - 50), "Quelle: Unternehmensberichte, eigene Darstellung  ·  dividenden-rechner.de", font=ia.font(22), fill=grey)
     im.save(path, "PNG", optimize=True)
     return True
