@@ -6,6 +6,11 @@ author: "Redaktions-Team Dividenden-Rechner.de"
 author_bio: "Das Redaktions-Team von Dividenden-Rechner.de schreibt über Dividendenaktien, Kennzahlen und Steuerthemen für Privatanleger. Die Rechner und Auswertungen auf der Seite entstehen im eigenen Haus."
 category: Analyse
 kein_logo: ja
+image: assets/magazin/ki-finanzierungsnetz-nvidia-meta-coreweave-foto.jpg
+image_alt: "Foto zu Das: Data Center của CMC Telecom"
+image_credit: "Foto: Daoducquan / Wikimedia Commons, CC BY-SA 4.0"
+image_source: https://commons.wikimedia.org/wiki/File:Data_Center_c%E1%BB%A7a_CMC_Telecom_(2).jpg
+image_artist_url: 
 ---
 <!-- PRÜFEN: Thema und Reihenfolge nach einem Kommentar des Wall Street Journal (J. Mackintosh, 1.11.2026) und einer Netzwerk-Grafik von Dritten. Von dort wurden keine Zahlen übernommen. Die Grafik mit Marktwerten und weiteren Beträgen (z. B. Nvidia/OpenAI „bis zu 100 Mrd.“, Alphabet/Anthropic, Amazon/OpenAI) ist nicht belegt und wurde bewusst nicht verwendet. -->
 <!-- PRÜFEN: Meta-Kapitalerhöhung (25 Mrd. Dollar Stammaktien zu 625 Dollar, 12,5 Mrd. Wandel-Vorzugsaktien zu 6,50 %, Interesse der drei Chipfirmen bis 5 Mrd., Nvidia 3 Mrd., AMD 1 Mrd.) stammt aus Meta-Mitteilungen laut fourweekmba.com und aa.com.tr. Bitte gegen die Meta-Pressemitteilung (SEC) prüfen. Brodcom-Betrag ist nicht genannt. -->
