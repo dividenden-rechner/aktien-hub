@@ -1,255 +1,157 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:dc="http://purl.org/dc/elements/1.1/">
-<channel><title>Dividenden-Rechner Aktien-Hub: News</title><link>https://dividenden-rechner.github.io/aktien-hub/news/</link><description>Dividenden, Kennzahlen und Steuern erklärt</description><language>de-DE</language><lastBuildDate>Sat, 31 Oct 2026 23:44:11 +0000</lastBuildDate><atom:link href="https://dividenden-rechner.github.io/aktien-hub/news/feed.xml" rel="self" type="application/rss+xml"/>
+<channel><title>Dividenden-Rechner Aktien-Hub: News</title><link>https://dividenden-rechner.github.io/aktien-hub/news/</link><description>Dividenden, Kennzahlen und Steuern erklärt</description><language>de-DE</language><lastBuildDate>Sun, 01 Nov 2026 02:47:28 +0000</lastBuildDate><atom:link href="https://dividenden-rechner.github.io/aktien-hub/news/feed.xml" rel="self" type="application/rss+xml"/>
 <item><title>Big Oil im Quartalsvergleich: Wer zahlt aus, wer tilgt, wer investiert?</title><link>https://dividenden-rechner.github.io/aktien-hub/news/big-oil-kapitalverwendung-q3-2026/</link><guid isPermaLink="true">https://dividenden-rechner.github.io/aktien-hub/news/big-oil-kapitalverwendung-q3-2026/</guid><pubDate>Sat, 31 Oct 2026 15:40:00 +0100</pubDate><category>Analyse</category><dc:creator>Aus der Redaktion</dc:creator><description>Exxon, Chevron, Shell, BP, TotalEnergies und Equinor im dritten Quartal 2026: Cashflow, Dividenden, Aktienrückkäufe und Schulden im Vergleich.</description><enclosure url="https://images.unsplash.com/photo-1678984239420-43cdc183bce6?ixid=M3wxMTE3OTgzfDB8MXxzZWFyY2h8MXx8cmVmaW5lcnklMjB0b3dlcnN8ZW58MXwwfHx8MTc5MzQ2NjM5Mnww&amp;ixlib=rb-4.1.0&amp;w=1600&amp;h=900&amp;fit=crop&amp;crop=entropy&amp;q=80&amp;fm=jpg" type="image/jpeg" length="0"/><content:encoded><![CDATA[<div class="admonition kurz">
 <p class="admonition-title">Kurz gesagt</p>
 <p><strong>Lage:</strong> Der Iran-Krieg treibt den Ölpreis, der Ukraine-Konflikt den Dieselpreis. Brent liegt zuletzt bei rund 117, WTI bei rund 107 Dollar.
-<strong>Frage:</strong> Was machen Exxon, Chevron, Shell, BP, TotalEnergies und Equinor mit ihren Gewinnen?</p>
+<strong>Ergebnis:</strong> Gegenüber dem Vorjahr verdienen die Konzerne deutlich mehr. Gegenüber dem Vorquartal ist das Bild gemischt: TotalEnergies +51 %, BP +49 %, Chevron −14 %, Equinor −11 %.</p>
 <ol>
-<li><strong>Rückkäufe:</strong> ExxonMobil gibt 5,1 Mrd. USD für <a class="glossar-link" href="https://dividenden-rechner.github.io/aktien-hub/fortgeschrittene/shareholder-yield/" title="Shareholder Yield: Dividenden, Aktienrückkäufe und Schuldentilgung zusammen">Aktienrückkäufe</a> aus, Shell kündigt neue 5,0 Mrd. USD an, Chevron verwendet 2,5 Mrd. USD. TotalEnergies hat 1,5 Mrd. USD eingesetzt, Equinor startet eine Tranche über bis zu 1,1 Mrd. USD.</li>
-<li><strong>Schulden:</strong> BP senkt die <a class="glossar-link" href="https://dividenden-rechner.github.io/aktien-hub/grundlagen/verschuldung/" title="Verschuldung bewerten: Net Debt/EBITDA, Zinsdeckung und Eigenkapitalquote">Nettoverschuldung</a> in einem Quartal von 22,3 auf 13,9 Mrd. USD und kauft laut Präsentation keine Aktien zurück.</li>
-<li><strong>Dividenden:</strong> TotalEnergies hebt die Zwischendividende um 5,9 % auf 0,90 Euro, BP und Equinor zahlen die Dividende des Vorquartals unverändert weiter.</li>
+<li><strong>Rückkäufe:</strong> Nur Shell erhöht kräftig, von 3,0 auf 5,0 Mrd. USD (+67 %). ExxonMobil und Equinor bleiben unverändert, Chevron kürzt um 20 %, BP kauft nichts zurück.</li>
+<li><strong>Schulden:</strong> Sie sinken überall, am stärksten bei BP (−38 %), TotalEnergies (−30 %) und Chevron (−27 %).</li>
+<li><strong>Dividenden:</strong> ExxonMobil hebt um 3,9 % auf 1,07 USD, TotalEnergies um 5,9 % auf 0,90 Euro. Chevron und Equinor zahlen unverändert.</li>
 </ol>
 </div>
 <h2 id="geopolitik-treibt-ol-und-diesel">Geopolitik treibt Öl und Diesel</h2>
 <p>Der Iran-Krieg treibt den Ölpreis, der Ukraine-Konflikt den Dieselpreis. Brent kostet zuletzt rund 117 Dollar je Barrel, WTI rund 107 Dollar. Noch stärker als Rohöl verteuern sich Raffinerieprodukte wie Diesel und Heizöl.</p>
-<p>Beide Konflikte verstärken sich. In Russland haben ukrainische Angriffe Raffinerien zerstört. Das Land, sonst ein großer Exporteur von Raffinerieprodukten, muss Berichten zufolge Benzin aus Indien einführen und hat seinen Benzinexportstopp bis Ende Januar 2027 verlängert. Gleichzeitig kommt aus dem Iran wieder mehr Öl per Schiff auf den Markt, auch in den USA kommt es an. Weil die Lager weltweit auf einem Tiefstand sind, wie TotalEnergies schreibt, füllt dieses Öl keine Tanks auf. Es wird sofort in die Raffinerien gedrückt, die daraus Diesel und Heizöl machen. Das hält die Preise der Raffinerieprodukte hoch, und mit ihnen die Margen der Konzerne.</p>
-<p>Daraus ergibt sich die Frage dieses Artikels: Machen die großen Energiekonzerne in den USA und vor allem in Europa tatsächlich mehr Gewinn? Wohin fließt das Geld? Und was schreiben sie dazu in ihren Berichten für das dritte Quartal, das Ende September zu Ende ging?</p>
-<p>Die kurze Antwort: Ja, sie verdienen deutlich mehr, und das Geld geht in drei Richtungen. Es fließt in Aktienrückkäufe, in den Schuldenabbau und in neue Projekte, vor allem Gas und LNG. Die Dividenden steigen dagegen kaum.</p>
-<h2 id="was-die-konzerne-selbst-zu-preisen-und-konflikt-schreiben">Was die Konzerne selbst zu Preisen und Konflikt schreiben</h2>
-<p>Im Schnitt lag Brent im dritten Quartal bei 97 US-Dollar je Barrel, nach 104 Dollar im zweiten Quartal (Shell). Was die Ergebnisse trug, waren vor allem die Margen im Raffineriegeschäft. Shell nennt für seine indikative Raffineriemarge 42 Dollar je Barrel nach 24 Dollar im Vorquartal, BP 46,7 Dollar. <a href="https://dividenden-rechner.github.io/aktien-hub/exxonmobil-q3-2026-quartalszahlen/">ExxonMobil</a> meldet eine Auslastung von 100 % an den Raffinerien an der US-Küste, <a href="https://dividenden-rechner.github.io/aktien-hub/chevron-q3-2026-ergebnisse/">Chevron</a> spricht von Rekorden in den US-Raffinerien. Bei Chevron stieg der Nettogewinn von 3,54 auf 9,9 Mrd. USD.</p>
-<p>TotalEnergies beziffert die Folgen des Konflikts für die eigene Förderung im dritten Quartal auf rund 5 %, vor allem wegen begrenzter LNG-Exporte durch die Straße von Hormus. Ohne diesen Effekt wäre die Produktion gegenüber dem Vorjahr um mehr als 4 % gewachsen. Konzernchef Patrick Pouyanné spricht von historischen Raffineriemargen und einem „Bullenmarkt“ bei Gas (aus dem Englischen übersetzt).</p>
-<p>Zum Beginn des vierten Quartals bleibe der Ölpreis über 100 Dollar, schreibt TotalEnergies. Der Markt für Raffinerieprodukte sei „sehr volatil“, die Lagerbestände seien weltweit auf einem Tiefstand. Für Gas erwartet der Konzern im vierten Quartal einen durchschnittlichen LNG-Verkaufspreis von über 14 Dollar je Mbtu. BP legt seinen Annahmen für das vierte Quartal einen Brent-Preis von 110 Dollar je Barrel zugrunde und rechnet weiter mit Störungen im Nahen Osten. Der aktuelle Preis liegt damit über dem Durchschnitt des dritten Quartals und über der BP-Annahme.</p>
-<p>Dieser Artikel stellt die sechs Konzerne nebeneinander. Es ist keine Kaufempfehlung.</p>
-<h2 id="cashflow-und-investitionen">Cashflow und Investitionen</h2>
-<p><img alt="Cashflow, Investitionen und Free Cashflow im 3. Quartal 2026" src="https://dividenden-rechner.github.io/aktien-hub/assets/magazin/big-oil-kapitalverwendung-q3-2026-cashflow.png" />
-<em>Eigene Darstellung nach den Quartalsberichten von ExxonMobil, Chevron, Shell, BP, TotalEnergies und Equinor. Definitionen weichen ab.</em></p>
+<p>Beide Konflikte verstärken sich. In Russland haben ukrainische Angriffe Raffinerien zerstört. Das Land, sonst ein großer Exporteur von Raffinerieprodukten, muss Berichten zufolge Benzin aus Indien einführen und hat seinen Benzinexportstopp bis Ende Januar 2027 verlängert. Gleichzeitig kommt aus dem Iran wieder mehr Öl per Schiff auf den Markt, auch in den USA kommt es an. Weil die Lager weltweit auf einem Tiefstand sind, füllt dieses Öl keine Tanks auf. Es geht sofort in die Raffinerien, die daraus Diesel und Heizöl machen. Das hält die Preise der Raffinerieprodukte hoch und mit ihnen die Margen der Konzerne.</p>
+<p>Die Konzerne rechnen nicht mit schneller Entspannung. TotalEnergies sieht den Ölpreis auch zu Beginn des vierten Quartals über 100 Dollar, bei Raffinerieprodukten spricht der Konzern von einem „sehr volatilen“ Markt. Für LNG erwartet TotalEnergies im vierten Quartal im Schnitt über 14 Dollar je Mbtu. BP plant das vierte Quartal mit 110 Dollar je Barrel und rechnet weiter mit Störungen im Nahen Osten. Konzernchef Patrick Pouyanné spricht von historischen Raffineriemargen und einem „Bullenmarkt“ bei Gas (aus dem Englischen übersetzt).</p>
+<h2 id="verdienen-die-konzerne-wirklich-mehr">Verdienen die Konzerne wirklich mehr?</h2>
+<p>Gegenüber dem Vorjahr ja, und zwar kräftig. <a href="https://dividenden-rechner.github.io/aktien-hub/chevron-q3-2026-ergebnisse/">Chevron</a> hat den Nettogewinn von 3,54 auf 9,9 Mrd. Dollar fast verdreifacht (+180 %). BP verdient bereinigt 8,5 statt 2,2 Mrd. Dollar. Gegenüber dem zweiten Quartal ist das Bild gemischt:</p>
+<p><img alt="Gewinn im 3. Quartal gegenüber dem 2. Quartal" src="https://dividenden-rechner.github.io/aktien-hub/assets/magazin/big-oil-kapitalverwendung-q3-2026-gewinn.png" />
+<em>Eigene Darstellung nach den Quartalsberichten von Q2 und Q3 2026. Bereinigte Gewinne, bei BP der „Underlying Replacement Cost Profit“, bei Equinor der bereinigte Nettogewinn.</em></p>
+<p>Der Grund liegt im Mix aus Förderung und Raffinerie. Der Brent-Preis fiel im Schnitt von 104 auf 97 Dollar je Barrel (−7 %), das drückt die Förderung. Dafür sprangen die Raffineriemargen: Shell nennt 42 statt 24 Dollar je Barrel, BP 46,7 Dollar. Wer viel verarbeitet und handelt, gewinnt. TotalEnergies meldet im Downstream mit 4,1 Mrd. Dollar einen Rekord, bei Shell steigt der Gewinn in Chemie und Produkten von 2,9 auf 3,9 Mrd. Dollar.</p>
+<p><a href="https://dividenden-rechner.github.io/aktien-hub/exxonmobil-q3-2026-quartalszahlen/">ExxonMobil</a> legt bereinigt um 19 % zu (14,7 auf 17,5 Mrd. Dollar) und kommt an der US-Küste auf eine Auslastung von 100 %. Bei Chevron sinkt der bereinigte Gewinn von 12,0 auf 10,4 Mrd. Dollar, dazu kommen Rückstellungen von 160 Mio. Dollar und negative Timing-Effekte. Equinor steigert das bereinigte operative Ergebnis um 8 %, nach Steuern bleibt aber weniger übrig als im zweiten Quartal.</p>
+<h2 id="wohin-fliet-das-geld">Wohin fließt das Geld?</h2>
+<p>Es gibt drei Wege: investieren, Schulden zurückzahlen, Geld an die Aktionäre geben. Gemessen am operativen Cashflow investiert Equinor mit 40 % am meisten, gefolgt von Shell mit 38 %. BP investiert nur 20 %.</p>
+<p><img alt="Wie viel vom Cashflow fließt in Investitionen?" src="https://dividenden-rechner.github.io/aktien-hub/assets/magazin/big-oil-kapitalverwendung-q3-2026-invest.png" />
+<em>Eigene Darstellung nach den Quartalsberichten. Shell inklusive der Kosten der ARC-Übernahme, Equinor organische Investitionen.</em></p>
 <div class="tablewrap"><table>
 <thead>
 <tr>
 <th>Konzern</th>
-<th>Bereinigter Gewinn</th>
 <th>Operativer Cashflow</th>
 <th>Investitionen</th>
 <th>Free Cashflow</th>
+<th>Veränderung zum Vorquartal</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td>ExxonMobil</td>
-<td>17,5 Mrd. USD</td>
 <td>25,7 Mrd. USD</td>
 <td>7,2 Mrd. USD</td>
 <td>19,1 Mrd. USD</td>
+<td>+11 %</td>
 </tr>
 <tr>
 <td>Shell</td>
-<td>10,8 Mrd. USD</td>
 <td>21,0 Mrd. USD</td>
 <td>7,9 Mrd. USD</td>
 <td>16,3 Mrd. USD</td>
+<td>−7 %</td>
 </tr>
 <tr>
 <td>Chevron</td>
-<td>10,4 Mrd. USD</td>
 <td>16,0 Mrd. USD</td>
 <td>4,0 Mrd. USD</td>
 <td>12,0 Mrd. USD</td>
+<td>−34 %</td>
 </tr>
 <tr>
 <td>BP</td>
-<td>8,5 Mrd. USD</td>
 <td>14,8 Mrd. USD</td>
 <td>3,0 Mrd. USD</td>
 <td>11,8 Mrd. USD*</td>
+<td>+51 %*</td>
 </tr>
 <tr>
 <td>TotalEnergies</td>
-<td>9,1 Mrd. USD</td>
 <td>12,3 Mrd. USD</td>
 <td>3,3 Mrd. USD</td>
 <td>9,0 Mrd. USD*</td>
+<td>+25 % (Cashflow)</td>
 </tr>
 <tr>
 <td>Equinor</td>
-<td>2,9 Mrd. USD</td>
 <td>8,1 Mrd. USD</td>
 <td>3,3 Mrd. USD</td>
 <td>5,2 Mrd. USD</td>
+<td>−5 %</td>
 </tr>
 </tbody>
 </table></div>
-<p><em>Quellen: Quartalsberichte der Konzerne vom 29. und 30.10.2026. Bei BP und TotalEnergies eigene Rechnung (Cashflow minus Investitionen).</em></p>
-<p>Die Zahlen sind nicht eins zu eins vergleichbar. Bei BP ist der Gewinn der „Underlying Replacement Cost Profit“, bei TotalEnergies zählt der Cashflow ohne Veränderung des Betriebskapitals, bei Equinor der Cashflow nach gezahlten Steuern. Der <a class="glossar-link" href="https://dividenden-rechner.github.io/aktien-hub/grundlagen/free-cashflow/" title="Free Cashflow: Wie viel Geld bleibt wirklich übrig?">Free Cashflow</a> stammt bei ExxonMobil, Chevron und Shell von den Konzernen selbst und berücksichtigt auch weitere Zahlungsströme, etwa Verkaufserlöse, deshalb ergibt er nicht immer genau den Cashflow minus Investitionen. Bei Shell sind in den Investitionen die Kosten der Übernahme von ARC Resources enthalten. Bei Equinor entspricht die letzte Spalte dem „Netto-Cashflow vor Kapitalausschüttung“, die Investitionen sind mit 3,3 Mrd. USD die organischen, insgesamt waren es 3,8 Mrd. USD.</p>
-<p>Auffällig ist Equinor: Dem bereinigten operativen Ergebnis von 12,4 Mrd. USD steht ein bereinigter Nettogewinn von nur 2,9 Mrd. USD gegenüber.</p>
-<h2 id="wer-zahlt-wie-viel-aus">Wer zahlt wie viel aus?</h2>
+<p><em>Quellen: Quartalsberichte der Konzerne. Der Free Cashflow ist bei ExxonMobil, Chevron und Shell die Angabe der Konzerne und enthält auch weitere Zahlungsströme wie Verkaufserlöse. Bei BP und TotalEnergies eigene Rechnung (Cashflow minus Investitionen). Bei TotalEnergies zählt der Cashflow ohne Betriebskapital, bei Equinor der Cashflow vor Kapitalausschüttung.</em></p>
+<h2 id="aktienruckkaufe-nur-shell-legt-zu">Aktienrückkäufe: nur Shell legt zu</h2>
+<p>Die Rückkäufe folgen nicht dem Gewinn. Shell erhöht kräftig, von 3,0 auf 5,0 Mrd. Dollar für die nächsten drei Monate (+67 %). ExxonMobil bleibt bei 5,1 Mrd. Dollar, Equinor bei 1,1 Mrd. Dollar je Tranche. Chevron kürzt von 3,1 auf 2,5 Mrd. Dollar (−20 %). TotalEnergies kauft im dritten Quartal für 1,5 Mrd. Dollar zurück, rund ein Drittel mehr als im Schnitt der ersten beiden Quartale (1,1 Mrd.). Für das vierte und das erste Quartal sind zusammen 2,5 Mrd. Dollar geplant, das sind 1,3 Mrd. je Quartal. BP kauft laut Präsentation nichts zurück.</p>
+<p><img alt="Aktienrückkäufe: 3. Quartal gegenüber Vorquartal" src="https://dividenden-rechner.github.io/aktien-hub/assets/magazin/big-oil-kapitalverwendung-q3-2026-rueckkauf.png" />
+<em>Eigene Darstellung nach den Quartalsberichten. Shell: angekündigter Rückkauf für je drei Monate. TotalEnergies: Vorquartal als Schnitt der Quartale eins und zwei.</em></p>
+<p>Gemessen am <a class="glossar-link" href="https://dividenden-rechner.github.io/aktien-hub/grundlagen/free-cashflow/" title="Free Cashflow: Wie viel Geld bleibt wirklich übrig?">Free Cashflow</a> ist Shell am großzügigsten und gibt 31 % für Rückkäufe aus. Es folgen ExxonMobil mit 27 %, Equinor mit 22 % und Chevron mit 21 %. TotalEnergies liegt bei 17 %, BP bei null.</p>
+<p><img alt="Wie viel vom Free Cashflow geht in Aktienrückkäufe?" src="https://dividenden-rechner.github.io/aktien-hub/assets/magazin/big-oil-kapitalverwendung-q3-2026-rueckkauf-fcf.png" />
+<em>Eigene Darstellung nach den Quartalsberichten. Shell: angekündigter Rückkauf im Verhältnis zum Free Cashflow des Quartals. TotalEnergies: eigene Rechnung.</em></p>
+<p>ExxonMobil schüttet insgesamt 9,4 Mrd. Dollar aus, davon 4,3 Mrd. als Dividende. Das sind rund 37 %* des operativen Cashflows und rund 49 %* des Free Cashflows.</p>
+<h2 id="dividenden-kleine-schritte">Dividenden: kleine Schritte</h2>
+<p>Die Dividenden steigen langsamer als die Gewinne. ExxonMobil hebt von 1,03 auf 1,07 Dollar je Aktie (+3,9 %), das ist das 44. Jahr in Folge mit einer Erhöhung. TotalEnergies zahlt eine dritte Zwischendividende von 0,90 Euro, 5,9 % mehr als im Vorjahr. BP zahlt 8,66 US-Cent je Aktie, wie im Vorquartal und rund 4 %* mehr als vor einem Jahr. Chevron (1,78 Dollar) und Equinor (0,39 Dollar) zahlen unverändert. Shell zahlt 0,3906 Dollar und verspricht eine Dividende, die jedes Jahr um etwa 4 % steigt.</p>
+<h2 id="schulden-bp-und-totalenergies-raumen-auf">Schulden: BP und TotalEnergies räumen auf</h2>
+<p>Die <a class="glossar-link" href="https://dividenden-rechner.github.io/aktien-hub/grundlagen/verschuldung/" title="Verschuldung bewerten: Net Debt/EBITDA, Zinsdeckung und Eigenkapitalquote">Nettoverschuldung</a> sinkt überall. BP drückt sie in einem Quartal von 22,3 auf 13,9 Mrd. Dollar (−38 %), TotalEnergies von 19,7 auf 13,8 Mrd. (−30 %), Chevron von 28,5 auf 20,7 Mrd. (−27 %). Bei Shell sind es 41,8 auf 39,7 Mrd. (−5 %), dort sind aber Leasingverbindlichkeiten eingerechnet, bei den anderen nicht. ExxonMobil hat die Nettoverschuldung seit Jahresbeginn um fast 11 Mrd. auf 22,1 Mrd. Dollar gesenkt*. Equinor meldet das Verhältnis von Nettoschulden zu eingesetztem Kapital: 3,8 % nach 10,4 % im Vorquartal.</p>
+<p><img alt="Schuldenabbau im 3. Quartal" src="https://dividenden-rechner.github.io/aktien-hub/assets/magazin/big-oil-kapitalverwendung-q3-2026-schulden.png" />
+<em>Eigene Darstellung nach den Quartalsberichten. Shell inklusive Leasing. ExxonMobil und Equinor ohne vergleichbare Vorquartalswerte.</em></p>
+<p>Bei BP ist die Lage damit noch nicht erledigt. Zusammen mit Hybridanleihen, Leasing und dem Vergleich zur Ölpest im Golf von Amerika kommt der Konzern auf Finanzverpflichtungen von 44,3 Mrd. Dollar nach 53,6 Mrd. im Vorquartal. BP selbst nennt sie weiter zu hoch. Die Nettoverschuldung von 13,9 Mrd. Dollar liegt aber schon unter dem Zielkorridor von 14 bis 18 Mrd. Dollar, den der Konzern für Ende 2027 genannt hat.</p>
+<h2 id="wer-setzt-worauf">Wer setzt worauf?</h2>
 <div class="tablewrap"><table>
 <thead>
 <tr>
 <th>Konzern</th>
-<th>Dividende je Aktie</th>
-<th>Aktienrückkauf</th>
-<th>Vorgabe des Konzerns</th>
+<th>Schwerpunkt</th>
+<th>Das steckt dahinter</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td>ExxonMobil</td>
-<td>1,07 USD</td>
-<td>5,1 Mrd. USD im Q3 (Dividenden 4,3 Mrd. USD)</td>
-<td>keine Quote genannt</td>
-</tr>
-<tr>
-<td>Shell</td>
-<td>0,3906 USD</td>
-<td>5,0 Mrd. USD für die nächsten drei Monate</td>
-<td>40–50 % des operativen Cashflows im Zyklus</td>
+<td>Aktionäre und Raffinerie</td>
+<td>Ausschüttung 9,4 Mrd. USD im Quartal, Rückkäufe unverändert, Struktureinsparungen von 16,9 Mrd. USD seit 2019</td>
 </tr>
 <tr>
 <td>Chevron</td>
-<td>1,78 USD</td>
-<td>2,5 Mrd. USD im Q3</td>
-<td>keine Quote genannt</td>
+<td>Schuldenabbau und Förderung</td>
+<td>Nettoschulden −27 %, Rückkäufe gekürzt, geplante Investitionen in Venezuela</td>
+</tr>
+<tr>
+<td>Shell</td>
+<td>Rückkäufe, Kanada und LNG</td>
+<td>Rückkauf +67 %, Übernahme von ARC Resources, Investitionsentscheidung für LNG Canada Phase 2, Investitionen 2026 von 23 bis 25 Mrd. USD</td>
 </tr>
 <tr>
 <td>BP</td>
-<td>8,66 US-Cent</td>
-<td>laut Präsentation keiner</td>
-<td>Schuldenabbau hat Vorrang</td>
+<td>Bilanz</td>
+<td>Nettoschulden −38 %, kein Rückkauf, Verkauf von Castrol (rund 6 Mrd. USD erwartet), Investitionen 13,5 bis 14,0 Mrd. USD</td>
 </tr>
 <tr>
 <td>TotalEnergies</td>
-<td>0,90 Euro (Zwischendividende)</td>
-<td>1,5 Mrd. USD im Q3, danach 2,5 Mrd. USD für Q4 und Q1 2027</td>
-<td>40 % des Cashflows</td>
+<td>Gas und LNG, dazu Schulden</td>
+<td>Vier Investitionsentscheidungen (Zypern, Nigeria, Abu Dhabi, Aserbaidschan), kauft 4 GW Onshore-Erneuerbare von Shell, Investitionen rund 15 Mrd. USD</td>
 </tr>
 <tr>
 <td>Equinor</td>
-<td>0,39 USD</td>
-<td>Tranche über bis zu 1,1 Mrd. USD, Programm 2026 bis zu 3 Mrd. USD</td>
-<td>–</td>
+<td>Förderwachstum</td>
+<td>Förderziel 2026 von 3 auf rund 4 % Wachstum angehoben, Gaskraftwerk in den USA, Bay du Nord in Kanada, organisch rund 13 Mrd. USD</td>
 </tr>
 </tbody>
 </table></div>
 <p><em>Quellen: Quartalsberichte und Präsentationen der Konzerne. Keine Anlageberatung.</em></p>
-<p>ExxonMobil schüttet insgesamt 9,4 Mrd. USD aus. Das sind rund 37 %* des operativen Cashflows von 25,7 Mrd. USD und rund 49 %* des Free Cashflows von 19,1 Mrd. USD. Der Konzern blickt auf 44 aufeinanderfolgende Jahre mit <a class="glossar-link" href="https://dividenden-rechner.github.io/aktien-hub/fortgeschrittene/dividendenwachstum/" title="Dividendenwachstum: Warum steigende Dividenden zählen">Dividendenerhöhung</a> zurück.</p>
-<p>Bei Chevron entsprechen die 2,5 Mrd. USD Rückkäufe rund 21 %* des Free Cashflows von 12,0 Mrd. USD. Wie viel Dividende Chevron im Quartal tatsächlich gezahlt hat, steht im ausgewerteten Material nicht.</p>
-<p>Shell hat die <a class="glossar-link" href="https://dividenden-rechner.github.io/aktien-hub/grundlagen/ausschuettungsquote/" title="Ausschüttungsquote (Payout Ratio): Wie sicher ist die Dividende?">Ausschüttungsquote</a> am klarsten benannt, 40 bis 50 % des operativen Cashflows. Der angekündigte Rückkauf liegt mit 5,0 Mrd. USD höher als zuvor. Shell nennt außerdem eine Dividende, die jedes Jahr um etwa 4 % steigt.</p>
-<p>TotalEnergies verlangsamt den Rückkauf rechnerisch: 2,5 Mrd. USD für zwei Quartale sind 1,3 Mrd. USD* je Quartal, im dritten Quartal waren es 1,5 Mrd. USD. Die Zwischendividende von 0,90 Euro liegt 5,9 % über dem Vorjahr.</p>
-<p>Bei BP steht die Dividende bei 8,66 US-Cent je Aktie, im Vorquartal waren es ebenfalls 8,66 Cent, vor einem Jahr 8,32 Cent, also rund 4,1 %* mehr. Gezahlt hat BP im dritten Quartal 1,3 Mrd. USD Dividenden.</p>
-<p>Equinor zahlt unverändert 0,39 US-Dollar je Aktie und kauft weiter Aktien zurück.</p>
-<p><img alt="Aktienrückkäufe im Überblick" src="https://dividenden-rechner.github.io/aktien-hub/assets/magazin/big-oil-kapitalverwendung-q3-2026-rueckkauf.png" />
-<em>Eigene Darstellung nach den Quartalsberichten. Shell: angekündigter Rückkauf für drei Monate, Equinor: laufende Tranche.</em></p>
-<h2 id="wer-tilgt-schulden">Wer tilgt Schulden?</h2>
-<div class="tablewrap"><table>
-<thead>
-<tr>
-<th>Konzern</th>
-<th>Nettoverschuldung</th>
-<th>Kennzahl</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>ExxonMobil</td>
-<td>22,1 Mrd. USD*</td>
-<td>34,3 Mrd. USD Bruttoschulden minus 12,2 Mrd. USD Barmittel</td>
-</tr>
-<tr>
-<td>Shell</td>
-<td>39,7 Mrd. USD (Vorquartal 41,8)</td>
-<td>Gearing 16,6 % (ohne Leasing 2,7 %)</td>
-</tr>
-<tr>
-<td>Chevron</td>
-<td>20,7 Mrd. USD (Jahresende 2025: 34,5)</td>
-<td>Net-Debt-Ratio 9,6 %</td>
-</tr>
-<tr>
-<td>BP</td>
-<td>13,9 Mrd. USD (Vorquartal 22,3)</td>
-<td>zusätzlich 12,1 Mrd. USD Hybridanleihen und 13,3 Mrd. USD Leasing</td>
-</tr>
-<tr>
-<td>TotalEnergies</td>
-<td>13,8 Mrd. USD (Vorquartal 19,7)</td>
-<td>Gearing 9,1 % (Vorquartal 13,1 %)</td>
-</tr>
-<tr>
-<td>Equinor</td>
-<td>–</td>
-<td>Nettoschulden zu eingesetztem Kapital 3,8 % (Vorquartal 10,4 %)</td>
-</tr>
-</tbody>
-</table></div>
-<p><em>Quellen: Quartalsberichte der Konzerne. Die Definitionen von „Nettoverschuldung“ unterscheiden sich: Bei Shell ist Leasing eingerechnet, bei BP und TotalEnergies nicht.</em></p>
-<p>BP ist der Sonderfall. Die Nettoverschuldung ist in einem Quartal um 8,4 Mrd. USD gesunken, die sogenannten Finanzverpflichtungen (Nettoschulden, Hybridanleihen, Leasing und der Gulf-of-America-Vergleich) von 53,6 auf 44,3 Mrd. USD. Die Konzernleitung nennt sie weiterhin „zu hoch“. Mit 13,9 Mrd. USD liegt die Nettoverschuldung bereits unter dem Zielkorridor von 14 bis 18 Mrd. USD, den BP für Ende 2027 nennt. Die Präsentation nennt die Stärkung der Bilanz als erste Priorität und weist keinen Aktienrückkauf aus.</p>
-<p>TotalEnergies senkte das Gearing in einem Quartal um vier Prozentpunkte auf 9,1 %, Equinor von 10,4 auf 3,8 %.</p>
-<p><img alt="Nettoverschuldung Ende September 2026" src="https://dividenden-rechner.github.io/aktien-hub/assets/magazin/big-oil-kapitalverwendung-q3-2026-schulden.png" />
-<em>Eigene Darstellung nach den Quartalsberichten. Shell inklusive Leasing, die übrigen ohne. Für Equinor liegt nur eine Quote vor.</em></p>
-<h2 id="wer-stellt-sich-wie-auf">Wer stellt sich wie auf?</h2>
-<div class="tablewrap"><table>
-<thead>
-<tr>
-<th>Konzern</th>
-<th>Investitionen 2026</th>
-<th>Wohin das Geld strategisch geht</th>
-<th>Besonderheit im Quartal</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>ExxonMobil</td>
-<td>–</td>
-<td>Raffinerien und Förderung, Struktureinsparungen 16,9 Mrd. USD seit 2019</td>
-<td>höchster Free Cashflow der Gruppe</td>
-</tr>
-<tr>
-<td>Chevron</td>
-<td>4,0 Mrd. USD im Q3</td>
-<td>Ausbau der Förderung, geplante Investitionen in Venezuela</td>
-<td>Schulden in neun Monaten von 40,8 auf 33,5 Mrd. USD gesenkt</td>
-</tr>
-<tr>
-<td>Shell</td>
-<td>23–25 Mrd. USD (mit ARC), 2027/28: 20–22 Mrd. USD je Jahr</td>
-<td>Kanada: ARC-Übernahme, Investitionsentscheidung für LNG Canada Phase 2</td>
-<td>Verkäufe von Randgeschäften (z. B. Jiffy Lube)</td>
-</tr>
-<tr>
-<td>BP</td>
-<td>13,5–14,0 Mrd. USD</td>
-<td>Schulden und Hybridkapital abbauen, Portfolio verschlanken</td>
-<td>Verkauf von Castrol (rund 6 Mrd. USD erwartet), Verkäufe insgesamt rund 8 Mrd. USD</td>
-</tr>
-<tr>
-<td>TotalEnergies</td>
-<td>rund 15 Mrd. USD</td>
-<td>Gas und LNG, vier Investitionsentscheidungen (Zypern, Nigeria, Abu Dhabi, Aserbaidschan)</td>
-<td>übernimmt 4 GW Onshore-Erneuerbare von Shell, verkauft 50 % eines 1,2-GW-Portfolios an KKR</td>
-</tr>
-<tr>
-<td>Equinor</td>
-<td>rund 13 Mrd. USD (organisch)</td>
-<td>Förderung auf Rekordniveau, Gaskraftwerk in den USA, Bay du Nord (Kanada)</td>
-<td>Förderziel für 2026 von 3 auf rund 4 % Wachstum angehoben</td>
-</tr>
-</tbody>
-</table></div>
-<p><em>Quellen: Quartalsberichte und Präsentationen der Konzerne. Bei ExxonMobil und Chevron stammen die Angaben aus den Meldungen vom 30.10.2026 und unseren Quartalsartikeln. Keine Anlageberatung.</em></p>
-<h2 id="was-daraus-folgt">Was daraus folgt</h2>
-<p>Die Konzerne wählen unterschiedliche Wege: Die Amerikaner und Shell bevorzugen große Rückkäufe, TotalEnergies und Equinor halten die Rückkäufe moderat und senken die Schulden, BP stellt die Bilanz vor die Aktionärsrendite. Für Dividendenanleger sind das unterschiedliche Signale. Eine hohe Rückkaufsumme hängt vom Cashflow und damit von den Margen im Raffineriegeschäft ab. Die Dividende selbst ist bei TotalEnergies gestiegen und bei BP und Equinor gleich geblieben. 
-Die Positionierung lässt sich in drei Sätzen zusammenfassen. ExxonMobil und Chevron schütten viel aus und bauen zugleich Schulden ab. Shell setzt auf Kanada und LNG und trennt sich von Randgeschäften, TotalEnergies setzt auf Gas und LNG und kauft nebenbei Erneuerbaren-Portfolios. BP stellt Bilanz und Portfolio an die erste Stelle. Equinor wächst in der Förderung und investiert zusätzlich in ein Gaskraftwerk in den USA.</p>
-<p>Eines fehlt in dieser Übersicht noch: die Aussicht auf den Ölpreis selbst. Alle Zahlen beschreiben das dritte Quartal. Ob die Raffineriemargen und der Ölpreis auf diesem Niveau bleiben, lässt sich aus den Berichten nicht ablesen. Das ist keine Empfehlung und keine Prognose, sondern der Vergleich der berichteten Zahlen.</p>
+<h2 id="was-sich-aus-den-zahlen-ablesen-lasst">Was sich aus den Zahlen ablesen lässt</h2>
+<p>Einen einfachen Zusammenhang zwischen Gewinn und Ausschüttung gibt es nicht. BP (+49 %) und TotalEnergies (+51 %) haben die größten Gewinnsprünge und erhöhen die Rückkäufe nicht oder kaum. Sie zahlen Schulden zurück (−38 % und −30 %). Chevron, dessen Gewinn fällt, kürzt die Rückkäufe um 20 %. Nur Shell erhöht sie deutlich, obwohl die Nettoverschuldung mit 39,7 Mrd. Dollar die höchste der sechs ist (mit Leasing gerechnet).</p>
+<p>Auch die Investitionsquote erklärt wenig: Equinor und Shell investieren 40 und 38 % ihres Cashflows, kaufen aber 22 und 31 % des Free Cashflows zurück, BP investiert 20 % und kauft nichts zurück. Erklärungsstärker ist die Bilanz. Wo noch Altlasten drücken (BP), fließt das Geld in den Schuldenabbau. Wo die Bilanz aufgeräumt ist (Chevron, TotalEnergies, Equinor), laufen die Rückkäufe moderat weiter. Bei sechs Konzernen ist das ein Muster, keine Statistik.</p>
+<p>Für das vierte Quartal sind die Voraussetzungen besser als im Durchschnitt des dritten. Brent liegt mit rund 117 Dollar deutlich über den 97 Dollar des Quartalsdurchschnitts und über den 110 Dollar, mit denen BP plant. Ob die Konzerne ihr Geld dann anders verteilen, zeigen erst die nächsten Berichte. Das ist keine Kaufempfehlung und keine Prognose, sondern der Vergleich der berichteten Zahlen.</p>
 <h2 id="quellen">Quellen</h2>
 <ul>
-<li>ExxonMobil, Quartalsbericht Q3 2026 (SEC-Meldung vom 30.10.2026)</li>
-<li>Chevron, Quartalsbericht Q3 2026 (SEC-Meldung vom 30.10.2026)</li>
-<li>Shell plc, Präsentation zum dritten Quartal 2026, 29.10.2026</li>
+<li>ExxonMobil, Quartalsberichte Q2 und Q3 2026 (SEC-Meldungen, <a href="https://www.sec.gov/Archives/edgar/data/0002115436/000211543626000006/livef8k2q26991.htm" rel="noopener">Q2</a>)</li>
+<li>Chevron, Quartalsberichte Q2 und Q3 2026 (SEC-Meldungen, <a href="https://www.sec.gov/Archives/edgar/data/0000093410/000009341026000162/a06302026ex9918-k.htm" rel="noopener">Q2</a>)</li>
+<li>Shell plc, Präsentation zum dritten Quartal 2026 (29.10.2026) und <a href="https://www.investegate.co.uk/announcement/gnw/shell--shel/shell-plc-publishes-second-quarter-2026-press-/9694970" rel="noopener">Pressemitteilung zum zweiten Quartal</a></li>
 <li>BP, Präsentation zum dritten Quartal 2026</li>
-<li>TotalEnergies, Pressemitteilung zum dritten Quartal 2026, 29.10.2026</li>
+<li>TotalEnergies, Pressemitteilung zum dritten Quartal 2026 (29.10.2026)</li>
 <li>Equinor, Quartalsbericht Q3 2026</li>
-<li>Berliner Zeitung, Berichte zu Kraftstoffengpässen in Russland, Benzinimporten aus Indien und zur Verlängerung des Benzinexportstopps: <a href="https://www.berliner-zeitung.de/article/kraftstoffengpaesse-in-russland-moskau-greift-auf-benzin-importe-aus-indien-zurueck-bericht-10155342" rel="noopener">Benzinimporte aus Indien</a>, <a href="https://www.berliner-zeitung.de/article/russland-verlaengert-benzinexportstopp-bis-ende-januar-2027-10249784" rel="noopener">Exportstopp bis Ende Januar 2027</a></li>
+<li>Berliner Zeitung, Berichte zu Kraftstoffengpässen in Russland: <a href="https://www.berliner-zeitung.de/article/kraftstoffengpaesse-in-russland-moskau-greift-auf-benzin-importe-aus-indien-zurueck-bericht-10155342" rel="noopener">Benzinimporte aus Indien</a>, <a href="https://www.berliner-zeitung.de/article/russland-verlaengert-benzinexportstopp-bis-ende-januar-2027-10249784" rel="noopener">Exportstopp bis Ende Januar 2027</a></li>
 </ul>]]></content:encoded></item>
 <item><title>Ingersoll Rand ernennt neue Führungskräfte und verlängert Vertrag von CEO Vicente Reynal</title><link>https://dividenden-rechner.github.io/aktien-hub/news/ingersoll-rand-fuehrungswechsel-oktober-2026/</link><guid isPermaLink="true">https://dividenden-rechner.github.io/aktien-hub/news/ingersoll-rand-fuehrungswechsel-oktober-2026/</guid><pubDate>Fri, 30 Oct 2026 23:48:00 +0100</pubDate><category>Management</category><dc:creator>Aus der Redaktion</dc:creator><description>Ingersoll Rand meldet Fuehrungswechsel im Management und die Verlaenderung des CEO-Vertrags im Oktober 2026.</description><enclosure url="https://dividenden-rechner.github.io/aktien-hub/assets/magazin/ingersoll-rand-fuehrungswechsel-oktober-2026.png" type="image/png" length="0"/><content:encoded><![CDATA[<p>Ingersoll Rand hat am 30. Oktober 2026 wichtige personelle Veraenderungen im Fuehrungsteam bekannt gegeben. Scott Watson uebernimmt als Senior Vice President und Group President den Bereich Industrial Technologies and Services North America and EMEIA. Shaun Carlson wird neuer Senior Vice President und Group President fuer das Segment Precision and Science Technologies. Die Ernennungen erfolgen im Rahmen interner Beförderungen, waehrend Mike Weatherred nach einer Uebergangsphase in den Ruhestand geht. Zudem hat der Verwaltungsrat einen neuen Anstellungsvertrag mit dem Vorstandsvorsitzenden Vicente Reynal genehmigt.</p>
 <h2 id="fuehrungswechsel-nach-ueber-80-akquisitionen">Fuehrungswechsel nach ueber 80 Akquisitionen</h2>
@@ -279,7 +181,7 @@ Die Positionierung lässt sich in drei Sätzen zusammenfassen. ExxonMobil und Ch
 <h2 id="warum-intel-allein-den-markt-nicht-erklart">Warum Intel allein den Markt nicht erklärt</h2>
 <p>Der Freitag war der Höhepunkt einer Woche, in der die Stimmung gegenüber der künstlichen Intelligenz gekippt ist. Auf eine Erholung nach dem Börsenantrag (S-1) von Anthropic folgte der Einbruch bei <a href="https://dividenden-rechner.github.io/aktien-hub/alphabet-q3-2026-quartalszahlen/">Alphabet</a>, dessen Aktie nach Angaben des Wall Street Journal den schlechtesten Tag ihrer Geschichte hatte. Am Donnerstagabend legten Amazon und Intel nach.</p>
 <p><a href="https://dividenden-rechner.github.io/aktien-hub/intel-q3-2026-zahlen/"><strong>Intel</strong></a> traf es am härtesten: Die Aktie verlor rund 30 %, laut Wall Street Journal der größte Tagesverlust, den es bei dem Konzern je gab. Seit Anfang Juli ist sie nach den Daten des Handelsblatts von 109,10 auf 59,32 US-Dollar gefallen, ein Minus von 45,6 %. Der Grund liegt im Kerngeschäft: Die hohen Preise für Speicherchips bremsen den PC-Absatz. Hinzu kommt ein Ausblick, den das Handelsblatt als massiv unter den Erwartungen beschreibt. Die Details zu den Zahlen stehen in unserer Analyse.</p>
-<p><a class="fkarte" href="https://dividenden-rechner.github.io/aktien-hub/news/intel-q3-2026-zahlen/"><span class="fk-h"><img class="fk-logo" src="https://dividenden-rechner.github.io/aktien-hub/assets/logos/intc.png" alt="" width="36" height="36" loading="lazy"><span class="fk-t"><b>Intel</b><small>INTC</small></span><span class=go>Analyse lesen →</span></span><div class="fk-grid"><div class="fk-k"><small>Umsatz je Geschäftsjahr</small><b>52,9 Mrd. $</b><em class="down">−0 %</em><svg viewBox="0 0 130 54" class="fk-ch" role="img" aria-hidden="true"><line x1="0" x2="130" y1="44.0" y2="44.0" stroke="#dfe5ea"/><rect x="8.3" y="4.0" width="16" height="40.0" rx="2" fill="#cddcf8"/><text x="16.3" y="53" font-size="7.5" text-anchor="middle" fill="#5d6b78">2021</text><rect x="32.7" y="12.1" width="16" height="31.9" rx="2" fill="#cddcf8"/><rect x="57.0" y="16.6" width="16" height="27.4" rx="2" fill="#cddcf8"/><rect x="81.3" y="17.1" width="16" height="26.9" rx="2" fill="#cddcf8"/><rect x="105.7" y="17.2" width="16" height="26.8" rx="2" fill="#2f6fdb"/><text x="113.7" y="53" font-size="7.5" text-anchor="middle" fill="#5d6b78">2025</text></svg></div><div class="fk-k"><small>Nettogewinn je Geschäftsjahr</small><b>−267 Mio. $</b><svg viewBox="0 0 130 54" class="fk-ch" role="img" aria-hidden="true"><line x1="0" x2="130" y1="24.6" y2="24.6" stroke="#dfe5ea"/><rect x="8.3" y="4.0" width="16" height="20.6" rx="2" fill="#cddcf8"/><text x="16.3" y="53" font-size="7.5" text-anchor="middle" fill="#5d6b78">2021</text><rect x="32.7" y="16.3" width="16" height="8.3" rx="2" fill="#cddcf8"/><rect x="57.0" y="22.8" width="16" height="1.7" rx="2" fill="#cddcf8"/><rect x="81.3" y="24.6" width="16" height="19.4" rx="2" fill="#e8a5a5"/><rect x="105.7" y="24.6" width="16" height="1.5" rx="2" fill="#d64545"/><text x="113.7" y="53" font-size="7.5" text-anchor="middle" fill="#5d6b78">2025</text></svg></div></div><span class="fk-src">Quelle: Financial Modeling Prep, Stand 31.10.2026</span></a></p>
+<p><a class="fkarte" href="https://dividenden-rechner.github.io/aktien-hub/news/intel-q3-2026-zahlen/"><span class="fk-h"><img class="fk-logo" src="https://dividenden-rechner.github.io/aktien-hub/assets/logos/intc.png" alt="" width="36" height="36" loading="lazy"><span class="fk-t"><b>Intel</b><small>INTC</small></span><span class=go>Analyse lesen →</span></span><div class="fk-grid"><div class="fk-k"><small>Umsatz je Geschäftsjahr</small><b>52,9 Mrd. $</b><em class="down">−0 %</em><svg viewBox="0 0 130 54" class="fk-ch" role="img" aria-hidden="true"><line x1="0" x2="130" y1="44.0" y2="44.0" stroke="#dfe5ea"/><rect x="8.3" y="4.0" width="16" height="40.0" rx="2" fill="#cddcf8"/><text x="16.3" y="53" font-size="7.5" text-anchor="middle" fill="#5d6b78">2021</text><rect x="32.7" y="12.1" width="16" height="31.9" rx="2" fill="#cddcf8"/><rect x="57.0" y="16.6" width="16" height="27.4" rx="2" fill="#cddcf8"/><rect x="81.3" y="17.1" width="16" height="26.9" rx="2" fill="#cddcf8"/><rect x="105.7" y="17.2" width="16" height="26.8" rx="2" fill="#2f6fdb"/><text x="113.7" y="53" font-size="7.5" text-anchor="middle" fill="#5d6b78">2025</text></svg></div><div class="fk-k"><small>Nettogewinn je Geschäftsjahr</small><b>−267 Mio. $</b><svg viewBox="0 0 130 54" class="fk-ch" role="img" aria-hidden="true"><line x1="0" x2="130" y1="24.6" y2="24.6" stroke="#dfe5ea"/><rect x="8.3" y="4.0" width="16" height="20.6" rx="2" fill="#cddcf8"/><text x="16.3" y="53" font-size="7.5" text-anchor="middle" fill="#5d6b78">2021</text><rect x="32.7" y="16.3" width="16" height="8.3" rx="2" fill="#cddcf8"/><rect x="57.0" y="22.8" width="16" height="1.7" rx="2" fill="#cddcf8"/><rect x="81.3" y="24.6" width="16" height="19.4" rx="2" fill="#e8a5a5"/><rect x="105.7" y="24.6" width="16" height="1.5" rx="2" fill="#d64545"/><text x="113.7" y="53" font-size="7.5" text-anchor="middle" fill="#5d6b78">2025</text></svg></div></div><span class="fk-src">Quelle: Financial Modeling Prep, Stand 01.11.2026</span></a></p>
 <p><strong>Amazon</strong> lieferte ein gemischtes Bild. Der Nettogewinn lag im dritten Quartal über 20 Milliarden Dollar, das Cloud-Geschäft wuchs so stark wie seit Jahren nicht. Der freie Cashflow brach jedoch ein, und die Aktie gab zeitweise bis zu 8 % nach, am Ende blieb ein Minus von etwa 1,5 bis 2 %. Der Markt wollte nach der Alphabet-Enttäuschung mehr sehen. Dazu passt, was John Higgins von Capital Economics dem Wall Street Journal sagte: Die Anleger würden nervöser, weil der Investitionsboom der Cloud-Konzerne teils von externer Finanzierung abhängt.</p>
 <p>Auch der Speicherspezialist <a href="https://dividenden-rechner.github.io/aktien-hub/sandisk-q1-2027-zahlen/">SanDisk</a> und der Cloud-Anbieter Coreweave gaben nach Angaben des Handelsblatts deutlich nach. Wie sehr die Furcht vor dem Ende des KI-Booms auch Firmen abseits der Technologie trifft, zeigt <a href="https://dividenden-rechner.github.io/aktien-hub/caterpillar-q3-2026-zahlen/"><strong>Caterpillar</strong></a>. Der Maschinenbauer profitierte von der Nachfrage der Rechenzentren nach Generatoren. Die Aktie ist im Monatsverlauf um über 20 % gefallen, obwohl die <a class="glossar-link" href="https://dividenden-rechner.github.io/aktien-hub/grundlagen/quartalszahlen-lesen/" title="Quartalszahlen lesen: Umsatz, Gewinn, Ausblick richtig einordnen">Quartalszahlen</a> nach Angaben des Journals solide waren.</p>
 <h2 id="die-indizes-im-uberblick">Die Indizes im Überblick</h2>
