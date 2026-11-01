@@ -19,7 +19,7 @@ Datei anklicken, dann Stift-Symbol: Zeile `draft: true` löschen und speichern, 
 
 | Datum | Titel | Datei |
 |---|---|---|
-| 31.10.2026 15:40 | Big Oil im Quartalsvergleich: Wer zahlt aus, wer tilgt, wer investiert? | [79738968_2026-10-31/8459_1540-big-oil-kapitalverwendung-q3-2026.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/79738968_2026-10-31/8459_1540-big-oil-kapitalverwendung-q3-2026.md) |
+| 31.10.2026 15:40 | Big Oil verdient am Krieg, tilgt aber zuerst Schulden | [79738968_2026-10-31/8459_1540-big-oil-kapitalverwendung-q3-2026.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/79738968_2026-10-31/8459_1540-big-oil-kapitalverwendung-q3-2026.md) |
 | 30.10.2026 23:48 | Ingersoll Rand ernennt neue Führungskräfte und verlängert Vertrag von CEO Vicente Reynal | [79738969_2026-10-30/7651_2348-ingersoll-rand-fuehrungswechsel-oktober-2026.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/79738969_2026-10-30/7651_2348-ingersoll-rand-fuehrungswechsel-oktober-2026.md) |
 | 30.10.2026 23:48 | Arch Capital Group: Tochter übernimmt Premier Dealer Services | [79738969_2026-10-30/7651_2348-arch-capital-group-uebernimmt-premier-dealer-services.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/79738969_2026-10-30/7651_2348-arch-capital-group-uebernimmt-premier-dealer-services.md) |
 | 30.10.2026 23:46 | General Dynamics steigert Q3-Gewinn je Aktie auf 4,49 US-Dollar | [79738969_2026-10-30/7653_2346-general-dynamics-q3-2026-zahlen.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/79738969_2026-10-30/7653_2346-general-dynamics-q3-2026-zahlen.md) |
