@@ -469,6 +469,18 @@ def kurz_points(md_text):
     return out[:3]
 
 
+def kurz_story_text(md_text, limit=520):
+    """Einleitungsabsatz einer Kurzmeldung (vor der ersten Zwischenueberschrift) als Story-Text, an einer Satzgrenze gekuerzt."""
+    t = re.sub(r"<!--.*?-->", "", md_text, flags=re.S)
+    first = next((x.strip() for x in re.split(r"\n\s*\n", t) if x.strip() and not x.lstrip().startswith(("#", "!", "|", ">", "-", "*", "["))), "")
+    first = re.sub(r"\*\*|\*|_", "", first)
+    first = re.sub(r"\[([^\]]+)\]\([^)]*\)", r"\1", first).replace("\n", " ")
+    if len(first) <= limit: return first
+    cut = first[:limit]
+    i = max(cut.rfind(". "), cut.rfind("! "), cut.rfind("? "))
+    return cut[:i + 1] if i > 150 else cut.rsplit(" ", 1)[0] + " …"
+
+
 def story_vorlage(p):
     """Welche Instagram-Vorlage zu welcher Rubrik passt (Dateien in assets/story-vorlagen)."""
     c = (p.get("category") or "").lower()
@@ -493,6 +505,12 @@ def share_html(p, url, img):
     story = {"title": p["title"], "lines": kurz_lines(p.get("body_md", "")), "points": kurz_points(p.get("body_md", "")), "ct": ct, "img": img,
              "logo": ("../../" + lf) if lf and not lf.endswith(".mono.png") and os.path.exists(lf) else "", "cat": p.get("category", ""),
              "tpl": "../../assets/story-vorlagen/" + story_vorlage(p) + ".png"}
+    if p.get("typ") == "kurz":
+        # Kurzmeldung: kein Kasten mit Kennzahlen, daher der Einleitungstext als Story-Text; ohne eigenes Foto bleibt das Bildfeld weg
+        story["text"] = kurz_story_text(p.get("body_md", ""))
+        story["ct"] = (story["ct"] + " · " if story["ct"] else "") + p["dt"].strftime("%d.%m.%Y")
+        if not p.get("image"):
+            story["img"] = ""
     links = [
         ("x", "Auf X teilen", "https://twitter.com/intent/tweet?text=" + q(x_text) + "&url=" + q(page)),
         ("facebook", "Auf Facebook teilen", "https://www.facebook.com/sharer/sharer.php?u=" + q(page)),

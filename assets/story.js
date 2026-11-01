@@ -78,6 +78,8 @@
     while (fs > 26 && layout(false, ph, fs) > LIM) fs -= 1;
     while (photo && ph > 200 && layout(false, ph, fs) > LIM) ph -= 20;
     while (photo && ph < 620 && layout(false, ph + 20, fs) <= LIM - 20) ph += 20;
+    /* Ohne Foto (Kurzmeldungen) die Schrift vergroessern, damit die Story die Flaeche fuellt. */
+    while (!photo && fs < 54 && layout(false, ph, fs + 1) <= LIM - 140) fs += 1;
     var yy = layout(true, ph, fs);
     if (S.text) {
       var lh2 = Math.round((fs + 2) * 1.35); c.fillStyle = "#33414d"; c.font = "400 " + (fs + 2) + "px " + F;
