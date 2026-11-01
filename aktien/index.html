@@ -60,6 +60,21 @@ svg text{fill:var(--mut);font-size:11px;font-family:inherit}
 .wlh:hover,.wlh:focus-visible{background:#f0f8f3;color:var(--ink)}
 .igh{width:28px;height:28px;display:inline-grid;place-items:center;border:0;border-radius:6px;background:none;color:var(--mut);cursor:pointer;padding:0}
 .igh:hover,.igh:focus-visible{background:#f0f8f3;color:var(--ink)}
+
+.kc{margin:16px 0 4px}
+.kc .kt{display:flex;flex-wrap:wrap;align-items:baseline;gap:2px 14px;min-height:30px}
+.kc .kt b{font-size:15px}.kc .kt span{font-size:14px;color:var(--mut)}
+.kc .rubriken{margin:6px 0 8px}
+.kc svg{touch-action:pan-y;cursor:crosshair}
+.kc .ks{display:grid;grid-template-columns:repeat(3,1fr);gap:0 28px;margin-top:6px;border-top:1px solid var(--line)}
+.kc .ks div{display:flex;justify-content:space-between;gap:10px;padding:7px 0;border-bottom:1px solid var(--line);font-size:14px}
+.kc .ks span{color:var(--mut)}.kc .ks b{font-weight:600;font-variant-numeric:tabular-nums;white-space:nowrap}
+@media(max-width:700px){.kc .ks{grid-template-columns:1fr 1fr}}
+@media(max-width:420px){.kc .ks{grid-template-columns:1fr}}
+.grid>.card:last-child:nth-child(odd){grid-column:1/-1}
+.kc .rubriken .rb{flex:none;font:inherit;font-size:14px;font-weight:500;padding:6px 0 8px;border:0;border-bottom:2px solid transparent;margin-bottom:-1px;background:none;color:#8a97a3;cursor:pointer;border-radius:0}
+.kc .rubriken .rb:hover{color:#5b6874}.kc .rubriken .rb.on{color:#33414d;font-weight:600;border-bottom-color:#8a97a3}
+.kc .rubriken{display:flex;gap:18px;border-bottom:1px solid var(--line);overflow-x:auto;white-space:nowrap;scrollbar-width:none}
 .stk h3{font-size:15px;margin:22px 0 8px;color:var(--mut);font-weight:600}
 .stk table{width:100%;border-collapse:collapse;font-size:14px;border-top:1px solid var(--line);table-layout:fixed}
 .stk td{padding:9px 6px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top;overflow-wrap:anywhere}
@@ -380,6 +395,69 @@ function line(title,pts){
 }
 
 
+
+/* Kurschart mit Zeitraum-Auswahl (Tageskurse, letzter Punkt = aktueller Kurs) */
+function kursChart(sym,cur,pr,q,price){
+  const S=pr.map(x=>({d:x.date,v:+x.price})).filter(x=>isFinite(x.v));
+  const nowD=new Date().toISOString().slice(0,10);
+  if(price!=null&&isFinite(price)&&S.length&&nowD>=S[S.length-1].d){if(S[S.length-1].d===nowD)S[S.length-1].v=+price;else S.push({d:nowD,v:+price})}
+  const id="kc"+Math.random().toString(36).slice(2,7);
+  const R=[["1M","1 Monat"],["6M","6 Monate"],["YTD","seit Jahresbeginn"],["1Y","1 Jahr"],["5Y","5 Jahre"],["MAX","Maximum"]];
+  const f=(o,...ks)=>{for(const k of ks)if(o&&o[k]!=null&&isFinite(o[k]))return +o[k]};
+  const stats=[["Eröffnung",f(q,"open")],["Tageshoch",f(q,"dayHigh")],["Tagestief",f(q,"dayLow")],["Vortag",f(q,"previousClose")],["52-Wochen-Hoch",f(q,"yearHigh")],["52-Wochen-Tief",f(q,"yearLow")]].filter(x=>x[1]!=null);
+  const vol=f(q,"volume");if(vol!=null)stats.push(["Handelsvolumen",big(vol)]);
+  const html=`<div class="kc" id="${id}"><div class="kt" aria-live="polite"></div><div class="rubriken" role="tablist" aria-label="Zeitraum">${R.map((r,i)=>`<button type="button" class="rb${r[0]==="1Y"?" on":""}" data-r="${r[0]}" role="tab" aria-selected="${r[0]==="1Y"}">${r[0]==="MAX"?"Max":r[0]}</button>`).join("")}</div><div class="kcs"></div>${stats.length?`<div class="ks">${stats.map(x=>`<div><span>${x[0]}</span><b>${typeof x[1]==="string"?x[1]:num(x[1])}</b></div>`).join("")}</div>`:""}</div>`;
+  let full=null;
+  function slice(r){
+    const last=S[S.length-1];if(!last)return [];const t=new Date(last.d);let from;
+    if(r==="1M"){from=new Date(t);from.setMonth(from.getMonth()-1)}
+    else if(r==="6M"){from=new Date(t);from.setMonth(from.getMonth()-6)}
+    else if(r==="YTD"){from=new Date(t.getFullYear()-1,11,31)}
+    else if(r==="1Y"){from=new Date(t);from.setFullYear(from.getFullYear()-1)}
+    else if(r==="5Y"){from=new Date(t);from.setFullYear(from.getFullYear()-5)}
+    else from=new Date(0);
+    const fd=from.toISOString().slice(0,10),src=r==="MAX"&&full?full:S;
+    let a=src.filter(x=>x.d>=fd);if(a.length<2)a=src.slice(-2);
+    return a;
+  }
+  function draw(root,r){
+    let a=slice(r);const box=root.querySelector(".kcs"),top=root.querySelector(".kt");
+    if(a.length<2){box.innerHTML='<p class="desc">Keine Kursdaten verfügbar.</p>';top.innerHTML="";return}
+    const stp=Math.max(1,Math.ceil(a.length/360)),b=a.filter((_,i)=>i%stp===0||i===a.length-1);
+    const W=720,H=270,pl=8,pr=52,pt=12,pb=26;
+    const vs=b.map(x=>x.v),mn0=Math.min(...vs),mx0=Math.max(...vs),pad=(mx0-mn0||mx0*.02||1)*.08,mn=mn0-pad,mx=mx0+pad;
+    const X=i=>pl+i/(b.length-1)*(W-pl-pr),Y=v=>pt+(mx-v)/(mx-mn)*(H-pt-pb);
+    const up=b[b.length-1].v>=b[0].v,col=up?"var(--pos)":"var(--neg)";
+    const path=b.map((x,i)=>`${i?"L":"M"}${X(i).toFixed(1)},${Y(x.v).toFixed(1)}`).join("");
+    let sv=`<svg viewBox="0 0 ${W} ${H}" role="img" aria-label="Kursverlauf ${esc(sym)}">`;
+    for(let k=0;k<=4;k++){const v=mn+(mx-mn)*k/4,y=Y(v);sv+=`<line x1="${pl}" x2="${W-pr}" y1="${y.toFixed(1)}" y2="${y.toFixed(1)}" stroke="var(--line)"/><text x="${W-pr+6}" y="${(y+4).toFixed(1)}" font-size="11">${num(v,v>=100?0:2)}</text>`}
+    const dfmt=ds=>{const d=new Date(ds);return r==="MAX"||r==="5Y"?d.toLocaleDateString("de-DE",{month:"short",year:"2-digit"}):r==="1M"?d.toLocaleDateString("de-DE",{day:"numeric",month:"short"}):d.toLocaleDateString("de-DE",{month:"short",year:"2-digit"})};
+    const nt=Math.min(5,b.length);for(let k=0;k<nt;k++){const i=Math.round(k*(b.length-1)/(nt-1||1));sv+=`<text x="${X(i).toFixed(1)}" y="${H-7}" font-size="11" text-anchor="${k===0?"start":k===nt-1?"end":"middle"}">${dfmt(b[i].d)}</text>`}
+    sv+=`<path d="${path}L${X(b.length-1)},${H-pb}L${X(0)},${H-pb}Z" fill="${col}" opacity=".12"/><path d="${path}" fill="none" stroke="${col}" stroke-width="2" stroke-linejoin="round"/>`;
+    sv+=`<g class="xh" style="display:none"><line y1="${pt}" y2="${H-pb}" stroke="var(--mut)" stroke-dasharray="3 3"/><circle r="4.5" fill="${col}" stroke="var(--bg)" stroke-width="2"/></g><circle class="ed" cx="${X(b.length-1).toFixed(1)}" cy="${Y(b[b.length-1].v).toFixed(1)}" r="4.5" fill="${col}"/></svg>`;
+    box.innerHTML=sv;
+    const first0=b[0].v,fmtD=ds=>new Date(ds).toLocaleDateString("de-DE",{day:"2-digit",month:"2-digit",year:"numeric"});
+    const head=(i)=>{const v=b[i].v,dd=v-first0,pp=first0?dd/first0:0,c=dd>=0?"pos":"neg";
+      top.innerHTML=`<b>${num(v)} ${esc(cur)}</b><span class="${c}">${dd>=0?"▲":"▼"} ${num(Math.abs(pp)*100)} % · ${dd>=0?"+":"−"}${num(Math.abs(dd))} ${esc(cur)}</span><span>${i===b.length-1?"aktuell, Änderung im Zeitraum":fmtD(b[i].d)}</span>`};
+    head(b.length-1);
+    const svg=box.querySelector("svg"),xh=svg.querySelector(".xh"),ed=svg.querySelector(".ed");
+    const mv=ev=>{const rc=svg.getBoundingClientRect(),px=(ev.clientX-rc.left)/rc.width*W;let i=Math.round((px-pl)/(W-pl-pr)*(b.length-1));i=Math.max(0,Math.min(b.length-1,i));
+      xh.style.display="";xh.setAttribute("transform",`translate(${X(i).toFixed(1)},0)`);xh.querySelector("circle").setAttribute("cy",Y(b[i].v).toFixed(1));ed.setAttribute("opacity","0");head(i)};
+    const lv=()=>{xh.style.display="none";ed.setAttribute("opacity","1");head(b.length-1)};
+    svg.addEventListener("pointermove",mv);svg.addEventListener("pointerdown",mv);svg.addEventListener("pointerleave",lv);
+  }
+  function init(){
+    const root=document.getElementById(id);if(!root)return;
+    let cur_r="1Y";draw(root,cur_r);
+    root.querySelector(".rubriken").addEventListener("click",async e=>{const bt=e.target.closest(".rb");if(!bt)return;
+      cur_r=bt.dataset.r;root.querySelectorAll(".rb").forEach(x=>{const on=x===bt;x.classList.toggle("on",on);x.setAttribute("aria-selected",on)});
+      if(cur_r==="MAX"&&!full){root.querySelector(".kcs").innerHTML='<p class="desc">Lade Kursverlauf …</p>';
+        try{const j=await chain("historical-price-eod/light",{symbol:sym},[{from:"1970-01-01"},{}]);full=(Array.isArray(j)?j:[]).slice().reverse().map(x=>({d:x.date,v:+x.price})).filter(x=>isFinite(x.v));if(full.length&&price!=null&&full[full.length-1].d<nowD)full.push({d:nowD,v:+price})}catch(err){full=S}}
+      draw(root,cur_r)});
+  }
+  return {html,init};
+}
+
 /* Steckbrief: Ampel nach festen Regeln, Zahlen aus FMP (TTM) */
 function steckbrief(sym,p,r,m,inc,cf){
   const f=(o,...ks)=>{for(const k of ks)if(o&&o[k]!=null&&isFinite(o[k]))return +o[k]};
@@ -444,12 +522,13 @@ async function openStock(sym){
   const sg=v=>v==null?"":v>=0?"pos":"neg",pc=v=>v==null?"–":(v>0?"+":"")+num(v*100,1)+" %";
   const kp=(l,v,c="")=>`<div><b class="${c}">${v}</b><span>${l}</span></div>`;
   LAST={sym,p,price,chg,cur,pts,divs,inc,est:d.est,g:one(d.grades),tgt,pt,r};
+  const KC=kursChart(sym,p.currency||cur,pr,q,price);
   hub.innerHTML=`
   <div class="head">${img(sym,p.website,p.companyName)}<div><div class="nm"><h1>${esc(p.companyName||sym)}</h1><button class="wlh" id="wlb" data-wl="${esc(sym)}" data-n="${esc(p.companyName||sym)}">${wlHas(sym)?"★ Watchlist":"☆ Watchlist"}</button><button class="igh" id="sb" title="Instagram-Story erstellen" aria-label="Instagram-Story erstellen"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r=".6" fill="currentColor"/></svg></button></div><p>${esc(sym)} · ${esc(p.exchange||"")} · ${esc(p.sector||"")}${p.industry?" · "+esc(p.industry):""} · Börsenwert ${big(first(q,"marketCap")??p.marketCap)}</p></div>
   <div class="price">${num(price)} ${esc(p.currency||"")}<small class="${sg(chg)}">${chg==null?"":(chg>0?"+":"")+num(chg)+" % heute"}</small></div></div>
+  ${KC.html}
   ${steckbrief(sym,p,r,m,inc,cf)}
   <div class="grid">
-   ${line("Kurs, letzte 5 Jahre ("+esc(p.currency||"")+")",pts)}
    ${bars("Dividende je Aktie","Summe pro Jahr, "+esc(p.currency||"")+(divs.some(x=>x.part)?"; laufendes Jahr blass (unvollständig)":""),divs,"var(--c-gold)",v=>num(v))}
    ${combo(inc,cur)}
    ${margins(inc)}
@@ -462,7 +541,7 @@ async function openStock(sym){
   <div id="nw"></div>
   ${p.description?`<p class="desc">${esc(p.description)}</p>`:""}
   ${p.website?`<p class="desc"><a href="${esc(p.website)}" target="_blank" rel="noopener">${esc(p.website)}</a></p>`:""}`;
-  $("start").hidden=true;hub.hidden=false;msg.textContent="";$("sb").onclick=()=>story(LAST);
+  $("start").hidden=true;hub.hidden=false;msg.textContent="";$("sb").onclick=()=>story(LAST);try{KC.init()}catch(e){console.error(e)}
   try{initExplorer(sym,p,cur)}catch(e){console.error(e)}
   try{initValuation(sym,{p,price,r,m,fair,pt,tgt,inc,pts,cur}).catch(e=>console.error(e))}catch(e){console.error(e)}
   try{initFinance(sym,p,cur,inc,cf)}catch(e){console.error(e)}
