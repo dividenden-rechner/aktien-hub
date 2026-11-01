@@ -1,6 +1,110 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:dc="http://purl.org/dc/elements/1.1/">
-<channel><title>Dividenden-Rechner Aktien-Hub: News</title><link>https://dividenden-rechner.github.io/aktien-hub/news/</link><description>Dividenden, Kennzahlen und Steuern erklärt</description><language>de-DE</language><lastBuildDate>Sun, 01 Nov 2026 11:48:47 +0000</lastBuildDate><atom:link href="https://dividenden-rechner.github.io/aktien-hub/news/feed.xml" rel="self" type="application/rss+xml"/>
+<channel><title>Dividenden-Rechner Aktien-Hub: News</title><link>https://dividenden-rechner.github.io/aktien-hub/news/</link><description>Dividenden, Kennzahlen und Steuern erklärt</description><language>de-DE</language><lastBuildDate>Sun, 01 Nov 2026 12:10:37 +0000</lastBuildDate><atom:link href="https://dividenden-rechner.github.io/aktien-hub/news/feed.xml" rel="self" type="application/rss+xml"/>
+<item><title>Das KI-Netz: Wer Nvidia, Meta und CoreWeave gegenseitig finanzieren</title><link>https://dividenden-rechner.github.io/aktien-hub/news/ki-finanzierungsnetz-nvidia-meta-coreweave/</link><guid isPermaLink="true">https://dividenden-rechner.github.io/aktien-hub/news/ki-finanzierungsnetz-nvidia-meta-coreweave/</guid><pubDate>Sun, 01 Nov 2026 13:09:00 +0100</pubDate><category>Analyse</category><dc:creator>Aus der Redaktion</dc:creator><description>Nvidia, AMD und Broadcom steigen bei Meta ein, Nvidia haftet für Rechenzentren und hält 11,5 % an CoreWeave. Wer wen bezahlt, und warum ein Ausfall mehrere Konzerne gleichzeitig trifft.</description><enclosure url="https://dividenden-rechner.github.io/aktien-hub/assets/magazin/ki-finanzierungsnetz-nvidia-meta-coreweave.png" type="image/png" length="0"/><content:encoded><![CDATA[<div class="admonition kurz">
+<p class="admonition-title">Kurz gesagt</p>
+<p><strong>Kern:</strong> Die Chiphersteller finanzieren ihre eigenen Kunden. Läuft die KI-Nachfrage schwächer, trifft das alle Beteiligten gleichzeitig.</p>
+<ol>
+<li><strong>Neu:</strong> Nvidia, AMD und Broadcom wollen bis zu 5 Mrd. Dollar Meta-Aktien kaufen, bei einer Kapitalerhöhung von rund 37,5 Mrd. Dollar.</li>
+<li><strong>Das Netz:</strong> Nvidia hält 11,5 % an CoreWeave und haftet mit bis zu 105 Mrd. Dollar für ein OpenAI-Rechenzentrum in Ohio.</li>
+<li><strong>Risiko:</strong> Die Anleihen von CoreWeave rentieren bei rund 15 %. Die Aktien von AMD, Broadcom und Nvidia fielen am Freitag um 4 bis 11 %.</li>
+</ol>
+</div>
+<h2 id="was-diese-woche-passiert-ist">Was diese Woche passiert ist</h2>
+<p>Am 26. Oktober kündigte Meta eine Kapitalerhöhung an. Aus den ersten 35 Mrd. Dollar wurden nach der Nachfrage rund 37,5 Mrd.: 25 Mrd. Dollar Stammaktien zu 625 Dollar je Aktie und 12,5 Mrd. Dollar Wandel-Vorzugsaktien mit 6,5 % Zins. Später sollen weitere 60 Mrd. Dollar folgen. Meta rechnet für 2026 mit Investitionen von 135 bis 145 Mrd. Dollar, vor allem für Rechenzentren.</p>
+<p>Am selben Tag meldeten Nvidia, AMD und Broadcom, sie könnten zusammen bis zu 5 Mrd. Dollar der Stammaktien kaufen. Nvidia nannte danach 3 Mrd. Dollar, AMD 1 Mrd. Dollar. Das ist rund ein Achtel der gesamten Kapitalerhöhung. Gekauft wird zum gleichen Preis wie bei allen anderen Anlegern.</p>
+<p>Bemerkenswert ist, wer da kauft: Meta ist einer der größten Kunden der drei Konzerne. Die Lieferanten werden damit Teilhaber ihres Kunden.</p>
+<h2 id="das-netz-in-einem-bild">Das Netz in einem Bild</h2>
+<p>Das Muster ist überall gleich. Ein Chiphersteller verkauft Chips an einen Kunden und sorgt zugleich dafür, dass der Kunde das Geld dafür hat. Das geht auf drei Wegen: über eine Beteiligung, über Verträge, die dem Kunden Einnahmen sichern, und über Garantien, die seinen Kredit billiger machen.</p>
+<p><img alt="Das Finanzierungsnetz rund um Nvidia" src="https://dividenden-rechner.github.io/aktien-hub/assets/magazin/ki-finanzierungsnetz-nvidia-meta-coreweave-netz.png" />
+<em>Eigene Darstellung nach Unternehmensmeldungen und Agenturberichten. Gezeigt sind nur Beziehungen mit belegtem Betrag oder Vertrag.</em></p>
+<p>Der Vergleich mit dem Autohandel hilft: Ein Hersteller leiht dem Käufer Geld für den neuen Wagen. Der Käufer bekommt das Auto, der Hersteller den Verkauf plus Zinsen. Das funktioniert, solange der Käufer zahlt. Hier ist der Hersteller Nvidia, der Käufer ein Rechenzentrum.</p>
+<div class="tablewrap"><table>
+<thead>
+<tr>
+<th>Wer</th>
+<th>Was</th>
+<th>Betrag</th>
+<th>Stand</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Nvidia, CoreWeave</td>
+<td>Beteiligung</td>
+<td>2 Mrd. Dollar, danach 11,5 % der Aktien</td>
+<td>Januar 2026</td>
+</tr>
+<tr>
+<td>Nvidia, SB Energy</td>
+<td>Garantie für Miete und Strom (OpenAI-Rechenzentrum in Ohio)</td>
+<td>bis zu 105 Mrd. Dollar, dazu 1,5 Mrd. Dollar Beteiligung</td>
+<td>17. August 2026</td>
+</tr>
+<tr>
+<td>Nvidia, Meta</td>
+<td>Beteiligung an der Kapitalerhöhung</td>
+<td>3 Mrd. Dollar</td>
+<td>27. Oktober 2026</td>
+</tr>
+<tr>
+<td>AMD, Meta</td>
+<td>Beteiligung an der Kapitalerhöhung</td>
+<td>1 Mrd. Dollar</td>
+<td>27. Oktober 2026</td>
+</tr>
+<tr>
+<td>Broadcom, Meta</td>
+<td>Interesse an Meta-Aktien</td>
+<td>Betrag nicht genannt</td>
+<td>26. Oktober 2026</td>
+</tr>
+</tbody>
+</table></div>
+<p>Besonders groß ist die Ohio-Garantie. OpenAI mietet das Rechenzentrum 20 Jahre lang von SB Energy, einer Tochter von SoftBank. Zahlt OpenAI nicht, deckt Nvidia die Lücke zwischen Mindestwert und dem, was der Eigentümer durch Neuvermietung oder Verkauf bekommt. Nvidia ist dort exklusiver Chiplieferant und rechnet nach Medienberichten mit bis zu 200 Mrd. Dollar Umsatz aus dem Standort.</p>
+<p><strong>Was das bedeutet:</strong> Der Umsatz von Nvidia hängt von Kunden ab, die Nvidia selbst finanziert. Ein Teil der Nachfrage ist damit nicht unabhängig, sondern vom Chiphersteller mit bezahlt.</p>
+<h2 id="wer-die-rechnung-bezahlt">Wer die Rechnung bezahlt</h2>
+<p>Die großen Cloud-Anbieter finanzieren ihre Investitionen zunehmend nicht mehr aus der Kasse. Die <a href="https://dividenden-rechner.github.io/aktien-hub/grundlagen/free-cashflow/">Free Cashflows</a> der letzten zwölf Monate zeigen ein sehr unterschiedliches Bild:</p>
+<p><img alt="Free Cashflow der letzten 12 Monate" src="https://dividenden-rechner.github.io/aktien-hub/assets/magazin/ki-finanzierungsnetz-nvidia-meta-coreweave-fcf.png" />
+<em>Eigene Darstellung nach den Quartalsberichten. Amazon: Mittelabfluss laut Zwölfmonatszahlen bis September 2026.</em></p>
+<ul>
+<li><strong>Microsoft</strong> erwirtschaftet 60 Mrd. Dollar. Die Investitionen stiegen jedoch von 23,9 Mrd. Dollar im Geschäftsjahr 2022 auf 115,9 Mrd. Dollar im Geschäftsjahr 2026 (+385 %), der <a class="glossar-link" href="https://dividenden-rechner.github.io/aktien-hub/grundlagen/free-cashflow/" title="Free Cashflow: Wie viel Geld bleibt wirklich übrig?">Free Cashflow</a> im selben Zeitraum nur von 65,1 auf 67,0 Mrd. Dollar (+3 %). Mehr dazu in unserer <a href="https://dividenden-rechner.github.io/aktien-hub/microsoft-q1-2027-zahlen/">Analyse der Microsoft-Zahlen</a>.</li>
+<li><strong>Alphabet</strong> investierte im dritten Quartal 51,4 Mrd. Dollar, 114 % mehr als ein Jahr zuvor. Der Free Cashflow lag im Quartal bei −9,1 Mrd. Dollar. Details stehen in der <a href="https://dividenden-rechner.github.io/aktien-hub/alphabet-q3-2026-quartalszahlen/">Alphabet-Analyse</a>.</li>
+<li><strong>Amazon</strong> hat bei einem operativen Cashflow von 168 Mrd. Dollar einen Free Cashflow von −42 Mrd. Dollar.</li>
+<li><strong>Meta</strong> will 2026 bis zu 145 Mrd. Dollar investieren und holt sich jetzt zusätzlich Kapital über die Börse.</li>
+</ul>
+<p>Die Konzerne leihen sich das Geld. Alphabet, Amazon, Meta und Oracle haben nach Angaben der Datenfirma LSEG in diesem Jahr bis Mitte Oktober mehr als 228 Mrd. Dollar an Anleihen ausgegeben, mehr als doppelt so viel wie im gesamten Vorjahr.</p>
+<p><strong>Was das bedeutet:</strong> Der Chip-Boom wird zunehmend mit geliehenem Geld und neuen Aktien bezahlt. Das geht gut, solange die Kapitalmärkte mitspielen.</p>
+<h2 id="wo-es-schon-knirscht-coreweave">Wo es schon knirscht: CoreWeave</h2>
+<p>CoreWeave betreibt Rechenzentren und ist ein Großkunde von Nvidia. Nvidia ist zugleich zweitgrößter Aktionär. Der Konzern hat sich auf Fremdkapital gestützt: Am 14. Oktober fiel die Aktie um rund 16 %, die Anleihen mit Laufzeit bis 2031 und 2032 rentierten bei rund 15 %. Das ist der Zins, den Anleger für ein sehr riskantes Unternehmen verlangen. Die Ratingagentur S&amp;P stuft CoreWeave mit B+ ein, also unterhalb der Anlagequalität.</p>
+<p>Der Konzern selbst hält die Reaktion für überzogen und verweist auf Aufträge, die seine Schulden mehr als abdecken. Auch andere Werte aus dem Umfeld gaben nach: Oracle fiel an dem Tag um fast 9 %, Nebius um rund 10 %.</p>
+<p><strong>Was das bedeutet:</strong> Der Markt behandelt CoreWeave bereits wie einen Kredit, der ausfallen könnte. Nvidia hat dort Aktien und Mietzusagen und wäre bei einem Ausfall doppelt betroffen.</p>
+<h2 id="der-freitag-alle-fallen-gleichzeitig">Der Freitag: alle fallen gleichzeitig</h2>
+<p>Am Freitag fielen die drei Chipkonzerne, die zuvor ihren Einstieg bei Meta angekündigt hatten, besonders stark:</p>
+<p><img alt="Kursänderung am Freitag, 30. Oktober" src="https://dividenden-rechner.github.io/aktien-hub/assets/magazin/ki-finanzierungsnetz-nvidia-meta-coreweave-kurse.png" />
+<em>Eigene Darstellung nach Börsendaten vom 30. Oktober 2026, Schlusskurse laut Wall Street Journal.</em></p>
+<p>AMD verlor knapp 11 %, Broadcom rund 5,5 %, Nvidia rund 4 %. Die Chip- und Cloud-Werte fielen gemeinsam. Auslöser waren die Zahlen von <a href="https://dividenden-rechner.github.io/aktien-hub/alphabet-q3-2026-quartalszahlen/">Alphabet</a> und Amazon, danach der Einbruch bei <a href="https://dividenden-rechner.github.io/aktien-hub/intel-q3-2026-zahlen/">Intel</a>. Wie sich der Tag auf den Gesamtmarkt auswirkte, steht in unserem <a href="https://dividenden-rechner.github.io/aktien-hub/tech-ausverkauf-intel-nasdaq-marktueberblick/">Marktüberblick</a>.</p>
+<p><strong>Was das bedeutet:</strong> Wer mehrere dieser Aktien besitzt, ist weniger breit gestreut, als es aussieht. Die Unternehmen hängen über Beteiligungen, Verträge und Garantien aneinander und bewegen sich deshalb stärker im Gleichschritt.</p>
+<h2 id="was-bei-einem-ruckschlag-passiert">Was bei einem Rückschlag passiert</h2>
+<p>Fällt die Nachfrage nach KI-Rechenleistung, trifft das mehrere Stellen in der gleichen Reihenfolge.</p>
+<ol>
+<li>Kunden mit schwacher Bilanz wie CoreWeave bekommen Probleme, ihre Kredite zu bedienen.</li>
+<li>Die Chiphersteller verlieren Aufträge und müssen auf ihre Beteiligungen und Garantien abschreiben.</li>
+<li>Gebrauchte Chips und Rechenzeit kommen billig auf den Markt und drücken die Preise für neue Chips.</li>
+</ol>
+<p>Ein Vorbild liegt 25 Jahre zurück: Die Netzausrüster der Dotcom-Zeit hatten ihren Kunden Kredite gegeben, damit diese ihre Geräte kaufen. Als die Kunden pleitegingen, mussten sie Milliarden abschreiben. Der heutige Unterschied: Nvidia, Microsoft, Alphabet und Meta haben starke Bilanzen. Sie können Verluste tragen. Die Frage ist, wie viele Garantien und Beteiligungen sie am Ende gleichzeitig tragen müssen.</p>
+<h2 id="was-anleger-daraus-ablesen">Was Anleger daraus ablesen</h2>
+<p>Das Netz erklärt, warum KI-Aktien zuletzt so gleichmäßig steigen und fallen. Gute Nachrichten für einen Konzern gelten für die anderen mit, schlechte ebenso. Wer in Dividendenwerte aus dem Netz investiert, etwa <a href="https://dividenden-rechner.github.io/aktien-hub/microsoft-q1-2027-zahlen/">Microsoft</a>, bekommt zwar regelmäßige Ausschüttungen, trägt aber das gleiche Grundrisiko: Die Dividende stammt aus einem Free Cashflow, der durch die hohen Investitionen schrumpft. Das ist keine Empfehlung und keine Prognose, sondern die Beschreibung der Lage.</p>
+<h2 id="quellen">Quellen</h2>
+<ul>
+<li>Meta, Mitteilungen zur Kapitalerhöhung vom 26. und 27.10.2026, nach Berichten von <a href="https://www.aa.com.tr/en/science-technology/meta-unveils-95b-financing-plan-to-fund-ai-expansion/4101382" rel="noopener">Anadolu</a> und <a href="https://fourweekmba.com/ai-nvidia-amd-and-broadcom-eye-up-to-5b-of-metas-stock-sale/" rel="noopener">FourWeekMBA</a></li>
+<li><a href="https://www.ifre.com/equities/2377167/nvidia-throws-us2bn-lifeline-to-under-fire-coreweave" rel="noopener">IFR: Nvidia investiert 2 Mrd. Dollar in CoreWeave</a></li>
+<li><a href="https://investinglive.com/stocks/coreweave-bonds-trade-like-distressed-debt-as-ai-spending-outpaces-balance-sheets/" rel="noopener">Investinglive: CoreWeave-Anleihen rentieren wie Risikoanleihen</a>, 15.10.2026</li>
+<li><a href="https://www.investing.com/news/stock-market-news/nvidia-to-invest-15-billion-in-sb-energy-under-openai-data-center-deal-4863156" rel="noopener">Reuters über Investing.com: Nvidia garantiert bis zu 105 Mrd. Dollar für OpenAIs Rechenzentrum in Ohio</a>, 17.08.2026</li>
+<li>Quartalsberichte von Microsoft, Alphabet und Amazon (siehe verlinkte Analysen)</li>
+<li>Wall Street Journal, J. Mackintosh, „Straßenkenntnis", 01.11.2026 (Themenhinweis und Kursdaten)</li>
+</ul>
+<p><em>Dieser Beitrag fasst Berichte in eigenen Worten zusammen. Alle Angaben ohne Gewähr. Keine Anlageberatung.</em></p>]]></content:encoded></item>
 <item><title>Big Oil verdient am Krieg, tilgt aber zuerst Schulden</title><link>https://dividenden-rechner.github.io/aktien-hub/news/big-oil-kapitalverwendung-q3-2026/</link><guid isPermaLink="true">https://dividenden-rechner.github.io/aktien-hub/news/big-oil-kapitalverwendung-q3-2026/</guid><pubDate>Sat, 31 Oct 2026 15:40:00 +0100</pubDate><category>Analyse</category><dc:creator>Aus der Redaktion</dc:creator><description>Exxon, Chevron, Shell, BP, TotalEnergies und Equinor verdienen am hohen Öl- und Dieselpreis. Ihre Q3-Berichte zeigen: Das Geld fließt zuerst in den Schuldenabbau, Rückkäufe und Dividenden steigen kaum.</description><enclosure url="https://images.unsplash.com/photo-1678984239420-43cdc183bce6?ixid=M3wxMTE3OTgzfDB8MXxzZWFyY2h8MXx8cmVmaW5lcnklMjB0b3dlcnN8ZW58MXwwfHx8MTc5MzQ2NjM5Mnww&amp;ixlib=rb-4.1.0&amp;w=1600&amp;h=900&amp;fit=crop&amp;crop=entropy&amp;q=80&amp;fm=jpg" type="image/jpeg" length="0"/><content:encoded><![CDATA[<div class="admonition kurz">
 <p class="admonition-title">Kurz gesagt</p>
 <p><strong>Kern:</strong> Die Ölkonzerne verdienen am Krieg, geben das Geld aber vor allem für den Abbau von Schulden aus.</p>
@@ -305,7 +409,4 @@
 <item><title>First Solar steigert Q3-Gewinn auf 571 Millionen US-Dollar</title><link>https://dividenden-rechner.github.io/aktien-hub/news/first-solar-q3-2026-zahlen-aktienrueckkauf/</link><guid isPermaLink="true">https://dividenden-rechner.github.io/aktien-hub/news/first-solar-q3-2026-zahlen-aktienrueckkauf/</guid><pubDate>Fri, 30 Oct 2026 18:04:00 +0100</pubDate><category>Quartalszahlen</category><dc:creator>Aus der Redaktion</dc:creator><description>First Solar steigert im dritten Quartal 2026 den Nettogewinn auf 571 Millionen US-Dollar und kündigt ein Aktienrückkaufprogramm über 500 Millionen US-Dollar an.</description><enclosure url="https://dividenden-rechner.github.io/aktien-hub/assets/magazin/first-solar-q3-2026-zahlen-aktienrueckkauf.png" type="image/png" length="0"/><content:encoded><![CDATA[<p>First Solar hat im dritten Quartal 2026 einen Nettogewinn von 571 Millionen US-Dollar beziehungsweise 5,30 US-Dollar je verwässerter Aktie erzielt, nach 456 Millionen US-Dollar im Vorjahreszeitraum. Der Nettoumsatz sank im Berichtszeitraum um 23 Prozent auf 1,2 Milliarden US-Dollar, während das bereinigte <a class="glossar-link" href="https://dividenden-rechner.github.io/aktien-hub/grundlagen/ebitda-ebit/" title="EBIT und EBITDA einfach erklärt">EBITDA</a> um 11 Prozent auf 744 Millionen US-Dollar kletterte. Zudem kündigte das Board of Directors ein <a class="glossar-link" href="https://dividenden-rechner.github.io/aktien-hub/fortgeschrittene/shareholder-yield/" title="Shareholder Yield: Dividenden, Aktienrückkäufe und Schuldentilgung zusammen">Aktienrückkaufprogramm</a> im Volumen von bis zu 500 Millionen US-Dollar an und passte die Jahresprognose für 2026 an. Der Quartalsbericht mit allen Details wurde am 29. Oktober 2026 in einer Telefonkonferenz vorgestellt.</p>
 <h2 id="umsatzrueckgang-bei-steigendem-gewinn-und-aktienrueckkauf">Umsatzrueckgang bei steigendem Gewinn und Aktienrueckkauf</h2>
 <p>First Solar verzeichnet im dritten Quartal 2026 einen Rueckgang des Nettoumsatzes um 23 Prozent auf 1,2 Milliarden US-Dollar, was primaer auf ein geringeres Verkaufsvolumen an Modulen zurueckzuführen ist. Gleichzeitig stieg der Nettogewinn je verwässerter Aktie um 25 Prozent auf 5,30 US-Dollar und das bereinigte EBITDA kletterte um 11 Prozent auf 744 Millionen US-Dollar. Der Netto-Cash-Bestand sank im bisherigen Jahresverlauf von 2,4 Milliarden US-Dollar Ende 2025 auf 1,5 Milliarden US-Dollar, angetrieben durch den Bedarf an Betriebskapital und Investitionen in US-Standorte. Angesichts dieser Entwicklung kündigte das Management ein Aktienrückkaufprogramm im Volumen von bis zu 500 Millionen US-Dollar an und passte zugleich die Jahresprognose 2026 für das Volumen und den Nettoumsatz nach unten an.</p>]]></content:encoded></item>
-<item><title>D. R. Horton erhöht Quartalsdividende auf 0,50 US-Dollar und meldet Q4-Gewinn</title><link>https://dividenden-rechner.github.io/aktien-hub/news/dr-horton-dividende-q4-2026/</link><guid isPermaLink="true">https://dividenden-rechner.github.io/aktien-hub/news/dr-horton-dividende-q4-2026/</guid><pubDate>Fri, 30 Oct 2026 18:04:00 +0100</pubDate><category>Dividende</category><dc:creator>Aus der Redaktion</dc:creator><description>D. R. Horton steigert die Quartalsdividende im vierten Quartal 2026 auf 0,50 US-Dollar je Aktie und legt Jahreszahlen vor.</description><enclosure url="https://dividenden-rechner.github.io/aktien-hub/assets/magazin/dr-horton-dividende-q4-2026.png" type="image/png" length="0"/><content:encoded><![CDATA[<p>D. R. Horton hat im vierten Quartal des Geschäftsjahres 2026 einen Nettogewinn von 741,8 Millionen US-Dollar oder 2,67 US-Dollar je Aktie auf einen Umsatz von 9,4 Milliarden US-Dollar erzielt. Im gesamten Geschäftsjahr 2026 verzeichnete das Unternehmen einen Nettogewinn von 2,9 Milliarden US-Dollar beziehungsweise 10,11 US-Dollar je Aktie bei einem Umsatz von 33,0 Milliarden US-Dollar. Gestützt auf diese solide Finanzposition hat der Vorstand die Quartalsdividende um 11 Prozent auf 0,50 US-Dollar je Aktie erhöht. Die Ausschüttung erfolgt am 19. November 2026 an Aktionäre, die am 12. November 2026 im Aktienregister eingetragen sind.</p>
-<h2 id="ruecklaeufiger-gewinn-trotz-starker-bilanz-und-dividendenerhoehung">Ruecklaeufiger Gewinn trotz starker Bilanz und Dividendenerhoehung</h2>
-<p>Trotz schwierigerer Marktbedingungen im vierten Quartal durch steigende Hypothekenzinsen und eine gedämpfte Konsumentenstimmung bleibt D. R. Horton finanziell robust. Der Nettogewinn im abgelaufenen Geschäftsjahr 2026 sank zwar um 19 Prozent auf 2,9 Milliarden US-Dollar, und auch im vierten Quartal verzeichnete das Unternehmen einen Gewinnrückgang von 18 Prozent auf 741,8 Millionen US-Dollar. Belastet wurde das Ergebnis unter anderem durch Bestandsberichtigungen im Vermietungssegment. Dennoch unterstreicht der Konzern seine starke Marktposition als Branchenführer mit einer soliden Liquidität von 7,2 Milliarden US-Dollar und einer konservativen <a class="glossar-link" href="https://dividenden-rechner.github.io/aktien-hub/grundlagen/verschuldung/" title="Verschuldung bewerten: Net Debt/EBITDA, Zinsdeckung und Eigenkapitalquote">Verschuldung</a> von rund 21 Prozent. Gestützt auf den anhaltenden operativen Cashflow erhöhte der Vorstand die Quartalsdividende um elf Prozent auf 0,50 US-Dollar je Aktie, womit das Unternehmen seine aktionärsfreundliche Ausschüttungspolitik in einem anspruchsvollen Zinsumfeld fortsetzt.</p>]]></content:encoded></item>
 </channel></rss>
