@@ -187,7 +187,7 @@ def _fk_card(m, depth):
     head = f'{logo}<span class="fk-t"><b>{name}</b><small>{esc(sym)}</small></span>'
     href = f'{pre}news/{slug}/' if slug else ""
     if not d:
-        return (f'\n<p class="fk-row"><a class="fkarte" href="{href}">{head}<span class="go">Analyse lesen →</span></a></p>\n' if href else "")
+        return (f'\n<p class="fk-row"><a class="fkarte" href="{href}"><span class="fk-h">{head}<span class="go">Analyse lesen →</span></span><span class="fk-e" data-earn="{esc(sym)}" hidden></span></a></p>\n' if href else "")
     q = d["q"]; lab = [x["y"] for x in q]
     def kpi(key, title, neg_red):
         v = [x[key] for x in q]; last, prev = v[-1], v[-2]
@@ -199,7 +199,7 @@ def _fk_card(m, depth):
     body = f'<div class="fk-grid">{kpi("rev", "Umsatz je Geschäftsjahr", False)}{kpi("ni", "Nettogewinn je Geschäftsjahr", True)}</div>'
     foot = f'<span class="fk-src">Quelle: Financial Modeling Prep, Stand {d["stand"][8:]}.{d["stand"][5:7]}.{d["stand"][:4]}</span>'
     tag = "a" if href else "div"; ha = f' href="{href}"' if href else ""
-    return f'\n<{tag} class="fkarte"{ha}><span class="fk-h">{head}{"<span class=go>Analyse lesen →</span>" if href else ""}</span>{body}{foot}</{tag}>\n'
+    return f'\n<{tag} class="fkarte"{ha}><span class="fk-h">{head}{"<span class=go>Analyse lesen →</span>" if href else ""}</span><span class="fk-e" data-earn="{esc(sym)}" hidden></span>{body}{foot}</{tag}>\n'
 
 def md_to_html(md_text, depth):
     pre = "../" * depth
@@ -553,7 +553,7 @@ def build_post(p, posts):
     extra = '<meta property="article:published_time" content="%s">\n<meta property="article:modified_time" content="%s">\n<meta property="article:section" content="%s">\n' % (iso(p["dt"]), iso(p["upd"]), esc(p["category"]))
     extra += "".join('<script type="application/ld+json">%s</script>\n' % json.dumps(x, ensure_ascii=False) for x in ld)
     o = head(depth, p["title"], p["description"], url, "article", absu(make_share_card(p, slug, img)).replace("&", "&amp;"), extra) + nav_html(depth, "news") + "</nav></div></header>\n"
-    o += f'<script src="{pre}assets/navigation.js"></script>\n<script src="{pre}assets/logos.js"></script>\n<main class="wrap"><article class="post">\n'
+    o += f'<script src="{pre}assets/navigation.js"></script>\n<script src="{pre}assets/logos.js"></script>\n<script src="{pre}assets/fkearn.js"></script>\n<main class="wrap"><article class="post">\n'
     o += f'<nav class="crumbs" aria-label="Brotkrumen"><a href="{pre}">Start</a> › <a href="{pre}news/">News</a> › <span aria-current="page">{esc(p["title"])}</span></nav>\n'
     o += f'<p class="kicker">{esc(p["category"])}</p>\n{logo_html(p)}{kurs_chip(p)}<p class="lead">{esc(p["description"])}</p>\n'
     upd = f' · Aktualisiert: <time datetime="{iso(p["upd"])}">{de_date(p["upd"])}</time>' if p["upd"].date() > p["dt"].date() else ""

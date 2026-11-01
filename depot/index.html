@@ -159,6 +159,7 @@ article.wide>:not(.tool):not(.cards){max-width:760px}
 @media(max-width:800px){.cgrid{grid-template-columns:1fr}}
 .tool h3{margin:1.4rem 0 .5rem;font-size:1.05rem;color:#111827}
 .toolbar{display:flex;flex-wrap:wrap;gap:10px;align-items:end;margin:.6rem 0}
+.rubriken{display:flex;gap:18px;margin:10px 0 14px;overflow-x:auto;white-space:nowrap;border-bottom:1px solid #dfe5ea;scrollbar-width:none}.rubriken::-webkit-scrollbar{display:none}.rb{flex:none;font:inherit;font-size:14px;font-weight:500;padding:6px 0 8px;border:0;border-bottom:2px solid transparent;margin-bottom:-1px;background:none;color:#8a97a3;cursor:pointer}.rb:hover{color:#5b6874}.rb.on{color:#33414d;font-weight:600;border-bottom-color:#8a97a3}
 .toolbar .form-group{min-width:150px;flex:1 1 150px}
 .tw{overflow-x:auto;margin:.5rem 0}
 table.dt{border-collapse:collapse;width:100%;font-size:.9rem;min-width:620px}
@@ -231,7 +232,7 @@ table.dt{border-collapse:collapse;width:100%;font-size:.9rem;min-width:620px}
 
 <section id="p-insight" hidden><div class="dempty">Noch kein Depot geladen. Wechsle zu <a href="#import">Import</a> und lade dein Depot oder das Beispieldepot.</div><div class="dbody">
 <div id="in-kpis" class="kpis"></div>
-<div class="toolbar"><div class="form-group"><label for="in-group">Aufteilung nach</label><select id="in-group"><option value="type">Aktie / ETF</option><option value="pos">Einzelpositionen</option><option value="sector">Sektor</option><option value="country">Land</option></select></div></div>
+<div class="rubriken" id="in-group-tabs" role="tablist" aria-label="Aufteilung nach"><button type="button" class="rb on" data-v="type" role="tab" aria-selected="true">Aktie / ETF</button><button type="button" class="rb" data-v="pos" role="tab" aria-selected="false">Einzelpositionen</button><button type="button" class="rb" data-v="sector" role="tab" aria-selected="false">Sektor</button><button type="button" class="rb" data-v="country" role="tab" aria-selected="false">Land</button></div><input type="hidden" id="in-group" value="type">
 <div class="cbox"><canvas id="in-chart"></canvas></div>
 <h3>Alle Positionen</h3>
 <div class="toolbar">
@@ -1277,6 +1278,12 @@ table.dt{border-collapse:collapse;width:100%;font-size:.9rem;min-width:620px}
     });
     document.addEventListener("change", function (e) { var t = e.target.closest("[data-type]"); if (t) { meta(t.dataset.type).type = t.value; save(); invalidate(); renderInsight(); } });
     ["in-group", "in-mode", "in-unit", "in-closed"].forEach(function (id) { $(id).onchange = renderInsight; });
+    $("in-group-tabs").onclick = function (e) {
+      var b = e.target.closest(".rb"); if (!b) return;
+      $("in-group").value = b.getAttribute("data-v");
+      Array.prototype.forEach.call(this.querySelectorAll(".rb"), function (x) { var on = x === b; x.classList.toggle("on", on); x.setAttribute("aria-selected", on); });
+      renderInsight();
+    };
     $("in-filter").oninput = renderInsight; $("dv-month-year").onchange = renderDiv; $("ka-tax").oninput = function () { renderCal(); }; $("ka-mode").onchange = renderCal;
     var dbt; ["fc-years", "fc-base", "fc-gmode", "fc-gfix", "fc-gdef", "fc-pg", "fc-reinv", "fc-save", "fc-tax"].forEach(function (id) { $(id).oninput = $(id).onchange = function () { clearTimeout(dbt); dbt = setTimeout(renderForecast, 120); }; });
     window.addEventListener("hashchange", function () { show(location.hash.slice(1)); });
