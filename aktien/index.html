@@ -424,7 +424,7 @@ function kursChart(sym,cur,pr,q,price){
     let a=slice(r);const box=root.querySelector(".kcs"),top=root.querySelector(".kt");
     if(a.length<2){box.innerHTML='<p class="desc">Keine Kursdaten verfügbar.</p>';top.innerHTML="";return}
     const stp=Math.max(1,Math.ceil(a.length/360)),b=a.filter((_,i)=>i%stp===0||i===a.length-1);
-    const W=720,H=270,pl=8,pr=52,pt=12,pb=26;
+    const W=Math.max(300,Math.round(box.clientWidth||720)),H=W<520?230:270,pl=8,pr=48,pt=12,pb=26;
     const vs=b.map(x=>x.v),mn0=Math.min(...vs),mx0=Math.max(...vs),pad=(mx0-mn0||mx0*.02||1)*.08,mn=mn0-pad,mx=mx0+pad;
     const X=i=>pl+i/(b.length-1)*(W-pl-pr),Y=v=>pt+(mx-v)/(mx-mn)*(H-pt-pb);
     const up=b[b.length-1].v>=b[0].v,col=up?"var(--pos)":"var(--neg)";
@@ -448,7 +448,7 @@ function kursChart(sym,cur,pr,q,price){
   }
   function init(){
     const root=document.getElementById(id);if(!root)return;
-    let cur_r="1Y";draw(root,cur_r);
+    let cur_r="1Y";draw(root,cur_r);let lw=root.querySelector(".kcs").clientWidth,tm;window.addEventListener("resize",()=>{clearTimeout(tm);tm=setTimeout(()=>{if(!document.body.contains(root))return;const w=root.querySelector(".kcs").clientWidth;if(Math.abs(w-lw)>20){lw=w;draw(root,cur_r)}},150)});
     root.querySelector(".rubriken").addEventListener("click",async e=>{const bt=e.target.closest(".rb");if(!bt)return;
       cur_r=bt.dataset.r;root.querySelectorAll(".rb").forEach(x=>{const on=x===bt;x.classList.toggle("on",on);x.setAttribute("aria-selected",on)});
       if(cur_r==="MAX"&&!full){root.querySelector(".kcs").innerHTML='<p class="desc">Lade Kursverlauf …</p>';
