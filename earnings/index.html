@@ -58,7 +58,7 @@ img.ek-logo{background:#fff}
 <link rel="manifest" href="../manifest.webmanifest">
 </head>
 <body>
-<header id="hub-global-header"><div class="hub-nav-inner"><a class="hub-brand" href="../"><img class="hub-logo" src="../assets/logo.png" alt="" width="36" height="36"> <span class="hub-brand-name">Dividenden-Rechner <span>Aktien-Hub</span></span></a><nav class="hub-links" aria-label="Hauptmenü"><a href="../">Rechner</a><a href="../aktien/">Aktien</a><a href="../depot/">Depot</a><a href="../news/">News</a><a href="../screener/">Screener</a><a href="../einfuehrung/">Einführung</a><a href="../grundlagen/">Grundlagen</a><a href="../fortgeschrittene/">Fortgeschrittene</a></nav></div></header>
+<header id="hub-global-header"><div class="hub-nav-inner"><a class="hub-brand" href="../"><img class="hub-logo" src="../assets/logo.png" alt="" width="36" height="36"> <span class="hub-brand-name">Dividenden-Rechner <span>Aktien-Hub</span></span></a><nav class="hub-links" aria-label="Hauptmenü"><a href="../">Rechner</a><a href="../aktien-hub/">Aktien</a><a href="../depot/">Depot</a><a href="../news/">News</a><a href="../screener/">Screener</a><a href="../einfuehrung/">Einführung</a><a href="../grundlagen/">Grundlagen</a><a href="../fortgeschrittene/">Fortgeschrittene</a></nav></div></header>
 <script src="../assets/navigation.js"></script>
 <script src="../assets/fmpcount.js"></script>
 <script src="../assets/logos.js"></script>
@@ -77,12 +77,12 @@ img.ek-logo{background:#fff}
 <li><strong>Meine Werte:</strong> Der Kalender liest deine Watchlist aus dem Aktien-Hub und die Werte aus deinem Depot, alles nur in deinem Browser.</li>
 </ul>
 <p>Die Daten stammen von Financial Modeling Prep und laufen über einen Server dieser Seite, du musst nichts eingeben. Die Auswahl „Große Unternehmen weltweit“ zeigt alle Firmen ab zehn Milliarden Dollar Börsenwert, auch außerhalb der USA. Bei berichteten Zahlen zeigt ein Etikett, ob Gewinn und Umsatz die Erwartung der Analysten übertroffen, verfehlt oder erfüllt haben (Abweichung ab ein Prozent). Der kleine Balken zeigt das tatsächliche Ergebnis, der dunkle Strich die Erwartung; grün heißt besser, rot schlechter als erwartet. Termine können sich ändern, und Schätzungen sind keine Prognosen der Firma.</p>
-<p>Weitere Werkzeuge: <a href="../aktien/">Aktien-Hub</a>, <a href="../depot/">Depot mit Dividendenkalender</a>, <a href="../unternehmensmeldungen/">News-Kalender</a>.</p>
+<p>Weitere Werkzeuge: <a href="../aktien-hub/">Aktien-Hub</a>, <a href="../depot/">Depot mit Dividendenkalender</a>, <a href="../unternehmensmeldungen/">News-Kalender</a>.</p>
 <p class="note"><strong>Hinweis:</strong> Keine Anlageberatung. Angaben ohne Gewähr.</p>
 </article></main>
 <footer class="site-footer"><div class="wrap">
 <div class="cols">
-<a href="../">Rechner</a><a href="../aktien/">Aktien-Hub</a><a href="../depot/">Depot</a><a href="../screener/">Screener</a><a href="../einfuehrung/">Einführung</a><a href="../grundlagen/">Grundlagen</a><a href="../fortgeschrittene/">Fortgeschrittene</a>
+<a href="../">Rechner</a><a href="../aktien-hub/">Aktien-Hub</a><a href="../depot/">Depot</a><a href="../screener/">Screener</a><a href="../einfuehrung/">Einführung</a><a href="../grundlagen/">Grundlagen</a><a href="../fortgeschrittene/">Fortgeschrittene</a>
 <a href="../ueber-uns/">Über uns</a><a href="../impressum/">Impressum</a><a href="https://www.instagram.com/dividenden.rechner" rel="noopener nofollow me" target="_blank">Instagram</a><a href="../datenschutz/">Datenschutz</a>
 </div>
 <p>Alle Inhalte dienen der allgemeinen Information und sind keine Anlage-, Steuer- oder Rechtsberatung. Kapitalanlagen sind mit Risiken verbunden.</p>
@@ -175,7 +175,7 @@ function renderList(){
     var ge=done?gr(r.epsActual,r.epsEstimated):null,gv=done?gr(r.revenueActual,r.revenueEstimated):null,vd=verdict(ge,gv);
     var ee=done&&r.epsEstimated!=null?" · Erw. "+num(r.epsEstimated)+" "+gp(ge):"",ev=done&&r.revenueEstimated!=null?" · Erw. "+big(r.revenueEstimated)+" "+gp(gv):"";
     var be=done&&r.epsEstimated!=null?bar(r.epsActual,r.epsEstimated,ge):"",bv=done&&r.revenueEstimated!=null?bar(r.revenueActual,r.revenueEstimated,gv):"";
-    h+='<div class="ek-item" data-s="'+esc(s)+'" data-d="'+esc(r.date)+'"><button type="button" class="ek-row" aria-expanded="false">'+logo(s,nm(s))+'<span class="ek-m"><span class="ek-nm"><a href="../aktien/?s='+encodeURIComponent(s)+'">'+esc(nm(s))+'</a>'+'</span><span class="ek-pills"><span class="ek-badge'+(done?" done":"")+'">'+(done?"berichtet":"erwartet")+'</span>'+(vd?'<span class="ek-badge '+vd[1]+'" title="Gewinn und Umsatz im Vergleich zur Analystenerwartung">'+vd[0]+'</span>':"")+'</span></span>'+artIcon(s)+'<span class="ek-fig"><div>'+num(eps)+'<span class="'+(done?"t-"+tone(ge):"")+'">Gewinn/Aktie'+(done?ee:" (Schätzung)")+'</span>'+be+'</div><div>'+big(rev)+'<span class="'+(done?"t-"+tone(gv):"")+'">Umsatz'+(done?ev:" (Schätzung)")+'</span>'+bv+'</div></span></button><div class="ek-body"><p class="ek-sub">Lade Details …</p></div></div>';
+    h+='<div class="ek-item" data-s="'+esc(s)+'" data-d="'+esc(r.date)+'"><button type="button" class="ek-row" aria-expanded="false">'+logo(s,nm(s))+'<span class="ek-m"><span class="ek-nm"><a href="../aktien-hub/?s='+encodeURIComponent(s)+'">'+esc(nm(s))+'</a>'+'</span><span class="ek-pills"><span class="ek-badge'+(done?" done":"")+'">'+(done?"berichtet":"erwartet")+'</span>'+(vd?'<span class="ek-badge '+vd[1]+'" title="Gewinn und Umsatz im Vergleich zur Analystenerwartung">'+vd[0]+'</span>':"")+'</span></span>'+artIcon(s)+'<span class="ek-fig"><div>'+num(eps)+'<span class="'+(done?"t-"+tone(ge):"")+'">Gewinn/Aktie'+(done?ee:" (Schätzung)")+'</span>'+be+'</div><div>'+big(rev)+'<span class="'+(done?"t-"+tone(gv):"")+'">Umsatz'+(done?ev:" (Schätzung)")+'</span>'+bv+'</div></span></button><div class="ek-body"><p class="ek-sub">Lade Details …</p></div></div>';
   });
   $("list").innerHTML=h+"</div>";
 }
@@ -199,7 +199,7 @@ async function details(item){
     dh='<table style="margin-top:12px"><thead><tr><th>Dividende</th><th>Aktuell</th><th>Vor einem Jahr</th><th>Veränderung</th></tr></thead><tbody><tr><td>Letzte Zahlung ('+esc(String(L.date).slice(0,10))+')</td><td>'+num(lv,3)+"</td><td>"+num(pvv,3)+"</td><td>"+gp(gr(lv,pvv))+"</td></tr>"+(na&&nb?"<tr><td>Summe letzte 12 Monate</td><td>"+num(a,3)+"</td><td>"+num(b,3)+"</td><td>"+gp(gr(a,b))+"</td></tr>":"")+"</tbody></table>";
   }else if(res[1].status==="rejected")dh='<p class="ek-sub">Dividendendaten nicht verfügbar ('+esc(res[1].reason.message)+").</p>";
   else dh='<p class="ek-sub">Keine Dividendenzahlungen gefunden.</p>';
-  var out=h+dh+'<a class="ek-go" href="../aktien/?s='+encodeURIComponent(s)+'">Zur Aktie: Kennzahlen, Dividendenverlauf, News →</a>';
+  var out=h+dh+'<a class="ek-go" href="../aktien-hub/?s='+encodeURIComponent(s)+'">Zur Aktie: Kennzahlen, Dividendenverlauf, News →</a>';
   H[s+date]=out;box.innerHTML=out;
 }
 function render(){renderDays();renderList();$("clear").hidden=!(sel||q)}
@@ -227,7 +227,7 @@ $("list").onclick=function(e){if(e.target.closest("a"))return;var r=e.target.clo
     TJ.sort(function(a,b){return a.datum<b.datum?-1:a.datum>b.datum?1:(a.zeit||"")<(b.zeit||"")?-1:1});
     if(TJ.length){var ART={ergebnis:"Zahlen",dividende_exdatum:"Ex-Dividenden-Tag",dividende_zahltag:"Dividenden-Zahltag",k_ergebnis:"Zahlen",k_investorentag:"Investorentag",k_hauptversammlung:"Hauptversammlung","k_trading-update":"Trading Update"};
       $("termine").innerHTML='<h2>Angekündigte Termine aus Unternehmensmeldungen</h2><p class="ek-sub">Aus Pressemitteilungen übernommen, vor allem für Firmen außerhalb der USA. Nur Termine, die im Original genannt werden.</p><div class="ek-list">'+TJ.map(function(x){
-        var nmh=x.sym?'<a href="../aktien/?s='+encodeURIComponent(x.sym)+'">'+esc(x.name)+"</a>":esc(x.name);
+        var nmh=x.sym?'<a href="../aktien-hub/?s='+encodeURIComponent(x.sym)+'">'+esc(x.name)+"</a>":esc(x.name);
         return '<div class="ek-item"><div class="ek-row" style="cursor:default">'+logo(x.sym||x.name,x.name)+'<span class="ek-m"><span class="ek-nm">'+nmh+'</span><span class="ek-pills"><span class="ek-badge">'+esc(ART[x.art]||x.art)+(x.was&&/^k_/.test(x.art)&&x.art==="k_ergebnis"?" "+esc(x.was):"")+'</span></span></span><span class="ek-fig"><div>'+esc(fmtDay(x.datum))+'<span>'+(x.zeit?esc(x.zeit):"")+(x.betrag?(x.zeit?" · ":"")+esc(x.betrag)+" "+esc(x.waehrung||"")+" je Aktie":"")+(x.quelle?' · <a href="'+esc(x.quelle)+'" rel="noopener nofollow">Quelle</a>':"")+'</span></div></span></div></div>'}).join("")+"</div>"}}catch(e3){}
   try{var mr=await fetch("../data/magazin.json?v="+Math.floor(Date.now()/6e5));if(mr.ok){NEWS=((await mr.json()).items||[]).slice().sort(function(a,b){return a.date<b.date?1:-1})}}catch(e4){}
   render();

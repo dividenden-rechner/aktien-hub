@@ -55,4 +55,4 @@ Das hängt von der Auswahl ab. Breite Aktienmärkte haben oft niedrigere Rendite
 Ja. Die Gesamtrendite einer Aktie besteht aus Kursveränderung und Dividenden. Mehr dazu im Abschnitt zur Rendite in der [Einführung](/einfuehrung/).
 
 ### Wo finde ich die Dividende einer Aktie?
-Im [Aktien-Hub](/aktien/) siehst du den Dividendenverlauf und die aktuelle Rendite, im [Rechner](/rechner/dividendenrendite-rechner/) berechnest du sie selbst.
+Im [Aktien-Hub](/aktien-hub/) siehst du den Dividendenverlauf und die aktuelle Rendite, im [Rechner](/rechner/dividendenrendite-rechner/) berechnest du sie selbst.

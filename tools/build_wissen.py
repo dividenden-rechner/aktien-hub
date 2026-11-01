@@ -79,8 +79,8 @@ def build_page(bm, p, pages):
     weiter = [x.strip() for x in (p.get("weiter") or "").split(",") if x.strip()]
     if weiter:
         o += '<aside class="related"><h2>Weiterlesen</h2><ul>\n' + "\n".join(f'<li><a href="{pre}{w}">{esc(title_of(w, pages))}</a></li>' for w in weiter) + "\n</ul></aside>\n"
-    o += (f'<aside class="note" style="background:#f0fdf4;border-left-color:#10b981"><strong>Passende Werkzeuge:</strong> Prüfe Aktien im <a href="{pre}aktien/">Aktien-Hub</a>, '
-          f'vergleiche sie im <a href="{pre}aktien/vergleich/">Aktien-Vergleich</a>, filtere mit dem <a href="{pre}screener/">Screener</a> oder rechne mit den <a href="{pre}">Rechnern</a>.</aside>\n')
+    o += (f'<aside class="note" style="background:#f0fdf4;border-left-color:#10b981"><strong>Passende Werkzeuge:</strong> Prüfe Aktien im <a href="{pre}aktien-hub/">Aktien-Hub</a>, '
+          f'vergleiche sie im <a href="{pre}aktien-hub/vergleich/">Aktien-Vergleich</a>, filtere mit dem <a href="{pre}screener/">Screener</a> oder rechne mit den <a href="{pre}">Rechnern</a>.</aside>\n')
     o += HINWEIS + "\n</article></main>\n" + bm.footer_html(depth) + "\n</body>\n</html>\n"
     out = os.path.join(ROOT, p["bereich"], p["slug"], "index.html")
     if os.path.exists(out) and MARK not in open(out, encoding="utf-8").read():

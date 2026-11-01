@@ -1,5 +1,5 @@
 {
-  "_hinweis": "Voreingestellte Peer-Gruppen fuer aktien/vergleich/. Jede Gruppe: name, Mitglieder als [Ticker, Anzeigename]. Die erste Gruppe, in der ein Ticker steht, ist sein Standard-Peer-Set. Tickers im FMP-Format (US-Boersenkuerzel).",
+  "_hinweis": "Voreingestellte Peer-Gruppen fuer aktien-hub/vergleich/. Jede Gruppe: name, Mitglieder als [Ticker, Anzeigename]. Die erste Gruppe, in der ein Ticker steht, ist sein Standard-Peer-Set. Tickers im FMP-Format (US-Boersenkuerzel).",
   "gruppen": [
     {"id": "luftfahrt", "name": "Luftfahrt & Rüstung", "members": [["BA","Boeing"],["EADSY","Airbus"],["LMT","Lockheed Martin"],["RTX","RTX"],["GD","General Dynamics"],["NOC","Northrop Grumman"],["GE","GE Aerospace"]]},
     {"id": "getraenke", "name": "Getränke & Basiskonsum", "members": [["KO","Coca-Cola"],["PEP","PepsiCo"],["KDP","Keurig Dr Pepper"],["MDLZ","Mondelez"],["PG","Procter & Gamble"],["CL","Colgate-Palmolive"],["KMB","Kimberly-Clark"],["GIS","General Mills"]]},

@@ -39,7 +39,7 @@ Ein **Dividenden-ETF** kauft für dich viele Aktien nach einer festen Regel, zum
 1. **Hohe Rendite im ETF heißt nicht sichere Rendite.** Manche Indizes sortieren nach der höchsten Rendite und nehmen damit gezielt auch Unternehmen auf, bei denen die Rendite nur wegen eines gefallenen Kurses hoch ist. Das ist das Muster der [Dividendenfalle](/grundlagen/dividendenfalle/).
 2. **Der Index entscheidet, nicht du.** Lies bei jedem ETF, nach welchen Regeln die Firmen ausgewählt und gewichtet werden.
 3. **Ausschüttend oder thesaurierend.** Beide Varianten haben steuerliche Folgen. Eine Übersicht liefert der Artikel [ausschüttend oder thesaurierend](/grundlagen/ausschuettend-thesaurierend/).
-4. **Einzelaktien brauchen Zeit.** Wer keine Berichte liest, verpasst Warnzeichen. Ein Werkzeug wie der [Aktien-Vergleich](/aktien/vergleich/) hilft bei der Einordnung.
+4. **Einzelaktien brauchen Zeit.** Wer keine Berichte liest, verpasst Warnzeichen. Ein Werkzeug wie der [Aktien-Vergleich](/aktien-hub/vergleich/) hilft bei der Einordnung.
 
 ## Mischung ist erlaubt
 

@@ -7,8 +7,8 @@ Die interaktiven Werkzeuge laufen im Browser; Depotdaten bleiben lokal im Browse
 ## Seiten
 
 - [Startseite: Überblick über Rechner, Aktien-Hub und Wissen](https://dividenden-rechner.github.io/aktien-hub/)
-- [Aktien-Hub: Dividendenverlauf, Umsatz, Gewinn und Kennzahlen jeder Aktie, mit Watchlist](https://dividenden-rechner.github.io/aktien-hub/aktien/)
-- [Aktienvergleich: Kennzahlen mehrerer Aktien und Peers im Balkendiagramm](https://dividenden-rechner.github.io/aktien-hub/aktien/vergleich/)
+- [Aktien-Hub: Dividendenverlauf, Umsatz, Gewinn und Kennzahlen jeder Aktie, mit Watchlist](https://dividenden-rechner.github.io/aktien-hub/aktien-hub/)
+- [Aktienvergleich: Kennzahlen mehrerer Aktien und Peers im Balkendiagramm](https://dividenden-rechner.github.io/aktien-hub/aktien-hub/vergleich/)
 - [Depot-Tracker: Depot importieren (Trade Republic, Scalable Capital, Portfolio Performance), Aufbau, Gewinne, Dividenden, Dividendenkalender, Forecast, XIRR, TWR](https://dividenden-rechner.github.io/aktien-hub/depot/)
 - [Aktien-Screener mit Kriterien-Baukasten](https://dividenden-rechner.github.io/aktien-hub/screener/)
 - [Nachrichten zu Aktien der Watchlist](https://dividenden-rechner.github.io/aktien-hub/unternehmensmeldungen/)
@@ -493,20 +493,8 @@ Die interaktiven Werkzeuge laufen im Browser; Depotdaten bleiben lokal im Browse
 
 
 
-- [Depot eröffnen: Worauf Einsteiger achten sollten](https://dividenden-rechner.github.io/aktien-hub/einfuehrung/depot-eroeffnen/): So eröffnest du ein Wertpapierdepot: Brokertypen, Kosten, Freistellungsauftrag, Sparplan und die häufigsten Anfängerfehler bei der Wahl.
-- [Dividenden-ETF oder Einzelaktien: Was passt zu dir?](https://dividenden-rechner.github.io/aktien-hub/einfuehrung/dividenden-etf-oder-einzelaktien/): Dividenden-ETFs und Einzelaktien im Vergleich: Streuung, Aufwand, Kosten, Steuern und für wen welche Lösung sinnvoll sein kann.
-- [Wie viel Dividende bekomme ich? Rechenbeispiele für Einsteiger](https://dividenden-rechner.github.io/aktien-hub/einfuehrung/dividendeneinkommen-berechnen/): Dividende pro Aktie, Dividendenrendite und Jahreseinkommen berechnen: drei Rechenschritte mit Beispielen, Steuerabzug und Hinweisen zur Planung.
-- [Was ist eine Aktie? Einfach erklärt für Einsteiger](https://dividenden-rechner.github.io/aktien-hub/einfuehrung/was-ist-eine-aktie/): Was eine Aktie ist, wie du Mitbesitzer eines Unternehmens wirst, wie Kurse entstehen und womit du als Anleger rechnen musst.
-- [Dividenden reinvestieren: Zinseszins, Sparplan und Entnahme](https://dividenden-rechner.github.io/aktien-hub/fortgeschrittene/dividenden-reinvestieren/): Warum das Wiederanlegen von Dividenden den Vermögensaufbau beschleunigt, wie du es praktisch umsetzt, was Steuern ändern und wann Entnahme sinnvoller ist.
-- [Dividendenstrategien im Überblick: Aristokraten, Dogs of the Dow und mehr](https://dividenden-rechner.github.io/aktien-hub/fortgeschrittene/dividendenstrategien/): Gängige Dividendenstrategien im Vergleich: Dividendenwachstum, hohe Rendite, Aristokraten, Dogs of the Dow, monatliche Dividenden. Prinzip, Stärken und Risiken.
-- [Peer-Group-Analyse: Aktien fair mit Wettbewerbern vergleichen](https://dividenden-rechner.github.io/aktien-hub/fortgeschrittene/peer-group-analyse/): So vergleichst du eine Aktie mit ihrer Peer Group: passende Vergleichsunternehmen wählen, Kennzahlen auswählen, Ausreißer erkennen und typische Fehler vermeiden.
-- [Aktienrückkauf erklärt: Wirkung, Vorteile und Risiken](https://dividenden-rechner.github.io/aktien-hub/grundlagen/aktienrueckkauf/): Was ein Aktienrückkauf ist, wie er den Gewinn je Aktie beeinflusst, wann er Aktionären nützt und wie er sich von der Dividende unterscheidet.
-- [Dividendenarten: Quartals-, Jahres-, Sonder- und Stockdividende](https://dividenden-rechner.github.io/aktien-hub/grundlagen/dividendenarten/): Die wichtigsten Dividendenarten im Überblick: regelmäßige und Sonderdividende, Zahlungsrhythmen, Stockdividende, Vorzugsaktien und Dividendentermine.
-- [EBIT und EBITDA einfach erklärt](https://dividenden-rechner.github.io/aktien-hub/grundlagen/ebitda-ebit/): Was EBIT und EBITDA bedeuten, wie sie berechnet werden, wofür man sie nutzt und wo ihre Grenzen liegen, besonders bei Dividendenaktien.
-- [Gewinn je Aktie (EPS): Bedeutung, Berechnung und Grenzen](https://dividenden-rechner.github.io/aktien-hub/grundlagen/eps-gewinn-je-aktie/): Was das Gewinn je Aktie (EPS) aussagt, wie es berechnet wird, was verwässert bedeutet und warum es allein nicht reicht, um eine Dividende zu beurteilen.
-- [Börsen- und Dividenden-Glossar von A bis Z](https://dividenden-rechner.github.io/aktien-hub/grundlagen/glossar/): Über 60 Begriffe rund um Aktien, Dividenden und Kennzahlen kurz erklärt, mit Links zu den ausführlichen Artikeln auf Dividenden-Rechner.
-- [Quartalszahlen lesen: Umsatz, Gewinn, Ausblick richtig einordnen](https://dividenden-rechner.github.io/aktien-hub/grundlagen/quartalszahlen-lesen/): So liest du einen Quartalsbericht: Umsatz, Gewinn je Aktie, berichtet oder bereinigt, Ausblick, Währungseffekte und worauf es für Dividenden ankommt.
-- [Methodik und Quellen: So arbeiten wir](https://dividenden-rechner.github.io/aktien-hub/ueber-uns/methodik/): Woher Daten und Texte stammen, wie Artikel entstehen, welche Rolle KI dabei spielt, wie wir mit Fehlern umgehen und was Dividenden-Rechner nicht ist.
+
+
 
 - [News: Artikel zu Dividenden, Kennzahlen und Steuern](https://dividenden-rechner.github.io/aktien-hub/news/)
 - [Johnson & Johnson: Impella-Daten beim TCT 2026 zeigen niedrigere Sterblichkeit als CHIP-BCIS3](https://dividenden-rechner.github.io/aktien-hub/news/johnson-johnson-impella-tct-2026-daten/): Johnson & Johnson MedTech stellt beim Kongress TCT drei Auswertungen zu Impella-Herzpumpen vor: Bei Risikoeingriffen am Herzen liegt die Sterblichkeit in Registern unter den Werten der Studie CHIP-BCIS3.
@@ -647,6 +635,21 @@ Die interaktiven Werkzeuge laufen im Browser; Depotdaten bleiben lokal im Browse
 - [Novartis erhöht die Gewinnprognose, neue Medikamente laufen gut](https://dividenden-rechner.github.io/aktien-hub/news/novartis-q3-2026-ergebnisse/): Novartis hebt die Gewinnprognose für das Gesamtjahr 2026 an. Grund sind ein höheres operatives Kernergebnis und stark nachgefragte Wachstums-Medikamente.
 - [Verizon steigert bereinigtes EPS und hebt Jahresziele für 2026 an](https://dividenden-rechner.github.io/aktien-hub/news/verizon-q3-2026/): Verizon verzeichnet im dritten Quartal 2026 Zuwächse bei Service-Umsatz und bereinigtem EPS. Die Jahresprognose wurde in mehreren Punkten angehoben.
 - [Coca-Cola hebt die Ziele für Cashflow und Gewinn je Aktie an](https://dividenden-rechner.github.io/aktien-hub/news/coca-cola-q2-2026/): Coca-Cola steigert Umsatz und bereinigten Gewinn im zweiten Quartal 2026 und erhöht die Jahresziele für Free Cashflow und Gewinn je Aktie.
+
+- [Depot eröffnen: Worauf Einsteiger achten sollten](https://dividenden-rechner.github.io/aktien-hub/einfuehrung/depot-eroeffnen/): So eröffnest du ein Wertpapierdepot: Brokertypen, Kosten, Freistellungsauftrag, Sparplan und die häufigsten Anfängerfehler bei der Wahl.
+- [Dividenden-ETF oder Einzelaktien: Was passt zu dir?](https://dividenden-rechner.github.io/aktien-hub/einfuehrung/dividenden-etf-oder-einzelaktien/): Dividenden-ETFs und Einzelaktien im Vergleich: Streuung, Aufwand, Kosten, Steuern und für wen welche Lösung sinnvoll sein kann.
+- [Wie viel Dividende bekomme ich? Rechenbeispiele für Einsteiger](https://dividenden-rechner.github.io/aktien-hub/einfuehrung/dividendeneinkommen-berechnen/): Dividende pro Aktie, Dividendenrendite und Jahreseinkommen berechnen: drei Rechenschritte mit Beispielen, Steuerabzug und Hinweisen zur Planung.
+- [Was ist eine Aktie? Einfach erklärt für Einsteiger](https://dividenden-rechner.github.io/aktien-hub/einfuehrung/was-ist-eine-aktie/): Was eine Aktie ist, wie du Mitbesitzer eines Unternehmens wirst, wie Kurse entstehen und womit du als Anleger rechnen musst.
+- [Dividenden reinvestieren: Zinseszins, Sparplan und Entnahme](https://dividenden-rechner.github.io/aktien-hub/fortgeschrittene/dividenden-reinvestieren/): Warum das Wiederanlegen von Dividenden den Vermögensaufbau beschleunigt, wie du es praktisch umsetzt, was Steuern ändern und wann Entnahme sinnvoller ist.
+- [Dividendenstrategien im Überblick: Aristokraten, Dogs of the Dow und mehr](https://dividenden-rechner.github.io/aktien-hub/fortgeschrittene/dividendenstrategien/): Gängige Dividendenstrategien im Vergleich: Dividendenwachstum, hohe Rendite, Aristokraten, Dogs of the Dow, monatliche Dividenden. Prinzip, Stärken und Risiken.
+- [Peer-Group-Analyse: Aktien fair mit Wettbewerbern vergleichen](https://dividenden-rechner.github.io/aktien-hub/fortgeschrittene/peer-group-analyse/): So vergleichst du eine Aktie mit ihrer Peer Group: passende Vergleichsunternehmen wählen, Kennzahlen auswählen, Ausreißer erkennen und typische Fehler vermeiden.
+- [Aktienrückkauf erklärt: Wirkung, Vorteile und Risiken](https://dividenden-rechner.github.io/aktien-hub/grundlagen/aktienrueckkauf/): Was ein Aktienrückkauf ist, wie er den Gewinn je Aktie beeinflusst, wann er Aktionären nützt und wie er sich von der Dividende unterscheidet.
+- [Dividendenarten: Quartals-, Jahres-, Sonder- und Stockdividende](https://dividenden-rechner.github.io/aktien-hub/grundlagen/dividendenarten/): Die wichtigsten Dividendenarten im Überblick: regelmäßige und Sonderdividende, Zahlungsrhythmen, Stockdividende, Vorzugsaktien und Dividendentermine.
+- [EBIT und EBITDA einfach erklärt](https://dividenden-rechner.github.io/aktien-hub/grundlagen/ebitda-ebit/): Was EBIT und EBITDA bedeuten, wie sie berechnet werden, wofür man sie nutzt und wo ihre Grenzen liegen, besonders bei Dividendenaktien.
+- [Gewinn je Aktie (EPS): Bedeutung, Berechnung und Grenzen](https://dividenden-rechner.github.io/aktien-hub/grundlagen/eps-gewinn-je-aktie/): Was das Gewinn je Aktie (EPS) aussagt, wie es berechnet wird, was verwässert bedeutet und warum es allein nicht reicht, um eine Dividende zu beurteilen.
+- [Börsen- und Dividenden-Glossar von A bis Z](https://dividenden-rechner.github.io/aktien-hub/grundlagen/glossar/): Über 60 Begriffe rund um Aktien, Dividenden und Kennzahlen kurz erklärt, mit Links zu den ausführlichen Artikeln auf Dividenden-Rechner.
+- [Quartalszahlen lesen: Umsatz, Gewinn, Ausblick richtig einordnen](https://dividenden-rechner.github.io/aktien-hub/grundlagen/quartalszahlen-lesen/): So liest du einen Quartalsbericht: Umsatz, Gewinn je Aktie, berichtet oder bereinigt, Ausblick, Währungseffekte und worauf es für Dividenden ankommt.
+- [Methodik und Quellen: So arbeiten wir](https://dividenden-rechner.github.io/aktien-hub/ueber-uns/methodik/): Woher Daten und Texte stammen, wie Artikel entstehen, welche Rolle KI dabei spielt, wie wir mit Fehlern umgehen und was Dividenden-Rechner nicht ist.
 
 ## Hinweis
 

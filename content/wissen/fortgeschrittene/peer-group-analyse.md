@@ -25,7 +25,7 @@ Die Peer Group besteht aus Unternehmen, die dir als Vergleich dienen: gleiche Br
 
 ## Vergleiche direkt auf dieser Seite
 
-Im [Aktienvergleich](/aktien/vergleich/) wählst du Unternehmen und voreingestellte Peers, suchst eine Kennzahl aus und siehst die Werte als Balkendiagramm mit Logos. Das ersetzt die Handarbeit in der Tabellenkalkulation.
+Im [Aktienvergleich](/aktien-hub/vergleich/) wählst du Unternehmen und voreingestellte Peers, suchst eine Kennzahl aus und siehst die Werte als Balkendiagramm mit Logos. Das ersetzt die Handarbeit in der Tabellenkalkulation.
 
 ## Typische Fehler
 
