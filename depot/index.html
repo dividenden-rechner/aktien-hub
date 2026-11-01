@@ -131,10 +131,10 @@ article.wide>:not(.tool):not(.cards){max-width:760px}
 @media (max-width:560px){body{font-size:16px}.site-header{position:static}}
 
 [hidden]{display:none!important}
-.dtabs{display:flex;flex-wrap:wrap;gap:6px;margin:0 0 1.2rem;border-bottom:2px solid #e5e7eb;padding-bottom:0}
-.tool .dtabs button.dtab{background:none;color:#4b5563;border:0;border-bottom:3px solid transparent;border-radius:0;padding:.65rem 1rem;margin-bottom:-2px;font-size:1rem}
-.tool .dtabs button.dtab:hover{background:#f0fdf4;color:var(--ink)}
-.tool .dtabs button.dtab.on{color:var(--success);border-bottom-color:var(--success)}
+.dtabs{display:flex;gap:18px;margin:0 0 1.2rem;border-bottom:1px solid #dfe5ea;padding-bottom:0;overflow-x:auto;white-space:nowrap;scrollbar-width:none}.dtabs::-webkit-scrollbar{display:none}
+.tool .dtabs button.dtab{flex:none;background:none;color:#8a97a3;border:0;border-bottom:2px solid transparent;border-radius:0;padding:6px 0 8px;margin-bottom:-1px;font-size:13px;font-weight:500;transition:none}
+.tool .dtabs button.dtab:hover{background:none;color:#5b6874}
+.tool .dtabs button.dtab.on{background:none;color:#33414d;font-weight:600;border-bottom-color:#8a97a3}
 .brokers{display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:10px;margin:0 0 1.2rem}
 .tool button.broker{background:#fff;color:var(--ink);border:1px solid var(--border);padding:.9rem .8rem;text-align:center}
 .tool button.broker:hover{background:#f0fdf4;border-color:var(--success)}
