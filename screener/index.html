@@ -137,11 +137,11 @@ article.wide>:not(.tool):not(.cards){max-width:760px}
 .tool .mode button[aria-pressed=true]{background:none;color:#33414d;font-weight:600;border-bottom-color:#8a97a3}
 .tool .chips{display:flex;flex-wrap:wrap;gap:8px;align-items:center;margin:0 0 .9rem}
 .tool .chips .lbl{font-size:.9rem;color:#4b5563}
-.tool .chips button{background:#fff;color:var(--ink);border:1px solid var(--border);border-radius:999px;padding:.4rem .85rem;font-size:.88rem}
-.tool .chips button:hover{background:#f0fdf4;border-color:var(--success)}
-.sv{display:inline-flex;border:1px solid var(--border);border-radius:999px;overflow:hidden;background:#fff}
-.tool .chips .sv button{border:0;border-radius:0;padding:.4rem .75rem}
-.tool .chips .sv button.x{padding:.4rem .6rem;color:#6b7280;border-left:1px solid var(--border)}
+.tool .chips{gap:4px 18px}.tool .chips button{background:none;color:#8a97a3;border:0;border-bottom:2px solid transparent;border-radius:0;padding:6px 0 8px;font-size:13px;font-weight:500;transition:none}
+.tool .chips button:hover{background:none;color:#33414d}
+.sv{display:inline-flex;align-items:center;gap:6px}
+.tool .chips .sv button{padding:6px 0 8px}
+.tool .chips .sv button.x{padding:6px 0 8px;color:#b0b9c2;border-left:0}
 .tool button.ghost{background:#fff;color:var(--ink);border:1px solid var(--border)}
 .tool button.ghost:hover{background:#f9fafb}
 .tool button:disabled{opacity:.55;cursor:default}
