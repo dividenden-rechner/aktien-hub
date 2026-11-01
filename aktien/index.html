@@ -23,13 +23,13 @@ input:focus-visible,button:focus-visible{outline:2px solid var(--acc);outline-of
 .logo{width:32px;height:32px;border-radius:6px;object-fit:contain;background:#fff;border:1px solid var(--line);flex:none}
 h2{font-size:15px;margin:26px 0 10px;color:var(--mut);font-weight:600}
 .tiles{display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:10px}
-.tiles .it{border:1px solid var(--line);border-radius:8px;background:var(--card)}
+.tiles .it{border:0;border-bottom:1px solid var(--line);border-radius:0;background:none;padding-left:4px}.tiles{gap:0 28px;border-top:1px solid var(--line)}.tiles:empty{border:0}
 .tile{position:relative}.tile .it{padding-right:34px}
 .wlx{position:absolute;top:4px;right:4px;width:26px;height:26px;border:0;border-radius:6px;background:none;color:var(--mut);font:inherit;font-size:18px;line-height:1;cursor:pointer}
 .wlx:hover,.wlx:focus-visible{background:#fbeceb;color:var(--neg)}
 .wlhead{display:flex;flex-wrap:wrap;align-items:baseline;gap:4px 14px;margin:26px 0 10px}.wlhead h2{margin:0;font-size:18px;color:var(--ink)}
 .wlsub{color:var(--mut);font-size:14px}.wlnews{display:inline-flex;align-items:center;gap:6px;font-size:13px;font-weight:600;color:#33414d;text-decoration:underline}.wlsub{flex-basis:100%}
-.wlfoot{display:flex;flex-wrap:wrap;gap:10px;margin:14px 0 0}.wlfoot .sbtn{flex:1 1 220px;margin:0;font-size:15px}
+.wlfoot{display:flex;flex-wrap:wrap;gap:4px 22px;margin:14px 0 0}.wlfoot .sbtn{flex:none;margin:0;font-size:13px}
 .wlempty{grid-column:1/-1;border:1px dashed var(--line);border-radius:8px;padding:16px;color:var(--mut)}
 .sr{display:flex;align-items:stretch;border-bottom:1px solid var(--line)}.sr:last-child{border-bottom:0}.sr .it{border-bottom:0;flex:1;min-width:0}
 .wlp{flex:none;width:48px;border:0;border-left:1px solid var(--line);background:none;color:var(--acc);font:inherit;font-size:22px;line-height:1;cursor:pointer}
@@ -53,7 +53,7 @@ svg{width:100%;height:auto;display:block}
 svg text{fill:var(--mut);font-size:11px;font-family:inherit}
 .desc{color:var(--mut);max-width:78ch;margin-top:14px}
 #msg{color:var(--mut);margin:10px 0}#msg.err{color:var(--neg)}
-.sbtn{font:inherit;font-weight:600;padding:10px 16px;border:0;border-radius:8px;background:#98e6b3;color:#14202b;cursor:pointer;margin-top:14px}
+.sbtn{font:inherit;font-size:13px;font-weight:500;padding:6px 0;border:0;border-radius:0;background:none;color:#33414d;text-decoration:underline;cursor:pointer;margin-top:0}.sbtn:hover{color:#1a7a45}
 .nm{display:flex;flex-wrap:wrap;align-items:center;gap:6px 10px}
 .nm h1{margin:0}
 .wlh{font:inherit;font-size:13px;font-weight:600;padding:4px 10px;border:1px solid var(--line);border-radius:6px;background:none;color:var(--mut);cursor:pointer}
@@ -212,12 +212,12 @@ svg text{fill:var(--mut);font-size:11px;font-family:inherit}
   <div id="sug" hidden></div>
 </div>
 <div id="msg" role="status"></div>
-<p id="keyp" hidden><button class="sbtn" style="background:#f0f8f3;margin-top:0" onclick="askKey()">🔑 Eigenen API-Key nutzen</button></p>
+<p id="keyp" hidden><button class="sbtn" onclick="askKey()">🔑 Eigenen API-Key nutzen</button></p>
 <script>if(/key/.test(location.hash))document.getElementById("keyp").hidden=false</script>
 <section id="start">
   <div class="wlhead"><h2>Watchlist</h2></div>
   <div class="tiles" id="tiles"></div>
-  <p class="wlfoot"><button class="sbtn" id="wlreset">Standardliste wiederherstellen</button><button class="sbtn" id="xmk">Indizes, Krypto &amp; Forex</button><a class="sbtn" href="vergleich/" style="text-decoration:none;display:inline-block;text-align:center">Aktien vergleichen</a></p>
+  <p class="wlfoot"><button class="sbtn" id="wlreset">Standardliste wiederherstellen</button><button class="sbtn" id="xmk">Indizes, Krypto &amp; Forex</button><a class="sbtn" href="vergleich/" style="display:inline-block">Aktien vergleichen</a></p>
 </section>
 <section id="hub" hidden></section>
 </main>
