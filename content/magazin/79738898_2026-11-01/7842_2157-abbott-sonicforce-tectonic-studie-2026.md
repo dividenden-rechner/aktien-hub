@@ -12,6 +12,7 @@ image_source: https://commons.wikimedia.org/wiki/File:FreeStyle_libre_am_Oberarm
 logo_name: "Abbott"
 logo_symbol: ABT
 logo_domain: abbott.com
+logo_file: assets/logos/abt.png
 ---
 <!-- PRÜFEN: Aufmacherfoto ist automatisch von Wikimedia Commons gewaehlt: bitte pruefen, ob es zum Artikel passt (sonst image-Zeilen entfernen, dann entsteht ein Titelbild automatisch). -->
 <!-- PRÜFEN: Quelle: https://www.prnewswire.com/news-releases/abbotts-tectonic-clinical-trial-demonstrates-strong-30-day-outcomes-and-high-procedural-success-for-its-investigational-sonicforce-coronary-intravascular-lithotripsy-system-302925602.html -->
