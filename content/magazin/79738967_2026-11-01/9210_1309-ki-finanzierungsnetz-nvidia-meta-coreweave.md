@@ -1,6 +1,6 @@
 ---
-title: "Die Chiphersteller finanzieren ihre Kunden, und alle sichern sich ab"
-description: "Nvidia, AMD und Broadcom steigen bei Meta ein, Nvidia haftet für Rechenzentren und hält 11,5 % an CoreWeave. Anleger kaufen Versicherungen gegen einen Rückschlag. Was das Netz aus Beteiligungen und Garantien bedeutet."
+title: "Die Chiphersteller finanzieren ihre Kunden: Stärke und Risiko des KI-Netzes"
+description: "Nvidia, AMD und Broadcom steigen bei Meta ein, Nvidia haftet für Rechenzentren und hält 11,5 % an CoreWeave. Was das Netz aus Beteiligungen und Garantien bedeutet, was dafür spricht und wo die Risiken liegen."
 date: 2026-11-01 13:09
 author: "Redaktions-Team Dividenden-Rechner.de"
 author_bio: "Das Redaktions-Team von Dividenden-Rechner.de schreibt über Dividendenaktien, Kennzahlen und Steuerthemen für Privatanleger. Die Rechner und Auswertungen auf der Seite entstehen im eigenen Haus."
@@ -12,6 +12,7 @@ image_credit: "Foto: Daoducquan / Wikimedia Commons, CC BY-SA 4.0"
 image_source: https://commons.wikimedia.org/wiki/File:Data_Center_c%E1%BB%A7a_CMC_Telecom_(2).jpg
 image_artist_url: 
 ---
+<!-- ÜBERARBEITET 01.11.2026 nach Leserkritik (zu einseitig und reißerisch): Gegenargumente ergänzt (knappe Rechenleistung, starke Bilanzen, Absicherung ist klein und üblich), Dotcom-Vergleich relativiert, Auslöser des Freitags eingeordnet. Zahlen zu Amazon-Nettogewinn und Cloud-Wachstum stammen aus unserem Marktüberblick vom 30.10. -->
 <!-- PRÜFEN: Thema und Reihenfolge nach einem Kommentar des Wall Street Journal (J. Mackintosh, 1.11.2026) und einer Netzwerk-Grafik von Dritten. Von dort wurden keine Zahlen übernommen. Die Grafik mit Marktwerten und weiteren Beträgen (z. B. Nvidia/OpenAI „bis zu 100 Mrd.“, Alphabet/Anthropic, Amazon/OpenAI) ist nicht belegt und wurde bewusst nicht verwendet. -->
 <!-- PRÜFEN: Meta-Kapitalerhöhung (25 Mrd. Dollar Stammaktien zu 625 Dollar, 12,5 Mrd. Wandel-Vorzugsaktien zu 6,50 %, Interesse der drei Chipfirmen bis 5 Mrd., Nvidia 3 Mrd., AMD 1 Mrd.) stammt aus Meta-Mitteilungen laut fourweekmba.com und aa.com.tr. Bitte gegen die Meta-Pressemitteilung (SEC) prüfen. Brodcom-Betrag ist nicht genannt. -->
 <!-- PRÜFEN: CoreWeave: 2 Mrd. Dollar zu 87,20 Dollar je Aktie, Anteil danach 11,5 % (IFR, Januar/Februar 2026). Anleiherenditen 14,8 bis 14,9 % und Kursminus 16 % am 14.10. (investinglive.com), Rating B+ (S&P). Zusage, ungenutzte Kapazität bis 2032 zu mieten, stammt aus dem WSJ-Kommentar, nicht aus einer Primärquelle. -->
@@ -21,15 +22,17 @@ image_artist_url:
 <!-- PRÜFEN: Absicherung (Rekord bei CoreWeave-Puts, Verfall 2028 mit Ausübungspreis 35 Dollar bei Kurs um 55 Dollar laut Cboe; Ausfallversicherungen auf Amazon, Alphabet, Microsoft, Meta, Oracle auf höchstem Stand seit 2021 laut Solve; Oracle-Spread um mehr als 1 Prozentpunkt; Jump Trading Handelstisch für Rechenleistung; Mietpreis Nvidia B300 7,56 Dollar je Stunde, +56 % in diesem Jahr laut Silicon Data) stammt aus einem WSJ-Bericht (G. Banerji, 31.10.2026) und ist nicht gegen Primärdaten geprüft. Einziges wörtliches Zitat: Dave Olsen, Jump Trading, in eigener Übersetzung. -->
 
 !!! kurz "Kurz gesagt"
-    **Kern:** Die Chiphersteller finanzieren ihre eigenen Kunden. Läuft die KI-Nachfrage schwächer, trifft das alle Beteiligten gleichzeitig. Anleger kaufen deshalb Versicherungen.
+    **Kern:** Die Chiphersteller finanzieren ihre eigenen Kunden. Das stützt die Nachfrage, verbindet die Unternehmen aber enger miteinander. Ob das ein Risiko oder ein Geschäftsmodell ist, hängt davon ab, ob die Nachfrage nach Rechenleistung anhält.
 
     1. **Das Netz:** Nvidia hält 11,5 % an CoreWeave, haftet mit bis zu 105 Mrd. Dollar für ein OpenAI-Rechenzentrum und will mit AMD und Broadcom bis zu 5 Mrd. Dollar Meta-Aktien kaufen.
-    2. **Die Rechnung:** Amazon hat einen negativen Free Cashflow von 42 Mrd. Dollar, bei Alphabet liegt er im Quartal bei −9 Mrd. Dollar.
-    3. **Die Angst:** Die Anleihen von CoreWeave rentieren bei rund 15 %, Ausfallversicherungen auf die großen Cloud-Konzerne kosten so viel wie seit 2021 nicht mehr.
+    2. **Dafür spricht:** Rechenleistung ist knapp, die Mieten steigen, und die großen Konzerne verdienen Milliarden. Amazon erzielte im Quartal über 20 Mrd. Dollar Gewinn.
+    3. **Dagegen spricht:** Die Investitionen übersteigen bei Amazon und Alphabet den Free Cashflow. Die Anleihen von CoreWeave rentieren bei rund 15 %, und Absicherungen sind gefragt, bleiben aber klein.
 
 Die am stärksten nachgefragte Versicherung der Wall Street lautet derzeit auf CoreWeave. Der Anbieter von KI-Rechenzentren hat in diesem Monat Rekordumsätze bei Verkaufsoptionen auf seine Aktie verzeichnet, vor allem auf Kontrakte mit Verfall 2028. Sie zahlen aus, wenn der Kurs auf 35 Dollar fällt. Zuletzt lag er bei etwa 55 Dollar. Das berichtet das Wall Street Journal unter Berufung auf Daten der Börse Cboe.
 
-Der Anlass liegt in der Art, wie der Boom bezahlt wird. Die Chiphersteller verkaufen nicht nur Chips. Sie beteiligen sich an ihren Kunden, garantieren deren Mieten und kaufen deren Aktien. Fällt die Nachfrage nach KI-Rechenleistung, fällt sie bei Lieferant und Kunde zugleich. Der Freitag hat gezeigt, wie schnell das gehen kann.
+Der Anlass liegt in der Art, wie der Boom bezahlt wird. Die Chiphersteller verkaufen nicht nur Chips. Sie beteiligen sich an ihren Kunden, garantieren deren Mieten und kaufen deren Aktien. Das stützt die Nachfrage, solange sie hoch bleibt. Fällt sie, trifft es Lieferant und Kunde zugleich.
+
+Eine Absicherung ist allerdings keine Vorhersage. Wer große Positionen hält, kauft Versicherungen, auch wenn er nicht mit dem Schlimmsten rechnet. Dieser Beitrag zeigt beide Seiten: wie das Netz aufgebaut ist, was für dieses Modell spricht und wo die Risiken liegen.
 
 ## Was diese Woche passiert ist
 
@@ -60,6 +63,14 @@ Am größten ist die Garantie für Ohio. OpenAI mietet das Rechenzentrum 20 Jahr
 
 Ein Teil der Nachfrage nach Nvidia-Chips ist damit nicht unabhängig, sondern vom Lieferanten mitfinanziert.
 
+## Was für das Modell spricht
+
+Die Konzerne investieren nicht ins Blaue, sondern in eine Nachfrage, die sie bisher nicht bedienen können. Der Preis für die Miete eines Nvidia-B300-Chips stieg nach dem Index von Silicon Data in diesem Jahr um rund 56 %. Das spricht für knappe Kapazität und nicht für ein Überangebot. Auch die Kapitalerhöhung von Meta war so gefragt, dass aus 35 Mrd. Dollar rund 37,5 Mrd. wurden.
+
+Die Käufer sind keine Unternehmen ohne Einnahmen. [Amazon](../tech-ausverkauf-intel-nasdaq-marktueberblick/) erzielte im dritten Quartal einen Nettogewinn von über 20 Mrd. Dollar, und das Cloud-Geschäft wuchs so stark wie seit Jahren nicht. Microsoft erwirtschaftet 60 Mrd. Dollar Free Cashflow. Wer wie Nvidia einem solchen Kunden hilft, finanziert die Nachfrage von Unternehmen mit eigenen Gewinnen.
+
+Auch die Absicherung ist weniger bedrohlich, als sie klingt. Sie ist im Vergleich zum eigentlichen KI-Handel noch klein. Wer Versicherungen anbietet, verdient an den Prämien. Ein solcher Markt kann auch entstehen, weil der Handel mit Risiken ein weiteres Geschäft ist.
+
 ## Wer die Rechnung bezahlt
 
 Die großen Cloud-Anbieter zahlen ihre Investitionen immer weniger aus der Kasse. Die [Free Cashflows](../../grundlagen/free-cashflow/) der letzten zwölf Monate zeigen ein uneinheitliches Bild:
@@ -73,7 +84,7 @@ Microsoft erwirtschaftet 60 Mrd. Dollar. Die Investitionen stiegen aber von 23,9
 
 Der Rest kommt von den Anleihemärkten. Alphabet, Amazon, Meta und Oracle haben nach Angaben der Datenfirma LSEG bis Mitte Oktober mehr als 228 Mrd. Dollar an Anleihen ausgegeben, mehr als doppelt so viel wie im gesamten Vorjahr.
 
-Der Chip-Boom wird damit zunehmend mit geliehenem Geld und neuen Aktien bezahlt. Das funktioniert, solange die Kapitalmärkte mitspielen.
+Der Chip-Boom wird damit zunehmend mit geliehenem Geld und neuen Aktien bezahlt. Das funktioniert, solange die Kapitalmärkte mitspielen und die Gewinne der Kunden wachsen.
 
 ## Wo es schon knirscht: CoreWeave
 
@@ -83,14 +94,14 @@ CoreWeave hält die Reaktion für übertrieben und verweist auf Aufträge, die s
 
 Der Markt behandelt CoreWeave damit bereits wie einen Kredit, der ausfallen könnte. Nvidia hat dort Aktien und Mietzusagen und wäre bei einem Ausfall doppelt betroffen.
 
-## Der Freitag: alle fallen gleichzeitig
+## Der Freitag: ein Tag mit mehreren Auslösern
 
 Am Freitag verloren die drei Chipkonzerne, die zuvor ihren Einstieg bei Meta angekündigt hatten, besonders stark:
 
 ![Kursänderung am Freitag, 30. Oktober](/assets/magazin/ki-finanzierungsnetz-nvidia-meta-coreweave-kurse.png)
 *Eigene Darstellung nach Börsendaten vom 30. Oktober 2026, Schlusskurse laut Wall Street Journal.*
 
-AMD verlor knapp 11 %, Broadcom rund 5,5 %, Nvidia rund 4 %. Auslöser waren die Zahlen von [Alphabet](../alphabet-q3-2026-quartalszahlen/) und Amazon, danach der Einbruch bei [Intel](../intel-q3-2026-zahlen/). Der Nasdaq beendete den Tag mit einem Minus von 2,9 % und den schwächsten Monat seit März 2025. Wie sich der Tag auf den Gesamtmarkt auswirkte, steht in unserem [Marktüberblick](../tech-ausverkauf-intel-nasdaq-marktueberblick/).
+AMD verlor knapp 11 %, Broadcom rund 5,5 %, Nvidia rund 4 %. Der Freitag hatte allerdings mehrere Auslöser: die Zahlen von [Alphabet](../alphabet-q3-2026-quartalszahlen/) und Amazon, der Einbruch bei [Intel](../intel-q3-2026-zahlen/) um rund 30 %, ein Ölpreis um 112 Dollar und Signale der US-Notenbank für eine Zinserhöhung im Dezember. Der Nasdaq beendete den Tag mit einem Minus von 2,9 % und den schwächsten Monat seit März 2025. Dass die Aktien des Netzes gemeinsam fielen, belegt die Verflechtung, aber nicht, dass der KI-Handel zu Ende ist. Einzelheiten stehen in unserem [Marktüberblick](../tech-ausverkauf-intel-nasdaq-marktueberblick/).
 
 Wer mehrere dieser Aktien besitzt, ist weniger breit gestreut, als es aussieht. Die Unternehmen hängen über Beteiligungen, Verträge und Garantien aneinander und bewegen sich deshalb stärker im Gleichschritt.
 
@@ -102,21 +113,23 @@ Auch Privatkunden von Vermögensverwaltern wollen ihre Aktienpositionen absicher
 
 Am weitesten geht der Handelskonzern Jump Trading. Er hat einen Handelstisch für Rechenleistung eingerichtet. Ein Betreiber von Rechenzentren kann sich dort gegen fallende Mieten für seine Chips absichern. Der Preis für die Miete eines Nvidia-B300-Chips ist nach einem Index von Silicon Data in diesem Jahr um rund 56 % auf 7,56 Dollar je Stunde gestiegen. Jump könnte zum Beispiel zusagen, die Rechenzeit zu kaufen, wenn der Preis auf 4 Dollar fällt. Auch das Handelshaus Susquehanna berichtet von Anfragen nach solchen Absicherungen, auch von Rechenzentren, die damit ihre Kreditgeber beruhigen wollen.
 
-Jump-Präsident Dave Olsen sagt: „Man muss kein Bär sein, um eine Versicherung zu wollen.“ Die Absicherung ist im Vergleich zum eigentlichen KI-Handel noch klein, und viele Anleger bleiben optimistisch. Dass es sie überhaupt gibt, zeigt, wie sehr der Markt mit einem Rückschlag rechnet.
+Jump-Präsident Dave Olsen sagt: „Man muss kein Bär sein, um eine Versicherung zu wollen.“ Die Absicherung ist im Vergleich zum eigentlichen KI-Handel noch klein, und viele Anleger bleiben optimistisch. Sie zeigt Vorsicht, aber keine Erwartung eines Absturzes.
 
-## Was bei einem Rückschlag passiert
+## Gedankenspiel: Was bei einem Rückschlag passiert
 
-Fällt die Nachfrage nach KI-Rechenleistung, trifft das mehrere Stellen in der gleichen Reihenfolge.
+Fällt die Nachfrage nach KI-Rechenleistung deutlich, trifft das mehrere Stellen in der gleichen Reihenfolge.
 
 1. Kunden mit schwacher Bilanz wie CoreWeave bekommen Probleme, ihre Kredite zu bedienen.
 2. Die Chiphersteller verlieren Aufträge und müssen auf Beteiligungen und Garantien abschreiben.
 3. Gebrauchte Chips und Rechenzeit kommen billig auf den Markt und drücken die Preise für neue Chips.
 
-Ein Vorbild liegt 25 Jahre zurück: Die Netzausrüster der Dotcom-Zeit hatten ihren Kunden Kredite gegeben, damit diese ihre Geräte kaufen. Als die Kunden pleitegingen, mussten sie Milliarden abschreiben. Der Unterschied heute: Nvidia, Microsoft, Alphabet und Meta haben starke Bilanzen. Sie können Verluste tragen. Offen ist, wie viele Garantien und Beteiligungen sie am Ende gleichzeitig tragen müssen.
+Der Vergleich mit der Dotcom-Zeit vor 25 Jahren liegt nahe, trägt aber nur begrenzt. Damals hatten Netzausrüster Kredite an Kunden gegeben, die noch kein Geschäftsmodell hatten, und mussten Milliarden abschreiben. Heute verdienen Nvidia, Microsoft, Alphabet, Amazon und Meta bereits Milliarden mit dem, was sie tun, und haben starke Bilanzen. Sie können Verluste tragen. Offen ist, wie viele Garantien und Beteiligungen am Ende gleichzeitig zu tragen wären.
+
+Hält die Nachfrage dagegen an, passiert das Gegenteil: Beteiligungen und Garantien kosten nichts, die Kunden zahlen ihre Mieten, und die Chiphersteller verdienen an beiden Seiten.
 
 ## Was Anleger daraus ablesen
 
-Das Netz erklärt, warum KI-Aktien zuletzt so gleichmäßig steigen und fallen: Gute Nachrichten für einen Konzern gelten für die anderen mit, schlechte ebenso. Wer in Dividendenwerte aus dem Netz investiert, etwa [Microsoft](../microsoft-q1-2027-zahlen/), bekommt regelmäßige Ausschüttungen und trägt das gleiche Grundrisiko: Die Dividende stammt aus einem Free Cashflow, der durch die hohen Investitionen kaum wächst. Das ist keine Empfehlung und keine Prognose, sondern die Beschreibung der Lage.
+Das Netz erklärt, warum KI-Aktien zuletzt so gleichmäßig steigen und fallen: Gute Nachrichten für einen Konzern gelten für die anderen mit, schlechte ebenso. Wer mehrere dieser Aktien hält, sollte wissen, dass sie weniger unabhängig sind, als es aussieht. Wer in Dividendenwerte aus dem Netz investiert, etwa [Microsoft](../microsoft-q1-2027-zahlen/), bekommt regelmäßige Ausschüttungen aus hohen Gewinnen. Der Free Cashflow wächst durch die hohen Investitionen aber kaum. Ob sich diese Investitionen lohnen, hängt von der Nachfrage nach Rechenleistung ab, und dafür sprechen derzeit steigende Mieten für Rechenleistung. Das ist keine Empfehlung und keine Prognose, sondern die Beschreibung der Lage.
 
 ## Quellen
 
