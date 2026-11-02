@@ -1,0 +1,59 @@
+name: IR-Termine (Earnings-Termine und Ergebnisse)
+on:
+  schedule:
+    - cron: "30 6 * * *"    # ca. 07:30 deutsche Zeit: Termine pruefen
+    - cron: "30 11 * * *"   # ca. 12:30: Termine nochmal pruefen
+    - cron: "30 21 * * *"   # ca. 22:30: Ergebnisse der US-Berichte holen
+    - cron: "30 3 * * *"    # ca. 04:30: Ergebnisse der spaeten US-Berichte und Asien
+  workflow_dispatch:
+    inputs:
+      sym:
+        description: "Nur diese Kuerzel (mit Komma), leer = alle aktiven aus tools/ir_termine_config.json"
+        required: false
+      phase:
+        description: "Was soll laufen?"
+        required: false
+        default: beide
+        type: choice
+        options: [beide, termine, ergebnisse]
+permissions:
+  contents: write
+concurrency:
+  group: ir-termine
+  cancel-in-progress: false
+jobs:
+  termine:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install pillow
+      - run: sudo apt-get update -qq && sudo apt-get install -y -qq poppler-utils
+      - name: Termine und Ergebnisse abgleichen
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          SEC_USER_AGENT: ${{ vars.SEC_USER_AGENT }}
+          SYM: ${{ github.event.inputs.sym }}
+          PHASE_IN: ${{ github.event.inputs.phase }}
+          SCHEDULE: ${{ github.event.schedule }}
+        run: |
+          PHASE="$PHASE_IN"
+          if [ -z "$PHASE" ]; then
+            case "$SCHEDULE" in
+              "30 6 * * *"|"30 11 * * *") PHASE=termine ;;
+              *) PHASE=ergebnisse ;;
+            esac
+          fi
+          python3 tools/ir_termine.py --phase "$PHASE" ${SYM:+--sym "$SYM"}
+      - name: Committen
+        run: |
+          git config user.name "ir-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add -A data/
+          if git diff --cached --quiet; then echo "Keine Aenderungen"; exit 0; fi
+          git commit -m "IR-Termine: Earnings-Termine und Ergebnisse aktualisiert"
+          git pull --rebase -q
+          git push

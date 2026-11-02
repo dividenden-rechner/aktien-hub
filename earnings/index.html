@@ -255,7 +255,7 @@ $("list").onclick=function(e){if(e.target.closest("a"))return;var r=e.target.clo
     var ra=await fetch("../data/termine-app.json",{cache:"no-cache"});
     if(ra.ok){var AI=(await ra.json()).items||[],bs=function(x){return String(x).split(".")[0]},t0=key(new Date(Date.now()-DAYS_BACK*864e5));
       AI.forEach(function(it){if(it.datum<t0)return;APPN[it.sym]=it.name;
-        if(it.typ==="q"){var hit=CAL.filter(function(x){return x.date===it.datum&&!x._app&&(x.symbol===it.sym||bs(x.symbol)===bs(it.sym))&&!x.zeit})[0];
+        if(it.typ==="q"){var hit=CAL.filter(function(x){return Math.abs(Date.parse(x.date)-Date.parse(it.datum))<=864e5&&!x._app&&(x.symbol===it.sym||bs(x.symbol)===bs(it.sym))&&!x.zeit})[0];
           if(hit){hit.zeit=it.zeit;hit.was=it.was;return}}
         CAL.push({symbol:it.sym,date:it.datum,zeit:it.zeit,was:it.was,_app:1,_k:it.typ!=="q"})});
       $("upd").textContent=CAL.length+" Termine geladen"}

@@ -1,0 +1,5 @@
+{
+ "hinweis": "aktiv = Kuerzel, die der Workflow ir-termine.yml abfragt. Neue Firma: Kuerzel eintragen (muss in data/ir-links.json stehen). Unter firmen kann pro Kuerzel eine genauere Seite fuer Termine angegeben werden: {\"url\": \"https://...\"}.",
+ "aktiv": ["AAPL", "V", "MA", "O", "PFE", "AMGN", "MCD", "KHC", "KMB", "QCOM", "AMD", "ENB"],
+ "firmen": {}
+}
