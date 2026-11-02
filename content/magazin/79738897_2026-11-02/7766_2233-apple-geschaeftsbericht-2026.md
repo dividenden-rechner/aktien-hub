@@ -12,6 +12,7 @@ image_source: https://commons.wikimedia.org/wiki/File:Apple_Inc._Mosaic.jpg
 logo_name: "Apple Inc."
 logo_symbol: AAPL.NE
 logo_domain: apple.coms.com
+logo_file: assets/logos/aapl-ne.png
 ---
 <!-- PRÜFEN: Aufmacherfoto ist automatisch von Wikimedia Commons gewaehlt: bitte pruefen, ob es zum Artikel passt (sonst image-Zeilen entfernen, dann entsteht ein Titelbild automatisch). -->
 <!-- PRÜFEN: Diese Werte wurden im Berichtstext nicht gefunden: Grafik iPhone: 254098; Grafik Services: 123301; Grafik Mac: 37929; Grafik Wearables, Home, Acc.: 35577; Grafik iPad: 27929 -->
