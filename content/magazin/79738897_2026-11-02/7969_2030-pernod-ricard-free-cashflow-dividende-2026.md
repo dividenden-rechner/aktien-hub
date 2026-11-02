@@ -5,6 +5,9 @@ date: 2026-11-02 20:30
 author: "Redaktions-Team Dividenden-Rechner.de"
 author_bio: "Das Redaktions-Team von Dividenden-Rechner.de schreibt über Dividendenaktien, Kennzahlen und Steuerthemen für Privatanleger. Die Rechner und Auswertungen auf der Seite entstehen im eigenen Haus."
 category: Analyse
+image: assets/magazin/pernod-ricard-free-cashflow-dividende-2026-foto.jpg
+image_alt: "Ein Glas Lillet mit Eis, Beeren und Rosmarin auf einer Café-Terrasse. Lillet gehört zu Pernod Ricard."
+image_credit: "Foto: Dividenden-Rechner"
 logo_name: "Pernod Ricard"
 logo_symbol: RI.PA
 logo_domain: pernod-ricard.com
