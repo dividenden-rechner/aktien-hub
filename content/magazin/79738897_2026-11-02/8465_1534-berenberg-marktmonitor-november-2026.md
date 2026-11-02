@@ -12,6 +12,7 @@ image_source: https://unsplash.com/photos/candlestick-stock-chart-on-dark-screen
 image_artist_url: https://unsplash.com/@ahervias77?utm_source=dividenden-rechner&utm_medium=referral
 logo_name: "Joh. Berenberg, Gossler & Co. KG"
 logo_domain: berenberg.de
+logo_file: assets/logos/berenberg-de.png
 ---
 <!-- PRÜFEN: Aufmacherfoto ist automatisch von Unsplash gewaehlt: bitte pruefen, ob es zum Artikel passt (sonst image-Zeilen entfernen, dann entsteht ein Titelbild automatisch). -->
 
