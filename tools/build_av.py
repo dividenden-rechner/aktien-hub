@@ -10,13 +10,24 @@ css = """<style>
 [hidden]{display:none!important}
 .av-tabs{display:flex;gap:18px;overflow-x:auto;margin:10px 0 10px;border-bottom:1px solid #dfe5ea;white-space:nowrap;scrollbar-width:none}.av-tabs::-webkit-scrollbar{display:none}
 .av-tab{flex:0 0 auto;border:0;border-bottom:2px solid transparent;margin-bottom:-1px;background:none;border-radius:0;padding:6px 0 8px;cursor:pointer;font:inherit;font-size:13px;font-weight:500;color:#8a97a3}.av-tab:hover{color:#5b6874}.av-tab[aria-pressed=true]{color:#33414d;font-weight:600;border-bottom-color:#8a97a3}
-.av-id{display:flex;gap:10px;align-items:flex-start}.av-logo{width:28px;height:28px;object-fit:contain;border-radius:6px;border:1px solid #eef1f4;background:#fff;padding:2px;flex:none}.av-list{border-top:1px solid #dfe5ea}.av-row{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,2.2fr) 120px;gap:6px 18px;padding:14px 0;border-bottom:1px solid #eef1f4;align-items:start}
-.av-n{font-weight:600}.av-t{font-size:.82rem;color:#8a97a3;margin-top:2px}.av-k{font-size:.92rem;color:#33414d}.av-d{font-size:.84rem;color:#6b7782;margin-top:4px}.av-d b{font-weight:500;color:#5b6874}
-.av-f{text-align:right;font-size:.88rem;color:#33414d;line-height:1.35}.av-f span{display:block;color:#8a97a3;font-size:.75rem}
-.av-q{font-size:.78rem;color:#8a97a3;margin-top:6px}.av-q a{color:#5b6874;margin-right:10px}
-.av-h{color:#8a6d1a;font-size:.8rem;margin-top:4px}
+.av-id{display:flex;gap:10px;align-items:center}.av-logo{width:28px;height:28px;object-fit:contain;border-radius:6px;border:1px solid #eef1f4;background:#fff;padding:2px;flex:none}
+.av-scroll-hint{display:none;font-size:.78rem;color:#8a97a3;margin:6px 0 4px}
+.av-tablewrap{overflow-x:auto;border:1px solid #e3e8ec;border-radius:8px;margin:6px 0 18px;-webkit-overflow-scrolling:touch}
+.av-table{line-height:1.4;border-collapse:separate;border-spacing:0;width:100%;min-width:1180px;font-size:.86rem;color:#33414d}
+.av-table th,.av-table td{padding:10px 14px;text-align:left;vertical-align:top;border-bottom:1px solid #eef1f4;background:#fff}
+.av-table thead th{position:sticky;top:0;background:#f6f8fa;font-size:.74rem;font-weight:600;color:#5b6874;text-transform:uppercase;letter-spacing:.03em;white-space:nowrap;border-bottom:1px solid #e3e8ec}
+.av-table tbody tr:last-child th,.av-table tbody tr:last-child td{border-bottom:0}
+.av-table tbody tr:hover td,.av-table tbody tr:hover th{background:#fafcfb}
+.av-table th:first-child{position:sticky;left:0;z-index:2;min-width:190px;box-shadow:1px 0 0 #e3e8ec}
+.av-table thead th:first-child{z-index:3}
+.av-table .num{text-align:right;white-space:nowrap;min-width:96px}.av-table td.num b{font-weight:600;color:#065f46}
+.av-table td.w{min-width:260px;max-width:320px}.av-table td,.av-table th[scope=row]{height:1px}
+.av-n{font-weight:600;white-space:nowrap}
+#anbieter-bereich{max-width:1100px!important}#anbieter-bereich>:not(.av-tablewrap){max-width:760px}
+.av-q{white-space:nowrap;min-width:150px}.av-q a{display:block;color:#5b6874;margin:0 0 3px;font-size:.78rem;text-decoration:underline;text-decoration-color:#cfd6dc}
+.av-h{color:#8a6d1a;font-size:.78rem;margin-top:4px}
 .av-sum{margin:14px 0}.av-sum li{margin:4px 0}
-@media(max-width:700px){.av-row{grid-template-columns:1fr auto}.av-row>div:nth-child(2){grid-column:1/-1;order:3}}
+@media(max-width:900px){.av-scroll-hint{display:block}.av-table th:first-child{min-width:150px}}
 </style>
 """
 DOM = {"flatex / Degiro (Core)": "flatex.de", "Deka (Sparkassen)": "deka.de", "Scalable Capital": "scalable.capital", "ING": "ing.de", "Trade Republic": "traderepublic.com", "Smartbroker+": "smartbroker.de", "Traders Place": "traders-place.de", "Bitpanda": "bitpanda.com", "Deutsche Bank (DWS)": "deutsche-bank.de", "DWS (VorsorgeDepot)": "dws.com", "Union Investment": "union-investment.de", "quirion": "quirion.de", "comdirect": "comdirect.de", "Consorsbank": "consorsbank.de", "DKB": "dkb.de"}
@@ -32,11 +43,12 @@ rows = []
 for i, f in enumerate(D["firmen"]):
     q = " ".join(f'<a href="{esc(x["url"])}" target="_blank" rel="noopener nofollow">{esc(x["titel"].split(" (")[0])}</a>' for x in f["quellen"])
     rows.append(
-        f'<div class="av-row" data-i="{i}" data-n="{esc(f["name"])}" data-dau="{"" if f["kosten_dauer"] is None else f["kosten_dauer"]}" data-sta="{"" if f["kosten_start"] is None else f["kosten_start"]}">'
-        f'<div class="av-id">{logo(f["name"])}<div><div class="av-n">{esc(f["name"])}</div><div class="av-t">{esc(f["typ"])} · {esc(f["status"])}</div></div></div>'
-        f'<div><div class="av-k">{esc(f["kosten"])}</div><div class="av-d"><b>Depot und Orders:</b> {esc(f["depot"])}</div><div class="av-d"><b>Auswahl:</b> {esc(f["fonds"])}</div>'
-        + (f'<div class="av-h">{esc(f["hinweis"])}</div>' if f["hinweis"] else "") + f'<div class="av-q">Quellen: {q}</div></div>'
-        f'<div class="av-f">{fig(f["kosten_start"])}<span>zu Beginn</span><div style="height:6px"></div>{fig(f["kosten_dauer"])}<span>langfristig</span></div></div>')
+        f'<tr class="av-row" data-i="{i}" data-n="{esc(f["name"])}" data-dau="{"" if f["kosten_dauer"] is None else f["kosten_dauer"]}" data-sta="{"" if f["kosten_start"] is None else f["kosten_start"]}">'
+        f'<th scope="row"><div class="av-id">{logo(f["name"])}<span class="av-n">{esc(f["name"])}</span></div></th>'
+        f'<td class="num"><b>{fig(f["kosten_start"])}</b></td><td class="num"><b>{fig(f["kosten_dauer"])}</b></td>'
+        f'<td class="w">{esc(f["kosten"])}' + (f'<div class="av-h">{esc(f["hinweis"])}</div>' if f["hinweis"] else "") + '</td>'
+        f'<td class="w">{esc(f["depot"])}</td><td class="w">{esc(f["fonds"])}</td>'
+        f'<td>{esc(f["typ"])}</td><td>{esc(f["status"])}</td><td class="av-q">{q}</td></tr>')
 body = f"""<h2 id="anbieter">Anbieter im Vergleich</h2>
 <p class="lead">Ab dem 1. Januar 2027 können Verträge für das neue geförderte Altersvorsorgedepot abgeschlossen werden. Hier siehst du, was Trade Republic, Scalable Capital, ING, Deka und weitere angekündigt haben. Stand der Angaben: {esc(D["stand"][8:10])}.{esc(D["stand"][5:7])}.{esc(D["stand"][:4])}.</p>
 <p class="note"><strong>Wichtig:</strong> {esc(D["hinweis"])} Verglichen werden die laufenden Kosten des Standarddepots, die ETF-Erstattungen sind meist befristet. Dein Ergebnis hängt zusätzlich von Förderung, Fondsauswahl und Beitrag ab. Das ist keine Anlageberatung.</p>
@@ -48,9 +60,11 @@ body = f"""<h2 id="anbieter">Anbieter im Vergleich</h2>
 <li><strong>Noch offen:</strong> comdirect, Consorsbank und DKB haben ihr Angebot angekündigt, aber keine Konditionen veröffentlicht.</li>
 </ul>
 <div class="av-tabs" id="avt" role="group" aria-label="Sortierung"><button type="button" class="av-tab" data-s="dau" aria-pressed="true">Günstigste langfristig zuerst</button><button type="button" class="av-tab" data-s="sta" aria-pressed="false">Günstigste zum Start zuerst</button><button type="button" class="av-tab" data-s="n" aria-pressed="false">A bis Z</button></div>
-<div class="av-list" id="avl">
+<p class="av-scroll-hint">Tabelle seitlich scrollen für alle Spalten →</p>
+<div class="av-tablewrap" tabindex="0" role="region" aria-label="Anbietervergleich, seitlich scrollbar"><table class="av-table"><thead><tr><th scope="col">Anbieter</th><th scope="col" class="num">Kosten zu Beginn</th><th scope="col" class="num">Kosten langfristig</th><th scope="col">Kosten im Detail</th><th scope="col">Depot und Orders</th><th scope="col">Auswahl</th><th scope="col">Typ</th><th scope="col">Stand</th><th scope="col">Quellen</th></tr></thead>
+<tbody id="avl">
 {chr(10).join(rows)}
-</div>
+</tbody></table></div>
 <h2>Das gilt für alle Anbieter</h2>
 <ul>
 <li><strong>Start:</strong> 1. Januar 2027. Das Gesetz zur Reform der privaten Altersvorsorge hat der Bundestag am 27. März 2026 beschlossen, der Bundesrat hat am 8. Mai 2026 zugestimmt. Vor der Zertifizierung durch das Bundeszentralamt für Steuern darf kein Anbieter Verträge verkaufen.</li>
