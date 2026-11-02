@@ -117,7 +117,8 @@ function mine(){
   return out;
 }
 var MINE=mine(),CAL=[],BIG={},sel=null,scope="big",q="",DAYS_BACK=3,DAYS_FWD=11,H={};
-function logo(sym,name){return window.HubLogos?HubLogos.img("ek-logo",sym,"",name||sym):'<span class="ek-logo">'+esc((name||sym||"?").charAt(0))+"</span>"}
+function irDom(sym){var u=irUrl(sym);if(!u)return "";try{return new URL(u).hostname.replace(/^(www|ir|investors?|investor-relations)\./,"")}catch(e){return ""}}
+function logo(sym,name){return window.HubLogos?HubLogos.img("ek-logo",sym,HubLogos.dom(sym)||irDom(sym),name||sym):'<span class="ek-logo">'+esc((name||sym||"?").charAt(0))+"</span>"}
 function key(d){var x=new Date(d);return x.getFullYear()+"-"+("0"+(x.getMonth()+1)).slice(-2)+"-"+("0"+x.getDate()).slice(-2)}
 var NEWS=[];
 var GENERIC={american:1,united:1,general:1,national:1,first:1,global:1,group:1,international:1,financial:1,corporation:1,company:1};

@@ -10,7 +10,7 @@ css = """<style>
 [hidden]{display:none!important}
 .av-tabs{display:flex;gap:18px;overflow-x:auto;margin:10px 0 10px;border-bottom:1px solid #dfe5ea;white-space:nowrap;scrollbar-width:none}.av-tabs::-webkit-scrollbar{display:none}
 .av-tab{flex:0 0 auto;border:0;border-bottom:2px solid transparent;margin-bottom:-1px;background:none;border-radius:0;padding:6px 0 8px;cursor:pointer;font:inherit;font-size:13px;font-weight:500;color:#8a97a3}.av-tab:hover{color:#5b6874}.av-tab[aria-pressed=true]{color:#33414d;font-weight:600;border-bottom-color:#8a97a3}
-.av-list{border-top:1px solid #dfe5ea}.av-row{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,2.2fr) 120px;gap:6px 18px;padding:14px 0;border-bottom:1px solid #eef1f4;align-items:start}
+.av-id{display:flex;gap:10px;align-items:flex-start}.av-logo{width:28px;height:28px;object-fit:contain;border-radius:6px;border:1px solid #eef1f4;background:#fff;padding:2px;flex:none}.av-list{border-top:1px solid #dfe5ea}.av-row{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,2.2fr) 120px;gap:6px 18px;padding:14px 0;border-bottom:1px solid #eef1f4;align-items:start}
 .av-n{font-weight:600}.av-t{font-size:.82rem;color:#8a97a3;margin-top:2px}.av-k{font-size:.92rem;color:#33414d}.av-d{font-size:.84rem;color:#6b7782;margin-top:4px}.av-d b{font-weight:500;color:#5b6874}
 .av-f{text-align:right;font-size:.88rem;color:#33414d;line-height:1.35}.av-f span{display:block;color:#8a97a3;font-size:.75rem}
 .av-q{font-size:.78rem;color:#8a97a3;margin-top:6px}.av-q a{color:#5b6874;margin-right:10px}
@@ -19,6 +19,13 @@ css = """<style>
 @media(max-width:700px){.av-row{grid-template-columns:1fr auto}.av-row>div:nth-child(2){grid-column:1/-1;order:3}}
 </style>
 """
+DOM = {"flatex / Degiro (Core)": "flatex.de", "Deka (Sparkassen)": "deka.de", "Scalable Capital": "scalable.capital", "ING": "ing.de", "Trade Republic": "traderepublic.com", "Smartbroker+": "smartbroker.de", "Traders Place": "traders-place.de", "Bitpanda": "bitpanda.com", "Deutsche Bank (DWS)": "deutsche-bank.de", "DWS (VorsorgeDepot)": "dws.com", "Union Investment": "union-investment.de", "quirion": "quirion.de", "comdirect": "comdirect.de", "Consorsbank": "consorsbank.de", "DKB": "dkb.de"}
+def logo(name):
+    d = DOM.get(name)
+    if not d:
+        return ""
+    return (f'<img class="av-logo" src="https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https://{d}&size=64" '
+            f'alt="" width="28" height="28" loading="lazy" onerror="this.style.visibility=\'hidden\'">')
 def fig(v):
     return "–" if v is None else (f"{v:.2f}".replace(".", ",") + " %")
 rows = []
@@ -26,7 +33,7 @@ for i, f in enumerate(D["firmen"]):
     q = " ".join(f'<a href="{esc(x["url"])}" target="_blank" rel="noopener nofollow">{esc(x["titel"].split(" (")[0])}</a>' for x in f["quellen"])
     rows.append(
         f'<div class="av-row" data-i="{i}" data-n="{esc(f["name"])}" data-dau="{"" if f["kosten_dauer"] is None else f["kosten_dauer"]}" data-sta="{"" if f["kosten_start"] is None else f["kosten_start"]}">'
-        f'<div><div class="av-n">{esc(f["name"])}</div><div class="av-t">{esc(f["typ"])} · {esc(f["status"])}</div></div>'
+        f'<div class="av-id">{logo(f["name"])}<div><div class="av-n">{esc(f["name"])}</div><div class="av-t">{esc(f["typ"])} · {esc(f["status"])}</div></div></div>'
         f'<div><div class="av-k">{esc(f["kosten"])}</div><div class="av-d"><b>Depot und Orders:</b> {esc(f["depot"])}</div><div class="av-d"><b>Auswahl:</b> {esc(f["fonds"])}</div>'
         + (f'<div class="av-h">{esc(f["hinweis"])}</div>' if f["hinweis"] else "") + f'<div class="av-q">Quellen: {q}</div></div>'
         f'<div class="av-f">{fig(f["kosten_start"])}<span>zu Beginn</span><div style="height:6px"></div>{fig(f["kosten_dauer"])}<span>langfristig</span></div></div>')
