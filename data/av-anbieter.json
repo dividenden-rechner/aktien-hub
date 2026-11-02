@@ -1,0 +1,305 @@
+{
+ "stand": "2026-10-29",
+ "hinweis": "Alle Angaben sind Ankündigungen der Anbieter laut den genannten Quellen und noch nicht verbindlich. Effektivkosten inklusive Abschluss- und Vertriebskosten nennt bisher kein Anbieter.",
+ "firmen": [
+  {
+   "name": "flatex / Degiro (Core)",
+   "typ": "Broker",
+   "kosten_start": 0.0,
+   "kosten_dauer": 0.07,
+   "kosten": "0 % in den ersten 5 Jahren (Produktkosten werden erstattet), danach höchstens 0,07 % p. a.",
+   "depot": "Depot und Vertrag gebührenfrei, keine Ordergebühren für Sparpläne und Einmalanlagen",
+   "fonds": "Standarddepot Core; Plus und Flex mit mehr Auswahl, Preise noch offen",
+   "status": "Core konkret angekündigt",
+   "hinweis": "",
+   "quellen": [
+    {
+     "titel": "Stiftung Warentest: Preiskampf ums Altersvorsorgedepot (13.10.2026)",
+     "url": "https://www.test.de/Altersvorsorgedepot-Preiskampf-der-Anbieter-ING-Trade-Republic-Smartbroker-6335719-0/"
+    },
+    {
+     "titel": "finanzwissen.de: Anbieter im Vergleich (Stand 29.10.2026)",
+     "url": "https://finanzwissen.de/vergleich/depot/altersvorsorge/"
+    }
+   ]
+  },
+  {
+   "name": "Deka (Sparkassen)",
+   "typ": "Sparkasse",
+   "kosten_start": 0.1,
+   "kosten_dauer": 0.1,
+   "kosten": "0,1 % p. a. Gesamtkosten im Standarddepot (nur ETF-Kosten). Individualdepot mit aktiven Fonds 1,0 bis 1,5 % p. a.",
+   "depot": "Depot und Zulagenverwaltung kostenlos",
+   "fonds": "Ein weltweiter Aktien-ETF und ein europäischer Renten-ETF",
+   "status": "Angekündigt",
+   "hinweis": "Vorbehalt der BaFin-Genehmigung, im November erwartet",
+   "quellen": [
+    {
+     "titel": "Stiftung Warentest: Preiskampf ums Altersvorsorgedepot (13.10.2026)",
+     "url": "https://www.test.de/Altersvorsorgedepot-Preiskampf-der-Anbieter-ING-Trade-Republic-Smartbroker-6335719-0/"
+    },
+    {
+     "titel": "finanzwissen.de: Anbieter im Vergleich (Stand 29.10.2026)",
+     "url": "https://finanzwissen.de/vergleich/depot/altersvorsorge/"
+    }
+   ]
+  },
+  {
+   "name": "Scalable Capital",
+   "typ": "Broker",
+   "kosten_start": 0.0,
+   "kosten_dauer": 0.15,
+   "kosten": "0 % bei ausgewählten ETFs bis mindestens 31.12.2027, danach höchstens 0,15 % p. a. (Standarddepot)",
+   "depot": "Depot, Sparpläne, Ein- und Auszahlungen kostenlos. Freie ETF-Wahl: Orders 0 € mit PRIME+, 0,99 € im Free-Tarif",
+   "fonds": "Standarddepot mit vorgegebenen ETFs; zusätzlich freie ETF-Wahl",
+   "status": "Konditionen veröffentlicht, Voranmeldung möglich",
+   "hinweis": "Konditionen noch nicht verbindlich",
+   "quellen": [
+    {
+     "titel": "Capitalo: Altersvorsorgedepot (Stand 22.10.2026)",
+     "url": "https://www.capitalo.de/depot/altersvorsorgedepot"
+    },
+    {
+     "titel": "Stiftung Warentest: Preiskampf ums Altersvorsorgedepot (13.10.2026)",
+     "url": "https://www.test.de/Altersvorsorgedepot-Preiskampf-der-Anbieter-ING-Trade-Republic-Smartbroker-6335719-0/"
+    },
+    {
+     "titel": "finanzwissen.de: Anbieter im Vergleich (Stand 29.10.2026)",
+     "url": "https://finanzwissen.de/vergleich/depot/altersvorsorge/"
+    }
+   ]
+  },
+  {
+   "name": "ING",
+   "typ": "Direktbank",
+   "kosten_start": 0.2,
+   "kosten_dauer": 0.2,
+   "kosten": "Standarddepot (Relax): 0,20 % p. a. Gesamtkosten. Aktiv (freie Wahl): ab 0,03 % p. a.",
+   "depot": "Keine Depot- und Wechselgebühren, Umschichtungen und Einmalzahlungen 0 €. Sparen ab 10 € im Monat",
+   "fonds": "Relax: zwei vorausgewählte ETFs. Aktiv: über 1.000 ETFs und Fonds",
+   "status": "Konditionen veröffentlicht",
+   "hinweis": "Angaben zu Transaktionskosten unterscheiden sich je Quelle",
+   "quellen": [
+    {
+     "titel": "Cash.: ING bringt Altersvorsorgedepot 2027 (26.10.2026)",
+     "url": "https://www.cash-online.de/a/ing-bringt-altersvorsorgedepot-2027-ohne-order-und-depotgebuehren-728576/"
+    },
+    {
+     "titel": "finanzwissen.de: Anbieter im Vergleich (Stand 29.10.2026)",
+     "url": "https://finanzwissen.de/vergleich/depot/altersvorsorge/"
+    },
+    {
+     "titel": "ING: Altersvorsorgedepot erklärt (14.07.2026)",
+     "url": "https://www.ing.de/wissen/altersvorsorgedepot/"
+    }
+   ]
+  },
+  {
+   "name": "Trade Republic",
+   "typ": "Neobroker",
+   "kosten_start": 0.0,
+   "kosten_dauer": 0.0,
+   "kosten": "ETF-Produktkosten werden bei mehreren Dutzend ausgewählten ETFs erstattet, ohne Enddatum",
+   "depot": "Depot und Ausführung 0 €, im Standard- und im frei gestaltbaren Depot",
+   "fonds": "Ausgewählte ETFs von BlackRock, DWS und Vanguard",
+   "status": "Konditionen veröffentlicht",
+   "hinweis": "Erstattung ist nicht vertraglich garantiert",
+   "quellen": [
+    {
+     "titel": "Cash.: Trade Republic verschärft Preiskampf (13.10.2026)",
+     "url": "https://www.cash-online.de/a/neobroker-trade-republic-verschaerft-preiskampf-um-altersvorsorgedepots-727533/"
+    },
+    {
+     "titel": "Stiftung Warentest: Preiskampf ums Altersvorsorgedepot (13.10.2026)",
+     "url": "https://www.test.de/Altersvorsorgedepot-Preiskampf-der-Anbieter-ING-Trade-Republic-Smartbroker-6335719-0/"
+    },
+    {
+     "titel": "finanzwissen.de: Anbieter im Vergleich (Stand 29.10.2026)",
+     "url": "https://finanzwissen.de/vergleich/depot/altersvorsorge/"
+    }
+   ]
+  },
+  {
+   "name": "Smartbroker+",
+   "typ": "Neobroker",
+   "kosten_start": 0.0,
+   "kosten_dauer": null,
+   "kosten": "ETF-Kosten werden in den ersten 3 Jahren erstattet, danach zahlst du die Kosten der gewählten ETFs (nicht genannt)",
+   "depot": "Depot, Sparpläne und Orders gebührenfrei",
+   "fonds": "Standarddepot mit drei ETFs: MSCI World, MSCI ACWI oder FTSE All-World",
+   "status": "Standarddepot veröffentlicht",
+   "hinweis": "",
+   "quellen": [
+    {
+     "titel": "Stiftung Warentest: Preiskampf ums Altersvorsorgedepot (13.10.2026)",
+     "url": "https://www.test.de/Altersvorsorgedepot-Preiskampf-der-Anbieter-ING-Trade-Republic-Smartbroker-6335719-0/"
+    },
+    {
+     "titel": "finanzwissen.de: Anbieter im Vergleich (Stand 29.10.2026)",
+     "url": "https://finanzwissen.de/vergleich/depot/altersvorsorge/"
+    }
+   ]
+  },
+  {
+   "name": "Traders Place",
+   "typ": "Broker",
+   "kosten_start": 0.0,
+   "kosten_dauer": null,
+   "kosten": "ETF-Kosten werden bis mindestens Ende 2028 erstattet (bis 20.000 €), danach je ETF 0,08 bis 0,20 % p. a.",
+   "depot": "Depot 0 €. Orders im flexiblen Depot ab 500 € 0 €, darunter 0,95 €",
+   "fonds": "Standard: drei Varianten mit je zwei ETFs. Flexibel: mehrere hundert ETFs und Fonds",
+   "status": "Konditionen veröffentlicht",
+   "hinweis": "",
+   "quellen": [
+    {
+     "titel": "finanzwissen.de: Anbieter im Vergleich (Stand 29.10.2026)",
+     "url": "https://finanzwissen.de/vergleich/depot/altersvorsorge/"
+    }
+   ]
+  },
+  {
+   "name": "Bitpanda",
+   "typ": "Broker",
+   "kosten_start": 0.0,
+   "kosten_dauer": null,
+   "kosten": "ETF-Kosten 0 % in den Jahren 2027 bis 2029, danach je nach Produkt (offen)",
+   "depot": "Depot 0 €. Orders über Partner 0 €, sonst 1 €",
+   "fonds": "Standard: zwei ETFs. Flex: frei zusammenstellbar",
+   "status": "Konditionen veröffentlicht, Kosten ab 2030 offen",
+   "hinweis": "",
+   "quellen": [
+    {
+     "titel": "finanzwissen.de: Anbieter im Vergleich (Stand 29.10.2026)",
+     "url": "https://finanzwissen.de/vergleich/depot/altersvorsorge/"
+    }
+   ]
+  },
+  {
+   "name": "Deutsche Bank (DWS)",
+   "typ": "Filialbank",
+   "kosten_start": null,
+   "kosten_dauer": 0.28,
+   "kosten": "Vertragsgebühr ab dem 3. Jahr 0,28 % p. a. Beratenes Depot 0,99 % p. a.",
+   "depot": "Digitales Standarddepot",
+   "fonds": "Digitales Standarddepot, erweiterte Variante mit Beratung",
+   "status": "Laut Bank veröffentlicht",
+   "hinweis": "Angaben zu den ersten zwei Jahren unterscheiden sich je Quelle",
+   "quellen": [
+    {
+     "titel": "Cash.: Trade Republic verschärft Preiskampf (13.10.2026)",
+     "url": "https://www.cash-online.de/a/neobroker-trade-republic-verschaerft-preiskampf-um-altersvorsorgedepots-727533/"
+    },
+    {
+     "titel": "finanzwissen.de: Anbieter im Vergleich (Stand 29.10.2026)",
+     "url": "https://finanzwissen.de/vergleich/depot/altersvorsorge/"
+    }
+   ]
+  },
+  {
+   "name": "DWS (VorsorgeDepot)",
+   "typ": "Fondsgesellschaft",
+   "kosten_start": null,
+   "kosten_dauer": 0.42,
+   "kosten": "VorsorgeDepot ETF voraussichtlich 0,42 % p. a., aktive ETFs 0,60 %, Fonds 0,65 %, Comfort 1,13 %",
+   "depot": "nicht genannt",
+   "fonds": "Welt-Aktien-ETF plus europäischer Renten-Baustein",
+   "status": "Angekündigt",
+   "hinweis": "Kosten teils \"voraussichtlich\"",
+   "quellen": [
+    {
+     "titel": "Stiftung Warentest: Preiskampf ums Altersvorsorgedepot (13.10.2026)",
+     "url": "https://www.test.de/Altersvorsorgedepot-Preiskampf-der-Anbieter-ING-Trade-Republic-Smartbroker-6335719-0/"
+    }
+   ]
+  },
+  {
+   "name": "Union Investment",
+   "typ": "Fondsgesellschaft",
+   "kosten_start": null,
+   "kosten_dauer": 0.55,
+   "kosten": "UniVorsorge Basis 0,55 % p. a. Verwaltungsvergütung, Pro 1,0 % p. a. Garantie-Variante: Kosten je nach Fonds",
+   "depot": "nicht genannt",
+   "fonds": "Basis: aktiver Welt-Aktien-ETF und aktiver Renten-ETF. Garantie: 100 % der Beiträge und Zulagen",
+   "status": "Angekündigt",
+   "hinweis": "",
+   "quellen": [
+    {
+     "titel": "Stiftung Warentest: Preiskampf ums Altersvorsorgedepot (13.10.2026)",
+     "url": "https://www.test.de/Altersvorsorgedepot-Preiskampf-der-Anbieter-ING-Trade-Republic-Smartbroker-6335719-0/"
+    }
+   ]
+  },
+  {
+   "name": "quirion",
+   "typ": "Robo-Advisor",
+   "kosten_start": null,
+   "kosten_dauer": null,
+   "kosten": "Keine Abschlussgebühren und keine Provisionen, vollständige Konditionen noch offen",
+   "depot": "Standarddepot 0 €",
+   "fonds": "Zwei Vanguard-ETFs: FTSE Global All Cap und Global Aggregate Bond (EUR-hedged)",
+   "status": "Standarddepot vorgestellt",
+   "hinweis": "Konditionen unvollständig",
+   "quellen": [
+    {
+     "titel": "Stiftung Warentest: Preiskampf ums Altersvorsorgedepot (13.10.2026)",
+     "url": "https://www.test.de/Altersvorsorgedepot-Preiskampf-der-Anbieter-ING-Trade-Republic-Smartbroker-6335719-0/"
+    },
+    {
+     "titel": "finanzwissen.de: Anbieter im Vergleich (Stand 29.10.2026)",
+     "url": "https://finanzwissen.de/vergleich/depot/altersvorsorge/"
+    }
+   ]
+  },
+  {
+   "name": "comdirect",
+   "typ": "Direktbank",
+   "kosten_start": null,
+   "kosten_dauer": null,
+   "kosten": "Noch keine Konditionen veröffentlicht",
+   "depot": "nicht genannt",
+   "fonds": "Standard, Selbstentscheider und Frühstartrente angekündigt",
+   "status": "Angekündigt",
+   "hinweis": "",
+   "quellen": [
+    {
+     "titel": "finanzwissen.de: Anbieter im Vergleich (Stand 29.10.2026)",
+     "url": "https://finanzwissen.de/vergleich/depot/altersvorsorge/"
+    }
+   ]
+  },
+  {
+   "name": "Consorsbank",
+   "typ": "Direktbank",
+   "kosten_start": null,
+   "kosten_dauer": null,
+   "kosten": "Noch keine Konditionen veröffentlicht",
+   "depot": "nicht genannt",
+   "fonds": "Freies Depot und Standarddepot angekündigt",
+   "status": "Angekündigt",
+   "hinweis": "",
+   "quellen": [
+    {
+     "titel": "finanzwissen.de: Anbieter im Vergleich (Stand 29.10.2026)",
+     "url": "https://finanzwissen.de/vergleich/depot/altersvorsorge/"
+    }
+   ]
+  },
+  {
+   "name": "DKB",
+   "typ": "Direktbank",
+   "kosten_start": null,
+   "kosten_dauer": null,
+   "kosten": "Noch keine Konditionen veröffentlicht",
+   "depot": "nicht genannt",
+   "fonds": "Angebot bestätigt, Details offen",
+   "status": "Angekündigt",
+   "hinweis": "",
+   "quellen": [
+    {
+     "titel": "finanzwissen.de: Anbieter im Vergleich (Stand 29.10.2026)",
+     "url": "https://finanzwissen.de/vergleich/depot/altersvorsorge/"
+    }
+   ]
+  }
+ ]
+}
