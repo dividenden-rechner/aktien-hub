@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Rentenstrategie-Vergleich: kostenloser Rechner | Dividenden-Rechner</title>
+<meta name="description" content="Drei Wege, ein Depot im Ruhestand zu nutzen: nur Dividenden, inflationsangepasste Entnahme (zum Beispiel 4 %) oder feste Zeitrente.">
+<meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large,max-video-preview:-1">
+<link rel="canonical" href="https://dividenden-rechner.github.io/aktien-hub/rentenstrategie/">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="de_DE">
+<meta property="og:site_name" content="Dividenden-Rechner Aktien-Hub">
+<meta property="og:title" content="Rentenstrategie-Vergleich: kostenloser Rechner | Dividenden-Rechner">
+<meta property="og:description" content="Drei Wege, ein Depot im Ruhestand zu nutzen: nur Dividenden, inflationsangepasste Entnahme (zum Beispiel 4 %) oder feste Zeitrente.">
+<meta property="og:url" content="https://dividenden-rechner.github.io/aktien-hub/rentenstrategie/">
+<meta property="og:image" content="https://dividenden-rechner.github.io/aktien-hub/assets/og-default.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="675">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://dividenden-rechner.github.io/aktien-hub/assets/og-default.png">
+<meta name="theme-color" content="#ffffff">
+<style>
+:root{color-scheme:light;--bg:#fff;--ink:#14202b;--mut:#5d6b78;--line:#dfe5ea;--soft:#f0f8f3;--acc:#2f9e5b;--accd:#1a7a45;--warn:#fff7e6;--warnl:#f0d9a8;--primary:#2f9e5b;--primary-d:#1a7a45;--success:#2f9e5b;--success-d:#1a7a45;--danger:#ef4444;--border:#d1d5db}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--ink);font:17px/1.65 "IBM Plex Sans",system-ui,-apple-system,"Segoe UI",sans-serif}
+a{color:var(--accd);text-underline-offset:2px}
+a:hover{color:var(--acc)}
+.wrap{max-width:1080px;margin:0 auto;padding:0 16px}
+.site-header{border-bottom:1px solid var(--line);background:#fff;position:sticky;top:0;z-index:10}
+.site-header .wrap{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:6px 24px;padding-top:10px;padding-bottom:10px}
+.brand{font-weight:700;font-size:19px;color:var(--ink);text-decoration:none}
+.brand span{color:var(--acc);font-weight:600}
+.site-header nav{display:flex;flex-wrap:wrap;gap:2px 6px}
+.site-header nav a{color:var(--ink);text-decoration:none;padding:6px 10px;border-radius:8px;font-size:15px;font-weight:500}
+.site-header nav a:hover{background:var(--soft)}
+.site-header nav a[aria-current="page"]{background:var(--soft);color:var(--accd);font-weight:700}
+main.wrap{padding-top:22px;padding-bottom:56px}
+.crumbs{font-size:14px;color:var(--mut);margin:0 0 14px}
+.crumbs a{color:var(--mut)}
+article{max-width:760px}
+h1{font-size:clamp(28px,5vw,40px);line-height:1.2;margin:0 0 14px;letter-spacing:-.01em}
+h2{font-size:clamp(21px,3.4vw,26px);line-height:1.3;margin:36px 0 10px}
+h3{font-size:18px;margin:24px 0 6px}
+p,ul,ol{margin:0 0 14px}
+li{margin-bottom:5px}
+.lead{font-size:19px;color:#2b3a47}
+.formula{background:var(--soft);border-left:4px solid var(--acc);padding:12px 16px;border-radius:0 10px 10px 0;margin:16px 0;font-weight:600}
+.example{border:1px solid var(--line);border-radius:12px;padding:14px 18px;margin:16px 0;background:#fff}
+.example strong:first-child{display:block;margin-bottom:4px;color:var(--accd)}
+.note{background:var(--warn);border:1px solid var(--warnl);border-radius:12px;padding:12px 16px;font-size:15px;margin:26px 0}
+table{border-collapse:collapse;width:100%;margin:14px 0 20px;font-size:15px}
+th,td{border-bottom:1px solid var(--line);padding:8px 10px;text-align:left;vertical-align:top}
+th{background:var(--soft)}
+td.n,th.n{text-align:right;font-variant-numeric:tabular-nums}
+.tablewrap{overflow-x:auto}
+.cards{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:14px;margin:18px 0 8px}
+.card{display:block;border:1px solid var(--line);border-radius:14px;padding:16px 18px;text-decoration:none;color:var(--ink);background:#fff;transition:border-color .15s,transform .15s}
+.card:hover{border-color:var(--acc);transform:translateY(-2px)}
+.card h3{margin:0 0 4px;font-size:18px;color:var(--accd)}
+.card p{margin:0;font-size:15px;color:var(--mut)}
+.hero{padding:26px 0 8px;max-width:760px}
+.hero p{font-size:19px}
+.btn{display:inline-block;background:var(--acc);color:#fff;padding:11px 20px;border-radius:10px;text-decoration:none;font-weight:600;font-size:16px;border:0;cursor:pointer;font-family:inherit}
+.btn:hover{background:var(--accd);color:#fff}
+.btn.alt{background:#fff;color:var(--accd);border:1px solid var(--acc)}
+.btn.alt:hover{background:var(--soft);color:var(--accd)}
+.actions{display:flex;flex-wrap:wrap;gap:10px;margin:18px 0}
+details{border:1px solid var(--line);border-radius:12px;padding:0 16px;margin:10px 0;background:#fff}
+summary{cursor:pointer;font-weight:600;padding:12px 0}
+details p{margin:0 0 12px}
+.related{margin-top:36px;padding-top:6px;border-top:1px solid var(--line)}
+.meta{font-size:14px;color:var(--mut);margin:0 0 18px}
+.site-footer{border-top:1px solid var(--line);background:#fafbfc;font-size:14px;color:var(--mut)}
+.site-footer .wrap{padding-top:22px;padding-bottom:30px}
+.site-footer a{color:var(--mut)}
+.site-footer .cols{display:flex;flex-wrap:wrap;gap:8px 28px;margin-bottom:10px}
+.todo{background:#ffecec;border:1px dashed #d98;padding:1px 6px;border-radius:5px}
+
+/* ===== Werkzeug-Design (Grundlage aller Rechner/Tools, Vorlage: Dividenden-Rechner) ===== */
+body.tools{background:#fff}
+article.wide{max-width:none}
+article.wide>:not(.tool):not(.cards){max-width:760px}
+.tool{width:100%;max-width:1100px;margin:18px 0;background:none;padding:0;border:0;border-radius:0;box-shadow:none}
+.tool h2{margin:0 0 1.2rem;padding-bottom:10px;border-bottom:2px solid #e5e7eb;color:var(--success)}
+.tool .form-container{display:grid;grid-template-columns:repeat(3,1fr);gap:1.5rem;margin-bottom:2rem}
+.tool .form-container.two{grid-template-columns:repeat(2,1fr)}
+@media (max-width:900px){.tool .form-container,.tool .form-container.two{grid-template-columns:repeat(2,1fr)}}
+@media (max-width:600px){.tool{padding:1.2rem}.tool .form-container,.tool .form-container.two{grid-template-columns:1fr}}
+.tool .form-group{display:flex;flex-direction:column}
+.tool label{font-weight:600;margin-bottom:.4rem;font-size:.9rem;color:#374151;display:block}
+.tool .hint{font-size:.8rem;color:#6b7280;font-weight:400}
+.tool input,.tool select{width:100%;font:inherit;padding:.75rem;border:1px solid var(--border);border-radius:6px;background:#fff;color:var(--ink)}
+.tool input:focus,.tool select:focus{outline:2px solid var(--primary);outline-offset:1px}
+.tool input[type=checkbox]{width:auto}
+.tool .tax-hint{font-size:.8rem;color:#6b7280;margin-top:5px;font-style:italic;background:#fffbeb;padding:5px;border-radius:4px;border-left:3px solid #f59e0b}
+.tool button{font:inherit;padding:.75rem 1.5rem;font-size:1rem;font-weight:600;background:var(--primary);color:#fff;border:0;border-radius:6px;cursor:pointer;transition:.2s}
+.tool button:hover{background:var(--primary-d)}
+.tool button.outline{background:transparent;border:1px solid var(--border);color:var(--ink);width:100%;text-align:left;display:flex;justify-content:space-between}
+.tool button.outline:hover{background:#f9fafb}
+.tool .main-action-btn{width:100%;padding:1rem;margin-top:1rem;background:var(--success);font-size:1.2rem}
+.tool .main-action-btn:hover{background:var(--success-d)}
+.tool .presetbox{background:#f9fafb;padding:1rem;border:1px solid var(--border);margin-top:.5rem;display:grid;grid-template-columns:repeat(3,1fr);gap:10px}
+.tool .presetbox label{margin:0;font-weight:500;display:flex;gap:8px;align-items:center}
+.tool .presetbox input{width:auto}
+.tool .result{margin-top:2rem;padding:1.2rem 0;background:none;border:0;border-top:1px solid #dfe5ea;border-bottom:1px solid #dfe5ea;border-radius:0;text-align:center;font-size:1.2rem;color:#14202b}
+.tool .result strong{color:var(--primary);font-size:1.4em}
+.tool .result .sub{font-size:.9em;margin-top:5px}
+.tool .kpis{display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:12px;margin-top:2rem}
+.tool .kpi{background:#ecfdf5;border:1px solid #a7f3d0;border-radius:8px;padding:12px 14px;text-align:center}
+.tool .kpi b{display:block;font-size:1.35rem;line-height:1.3;color:#065f46}
+.tool .kpi span{font-size:.8rem;color:#4b5563}
+.tool .kpi.blue b{color:var(--primary)}
+.tool .chart-wrapper{width:100%;margin-top:2.5rem;padding:1rem;background:#fff;border:1px solid #e5e7eb;border-radius:10px;height:400px;position:relative}
+.tool .chart-wrapper.short{height:320px}
+.tool .err{color:#b3372d;font-size:.9rem;min-height:20px;margin-top:8px}
+.tool .tablewrap{overflow-x:auto;margin-top:1rem}
+.tool table{width:100%;border-collapse:collapse;margin:10px 0 0;font-size:.9rem}
+.tool th,.tool td{border:1px solid #e5e7eb;padding:8px;text-align:right}
+.tool th{background:var(--success);color:#fff;text-align:center}
+.tool td.pos{color:#10b981;font-weight:700}
+.tool td.neg{color:#ef4444}
+.tool .note-small{font-size:.8rem;color:#6b7280;margin:12px 0 0}
+
+.calc-menu{display:flex;gap:18px;margin:18px 0 14px;max-width:1100px;border-bottom:1px solid #dfe5ea;overflow-x:auto;white-space:nowrap;scrollbar-width:none}.calc-menu::-webkit-scrollbar{display:none}
+@media (max-width:760px){.calc-menu{grid-template-columns:repeat(2,1fr)}}
+@media (max-width:440px){.calc-menu{grid-template-columns:1fr}}
+.calc-menu button{flex:none;font:inherit;font-size:13px;font-weight:500;padding:6px 0 8px;border:0;border-bottom:2px solid transparent;margin-bottom:-1px;border-radius:0;background:none;color:#8a97a3;cursor:pointer;text-align:center;transition:none}
+.calc-menu button:hover{background:none;color:#5b6874}
+.calc-menu button[aria-pressed=true]{background:none;color:#33414d;font-weight:600;border-bottom-color:#8a97a3}
+.calc-menu button:focus-visible{outline:2px solid var(--primary);outline-offset:2px}
+article.wide>.calc-wrap{max-width:none}
+.calc-wrap>:not(.tool){max-width:760px}
+.calc-wrap .tool .intro{margin:-.4rem 0 1.4rem;color:#4b5563}
+.calc-wrap .explain{margin-top:8px}
+.calc-wrap[hidden]{display:none}
+.tool .tablewrap[hidden]{display:none}
+
+</style>
+<style>
+/* Einheitliche Hauptnavigation des Aktien-Hubs */
+
+/* Kompaktes Original-Logo in der globalen Kopfzeile */
+
+/* Gleiche Header-Darstellung auf Aktien und Rechner wie auf allen anderen Seiten */
+
+/* Einheitliche Screener-Kopfzeile: unabhängig von Seiten-CSS */
+
+</style>
+<link rel="icon" href="../favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="32x32" href="../assets/favicon-32.png">
+<link rel="icon" type="image/png" sizes="192x192" href="../assets/favicon-192.png">
+<link rel="apple-touch-icon" href="../assets/apple-touch-icon.png">
+<link rel="stylesheet" href="../assets/navigation.css?v=20261025a">
+<style id="mag-css">.home-mag .mcover{display:block;width:100%;height:auto;aspect-ratio:16/9;object-fit:cover}.home-mag .card{padding:0;overflow:hidden}.home-mag .card>*:not(.mcover){margin-left:16px;margin-right:16px}.home-mag .kicker{margin-top:12px;margin-bottom:4px;font-size:13px;font-weight:700;letter-spacing:.04em;text-transform:uppercase;color:#1a7a45}.home-mag .card p:last-child{margin-bottom:16px}</style>
+<style id="home-css">
+.hh{background:linear-gradient(180deg,#f0f8f3 0%,#fff 100%);padding:34px 0 30px}
+.hh .wrap{display:grid;grid-template-columns:1.05fr .95fr;gap:34px;align-items:center}
+.hh .kick{display:inline-block;background:none;border:0;color:#5d6b78;font-size:13px;font-weight:500;padding:0;margin-bottom:12px}
+.hh h1{font-size:clamp(28px,4.4vw,44px);line-height:1.14;margin:0 0 14px;letter-spacing:-.02em;max-width:none}
+.hh h1 em{font-style:normal;color:#2f9e5b}
+.hh .lead{font-size:19px;color:#2b3a47;margin:0 0 18px;max-width:none}
+.hh .trust{display:flex;flex-wrap:wrap;gap:4px 18px;font-size:14px;color:#5d6b78;margin:0;padding:0;list-style:none}
+.hh .trust li{margin:0}.hh .trust li::before{content:"✓ ";color:#2f9e5b;font-weight:700}
+.hh-mini{background:transparent;border:0;border-radius:0;padding:0;box-shadow:none;min-width:0}
+.hh-mini h2{font-size:14px;margin:0 0 12px;color:#5d6b78;font-weight:600;text-transform:uppercase;letter-spacing:.04em}
+.hh-f{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}
+.hh-f label{font-size:13px;line-height:1.25;color:#5d6b78;display:flex;flex-direction:column;justify-content:flex-end;min-width:0}
+.hh-f input[type=number]{background:#fff;width:100%;font:inherit;font-size:16px;padding:8px 10px;border:1px solid #cfd6dc;border-radius:9px;margin-top:2px}
+.hh-f input:focus{outline:2px solid #2f9e5b;border-color:#2f9e5b}
+.hh-f .rng{grid-column:1/-1;display:block}.hh-f .rng input{width:100%;padding:0;border:0;accent-color:#2f9e5b}
+.hh-big{display:flex;gap:16px;margin:14px 0 4px}.hh-big div{flex:1;min-width:0}.hh-big small{display:block;color:#5d6b78;font-size:13px}
+.hh-big b{font-size:clamp(20px,3vw,27px);line-height:1.2;font-variant-numeric:tabular-nums;display:block}.hh-big .g{color:#1a7a45}
+svg.hh-ch{width:100%;height:auto;display:block}
+.hh-leg{display:flex;gap:16px;font-size:12.5px;color:#5d6b78;margin:2px 0 10px}.hh-leg i{display:inline-block;width:10px;height:10px;border-radius:2px;margin-right:5px;vertical-align:-1px}
+.hh-btn{display:block;text-align:center;background:#2f9e5b;color:#fff;padding:12px 16px;border-radius:10px;text-decoration:none;font-weight:600}
+.hh-btn:hover{background:#1a7a45;color:#fff}.hh-fine{font-size:12px;color:#5d6b78;margin:8px 0 0}
+.home-tiles,.home-mag,.home-alle{margin-top:34px}
+.home-tiles h2,.home-mag h2,.home-alle h2,.home-more h2{margin-top:0}
+.home-tiles .sub,.home-mag .sub,.home-alle .sub{color:#5d6b78;margin:0 0 16px}
+.home-tiles .tiles{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:16px;max-width:none}
+.tile{display:flex;flex-direction:column;border:1px solid #dfe5ea;border-radius:16px;padding:18px;text-decoration:none;color:#14202b;background:#fff;transition:.15s}
+.tile:hover{border-color:#2f9e5b;transform:translateY(-3px);box-shadow:0 8px 22px rgba(20,32,43,.08)}
+.tile .pv{border-radius:10px;background:#fff;border:1px solid #eef1f4;padding:8px;margin-bottom:12px;overflow:hidden}.tile .pv svg{display:block;height:auto}
+.tile h3{margin:0 0 4px;font-size:18px;color:#1a7a45}.tile p{margin:0;font-size:14.5px;color:#5d6b78;flex:1}
+.tile .go{margin-top:10px;font-weight:600;font-size:14px;color:#1a7a45}
+.home-mag .more{margin:12px 0 0}
+.home-mag .magcards{grid-template-columns:repeat(auto-fit,minmax(260px,1fr))}
+body.tools article.wide>section.home-alle,body.tools article.wide>nav.calc-menu,body.tools article.wide>.calc-wrap,body.tools article.wide>section.home-tiles,body.tools article.wide>section.home-mag,body.tools article.wide>section.home-more{max-width:1100px}
+@media(max-width:900px){.hh .wrap{grid-template-columns:minmax(0,1fr)}.home-tiles .tiles{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:520px){.hh{padding:18px 0 20px}.hh h1{font-size:34px;line-height:1.08;margin-bottom:10px}.hh .lead{font-size:16.5px;margin-bottom:16px}.hh .trust{display:none}.hh .kick{margin-bottom:10px}.hh-big b{font-size:28px}.hh-mini{padding:0}.home-tiles .tiles{grid-template-columns:1fr}.tile{flex-direction:column}.tile .pv{width:100%;margin:0 0 12px}.tile>div.tx{flex:1}.hh-big{gap:10px}}
+</style>
+<link rel="manifest" href="../manifest.webmanifest">
+<style id="menu-links">.calc-menu a{flex:none;font:inherit;font-size:13px;font-weight:500;padding:6px 0 8px;border-bottom:2px solid transparent;margin-bottom:-1px;color:#8a97a3;text-decoration:none}.calc-menu a:hover{color:#5b6874}.calc-menu a[aria-current=page]{color:#33414d;font-weight:600;border-bottom-color:#8a97a3}.tool h1{margin:0 0 1.2rem;padding-bottom:10px;border-bottom:2px solid #e5e7eb;color:var(--success);font-size:1.5em;line-height:1.25}</style>
+</head>
+<body class="tools">
+<header id="hub-global-header"><div class="hub-nav-inner"><a class="hub-brand" href="../"><img class="hub-logo" src="../assets/logo.png" alt="" width="36" height="36"> <span class="hub-brand-name">Dividenden-Rechner <span>Aktien-Hub</span></span></a><nav class="hub-links" aria-label="Hauptmenü"><a href="../rechner/" aria-current="page">Rechner</a><a href="../aktien-hub/">Aktien</a><a href="../depot/">Depot</a><a href="../news/">News</a><a href="../earnings/">Earnings</a><a href="../screener/">Screener</a><a href="../einfuehrung/">Einführung</a><a href="../grundlagen/">Grundlagen</a><a href="../fortgeschrittene/">Fortgeschrittene</a></nav></div></header>
+<script src="../assets/navigation.js"></script>
+<script src="../assets/logos.js"></script>
+<main class="wrap"><article class="wide">
+<nav class="crumbs" aria-label="Brotkrumen"><a href="../">Start</a> › <span aria-current="page">Rentenstrategie</span></nav>
+<nav class="calc-menu" id="calc-menu" aria-label="Rechner auswählen"><a href="../">Dividenden-Rechner</a><a href="../dividenden-vergleich/">Dividenden-Vergleich</a><a href="../von-dividenden-leben/">Von Dividenden leben</a><a href="../rentenluecke/">Rentenlücke füllen</a><a href="../rentenstrategie/" aria-current="page">Rentenstrategie</a><a href="../dividenden-reinvestieren/">Dividenden reinvestieren</a><a href="../altersvorsorgedepot/">Altersvorsorge-Depot</a><a href="../vorabpauschale-rechner/">Vorabsteuer bei ETF/Fonds</a><a href="../etf-rechner/">ETF-Rechner</a></nav>
+<!--calc-start-->
+<div class="calc-wrap" id="t-rentenstrategie">
+<section class="tool" aria-labelledby="h-rentenstrategie">
+<h1 id="h-rentenstrategie">Rentenstrategie-Vergleich</h1>
+<p class="intro">Drei Wege, ein Depot im Ruhestand zu nutzen: nur Dividenden, inflationsangepasste Entnahme (zum Beispiel 4 %) oder feste Zeitrente.</p>
+<form id="f-rentenstrategie" novalidate aria-label="Rentenstrategie-Vergleich">
+<div class="form-container"><div class="form-group"><label for="rs-cap">Kapital bei Rentenbeginn (€)</label><input id="rs-cap" inputmode="decimal" value="500.000"></div><div class="form-group"><label for="rs-ret">Alter bei Rentenbeginn</label><input id="rs-ret" inputmode="numeric" value="67"></div><div class="form-group"><label for="rs-end">Planung bis Alter</label><input id="rs-end" inputmode="numeric" value="95"></div><div class="form-group"><label for="rs-r">Gesamtrendite (% p. a.)</label><input id="rs-r" inputmode="decimal" value="6"></div><div class="form-group"><label for="rs-y">Dividendenrendite (%)</label><input id="rs-y" inputmode="decimal" value="3,5"></div><div class="form-group"><label for="rs-g">Dividendenwachstum (% p. a.)</label><input id="rs-g" inputmode="decimal" value="4"></div><div class="form-group"><label for="rs-inf">Inflation (% p. a.)</label><input id="rs-inf" inputmode="decimal" value="2"></div><div class="form-group"><label for="rs-w">Entnahmequote Strategie B (% im 1. Jahr)</label><input id="rs-w" inputmode="decimal" value="4"></div><div class="form-group"><label for="rs-td">Steuer auf Dividenden (%)</label><input id="rs-td" inputmode="decimal" value="26,375"></div><div class="form-group"><label for="rs-te">Steuer auf Entnahmen (%) <span class="hint">(Annahme)</span></label><input id="rs-te" inputmode="decimal" value="10"></div></div>
+<div class="err" id="rs-err" role="alert"></div>
+<div class="tablewrap"><table><thead><tr><th>Kennzahl</th><th>A: Nur Dividenden</th><th>B: Inflationsangepasste Entnahme</th><th>C: Feste Zeitrente</th></tr></thead><tbody><tr><td>Netto pro Monat zu Beginn</td><td id="rs-a1">–</td><td id="rs-b1">–</td><td id="rs-c1">–</td></tr><tr><td>Netto pro Monat <span id="rs-mid">nach 20 Jahren</span></td><td id="rs-a2">–</td><td id="rs-b2">–</td><td id="rs-c2">–</td></tr><tr><td>Kapital am Ende</td><td id="rs-a3">–</td><td id="rs-b3">–</td><td id="rs-c3">–</td></tr><tr><td>Summe Netto-Auszahlungen</td><td id="rs-a4">–</td><td id="rs-b4">–</td><td id="rs-c4">–</td></tr></tbody></table></div><div class="chart-wrapper"><canvas id="rs-chart1" role="img" aria-label="Monatliches Netto-Einkommen der drei Strategien"></canvas></div><div class="chart-wrapper"><canvas id="rs-chart2" role="img" aria-label="Kapitalverlauf der drei Strategien"></canvas></div>
+</form>
+</section>
+<div class="explain">
+<h3>So wird gerechnet</h3>
+<ul>
+<li><strong>A: Nur Dividenden.</strong> Du behältst deine Aktien und gibst nur die Netto-Dividenden aus. Die Dividende wächst mit dem Dividendenwachstum, das Kapital mit der Gesamtrendite abzüglich der Dividendenrendite.</li>
+<li><strong>B: Inflationsangepasste Entnahme.</strong> Im ersten Jahr entnimmst du die gewählte Quote vom Startkapital, danach jedes Jahr den Betrag plus Inflation. Das Kapital wächst mit der Gesamtrendite. Reicht das Kapital nicht, siehst du das Alter, in dem es leer ist.</li>
+<li><strong>C: Feste Zeitrente.</strong> Ein gleichbleibender Betrag, der das Kapital genau bis zum Endalter aufbraucht. Er steigt nicht mit der Inflation.</li>
+</ul>
+<p>Steuern: Dividenden werden mit dem eingestellten Satz voll besteuert. Bei Entnahmen wird nur eine Pauschale auf den Betrag angesetzt, weil beim Verkauf von Anteilen nur der Gewinnanteil steuerpflichtig ist. Das ist eine grobe Annahme, die du anpassen kannst. Die Quote „4 %“ stammt aus US-Studien und ist keine Garantie. Die Ergebnisse sind Szenarien.</p>
+<h3>Häufige Fragen</h3>
+<details><summary>Was ist die 4-Prozent-Regel?</summary><p>Eine Faustregel aus US-Untersuchungen: Im ersten Ruhestandsjahr entnimmst du 4 % des Depots und passt den Betrag danach an die Inflation an. Ob sie für deine Situation, deinen Zeitraum und deine Märkte passt, ist offen.</p></details>
+<details><summary>Welche Strategie ist die beste?</summary><p>Das hängt von deinen Zielen ab. Dividenden erhalten das Kapital, liefern aber oft weniger zu Beginn. Entnahmen liefern mehr, zehren das Kapital aber auf und hängen von der Marktentwicklung ab.</p></details>
+</div>
+</div>
+<!--calc-end-->
+<!--av-start--><!--av-end-->
+<p class="note"><strong>Hinweis:</strong> Dieser Text dient der allgemeinen Information und ist weder Anlage-, Steuer- noch Rechtsberatung. Alle Ergebnisse sind Szenarien auf Basis deiner Annahmen und keine Prognose.</p>
+</article></main>
+<footer class="site-footer"><div class="wrap">
+<div class="cols"><a href="../" aria-current="page">Rechner</a><a href="../ueber-uns/">Über uns</a><a href="../impressum/">Impressum</a><a href="https://www.instagram.com/dividenden.rechner" rel="noopener nofollow me" target="_blank">Instagram</a><a href="../datenschutz/">Datenschutz</a></div>
+<p>Alle Inhalte dienen der allgemeinen Information und sind keine Anlage-, Steuer- oder Rechtsberatung. Kapitalanlagen sind mit Risiken verbunden. Stand der steuerlichen Angaben: Oktober 2026.</p>
+</div></footer>
+<script src="../assets/chart.umd.js"></script>
+<script>window.RECHNER_ID="rentenstrategie";</script>
+<script src="../assets/rechner.js"></script>
+</body>
+</html>

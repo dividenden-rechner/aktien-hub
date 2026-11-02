@@ -1,16 +1,11 @@
 #!/usr/bin/env python3
-"""Baut altersvorsorgedepot/index.html aus data/av-anbieter.json (Kopf und Fuss von earnings/index.html)."""
+"""Baut altersvorsorgedepot/index.html aus data/av-anbieter.json in die Markierung av-start/av-end der Rechnerseite (erzeugt von tools/split_rechner.py)."""
 import html, json, os, re
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-e = open(os.path.join(ROOT, "earnings", "index.html"), encoding="utf-8").read()
+PAGE = os.path.join(ROOT, "altersvorsorgedepot", "index.html")
+page = open(PAGE, encoding="utf-8").read()
 D = json.load(open(os.path.join(ROOT, "data", "av-anbieter.json"), encoding="utf-8"))
 esc = html.escape
-head = e[:e.index('<style>')]
-head = re.sub(r"<title>.*?</title>", "<title>Altersvorsorgedepot-Anbieter im Vergleich: Kosten und Konditionen 2027</title>", head)
-head = re.sub(r'(<meta name="description" content=")[^"]*', r'\1Welche Anbieter starten 2027 mit dem Altersvorsorgedepot? Kosten, Fondsauswahl und Konditionen von Trade Republic, Scalable, ING, comdirect, Deka und weiteren im Überblick, mit Quellen und Stand.', head)
-head = head.replace("https://dividenden-rechner.github.io/aktien-hub/earnings/", "https://dividenden-rechner.github.io/aktien-hub/altersvorsorgedepot/")
-head = re.sub(r'(<meta property="og:title" content=")[^"]*', r'\1Altersvorsorgedepot-Anbieter im Vergleich', head)
-head = re.sub(r'(<meta property="og:description" content=")[^"]*', r'\1Kosten und Konditionen der Anbieter 2027 im Überblick, mit Quellen.', head)
 css = """<style>
 [hidden]{display:none!important}
 .av-tabs{display:flex;gap:18px;overflow-x:auto;margin:10px 0 10px;border-bottom:1px solid #dfe5ea;white-space:nowrap;scrollbar-width:none}.av-tabs::-webkit-scrollbar{display:none}
@@ -35,9 +30,7 @@ for i, f in enumerate(D["firmen"]):
         f'<div><div class="av-k">{esc(f["kosten"])}</div><div class="av-d"><b>Depot und Orders:</b> {esc(f["depot"])}</div><div class="av-d"><b>Auswahl:</b> {esc(f["fonds"])}</div>'
         + (f'<div class="av-h">{esc(f["hinweis"])}</div>' if f["hinweis"] else "") + f'<div class="av-q">Quellen: {q}</div></div>'
         f'<div class="av-f">{fig(f["kosten_start"])}<span>zu Beginn</span><div style="height:6px"></div>{fig(f["kosten_dauer"])}<span>langfristig</span></div></div>')
-body = f"""<main class="wrap"><article>
-<nav class="crumbs" aria-label="Brotkrumen"><a href="../">Start</a> › <span aria-current="page">Altersvorsorgedepot-Anbieter</span></nav>
-<h1>Altersvorsorgedepot: Anbieter im Vergleich</h1>
+body = f"""<h2 id="anbieter">Anbieter im Vergleich</h2>
 <p class="lead">Ab dem 1. Januar 2027 können Verträge für das neue geförderte Altersvorsorgedepot abgeschlossen werden. Hier siehst du, was Trade Republic, Scalable Capital, ING, Deka und weitere angekündigt haben. Stand der Angaben: {esc(D["stand"][8:10])}.{esc(D["stand"][5:7])}.{esc(D["stand"][:4])}.</p>
 <p class="note"><strong>Wichtig:</strong> {esc(D["hinweis"])} Verglichen werden die laufenden Kosten des Standarddepots, die ETF-Erstattungen sind meist befristet. Dein Ergebnis hängt zusätzlich von Förderung, Fondsauswahl und Beitrag ab. Das ist keine Anlageberatung.</p>
 <h2>Was ist am günstigsten?</h2>
@@ -61,7 +54,7 @@ body = f"""<main class="wrap"><article>
 <li><strong>Riester:</strong> Bestehende Verträge laufen weiter. Neue Riester-Verträge gibt es ab 2027 nicht mehr.</li>
 <li><strong>Frühstartrente:</strong> Der Bund will Kindern vom 6. bis zum 18. Lebensjahr 10 Euro im Monat zahlen. Das Kabinett hat den Entwurf am 12. August 2026 beschlossen, Bundestag und Bundesrat haben noch nicht entschieden (Stand 20.10.2026).</li>
 </ul>
-<p>Berechne deine Förderung und den Vergleich mit einem ETF-Sparplan im <a href="../#altersvorsorgedepot">Altersvorsorgedepot-Rechner</a>. Setze dort die Kosten pro Jahr auf den Wert deines Anbieters.</p>
+<p>Trage die Kosten deines Anbieters im Rechner oben unter „Kosten im Altersvorsorgedepot“ ein, dann siehst du die Förderung und den Vergleich mit einem ETF-Sparplan.</p>
 <h2>Quellen</h2>
 <ul>
 <li><a href="https://www.test.de/Altersvorsorgedepot-Preiskampf-der-Anbieter-ING-Trade-Republic-Smartbroker-6335719-0/" target="_blank" rel="noopener nofollow">Stiftung Warentest, 13.10.2026</a></li>
@@ -71,18 +64,21 @@ body = f"""<main class="wrap"><article>
 <li><a href="https://www.ing.de/wissen/altersvorsorgedepot/" target="_blank" rel="noopener nofollow">ING, Stand 14.07.2026</a></li>
 </ul>
 <p class="note"><strong>Hinweis:</strong> Keine Anlageberatung. Angaben ohne Gewähr, die Konditionen können sich bis zum Start ändern. Maßgeblich sind die Vertragsunterlagen der Anbieter.</p>
-</article></main>
 """
-tail = e[e.index("</main>") + len("</main>"):]
-tail = tail[:tail.index("<script>\n(function(){")] if "<script>\n(function(){" in tail else tail
 js = """<script>
 (function(){var l=document.getElementById("avl"),t=document.getElementById("avt");
 function key(r,s){if(s==="n")return r.dataset.n.toLowerCase();var v=r.dataset[s];return v===""?1e9:parseFloat(v)}
 t.onclick=function(e){var b=e.target.closest(".av-tab");if(!b)return;var s=b.dataset.s;Array.prototype.forEach.call(t.children,function(x){x.setAttribute("aria-pressed",x===b)});
 var rows=Array.prototype.slice.call(l.children);rows.sort(function(a,b){var x=key(a,s),y=key(b,s);return x<y?-1:x>y?1:(+a.dataset.i)-(+b.dataset.i)});rows.forEach(function(r){l.appendChild(r)})};
 })();
-</script>
-"""
-out = head + css + e[e.index("</style>", e.index("<style>")) + len("</style>"):e.index("<main")] .replace("", "") + body + tail + js + "</body>\n</html>\n"
-open(os.path.join(ROOT, "altersvorsorgedepot", "index.html"), "w", encoding="utf-8").write(out)
-print("ok", len(out))
+</script>"""
+block = "<!--av-start-->\n" + css + '<section id="anbieter-bereich">' + body + "</section>\n" + js + "\n<!--av-end-->"
+page = re.sub(r"<!--av-start-->.*?<!--av-end-->", lambda m: block, page, flags=re.S)
+title = "Altersvorsorgedepot-Rechner und Anbieter im Vergleich 2027"
+desc = "Altersvorsorgedepot berechnen: Zulagen, Depotwert und Auszahlung, dazu die Anbieter 2027 im Vergleich (Trade Republic, Scalable, ING, Deka, comdirect) mit Kosten und Quellen."
+page = re.sub(r"<title>.*?</title>", "<title>" + title + "</title>", page, count=1)
+page = re.sub(r'(<meta name="description" content=")[^"]*', lambda m: m.group(1) + desc, page, count=1)
+page = re.sub(r'(<meta property="og:title" content=")[^"]*', lambda m: m.group(1) + title, page, count=1)
+page = re.sub(r'(<meta property="og:description" content=")[^"]*', lambda m: m.group(1) + desc, page, count=1)
+open(PAGE, "w", encoding="utf-8").write(page)
+print("ok", len(page))
