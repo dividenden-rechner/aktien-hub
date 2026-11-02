@@ -15,11 +15,12 @@ Datei anklicken, dann Stift-Symbol: Zeile `draft: true` löschen und speichern, 
 | 29.10.2026 22:42 | Amazon steigert Umsatz im dritten Quartal auf 201,9 Milliarden Dollar | [79738970_2026-10-29/7757_2242-amazon-q3-2026-zahlen.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/79738970_2026-10-29/7757_2242-amazon-q3-2026-zahlen.md) |
 | 29.10.2026 10:12 | Shell erzielt im dritten Quartal 10,8 Milliarden Dollar Gewinn | [79738970_2026-10-29/8987_1012-shell-q3-2026-ergebnisse.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/79738970_2026-10-29/8987_1012-shell-q3-2026-ergebnisse.md) |
 
-### Online (151)
+### Online (152)
 
 | Datum | Titel | Datei |
 |---|---|---|
 | 02.11.2026 21:38 | Public Service Enterprise Group: Bereinigter Q3-Gewinn bei 1,15 US-Dollar je Aktie | [79738897_2026-11-02/7861_2138-public-service-enterprise-group-q3-2026-zahlen.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/79738897_2026-11-02/7861_2138-public-service-enterprise-group-q3-2026-zahlen.md) |
+| 02.11.2026 21:38 | HSBC Holdings Plc kauft am 02. November 2026 eigene Aktien zurück | [79738897_2026-11-02/7861_2138-hsbc-holdings-plc-aktienrueckkauf-november-2026.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/79738897_2026-11-02/7861_2138-hsbc-holdings-plc-aktienrueckkauf-november-2026.md) |
 | 02.11.2026 21:37 | Marvell Technology schluckt Lumentum für 115 Mrd. US-Dollar | [79738897_2026-11-02/7862_2137-marvell-technology-uebernimmt-lumentum-fuer-115-mrd-usd.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/79738897_2026-11-02/7862_2137-marvell-technology-uebernimmt-lumentum-fuer-115-mrd-usd.md) |
 | 02.11.2026 21:37 | Marvell Technology übernimmt Lumentum für 115 Mrd. US-Dollar | [79738897_2026-11-02/7862_2137-marvell-technolog-uebernahme-lumentum-115-mrd-usd.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/79738897_2026-11-02/7862_2137-marvell-technolog-uebernahme-lumentum-115-mrd-usd.md) |
 | 02.11.2026 21:36 | Marriott International steigert Q3-Gewinn je Aktie auf 3,04 US-Dollar | [79738897_2026-11-02/7863_2136-marriott-international-q3-2026-zahlen.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/79738897_2026-11-02/7863_2136-marriott-international-q3-2026-zahlen.md) |

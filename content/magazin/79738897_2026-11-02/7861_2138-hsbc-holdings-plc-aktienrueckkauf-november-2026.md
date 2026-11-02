@@ -10,6 +10,7 @@ quelle_url: https://www.sec.gov/Archives/edgar/data/1089113/000165495426009382/a
 quelle_name: "Pressemitteilung Hsbc Holdings Plc (SEC-Meldung)"
 logo_symbol: HSBC
 logo_name: "Hsbc Holdings Plc"
+logo_file: assets/logos/hsbc.png
 ---
 <!-- PRÜFEN: Diese Zahlen stehen nicht im Originaltext: Einordnung: 2,3. Bitte pruefen, dann 'draft: true' loeschen. -->
 
