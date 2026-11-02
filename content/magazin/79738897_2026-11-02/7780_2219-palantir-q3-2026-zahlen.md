@@ -13,6 +13,7 @@ image_artist_url: https://unsplash.com/@imgix?utm_source=dividenden-rechner&utm_
 logo_name: "Palantir Technologies Inc."
 logo_symbol: PLTR
 logo_domain: palantir.com
+logo_file: assets/logos/pltr.png
 ---
 <!-- PRÜFEN: Aufmacherfoto ist automatisch von Unsplash gewaehlt: bitte pruefen, ob es zum Artikel passt (sonst image-Zeilen entfernen, dann entsteht ein Titelbild automatisch). -->
 <!-- PRÜFEN: Ausschnitte aus dem Bericht im Text (f1): bitte prüfen, ob Zuschnitt und Platz passen. Unpassende Bildzeilen einfach löschen. -->
