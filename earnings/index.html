@@ -21,10 +21,12 @@
 <link rel="stylesheet" href="../assets/navigation.css?v=20261025a">
 <style>
 [hidden]{display:none!important}
-.ek-days{display:flex;gap:18px;overflow-x:auto;margin:10px 0 14px;border-bottom:1px solid #dfe5ea;white-space:nowrap;scrollbar-width:none}.ek-days::-webkit-scrollbar{display:none}
-.ek-day{flex:0 0 auto;display:inline-flex;align-items:baseline;gap:6px;border:0;border-bottom:2px solid transparent;margin-bottom:-1px;background:none;border-radius:0;padding:6px 0 8px;cursor:pointer;font:inherit;font-size:13px;font-weight:500;color:#8a97a3;text-align:left}
-.ek-day:hover{color:#5b6874}.ek-day[aria-pressed=true]{color:#33414d;font-weight:600;border-bottom-color:#8a97a3}
-.ek-day .ek-n{font-size:inherit;font-weight:inherit}.ek-day .ek-l{font-size:inherit;color:inherit;margin:0}.ek-day .ek-c{background:none;padding:0;min-width:0;margin:0;font-size:12px;color:inherit;opacity:.8}.ek-day .ek-c.zero{opacity:.45}.ek-day .ek-lg{display:none}.ek-day.past{opacity:.7}
+.ek-days{display:flex;gap:10px;overflow-x:auto;padding:4px 2px 12px;margin:0 0 12px}
+.ek-day{flex:0 0 auto;width:104px;border:1px solid #e2e8f0;background:#fff;border-radius:16px;padding:10px 8px;text-align:center;cursor:pointer;font:inherit;color:#0f172a}
+.ek-day:hover{border-color:#93c5fd}.ek-day[aria-pressed=true]{background:#eff6ff;border-color:#2563eb}.ek-day.today .ek-n{color:#2563eb}.ek-day.past{opacity:.75}
+.ek-n{font-size:1.5rem;font-weight:700;line-height:1.1}.ek-l{font-size:.78rem;color:#64748b;margin-bottom:6px}
+.ek-c{display:inline-block;min-width:24px;padding:1px 7px;border-radius:8px;background:#f1f5f9;font-size:.75rem;color:#334155;margin-bottom:8px}.ek-c.zero{opacity:.45}
+.ek-lg{display:flex;justify-content:center;min-height:28px}.ek-lg .ek-logo{margin-left:-8px;border:2px solid #fff}.ek-lg .ek-logo:first-child{margin-left:0}
 .ek-logo{width:28px;height:28px;border-radius:8px;object-fit:contain;flex:0 0 auto;display:inline-flex;align-items:center;justify-content:center;font-weight:700;color:#475569;background:#f1f5f9}
 img.ek-logo{background:#fff}
 .ek-bar{display:flex;gap:10px;flex-wrap:wrap;align-items:center;margin:0 0 12px}
@@ -48,7 +50,7 @@ img.ek-logo{background:#fff}
 .ek-body{display:none;padding:2px 0 16px 52px}.ek-item.open .ek-body{display:block}
 .ek-body table{width:100%;max-width:560px;border-collapse:collapse;font-size:.92rem}.ek-body td,.ek-body th{padding:6px 8px;border-bottom:1px solid #e2e8f0;text-align:right}.ek-body th:first-child,.ek-body td:first-child{text-align:left}
 .ek-body .ek-go{display:inline-block;margin-top:10px}
-.ek-empty{padding:22px 0;color:#475569}.ek-sub2{font-size:.85rem;color:#8a97a3;margin-top:2px}.ek-sub2 b{font-weight:500;color:#5b6874}.ek-sub2 .t-up{color:#15803d}.ek-sub2 .t-dn{color:#b91c1c}.ek-ir{color:#5b6874;text-decoration:underline;text-underline-offset:2px;white-space:nowrap}.ek-ir:hover{color:#33414d}.ek-row.stat{cursor:default}
+.ek-scope{gap:18px;padding:0 0 0;margin:0 0 12px;border-bottom:1px solid #dfe5ea}.ek-scope .ek-day{width:auto;border:0;border-bottom:2px solid transparent;border-radius:0;background:none;padding:6px 0 8px;margin-bottom:-1px;font-size:13px;font-weight:500;color:#8a97a3;white-space:nowrap}.ek-scope .ek-day:hover{color:#5b6874}.ek-scope .ek-day[aria-pressed=true]{background:none;color:#33414d;font-weight:600;border-bottom-color:#8a97a3}.ek-empty{padding:22px 0;color:#475569}.ek-sub2{font-size:.85rem;color:#8a97a3;margin-top:2px}.ek-sub2 b{font-weight:500;color:#5b6874}.ek-sub2 .t-up{color:#15803d}.ek-sub2 .t-dn{color:#b91c1c}.ek-ir{color:#5b6874;text-decoration:underline;text-underline-offset:2px;white-space:nowrap}.ek-ir:hover{color:#33414d}.ek-row.stat{cursor:default}
 @media(max-width:640px){.ek-fig{flex-direction:column;gap:6px;max-width:48%}.ek-fig div{min-width:0}.ek-body{padding-left:14px;padding-right:14px;overflow-x:auto}.ek-fig div{min-width:64px}.ek-row{gap:10px;padding:12px 0}.ek-body{padding-left:0}}
 </style>
 <script>if(/[?&]embed=1/.test(location.search)){document.documentElement.className+=" embed";document.write('<base target="_top">')}</script>
@@ -65,7 +67,8 @@ img.ek-logo{background:#fff}
 <h1>Earnings-Kalender</h1>
 <p class="lead">Wann veröffentlichen Dividendenunternehmen ihre Quartalszahlen? Tippe auf einen Tag, um die Termine zu filtern, und auf eine Firma, um erwarteten Gewinn und Umsatz im Vergleich zum Vorjahresquartal sowie die Dividendenveränderung zu sehen. Logo und Name führen zur Aktie im Aktien-Hub.</p>
 <div id="days" class="ek-days" aria-label="Tage"></div>
-<div class="ek-bar"><select id="scope" aria-label="Auswahl"><option value="big">Große Unternehmen weltweit</option><option value="mp">Meine Werte und beliebte Dividendenaktien</option><option value="mine">Nur meine Werte (Watchlist, Depot)</option><option value="all">Alle US-Firmen (auch kleine)</option></select><input id="q" type="search" placeholder="Firma oder Kürzel suchen" aria-label="Suchen"><button id="clear" type="button" hidden>Filter zurücksetzen</button><span id="upd" class="ek-sub"></span></div>
+<div id="scope" class="ek-days ek-scope" aria-label="Auswahl"><button type="button" class="ek-day" data-v="big" aria-pressed="true">Große Unternehmen weltweit</button><button type="button" class="ek-day" data-v="mp" aria-pressed="false">Meine Werte und beliebte Dividendenaktien</button><button type="button" class="ek-day" data-v="mine" aria-pressed="false">Nur meine Werte</button><button type="button" class="ek-day" data-v="all" aria-pressed="false">Alle US-Firmen</button></div>
+<div class="ek-bar"><input id="q" type="search" placeholder="Firma oder Kürzel suchen" aria-label="Suchen"><button id="clear" type="button" hidden>Filter zurücksetzen</button><span id="upd" class="ek-sub"></span></div>
 <div id="list" aria-live="polite"><div class="ek-empty">Lade Termine …</div></div>
 <div id="termine"></div>
 <h2>So liest du die Tabelle</h2>
@@ -118,11 +121,16 @@ function logo(sym,name){return window.HubLogos?HubLogos.img("ek-logo",sym,"",nam
 function key(d){var x=new Date(d);return x.getFullYear()+"-"+("0"+(x.getMonth()+1)).slice(-2)+"-"+("0"+x.getDate()).slice(-2)}
 var NEWS=[];
 var GENERIC={american:1,united:1,general:1,national:1,first:1,global:1,group:1,international:1,financial:1,corporation:1,company:1};
+function nameRe(sym){
+  var n=String(nm(sym)||"").replace(/\s*\(.*?\)/g,"").replace(/[.,]/g," ").replace(/\s+(Inc|Corp|Corporation|Co|Company|Group|Holdings?|plc|PLC|Ltd|AG|SE|NV|N\.V|SA|The)\b/g,"").replace(/^The\s+/,"").trim();
+  if(n.length<4||n===String(sym))return null;
+  return new RegExp("(^|[^A-Za-zÄÖÜäöüß])"+n.replace(/[.*+?^${}()|[\]\\]/g,"\\$&").replace(/\s+/g,"\\s+")+"($|[^A-Za-zÄÖÜäöüß])");
+}
 function artFor(sym){
   if(!NEWS.length)return null;var i,x,u=String(sym).toUpperCase();
   for(i=0;i<NEWS.length;i++){x=NEWS[i];if(x.sym&&x.sym.toUpperCase()===u)return x}
-  var w=String(nm(sym)||"").toLowerCase().split(/[\s,.]+/)[0];
-  if(w.length>=5&&!GENERIC[w])for(i=0;i<NEWS.length;i++){x=NEWS[i];if(x.title.toLowerCase().indexOf(w)>-1)return x}
+  var re=nameRe(sym);if(!re)return null;
+  for(i=0;i<NEWS.length;i++){x=NEWS[i];if(!x.sym&&re.test(x.title))return x}
   return null}
 function artIcon(sym){var a=artFor(sym);if(!a)return"";return '<a class="ek-art" href="../news/'+esc(a.slug)+'/" title="Dazu gibt es einen Artikel in den News: '+esc(a.title)+'" aria-label="Artikel in den News: '+esc(a.title)+'"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="5" cy="19" r="2.6"/><path d="M3 9.5v3.2a8.3 8.3 0 0 1 8.3 8.3h3.2A11.5 11.5 0 0 0 3 9.5z"/><path d="M3 3v3.2A14.8 14.8 0 0 1 17.8 21H21A18 18 0 0 0 3 3z"/></svg></a>'}
 var APPN={},IR={};
@@ -211,7 +219,8 @@ async function details(item){
 }
 function render(){renderDays();renderList();$("clear").hidden=!(sel||q)}
 $("days").onclick=function(e){var b=e.target.closest(".ek-day");if(!b)return;sel=sel===b.dataset.k?null:b.dataset.k;render()};
-$("scope").onchange=function(){scope=this.value;render()};
+function setScope(v){scope=v;Array.prototype.forEach.call($("scope").children,function(b){b.setAttribute("aria-pressed",b.dataset.v===v)})}
+$("scope").onclick=function(e){var b=e.target.closest(".ek-day");if(!b)return;setScope(b.dataset.v);render()};
 $("q").oninput=function(){q=this.value.trim().toLowerCase();render()};
 $("clear").onclick=function(){sel=null;q="";$("q").value="";render()};
 $("list").onclick=function(e){if(e.target.closest("a"))return;var r=e.target.closest(".ek-row");if(!r||r.classList.contains("stat"))return;var it=r.parentNode,o=it.classList.toggle("open");r.setAttribute("aria-expanded",o);if(o&&!it.dataset.loaded){it.dataset.loaded=1;details(it).catch(function(x){it.querySelector(".ek-body").innerHTML='<p class="ek-sub">Details nicht ladbar: '+esc(x.message)+"</p>"})}};
@@ -226,7 +235,7 @@ $("list").onclick=function(e){if(e.target.closest("a"))return;var r=e.target.clo
         if(it.eps!=null)r.epsActual=it.eps;if(it.revenue!=null)r.revenueActual=it.revenue;r._own=1})})}catch(e6){}
     try{var sj=await api("company-screener",{marketCapMoreThan:1e10,isActivelyTrading:"true",limit:1500});(Array.isArray(sj)?sj:[]).forEach(function(x){if(x&&x.symbol)BIG[x.symbol]={n:x.companyName||x.symbol,m:x.marketCap||0}})}catch(e2){}
     if(!Object.keys(BIG).length)scope="mp";
-    $("scope").value=scope;
+    setScope(scope);
     $("upd").textContent=CAL.length+" Termine geladen"}
   catch(e){$("list").innerHTML='<div class="ek-empty">Termine konnten nicht geladen werden: '+esc(e.message)+(/40[23]/.test(e.message)?" – Der Earnings-Kalender ist in deinem FMP-Tarif möglicherweise nicht enthalten.":"")+"</div>"}
   try{var td=key(new Date()),TJ=[];
