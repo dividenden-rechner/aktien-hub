@@ -421,10 +421,10 @@
 
   /** Förderung Altersvorsorgedepot (Stand Oktober 2026, Altersvorsorgereformgesetz, ab 2027). */
   function zulage(C, kinderAktiv) {
-    // Mindestbeitrag 120 Euro im Jahr. Kinderzulage: 1 Euro je Euro, höchstens 300 Euro je kindergeldberechtigtem Kind (Anbieterangabe: 300 Euro Eigenbeitrag je Kind nötig).
+    // Mindestbeitrag 120 Euro im Jahr. Kinderzulage: 1 Euro je Euro, höchstens 300 Euro je kindergeldberechtigtem Kind; derselbe Eigenbeitrag zählt für alle Kinder.
     if (C < 120) return { grund: 0, kind: 0 };
     var grund = 0.5 * Math.min(C, 360) + 0.25 * pos(Math.min(C, 1800) - 360);
-    var kind = Math.min(C, 300 * (kinderAktiv || 0));
+    var kind = (kinderAktiv || 0) * Math.min(C, 300);
     return { grund: grund, kind: kind };
   }
   function pension(W, rAnnual, N) { // monatliche Entnahme, nachschüssig, Kapital am Ende leer
