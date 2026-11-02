@@ -1,0 +1,341 @@
+{
+ "updated": "2026-11-02",
+ "hinweis": "Offizielle IR-Seiten der Unternehmen",
+ "firmen": {
+  "VRTX": {
+   "name": "Vertex Pharmaceuticals",
+   "url": "https://investors.vrtx.com/",
+   "verified": true
+  },
+  "AAPL": {
+   "name": "Apple",
+   "url": "https://investor.apple.com/",
+   "verified": true
+  },
+  "PLTR": {
+   "name": "Palantir Technologies",
+   "url": "https://investors.palantir.com/",
+   "verified": true
+  },
+  "O": {
+   "name": "Realty Income",
+   "url": "https://www.realtyincome.com/investors",
+   "verified": true
+  },
+  "BAYN.DE": {
+   "name": "Bayer",
+   "url": "https://www.bayer.com/en/investors-overview",
+   "verified": true
+  },
+  "DD": {
+   "name": "DuPont de Nemours",
+   "url": "https://www.investors.dupont.com/",
+   "verified": true
+  },
+  "KDP": {
+   "name": "Keurig Dr Pepper",
+   "url": "https://investors.keurigdrpepper.com/",
+   "verified": true
+  },
+  "ADM": {
+   "name": "Archer Daniels Midland",
+   "url": "https://investors.adm.com/",
+   "verified": true
+  },
+  "RACE": {
+   "name": "Ferrari",
+   "url": "https://corporate.ferrari.com/en/investors",
+   "verified": true
+  },
+  "PFE": {
+   "name": "Pfizer",
+   "url": "https://investors.pfizer.com/",
+   "verified": true
+  },
+  "CE": {
+   "name": "Celanese",
+   "url": "https://investors.celanese.com/",
+   "verified": true
+  },
+  "CSWC": {
+   "name": "Capital Southwest",
+   "url": "https://ir.capitalsouthwest.com/",
+   "verified": true
+  },
+  "MPC": {
+   "name": "Marathon Petroleum",
+   "url": "https://www.marathonpetroleum.com/Investors/",
+   "verified": true
+  },
+  "MP": {
+   "name": "MP Materials",
+   "url": "https://investors.mpmaterials.com/",
+   "verified": true
+  },
+  "LRCX": {
+   "name": "Lam Research",
+   "url": "https://investor.lamresearch.com/",
+   "verified": true
+  },
+  "AMGN": {
+   "name": "Amgen",
+   "url": "https://investors.amgen.com/",
+   "verified": true
+  },
+  "AMD": {
+   "name": "AMD",
+   "url": "https://ir.amd.com/",
+   "verified": true
+  },
+  "BMW.DE": {
+   "name": "BMW Group",
+   "url": "https://www.bmwgroup.com/en/investor-relations.html",
+   "verified": true
+  },
+  "AD.AS": {
+   "name": "Koninklijke Ahold Delhaize",
+   "url": "https://www.aholddelhaize.com/investors/",
+   "verified": true
+  },
+  "NVO": {
+   "name": "Novo Nordisk",
+   "url": "https://www.novonordisk.com/investors.html",
+   "verified": true
+  },
+  "KHC": {
+   "name": "The Kraft Heinz Company",
+   "url": "https://ir.kraftheinzcompany.com/",
+   "verified": true
+  },
+  "FRE.DE": {
+   "name": "Fresenius",
+   "url": "https://www.fresenius.com/overview",
+   "verified": true
+  },
+  "ULVR.L": {
+   "name": "Unilever",
+   "url": "https://www.unilever.com/investors/",
+   "verified": true
+  },
+  "MCD": {
+   "name": "McDonald's",
+   "url": "https://corporate.mcdonalds.com/corpmcd/investors.html",
+   "verified": true
+  },
+  "SSSS": {
+   "name": "Sixth Street Specialty Lending",
+   "url": "https://www.sixthstreetspecialtylending.com/",
+   "verified": false
+  },
+  "GOOD": {
+   "name": "Gladstone Commercial",
+   "url": "https://www.gladstonecommercial.com/investors",
+   "verified": true
+  },
+  "TRIN": {
+   "name": "Trinity Capital",
+   "url": "https://ir.trinitycapital.com/",
+   "verified": true
+  },
+  "RVMD": {
+   "name": "Revolution Medicines",
+   "url": "https://ir.revmed.com/",
+   "verified": true
+  },
+  "QCOM": {
+   "name": "Qualcomm",
+   "url": "https://investor.qualcomm.com/",
+   "verified": true
+  },
+  "MELI": {
+   "name": "MercadoLibre",
+   "url": "https://investor.mercadolibre.com/",
+   "verified": true
+  },
+  "D05.SI": {
+   "name": "DBS Group",
+   "url": "https://www.dbs.com/investors/default.page",
+   "verified": true
+  },
+  "SONY": {
+   "name": "Sony Group",
+   "url": "https://www.sony.com/en/SonyInfo/IR/",
+   "verified": false
+  },
+  "CBK.DE": {
+   "name": "Commerzbank",
+   "url": "https://investor-relations.commerzbank.com/",
+   "verified": true
+  },
+  "DGE.L": {
+   "name": "Diageo",
+   "url": "https://www.diageo.com/en/investors",
+   "verified": true
+  },
+  "MAERSK-B.CO": {
+   "name": "A.P. Moller - Maersk",
+   "url": "https://investor.maersk.com/",
+   "verified": true
+  },
+  "KMB": {
+   "name": "Kimberly-Clark",
+   "url": "https://www.investor.kimberly-clark.com/",
+   "verified": true
+  },
+  "RHM.DE": {
+   "name": "Rheinmetall",
+   "url": "https://ir.rheinmetall.com/",
+   "verified": true
+  },
+  "DTE.DE": {
+   "name": "Deutsche Telekom",
+   "url": "https://www.telekom.com/en/investor-relations",
+   "verified": true
+  },
+  "APD": {
+   "name": "Air Products and Chemicals",
+   "url": "https://investors.airproducts.com/",
+   "verified": true
+  },
+  "WFC": {
+   "name": "Wells Fargo",
+   "url": "https://www.wellsfargo.com/about/investor-relations/",
+   "verified": true
+  },
+  "CG": {
+   "name": "The Carlyle Group",
+   "url": "https://ir.carlyle.com/",
+   "verified": true
+  },
+  "IRM": {
+   "name": "Iron Mountain",
+   "url": "https://investors.ironmountain.com/",
+   "verified": true
+  },
+  "JPM": {
+   "name": "JPMorgan Chase",
+   "url": "https://www.jpmorganchase.com/ir",
+   "verified": true
+  },
+  "NTR": {
+   "name": "Nutrien",
+   "url": "https://www.nutrien.com/investors",
+   "verified": true
+  },
+  "NXST": {
+   "name": "Nexstar Media Group",
+   "url": "https://www.nexstar.tv/investor-relations/",
+   "verified": true
+  },
+  "OBDC": {
+   "name": "Blue Owl Capital Corporation",
+   "url": "https://www.blueowlcapitalcorporation.com/investors",
+   "verified": true
+  },
+  "PAAS": {
+   "name": "Pan American Silver",
+   "url": "https://panamericansilver.com/invest/",
+   "verified": true
+  },
+  "ARCT": {
+   "name": "Arcturus Therapeutics",
+   "url": "https://ir.arcturusrx.com/",
+   "verified": true
+  },
+  "MCHP": {
+   "name": "Microchip Technology",
+   "url": "https://ir.microchip.com/",
+   "verified": true
+  },
+  "SPG": {
+   "name": "Simon Property Group",
+   "url": "https://investors.simon.com/investor-relations/",
+   "verified": true
+  },
+  "BAC": {
+   "name": "Bank of America",
+   "url": "https://investor.bankofamerica.com/",
+   "verified": true
+  },
+  "8031.T": {
+   "name": "Mitsui & Co",
+   "url": "https://www.mitsui.com/jp/en/ir/index.html",
+   "verified": true
+  },
+  "7011.T": {
+   "name": "Mitsubishi Heavy Industries",
+   "url": "https://www.mhi.com/finance",
+   "verified": true
+  },
+  "ENB": {
+   "name": "Enbridge",
+   "url": "https://www.enbridge.com/investment-center",
+   "verified": true
+  },
+  "EOG": {
+   "name": "EOG Resources",
+   "url": "https://investors.eogresources.com/",
+   "verified": true
+  },
+  "MAIN": {
+   "name": "Main Street Capital",
+   "url": "https://www.mainstcapital.com/investors",
+   "verified": true
+  },
+  "HNR1.DE": {
+   "name": "Hannover Rueck",
+   "url": "https://www.hannover-re.com/en/investors/",
+   "verified": true
+  },
+  "HSBA.L": {
+   "name": "HSBC Holdings",
+   "url": "https://www.hsbc.com/investors",
+   "verified": true
+  },
+  "V": {
+   "name": "Visa",
+   "url": "https://investor.visa.com/",
+   "verified": true
+  },
+  "KKR": {
+   "name": "KKR & Co",
+   "url": "https://ir.kkr.com/",
+   "verified": true
+  },
+  "GSK": {
+   "name": "GSK plc",
+   "url": "https://www.gsk.com/en-gb/investors/",
+   "verified": true
+  },
+  "MA": {
+   "name": "Mastercard",
+   "url": "https://investor.mastercard.com/",
+   "verified": true
+  },
+  "B": {
+   "name": "Barrick Mining",
+   "url": "https://www.barrick.com/English/investors/default.aspx",
+   "verified": true
+  },
+  "MS": {
+   "name": "Morgan Stanley",
+   "url": "https://www.morganstanley.com/about-us-ir",
+   "verified": true
+  },
+  "DRO.AX": {
+   "name": "DroneShield",
+   "url": "https://www.droneshield.com/investor-relations",
+   "verified": true
+  },
+  "BP": {
+   "name": "BP plc",
+   "url": "https://www.bp.com/investors",
+   "verified": true
+  },
+  "VOD.L": {
+   "name": "Vodafone Group",
+   "url": "https://www.vodafone.com/investors",
+   "verified": true
+  }
+ }
+}

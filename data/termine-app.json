@@ -1,0 +1,591 @@
+{
+ "updated": "2026-11-02",
+ "quelle": "Terminliste aus Screenshots (Zeiten in deutscher Zeit)",
+ "hinweis": "typ q = Quartalszahlen, k = Konferenz oder sonstiger Termin. Der 4. und 9. November sind in den Screenshots nicht vollstaendig sichtbar.",
+ "items": [
+  {
+   "datum": "2026-11-02",
+   "zeit": "22:30",
+   "sym": "VRTX",
+   "name": "Vertex Pharmaceuticals",
+   "was": "Q3 2026",
+   "typ": "q"
+  },
+  {
+   "datum": "2026-11-02",
+   "zeit": "23:00",
+   "sym": "AAPL",
+   "name": "Apple",
+   "was": "Q4 2026",
+   "typ": "q"
+  },
+  {
+   "datum": "2026-11-02",
+   "zeit": "23:00",
+   "sym": "PLTR",
+   "name": "Palantir Technologies",
+   "was": "Q3 2026",
+   "typ": "q"
+  },
+  {
+   "datum": "2026-11-02",
+   "zeit": "23:00",
+   "sym": "O",
+   "name": "Realty Income",
+   "was": "Q3 2026",
+   "typ": "q"
+  },
+  {
+   "datum": "2026-11-03",
+   "zeit": "10:00",
+   "sym": "BAYN.DE",
+   "name": "Bayer",
+   "was": "Q3 2026 (Medien)",
+   "typ": "k"
+  },
+  {
+   "datum": "2026-11-03",
+   "zeit": "14:00",
+   "sym": "DD",
+   "name": "DuPont de Nemours",
+   "was": "Q3 2026",
+   "typ": "q"
+  },
+  {
+   "datum": "2026-11-03",
+   "zeit": "14:00",
+   "sym": "KDP",
+   "name": "Keurig Dr Pepper",
+   "was": "Q3 2026",
+   "typ": "q"
+  },
+  {
+   "datum": "2026-11-03",
+   "zeit": "14:00",
+   "sym": "BAYN.DE",
+   "name": "Bayer",
+   "was": "Q3 2026",
+   "typ": "q"
+  },
+  {
+   "datum": "2026-11-03",
+   "zeit": "14:30",
+   "sym": "ADM",
+   "name": "Archer Daniels Midland",
+   "was": "Q3 2026",
+   "typ": "q"
+  },
+  {
+   "datum": "2026-11-03",
+   "zeit": "15:00",
+   "sym": "RACE",
+   "name": "Ferrari",
+   "was": "Q3 2026",
+   "typ": "q"
+  },
+  {
+   "datum": "2026-11-03",
+   "zeit": "16:00",
+   "sym": "PFE",
+   "name": "Pfizer",
+   "was": "Q3 2026",
+   "typ": "q"
+  },
+  {
+   "datum": "2026-11-03",
+   "zeit": "16:00",
+   "sym": "CE",
+   "name": "Celanese",
+   "was": "Q3 2026",
+   "typ": "q"
+  },
+  {
+   "datum": "2026-11-03",
+   "zeit": "17:00",
+   "sym": "CSWC",
+   "name": "Capital Southwest",
+   "was": "Q2 2027",
+   "typ": "q"
+  },
+  {
+   "datum": "2026-11-03",
+   "zeit": "17:00",
+   "sym": "MPC",
+   "name": "Marathon Petroleum",
+   "was": "Q3 2026",
+   "typ": "q"
+  },
+  {
+   "datum": "2026-11-03",
+   "zeit": "17:30",
+   "sym": "MP",
+   "name": "MP Materials",
+   "was": "50th Annual Automotive Symposium",
+   "typ": "k"
+  },
+  {
+   "datum": "2026-11-03",
+   "zeit": "18:30",
+   "sym": "LRCX",
+   "name": "Lam Research",
+   "was": "Hauptversammlung 2026",
+   "typ": "k"
+  },
+  {
+   "datum": "2026-11-03",
+   "zeit": "22:30",
+   "sym": "AMGN",
+   "name": "Amgen",
+   "was": "Q3 2026",
+   "typ": "q"
+  },
+  {
+   "datum": "2026-11-03",
+   "zeit": "23:00",
+   "sym": "AMD",
+   "name": "AMD",
+   "was": "Q3 2026",
+   "typ": "q"
+  },
+  {
+   "datum": "2026-11-04",
+   "zeit": "09:05",
+   "sym": "BMW.DE",
+   "name": "BMW Group",
+   "was": "Q3 2026",
+   "typ": "q"
+  },
+  {
+   "datum": "2026-11-04",
+   "zeit": "10:00",
+   "sym": "AD.AS",
+   "name": "Koninklijke Ahold Delhaize",
+   "was": "Q3 2026",
+   "typ": "q"
+  },
+  {
+   "datum": "2026-11-04",
+   "zeit": "10:15",
+   "sym": "BMW.DE",
+   "name": "BMW Group",
+   "was": "Q3 2026 (Fragerunde)",
+   "typ": "k"
+  },
+  {
+   "datum": "2026-11-04",
+   "zeit": "13:00",
+   "sym": "NVO",
+   "name": "Novo Nordisk",
+   "was": "Q3 2026",
+   "typ": "q"
+  },
+  {
+   "datum": "2026-11-04",
+   "zeit": "",
+   "sym": "KHC",
+   "name": "The Kraft Heinz Company",
+   "was": "Q3 2026, vorbereitete Aussagen",
+   "typ": "k"
+  },
+  {
+   "datum": "2026-11-04",
+   "zeit": "13:30",
+   "sym": "FRE.DE",
+   "name": "Fresenius",
+   "was": "Q3 2026",
+   "typ": "q"
+  },
+  {
+   "datum": "2026-11-04",
+   "zeit": "14:30",
+   "sym": "ULVR.L",
+   "name": "Unilever",
+   "was": "Kapitalmarkttag 2026",
+   "typ": "k"
+  },
+  {
+   "datum": "2026-11-04",
+   "zeit": "14:30",
+   "sym": "MCD",
+   "name": "McDonald's",
+   "was": "Q3 2026",
+   "typ": "q"
+  },
+  {
+   "datum": "2026-11-04",
+   "zeit": "14:30",
+   "sym": "SSSS",
+   "name": "Sixth Street Specialty Lending",
+   "was": "Q3 2026",
+   "typ": "q"
+  },
+  {
+   "datum": "2026-11-04",
+   "zeit": "14:30",
+   "sym": "GOOD",
+   "name": "Gladstone Commercial",
+   "was": "Q3 2026",
+   "typ": "q"
+  },
+  {
+   "datum": "2026-11-04",
+   "zeit": "15:00",
+   "sym": "KHC",
+   "name": "The Kraft Heinz Company",
+   "was": "Q3 2026 (Fragerunde)",
+   "typ": "k"
+  },
+  {
+   "datum": "2026-11-04",
+   "zeit": "18:00",
+   "sym": "TRIN",
+   "name": "Trinity Capital",
+   "was": "Q3 2026",
+   "typ": "q"
+  },
+  {
+   "datum": "2026-11-04",
+   "zeit": "22:30",
+   "sym": "RVMD",
+   "name": "Revolution Medicines",
+   "was": "Q3 2026",
+   "typ": "q"
+  },
+  {
+   "datum": "2026-11-04",
+   "zeit": "22:45",
+   "sym": "QCOM",
+   "name": "Qualcomm",
+   "was": "Q4 2026",
+   "typ": "q"
+  },
+  {
+   "datum": "2026-11-04",
+   "zeit": "23:00",
+   "sym": "MELI",
+   "name": "MercadoLibre",
+   "was": "Q3 2026",
+   "typ": "q"
+  },
+  {
+   "datum": "2026-11-05",
+   "zeit": "03:30",
+   "sym": "D05.SI",
+   "name": "DBS Group",
+   "was": "Q3 2026",
+   "typ": "q"
+  },
+  {
+   "datum": "2026-11-05",
+   "zeit": "04:30",
+   "sym": "D05.SI",
+   "name": "DBS Group",
+   "was": "Q3 2026 (Fragerunde)",
+   "typ": "k"
+  },
+  {
+   "datum": "2026-11-05",
+   "zeit": "08:30",
+   "sym": "SONY",
+   "name": "Sony Group",
+   "was": "Q2 2027",
+   "typ": "q"
+  },
+  {
+   "datum": "2026-11-05",
+   "zeit": "09:00",
+   "sym": "CBK.DE",
+   "name": "Commerzbank",
+   "was": "Q3 2026",
+   "typ": "q"
+  },
+  {
+   "datum": "2026-11-05",
+   "zeit": "",
+   "sym": "DGE.L",
+   "name": "Diageo",
+   "was": "Q1 2027",
+   "typ": "q"
+  },
+  {
+   "datum": "2026-11-05",
+   "zeit": "11:00",
+   "sym": "MAERSK-B.CO",
+   "name": "Maersk",
+   "was": "Q3 2026",
+   "typ": "q"
+  },
+  {
+   "datum": "2026-11-05",
+   "zeit": "",
+   "sym": "KMB",
+   "name": "Kimberly-Clark",
+   "was": "Q3 2026, vorbereitete Aussagen",
+   "typ": "k"
+  },
+  {
+   "datum": "2026-11-05",
+   "zeit": "14:00",
+   "sym": "RHM.DE",
+   "name": "Rheinmetall",
+   "was": "Q3 2026",
+   "typ": "q"
+  },
+  {
+   "datum": "2026-11-05",
+   "zeit": "14:00",
+   "sym": "DTE.DE",
+   "name": "Deutsche Telekom",
+   "was": "Q3 2026",
+   "typ": "q"
+  },
+  {
+   "datum": "2026-11-05",
+   "zeit": "14:00",
+   "sym": "APD",
+   "name": "Air Products and Chemicals",
+   "was": "Q4 2026",
+   "typ": "q"
+  },
+  {
+   "datum": "2026-11-05",
+   "zeit": "14:00",
+   "sym": "KMB",
+   "name": "Kimberly-Clark",
+   "was": "Q3 2026 (Fragerunde)",
+   "typ": "k"
+  },
+  {
+   "datum": "2026-11-05",
+   "zeit": "14:05",
+   "sym": "WFC",
+   "name": "Wells Fargo",
+   "was": "BancAnalysts Association of Boston (Konferenz)",
+   "typ": "k"
+  },
+  {
+   "datum": "2026-11-05",
+   "zeit": "14:30",
+   "sym": "CG",
+   "name": "The Carlyle Group",
+   "was": "Q3 2026",
+   "typ": "q"
+  },
+  {
+   "datum": "2026-11-05",
+   "zeit": "14:30",
+   "sym": "IRM",
+   "name": "Iron Mountain",
+   "was": "Q3 2026",
+   "typ": "q"
+  },
+  {
+   "datum": "2026-11-05",
+   "zeit": "14:50",
+   "sym": "JPM",
+   "name": "JPMorgan Chase",
+   "was": "BancAnalysts Association of Boston (Konferenz)",
+   "typ": "k"
+  },
+  {
+   "datum": "2026-11-05",
+   "zeit": "16:00",
+   "sym": "NTR",
+   "name": "Nutrien",
+   "was": "Q3 2026",
+   "typ": "q"
+  },
+  {
+   "datum": "2026-11-05",
+   "zeit": "16:00",
+   "sym": "NXST",
+   "name": "Nexstar Media Group",
+   "was": "Q3 2026",
+   "typ": "q"
+  },
+  {
+   "datum": "2026-11-05",
+   "zeit": "16:00",
+   "sym": "OBDC",
+   "name": "Blue Owl Capital Corporation",
+   "was": "Q3 2026",
+   "typ": "q"
+  },
+  {
+   "datum": "2026-11-05",
+   "zeit": "16:00",
+   "sym": "PAAS",
+   "name": "Pan American Silver",
+   "was": "Q3 2026",
+   "typ": "q"
+  },
+  {
+   "datum": "2026-11-05",
+   "zeit": "22:30",
+   "sym": "ARCT",
+   "name": "Arcturus Therapeutics",
+   "was": "Q3 2026",
+   "typ": "q"
+  },
+  {
+   "datum": "2026-11-05",
+   "zeit": "23:00",
+   "sym": "MP",
+   "name": "MP Materials",
+   "was": "Q3 2026",
+   "typ": "q"
+  },
+  {
+   "datum": "2026-11-05",
+   "zeit": "23:00",
+   "sym": "MCHP",
+   "name": "Microchip",
+   "was": "Q2 2027",
+   "typ": "q"
+  },
+  {
+   "datum": "2026-11-05",
+   "zeit": "23:00",
+   "sym": "SPG",
+   "name": "Simon Property Group",
+   "was": "Q3 2026",
+   "typ": "q"
+  },
+  {
+   "datum": "2026-11-05",
+   "zeit": "23:00",
+   "sym": "BAC",
+   "name": "Bank of America",
+   "was": "BancAnalysts Association of Boston (Konferenz)",
+   "typ": "k"
+  },
+  {
+   "datum": "2026-11-06",
+   "zeit": "02:00",
+   "sym": "8031.T",
+   "name": "Mitsui & Co",
+   "was": "Q2 2027",
+   "typ": "q"
+  },
+  {
+   "datum": "2026-11-06",
+   "zeit": "07:30",
+   "sym": "7011.T",
+   "name": "Mitsubishi Heavy Industries",
+   "was": "Q2 2027",
+   "typ": "q"
+  },
+  {
+   "datum": "2026-11-06",
+   "zeit": "15:00",
+   "sym": "ENB",
+   "name": "Enbridge",
+   "was": "Q3 2026",
+   "typ": "q"
+  },
+  {
+   "datum": "2026-11-06",
+   "zeit": "16:00",
+   "sym": "EOG",
+   "name": "EOG Resources",
+   "was": "Q3 2026",
+   "typ": "q"
+  },
+  {
+   "datum": "2026-11-06",
+   "zeit": "16:00",
+   "sym": "MAIN",
+   "name": "Main Street Capital",
+   "was": "Q3 2026",
+   "typ": "q"
+  },
+  {
+   "datum": "2026-11-09",
+   "zeit": "",
+   "sym": "HNR1.DE",
+   "name": "Hannover Rück",
+   "was": "Q3 2026",
+   "typ": "q"
+  },
+  {
+   "datum": "2026-11-09",
+   "zeit": "09:00",
+   "sym": "HSBA.L",
+   "name": "HSBC",
+   "was": "Investorenupdate",
+   "typ": "k"
+  },
+  {
+   "datum": "2026-11-09",
+   "zeit": "15:00",
+   "sym": "V",
+   "name": "Visa",
+   "was": "Citi 15th Annual FinTech Conference",
+   "typ": "k"
+  },
+  {
+   "datum": "2026-11-09",
+   "zeit": "15:30",
+   "sym": "CG",
+   "name": "The Carlyle Group",
+   "was": "BMO Capital Markets 2026 Financials Conference",
+   "typ": "k"
+  },
+  {
+   "datum": "2026-11-09",
+   "zeit": "16:00",
+   "sym": "KKR",
+   "name": "KKR",
+   "was": "Q3 2026",
+   "typ": "q"
+  },
+  {
+   "datum": "2026-11-09",
+   "zeit": "16:00",
+   "sym": "GSK",
+   "name": "GSK",
+   "was": "3rd Annual Guggenheim Healthcare Innovations Conference",
+   "typ": "k"
+  },
+  {
+   "datum": "2026-11-09",
+   "zeit": "16:30",
+   "sym": "MA",
+   "name": "Mastercard",
+   "was": "Citi 15th Annual FinTech Conference",
+   "typ": "k"
+  },
+  {
+   "datum": "2026-11-09",
+   "zeit": "17:00",
+   "sym": "B",
+   "name": "Barrick Mining",
+   "was": "Q3 2026",
+   "typ": "q"
+  },
+  {
+   "datum": "2026-11-09",
+   "zeit": "18:10",
+   "sym": "MP",
+   "name": "MP Materials",
+   "was": "2026 D.A. Davidson Critical Minerals Conference",
+   "typ": "k"
+  },
+  {
+   "datum": "2026-11-09",
+   "zeit": "20:00",
+   "sym": "MS",
+   "name": "Morgan Stanley",
+   "was": "BMO Capital Markets 2026 Financials Conference",
+   "typ": "k"
+  },
+  {
+   "datum": "2026-11-09",
+   "zeit": "",
+   "sym": "DRO.AX",
+   "name": "DroneShield",
+   "was": "Q3 2026",
+   "typ": "q"
+  }
+ ]
+}

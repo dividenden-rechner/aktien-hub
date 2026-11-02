@@ -21,22 +21,20 @@
 <link rel="stylesheet" href="../assets/navigation.css?v=20261025a">
 <style>
 [hidden]{display:none!important}
-.ek-days{display:flex;gap:10px;overflow-x:auto;padding:4px 2px 12px;margin:0 0 12px}
-.ek-day{flex:0 0 auto;width:104px;border:1px solid #e2e8f0;background:#fff;border-radius:16px;padding:10px 8px;text-align:center;cursor:pointer;font:inherit;color:#0f172a}
-.ek-day:hover{border-color:#93c5fd}.ek-day[aria-pressed=true]{background:#eff6ff;border-color:#2563eb}.ek-day.today .ek-n{color:#2563eb}.ek-day.past{opacity:.75}
-.ek-n{font-size:1.5rem;font-weight:700;line-height:1.1}.ek-l{font-size:.78rem;color:#64748b;margin-bottom:6px}
-.ek-c{display:inline-block;min-width:24px;padding:1px 7px;border-radius:8px;background:#f1f5f9;font-size:.75rem;color:#334155;margin-bottom:8px}.ek-c.zero{opacity:.45}
-.ek-lg{display:flex;justify-content:center;min-height:28px}.ek-lg .ek-logo{margin-left:-8px;border:2px solid #fff}.ek-lg .ek-logo:first-child{margin-left:0}
+.ek-days{display:flex;gap:18px;overflow-x:auto;margin:10px 0 14px;border-bottom:1px solid #dfe5ea;white-space:nowrap;scrollbar-width:none}.ek-days::-webkit-scrollbar{display:none}
+.ek-day{flex:0 0 auto;display:inline-flex;align-items:baseline;gap:6px;border:0;border-bottom:2px solid transparent;margin-bottom:-1px;background:none;border-radius:0;padding:6px 0 8px;cursor:pointer;font:inherit;font-size:13px;font-weight:500;color:#8a97a3;text-align:left}
+.ek-day:hover{color:#5b6874}.ek-day[aria-pressed=true]{color:#33414d;font-weight:600;border-bottom-color:#8a97a3}
+.ek-day .ek-n{font-size:inherit;font-weight:inherit}.ek-day .ek-l{font-size:inherit;color:inherit;margin:0}.ek-day .ek-c{background:none;padding:0;min-width:0;margin:0;font-size:12px;color:inherit;opacity:.8}.ek-day .ek-c.zero{opacity:.45}.ek-day .ek-lg{display:none}.ek-day.past{opacity:.7}
 .ek-logo{width:28px;height:28px;border-radius:8px;object-fit:contain;flex:0 0 auto;display:inline-flex;align-items:center;justify-content:center;font-weight:700;color:#475569;background:#f1f5f9}
 img.ek-logo{background:#fff}
 .ek-bar{display:flex;gap:10px;flex-wrap:wrap;align-items:center;margin:0 0 12px}
 .ek-bar select,.ek-bar input,.ek-bar button{padding:8px 12px;border:1px solid #cbd5e1;border-radius:10px;font:inherit;background:#fff}
 .ek-bar select{max-width:100%}.ek-bar input{flex:1 1 180px}.ek-bar button{cursor:pointer}
-.ek-grp{margin:18px 0 6px;font-weight:700;color:#334155}
-.ek-list{border:1px solid #e2e8f0;border-radius:16px;background:#fff;overflow:hidden}
-.ek-item{border-top:1px solid #e2e8f0}.ek-item:first-child{border-top:0}
-.ek-row{display:flex;gap:12px;width:100%;text-align:left;padding:12px 14px;background:none;border:0;font:inherit;color:inherit;cursor:pointer;align-items:center}
-.ek-row:hover{background:#f8fafc}
+.ek-grp{margin:22px 0 6px;font-weight:600;font-size:14px;color:#33414d}
+.ek-list{border-top:1px solid #dfe5ea;background:none}
+.ek-item{border-top:1px solid #eef1f4}.ek-item:first-child{border-top:0}
+.ek-row{display:flex;gap:12px;width:100%;text-align:left;padding:12px 0;background:none;border:0;font:inherit;color:inherit;cursor:pointer;align-items:center}
+.ek-row:hover{background:none}.ek-row:hover .ek-nm{text-decoration:none}
 .ek-row .ek-logo{width:40px;height:40px;border-radius:11px}
 .ek-art{flex:0 0 auto;display:inline-flex;align-items:center;justify-content:center;width:34px;height:34px;border-radius:50%;color:#1a7a45;background:#e8f5ed;text-decoration:none;margin:0 4px}.ek-art:hover,.ek-art:focus-visible{background:#1a7a45;color:#fff}.ek-art svg{width:18px;height:18px;fill:currentColor}@media(max-width:640px){.ek-art{width:30px;height:30px;margin:0}}
 .ek-m{flex:1;min-width:0}.ek-nm{font-weight:600}.ek-nm a{color:inherit;text-decoration:none}.ek-nm a:hover{text-decoration:underline}
@@ -47,11 +45,11 @@ img.ek-logo{background:#fff}
 .ek-badge{display:inline-block;padding:1px 8px;border-radius:8px;font-size:.72rem;background:#f1f5f9;color:#475569;margin-left:6px}
 .ek-badge.done{background:#dcfce7;color:#166534}.ek-badge.up{background:#16a34a;color:#fff}.ek-badge.dn{background:#dc2626;color:#fff}.ek-badge.eq,.ek-badge.mix{background:#e2e8f0;color:#334155}.ek-nm{display:block;line-height:1.3}.ek-tk{color:#64748b;font-weight:400;font-size:.85rem;margin-left:4px}.ek-pills{display:flex;flex-direction:column;align-items:flex-start;gap:4px;margin-top:6px}.ek-pills .ek-badge{margin-left:0}
 .pos{color:#15803d}.neg{color:#b91c1c}
-.ek-body{display:none;padding:2px 14px 16px 66px}.ek-item.open .ek-body{display:block}
+.ek-body{display:none;padding:2px 0 16px 52px}.ek-item.open .ek-body{display:block}
 .ek-body table{width:100%;max-width:560px;border-collapse:collapse;font-size:.92rem}.ek-body td,.ek-body th{padding:6px 8px;border-bottom:1px solid #e2e8f0;text-align:right}.ek-body th:first-child,.ek-body td:first-child{text-align:left}
 .ek-body .ek-go{display:inline-block;margin-top:10px}
-.ek-empty{padding:22px;color:#475569}
-@media(max-width:640px){.ek-fig{flex-direction:column;gap:6px;max-width:48%}.ek-fig div{min-width:0}.ek-body{padding-left:14px;padding-right:14px;overflow-x:auto}.ek-fig div{min-width:64px}.ek-row{gap:10px;padding:12px 10px}}
+.ek-empty{padding:22px 0;color:#475569}.ek-sub2{font-size:.85rem;color:#8a97a3;margin-top:2px}.ek-sub2 b{font-weight:500;color:#5b6874}.ek-sub2 .t-up{color:#15803d}.ek-sub2 .t-dn{color:#b91c1c}.ek-ir{color:#5b6874;text-decoration:underline;text-underline-offset:2px;white-space:nowrap}.ek-ir:hover{color:#33414d}.ek-row.stat{cursor:default}
+@media(max-width:640px){.ek-fig{flex-direction:column;gap:6px;max-width:48%}.ek-fig div{min-width:0}.ek-body{padding-left:14px;padding-right:14px;overflow-x:auto}.ek-fig div{min-width:64px}.ek-row{gap:10px;padding:12px 0}.ek-body{padding-left:0}}
 </style>
 <script>if(/[?&]embed=1/.test(location.search)){document.documentElement.className+=" embed";document.write('<base target="_top">')}</script>
 <style>html.embed #hub-global-header,html.embed .crumbs,html.embed h1,html.embed .lead,html.embed .site-footer{display:none!important}html.embed body{background:transparent}html.embed .wrap{padding-top:0;padding-bottom:8px}</style>
@@ -127,7 +125,10 @@ function artFor(sym){
   if(w.length>=5&&!GENERIC[w])for(i=0;i<NEWS.length;i++){x=NEWS[i];if(x.title.toLowerCase().indexOf(w)>-1)return x}
   return null}
 function artIcon(sym){var a=artFor(sym);if(!a)return"";return '<a class="ek-art" href="../news/'+esc(a.slug)+'/" title="Dazu gibt es einen Artikel in den News: '+esc(a.title)+'" aria-label="Artikel in den News: '+esc(a.title)+'"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="5" cy="19" r="2.6"/><path d="M3 9.5v3.2a8.3 8.3 0 0 1 8.3 8.3h3.2A11.5 11.5 0 0 0 3 9.5z"/><path d="M3 3v3.2A14.8 14.8 0 0 1 17.8 21H21A18 18 0 0 0 3 3z"/></svg></a>'}
-function nm(s){return MINE[s]||NAMES[s]||(BIG[s]&&BIG[s].n)||s}
+var APPN={},IR={};
+function nm(s){return MINE[s]||NAMES[s]||(BIG[s]&&BIG[s].n)||APPN[s]||s}
+function irUrl(s){var o=IR[s];return o&&o.url?o.url:""}
+function irLink(s){var u=irUrl(s);return u?'<a class="ek-ir" href="'+esc(u)+'" target="_blank" rel="noopener" title="Investor-Relations-Seite des Unternehmens">Investor Relations ↗</a>':""}
 function num(v,d){return v==null||isNaN(v)?"–":Number(v).toLocaleString("de-DE",{minimumFractionDigits:d==null?2:d,maximumFractionDigits:d==null?2:d})}
 function big(v){if(v==null||isNaN(v))return"–";var a=Math.abs(v);return a>=1e12?num(v/1e12)+" Bio.":a>=1e9?num(v/1e9)+" Mrd.":a>=1e6?num(v/1e6,0)+" Mio.":num(v,0)}
 function gp(v){return v==null||!isFinite(v)?'<span>–</span>':'<span class="'+(v>=0?"pos":"neg")+'">'+(v>0?"+":"")+num(v*100,1)+" %</span>"}
@@ -146,6 +147,7 @@ function bar(a,e,g){
 }
 function inScope(r){
   var s=r.symbol;
+  if(r._app){if(scope==="mine"&&!MINE[s])return false;if(q&&(s+" "+nm(s)+" "+(r.was||"")).toLowerCase().indexOf(q)<0)return false;return true}
   if(scope==="mine"&&!MINE[s])return false;
   if(scope==="mp"&&!(MINE[s]||NAMES[s]))return false;
   if(scope==="big"&&!(MINE[s]||NAMES[s]||BIG[s]))return false;
@@ -165,7 +167,7 @@ function renderDays(){
 }
 function fmtDay(k){return new Date(k+"T12:00:00").toLocaleDateString("de-DE",{weekday:"long",day:"numeric",month:"long"})}
 function renderList(){
-  var L=view().filter(function(r){return !sel||r.date===sel}).sort(function(a,b){return a.date<b.date?-1:a.date>b.date?1:(NAMES[a.symbol]||MINE[a.symbol]?0:1)-(NAMES[b.symbol]||MINE[b.symbol]?0:1)||((BIG[b.symbol]&&BIG[b.symbol].m)||0)-((BIG[a.symbol]&&BIG[a.symbol].m)||0)||a.symbol.localeCompare(b.symbol)}).slice(0,400);
+  var L=view().filter(function(r){return !sel||r.date===sel}).sort(function(a,b){return a.date<b.date?-1:a.date>b.date?1:(a.zeit||"99:99")<(b.zeit||"99:99")?-1:(a.zeit||"99:99")>(b.zeit||"99:99")?1:(NAMES[a.symbol]||MINE[a.symbol]?0:1)-(NAMES[b.symbol]||MINE[b.symbol]?0:1)||((BIG[b.symbol]&&BIG[b.symbol].m)||0)-((BIG[a.symbol]&&BIG[a.symbol].m)||0)||a.symbol.localeCompare(b.symbol)}).slice(0,400);
   if(!L.length){$("list").innerHTML='<div class="ek-empty">'+(CAL.length?"Keine Termine für diese Auswahl. Stelle oben „Alle US-Firmen“ ein oder wähle einen anderen Tag.":"Keine Daten geladen.")+"</div>";return}
   var h="",cur="";
   L.forEach(function(r,i){
@@ -175,7 +177,12 @@ function renderList(){
     var ge=done?gr(r.epsActual,r.epsEstimated):null,gv=done?gr(r.revenueActual,r.revenueEstimated):null,vd=verdict(ge,gv);
     var ee=done&&r.epsEstimated!=null?" · Erw. "+num(r.epsEstimated)+" "+gp(ge):"",ev=done&&r.revenueEstimated!=null?" · Erw. "+big(r.revenueEstimated)+" "+gp(gv):"";
     var be=done&&r.epsEstimated!=null?bar(r.epsActual,r.epsEstimated,ge):"",bv=done&&r.revenueEstimated!=null?bar(r.revenueActual,r.revenueEstimated,gv):"";
-    h+='<div class="ek-item" data-s="'+esc(s)+'" data-d="'+esc(r.date)+'"><button type="button" class="ek-row" aria-expanded="false">'+logo(s,nm(s))+'<span class="ek-m"><span class="ek-nm"><a href="../aktien-hub/?s='+encodeURIComponent(s)+'">'+esc(nm(s))+'</a>'+'</span><span class="ek-pills"><span class="ek-badge'+(done?" done":"")+'">'+(done?"berichtet":"erwartet")+'</span>'+(vd?'<span class="ek-badge '+vd[1]+'" title="Gewinn und Umsatz im Vergleich zur Analystenerwartung">'+vd[0]+'</span>':"")+'</span></span>'+artIcon(s)+'<span class="ek-fig"><div>'+num(eps)+'<span class="'+(done?"t-"+tone(ge):"")+'">Gewinn/Aktie'+(done?ee:" (Schätzung)")+'</span>'+be+'</div><div>'+big(rev)+'<span class="'+(done?"t-"+tone(gv):"")+'">Umsatz'+(done?ev:" (Schätzung)")+'</span>'+bv+'</div></span></button><div class="ek-body"><p class="ek-sub">Lade Details …</p></div></div>';
+    var subp=[];if(r.zeit)subp.push("<b>"+esc(r.zeit)+" Uhr</b>");subp.push(esc(r.was||"Quartalszahlen"));
+    if(!r._k)subp.push(done?"berichtet"+(vd?', <span class="t-'+vd[1]+'">'+vd[0]+"</span>":""):"erwartet");
+    var il=irLink(s);if(il)subp.push(il);
+    var sub='<div class="ek-sub2">'+subp.join(" · ")+"</div>";
+    if(r._k){h+='<div class="ek-item" data-s="'+esc(s)+'" data-d="'+esc(r.date)+'"><div class="ek-row stat">'+logo(s,nm(s))+'<span class="ek-m"><span class="ek-nm"><a href="../aktien-hub/?s='+encodeURIComponent(s)+'">'+esc(nm(s))+"</a></span>"+sub+"</span></div></div>";return}
+    h+='<div class="ek-item" data-s="'+esc(s)+'" data-d="'+esc(r.date)+'"'+(r.zeit?' data-z="'+esc(r.zeit)+'"':"")+'><button type="button" class="ek-row" aria-expanded="false">'+logo(s,nm(s))+'<span class="ek-m"><span class="ek-nm"><a href="../aktien-hub/?s='+encodeURIComponent(s)+'">'+esc(nm(s))+'</a></span>'+sub+'</span>'+artIcon(s)+(eps==null&&rev==null?"":'<span class="ek-fig"><div>'+num(eps)+'<span class="'+(done?"t-"+tone(ge):"")+'">Gewinn/Aktie'+(done?ee:" (Schätzung)")+'</span>'+be+'</div><div>'+big(rev)+'<span class="'+(done?"t-"+tone(gv):"")+'">Umsatz'+(done?ev:" (Schätzung)")+'</span>'+bv+'</div></span>')+'</button><div class="ek-body"><p class="ek-sub">Lade Details …</p></div></div>';
   });
   $("list").innerHTML=h+"</div>";
 }
@@ -199,7 +206,7 @@ async function details(item){
     dh='<table style="margin-top:12px"><thead><tr><th>Dividende</th><th>Aktuell</th><th>Vor einem Jahr</th><th>Veränderung</th></tr></thead><tbody><tr><td>Letzte Zahlung ('+esc(String(L.date).slice(0,10))+')</td><td>'+num(lv,3)+"</td><td>"+num(pvv,3)+"</td><td>"+gp(gr(lv,pvv))+"</td></tr>"+(na&&nb?"<tr><td>Summe letzte 12 Monate</td><td>"+num(a,3)+"</td><td>"+num(b,3)+"</td><td>"+gp(gr(a,b))+"</td></tr>":"")+"</tbody></table>";
   }else if(res[1].status==="rejected")dh='<p class="ek-sub">Dividendendaten nicht verfügbar ('+esc(res[1].reason.message)+").</p>";
   else dh='<p class="ek-sub">Keine Dividendenzahlungen gefunden.</p>';
-  var out=h+dh+'<a class="ek-go" href="../aktien-hub/?s='+encodeURIComponent(s)+'">Zur Aktie: Kennzahlen, Dividendenverlauf, News →</a>';
+  var il=irLink(s),out=h+dh+(il?'<p class="ek-sub" style="margin-top:12px">'+il+" · Präsentationen, Berichte und Webcast des Unternehmens</p>":"")+'<a class="ek-go" href="../aktien-hub/?s='+encodeURIComponent(s)+'">Zur Aktie: Kennzahlen, Dividendenverlauf, News →</a>';
   H[s+date]=out;box.innerHTML=out;
 }
 function render(){renderDays();renderList();$("clear").hidden=!(sel||q)}
@@ -207,7 +214,7 @@ $("days").onclick=function(e){var b=e.target.closest(".ek-day");if(!b)return;sel
 $("scope").onchange=function(){scope=this.value;render()};
 $("q").oninput=function(){q=this.value.trim().toLowerCase();render()};
 $("clear").onclick=function(){sel=null;q="";$("q").value="";render()};
-$("list").onclick=function(e){if(e.target.closest("a"))return;var r=e.target.closest(".ek-row");if(!r)return;var it=r.parentNode,o=it.classList.toggle("open");r.setAttribute("aria-expanded",o);if(o&&!it.dataset.loaded){it.dataset.loaded=1;details(it).catch(function(x){it.querySelector(".ek-body").innerHTML='<p class="ek-sub">Details nicht ladbar: '+esc(x.message)+"</p>"})}};
+$("list").onclick=function(e){if(e.target.closest("a"))return;var r=e.target.closest(".ek-row");if(!r||r.classList.contains("stat"))return;var it=r.parentNode,o=it.classList.toggle("open");r.setAttribute("aria-expanded",o);if(o&&!it.dataset.loaded){it.dataset.loaded=1;details(it).catch(function(x){it.querySelector(".ek-body").innerHTML='<p class="ek-sub">Details nicht ladbar: '+esc(x.message)+"</p>"})}};
 (async function(){
   var f=new Date(),t=new Date();f.setDate(f.getDate()-DAYS_BACK);t.setDate(t.getDate()+DAYS_FWD+10);
   try{var j=await api("earnings-calendar",{from:key(f),to:key(t)});CAL=(Array.isArray(j)?j:[]).filter(function(x){return x&&x.symbol&&x.date}).map(function(x){x.date=String(x.date).slice(0,10);return x});
@@ -230,6 +237,16 @@ $("list").onclick=function(e){if(e.target.closest("a"))return;var r=e.target.clo
         var nmh=x.sym?'<a href="../aktien-hub/?s='+encodeURIComponent(x.sym)+'">'+esc(x.name)+"</a>":esc(x.name);
         return '<div class="ek-item"><div class="ek-row" style="cursor:default">'+logo(x.sym||x.name,x.name)+'<span class="ek-m"><span class="ek-nm">'+nmh+'</span><span class="ek-pills"><span class="ek-badge">'+esc(ART[x.art]||x.art)+(x.was&&/^k_/.test(x.art)&&x.art==="k_ergebnis"?" "+esc(x.was):"")+'</span></span></span><span class="ek-fig"><div>'+esc(fmtDay(x.datum))+'<span>'+(x.zeit?esc(x.zeit):"")+(x.betrag?(x.zeit?" · ":"")+esc(x.betrag)+" "+esc(x.waehrung||"")+" je Aktie":"")+(x.quelle?' · <a href="'+esc(x.quelle)+'" rel="noopener nofollow">Quelle</a>':"")+'</span></div></span></div></div>'}).join("")+"</div>"}}catch(e3){}
   try{var mr=await fetch("../data/magazin.json?v="+Math.floor(Date.now()/6e5));if(mr.ok){NEWS=((await mr.json()).items||[]).slice().sort(function(a,b){return a.date<b.date?1:-1})}}catch(e4){}
+  try{
+    try{var ri=await fetch("../data/ir-links.json");if(ri.ok)IR=(await ri.json()).firmen||{}}catch(e7){}
+    var ra=await fetch("../data/termine-app.json",{cache:"no-cache"});
+    if(ra.ok){var AI=(await ra.json()).items||[],bs=function(x){return String(x).split(".")[0]},t0=key(new Date(Date.now()-DAYS_BACK*864e5));
+      AI.forEach(function(it){if(it.datum<t0)return;APPN[it.sym]=it.name;
+        if(it.typ==="q"){var hit=CAL.filter(function(x){return x.date===it.datum&&!x._app&&(x.symbol===it.sym||bs(x.symbol)===bs(it.sym))&&!x.zeit})[0];
+          if(hit){hit.zeit=it.zeit;hit.was=it.was;return}}
+        CAL.push({symbol:it.sym,date:it.datum,zeit:it.zeit,was:it.was,_app:1,_k:it.typ!=="q"})});
+      $("upd").textContent=CAL.length+" Termine geladen"}
+  }catch(e8){}
   render();
 })();
 })();
