@@ -10,6 +10,7 @@ quelle_name: "Palantir Technologies, Präsentation „Q3 2026 Business Update“
 logo_name: "Palantir Technologies"
 logo_symbol: PLTR
 logo_domain: palantir.com
+story_image: assets/magazin/palantir-q3-2026-zahlen-prognose-folie.png
 image: assets/magazin/palantir-q3-2026-zahlen-prognose-foto.jpg
 image_alt: "Foto zu Palantir Technologies: A group of people in a control room monitoring a fleet management telematics system. The wall-sized display shows GPS-based tracking data and satellite imagery of vehicles in Beirut, Lebanon, along wi"
 image_credit: "Foto: UrusHyby / Wikimedia Commons, CC0"
@@ -34,6 +35,10 @@ Palantir Technologies hat im dritten Quartal 2026 einen Umsatz von 2,31 Milliard
 Der Umsatz in den USA stieg auf 1,94 Milliarden US-Dollar (+119 %). Das Geschäft mit US-Unternehmen wuchs um 148 Prozent auf 984 Millionen, das mit US-Behörden um 96 Prozent auf 953 Millionen. Damit lag der kommerzielle Teil zum ersten Mal über dem staatlichen. Weltweit kamen Unternehmenskunden auf 1,17 Milliarden US-Dollar (+113 %), Behörden auf 1,15 Milliarden (+81 %).
 
 Die Kundenbasis wächst deutlich langsamer als der Umsatz. Palantir zählt 1.090 Kunden (+20 %), darunter 904 Unternehmenskunden (+22 %). Der Umsatz pro Kunde steigt also stark: Die Nettoumsatzbindung, also der Umsatz mit bestehenden Kunden im Vergleich zum Vorjahr, lag bei 165 Prozent, 8 Punkte mehr als im Vorquartal. Palantir schloss 212 Verträge ab einer Million US-Dollar, davon 64 ab zehn Millionen.
+
+![Folie aus der Palantir-Präsentation: Umsatz mit US-Unternehmen und Wachstum je Quartal, zuletzt 984 Millionen US-Dollar (+148 Prozent)](/assets/magazin/palantir-q3-2026-zahlen-prognose-folie.png)
+
+*Folie: Palantir Technologies, „Q3 2026 Business Update“. Umsatz mit US-Unternehmen je Quartal und Wachstum zum Vorjahr.*
 
 ## Gewinn und Cashflow
 

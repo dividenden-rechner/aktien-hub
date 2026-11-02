@@ -505,11 +505,14 @@ def share_html(p, url, img):
     story = {"title": p["title"], "lines": kurz_lines(p.get("body_md", "")), "points": kurz_points(p.get("body_md", "")), "ct": ct, "img": img,
              "logo": ("../../" + lf) if lf and not lf.endswith(".mono.png") and os.path.exists(lf) else "", "cat": p.get("category", ""),
              "tpl": "../../assets/story-vorlagen/" + story_vorlage(p) + ".png"}
+    if p.get("story_image"):
+        # Folie oder Grafik aus den Unterlagen des Unternehmens: wird in der Story vollstaendig (ohne Beschnitt) gezeigt
+        story["img"] = "../../" + p["story_image"].lstrip("/"); story["fit"] = "contain"
     if p.get("typ") == "kurz":
         # Kurzmeldung: kein Kasten mit Kennzahlen, daher der Einleitungstext als Story-Text; ohne eigenes Foto bleibt das Bildfeld weg
         story["text"] = kurz_story_text(p.get("body_md", ""))
         story["ct"] = (story["ct"] + " · " if story["ct"] else "") + p["dt"].strftime("%d.%m.%Y")
-        if not p.get("image"):
+        if not p.get("image") and not p.get("story_image"):
             story["img"] = ""
     links = [
         ("x", "Auf X teilen", "https://twitter.com/intent/tweet?text=" + q(x_text) + "&url=" + q(page)),
