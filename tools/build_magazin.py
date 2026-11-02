@@ -469,6 +469,12 @@ def kurz_points(md_text):
     return out[:3]
 
 
+def kurz_title(md_text):
+    """Ueberschrift des Kurz-gesagt-Kastens (!!! kurz "Kurz gesagt (drittes Quartal 2026)")."""
+    m = re.search(r'^!!! kurz\s+"([^"]*)"', md_text or "", re.M)
+    return m.group(1).strip() if m else ""
+
+
 def kurz_story_text(md_text, limit=520):
     """Einleitungsabsatz einer Kurzmeldung (vor der ersten Zwischenueberschrift) als Story-Text, an einer Satzgrenze gekuerzt."""
     t = re.sub(r"<!--.*?-->", "", md_text, flags=re.S)
@@ -502,7 +508,7 @@ def share_html(p, url, img):
     tags = ["#Dividende", "#Aktien"] + (["#Quartalszahlen"] if p.get("category") == "Quartalszahlen" else [])
     x_text = p["title"] + "\n\n" + " ".join(([ct] if ct else []) + tags)
     lf = p.get("logo_file") or ""
-    story = {"title": p["title"], "lines": kurz_lines(p.get("body_md", "")), "points": kurz_points(p.get("body_md", "")), "ct": ct, "img": img,
+    story = {"title": p["title"], "lines": kurz_lines(p.get("body_md", "")), "points": kurz_points(p.get("body_md", "")), "box": kurz_title(p.get("body_md", "")), "ct": ct, "img": img,
              "logo": ("../../" + lf) if lf and not lf.endswith(".mono.png") and os.path.exists(lf) else "", "cat": p.get("category", ""),
              "tpl": "../../assets/story-vorlagen/" + story_vorlage(p) + ".png"}
     if p.get("story_image"):

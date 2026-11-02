@@ -28,7 +28,7 @@ Palantir Technologies hat im dritten Quartal 2026 einen Umsatz von 2,31 Milliard
     1. **Umsatz:** 2,31 Mrd. US-Dollar (+96 %), davon USA 1,94 Mrd. (+119 %)
     2. **Gewinn:** Nettogewinn 1,13 Mrd. US-Dollar, 0,44 US-Dollar je Aktie
     3. **Cashflow:** bereinigter freier Cashflow 1,22 Mrd. US-Dollar (53 % vom Umsatz)
-    4. **Prognose 2026:** Umsatz 8,530 bis 8,534 Mrd. US-Dollar
+    4. **Prognose 2026:** Umsatz rund 8,5 Mrd. US-Dollar
 
 ## USA treiben das Wachstum
 
@@ -52,7 +52,7 @@ Beim Auftragsbestand zeigt sich das Wachstum weniger deutlich. Die vertraglich f
 
 ## Prognose
 
-Für das vierte Quartal erwartet Palantir einen Umsatz von 2,649 bis 2,653 Milliarden US-Dollar und ein bereinigtes Betriebsergebnis von 1,640 bis 1,644 Milliarden. Für 2026 insgesamt stehen 8,530 bis 8,534 Milliarden US-Dollar Umsatz, 5,245 bis 5,249 Milliarden bereinigter Betriebsgewinn und 4,8 bis 5,0 Milliarden bereinigter freier Cashflow im Plan. Im US-Geschäft mit Unternehmen sollen es mehr als 3,559 Milliarden US-Dollar werden, ein Plus von mindestens 143 Prozent. Der Umsatz im vierten Quartal läge damit rund 15 Prozent über dem dritten (eigene Rechnung) und damit unter dem Plus von 20 Prozent im dritten Quartal.
+Für das vierte Quartal erwartet Palantir einen Umsatz von 2.649 bis 2.653 Millionen US-Dollar und ein bereinigtes Betriebsergebnis von 1.640 bis 1.644 Millionen. Für 2026 insgesamt stehen 8.530 bis 8.534 Millionen US-Dollar Umsatz, 5.245 bis 5.249 Millionen bereinigter Betriebsgewinn und 4,8 bis 5,0 Milliarden bereinigter freier Cashflow im Plan. Im US-Geschäft mit Unternehmen sollen es mehr als 3.559 Millionen US-Dollar werden, ein Plus von mindestens 143 Prozent. Der Umsatz im vierten Quartal läge damit rund 15 Prozent über dem dritten (eigene Rechnung) und damit unter dem Plus von 20 Prozent im dritten Quartal.
 
 ## Einordnung
 

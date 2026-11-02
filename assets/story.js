@@ -68,18 +68,37 @@
         y += (logo ? sz : 44) + 26;
       }
       if (S.title) { c.font = "700 " + (fs + 25) + "px " + F; c.fillStyle = D; wrap(c, S.title, 960, 5).forEach(function (l) { if (draw) c.fillText(l, 60, y); y += Math.round((fs + 25) * 1.2); }); y += 16; }
-      lns.forEach(function (l) {
-        var i = l.indexOf(":"), k = i > 0 ? l.slice(0, i + 1) : "", v = i > 0 ? l.slice(i + 1).trim() : l;
-        c.font = "700 " + (fs + 7) + "px " + F; var kw = c.measureText(k + " ").width; c.font = "700 " + (fs + 17) + "px " + F; var ls = wrap(c, v, 960 - kw, 2);
-        if (draw) { c.fillStyle = G; c.font = "700 " + (fs + 7) + "px " + F; c.fillText(k, 60, y + 6); c.fillStyle = D; c.font = "700 " + (fs + 17) + "px " + F; ls.forEach(function (t, n) { c.fillText(t, 60 + kw, y + n * (fs + 27)); }); }
-        y += ls.length * (fs + 27) + 14;
-      });
-      if (lns.length) y += 10;
-      pts.forEach(function (t, n) {
-        c.font = "400 " + fs + "px " + F; var ls = wrap(c, t, 880, 0);
-        if (draw) { c.fillStyle = G; c.font = "700 " + (fs + 1) + "px " + F; c.fillText(String(n + 1) + ".", 60, y); c.fillStyle = "#33414d"; c.font = "400 " + fs + "px " + F; ls.forEach(function (l, m) { c.fillText(l, 118, y + m * lh); }); }
-        y += ls.length * lh + 16;
-      });
+      if (lns.length || pts.length) {
+        /* Kasten "Kurz gesagt" wie im Artikel: heller Untergrund, Kennzahlen mit fettem Stichwort, nummerierte Punkte */
+        var bx = 60, bw = 960, ix = 100, iw = 892, by0 = y, tc = "#33414d";
+        function kv(t, x, w, fsz, num, doDraw, yy) {
+          var i = t.indexOf(":"), k = (i > 0 && i < 30) ? t.slice(0, i + 1) : "", v = k ? t.slice(i + 1).trim() : t;
+          c.font = "700 " + fsz + "px " + F; var kw = k ? c.measureText(k + " ").width : 0;
+          c.font = "400 " + fsz + "px " + F;
+          var ls = [], cur = "", lim = w - kw;
+          v.replace(/\u202f/g, "\u00a0").split(/[ \t\r\n]+/).forEach(function (wd) {
+            if (!wd) return; var t2 = cur ? cur + " " + wd : wd;
+            if (c.measureText(t2).width <= lim || !cur) cur = t2; else { ls.push(cur); cur = wd; lim = w; }
+          });
+          if (cur) ls.push(cur);
+          var lhh = Math.round(fsz * 1.34);
+          if (doDraw) {
+            if (num) { c.fillStyle = G; c.font = "700 " + fsz + "px " + F; c.fillText(num, ix, yy); }
+            if (k) { c.fillStyle = D; c.font = "700 " + fsz + "px " + F; c.fillText(k, x, yy); }
+            c.fillStyle = tc; c.font = "400 " + fsz + "px " + F;
+            ls.forEach(function (l, n) { c.fillText(l, n === 0 ? x + kw : x, yy + n * lhh); });
+          }
+          return ls.length * lhh;
+        }
+        if (draw && layout.bh) {
+          c.save(); rr(c, bx, by0, bw, layout.bh, 24); c.fillStyle = "#f3f6f8"; c.fill(); c.lineWidth = 2; c.strokeStyle = "#dbe3e8"; c.stroke(); c.restore();
+        }
+        y += 28;
+        if (S.box) { if (draw) { c.fillStyle = G; c.font = "700 " + (fs - 8) + "px " + F; c.fillText(S.box.toUpperCase(), ix, y); } y += Math.round((fs - 8) * 1.6) + 6; }
+        lns.forEach(function (l) { y += kv(l, ix, iw, fs + 2, "", draw, y) + 12; });
+        pts.forEach(function (t, n) { y += kv(t, ix + 48, iw - 48, fs + 2, String(n + 1) + ".", draw, y) + 12; });
+        y += 16; layout.bh = y - by0; y += 24;
+      }
       if (S.text) { c.font = "400 " + (fs + 2) + "px " + F; String(S.text).split(/\n+/).forEach(function (p) { wrap(c, p, 960, 0).forEach(function () { y += Math.round((fs + 2) * 1.35); }); y += 14; }); }
       return y;
     }
@@ -89,6 +108,7 @@
     while (photo && !fit && ph < 620 && layout(false, ph + 20, fs) <= LIM - 20) ph += 20;
     /* Ohne Foto (Kurzmeldungen) die Schrift vergroessern, damit die Story die Flaeche fuellt. */
     while (!photo && fs < 54 && layout(false, ph, fs + 1) <= LIM - 140) fs += 1;
+    layout(false, ph, fs);
     var yy = layout(true, ph, fs);
     if (S.text) {
       var lh2 = Math.round((fs + 2) * 1.35); c.fillStyle = "#33414d"; c.font = "400 " + (fs + 2) + "px " + F;
