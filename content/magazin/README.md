@@ -15,7 +15,7 @@ Datei anklicken, dann Stift-Symbol: Zeile `draft: true` löschen und speichern, 
 | 29.10.2026 22:42 | Amazon steigert Umsatz im dritten Quartal auf 201,9 Milliarden Dollar | [79738970_2026-10-29/7757_2242-amazon-q3-2026-zahlen.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/79738970_2026-10-29/7757_2242-amazon-q3-2026-zahlen.md) |
 | 29.10.2026 10:12 | Shell erzielt im dritten Quartal 10,8 Milliarden Dollar Gewinn | [79738970_2026-10-29/8987_1012-shell-q3-2026-ergebnisse.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/79738970_2026-10-29/8987_1012-shell-q3-2026-ergebnisse.md) |
 
-### Online (152)
+### Online (154)
 
 | Datum | Titel | Datei |
 |---|---|---|
@@ -24,6 +24,8 @@ Datei anklicken, dann Stift-Symbol: Zeile `draft: true` löschen und speichern, 
 | 02.11.2026 21:37 | Marvell Technology schluckt Lumentum für 115 Mrd. US-Dollar | [79738897_2026-11-02/7862_2137-marvell-technology-uebernimmt-lumentum-fuer-115-mrd-usd.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/79738897_2026-11-02/7862_2137-marvell-technology-uebernimmt-lumentum-fuer-115-mrd-usd.md) |
 | 02.11.2026 21:37 | Marvell Technology übernimmt Lumentum für 115 Mrd. US-Dollar | [79738897_2026-11-02/7862_2137-marvell-technolog-uebernahme-lumentum-115-mrd-usd.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/79738897_2026-11-02/7862_2137-marvell-technolog-uebernahme-lumentum-115-mrd-usd.md) |
 | 02.11.2026 21:36 | Marriott International steigert Q3-Gewinn je Aktie auf 3,04 US-Dollar | [79738897_2026-11-02/7863_2136-marriott-international-q3-2026-zahlen.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/79738897_2026-11-02/7863_2136-marriott-international-q3-2026-zahlen.md) |
+| 02.11.2026 21:36 | Estée Lauder steigert bereinigten Q1-Gewinn auf 0,72 US-Dollar je Aktie | [79738897_2026-11-02/7863_2136-estee-lauder-q1-2027-zahlen-prognose.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/79738897_2026-11-02/7863_2136-estee-lauder-q1-2027-zahlen-prognose.md) |
+| 02.11.2026 21:36 | Entergy steigert Q3-Gewinn je Aktie auf 1,98 US-Dollar und erhöht Dividende | [79738897_2026-11-02/7863_2136-entergy-q3-zahlen-dividende-2026.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/79738897_2026-11-02/7863_2136-entergy-q3-zahlen-dividende-2026.md) |
 | 02.11.2026 21:36 | Barclays kauft im Oktober 2026 eigene Aktien für das Rückkaufprogramm zurück | [79738897_2026-11-02/7863_2136-barclays-aktienrueckkauf-oktober-2026.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/79738897_2026-11-02/7863_2136-barclays-aktienrueckkauf-oktober-2026.md) |
 | 02.11.2026 21:35 | Loews Corporation sinkt im dritten Quartal auf 1,50 US-Dollar Gewinn je Aktie | [79738897_2026-11-02/7864_2135-loews-q3-gewinn-2026.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/79738897_2026-11-02/7864_2135-loews-q3-gewinn-2026.md) |
 | 02.11.2026 21:35 | Kimberly-Clark schließt Kenvue-Übernahme für 3,50 US-Dollar je Aktie ab | [79738897_2026-11-02/7864_2135-kimberly-clark-schliesst-kenvue-uebernahme-ab.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/79738897_2026-11-02/7864_2135-kimberly-clark-schliesst-kenvue-uebernahme-ab.md) |

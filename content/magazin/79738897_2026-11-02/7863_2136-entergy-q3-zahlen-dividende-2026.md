@@ -10,6 +10,7 @@ quelle_url: https://www.sec.gov/Archives/edgar/data/65984/000006598426000322/ear
 quelle_name: "Pressemitteilung Entergy (SEC-Meldung)"
 logo_symbol: ETR
 logo_name: "Entergy"
+logo_file: assets/logos/etr.png
 ---
 <!-- PRÜFEN: Diese Zahlen stehen nicht im Originaltext: 0,68. Bitte pruefen, dann 'draft: true' loeschen. -->
 

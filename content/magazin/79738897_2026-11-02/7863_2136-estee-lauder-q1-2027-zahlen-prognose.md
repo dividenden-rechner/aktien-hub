@@ -10,6 +10,7 @@ quelle_url: https://www.sec.gov/Archives/edgar/data/1001250/000100125026000057/f
 quelle_name: "Pressemitteilung Estée Lauder Companies (The) (SEC-Meldung)"
 logo_symbol: EL
 logo_name: "Estée Lauder Companies (The)"
+logo_file: assets/logos/el.png
 ---
 <!-- PRÜFEN: Diese Zahlen stehen nicht im Originaltext: 0,72, 0,32, 0,35, 0,72, 0,72, Einordnung: 0,32, Einordnung: 0,72. Bitte pruefen, dann 'draft: true' loeschen. -->
 
