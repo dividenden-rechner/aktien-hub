@@ -1,0 +1,50 @@
+name: Seite veröffentlichen (ohne gesperrte Bereiche)
+# Baut die öffentliche Seite aus dem Repository, ohne die Bereiche aus data/live.json (Earnings, Screener, Depot, Aktien-Hub).
+# Läuft nur, wenn in data/live.json "aktiv": true steht und in GitHub unter Settings > Pages die Quelle "GitHub Actions" gewählt ist.
+on:
+  push:
+    branches: [main]
+  workflow_run:
+    workflows:
+      - "Magazin bauen"
+      - "Kurzmeldungen (Pressemitteilungen zu News)"
+      - "News aktualisieren"
+      - "IR-Agent (Bericht zu Entwurf)"
+      - "Foto und Logo erneuern"
+      - "Ueberschriften auffrischen"
+      - "Startseiten-Kacheln"
+      - "Altersvorsorgedepot-Anbieter prüfen"
+      - "IR-Termine (Earnings-Termine und Ergebnisse)"
+      - "Wochenvorschau"
+    types: [completed]
+  schedule:
+    - cron: "11 * * * *"
+  workflow_dispatch:
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+concurrency:
+  group: pages-live
+  cancel-in-progress: true
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.d.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v4
+      - id: cfg
+        run: echo "aktiv=$(python3 -c "import json;print(str(json.load(open('data/live.json')).get('aktiv', False)).lower())")" >> "$GITHUB_OUTPUT"
+      - if: steps.cfg.outputs.aktiv == 'true'
+        uses: actions/configure-pages@v5
+      - if: steps.cfg.outputs.aktiv == 'true'
+        run: python3 tools/live_filter.py _site
+      - if: steps.cfg.outputs.aktiv == 'true'
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: _site
+      - id: d
+        if: steps.cfg.outputs.aktiv == 'true'
+        uses: actions/deploy-pages@v4

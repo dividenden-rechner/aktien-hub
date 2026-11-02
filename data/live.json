@@ -1,0 +1,17 @@
+{
+  "aktiv": false,
+  "hinweis": "aktiv erst auf true setzen, wenn in GitHub unter Settings > Pages die Quelle auf 'GitHub Actions' gestellt ist.",
+  "versteckt": [
+    "aktien-hub",
+    "aktien",
+    "depot",
+    "earnings",
+    "screener",
+    "vorschau"
+  ],
+  "testkopie": "intern-t7q4m9",
+  "domain_alt": "https://dividenden-rechner.github.io/aktien-hub/",
+  "domain_neu": "",
+  "fmp_aus": true,
+  "fmp_hinweis": "true: Skripte mit Kursen und Earnings-Ergebnissen aus dem FMP-Zwischenserver (kurse.js, fkearn.js) werden auf der oeffentlichen Seite entfernt, bis die Display-Lizenz da ist."
+}
