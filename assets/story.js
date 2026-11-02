@@ -29,14 +29,15 @@
   async function draw(S, withPhoto) {
     var W = 1080, H = 1920, cv = document.createElement("canvas"); cv.width = W; cv.height = H; var c = cv.getContext("2d");
     var tpl = await load(S.tpl), photo = withPhoto ? await load(S.img) : null, logo = await load(S.logo);
-    if (tpl) c.drawImage(tpl, 0, 0, W, H); else { c.fillStyle = "#fff"; c.fillRect(0, 0, W, H); c.fillStyle = "#99e6b1"; c.fillRect(0, 108, W, 86); c.fillRect(0, 1866, W, 54); }
-    var F = 'InterS,Inter,"Segoe UI",Roboto,Helvetica,Arial,sans-serif', LIM = 1835, G = "#1a7a45", D = "#14202b";
+    /* Neutral wie eine normale Instagram-Story: weisser Grund, schwarze Schrift, keine Farbflaechen (die Vorlagen werden nicht mehr verwendet). */
+    c.fillStyle = "#fff"; c.fillRect(0, 0, W, H);
+    var F = 'InterS,Inter,"Segoe UI",Roboto,Helvetica,Arial,sans-serif', LIM = 1780, G = "#111", D = "#111";
     c.textBaseline = "top";
     var pts = S.points || [], lns = S.lines || [], ph = photo ? 470 : 0, fs = 35, fit = !!(photo && S.fit === "contain");
     if (fit) ph = Math.round(960 * photo.height / photo.width);
     /* Layout messen; passt der Text nicht, erst Foto verkleinern, dann Schrift (min. 26 px). Nie abschneiden. */
     function layout(draw, ph, fs) {
-      var y = 232, lh = Math.round(fs * 1.32);
+      var y = 130, lh = Math.round(fs * 1.32);
       function drawPhoto() {
         var r = fit ? Math.min(960 / photo.width, ph / photo.height) : Math.max(960 / photo.width, ph / photo.height), w = photo.width * r, h = photo.height * r;
         if (draw) { c.save(); rr(c, 60, y, 960, ph, 28); c.clip(); c.drawImage(photo, 60 + (960 - w) / 2, y + (ph - h) / 2, w, h); c.restore(); }
@@ -44,13 +45,13 @@
       }
       if (photo && !fit) drawPhoto();
       /* Logo wie auf den Uebersichtsseiten: Plakette oben links im Foto. Rubrik steht schon in der Vorlage. */
-      var sz = 132, tag = S.ct || "";
+      var sz = 132, tag = [S.ct, S.cat].filter(Boolean).join(" \u00b7 ");
       function plaque(px, py) {
         c.save(); c.shadowColor = "rgba(0,0,0,.28)"; c.shadowBlur = 20; c.shadowOffsetY = 5; c.fillStyle = light(logo) ? "#14202b" : "#fff"; rr(c, px, py, sz, sz, 28); c.fill(); c.restore();
         var q = Math.min((sz - 34) / logo.width, (sz - 34) / logo.height); c.drawImage(logo, px + (sz - logo.width * q) / 2, py + (sz - logo.height * q) / 2, logo.width * q, logo.height * q);
       }
       function pill(px, py) {
-        c.font = "700 34px " + F; var w = c.measureText(tag).width + 40; c.fillStyle = "rgba(20,32,43,.82)"; rr(c, px, py, w, 56, 28); c.fill(); c.fillStyle = "#fff"; c.fillText(tag, px + 20, py + 11);
+        c.font = "700 34px " + F; var w = c.measureText(tag).width + 40; c.fillStyle = "rgba(0,0,0,.72)"; rr(c, px, py, w, 56, 28); c.fill(); c.fillStyle = "#fff"; c.fillText(tag, px + 20, py + 11);
       }
       if (photo && fit) {
         /* Folie/Grafik: Logo und Kennung ueber dem Bild, damit nichts davon verdeckt wird */
@@ -60,8 +61,8 @@
         if (logo || tag) y += (logo ? sz : 44) + 22;
         drawPhoto();
       } else if (photo) {
-        if (draw && logo) plaque(60 + 24, 232 + 24);
-        if (draw && tag) pill(60 + 24, 232 + ph - 80);
+        if (draw && logo) plaque(60 + 24, 130 + 24);
+        if (draw && tag) pill(60 + 24, 130 + ph - 80);
       } else if (logo || tag) {
         if (draw && logo) plaque(60, y);
         if (draw && tag) { c.fillStyle = G; c.font = "700 40px " + F; c.fillText(tag, logo ? 60 + sz + 28 : 60, y + (logo ? sz / 2 - 20 : 0)); }
@@ -70,7 +71,7 @@
       if (S.title) { c.font = "700 " + (fs + 25) + "px " + F; c.fillStyle = D; wrap(c, S.title, 960, 5).forEach(function (l) { if (draw) c.fillText(l, 60, y); y += Math.round((fs + 25) * 1.2); }); y += 16; }
       if (lns.length || pts.length) {
         /* Kasten "Kurz gesagt" wie im Artikel: heller Untergrund, Kennzahlen mit fettem Stichwort, nummerierte Punkte */
-        var bx = 60, bw = 960, ix = 100, iw = 892, by0 = y, tc = "#33414d";
+        var bx = 60, bw = 960, ix = 100, iw = 892, by0 = y, tc = "#262626";
         function kv(t, x, w, fsz, num, doDraw, yy) {
           var i = t.indexOf(":"), k = (i > 0 && i < 30) ? t.slice(0, i + 1) : "", v = k ? t.slice(i + 1).trim() : t;
           c.font = "700 " + fsz + "px " + F; var kw = k ? c.measureText(k + " ").width : 0;
@@ -91,7 +92,7 @@
           return ls.length * lhh;
         }
         if (draw && layout.bh) {
-          c.save(); rr(c, bx, by0, bw, layout.bh, 24); c.fillStyle = "#f3f6f8"; c.fill(); c.lineWidth = 2; c.strokeStyle = "#dbe3e8"; c.stroke(); c.restore();
+          c.save(); rr(c, bx, by0, bw, layout.bh, 24); c.fillStyle = "#fafafa"; c.fill(); c.lineWidth = 2; c.strokeStyle = "#dbdbdb"; c.stroke(); c.restore();
         }
         y += 28;
         if (S.box) { if (draw) { c.fillStyle = G; c.font = "700 " + (fs - 8) + "px " + F; c.fillText(S.box.toUpperCase(), ix, y); } y += Math.round((fs - 8) * 1.6) + 6; }
@@ -111,10 +112,11 @@
     layout(false, ph, fs);
     var yy = layout(true, ph, fs);
     if (S.text) {
-      var lh2 = Math.round((fs + 2) * 1.35); c.fillStyle = "#33414d"; c.font = "400 " + (fs + 2) + "px " + F;
+      var lh2 = Math.round((fs + 2) * 1.35); c.fillStyle = "#262626"; c.font = "400 " + (fs + 2) + "px " + F;
       yy -= String(S.text).split(/\n+/).reduce(function (a, p) { return a + wrap(c, p, 960, 0).length * lh2 + 14; }, 0);
       String(S.text).split(/\n+/).forEach(function (p) { wrap(c, p, 960, 0).forEach(function (l) { c.fillText(l, 60, yy); yy += lh2; }); yy += 14; });
     }
+    c.fillStyle = "#111"; c.font = "700 36px " + F; c.textAlign = "center"; c.fillText("dividenden-rechner.de", W / 2, 1832); c.textAlign = "left";
     return new Promise(function (res) { cv.toBlob(res, "image/png"); });
   }
   window.StoryRender = async function (S) {
