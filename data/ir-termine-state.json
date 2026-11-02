@@ -1,0 +1,70 @@
+{
+ "AAPL": {
+  "hash": "93314a354a06fa4b",
+  "status": "ok",
+  "stand": "2026-11-02",
+  "gefunden": 0
+ },
+ "V": {
+  "hash": "b0451e15b4cb9de1",
+  "status": "ok",
+  "stand": "2026-11-02",
+  "gefunden": 0
+ },
+ "MA": {
+  "hash": "11131554b04bad75",
+  "status": "ok",
+  "stand": "2026-11-02",
+  "gefunden": 0
+ },
+ "O": {
+  "hash": "6b53136ff9a195c9",
+  "status": "ok",
+  "stand": "2026-11-02",
+  "gefunden": 0
+ },
+ "PFE": {
+  "hash": "717ca938626471a4",
+  "status": "ok",
+  "stand": "2026-11-02",
+  "gefunden": 0
+ },
+ "AMGN": {
+  "status": "Seite nicht lesbar",
+  "stand": "2026-11-02"
+ },
+ "MCD": {
+  "hash": "71eff60775a9e7d1",
+  "status": "ok",
+  "stand": "2026-11-02",
+  "gefunden": 0
+ },
+ "KHC": {
+  "hash": "89526811cd6ec402",
+  "status": "ok",
+  "stand": "2026-11-02",
+  "gefunden": 1
+ },
+ "KMB": {
+  "status": "Seite nicht lesbar",
+  "stand": "2026-11-02"
+ },
+ "QCOM": {
+  "hash": "60c078059092d070",
+  "status": "ok",
+  "stand": "2026-11-02",
+  "gefunden": 0
+ },
+ "AMD": {
+  "hash": "839731528992fa92",
+  "status": "ok",
+  "stand": "2026-11-02",
+  "gefunden": 1
+ },
+ "ENB": {
+  "hash": "dd5c05bf30ceef26",
+  "status": "ok",
+  "stand": "2026-11-02",
+  "gefunden": 0
+ }
+}
