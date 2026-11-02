@@ -10,6 +10,7 @@ quelle_url: https://www.sec.gov/Archives/edgar/data/879764/000110465926120831/tm
 quelle_name: "Pressemitteilung TotalEnergies SE (SEC-Meldung)"
 logo_symbol: TTE
 logo_name: "TotalEnergies SE"
+logo_file: assets/logos/tte.png
 ---
 <!-- PRÜFEN: Diese Zahlen stehen nicht im Originaltext: 117,57, 117,57, 117,57, Einordnung: 117,57. Bitte pruefen, dann 'draft: true' loeschen. -->
 

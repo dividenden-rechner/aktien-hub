@@ -10,6 +10,7 @@ quelle_url: https://group.ntt/en/newsrelease/2026/11/02/261102b.html
 quelle_name: "Pressemitteilung NTT"
 logo_symbol: 9432.T
 logo_name: "NTT"
+logo_file: assets/logos/9432-t.png
 ---
 <!-- PRÜFEN: Diese Zahlen stehen nicht im Originaltext: 27,29, 27,29, Einordnung: 650, Einordnung: 105. Bitte pruefen, dann 'draft: true' loeschen. -->
 
