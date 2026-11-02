@@ -118,6 +118,24 @@
    "quelle": "https://www.sec.gov/Archives/edgar/data/106535/000119312526437799/wy-ex99_1.htm"
   },
   {
+   "sym": "EL",
+   "name": "Estée Lauder Companies (The)",
+   "art": "ergebnis",
+   "datum": "2026-11-02",
+   "betrag": "",
+   "waehrung": "USD",
+   "quelle": "https://www.sec.gov/Archives/edgar/data/1001250/000100125026000057/fy2027q1exhibit991.htm"
+  },
+  {
+   "sym": "MAR",
+   "name": "Marriott International",
+   "art": "ergebnis",
+   "datum": "2026-11-02",
+   "betrag": "",
+   "waehrung": "",
+   "quelle": "https://www.sec.gov/Archives/edgar/data/1048286/000104828626000040/mar-2026q3xex99earningsrel.htm"
+  },
+  {
    "sym": "SAN",
    "name": "Banco Santander, S.A.",
    "art": "dividende_zahltag",
@@ -199,6 +217,15 @@
    "quelle": "https://www.sec.gov/Archives/edgar/data/872589/000087258926000032/exhibit991q32026.htm"
   },
   {
+   "sym": "EL",
+   "name": "Estée Lauder Companies (The)",
+   "art": "dividende_exdatum",
+   "datum": "2026-11-30",
+   "betrag": "",
+   "waehrung": "",
+   "quelle": "https://www.sec.gov/Archives/edgar/data/1001250/000100125026000057/fy2027q1exhibit991.htm"
+  },
+  {
    "sym": "REGN",
    "name": "Regeneron Pharmaceuticals",
    "art": "dividende_zahltag",
@@ -224,6 +251,15 @@
    "betrag": "",
    "waehrung": "",
    "quelle": "https://www.sec.gov/Archives/edgar/data/313807/000165495426009265/a0767b.htm"
+  },
+  {
+   "sym": "EL",
+   "name": "Estée Lauder Companies (The)",
+   "art": "dividende_zahltag",
+   "datum": "2026-12-15",
+   "betrag": "",
+   "waehrung": "USD",
+   "quelle": "https://www.sec.gov/Archives/edgar/data/1001250/000100125026000057/fy2027q1exhibit991.htm"
   },
   {
    "sym": "EXC",

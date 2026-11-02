@@ -339,6 +339,66 @@
    "revenue": null,
    "waehrung": "EUR",
    "quelle": "https://www.sec.gov/Archives/edgar/data/891478/000089147826000098/financieroq326ingles.htm"
+  },
+  {
+   "sym": "ETR",
+   "name": "Entergy",
+   "datum": "2026-11-02",
+   "eps": 1.98,
+   "eps_basis": "bereinigt",
+   "revenue": 940000000.0,
+   "waehrung": "USD",
+   "quelle": "https://www.sec.gov/Archives/edgar/data/65984/000006598426000322/earningsrelease3q26_ex991.htm"
+  },
+  {
+   "sym": "IDXX",
+   "name": "Idexx Laboratories",
+   "datum": "2026-11-02",
+   "eps": 4.01,
+   "eps_basis": "berichtet",
+   "revenue": 1214000000.0,
+   "waehrung": "USD",
+   "quelle": "https://www.sec.gov/Archives/edgar/data/874716/000110465926120892/tm2628647d1_ex99-1.htm"
+  },
+  {
+   "sym": "L",
+   "name": "Loews Corporation",
+   "datum": "2026-11-02",
+   "eps": 1.5,
+   "eps_basis": "berichtet",
+   "revenue": 4759000000.0,
+   "waehrung": "USD",
+   "quelle": "https://www.sec.gov/Archives/edgar/data/60086/000006008626000054/exhibit991-q32026.htm"
+  },
+  {
+   "sym": "LITE",
+   "name": "Lumentum",
+   "datum": "2026-11-02",
+   "eps": 4.57,
+   "eps_basis": "bereinigt",
+   "revenue": 1260000000.0,
+   "waehrung": "USD",
+   "quelle": "https://www.sec.gov/Archives/edgar/data/1633978/000162828026068655/lite_ex991xq1fy27.htm"
+  },
+  {
+   "sym": "MAR",
+   "name": "Marriott International",
+   "datum": "2026-11-02",
+   "eps": 3.04,
+   "eps_basis": "berichtet",
+   "revenue": 7005000000.0,
+   "waehrung": "USD",
+   "quelle": "https://www.sec.gov/Archives/edgar/data/1048286/000104828626000040/mar-2026q3xex99earningsrel.htm"
+  },
+  {
+   "sym": "PEG",
+   "name": "Public Service Enterprise Group",
+   "datum": "2026-11-02",
+   "eps": 1.15,
+   "eps_basis": "bereinigt",
+   "revenue": 376000000.0,
+   "waehrung": "USD",
+   "quelle": "https://www.sec.gov/Archives/edgar/data/788784/000119312526442778/d175962dex991.htm"
   }
  ]
 }
