@@ -15,10 +15,11 @@ Datei anklicken, dann Stift-Symbol: Zeile `draft: true` löschen und speichern, 
 | 29.10.2026 22:42 | Amazon steigert Umsatz im dritten Quartal auf 201,9 Milliarden Dollar | [79738970_2026-10-29/7757_2242-amazon-q3-2026-zahlen.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/79738970_2026-10-29/7757_2242-amazon-q3-2026-zahlen.md) |
 | 29.10.2026 10:12 | Shell erzielt im dritten Quartal 10,8 Milliarden Dollar Gewinn | [79738970_2026-10-29/8987_1012-shell-q3-2026-ergebnisse.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/79738970_2026-10-29/8987_1012-shell-q3-2026-ergebnisse.md) |
 
-### Online (141)
+### Online (142)
 
 | Datum | Titel | Datei |
 |---|---|---|
+| 02.11.2026 20:30 | Pernod Ricard: Free Cashflow steigt, die Dividende bleibt knapp gedeckt | [79738897_2026-11-02/7969_2030-pernod-ricard-free-cashflow-dividende-2026.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/79738897_2026-11-02/7969_2030-pernod-ricard-free-cashflow-dividende-2026.md) |
 | 02.11.2026 17:17 | Marvell schluckt Lumentum für 115 Mrd. USD: All-Stock-Deal bringt 23,9 % Aufschlag | [79738897_2026-11-02/8284_1715-marvell-uebernahme-lumentum-2026.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/79738897_2026-11-02/8284_1715-marvell-uebernahme-lumentum-2026.md) |
 | 02.11.2026 15:34 | Berenberg-Marktmonitor: Tech-Skepsis, US-Wahlen und Zinswende belasten die Märkte | [79738897_2026-11-02/8465_1534-berenberg-marktmonitor-november-2026.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/79738897_2026-11-02/8465_1534-berenberg-marktmonitor-november-2026.md) |
 | 01.11.2026 22:03 | Abbott: 97 % Verfahrenserfolg in Zulassungsstudie für SonicForce-System | [79738898_2026-11-01/7842_2157-abbott-sonicforce-tectonic-studie-2026.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/79738898_2026-11-01/7842_2157-abbott-sonicforce-tectonic-studie-2026.md) |

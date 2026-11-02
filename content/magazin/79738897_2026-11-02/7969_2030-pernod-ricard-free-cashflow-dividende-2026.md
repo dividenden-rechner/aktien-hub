@@ -8,6 +8,7 @@ category: Analyse
 logo_name: "Pernod Ricard"
 logo_symbol: RI.PA
 logo_domain: pernod-ricard.com
+logo_file: assets/logos/ri-pa.png
 ---
 <!-- PRÜFEN: Zahlen zu Geschäftsjahr 2026, Schuldenbrücke, Investitionen, Cash-Umwandlung, Dividende, Hauptversammlung am 20. November und Q1-Regionen mit Pernod-Pressemitteilung, Präsentation und Q1-Meldung abgeglichen. Schuldenbrücke offiziell: Free Cashflow 1.197, Dividenden -1.226, Verkäufe/Beteiligungen netto +374, Treasury/Sonstiges -10, Währung -154, Leasing -116, Ergebnis +65 (Grafik fasst Leasing und Sonstiges zu -126 zusammen). -->
 <!-- PRÜFEN: Nicht belegt: Aktienkurse 59,22 Euro (6. Oktober) und 68,92 Euro sowie die daraus errechneten rund 16 Prozent und 6,8 Prozent Rendite stammen aus dem Redaktionstext, bitte mit aktuellem Kurs gegenlesen. Die erwartete Umsatzzahl der Analysten (im Entwurf -1,7 Prozent) steht nicht in der Pernod-Meldung und wurde deshalb nicht übernommen. -->
