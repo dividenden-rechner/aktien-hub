@@ -5,12 +5,14 @@ date: 2026-11-02 20:30
 author: "Redaktions-Team Dividenden-Rechner.de"
 author_bio: "Das Redaktions-Team von Dividenden-Rechner.de schreibt über Dividendenaktien, Kennzahlen und Steuerthemen für Privatanleger. Die Rechner und Auswertungen auf der Seite entstehen im eigenen Haus."
 category: Analyse
-image: assets/magazin/pernod-ricard-free-cashflow-dividende-2026-foto.jpg
-image_alt: "Ein Glas Lillet mit Eis, Beeren und Rosmarin auf einer Café-Terrasse. Lillet gehört zu Pernod Ricard."
-image_credit: "Foto: Dividenden-Rechner"
 logo_name: "Pernod Ricard"
 logo_symbol: RI.PA
 logo_domain: pernod-ricard.com
+image: assets/magazin/pernod-ricard-free-cashflow-dividende-2026-foto.jpg
+image_alt: "Foto zu Pernod Ricard: Lillet Blanc Aperitif."
+image_credit: "Foto: Indrajit Das / Wikimedia Commons, CC BY-SA 4.0"
+image_source: https://commons.wikimedia.org/wiki/File:Lillet_Blanc_Aperitif_02.jpg
+image_artist_url: 
 logo_file: assets/logos/ri-pa.png
 ---
 <!-- PRÜFEN: Zahlen zu Geschäftsjahr 2026, Schuldenbrücke, Investitionen, Cash-Umwandlung, Dividende, Hauptversammlung am 20. November und Q1-Regionen mit Pernod-Pressemitteilung, Präsentation und Q1-Meldung abgeglichen. Schuldenbrücke offiziell: Free Cashflow 1.197, Dividenden -1.226, Verkäufe/Beteiligungen netto +374, Treasury/Sonstiges -10, Währung -154, Leasing -116, Ergebnis +65 (Grafik fasst Leasing und Sonstiges zu -126 zusammen). -->
