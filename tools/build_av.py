@@ -22,6 +22,12 @@ css = """<style>
 .av-table thead th:first-child{z-index:3}
 .av-table .num{text-align:right;white-space:nowrap;min-width:96px}.av-table td.num b{font-weight:600;color:#065f46}
 .av-table td.w{min-width:260px;max-width:320px}.av-table td,.av-table th[scope=row]{height:1px}
+.tool .av-table th,.tool .av-table td{border:0;border-bottom:1px solid #eef1f4}.tool .av-table tbody th{color:#33414d;background:#fff;text-align:left;font-weight:600}.tool .av-table thead th{color:#5b6874;background:#f6f8fa;text-align:left}.tool .av-table .num{text-align:right}.tool .av-table tbody tr:last-child th,.tool .av-table tbody tr:last-child td{border-bottom:0}.tool .av-rank tr.sel th,.tool .av-rank tr.sel td{background:#f1f9f4}.tool .av-rank tr.off th{color:#9aa5af}
+.av-jump{font-size:.88rem;margin:-4px 0 14px}.av-h3{font-size:1.05rem;margin:1.8rem 0 .2rem}.av-sub{font-size:.85rem;color:#6b7782;margin:0 0 8px}
+.av-rank{min-width:660px}.av-rank td.t{white-space:nowrap}.av-rank tr.sel td,.av-rank tr.sel th{background:#f1f9f4}.av-rank tr.off td,.av-rank tr.off th{color:#9aa5af}
+.av-rank th:first-child{min-width:220px}.av-rank .av-id span{white-space:nowrap}.av-rank .av-logo{width:22px;height:22px}.av-rank .dif.pos{color:#0f6b46}.av-rank .dif.neg{color:#b3372d}
+.tool .av-pick{padding:3px 10px;font-size:.78rem;font-weight:500;background:#fff;color:#33414d;border:1px solid #d5dce2;border-radius:6px}.tool .av-pick:hover{background:#f6f8fa}
+.av-provg{grid-column:1/-1}.av-provg select{max-width:340px}
 .av-n{font-weight:600;white-space:nowrap}
 #anbieter-bereich{max-width:1100px!important}#anbieter-bereich>:not(.av-tablewrap){max-width:760px}
 .av-q{white-space:nowrap;min-width:150px}.av-q a{display:block;color:#5b6874;margin:0 0 3px;font-size:.78rem;text-decoration:underline;text-decoration-color:#cfd6dc}
@@ -49,8 +55,16 @@ for i, f in enumerate(D["firmen"]):
         f'<td class="w">{esc(f["kosten"])}' + (f'<div class="av-h">{esc(f["hinweis"])}</div>' if f["hinweis"] else "") + '</td>'
         f'<td class="w">{esc(f["depot"])}</td><td class="w">{esc(f["fonds"])}</td>'
         f'<td>{esc(f["typ"])}</td><td>{esc(f["status"])}</td><td class="av-q">{q}</td></tr>')
+def dmy(s):
+    return f"{s[8:10]}.{s[5:7]}.{s[:4]}"
+GEPR = (f" Zuletzt automatisch auf Änderungen geprüft am {dmy(D['geprueft'])}." if D.get("geprueft") else "")
+FELD = {"kosten_start": "Kosten zu Beginn", "kosten_dauer": "Kosten langfristig", "start_jahre": "Jahre der Erstattung"}
+AEND = ""
+if D.get("aenderungen"):
+    li = "".join(f'<li>{dmy(a["datum"])}: <strong>{esc(a["anbieter"])}</strong>, {FELD.get(a["feld"], a["feld"])} von {"offen" if a["alt"] is None else fig(a["alt"]) if a["feld"] != "start_jahre" else str(a["alt"])} auf {fig(a["neu"]) if a["feld"] != "start_jahre" else str(a["neu"])} (<a href="{esc(a["quelle"])}" target="_blank" rel="noopener nofollow">Quelle</a>)</li>' for a in reversed(D["aenderungen"][-6:]))
+    AEND = f'<h3 class="av-h3">Letzte Änderungen</h3><ul class="av-chg">{li}</ul>'
 body = f"""<h2 id="anbieter">Anbieter im Vergleich</h2>
-<p class="lead">Ab dem 1. Januar 2027 können Verträge für das neue geförderte Altersvorsorgedepot abgeschlossen werden. Hier siehst du, was Trade Republic, Scalable Capital, ING, Deka und weitere angekündigt haben. Stand der Angaben: {esc(D["stand"][8:10])}.{esc(D["stand"][5:7])}.{esc(D["stand"][:4])}.</p>
+<p class="lead">Ab dem 1. Januar 2027 können Verträge für das neue geförderte Altersvorsorgedepot abgeschlossen werden. Hier siehst du, was Trade Republic, Scalable Capital, ING, Deka und weitere angekündigt haben. Stand der Angaben: {esc(D["stand"][8:10])}.{esc(D["stand"][5:7])}.{esc(D["stand"][:4])}.{GEPR}</p>
 <p class="note"><strong>Wichtig:</strong> {esc(D["hinweis"])} Verglichen werden die laufenden Kosten des Standarddepots, die ETF-Erstattungen sind meist befristet. Dein Ergebnis hängt zusätzlich von Förderung, Fondsauswahl und Beitrag ab. Das ist keine Anlageberatung.</p>
 <h2>Was ist am günstigsten?</h2>
 <ul class="av-sum">
@@ -65,6 +79,7 @@ body = f"""<h2 id="anbieter">Anbieter im Vergleich</h2>
 <tbody id="avl">
 {chr(10).join(rows)}
 </tbody></table></div>
+{AEND}
 <h2>Das gilt für alle Anbieter</h2>
 <ul>
 <li><strong>Start:</strong> 1. Januar 2027. Das Gesetz zur Reform der privaten Altersvorsorge hat der Bundestag am 27. März 2026 beschlossen, der Bundesrat hat am 8. Mai 2026 zugestimmt. Vor der Zertifizierung durch das Bundeszentralamt für Steuern darf kein Anbieter Verträge verkaufen.</li>
@@ -93,7 +108,8 @@ t.onclick=function(e){var b=e.target.closest(".av-tab");if(!b)return;var s=b.dat
 var rows=Array.prototype.slice.call(l.children);rows.sort(function(a,b){var x=key(a,s),y=key(b,s);return x<y?-1:x>y?1:(+a.dataset.i)-(+b.dataset.i)});rows.forEach(function(r){l.appendChild(r)})};
 })();
 </script>"""
-block = "<!--av-start-->\n" + css + '<section id="anbieter-bereich">' + body + "</section>\n" + js + "\n<!--av-end-->"
+data = json.dumps([{"n": f["name"], "d": DOM.get(f["name"], ""), "ks": f["kosten_start"], "kd": f["kosten_dauer"], "j": f.get("start_jahre", 0)} for f in D["firmen"]], ensure_ascii=False)
+block = "<!--av-start-->\n" + '<script type="application/json" id="av-data">' + data + "</script>\n" + css + '<section id="anbieter-bereich">' + body + "</section>\n" + js + "\n<!--av-end-->"
 page = re.sub(r"<!--av-start-->.*?<!--av-end-->", lambda m: block, page, flags=re.S)
 title = "Altersvorsorgedepot-Rechner und Anbieter im Vergleich 2027"
 desc = "Altersvorsorgedepot berechnen: Zulagen, Depotwert und Auszahlung, dazu die Anbieter 2027 im Vergleich (Trade Republic, Scalable, ING, Deka, comdirect) mit Kosten und Quellen."

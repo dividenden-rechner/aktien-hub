@@ -1,8 +1,8 @@
 /* Kompaktes, ruhiges Rechner-Design: kleine Eingabefelder, Kennzahlen als Zeile statt grosser Kacheln */
-.tool .form-container{grid-template-columns:repeat(4,minmax(0,1fr));gap:14px 18px;margin-bottom:1.2rem;padding:16px 18px;background:#f6f8fa;border:1px solid #e6ebef;border-radius:10px}
+.tool .form-container{grid-template-columns:repeat(4,minmax(0,1fr));gap:14px 18px;margin-bottom:1.2rem;padding:0;background:none;border:0;border-radius:0}
 .tool .form-container.two{grid-template-columns:repeat(2,minmax(0,1fr))}
 @media (max-width:1000px){.tool .form-container,.tool .form-container.two{grid-template-columns:repeat(3,minmax(0,1fr))}}
-@media (max-width:760px){.tool .form-container,.tool .form-container.two{grid-template-columns:repeat(2,minmax(0,1fr));gap:12px 12px;padding:12px}}
+@media (max-width:760px){.tool .form-container,.tool .form-container.two{grid-template-columns:repeat(2,minmax(0,1fr));gap:12px 12px;padding:0}}
 @media (max-width:420px){.tool .form-container,.tool .form-container.two{grid-template-columns:1fr}}
 .tool .form-container{align-items:end}.tool .form-group{justify-content:flex-end;min-width:0}
 .tool label{font-size:.78rem;font-weight:600;color:#5b6874;margin-bottom:5px;line-height:1.3}

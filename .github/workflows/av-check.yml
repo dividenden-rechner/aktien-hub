@@ -1,0 +1,37 @@
+name: Altersvorsorgedepot-Anbieter prüfen
+on:
+  schedule:
+    - cron: "15 5 * * 1,4"   # montags und donnerstags, ca. 06:15 deutsche Zeit
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: av-check
+  cancel-in-progress: false
+jobs:
+  pruefen:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install pillow
+      - name: Quellen lesen und Konditionen abgleichen
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+        run: python3 tools/av_check.py
+      - name: Seite neu bauen
+        run: |
+          python3 tools/build_av.py
+          python3 tools/build_seo.py
+      - name: Committen
+        run: |
+          git config user.name "av-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add -A data/ altersvorsorgedepot/
+          if git diff --cached --quiet; then echo "Keine Aenderungen"; exit 0; fi
+          git commit -m "Altersvorsorgedepot: Anbieter-Konditionen geprüft und aktualisiert"
+          git pull --rebase -q
+          git push
