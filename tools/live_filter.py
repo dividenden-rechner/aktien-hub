@@ -81,12 +81,16 @@ def main():
                 open(p, "w", encoding="utf-8").write(s2)
             elif f == "sitemap.xml":
                 s = open(p, encoding="utf-8").read()
-                s = re.sub(r"<url><loc>[^<]*/(?:" + hid_alt() + r")/[^<]*</loc>.*?</url>\n?", "", s, flags=re.S)
+                s = re.sub(r"<url><loc>" + re.escape(ALT) + r"(?:" + hid_alt() + r")/[^<]*</loc>.*?</url>\n?", "", s, flags=re.S)
                 open(p, "w", encoding="utf-8").write(neu(s))
             elif f in ("llms.txt", "robots.txt"):
-                lines = [l for l in open(p, encoding="utf-8").read().split("\n") if not re.search(r"/(?:" + hid_alt() + r")/", l)]
+                lines = [l for l in open(p, encoding="utf-8").read().split("\n") if not re.search(r"(?:^|[\s(<\"])(?:" + re.escape(ALT) + r"|/)(?:" + hid_alt() + r")/", l)]
                 s = "\n".join(lines)
                 if f == "robots.txt" and TEST: s = s.rstrip("\n") + "\n\nUser-agent: *\nDisallow: /" + TEST + "/\n"
+                open(p, "w", encoding="utf-8").write(neu(s))
+            elif NEU and f.endswith((".xml", ".txt", ".json", ".webmanifest")) and f != "live.json":
+                try: s = open(p, encoding="utf-8").read()
+                except Exception: continue
                 open(p, "w", encoding="utf-8").write(neu(s))
     print(f"{OUT}: {n_html} Seiten angepasst, versteckt: {', '.join(HID)}" + (f", Testkopie: /{TEST}/" if TEST else ""))
 
