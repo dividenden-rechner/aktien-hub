@@ -30,30 +30,11 @@ Foto-Kandidaten: 62 (Commons 30, Unsplash 32)
   28: File:Anti ai data center sign 2.jpg | Anti-data-center sentiment in rural Kansas neighborhood
   29: File:Business applications of AI - 2024 AI index.jpg | Tasks that are automated with AI by a significant proportion of companies, in 20
 Verfuegbare Flash-Modelle: gemini-3.8-flash, gemini-3.7-flash, gemini-3.6-flash, gemini-3.5-flash, gemini-3.5-flash-lite, gemini-3.1-flash-lite, gemini-3.1-flash-lite-preview, gemini-3-flash-preview, gemini-2.5-flash, gemini-2.5-flash-lite, gemini-flash-latest, gemini-omni-1.1-flash, gemini-flash-lite-latest, gemini-omni-flash-preview
-Modell-Problem -> gemini-3.8-flash: Fehler 503: {
+Modell-Problem -> gemini-3.8-flash: Fehler 429: {
   "error": {
-    "code": 503,
-    "message": "This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.",
-    "status": "UNAVAILABLE"
-  }
-}
-
-Modell-Problem -> gemini-3.8-flash: Fehler 503: {
-  "error": {
-    "code": 503,
-    "message": "This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.",
-    "status": "UNAVAILABLE"
-  }
-}
-
-Modell-Problem -> gemini-3.8-flash: Fehler 503: {
-  "error": {
-    "code": 503,
-    "message": "This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.",
-    "status": "UNAVAILABLE"
-  }
-}
-
+    "code": 429,
+    "message": "You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota ex
+Tageskontingent dieses Modells aufgebraucht, naechstes Modell.
 Modell-Problem -> gemini-3.7-flash: Fehler 503: {
   "error": {
     "code": 503,
@@ -62,115 +43,121 @@ Modell-Problem -> gemini-3.7-flash: Fehler 503: {
   }
 }
 
-Modell-Problem -> gemini-3.7-flash: Fehler 503: {
+Modell-Problem -> gemini-3.7-flash: Fehler 429: {
   "error": {
-    "code": 503,
-    "message": "This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.",
-    "status": "UNAVAILABLE"
-  }
-}
-
-Modell-Problem -> gemini-3.7-flash: The read operation timed out
+    "code": 429,
+    "message": "You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota ex
+Tageskontingent dieses Modells aufgebraucht, naechstes Modell.
 Modell: gemini-3.6-flash
-Auswahl durch das Modell: 31
-Neues Foto: Unsplash klWUhr-wPJ8 -> https://images.unsplash.com/photo-1506399558188-acca6f8cbf41?ixid=M3wxMTE3OTgzfDB8MXxzZWFyY2h8Mnx8ZGF0YSUyMGNlbnRlciUyMHNlcnZlcnN8ZW58MXwwfHx8MTc5MzY0NjI1NXww&ixlib=rb-4.1.0&w=1600&h=900&fit=crop&crop=entropy&q=80&fm=jpg
+Auswahl durch das Modell: 41
+Neues Foto: Unsplash aWslrFhs1w4 -> https://images.unsplash.com/photo-1564457461758-8ff96e439e83?ixid=M3wxMTE3OTgzfDB8MXxzZWFyY2h8NXx8c2VydmVyJTIwcm9vbXxlbnwxfDB8fHwxNzkzNjU0Mjg1fDA&ixlib=rb-4.1.0&w=1600&h=900&fit=crop&crop=entropy&q=80&fm=jpg
 Logo-Angaben gesetzt, fetch_logos holt das Logo neu.
-Foto-Kandidaten: 66 (Commons 30, Unsplash 36)
-  0: File:AV0A0671 Lillet.jpg | Das Getränk Lillet bei der Breuninger Fashionshow im Rahmen von Platform Fashion
-  1: File:Lillet Blanc Aperitif 02.jpg | Lillet Blanc Aperitif.
-  2: File:Lillet rouge - apéritif de Gironde 2.jpg | apéritif Lillet rouge, de Gironde
-  3: File:MTN25-0255c3-2014-La Pobla de Lillet.jpg | Fragment 0255c3 of the National Topographic Map of Spain in 2014 at a scale of 1
-  4: File:Podensac Lillet 01.jpg | Company Lillet in Podensac ( Gironde , France )
-  5: File:QP Monestir de Santa Maria de Lillet 2.jpg | Monestir de Santa Maria de Lillet. Interior de l'església, vista des del cor.
-  6: File:QP Monestir de Santa Maria de Lillet 4.jpg | Monestir de Santa Maria de Lillet. Recipient per a l'oli de les llànties o per a
-  7: File:QP Sant Miquel de Lillet 1.jpg | Cartell informatiu a sant Miquel de Lillet
-  8: File:QP Sant Miquel de Lillet 2.jpg | Sant Miquel de Lillet,.interior
-  9: File:QP Sant Miquel de Lillet 5.jpg | Sant Miquel de Lillet
-  10: File:QP Sant Miquel de Lillet 6.jpg | Sant Miquel de Lillet
-  11: File:QP Sant Miquel de Lillet 7.jpg | Sant Miquel de Lillet
-  12: File:Cours Paul-Ricard IMG 20211117 145720.jpg | « The Island », siège du groupe Pernod-Ricard , cours Paul-Ricard
-  13: File:Cours Paul-Ricard IMG 20211117 145839.jpg | Le cours Paul-Ricard et « The Island », siège du groupe Pernod-Ricard à droite
-  14: File:Cours Paul-Ricard IMG 20211117 150255.jpg | « The Island », siège du groupe Pernod-Ricard et le cours Paul-Ricard
-  15: File:Fondation Pernod Ricard-05852 copie.jpg | FondationPernodRicard
-  16: File:Inauguración de las nuevas instalaciones de la empresa Pernod Ricard España (50725570963).jpg | Las Labores (Ciudad Real), 16 de diciembre de 2020.- El presidente de Castilla-L
-  17: File:Inauguración de las nuevas instalaciones de la empresa Pernod Ricard España (50725571043).jpg | Las Labores (Ciudad Real), 16 de diciembre de 2020.- El presidente de Castilla-L
-  18: File:Inauguración de las nuevas instalaciones de la empresa Pernod Ricard España (50725575383).jpg | Las Labores (Ciudad Real), 16 de diciembre de 2020.- El presidente de Castilla-L
-  19: File:Inauguración de las nuevas instalaciones de la empresa Pernod Ricard España (50725576668).jpg | Las Labores (Ciudad Real), 16 de diciembre de 2020.- El presidente de Castilla-L
-  20: File:Inauguración de las nuevas instalaciones de la empresa Pernod Ricard España (50725578173).jpg | Las Labores (Ciudad Real), 16 de diciembre de 2020.- El presidente de Castilla-L
-  21: File:Inauguración de las nuevas instalaciones de la empresa Pernod Ricard España (50725579458).jpg | Las Labores (Ciudad Real), 16 de diciembre de 2020.- El presidente de Castilla-L
-  22: File:Inauguración de las nuevas instalaciones de la empresa Pernod Ricard España (50725592748).jpg | Las Labores (Ciudad Real), 16 de diciembre de 2020.- El presidente de Castilla-L
-  23: File:Inauguración de las nuevas instalaciones de la empresa Pernod Ricard España (50726307661).jpg | Las Labores (Ciudad Real), 16 de diciembre de 2020.- El presidente de Castilla-L
-  24: File:Inauguración de las nuevas instalaciones de la empresa Pernod Ricard España (50726398042).jpg | Las Labores (Ciudad Real), 16 de diciembre de 2020.- El presidente de Castilla-L
-  25: File:Inauguración de las nuevas instalaciones de la empresa Pernod Ricard España (50726412767).jpg | Las Labores (Ciudad Real), 16 de diciembre de 2020.- El presidente de Castilla-L
-  26: File:Inauguración de las nuevas instalaciones de la empresa Pernod Ricard España (50726417592).jpg | Las Labores (Ciudad Real), 16 de diciembre de 2020.- El presidente de Castilla-L
-  27: File:Inauguración de las nuevas instalaciones de la empresa Pernod Ricard España (50726419187).jpg | Las Labores (Ciudad Real), 16 de diciembre de 2020.- El presidente de Castilla-L
-  28: File:Aperol Aperitivo Aperitif 02.jpg | Award - Double Gold Medal - San Francisco World Spirits Competition 2012.
-  29: File:Aperol Spritz - July 2024 - Sarah Stierch.jpg | Aperol Spritz at Sonoma Speakeasy, Sonoma, California
+Foto-Kandidaten: 65 (Commons 26, Unsplash 39)
+  0: File:A pharmaceutical laboratory with books and equipment on a lo Wellcome V0029790.jpg | A pharmaceutical laboratory with books and equipment on a long wooden table and 
+  1: File:Allen & Hanbury,General Pharmaceutical Laboratory Wellcome L0005119.jpg | Pharmacy: 19th century; interior of Allen & Hanburys General Pharmaceutical Labo
+  2: File:HK Chai Wan IVE 藥劑實驗室 Pharmaceutical Science Laboratory 簿模衣片 Film coated 專業教育學院柴灣分校 Rm 516.JPG | zh:柴灣 香港專業教育學院柴灣分校 藥劑科學實驗室 展覽品 藥丸 置於透明 膠瓶 備設英文標籤 貼紙
+  3: File:HK Chai Wan IVE 藥劑實驗室 Pharmaceutical Science Laboratory 糖衣 Sugar coated Room 516.JPG | zh:柴灣 香港專業教育學院柴灣分校 藥劑科學實驗室 展覽品 藥丸 置於透明 膠瓶 備設英文標籤 貼紙
+  4: File:HK Chai Wan IVE 藥劑實驗室 Pharmaceutical Science Laboratory 肉桂 Room 516.JPG | zh:柴灣 香港專業教育學院柴灣分校 藥劑科學實驗室 展覽品 中藥 zh:肉桂 設置英文標籤 玻璃瓶
+  5: File:HK Chai Wan IVE 藥劑實驗室 Pharmaceutical Science Laboratory 黃柏 Room 516.JPG | zh:柴灣 香港專業教育學院柴灣分校 藥劑科學實驗室 展覽品 中藥 黃柏 設置英文標籤
+  6: File:HK Chai Wan IVE 藥劑實驗室 Pharmaceutical Science Laboratory 黨參 Room 516.JPG | zh:柴灣 香港專業教育學院柴灣分校 藥劑科學實驗室 中藥 黨參 展覽品 放於透明 玻璃瓶內 備設英文標籤
+  7: File:HK Chai Wan IVE 藥劑科學實驗室 Pharmaceutical Science Laboratory Rm 516.JPG | zh:柴灣 香港專業教育學院柴灣分校 藥劑科學實驗室 516室
+  8: File:Interior of a pharmaceutical laboratory with people at work; Wellcome L0002208.jpg | Interior of a pharmaceutical laboratory with people at work; the shop is visible
+  9: File:Pfizer Inc Middleton Research Pharmaceutical laboratory - panoramio.jpg | Pfizer Inc Middleton Research Pharmaceutical laboratory
+  10: File:ROHTO Pharmaceutical Co., Ltd. headquarters and laboratory.jpg | ロート製薬株式会社本社および大阪工場・研究所を撮影。
+  11: File:ROHTO Pharmaceutical Co., Ltd. laboratory.jpg | ロート製薬株式会社大阪工場・研究所を撮影。
+  12: File:The interior of a pharmaceutical or chemical laboratory, wit Wellcome L0014193.jpg | The interior of a pharmaceutical or chemical laboratory, with two long benches i
+  13: File:The interior of a pharmaceutical or chemical laboratory, wit Wellcome L0014196.jpg | The interior of a pharmaceutical or chemical laboratory, with two long benches i
+  14: File:The interior of a pharmaceutical or chemical laboratory, wit Wellcome V0029738.jpg | The interior of a pharmaceutical or chemical laboratory, with two long benches i
+  15: File:The interior of a pharmaceutical or chemical laboratory, wit Wellcome V0029739.jpg | The interior of a pharmaceutical or chemical laboratory, with two long benches i
+  16: File:The interior of a pharmaceutical or chemical laboratory with Wellcome L0014195.jpg | The interior of a pharmaceutical or chemical laboratory with a bench in the cent
+  17: File:The interior of a pharmaceutical or chemical laboratory with Wellcome V0029737.jpg | The interior of a pharmaceutical or chemical laboratory with a bench in the cent
+  18: File:UBC Pharmaceutical Sciences Building.jpg | The UBC Pharmaceutical Sciences Building. Used as a filming location in Backstro
+  19: File:CFTR.jpg | CFTR cartoon from 1989 Journal of NIH Research, defunct since 1997 but previousl
+  20: File:Mayor John F. Collins receives tickets to the Celtics-Lakers game from John A. Hayes, President Massachusetts Cystic Fibrosis Research Foundation (13563002685).jpg | Title: Mayor John F. Collins receives tickets to the Celtics/Lakers game from Jo
+  21: File:Cutting & Lifting docking pile guide after pilling (3467346026).jpg | Installation Subsea Template in Su Tu Vang Oil Field
+  22: File:Fremington Pill landscape.jpg | Fremington Pill, near to Fremington , Devon . The area was known for pottery pro
+  23: File:Old wooden pillers preserved within Pemayangtse Monastery, Pelling, West Sikkim.jpg | Old wooden pillers preserved within Pemayangtse Monastery, Pelling, West Sikkim 
+  24: File:Yellow Pills.jpg | Production of drugs, yellow pills 1995
+  25: File:Pharmacie in Paulista Avenue.jpg | Pharmacie in Paulista Avenue. In some countries, such as Brazil (photo) and Fran
+  26: Unsplash HruSbX2a77M | Laboratory technician monitoring environment in lab
+  27: Unsplash dvYKZyVLC9c | Laboratory technician inspecting environmental monitoring plate.
+  28: Unsplash y6zGvWKU6sE | A person in a lab coat and gloves working on a machine
+  29: Unsplash FcIrL0o71Dk | This photograph depicted a Centers for Disease Control and Prevention (CDC) scie
 Verfuegbare Flash-Modelle: gemini-3.8-flash, gemini-3.7-flash, gemini-3.6-flash, gemini-3.5-flash, gemini-3.5-flash-lite, gemini-3.1-flash-lite, gemini-3.1-flash-lite-preview, gemini-3-flash-preview, gemini-2.5-flash, gemini-2.5-flash-lite, gemini-flash-latest, gemini-omni-1.1-flash, gemini-flash-lite-latest, gemini-omni-flash-preview
-Modell-Problem -> gemini-3.8-flash: Fehler 503: {
+Modell-Problem -> gemini-3.8-flash: Fehler 429: {
   "error": {
-    "code": 503,
-    "message": "This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.",
-    "status": "UNAVAILABLE"
-  }
-}
-
-Modell-Problem -> gemini-3.8-flash: Fehler 503: {
+    "code": 429,
+    "message": "You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota ex
+Tageskontingent dieses Modells aufgebraucht, naechstes Modell.
+Modell-Problem -> gemini-3.7-flash: Fehler 429: {
   "error": {
-    "code": 503,
-    "message": "This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.",
-    "status": "UNAVAILABLE"
-  }
-}
-
-Modell-Problem -> gemini-3.8-flash: Fehler 503: {
+    "code": 429,
+    "message": "You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota ex
+Tageskontingent dieses Modells aufgebraucht, naechstes Modell.
+Modell-Problem -> gemini-3.6-flash: Fehler 429: {
   "error": {
-    "code": 503,
-    "message": "This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.",
-    "status": "UNAVAILABLE"
-  }
-}
-
-Modell-Problem -> gemini-3.7-flash: Fehler 503: {
+    "code": 429,
+    "message": "You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota ex
+Tageskontingent dieses Modells aufgebraucht, naechstes Modell.
+Modell-Problem -> gemini-3.5-flash: Fehler 429: {
   "error": {
-    "code": 503,
-    "message": "This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.",
-    "status": "UNAVAILABLE"
-  }
-}
-
-Modell-Problem -> gemini-3.7-flash: Fehler 503: {
+    "code": 429,
+    "message": "You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota ex
+Tageskontingent dieses Modells aufgebraucht, naechstes Modell.
+Modell: gemini-3.5-flash-lite
+Auswahl durch das Modell: 39
+Neues Foto: Unsplash Vb0GY3PWSSM -> https://images.unsplash.com/photo-1583912267670-6575ad472688?ixid=M3wxMTE3OTgzfDB8MXxzZWFyY2h8Nnx8Y3lzdGljJTIwZmlicm9zaXMlMjByZXNlYXJjaHxlbnwxfDB8fHwxNzkzNjU0MzI3fDA&ixlib=rb-4.1.0&w=1600&h=900&fit=crop&crop=entropy&q=80&fm=jpg
+Logo-Angaben gesetzt, fetch_logos holt das Logo neu.
+Foto-Kandidaten: 28 (Commons 12, Unsplash 16)
+  0: File:Gene-editing Techniques in Plant Cells.jpg | Different gene editing methods used in plant cells
+  1: File:20251019 Replica DNA double helix model Berlin 04.jpg | Guanine in the Replica of the DNA double helix model by Watson and Crick in the 
+  2: File:DNA Double Helix (20468181866).jpg | Credit: National Human Genome Research Institute, National Institutes of Health.
+  3: File:DNA Double Helix (4932403853).jpg | DNA Double Helix
+  4: File:DNA Helix CPK.jpg | Part of a dna double helix showing the minor groove (Space-filling model)
+  5: File:Barbara McClintock (1902-1992) shown in her laboratory in 1947.jpg | Barbara McClintock (1902-1992), Department of Genetics, Carnegie Institution at 
+  6: File:Genetics Laboratory UMAR Puerto Escondido.jpg | This is a Droplet Digital PCR System, QX200, BIORAT used for research at the Lab
+  7: File:CRISPR-Cas9 Editing of the Genome (26453307604).jpg | CRISPR-Cas9 is a customizable tool that lets scientists cut and insert small pie
+  8: File:CRISPR Cas9 (41124064215).jpg | CRISPR-Cas9 is a customizable tool that lets scientists cut and insert small pie
+  9: File:Crispr.jpg | CRISPR research
+  10: File:Schematic of CRISPR-Cas9 off-target sites with DNA bulge and RNA bulge.jpg | figure explaining DNA and RNA bulge in relations to CRISPR-cas9 off-target effec
+  11: File:Viral mediated delivery of genes to neurons 2.jpg | Figure 2.Lentivirus (upper panel) – Part of the retroviridae family (viral sizes
+  12: Unsplash 8o_LkMpo8ug | a close up of a blue and purple structure
+  13: Unsplash -qycBqByWIY | A white and blue DNA double helix structure against a dark background
+  14: Unsplash Iy7QyzOs1bo | A glowing white DNA double helix structure floating against a dark background
+  15: Unsplash -bJj_81Zois | 3D Rendering DNA With Particles and Blurry Background.
+  16: Unsplash pRt3JVYlJho | a double strand of blue and white spirals
+  17: Unsplash uD98M9OhNmc | 3D rendering capturing the double helix structure of DNA against a blue backdrop
+  18: Unsplash Mm1VIPqd0OA | 3D visualization
+  19: Unsplash 2GEr4fLZt8A | 3D rendering capturing the double helix structure of DNA against a blue backdrop
+  20: Unsplash XknuBmnjbKg | Vaccine. Hands of a scientist, under a sterile hood, preparing the carcinoembryo
+  21: Unsplash oCLuFi9GYNA | DNA Genotyping and Sequencing. A technician works among a fleet of desktop genom
+  22: Unsplash rHfsPolwIgk | DNA Genotyping and Sequencing. A technician observing cells under a microscope a
+  23: Unsplash LxPrHCm8-TI | DNA Genotyping and Sequencing. A technician validates genetic variants identifie
+  24: Unsplash v7ibB19EUbQ | Chanelle Case Borden, Ph.D., a postdoctoral fellow in the National Cancer Instit
+  25: Unsplash fd0b-Bl4cFc | DNA Genotyping and Sequencing. Vials containing DNA samples from studies of the 
+  26: Unsplash GlZv6YgCUyM | DNA Genotyping and Sequencing. A technician works among a fleet of desktop genom
+  27: Unsplash Vb0GY3PWSSM | A female scientist in a laboratory looks through a microscope.
+Verfuegbare Flash-Modelle: gemini-3.8-flash, gemini-3.7-flash, gemini-3.6-flash, gemini-3.5-flash, gemini-3.5-flash-lite, gemini-3.1-flash-lite, gemini-3.1-flash-lite-preview, gemini-3-flash-preview, gemini-2.5-flash, gemini-2.5-flash-lite, gemini-flash-latest, gemini-omni-1.1-flash, gemini-flash-lite-latest, gemini-omni-flash-preview
+Modell-Problem -> gemini-3.8-flash: Fehler 429: {
   "error": {
-    "code": 503,
-    "message": "This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.",
-    "status": "UNAVAILABLE"
-  }
-}
-
-Modell-Problem -> gemini-3.7-flash: Fehler 503: {
+    "code": 429,
+    "message": "You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota ex
+Tageskontingent dieses Modells aufgebraucht, naechstes Modell.
+Modell-Problem -> gemini-3.7-flash: Fehler 429: {
   "error": {
-    "code": 503,
-    "message": "This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.",
-    "status": "UNAVAILABLE"
-  }
-}
-
-Modell-Problem -> gemini-3.6-flash: Fehler 503: {
+    "code": 429,
+    "message": "You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota ex
+Tageskontingent dieses Modells aufgebraucht, naechstes Modell.
+Modell-Problem -> gemini-3.6-flash: Fehler 429: {
   "error": {
-    "code": 503,
-    "message": "This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.",
-    "status": "UNAVAILABLE"
-  }
-}
-
-Modell-Problem -> gemini-3.6-flash: Fehler 503: {
+    "code": 429,
+    "message": "You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota ex
+Tageskontingent dieses Modells aufgebraucht, naechstes Modell.
+Modell-Problem -> gemini-3.5-flash: Fehler 429: {
   "error": {
-    "code": 503,
-    "message": "This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.",
-    "status": "UNAVAILABLE"
-  }
-}
-
-Modell: gemini-3.6-flash
-Auswahl durch das Modell: 1
-Neues Foto: File:Lillet Blanc Aperitif 02.jpg -> assets/magazin/pernod-ricard-free-cashflow-dividende-2026-foto.jpg
+    "code": 429,
+    "message": "You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota ex
+Tageskontingent dieses Modells aufgebraucht, naechstes Modell.
+Modell: gemini-3.5-flash-lite
+Auswahl durch das Modell: 21
+Neues Foto: Unsplash oCLuFi9GYNA -> https://images.unsplash.com/photo-1579154204601-01588f351e67?ixid=M3wxMTE3OTgzfDB8MXxzZWFyY2h8Mnx8Z2VuZXRpY3MlMjBsYWJvcmF0b3J5fGVufDF8MHx8fDE3OTM2NTQzMzd8MA&ixlib=rb-4.1.0&w=1600&h=900&fit=crop&crop=entropy&q=80&fm=jpg
