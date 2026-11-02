@@ -50,7 +50,7 @@ img.ek-logo{background:#fff}
 .ek-body{display:none;padding:2px 0 16px 52px}.ek-item.open .ek-body{display:block}
 .ek-body table{width:100%;max-width:560px;border-collapse:collapse;font-size:.92rem}.ek-body td,.ek-body th{padding:6px 8px;border-bottom:1px solid #e2e8f0;text-align:right}.ek-body th:first-child,.ek-body td:first-child{text-align:left}
 .ek-body .ek-go{display:inline-block;margin-top:10px}
-.ek-scope{gap:18px;padding:0 0 0;margin:0 0 12px;border-bottom:1px solid #dfe5ea}.ek-scope .ek-day{width:auto;border:0;border-bottom:2px solid transparent;border-radius:0;background:none;padding:6px 0 8px;margin-bottom:-1px;font-size:13px;font-weight:500;color:#8a97a3;white-space:nowrap}.ek-scope .ek-day:hover{color:#5b6874}.ek-scope .ek-day[aria-pressed=true]{background:none;color:#33414d;font-weight:600;border-bottom-color:#8a97a3}.ek-empty{padding:22px 0;color:#475569}.ek-sub2{font-size:.85rem;color:#8a97a3;margin-top:2px}.ek-sub2 b{font-weight:500;color:#5b6874}.ek-sub2 .t-up{color:#15803d}.ek-sub2 .t-dn{color:#b91c1c}.ek-ir{color:#5b6874;text-decoration:underline;text-underline-offset:2px;white-space:nowrap}.ek-ir:hover{color:#33414d}.ek-row.stat{cursor:default}
+.ek-scope{gap:18px;padding:0 0 0;margin:0 0 12px;border-bottom:1px solid #dfe5ea}.ek-scope .ek-day{width:auto;border:0;border-bottom:2px solid transparent;border-radius:0;background:none;padding:6px 0 8px;margin-bottom:-1px;font-size:13px;font-weight:500;color:#8a97a3;white-space:nowrap}.ek-scope .ek-day:hover{color:#5b6874}.ek-scope .ek-day[aria-pressed=true]{background:none;color:#33414d;font-weight:600;border-bottom-color:#8a97a3}.ek-empty{padding:22px 0;color:#475569}.ek-sub2{font-size:.85rem;color:#8a97a3;margin-top:2px}.ek-sub2 b{font-weight:500;color:#5b6874}.ek-sub2 .t-up{color:#15803d}.ek-sub2 .t-dn{color:#b91c1c}.ek-ir{display:inline-flex;vertical-align:middle;margin-left:6px;color:#5b6874;text-decoration:none}.ek-ir:hover{color:#33414d}.ek-ir svg{width:18px;height:18px;stroke:currentColor;fill:none;stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round}.ek-row.stat{cursor:default}
 @media(max-width:640px){.ek-fig{flex-direction:column;gap:6px;max-width:48%}.ek-fig div{min-width:0}.ek-body{padding-left:14px;padding-right:14px;overflow-x:auto}.ek-fig div{min-width:64px}.ek-row{gap:10px;padding:12px 0}.ek-body{padding-left:0}}
 </style>
 <script>if(/[?&]embed=1/.test(location.search)){document.documentElement.className+=" embed";document.write('<base target="_top">')}</script>
@@ -136,7 +136,11 @@ function artIcon(sym){var a=artFor(sym);if(!a)return"";return '<a class="ek-art"
 var APPN={},IR={};
 function nm(s){return MINE[s]||NAMES[s]||(BIG[s]&&BIG[s].n)||APPN[s]||s}
 function irUrl(s){var o=IR[s];return o&&o.url?o.url:""}
-function irLink(s){var u=irUrl(s);return u?'<a class="ek-ir" href="'+esc(u)+'" target="_blank" rel="noopener" title="Investor-Relations-Seite des Unternehmens">Investor Relations ↗</a>':""}
+var IC_IR='<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20V12M9 20V8M14 20v-5"/><path d="M4 20h10"/><path d="M15 4h5v5M20 4l-7 7"/></svg>',IC_SL='<svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="4" width="18" height="12" rx="1.5"/><path d="M8 20l4-4 4 4"/><path d="M7 12l3-3 3 2 3-4"/></svg>';
+function irLink(s){var o=IR[s]||{},h="";
+  if(o.url)h+='<a class="ek-ir" href="'+esc(o.url)+'" target="_blank" rel="noopener" title="Investor-Relations-Seite von '+esc(nm(s))+'" aria-label="Investor-Relations-Seite von '+esc(nm(s))+'">'+IC_IR+'</a>';
+  if(o.folien)h+='<a class="ek-ir" href="'+esc(o.folien)+'" target="_blank" rel="noopener" title="Präsentation von '+esc(nm(s))+'" aria-label="Präsentation von '+esc(nm(s))+'">'+IC_SL+'</a>';
+  return h}
 function num(v,d){return v==null||isNaN(v)?"–":Number(v).toLocaleString("de-DE",{minimumFractionDigits:d==null?2:d,maximumFractionDigits:d==null?2:d})}
 function big(v){if(v==null||isNaN(v))return"–";var a=Math.abs(v);return a>=1e12?num(v/1e12)+" Bio.":a>=1e9?num(v/1e9)+" Mrd.":a>=1e6?num(v/1e6,0)+" Mio.":num(v,0)}
 function gp(v){return v==null||!isFinite(v)?'<span>–</span>':'<span class="'+(v>=0?"pos":"neg")+'">'+(v>0?"+":"")+num(v*100,1)+" %</span>"}
@@ -187,8 +191,8 @@ function renderList(){
     var be=done&&r.epsEstimated!=null?bar(r.epsActual,r.epsEstimated,ge):"",bv=done&&r.revenueEstimated!=null?bar(r.revenueActual,r.revenueEstimated,gv):"";
     var subp=[];if(r.zeit)subp.push("<b>"+esc(r.zeit)+" Uhr</b>");subp.push(esc(r.was||"Quartalszahlen"));
     if(!r._k)subp.push(done?"berichtet"+(vd?', <span class="t-'+vd[1]+'">'+vd[0]+"</span>":""):"erwartet");
-    var il=irLink(s);if(il)subp.push(il);
-    var sub='<div class="ek-sub2">'+subp.join(" · ")+"</div>";
+    var il=irLink(s);
+    var sub='<div class="ek-sub2">'+subp.join(" · ")+il+"</div>";
     if(r._k){h+='<div class="ek-item" data-s="'+esc(s)+'" data-d="'+esc(r.date)+'"><div class="ek-row stat">'+logo(s,nm(s))+'<span class="ek-m"><span class="ek-nm"><a href="../aktien-hub/?s='+encodeURIComponent(s)+'">'+esc(nm(s))+"</a></span>"+sub+"</span></div></div>";return}
     h+='<div class="ek-item" data-s="'+esc(s)+'" data-d="'+esc(r.date)+'"'+(r.zeit?' data-z="'+esc(r.zeit)+'"':"")+'><button type="button" class="ek-row" aria-expanded="false">'+logo(s,nm(s))+'<span class="ek-m"><span class="ek-nm"><a href="../aktien-hub/?s='+encodeURIComponent(s)+'">'+esc(nm(s))+'</a></span>'+sub+'</span>'+artIcon(s)+(eps==null&&rev==null?"":'<span class="ek-fig"><div>'+num(eps)+'<span class="'+(done?"t-"+tone(ge):"")+'">Gewinn/Aktie'+(done?ee:" (Schätzung)")+'</span>'+be+'</div><div>'+big(rev)+'<span class="'+(done?"t-"+tone(gv):"")+'">Umsatz'+(done?ev:" (Schätzung)")+'</span>'+bv+'</div></span>')+'</button><div class="ek-body"><p class="ek-sub">Lade Details …</p></div></div>';
   });
@@ -214,7 +218,7 @@ async function details(item){
     dh='<table style="margin-top:12px"><thead><tr><th>Dividende</th><th>Aktuell</th><th>Vor einem Jahr</th><th>Veränderung</th></tr></thead><tbody><tr><td>Letzte Zahlung ('+esc(String(L.date).slice(0,10))+')</td><td>'+num(lv,3)+"</td><td>"+num(pvv,3)+"</td><td>"+gp(gr(lv,pvv))+"</td></tr>"+(na&&nb?"<tr><td>Summe letzte 12 Monate</td><td>"+num(a,3)+"</td><td>"+num(b,3)+"</td><td>"+gp(gr(a,b))+"</td></tr>":"")+"</tbody></table>";
   }else if(res[1].status==="rejected")dh='<p class="ek-sub">Dividendendaten nicht verfügbar ('+esc(res[1].reason.message)+").</p>";
   else dh='<p class="ek-sub">Keine Dividendenzahlungen gefunden.</p>';
-  var il=irLink(s),out=h+dh+(il?'<p class="ek-sub" style="margin-top:12px">'+il+" · Präsentationen, Berichte und Webcast des Unternehmens</p>":"")+'<a class="ek-go" href="../aktien-hub/?s='+encodeURIComponent(s)+'">Zur Aktie: Kennzahlen, Dividendenverlauf, News →</a>';
+  var il=irLink(s),out=h+dh+'<a class="ek-go" href="../aktien-hub/?s='+encodeURIComponent(s)+'">Zur Aktie: Kennzahlen, Dividendenverlauf, News →</a>';
   H[s+date]=out;box.innerHTML=out;
 }
 function render(){renderDays();renderList();$("clear").hidden=!(sel||q)}
