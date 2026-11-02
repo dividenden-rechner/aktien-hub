@@ -11,6 +11,7 @@ image_credit: "Foto: FMNLab / Wikimedia Commons, CC BY 4.0"
 image_source: https://commons.wikimedia.org/wiki/File:FMN_Lab_team_(2).jpg
 logo_name: "Marvell Technology, Inc."
 logo_symbol: MRVL
+logo_file: assets/logos/mrvl.png
 ---
 <!-- PRÜFEN: Aufmacherfoto ist automatisch von Wikimedia Commons gewaehlt: bitte pruefen, ob es zum Artikel passt (sonst image-Zeilen entfernen, dann entsteht ein Titelbild automatisch). -->
 
