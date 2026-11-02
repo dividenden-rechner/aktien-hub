@@ -420,9 +420,11 @@
   }
 
   /** Förderung Altersvorsorgedepot (Stand Oktober 2026, Altersvorsorgereformgesetz, ab 2027). */
-  function zulage(C, kinder, kinderAktiv) {
-    var grund = C >= 120 ? 0.5 * Math.min(C, 360) + 0.25 * pos(Math.min(C, 1800) - 360) : 0;
-    var kind = kinderAktiv ? kinder * Math.min(C, 300) : 0;
+  function zulage(C, kinderAktiv) {
+    // Mindestbeitrag 120 Euro im Jahr. Kinderzulage: 1 Euro je Euro, höchstens 300 Euro je kindergeldberechtigtem Kind (Anbieterangabe: 300 Euro Eigenbeitrag je Kind nötig).
+    if (C < 120) return { grund: 0, kind: 0 };
+    var grund = 0.5 * Math.min(C, 360) + 0.25 * pos(Math.min(C, 1800) - 360);
+    var kind = Math.min(C, 300 * (kinderAktiv || 0));
     return { grund: grund, kind: kind };
   }
   function pension(W, rAnnual, N) { // monatliche Entnahme, nachschüssig, Kapital am Ende leer
@@ -432,12 +434,14 @@
   function avdCalc(o) {
     var years = o.rentenalter - o.alter, N = o.endalter - o.rentenalter, C = o.beitrag * 12;
     if (!(years >= 1) || !(N >= 1)) return null;
+    var kids = o.kinderAlter || [], bis = o.kindBis || 18;
     var rm = monthly((o.rendite - o.kosten) / 100), rm1 = (o.startJahre > 0 && o.kostenStart != null) ? monthly((o.rendite - o.kostenStart) / 100) : rm, bal = 0, paid = 0, zg = 0, zk = 0, bonus = 0, rows = [];
     for (var y = 1; y <= years; y++) {
       var rmy = y <= (o.startJahre || 0) ? rm1 : rm;
       for (var m = 0; m < 12; m++) bal = bal * (1 + rmy) + o.beitrag;
       paid += C;
-      var z = zulage(C, o.kinder, y <= o.kinderJahre);
+      var nk = 0; for (var ki = 0; ki < kids.length; ki++) if (kids[ki] + (y - 1) < bis) nk++;
+      var z = zulage(C, nk);
       var b = (y === 1 && o.einsteiger) ? 200 : 0;
       bal += z.grund + z.kind + b; zg += z.grund; zk += z.kind; bonus += b;
       rows.push({ jahr: y, wert: bal, eingezahlt: paid, zulagen: zg + zk + bonus });
@@ -448,7 +452,7 @@
     for (var y2 = 1; y2 <= years; y2++) { for (var m2 = 0; m2 < 12; m2++) be = be * (1 + rme) + o.beitrag; rowsE.push({ jahr: y2, wert: be }); }
     var gain = pos(be - paid), tax = pos(gain * (1 - 0.3) - 1000) * 0.26375, beNet = be - tax;
     var netE = pension(beNet, o.rAus / 100, N);
-    return { jahre: years, dauer: N, wert: bal, eingezahlt: paid, zulagen: zg + zk + bonus, grund: zg, kind: zk, bonus: bonus, ertrag: bal - paid - (zg + zk + bonus), brutto: gross, netto: net, rows: rows, etfWert: be, etfSteuer: tax, etfNetto: netE, etfRows: rowsE, zulageJahr: zulage(C, o.kinder, true) };
+    return { jahre: years, dauer: N, wert: bal, eingezahlt: paid, zulagen: zg + zk + bonus, grund: zg, kind: zk, bonus: bonus, ertrag: bal - paid - (zg + zk + bonus), brutto: gross, netto: net, rows: rows, etfWert: be, etfSteuer: tax, etfNetto: netE, etfRows: rowsE, zulageJahr: rows[0] ? zulage(C, kids.filter(function (a) { return a < bis; }).length) : zulage(C, 0), kinderJahre: kids.map(function (a) { return Math.max(0, Math.min(years, bis - a)); }) };
   }
 
   /** Vorabpauschale (§ 18 InvStG). */
@@ -611,7 +615,7 @@
   };
 
   /* Anbieter im Altersvorsorgedepot-Rechner: Kosten je Anbieter, Auswahl und Rangliste fuer die eigenen Eingaben */
-  var AVSEL = null, AVD = null;
+  var AVSEL = null, AVSELB = null, AVD = null;
   function avData() {
     if (AVD) return AVD;
     var el = $("av-data"); AVD = [];
@@ -645,7 +649,7 @@
       if (x.offen) return '<tr class="off">' + n + '<td class="t">Konditionen noch offen</td><td class="num">–</td><td class="num">–</td><td class="num">–</td><td></td></tr>';
       var kt = x.k.j > 0 && x.k.ks !== x.k.kd ? pct(x.k.ks) + " für " + x.k.j + " J., danach " + pct(x.k.kd) + (x.k.offen ? " (dein Wert)" : "") : pct(x.k.kd) + (x.k.offen ? " (dein Wert)" : "");
       var diff = x.r.netto - base, ds = Math.abs(diff) < 0.5 ? "" : (diff > 0 ? "+" : "−") + money(Math.abs(diff), 0);
-      return '<tr' + (x.i === sel ? ' class="sel"' : "") + '>' + n + '<td class="t">' + kt + '</td><td class="num">' + money(x.r.wert) + '</td><td class="num"><b>' + money(x.r.netto) + '</b></td><td class="num dif ' + (diff < -0.5 ? "neg" : "pos") + '">' + ds + '</td><td class="num"><button type="button" class="av-pick" data-i="' + x.i + '">' + (x.i === sel ? "gewählt" : "wählen") + '</button></td></tr>';
+      return '<tr' + (x.i === sel ? ' class="sel"' : "") + '>' + n + '<td class="t">' + kt + '</td><td class="num">' + money(x.r.wert) + '</td><td class="num"><b>' + money(x.r.netto) + '</b></td><td class="num dif ' + (diff < -0.5 ? "neg" : "pos") + '">' + ds + '</td><td class="num"><button type="button" class="av-pick" data-i="' + x.i + '">' + (x.i === sel ? "gewählt" : "als A") + '</button> <button type="button" class="av-pick" data-b="' + x.i + '">' + (x.i === AVSELB ? "B gewählt" : "als B") + '</button></td></tr>';
     }).join("");
     var html = '<div class="av-tablewrap"><table class="av-table av-rank"><thead><tr><th scope="col">Anbieter</th><th scope="col">Kosten p. a.</th><th scope="col" class="num">Depotwert</th><th scope="col" class="num">Auszahlung netto / Monat</th><th scope="col" class="num">Abstand' + (selNetto == null ? " zu deiner Eingabe" : " zur Auswahl") + '</th><th scope="col"></th></tr></thead><tbody>' + h + '</tbody></table></div>';
     if (box.dataset.h !== html) { box.dataset.h = html; box.innerHTML = html; }
@@ -665,28 +669,76 @@
     var list = avData();
     sel.innerHTML = '<option value="">Eigene Eingabe</option>' + list.map(function (a, i) { return '<option value="' + i + '">' + a.n + "</option>"; }).join("");
     sel.addEventListener("change", function () { avSetProv(sel.value === "" ? null : +sel.value); });
+    var selB = $("av-prov2");
+    if (selB) {
+      selB.innerHTML = '<option value="">Keiner (nur ein Anbieter)</option>' + list.map(function (a, i) { return '<option value="' + i + '">' + a.n + "</option>"; }).join("");
+      selB.addEventListener("change", function () { AVSELB = selB.value === "" ? null : +selB.value; });
+    }
     var cost = $("av-cost"); if (cost) cost.addEventListener("input", function () { if (AVSEL) { AVSEL = null; sel.value = ""; var h = $("av-prov-hint"); if (h) h.textContent = ""; } });
     var box = $("av-rank");
-    if (box) box.addEventListener("click", function (e) { var b = e.target.closest(".av-pick"); if (!b) return; avSetProv(+b.dataset.i); T["altersvorsorgedepot"](); var f = $("av-prov"); if (f && f.scrollIntoView) f.scrollIntoView({ behavior: "smooth", block: "center" }); });
+    if (box) box.addEventListener("click", function (e) { var b = e.target.closest(".av-pick"); if (!b) return; if (b.dataset.b != null) { AVSELB = +b.dataset.b; var sb = $("av-prov2"); if (sb) sb.value = String(AVSELB); } else avSetProv(+b.dataset.i); T["altersvorsorgedepot"](); var f = $("av-prov"); if (f && f.scrollIntoView) f.scrollIntoView({ behavior: "smooth", block: "center" }); });
     var m = /[#&?]anbieter=(\d+)/.exec(location.search + location.hash); if (m) avSetProv(+m[1]);
   }
 
   /* 6) Altersvorsorgedepot */
+  function avAges() {
+    var el = $("av-kids"), raw = el ? el.value.trim() : "";
+    if (!raw) return [];
+    var out = [], parts = raw.split(/[\s,;]+/);
+    for (var i = 0; i < parts.length; i++) { if (parts[i] === "") continue; var v = parseFloat(parts[i].replace(",", ".")); if (!isFinite(v) || v < 0 || v > 24) return null; out.push(Math.floor(v)); }
+    return out.length > 8 ? null : out;
+  }
+  function avProvCalc(o, i) {
+    var a = avData()[i]; if (!a) return null;
+    var k = avKosten(a, o.kosten); if (!k) return null;
+    var r = avdCalc(Object.assign({}, o, { kosten: k.kd, kostenStart: k.ks, startJahre: k.j }));
+    return r ? { r: r, k: k, name: a.n } : null;
+  }
   T["altersvorsorgedepot"] = function () {
     avInit();
-    var o = { alter: num("av-age"), rentenalter: num("av-ret"), endalter: num("av-end"), beitrag: num("av-rate"), kinder: num("av-kids"), kinderJahre: num("av-kyears"), einsteiger: $("av-start").checked, rendite: num("av-r"), kosten: num("av-cost"), rAus: num("av-ra"), steuerAlter: num("av-tax"), ter: num("av-ter") };
+    var ages = avAges();
+    if (ages === null) return err("av-err", "Alter der Kinder: Zahlen von 0 bis 24, durch Komma getrennt, höchstens acht Kinder (leer lassen, wenn keine Kinder).");
+    var o = { alter: num("av-age"), rentenalter: num("av-ret"), endalter: num("av-end"), beitrag: num("av-rate"), kinderAlter: ages, kindBis: $("av-k25").checked ? 25 : 18, einsteiger: $("av-start").checked, rendite: num("av-r"), kosten: num("av-cost"), rAus: num("av-ra"), steuerAlter: num("av-tax"), ter: num("av-ter") };
     if (!allNum(o)) return err("av-err", "Bitte alle Felder mit Zahlen füllen.");
     if (o.beitrag < 0 || o.beitrag * 12 > 6840) return err("av-err", "Der Eigenbeitrag darf höchstens 6.840 € pro Jahr betragen (570 € pro Monat).");
     if (o.rentenalter < 65 || o.rentenalter > 70) return err("av-err", "Der Auszahlungsbeginn ist laut Gesetz zwischen 65 und 70 Jahren vorgesehen.");
+    if (o.endalter < 85) return err("av-err", "Der Auszahlplan muss mindestens bis zum Alter 85 laufen.");
+    var bonusOk = o.alter < 25, cb = $("av-start");
+    if (cb) { cb.disabled = !bonusOk; if (!bonusOk) { cb.checked = false; o.einsteiger = false; } }
+    set("av-start-hint", bonusOk ? "" : "Nur bei Abschluss vor dem 25. Geburtstag.");
     o.kostenStart = AVSEL ? AVSEL.ks : null; o.startJahre = AVSEL ? AVSEL.j : 0;
     var r = avdCalc(o);
     if (!r) return err("av-err", "Das Rentenalter muss nach dem heutigen Alter liegen und das Endalter nach dem Rentenalter.");
-    err("av-err", "");
+    var warn = [];
+    if (o.beitrag * 12 > 1800) warn.push("Gefördert werden nur 1.800 € Eigenbeitrag im Jahr. Für den Teil darüber gelten andere steuerliche Regeln, der Rechner nimmt trotzdem deinen Steuersatz im Alter.");
+    if (o.beitrag * 12 < 120 && o.beitrag > 0) warn.push("Unter 120 € Eigenbeitrag im Jahr (10 € im Monat) gibt es keine Zulage.");
+    err("av-err", warn.join(" "));
+    var kh = $("av-kid-hint");
+    if (kh) {
+      if (!ages.length) kh.textContent = "";
+      else kh.textContent = ages.map(function (a, i) { var y = Math.max(0, Math.min(r.jahre, o.kindBis - a)); return "Kind " + (i + 1) + " (" + a + " J.): " + (y > 0 ? "Zulage " + y + (y === 1 ? " Jahr" : " Jahre") + ", bis " + (o.alter + y) + " Jahre des Elternteils" : "keine Zulage mehr") ; }).join("; ") + ". Kinderzulagen insgesamt: " + money(r.kind) + ".";
+    }
     set("av-k1", money(r.wert)); set("av-k2", money(r.eingezahlt)); set("av-k3", money(r.zulagen)); set("av-k4", money(r.ertrag));
     set("av-k5", money(r.zulageJahr.grund + r.zulageJahr.kind)); set("av-k6", money(r.netto) + " / Monat"); set("av-k7", money(r.etfNetto) + " / Monat"); set("av-k8", money(r.etfWert - r.etfSteuer));
     avRank(o, r);
+    // Zweiter Anbieter
+    var nameA = AVSEL ? avData()[AVSEL.i].n : "Eigene Eingabe", B = AVSELB != null ? avProvCalc(o, AVSELB) : null;
+    var cmp = $("av-cmp"), yrs = $("av-years");
+    if (cmp) cmp.hidden = !B; if (yrs) yrs.hidden = !B; var cc = $("av-cmpchart"); if (cc) cc.hidden = !B;
     var labels = r.rows.map(function (x) { return "Alter " + (o.alter + x.jahr); });
-    draw("av-chart", { type: "bar", data: { labels: labels, datasets: [{ label: "Eigenbeiträge", data: r.rows.map(function (x) { return x.eingezahlt; }), backgroundColor: GREY, stack: "d" }, { label: "Zulagen", data: r.rows.map(function (x) { return x.zulagen; }), backgroundColor: GREEN, stack: "d" }, { label: "Erträge", data: r.rows.map(function (x) { return x.wert - x.eingezahlt - x.zulagen; }), backgroundColor: BLUE, stack: "d" }, { label: "Zum Vergleich: ETF-Sparplan ohne Förderung (vor Steuern)", type: "line", data: r.etfRows.map(function (x) { return x.wert; }), borderColor: AMBER, pointRadius: 0 }] }, options: { interaction: inter, scales: { x: { stacked: true }, y: Object.assign({ stacked: true }, ytitle("Euro")) }, plugins: { title: { display: true, text: "Altersvorsorgedepot: Zusammensetzung des Depots" }, tooltip: { callbacks: { label: tip } } } } });
+    var ds = [{ label: "Eigenbeiträge", data: r.rows.map(function (x) { return x.eingezahlt; }), backgroundColor: GREY, stack: "d" }, { label: "Zulagen", data: r.rows.map(function (x) { return x.zulagen; }), backgroundColor: GREEN, stack: "d" }, { label: "Erträge (" + nameA + ")", data: r.rows.map(function (x) { return x.wert - x.eingezahlt - x.zulagen; }), backgroundColor: BLUE, stack: "d" }];
+    if (B) ds.push({ label: "Depotwert " + B.name, type: "line", data: B.r.rows.map(function (x) { return x.wert; }), borderColor: "#7c3aed", borderWidth: 3, pointRadius: 0, tension: .2 });
+    ds.push({ label: "Zum Vergleich: ETF-Sparplan ohne Förderung (vor Steuern)", type: "line", data: r.etfRows.map(function (x) { return x.wert; }), borderColor: AMBER, pointRadius: 0 });
+    draw("av-chart", { type: "bar", data: { labels: labels, datasets: ds }, options: { interaction: inter, scales: { x: { stacked: true }, y: Object.assign({ stacked: true }, ytitle("Euro")) }, plugins: { title: { display: true, text: B ? "Depotwert: " + nameA + " (Balken) gegen " + B.name + " (Linie)" : "Altersvorsorgedepot: Zusammensetzung des Depots" }, tooltip: { callbacks: { label: tip } } } } });
+    if (B) {
+      var gap = r.rows.map(function (x, i) { return x.wert - B.r.rows[i].wert; });
+      draw("av-chart2", { type: "bar", data: { labels: labels, datasets: [{ label: "Abstand " + nameA + " minus " + B.name, data: gap, backgroundColor: gap.map(function (g) { return g >= 0 ? GREEN : RED; }) }] }, options: { interaction: inter, scales: { y: ytitle("Euro") }, plugins: { legend: { display: false }, title: { display: true, text: "Abstand der Depotwerte: " + nameA + " minus " + B.name }, tooltip: { callbacks: { label: tip } } } } });
+      var dm = r.netto - B.r.netto;
+      set("av-cmp-text", nameA + ": " + money(r.netto) + " netto im Monat. " + B.name + ": " + money(B.r.netto) + " netto im Monat. Abstand: " + (dm >= 0 ? "+" : "−") + money(Math.abs(dm)) + " im Monat zugunsten von " + (dm >= 0 ? nameA : B.name) + (B.k.offen ? ". Bei " + B.name + " sind die Kosten nach der Erstattung offen, es gilt dein Wert im Feld Kosten." : "."));
+      var rowsH = r.rows.map(function (x, i) { var g = x.wert - B.r.rows[i].wert; return "<tr><td>" + (o.alter + x.jahr) + "</td><td class=\"num\">" + money(x.wert) + "</td><td class=\"num\">" + money(B.r.rows[i].wert) + "</td><td class=\"num " + (g < -0.5 ? "neg" : "pos") + "\">" + (g >= 0 ? "+" : "−") + money(Math.abs(g)) + "</td></tr>"; }).join("");
+      var html = "<table class=\"av-table av-yt\"><thead><tr><th>Alter</th><th class=\"num\">" + nameA + "</th><th class=\"num\">" + B.name + "</th><th class=\"num\">Abstand</th></tr></thead><tbody>" + rowsH + "</tbody></table>";
+      var yb = $("av-years-body"); if (yb && yb.dataset.h !== html) { yb.dataset.h = html; yb.innerHTML = html; }
+    }
     return true;
   };
 
