@@ -10,6 +10,7 @@ quelle_url: https://www.sec.gov/Archives/edgar/data/353278/000117184326007060/f6
 quelle_name: "Pressemitteilung Novo Nordisk A S (SEC-Meldung)"
 logo_symbol: NVO
 logo_name: "Novo Nordisk A S"
+logo_file: assets/logos/nvo.png
 ---
 <!-- PRÜFEN: Diese Zahlen stehen nicht im Originaltext: 1,44, 377,02, 41,71, 11,56, 55,75, 11,56, 11,56. Bitte pruefen, dann 'draft: true' loeschen. -->
 
