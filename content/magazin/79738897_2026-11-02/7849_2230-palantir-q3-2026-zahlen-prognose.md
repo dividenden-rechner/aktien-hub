@@ -12,9 +12,9 @@ story_image: assets/magazin/palantir-q3-2026-zahlen-prognose-folie.png
 logo_symbol: PLTR
 logo_domain: palantir.com
 image: assets/magazin/palantir-q3-2026-zahlen-prognose-foto.jpg
-image_alt: "Foto zu Palantir Technologies: A bank of monitors in the control room for the Wendelstein 7-X stellarator at the Max Planck Institute for Plasma Physics. The screens show a variety of real-time diagnostic data, including graphs of "
-image_credit: "Foto: Siarhei Besarab / Wikimedia Commons, CC BY-SA 4.0"
-image_source: https://commons.wikimedia.org/wiki/File:Diagnostic_monitors_in_the_control_room_of_Wendelstein_7-X.jpg
+image_alt: "Foto zu Palantir Technologies: A group of people in a control room monitoring a fleet management telematics system. The wall-sized display shows GPS-based tracking data and satellite imagery of vehicles in Beirut, Lebanon, along wi"
+image_credit: "Foto: UrusHyby / Wikimedia Commons, CC0"
+image_source: https://commons.wikimedia.org/wiki/File:Real-time_bus_tracking_control_room_in_Lebanon.jpg
 image_artist_url: 
 logo_file: assets/logos/pltr.png
 ---

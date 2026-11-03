@@ -10,10 +10,10 @@ quelle_name: "Pressemitteilung CRISPR Therapeutics (SEC-Meldung)"
 logo_name: "CRISPR Therapeutics"
 logo_symbol: CRSP
 logo_domain: crisprtx.com
-image: https://images.unsplash.com/photo-1582719366950-f23838e207e7?ixid=M3wxMTE3OTgzfDB8MXxzZWFyY2h8N3x8Z2VuZXRpY3MlMjBsYWJvcmF0b3J5fGVufDF8MHx8fDE3OTM3MjYwODR8MA&ixlib=rb-4.1.0&w=1600&h=900&fit=crop&crop=entropy&q=80&fm=jpg
-image_alt: "Foto zu CRISPR Therapeutics: DNA Genotyping and Sequencing. Vials containing DNA samples from studies of the genetic risk for cancer at the Cancer Genomics Research Laboratory, part of the National Cancer Institute's Division of "
+image: https://images.unsplash.com/photo-1579154204601-01588f351e67?ixid=M3wxMTE3OTgzfDB8MXxzZWFyY2h8Mnx8Z2VuZXRpY3MlMjBsYWJvcmF0b3J5fGVufDF8MHx8fDE3OTM3MzA3NTd8MA&ixlib=rb-4.1.0&w=1600&h=900&fit=crop&crop=entropy&q=80&fm=jpg
+image_alt: "Foto zu CRISPR Therapeutics: DNA Genotyping and Sequencing. A technician works among a fleet of desktop genomic sequencing machines at the Cancer Genomics Research Laboratory, part of the National Cancer Institute's Division of C"
 image_credit: "Foto: National Cancer Institute auf Unsplash"
-image_source: https://unsplash.com/photos/white-plastic-bottles-on-black-shelf-fd0b-Bl4cFc?utm_source=dividenden-rechner&utm_medium=referral
+image_source: https://unsplash.com/photos/woman-standing-in-front-of-the-digital-machine-oCLuFi9GYNA?utm_source=dividenden-rechner&utm_medium=referral
 image_artist_url: https://unsplash.com/@nci?utm_source=dividenden-rechner&utm_medium=referral
 logo_file: assets/logos/crsp.png
 ---
