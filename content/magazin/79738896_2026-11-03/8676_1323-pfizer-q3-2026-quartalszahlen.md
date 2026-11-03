@@ -14,6 +14,9 @@ logo_name: "Pfizer Inc."
 logo_symbol: PFE
 logo_domain: pfizer.com
 logo_file: assets/logos/pfe.png
+story_portrait: assets/magazin/albert-bourla-pfizer.png
+story_quote: "Wir treiben unsere Pipeline konsequent voran und maximieren den Wert unserer Schlüsseltransaktionen."
+story_quote_by: "Albert Bourla, CEO Pfizer"
 ---
 <!-- PRÜFEN: Aufmacherfoto ist automatisch von Unsplash gewaehlt: bitte pruefen, ob es zum Artikel passt (sonst image-Zeilen entfernen, dann entsteht ein Titelbild automatisch). -->
 <!-- PRÜFEN: Ausschnitte aus dem Bericht im Text (f1, f2): bitte prüfen, ob Zuschnitt und Platz passen. Unpassende Bildzeilen einfach löschen. -->
@@ -39,9 +42,11 @@ Der Konzern setzt im operativen Geschäft auf neue Kassenschlager und angekaufte
 
 CEO Albert Bourla betonte die Fortschritte bei den strategischen Prioritäten:
 
-> „Wir treiben unsere Pipeline konsequent voran und maximieren den Wert unserer Schlüsseltransaktionen.“
->
-> — Albert Bourla, Chairman und Chief Executive Officer (aus dem Englischen übersetzt)
+!!! zitat "Albert Bourla, Chairman und CEO von Pfizer"
+    ![Albert Bourla, Chairman und CEO von Pfizer](/assets/magazin/albert-bourla-pfizer.png){: .zitatfoto }
+    „Wir treiben unsere Pipeline konsequent voran und maximieren den Wert unserer Schlüsseltransaktionen."
+
+    <span class="zitatquelle">Aus dem Englischen übersetzt. Foto: Pfizer</span>
 
 ![Quartalsumsatz und Finanzkennzahlen Q3 2026](/assets/magazin/pfizer-q3-2026-quartalszahlen-f1.png)
 *Quartalsumsatz und Finanzkennzahlen Q3 2026. Quelle: Pfizer Inc., Quartalszahlen vom 2026-11-03, S. 12. Ausschnitt nur zugeschnitten, sonst unverändert.*

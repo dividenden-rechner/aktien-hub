@@ -31,7 +31,7 @@
     var tpl = await load(S.tpl), photo = withPhoto ? await load(S.img) : null, logo = await load(S.logo);
     /* Eigene Vorlage (gruene Balken mit Rubrik und Adresse); der Inhalt darin bleibt schlicht: weisser Grund, schwarze Schrift, keine Farbflaechen. */
     if (tpl) c.drawImage(tpl, 0, 0, W, H); else { c.fillStyle = "#fff"; c.fillRect(0, 0, W, H); c.fillStyle = "#99e6b1"; c.fillRect(0, 108, W, 86); c.fillRect(0, 1866, W, 54); }
-    var F = 'InterS,Inter,"Segoe UI",Roboto,Helvetica,Arial,sans-serif', LIM = 1835 - (S.chart ? 470 : 0), G = "#111", D = "#111";
+    var F = 'InterS,Inter,"Segoe UI",Roboto,Helvetica,Arial,sans-serif', LIM = 1835 - ((S.chart || S.portrait) ? 470 : 0), G = "#111", D = "#111";
     c.textBaseline = "top";
     var pts = S.points || [], lns = S.lines || [], ph = photo ? 470 : 0, fs = 30, fit = !!(photo && S.fit === "contain");
     if (fit) ph = Math.round(960 * photo.height / photo.width);
@@ -115,6 +115,22 @@
       var lh2 = Math.round(fs * 1.35); c.fillStyle = "#262626"; c.font = "400 " + fs + "px " + F;
       yy -= String(S.text).split(/\n+/).reduce(function (a, p) { return a + wrap(c, p, 960, 0).length * lh2 + 14; }, 0);
       String(S.text).split(/\n+/).forEach(function (p) { wrap(c, p, 960, 0).forEach(function (l) { c.fillText(l, 60, yy); yy += lh2; }); yy += 14; });
+    }
+    if (S.portrait) {
+      /* Freigestelltes Portrait unten links (steht auf dem unteren Balken), daneben das Zitat */
+      var pt = await load(S.portrait);
+      if (pt) {
+        var phh = 450, pww = Math.round(phh * pt.width / pt.height), pyy = 1866 - phh;
+        c.drawImage(pt, 60, pyy, pww, phh);
+        if (S.quote) {
+          var qx = 60 + pww + 36, qw = 1020 - qx, qf = 33;
+          c.fillStyle = "#111"; c.font = "400 " + qf + "px " + F; c.textBaseline = "top";
+          var ql = wrap(c, "\u201e" + S.quote + "\u201c", qw, 8), qh = ql.length * Math.round(qf * 1.35), by = S.quote_by ? 70 : 0;
+          var qy = Math.max(yy + 30, pyy + (phh - qh - by) / 2 - 30);
+          ql.forEach(function (l, n) { c.fillText(l, qx, qy + n * Math.round(qf * 1.35)); });
+          if (S.quote_by) { c.font = "700 28px " + F; wrap(c, S.quote_by, qw, 2).forEach(function (l, n) { c.fillText(l, qx, qy + qh + 22 + n * 36); }); }
+        }
+      }
     }
     if (S.chart) {
       var ch = await load(S.chart);

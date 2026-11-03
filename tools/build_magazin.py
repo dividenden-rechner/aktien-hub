@@ -514,6 +514,10 @@ def share_html(p, url, img):
     if p.get("story_image"):
         # Folie oder Grafik aus den Unterlagen des Unternehmens: wird in der Story vollstaendig (ohne Beschnitt) gezeigt
         story["img"] = "../../" + p["story_image"].lstrip("/"); story["fit"] = "contain"
+    if p.get("story_portrait"):
+        # Freigestelltes Portrait (PNG mit Transparenz) mit Zitat unten in der Story
+        story["portrait"] = "../../" + p["story_portrait"].lstrip("/")
+        story["quote"] = p.get("story_quote", ""); story["quote_by"] = p.get("story_quote_by", "")
     if p.get("typ") == "kurz":
         # Kurzmeldung: kein Kasten mit Kennzahlen, daher der Einleitungstext als Story-Text; ohne eigenes Foto bleibt das Bildfeld weg
         story["text"] = kurz_story_text(p.get("body_md", ""))
