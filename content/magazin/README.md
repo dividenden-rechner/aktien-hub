@@ -15,10 +15,11 @@ Datei anklicken, dann Stift-Symbol: Zeile `draft: true` löschen und speichern, 
 | 29.10.2026 22:42 | Amazon steigert Umsatz im dritten Quartal auf 201,9 Milliarden Dollar | [79738970_2026-10-29/7757_2242-amazon-q3-2026-zahlen.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/79738970_2026-10-29/7757_2242-amazon-q3-2026-zahlen.md) |
 | 29.10.2026 10:12 | Shell erzielt im dritten Quartal 10,8 Milliarden Dollar Gewinn | [79738970_2026-10-29/8987_1012-shell-q3-2026-ergebnisse.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/79738970_2026-10-29/8987_1012-shell-q3-2026-ergebnisse.md) |
 
-### Online (169)
+### Online (170)
 
 | Datum | Titel | Datei |
 |---|---|---|
+| 03.11.2026 10:03 | Bayer: Pharmaceuticals zieht an, während Nettoverlust und Glyphosat-Prozesse belasten | [79738896_2026-11-03/8996_1003-bayer-q3-2026-zahlen.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/79738896_2026-11-03/8996_1003-bayer-q3-2026-zahlen.md) |
 | 03.11.2026 03:53 | UDR steigert Q3-Nettogewinn auf 0,67 US-Dollar je Aktie und hebt Prognose an | [79738896_2026-11-03/9646_0353-udr-q3-2026-ergebnisse-prognose.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/79738896_2026-11-03/9646_0353-udr-q3-2026-ergebnisse-prognose.md) |
 | 03.11.2026 03:53 | Lennox International: Geoff Dethlefsen übernimmt Führung des Segments Building Climate Solutions | [79738896_2026-11-03/9646_0353-lennox-international-managementwechsel-building-climate-solutions.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/79738896_2026-11-03/9646_0353-lennox-international-managementwechsel-building-climate-solutions.md) |
 | 03.11.2026 03:53 | Keysight Technologies ernennt Jason Kary zum neuen Finanzchef | [79738896_2026-11-03/9646_0353-keysight-technologies-cfo-wechsel-jason-kary.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/79738896_2026-11-03/9646_0353-keysight-technologies-cfo-wechsel-jason-kary.md) |
