@@ -1,0 +1,675 @@
+{
+ "stand": "2026-11-03",
+ "firmen": [
+  {
+   "name": "Adidas",
+   "start": "https://www.adidas-group.com/en/investors/",
+   "seiten": [],
+   "feeds": [],
+   "alert_links": [],
+   "fehler": "The read operation timed out"
+  },
+  {
+   "name": "Airbus",
+   "start": "https://www.airbus.com/en/investors",
+   "seiten": [
+    "https://www.airbus.com/en/investors",
+    "https://www.airbus.com/en/about-us/what-we-do/connecting-people-goods-and-services",
+    "https://www.airbus.com/en/products-services",
+    "https://www.airbus.com/en/products-services/commercial-aircraft",
+    "https://www.airbus.com/en/products-services/commercial-aircraft/passenger-aircraft"
+   ],
+   "feeds": [
+    {
+     "url": "https://www.airbus.com/rss.xml",
+     "eintraege": 10,
+     "neueste": "Tue, 13 Oct 2026 10:26:58 +0000",
+     "fund": "pfad-test"
+    },
+    {
+     "url": "https://www.airbus.com/en/rss.xml",
+     "eintraege": 10,
+     "neueste": "Tue, 13 Oct 2026 10:26:58 +0000",
+     "fund": "pfad-test"
+    }
+   ],
+   "alert_links": [
+    {
+     "url": "https://www.airbus.com/en/newsroom/keep-in-touch-with-us",
+     "text": "Subscribe to our NOVA newsletter"
+    }
+   ],
+   "fehler": ""
+  },
+  {
+   "name": "Allianz",
+   "start": "https://www.allianz.com/en/investor_relations.html",
+   "seiten": [],
+   "feeds": [],
+   "alert_links": [],
+   "fehler": "HTTP Error 403: Forbidden"
+  },
+  {
+   "name": "BASF",
+   "start": "https://www.basf.com/global/en/investors",
+   "seiten": [
+    "https://www.basf.com/global/en/investors",
+    "https://www.basf.com/global/en/investors/calendar-and-publications/service-for-shareholders/newsletter"
+   ],
+   "feeds": [],
+   "alert_links": [
+    {
+     "url": "https://www.basf.com/global/en/investors/calendar-and-publications/service-for-shareholders/newsletter",
+     "text": "Newsletter"
+    }
+   ],
+   "fehler": ""
+  },
+  {
+   "name": "Bayer",
+   "start": "https://www.bayer.com/en/investors",
+   "seiten": [],
+   "feeds": [],
+   "alert_links": [],
+   "fehler": "HTTP Error 403: Forbidden"
+  },
+  {
+   "name": "Beiersdorf",
+   "start": "https://www.beiersdorf.com/investors",
+   "seiten": [],
+   "feeds": [],
+   "alert_links": [],
+   "fehler": "HTTP Error 404: Not Found"
+  },
+  {
+   "name": "BMW",
+   "start": "https://www.bmwgroup.com/en/investor-relations.html",
+   "seiten": [
+    "https://www.bmwgroup.com/en/investor-relations.html",
+    "https://newsroom.bmwgroup.com/global/",
+    "https://www.bmwgroup.com/en/investor-relations/adhoc-capitalmarketnotifications.html",
+    "https://newsroom.bmwgroup.com/global/bmw-group-updates-guidance--for-the-2026-financial-year/"
+   ],
+   "feeds": [],
+   "alert_links": [
+    {
+     "url": "https://newsroom.bmwgroup.com/global/e-mail-subscription/",
+     "text": "Subscribe"
+    }
+   ],
+   "fehler": ""
+  },
+  {
+   "name": "Brenntag",
+   "start": "https://www.brenntag.com/en/investor-relations/",
+   "seiten": [],
+   "feeds": [],
+   "alert_links": [],
+   "fehler": "HTTP Error 404: Not Found"
+  },
+  {
+   "name": "Commerzbank",
+   "start": "https://www.commerzbank.de/en/hauptnavigation/aktionaere/aktionaere.html",
+   "seiten": [],
+   "feeds": [],
+   "alert_links": [],
+   "fehler": "<urlopen error [Errno 104] Connection reset by peer>"
+  },
+  {
+   "name": "Continental",
+   "start": "https://www.continental.com/en/investor-relations/",
+   "seiten": [],
+   "feeds": [],
+   "alert_links": [],
+   "fehler": "HTTP Error 404: Not Found"
+  },
+  {
+   "name": "Daimler Truck",
+   "start": "https://www.daimlertruck.com/en/investors",
+   "seiten": [
+    "https://www.daimlertruck.com/en/investors",
+    "https://www.daimlertruck.com/en/investors/services",
+    "https://www.daimlertruck.com/en/products/financial-services",
+    "https://www.daimlertruck.com/en/products/financial-services/services",
+    "https://www.daimlertruck.com/en/products/financial-services/germany",
+    "https://www.daimlertruck.com/en/innovation/powertrain/services-around-e-mobility",
+    "https://www.daimlertruck.com/en/innovation/digitalization-services"
+   ],
+   "feeds": [],
+   "alert_links": [
+    {
+     "url": "https://www.daimlertruck.com/en/newsroom#c17376",
+     "text": "Press Newsletter"
+    }
+   ],
+   "fehler": ""
+  },
+  {
+   "name": "Deutsche Bank",
+   "start": "https://investor-relations.db.com/",
+   "seiten": [
+    "https://investor-relations.db.com/",
+    "https://www.db.com/media/news?language_id=1&types=adhocRelease&kid=nachrichten.redirect-company.shortcut",
+    "https://investor-relations.db.com/service-and-contacts/",
+    "https://investor-relations.db.com/service-and-contacts/"
+   ],
+   "feeds": [],
+   "alert_links": [],
+   "fehler": ""
+  },
+  {
+   "name": "Deutsche Boerse",
+   "start": "https://deutsche-boerse.com/dbg-en/investor-relations",
+   "seiten": [
+    "https://deutsche-boerse.com/dbg-en/investor-relations",
+    "https://www.deutsche-boerse.com/dbg-en/investor-relations/announcements-and-services/sign-up-service",
+    "https://deutsche-boerse.com/dbg-en/markets-services",
+    "https://deutsche-boerse.com/dbg-en/markets-services/ims",
+    "https://deutsche-boerse.com/dbg-en/markets-services/ims/software-solutions"
+   ],
+   "feeds": [],
+   "alert_links": [],
+   "fehler": ""
+  },
+  {
+   "name": "DHL Group",
+   "start": "https://group.dhl.com/en/investors.html",
+   "seiten": [],
+   "feeds": [],
+   "alert_links": [],
+   "fehler": "The read operation timed out"
+  },
+  {
+   "name": "Deutsche Telekom",
+   "start": "https://www.telekom.com/en/investor-relations",
+   "seiten": [
+    "https://www.telekom.com/en/investor-relations",
+    "https://www.telekom.com/en/newsroom",
+    "https://www.telekom.com/en/newsroom/latest-updates",
+    "https://www.telekom.com/en/newsroom/latest-updates/media-information",
+    "https://www.telekom.com/en/newsroom/latest-updates/news"
+   ],
+   "feeds": [
+    {
+     "url": "https://www.telekom.com/en/investor-relations.rss.feed.427676.xml",
+     "eintraege": 10,
+     "neueste": "Mon, 5 Oct 2026 00:00:00 GMT",
+     "fund": "link"
+    },
+    {
+     "url": "https://www.telekom.com/en/newsroom.rss.feed.418870.xml",
+     "eintraege": 10,
+     "neueste": "Tue, 3 Nov 2026 00:00:00 GMT",
+     "fund": "link"
+    },
+    {
+     "url": "https://www.telekom.com/en/newsroom/latest-updates/media-information.rss.feed.418728.xml",
+     "eintraege": 10,
+     "neueste": "Tue, 3 Nov 2026 00:00:00 GMT",
+     "fund": "link"
+    }
+   ],
+   "alert_links": [
+    {
+     "url": "https://www.telekom.com/en/investor-relations.rss.feed.427676.xml",
+     "text": "Subscribe"
+    },
+    {
+     "url": "https://www.telekom.com/en/general/news-service-sign-up",
+     "text": "Subscribe to the news service"
+    },
+    {
+     "url": "https://www.telekom.com/en/newsroom.rss.feed.418870.xml",
+     "text": "Subscribe"
+    },
+    {
+     "url": "https://www.telekom.com/en/newsroom/latest-updates/media-information.rss.feed.418728.xml",
+     "text": "Subscribe"
+    }
+   ],
+   "fehler": ""
+  },
+  {
+   "name": "E.ON",
+   "start": "https://www.eon.com/en/investor-relations.html",
+   "seiten": [],
+   "feeds": [],
+   "alert_links": [],
+   "fehler": "HTTP Error 403: Forbidden"
+  },
+  {
+   "name": "Fresenius",
+   "start": "https://www.fresenius.com/investors",
+   "seiten": [
+    "https://www.fresenius.com/overview",
+    "https://www.fresenius.com/investor-news-and-ad-hoc-news",
+    "https://www.fresenius.com/RSSFeeds",
+    "https://www.fresenius.com/investor-news-and-ad-hoc-news"
+   ],
+   "feeds": [
+    {
+     "url": "https://www.fresenius.com/news/rss?type=investor",
+     "eintraege": 20,
+     "neueste": "Mon, 02 Nov 2026 14:00:00 +0100",
+     "fund": "link"
+    },
+    {
+     "url": "https://www.fresenius.com/news/rss?type=media",
+     "eintraege": 20,
+     "neueste": "Mon, 02 Nov 2026 14:00:12 +0100",
+     "fund": "link"
+    },
+    {
+     "url": "https://www.fresenius.com/rss.xml",
+     "eintraege": 10,
+     "neueste": "Tue, 03 Nov 2026 12:04:20 +0000",
+     "fund": "pfad-test"
+    }
+   ],
+   "alert_links": [],
+   "fehler": ""
+  },
+  {
+   "name": "Fresenius Medical Care",
+   "start": "https://www.freseniusmedicalcare.com/en/investors",
+   "seiten": [
+    "https://freseniusmedicalcare.com/en/investors/investors-overview/",
+    "https://freseniusmedicalcare.com/en/healthcare-professionals/technical-services/",
+    "https://freseniusmedicalcare.com/en/healthcare-professionals/digital-solutions/service-and-support/",
+    "https://freseniusmedicalcare.com/en/investors/ad-hoc-notifications/",
+    "https://freseniusmedicalcare.com/en/investors/ircontacts/",
+    "https://freseniusmedicalcare.com/en/media/newsroom/"
+   ],
+   "feeds": [
+    {
+     "url": "https://freseniusmedicalcare.com/en/home/press.xml",
+     "eintraege": 30,
+     "neueste": "Tue, 03 Nov 2026 09:00:00 +0000",
+     "fund": "link"
+    }
+   ],
+   "alert_links": [],
+   "fehler": ""
+  },
+  {
+   "name": "Hannover Rueck",
+   "start": "https://www.hannover-re.com/en/investor-relations",
+   "seiten": [],
+   "feeds": [],
+   "alert_links": [],
+   "fehler": "HTTP Error 404: Not Found"
+  },
+  {
+   "name": "Heidelberg Materials",
+   "start": "https://www.heidelbergmaterials.com/en/investor-relations",
+   "seiten": [
+    "https://www.heidelbergmaterials.com/en/investor-relations",
+    "https://www.heidelbergmaterials.com/en/media/press-spokespersons",
+    "https://www.heidelbergmaterials.com/en/media/newsletter",
+    "https://www.heidelbergmaterials.com/en/products-and-services/reference-projects",
+    "https://www.heidelbergmaterials.com/en/products-and-services",
+    "https://www.heidelbergmaterials.com/en/products-and-services/cement",
+    "https://www.heidelbergmaterials.com/en/products-and-services/aggregates"
+   ],
+   "feeds": [
+    {
+     "url": "https://www.heidelbergmaterials.com/rss.xml",
+     "eintraege": 7,
+     "neueste": "Mon, 11 Apr 2022 11:29:58 +0000",
+     "fund": "pfad-test"
+    },
+    {
+     "url": "https://www.heidelbergmaterials.com/en/rss.xml",
+     "eintraege": 7,
+     "neueste": "Mon, 11 Apr 2022 11:29:58 +0000",
+     "fund": "pfad-test"
+    }
+   ],
+   "alert_links": [
+    {
+     "url": "https://www.heidelbergmaterials.com/en/media/newsletter",
+     "text": "Subscribe to news"
+    },
+    {
+     "url": "https://www.heidelbergmaterials.com/de/medien/newsletter",
+     "text": "Deutsch"
+    }
+   ],
+   "fehler": ""
+  },
+  {
+   "name": "Henkel",
+   "start": "https://www.henkel.com/investors-and-analysts",
+   "seiten": [
+    "https://www.henkel.com/investors-and-analysts",
+    "https://www.henkel.com/investors-and-analysts/investor-relations-news/ad-hoc-announcements",
+    "https://www.henkel.com/press-and-media",
+    "https://www.henkel.com/press-and-media/press-releases-and-kits",
+    "https://www.henkel.com/press-and-media/facts-and-figures"
+   ],
+   "feeds": [
+    {
+     "url": "https://www.henkel.com/service/en/39580/asFeed/index.xml",
+     "eintraege": 10,
+     "neueste": "Mon, 09 Nov 2026 23:00:00 GMT",
+     "fund": "link-alternate"
+    },
+    {
+     "url": "https://www.henkel.com/service/en/204408/asFeed/index.xml",
+     "eintraege": 20,
+     "neueste": "Tue, 13 Oct 2026 22:00:00 GMT",
+     "fund": "link-alternate"
+    },
+    {
+     "url": "https://www.henkel.com/service/en/33922/asFeed/index.xml",
+     "eintraege": 10,
+     "neueste": "Thu, 29 Oct 2026 07:00:00 GMT",
+     "fund": "link-alternate"
+    },
+    {
+     "url": "https://www.henkel.com/service/en/985194/asFeed/index.xml",
+     "eintraege": 10,
+     "neueste": "Mon, 02 Nov 2026 23:00:00 GMT",
+     "fund": "link-alternate"
+    }
+   ],
+   "alert_links": [],
+   "fehler": ""
+  },
+  {
+   "name": "Infineon",
+   "start": "https://www.infineon.com/about/investor",
+   "seiten": [
+    "https://www.infineon.com/about/investor",
+    "https://www.infineon.com/products/clocks-timing-solutions/buffers",
+    "https://www.infineon.com/products/clocks-timing-solutions/clock-generators",
+    "https://www.infineon.com/products/clocks-timing-solutions/oscillators",
+    "https://www.infineon.com/product-table/pressure-sensors",
+    "https://www.infineon.com/products/high-reliability/custom-services"
+   ],
+   "feeds": [],
+   "alert_links": [],
+   "fehler": ""
+  },
+  {
+   "name": "Mercedes-Benz",
+   "start": "https://group.mercedes-benz.com/investors/",
+   "seiten": [],
+   "feeds": [],
+   "alert_links": [],
+   "fehler": "HTTP Error 403: Forbidden"
+  },
+  {
+   "name": "Merck KGaA",
+   "start": "https://www.merckgroup.com/en/investors.html",
+   "seiten": [],
+   "feeds": [],
+   "alert_links": [],
+   "fehler": "HTTP Error 403: Forbidden"
+  },
+  {
+   "name": "MTU Aero Engines",
+   "start": "https://www.mtu.de/investor-relations/",
+   "seiten": [],
+   "feeds": [],
+   "alert_links": [],
+   "fehler": "HTTP Error 404: Not Found"
+  },
+  {
+   "name": "Munich Re",
+   "start": "https://www.munichre.com/en/company/investors.html",
+   "seiten": [
+    "https://www.munichre.com/en/company/investors.html",
+    "https://www.munichre.com/munichreservicegmbh/en/about-us.html#germany"
+   ],
+   "feeds": [],
+   "alert_links": [],
+   "fehler": ""
+  },
+  {
+   "name": "Porsche AG",
+   "start": "https://investorrelations.porsche.com/en/",
+   "seiten": [],
+   "feeds": [],
+   "alert_links": [],
+   "fehler": "HTTP Error 403: Forbidden"
+  },
+  {
+   "name": "Porsche SE",
+   "start": "https://www.porsche-se.com/en/investor-relations",
+   "seiten": [
+    "https://www.porsche-se.com/en/investor-relations",
+    "https://www.porsche-se.com/en/media#c732",
+    "https://www.porsche-se.com/en/media#c839",
+    "https://www.porsche-se.com/en/investor-relations/finanznachrichten/ad-hoc-nachrichten"
+   ],
+   "feeds": [
+    {
+     "url": "https://www.porsche-se.com/en/media?type=9818",
+     "eintraege": 30,
+     "neueste": "Tue, 03 Nov 2026 15:13:31 +0100",
+     "fund": "link-alternate"
+    }
+   ],
+   "alert_links": [],
+   "fehler": ""
+  },
+  {
+   "name": "Qiagen",
+   "start": "https://corporate.qiagen.com/investors",
+   "seiten": [],
+   "feeds": [],
+   "alert_links": [],
+   "fehler": "HTTP Error 404: Not Found"
+  },
+  {
+   "name": "Rheinmetall",
+   "start": "https://www.rheinmetall.com/en/investors",
+   "seiten": [],
+   "feeds": [],
+   "alert_links": [],
+   "fehler": "HTTP Error 404: Not Found"
+  },
+  {
+   "name": "RWE",
+   "start": "https://www.rwe.com/en/investor-relations/",
+   "seiten": [
+    "https://www.rwe.com/en/investor-relations/",
+    "https://www.rwe.com/en/contact-services/",
+    "https://www.rwe.com/en/contact-services/apps-and-tools/",
+    "https://www.rwe.com/en/products-and-services/",
+    "https://www.rwe.com/en/products-and-services/project-references/",
+    "https://www.rwe.com/en/products-and-services/project-references/americas-africa/",
+    "https://www.rwe.com/en/products-and-services/project-references/europe-central-asia/"
+   ],
+   "feeds": [],
+   "alert_links": [
+    {
+     "url": "https://www.rwe.com/en/investor-relations/contact-and-service/ir-newsletter/",
+     "text": "IR Newsletter"
+    },
+    {
+     "url": "https://uk.rwe.com/press-and-news/newsletter/",
+     "text": "@media ( max-width: 479px ) { [data-image-id='a81212d8075f41698db1d42b2374b38a']"
+    }
+   ],
+   "fehler": ""
+  },
+  {
+   "name": "SAP",
+   "start": "https://www.sap.com/investors/en.html",
+   "seiten": [
+    "https://www.sap.com/investors/en.html",
+    "https://www.sap.com/registration/contact-investor.html?navTitle=Contact+Us",
+    "https://news.sap.com/2026/10/sap-to-acquire-techwolf-evidence-based-work-age-of-ai/",
+    "https://news.sap.com/2026/05/sap-to-acquire-dremio-unify-sap-and-non-sap-data-power-agentic-ai/",
+    "https://news.sap.com/2026/07/sap-completes-dremio-acquisition/",
+    "https://news.sap.com/2026/03/sap-to-acquire-reltio/",
+    "https://news.sap.com/2026/05/sap-completes-acquisition-of-reltio/"
+   ],
+   "feeds": [
+    {
+     "url": "https://news.sap.com/feed/",
+     "eintraege": 30,
+     "neueste": "Tue, 03 Nov 2026 13:15:00 +0000",
+     "fund": "link-alternate"
+    }
+   ],
+   "alert_links": [
+    {
+     "url": "https://www.sap.com/dashboard/newsletters.html",
+     "text": "Newsletter"
+    },
+    {
+     "url": "https://www.sap.com/cmp/nl/sap-news-center-newsletter/index.html",
+     "text": "Subscribe here"
+    },
+    {
+     "url": "https://www.sap.com/campaigns/nl/sap-news-center-newsletter",
+     "text": "Subscribe now"
+    }
+   ],
+   "fehler": ""
+  },
+  {
+   "name": "Siemens",
+   "start": "https://www.siemens.com/global/en/company/investor-relations.html",
+   "seiten": [
+    "https://www.siemens.com/en-us/company/investor-relations/"
+   ],
+   "feeds": [],
+   "alert_links": [],
+   "fehler": ""
+  },
+  {
+   "name": "Siemens Energy",
+   "start": "https://www.siemens-energy.com/global/en/home/investor-relations.html",
+   "seiten": [
+    "https://www.siemens-energy.com/global/en/home/investor-relations.html",
+    "https://www.siemens-energy.com/global/en/home/products-services.html",
+    "https://www.siemens-energy.com/global/en/home/products-services/product-offerings.html",
+    "https://www.siemens-energy.com/global/en/home/products-services/product-offerings/circuit-breakers.html",
+    "https://www.siemens-energy.com/global/en/home/products-services/product-offerings/compression.html",
+    "https://www.siemens-energy.com/global/en/home/products-services/product/omnivise-t3000.html",
+    "https://www.siemens-energy.com/global/en/home/products-services/product-offerings/disconnectors-earthing-switches.html"
+   ],
+   "feeds": [],
+   "alert_links": [
+    {
+     "url": "https://www.siemens-energy.com/global/en/home/general/subscribe-shareholder-letter.html",
+     "text": "Subscribe"
+    },
+    {
+     "url": "https://www.siemens-energy.com/global/en/home/general/subscribe-newsletter.html",
+     "text": "Subscribe to our newsletter"
+    }
+   ],
+   "fehler": ""
+  },
+  {
+   "name": "Siemens Healthineers",
+   "start": "https://www.siemens-healthineers.com/investor-relations",
+   "seiten": [
+    "https://www.siemens-healthineers.com/investor-relations",
+    "https://www.siemens-healthineers.com/press",
+    "https://www.siemens-healthineers.com/products-services",
+    "https://www.siemens-healthineers.com/services/value-partnerships",
+    "https://www.siemens-healthineers.com/services",
+    "https://www.siemens-healthineers.com/services/it-standards"
+   ],
+   "feeds": [],
+   "alert_links": [
+    {
+     "url": "https://www.siemens-healthineers.com/newsletter",
+     "text": "Sign Up"
+    },
+    {
+     "url": "https://corporate.webassets.siemens-healthineers.com/f9350f1614a9dc37/fe731f4ea48c/Siemens_Healthineers_Press_Declaration_of_consent_Einwilligungserklaerung.pdf",
+     "text": "Subscribe to press releases (pdf)"
+    }
+   ],
+   "fehler": ""
+  },
+  {
+   "name": "Symrise",
+   "start": "https://www.symrise.com/investors/",
+   "seiten": [
+    "https://www.symrise.com/investors/",
+    "https://www.symrise.com/newsroom/",
+    "https://www.symrise.com/newsroom/press-releases/",
+    "https://www.symrise.com/newsroom/events-calendar/",
+    "https://www.symrise.com/newsroom/media-assets/",
+    "https://www.symrise.com/newsroom/media-contacts/"
+   ],
+   "feeds": [
+    {
+     "url": "https://www.symrise.com/newsroom/press-releases/rss.xml",
+     "eintraege": 585,
+     "neueste": "Tue, 03 Nov 2026 21:55:57 +0100",
+     "fund": "link"
+    }
+   ],
+   "alert_links": [],
+   "fehler": ""
+  },
+  {
+   "name": "Volkswagen",
+   "start": "https://www.volkswagen-group.com/en/investors-15846",
+   "seiten": [
+    "https://www.volkswagen-group.com/en/esg-controversies-15846",
+    "https://www.volkswagen-group.com/en/terms-and-conditions-of-use-15697",
+    "https://www.volkswagen-group.com/en/press-releases",
+    "https://www.volkswagen-group.com/en/register",
+    "https://www.volkswagen-group.com/en/ad-hoc",
+    "https://www.volkswagen-group.com/en/press-releases/all-set-for-future-mobility-volkswagen-group-and-saic-strengthen-long-standing-partnership-with-new-joint-venture-agreement-18844?node=45757"
+   ],
+   "feeds": [
+    {
+     "url": "https://www.volkswagen-group.com/en/feeds/press-releases",
+     "eintraege": 100,
+     "neueste": "Thu, 29 Oct 2026 16:06:30 +0100",
+     "fund": "link-alternate"
+    }
+   ],
+   "alert_links": [],
+   "fehler": ""
+  },
+  {
+   "name": "Vonovia",
+   "start": "https://www.vonovia.de/en/investors",
+   "seiten": [],
+   "feeds": [],
+   "alert_links": [],
+   "fehler": "HTTP Error 404: Not Found"
+  },
+  {
+   "name": "Zalando",
+   "start": "https://corporate.zalando.com/en/investor-relations",
+   "seiten": [
+    "https://corporate.zalando.com/en/investor-relations",
+    "https://corporate.zalando.com/en/services-and-contact",
+    "https://corporate.zalando.com/en/investor-relations/financial-publications/statutory-publications/ad-hoc-announcements",
+    "https://corporate.zalando.com/en/newsroom/news-stories?f%5B0%5D=topic%3A96",
+    "https://corporate.zalando.com/en/newsroom"
+   ],
+   "feeds": [],
+   "alert_links": [],
+   "fehler": ""
+  },
+  {
+   "name": "Scout24",
+   "start": "https://www.scout24.com/en/investor-relations",
+   "seiten": [
+    "https://www.scout24.com/en/investor-relations",
+    "https://www.scout24.com/en/investor-relations/financial-news/ir-news",
+    "https://www.scout24.com/en/investor-relations/financial-news/ad-hoc-notifications",
+    "https://www.scout24.com/en/investor-relations/financial-news/ir-news/detail/scout24-maintains-strong-momentum-in-q2-with-20-revenue-growth-double-digit-organic-revenue-growth-and-18-adjusted-eps-growth",
+    "https://www.scout24.com/en/investor-relations/financial-news/ir-news/detail/scout24-se-annual-general-meeting-approves-all-proposed-resolutions-dividend-increased-again",
+    "https://www.scout24.com/en/investor-relations/financial-news/ir-news/detail/scout24-unveils-the-agentic-os-for-real-estate-and-outlines-next-phase-of-scalable-growth-at-capital-markets-day-2026-1"
+   ],
+   "feeds": [],
+   "alert_links": [],
+   "fehler": ""
+  }
+ ]
+}
