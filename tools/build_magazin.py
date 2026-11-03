@@ -511,6 +511,11 @@ def share_html(p, url, img):
     story = {"title": p["title"], "lines": kurz_lines(p.get("body_md", "")), "points": kurz_points(p.get("body_md", "")), "box": kurz_title(p.get("body_md", "")), "ct": ct, "img": img,
              "logo": ("../../" + lf) if lf and not lf.endswith(".mono.png") and os.path.exists(lf) else "", "cat": p.get("category", ""),
              "tpl": "../../assets/story-vorlagen/" + story_vorlage(p) + ".png"}
+    if not p.get("story_image"):
+        # Kein Foto als Story-Bild, wenn der Artikel einen Folienausschnitt aus der Unternehmenspraesentation hat (-f1, -f2 ...): der erste (Kennzahlen) wird genommen
+        m_f = re.search(r"\(/?(assets/magazin/[^)\s]+-f1\.(?:png|jpg))\)", p.get("body_md", ""))
+        if m_f and os.path.exists(m_f.group(1)):
+            p = dict(p, story_image=m_f.group(1))
     if p.get("story_image"):
         # Folie oder Grafik aus den Unterlagen des Unternehmens: wird in der Story vollstaendig (ohne Beschnitt) gezeigt
         story["img"] = "../../" + p["story_image"].lstrip("/"); story["fit"] = "contain"

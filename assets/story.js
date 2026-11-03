@@ -103,9 +103,9 @@
       if (S.text) { c.font = "400 " + fs + "px " + F; String(S.text).split(/\n+/).forEach(function (p) { wrap(c, p, 960, 0).forEach(function () { y += Math.round(fs * 1.35); }); y += 14; }); }
       return y;
     }
-    while (photo && !fit && ph > 300 && layout(false, ph, fs) > LIM) ph -= 30;
+    while (photo && ph > (fit ? 400 : 300) && layout(false, ph, fs) > LIM) ph -= 30;
     while (fs > 22 && layout(false, ph, fs) > LIM) fs -= 1;
-    while (photo && !fit && ph > 200 && layout(false, ph, fs) > LIM) ph -= 20;
+    while (photo && ph > 200 && layout(false, ph, fs) > LIM) ph -= 20;
     while (photo && !fit && ph < 620 && layout(false, ph + 20, fs) <= LIM - 20) ph += 20;
     /* Ohne Foto (Kurzmeldungen) die Schrift vergroessern, damit die Story die Flaeche fuellt. */
     while (!photo && fs < 38 && layout(false, ph, fs + 1) <= LIM - 140) fs += 1;
