@@ -12,6 +12,8 @@ logo_symbol: MPC
 logo_domain: marathonpetroleum.com
 logo_file: assets/logos/mpc.png
 story_chart: assets/magazin/marathon-petroleum-q3-2026-quartalszahlen-kurs.png
+story_portrait: assets/magazin/maryann-mannen-marathon-petroleum.png
+story_quote_by: "Maryann T. Mannen | CEO Marathon Petroleum"
 ---
 <!-- PRÜFEN: Aufmacherfoto fehlt noch: Fotoanfrage steht in tools/asset.request, das Foto wird automatisch gewählt. Bitte prüfen, ob es zur Raffinerie-Geschichte passt. -->
 <!-- PRÜFEN: Kursangabe (427,94 USD, -0,57 %, Stand 12:00 Uhr EST am 03.11.2026) stammt aus dem eigenen Yahoo-Finance-Screenshot vom 03.11.2026, 18:00 Uhr. Das Kursbild für die Story ist daraus zugeschnitten. Nutzungsbedingungen von Yahoo prüfen. -->

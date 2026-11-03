@@ -31,7 +31,7 @@
     var tpl = await load(S.tpl), photo = withPhoto ? await load(S.img) : null, logo = await load(S.logo);
     /* Eigene Vorlage (gruene Balken mit Rubrik und Adresse); der Inhalt darin bleibt schlicht: weisser Grund, schwarze Schrift, keine Farbflaechen. */
     if (tpl) c.drawImage(tpl, 0, 0, W, H); else { c.fillStyle = "#fff"; c.fillRect(0, 0, W, H); c.fillStyle = "#99e6b1"; c.fillRect(0, 108, W, 86); c.fillRect(0, 1866, W, 54); }
-    var F = 'InterS,Inter,"Segoe UI",Roboto,Helvetica,Arial,sans-serif', LIM = 1835 - (S.chart ? 600 : (S.portrait ? 470 : 0)), G = "#111", D = "#111";
+    var F = 'InterS,Inter,"Segoe UI",Roboto,Helvetica,Arial,sans-serif', LIM = 1835 - ((S.chart && S.portrait) ? 560 : (S.chart ? 600 : (S.portrait ? 470 : 0))), G = "#111", D = "#111";
     c.textBaseline = "top";
     var pts = S.points || [], lns = S.lines || [], ph = photo ? 470 : 0, fs = 30, fit = !!(photo && S.fit === "contain");
     if (fit) ph = Math.round(960 * photo.height / photo.width);
@@ -131,7 +131,21 @@
       yy -= String(S.text).split(/\n+/).reduce(function (a, p) { return a + wrap(c, p, 960, 0).length * lh2 + 14; }, 0);
       String(S.text).split(/\n+/).forEach(function (p) { wrap(c, p, 960, 0).forEach(function (l) { c.fillText(l, 60, yy); yy += lh2; }); yy += 14; });
     }
-    if (S.portrait) {
+    if (S.chart && S.portrait) {
+      /* Kursbild links und Portrait rechts sitzen beide unten auf dem gruenen Balken; der Name steht klein links neben der Person */
+      var kc = await load(S.chart), kp = await load(S.portrait), bar = 1866;
+      if (kc) { var kw2 = 880, kh2 = Math.round(kw2 * kc.height / kc.width); c.drawImage(kc, 24, bar - kh2, kw2, kh2); }
+      if (kp) {
+        var kph = 520, kpw = Math.round(kph * kp.width / kp.height), kpx = 1056 - kpw;
+        c.drawImage(kp, kpx, bar - kph, kpw, kph);
+        if (S.quote_by) {
+          var nm = S.quote_by.split("|"); c.textAlign = "right"; c.textBaseline = "alphabetic"; c.fillStyle = "#111";
+          c.font = "700 30px " + F; c.fillText(nm[0].trim(), kpx - 14, bar - 62);
+          if (nm[1]) { c.font = "400 25px " + F; c.fillStyle = "#262626"; c.fillText(nm[1].trim(), kpx - 14, bar - 24); }
+          c.textAlign = "left"; c.textBaseline = "top";
+        }
+      }
+    } else if (S.portrait) {
       /* Freigestelltes Portrait unten links (steht auf dem unteren Balken), daneben das Zitat */
       var pt = await load(S.portrait);
       if (pt) {
@@ -147,7 +161,7 @@
         }
       }
     }
-    if (S.chart) {
+    if (S.chart && !S.portrait) {
       var ch = await load(S.chart);
       if (ch) { var top = yy + 30, bot = 1835, r2 = Math.min(960 / ch.width, (bot - top) / ch.height), cw = ch.width * r2, chh = ch.height * r2; c.drawImage(ch, 60 + (960 - cw) / 2, top, cw, chh); }
     }
