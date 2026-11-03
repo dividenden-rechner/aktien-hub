@@ -10,6 +10,8 @@ quelle_name: "AMD, Präsentation zum dritten Quartal 2026 (3. November 2026)"
 logo_name: "Advanced Micro Devices"
 story_chart: assets/magazin/amd-q3-2026-quartalszahlen-kurs.png
 story_portrait: assets/magazin/lisa-su-amd.png
+story_image: assets/magazin/amd-q3-2026-quartalszahlen-f3.png
+story_text: "Das Rechenzentrum trägt das Quartal: Der Umsatz mit Servern und KI-Chips fast verdoppelt sich auf 8,5 Mrd. USD (+97 %), der operative Gewinn des Bereichs steigt von 1,1 auf 2,9 Mrd. USD. Schwächer läuft das Geschäft mit PCs und Spielekonsolen: Der Umsatz fällt um 8 % auf 3,7 Mrd. USD, der Gewinn dort sinkt um 34 %. Das Segment Embedded legt um 29 % zu. Die Bruttomarge steigt bereinigt auf 56 %, je Aktie verdient AMD bereinigt 2,09 USD nach 1,20 USD. Die Schulden haben sich dagegen auf 7,1 Mrd. USD mehr als verdoppelt, die Vorräte wachsen um 35 %. Für das vierte Quartal peilt AMD rund 17 Mrd. USD Umsatz an, gut ein Viertel mehr als im dritten. Das Wachstum hängt damit stark an der KI-Nachfrage."
 story_quote_by: "Lisa Su | CEO AMD"
 logo_symbol: AMD
 logo_domain: amd.com
@@ -28,7 +30,7 @@ logo_file: assets/logos/amd.png
 
 !!! kurz "Kurz gesagt"
     **Umsatz:** 13,4 Mrd. USD (+45 %)
-    **Bereinigter Gewinn je Aktie:** 2,09 USD (Vorjahr 1,20 USD)
+    **Gewinn (bereinigt):** 3,47 Mrd. USD (+77 %)
 
     1. **Treiber:** Das Rechenzentrumsgeschäft wächst um 97 % auf 8,5 Mrd. USD und liefert mehr als 60 % des Umsatzes. Der Bereich Client & Gaming (PCs, Spielekonsolen) schrumpft dagegen um 8 %.
     2. **Ausblick:** Für das vierte Quartal erwartet AMD rund 17 Mrd. USD Umsatz (±3 %), das wären gut 27 % mehr als im dritten Quartal.

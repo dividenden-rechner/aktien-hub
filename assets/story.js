@@ -33,7 +33,7 @@
     if (tpl) c.drawImage(tpl, 0, 0, W, H); else { c.fillStyle = "#fff"; c.fillRect(0, 0, W, H); c.fillStyle = "#99e6b1"; c.fillRect(0, 108, W, 86); c.fillRect(0, 1866, W, 54); }
     var F = 'InterS,Inter,"Segoe UI",Roboto,Helvetica,Arial,sans-serif', LIM = 1835 - ((S.chart && S.portrait) ? 560 : (S.chart ? 600 : (S.portrait ? 470 : 0))), G = "#111", D = "#111";
     c.textBaseline = "top";
-    var pts = S.points || [], lns = S.lines || [], ph = photo ? 470 : 0, fs = 30, fit = !!(photo && S.fit === "contain");
+    var pts = S.para ? [] : (S.points || []), lns = S.lines || [], ph = photo ? 470 : 0, fs = 30, fit = !!(photo && S.fit === "contain");
     if (fit) ph = Math.round(960 * photo.height / photo.width);
     /* Layout messen; passt der Text nicht, erst Foto verkleinern, dann Schrift (min. 26 px). Nie abschneiden. */
     function layout(draw, ph, fs) {
@@ -55,20 +55,20 @@
       }
       if (photo && fit) {
         /* Folie/Grafik: Logo und Kennung ueber dem Bild, damit nichts davon verdeckt wird */
-        sz = 104;
+        sz = S.para ? 150 : 104;
         if (draw && logo) plaque(60, y);
         if (draw && tag) { c.fillStyle = G; c.font = "700 40px " + F; c.fillText(tag, logo ? 60 + sz + 24 : 60, y + (logo ? sz / 2 - 20 : 0)); }
         /* Kennzahlen (Umsatz, Gewinn) rechts neben dem Logo */
         var hl = (S.lines || []).slice(0, 2).map(function (t) { return t.replace(/\s*\((?:\u2014|\u2013|-)\)\s*$/, ""); });
         if (draw && hl.length) {
-          var hx = logo ? 60 + sz + 32 : 60, hf = 38, hh = Math.round(hf * 1.3), hy = y + (sz - hl.length * hh) / 2 + 2;
+          var hx = logo ? 60 + sz + 32 : 60, hf = S.para ? 50 : 38, hh = Math.round(hf * 1.3), hy = y + (sz - hl.length * hh) / 2 + 2;
           /* Schrift verkleinern, bis die laengste Zeile neben das Logo passt */
-          hl.forEach(function (t) { var i = t.indexOf(":"), k = i > 0 ? t.slice(0, i + 1) : ""; while (hf > 26) { c.font = "700 " + hf + "px " + F; var kw0 = k ? c.measureText(k + " ").width : 0; c.font = "400 " + hf + "px " + F; if (hx + kw0 + c.measureText(i > 0 ? t.slice(i + 1).trim() : t).width <= 1020) break; hf -= 1; } });
+          hl.forEach(function (t) { var i = t.indexOf(":"), k = i > 0 ? t.slice(0, i + 1) : ""; while (hf > 26) { c.font = "700 " + hf + "px " + F; var kw0 = k ? c.measureText(k + " ").width : 0; c.font = (S.para ? "700 " : "400 ") + hf + "px " + F; if (hx + kw0 + c.measureText(i > 0 ? t.slice(i + 1).trim() : t).width <= 1020) break; hf -= 1; } });
           hh = Math.round(hf * 1.3); hy = y + (sz - hl.length * hh) / 2 + 2;
           hl.forEach(function (t, n) {
             var i = t.indexOf(":"), k = i > 0 ? t.slice(0, i + 1) : "", v = i > 0 ? t.slice(i + 1).trim() : t;
             c.font = "700 " + hf + "px " + F; c.fillStyle = D; c.fillText(k, hx, hy + n * hh);
-            var kw = k ? c.measureText(k + " ").width : 0; c.font = "400 " + hf + "px " + F; c.fillStyle = "#262626"; c.fillText(v, hx + kw, hy + n * hh);
+            var kw = k ? c.measureText(k + " ").width : 0; c.font = (S.para ? "700 " : "400 ") + hf + "px " + F; c.fillStyle = S.para ? D : "#262626"; c.fillText(v, hx + kw, hy + n * hh);
           });
         }
         if (logo || tag) y += (logo ? sz : 44) + 38;
@@ -115,7 +115,7 @@
         pts.forEach(function (t, n) { y += kv(t, ix + 48, iw - 48, fs, String(n + 1) + ".", draw, y) + 12; });
         y += bare ? 0 : 16; layout.bh = y - by0; y += bare ? 0 : 24;
       }
-      if (S.text) { c.font = "400 " + fs + "px " + F; String(S.text).split(/\n+/).forEach(function (p) { wrap(c, p, 960, 0).forEach(function () { y += Math.round(fs * 1.35); }); y += 14; }); }
+      if (S.text) { c.font = (S.para ? "700 " + (fs + 6) : "400 " + fs) + "px " + F; String(S.text).split(/\n+/).forEach(function (p) { wrap(c, p, 960, 0).forEach(function () { y += Math.round((fs + (S.para ? 6 : 0)) * 1.35); }); y += 14; }); }
       return y;
     }
     while (photo && ph > (fit ? 400 : 300) && layout(false, ph, fs) > LIM) ph -= 30;
@@ -127,7 +127,7 @@
     layout(false, ph, fs);
     var yy = layout(true, ph, fs);
     if (S.text) {
-      var lh2 = Math.round(fs * 1.35); c.fillStyle = "#262626"; c.font = "400 " + fs + "px " + F;
+      var lh2 = Math.round((fs + (S.para ? 6 : 0)) * 1.35); c.fillStyle = S.para ? D : "#262626"; c.font = (S.para ? "700 " + (fs + 6) : "400 " + fs) + "px " + F;
       yy -= String(S.text).split(/\n+/).reduce(function (a, p) { return a + wrap(c, p, 960, 0).length * lh2 + 14; }, 0);
       String(S.text).split(/\n+/).forEach(function (p) { wrap(c, p, 960, 0).forEach(function (l) { c.fillText(l, 60, yy); yy += lh2; }); yy += 14; });
     }
