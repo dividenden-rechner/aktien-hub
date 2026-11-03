@@ -15,10 +15,11 @@ Datei anklicken, dann Stift-Symbol: Zeile `draft: true` löschen und speichern, 
 | 29.10.2026 22:42 | Amazon steigert Umsatz im dritten Quartal auf 201,9 Milliarden Dollar | [79738970_2026-10-29/7757_2242-amazon-q3-2026-zahlen.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/79738970_2026-10-29/7757_2242-amazon-q3-2026-zahlen.md) |
 | 29.10.2026 10:12 | Shell erzielt im dritten Quartal 10,8 Milliarden Dollar Gewinn | [79738970_2026-10-29/8987_1012-shell-q3-2026-ergebnisse.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/79738970_2026-10-29/8987_1012-shell-q3-2026-ergebnisse.md) |
 
-### Online (161)
+### Online (162)
 
 | Datum | Titel | Datei |
 |---|---|---|
+| 03.11.2026 00:25 | Realty Income wächst weiter: Mieteinnahmen steigen im dritten Quartal kräftig an | [79738896_2026-11-03/9974_0025-realty-income-q3-2026-quartalszahlen.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/79738896_2026-11-03/9974_0025-realty-income-q3-2026-quartalszahlen.md) |
 | 02.11.2026 22:33 | Apple wächst zweistellig: iPhone und Services treiben Rekordgewinn | [79738897_2026-11-02/7766_2233-apple-geschaeftsbericht-2026.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/79738897_2026-11-02/7766_2233-apple-geschaeftsbericht-2026.md) |
 | 02.11.2026 22:30 | Palantir: Umsatz steigt im dritten Quartal um 96 Prozent, Unternehmenskunden überholen in den USA erstmals den Staat | [79738897_2026-11-02/7849_2230-palantir-q3-2026-zahlen-prognose.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/79738897_2026-11-02/7849_2230-palantir-q3-2026-zahlen-prognose.md) |
 | 02.11.2026 22:21 | CRISPR Therapeutics: Casgevy-Umsatz steigt auf 99 Millionen US-Dollar, der Verlust bleibt | [79738897_2026-11-02/7858_2221-crispr-therapeutics-q3-2026-casgevy-verlust.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/79738897_2026-11-02/7858_2221-crispr-therapeutics-q3-2026-casgevy-verlust.md) |

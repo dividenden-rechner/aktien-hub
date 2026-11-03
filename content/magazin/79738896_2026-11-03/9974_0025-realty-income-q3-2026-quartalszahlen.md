@@ -12,6 +12,7 @@ image_source: https://commons.wikimedia.org/wiki/File:Applegreen_Market,_New_Yor
 logo_name: "Realty Income Corporation"
 logo_symbol: O
 logo_domain: realtyincome.com
+logo_file: assets/logos/o.png
 ---
 <!-- PRÜFEN: Aufmacherfoto ist automatisch von Wikimedia Commons gewaehlt: bitte pruefen, ob es zum Artikel passt (sonst image-Zeilen entfernen, dann entsteht ein Titelbild automatisch). -->
 <!-- PRÜFEN: Ausschnitte aus dem Bericht im Text (f1): bitte prüfen, ob Zuschnitt und Platz passen. Unpassende Bildzeilen einfach löschen. -->
