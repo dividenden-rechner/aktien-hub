@@ -15,10 +15,11 @@ Datei anklicken, dann Stift-Symbol: Zeile `draft: true` löschen und speichern, 
 | 29.10.2026 22:42 | Amazon steigert Umsatz im dritten Quartal auf 201,9 Milliarden Dollar | [79738970_2026-10-29/7757_2242-amazon-q3-2026-zahlen.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/79738970_2026-10-29/7757_2242-amazon-q3-2026-zahlen.md) |
 | 29.10.2026 10:12 | Shell erzielt im dritten Quartal 10,8 Milliarden Dollar Gewinn | [79738970_2026-10-29/8987_1012-shell-q3-2026-ergebnisse.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/79738970_2026-10-29/8987_1012-shell-q3-2026-ergebnisse.md) |
 
-### Online (193)
+### Online (194)
 
 | Datum | Titel | Datei |
 |---|---|---|
+| 03.11.2026 22:20 | AMD: Umsatz +45 %, Rechenzentrum fast verdoppelt, Aktie nachbörslich +7 % | [79738896_2026-11-03/8040_2220-amd-q3-2026-quartalszahlen.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/79738896_2026-11-03/8040_2220-amd-q3-2026-quartalszahlen.md) |
 | 03.11.2026 19:23 | Unilever plant 1 Mrd. Euro Einsparungen und peilt 2027 Umsatzwachstum an | [79738896_2026-11-03/8076_1923-unilever-investor-event-2027-prognose-einsparungen.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/79738896_2026-11-03/8076_1923-unilever-investor-event-2027-prognose-einsparungen.md) |
 | 03.11.2026 19:23 | Novo Nordisk meldet Zwischenstand beim Aktienrückkauf in Höhe von 11,6 Milliarden DKK | [79738896_2026-11-03/8076_1923-novo-nordisk-aktienrueckkauf-november-2026.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/79738896_2026-11-03/8076_1923-novo-nordisk-aktienrueckkauf-november-2026.md) |
 | 03.11.2026 19:23 | AMETEK steigert bereinigten Q3-Gewinn auf 2,21 US-Dollar je Aktie und hebt Jahresprognose an | [79738896_2026-11-03/8076_1923-ametek-q3-2026-zahlen-prognose.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/79738896_2026-11-03/8076_1923-ametek-q3-2026-zahlen-prognose.md) |
