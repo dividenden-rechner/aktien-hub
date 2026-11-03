@@ -58,6 +58,16 @@
         sz = 104;
         if (draw && logo) plaque(60, y);
         if (draw && tag) { c.fillStyle = G; c.font = "700 40px " + F; c.fillText(tag, logo ? 60 + sz + 24 : 60, y + (logo ? sz / 2 - 20 : 0)); }
+        /* Kennzahlen (Umsatz, Gewinn) rechts neben dem Logo */
+        var hl = (S.lines || []).slice(0, 2).map(function (t) { return t.replace(/\s*\((?:\u2014|\u2013|-)\)\s*$/, ""); });
+        if (draw && hl.length) {
+          var hx = logo ? 60 + sz + 32 : 60, hf = 38, hh = Math.round(hf * 1.3), hy = y + (sz - hl.length * hh) / 2 + 2;
+          hl.forEach(function (t, n) {
+            var i = t.indexOf(":"), k = i > 0 ? t.slice(0, i + 1) : "", v = i > 0 ? t.slice(i + 1).trim() : t;
+            c.font = "700 " + hf + "px " + F; c.fillStyle = D; c.fillText(k, hx, hy + n * hh);
+            var kw = k ? c.measureText(k + " ").width : 0; c.font = "400 " + hf + "px " + F; c.fillStyle = "#262626"; c.fillText(v, hx + kw, hy + n * hh);
+          });
+        }
         if (logo || tag) y += (logo ? sz : 44) + 22;
         drawTitle();
         drawPhoto();
