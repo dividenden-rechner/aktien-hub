@@ -10,6 +10,7 @@ quelle_url: https://www.sec.gov/Archives/edgar/data/842180/000110465926121647/tm
 quelle_name: "Pressemitteilung Banco Bilbao Vizcaya Argentaria, S.A. (SEC-Meldung)"
 logo_symbol: BBVA
 logo_name: "Banco Bilbao Vizcaya Argentaria, S.A."
+logo_file: assets/logos/bbva.png
 ---
 <!-- PRÜFEN: Diese Zahlen stehen nicht im Originaltext: 239,69, 239,69. Bitte pruefen, dann 'draft: true' loeschen. -->
 

@@ -10,6 +10,7 @@ quelle_url: https://www.sec.gov/Archives/edgar/data/72903/000119312526444394/d20
 quelle_name: "Pressemitteilung Xcel Energy (SEC-Meldung)"
 logo_symbol: XEL
 logo_name: "Xcel Energy"
+logo_file: assets/logos/xel.mono.png
 ---
 <!-- PRÜFEN: Diese Zahlen stehen nicht im Originaltext: 2,18, Einordnung: 2,18. Bitte pruefen, dann 'draft: true' loeschen. -->
 
