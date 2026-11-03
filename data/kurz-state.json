@@ -349,11 +349,13 @@
 "sec:0001193125-26-443854": "2026-11-03",
 "sec:0001193125-26-443864": "2026-11-03",
 "sec:0001193125-26-443903": "2026-11-03",
-"sec:0001193125-26-443920": "2026-11-03"
+"sec:0001193125-26-443920": "2026-11-03",
+"feed:https://news.samsung.com/global/video-inside-the-tech-samsung-micro-rgb-tv": "2026-11-03",
+"feed:https://www.hyundai.com/worldwide/en/newsroom/detail/0000001302": "2026-11-03"
 },
 "budget": {
-"day": "2026-11-02",
-"n": 104
+"day": "2026-11-03",
+"n": 2
 },
 "fails": {}
 }
