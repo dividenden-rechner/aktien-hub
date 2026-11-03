@@ -10,6 +10,7 @@ quelle_url: https://www.sec.gov/Archives/edgar/data/7084/000000708426000054/adm-
 quelle_name: "Pressemitteilung Archer Daniels Midland (SEC-Meldung)"
 logo_symbol: ADM
 logo_name: "Archer Daniels Midland"
+logo_file: assets/logos/adm.png
 ---
 <!-- PRÜFEN: Diese Zahlen stehen nicht im Originaltext: 22,34. Bitte pruefen, dann 'draft: true' loeschen. -->
 

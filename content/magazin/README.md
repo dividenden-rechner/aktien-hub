@@ -15,7 +15,7 @@ Datei anklicken, dann Stift-Symbol: Zeile `draft: true` löschen und speichern, 
 | 29.10.2026 22:42 | Amazon steigert Umsatz im dritten Quartal auf 201,9 Milliarden Dollar | [79738970_2026-10-29/7757_2242-amazon-q3-2026-zahlen.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/79738970_2026-10-29/7757_2242-amazon-q3-2026-zahlen.md) |
 | 29.10.2026 10:12 | Shell erzielt im dritten Quartal 10,8 Milliarden Dollar Gewinn | [79738970_2026-10-29/8987_1012-shell-q3-2026-ergebnisse.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/79738970_2026-10-29/8987_1012-shell-q3-2026-ergebnisse.md) |
 
-### Online (189)
+### Online (190)
 
 | Datum | Titel | Datei |
 |---|---|---|
@@ -27,6 +27,7 @@ Datei anklicken, dann Stift-Symbol: Zeile `draft: true` löschen und speichern, 
 | 03.11.2026 19:19 | Koninklijke Philips N.V. steigert bereinigten Q3-Gewinn je Aktie auf 0,40 Euro | [79738896_2026-11-03/8080_1919-koninklijke-philips-q3-2026-ergebnisse.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/79738896_2026-11-03/8080_1919-koninklijke-philips-q3-2026-ergebnisse.md) |
 | 03.11.2026 19:19 | Keurig Dr Pepper steigert bereinigten Q3-Gewinn je Aktie auf 0,66 US-Dollar | [79738896_2026-11-03/8080_1919-keurig-dr-pepper-q3-zahlen-2026.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/79738896_2026-11-03/8080_1919-keurig-dr-pepper-q3-zahlen-2026.md) |
 | 03.11.2026 19:19 | Broadridge Financial Solutions steigert bereinigten Gewinn je Aktie auf 1,56 US-Dollar | [79738896_2026-11-03/8080_1919-broadridge-financial-solutions-q1-2027-zahlen.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/79738896_2026-11-03/8080_1919-broadridge-financial-solutions-q1-2027-zahlen.md) |
+| 03.11.2026 19:19 | Archer Daniels Midland steigert bereinigten Q3-Gewinn auf 1,77 US-Dollar je Aktie | [79738896_2026-11-03/8080_1919-archer-daniels-midland-q3-2026-zahlen.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/79738896_2026-11-03/8080_1919-archer-daniels-midland-q3-2026-zahlen.md) |
 | 03.11.2026 19:17 | Eaton verzeichnet im dritten Quartal Rekordgewinn und hebt Prognose an | [79738896_2026-11-03/8082_1917-eaton-q3-2026-zahlen.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/79738896_2026-11-03/8082_1917-eaton-q3-2026-zahlen.md) |
 | 03.11.2026 19:16 | Yum! Brands erzielt im dritten Quartal GAAP-Gewinn je Aktie von 5,92 US-Dollar | [79738896_2026-11-03/8083_1916-yum-brands-q3-2026-zahlen.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/79738896_2026-11-03/8083_1916-yum-brands-q3-2026-zahlen.md) |
 | 03.11.2026 19:16 | Henry Schein steigert Q3-Gewinn je Aktie auf 1,06 US-Dollar und hebt Jahresprognose an | [79738896_2026-11-03/8083_1916-henry-schein-q3-2026-zahlen-prognose.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/79738896_2026-11-03/8083_1916-henry-schein-q3-2026-zahlen-prognose.md) |
