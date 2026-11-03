@@ -341,6 +341,16 @@
    "quelle": "https://www.sec.gov/Archives/edgar/data/891478/000089147826000098/financieroq326ingles.htm"
   },
   {
+   "sym": "AAPL",
+   "name": "Apple",
+   "datum": "2026-11-02",
+   "eps": 2.1,
+   "eps_basis": "berichtet",
+   "revenue": 114477000000.0,
+   "waehrung": "USD",
+   "quelle": "https://www.sec.gov/Archives/edgar/data/320193/000032019326000024/a8-kex991q4202609262026.htm"
+  },
+  {
    "sym": "CLX",
    "name": "Clorox",
    "datum": "2026-11-02",
@@ -419,6 +429,16 @@
    "revenue": 7005000000.0,
    "waehrung": "USD",
    "quelle": "https://www.sec.gov/Archives/edgar/data/1048286/000104828626000040/mar-2026q3xex99earningsrel.htm"
+  },
+  {
+   "sym": "O",
+   "name": "Realty Income",
+   "datum": "2026-11-02",
+   "eps": 0.43,
+   "eps_basis": "berichtet",
+   "revenue": 1621600000.0,
+   "waehrung": "USD",
+   "quelle": "https://www.sec.gov/Archives/edgar/data/726728/000072672826000056/o-991q32026.htm"
   },
   {
    "sym": "ON",
