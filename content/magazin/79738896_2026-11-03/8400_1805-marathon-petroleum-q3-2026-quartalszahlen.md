@@ -5,15 +5,20 @@ date: 2026-11-03 18:05
 author: "Redaktions-Team Dividenden-Rechner.de"
 author_bio: "Das Redaktions-Team von Dividenden-Rechner.de schreibt über Dividendenaktien, Kennzahlen und Steuerthemen für Privatanleger. Die Rechner und Auswertungen auf der Seite entstehen im eigenen Haus."
 category: Quartalszahlen
+image: assets/magazin/marathon-petroleum-q3-2026-quartalszahlen-aufmacher.png
+image_alt: "Balkendiagramm: Bereinigtes EBITDA von Marathon Petroleum steigt von 3,2 auf 11,7 Milliarden US-Dollar"
+image_credit: "Grafik: Dividenden-Rechner"
 quelle_url: https://www.marathonpetroleum.com/Investors/
 quelle_name: "Marathon Petroleum, Präsentation zum dritten Quartal 2026 und Pressemitteilung"
 logo_name: "Marathon Petroleum Corporation"
 story_chart: assets/magazin/marathon-petroleum-q3-2026-quartalszahlen-kurs.png
+story_portrait: assets/magazin/maryann-mannen-marathon-petroleum.png
+story_quote_by: "Maryann T. Mannen | CEO Marathon Petroleum"
 logo_symbol: MPC
 logo_domain: marathonpetroleum.com
 logo_file: assets/logos/mpc.png
 ---
-<!-- PRÜFEN: Aufmacherfoto fehlt noch: Fotoanfrage steht in tools/asset.request, das Foto wird automatisch gewählt. Bitte prüfen, ob es zur Raffinerie-Geschichte passt. -->
+<!-- PRÜFEN: Aufmacher ist vorerst eine eigene Grafik (EBITDA Vorjahr gegen jetzt). Die Foto-Automatik fand kein Raffineriefoto (Gemini-Tageskontingent aufgebraucht); die Fotoanfrage steht noch in tools/asset.request, ein Foto ersetzt die Grafik später. -->
 <!-- PRÜFEN: Kursangabe (427,94 USD, -0,57 %, Stand 12:00 Uhr EST am 03.11.2026) stammt aus dem eigenen Yahoo-Finance-Screenshot vom 03.11.2026, 18:00 Uhr. Das Kursbild für die Story ist daraus zugeschnitten. Nutzungsbedingungen von Yahoo prüfen. -->
 <!-- PRÜFEN: Nicht in der Präsentation enthalten: Umsatz, Dividende je Aktie (laut Pressemitteilung um 10 % erhöht, Betrag nicht gefunden). Deshalb stehen oben EBITDA und Gewinn je Aktie statt Umsatz und Gewinn. -->
 <!-- PRÜFEN: Zahlen zu Diesel- und Crack-Spreads und zum Dieselpreis stammen aus Drittquellen (Hydrocarbon Processing, Axios, EIA über Energy News Beat), nicht aus der Marathon-Präsentation. Der Dieselpreis der EIA (6,35 USD je Gallone, Woche zum 26.10.) ist aus zweiter Hand. -->
