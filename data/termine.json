@@ -73,6 +73,15 @@
    "quelle": "https://www.sec.gov/Archives/edgar/data/310764/000031076426000059/sykex991earningsq32026.htm"
   },
   {
+   "sym": "DOC",
+   "name": "Healthpeak Properties",
+   "art": "dividende_zahltag",
+   "datum": "2026-10-30",
+   "betrag": "0.10167",
+   "waehrung": "USD",
+   "quelle": "https://www.sec.gov/Archives/edgar/data/765880/000162828026068878/ex99109302026.htm"
+  },
+  {
    "sym": "ERIE",
    "name": "Erie Indemnity",
    "art": "ergebnis",
@@ -118,6 +127,15 @@
    "quelle": "https://www.sec.gov/Archives/edgar/data/106535/000119312526437799/wy-ex99_1.htm"
   },
   {
+   "sym": "CLX",
+   "name": "Clorox",
+   "art": "ergebnis",
+   "datum": "2026-11-02",
+   "betrag": "",
+   "waehrung": "",
+   "quelle": "https://www.sec.gov/Archives/edgar/data/21076/000002107626000044/ex991-pressreleasedatednov.htm"
+  },
+  {
    "sym": "EL",
    "name": "Estée Lauder Companies (The)",
    "art": "ergebnis",
@@ -143,6 +161,24 @@
    "betrag": "0.127",
    "waehrung": "EUR",
    "quelle": "https://www.sec.gov/Archives/edgar/data/891478/000089147826000098/financieroq326ingles.htm"
+  },
+  {
+   "sym": "SBAC",
+   "name": "SBA Communications",
+   "art": "ergebnis",
+   "datum": "2026-11-02",
+   "betrag": "",
+   "waehrung": "",
+   "quelle": "https://www.sec.gov/Archives/edgar/data/1034054/000119312526443666/d185668dex991.htm"
+  },
+  {
+   "sym": "UDR",
+   "name": "UDR, Inc.",
+   "art": "dividende_zahltag",
+   "datum": "2026-11-02",
+   "betrag": "0.145",
+   "waehrung": "USD",
+   "quelle": "https://www.sec.gov/Archives/edgar/data/74208/000007420826000084/udr-ex99d1.htm"
   },
   {
    "sym": "SNDK",
@@ -181,6 +217,42 @@
    "quelle": "https://www.sec.gov/Archives/edgar/data/882184/000088218426000119/a9302026exhibit991.htm"
   },
   {
+   "sym": "FANG",
+   "name": "Diamondback Energy",
+   "art": "dividende_exdatum",
+   "datum": "2026-11-12",
+   "betrag": "1.18",
+   "waehrung": "USD",
+   "quelle": "https://www.sec.gov/Archives/edgar/data/1539838/000153983826000180/diamondbackex991-11x2x26.htm"
+  },
+  {
+   "sym": "SBAC",
+   "name": "SBA Communications",
+   "art": "dividende_exdatum",
+   "datum": "2026-11-12",
+   "betrag": "1.25",
+   "waehrung": "USD",
+   "quelle": "https://www.sec.gov/Archives/edgar/data/1034054/000119312526443666/d185668dex991.htm"
+  },
+  {
+   "sym": "DOC",
+   "name": "Healthpeak Properties",
+   "art": "dividende_exdatum",
+   "datum": "2026-11-13",
+   "betrag": "0.10167",
+   "waehrung": "USD",
+   "quelle": "https://www.sec.gov/Archives/edgar/data/765880/000162828026068878/ex99109302026.htm"
+  },
+  {
+   "sym": "UDR",
+   "name": "UDR, Inc.",
+   "art": "dividende_exdatum",
+   "datum": "2026-11-16",
+   "betrag": "",
+   "waehrung": "",
+   "quelle": "https://www.sec.gov/Archives/edgar/data/74208/000007420826000084/udr-ex99d1.htm"
+  },
+  {
    "sym": "CVX",
    "name": "Chevron Corporation",
    "art": "dividende_exdatum",
@@ -197,6 +269,24 @@
    "betrag": "0.50",
    "waehrung": "USD",
    "quelle": "https://www.sec.gov/Archives/edgar/data/882184/000088218426000119/a9302026exhibit991.htm"
+  },
+  {
+   "sym": "FANG",
+   "name": "Diamondback Energy",
+   "art": "dividende_zahltag",
+   "datum": "2026-11-19",
+   "betrag": "1.18",
+   "waehrung": "USD",
+   "quelle": "https://www.sec.gov/Archives/edgar/data/1539838/000153983826000180/diamondbackex991-11x2x26.htm"
+  },
+  {
+   "sym": "KEYS",
+   "name": "Keysight Technologies",
+   "art": "ergebnis",
+   "datum": "2026-11-19",
+   "betrag": "",
+   "waehrung": "",
+   "quelle": "https://www.sec.gov/Archives/edgar/data/1601046/000160104626000038/exhibit991keystransitionpr.htm"
   },
   {
    "sym": "SNDK",
@@ -217,6 +307,15 @@
    "quelle": "https://www.sec.gov/Archives/edgar/data/872589/000087258926000032/exhibit991q32026.htm"
   },
   {
+   "sym": "DOC",
+   "name": "Healthpeak Properties",
+   "art": "dividende_zahltag",
+   "datum": "2026-11-25",
+   "betrag": "0.10167",
+   "waehrung": "USD",
+   "quelle": "https://www.sec.gov/Archives/edgar/data/765880/000162828026068878/ex99109302026.htm"
+  },
+  {
    "sym": "EL",
    "name": "Estée Lauder Companies (The)",
    "art": "dividende_exdatum",
@@ -224,6 +323,15 @@
    "betrag": "",
    "waehrung": "",
    "quelle": "https://www.sec.gov/Archives/edgar/data/1001250/000100125026000057/fy2027q1exhibit991.htm"
+  },
+  {
+   "sym": "UDR",
+   "name": "UDR, Inc.",
+   "art": "dividende_zahltag",
+   "datum": "2026-11-30",
+   "betrag": "0.145",
+   "waehrung": "USD",
+   "quelle": "https://www.sec.gov/Archives/edgar/data/74208/000007420826000084/udr-ex99d1.htm"
   },
   {
    "sym": "REGN",
@@ -242,6 +350,15 @@
    "betrag": "1.78",
    "waehrung": "USD",
    "quelle": "https://www.sec.gov/Archives/edgar/data/93410/000009341026000196/a09302026ex9918-k.htm"
+  },
+  {
+   "sym": "SBAC",
+   "name": "SBA Communications",
+   "art": "dividende_zahltag",
+   "datum": "2026-12-10",
+   "betrag": "1.25",
+   "waehrung": "USD",
+   "quelle": "https://www.sec.gov/Archives/edgar/data/1034054/000119312526443666/d185668dex991.htm"
   },
   {
    "sym": "BP",
@@ -280,6 +397,15 @@
    "quelle": "https://www.sec.gov/Archives/edgar/data/882095/000088209526000037/exhibit991earningspressrel.htm"
   },
   {
+   "sym": "UDR",
+   "name": "UDR, Inc.",
+   "art": "dividende_exdatum",
+   "datum": "2026-12-15",
+   "betrag": "",
+   "waehrung": "",
+   "quelle": "https://www.sec.gov/Archives/edgar/data/74208/000007420826000084/udr-ex99d1.htm"
+  },
+  {
    "sym": "RMD",
    "name": "ResMed",
    "art": "dividende_zahltag",
@@ -289,6 +415,24 @@
    "quelle": "https://www.sec.gov/Archives/edgar/data/943819/000119312526437783/d170451dex991.htm"
   },
   {
+   "sym": "DOC",
+   "name": "Healthpeak Properties",
+   "art": "dividende_exdatum",
+   "datum": "2026-12-18",
+   "betrag": "0.10167",
+   "waehrung": "USD",
+   "quelle": "https://www.sec.gov/Archives/edgar/data/765880/000162828026068878/ex99109302026.htm"
+  },
+  {
+   "sym": "DOC",
+   "name": "Healthpeak Properties",
+   "art": "dividende_zahltag",
+   "datum": "2026-12-30",
+   "betrag": "0.10167",
+   "waehrung": "USD",
+   "quelle": "https://www.sec.gov/Archives/edgar/data/765880/000162828026068878/ex99109302026.htm"
+  },
+  {
    "sym": "GILD",
    "name": "Gilead Sciences",
    "art": "dividende_zahltag",
@@ -296,6 +440,15 @@
    "betrag": "0.82",
    "waehrung": "USD",
    "quelle": "https://www.sec.gov/Archives/edgar/data/882095/000088209526000037/exhibit991earningspressrel.htm"
+  },
+  {
+   "sym": "UDR",
+   "name": "UDR, Inc.",
+   "art": "dividende_zahltag",
+   "datum": "2026-12-31",
+   "betrag": "0.145",
+   "waehrung": "USD",
+   "quelle": "https://www.sec.gov/Archives/edgar/data/74208/000007420826000084/udr-ex99d1.htm"
   },
   {
    "sym": "RSG",

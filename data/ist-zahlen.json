@@ -341,6 +341,26 @@
    "quelle": "https://www.sec.gov/Archives/edgar/data/891478/000089147826000098/financieroq326ingles.htm"
   },
   {
+   "sym": "CLX",
+   "name": "Clorox",
+   "datum": "2026-11-02",
+   "eps": 1.55,
+   "eps_basis": "bereinigt",
+   "revenue": 1910000000.0,
+   "waehrung": "USD",
+   "quelle": "https://www.sec.gov/Archives/edgar/data/21076/000002107626000044/ex991-pressreleasedatednov.htm"
+  },
+  {
+   "sym": "DOC",
+   "name": "Healthpeak Properties",
+   "datum": "2026-11-02",
+   "eps": 0.44,
+   "eps_basis": "bereinigt",
+   "revenue": null,
+   "waehrung": "USD",
+   "quelle": "https://www.sec.gov/Archives/edgar/data/765880/000162828026068878/ex99109302026.htm"
+  },
+  {
    "sym": "ETR",
    "name": "Entergy",
    "datum": "2026-11-02",
@@ -349,6 +369,16 @@
    "revenue": 940000000.0,
    "waehrung": "USD",
    "quelle": "https://www.sec.gov/Archives/edgar/data/65984/000006598426000322/earningsrelease3q26_ex991.htm"
+  },
+  {
+   "sym": "FANG",
+   "name": "Diamondback Energy",
+   "datum": "2026-11-02",
+   "eps": 5.69,
+   "eps_basis": "berichtet",
+   "revenue": null,
+   "waehrung": "USD",
+   "quelle": "https://www.sec.gov/Archives/edgar/data/1539838/000153983826000180/diamondbackex991-11x2x26.htm"
   },
   {
    "sym": "IDXX",
@@ -391,6 +421,16 @@
    "quelle": "https://www.sec.gov/Archives/edgar/data/1048286/000104828626000040/mar-2026q3xex99earningsrel.htm"
   },
   {
+   "sym": "ON",
+   "name": "ON Semiconductor",
+   "datum": "2026-11-02",
+   "eps": 0.9,
+   "eps_basis": "bereinigt",
+   "revenue": 1722300000.0,
+   "waehrung": "USD",
+   "quelle": "https://www.sec.gov/Archives/edgar/data/1097864/000114036126041580/ef20084671_ex99-1.htm"
+  },
+  {
    "sym": "PEG",
    "name": "Public Service Enterprise Group",
    "datum": "2026-11-02",
@@ -399,6 +439,36 @@
    "revenue": 376000000.0,
    "waehrung": "USD",
    "quelle": "https://www.sec.gov/Archives/edgar/data/788784/000119312526442778/d175962dex991.htm"
+  },
+  {
+   "sym": "PLTR",
+   "name": "Palantir Technologies",
+   "datum": "2026-11-02",
+   "eps": 0.44,
+   "eps_basis": "berichtet",
+   "revenue": 2313000000.0,
+   "waehrung": "USD",
+   "quelle": "https://www.sec.gov/Archives/edgar/data/1321655/000132165526000045/a2026q3ex991pressrelease.htm"
+  },
+  {
+   "sym": "SBAC",
+   "name": "SBA Communications",
+   "datum": "2026-11-02",
+   "eps": 2.19,
+   "eps_basis": "berichtet",
+   "revenue": null,
+   "waehrung": "USD",
+   "quelle": "https://www.sec.gov/Archives/edgar/data/1034054/000119312526443666/d185668dex991.htm"
+  },
+  {
+   "sym": "UDR",
+   "name": "UDR, Inc.",
+   "datum": "2026-11-02",
+   "eps": 0.67,
+   "eps_basis": "berichtet",
+   "revenue": 3800000.0,
+   "waehrung": "USD",
+   "quelle": "https://www.sec.gov/Archives/edgar/data/74208/000007420826000084/udr-ex99d1.htm"
   }
  ]
 }
