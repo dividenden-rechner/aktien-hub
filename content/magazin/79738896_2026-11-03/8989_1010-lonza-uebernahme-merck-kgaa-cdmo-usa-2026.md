@@ -13,6 +13,7 @@ image_artist_url: https://unsplash.com/@tecnic?utm_source=dividenden-rechner&utm
 logo_name: "Lonza"
 logo_symbol: LONN.SW
 logo_domain: lonza.com
+logo_file: assets/logos/lonn-sw.png
 ---
 <!-- PRÜFEN: Aufmacherfoto ist automatisch von Unsplash gewaehlt: bitte pruefen, ob es zum Artikel passt (sonst image-Zeilen entfernen, dann entsteht ein Titelbild automatisch). -->
 <!-- PRÜFEN: Quelle: https://www.lonza.com/news/2026-11-03-07-00 -->
