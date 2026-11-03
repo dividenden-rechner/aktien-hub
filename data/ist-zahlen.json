@@ -501,6 +501,16 @@
    "quelle": "https://www.sec.gov/Archives/edgar/data/7084/000000708426000054/adm-ex991_20260930xq3.htm"
   },
   {
+   "sym": "AIZ",
+   "name": "Assurant",
+   "datum": "2026-11-03",
+   "eps": 6.15,
+   "eps_basis": "bereinigt",
+   "revenue": null,
+   "waehrung": "USD",
+   "quelle": "https://www.sec.gov/Archives/edgar/data/1267238/000126723826000043/aiz-20260930exx991pressrel.htm"
+  },
+  {
    "sym": "AME",
    "name": "Ametek",
    "datum": "2026-11-03",
@@ -509,6 +519,16 @@
    "revenue": 2220000000.0,
    "waehrung": "USD",
    "quelle": "https://www.sec.gov/Archives/edgar/data/1037868/000103786826000194/ametek8kexhibit99111032026.htm"
+  },
+  {
+   "sym": "ANET",
+   "name": "Arista Networks",
+   "datum": "2026-11-03",
+   "eps": 1.22,
+   "eps_basis": "berichtet",
+   "revenue": 3657600000.0,
+   "waehrung": "USD",
+   "quelle": "https://www.sec.gov/Archives/edgar/data/1596532/000159653226000252/ex991q326-earningsrelease.htm"
   },
   {
    "sym": "APTV",
@@ -551,6 +571,16 @@
    "quelle": "https://www.sec.gov/Archives/edgar/data/1551182/000155118226000037/etn09302026exhibit99.htm"
   },
   {
+   "sym": "EXPD",
+   "name": "Expeditors International",
+   "datum": "2026-11-03",
+   "eps": 2.65,
+   "eps_basis": "berichtet",
+   "revenue": null,
+   "waehrung": "USD",
+   "quelle": "https://www.sec.gov/Archives/edgar/data/746515/000119312526444872/expd-ex99_1.htm"
+  },
+  {
    "sym": "HSIC",
    "name": "Henry Schein",
    "datum": "2026-11-03",
@@ -571,6 +601,16 @@
    "quelle": "https://www.sec.gov/Archives/edgar/data/749251/000074925126000305/it-09302026xex991.htm"
   },
   {
+   "sym": "JKHY",
+   "name": "Jack Henry & Associates",
+   "datum": "2026-11-03",
+   "eps": 2.28,
+   "eps_basis": "berichtet",
+   "revenue": null,
+   "waehrung": "USD",
+   "quelle": "https://www.sec.gov/Archives/edgar/data/779152/000077915226000095/jkhy-20260930xex99pressrel.htm"
+  },
+  {
    "sym": "KDP",
    "name": "Keurig Dr Pepper",
    "datum": "2026-11-03",
@@ -579,6 +619,16 @@
    "revenue": 7340000000.0,
    "waehrung": "USD",
    "quelle": "https://www.sec.gov/Archives/edgar/data/1418135/000141813526000064/ex991-keurigdrpepperreport.htm"
+  },
+  {
+   "sym": "MOS",
+   "name": "Mosaic Company (The)",
+   "datum": "2026-11-03",
+   "eps": -0.23,
+   "eps_basis": "berichtet",
+   "revenue": 3100000000.0,
+   "waehrung": "USD",
+   "quelle": "https://www.sec.gov/Archives/edgar/data/1285785/000128578526000139/pressreleaseq32026-ex991.htm"
   },
   {
    "sym": "PHG",
@@ -599,6 +649,26 @@
    "revenue": null,
    "waehrung": "USD",
    "quelle": "https://www.sec.gov/Archives/edgar/data/764622/000076462226000051/a8-kpnw093026exhibit991.htm"
+  },
+  {
+   "sym": "PRU",
+   "name": "Prudential Financial",
+   "datum": "2026-11-03",
+   "eps": 3.96,
+   "eps_basis": "berichtet",
+   "revenue": 1388000000.0,
+   "waehrung": "USD",
+   "quelle": "https://www.sec.gov/Archives/edgar/data/1137774/000113777426000219/exhibit991-3q26earningspre.htm"
+  },
+  {
+   "sym": "SMCI",
+   "name": "Supermicro",
+   "datum": "2026-11-03",
+   "eps": 1.75,
+   "eps_basis": "berichtet",
+   "revenue": null,
+   "waehrung": "USD",
+   "quelle": "https://www.sec.gov/Archives/edgar/data/1375365/000137536526000026/exhibit991_20260930.htm"
   },
   {
    "sym": "WAT",

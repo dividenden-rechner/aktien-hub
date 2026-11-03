@@ -15,10 +15,15 @@ Datei anklicken, dann Stift-Symbol: Zeile `draft: true` löschen und speichern, 
 | 29.10.2026 22:42 | Amazon steigert Umsatz im dritten Quartal auf 201,9 Milliarden Dollar | [79738970_2026-10-29/7757_2242-amazon-q3-2026-zahlen.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/79738970_2026-10-29/7757_2242-amazon-q3-2026-zahlen.md) |
 | 29.10.2026 10:12 | Shell erzielt im dritten Quartal 10,8 Milliarden Dollar Gewinn | [79738970_2026-10-29/8987_1012-shell-q3-2026-ergebnisse.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/79738970_2026-10-29/8987_1012-shell-q3-2026-ergebnisse.md) |
 
-### Online (194)
+### Online (199)
 
 | Datum | Titel | Datei |
 |---|---|---|
+| 04.11.2026 00:45 | Mosaic Company rutscht im dritten Quartal 2026 in die roten Zahlen | [79738895_2026-11-04/9954_0045-mosaic-q3-2026-zahlen.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/79738895_2026-11-04/9954_0045-mosaic-q3-2026-zahlen.md) |
+| 04.11.2026 00:44 | Prudential Financial erzielt im dritten Quartal Nettogewinn von 1,4 Mrd. US-Dollar | [79738895_2026-11-04/9955_0044-prudential-financial-q3-2026-zahlen.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/79738895_2026-11-04/9955_0044-prudential-financial-q3-2026-zahlen.md) |
+| 04.11.2026 00:44 | Expeditors International zahlt halbjährliche Dividende von 0,81 US-Dollar je Aktie | [79738895_2026-11-04/9955_0044-expeditors-international-dividende-h2-2026.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/79738895_2026-11-04/9955_0044-expeditors-international-dividende-h2-2026.md) |
+| 04.11.2026 00:44 | Assurant steigert Q3-Gewinn je Aktie auf 6,15 US-Dollar und hebt Prognose an | [79738895_2026-11-04/9955_0044-assurant-q3-zahlen-2026-prognoseerhoehung.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/79738895_2026-11-04/9955_0044-assurant-q3-zahlen-2026-prognoseerhoehung.md) |
+| 04.11.2026 00:44 | Arista Networks steigert Q3-Gewinn auf 1,22 US-Dollar je Aktie und hebt Ausblick an | [79738895_2026-11-04/9955_0044-arista-networks-q3-2026-zahlen.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/79738895_2026-11-04/9955_0044-arista-networks-q3-2026-zahlen.md) |
 | 03.11.2026 22:20 | AMD: Umsatz +45 %, Rechenzentrum fast verdoppelt, Aktie nachbörslich +7 % | [79738896_2026-11-03/8040_2220-amd-q3-2026-quartalszahlen.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/79738896_2026-11-03/8040_2220-amd-q3-2026-quartalszahlen.md) |
 | 03.11.2026 19:23 | Unilever plant 1 Mrd. Euro Einsparungen und peilt 2027 Umsatzwachstum an | [79738896_2026-11-03/8076_1923-unilever-investor-event-2027-prognose-einsparungen.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/79738896_2026-11-03/8076_1923-unilever-investor-event-2027-prognose-einsparungen.md) |
 | 03.11.2026 19:23 | Novo Nordisk meldet Zwischenstand beim Aktienrückkauf in Höhe von 11,6 Milliarden DKK | [79738896_2026-11-03/8076_1923-novo-nordisk-aktienrueckkauf-november-2026.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/79738896_2026-11-03/8076_1923-novo-nordisk-aktienrueckkauf-november-2026.md) |

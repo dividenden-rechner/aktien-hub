@@ -199,6 +199,15 @@
    "quelle": "https://www.sec.gov/Archives/edgar/data/1037868/000103786826000194/ametek8kexhibit99111032026.htm"
   },
   {
+   "sym": "ANET",
+   "name": "Arista Networks",
+   "art": "ergebnis",
+   "datum": "2026-11-03",
+   "betrag": "",
+   "waehrung": "",
+   "quelle": "https://www.sec.gov/Archives/edgar/data/1596532/000159653226000252/ex991q326-earningsrelease.htm"
+  },
+  {
    "sym": "BR",
    "name": "Broadridge Financial Solutions",
    "art": "ergebnis",
@@ -226,6 +235,15 @@
    "quelle": "https://www.sec.gov/Archives/edgar/data/764622/000076462226000051/a8-kpnw093026exhibit991.htm"
   },
   {
+   "sym": "SMCI",
+   "name": "Supermicro",
+   "art": "ergebnis",
+   "datum": "2026-11-03",
+   "betrag": "",
+   "waehrung": "",
+   "quelle": "https://www.sec.gov/Archives/edgar/data/1375365/000137536526000026/exhibit991_20260930.htm"
+  },
+  {
    "sym": "WAT",
    "name": "Waters Corporation",
    "art": "ergebnis",
@@ -242,6 +260,33 @@
    "betrag": "",
    "waehrung": "",
    "quelle": "https://www.sec.gov/Archives/edgar/data/1041061/000104106126000195/a8kex9919302026.htm"
+  },
+  {
+   "sym": "AIZ",
+   "name": "Assurant",
+   "art": "ergebnis",
+   "datum": "2026-11-04",
+   "betrag": "",
+   "waehrung": "",
+   "quelle": "https://www.sec.gov/Archives/edgar/data/1267238/000126723826000043/aiz-20260930exx991pressrel.htm"
+  },
+  {
+   "sym": "JKHY",
+   "name": "Jack Henry & Associates",
+   "art": "ergebnis",
+   "datum": "2026-11-04",
+   "betrag": "",
+   "waehrung": "",
+   "quelle": "https://www.sec.gov/Archives/edgar/data/779152/000077915226000095/jkhy-20260930xex99pressrel.htm"
+  },
+  {
+   "sym": "PRU",
+   "name": "Prudential Financial",
+   "art": "ergebnis",
+   "datum": "2026-11-04",
+   "betrag": "",
+   "waehrung": "",
+   "quelle": "https://www.sec.gov/Archives/edgar/data/1137774/000113777426000219/exhibit991-3q26earningspre.htm"
   },
   {
    "sym": "XEL",
@@ -343,6 +388,15 @@
    "quelle": "https://www.sec.gov/Archives/edgar/data/93410/000009341026000196/a09302026ex9918-k.htm"
   },
   {
+   "sym": "EXPD",
+   "name": "Expeditors International",
+   "art": "ergebnis",
+   "datum": "2026-11-18",
+   "betrag": "",
+   "waehrung": "",
+   "quelle": "https://www.sec.gov/Archives/edgar/data/746515/000119312526444872/expd-ex99_1.htm"
+  },
+  {
    "sym": "DHI",
    "name": "D. R. Horton",
    "art": "dividende_zahltag",
@@ -386,6 +440,15 @@
    "betrag": "",
    "waehrung": "",
    "quelle": "https://www.sec.gov/Archives/edgar/data/872589/000087258926000032/exhibit991q32026.htm"
+  },
+  {
+   "sym": "DLTR",
+   "name": "Dollar Tree",
+   "art": "ergebnis",
+   "datum": "2026-11-24",
+   "betrag": "",
+   "waehrung": "",
+   "quelle": "https://www.sec.gov/Archives/edgar/data/935703/000093570326000128/ex991q3-26earningscallanno.htm"
   },
   {
    "sym": "DOC",
@@ -476,6 +539,15 @@
    "betrag": "0.42",
    "waehrung": "USD",
    "quelle": "https://www.sec.gov/Archives/edgar/data/1109357/000110935726000092/exc-20261030ex991.htm"
+  },
+  {
+   "sym": "EXPD",
+   "name": "Expeditors International",
+   "art": "dividende_zahltag",
+   "datum": "2026-12-15",
+   "betrag": "0.81",
+   "waehrung": "USD",
+   "quelle": "https://www.sec.gov/Archives/edgar/data/746515/000119312526445448/expd-ex99_1.htm"
   },
   {
    "sym": "GILD",
