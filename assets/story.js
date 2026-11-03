@@ -31,9 +31,9 @@
     var tpl = await load(S.tpl), photo = withPhoto ? await load(S.img) : null, logo = await load(S.logo);
     /* Eigene Vorlage (gruene Balken mit Rubrik und Adresse); der Inhalt darin bleibt schlicht: weisser Grund, schwarze Schrift, keine Farbflaechen. */
     if (tpl) c.drawImage(tpl, 0, 0, W, H); else { c.fillStyle = "#fff"; c.fillRect(0, 0, W, H); c.fillStyle = "#99e6b1"; c.fillRect(0, 108, W, 86); c.fillRect(0, 1866, W, 54); }
-    var F = 'InterS,Inter,"Segoe UI",Roboto,Helvetica,Arial,sans-serif', LIM = 1835, G = "#111", D = "#111";
+    var F = 'InterS,Inter,"Segoe UI",Roboto,Helvetica,Arial,sans-serif', LIM = 1835 - (S.chart ? 470 : 0), G = "#111", D = "#111";
     c.textBaseline = "top";
-    var pts = S.points || [], lns = S.lines || [], ph = photo ? 470 : 0, fs = 35, fit = !!(photo && S.fit === "contain");
+    var pts = S.points || [], lns = S.lines || [], ph = photo ? 470 : 0, fs = 30, fit = !!(photo && S.fit === "contain");
     if (fit) ph = Math.round(960 * photo.height / photo.width);
     /* Layout messen; passt der Text nicht, erst Foto verkleinern, dann Schrift (min. 26 px). Nie abschneiden. */
     function layout(draw, ph, fs) {
@@ -68,7 +68,7 @@
         if (draw && tag) { c.fillStyle = G; c.font = "700 40px " + F; c.fillText(tag, logo ? 60 + sz + 28 : 60, y + (logo ? sz / 2 - 20 : 0)); }
         y += (logo ? sz : 44) + 26;
       }
-      if (S.title) { c.font = "700 " + (fs + 25) + "px " + F; c.fillStyle = D; wrap(c, S.title, 960, 5).forEach(function (l) { if (draw) c.fillText(l, 60, y); y += Math.round((fs + 25) * 1.2); }); y += 16; }
+      if (S.title) { c.font = "700 " + (fs + 16) + "px " + F; c.fillStyle = D; wrap(c, S.title, 960, 5).forEach(function (l) { if (draw) c.fillText(l, 60, y); y += Math.round((fs + 16) * 1.2); }); y += 16; }
       if (lns.length || pts.length) {
         /* Kasten "Kurz gesagt" wie im Artikel: heller Untergrund, Kennzahlen mit fettem Stichwort, nummerierte Punkte */
         var bx = 60, bw = 960, ix = 100, iw = 892, by0 = y, tc = "#262626";
@@ -96,25 +96,29 @@
         }
         y += 28;
         if (S.box) { if (draw) { c.fillStyle = G; c.font = "700 " + (fs - 8) + "px " + F; c.fillText(S.box.toUpperCase(), ix, y); } y += Math.round((fs - 8) * 1.6) + 6; }
-        lns.forEach(function (l) { y += kv(l, ix, iw, fs + 2, "", draw, y) + 12; });
-        pts.forEach(function (t, n) { y += kv(t, ix + 48, iw - 48, fs + 2, String(n + 1) + ".", draw, y) + 12; });
+        lns.forEach(function (l) { y += kv(l, ix, iw, fs, "", draw, y) + 12; });
+        pts.forEach(function (t, n) { y += kv(t, ix + 48, iw - 48, fs, String(n + 1) + ".", draw, y) + 12; });
         y += 16; layout.bh = y - by0; y += 24;
       }
-      if (S.text) { c.font = "400 " + (fs + 2) + "px " + F; String(S.text).split(/\n+/).forEach(function (p) { wrap(c, p, 960, 0).forEach(function () { y += Math.round((fs + 2) * 1.35); }); y += 14; }); }
+      if (S.text) { c.font = "400 " + fs + "px " + F; String(S.text).split(/\n+/).forEach(function (p) { wrap(c, p, 960, 0).forEach(function () { y += Math.round(fs * 1.35); }); y += 14; }); }
       return y;
     }
     while (photo && !fit && ph > 300 && layout(false, ph, fs) > LIM) ph -= 30;
-    while (fs > 26 && layout(false, ph, fs) > LIM) fs -= 1;
+    while (fs > 22 && layout(false, ph, fs) > LIM) fs -= 1;
     while (photo && !fit && ph > 200 && layout(false, ph, fs) > LIM) ph -= 20;
     while (photo && !fit && ph < 620 && layout(false, ph + 20, fs) <= LIM - 20) ph += 20;
     /* Ohne Foto (Kurzmeldungen) die Schrift vergroessern, damit die Story die Flaeche fuellt. */
-    while (!photo && fs < 54 && layout(false, ph, fs + 1) <= LIM - 140) fs += 1;
+    while (!photo && fs < 38 && layout(false, ph, fs + 1) <= LIM - 140) fs += 1;
     layout(false, ph, fs);
     var yy = layout(true, ph, fs);
     if (S.text) {
-      var lh2 = Math.round((fs + 2) * 1.35); c.fillStyle = "#262626"; c.font = "400 " + (fs + 2) + "px " + F;
+      var lh2 = Math.round(fs * 1.35); c.fillStyle = "#262626"; c.font = "400 " + fs + "px " + F;
       yy -= String(S.text).split(/\n+/).reduce(function (a, p) { return a + wrap(c, p, 960, 0).length * lh2 + 14; }, 0);
       String(S.text).split(/\n+/).forEach(function (p) { wrap(c, p, 960, 0).forEach(function (l) { c.fillText(l, 60, yy); yy += lh2; }); yy += 14; });
+    }
+    if (S.chart) {
+      var ch = await load(S.chart);
+      if (ch) { var top = yy + 30, bot = 1835, r2 = Math.min(960 / ch.width, (bot - top) / ch.height), cw = ch.width * r2, chh = ch.height * r2; c.drawImage(ch, 60 + (960 - cw) / 2, top, cw, chh); }
     }
     return new Promise(function (res) { cv.toBlob(res, "image/png"); });
   }
