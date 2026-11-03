@@ -41,7 +41,7 @@
       function drawPhoto() {
         var r = fit ? Math.min(960 / photo.width, ph / photo.height) : Math.max(960 / photo.width, ph / photo.height), w = photo.width * r, h = photo.height * r;
         if (draw) { c.save(); rr(c, 60, y, 960, ph, 28); c.clip(); c.drawImage(photo, 60 + (960 - w) / 2, y + (ph - h) / 2, w, h); c.restore(); }
-        y += ph + 30;
+        y += ph + (fit ? 52 : 30);
       }
       if (photo && !fit) drawPhoto();
       /* Logo wie auf den Uebersichtsseiten: Plakette oben links im Foto. Rubrik steht schon in der Vorlage. */
@@ -68,7 +68,7 @@
             var kw = k ? c.measureText(k + " ").width : 0; c.font = "400 " + hf + "px " + F; c.fillStyle = "#262626"; c.fillText(v, hx + kw, hy + n * hh);
           });
         }
-        if (logo || tag) y += (logo ? sz : 44) + 22;
+        if (logo || tag) y += (logo ? sz : 44) + 38;
         drawTitle();
         drawPhoto();
       } else if (photo) {
@@ -79,7 +79,7 @@
         if (draw && tag) { c.fillStyle = G; c.font = "700 40px " + F; c.fillText(tag, logo ? 60 + sz + 28 : 60, y + (logo ? sz / 2 - 20 : 0)); }
         y += (logo ? sz : 44) + 26;
       }
-      function drawTitle() { if (S.title) { c.font = "700 " + (fs + 16) + "px " + F; c.fillStyle = D; wrap(c, S.title, 960, 5).forEach(function (l) { if (draw) c.fillText(l, 60, y); y += Math.round((fs + 16) * 1.2); }); y += 16; } }
+      function drawTitle() { if (S.title) { c.font = "700 " + (fs + 16) + "px " + F; c.fillStyle = D; wrap(c, S.title, 960, 5).forEach(function (l) { if (draw) c.fillText(l, 60, y); y += Math.round((fs + 16) * 1.2); }); y += (photo && fit) ? 34 : 16; } }
       if (!(photo && fit)) drawTitle();
       if (lns.length || pts.length) {
         /* Kasten "Kurz gesagt" wie im Artikel: heller Untergrund, Kennzahlen mit fettem Stichwort, nummerierte Punkte */
