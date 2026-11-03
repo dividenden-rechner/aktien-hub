@@ -277,8 +277,9 @@
   {
    "sym": "AIR.PA",
    "name": "Airbus",
-   "url": "",
-   "region": "Welt"
+   "url": "https://www.airbus.com/en/rss.xml",
+   "region": "Welt",
+   "geprueft": true
   },
   {
    "sym": "SU.PA",
@@ -548,7 +549,7 @@
   {
    "sym": "FRE.DE",
    "name": "Fresenius",
-   "url": "https://www.fresenius.com/rss.xml",
+   "url": "https://www.fresenius.com/news/rss?type=investor",
    "region": "Welt",
    "geprueft": true
   },
@@ -639,6 +640,34 @@
    "sym": "NOKIA.HE",
    "name": "Nokia",
    "region": "Welt"
+  },
+  {
+   "sym": "FRE.DE",
+   "name": "Fresenius",
+   "url": "https://www.fresenius.com/news/rss?type=media",
+   "region": "Welt",
+   "geprueft": true
+  },
+  {
+   "sym": "DTE.DE",
+   "name": "Deutsche Telekom",
+   "url": "https://www.telekom.com/en/investor-relations.rss.feed.427676.xml",
+   "region": "Welt",
+   "geprueft": true
+  },
+  {
+   "sym": "FME.DE",
+   "name": "Fresenius Medical Care",
+   "url": "https://freseniusmedicalcare.com/en/home/press.xml",
+   "region": "Welt",
+   "geprueft": true
+  },
+  {
+   "sym": "PAH3.DE",
+   "name": "Porsche SE",
+   "url": "https://www.porsche-se.com/en/media?type=9818",
+   "region": "Welt",
+   "geprueft": true
   }
  ]
 }
