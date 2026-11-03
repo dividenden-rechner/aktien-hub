@@ -34,13 +34,13 @@
   "stand": "2026-11-03"
  },
  "MCD": {
-  "hash": "cfd2b382d456b1f1",
+  "hash": "12ef68db857a703a",
   "status": "ok",
   "stand": "2026-11-03",
   "gefunden": 0
  },
  "KHC": {
-  "hash": "07a649fa119d61a1",
+  "hash": "df87a95ed556b53b",
   "status": "ok",
   "stand": "2026-11-03",
   "gefunden": 1
@@ -62,9 +62,9 @@
   "gefunden": 1
  },
  "ENB": {
-  "hash": "563131a3bf40cfd0",
+  "hash": "b27f7904c43f77e4",
   "status": "ok",
   "stand": "2026-11-03",
-  "gefunden": 0
+  "gefunden": 1
  }
 }

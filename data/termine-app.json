@@ -483,7 +483,9 @@
    "sym": "ENB",
    "name": "Enbridge",
    "was": "Q3 2026",
-   "typ": "q"
+   "typ": "q",
+   "quelle": "https://www.enbridge.com/investment-center",
+   "auto": true
   },
   {
    "datum": "2026-11-06",
