@@ -14,13 +14,13 @@ story_quote_by: "Maryann T. Mannen | CEO Marathon Petroleum"
 logo_symbol: MPC
 logo_domain: marathonpetroleum.com
 image: assets/magazin/marathon-petroleum-q3-2026-quartalszahlen-foto.jpg
-image_alt: "Foto zu Marathon Petroleum Corporation: View of Louisiana from STS-132"
+image_alt: "Luftbild der Marathon-Raffinerie in Garyville, Louisiana, am Mississippi, aufgenommen von der Raumfähre"
 image_credit: "Foto: NASA / Wikimedia Commons, Public domain"
 image_source: https://commons.wikimedia.org/wiki/File:Marathon_refinery_and_Garyville_Louisville.jpg
 image_artist_url: 
 logo_file: assets/logos/mpc.png
 ---
-<!-- PRÜFEN: Aufmacher ist vorerst eine eigene Grafik (EBITDA Vorjahr gegen jetzt). Die Foto-Automatik fand kein Raffineriefoto (Gemini-Tageskontingent aufgebraucht); die Fotoanfrage steht noch in tools/asset.request, ein Foto ersetzt die Grafik später. -->
+<!-- PRÜFEN: Aufmacher ist ein NASA-Foto (gemeinfrei) der Marathon-Raffinerie Garyville von oben. Bild ist eher nüchtern, bei Bedarf gegen ein dramatischeres Raffineriefoto tauschen. -->
 <!-- PRÜFEN: Kursangabe (427,94 USD, -0,57 %, Stand 12:00 Uhr EST am 03.11.2026) stammt aus dem eigenen Yahoo-Finance-Screenshot vom 03.11.2026, 18:00 Uhr. Das Kursbild für die Story ist daraus zugeschnitten. Nutzungsbedingungen von Yahoo prüfen. -->
 <!-- PRÜFEN: Nicht in der Präsentation enthalten: Umsatz, Dividende je Aktie (laut Pressemitteilung um 10 % erhöht, Betrag nicht gefunden). Deshalb stehen oben EBITDA und Gewinn je Aktie statt Umsatz und Gewinn. -->
 <!-- PRÜFEN: Zahlen zu Diesel- und Crack-Spreads und zum Dieselpreis stammen aus Drittquellen (Hydrocarbon Processing, Axios, EIA über Energy News Beat), nicht aus der Marathon-Präsentation. Der Dieselpreis der EIA (6,35 USD je Gallone, Woche zum 26.10.) ist aus zweiter Hand. -->
