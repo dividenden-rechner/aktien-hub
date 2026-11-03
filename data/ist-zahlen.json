@@ -489,6 +489,146 @@
    "revenue": 3800000.0,
    "waehrung": "USD",
    "quelle": "https://www.sec.gov/Archives/edgar/data/74208/000007420826000084/udr-ex99d1.htm"
+  },
+  {
+   "sym": "ADM",
+   "name": "Archer Daniels Midland",
+   "datum": "2026-11-03",
+   "eps": 1.77,
+   "eps_basis": "bereinigt",
+   "revenue": 22335000000.0,
+   "waehrung": "USD",
+   "quelle": "https://www.sec.gov/Archives/edgar/data/7084/000000708426000054/adm-ex991_20260930xq3.htm"
+  },
+  {
+   "sym": "AME",
+   "name": "Ametek",
+   "datum": "2026-11-03",
+   "eps": 2.21,
+   "eps_basis": "bereinigt",
+   "revenue": 2220000000.0,
+   "waehrung": "USD",
+   "quelle": "https://www.sec.gov/Archives/edgar/data/1037868/000103786826000194/ametek8kexhibit99111032026.htm"
+  },
+  {
+   "sym": "APTV",
+   "name": "Aptiv",
+   "datum": "2026-11-03",
+   "eps": 1.42,
+   "eps_basis": "bereinigt",
+   "revenue": 3200000000.0,
+   "waehrung": "USD",
+   "quelle": "https://www.sec.gov/Archives/edgar/data/1521332/000152133226000071/aptvq32026ex991.htm"
+  },
+  {
+   "sym": "BR",
+   "name": "Broadridge Financial Solutions",
+   "datum": "2026-11-03",
+   "eps": 1.56,
+   "eps_basis": "bereinigt",
+   "revenue": null,
+   "waehrung": "USD",
+   "quelle": "https://www.sec.gov/Archives/edgar/data/1383312/000138331226000030/ex991earningsrelease1q2027.htm"
+  },
+  {
+   "sym": "DD",
+   "name": "DuPont",
+   "datum": "2026-11-03",
+   "eps": 1.24,
+   "eps_basis": "berichtet",
+   "revenue": null,
+   "waehrung": "USD",
+   "quelle": "https://www.sec.gov/Archives/edgar/data/1666700/000166670026000058/exhibit991enrschedules-3q26.htm"
+  },
+  {
+   "sym": "ETN",
+   "name": "Eaton Corporation",
+   "datum": "2026-11-03",
+   "eps": 3.68,
+   "eps_basis": "bereinigt",
+   "revenue": null,
+   "waehrung": "USD",
+   "quelle": "https://www.sec.gov/Archives/edgar/data/1551182/000155118226000037/etn09302026exhibit99.htm"
+  },
+  {
+   "sym": "HSIC",
+   "name": "Henry Schein",
+   "datum": "2026-11-03",
+   "eps": 1.06,
+   "eps_basis": "berichtet",
+   "revenue": 3500000000.0,
+   "waehrung": "USD",
+   "quelle": "https://www.sec.gov/Archives/edgar/data/1000228/000100022826000059/exhibit991.htm"
+  },
+  {
+   "sym": "IT",
+   "name": "Gartner",
+   "datum": "2026-11-03",
+   "eps": 3.35,
+   "eps_basis": "berichtet",
+   "revenue": 1500000000.0,
+   "waehrung": "USD",
+   "quelle": "https://www.sec.gov/Archives/edgar/data/749251/000074925126000305/it-09302026xex991.htm"
+  },
+  {
+   "sym": "KDP",
+   "name": "Keurig Dr Pepper",
+   "datum": "2026-11-03",
+   "eps": 0.66,
+   "eps_basis": "bereinigt",
+   "revenue": 7340000000.0,
+   "waehrung": "USD",
+   "quelle": "https://www.sec.gov/Archives/edgar/data/1418135/000141813526000064/ex991-keurigdrpepperreport.htm"
+  },
+  {
+   "sym": "PHG",
+   "name": "Koninklijke Philips Nv",
+   "datum": "2026-11-03",
+   "eps": 0.4,
+   "eps_basis": "bereinigt",
+   "revenue": null,
+   "waehrung": "EUR",
+   "quelle": "https://www.sec.gov/Archives/edgar/data/313216/000162828026069119/a2026q3-philipsquarterlyen.htm"
+  },
+  {
+   "sym": "PNW",
+   "name": "Pinnacle West Capital",
+   "datum": "2026-11-03",
+   "eps": 3.49,
+   "eps_basis": "berichtet",
+   "revenue": null,
+   "waehrung": "USD",
+   "quelle": "https://www.sec.gov/Archives/edgar/data/764622/000076462226000051/a8-kpnw093026exhibit991.htm"
+  },
+  {
+   "sym": "WAT",
+   "name": "Waters Corporation",
+   "datum": "2026-11-03",
+   "eps": 4.1,
+   "eps_basis": "bereinigt",
+   "revenue": 1767000000.0,
+   "waehrung": "USD",
+   "quelle": "https://www.sec.gov/Archives/edgar/data/1000697/000119312526444400/d22941dex991.htm"
+  },
+  {
+   "sym": "YUM",
+   "name": "Yum! Brands",
+   "datum": "2026-11-03",
+   "eps": 1.56,
+   "eps_basis": "bereinigt",
+   "revenue": 2049999999.9999998,
+   "waehrung": "USD",
+   "quelle": "https://www.sec.gov/Archives/edgar/data/1041061/000104106126000195/a8kex9919302026.htm"
+  },
+  {
+   "sym": "ZBRA",
+   "name": "Zebra Technologies",
+   "datum": "2026-11-03",
+   "eps": 4.95,
+   "eps_basis": "bereinigt",
+   "revenue": 1614000000.0,
+   "waehrung": "USD",
+   "quelle": "https://www.sec.gov/Archives/edgar/data/877212/000162828026069148/zbraex99120261003.htm"
   }
  ]
 }

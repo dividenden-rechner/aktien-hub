@@ -181,6 +181,78 @@
    "quelle": "https://www.sec.gov/Archives/edgar/data/74208/000007420826000084/udr-ex99d1.htm"
   },
   {
+   "sym": "ADM",
+   "name": "Archer Daniels Midland",
+   "art": "ergebnis",
+   "datum": "2026-11-03",
+   "betrag": "",
+   "waehrung": "",
+   "quelle": "https://www.sec.gov/Archives/edgar/data/7084/000000708426000054/adm-ex991_20260930xq3.htm"
+  },
+  {
+   "sym": "AME",
+   "name": "Ametek",
+   "art": "ergebnis",
+   "datum": "2026-11-03",
+   "betrag": "",
+   "waehrung": "",
+   "quelle": "https://www.sec.gov/Archives/edgar/data/1037868/000103786826000194/ametek8kexhibit99111032026.htm"
+  },
+  {
+   "sym": "BR",
+   "name": "Broadridge Financial Solutions",
+   "art": "ergebnis",
+   "datum": "2026-11-03",
+   "betrag": "",
+   "waehrung": "",
+   "quelle": "https://www.sec.gov/Archives/edgar/data/1383312/000138331226000030/ex991earningsrelease1q2027.htm"
+  },
+  {
+   "sym": "IT",
+   "name": "Gartner",
+   "art": "ergebnis",
+   "datum": "2026-11-03",
+   "betrag": "",
+   "waehrung": "",
+   "quelle": "https://www.sec.gov/Archives/edgar/data/749251/000074925126000305/it-09302026xex991.htm"
+  },
+  {
+   "sym": "PNW",
+   "name": "Pinnacle West Capital",
+   "art": "ergebnis",
+   "datum": "2026-11-03",
+   "betrag": "",
+   "waehrung": "",
+   "quelle": "https://www.sec.gov/Archives/edgar/data/764622/000076462226000051/a8-kpnw093026exhibit991.htm"
+  },
+  {
+   "sym": "WAT",
+   "name": "Waters Corporation",
+   "art": "ergebnis",
+   "datum": "2026-11-03",
+   "betrag": "",
+   "waehrung": "",
+   "quelle": "https://www.sec.gov/Archives/edgar/data/1000697/000119312526444400/d22941dex991.htm"
+  },
+  {
+   "sym": "YUM",
+   "name": "Yum! Brands",
+   "art": "ergebnis",
+   "datum": "2026-11-03",
+   "betrag": "",
+   "waehrung": "",
+   "quelle": "https://www.sec.gov/Archives/edgar/data/1041061/000104106126000195/a8kex9919302026.htm"
+  },
+  {
+   "sym": "XEL",
+   "name": "Xcel Energy",
+   "art": "ergebnis",
+   "datum": "2026-11-05",
+   "betrag": "",
+   "waehrung": "",
+   "quelle": "https://www.sec.gov/Archives/edgar/data/72903/000119312526444394/d205441dex9901.htm"
+  },
+  {
    "sym": "SNDK",
    "name": "Sandisk",
    "art": "dividende_exdatum",
@@ -253,6 +325,15 @@
    "quelle": "https://www.sec.gov/Archives/edgar/data/74208/000007420826000084/udr-ex99d1.htm"
   },
   {
+   "sym": "APO",
+   "name": "Apollo Global Management",
+   "art": "dividende_exdatum",
+   "datum": "2026-11-18",
+   "betrag": "",
+   "waehrung": "",
+   "quelle": "https://www.sec.gov/Archives/edgar/data/1858681/000185868126000063/erex9913q2026.htm"
+  },
+  {
    "sym": "CVX",
    "name": "Chevron Corporation",
    "art": "dividende_exdatum",
@@ -314,6 +395,15 @@
    "betrag": "0.10167",
    "waehrung": "USD",
    "quelle": "https://www.sec.gov/Archives/edgar/data/765880/000162828026068878/ex99109302026.htm"
+  },
+  {
+   "sym": "APO",
+   "name": "Apollo Global Management",
+   "art": "dividende_zahltag",
+   "datum": "2026-11-30",
+   "betrag": "0.5625",
+   "waehrung": "USD",
+   "quelle": "https://www.sec.gov/Archives/edgar/data/1858681/000185868126000063/erex9913q2026.htm"
   },
   {
    "sym": "EL",
@@ -449,6 +539,15 @@
    "betrag": "0.145",
    "waehrung": "USD",
    "quelle": "https://www.sec.gov/Archives/edgar/data/74208/000007420826000084/udr-ex99d1.htm"
+  },
+  {
+   "sym": "UL",
+   "name": "Unilever Plc",
+   "art": "ergebnis",
+   "datum": "2027-01-01",
+   "betrag": "",
+   "waehrung": "",
+   "quelle": "https://www.sec.gov/Archives/edgar/data/217410/000165495426009451/a6665b.htm"
   },
   {
    "sym": "RSG",

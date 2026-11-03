@@ -1,6 +1,102 @@
 {
  "items": [
   {
+   "slug": "unilever-investor-event-2027-prognose-einsparungen",
+   "title": "Unilever plant 1 Mrd. Euro Einsparungen und peilt 2027 Umsatzwachstum an",
+   "sym": "UL",
+   "date": "2026-11-03T19:23:00+01:00"
+  },
+  {
+   "slug": "ametek-q3-2026-zahlen-prognose",
+   "title": "AMETEK steigert bereinigten Q3-Gewinn auf 2,21 US-Dollar je Aktie und hebt Jahresprognose an",
+   "sym": "AME",
+   "date": "2026-11-03T19:23:00+01:00"
+  },
+  {
+   "slug": "zebra-technologies-q3-2026-zahlen",
+   "title": "Zebra Technologies steigert bereinigten Q3-Gewinn auf 4,95 US-Dollar je Aktie",
+   "sym": "ZBRA",
+   "date": "2026-11-03T19:22:00+01:00"
+  },
+  {
+   "slug": "aptiv-q3-zahlen-2026",
+   "title": "Aptiv erzielt im dritten Quartal bereinigten Gewinn je Aktie von 1,42 US-Dollar",
+   "sym": "APTV",
+   "date": "2026-11-03T19:22:00+01:00"
+  },
+  {
+   "slug": "waters-q3-2026-zahlen-prognose",
+   "title": "Waters Corporation steigert bereinigten Q3-Gewinn je Aktie auf 4,10 US-Dollar",
+   "sym": "WAT",
+   "date": "2026-11-03T19:19:00+01:00"
+  },
+  {
+   "slug": "koninklijke-philips-q3-2026-ergebnisse",
+   "title": "Koninklijke Philips N.V. steigert bereinigten Q3-Gewinn je Aktie auf 0,40 Euro",
+   "sym": "PHG",
+   "date": "2026-11-03T19:19:00+01:00"
+  },
+  {
+   "slug": "keurig-dr-pepper-q3-zahlen-2026",
+   "title": "Keurig Dr Pepper steigert bereinigten Q3-Gewinn je Aktie auf 0,66 US-Dollar",
+   "sym": "KDP",
+   "date": "2026-11-03T19:19:00+01:00"
+  },
+  {
+   "slug": "broadridge-financial-solutions-q1-2027-zahlen",
+   "title": "Broadridge Financial Solutions steigert bereinigten Gewinn je Aktie auf 1,56 US-Dollar",
+   "sym": "BR",
+   "date": "2026-11-03T19:19:00+01:00"
+  },
+  {
+   "slug": "eaton-q3-2026-zahlen",
+   "title": "Eaton verzeichnet im dritten Quartal Rekordgewinn und hebt Prognose an",
+   "sym": "ETN",
+   "date": "2026-11-03T19:17:00+01:00"
+  },
+  {
+   "slug": "yum-brands-q3-2026-zahlen",
+   "title": "Yum! Brands erzielt im dritten Quartal GAAP-Gewinn je Aktie von 5,92 US-Dollar",
+   "sym": "YUM",
+   "date": "2026-11-03T19:16:00+01:00"
+  },
+  {
+   "slug": "henry-schein-q3-2026-zahlen-prognose",
+   "title": "Henry Schein steigert Q3-Gewinn je Aktie auf 1,06 US-Dollar und hebt Jahresprognose an",
+   "sym": "HSIC",
+   "date": "2026-11-03T19:16:00+01:00"
+  },
+  {
+   "slug": "dupont-q3-2026-zahlen-prognose",
+   "title": "DuPont steigert Q3-Gewinn je Aktie auf 1,24 US-Dollar und hebt Prognose an",
+   "sym": "DD",
+   "date": "2026-11-03T19:15:00+01:00"
+  },
+  {
+   "slug": "apollo-global-management-dividende-q3-2026",
+   "title": "Apollo Global Management schüttet Quartalsdividende von 0,5625 US-Dollar je Aktie aus",
+   "sym": "APO",
+   "date": "2026-11-03T19:15:00+01:00"
+  },
+  {
+   "slug": "gartner-q3-ergebnis-2026",
+   "title": "Gartner steigert Q3-Gewinn je Aktie auf 3,35 US-Dollar und hebt Prognose an",
+   "sym": "IT",
+   "date": "2026-11-03T19:14:00+01:00"
+  },
+  {
+   "slug": "ing-groep-fortschritte-aktienrueckkauf-oktober-2026",
+   "title": "ING Groep kauft 1,1 Millionen Aktien für 30 Millionen Euro zurück",
+   "sym": "ING",
+   "date": "2026-11-03T19:12:00+01:00"
+  },
+  {
+   "slug": "unilever-strategie-ausblick-produktivitaet-2027",
+   "title": "Unilever plant 1 Mrd. Euro Einsparungen und stellt Weichen für 2027",
+   "sym": "ULVR.L",
+   "date": "2026-11-03T19:11:00+01:00"
+  },
+  {
    "slug": "marathon-petroleum-q3-2026-quartalszahlen",
    "title": "Marathon Petroleum: Raffineriemargen heben das bereinigte EBITDA auf 11,7 Mrd. US-Dollar",
    "sym": "MPC",
