@@ -1,6 +1,6 @@
 ---
-title: "Marathon Petroleum: Raffineriemargen heben das bereinigte EBITDA auf 11,7 Mrd. US-Dollar"
-description: "Marathon Petroleum meldet für das dritte Quartal 2026 einen Nettogewinn von 7,4 Mrd. USD. Treiber sind die stark gestiegenen Margen für Diesel und andere Kraftstoffe, nicht mehr Absatz."
+title: "Marathon Petroleum: Ergebnis mehr als verdreifacht, Raffineriemargen treiben das Quartal"
+description: "Marathon Petroleum verdient im dritten Quartal 2026 mit einem bereinigten EBITDA von 11,7 Mrd. USD mehr als dreimal so viel wie vor einem Jahr. Treiber sind die stark gestiegenen Margen für Diesel und andere Kraftstoffe, nicht mehr Absatz."
 date: 2026-11-03 18:05
 author: "Redaktions-Team Dividenden-Rechner.de"
 author_bio: "Das Redaktions-Team von Dividenden-Rechner.de schreibt über Dividendenaktien, Kennzahlen und Steuerthemen für Privatanleger. Die Rechner und Auswertungen auf der Seite entstehen im eigenen Haus."
@@ -27,18 +27,18 @@ logo_file: assets/logos/mpc.png
 <!-- PRÜFEN: Ausschnitte aus der Präsentation (f1, f2): bitte prüfen, ob Zuschnitt und Platz passen. Unpassende Bildzeilen einfach löschen. -->
 
 !!! kurz "Kurz gesagt"
-    **Bereinigtes EBITDA:** 11,7 Mrd. USD (Vorjahr 3,2 Mrd.)
-    **Gewinn je Aktie:** 26,93 USD (bereinigt)
+    **Bereinigtes EBITDA:** 11,7 Mrd. USD (+266 %)
+    **Gewinn je Aktie:** 26,93 USD (Vorjahr 3,01 USD)
 
-    1. **Treiber:** Das Raffineriegeschäft liefert 9,9 Mrd. USD bereinigtes EBITDA nach 1,8 Mrd. im Vorjahr. Fast der gesamte Sprung kommt aus höheren Margen für Kraftstoffe wie Diesel, nicht aus mehr Absatz oder niedrigeren Kosten.
+    1. **Treiber:** Das Raffineriegeschäft liefert 9,9 Mrd. USD bereinigtes EBITDA, gut das Fünffache der 1,8 Mrd. im Vorjahr. Fast der gesamte Sprung kommt aus höheren Margen für Kraftstoffe wie Diesel, nicht aus mehr Absatz oder niedrigeren Kosten.
     2. **Kapitalrückgabe:** 3,3 Mrd. USD fließen an die Aktionäre, fast alles über Aktienrückkäufe. Die Dividende steigt um 10 %, dazu kommt eine neue Rückkaufermächtigung über 5 Mrd. USD.
     3. **Einordnung:** Die Margen hängen stark an der Marktlage. Das Unternehmen selbst nennt Preisschwankungen durch den US-Iran-Konflikt und mögliche Sondersteuern als Risiko.
 
 ## Raffinerien verdienen am Abstand zwischen Rohöl und Kraftstoff
 
-Marathon Petroleum erzielt im dritten Quartal 2026 einen **Nettogewinn** von **7,4 Mrd. USD**, im Vorjahr waren es 1,4 Mrd. Je verwässerter Aktie sind das 26,59 USD, bereinigt 26,93 USD nach 3,01 USD im Vorjahresquartal. Das **bereinigte EBITDA** steigt auf **11,7 Mrd. USD** nach 3,2 Mrd. USD.
+Marathon Petroleum erzielt im dritten Quartal 2026 einen **Nettogewinn** von **7,4 Mrd. USD**, im Vorjahr waren es 1,4 Mrd. Je verwässerter Aktie sind das 26,59 USD, bereinigt 26,93 USD nach 3,01 USD im Vorjahresquartal. Das **bereinigte EBITDA** steigt auf **11,7 Mrd. USD** nach 3,2 Mrd. USD. Das ist ein Plus von 266 Prozent und mehr als das Dreifache. Der bereinigte Gewinn je Aktie liegt fast beim Neunfachen des Vorjahreswerts.
 
-Fast das gesamte Plus kommt aus dem Raffineriegeschäft (Refining & Marketing). Dessen bereinigtes EBITDA liegt bei **9,9 Mrd. USD** nach 1,8 Mrd. USD. Je Barrel verarbeitetem Rohöl verdient das Segment **34,15 USD**, vor einem Jahr waren es 6,37 USD. In allen drei Regionen hat sich der Wert vervielfacht: an der Golfküste 32,77 USD (Vorjahr 4,50 USD), im Mittleren Westen 36,00 USD (8,93 USD) und an der Westküste 33,30 USD (5,08 USD).
+Fast das gesamte Plus kommt aus dem Raffineriegeschäft (Refining & Marketing). Dessen bereinigtes EBITDA liegt bei **9,9 Mrd. USD** nach 1,8 Mrd. USD, also gut dem Fünffachen. Je Barrel verarbeitetem Rohöl verdient das Segment **34,15 USD**, vor einem Jahr waren es 6,37 USD. In allen drei Regionen hat sich der Wert vervielfacht: an der Golfküste 32,77 USD (Vorjahr 4,50 USD), im Mittleren Westen 36,00 USD (8,93 USD) und an der Westküste 33,30 USD (5,08 USD).
 
 ![Third Quarter Highlights von Marathon Petroleum](/assets/magazin/marathon-petroleum-q3-2026-quartalszahlen-f1.png)
 *Kennzahlen zum dritten Quartal 2026. Quelle: Marathon Petroleum, Präsentation Q3 2026, S. 4. Ausschnitt nur zugeschnitten, sonst unverändert.*
