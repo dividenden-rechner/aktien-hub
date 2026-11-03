@@ -13,6 +13,7 @@ image_artist_url: https://unsplash.com/@miinrad?utm_source=dividenden-rechner&ut
 logo_name: "Pfizer Inc."
 logo_symbol: PFE
 logo_domain: pfizer.com
+logo_file: assets/logos/pfe.png
 ---
 <!-- PRÜFEN: Aufmacherfoto ist automatisch von Unsplash gewaehlt: bitte pruefen, ob es zum Artikel passt (sonst image-Zeilen entfernen, dann entsteht ein Titelbild automatisch). -->
 <!-- PRÜFEN: Ausschnitte aus dem Bericht im Text (f1, f2): bitte prüfen, ob Zuschnitt und Platz passen. Unpassende Bildzeilen einfach löschen. -->

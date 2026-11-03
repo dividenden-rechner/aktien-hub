@@ -15,10 +15,11 @@ Datei anklicken, dann Stift-Symbol: Zeile `draft: true` löschen und speichern, 
 | 29.10.2026 22:42 | Amazon steigert Umsatz im dritten Quartal auf 201,9 Milliarden Dollar | [79738970_2026-10-29/7757_2242-amazon-q3-2026-zahlen.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/79738970_2026-10-29/7757_2242-amazon-q3-2026-zahlen.md) |
 | 29.10.2026 10:12 | Shell erzielt im dritten Quartal 10,8 Milliarden Dollar Gewinn | [79738970_2026-10-29/8987_1012-shell-q3-2026-ergebnisse.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/79738970_2026-10-29/8987_1012-shell-q3-2026-ergebnisse.md) |
 
-### Online (171)
+### Online (172)
 
 | Datum | Titel | Datei |
 |---|---|---|
+| 03.11.2026 13:23 | Pfizer: Umsatz stagniert bei 16,6 Mrd. USD, während angepasste R&D-Ausgaben das Ergebnis belasten | [79738896_2026-11-03/8676_1323-pfizer-q3-2026-quartalszahlen.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/79738896_2026-11-03/8676_1323-pfizer-q3-2026-quartalszahlen.md) |
 | 03.11.2026 10:10 | Lonza übernimmt US-CDMO-Netzwerk von Merck KGaA für hunderte Millionen Franken | [79738896_2026-11-03/8989_1010-lonza-uebernahme-merck-kgaa-cdmo-usa-2026.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/79738896_2026-11-03/8989_1010-lonza-uebernahme-merck-kgaa-cdmo-usa-2026.md) |
 | 03.11.2026 10:03 | Bayer: Pharmaceuticals zieht an, während Nettoverlust und Glyphosat-Prozesse belasten | [79738896_2026-11-03/8996_1003-bayer-q3-2026-zahlen.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/79738896_2026-11-03/8996_1003-bayer-q3-2026-zahlen.md) |
 | 03.11.2026 03:53 | UDR steigert Q3-Nettogewinn auf 0,67 US-Dollar je Aktie und hebt Prognose an | [79738896_2026-11-03/9646_0353-udr-q3-2026-ergebnisse-prognose.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/79738896_2026-11-03/9646_0353-udr-q3-2026-ergebnisse-prognose.md) |
