@@ -31,7 +31,7 @@
     var tpl = await load(S.tpl), photo = withPhoto ? await load(S.img) : null, logo = await load(S.logo);
     /* Eigene Vorlage (gruene Balken mit Rubrik und Adresse); der Inhalt darin bleibt schlicht: weisser Grund, schwarze Schrift, keine Farbflaechen. */
     if (tpl) c.drawImage(tpl, 0, 0, W, H); else { c.fillStyle = "#fff"; c.fillRect(0, 0, W, H); c.fillStyle = "#99e6b1"; c.fillRect(0, 108, W, 86); c.fillRect(0, 1866, W, 54); }
-    var F = 'InterS,Inter,"Segoe UI",Roboto,Helvetica,Arial,sans-serif', LIM = 1835 - ((S.chart || S.portrait) ? 470 : 0), G = "#111", D = "#111";
+    var F = 'InterS,Inter,"Segoe UI",Roboto,Helvetica,Arial,sans-serif', LIM = 1835 - (S.chart ? 600 : (S.portrait ? 470 : 0)), G = "#111", D = "#111";
     c.textBaseline = "top";
     var pts = S.points || [], lns = S.lines || [], ph = photo ? 470 : 0, fs = 30, fit = !!(photo && S.fit === "contain");
     if (fit) ph = Math.round(960 * photo.height / photo.width);
@@ -62,6 +62,9 @@
         var hl = (S.lines || []).slice(0, 2).map(function (t) { return t.replace(/\s*\((?:\u2014|\u2013|-)\)\s*$/, ""); });
         if (draw && hl.length) {
           var hx = logo ? 60 + sz + 32 : 60, hf = 38, hh = Math.round(hf * 1.3), hy = y + (sz - hl.length * hh) / 2 + 2;
+          /* Schrift verkleinern, bis die laengste Zeile neben das Logo passt */
+          hl.forEach(function (t) { var i = t.indexOf(":"), k = i > 0 ? t.slice(0, i + 1) : ""; while (hf > 26) { c.font = "700 " + hf + "px " + F; var kw0 = k ? c.measureText(k + " ").width : 0; c.font = "400 " + hf + "px " + F; if (hx + kw0 + c.measureText(i > 0 ? t.slice(i + 1).trim() : t).width <= 1020) break; hf -= 1; } });
+          hh = Math.round(hf * 1.3); hy = y + (sz - hl.length * hh) / 2 + 2;
           hl.forEach(function (t, n) {
             var i = t.indexOf(":"), k = i > 0 ? t.slice(0, i + 1) : "", v = i > 0 ? t.slice(i + 1).trim() : t;
             c.font = "700 " + hf + "px " + F; c.fillStyle = D; c.fillText(k, hx, hy + n * hh);

@@ -1,4 +1,19 @@
 {
   "_hinweis": "Freigestellte CEO-Portraits (PNG mit Transparenz) fuer Zitate und Stories. Neue Eintraege: Datei in assets/magazin ablegen, hier eintragen, Kopie in Google Drive (Ordner 'CEO-Portraits (freigestellt)').",
-  "pfizer": {"name": "Albert Bourla", "rolle": "Chairman und CEO", "unternehmen": "Pfizer Inc.", "datei": "assets/magazin/albert-bourla-pfizer.png", "credit": "Foto: Pfizer", "stand": "2026-11-03"}
+  "pfizer": {
+    "name": "Albert Bourla",
+    "rolle": "Chairman und CEO",
+    "unternehmen": "Pfizer Inc.",
+    "datei": "assets/magazin/albert-bourla-pfizer.png",
+    "credit": "Foto: Pfizer",
+    "stand": "2026-11-03"
+  },
+  "marathon-petroleum": {
+    "name": "Maryann T. Mannen",
+    "rolle": "Chairman, President und CEO",
+    "unternehmen": "Marathon Petroleum Corporation",
+    "datei": "assets/magazin/maryann-mannen-marathon-petroleum.png",
+    "credit": "Foto: Marathon Petroleum",
+    "stand": "2026-11-03"
+  }
 }
