@@ -14,7 +14,7 @@ story_quote_by: "Maryann T. Mannen | CEO Marathon Petroleum"
 logo_symbol: MPC
 logo_domain: marathonpetroleum.com
 image: assets/magazin/marathon-petroleum-q3-2026-quartalszahlen-foto.jpg
-image_alt: "Luftbild der Marathon-Raffinerie in Garyville, Louisiana, am Mississippi, aufgenommen von der Raumfähre"
+image_alt: "Foto zu Marathon Petroleum Corporation: View of Louisiana from STS-132"
 image_credit: "Foto: NASA / Wikimedia Commons, Public domain"
 image_source: https://commons.wikimedia.org/wiki/File:Marathon_refinery_and_Garyville_Louisville.jpg
 image_artist_url: 

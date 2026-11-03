@@ -13,6 +13,12 @@ story_portrait: assets/magazin/lisa-su-amd.png
 story_quote_by: "Lisa Su | CEO AMD"
 logo_symbol: AMD
 logo_domain: amd.com
+image: https://images.unsplash.com/photo-1753097617151-b8994eb0bb3e?ixid=M3wxMTE3OTgzfDB8MXxzZWFyY2h8NHx8QU1EJTIwSW5zdGluY3QlMjBhY2NlbGVyYXRvcnxlbnwxfDB8fHwxNzkzNzQxNTgzfDA&ixlib=rb-4.1.0&w=1600&h=900&fit=crop&crop=entropy&q=80&fm=jpg
+image_alt: "Foto zu Advanced Micro Devices: A new amd ryzen processor sits on a desk"
+image_credit: "Foto: Đào Hiếu auf Unsplash"
+image_source: https://unsplash.com/photos/a-new-amd-ryzen-processor-sits-on-a-desk-2bJfnIwQvpk?utm_source=dividenden-rechner&utm_medium=referral
+image_artist_url: https://unsplash.com/@hieu101193?utm_source=dividenden-rechner&utm_medium=referral
+logo_file: assets/logos/amd.png
 ---
 <!-- PRÜFEN: Aufmacherfoto fehlt noch, die Fotoanfrage (Rechenzentrum/Chip) ist angelegt, der Bot ergänzt es. -->
 <!-- PRÜFEN: Kursangaben (Schluss 483,90 USD, +3,65 %; nachbörslich 517,82 USD, +7,01 % um 16:20 Uhr EST) stammen aus dem eigenen Yahoo-Finance-Screenshot vom 03.11.2026, 22:20 Uhr. Nachbörsliche Kurse schwanken stark. Nutzungsbedingungen von Yahoo prüfen. -->
