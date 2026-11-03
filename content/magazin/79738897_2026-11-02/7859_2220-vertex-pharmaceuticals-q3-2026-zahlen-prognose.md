@@ -10,11 +10,11 @@ quelle_name: "Pressemitteilung Vertex Pharmaceuticals zum dritten Quartal 2026"
 logo_name: "Vertex Pharmaceuticals"
 logo_symbol: VRTX
 logo_domain: vrtx.com
-image: https://images.unsplash.com/photo-1562789233-495f52b583dd?ixid=M3wxMTE3OTgzfDB8MXxzZWFyY2h8Mnx8Y3lzdGljJTIwZmlicm9zaXMlMjByZXNlYXJjaHxlbnwxfDB8fHwxNzkzNjU0NDA0fDA&ixlib=rb-4.1.0&w=1600&h=900&fit=crop&crop=entropy&q=80&fm=jpg
-image_alt: "Foto zu Vertex Pharmaceuticals: Observing samples under the microscope"
-image_credit: "Foto: Trust 'Tru' Katsande auf Unsplash"
-image_source: https://unsplash.com/photos/woman-looking-on-microscope-inside-room-6q5QG8iIgRo?utm_source=dividenden-rechner&utm_medium=referral
-image_artist_url: https://unsplash.com/@iamtru?utm_source=dividenden-rechner&utm_medium=referral
+image: https://images.unsplash.com/photo-1578496480240-32d3e0c04525?ixid=M3wxMTE3OTgzfDB8MXxzZWFyY2h8NHx8Y3lzdGljJTIwZmlicm9zaXMlMjByZXNlYXJjaHxlbnwxfDB8fHwxNzkzNzI1OTk1fDA&ixlib=rb-4.1.0&w=1600&h=900&fit=crop&crop=entropy&q=80&fm=jpg
+image_alt: "Foto zu Vertex Pharmaceuticals: DNA Genotyping and Sequencing. Technician prepares for a viral whole-genome sequencing experiment at the Cancer Genomics Research Laboratory, part of the National Cancer Institute's Division of Cancer"
+image_credit: "Foto: National Cancer Institute auf Unsplash"
+image_source: https://unsplash.com/photos/woman-holding-test-tubes-GcrSgHDrniY?utm_source=dividenden-rechner&utm_medium=referral
+image_artist_url: https://unsplash.com/@nci?utm_source=dividenden-rechner&utm_medium=referral
 logo_file: assets/logos/vrtx.png
 ---
 <!-- PRÜFEN: Alle Zahlen stammen aus der Vertex-Pressemitteilung vom 2. November 2026. Nicht geprüft: Kursreaktion der Aktie und die Erwartungen der Analysten, deshalb stehen sie nicht im Text. Vertex zahlt keine Dividende. -->

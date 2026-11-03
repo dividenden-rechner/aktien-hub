@@ -10,11 +10,11 @@ quelle_name: "Pressemitteilung CRISPR Therapeutics (SEC-Meldung)"
 logo_name: "CRISPR Therapeutics"
 logo_symbol: CRSP
 logo_domain: crisprtx.com
-image: assets/magazin/crispr-therapeutics-q3-2026-casgevy-verlust-foto.jpg
-image_alt: "Foto zu CRISPR Therapeutics: This is a Droplet Digital PCR System, QX200, BIORAT used for research at the Laboratory of Genetics at Universidad del Mar in Puerto Escondido Campus."
-image_credit: "Foto: Aldo Tadeo Suárez Guido / Wikimedia Commons, CC BY-SA 4.0"
-image_source: https://commons.wikimedia.org/wiki/File:Genetics_Laboratory_UMAR_Puerto_Escondido.jpg
-image_artist_url: 
+image: https://images.unsplash.com/photo-1582719366950-f23838e207e7?ixid=M3wxMTE3OTgzfDB8MXxzZWFyY2h8N3x8Z2VuZXRpY3MlMjBsYWJvcmF0b3J5fGVufDF8MHx8fDE3OTM3MjYwODR8MA&ixlib=rb-4.1.0&w=1600&h=900&fit=crop&crop=entropy&q=80&fm=jpg
+image_alt: "Foto zu CRISPR Therapeutics: DNA Genotyping and Sequencing. Vials containing DNA samples from studies of the genetic risk for cancer at the Cancer Genomics Research Laboratory, part of the National Cancer Institute's Division of "
+image_credit: "Foto: National Cancer Institute auf Unsplash"
+image_source: https://unsplash.com/photos/white-plastic-bottles-on-black-shelf-fd0b-Bl4cFc?utm_source=dividenden-rechner&utm_medium=referral
+image_artist_url: https://unsplash.com/@nci?utm_source=dividenden-rechner&utm_medium=referral
 logo_file: assets/logos/crsp.png
 ---
 <!-- PRÜFEN: Alle Zahlen stammen aus der CRISPR-Pressemitteilung vom 2. November 2026 (SEC-Fassung). Der Mittelabfluss von rund 285 Mio. US-Dollar in neun Monaten ist eine eigene Rechnung: Kasse 2,28 Mrd. minus 1,98 Mrd. zum Jahresende ergibt +0,30 Mrd., abzüglich 0,585 Mrd. Erlös aus der Wandelanleihe. Kursreaktion nicht geprüft. CRISPR zahlt keine Dividende. -->
