@@ -517,6 +517,11 @@ def share_html(p, url, img):
         if m_f and os.path.exists(m_f.group(1)):
             p = dict(p, story_image=m_f.group(1))
     if p.get("story_image"):
+        # In der Story steht das Logo schon da: den Firmennamen vor dem Doppelpunkt in der Ueberschrift nicht wiederholen
+        mt = re.match(r"^([^:]{2,40}):\s+(\S.*)$", p["title"])
+        if mt and (p.get("logo_file") or p.get("logo_name")):
+            story["title"] = mt.group(2)[:1].upper() + mt.group(2)[1:]
+    if p.get("story_image"):
         # Folie oder Grafik aus den Unterlagen des Unternehmens: wird in der Story vollstaendig (ohne Beschnitt) gezeigt
         story["img"] = "../../" + p["story_image"].lstrip("/"); story["fit"] = "contain"
     if p.get("story_portrait"):

@@ -59,6 +59,7 @@
         if (draw && logo) plaque(60, y);
         if (draw && tag) { c.fillStyle = G; c.font = "700 40px " + F; c.fillText(tag, logo ? 60 + sz + 24 : 60, y + (logo ? sz / 2 - 20 : 0)); }
         if (logo || tag) y += (logo ? sz : 44) + 22;
+        drawTitle();
         drawPhoto();
       } else if (photo) {
         if (draw && logo) plaque(60 + 24, 232 + 24);
@@ -68,10 +69,11 @@
         if (draw && tag) { c.fillStyle = G; c.font = "700 40px " + F; c.fillText(tag, logo ? 60 + sz + 28 : 60, y + (logo ? sz / 2 - 20 : 0)); }
         y += (logo ? sz : 44) + 26;
       }
-      if (S.title) { c.font = "700 " + (fs + 16) + "px " + F; c.fillStyle = D; wrap(c, S.title, 960, 5).forEach(function (l) { if (draw) c.fillText(l, 60, y); y += Math.round((fs + 16) * 1.2); }); y += 16; }
+      function drawTitle() { if (S.title) { c.font = "700 " + (fs + 16) + "px " + F; c.fillStyle = D; wrap(c, S.title, 960, 5).forEach(function (l) { if (draw) c.fillText(l, 60, y); y += Math.round((fs + 16) * 1.2); }); y += 16; } }
+      if (!(photo && fit)) drawTitle();
       if (lns.length || pts.length) {
         /* Kasten "Kurz gesagt" wie im Artikel: heller Untergrund, Kennzahlen mit fettem Stichwort, nummerierte Punkte */
-        var bx = 60, bw = 960, ix = 100, iw = 892, by0 = y, tc = "#262626";
+        var bx = 60, bw = 960, ix = 100, iw = 892, by0 = y, tc = "#262626", bare = !!(photo && fit); if (bare) { ix = 60; iw = 960; lns = []; }
         function kv(t, x, w, fsz, num, doDraw, yy) {
           var i = t.indexOf(":"), k = (i > 0 && i < 30) ? t.slice(0, i + 1) : "", v = k ? t.slice(i + 1).trim() : t;
           c.font = "700 " + fsz + "px " + F; var kw = k ? c.measureText(k + " ").width : 0;
@@ -91,14 +93,14 @@
           }
           return ls.length * lhh;
         }
-        if (draw && layout.bh) {
+        if (draw && layout.bh && !bare) {
           c.save(); rr(c, bx, by0, bw, layout.bh, 24); c.fillStyle = "#fafafa"; c.fill(); c.lineWidth = 2; c.strokeStyle = "#dbdbdb"; c.stroke(); c.restore();
         }
-        y += 28;
-        if (S.box) { if (draw) { c.fillStyle = G; c.font = "700 " + (fs - 8) + "px " + F; c.fillText(S.box.toUpperCase(), ix, y); } y += Math.round((fs - 8) * 1.6) + 6; }
+        y += bare ? 0 : 28;
+        if (S.box && !bare) { if (draw) { c.fillStyle = G; c.font = "700 " + (fs - 8) + "px " + F; c.fillText(S.box.toUpperCase(), ix, y); } y += Math.round((fs - 8) * 1.6) + 6; }
         lns.forEach(function (l) { y += kv(l, ix, iw, fs, "", draw, y) + 12; });
         pts.forEach(function (t, n) { y += kv(t, ix + 48, iw - 48, fs, String(n + 1) + ".", draw, y) + 12; });
-        y += 16; layout.bh = y - by0; y += 24;
+        y += bare ? 0 : 16; layout.bh = y - by0; y += bare ? 0 : 24;
       }
       if (S.text) { c.font = "400 " + fs + "px " + F; String(S.text).split(/\n+/).forEach(function (p) { wrap(c, p, 960, 0).forEach(function () { y += Math.round(fs * 1.35); }); y += 14; }); }
       return y;
