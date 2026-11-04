@@ -14,6 +14,7 @@ story_chart: assets/magazin/novo-nordisk-q3-2026-quartalszahlen-kurs.png
 story_portrait: assets/magazin/mike-doustdar-novo-nordisk.png
 story_quote_by: "Mike Doustdar | CEO Novo Nordisk"
 story_text: "Novo Nordisk wächst im dritten Quartal um 6 % auf 79,2 Mrd. DKK, der bereinigte Betriebsgewinn steigt um 34 % auf 31,7 Mrd. DKK. Ein Teil davon ist ein Vergleichseffekt: Im Vorjahr drückten Umbaukosten von 9 Mrd. DKK das Ergebnis. Der berichtete Betriebsgewinn sinkt sogar um 3 %, weil Novo 8,7 Mrd. DKK abschreibt, vor allem auf den Wirkstoff Ziltivekimab und auf Produktionsanlagen. Die neue Wegovy-Pille setzt 5,4 Mrd. DKK um und ist in acht Märkten am Start, in den USA hält Novo über 50 % der neuen Patienten bei Abnehmmitteln. Die Jahresprognose hebt der Konzern an, erwartet aber weiter nur ein Wachstum zwischen minus 2 % und plus 2 %. CEO Mike Doustdar nennt das Quartal stärker als erwartet."
+logo_file: assets/logos/novo-b-co.png
 ---
 <!-- PRÜFEN: Es liegt keine Präsentation vor. Zahlen stammen aus dem Wortlaut der Pressemitteilung (Company Announcement Nr. 65/2026, 4. November 2026) in zwei Nachdrucken. Folienausschnitt für die Story bitte nachreichen. -->
 <!-- PRÜFEN: Aufmacherfoto fehlt noch, die Fotoanfrage (Wegovy/Injektionspen, Produktion) ist angelegt, der Bot ergänzt es. -->
