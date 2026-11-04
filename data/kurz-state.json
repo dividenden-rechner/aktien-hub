@@ -423,11 +423,16 @@
 "sec:0001375365-26-000026": "2026-11-03",
 "sec:0001285785-26-000139": "2026-11-03",
 "sec:0001140361-26-041833": "2026-11-03",
-"sec:0001140361-26-041841": "2026-11-03"
+"sec:0001140361-26-041841": "2026-11-03",
+"feed:https://www.hyundai.com/worldwide/en/newsroom/detail/0000001303": "2026-11-04",
+"feed:https://www.wuxibiologics.com/press-release/wuxi-biologics-receives-double-honors-at-2026-hera-for-esg-reporting-and-environmental-excellence/": "2026-11-04",
+"feed:https://www.itochu.co.jp/en/ir/financial_statements/2027/index.html": "2026-11-04",
+"feed:https://group.ntt/en/newsrelease/2026/11/04/261104a.html": "2026-11-04",
+"feed:https://group.ntt/en/newsrelease/2026/11/04/261104b.html": "2026-11-04"
 },
 "budget": {
 "day": "2026-11-03",
-"n": 109
+"n": 116
 },
 "fails": {}
 }
