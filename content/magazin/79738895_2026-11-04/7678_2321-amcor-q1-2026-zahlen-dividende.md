@@ -10,6 +10,7 @@ quelle_url: https://www.sec.gov/Archives/edgar/data/1748790/000174879026000029/e
 quelle_name: "Pressemitteilung Amcor (SEC-Meldung)"
 logo_symbol: AMCR
 logo_name: "Amcor"
+logo_file: assets/logos/amcr.png
 ---
 <!-- PRÜFEN: Diese Zahlen stehen nicht im Originaltext: 0,66, 0,66, Einordnung: 0,66. Bitte pruefen, dann 'draft: true' loeschen. -->
 

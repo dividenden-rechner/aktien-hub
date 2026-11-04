@@ -10,6 +10,7 @@ quelle_url: https://www.sec.gov/Archives/edgar/data/1811074/000181107426000075/e
 quelle_name: "Pressemitteilung Texas Pacific Land Corporation (SEC-Meldung)"
 logo_symbol: TPL
 logo_name: "Texas Pacific Land Corporation"
+logo_file: assets/logos/tpl.png
 ---
 <!-- PRÜFEN: Diese Zahlen stehen nicht im Originaltext: 167,37, 167,37, 167,37. Bitte pruefen, dann 'draft: true' loeschen. -->
 
