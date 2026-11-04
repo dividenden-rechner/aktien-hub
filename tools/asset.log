@@ -9,27 +9,35 @@ Foto-Kandidaten: 62 (Commons 30, Unsplash 32)
   7: File:Utah Data Center Panorama (cropped).jpg | The Utah Data Center located in Bluffdale, Utah.
   8: File:Virginia Tech - data center.jpg | Virginia Tech - data center
   9: File:Wikimedia Foundation Servers-8055 13.jpg | Wikimedia Foundation Servers
-  10: File:139 Server Room 01.jpg | Indian Railway 139 Server Room.
-  11: File:312 Adelaide Street - 6th floor server room (5278379952).jpg | SOMA Networks, the previous occupant, worked on WiMax systems. They were evicted
-  12: File:3PAR SAN in the server room.jpg | The north side
-  13: File:A view of the server room at The National Archives.jpg | The server room at The National Archives
-  14: File:Argonite automatic fire suppression system server room.jpg | Argonite automatic fire suppression system - located within a server room facili
-  15: File:CERN Server 02.jpg | Server room in CERN (France / Switzerland)
-  16: File:CERN Server 03.jpg | Server room in CERN (Switzerland)
-  17: File:Centaur server room (2293424530).jpg | Centaur server room
-  18: File:DHL Netherlands local site computer room server racks (2) - IMG 3299.jpg | Pics of one of our local site computer rooms. I couldn't believe the way they Pi
-  19: File:NOIRLab HQ Server Racks (6V6A0375-CC).jpg | Server racks at the NOIRLab Headquarters Computer Server Room in Tucson, Arizona
-  20: File:PDC server room.jpg | Server room at Royal Institute of Technology Parallel Computer Center. Thick bla
-  21: File:Rajshahi College server room.jpg | Rajshahi College is situated in the city center, adjacent to Rajshahi Collegiate
-  22: File:Server Room (22397102849).jpg | Real Estate
-  23: File:Server room backup power generator (2) - IMG 0449.jpg | We got a new backup power generator. The idea is that it will feed both serverro
-  24: File:Server room backup power generator - IMG 0451.jpg | We got a new backup power generator. The idea is that it will feed both serverro
-  25: File:Server room with HP NetServers - IMG 0149.jpg | The second server room, this one is actually a proper server room.
-  26: File:UPS units in the main server room - IMG 0148.jpg | UPS units in the main server room
-  27: File:Anti ai data center sign 2.jpg | Anti-data-center sentiment in rural Kansas neighborhood
-  28: File:Business applications of AI - 2024 AI index.jpg | Tasks that are automated with AI by a significant proportion of companies, in 20
-  29: File:ESO data center (eso-data-centre-9101).jpg | The ESO data center collects all the data ever produced by the VLT, most of the 
+  10: File:Wikimedia Foundation Servers-8055 15.jpg | Wikimedia Foundation Servers
+  11: File:139 Server Room 01.jpg | Indian Railway 139 Server Room.
+  12: File:312 Adelaide Street - 6th floor server room (5278379952).jpg | SOMA Networks, the previous occupant, worked on WiMax systems. They were evicted
+  13: File:3PAR SAN in the server room.jpg | The north side
+  14: File:A view of the server room at The National Archives.jpg | The server room at The National Archives
+  15: File:Argonite automatic fire suppression system server room.jpg | Argonite automatic fire suppression system - located within a server room facili
+  16: File:CERN Server 02.jpg | Server room in CERN (France / Switzerland)
+  17: File:CERN Server 03.jpg | Server room in CERN (Switzerland)
+  18: File:Centaur server room (2293424530).jpg | Centaur server room
+  19: File:DHL Netherlands local site computer room server racks (2) - IMG 3299.jpg | Pics of one of our local site computer rooms. I couldn't believe the way they Pi
+  20: File:NOIRLab HQ Server Racks (6V6A0375-CC).jpg | Server racks at the NOIRLab Headquarters Computer Server Room in Tucson, Arizona
+  21: File:PDC server room.jpg | Server room at Royal Institute of Technology Parallel Computer Center. Thick bla
+  22: File:Rajshahi College server room.jpg | Rajshahi College is situated in the city center, adjacent to Rajshahi Collegiate
+  23: File:Server Room (22397102849).jpg | Real Estate
+  24: File:Server room backup power generator (2) - IMG 0449.jpg | We got a new backup power generator. The idea is that it will feed both serverro
+  25: File:Server room backup power generator - IMG 0451.jpg | We got a new backup power generator. The idea is that it will feed both serverro
+  26: File:Server room with HP NetServers - IMG 0149.jpg | The second server room, this one is actually a proper server room.
+  27: File:UPS units in the main server room - IMG 0148.jpg | UPS units in the main server room
+  28: File:Anti ai data center sign 2.jpg | Anti-data-center sentiment in rural Kansas neighborhood
+  29: File:Business applications of AI - 2024 AI index.jpg | Tasks that are automated with AI by a significant proportion of companies, in 20
 Verfuegbare Flash-Modelle: gemini-3.8-flash, gemini-3.7-flash, gemini-3.6-flash, gemini-3.5-flash, gemini-3.5-flash-lite, gemini-3.1-flash-lite, gemini-3.1-flash-lite-preview, gemini-3-flash-preview, gemini-2.5-flash, gemini-2.5-flash-lite, gemini-flash-latest, gemini-omni-1.1-flash, gemini-flash-lite-latest, gemini-omni-flash-preview
+Modell-Problem -> gemini-3.8-flash: Fehler 503: {
+  "error": {
+    "code": 503,
+    "message": "This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.",
+    "status": "UNAVAILABLE"
+  }
+}
+
 Modell-Problem -> gemini-3.8-flash: Fehler 503: {
   "error": {
     "code": 503,
@@ -43,56 +51,14 @@ Modell-Problem -> gemini-3.8-flash: Fehler 429: {
     "code": 429,
     "message": "You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota ex
 Tageskontingent dieses Modells aufgebraucht, naechstes Modell.
-Modell-Problem -> gemini-3.7-flash: Fehler 503: {
-  "error": {
-    "code": 503,
-    "message": "This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.",
-    "status": "UNAVAILABLE"
-  }
-}
-
-Modell-Problem -> gemini-3.7-flash: Fehler 503: {
-  "error": {
-    "code": 503,
-    "message": "This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.",
-    "status": "UNAVAILABLE"
-  }
-}
-
 Modell-Problem -> gemini-3.7-flash: Fehler 429: {
   "error": {
     "code": 429,
     "message": "You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota ex
 Tageskontingent dieses Modells aufgebraucht, naechstes Modell.
-Modell-Problem -> gemini-3.6-flash: Fehler 503: {
-  "error": {
-    "code": 503,
-    "message": "This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.",
-    "status": "UNAVAILABLE"
-  }
-}
-
-Modell-Problem -> gemini-3.6-flash: Fehler 429: {
-  "error": {
-    "code": 429,
-    "message": "You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota ex
-Tageskontingent dieses Modells aufgebraucht, naechstes Modell.
-Modell-Problem -> gemini-3.5-flash: Fehler 503: {
-  "error": {
-    "code": 503,
-    "message": "This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.",
-    "status": "UNAVAILABLE"
-  }
-}
-
-Modell-Problem -> gemini-3.5-flash: Fehler 429: {
-  "error": {
-    "code": 429,
-    "message": "You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota ex
-Tageskontingent dieses Modells aufgebraucht, naechstes Modell.
-Modell: gemini-3.5-flash-lite
+Modell: gemini-3.6-flash
 Auswahl durch das Modell: 31
-Neues Foto: Unsplash klWUhr-wPJ8 -> https://images.unsplash.com/photo-1506399558188-acca6f8cbf41?ixid=M3wxMTE3OTgzfDB8MXxzZWFyY2h8Mnx8ZGF0YSUyMGNlbnRlciUyMHNlcnZlcnN8ZW58MXwwfHx8MTc5MzY1NDM5Mnww&ixlib=rb-4.1.0&w=1600&h=900&fit=crop&crop=entropy&q=80&fm=jpg
+Neues Foto: Unsplash klWUhr-wPJ8 -> https://images.unsplash.com/photo-1506399558188-acca6f8cbf41?ixid=M3wxMTE3OTgzfDB8MXxzZWFyY2h8Mnx8ZGF0YSUyMGNlbnRlciUyMHNlcnZlcnN8ZW58MXwwfHx8MTc5Mzc3NTA2M3ww&ixlib=rb-4.1.0&w=1600&h=900&fit=crop&crop=entropy&q=80&fm=jpg
 Logo-Angaben gesetzt, fetch_logos holt das Logo neu.
 Foto-Kandidaten: 65 (Commons 26, Unsplash 39)
   0: File:A pharmaceutical laboratory with books and equipment on a lo Wellcome V0029790.jpg | A pharmaceutical laboratory with books and equipment on a long wooden table and 
@@ -122,10 +88,18 @@ Foto-Kandidaten: 65 (Commons 26, Unsplash 39)
   24: File:Yellow Pills.jpg | Production of drugs, yellow pills 1995
   25: File:Pharmacie in Paulista Avenue.jpg | Pharmacie in Paulista Avenue. In some countries, such as Brazil (photo) and Fran
   26: Unsplash HruSbX2a77M | Laboratory technician monitoring environment in lab
-  27: Unsplash dvYKZyVLC9c | Laboratory technician inspecting environmental monitoring plate.
-  28: Unsplash y6zGvWKU6sE | A person in a lab coat and gloves working on a machine
+  27: Unsplash y6zGvWKU6sE | A person in a lab coat and gloves working on a machine
+  28: Unsplash dvYKZyVLC9c | Laboratory technician inspecting environmental monitoring plate.
   29: Unsplash FcIrL0o71Dk | This photograph depicted a Centers for Disease Control and Prevention (CDC) scie
 Verfuegbare Flash-Modelle: gemini-3.8-flash, gemini-3.7-flash, gemini-3.6-flash, gemini-3.5-flash, gemini-3.5-flash-lite, gemini-3.1-flash-lite, gemini-3.1-flash-lite-preview, gemini-3-flash-preview, gemini-2.5-flash, gemini-2.5-flash-lite, gemini-flash-latest, gemini-omni-1.1-flash, gemini-flash-lite-latest, gemini-omni-flash-preview
+Modell-Problem -> gemini-3.8-flash: Fehler 503: {
+  "error": {
+    "code": 503,
+    "message": "This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.",
+    "status": "UNAVAILABLE"
+  }
+}
+
 Modell-Problem -> gemini-3.8-flash: Fehler 429: {
   "error": {
     "code": 429,
@@ -149,18 +123,34 @@ Modell-Problem -> gemini-3.6-flash: Fehler 429: {
     "code": 429,
     "message": "You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota ex
 Tageskontingent dieses Modells aufgebraucht, naechstes Modell.
+Modell-Problem -> gemini-3.5-flash: Fehler 503: {
+  "error": {
+    "code": 503,
+    "message": "This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.",
+    "status": "UNAVAILABLE"
+  }
+}
+
+Modell-Problem -> gemini-3.5-flash: Fehler 503: {
+  "error": {
+    "code": 503,
+    "message": "This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.",
+    "status": "UNAVAILABLE"
+  }
+}
+
 Modell-Problem -> gemini-3.5-flash: Fehler 429: {
   "error": {
     "code": 429,
     "message": "You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota ex
 Tageskontingent dieses Modells aufgebraucht, naechstes Modell.
 Modell: gemini-3.5-flash-lite
-Auswahl durch das Modell: 28
-Neues Foto: Unsplash y6zGvWKU6sE -> https://images.unsplash.com/photo-1732690233982-1d4567384ea1?ixid=M3wxMTE3OTgzfDB8MXxzZWFyY2h8M3x8cGhhcm1hY2V1dGljYWwlMjBsYWJvcmF0b3J5fGVufDF8MHx8fDE3OTM2NTQ0MDR8MA&ixlib=rb-4.1.0&w=1600&h=900&fit=crop&crop=entropy&q=80&fm=jpg
+Auswahl durch das Modell: 39
+Neues Foto: Unsplash Vb0GY3PWSSM -> https://images.unsplash.com/photo-1583912267670-6575ad472688?ixid=M3wxMTE3OTgzfDB8MXxzZWFyY2h8Nnx8Y3lzdGljJTIwZmlicm9zaXMlMjByZXNlYXJjaHxlbnwxfDB8fHwxNzkzNzc1MTc4fDA&ixlib=rb-4.1.0&w=1600&h=900&fit=crop&crop=entropy&q=80&fm=jpg
 Logo-Angaben gesetzt, fetch_logos holt das Logo neu.
 Foto-Kandidaten: 28 (Commons 12, Unsplash 16)
   0: File:Gene-editing Techniques in Plant Cells.jpg | Different gene editing methods used in plant cells
-  1: File:20251019 Replica DNA double helix model Berlin 01.jpg | Adenine of the Replica of the DNA double helix model by Watson and Crick in the 
+  1: File:20251019 Replica DNA double helix model Berlin 04.jpg | Guanine in the Replica of the DNA double helix model by Watson and Crick in the 
   2: File:DNA Double Helix (20468181866).jpg | Credit: National Human Genome Research Institute, National Institutes of Health.
   3: File:DNA Double Helix (4932403853).jpg | DNA Double Helix
   4: File:DNA Helix CPK.jpg | Part of a dna double helix showing the minor groove (Space-filling model)
@@ -181,8 +171,8 @@ Foto-Kandidaten: 28 (Commons 12, Unsplash 16)
   19: Unsplash 2GEr4fLZt8A | 3D rendering capturing the double helix structure of DNA against a blue backdrop
   20: Unsplash XknuBmnjbKg | Vaccine. Hands of a scientist, under a sterile hood, preparing the carcinoembryo
   21: Unsplash oCLuFi9GYNA | DNA Genotyping and Sequencing. A technician works among a fleet of desktop genom
-  22: Unsplash LxPrHCm8-TI | DNA Genotyping and Sequencing. A technician validates genetic variants identifie
-  23: Unsplash rHfsPolwIgk | DNA Genotyping and Sequencing. A technician observing cells under a microscope a
+  22: Unsplash rHfsPolwIgk | DNA Genotyping and Sequencing. A technician observing cells under a microscope a
+  23: Unsplash LxPrHCm8-TI | DNA Genotyping and Sequencing. A technician validates genetic variants identifie
   24: Unsplash v7ibB19EUbQ | Chanelle Case Borden, Ph.D., a postdoctoral fellow in the National Cancer Instit
   25: Unsplash GlZv6YgCUyM | DNA Genotyping and Sequencing. A technician works among a fleet of desktop genom
   26: Unsplash fd0b-Bl4cFc | DNA Genotyping and Sequencing. Vials containing DNA samples from studies of the 
@@ -193,35 +183,11 @@ Modell-Problem -> gemini-3.8-flash: Fehler 429: {
     "code": 429,
     "message": "You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota ex
 Tageskontingent dieses Modells aufgebraucht, naechstes Modell.
-Modell-Problem -> gemini-3.7-flash: Fehler 503: {
-  "error": {
-    "code": 503,
-    "message": "This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.",
-    "status": "UNAVAILABLE"
-  }
-}
-
-Modell-Problem -> gemini-3.7-flash: Fehler 503: {
-  "error": {
-    "code": 503,
-    "message": "This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.",
-    "status": "UNAVAILABLE"
-  }
-}
-
 Modell-Problem -> gemini-3.7-flash: Fehler 429: {
   "error": {
     "code": 429,
     "message": "You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota ex
 Tageskontingent dieses Modells aufgebraucht, naechstes Modell.
-Modell-Problem -> gemini-3.6-flash: Fehler 503: {
-  "error": {
-    "code": 503,
-    "message": "This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.",
-    "status": "UNAVAILABLE"
-  }
-}
-
 Modell-Problem -> gemini-3.6-flash: Fehler 429: {
   "error": {
     "code": 429,
@@ -234,39 +200,39 @@ Modell-Problem -> gemini-3.5-flash: Fehler 429: {
 Tageskontingent dieses Modells aufgebraucht, naechstes Modell.
 Modell: gemini-3.5-flash-lite
 Auswahl durch das Modell: 21
-Neues Foto: Unsplash oCLuFi9GYNA -> https://images.unsplash.com/photo-1579154204601-01588f351e67?ixid=M3wxMTE3OTgzfDB8MXxzZWFyY2h8Mnx8Z2VuZXRpY3MlMjBsYWJvcmF0b3J5fGVufDF8MHx8fDE3OTM3NDEzMDV8MA&ixlib=rb-4.1.0&w=1600&h=900&fit=crop&crop=entropy&q=80&fm=jpg
+Neues Foto: Unsplash oCLuFi9GYNA -> https://images.unsplash.com/photo-1579154204601-01588f351e67?ixid=M3wxMTE3OTgzfDB8MXxzZWFyY2h8Mnx8Z2VuZXRpY3MlMjBsYWJvcmF0b3J5fGVufDF8MHx8fDE3OTM3NzUzMTN8MA&ixlib=rb-4.1.0&w=1600&h=900&fit=crop&crop=entropy&q=80&fm=jpg
 Logo-Angaben gesetzt, fetch_logos holt das Logo neu.
 Foto-Kandidaten: 60 (Commons 30, Unsplash 30)
-  0: File:Day-1-Big-Data-&-Analytics-Conference-0077 (26760110866).jpg | Day-1-Big-Data-&-Analytics-Conference-0077
-  1: File:Gartner Benjamin Arnulf Data and Analytics Summit.jpg | Benjamin Arnulf at the Gartner Data and Analytics Summit in Orlando speaking abo
-  2: File:Oracle Analytics Cloud Dashboard by Benjamin Arnulf presented by Larry Ellison.jpg | Oracle Analytics Cloud Dashboard by Benjamin Arnulf presented by Larry Ellison
-  3: File:Predictive Audiences on Google Analytics 4.jpg | A predictive audience is an audience with at least one condition based on a pred
-  4: File:Visitor Analytics Dashboard.jpg | Screenshot from the Visitor Analytics Overview with the number of visitors, conv
-  5: File:Alper Koçer.jpg | Alper Koçer Founder of the First Basket Sports Schools
-  6: File:Data-core-architecture.jpg | data core architecture
-  7: File:Data Core Architecture.jpg | Data Core Architecture. Centralized Source of Truth
-  8: File:Michael Peres (Podcast event).jpg | Michael Peres (Mikey Peres), podcast host, software engineer, and founder.
-  9: File:Software Developer at Work.jpg | This is an image of "African people at work" from
-  10: File:Software Testing Life Cycle.jpg | Sequential Software Testing Life Cycle
-  11: File:Software engineers at work in Kampala.jpg | This is an image of "African people at work" from
-  12: File:Worker checks laptop for CubeSat software issues in the SSPF.jpg | Teams worked on the final processing of their payloads that will fly aboard Arte
-  13: File:Aircraft Reactor Experiment control room at initial criticality.jpg | Aircraft Reactor Experiment control room at initial criticality
-  14: File:Alcator C-Mod graduate students in control room.jpg | MIT graduate students Erik Edlund and Rachael McDermott monitor the engineering 
-  15: File:Control room, Callide Power Station, circa 1967.jpg | Control room, Callide Power Station, ciirca 1967. Callide A power station opened
-  16: File:Control room..jpg | Interior of filtration control room.
-  17: File:Control room Johan Neerman.jpg | Control room Johan Neerman
-  18: File:Control room cabinets.jpg | Control room cabinets at Point Tupper Generating Station, opened up, revealing l
-  19: File:Control room circle.jpg | Control room circle in Vijayawada
-  20: File:Control room of BESSY II, 2025-06-28.jpeg | Control room of BESSY II
-  21: File:Control room perspectives.jpg | simulationcourse, control room
-  22: File:Control room pt tupper.jpg | Control room in Fossil fuel power plant in Point Tupper, Nova Scotia . There are
-  23: File:Diagnostic monitors in the control room of Wendelstein 7-X.jpg | A bank of monitors in the control room for the Wendelstein 7-X stellarator at th
-  24: File:ESA-ESOC Main Control Room.jpg | ESA-ESOC Main Control Room with the Hera team assembling
-  25: File:Engine Control Room Harmony of the Seas 2026.jpg | The engine control room on Harmony of the Seas .
-  26: File:Eugene F. Kranz at his console at the NASA Mission Control Center.jpg | Eugene F. Kranz, flight director, is shown at his console on May 30, 1965, in th
-  27: File:Multi-monitor workstations in the Wendelstein 7-X control room.jpg | his photo captures the intricate setup behind the workstations in the control ro
-  28: File:Real-time bus tracking control room in Lebanon.jpg | A group of people in a control room monitoring a fleet management telematics sys
-  29: File:SPNN Studio control room.jpg | Studio control room Saint Paul Neighborhood Network (SPNN) 550 Vandalia St #170 
+  0: File:Gartner Benjamin Arnulf Data and Analytics Summit.jpg | Benjamin Arnulf at the Gartner Data and Analytics Summit in Orlando speaking abo
+  1: File:Oracle Analytics Cloud Dashboard by Benjamin Arnulf presented by Larry Ellison.jpg | Oracle Analytics Cloud Dashboard by Benjamin Arnulf presented by Larry Ellison
+  2: File:Predictive Audiences on Google Analytics 4.jpg | A predictive audience is an audience with at least one condition based on a pred
+  3: File:Visitor Analytics Dashboard.jpg | Screenshot from the Visitor Analytics Overview with the number of visitors, conv
+  4: File:Alper Koçer.jpg | Alper Koçer Founder of the First Basket Sports Schools
+  5: File:Data-core-architecture.jpg | data core architecture
+  6: File:Data Core Architecture.jpg | Data Core Architecture. Centralized Source of Truth
+  7: File:Michael Peres (Podcast event).jpg | Michael Peres (Mikey Peres), podcast host, software engineer, and founder.
+  8: File:Software Developer at Work.jpg | This is an image of "African people at work" from
+  9: File:Software Testing Life Cycle.jpg | Sequential Software Testing Life Cycle
+  10: File:Software engineers at work in Kampala.jpg | This is an image of "African people at work" from
+  11: File:Worker checks laptop for CubeSat software issues in the SSPF.jpg | Teams worked on the final processing of their payloads that will fly aboard Arte
+  12: File:Aircraft Reactor Experiment control room at initial criticality.jpg | Aircraft Reactor Experiment control room at initial criticality
+  13: File:Alcator C-Mod graduate students in control room.jpg | MIT graduate students Erik Edlund and Rachael McDermott monitor the engineering 
+  14: File:Control room, Callide Power Station, circa 1967.jpg | Control room, Callide Power Station, ciirca 1967. Callide A power station opened
+  15: File:Control room..jpg | Interior of filtration control room.
+  16: File:Control room Vemork.jpg | It's a while since I had seen computers like this. I'm pretty sure that this set
+  17: File:Control room cabinets.jpg | Control room cabinets at Point Tupper Generating Station, opened up, revealing l
+  18: File:Control room circle.jpg | Control room circle in Vijayawada
+  19: File:Control room of BESSY II, 2025-06-28.jpeg | Control room of BESSY II
+  20: File:Control room perspectives.jpg | simulationcourse, control room
+  21: File:Control room pt tupper.jpg | Control room in Fossil fuel power plant in Point Tupper, Nova Scotia . There are
+  22: File:Diagnostic monitors in the control room of Wendelstein 7-X.jpg | A bank of monitors in the control room for the Wendelstein 7-X stellarator at th
+  23: File:ESA-ESOC Main Control Room.jpg | ESA-ESOC Main Control Room with the Hera team assembling
+  24: File:Engine Control Room Harmony of the Seas 2026.jpg | The engine control room on Harmony of the Seas .
+  25: File:Eugene F. Kranz at his console at the NASA Mission Control Center.jpg | Eugene F. Kranz, flight director, is shown at his console on May 30, 1965, in th
+  26: File:Multi-monitor workstations in the Wendelstein 7-X control room.jpg | his photo captures the intricate setup behind the workstations in the control ro
+  27: File:Real-time bus tracking control room in Lebanon.jpg | A group of people in a control room monitoring a fleet management telematics sys
+  28: File:SPNN Studio control room.jpg | Studio control room Saint Paul Neighborhood Network (SPNN) 550 Vandalia St #170 
+  29: File:AIAP IFGICT Artificial Intelligence Auditor Professional Certificate.jpg | AIAP IFGICT Artificial Intelligence Auditor Professional Certificate
 Verfuegbare Flash-Modelle: gemini-3.8-flash, gemini-3.7-flash, gemini-3.6-flash, gemini-3.5-flash, gemini-3.5-flash-lite, gemini-3.1-flash-lite, gemini-3.1-flash-lite-preview, gemini-3-flash-preview, gemini-2.5-flash, gemini-2.5-flash-lite, gemini-flash-latest, gemini-omni-1.1-flash, gemini-flash-lite-latest, gemini-omni-flash-preview
 Modell-Problem -> gemini-3.8-flash: Fehler 429: {
   "error": {
@@ -289,8 +255,8 @@ Modell-Problem -> gemini-3.5-flash: Fehler 429: {
     "message": "You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota ex
 Tageskontingent dieses Modells aufgebraucht, naechstes Modell.
 Modell: gemini-3.5-flash-lite
-Auswahl durch das Modell: 28
-Neues Foto: File:Real-time bus tracking control room in Lebanon.jpg -> assets/magazin/palantir-q3-2026-zahlen-prognose-foto.jpg
+Auswahl durch das Modell: 22
+Neues Foto: File:Diagnostic monitors in the control room of Wendelstein 7-X.jpg -> assets/magazin/palantir-q3-2026-zahlen-prognose-foto.jpg
 Logo-Angaben gesetzt, fetch_logos holt das Logo neu.
 Foto-Kandidaten: 53 (Commons 29, Unsplash 24)
   0: File:Fawley Oil Refinery (27149863837).jpg | View of Fawley Oil Refinery on the mainland, from the ferry at East Cowes, Isle 
@@ -402,4 +368,60 @@ Modell-Problem -> gemini-3.5-flash: Fehler 429: {
 Tageskontingent dieses Modells aufgebraucht, naechstes Modell.
 Modell: gemini-3.5-flash-lite
 Auswahl durch das Modell: 22
-Neues Foto: Unsplash 2bJfnIwQvpk -> https://images.unsplash.com/photo-1753097617151-b8994eb0bb3e?ixid=M3wxMTE3OTgzfDB8MXxzZWFyY2h8NHx8QU1EJTIwSW5zdGluY3QlMjBhY2NlbGVyYXRvcnxlbnwxfDB8fHwxNzkzNzQxNTgzfDA&ixlib=rb-4.1.0&w=1600&h=900&fit=crop&crop=entropy&q=80&fm=jpg
+Neues Foto: Unsplash 2bJfnIwQvpk -> https://images.unsplash.com/photo-1753097617151-b8994eb0bb3e?ixid=M3wxMTE3OTgzfDB8MXxzZWFyY2h8NHx8QU1EJTIwSW5zdGluY3QlMjBhY2NlbGVyYXRvcnxlbnwxfDB8fHwxNzkzNzc1MzM0fDA&ixlib=rb-4.1.0&w=1600&h=900&fit=crop&crop=entropy&q=80&fm=jpg
+Logo-Angaben gesetzt, fetch_logos holt das Logo neu.
+Foto-Kandidaten: 66 (Commons 30, Unsplash 36)
+  0: File:Corridor, Nambour General Hospital, 2025,.jpg | Corridor, Nambour General Hospital, Queensland, 2025
+  1: File:Corridor at Mater Private Hospital, Brisbane.jpg | Corridor at Mater Private Hospital, Brisbane
+  2: File:Corridor in Uddevalla Hospital.jpg | Corridor in Uddevalla Hospital, Uddevalla, Sweden.
+  3: File:Corridor of the Brâncovenesc Hospital in Bucharest, in 1931.jpg | Corridor of the Brâncovenesc Hospital in Bucharest, in 1931
+  4: File:Corridor on the second level - NÄL hospital 1.jpg | Corridor on the second level in Norra Älvsborgs Länssjukhus ( Northern Älvsborg 
+  5: File:Main Corridor, Lovell General Hospital, Fort Devens, Mass (71546).jpg | Title: Main Corridor, Lovell General Hospital, Fort Devens, Mass. Subjects: Inte
+  6: File:20250808 Intensive care unit bed.jpg | Intensive care unit bed in a Spanish hospital. The image has been modified to re
+  7: File:Clinicians in Intensive Care Unit.jpg | Clinicians in Intensive Care Unit
+  8: File:Flickr - Official U.S. Navy Imagery - Service members from the U.S. Navy and Australian army help lift a Filipino women onto a bed in the intensive care unit..jpg | SAMAR, Philippines (June 20, 2012) Service members from the U.S. Navy and Austra
+  9: File:Flickr - The U.S. Army - Intensive-care visit.jpg | U.S. Army Chief of Staff Gen. Raymond T. Odierno meets a patient inside the inte
+  10: File:Intensive Care Unit - Barasat 2011-05-16 00245.jpg | Intensive Care Unit (ICU) of Barasat Cancer Research & Welfare Centre, Barasat.
+  11: File:Intensive Care Unit at ShSMC.jpg | শহীদ সোহরাওয়ার্দী মেডিকেল কলেজ হাসপাতালের নিবিড় পরিচর্যা কেন্দ্র
+  12: File:Intensivstation (01) 2007-03-03.jpg | This image shows an Intensive Care Unit .
+  13: File:Mechelen AZ St Maarten Intensive Care Unit 01.jpg | Intensive care unit in Algemeen ziekenhuis St-Maarten (Saint Martin's General Ho
+  14: File:Mechelen AZ St Maarten Intensive Care Unit 02.jpg | Intensive care unit in Algemeen ziekenhuis St-Maarten (Saint Martin's General Ho
+  15: File:Patient lying in bed in intensive care unit of hospital with apparatuses and hemodialysis machine.jpg | A patient is lying in a hospital bed in an intensive care unit of a hospital in 
+  16: File:ShSMC Intensive Care Unit.jpg | শহীদ সোহরাওয়ার্দী মেডিকেল কলেজ হাসপাতালের নিবিড় পরিচর্যা কেন্দ্র
+  17: File:UCI 9 Gimnasio HUCA Oviedo-Uviéu.jpg | High Care Unit (HCU) temporarily installed in the gymnasium of the Central Hospi
+  18: File:US Navy 030423-N-6967M-090 A central computer system monitors the heart rates of each patient in the Intensive Care Unit (ICU) to ensure a quick.jpg | Aboard USNS Comfort (T-AH 20) Apr. 23, 2003 -- A central computer system monitor
+  19: File:US Navy 090814-N-6326B-001 A mock set-up of the new pod design in the Neonatal Intensive Care Unit (NICU) at Naval Medical Center San Diego (NMCSD) is on display during an open house.jpg | SAN DIEGO, Calif. (Aug. 14, 2009) A mock set-up of the new pod design in the Neo
+  20: File:Alaris Medsystem III infusion pump 120815-F-TR874-003.jpg | U.S. Air Force Staff Sgt. Caleb Gibson, left, and Staff Sgt. Erick Bartels use p
+  21: File:Apex micro sc.jpg | Pompa do ciągłego podawania treprostinilu podskórnie.
+  22: File:EDK Pump 2.jpg | Epidural catheter pump with the opiate locked inside a tamperproof box.
+  23: File:Insulin pump and infusion set.JPG | A picture I took of my Minimed Medtronic Paradigm 512 insulin pump, showing an i
+  24: File:PCA-02.JPG | A patient-controlled analgesia infusion pump, configured for intravenous adminis
+  25: File:Syringe infusion pump.jpg | automatic syringe infusion pump
+  26: File:US Navy 050223-N-8629M-030 Lt.j.g. Matthew Jones shows an Australian Army nursing officer how to operate an IV pump in one of the wards aboard the Military Sealift Command (MSC) hospital ship USNS Mercy (T-AH 19).jpg | Indian Ocean (Feb. 23, 2005) – Lt.j.g. Matthew Jones shows an Australian Army nu
+  27: File:Ellis Island Immigrant Hospital - Operating Room.jpg | A white tile-wall operating room at the contagious disease hospital of the Ellis
+  28: File:Hospital Operating Room Oak Ridge (7900132180).jpg | MED 37 DOE photo by Ed Westcott 1947 Oak Ridge Tennessee
+  29: File:McKinley Hospital interior view of a general operating room, postcard - DPLA - 3079b5b01fbc2156fda54d431838d3f9.jpg | Interior view of the McKinley Hospital showing one of the operating rooms with t
+Verfuegbare Flash-Modelle: gemini-3.8-flash, gemini-3.7-flash, gemini-3.6-flash, gemini-3.5-flash, gemini-3.5-flash-lite, gemini-3.1-flash-lite, gemini-3.1-flash-lite-preview, gemini-3-flash-preview, gemini-2.5-flash, gemini-2.5-flash-lite, gemini-flash-latest, gemini-omni-1.1-flash, gemini-flash-lite-latest, gemini-omni-flash-preview
+Modell-Problem -> gemini-3.8-flash: Fehler 429: {
+  "error": {
+    "code": 429,
+    "message": "You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota ex
+Tageskontingent dieses Modells aufgebraucht, naechstes Modell.
+Modell-Problem -> gemini-3.7-flash: Fehler 429: {
+  "error": {
+    "code": 429,
+    "message": "You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota ex
+Tageskontingent dieses Modells aufgebraucht, naechstes Modell.
+Modell-Problem -> gemini-3.6-flash: Fehler 429: {
+  "error": {
+    "code": 429,
+    "message": "You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota ex
+Tageskontingent dieses Modells aufgebraucht, naechstes Modell.
+Modell-Problem -> gemini-3.5-flash: Fehler 429: {
+  "error": {
+    "code": 429,
+    "message": "You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota ex
+Tageskontingent dieses Modells aufgebraucht, naechstes Modell.
+Modell: gemini-3.5-flash-lite
+Auswahl durch das Modell: 15
+Neues Foto: File:Patient lying in bed in intensive care unit of hospital with apparatuses and hemodialysis machine.jpg -> assets/magazin/fresenius-q3-2026-quartalszahlen-foto.jpg
