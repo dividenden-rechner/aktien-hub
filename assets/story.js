@@ -162,8 +162,8 @@
       /* Freigestelltes Portrait unten links (steht auf dem unteren Balken), daneben das Zitat */
       var pt = await load(S.portrait);
       if (pt) {
-        var phh = 450, pww = Math.round(phh * pt.width / pt.height), pyy = 1866 - phh;
-        c.drawImage(pt, 60, pyy, pww, phh);
+        var phh = S.para ? 520 : 450, pww = Math.round(phh * pt.width / pt.height), pyy = 1866 - phh;
+        c.drawImage(pt, S.para ? 1056 - pww : 60, pyy, pww, phh);
         if (S.quote) {
           var qx = 60 + pww + 36, qw = 1020 - qx, qf = 33;
           c.fillStyle = "#111"; c.font = "400 " + qf + "px " + F; c.textBaseline = "top";
