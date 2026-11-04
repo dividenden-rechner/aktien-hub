@@ -57,7 +57,15 @@
         /* Folie/Grafik: Logo und Kennung ueber dem Bild, damit nichts davon verdeckt wird */
         sz = S.para ? 150 : 104;
         var lw = sz;
-        if (S.para && logo && !light(logo)) { lw = Math.min(260, logo.width * sz / logo.height); if (draw) c.drawImage(logo, 60, y, lw, logo.height * lw / logo.width); }
+        if (S.para && logo && S.logo_bg) {
+          /* Logo auf farbiger Platte (z. B. weisse Schrift): sichtbaren Bereich ausschneiden und auf die Platte setzen */
+          var bb = (function () { try { var k = document.createElement("canvas"); k.width = logo.width; k.height = logo.height; var x = k.getContext("2d"); x.drawImage(logo, 0, 0); var d = x.getImageData(0, 0, k.width, k.height).data, x0 = k.width, y0 = k.height, x1 = 0, y1 = 0;
+            for (var yy = 0; yy < k.height; yy++) for (var xx = 0; xx < k.width; xx++) if (d[(yy * k.width + xx) * 4 + 3] > 40) { if (xx < x0) x0 = xx; if (xx > x1) x1 = xx; if (yy < y0) y0 = yy; if (yy > y1) y1 = yy; }
+            return x1 > x0 ? { x: x0, y: y0, w: x1 - x0 + 1, h: y1 - y0 + 1 } : null; } catch (e) { return null; } })() || { x: 0, y: 0, w: logo.width, h: logo.height };
+          var pw = 290, pad = 22, q2 = (pw - 2 * pad) / bb.w, plh = Math.round(bb.h * q2 + 2 * pad);
+          lw = pw;
+          if (draw) { var py2 = y + (sz - plh) / 2; c.fillStyle = S.logo_bg; rr(c, 60, py2, pw, plh, 18); c.fill(); c.drawImage(logo, bb.x, bb.y, bb.w, bb.h, 60 + pad, py2 + pad, bb.w * q2, bb.h * q2); }
+        } else if (S.para && logo && !light(logo)) { lw = Math.min(260, logo.width * sz / logo.height); if (draw) c.drawImage(logo, 60, y, lw, logo.height * lw / logo.width); }
         else if (draw && logo) plaque(60, y);
         if (draw && tag) { c.fillStyle = G; c.font = "700 40px " + F; c.fillText(tag, logo ? 60 + sz + 24 : 60, y + (logo ? sz / 2 - 20 : 0)); }
         /* Kennzahlen (Umsatz, Gewinn) rechts neben dem Logo */

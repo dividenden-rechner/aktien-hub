@@ -516,6 +516,7 @@ def share_html(p, url, img):
         m_f = re.search(r"\(/?(assets/magazin/[^)\s]+-f1\.(?:png|jpg))\)", p.get("body_md", ""))
         if m_f and os.path.exists(m_f.group(1)):
             p = dict(p, story_image=m_f.group(1))
+    if p.get("story_logo_bg"): story["logo_bg"] = str(p["story_logo_bg"])
     if p.get("story_image"):
         # In der Story steht das Logo schon da: den Firmennamen vor dem Doppelpunkt in der Ueberschrift nicht wiederholen
         mt = re.match(r"^([^:]{2,40}):\s+(\S.*)$", p["title"])
