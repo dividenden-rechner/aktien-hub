@@ -12,6 +12,7 @@ image_source: https://unsplash.com/photos/heinz-tomato-ketchup-bottle-7cO4Fquqqa
 image_artist_url: https://unsplash.com/@mattpopovich?utm_source=dividenden-rechner&utm_medium=referral
 logo_name: "The Kraft Heinz Company"
 logo_symbol: KHC
+logo_file: assets/logos/khc.png
 ---
 <!-- PRÜFEN: Aufmacherfoto ist automatisch von Unsplash gewaehlt: bitte pruefen, ob es zum Artikel passt (sonst image-Zeilen entfernen, dann entsteht ein Titelbild automatisch). -->
 <!-- PRÜFEN: Diese Werte wurden im Berichtstext nicht gefunden: Grafik North America: 4485; Grafik Kraft Heinz Gesamt: 6115 -->

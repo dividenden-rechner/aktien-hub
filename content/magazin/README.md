@@ -15,10 +15,11 @@ Datei anklicken, dann Stift-Symbol: Zeile `draft: true` löschen und speichern, 
 | 29.10.2026 22:42 | Amazon steigert Umsatz im dritten Quartal auf 201,9 Milliarden Dollar | [79738970_2026-10-29/7757_2242-amazon-q3-2026-zahlen.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/79738970_2026-10-29/7757_2242-amazon-q3-2026-zahlen.md) |
 | 29.10.2026 10:12 | Shell erzielt im dritten Quartal 10,8 Milliarden Dollar Gewinn | [79738970_2026-10-29/8987_1012-shell-q3-2026-ergebnisse.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/79738970_2026-10-29/8987_1012-shell-q3-2026-ergebnisse.md) |
 
-### Online (200)
+### Online (201)
 
 | Datum | Titel | Datei |
 |---|---|---|
+| 04.11.2026 13:42 | Kraft Heinz: Schrumpfender Umsatz und sinkender Gewinn im dritten Quartal belasten | [79738895_2026-11-04/8657_1342-kraft-heinz-q3-2026-zahlen.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/79738895_2026-11-04/8657_1342-kraft-heinz-q3-2026-zahlen.md) |
 | 04.11.2026 10:15 | Unilever wird reiner Pflegekonzern: 1 Mrd. Euro Einsparungen bis 2029, 4 bis 6 % Umsatzwachstum als Ziel | [79738895_2026-11-04/6900_1015-unilever-investor-event-reines-pflegegeschaeft.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/79738895_2026-11-04/6900_1015-unilever-investor-event-reines-pflegegeschaeft.md) |
 | 04.11.2026 09:20 | Novo Nordisk hebt Prognose an: bereinigter Betriebsgewinn im Quartal +27 %, Wegovy-Pille bringt 5,4 Mrd. DKK | [79738895_2026-11-04/7000_0920-novo-nordisk-q3-2026-quartalszahlen.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/79738895_2026-11-04/7000_0920-novo-nordisk-q3-2026-quartalszahlen.md) |
 | 04.11.2026 08:00 | NTT wird ab 2027 offizieller Partner des McLaren Formel-1-Teams | [79738895_2026-11-04/9199_0800-ntt-mclaren-partnerschaft-f1-2027.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/79738895_2026-11-04/9199_0800-ntt-mclaren-partnerschaft-f1-2027.md) |
