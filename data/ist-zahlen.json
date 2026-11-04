@@ -729,6 +729,146 @@
    "revenue": 1614000000.0,
    "waehrung": "USD",
    "quelle": "https://www.sec.gov/Archives/edgar/data/877212/000162828026069148/zbraex99120261003.htm"
+  },
+  {
+   "sym": "COR",
+   "name": "Cencora",
+   "datum": "2026-11-04",
+   "eps": 4.66,
+   "eps_basis": "bereinigt",
+   "revenue": 88400000000.0,
+   "waehrung": "USD",
+   "quelle": "https://www.sec.gov/Archives/edgar/data/1140859/000114085926000038/exhibit991-q42026.htm"
+  },
+  {
+   "sym": "CVS",
+   "name": "CVS Health",
+   "datum": "2026-11-04",
+   "eps": 2.09,
+   "eps_basis": "bereinigt",
+   "revenue": 108400000000.0,
+   "waehrung": "USD",
+   "quelle": "https://www.sec.gov/Archives/edgar/data/64803/000006480326000107/cvs_ex99x1q3-26.htm"
+  },
+  {
+   "sym": "DDOG",
+   "name": "Datadog",
+   "datum": "2026-11-04",
+   "eps": 0.81,
+   "eps_basis": "bereinigt",
+   "revenue": 1200000000.0,
+   "waehrung": "USD",
+   "quelle": "https://www.sec.gov/Archives/edgar/data/1561550/000162828026069792/ex-991x20260930x8k.htm"
+  },
+  {
+   "sym": "EMR",
+   "name": "Emerson Electric",
+   "datum": "2026-11-04",
+   "eps": 1.86,
+   "eps_basis": "bereinigt",
+   "revenue": 5201000000.0,
+   "waehrung": "USD",
+   "quelle": "https://www.sec.gov/Archives/edgar/data/32604/000003260426000049/a2026q4release_ex991.htm"
+  },
+  {
+   "sym": "FIS",
+   "name": "Fidelity National Information Services",
+   "datum": "2026-11-04",
+   "eps": 1.61,
+   "eps_basis": "bereinigt",
+   "revenue": 3454000000.0,
+   "waehrung": "USD",
+   "quelle": "https://www.sec.gov/Archives/edgar/data/1136893/000113689326000061/q32026ex991.htm"
+  },
+  {
+   "sym": "GWW",
+   "name": "W. W. Grainger",
+   "datum": "2026-11-04",
+   "eps": 12.54,
+   "eps_basis": "bereinigt",
+   "revenue": 5181000000.0,
+   "waehrung": "USD",
+   "quelle": "https://www.sec.gov/Archives/edgar/data/277135/000027713526000088/gww8kex991q32026.htm"
+  },
+  {
+   "sym": "MCD",
+   "name": "McDonald's",
+   "datum": "2026-11-04",
+   "eps": 3.51,
+   "eps_basis": "berichtet",
+   "revenue": 7157000000.0,
+   "waehrung": "USD",
+   "quelle": "https://www.sec.gov/Archives/edgar/data/63908/000006390826000080/exhibit991-9302026.htm"
+  },
+  {
+   "sym": "MLM",
+   "name": "Martin Marietta Materials",
+   "datum": "2026-11-04",
+   "eps": 3.94,
+   "eps_basis": "berichtet",
+   "revenue": 2369000000.0,
+   "waehrung": "USD",
+   "quelle": "https://www.sec.gov/Archives/edgar/data/916076/000119312526446178/mlm-ex99_1.htm"
+  },
+  {
+   "sym": "NVO",
+   "name": "Novo Nordisk A S",
+   "datum": "2026-11-04",
+   "eps": 5.79,
+   "eps_basis": "bereinigt",
+   "revenue": 79195000000.0,
+   "waehrung": "DKK",
+   "quelle": "https://www.sec.gov/Archives/edgar/data/353278/000162828026069805/caq32026.htm"
+  },
+  {
+   "sym": "PODD",
+   "name": "Insulet Corporation",
+   "datum": "2026-11-04",
+   "eps": 2.03,
+   "eps_basis": "berichtet",
+   "revenue": 842000000.0,
+   "waehrung": "USD",
+   "quelle": "https://www.sec.gov/Archives/edgar/data/1145197/000114519726000190/podd2026-09x30ex991.htm"
+  },
+  {
+   "sym": "Q",
+   "name": "Qnity Electronics",
+   "datum": "2026-11-04",
+   "eps": 0.87,
+   "eps_basis": "berichtet",
+   "revenue": 1560000000.0,
+   "waehrung": "USD",
+   "quelle": "https://www.sec.gov/Archives/edgar/data/2058873/000205887326000039/exhibit991supplementalsche.htm"
+  },
+  {
+   "sym": "SWK",
+   "name": "Stanley Black & Decker",
+   "datum": "2026-11-04",
+   "eps": 2.31,
+   "eps_basis": "bereinigt",
+   "revenue": 3700000000.0,
+   "waehrung": "USD",
+   "quelle": "https://www.sec.gov/Archives/edgar/data/93556/000009355626000036/ex991q32026.htm"
+  },
+  {
+   "sym": "TRMB",
+   "name": "Trimble Inc.",
+   "datum": "2026-11-04",
+   "eps": 0.86,
+   "eps_basis": "bereinigt",
+   "revenue": 966800000.0,
+   "waehrung": "USD",
+   "quelle": "https://www.sec.gov/Archives/edgar/data/864749/000086474926000119/a2026q3-8kex991.htm"
+  },
+  {
+   "sym": "ZBH",
+   "name": "Zimmer Biomet",
+   "datum": "2026-11-04",
+   "eps": 1.9,
+   "eps_basis": "bereinigt",
+   "revenue": 2063000000.0000002,
+   "waehrung": "USD",
+   "quelle": "https://www.sec.gov/Archives/edgar/data/1136869/000119312526446145/zbh-ex99_1.htm"
   }
  ]
 }

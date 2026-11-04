@@ -1,6 +1,96 @@
 {
  "items": [
   {
+   "slug": "crh-startet-anleihe-kaufangebote-und-umtausch-fuer-arcosa-notes",
+   "title": "CRH startet Anleihe-Kauf- und Umtauschangebote im Volumen von 1 Mrd. US-Dollar",
+   "sym": "CRH",
+   "date": "2026-11-04T18:01:00+01:00"
+  },
+  {
+   "slug": "ww-grainger-q3-2026-ergebnis-prognose",
+   "title": "W.W. Grainger übertrifft im Q3 Erwartungen mit bereinigtem Gewinn von 12,54 US-Dollar je Aktie und hebt Ausblick an",
+   "sym": "GWW",
+   "date": "2026-11-04T17:59:00+01:00"
+  },
+  {
+   "slug": "novo-nordisk-q3-2026-zahlen-prognose",
+   "title": "Novo Nordisk hebt nach Q3-Gewinn von 31,7 Mrd. DKK Jahresprognose an",
+   "sym": "NVO",
+   "date": "2026-11-04T17:58:00+01:00"
+  },
+  {
+   "slug": "fidelity-national-information-services-q3-2026",
+   "title": "Fidelity National Information Services erzielt im dritten Quartal 2026 bereinigten Gewinn von 1,61 US-Dollar je Aktie",
+   "sym": "FIS",
+   "date": "2026-11-04T17:57:00+01:00"
+  },
+  {
+   "slug": "trimble-q3-2026-zahlen",
+   "title": "Trimble erzielt im dritten Quartal 2026 bereinigten Gewinn von 0,86 US-Dollar je Aktie",
+   "sym": "TRMB",
+   "date": "2026-11-04T17:55:00+01:00"
+  },
+  {
+   "slug": "insulet-q3-zahlen-2026-aktienrueckkauf",
+   "title": "Insulet erzielt im dritten Quartal 2026 Gewinn von 2,03 US-Dollar je Aktie und plant Aktienrückkauf",
+   "sym": "PODD",
+   "date": "2026-11-04T17:55:00+01:00"
+  },
+  {
+   "slug": "martin-marietta-materials-q3-2026-rekordumsatz",
+   "title": "Martin Marietta Materials steigert Q3-Umsatz auf 2,4 Mrd. US-Dollar und aktualisiert Ausblick",
+   "sym": "MLM",
+   "date": "2026-11-04T17:54:00+01:00"
+  },
+  {
+   "slug": "emerson-electric-q4-dividende-2026",
+   "title": "Emerson Electric erhöht Dividende um 7 % nach Q4-Gewinn von 1,86 US-Dollar je Aktie",
+   "sym": "EMR",
+   "date": "2026-11-04T17:53:00+01:00"
+  },
+  {
+   "slug": "cencora-q4-2026-zahlen-dividende",
+   "title": "Cencora erhöht Dividende um 10 % nach Q4-Gewinn von 4,66 US-Dollar je Aktie",
+   "sym": "COR",
+   "date": "2026-11-04T17:52:00+01:00"
+  },
+  {
+   "slug": "cvs-health-plant-aufspaltung-in-zwei-unternehmen-bis-2028",
+   "title": "CVS Health plant Aufspaltung in zwei eigenständige Unternehmen bis 2028",
+   "sym": "CVS",
+   "date": "2026-11-04T17:50:00+01:00"
+  },
+  {
+   "slug": "zimmer-biomet-q3-2026-zahlen-prognose",
+   "title": "Zimmer Biomet steigert Q3-Umsatz auf 2,1 Mrd. US-Dollar und hebt Prognose an",
+   "sym": "ZBH",
+   "date": "2026-11-04T17:49:00+01:00"
+  },
+  {
+   "slug": "stanley-black-decker-q3-2026-zahlen-prognoseerhoehung",
+   "title": "Stanley Black & Decker erhöht nach Q3-Gewinn von 2,31 US-Dollar je Aktie Jahresprognose",
+   "sym": "SWK",
+   "date": "2026-11-04T17:47:00+01:00"
+  },
+  {
+   "slug": "qnity-electronics-q3-zahlen-2026",
+   "title": "Qnity Electronics steigert bereinigten Q3-Gewinn auf 1,46 US-Dollar je Aktie und hebt Jahresprognose an",
+   "sym": "Q",
+   "date": "2026-11-04T17:46:00+01:00"
+  },
+  {
+   "slug": "bio-techne-dividende-q1-2027",
+   "title": "Bio-Techne beschließt Quartalsdividende von 0,08 US-Dollar je Aktie",
+   "sym": "TECH",
+   "date": "2026-11-04T17:43:00+01:00"
+  },
+  {
+   "slug": "kraft-heinz-neue-mitglieder-board-of-directors-november-2026",
+   "title": "Kraft Heinz beruft Kelly Dilts und J. Michael Schlotman in das Board of Directors",
+   "sym": "KHC",
+   "date": "2026-11-04T17:41:00+01:00"
+  },
+  {
    "slug": "mcdonalds-q3-2026-quartalszahlen",
    "title": "McDonald's: Gewinn +9 %, aber US-Vergleichsumsatz −0,2 % – Dividende um 4 % erhöht",
    "sym": "MCD",

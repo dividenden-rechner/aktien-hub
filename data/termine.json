@@ -271,6 +271,33 @@
    "quelle": "https://www.sec.gov/Archives/edgar/data/1267238/000126723826000043/aiz-20260930exx991pressrel.htm"
   },
   {
+   "sym": "COR",
+   "name": "Cencora",
+   "art": "ergebnis",
+   "datum": "2026-11-04",
+   "betrag": "",
+   "waehrung": "",
+   "quelle": "https://www.sec.gov/Archives/edgar/data/1140859/000114085926000038/exhibit991-q42026.htm"
+  },
+  {
+   "sym": "DDOG",
+   "name": "Datadog",
+   "art": "ergebnis",
+   "datum": "2026-11-04",
+   "betrag": "",
+   "waehrung": "",
+   "quelle": "https://www.sec.gov/Archives/edgar/data/1561550/000162828026069792/ex-991x20260930x8k.htm"
+  },
+  {
+   "sym": "EMR",
+   "name": "Emerson Electric",
+   "art": "ergebnis",
+   "datum": "2026-11-04",
+   "betrag": "",
+   "waehrung": "",
+   "quelle": "https://www.sec.gov/Archives/edgar/data/32604/000003260426000049/a2026q4release_ex991.htm"
+  },
+  {
    "sym": "JKHY",
    "name": "Jack Henry & Associates",
    "art": "ergebnis",
@@ -280,6 +307,15 @@
    "quelle": "https://www.sec.gov/Archives/edgar/data/779152/000077915226000095/jkhy-20260930xex99pressrel.htm"
   },
   {
+   "sym": "MLM",
+   "name": "Martin Marietta Materials",
+   "art": "ergebnis",
+   "datum": "2026-11-04",
+   "betrag": "",
+   "waehrung": "",
+   "quelle": "https://www.sec.gov/Archives/edgar/data/916076/000119312526446178/mlm-ex99_1.htm"
+  },
+  {
    "sym": "PRU",
    "name": "Prudential Financial",
    "art": "ergebnis",
@@ -287,6 +323,33 @@
    "betrag": "",
    "waehrung": "",
    "quelle": "https://www.sec.gov/Archives/edgar/data/1137774/000113777426000219/exhibit991-3q26earningspre.htm"
+  },
+  {
+   "sym": "Q",
+   "name": "Qnity Electronics",
+   "art": "ergebnis",
+   "datum": "2026-11-04",
+   "betrag": "",
+   "waehrung": "",
+   "quelle": "https://www.sec.gov/Archives/edgar/data/2058873/000205887326000039/exhibit991supplementalsche.htm"
+  },
+  {
+   "sym": "TRMB",
+   "name": "Trimble Inc.",
+   "art": "ergebnis",
+   "datum": "2026-11-04",
+   "betrag": "",
+   "waehrung": "",
+   "quelle": "https://www.sec.gov/Archives/edgar/data/864749/000086474926000119/a2026q3-8kex991.htm"
+  },
+  {
+   "sym": "ZBH",
+   "name": "Zimmer Biomet",
+   "art": "ergebnis",
+   "datum": "2026-11-04",
+   "betrag": "",
+   "waehrung": "",
+   "quelle": "https://www.sec.gov/Archives/edgar/data/1136869/000119312526446145/zbh-ex99_1.htm"
   },
   {
    "sym": "XEL",
@@ -352,6 +415,15 @@
    "quelle": "https://www.sec.gov/Archives/edgar/data/1034054/000119312526443666/d185668dex991.htm"
   },
   {
+   "sym": "COR",
+   "name": "Cencora",
+   "art": "dividende_exdatum",
+   "datum": "2026-11-13",
+   "betrag": "0.66",
+   "waehrung": "USD",
+   "quelle": "https://www.sec.gov/Archives/edgar/data/1140859/000114085926000038/exhibit991-q42026.htm"
+  },
+  {
    "sym": "DOC",
    "name": "Healthpeak Properties",
    "art": "dividende_exdatum",
@@ -359,6 +431,24 @@
    "betrag": "0.10167",
    "waehrung": "USD",
    "quelle": "https://www.sec.gov/Archives/edgar/data/765880/000162828026068878/ex99109302026.htm"
+  },
+  {
+   "sym": "EMR",
+   "name": "Emerson Electric",
+   "art": "dividende_exdatum",
+   "datum": "2026-11-13",
+   "betrag": "0.595",
+   "waehrung": "USD",
+   "quelle": "https://www.sec.gov/Archives/edgar/data/32604/000003260426000049/a2026q4release_ex991.htm"
+  },
+  {
+   "sym": "TECH",
+   "name": "Bio-Techne",
+   "art": "dividende_exdatum",
+   "datum": "2026-11-13",
+   "betrag": "0.08",
+   "waehrung": "USD",
+   "quelle": "https://www.sec.gov/Archives/edgar/data/842023/000110465926122283/tech-ex99d1.htm"
   },
   {
    "sym": "UDR",
@@ -442,6 +532,15 @@
    "quelle": "https://www.sec.gov/Archives/edgar/data/872589/000087258926000032/exhibit991q32026.htm"
   },
   {
+   "sym": "TECH",
+   "name": "Bio-Techne",
+   "art": "dividende_zahltag",
+   "datum": "2026-11-23",
+   "betrag": "0.08",
+   "waehrung": "USD",
+   "quelle": "https://www.sec.gov/Archives/edgar/data/842023/000110465926122283/tech-ex99d1.htm"
+  },
+  {
    "sym": "DLTR",
    "name": "Dollar Tree",
    "art": "ergebnis",
@@ -467,6 +566,15 @@
    "betrag": "0.5625",
    "waehrung": "USD",
    "quelle": "https://www.sec.gov/Archives/edgar/data/1858681/000185868126000063/erex9913q2026.htm"
+  },
+  {
+   "sym": "COR",
+   "name": "Cencora",
+   "art": "dividende_zahltag",
+   "datum": "2026-11-30",
+   "betrag": "0.66",
+   "waehrung": "USD",
+   "quelle": "https://www.sec.gov/Archives/edgar/data/1140859/000114085926000038/exhibit991-q42026.htm"
   },
   {
    "sym": "EL",
@@ -496,6 +604,15 @@
    "quelle": "https://www.sec.gov/Archives/edgar/data/872589/000087258926000032/exhibit991q32026.htm"
   },
   {
+   "sym": "CRH",
+   "name": "CRH plc",
+   "art": "ergebnis",
+   "datum": "2026-12-04",
+   "betrag": "",
+   "waehrung": "",
+   "quelle": "https://www.sec.gov/Archives/edgar/data/849395/000119312526446496/d141767dex991.htm"
+  },
+  {
    "sym": "CVX",
    "name": "Chevron Corporation",
    "art": "dividende_zahltag",
@@ -503,6 +620,15 @@
    "betrag": "1.78",
    "waehrung": "USD",
    "quelle": "https://www.sec.gov/Archives/edgar/data/93410/000009341026000196/a09302026ex9918-k.htm"
+  },
+  {
+   "sym": "EMR",
+   "name": "Emerson Electric",
+   "art": "dividende_zahltag",
+   "datum": "2026-12-10",
+   "betrag": "0.595",
+   "waehrung": "USD",
+   "quelle": "https://www.sec.gov/Archives/edgar/data/32604/000003260426000049/a2026q4release_ex991.htm"
   },
   {
    "sym": "SBAC",
