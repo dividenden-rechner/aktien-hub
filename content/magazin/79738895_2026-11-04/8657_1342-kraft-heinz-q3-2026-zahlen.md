@@ -1,6 +1,6 @@
 ---
 title: "Kraft Heinz: Umsatz −2 % auf 6,1 Mrd. USD, Gewinn −13 % – Prognose leicht angehoben"
-description: "Kraft Heinz verzeichnet im dritten Quartal 2026 einen Umsatz- und Gewinnrückgang. Der Konzern treibt jedoch den Umbau voran und hebt den Ausblick an."
+description: "Kraft Heinz verzeichnet im dritten Quartal 2026 einen Umsatz- und Gewinnrückgang. Zugleich verkauft der Konzern sein nordamerikanisches Kaffeegeschäft für 650 Mio. USD an One Rock Capital Partners und hebt den Ausblick leicht an."
 date: 2026-11-04 13:42
 author: "Redaktions-Team Dividenden-Rechner.de"
 author_bio: "Das Redaktions-Team von Dividenden-Rechner.de schreibt über Dividendenaktien, Kennzahlen und Steuerthemen für Privatanleger. Die Rechner und Auswertungen auf der Seite entstehen im eigenen Haus."
@@ -14,7 +14,7 @@ story_image: assets/magazin/kraft-heinz-q3-2026-zahlen-f1.png
 story_chart: assets/magazin/kraft-heinz-q3-2026-zahlen-kurs.png
 story_portrait: assets/magazin/steve-cahillane-kraft-heinz.png
 story_quote_by: "Steve Cahillane | CEO Kraft Heinz"
-story_text: "Kraft Heinz setzt im dritten Quartal 6,1 Mrd. USD um, 2 % weniger als im Vorjahr, der Nettogewinn fällt um 13 % auf 536 Mio. USD. Das Geschäft in Nordamerika schrumpft um 3,4 %, vor allem weil weniger Ware verkauft wird, in Europa und den entwickelten Märkten Asiens und des Pazifiks sind es 5,6 % weniger. Gegen den Trend wachsen die Schwellenländer organisch um 15,6 %. In den ersten neun Monaten fließen 2,4 Mrd. USD freier Cashflow, 1,4 Mrd. USD gehen als Dividende an die Aktionäre, Aktien kauft der Konzern nicht zurück. Die untere Spanne der Prognose für das organische Wachstum hebt das Management an. CEO Steve Cahillane sieht den Umbauplan im Zeitplan."
+story_text: "Kraft Heinz setzt im dritten Quartal 6,1 Mrd. USD um, 2 % weniger als im Vorjahr, der Nettogewinn fällt um 13 % auf 536 Mio. USD. Das Geschäft in Nordamerika schrumpft um 3,4 %, vor allem weil weniger Ware verkauft wird, in Europa und den entwickelten Märkten Asiens und des Pazifiks sind es 5,6 % weniger. Gegen den Trend wachsen die Schwellenländer organisch um 15,6 %. In den ersten neun Monaten fließen 2,4 Mrd. USD freier Cashflow, 1,4 Mrd. USD gehen als Dividende an die Aktionäre, Aktien kauft der Konzern nicht zurück. Das nordamerikanische Kaffeegeschäft verkauft Kraft Heinz für 650 Mio. USD an One Rock und behält 30 %. Die untere Spanne der Prognose für das organische Wachstum hebt das Management an. CEO Steve Cahillane sieht den Umbauplan im Zeitplan."
 logo_name: "The Kraft Heinz Company"
 logo_symbol: KHC
 logo_file: assets/logos/khc.png
@@ -30,7 +30,8 @@ logo_file: assets/logos/khc.png
 
     1. **Treiber und Bremser:** Während das Segment Emerging Markets mit einem organischen Wachstum von 15,6 % stark zulegt, belasten rückläufige Umsätze in Nordamerika (−3,4 %) und in Europa und Pacific Developed Markets (−5,6 %) das Gesamtgeschäft.
     2. **Kapitalverwendung:** Das Unternehmen zahlte im Jahresverlauf 1,4 Mrd. USD in Form von Dividenden an die Aktionäre aus und tätigte keine Aktienrückkäufe.
-    3. **Ausblick und Risiken:** Der Konzern hebt die untere Spanne seiner Prognose für das organische Nettowachstum an, steht jedoch weiterhin unter Druck durch Inflation bei Beschaffung und Logistik sowie sinkende Volumina.
+    3. **Kaffeegeschäft verkauft:** Kraft Heinz verkauft sein nordamerikanisches Kaffeegeschäft (u. a. Maxwell House) für 650 Mio. USD an One Rock Capital Partners und behält 30 %.
+    4. **Ausblick und Risiken:** Der Konzern hebt die untere Spanne seiner Prognose für das organische Nettowachstum an, steht jedoch weiterhin unter Druck durch Inflation bei Beschaffung und Logistik sowie sinkende Volumina.
 
 ## Kraft Heinz im dritten Quartal: weniger Umsatz, weniger Gewinn, Ausblick leicht höher
 
@@ -53,6 +54,17 @@ Die regionalen Trends verlaufen sehr unterschiedlich. Während Nordamerika als g
     „Unser Betriebsplan 2026, um das US-Geschäft zu drehen und das internationale Wachstum zu beschleunigen, liegt im Zeitplan.“
 
     <span class="zitatquelle">Aus dem Englischen übersetzt, aus der Pressemitteilung. Foto: Kraft Heinz</span>
+
+### Verkauf des nordamerikanischen Kaffeegeschäfts
+
+Zusätzlich zu den Quartalszahlen meldet Kraft Heinz den Abschluss einer endgültigen Vereinbarung über den Verkauf seines nordamerikanischen Kaffeegeschäfts an einen verbundenen Fonds von One Rock Capital Partners. Der Unternehmenswert liegt bei 650 Mio. USD. Kraft Heinz behält eine Minderheitsbeteiligung von 30 % am Geschäft. Zu den Marken gehören Maxwell House, Gevalia, Nabob, Yuban, Tassimo, Ethical Bean und Sanka. Der Abschluss wird Mitte 2027 erwartet, vorbehaltlich behördlicher Genehmigungen.
+
+![Pressemitteilung von Kraft Heinz zum Verkauf des nordamerikanischen Kaffeegeschäfts an One Rock Capital Partners](/assets/magazin/kraft-heinz-q3-2026-zahlen-f2.png)
+*Pressemitteilung zum Verkauf des Kaffeegeschäfts (Business Wire). Ausschnitt nur zugeschnitten, sonst unverändert.*
+
+Der Nettoerlös nach Steuern soll bei rund 500 Mio. USD liegen und zur Schuldentilgung dienen. Rund 250 Vollzeitbeschäftigte sowie die Kaffeeproduktionsstätten in Jacksonville (Florida) und Vancouver (British Columbia) wechseln mit. Kraft Heinz erwartet eine positive Wirkung auf Wachstum und Gewinnmarge, weil sich der Konzern auf Bereiche konzentrieren will, in denen er schneller wachsen kann. Der Verkauf ist aber auch ein Abschied von traditionsreichen Marken und senkt den Umsatz in Nordamerika, dem ohnehin schwächsten Markt des Konzerns.
+
+CEO Steve Cahillane nennt den Schritt wichtig für die Wertsteigerung des Portfolios und die Beschleunigung der Transformation. Die Marken hätten über Generationen im Leben der Kaffeetrinker eine Rolle gespielt, die Beteiligung zeige das Vertrauen in ihr Potenzial unter One Rock.
 
 ### Dividende und Kapitalrückführung
 
