@@ -156,3 +156,5 @@ article p,article li,article td{overflow-wrap:anywhere}
 
 @media(min-width:760px){.rubriken{flex-wrap:wrap;overflow:visible;row-gap:0}.rsw{position:static;margin-left:auto}}
 .rsin::-webkit-search-cancel-button{display:none}
+
+.rsub{margin-top:-8px;border-bottom:0}

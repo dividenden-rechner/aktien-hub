@@ -732,11 +732,14 @@ def relevanz_of(x):
 
 def rel_html(x):
     r = relevanz_of(x)
+    if r == x.get("category"): r = ""
     return f' · <span class="rel">{esc(r)}</span>' if r else ""
 
 
-RUBRIKEN = [("Quartalszahlen & Berichte", {"Quartalszahlen", "Zahlen", "Jahresbericht", "Halbjahreszahlen"}), ("Dividende", {"Dividende"}), ("Aktienrückkauf", {"Aktienrückkauf"}),
-            ("Übernahme", {"Übernahme"}), ("Management", {"Management"}), ("Ausblick", {"Ausblick"}), ("Recht & Regulierung", {"Recht & Regulierung"})]
+RUBRIKEN = [("Quartalszahlen & Berichte", {"Quartalszahlen", "Zahlen", "Jahresbericht", "Halbjahreszahlen"}), ("Dividende", {"Dividende"}),
+            ("Fusionen & Übernahmen", {"Übernahme", "Fusion & Übernahme", "Fusion"}), ("Kapitalmaßnahmen", {"Aktienrückkauf", "Kapitalmaßnahme", "Kapitalerhöhung", "Aktiensplit"}),
+            ("Management", {"Management"}), ("Ausblick", {"Ausblick"}), ("Recht & Regulierung", {"Recht & Regulierung"})]
+RUBRIK_OBEN = 3  # so viele Rubriken stehen direkt in der Leiste, der Rest unter "Sonstige"
 
 
 def rubrik_of(cat):
@@ -753,21 +756,28 @@ def rubrik_html(posts, pre):
     data = [{"s": x["slug"], "t": x["title"], "r": rubrik_of(x["category"]), "c": x["category"], "d": de_dt_kurz(x["dt"]),
              "f": firma_of(x), "y": sym_norm(x), "b": branche_of(x), "v": relevanz_of(x),
              "l": (pre + x["logo_file"]) if x.get("logo_file") and os.path.exists(x["logo_file"]) and not x["logo_file"].endswith(".mono.png") else ""} for x in posts]
+    top = [n for n, _ in RUBRIKEN[:RUBRIK_OBEN] if n in cnt]
+    sub = [n for n, _ in RUBRIKEN[RUBRIK_OBEN:] if n in cnt] + (["Weitere Meldungen"] if "Weitere Meldungen" in cnt else [])
     h = '<nav class="rubriken" aria-label="Nach Rubrik filtern"><button type="button" class="rb on" data-r="">Alle</button>'
     h += '<button type="button" class="rb" data-r="__rel">Wichtig für Anleger</button>'
-    h += "".join('<button type="button" class="rb" data-r="%s">%s</button>' % (esc(n), esc(n)) for n in names)
     h += '<button type="button" class="rb" data-r="__wl">Watchlist</button>'
+    h += "".join('<button type="button" class="rb" data-r="%s">%s</button>' % (esc(n), esc(n)) for n in top)
+    h += '<button type="button" class="rb" id="rmore" aria-expanded="false">Sonstige ▾</button>' if sub else ""
     h += ('<span class="rsw"><button type="button" class="rb rlupe" id="rlupe" aria-label="Nach Firma oder Branche suchen" title="Suchen">'
           '<svg viewBox="0 0 20 20" width="15" height="15" aria-hidden="true"><circle cx="8.5" cy="8.5" r="5.5" fill="none" stroke="currentColor" stroke-width="2"/><path d="M13 13l4.5 4.5" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg></button>'
           '<input type="search" id="rsin" class="rsin" placeholder="Firma oder Branche" autocomplete="off" aria-label="Firma oder Branche"></span></nav>\n')
+    h += ('<nav class="rubriken rsub" id="rsub" aria-label="Weitere Rubriken" hidden>' + "".join('<button type="button" class="rb" data-r="%s">%s</button>' % (esc(n), esc(n)) for n in sub) + '</nav>\n') if sub else ""
     h += '<ul id="rsug" class="rsug" hidden></ul>\n<div id="catres" hidden></div>\n<script type="application/json" id="magdata">%s</script>\n' % json.dumps(data, ensure_ascii=False).replace("</", "<\\/")
     h += """<script>(function(){var d=JSON.parse(document.getElementById("magdata").textContent),bs=document.querySelectorAll(".rb[data-r]"),res=document.getElementById("catres"),inp=document.getElementById("rsin"),lupe=document.getElementById("rlupe"),sug=document.getElementById("rsug"),mn;
 function e(s){return String(s).replace(/[&<>"]/g,function(c){return{"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]})}
 function norm(s){return String(s||"").toLowerCase().replace(/ä/g,"ae").replace(/ö/g,"oe").replace(/ü/g,"ue").replace(/ß/g,"ss").replace(/[^a-z0-9 ]/g,"")}
 function wl(){try{var a=JSON.parse(localStorage.getItem("wl")||"null");if(Array.isArray(a))return a.filter(function(x){return x&&x.s}).map(function(x){return String(x.s).toUpperCase()})}catch(_){}return[]}
 function show(h,l,msg){mn=document.getElementById("magmain");mn.hidden=true;res.hidden=false;
-res.innerHTML='<h2 class="mag-more-h">'+e(h)+'</h2>'+(l.length?'<ul class="mag-archiv">'+l.map(function(x){return '<li><a href="'+e(x.s)+'/"><span class="arlogo">'+(x.l?'<img src="'+e(x.l)+'" alt="" loading="lazy">':e(x.t.charAt(0)))+'</span><span class="artx"><span class="kicker">'+e(x.c)+' · '+e(x.d)+(x.v?' · <span class="rel">'+e(x.v)+'</span>':'')+'</span><strong>'+e(x.t)+'</strong></span></a></li>'}).join("")+'</ul>':'<p class="rmsg">'+(msg||"Keine Artikel gefunden.")+'</p>')}
-function mark(r){Array.prototype.forEach.call(bs,function(b){b.classList.toggle("on",b.getAttribute("data-r")===r)})}
+res.innerHTML='<h2 class="mag-more-h">'+e(h)+'</h2>'+(l.length?'<ul class="mag-archiv">'+l.map(function(x){return '<li><a href="'+e(x.s)+'/"><span class="arlogo">'+(x.l?'<img src="'+e(x.l)+'" alt="" loading="lazy">':e(x.t.charAt(0)))+'</span><span class="artx"><span class="kicker">'+e(x.c)+' · '+e(x.d)+(x.v&&x.v!==x.c?' · <span class="rel">'+e(x.v)+'</span>':'')+'</span><strong>'+e(x.t)+'</strong></span></a></li>'}).join("")+'</ul>':'<p class="rmsg">'+(msg||"Keine Artikel gefunden.")+'</p>')}
+var more=document.getElementById("rmore"),subn=document.getElementById("rsub");
+function inSub(r){return !!(subn&&subn.querySelector('[data-r="'+r+'"]'))}
+function mark(r){Array.prototype.forEach.call(bs,function(b){b.classList.toggle("on",b.getAttribute("data-r")===r)});if(more){more.classList.toggle("on",inSub(r));if(inSub(r)){subn.hidden=false;more.setAttribute("aria-expanded","true")}}}
+if(more)more.onclick=function(){subn.hidden=!subn.hidden;more.setAttribute("aria-expanded",String(!subn.hidden))};
 function hist(h){try{history.replaceState(null,"",h?h:location.pathname)}catch(_){}}
 function go(r,push){mark(r);sug.hidden=true;mn=document.getElementById("magmain");
 if(!r){res.hidden=true;mn.hidden=false;if(push)hist("");return}
