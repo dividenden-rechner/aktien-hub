@@ -511,6 +511,16 @@
    "quelle": "https://www.sec.gov/Archives/edgar/data/1267238/000126723826000043/aiz-20260930exx991pressrel.htm"
   },
   {
+   "sym": "AMD",
+   "name": "AMD",
+   "datum": "2026-11-03",
+   "eps": 1.46,
+   "eps_basis": "berichtet",
+   "revenue": 13400000000.0,
+   "waehrung": "USD",
+   "quelle": "https://www.sec.gov/Archives/edgar/data/2488/000000248826000188/q32026991.htm"
+  },
+  {
    "sym": "AME",
    "name": "Ametek",
    "datum": "2026-11-03",
@@ -519,6 +529,16 @@
    "revenue": 2220000000.0,
    "waehrung": "USD",
    "quelle": "https://www.sec.gov/Archives/edgar/data/1037868/000103786826000194/ametek8kexhibit99111032026.htm"
+  },
+  {
+   "sym": "AMGN",
+   "name": "Amgen",
+   "datum": "2026-11-03",
+   "eps": 7.08,
+   "eps_basis": "berichtet",
+   "revenue": 10400000000.0,
+   "waehrung": "USD",
+   "quelle": "https://www.sec.gov/Archives/edgar/data/318154/000031815426000153/amgn-20260930earningsrelea.htm"
   },
   {
    "sym": "ANET",
@@ -629,6 +649,16 @@
    "revenue": 3100000000.0,
    "waehrung": "USD",
    "quelle": "https://www.sec.gov/Archives/edgar/data/1285785/000128578526000139/pressreleaseq32026-ex991.htm"
+  },
+  {
+   "sym": "PFE",
+   "name": "Pfizer",
+   "datum": "2026-11-03",
+   "eps": 0.87,
+   "eps_basis": "bereinigt",
+   "revenue": 16583000000.0,
+   "waehrung": "$",
+   "quelle": "https://www.sec.gov/Archives/edgar/data/78003/000007800326000125/pfe-9272026xex99.htm"
   },
   {
    "sym": "PHG",
