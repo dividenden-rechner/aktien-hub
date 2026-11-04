@@ -15,7 +15,7 @@ Datei anklicken, dann Stift-Symbol: Zeile `draft: true` löschen und speichern, 
 | 29.10.2026 22:42 | Amazon steigert Umsatz im dritten Quartal auf 201,9 Milliarden Dollar | [79738970_2026-10-29/7757_2242-amazon-q3-2026-zahlen.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/79738970_2026-10-29/7757_2242-amazon-q3-2026-zahlen.md) |
 | 29.10.2026 10:12 | Shell erzielt im dritten Quartal 10,8 Milliarden Dollar Gewinn | [79738970_2026-10-29/8987_1012-shell-q3-2026-ergebnisse.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/79738970_2026-10-29/8987_1012-shell-q3-2026-ergebnisse.md) |
 
-### Online (236)
+### Online (237)
 
 | Datum | Titel | Datei |
 |---|---|---|
@@ -32,6 +32,7 @@ Datei anklicken, dann Stift-Symbol: Zeile `draft: true` löschen und speichern, 
 | 04.11.2026 23:21 | Albemarle erzielt im Q3 bereinigten Gewinn von 2,58 US-Dollar je Aktie und hebt Segment-Ausblick an | [79738895_2026-11-04/7678_2321-albemarle-q3-2026-ergebnis.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/79738895_2026-11-04/7678_2321-albemarle-q3-2026-ergebnis.md) |
 | 04.11.2026 23:21 | Aflac erzielt im dritten Quartal 2026 bereinigten Gewinn von 2,43 US-Dollar je Aktie | [79738895_2026-11-04/7678_2321-aflac-q3-2026-ergebnis-dividende.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/79738895_2026-11-04/7678_2321-aflac-q3-2026-ergebnis-dividende.md) |
 | 04.11.2026 23:20 | TKO Group Holdings hebt nach Q3-Umsatz von 1,4 Mrd. US-Dollar Jahresprognose an | [79738895_2026-11-04/7679_2320-tko-group-holdings-q3-2026-zahlen.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/79738895_2026-11-04/7679_2320-tko-group-holdings-q3-2026-zahlen.md) |
+| 04.11.2026 23:20 | Qualcomm erzielt im Q4 bereinigten Gewinn von 2,17 US-Dollar je Aktie | [79738895_2026-11-04/7679_2320-qualcomm-q4-ergebnisse-fiskaljahr-2026.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/79738895_2026-11-04/7679_2320-qualcomm-q4-ergebnisse-fiskaljahr-2026.md) |
 | 04.11.2026 23:20 | PTC verzeichnet im vierten Quartal 2026 Gewinn je Aktie von 1,44 US-Dollar | [79738895_2026-11-04/7679_2320-ptc-q4-geschaeftsjahr-2026-zahlen.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/79738895_2026-11-04/7679_2320-ptc-q4-geschaeftsjahr-2026-zahlen.md) |
 | 04.11.2026 23:20 | McKesson erzielt im Q2 bereinigten Gewinn von 11,68 US-Dollar je Aktie und hebt Ausblick an | [79738895_2026-11-04/7679_2320-mckesson-q2-fiskaljahr-2027-zahlen.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/79738895_2026-11-04/7679_2320-mckesson-q2-fiskaljahr-2027-zahlen.md) |
 | 04.11.2026 23:20 | Fair Isaac erzielt im Q4 bereinigten Gewinn von 11,10 US-Dollar je Aktie | [79738895_2026-11-04/7679_2320-fair-isaac-q4-2026-zahlen.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/79738895_2026-11-04/7679_2320-fair-isaac-q4-2026-zahlen.md) |

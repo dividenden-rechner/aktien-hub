@@ -10,6 +10,7 @@ quelle_url: https://www.sec.gov/Archives/edgar/data/804328/000080432826000127/qc
 quelle_name: "Pressemitteilung Qualcomm (SEC-Meldung)"
 logo_symbol: QCOM
 logo_name: "Qualcomm"
+logo_file: assets/logos/qcom.png
 ---
 <!-- PRÜFEN: Diese Zahlen stehen nicht im Originaltext: 10,44, Einordnung: 10,44. Bitte pruefen, dann 'draft: true' loeschen. -->
 
