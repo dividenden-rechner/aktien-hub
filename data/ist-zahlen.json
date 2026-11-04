@@ -731,6 +731,76 @@
    "quelle": "https://www.sec.gov/Archives/edgar/data/877212/000162828026069148/zbraex99120261003.htm"
   },
   {
+   "sym": "AFL",
+   "name": "Aflac",
+   "datum": "2026-11-04",
+   "eps": 2.43,
+   "eps_basis": "bereinigt",
+   "revenue": 3270000000.0,
+   "waehrung": "USD",
+   "quelle": "https://www.sec.gov/Archives/edgar/data/4977/000162828026070181/aflex991-q32026new.htm"
+  },
+  {
+   "sym": "ALB",
+   "name": "Albemarle Corporation",
+   "datum": "2026-11-04",
+   "eps": 2.58,
+   "eps_basis": "bereinigt",
+   "revenue": 1553100000.0,
+   "waehrung": "USD",
+   "quelle": "https://www.sec.gov/Archives/edgar/data/915913/000091591326000128/a3q26earningsreleaseex991.htm"
+  },
+  {
+   "sym": "AMCR",
+   "name": "Amcor",
+   "datum": "2026-11-04",
+   "eps": 0.95,
+   "eps_basis": "bereinigt",
+   "revenue": 6129000000.0,
+   "waehrung": "USD",
+   "quelle": "https://www.sec.gov/Archives/edgar/data/1748790/000174879026000029/exhibit991q12026transition.htm"
+  },
+  {
+   "sym": "APA",
+   "name": "APA Corporation",
+   "datum": "2026-11-04",
+   "eps": 1.94,
+   "eps_basis": "bereinigt",
+   "revenue": null,
+   "waehrung": "USD",
+   "quelle": "https://www.sec.gov/Archives/edgar/data/1841666/000184166626000063/exhibit9913q26earningsrele.htm"
+  },
+  {
+   "sym": "ATO",
+   "name": "Atmos Energy",
+   "datum": "2026-11-04",
+   "eps": 8.49,
+   "eps_basis": "berichtet",
+   "revenue": 1400000000.0,
+   "waehrung": "USD",
+   "quelle": "https://www.sec.gov/Archives/edgar/data/731802/000073180226000129/ato20261104exhibit991.htm"
+  },
+  {
+   "sym": "CF",
+   "name": "CF Industries",
+   "datum": "2026-11-04",
+   "eps": 2.87,
+   "eps_basis": "berichtet",
+   "revenue": 1860000000.0,
+   "waehrung": "USD",
+   "quelle": "https://www.sec.gov/Archives/edgar/data/1324404/000110465926122757/tm2628886d1_ex99-1.htm"
+  },
+  {
+   "sym": "COHR",
+   "name": "Coherent Corp.",
+   "datum": "2026-11-04",
+   "eps": 2.09,
+   "eps_basis": "bereinigt",
+   "revenue": 2370000000.0,
+   "waehrung": "USD",
+   "quelle": "https://www.sec.gov/Archives/edgar/data/820318/000119312526447200/d176836dex991.htm"
+  },
+  {
    "sym": "COR",
    "name": "Cencora",
    "datum": "2026-11-04",
@@ -739,6 +809,16 @@
    "revenue": 88400000000.0,
    "waehrung": "USD",
    "quelle": "https://www.sec.gov/Archives/edgar/data/1140859/000114085926000038/exhibit991-q42026.htm"
+  },
+  {
+   "sym": "CPAY",
+   "name": "Corpay",
+   "datum": "2026-11-04",
+   "eps": 7.54,
+   "eps_basis": "bereinigt",
+   "revenue": 1380000000.0,
+   "waehrung": "USD",
+   "quelle": "https://www.sec.gov/Archives/edgar/data/1175454/000117545426000054/ex991q3_2026.htm"
   },
   {
    "sym": "CVS",
@@ -771,6 +851,36 @@
    "quelle": "https://www.sec.gov/Archives/edgar/data/32604/000003260426000049/a2026q4release_ex991.htm"
   },
   {
+   "sym": "ES",
+   "name": "Eversource Energy",
+   "datum": "2026-11-04",
+   "eps": 0.92,
+   "eps_basis": "berichtet",
+   "revenue": 346000000.0,
+   "waehrung": "USD",
+   "quelle": "https://www.sec.gov/Archives/edgar/data/72741/000110465926122703/tm2628949d1_ex99-1.htm"
+  },
+  {
+   "sym": "EW",
+   "name": "Edwards Lifesciences",
+   "datum": "2026-11-04",
+   "eps": 0.8,
+   "eps_basis": "bereinigt",
+   "revenue": 1715500000.0,
+   "waehrung": "USD",
+   "quelle": "https://www.sec.gov/Archives/edgar/data/1099800/000109980026000053/ex-991q32026.htm"
+  },
+  {
+   "sym": "FICO",
+   "name": "Fair Isaac",
+   "datum": "2026-11-04",
+   "eps": 11.1,
+   "eps_basis": "bereinigt",
+   "revenue": 657000000.0,
+   "waehrung": "USD",
+   "quelle": "https://www.sec.gov/Archives/edgar/data/814547/000081454726000037/exhibit991erq42026.htm"
+  },
+  {
    "sym": "FIS",
    "name": "Fidelity National Information Services",
    "datum": "2026-11-04",
@@ -791,6 +901,16 @@
    "quelle": "https://www.sec.gov/Archives/edgar/data/277135/000027713526000088/gww8kex991q32026.htm"
   },
   {
+   "sym": "HST",
+   "name": "Host Hotels & Resorts",
+   "datum": "2026-11-04",
+   "eps": 0.1,
+   "eps_basis": "berichtet",
+   "revenue": 1350000000.0,
+   "waehrung": "USD",
+   "quelle": "https://www.sec.gov/Archives/edgar/data/1070750/000107075026000152/hst-ex991.htm"
+  },
+  {
    "sym": "MCD",
    "name": "McDonald's",
    "datum": "2026-11-04",
@@ -799,6 +919,26 @@
    "revenue": 7157000000.0,
    "waehrung": "USD",
    "quelle": "https://www.sec.gov/Archives/edgar/data/63908/000006390826000080/exhibit991-9302026.htm"
+  },
+  {
+   "sym": "MCK",
+   "name": "McKesson",
+   "datum": "2026-11-04",
+   "eps": 11.68,
+   "eps_basis": "bereinigt",
+   "revenue": 111000000000.0,
+   "waehrung": "USD",
+   "quelle": "https://www.sec.gov/Archives/edgar/data/927653/000092765326000279/mck_exhibit991x9302026.htm"
+  },
+  {
+   "sym": "MET",
+   "name": "MetLife",
+   "datum": "2026-11-04",
+   "eps": 2.78,
+   "eps_basis": "bereinigt",
+   "revenue": null,
+   "waehrung": "USD",
+   "quelle": "https://www.sec.gov/Archives/edgar/data/1099219/000109921926000058/ex991earningsreleasetables.htm"
   },
   {
    "sym": "MLM",
@@ -831,6 +971,16 @@
    "quelle": "https://www.sec.gov/Archives/edgar/data/1145197/000114519726000190/podd2026-09x30ex991.htm"
   },
   {
+   "sym": "PTC",
+   "name": "PTC Inc.",
+   "datum": "2026-11-04",
+   "eps": 1.44,
+   "eps_basis": "berichtet",
+   "revenue": 673000000.0,
+   "waehrung": "USD",
+   "quelle": "https://www.sec.gov/Archives/edgar/data/857005/000119312526447186/ptc-ex99_1.htm"
+  },
+  {
    "sym": "Q",
    "name": "Qnity Electronics",
    "datum": "2026-11-04",
@@ -841,6 +991,26 @@
    "quelle": "https://www.sec.gov/Archives/edgar/data/2058873/000205887326000039/exhibit991supplementalsche.htm"
   },
   {
+   "sym": "QCOM",
+   "name": "Qualcomm",
+   "datum": "2026-11-04",
+   "eps": 2.17,
+   "eps_basis": "bereinigt",
+   "revenue": 10442000000.0,
+   "waehrung": "USD",
+   "quelle": "https://www.sec.gov/Archives/edgar/data/804328/000080432826000127/qcom092726erex991.htm"
+  },
+  {
+   "sym": "STE",
+   "name": "Steris",
+   "datum": "2026-11-04",
+   "eps": 2.94,
+   "eps_basis": "bereinigt",
+   "revenue": 1600000000.0,
+   "waehrung": "USD",
+   "quelle": "https://www.sec.gov/Archives/edgar/data/1757898/000162828026070220/ste9302026ex991.htm"
+  },
+  {
    "sym": "SWK",
    "name": "Stanley Black & Decker",
    "datum": "2026-11-04",
@@ -849,6 +1019,26 @@
    "revenue": 3700000000.0,
    "waehrung": "USD",
    "quelle": "https://www.sec.gov/Archives/edgar/data/93556/000009355626000036/ex991q32026.htm"
+  },
+  {
+   "sym": "TKO",
+   "name": "TKO Group Holdings",
+   "datum": "2026-11-04",
+   "eps": 1.35,
+   "eps_basis": "berichtet",
+   "revenue": 1360000000.0,
+   "waehrung": "USD",
+   "quelle": "https://www.sec.gov/Archives/edgar/data/1973266/000119312526447231/tko-ex99_1.htm"
+  },
+  {
+   "sym": "TPL",
+   "name": "Texas Pacific Land Corporation",
+   "datum": "2026-11-04",
+   "eps": 2.42,
+   "eps_basis": "berichtet",
+   "revenue": 273390000.0,
+   "waehrung": "USD",
+   "quelle": "https://www.sec.gov/Archives/edgar/data/1811074/000181107426000075/exhibit991q32026earningsre.htm"
   },
   {
    "sym": "TRMB",
