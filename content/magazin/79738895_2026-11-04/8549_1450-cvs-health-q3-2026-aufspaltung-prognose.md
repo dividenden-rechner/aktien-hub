@@ -8,9 +8,15 @@ category: Quartalszahlen
 quelle_url: https://investors.cvshealth.com/news/news-details/2026/CVS-HEALTH-CORPORATION-REPORTS-THIRD-QUARTER-2026-RESULTS-AND-RAISES-FULL-YEAR-2026-GUIDANCE/default.aspx
 quelle_name: "CVS Health Corporation, Pressemitteilungen vom 4. November 2026 (Q3-Ergebnisse und geplante Aufspaltung)"
 logo_name: "CVS Health Corporation"
+story_text: "CVS Health steigert den Umsatz im dritten Quartal um 5,4 % auf 108,4 Mrd. USD und verdient 2,2 Mrd. USD, nach einem Verlust von 4,0 Mrd. USD im Vorjahr. Damals drückte eine Abschreibung von 5,7 Mrd. USD auf den Geschäftswert das Ergebnis. Bereinigt steigt das operative Ergebnis um 21 %, vor allem weil die Krankenversicherung Aetna weniger Leistungen auszahlen muss als erwartet. Das Apothekengeschäft legt beim Ergebnis um 11 % zu, bei sinkendem Umsatz. Die Prognose hebt der Konzern deutlich an, der Cashflow soll mindestens 15,5 Mrd. USD erreichen. Bis Mitte 2028 will sich CVS in zwei börsennotierte Unternehmen aufspalten: eine Gesundheitsfirma mit Aetna und eine reine Apothekenkette."
 logo_symbol: CVS
 logo_domain: cvshealth.com
-story_text: "CVS Health steigert den Umsatz im dritten Quartal um 5,4 % auf 108,4 Mrd. USD und verdient 2,2 Mrd. USD, nach einem Verlust von 4,0 Mrd. USD im Vorjahr. Damals drückte eine Abschreibung von 5,7 Mrd. USD auf den Geschäftswert das Ergebnis. Bereinigt steigt das operative Ergebnis um 21 %, vor allem weil die Krankenversicherung Aetna weniger Leistungen auszahlen muss als erwartet. Das Apothekengeschäft legt beim Ergebnis um 11 % zu, bei sinkendem Umsatz. Die Prognose hebt der Konzern deutlich an, der Cashflow soll mindestens 15,5 Mrd. USD erreichen. Bis Mitte 2028 will sich CVS in zwei börsennotierte Unternehmen aufspalten: eine Gesundheitsfirma mit Aetna und eine reine Apothekenkette."
+image: assets/magazin/cvs-health-q3-2026-aufspaltung-prognose-foto.jpg
+image_alt: "Foto zu CVS Health Corporation: CVS Pharmacy - Storefront"
+image_credit: "Foto: ajay_suresh / Wikimedia Commons, CC BY 2.0"
+image_source: https://commons.wikimedia.org/wiki/File:CVS_Pharmacy_-_Storefront_(50836368758).jpg
+image_artist_url: 
+logo_file: assets/logos/cvs.png
 ---
 <!-- PRÜFEN: Es liegen weder Folien noch ein CEO-Foto (David Joyner) noch ein Kursbild vor. Story läuft deshalb ohne Folie, Kursbild und Freisteller. Bitte nachreichen. -->
 <!-- PRÜFEN: Zahlen stammen aus den Wortlauten der beiden Pressemitteilungen vom 04.11.2026 (Q3-Ergebnisse, Aufspaltung). Der Teil der Ergebnismeldung ab Zeichen 100.000 (u. a. Tabellenanhang) wurde nicht gelesen. -->

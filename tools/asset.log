@@ -30,27 +30,19 @@ Foto-Kandidaten: 62 (Commons 30, Unsplash 32)
   28: File:Business applications of AI - 2024 AI index.jpg | Tasks that are automated with AI by a significant proportion of companies, in 20
   29: File:ESO data center (eso-data-centre-9101).jpg | The ESO data center collects all the data ever produced by the VLT, most of the 
 Verfuegbare Flash-Modelle: gemini-3.8-flash, gemini-3.7-flash, gemini-3.6-flash, gemini-3.5-flash, gemini-3.5-flash-lite, gemini-3.1-flash-lite, gemini-3.1-flash-lite-preview, gemini-3-flash-preview, gemini-2.5-flash, gemini-2.5-flash-lite, gemini-flash-latest, gemini-omni-1.1-flash, gemini-flash-lite-latest, gemini-omni-flash-preview
-Modell-Problem -> gemini-3.8-flash: Fehler 503: {
-  "error": {
-    "code": 503,
-    "message": "This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.",
-    "status": "UNAVAILABLE"
-  }
-}
-
-Modell-Problem -> gemini-3.8-flash: Fehler 503: {
-  "error": {
-    "code": 503,
-    "message": "This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.",
-    "status": "UNAVAILABLE"
-  }
-}
-
 Modell-Problem -> gemini-3.8-flash: Fehler 429: {
   "error": {
     "code": 429,
     "message": "You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota ex
 Tageskontingent dieses Modells aufgebraucht, naechstes Modell.
+Modell-Problem -> gemini-3.7-flash: Fehler 503: {
+  "error": {
+    "code": 503,
+    "message": "This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.",
+    "status": "UNAVAILABLE"
+  }
+}
+
 Modell-Problem -> gemini-3.7-flash: Fehler 429: {
   "error": {
     "code": 429,
@@ -102,38 +94,19 @@ Modell-Problem -> gemini-3.7-flash: Fehler 429: {
     "code": 429,
     "message": "You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota ex
 Tageskontingent dieses Modells aufgebraucht, naechstes Modell.
-Modell-Problem -> gemini-3.6-flash: Fehler 503: {
+Modell-Problem -> gemini-3.6-flash: Fehler 429: {
   "error": {
-    "code": 503,
-    "message": "This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.",
-    "status": "UNAVAILABLE"
-  }
-}
-
-Modell-Problem -> gemini-3.6-flash: Fehler 503: {
-  "error": {
-    "code": 503,
-    "message": "This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.",
-    "status": "UNAVAILABLE"
-  }
-}
-
-Modell-Problem -> gemini-3.6-flash: Fehler 503: {
-  "error": {
-    "code": 503,
-    "message": "This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.",
-    "status": "UNAVAILABLE"
-  }
-}
-
+    "code": 429,
+    "message": "You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota ex
+Tageskontingent dieses Modells aufgebraucht, naechstes Modell.
 Modell-Problem -> gemini-3.5-flash: Fehler 429: {
   "error": {
     "code": 429,
     "message": "You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota ex
 Tageskontingent dieses Modells aufgebraucht, naechstes Modell.
 Modell: gemini-3.5-flash-lite
-Auswahl durch das Modell: 42
-Neues Foto: Unsplash RlOAwXt2fEA -> https://images.unsplash.com/photo-1614935151651-0bea6508db6b?ixid=M3wxMTE3OTgzfDB8MXxzZWFyY2h8MXx8cGhhcm1hJTIwbGFiJTIwc2NpZW50aXN0fGVufDF8MHx8fDE3OTM3NDExODd8MA&ixlib=rb-4.1.0&w=1600&h=900&fit=crop&crop=entropy&q=80&fm=jpg
+Auswahl durch das Modell: 38
+Neues Foto: Unsplash tEFl8Wqd5f0 -> https://images.unsplash.com/photo-1707944745899-104a4b12d945?ixid=M3wxMTE3OTgzfDB8MXxzZWFyY2h8NXx8Y3lzdGljJTIwZmlicm9zaXMlMjByZXNlYXJjaHxlbnwxfDB8fHwxNzkzNzQxMTg3fDA&ixlib=rb-4.1.0&w=1600&h=900&fit=crop&crop=entropy&q=80&fm=jpg
 Logo-Angaben gesetzt, fetch_logos holt das Logo neu.
 Foto-Kandidaten: 28 (Commons 12, Unsplash 16)
   0: File:Gene-editing Techniques in Plant Cells.jpg | Different gene editing methods used in plant cells
@@ -170,9 +143,24 @@ Modell-Problem -> gemini-3.8-flash: Fehler 429: {
     "code": 429,
     "message": "You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota ex
 Tageskontingent dieses Modells aufgebraucht, naechstes Modell.
-Modell: gemini-3.7-flash
-Auswahl durch das Modell: 7
-Neues Foto: File:CRISPR-Cas9 Editing of the Genome (26453307604).jpg -> assets/magazin/crispr-therapeutics-q3-2026-casgevy-verlust-foto.jpg
+Modell-Problem -> gemini-3.7-flash: Fehler 429: {
+  "error": {
+    "code": 429,
+    "message": "You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota ex
+Tageskontingent dieses Modells aufgebraucht, naechstes Modell.
+Modell-Problem -> gemini-3.6-flash: Fehler 429: {
+  "error": {
+    "code": 429,
+    "message": "You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota ex
+Tageskontingent dieses Modells aufgebraucht, naechstes Modell.
+Modell-Problem -> gemini-3.5-flash: Fehler 429: {
+  "error": {
+    "code": 429,
+    "message": "You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota ex
+Tageskontingent dieses Modells aufgebraucht, naechstes Modell.
+Modell: gemini-3.5-flash-lite
+Auswahl durch das Modell: 21
+Neues Foto: Unsplash oCLuFi9GYNA -> https://images.unsplash.com/photo-1579154204601-01588f351e67?ixid=M3wxMTE3OTgzfDB8MXxzZWFyY2h8Mnx8Z2VuZXRpY3MlMjBsYWJvcmF0b3J5fGVufDF8MHx8fDE3OTM3NDEzMDV8MA&ixlib=rb-4.1.0&w=1600&h=900&fit=crop&crop=entropy&q=80&fm=jpg
 Logo-Angaben gesetzt, fetch_logos holt das Logo neu.
 Foto-Kandidaten: 60 (Commons 30, Unsplash 30)
   0: File:Day-1-Big-Data-&-Analytics-Conference-0077 (26760110866).jpg | Day-1-Big-Data-&-Analytics-Conference-0077
@@ -221,14 +209,6 @@ Modell-Problem -> gemini-3.6-flash: Fehler 429: {
     "code": 429,
     "message": "You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota ex
 Tageskontingent dieses Modells aufgebraucht, naechstes Modell.
-Modell-Problem -> gemini-3.5-flash: Fehler 503: {
-  "error": {
-    "code": 503,
-    "message": "This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.",
-    "status": "UNAVAILABLE"
-  }
-}
-
 Modell-Problem -> gemini-3.5-flash: Fehler 429: {
   "error": {
     "code": 429,
@@ -288,7 +268,12 @@ Modell-Problem -> gemini-3.7-flash: Fehler 429: {
     "code": 429,
     "message": "You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota ex
 Tageskontingent dieses Modells aufgebraucht, naechstes Modell.
-Modell: gemini-3.6-flash
+Modell-Problem -> gemini-3.6-flash: Fehler 429: {
+  "error": {
+    "code": 429,
+    "message": "You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota ex
+Tageskontingent dieses Modells aufgebraucht, naechstes Modell.
+Modell: gemini-3.5-flash
 Auswahl durch das Modell: -1
 Kein passendes Foto gefunden, altes bleibt.
 Logo-Angaben gesetzt, fetch_logos holt das Logo neu.
@@ -453,8 +438,8 @@ Modell-Problem -> gemini-3.5-flash: Fehler 429: {
     "message": "You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota ex
 Tageskontingent dieses Modells aufgebraucht, naechstes Modell.
 Modell: gemini-3.5-flash-lite
-Auswahl durch das Modell: 4
-Neues Foto: Unsplash J4HwEwZtIs8 -> https://images.unsplash.com/photo-1612851300081-30cac0077b3b?ixid=M3wxMTE3OTgzfDB8MXxzZWFyY2h8MXx8aW5qZWN0aW9uJTIwcGVuJTIwY2xvc2UlMjB1cHxlbnwxfDB8fHwxNzkzNzgzNTkyfDA&ixlib=rb-4.1.0&w=1600&h=900&fit=crop&crop=entropy&q=80&fm=jpg
+Auswahl durch das Modell: 5
+Neues Foto: Unsplash TzKc7FGaL7Y -> https://images.unsplash.com/photo-1745939921744-ba8ef27940bf?ixid=M3wxMTE3OTgzfDB8MXxzZWFyY2h8Mnx8aW5qZWN0aW9uJTIwcGVuJTIwY2xvc2UlMjB1cHxlbnwxfDB8fHwxNzkzNzgzNTkyfDA&ixlib=rb-4.1.0&w=1600&h=900&fit=crop&crop=entropy&q=80&fm=jpg
 Logo-Angaben gesetzt, fetch_logos holt das Logo neu.
 Foto-Kandidaten: 21 (Commons 5, Unsplash 16)
   0: File:Antikalk 01.jpg | Anticalc/Decalcifier packaging from Germany, ingredients highlighted
@@ -502,3 +487,59 @@ Tageskontingent dieses Modells aufgebraucht, naechstes Modell.
 Modell: gemini-3.5-flash-lite
 Auswahl durch das Modell: 15
 Neues Foto: Unsplash PL1WRIJOQuQ -> https://images.unsplash.com/photo-1776105609708-3d8908ab4dc2?ixid=M3wxMTE3OTgzfDB8MXxzZWFyY2h8M3x8cGVyc29uYWwlMjBjYXJlJTIwcHJvZHVjdHMlMjBzaGVsZnxlbnwxfDB8fHwxNzkzNzgzNTk5fDA&ixlib=rb-4.1.0&w=1600&h=900&fit=crop&crop=entropy&q=80&fm=jpg
+Logo-Angaben gesetzt, fetch_logos holt das Logo neu.
+Foto-Kandidaten: 46 (Commons 30, Unsplash 16)
+  0: File:Gateway Bklyn South 33 - CVS & Target.jpg | The logo for the CVS/Pharmacy within the Target store at Gateway Center South ma
+  1: File:Ingles Supermarket, NC Highway 107 and Webster Road, Sylva, NC.jpg | Built in 1986, this supermarket was constructed by the Ingles Markets chain of A
+  2: File:Ingles Supermarket, NC Highway 107 and Webster Road, Sylva, NC 2024 - Aisle.jpg | Built in 1986, this supermarket was constructed by the Ingles Markets chain of A
+  3: File:Ingles Supermarket, NC Highway 107 and Webster Road, Sylva, NC 2024 - Best Meat In Town.jpg | Built in 1986, this supermarket was constructed by the Ingles Markets chain of A
+  4: File:Ingles Supermarket, NC Highway 107 and Webster Road, Sylva, NC 2024 - Dairy.jpg | Built in 1986, this supermarket was constructed by the Ingles Markets chain of A
+  5: File:Ingles Supermarket, NC Highway 107 and Webster Road, Sylva, NC 2024 - Lunch Cuts.jpg | Built in 1986, this supermarket was constructed by the Ingles Markets chain of A
+  6: File:Ingles Supermarket, NC Highway 107 and Webster Road, Sylva, NC 2024 - Produce.jpg | Built in 1986, this supermarket was constructed by the Ingles Markets chain of A
+  7: File:Ingles Supermarket, NC Highway 107 and Webster Road, Sylva, NC 2024 - exterior at night.jpg | Built in 1986, this supermarket was constructed by the Ingles Markets chain of A
+  8: File:Ingles Supermarket, Sylva, NC 2021.jpg | Built in 1986, this supermarket was constructed by the Ingles Markets chain of A
+  9: File:1266 S 13th St Little Bohemia (Omaha, Nebraska) Douglas Co NE.jpg | This two-story brick storefront was constructed in 1899 and was home to Emil Cer
+  10: File:CVS 1971 storefront setup.jpg | Image of CVS model store during 1970s, as presented in corporate report for 1971
+  11: File:CVS Pharmacy - Storefront (50836368758).jpg | CVS Pharmacy - Storefront
+  12: File:CVS Storefront Black Friday (10461931115).jpg | Close-up of the CVS/pharmacy store ahead of Black Friday shopping.
+  13: File:Duane Reade Pharmacy Storefront (48206542307).jpg | Chelsea, NYC
+  14: File:Flora-apotheke - Flickr - bilderkombinat berlin.jpg | flora-apotheke
+  15: File:Great Wall Chinese Restaurant - fmr C & M Grocery, Andrew Werner drugstore, Jehle's Grocery et al. - Buffalo, New York - 20201202.jpg | Great Wall Chinese Restaurant, 914-916 Elmwood Avenue at West Delavan Avenue, Bu
+  16: File:Kiehl's Storefront Window.jpg | Vintage druggist relics displayed in the storefront window of the original Kiehl
+  17: File:Old store on Avenue D, Apalachicola, Florida.jpg | Empty storefront at the corner of Avenue D and 4th Street in downtown Apalachico
+  18: File:Pharmacy display - Shinise Kinenkan Museum - Nagamachi - Kanazawa, Japan - DSC00164.jpg | Shinise Kinenkan Museum (金沢市老舗記念館) - Nagamachi - Kanazawa, Japan.
+  19: File:Union Tpke 187th St td (2022-07-03) 03 - Real Brave Music School (Former Rite Aid).jpg | The Real Brave Music School occupying the east end of the former Rite Aid and Wa
+  20: File:Union Tpke 187th St td (2022-07-03) 04 - Real Brave Music School (Former Rite Aid).jpg | The Real Brave Music School occupying the east end of the former Rite Aid and Wa
+  21: File:Union Tpke 187th St td (2022-07-12) 03 - Real Brave Music School (Former Rite Aid).jpg | The Real Brave Music School occupying the east end of the former Rite Aid and Wa
+  22: File:A swedish pharmacy in 1911.jpg | A woman with a headscarf around her head is standing at a pharmacy counter with 
+  23: File:Betschdorf Pharmacy.jpg | Die Apotheke Klein Ott in Betschdorf
+  24: File:Betschdorf Pharmacy Parking.jpg | Der Parkplatz der Apotheke Klein Ott in Betschdorf
+  25: File:D.J. & L.E. Gill Pharmacy, Kirkgate, Tadcaster (26th August 2019).jpg | D.J. & L.E. Gill Pharmacy, Kirkgate, Tadcaster, North Yorkshire. Taken on the ev
+  26: File:Falastin pharmacy, Salfit.jpg | صيدلية فلسطين، شارع القدس، مقابل مستشفى سلفيت الحكومي، مدينة سلفيت، دولة فلسطين
+  27: File:Kaisei-Pharmacy Yoshiya.jpg | Kaisei-Pharmacy Yoshiya
+  28: File:Karunya Pharmacy Thycaud.jpg | Karunya Pharmacy Thycaud
+  29: File:Old pharmacy exposition of army pharmacy in exposition History of pharmacies in Kuks Hospital in Kuks, Trutnov District.jpg | Old pharmacy exposition of army pharmacy in exposition History of pharmacies in 
+Verfuegbare Flash-Modelle: gemini-3.8-flash, gemini-3.7-flash, gemini-3.6-flash, gemini-3.5-flash, gemini-3.5-flash-lite, gemini-3.1-flash-lite, gemini-3.1-flash-lite-preview, gemini-3-flash-preview, gemini-2.5-flash, gemini-2.5-flash-lite, gemini-flash-latest, gemini-omni-1.1-flash, gemini-flash-lite-latest, gemini-omni-flash-preview
+Modell-Problem -> gemini-3.8-flash: Fehler 429: {
+  "error": {
+    "code": 429,
+    "message": "You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota ex
+Tageskontingent dieses Modells aufgebraucht, naechstes Modell.
+Modell-Problem -> gemini-3.7-flash: Fehler 429: {
+  "error": {
+    "code": 429,
+    "message": "You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota ex
+Tageskontingent dieses Modells aufgebraucht, naechstes Modell.
+Modell-Problem -> gemini-3.6-flash: Fehler 429: {
+  "error": {
+    "code": 429,
+    "message": "You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota ex
+Tageskontingent dieses Modells aufgebraucht, naechstes Modell.
+Modell-Problem -> gemini-3.5-flash: Fehler 429: {
+  "error": {
+    "code": 429,
+    "message": "You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota ex
+Tageskontingent dieses Modells aufgebraucht, naechstes Modell.
+Modell: gemini-3.5-flash-lite
+Auswahl durch das Modell: 11
+Neues Foto: File:CVS Pharmacy - Storefront (50836368758).jpg -> assets/magazin/cvs-health-q3-2026-aufspaltung-prognose-foto.jpg
