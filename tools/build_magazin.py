@@ -405,7 +405,8 @@ def logo_html(p):
         return (f'<div class="titlerow"><img class="hlogo combo" src="../../{esc(lf)}" alt="" style="height:64px;width:auto;border:0;background:none;padding:0;object-fit:contain">'
                 f'<h1>{esc(p["title"])}</h1></div>\n')
     if lf and os.path.exists(lf):
-        return (f'<div class="titlerow"><img class="hlogo{" dark" if logo_is_light(lf) else ""}" src="../../{esc(lf)}" alt="" width="56" height="56">'
+        bgc = re.sub(r"[^#0-9A-Za-z]", "", str(p.get("story_logo_bg", "")))
+        return (f'<div class="titlerow"><img class="hlogo{" dark" if (logo_is_light(lf) and not bgc) else ""}" src="../../{esc(lf)}" alt="" width="56" height="56"{f" style=background:{bgc}" if bgc else ""}>'
                 f'<h1>{esc(p["title"])}</h1></div>\n')
     sym = re.sub(r"[^A-Za-z0-9.\-]", "", p.get("logo_symbol", "")); dom = re.sub(r"[^a-z0-9.\-]", "", p.get("logo_domain", "").lower())
     fav = (f"https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https://{dom}&size=128") if dom else ""
@@ -654,8 +655,9 @@ def card_logo(x, pre):
     if lf and os.path.exists(lf) and os.path.basename(lf).startswith("combo-"):
         return (f'<span class="mclogo combo" style="position:absolute;left:6px;top:6px;display:block;line-height:0;width:auto;height:auto;padding:0;background:none;box-shadow:none;border-radius:0"><img src="{pre}{esc(lf)}" alt="" height="64" loading="lazy" style="display:block;height:64px;width:auto;max-width:none"></span>')
     if lf and os.path.exists(lf):
-        dark = logo_is_light(lf)
-        return (f'<span class="mclogo{" dark" if dark else ""}" style="{base}padding:6px;background:{"#14202b" if dark else "#fff"}">'
+        bgc = re.sub(r"[^#0-9A-Za-z]", "", str(x.get("story_logo_bg", "")))
+        dark = logo_is_light(lf) and not bgc
+        return (f'<span class="mclogo{" dark" if dark else ""}" style="{base}padding:6px;background:{bgc or ("#14202b" if dark else "#fff")}">'
                 f'<img src="{pre}{esc(lf)}" alt="" width="40" height="40" loading="lazy" style="display:block;max-width:100%;max-height:100%;object-fit:contain"></span>')
     name = re.sub(r"[^A-Za-z0-9]", "", x.get("title", "?")) or "?"
     return f'<span class="mclogo mcmono" style="{base}background:#2f9e5b;color:#fff;font-weight:800;font-size:24px">{esc(name[0].upper())}</span>'
