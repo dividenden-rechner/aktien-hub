@@ -11,4 +11,3 @@ html.no-intro #intro{display:none}
 @keyframes intro-slide{to{transform:translateX(0)}}
 @keyframes intro-out{to{opacity:0;visibility:hidden}}
 @media(max-width:420px){#intro img{width:64px;height:64px}#intro .nm b{font-size:17px;padding-left:9px}}
-@media(prefers-reduced-motion:reduce){#intro{display:none}}
