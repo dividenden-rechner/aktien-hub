@@ -11,7 +11,8 @@
     var el = document.createElement("div"); el.id = "intro"; el.setAttribute("aria-hidden", "true");
     el.innerHTML = '<div class="in"><img src="' + root + 'assets/logo-clean.png" alt="" width="92" height="92"><span class="nm"><b>Dividenden-Rechner <i>Aktien-Hub</i></b></span></div>';
     document.body.insertBefore(el, document.body.firstChild);
-    function fin() { try { sessionStorage.setItem("introSeen", "1"); } catch (e) {} if (el.parentNode) el.parentNode.removeChild(el); if (st.parentNode) st.parentNode.removeChild(st); }
+    var pre = document.getElementById("intro-pre"); if (pre) pre.remove();
+    function fin() { var q = document.getElementById("intro-pre"); if (q) q.remove(); try { sessionStorage.setItem("introSeen", "1"); } catch (e) {} if (el.parentNode) el.parentNode.removeChild(el); if (st.parentNode) st.parentNode.removeChild(st); }
     el.addEventListener("click", fin);
     el.addEventListener("animationend", function (e) { if (e.animationName === "intro-out") fin(); });
     setTimeout(fin, 4500);
