@@ -8,13 +8,18 @@ category: Quartalszahlen
 quelle_url: https://corporate.mcdonalds.com/content/dam/sites/corp/nfl/pdf/MCD%20Q326%20-%20Exhibit%2099.1.pdf
 quelle_name: "McDonald's Corporation, Pressemitteilung zum dritten Quartal 2026 (Exhibit 99.1) vom 4. November 2026"
 logo_name: "McDonald's Corporation"
-logo_symbol: MCD
-logo_domain: mcdonalds.com
-logo_file: assets/logos/mcd.png
 story_image: assets/magazin/mcdonalds-q3-2026-quartalszahlen-f1.png
 story_portrait: assets/magazin/chris-kempczinski-mcdonalds.png
 story_quote_by: "Chris Kempczinski | CEO McDonald's"
 story_text: "McDonald's setzt im dritten Quartal 7,2 Mrd. USD um (+1 %) und verdient 2,5 Mrd. USD (+9 %). Das Betriebsergebnis steigt um 7 % auf 3,6 Mrd. USD, das bereinigte Ergebnis je Aktie um 11 % auf 3,57 USD. Das Wachstum kommt aus Franchisegebühren und dem Auslandsgeschäft, während die Umsätze in den USA um 0,2 % sinken und das Wachstum weltweit auf 1,5 % nach 3,6 % im Vorjahr abflaut. Kempczinski sieht im Verlauf des Quartals eine Besserung, nachdem McDonald's bei den Preisen nachgelegt hat. Die Quartalsdividende steigt um 4 % auf 1,93 USD je Aktie."
+logo_symbol: MCD
+logo_domain: mcdonalds.com
+image: assets/magazin/mcdonalds-q3-2026-quartalszahlen-foto.jpg
+image_alt: "Foto zu McDonald's Corporation: McDonald’s restaurant in Walsrode, Lower Saxony, Germany. View of the modern restaurant building with outdoor seating area and the Golden Arches on a sunny day. The photograph shows the branch located"
+image_credit: "Foto: Steffen Mokosch / Wikimedia Commons, CC BY-SA 3.0"
+image_source: https://commons.wikimedia.org/wiki/File:McDonald%27s_Walsrode_exterior_2026.jpg
+image_artist_url: 
+logo_file: assets/logos/mcd.png
 ---
 <!-- PRÜFEN: Die Pressemitteilung (PDF) konnte nur als Text gelesen werden, nicht als Seitenbild. Die beiden Tabellen im Artikel (f1, f2) sind eigene Darstellungen mit den Zahlen aus Seite 2 der Mitteilung. Bitte mit dem Original abgleichen. Original-Folien oder Seitenausschnitte bei Bedarf nachreichen. -->
 <!-- PRÜFEN: Es liegt kein Kursbild vor (Yahoo-Screenshot nachreichen). Die Story läuft bis dahin ohne Kursbild. -->

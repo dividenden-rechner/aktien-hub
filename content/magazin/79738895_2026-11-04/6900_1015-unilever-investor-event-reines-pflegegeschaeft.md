@@ -13,13 +13,13 @@ story_chart: assets/magazin/unilever-investor-event-2026-kurs.png
 story_portrait: assets/magazin/fernando-fernandez-unilever.png
 story_quote_by: "Fernando Fernandez | CEO Unilever"
 story_text: "Unilever wird nach dem Verkauf des Eisgeschäfts und der geplanten Abgabe der Lebensmittel an McCormick ein reiner Pflegekonzern aus Beauty, Personal Care und Home Care. Bis Ende 2029 sollen 1 Mrd. Euro eingespart werden, vor allem Kosten, die durch den Umbau übrig bleiben. Für 2027 peilt Unilever 4 bis 6 % Umsatzwachstum an, davon mindestens 2 % aus mehr Absatz. Das Management wird neu aufgestellt, der Chef für Nordamerika kommt von außen. Offen bleibt, ob die Lebensmittel-Transaktion wie geplant bis spätestens Mitte 2027 abgeschlossen wird. Konzernchef Fernando Fernandez will vor allem durch mehr verkaufte Mengen wachsen."
-logo_symbol: ULVR.L
-logo_domain: unilever.com
 image: https://images.unsplash.com/photo-1776105609708-3d8908ab4dc2?ixid=M3wxMTE3OTgzfDB8MXxzZWFyY2h8M3x8cGVyc29uYWwlMjBjYXJlJTIwcHJvZHVjdHMlMjBzaGVsZnxlbnwxfDB8fHwxNzkzNzgzNTk5fDA&ixlib=rb-4.1.0&w=1600&h=900&fit=crop&crop=entropy&q=80&fm=jpg
 image_alt: "Foto zu Unilever PLC: Shelves stocked with rows of hair care products"
 image_credit: "Foto: FS Cut & Color auf Unsplash"
 image_source: https://unsplash.com/photos/shelves-stocked-with-rows-of-hair-care-products-PL1WRIJOQuQ?utm_source=dividenden-rechner&utm_medium=referral
 image_artist_url: https://unsplash.com/@fscutandcolorofficial?utm_source=dividenden-rechner&utm_medium=referral
+logo_symbol: ULVR.L
+logo_domain: unilever.com
 logo_file: assets/logos/ulvr-l.png
 ---
 <!-- PRÜFEN: Es liegt nur die Pressemitteilung vom 03.11.2026 (Vorabmeldung) vor, nicht die Präsentation des Investor Events am 04.11. (8:30 Uhr Ostküste, 14:30 Uhr deutscher Zeit). Folien, Marge und Prognose zum Gewinn fehlen deshalb. Bitte nach dem Event Folien nachreichen. -->

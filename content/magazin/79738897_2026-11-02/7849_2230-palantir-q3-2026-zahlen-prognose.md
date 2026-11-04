@@ -11,11 +11,11 @@ logo_name: "Palantir Technologies"
 story_image: assets/magazin/palantir-q3-2026-zahlen-prognose-folie.png
 logo_symbol: PLTR
 logo_domain: palantir.com
-image: https://images.unsplash.com/photo-1580795478949-1b81005b91ba?ixid=M3wxMTE3OTgzfDB8MXxzZWFyY2h8Mnx8b3BlcmF0aW9ucyUyMGNlbnRlciUyMG1vbml0b3JzfGVufDF8MHx8fDE3OTM3NDE1NzB8MA&ixlib=rb-4.1.0&w=1600&h=900&fit=crop&crop=entropy&q=80&fm=jpg
-image_alt: "Foto zu Palantir Technologies: The Centers for Disease Control and Prevention (CDC) Emergency Operations Center (EOC) is where highly trained experts monitor information, prepare for public health events, and gather in the event of"
-image_credit: "Foto: CDC auf Unsplash"
-image_source: https://unsplash.com/photos/woman-in-black-polo-shirt-using-black-laptop-computer-S8cFStFmRsg?utm_source=dividenden-rechner&utm_medium=referral
-image_artist_url: https://unsplash.com/@cdc?utm_source=dividenden-rechner&utm_medium=referral
+image: assets/magazin/palantir-q3-2026-zahlen-prognose-foto.jpg
+image_alt: "Foto zu Palantir Technologies: A bank of monitors in the control room for the Wendelstein 7-X stellarator at the Max Planck Institute for Plasma Physics. The screens show a variety of real-time diagnostic data, including graphs of "
+image_credit: "Foto: Siarhei Besarab / Wikimedia Commons, CC BY-SA 4.0"
+image_source: https://commons.wikimedia.org/wiki/File:Diagnostic_monitors_in_the_control_room_of_Wendelstein_7-X.jpg
+image_artist_url: 
 logo_file: assets/logos/pltr.png
 ---
 <!-- PRÜFEN: Alle Zahlen stammen aus der Unternehmenspräsentation „Q3 2026 Business Update“. Eigene Rechnungen (kenntlich gemacht): Quartalsumsatz im vierten Quartal gegenüber dem dritten (+15 %), Anteil Aktienvergütung. Nicht geprüft: Kursreaktion, Analystenerwartungen und ob die Prognose gegenüber dem Vorquartal angehoben wurde, deshalb stehen sie nicht im Text. Palantir zahlt keine Dividende. -->
