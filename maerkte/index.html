@@ -21,7 +21,7 @@
 <meta name="twitter:image" content="https://dividenden-rechner.github.io/aktien-hub/assets/logo.png">
 <meta name="theme-color" content="#ffffff">
 <link rel="stylesheet" href="../assets/site.css?v=28252371">
-<style>.mk{max-width:520px;margin:0 auto}.mk h1{font-size:22px;margin:8px 0 2px}.mk .meta{font-size:12px;color:#6b7782;margin:0 0 6px}.mk table{width:100%;border-collapse:collapse;font-size:14px;font-variant-numeric:tabular-nums}.mk th{font-size:12px;font-weight:600;color:#6b7782;text-align:left;padding:4px 6px;border-bottom:2px solid #14202b}.mk td{padding:5px 6px;border-bottom:1px solid #e3e8ec;line-height:1.25}.mk .r{text-align:right;white-space:nowrap}.mk th.r{text-align:right}.mk .up{color:#1f8a4c;font-weight:600}.mk .down{color:#c0392b;font-weight:600}.mk .fn{font-size:11px;color:#8a97a3;margin:6px 0 0}</style>
+<style>.mk{max-width:520px;margin:0 auto}.mk h1{font-size:22px;margin:8px 0 2px}.mk .meta{font-size:12px;color:#6b7782;margin:0 0 6px}.mk table{width:100%;border-collapse:collapse;font-size:14px;font-variant-numeric:tabular-nums}.mk th{font-size:12px;font-weight:600;color:#6b7782;text-align:left;padding:4px 6px;border-bottom:2px solid #14202b}.mk td{padding:5px 6px;border-bottom:1px solid #e3e8ec;line-height:1.25}.mk .r{text-align:right;white-space:nowrap}.mk th.r{text-align:right}.mk .up{color:#1f8a4c;font-weight:600}.mk .down{color:#c0392b;font-weight:600}.mkbar{margin:0 0 8px;font-size:12px}.mkbtn{font:inherit;font-size:13px;font-weight:600;padding:6px 10px;border:1px solid #c8d0d6;background:#fff;border-radius:6px;cursor:pointer;color:#14202b}.mkbtn:hover{background:#f3f5f7}.mkbar .meta{display:block;margin-top:4px}.mk .fn{font-size:11px;color:#8a97a3;margin:6px 0 0}</style>
 <link rel="icon" href="../favicon.ico" sizes="any">
 <link rel="icon" type="image/png" sizes="32x32" href="../assets/favicon-32.png">
 <link rel="icon" type="image/png" sizes="192x192" href="../assets/favicon-192.png">
@@ -35,7 +35,8 @@
 <main class="wrap"><div class="mk">
 <h1>Märkte im Überblick</h1>
 <p class="meta">Stand: 04.11.2026, 19:57 Uhr · Quelle: Investing.com</p>
-<table><thead><tr><th>Name</th><th class="r">Letzter</th><th class="r">Veränd.</th></tr></thead>
+<p class="mkbar"><button type="button" id="mklive" class="mkbtn">Live-Kurse von TradingView laden</button> <span class="meta" id="mkinfo">Beim Laden verbindet sich dein Browser mit TradingView, siehe <a href="../datenschutz/">Datenschutz</a>.</span></p>
+<div id="mkwrap"><table><thead><tr><th>Name</th><th class="r">Letzter</th><th class="r">Veränd.</th></tr></thead>
 <tbody>
 <tr><td>Dow Jones Futures</td><td class="r">53,430,00</td><td class="r up">+2,96 %</td></tr>
 <tr><td>Nasdaq 100 Futures</td><td class="r">28,630,00</td><td class="r up">+1,15 %</td></tr>
@@ -54,8 +55,9 @@
 <tr><td>Kupfer</td><td class="r">6,4160</td><td class="r up">+0,22 %</td></tr>
 <tr><td>Rohöl WTI</td><td class="r">88,04</td><td class="r down">−8,38 %</td></tr>
 <tr><td>Rohöl Brent</td><td class="r">94,56</td><td class="r down">−8,73 %</td></tr>
-</tbody></table>
-<p class="fn">Stand zum genannten Zeitpunkt, ohne Gewähr, keine Anlageberatung. Futures und Indizes sind keine Kurse einzelner Aktien.</p>
+</tbody></table></div>
+<script>(function(){var b=document.getElementById('mklive'),w=document.getElementById('mkwrap'),i=document.getElementById('mkinfo'),C="{\"width\": \"100%\", \"height\": 669, \"symbolsGroups\": [{\"name\": \"M\u00e4rkte\", \"symbols\": [{\"name\": \"CBOT_MINI:YM1!\", \"displayName\": \"Dow Jones Futures\"}, {\"name\": \"CME_MINI:NQ1!\", \"displayName\": \"Nasdaq 100 Futures\"}, {\"name\": \"CME_MINI:ES1!\", \"displayName\": \"S&P 500 Futures\"}, {\"name\": \"TVC:RUT\", \"displayName\": \"Small Cap 2000\"}, {\"name\": \"CBOE:VIX\", \"displayName\": \"S&P 500 VIX\"}, {\"name\": \"EUREX:FDAX1!\", \"displayName\": \"DAX Futures\"}, {\"name\": \"TVC:CAC40\", \"displayName\": \"CAC 40\"}, {\"name\": \"OSE:NK2251!\", \"displayName\": \"Nikkei 225 Futures\"}, {\"name\": \"HKEX:HSI1!\", \"displayName\": \"Hang Seng Futures\"}, {\"name\": \"SGX:CN1!\", \"displayName\": \"China A50 Futures\"}, {\"name\": \"KRX:KOSPI\", \"displayName\": \"KOSPI\"}, {\"name\": \"FX:EURUSD\", \"displayName\": \"EUR/USD\"}, {\"name\": \"TVC:GOLD\", \"displayName\": \"Gold\"}, {\"name\": \"TVC:SILVER\", \"displayName\": \"Silber\"}, {\"name\": \"COMEX:HG1!\", \"displayName\": \"Kupfer\"}, {\"name\": \"NYMEX:CL1!\", \"displayName\": \"Roh\u00f6l WTI\"}, {\"name\": \"TVC:UKOIL\", \"displayName\": \"Roh\u00f6l Brent\"}]}], \"showSymbolLogo\": false, \"colorTheme\": \"light\", \"isTransparent\": false, \"locale\": \"de_DE\"}";function go(){var c=document.createElement('div');c.className='tradingview-widget-container';var g=document.createElement('div');g.className='tradingview-widget-container__widget';c.appendChild(g);var sc=document.createElement('script');sc.src='https://s3.tradingview.com/external-embedding/embed-widget-market-quotes.js';sc.async=true;sc.text=C;c.appendChild(sc);w.innerHTML='';w.appendChild(c);b.hidden=true;i.textContent='Live-Kurse von TradingView, teils zeitverzögert.'}b.onclick=function(){try{localStorage.setItem('tvok','1')}catch(e){}go()};try{if(localStorage.getItem('tvok')==='1')go()}catch(e){}})();</script>
+<p class="fn">Stand zum genannten Zeitpunkt, ohne Gewähr, keine Anlageberatung. Futures und Indizes sind keine Kurse einzelner Aktien. Die Live-Ansicht stammt von TradingView.</p>
 </div></main>
 <footer class="site-footer"><div class="wrap">
 <div class="cols">
