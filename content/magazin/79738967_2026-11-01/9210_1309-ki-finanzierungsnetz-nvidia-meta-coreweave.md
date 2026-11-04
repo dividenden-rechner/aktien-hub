@@ -6,11 +6,11 @@ author: "Redaktions-Team Dividenden-Rechner.de"
 author_bio: "Das Redaktions-Team von Dividenden-Rechner.de schreibt über Dividendenaktien, Kennzahlen und Steuerthemen für Privatanleger. Die Rechner und Auswertungen auf der Seite entstehen im eigenen Haus."
 category: Analyse
 kein_logo: ja
-image: https://images.unsplash.com/photo-1564457461758-8ff96e439e83?ixid=M3wxMTE3OTgzfDB8MXxzZWFyY2h8NXx8c2VydmVyJTIwcm9vbXxlbnwxfDB8fHwxNzkzNzQwOTkzfDA&ixlib=rb-4.1.0&w=1600&h=900&fit=crop&crop=entropy&q=80&fm=jpg
-image_alt: "Foto zu Die: Datacenter"
-image_credit: "Foto: Taylor Vick auf Unsplash"
-image_source: https://unsplash.com/photos/server-room-with-network-cabinets-aWslrFhs1w4?utm_source=dividenden-rechner&utm_medium=referral
-image_artist_url: https://unsplash.com/@tvick?utm_source=dividenden-rechner&utm_medium=referral
+image: https://images.unsplash.com/photo-1506399558188-acca6f8cbf41?ixid=M3wxMTE3OTgzfDB8MXxzZWFyY2h8Mnx8ZGF0YSUyMGNlbnRlciUyMHNlcnZlcnN8ZW58MXwwfHx8MTc5MzgyODU5NHww&ixlib=rb-4.1.0&w=1600&h=900&fit=crop&crop=entropy&q=80&fm=jpg
+image_alt: "Foto zu Die: Data Servers"
+image_credit: "Foto: imgix auf Unsplash"
+image_source: https://unsplash.com/photos/server-racks-in-data-center-klWUhr-wPJ8?utm_source=dividenden-rechner&utm_medium=referral
+image_artist_url: https://unsplash.com/@imgix?utm_source=dividenden-rechner&utm_medium=referral
 ---
 <!-- ÜBERARBEITET 01.11.2026 nach Leserkritik (zu einseitig und reißerisch): Gegenargumente ergänzt (knappe Rechenleistung, starke Bilanzen, Absicherung ist klein und üblich), Dotcom-Vergleich relativiert, Auslöser des Freitags eingeordnet. Zahlen zu Amazon-Nettogewinn und Cloud-Wachstum stammen aus unserem Marktüberblick vom 30.10. -->
 <!-- PRÜFEN: Thema und Reihenfolge nach einem Kommentar des Wall Street Journal (J. Mackintosh, 1.11.2026) und einer Netzwerk-Grafik von Dritten. Von dort wurden keine Zahlen übernommen. Die Grafik mit Marktwerten und weiteren Beträgen (z. B. Nvidia/OpenAI „bis zu 100 Mrd.“, Alphabet/Anthropic, Amazon/OpenAI) ist nicht belegt und wurde bewusst nicht verwendet. -->

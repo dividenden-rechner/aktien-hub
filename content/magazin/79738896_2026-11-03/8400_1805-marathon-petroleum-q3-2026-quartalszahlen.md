@@ -11,13 +11,13 @@ logo_name: "Marathon Petroleum Corporation"
 story_chart: assets/magazin/marathon-petroleum-q3-2026-quartalszahlen-kurs.png
 story_portrait: assets/magazin/maryann-mannen-marathon-petroleum.png
 story_quote_by: "Maryann T. Mannen | CEO Marathon Petroleum"
-logo_symbol: MPC
-logo_domain: marathonpetroleum.com
 image: assets/magazin/marathon-petroleum-q3-2026-quartalszahlen-foto.jpg
 image_alt: "Foto zu Marathon Petroleum Corporation: View of Louisiana from STS-132"
 image_credit: "Foto: NASA / Wikimedia Commons, Public domain"
 image_source: https://commons.wikimedia.org/wiki/File:Marathon_refinery_and_Garyville_Louisville.jpg
 image_artist_url: 
+logo_symbol: MPC
+logo_domain: marathonpetroleum.com
 logo_file: assets/logos/mpc.png
 ---
 <!-- PRÜFEN: Aufmacher ist ein NASA-Foto (gemeinfrei) der Marathon-Raffinerie Garyville von oben. Bild ist eher nüchtern, bei Bedarf gegen ein dramatischeres Raffineriefoto tauschen. -->
