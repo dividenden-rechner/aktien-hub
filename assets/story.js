@@ -134,14 +134,16 @@
     if (S.chart && S.portrait) {
       /* Kursbild links und Portrait rechts sitzen beide unten auf dem gruenen Balken; der Name steht klein links neben der Person */
       var kc = await load(S.chart), kp = await load(S.portrait), bar = 1866;
-      if (kc) { var kw2 = 880, kh2 = Math.round(kw2 * kc.height / kc.width); c.drawImage(kc, 24, bar - kh2, kw2, kh2); }
+      /* Kursbild komplett zeigen (mit Preisachse rechts): Breite so, dass es links vom Portrait endet */
+      var kpx0 = kp ? 1056 - Math.round(520 * kp.width / kp.height) : 1056;
+      if (kc) { var kw2 = Math.min(880, kpx0 - 24 + 20), kh2 = Math.round(kw2 * kc.height / kc.width); c.drawImage(kc, 24, bar - kh2, kw2, kh2); }
       if (kp) {
         var kph = 520, kpw = Math.round(kph * kp.width / kp.height), kpx = 1056 - kpw;
         c.drawImage(kp, kpx, bar - kph, kpw, kph);
         if (S.quote_by) {
           var nm = S.quote_by.split("|"); c.textAlign = "right"; c.textBaseline = "alphabetic"; c.fillStyle = "#111";
-          c.font = "700 30px " + F; c.fillText(nm[0].trim(), kpx - 14, bar - 62);
-          if (nm[1]) { c.font = "400 25px " + F; c.fillStyle = "#262626"; c.fillText(nm[1].trim(), kpx - 14, bar - 24); }
+          c.font = "700 30px " + F; c.fillText(nm[0].trim(), kpx - 14, bar - 380);
+          if (nm[1]) { c.font = "400 25px " + F; c.fillStyle = "#262626"; c.fillText(nm[1].trim(), kpx - 14, bar - 342); }
           c.textAlign = "left"; c.textBaseline = "top";
         }
       }
