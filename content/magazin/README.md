@@ -15,10 +15,11 @@ Datei anklicken, dann Stift-Symbol: Zeile `draft: true` löschen und speichern, 
 | 29.10.2026 22:42 | Amazon steigert Umsatz im dritten Quartal auf 201,9 Milliarden Dollar | [79738970_2026-10-29/7757_2242-amazon-q3-2026-zahlen.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/79738970_2026-10-29/7757_2242-amazon-q3-2026-zahlen.md) |
 | 29.10.2026 10:12 | Shell erzielt im dritten Quartal 10,8 Milliarden Dollar Gewinn | [79738970_2026-10-29/8987_1012-shell-q3-2026-ergebnisse.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/79738970_2026-10-29/8987_1012-shell-q3-2026-ergebnisse.md) |
 
-### Online (201)
+### Online (202)
 
 | Datum | Titel | Datei |
 |---|---|---|
+| 04.11.2026 08:58 | Novo Nordisk: GLP-1-Wachstum treibt Umsatz und bereinigten Gewinn im dritten Quartal | [79738895_2026-11-04/9141_0858-novo-nordisk-q3-2026-zahlen.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/79738895_2026-11-04/9141_0858-novo-nordisk-q3-2026-zahlen.md) |
 | 04.11.2026 08:00 | NTT wird ab 2027 offizieller Partner des McLaren Formel-1-Teams | [79738895_2026-11-04/9199_0800-ntt-mclaren-partnerschaft-f1-2027.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/79738895_2026-11-04/9199_0800-ntt-mclaren-partnerschaft-f1-2027.md) |
 | 04.11.2026 07:50 | Fresenius hebt Gewinnziel an: Kern-Ergebnis je Aktie +14 %, Helios-EBIT +21 % | [79738895_2026-11-04/7600_0750-fresenius-q3-2026-quartalszahlen.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/79738895_2026-11-04/7600_0750-fresenius-q3-2026-quartalszahlen.md) |
 | 04.11.2026 00:45 | Mosaic Company rutscht im dritten Quartal 2026 in die roten Zahlen | [79738895_2026-11-04/9954_0045-mosaic-q3-2026-zahlen.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/79738895_2026-11-04/9954_0045-mosaic-q3-2026-zahlen.md) |

@@ -13,6 +13,7 @@ image_artist_url: https://unsplash.com/@miinrad?utm_source=dividenden-rechner&ut
 logo_name: "Novo Nordisk A/S"
 logo_symbol: NVO
 logo_domain: novonordisk.com
+logo_file: assets/logos/nvo.png
 ---
 <!-- PRÜFEN: Aufmacherfoto ist automatisch von Unsplash gewaehlt: bitte pruefen, ob es zum Artikel passt (sonst image-Zeilen entfernen, dann entsteht ein Titelbild automatisch). -->
 <!-- PRÜFEN: Diese Werte wurden im Berichtstext nicht gefunden: Grafik Nettoumsatz: 79195; Grafik Betriebsergebnis: 23011; Grafik Bereinigter Nettoumsatz: 79195; Grafik Bereinigtes Betriebsergebnis: 31720 -->
