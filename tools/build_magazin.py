@@ -673,6 +673,68 @@ def mini_logo(x, pre):
     name = re.sub(r"[^A-Za-z0-9]", "", x.get("title", "?")) or "?"
     return f'<span class="arlogo mono">{esc(name[0].upper())}</span>'
 
+
+SEKTOR_DE = {"Industrials": "Industrie", "Health Care": "Gesundheit", "Information Technology": "Technologie", "Financials": "Finanzen",
+             "Consumer Staples": "Basiskonsum", "Consumer Discretionary": "Zyklischer Konsum", "Energy": "Energie", "Utilities": "Versorger",
+             "Materials": "Rohstoffe", "Real Estate": "Immobilien", "Communication Services": "Kommunikation"}
+_UNI = None
+
+
+def _universe():
+    global _UNI
+    if _UNI is None:
+        _UNI = {"sym": {}, "man": {}}
+        try:
+            for f in json.load(open("data/universe.json", encoding="utf-8")).get("firmen", []):
+                _UNI["sym"][f["sym"]] = (f.get("name", ""), SEKTOR_DE.get(f.get("sektor", ""), f.get("sektor", "")))
+        except Exception: pass
+        try: _UNI["man"] = json.load(open("data/branchen.json", encoding="utf-8")).get("branchen", {})
+        except Exception: pass
+    return _UNI
+
+
+def sym_norm(x):
+    s = re.sub(r"[^A-Za-z0-9.\-]", "", str(x.get("logo_symbol", "") or "")).upper()
+    return re.sub(r"\.NE$", "", s)
+
+
+def firma_of(x):
+    n = (x.get("logo_name") or "").strip()
+    if n: return n
+    return _universe()["sym"].get(sym_norm(x), ("", ""))[0]
+
+
+def branche_of(x):
+    """Branche (11 Sektoren, deutsch): Kopfbereich 'branche' hat Vorrang, sonst S&P-500-Liste, sonst data/branchen.json."""
+    if x.get("branche"): return str(x["branche"]).strip()
+    u = _universe(); s = sym_norm(x)
+    if s in u["man"]: return u["man"][s]
+    if s in u["sym"]: return u["sym"][s][1]
+    return ""
+
+
+def relevanz_of(x):
+    """Kurzes Relevanzmerkmal fuer Anleger. Kopfbereich 'relevanz' hat Vorrang ('keine' schaltet es ab), sonst einfache Regeln nur auf den Titel (lieber kein Merkmal als ein falsches)."""
+    if "relevanz" in x and str(x["relevanz"]).strip():
+        v = str(x["relevanz"]).strip(); return "" if v.lower() in ("keine", "nein", "-") else v
+    t = x.get("title", "").lower()
+    if re.search(r"dividende|ausschüttung", t):
+        if re.search(r"dividende[^.]{0,40}(erh(ö|oe)ht|hebt|angehoben|steigt|um \d)|erh(ö|oe)ht[^.]{0,40}dividende|dividendenerhöhung|erhöhung der dividende", t): return "Dividende erhöht"
+        if re.search(r"dividende[^.]{0,40}(senkt|gesenkt|kürzt|gekürzt|streicht|setzt aus|halbiert)|(senkt|kürzt|streicht)[^.]{0,40}dividende", t): return "Dividende gekürzt"
+    if re.search(r"prognose|ausblick|gewinnziel|jahresziel|guidance", t):
+        if re.search(r"(hebt|erhöht|angehoben|anheb|steigert)[^.]{0,60}(prognose|ausblick|gewinnziel|jahresziel)|(prognose|ausblick|gewinnziel|jahresziel)[^.]{0,40}(angehoben|erhöht|höher|angehoben)", t): return "Prognose angehoben"
+        if re.search(r"(senkt|kappt|reduziert|streicht)[^.]{0,60}(prognose|ausblick|gewinnziel|jahresziel)|(prognose|ausblick|gewinnziel|jahresziel)[^.]{0,40}(gesenkt|gekappt|reduziert|gestrichen)", t): return "Prognose gesenkt"
+    if re.search(r"aufspaltung|abspaltung|spin-off|übernimmt|übernahme|fusion|verkauft sein|verkauf des", t): return "Übernahme oder Umbau"
+    if re.search(r"aktienrückkauf|rückkaufprogramm", t): return "Aktienrückkauf"
+    if re.search(r"ceo-wechsel|neuer ceo|neue ceo|rücktritt|nachfolger", t): return "Führungswechsel"
+    return ""
+
+
+def rel_html(x):
+    r = relevanz_of(x)
+    return f' · <span class="rel">{esc(r)}</span>' if r else ""
+
+
 RUBRIKEN = [("Quartalszahlen & Berichte", {"Quartalszahlen", "Zahlen", "Jahresbericht", "Halbjahreszahlen"}), ("Dividende", {"Dividende"}), ("Aktienrückkauf", {"Aktienrückkauf"}),
             ("Übernahme", {"Übernahme"}), ("Management", {"Management"}), ("Ausblick", {"Ausblick"}), ("Recht & Regulierung", {"Recht & Regulierung"})]
 
@@ -684,24 +746,55 @@ def rubrik_of(cat):
 
 
 def rubrik_html(posts, pre):
-    """Filterleiste nach Rubrik (Schaltflaechen) mit eingebetteter Artikelliste; die Ergebnisse zeigt ein kleines Skript."""
+    """Filterleiste: Rubriken, Watchlist und Suchfeld (Firma oder Branche) als Textleiste; die Ergebnisse zeigt ein kleines Skript im Browser."""
     cnt = {}
     for x in posts: cnt[rubrik_of(x["category"])] = cnt.get(rubrik_of(x["category"]), 0) + 1
     names = [n for n, _ in RUBRIKEN if n in cnt] + (["Weitere Meldungen"] if "Weitere Meldungen" in cnt else [])
     data = [{"s": x["slug"], "t": x["title"], "r": rubrik_of(x["category"]), "c": x["category"], "d": de_dt_kurz(x["dt"]),
+             "f": firma_of(x), "y": sym_norm(x), "b": branche_of(x), "v": relevanz_of(x),
              "l": (pre + x["logo_file"]) if x.get("logo_file") and os.path.exists(x["logo_file"]) and not x["logo_file"].endswith(".mono.png") else ""} for x in posts]
     h = '<nav class="rubriken" aria-label="Nach Rubrik filtern"><button type="button" class="rb on" data-r="">Alle</button>'
-    h += "".join('<button type="button" class="rb" data-r="%s">%s</button>' % (esc(n), esc(n)) for n in names) + "</nav>\n"
-    h += '<div id="catres" hidden></div>\n<script type="application/json" id="magdata">%s</script>\n' % json.dumps(data, ensure_ascii=False).replace("</", "<\\/")
-    h += """<script>(function(){var d=JSON.parse(document.getElementById("magdata").textContent),bs=document.querySelectorAll(".rb"),res=document.getElementById("catres"),mn;
+    h += '<button type="button" class="rb" data-r="__rel">Wichtig für Anleger</button>'
+    h += "".join('<button type="button" class="rb" data-r="%s">%s</button>' % (esc(n), esc(n)) for n in names)
+    h += '<button type="button" class="rb" data-r="__wl">Watchlist</button>'
+    h += ('<span class="rsw"><button type="button" class="rb rlupe" id="rlupe" aria-label="Nach Firma oder Branche suchen" title="Suchen">'
+          '<svg viewBox="0 0 20 20" width="15" height="15" aria-hidden="true"><circle cx="8.5" cy="8.5" r="5.5" fill="none" stroke="currentColor" stroke-width="2"/><path d="M13 13l4.5 4.5" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg></button>'
+          '<input type="search" id="rsin" class="rsin" placeholder="Firma oder Branche" autocomplete="off" aria-label="Firma oder Branche"></span></nav>\n')
+    h += '<ul id="rsug" class="rsug" hidden></ul>\n<div id="catres" hidden></div>\n<script type="application/json" id="magdata">%s</script>\n' % json.dumps(data, ensure_ascii=False).replace("</", "<\\/")
+    h += """<script>(function(){var d=JSON.parse(document.getElementById("magdata").textContent),bs=document.querySelectorAll(".rb[data-r]"),res=document.getElementById("catres"),inp=document.getElementById("rsin"),lupe=document.getElementById("rlupe"),sug=document.getElementById("rsug"),mn;
 function e(s){return String(s).replace(/[&<>"]/g,function(c){return{"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]})}
-function go(r,push){mn=document.getElementById("magmain");Array.prototype.forEach.call(bs,function(b){b.classList.toggle("on",b.getAttribute("data-r")===r)});
-if(!r){res.hidden=true;mn.hidden=false;if(push)history.replaceState(null,"",location.pathname);return}
-var l=d.filter(function(x){return x.r===r});mn.hidden=true;res.hidden=false;
-res.innerHTML='<h2 class="mag-more-h">'+e(r)+'</h2><ul class="mag-archiv">'+l.map(function(x){return '<li><a href="'+e(x.s)+'/"><span class="arlogo">'+(x.l?'<img src="'+e(x.l)+'" alt="" loading="lazy">':e(x.t.charAt(0)))+'</span><span class="artx"><span class="kicker">'+e(x.c)+' · '+e(x.d)+'</span><strong>'+e(x.t)+'</strong></span></a></li>'}).join("")+'</ul>';
-if(push)history.replaceState(null,"","#rubrik="+encodeURIComponent(r))}
-Array.prototype.forEach.call(bs,function(b){b.onclick=function(){go(b.getAttribute("data-r"),true)}});
-document.addEventListener("DOMContentLoaded",function(){var m=/#rubrik=([^&]+)/.exec(location.hash);if(m)go(decodeURIComponent(m[1]),false)})})();</script>
+function norm(s){return String(s||"").toLowerCase().replace(/ä/g,"ae").replace(/ö/g,"oe").replace(/ü/g,"ue").replace(/ß/g,"ss").replace(/[^a-z0-9 ]/g,"")}
+function wl(){try{var a=JSON.parse(localStorage.getItem("wl")||"null");if(Array.isArray(a))return a.filter(function(x){return x&&x.s}).map(function(x){return String(x.s).toUpperCase()})}catch(_){}return[]}
+function show(h,l,msg){mn=document.getElementById("magmain");mn.hidden=true;res.hidden=false;
+res.innerHTML='<h2 class="mag-more-h">'+e(h)+'</h2>'+(l.length?'<ul class="mag-archiv">'+l.map(function(x){return '<li><a href="'+e(x.s)+'/"><span class="arlogo">'+(x.l?'<img src="'+e(x.l)+'" alt="" loading="lazy">':e(x.t.charAt(0)))+'</span><span class="artx"><span class="kicker">'+e(x.c)+' · '+e(x.d)+(x.v?' · <span class="rel">'+e(x.v)+'</span>':'')+'</span><strong>'+e(x.t)+'</strong></span></a></li>'}).join("")+'</ul>':'<p class="rmsg">'+(msg||"Keine Artikel gefunden.")+'</p>')}
+function mark(r){Array.prototype.forEach.call(bs,function(b){b.classList.toggle("on",b.getAttribute("data-r")===r)})}
+function hist(h){try{history.replaceState(null,"",h?h:location.pathname)}catch(_){}}
+function go(r,push){mark(r);sug.hidden=true;mn=document.getElementById("magmain");
+if(!r){res.hidden=true;mn.hidden=false;if(push)hist("");return}
+if(r==="__rel"){show("Wichtig für Anleger",d.filter(function(x){return x.v}),"");if(push)hist("#rel");return}
+if(r==="__wl"){var w=wl();if(!w.length){show("Meine Watchlist",[],'Deine Watchlist ist leer. Im <a href="../aktien-hub/">Aktien-Hub</a> kannst du Aktien mit ＋ speichern, dann erscheinen ihre Nachrichten hier.')}else{show("Meine Watchlist",d.filter(function(x){return x.y&&w.some(function(s){return s===x.y||s.split(".")[0]===x.y.split(".")[0]})}),"Zu deinen "+w.length+" Aktien gibt es noch keine Nachricht.")}if(push)hist("#watchlist");return}
+show(r,d.filter(function(x){return x.r===r}));if(push)hist("#rubrik="+encodeURIComponent(r))}
+function byFirma(n){mark("");show(n,d.filter(function(x){return x.f===n}));hist("#firma="+encodeURIComponent(n))}
+function byBranche(n){mark("");show("Branche: "+n,d.filter(function(x){return x.b===n}));hist("#branche="+encodeURIComponent(n))}
+function frei(q){var k=norm(q);if(!k)return;mark("");show("Suche: "+q,d.filter(function(x){return norm(x.f+" "+x.t+" "+x.b+" "+x.y).indexOf(k)>=0}));hist("")}
+var sel=-1,items=[];
+function suggest(){var k=norm(inp.value);if(!k){sug.hidden=true;items=[];return}
+var F={},B={};d.forEach(function(x){if(x.f)F[x.f]=(F[x.f]||0)+1;if(x.b)B[x.b]=(B[x.b]||0)+1});
+var fs=Object.keys(F).filter(function(n){return norm(n).indexOf(k)>=0}).sort(function(a,b){var pa=norm(a).indexOf(k)===0?0:1,pb=norm(b).indexOf(k)===0?0:1;return pa-pb||a.localeCompare(b)}).slice(0,6).map(function(n){return{t:"f",n:n,c:F[n]}});
+var bsx=Object.keys(B).filter(function(n){return norm(n).indexOf(k)>=0}).slice(0,3).map(function(n){return{t:"b",n:n,c:B[n]}});
+items=fs.concat(bsx);sel=-1;
+sug.innerHTML=items.map(function(x,i){return '<li data-i="'+i+'"><span class="rst">'+(x.t==="f"?"Firma":"Branche")+'</span> '+e(x.n)+' <span class="rsc">'+x.c+'</span></li>'}).join("");sug.hidden=!items.length}
+function pick(i){var x=items[i];if(!x)return;inp.value=x.n;sug.hidden=true;x.t==="f"?byFirma(x.n):byBranche(x.n)}
+lupe.onclick=function(){var open=document.querySelector(".rsw").classList.toggle("open");if(open){inp.focus()}else{inp.value="";sug.hidden=true}};
+inp.oninput=suggest;
+inp.onkeydown=function(ev){if(ev.key==="ArrowDown"){sel=Math.min(items.length-1,sel+1)}else if(ev.key==="ArrowUp"){sel=Math.max(0,sel-1)}else if(ev.key==="Enter"){ev.preventDefault();if(sel>=0)pick(sel);else if(items.length===1)pick(0);else{sug.hidden=true;frei(inp.value)}return}else if(ev.key==="Escape"){sug.hidden=true;return}else return;
+Array.prototype.forEach.call(sug.children,function(li,i){li.classList.toggle("on",i===sel)});ev.preventDefault()};
+sug.onmousedown=function(ev){var li=ev.target.closest("li");if(li)pick(+li.getAttribute("data-i"))};
+Array.prototype.forEach.call(bs,function(b){b.onclick=function(){inp.value="";go(b.getAttribute("data-r"),true)}});
+document.addEventListener("DOMContentLoaded",function(){var h=location.hash,m;
+if(m=/#rubrik=([^&]+)/.exec(h))go(decodeURIComponent(m[1]),false);else if(h==="#rel")go("__rel",false);else if(h==="#watchlist")go("__wl",false);
+else if(m=/#firma=([^&]+)/.exec(h)){document.querySelector(".rsw").classList.add("open");inp.value=decodeURIComponent(m[1]);byFirma(inp.value)}
+else if(m=/#branche=([^&]+)/.exec(h)){document.querySelector(".rsw").classList.add("open");inp.value=decodeURIComponent(m[1]);byBranche(inp.value)}})})();</script>
 """
     return h
 
@@ -728,7 +821,7 @@ def build_index(posts):
     side, grid, archiv = rest[:4], rest[4:12], rest[12:]
     o += rubrik_html(posts, pre) + '<div id="magmain">\n'
     o += (f'<section class="mag-top" aria-label="Thema des Tages"><a class="mag-hero" href="{hero["slug"]}/"><div class="mcwrap" style="position:relative;margin:0"><img class="mcover" src="{src(pre, hero["img"])}" alt="" width="1200" height="675" fetchpriority="high">{card_logo(hero, pre)}</div>'
-          f'<div class="mag-hero-body"><p class="kicker"><span class="mag-badge">Thema des Tages</span> {esc(hero["category"])} · {de_dt_kurz(hero["dt"])}</p><h2>{esc(hero["title"])}</h2><p class="mag-lead">{esc(hero["description"])}</p><span class="mag-more">Artikel lesen →</span></div></a>\n')
+          f'<div class="mag-hero-body"><p class="kicker"><span class="mag-badge">Thema des Tages</span> {esc(hero["category"])} · {de_dt_kurz(hero["dt"])}{rel_html(hero)}</p><h2>{esc(hero["title"])}</h2><p class="mag-lead">{esc(hero["description"])}</p><span class="mag-more">Artikel lesen →</span></div></a>\n')
     if side:
         o += '<aside class="mag-side" aria-label="Weitere aktuelle Artikel"><h2>Außerdem aktuell</h2><ul>\n'
         for x in side:
@@ -738,7 +831,7 @@ def build_index(posts):
     if kurz_posts:
         o += '<h2 class="mag-more-h">Kurzmeldungen</h2>\n<ul class="mag-archiv mag-kurz">\n'
         for x in kurz_posts[:16]:
-            o += (f'<li><a href="{x["slug"]}/">{mini_logo(x, pre)}<span class="artx"><span class="kicker">{esc(x["category"])} · {de_dt_kurz(x["dt"])}</span>'
+            o += (f'<li><a href="{x["slug"]}/">{mini_logo(x, pre)}<span class="artx"><span class="kicker">{esc(x["category"])} · {de_dt_kurz(x["dt"])}{rel_html(x)}</span>'
                   f'<strong>{esc(x["title"])}</strong></span></a></li>\n')
         o += '</ul>\n'
     if grid:
@@ -750,7 +843,7 @@ def build_index(posts):
     if archiv:
         o += '<h2 class="mag-more-h">Älter</h2>\n<ul class="mag-archiv">\n'
         for x in archiv:
-            o += (f'<li><a href="{x["slug"]}/">{mini_logo(x, pre)}<span class="artx"><span class="kicker">{esc(x["category"])} · {de_dt_kurz(x["dt"])}</span>'
+            o += (f'<li><a href="{x["slug"]}/">{mini_logo(x, pre)}<span class="artx"><span class="kicker">{esc(x["category"])} · {de_dt_kurz(x["dt"])}{rel_html(x)}</span>'
                   f'<strong>{esc(x["title"])}</strong></span></a></li>\n')
         o += '</ul>\n'
     o += '</div>\n'
