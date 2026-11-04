@@ -53,7 +53,7 @@
       function pill(px, py) {
         c.font = "700 34px " + F; var w = c.measureText(tag).width + 40; c.fillStyle = "rgba(0,0,0,.72)"; rr(c, px, py, w, 56, 28); c.fill(); c.fillStyle = "#fff"; c.fillText(tag, px + 20, py + 11);
       }
-      if (photo && fit) {
+      if ((photo && fit) || S.para) {
         /* Folie/Grafik: Logo und Kennung ueber dem Bild, damit nichts davon verdeckt wird */
         sz = S.para ? 150 : 104;
         if (draw && logo) plaque(60, y);
@@ -71,9 +71,9 @@
             var kw = k ? c.measureText(k + " ").width : 0; c.font = (S.para ? "700 " : "400 ") + hf + "px " + F; c.fillStyle = S.para ? D : "#262626"; c.fillText(v, hx + kw, hy + n * hh);
           });
         }
-        if (logo || tag) y += (logo ? sz : 44) + 38;
+        if (logo || tag || hl.length) y += ((logo || hl.length) ? sz : 44) + 38;
         drawTitle();
-        drawPhoto();
+        if (photo) drawPhoto();
       } else if (photo) {
         if (draw && logo) plaque(60 + 24, 232 + 24);
         if (draw && tag) pill(60 + 24, 232 + ph - 80);
@@ -86,7 +86,7 @@
       if (!(photo && fit)) drawTitle();
       if (lns.length || pts.length) {
         /* Kasten "Kurz gesagt" wie im Artikel: heller Untergrund, Kennzahlen mit fettem Stichwort, nummerierte Punkte */
-        var bx = 60, bw = 960, ix = 100, iw = 892, by0 = y, tc = "#262626", bare = !!(photo && fit); if (bare) { ix = 60; iw = 960; lns = []; }
+        var bx = 60, bw = 960, ix = 100, iw = 892, by0 = y, tc = "#262626", bare = !!((photo && fit) || S.para); if (bare) { ix = 60; iw = 960; lns = []; }
         function kv(t, x, w, fsz, num, doDraw, yy) {
           var i = t.indexOf(":"), k = (i > 0 && i < 30) ? t.slice(0, i + 1) : "", v = k ? t.slice(i + 1).trim() : t;
           c.font = "700 " + fsz + "px " + F; var kw = k ? c.measureText(k + " ").width : 0;

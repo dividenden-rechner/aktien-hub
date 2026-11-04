@@ -534,6 +534,8 @@ def share_html(p, url, img):
     if p.get("story_text"):
         # Fliesstext statt drei Punkten und ohne Headline (Vorlage der Redaktion, 03.11.2026)
         story["text"] = re.sub(r" (%|USD|Mrd\.|Mio\.)", "\u00a0\\1", p["story_text"].strip()); story["para"] = True; story["title"] = ""
+        if not p.get("story_image"):
+            story["img"] = ""
     if p.get("typ") == "kurz":
         # Kurzmeldung: kein Kasten mit Kennzahlen, daher der Einleitungstext als Story-Text; ohne eigenes Foto bleibt das Bildfeld weg
         story["text"] = kurz_story_text(p.get("body_md", ""))
