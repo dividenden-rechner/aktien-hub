@@ -18,7 +18,8 @@ logo_file: assets/logos/novo-b-co.png
 ---
 <!-- PRÜFEN: Es liegt keine Präsentation vor. Zahlen stammen aus dem Wortlaut der Pressemitteilung (Company Announcement Nr. 65/2026, 4. November 2026) in zwei Nachdrucken. Folienausschnitt für die Story bitte nachreichen. -->
 <!-- PRÜFEN: Aufmacherfoto fehlt noch, die Fotoanfrage (Wegovy/Injektionspen, Produktion) ist angelegt, der Bot ergänzt es. -->
-<!-- PRÜFEN: Nicht in meinen Quellen: Nettogewinn, Gewinn je Aktie, Umsatz je Segment (Adipositas/Diabetes), Free Cashflow, frühere Prognosespanne. Deshalb stehen sie nicht im Text. Bitte aus Bericht ergänzen. -->
+<!-- PRÜFEN: Dividende, Ausschüttungsquote, Nettogewinn und Ergebnis je Aktie 2025 und der Rückkauf stammen aus dem Geschäftsbericht 2025 (Dividendenpolitik, Kennzahlen). Betrag der Zwischendividende August 2026 fehlt. -->
+<!-- PRÜFEN: Nicht in meinen Quellen: Nettogewinn Q3, Gewinn je Aktie, Umsatz je Segment (Adipositas/Diabetes), Free Cashflow, frühere Prognosespanne. Deshalb stehen sie nicht im Text. Bitte aus Bericht ergänzen. -->
 <!-- PRÜFEN: Berichteter Umsatz für 9 Monate (254,5 Mrd. DKK) weicht stark vom bereinigten (227,7 Mrd. DKK) ab. Grund steht nicht in meinen Quellen, deshalb bewusst nur bereinigte Zahlen als Haupt-Kennzahl. -->
 <!-- PRÜFEN: Kursangabe (283,10 DKK, +4,79 % am Mittwoch 09:09 Uhr, 5 Tage +8,74 %) stammt aus dem eigenen Yahoo-Finance-Screenshot vom 04.11.2026. Nutzungsbedingungen von Yahoo prüfen. Foto von Mike Doustdar (Name in der Pressemitteilung: Doustdar): Nutzungsrecht prüfen. -->
 
@@ -49,6 +50,10 @@ Für **CagriSema** meldet Novo in einer Studie 21 Prozent Gewichtsverlust nach 6
     „Wir haben ein stärker als erwartetes drittes Quartal geliefert."
 
     <span class="zitatquelle">Aus dem Englischen übersetzt, aus der Pressemitteilung. Foto: Novo Nordisk</span>
+
+## Dividende und Rückkäufe
+
+Für Dividendenanleger lohnt der Blick auf die Ausschüttung. Novo zahlt für 2025 insgesamt **11,70 DKK je Aktie**: 3,75 DKK Zwischendividende im August 2025 und 7,95 DKK Schlussdividende im März 2026. Das sind 2,6 Prozent mehr als die 11,40 DKK für 2024, die Ausschüttungsquote liegt bei 50,7 Prozent des Nettogewinns (2024: 50,2 Prozent, Durchschnitt der Pharmabranche 58,9 Prozent). Der Nettogewinn 2025 lag bei 102,4 Mrd. DKK (+1 %), das Ergebnis je Aktie bei 23,03 DKK. Für 2026 hat Novo zudem einen Aktienrückkauf von bis zu 15 Mrd. DKK über zwölf Monate angekündigt. Eine Zwischendividende für 2026 hatte das Unternehmen für August in Aussicht gestellt, die Höhe nennt der Geschäftsbericht nicht.
 
 ## Ausblick und Einordnung
 
