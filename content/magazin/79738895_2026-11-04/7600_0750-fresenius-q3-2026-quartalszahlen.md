@@ -11,6 +11,7 @@ logo_name: "Fresenius SE & Co. KGaA"
 logo_symbol: FRE.DE
 logo_domain: fresenius.com
 story_text: "Fresenius wächst organisch um 5 %, der Umsatz steigt auf 5,8 Mrd. Euro. Das Kern-Ergebnis legt um 15 % auf 403 Mio. Euro zu, und der Konzern hebt sein Ziel für das Ergebnis je Aktie an. Treiber ist Helios: Das EBIT der Kliniksparte steigt um 21 %, in Deutschland hilft ein Zuschlag auf Rechnungen gesetzlich Versicherter, der Ende Oktober ausgelaufen ist. Bei Kabi wachsen Biopharma (+29 %) und MedTech, das klassische Pharmageschäft bremst: Das EBIT dort sinkt währungsbereinigt um 10 %. Der operative Cashflow fällt um 17 %, der freie Cashflow steigt dagegen deutlich. Konzernchef Michael Sen spricht von einem starken Quartal."
+logo_file: assets/logos/fre-de.png
 ---
 <!-- PRÜFEN: Es liegt keine Präsentation und kein Foto vor. Zahlen stammen aus dem Wortlaut der EQS-Pressemitteilung vom 04.11.2026, 06:45 Uhr (zwei Nachdruck-Quellen abgeglichen). Folien und CEO-Foto (Michael Sen) bitte nachreichen, dann kommen Folienausschnitt, Kursbild und Freisteller in die Story. -->
 <!-- PRÜFEN: Aufmacherfoto fehlt noch, die Fotoanfrage (Klinik/Infusion) ist angelegt, der Bot ergänzt es. -->
