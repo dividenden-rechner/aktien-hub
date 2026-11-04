@@ -8,6 +8,7 @@ category: Ausblick
 quelle_url: https://www.unilever.com/investors/
 quelle_name: "Unilever PLC, Pressemitteilung vom 3. November 2026 zum Investor Event"
 logo_name: "Unilever PLC"
+story_image: assets/magazin/unilever-investor-event-reines-pflegegeschaeft-grafik.png
 story_chart: assets/magazin/unilever-investor-event-2026-kurs.png
 story_portrait: assets/magazin/fernando-fernandez-unilever.png
 story_quote_by: "Fernando Fernandez | CEO Unilever"
@@ -45,6 +46,9 @@ Unilever will künftig in drei Kategorien berichten: Beauty & Personal Care, Hom
 Bis Ende 2029 will Unilever **1 Mrd. Euro** durch Produktivität einsparen. Das Geld soll aus der Vereinfachung der Organisation, neu gestalteten Prozessen und Technologie kommen. Außerdem sollen Kosten wegfallen, die nach der Lebensmittel-Transaktion „übrig bleiben" (im Englischen „stranded costs"), also Aufwand, der bisher von der abgegebenen Sparte mitgetragen wurde.
 
 Das mittelfristige Ziel lautet: **4 bis 6 Prozent** jährliches zugrunde liegendes Umsatzwachstum, davon mindestens **2 Prozent** aus Absatzmengen, dazu eine „moderate" Verbesserung der operativen Marge. Unilever will damit zum oberen Drittel bei der Rendite für Aktionäre gehören. Für 2027 erwartet das Unternehmen Ergebnisse im Rahmen dieser Ziele.
+
+![Ziele und neues Modell von Unilever im Überblick](/assets/magazin/unilever-investor-event-reines-pflegegeschaeft-grafik.png)
+*Ziele und neues Modell im Überblick. Quelle: Unilever PLC, Pressemitteilung vom 3. November 2026. Eigene Darstellung.*
 
 ## Neues Modell und neue Köpfe
 
