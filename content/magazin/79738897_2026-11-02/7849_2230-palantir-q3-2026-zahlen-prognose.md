@@ -9,13 +9,13 @@ quelle_url: https://investors.palantir.com/
 quelle_name: "Palantir Technologies, Präsentation „Q3 2026 Business Update“"
 logo_name: "Palantir Technologies"
 story_image: assets/magazin/palantir-q3-2026-zahlen-prognose-folie.png
-logo_symbol: PLTR
-logo_domain: palantir.com
 image: assets/magazin/palantir-q3-2026-zahlen-prognose-foto.jpg
 image_alt: "Foto zu Palantir Technologies: A bank of monitors in the control room for the Wendelstein 7-X stellarator at the Max Planck Institute for Plasma Physics. The screens show a variety of real-time diagnostic data, including graphs of "
 image_credit: "Foto: Siarhei Besarab / Wikimedia Commons, CC BY-SA 4.0"
 image_source: https://commons.wikimedia.org/wiki/File:Diagnostic_monitors_in_the_control_room_of_Wendelstein_7-X.jpg
 image_artist_url: 
+logo_symbol: PLTR
+logo_domain: palantir.com
 logo_file: assets/logos/pltr.png
 ---
 <!-- PRÜFEN: Alle Zahlen stammen aus der Unternehmenspräsentation „Q3 2026 Business Update“. Eigene Rechnungen (kenntlich gemacht): Quartalsumsatz im vierten Quartal gegenüber dem dritten (+15 %), Anteil Aktienvergütung. Nicht geprüft: Kursreaktion, Analystenerwartungen und ob die Prognose gegenüber dem Vorquartal angehoben wurde, deshalb stehen sie nicht im Text. Palantir zahlt keine Dividende. -->
