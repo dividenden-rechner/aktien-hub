@@ -200,29 +200,26 @@ body.tools article.wide>section.home-alle,body.tools article.wide>nav.calc-menu,
 <header id="hub-global-header"><div class="hub-nav-inner"><a class="hub-brand" href=""><img class="hub-logo" src="assets/logo.png" alt="" width="36" height="36"> <span class="hub-brand-name">Dividenden-Rechner <span>Aktien-Hub</span></span></a><nav class="hub-links" aria-label="Hauptmenü"><a href="rechner/" aria-current="page">Rechner</a><a href="aktien-hub/">Aktien</a><a href="depot/">Depot</a><a href="news/">News</a><a href="earnings/">Earnings</a><a href="screener/">Screener</a><a href="einfuehrung/">Einführung</a><a href="grundlagen/">Grundlagen</a><a href="fortgeschrittene/">Fortgeschrittene</a></nav></div></header>
 <script src="assets/navigation.js"></script>
 <script src="assets/logos.js"></script>
-<section class="hh" id="start"><div class="wrap">
-<div>
-<span class="kick">Ohne Anmeldung · direkt im Browser</span>
-<h1>Dividenden-Rechner: Was wird aus deiner Dividende in <em>20 Jahren?</em></h1>
-<p class="lead">Rechne in Sekunden aus, wie Dividenden, Sparrate und Zinseszins dein Depot wachsen lassen.</p>
-<ul class="trust"><li>Läuft in deinem Browser</li><li>Eingaben werden nicht gespeichert</li><li>Rechner, Aktien-Hub und Depot an einem Ort</li></ul>
-</div>
-<div class="hh-mini" role="group" aria-label="Schnellrechner">
-<h2>Schnellrechner Dividendenwachstum</h2>
-<div class="hh-f">
-<label>Startkapital (€)<input id="hk0" type="number" inputmode="decimal" value="10000" min="0" step="1000"></label>
-<label>Sparrate pro Monat (€)<input id="hsp" type="number" inputmode="decimal" value="300" min="0" step="50"></label>
-<label>Dividendenrendite (%)<input id="hdy" type="number" inputmode="decimal" value="3.5" min="0" step="0.1"></label>
-<label>Dividendenwachstum (%)<input id="hdg" type="number" inputmode="decimal" value="5" min="0" step="0.5"></label>
-<label class="rng">Laufzeit: <b id="hjl">20</b> Jahre<input id="hjy" type="range" min="5" max="40" value="20"></label>
-</div>
-<div class="hh-big"><div><small>Depotwert nach <span id="hj2">20</span> Jahren</small><b id="hrw">–</b></div><div><small>Dividende pro Jahr dann</small><b class="g" id="hrd">–</b></div></div>
-<svg class="hh-ch" id="hch" viewBox="0 0 440 170" role="img" aria-label="Depotwert über die Jahre"></svg>
-<div class="hh-leg"><span><i style="background:#cddcf8"></i>Depotwert</span><span><i style="background:#1f9d55"></i>eingezahlt</span></div>
-<a class="hh-btn" href="#rechner-alle">Alle Rechner und Einstellungen →</a>
-<p class="hh-fine">Szenario auf Basis deiner Annahmen, vor Steuern, keine Prognose. Dividenden werden reinvestiert, der Kurs wächst so schnell wie die Dividende.</p>
-</div>
+<section class="hb" id="start"><div class="hb-in">
+<div class="hb-tx"><h1>Dividenden-Rechner: Vermögensaufbau mit <em>Aktien und ETFs</em></h1>
+<p class="hb-lead">Rechnen am Handy, prüfen am Desktop. Dein Plan ist überall derselbe.</p>
+<p class="hb-cta"><a class="hb-btn" href="rechner/">Jetzt rechnen</a><a class="hb-lnk" href="aktien-hub/">Aktie prüfen →</a></p>
+<p class="hb-k">Kostenlos · ohne Anmeldung</p></div>
+<div class="hb-dev" aria-hidden="true"><div class="hb-lap"><img src="assets/start/rechner-desktop.jpg" alt="" width="1400" height="875"></div><div class="hb-ph"><img src="assets/start/rechner-handy.jpg" alt="" width="680" height="1360"></div></div>
 </div></section>
+<style>.hb{background:#fff}.hb-in{max-width:1100px;margin:auto;padding:36px 16px 28px;display:grid;gap:8px}
+.hb h1{font-size:clamp(30px,5.4vw,52px);line-height:1.08;margin:0 0 12px;letter-spacing:-.02em;color:#14231b;border:0;padding:0}
+.hb h1 em{font-style:normal;color:#1a7a45}
+.hb-lead{font-size:17px;color:#4a5a51;max-width:560px;margin:0 0 20px}
+.hb-cta{margin:0}.hb-btn{display:inline-block;background:#2e9e5b;color:#fff;font-weight:700;padding:13px 22px;border-radius:8px;text-decoration:none}
+.hb-lnk{margin-left:14px;color:#1a7a45;font-weight:700;text-decoration:none}
+.hb-k{font-size:13px;color:#6a7a71;margin:14px 0 0}
+.hb-dev{position:relative;height:330px;margin-top:10px}
+.hb-lap{position:absolute;left:0;top:30px;width:86%;aspect-ratio:16/10;background:#fff;border:8px solid #1d2a23;border-radius:12px 12px 4px 4px;box-shadow:0 20px 40px #0002;overflow:hidden}
+.hb-lap:after{content:"";position:absolute}
+.hb-ph{position:absolute;right:2%;top:0;width:34%;aspect-ratio:9/18;background:#fff;border:6px solid #1d2a23;border-radius:20px;overflow:hidden;transform:perspective(900px) rotateY(-22deg) rotateX(6deg) rotateZ(-5deg);box-shadow:10px 18px 30px #0003}
+.hb-lap img,.hb-ph img{display:block;width:100%;height:100%;object-fit:cover;object-position:center top}
+@media(min-width:760px){.hb-in{grid-template-columns:1.1fr 1fr;align-items:center;gap:40px;padding-top:60px}.hb-dev{height:420px}}</style>
 <script>
 (function(){var $=function(i){return document.getElementById(i)};if(!$("hk0"))return;
 function eur(v){return Math.round(v).toLocaleString("de-DE")+" €"}
