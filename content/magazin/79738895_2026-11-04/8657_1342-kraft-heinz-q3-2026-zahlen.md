@@ -1,5 +1,5 @@
 ---
-title: "Kraft Heinz: Schrumpfender Umsatz und sinkender Gewinn im dritten Quartal belasten"
+title: "Kraft Heinz: Umsatz −2 % auf 6,1 Mrd. USD, Gewinn −13 % – Prognose leicht angehoben"
 description: "Kraft Heinz verzeichnet im dritten Quartal 2026 einen Umsatz- und Gewinnrückgang. Der Konzern treibt jedoch den Umbau voran und hebt den Ausblick an."
 date: 2026-11-04 13:42
 author: "Redaktions-Team Dividenden-Rechner.de"
@@ -10,6 +10,11 @@ image_alt: "Foto zu The Kraft Heinz Company: A small bottle of Heinz Tomato Ketc
 image_credit: "Foto: Matt Popovich auf Unsplash"
 image_source: https://unsplash.com/photos/heinz-tomato-ketchup-bottle-7cO4Fquqqak?utm_source=dividenden-rechner&utm_medium=referral
 image_artist_url: https://unsplash.com/@mattpopovich?utm_source=dividenden-rechner&utm_medium=referral
+story_image: assets/magazin/kraft-heinz-q3-2026-zahlen-f1.png
+story_chart: assets/magazin/kraft-heinz-q3-2026-zahlen-kurs.png
+story_portrait: assets/magazin/steve-cahillane-kraft-heinz.png
+story_quote_by: "Steve Cahillane | CEO Kraft Heinz"
+story_text: "Kraft Heinz setzt im dritten Quartal 6,1 Mrd. USD um, 2 % weniger als im Vorjahr, der Nettogewinn fällt um 13 % auf 536 Mio. USD. Das Geschäft in Nordamerika schrumpft um 3,4 %, vor allem weil weniger Ware verkauft wird, in Europa und den entwickelten Märkten Asiens und des Pazifiks sind es 5,6 % weniger. Gegen den Trend wachsen die Schwellenländer organisch um 15,6 %. In den ersten neun Monaten fließen 2,4 Mrd. USD freier Cashflow, 1,4 Mrd. USD gehen als Dividende an die Aktionäre, Aktien kauft der Konzern nicht zurück. Die untere Spanne der Prognose für das organische Wachstum hebt das Management an. CEO Steve Cahillane sieht den Umbauplan im Zeitplan."
 logo_name: "The Kraft Heinz Company"
 logo_symbol: KHC
 logo_file: assets/logos/khc.png
@@ -27,7 +32,7 @@ logo_file: assets/logos/khc.png
     2. **Kapitalverwendung:** Das Unternehmen zahlte im Jahresverlauf 1,4 Mrd. USD in Form von Dividenden an die Aktionäre aus und tätigte keine Aktienrückkäufe.
     3. **Ausblick und Risiken:** Der Konzern hebt die untere Spanne seiner Prognose für das organische Nettowachstum an, steht jedoch weiterhin unter Druck durch Inflation bei Beschaffung und Logistik sowie sinkende Volumina.
 
-## Kraft Heinz: Schrumfpender Umsatz und sinkender Gewinn im dritten Quartal belasten
+## Kraft Heinz im dritten Quartal: weniger Umsatz, weniger Gewinn, Ausblick leicht höher
 
 Im dritten Quartal 2026 zeigt sich bei The Kraft Heinz Company ein durchmischtes Bild. Neben der Auswertung des Hauptberichts flossen auch die Einblicke aus der separat veröffentlichten Geschäftspräsentation in diese Analyse ein, die Details zu den geplanten Investitionen und der strategischen Ausrichtung liefert. Der Konzern kämpft in wichtigen Märkten mit rückläufigen Volumina, treibt aber parallel den Umbau und gezielte Investitionen in Marken und Vertrieb voran.
 
@@ -41,7 +46,13 @@ Im abgelaufenen Quartal bis zum 26. September 2026 sank der Nettoumsatz des Lebe
 ![Nettoumsatz nach Regionen im 3. Quartal 2026](/assets/magazin/kraft-heinz-q3-2026-zahlen-f1.png)
 *Nettoumsatz nach Regionen im 3. Quartal 2026. Quelle: The Kraft Heinz Company, Quartalszahlen vom 2026-11-04, S. 2 · [Original](https://ir.kraftheinzcompany.com/media/document/4da1f969-7485-48b1-99a1-6732690250a4/assets/EX_99.1_-_ER_Q3_2026_vFinal.pdf?disposition=inline) · [Unterlage 2](https://ir.kraftheinzcompany.com/media/document/a1827369-0616-435c-b026-c748df9916c5/assets/3Q26_KHC_Business_Update_vFinal2.pdf?disposition=inline). Ausschnitt nur zugeschnitten, sonst unverändert.*
 
-Die regionalen Trends verlaufen sehr unterschiedlich. Während Nordamerika als größter Markt einen Umsatzrückgang auf 4,5 Mrd. USD (−3,4 %) verzeichnete und Europa sowie Pacific Developed Markets ebenfalls schwächelten (Umsatz von 910,0 Mio. USD, −5,6 %), glänzten die Emerging Markets mit einem kräftigen Umsatzsprung auf 720,0 Mio. USD (+13,8 %, organisch +15,6 %). Konzernchef Steve Cahillane betonte die Fortschritte beim Umbauplan: „Our 2026 operating plan to turn around the U.S. business and accelerate growth internationally is on track.“
+Die regionalen Trends verlaufen sehr unterschiedlich. Während Nordamerika als größter Markt einen Umsatzrückgang auf 4,5 Mrd. USD (−3,4 %) verzeichnete und Europa sowie Pacific Developed Markets ebenfalls schwächelten (Umsatz von 910,0 Mio. USD, −5,6 %), glänzten die Emerging Markets mit einem kräftigen Umsatzsprung auf 720,0 Mio. USD (+13,8 %, organisch +15,6 %). Konzernchef Steve Cahillane betonte die Fortschritte beim Umbauplan.
+
+!!! zitat "Steve Cahillane, CEO von Kraft Heinz"
+    ![Steve Cahillane, CEO von Kraft Heinz](/assets/magazin/steve-cahillane-kraft-heinz.png){: .zitatfoto }
+    „Unser Betriebsplan 2026, um das US-Geschäft zu drehen und das internationale Wachstum zu beschleunigen, liegt im Zeitplan.“
+
+    <span class="zitatquelle">Aus dem Englischen übersetzt, aus der Pressemitteilung. Foto: Kraft Heinz</span>
 
 ### Dividende und Kapitalrückführung
 
