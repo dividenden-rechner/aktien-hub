@@ -8,6 +8,7 @@ category: Quartalszahlen
 quelle_url: https://www.novonordisk.com/investors.html
 quelle_name: "Novo Nordisk A/S, Finanzbericht und Pressemitteilung Q3/9M 2026 vom 4. November 2026"
 logo_name: "Novo Nordisk A/S"
+story_image: assets/magazin/novo-nordisk-q3-2026-quartalszahlen-f1.png
 story_chart: assets/magazin/novo-nordisk-q3-2026-quartalszahlen-kurs.png
 story_portrait: assets/magazin/mike-doustdar-novo-nordisk.png
 story_quote_by: "Mike Doustdar | CEO Novo Nordisk"
@@ -28,8 +29,10 @@ logo_file: assets/logos/novo-b-co.png
 <!-- PRÜFEN: Kursangabe (283,10 DKK, +4,79 % am Mittwoch 09:09 Uhr, 5 Tage +8,74 %) stammt aus dem eigenen Yahoo-Finance-Screenshot vom 04.11.2026. Nutzungsbedingungen von Yahoo prüfen. Foto von Mike Doustdar (Name in der Pressemitteilung: Doustdar): Nutzungsrecht prüfen. -->
 
 !!! kurz "Kurz gesagt"
-    **Umsatz:** 79,2 Mrd. DKK (+6 %)
-    **Gewinn (bereinigt):** 31,7 Mrd. DKK (+34 %)
+    **Umsatz:** 79,2 Mrd. DKK (+4 %)
+    **Gewinn (bereinigt):** 31,7 Mrd. DKK (+27 %)
+
+    *Veränderungen zum Vorjahr, währungsbereinigt.*
 
     1. **Treiber:** Mehr Absatz von GLP-1-Mitteln (Wegovy, Ozempic), vor allem gegen Fettleibigkeit. Die neue Wegovy-Pille setzt im ersten Quartal nach Marktstart 5,4 Mrd. DKK um.
     2. **Prognose:** Novo hebt die Jahresprognose an. Bereinigter Umsatz und bereinigter Betriebsgewinn sollen währungsbereinigt zwischen minus 2 % und plus 2 % wachsen.
@@ -40,6 +43,9 @@ logo_file: assets/logos/novo-b-co.png
 Novo Nordisk setzt im dritten Quartal 2026 **79,2 Mrd. DKK** um. Das sind 6 Prozent mehr als vor einem Jahr, währungsbereinigt 4 Prozent. Der **bereinigte Betriebsgewinn** steigt um 34 Prozent auf **31,7 Mrd. DKK**, währungsbereinigt um 27 Prozent. Der berichtete Betriebsgewinn liegt dagegen mit 23,0 Mrd. DKK um 3 Prozent unter dem Vorjahr (währungsbereinigt minus 9 Prozent).
 
 Der Unterschied hat zwei Gründe. Erstens bucht Novo im Quartal **Abschreibungen von 8,7 Mrd. DKK** ohne Zahlungsfluss: 4,6 Mrd. DKK auf den Wirkstoff Ziltivekimab und 4,1 Mrd. DKK, weil das Produktionsnetz verkleinert wird. Die bereinigten Zahlen rechnen das heraus. Zweitens enthielt das dritte Quartal 2025 Umbaukosten von 9 Mrd. DKK, das macht den Vergleich für 2026 leichter. Über neun Monate wächst der bereinigte Betriebsgewinn um 5 Prozent auf 98,0 Mrd. DKK, währungsbereinigt um 8 Prozent. Der bereinigte Umsatz liegt über neun Monate auf Vorjahresniveau (währungsbereinigt plus 2 Prozent).
+
+![Ausblick und Kennzahlen von Novo Nordisk zum dritten Quartal 2026](/assets/magazin/novo-nordisk-q3-2026-quartalszahlen-f1.png)
+*Ausblick und Kennzahlen zum dritten Quartal 2026. Quelle: Novo Nordisk, Finanzbericht Q3 2026. Ausschnitt nur zugeschnitten, sonst unverändert.*
 
 ## Wegovy-Pille und Marktanteile
 

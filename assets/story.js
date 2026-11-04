@@ -56,17 +56,20 @@
       if ((photo && fit) || S.para) {
         /* Folie/Grafik: Logo und Kennung ueber dem Bild, damit nichts davon verdeckt wird */
         sz = S.para ? 150 : 104;
-        if (draw && logo) plaque(60, y);
+        var lw = sz;
+        if (S.para && logo && !light(logo)) { lw = Math.min(260, logo.width * sz / logo.height); if (draw) c.drawImage(logo, 60, y, lw, logo.height * lw / logo.width); }
+        else if (draw && logo) plaque(60, y);
         if (draw && tag) { c.fillStyle = G; c.font = "700 40px " + F; c.fillText(tag, logo ? 60 + sz + 24 : 60, y + (logo ? sz / 2 - 20 : 0)); }
         /* Kennzahlen (Umsatz, Gewinn) rechts neben dem Logo */
         var hl = (S.lines || []).slice(0, 2).map(function (t) { return t.replace(/\s*\((?:\u2014|\u2013|-)\)\s*$/, ""); });
         if (draw && hl.length) {
-          var hx = logo ? 60 + sz + 32 : 60, hf = S.para ? 50 : 38, hh = Math.round(hf * 1.3), hy = y + (sz - hl.length * hh) / 2 + 2;
+          var hx = logo ? 60 + lw + 32 : 60, hf = S.para ? 50 : 38, hh = Math.round(hf * 1.3), hy = y + (sz - hl.length * hh) / 2 + 2;
           /* Schrift verkleinern, bis die laengste Zeile neben das Logo passt */
           hl.forEach(function (t) { var i = t.indexOf(":"), k = i > 0 ? t.slice(0, i + 1) : ""; while (hf > 26) { c.font = "700 " + hf + "px " + F; var kw0 = k ? c.measureText(k + " ").width : 0; c.font = (S.para ? "700 " : "400 ") + hf + "px " + F; if (hx + kw0 + c.measureText(i > 0 ? t.slice(i + 1).trim() : t).width <= 1020) break; hf -= 1; } });
           hh = Math.round(hf * 1.3); hy = y + (sz - hl.length * hh) / 2 + 2;
           hl.forEach(function (t, n) {
             var i = t.indexOf(":"), k = i > 0 ? t.slice(0, i + 1) : "", v = i > 0 ? t.slice(i + 1).trim() : t;
+            if (S.para) { c.font = "700 " + hf + "px " + F; c.fillStyle = D; c.textAlign = "right"; c.fillText(t, 1020, hy + n * hh); c.textAlign = "left"; return; }
             c.font = "700 " + hf + "px " + F; c.fillStyle = D; c.fillText(k, hx, hy + n * hh);
             var kw = k ? c.measureText(k + " ").width : 0; c.font = (S.para ? "700 " : "400 ") + hf + "px " + F; c.fillStyle = S.para ? D : "#262626"; c.fillText(v, hx + kw, hy + n * hh);
           });
@@ -136,11 +139,11 @@
       var kc = await load(S.chart), kp = await load(S.portrait), bar = 1866;
       /* Kursbild komplett zeigen (mit Preisachse rechts): Breite so, dass es links vom Portrait endet */
       var kpx0 = kp ? 1056 - Math.round(520 * kp.width / kp.height) : 1056;
-      if (kc) { var kw2 = Math.min(880, kpx0 - 24 + 20), kh2 = Math.round(kw2 * kc.height / kc.width); c.drawImage(kc, 24, bar - kh2, kw2, kh2); }
+      if (kc) { var kw2 = S.para ? Math.min(880, kpx0 - 24 + 130) : Math.min(880, kpx0 - 24 + 20), kh2 = Math.round(kw2 * kc.height / kc.width); c.drawImage(kc, 24, bar - kh2, kw2, kh2); }
       if (kp) {
         var kph = 520, kpw = Math.round(kph * kp.width / kp.height), kpx = 1056 - kpw;
         c.drawImage(kp, kpx, bar - kph, kpw, kph);
-        if (S.quote_by) {
+        if (S.quote_by && !S.para) {
           var nm = S.quote_by.split("|"); c.textAlign = "right"; c.textBaseline = "alphabetic"; c.fillStyle = "#111";
           c.font = "700 30px " + F; c.fillText(nm[0].trim(), kpx - 14, bar - 380);
           if (nm[1]) { c.font = "400 25px " + F; c.fillStyle = "#262626"; c.fillText(nm[1].trim(), kpx - 14, bar - 342); }
