@@ -1,4 +1,5 @@
-Foto-Kandidaten: 62 (Commons 30, Unsplash 32)
+Unsplash nicht erreichbar: HTTP Error 403: Forbidden
+Foto-Kandidaten: 38 (Commons 30, Unsplash 8)
   0: File:BalticServers data center.jpg | Server room of BalticServers
   1: File:CAMPUS - Military Data Center (52106762896).jpg | One of three new army data centers that has started operations. It's in the coun
   2: File:CERN data centre.jpg | CERN data centre from the outside
@@ -9,27 +10,43 @@ Foto-Kandidaten: 62 (Commons 30, Unsplash 32)
   7: File:Utah Data Center Panorama (cropped).jpg | The Utah Data Center located in Bluffdale, Utah.
   8: File:Virginia Tech - data center.jpg | Virginia Tech - data center
   9: File:Wikimedia Foundation Servers-8055 13.jpg | Wikimedia Foundation Servers
-  10: File:Wikimedia Foundation Servers-8055 15.jpg | Wikimedia Foundation Servers
-  11: File:139 Server Room 01.jpg | Indian Railway 139 Server Room.
-  12: File:312 Adelaide Street - 6th floor server room (5278379952).jpg | SOMA Networks, the previous occupant, worked on WiMax systems. They were evicted
-  13: File:3PAR SAN in the server room.jpg | The north side
-  14: File:A view of the server room at The National Archives.jpg | The server room at The National Archives
-  15: File:Argonite automatic fire suppression system server room.jpg | Argonite automatic fire suppression system - located within a server room facili
-  16: File:CERN Server 02.jpg | Server room in CERN (France / Switzerland)
-  17: File:CERN Server 03.jpg | Server room in CERN (Switzerland)
-  18: File:Centaur server room (2293424530).jpg | Centaur server room
-  19: File:DHL Netherlands local site computer room server racks (2) - IMG 3299.jpg | Pics of one of our local site computer rooms. I couldn't believe the way they Pi
-  20: File:NOIRLab HQ Server Racks (6V6A0375-CC).jpg | Server racks at the NOIRLab Headquarters Computer Server Room in Tucson, Arizona
-  21: File:PDC server room.jpg | Server room at Royal Institute of Technology Parallel Computer Center. Thick bla
-  22: File:Rajshahi College server room.jpg | Rajshahi College is situated in the city center, adjacent to Rajshahi Collegiate
-  23: File:Server Room (22397102849).jpg | Real Estate
-  24: File:Server room backup power generator (2) - IMG 0449.jpg | We got a new backup power generator. The idea is that it will feed both serverro
-  25: File:Server room backup power generator - IMG 0451.jpg | We got a new backup power generator. The idea is that it will feed both serverro
-  26: File:Server room with HP NetServers - IMG 0149.jpg | The second server room, this one is actually a proper server room.
-  27: File:UPS units in the main server room - IMG 0148.jpg | UPS units in the main server room
-  28: File:Anti ai data center sign 2.jpg | Anti-data-center sentiment in rural Kansas neighborhood
-  29: File:Business applications of AI - 2024 AI index.jpg | Tasks that are automated with AI by a significant proportion of companies, in 20
+  10: File:139 Server Room 01.jpg | Indian Railway 139 Server Room.
+  11: File:312 Adelaide Street - 6th floor server room (5278379952).jpg | SOMA Networks, the previous occupant, worked on WiMax systems. They were evicted
+  12: File:3PAR SAN in the server room.jpg | The north side
+  13: File:A view of the server room at The National Archives.jpg | The server room at The National Archives
+  14: File:Argonite automatic fire suppression system server room.jpg | Argonite automatic fire suppression system - located within a server room facili
+  15: File:CERN Server 02.jpg | Server room in CERN (France / Switzerland)
+  16: File:CERN Server 03.jpg | Server room in CERN (Switzerland)
+  17: File:Centaur server room (2293424530).jpg | Centaur server room
+  18: File:DHL Netherlands local site computer room server racks (2) - IMG 3299.jpg | Pics of one of our local site computer rooms. I couldn't believe the way they Pi
+  19: File:NOIRLab HQ Server Racks (6V6A0375-CC).jpg | Server racks at the NOIRLab Headquarters Computer Server Room in Tucson, Arizona
+  20: File:PDC server room.jpg | Server room at Royal Institute of Technology Parallel Computer Center. Thick bla
+  21: File:Rajshahi College server room.jpg | Rajshahi College is situated in the city center, adjacent to Rajshahi Collegiate
+  22: File:Server Room (22397102849).jpg | Real Estate
+  23: File:Server room backup power generator (2) - IMG 0449.jpg | We got a new backup power generator. The idea is that it will feed both serverro
+  24: File:Server room backup power generator - IMG 0451.jpg | We got a new backup power generator. The idea is that it will feed both serverro
+  25: File:Server room with HP NetServers - IMG 0149.jpg | The second server room, this one is actually a proper server room.
+  26: File:UPS units in the main server room - IMG 0148.jpg | UPS units in the main server room
+  27: File:Anti ai data center sign 2.jpg | Anti-data-center sentiment in rural Kansas neighborhood
+  28: File:Business applications of AI - 2024 AI index.jpg | Tasks that are automated with AI by a significant proportion of companies, in 20
+  29: File:ESO data center (eso-data-centre-9101).jpg | The ESO data center collects all the data ever produced by the VLT, most of the 
 Verfuegbare Flash-Modelle: gemini-3.8-flash, gemini-3.7-flash, gemini-3.6-flash, gemini-3.5-flash, gemini-3.5-flash-lite, gemini-3.1-flash-lite, gemini-3.1-flash-lite-preview, gemini-3-flash-preview, gemini-2.5-flash, gemini-2.5-flash-lite, gemini-flash-latest, gemini-omni-1.1-flash, gemini-flash-lite-latest, gemini-omni-flash-preview
+Modell-Problem -> gemini-3.8-flash: Fehler 503: {
+  "error": {
+    "code": 503,
+    "message": "This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.",
+    "status": "UNAVAILABLE"
+  }
+}
+
+Modell-Problem -> gemini-3.8-flash: Fehler 503: {
+  "error": {
+    "code": 503,
+    "message": "This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.",
+    "status": "UNAVAILABLE"
+  }
+}
+
 Modell-Problem -> gemini-3.8-flash: Fehler 429: {
   "error": {
     "code": 429,
@@ -40,6 +57,14 @@ Modell-Problem -> gemini-3.7-flash: Fehler 429: {
     "code": 429,
     "message": "You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota ex
 Tageskontingent dieses Modells aufgebraucht, naechstes Modell.
+Modell-Problem -> gemini-3.6-flash: Fehler 503: {
+  "error": {
+    "code": 503,
+    "message": "This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.",
+    "status": "UNAVAILABLE"
+  }
+}
+
 Modell-Problem -> gemini-3.6-flash: Fehler 429: {
   "error": {
     "code": 429,
@@ -53,7 +78,7 @@ Tageskontingent dieses Modells aufgebraucht, naechstes Modell.
 Modell: gemini-3.5-flash-lite
 Auswahl durch das Modell: 31
 Unsplash-Downloadmeldung fehlgeschlagen: HTTP Error 403: Forbidden
-Neues Foto: Unsplash klWUhr-wPJ8 -> https://images.unsplash.com/photo-1506399558188-acca6f8cbf41?ixid=M3wxMTE3OTgzfDB8MXxzZWFyY2h8Mnx8ZGF0YSUyMGNlbnRlciUyMHNlcnZlcnN8ZW58MXwwfHx8MTc5MzgyOTE3OXww&ixlib=rb-4.1.0&w=1600&h=900&fit=crop&crop=entropy&q=80&fm=jpg
+Neues Foto: Unsplash klWUhr-wPJ8 -> https://images.unsplash.com/photo-1506399558188-acca6f8cbf41?ixid=M3wxMTE3OTgzfDB8MXxzZWFyY2h8Mnx8ZGF0YSUyMGNlbnRlciUyMHNlcnZlcnN8ZW58MXwwfHx8MTc5Mzc4MDE1Nnww&ixlib=rb-4.1.0&w=1600&h=900&fit=crop&crop=entropy&q=80&fm=jpg
 Logo-Angaben gesetzt, fetch_logos holt das Logo neu.
 Foto-Kandidaten: 65 (Commons 26, Unsplash 39)
   0: File:A pharmaceutical laboratory with books and equipment on a lo Wellcome V0029790.jpg | A pharmaceutical laboratory with books and equipment on a long wooden table and 
@@ -83,8 +108,8 @@ Foto-Kandidaten: 65 (Commons 26, Unsplash 39)
   24: File:Yellow Pills.jpg | Production of drugs, yellow pills 1995
   25: File:Pharmacie in Paulista Avenue.jpg | Pharmacie in Paulista Avenue. In some countries, such as Brazil (photo) and Fran
   26: Unsplash HruSbX2a77M | Laboratory technician monitoring environment in lab
-  27: Unsplash y6zGvWKU6sE | A person in a lab coat and gloves working on a machine
-  28: Unsplash dvYKZyVLC9c | Laboratory technician inspecting environmental monitoring plate.
+  27: Unsplash dvYKZyVLC9c | Laboratory technician inspecting environmental monitoring plate.
+  28: Unsplash y6zGvWKU6sE | A person in a lab coat and gloves working on a machine
   29: Unsplash FcIrL0o71Dk | This photograph depicted a Centers for Disease Control and Prevention (CDC) scie
 Verfuegbare Flash-Modelle: gemini-3.8-flash, gemini-3.7-flash, gemini-3.6-flash, gemini-3.5-flash, gemini-3.5-flash-lite, gemini-3.1-flash-lite, gemini-3.1-flash-lite-preview, gemini-3-flash-preview, gemini-2.5-flash, gemini-2.5-flash-lite, gemini-flash-latest, gemini-omni-1.1-flash, gemini-flash-lite-latest, gemini-omni-flash-preview
 Modell-Problem -> gemini-3.8-flash: Fehler 429: {
@@ -115,14 +140,23 @@ Modell-Problem -> gemini-3.5-flash-lite: Fehler 503: {
   }
 }
 
+Modell-Problem -> gemini-3.5-flash-lite: Fehler 503: {
+  "error": {
+    "code": 503,
+    "message": "This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.",
+    "status": "UNAVAILABLE"
+  }
+}
+
 Modell: gemini-3.5-flash-lite
-Auswahl durch das Modell: 27
+Auswahl durch das Modell: 38
 Unsplash-Downloadmeldung fehlgeschlagen: HTTP Error 403: Forbidden
-Neues Foto: Unsplash y6zGvWKU6sE -> https://images.unsplash.com/photo-1732690233982-1d4567384ea1?ixid=M3wxMTE3OTgzfDB8MXxzZWFyY2h8Mnx8cGhhcm1hY2V1dGljYWwlMjBsYWJvcmF0b3J5fGVufDF8MHx8fDE3OTM3ODAzMjF8MA&ixlib=rb-4.1.0&w=1600&h=900&fit=crop&crop=entropy&q=80&fm=jpg
+Neues Foto: Unsplash tEFl8Wqd5f0 -> https://images.unsplash.com/photo-1707944745899-104a4b12d945?ixid=M3wxMTE3OTgzfDB8MXxzZWFyY2h8NXx8Y3lzdGljJTIwZmlicm9zaXMlMjByZXNlYXJjaHxlbnwxfDB8fHwxNzkzNzI1OTk1fDA&ixlib=rb-4.1.0&w=1600&h=900&fit=crop&crop=entropy&q=80&fm=jpg
 Logo-Angaben gesetzt, fetch_logos holt das Logo neu.
-Foto-Kandidaten: 28 (Commons 12, Unsplash 16)
+Unsplash nicht erreichbar: HTTP Error 403: Forbidden
+Foto-Kandidaten: 20 (Commons 12, Unsplash 8)
   0: File:Gene-editing Techniques in Plant Cells.jpg | Different gene editing methods used in plant cells
-  1: File:20251019 Replica DNA double helix model Berlin 04.jpg | Guanine in the Replica of the DNA double helix model by Watson and Crick in the 
+  1: File:20251019 Replica DNA double helix model Berlin 01.jpg | Adenine of the Replica of the DNA double helix model by Watson and Crick in the 
   2: File:DNA Double Helix (20468181866).jpg | Credit: National Human Genome Research Institute, National Institutes of Health.
   3: File:DNA Double Helix (4932403853).jpg | DNA Double Helix
   4: File:DNA Helix CPK.jpg | Part of a dna double helix showing the minor groove (Space-filling model)
@@ -141,14 +175,6 @@ Foto-Kandidaten: 28 (Commons 12, Unsplash 16)
   17: Unsplash uD98M9OhNmc | 3D rendering capturing the double helix structure of DNA against a blue backdrop
   18: Unsplash Mm1VIPqd0OA | 3D visualization
   19: Unsplash 2GEr4fLZt8A | 3D rendering capturing the double helix structure of DNA against a blue backdrop
-  20: Unsplash XknuBmnjbKg | Vaccine. Hands of a scientist, under a sterile hood, preparing the carcinoembryo
-  21: Unsplash oCLuFi9GYNA | DNA Genotyping and Sequencing. A technician works among a fleet of desktop genom
-  22: Unsplash rHfsPolwIgk | DNA Genotyping and Sequencing. A technician observing cells under a microscope a
-  23: Unsplash LxPrHCm8-TI | DNA Genotyping and Sequencing. A technician validates genetic variants identifie
-  24: Unsplash v7ibB19EUbQ | Chanelle Case Borden, Ph.D., a postdoctoral fellow in the National Cancer Instit
-  25: Unsplash GlZv6YgCUyM | DNA Genotyping and Sequencing. A technician works among a fleet of desktop genom
-  26: Unsplash fd0b-Bl4cFc | DNA Genotyping and Sequencing. Vials containing DNA samples from studies of the 
-  27: Unsplash Vb0GY3PWSSM | A female scientist in a laboratory looks through a microscope.
 Verfuegbare Flash-Modelle: gemini-3.8-flash, gemini-3.7-flash, gemini-3.6-flash, gemini-3.5-flash, gemini-3.5-flash-lite, gemini-3.1-flash-lite, gemini-3.1-flash-lite-preview, gemini-3-flash-preview, gemini-2.5-flash, gemini-2.5-flash-lite, gemini-flash-latest, gemini-omni-1.1-flash, gemini-flash-lite-latest, gemini-omni-flash-preview
 Modell-Problem -> gemini-3.8-flash: Fehler 429: {
   "error": {
@@ -171,12 +197,10 @@ Modell-Problem -> gemini-3.5-flash: Fehler 429: {
     "message": "You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota ex
 Tageskontingent dieses Modells aufgebraucht, naechstes Modell.
 Modell: gemini-3.5-flash-lite
-Auswahl durch das Modell: 21
-Unsplash-Downloadmeldung fehlgeschlagen: HTTP Error 403: Forbidden
-Neues Foto: Unsplash oCLuFi9GYNA -> https://images.unsplash.com/photo-1579154204601-01588f351e67?ixid=M3wxMTE3OTgzfDB8MXxzZWFyY2h8Mnx8Z2VuZXRpY3MlMjBsYWJvcmF0b3J5fGVufDF8MHx8fDE3OTM3ODA3MDV8MA&ixlib=rb-4.1.0&w=1600&h=900&fit=crop&crop=entropy&q=80&fm=jpg
+Auswahl durch das Modell: 6
+Neues Foto: File:Genetics Laboratory UMAR Puerto Escondido.jpg -> assets/magazin/crispr-therapeutics-q3-2026-casgevy-verlust-foto.jpg
 Logo-Angaben gesetzt, fetch_logos holt das Logo neu.
-Unsplash nicht erreichbar: HTTP Error 403: Forbidden
-Foto-Kandidaten: 30 (Commons 30, Unsplash 0)
+Foto-Kandidaten: 60 (Commons 30, Unsplash 30)
   0: File:Day-1-Big-Data-&-Analytics-Conference-0077 (26760110866).jpg | Day-1-Big-Data-&-Analytics-Conference-0077
   1: File:Gartner Benjamin Arnulf Data and Analytics Summit.jpg | Benjamin Arnulf at the Gartner Data and Analytics Summit in Orlando speaking abo
   2: File:Oracle Analytics Cloud Dashboard by Benjamin Arnulf presented by Larry Ellison.jpg | Oracle Analytics Cloud Dashboard by Benjamin Arnulf presented by Larry Ellison
@@ -194,7 +218,7 @@ Foto-Kandidaten: 30 (Commons 30, Unsplash 0)
   14: File:Alcator C-Mod graduate students in control room.jpg | MIT graduate students Erik Edlund and Rachael McDermott monitor the engineering 
   15: File:Control room, Callide Power Station, circa 1967.jpg | Control room, Callide Power Station, ciirca 1967. Callide A power station opened
   16: File:Control room..jpg | Interior of filtration control room.
-  17: File:Control room Vemork.jpg | It's a while since I had seen computers like this. I'm pretty sure that this set
+  17: File:Control room Johan Neerman.jpg | Control room Johan Neerman
   18: File:Control room cabinets.jpg | Control room cabinets at Point Tupper Generating Station, opened up, revealing l
   19: File:Control room circle.jpg | Control room circle in Vijayawada
   20: File:Control room of BESSY II, 2025-06-28.jpeg | Control room of BESSY II
@@ -229,8 +253,8 @@ Modell-Problem -> gemini-3.5-flash: Fehler 429: {
     "message": "You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota ex
 Tageskontingent dieses Modells aufgebraucht, naechstes Modell.
 Modell: gemini-3.5-flash-lite
-Auswahl durch das Modell: -1
-Kein passendes Foto gefunden, altes bleibt.
+Auswahl durch das Modell: 28
+Neues Foto: File:Real-time bus tracking control room in Lebanon.jpg -> assets/magazin/palantir-q3-2026-zahlen-prognose-foto.jpg
 Logo-Angaben gesetzt, fetch_logos holt das Logo neu.
 Unsplash nicht erreichbar: HTTP Error 403: Forbidden
 Foto-Kandidaten: 37 (Commons 29, Unsplash 8)
@@ -286,8 +310,9 @@ Modell-Problem -> gemini-3.5-flash: Fehler 429: {
     "message": "You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota ex
 Tageskontingent dieses Modells aufgebraucht, naechstes Modell.
 Modell: gemini-3.5-flash-lite
-Auswahl durch das Modell: 17
-Neues Foto: File:Marathon refinery and Garyville Louisville.jpg -> assets/magazin/marathon-petroleum-q3-2026-quartalszahlen-foto.jpg
+Auswahl durch das Modell: 36
+Unsplash-Downloadmeldung fehlgeschlagen: HTTP Error 403: Forbidden
+Neues Foto: Unsplash Wb4vcBqyGT8 -> https://images.unsplash.com/photo-1786532852011-443cba5dc9fe?ixid=M3wxMTE3OTgzfDB8MXxzZWFyY2h8OHx8b2lsJTIwcmVmaW5lcnklMjBhdCUyMG5pZ2h0fGVufDF8MHx8fDE3OTM3ODEwNDd8MA&ixlib=rb-4.1.0&w=1600&h=900&fit=crop&crop=entropy&q=80&fm=jpg
 Logo-Angaben gesetzt, fetch_logos holt das Logo neu.
 Unsplash nicht erreichbar: HTTP Error 403: Forbidden
 Foto-Kandidaten: 19 (Commons 19, Unsplash 0)
@@ -393,10 +418,25 @@ Auswahl durch das Modell: 15
 Neues Foto: File:Patient lying in bed in intensive care unit of hospital with apparatuses and hemodialysis machine.jpg -> assets/magazin/fresenius-q3-2026-quartalszahlen-foto.jpg
 Logo-Angaben gesetzt, fetch_logos holt das Logo neu.
 Unsplash nicht erreichbar: HTTP Error 403: Forbidden
-Foto-Kandidaten: 3 (Commons 3, Unsplash 0)
+Foto-Kandidaten: 18 (Commons 4, Unsplash 14)
   0: File:COVIran Barekat vaccine production 03.jpg | Production of COVIran Barekat vaccine, an Iranian COVID-19 vaccine, in a newly c
-  1: File:Novo Nordisk, Hillerød, 2024.jpg | Novo Nordisk, Hillerød, 2024
-  2: File:Novo Nordisk, byggeri i Hillerød 2024.jpg | Byggeri ved Novo Nordisk i Hillerød
+  1: File:COVIran Barekat vaccine production 06.jpg | Production of COVIran Barekat vaccine, an Iranian COVID-19 vaccine, in a newly c
+  2: File:Novo Nordisk, Hillerød, 2024.jpg | Novo Nordisk, Hillerød, 2024
+  3: File:Novo Nordisk, byggeri i Hillerød 2024.jpg | Byggeri ved Novo Nordisk i Hillerød
+  4: Unsplash J4HwEwZtIs8 | novolog insulin pen, 4mm bd nano needle with a drop of insulin coming out
+  5: Unsplash TzKc7FGaL7Y | Auto-Injector Pen for the treatment of Diabetes
+  6: Unsplash msQB97gUxY0 | Insulin pens on wooden background, close up
+  7: Unsplash gE4IuJO078g | Close up of a pen ball
+  8: Unsplash HKBGL6bjegY | Close-up of a pen tip against a blurred blue background
+  9: Unsplash 1SEbUPjlgrg | The surgeon/ physician signs my operative knee before knee replacement surgery a
+  10: Unsplash Nv7rzFJm43Y | Blue ink pen tip against a blurred purple background
+  11: Unsplash MlTXrdhYOdk | a close-up of a syringe
+  12: Unsplash NiXMv9iFN1c | Auto-Injector Pen for the treatment of Diabetes
+  13: Unsplash aLCcungJbrc | Auto-Injector Pen for the treatment of Diabetes
+  14: Unsplash S5y5jdRCCsk | Auto-Injector Pen for the treatment of Diabetes
+  15: Unsplash CQT9TjSVMPg | white branded gyro pen
+  16: Unsplash vEbgdrArfq8 | ZIMHI Naloxone
+  17: Unsplash pnRJ4RXgabw | McKesson 27g 1/2" 1cc syringe, individually wrapped
 Verfuegbare Flash-Modelle: gemini-3.8-flash, gemini-3.7-flash, gemini-3.6-flash, gemini-3.5-flash, gemini-3.5-flash-lite, gemini-3.1-flash-lite, gemini-3.1-flash-lite-preview, gemini-3-flash-preview, gemini-2.5-flash, gemini-2.5-flash-lite, gemini-flash-latest, gemini-omni-1.1-flash, gemini-flash-lite-latest, gemini-omni-flash-preview
 Modell-Problem -> gemini-3.8-flash: Fehler 429: {
   "error": {
@@ -419,17 +459,19 @@ Modell-Problem -> gemini-3.5-flash: Fehler 429: {
     "message": "You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota ex
 Tageskontingent dieses Modells aufgebraucht, naechstes Modell.
 Modell: gemini-3.5-flash-lite
-Auswahl durch das Modell: -1
-Kein passendes Foto gefunden, altes bleibt.
+Auswahl durch das Modell: 5
+Unsplash-Downloadmeldung fehlgeschlagen: HTTP Error 403: Forbidden
+Neues Foto: Unsplash TzKc7FGaL7Y -> https://images.unsplash.com/photo-1745939921744-ba8ef27940bf?ixid=M3wxMTE3OTgzfDB8MXxzZWFyY2h8Mnx8aW5qZWN0aW9uJTIwcGVuJTIwY2xvc2UlMjB1cHxlbnwxfDB8fHwxNzkzNzgxMTQ1fDA&ixlib=rb-4.1.0&w=1600&h=900&fit=crop&crop=entropy&q=80&fm=jpg
 Logo-Angaben gesetzt, fetch_logos holt das Logo neu.
 Unsplash nicht erreichbar: HTTP Error 403: Forbidden
-Foto-Kandidaten: 6 (Commons 6, Unsplash 0)
+Foto-Kandidaten: 7 (Commons 7, Unsplash 0)
   0: File:Antikalk 01.jpg | Anticalc/Decalcifier packaging from Germany, ingredients highlighted
-  1: File:Cleaning a VLT mirror (wallpaper).jpg | The 8.2m diameter main mirror of Antu, the first Unit Telescope of ESO's Very La
+  1: File:Beale Carpet Cleaner - Sarah Stierch.jpg | Beale Carpet Cleaner, Sonoma, California
   2: File:Gebruiksartikelen DSCF5070.jpg | Zicht op diverse gebruiksartikelen, een deel van het interieur, van het Museum d
   3: File:Kao products.JPG | A few Kao household cleaning products avaiable in Hong Kong.
   4: File:Kleine cilindrische koker van reinigingstabletten voor kunstgebit, opschrift “Ultradent” in wit en blauw, objectnr 79816.JPG | Objectgegevens Titel: Kleine cilindrische koker van reinigingstabletten voor kun
   5: File:Rechthoekig pak zeep- en wasmiddelmonsters, veelkleurig, objectnr 76619.JPG | Objectgegevens Titel: Rechthoekig pak zeep- en wasmiddelmonsters, veelkleurig Be
+  6: File:Truck mount steam carpet cleaner.JPG | Pro Carpet truck mount steam carpet cleaner, Fairway Trails Apartments, 228 S. H
 Verfuegbare Flash-Modelle: gemini-3.8-flash, gemini-3.7-flash, gemini-3.6-flash, gemini-3.5-flash, gemini-3.5-flash-lite, gemini-3.1-flash-lite, gemini-3.1-flash-lite-preview, gemini-3-flash-preview, gemini-2.5-flash, gemini-2.5-flash-lite, gemini-flash-latest, gemini-omni-1.1-flash, gemini-flash-lite-latest, gemini-omni-flash-preview
 Modell-Problem -> gemini-3.8-flash: Fehler 429: {
   "error": {
@@ -539,11 +581,11 @@ Foto-Kandidaten: 30 (Commons 30, Unsplash 0)
   22: File:A Bojangles fast food restaurant in Hiawassee, Georgia, United States 03.jpg | A Bojangles fast food restaurant in Hiawassee, Georgia, United States
   23: File:A Chick-fil-A fast food restaurant interior in Cornelia, Georgia 07.jpg | Interior of a Chick-fil-A fast-food restaurant in Cornelia , Habersham County, G
   24: File:A modern Burger King fast food restaurant in Ooltewah, Tennessee.jpg | A modern Burger King fast food restaurant in Ooltewah, Tennessee
-  25: File:Exterior of a modern Taco Bell fast food restaurant chain location in Murphy, North Carolina 01.jpg | Exterior of a modern Taco Bell fast food restaurant chain location in Murphy, No
-  26: File:Exterior of a modern Taco Bell fast food restaurant chain location in Murphy, North Carolina 02.jpg | Exterior of a modern Taco Bell fast food restaurant chain location in Murphy, No
-  27: File:Hardee's fast-food restaurant in Franklin, North Carolina.jpg | Hardee's fast-food restaurant in Franklin, North Carolina
-  28: File:Jack's Family Restaurants fast food chain location in Collinsville, Alabama 01.jpg | Jack's Family Restaurants fast food chain location in Collinsville, Alabama
-  29: File:Jack's Family Restaurants fast food chain location in Collinsville, Alabama 02.jpg | Jack's Family Restaurants fast food chain location in Collinsville, Alabama
+  25: File:Exterior of a modern Taco Bell fast food restaurant chain location in Murphy, North Carolina 02.jpg | Exterior of a modern Taco Bell fast food restaurant chain location in Murphy, No
+  26: File:Hardee's fast-food restaurant in Franklin, North Carolina.jpg | Hardee's fast-food restaurant in Franklin, North Carolina
+  27: File:Jack's Family Restaurants fast food chain location in Collinsville, Alabama 01.jpg | Jack's Family Restaurants fast food chain location in Collinsville, Alabama
+  28: File:Jack's Family Restaurants fast food chain location in Collinsville, Alabama 02.jpg | Jack's Family Restaurants fast food chain location in Collinsville, Alabama
+  29: File:Jack's Family Restaurants fast food chain location in Collinsville, Alabama 03.jpg | Jack's Family Restaurants fast food chain location in Collinsville, Alabama
 Verfuegbare Flash-Modelle: gemini-3.8-flash, gemini-3.7-flash, gemini-3.6-flash, gemini-3.5-flash, gemini-3.5-flash-lite, gemini-3.1-flash-lite, gemini-3.1-flash-lite-preview, gemini-3-flash-preview, gemini-2.5-flash, gemini-2.5-flash-lite, gemini-flash-latest, gemini-omni-1.1-flash, gemini-flash-lite-latest, gemini-omni-flash-preview
 Modell-Problem -> gemini-3.8-flash: Fehler 429: {
   "error": {
@@ -568,3 +610,51 @@ Tageskontingent dieses Modells aufgebraucht, naechstes Modell.
 Modell: gemini-3.5-flash-lite
 Auswahl durch das Modell: 9
 Neues Foto: File:McDonald's Walsrode exterior 2026.jpg -> assets/magazin/mcdonalds-q3-2026-quartalszahlen-foto.jpg
+Logo-Angaben gesetzt, fetch_logos holt das Logo neu.
+Unsplash nicht erreichbar: HTTP Error 403: Forbidden
+Foto-Kandidaten: 21 (Commons 21, Unsplash 0)
+  0: File:Clinical Chemistry Analyzer , Клинички биохемиски анализатор 1.jpg | Clinical Chemistry Analyzer
+  1: File:Clinical Chemistry Analyzer , Клинички биохемиски анализатор 2.jpg | Clinical Chemistry Analyzer
+  2: File:Clinical Chemistry Analyzer , Клинички биохемиски анализатор 3.jpg | Clinical Chemistry Analyzer are automated analyzer “Immulite” for many biochemic
+  3: File:Clinical Chemistry Analyzer , Клинички биохемиски анализатор 4.jpg | Clinical Chemistry Analyzer
+  4: File:Clinical Chemistry Analyzer , Клинички биохемиски анализатор 5.jpg | Clinical Chemistry Analyzer
+  5: File:Hospital Laboratory.JPG | Holy Rosary Hospital Laboratory, two technicians and analyzers: chemistry (on th
+  6: File:378th EMDS hosts Walking Blood Bank Pre-screening (9006794).jpg | U.S. Air Force Master Sgt. Jessica Bailey, 378th Expeditionary Medical Squadron 
+  7: File:378th EMDS hosts Walking Blood Bank Pre-screening (9006795).jpg | U.S. Air Force Tech. Sgt. Mary Valentine, 378th Expeditionary Medical Squadron m
+  8: File:378th EMDS hosts Walking Blood Bank Pre-screening (9006796).jpg | U.S. Air Force Tech. Sgt. Mary Valentine, left, 378th Expeditionary Medical Squa
+  9: File:423d MDS laboratory plays crucial role in maintaining readiness (8092248).jpg | Staff Sgt. Gisele Garcia, 423d Medical Squadron medical laboratory technician, p
+  10: File:5th Air Naval Gunfire Liaison Company hosts blood drive (10051282).jpg | U.S. Army Spc. Peter Pottorff, right, a medical laboratory technician with Armed
+  11: File:Blanchfield Army Community Hospital celebrates National Medical Laboratory Professional's Week 130422-A-DD678-007.jpg | Blanchfield Army Community Hospital commander Col. Paul R. Cordts and Spc. Jacob
+  12: File:Clinical Pathology Blood Testing Laboratory in Navi Mumbai, India.jpg | A documentative record of a clinical pathology and medical laboratory environmen
+  13: File:NABL Accredited Clinical Pathology Laboratory in Kharghar Navi Mumbai Diagnostic Services.jpg | Medical laboratory technician processing blood test samples in an NABL-accredite
+  14: File:NABL Accredited Pathology Lab and Diagnostic Centre in Kharghar, Navi Mumbai - Full Body Checkup, CBC, Thyroid Blood Test and Home Blood Collection.jpg | A medical technologist loads a blood sample tube into a laboratory centrifuge fo
+  15: File:Samples in a medical lab Hopital Douala Cameroun 27.jpg | This is an image with the theme " Health and Wellness in Africa " from:
+  16: File:US Navy 030905-N-5956C-001 Medical Laboratory Technician Erin Rotter, takes manual differentials of blood samples.jpg | Naval Air Station Whidbey Island, Oak Harbor, Wash. (Sep. 5, 2003) -- Medical La
+  17: File:Lab technician holds a tray of sealed test tubes in a clinical setting during work hours.jpg | A lab technician in a white coat is holding a tray of test tubes that are secure
+  18: File:NACA Technician Cleans a Ramjet in 8- by 6-Foot Supersonic Wind Tunnel (GRC-1950-C-25677).jpg | A technician at the National Advisory Committee for Aeronautics (NACA) Lewis Fli
+  19: File:Refining Innovation 160223-A-AP268-776.jpg | Spc. Jordan Smith, an Army medical lab specialist with the U.S. Army Institute o
+  20: File:Test tubes (1).jpg | Title Test Tubes Description A laboratory is back lit with a rack of test tubes 
+Verfuegbare Flash-Modelle: gemini-3.8-flash, gemini-3.7-flash, gemini-3.6-flash, gemini-3.5-flash, gemini-3.5-flash-lite, gemini-3.1-flash-lite, gemini-3.1-flash-lite-preview, gemini-3-flash-preview, gemini-2.5-flash, gemini-2.5-flash-lite, gemini-flash-latest, gemini-omni-1.1-flash, gemini-flash-lite-latest, gemini-omni-flash-preview
+Modell-Problem -> gemini-3.8-flash: Fehler 429: {
+  "error": {
+    "code": 429,
+    "message": "You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota ex
+Tageskontingent dieses Modells aufgebraucht, naechstes Modell.
+Modell-Problem -> gemini-3.7-flash: Fehler 429: {
+  "error": {
+    "code": 429,
+    "message": "You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota ex
+Tageskontingent dieses Modells aufgebraucht, naechstes Modell.
+Modell-Problem -> gemini-3.6-flash: Fehler 429: {
+  "error": {
+    "code": 429,
+    "message": "You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota ex
+Tageskontingent dieses Modells aufgebraucht, naechstes Modell.
+Modell-Problem -> gemini-3.5-flash: Fehler 429: {
+  "error": {
+    "code": 429,
+    "message": "You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota ex
+Tageskontingent dieses Modells aufgebraucht, naechstes Modell.
+Modell: gemini-3.5-flash-lite
+Auswahl durch das Modell: 2
+Neues Foto: File:Clinical Chemistry Analyzer , Клинички биохемиски анализатор 3.jpg -> assets/magazin/siemens-healthineers-olyrian-diagnostics-umbenennung-foto.jpg

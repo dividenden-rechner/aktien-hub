@@ -8,6 +8,11 @@ category: Unternehmensmeldungen
 logo_name: "Siemens Healthineers"
 logo_symbol: SHL.DE
 logo_domain: siemens-healthineers.com
+image: assets/magazin/siemens-healthineers-olyrian-diagnostics-umbenennung-foto.jpg
+image_alt: "Foto zu Siemens Healthineers: Clinical Chemistry Analyzer are automated analyzer “Immulite” for many biochemical parameters at the same time in biochemical laboratory."
+image_credit: "Foto: Делфина / Wikimedia Commons, CC BY-SA 4.0"
+image_source: https://commons.wikimedia.org/wiki/File:Clinical_Chemistry_Analyzer_,_%D0%9A%D0%BB%D0%B8%D0%BD%D0%B8%D1%87%D0%BA%D0%B8_%D0%B1%D0%B8%D0%BE%D1%85%D0%B5%D0%BC%D0%B8%D1%81%D0%BA%D0%B8_%D0%B0%D0%BD%D0%B0%D0%BB%D0%B8%D0%B7%D0%B0%D1%82%D0%BE%D1%80_3.jpg
+image_artist_url: 
 logo_file: assets/logos/shl-de.png
 ---
 <!-- PRÜFEN: Aufmacherfoto fehlt noch (Fotoanfrage in tools/asset.request). -->

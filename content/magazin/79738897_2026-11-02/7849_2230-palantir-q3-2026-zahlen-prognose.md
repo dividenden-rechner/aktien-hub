@@ -9,13 +9,13 @@ quelle_url: https://investors.palantir.com/
 quelle_name: "Palantir Technologies, Präsentation „Q3 2026 Business Update“"
 logo_name: "Palantir Technologies"
 story_image: assets/magazin/palantir-q3-2026-zahlen-prognose-folie.png
+logo_symbol: PLTR
+logo_domain: palantir.com
 image: assets/magazin/palantir-q3-2026-zahlen-prognose-foto.jpg
 image_alt: "Foto zu Palantir Technologies: A group of people in a control room monitoring a fleet management telematics system. The wall-sized display shows GPS-based tracking data and satellite imagery of vehicles in Beirut, Lebanon, along wi"
 image_credit: "Foto: UrusHyby / Wikimedia Commons, CC0"
 image_source: https://commons.wikimedia.org/wiki/File:Real-time_bus_tracking_control_room_in_Lebanon.jpg
 image_artist_url: 
-logo_symbol: PLTR
-logo_domain: palantir.com
 logo_file: assets/logos/pltr.png
 ---
 <!-- PRÜFEN: Alle Zahlen stammen aus der Unternehmenspräsentation „Q3 2026 Business Update“. Eigene Rechnungen (kenntlich gemacht): Quartalsumsatz im vierten Quartal gegenüber dem dritten (+15 %), Anteil Aktienvergütung. Nicht geprüft: Kursreaktion, Analystenerwartungen und ob die Prognose gegenüber dem Vorquartal angehoben wurde, deshalb stehen sie nicht im Text. Palantir zahlt keine Dividende. -->

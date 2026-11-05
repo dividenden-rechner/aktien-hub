@@ -13,11 +13,11 @@ story_portrait: assets/magazin/maryann-mannen-marathon-petroleum.png
 story_quote_by: "Maryann T. Mannen | CEO Marathon Petroleum"
 logo_symbol: MPC
 logo_domain: marathonpetroleum.com
-image: assets/magazin/marathon-petroleum-q3-2026-quartalszahlen-foto.jpg
-image_alt: "Foto zu Marathon Petroleum Corporation: View of Louisiana from STS-132"
-image_credit: "Foto: NASA / Wikimedia Commons, Public domain"
-image_source: https://commons.wikimedia.org/wiki/File:Marathon_refinery_and_Garyville_Louisville.jpg
-image_artist_url: 
+image: https://images.unsplash.com/photo-1786532852011-443cba5dc9fe?ixid=M3wxMTE3OTgzfDB8MXxzZWFyY2h8OHx8b2lsJTIwcmVmaW5lcnklMjBhdCUyMG5pZ2h0fGVufDF8MHx8fDE3OTM3ODEwNDd8MA&ixlib=rb-4.1.0&w=1600&h=900&fit=crop&crop=entropy&q=80&fm=jpg
+image_alt: "Foto zu Marathon Petroleum Corporation: Industrial refinery with storage tanks and metal pipes under a warm golden sky"
+image_credit: "Foto: Red Shuheart auf Unsplash"
+image_source: https://unsplash.com/photos/industrial-refinery-with-storage-tanks-Wb4vcBqyGT8?utm_source=dividenden-rechner&utm_medium=referral
+image_artist_url: https://unsplash.com/@mirrors_are_more_fun?utm_source=dividenden-rechner&utm_medium=referral
 logo_file: assets/logos/mpc.png
 ---
 <!-- PRÜFEN: Aufmacher ist ein NASA-Foto (gemeinfrei) der Marathon-Raffinerie Garyville von oben. Bild ist eher nüchtern, bei Bedarf gegen ein dramatischeres Raffineriefoto tauschen. -->
