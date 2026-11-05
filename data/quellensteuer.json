@@ -1,0 +1,269 @@
+{
+ "meta": {
+  "stand": "2026-11-05",
+  "quelle": "Länderseiten unter fortgeschrittene/quellensteuer/",
+  "erklaerung": "einbehalt = üblicher Abzug im Ausland (Prozent der Bruttodividende); abkommen = Satz nach Doppelbesteuerungsabkommen; anrechenbar = auf die deutsche Abgeltungsteuer anrechenbar; erstattbar = einbehalt minus anrechenbar, nur auf Antrag zurückholbar"
+ },
+ "laender": {
+  "deutschland": {
+   "name": "Deutschland",
+   "einbehalt": 0,
+   "abkommen": 0,
+   "anrechenbar": 0,
+   "erstattbar": 0,
+   "hinweis": "Kein Abzug im Ausland; es gilt nur die Abgeltungsteuer.",
+   "pruefen": "ok",
+   "seite": ""
+  },
+  "usa": {
+   "name": "USA",
+   "einbehalt": 15,
+   "abkommen": 15,
+   "anrechenbar": 15,
+   "erstattbar": 0,
+   "hinweis": "15 % gelten bei deutschen Brokern mit W-8BEN meist automatisch. Ohne Nachweis 30 % (15 Punkte nur per IRS-Erklärung zurückholbar).",
+   "pruefen": "ok",
+   "seite": "fortgeschrittene/quellensteuer/usa/"
+  },
+  "schweiz": {
+   "name": "Schweiz",
+   "einbehalt": 35,
+   "abkommen": 15,
+   "anrechenbar": 15,
+   "erstattbar": 20,
+   "hinweis": "35 % Verrechnungssteuer; 20 Prozentpunkte nur auf Antrag bei der ESTV.",
+   "pruefen": "ok",
+   "seite": "fortgeschrittene/quellensteuer/schweiz/"
+  },
+  "frankreich": {
+   "name": "Frankreich",
+   "einbehalt": 12.8,
+   "abkommen": 15,
+   "anrechenbar": 12.8,
+   "erstattbar": 0.0,
+   "hinweis": "Einbehalt je nach Bank 12,8 % oder 25 %; anrechenbar sind 12,8 %. Bei 25 % Einbehalt sind bis zu 12,2 Punkte erstattbar.",
+   "pruefen": "Bankabhängig, Alternativwert 25 %",
+   "seite": "fortgeschrittene/quellensteuer/frankreich/"
+  },
+  "australien": {
+   "name": "Australien",
+   "einbehalt": 30,
+   "abkommen": 15,
+   "anrechenbar": 15,
+   "erstattbar": 15,
+   "hinweis": "Nur für ungedeckte (unfranked) Dividenden. Gedeckte (franked) Dividenden: 0 %.",
+   "pruefen": "Sonderfall franked/unfranked",
+   "seite": "fortgeschrittene/quellensteuer/australien/"
+  },
+  "belgien": {
+   "name": "Belgien",
+   "einbehalt": 30,
+   "abkommen": 15,
+   "anrechenbar": 15,
+   "erstattbar": 15,
+   "hinweis": "30 % Précompte mobilier; 15 Punkte erstattbar.",
+   "pruefen": "ok",
+   "seite": "fortgeschrittene/quellensteuer/belgien/"
+  },
+  "china": {
+   "name": "China",
+   "einbehalt": 10,
+   "abkommen": 10,
+   "anrechenbar": 10,
+   "erstattbar": 0,
+   "hinweis": "Auch H-Aktien in Hongkong. Keine Erstattung.",
+   "pruefen": "ok",
+   "seite": "fortgeschrittene/quellensteuer/china/"
+  },
+  "daenemark": {
+   "name": "Dänemark",
+   "einbehalt": 27,
+   "abkommen": 15,
+   "anrechenbar": 15,
+   "erstattbar": 12,
+   "hinweis": "Anrechenbar mit 15 % angenommen (Abkommenssatz), Quelle nennt nur die Erstattung von 12 Punkten.",
+   "pruefen": "Anrechnung angenommen",
+   "seite": "fortgeschrittene/quellensteuer/daenemark/"
+  },
+  "finnland": {
+   "name": "Finnland",
+   "einbehalt": 35,
+   "abkommen": 15,
+   "anrechenbar": 15,
+   "erstattbar": 20,
+   "hinweis": "35 % bei Nominee-Verwahrung (Standard seit 2021).",
+   "pruefen": "ok",
+   "seite": "fortgeschrittene/quellensteuer/finnland/"
+  },
+  "grossbritannien": {
+   "name": "Großbritannien",
+   "einbehalt": 0,
+   "abkommen": 0,
+   "anrechenbar": 0,
+   "erstattbar": 0,
+   "hinweis": "Normale Dividenden 0 %. REIT-Ausschüttungen: Einkommensteuer, Satz nicht belegt.",
+   "pruefen": "REITs offen",
+   "seite": "fortgeschrittene/quellensteuer/grossbritannien/"
+  },
+  "hongkong": {
+   "name": "Hongkong",
+   "einbehalt": 0,
+   "abkommen": 0,
+   "anrechenbar": 0,
+   "erstattbar": 0,
+   "hinweis": "H-Aktien chinesischer Firmen: Einbehalt durch China (siehe China).",
+   "pruefen": "ok",
+   "seite": "fortgeschrittene/quellensteuer/hongkong/"
+  },
+  "indien": {
+   "name": "Indien",
+   "einbehalt": 21.84,
+   "abkommen": 10,
+   "anrechenbar": 10,
+   "erstattbar": 11.84,
+   "hinweis": "20 % plus Surcharge und Cess, bis 21,84 %; Abkommenssatz 10 %.",
+   "pruefen": "Anrechnung aus Abkommenssatz abgeleitet",
+   "seite": "fortgeschrittene/quellensteuer/indien/"
+  },
+  "indonesien": {
+   "name": "Indonesien",
+   "einbehalt": 20,
+   "abkommen": 15,
+   "anrechenbar": 15,
+   "erstattbar": 5,
+   "hinweis": "Niedrigerer Satz nur mit Certificate of Domicile vor dem Stichtag.",
+   "pruefen": "ok",
+   "seite": "fortgeschrittene/quellensteuer/indonesien/"
+  },
+  "irland": {
+   "name": "Irland",
+   "einbehalt": 25,
+   "abkommen": 0,
+   "anrechenbar": 0,
+   "erstattbar": 25,
+   "hinweis": "25 % DWT; für Privatpersonen mit EU-Wohnsitz meist vollständig erstattbar, deshalb in Deutschland meist nicht anrechenbar.",
+   "pruefen": "Erstattung 'meist vollständig'",
+   "seite": "fortgeschrittene/quellensteuer/irland/"
+  },
+  "italien": {
+   "name": "Italien",
+   "einbehalt": 26,
+   "abkommen": 15,
+   "anrechenbar": 15,
+   "erstattbar": 11,
+   "hinweis": "Für Privatanleger praktisch 15 %; 11 Punkte erstattbar.",
+   "pruefen": "ok",
+   "seite": "fortgeschrittene/quellensteuer/italien/"
+  },
+  "japan": {
+   "name": "Japan",
+   "einbehalt": 15.315,
+   "abkommen": 15,
+   "anrechenbar": 15,
+   "erstattbar": 0.315,
+   "hinweis": "REITs: Abkommen nicht anwendbar, keine Erstattung.",
+   "pruefen": "ok",
+   "seite": "fortgeschrittene/quellensteuer/japan/"
+  },
+  "kanada": {
+   "name": "Kanada",
+   "einbehalt": 25,
+   "abkommen": 15,
+   "anrechenbar": 15,
+   "erstattbar": 10,
+   "hinweis": "Trust-REITs und Income Trusts nicht reduzierbar.",
+   "pruefen": "ok",
+   "seite": "fortgeschrittene/quellensteuer/kanada/"
+  },
+  "luxemburg": {
+   "name": "Luxemburg",
+   "einbehalt": 15,
+   "abkommen": 15,
+   "anrechenbar": 15,
+   "erstattbar": 0,
+   "hinweis": "Keine Erstattung.",
+   "pruefen": "ok",
+   "seite": "fortgeschrittene/quellensteuer/luxemburg/"
+  },
+  "niederlande": {
+   "name": "Niederlande",
+   "einbehalt": 15,
+   "abkommen": 15,
+   "anrechenbar": 15,
+   "erstattbar": 0,
+   "hinweis": "Keine Differenz; Erstattung für Privatpersonen nicht vorgesehen.",
+   "pruefen": "ok",
+   "seite": "fortgeschrittene/quellensteuer/niederlande/"
+  },
+  "norwegen": {
+   "name": "Norwegen",
+   "einbehalt": 25,
+   "abkommen": 15,
+   "anrechenbar": 15,
+   "erstattbar": 10,
+   "hinweis": "Abkommenssatz laut BMF-Schreiben 2011 und Ratgebern.",
+   "pruefen": "Satz nicht offiziell belegt",
+   "seite": "fortgeschrittene/quellensteuer/norwegen/"
+  },
+  "oesterreich": {
+   "name": "Österreich",
+   "einbehalt": 27.5,
+   "abkommen": 15,
+   "anrechenbar": 15,
+   "erstattbar": 12.5,
+   "hinweis": "27,5 % Kapitalertragsteuer; bis zu 12,5 Punkte erstattbar.",
+   "pruefen": "ok",
+   "seite": "fortgeschrittene/quellensteuer/oesterreich/"
+  },
+  "polen": {
+   "name": "Polen",
+   "einbehalt": 19,
+   "abkommen": 15,
+   "anrechenbar": 15,
+   "erstattbar": 4,
+   "hinweis": "Rückforderung aufwendig (Vollmacht mit Apostille).",
+   "pruefen": "ok",
+   "seite": "fortgeschrittene/quellensteuer/polen/"
+  },
+  "schweden": {
+   "name": "Schweden",
+   "einbehalt": 30,
+   "abkommen": 15,
+   "anrechenbar": 15,
+   "erstattbar": 15,
+   "hinweis": "30 % Kupongskatt.",
+   "pruefen": "Abkommenssatz laut BZSt-Tabelle",
+   "seite": "fortgeschrittene/quellensteuer/schweden/"
+  },
+  "singapur": {
+   "name": "Singapur",
+   "einbehalt": 0,
+   "abkommen": 0,
+   "anrechenbar": 0,
+   "erstattbar": 0,
+   "hinweis": "REIT-Ausschüttungen für Privatpersonen nicht belegt.",
+   "pruefen": "REITs offen",
+   "seite": "fortgeschrittene/quellensteuer/singapur/"
+  },
+  "spanien": {
+   "name": "Spanien",
+   "einbehalt": 19,
+   "abkommen": 15,
+   "anrechenbar": 15,
+   "erstattbar": 4,
+   "hinweis": "",
+   "pruefen": "ok",
+   "seite": "fortgeschrittene/quellensteuer/spanien/"
+  },
+  "suedkorea": {
+   "name": "Südkorea",
+   "einbehalt": 22,
+   "abkommen": 15,
+   "anrechenbar": 15,
+   "erstattbar": 7,
+   "hinweis": "",
+   "pruefen": "ok",
+   "seite": "fortgeschrittene/quellensteuer/suedkorea/"
+  }
+ }
+}
