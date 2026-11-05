@@ -5,6 +5,11 @@ date: 2026-11-05 07:05
 author: "Redaktions-Team Dividenden-Rechner.de"
 author_bio: "Das Redaktions-Team von Dividenden-Rechner.de schreibt über Dividendenaktien, Kennzahlen und Steuerthemen für Privatanleger. Die Rechner und Auswertungen auf der Seite entstehen im eigenen Haus."
 category: Quartalszahlen
+image: https://images.unsplash.com/photo-1682944525608-1570d36f3f7b?w=1600&h=900&fit=crop&crop=entropy&q=80&fm=jpg
+image_alt: "Menschen am Merlion Park in Singapur vor den Hochhäusern des Finanzviertels"
+image_credit: "Foto: Reuben Hu auf Unsplash"
+image_source: https://unsplash.com/de/fotos/eine-gruppe-von-menschen-die-vor-hohen-gebauden-stehen-WIv436QRwfw?utm_source=dividenden-rechner&utm_medium=referral
+image_artist_url: https://unsplash.com/@reuben_hu?utm_source=dividenden-rechner&utm_medium=referral
 story_portrait: assets/magazin/tan-su-shan-dbs.png
 story_logo_bg: "#e31b23"
 story_quote_by: "Tan Su Shan | CEO DBS"
@@ -14,7 +19,6 @@ logo_symbol: D05.SI
 logo_domain: dbs.com
 logo_file: assets/logos/d05-si.png
 ---
-<!-- PRÜFEN: Aufmacherfoto fehlt noch, Fotoanfrage liegt in tools/asset.request. Bis dahin entsteht ein Titelbild automatisch. -->
 <!-- PRÜFEN: Quelle: https://www.dbs.com/iwov-resources/images/investors/quarterly-financials/2026/3Q26_trading_update.pdf -->
 <!-- PRÜFEN: Kursbild für die Story fehlt (story_chart), Folienausschnitt konnte nicht geladen werden (PDF nicht abrufbar). -->
 
