@@ -27,20 +27,31 @@
   function rr(c, x, y, w, h, r) { c.beginPath(); if (c.roundRect) c.roundRect(x, y, w, h, r); else c.rect(x, y, w, h); }
   /* S: {tpl, title, cat, ct, lines:[], points:[], text, img, logo} */
   async function draw(S, withPhoto) {
-    var W = 1080, H = 1920, cv = document.createElement("canvas"); cv.width = W; cv.height = H; var c = cv.getContext("2d");
+    var W = 1080, H = 1920, cv = document.createElement("canvas"); cv.width = W; cv.height = H; var c = cv.getContext("2d"); c.imageSmoothingEnabled = true; c.imageSmoothingQuality = "high";
+    /* Bild in Zielgroesse mit hoher Qualitaet verkleinern (schrittweise) und optional leicht schaerfen, damit Schrift in Screenshots lesbar bleibt */
+    function hq(img, w, h, sharp) {
+      var cw = Math.round(w), ch = Math.round(h), cur = img, sw = img.width, sh = img.height;
+      while (sw / 2 > cw) { var t = document.createElement("canvas"); sw = Math.round(sw / 2); sh = Math.round(sh / 2); t.width = sw; t.height = sh; var tc = t.getContext("2d"); tc.imageSmoothingQuality = "high"; tc.drawImage(cur, 0, 0, sw, sh); cur = t; }
+      var o = document.createElement("canvas"); o.width = cw; o.height = ch; var oc = o.getContext("2d"); oc.imageSmoothingQuality = "high"; oc.drawImage(cur, 0, 0, cw, ch);
+      if (sharp) { try { var id = oc.getImageData(0, 0, cw, ch), sd = id.data, cp = new Uint8ClampedArray(sd), k = sharp;
+        for (var yy = 1; yy < ch - 1; yy++) for (var xx = 1; xx < cw - 1; xx++) for (var q = 0; q < 3; q++) { var i = (yy * cw + xx) * 4 + q; var v = cp[i] * (1 + 4 * k) - k * (cp[i - 4] + cp[i + 4] + cp[i - cw * 4] + cp[i + cw * 4]); sd[i] = v; }
+        oc.putImageData(id, 0, 0); } catch (e) {} }
+      return o;
+    }
     var tpl = await load(S.tpl), photo = withPhoto ? await load(S.img) : null, logo = await load(S.logo);
     /* Eigene Vorlage (gruene Balken mit Rubrik und Adresse); der Inhalt darin bleibt schlicht: weisser Grund, schwarze Schrift, keine Farbflaechen. */
     if (tpl) c.drawImage(tpl, 0, 0, W, H); else { c.fillStyle = "#fff"; c.fillRect(0, 0, W, H); c.fillStyle = "#99e6b1"; c.fillRect(0, 108, W, 86); c.fillRect(0, 1866, W, 54); }
     var F = 'InterS,Inter,"Segoe UI",Roboto,Helvetica,Arial,sans-serif', LIM = 1835 - ((S.chart && S.portrait) ? 560 : (S.chart ? 600 : (S.portrait ? 470 : 0))), G = "#111", D = "#111";
     c.textBaseline = "top";
     var pts = S.para ? [] : (S.points || []), lns = S.lines || [], ph = photo ? 470 : 0, fs = 30, fit = !!(photo && S.fit === "contain");
-    if (fit) ph = Math.round(960 * photo.height / photo.width);
+    var PW = fit ? 1040 : 960, PX = fit ? 20 : 60;
+    if (fit) ph = Math.round(PW * photo.height / photo.width);
     /* Layout messen; passt der Text nicht, erst Foto verkleinern, dann Schrift (min. 26 px). Nie abschneiden. */
     function layout(draw, ph, fs) {
       var y = 232, lh = Math.round(fs * 1.32);
       function drawPhoto() {
-        var r = fit ? Math.min(960 / photo.width, ph / photo.height) : Math.max(960 / photo.width, ph / photo.height), w = photo.width * r, h = photo.height * r;
-        if (draw) { c.save(); rr(c, 60, y, 960, ph, 28); c.clip(); c.drawImage(photo, 60 + (960 - w) / 2, y + (ph - h) / 2, w, h); c.restore(); }
+        var r = fit ? Math.min(PW / photo.width, ph / photo.height) : Math.max(960 / photo.width, ph / photo.height), w = photo.width * r, h = photo.height * r;
+        if (draw) { c.save(); rr(c, PX, y, PW, ph, 28); c.clip(); c.drawImage(fit ? hq(photo, w, h, 0.35) : photo, PX + (PW - w) / 2, y + (ph - h) / 2, w, h); c.restore(); }
         y += ph + (fit ? 52 : 30);
       }
       if (photo && !fit) drawPhoto();
@@ -148,7 +159,7 @@
       var kc = await load(S.chart), kp = await load(S.portrait), bar = 1866;
       /* Kursbild komplett zeigen (mit Preisachse rechts): Breite so, dass es links vom Portrait endet */
       var kpx0 = kp ? 1056 - Math.round(520 * kp.width / kp.height) : 1056;
-      if (kc) { var kw2 = S.para ? Math.min(880, kpx0 - 24 + 130) : Math.min(880, kpx0 - 24 + 20), kh2 = Math.round(kw2 * kc.height / kc.width); c.drawImage(kc, 24, bar - kh2, kw2, kh2); }
+      if (kc) { var kw2 = S.para ? Math.min(880, kpx0 - 24 + 130) : Math.min(880, kpx0 - 24 + 20), kh2 = Math.round(kw2 * kc.height / kc.width); c.drawImage(hq(kc, kw2, kh2, 0.45), 24, bar - kh2, kw2, kh2); }
       if (kp) {
         var kph = 520, kpw = Math.round(kph * kp.width / kp.height), kpx = 1056 - kpw;
         c.drawImage(kp, kpx, bar - kph, kpw, kph);
