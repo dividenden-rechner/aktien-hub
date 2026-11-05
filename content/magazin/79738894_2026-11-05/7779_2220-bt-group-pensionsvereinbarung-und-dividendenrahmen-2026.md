@@ -10,6 +10,7 @@ quelle_url: https://newsroom.bt.com/bt-group-announces-triennial-pension-valuati
 quelle_name: "Pressemitteilung BT Group"
 logo_symbol: BT-A.L
 logo_name: "BT Group"
+logo_file: assets/logos/bt-a-l.png
 ---
 <!-- PRÜFEN: Diese Zahlen stehen nicht im Originaltext: 2027, Einordnung: 2027. Bitte pruefen, dann 'draft: true' loeschen. -->
 
