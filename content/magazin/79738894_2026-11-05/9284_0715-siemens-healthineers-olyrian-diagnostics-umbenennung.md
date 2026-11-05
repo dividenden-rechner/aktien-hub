@@ -8,6 +8,7 @@ category: Unternehmensmeldungen
 logo_name: "Siemens Healthineers"
 logo_symbol: SHL.DE
 logo_domain: siemens-healthineers.com
+logo_file: assets/logos/shl-de.png
 ---
 <!-- PRÜFEN: Aufmacherfoto fehlt noch (Fotoanfrage in tools/asset.request). -->
 <!-- PRÜFEN: Quelle: Pressemitteilung von Siemens Healthineers über GlobeNewswire vom 05.11.2026 (Screenshots von Divi). Link zum Original ergänzen. -->
