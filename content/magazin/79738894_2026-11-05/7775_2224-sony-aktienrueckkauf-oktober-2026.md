@@ -10,6 +10,7 @@ quelle_url: https://www.sec.gov/Archives/edgar/data/313838/000110465926123129/tm
 quelle_name: "Pressemitteilung Sony Group Corp (SEC-Meldung)"
 logo_symbol: SONY
 logo_name: "Sony Group Corp"
+logo_file: assets/logos/sony.png
 ---
 <!-- PRÜFEN: Diese Zahlen stehen nicht im Originaltext: 45,6, 308,96, 45,6, 45,6, Einordnung: 45,6, Einordnung: 308. Bitte pruefen, dann 'draft: true' loeschen. -->
 
