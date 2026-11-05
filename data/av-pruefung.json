@@ -1,0 +1,53 @@
+{
+ "datum": "2026-11-05",
+ "uebernommen": [
+  {
+   "anbieter": "Deutsche Bank (DWS)",
+   "neu": {
+    "kosten_start": 0.1,
+    "start_jahre": 2
+   },
+   "url": "https://www.cash-online.de/a/ing-bringt-altersvorsorgedepot-2027-ohne-order-und-depotgebuehren-728576/"
+  }
+ ],
+ "verworfen": [
+  {
+   "anbieter": "flatex / Degiro (Core)",
+   "grund": "Beleg nicht wortgetreu oder ohne Anbietername",
+   "url": "https://www.test.de/Altersvorsorgedepot-Preiskampf-der-Anbieter-ING-Trade-Republic-Smartbroker-6335719-0/"
+  },
+  {
+   "anbieter": "Deka (Sparkassen)",
+   "grund": "Beleg nicht wortgetreu oder ohne Anbietername",
+   "url": "https://www.test.de/Altersvorsorgedepot-Preiskampf-der-Anbieter-ING-Trade-Republic-Smartbroker-6335719-0/"
+  },
+  {
+   "anbieter": "ING",
+   "grund": "Beleg nicht wortgetreu oder ohne Anbietername",
+   "url": "https://www.test.de/Altersvorsorgedepot-Preiskampf-der-Anbieter-ING-Trade-Republic-Smartbroker-6335719-0/"
+  },
+  {
+   "anbieter": "DWS (VorsorgeDepot)",
+   "grund": "Beleg nicht wortgetreu oder ohne Anbietername",
+   "url": "https://www.test.de/Altersvorsorgedepot-Preiskampf-der-Anbieter-ING-Trade-Republic-Smartbroker-6335719-0/"
+  },
+  {
+   "anbieter": "Union Investment",
+   "grund": "Beleg nicht wortgetreu oder ohne Anbietername",
+   "url": "https://www.test.de/Altersvorsorgedepot-Preiskampf-der-Anbieter-ING-Trade-Republic-Smartbroker-6335719-0/"
+  },
+  {
+   "anbieter": "Scalable Capital",
+   "grund": "Beleg nicht wortgetreu oder ohne Anbietername",
+   "url": "https://www.capitalo.de/depot/altersvorsorgedepot"
+  },
+  {
+   "anbieter": "Trade Republic",
+   "feld": "kosten_dauer",
+   "wert": 0,
+   "grund": "Zahl nicht im Beleg oder unplausibel",
+   "url": "https://www.cash-online.de/a/neobroker-trade-republic-verschaerft-preiskampf-um-altersvorsorgedepots-727533/"
+  }
+ ],
+ "nicht_lesbar": []
+}

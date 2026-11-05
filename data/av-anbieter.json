@@ -1,5 +1,5 @@
 {
- "stand": "2026-10-29",
+ "stand": "2026-11-05",
  "hinweis": "Alle Angaben sind Ankündigungen der Anbieter laut den genannten Quellen und noch nicht verbindlich. Effektivkosten inklusive Abschluss- und Vertriebskosten nennt bisher kein Anbieter.",
  "firmen": [
   {
@@ -185,9 +185,9 @@
   {
    "name": "Deutsche Bank (DWS)",
    "typ": "Filialbank",
-   "kosten_start": null,
+   "kosten_start": 0.1,
    "kosten_dauer": 0.28,
-   "kosten": "Vertragsgebühr ab dem 3. Jahr 0,28 % p. a. Beratenes Depot 0,99 % p. a.",
+   "kosten": "Die Deutsche Bank etwa setzt auf ein Standarddepot, das die Fondstochter DWS entwickelt hat. Es kostet in den ersten zwei Jahren 0,1 Prozent, danach 0,28 Prozent.",
    "depot": "Digitales Standarddepot",
    "fonds": "Digitales Standarddepot, erweiterte Variante mit Beratung",
    "status": "Laut Bank veröffentlicht",
@@ -200,9 +200,13 @@
     {
      "titel": "finanzwissen.de: Anbieter im Vergleich (Stand 29.10.2026)",
      "url": "https://finanzwissen.de/vergleich/depot/altersvorsorge/"
+    },
+    {
+     "titel": "www.cash-online.de",
+     "url": "https://www.cash-online.de/a/ing-bringt-altersvorsorgedepot-2027-ohne-order-und-depotgebuehren-728576/"
     }
    ],
-   "start_jahre": 0
+   "start_jahre": 2
   },
   {
    "name": "DWS (VorsorgeDepot)",
@@ -316,5 +320,26 @@
    ],
    "start_jahre": 0
   }
- ]
+ ],
+ "aenderungen": [
+  {
+   "datum": "2026-11-05",
+   "anbieter": "Deutsche Bank (DWS)",
+   "feld": "kosten_start",
+   "alt": null,
+   "neu": 0.1,
+   "quelle": "https://www.cash-online.de/a/ing-bringt-altersvorsorgedepot-2027-ohne-order-und-depotgebuehren-728576/",
+   "beleg": "Die Deutsche Bank etwa setzt auf ein Standarddepot, das die Fondstochter DWS entwickelt hat. Es kostet in den ersten zwei Jahren 0,1 Prozent, danach 0,28 Prozent."
+  },
+  {
+   "datum": "2026-11-05",
+   "anbieter": "Deutsche Bank (DWS)",
+   "feld": "start_jahre",
+   "alt": 0,
+   "neu": 2,
+   "quelle": "https://www.cash-online.de/a/ing-bringt-altersvorsorgedepot-2027-ohne-order-und-depotgebuehren-728576/",
+   "beleg": "Die Deutsche Bank etwa setzt auf ein Standarddepot, das die Fondstochter DWS entwickelt hat. Es kostet in den ersten zwei Jahren 0,1 Prozent, danach 0,28 Prozent."
+  }
+ ],
+ "geprueft": "2026-11-05"
 }
