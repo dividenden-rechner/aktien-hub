@@ -1069,6 +1069,136 @@
    "revenue": 2063000000.0000002,
    "waehrung": "USD",
    "quelle": "https://www.sec.gov/Archives/edgar/data/1136869/000119312526446145/zbh-ex99_1.htm"
+  },
+  {
+   "sym": "APD",
+   "name": "Air Products",
+   "datum": "2026-11-05",
+   "eps": 13.45,
+   "eps_basis": "bereinigt",
+   "revenue": 13000000000.0,
+   "waehrung": "US-D",
+   "quelle": "https://www.sec.gov/Archives/edgar/data/2969/000000296926000043/exhibit99130sep26.htm"
+  },
+  {
+   "sym": "BDX",
+   "name": "Becton Dickinson",
+   "datum": "2026-11-05",
+   "eps": 4.15,
+   "eps_basis": "bereinigt",
+   "revenue": 5300000000.0,
+   "waehrung": "USD",
+   "quelle": "https://www.sec.gov/Archives/edgar/data/10795/000162828026070511/ex9919302026.htm"
+  },
+  {
+   "sym": "CAH",
+   "name": "Cardinal Health",
+   "datum": "2026-11-05",
+   "eps": 3.26,
+   "eps_basis": "bereinigt",
+   "revenue": 67500000000.0,
+   "waehrung": "US-D",
+   "quelle": "https://www.sec.gov/Archives/edgar/data/721371/000072137126000042/a27q1_x093026xex991xnewsre.htm"
+  },
+  {
+   "sym": "CI",
+   "name": "Cigna",
+   "datum": "2026-11-05",
+   "eps": 7.98,
+   "eps_basis": "bereinigt",
+   "revenue": 73700000000.0,
+   "waehrung": "US-D",
+   "quelle": "https://www.sec.gov/Archives/edgar/data/1739940/000114036126042030/ef20084818_ex99-1.htm"
+  },
+  {
+   "sym": "COP",
+   "name": "ConocoPhillips",
+   "datum": "2026-11-05",
+   "eps": 3.27,
+   "eps_basis": "bereinigt",
+   "revenue": 4000000000.0,
+   "waehrung": "US-D",
+   "quelle": "https://www.sec.gov/Archives/edgar/data/1163165/000116316526000043/cop-20261105x8kexx991.htm"
+  },
+  {
+   "sym": "DTE",
+   "name": "DTE Energy",
+   "datum": "2026-11-05",
+   "eps": 2.3,
+   "eps_basis": "bereinigt",
+   "revenue": 481000000.0,
+   "waehrung": "US-D",
+   "quelle": "https://www.sec.gov/Archives/edgar/data/936340/000093634026000166/exhibit991-93026.htm"
+  },
+  {
+   "sym": "EVRG",
+   "name": "Evergy",
+   "datum": "2026-11-05",
+   "eps": 2.58,
+   "eps_basis": "bereinigt",
+   "revenue": 609900000.0,
+   "waehrung": "US-D",
+   "quelle": "https://www.sec.gov/Archives/edgar/data/1711269/000119312526448521/d193466dex991.htm"
+  },
+  {
+   "sym": "GPN",
+   "name": "Global Payments",
+   "datum": "2026-11-05",
+   "eps": 3.58,
+   "eps_basis": "bereinigt",
+   "revenue": 3180000000.0,
+   "waehrung": "US-D",
+   "quelle": "https://www.sec.gov/Archives/edgar/data/1123360/000112336026000091/exhibit99120260930.htm"
+  },
+  {
+   "sym": "KMB",
+   "name": "Kimberly-Clark",
+   "datum": "2026-11-05",
+   "eps": 1.7,
+   "eps_basis": "bereinigt",
+   "revenue": 4099999999.9999995,
+   "waehrung": "US-D",
+   "quelle": "https://www.sec.gov/Archives/edgar/data/55785/000162828026070514/kmbq32026ex-991.htm"
+  },
+  {
+   "sym": "ROK",
+   "name": "Rockwell Automation",
+   "datum": "2026-11-05",
+   "eps": 3.88,
+   "eps_basis": "bereinigt",
+   "revenue": 2330000000.0,
+   "waehrung": "US-D",
+   "quelle": "https://www.sec.gov/Archives/edgar/data/1024478/000102447826000045/fy2026ex99.htm"
+  },
+  {
+   "sym": "SONY",
+   "name": "Sony Group Corp",
+   "datum": "2026-11-05",
+   "eps": 76.49,
+   "eps_basis": "berichtet",
+   "revenue": null,
+   "waehrung": "Yen",
+   "quelle": "https://www.sec.gov/Archives/edgar/data/313838/000110465926122964/tm2628525d5_6k.htm"
+  },
+  {
+   "sym": "TPR",
+   "name": "Tapestry, Inc.",
+   "datum": "2026-11-05",
+   "eps": 1.82,
+   "eps_basis": "bereinigt",
+   "revenue": 1890000000.0,
+   "waehrung": "US-D",
+   "quelle": "https://www.sec.gov/Archives/edgar/data/1116132/000114036126042034/ef20084882_ex99-1.htm"
+  },
+  {
+   "sym": "TRGP",
+   "name": "Targa Resources",
+   "datum": "2026-11-05",
+   "eps": 0,
+   "eps_basis": "nicht ausgewiesen",
+   "revenue": 5600000000.0,
+   "waehrung": "US-D",
+   "quelle": "https://www.sec.gov/Archives/edgar/data/1389170/000119312526448401/trgp-ex99_1.htm"
   }
  ]
 }

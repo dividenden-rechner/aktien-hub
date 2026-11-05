@@ -262,6 +262,15 @@
    "quelle": "https://www.sec.gov/Archives/edgar/data/1041061/000104106126000195/a8kex9919302026.htm"
   },
   {
+   "sym": "9432.T",
+   "name": "NTT",
+   "art": "ergebnis",
+   "datum": "2026-11-04",
+   "betrag": "",
+   "waehrung": "",
+   "quelle": "https://www.nttdata.com/global/en/news/press-release/2026/november/110400"
+  },
+  {
    "sym": "AIZ",
    "name": "Assurant",
    "art": "ergebnis",
@@ -424,6 +433,15 @@
    "quelle": "https://www.sec.gov/Archives/edgar/data/1841666/000184166626000063/exhibit9913q26earningsrele.htm"
   },
   {
+   "sym": "APD",
+   "name": "Air Products",
+   "art": "ergebnis",
+   "datum": "2026-11-05",
+   "betrag": "",
+   "waehrung": "",
+   "quelle": "https://www.sec.gov/Archives/edgar/data/2969/000000296926000043/exhibit99130sep26.htm"
+  },
+  {
    "sym": "ATO",
    "name": "Atmos Energy",
    "art": "ergebnis",
@@ -431,6 +449,15 @@
    "betrag": "",
    "waehrung": "",
    "quelle": "https://www.sec.gov/Archives/edgar/data/731802/000073180226000129/ato20261104exhibit991.htm"
+  },
+  {
+   "sym": "DEO",
+   "name": "Diageo Plc",
+   "art": "ergebnis",
+   "datum": "2026-11-05",
+   "betrag": "",
+   "waehrung": "",
+   "quelle": "https://www.sec.gov/Archives/edgar/data/835403/000165495426009530/a8687b.htm"
   },
   {
    "sym": "ES",
@@ -442,6 +469,33 @@
    "quelle": "https://www.sec.gov/Archives/edgar/data/72741/000110465926122703/tm2628949d1_ex99-1.htm"
   },
   {
+   "sym": "GPN",
+   "name": "Global Payments",
+   "art": "ergebnis",
+   "datum": "2026-11-05",
+   "betrag": "",
+   "waehrung": "",
+   "quelle": "https://www.sec.gov/Archives/edgar/data/1123360/000112336026000091/exhibit99120260930.htm"
+  },
+  {
+   "sym": "HSBC",
+   "name": "Hsbc Holdings Plc",
+   "art": "ergebnis",
+   "datum": "2026-11-05",
+   "betrag": "",
+   "waehrung": "",
+   "quelle": "https://www.sec.gov/Archives/edgar/data/1089113/000165495426009540/a9491b.htm"
+  },
+  {
+   "sym": "KMB",
+   "name": "Kimberly-Clark",
+   "art": "ergebnis",
+   "datum": "2026-11-05",
+   "betrag": "",
+   "waehrung": "",
+   "quelle": "https://www.sec.gov/Archives/edgar/data/55785/000162828026070514/kmbq32026ex-991.htm"
+  },
+  {
    "sym": "MET",
    "name": "MetLife",
    "art": "ergebnis",
@@ -449,6 +503,24 @@
    "betrag": "",
    "waehrung": "",
    "quelle": "https://www.sec.gov/Archives/edgar/data/1099219/000109921926000058/ex991earningsreleasetables.htm"
+  },
+  {
+   "sym": "ROK",
+   "name": "Rockwell Automation",
+   "art": "ergebnis",
+   "datum": "2026-11-05",
+   "betrag": "",
+   "waehrung": "",
+   "quelle": "https://www.sec.gov/Archives/edgar/data/1024478/000102447826000045/fy2026ex99.htm"
+  },
+  {
+   "sym": "SONY",
+   "name": "Sony Group Corp",
+   "art": "ergebnis",
+   "datum": "2026-11-05",
+   "betrag": "",
+   "waehrung": "",
+   "quelle": "https://www.sec.gov/Archives/edgar/data/313838/000110465926122935/tm2628525d4_6k.htm"
   },
   {
    "sym": "STE",
@@ -476,6 +548,15 @@
    "betrag": "",
    "waehrung": "",
    "quelle": "https://www.sec.gov/Archives/edgar/data/72903/000119312526444394/d205441dex9901.htm"
+  },
+  {
+   "sym": "HSBC",
+   "name": "Hsbc Holdings Plc",
+   "art": "ergebnis",
+   "datum": "2026-11-09",
+   "betrag": "",
+   "waehrung": "",
+   "quelle": "https://www.sec.gov/Archives/edgar/data/1089113/000165495426009538/a8718b.htm"
   },
   {
    "sym": "SNDK",
@@ -586,6 +667,15 @@
    "quelle": "https://www.sec.gov/Archives/edgar/data/74208/000007420826000084/udr-ex99d1.htm"
   },
   {
+   "sym": "TRGP",
+   "name": "Targa Resources",
+   "art": "dividende_zahltag",
+   "datum": "2026-11-17",
+   "betrag": "1.25",
+   "waehrung": "USD",
+   "quelle": "https://www.sec.gov/Archives/edgar/data/1389170/000119312526448401/trgp-ex99_1.htm"
+  },
+  {
    "sym": "AFL",
    "name": "Aflac",
    "art": "dividende_exdatum",
@@ -656,6 +746,15 @@
    "betrag": "",
    "waehrung": "",
    "quelle": "https://www.sec.gov/Archives/edgar/data/2023554/000162828026068243/sndkq1-27ex991xpressrelease.htm"
+  },
+  {
+   "sym": "EVRG",
+   "name": "Evergy",
+   "art": "dividende_exdatum",
+   "datum": "2026-11-20",
+   "betrag": "",
+   "waehrung": "",
+   "quelle": "https://www.sec.gov/Archives/edgar/data/1711269/000119312526448521/d193466dex991.htm"
   },
   {
    "sym": "REGN",
@@ -757,6 +856,15 @@
    "quelle": "https://www.sec.gov/Archives/edgar/data/4977/000162828026070181/aflex991-q32026new.htm"
   },
   {
+   "sym": "COP",
+   "name": "ConocoPhillips",
+   "art": "dividende_zahltag",
+   "datum": "2026-12-01",
+   "betrag": "0.93",
+   "waehrung": "USD",
+   "quelle": "https://www.sec.gov/Archives/edgar/data/1163165/000116316526000043/cop-20261105x8kexx991.htm"
+  },
+  {
    "sym": "REGN",
    "name": "Regeneron Pharmaceuticals",
    "art": "dividende_zahltag",
@@ -773,6 +881,24 @@
    "betrag": "",
    "waehrung": "",
    "quelle": "https://www.sec.gov/Archives/edgar/data/849395/000119312526446496/d141767dex991.htm"
+  },
+  {
+   "sym": "SONY",
+   "name": "Sony Group Corp",
+   "art": "dividende_zahltag",
+   "datum": "2026-12-04",
+   "betrag": "17.50",
+   "waehrung": "JPY",
+   "quelle": "https://www.sec.gov/Archives/edgar/data/313838/000110465926122935/tm2628525d4_6k.htm"
+  },
+  {
+   "sym": "BDX",
+   "name": "Becton Dickinson",
+   "art": "ergebnis",
+   "datum": "2026-12-10",
+   "betrag": "",
+   "waehrung": "",
+   "quelle": "https://www.sec.gov/Archives/edgar/data/10795/000162828026070511/ex9919302026.htm"
   },
   {
    "sym": "CVX",
@@ -892,6 +1018,33 @@
    "quelle": "https://www.sec.gov/Archives/edgar/data/765880/000162828026068878/ex99109302026.htm"
   },
   {
+   "sym": "EVRG",
+   "name": "Evergy",
+   "art": "dividende_zahltag",
+   "datum": "2026-12-18",
+   "betrag": "0.7225",
+   "waehrung": "USD",
+   "quelle": "https://www.sec.gov/Archives/edgar/data/1711269/000119312526448521/d193466dex991.htm"
+  },
+  {
+   "sym": "TPR",
+   "name": "Tapestry, Inc.",
+   "art": "dividende_zahltag",
+   "datum": "2026-12-21",
+   "betrag": "0.4625",
+   "waehrung": "USD",
+   "quelle": "https://www.sec.gov/Archives/edgar/data/1116132/000114036126042034/ef20084882_ex99-1.htm"
+  },
+  {
+   "sym": "GPN",
+   "name": "Global Payments",
+   "art": "dividende_zahltag",
+   "datum": "2026-12-24",
+   "betrag": "0.25",
+   "waehrung": "USD",
+   "quelle": "https://www.sec.gov/Archives/edgar/data/1123360/000112336026000091/exhibit99120260930.htm"
+  },
+  {
    "sym": "DOC",
    "name": "Healthpeak Properties",
    "art": "dividende_zahltag",
@@ -971,6 +1124,15 @@
    "betrag": "",
    "waehrung": "",
    "quelle": "https://www.sec.gov/Archives/edgar/data/882184/000088218426000119/a9302026exhibit991.htm"
+  },
+  {
+   "sym": "TPR",
+   "name": "Tapestry, Inc.",
+   "art": "ergebnis",
+   "datum": "2027-02-04",
+   "betrag": "",
+   "waehrung": "",
+   "quelle": "https://www.sec.gov/Archives/edgar/data/1116132/000114036126042034/ef20084882_ex99-1.htm"
   },
   {
    "sym": "AZN",

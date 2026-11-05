@@ -1,6 +1,108 @@
 {
  "items": [
   {
+   "slug": "hsbc-rueckkaufangebot-anleihen-november-2026",
+   "title": "HSBC kündigt Rückkauf von nachrangigen Wertpapieren im Volumen von 1 Mrd. US-Dollar an",
+   "sym": "HSBC",
+   "date": "2026-11-05T14:01:00+01:00"
+  },
+  {
+   "slug": "zoetis-quartalszahlen-q3-2026",
+   "title": "Zoetis steigert bereinigten Gewinn auf 1,75 US-Dollar und hebt Jahresausblick an",
+   "sym": "ZTS",
+   "date": "2026-11-05T13:59:00+01:00"
+  },
+  {
+   "slug": "tapestry-quartalszahlen-q1-2027",
+   "title": "Tapestry steigert bereinigten Gewinn auf 1,82 US-Dollar und erhöht Kapitalrückführung",
+   "sym": "TPR",
+   "date": "2026-11-05T13:59:00+01:00"
+  },
+  {
+   "slug": "rockwell-automation-q4-2026-zahlen",
+   "title": "Rockwell Automation steigert bereinigten Gewinn auf 3,88 US-Dollar je Aktie",
+   "sym": "ROK",
+   "date": "2026-11-05T13:59:00+01:00"
+  },
+  {
+   "slug": "global-payments-q3-2026-zahlen",
+   "title": "Global Payments steigert bereinigten Gewinn auf 3,58 US-Dollar je Aktie",
+   "sym": "GPN",
+   "date": "2026-11-05T13:59:00+01:00"
+  },
+  {
+   "slug": "evergy-quartalszahlen-q3-2026-prognose-erhoeht",
+   "title": "Evergy hebt Jahresprognose an und erhöht Dividende nach starkem Quartal",
+   "sym": "EVRG",
+   "date": "2026-11-05T13:59:00+01:00"
+  },
+  {
+   "slug": "dte-energy-verkauft-vantage-sparte-und-meldet-q3-zahlen",
+   "title": "DTE Energy verkauft Vantage-Sparte für 3 Mrd. US-Dollar und steigert operativen Gewinn",
+   "sym": "DTE",
+   "date": "2026-11-05T13:59:00+01:00"
+  },
+  {
+   "slug": "diageo-wechsel-vorsitz-verguetungsausschuss",
+   "title": "Diageo: Melissa Bethell übernimmt Vorsitz des Vergütungsausschusses",
+   "sym": "DEO",
+   "date": "2026-11-05T13:59:00+01:00"
+  },
+  {
+   "slug": "conocophillips-dividende-q3-2026",
+   "title": "ConocoPhillips erhöht Dividende um 11 % nach Gewinnanstieg im dritten Quartal",
+   "sym": "COP",
+   "date": "2026-11-05T13:59:00+01:00"
+  },
+  {
+   "slug": "cardinal-health-quartalszahlen-q1-2027",
+   "title": "Cardinal Health steigert bereinigten Gewinn auf 3,26 US-Dollar und hebt Jahresausblick an",
+   "sym": "CAH",
+   "date": "2026-11-05T13:59:00+01:00"
+  },
+  {
+   "slug": "bp-verkauft-anteile-an-aker-bp",
+   "title": "BP verkauft Aker-BP-Anteil für 1,1 Mrd. US-Dollar und hebt Prognose an",
+   "sym": "BP",
+   "date": "2026-11-05T13:59:00+01:00"
+  },
+  {
+   "slug": "becton-dickinson-zahlen-q4-2026",
+   "title": "Becton Dickinson steigert bereinigten Gewinn auf 4,15 US-Dollar je Aktie",
+   "sym": "BDX",
+   "date": "2026-11-05T13:59:00+01:00"
+  },
+  {
+   "slug": "air-products-jahreszahlen-2026",
+   "title": "Air Products steigert bereinigten Gewinn auf 13,45 US-Dollar je Aktie",
+   "sym": "APD",
+   "date": "2026-11-05T13:58:00+01:00"
+  },
+  {
+   "slug": "vistra-uebernahme-cogentrix-energy",
+   "title": "Vistra Corp. erweitert Erzeugungskapazität durch Übernahme von Cogentrix Energy",
+   "sym": "VST",
+   "date": "2026-11-05T13:57:00+01:00"
+  },
+  {
+   "slug": "toyota-motor-umstrukturierung-fuehrungswechsel-2027",
+   "title": "Toyota Motor ordnet Konzernstruktur neu und besetzt Führungspositionen um",
+   "sym": "TM",
+   "date": "2026-11-05T13:57:00+01:00"
+  },
+  {
+   "slug": "targa-resources-q3-2026-dividende",
+   "title": "Targa Resources steigert EBITDA auf 1,5 Mrd. US-Dollar und plant Dividendenerhöhung",
+   "sym": "TRGP",
+   "date": "2026-11-05T13:57:00+01:00"
+  },
+  {
+   "slug": "cigna-q3-2026-ergebnisse",
+   "title": "Cigna steigert bereinigten Gewinn auf 7,98 US-Dollar je Aktie und hebt Jahresausblick an",
+   "sym": "CI",
+   "date": "2026-11-05T13:57:00+01:00"
+  },
+  {
    "slug": "kimberly-clark-q3-2026-zahlen-kenvue-china",
    "title": "Kimberly-Clark: Bereinigtes EPS +17 %, aber organischer Umsatz −1,3 % – China-Schwäche belastet, Kenvue-Übernahme abgeschlossen",
    "sym": "KMB",
