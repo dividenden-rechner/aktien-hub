@@ -12,6 +12,7 @@ story_text: "Die Telekom wächst im dritten Quartal bei Umsatz (+7,5 %) und bere
 logo_name: "Deutsche Telekom"
 logo_symbol: DTE.DE
 logo_domain: telekom.com
+logo_file: assets/logos/dte-de.png
 ---
 <!-- PRÜFEN: Aufmacherfoto fehlt noch (Fotoanfrage in tools/asset.request). -->
 <!-- PRÜFEN: Quelle: https://corporate-media.telekom.com/adobe/assets/urn:aaid:aem:826ac2b2-cb2b-4eb5-a97d-8cc4f2cb0ca2/original/as/dt-26q3-praesentation.pdf?attachment=true -->
