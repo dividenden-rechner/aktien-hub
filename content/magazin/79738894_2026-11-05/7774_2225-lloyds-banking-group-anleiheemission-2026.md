@@ -10,6 +10,7 @@ quelle_url: https://www.sec.gov/Archives/edgar/data/1160106/000095010326017021/d
 quelle_name: "Pressemitteilung Lloyds Banking Group plc (SEC-Meldung)"
 logo_symbol: LYG
 logo_name: "Lloyds Banking Group plc"
+logo_file: assets/logos/lyg.png
 ---
 <!-- PRÜFEN: Diese Zahlen stehen nicht im Originaltext: 2,75, 2,75, 2,75, Einordnung: 2,75. Bitte pruefen, dann 'draft: true' loeschen. -->
 

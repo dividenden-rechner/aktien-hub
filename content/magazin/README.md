@@ -15,7 +15,7 @@ Datei anklicken, dann Stift-Symbol: Zeile `draft: true` löschen und speichern, 
 | 29.10.2026 22:42 | Amazon steigert Umsatz im dritten Quartal auf 201,9 Milliarden Dollar | [79738970_2026-10-29/7757_2242-amazon-q3-2026-zahlen.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/79738970_2026-10-29/7757_2242-amazon-q3-2026-zahlen.md) |
 | 29.10.2026 10:12 | Shell erzielt im dritten Quartal 10,8 Milliarden Dollar Gewinn | [79738970_2026-10-29/8987_1012-shell-q3-2026-ergebnisse.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/79738970_2026-10-29/8987_1012-shell-q3-2026-ergebnisse.md) |
 
-### Online (282)
+### Online (283)
 
 | Datum | Titel | Datei |
 |---|---|---|
@@ -27,6 +27,7 @@ Datei anklicken, dann Stift-Symbol: Zeile `draft: true` löschen und speichern, 
 | 05.11.2026 22:26 | Akamai Technologies wächst im dritten Quartal auf 1,1 Mrd. US-Dollar Umsatz | [79738894_2026-11-05/7773_2226-akamai-technologies-quartalszahlen-q3-2026.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/79738894_2026-11-05/7773_2226-akamai-technologies-quartalszahlen-q3-2026.md) |
 | 05.11.2026 22:26 | Airbnb steigert Gewinn auf 1,9 Mrd. US-Dollar und startet 12 Mrd. US-Dollar Rückkauf | [79738894_2026-11-05/7773_2226-airbnb-quartalszahlen-q3-2026.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/79738894_2026-11-05/7773_2226-airbnb-quartalszahlen-q3-2026.md) |
 | 05.11.2026 22:25 | Stellantis beruft Pablo Di Si zum operativen Leiter für Nordamerika | [79738894_2026-11-05/7774_2225-stellantis-neubesetzung-management-nordamerika.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/79738894_2026-11-05/7774_2225-stellantis-neubesetzung-management-nordamerika.md) |
+| 05.11.2026 22:25 | Lloyds Banking Group begibt Anleihen im Volumen von 2,8 Mrd. US-Dollar | [79738894_2026-11-05/7774_2225-lloyds-banking-group-anleiheemission-2026.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/79738894_2026-11-05/7774_2225-lloyds-banking-group-anleiheemission-2026.md) |
 | 05.11.2026 22:24 | Vivmark Residential steigert bereinigten Gewinn auf 1,03 US-Dollar je Aktie | [79738894_2026-11-05/7775_2224-vivmark-residential-q3-2026-zahlen.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/79738894_2026-11-05/7775_2224-vivmark-residential-q3-2026-zahlen.md) |
 | 05.11.2026 22:24 | Tractor Supply Company schüttet Quartalsdividende von 0,24 US-Dollar aus | [79738894_2026-11-05/7775_2224-tractor-supply-dividende-dezember-2026.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/79738894_2026-11-05/7775_2224-tractor-supply-dividende-dezember-2026.md) |
 | 05.11.2026 22:24 | Sony setzt Aktienrückkauf fort und investiert 45,6 Milliarden Yen im Oktober | [79738894_2026-11-05/7775_2224-sony-aktienrueckkauf-oktober-2026.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/79738894_2026-11-05/7775_2224-sony-aktienrueckkauf-oktober-2026.md) |
