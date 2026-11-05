@@ -77,7 +77,7 @@
           var pw = 290, pad = 22, q2 = (pw - 2 * pad) / bb.w, plh = Math.round(bb.h * q2 + 2 * pad);
           lw = pw; hdr = Math.max(sz, plh);
           if (draw) { var py2 = y + (sz - plh) / 2; c.fillStyle = S.logo_bg; rr(c, 60, py2, pw, plh, 18); c.fill(); c.drawImage(logo, bb.x, bb.y, bb.w, bb.h, 60 + pad, py2 + pad, bb.w * q2, bb.h * q2); }
-        } else if (S.para && logo && !light(logo)) { lw = Math.min(260, logo.width * sz / logo.height); if (draw) c.drawImage(logo, 60, y, lw, logo.height * lw / logo.width); }
+        } else if (S.para && logo && (S.combo || !light(logo))) { lw = Math.min(260, logo.width * sz / logo.height); if (draw) c.drawImage(logo, 60, y, lw, logo.height * lw / logo.width); }
         else if (draw && logo) plaque(60, y);
         if (draw && tag) { c.fillStyle = G; c.font = "700 40px " + F; c.fillText(tag, logo ? 60 + sz + 24 : 60, y + (logo ? sz / 2 - 20 : 0)); }
         /* Kennzahlen (Umsatz, Gewinn) rechts neben dem Logo */

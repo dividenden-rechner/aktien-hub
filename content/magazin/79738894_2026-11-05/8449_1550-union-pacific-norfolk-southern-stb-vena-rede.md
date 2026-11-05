@@ -6,23 +6,26 @@ author: "Redaktions-Team Dividenden-Rechner.de"
 author_bio: "Das Redaktions-Team von Dividenden-Rechner.de schreibt über Dividendenaktien, Kennzahlen und Steuerthemen für Privatanleger. Die Rechner und Auswertungen auf der Seite entstehen im eigenen Haus."
 category: Übernahme
 story_text: "Die US-Bahnaufsicht STB lässt eine Rede von Union-Pacific-Chef Jim Vena nicht geheim halten. Darin soll er Kunden, die gegen die Übernahme von Norfolk Southern sind, mit höheren Gebühren gedroht haben. Beide Aktien geben nach.\nDas ist kein Urteil über den Deal. Die Behörde sagt nur, dass Belege für angedrohte Vergeltung für die Prüfung von Marktmacht wichtig sein können. Union Pacific hat sich bislang nicht öffentlich dazu geäußert, es sind bisher nur Vorwürfe.\nDas Vorhaben hat 85 Mrd. Dollar Volumen, 320 Dollar je Norfolk-Aktie. Fällt es durch, zahlt Union Pacific 2,5 Mrd. Dollar Gebühr. Der Abschluss ist für Anfang 2027 geplant, die Prüfung zieht sich aber schon seit Januar."
+story_portrait: assets/magazin/jim-vena-union-pacific.png
+story_quote_by: "Jim Vena | CEO Union Pacific"
 logo_name: "Union Pacific / Norfolk Southern"
-logo_combo: "UNP:up.com:Union Pacific, NSC:norfolksouthern.com:Norfolk Southern"
+logo_combo: "UNP:up.com:Union Pacific, NSC:norfolksouthern.com:Norfolk Southern Railway:wiki"
 logo_symbol: UNP
 logo_domain: up.com
-logo_combo: "UNP:up.com:Union Pacific, NSC:norfolksouthern.com:Norfolk Southern"
-logo_file: assets/logos/combo-unp-nsc.png
+image: assets/magazin/union-pacific-norfolk-southern-stb-vena-rede-foto.jpg
+image_alt: "Güterzug mit zwei gelben Lokomotiven von Union Pacific vor Bergen"
+image_credit: "Foto: Union Pacific (Pressebild)"
+image_source: https://www.up.com
+image_artist_url: 
 ---
 <!-- PRÜFEN: Quellen: MLex via ad-hoc-news.de (05.11.2026), Bloomberg Law (22.07.2026), Wikipedia-Zeitleiste, Börse Express (Kurs UNP, 14:32 Uhr), heygotrade (Schluss UNP 04.11.). Aufmacherfoto und Kombi-Logo liefert der Bot (tools/asset.request, tools/fetch_logos.py). Kein CEO-Foto, kein Kursbild vorhanden. -->
 <!-- PRÜFEN: Wortlaut der Rede und Reaktion von Union Pacific nicht ermittelt; MLex-Originalbericht nicht abrufbar. Kurse NSC vom Vortag fehlen, daher nur Verlauf seit 13:12 Uhr. -->
 
 !!! kurz "Kurz gesagt"
-    **Entscheidung:** Die Bahnaufsicht STB weist den Antrag von Union Pacific zurück, die Rede von Konzernchef Jim Vena unter Verschluss zu halten.
-    **Vorwurf:** Vena soll Kunden, die den Kauf von Norfolk Southern ablehnen, mit höheren Gebühren gedroht haben (laut MLex, nicht von Union Pacific bestätigt).
-
-    1. **Kein Urteil über den Deal:** Die STB sagt nur, Belege für angedrohte Vergeltung könnten für Marktmacht und möglichen Missbrauch relevant sein.
-    2. **Beide Aktien geben nach:** Union Pacific lag am Donnerstagnachmittag bei 271,20 Euro (−1,45 %), Norfolk Southern fiel von 308,55 Euro (13:12 Uhr) auf 305,15 Euro (14:11 Uhr).
-    3. **Zeitplan bleibt offen:** Die Parteien rechnen mit dem Abschluss Anfang 2027, die Prüfung läuft seit Januar.
+    1. **Vorwurf, kein Urteil:** Die STB gibt die Rede frei, in der Vena Kunden gedroht haben soll (laut MLex, nicht von Union Pacific bestätigt). Über den Deal entscheidet sie damit nicht.
+    2. **Warum das zählt:** Laut STB können Belege für angedrohte Vergeltung für Marktmacht und möglichen Missbrauch relevant sein.
+    3. **Beide Aktien geben nach:** Union Pacific lag am Donnerstagnachmittag bei 271,20 Euro (−1,45 %), Norfolk Southern fiel von 308,55 Euro (13:12 Uhr) auf 305,15 Euro (14:11 Uhr).
+    4. **Zeitplan bleibt offen:** Die Parteien rechnen mit dem Abschluss Anfang 2027, die Prüfung läuft seit Januar.
 
 ## Union Pacific und Norfolk Southern: Rede als neuer Prüfstein
 

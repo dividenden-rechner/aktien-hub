@@ -149,9 +149,13 @@ def make_combo(pairs, slug):
     """pairs = [(Kuerzel, Domain, Name), ...] -> assets/logos/combo-<slug>.png (Plaketten leicht ueberlappend) oder None."""
     from PIL import ImageFilter
     tiles = []
-    for sym, dom, name in pairs[:3]:
+    for pr in pairs[:3]:
+        sym, dom, name = pr[:3]
         png = None
-        for fn, arg in ((from_fmp, sym), (from_site, dom), (from_google, dom), (from_ddg, dom)):
+        order = ((from_fmp, sym), (from_site, dom), (from_google, dom), (from_ddg, dom))
+        if len(pr) > 3 and pr[3] == "wiki":
+            order = ((from_wiki, name),) + order
+        for fn, arg in order:
             try:
                 png = fn(arg)
             except Exception:
@@ -217,7 +221,7 @@ def main():
             for part in meta["logo_combo"].split(","):
                 bits = [b.strip() for b in part.split(":")]
                 if len(bits) >= 2:
-                    pairs.append((bits[0], bits[1], bits[2] if len(bits) > 2 else bits[0]))
+                    pairs.append((bits[0], bits[1], bits[2] if len(bits) > 2 else bits[0], bits[3] if len(bits) > 3 else ""))
             rel = make_combo(pairs, re.sub(r"[^a-z0-9]+", "-", "-".join(b[0] for b in pairs).lower()).strip("-")) if pairs else None
             print(os.path.basename(path), "-> Kombi-Logo", rel or "nicht moeglich")
             if rel:
