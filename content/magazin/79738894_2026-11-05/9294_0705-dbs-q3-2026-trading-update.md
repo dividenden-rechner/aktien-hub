@@ -12,6 +12,7 @@ story_text: "DBS verdient im dritten Quartal 2,81 Mrd. SGD (−5 %) bei 5,85 Mrd
 logo_name: "DBS Group Holdings"
 logo_symbol: D05.SI
 logo_domain: dbs.com
+logo_file: assets/logos/d05-si.png
 ---
 <!-- PRÜFEN: Aufmacherfoto fehlt noch, Fotoanfrage liegt in tools/asset.request. Bis dahin entsteht ein Titelbild automatisch. -->
 <!-- PRÜFEN: Quelle: https://www.dbs.com/iwov-resources/images/investors/quarterly-financials/2026/3Q26_trading_update.pdf -->
