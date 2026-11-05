@@ -5,10 +5,10 @@ date: 2026-11-05 07:25
 author: "Redaktions-Team Dividenden-Rechner.de"
 author_bio: "Das Redaktions-Team von Dividenden-Rechner.de schreibt über Dividendenaktien, Kennzahlen und Steuerthemen für Privatanleger. Die Rechner und Auswertungen auf der Seite entstehen im eigenen Haus."
 category: Quartalszahlen
+story_image: assets/magazin/deutsche-telekom-q3-2026-zahlen-prognose-story.png
 story_portrait: assets/magazin/tim-hoettges-telekom.png
-story_logo_bg: "#e20074"
 story_quote_by: "Tim Höttges | CEO Deutsche Telekom"
-story_text: "Die Telekom setzt im dritten Quartal 31,1 Mrd. Euro um (+7,5 %), das bereinigte EBITDA AL steigt um 9,9 % auf 12,2 Mrd. Euro, der bereinigte Überschuss um 12,7 % auf 3,0 Mrd. Euro. Positiv: Rekord bei Glasfaser-Neukunden in Deutschland, T-Mobile US wächst weiter, die Prognose steigt auf rund 47,6 Mrd. Euro EBITDA und 20,1 Mrd. Euro Free Cashflow. Schwächer: Der Free Cashflow legt nur um 1,4 % zu, die Investitionen liegen unter Plan, der Konzernüberschuss fällt nach neun Monaten um 8 %. Vorgeschlagene Dividende: 1,10 Euro."
+story_text: "Die Telekom wächst im dritten Quartal bei Umsatz (+7,5 %) und bereinigtem EBITDA (+9,9 %), der bereinigte Überschuss steigt um 12,7 % auf 3,0 Mrd. Euro. Positiv: Rekord bei Glasfaser-Neukunden, die Prognose steigt auf rund 47,6 Mrd. Euro EBITDA. Schwächer: Der Free Cashflow legt nur um 1,4 % zu, der Konzernüberschuss fällt nach neun Monaten um 8 %. Dividende: 1,10 Euro vorgeschlagen."
 logo_name: "Deutsche Telekom"
 logo_symbol: DTE.DE
 logo_domain: telekom.com

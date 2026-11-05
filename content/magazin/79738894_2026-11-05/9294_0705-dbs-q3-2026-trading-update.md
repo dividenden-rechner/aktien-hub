@@ -10,10 +10,10 @@ image_alt: "Menschen am Merlion Park in Singapur vor den Hochhäusern des Finanz
 image_credit: "Foto: Reuben Hu auf Unsplash"
 image_source: https://unsplash.com/de/fotos/eine-gruppe-von-menschen-die-vor-hohen-gebauden-stehen-WIv436QRwfw?utm_source=dividenden-rechner&utm_medium=referral
 image_artist_url: https://unsplash.com/@reuben_hu?utm_source=dividenden-rechner&utm_medium=referral
+story_image: assets/magazin/dbs-q3-2026-trading-update-story.png
 story_portrait: assets/magazin/tan-su-shan-dbs.png
-story_logo_bg: "#e31b23"
 story_quote_by: "Tan Su Shan | CEO DBS"
-story_text: "DBS verdient im dritten Quartal 2,81 Mrd. SGD (−5 %) bei 5,85 Mrd. SGD Gesamtertrag (−1 %). Positiv: Kredite wachsen um 11 %, Einlagen um 10 %, der Zinsüberschuss steigt um 4 % und die Quote notleidender Kredite sinkt auf 0,9 %. Schwach: Der Handelsertrag bricht um 65 % ein, die Risikovorsorge steigt um 41 %. Die Dividende beträgt 81 Cent je Aktie. Die Chefin Tan Su Shan nennt den Ausblick „unsicherer“."
+story_text: "DBS verdient 2,81 Mrd. SGD (−5 %) bei 5,85 Mrd. SGD Ertrag (−1 %). Positiv: Kredite +11 %, Einlagen +10 %, Zinsüberschuss +4 %, notleidende Kredite nur noch 0,9 %. Schwach: Handelsertrag −65 %, Risikovorsorge +41 %. Dividende: 81 Cent je Aktie. Chefin Tan Su Shan nennt den Ausblick „unsicherer“."
 logo_name: "DBS Group Holdings"
 logo_symbol: D05.SI
 logo_domain: dbs.com

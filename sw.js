@@ -1,5 +1,5 @@
 /* Service Worker: Netzwerk zuerst, bei fehlender Verbindung die zuletzt gesehene Seite. */
-const CACHE = 'hub-v8';
+const CACHE = 'hub-v9';
 const PRECACHE = ['./', 'assets/site.css', 'assets/logo.png'];
 self.addEventListener('install', e => {
   e.waitUntil(caches.open(CACHE).then(c => c.addAll(PRECACHE)).then(() => self.skipWaiting()));

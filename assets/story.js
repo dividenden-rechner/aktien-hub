@@ -56,14 +56,15 @@
       if ((photo && fit) || S.para) {
         /* Folie/Grafik: Logo und Kennung ueber dem Bild, damit nichts davon verdeckt wird */
         sz = S.para ? 150 : 104;
-        var lw = sz;
+        if (S.para && logo && !S.logo_bg && logo.width / logo.height < 1.4) sz = 120;
+        var lw = sz, hdr = sz;
         if (S.para && logo && S.logo_bg) {
           /* Logo auf farbiger Platte (z. B. weisse Schrift): sichtbaren Bereich ausschneiden und auf die Platte setzen */
           var bb = (function () { try { var k = document.createElement("canvas"); k.width = logo.width; k.height = logo.height; var x = k.getContext("2d"); x.drawImage(logo, 0, 0); var d = x.getImageData(0, 0, k.width, k.height).data, x0 = k.width, y0 = k.height, x1 = 0, y1 = 0;
             for (var yy = 0; yy < k.height; yy++) for (var xx = 0; xx < k.width; xx++) if (d[(yy * k.width + xx) * 4 + 3] > 40) { if (xx < x0) x0 = xx; if (xx > x1) x1 = xx; if (yy < y0) y0 = yy; if (yy > y1) y1 = yy; }
             return x1 > x0 ? { x: x0, y: y0, w: x1 - x0 + 1, h: y1 - y0 + 1 } : null; } catch (e) { return null; } })() || { x: 0, y: 0, w: logo.width, h: logo.height };
           var pw = 290, pad = 22, q2 = (pw - 2 * pad) / bb.w, plh = Math.round(bb.h * q2 + 2 * pad);
-          lw = pw;
+          lw = pw; hdr = Math.max(sz, plh);
           if (draw) { var py2 = y + (sz - plh) / 2; c.fillStyle = S.logo_bg; rr(c, 60, py2, pw, plh, 18); c.fill(); c.drawImage(logo, bb.x, bb.y, bb.w, bb.h, 60 + pad, py2 + pad, bb.w * q2, bb.h * q2); }
         } else if (S.para && logo && !light(logo)) { lw = Math.min(260, logo.width * sz / logo.height); if (draw) c.drawImage(logo, 60, y, lw, logo.height * lw / logo.width); }
         else if (draw && logo) plaque(60, y);
@@ -82,7 +83,7 @@
             var kw = k ? c.measureText(k + " ").width : 0; c.font = (S.para ? "700 " : "400 ") + hf + "px " + F; c.fillStyle = S.para ? D : "#262626"; c.fillText(v, hx + kw, hy + n * hh);
           });
         }
-        if (logo || tag || hl.length) y += ((logo || hl.length) ? sz : 44) + 38;
+        if (logo || tag || hl.length) y += ((logo || hl.length) ? hdr : 44) + 38;
         drawTitle();
         if (photo) drawPhoto();
       } else if (photo) {
