@@ -5,6 +5,10 @@ date: 2026-11-05 08:00
 author: "Redaktions-Team Dividenden-Rechner.de"
 author_bio: "Das Redaktions-Team von Dividenden-Rechner.de schreibt über Dividendenaktien, Kennzahlen und Steuerthemen für Privatanleger. Die Rechner und Auswertungen auf der Seite entstehen im eigenen Haus."
 category: Quartalszahlen
+image: assets/magazin/diageo-q1-geschaeftsjahr-2027-nordamerika-umsatz-foto.jpg
+image_alt: "Flaschen von Diageo-Marken nebeneinander, darunter Johnnie Walker, Smirnoff, Baileys, Tanqueray, Captain Morgan und ein Glas Guinness"
+image_credit: "Foto: Diageo"
+image_source: https://www.diageo.com
 story_image: assets/magazin/diageo-q1-fy27-trading-update-regionen-story.png
 story_chart: assets/magazin/diageo-q1-fy27-trading-update-kurs.png
 story_portrait: assets/magazin/dave-lewis-diageo.png
@@ -21,7 +25,7 @@ image_artist_url:
 logo_file: assets/logos/dge-l.png
 ---
 <!-- PRÜFEN: Quelle: Diageo, Q1-FY27-Handelsupdate (Praesentation, Folien 4 bis 11 als Handy-Screenshots von Divi). Konsens/Analystenstimmen: Reuters via RTE, Investing.com. -->
-<!-- PRÜFEN: Aufmacherfoto fehlt noch (tools/asset.request). Kursbild = Diageo-ADR (NYSE: DEO, USD, Yahoo, 04.11. Schluss 97,70, vorboerslich 100,39). Portrait Sir Dave Lewis von Divi (freigestellt). -->
+<!-- PRÜFEN: Aufmacherfoto von Divi (Diageo-Markenfoto, Quelle/Rechte pruefen). Kursbild = Diageo-ADR (NYSE: DEO, USD, Yahoo, 04.11. Schluss 97,70, vorboerslich 100,39). Portrait Sir Dave Lewis von Divi (freigestellt). -->
 <!-- PRÜFEN: Originallink der Diageo-Mitteilung nachtragen. -->
 
 !!! kurz "Kurz gesagt"
