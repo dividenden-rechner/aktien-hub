@@ -672,11 +672,11 @@
     var selB = $("av-prov2");
     if (selB) {
       selB.innerHTML = '<option value="">Keiner (nur ein Anbieter)</option>' + list.map(function (a, i) { return '<option value="' + i + '">' + a.n + "</option>"; }).join("");
-      selB.addEventListener("change", function () { AVSELB = selB.value === "" ? null : +selB.value; });
+      selB.addEventListener("change", function () { AVSELB = selB.value === "" ? null : +selB.value; var hb = $("av-prov2-hint"); if (hb) { var A = AVSELB == null ? null : list[AVSELB], k = A ? avKosten(A, num("av-cost")) : null; hb.textContent = !A ? "" : !k ? "Noch keine Konditionen veröffentlicht, es gilt dein Wert bei Kosten." : (k.j > 0 && k.ks !== k.kd ? "Erste " + k.j + " Jahre " + pct(k.ks) + ", danach " + pct(k.kd) + "." : "Laufende Kosten " + pct(k.kd) + "."); } });
     }
     var cost = $("av-cost"); if (cost) cost.addEventListener("input", function () { if (AVSEL) { AVSEL = null; sel.value = ""; var h = $("av-prov-hint"); if (h) h.textContent = ""; } });
     var box = $("av-rank");
-    if (box) box.addEventListener("click", function (e) { var b = e.target.closest(".av-pick"); if (!b) return; if (b.dataset.b != null) { AVSELB = +b.dataset.b; var sb = $("av-prov2"); if (sb) sb.value = String(AVSELB); } else avSetProv(+b.dataset.i); T["altersvorsorgedepot"](); var f = $("av-prov"); if (f && f.scrollIntoView) f.scrollIntoView({ behavior: "smooth", block: "center" }); });
+    if (box) box.addEventListener("click", function (e) { var b = e.target.closest(".av-pick"); if (!b) return; if (b.dataset.b != null) { AVSELB = +b.dataset.b; var sb = $("av-prov2"); if (sb) { sb.value = String(AVSELB); sb.dispatchEvent(new Event("change")); } } else avSetProv(+b.dataset.i); T["altersvorsorgedepot"](); var f = $("av-prov"); if (f && f.scrollIntoView) f.scrollIntoView({ behavior: "smooth", block: "center" }); });
     var m = /[#&?]anbieter=(\d+)/.exec(location.search + location.hash); if (m) avSetProv(+m[1]);
   }
 
@@ -724,15 +724,13 @@
     // Zweiter Anbieter
     var nameA = AVSEL ? avData()[AVSEL.i].n : "Eigene Eingabe", B = AVSELB != null ? avProvCalc(o, AVSELB) : null;
     var cmp = $("av-cmp"), yrs = $("av-years");
-    if (cmp) cmp.hidden = !B; if (yrs) yrs.hidden = !B; var cc = $("av-cmpchart"); if (cc) cc.hidden = !B;
+    if (cmp) cmp.hidden = !B; if (yrs) yrs.hidden = !B; 
     var labels = r.rows.map(function (x) { return "Alter " + (o.alter + x.jahr); });
-    var ds = [{ label: "Eigenbeiträge", data: r.rows.map(function (x) { return x.eingezahlt; }), backgroundColor: GREY, stack: "d" }, { label: "Zulagen", data: r.rows.map(function (x) { return x.zulagen; }), backgroundColor: GREEN, stack: "d" }, { label: "Erträge (" + nameA + ")", data: r.rows.map(function (x) { return x.wert - x.eingezahlt - x.zulagen; }), backgroundColor: BLUE, stack: "d" }];
-    if (B) ds.push({ label: "Depotwert " + B.name, type: "line", data: B.r.rows.map(function (x) { return x.wert; }), borderColor: "#7c3aed", borderWidth: 3, pointRadius: 0, tension: .2 });
-    ds.push({ label: "Zum Vergleich: ETF-Sparplan ohne Förderung (vor Steuern)", type: "line", data: r.etfRows.map(function (x) { return x.wert; }), borderColor: AMBER, pointRadius: 0 });
+    var ds = [{ label: "Balken: Eigenbeiträge", data: r.rows.map(function (x) { return x.eingezahlt; }), backgroundColor: GREY, stack: "d" }, { label: "Balken: Zulagen vom Staat", data: r.rows.map(function (x) { return x.zulagen; }), backgroundColor: GREEN, stack: "d" }, { label: "Balken: Erträge", data: r.rows.map(function (x) { return x.wert - x.eingezahlt - x.zulagen; }), backgroundColor: BLUE, stack: "d" }];
+    if (B) ds.push({ label: "Linie: Depotwert " + B.name, type: "line", data: B.r.rows.map(function (x) { return x.wert; }), borderColor: "#7c3aed", borderWidth: 3, pointRadius: 0, tension: .2 });
+    var cap = $("av-chartcap"); if (cap) cap.textContent = B ? "Die Balken zeigen das Depot von " + nameA + ": grau deine Beiträge, grün die Zulagen vom Staat, blau die Erträge. Die lila Linie ist der Depotwert von " + B.name + " bei gleichen Eingaben." : "Die Balken zeigen, woraus dein Depot besteht: grau deine Beiträge, grün die Zulagen vom Staat, blau die Erträge am Kapitalmarkt. Den Vergleich mit einem ETF-Sparplan nach Steuern findest du oben in den Kennzahlen.";
     draw("av-chart", { type: "bar", data: { labels: labels, datasets: ds }, options: { interaction: inter, scales: { x: { stacked: true }, y: Object.assign({ stacked: true }, ytitle("Euro")) }, plugins: { title: { display: true, text: B ? "Depotwert: " + nameA + " (Balken) gegen " + B.name + " (Linie)" : "Altersvorsorgedepot: Zusammensetzung des Depots" }, tooltip: { callbacks: { label: tip } } } } });
     if (B) {
-      var gap = r.rows.map(function (x, i) { return x.wert - B.r.rows[i].wert; });
-      draw("av-chart2", { type: "bar", data: { labels: labels, datasets: [{ label: "Abstand " + nameA + " minus " + B.name, data: gap, backgroundColor: gap.map(function (g) { return g >= 0 ? GREEN : RED; }) }] }, options: { interaction: inter, scales: { y: ytitle("Euro") }, plugins: { legend: { display: false }, title: { display: true, text: "Abstand der Depotwerte: " + nameA + " minus " + B.name }, tooltip: { callbacks: { label: tip } } } } });
       var dm = r.netto - B.r.netto;
       set("av-cmp-text", nameA + ": " + money(r.netto) + " netto im Monat. " + B.name + ": " + money(B.r.netto) + " netto im Monat. Abstand: " + (dm >= 0 ? "+" : "−") + money(Math.abs(dm)) + " im Monat zugunsten von " + (dm >= 0 ? nameA : B.name) + (B.k.offen ? ". Bei " + B.name + " sind die Kosten nach der Erstattung offen, es gilt dein Wert im Feld Kosten." : "."));
       var rowsH = r.rows.map(function (x, i) { var g = x.wert - B.r.rows[i].wert; return "<tr><td>" + (o.alter + x.jahr) + "</td><td class=\"num\">" + money(x.wert) + "</td><td class=\"num\">" + money(B.r.rows[i].wert) + "</td><td class=\"num " + (g < -0.5 ? "neg" : "pos") + "\">" + (g >= 0 ? "+" : "−") + money(Math.abs(g)) + "</td></tr>"; }).join("");
