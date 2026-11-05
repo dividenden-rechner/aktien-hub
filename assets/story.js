@@ -160,7 +160,7 @@
       var kc = await load(S.chart), kp = await load(S.portrait), bar = 1866;
       /* Kursbild komplett zeigen (mit Preisachse rechts): Breite so, dass es links vom Portrait endet */
       var kpx0 = kp ? 1056 - Math.round(520 * kp.width / kp.height) : 1056;
-      if (kc) { var kw2 = S.para ? Math.min(880, kpx0 - 24 + 130) : Math.min(880, kpx0 - 24 + 20), kh2 = Math.round(kw2 * kc.height / kc.width); c.drawImage(hq(kc, kw2, kh2, 0.45), 24, bar - kh2, kw2, kh2); }
+      if (kc) { var kw2 = S.para ? Math.min(880, kpx0 - 24 + (kc.height / kc.width > 0.95 ? 190 : 130)) : Math.min(880, kpx0 - 24 + 20), kh2 = Math.round(kw2 * kc.height / kc.width); c.drawImage(hq(kc, kw2, kh2, 0.45), 24, bar - kh2, kw2, kh2); }
       if (kp) {
         var kph = 520, kpw = Math.round(kph * kp.width / kp.height), kpx = 1056 - kpw;
         c.drawImage(kp, kpx, bar - kph, kpw, kph);
