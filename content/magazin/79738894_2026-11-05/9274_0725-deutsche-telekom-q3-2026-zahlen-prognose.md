@@ -8,7 +8,7 @@ category: Quartalszahlen
 story_image: assets/magazin/deutsche-telekom-q3-2026-zahlen-prognose-story.png
 story_portrait: assets/magazin/tim-hoettges-telekom.png
 story_quote_by: "Tim Höttges | CEO Deutsche Telekom"
-story_text: "Die Telekom wächst im dritten Quartal bei Umsatz (+7,5 %) und bereinigtem EBITDA (+9,9 %), der bereinigte Überschuss steigt um 12,7 % auf 3,0 Mrd. Euro. Positiv: Rekord bei Glasfaser-Neukunden, die Prognose steigt auf rund 47,6 Mrd. Euro EBITDA. Schwächer: Der Free Cashflow legt nur um 1,4 % zu, der Konzernüberschuss fällt nach neun Monaten um 8 %. Dividende: 1,10 Euro vorgeschlagen."
+story_text: "Die Telekom schlägt die Erwartungen: 31,1 Mrd. Euro Umsatz (+7,5 %), erwartet waren rund 30,6 Mrd. Der bereinigte Überschuss steigt um 12,7 %, das Ergebnis je Aktie liegt mit 0,63 Euro über den erwarteten 0,61 Euro.\nDer Motor sitzt in den USA: T-Mobile US steigert das EBITDA um 11,4 %, ohne die USA wächst der Konzern nur um 4 %. In Deutschland gibt es Rekord bei Glasfaser (+190.000), der Free Cashflow wächst aber nur um 1,4 %.\nDie Prognose steigt auf 47,6 Mrd. Euro EBITDA, vorgeschlagen sind 1,10 Euro Dividende. Das Risiko bleibt die US-Konkurrenz: Höttges warnte zuletzt davor, SpaceX den Zugang zum Mobilfunk zu erleichtern."
 logo_name: "Deutsche Telekom"
 logo_symbol: DTE.DE
 logo_domain: telekom.com
@@ -27,9 +27,9 @@ logo_file: assets/logos/dte-de.png
     2. **Prognose leicht höher:** Für 2026 erwartet die Telekom nun rund 47,6 Mrd. Euro bereinigtes EBITDA AL (bisher 47,4 Mrd.) und rund 20,1 Mrd. Euro Free Cashflow AL (bisher 19,8 Mrd.). Das bereinigte Ergebnis je Aktie bleibt bei rund 2,20 Euro.
     3. **Dividende:** Vorgeschlagen sind 1,10 Euro je Aktie für 2026 (Vorjahr: 1,00 Euro). Für 2027 sind bis zu 2 Mrd. Euro Aktienrückkauf vorgesehen.
 
-## Deutsche Telekom im dritten Quartal: starkes Wachstum, Prognose leicht angehoben
+## Deutsche Telekom im dritten Quartal: Erwartungen übertroffen, die USA tragen das Wachstum
 
-Die Deutsche Telekom hat im dritten Quartal 2026 den Konzernumsatz um 7,5 % auf 31,1 Mrd. Euro gesteigert. Die Service-Umsätze, also die Erlöse aus laufenden Verträgen ohne Gerätehandel, wuchsen um 6,1 % auf 26,0 Mrd. Euro. Das bereinigte EBITDA nach Leasing (AL) stieg um 9,9 % auf 12,2 Mrd. Euro. Die Präsentation überschreibt die Zahlen mit „strong growth continues across the board“ (sinngemäß: Das starke Wachstum setzt sich auf breiter Front fort).
+Die Deutsche Telekom hat im dritten Quartal 2026 die Markterwartungen übertroffen. Der Konzernumsatz stieg um 7,5 % auf 31,1 Mrd. Euro, Analysten hatten laut Finanztrends mit rund 30,6 Mrd. Euro gerechnet. Das bereinigte Ergebnis je Aktie lag mit 0,63 Euro über dem erwarteten Wert von 0,61 Euro (Konsens aus wenigen Analysten). Das bereinigte EBITDA nach Leasing (AL) wuchs um 9,9 % auf 12,2 Mrd. Euro. Den größten Anteil daran hat T-Mobile US. Dort stieg das EBITDA um 11,4 %. Ohne die USA wächst der Konzern deutlich langsamer. Vor den Zahlen drehte sich die Debatte um genau diese Abhängigkeit: Tim Höttges hatte zuletzt davor gewarnt, SpaceX den Eintritt in Mobilfunkmärkte zu erleichtern, nachdem ein US-Frequenzerwerb Starlink zum Mobilfunkanbieter machen könnte. Konkrete Folgen für T-Mobile US zeigen die Zahlen noch nicht.
 
 ### Die wichtigsten Zahlen im Überblick
 
@@ -78,5 +78,7 @@ Die Telekom schlägt für 2026 eine Dividende von 1,10 Euro je Aktie vor, vorbeh
 ### Einordnung für Anleger
 
 Die Zahlen sind solide: Das Ergebnis wächst klar schneller als der Umsatz, die Prognose steigt zum zweiten Mal im Jahresverlauf leicht, und die Dividende wächst stetig. Zugleich hängt ein großer Teil des Wachstums am US-Geschäft von T-Mobile US und damit am Dollar-Kurs. Außerhalb der USA wächst der Konzern deutlich langsamer. Auch der Cashflow hält mit dem Ergebnis nicht Schritt. Die Zahlen sind Unternehmensangaben und keine Anlageberatung.
+
+*Weitere Quellen: [Finanztrends](https://www.finanztrends.de/news/deutsche-telekom-aktie-analysten-sehen-gewinn-davonziehen/) (Analystenerwartungen), [Börse Express](https://www.boerse-express.com/news/articles/deutsche-telekom-aktie-hoettges-warnt-vor-spacex-vorstoss-953551) (SpaceX-Warnung).*
 
 *Quelle: Deutsche Telekom, Präsentation zum Q3 2026 vom 5. November 2026 · [Original](https://corporate-media.telekom.com/adobe/assets/urn:aaid:aem:826ac2b2-cb2b-4eb5-a97d-8cc4f2cb0ca2/original/as/dt-26q3-praesentation.pdf?attachment=true)*
