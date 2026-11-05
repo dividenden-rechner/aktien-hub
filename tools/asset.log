@@ -1,5 +1,4 @@
-Unsplash nicht erreichbar: HTTP Error 403: Forbidden
-Foto-Kandidaten: 38 (Commons 30, Unsplash 8)
+Foto-Kandidaten: 62 (Commons 30, Unsplash 32)
   0: File:BalticServers data center.jpg | Server room of BalticServers
   1: File:CAMPUS - Military Data Center (52106762896).jpg | One of three new army data centers that has started operations. It's in the coun
   2: File:CERN data centre.jpg | CERN data centre from the outside
@@ -31,7 +30,8 @@ Foto-Kandidaten: 38 (Commons 30, Unsplash 8)
   28: File:Business applications of AI - 2024 AI index.jpg | Tasks that are automated with AI by a significant proportion of companies, in 20
   29: File:ESO data center (eso-data-centre-9101).jpg | The ESO data center collects all the data ever produced by the VLT, most of the 
 Verfuegbare Flash-Modelle: gemini-3.8-flash, gemini-3.7-flash, gemini-3.6-flash, gemini-3.5-flash, gemini-3.5-flash-lite, gemini-3.1-flash-lite, gemini-3.1-flash-lite-preview, gemini-3-flash-preview, gemini-2.5-flash, gemini-2.5-flash-lite, gemini-flash-latest, gemini-omni-1.1-flash, gemini-flash-lite-latest, gemini-omni-flash-preview
-Modell-Problem -> gemini-3.8-flash: Fehler 503: {
+Modell-Problem -> gemini-3.8-flash: The read operation timed out
+Modell-Problem -> gemini-3.7-flash: Fehler 503: {
   "error": {
     "code": 503,
     "message": "This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.",
@@ -39,7 +39,7 @@ Modell-Problem -> gemini-3.8-flash: Fehler 503: {
   }
 }
 
-Modell-Problem -> gemini-3.8-flash: Fehler 503: {
+Modell-Problem -> gemini-3.7-flash: Fehler 503: {
   "error": {
     "code": 503,
     "message": "This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.",
@@ -47,16 +47,14 @@ Modell-Problem -> gemini-3.8-flash: Fehler 503: {
   }
 }
 
-Modell-Problem -> gemini-3.8-flash: Fehler 429: {
+Modell-Problem -> gemini-3.7-flash: Fehler 503: {
   "error": {
-    "code": 429,
-    "message": "You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota ex
-Tageskontingent dieses Modells aufgebraucht, naechstes Modell.
-Modell-Problem -> gemini-3.7-flash: Fehler 429: {
-  "error": {
-    "code": 429,
-    "message": "You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota ex
-Tageskontingent dieses Modells aufgebraucht, naechstes Modell.
+    "code": 503,
+    "message": "This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.",
+    "status": "UNAVAILABLE"
+  }
+}
+
 Modell-Problem -> gemini-3.6-flash: Fehler 503: {
   "error": {
     "code": 503,
@@ -65,19 +63,8 @@ Modell-Problem -> gemini-3.6-flash: Fehler 503: {
   }
 }
 
-Modell-Problem -> gemini-3.6-flash: Fehler 429: {
-  "error": {
-    "code": 429,
-    "message": "You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota ex
-Tageskontingent dieses Modells aufgebraucht, naechstes Modell.
-Modell-Problem -> gemini-3.5-flash: Fehler 429: {
-  "error": {
-    "code": 429,
-    "message": "You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota ex
-Tageskontingent dieses Modells aufgebraucht, naechstes Modell.
-Modell: gemini-3.5-flash-lite
+Modell: gemini-3.6-flash
 Auswahl durch das Modell: 31
-Unsplash-Downloadmeldung fehlgeschlagen: HTTP Error 403: Forbidden
 Neues Foto: Unsplash klWUhr-wPJ8 -> https://images.unsplash.com/photo-1506399558188-acca6f8cbf41?ixid=M3wxMTE3OTgzfDB8MXxzZWFyY2h8Mnx8ZGF0YSUyMGNlbnRlciUyMHNlcnZlcnN8ZW58MXwwfHx8MTc5Mzc4MDE1Nnww&ixlib=rb-4.1.0&w=1600&h=900&fit=crop&crop=entropy&q=80&fm=jpg
 Logo-Angaben gesetzt, fetch_logos holt das Logo neu.
 Foto-Kandidaten: 65 (Commons 26, Unsplash 39)
@@ -112,27 +99,7 @@ Foto-Kandidaten: 65 (Commons 26, Unsplash 39)
   28: Unsplash y6zGvWKU6sE | A person in a lab coat and gloves working on a machine
   29: Unsplash FcIrL0o71Dk | This photograph depicted a Centers for Disease Control and Prevention (CDC) scie
 Verfuegbare Flash-Modelle: gemini-3.8-flash, gemini-3.7-flash, gemini-3.6-flash, gemini-3.5-flash, gemini-3.5-flash-lite, gemini-3.1-flash-lite, gemini-3.1-flash-lite-preview, gemini-3-flash-preview, gemini-2.5-flash, gemini-2.5-flash-lite, gemini-flash-latest, gemini-omni-1.1-flash, gemini-flash-lite-latest, gemini-omni-flash-preview
-Modell-Problem -> gemini-3.8-flash: Fehler 429: {
-  "error": {
-    "code": 429,
-    "message": "You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota ex
-Tageskontingent dieses Modells aufgebraucht, naechstes Modell.
-Modell-Problem -> gemini-3.7-flash: Fehler 429: {
-  "error": {
-    "code": 429,
-    "message": "You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota ex
-Tageskontingent dieses Modells aufgebraucht, naechstes Modell.
-Modell-Problem -> gemini-3.6-flash: Fehler 429: {
-  "error": {
-    "code": 429,
-    "message": "You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota ex
-Tageskontingent dieses Modells aufgebraucht, naechstes Modell.
-Modell-Problem -> gemini-3.5-flash: Fehler 429: {
-  "error": {
-    "code": 429,
-    "message": "You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota ex
-Tageskontingent dieses Modells aufgebraucht, naechstes Modell.
-Modell-Problem -> gemini-3.5-flash-lite: Fehler 503: {
+Modell-Problem -> gemini-3.8-flash: Fehler 503: {
   "error": {
     "code": 503,
     "message": "This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.",
@@ -140,7 +107,7 @@ Modell-Problem -> gemini-3.5-flash-lite: Fehler 503: {
   }
 }
 
-Modell-Problem -> gemini-3.5-flash-lite: Fehler 503: {
+Modell-Problem -> gemini-3.8-flash: Fehler 503: {
   "error": {
     "code": 503,
     "message": "This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.",
@@ -148,13 +115,59 @@ Modell-Problem -> gemini-3.5-flash-lite: Fehler 503: {
   }
 }
 
-Modell: gemini-3.5-flash-lite
-Auswahl durch das Modell: 38
-Unsplash-Downloadmeldung fehlgeschlagen: HTTP Error 403: Forbidden
-Neues Foto: Unsplash tEFl8Wqd5f0 -> https://images.unsplash.com/photo-1707944745899-104a4b12d945?ixid=M3wxMTE3OTgzfDB8MXxzZWFyY2h8NXx8Y3lzdGljJTIwZmlicm9zaXMlMjByZXNlYXJjaHxlbnwxfDB8fHwxNzkzNzI1OTk1fDA&ixlib=rb-4.1.0&w=1600&h=900&fit=crop&crop=entropy&q=80&fm=jpg
+Modell-Problem -> gemini-3.8-flash: Fehler 503: {
+  "error": {
+    "code": 503,
+    "message": "This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.",
+    "status": "UNAVAILABLE"
+  }
+}
+
+Modell-Problem -> gemini-3.7-flash: Fehler 503: {
+  "error": {
+    "code": 503,
+    "message": "This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.",
+    "status": "UNAVAILABLE"
+  }
+}
+
+Modell-Problem -> gemini-3.7-flash: Fehler 503: {
+  "error": {
+    "code": 503,
+    "message": "This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.",
+    "status": "UNAVAILABLE"
+  }
+}
+
+Modell-Problem -> gemini-3.7-flash: Fehler 503: {
+  "error": {
+    "code": 503,
+    "message": "This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.",
+    "status": "UNAVAILABLE"
+  }
+}
+
+Modell-Problem -> gemini-3.6-flash: Fehler 503: {
+  "error": {
+    "code": 503,
+    "message": "This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.",
+    "status": "UNAVAILABLE"
+  }
+}
+
+Modell-Problem -> gemini-3.6-flash: Fehler 503: {
+  "error": {
+    "code": 503,
+    "message": "This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.",
+    "status": "UNAVAILABLE"
+  }
+}
+
+Modell: gemini-3.6-flash
+Auswahl durch das Modell: 35
+Neues Foto: Unsplash 6q5QG8iIgRo -> https://images.unsplash.com/photo-1562789233-495f52b583dd?ixid=M3wxMTE3OTgzfDB8MXxzZWFyY2h8Mnx8Y3lzdGljJTIwZmlicm9zaXMlMjByZXNlYXJjaHxlbnwxfDB8fHwxNzkzNzI1OTk1fDA&ixlib=rb-4.1.0&w=1600&h=900&fit=crop&crop=entropy&q=80&fm=jpg
 Logo-Angaben gesetzt, fetch_logos holt das Logo neu.
-Unsplash nicht erreichbar: HTTP Error 403: Forbidden
-Foto-Kandidaten: 20 (Commons 12, Unsplash 8)
+Foto-Kandidaten: 28 (Commons 12, Unsplash 16)
   0: File:Gene-editing Techniques in Plant Cells.jpg | Different gene editing methods used in plant cells
   1: File:20251019 Replica DNA double helix model Berlin 01.jpg | Adenine of the Replica of the DNA double helix model by Watson and Crick in the 
   2: File:DNA Double Helix (20468181866).jpg | Credit: National Human Genome Research Institute, National Institutes of Health.
@@ -175,30 +188,67 @@ Foto-Kandidaten: 20 (Commons 12, Unsplash 8)
   17: Unsplash uD98M9OhNmc | 3D rendering capturing the double helix structure of DNA against a blue backdrop
   18: Unsplash Mm1VIPqd0OA | 3D visualization
   19: Unsplash 2GEr4fLZt8A | 3D rendering capturing the double helix structure of DNA against a blue backdrop
+  20: Unsplash XknuBmnjbKg | Vaccine. Hands of a scientist, under a sterile hood, preparing the carcinoembryo
+  21: Unsplash oCLuFi9GYNA | DNA Genotyping and Sequencing. A technician works among a fleet of desktop genom
+  22: Unsplash rHfsPolwIgk | DNA Genotyping and Sequencing. A technician observing cells under a microscope a
+  23: Unsplash LxPrHCm8-TI | DNA Genotyping and Sequencing. A technician validates genetic variants identifie
+  24: Unsplash v7ibB19EUbQ | Chanelle Case Borden, Ph.D., a postdoctoral fellow in the National Cancer Instit
+  25: Unsplash GlZv6YgCUyM | DNA Genotyping and Sequencing. A technician works among a fleet of desktop genom
+  26: Unsplash fd0b-Bl4cFc | DNA Genotyping and Sequencing. Vials containing DNA samples from studies of the 
+  27: Unsplash Vb0GY3PWSSM | A female scientist in a laboratory looks through a microscope.
 Verfuegbare Flash-Modelle: gemini-3.8-flash, gemini-3.7-flash, gemini-3.6-flash, gemini-3.5-flash, gemini-3.5-flash-lite, gemini-3.1-flash-lite, gemini-3.1-flash-lite-preview, gemini-3-flash-preview, gemini-2.5-flash, gemini-2.5-flash-lite, gemini-flash-latest, gemini-omni-1.1-flash, gemini-flash-lite-latest, gemini-omni-flash-preview
-Modell-Problem -> gemini-3.8-flash: Fehler 429: {
+Modell-Problem -> gemini-3.8-flash: Fehler 503: {
   "error": {
-    "code": 429,
-    "message": "You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota ex
-Tageskontingent dieses Modells aufgebraucht, naechstes Modell.
-Modell-Problem -> gemini-3.7-flash: Fehler 429: {
+    "code": 503,
+    "message": "This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.",
+    "status": "UNAVAILABLE"
+  }
+}
+
+Modell-Problem -> gemini-3.8-flash: The read operation timed out
+Modell-Problem -> gemini-3.7-flash: Fehler 503: {
   "error": {
-    "code": 429,
-    "message": "You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota ex
-Tageskontingent dieses Modells aufgebraucht, naechstes Modell.
-Modell-Problem -> gemini-3.6-flash: Fehler 429: {
+    "code": 503,
+    "message": "This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.",
+    "status": "UNAVAILABLE"
+  }
+}
+
+Modell-Problem -> gemini-3.7-flash: Fehler 503: {
   "error": {
-    "code": 429,
-    "message": "You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota ex
-Tageskontingent dieses Modells aufgebraucht, naechstes Modell.
-Modell-Problem -> gemini-3.5-flash: Fehler 429: {
+    "code": 503,
+    "message": "This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.",
+    "status": "UNAVAILABLE"
+  }
+}
+
+Modell-Problem -> gemini-3.7-flash: Fehler 503: {
   "error": {
-    "code": 429,
-    "message": "You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota ex
-Tageskontingent dieses Modells aufgebraucht, naechstes Modell.
-Modell: gemini-3.5-flash-lite
-Auswahl durch das Modell: 6
-Neues Foto: File:Genetics Laboratory UMAR Puerto Escondido.jpg -> assets/magazin/crispr-therapeutics-q3-2026-casgevy-verlust-foto.jpg
+    "code": 503,
+    "message": "This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.",
+    "status": "UNAVAILABLE"
+  }
+}
+
+Modell-Problem -> gemini-3.6-flash: Fehler 503: {
+  "error": {
+    "code": 503,
+    "message": "This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.",
+    "status": "UNAVAILABLE"
+  }
+}
+
+Modell-Problem -> gemini-3.6-flash: Fehler 503: {
+  "error": {
+    "code": 503,
+    "message": "This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.",
+    "status": "UNAVAILABLE"
+  }
+}
+
+Modell: gemini-3.6-flash
+Auswahl durch das Modell: 7
+Neues Foto: File:CRISPR-Cas9 Editing of the Genome (26453307604).jpg -> assets/magazin/crispr-therapeutics-q3-2026-casgevy-verlust-foto.jpg
 Logo-Angaben gesetzt, fetch_logos holt das Logo neu.
 Foto-Kandidaten: 60 (Commons 30, Unsplash 30)
   0: File:Day-1-Big-Data-&-Analytics-Conference-0077 (26760110866).jpg | Day-1-Big-Data-&-Analytics-Conference-0077
@@ -219,45 +269,77 @@ Foto-Kandidaten: 60 (Commons 30, Unsplash 30)
   15: File:Control room, Callide Power Station, circa 1967.jpg | Control room, Callide Power Station, ciirca 1967. Callide A power station opened
   16: File:Control room..jpg | Interior of filtration control room.
   17: File:Control room Johan Neerman.jpg | Control room Johan Neerman
-  18: File:Control room cabinets.jpg | Control room cabinets at Point Tupper Generating Station, opened up, revealing l
-  19: File:Control room circle.jpg | Control room circle in Vijayawada
-  20: File:Control room of BESSY II, 2025-06-28.jpeg | Control room of BESSY II
-  21: File:Control room perspectives.jpg | simulationcourse, control room
-  22: File:Control room pt tupper.jpg | Control room in Fossil fuel power plant in Point Tupper, Nova Scotia . There are
-  23: File:Diagnostic monitors in the control room of Wendelstein 7-X.jpg | A bank of monitors in the control room for the Wendelstein 7-X stellarator at th
-  24: File:ESA-ESOC Main Control Room.jpg | ESA-ESOC Main Control Room with the Hera team assembling
-  25: File:Engine Control Room Harmony of the Seas 2026.jpg | The engine control room on Harmony of the Seas .
-  26: File:Eugene F. Kranz at his console at the NASA Mission Control Center.jpg | Eugene F. Kranz, flight director, is shown at his console on May 30, 1965, in th
-  27: File:Multi-monitor workstations in the Wendelstein 7-X control room.jpg | his photo captures the intricate setup behind the workstations in the control ro
-  28: File:Real-time bus tracking control room in Lebanon.jpg | A group of people in a control room monitoring a fleet management telematics sys
-  29: File:SPNN Studio control room.jpg | Studio control room Saint Paul Neighborhood Network (SPNN) 550 Vandalia St #170 
+  18: File:Control room Vemork.jpg | It's a while since I had seen computers like this. I'm pretty sure that this set
+  19: File:Control room cabinets.jpg | Control room cabinets at Point Tupper Generating Station, opened up, revealing l
+  20: File:Control room circle.jpg | Control room circle in Vijayawada
+  21: File:Control room of BESSY II, 2025-06-28.jpeg | Control room of BESSY II
+  22: File:Control room perspectives.jpg | simulationcourse, control room
+  23: File:Control room pt tupper.jpg | Control room in Fossil fuel power plant in Point Tupper, Nova Scotia . There are
+  24: File:Diagnostic monitors in the control room of Wendelstein 7-X.jpg | A bank of monitors in the control room for the Wendelstein 7-X stellarator at th
+  25: File:ESA-ESOC Main Control Room.jpg | ESA-ESOC Main Control Room with the Hera team assembling
+  26: File:Engine Control Room Harmony of the Seas 2026.jpg | The engine control room on Harmony of the Seas .
+  27: File:Eugene F. Kranz at his console at the NASA Mission Control Center.jpg | Eugene F. Kranz, flight director, is shown at his console on May 30, 1965, in th
+  28: File:Multi-monitor workstations in the Wendelstein 7-X control room.jpg | his photo captures the intricate setup behind the workstations in the control ro
+  29: File:Real-time bus tracking control room in Lebanon.jpg | A group of people in a control room monitoring a fleet management telematics sys
 Verfuegbare Flash-Modelle: gemini-3.8-flash, gemini-3.7-flash, gemini-3.6-flash, gemini-3.5-flash, gemini-3.5-flash-lite, gemini-3.1-flash-lite, gemini-3.1-flash-lite-preview, gemini-3-flash-preview, gemini-2.5-flash, gemini-2.5-flash-lite, gemini-flash-latest, gemini-omni-1.1-flash, gemini-flash-lite-latest, gemini-omni-flash-preview
-Modell-Problem -> gemini-3.8-flash: Fehler 429: {
+Modell-Problem -> gemini-3.8-flash: Fehler 503: {
   "error": {
-    "code": 429,
-    "message": "You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota ex
-Tageskontingent dieses Modells aufgebraucht, naechstes Modell.
+    "code": 503,
+    "message": "This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.",
+    "status": "UNAVAILABLE"
+  }
+}
+
+Modell-Problem -> gemini-3.8-flash: Fehler 503: {
+  "error": {
+    "code": 503,
+    "message": "This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.",
+    "status": "UNAVAILABLE"
+  }
+}
+
+Modell-Problem -> gemini-3.8-flash: Fehler 503: {
+  "error": {
+    "code": 503,
+    "message": "This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.",
+    "status": "UNAVAILABLE"
+  }
+}
+
+Modell-Problem -> gemini-3.7-flash: Fehler 503: {
+  "error": {
+    "code": 503,
+    "message": "This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.",
+    "status": "UNAVAILABLE"
+  }
+}
+
+Modell-Problem -> gemini-3.7-flash: Fehler 503: {
+  "error": {
+    "code": 503,
+    "message": "This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.",
+    "status": "UNAVAILABLE"
+  }
+}
+
 Modell-Problem -> gemini-3.7-flash: Fehler 429: {
   "error": {
     "code": 429,
     "message": "You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota ex
 Tageskontingent dieses Modells aufgebraucht, naechstes Modell.
-Modell-Problem -> gemini-3.6-flash: Fehler 429: {
+Modell-Problem -> gemini-3.6-flash: Fehler 503: {
   "error": {
-    "code": 429,
-    "message": "You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota ex
-Tageskontingent dieses Modells aufgebraucht, naechstes Modell.
-Modell-Problem -> gemini-3.5-flash: Fehler 429: {
-  "error": {
-    "code": 429,
-    "message": "You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota ex
-Tageskontingent dieses Modells aufgebraucht, naechstes Modell.
-Modell: gemini-3.5-flash-lite
-Auswahl durch das Modell: 28
-Neues Foto: File:Real-time bus tracking control room in Lebanon.jpg -> assets/magazin/palantir-q3-2026-zahlen-prognose-foto.jpg
+    "code": 503,
+    "message": "This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.",
+    "status": "UNAVAILABLE"
+  }
+}
+
+Modell: gemini-3.6-flash
+Auswahl durch das Modell: 34
+Neues Foto: Unsplash qwtCeJ5cLYs -> https://images.unsplash.com/photo-1526628953301-3e589a6a8b74?ixid=M3wxMTE3OTgzfDB8MXxzZWFyY2h8NXx8ZGF0YSUyMGFuYWx5dGljc3xlbnwxfDB8fHwxNzkzNzgwODk2fDA&ixlib=rb-4.1.0&w=1600&h=900&fit=crop&crop=entropy&q=80&fm=jpg
 Logo-Angaben gesetzt, fetch_logos holt das Logo neu.
-Unsplash nicht erreichbar: HTTP Error 403: Forbidden
-Foto-Kandidaten: 37 (Commons 29, Unsplash 8)
+Foto-Kandidaten: 53 (Commons 29, Unsplash 24)
   0: File:Fawley Oil Refinery (27149863837).jpg | View of Fawley Oil Refinery on the mainland, from the ferry at East Cowes, Isle 
   1: File:Light from Preemraff oil refinery, Lysekil Municipality.jpg | The light from Preemraff oil refinery at night, as seen from the water tower in 
   2: File:Mina-Al-Ahmadi oil refinery night.jpg | An oil refinery in Mina-Al-Ahmadi, Kuwait
@@ -299,23 +381,19 @@ Modell-Problem -> gemini-3.7-flash: Fehler 429: {
     "code": 429,
     "message": "You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota ex
 Tageskontingent dieses Modells aufgebraucht, naechstes Modell.
-Modell-Problem -> gemini-3.6-flash: Fehler 429: {
+Modell-Problem -> gemini-3.6-flash: Fehler 503: {
   "error": {
-    "code": 429,
-    "message": "You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota ex
-Tageskontingent dieses Modells aufgebraucht, naechstes Modell.
-Modell-Problem -> gemini-3.5-flash: Fehler 429: {
-  "error": {
-    "code": 429,
-    "message": "You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota ex
-Tageskontingent dieses Modells aufgebraucht, naechstes Modell.
-Modell: gemini-3.5-flash-lite
-Auswahl durch das Modell: 36
-Unsplash-Downloadmeldung fehlgeschlagen: HTTP Error 403: Forbidden
-Neues Foto: Unsplash Wb4vcBqyGT8 -> https://images.unsplash.com/photo-1786532852011-443cba5dc9fe?ixid=M3wxMTE3OTgzfDB8MXxzZWFyY2h8OHx8b2lsJTIwcmVmaW5lcnklMjBhdCUyMG5pZ2h0fGVufDF8MHx8fDE3OTM3ODEwNDd8MA&ixlib=rb-4.1.0&w=1600&h=900&fit=crop&crop=entropy&q=80&fm=jpg
+    "code": 503,
+    "message": "This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.",
+    "status": "UNAVAILABLE"
+  }
+}
+
+Modell: gemini-3.6-flash
+Auswahl durch das Modell: -1
+Kein passendes Foto gefunden, altes bleibt.
 Logo-Angaben gesetzt, fetch_logos holt das Logo neu.
-Unsplash nicht erreichbar: HTTP Error 403: Forbidden
-Foto-Kandidaten: 19 (Commons 19, Unsplash 0)
+Foto-Kandidaten: 59 (Commons 19, Unsplash 40)
   0: File:Datacenter Server Racks (22370909788).jpg | Real Estate
   1: File:Duga-1 radar data center inside empty server racks 2018.jpg | Disclaimer of best intentions Traveling to the Chernobyl exclusion zone 'as a to
   2: File:Racks Amravati Data Center.jpg | Data Storage Racks at Pi Data Centers
@@ -335,6 +413,17 @@ Foto-Kandidaten: 19 (Commons 19, Unsplash 0)
   16: File:Opinions on AI risk by country - 2024 AI index.jpg | Chart representing the percentage of people reporting nervousness about AI, by c
   17: File:Poll on AI effect on jobs - 2024 AI index.jpg | 2023 opinion poll on whether people believe AI will change or replace their own 
   18: File:Private investment in generative AI - 2024 AI index.jpg | Private investment in AI (pink) and generative AI (green). The data is from Quid
+  19: Unsplash 5b9Lr-ggr0E | chip, chipset, AI, artificial intelligence, microchip, technology, innovation, e
+  20: Unsplash U9e6ySWMW_0 | chip, chipset, AI, artificial intelligence, microchip, technology, innovation, e
+  21: Unsplash nWgpCe-LQa4 | I took some macros of my computer while it was running. The photos turned out re
+  22: Unsplash 2bJfnIwQvpk | A new amd ryzen processor sits on a desk
+  23: Unsplash N0QoGN75bkQ | 3D Icon of AMD
+  24: Unsplash DRZ26ZSVTtg | Amd logo illuminated on a dark ceiling
+  25: Unsplash UxaHUdG3SzU | Asus prime b550-plus motherboard close-up view
+  26: Unsplash sw8-yizppMs | black AMD graphics card
+  27: Unsplash lVZjvw-u9V8 | Electric Control Cabinet Production Factory
+  28: Unsplash M5tzZtFCOfs | cable network
+  29: Unsplash 2JJ3wBHu4_0 | a rack of servers in a server room
 Verfuegbare Flash-Modelle: gemini-3.8-flash, gemini-3.7-flash, gemini-3.6-flash, gemini-3.5-flash, gemini-3.5-flash-lite, gemini-3.1-flash-lite, gemini-3.1-flash-lite-preview, gemini-3-flash-preview, gemini-2.5-flash, gemini-2.5-flash-lite, gemini-flash-latest, gemini-omni-1.1-flash, gemini-flash-lite-latest, gemini-omni-flash-preview
 Modell-Problem -> gemini-3.8-flash: Fehler 429: {
   "error": {
@@ -346,22 +435,43 @@ Modell-Problem -> gemini-3.7-flash: Fehler 429: {
     "code": 429,
     "message": "You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota ex
 Tageskontingent dieses Modells aufgebraucht, naechstes Modell.
-Modell-Problem -> gemini-3.6-flash: Fehler 429: {
+Modell-Problem -> gemini-3.6-flash: Fehler 503: {
   "error": {
-    "code": 429,
-    "message": "You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota ex
-Tageskontingent dieses Modells aufgebraucht, naechstes Modell.
-Modell-Problem -> gemini-3.5-flash: Fehler 429: {
+    "code": 503,
+    "message": "This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.",
+    "status": "UNAVAILABLE"
+  }
+}
+
+Modell-Problem -> gemini-3.6-flash: Fehler 503: {
   "error": {
-    "code": 429,
-    "message": "You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota ex
-Tageskontingent dieses Modells aufgebraucht, naechstes Modell.
-Modell: gemini-3.5-flash-lite
-Auswahl durch das Modell: 0
-Neues Foto: File:Datacenter Server Racks (22370909788).jpg -> assets/magazin/amd-q3-2026-quartalszahlen-foto.jpg
+    "code": 503,
+    "message": "This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.",
+    "status": "UNAVAILABLE"
+  }
+}
+
+Modell-Problem -> gemini-3.6-flash: Fehler 503: {
+  "error": {
+    "code": 503,
+    "message": "This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.",
+    "status": "UNAVAILABLE"
+  }
+}
+
+Modell-Problem -> gemini-3.5-flash: Fehler 503: {
+  "error": {
+    "code": 503,
+    "message": "This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.",
+    "status": "UNAVAILABLE"
+  }
+}
+
+Modell: gemini-3.5-flash
+Auswahl durch das Modell: 22
+Neues Foto: Unsplash 2bJfnIwQvpk -> https://images.unsplash.com/photo-1753097617151-b8994eb0bb3e?ixid=M3wxMTE3OTgzfDB8MXxzZWFyY2h8NHx8QU1EJTIwSW5zdGluY3QlMjBhY2NlbGVyYXRvcnxlbnwxfDB8fHwxNzkzODY4NTIyfDA&ixlib=rb-4.1.0&w=1600&h=900&fit=crop&crop=entropy&q=80&fm=jpg
 Logo-Angaben gesetzt, fetch_logos holt das Logo neu.
-Unsplash nicht erreichbar: HTTP Error 403: Forbidden
-Foto-Kandidaten: 30 (Commons 30, Unsplash 0)
+Foto-Kandidaten: 66 (Commons 30, Unsplash 36)
   0: File:Corridor, Nambour General Hospital, 2025,.jpg | Corridor, Nambour General Hospital, Queensland, 2025
   1: File:Corridor at Mater Private Hospital, Brisbane.jpg | Corridor at Mater Private Hospital, Brisbane
   2: File:Corridor in Uddevalla Hospital.jpg | Corridor in Uddevalla Hospital, Uddevalla, Sweden.
@@ -403,22 +513,27 @@ Modell-Problem -> gemini-3.7-flash: Fehler 429: {
     "code": 429,
     "message": "You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota ex
 Tageskontingent dieses Modells aufgebraucht, naechstes Modell.
-Modell-Problem -> gemini-3.6-flash: Fehler 429: {
+Modell-Problem -> gemini-3.6-flash: Fehler 503: {
   "error": {
-    "code": 429,
-    "message": "You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota ex
-Tageskontingent dieses Modells aufgebraucht, naechstes Modell.
-Modell-Problem -> gemini-3.5-flash: Fehler 429: {
+    "code": 503,
+    "message": "This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.",
+    "status": "UNAVAILABLE"
+  }
+}
+
+Modell-Problem -> gemini-3.6-flash: Fehler 503: {
   "error": {
-    "code": 429,
-    "message": "You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota ex
-Tageskontingent dieses Modells aufgebraucht, naechstes Modell.
-Modell: gemini-3.5-flash-lite
+    "code": 503,
+    "message": "This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.",
+    "status": "UNAVAILABLE"
+  }
+}
+
+Modell: gemini-3.6-flash
 Auswahl durch das Modell: 15
 Neues Foto: File:Patient lying in bed in intensive care unit of hospital with apparatuses and hemodialysis machine.jpg -> assets/magazin/fresenius-q3-2026-quartalszahlen-foto.jpg
 Logo-Angaben gesetzt, fetch_logos holt das Logo neu.
-Unsplash nicht erreichbar: HTTP Error 403: Forbidden
-Foto-Kandidaten: 18 (Commons 4, Unsplash 14)
+Foto-Kandidaten: 26 (Commons 4, Unsplash 22)
   0: File:COVIran Barekat vaccine production 03.jpg | Production of COVIran Barekat vaccine, an Iranian COVID-19 vaccine, in a newly c
   1: File:COVIran Barekat vaccine production 06.jpg | Production of COVIran Barekat vaccine, an Iranian COVID-19 vaccine, in a newly c
   2: File:Novo Nordisk, Hillerød, 2024.jpg | Novo Nordisk, Hillerød, 2024
@@ -437,6 +552,14 @@ Foto-Kandidaten: 18 (Commons 4, Unsplash 14)
   15: Unsplash CQT9TjSVMPg | white branded gyro pen
   16: Unsplash vEbgdrArfq8 | ZIMHI Naloxone
   17: Unsplash pnRJ4RXgabw | McKesson 27g 1/2" 1cc syringe, individually wrapped
+  18: Unsplash WNX6uk-1LV4 | GLSUN is a optical solution company, offer its customers low-cost, reliable opti
+  19: Unsplash xD5SWy7hMbw | Liquid washing equipment
+  20: Unsplash PT70CT6mATQ | Chocolate Factory
+  21: Unsplash KR9j7uqFhnI | Production line for packaging cut greens in an urban farm
+  22: Unsplash dFlMV5kIMnA | Venus Pharma is a well-known name in the pharmaceutical industry, recognized for
+  23: Unsplash A5hfHOIPdTw | GLSUN is a optical solution company, offer its customers low-cost, reliable opti
+  24: Unsplash GiuvVfcNFzY | Bottles being filled on an automated production line
+  25: Unsplash lzxe6x_rZG8 | A worker operates machinery in a cleanroom
 Verfuegbare Flash-Modelle: gemini-3.8-flash, gemini-3.7-flash, gemini-3.6-flash, gemini-3.5-flash, gemini-3.5-flash-lite, gemini-3.1-flash-lite, gemini-3.1-flash-lite-preview, gemini-3-flash-preview, gemini-2.5-flash, gemini-2.5-flash-lite, gemini-flash-latest, gemini-omni-1.1-flash, gemini-flash-lite-latest, gemini-omni-flash-preview
 Modell-Problem -> gemini-3.8-flash: Fehler 429: {
   "error": {
@@ -460,11 +583,9 @@ Modell-Problem -> gemini-3.5-flash: Fehler 429: {
 Tageskontingent dieses Modells aufgebraucht, naechstes Modell.
 Modell: gemini-3.5-flash-lite
 Auswahl durch das Modell: 5
-Unsplash-Downloadmeldung fehlgeschlagen: HTTP Error 403: Forbidden
 Neues Foto: Unsplash TzKc7FGaL7Y -> https://images.unsplash.com/photo-1745939921744-ba8ef27940bf?ixid=M3wxMTE3OTgzfDB8MXxzZWFyY2h8Mnx8aW5qZWN0aW9uJTIwcGVuJTIwY2xvc2UlMjB1cHxlbnwxfDB8fHwxNzkzNzgxMTQ1fDA&ixlib=rb-4.1.0&w=1600&h=900&fit=crop&crop=entropy&q=80&fm=jpg
 Logo-Angaben gesetzt, fetch_logos holt das Logo neu.
-Unsplash nicht erreichbar: HTTP Error 403: Forbidden
-Foto-Kandidaten: 7 (Commons 7, Unsplash 0)
+Foto-Kandidaten: 23 (Commons 7, Unsplash 16)
   0: File:Antikalk 01.jpg | Anticalc/Decalcifier packaging from Germany, ingredients highlighted
   1: File:Beale Carpet Cleaner - Sarah Stierch.jpg | Beale Carpet Cleaner, Sonoma, California
   2: File:Gebruiksartikelen DSCF5070.jpg | Zicht op diverse gebruiksartikelen, een deel van het interieur, van het Museum d
@@ -472,7 +593,31 @@ Foto-Kandidaten: 7 (Commons 7, Unsplash 0)
   4: File:Kleine cilindrische koker van reinigingstabletten voor kunstgebit, opschrift “Ultradent” in wit en blauw, objectnr 79816.JPG | Objectgegevens Titel: Kleine cilindrische koker van reinigingstabletten voor kun
   5: File:Rechthoekig pak zeep- en wasmiddelmonsters, veelkleurig, objectnr 76619.JPG | Objectgegevens Titel: Rechthoekig pak zeep- en wasmiddelmonsters, veelkleurig Be
   6: File:Truck mount steam carpet cleaner.JPG | Pro Carpet truck mount steam carpet cleaner, Fairway Trails Apartments, 228 S. H
+  7: Unsplash __ZMnefoI3k | person holding yellow plastic spray bottle
+  8: Unsplash XxAy813D66I | white plastic bottles on white plastic container
+  9: Unsplash xp-ND7NjWaA | Cleaning, sanitizing, and disinfecting supplies
+  10: Unsplash DJcVOQUZxF0 | Woman gathering cleaning supplies
+  11: Unsplash xQdp-KbIG3s | KINN Living eco-friendly refillable cleaning products. Photographed by Ollie Gro
+  12: Unsplash BVrJBcmn0EU | a yellow wall with a blue and white towel from it
+  13: Unsplash OxdnFg-I3Lc | white plastic pump bottle on white table
+  14: Unsplash SaVqlZczQXs | At GoGoNano, we understand the importance of maintaining a clean and healthy liv
+  15: Unsplash fT2rW9PkM0A | Toothbrush, toothpaste, and shampoo on bathroom counter
+  16: Unsplash lile4HrTcvQ | Watsons is an international health, beauty, and personal care chain store.
+  17: Unsplash PL1WRIJOQuQ | Shelves stocked with rows of hair care products
+  18: Unsplash fbI6cQi45eQ | A traditional Thai retail shop specializing in local herbal remedies and medicin
+  19: Unsplash n_EPVz5vVNs | A traditional Thai retail shop specializing in local herbal remedies and medicin
+  20: Unsplash B-xOubb2A7I | Rows of colorful tiles arranged by shade on a shelf
+  21: Unsplash qJ7-UhYBTsY | The Quiet Interval Between Things . . .
+  22: Unsplash 0ktm9oSGpFs | People in a modern store with display shelves
 Verfuegbare Flash-Modelle: gemini-3.8-flash, gemini-3.7-flash, gemini-3.6-flash, gemini-3.5-flash, gemini-3.5-flash-lite, gemini-3.1-flash-lite, gemini-3.1-flash-lite-preview, gemini-3-flash-preview, gemini-2.5-flash, gemini-2.5-flash-lite, gemini-flash-latest, gemini-omni-1.1-flash, gemini-flash-lite-latest, gemini-omni-flash-preview
+Modell-Problem -> gemini-3.8-flash: Fehler 503: {
+  "error": {
+    "code": 503,
+    "message": "This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.",
+    "status": "UNAVAILABLE"
+  }
+}
+
 Modell-Problem -> gemini-3.8-flash: Fehler 429: {
   "error": {
     "code": 429,
@@ -494,8 +639,8 @@ Modell-Problem -> gemini-3.5-flash: Fehler 429: {
     "message": "You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota ex
 Tageskontingent dieses Modells aufgebraucht, naechstes Modell.
 Modell: gemini-3.5-flash-lite
-Auswahl durch das Modell: -1
-Kein passendes Foto gefunden, altes bleibt.
+Auswahl durch das Modell: 17
+Neues Foto: Unsplash PL1WRIJOQuQ -> https://images.unsplash.com/photo-1776105609708-3d8908ab4dc2?ixid=M3wxMTE3OTgzfDB8MXxzZWFyY2h8M3x8cGVyc29uYWwlMjBjYXJlJTIwcHJvZHVjdHMlMjBzaGVsZnxlbnwxfDB8fHwxNzkzODY4NzM0fDA&ixlib=rb-4.1.0&w=1600&h=900&fit=crop&crop=entropy&q=80&fm=jpg
 Logo-Angaben gesetzt, fetch_logos holt das Logo neu.
 Unsplash nicht erreichbar: HTTP Error 403: Forbidden
 Foto-Kandidaten: 30 (Commons 30, Unsplash 0)
@@ -582,10 +727,10 @@ Foto-Kandidaten: 30 (Commons 30, Unsplash 0)
   23: File:A Chick-fil-A fast food restaurant interior in Cornelia, Georgia 07.jpg | Interior of a Chick-fil-A fast-food restaurant in Cornelia , Habersham County, G
   24: File:A modern Burger King fast food restaurant in Ooltewah, Tennessee.jpg | A modern Burger King fast food restaurant in Ooltewah, Tennessee
   25: File:Exterior of a modern Taco Bell fast food restaurant chain location in Murphy, North Carolina 02.jpg | Exterior of a modern Taco Bell fast food restaurant chain location in Murphy, No
-  26: File:Hardee's fast-food restaurant in Franklin, North Carolina.jpg | Hardee's fast-food restaurant in Franklin, North Carolina
-  27: File:Jack's Family Restaurants fast food chain location in Collinsville, Alabama 01.jpg | Jack's Family Restaurants fast food chain location in Collinsville, Alabama
-  28: File:Jack's Family Restaurants fast food chain location in Collinsville, Alabama 02.jpg | Jack's Family Restaurants fast food chain location in Collinsville, Alabama
-  29: File:Jack's Family Restaurants fast food chain location in Collinsville, Alabama 03.jpg | Jack's Family Restaurants fast food chain location in Collinsville, Alabama
+  26: File:Exterior of a modern Taco Bell fast food restaurant chain location in Murphy, North Carolina 03.jpg | Exterior of a modern Taco Bell fast food restaurant chain location in Murphy, No
+  27: File:Hardee's fast-food restaurant in Franklin, North Carolina.jpg | Hardee's fast-food restaurant in Franklin, North Carolina
+  28: File:Jack's Family Restaurants fast food chain location in Collinsville, Alabama 01.jpg | Jack's Family Restaurants fast food chain location in Collinsville, Alabama
+  29: File:Jack's Family Restaurants fast food chain location in Collinsville, Alabama 02.jpg | Jack's Family Restaurants fast food chain location in Collinsville, Alabama
 Verfuegbare Flash-Modelle: gemini-3.8-flash, gemini-3.7-flash, gemini-3.6-flash, gemini-3.5-flash, gemini-3.5-flash-lite, gemini-3.1-flash-lite, gemini-3.1-flash-lite-preview, gemini-3-flash-preview, gemini-2.5-flash, gemini-2.5-flash-lite, gemini-flash-latest, gemini-omni-1.1-flash, gemini-flash-lite-latest, gemini-omni-flash-preview
 Modell-Problem -> gemini-3.8-flash: Fehler 429: {
   "error": {
@@ -635,6 +780,14 @@ Foto-Kandidaten: 21 (Commons 21, Unsplash 0)
   19: File:Refining Innovation 160223-A-AP268-776.jpg | Spc. Jordan Smith, an Army medical lab specialist with the U.S. Army Institute o
   20: File:Test tubes (1).jpg | Title Test Tubes Description A laboratory is back lit with a rack of test tubes 
 Verfuegbare Flash-Modelle: gemini-3.8-flash, gemini-3.7-flash, gemini-3.6-flash, gemini-3.5-flash, gemini-3.5-flash-lite, gemini-3.1-flash-lite, gemini-3.1-flash-lite-preview, gemini-3-flash-preview, gemini-2.5-flash, gemini-2.5-flash-lite, gemini-flash-latest, gemini-omni-1.1-flash, gemini-flash-lite-latest, gemini-omni-flash-preview
+Modell-Problem -> gemini-3.8-flash: Fehler 503: {
+  "error": {
+    "code": 503,
+    "message": "This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.",
+    "status": "UNAVAILABLE"
+  }
+}
+
 Modell-Problem -> gemini-3.8-flash: Fehler 429: {
   "error": {
     "code": 429,
@@ -655,6 +808,14 @@ Modell-Problem -> gemini-3.5-flash: Fehler 429: {
     "code": 429,
     "message": "You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota ex
 Tageskontingent dieses Modells aufgebraucht, naechstes Modell.
+Modell-Problem -> gemini-3.5-flash-lite: Fehler 503: {
+  "error": {
+    "code": 503,
+    "message": "This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.",
+    "status": "UNAVAILABLE"
+  }
+}
+
 Modell: gemini-3.5-flash-lite
 Auswahl durch das Modell: 2
 Neues Foto: File:Clinical Chemistry Analyzer , Клинички биохемиски анализатор 3.jpg -> assets/magazin/siemens-healthineers-olyrian-diagnostics-umbenennung-foto.jpg
