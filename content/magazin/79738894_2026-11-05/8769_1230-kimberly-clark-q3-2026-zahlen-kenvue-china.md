@@ -12,11 +12,6 @@ story_text: "Kimberly-Clark liefert beim Gewinn, nicht beim Umsatz: Das bereinig
 logo_name: "Kimberly-Clark"
 logo_symbol: KMB
 logo_domain: kimberly-clark.com
-image: assets/magazin/kimberly-clark-q3-2026-zahlen-kenvue-china-foto.jpg
-image_alt: "Foto zu Kimberly-Clark: Chrome Kleenex Tissues Box - Matane, Quebec - July 2022"
-image_credit: "Foto: Wiki.cullin / Wikimedia Commons, CC BY-SA 4.0"
-image_source: https://commons.wikimedia.org/wiki/File:Chrome_Kleenex_Tissues_Box_-_Matane,_Quebec_-_July_2022.jpg
-image_artist_url: 
 logo_file: assets/logos/kmb.png
 ---
 <!-- PRÜFEN: Quelle: Kimberly-Clark, Q3-2026-Pressemitteilung und Praesentation vom 05.11.2026 (PDF von Divi). Konsens: 247wallst.com (EPS 1,65 USD, Umsatz 4,12 Mrd. USD). Kursreaktion nicht ermittelt (Investing.com nicht abrufbar). -->
