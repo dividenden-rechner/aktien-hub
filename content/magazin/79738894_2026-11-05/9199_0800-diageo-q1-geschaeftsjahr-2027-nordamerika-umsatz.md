@@ -13,6 +13,7 @@ story_text: "Diageo schlägt die Erwartungen: Der organische Umsatz steigt ohne 
 logo_name: "Diageo"
 logo_symbol: DGE.L
 logo_domain: diageo.com
+logo_file: assets/logos/dge-l.png
 ---
 <!-- PRÜFEN: Quelle: Diageo, Q1-FY27-Handelsupdate (Praesentation, Folien 4 bis 11 als Handy-Screenshots von Divi). Konsens/Analystenstimmen: Reuters via RTE, Investing.com. -->
 <!-- PRÜFEN: Aufmacherfoto fehlt noch (tools/asset.request). Kursbild = Diageo-ADR (NYSE: DEO, USD, Yahoo, 04.11. Schluss 97,70, vorboerslich 100,39). Portrait Sir Dave Lewis von Divi (freigestellt). -->
