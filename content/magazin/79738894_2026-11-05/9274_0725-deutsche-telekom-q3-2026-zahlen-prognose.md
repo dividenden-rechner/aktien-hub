@@ -5,7 +5,7 @@ date: 2026-11-05 07:25
 author: "Redaktions-Team Dividenden-Rechner.de"
 author_bio: "Das Redaktions-Team von Dividenden-Rechner.de schreibt über Dividendenaktien, Kennzahlen und Steuerthemen für Privatanleger. Die Rechner und Auswertungen auf der Seite entstehen im eigenen Haus."
 category: Quartalszahlen
-image: assets/magazin/deutsche-telekom-q3-2026-zahlen-prognose-foto.jpg
+image: assets/magazin/deutsche-telekom-q3-2026-zahlen-prognose-zentrale.jpg
 image_alt: "Die Konzernzentrale der Deutschen Telekom in Bonn mit dem T-Logo auf dem Dach"
 image_credit: "Foto: Deutsche Telekom / Norbert Ittermann"
 image_source: https://www.telekom.com/de/newsroom/mediencenter/fotos/deutsche-telekom-logo
