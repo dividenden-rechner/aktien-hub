@@ -10,7 +10,7 @@ quelle_name: "Pressemitteilung Vertex Pharmaceuticals zum dritten Quartal 2026"
 logo_name: "Vertex Pharmaceuticals"
 logo_symbol: VRTX
 logo_domain: vrtx.com
-image: https://images.unsplash.com/photo-1732690233982-1d4567384ea1?ixid=M3wxMTE3OTgzfDB8MXxzZWFyY2h8Mnx8cGhhcm1hY2V1dGljYWwlMjBsYWJvcmF0b3J5fGVufDF8MHx8fDE3OTM4NzYyNjh8MA&ixlib=rb-4.1.0&w=1600&h=900&fit=crop&crop=entropy&q=80&fm=jpg
+image: https://images.unsplash.com/photo-1732690233982-1d4567384ea1?ixid=M3wxMTE3OTgzfDB8MXxzZWFyY2h8Mnx8cGhhcm1hY2V1dGljYWwlMjBsYWJvcmF0b3J5fGVufDF8MHx8fDE3OTM4Mjg2MTB8MA&ixlib=rb-4.1.0&w=1600&h=900&fit=crop&crop=entropy&q=80&fm=jpg
 image_alt: "Foto zu Vertex Pharmaceuticals: A person in a lab coat and gloves working on a machine"
 image_credit: "Foto: Mina Rad auf Unsplash"
 image_source: https://unsplash.com/photos/a-person-in-a-lab-coat-and-gloves-working-on-a-machine-y6zGvWKU6sE?utm_source=dividenden-rechner&utm_medium=referral

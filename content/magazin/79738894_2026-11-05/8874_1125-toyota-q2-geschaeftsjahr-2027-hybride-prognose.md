@@ -12,11 +12,11 @@ story_quote_by: "Kenta Kon | CEO Toyota"
 logo_name: "Toyota"
 logo_symbol: 7203.T
 logo_domain: global.toyota
-image: https://images.unsplash.com/photo-1632137924251-fcea5ff46035?ixid=M3wxMTE3OTgzfDB8MXxzZWFyY2h8NXx8VG95b3RhJTIwUkFWNCUyMGh5YnJpZHxlbnwxfDB8fHwxNzkzODc0OTk5fDA&ixlib=rb-4.1.0&w=1600&h=900&fit=crop&crop=entropy&q=80&fm=jpg
-image_alt: "Foto zu Toyota: a blue toyota rav parked in front of a house"
-image_credit: "Foto: Stephen Andrews auf Unsplash"
-image_source: https://unsplash.com/photos/a-blue-toyota-rav-parked-in-front-of-a-house-PNyyffLvWIs?utm_source=dividenden-rechner&utm_medium=referral
-image_artist_url: https://unsplash.com/@porkbellysteve?utm_source=dividenden-rechner&utm_medium=referral
+image: assets/magazin/toyota-q2-geschaeftsjahr-2027-hybride-prognose-foto.jpg
+image_alt: "Foto zu Toyota: Toyota RAV4 Hybrid in Aardenburg"
+image_credit: "Foto: Charles01 / Wikimedia Commons, CC BY-SA 4.0"
+image_source: https://commons.wikimedia.org/wiki/File:Toyota_RAV4_Hybrid_in_Aardenburg.jpg
+image_artist_url: 
 logo_file: assets/logos/7203-t.png
 ---
 <!-- PRÜFEN: Die Q2-Präsentation und der Financial Summary standen beim Schreiben (05.11., 11 Uhr) noch nicht auf global.toyota. Zahlen stammen aus den Agenturberichten (Reuters, AP, Japan Times) und dem Bericht zur Telefonkonferenz (BigGo). Folienausschnitt bewusst weggelassen. -->
