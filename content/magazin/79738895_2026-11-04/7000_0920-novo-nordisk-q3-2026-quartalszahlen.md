@@ -13,13 +13,13 @@ story_chart: assets/magazin/novo-nordisk-q3-2026-quartalszahlen-kurs.png
 story_portrait: assets/magazin/mike-doustdar-novo-nordisk.png
 story_quote_by: "Mike Doustdar | CEO Novo Nordisk"
 story_text: "Novo Nordisk wächst im dritten Quartal um 6 % auf 79,2 Mrd. DKK, der bereinigte Betriebsgewinn steigt um 34 % auf 31,7 Mrd. DKK. Ein Teil davon ist ein Vergleichseffekt: Im Vorjahr drückten Umbaukosten von 9 Mrd. DKK das Ergebnis. Der berichtete Betriebsgewinn sinkt sogar um 3 %, weil Novo 8,7 Mrd. DKK abschreibt, vor allem auf den Wirkstoff Ziltivekimab und auf Produktionsanlagen. Die neue Wegovy-Pille setzt 5,4 Mrd. DKK um und ist in acht Märkten am Start, in den USA hält Novo über 50 % der neuen Patienten bei Abnehmmitteln. Die Jahresprognose hebt der Konzern an, erwartet aber weiter nur ein Wachstum zwischen minus 2 % und plus 2 %. CEO Mike Doustdar nennt das Quartal stärker als erwartet."
+logo_symbol: NOVO-B.CO
+logo_domain: novonordisk.com
 image: https://images.unsplash.com/photo-1745939921744-ba8ef27940bf?ixid=M3wxMTE3OTgzfDB8MXxzZWFyY2h8Mnx8aW5qZWN0aW9uJTIwcGVuJTIwY2xvc2UlMjB1cHxlbnwxfDB8fHwxNzkzODc0OTc0fDA&ixlib=rb-4.1.0&w=1600&h=900&fit=crop&crop=entropy&q=80&fm=jpg
 image_alt: "Foto zu Novo Nordisk A/S: Auto-Injector Pen for the treatment of Diabetes"
 image_credit: "Foto: Haberdoedas auf Unsplash"
 image_source: https://unsplash.com/photos/a-semaglutide-injection-pen-is-shown-TzKc7FGaL7Y?utm_source=dividenden-rechner&utm_medium=referral
 image_artist_url: https://unsplash.com/@haberdoedas?utm_source=dividenden-rechner&utm_medium=referral
-logo_symbol: NOVO-B.CO
-logo_domain: novonordisk.com
 logo_file: assets/logos/novo-b-co.png
 ---
 <!-- PRÜFEN: Es liegt keine Präsentation vor. Zahlen stammen aus dem Wortlaut der Pressemitteilung (Company Announcement Nr. 65/2026, 4. November 2026) in zwei Nachdrucken. Folienausschnitt für die Story bitte nachreichen. -->

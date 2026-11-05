@@ -10,7 +10,7 @@ quelle_name: "Pressemitteilung CRISPR Therapeutics (SEC-Meldung)"
 logo_name: "CRISPR Therapeutics"
 logo_symbol: CRSP
 logo_domain: crisprtx.com
-image: https://images.unsplash.com/photo-1579154204601-01588f351e67?ixid=M3wxMTE3OTgzfDB8MXxzZWFyY2h8Mnx8Z2VuZXRpY3MlMjBsYWJvcmF0b3J5fGVufDF8MHx8fDE3OTM3NzUzMTN8MA&ixlib=rb-4.1.0&w=1600&h=900&fit=crop&crop=entropy&q=80&fm=jpg
+image: https://images.unsplash.com/photo-1579154204601-01588f351e67?ixid=M3wxMTE3OTgzfDB8MXxzZWFyY2h8Mnx8Z2VuZXRpY3MlMjBsYWJvcmF0b3J5fGVufDF8MHx8fDE3OTM4NzQ3MzV8MA&ixlib=rb-4.1.0&w=1600&h=900&fit=crop&crop=entropy&q=80&fm=jpg
 image_alt: "Foto zu CRISPR Therapeutics: DNA Genotyping and Sequencing. A technician works among a fleet of desktop genomic sequencing machines at the Cancer Genomics Research Laboratory, part of the National Cancer Institute's Division of C"
 image_credit: "Foto: National Cancer Institute auf Unsplash"
 image_source: https://unsplash.com/photos/woman-standing-in-front-of-the-digital-machine-oCLuFi9GYNA?utm_source=dividenden-rechner&utm_medium=referral
