@@ -17,6 +17,7 @@ image_alt: "Güterzug mit zwei gelben Lokomotiven von Union Pacific vor Bergen"
 image_credit: "Foto: Union Pacific (Pressebild)"
 image_source: https://www.up.com
 image_artist_url: 
+logo_file: assets/logos/combo-unp-nsc.png
 ---
 <!-- PRÜFEN: Quellen: MLex via ad-hoc-news.de (05.11.2026), Bloomberg Law (22.07.2026), Wikipedia-Zeitleiste, Börse Express (Kurs UNP, 14:32 Uhr), heygotrade (Schluss UNP 04.11.). Aufmacherfoto und Kombi-Logo liefert der Bot (tools/asset.request, tools/fetch_logos.py). Kein CEO-Foto, kein Kursbild vorhanden. -->
 <!-- PRÜFEN: Wortlaut der Rede und Reaktion von Union Pacific nicht ermittelt; MLex-Originalbericht nicht abrufbar. Kurse NSC vom Vortag fehlen, daher nur Verlauf seit 13:12 Uhr. -->
