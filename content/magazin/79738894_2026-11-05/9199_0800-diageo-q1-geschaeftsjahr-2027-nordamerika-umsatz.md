@@ -8,7 +8,7 @@ category: Quartalszahlen
 image: assets/magazin/diageo-q1-geschaeftsjahr-2027-nordamerika-umsatz-foto.jpg
 image_alt: "Flaschen von Diageo-Marken nebeneinander, darunter Johnnie Walker, Smirnoff, Baileys, Tanqueray, Captain Morgan und ein Glas Guinness"
 image_credit: "Foto: Diageo"
-image_source: https://www.diageo.com
+image_source: https://www.diageo.com/en/our-brands
 story_image: assets/magazin/diageo-q1-fy27-trading-update-regionen-story.png
 story_chart: assets/magazin/diageo-q1-fy27-trading-update-kurs.png
 story_portrait: assets/magazin/dave-lewis-diageo.png
@@ -20,12 +20,12 @@ logo_domain: diageo.com
 image: assets/magazin/diageo-q1-geschaeftsjahr-2027-nordamerika-umsatz-foto.jpg
 image_alt: "Foto zu Diageo: A line-up of various bottles of Johnnie Walker Scotch Whisky. Black Label, Explorers Club Collection, Double Black, Green Label, Gold Label."
 image_credit: "Foto: Aneil Lutchman / Wikimedia Commons, CC BY-SA 2.0"
-image_source: https://commons.wikimedia.org/wiki/File:Johnnie_Walker_Blends_Lineup.jpg
+image_source: https://www.diageo.com/en/our-brands
 image_artist_url: 
 logo_file: assets/logos/dge-l.png
 ---
 <!-- PRÜFEN: Quelle: Diageo, Q1-FY27-Handelsupdate (Praesentation, Folien 4 bis 11 als Handy-Screenshots von Divi). Konsens/Analystenstimmen: Reuters via RTE, Investing.com. -->
-<!-- PRÜFEN: Aufmacherfoto von Divi (Diageo-Markenfoto, Quelle/Rechte pruefen). Kursbild = Diageo-ADR (NYSE: DEO, USD, Yahoo, 04.11. Schluss 97,70, vorboerslich 100,39). Portrait Sir Dave Lewis von Divi (freigestellt). -->
+<!-- PRÜFEN: Aufmacherfoto von Divi (Diageo-Markenfoto, Quelle: Diageo, genaue Bildseite nicht verifiziert). Kursbild = Diageo-ADR (NYSE: DEO, USD, Yahoo, 04.11. Schluss 97,70, vorboerslich 100,39). Portrait Sir Dave Lewis von Divi (freigestellt). -->
 <!-- PRÜFEN: Originallink der Diageo-Mitteilung nachtragen. -->
 
 !!! kurz "Kurz gesagt"
