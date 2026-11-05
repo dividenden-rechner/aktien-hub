@@ -138,7 +138,7 @@
         pts.forEach(function (t, n) { y += kv(t, ix + 48, iw - 48, fs, String(n + 1) + ".", draw, y) + 12; });
         y += bare ? 0 : 16; layout.bh = y - by0; y += bare ? 0 : 24;
       }
-      if (S.text) { c.font = (S.para ? "700 " + (fs + 6) : "400 " + fs) + "px " + F; String(S.text).split(/\n+/).forEach(function (p) { wrap(c, p, 960, 0).forEach(function () { y += Math.round((fs + (S.para ? 6 : 0)) * 1.35); }); y += 14; }); }
+      if (S.text) { c.font = (S.para ? "700 " + (fs + 6) : "400 " + fs) + "px " + F; if (S.para) c.letterSpacing = "-0.6px"; String(S.text).split(/\n+/).forEach(function (p) { wrap(c, p, 960, 0).forEach(function () { y += Math.round((fs + (S.para ? 6 : 0)) * (S.para ? 1.5 : 1.35)); }); y += (S.para ? 22 : 14); }); c.letterSpacing = "0px"; }
       return y;
     }
     while (photo && ph > (fit ? 400 : 300) && layout(false, ph, fs) > LIM) ph -= 30;
@@ -150,9 +150,10 @@
     layout(false, ph, fs);
     var yy = layout(true, ph, fs);
     if (S.text) {
-      var lh2 = Math.round((fs + (S.para ? 6 : 0)) * 1.35); c.fillStyle = S.para ? D : "#262626"; c.font = (S.para ? "700 " + (fs + 6) : "400 " + fs) + "px " + F;
-      yy -= String(S.text).split(/\n+/).reduce(function (a, p) { return a + wrap(c, p, 960, 0).length * lh2 + 14; }, 0);
-      String(S.text).split(/\n+/).forEach(function (p) { wrap(c, p, 960, 0).forEach(function (l) { c.fillText(l, 60, yy); yy += lh2; }); yy += 14; });
+      var lh2 = Math.round((fs + (S.para ? 6 : 0)) * (S.para ? 1.5 : 1.35)), pg = S.para ? 22 : 14; c.fillStyle = S.para ? D : "#262626"; c.font = (S.para ? "700 " + (fs + 6) : "400 " + fs) + "px " + F; if (S.para) c.letterSpacing = "-0.6px";
+      yy -= String(S.text).split(/\n+/).reduce(function (a, p) { return a + wrap(c, p, 960, 0).length * lh2 + pg; }, 0);
+      String(S.text).split(/\n+/).forEach(function (p) { wrap(c, p, 960, 0).forEach(function (l) { c.fillText(l, 60, yy); yy += lh2; }); yy += pg; });
+      c.letterSpacing = "0px";
     }
     if (S.chart && S.portrait) {
       /* Kursbild links und Portrait rechts sitzen beide unten auf dem gruenen Balken; der Name steht klein links neben der Person */
@@ -199,11 +200,20 @@
     return bl;
   };
   window.StoryShare = async function (S, msgEl) {
-    var m = msgEl; if (m) m.textContent = "Story-Bild wird erstellt …";
+    var m = msgEl, copied = false;
+    if (S && S.para && S.text) {
+      var txt = String(S.text).split(/\n+/).join("\n\n");
+      try { await navigator.clipboard.writeText(txt); copied = true; } catch (e) {
+        try { var ta = document.createElement("textarea"); ta.value = txt; ta.style.position = "fixed"; ta.style.opacity = "0"; document.body.appendChild(ta); ta.select(); copied = document.execCommand("copy"); ta.remove(); } catch (e2) {}
+      }
+      S = Object.assign({}, S, { text: "" });
+    }
+    var note = copied ? "Text ist in der Zwischenablage – in Instagram einfach einfügen." : "";
+    if (m) m.textContent = "Story-Bild wird erstellt …";
     var bl = await window.StoryRender(S); if (!bl) { if (m) m.textContent = "Das Story-Bild konnte nicht erstellt werden."; return; }
-    var f = new File([bl], "story.png", { type: "image/png" }); if (m) m.textContent = "";
+    var f = new File([bl], "story.png", { type: "image/png" }); if (m) m.textContent = note;
     try { if (navigator.canShare && navigator.canShare({ files: [f] })) { await navigator.share({ files: [f] }); return; } } catch (e) { if (e && e.name === "AbortError") return; }
     var a = document.createElement("a"); a.href = URL.createObjectURL(bl); a.download = "story.png"; document.body.appendChild(a); a.click(); a.remove();
-    if (m) m.textContent = "Bild gespeichert. In Instagram: Story → Bild aus der Galerie wählen.";
+    if (m) m.textContent = "Bild gespeichert. In Instagram: Story → Bild aus der Galerie wählen. " + note;
   };
 })();
