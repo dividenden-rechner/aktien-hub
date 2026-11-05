@@ -10,6 +10,7 @@ image_alt: "Die Konzernzentrale der Deutschen Telekom in Bonn mit dem T-Logo auf
 image_credit: "Foto: Deutsche Telekom / Norbert Ittermann"
 image_source: https://www.telekom.com/de/newsroom/mediencenter/fotos/deutsche-telekom-logo
 story_image: assets/magazin/deutsche-telekom-q3-2026-zahlen-prognose-f1.png
+story_chart: assets/magazin/deutsche-telekom-q3-2026-zahlen-prognose-kurs.png
 story_portrait: assets/magazin/tim-hoettges-telekom.png
 story_quote_by: "Tim Höttges | CEO Deutsche Telekom"
 story_text: "Die Telekom schlägt die Erwartungen: 31,1 Mrd. Euro Umsatz (+7,5 %), erwartet waren rund 30,6 Mrd. Das Ergebnis je Aktie liegt mit 0,63 Euro über den erwarteten 0,61 Euro.\nDer Motor sitzt in den USA: T-Mobile US wächst beim EBITDA um 11,4 %, der Rest des Konzerns nur um 4 %. Der Free Cashflow legt nur um 1,4 % zu, der Konzernüberschuss fällt nach neun Monaten um 8 % (Umbaukosten in den USA, Buchgewinne im Vorjahr).\nDie Prognose steigt auf 47,6 Mrd. Euro EBITDA, 1,10 Euro Dividende sind vorgeschlagen. Risiko bleibt die US-Konkurrenz: Höttges warnt vor SpaceX im Mobilfunk."
@@ -19,7 +20,7 @@ logo_domain: telekom.com
 logo_file: assets/logos/dte-de.png
 ---
 <!-- PRÜFEN: Quelle: https://corporate-media.telekom.com/adobe/assets/urn:aaid:aem:826ac2b2-cb2b-4eb5-a97d-8cc4f2cb0ca2/original/as/dt-26q3-praesentation.pdf?attachment=true -->
-<!-- PRÜFEN: Story: kein Zitat von Tim Höttges in der Praesentation, kein Kursbild. Folien (f1 Tabelle Folie 23, f2 Highlights Folie 4) aus Divis Screenshots zugeschnitten. -->
+<!-- PRÜFEN: Story: kein Zitat von Tim Höttges in der Praesentation. Kursbild (Yahoo, 05.11. 10:07 Uhr) und Portrait von Divi. -->
 
 !!! kurz "Kurz gesagt"
     **Umsatz:** 31,1 Mrd. Euro (+7,5 %)
