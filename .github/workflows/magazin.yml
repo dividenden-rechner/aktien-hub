@@ -44,5 +44,9 @@ jobs:
           git add -A
           if git diff --cached --quiet; then echo "Keine Änderungen"; exit 0; fi
           git commit -m "Magazin gebaut"
-          git pull --rebase -q
-          git push
+          for i in 1 2 3 4; do
+            if git pull --rebase -q -X theirs && git push; then exit 0; fi
+            git rebase --abort 2>/dev/null || true
+            sleep $((i * 6))
+          done
+          echo "Push nach mehreren Versuchen nicht moeglich"; exit 1
