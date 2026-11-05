@@ -7,9 +7,15 @@ author_bio: "Das Redaktions-Team von Dividenden-Rechner.de schreibt über Divide
 category: Übernahme
 story_text: "Die US-Bahnaufsicht STB lässt eine Rede von Union-Pacific-Chef Jim Vena nicht geheim halten. Darin soll er Kunden, die gegen die Übernahme von Norfolk Southern sind, mit höheren Gebühren gedroht haben. Beide Aktien geben nach.\nDas ist kein Urteil über den Deal. Die Behörde sagt nur, dass Belege für angedrohte Vergeltung für die Prüfung von Marktmacht wichtig sein können. Union Pacific hat sich bislang nicht öffentlich dazu geäußert, es sind bisher nur Vorwürfe.\nDas Vorhaben hat 85 Mrd. Dollar Volumen, 320 Dollar je Norfolk-Aktie. Fällt es durch, zahlt Union Pacific 2,5 Mrd. Dollar Gebühr. Der Abschluss ist für Anfang 2027 geplant, die Prüfung zieht sich aber schon seit Januar."
 logo_name: "Union Pacific / Norfolk Southern"
+logo_combo: "UNP:up.com:Union Pacific, NSC:norfolksouthern.com:Norfolk Southern"
 logo_symbol: UNP
 logo_domain: up.com
-logo_combo: "UNP:up.com:Union Pacific, NSC:norfolksouthern.com:Norfolk Southern"
+image: assets/magazin/union-pacific-norfolk-southern-stb-vena-rede-foto.jpg
+image_alt: "Foto zu Union Pacific / Norfolk Southern: This is an eastbound Norfolk Southern freight train at Horseshoe Curve, Pennsylvania in the late morning on 10 May 2016. The head end has four engines, three of which have standard black-and-white NS "
+image_credit: "Foto: James St. John / Wikimedia Commons, CC BY 2.0"
+image_source: https://commons.wikimedia.org/wiki/File:Norfolk_Southern_Railway_freight_train_(10_May_2016;_Horseshoe_Curve,_Pennsylvania,_USA)_1_(26947081872).jpg
+image_artist_url: 
+logo_file: assets/logos/combo-unp-nsc.png
 ---
 <!-- PRÜFEN: Quellen: MLex via ad-hoc-news.de (05.11.2026), Bloomberg Law (22.07.2026), Wikipedia-Zeitleiste, Börse Express (Kurs UNP, 14:32 Uhr), heygotrade (Schluss UNP 04.11.). Aufmacherfoto und Kombi-Logo liefert der Bot (tools/asset.request, tools/fetch_logos.py). Kein CEO-Foto, kein Kursbild vorhanden. -->
 <!-- PRÜFEN: Wortlaut der Rede und Reaktion von Union Pacific nicht ermittelt; MLex-Originalbericht nicht abrufbar. Kurse NSC vom Vortag fehlen, daher nur Verlauf seit 13:12 Uhr. -->
