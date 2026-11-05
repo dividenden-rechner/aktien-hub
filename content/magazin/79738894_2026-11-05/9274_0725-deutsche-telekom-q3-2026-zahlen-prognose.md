@@ -5,6 +5,9 @@ date: 2026-11-05 07:25
 author: "Redaktions-Team Dividenden-Rechner.de"
 author_bio: "Das Redaktions-Team von Dividenden-Rechner.de schreibt über Dividendenaktien, Kennzahlen und Steuerthemen für Privatanleger. Die Rechner und Auswertungen auf der Seite entstehen im eigenen Haus."
 category: Quartalszahlen
+image: assets/magazin/deutsche-telekom-q3-2026-zahlen-prognose-foto.jpg
+image_alt: "Telekom-Gebäude mit Firmenlogo auf dem Dach und Flaggen von T-Com, T-Mobile und T-Online"
+image_credit: "Foto: Redaktion (Urheber und Lizenz bitte ergänzen)"
 story_image: assets/magazin/deutsche-telekom-q3-2026-zahlen-prognose-story.png
 story_portrait: assets/magazin/tim-hoettges-telekom.png
 story_quote_by: "Tim Höttges | CEO Deutsche Telekom"
@@ -14,7 +17,7 @@ logo_symbol: DTE.DE
 logo_domain: telekom.com
 logo_file: assets/logos/dte-de.png
 ---
-<!-- PRÜFEN: Aufmacherfoto fehlt noch (Fotoanfrage in tools/asset.request). -->
+<!-- PRÜFEN: Aufmacherfoto von Divi geliefert; Urheber/Lizenz fuer image_credit noch ergaenzen. -->
 <!-- PRÜFEN: Quelle: https://corporate-media.telekom.com/adobe/assets/urn:aaid:aem:826ac2b2-cb2b-4eb5-a97d-8cc4f2cb0ca2/original/as/dt-26q3-praesentation.pdf?attachment=true -->
 <!-- PRÜFEN: Story: kein Zitat von Tim Höttges in der Präsentation, kein Kursbild, kein Folienausschnitt. Folie 23 (Financials Q3/26) waere der passende Ausschnitt. -->
 <!-- PRÜFEN: Warum der Konzernueberschuss nach neun Monaten um 8 % sinkt, geht aus der Praesentation nicht hervor und wird im Text nicht erklaert. -->
