@@ -9,18 +9,17 @@ image: assets/magazin/deutsche-telekom-q3-2026-zahlen-prognose-foto.jpg
 image_alt: "Die Konzernzentrale der Deutschen Telekom in Bonn mit dem T-Logo auf dem Dach"
 image_credit: "Foto: Deutsche Telekom / Norbert Ittermann"
 image_source: https://www.telekom.com/de/newsroom/mediencenter/fotos/deutsche-telekom-logo
-story_image: assets/magazin/deutsche-telekom-q3-2026-zahlen-prognose-story.png
+story_image: assets/magazin/deutsche-telekom-q3-2026-zahlen-prognose-f1.png
 story_portrait: assets/magazin/tim-hoettges-telekom.png
 story_quote_by: "Tim Höttges | CEO Deutsche Telekom"
-story_text: "Die Telekom schlägt die Erwartungen: 31,1 Mrd. Euro Umsatz (+7,5 %), erwartet waren rund 30,6 Mrd. Der bereinigte Überschuss steigt um 12,7 %, das Ergebnis je Aktie liegt mit 0,63 Euro über den erwarteten 0,61 Euro.\nDer Motor sitzt in den USA: T-Mobile US steigert das EBITDA um 11,4 %, ohne die USA wächst der Konzern nur um 4 %. In Deutschland gibt es Rekord bei Glasfaser (+190.000), der Free Cashflow wächst aber nur um 1,4 %.\nDie Prognose steigt auf 47,6 Mrd. Euro EBITDA, vorgeschlagen sind 1,10 Euro Dividende. Das Risiko bleibt die US-Konkurrenz: Höttges warnte zuletzt davor, SpaceX den Zugang zum Mobilfunk zu erleichtern."
+story_text: "Die Telekom schlägt die Erwartungen: 31,1 Mrd. Euro Umsatz (+7,5 %), erwartet waren rund 30,6 Mrd. Das Ergebnis je Aktie liegt mit 0,63 Euro über den erwarteten 0,61 Euro.\nDer Motor sitzt in den USA: T-Mobile US wächst beim EBITDA um 11,4 %, ohne die USA nur der Konzern um 4 %. Der Free Cashflow legt nur um 1,4 % zu, der Konzernüberschuss fällt nach neun Monaten um 8 % (Umbaukosten in den USA, Buchgewinne im Vorjahr).\nDie Prognose steigt auf 47,6 Mrd. Euro EBITDA, 1,10 Euro Dividende sind vorgeschlagen. Risiko bleibt die US-Konkurrenz: Höttges warnt vor SpaceX im Mobilfunk."
 logo_name: "Deutsche Telekom"
 logo_symbol: DTE.DE
 logo_domain: telekom.com
 logo_file: assets/logos/dte-de.png
 ---
 <!-- PRÜFEN: Quelle: https://corporate-media.telekom.com/adobe/assets/urn:aaid:aem:826ac2b2-cb2b-4eb5-a97d-8cc4f2cb0ca2/original/as/dt-26q3-praesentation.pdf?attachment=true -->
-<!-- PRÜFEN: Story: kein Zitat von Tim Höttges in der Präsentation, kein Kursbild, kein Folienausschnitt. Folie 23 (Financials Q3/26) waere der passende Ausschnitt. -->
-<!-- PRÜFEN: Warum der Konzernueberschuss nach neun Monaten um 8 % sinkt, geht aus der Praesentation nicht hervor und wird im Text nicht erklaert. -->
+<!-- PRÜFEN: Story: kein Zitat von Tim Höttges in der Praesentation, kein Kursbild. Folien (f1 Tabelle Folie 23, f2 Highlights Folie 4) aus Divis Screenshots zugeschnitten. -->
 
 !!! kurz "Kurz gesagt"
     **Umsatz:** 31,1 Mrd. Euro (+7,5 %)
@@ -46,6 +45,9 @@ Die Deutsche Telekom hat im dritten Quartal 2026 die Markterwartungen übertroff
 | Konzernüberschuss | 2.427 | 2.762 | +13,8 % |
 | Bereinigtes Ergebnis je Aktie (Euro) | 0,55 | 0,63 | +14,3 % |
 
+![Telekom: Kennzahlen Q3 und 9M 2026 im Vergleich zum Vorjahr](/assets/magazin/deutsche-telekom-q3-2026-zahlen-prognose-f1.png)
+*Ausschnitt aus der Präsentation der Deutschen Telekom zum Q3 2026 (Folie 23, „Financials Q3/26 reported“) · [Original](https://corporate-media.telekom.com/adobe/assets/urn:aaid:aem:826ac2b2-cb2b-4eb5-a97d-8cc4f2cb0ca2/original/as/dt-26q3-praesentation.pdf?attachment=true).*
+
 Bereinigt um Währungs- und Konsolidierungseffekte wuchsen der Umsatz um 5,5 % und das EBITDA AL um 8,0 %. Ohne das US-Geschäft lag das organische EBITDA-Wachstum bei 3,4 %. Nach neun Monaten steht der Umsatz bei 90,9 Mrd. Euro (+4,1 %) und das bereinigte EBITDA AL bei 35,6 Mrd. Euro (+6,4 %).
 
 ### Was gut lief
@@ -59,7 +61,7 @@ Bereinigt um Währungs- und Konsolidierungseffekte wuchsen der Umsatz um 5,5 % u
 ### Was weniger gut lief
 
 - **Cashflow:** Der Free Cashflow AL wuchs nur um 1,4 % auf 5,7 Mrd. Euro, deutlich langsamer als das Ergebnis. Er ist vor Dividenden und Frequenzinvestitionen gerechnet.
-- **Konzernüberschuss nach neun Monaten:** Er liegt mit 7,3 Mrd. Euro um 8,0 % unter dem Vorjahr, obwohl der bereinigte Überschuss um 10,2 % auf 8,4 Mrd. Euro stieg. Der Unterschied entsteht durch Sonderposten, die bereinigt herausgerechnet werden.
+- **Konzernüberschuss nach neun Monaten:** Er liegt mit 7,3 Mrd. Euro um 8,0 % unter dem Vorjahr, obwohl der bereinigte Überschuss um 10,2 % auf 8,4 Mrd. Euro stieg. Die Telekom nennt zwei Gründe: höhere Restrukturierungs- und Integrationskosten in den USA und Buchgewinne aus den Verkäufen von GD Towers und GlasfaserPlus im Vorjahr.
 - **Wachstum ohne USA:** Das bereinigte EBITDA AL außerhalb der USA stieg um 4,0 %, deutlich langsamer als im Konzern. Die Service-Umsätze außerhalb der USA wuchsen organisch um 2,9 %.
 - **Investitionen:** Der Cash Capex lag nach neun Monaten mit 11,8 Mrd. Euro um 3,2 % unter dem Vorjahr. Die Telekom erwartet im vierten Quartal einen Nachholeffekt.
 
@@ -77,6 +79,16 @@ Die Prognose geht von einem Wechselkurs von 1,13 US-Dollar je Euro aus. Bei 1,15
 ### Dividende und Aktienrückkauf
 
 Die Telekom schlägt für 2026 eine Dividende von 1,10 Euro je Aktie vor, vorbehaltlich der Zustimmung der Gremien und der Hauptversammlung. Im Vorjahr waren es 1,00 Euro, 2024 0,90 Euro und 2023 0,77 Euro. Seit 2023 ist die Dividende damit um 42,9 % gestiegen. Aus dem Aktienrückkaufprogramm 2026 sind nach neun Monaten bereits 1,8 Mrd. Euro umgesetzt. Für 2027 sind bis zu 2 Mrd. Euro vorgesehen.
+
+![Telekom: Highlights der ersten neun Monate 2026](/assets/magazin/deutsche-telekom-q3-2026-zahlen-prognose-f2.png)
+*Ausschnitt aus der Präsentation der Deutschen Telekom zum Q3 2026 (Folie 4, „9M/26 strong growth continues“).*
+
+### Weitere Meldungen aus der Präsentation
+
+- **Glasfaser in Polen:** Die Telekom übernimmt polnische Glasfaser-Assets für 1 Mrd. Euro.
+- **Satellit:** T-Mobile US, Verizon und AT&T vereinbaren ein Gemeinschaftsunternehmen für die Mobilfunk-Versorgung ländlicher Gebiete per Satellit. Zudem wollen die Telekom und drei weitere europäische Betreiber ein gemeinsames Gebot für Satelliten-Frequenzen prüfen.
+- **Künstliche Intelligenz:** Auf dem Investor Day hat die Telekom Fortschritte und Ziele bei KI vorgestellt und baut die Industrial-AI-Cloud aus.
+- **Personal:** Für den Finanzvorstand und den Leiter von „P&T“ hat der Konzern die Nachfolge angekündigt. Details nennt die Präsentation nicht.
 
 ### Einordnung für Anleger
 
