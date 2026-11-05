@@ -15,10 +15,11 @@ Datei anklicken, dann Stift-Symbol: Zeile `draft: true` löschen und speichern, 
 | 29.10.2026 22:42 | Amazon steigert Umsatz im dritten Quartal auf 201,9 Milliarden Dollar | [79738970_2026-10-29/7757_2242-amazon-q3-2026-zahlen.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/79738970_2026-10-29/7757_2242-amazon-q3-2026-zahlen.md) |
 | 29.10.2026 10:12 | Shell erzielt im dritten Quartal 10,8 Milliarden Dollar Gewinn | [79738970_2026-10-29/8987_1012-shell-q3-2026-ergebnisse.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/79738970_2026-10-29/8987_1012-shell-q3-2026-ergebnisse.md) |
 
-### Online (262)
+### Online (263)
 
 | Datum | Titel | Datei |
 |---|---|---|
+| 05.11.2026 15:50 | Union Pacific −1,5 %, Norfolk Southern −1 %: Bahnaufsicht gibt Rede von Konzernchef Vena frei | [79738894_2026-11-05/8449_1550-union-pacific-norfolk-southern-stb-vena-rede.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/79738894_2026-11-05/8449_1550-union-pacific-norfolk-southern-stb-vena-rede.md) |
 | 05.11.2026 14:01 | HSBC kündigt Rückkauf von nachrangigen Wertpapieren im Volumen von 1 Mrd. US-Dollar an | [79738894_2026-11-05/8598_1401-hsbc-rueckkaufangebot-anleihen-november-2026.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/79738894_2026-11-05/8598_1401-hsbc-rueckkaufangebot-anleihen-november-2026.md) |
 | 05.11.2026 13:59 | Zoetis steigert bereinigten Gewinn auf 1,75 US-Dollar und hebt Jahresausblick an | [79738894_2026-11-05/8640_1359-zoetis-quartalszahlen-q3-2026.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/79738894_2026-11-05/8640_1359-zoetis-quartalszahlen-q3-2026.md) |
 | 05.11.2026 13:59 | Tapestry steigert bereinigten Gewinn auf 1,82 US-Dollar und erhöht Kapitalrückführung | [79738894_2026-11-05/8640_1359-tapestry-quartalszahlen-q1-2027.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/79738894_2026-11-05/8640_1359-tapestry-quartalszahlen-q1-2027.md) |

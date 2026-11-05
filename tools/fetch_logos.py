@@ -145,6 +145,43 @@ def monogram(name):
     return buf.getvalue()
 
 
+def make_combo(pairs, slug):
+    """pairs = [(Kuerzel, Domain, Name), ...] -> assets/logos/combo-<slug>.png (Plaketten leicht ueberlappend) oder None."""
+    from PIL import ImageFilter
+    tiles = []
+    for sym, dom, name in pairs[:3]:
+        png = None
+        for fn, arg in ((from_fmp, sym), (from_site, dom), (from_google, dom), (from_ddg, dom)):
+            try:
+                png = fn(arg)
+            except Exception:
+                png = None
+            if png:
+                break
+        if not png:
+            return None
+        tiles.append(Image.open(io.BytesIO(png)).convert("RGBA"))
+    S, step, pad = 104, 70, 12
+    W, H = S + step * (len(tiles) - 1) + 2 * pad, S + 2 * pad
+    out = Image.new("RGBA", (W, H), (0, 0, 0, 0))
+    for i, lg in enumerate(tiles):
+        x = pad + i * step
+        px = [q for q in lg.resize((48, 48)).getdata() if q[3] > 128]
+        lum = sum(0.299 * r + 0.587 * g + 0.114 * b for r, g, b, a in px) / len(px) if px else 0
+        bg = "#14202b" if lum > 215 else "#ffffff"
+        sh = Image.new("RGBA", (W, H), (0, 0, 0, 0))
+        ImageDraw.Draw(sh).rounded_rectangle([x, pad + 4, x + S, pad + 4 + S], 24, fill=(0, 0, 0, 80))
+        out = Image.alpha_composite(out, sh.filter(ImageFilter.GaussianBlur(5)))
+        tile = Image.new("RGBA", (W, H), (0, 0, 0, 0))
+        ImageDraw.Draw(tile).rounded_rectangle([x, pad, x + S, pad + S], 24, fill=bg, outline="#ffffff" if i else None, width=4)
+        inner = lg.resize((S - 28, S - 28), Image.LANCZOS)
+        tile.paste(inner, (x + 14, pad + 14), inner)
+        out = Image.alpha_composite(out, tile)
+    rel = f"{OUT}/combo-{slug}.png"
+    out.save(rel, "PNG", optimize=True)
+    return rel
+
+
 def front(path):
     raw = open(path, encoding="utf-8").read()
     m = re.match(r"^---\s*\n(.*?)\n---\s*\n(.*)$", raw, re.S)
@@ -174,6 +211,20 @@ def main():
             dom = ""          # unbrauchbare Domain (vom Modell erfunden) ignorieren
         name = meta.get("logo_name") or re.split(r"[ :,]", meta.get("title", ""))[0]
         cur = meta.get("logo_file", "")
+        cur0 = cur
+        if meta.get("logo_combo") and not (cur0 and os.path.exists(cur0) and os.path.basename(cur0).startswith("combo-")):
+            pairs = []
+            for part in meta["logo_combo"].split(","):
+                bits = [b.strip() for b in part.split(":")]
+                if len(bits) >= 2:
+                    pairs.append((bits[0], bits[1], bits[2] if len(bits) > 2 else bits[0]))
+            rel = make_combo(pairs, re.sub(r"[^a-z0-9]+", "-", "-".join(b[0] for b in pairs).lower()).strip("-")) if pairs else None
+            print(os.path.basename(path), "-> Kombi-Logo", rel or "nicht moeglich")
+            if rel:
+                head = m.group(1).rstrip("\n")
+                head = re.sub(r"^logo_file:.*\n?", "", head, flags=re.M).rstrip("\n")
+                open(path, "w", encoding="utf-8").write(f"---\n{head}\nlogo_file: {rel}\n---\n{m.group(2)}")
+                continue
         if cur and os.path.exists(cur) and not cur.endswith(".mono.png"):
             continue
         key = re.sub(r"[^a-z0-9]+", "-", (sym or dom or name).lower()).strip("-") or "firma"
