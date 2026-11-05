@@ -9,6 +9,12 @@ story_text: "Toyota beendet eine Durststrecke: Nach sechs Quartalen mit sinkende
 logo_name: "Toyota"
 logo_symbol: 7203.T
 logo_domain: global.toyota
+image: https://images.unsplash.com/photo-1617469767053-d3b523a0b982?ixid=M3wxMTE3OTgzfDB8MXxzZWFyY2h8MXx8VG95b3RhJTIwUkFWNCUyMGh5YnJpZHxlbnwxfDB8fHwxNzkzODc0OTk5fDA&ixlib=rb-4.1.0&w=1600&h=900&fit=crop&crop=entropy&q=80&fm=jpg
+image_alt: "Foto zu Toyota: Rav4"
+image_credit: "Foto: Krish Parmar auf Unsplash"
+image_source: https://unsplash.com/photos/black-and-silver-nissan-suv-PmSwFm4Lw1c?utm_source=dividenden-rechner&utm_medium=referral
+image_artist_url: https://unsplash.com/@photosbykrishp?utm_source=dividenden-rechner&utm_medium=referral
+logo_file: assets/logos/7203-t.png
 ---
 <!-- PRÜFEN: Die Q2-Präsentation und der Financial Summary standen beim Schreiben (05.11., 11 Uhr) noch nicht auf global.toyota. Zahlen stammen aus den Agenturberichten (Reuters, AP, Japan Times) und dem Bericht zur Telefonkonferenz (BigGo). Folienausschnitt bewusst weggelassen. -->
 <!-- PRÜFEN: Story ohne Chart, ohne Kursbild und ohne CEO-Portrait (Kenta Kon): Foto fehlt noch. Kursreaktion in den Quellen widersprüchlich (AP rund +9 %, Japan Times über 15 %), daher nicht genannt. -->

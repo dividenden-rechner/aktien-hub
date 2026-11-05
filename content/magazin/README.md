@@ -15,10 +15,11 @@ Datei anklicken, dann Stift-Symbol: Zeile `draft: true` löschen und speichern, 
 | 29.10.2026 22:42 | Amazon steigert Umsatz im dritten Quartal auf 201,9 Milliarden Dollar | [79738970_2026-10-29/7757_2242-amazon-q3-2026-zahlen.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/79738970_2026-10-29/7757_2242-amazon-q3-2026-zahlen.md) |
 | 29.10.2026 10:12 | Shell erzielt im dritten Quartal 10,8 Milliarden Dollar Gewinn | [79738970_2026-10-29/8987_1012-shell-q3-2026-ergebnisse.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/79738970_2026-10-29/8987_1012-shell-q3-2026-ergebnisse.md) |
 
-### Online (242)
+### Online (243)
 
 | Datum | Titel | Datei |
 |---|---|---|
+| 05.11.2026 11:25 | Toyota: Operativer Gewinn +34 % dank Hybriden und schwachem Yen – Jahresziel um 15 % angehoben | [79738894_2026-11-05/8874_1125-toyota-q2-geschaeftsjahr-2027-hybride-prognose.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/79738894_2026-11-05/8874_1125-toyota-q2-geschaeftsjahr-2027-hybride-prognose.md) |
 | 05.11.2026 07:25 | Deutsche Telekom: Umsatz +7,5 % auf 31,1 Mrd. Euro, Prognose leicht erhöht – 1,10 Euro Dividende vorgeschlagen | [79738894_2026-11-05/9274_0725-deutsche-telekom-q3-2026-zahlen-prognose.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/79738894_2026-11-05/9274_0725-deutsche-telekom-q3-2026-zahlen-prognose.md) |
 | 05.11.2026 07:15 | Siemens Healthineers gliedert Diagnostik als „Olyrian Diagnostics“ aus und benennt sich in „Healthineers“ um | [79738894_2026-11-05/9284_0715-siemens-healthineers-olyrian-diagnostics-umbenennung.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/79738894_2026-11-05/9284_0715-siemens-healthineers-olyrian-diagnostics-umbenennung.md) |
 | 05.11.2026 07:05 | DBS: Nettogewinn sinkt im dritten Quartal um 5 % auf 2,8 Mrd. SGD – Dividende von 81 Cent je Aktie | [79738894_2026-11-05/9294_0705-dbs-q3-2026-trading-update.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/79738894_2026-11-05/9294_0705-dbs-q3-2026-trading-update.md) |
