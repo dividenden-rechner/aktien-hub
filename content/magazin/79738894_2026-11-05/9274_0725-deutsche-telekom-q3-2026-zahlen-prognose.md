@@ -12,7 +12,7 @@ image_source: https://www.telekom.com/de/newsroom/mediencenter/fotos/deutsche-te
 story_image: assets/magazin/deutsche-telekom-q3-2026-zahlen-prognose-f1.png
 story_portrait: assets/magazin/tim-hoettges-telekom.png
 story_quote_by: "Tim Höttges | CEO Deutsche Telekom"
-story_text: "Die Telekom schlägt die Erwartungen: 31,1 Mrd. Euro Umsatz (+7,5 %), erwartet waren rund 30,6 Mrd. Das Ergebnis je Aktie liegt mit 0,63 Euro über den erwarteten 0,61 Euro.\nDer Motor sitzt in den USA: T-Mobile US wächst beim EBITDA um 11,4 %, ohne die USA nur der Konzern um 4 %. Der Free Cashflow legt nur um 1,4 % zu, der Konzernüberschuss fällt nach neun Monaten um 8 % (Umbaukosten in den USA, Buchgewinne im Vorjahr).\nDie Prognose steigt auf 47,6 Mrd. Euro EBITDA, 1,10 Euro Dividende sind vorgeschlagen. Risiko bleibt die US-Konkurrenz: Höttges warnt vor SpaceX im Mobilfunk."
+story_text: "Die Telekom schlägt die Erwartungen: 31,1 Mrd. Euro Umsatz (+7,5 %), erwartet waren rund 30,6 Mrd. Das Ergebnis je Aktie liegt mit 0,63 Euro über den erwarteten 0,61 Euro.\nDer Motor sitzt in den USA: T-Mobile US wächst beim EBITDA um 11,4 %, der Rest des Konzerns nur um 4 %. Der Free Cashflow legt nur um 1,4 % zu, der Konzernüberschuss fällt nach neun Monaten um 8 % (Umbaukosten in den USA, Buchgewinne im Vorjahr).\nDie Prognose steigt auf 47,6 Mrd. Euro EBITDA, 1,10 Euro Dividende sind vorgeschlagen. Risiko bleibt die US-Konkurrenz: Höttges warnt vor SpaceX im Mobilfunk."
 logo_name: "Deutsche Telekom"
 logo_symbol: DTE.DE
 logo_domain: telekom.com
