@@ -46,7 +46,7 @@
    "seite": "fortgeschrittene/quellensteuer/frankreich/"
   },
   "australien": {
-   "name": "Australien",
+   "name": "Australien (ungedeckte Dividenden)",
    "einbehalt": 30,
    "abkommen": 15,
    "anrechenbar": 15,
@@ -264,6 +264,26 @@
    "hinweis": "",
    "pruefen": "ok",
    "seite": "fortgeschrittene/quellensteuer/suedkorea/"
+  },
+  "frankreich-25": {
+   "name": "Frankreich (Bank behält 25 % ein)",
+   "einbehalt": 25,
+   "abkommen": 15,
+   "anrechenbar": 12.8,
+   "erstattbar": 12.2,
+   "hinweis": "Je nach Bank werden 25 % einbehalten; anrechenbar sind 12,8 %.",
+   "pruefen": "Variante",
+   "seite": "fortgeschrittene/quellensteuer/frankreich/"
+  },
+  "australien-franked": {
+   "name": "Australien (gedeckte Dividenden)",
+   "einbehalt": 0,
+   "abkommen": 15,
+   "anrechenbar": 0,
+   "erstattbar": 0,
+   "hinweis": "Gedeckte (franked) Dividenden: 0 % Quellensteuer.",
+   "pruefen": "Variante",
+   "seite": "fortgeschrittene/quellensteuer/australien/"
   }
  }
 }

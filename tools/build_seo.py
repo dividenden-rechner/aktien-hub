@@ -84,7 +84,7 @@ C["dividenden-vergleich"] = dict(
 <li><strong>Wachstum ist die unsichere Größe.</strong> Die Dividendenrendite von heute kennst du, das Wachstum der nächsten 20 Jahre nicht. Prüfe die Annahme mit der Entwicklung der letzten fünf und zehn Jahre.</li>
 <li><strong>Dividenden können gekürzt werden.</strong> Der Rechner lässt die Dividende jedes Jahr wachsen. In der Praxis sinken Dividenden in Krisen auch. Die <a href="grundlagen/ausschuettungsquote/">Ausschüttungsquote</a> hilft einzuschätzen, wie stabil eine Dividende ist.</li>
 <li><strong>Eine hohe Rendite ist kein Qualitätsmerkmal.</strong> Sehr hohe Renditen zeigen oft einen gefallenen Kurs, siehe <a href="grundlagen/dividendenfalle/">Dividendenfalle</a>.</li>
-<li><strong>Steuern:</strong> Der Rechner nimmt einen Pauschalsatz auf die gesamte Dividende ohne Freibetrag. Dein tatsächlicher Satz kann niedriger sein.</li>
+<li><strong>Steuern:</strong> Der Rechner nimmt einen Pauschalsatz auf die gesamte Dividende ohne Freibetrag. Dein tatsächlicher Satz kann niedriger sein. Wählst du ein Land, kommt die Quellensteuer dazu: Der anrechenbare Teil wird auf die deutsche Steuer angerechnet, der Rest geht verloren, wenn du ihn nicht erstatten lässt. Die Sätze stammen aus den Länderseiten unter <a href="fortgeschrittene/quellensteuer/">Quellensteuer</a>.</li>
 </ul>"""),
     ],
     faq=[

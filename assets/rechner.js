@@ -313,7 +313,7 @@
 
   /** Dividenden-Vergleich: zwei Szenarien mit gleichen Rahmendaten. */
   function compareCalc(o) {
-    var mk = function (s) { return DC.growthCalc({ start: o.start, monat: o.monat, rendite: s.rendite, divwachstum: s.dg, kurswachstum: s.pg, jahre: o.jahre, steuer: o.steuer, reinvest: o.reinvest }); };
+    var mk = function (s) { return DC.growthCalc({ start: o.start, monat: o.monat, rendite: s.rendite, divwachstum: s.dg, kurswachstum: s.pg, jahre: o.jahre, steuer: (s.steuer != null ? s.steuer : o.steuer), reinvest: o.reinvest }); };
     var a = mk(o.a), b = mk(o.b), cross = null;
     for (var i = 0; i < a.rows.length; i++) { if (b.rows[i].netto > a.rows[i].netto) { cross = i + 1; break; } }
     return { a: a, b: b, ueberholJahr: cross };
@@ -530,13 +530,40 @@
   var T = {}; // id -> run()
 
   /* 1) Dividenden-Vergleich */
+
+  /** Gesamtsteuer auf die Brutto-Dividende (Bruchteil): Quellensteuer im Ausland plus deutsche Abgeltungsteuer abzüglich Anrechnung.
+   *  c = { einbehalt, anrechenbar } in Prozent; refund = Erstattung des nicht anrechenbaren Teils einrechnen. */
+  function gesamtSteuer(t, c, refund) {
+    if (!c) return t;
+    var w = c.einbehalt / 100, a = c.anrechenbar / 100;
+    if (refund) w = Math.min(w, a);
+    var credit = Math.min(w, a, t);
+    return Math.min(1, w + (t - credit));
+  }
+  var QS = null;
+  function loadQS() {
+    var sa = document.getElementById("v-al"), sb = document.getElementById("v-bl"), form = document.getElementById("f-dividenden-vergleich");
+    if (!sa || !sb || typeof fetch === "undefined") return;
+    fetch("../data/quellensteuer.json").then(function (r) { return r.json(); }).then(function (j) {
+      QS = j.laender; var keys = Object.keys(QS);
+      keys.sort(function (x, y) { return x === "deutschland" ? -1 : y === "deutschland" ? 1 : QS[x].name.localeCompare(QS[y].name, "de"); });
+      [sa, sb].forEach(function (sel) { sel.innerHTML = keys.map(function (k) { return '<option value="' + k + '">' + QS[k].name + (k === "deutschland" ? " (kein Abzug im Ausland)" : "") + "</option>"; }).join(""); });
+      if (form) form.dispatchEvent(new Event("input", { bubbles: true }));
+    }).catch(function () {});
+  }
+
+  if (typeof document !== "undefined" && root.RECHNER_ID === "dividenden-vergleich") { if (document.readyState === "loading") document.addEventListener("DOMContentLoaded", loadQS); else loadQS(); }
   T["dividenden-vergleich"] = function () {
     var o = { start: num("v-start"), monat: num("v-rate"), jahre: num("v-years"), steuer: num("v-tax") / 100, reinvest: $("v-re").value === "1",
       a: { rendite: num("v-ay"), dg: num("v-ag"), pg: num("v-ap") }, b: { rendite: num("v-by"), dg: num("v-bg"), pg: num("v-bp") } };
     if (!allNum({ s: o.start, m: o.monat, j: o.jahre, t: o.steuer, ay: o.a.rendite, ag: o.a.dg, ap: o.a.pg, by: o.b.rendite, bg: o.b.dg, bp: o.b.pg }, [])) return err("v-err", "Bitte alle Felder mit Zahlen füllen.");
     if (!(o.jahre >= 1 && o.jahre <= 60)) return err("v-err", "Anlagedauer: 1 bis 60 Jahre.");
     err("v-err", "");
+    var refund = $("v-rf") && $("v-rf").value === "1", ca = QS && $("v-al") ? QS[$("v-al").value] : null, cb = QS && $("v-bl") ? QS[$("v-bl").value] : null;
+    o.a.steuer = gesamtSteuer(o.steuer, ca, refund); o.b.steuer = gesamtSteuer(o.steuer, cb, refund);
     var r = compareCalc(o), na = ($("v-an").value || "Aktie A").trim(), nb = ($("v-bn").value || "Aktie B").trim();
+    var qsTxt = function (n, c, t) { if (!c || c.einbehalt === 0 && c.anrechenbar === 0) return ""; var pc = function (x) { return (x * 100).toLocaleString("de-DE", { maximumFractionDigits: 3 }) + " %"; }; var ex = refund ? 0 : Math.max(0, c.einbehalt - c.anrechenbar); return n + " (" + c.name.replace(/ \(.*$/, "") + "): Quellensteuer " + pc(c.einbehalt / 100) + ", insgesamt " + pc(t) + " Steuer auf die Brutto-Dividende" + (ex > 0 ? "; davon " + (ex).toLocaleString("de-DE", { maximumFractionDigits: 3 }) + " Prozentpunkte nicht anrechenbar, nur auf Antrag erstattbar" : "") + ". "; };
+    set("v-qs", (qsTxt(na, ca, o.a.steuer) + qsTxt(nb, cb, o.b.steuer)).trim());
     var la = r.a.rows[r.a.rows.length - 1], lb = r.b.rows[r.b.rows.length - 1];
     set("v-k1", money(r.a.endkapital)); set("v-k2", money(r.b.endkapital));
     set("v-k3", money(la.netto)); set("v-k4", money(lb.netto));
