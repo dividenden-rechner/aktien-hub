@@ -6,12 +6,15 @@ author: "Redaktions-Team Dividenden-Rechner.de"
 author_bio: "Das Redaktions-Team von Dividenden-Rechner.de schreibt über Dividendenaktien, Kennzahlen und Steuerthemen für Privatanleger. Die Rechner und Auswertungen auf der Seite entstehen im eigenen Haus."
 category: Quartalszahlen
 story_text: "Toyota beendet eine Durststrecke: Nach sechs Quartalen mit sinkendem Betriebsgewinn steigt er um 34 % auf 1,13 Bio. Yen, erwartet waren nur 992 Mrd. Den Ausschlag geben Hybride, vor allem in Nordamerika, dazu der schwache Yen und der Wegfall der Zollkosten aus dem Vorjahr.\nDie Kehrseite: Weltweit verkauft Toyota 4 % weniger Autos, in China 22 % weniger, im Nahen Osten ein Drittel weniger. Unterm Strich bleibt wegen teurer Rohstoffe 18,5 % weniger Gewinn übrig.\nDas Jahresziel steigt trotzdem auf 3,9 Bio. Yen operativen Gewinn und liegt damit wieder über dem Vorjahr. Aktionäre bekommen 100 Yen Dividende (+5 %) und mehr Rückkäufe. Risiko bleibt ein stärkerer Yen."
+story_chart: assets/magazin/toyota-q2-geschaeftsjahr-2027-hybride-prognose-kurs.png
+story_portrait: assets/magazin/kenta-kon-toyota.png
+story_quote_by: "Kenta Kon | CEO Toyota"
 logo_name: "Toyota"
 logo_symbol: 7203.T
 logo_domain: global.toyota
 ---
 <!-- PRÜFEN: Die Q2-Präsentation und der Financial Summary standen beim Schreiben (05.11., 11 Uhr) noch nicht auf global.toyota. Zahlen stammen aus den Agenturberichten (Reuters, AP, Japan Times) und dem Bericht zur Telefonkonferenz (BigGo). Folienausschnitt bewusst weggelassen. -->
-<!-- PRÜFEN: Story ohne Chart, ohne Kursbild und ohne CEO-Portrait (Kenta Kon): Foto fehlt noch. Kursreaktion in den Quellen widersprüchlich (AP rund +9 %, Japan Times über 15 %), daher nicht genannt. -->
+<!-- PRÜFEN: Story ohne Chart. Kursbild (Yahoo, Börsenschluss Tokio 05.11.) und Portrait von Kenta Kon von Divi. -->
 
 !!! kurz "Kurz gesagt"
     **Umsatz:** 13,4 Bio. Yen (+8 %)
@@ -23,7 +26,7 @@ logo_domain: global.toyota
 
 ## Toyota im zweiten Quartal: Die Hybrid-Wette zahlt sich aus, China bleibt die Baustelle
 
-Toyota hat im Juli–September-Quartal, dem zweiten Quartal seines Geschäftsjahres, zum ersten Mal seit sechs Quartalen wieder mehr operativ verdient. Der Betriebsgewinn stieg um 34 % auf 1,13 Bio. Yen. Neun von LSEG befragte Analysten hatten im Mittel nur 992 Mrd. Yen erwartet. Der Umsatz wuchs von 12,4 auf 13,4 Bio. Yen (+8 %). Vor den Zahlen drehte sich die Debatte vor allem um zwei Fragen: Wie viele der margenstarken Hybride verkauft Toyota, und wie stark belastet der Einbruch in China? Die Antwort fällt gemischt aus, das Gesamtbild aber besser als erwartet.
+Toyota hat im Juli–September-Quartal, dem zweiten Quartal seines Geschäftsjahres, zum ersten Mal seit sechs Quartalen wieder mehr operativ verdient. Der Betriebsgewinn stieg um 34 % auf 1,13 Bio. Yen. Neun von LSEG befragte Analysten hatten im Mittel nur 992 Mrd. Yen erwartet. Der Umsatz wuchs von 12,4 auf 13,4 Bio. Yen (+8 %). Vor den Zahlen drehte sich die Debatte vor allem um zwei Fragen: Wie viele der margenstarken Hybride verkauft Toyota, und wie stark belastet der Einbruch in China? Die Antwort fällt gemischt aus, das Gesamtbild aber besser als erwartet. An der Börse in Tokio schloss die Aktie 16,7 % höher bei 3.533 Yen. Ein Teil des Anstiegs fiel schon vor den Zahlen an, als Anleger aus KI-Werten in große Standardwerte umschichteten.
 
 ### Die wichtigsten Zahlen im Überblick
 
@@ -69,6 +72,6 @@ Für die kommenden fünf Jahre hat Toyota zudem seine Kapitalverwendung umrissen
 
 Anders als viele Wettbewerber hat Toyota nicht voll auf reine E-Autos gesetzt, sondern auf Hybride. Während andere Hersteller Milliarden auf ihre E-Auto-Investitionen abschreiben mussten, verdient Toyota mit den margenstarken Hybriden gerade gut. Das Quartal zeigt aber auch die Grenzen: Ein Teil des Gewinnplus ist ein reiner Währungseffekt, den ein stärkerer Yen wieder schmälern würde. Und in China, dem größten Automarkt der Welt, verliert Toyota deutlich an Boden. Für Dividendenanleger ist die Botschaft dennoch klar: steigende Dividende, mehr Rückkäufe und ein Fünfjahresplan, der einen großen Teil des Geldes an die Aktionäre zurückgibt. Die Zahlen sind Unternehmensangaben aus Agenturberichten und keine Anlageberatung.
 
-*Weitere Quellen: [Reuters über Investing.com](https://www.investing.com/news/stock-market-news/toyota-profit-surges-34-first-rise-in-six-quarters-5002210) (Ergebnis, Analystenschätzung), [Reuters-Vorschau über BusinessDay](https://www.businessday.co.za/motoring/2026-11-04-toyota-profit-set-for-first-increase-in-six-quarters/) (Absatz, China, Nahost), [AP über WTOP](https://wtop.com/world/2026/11/toyota-raises-profit-projection-for-the-year-as-sales-hold-up) (Nettogewinn, Umsatz), [Japan Times](https://www.japantimes.co.jp/business/2026/11/05/companies/toyota-profit-forecast-upward-revision/) (Prognose), [MarkLines](https://www.marklines.com/en/news/353694) (Halbjahr), [BigGo Finance](https://finance.biggo.com/news/JP_7203.T_2026-10-28) (Telefonkonferenz, Zölle, Fünfjahresplan).*
+*Weitere Quellen: [Reuters über Investing.com](https://www.investing.com/news/stock-market-news/toyota-profit-surges-34-first-rise-in-six-quarters-5002210) (Ergebnis, Analystenschätzung), [Reuters-Vorschau über BusinessDay](https://www.businessday.co.za/motoring/2026-11-04-toyota-profit-set-for-first-increase-in-six-quarters/) (Absatz, China, Nahost), [AP über WTOP](https://wtop.com/world/2026/11/toyota-raises-profit-projection-for-the-year-as-sales-hold-up) (Nettogewinn, Umsatz), [Japan Times](https://www.japantimes.co.jp/business/2026/11/05/companies/toyota-profit-forecast-upward-revision/) (Prognose), [MarkLines](https://www.marklines.com/en/news/353694) (Halbjahr), [BigGo Finance](https://finance.biggo.com/news/JP_7203.T_2026-10-28) (Telefonkonferenz, Zölle, Fünfjahresplan), [Reuters über Star Advertiser](https://www.staradvertiser.com/2026/11/04/breaking-news/toyota-posts-profit-surge-and-lifts-annual-outlook/) (Kursentwicklung vor den Zahlen).*
 
 *Quelle: Toyota Motor Corporation, Ergebnisse zum zweiten Quartal des Geschäftsjahres 2027 vom 5. November 2026 · [Original](https://global.toyota/en/ir/financial-results/)*
