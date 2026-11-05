@@ -911,6 +911,16 @@
    "quelle": "https://www.sec.gov/Archives/edgar/data/1070750/000107075026000152/hst-ex991.htm"
   },
   {
+   "sym": "KHC",
+   "name": "The Kraft Heinz Company",
+   "datum": "2026-11-04",
+   "eps": 0.46,
+   "eps_basis": "berichtet",
+   "revenue": 6115000000.0,
+   "waehrung": "USD",
+   "quelle": "https://www.sec.gov/Archives/edgar/data/1637459/000163745926000078/ex991-erq32026.htm"
+  },
+  {
    "sym": "MCD",
    "name": "McDonald's",
    "datum": "2026-11-04",
