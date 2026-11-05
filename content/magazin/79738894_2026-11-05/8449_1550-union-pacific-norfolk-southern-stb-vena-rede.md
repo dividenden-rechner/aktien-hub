@@ -10,11 +10,7 @@ logo_name: "Union Pacific / Norfolk Southern"
 logo_combo: "UNP:up.com:Union Pacific, NSC:norfolksouthern.com:Norfolk Southern"
 logo_symbol: UNP
 logo_domain: up.com
-image: assets/magazin/union-pacific-norfolk-southern-stb-vena-rede-foto.jpg
-image_alt: "Foto zu Union Pacific / Norfolk Southern: This is an eastbound Norfolk Southern freight train at Horseshoe Curve, Pennsylvania in the late morning on 10 May 2016. The head end has four engines, three of which have standard black-and-white NS "
-image_credit: "Foto: James St. John / Wikimedia Commons, CC BY 2.0"
-image_source: https://commons.wikimedia.org/wiki/File:Norfolk_Southern_Railway_freight_train_(10_May_2016;_Horseshoe_Curve,_Pennsylvania,_USA)_1_(26947081872).jpg
-image_artist_url: 
+logo_combo: "UNP:up.com:Union Pacific, NSC:norfolksouthern.com:Norfolk Southern"
 logo_file: assets/logos/combo-unp-nsc.png
 ---
 <!-- PRÜFEN: Quellen: MLex via ad-hoc-news.de (05.11.2026), Bloomberg Law (22.07.2026), Wikipedia-Zeitleiste, Börse Express (Kurs UNP, 14:32 Uhr), heygotrade (Schluss UNP 04.11.). Aufmacherfoto und Kombi-Logo liefert der Bot (tools/asset.request, tools/fetch_logos.py). Kein CEO-Foto, kein Kursbild vorhanden. -->
