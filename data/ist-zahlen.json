@@ -1071,6 +1071,26 @@
    "quelle": "https://www.sec.gov/Archives/edgar/data/1136869/000119312526446145/zbh-ex99_1.htm"
   },
   {
+   "sym": "ABNB",
+   "name": "Airbnb",
+   "datum": "2026-11-05",
+   "eps": 3.16,
+   "eps_basis": "berichtet",
+   "revenue": 4870000000.0,
+   "waehrung": "US-D",
+   "quelle": "https://www.sec.gov/Archives/edgar/data/1559720/000119312526449727/d437988dex991.htm"
+  },
+  {
+   "sym": "AKAM",
+   "name": "Akamai Technologies",
+   "datum": "2026-11-05",
+   "eps": 0.77,
+   "eps_basis": "berichtet",
+   "revenue": null,
+   "waehrung": "US-D",
+   "quelle": "https://www.sec.gov/Archives/edgar/data/1086222/000108622226000097/exhibit991-q32026.htm"
+  },
+  {
    "sym": "APD",
    "name": "Air Products",
    "datum": "2026-11-05",
@@ -1091,6 +1111,16 @@
    "quelle": "https://www.sec.gov/Archives/edgar/data/10795/000162828026070511/ex9919302026.htm"
   },
   {
+   "sym": "BT-A.L",
+   "name": "BT Group",
+   "datum": "2026-11-05",
+   "eps": null,
+   "eps_basis": "",
+   "revenue": 8800000000.0,
+   "waehrung": "Brit",
+   "quelle": "https://newsroom.bt.com/bt-delivered-a-strong-first-half-with-further-strategic-momentum/"
+  },
+  {
    "sym": "CAH",
    "name": "Cardinal Health",
    "datum": "2026-11-05",
@@ -1109,6 +1139,16 @@
    "revenue": 73700000000.0,
    "waehrung": "US-D",
    "quelle": "https://www.sec.gov/Archives/edgar/data/1739940/000114036126042030/ef20084818_ex99-1.htm"
+  },
+  {
+   "sym": "CMI",
+   "name": "Cummins",
+   "datum": "2026-11-05",
+   "eps": 8.25,
+   "eps_basis": "berichtet",
+   "revenue": 9400000000.0,
+   "waehrung": "US-D",
+   "quelle": "https://www.sec.gov/Archives/edgar/data/26172/000002617226000035/cmi2026q38-kex99.htm"
   },
   {
    "sym": "COP",
@@ -1161,6 +1201,46 @@
    "quelle": "https://www.sec.gov/Archives/edgar/data/55785/000162828026070514/kmbq32026ex-991.htm"
   },
   {
+   "sym": "NWS",
+   "name": "News Corp (Class B)",
+   "datum": "2026-11-05",
+   "eps": null,
+   "eps_basis": "berichtet",
+   "revenue": 9000000000.0,
+   "waehrung": "US-D",
+   "quelle": "https://www.sec.gov/Archives/edgar/data/1564708/000156470826000254/exhibit991combined110526.htm"
+  },
+  {
+   "sym": "NWSA",
+   "name": "News Corp (Class A)",
+   "datum": "2026-11-05",
+   "eps": null,
+   "eps_basis": "",
+   "revenue": 9000000000.0,
+   "waehrung": "US-D",
+   "quelle": "https://www.sec.gov/Archives/edgar/data/1564708/000156470826000254/exhibit991combined110526.htm"
+  },
+  {
+   "sym": "PH",
+   "name": "Parker Hannifin",
+   "datum": "2026-11-05",
+   "eps": 8.9,
+   "eps_basis": "bereinigt",
+   "revenue": 6000000000.0,
+   "waehrung": "US-D",
+   "quelle": "https://www.sec.gov/Archives/edgar/data/76334/000007633426000170/exhibit991q1fy27.htm"
+  },
+  {
+   "sym": "RL",
+   "name": "Ralph Lauren Corporation",
+   "datum": "2026-11-05",
+   "eps": 4.64,
+   "eps_basis": "bereinigt",
+   "revenue": 2200000000.0,
+   "waehrung": "US-D",
+   "quelle": "https://www.sec.gov/Archives/edgar/data/1037038/000162828026070619/rl-20260926ex991xpressrele.htm"
+  },
+  {
    "sym": "ROK",
    "name": "Rockwell Automation",
    "datum": "2026-11-05",
@@ -1171,6 +1251,16 @@
    "quelle": "https://www.sec.gov/Archives/edgar/data/1024478/000102447826000045/fy2026ex99.htm"
   },
   {
+   "sym": "SOLV",
+   "name": "Solventum",
+   "datum": "2026-11-05",
+   "eps": 1.45,
+   "eps_basis": "bereinigt",
+   "revenue": 1900000000.0,
+   "waehrung": "US-D",
+   "quelle": "https://www.sec.gov/Archives/edgar/data/1964738/000196473826000055/q32026-8kerexx991.htm"
+  },
+  {
    "sym": "SONY",
    "name": "Sony Group Corp",
    "datum": "2026-11-05",
@@ -1179,6 +1269,26 @@
    "revenue": null,
    "waehrung": "Yen",
    "quelle": "https://www.sec.gov/Archives/edgar/data/313838/000110465926122964/tm2628525d5_6k.htm"
+  },
+  {
+   "sym": "SPG",
+   "name": "Simon Property Group",
+   "datum": "2026-11-05",
+   "eps": 1.54,
+   "eps_basis": "berichtet",
+   "revenue": null,
+   "waehrung": "US-D",
+   "quelle": "https://www.sec.gov/Archives/edgar/data/1063761/000110465926123325/tm2627777d2_ex99-1.htm"
+  },
+  {
+   "sym": "SRE",
+   "name": "Sempra",
+   "datum": "2026-11-05",
+   "eps": 1.4,
+   "eps_basis": "bereinigt",
+   "revenue": null,
+   "waehrung": "US-D",
+   "quelle": "https://www.sec.gov/Archives/edgar/data/1032208/000103220826000051/ex99_1x20260930xearningsta.htm"
   },
   {
    "sym": "TPR",
@@ -1199,6 +1309,36 @@
    "revenue": 5600000000.0,
    "waehrung": "US-D",
    "quelle": "https://www.sec.gov/Archives/edgar/data/1389170/000119312526448401/trgp-ex99_1.htm"
+  },
+  {
+   "sym": "VMRK",
+   "name": "Vivmark Residential",
+   "datum": "2026-11-05",
+   "eps": 1.03,
+   "eps_basis": "bereinigt",
+   "revenue": null,
+   "waehrung": "US-D",
+   "quelle": "https://www.sec.gov/Archives/edgar/data/906107/000119312526448699/vmrk-ex99_1.htm"
+  },
+  {
+   "sym": "VTRS",
+   "name": "Viatris",
+   "datum": "2026-11-05",
+   "eps": 0.71,
+   "eps_basis": "bereinigt",
+   "revenue": 3750000000.0,
+   "waehrung": "US-D",
+   "quelle": "https://www.sec.gov/Archives/edgar/data/1792044/000179204426000053/exhibit991-3q26earningsrel.htm"
+  },
+  {
+   "sym": "WYNN",
+   "name": "Wynn Resorts",
+   "datum": "2026-11-05",
+   "eps": 0.17,
+   "eps_basis": "berichtet",
+   "revenue": 1690000000.0,
+   "waehrung": "US-D",
+   "quelle": "https://www.sec.gov/Archives/edgar/data/1174922/000117492226000078/ex991wrlq32026pressrelease.htm"
   }
  ]
 }

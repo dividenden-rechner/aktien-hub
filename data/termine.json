@@ -406,6 +406,15 @@
    "quelle": "https://www.sec.gov/Archives/edgar/data/1136869/000119312526446145/zbh-ex99_1.htm"
   },
   {
+   "sym": "ABNB",
+   "name": "Airbnb",
+   "art": "ergebnis",
+   "datum": "2026-11-05",
+   "betrag": "",
+   "waehrung": "",
+   "quelle": "https://www.sec.gov/Archives/edgar/data/1559720/000119312526449727/d437988dex991.htm"
+  },
+  {
    "sym": "AFL",
    "name": "Aflac",
    "art": "ergebnis",
@@ -449,6 +458,15 @@
    "betrag": "",
    "waehrung": "",
    "quelle": "https://www.sec.gov/Archives/edgar/data/731802/000073180226000129/ato20261104exhibit991.htm"
+  },
+  {
+   "sym": "CMI",
+   "name": "Cummins",
+   "art": "ergebnis",
+   "datum": "2026-11-05",
+   "betrag": "",
+   "waehrung": "",
+   "quelle": "https://www.sec.gov/Archives/edgar/data/26172/000002617226000035/cmi2026q38-kex99.htm"
   },
   {
    "sym": "DEO",
@@ -503,6 +521,15 @@
    "betrag": "",
    "waehrung": "",
    "quelle": "https://www.sec.gov/Archives/edgar/data/1099219/000109921926000058/ex991earningsreleasetables.htm"
+  },
+  {
+   "sym": "NWSA",
+   "name": "News Corp (Class A)",
+   "art": "ergebnis",
+   "datum": "2026-11-05",
+   "betrag": "",
+   "waehrung": "",
+   "quelle": "https://www.sec.gov/Archives/edgar/data/1564708/000156470826000254/exhibit991combined110526.htm"
   },
   {
    "sym": "ROK",
@@ -847,6 +874,15 @@
    "quelle": "https://www.sec.gov/Archives/edgar/data/74208/000007420826000084/udr-ex99d1.htm"
   },
   {
+   "sym": "WYNN",
+   "name": "Wynn Resorts",
+   "art": "dividende_zahltag",
+   "datum": "2026-11-30",
+   "betrag": "0.25",
+   "waehrung": "USD",
+   "quelle": "https://www.sec.gov/Archives/edgar/data/1174922/000117492226000078/ex991wrlq32026pressrelease.htm"
+  },
+  {
    "sym": "AFL",
    "name": "Aflac",
    "art": "dividende_zahltag",
@@ -890,6 +926,15 @@
    "betrag": "17.50",
    "waehrung": "JPY",
    "quelle": "https://www.sec.gov/Archives/edgar/data/313838/000110465926122935/tm2628525d4_6k.htm"
+  },
+  {
+   "sym": "TSCO",
+   "name": "Tractor Supply",
+   "art": "dividende_zahltag",
+   "datum": "2026-12-08",
+   "betrag": "0.24",
+   "waehrung": "USD",
+   "quelle": "https://www.sec.gov/Archives/edgar/data/916365/000091636526000076/a1152026tsco-ex991.htm"
   },
   {
    "sym": "BDX",
@@ -1061,6 +1106,15 @@
    "betrag": "0.82",
    "waehrung": "USD",
    "quelle": "https://www.sec.gov/Archives/edgar/data/882095/000088209526000037/exhibit991earningspressrel.htm"
+  },
+  {
+   "sym": "SPG",
+   "name": "Simon Property Group",
+   "art": "dividende_zahltag",
+   "datum": "2026-12-31",
+   "betrag": "2.30",
+   "waehrung": "USD",
+   "quelle": "https://www.sec.gov/Archives/edgar/data/1063761/000110465926123325/tm2627777d2_ex99-1.htm"
   },
   {
    "sym": "UDR",
