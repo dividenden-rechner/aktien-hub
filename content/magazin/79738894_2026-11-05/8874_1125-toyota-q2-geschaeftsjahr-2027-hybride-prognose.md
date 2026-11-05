@@ -13,9 +13,9 @@ logo_name: "Toyota"
 logo_symbol: 7203.T
 logo_domain: global.toyota
 image: assets/magazin/toyota-q2-geschaeftsjahr-2027-hybride-prognose-foto.jpg
-image_alt: "Foto zu Toyota: Toyota RAV4 Hybrid in Aardenburg"
-image_credit: "Foto: Charles01 / Wikimedia Commons, CC BY-SA 4.0"
-image_source: https://commons.wikimedia.org/wiki/File:Toyota_RAV4_Hybrid_in_Aardenburg.jpg
+image_alt: "Foto zu Toyota: Toyota RAV4 Hybrid (XA50) in Filderstadt"
+image_credit: "Foto: Alexander Migl / Wikimedia Commons, CC BY-SA 4.0"
+image_source: https://commons.wikimedia.org/wiki/File:Toyota_RAV4_Hybrid_(XA50)_DSC_2709.jpg
 image_artist_url: 
 logo_file: assets/logos/7203-t.png
 ---

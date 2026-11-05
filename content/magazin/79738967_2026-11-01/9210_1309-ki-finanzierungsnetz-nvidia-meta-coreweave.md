@@ -6,7 +6,7 @@ author: "Redaktions-Team Dividenden-Rechner.de"
 author_bio: "Das Redaktions-Team von Dividenden-Rechner.de schreibt über Dividendenaktien, Kennzahlen und Steuerthemen für Privatanleger. Die Rechner und Auswertungen auf der Seite entstehen im eigenen Haus."
 category: Analyse
 kein_logo: ja
-image: https://images.unsplash.com/photo-1506399558188-acca6f8cbf41?ixid=M3wxMTE3OTgzfDB8MXxzZWFyY2h8Mnx8ZGF0YSUyMGNlbnRlciUyMHNlcnZlcnN8ZW58MXwwfHx8MTc5MzgyOTE3OXww&ixlib=rb-4.1.0&w=1600&h=900&fit=crop&crop=entropy&q=80&fm=jpg
+image: https://images.unsplash.com/photo-1506399558188-acca6f8cbf41?ixid=M3wxMTE3OTgzfDB8MXxzZWFyY2h8Mnx8ZGF0YSUyMGNlbnRlciUyMHNlcnZlcnN8ZW58MXwwfHx8MTc5Mzc3NTA2M3ww&ixlib=rb-4.1.0&w=1600&h=900&fit=crop&crop=entropy&q=80&fm=jpg
 image_alt: "Foto zu Die: Data Servers"
 image_credit: "Foto: imgix auf Unsplash"
 image_source: https://unsplash.com/photos/server-racks-in-data-center-klWUhr-wPJ8?utm_source=dividenden-rechner&utm_medium=referral
