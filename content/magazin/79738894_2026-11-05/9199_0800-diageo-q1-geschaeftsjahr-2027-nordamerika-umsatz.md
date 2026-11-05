@@ -13,6 +13,11 @@ story_text: "Diageo schlägt die Erwartungen: Der organische Umsatz steigt ohne 
 logo_name: "Diageo"
 logo_symbol: DGE.L
 logo_domain: diageo.com
+image: assets/magazin/diageo-q1-geschaeftsjahr-2027-nordamerika-umsatz-foto.jpg
+image_alt: "Foto zu Diageo: A line-up of various bottles of Johnnie Walker Scotch Whisky. Black Label, Explorers Club Collection, Double Black, Green Label, Gold Label."
+image_credit: "Foto: Aneil Lutchman / Wikimedia Commons, CC BY-SA 2.0"
+image_source: https://commons.wikimedia.org/wiki/File:Johnnie_Walker_Blends_Lineup.jpg
+image_artist_url: 
 logo_file: assets/logos/dge-l.png
 ---
 <!-- PRÜFEN: Quelle: Diageo, Q1-FY27-Handelsupdate (Praesentation, Folien 4 bis 11 als Handy-Screenshots von Divi). Konsens/Analystenstimmen: Reuters via RTE, Investing.com. -->
