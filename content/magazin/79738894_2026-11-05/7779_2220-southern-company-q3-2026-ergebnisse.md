@@ -12,6 +12,7 @@ image_source: https://commons.wikimedia.org/wiki/File:Altbach_Power_Plant_Contro
 logo_name: "Southern Company"
 logo_symbol: SOJE
 logo_domain: southerncompany.com
+logo_file: assets/logos/soje.png
 ---
 <!-- PRÜFEN: Aufmacherfoto ist automatisch von Wikimedia Commons gewaehlt: bitte pruefen, ob es zum Artikel passt (sonst image-Zeilen entfernen, dann entsteht ein Titelbild automatisch). -->
 <!-- PRÜFEN: Diese Werte wurden im Berichtstext nicht gefunden: Grafik Traditional Electric: 2272; Grafik Parent and Other: -299 -->
