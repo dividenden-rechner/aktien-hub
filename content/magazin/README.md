@@ -16,10 +16,11 @@ Datei anklicken, dann Stift-Symbol: Zeile `draft: true` löschen und speichern, 
 | 29.10.2026 22:42 | Amazon steigert Umsatz im dritten Quartal auf 201,9 Milliarden Dollar | [79738970_2026-10-29/7757_2242-amazon-q3-2026-zahlen.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/79738970_2026-10-29/7757_2242-amazon-q3-2026-zahlen.md) |
 | 29.10.2026 10:12 | Shell erzielt im dritten Quartal 10,8 Milliarden Dollar Gewinn | [79738970_2026-10-29/8987_1012-shell-q3-2026-ergebnisse.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/79738970_2026-10-29/8987_1012-shell-q3-2026-ergebnisse.md) |
 
-### Online (296)
+### Online (297)
 
 | Datum | Titel | Datei |
 |---|---|---|
+| 06.11.2026 13:20 | OCBC: Gewinn steigt im dritten Quartal um 3 % auf 2,0 Mrd. S$, Bankgeschäft auf Rekord, Prognose angehoben | [79738893_2026-11-06/8679_1320-ocbc-q3-2026-quartalszahlen-bank-guidance.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/79738893_2026-11-06/8679_1320-ocbc-q3-2026-quartalszahlen-bank-guidance.md) |
 | 06.11.2026 12:00 | PepsiCo bleibt Getränkepartner von KFC in acht Märkten, darunter Deutschland, nachdem KFC in den USA zu Coca-Cola wechselte | [79738893_2026-11-06/8799_1200-pepsico-kfc-verlaengerung-internationale-maerkte.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/79738893_2026-11-06/8799_1200-pepsico-kfc-verlaengerung-internationale-maerkte.md) |
 | 06.11.2026 11:30 | MP Materials: Umsatz fast verdreifacht, Verlust halbiert – Neodym-Förderer wird im dritten Quartal bereinigt profitabel | [79738893_2026-11-06/8869_1130-mp-materials-q3-2026-neodym-magnete-gm.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/79738893_2026-11-06/8869_1130-mp-materials-q3-2026-neodym-magnete-gm.md) |
 | 06.11.2026 10:30 | Mitsubishi Heavy: Gasturbinen und Kernkraft treiben den Halbjahresgewinn um 45 %, Prognose und Rückkauf folgen | [79738893_2026-11-06/8969_1030-mitsubishi-heavy-industries-halbjahr-fy2026-gasturbinen.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/79738893_2026-11-06/8969_1030-mitsubishi-heavy-industries-halbjahr-fy2026-gasturbinen.md) |

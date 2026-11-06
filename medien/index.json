@@ -901,6 +901,19 @@
   "logo": "medien/logo/o.png",
   "name": "Realty Income Corporation"
  },
+ "O39.SI": {
+  "aufmacher": [
+   "medien/aufmacher/o39-si/ocbc-q3-2026-zentrale-foto.jpg"
+  ],
+  "ceo": {
+   "datei": "medien/ceo/o39-si.png",
+   "name": "Tan Teck Long",
+   "rolle": "CEO OCBC",
+   "zeile": "Tan Teck Long | CEO OCBC"
+  },
+  "logo": "medien/logo/o39-si.png",
+  "name": "OCBC"
+ },
  "ODFL": {
   "logo": "medien/logo/odfl.png",
   "name": "Old Dominion"
@@ -924,6 +937,13 @@
  "PEG": {
   "logo": "medien/logo/peg.png",
   "name": "Public Service Enterprise Group"
+ },
+ "PEP": {
+  "aufmacher": [
+   "medien/aufmacher/pep/pepsico-kfc-verlaengerung-internationale-maerkte-foto.jpg"
+  ],
+  "logo": "medien/logo/pep.png",
+  "name": "PepsiCo"
  },
  "PFE": {
   "ceo": {
