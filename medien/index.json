@@ -285,6 +285,16 @@
   "logo": "medien/logo/ba.png",
   "name": "BA"
  },
+ "BABA": {
+  "ceo": {
+   "datei": "medien/ceo/baba.png",
+   "name": "Eddie Wu",
+   "rolle": "CEO Alibaba",
+   "stand": "Story 2025, vor Verwendung CEO pruefen",
+   "zeile": "Eddie Wu | CEO Alibaba"
+  },
+  "name": "Alibaba"
+ },
  "BAS.DE": {
   "ceo": {
    "datei": "medien/ceo/bas-de.png",
@@ -313,6 +323,16 @@
  "BBVA": {
   "logo": "medien/logo/bbva.png",
   "name": "Banco Bilbao Vizcaya Argentaria, S.A."
+ },
+ "BC8.DE": {
+  "ceo": {
+   "datei": "medien/ceo/bc8.png",
+   "name": "Thomas Olemutz",
+   "rolle": "CEO Bechtle",
+   "stand": "Story 2025, vor Verwendung CEO pruefen",
+   "zeile": "Thomas Olemutz | CEO Bechtle"
+  },
+  "name": "Bechtle"
  },
  "BCS": {
   "logo": "medien/logo/bcs.png",
@@ -841,6 +861,16 @@
   "logo": "medien/logo/gww.png",
   "name": "W. W. Grainger"
  },
+ "HD": {
+  "ceo": {
+   "datei": "medien/ceo/hd.png",
+   "name": "Ted Decker",
+   "rolle": "CEO Home Depot",
+   "stand": "Story 2025, vor Verwendung CEO pruefen",
+   "zeile": "Ted Decker | CEO Home Depot"
+  },
+  "name": "Home Depot"
+ },
  "HEN3.DE": {
   "ceo": {
    "datei": "medien/ceo/hen3.png",
@@ -911,6 +941,16 @@
  "IEX": {
   "logo": "medien/logo/iex.png",
   "name": "IDEX Corporation"
+ },
+ "IFX.DE": {
+  "ceo": {
+   "datei": "medien/ceo/ifx.png",
+   "name": "Jochen Hanebeck",
+   "rolle": "CEO Infineon",
+   "stand": "Story 2025, vor Verwendung CEO pruefen",
+   "zeile": "Jochen Hanebeck | CEO Infineon"
+  },
+  "name": "Infineon"
  },
  "IMB.L": {
   "ceo_archiv": [
@@ -1551,6 +1591,13 @@
   "aufmacher": [
    "medien/aufmacher/pltr/palantir-q3-2026-zahlen-prognose-foto.jpg"
   ],
+  "ceo": {
+   "datei": "medien/ceo/pltr.png",
+   "name": "Alex Karp",
+   "rolle": "CEO Palantir",
+   "stand": "Story 2025, vor Verwendung CEO pruefen",
+   "zeile": "Alex Karp | CEO Palantir"
+  },
   "logo": "medien/logo/pltr.png",
   "name": "Palantir Technologies"
  },
@@ -1837,6 +1884,16 @@
   "logo": "medien/logo/tech.png",
   "name": "Bio-Techne"
  },
+ "TGT": {
+  "ceo": {
+   "datei": "medien/ceo/tgt.png",
+   "name": "Michael Fiddelke",
+   "rolle": "CEO Target",
+   "stand": "Story 2025, vor Verwendung CEO pruefen",
+   "zeile": "Michael Fiddelke | CEO Target"
+  },
+  "name": "Target"
+ },
  "TKA.DE": {
   "ceo": {
    "datei": "medien/ceo/tka-de.png",
@@ -1901,6 +1958,16 @@
    "zeile": "Elon Musk | CEO Tesla"
   },
   "name": "Tesla"
+ },
+ "TSLX": {
+  "ceo": {
+   "datei": "medien/ceo/tslx.png",
+   "name": "Alan Waxman",
+   "rolle": "CEO Sixth Street",
+   "stand": "Story 2025, vor Verwendung CEO pruefen",
+   "zeile": "Alan Waxman | CEO Sixth Street"
+  },
+  "name": "Sixth Street Specialty Lending"
  },
  "TSM": {
   "ceo": {
