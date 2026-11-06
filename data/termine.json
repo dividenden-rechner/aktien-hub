@@ -514,6 +514,15 @@
    "quelle": "https://www.sec.gov/Archives/edgar/data/55785/000162828026070514/kmbq32026ex-991.htm"
   },
   {
+   "sym": "MCHP",
+   "name": "Microchip Technology",
+   "art": "ergebnis",
+   "datum": "2026-11-05",
+   "betrag": "",
+   "waehrung": "",
+   "quelle": "https://www.sec.gov/Archives/edgar/data/827054/000082705426000061/exhibit991q2fy27.htm"
+  },
+  {
    "sym": "MET",
    "name": "MetLife",
    "art": "ergebnis",
@@ -521,6 +530,15 @@
    "betrag": "",
    "waehrung": "",
    "quelle": "https://www.sec.gov/Archives/edgar/data/1099219/000109921926000058/ex991earningsreleasetables.htm"
+  },
+  {
+   "sym": "MNST",
+   "name": "Monster Beverage",
+   "art": "ergebnis",
+   "datum": "2026-11-05",
+   "betrag": "",
+   "waehrung": "",
+   "quelle": "https://www.sec.gov/Archives/edgar/data/865752/000110465926123387/tm2629095d1_ex99-1.htm"
   },
   {
    "sym": "NWSA",
@@ -575,6 +593,42 @@
    "betrag": "",
    "waehrung": "",
    "quelle": "https://www.sec.gov/Archives/edgar/data/72903/000119312526444394/d205441dex9901.htm"
+  },
+  {
+   "sym": "AEE",
+   "name": "Ameren",
+   "art": "ergebnis",
+   "datum": "2026-11-06",
+   "betrag": "",
+   "waehrung": "",
+   "quelle": "https://www.sec.gov/Archives/edgar/data/1002910/000100291026000030/q32026ex991earningsrelease.htm"
+  },
+  {
+   "sym": "CPT",
+   "name": "Camden Property Trust",
+   "art": "ergebnis",
+   "datum": "2026-11-06",
+   "betrag": "",
+   "waehrung": "",
+   "quelle": "https://www.sec.gov/Archives/edgar/data/906345/000162828026071117/exhibit991earningsrelease3.htm"
+  },
+  {
+   "sym": "MTD",
+   "name": "Mettler Toledo",
+   "art": "ergebnis",
+   "datum": "2026-11-06",
+   "betrag": "",
+   "waehrung": "",
+   "quelle": "https://www.sec.gov/Archives/edgar/data/1037646/000103764626000072/ex-991mtd8xkq32026.htm"
+  },
+  {
+   "sym": "REG",
+   "name": "Regency Centers",
+   "art": "ergebnis",
+   "datum": "2026-11-06",
+   "betrag": "",
+   "waehrung": "",
+   "quelle": "https://www.sec.gov/Archives/edgar/data/910606/000119312526450159/reg-ex99_1.htm"
   },
   {
    "sym": "HSBC",
@@ -793,6 +847,15 @@
    "quelle": "https://www.sec.gov/Archives/edgar/data/872589/000087258926000032/exhibit991q32026.htm"
   },
   {
+   "sym": "MCHP",
+   "name": "Microchip Technology",
+   "art": "dividende_exdatum",
+   "datum": "2026-11-23",
+   "betrag": "",
+   "waehrung": "USD",
+   "quelle": "https://www.sec.gov/Archives/edgar/data/827054/000082705426000061/exhibit991q2fy27.htm"
+  },
+  {
    "sym": "TECH",
    "name": "Bio-Techne",
    "art": "dividende_zahltag",
@@ -901,6 +964,15 @@
    "quelle": "https://www.sec.gov/Archives/edgar/data/1163165/000116316526000043/cop-20261105x8kexx991.htm"
   },
   {
+   "sym": "LRCX",
+   "name": "Lam Research",
+   "art": "dividende_exdatum",
+   "datum": "2026-12-02",
+   "betrag": "0.33",
+   "waehrung": "USD",
+   "quelle": "https://www.sec.gov/Archives/edgar/data/707549/000070754926000057/lrcx_exx991xsharexrepurcha.htm"
+  },
+  {
    "sym": "REGN",
    "name": "Regeneron Pharmaceuticals",
    "art": "dividende_zahltag",
@@ -926,6 +998,15 @@
    "betrag": "17.50",
    "waehrung": "JPY",
    "quelle": "https://www.sec.gov/Archives/edgar/data/313838/000110465926122935/tm2628525d4_6k.htm"
+  },
+  {
+   "sym": "MCHP",
+   "name": "Microchip Technology",
+   "art": "dividende_zahltag",
+   "datum": "2026-12-08",
+   "betrag": "",
+   "waehrung": "USD",
+   "quelle": "https://www.sec.gov/Archives/edgar/data/827054/000082705426000061/exhibit991q2fy27.htm"
   },
   {
    "sym": "TSCO",
@@ -971,6 +1052,15 @@
    "betrag": "1.25",
    "waehrung": "USD",
    "quelle": "https://www.sec.gov/Archives/edgar/data/1034054/000119312526443666/d185668dex991.htm"
+  },
+  {
+   "sym": "REG",
+   "name": "Regency Centers",
+   "art": "dividende_exdatum",
+   "datum": "2026-12-14",
+   "betrag": "0.800",
+   "waehrung": "USD",
+   "quelle": "https://www.sec.gov/Archives/edgar/data/910606/000119312526450159/reg-ex99_1.htm"
   },
   {
    "sym": "BP",
@@ -1142,6 +1232,33 @@
    "betrag": "",
    "waehrung": "",
    "quelle": "https://www.sec.gov/Archives/edgar/data/1060391/000106039126000326/exhibit991q32026.htm"
+  },
+  {
+   "sym": "REG",
+   "name": "Regency Centers",
+   "art": "dividende_zahltag",
+   "datum": "2027-01-05",
+   "betrag": "0.800",
+   "waehrung": "USD",
+   "quelle": "https://www.sec.gov/Archives/edgar/data/910606/000119312526450159/reg-ex99_1.htm"
+  },
+  {
+   "sym": "LRCX",
+   "name": "Lam Research",
+   "art": "dividende_zahltag",
+   "datum": "2027-01-06",
+   "betrag": "0.33",
+   "waehrung": "USD",
+   "quelle": "https://www.sec.gov/Archives/edgar/data/707549/000070754926000057/lrcx_exx991xsharexrepurcha.htm"
+  },
+  {
+   "sym": "MU",
+   "name": "Micron Technology",
+   "art": "ergebnis",
+   "datum": "2027-01-14",
+   "betrag": "",
+   "waehrung": "",
+   "quelle": "https://www.sec.gov/Archives/edgar/data/723125/000110465926123389/tm2629062d1_ex99-1.htm"
   },
   {
    "sym": "ABBV",
