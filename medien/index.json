@@ -238,6 +238,16 @@
   "logo": "medien/logo/ares.png",
   "name": "Ares Management"
  },
+ "ASML": {
+  "ceo": {
+   "datei": "medien/ceo/asml.png",
+   "name": "Christophe Fouquet",
+   "rolle": "CEO ASML",
+   "stand": "Story 2025, vor Verwendung CEO pruefen",
+   "zeile": "Christophe Fouquet | CEO ASML"
+  },
+  "name": "ASML"
+ },
  "ATO": {
   "logo": "medien/logo/ato.png",
   "name": "Atmos Energy"
@@ -596,6 +606,16 @@
   "logo": "medien/logo/dlr.png",
   "name": "Digital Realty"
  },
+ "DOW": {
+  "ceo": {
+   "datei": "medien/ceo/dow.png",
+   "name": "Jim Fitterling",
+   "rolle": "CEO Dow",
+   "stand": "Story 2025, vor Verwendung CEO pruefen",
+   "zeile": "Jim Fitterling | CEO Dow"
+  },
+  "name": "Dow"
+ },
  "DTE": {
   "logo": "medien/logo/dte.png",
   "name": "DTE Energy"
@@ -907,6 +927,16 @@
   "logo": "medien/logo/ing.png",
   "name": "Ing Groep Nv"
  },
+ "INTC": {
+  "ceo": {
+   "datei": "medien/ceo/intc.png",
+   "name": "Lip-Bu Tan",
+   "rolle": "CEO Intel",
+   "stand": "Story 2025, vor Verwendung CEO pruefen",
+   "zeile": "Lip-Bu Tan | CEO Intel"
+  },
+  "name": "Intel"
+ },
  "INTC.NE": {
   "aufmacher": [
    "medien/aufmacher/intc-ne/intel-q3-2026-zahlen-foto.jpg"
@@ -1036,6 +1066,16 @@
  "LITE": {
   "logo": "medien/logo/lite.png",
   "name": "Lumentum"
+ },
+ "LLY": {
+  "ceo": {
+   "datei": "medien/ceo/lly.png",
+   "name": "David Ricks",
+   "rolle": "CEO Eli Lilly",
+   "stand": "Story 2025, vor Verwendung CEO pruefen",
+   "zeile": "David Ricks | CEO Eli Lilly"
+  },
+  "name": "Eli Lilly"
  },
  "LNT": {
   "logo": "medien/logo/lnt.png",
@@ -1966,6 +2006,13 @@
   "aufmacher": [
    "medien/aufmacher/ups/ups-q3-2026-ergebnisse-foto.jpg"
   ],
+  "ceo": {
+   "datei": "medien/ceo/ups.png",
+   "name": "Carol Tomé",
+   "rolle": "CEO UPS",
+   "stand": "Story 2025, vor Verwendung CEO pruefen",
+   "zeile": "Carol Tomé | CEO UPS"
+  },
   "logo": "medien/logo/ups.png",
   "name": "UPS"
  },
