@@ -8,12 +8,15 @@ category: Quartalszahlen
 story_image: assets/magazin/mitsubishi-heavy-halbjahr-fy2026-kennzahlen.png
 story_chart: assets/magazin/mitsubishi-heavy-halbjahr-fy2026-prognose.png
 story_text: "Mitsubishi Heavy verdient im ersten Halbjahr 45 % mehr, und fast der ganze Zuwachs kommt aus einer Sparte: Im Energiegeschäft fast verdoppelt sich der Gewinn, weil Gasturbinen für Kraftwerke in Nordamerika und Asien gefragt sind und die Kernkraft anzieht.\nSchwächen gibt es trotzdem. Die Sparte Anlagenbau verdient 7 % weniger, und bei Dampfturbinen fallen Verluste aus zwei Kohlevergasungs-Kraftwerken in Japan an, 70 Mrd. Yen sind dafür im Jahr eingeplant. Der Auftragseingang bei Luftfahrt und Verteidigung fällt um 46 %, weil das Vorjahr von Großaufträgen geprägt war.\nDas Geld fließt zurück: Der freie Cashflow liegt bei 468 Mrd. Yen, die Kasse übersteigt die Schulden um 1,2 Billionen Yen. Die Dividende steigt auf 29 Yen, dazu kommt ein Rückkauf über bis zu 300 Mrd. Yen. In der Prognose fehlen noch die Folgen der Lage im Nahen Osten."
+image: assets/magazin/mitsubishi-heavy-industries-halbjahr-fy2026-gasturbinen.jpg
+image_alt: "Arbeiter in blauen Overalls beobachten, wie ein Gasturbinenrotor von Mitsubishi Heavy in der Fertigungshalle an einem Kran hängt"
+image_credit: "Foto: Mitsubishi Heavy Industries (Pressebild)"
 logo_name: "Mitsubishi Heavy Industries"
 logo_symbol: 7011.T
 logo_domain: mhi.com
 ---
 <!-- PRÜFEN: Quelle: Präsentation von Mitsubishi Heavy zum 1. Halbjahr FY2026 vom 06.11.2026 (Screenshots von Divi, Folien 4, 10, 11, 16, 17, 19, 20) und Investing.com (06.11.2026, Kursrückgang). Pressemitteilung/Originallink nachtragen (mhi.com). -->
-<!-- PRÜFEN: Aufmacherfoto und Logo kommen vom Bot (tools/asset.request). Kein CEO-Foto vorhanden, Story ohne Portrait; Folie unten links (Prognose). Kursbild fehlt. -->
+<!-- PRÜFEN: Aufmacherfoto von Divi (Bild von der MHI-Gasturbinenseite, Rechte/Pressebild-Status unverifiziert). Kein CEO-Foto vorhanden, Story ohne Portrait; Folie unten links (Prognose). Kursbild fehlt. -->
 <!-- PRÜFEN: Kursrückgang von 8,3 % laut Investing.com ohne unternehmensspezifische Ursache; Uhrzeit der Veröffentlichung der Zahlen nicht ermittelt, Zusammenhang daher offen. -->
 
 !!! kurz "Kurz gesagt"
