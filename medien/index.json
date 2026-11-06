@@ -11,6 +11,13 @@
   "aufmacher": [
    "medien/aufmacher/2318-hk/ping-an-q3-2026-foto.jpg"
   ],
+  "ceo": {
+   "datei": "medien/ceo/2318-hk.png",
+   "name": "Ma Mingzhe",
+   "rolle": "Chairman Ping An (Funktion laut Story nicht genannt)",
+   "stand": "Story Aug 2026",
+   "zeile": "Ma Mingzhe | Chairman Ping An (Funktion laut Story nicht genannt)"
+  },
   "logo": "medien/logo/2318-hk.png",
   "name": "Ping An Insurance (Group) Company of China, Ltd."
  },
@@ -297,6 +304,16 @@
    "zeile": "Lawson Whiting | CEO Brown-Forman (Rücktritt angekündigt)"
   },
   "name": "Brown-Forman (Rücktritt angekündigt)"
+ },
+ "BHP": {
+  "ceo": {
+   "datei": "medien/ceo/bhp.png",
+   "name": "Brandon Craig",
+   "rolle": "CEO BHP (seit Juni 2026)",
+   "stand": "Story Aug 2026",
+   "zeile": "Brandon Craig | CEO BHP (seit Juni 2026)"
+  },
+  "name": "BHP Group"
  },
  "BIIB": {
   "logo": "medien/logo/biib.png",
@@ -696,6 +713,13 @@
   "aufmacher": [
    "medien/aufmacher/gev/ge-vernova-q3-2026-ergebnisse-foto.jpg"
   ],
+  "ceo": {
+   "datei": "medien/ceo/gev.png",
+   "name": "Scott Strazik",
+   "rolle": "CEO GE Vernova",
+   "stand": "Story Aug 2026",
+   "zeile": "Scott Strazik | CEO GE Vernova"
+  },
   "logo": "medien/logo/gev.png",
   "name": "GE Vernova"
  },
@@ -1241,6 +1265,13 @@
   "aufmacher": [
    "medien/aufmacher/o/realty-income-q3-2026-quartalszahlen-foto.jpg"
   ],
+  "ceo": {
+   "datei": "medien/ceo/o.png",
+   "name": "Sumit Roy",
+   "rolle": "CEO Realty Income",
+   "stand": "Story Aug 2026",
+   "zeile": "Sumit Roy | CEO Realty Income"
+  },
   "logo": "medien/logo/o.png",
   "name": "Realty Income Corporation"
  },
@@ -1497,6 +1528,16 @@
   "logo": "medien/logo/sbux.png",
   "name": "Starbucks Corporation"
  },
+ "SE": {
+  "ceo": {
+   "datei": "medien/ceo/se.png",
+   "name": "Forrest Li",
+   "rolle": "CEO Sea Limited",
+   "stand": "Story Aug 2026",
+   "zeile": "Forrest Li | CEO Sea Limited"
+  },
+  "name": "Sea Limited"
+ },
  "SHEL": {
   "ceo": {
    "datei": "medien/ceo/shel.png",
@@ -1514,6 +1555,26 @@
   ],
   "logo": "medien/logo/shl-de.png",
   "name": "Siemens Healthineers"
+ },
+ "SIE.DE": {
+  "ceo": {
+   "datei": "medien/ceo/sie-de.png",
+   "name": "Roland Busch",
+   "rolle": "CEO Siemens",
+   "stand": "Story Aug 2026",
+   "zeile": "Roland Busch | CEO Siemens"
+  },
+  "name": "Siemens"
+ },
+ "SJM": {
+  "ceo": {
+   "datei": "medien/ceo/sjm.png",
+   "name": "Marc Smucker",
+   "rolle": "CEO J.M. Smucker",
+   "stand": "Story Aug 2026",
+   "zeile": "Marc Smucker | CEO J.M. Smucker"
+  },
+  "name": "J.M. Smucker"
  },
  "SNDK": {
   "logo": "medien/logo/sndk.png",
@@ -1663,6 +1724,16 @@
  "TYL": {
   "logo": "medien/logo/tyl.png",
   "name": "Tyler Technologies"
+ },
+ "U11.SI": {
+  "ceo": {
+   "datei": "medien/ceo/u11-si.png",
+   "name": "Wee Ee Cheong",
+   "rolle": "CEO UOB",
+   "stand": "Story Aug 2026",
+   "zeile": "Wee Ee Cheong | CEO UOB"
+  },
+  "name": "United Overseas Bank"
  },
  "UBS": {
   "logo": "medien/logo/ubs.png",
