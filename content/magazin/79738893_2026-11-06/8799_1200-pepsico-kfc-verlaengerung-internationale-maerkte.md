@@ -8,15 +8,18 @@ category: Geschäft
 typ: kurz
 quelle_url: https://www.prnewswire.com/news-releases/pepsico-secures-renewal-across-select-kfc-international-markets-302931690.html
 quelle_name: "Pressemitteilung PepsiCo (PR Newswire)"
-logo_symbol: PEP
 logo_name: "PepsiCo"
+logo_symbol: PEP
 logo_domain: pepsico.com
 image: assets/magazin/pepsico-kfc-verlaengerung-internationale-maerkte-foto.jpg
-image_alt: "Collage mit KFC-Gerichten und Pepsi-Bechern: Hähnchenburger, Doritos Loaded, Menü mit Pepsi und eine lächelnde Frau mit Pepsi-Becher"
-image_credit: "Bild: PepsiCo (Pressemitteilung)"
+image_alt: "Foto zu PepsiCo: A modern KFC restaurant in Murphy, North Carolina"
+image_credit: "Foto: Harrison Keely / Wikimedia Commons, CC BY 4.0"
+image_source: https://commons.wikimedia.org/wiki/File:A_modern_KFC_restaurant_in_Murphy,_North_Carolina.jpg
+image_artist_url: 
+logo_file: assets/logos/pep.png
 ---
 <!-- PRÜFEN: Quelle: Pressemitteilung PepsiCo vom 06.11.2026 (PR Newswire, Screenshots von Divi) und Berichte vom Oktober 2026 zum KFC-Wechsel zu Coca-Cola in den USA (nicht im Detail gelesen). Laufzeit der Verlängerung und Umsatzgröße nennt die Mitteilung nicht; "exklusiv" und "langfristig" aus Divis Vorlage wurden NICHT übernommen. -->
-<!-- PRÜFEN: Aufmacher = Pressebild-Collage von Divi (Original nur 500 px, auf 1200x675 hochgerechnet, daher weich); Bild stammt laut Divi aus der Pressemitteilung (PR Newswire). Bei Gelegenheit ggf. durch echtes Foto ersetzen. -->
+<!-- PRÜFEN: Aufmacherfoto kommt vom Bot (tools/asset.request). Divis Foto-Collage (Pressebild, nur ca. 500 px) nicht verwendet. -->
 
 PepsiCo hat die Partnerschaft mit der Fast-Food-Kette KFC in mehreren Auslandsmärkten verlängert. Laut Pressemitteilung vom 6. November 2026 bleibt PepsiCo der bevorzugte Getränkepartner (“beverage partner of choice”) für KFC-Restaurants in Australien, Indien, Großbritannien, Spanien, Deutschland, Frankreich, den Niederlanden und Belgien. Dazu kommen Märkte in Nahost, Europa, Asien-Pazifik und Lateinamerika, in denen PepsiCo-Marken schon jetzt ausgeschenkt werden.
 
