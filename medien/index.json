@@ -735,10 +735,11 @@
  },
  "D05.SI": {
   "ceo": {
-   "datei": "medien/ceo/d05-si.png",
+   "datei": "medien/ceo/dbs.png",
    "name": "Tan Su Shan",
-   "rolle": "CEO DBS",
-   "zeile": "Tan Su Shan | CEO DBS"
+   "rolle": "CEO DBS Group",
+   "stand": "Story Feb 2026, vor Verwendung CEO pruefen",
+   "zeile": "Tan Su Shan | CEO DBS Group"
   },
   "logo": "medien/logo/d05-si.png",
   "name": "DBS Group Holdings"
@@ -1049,6 +1050,16 @@
   },
   "name": "General Mills"
  },
+ "GLEN.L": {
+  "ceo": {
+   "datei": "medien/ceo/glen.png",
+   "name": "Gary Nagle",
+   "rolle": "CEO Glencore",
+   "stand": "Story Feb 2026, vor Verwendung CEO pruefen",
+   "zeile": "Gary Nagle | CEO Glencore"
+  },
+  "name": "Glencore"
+ },
  "GOOGL": {
   "ceo": {
    "datei": "medien/ceo/googl.png",
@@ -1059,6 +1070,16 @@
   },
   "logo": "medien/logo/googl.png",
   "name": "Alphabet Inc. (Class A)"
+ },
+ "GPC": {
+  "ceo": {
+   "datei": "medien/ceo/gpc.png",
+   "name": "Will Stengel",
+   "rolle": "CEO Genuine Parts",
+   "stand": "Story Feb 2026, vor Verwendung CEO pruefen",
+   "zeile": "Will Stengel | CEO Genuine Parts"
+  },
+  "name": "Genuine Parts"
  },
  "GPN": {
   "logo": "medien/logo/gpn.png",
@@ -1157,6 +1178,16 @@
   },
   "logo": "medien/logo/hsy.png",
   "name": "Hershey Company (The)"
+ },
+ "HTGC": {
+  "ceo": {
+   "datei": "medien/ceo/htgc.png",
+   "name": "Scott Bluestein",
+   "rolle": "CEO Hercules Capital",
+   "stand": "Story Feb 2026, vor Verwendung CEO pruefen",
+   "zeile": "Scott Bluestein | CEO Hercules Capital"
+  },
+  "name": "Hercules Capital"
  },
  "HWM": {
   "logo": "medien/logo/hwm.png",
@@ -1530,7 +1561,7 @@
    "datei": "medien/ceo/mdt.png",
    "name": "Geoff Martha",
    "rolle": "CEO Medtronic",
-   "stand": "Story Sep-Okt 2026",
+   "stand": "Story Feb 2026, vor Verwendung CEO pruefen",
    "zeile": "Geoff Martha | CEO Medtronic"
   },
   "name": "Medtronic"
@@ -1908,9 +1939,10 @@
  "PFE": {
   "ceo": {
    "datei": "medien/ceo/pfe.png",
-   "name": "Albert Bourla, CEO Pfizer",
-   "rolle": "",
-   "zeile": "Albert Bourla, CEO Pfizer"
+   "name": "Albert Bourla",
+   "rolle": "CEO Pfizer",
+   "stand": "Story Feb 2026, vor Verwendung CEO pruefen",
+   "zeile": "Albert Bourla | CEO Pfizer"
   },
   "logo": "medien/logo/pfe.png",
   "name": "Pfizer Inc."
@@ -2488,6 +2520,16 @@
    "zeile": "Ryan McInerney | CEO Visa"
   },
   "name": "Visa"
+ },
+ "VICI": {
+  "ceo": {
+   "datei": "medien/ceo/vici.png",
+   "name": "Ed Pitoniak",
+   "rolle": "CEO VICI Properties",
+   "stand": "Story Feb 2026, vor Verwendung CEO pruefen",
+   "zeile": "Ed Pitoniak | CEO VICI Properties"
+  },
+  "name": "VICI Properties"
  },
  "VLO": {
   "logo": "medien/logo/vlo.png",
