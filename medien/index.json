@@ -17,6 +17,16 @@
   "logo": "medien/logo/005930-ks.png",
   "name": "Samsung Electronics"
  },
+ "1810.HK": {
+  "ceo": {
+   "datei": "medien/ceo/xiaomi.png",
+   "name": "Lei Jun",
+   "rolle": "CEO Xiaomi",
+   "stand": "Story 2025, vor Verwendung CEO pruefen",
+   "zeile": "Lei Jun | CEO Xiaomi"
+  },
+  "name": "Xiaomi"
+ },
  "2318.HK": {
   "aufmacher": [
    "medien/aufmacher/2318-hk/ping-an-q3-2026-foto.jpg"
@@ -718,6 +728,16 @@
   },
   "name": "Siemens Energy"
  },
+ "EOAN.DE": {
+  "ceo": {
+   "datei": "medien/ceo/eoan.png",
+   "name": "Leonhard Birnbaum",
+   "rolle": "CEO E.ON",
+   "stand": "Story 2025, vor Verwendung CEO pruefen",
+   "zeile": "Leonhard Birnbaum | CEO E.ON"
+  },
+  "name": "E.ON"
+ },
  "EQIX": {
   "logo": "medien/logo/eqix.png",
   "name": "Equinix"
@@ -882,6 +902,16 @@
   "logo": "medien/logo/hen3-de.png",
   "name": "Henkel"
  },
+ "HNR1.DE": {
+  "ceo": {
+   "datei": "medien/ceo/hnr1.png",
+   "name": "Clemens Jungsthöfel",
+   "rolle": "CEO Hannover Rück",
+   "stand": "Story 2025, vor Verwendung CEO pruefen",
+   "zeile": "Clemens Jungsthöfel | CEO Hannover Rück"
+  },
+  "name": "Hannover Rück"
+ },
  "HONA": {
   "logo": "medien/logo/hona.png",
   "name": "Honeywell Aerospace"
@@ -990,6 +1020,16 @@
   },
   "logo": "medien/logo/intc-ne.png",
   "name": "Intel Corporation"
+ },
+ "INTU": {
+  "ceo": {
+   "datei": "medien/ceo/intu.png",
+   "name": "Sasan Goodarzi",
+   "rolle": "CEO Intuit",
+   "stand": "Story 2025, vor Verwendung CEO pruefen",
+   "zeile": "Sasan Goodarzi | CEO Intuit"
+  },
+  "name": "Intuit"
  },
  "IR": {
   "logo": "medien/logo/ir.png",
@@ -1143,6 +1183,13 @@
   "aufmacher": [
    "medien/aufmacher/lyb/lyondellbasell-q3-2026-foto.jpg"
   ],
+  "ceo": {
+   "datei": "medien/ceo/lyb.png",
+   "name": "Peter Vanacker",
+   "rolle": "CEO LyondellBasell",
+   "stand": "Story 2025, vor Verwendung CEO pruefen",
+   "zeile": "Peter Vanacker | CEO LyondellBasell"
+  },
   "logo": "medien/logo/lyb.png",
   "name": "LyondellBasell Industries N.V."
  },
@@ -1894,6 +1941,16 @@
   },
   "name": "Target"
  },
+ "TJX": {
+  "ceo": {
+   "datei": "medien/ceo/tjx.png",
+   "name": "Ernie Herrmann",
+   "rolle": "CEO TJX",
+   "stand": "Story 2025, vor Verwendung CEO pruefen",
+   "zeile": "Ernie Herrmann | CEO TJX"
+  },
+  "name": "TJX Companies"
+ },
  "TKA.DE": {
   "ceo": {
    "datei": "medien/ceo/tka-de.png",
@@ -2130,6 +2187,13 @@
   "name": "Vertiv"
  },
  "VRTX": {
+  "ceo": {
+   "datei": "medien/ceo/vrtx.png",
+   "name": "Reshma Kewalramani",
+   "rolle": "CEO Vertex",
+   "stand": "Story 2025, vor Verwendung CEO pruefen",
+   "zeile": "Reshma Kewalramani | CEO Vertex"
+  },
   "logo": "medien/logo/vrtx.png",
   "name": "Vertex Pharmaceuticals"
  },
