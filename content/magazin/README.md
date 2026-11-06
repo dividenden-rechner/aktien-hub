@@ -16,11 +16,13 @@ Datei anklicken, dann Stift-Symbol: Zeile `draft: true` löschen und speichern, 
 | 29.10.2026 22:42 | Amazon steigert Umsatz im dritten Quartal auf 201,9 Milliarden Dollar | [79738970_2026-10-29/7757_2242-amazon-q3-2026-zahlen.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/79738970_2026-10-29/7757_2242-amazon-q3-2026-zahlen.md) |
 | 29.10.2026 10:12 | Shell erzielt im dritten Quartal 10,8 Milliarden Dollar Gewinn | [79738970_2026-10-29/8987_1012-shell-q3-2026-ergebnisse.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/79738970_2026-10-29/8987_1012-shell-q3-2026-ergebnisse.md) |
 
-### Online (302)
+### Online (304)
 
 | Datum | Titel | Datei |
 |---|---|---|
+| 06.11.2026 13:35 | Charter Communications erzielt im dritten Quartal 14,9 Mrd. US-Dollar Umsatz bei Nettoverlust | [79738893_2026-11-06/8664_1335-charter-communications-q3-2026-zahlen.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/79738893_2026-11-06/8664_1335-charter-communications-q3-2026-zahlen.md) |
 | 06.11.2026 13:34 | Moderna kehrt im dritten Quartal in die Gewinnzone zurück und hebt Jahresprognose an | [79738893_2026-11-06/8665_1334-moderna-quartalszahlen-q3-2026.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/79738893_2026-11-06/8665_1334-moderna-quartalszahlen-q3-2026.md) |
+| 06.11.2026 13:34 | Humana hebt Jahresprognose für bereinigten Gewinn je Aktie an | [79738893_2026-11-06/8665_1334-humana-q3-2026-zahlen-prognose.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/79738893_2026-11-06/8665_1334-humana-q3-2026-zahlen-prognose.md) |
 | 06.11.2026 13:34 | Alibaba Group Holding Ltd gibt Termin für Quartalszahlen bekannt | [79738893_2026-11-06/8665_1334-alibaba-group-erklaert-termin-fuer-quartalszahlen-q2-2026.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/79738893_2026-11-06/8665_1334-alibaba-group-erklaert-termin-fuer-quartalszahlen-q2-2026.md) |
 | 06.11.2026 13:33 | TKO Group Holdings plant Anleiheemission über 1,0 Milliarden US-Dollar für Aktienrückkäufe | [79738893_2026-11-06/8666_1333-tko-group-holdings-anleihe-milliarde-aktienrueckkauf.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/79738893_2026-11-06/8666_1333-tko-group-holdings-anleihe-milliarde-aktienrueckkauf.md) |
 | 06.11.2026 13:32 | HSBC erhöht Rückkaufvolumen für Nachranganleihen auf 1,5 Mrd. US-Dollar | [79738893_2026-11-06/8667_1332-hsbc-erhoeht-rueckkaufvolumen-fuer-nachranganleihen.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/79738893_2026-11-06/8667_1332-hsbc-erhoeht-rueckkaufvolumen-fuer-nachranganleihen.md) |

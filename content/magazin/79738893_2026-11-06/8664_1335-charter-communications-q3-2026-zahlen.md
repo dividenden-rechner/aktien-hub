@@ -10,6 +10,7 @@ quelle_url: https://www.sec.gov/Archives/edgar/data/1091667/000109166726000072/c
 quelle_name: "Pressemitteilung Charter Communications (SEC-Meldung)"
 logo_symbol: CHTR
 logo_name: "Charter Communications"
+logo_file: assets/logos/chtr.png
 ---
 <!-- PRÜFEN: Diese Zahlen stehen nicht im Originaltext: 14,92, 14,92, 14,92. Bitte pruefen, dann 'draft: true' loeschen. -->
 

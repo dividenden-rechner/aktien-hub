@@ -14,6 +14,7 @@ image: assets/magazin/humana-q3-2026-zahlen-prognose-foto.jpg
 image_alt: "Foto von Jim Rechtin"
 image_credit: "Foto: Aaron Lucy/Denver Headshots / Wikimedia Commons, CC BY-SA 4.0"
 image_source: https://commons.wikimedia.org/wiki/File:Jim_Rechtin.jpg
+logo_file: assets/logos/hum.png
 ---
 <!-- PRÜFEN: Diese Zahlen stehen nicht im Originaltext: 41,16, 32,65, Einordnung: 41,16. Bitte pruefen, dann 'draft: true' loeschen. -->
 
