@@ -79,11 +79,11 @@
    "medien/aufmacher/2318-hk/ping-an-q3-2026-foto.jpg"
   ],
   "ceo": {
-   "datei": "medien/ceo/2318-hk.png",
-   "name": "Ma Mingzhe",
-   "rolle": "Chairman Ping An (Funktion laut Story nicht genannt)",
-   "stand": "Story Aug 2026",
-   "zeile": "Ma Mingzhe | Chairman Ping An (Funktion laut Story nicht genannt)"
+   "datei": "medien/ceo/pingan.png",
+   "name": "Peter Ma Mingzhe",
+   "rolle": "Chairman Ping An (Story: CEO)",
+   "stand": "Story April/Mai 2026",
+   "zeile": "Peter Ma Mingzhe | Chairman Ping An (Story: CEO)"
   },
   "logo": "medien/logo/2318-hk.png",
   "name": "Ping An Insurance (Group) Company of China, Ltd."
@@ -114,6 +114,16 @@
   ],
   "logo": "medien/logo/6301-t.png",
   "name": "Komatsu Ltd."
+ },
+ "6367.T": {
+  "ceo": {
+   "datei": "medien/ceo/daikin.png",
+   "name": "Masanori Togawa",
+   "rolle": "Chairman/CEO Daikin",
+   "stand": "Story April/Mai 2026",
+   "zeile": "Masanori Togawa | Chairman/CEO Daikin"
+  },
+  "name": "Daikin Industries"
  },
  "7011.T": {
   "aufmacher": [
@@ -211,6 +221,16 @@
  "ACGL": {
   "logo": "medien/logo/acgl.png",
   "name": "Arch Capital Group"
+ },
+ "ADC": {
+  "ceo": {
+   "datei": "medien/ceo/adc.png",
+   "name": "Joey Agree",
+   "rolle": "CEO Agree Realty",
+   "stand": "Story April/Mai 2026",
+   "zeile": "Joey Agree | CEO Agree Realty"
+  },
+  "name": "Agree Realty"
  },
  "ADM": {
   "logo": "medien/logo/adm.png",
@@ -508,6 +528,16 @@
  "BP": {
   "logo": "medien/logo/bp.png",
   "name": "Bp Plc"
+ },
+ "BP.L": {
+  "ceo": {
+   "datei": "medien/ceo/bp.png",
+   "name": "Meg O'Neill",
+   "rolle": "CEO BP",
+   "stand": "Story April/Mai 2026",
+   "zeile": "Meg O'Neill | CEO BP"
+  },
+  "name": "BP"
  },
  "BR": {
   "logo": "medien/logo/br.png",
@@ -979,7 +1009,7 @@
    "datei": "medien/ceo/gev.png",
    "name": "Scott Strazik",
    "rolle": "CEO GE Vernova",
-   "stand": "Story Aug 2026",
+   "stand": "Story April/Mai 2026",
    "zeile": "Scott Strazik | CEO GE Vernova"
   },
   "logo": "medien/logo/gev.png",
@@ -1279,7 +1309,7 @@
    "datei": "medien/ceo/ko.png",
    "name": "Henrique Braun",
    "rolle": "CEO Coca-Cola",
-   "stand": "Story Juli 2026",
+   "stand": "Story April/Mai 2026",
    "zeile": "Henrique Braun | CEO Coca-Cola"
   },
   "logo": "medien/logo/ko.png",
@@ -1654,6 +1684,16 @@
  "NCLH": {
   "logo": "medien/logo/nclh.png",
   "name": "Norwegian Cruise Line Holdings"
+ },
+ "NESN.SW": {
+  "ceo": {
+   "datei": "medien/ceo/nesn.png",
+   "name": "Philipp Navratil",
+   "rolle": "CEO Nestlé",
+   "stand": "Story April/Mai 2026",
+   "zeile": "Philipp Navratil | CEO Nestlé"
+  },
+  "name": "Nestlé"
  },
  "NFLX": {
   "ceo": {
@@ -2424,7 +2464,7 @@
    "datei": "medien/ceo/v.png",
    "name": "Ryan McInerney",
    "rolle": "CEO Visa",
-   "stand": "Story Okt 2026",
+   "stand": "Story April/Mai 2026",
    "zeile": "Ryan McInerney | CEO Visa"
   },
   "name": "Visa"
