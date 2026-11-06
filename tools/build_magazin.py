@@ -101,6 +101,9 @@ def read_post(path):
     if meta.get("kein_logo", "").lower() in ("ja", "true", "1", "yes"):   # Artikel ohne Firmenlogo (zum Beispiel Marktueberblick)
         meta["logo_file"] = meta["logo_symbol"] = meta["logo_domain"] = ""; meta["kein_logo"] = True
     meta["draft"] = meta.get("draft", "").lower() in ("true", "ja", "1", "yes")
+    try:
+        import medien; medien.fill(meta)   # fehlendes Logo/CEO-Portrait aus der Medien-Ablage
+    except Exception as ex: print("Medien-Ablage:", ex)
     meta["author"] = meta.get("author") or CFG["default_author"]
     if "redaktion" in meta["author"].lower(): meta["author"] = "Aus der Redaktion"
     meta["category"] = meta.get("category") or "Analyse"
@@ -579,6 +582,7 @@ def build_post(p, posts):
     img = img.lstrip("/")
     img_url = absu(img)
     body = md_to_html(p["body_md"], depth)
+    body = re.sub(r'<h2 id="quellen">Quellen</h2>\s*(<ul>.*?</ul>)', r'<details class="quellen"><summary>Quellen</summary>\1</details>', body, count=1, flags=re.S)
     hits = glossar.analyse(p, body)                    # Stichworte -> Erklaerartikel
     body = glossar.verlinke(body, hits, pre)
     n_words = words(body); mins = max(1, round(n_words / 200))

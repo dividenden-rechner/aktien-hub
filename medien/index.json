@@ -1,0 +1,1285 @@
+{
+ "005380.KS": {
+  "logo": "medien/logo/005380-ks.png",
+  "name": "Hyundai Motor"
+ },
+ "005930.KS": {
+  "logo": "medien/logo/005930-ks.png",
+  "name": "Samsung Electronics"
+ },
+ "2318.HK": {
+  "aufmacher": [
+   "medien/aufmacher/2318-hk/ping-an-q3-2026-foto.jpg"
+  ],
+  "logo": "medien/logo/2318-hk.png",
+  "name": "Ping An Insurance (Group) Company of China, Ltd."
+ },
+ "6301.T": {
+  "aufmacher": [
+   "medien/aufmacher/6301-t/komatsu-halbjahreszahlen-2026-foto.jpg"
+  ],
+  "logo": "medien/logo/6301-t.png",
+  "name": "Komatsu Ltd."
+ },
+ "7011.T": {
+  "aufmacher": [
+   "medien/aufmacher/7011-t/mitsubishi-heavy-industries-halbjahr-fy2026-gasturbinen.jpg"
+  ],
+  "ceo": {
+   "datei": "medien/ceo/7011-t.png",
+   "name": "Eisaku Ito",
+   "rolle": "CEO Mitsubishi Heavy Industries",
+   "zeile": "Eisaku Ito | CEO Mitsubishi Heavy Industries"
+  },
+  "logo": "medien/logo/7011-t.png",
+  "name": "Mitsubishi Heavy Industries"
+ },
+ "7203.T": {
+  "aufmacher": [
+   "medien/aufmacher/7203-t/toyota-q2-geschaeftsjahr-2027-hybride-prognose-foto.jpg"
+  ],
+  "ceo": {
+   "datei": "medien/ceo/7203-t.png",
+   "name": "Kenta Kon",
+   "rolle": "CEO Toyota",
+   "zeile": "Kenta Kon | CEO Toyota"
+  },
+  "logo": "medien/logo/7203-t.png",
+  "name": "Toyota"
+ },
+ "9432.T": {
+  "logo": "medien/logo/9432-t.png",
+  "name": "NTT"
+ },
+ "AAPL.NE": {
+  "aufmacher": [
+   "medien/aufmacher/aapl-ne/apple-geschaeftsbericht-2026-foto.jpg"
+  ],
+  "logo": "medien/logo/aapl-ne.png",
+  "name": "Apple Inc."
+ },
+ "ABBV": {
+  "logo": "medien/logo/abbv.png",
+  "name": "AbbVie Inc."
+ },
+ "ABEC.F": {
+  "aufmacher": [
+   "medien/aufmacher/abec-f/alphabet-q3-2026-quartalszahlen-foto.jpg"
+  ],
+  "logo": "medien/logo/abec-f.png",
+  "name": "Alphabet"
+ },
+ "ABNB": {
+  "logo": "medien/logo/abnb.png",
+  "name": "Airbnb"
+ },
+ "ABT": {
+  "aufmacher": [
+   "medien/aufmacher/abt/abbott-sonicforce-tectonic-studie-2026-foto.jpg"
+  ],
+  "logo": "medien/logo/abt.png",
+  "name": "Abbott"
+ },
+ "ACGL": {
+  "logo": "medien/logo/acgl.png",
+  "name": "Arch Capital Group"
+ },
+ "ADM": {
+  "logo": "medien/logo/adm.png",
+  "name": "Archer Daniels Midland"
+ },
+ "ADP": {
+  "logo": "medien/logo/adp.png",
+  "name": "Automatic Data Processing"
+ },
+ "AEE": {
+  "logo": "medien/logo/aee.png",
+  "name": "Ameren"
+ },
+ "AFL": {
+  "logo": "medien/logo/afl.png",
+  "name": "Aflac"
+ },
+ "AIZ": {
+  "logo": "medien/logo/aiz.png",
+  "name": "Assurant"
+ },
+ "AKAM": {
+  "logo": "medien/logo/akam.png",
+  "name": "Akamai Technologies"
+ },
+ "ALB": {
+  "logo": "medien/logo/alb.png",
+  "name": "Albemarle Corporation"
+ },
+ "ALGN": {
+  "logo": "medien/logo/algn.png",
+  "name": "Align Technology"
+ },
+ "AMCR": {
+  "logo": "medien/logo/amcr.png",
+  "name": "Amcor"
+ },
+ "AMD": {
+  "ceo": {
+   "datei": "medien/ceo/amd.png",
+   "name": "Lisa Su",
+   "rolle": "CEO AMD",
+   "zeile": "Lisa Su | CEO AMD"
+  },
+  "logo": "medien/logo/amd.png",
+  "name": "Advanced Micro Devices"
+ },
+ "AME": {
+  "logo": "medien/logo/ame.png",
+  "name": "Ametek"
+ },
+ "AMZN": {
+  "aufmacher": [
+   "medien/aufmacher/amzn/amazon-q3-2026-zahlen-foto.jpg"
+  ],
+  "logo": "medien/logo/amzn.png",
+  "name": "Amazon.com, Inc."
+ },
+ "ANET": {
+  "logo": "medien/logo/anet.png",
+  "name": "Arista Networks"
+ },
+ "AON": {
+  "logo": "medien/logo/aon.png",
+  "name": "Aon plc"
+ },
+ "AOS": {
+  "logo": "medien/logo/aos.png",
+  "name": "A. O. Smith"
+ },
+ "APA": {
+  "logo": "medien/logo/apa.png",
+  "name": "APA Corporation"
+ },
+ "APD": {
+  "logo": "medien/logo/apd.png",
+  "name": "Air Products"
+ },
+ "APH": {
+  "logo": "medien/logo/aph.png",
+  "name": "Amphenol"
+ },
+ "APO": {
+  "logo": "medien/logo/apo.png",
+  "name": "Apollo Global Management"
+ },
+ "APTV": {
+  "logo": "medien/logo/aptv.png",
+  "name": "Aptiv"
+ },
+ "ARES": {
+  "logo": "medien/logo/ares.png",
+  "name": "Ares Management"
+ },
+ "ATO": {
+  "logo": "medien/logo/ato.png",
+  "name": "Atmos Energy"
+ },
+ "AVY": {
+  "logo": "medien/logo/avy.png",
+  "name": "Avery Dennison"
+ },
+ "AWK": {
+  "logo": "medien/logo/awk.png",
+  "name": "American Water Works"
+ },
+ "AXON": {
+  "logo": "medien/logo/axon.png",
+  "name": "Axon Enterprise"
+ },
+ "AZN": {
+  "logo": "medien/logo/azn.png",
+  "name": "Astrazeneca Plc"
+ },
+ "BA": {
+  "aufmacher": [
+   "medien/aufmacher/ba/boeing-q3-ergebnis-2026-foto.jpg"
+  ],
+  "logo": "medien/logo/ba.png",
+  "name": "BA"
+ },
+ "BAX": {
+  "logo": "medien/logo/bax.png",
+  "name": "Baxter International"
+ },
+ "BAYN.DE": {
+  "logo": "medien/logo/bayn-de.png",
+  "name": "Bayer AG"
+ },
+ "BBVA": {
+  "logo": "medien/logo/bbva.png",
+  "name": "Banco Bilbao Vizcaya Argentaria, S.A."
+ },
+ "BCS": {
+  "logo": "medien/logo/bcs.png",
+  "name": "Barclays Plc"
+ },
+ "BDX": {
+  "logo": "medien/logo/bdx.png",
+  "name": "Becton Dickinson"
+ },
+ "BIIB": {
+  "logo": "medien/logo/biib.png",
+  "name": "Biogen"
+ },
+ "BMY": {
+  "logo": "medien/logo/bmy.png",
+  "name": "Bristol Myers Squibb"
+ },
+ "BP": {
+  "logo": "medien/logo/bp.png",
+  "name": "Bp Plc"
+ },
+ "BR": {
+  "logo": "medien/logo/br.png",
+  "name": "Broadridge Financial Solutions"
+ },
+ "BT-A.L": {
+  "logo": "medien/logo/bt-a-l.png",
+  "name": "BT Group"
+ },
+ "BTI": {
+  "logo": "medien/logo/bti.png",
+  "name": "British American Tobacco p.l.c."
+ },
+ "CAH": {
+  "logo": "medien/logo/cah.png",
+  "name": "Cardinal Health"
+ },
+ "CARR": {
+  "logo": "medien/logo/carr.png",
+  "name": "Carrier Global"
+ },
+ "CAT": {
+  "logo": "medien/logo/cat.png",
+  "name": "Caterpillar Inc."
+ },
+ "CBOE": {
+  "logo": "medien/logo/cboe.png",
+  "name": "Cboe Global Markets"
+ },
+ "CF": {
+  "logo": "medien/logo/cf.png",
+  "name": "CF Industries"
+ },
+ "CHD": {
+  "logo": "medien/logo/chd.png",
+  "name": "Church & Dwight"
+ },
+ "CHRW": {
+  "logo": "medien/logo/chrw.png",
+  "name": "C.H. Robinson"
+ },
+ "CI": {
+  "logo": "medien/logo/ci.png",
+  "name": "Cigna"
+ },
+ "CLX": {
+  "logo": "medien/logo/clx.png",
+  "name": "Clorox"
+ },
+ "CMG": {
+  "logo": "medien/logo/cmg.png",
+  "name": "Chipotle Mexican Grill"
+ },
+ "CMI": {
+  "logo": "medien/logo/cmi.png",
+  "name": "Cummins"
+ },
+ "COHR": {
+  "logo": "medien/logo/cohr.png",
+  "name": "Coherent Corp."
+ },
+ "COP": {
+  "logo": "medien/logo/cop.png",
+  "name": "ConocoPhillips"
+ },
+ "COR": {
+  "logo": "medien/logo/cor.png",
+  "name": "Cencora"
+ },
+ "CPAY": {
+  "logo": "medien/logo/cpay.png",
+  "name": "Corpay"
+ },
+ "CPT": {
+  "logo": "medien/logo/cpt.png",
+  "name": "Camden Property Trust"
+ },
+ "CRH": {
+  "logo": "medien/logo/crh.png",
+  "name": "CRH plc"
+ },
+ "CRSP": {
+  "aufmacher": [
+   "medien/aufmacher/crsp/crispr-therapeutics-q3-2026-casgevy-verlust-foto.jpg"
+  ],
+  "logo": "medien/logo/crsp.png",
+  "name": "CRISPR Therapeutics"
+ },
+ "CS.PA": {
+  "logo": "medien/logo/cs-pa.png",
+  "name": "AXA"
+ },
+ "CTSH": {
+  "logo": "medien/logo/ctsh.png",
+  "name": "Cognizant"
+ },
+ "CVNA": {
+  "logo": "medien/logo/cvna.png",
+  "name": "Carvana"
+ },
+ "CVS": {
+  "aufmacher": [
+   "medien/aufmacher/cvs/cvs-health-q3-2026-aufspaltung-prognose-foto.jpg"
+  ],
+  "logo": "medien/logo/cvs.png",
+  "name": "CVS Health"
+ },
+ "CVX": {
+  "aufmacher": [
+   "medien/aufmacher/cvx/chevron-q3-2026-ergebnisse-foto.jpg"
+  ],
+  "logo": "medien/logo/cvx.png",
+  "name": "Chevron Corporation"
+ },
+ "D05.SI": {
+  "ceo": {
+   "datei": "medien/ceo/d05-si.png",
+   "name": "Tan Su Shan",
+   "rolle": "CEO DBS",
+   "zeile": "Tan Su Shan | CEO DBS"
+  },
+  "logo": "medien/logo/d05-si.png",
+  "name": "DBS Group Holdings"
+ },
+ "DASH": {
+  "logo": "medien/logo/dash.png",
+  "name": "DoorDash"
+ },
+ "DB": {
+  "logo": "medien/logo/db.png",
+  "name": "Deutsche Bank Aktiengesellschaft"
+ },
+ "DD": {
+  "logo": "medien/logo/dd.png",
+  "name": "DuPont"
+ },
+ "DEO": {
+  "logo": "medien/logo/deo.png",
+  "name": "Diageo Plc"
+ },
+ "DGE.L": {
+  "aufmacher": [
+   "medien/aufmacher/dge-l/diageo-q1-geschaeftsjahr-2027-nordamerika-umsatz-foto.jpg"
+  ],
+  "ceo": {
+   "datei": "medien/ceo/dge-l.png",
+   "name": "Sir Dave Lewis",
+   "rolle": "CEO Diageo",
+   "zeile": "Sir Dave Lewis | CEO Diageo"
+  },
+  "logo": "medien/logo/dge-l.png",
+  "name": "Diageo"
+ },
+ "DHI": {
+  "logo": "medien/logo/dhi.png",
+  "name": "D. R. Horton"
+ },
+ "DLR": {
+  "logo": "medien/logo/dlr.png",
+  "name": "Digital Realty"
+ },
+ "DTE": {
+  "logo": "medien/logo/dte.png",
+  "name": "DTE Energy"
+ },
+ "DTE.DE": {
+  "aufmacher": [
+   "medien/aufmacher/dte-de/deutsche-telekom-q3-2026-zahlen-prognose-zentrale.jpg"
+  ],
+  "ceo": {
+   "datei": "medien/ceo/dte-de.png",
+   "name": "Tim Höttges",
+   "rolle": "CEO Deutsche Telekom",
+   "zeile": "Tim Höttges | CEO Deutsche Telekom"
+  },
+  "logo": "medien/logo/dte-de.png",
+  "name": "Deutsche Telekom"
+ },
+ "DXCM": {
+  "logo": "medien/logo/dxcm.png",
+  "name": "Dexcom"
+ },
+ "E": {
+  "logo": "medien/logo/e.png",
+  "name": "Eni Spa"
+ },
+ "EBAY": {
+  "logo": "medien/logo/ebay.png",
+  "name": "eBay Inc."
+ },
+ "ED": {
+  "logo": "medien/logo/ed.png",
+  "name": "Consolidated Edison"
+ },
+ "EIX": {
+  "logo": "medien/logo/eix.png",
+  "name": "Edison International"
+ },
+ "EL": {
+  "logo": "medien/logo/el.png",
+  "name": "Estée Lauder Companies (The)"
+ },
+ "EME": {
+  "logo": "medien/logo/eme.png",
+  "name": "Emcor"
+ },
+ "EMR": {
+  "logo": "medien/logo/emr.png",
+  "name": "Emerson Electric"
+ },
+ "EQIX": {
+  "logo": "medien/logo/eqix.png",
+  "name": "Equinix"
+ },
+ "ES": {
+  "logo": "medien/logo/es.png",
+  "name": "Eversource Energy"
+ },
+ "ETN": {
+  "logo": "medien/logo/etn.png",
+  "name": "Eaton Corporation"
+ },
+ "ETR": {
+  "logo": "medien/logo/etr.png",
+  "name": "Entergy"
+ },
+ "EVRG": {
+  "name": "Evergy"
+ },
+ "EW": {
+  "logo": "medien/logo/ew.png",
+  "name": "Edwards Lifesciences"
+ },
+ "EXC": {
+  "logo": "medien/logo/exc.png",
+  "name": "Exelon"
+ },
+ "EXPD": {
+  "logo": "medien/logo/expd.png",
+  "name": "Expeditors International"
+ },
+ "F": {
+  "logo": "medien/logo/f.png",
+  "name": "Ford Motor Company"
+ },
+ "FANG": {
+  "name": "Diamondback Energy"
+ },
+ "FDX": {
+  "logo": "medien/logo/fdx.png",
+  "name": "FedEx"
+ },
+ "FICO": {
+  "logo": "medien/logo/fico.png",
+  "name": "Fair Isaac"
+ },
+ "FIS": {
+  "logo": "medien/logo/fis.png",
+  "name": "Fidelity National Information Services"
+ },
+ "FIX": {
+  "logo": "medien/logo/fix.png",
+  "name": "Comfort Systems USA"
+ },
+ "FLEX": {
+  "logo": "medien/logo/flex.png",
+  "name": "Flex Ltd."
+ },
+ "FRE.DE": {
+  "aufmacher": [
+   "medien/aufmacher/fre-de/fresenius-q3-2026-quartalszahlen-foto.jpg"
+  ],
+  "logo": "medien/logo/fre-de.png",
+  "name": "Fresenius SE & Co. KGaA"
+ },
+ "FRT": {
+  "logo": "medien/logo/frt.png",
+  "name": "Federal Realty Investment Trust"
+ },
+ "FSLR": {
+  "logo": "medien/logo/fslr.png",
+  "name": "First Solar"
+ },
+ "GD": {
+  "logo": "medien/logo/gd.png",
+  "name": "General Dynamics"
+ },
+ "GEN": {
+  "logo": "medien/logo/gen.png",
+  "name": "Gen Digital"
+ },
+ "GEV": {
+  "aufmacher": [
+   "medien/aufmacher/gev/ge-vernova-q3-2026-ergebnisse-foto.jpg"
+  ],
+  "logo": "medien/logo/gev.png",
+  "name": "GE Vernova"
+ },
+ "GILD": {
+  "logo": "medien/logo/gild.png",
+  "name": "Gilead Sciences"
+ },
+ "GOOGL": {
+  "logo": "medien/logo/googl.png",
+  "name": "Alphabet Inc. (Class A)"
+ },
+ "GPN": {
+  "logo": "medien/logo/gpn.png",
+  "name": "Global Payments"
+ },
+ "GRMN": {
+  "logo": "medien/logo/grmn.png",
+  "name": "Garmin"
+ },
+ "GSK": {
+  "logo": "medien/logo/gsk.png",
+  "name": "GSK plc"
+ },
+ "GWW": {
+  "logo": "medien/logo/gww.png",
+  "name": "W. W. Grainger"
+ },
+ "HEN3.DE": {
+  "logo": "medien/logo/hen3-de.png",
+  "name": "Henkel"
+ },
+ "HONA": {
+  "logo": "medien/logo/hona.png",
+  "name": "Honeywell Aerospace"
+ },
+ "HPQ": {
+  "logo": "medien/logo/hpq.png",
+  "name": "HP Inc."
+ },
+ "HSBC": {
+  "aufmacher": [
+   "medien/aufmacher/hsbc/hsbc-q3-2026-foto.jpg"
+  ],
+  "logo": "medien/logo/hsbc.png",
+  "name": "Hsbc Holdings Plc"
+ },
+ "HSIC": {
+  "logo": "medien/logo/hsic.png",
+  "name": "Henry Schein"
+ },
+ "HST": {
+  "logo": "medien/logo/hst.png",
+  "name": "Host Hotels & Resorts"
+ },
+ "HSY": {
+  "logo": "medien/logo/hsy.png",
+  "name": "Hershey Company (The)"
+ },
+ "HWM": {
+  "logo": "medien/logo/hwm.png",
+  "name": "Howmet Aerospace"
+ },
+ "ICE": {
+  "logo": "medien/logo/ice.png",
+  "name": "Intercontinental Exchange"
+ },
+ "IDXX": {
+  "logo": "medien/logo/idxx.png",
+  "name": "Idexx Laboratories"
+ },
+ "IEX": {
+  "logo": "medien/logo/iex.png",
+  "name": "IDEX Corporation"
+ },
+ "ING": {
+  "logo": "medien/logo/ing.png",
+  "name": "Ing Groep Nv"
+ },
+ "INTC.NE": {
+  "aufmacher": [
+   "medien/aufmacher/intc-ne/intel-q3-2026-zahlen-foto.jpg"
+  ],
+  "logo": "medien/logo/intc-ne.png",
+  "name": "Intel Corporation"
+ },
+ "IR": {
+  "logo": "medien/logo/ir.png",
+  "name": "Ingersoll Rand"
+ },
+ "ISRG": {
+  "logo": "medien/logo/isrg.png",
+  "name": "Intuitive Surgical"
+ },
+ "IT": {
+  "logo": "medien/logo/it.png",
+  "name": "Gartner"
+ },
+ "JNJ": {
+  "logo": "medien/logo/jnj.png",
+  "name": "Johnson & Johnson"
+ },
+ "KDP": {
+  "name": "Keurig Dr Pepper"
+ },
+ "KEYS": {
+  "logo": "medien/logo/keys.png",
+  "name": "Keysight Technologies"
+ },
+ "KHC": {
+  "ceo": {
+   "datei": "medien/ceo/khc.png",
+   "name": "Steve Cahillane",
+   "rolle": "CEO Kraft Heinz",
+   "zeile": "Steve Cahillane | CEO Kraft Heinz"
+  },
+  "logo": "medien/logo/khc.png",
+  "name": "Kraft Heinz"
+ },
+ "KIM": {
+  "logo": "medien/logo/kim.png",
+  "name": "Kimco Realty"
+ },
+ "KMB": {
+  "aufmacher": [
+   "medien/aufmacher/kmb/kimberly-clark-q3-2026-zahlen-kenvue-china-foto.jpg"
+  ],
+  "ceo": {
+   "datei": "medien/ceo/kmb.png",
+   "name": "Mike Hsu",
+   "rolle": "CEO Kimberly-Clark",
+   "zeile": "Mike Hsu | CEO Kimberly-Clark"
+  },
+  "logo": "medien/logo/kmb.png",
+  "name": "Kimberly-Clark"
+ },
+ "KO": {
+  "aufmacher": [
+   "medien/aufmacher/ko/coca-cola-q3-2026-ergebnisse-foto.jpg",
+   "medien/aufmacher/ko/coca-cola-q2-2026-foto.jpg"
+  ],
+  "logo": "medien/logo/ko.png",
+  "name": "KO"
+ },
+ "L": {
+  "logo": "medien/logo/l.png",
+  "name": "Loews Corporation"
+ },
+ "LH": {
+  "logo": "medien/logo/lh.png",
+  "name": "Labcorp"
+ },
+ "LHX": {
+  "logo": "medien/logo/lhx.png",
+  "name": "L3Harris"
+ },
+ "LII": {
+  "logo": "medien/logo/lii.png",
+  "name": "Lennox International"
+ },
+ "LIN": {
+  "logo": "medien/logo/lin.png",
+  "name": "Linde plc"
+ },
+ "LITE": {
+  "logo": "medien/logo/lite.png",
+  "name": "Lumentum"
+ },
+ "LNT": {
+  "logo": "medien/logo/lnt.png",
+  "name": "Alliant Energy"
+ },
+ "LONN.SW": {
+  "logo": "medien/logo/lonn-sw.png",
+  "name": "Lonza"
+ },
+ "LRCX": {
+  "logo": "medien/logo/lrcx.png",
+  "name": "Lam Research"
+ },
+ "LYB": {
+  "aufmacher": [
+   "medien/aufmacher/lyb/lyondellbasell-q3-2026-foto.jpg"
+  ],
+  "logo": "medien/logo/lyb.png",
+  "name": "LyondellBasell Industries N.V."
+ },
+ "LYG": {
+  "logo": "medien/logo/lyg.png",
+  "name": "Lloyds Banking Group plc"
+ },
+ "LYV": {
+  "logo": "medien/logo/lyv.png",
+  "name": "Live Nation Entertainment"
+ },
+ "MA": {
+  "logo": "medien/logo/ma.png",
+  "name": "Mastercard"
+ },
+ "MAA": {
+  "logo": "medien/logo/maa.png",
+  "name": "Mid-America Apartment Communities"
+ },
+ "MAR": {
+  "logo": "medien/logo/mar.png",
+  "name": "Marriott International"
+ },
+ "MAS": {
+  "logo": "medien/logo/mas.png",
+  "name": "Masco"
+ },
+ "MBG.DE": {
+  "aufmacher": [
+   "medien/aufmacher/mbg-de/mercedes-benz-prognoseanpassung-2026-foto.jpg"
+  ],
+  "logo": "medien/logo/mbg-de.png",
+  "name": "MBG.DE"
+ },
+ "MCD": {
+  "aufmacher": [
+   "medien/aufmacher/mcd/mcdonalds-q3-2026-quartalszahlen-foto.jpg"
+  ],
+  "ceo": {
+   "datei": "medien/ceo/mcd.png",
+   "name": "Chris Kempczinski",
+   "rolle": "CEO McDonald's",
+   "zeile": "Chris Kempczinski | CEO McDonald's"
+  },
+  "logo": "medien/logo/mcd.png",
+  "name": "McDonald's Corporation"
+ },
+ "MCHP": {
+  "logo": "medien/logo/mchp.png",
+  "name": "Microchip Technology"
+ },
+ "MCK": {
+  "logo": "medien/logo/mck.png",
+  "name": "McKesson"
+ },
+ "MDLZ": {
+  "aufmacher": [
+   "medien/aufmacher/mdlz/mondelez-q3-2026-zahlen-foto.jpg"
+  ],
+  "logo": "medien/logo/mdlz.png",
+  "name": "Mondelēz International, Inc."
+ },
+ "MET": {
+  "logo": "medien/logo/met.png",
+  "name": "MetLife"
+ },
+ "MGM": {
+  "logo": "medien/logo/mgm.png",
+  "name": "MGM Resorts"
+ },
+ "MLM": {
+  "logo": "medien/logo/mlm.png",
+  "name": "Martin Marietta Materials"
+ },
+ "MNST": {
+  "logo": "medien/logo/mnst.png",
+  "name": "Monster Beverage"
+ },
+ "MO": {
+  "aufmacher": [
+   "medien/aufmacher/mo/altria-q3-2026-ergebnisse-foto.jpg"
+  ],
+  "logo": "medien/logo/mo.png",
+  "name": "Altria"
+ },
+ "MOS": {
+  "logo": "medien/logo/mos.png",
+  "name": "Mosaic Company (The)"
+ },
+ "MP": {
+  "aufmacher": [
+   "medien/aufmacher/mp/mp-materials-q3-2026-mountain-pass-foto.jpg"
+  ],
+  "ceo": {
+   "datei": "medien/ceo/mp.png",
+   "name": "James Litinsky",
+   "rolle": "CEO MP Materials",
+   "zeile": "James Litinsky | CEO MP Materials"
+  },
+  "logo": "medien/logo/mp.png",
+  "name": "MP Materials"
+ },
+ "MPC": {
+  "aufmacher": [
+   "medien/aufmacher/mpc/marathon-petroleum-q3-2026-quartalszahlen-foto.jpg"
+  ],
+  "ceo": {
+   "datei": "medien/ceo/mpc.png",
+   "name": "Maryann T. Mannen",
+   "rolle": "CEO Marathon Petroleum",
+   "zeile": "Maryann T. Mannen | CEO Marathon Petroleum"
+  },
+  "logo": "medien/logo/mpc.png",
+  "name": "Marathon Petroleum Corporation"
+ },
+ "MPWR": {
+  "name": "Monolithic Power Systems"
+ },
+ "MRK": {
+  "logo": "medien/logo/mrk.png",
+  "name": "Merck & Co."
+ },
+ "MRVL": {
+  "aufmacher": [
+   "medien/aufmacher/mrvl/marvell-uebernahme-lumentum-2026-foto.jpg"
+  ],
+  "logo": "medien/logo/mrvl.png",
+  "name": "Marvell Technology"
+ },
+ "MSFT": {
+  "aufmacher": [
+   "medien/aufmacher/msft/microsoft-q1-2027-zahlen-foto.jpg"
+  ],
+  "logo": "medien/logo/msft.png",
+  "name": "Microsoft Corp."
+ },
+ "MT": {
+  "logo": "medien/logo/mt.png",
+  "name": "ArcelorMittal"
+ },
+ "MTD": {
+  "logo": "medien/logo/mtd.png",
+  "name": "Mettler Toledo"
+ },
+ "NCLH": {
+  "logo": "medien/logo/nclh.png",
+  "name": "Norwegian Cruise Line Holdings"
+ },
+ "NI": {
+  "logo": "medien/logo/ni.png",
+  "name": "NiSource"
+ },
+ "NOVO-B.CO": {
+  "ceo": {
+   "datei": "medien/ceo/novo-b-co.png",
+   "name": "Mike Doustdar",
+   "rolle": "CEO Novo Nordisk",
+   "zeile": "Mike Doustdar | CEO Novo Nordisk"
+  },
+  "logo": "medien/logo/novo-b-co.png",
+  "name": "Novo Nordisk A/S"
+ },
+ "NVO": {
+  "logo": "medien/logo/nvo.png",
+  "name": "Novo Nordisk A S"
+ },
+ "NVS": {
+  "aufmacher": [
+   "medien/aufmacher/nvs/novartis-q3-2026-ergebnisse-foto.jpg"
+  ],
+  "logo": "medien/logo/nvs.png",
+  "name": "NVS"
+ },
+ "NWS": {
+  "logo": "medien/logo/nws.png",
+  "name": "News Corp (Class B)"
+ },
+ "NWSA": {
+  "logo": "medien/logo/nwsa.png",
+  "name": "News Corp (Class A)"
+ },
+ "O": {
+  "aufmacher": [
+   "medien/aufmacher/o/realty-income-q3-2026-quartalszahlen-foto.jpg"
+  ],
+  "logo": "medien/logo/o.png",
+  "name": "Realty Income Corporation"
+ },
+ "ODFL": {
+  "logo": "medien/logo/odfl.png",
+  "name": "Old Dominion"
+ },
+ "ON": {
+  "logo": "medien/logo/on.png",
+  "name": "ON Semiconductor"
+ },
+ "ORCL": {
+  "logo": "medien/logo/orcl.png",
+  "name": "Oracle Corporation"
+ },
+ "ORLY": {
+  "logo": "medien/logo/orly.png",
+  "name": "O'Reilly Automotive"
+ },
+ "OTIS": {
+  "logo": "medien/logo/otis.png",
+  "name": "Otis Worldwide"
+ },
+ "PEG": {
+  "logo": "medien/logo/peg.png",
+  "name": "Public Service Enterprise Group"
+ },
+ "PFE": {
+  "ceo": {
+   "datei": "medien/ceo/pfe.png",
+   "name": "Albert Bourla, CEO Pfizer",
+   "rolle": "",
+   "zeile": "Albert Bourla, CEO Pfizer"
+  },
+  "logo": "medien/logo/pfe.png",
+  "name": "Pfizer Inc."
+ },
+ "PH": {
+  "logo": "medien/logo/ph.png",
+  "name": "Parker Hannifin"
+ },
+ "PHG": {
+  "logo": "medien/logo/phg.png",
+  "name": "Koninklijke Philips Nv"
+ },
+ "PLTR": {
+  "aufmacher": [
+   "medien/aufmacher/pltr/palantir-q3-2026-zahlen-prognose-foto.jpg"
+  ],
+  "logo": "medien/logo/pltr.png",
+  "name": "Palantir Technologies"
+ },
+ "PODD": {
+  "logo": "medien/logo/podd.png",
+  "name": "Insulet Corporation"
+ },
+ "PRU": {
+  "logo": "medien/logo/pru.png",
+  "name": "Prudential Financial"
+ },
+ "PSX": {
+  "logo": "medien/logo/psx.png",
+  "name": "Phillips 66"
+ },
+ "PTC": {
+  "logo": "medien/logo/ptc.png",
+  "name": "PTC Inc."
+ },
+ "PWR": {
+  "logo": "medien/logo/pwr.png",
+  "name": "Quanta Services"
+ },
+ "Q": {
+  "logo": "medien/logo/q.png",
+  "name": "Qnity Electronics"
+ },
+ "QCOM": {
+  "logo": "medien/logo/qcom.png",
+  "name": "Qualcomm"
+ },
+ "RDDT": {
+  "logo": "medien/logo/rddt.png",
+  "name": "Reddit"
+ },
+ "RDSA.L": {
+  "aufmacher": [
+   "medien/aufmacher/rdsa-l/shell-q3-2026-ergebnisse-foto.jpg"
+  ],
+  "logo": "medien/logo/rdsa-l.png",
+  "name": "Shell plc"
+ },
+ "REG": {
+  "logo": "medien/logo/reg.png",
+  "name": "Regency Centers"
+ },
+ "REGN": {
+  "logo": "medien/logo/regn.png",
+  "name": "Regeneron Pharmaceuticals"
+ },
+ "RI.PA": {
+  "aufmacher": [
+   "medien/aufmacher/ri-pa/pernod-ricard-free-cashflow-dividende-2026-foto.jpg"
+  ],
+  "logo": "medien/logo/ri-pa.png",
+  "name": "Pernod Ricard"
+ },
+ "RL": {
+  "logo": "medien/logo/rl.png",
+  "name": "Ralph Lauren Corporation"
+ },
+ "RMD": {
+  "logo": "medien/logo/rmd.png",
+  "name": "ResMed"
+ },
+ "ROK": {
+  "logo": "medien/logo/rok.png",
+  "name": "Rockwell Automation"
+ },
+ "RSG": {
+  "logo": "medien/logo/rsg.png",
+  "name": "Republic Services"
+ },
+ "SAN": {
+  "logo": "medien/logo/san.png",
+  "name": "Banco Santander, S.A."
+ },
+ "SAN.PA": {
+  "logo": "medien/logo/san-pa.png",
+  "name": "Sanofi"
+ },
+ "SBUX": {
+  "aufmacher": [
+   "medien/aufmacher/sbux/starbucks-geschaeftsbericht-2026-foto.jpg"
+  ],
+  "logo": "medien/logo/sbux.png",
+  "name": "Starbucks Corporation"
+ },
+ "SHEL": {
+  "logo": "medien/logo/shel.png",
+  "name": "Shell plc"
+ },
+ "SHL.DE": {
+  "aufmacher": [
+   "medien/aufmacher/shl-de/siemens-healthineers-olyrian-diagnostics-umbenennung-foto.jpg"
+  ],
+  "logo": "medien/logo/shl-de.png",
+  "name": "Siemens Healthineers"
+ },
+ "SNDK": {
+  "logo": "medien/logo/sndk.png",
+  "name": "Sandisk"
+ },
+ "SOJE": {
+  "aufmacher": [
+   "medien/aufmacher/soje/southern-company-q3-2026-ergebnisse-foto.jpg"
+  ],
+  "logo": "medien/logo/soje.png",
+  "name": "Southern Company"
+ },
+ "SOLV": {
+  "logo": "medien/logo/solv.png",
+  "name": "Solventum"
+ },
+ "SONY": {
+  "logo": "medien/logo/sony.png",
+  "name": "Sony Group Corp"
+ },
+ "SPG": {
+  "logo": "medien/logo/spg.png",
+  "name": "Simon Property Group"
+ },
+ "SRE": {
+  "aufmacher": [
+   "medien/aufmacher/sre/sempra-quartalszahlen-q3-2026-foto.jpg"
+  ],
+  "logo": "medien/logo/sre.png",
+  "name": "Sempra"
+ },
+ "STE": {
+  "logo": "medien/logo/ste.png",
+  "name": "Steris"
+ },
+ "STLA": {
+  "logo": "medien/logo/stla.png",
+  "name": "Stellantis N.V."
+ },
+ "SW": {
+  "logo": "medien/logo/sw.png",
+  "name": "Smurfit Westrock"
+ },
+ "SWK": {
+  "logo": "medien/logo/swk.png",
+  "name": "Stanley Black & Decker"
+ },
+ "SYK": {
+  "logo": "medien/logo/syk.png",
+  "name": "Stryker Corporation"
+ },
+ "TECH": {
+  "logo": "medien/logo/tech.png",
+  "name": "Bio-Techne"
+ },
+ "TKO": {
+  "logo": "medien/logo/tko.png",
+  "name": "TKO Group Holdings"
+ },
+ "TM": {
+  "aufmacher": [
+   "medien/aufmacher/tm/toyota-motor-umstrukturierung-fuehrungswechsel-2027-foto.jpg"
+  ],
+  "logo": "medien/logo/tm.png",
+  "name": "Toyota Motor Corp/"
+ },
+ "TMUS": {
+  "logo": "medien/logo/tmus.png",
+  "name": "T-Mobile US"
+ },
+ "TPL": {
+  "logo": "medien/logo/tpl.png",
+  "name": "Texas Pacific Land Corporation"
+ },
+ "TPR": {
+  "logo": "medien/logo/tpr.png",
+  "name": "Tapestry, Inc."
+ },
+ "TRGP": {
+  "logo": "medien/logo/trgp.png",
+  "name": "Targa Resources"
+ },
+ "TRMB": {
+  "logo": "medien/logo/trmb.png",
+  "name": "Trimble Inc."
+ },
+ "TSCO": {
+  "logo": "medien/logo/tsco.png",
+  "name": "Tractor Supply"
+ },
+ "TT": {
+  "logo": "medien/logo/tt.png",
+  "name": "Trane Technologies"
+ },
+ "TTE": {
+  "logo": "medien/logo/tte.png",
+  "name": "TotalEnergies SE"
+ },
+ "TWLO": {
+  "logo": "medien/logo/twlo.png",
+  "name": "Twilio"
+ },
+ "TXT": {
+  "logo": "medien/logo/txt.png",
+  "name": "Textron"
+ },
+ "TYL": {
+  "logo": "medien/logo/tyl.png",
+  "name": "Tyler Technologies"
+ },
+ "UBS": {
+  "logo": "medien/logo/ubs.png",
+  "name": "UBS Group AG"
+ },
+ "UDR": {
+  "logo": "medien/logo/udr.png",
+  "name": "UDR, Inc."
+ },
+ "ULVR.L": {
+  "aufmacher": [
+   "medien/aufmacher/ulvr-l/unilever-q3-2026-trading-statement-foto.jpg"
+  ],
+  "ceo": {
+   "datei": "medien/ceo/ulvr-l.png",
+   "name": "Fernando Fernandez",
+   "rolle": "CEO Unilever",
+   "zeile": "Fernando Fernandez | CEO Unilever"
+  },
+  "logo": "medien/logo/ulvr-l.png",
+  "name": "Unilever PLC"
+ },
+ "UNP": {
+  "aufmacher": [
+   "medien/aufmacher/unp/union-pacific-norfolk-southern-stb-vena-rede-foto.jpg"
+  ],
+  "ceo": {
+   "datei": "medien/ceo/unp.png",
+   "name": "Jim Vena",
+   "rolle": "CEO Union Pacific",
+   "zeile": "Jim Vena | CEO Union Pacific"
+  },
+  "name": "Union Pacific / Norfolk Southern"
+ },
+ "UPS": {
+  "aufmacher": [
+   "medien/aufmacher/ups/ups-q3-2026-ergebnisse-foto.jpg"
+  ],
+  "logo": "medien/logo/ups.png",
+  "name": "UPS"
+ },
+ "VLO": {
+  "logo": "medien/logo/vlo.png",
+  "name": "Valero Energy"
+ },
+ "VLTO": {
+  "logo": "medien/logo/vlto.png",
+  "name": "Veralto"
+ },
+ "VMC": {
+  "logo": "medien/logo/vmc.png",
+  "name": "Vulcan Materials Company"
+ },
+ "VMRK": {
+  "name": "Vivmark Residential"
+ },
+ "VOD": {
+  "aufmacher": [
+   "medien/aufmacher/vod/vodafone-wechsel-executive-committee-dezember-2026-foto.jpg"
+  ],
+  "logo": "medien/logo/vod.png",
+  "name": "Vodafone Group Public Ltd Co"
+ },
+ "VRT": {
+  "logo": "medien/logo/vrt.png",
+  "name": "Vertiv"
+ },
+ "VRTX": {
+  "logo": "medien/logo/vrtx.png",
+  "name": "Vertex Pharmaceuticals"
+ },
+ "VST": {
+  "logo": "medien/logo/vst.png",
+  "name": "Vistra Corp."
+ },
+ "VTRS": {
+  "logo": "medien/logo/vtrs.png",
+  "name": "Viatris"
+ },
+ "VZ": {
+  "aufmacher": [
+   "medien/aufmacher/vz/verizon-q3-2026-foto.jpg"
+  ],
+  "logo": "medien/logo/vz.png",
+  "name": "VZ"
+ },
+ "WAT": {
+  "logo": "medien/logo/wat.png",
+  "name": "Waters Corporation"
+ },
+ "WST": {
+  "logo": "medien/logo/wst.png",
+  "name": "West Pharmaceutical Services"
+ },
+ "WTW": {
+  "logo": "medien/logo/wtw.png",
+  "name": "Willis Towers Watson"
+ },
+ "WY": {
+  "logo": "medien/logo/wy.png",
+  "name": "Weyerhaeuser"
+ },
+ "WYNN": {
+  "logo": "medien/logo/wynn.png",
+  "name": "Wynn Resorts"
+ },
+ "XEL": {
+  "name": "Xcel Energy"
+ },
+ "XOM": {
+  "logo": "medien/logo/xom.png",
+  "name": "ExxonMobil Holdings Corporation"
+ },
+ "YUM": {
+  "logo": "medien/logo/yum.png",
+  "name": "Yum! Brands"
+ },
+ "ZBH": {
+  "name": "Zimmer Biomet"
+ },
+ "ZBRA": {
+  "logo": "medien/logo/zbra.png",
+  "name": "Zebra Technologies"
+ },
+ "ZTS": {
+  "logo": "medien/logo/zts.png",
+  "name": "Zoetis"
+ }
+}

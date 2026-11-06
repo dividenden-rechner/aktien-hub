@@ -158,3 +158,5 @@ article p,article li,article td{overflow-wrap:anywhere}
 .rsin::-webkit-search-cancel-button{display:none}
 
 .rsub{margin-top:-8px;border-bottom:0}
+
+.post details.quellen{margin:24px 0 8px}.post details.quellen summary{display:inline-block;cursor:pointer;font-size:13px;font-weight:600;color:var(--accd);list-style:none}.post details.quellen summary::-webkit-details-marker{display:none}.post details.quellen summary::after{content:" \25BE";font-size:11px}.post details.quellen[open] summary::after{content:" \25B4"}.post details.quellen ul{margin:8px 0 0;font-size:14px}
