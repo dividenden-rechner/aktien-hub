@@ -622,6 +622,15 @@
    "quelle": "https://www.sec.gov/Archives/edgar/data/1037646/000103764626000072/ex-991mtd8xkq32026.htm"
   },
   {
+   "sym": "PPL",
+   "name": "PPL Corporation",
+   "art": "ergebnis",
+   "datum": "2026-11-06",
+   "betrag": "",
+   "waehrung": "",
+   "quelle": "https://www.sec.gov/Archives/edgar/data/922224/000092222426000050/ppl-9302026exhibit991.htm"
+  },
+  {
    "sym": "REG",
    "name": "Regency Centers",
    "art": "ergebnis",
@@ -1378,6 +1387,60 @@
    "quelle": "https://www.sec.gov/Archives/edgar/data/882184/000088218426000119/a9302026exhibit991.htm"
   },
   {
+   "sym": "GSK",
+   "name": "GSK plc",
+   "art": "ergebnis",
+   "datum": "2027-04-28",
+   "betrag": "",
+   "waehrung": "",
+   "quelle": "https://www.sec.gov/Archives/edgar/data/1131399/000165495426009585/a1986c.htm"
+  },
+  {
+   "sym": "GSK.L",
+   "name": "GSK",
+   "art": "ergebnis",
+   "datum": "2027-04-28",
+   "betrag": "",
+   "waehrung": "",
+   "quelle": "https://data.fca.org.uk/artefacts/NSM/RNS/5e845b98-a23f-44f8-a77e-aa82c6874aa8.html"
+  },
+  {
+   "sym": "GSK",
+   "name": "GSK plc",
+   "art": "dividende_exdatum",
+   "datum": "2027-05-13",
+   "betrag": "",
+   "waehrung": "",
+   "quelle": "https://www.sec.gov/Archives/edgar/data/1131399/000165495426009585/a1986c.htm"
+  },
+  {
+   "sym": "GSK.L",
+   "name": "GSK",
+   "art": "dividende_exdatum",
+   "datum": "2027-05-13",
+   "betrag": "",
+   "waehrung": "",
+   "quelle": "https://data.fca.org.uk/artefacts/NSM/RNS/5e845b98-a23f-44f8-a77e-aa82c6874aa8.html"
+  },
+  {
+   "sym": "GSK",
+   "name": "GSK plc",
+   "art": "dividende_zahltag",
+   "datum": "2027-07-15",
+   "betrag": "",
+   "waehrung": "",
+   "quelle": "https://www.sec.gov/Archives/edgar/data/1131399/000165495426009585/a1986c.htm"
+  },
+  {
+   "sym": "GSK.L",
+   "name": "GSK",
+   "art": "dividende_zahltag",
+   "datum": "2027-07-15",
+   "betrag": "",
+   "waehrung": "",
+   "quelle": "https://data.fca.org.uk/artefacts/NSM/RNS/5e845b98-a23f-44f8-a77e-aa82c6874aa8.html"
+  },
+  {
    "sym": "DHI",
    "name": "D. R. Horton",
    "art": "ergebnis",
@@ -1387,6 +1450,60 @@
    "quelle": "https://www.sec.gov/Archives/edgar/data/882184/000088218426000119/a9302026exhibit991.htm"
   },
   {
+   "sym": "GSK",
+   "name": "GSK plc",
+   "art": "ergebnis",
+   "datum": "2027-07-28",
+   "betrag": "",
+   "waehrung": "",
+   "quelle": "https://www.sec.gov/Archives/edgar/data/1131399/000165495426009585/a1986c.htm"
+  },
+  {
+   "sym": "GSK.L",
+   "name": "GSK",
+   "art": "ergebnis",
+   "datum": "2027-07-28",
+   "betrag": "",
+   "waehrung": "",
+   "quelle": "https://data.fca.org.uk/artefacts/NSM/RNS/5e845b98-a23f-44f8-a77e-aa82c6874aa8.html"
+  },
+  {
+   "sym": "GSK",
+   "name": "GSK plc",
+   "art": "dividende_exdatum",
+   "datum": "2027-08-12",
+   "betrag": "",
+   "waehrung": "",
+   "quelle": "https://www.sec.gov/Archives/edgar/data/1131399/000165495426009585/a1986c.htm"
+  },
+  {
+   "sym": "GSK.L",
+   "name": "GSK",
+   "art": "dividende_exdatum",
+   "datum": "2027-08-12",
+   "betrag": "",
+   "waehrung": "",
+   "quelle": "https://data.fca.org.uk/artefacts/NSM/RNS/5e845b98-a23f-44f8-a77e-aa82c6874aa8.html"
+  },
+  {
+   "sym": "GSK",
+   "name": "GSK plc",
+   "art": "dividende_zahltag",
+   "datum": "2027-10-14",
+   "betrag": "",
+   "waehrung": "",
+   "quelle": "https://www.sec.gov/Archives/edgar/data/1131399/000165495426009585/a1986c.htm"
+  },
+  {
+   "sym": "GSK.L",
+   "name": "GSK",
+   "art": "dividende_zahltag",
+   "datum": "2027-10-14",
+   "betrag": "",
+   "waehrung": "",
+   "quelle": "https://data.fca.org.uk/artefacts/NSM/RNS/5e845b98-a23f-44f8-a77e-aa82c6874aa8.html"
+  },
+  {
    "sym": "DHI",
    "name": "D. R. Horton",
    "art": "ergebnis",
@@ -1394,6 +1511,114 @@
    "betrag": "",
    "waehrung": "",
    "quelle": "https://www.sec.gov/Archives/edgar/data/882184/000088218426000119/a9302026exhibit991.htm"
+  },
+  {
+   "sym": "GSK",
+   "name": "GSK plc",
+   "art": "ergebnis",
+   "datum": "2027-10-27",
+   "betrag": "",
+   "waehrung": "",
+   "quelle": "https://www.sec.gov/Archives/edgar/data/1131399/000165495426009585/a1986c.htm"
+  },
+  {
+   "sym": "GSK.L",
+   "name": "GSK",
+   "art": "ergebnis",
+   "datum": "2027-10-27",
+   "betrag": "",
+   "waehrung": "",
+   "quelle": "https://data.fca.org.uk/artefacts/NSM/RNS/5e845b98-a23f-44f8-a77e-aa82c6874aa8.html"
+  },
+  {
+   "sym": "GSK",
+   "name": "GSK plc",
+   "art": "dividende_exdatum",
+   "datum": "2027-11-12",
+   "betrag": "",
+   "waehrung": "",
+   "quelle": "https://www.sec.gov/Archives/edgar/data/1131399/000165495426009585/a1986c.htm"
+  },
+  {
+   "sym": "GSK.L",
+   "name": "GSK",
+   "art": "dividende_exdatum",
+   "datum": "2027-11-12",
+   "betrag": "",
+   "waehrung": "",
+   "quelle": "https://data.fca.org.uk/artefacts/NSM/RNS/5e845b98-a23f-44f8-a77e-aa82c6874aa8.html"
+  },
+  {
+   "sym": "GSK",
+   "name": "GSK plc",
+   "art": "dividende_zahltag",
+   "datum": "2028-01-13",
+   "betrag": "",
+   "waehrung": "",
+   "quelle": "https://www.sec.gov/Archives/edgar/data/1131399/000165495426009585/a1986c.htm"
+  },
+  {
+   "sym": "GSK.L",
+   "name": "GSK",
+   "art": "dividende_zahltag",
+   "datum": "2028-01-13",
+   "betrag": "",
+   "waehrung": "",
+   "quelle": "https://data.fca.org.uk/artefacts/NSM/RNS/5e845b98-a23f-44f8-a77e-aa82c6874aa8.html"
+  },
+  {
+   "sym": "GSK",
+   "name": "GSK plc",
+   "art": "ergebnis",
+   "datum": "2028-02-02",
+   "betrag": "",
+   "waehrung": "",
+   "quelle": "https://www.sec.gov/Archives/edgar/data/1131399/000165495426009585/a1986c.htm"
+  },
+  {
+   "sym": "GSK.L",
+   "name": "GSK",
+   "art": "ergebnis",
+   "datum": "2028-02-02",
+   "betrag": "",
+   "waehrung": "",
+   "quelle": "https://data.fca.org.uk/artefacts/NSM/RNS/5e845b98-a23f-44f8-a77e-aa82c6874aa8.html"
+  },
+  {
+   "sym": "GSK",
+   "name": "GSK plc",
+   "art": "dividende_exdatum",
+   "datum": "2028-02-18",
+   "betrag": "",
+   "waehrung": "",
+   "quelle": "https://www.sec.gov/Archives/edgar/data/1131399/000165495426009585/a1986c.htm"
+  },
+  {
+   "sym": "GSK.L",
+   "name": "GSK",
+   "art": "dividende_exdatum",
+   "datum": "2028-02-18",
+   "betrag": "",
+   "waehrung": "",
+   "quelle": "https://data.fca.org.uk/artefacts/NSM/RNS/5e845b98-a23f-44f8-a77e-aa82c6874aa8.html"
+  },
+  {
+   "sym": "GSK",
+   "name": "GSK plc",
+   "art": "dividende_zahltag",
+   "datum": "2028-04-13",
+   "betrag": "",
+   "waehrung": "",
+   "quelle": "https://www.sec.gov/Archives/edgar/data/1131399/000165495426009585/a1986c.htm"
+  },
+  {
+   "sym": "GSK.L",
+   "name": "GSK",
+   "art": "dividende_zahltag",
+   "datum": "2028-04-13",
+   "betrag": "",
+   "waehrung": "",
+   "quelle": "https://data.fca.org.uk/artefacts/NSM/RNS/5e845b98-a23f-44f8-a77e-aa82c6874aa8.html"
   }
  ]
 }

@@ -16,10 +16,13 @@ Datei anklicken, dann Stift-Symbol: Zeile `draft: true` löschen und speichern, 
 | 29.10.2026 22:42 | Amazon steigert Umsatz im dritten Quartal auf 201,9 Milliarden Dollar | [79738970_2026-10-29/7757_2242-amazon-q3-2026-zahlen.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/79738970_2026-10-29/7757_2242-amazon-q3-2026-zahlen.md) |
 | 29.10.2026 10:12 | Shell erzielt im dritten Quartal 10,8 Milliarden Dollar Gewinn | [79738970_2026-10-29/8987_1012-shell-q3-2026-ergebnisse.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/79738970_2026-10-29/8987_1012-shell-q3-2026-ergebnisse.md) |
 
-### Online (304)
+### Online (307)
 
 | Datum | Titel | Datei |
 |---|---|---|
+| 06.11.2026 20:51 | U.S. Bancorp steigert Nettogewinn im dritten Quartal auf 2,1 Milliarden US-Dollar | [79738893_2026-11-06/7948_2051-u-s-bancorp-q3-2026-ergebnis.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/79738893_2026-11-06/7948_2051-u-s-bancorp-q3-2026-ergebnis.md) |
+| 06.11.2026 20:51 | GSK gibt provisorische Dividendentermine für das Jahr 2027 bekannt | [79738893_2026-11-06/7948_2051-gsk-provisorische-dividendentermine-2027.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/79738893_2026-11-06/7948_2051-gsk-provisorische-dividendentermine-2027.md) |
+| 06.11.2026 20:50 | PPL Corporation steigert bereinigten Gewinn im dritten Quartal auf 0,54 US-Dollar je Aktie | [79738893_2026-11-06/7949_2050-ppl-corporation-q3-2026-zahlen.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/79738893_2026-11-06/7949_2050-ppl-corporation-q3-2026-zahlen.md) |
 | 06.11.2026 13:35 | Charter Communications erzielt im dritten Quartal 14,9 Mrd. US-Dollar Umsatz bei Nettoverlust | [79738893_2026-11-06/8664_1335-charter-communications-q3-2026-zahlen.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/79738893_2026-11-06/8664_1335-charter-communications-q3-2026-zahlen.md) |
 | 06.11.2026 13:34 | Moderna kehrt im dritten Quartal in die Gewinnzone zurück und hebt Jahresprognose an | [79738893_2026-11-06/8665_1334-moderna-quartalszahlen-q3-2026.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/79738893_2026-11-06/8665_1334-moderna-quartalszahlen-q3-2026.md) |
 | 06.11.2026 13:34 | Humana hebt Jahresprognose für bereinigten Gewinn je Aktie an | [79738893_2026-11-06/8665_1334-humana-q3-2026-zahlen-prognose.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/79738893_2026-11-06/8665_1334-humana-q3-2026-zahlen-prognose.md) |

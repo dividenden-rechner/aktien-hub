@@ -1431,6 +1431,16 @@
    "quelle": "https://www.sec.gov/Archives/edgar/data/1174922/000117492226000078/ex991wrlq32026pressrelease.htm"
   },
   {
+   "sym": "BEN",
+   "name": "Franklin Resources",
+   "datum": "2026-11-06",
+   "eps": 0.72,
+   "eps_basis": "berichtet",
+   "revenue": 2430000000.0,
+   "waehrung": "USD",
+   "quelle": "https://www.sec.gov/Archives/edgar/data/38777/000003877726000287/exhibit991q4fy26.htm"
+  },
+  {
    "sym": "CHTR",
    "name": "Charter Communications",
    "datum": "2026-11-06",
@@ -1459,6 +1469,26 @@
    "revenue": 1313000000.0,
    "waehrung": "USD",
    "quelle": "https://www.sec.gov/Archives/edgar/data/1682852/000168285226000194/exhibit9912026q3pressrelea.htm"
+  },
+  {
+   "sym": "PPL",
+   "name": "PPL Corporation",
+   "datum": "2026-11-06",
+   "eps": 0.54,
+   "eps_basis": "bereinigt",
+   "revenue": 2500000000.0,
+   "waehrung": "USD",
+   "quelle": "https://www.sec.gov/Archives/edgar/data/922224/000092222426000050/ppl-9302026exhibit991.htm"
+  },
+  {
+   "sym": "USB",
+   "name": "U.S. Bancorp",
+   "datum": "2026-11-06",
+   "eps": null,
+   "eps_basis": "",
+   "revenue": 7970000000.0,
+   "waehrung": "USD",
+   "quelle": "https://www.sec.gov/Archives/edgar/data/36104/000119312526450781/d172862dex991.htm"
   }
  ]
 }
