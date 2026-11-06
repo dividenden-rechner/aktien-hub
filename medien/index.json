@@ -1,4 +1,14 @@
 {
+ "0001.HK": {
+  "ceo": {
+   "datei": "medien/ceo/ckh.png",
+   "name": "Victor Li",
+   "rolle": "Chairman und Group Co-Managing Director CK Hutchison",
+   "stand": "Story 2025, vor Verwendung CEO pruefen",
+   "zeile": "Victor Li | Chairman und Group Co-Managing Director CK Hutchison"
+  },
+  "name": "CK Hutchison"
+ },
  "000660.KS": {
   "ceo": {
    "datei": "medien/ceo/000660-ks.png",
@@ -412,10 +422,10 @@
  "BHP": {
   "ceo": {
    "datei": "medien/ceo/bhp.png",
-   "name": "Brandon Craig",
-   "rolle": "CEO BHP (seit Juni 2026)",
-   "stand": "Story Aug 2026",
-   "zeile": "Brandon Craig | CEO BHP (seit Juni 2026)"
+   "name": "Mike Henry",
+   "rolle": "CEO BHP",
+   "stand": "Story 2025, vor Verwendung CEO pruefen",
+   "zeile": "Mike Henry | CEO BHP"
   },
   "name": "BHP Group"
  },
@@ -1498,11 +1508,11 @@
  },
  "MUV2.DE": {
   "ceo": {
-   "datei": "medien/ceo/muv2-de.png",
+   "datei": "medien/ceo/muv2.png",
    "name": "Joachim Wenning",
-   "rolle": "CEO Munich Re",
+   "rolle": "CEO Munich Re (Wechsel 2026 prüfen)",
    "stand": "Story 2025, vor Verwendung CEO pruefen",
-   "zeile": "Joachim Wenning | CEO Munich Re"
+   "zeile": "Joachim Wenning | CEO Munich Re (Wechsel 2026 prüfen)"
   },
   "name": "Munich Re"
  },
