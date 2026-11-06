@@ -1158,6 +1158,16 @@
   "logo": "medien/logo/hen3-de.png",
   "name": "Henkel"
  },
+ "HIMS": {
+  "ceo": {
+   "datei": "medien/ceo/hims.png",
+   "name": "Andrew Dudum",
+   "rolle": "CEO Hims & Hers",
+   "stand": "Story Juni 2025, vor Verwendung CEO pruefen",
+   "zeile": "Andrew Dudum | CEO Hims & Hers"
+  },
+  "name": "Hims & Hers Health"
+ },
  "HNR1.DE": {
   "ceo": {
    "datei": "medien/ceo/hnr1.png",
@@ -1443,6 +1453,16 @@
  "LH": {
   "logo": "medien/logo/lh.png",
   "name": "Labcorp"
+ },
+ "LHA.DE": {
+  "ceo": {
+   "datei": "medien/ceo/lha.png",
+   "name": "Carsten Spohr",
+   "rolle": "CEO Lufthansa",
+   "stand": "Story Juni 2025, vor Verwendung CEO pruefen",
+   "zeile": "Carsten Spohr | CEO Lufthansa"
+  },
+  "name": "Lufthansa"
  },
  "LHX": {
   "logo": "medien/logo/lhx.png",
@@ -1836,6 +1856,16 @@
   },
   "logo": "medien/logo/novo-b-co.png",
   "name": "Novo Nordisk A/S"
+ },
+ "NUE": {
+  "ceo": {
+   "datei": "medien/ceo/nue.png",
+   "name": "Leon Topalian",
+   "rolle": "CEO Nucor",
+   "stand": "Story Juni 2025, vor Verwendung CEO pruefen",
+   "zeile": "Leon Topalian | CEO Nucor"
+  },
+  "name": "Nucor"
  },
  "NVDA": {
   "ceo": {
