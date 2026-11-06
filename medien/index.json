@@ -822,6 +822,13 @@
   "name": "W. W. Grainger"
  },
  "HEN3.DE": {
+  "ceo": {
+   "datei": "medien/ceo/hen3.png",
+   "name": "Carsten Knobel",
+   "rolle": "CEO Henkel",
+   "stand": "vom Nutzer geliefert 2026",
+   "zeile": "Carsten Knobel | CEO Henkel"
+  },
   "logo": "medien/logo/hen3-de.png",
   "name": "Henkel"
  },
