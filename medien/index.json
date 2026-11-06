@@ -312,6 +312,16 @@
   "logo": "medien/logo/ame.png",
   "name": "Ametek"
  },
+ "AMGN": {
+  "ceo": {
+   "datei": "medien/ceo/amgn.png",
+   "name": "Robert Bradway",
+   "rolle": "CEO Amgen",
+   "stand": "Story Jan 2026, vor Verwendung CEO pruefen",
+   "zeile": "Robert Bradway | CEO Amgen"
+  },
+  "name": "Amgen"
+ },
  "AMZN": {
   "aufmacher": [
    "medien/aufmacher/amzn/amazon-q3-2026-zahlen-foto.jpg"
@@ -1857,6 +1867,16 @@
   "logo": "medien/logo/odfl.png",
   "name": "Old Dominion"
  },
+ "OHB.DE": {
+  "ceo": {
+   "datei": "medien/ceo/ohb.png",
+   "name": "Marco Fuchs",
+   "rolle": "CEO OHB",
+   "stand": "Story Jan 2026, vor Verwendung CEO pruefen",
+   "zeile": "Marco Fuchs | CEO OHB"
+  },
+  "name": "OHB"
+ },
  "ON": {
   "logo": "medien/logo/on.png",
   "name": "ON Semiconductor"
@@ -2011,6 +2031,16 @@
  "PTC": {
   "logo": "medien/logo/ptc.png",
   "name": "PTC Inc."
+ },
+ "PUM.DE": {
+  "ceo": {
+   "datei": "medien/ceo/puma.png",
+   "name": "Arthur Hoeld",
+   "rolle": "CEO Puma",
+   "stand": "Story Jan 2026, vor Verwendung CEO pruefen",
+   "zeile": "Arthur Hoeld | CEO Puma"
+  },
+  "name": "Puma"
  },
  "PWR": {
   "logo": "medien/logo/pwr.png",
@@ -2603,6 +2633,16 @@
  "WAT": {
   "logo": "medien/logo/wat.png",
   "name": "Waters Corporation"
+ },
+ "WFC": {
+  "ceo": {
+   "datei": "medien/ceo/wfc.png",
+   "name": "Charlie Scharf",
+   "rolle": "CEO Wells Fargo",
+   "stand": "Story Jan 2026, vor Verwendung CEO pruefen",
+   "zeile": "Charlie Scharf | CEO Wells Fargo"
+  },
+  "name": "Wells Fargo"
  },
  "WMT": {
   "ceo": {
