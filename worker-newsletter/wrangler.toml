@@ -1,0 +1,10 @@
+name = "newsletter"
+main = "newsletter.js"
+compatibility_date = "2025-01-01"
+workers_dev = true
+
+# Keine Geheimnisse, nur Einstellungen. Hier die Zahlen aus Brevo eintragen:
+[vars]
+BREVO_LIST_ID = "0"            # Brevo: Kontakte > Listen > ID der Newsletter-Liste
+BREVO_DOI_TEMPLATE_ID = "0"    # Brevo: Vorlage fuer die Bestaetigungsmail (muss {{ params.DOIurl }} enthalten)
+BREVO_REDIRECT_URL = "https://www.dividenden-rechner.de/newsletter-bestaetigt/"
