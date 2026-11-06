@@ -1734,18 +1734,15 @@
   "name": "Trane Technologies"
  },
  "TTE": {
-  "logo": "medien/logo/tte.png",
-  "name": "TotalEnergies SE"
- },
- "TTE.PA": {
   "ceo": {
-   "datei": "medien/ceo/tte-pa.png",
+   "datei": "medien/ceo/tte.png",
    "name": "Patrick Pouyanné",
    "rolle": "CEO TotalEnergies",
    "stand": "Story Okt 2026",
    "zeile": "Patrick Pouyanné | CEO TotalEnergies"
   },
-  "name": "TotalEnergies"
+  "logo": "medien/logo/tte.png",
+  "name": "TotalEnergies SE"
  },
  "TWLO": {
   "logo": "medien/logo/twlo.png",
