@@ -47,9 +47,29 @@
   "logo": "medien/logo/7203-t.png",
   "name": "Toyota"
  },
+ "7267.T": {
+  "ceo": {
+   "datei": "medien/ceo/7267-t.png",
+   "name": "Toshihiro Mibe",
+   "rolle": "CEO Honda",
+   "stand": "Story 2025, vor Verwendung CEO pruefen",
+   "zeile": "Toshihiro Mibe | CEO Honda"
+  },
+  "name": "Honda"
+ },
  "9432.T": {
   "logo": "medien/logo/9432-t.png",
   "name": "NTT"
+ },
+ "AAPL": {
+  "ceo": {
+   "datei": "medien/ceo/aapl.png",
+   "name": "Tim Cook",
+   "rolle": "CEO Apple",
+   "stand": "Story 2025, vor Verwendung CEO pruefen",
+   "zeile": "Tim Cook | CEO Apple"
+  },
+  "name": "Apple"
  },
  "AAPL.NE": {
   "aufmacher": [
@@ -91,6 +111,16 @@
  "ADP": {
   "logo": "medien/logo/adp.png",
   "name": "Automatic Data Processing"
+ },
+ "ADS.DE": {
+  "ceo": {
+   "datei": "medien/ceo/ads-de.png",
+   "name": "Bjørn Gulden",
+   "rolle": "CEO Adidas",
+   "stand": "Story 2025, vor Verwendung CEO pruefen",
+   "zeile": "Bjørn Gulden | CEO Adidas"
+  },
+  "name": "Adidas"
  },
  "AEE": {
   "logo": "medien/logo/aee.png",
@@ -181,6 +211,16 @@
   "logo": "medien/logo/ato.png",
   "name": "Atmos Energy"
  },
+ "AVGO": {
+  "ceo": {
+   "datei": "medien/ceo/avgo.png",
+   "name": "Hock Tan",
+   "rolle": "CEO Broadcom",
+   "stand": "Story 2025, vor Verwendung CEO pruefen",
+   "zeile": "Hock Tan | CEO Broadcom"
+  },
+  "name": "Broadcom"
+ },
  "AVY": {
   "logo": "medien/logo/avy.png",
   "name": "Avery Dennison"
@@ -204,11 +244,28 @@
   "logo": "medien/logo/ba.png",
   "name": "BA"
  },
+ "BAS.DE": {
+  "ceo": {
+   "datei": "medien/ceo/bas-de.png",
+   "name": "Markus Kamieth",
+   "rolle": "CEO BASF",
+   "stand": "Story 2025, vor Verwendung CEO pruefen",
+   "zeile": "Markus Kamieth | CEO BASF"
+  },
+  "name": "BASF"
+ },
  "BAX": {
   "logo": "medien/logo/bax.png",
   "name": "Baxter International"
  },
  "BAYN.DE": {
+  "ceo": {
+   "datei": "medien/ceo/bayn-de.png",
+   "name": "Bill Anderson",
+   "rolle": "CEO Bayer",
+   "stand": "Story 2025, vor Verwendung CEO pruefen",
+   "zeile": "Bill Anderson | CEO Bayer"
+  },
   "logo": "medien/logo/bayn-de.png",
   "name": "Bayer AG"
  },
@@ -227,6 +284,27 @@
  "BIIB": {
   "logo": "medien/logo/biib.png",
   "name": "Biogen"
+ },
+ "BLK": {
+  "ceo": {
+   "datei": "medien/ceo/blk.png",
+   "name": "Larry Fink",
+   "rolle": "CEO BlackRock",
+   "stand": "Story 2025, vor Verwendung CEO pruefen",
+   "zeile": "Larry Fink | CEO BlackRock"
+  },
+  "name": "BlackRock"
+ },
+ "BMW.DE": {
+  "ceo_archiv": [
+   {
+    "datei": "medien/ceo/bmw-de-archiv.png",
+    "name": "Oliver Zipse",
+    "rolle": "CEO BMW (bis 2026)",
+    "stand": "Story 2025"
+   }
+  ],
+  "name": "BMW (bis 2026)"
  },
  "BMY": {
   "logo": "medien/logo/bmy.png",
@@ -257,6 +335,13 @@
   "name": "Carrier Global"
  },
  "CAT": {
+  "ceo": {
+   "datei": "medien/ceo/cat.png",
+   "name": "Joe Creed",
+   "rolle": "CEO Caterpillar",
+   "stand": "Story 2025, vor Verwendung CEO pruefen",
+   "zeile": "Joe Creed | CEO Caterpillar"
+  },
   "logo": "medien/logo/cat.png",
   "name": "Caterpillar Inc."
  },
@@ -289,6 +374,13 @@
   "name": "Chipotle Mexican Grill"
  },
  "CMI": {
+  "ceo": {
+   "datei": "medien/ceo/cmi.png",
+   "name": "Jennifer Rumsey",
+   "rolle": "CEO Cummins",
+   "stand": "Story 2025, vor Verwendung CEO pruefen",
+   "zeile": "Jennifer Rumsey | CEO Cummins"
+  },
   "logo": "medien/logo/cmi.png",
   "name": "Cummins"
  },
@@ -346,6 +438,13 @@
   "aufmacher": [
    "medien/aufmacher/cvx/chevron-q3-2026-ergebnisse-foto.jpg"
   ],
+  "ceo": {
+   "datei": "medien/ceo/cvx.png",
+   "name": "Mike Wirth",
+   "rolle": "CEO Chevron",
+   "stand": "Story 2025, vor Verwendung CEO pruefen",
+   "zeile": "Mike Wirth | CEO Chevron"
+  },
   "logo": "medien/logo/cvx.png",
   "name": "Chevron Corporation"
  },
@@ -413,6 +512,16 @@
   "logo": "medien/logo/dte-de.png",
   "name": "Deutsche Telekom"
  },
+ "DTG.DE": {
+  "ceo": {
+   "datei": "medien/ceo/dtg-de.png",
+   "name": "Karin Radström",
+   "rolle": "CEO Daimler Truck",
+   "stand": "Story 2025, vor Verwendung CEO pruefen",
+   "zeile": "Karin Radström | CEO Daimler Truck"
+  },
+  "name": "Daimler Truck"
+ },
  "DXCM": {
   "logo": "medien/logo/dxcm.png",
   "name": "Dexcom"
@@ -458,6 +567,16 @@
   "logo": "medien/logo/enb.png",
   "name": "Enbridge"
  },
+ "ENR.DE": {
+  "ceo": {
+   "datei": "medien/ceo/enr-de.png",
+   "name": "Christian Bruch",
+   "rolle": "CEO Siemens Energy",
+   "stand": "Story 2025, vor Verwendung CEO pruefen",
+   "zeile": "Christian Bruch | CEO Siemens Energy"
+  },
+  "name": "Siemens Energy"
+ },
  "EQIX": {
   "logo": "medien/logo/eqix.png",
   "name": "Equinix"
@@ -497,6 +616,13 @@
   "name": "Diamondback Energy"
  },
  "FDX": {
+  "ceo": {
+   "datei": "medien/ceo/fdx.png",
+   "name": "Raj Subramaniam",
+   "rolle": "CEO FedEx",
+   "stand": "Story 2025, vor Verwendung CEO pruefen",
+   "zeile": "Raj Subramaniam | CEO FedEx"
+  },
   "logo": "medien/logo/fdx.png",
   "name": "FedEx"
  },
@@ -551,6 +677,13 @@
   "name": "Gilead Sciences"
  },
  "GOOGL": {
+  "ceo": {
+   "datei": "medien/ceo/googl.png",
+   "name": "Sundar Pichai",
+   "rolle": "CEO Alphabet",
+   "stand": "Story 2025, vor Verwendung CEO pruefen",
+   "zeile": "Sundar Pichai | CEO Alphabet"
+  },
   "logo": "medien/logo/googl.png",
   "name": "Alphabet Inc. (Class A)"
  },
@@ -586,6 +719,13 @@
   "aufmacher": [
    "medien/aufmacher/hsbc/hsbc-q3-2026-foto.jpg"
   ],
+  "ceo": {
+   "datei": "medien/ceo/hsbc.png",
+   "name": "Georges Elhedery",
+   "rolle": "CEO HSBC",
+   "stand": "Story 2025, vor Verwendung CEO pruefen",
+   "zeile": "Georges Elhedery | CEO HSBC"
+  },
   "logo": "medien/logo/hsbc.png",
   "name": "Hsbc Holdings Plc"
  },
@@ -617,6 +757,17 @@
   "logo": "medien/logo/iex.png",
   "name": "IDEX Corporation"
  },
+ "IMB.L": {
+  "ceo_archiv": [
+   {
+    "datei": "medien/ceo/imb-l-archiv.png",
+    "name": "Stefan Bomhard",
+    "rolle": "CEO Imperial Brands (bis 2025)",
+    "stand": "Story 2025"
+   }
+  ],
+  "name": "Imperial Brands (bis 2025)"
+ },
  "ING": {
   "logo": "medien/logo/ing.png",
   "name": "Ing Groep Nv"
@@ -643,6 +794,16 @@
  "JNJ": {
   "logo": "medien/logo/jnj.png",
   "name": "Johnson & Johnson"
+ },
+ "JPM": {
+  "ceo": {
+   "datei": "medien/ceo/jpm.png",
+   "name": "James Dimon",
+   "rolle": "CEO J.P. Morgan Chase",
+   "stand": "Story 2025, vor Verwendung CEO pruefen",
+   "zeile": "James Dimon | CEO J.P. Morgan Chase"
+  },
+  "name": "J.P. Morgan Chase"
  },
  "KDP": {
   "name": "Keurig Dr Pepper"
@@ -718,6 +879,16 @@
   "logo": "medien/logo/lonn-sw.png",
   "name": "Lonza"
  },
+ "LOW": {
+  "ceo": {
+   "datei": "medien/ceo/low.png",
+   "name": "Marvin Ellison",
+   "rolle": "CEO Lowe's",
+   "stand": "Story 2025, vor Verwendung CEO pruefen",
+   "zeile": "Marvin Ellison | CEO Lowe's"
+  },
+  "name": "Lowe's"
+ },
  "LRCX": {
   "logo": "medien/logo/lrcx.png",
   "name": "Lam Research"
@@ -738,6 +909,13 @@
   "name": "Live Nation Entertainment"
  },
  "MA": {
+  "ceo": {
+   "datei": "medien/ceo/ma.png",
+   "name": "Michael Miebach",
+   "rolle": "CEO Mastercard",
+   "stand": "Story 2025, vor Verwendung CEO pruefen",
+   "zeile": "Michael Miebach | CEO Mastercard"
+  },
   "logo": "medien/logo/ma.png",
   "name": "Mastercard"
  },
@@ -759,6 +937,16 @@
   ],
   "logo": "medien/logo/mbg-de.png",
   "name": "MBG.DE"
+ },
+ "MC.PA": {
+  "ceo": {
+   "datei": "medien/ceo/mc-pa.png",
+   "name": "Bernard Arnault",
+   "rolle": "CEO LVMH",
+   "stand": "Story 2025, vor Verwendung CEO pruefen",
+   "zeile": "Bernard Arnault | CEO LVMH"
+  },
+  "name": "LVMH"
  },
  "MCD": {
   "aufmacher": [
@@ -799,6 +987,16 @@
  "MLM": {
   "logo": "medien/logo/mlm.png",
   "name": "Martin Marietta Materials"
+ },
+ "MMM": {
+  "ceo": {
+   "datei": "medien/ceo/mmm.png",
+   "name": "William Brown",
+   "rolle": "CEO 3M",
+   "stand": "Story 2025, vor Verwendung CEO pruefen",
+   "zeile": "William Brown | CEO 3M"
+  },
+  "name": "3M"
  },
  "MNST": {
   "logo": "medien/logo/mnst.png",
@@ -855,10 +1053,27 @@
   "logo": "medien/logo/mrvl.png",
   "name": "Marvell Technology"
  },
+ "MS": {
+  "ceo": {
+   "datei": "medien/ceo/ms.png",
+   "name": "Ted Pick",
+   "rolle": "CEO Morgan Stanley",
+   "stand": "Story 2025, vor Verwendung CEO pruefen",
+   "zeile": "Ted Pick | CEO Morgan Stanley"
+  },
+  "name": "Morgan Stanley"
+ },
  "MSFT": {
   "aufmacher": [
    "medien/aufmacher/msft/microsoft-q1-2027-zahlen-foto.jpg"
   ],
+  "ceo": {
+   "datei": "medien/ceo/msft.png",
+   "name": "Satya Nadella",
+   "rolle": "CEO Microsoft",
+   "stand": "Story 2025, vor Verwendung CEO pruefen",
+   "zeile": "Satya Nadella | CEO Microsoft"
+  },
   "logo": "medien/logo/msft.png",
   "name": "Microsoft Corp."
  },
@@ -870,6 +1085,16 @@
   "logo": "medien/logo/mtd.png",
   "name": "Mettler Toledo"
  },
+ "MUV2.DE": {
+  "ceo": {
+   "datei": "medien/ceo/muv2-de.png",
+   "name": "Joachim Wenning",
+   "rolle": "CEO Munich Re",
+   "stand": "Story 2025, vor Verwendung CEO pruefen",
+   "zeile": "Joachim Wenning | CEO Munich Re"
+  },
+  "name": "Munich Re"
+ },
  "NCLH": {
   "logo": "medien/logo/nclh.png",
   "name": "Norwegian Cruise Line Holdings"
@@ -877,6 +1102,16 @@
  "NI": {
   "logo": "medien/logo/ni.png",
   "name": "NiSource"
+ },
+ "NKE": {
+  "ceo": {
+   "datei": "medien/ceo/nke.png",
+   "name": "Elliott Hill",
+   "rolle": "CEO Nike",
+   "stand": "Story 2025, vor Verwendung CEO pruefen",
+   "zeile": "Elliott Hill | CEO Nike"
+  },
+  "name": "Nike"
  },
  "NOVO-B.CO": {
   "ceo": {
@@ -887,6 +1122,16 @@
   },
   "logo": "medien/logo/novo-b-co.png",
   "name": "Novo Nordisk A/S"
+ },
+ "NVDA": {
+  "ceo": {
+   "datei": "medien/ceo/nvda.png",
+   "name": "Jensen Huang",
+   "rolle": "CEO NVIDIA",
+   "stand": "Story 2025, vor Verwendung CEO pruefen",
+   "zeile": "Jensen Huang | CEO NVIDIA"
+  },
+  "name": "NVIDIA"
  },
  "NVO": {
   "logo": "medien/logo/nvo.png",
@@ -947,6 +1192,16 @@
   "logo": "medien/logo/otis.png",
   "name": "Otis Worldwide"
  },
+ "PAYX": {
+  "ceo": {
+   "datei": "medien/ceo/payx.png",
+   "name": "John B. Gibson",
+   "rolle": "CEO Paychex",
+   "stand": "Story 2025, vor Verwendung CEO pruefen",
+   "zeile": "John B. Gibson | CEO Paychex"
+  },
+  "name": "Paychex"
+ },
  "PEG": {
   "logo": "medien/logo/peg.png",
   "name": "Public Service Enterprise Group"
@@ -983,6 +1238,16 @@
   "logo": "medien/logo/pltr.png",
   "name": "Palantir Technologies"
  },
+ "PM": {
+  "ceo": {
+   "datei": "medien/ceo/pm.png",
+   "name": "Jacek Olczak",
+   "rolle": "CEO Philip Morris International",
+   "stand": "Story 2025, vor Verwendung CEO pruefen",
+   "zeile": "Jacek Olczak | CEO Philip Morris International"
+  },
+  "name": "Philip Morris International"
+ },
  "PODD": {
   "logo": "medien/logo/podd.png",
   "name": "Insulet Corporation"
@@ -992,6 +1257,13 @@
   "name": "Prudential Financial"
  },
  "PSX": {
+  "ceo": {
+   "datei": "medien/ceo/psx.png",
+   "name": "Mark Lashier",
+   "rolle": "CEO Phillips 66",
+   "stand": "Story 2025, vor Verwendung CEO pruefen",
+   "zeile": "Mark Lashier | CEO Phillips 66"
+  },
   "logo": "medien/logo/psx.png",
   "name": "Phillips 66"
  },
@@ -1010,6 +1282,16 @@
  "QCOM": {
   "logo": "medien/logo/qcom.png",
   "name": "Qualcomm"
+ },
+ "RACE": {
+  "ceo": {
+   "datei": "medien/ceo/race.png",
+   "name": "Benedetto Vigna",
+   "rolle": "CEO Ferrari",
+   "stand": "Story 2025, vor Verwendung CEO pruefen",
+   "zeile": "Benedetto Vigna | CEO Ferrari"
+  },
+  "name": "Ferrari"
  },
  "RDDT": {
   "logo": "medien/logo/rddt.png",
@@ -1030,12 +1312,33 @@
   "logo": "medien/logo/regn.png",
   "name": "Regeneron Pharmaceuticals"
  },
+ "RHM.DE": {
+  "ceo": {
+   "datei": "medien/ceo/rhm-de.png",
+   "name": "Armin Papperger",
+   "rolle": "CEO Rheinmetall",
+   "stand": "Story 2025, vor Verwendung CEO pruefen",
+   "zeile": "Armin Papperger | CEO Rheinmetall"
+  },
+  "name": "Rheinmetall"
+ },
  "RI.PA": {
   "aufmacher": [
    "medien/aufmacher/ri-pa/pernod-ricard-free-cashflow-dividende-2026-foto.jpg"
   ],
   "logo": "medien/logo/ri-pa.png",
   "name": "Pernod Ricard"
+ },
+ "RIO": {
+  "ceo_archiv": [
+   {
+    "datei": "medien/ceo/rio-archiv.png",
+    "name": "Jakob Stausholm",
+    "rolle": "CEO Rio Tinto (bis 2025)",
+    "stand": "Story 2025"
+   }
+  ],
+  "name": "Rio Tinto (bis 2025)"
  },
  "RL": {
   "logo": "medien/logo/rl.png",
@@ -1061,14 +1364,38 @@
   "logo": "medien/logo/san-pa.png",
   "name": "Sanofi"
  },
+ "SAP.DE": {
+  "ceo": {
+   "datei": "medien/ceo/sap-de.png",
+   "name": "Christian Klein",
+   "rolle": "CEO SAP",
+   "stand": "Story 2025, vor Verwendung CEO pruefen",
+   "zeile": "Christian Klein | CEO SAP"
+  },
+  "name": "SAP"
+ },
  "SBUX": {
   "aufmacher": [
    "medien/aufmacher/sbux/starbucks-geschaeftsbericht-2026-foto.jpg"
   ],
+  "ceo": {
+   "datei": "medien/ceo/sbux.png",
+   "name": "Brian Niccol",
+   "rolle": "CEO Starbucks",
+   "stand": "Story 2025, vor Verwendung CEO pruefen",
+   "zeile": "Brian Niccol | CEO Starbucks"
+  },
   "logo": "medien/logo/sbux.png",
   "name": "Starbucks Corporation"
  },
  "SHEL": {
+  "ceo": {
+   "datei": "medien/ceo/shel.png",
+   "name": "Wael Sawan",
+   "rolle": "CEO Shell",
+   "stand": "Story 2025, vor Verwendung CEO pruefen",
+   "zeile": "Wael Sawan | CEO Shell"
+  },
   "logo": "medien/logo/shel.png",
   "name": "Shell plc"
  },
@@ -1129,9 +1456,29 @@
   "logo": "medien/logo/syk.png",
   "name": "Stryker Corporation"
  },
+ "T": {
+  "ceo": {
+   "datei": "medien/ceo/t.png",
+   "name": "John Stankey",
+   "rolle": "CEO AT&T",
+   "stand": "Story 2025, vor Verwendung CEO pruefen",
+   "zeile": "John Stankey | CEO AT&T"
+  },
+  "name": "AT&T"
+ },
  "TECH": {
   "logo": "medien/logo/tech.png",
   "name": "Bio-Techne"
+ },
+ "TKA.DE": {
+  "ceo": {
+   "datei": "medien/ceo/tka-de.png",
+   "name": "Miguel Ángel López Borrego",
+   "rolle": "CEO Thyssenkrupp",
+   "stand": "Story 2025, vor Verwendung CEO pruefen",
+   "zeile": "Miguel Ángel López Borrego | CEO Thyssenkrupp"
+  },
+  "name": "Thyssenkrupp"
  },
  "TKO": {
   "logo": "medien/logo/tko.png",
@@ -1167,6 +1514,16 @@
  "TSCO": {
   "logo": "medien/logo/tsco.png",
   "name": "Tractor Supply"
+ },
+ "TSLA": {
+  "ceo": {
+   "datei": "medien/ceo/tsla.png",
+   "name": "Elon Musk",
+   "rolle": "CEO Tesla",
+   "stand": "Story 2025, vor Verwendung CEO pruefen",
+   "zeile": "Elon Musk | CEO Tesla"
+  },
+  "name": "Tesla"
  },
  "TT": {
   "logo": "medien/logo/tt.png",
@@ -1249,6 +1606,16 @@
   ],
   "logo": "medien/logo/vod.png",
   "name": "Vodafone Group Public Ltd Co"
+ },
+ "VOW3.DE": {
+  "ceo": {
+   "datei": "medien/ceo/vow3-de.png",
+   "name": "Oliver Blume",
+   "rolle": "CEO Volkswagen",
+   "stand": "Story 2025, vor Verwendung CEO pruefen",
+   "zeile": "Oliver Blume | CEO Volkswagen"
+  },
+  "name": "Volkswagen"
  },
  "VRT": {
   "logo": "medien/logo/vrt.png",
