@@ -16,10 +16,11 @@ Datei anklicken, dann Stift-Symbol: Zeile `draft: true` löschen und speichern, 
 | 29.10.2026 22:42 | Amazon steigert Umsatz im dritten Quartal auf 201,9 Milliarden Dollar | [79738970_2026-10-29/7757_2242-amazon-q3-2026-zahlen.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/79738970_2026-10-29/7757_2242-amazon-q3-2026-zahlen.md) |
 | 29.10.2026 10:12 | Shell erzielt im dritten Quartal 10,8 Milliarden Dollar Gewinn | [79738970_2026-10-29/8987_1012-shell-q3-2026-ergebnisse.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/79738970_2026-10-29/8987_1012-shell-q3-2026-ergebnisse.md) |
 
-### Online (293)
+### Online (294)
 
 | Datum | Titel | Datei |
 |---|---|---|
+| 06.11.2026 10:30 | Mitsubishi Heavy: Gasturbinen und Kernkraft treiben den Halbjahresgewinn um 45 %, Prognose und Rückkauf folgen | [79738893_2026-11-06/8969_1030-mitsubishi-heavy-industries-halbjahr-fy2026-gasturbinen.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/79738893_2026-11-06/8969_1030-mitsubishi-heavy-industries-halbjahr-fy2026-gasturbinen.md) |
 | 06.11.2026 04:01 | Regency Centers erhöht Dividende um 6 Prozent und hebt Prognose an | [79738893_2026-11-06/9598_0401-regency-centers-q3-2026-dividende-erhoehung.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/79738893_2026-11-06/9598_0401-regency-centers-q3-2026-dividende-erhoehung.md) |
 | 06.11.2026 04:01 | Con Edison erzielt im dritten Quartal Nettogewinn von 2,07 US-Dollar je Aktie | [79738893_2026-11-06/9598_0401-con-edison-q3-2026-zahlen.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/79738893_2026-11-06/9598_0401-con-edison-q3-2026-zahlen.md) |
 | 06.11.2026 04:01 | Axon investiert 1,2 Milliarden US-Dollar in Drohnenhersteller Skydio | [79738893_2026-11-06/9598_0401-axon-investition-skydio-1-2-mrd-usd.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/79738893_2026-11-06/9598_0401-axon-investition-skydio-1-2-mrd-usd.md) |
