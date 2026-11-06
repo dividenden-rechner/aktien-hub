@@ -445,6 +445,19 @@
   "logo": "medien/logo/emr.png",
   "name": "Emerson Electric"
  },
+ "ENB": {
+  "aufmacher": [
+   "medien/aufmacher/enb/enbridge-q3-2026-pipelines-foto.jpg"
+  ],
+  "ceo": {
+   "datei": "medien/ceo/enb.png",
+   "name": "Greg Ebel",
+   "rolle": "CEO Enbridge",
+   "zeile": "Greg Ebel | CEO Enbridge"
+  },
+  "logo": "medien/logo/enb.png",
+  "name": "Enbridge"
+ },
  "EQIX": {
   "logo": "medien/logo/eqix.png",
   "name": "Equinix"
