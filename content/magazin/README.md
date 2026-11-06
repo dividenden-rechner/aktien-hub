@@ -16,7 +16,7 @@ Datei anklicken, dann Stift-Symbol: Zeile `draft: true` löschen und speichern, 
 | 29.10.2026 22:42 | Amazon steigert Umsatz im dritten Quartal auf 201,9 Milliarden Dollar | [79738970_2026-10-29/7757_2242-amazon-q3-2026-zahlen.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/79738970_2026-10-29/7757_2242-amazon-q3-2026-zahlen.md) |
 | 29.10.2026 10:12 | Shell erzielt im dritten Quartal 10,8 Milliarden Dollar Gewinn | [79738970_2026-10-29/8987_1012-shell-q3-2026-ergebnisse.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/79738970_2026-10-29/8987_1012-shell-q3-2026-ergebnisse.md) |
 
-### Online (292)
+### Online (293)
 
 | Datum | Titel | Datei |
 |---|---|---|
@@ -28,6 +28,7 @@ Datei anklicken, dann Stift-Symbol: Zeile `draft: true` löschen und speichern, 
 | 06.11.2026 04:00 | Microchip Technology steigert bereinigten Gewinn je Aktie auf 0,97 US-Dollar im zweiten Quartal | [79738893_2026-11-06/9599_0400-microchip-technology-q2-geschaeftsjahr-2027-zahlen.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/79738893_2026-11-06/9599_0400-microchip-technology-q2-geschaeftsjahr-2027-zahlen.md) |
 | 06.11.2026 04:00 | Mettler-Toledo steigert bereinigten Gewinn je Aktie im dritten Quartal auf 12,57 US-Dollar | [79738893_2026-11-06/9599_0400-mettler-toledo-q3-2026-zahlen.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/79738893_2026-11-06/9599_0400-mettler-toledo-q3-2026-zahlen.md) |
 | 06.11.2026 04:00 | Camden Property Trust erzielt im dritten Quartal Nettogewinn von 8,71 US-Dollar je Aktie | [79738893_2026-11-06/9599_0400-camden-property-trust-q3-2026-zahlen.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/79738893_2026-11-06/9599_0400-camden-property-trust-q3-2026-zahlen.md) |
+| 06.11.2026 03:59 | Live Nation Entertainment steigert Gewinn je Aktie auf 1,69 US-Dollar im dritten Quartal | [79738893_2026-11-06/9640_0359-live-nation-entertainment-q3-2026-zahlen.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/79738893_2026-11-06/9640_0359-live-nation-entertainment-q3-2026-zahlen.md) |
 | 06.11.2026 03:59 | Lam Research startet Aktienrückkauf über 25 Mrd. US-Dollar und zahlt Dividende | [79738893_2026-11-06/9640_0359-lam-research-startet-25-mrd-usd-rueckkauf-und-dividende.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/79738893_2026-11-06/9640_0359-lam-research-startet-25-mrd-usd-rueckkauf-und-dividende.md) |
 | 05.11.2026 22:26 | Wynn Resorts: Gewinn sinkt im dritten Quartal auf 0,17 US-Dollar je Aktie | [79738894_2026-11-05/7773_2226-wynn-resorts-q3-2026-ergebnisse.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/79738894_2026-11-05/7773_2226-wynn-resorts-q3-2026-ergebnisse.md) |
 | 05.11.2026 22:26 | Solventum hebt Jahresprognose nach Quartalsergebnis an | [79738894_2026-11-05/7773_2226-solventum-quartalszahlen-q3-2026.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/79738894_2026-11-05/7773_2226-solventum-quartalszahlen-q3-2026.md) |

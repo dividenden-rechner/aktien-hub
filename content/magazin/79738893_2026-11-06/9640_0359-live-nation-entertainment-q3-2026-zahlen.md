@@ -10,6 +10,7 @@ quelle_url: https://www.sec.gov/Archives/edgar/data/1335258/000133525826000052/l
 quelle_name: "Pressemitteilung Live Nation Entertainment (SEC-Meldung)"
 logo_symbol: LYV
 logo_name: "Live Nation Entertainment"
+logo_file: assets/logos/lyv.png
 ---
 <!-- PRÜFEN: Diese Zahlen stehen nicht im Originaltext: 10,11, 10,11, Einordnung: 10,11. Bitte pruefen, dann 'draft: true' loeschen. -->
 
