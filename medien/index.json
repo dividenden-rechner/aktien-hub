@@ -1,4 +1,14 @@
 {
+ "000660.KS": {
+  "ceo": {
+   "datei": "medien/ceo/000660-ks.png",
+   "name": "Kwak Noh-Jung",
+   "rolle": "CEO SK hynix",
+   "stand": "Story Sep-Okt 2026",
+   "zeile": "Kwak Noh-Jung | CEO SK hynix"
+  },
+  "name": "SK hynix"
+ },
  "005380.KS": {
   "logo": "medien/logo/005380-ks.png",
   "name": "Hyundai Motor"
@@ -295,6 +305,16 @@
   "logo": "medien/logo/bdx.png",
   "name": "Becton Dickinson"
  },
+ "BE": {
+  "ceo": {
+   "datei": "medien/ceo/be.png",
+   "name": "KR Sridhar",
+   "rolle": "CEO Bloom Energy",
+   "stand": "Story Sep-Okt 2026",
+   "zeile": "KR Sridhar | CEO Bloom Energy"
+  },
+  "name": "Bloom Energy"
+ },
  "BF-B": {
   "ceo": {
    "datei": "medien/ceo/bf-b.png",
@@ -523,6 +543,16 @@
  "DD": {
   "logo": "medien/logo/dd.png",
   "name": "DuPont"
+ },
+ "DELL": {
+  "ceo": {
+   "datei": "medien/ceo/dell.png",
+   "name": "Michael Dell",
+   "rolle": "CEO Dell Technologies",
+   "stand": "Story Sep-Okt 2026",
+   "zeile": "Michael Dell | CEO Dell Technologies"
+  },
+  "name": "Dell Technologies"
  },
  "DEO": {
   "logo": "medien/logo/deo.png",
@@ -1092,6 +1122,16 @@
   "logo": "medien/logo/mdlz.png",
   "name": "Mondelēz International, Inc."
  },
+ "MDT": {
+  "ceo": {
+   "datei": "medien/ceo/mdt.png",
+   "name": "Geoff Martha",
+   "rolle": "CEO Medtronic",
+   "stand": "Story Sep-Okt 2026",
+   "zeile": "Geoff Martha | CEO Medtronic"
+  },
+  "name": "Medtronic"
+ },
  "MET": {
   "logo": "medien/logo/met.png",
   "name": "MetLife"
@@ -1201,6 +1241,16 @@
   "logo": "medien/logo/mtd.png",
   "name": "Mettler Toledo"
  },
+ "MU": {
+  "ceo": {
+   "datei": "medien/ceo/mu.png",
+   "name": "Sanjay Mehrotra",
+   "rolle": "CEO Micron",
+   "stand": "Story Sep-Okt 2026",
+   "zeile": "Sanjay Mehrotra | CEO Micron"
+  },
+  "name": "Micron Technology"
+ },
  "MUV2.DE": {
   "ceo": {
    "datei": "medien/ceo/muv2-de.png",
@@ -1260,6 +1310,13 @@
   "name": "NVIDIA"
  },
  "NVO": {
+  "ceo": {
+   "datei": "medien/ceo/nvo.png",
+   "name": "Maziar Mike Doustdar",
+   "rolle": "CEO Novo Nordisk",
+   "stand": "Story Sep-Okt 2026",
+   "zeile": "Maziar Mike Doustdar | CEO Novo Nordisk"
+  },
   "logo": "medien/logo/nvo.png",
   "name": "Novo Nordisk A S"
  },
