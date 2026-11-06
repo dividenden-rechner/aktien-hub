@@ -13,10 +13,10 @@ logo_name: "PepsiCo"
 logo_domain: pepsico.com
 image: assets/magazin/pepsico-kfc-verlaengerung-internationale-maerkte-foto.jpg
 image_alt: "Collage mit KFC-Gerichten und Pepsi-Bechern: Hähnchenburger, Doritos Loaded, Menü mit Pepsi und eine lächelnde Frau mit Pepsi-Becher"
-image_credit: "Bild: PepsiCo / KFC (Pressebild)"
+image_credit: "Bild: PepsiCo (Pressemitteilung)"
 ---
 <!-- PRÜFEN: Quelle: Pressemitteilung PepsiCo vom 06.11.2026 (PR Newswire, Screenshots von Divi) und Berichte vom Oktober 2026 zum KFC-Wechsel zu Coca-Cola in den USA (nicht im Detail gelesen). Laufzeit der Verlängerung und Umsatzgröße nennt die Mitteilung nicht; "exklusiv" und "langfristig" aus Divis Vorlage wurden NICHT übernommen. -->
-<!-- PRÜFEN: Aufmacher = Pressebild-Collage von Divi (Original nur 500 px, auf 1200x675 hochgerechnet, daher weich); Rechte unverifiziert. Bei Gelegenheit durch echtes Foto ersetzen. -->
+<!-- PRÜFEN: Aufmacher = Pressebild-Collage von Divi (Original nur 500 px, auf 1200x675 hochgerechnet, daher weich); Bild stammt laut Divi aus der Pressemitteilung (PR Newswire). Bei Gelegenheit ggf. durch echtes Foto ersetzen. -->
 
 PepsiCo hat die Partnerschaft mit der Fast-Food-Kette KFC in mehreren Auslandsmärkten verlängert. Laut Pressemitteilung vom 6. November 2026 bleibt PepsiCo der bevorzugte Getränkepartner (“beverage partner of choice”) für KFC-Restaurants in Australien, Indien, Großbritannien, Spanien, Deutschland, Frankreich, den Niederlanden und Belgien. Dazu kommen Märkte in Nahost, Europa, Asien-Pazifik und Lateinamerika, in denen PepsiCo-Marken schon jetzt ausgeschenkt werden.
 
