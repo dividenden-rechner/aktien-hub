@@ -463,6 +463,16 @@
   "logo": "medien/logo/cs-pa.png",
   "name": "AXA"
  },
+ "CSCO": {
+  "ceo": {
+   "datei": "medien/ceo/csco.png",
+   "name": "Chuck Robbins",
+   "rolle": "CEO Cisco",
+   "stand": "Story Aug 2026",
+   "zeile": "Chuck Robbins | CEO Cisco"
+  },
+  "name": "Cisco Systems"
+ },
  "CTSH": {
   "logo": "medien/logo/ctsh.png",
   "name": "Cognizant"
