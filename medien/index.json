@@ -533,7 +533,7 @@
    "datei": "medien/ceo/cvx.png",
    "name": "Mike Wirth",
    "rolle": "CEO Chevron",
-   "stand": "Story 2025, vor Verwendung CEO pruefen",
+   "stand": "vom Nutzer geliefert 2026",
    "zeile": "Mike Wirth | CEO Chevron"
   },
   "logo": "medien/logo/cvx.png",
@@ -789,7 +789,7 @@
    "datei": "medien/ceo/gis.png",
    "name": "Jeff Harmening",
    "rolle": "CEO General Mills",
-   "stand": "Story Juli 2026",
+   "stand": "vom Nutzer geliefert 2026",
    "zeile": "Jeff Harmening | CEO General Mills"
   },
   "name": "General Mills"
@@ -933,6 +933,16 @@
   "logo": "medien/logo/it.png",
   "name": "Gartner"
  },
+ "JARJ": {
+  "ceo": {
+   "datei": "medien/ceo/jar.png",
+   "name": "Ben Keswick",
+   "rolle": "Executive Chairman Jardine Matheson",
+   "stand": "vom Nutzer geliefert 2026",
+   "zeile": "Ben Keswick | Executive Chairman Jardine Matheson"
+  },
+  "name": "Jardine Matheson"
+ },
  "JNJ": {
   "ceo": {
    "datei": "medien/ceo/jnj.png",
@@ -947,10 +957,10 @@
  "JPM": {
   "ceo": {
    "datei": "medien/ceo/jpm.png",
-   "name": "James Dimon",
-   "rolle": "CEO J.P. Morgan Chase",
-   "stand": "Story 2025, vor Verwendung CEO pruefen",
-   "zeile": "James Dimon | CEO J.P. Morgan Chase"
+   "name": "Jamie Dimon",
+   "rolle": "CEO JPMorgan Chase",
+   "stand": "vom Nutzer geliefert 2026",
+   "zeile": "Jamie Dimon | CEO JPMorgan Chase"
   },
   "name": "J.P. Morgan Chase"
  },
@@ -1183,7 +1193,7 @@
    "datei": "medien/ceo/mmm.png",
    "name": "William Brown",
    "rolle": "CEO 3M",
-   "stand": "Story 2025, vor Verwendung CEO pruefen",
+   "stand": "vom Nutzer geliefert 2026",
    "zeile": "William Brown | CEO 3M"
   },
   "name": "3M"
@@ -1280,7 +1290,7 @@
    "datei": "medien/ceo/mu.png",
    "name": "Sanjay Mehrotra",
    "rolle": "CEO Micron",
-   "stand": "Story Sep-Okt 2026",
+   "stand": "vom Nutzer geliefert 2026",
    "zeile": "Sanjay Mehrotra | CEO Micron"
   },
   "name": "Micron Technology"
@@ -1607,7 +1617,7 @@
    "datei": "medien/ceo/rio.png",
    "name": "Simon Trott",
    "rolle": "CEO Rio Tinto",
-   "stand": "Story Juli 2026",
+   "stand": "vom Nutzer geliefert 2026",
    "zeile": "Simon Trott | CEO Rio Tinto"
   },
   "ceo_archiv": [
@@ -1642,10 +1652,10 @@
  },
  "SAN.PA": {
   "ceo": {
-   "datei": "medien/ceo/san-pa.png",
+   "datei": "medien/ceo/san.png",
    "name": "Belén Garijo",
    "rolle": "CEO Sanofi",
-   "stand": "Story Okt 2026",
+   "stand": "vom Nutzer geliefert 2026",
    "zeile": "Belén Garijo | CEO Sanofi"
   },
   "logo": "medien/logo/san-pa.png",
@@ -1852,6 +1862,16 @@
   },
   "name": "Tesla"
  },
+ "TSM": {
+  "ceo": {
+   "datei": "medien/ceo/tsm.png",
+   "name": "C. C. Wei",
+   "rolle": "CEO TSMC",
+   "stand": "vom Nutzer geliefert 2026",
+   "zeile": "C. C. Wei | CEO TSMC"
+  },
+  "name": "TSMC"
+ },
  "TT": {
   "logo": "medien/logo/tt.png",
   "name": "Trane Technologies"
@@ -1861,7 +1881,7 @@
    "datei": "medien/ceo/tte.png",
    "name": "Patrick Pouyanné",
    "rolle": "CEO TotalEnergies",
-   "stand": "Story Okt 2026",
+   "stand": "vom Nutzer geliefert 2026",
    "zeile": "Patrick Pouyanné | CEO TotalEnergies"
   },
   "logo": "medien/logo/tte.png",
@@ -1919,6 +1939,16 @@
   },
   "logo": "medien/logo/ulvr-l.png",
   "name": "Unilever PLC"
+ },
+ "UNH": {
+  "ceo": {
+   "datei": "medien/ceo/unh.png",
+   "name": "Stephen Hemsley",
+   "rolle": "CEO UnitedHealth",
+   "stand": "vom Nutzer geliefert 2026",
+   "zeile": "Stephen Hemsley | CEO UnitedHealth"
+  },
+  "name": "UnitedHealth Group"
  },
  "UNP": {
   "aufmacher": [
