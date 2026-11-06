@@ -281,6 +281,16 @@
   "logo": "medien/logo/bdx.png",
   "name": "Becton Dickinson"
  },
+ "BF-B": {
+  "ceo": {
+   "datei": "medien/ceo/bf-b.png",
+   "name": "Lawson Whiting",
+   "rolle": "CEO Brown-Forman (Rücktritt angekündigt)",
+   "stand": "Story Juli 2026",
+   "zeile": "Lawson Whiting | CEO Brown-Forman (Rücktritt angekündigt)"
+  },
+  "name": "Brown-Forman (Rücktritt angekündigt)"
+ },
  "BIIB": {
   "logo": "medien/logo/biib.png",
   "name": "Biogen"
@@ -745,6 +755,16 @@
   "logo": "medien/logo/hwm.png",
   "name": "Howmet Aerospace"
  },
+ "IBM": {
+  "ceo": {
+   "datei": "medien/ceo/ibm.png",
+   "name": "Arvind Krishna",
+   "rolle": "CEO IBM",
+   "stand": "Story Juli 2026",
+   "zeile": "Arvind Krishna | CEO IBM"
+  },
+  "name": "IBM"
+ },
  "ICE": {
   "logo": "medien/logo/ice.png",
   "name": "Intercontinental Exchange"
@@ -776,6 +796,13 @@
   "aufmacher": [
    "medien/aufmacher/intc-ne/intel-q3-2026-zahlen-foto.jpg"
   ],
+  "ceo": {
+   "datei": "medien/ceo/intc-ne.png",
+   "name": "Lip-Bu Tan",
+   "rolle": "CEO Intel",
+   "stand": "Story Juli 2026",
+   "zeile": "Lip-Bu Tan | CEO Intel"
+  },
   "logo": "medien/logo/intc-ne.png",
   "name": "Intel Corporation"
  },
@@ -844,6 +871,13 @@
    "medien/aufmacher/ko/coca-cola-q3-2026-ergebnisse-foto.jpg",
    "medien/aufmacher/ko/coca-cola-q2-2026-foto.jpg"
   ],
+  "ceo": {
+   "datei": "medien/ceo/ko.png",
+   "name": "Henrique Braun",
+   "rolle": "CEO Coca-Cola",
+   "stand": "Story Juli 2026",
+   "zeile": "Henrique Braun | CEO Coca-Cola"
+  },
   "logo": "medien/logo/ko.png",
   "name": "KO"
  },
@@ -935,6 +969,13 @@
   "aufmacher": [
    "medien/aufmacher/mbg-de/mercedes-benz-prognoseanpassung-2026-foto.jpg"
   ],
+  "ceo": {
+   "datei": "medien/ceo/mbg-de.png",
+   "name": "Ola Källenius",
+   "rolle": "CEO Mercedes-Benz",
+   "stand": "Story Juli 2026",
+   "zeile": "Ola Källenius | CEO Mercedes-Benz"
+  },
   "logo": "medien/logo/mbg-de.png",
   "name": "MBG.DE"
  },
@@ -1210,6 +1251,13 @@
   "aufmacher": [
    "medien/aufmacher/pep/pepsico-kfc-verlaengerung-internationale-maerkte-foto.jpg"
   ],
+  "ceo": {
+   "datei": "medien/ceo/pep.png",
+   "name": "Roman Laguarta",
+   "rolle": "CEO PepsiCo",
+   "stand": "Story Juli 2026",
+   "zeile": "Roman Laguarta | CEO PepsiCo"
+  },
   "logo": "medien/logo/pep.png",
   "name": "PepsiCo"
  },
@@ -1664,6 +1712,13 @@
   "name": "Xcel Energy"
  },
  "XOM": {
+  "ceo": {
+   "datei": "medien/ceo/xom.png",
+   "name": "Darren Woods",
+   "rolle": "CEO ExxonMobil",
+   "stand": "Story Juli 2026",
+   "zeile": "Darren Woods | CEO ExxonMobil"
+  },
   "logo": "medien/logo/xom.png",
   "name": "ExxonMobil Holdings Corporation"
  },
