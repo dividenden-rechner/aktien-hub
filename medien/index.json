@@ -1837,6 +1837,16 @@
   "logo": "medien/logo/twlo.png",
   "name": "Twilio"
  },
+ "TXN": {
+  "ceo": {
+   "datei": "medien/ceo/txn.png",
+   "name": "Haviv Ilan",
+   "rolle": "CEO Texas Instruments",
+   "stand": "vom Nutzer geliefert 2026",
+   "zeile": "Haviv Ilan | CEO Texas Instruments"
+  },
+  "name": "Texas Instruments"
+ },
  "TXT": {
   "logo": "medien/logo/txt.png",
   "name": "Textron"
