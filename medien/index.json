@@ -1977,12 +1977,29 @@
   "aufmacher": [
    "medien/aufmacher/vz/verizon-q3-2026-foto.jpg"
   ],
+  "ceo": {
+   "datei": "medien/ceo/vz.png",
+   "name": "Dan Schulman",
+   "rolle": "CEO Verizon",
+   "stand": "vom Nutzer geliefert 2026",
+   "zeile": "Dan Schulman | CEO Verizon"
+  },
   "logo": "medien/logo/vz.png",
   "name": "VZ"
  },
  "WAT": {
   "logo": "medien/logo/wat.png",
   "name": "Waters Corporation"
+ },
+ "WMT": {
+  "ceo": {
+   "datei": "medien/ceo/wmt.png",
+   "name": "John Furner",
+   "rolle": "CEO Walmart",
+   "stand": "vom Nutzer geliefert 2026",
+   "zeile": "John Furner | CEO Walmart"
+  },
+  "name": "Walmart"
  },
  "WST": {
   "logo": "medien/logo/wst.png",
