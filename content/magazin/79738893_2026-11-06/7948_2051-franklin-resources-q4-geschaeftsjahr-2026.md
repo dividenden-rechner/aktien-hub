@@ -10,6 +10,7 @@ quelle_url: https://www.sec.gov/Archives/edgar/data/38777/000003877726000287/exh
 quelle_name: "Pressemitteilung Franklin Resources (SEC-Meldung)"
 logo_symbol: BEN
 logo_name: "Franklin Resources"
+logo_file: assets/logos/ben.png
 ---
 <!-- PRÜFEN: Diese Zahlen stehen nicht im Originaltext: 1,07, Einordnung: 1,07. Bitte pruefen, dann 'draft: true' loeschen. -->
 
