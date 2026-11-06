@@ -472,6 +472,16 @@
   "logo": "medien/logo/crh.png",
   "name": "CRH plc"
  },
+ "CRM": {
+  "ceo": {
+   "datei": "medien/ceo/crm.png",
+   "name": "Marc Benioff",
+   "rolle": "CEO Salesforce",
+   "stand": "vom Nutzer geliefert 2026",
+   "zeile": "Marc Benioff | CEO Salesforce"
+  },
+  "name": "Salesforce"
+ },
  "CRSP": {
   "aufmacher": [
    "medien/aufmacher/crsp/crispr-therapeutics-q3-2026-casgevy-verlust-foto.jpg"
