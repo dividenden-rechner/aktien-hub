@@ -168,6 +168,13 @@
   "aufmacher": [
    "medien/aufmacher/amzn/amazon-q3-2026-zahlen-foto.jpg"
   ],
+  "ceo": {
+   "datei": "medien/ceo/amzn.png",
+   "name": "Andy Jassy",
+   "rolle": "CEO Amazon",
+   "stand": "Story Juli 2026",
+   "zeile": "Andy Jassy | CEO Amazon"
+  },
   "logo": "medien/logo/amzn.png",
   "name": "Amazon.com, Inc."
  },
@@ -335,6 +342,16 @@
  "BTI": {
   "logo": "medien/logo/bti.png",
   "name": "British American Tobacco p.l.c."
+ },
+ "CAG": {
+  "ceo": {
+   "datei": "medien/ceo/cag.png",
+   "name": "John Brase",
+   "rolle": "CEO Conagra Brands",
+   "stand": "Story Juli 2026",
+   "zeile": "John Brase | CEO Conagra Brands"
+  },
+  "name": "Conagra Brands"
  },
  "CAH": {
   "logo": "medien/logo/cah.png",
@@ -686,6 +703,16 @@
   "logo": "medien/logo/gild.png",
   "name": "Gilead Sciences"
  },
+ "GIS": {
+  "ceo": {
+   "datei": "medien/ceo/gis.png",
+   "name": "Jeff Harmening",
+   "rolle": "CEO General Mills",
+   "stand": "Story Juli 2026",
+   "zeile": "Jeff Harmening | CEO General Mills"
+  },
+  "name": "General Mills"
+ },
  "GOOGL": {
   "ceo": {
    "datei": "medien/ceo/googl.png",
@@ -1014,6 +1041,13 @@
   "aufmacher": [
    "medien/aufmacher/mdlz/mondelez-q3-2026-zahlen-foto.jpg"
   ],
+  "ceo": {
+   "datei": "medien/ceo/mdlz.png",
+   "name": "Dirk Van de Put",
+   "rolle": "CEO Mondelēz",
+   "stand": "Story Juli 2026",
+   "zeile": "Dirk Van de Put | CEO Mondelēz"
+  },
   "logo": "medien/logo/mdlz.png",
   "name": "Mondelēz International, Inc."
  },
@@ -1140,6 +1174,16 @@
   "logo": "medien/logo/nclh.png",
   "name": "Norwegian Cruise Line Holdings"
  },
+ "NFLX": {
+  "ceo": {
+   "datei": "medien/ceo/nflx.png",
+   "name": "Ted Sarandos",
+   "rolle": "Co-CEO Netflix",
+   "stand": "Story Juli 2026",
+   "zeile": "Ted Sarandos | Co-CEO Netflix"
+  },
+  "name": "Netflix"
+ },
  "NI": {
   "logo": "medien/logo/ni.png",
   "name": "NiSource"
@@ -1232,6 +1276,16 @@
  "OTIS": {
   "logo": "medien/logo/otis.png",
   "name": "Otis Worldwide"
+ },
+ "OWL": {
+  "ceo": {
+   "datei": "medien/ceo/owl.png",
+   "name": "Marc Lipschultz",
+   "rolle": "Co-CEO Blue Owl",
+   "stand": "Story Juli 2026",
+   "zeile": "Marc Lipschultz | Co-CEO Blue Owl"
+  },
+  "name": "Blue Owl Capital"
  },
  "PAYX": {
   "ceo": {
@@ -1378,6 +1432,13 @@
   "name": "Pernod Ricard"
  },
  "RIO": {
+  "ceo": {
+   "datei": "medien/ceo/rio.png",
+   "name": "Simon Trott",
+   "rolle": "CEO Rio Tinto",
+   "stand": "Story Juli 2026",
+   "zeile": "Simon Trott | CEO Rio Tinto"
+  },
   "ceo_archiv": [
    {
     "datei": "medien/ceo/rio-archiv.png",
@@ -1386,7 +1447,7 @@
     "stand": "Story 2025"
    }
   ],
-  "name": "Rio Tinto (bis 2025)"
+  "name": "Rio Tinto"
  },
  "RL": {
   "logo": "medien/logo/rl.png",
@@ -1527,6 +1588,16 @@
    "zeile": "Miguel Ángel López Borrego | CEO Thyssenkrupp"
   },
   "name": "Thyssenkrupp"
+ },
+ "TKMS.DE": {
+  "ceo": {
+   "datei": "medien/ceo/tkms-de.png",
+   "name": "Oliver Burkhard",
+   "rolle": "CEO TKMS",
+   "stand": "Story Juli 2026",
+   "zeile": "Oliver Burkhard | CEO TKMS"
+  },
+  "name": "TKMS"
  },
  "TKO": {
   "logo": "medien/logo/tko.png",
