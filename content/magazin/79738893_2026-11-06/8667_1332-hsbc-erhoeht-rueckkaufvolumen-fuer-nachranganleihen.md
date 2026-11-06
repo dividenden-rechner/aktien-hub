@@ -10,6 +10,7 @@ quelle_url: https://data.fca.org.uk/artefacts/NSM/RNS/1d1010cb-a6c5-4191-b641-9a
 quelle_name: "Pressemitteilung HSBC"
 logo_symbol: HSBA.L
 logo_name: "HSBC"
+logo_file: assets/logos/hsba-l.png
 ---
 <!-- PRÜFEN: Diese Zahlen stehen nicht im Originaltext: 17. Bitte pruefen, dann 'draft: true' loeschen. -->
 
