@@ -161,6 +161,16 @@
   },
   "name": "Honda"
  },
+ "8766.T": {
+  "ceo": {
+   "datei": "medien/ceo/tokiomarine.png",
+   "name": "Masahiro Koike",
+   "rolle": "CEO Tokio Marine",
+   "stand": "Story Maerz 2026",
+   "zeile": "Masahiro Koike | CEO Tokio Marine"
+  },
+  "name": "Tokio Marine"
+ },
  "9432.T": {
   "logo": "medien/logo/9432-t.png",
   "name": "NTT"
@@ -489,10 +499,10 @@
  "BHP": {
   "ceo": {
    "datei": "medien/ceo/bhp.png",
-   "name": "Mike Henry",
-   "rolle": "CEO BHP",
-   "stand": "Story 2025, vor Verwendung CEO pruefen",
-   "zeile": "Mike Henry | CEO BHP"
+   "name": "Brandon Craig",
+   "rolle": "CEO BHP (ab 1. Juli 2026)",
+   "stand": "Story Maerz 2026",
+   "zeile": "Brandon Craig | CEO BHP (ab 1. Juli 2026)"
   },
   "name": "BHP Group"
  },
@@ -795,6 +805,16 @@
  "DHI": {
   "logo": "medien/logo/dhi.png",
   "name": "D. R. Horton"
+ },
+ "DHL.DE": {
+  "ceo": {
+   "datei": "medien/ceo/dhl.png",
+   "name": "Tobias Meyer",
+   "rolle": "CEO DHL Group",
+   "stand": "Story Maerz 2026",
+   "zeile": "Tobias Meyer | CEO DHL Group"
+  },
+  "name": "DHL Group"
  },
  "DLR": {
   "logo": "medien/logo/dlr.png",
