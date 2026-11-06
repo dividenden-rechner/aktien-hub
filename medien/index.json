@@ -34,6 +34,16 @@
   "logo": "medien/logo/005930-ks.png",
   "name": "Samsung Electronics"
  },
+ "066570.KS": {
+  "ceo": {
+   "datei": "medien/ceo/lge.png",
+   "name": "William Cho",
+   "rolle": "CEO LG Electronics",
+   "stand": "Story Juni 2026",
+   "zeile": "William Cho | CEO LG Electronics"
+  },
+  "name": "LG Electronics"
+ },
  "0700.HK": {
   "ceo": {
    "datei": "medien/ceo/tencent.png",
@@ -53,6 +63,16 @@
    "zeile": "Lei Jun | CEO Xiaomi"
   },
   "name": "Xiaomi"
+ },
+ "2020.HK": {
+  "ceo": {
+   "datei": "medien/ceo/anta.png",
+   "name": "Ding Shizhong",
+   "rolle": "Chairman und CEO Anta Sports",
+   "stand": "Story Juni 2026",
+   "zeile": "Ding Shizhong | Chairman und CEO Anta Sports"
+  },
+  "name": "Anta Sports"
  },
  "2318.HK": {
   "aufmacher": [
@@ -314,7 +334,7 @@
    "datei": "medien/ceo/avgo.png",
    "name": "Hock Tan",
    "rolle": "CEO Broadcom",
-   "stand": "Story 2025, vor Verwendung CEO pruefen",
+   "stand": "Story Juni 2026",
    "zeile": "Hock Tan | CEO Broadcom"
   },
   "name": "Broadcom"
@@ -1227,6 +1247,16 @@
   "logo": "medien/logo/ko.png",
   "name": "KO"
  },
+ "KR": {
+  "ceo": {
+   "datei": "medien/ceo/kr.png",
+   "name": "Greg Foran",
+   "rolle": "CEO Kroger",
+   "stand": "Story Juni 2026",
+   "zeile": "Greg Foran | CEO Kroger"
+  },
+  "name": "Kroger"
+ },
  "L": {
   "logo": "medien/logo/l.png",
   "name": "Loews Corporation"
@@ -1477,6 +1507,16 @@
   "logo": "medien/logo/mrk.png",
   "name": "Merck & Co."
  },
+ "MRK.DE": {
+  "ceo": {
+   "datei": "medien/ceo/mrkde.png",
+   "name": "Kai Beckmann",
+   "rolle": "CEO Merck KGaA",
+   "stand": "Story Juni 2026",
+   "zeile": "Kai Beckmann | CEO Merck KGaA"
+  },
+  "name": "Merck KGaA"
+ },
  "MRVL": {
   "aufmacher": [
    "medien/aufmacher/mrvl/marvell-uebernahme-lumentum-2026-foto.jpg"
@@ -1529,10 +1569,10 @@
  "MUV2.DE": {
   "ceo": {
    "datei": "medien/ceo/muv2.png",
-   "name": "Joachim Wenning",
-   "rolle": "CEO Munich Re (Wechsel 2026 prüfen)",
-   "stand": "Story 2025, vor Verwendung CEO pruefen",
-   "zeile": "Joachim Wenning | CEO Munich Re (Wechsel 2026 prüfen)"
+   "name": "Christoph Jurecka",
+   "rolle": "CEO Munich Re",
+   "stand": "Story Juni 2026",
+   "zeile": "Christoph Jurecka | CEO Munich Re"
   },
   "name": "Munich Re"
  },
@@ -1691,6 +1731,16 @@
    "zeile": "Marc Lipschultz | Co-CEO Blue Owl"
   },
   "name": "Blue Owl Capital"
+ },
+ "PANW": {
+  "ceo": {
+   "datei": "medien/ceo/panw.png",
+   "name": "Nikesh Arora",
+   "rolle": "CEO Palo Alto Networks",
+   "stand": "Story Juni 2026",
+   "zeile": "Nikesh Arora | CEO Palo Alto Networks"
+  },
+  "name": "Palo Alto Networks"
  },
  "PAYX": {
   "ceo": {
