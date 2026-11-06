@@ -15,7 +15,7 @@ image_credit: "Foto: Mitsubishi Heavy Industries (Pressebild)"
 logo_name: "Mitsubishi Heavy Industries"
 logo_symbol: 7011.T
 logo_domain: mhi.com
-logo_file: assets/logos/7011-t.png
+logo_file: assets/logos/mitsubishi-heavy-industries.png
 ---
 <!-- PRÜFEN: Quelle: Präsentation von Mitsubishi Heavy zum 1. Halbjahr FY2026 vom 06.11.2026 (Screenshots von Divi, Folien 4, 10, 11, 16, 17, 19, 20) und Investing.com (06.11.2026, Kursrückgang). Pressemitteilung/Originallink nachtragen (mhi.com). -->
 <!-- PRÜFEN: Aufmacherfoto von Divi (Bild von der MHI-Gasturbinenseite, Rechte/Pressebild-Status unverifiziert). Kein CEO-Foto vorhanden, Portrait: Eisaku Ito (Foto von Divi, Name von Divi genannt); Folie unten links (Prognose). Kursbild fehlt. -->
