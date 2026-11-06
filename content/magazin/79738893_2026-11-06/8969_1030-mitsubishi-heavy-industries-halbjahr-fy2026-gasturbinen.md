@@ -6,7 +6,6 @@ author: "Redaktions-Team Dividenden-Rechner.de"
 author_bio: "Das Redaktions-Team von Dividenden-Rechner.de schreibt über Dividendenaktien, Kennzahlen und Steuerthemen für Privatanleger. Die Rechner und Auswertungen auf der Seite entstehen im eigenen Haus."
 category: Quartalszahlen
 story_image: assets/magazin/mitsubishi-heavy-halbjahr-fy2026-kennzahlen.png
-story_chart: assets/magazin/mitsubishi-heavy-halbjahr-fy2026-prognose.png
 story_portrait: assets/magazin/eisaku-ito-mitsubishi-heavy.png
 story_quote_by: "Eisaku Ito | CEO Mitsubishi Heavy Industries"
 story_text: "Mitsubishi Heavy verdient im ersten Halbjahr 45 % mehr, und fast der ganze Zuwachs kommt aus einer Sparte: Im Energiegeschäft fast verdoppelt sich der Gewinn, weil Gasturbinen für Kraftwerke in Nordamerika und Asien gefragt sind und die Kernkraft anzieht.\nSchwächen gibt es trotzdem. Die Sparte Anlagenbau verdient 7 % weniger, und bei Dampfturbinen fallen Verluste aus zwei Kohlevergasungs-Kraftwerken in Japan an, 70 Mrd. Yen sind dafür im Jahr eingeplant. Der Auftragseingang bei Luftfahrt und Verteidigung fällt um 46 %, weil das Vorjahr von Großaufträgen geprägt war.\nDas Geld fließt zurück: Der freie Cashflow liegt bei 468 Mrd. Yen, die Kasse übersteigt die Schulden um 1,2 Billionen Yen. Die Dividende steigt auf 29 Yen, dazu kommt ein Rückkauf über bis zu 300 Mrd. Yen. In der Prognose fehlen noch die Folgen der Lage im Nahen Osten."
