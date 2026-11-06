@@ -34,6 +34,16 @@
   "logo": "medien/logo/005930-ks.png",
   "name": "Samsung Electronics"
  },
+ "0700.HK": {
+  "ceo": {
+   "datei": "medien/ceo/tencent.png",
+   "name": "Pony Ma (Ma Huateng)",
+   "rolle": "Gründer und CEO Tencent",
+   "stand": "Story 2025, vor Verwendung CEO pruefen",
+   "zeile": "Pony Ma (Ma Huateng) | Gründer und CEO Tencent"
+  },
+  "name": "Tencent"
+ },
  "1810.HK": {
   "ceo": {
    "datei": "medien/ceo/xiaomi.png",
@@ -606,6 +616,16 @@
    "zeile": "Chuck Robbins | CEO Cisco"
   },
   "name": "Cisco Systems"
+ },
+ "CTAS": {
+  "ceo": {
+   "datei": "medien/ceo/ctas.png",
+   "name": "Todd Schneider",
+   "rolle": "CEO Cintas",
+   "stand": "Story 2025, vor Verwendung CEO pruefen",
+   "zeile": "Todd Schneider | CEO Cintas"
+  },
+  "name": "Cintas"
  },
  "CTSH": {
   "logo": "medien/logo/ctsh.png",
@@ -1675,10 +1695,10 @@
  "PAYX": {
   "ceo": {
    "datei": "medien/ceo/payx.png",
-   "name": "John B. Gibson",
+   "name": "John Gibson",
    "rolle": "CEO Paychex",
    "stand": "Story 2025, vor Verwendung CEO pruefen",
-   "zeile": "John B. Gibson | CEO Paychex"
+   "zeile": "John Gibson | CEO Paychex"
   },
   "name": "Paychex"
  },
