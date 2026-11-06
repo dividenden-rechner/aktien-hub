@@ -1429,6 +1429,36 @@
    "revenue": 1690000000.0,
    "waehrung": "US-D",
    "quelle": "https://www.sec.gov/Archives/edgar/data/1174922/000117492226000078/ex991wrlq32026pressrelease.htm"
+  },
+  {
+   "sym": "CHTR",
+   "name": "Charter Communications",
+   "datum": "2026-11-06",
+   "eps": -20.5,
+   "eps_basis": "berichtet",
+   "revenue": null,
+   "waehrung": "USD",
+   "quelle": "https://www.sec.gov/Archives/edgar/data/1091667/000109166726000072/chtrex991earningsrelease93.htm"
+  },
+  {
+   "sym": "HUM",
+   "name": "Humana",
+   "datum": "2026-11-06",
+   "eps": -0.7,
+   "eps_basis": "bereinigt",
+   "revenue": 41155000000.0,
+   "waehrung": "USD",
+   "quelle": "https://www.sec.gov/Archives/edgar/data/49071/000004907126000064/hum-2026q3xex99x1briefxsep.htm"
+  },
+  {
+   "sym": "MRNA",
+   "name": "Moderna",
+   "datum": "2026-11-06",
+   "eps": 0.38,
+   "eps_basis": "berichtet",
+   "revenue": 1313000000.0,
+   "waehrung": "USD",
+   "quelle": "https://www.sec.gov/Archives/edgar/data/1682852/000168285226000194/exhibit9912026q3pressrelea.htm"
   }
  ]
 }

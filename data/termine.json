@@ -685,6 +685,15 @@
    "quelle": "https://www.sec.gov/Archives/edgar/data/1539838/000153983826000180/diamondbackex991-11x2x26.htm"
   },
   {
+   "sym": "MRNA",
+   "name": "Moderna",
+   "art": "ergebnis",
+   "datum": "2026-11-12",
+   "betrag": "",
+   "waehrung": "",
+   "quelle": "https://www.sec.gov/Archives/edgar/data/1682852/000168285226000194/exhibit9912026q3pressrelea.htm"
+  },
+  {
    "sym": "SBAC",
    "name": "SBA Communications",
    "art": "dividende_exdatum",
@@ -793,6 +802,15 @@
    "quelle": "https://www.sec.gov/Archives/edgar/data/746515/000119312526444872/expd-ex99_1.htm"
   },
   {
+   "sym": "BABA",
+   "name": "Alibaba Group Holding Ltd",
+   "art": "ergebnis",
+   "datum": "2026-11-19",
+   "betrag": "",
+   "waehrung": "",
+   "quelle": "https://www.sec.gov/Archives/edgar/data/1577552/000110465926123545/tm2629189d1_ex99-1.htm"
+  },
+  {
    "sym": "DHI",
    "name": "D. R. Horton",
    "art": "dividende_zahltag",
@@ -809,6 +827,15 @@
    "betrag": "1.18",
    "waehrung": "USD",
    "quelle": "https://www.sec.gov/Archives/edgar/data/1539838/000153983826000180/diamondbackex991-11x2x26.htm"
+  },
+  {
+   "sym": "HSBC",
+   "name": "Hsbc Holdings Plc",
+   "art": "ergebnis",
+   "datum": "2026-11-19",
+   "betrag": "",
+   "waehrung": "",
+   "quelle": "https://www.sec.gov/Archives/edgar/data/1089113/000165495426009573/a1496c.htm"
   },
   {
    "sym": "KEYS",
@@ -872,6 +899,15 @@
    "betrag": "",
    "waehrung": "",
    "quelle": "https://www.sec.gov/Archives/edgar/data/935703/000093570326000128/ex991q3-26earningscallanno.htm"
+  },
+  {
+   "sym": "HSBA.L",
+   "name": "HSBC",
+   "art": "dividende_zahltag",
+   "datum": "2026-11-24",
+   "betrag": "",
+   "waehrung": "",
+   "quelle": "https://data.fca.org.uk/artefacts/NSM/RNS/1d1010cb-a6c5-4191-b641-9a0a1ad7fbb4.html"
   },
   {
    "sym": "AMCR",
@@ -998,6 +1034,15 @@
    "betrag": "17.50",
    "waehrung": "JPY",
    "quelle": "https://www.sec.gov/Archives/edgar/data/313838/000110465926122935/tm2628525d4_6k.htm"
+  },
+  {
+   "sym": "GLEN.L",
+   "name": "Glencore",
+   "art": "ergebnis",
+   "datum": "2026-12-07",
+   "betrag": "",
+   "waehrung": "",
+   "quelle": "https://data.fca.org.uk/artefacts/NSM/RNS/48aa0308-1df7-41ca-bc4b-36d29cc7e68a.html"
   },
   {
    "sym": "MCHP",
