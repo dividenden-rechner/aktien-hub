@@ -10,11 +10,11 @@ quelle_name: "Pressemitteilung CRISPR Therapeutics (SEC-Meldung)"
 logo_name: "CRISPR Therapeutics"
 logo_symbol: CRSP
 logo_domain: crisprtx.com
-image: https://images.unsplash.com/photo-1583911860205-72f8ac8ddcbe?ixid=M3wxMTE3OTgzfDB8MXxzZWFyY2h8NXx8Z2VuZXRpY3MlMjBsYWJvcmF0b3J5fGVufDF8MHx8fDE3OTM4Mjg2NDR8MA&ixlib=rb-4.1.0&w=1600&h=900&fit=crop&crop=entropy&q=80&fm=jpg
-image_alt: "Foto zu CRISPR Therapeutics: Chanelle Case Borden, Ph.D., a postdoctoral fellow in the National Cancer Institute's Experimental Immunology Branch, pipetting DNA samples into a tube for polymerase chain reaction, or PCR, a laborat"
-image_credit: "Foto: National Cancer Institute auf Unsplash"
-image_source: https://unsplash.com/photos/woman-in-white-long-sleeve-shirt-holding-silver-and-black-metal-tool-v7ibB19EUbQ?utm_source=dividenden-rechner&utm_medium=referral
-image_artist_url: https://unsplash.com/@nci?utm_source=dividenden-rechner&utm_medium=referral
+image: assets/magazin/crispr-therapeutics-q3-2026-casgevy-verlust-foto.jpg
+image_alt: "Foto zu CRISPR Therapeutics: CRISPR-Cas9 is a customizable tool that lets scientists cut and insert small pieces of DNA at precise areas along a DNA strand. The tool is composed of two basic parts: the Cas9 protein, which acts li"
+image_credit: "Foto: National Human Genome Research Institute from Bethesda, MD, / Wikimedia Commons, CC BY 2.0"
+image_source: https://commons.wikimedia.org/wiki/File:CRISPR-Cas9_Editing_of_the_Genome_(26453307604).jpg
+image_artist_url: 
 logo_file: assets/logos/crsp.png
 ---
 <!-- PRÜFEN: Alle Zahlen stammen aus der CRISPR-Pressemitteilung vom 2. November 2026 (SEC-Fassung). Der Mittelabfluss von rund 285 Mio. US-Dollar in neun Monaten ist eine eigene Rechnung: Kasse 2,28 Mrd. minus 1,98 Mrd. zum Jahresende ergibt +0,30 Mrd., abzüglich 0,585 Mrd. Erlös aus der Wandelanleihe. Kursreaktion nicht geprüft. CRISPR zahlt keine Dividende. -->
