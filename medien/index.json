@@ -1136,6 +1136,16 @@
   "logo": "medien/logo/met.png",
   "name": "MetLife"
  },
+ "META": {
+  "ceo": {
+   "datei": "medien/ceo/meta.png",
+   "name": "Mark Zuckerberg",
+   "rolle": "CEO Meta",
+   "stand": "vom Nutzer geliefert 2026",
+   "zeile": "Mark Zuckerberg | CEO Meta"
+  },
+  "name": "Meta Platforms"
+ },
  "MGM": {
   "logo": "medien/logo/mgm.png",
   "name": "MGM Resorts"
