@@ -1465,6 +1465,16 @@
   "logo": "medien/logo/pfe.png",
   "name": "Pfizer Inc."
  },
+ "PG": {
+  "ceo": {
+   "datei": "medien/ceo/pg.png",
+   "name": "Shailesh Jejurikar",
+   "rolle": "CEO Procter & Gamble",
+   "stand": "vom Nutzer geliefert 2026",
+   "zeile": "Shailesh Jejurikar | CEO Procter & Gamble"
+  },
+  "name": "Procter & Gamble"
+ },
  "PH": {
   "logo": "medien/logo/ph.png",
   "name": "Parker Hannifin"
