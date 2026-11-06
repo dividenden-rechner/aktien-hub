@@ -173,6 +173,13 @@
   "name": "Apple Inc."
  },
  "ABBV": {
+  "ceo": {
+   "datei": "medien/ceo/abbv.png",
+   "name": "Robert Michael",
+   "rolle": "CEO AbbVie",
+   "stand": "Story Mai/Juni 2026",
+   "zeile": "Robert Michael | CEO AbbVie"
+  },
   "logo": "medien/logo/abbv.png",
   "name": "AbbVie Inc."
  },
@@ -246,6 +253,16 @@
  "ALGN": {
   "logo": "medien/logo/algn.png",
   "name": "Align Technology"
+ },
+ "ALV.DE": {
+  "ceo": {
+   "datei": "medien/ceo/alv.png",
+   "name": "Oliver Bäte",
+   "rolle": "CEO Allianz",
+   "stand": "Story Mai/Juni 2026",
+   "zeile": "Oliver Bäte | CEO Allianz"
+  },
+  "name": "Allianz"
  },
  "AMCR": {
   "logo": "medien/logo/amcr.png",
@@ -708,6 +725,16 @@
   },
   "name": "Datadog"
  },
+ "DE": {
+  "ceo": {
+   "datei": "medien/ceo/de.png",
+   "name": "John May",
+   "rolle": "CEO Deere",
+   "stand": "Story Mai/Juni 2026",
+   "zeile": "John May | CEO Deere"
+  },
+  "name": "Deere"
+ },
  "DELL": {
   "ceo": {
    "datei": "medien/ceo/dell.png",
@@ -772,9 +799,10 @@
    "medien/aufmacher/dte-de/deutsche-telekom-q3-2026-zahlen-prognose-zentrale.jpg"
   ],
   "ceo": {
-   "datei": "medien/ceo/dte-de.png",
+   "datei": "medien/ceo/dte.png",
    "name": "Tim Höttges",
    "rolle": "CEO Deutsche Telekom",
+   "stand": "Story Mai/Juni 2026",
    "zeile": "Tim Höttges | CEO Deutsche Telekom"
   },
   "logo": "medien/logo/dte-de.png",
@@ -837,10 +865,10 @@
  },
  "ENR.DE": {
   "ceo": {
-   "datei": "medien/ceo/enr-de.png",
+   "datei": "medien/ceo/enr.png",
    "name": "Christian Bruch",
    "rolle": "CEO Siemens Energy",
-   "stand": "Story 2025, vor Verwendung CEO pruefen",
+   "stand": "Story Mai/Juni 2026",
    "zeile": "Christian Bruch | CEO Siemens Energy"
   },
   "name": "Siemens Energy"
@@ -1036,6 +1064,16 @@
  "HPQ": {
   "logo": "medien/logo/hpq.png",
   "name": "HP Inc."
+ },
+ "HRL": {
+  "ceo": {
+   "datei": "medien/ceo/hrl.png",
+   "name": "Jeff Ettinger",
+   "rolle": "CEO Hormel Foods",
+   "stand": "Story Mai/Juni 2026",
+   "zeile": "Jeff Ettinger | CEO Hormel Foods"
+  },
+  "name": "Hormel Foods"
  },
  "HSBC": {
   "aufmacher": [
@@ -1257,9 +1295,29 @@
   },
   "name": "Kroger"
  },
+ "KSS": {
+  "ceo": {
+   "datei": "medien/ceo/kss.png",
+   "name": "Michael Bender",
+   "rolle": "CEO Kohl's",
+   "stand": "Story Mai/Juni 2026",
+   "zeile": "Michael Bender | CEO Kohl's"
+  },
+  "name": "Kohl's"
+ },
  "L": {
   "logo": "medien/logo/l.png",
   "name": "Loews Corporation"
+ },
+ "LGEN.L": {
+  "ceo": {
+   "datei": "medien/ceo/lgen.png",
+   "name": "António Simões",
+   "rolle": "CEO Legal & General",
+   "stand": "Story Mai/Juni 2026",
+   "zeile": "António Simões | CEO Legal & General"
+  },
+  "name": "Legal & General"
  },
  "LH": {
   "logo": "medien/logo/lh.png",
@@ -1374,11 +1432,11 @@
  },
  "MC.PA": {
   "ceo": {
-   "datei": "medien/ceo/mc-pa.png",
+   "datei": "medien/ceo/mc.png",
    "name": "Bernard Arnault",
-   "rolle": "CEO LVMH",
-   "stand": "Story 2025, vor Verwendung CEO pruefen",
-   "zeile": "Bernard Arnault | CEO LVMH"
+   "rolle": "Chairman und CEO LVMH",
+   "stand": "Story Mai/Juni 2026",
+   "zeile": "Bernard Arnault | Chairman und CEO LVMH"
   },
   "name": "LVMH"
  },
@@ -1426,6 +1484,16 @@
    "zeile": "Geoff Martha | CEO Medtronic"
   },
   "name": "Medtronic"
+ },
+ "MELI": {
+  "ceo": {
+   "datei": "medien/ceo/meli.png",
+   "name": "Ariel Szarfsztejn",
+   "rolle": "CEO MercadoLibre",
+   "stand": "Story Mai/Juni 2026",
+   "zeile": "Ariel Szarfsztejn | CEO MercadoLibre"
+  },
+  "name": "MercadoLibre"
  },
  "MET": {
   "logo": "medien/logo/met.png",
@@ -1504,6 +1572,13 @@
   "name": "Monolithic Power Systems"
  },
  "MRK": {
+  "ceo": {
+   "datei": "medien/ceo/mrk.png",
+   "name": "Rob Davis",
+   "rolle": "CEO Merck & Co.",
+   "stand": "Story Mai/Juni 2026",
+   "zeile": "Rob Davis | CEO Merck & Co."
+  },
   "logo": "medien/logo/mrk.png",
   "name": "Merck & Co."
  },
@@ -2051,6 +2126,16 @@
   ],
   "logo": "medien/logo/soje.png",
   "name": "Southern Company"
+ },
+ "SOLS": {
+  "ceo": {
+   "datei": "medien/ceo/sols.png",
+   "name": "David Sewell",
+   "rolle": "CEO Solstice",
+   "stand": "Story Mai/Juni 2026",
+   "zeile": "David Sewell | CEO Solstice"
+  },
+  "name": "Solstice Advanced Materials"
  },
  "SOLV": {
   "logo": "medien/logo/solv.png",
