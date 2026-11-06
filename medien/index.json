@@ -1381,6 +1381,21 @@
   "name": "ON Semiconductor"
  },
  "ORCL": {
+  "ceo": {
+   "datei": "medien/ceo/orcl.png",
+   "name": "Clay Magouyrk",
+   "rolle": "Co-CEO Oracle",
+   "stand": "vom Nutzer geliefert 2026",
+   "zeile": "Clay Magouyrk | Co-CEO Oracle"
+  },
+  "ceo_weitere": [
+   {
+    "datei": "medien/ceo/orcl-2.png",
+    "name": "Mike Sicilia",
+    "rolle": "Co-CEO Oracle",
+    "zeile": "Mike Sicilia | Co-CEO Oracle"
+   }
+  ],
   "logo": "medien/logo/orcl.png",
   "name": "Oracle Corporation"
  },
