@@ -880,6 +880,13 @@
   "name": "Gartner"
  },
  "JNJ": {
+  "ceo": {
+   "datei": "medien/ceo/jnj.png",
+   "name": "Joaquin Duato",
+   "rolle": "CEO Johnson & Johnson",
+   "stand": "Story Okt 2026",
+   "zeile": "Joaquin Duato | CEO Johnson & Johnson"
+  },
   "logo": "medien/logo/jnj.png",
   "name": "Johnson & Johnson"
  },
@@ -1511,6 +1518,13 @@
   "name": "Banco Santander, S.A."
  },
  "SAN.PA": {
+  "ceo": {
+   "datei": "medien/ceo/san-pa.png",
+   "name": "Belén Garijo",
+   "rolle": "CEO Sanofi",
+   "stand": "Story Okt 2026",
+   "zeile": "Belén Garijo | CEO Sanofi"
+  },
   "logo": "medien/logo/san-pa.png",
   "name": "Sanofi"
  },
@@ -1723,6 +1737,16 @@
   "logo": "medien/logo/tte.png",
   "name": "TotalEnergies SE"
  },
+ "TTE.PA": {
+  "ceo": {
+   "datei": "medien/ceo/tte-pa.png",
+   "name": "Patrick Pouyanné",
+   "rolle": "CEO TotalEnergies",
+   "stand": "Story Okt 2026",
+   "zeile": "Patrick Pouyanné | CEO TotalEnergies"
+  },
+  "name": "TotalEnergies"
+ },
  "TWLO": {
   "logo": "medien/logo/twlo.png",
   "name": "Twilio"
@@ -1784,6 +1808,16 @@
   ],
   "logo": "medien/logo/ups.png",
   "name": "UPS"
+ },
+ "V": {
+  "ceo": {
+   "datei": "medien/ceo/v.png",
+   "name": "Ryan McInerney",
+   "rolle": "CEO Visa",
+   "stand": "Story Okt 2026",
+   "zeile": "Ryan McInerney | CEO Visa"
+  },
+  "name": "Visa"
  },
  "VLO": {
   "logo": "medien/logo/vlo.png",
