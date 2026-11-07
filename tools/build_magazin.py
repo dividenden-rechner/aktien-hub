@@ -1009,6 +1009,18 @@ def write_redirects(posts):
     if os.path.exists("news/feed.xml"):
         shutil.copy("news/feed.xml", "magazin/feed.xml")
 
+FREIE_BILDQUELLEN = ("unsplash.com", "commons.wikimedia.org", "wikimedia.org", "pexels.com", "pixabay.com")
+
+def pruefe_bildrechte(allp):
+    """Bildrichtlinie (docs/BILDRICHTLINIE.md): Aufmacher nur mit freier Lizenz und Quellenangabe.
+    Ausnahmen (Pressebild, eigenes Foto) muessen mit image_lizenz im Kopf des Artikels markiert sein."""
+    for p in allp:
+        if p.get("draft") or not p.get("image"): continue
+        if p.get("image_lizenz"): continue
+        src = p.get("image_source") or ""
+        if not (p.get("image_credit") and src.startswith("http") and any(h in src for h in FREIE_BILDQUELLEN)):
+            print(f"BILDRECHTE pruefen: {p.get('slug')} (Quelle/Lizenz fehlt oder nicht auf der Freiliste)")
+
 def main():
     build_wissen.run(sys.modules[__name__])        # Wissensartikel zuerst: Magazin-Verlinkung und Rueck-Links brauchen die fertigen Seiten
     posts, allp = [], []
@@ -1031,6 +1043,7 @@ def main():
     longp = [x for x in posts if x.get("typ") != "kurz"]
     glossar.patch_erklaerseiten(longp)
     patch_sitemap(posts); patch_llms(posts); patch_home(longp); patch_news(posts); write_mag_index(posts); patch_nav_everywhere(bool(posts))
+    pruefe_bildrechte(allp)
     write_overview(allp)
     write_redirects(posts)
     print(f"{len(posts)} Artikel gebaut")

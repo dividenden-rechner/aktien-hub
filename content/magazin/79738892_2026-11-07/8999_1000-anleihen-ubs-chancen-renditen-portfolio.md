@@ -11,6 +11,7 @@ image_alt: "Haupteingang der UBS an der Bahnhofstrasse in ZÃ¼rich mit UBS-Logo Ã
 image_credit: "Foto: UBS"
 image_source: https://www.ubs.com/global/de/media/photos/our-locations.html
 image_artist_url: https://www.ubs.com
+image_lizenz: Pressebild
 logo_symbol: UBS
 logo_domain: ubs.com
 ---
