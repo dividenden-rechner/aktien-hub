@@ -15,6 +15,7 @@ UA = {"User-Agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, 
       "Accept": "application/rss+xml,application/xml,text/xml;q=0.9,*/*;q=0.8"}
 QUELLEN = [   # Name, Region, moegliche Feed-Adressen (die erste, die funktioniert, zaehlt)
     ("South China Morning Post", "Hongkong/China", ["https://www.scmp.com/rss/92/feed"]),
+    ("Nikkei Asia", "Japan/Korea", ["https://asia.nikkei.com/rss/feed/nar", "https://asia.nikkei.com/rss"]),
     ("Japan Times", "Japan", ["https://www.japantimes.com/feed/", "https://www.japantimes.com/business/feed/"]),
     ("The Business Times", "Singapur/Suedostasien", ["https://www.businesstimes.com.sg/rss/companies-markets", "https://www.businesstimes.com.sg/rss/top-stories", "https://www.businesstimes.com.sg/rss/banking-finance"]),
     ("Antara", "Indonesien", ["https://en.antaranews.com/rss/economy.xml", "https://en.antaranews.com/rss/business-investment.xml"]),
@@ -69,6 +70,35 @@ def parse(body, name, region, hours=40):
     return out
 
 
+HOME = {   # Seiten, auf denen Feed-Adressen stehen koennen (wenn die festen Adressen nicht gehen)
+    "South China Morning Post": ["https://www.scmp.com/rss", "https://www.scmp.com/"],
+    "The Business Times": ["https://www.businesstimes.com.sg/rss", "https://www.businesstimes.com.sg/"],
+    "ABC News Australia": ["https://www.abc.net.au/news/feeds/rss/", "https://www.abc.net.au/news/business"],
+    "Nikkei Asia": ["https://asia.nikkei.com/", "https://asia.nikkei.com/Resources/RSS"],
+    "Japan Times": ["https://www.japantimes.com/rss"],
+}
+WORTE = re.compile(r"business|market|compan|bank|financ|econom|corporate|invest|stock|top|latest|news", re.I)
+
+
+def entdecke(name):
+    """Sucht auf den Startseiten nach RSS-Adressen (link rel=alternate und Links mit rss/feed/.xml), Wirtschaftsfeeds zuerst."""
+    found = []
+    for h in HOME.get(name, []):
+        body = get(h)
+        if not body:
+            continue
+        base = re.match(r"https?://[^/]+", h).group(0)
+        for m in re.finditer(r"""(?:href|src)=["']([^"']+)["']""", body):
+            u = html.unescape(m.group(1))
+            if not re.search(r"rss|/feed|\.xml|atom", u, re.I) or re.search(r"sitemap|\.(png|jpg|css|js)\b", u, re.I):
+                continue
+            u = u if u.startswith("http") else (base + u if u.startswith("/") else "")
+            if u and u not in found:
+                found.append(u)
+    found.sort(key=lambda u: 0 if WORTE.search(u) else 1)
+    return found[:10]
+
+
 def sammeln():
     items, status = [], {}
     for name, region, urls in QUELLEN:
@@ -82,6 +112,15 @@ def sammeln():
                 items += got; status[name] = f"{len(got)} Eintraege aus {u}"
                 break
             status[name] = f"Feed ohne frische Eintraege: {u}"
+        if not status[name].endswith(tuple("0123456789")) and "Eintraege aus" not in status[name]:
+            for u in entdecke(name):
+                body = get(u)
+                if not body or "<" not in body[:500]:
+                    continue
+                got = parse(body, name, region)
+                if got:
+                    items += got[:25]; status[name] = f"{len(got)} Eintraege aus {u} (gefunden)"
+                    break
     os.makedirs(os.path.join(ia.ROOT, "data"), exist_ok=True)
     json.dump({"stand": datetime.datetime.utcnow().isoformat(timespec="minutes") + "Z", "status": status}, open(os.path.join(ia.ROOT, "data", "asien-feeds-status.json"), "w", encoding="utf-8"), ensure_ascii=False, indent=1)
     for k, v in status.items(): print(f"  {k}: {v}")
@@ -89,8 +128,13 @@ def sammeln():
 
 
 def main():
-    ap = argparse.ArgumentParser(); ap.add_argument("--anzahl", type=int, default=3); a = ap.parse_args()
+    ap = argparse.ArgumentParser(); ap.add_argument("--anzahl", type=int, default=3); ap.add_argument("--nur-wenn-noetig", action="store_true"); a = ap.parse_args()
     now = datetime.datetime.now(ZoneInfo("Europe/Berlin")); key = ia.api_key()
+    marker = os.path.join(ia.ROOT, "data", "asien-letzter-lauf.json")
+    if a.nur_wenn_noetig and os.path.exists(marker):
+        m = json.load(open(marker, encoding="utf-8"))
+        if m.get("datum") == now.strftime("%Y-%m-%d") and m.get("entwuerfe", 0) >= 1:
+            print("Heute schon erledigt:", m); return
     items = sammeln()
     if not items:
         ia.fail("Keine Feeds erreichbar, kein Asien-Briefing erstellt.")
@@ -100,7 +144,7 @@ def main():
               "Jede Geschichte muss ein konkretes, boersennotiertes Unternehmen betreffen (Aktiengesellschaft), das fuer Anleger relevant ist: Zahlen, Dividende, Uebernahme, Prognose, Management, Kapitalmassnahme. "
               "Reine Politik oder Konjunktur ohne klaren Firmenbezug gilt nicht. Verteilung: eine Geschichte aus Japan, eine aus Suedostasien (Schwerpunkt Indonesien, auch Singapur, besonders Banken wie DBS, OCBC, UOB), eine aus Hongkong oder China. "
               "Gibt es fuer eine Region heute nichts Passendes, nimm die beste Geschichte der uebrigen Regionen, verwende aber jede Firma nur einmal. "
-              "Gib je Auswahl den Index, die Region, den Firmennamen, das Boersenkuerzel (zum Beispiel 7203.T, BBCA.JK, D05.SI, 0700.HK) und einen Fokus in einem Satz zurueck.\n\n" + listing)
+              "Die Firma muss ihren Sitz oder ihre Hauptboerse in der genannten Region haben (Japan: Tokio; Suedostasien: Indonesien, Singapur, Thailand, Malaysia, Vietnam, Philippinen; Hongkong/China: Hongkong, Shanghai, Shenzhen). Eine US-Firma wie Tesla zaehlt nie als Japan oder Asien. Gib je Auswahl den Index, die Region, den Firmennamen, das Boersenkuerzel (zum Beispiel 7203.T, BBCA.JK, D05.SI, 0700.HK) und einen Fokus in einem Satz zurueck.\n\n" + listing)
     picks = ia._generate([{"text": prompt}], SCHEMA_PICK, key).get("picks", [])[: a.anzahl]
     print("Auswahl:", [(p["company"], p["region"]) for p in picks])
     made = 0
@@ -143,6 +187,7 @@ def main():
         print("Entwurf:", path); made += 1
     if not made:
         ia.fail("Kein Entwurf erzeugt.")
+    json.dump({"datum": now.strftime("%Y-%m-%d"), "entwuerfe": made}, open(marker, "w", encoding="utf-8"))
 
 
 if __name__ == "__main__":

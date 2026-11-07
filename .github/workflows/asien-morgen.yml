@@ -1,8 +1,8 @@
 name: Asien-Morgenbriefing
 on:
   schedule:
-    - cron: "0 4 * * 1-5"   # 04:00 UTC = 06:00 Sommerzeit
-    - cron: "0 5 * * 1-5"   # 05:00 UTC = 06:00 Winterzeit (der Lauf prueft die Ortszeit)
+    - cron: "0 4,5 * * 1-5"    # 06:00 deutsche Zeit (Sommer/Winter), der Lauf prueft die Ortszeit
+    - cron: "15 7,8 * * 1-5"   # 09:15 deutsche Zeit: zweiter Versuch, falls das Gemini-Tageskontingent um 06:00 noch leer war (es wird um 09:00 erneuert)
   push:
     branches: [main]
     paths:
@@ -18,13 +18,11 @@ jobs:
   briefing:
     runs-on: ubuntu-latest
     steps:
-      - name: Nur um 6 Uhr deutscher Zeit laufen (Zeitplan), Test sofort
+      - name: Nur um 6 und 9 Uhr deutscher Zeit laufen (Zeitplan), Test sofort
         id: zeit
         run: |
           H=$(TZ=Europe/Berlin date +%H)
-          if [ "${{ github.event_name }}" = "schedule" ] && [ "$H" != "06" ] && [ "$H" != "07" ]; then echo "skip=1" >> $GITHUB_OUTPUT; fi
-          if [ "${{ github.event_name }}" = "schedule" ] && [ "${{ github.event.schedule }}" = "0 4 * * 1-5" ] && [ "$H" = "05" ]; then echo "skip=1" >> $GITHUB_OUTPUT; fi
-          if [ "${{ github.event_name }}" = "schedule" ] && [ "${{ github.event.schedule }}" = "0 5 * * 1-5" ] && [ "$H" = "07" ]; then echo "skip=1" >> $GITHUB_OUTPUT; fi
+          if [ "${{ github.event_name }}" = "schedule" ] && [ "$H" != "06" ] && [ "$H" != "09" ]; then echo "skip=1" >> $GITHUB_OUTPUT; fi
       - uses: actions/checkout@v4
         if: steps.zeit.outputs.skip != '1'
         with:
@@ -41,7 +39,9 @@ jobs:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
           UNSPLASH_ACCESS_KEY: ${{ secrets.UNSPLASH_ACCESS_KEY }}
           FMP_API_KEY: ${{ secrets.FMP_API_KEY }}
-        run: python3 tools/asien_morgen.py
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+        run: |
+          if [ "${{ github.event_name }}" = "schedule" ]; then python3 tools/asien_morgen.py --nur-wenn-noetig; else python3 tools/asien_morgen.py; fi
       - name: Entwuerfe als Pull Requests zur Freigabe anlegen
         if: steps.zeit.outputs.skip != '1'
         env:
