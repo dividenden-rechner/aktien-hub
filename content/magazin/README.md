@@ -16,10 +16,12 @@ Datei anklicken, dann Stift-Symbol: Zeile `draft: true` löschen und speichern, 
 | 29.10.2026 22:42 | Amazon steigert Umsatz im dritten Quartal auf 201,9 Milliarden Dollar | [79738970_2026-10-29/7757_2242-amazon-q3-2026-zahlen.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/79738970_2026-10-29/7757_2242-amazon-q3-2026-zahlen.md) |
 | 29.10.2026 10:12 | Shell erzielt im dritten Quartal 10,8 Milliarden Dollar Gewinn | [79738970_2026-10-29/8987_1012-shell-q3-2026-ergebnisse.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/79738970_2026-10-29/8987_1012-shell-q3-2026-ergebnisse.md) |
 
-### Online (310)
+### Online (312)
 
 | Datum | Titel | Datei |
 |---|---|---|
+| 07.11.2026 10:00 | Anleihen 2026: Warum die UBS Qualitätsanleihen trotz Zinsschwankungen für attraktiv hält | [79738892_2026-11-07/8999_1000-anleihen-ubs-chancen-renditen-portfolio.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/79738892_2026-11-07/8999_1000-anleihen-ubs-chancen-renditen-portfolio.md) |
+| 07.11.2026 09:54 | Unilever wird reiner Pflegekonzern: 1,87 Euro Dividende, 6 Mrd. Euro Rückkauf und ein Umbau mit offenen Fragen | [79738892_2026-11-07/9045_0954-unilever-reiner-pflegekonzern-dividende-rueckkauf.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/79738892_2026-11-07/9045_0954-unilever-reiner-pflegekonzern-dividende-rueckkauf.md) |
 | 07.11.2026 09:37 | Wochenbilanz: Nasdaq verliert 3,4 %, Dow nur 0,9 %: Warum der KI-Trade wackelt und warum nicht | [79738892_2026-11-07/9062_0937-marktuebersicht-ki-trade-woche-2-bis-6-november-2026.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/79738892_2026-11-07/9062_0937-marktuebersicht-ki-trade-woche-2-bis-6-november-2026.md) |
 | 07.11.2026 01:24 | Fox Corporation schließt Roku-Übernahme ab und plant Synergien von 400 Mio. US-Dollar | [79738892_2026-11-07/9875_0124-fox-corporation-schliesst-roku-uebernahme-ab.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/79738892_2026-11-07/9875_0124-fox-corporation-schliesst-roku-uebernahme-ab.md) |
 | 06.11.2026 20:51 | U.S. Bancorp steigert Nettogewinn im dritten Quartal auf 2,1 Milliarden US-Dollar | [79738893_2026-11-06/7948_2051-u-s-bancorp-q3-2026-ergebnis.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/79738893_2026-11-06/7948_2051-u-s-bancorp-q3-2026-ergebnis.md) |
