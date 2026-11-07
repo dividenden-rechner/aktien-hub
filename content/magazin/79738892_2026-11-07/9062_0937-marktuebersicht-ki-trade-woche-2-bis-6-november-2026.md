@@ -29,7 +29,7 @@ Der Ausverkauf hat einen politischen Kern. Die Demokraten gewannen auch dort, wo
 
 Dass diese Erwartung so heftig durchschlug, liegt an der Ausgangslage. Nach einem langen Anstieg war viel Gutes in den Kursen eingepreist, und die Stimmung hatte schon vorher gelitten: Alphabet, Amazon und Intel hatten enttäuscht, Apple und Palantir gaben schwächere Ausblicke. Nvidia fiel am Donnerstag unter den Schlusskurs von Ende 2025, der Jahresgewinn vieler KI-Werte war dünner, als es die Schlagzeilen vermuten ließen.
 
-Hinzu kommen die Zinsen. Der Markt sieht die Wahrscheinlichkeit einer Zinserhöhung am 9. Dezember bei über 65 %. Der Arbeitsmarktbericht vom Freitag verschärfte das: 165.000 neue Stellen statt der erwarteten 60.000, die Arbeitslosenquote sank auf 4,1 %. Für die Konjunktur ist das gut, für Wachstumsaktien mit Gewinnen in ferner Zukunft ist es ein Problem, denn die Renditen stiegen.
+Hinzu kommen die Zinsen. Der Markt sieht die Wahrscheinlichkeit einer Zinserhöhung am 9. Dezember bei rund 76 %. Der Arbeitsmarktbericht vom Freitag verschärfte das: 165.000 neue Stellen statt der erwarteten 60.000, die Arbeitslosenquote sank auf 4,1 %. Für die Konjunktur ist das gut, für Wachstumsaktien mit Gewinnen in ferner Zukunft ist es ein Problem, denn die Renditen stiegen.
 
 ## Was gegen eine Wende spricht
 

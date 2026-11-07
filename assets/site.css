@@ -160,3 +160,6 @@ article p,article li,article td{overflow-wrap:anywhere}
 .rsub{margin-top:-8px;border-bottom:0}
 
 .post details.quellen{margin:24px 0 8px}.post details.quellen summary{display:inline-block;cursor:pointer;font-size:13px;font-weight:600;color:var(--accd);list-style:none}.post details.quellen summary::-webkit-details-marker{display:none}.post details.quellen summary::after{content:" \25BE";font-size:11px}.post details.quellen[open] summary::after{content:" \25B4"}.post details.quellen ul{margin:8px 0 0;font-size:14px}
+
+.tl{width:24px;height:24px;border-radius:6px;object-fit:contain;vertical-align:middle;margin-right:8px;background:#fff}.tl-0{display:inline-block;background:#f1f5f9}.post td:first-child{white-space:nowrap}
+.tl[src*=".mono."]{background:#94a3b8;padding:2px}

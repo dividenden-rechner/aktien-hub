@@ -199,8 +199,32 @@ def front(path):
     return meta, m, raw
 
 
+def bedarf():
+    """Logos fuer Tabellen in Artikeln (data/logo-bedarf.json): {key, sym, dom, name} -> assets/logos/<key>.png"""
+    try:
+        items = json.load(open("data/logo-bedarf.json", encoding="utf-8"))
+    except Exception:
+        return
+    for it in items:
+        final, mono = f"{OUT}/{it['key']}.png", f"{OUT}/{it['key']}.mono.png"
+        if os.path.exists(final):
+            continue
+        png = None
+        for label, fn, arg in (("FMP", from_fmp, it.get("sym", "")), ("Website", from_site, it.get("dom", "")), ("Google", from_google, it.get("dom", "")), ("DuckDuckGo", from_ddg, it.get("dom", ""))):
+            if arg:
+                png = fn(arg)
+            if png:
+                open(final, "wb").write(png)
+                print("Bedarf:", it["key"], "->", label)
+                break
+        if not png and not os.path.exists(mono):
+            open(mono, "wb").write(monogram(it.get("name", it["key"])))
+            print("Bedarf:", it["key"], "-> Buchstaben-Logo")
+
+
 def main():
     os.makedirs(OUT, exist_ok=True)
+    bedarf()
     for path in sorted(__import__("artikel").all_md()):
         if path.endswith("README.md"):
             continue

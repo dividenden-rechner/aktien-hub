@@ -1,0 +1,110 @@
+[
+ {
+  "key": "ucg-mi",
+  "sym": "UCG.MI",
+  "dom": "unicreditgroup.eu",
+  "name": "UniCredit"
+ },
+ {
+  "key": "hnr1-de",
+  "sym": "HNR1.DE",
+  "dom": "hannover-re.com",
+  "name": "Hannover Rück"
+ },
+ {
+  "key": "oxy",
+  "sym": "OXY",
+  "dom": "oxy.com",
+  "name": "Occidental Petroleum"
+ },
+ {
+  "key": "kkr",
+  "sym": "KKR",
+  "dom": "kkr.com",
+  "name": "KKR"
+ },
+ {
+  "key": "ifx-de",
+  "sym": "IFX.DE",
+  "dom": "infineon.com",
+  "name": "Infineon"
+ },
+ {
+  "key": "crwv",
+  "sym": "CRWV",
+  "dom": "coreweave.com",
+  "name": "CoreWeave"
+ },
+ {
+  "key": "tdg",
+  "sym": "TDG",
+  "dom": "transdigm.com",
+  "name": "TransDigm"
+ },
+ {
+  "key": "rwe-de",
+  "sym": "RWE.DE",
+  "dom": "rwe.com",
+  "name": "RWE"
+ },
+ {
+  "key": "eoan-de",
+  "sym": "EOAN.DE",
+  "dom": "eon.com",
+  "name": "E.ON"
+ },
+ {
+  "key": "enr-de",
+  "sym": "ENR.DE",
+  "dom": "siemens-energy.com",
+  "name": "Siemens Energy"
+ },
+ {
+  "key": "sie-de",
+  "sym": "SIE.DE",
+  "dom": "siemens.com",
+  "name": "Siemens"
+ },
+ {
+  "key": "alv-de",
+  "sym": "ALV.DE",
+  "dom": "allianz.com",
+  "name": "Allianz"
+ },
+ {
+  "key": "muv2-de",
+  "sym": "MUV2.DE",
+  "dom": "munichre.com",
+  "name": "Munich Re"
+ },
+ {
+  "key": "mrk-de",
+  "sym": "MRK.DE",
+  "dom": "merckgroup.com",
+  "name": "Merck KGaA"
+ },
+ {
+  "key": "csco",
+  "sym": "CSCO",
+  "dom": "cisco.com",
+  "name": "Cisco"
+ },
+ {
+  "key": "amat",
+  "sym": "AMAT",
+  "dom": "appliedmaterials.com",
+  "name": "Applied Materials"
+ },
+ {
+  "key": "g-mi",
+  "sym": "G.MI",
+  "dom": "generali.com",
+  "name": "Generali"
+ },
+ {
+  "key": "8306-t",
+  "sym": "8306.T",
+  "dom": "mufg.jp",
+  "name": "Mitsubishi UFJ"
+ }
+]

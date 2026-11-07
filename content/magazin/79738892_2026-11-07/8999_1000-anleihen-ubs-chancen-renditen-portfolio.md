@@ -61,7 +61,7 @@ Drei Fragen helfen bei der Entscheidung. Welche Aufgabe soll die Anleihe überne
 
 ## Risiken
 
-Steigen die Zinsen weiter, sitzt ein Käufer vorübergehend auf Verlusten, vor allem bei langen Laufzeiten. Der Markt sieht die Wahrscheinlichkeit einer Zinserhöhung am 9. Dezember bei 77 %, wie in unserer [Wochenbilanz](../marktuebersicht-ki-trade-woche-2-bis-6-november-2026/) beschrieben. Hohe Inflation schwächt den Vorteil von Anleihen, und die wachsende Staatsverschuldung kann die Laufzeitprämie oben halten. Dazu kommt, dass die Studie von einer Bank stammt, die Anlageprodukte verkauft.
+Steigen die Zinsen weiter, sitzt ein Käufer vorübergehend auf Verlusten, vor allem bei langen Laufzeiten. Der Markt sieht die Wahrscheinlichkeit einer Zinserhöhung am 9. Dezember bei rund 76 %, wie in unserer [Wochenbilanz](../marktuebersicht-ki-trade-woche-2-bis-6-november-2026/) beschrieben. Hohe Inflation schwächt den Vorteil von Anleihen, und die wachsende Staatsverschuldung kann die Laufzeitprämie oben halten. Dazu kommt, dass die Studie von einer Bank stammt, die Anlageprodukte verkauft.
 
 Wichtig sind in den kommenden Wochen die US-Inflationszahlen am 10. November, die Zinsentscheidung am 9. Dezember und die Frage, ob die Renditen langer Laufzeiten weiter steigen.
 

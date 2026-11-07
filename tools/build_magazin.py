@@ -219,8 +219,17 @@ def _fk_card(m, depth):
     tag = "a" if href else "div"; ha = f' href="{href}"' if href else ""
     return f'\n<{tag} class="fkarte"{ha}><span class="fk-h">{head}{"<span class=go>Analyse lesen →</span>" if href else ""}</span><span class="fk-e" data-earn="{esc(sym)}" hidden></span>{body}{foot}</{tag}>\n'
 
+def _tl(m):
+    key = m.group(1)
+    for f in (f"assets/logos/{key}.png", f"assets/logos/{key}.mono.png"):
+        if os.path.exists(f):
+            return f'<img class="tl" src="/{f}" alt="" width="24" height="24" loading="lazy">'
+    return '<span class="tl tl-0"></span>'
+
+
 def md_to_html(md_text, depth):
     pre = "../" * depth
+    md_text = re.sub(r"\{\{logo:([a-z0-9.\-]+)\}\}", _tl, md_text)
     md_text = re.sub(r"<!--\s*PRÜFEN.*?-->\s*", "", md_text, flags=re.S)   # Redaktionshinweise des IR-Agenten nie veröffentlichen
     md_text = fix_kurz(md_text)
     md_text = FK_TOK.sub(lambda m: "\n\n" + _fk_card(m, depth).strip() + "\n\n", md_text)
