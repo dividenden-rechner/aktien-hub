@@ -1,5 +1,5 @@
 ---
-title: "Wochenbilanz: Nasdaq verliert 3,4 %, Dow nur 0,9 %: Warum der KI-Trade wackelt und warum nicht"
+title: "Wochenbilanz: Schwächste Börsenwoche seit Juni, warum der KI-Trade wackelt und was dagegen spricht"
 description: "Die schlechteste Börsenwoche seit Juni trifft vor allem Chip- und KI-Werte. Die Gründe für den Rücksetzer, die Argumente gegen eine Wende im KI-Boom und was die Woche für Dividendenanleger bedeutet."
 date: 2026-11-07 09:37
 author: "Redaktions-Team Dividenden-Rechner.de"
@@ -35,23 +35,23 @@ Der Wochenstart verlief ruhig. Rechnerisch lag der S&P 500 am Dienstag mit rund 
 
 ## Warum der KI-Trade wackelt
 
-**Die Politik.** Die Demokraten haben nach den Berichten auch in Bundesstaaten gewonnen, in denen viele Rechenzentren entstehen, etwa in Texas. Steigende Strompreise sind dort ein Wahlkampfthema, und neue Rechenzentren gelten vielen Wählern als Preistreiber. Die UBS rechnet laut Finimize damit, dass rund 30 % der für 2028 erwarteten neuen Rechenzentrumskapazität in den USA gefährdet sind, allein in Texas geht es um 18 Gigawatt. Gesetze gibt es bisher nicht, die Sorge gilt möglichen Auflagen und höheren Kosten für den Netzanschluss.
+**Die Politik.** Die Demokraten haben nach den Berichten auch in Bundesstaaten gewonnen, in denen viele Rechenzentren entstehen, etwa in Texas. Steigende Strompreise sind dort ein Wahlkampfthema, und neue Rechenzentren gelten vielen Wählern als Preistreiber. Die UBS rechnet damit, dass rund 30 % der für 2028 erwarteten neuen Rechenzentrumskapazität in den USA gefährdet sind, allein in Texas geht es um 18 Gigawatt. Gesetze gibt es bisher nicht, die Sorge gilt möglichen Auflagen und höheren Kosten für den Netzanschluss.
 
-**Die Stimmung.** Schon in der Woche davor hatten Alphabet, Amazon und Intel enttäuscht, in dieser Woche folgten schwächere Ausblicke von Apple und Palantir sowie ein Umsatz von Shopify unter den Erwartungen. Eine Umfrage der Universität Michigan zeigt, dass Verbraucher die Sorge vor einer KI-Blase häufiger nennen. In Asien fiel der südkoreanische Kospi am Freitag um mehr als 6 %, der japanische Nikkei 225 rutschte laut CNBC in einen Bärenmarkt.
+**Die Stimmung.** Schon in der Woche davor hatten Alphabet, Amazon und Intel enttäuscht, in dieser Woche folgten schwächere Ausblicke von Apple und Palantir sowie ein Umsatz von Shopify unter den Erwartungen. Eine Umfrage der Universität Michigan zeigt, dass Verbraucher die Sorge vor einer KI-Blase häufiger nennen. In Asien fiel der südkoreanische Kospi am Freitag um mehr als 6 %, der japanische Nikkei 225 rutschte in einen Bärenmarkt.
 
-**Die Zinsen.** Laut CME FedWatch sieht der Markt die Wahrscheinlichkeit einer Zinserhöhung am 9. Dezember bei über 65 %. Hohe Zinsen drücken Bewertungen von Wachstumsaktien, deren Gewinne weit in der Zukunft liegen. Nach dem starken Arbeitsmarktbericht stiegen die Renditen am Freitag.
+**Die Zinsen.** Der Markt sieht die Wahrscheinlichkeit einer Zinserhöhung am 9. Dezember bei über 65 %. Hohe Zinsen drücken Bewertungen von Wachstumsaktien, deren Gewinne weit in der Zukunft liegen. Nach dem starken Arbeitsmarktbericht stiegen die Renditen am Freitag.
 
 **Die Bewertung.** Nach einem langen Anstieg war viel Gutes eingepreist. Dass Nvidia mit dem Verlust vom Donnerstag unter den Schlusskurs von Ende 2025 fiel, zeigt, wie dünn der Jahresgewinn vieler KI-Werte geworden war. Am Freitag kletterte die Aktie wieder darüber.
 
 ## Warum er nicht wackelt
 
-**Die Investitionen laufen weiter.** Nach Berechnungen von Business Insider gaben die großen Cloud-Konzerne im dritten Quartal rund 227 Milliarden Dollar für Investitionen aus, für das Gesamtjahr 2026 werden 803 bis 828 Milliarden Dollar erwartet. Amazon rechnet für 2027 mit „deutlich mehr“ Ausgaben, Alphabet erwartet laut CFO einen deutlichen Anstieg. Wer Rechenzentren bauen will, hat das Geld eingeplant.
+**Die Investitionen laufen weiter.** Die großen Cloud-Konzerne gaben im dritten Quartal rund 227 Milliarden Dollar für Investitionen aus, für das Gesamtjahr 2026 werden 803 bis 828 Milliarden Dollar erwartet. Amazon rechnet für 2027 mit „deutlich mehr“ Ausgaben, Alphabet erwartet laut CFO einen deutlichen Anstieg. Wer Rechenzentren bauen will, hat das Geld eingeplant.
 
-**Verschiebung statt Absage.** Die UBS beschreibt laut Finimize die Gefahr als Zeitfrage: Ausgaben könnten von 2027 nach 2028 rutschen. Die Bank erwartet keinen schnellen Rückgang der Nachfrage nach KI und Cloud. Jane Gibbons von Jefferies sieht im Ausverkauf laut CNBC eine Reaktion auf die Wahl und keinen grundlegenden Neustart (sinngemäß aus dem Englischen).
+**Verschiebung statt Absage.** Die UBS beschreibt die Gefahr als Zeitfrage: Ausgaben könnten von 2027 nach 2028 rutschen. Die Bank erwartet keinen schnellen Rückgang der Nachfrage nach KI und Cloud. Jane Gibbons von Jefferies sieht im Ausverkauf eine Reaktion auf die Wahl und keinen grundlegenden Neustart (sinngemäß aus dem Englischen).
 
-**Die Auftragsbücher sind voll.** Quanta Services meldete vor einer Woche einen Rekord-Auftragsbestand von 63,7 Milliarden Dollar. Beim Speicherhersteller Micron sind laut TIKR über 75 % der Produktion des Jahres 2027 bereits fest zugesagt. Lam Research genehmigte einen Aktienrückkauf über 25 Milliarden Dollar, ein Signal, dass das Management die Lage gelassener sieht als der Markt.
+**Die Auftragsbücher sind voll.** Quanta Services meldete vor einer Woche einen Rekord-Auftragsbestand von 63,7 Milliarden Dollar. Beim Speicherhersteller Micron sind über 75 % der Produktion des Jahres 2027 bereits fest zugesagt. Lam Research genehmigte einen Aktienrückkauf über 25 Milliarden Dollar, ein Signal, dass das Management die Lage gelassener sieht als der Markt.
 
-**Die Erholung kam sofort.** Acht große Chipwerte holten am Freitag im Schnitt mehr als ein Drittel der Donnerstagsverluste wieder auf, bei Intel waren es zwei Drittel, bei Broadcom nur 6 %. Auch Präsident Trump bekräftigte laut CNBC seine Unterstützung für den KI-Ausbau.
+**Die Erholung kam sofort.** Acht große Chipwerte holten am Freitag im Schnitt mehr als ein Drittel der Donnerstagsverluste wieder auf, bei Intel waren es zwei Drittel, bei Broadcom nur 6 %. Auch Präsident Trump bekräftigte seine Unterstützung für den KI-Ausbau.
 
 ![Chipwerte am Donnerstag und Freitag im Vergleich](/assets/magazin/marktuebersicht-2026-11-06-chips.png)
 

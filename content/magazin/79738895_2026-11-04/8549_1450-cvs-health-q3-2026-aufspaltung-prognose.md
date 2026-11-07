@@ -1,5 +1,5 @@
 ---
-title: "CVS Health: Gewinn je Aktie +31 %, Prognose angehoben, und die Aktie fällt trotzdem um 12,5 %"
+title: "CVS Health: Starke Zahlen, höhere Prognose, und plötzlich soll der Konzern geteilt werden"
 description: "CVS verdient im dritten Quartal mehr als erwartet und kündigt zugleich die Aufspaltung in zwei Börsenunternehmen bis 2028 an. Die Analyse zu Zahlen, Dividende, Bewertung und den Gegenargumenten."
 date: 2026-11-04 14:50
 author: "Redaktions-Team Dividenden-Rechner.de"
@@ -26,9 +26,11 @@ logo_file: assets/logos/cvs.png
     2. **Aufspaltung:** Bis zum ersten Halbjahr 2028 soll CVS in zwei Börsenunternehmen zerfallen, eine Versicherungs- und Gesundheitsfirma und eine Apothekenkette. Der Markt reagierte mit einem Kursminus von 12,5 % an einem Tag.
     3. **Dividende:** 2,66 USD im Jahr, 3,3 % Rendite, gut gedeckt, seit Januar 2024 unverändert. Wie die Ausschüttung nach der Trennung aussieht, ist offen.
 
-## Die Aktie hat sich seit dem Frühjahr stark bewegt
+## Erst die Erholung, dann der Paukenschlag
 
-CVS hat im dritten Quartal mehr verdient als erwartet und zugleich angekündigt, sich bis 2028 in zwei Börsenunternehmen aufzuspalten. Die Anleger haben vor allem auf den zweiten Teil reagiert. Wer bei 50 Dollar eingestiegen wäre, hätte heute mit 79,96 Dollar rund 60 % Kursgewinn, dazu etwa 4 Dollar Dividende. Im Juli stand die Aktie sogar bei gut 104 Dollar, mehr als doppelt so hoch.
+CVS war in diesem Jahr eine der Erholungsgeschichten am US-Markt: Von knapp 72 Dollar Ende März stieg die Aktie bis Ende Juli auf über 104 Dollar, und die Prognose wurde schon zum dritten Mal angehoben. Jetzt kommen wieder starke Quartalszahlen. Und am selben Tag kündigt der Konzern an, sich bis 2028 in zwei Börsenunternehmen aufzuspalten. Die Aktie verlor an einem Tag mehr als ein Achtel ihres Werts.
+
+Viele Beobachter wirkten ratlos. Auf den ersten Blick läuft das Geschäft gut, ein Zwang zum Umbau ist von außen kaum zu erkennen, und die wichtigsten Fragen zu Schulden und Dividende sind offen. Warum der Konzern es trotzdem tut, was das für die Ausschüttung bedeutet und was für und gegen die Teilung spricht, steht hier.
 
 ## Das Quartal: mehr Umsatz, +31 % beim Gewinn je Aktie
 
@@ -72,7 +74,7 @@ Die Kehrseite bei Aetna: Die Zahl der Versicherten sank von 26,7 auf 26,1 Millio
 
 ## Die Aufspaltung: der eigentliche Knall
 
-Am Berichtstag kam die Nachricht, die den Kurs bestimmte: CVS will sich in zwei Börsenunternehmen teilen. Die Aktie schloss 12,5 % im Minus bei 79,96 Dollar, knapp 15 Milliarden Dollar Marktwert verschwanden an einem Tag. Analysten sprachen von einem „Schock“ (Leerink).
+Am Berichtstag kam die Nachricht, die den Kurs bestimmte: CVS will sich in zwei Börsenunternehmen teilen. Die Aktie schloss 12,5 % im Minus bei 79,96 Dollar, knapp 15 Milliarden Dollar Marktwert verschwanden an einem Tag. Ein Analyst sprach von einem „Schock“.
 
 |  | CVS Health (bleibt) | CVS Pharmacy (neu) |
 |---|---|---|
@@ -109,15 +111,15 @@ CVS zahlt 0,665 Dollar je Quartal, also 2,66 Dollar im Jahr. Beim Kurs von 79,96
 
 Die Deckung ist komfortabel. Auf den bereinigten Gewinn von mindestens 8,20 Dollar gerechnet, schlägt die Dividende mit 32 % zu Buche, auf den US-GAAP-Gewinn von mindestens 6,98 Dollar mit 38 %. In den ersten neun Monaten flossen 2,6 Milliarden Dollar an die Aktionäre. Der operative Cashflow lag bei 15,3 Milliarden, abzüglich 2,4 Milliarden Investitionen bleiben rund 13 Milliarden. Die Dividende frisst davon ein Fünftel (eigene Rechnung).
 
-Die Bilanz entspannt sich. Die Gesamtschulden sanken seit Jahresende von 64,6 auf 60,7 Milliarden Dollar, die liquiden Mittel stiegen auf 11,7 Milliarden. CVS hat sein Verschuldungsziel nach eigenen Angaben früher als geplant erreicht und will im vierten Quartal wieder Aktien zurückkaufen, ohne eine Summe zu nennen. Wie viel das bringt, ist offen: Die Aktienzahl liegt seit dem Aetna-Kauf bei gut 1,3 Milliarden und ist laut Aktienfinder seither kaum gesunken.
+Die Bilanz entspannt sich. Die Gesamtschulden sanken seit Jahresende von 64,6 auf 60,7 Milliarden Dollar, die liquiden Mittel stiegen auf 11,7 Milliarden. CVS hat sein Verschuldungsziel nach eigenen Angaben früher als geplant erreicht und will im vierten Quartal wieder Aktien zurückkaufen, ohne eine Summe zu nennen. Wie viel das bringt, ist offen: Die Aktienzahl liegt seit dem Aetna-Kauf bei gut 1,3 Milliarden und ist seither kaum gesunken.
 
 **Was offen bleibt:** CVS hat keine Dividendenpolitik für die beiden künftigen Unternehmen genannt. Wer heute 2,66 Dollar bekommt, hält nach der Trennung Anteile an zwei Firmen. Wie hoch die Summe der beiden Ausschüttungen sein wird, ist nicht gesagt. Auch eine Erhöhung vor der Trennung hat das Management nicht in Aussicht gestellt.
 
 ## Bewertung: unter 10 Mal Gewinn, aber mit gutem Grund
 
-Beim Kurs von 79,96 Dollar kostet die Aktie das 9,8-Fache des erwarteten Gewinns 2026 und das 9,2-Fache des Mindestgewinns 2027 (eigene Rechnung mit 8,20 und 8,65 Dollar). Im August, bei rund 94 Dollar, lag das Kurs-Gewinn-Verhältnis nach Berechnung von TIKR noch bei 11,5.
+Beim Kurs von 79,96 Dollar kostet die Aktie das 9,8-Fache des erwarteten Gewinns 2026 und das 9,2-Fache des Mindestgewinns 2027 (eigene Rechnung mit 8,20 und 8,65 Dollar). Im August, bei rund 94 Dollar, lag das Kurs-Gewinn-Verhältnis noch bei 11,5.
 
-Der Kurs hat in diesem Jahr einen weiten Weg zurückgelegt: Von 71,82 Dollar Ende März stieg er bis Ende Juli auf 104,43 Dollar (+45 %), nach den Q2-Zahlen am 5. August fiel er trotz angehobener Prognose um 6 %. Seit dem Hoch ist die Aktie 23 % gefallen. Die Mehrheit der Analysten blieb zuletzt positiv: Im August lagen 18 von 27 Einschätzungen bei „Buy“, keine bei „Sell“, das durchschnittliche Kursziel betrug 116 Dollar (TIKR). Diese Zahlen stammen aus der Zeit vor der Aufspaltung.
+Der Kurs hat in diesem Jahr einen weiten Weg zurückgelegt: Von 71,82 Dollar Ende März stieg er bis Ende Juli auf 104,43 Dollar (+45 %), nach den Q2-Zahlen am 5. August fiel er trotz angehobener Prognose um 6 %. Seit dem Hoch ist die Aktie 23 % gefallen. Die Mehrheit der Analysten blieb zuletzt positiv: Im August lagen 18 von 27 Einschätzungen bei „Buy“, keine bei „Sell“, das durchschnittliche Kursziel betrug 116 Dollar. Diese Zahlen stammen aus der Zeit vor der Aufspaltung.
 
 ![CVS-Aktie: Schlusskurs in US-Dollar zum Monatsende](/assets/magazin/cvs-health-analyse-kurs.png)
 

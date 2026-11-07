@@ -1,5 +1,5 @@
 ---
-title: "Unilever wird reiner Pflegekonzern: 1,87 Euro Dividende, 6 Mrd. Euro Rückkauf und ein Umbau mit offenen Fragen"
+title: "Unilever wird reiner Pflegekonzern: Dividende, Rückkauf und ein Umbau mit offenen Fragen"
 description: "Unilever trennt sich von Eis und Lebensmitteln und konzentriert sich auf Pflege. Was der Umbau für Dividende und Aktienrückkäufe bedeutet, wie das dritte Quartal lief und welche Risiken bleiben."
 date: 2026-11-07 09:54
 author: "Redaktions-Team Dividenden-Rechner.de"
@@ -28,9 +28,11 @@ logo_file: assets/logos/ulvr-l.png
 
 ## Vom Gemischtwarenladen zum Pflegekonzern
 
+Wer sich Unilever vor ein paar Jahren ins Depot gelegt hat, besaß einen Konzern, in dem Eis, Mayonnaise und Shampoo unter einem Dach lagen. Diese Zeiten sind bald vorbei: Nach dem Eis gibt Unilever auch die Lebensmittel ab und bleibt als reiner Pflegekonzern übrig. Was das für Dividende und Rückkäufe heißt, steht noch nicht fest. Deshalb lohnt ein genauer Blick.
+
 Unilever besitzt viele Marken, die Verbraucher aus dem Alltag kennen: Dove und Axe bei der Körperpflege, Domestos und Omo im Haushalt, Knorr und Hellmann's bei den Lebensmitteln. Das Unternehmen räumt seit zwei Jahren auf. Das Eisgeschäft um Magnum und Langnese wurde im Dezember 2025 als eigene Börsenfirma abgespalten. Ende März 2026 kündigte Unilever an, auch die Lebensmittel mit dem Gewürzhersteller McCormick zusammenzulegen.
 
-Die Eckdaten des Geschäfts laut den Mitteilungen der Unternehmen: Die Lebensmittelsparte wird mit rund 44,8 Milliarden US-Dollar bewertet. Unilever erhält 15,7 Milliarden US-Dollar in bar, außerdem Aktien. Unilever-Aktionäre und Unilever zusammen halten 65 % am gemeinsamen Unternehmen, davon entfallen 9,9 % auf Unilever selbst, die der Konzern mit der Zeit verkaufen will. Die Struktur (Reverse Morris Trust) soll für Unilever und seine Aktionäre in den USA steuerfrei bleiben. Abgeschlossen sein soll alles bis Mitte 2027, vorbehaltlich der Zustimmung der McCormick-Aktionäre und der Behörden.
+Die Eckdaten des Geschäfts: Die Lebensmittelsparte wird mit rund 44,8 Milliarden US-Dollar bewertet. Unilever erhält 15,7 Milliarden US-Dollar in bar, außerdem Aktien. Unilever-Aktionäre und Unilever zusammen halten 65 % am gemeinsamen Unternehmen, davon entfallen 9,9 % auf Unilever selbst, die der Konzern mit der Zeit verkaufen will. Die Struktur (Reverse Morris Trust) soll für Unilever und seine Aktionäre in den USA steuerfrei bleiben. Abgeschlossen sein soll alles bis Mitte 2027, vorbehaltlich der Zustimmung der McCormick-Aktionäre und der Behörden.
 
 Für Unilever bleibt ein Unternehmen mit rund 39 Milliarden Euro Umsatz, das ausschließlich Schönheit, Körperpflege und Haushaltsprodukte verkauft. Der Konzern will sich damit auf Bereiche konzentrieren, die schneller wachsen.
 
@@ -48,7 +50,7 @@ Die Prognose für 2026 hob das Unternehmen an. Das Wachstum soll in der Spanne v
 
 Am 4. November stellte Unilever das neue Modell vor, das wir in einem [eigenen Artikel](../unilever-investor-event-reines-pflegegeschaeft/) beschrieben haben. Die Kernpunkte: Bis Ende 2029 will der Konzern 1 Milliarde Euro durch einfachere Strukturen, neue Prozesse und Technik einsparen. Ein Teil davon gleicht Kosten aus, die nach der Abgabe der Lebensmittel übrig bleiben. Mittelfristig peilt Unilever 4 bis 6 % Umsatzwachstum pro Jahr an, davon mindestens 2 Punkte aus der Menge, dazu eine moderate Verbesserung der Marge. Die Führung wird zum 1. Januar 2027 neu aufgestellt, der Chef für Nordamerika kommt von außen.
 
-Zahlen zu Gewinn oder Marge je Geschäftsbereich nannte die Vorabmeldung nicht. Die Aktie kostete am Mittwoch gegen Mittag rund 58 Euro und am Donnerstag rund 59,60 Euro, bei einer Spanne der letzten 52 Wochen von 46,98 bis 63,39 Euro (Kurse bei Lang & Schwarz laut ad-hoc-news).
+Zahlen zu Gewinn oder Marge je Geschäftsbereich nannte die Vorabmeldung nicht. Die Aktie kostete am Mittwoch gegen Mittag rund 58 Euro und am Donnerstag rund 59,60 Euro, bei einer Spanne der letzten 52 Wochen von 46,98 bis 63,39 Euro.
 
 ## Was der Umbau für die Dividende bedeutet
 
