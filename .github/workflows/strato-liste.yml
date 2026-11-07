@@ -1,0 +1,23 @@
+name: Strato Webspace anzeigen
+on:
+  push:
+    branches: [main]
+    paths:
+      - "tools/strato-liste.trigger"
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  liste:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install paramiko
+      - env:
+          STRATO_SFTP_HOST: ${{ secrets.STRATO_SFTP_HOST }}
+          STRATO_SFTP_USER: ${{ secrets.STRATO_SFTP_USER }}
+          STRATO_SFTP_PASS: ${{ secrets.STRATO_SFTP_PASS }}
+        run: python3 tools/strato_liste.py
