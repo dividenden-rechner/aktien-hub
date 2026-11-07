@@ -16,6 +16,7 @@ logo_file: assets/logos/enbridge.png
 image: assets/magazin/enbridge-q3-2026-pipelines-foto.jpg
 image_alt: "Weiße Rohrleitungen und blaue Ventile in einer Pipeline-Anlage von Enbridge, im Abendlicht"
 image_credit: "Foto: Enbridge"
+image_lizenz: Pressebild
 ---
 <!-- PRÜFEN: Quelle: Präsentation Enbridge Q3 2026 (Screenshots von Divi, Folien 4 bis 15). Pressemitteilung nicht gelesen; Umsatz und Nettogewinn stehen nicht auf den Folien. Währung: kanadische Dollar (Folie "$ Millions", Kapitalfolie "in billions of CAD"), im Text als C$ angegeben. -->
 <!-- PRÜFEN: Divi nannte "Greg Abel"; die Folie nennt Greg Ebel (President & CEO, Ruhestand Ende 2026) und Michelle Harradence (ab 1.1.2027). Name nach Folie übernommen; CEO-Foto von Divi gilt als Ebel. Kein Kursbild; Kursreaktion nicht geprüft. -->

@@ -16,6 +16,7 @@ logo_file: assets/logos/mp-materials.png
 image: assets/magazin/mp-materials-q3-2026-mountain-pass-foto.jpg
 image_alt: "Luftaufnahme der Aufbereitungsanlage von MP Materials an der Seltene-Erden-Mine Mountain Pass in der Mojave-Wüste, im Hintergrund Berge"
 image_credit: "Foto: MP Materials (Pressebild)"
+image_lizenz: Pressebild
 ---
 <!-- PRÜFEN: Quelle: 8-K / Pressemitteilung Q3 2026 vom 05.11.2026 (SEC), Präsentation (Screenshots von Divi, Folien 4, 5, 9) und Yahoo Finance (Kurs, Screenshot von Divi). Erwartungen der Analysten (FactSet −0,02 USD) laut MarketScreener-Schlagzeile, nicht selbst geprüft. -->
 <!-- PRÜFEN: Aufmacherfoto und CEO-Foto von Divi (Rechte/Pressebild-Status unverifiziert); CEO-Name von Divi genannt. Aufmacher: Foto der Anlage Mountain Pass angenommen, Bildunterschrift nicht bestätigt. -->

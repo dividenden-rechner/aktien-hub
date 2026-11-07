@@ -11,6 +11,7 @@ logo_domain: lyondellbasell.com
 image: assets/magazin/lyondellbasell-q3-2026-foto.jpg
 image_alt: "Foto zu LyondellBasell Industries N.V.: Bild des Unternehmens"
 image_credit: "Bild: LyondellBasell Industries N.V (Pressematerial)"
+image_lizenz: Pressebild
 image_source: https://ml.globenewswire.com/Resource/Download/ab7935cb-361b-4c8f-82f7-81f1b6bcd387?size=3
 image_artist_url: 
 logo_file: assets/logos/lyb.png

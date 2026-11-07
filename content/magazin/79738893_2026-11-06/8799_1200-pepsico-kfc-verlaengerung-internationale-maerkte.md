@@ -14,6 +14,7 @@ logo_domain: pepsico.com
 image: assets/magazin/pepsico-kfc-verlaengerung-internationale-maerkte-foto.jpg
 image_alt: "Collage mit KFC-Gerichten und Pepsi-Bechern: Hähnchenburger, Doritos Loaded, Menü mit Pepsi und eine lächelnde Frau mit Pepsi-Becher"
 image_credit: "Bild: PepsiCo (Pressemitteilung)"
+image_lizenz: Pressebild
 logo_file: assets/logos/pep.png
 ---
 <!-- PRÜFEN: Quelle: Pressemitteilung PepsiCo vom 06.11.2026 (PR Newswire, Screenshots von Divi) und Berichte vom Oktober 2026 zum KFC-Wechsel zu Coca-Cola in den USA (nicht im Detail gelesen). Laufzeit der Verlängerung und Umsatzgröße nennt die Mitteilung nicht; "exklusiv" und "langfristig" aus Divis Vorlage wurden NICHT übernommen. -->

@@ -17,6 +17,7 @@ story_logo_bg: "#ffffff"
 image: assets/magazin/ocbc-q3-2026-zentrale-foto.jpg
 image_alt: "Die OCBC-Zentrale in Singapur mit rotem Firmenlogo am Dach, im Hintergrund Hochhäuser der Stadt im Abendlicht"
 image_credit: "Foto: OCBC"
+image_lizenz: Pressebild
 ---
 <!-- PRÜFEN: Quelle: Pressemitteilung "Third Quarter 2026 Results" und CEO-Präsentation von OCBC vom 06.11.2026 (Screenshots von Divi, Seiten 1 bis 8 und Folien 2 und 3). Kein Kursbild, keine Kursreaktion geprüft. -->
 <!-- PRÜFEN: Aufmacherfoto (OCBC-Zentrale, nur 580 px, hochgerechnet) und CEO-Foto (Tan Teck Long, 371 px) von Divi, Rechte unverifiziert. Logo aus der Pressemitteilung ausgeschnitten, kleine Auflösung. -->

@@ -8,6 +8,7 @@ category: Quartalszahlen
 image: assets/magazin/diageo-q1-geschaeftsjahr-2027-nordamerika-umsatz-foto.jpg
 image_alt: "Flaschen von Diageo-Marken nebeneinander, darunter Johnnie Walker, Smirnoff, Baileys, Tanqueray, Captain Morgan und ein Glas Guinness"
 image_credit: "Foto: Diageo"
+image_lizenz: Pressebild
 image_source: https://www.diageo.com/en/our-brands
 story_image: assets/magazin/diageo-q1-fy27-trading-update-regionen-story.png
 story_chart: assets/magazin/diageo-q1-fy27-trading-update-kurs.png

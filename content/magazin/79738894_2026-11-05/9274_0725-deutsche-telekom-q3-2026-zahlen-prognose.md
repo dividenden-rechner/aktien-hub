@@ -8,6 +8,7 @@ category: Quartalszahlen
 image: assets/magazin/deutsche-telekom-q3-2026-zahlen-prognose-zentrale.jpg
 image_alt: "Die Konzernzentrale der Deutschen Telekom in Bonn mit dem T-Logo auf dem Dach"
 image_credit: "Foto: Deutsche Telekom / Norbert Ittermann"
+image_lizenz: Pressebild
 image_source: https://www.telekom.com/de/newsroom/mediencenter/fotos/deutsche-telekom-logo
 story_image: assets/magazin/deutsche-telekom-q3-2026-zahlen-prognose-f1-story.png
 story_chart: assets/magazin/deutsche-telekom-q3-2026-zahlen-prognose-kurs.png

@@ -15,6 +15,7 @@ logo_domain: up.com
 image: assets/magazin/union-pacific-norfolk-southern-stb-vena-rede-foto.jpg
 image_alt: "Güterzug mit zwei gelben Lokomotiven von Union Pacific vor Bergen"
 image_credit: "Foto: Union Pacific (Pressebild)"
+image_lizenz: Pressebild
 image_source: https://www.up.com
 image_artist_url: 
 logo_file: assets/logos/combo-unp-nsc.png

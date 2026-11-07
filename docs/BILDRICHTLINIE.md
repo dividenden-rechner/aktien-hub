@@ -13,6 +13,9 @@ Ziel: Auf der Seite, im Newsletter und in Stories liegt nur Bildmaterial, dessen
 - Fotos aus Suchmaschinen, Social Media oder Zeitungen.
 - KI-Bilder von realen Personen oder Marken.
 
+## Pressebilder (Ausnahme, von Divi freigegeben)
+Fotos aus Pressemitteilungen oder von den Presseseiten der Firmen duerfen als Aufmacher dienen, wenn Divi sie liefert oder sie in einer von Divi gelieferten Pressemitteilung enthalten sind. Sie bekommen `image_lizenz: Pressebild` und eine Quellenangabe (`Foto: <Firma>`). Claude sucht Pressebilder nicht selbst im Netz.
+
 ## Zitate aus Unternehmensunterlagen
 Folien, Diagramme und Tabellen aus Quartalsberichten duerfen als Zitat zur Erlaeuterung gezeigt werden, mit Quellenangabe und nur in dem Umfang, den der Artikel zur Erklaerung braucht. Sie dienen nie als Aufmacher oder Dekoration.
 

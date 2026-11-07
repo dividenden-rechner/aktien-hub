@@ -12,6 +12,7 @@ story_text: "Mitsubishi Heavy verdient im ersten Halbjahr 45 % mehr, und fast de
 image: assets/magazin/mitsubishi-heavy-industries-halbjahr-fy2026-gasturbinen.jpg
 image_alt: "Arbeiter in blauen Overalls beobachten, wie ein Gasturbinenrotor von Mitsubishi Heavy in der Fertigungshalle an einem Kran hängt"
 image_credit: "Foto: Mitsubishi Heavy Industries (Pressebild)"
+image_lizenz: Pressebild
 logo_name: "Mitsubishi Heavy Industries"
 logo_symbol: 7011.T
 logo_domain: mhi.com
