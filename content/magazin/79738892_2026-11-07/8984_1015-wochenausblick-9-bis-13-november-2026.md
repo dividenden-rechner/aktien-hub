@@ -7,10 +7,10 @@ author_bio: "Das Redaktions-Team von Dividenden-Rechner.de schreibt über Divide
 category: Analyse
 kein_logo: ja
 image: assets/magazin/wochenausblick-9-bis-13-november-2026-foto.jpg
-image_alt: "Foto zu Wochenausblick:: Evan Kirby 2016-02-15"
-image_credit: "Foto: Evan Kirby evankirby2 / Wikimedia Commons, CC0"
-image_source: https://commons.wikimedia.org/wiki/File:Desert_Explorer_(Unsplash).jpg
-image_artist_url: 
+image_alt: "Skyline von Frankfurt am Main mit den Bankentürmen im Abendlicht"
+image_credit: "Foto: cmophoto.net / Unsplash"
+image_source: https://unsplash.com/de/fotos/stadtgebaude-tagsuber-unter-weissem-himmel-3rwBabCFVYc
+image_artist_url: https://unsplash.com/@cmophoto
 ---
 !!! kurz "Kurz gesagt"
     **Zinserhöhung im Dezember (CME FedWatch):** 77 % (Donnerstag: 67 %)

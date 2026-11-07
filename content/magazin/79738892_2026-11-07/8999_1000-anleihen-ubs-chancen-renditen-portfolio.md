@@ -7,10 +7,10 @@ author_bio: "Das Redaktions-Team von Dividenden-Rechner.de schreibt über Divide
 category: Analyse
 kein_logo: ja
 image: assets/magazin/anleihen-ubs-chancen-renditen-portfolio-foto.jpg
-image_alt: "Foto zu Anleihen: Made with Lens: Leica APO Macro Elmarit-R 2.8 100mm (Year: 1993) WE ♥ AUTHENTIC PHOTOGRAPHY. FREE handpicked & curated images for your next commercial or personal project. 1050+ FREE photos CC-0 >> <a"
-image_credit: "Foto: Markus Spiske from Forchheim, Bavaria Upper Franconia / Wikimedia Commons, CC BY 2.0"
-image_source: https://commons.wikimedia.org/wiki/File:EURO_Cash_Money_Banknote_(49643807026).jpg
-image_artist_url: 
+image_alt: "Haupteingang der UBS an der Bahnhofstrasse in Zürich mit UBS-Logo über dem Portal"
+image_credit: "Foto: UBS"
+image_source: https://www.ubs.com/global/de/media/photos/our-locations.html
+image_artist_url: https://www.ubs.com
 logo_symbol: UBS
 logo_domain: ubs.com
 ---
