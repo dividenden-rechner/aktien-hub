@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:dc="http://purl.org/dc/elements/1.1/">
-<channel><title>Dividenden-Rechner Aktien-Hub: News</title><link>https://dividenden-rechner.github.io/aktien-hub/news/</link><description>Dividenden, Kennzahlen und Steuern erklärt</description><language>de-DE</language><lastBuildDate>Sat, 07 Nov 2026 22:00:33 +0000</lastBuildDate><atom:link href="https://dividenden-rechner.github.io/aktien-hub/news/feed.xml" rel="self" type="application/rss+xml"/>
+<channel><title>Dividenden-Rechner Aktien-Hub: News</title><link>https://dividenden-rechner.github.io/aktien-hub/news/</link><description>Dividenden, Kennzahlen und Steuern erklärt</description><language>de-DE</language><lastBuildDate>Sat, 07 Nov 2026 22:01:07 +0000</lastBuildDate><atom:link href="https://dividenden-rechner.github.io/aktien-hub/news/feed.xml" rel="self" type="application/rss+xml"/>
 <item><title>Wochenausblick: Die Zinserhöhung rückt näher, dazu Inflationszahlen und Zahlen von Siemens, Allianz und Cisco</title><link>https://dividenden-rechner.github.io/aktien-hub/news/wochenausblick-9-bis-13-november-2026/</link><guid isPermaLink="true">https://dividenden-rechner.github.io/aktien-hub/news/wochenausblick-9-bis-13-november-2026/</guid><pubDate>Sat, 07 Nov 2026 10:15:00 +0100</pubDate><category>Analyse</category><dc:creator>Kilian Treß</dc:creator><description>Was in der Woche vom 9. bis 13. November zählt: die US-Inflation am Dienstag, viele Notenbanker, Anleiheauktionen und Quartalszahlen von Siemens, Allianz, Munich Re, RWE, Cisco und Applied Materials.</description><enclosure url="https://dividenden-rechner.github.io/aktien-hub/assets/magazin/wochenausblick-9-bis-13-november-2026-foto.jpg" type="image/jpeg" length="0"/><content:encoded><![CDATA[<div class="admonition kurz">
 <p class="admonition-title">Kurz gesagt</p>
 <p><strong>Zinserhöhung im Dezember:</strong> wahrscheinlicher geworden (76 %, vor einer Woche 71 %)
@@ -25,19 +25,19 @@
 </thead>
 <tbody>
 <tr>
-<td><img class="tl" src="https://dividenden-rechner.github.io/aktien-hub/assets/logos/ucg-mi.mono.png" alt="" width="24" height="24" loading="lazy">UniCredit</td>
+<td><img class="tl" src="https://dividenden-rechner.github.io/aktien-hub/assets/logos/ucg-mi.png" alt="" width="24" height="24" loading="lazy">UniCredit</td>
 <td>Quartalszahlen</td>
 </tr>
 <tr>
-<td><img class="tl" src="https://dividenden-rechner.github.io/aktien-hub/assets/logos/hnr1-de.mono.png" alt="" width="24" height="24" loading="lazy">Hannover Rück</td>
+<td><img class="tl" src="https://dividenden-rechner.github.io/aktien-hub/assets/logos/hnr1-de.png" alt="" width="24" height="24" loading="lazy">Hannover Rück</td>
 <td>Quartalszahlen</td>
 </tr>
 <tr>
-<td><img class="tl" src="https://dividenden-rechner.github.io/aktien-hub/assets/logos/oxy.mono.png" alt="" width="24" height="24" loading="lazy">Occidental Petroleum</td>
+<td><img class="tl" src="https://dividenden-rechner.github.io/aktien-hub/assets/logos/oxy.png" alt="" width="24" height="24" loading="lazy">Occidental Petroleum</td>
 <td>Quartalszahlen</td>
 </tr>
 <tr>
-<td><img class="tl" src="https://dividenden-rechner.github.io/aktien-hub/assets/logos/kkr.mono.png" alt="" width="24" height="24" loading="lazy">KKR</td>
+<td><img class="tl" src="https://dividenden-rechner.github.io/aktien-hub/assets/logos/kkr.png" alt="" width="24" height="24" loading="lazy">KKR</td>
 <td>Quartalszahlen</td>
 </tr>
 </tbody>
@@ -54,7 +54,7 @@
 </thead>
 <tbody>
 <tr>
-<td><img class="tl" src="https://dividenden-rechner.github.io/aktien-hub/assets/logos/ifx-de.mono.png" alt="" width="24" height="24" loading="lazy">Infineon</td>
+<td><img class="tl" src="https://dividenden-rechner.github.io/aktien-hub/assets/logos/ifx-de.png" alt="" width="24" height="24" loading="lazy">Infineon</td>
 <td>Jahreszahlen</td>
 </tr>
 <tr>
@@ -62,11 +62,11 @@
 <td>Quartalszahlen</td>
 </tr>
 <tr>
-<td><img class="tl" src="https://dividenden-rechner.github.io/aktien-hub/assets/logos/tdg.mono.png" alt="" width="24" height="24" loading="lazy">TransDigm</td>
+<td><img class="tl" src="https://dividenden-rechner.github.io/aktien-hub/assets/logos/tdg.png" alt="" width="24" height="24" loading="lazy">TransDigm</td>
 <td>Quartalszahlen</td>
 </tr>
 <tr>
-<td><img class="tl" src="https://dividenden-rechner.github.io/aktien-hub/assets/logos/crwv.mono.png" alt="" width="24" height="24" loading="lazy">CoreWeave</td>
+<td><img class="tl" src="https://dividenden-rechner.github.io/aktien-hub/assets/logos/crwv.png" alt="" width="24" height="24" loading="lazy">CoreWeave</td>
 <td>Nach Börsenschluss, erwartet wird ein Verlust von 1,45 $ je Aktie (Vorjahr: 0,31 $)</td>
 </tr>
 </tbody>
@@ -83,15 +83,15 @@
 </thead>
 <tbody>
 <tr>
-<td><img class="tl" src="https://dividenden-rechner.github.io/aktien-hub/assets/logos/rwe-de.mono.png" alt="" width="24" height="24" loading="lazy">RWE</td>
+<td><img class="tl" src="https://dividenden-rechner.github.io/aktien-hub/assets/logos/rwe-de.png" alt="" width="24" height="24" loading="lazy">RWE</td>
 <td>Quartalszahlen</td>
 </tr>
 <tr>
-<td><img class="tl" src="https://dividenden-rechner.github.io/aktien-hub/assets/logos/eoan-de.mono.png" alt="" width="24" height="24" loading="lazy">E.ON</td>
+<td><img class="tl" src="https://dividenden-rechner.github.io/aktien-hub/assets/logos/eoan-de.png" alt="" width="24" height="24" loading="lazy">E.ON</td>
 <td>Quartalszahlen</td>
 </tr>
 <tr>
-<td><img class="tl" src="https://dividenden-rechner.github.io/aktien-hub/assets/logos/enr-de.mono.png" alt="" width="24" height="24" loading="lazy">Siemens Energy</td>
+<td><img class="tl" src="https://dividenden-rechner.github.io/aktien-hub/assets/logos/enr-de.png" alt="" width="24" height="24" loading="lazy">Siemens Energy</td>
 <td>Jahreszahlen</td>
 </tr>
 </tbody>
@@ -108,27 +108,27 @@
 </thead>
 <tbody>
 <tr>
-<td><img class="tl" src="https://dividenden-rechner.github.io/aktien-hub/assets/logos/sie-de.mono.png" alt="" width="24" height="24" loading="lazy">Siemens</td>
+<td><img class="tl" src="https://dividenden-rechner.github.io/aktien-hub/assets/logos/sie-de.png" alt="" width="24" height="24" loading="lazy">Siemens</td>
 <td>Jahreszahlen</td>
 </tr>
 <tr>
-<td><img class="tl" src="https://dividenden-rechner.github.io/aktien-hub/assets/logos/alv-de.mono.png" alt="" width="24" height="24" loading="lazy">Allianz</td>
+<td><img class="tl" src="https://dividenden-rechner.github.io/aktien-hub/assets/logos/alv-de.png" alt="" width="24" height="24" loading="lazy">Allianz</td>
 <td>Quartalszahlen</td>
 </tr>
 <tr>
-<td><img class="tl" src="https://dividenden-rechner.github.io/aktien-hub/assets/logos/muv2-de.mono.png" alt="" width="24" height="24" loading="lazy">Munich Re</td>
+<td><img class="tl" src="https://dividenden-rechner.github.io/aktien-hub/assets/logos/muv2-de.png" alt="" width="24" height="24" loading="lazy">Munich Re</td>
 <td>Quartalszahlen</td>
 </tr>
 <tr>
-<td><img class="tl" src="https://dividenden-rechner.github.io/aktien-hub/assets/logos/mrk-de.mono.png" alt="" width="24" height="24" loading="lazy">Merck KGaA</td>
+<td><img class="tl" src="https://dividenden-rechner.github.io/aktien-hub/assets/logos/mrk-de.png" alt="" width="24" height="24" loading="lazy">Merck KGaA</td>
 <td>Quartalszahlen</td>
 </tr>
 <tr>
-<td><img class="tl" src="https://dividenden-rechner.github.io/aktien-hub/assets/logos/csco.mono.png" alt="" width="24" height="24" loading="lazy">Cisco</td>
+<td><img class="tl" src="https://dividenden-rechner.github.io/aktien-hub/assets/logos/csco.png" alt="" width="24" height="24" loading="lazy">Cisco</td>
 <td>Nach Börsenschluss, erwartet werden 1,15 $ je Aktie (Vorjahr: 0,81 $, +42 %) bei rund 18 Mrd. $ Umsatz</td>
 </tr>
 <tr>
-<td><img class="tl" src="https://dividenden-rechner.github.io/aktien-hub/assets/logos/amat.mono.png" alt="" width="24" height="24" loading="lazy">Applied Materials</td>
+<td><img class="tl" src="https://dividenden-rechner.github.io/aktien-hub/assets/logos/amat.png" alt="" width="24" height="24" loading="lazy">Applied Materials</td>
 <td>Nach Börsenschluss, erwartet werden 4,06 $ je Aktie (Vorjahr: 2,17 $, +87 %) bei gut 10 Mrd. $ Umsatz</td>
 </tr>
 </tbody>
@@ -145,11 +145,11 @@
 </thead>
 <tbody>
 <tr>
-<td><img class="tl" src="https://dividenden-rechner.github.io/aktien-hub/assets/logos/g-mi.mono.png" alt="" width="24" height="24" loading="lazy">Generali</td>
+<td><img class="tl" src="https://dividenden-rechner.github.io/aktien-hub/assets/logos/g-mi.png" alt="" width="24" height="24" loading="lazy">Generali</td>
 <td>Quartalszahlen</td>
 </tr>
 <tr>
-<td><img class="tl" src="https://dividenden-rechner.github.io/aktien-hub/assets/logos/8306-t.mono.png" alt="" width="24" height="24" loading="lazy">Mitsubishi UFJ</td>
+<td><img class="tl" src="https://dividenden-rechner.github.io/aktien-hub/assets/logos/8306-t.png" alt="" width="24" height="24" loading="lazy">Mitsubishi UFJ</td>
 <td>Quartalszahlen</td>
 </tr>
 </tbody>
