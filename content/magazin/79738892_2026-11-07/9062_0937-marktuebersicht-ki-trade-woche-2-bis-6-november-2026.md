@@ -6,6 +6,11 @@ author: "Redaktions-Team Dividenden-Rechner.de"
 author_bio: "Das Redaktions-Team von Dividenden-Rechner.de schreibt über Dividendenaktien, Kennzahlen und Steuerthemen für Privatanleger. Die Rechner und Auswertungen auf der Seite entstehen im eigenen Haus."
 category: Analyse
 kein_logo: ja
+image: assets/magazin/marktuebersicht-ki-trade-woche-2-bis-6-november-2026-foto.jpg
+image_alt: "Fassade der New Yorker Börse mit rotem Pfeil nach unten"
+image_credit: "Foto: David Vives auf Unsplash, Pfeil: Dividenden-Rechner.de"
+image_source: https://unsplash.com/photos/new-york-stock-exchange-building-with-american-flags-xnzSgqyP8Hs?utm_source=dividenden-rechner&utm_medium=referral
+image_artist_url: https://unsplash.com/@davidvives?utm_source=dividenden-rechner&utm_medium=referral
 ---
 !!! kurz "Kurz gesagt"
     **Nasdaq Composite:** −3,4 % in der Woche
