@@ -24,7 +24,7 @@ Der Wochenstart verlief ruhig. Rechnerisch lag der S&P 500 am Dienstag mit rund 
 
 **Donnerstag, 5. November:** Dann kippte die Stimmung. Der Nasdaq Composite verlor 5,5 %, der S&P 500 4,4 %, und der Dow gab 1.833 Punkte ab. Es war für S&P 500 und Nasdaq der schwächste Handelstag seit April 2025. Alle elf Sektoren des S&P 500 schlossen im Minus, am stärksten traf es die Firmen, die den KI-Ausbau beliefern.
 
-**Freitag, 6. November:** Der Nasdaq gewann 1,1 %, der S&P 500 0,3 %, der Dow gab 0,5 % nach. Der US-Arbeitsmarktbericht fiel stark aus: Die Wirtschaft schuf im Oktober 165.000 Stellen, erwartet hatte der Markt gut 60.000, die Arbeitslosenquote sank auf 4,1 %. Das hilft der Konjunktur, nährt aber die Sorge vor höheren Zinsen.
+**Freitag, 6. November:** Der Handelstag brachte nur eine kleine Erholung. Der Nasdaq gewann 1,1 % auf 24.579 Punkte, der S&P 500 0,3 % auf 7.376 Punkte und der Russell 2000 0,9 % auf 2.754 Punkte. Der Dow gab 0,5 % auf 51.286 Punkte nach. Von den 5,5 % Verlust des Nasdaq am Donnerstag war damit nur ein Bruchteil aufgeholt. Der US-Arbeitsmarktbericht fiel stark aus: Die Wirtschaft schuf im Oktober 165.000 Stellen, erwartet hatte der Markt gut 60.000, die Arbeitslosenquote sank auf 4,1 %. Das hilft der Konjunktur, nährt aber die Sorge vor höheren Zinsen.
 
 ![Wochenbilanz der US-Indizes vom 2. bis 6. November 2026](/assets/magazin/marktuebersicht-2026-11-06-wochenbilanz.png)
 
@@ -34,7 +34,7 @@ Der Wochenstart verlief ruhig. Rechnerisch lag der S&P 500 am Dienstag mit rund 
 
 **Die Stimmung.** Schon in der Woche davor hatten Alphabet, Amazon und Intel enttäuscht, in dieser Woche folgten schwächere Ausblicke von Apple und Palantir sowie ein Umsatz von Shopify unter den Erwartungen. Eine Umfrage der Universität Michigan zeigt, dass Verbraucher die Sorge vor einer KI-Blase häufiger nennen. In Asien fiel der südkoreanische Kospi am Freitag um mehr als 6 %, der japanische Nikkei 225 rutschte laut CNBC in einen Bärenmarkt.
 
-**Die Zinsen.** Laut CME FedWatch sieht der Markt die Wahrscheinlichkeit einer Zinserhöhung am 9. Dezember bei über 65 %. Hohe Zinsen drücken Bewertungen von Wachstumsaktien, deren Gewinne weit in der Zukunft liegen. Nach dem starken Arbeitsmarktbericht stiegen die Renditen am Freitag.
+**Die Zinsen.** Laut CME FedWatch sieht der Markt die Wahrscheinlichkeit einer Zinserhöhung am 9. Dezember bei über 65 %. Hohe Zinsen drücken Bewertungen von Wachstumsaktien, deren Gewinne weit in der Zukunft liegen. Nach dem starken Arbeitsmarktbericht stiegen die Renditen am Freitag, die Rendite zehnjähriger US-Staatsanleihen lag zum Handelsschluss bei rund 4,86 %.
 
 **Die Bewertung.** Nach einem langen Anstieg war viel Gutes eingepreist. Dass Nvidia mit dem Verlust vom Donnerstag unter den Schlusskurs von Ende 2025 fiel, zeigt, wie dünn der Jahresgewinn vieler KI-Werte geworden war. Am Freitag kletterte die Aktie wieder darüber.
 
@@ -58,18 +58,19 @@ Der Dow Jones mit seinen Standardwerten verlor in der Woche nur 0,9 %, der Nasda
 
 Mehrere Unternehmen meldeten in diesen Tagen höhere Ausschüttungen. [**Simon Property Group**](../simon-property-group-q3-2026-dividende-erhoehung/) erhöht die Quartalsdividende auf 2,30 US-Dollar, [**Regency Centers**](../regency-centers-q3-2026-dividende-erhoehung/) um 6 % auf 0,80 US-Dollar. Beide sind Immobiliengesellschaften mit Einkaufszentren, also Werte, die auf Zinsänderungen empfindlich reagieren. [**Lam Research**](../lam-research-startet-25-mrd-usd-rueckkauf-und-dividende/) zahlt 0,33 US-Dollar je Aktie und stockt den Rückkauf auf. Der Pipelinekonzern [**Enbridge**](../enbridge-q3-2026-rekord-ebitda-prognose-bestaetigt/) hat die Dividende nach eigenen Angaben 31 Jahre in Folge angehoben. Versorger wie [**Con Edison**](../con-edison-q3-2026-zahlen/) und [**PPL**](../ppl-corporation-q3-2026-zahlen/) lieferten solide Quartalszahlen. Gerade Stromversorger stehen im Zentrum der Debatte: Der Strombedarf der Rechenzentren ist ihr Wachstumstreiber, zugleich wächst der politische Druck auf die Strompreise.
 
-Die wichtigste Zahl für Dividendenjäger ist die Rendite zehnjähriger US-Staatsanleihen, die am Donnerstag bei rund 4,84 % lag. Solange sichere Anleihen so viel abwerfen, müssen Dividendenaktien mit Wachstum oder Dividendensteigerung überzeugen. Wie Anleihen funktionieren und was die UBS dazu sagt, lesen Sie in unserem Beitrag zum Thema.
+Die wichtigste Zahl für Dividendenjäger ist die Rendite zehnjähriger US-Staatsanleihen, die am Freitag bei rund 4,86 % schloss (Donnerstag: 4,84 %). Solange sichere Anleihen so viel abwerfen, müssen Dividendenaktien mit Wachstum oder Dividendensteigerung überzeugen. Wie Anleihen funktionieren und was die UBS dazu sagt, lesen Sie in unserem Beitrag zum Thema.
 
 ## Die Woche im Überblick
 
-- **Dow Jones:** −0,9 %, Mittwochsschluss 53.356 Punkte, Donnerstag −1.833 Punkte
-- **S&P 500:** −2,7 %, schwächste Woche seit Juni
-- **Nasdaq Composite:** −3,4 %, am Donnerstag −5,5 %
-- **Russell 2000:** −2,1 %
+- **Dow Jones:** −0,9 %, Freitagsschluss 51.286 Punkte (Mittwoch 53.356, Donnerstag −1.833 Punkte)
+- **S&P 500:** −2,7 %, Freitagsschluss 7.376 Punkte, schwächste Woche seit Juni
+- **Nasdaq Composite:** −3,4 %, Freitagsschluss 24.579 Punkte, am Donnerstag −5,5 %
+- **Russell 2000:** −2,1 %, Freitagsschluss 2.754 Punkte
 - **Termine:** Dienstag, 10. November, US-Inflationszahlen für Oktober, Freitag, 13. November, Erzeugerpreise
 
 ## Quellen
 
+- Investrade, „Market Review: November 06, 2026“ (Schlussstände)
 - Alain Guillot, „Stock Market Recap, November 6, 2026“ (Indexdaten von AP und Investing.com)
 - CNBC über StockTitan, „The Stock Market Today Live, November 6, 2026“ (Chipwerte, Arbeitsmarkt, Zinserwartung, Zitat Jefferies)
 - Finimize, „UBS flags a post-midterms speed bump for data centers“, 4.11.2026

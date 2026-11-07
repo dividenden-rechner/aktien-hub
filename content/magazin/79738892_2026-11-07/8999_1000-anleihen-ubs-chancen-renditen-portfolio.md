@@ -52,7 +52,7 @@ Warum die UBS bei den längsten Laufzeiten vorsichtig ist: Zweifel an der Tragf�
 
 ## Was Dividendenanleger daraus mitnehmen
 
-Die Rendite zehnjähriger US-Staatsanleihen lag am 5. November bei rund 4,84 %. Zum Vergleich: [Unilever](../unilever-reiner-pflegekonzern-dividende-rueckkauf/) kommt bei einer Quartalsdividende von 0,4664 Euro auf gut 3 % Dividendenrendite, [CVS Health](../cvs-health-q3-2026-aufspaltung-prognose/) auf 3,3 %. Das zeigt den Unterschied: Der Anleihe-Coupon ist fest vereinbart, und der Staat oder das Unternehmen muss ihn zahlen. Die Dividende ist freiwillig und kann gekürzt werden, sie kann aber auch wachsen. CVS hat seine Dividende seit Januar 2024 nicht mehr erhöht, andere Firmen erhöhen jedes Jahr.
+Die Rendite zehnjähriger US-Staatsanleihen lag am 6. November bei rund 4,86 %. Zum Vergleich: [Unilever](../unilever-reiner-pflegekonzern-dividende-rueckkauf/) kommt bei einer Quartalsdividende von 0,4664 Euro auf gut 3 % Dividendenrendite, [CVS Health](../cvs-health-q3-2026-aufspaltung-prognose/) auf 3,3 %. Das zeigt den Unterschied: Der Anleihe-Coupon ist fest vereinbart, und der Staat oder das Unternehmen muss ihn zahlen. Die Dividende ist freiwillig und kann gekürzt werden, sie kann aber auch wachsen. CVS hat seine Dividende seit Januar 2024 nicht mehr erhöht, andere Firmen erhöhen jedes Jahr.
 
 Für die Praxis ergeben sich drei Fragen, die zu den Hinweisen der UBS passen:
 
