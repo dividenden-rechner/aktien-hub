@@ -16,10 +16,11 @@ Datei anklicken, dann Stift-Symbol: Zeile `draft: true` löschen und speichern, 
 | 29.10.2026 22:42 | Amazon steigert Umsatz im dritten Quartal auf 201,9 Milliarden Dollar | [79738970_2026-10-29/7757_2242-amazon-q3-2026-zahlen.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/79738970_2026-10-29/7757_2242-amazon-q3-2026-zahlen.md) |
 | 29.10.2026 10:12 | Shell erzielt im dritten Quartal 10,8 Milliarden Dollar Gewinn | [79738970_2026-10-29/8987_1012-shell-q3-2026-ergebnisse.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/79738970_2026-10-29/8987_1012-shell-q3-2026-ergebnisse.md) |
 
-### Online (308)
+### Online (309)
 
 | Datum | Titel | Datei |
 |---|---|---|
+| 07.11.2026 01:24 | Fox Corporation schließt Roku-Übernahme ab und plant Synergien von 400 Mio. US-Dollar | [79738892_2026-11-07/9875_0124-fox-corporation-schliesst-roku-uebernahme-ab.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/79738892_2026-11-07/9875_0124-fox-corporation-schliesst-roku-uebernahme-ab.md) |
 | 06.11.2026 20:51 | U.S. Bancorp steigert Nettogewinn im dritten Quartal auf 2,1 Milliarden US-Dollar | [79738893_2026-11-06/7948_2051-u-s-bancorp-q3-2026-ergebnis.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/79738893_2026-11-06/7948_2051-u-s-bancorp-q3-2026-ergebnis.md) |
 | 06.11.2026 20:51 | GSK gibt provisorische Dividendentermine für das Jahr 2027 bekannt | [79738893_2026-11-06/7948_2051-gsk-provisorische-dividendentermine-2027.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/79738893_2026-11-06/7948_2051-gsk-provisorische-dividendentermine-2027.md) |
 | 06.11.2026 20:51 | Franklin Resources: Nettogewinn steigt im vierten Quartal auf 380,1 Millionen US-Dollar | [79738893_2026-11-06/7948_2051-franklin-resources-q4-geschaeftsjahr-2026.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/79738893_2026-11-06/7948_2051-franklin-resources-q4-geschaeftsjahr-2026.md) |
