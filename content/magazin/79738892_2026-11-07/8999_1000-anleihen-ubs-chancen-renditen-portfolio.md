@@ -11,6 +11,8 @@ image_alt: "Foto zu Anleihen: Made with Lens: Leica APO Macro Elmarit-R 2.8 100m
 image_credit: "Foto: Markus Spiske from Forchheim, Bavaria Upper Franconia / Wikimedia Commons, CC BY 2.0"
 image_source: https://commons.wikimedia.org/wiki/File:EURO_Cash_Money_Banknote_(49643807026).jpg
 image_artist_url: 
+logo_symbol: UBS
+logo_domain: ubs.com
 ---
 !!! kurz "Kurz gesagt"
     **UBS-Einstufung Fixed Income:** „Attraktiv“

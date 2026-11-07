@@ -10,11 +10,11 @@ quelle_name: "Pressemitteilung CRISPR Therapeutics (SEC-Meldung)"
 logo_name: "CRISPR Therapeutics"
 logo_symbol: CRSP
 logo_domain: crisprtx.com
-image: assets/magazin/crispr-therapeutics-q3-2026-casgevy-verlust-foto.jpg
-image_alt: "Foto zu CRISPR Therapeutics: CRISPR-Cas9 is a customizable tool that lets scientists cut and insert small pieces of DNA at precise areas along a DNA strand. The tool is composed of two basic parts: the Cas9 protein, which acts li"
-image_credit: "Foto: National Human Genome Research Institute from Bethesda, MD, / Wikimedia Commons, CC BY 2.0"
-image_source: https://commons.wikimedia.org/wiki/File:CRISPR-Cas9_Editing_of_the_Genome_(26453307604).jpg
-image_artist_url: 
+image: https://images.unsplash.com/photo-1579154204601-01588f351e67?ixid=M3wxMTE3OTgzfDB8MXxzZWFyY2h8Mnx8Z2VuZXRpY3MlMjBsYWJvcmF0b3J5fGVufDF8MHx8fDE3OTQwNDMxMjl8MA&ixlib=rb-4.1.0&w=1600&h=900&fit=crop&crop=entropy&q=80&fm=jpg
+image_alt: "Foto zu CRISPR Therapeutics: DNA Genotyping and Sequencing. A technician works among a fleet of desktop genomic sequencing machines at the Cancer Genomics Research Laboratory, part of the National Cancer Institute's Division of C"
+image_credit: "Foto: National Cancer Institute auf Unsplash"
+image_source: https://unsplash.com/photos/woman-standing-in-front-of-the-digital-machine-oCLuFi9GYNA?utm_source=dividenden-rechner&utm_medium=referral
+image_artist_url: https://unsplash.com/@nci?utm_source=dividenden-rechner&utm_medium=referral
 logo_file: assets/logos/crsp.png
 ---
 <!-- PRÜFEN: Alle Zahlen stammen aus der CRISPR-Pressemitteilung vom 2. November 2026 (SEC-Fassung). Der Mittelabfluss von rund 285 Mio. US-Dollar in neun Monaten ist eine eigene Rechnung: Kasse 2,28 Mrd. minus 1,98 Mrd. zum Jahresende ergibt +0,30 Mrd., abzüglich 0,585 Mrd. Erlös aus der Wandelanleihe. Kursreaktion nicht geprüft. CRISPR zahlt keine Dividende. -->
