@@ -1,0 +1,30 @@
+name: Foto holen (einmalig)
+on:
+  workflow_dispatch:
+    inputs:
+      suche: {description: "Suchbegriffe Commons (leer = Datei holen)", required: false}
+      datei: {description: "Dateiname (File:...) zum Holen", required: false}
+      slug: {description: "Artikel-Kennung fuer den Dateinamen", required: false}
+permissions:
+  contents: write
+jobs:
+  holen:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: {python-version: "3.12"}
+      - run: pip install pillow
+      - name: Suchen oder holen
+        env:
+          SUCHE: ${{ inputs.suche }}
+          DATEI: ${{ inputs.datei }}
+          SLUG: ${{ inputs.slug }}
+        run: |
+          if [ -n "$DATEI" ]; then python3 tools/foto_holen.py --datei "$DATEI" --slug "$SLUG"; else python3 tools/foto_holen.py --suche "$SUCHE"; fi
+      - name: Committen
+        run: |
+          git config user.name "asset-bot"; git config user.email "actions@users.noreply.github.com"
+          git add -A assets/magazin
+          if git diff --cached --quiet; then echo "Keine Aenderung"; exit 0; fi
+          git commit -m "Foto geholt"; git pull --rebase -q; git push
