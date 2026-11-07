@@ -63,6 +63,26 @@ def main():
         old = json.load(c.open(posixpath.join(base, MANIFEST) if base else MANIFEST))
     except Exception:
         old = {}
+    if base:
+        # Frueher lag die Seite im Hauptverzeichnis: diese (von uns hochgeladenen) Dateien entfernen
+        try:
+            alt = json.load(c.open(MANIFEST))
+        except Exception:
+            alt = {}
+        if alt and not a.trocken:
+            print(f"Raeume {len(alt)} alte Dateien im Hauptverzeichnis auf")
+            dirs = set()
+            for k in alt:
+                try: c.remove(k)
+                except IOError: pass
+                d = posixpath.dirname(k)
+                while d:
+                    dirs.add(d); d = posixpath.dirname(d)
+            for d in sorted(dirs, key=lambda x: -x.count("/")):
+                try: c.rmdir(d)
+                except IOError: pass
+            try: c.remove(MANIFEST)
+            except IOError: pass
     todo = [k for k, s in sums.items() if old.get(k) != s]
     gone = [k for k in old if k not in sums]
     print(f"Hochladen: {len(todo)}, loeschen: {len(gone)}, unveraendert: {len(sums) - len(todo)}")

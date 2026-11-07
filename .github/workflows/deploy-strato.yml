@@ -47,4 +47,5 @@ jobs:
           STRATO_SFTP_HOST: ${{ secrets.STRATO_SFTP_HOST }}
           STRATO_SFTP_USER: ${{ secrets.STRATO_SFTP_USER }}
           STRATO_SFTP_PASS: ${{ secrets.STRATO_SFTP_PASS }}
+          STRATO_SFTP_DIR: seite
         run: python3 tools/deploy_strato.py _site
