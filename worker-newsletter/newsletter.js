@@ -101,6 +101,6 @@ export default {
     });
     if (r.ok) return antwort(req, 200, { ok: true });
     const t = await r.text();
-    return antwort(req, 502, { fehler: "Anmeldung gerade nicht moeglich. Bitte spaeter erneut versuchen. [Brevo " + r.status + ": " + t.slice(0, 200) + "]" }); // TEMPORAER: Fehlerdetail zur Diagnose
+    return antwort(req, 502, { fehler: "Anmeldung gerade nicht moeglich. Bitte spaeter erneut versuchen. " }); console.log("Brevo", r.status, t.slice(0, 200));
   },
 };
