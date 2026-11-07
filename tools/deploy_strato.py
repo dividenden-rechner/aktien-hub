@@ -45,6 +45,26 @@ def mkdirs(c, d, made):
     made.add(d)
 
 
+def htaccess_text():
+    """Zwischenspeicher-Regeln plus 301-Weiterleitungen der alten Google-Sites-Adressen (aus tools/umzug/redirects-entwurf.csv)."""
+    import csv, re
+    teile = []
+    ht = os.path.join(ROOT, "docs", "STRATO-htaccess-cache.txt")
+    if os.path.exists(ht):
+        teile.append(open(ht, encoding="utf-8").read().rstrip())
+    csvp = os.path.join(ROOT, "tools", "umzug", "redirects-entwurf.csv")
+    zeilen = ["# Weiterleitungen alter Adressen (Google Sites) auf die neue Seite", "RewriteEngine On"]
+    if os.path.exists(csvp):
+        for r in csv.DictReader(open(csvp, encoding="utf-8")):
+            alt, neu, st = r["alter_pfad"].strip(), r["neuer_pfad"].strip(), (r.get("status") or "").strip().lower()
+            if not st.startswith("301") or alt in ("", "/") or alt.rstrip("/") == neu.rstrip("/"):
+                continue
+            neu = neu.replace("/magazin/", "/news/", 1) if neu.startswith("/magazin/") else neu
+            zeilen.append(f"RewriteRule ^{re.escape(alt.strip('/'))}/?$ {neu} [R=301,L,NE]")
+    teile.append("\n".join(zeilen))
+    return "\n\n".join(teile) + "\n"
+
+
 def main():
     ap = argparse.ArgumentParser(); ap.add_argument("src"); ap.add_argument("--trocken", action="store_true"); a = ap.parse_args()
     base = os.environ.get("STRATO_SFTP_DIR", "").rstrip("/")
@@ -53,9 +73,9 @@ def main():
         dn[:] = [d for d in dn if not (dp == a.src and d in SKIP_DIRS)]
         for f in fn:
             p = os.path.join(dp, f); files[os.path.relpath(p, a.src).replace(os.sep, "/")] = p
-    ht = os.path.join(ROOT, "docs", "STRATO-htaccess-cache.txt")
-    if os.path.exists(ht) and ".htaccess" not in files:
-        files[".htaccess"] = ht
+    hp = os.path.join(ROOT, "_htaccess.tmp")
+    open(hp, "w", encoding="utf-8").write(htaccess_text())
+    files[".htaccess"] = hp
     print(f"{len(files)} Dateien lokal")
     sums = {k: sha(p) for k, p in files.items()}
     c = connect()
