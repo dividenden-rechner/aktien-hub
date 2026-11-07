@@ -1451,6 +1451,16 @@
    "quelle": "https://www.sec.gov/Archives/edgar/data/1091667/000109166726000072/chtrex991earningsrelease93.htm"
   },
   {
+   "sym": "ENB",
+   "name": "Enbridge",
+   "datum": "2026-11-06",
+   "eps": 0.49,
+   "eps_basis": "bereinigt",
+   "revenue": 4434000000.0,
+   "waehrung": "CAD",
+   "quelle": "https://www.sec.gov/Archives/edgar/data/895728/000119312526450711/enb-ex99_1.htm"
+  },
+  {
    "sym": "HUM",
    "name": "Humana",
    "datum": "2026-11-06",
