@@ -643,7 +643,7 @@ def build_post(p, posts):
     o += glossar.box(hits, pre)
     bio = p.get("author_bio") or 'Die Redaktion von Dividenden-Rechner.de schreibt über Dividendenaktien, Kennzahlen und Steuerthemen für Privatanleger. Die Rechner und Auswertungen auf der Seite entstehen im eigenen Haus.'
     aimg = f'<img class="authorimg" src="{pre}{p["author_img"]}" alt="{esc(author)}" width="64" height="64" loading="lazy">' if p.get("author_img") else ""
-    o += f'<aside class="authorbox{" hasimg" if aimg else ""}">{aimg}<div><strong>{esc(author)}</strong><p>{esc(bio)}</p><p>{KURZ_HINWEIS if kurz else "Artikel können mit Unterstützung von KI entstehen. Jeder Beitrag wird manuell geprüft und geht erst danach online."} <a href="{pre}ueber-uns/">Mehr über uns</a></p></div></aside>\n'
+    o += f'<aside class="authorbox{" hasimg" if aimg else ""}">{aimg}<div><strong>{esc(author)}</strong><p>{esc(bio)}</p><p>{KURZ_HINWEIS if kurz else "Bei Grafiken, Tabellen und Textentwürfen kommen KI-Werkzeuge zum Einsatz. Jeder Beitrag wird redaktionell geprüft und geht erst danach online."} <a href="{pre}ueber-uns/">Mehr über uns</a></p></div></aside>\n'
     others = [x for x in posts if x["slug"] != slug and x.get("typ") != "kurz"][:3]
     if others:
         o += '<aside class="related"><h2>Weitere Artikel</h2><ul>\n' + "\n".join(f'<li><a href="{pre}news/{x["slug"]}/">{esc(x["title"])}</a></li>' for x in others) + "\n</ul></aside>\n"
