@@ -12,11 +12,11 @@ story_quote_by: "Kenta Kon | CEO Toyota"
 logo_name: "Toyota"
 logo_symbol: 7203.T
 logo_domain: global.toyota
-image: https://images.unsplash.com/photo-1740982880890-a4768e05a875?ixid=M3wxMTE3OTgzfDB8MXxzZWFyY2h8NHx8VG95b3RhJTIwUHJpdXMlMjBoeWJyaWR8ZW58MXwwfHx8MTc5Mzg3NDk5OXww&ixlib=rb-4.1.0&w=1600&h=900&fit=crop&crop=entropy&q=80&fm=jpg
-image_alt: "Foto zu Toyota: Rear three-quarter view of the all-new 5th generation Toyota Prius parked at Yumemi-ga-oka Observation Deck in Kyoto, its sharp aerodynamic tail lights and sculpted bodywork set against a misty mounta"
-image_credit: "Foto: Zion C auf Unsplash"
-image_source: https://unsplash.com/photos/a-white-car-parked-on-the-side-of-the-road-5x_X3xShrzM?utm_source=dividenden-rechner&utm_medium=referral
-image_artist_url: https://unsplash.com/@jcs_chen?utm_source=dividenden-rechner&utm_medium=referral
+image: assets/magazin/toyota-q2-geschaeftsjahr-2027-hybride-prognose-foto.jpg
+image_alt: "Foto zu Toyota: Toyota RAV4 Hybrid in Aardenburg"
+image_credit: "Foto: Charles01 / Wikimedia Commons, CC BY-SA 4.0"
+image_source: https://commons.wikimedia.org/wiki/File:Toyota_RAV4_Hybrid_in_Aardenburg.jpg
+image_artist_url: 
 logo_file: assets/logos/7203-t.png
 ---
 <!-- PRÜFEN: Die Q2-Präsentation und der Financial Summary standen beim Schreiben (05.11., 11 Uhr) noch nicht auf global.toyota. Zahlen stammen aus den Agenturberichten (Reuters, AP, Japan Times) und dem Bericht zur Telefonkonferenz (BigGo). Folienausschnitt bewusst weggelassen. -->

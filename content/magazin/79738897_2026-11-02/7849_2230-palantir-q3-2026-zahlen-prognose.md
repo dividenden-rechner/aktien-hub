@@ -11,7 +11,7 @@ logo_name: "Palantir Technologies"
 story_image: assets/magazin/palantir-q3-2026-zahlen-prognose-folie.png
 logo_symbol: PLTR
 logo_domain: palantir.com
-image: https://images.unsplash.com/photo-1580795478949-1b81005b91ba?ixid=M3wxMTE3OTgzfDB8MXxzZWFyY2h8Mnx8b3BlcmF0aW9ucyUyMGNlbnRlciUyMG1vbml0b3JzfGVufDF8MHx8fDE3OTM4NzYzMDV8MA&ixlib=rb-4.1.0&w=1600&h=900&fit=crop&crop=entropy&q=80&fm=jpg
+image: https://images.unsplash.com/photo-1580795478949-1b81005b91ba?ixid=M3wxMTE3OTgzfDB8MXxzZWFyY2h8Mnx8b3BlcmF0aW9ucyUyMGNlbnRlciUyMG1vbml0b3JzfGVufDF8MHx8fDE3OTQwNDE0NjJ8MA&ixlib=rb-4.1.0&w=1600&h=900&fit=crop&crop=entropy&q=80&fm=jpg
 image_alt: "Foto zu Palantir Technologies: The Centers for Disease Control and Prevention (CDC) Emergency Operations Center (EOC) is where highly trained experts monitor information, prepare for public health events, and gather in the event of"
 image_credit: "Foto: CDC auf Unsplash"
 image_source: https://unsplash.com/photos/woman-in-black-polo-shirt-using-black-laptop-computer-S8cFStFmRsg?utm_source=dividenden-rechner&utm_medium=referral

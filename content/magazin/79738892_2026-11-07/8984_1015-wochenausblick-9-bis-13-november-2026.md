@@ -6,6 +6,11 @@ author: "Redaktions-Team Dividenden-Rechner.de"
 author_bio: "Das Redaktions-Team von Dividenden-Rechner.de schreibt über Dividendenaktien, Kennzahlen und Steuerthemen für Privatanleger. Die Rechner und Auswertungen auf der Seite entstehen im eigenen Haus."
 category: Analyse
 kein_logo: ja
+image: assets/magazin/wochenausblick-9-bis-13-november-2026-foto.jpg
+image_alt: "Foto zu Wochenausblick:: Evan Kirby 2016-02-15"
+image_credit: "Foto: Evan Kirby evankirby2 / Wikimedia Commons, CC0"
+image_source: https://commons.wikimedia.org/wiki/File:Desert_Explorer_(Unsplash).jpg
+image_artist_url: 
 ---
 !!! kurz "Kurz gesagt"
     **Zinserhöhung im Dezember (CME FedWatch):** 77 % (Donnerstag: 67 %)
