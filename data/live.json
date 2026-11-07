@@ -12,5 +12,7 @@
   "domain_alt": "https://dividenden-rechner.github.io/aktien-hub/",
   "domain_neu": "",
   "fmp_aus": true,
-  "fmp_hinweis": "true: Skripte mit Kursen und Earnings-Ergebnissen aus dem FMP-Zwischenserver (kurse.js, fkearn.js) werden auf der oeffentlichen Seite entfernt, bis die Display-Lizenz da ist."
+  "fmp_hinweis": "true: Skripte mit Kursen und Earnings-Ergebnissen aus dem FMP-Zwischenserver (kurse.js, fkearn.js) werden auf der oeffentlichen Seite entfernt, bis die Display-Lizenz da ist.",
+  "strato": true,
+  "strato_hinweis": "true: Seite wird per SFTP auf den Strato-Webspace geladen (Workflow deploy-strato.yml). Die Domain zeigt erst nach Umstellung der DNS-Eintraege dorthin."
 }

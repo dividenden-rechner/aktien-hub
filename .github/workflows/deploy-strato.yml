@@ -1,0 +1,50 @@
+name: Seite auf Strato veroeffentlichen
+# Baut die oeffentliche Seite (wie live.yml, ohne gesperrte Bereiche) und laedt geaenderte Dateien per SFTP auf den Strato-Webspace.
+# Laeuft nur, wenn in data/live.json "strato": true steht. Secrets: STRATO_SFTP_HOST, STRATO_SFTP_USER, STRATO_SFTP_PASS.
+on:
+  push:
+    branches: [main]
+  workflow_run:
+    workflows:
+      - "Magazin bauen"
+      - "Kurzmeldungen (Pressemitteilungen zu News)"
+      - "News aktualisieren"
+      - "IR-Agent (Bericht zu Entwurf)"
+      - "Foto und Logo erneuern"
+      - "Ueberschriften auffrischen"
+      - "Startseiten-Kacheln"
+      - "Altersvorsorgedepot-Anbieter prüfen"
+      - "IR-Termine (Earnings-Termine und Ergebnisse)"
+      - "Wochenvorschau"
+      - "Asien-Morgenbriefing"
+    types: [completed]
+  schedule:
+    - cron: "23 * * * *"
+  workflow_dispatch:
+permissions:
+  contents: read
+concurrency:
+  group: strato-deploy
+  cancel-in-progress: false
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    timeout-minutes: 90
+    steps:
+      - uses: actions/checkout@v4
+      - id: cfg
+        run: echo "an=$(python3 -c "import json;print(str(json.load(open('data/live.json')).get('strato', False)).lower())")" >> "$GITHUB_OUTPUT"
+      - if: steps.cfg.outputs.an == 'true'
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - if: steps.cfg.outputs.an == 'true'
+        run: pip install paramiko
+      - if: steps.cfg.outputs.an == 'true'
+        run: python3 tools/live_filter.py _site
+      - if: steps.cfg.outputs.an == 'true'
+        env:
+          STRATO_SFTP_HOST: ${{ secrets.STRATO_SFTP_HOST }}
+          STRATO_SFTP_USER: ${{ secrets.STRATO_SFTP_USER }}
+          STRATO_SFTP_PASS: ${{ secrets.STRATO_SFTP_PASS }}
+        run: python3 tools/deploy_strato.py _site
