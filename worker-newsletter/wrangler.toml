@@ -6,5 +6,5 @@ workers_dev = true
 # Keine Geheimnisse, nur Einstellungen. Hier die Zahlen aus Brevo eintragen:
 [vars]
 BREVO_LIST_ID = "3"            # Brevo: Kontakte > Listen > ID der Newsletter-Liste
-ABSENDER_MAIL = "dividenden.rechner@gmail.com"   # muss in Brevo als Absender verifiziert sein
+ABSENDER_MAIL = "newsletter@dividenden-rechner.de"   # in Brevo als Absender verifiziert, Domain per DKIM/DMARC abgesichert
 BREVO_REDIRECT_URL = "https://www.dividenden-rechner.de/newsletter-bestaetigt/"
