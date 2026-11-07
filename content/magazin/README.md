@@ -16,10 +16,11 @@ Datei anklicken, dann Stift-Symbol: Zeile `draft: true` löschen und speichern, 
 | 29.10.2026 22:42 | Amazon steigert Umsatz im dritten Quartal auf 201,9 Milliarden Dollar | [79738970_2026-10-29/7757_2242-amazon-q3-2026-zahlen.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/79738970_2026-10-29/7757_2242-amazon-q3-2026-zahlen.md) |
 | 29.10.2026 10:12 | Shell erzielt im dritten Quartal 10,8 Milliarden Dollar Gewinn | [79738970_2026-10-29/8987_1012-shell-q3-2026-ergebnisse.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/79738970_2026-10-29/8987_1012-shell-q3-2026-ergebnisse.md) |
 
-### Online (312)
+### Online (313)
 
 | Datum | Titel | Datei |
 |---|---|---|
+| 07.11.2026 10:15 | Wochenausblick: 77 % Wahrscheinlichkeit für eine Zinserhöhung im Dezember, Inflationszahlen am Dienstag, Siemens, Allianz und Cisco liefern | [79738892_2026-11-07/8984_1015-wochenausblick-9-bis-13-november-2026.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/79738892_2026-11-07/8984_1015-wochenausblick-9-bis-13-november-2026.md) |
 | 07.11.2026 10:00 | Anleihen 2026: Warum die UBS Qualitätsanleihen trotz Zinsschwankungen für attraktiv hält | [79738892_2026-11-07/8999_1000-anleihen-ubs-chancen-renditen-portfolio.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/79738892_2026-11-07/8999_1000-anleihen-ubs-chancen-renditen-portfolio.md) |
 | 07.11.2026 09:54 | Unilever wird reiner Pflegekonzern: 1,87 Euro Dividende, 6 Mrd. Euro Rückkauf und ein Umbau mit offenen Fragen | [79738892_2026-11-07/9045_0954-unilever-reiner-pflegekonzern-dividende-rueckkauf.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/79738892_2026-11-07/9045_0954-unilever-reiner-pflegekonzern-dividende-rueckkauf.md) |
 | 07.11.2026 09:37 | Wochenbilanz: Nasdaq verliert 3,4 %, Dow nur 0,9 %: Warum der KI-Trade wackelt und warum nicht | [79738892_2026-11-07/9062_0937-marktuebersicht-ki-trade-woche-2-bis-6-november-2026.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/79738892_2026-11-07/9062_0937-marktuebersicht-ki-trade-woche-2-bis-6-november-2026.md) |

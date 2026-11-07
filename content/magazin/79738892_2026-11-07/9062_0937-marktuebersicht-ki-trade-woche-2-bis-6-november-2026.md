@@ -34,7 +34,7 @@ Der Wochenstart verlief ruhig. Rechnerisch lag der S&P 500 am Dienstag mit rund 
 
 **Die Stimmung.** Schon in der Woche davor hatten Alphabet, Amazon und Intel enttäuscht, in dieser Woche folgten schwächere Ausblicke von Apple und Palantir sowie ein Umsatz von Shopify unter den Erwartungen. Eine Umfrage der Universität Michigan zeigt, dass Verbraucher die Sorge vor einer KI-Blase häufiger nennen. In Asien fiel der südkoreanische Kospi am Freitag um mehr als 6 %, der japanische Nikkei 225 rutschte laut CNBC in einen Bärenmarkt.
 
-**Die Zinsen.** Laut CME FedWatch sieht der Markt die Wahrscheinlichkeit einer Zinserhöhung am 9. Dezember bei über 65 %. Hohe Zinsen drücken Bewertungen von Wachstumsaktien, deren Gewinne weit in der Zukunft liegen. Nach dem starken Arbeitsmarktbericht stiegen die Renditen am Freitag, die Rendite zehnjähriger US-Staatsanleihen lag zum Handelsschluss bei rund 4,86 %.
+**Die Zinsen.** Laut CME FedWatch sieht der Markt die Wahrscheinlichkeit einer Zinserhöhung am 9. Dezember am Donnerstag bei 67 % und nach dem Arbeitsmarktbericht am Freitag bei 77 %. Hohe Zinsen drücken Bewertungen von Wachstumsaktien, deren Gewinne weit in der Zukunft liegen. Nach dem starken Arbeitsmarktbericht stiegen die Renditen am Freitag, die Rendite zehnjähriger US-Staatsanleihen lag zum Handelsschluss bei rund 4,86 %.
 
 **Die Bewertung.** Nach einem langen Anstieg war viel Gutes eingepreist. Dass Nvidia mit dem Verlust vom Donnerstag unter den Schlusskurs von Ende 2025 fiel, zeigt, wie dünn der Jahresgewinn vieler KI-Werte geworden war. Am Freitag kletterte die Aktie wieder darüber.
 
