@@ -18,7 +18,6 @@ image_source: https://commons.wikimedia.org/wiki/File:CVS_Pharmacy_-_Storefront_
 image_artist_url: 
 logo_file: assets/logos/cvs.png
 ---
-
 !!! kurz "Kurz gesagt"
     **Gewinn je Aktie (bereinigt):** 2,09 USD (+31 %)
     **Aktienkurs nach der Meldung:** 79,96 USD (−12,5 %)

@@ -13,9 +13,9 @@ logo_name: "Kimberly-Clark"
 logo_symbol: KMB
 logo_domain: kimberly-clark.com
 image: assets/magazin/kimberly-clark-q3-2026-zahlen-kenvue-china-foto.jpg
-image_alt: "Foto zu Kimberly-Clark: - Modern toilet paper on shelves at a Gdansk, Poland, store."
-image_credit: "Foto: Wikited at English Wikipedia / Wikimedia Commons, Public domain"
-image_source: https://commons.wikimedia.org/wiki/File:Toilet_paper_Poland.jpg
+image_alt: "Foto zu Kimberly-Clark: The Kimberly-Clark Corporation world headquarters at 351 Phelps Drive in Irving, Texas."
+image_credit: "Foto: Tony Webster / Wikimedia Commons, CC BY-SA 2.0"
+image_source: https://commons.wikimedia.org/wiki/File:Kimberly-Clark_Corporation_Headquarters_-_Irving_-_Texas.jpg
 image_artist_url: 
 logo_file: assets/logos/kmb.png
 ---
