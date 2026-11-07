@@ -60,7 +60,7 @@ Für die Praxis ergeben sich drei Fragen, die zu den Hinweisen der UBS passen:
 - **Wie lange kann ich Kursschwankungen aushalten?** Die Modellrechnung zeigt, dass lange Laufzeiten kräftig schwanken. Wer bis zur Fälligkeit hält, bekommt den Nennwert zurück, sofern der Schuldner zahlt.
 - **In welcher Währung rechne ich?** Die 4,86 % gelten für US-Staatsanleihen in US-Dollar. Wer in Euro denkt, trägt ein Währungsrisiko.
 
-Die Studie bleibt allgemein und nennt keine einzelnen Anleihen. Wie hoch die Zinsen im Dezember sind, entscheidet auch die US-Notenbank. Der Markt rechnet laut CME FedWatch mit über 65 % Wahrscheinlichkeit mit einer Erhöhung am 9. Dezember, wie in unserer [Wochenbilanz](../marktuebersicht-ki-trade-woche-2-bis-6-november-2026/) beschrieben.
+Die Studie bleibt allgemein und nennt keine einzelnen Anleihen. Wie hoch die Zinsen im Dezember sind, entscheidet auch die US-Notenbank. Der Markt rechnet laut CME FedWatch mit 77 % Wahrscheinlichkeit mit einer Erhöhung am 9. Dezember, wie in unserer [Wochenbilanz](../marktuebersicht-ki-trade-woche-2-bis-6-november-2026/) beschrieben.
 
 ## Was dagegen spricht
 
