@@ -23,7 +23,7 @@ Wo möglich nennen wir die Quelle direkt im Artikel.
 ## Wie Artikel entstehen
 
 1. **Auswahl:** Berichte und Ereignisse mit Bezug zu Dividenden oder bekannten Werten.
-2. **Entwurf:** Texte entstehen mit Unterstützung von KI-Werkzeugen aus den Quellen.
+2. **Entwurf:** Grafiken, Tabellen und Textentwürfe entstehen mit Unterstützung von KI-Werkzeugen aus den Quellen.
 3. **Prüfung:** Zahlen werden gegen die Quelle abgeglichen, Aussagen auf Plausibilität geprüft.
 4. **Veröffentlichung:** Jeder Artikel nennt Datum und, wo sinnvoll, die Quellen.
 
