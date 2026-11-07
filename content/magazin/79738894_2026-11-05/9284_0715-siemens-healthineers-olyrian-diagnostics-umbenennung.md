@@ -8,7 +8,7 @@ category: Unternehmensmeldungen
 logo_name: "Siemens Healthineers"
 logo_symbol: SHL.DE
 logo_domain: siemens-healthineers.com
-image: https://images.unsplash.com/photo-1599727277757-3f54e54ea618?ixid=M3wxMTE3OTgzfDB8MXxzZWFyY2h8N3x8ZGlhZ25vc3RpYyUyMGxhYm9yYXRvcnklMjBhdXRvbWF0aW9ufGVufDF8MHx8fDE3OTM4NzQ5OTR8MA&ixlib=rb-4.1.0&w=1600&h=900&fit=crop&crop=entropy&q=80&fm=jpg
+image: https://images.unsplash.com/photo-1599727277757-3f54e54ea618?ixid=M3wxMTE3OTgzfDB8MXxzZWFyY2h8Nnx8ZGlhZ25vc3RpYyUyMGxhYm9yYXRvcnklMjBhdXRvbWF0aW9ufGVufDF8MHx8fDE3OTM5MTAxMTd8MA&ixlib=rb-4.1.0&w=1600&h=900&fit=crop&crop=entropy&q=80&fm=jpg
 image_alt: "Foto zu Siemens Healthineers: Laboratory. Automated lab process. Analysis of blood samples in large Dutch lab."
 image_credit: "Foto: Testalize.me auf Unsplash"
 image_source: https://unsplash.com/photos/white-and-black-plastic-bottle-lot-ZdToNCVLpOg?utm_source=dividenden-rechner&utm_medium=referral

@@ -11,11 +11,11 @@ logo_name: "Fresenius SE & Co. KGaA"
 story_text: "Fresenius wächst organisch um 5 %, der Umsatz steigt auf 5,8 Mrd. Euro. Das Kern-Ergebnis legt um 15 % auf 403 Mio. Euro zu, und der Konzern hebt sein Ziel für das Ergebnis je Aktie an. Treiber ist Helios: Das EBIT der Kliniksparte steigt um 21 %, in Deutschland hilft ein Zuschlag auf Rechnungen gesetzlich Versicherter, der Ende Oktober ausgelaufen ist. Bei Kabi wachsen Biopharma (+29 %) und MedTech, das klassische Pharmageschäft bremst: Das EBIT dort sinkt währungsbereinigt um 10 %. Der operative Cashflow fällt um 17 %, der freie Cashflow steigt dagegen deutlich. Konzernchef Michael Sen spricht von einem starken Quartal."
 logo_symbol: FRE.DE
 logo_domain: fresenius.com
-image: assets/magazin/fresenius-q3-2026-quartalszahlen-foto.jpg
-image_alt: "Foto zu Fresenius SE & Co. KGaA: A patient is lying in a hospital bed in an intensive care unit of a hospital in Germany 2015. Above the man is a monitor for heart rate and other parameters, to the right are apparatuses ( infusion pu"
-image_credit: "Foto: Pittigrilli / Wikimedia Commons, CC BY-SA 4.0"
-image_source: https://commons.wikimedia.org/wiki/File:Patient_lying_in_bed_in_intensive_care_unit_of_hospital_with_apparatuses_and_hemodialysis_machine.jpg
-image_artist_url: 
+image: https://images.unsplash.com/photo-1549560826-4b7bfe23f37b?ixid=M3wxMTE3OTgzfDB8MXxzZWFyY2h8NHx8aW50ZW5zaXZlJTIwY2FyZSUyMHVuaXR8ZW58MXwwfHx8MTc5MzkxMDA5MXww&ixlib=rb-4.1.0&w=1600&h=900&fit=crop&crop=entropy&q=80&fm=jpg
+image_alt: "Foto zu Fresenius SE & Co. KGaA: group of people doing a surgery on a person inside the operating room"
+image_credit: "Foto: Richard Catabay auf Unsplash"
+image_source: https://unsplash.com/photos/group-of-people-doing-a-surgery-on-a-person-inside-the-operating-room-05kHY7AYCp8?utm_source=dividenden-rechner&utm_medium=referral
+image_artist_url: https://unsplash.com/@illest_shinobi?utm_source=dividenden-rechner&utm_medium=referral
 logo_file: assets/logos/fre-de.png
 ---
 <!-- PRÜFEN: Es liegt keine Präsentation und kein Foto vor. Zahlen stammen aus dem Wortlaut der EQS-Pressemitteilung vom 04.11.2026, 06:45 Uhr (zwei Nachdruck-Quellen abgeglichen). Folien und CEO-Foto (Michael Sen) bitte nachreichen, dann kommen Folienausschnitt, Kursbild und Freisteller in die Story. -->
