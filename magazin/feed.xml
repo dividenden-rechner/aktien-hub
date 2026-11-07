@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:dc="http://purl.org/dc/elements/1.1/">
-<channel><title>Dividenden-Rechner Aktien-Hub: News</title><link>https://dividenden-rechner.github.io/aktien-hub/news/</link><description>Dividenden, Kennzahlen und Steuern erklärt</description><language>de-DE</language><lastBuildDate>Sat, 07 Nov 2026 21:54:48 +0000</lastBuildDate><atom:link href="https://dividenden-rechner.github.io/aktien-hub/news/feed.xml" rel="self" type="application/rss+xml"/>
+<channel><title>Dividenden-Rechner Aktien-Hub: News</title><link>https://dividenden-rechner.github.io/aktien-hub/news/</link><description>Dividenden, Kennzahlen und Steuern erklärt</description><language>de-DE</language><lastBuildDate>Sat, 07 Nov 2026 22:00:33 +0000</lastBuildDate><atom:link href="https://dividenden-rechner.github.io/aktien-hub/news/feed.xml" rel="self" type="application/rss+xml"/>
 <item><title>Wochenausblick: Die Zinserhöhung rückt näher, dazu Inflationszahlen und Zahlen von Siemens, Allianz und Cisco</title><link>https://dividenden-rechner.github.io/aktien-hub/news/wochenausblick-9-bis-13-november-2026/</link><guid isPermaLink="true">https://dividenden-rechner.github.io/aktien-hub/news/wochenausblick-9-bis-13-november-2026/</guid><pubDate>Sat, 07 Nov 2026 10:15:00 +0100</pubDate><category>Analyse</category><dc:creator>Kilian Treß</dc:creator><description>Was in der Woche vom 9. bis 13. November zählt: die US-Inflation am Dienstag, viele Notenbanker, Anleiheauktionen und Quartalszahlen von Siemens, Allianz, Munich Re, RWE, Cisco und Applied Materials.</description><enclosure url="https://dividenden-rechner.github.io/aktien-hub/assets/magazin/wochenausblick-9-bis-13-november-2026-foto.jpg" type="image/jpeg" length="0"/><content:encoded><![CDATA[<div class="admonition kurz">
 <p class="admonition-title">Kurz gesagt</p>
-<p><strong>Zinserhöhung im Dezember:</strong> wahrscheinlicher geworden (77 %, am Donnerstag noch 67 %)
+<p><strong>Zinserhöhung im Dezember:</strong> wahrscheinlicher geworden (76 %, vor einer Woche 71 %)
 <strong>Wichtigster Termin:</strong> US-Inflation für Oktober, Dienstag um 14:30 Uhr</p>
 <ol>
 <li><strong>Zinsen:</strong> Nach dem starken Arbeitsmarktbericht rechnet der Markt fest mit einer Zinserhöhung der US-Notenbank am 9. Dezember. Zwölf Notenbanker treten in dieser Woche auf, dazu kommen drei große Anleiheauktionen.</li>
@@ -12,26 +12,157 @@
 </ol>
 </div>
 <h2 id="der-start-aktien-nach-der-schwachsten-woche-seit-juni">Der Start: Aktien nach der schwächsten Woche seit Juni</h2>
-<p>Die Börsen gehen angeschlagen in die neue Woche. Der S&amp;P 500 schloss am Freitag knapp über seiner 200-Tage-Linie, der Nasdaq liegt rund 2 % darunter. Der Schwankungsindex VIX steht bei 25,6, die Rendite zehnjähriger US-Staatsanleihen bei 4,86 % und WTI-Öl bei rund 91 Dollar. Wie es zu dieser Lage kam, steht in unserer <a href="https://dividenden-rechner.github.io/aktien-hub/marktuebersicht-ki-trade-woche-2-bis-6-november-2026/">Wochenbilanz</a>.</p>
+<p>Die Börsen gehen angeschlagen in die neue Woche. Der S&amp;P 500 schloss am Freitag knapp über seiner 200-Tage-Linie, der Nasdaq liegt rund 2 % darunter. Der Schwankungsindex VIX steht bei 25,6, die Rendite zehnjähriger US-Staatsanleihen bei 4,87 % und WTI-Öl bei rund 91 Dollar. Wie es zu dieser Lage kam, steht in unserer <a href="https://dividenden-rechner.github.io/aktien-hub/marktuebersicht-ki-trade-woche-2-bis-6-november-2026/">Wochenbilanz</a>.</p>
 <p>Die Woche dreht sich um zwei Fragen: Was sagt die Inflation zur Zinspolitik, und halten die Unternehmen mit ihren Zahlen die Erholung am Leben?</p>
 <h2 id="montag-9-november-ruhiger-start">Montag, 9. November: ruhiger Start</h2>
-<p>Am Vormittag erscheint der Sentix-Konjunkturindex für den Euroraum, außerdem versteigert das US-Finanzministerium 58 Mrd. Dollar dreijährige Anleihen. Die EU-Finanzminister treffen sich. Bei den Unternehmen berichten Unicredit, Hannover Rück, Gea, KKR, Constellation Energy, Occidental Petroleum und Take-Two.</p>
+<p>Am Vormittag erscheint der Sentix-Konjunkturindex für den Euroraum, außerdem versteigert das US-Finanzministerium 58 Mrd. Dollar dreijährige Anleihen. Die EU-Finanzminister treffen sich.</p>
+<div class="tablewrap"><table>
+<thead>
+<tr>
+<th>Unternehmen</th>
+<th>Zahlen</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><img class="tl" src="https://dividenden-rechner.github.io/aktien-hub/assets/logos/ucg-mi.mono.png" alt="" width="24" height="24" loading="lazy">UniCredit</td>
+<td>Quartalszahlen</td>
+</tr>
+<tr>
+<td><img class="tl" src="https://dividenden-rechner.github.io/aktien-hub/assets/logos/hnr1-de.mono.png" alt="" width="24" height="24" loading="lazy">Hannover Rück</td>
+<td>Quartalszahlen</td>
+</tr>
+<tr>
+<td><img class="tl" src="https://dividenden-rechner.github.io/aktien-hub/assets/logos/oxy.mono.png" alt="" width="24" height="24" loading="lazy">Occidental Petroleum</td>
+<td>Quartalszahlen</td>
+</tr>
+<tr>
+<td><img class="tl" src="https://dividenden-rechner.github.io/aktien-hub/assets/logos/kkr.mono.png" alt="" width="24" height="24" loading="lazy">KKR</td>
+<td>Quartalszahlen</td>
+</tr>
+</tbody>
+</table></div>
+<p>Außerdem berichten Gea, Constellation Energy und Take-Two.</p>
 <h2 id="dienstag-10-november-inflation-und-coreweave">Dienstag, 10. November: Inflation und CoreWeave</h2>
-<p>Der wichtigste Termin der Woche kommt um 14:30 Uhr: Die US-Verbraucherpreise für Oktober. Dabei gibt es eine Besonderheit. Nach dem Regierungsstillstand im Vorjahr fehlen Preiserhebungen vom Oktober 2025, deshalb veröffentlicht die Statistikbehörde für die meisten Indizes keine Jahresveränderung. Anleger müssen sich stärker auf die Monatswerte stützen.</p>
-<p>Dazu kommt die Auktion zehnjähriger Anleihen über 42 Mrd. Dollar. Schwache Nachfrage könnte die Renditen treiben. In Deutschland legen Infineon (Jahreszahlen), Henkel, K+S, Uniper und die Porsche SE Zahlen vor, in den USA TransDigm.</p>
-<p>Nach Börsenschluss folgt CoreWeave. Der Anbieter von KI-Rechenleistung dürfte einen Verlust von 1,45 US-Dollar je Aktie ausweisen, nach 0,31 US-Dollar Verlust im Vorjahr. Weil das Unternehmen seine Rechenzentren mit viel Fremdkapital baut, liest der Markt die Zahlen als Test dafür, wie sich der KI-Boom finanziert.</p>
+<p>Der wichtigste Termin der Woche kommt um 14:30 Uhr: Die US-Verbraucherpreise für Oktober. Dabei gibt es eine Besonderheit. Nach dem Regierungsstillstand im Vorjahr fehlen Preiserhebungen vom Oktober 2025, deshalb veröffentlicht die Statistikbehörde für die meisten Indizes keine Jahresveränderung. Anleger müssen sich stärker auf die Monatswerte stützen. Dazu kommt die Auktion zehnjähriger Anleihen über 42 Mrd. Dollar. Schwache Nachfrage könnte die Renditen treiben.</p>
+<div class="tablewrap"><table>
+<thead>
+<tr>
+<th>Unternehmen</th>
+<th>Zahlen</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><img class="tl" src="https://dividenden-rechner.github.io/aktien-hub/assets/logos/ifx-de.mono.png" alt="" width="24" height="24" loading="lazy">Infineon</td>
+<td>Jahreszahlen</td>
+</tr>
+<tr>
+<td><img class="tl" src="https://dividenden-rechner.github.io/aktien-hub/assets/logos/hen3-de.png" alt="" width="24" height="24" loading="lazy">Henkel</td>
+<td>Quartalszahlen</td>
+</tr>
+<tr>
+<td><img class="tl" src="https://dividenden-rechner.github.io/aktien-hub/assets/logos/tdg.mono.png" alt="" width="24" height="24" loading="lazy">TransDigm</td>
+<td>Quartalszahlen</td>
+</tr>
+<tr>
+<td><img class="tl" src="https://dividenden-rechner.github.io/aktien-hub/assets/logos/crwv.mono.png" alt="" width="24" height="24" loading="lazy">CoreWeave</td>
+<td>Nach Börsenschluss, erwartet wird ein Verlust von 1,45 $ je Aktie (Vorjahr: 0,31 $)</td>
+</tr>
+</tbody>
+</table></div>
+<p>Außerdem berichten K+S, Uniper und die Porsche SE. CoreWeave baut seine Rechenzentren mit viel Fremdkapital, der Markt liest die Zahlen deshalb als Test dafür, wie sich der KI-Boom finanziert.</p>
 <h2 id="mittwoch-11-november-versorger-im-fokus">Mittwoch, 11. November: Versorger im Fokus</h2>
-<p>In den USA ist Veterans Day: Der Anleihehandel ruht, die Aktienbörsen sind geöffnet. In Deutschland berichten RWE, E.ON und Siemens Energy (Jahreszahlen), dazu Brenntag, ABN Amro, Swiss Life und Vestas. Die Versorger stehen im Mittelpunkt der Debatte um den Strombedarf von Rechenzentren, entsprechend aufmerksam wird auf ihre Investitionspläne geschaut.</p>
+<p>In den USA ist Veterans Day: Der Anleihehandel ruht, die Aktienbörsen sind geöffnet. Die Versorger stehen im Mittelpunkt der Debatte um den Strombedarf von Rechenzentren, entsprechend aufmerksam wird auf ihre Investitionspläne geschaut.</p>
+<div class="tablewrap"><table>
+<thead>
+<tr>
+<th>Unternehmen</th>
+<th>Zahlen</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><img class="tl" src="https://dividenden-rechner.github.io/aktien-hub/assets/logos/rwe-de.mono.png" alt="" width="24" height="24" loading="lazy">RWE</td>
+<td>Quartalszahlen</td>
+</tr>
+<tr>
+<td><img class="tl" src="https://dividenden-rechner.github.io/aktien-hub/assets/logos/eoan-de.mono.png" alt="" width="24" height="24" loading="lazy">E.ON</td>
+<td>Quartalszahlen</td>
+</tr>
+<tr>
+<td><img class="tl" src="https://dividenden-rechner.github.io/aktien-hub/assets/logos/enr-de.mono.png" alt="" width="24" height="24" loading="lazy">Siemens Energy</td>
+<td>Jahreszahlen</td>
+</tr>
+</tbody>
+</table></div>
+<p>Außerdem berichten Brenntag, ABN Amro, Swiss Life und Vestas.</p>
 <h2 id="donnerstag-12-november-der-dichteste-tag">Donnerstag, 12. November: der dichteste Tag</h2>
-<p>Am Donnerstag drängen sich die Zahlen. Siemens legt Jahreszahlen vor, dazu kommen Allianz, Munich Re, Merck KGaA, Talanx, Hapag-Lloyd, Delivery Hero, Sixt und Rolls-Royce. Die Bundesbank veröffentlicht ihren Finanzstabilitätsbericht, in Großbritannien erscheint das Wachstum des dritten Quartals, und die USA versteigern 25 Mrd. Dollar dreißigjährige Anleihen.</p>
-<p>Abends berichten Cisco und Applied Materials. Von Cisco erwartet der Markt einen Gewinn von 1,15 US-Dollar je Aktie (Vorjahr: 0,81 US-Dollar) bei einem Umsatz von rund 18 Mrd. Dollar. Applied Materials soll 4,06 US-Dollar je Aktie verdienen (Vorjahr: 2,17 US-Dollar) bei gut 10 Mrd. Dollar Umsatz. Beide zeigen, wie weit der KI-Ausbau tatsächlich in den Auftragsbüchern ankommt.</p>
+<p>Am Donnerstag drängen sich die Zahlen. Die Bundesbank veröffentlicht ihren Finanzstabilitätsbericht, in Großbritannien erscheint das Wachstum des dritten Quartals, und die USA versteigern 25 Mrd. Dollar dreißigjährige Anleihen. Abends berichten Cisco und Applied Materials, die zeigen, wie weit der KI-Ausbau tatsächlich in den Auftragsbüchern ankommt.</p>
+<div class="tablewrap"><table>
+<thead>
+<tr>
+<th>Unternehmen</th>
+<th>Zahlen</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><img class="tl" src="https://dividenden-rechner.github.io/aktien-hub/assets/logos/sie-de.mono.png" alt="" width="24" height="24" loading="lazy">Siemens</td>
+<td>Jahreszahlen</td>
+</tr>
+<tr>
+<td><img class="tl" src="https://dividenden-rechner.github.io/aktien-hub/assets/logos/alv-de.mono.png" alt="" width="24" height="24" loading="lazy">Allianz</td>
+<td>Quartalszahlen</td>
+</tr>
+<tr>
+<td><img class="tl" src="https://dividenden-rechner.github.io/aktien-hub/assets/logos/muv2-de.mono.png" alt="" width="24" height="24" loading="lazy">Munich Re</td>
+<td>Quartalszahlen</td>
+</tr>
+<tr>
+<td><img class="tl" src="https://dividenden-rechner.github.io/aktien-hub/assets/logos/mrk-de.mono.png" alt="" width="24" height="24" loading="lazy">Merck KGaA</td>
+<td>Quartalszahlen</td>
+</tr>
+<tr>
+<td><img class="tl" src="https://dividenden-rechner.github.io/aktien-hub/assets/logos/csco.mono.png" alt="" width="24" height="24" loading="lazy">Cisco</td>
+<td>Nach Börsenschluss, erwartet werden 1,15 $ je Aktie (Vorjahr: 0,81 $, +42 %) bei rund 18 Mrd. $ Umsatz</td>
+</tr>
+<tr>
+<td><img class="tl" src="https://dividenden-rechner.github.io/aktien-hub/assets/logos/amat.mono.png" alt="" width="24" height="24" loading="lazy">Applied Materials</td>
+<td>Nach Börsenschluss, erwartet werden 4,06 $ je Aktie (Vorjahr: 2,17 $, +87 %) bei gut 10 Mrd. $ Umsatz</td>
+</tr>
+</tbody>
+</table></div>
+<p>Außerdem berichten Talanx, Hapag-Lloyd, Delivery Hero, Sixt und Rolls-Royce.</p>
 <h2 id="freitag-13-november-erzeugerpreise-und-japans-banken">Freitag, 13. November: Erzeugerpreise und Japans Banken</h2>
-<p>Zum Wochenschluss erscheinen um 14:30 Uhr die US-Erzeugerpreise und die zweite Schätzung für das Wachstum der Eurozone im dritten Quartal. Bei den Unternehmen berichten Richemont, Generali, Bechtle, Aviva sowie die drei japanischen Großbanken Mitsubishi UFJ, Sumitomo Mitsui und Mizuho.</p>
+<p>Zum Wochenschluss erscheinen um 14:30 Uhr die US-Erzeugerpreise und die zweite Schätzung für das Wachstum der Eurozone im dritten Quartal.</p>
+<div class="tablewrap"><table>
+<thead>
+<tr>
+<th>Unternehmen</th>
+<th>Zahlen</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><img class="tl" src="https://dividenden-rechner.github.io/aktien-hub/assets/logos/g-mi.mono.png" alt="" width="24" height="24" loading="lazy">Generali</td>
+<td>Quartalszahlen</td>
+</tr>
+<tr>
+<td><img class="tl" src="https://dividenden-rechner.github.io/aktien-hub/assets/logos/8306-t.mono.png" alt="" width="24" height="24" loading="lazy">Mitsubishi UFJ</td>
+<td>Quartalszahlen</td>
+</tr>
+</tbody>
+</table></div>
+<p>Außerdem berichten Richemont, Bechtle, Aviva sowie Sumitomo Mitsui und Mizuho.</p>
 <h2 id="die-zinsfrage-im-hintergrund">Die Zinsfrage im Hintergrund</h2>
-<p>Die Wahrscheinlichkeit einer Zinserhöhung im Dezember stieg auf 77 %, nach 67 % am Donnerstag. Bis Dezember 2027 sind Erhöhungen um zusammen rund 0,46 Prozentpunkte eingepreist. Die jüngste Schwäche der Aktien dürfte kaum reichen, um eine Erhöhung auszuschließen. Jede Äußerung der zwölf Notenbanker, die in dieser Woche sprechen, kann die Erwartung verschieben. Mehr zur Rolle von Anleihen steht in unserem <a href="https://dividenden-rechner.github.io/aktien-hub/anleihen-ubs-chancen-renditen-portfolio/">Beitrag zur UBS-Studie</a>.</p>
+<p>Die Wahrscheinlichkeit einer Zinserhöhung im Dezember liegt bei 76 %, vor einer Woche waren es 71 %, vor einem Monat 66 %. Der <a class="glossar-link" href="https://dividenden-rechner.github.io/aktien-hub/fortgeschrittene/zinsen-und-dividendenaktien/" title="Zinsen und Dividendenaktien: Warum steigende Zinsen so wehtun können">Leitzins</a> steht derzeit bei 3,75 bis 4,00 %, der Markt erwartet den Schritt auf 4,00 bis 4,25 %. Für eine Senkung sieht er keine Chance.</p>
+<p><img alt="CME FedWatch: Wahrscheinlichkeiten für die Zinsentscheidung am 9. Dezember 2026" src="https://dividenden-rechner.github.io/aktien-hub/assets/magazin/fedwatch-zinsentscheid-dezember-2026.jpg" />
+<em>Quelle: CME FedWatch, Stand 7. November 2026</em></p>
+<p>Bis Dezember 2027 sind Erhöhungen um zusammen rund 0,46 Prozentpunkte eingepreist. Die jüngste Schwäche der Aktien dürfte kaum reichen, um eine Erhöhung auszuschließen. Jede Äußerung der zwölf Notenbanker, die in dieser Woche sprechen, kann die Erwartung verschieben. Mehr zur Rolle von Anleihen steht in unserem <a href="https://dividenden-rechner.github.io/aktien-hub/anleihen-ubs-chancen-renditen-portfolio/">Beitrag zur UBS-Studie</a>.</p>
 <h2 id="was-dividendenanleger-im-blick-behalten">Was Dividendenanleger im Blick behalten</h2>
 <p>Viele der Berichtenden sind bekannte Dividendenzahler, darunter Allianz, Munich Re, Hannover Rück, Siemens, RWE, E.ON, Henkel, Merck KGaA und Infineon sowie in den USA Cisco, Applied Materials, Occidental Petroleum und KKR. Bei Jahreszahlen wie denen von Siemens und Infineon fällt meist auch der Vorschlag für die Dividende, den die Hauptversammlung im Frühjahr bestätigt. Bei Versicherern wie Allianz und Munich Re zählen <a class="glossar-link" href="https://dividenden-rechner.github.io/aktien-hub/fortgeschrittene/banken-bewerten/" title="Banken bewerten: KTBV, ROTCE und Kapitalquoten">Kapitalquote</a> und Ausblick fürs Gesamtjahr, bei Versorgern wie RWE und E.ON die Investitionspläne und die Prognose.</p>
-<p>Für alle Dividendenwerte gilt in dieser Woche eine zweite Frage: Steigen die Anleiherenditen weiter, werden <a class="glossar-link" href="https://dividenden-rechner.github.io/aktien-hub/grundlagen/dividendenrendite/" title="Dividendenrendite: Formel, Beispiel und Fallstricke">Dividendenrenditen</a> von 3 % bis 4 % im Vergleich weniger attraktiv. Zehnjährige US-Staatsanleihen bringen derzeit 4,86 %.</p>
+<p>Für alle Dividendenwerte gilt in dieser Woche eine zweite Frage: Steigen die Anleiherenditen weiter, werden <a class="glossar-link" href="https://dividenden-rechner.github.io/aktien-hub/grundlagen/dividendenrendite/" title="Dividendenrendite: Formel, Beispiel und Fallstricke">Dividendenrenditen</a> von 3 % bis 4 % im Vergleich weniger attraktiv. Zehnjährige US-Staatsanleihen bringen derzeit 4,87 %.</p>
 <h2 id="worauf-der-markt-schaut">Worauf der Markt schaut</h2>
 <p>Die Strategen sind sich nicht einig:</p>
 <ul>
@@ -47,7 +178,7 @@
 <li>dpa-AFX über Deutsche Börse, „WOCHENVORSCHAU: Termine bis 13. November 2026“ (Stand 30.10.2026)</li>
 <li>StockTitan, „Earnings Calendar for the Week of November 9, 2026“ (US-Termine, Konsens laut Nasdaq)</li>
 <li>rallies.ai, „U.S. earnings week ahead“, 6.11.2026</li>
-<li>CME FedWatch laut TheStreet und CNBC</li>
+<li>CME FedWatch, Zinswahrscheinlichkeiten, Stand 7.11.2026</li>
 </ul></details>
 <p><em>Dieser Beitrag fasst die genannten Quellen in eigenen Worten zusammen. Alle Angaben ohne Gewähr, Termine können sich ändern.</em></p>]]></content:encoded></item>
 <item><title>Anleihen 2026: Warum die UBS Qualitätsanleihen trotz Zinsschwankungen für attraktiv hält</title><link>https://dividenden-rechner.github.io/aktien-hub/news/anleihen-ubs-chancen-renditen-portfolio/</link><guid isPermaLink="true">https://dividenden-rechner.github.io/aktien-hub/news/anleihen-ubs-chancen-renditen-portfolio/</guid><pubDate>Sat, 07 Nov 2026 10:00:00 +0100</pubDate><category>Analyse</category><dc:creator>Kilian Treß</dc:creator><description>Wie Anleihen funktionieren, was Kurse und Renditen bewegt und wo die UBS derzeit Chancen sieht. Mit einer Modellrechnung zur Laufzeit und einer Einordnung für Dividendenanleger.</description><enclosure url="https://dividenden-rechner.github.io/aktien-hub/assets/magazin/anleihen-ubs-chancen-renditen-portfolio-foto.jpg" type="image/jpeg" length="0"/><content:encoded><![CDATA[<div class="admonition kurz">
@@ -77,7 +208,7 @@
 <p>Die Rendite zehnjähriger US-Staatsanleihen liegt bei 4,87 %. <a href="https://dividenden-rechner.github.io/aktien-hub/unilever-reiner-pflegekonzern-dividende-rueckkauf/">Unilever</a> kommt bei der Dividende auf gut 3 %, <a href="https://dividenden-rechner.github.io/aktien-hub/cvs-health-q3-2026-aufspaltung-prognose/">CVS Health</a> auf 3,3 %. Der Unterschied liegt in der Verlässlichkeit. Der Coupon ist vertraglich zugesagt, die Dividende ist freiwillig und kann gekürzt werden, sie kann aber auch wachsen. CVS hat seine seit Januar 2024 nicht mehr erhöht, andere Firmen heben jedes Jahr an.</p>
 <p>Drei Fragen helfen bei der Entscheidung. Welche Aufgabe soll die Anleihe übernehmen: Kapitalerhalt und Streuung sprechen für hochwertige Papiere, wer Ertrag sucht, nimmt mehr Risiko in Kauf. Wie lange halte ich Kursschwankungen aus: Wer bis zur Fälligkeit hält, erhält den Nennwert zurück, sofern der Schuldner zahlt. Und in welcher Währung rechne ich: Die 4,87 % gelten für US-Dollar, wer in Euro denkt, trägt ein Währungsrisiko.</p>
 <h2 id="risiken">Risiken</h2>
-<p>Steigen die Zinsen weiter, sitzt ein Käufer vorübergehend auf Verlusten, vor allem bei langen Laufzeiten. Der Markt sieht die Wahrscheinlichkeit einer Zinserhöhung am 9. Dezember bei 77 %, wie in unserer <a href="https://dividenden-rechner.github.io/aktien-hub/marktuebersicht-ki-trade-woche-2-bis-6-november-2026/">Wochenbilanz</a> beschrieben. Hohe Inflation schwächt den Vorteil von Anleihen, und die wachsende Staatsverschuldung kann die Laufzeitprämie oben halten. Dazu kommt, dass die Studie von einer Bank stammt, die Anlageprodukte verkauft.</p>
+<p>Steigen die Zinsen weiter, sitzt ein Käufer vorübergehend auf Verlusten, vor allem bei langen Laufzeiten. Der Markt sieht die Wahrscheinlichkeit einer Zinserhöhung am 9. Dezember bei rund 76 %, wie in unserer <a href="https://dividenden-rechner.github.io/aktien-hub/marktuebersicht-ki-trade-woche-2-bis-6-november-2026/">Wochenbilanz</a> beschrieben. Hohe Inflation schwächt den Vorteil von Anleihen, und die wachsende Staatsverschuldung kann die Laufzeitprämie oben halten. Dazu kommt, dass die Studie von einer Bank stammt, die Anlageprodukte verkauft.</p>
 <p>Wichtig sind in den kommenden Wochen die US-Inflationszahlen am 10. November, die Zinsentscheidung am 9. Dezember und die Frage, ob die Renditen langer Laufzeiten weiter steigen.</p>
 <p>Das ist eine Einordnung und keine Anlageberatung.</p>
 <details class="quellen"><summary>Quellen</summary><ul>
@@ -129,7 +260,7 @@
 <h2 id="politik-als-ausloser-bewertung-als-verstarker">Politik als Auslöser, Bewertung als Verstärker</h2>
 <p>Der Ausverkauf hat einen politischen Kern. Die Demokraten gewannen auch dort, wo viele Rechenzentren entstehen, etwa in Texas, und steigende Strompreise waren dort ein Wahlkampfthema. Anleger fürchten nun Auflagen und höhere Kosten für den Netzanschluss. Die UBS sieht rund 30 % der bis 2028 erwarteten neuen Rechenzentrumskapazität in den USA in Gefahr, allein in Texas 18 Gigawatt. Gesetze gibt es bisher keine, es geht um die Erwartung.</p>
 <p>Dass diese Erwartung so heftig durchschlug, liegt an der Ausgangslage. Nach einem langen Anstieg war viel Gutes in den Kursen eingepreist, und die Stimmung hatte schon vorher gelitten: Alphabet, Amazon und Intel hatten enttäuscht, Apple und Palantir gaben schwächere Ausblicke. Nvidia fiel am Donnerstag unter den Schlusskurs von Ende 2025, der Jahresgewinn vieler KI-Werte war dünner, als es die Schlagzeilen vermuten ließen.</p>
-<p>Hinzu kommen die Zinsen. Der Markt sieht die Wahrscheinlichkeit einer Zinserhöhung am 9. Dezember bei über 65 %. Der Arbeitsmarktbericht vom Freitag verschärfte das: 165.000 neue Stellen statt der erwarteten 60.000, die Arbeitslosenquote sank auf 4,1 %. Für die Konjunktur ist das gut, für Wachstumsaktien mit Gewinnen in ferner Zukunft ist es ein Problem, denn die Renditen stiegen.</p>
+<p>Hinzu kommen die Zinsen. Der Markt sieht die Wahrscheinlichkeit einer Zinserhöhung am 9. Dezember bei rund 76 %. Der Arbeitsmarktbericht vom Freitag verschärfte das: 165.000 neue Stellen statt der erwarteten 60.000, die Arbeitslosenquote sank auf 4,1 %. Für die Konjunktur ist das gut, für Wachstumsaktien mit Gewinnen in ferner Zukunft ist es ein Problem, denn die Renditen stiegen.</p>
 <h2 id="was-gegen-eine-wende-spricht">Was gegen eine Wende spricht</h2>
 <p>Die Konzerne planen unverändert. Die großen Cloud-Anbieter investierten im dritten Quartal rund 227 Milliarden Dollar, für 2026 werden 803 bis 828 Milliarden erwartet. Amazon kündigte für 2027 „deutlich mehr“ an. Die UBS rechnet eher mit einer Verschiebung von 2027 auf 2028 als mit einer Absage, und die Auftragsbücher sind voll: Quanta Services meldete einen Rekordbestand von 63,7 Milliarden Dollar, bei Micron sind über 75 % der Produktion für 2027 bereits zugesagt. Lam Research startete einen Rückkauf über 25 Milliarden Dollar, das Management sieht die Lage gelassener als der Markt.</p>
 <p>Am Freitag holten acht große Chipwerte im Schnitt gut ein Drittel der Verluste wieder auf, Intel zwei Drittel, Broadcom nur 6 %.</p>
