@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:dc="http://purl.org/dc/elements/1.1/">
-<channel><title>Dividenden-Rechner Aktien-Hub: News</title><link>https://dividenden-rechner.github.io/aktien-hub/news/</link><description>Dividenden, Kennzahlen und Steuern erklärt</description><language>de-DE</language><lastBuildDate>Sat, 07 Nov 2026 22:21:27 +0000</lastBuildDate><atom:link href="https://dividenden-rechner.github.io/aktien-hub/news/feed.xml" rel="self" type="application/rss+xml"/>
+<channel><title>Dividenden-Rechner Aktien-Hub: News</title><link>https://dividenden-rechner.github.io/aktien-hub/news/</link><description>Dividenden, Kennzahlen und Steuern erklärt</description><language>de-DE</language><lastBuildDate>Sat, 07 Nov 2026 22:26:59 +0000</lastBuildDate><atom:link href="https://dividenden-rechner.github.io/aktien-hub/news/feed.xml" rel="self" type="application/rss+xml"/>
 <item><title>Wochenausblick: Die Zinserhöhung rückt näher, dazu Inflationszahlen und Zahlen von Siemens, Allianz und Cisco</title><link>https://dividenden-rechner.github.io/aktien-hub/news/wochenausblick-9-bis-13-november-2026/</link><guid isPermaLink="true">https://dividenden-rechner.github.io/aktien-hub/news/wochenausblick-9-bis-13-november-2026/</guid><pubDate>Sat, 07 Nov 2026 10:15:00 +0100</pubDate><category>Analyse</category><dc:creator>Kilian Treß</dc:creator><description>Was in der Woche vom 9. bis 13. November zählt: die US-Inflation am Dienstag, viele Notenbanker, Anleiheauktionen und Quartalszahlen von Siemens, Allianz, Munich Re, RWE, Cisco und Applied Materials.</description><enclosure url="https://dividenden-rechner.github.io/aktien-hub/assets/magazin/wochenausblick-9-bis-13-november-2026-foto.jpg" type="image/jpeg" length="0"/><content:encoded><![CDATA[<div class="admonition kurz">
 <p class="admonition-title">Kurz gesagt</p>
 <p><strong>Zinserhöhung im Dezember:</strong> wahrscheinlicher geworden (76 %, vor einer Woche 71 %)
@@ -263,10 +263,48 @@
 <p><img alt="Wochenbilanz der US-Indizes vom 2. bis 6. November 2026" src="https://dividenden-rechner.github.io/aktien-hub/assets/magazin/marktuebersicht-2026-11-06-wochenbilanz.png" /></p>
 <h2 id="politik-als-ausloser-bewertung-als-verstarker">Politik als Auslöser, Bewertung als Verstärker</h2>
 <p>Der Ausverkauf hat einen politischen Kern. Die Demokraten gewannen auch dort, wo viele Rechenzentren entstehen, etwa in Texas, und steigende Strompreise waren dort ein Wahlkampfthema. Anleger fürchten nun Auflagen und höhere Kosten für den Netzanschluss. Die UBS sieht rund 30 % der bis 2028 erwarteten neuen Rechenzentrumskapazität in den USA in Gefahr, allein in Texas 18 Gigawatt. Gesetze gibt es bisher keine, es geht um die Erwartung.</p>
-<p>Dass diese Erwartung so heftig durchschlug, liegt an der Ausgangslage. Nach einem langen Anstieg war viel Gutes in den Kursen eingepreist, und die Stimmung hatte schon vorher gelitten: Alphabet, Amazon und Intel hatten enttäuscht, Apple und Palantir gaben schwächere Ausblicke. Nvidia fiel am Donnerstag unter den Schlusskurs von Ende 2025, der Jahresgewinn vieler KI-Werte war dünner, als es die Schlagzeilen vermuten ließen.</p>
+<p>Dass diese Erwartung so heftig durchschlug, liegt an der Ausgangslage. Nach einem langen Anstieg war viel Gutes in den Kursen eingepreist, und die Stimmung hatte schon vorher gelitten: <a href="https://dividenden-rechner.github.io/aktien-hub/alphabet-q3-2026-quartalszahlen/">Alphabet</a>, <a href="https://dividenden-rechner.github.io/aktien-hub/tech-ausverkauf-intel-nasdaq-marktueberblick/">Amazon</a> und <a href="https://dividenden-rechner.github.io/aktien-hub/intel-q3-2026-zahlen/">Intel</a> hatten enttäuscht, <a href="https://dividenden-rechner.github.io/aktien-hub/apple-geschaeftsbericht-2026/">Apple</a> und <a href="https://dividenden-rechner.github.io/aktien-hub/palantir-q3-2026-zahlen-prognose/">Palantir</a> gaben schwächere Ausblicke. Nvidia fiel am Donnerstag unter den Schlusskurs von Ende 2025, der Jahresgewinn vieler KI-Werte war dünner, als es die Schlagzeilen vermuten ließen.</p>
+<p>Wie unterschiedlich die Zahlen der betroffenen Konzerne waren, zeigt die Tabelle. Umsatz und Gewinn des dritten Quartals mit der Veränderung zum Vorjahr:</p>
+<div class="tablewrap"><table>
+<thead>
+<tr>
+<th>Unternehmen</th>
+<th>Umsatz</th>
+<th>Gewinn</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><img class="tl" src="https://dividenden-rechner.github.io/aktien-hub/assets/logos/googl.png" alt="" width="24" height="24" loading="lazy"><a href="https://dividenden-rechner.github.io/aktien-hub/alphabet-q3-2026-quartalszahlen/">Alphabet</a></td>
+<td>127,6 Mrd. $ (+25 %)</td>
+<td>26,2 Mrd. $ (−25 %)</td>
+</tr>
+<tr>
+<td><img class="tl" src="https://dividenden-rechner.github.io/aktien-hub/assets/logos/amzn.png" alt="" width="24" height="24" loading="lazy"><a href="https://dividenden-rechner.github.io/aktien-hub/tech-ausverkauf-intel-nasdaq-marktueberblick/">Amazon</a></td>
+<td>201,9 Mrd. $ (+12 %)</td>
+<td>20,7 Mrd. $ (−2 %)</td>
+</tr>
+<tr>
+<td><img class="tl" src="https://dividenden-rechner.github.io/aktien-hub/assets/logos/intc.png" alt="" width="24" height="24" loading="lazy"><a href="https://dividenden-rechner.github.io/aktien-hub/intel-q3-2026-zahlen/">Intel</a></td>
+<td>16,5 Mrd. $ (+21 %)</td>
+<td>3,3 Mrd. $ (−18 %)</td>
+</tr>
+<tr>
+<td><img class="tl" src="https://dividenden-rechner.github.io/aktien-hub/assets/logos/pltr.png" alt="" width="24" height="24" loading="lazy"><a href="https://dividenden-rechner.github.io/aktien-hub/palantir-q3-2026-zahlen-prognose/">Palantir</a></td>
+<td>2,3 Mrd. $ (+96 %)</td>
+<td>1,1 Mrd. $</td>
+</tr>
+<tr>
+<td><img class="tl" src="https://dividenden-rechner.github.io/aktien-hub/assets/logos/pwr.png" alt="" width="24" height="24" loading="lazy"><a href="https://dividenden-rechner.github.io/aktien-hub/quanta-services-q3-2026-ergebnisse/">Quanta Services</a></td>
+<td>12,0 Mrd. $ (+57 %)</td>
+<td>0,7 Mrd. $ (+105 %)</td>
+</tr>
+</tbody>
+</table></div>
+<p>Die Umsätze wachsen kräftig, bei Alphabet, Amazon und Intel sinken dagegen die Gewinne, weil die Konzerne viel in KI investieren. Das erklärt, warum der Markt trotz guter Umsätze nervös reagierte.</p>
 <p>Hinzu kommen die Zinsen. Der Markt sieht die Wahrscheinlichkeit einer Zinserhöhung am 9. Dezember bei rund 76 %. Der Arbeitsmarktbericht vom Freitag verschärfte das: 165.000 neue Stellen statt der erwarteten 60.000, die Arbeitslosenquote sank auf 4,1 %. Für die Konjunktur ist das gut, für Wachstumsaktien mit Gewinnen in ferner Zukunft ist es ein Problem, denn die Renditen stiegen.</p>
 <h2 id="was-gegen-eine-wende-spricht">Was gegen eine Wende spricht</h2>
-<p>Die Konzerne planen unverändert. Die großen Cloud-Anbieter investierten im dritten Quartal rund 227 Milliarden Dollar, für 2026 werden 803 bis 828 Milliarden erwartet. Amazon kündigte für 2027 „deutlich mehr“ an. Die UBS rechnet eher mit einer Verschiebung von 2027 auf 2028 als mit einer Absage, und die Auftragsbücher sind voll: Quanta Services meldete einen Rekordbestand von 63,7 Milliarden Dollar, bei Micron sind über 75 % der Produktion für 2027 bereits zugesagt. Lam Research startete einen Rückkauf über 25 Milliarden Dollar, das Management sieht die Lage gelassener als der Markt.</p>
+<p>Die Konzerne planen unverändert. Die großen Cloud-Anbieter investierten im dritten Quartal rund 227 Milliarden Dollar, für 2026 werden 803 bis 828 Milliarden erwartet. Amazon kündigte für 2027 „deutlich mehr“ an. Die UBS rechnet eher mit einer Verschiebung von 2027 auf 2028 als mit einer Absage, und die Auftragsbücher sind voll: <a href="https://dividenden-rechner.github.io/aktien-hub/quanta-services-q3-2026-ergebnisse/">Quanta Services</a> meldete einen Rekordbestand von 63,7 Milliarden Dollar, bei Micron sind über 75 % der Produktion für 2027 bereits zugesagt. <a href="https://dividenden-rechner.github.io/aktien-hub/lam-research-startet-25-mrd-usd-rueckkauf-und-dividende/">Lam Research</a> startete einen Rückkauf über 25 Milliarden Dollar, das Management sieht die Lage gelassener als der Markt.</p>
 <p>Am Freitag holten acht große Chipwerte im Schnitt gut ein Drittel der Verluste wieder auf, Intel zwei Drittel, Broadcom nur 6 %.</p>
 <p><img alt="Chipwerte am Donnerstag und Freitag im Vergleich" src="https://dividenden-rechner.github.io/aktien-hub/assets/magazin/marktuebersicht-2026-11-06-chips.png" /></p>
 <p>Ein Erholungstag entscheidet nichts. Zum Test wird die kommende Woche: Fallen die US-Inflationszahlen am Dienstag hoch aus oder kommen aus den Bundesstaaten konkrete Auflagen für Rechenzentren, kann die Korrektur weitergehen. Beide Lager haben Argumente, und der Markt gewichtet sie im Wochentakt neu.</p>
