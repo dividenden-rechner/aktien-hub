@@ -9,7 +9,7 @@ kein_logo: ja
 ---
 !!! kurz "Kurz gesagt"
     **UBS-Einstufung Fixed Income:** „Attraktiv“
-    **Rendite 10-jährige US-Staatsanleihen:** rund 4,8 % (5.11.2026)
+    **Rendite 10-jährige US-Staatsanleihen:** rund 4,86 % (6.11.2026)
 
     1. **Die These:** Höhere Anfangsrenditen bringen laufende Erträge und ein Polster, falls die Zinsen weiter steigen. Fallen sie, steigen die Kurse. Abwarten, bis sich die Lage beruhigt hat, hält die UBS für einen Fehler.
     2. **Die Auswahl:** Hochwertige Anleihen mit mittlerer bis langer Laufzeit, Unternehmensanleihen guter Bonität mit mittlerer Laufzeit, Schwellenländeranleihen mit eher kurzer Laufzeit. Bei den längsten Laufzeiten mahnt die UBS zur Vorsicht.
@@ -58,7 +58,7 @@ Für die Praxis ergeben sich drei Fragen, die zu den Hinweisen der UBS passen:
 
 - **Welche Aufgabe soll die Anleihe übernehmen?** Kapitalerhalt und Streuung sprechen für hochwertige Anleihen. Wer Ertrag sucht, nimmt mehr Kredit- oder Laufzeitrisiko in Kauf.
 - **Wie lange kann ich Kursschwankungen aushalten?** Die Modellrechnung zeigt, dass lange Laufzeiten kräftig schwanken. Wer bis zur Fälligkeit hält, bekommt den Nennwert zurück, sofern der Schuldner zahlt.
-- **In welcher Währung rechne ich?** Die 4,84 % gelten für US-Staatsanleihen in US-Dollar. Wer in Euro denkt, trägt ein Währungsrisiko.
+- **In welcher Währung rechne ich?** Die 4,86 % gelten für US-Staatsanleihen in US-Dollar. Wer in Euro denkt, trägt ein Währungsrisiko.
 
 Die Studie bleibt allgemein und nennt keine einzelnen Anleihen. Wie hoch die Zinsen im Dezember sind, entscheidet auch die US-Notenbank. Der Markt rechnet laut CME FedWatch mit über 65 % Wahrscheinlichkeit mit einer Erhöhung am 9. Dezember, wie in unserer [Wochenbilanz](../marktuebersicht-ki-trade-woche-2-bis-6-november-2026/) beschrieben.
 
