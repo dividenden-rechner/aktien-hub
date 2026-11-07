@@ -27,6 +27,11 @@ Zehnjährige US-Staatsanleihen werfen 4,87 % ab, mehr als die meisten Dividenden
 
 Anleger verlangen mehr Rendite als Ausgleich für Risiken: Sorgen über Staatsschulden, mit Fokus auf Frankreich, geopolitische Spannungen und Engpässe bei der Energieversorgung infolge des Nahostkonflikts. Das macht Anleihen attraktiver und die Kurse schwankungsanfälliger. Die UBS stuft Fixed Income insgesamt als „Attraktiv“ ein. Steigen die Renditen weiter, hilft ein höherer Coupon als Polster, fallen sie, weil Inflation und Wachstum nachlassen, steigen die Kurse.
 
+Die Sorge um die Staatsschulden hat eine Grundlage. Der Internationale Währungsfonds rechnet in seinem Fiscal Monitor vom April 2026 damit, dass die weltweite Staatsverschuldung von 93,9 % der Wirtschaftsleistung im Jahr 2025 auf 102,3 % im Jahr 2031 steigt. In den USA wächst sie von 123,9 auf 142,1 %, in Deutschland von 62,9 auf 73,7 %. Frankreich liegt mit 116,0 % schon hoch und steigt bis 2029 auf 121,3 %, bevor die Prognose einen leichten Rückgang zeigt. Japan bleibt trotz sinkender Quote mit 192,8 % das am höchsten verschuldete große Land, Spanien und Italien sinken dagegen leicht. Je mehr Anleihen die Staaten ausgeben müssen, desto mehr Rendite verlangen Anleger für zusätzliches Angebot, das ist der Kern der Warnung vor den langen Laufzeiten.
+
+![IWF: Staatsverschuldung ausgewählter Länder in Prozent der Wirtschaftsleistung, 2019 bis 2031](/assets/magazin/anleihen-staatsschulden-iwf.jpg)
+*Quelle: Internationaler Währungsfonds, Fiscal Monitor April 2026, Tabelle 1.2 (ab 2026 Prognose)*
+
 Der Zusammenhang ist einfach: Eine Anleihe ist ein Darlehen mit festen Zinsen, und ihr Kurs bewegt sich gegenläufig zur Rendite. Wie stark, bestimmt die Laufzeit.
 
 ![Kursänderung einer Anleihe mit 4 % Coupon bei Renditeänderung nach Laufzeit](/assets/magazin/anleihen-duration-kursaenderung.png)
@@ -72,6 +77,7 @@ Das ist eine Einordnung und keine Anlageberatung.
 - UBS Chief Investment Office GWM, „Wie können Anleger von Anleihen profitieren – und wo ergeben sich Chancen?“, Investment strategy insights, 29.10.2026 (PDF, Autoren: Matthew Carter, Frederick Mellors, Achim Peijan, Daisy Tseng)
 - [PIMCO: AI financing needs do not override cyclical drivers of yield, Credit Market Lens, 1.6.2026](https://www.pimco.com/eu/en/insights/ai-financing-needs-do-not-override-cyclical-drivers-of-yield)
 - CNBC über StockTitan, Börsenbericht vom 6.11.2026 (Zinserwartung der Fed)
+- Internationaler Währungsfonds, Fiscal Monitor „Fiscal Policy under Pressure: High Debt, Rising Risks“, April 2026, Tabelle 1.2
 - Trading Economics, Renditen und Verlauf US-Staatsanleihen, Stand 7.11.2026
 - Eigene Berechnung: Modellrechnung zur Kursänderung (Anleihe mit 4 % Coupon, jährliche Zahlung)
 
