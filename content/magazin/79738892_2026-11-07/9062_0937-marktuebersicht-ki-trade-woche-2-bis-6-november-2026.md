@@ -27,13 +27,25 @@ Die Woche begann ruhig und endete als die schwächste seit Juni. Zuerst fiel der
 
 Der Ausverkauf hat einen politischen Kern. Die Demokraten gewannen auch dort, wo viele Rechenzentren entstehen, etwa in Texas, und steigende Strompreise waren dort ein Wahlkampfthema. Anleger fürchten nun Auflagen und höhere Kosten für den Netzanschluss. Die UBS sieht rund 30 % der bis 2028 erwarteten neuen Rechenzentrumskapazität in den USA in Gefahr, allein in Texas 18 Gigawatt. Gesetze gibt es bisher keine, es geht um die Erwartung.
 
-Dass diese Erwartung so heftig durchschlug, liegt an der Ausgangslage. Nach einem langen Anstieg war viel Gutes in den Kursen eingepreist, und die Stimmung hatte schon vorher gelitten: Alphabet, Amazon und Intel hatten enttäuscht, Apple und Palantir gaben schwächere Ausblicke. Nvidia fiel am Donnerstag unter den Schlusskurs von Ende 2025, der Jahresgewinn vieler KI-Werte war dünner, als es die Schlagzeilen vermuten ließen.
+Dass diese Erwartung so heftig durchschlug, liegt an der Ausgangslage. Nach einem langen Anstieg war viel Gutes in den Kursen eingepreist, und die Stimmung hatte schon vorher gelitten: [Alphabet](../alphabet-q3-2026-quartalszahlen/), [Amazon](../tech-ausverkauf-intel-nasdaq-marktueberblick/) und [Intel](../intel-q3-2026-zahlen/) hatten enttäuscht, [Apple](../apple-geschaeftsbericht-2026/) und [Palantir](../palantir-q3-2026-zahlen-prognose/) gaben schwächere Ausblicke. Nvidia fiel am Donnerstag unter den Schlusskurs von Ende 2025, der Jahresgewinn vieler KI-Werte war dünner, als es die Schlagzeilen vermuten ließen.
+
+Wie unterschiedlich die Zahlen der betroffenen Konzerne waren, zeigt die Tabelle. Umsatz und Gewinn des dritten Quartals mit der Veränderung zum Vorjahr:
+
+| Unternehmen | Umsatz | Gewinn |
+|---|---|---|
+| {{logo:googl}}[Alphabet](../alphabet-q3-2026-quartalszahlen/) | 127,6 Mrd. $ (+25 %) | 26,2 Mrd. $ (−25 %) |
+| {{logo:amzn}}[Amazon](../tech-ausverkauf-intel-nasdaq-marktueberblick/) | 201,9 Mrd. $ (+12 %) | 20,7 Mrd. $ (−2 %) |
+| {{logo:intc}}[Intel](../intel-q3-2026-zahlen/) | 16,5 Mrd. $ (+21 %) | 3,32 Mrd. $ (−18 %) |
+| {{logo:pltr}}[Palantir](../palantir-q3-2026-zahlen-prognose/) | 2,31 Mrd. $ (+96 %) | 1,13 Mrd. $ |
+| {{logo:pwr}}[Quanta Services](../quanta-services-q3-2026-ergebnisse/) | 12,0 Mrd. $ (+57 %) | 0,69 Mrd. $ (+105 %) |
+
+Die Umsätze wachsen kräftig, bei Alphabet, Amazon und Intel sinken dagegen die Gewinne, weil die Konzerne viel in KI investieren. Das erklärt, warum der Markt trotz guter Umsätze nervös reagierte.
 
 Hinzu kommen die Zinsen. Der Markt sieht die Wahrscheinlichkeit einer Zinserhöhung am 9. Dezember bei rund 76 %. Der Arbeitsmarktbericht vom Freitag verschärfte das: 165.000 neue Stellen statt der erwarteten 60.000, die Arbeitslosenquote sank auf 4,1 %. Für die Konjunktur ist das gut, für Wachstumsaktien mit Gewinnen in ferner Zukunft ist es ein Problem, denn die Renditen stiegen.
 
 ## Was gegen eine Wende spricht
 
-Die Konzerne planen unverändert. Die großen Cloud-Anbieter investierten im dritten Quartal rund 227 Milliarden Dollar, für 2026 werden 803 bis 828 Milliarden erwartet. Amazon kündigte für 2027 „deutlich mehr“ an. Die UBS rechnet eher mit einer Verschiebung von 2027 auf 2028 als mit einer Absage, und die Auftragsbücher sind voll: Quanta Services meldete einen Rekordbestand von 63,7 Milliarden Dollar, bei Micron sind über 75 % der Produktion für 2027 bereits zugesagt. Lam Research startete einen Rückkauf über 25 Milliarden Dollar, das Management sieht die Lage gelassener als der Markt.
+Die Konzerne planen unverändert. Die großen Cloud-Anbieter investierten im dritten Quartal rund 227 Milliarden Dollar, für 2026 werden 803 bis 828 Milliarden erwartet. Amazon kündigte für 2027 „deutlich mehr“ an. Die UBS rechnet eher mit einer Verschiebung von 2027 auf 2028 als mit einer Absage, und die Auftragsbücher sind voll: [Quanta Services](../quanta-services-q3-2026-ergebnisse/) meldete einen Rekordbestand von 63,7 Milliarden Dollar, bei Micron sind über 75 % der Produktion für 2027 bereits zugesagt. [Lam Research](../lam-research-startet-25-mrd-usd-rueckkauf-und-dividende/) startete einen Rückkauf über 25 Milliarden Dollar, das Management sieht die Lage gelassener als der Markt.
 
 Am Freitag holten acht große Chipwerte im Schnitt gut ein Drittel der Verluste wieder auf, Intel zwei Drittel, Broadcom nur 6 %.
 
