@@ -556,7 +556,7 @@ def share_html(p, url, img):
         ("telegram", "Per Telegram senden", "https://t.me/share/url?url=" + q(page) + "&text=" + q(p["title"])),
         ("mail", "Per E-Mail senden", "mailto:?subject=" + q(p["title"]) + "&body=" + q(p["description"] + "\n\n" + page)),
     ]
-    h = '<div class="sharebar" data-url="%s" data-story="%s"><span class="sharelab">Teilen</span>' % (esc(page), esc(json.dumps(story, ensure_ascii=False)))
+    h = '<div class="sharebar" id="teilen" data-url="%s" data-story="%s"><span class="sharelab">Teilen</span>' % (esc(page), esc(json.dumps(story, ensure_ascii=False)))
     h += '<button type="button" class="sharebtn ig" id="igshare" title="Als Instagram-Story teilen" aria-label="Als Instagram-Story teilen">%s</button>' % ICONS["instagram"]
     for k, label, href in links:
         h += '<a class="sharebtn %s" href="%s" target="_blank" rel="noopener nofollow" title="%s" aria-label="%s">%s</a>' % (k, esc(href), label, label, ICONS[k])
