@@ -42,11 +42,31 @@ Die Sanierung hat ihren Preis: Aetna setzt auf Marge vor Wachstum, die Zahl der 
 
 ## Die Aufspaltung
 
-CVS teilt sich in zwei Börsenunternehmen. Bei CVS Health unter David Joyner bleiben Aetna, Caremark, die Spezialapotheken sowie Oak Street Health und Signify Health. Die neue CVS Pharmacy unter Prem Shah erhält rund 9.000 Filialen, die Versandapotheke und die MinuteClinics. Aktionäre sollen Anteile an beiden bekommen, der Abschluss ist für das erste Halbjahr 2028 geplant, steuerfrei nach US-Bundessteuer, sofern Verwaltungsrat, Börsenaufsicht und Steuerbestätigung zustimmen.
+CVS teilt sich in zwei Börsenunternehmen. Bei CVS Health unter David Joyner bleiben Aetna, Caremark, die Spezialapotheken sowie Oak Street Health und Signify Health. Die neue CVS Pharmacy unter Prem Shah erhält die Filialapotheken, die Versandapotheke, die MinuteClinics und die Plattform Health100.
+
+![Folie aus der CVS-Präsentation: Die Geschäftsbereiche der beiden Unternehmen](/assets/magazin/cvs-folie-zwei-unternehmen.jpg)
+
+Aktionäre sollen Anteile an beiden bekommen. Der Abschluss ist für das erste Halbjahr 2028 geplant und soll nach US-Bundessteuer steuerfrei bleiben, vorbehaltlich des Verwaltungsrats, der Börsenaufsicht und einer Steuerbestätigung.
+
+![Folie aus der CVS-Präsentation: Eckpunkte der Transaktion](/assets/magazin/cvs-folie-transaktion.jpg)
 
 Das Management nennt mehr Fokus, eigene Kapitalverteilung und eine einfachere Struktur. Joyner betont, der Schritt sei möglich geworden, weil sich beide Teile verbessert haben, und kein Zeichen von Not. Analysten sehen auch einen politischen Hintergrund. CVS bekämpft vor Gericht Gesetze in Arkansas und Tennessee, die den gleichzeitigen Besitz von Apotheken und Pharmacy-Benefit-Managern verbieten, ähnliche Initiativen gibt es im Kongress. Die Trennung könnte einer Regelung zuvorkommen. Hinzu kommt die Skepsis der Investoren, denn Details fehlen: Wie die Schulden von 60,7 Milliarden Dollar verteilt werden, ist offen, und der Ausblick für 2027 gilt als schwächer als bei Wettbewerbern.
 
 Für die Trennung spricht, dass beide Teile unterschiedlich sind. Eine Versicherung und eine Filialkette brauchen andere Investitionen, und der Markt kann sie getrennt bewerten. Ob zwei Unternehmen zusammen mehr wert sind als eines, zeigt sich erst, wenn CVS Zahlen je Gesellschaft vorlegt.
+
+## Zwei Unternehmen mit sehr unterschiedlichem Profil
+
+Die Folien zeigen, wie ungleich die Hälften sind. CVS Health ist der Gesundheitskonzern: rund 320 Milliarden Dollar Umsatz (Schätzung für 2026), 27 Millionen Versicherte bei Aetna, 87 Millionen Mitglieder in der Medikamentenverwaltung. Das Unternehmen sieht sich in einem Markt von mehr als 2 Billionen Dollar und setzt auf Wachstum in Medicare, bei Selbstversicherern, Firmenkunden und Medicaid.
+
+![Folie aus der CVS-Präsentation: CVS Health in Zahlen](/assets/magazin/cvs-folie-health.jpg)
+
+CVS Pharmacy ist deutlich kleiner und anders gebaut: rund 145 Milliarden Dollar Umsatz, 9.000 Apotheken, 800 Kliniken ohne Termin und 140 Millionen Kundenkontakte. Der Markt ist mit mehr als 500 Milliarden Dollar kleiner, das Management verspricht ein Rezeptwachstum mindestens auf Marktniveau und stabilere Erstattungen. Das ist ein Hinweis darauf, wo die Probleme der Apotheken lagen: Die Vergütung der Apotheken durch Versicherer und Medikamenten-Einkäufer stand zuletzt unter Druck.
+
+![Folie aus der CVS-Präsentation: CVS Pharmacy in Zahlen](/assets/magazin/cvs-folie-pharmacy.jpg)
+
+Daraus ergibt sich für Anleger ein klares Bild. CVS Health bleibt der größere und ertragsstärkere Teil. Nach den Segmentprognosen für 2026 entfallen rund zwei Drittel des operativen Ergebnisses der Segmente auf Versicherung und Medikamentenverwaltung, rund ein Drittel auf die Apotheken (eigene Rechnung). Wer heute CVS-Aktien hält, besitzt in einem Paket ein Wachstumsgeschäft mit hohen regulatorischen Risiken und ein Filialgeschäft mit stabilen Cashflows, aber dünner Marge. Getrennt kann der Markt beide anders bewerten: Die Apotheken könnten wie ein Einzelhändler mit Dividendenprofil gehandelt werden, die Gesundheitssparte wie ein Versicherer. Ob die Summe nach der Trennung höher ist als heute, hängt davon ab, wie die Schulden verteilt werden und ob die Apotheken allein ausreichend Cashflow für eine eigene Dividende erzeugen.
+
+Die Folien nennen dazu zwei Zusagen: Beide Unternehmen sollen ein solides Investment-Grade-Rating erhalten und beide verpflichten sich zu einer „attraktiven Dividende“. Zahlen dazu nennt CVS nicht.
 
 ## Die Dividende
 
@@ -54,7 +74,7 @@ CVS zahlt 0,665 Dollar je Quartal, 2,66 Dollar im Jahr, bei 79,96 Dollar Kurs si
 
 ![CVS Health: Dividende je Aktie 2021 bis 2026](/assets/magazin/cvs-health-analyse-dividende.png)
 
-Die Deckung ist komfortabel: Sie beansprucht 32 % des bereinigten Gewinns und nach US-GAAP 38 %, vom freien Cashflow der ersten neun Monate frisst sie rund ein Fünftel (eigene Rechnung). Die Bilanz entspannt sich, die Schulden sanken seit Jahresende von 64,6 auf 60,7 Milliarden Dollar, im vierten Quartal sollen wieder Aktien zurückgekauft werden. Eine Dividendenpolitik für die beiden künftigen Unternehmen hat CVS nicht genannt. Wer heute 2,66 Dollar bezieht, hält nach der Trennung Anteile an zwei Firmen, ob beide Ausschüttungen zusammen diese Summe erreichen, ist offen.
+Die Deckung ist komfortabel: Sie beansprucht 32 % des bereinigten Gewinns und nach US-GAAP 38 %, vom freien Cashflow der ersten neun Monate frisst sie rund ein Fünftel (eigene Rechnung). Die Bilanz entspannt sich, die Schulden sanken seit Jahresende von 64,6 auf 60,7 Milliarden Dollar, im vierten Quartal sollen wieder Aktien zurückgekauft werden. Für die beiden künftigen Unternehmen hat CVS nur zugesagt, beide würden eine „attraktive Dividende“ zahlen, eine Höhe oder Quote nennt der Konzern nicht. Wer heute 2,66 Dollar bezieht, hält nach der Trennung Anteile an zwei Firmen, ob beide Ausschüttungen zusammen diese Summe erreichen, ist offen.
 
 ## Bewertung und Risiken
 
