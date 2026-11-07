@@ -105,9 +105,24 @@ def read_post(path):
         import medien; medien.fill(meta)   # fehlendes Logo/CEO-Portrait aus der Medien-Ablage
     except Exception as ex: print("Medien-Ablage:", ex)
     meta["author"] = meta.get("author") or CFG["default_author"]
+    # Grosse Artikel vom Wochenende (Samstag/Sonntag, keine Kurzmeldung) erscheinen unter dem Namen des Redakteurs.
+    if "redaktion" in meta["author"].lower() and meta["dt"].weekday() >= 5 and meta["dt"].strftime("%Y-%m-%d") >= "2026-11-07" and meta.get("typ") != "kurz":
+        meta["author"] = "Kilian Treß"
+    if meta["author"] in AUTOREN:
+        a = AUTOREN[meta["author"]]
+        meta["author_bio"] = meta.get("author_bio") if "redaktion" not in (meta.get("author_bio") or "").lower() else None
+        meta["author_bio"] = meta["author_bio"] or a["bio"]; meta["author_url"] = meta.get("author_url") or a["url"]; meta["author_img"] = a["bild"]
     if "redaktion" in meta["author"].lower(): meta["author"] = "Aus der Redaktion"
     meta["category"] = meta.get("category") or "Analyse"
     return meta
+
+AUTOREN = {
+    "Kilian Treß": {
+        "bild": "assets/autoren/kilian-tress-240.png",
+        "url": "https://www.linkedin.com/in/kilian-tre%C3%9F-87a898125",
+        "bio": "Kilian Treß ist Redakteur und Betreiber von Dividenden-Rechner.de und verantwortet die Inhalte. Rechner, Aktien-Hub, Screener und Depot-Auswertung entstehen im eigenen Haus.",
+    },
+}
 
 _BIG = re.compile(r"(?<![\d,.])(\d{1,3}(?:\.\d{3})*|\d+),(\d{2,})(\s*(?:Mrd\.|Mio\.|Bio\.|Milliarden|Millionen|Billionen)(?!\w))")
 
@@ -627,7 +642,8 @@ def build_post(p, posts):
         o += (f'<p class="kurzquelle">Quelle: <a href="{esc(p["quelle_url"])}" rel="noopener nofollow" target="_blank">{esc(p.get("quelle_name") or "Originalmeldung des Unternehmens")}</a></p>\n')
     o += glossar.box(hits, pre)
     bio = p.get("author_bio") or 'Die Redaktion von Dividenden-Rechner.de schreibt über Dividendenaktien, Kennzahlen und Steuerthemen für Privatanleger. Die Rechner und Auswertungen auf der Seite entstehen im eigenen Haus.'
-    o += f'<aside class="authorbox"><strong>{esc(author)}</strong><p>{esc(bio)}</p><p>{KURZ_HINWEIS if kurz else "Artikel können mit Unterstützung von KI entstehen. Jeder Beitrag wird manuell geprüft und geht erst danach online."} <a href="{pre}ueber-uns/">Mehr über uns</a></p></aside>\n'
+    aimg = f'<img class="authorimg" src="{pre}{p["author_img"]}" alt="{esc(author)}" width="64" height="64" loading="lazy">' if p.get("author_img") else ""
+    o += f'<aside class="authorbox{" hasimg" if aimg else ""}">{aimg}<div><strong>{esc(author)}</strong><p>{esc(bio)}</p><p>{KURZ_HINWEIS if kurz else "Artikel können mit Unterstützung von KI entstehen. Jeder Beitrag wird manuell geprüft und geht erst danach online."} <a href="{pre}ueber-uns/">Mehr über uns</a></p></div></aside>\n'
     others = [x for x in posts if x["slug"] != slug and x.get("typ") != "kurz"][:3]
     if others:
         o += '<aside class="related"><h2>Weitere Artikel</h2><ul>\n' + "\n".join(f'<li><a href="{pre}news/{x["slug"]}/">{esc(x["title"])}</a></li>' for x in others) + "\n</ul></aside>\n"
