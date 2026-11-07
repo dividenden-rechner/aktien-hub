@@ -22,124 +22,47 @@ logo_file: assets/logos/cvs.png
     **Gewinn je Aktie (bereinigt):** 2,09 USD (+31 %)
     **Aktienkurs nach der Meldung:** 79,96 USD (−12,5 %)
 
-    1. **Zahlen:** Umsatz +5,4 % auf 108,4 Mrd. USD, Analysten hatten 1,65 USD Gewinn je Aktie erwartet. Die Jahresprognose steigt zum dritten Mal in diesem Jahr, auf mindestens 8,20 USD je Aktie.
-    2. **Aufspaltung:** Bis zum ersten Halbjahr 2028 soll CVS in zwei Börsenunternehmen zerfallen, eine Versicherungs- und Gesundheitsfirma und eine Apothekenkette. Der Markt reagierte mit einem Kursminus von 12,5 % an einem Tag.
-    3. **Dividende:** 2,66 USD im Jahr, 3,3 % Rendite, gut gedeckt, seit Januar 2024 unverändert. Wie die Ausschüttung nach der Trennung aussieht, ist offen.
-
-## Erst die Erholung, dann der Paukenschlag
+    CVS meldet starke Zahlen, hebt die Prognose zum dritten Mal an und kündigt am selben Tag die Aufspaltung in zwei Börsenunternehmen bis 2028 an. Die Dividende von 2,66 USD ist gut gedeckt, ihre Zukunft nach der Trennung ist offen.
 
 CVS war in diesem Jahr eine der Erholungsgeschichten am US-Markt: Von knapp 72 Dollar Ende März stieg die Aktie bis Ende Juli auf über 104 Dollar, und die Prognose wurde schon zum dritten Mal angehoben. Jetzt kommen wieder starke Quartalszahlen. Und am selben Tag kündigt der Konzern an, sich bis 2028 in zwei Börsenunternehmen aufzuspalten. Die Aktie verlor an einem Tag mehr als ein Achtel ihres Werts.
 
-Viele Beobachter wirkten ratlos. Auf den ersten Blick läuft das Geschäft gut, ein Zwang zum Umbau ist von außen kaum zu erkennen, und die wichtigsten Fragen zu Schulden und Dividende sind offen. Warum der Konzern es trotzdem tut, was das für die Ausschüttung bedeutet und was für und gegen die Teilung spricht, steht hier.
+Viele Beobachter wirkten ratlos. Auf den ersten Blick läuft das Geschäft gut, ein Zwang zum Umbau ist von außen kaum zu erkennen. Die Erklärung liegt in der Politik, denn die Verbindung von Apotheken und Medikamenten-Einkauf steht in den USA unter Druck. Für Anleger stellt sich die Frage, was bleibt: vom Gewinn, von der Dividende und vom Wert der Aktie.
 
-## Das Quartal: mehr Umsatz, +31 % beim Gewinn je Aktie
+## Ein starkes Quartal, mit Einschränkung
 
-Der Umsatz stieg im dritten Quartal 2026 um 5,4 % auf 108,4 Milliarden Dollar. Der bereinigte Gewinn je Aktie legte um 31 % auf 2,09 Dollar zu, Analysten hatten mit 1,65 Dollar gerechnet. Der Vergleich mit dem Vorjahr hinkt allerdings: Im dritten Quartal 2025 stand wegen einer Abschreibung von 5,7 Milliarden Dollar auf die Sparte Health Services ein Verlust von 3,13 Dollar je Aktie im Bericht.
-
-| Kennzahl | Q3 2026 | Q3 2025 | Veränderung |
-|---|---|---|---|
-| Umsatz | 108,4 Mrd. $ | 102,9 Mrd. $ | +5,4 % |
-| Bereinigtes operatives Ergebnis | 4,19 Mrd. $ | 3,46 Mrd. $ | +21 % |
-| Gewinn je Aktie, bereinigt | 2,09 $ | 1,60 $ | +31 % |
-| Gewinn je Aktie, nach US-GAAP | 1,68 $ | −3,13 $ | Vorjahr mit Abschreibung |
-| Operativer Cashflow | 4,7 Mrd. $ | 0,8 Mrd. $ | knapp das Sechsfache |
-
-Die Prognose für 2026 hebt CVS zum dritten Mal in diesem Jahr an. Der bereinigte Gewinn je Aktie soll mindestens 8,20 Dollar erreichen, nach 6,75 Dollar im Jahr 2025 (+21 %). Zu Jahresbeginn hatte CVS 7,00 bis 7,20 Dollar in Aussicht gestellt.
-
-| Prognose 2026 | Februar | August | November |
-|---|---|---|---|
-| Gewinn je Aktie, bereinigt | 7,00–7,20 $ | 7,90–8,10 $ | mindestens 8,20 $ |
-| Umsatz | | mindestens 414 Mrd. $ | mindestens 420 Mrd. $ |
-| Operativer Cashflow | mindestens 9,0 Mrd. $ | mindestens 11,5 Mrd. $ | mindestens 15,5 Mrd. $ |
+Der Umsatz stieg im dritten Quartal um 5,4 % auf 108,4 Milliarden Dollar, der bereinigte Gewinn je Aktie um 31 % auf 2,09 Dollar, Analysten hatten 1,65 Dollar erwartet. Die Prognose für 2026 liegt nun bei mindestens 8,20 Dollar je Aktie, zu Jahresbeginn standen 7,00 bis 7,20 Dollar im Plan. Der Vergleich mit dem Vorjahr hinkt jedoch, denn damals belastete eine Abschreibung von 5,7 Milliarden Dollar das Ergebnis.
 
 ![CVS Health: Bereinigter Gewinn je Aktie und Prognose](/assets/magazin/cvs-health-analyse-eps.png)
 
-Den Ausblick für 2027 gab CVS erstmals konkret an: mindestens 8,65 Dollar je Aktie, Analysten erwarteten 8,53 Dollar. Gegenüber 8,20 Dollar sind das nur noch rund 5 % Wachstum, nach 21 % in diesem Jahr.
-
-## Woher der Gewinn kommt: Aetna dreht, Caremark tritt auf der Stelle
-
-Den größten Sprung macht die Versicherung. Im Segment Health Care Benefits (Aetna) stieg das bereinigte operative Ergebnis von 314 Millionen auf 912 Millionen Dollar, fast das Dreifache. Die Medical Benefit Ratio, also der Anteil der Prämien, der für Behandlungen draufgeht, sank von 92,8 % auf 91,3 %. CVS führt das vor allem auf bessere Preise und Kostenkontrolle im Medicare-Geschäft zurück.
-
-| Segment | Operatives Ergebnis Q3 2026 | Q3 2025 | Veränderung | Prognose 2026 |
-|---|---|---|---|---|
-| Health Care Benefits (Aetna) | 0,91 Mrd. $ | 0,31 Mrd. $ | fast verdreifacht | mind. 5,40 Mrd. $ (zuvor 5,03–5,37) |
-| Health Services (u. a. Caremark) | 2,11 Mrd. $ | 2,05 Mrd. $ | +3 % | mind. 7,25 Mrd. $ (bestätigt) |
-| Pharmacy & Consumer Wellness (Apotheken) | 1,64 Mrd. $ | 1,48 Mrd. $ | +11 % | mind. 6,50 Mrd. $ (zuvor 6,40) |
+Getragen wird der Gewinn von der Versicherung Aetna. Ihr operatives Ergebnis stieg von 314 Millionen auf 912 Millionen Dollar, weil die Kosten für Behandlungen im Verhältnis zu den Prämien sanken (Medical Benefit Ratio 91,3 statt 92,8 %). Die Apotheken verdienten 11 % mehr, obwohl ihr Umsatz um 2 % sank, geholfen haben übernommene Rite-Aid-Standorte. Die Pharmacy-Benefit-Sparte um Caremark trat mit einem Plus von 3 % auf der Stelle.
 
 ![CVS Health: Operatives Ergebnis nach Segmenten](/assets/magazin/cvs-health-analyse-segmente.png)
 
-Die Apotheken verdienen mehr, obwohl der Umsatz des Segments um 2 % auf 35,5 Milliarden Dollar sank. Geholfen haben übernommene Rite-Aid-Standorte und mehr Rezepte (+1,9 %). Die Umsatzentwicklung in den bestehenden Filialen lag allerdings bei −0,6 %.
+Die Sanierung hat ihren Preis: Aetna setzt auf Marge vor Wachstum, die Zahl der Versicherten sank von 26,7 auf 26,1 Millionen. Für 2027 stellt CVS mindestens 8,65 Dollar je Aktie in Aussicht, nur noch rund 5 % mehr, nach 21 % in diesem Jahr. Caremark soll dann sogar schwächer ausfallen. Der Gewinn hängt damit stark an der Erholung bei Aetna, und die Branche kämpft weiter mit hohen Behandlungskosten.
 
-Die Kehrseite bei Aetna: Die Zahl der Versicherten sank von 26,7 auf 26,1 Millionen. Die Prämien im Geschäft mit Staatsprogrammen stiegen um 8,2 %, im Geschäft mit Firmenkunden fielen sie um 16,9 %. Aetna setzt damit auf Marge vor Wachstum. Ob das so bleibt, ist offen.
+## Die Aufspaltung
 
-## Die Aufspaltung: der eigentliche Knall
+CVS teilt sich in zwei Börsenunternehmen. Bei CVS Health unter David Joyner bleiben Aetna, Caremark, die Spezialapotheken sowie Oak Street Health und Signify Health. Die neue CVS Pharmacy unter Prem Shah erhält rund 9.000 Filialen, die Versandapotheke und die MinuteClinics. Aktionäre sollen Anteile an beiden bekommen, der Abschluss ist für das erste Halbjahr 2028 geplant, steuerfrei nach US-Bundessteuer, sofern Verwaltungsrat, Börsenaufsicht und Steuerbestätigung zustimmen.
 
-Am Berichtstag kam die Nachricht, die den Kurs bestimmte: CVS will sich in zwei Börsenunternehmen teilen. Die Aktie schloss 12,5 % im Minus bei 79,96 Dollar, knapp 15 Milliarden Dollar Marktwert verschwanden an einem Tag. Ein Analyst sprach von einem „Schock“.
+Das Management nennt mehr Fokus, eigene Kapitalverteilung und eine einfachere Struktur. Joyner betont, der Schritt sei möglich geworden, weil sich beide Teile verbessert haben, und kein Zeichen von Not. Analysten sehen auch einen politischen Hintergrund. CVS bekämpft vor Gericht Gesetze in Arkansas und Tennessee, die den gleichzeitigen Besitz von Apotheken und Pharmacy-Benefit-Managern verbieten, ähnliche Initiativen gibt es im Kongress. Die Trennung könnte einer Regelung zuvorkommen. Hinzu kommt die Skepsis der Investoren, denn Details fehlen: Wie die Schulden von 60,7 Milliarden Dollar verteilt werden, ist offen, und der Ausblick für 2027 gilt als schwächer als bei Wettbewerbern.
 
-|  | CVS Health (bleibt) | CVS Pharmacy (neu) |
-|---|---|---|
-| Chef | David Joyner | Prem Shah |
-| Geschäfte | Aetna, Caremark, Spezialapotheken, Oak Street Health, Signify Health | rund 9.000 Filialen, Versandapotheke, MinuteClinic, Plattform Health100 |
+Für die Trennung spricht, dass beide Teile unterschiedlich sind. Eine Versicherung und eine Filialkette brauchen andere Investitionen, und der Markt kann sie getrennt bewerten. Ob zwei Unternehmen zusammen mehr wert sind als eines, zeigt sich erst, wenn CVS Zahlen je Gesellschaft vorlegt.
 
-Beide Unternehmen sollen börsennotiert sein, der Abschluss ist für das erste Halbjahr 2028 geplant. Aktionäre sollen nach der Trennung Anteile an beiden halten. CVS erwartet, dass die Abspaltung für die US-Bundessteuer steuerfrei bleibt. Voraussetzungen sind noch Beschlüsse des Verwaltungsrats, eine Registrierung bei der Börsenaufsicht und eine Steuerbestätigung. Aetna kaufte CVS 2018 für rund 78 Milliarden Dollar, Caremark 2007.
+## Die Dividende
 
-**Die Begründung des Managements:** mehr Fokus, eigene Kapitalverteilung, Beweglichkeit, einfachere Struktur. Joyner sagt, die Trennung sei möglich geworden, weil sich Versicherung und Apotheken in den letzten zwei Jahren verbessert haben. Der Schritt sei kein Zeichen von Not. CFO Brian Newman hält die Zusatzkosten zweier getrennter Firmen für beherrschbar und sagt, beide sollen Bilanzen mit Investment-Grade-Rating behalten.
-
-**Die Zweifel der Analysten:**
-
-- UBS sieht im Schritt eine Verteidigung gegen Regulierung.
-- Morningstar vermutet, das Management wolle einer gesetzlichen Entscheidung zuvorkommen. Tatsächlich bekämpft CVS vor Gericht Gesetze in Arkansas und Tennessee, die gleichzeitigen Besitz von Apotheken und Pharmacy-Benefit-Managern verbieten. Eine ähnliche Initiative gibt es im US-Kongress.
-- Barclays nennt als Hauptsorge der Investoren, dass finanzielle Details fehlen. Offen ist zum Beispiel, wie die Schulden von 60,7 Milliarden Dollar verteilt werden.
-- Bahl & Gaynor halten den Ausblick für 2027 im Vergleich zu Wettbewerbern für schwächer.
-
-**Was dafür spricht:** Die Teile sind unterschiedlich. Eine Versicherung mit Pharmacy-Benefit-Geschäft und eine Filialkette brauchen andere Investitionen, und der Markt kann sie getrennt bewerten. J.P. Morgan sieht „some logic to the split“. Die Apothekenkette wird zudem nicht mehr im selben Konzern wie der Pharmacy-Benefit-Manager Caremark geführt, den Regulierer und Kunden besonders kritisch sehen. Die Preisfrage lautet, ob zwei Unternehmen zusammen mehr wert sind als eines. Beantworten lässt sie sich erst, wenn CVS Zahlen je Gesellschaft liefert.
-
-## Dividende: gut gedeckt, seit 2024 eingefroren, nach 2028 offen
-
-CVS zahlt 0,665 Dollar je Quartal, also 2,66 Dollar im Jahr. Beim Kurs von 79,96 Dollar sind das 3,3 % Rendite. Gekürzt hat CVS die Dividende seit 29 Jahren nicht. Erhöht hat der Konzern sie zuletzt im Januar 2024 um knapp 10 %, seither steht sie still.
-
-| Jahr | Dividende je Aktie |
-|---|---|
-| 2021 | 2,00 $ |
-| 2022 | 2,20 $ |
-| 2023 | 2,42 $ |
-| 2024 | 2,66 $ |
-| 2025 | 2,66 $ |
-| 2026 | 2,66 $ |
+CVS zahlt 0,665 Dollar je Quartal, 2,66 Dollar im Jahr, bei 79,96 Dollar Kurs sind das 3,3 % Rendite. Gekürzt wurde die Dividende seit 29 Jahren nicht, erhöht zuletzt im Januar 2024, seither steht sie still.
 
 ![CVS Health: Dividende je Aktie 2021 bis 2026](/assets/magazin/cvs-health-analyse-dividende.png)
 
-Die Deckung ist komfortabel. Auf den bereinigten Gewinn von mindestens 8,20 Dollar gerechnet, schlägt die Dividende mit 32 % zu Buche, auf den US-GAAP-Gewinn von mindestens 6,98 Dollar mit 38 %. In den ersten neun Monaten flossen 2,6 Milliarden Dollar an die Aktionäre. Der operative Cashflow lag bei 15,3 Milliarden, abzüglich 2,4 Milliarden Investitionen bleiben rund 13 Milliarden. Die Dividende frisst davon ein Fünftel (eigene Rechnung).
+Die Deckung ist komfortabel: Sie beansprucht 32 % des bereinigten Gewinns und nach US-GAAP 38 %, vom freien Cashflow der ersten neun Monate frisst sie rund ein Fünftel (eigene Rechnung). Die Bilanz entspannt sich, die Schulden sanken seit Jahresende von 64,6 auf 60,7 Milliarden Dollar, im vierten Quartal sollen wieder Aktien zurückgekauft werden. Eine Dividendenpolitik für die beiden künftigen Unternehmen hat CVS nicht genannt. Wer heute 2,66 Dollar bezieht, hält nach der Trennung Anteile an zwei Firmen, ob beide Ausschüttungen zusammen diese Summe erreichen, ist offen.
 
-Die Bilanz entspannt sich. Die Gesamtschulden sanken seit Jahresende von 64,6 auf 60,7 Milliarden Dollar, die liquiden Mittel stiegen auf 11,7 Milliarden. CVS hat sein Verschuldungsziel nach eigenen Angaben früher als geplant erreicht und will im vierten Quartal wieder Aktien zurückkaufen, ohne eine Summe zu nennen. Wie viel das bringt, ist offen: Die Aktienzahl liegt seit dem Aetna-Kauf bei gut 1,3 Milliarden und ist seither kaum gesunken.
+## Bewertung und Risiken
 
-**Was offen bleibt:** CVS hat keine Dividendenpolitik für die beiden künftigen Unternehmen genannt. Wer heute 2,66 Dollar bekommt, hält nach der Trennung Anteile an zwei Firmen. Wie hoch die Summe der beiden Ausschüttungen sein wird, ist nicht gesagt. Auch eine Erhöhung vor der Trennung hat das Management nicht in Aussicht gestellt.
-
-## Bewertung: unter 10 Mal Gewinn, aber mit gutem Grund
-
-Beim Kurs von 79,96 Dollar kostet die Aktie das 9,8-Fache des erwarteten Gewinns 2026 und das 9,2-Fache des Mindestgewinns 2027 (eigene Rechnung mit 8,20 und 8,65 Dollar). Im August, bei rund 94 Dollar, lag das Kurs-Gewinn-Verhältnis noch bei 11,5.
-
-Der Kurs hat in diesem Jahr einen weiten Weg zurückgelegt: Von 71,82 Dollar Ende März stieg er bis Ende Juli auf 104,43 Dollar (+45 %), nach den Q2-Zahlen am 5. August fiel er trotz angehobener Prognose um 6 %. Seit dem Hoch ist die Aktie 23 % gefallen. Die Mehrheit der Analysten blieb zuletzt positiv: Im August lagen 18 von 27 Einschätzungen bei „Buy“, keine bei „Sell“, das durchschnittliche Kursziel betrug 116 Dollar. Diese Zahlen stammen aus der Zeit vor der Aufspaltung.
+Zum Kurs von 79,96 Dollar kostet die Aktie das 9,8-Fache des erwarteten Gewinns 2026 (eigene Rechnung), im August waren es bei 94 Dollar noch 11,5. Seit dem Hoch im Juli hat sie 23 % verloren. Der Abschlag hat Gründe: Der Gewinn lebt von der Margenerholung bei Aetna, ein Teil davon aus Rückstellungsauflösungen, die sich nicht beliebig wiederholen. 2027 gilt als Zwischenjahr. Der Cashflow sprang von 7,2 auf 15,3 Milliarden Dollar in neun Monaten, ohne dass CVS erklärt, ob das von Dauer ist. Und die Trennung bindet bis 2028 Management und Geld.
 
 ![CVS-Aktie: Schlusskurs in US-Dollar zum Monatsende](/assets/magazin/cvs-health-analyse-kurs.png)
 
-## Was dagegen spricht und worauf wir achten
-
-**Die Gegenargumente zur guten Zahlenlage:**
-
-- **Der Gewinn lebt von der Margenerholung bei Aetna.** Die Kosten steigen laut CVS in der ganzen Branche weiter über dem historischen Niveau, und Aetna rechnet damit auch noch 2027. In den ersten neun Monaten fielen die Kostenschätzungen für frühere Jahre um 1,3 Milliarden Dollar günstiger aus als gedacht. Solche Rückstellungsauflösungen helfen dem Gewinn, wiederholen sich aber nicht beliebig.
-- **2027 wird ein Zwischenjahr.** Das Segment Health Services mit Caremark soll mit mindestens 7,0 Milliarden Dollar sein Tief erreichen (2026: mindestens 7,25 Milliarden, also rund 3 % weniger). Gründe sind weniger Gewinn aus 340B-Medikamentenpreisen, ein schwächerer Verkaufszyklus und Kundenverluste. Newman sagt, der Mindestgewinn 2027 gleiche nur die Verwässerung der Aktienzahl aus und rechne keine Rückkäufe ein.
-- **Der Cashflow springt, ohne dass die Präsentation erklärt, warum.** Er stieg in neun Monaten von 7,2 auf 15,3 Milliarden Dollar, die Jahresprognose von 9,0 auf mindestens 15,5 Milliarden. Ob das nachhaltig ist oder Timing, sagt CVS nicht.
-- **Die Trennung dauert gut ein Jahr** und bindet bis dahin Management und Geld. Wie die Schulden aufgeteilt werden, ist offen.
-- **Aetna schrumpft bei den Versicherten** (26,1 statt 26,7 Millionen), vor allem im Geschäft mit Firmenkunden.
-
-**Worauf wir als Nächstes achten:**
-
-- Die Registrierungsunterlagen zur Abspaltung: Sie dürften Zahlen je Gesellschaft, Schuldenaufteilung und Dividendenpolitik enthalten.
-- Ob CVS die Dividende noch anhebt oder bei 2,66 Dollar bleibt.
-- Die Medical Benefit Ratio im vierten Quartal (Ziel: untere Hälfte von 89,75 % ± 0,25 Punkte).
-- Die Größe des Rückkaufprogramms.
-- Ob Gerichte und Gesetzgeber die Verbindung von Apotheken und Pharmacy-Benefit-Managern einschränken, bevor CVS die Trennung abschließt.
+Entscheidend werden die Registrierungsunterlagen zur Abspaltung, die Zahlen je Gesellschaft, Schuldenaufteilung und Dividendenpolitik enthalten dürften. Dazu kommen die Medical Benefit Ratio im vierten Quartal, die Größe des Rückkaufs und die Frage, ob Gerichte oder Gesetzgeber die Verbindung von Apotheken und Pharmacy-Benefit-Managern vorher einschränken.
 
 Das ist eine Einordnung der Zahlen und keine Kaufempfehlung.
 

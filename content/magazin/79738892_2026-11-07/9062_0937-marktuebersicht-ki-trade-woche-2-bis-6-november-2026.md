@@ -1,6 +1,6 @@
 ---
 title: "Wochenbilanz: Schwächste Börsenwoche seit Juni, warum der KI-Trade wackelt und was dagegen spricht"
-description: "Die schlechteste Börsenwoche seit Juni trifft vor allem Chip- und KI-Werte. Die Gründe für den Rücksetzer, die Argumente gegen eine Wende im KI-Boom und was die Woche für Dividendenanleger bedeutet."
+description: "Der Ölpreis fällt, die Demokraten gewinnen die Wahl, der Nasdaq bricht ein: Warum die Börsen in dieser Woche durchgeschüttelt wurden und was für und gegen eine Wende im KI-Boom spricht."
 date: 2026-11-07 09:37
 author: "Redaktions-Team Dividenden-Rechner.de"
 author_bio: "Das Redaktions-Team von Dividenden-Rechner.de schreibt über Dividendenaktien, Kennzahlen und Steuerthemen für Privatanleger. Die Rechner und Auswertungen auf der Seite entstehen im eigenen Haus."
@@ -17,61 +17,35 @@ image_artist_url: https://unsplash.com/@davidvives?utm_source=dividenden-rechner
     **S&P 500:** −2,7 % in der Woche
     **Dow Jones:** −0,9 % in der Woche
 
-    1. **Verlauf:** Am Mittwoch springt der Dow nach der Kongresswahl um 3 %, am Donnerstag verliert der Nasdaq 5,5 %, am Freitag erholen sich die Chipwerte teilweise. S&P 500 und Nasdaq erleben ihre schwächste Woche seit Juni.
-    2. **Der Streitpunkt:** Anleger fürchten, dass eine demokratische Mehrheit im Kongress den Bau von KI-Rechenzentren bremst. Dagegen sprechen die Investitionspläne der großen Cloud-Konzerne und die Einschätzung vieler Analysten, es gehe um eine zeitliche Verschiebung des Ausbaus.
-    3. **Für Dividendenanleger:** Die Standardwerte im Dow hielten sich besser als die Technologie. Mehrere Dividendenzahler erhöhten in dieser Woche ihre Ausschüttung. Die Zinsen bleiben die große Unbekannte, denn der Markt rechnet mit einer Zinserhöhung im Dezember.
+    Auslöser des Ausverkaufs war die Kongresswahl, verstärkt haben ihn hohe Bewertungen und Zinssorgen. Gegen eine Trendwende im KI-Boom sprechen die Investitionspläne und Auftragsbücher der Konzerne.
 
-## Eine Woche in drei Akten
-
-Der Wochenstart verlief ruhig. Rechnerisch lag der S&P 500 am Dienstag mit rund 7.569 Punkten praktisch auf dem Niveau vom Freitag davor. Der Ölpreis fiel zu Wochenbeginn kräftig, im Raum steht eine mögliche Annäherung der USA an den Iran. Brent rutschte bis Freitag unter 100 Dollar, vor einer Woche standen noch rund 112 Dollar im Kurs.
-
-**Mittwoch, 4. November:** Nach der Kongresswahl, bei der die Demokraten beide Kammern gewannen, sprang der Dow Jones um 1.569 Punkte oder 3 % auf 53.356 Punkte. Der S&P 500 legte 1,6 % zu, der Nasdaq 1,4 %. Zu den Gewinnern zählten Krankenhausbetreiber und Händler, die Kunden mit kleineren Einkommen bedienen, so die Auswertung der Nachrichtenagentur AP. Gleichzeitig lag schon an diesem Tag ein Schatten auf den KI-Werten: Micron verlor etwa 6 %, Quanta Services als Zulieferer für Stromnetze rund 12 %.
-
-**Donnerstag, 5. November:** Dann kippte die Stimmung. Der Nasdaq Composite verlor 5,5 %, der S&P 500 4,4 %, und der Dow gab 1.833 Punkte ab. Es war für S&P 500 und Nasdaq der schwächste Handelstag seit April 2025. Alle elf Sektoren des S&P 500 schlossen im Minus, am stärksten traf es die Firmen, die den KI-Ausbau beliefern.
-
-**Freitag, 6. November:** Der Nasdaq gewann 1,1 %, der S&P 500 0,3 %, der Dow gab 0,5 % nach. Der US-Arbeitsmarktbericht fiel stark aus: Die Wirtschaft schuf im Oktober 165.000 Stellen, erwartet hatte der Markt gut 60.000, die Arbeitslosenquote sank auf 4,1 %. Das hilft der Konjunktur, nährt aber die Sorge vor höheren Zinsen.
+Die Woche begann ruhig und endete als die schwächste seit Juni. Zuerst fiel der Ölpreis, weil sich eine Annäherung zwischen den USA und dem Iran abzeichnete: Brent rutschte unter 100 Dollar, eine Woche zuvor waren es noch rund 112. Dann gewannen die Demokraten beide Kammern des Kongresses, und der Dow sprang am Mittwoch um 3 %. Am Donnerstag kippte alles. Der Nasdaq verlor 5,5 %, der S&P 500 4,4 %, der schwächste Handelstag seit April 2025, und alle elf Sektoren schlossen im Minus. Am stärksten traf es die Unternehmen, die den KI-Ausbau beliefern.
 
 ![Wochenbilanz der US-Indizes vom 2. bis 6. November 2026](/assets/magazin/marktuebersicht-2026-11-06-wochenbilanz.png)
 
-## Warum der KI-Trade wackelt
+## Politik als Auslöser, Bewertung als Verstärker
 
-**Die Politik.** Die Demokraten haben nach den Berichten auch in Bundesstaaten gewonnen, in denen viele Rechenzentren entstehen, etwa in Texas. Steigende Strompreise sind dort ein Wahlkampfthema, und neue Rechenzentren gelten vielen Wählern als Preistreiber. Die UBS rechnet damit, dass rund 30 % der für 2028 erwarteten neuen Rechenzentrumskapazität in den USA gefährdet sind, allein in Texas geht es um 18 Gigawatt. Gesetze gibt es bisher nicht, die Sorge gilt möglichen Auflagen und höheren Kosten für den Netzanschluss.
+Der Ausverkauf hat einen politischen Kern. Die Demokraten gewannen auch dort, wo viele Rechenzentren entstehen, etwa in Texas, und steigende Strompreise waren dort ein Wahlkampfthema. Anleger fürchten nun Auflagen und höhere Kosten für den Netzanschluss. Die UBS sieht rund 30 % der bis 2028 erwarteten neuen Rechenzentrumskapazität in den USA in Gefahr, allein in Texas 18 Gigawatt. Gesetze gibt es bisher keine, es geht um die Erwartung.
 
-**Die Stimmung.** Schon in der Woche davor hatten Alphabet, Amazon und Intel enttäuscht, in dieser Woche folgten schwächere Ausblicke von Apple und Palantir sowie ein Umsatz von Shopify unter den Erwartungen. Eine Umfrage der Universität Michigan zeigt, dass Verbraucher die Sorge vor einer KI-Blase häufiger nennen. In Asien fiel der südkoreanische Kospi am Freitag um mehr als 6 %, der japanische Nikkei 225 rutschte in einen Bärenmarkt.
+Dass diese Erwartung so heftig durchschlug, liegt an der Ausgangslage. Nach einem langen Anstieg war viel Gutes in den Kursen eingepreist, und die Stimmung hatte schon vorher gelitten: Alphabet, Amazon und Intel hatten enttäuscht, Apple und Palantir gaben schwächere Ausblicke. Nvidia fiel am Donnerstag unter den Schlusskurs von Ende 2025, der Jahresgewinn vieler KI-Werte war dünner, als es die Schlagzeilen vermuten ließen.
 
-**Die Zinsen.** Der Markt sieht die Wahrscheinlichkeit einer Zinserhöhung am 9. Dezember bei über 65 %. Hohe Zinsen drücken Bewertungen von Wachstumsaktien, deren Gewinne weit in der Zukunft liegen. Nach dem starken Arbeitsmarktbericht stiegen die Renditen am Freitag.
+Hinzu kommen die Zinsen. Der Markt sieht die Wahrscheinlichkeit einer Zinserhöhung am 9. Dezember bei über 65 %. Der Arbeitsmarktbericht vom Freitag verschärfte das: 165.000 neue Stellen statt der erwarteten 60.000, die Arbeitslosenquote sank auf 4,1 %. Für die Konjunktur ist das gut, für Wachstumsaktien mit Gewinnen in ferner Zukunft ist es ein Problem, denn die Renditen stiegen.
 
-**Die Bewertung.** Nach einem langen Anstieg war viel Gutes eingepreist. Dass Nvidia mit dem Verlust vom Donnerstag unter den Schlusskurs von Ende 2025 fiel, zeigt, wie dünn der Jahresgewinn vieler KI-Werte geworden war. Am Freitag kletterte die Aktie wieder darüber.
+## Was gegen eine Wende spricht
 
-## Warum er nicht wackelt
+Die Konzerne planen unverändert. Die großen Cloud-Anbieter investierten im dritten Quartal rund 227 Milliarden Dollar, für 2026 werden 803 bis 828 Milliarden erwartet. Amazon kündigte für 2027 „deutlich mehr“ an. Die UBS rechnet eher mit einer Verschiebung von 2027 auf 2028 als mit einer Absage, und die Auftragsbücher sind voll: Quanta Services meldete einen Rekordbestand von 63,7 Milliarden Dollar, bei Micron sind über 75 % der Produktion für 2027 bereits zugesagt. Lam Research startete einen Rückkauf über 25 Milliarden Dollar, das Management sieht die Lage gelassener als der Markt.
 
-**Die Investitionen laufen weiter.** Die großen Cloud-Konzerne gaben im dritten Quartal rund 227 Milliarden Dollar für Investitionen aus, für das Gesamtjahr 2026 werden 803 bis 828 Milliarden Dollar erwartet. Amazon rechnet für 2027 mit „deutlich mehr“ Ausgaben, Alphabet erwartet laut CFO einen deutlichen Anstieg. Wer Rechenzentren bauen will, hat das Geld eingeplant.
-
-**Verschiebung statt Absage.** Die UBS beschreibt die Gefahr als Zeitfrage: Ausgaben könnten von 2027 nach 2028 rutschen. Die Bank erwartet keinen schnellen Rückgang der Nachfrage nach KI und Cloud. Jane Gibbons von Jefferies sieht im Ausverkauf eine Reaktion auf die Wahl und keinen grundlegenden Neustart (sinngemäß aus dem Englischen).
-
-**Die Auftragsbücher sind voll.** Quanta Services meldete vor einer Woche einen Rekord-Auftragsbestand von 63,7 Milliarden Dollar. Beim Speicherhersteller Micron sind über 75 % der Produktion des Jahres 2027 bereits fest zugesagt. Lam Research genehmigte einen Aktienrückkauf über 25 Milliarden Dollar, ein Signal, dass das Management die Lage gelassener sieht als der Markt.
-
-**Die Erholung kam sofort.** Acht große Chipwerte holten am Freitag im Schnitt mehr als ein Drittel der Donnerstagsverluste wieder auf, bei Intel waren es zwei Drittel, bei Broadcom nur 6 %. Auch Präsident Trump bekräftigte seine Unterstützung für den KI-Ausbau.
+Am Freitag holten acht große Chipwerte im Schnitt gut ein Drittel der Verluste wieder auf, Intel zwei Drittel, Broadcom nur 6 %.
 
 ![Chipwerte am Donnerstag und Freitag im Vergleich](/assets/magazin/marktuebersicht-2026-11-06-chips.png)
 
-Ein Tag der Erholung entscheidet nichts. Die Korrektur kann weitergehen, wenn die Inflationszahlen am Dienstag hoch ausfallen oder aus den Bundesstaaten konkrete Auflagen für Rechenzentren kommen. Beide Lager haben Argumente, und der Markt entscheidet im Wochentakt neu, welche er gerade höher gewichtet.
+Ein Erholungstag entscheidet nichts. Zum Test wird die kommende Woche: Fallen die US-Inflationszahlen am Dienstag hoch aus oder kommen aus den Bundesstaaten konkrete Auflagen für Rechenzentren, kann die Korrektur weitergehen. Beide Lager haben Argumente, und der Markt gewichtet sie im Wochentakt neu.
 
-## Was die Woche für Dividendenanleger bedeutet
+## Was das für Dividendenanleger heißt
 
-Der Dow Jones mit seinen Standardwerten verlor in der Woche nur 0,9 %, der Nasdaq 3,4 %. Für Anleger mit Fokus auf Ausschüttungen war die Woche damit weniger dramatisch als die Schlagzeilen. Das ist eine Beschreibung der Woche und keine Garantie, denn auch Dividendentitel können fallen.
+Der Dow mit seinen Standardwerten verlor 0,9 %, der Nasdaq 3,4 %. Dividendentitel sind damit glimpflicher davongekommen, eine Garantie ist das nicht. Mehrere Unternehmen hoben in der Woche ihre Ausschüttung an: [**Simon Property Group**](../simon-property-group-q3-2026-dividende-erhoehung/) auf 2,30 US-Dollar je Quartal, [**Regency Centers**](../regency-centers-q3-2026-dividende-erhoehung/) um 6 % auf 0,80 US-Dollar, und [**Enbridge**](../enbridge-q3-2026-rekord-ebitda-prognose-bestaetigt/) zum 31. Mal in Folge. [**Lam Research**](../lam-research-startet-25-mrd-usd-rueckkauf-und-dividende/) zahlt 0,33 US-Dollar und stockt den Rückkauf auf. Versorger wie [**Con Edison**](../con-edison-q3-2026-zahlen/) und [**PPL**](../ppl-corporation-q3-2026-zahlen/) lieferten solide Zahlen, stehen aber in einer Zwickmühle: Der Strombedarf der Rechenzentren treibt ihr Wachstum, zugleich wächst der politische Druck auf die Strompreise.
 
-Mehrere Unternehmen meldeten in diesen Tagen höhere Ausschüttungen. [**Simon Property Group**](../simon-property-group-q3-2026-dividende-erhoehung/) erhöht die Quartalsdividende auf 2,30 US-Dollar, [**Regency Centers**](../regency-centers-q3-2026-dividende-erhoehung/) um 6 % auf 0,80 US-Dollar. Beide sind Immobiliengesellschaften mit Einkaufszentren, also Werte, die auf Zinsänderungen empfindlich reagieren. [**Lam Research**](../lam-research-startet-25-mrd-usd-rueckkauf-und-dividende/) zahlt 0,33 US-Dollar je Aktie und stockt den Rückkauf auf. Der Pipelinekonzern [**Enbridge**](../enbridge-q3-2026-rekord-ebitda-prognose-bestaetigt/) hat die Dividende nach eigenen Angaben 31 Jahre in Folge angehoben. Versorger wie [**Con Edison**](../con-edison-q3-2026-zahlen/) und [**PPL**](../ppl-corporation-q3-2026-zahlen/) lieferten solide Quartalszahlen. Gerade Stromversorger stehen im Zentrum der Debatte: Der Strombedarf der Rechenzentren ist ihr Wachstumstreiber, zugleich wächst der politische Druck auf die Strompreise.
-
-Die wichtigste Zahl für Dividendenjäger ist die Rendite zehnjähriger US-Staatsanleihen, die am Donnerstag bei rund 4,84 % lag. Solange sichere Anleihen so viel abwerfen, müssen Dividendenaktien mit Wachstum oder Dividendensteigerung überzeugen. Wie Anleihen funktionieren und was die UBS dazu sagt, lesen Sie in unserem Beitrag zum Thema.
-
-## Die Woche im Überblick
-
-- **Dow Jones:** −0,9 %, Mittwochsschluss 53.356 Punkte, Donnerstag −1.833 Punkte
-- **S&P 500:** −2,7 %, schwächste Woche seit Juni
-- **Nasdaq Composite:** −3,4 %, am Donnerstag −5,5 %
-- **Russell 2000:** −2,1 %
-- **Termine:** Dienstag, 10. November, US-Inflationszahlen für Oktober, Freitag, 13. November, Erzeugerpreise
+Der Maßstab bleibt die Rendite zehnjähriger US-Staatsanleihen, am Donnerstag rund 4,84 %. Solange sichere Anleihen so viel abwerfen, müssen Dividendenaktien mit steigenden Ausschüttungen überzeugen. Wie Anleihen funktionieren und was die UBS dazu sagt, erklärt [unser Beitrag zu Anleihen](../anleihen-ubs-chancen-renditen-portfolio/).
 
 ## Quellen
 
