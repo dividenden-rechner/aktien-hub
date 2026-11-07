@@ -10,11 +10,11 @@ quelle_name: "Pressemitteilung Vertex Pharmaceuticals zum dritten Quartal 2026"
 logo_name: "Vertex Pharmaceuticals"
 logo_symbol: VRTX
 logo_domain: vrtx.com
-image: https://images.unsplash.com/photo-1579154204601-01588f351e67?ixid=M3wxMTE3OTgzfDB8MXxzZWFyY2h8NXx8cGhhcm1hJTIwbGFiJTIwc2NpZW50aXN0fGVufDF8MHx8fDE3OTQwNDExNjV8MA&ixlib=rb-4.1.0&w=1600&h=900&fit=crop&crop=entropy&q=80&fm=jpg
-image_alt: "Foto zu Vertex Pharmaceuticals: DNA Genotyping and Sequencing. A technician works among a fleet of desktop genomic sequencing machines at the Cancer Genomics Research Laboratory, part of the National Cancer Institute's Division of C"
-image_credit: "Foto: National Cancer Institute auf Unsplash"
-image_source: https://unsplash.com/photos/woman-standing-in-front-of-the-digital-machine-oCLuFi9GYNA?utm_source=dividenden-rechner&utm_medium=referral
-image_artist_url: https://unsplash.com/@nci?utm_source=dividenden-rechner&utm_medium=referral
+image: assets/magazin/vertex-pharmaceuticals-q3-2026-zahlen-prognose-foto.jpg
+image_alt: "Foto zu Vertex Pharmaceuticals: Pfizer Inc Middleton Research Pharmaceutical laboratory"
+image_credit: "Foto: Corey Coyle / Wikimedia Commons, CC BY 3.0"
+image_source: https://commons.wikimedia.org/wiki/File:Pfizer_Inc_Middleton_Research_Pharmaceutical_laboratory_-_panoramio.jpg
+image_artist_url: 
 logo_file: assets/logos/vrtx.png
 ---
 <!-- PRÜFEN: Alle Zahlen stammen aus der Vertex-Pressemitteilung vom 2. November 2026. Nicht geprüft: Kursreaktion der Aktie und die Erwartungen der Analysten, deshalb stehen sie nicht im Text. Vertex zahlt keine Dividende. -->

@@ -6,6 +6,11 @@ author: "Redaktions-Team Dividenden-Rechner.de"
 author_bio: "Das Redaktions-Team von Dividenden-Rechner.de schreibt über Dividendenaktien, Kennzahlen und Steuerthemen für Privatanleger. Die Rechner und Auswertungen auf der Seite entstehen im eigenen Haus."
 category: Analyse
 kein_logo: ja
+image: assets/magazin/anleihen-ubs-chancen-renditen-portfolio-foto.jpg
+image_alt: "Foto zu Anleihen: Made with Lens: Leica APO Macro Elmarit-R 2.8 100mm (Year: 1993) WE ♥ AUTHENTIC PHOTOGRAPHY. FREE handpicked & curated images for your next commercial or personal project. 1050+ FREE photos CC-0 >> <a"
+image_credit: "Foto: Markus Spiske from Forchheim, Bavaria Upper Franconia / Wikimedia Commons, CC BY 2.0"
+image_source: https://commons.wikimedia.org/wiki/File:EURO_Cash_Money_Banknote_(49643807026).jpg
+image_artist_url: 
 ---
 !!! kurz "Kurz gesagt"
     **UBS-Einstufung Fixed Income:** „Attraktiv“
