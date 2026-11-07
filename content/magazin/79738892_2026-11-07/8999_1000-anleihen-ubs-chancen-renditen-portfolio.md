@@ -17,11 +17,11 @@ logo_domain: ubs.com
 ---
 !!! kurz "Kurz gesagt"
     **UBS-Einstufung Fixed Income:** „Attraktiv“
-    **Rendite 10-jährige US-Staatsanleihen:** rund 4,86 % (6.11.2026)
+    **Rendite 10-jährige US-Staatsanleihen:** 4,87 % (7.11.2026)
 
     Die UBS rät Anlegern, nicht auf ruhigere Zeiten zu warten: Höhere Anfangsrenditen bringen laufende Erträge und ein Polster gegen weiter steigende Zinsen. Für Dividendenanleger sind Anleihen eine Alternative mit festem Ertrag, aber ohne Wachstum.
 
-Zehnjährige US-Staatsanleihen werfen rund 4,9 % ab, mehr als die meisten Dividendenaktien. Das verändert den Maßstab für jeden, der auf Ausschüttungen setzt. Das Chief Investment Office der UBS hat dazu am 29. Oktober eine Studie vorgelegt, die bewusst unbequem ist: Wer wartet, bis sich die Lage beruhigt hat, macht nach Ansicht der Bank einen Fehler. Dazu gehört der Hinweis, dass hier eine Bank mit Anlageprodukten spricht. Die Studie ist eine allgemeine Information und keine persönliche Empfehlung.
+Zehnjährige US-Staatsanleihen werfen 4,87 % ab, mehr als die meisten Dividendenaktien. Das verändert den Maßstab für jeden, der auf Ausschüttungen setzt. Das Chief Investment Office der UBS hat dazu am 29. Oktober eine Studie vorgelegt, die bewusst unbequem ist: Wer wartet, bis sich die Lage beruhigt hat, macht nach Ansicht der Bank einen Fehler. Dazu gehört der Hinweis, dass hier eine Bank mit Anlageprodukten spricht. Die Studie ist eine allgemeine Information und keine persönliche Empfehlung.
 
 ## Warum die Renditen gestiegen sind
 
@@ -33,6 +33,18 @@ Der Zusammenhang ist einfach: Eine Anleihe ist ein Darlehen mit festen Zinsen, u
 
 Die Grafik ist eine eigene Modellrechnung. Eine Anleihe mit 4 % Coupon verliert bei einem Renditeanstieg um einen Prozentpunkt bei 2 Jahren Laufzeit knapp 2 %, bei 10 Jahren etwa 7,7 % und bei 30 Jahren gut 15 %. Fällt die Rendite um einen Punkt, gewinnt sie bei 10 Jahren gut 8 % und bei 30 Jahren knapp 20 %. Deshalb unterscheidet die UBS so genau zwischen den Laufzeiten.
 
+## Wie der Markt heute aussieht
+
+Zehnjährige US-Staatsanleihen rentieren aktuell mit 4,87 %. Das ist deutlich mehr als vor vier Jahren, als die Rendite bei gut 1,5 % lag, und knapp unter dem Hoch von gut 5 % aus diesem Herbst. Im vergangenen Monat ist sie um 0,43 Prozentpunkte gefallen, auf Jahressicht aber um 0,76 Punkte gestiegen.
+
+![Rendite zehnjähriger US-Staatsanleihen seit 2022](/assets/magazin/anleihen-us-10y-verlauf.jpg)
+*Quelle: Trading Economics, Stand 7. November 2026*
+
+Die Zinskurve zeigt, wo der Markt Risiko bezahlt. Kurzläufer rentieren zwischen 3,9 und 4,3 %, zweijährige Papiere mit 4,52 %, fünfjährige mit 4,65 %. Am langen Ende liegen die Renditen bei 5,29 % (20 Jahre) und 5,27 % (30 Jahre). Wer lange bindet, bekommt also etwa 0,4 Prozentpunkte mehr als bei zehn Jahren, trägt dafür aber das größere Kursrisiko aus der Modellrechnung oben. Genau davor warnt die UBS bei den längsten Laufzeiten. Inflationsgeschützte Anleihen (TIPS) bringen zehnjährig 2,62 % über der Inflation.
+
+![Renditen von US-Staatsanleihen nach Laufzeit](/assets/magazin/anleihen-us-renditen-tabelle.jpg)
+*Quelle: Trading Economics, Stand 7. November 2026*
+
 ## Wo die UBS Chancen sieht
 
 Favorisiert sind hochwertige Anleihen mit mittlerer bis langer Laufzeit. Sie bieten Potenzial für Kursgewinne und wirken im Depot als Gegengewicht zu Aktien. Bei den längsten Laufzeiten mahnt die UBS zur Vorsicht, aus drei Gründen: Zweifel an den Staatsfinanzen, die wachsenden Anleiheemissionen rund um künstliche Intelligenz und die Möglichkeit, dass die Laufzeitprämie hoch bleibt, also der Aufschlag für das Zinsrisiko langer Papiere. Wie groß der Einfluss der KI-Konzerne ist, zeigt eine Auswertung von PIMCO: Die großen Cloud-Anbieter stellten bis Ende Mai mehr als 30 % der neu ausgegebenen 30-jährigen US-Unternehmensanleihen. Den Anstieg der Zehnjahresrendite erklärt PIMCO allerdings nur zu etwa einem Viertel mit der Laufzeitprämie, den Rest mit veränderten Erwartungen an die US-Notenbank.
@@ -43,9 +55,9 @@ Die Streuwirkung von Qualitätsanleihen ist nicht garantiert. Analysen von US-Da
 
 ## Was das für Dividendenanleger heißt
 
-Am 6. November lag die Rendite zehnjähriger US-Staatsanleihen bei rund 4,86 %. [Unilever](../unilever-reiner-pflegekonzern-dividende-rueckkauf/) kommt bei der Dividende auf gut 3 %, [CVS Health](../cvs-health-q3-2026-aufspaltung-prognose/) auf 3,3 %. Der Unterschied liegt in der Verlässlichkeit. Der Coupon ist vertraglich zugesagt, die Dividende ist freiwillig und kann gekürzt werden, sie kann aber auch wachsen. CVS hat seine seit Januar 2024 nicht mehr erhöht, andere Firmen heben jedes Jahr an.
+Die Rendite zehnjähriger US-Staatsanleihen liegt bei 4,87 %. [Unilever](../unilever-reiner-pflegekonzern-dividende-rueckkauf/) kommt bei der Dividende auf gut 3 %, [CVS Health](../cvs-health-q3-2026-aufspaltung-prognose/) auf 3,3 %. Der Unterschied liegt in der Verlässlichkeit. Der Coupon ist vertraglich zugesagt, die Dividende ist freiwillig und kann gekürzt werden, sie kann aber auch wachsen. CVS hat seine seit Januar 2024 nicht mehr erhöht, andere Firmen heben jedes Jahr an.
 
-Drei Fragen helfen bei der Entscheidung. Welche Aufgabe soll die Anleihe übernehmen: Kapitalerhalt und Streuung sprechen für hochwertige Papiere, wer Ertrag sucht, nimmt mehr Risiko in Kauf. Wie lange halte ich Kursschwankungen aus: Wer bis zur Fälligkeit hält, erhält den Nennwert zurück, sofern der Schuldner zahlt. Und in welcher Währung rechne ich: Die 4,86 % gelten für US-Dollar, wer in Euro denkt, trägt ein Währungsrisiko.
+Drei Fragen helfen bei der Entscheidung. Welche Aufgabe soll die Anleihe übernehmen: Kapitalerhalt und Streuung sprechen für hochwertige Papiere, wer Ertrag sucht, nimmt mehr Risiko in Kauf. Wie lange halte ich Kursschwankungen aus: Wer bis zur Fälligkeit hält, erhält den Nennwert zurück, sofern der Schuldner zahlt. Und in welcher Währung rechne ich: Die 4,87 % gelten für US-Dollar, wer in Euro denkt, trägt ein Währungsrisiko.
 
 ## Risiken
 
@@ -60,6 +72,7 @@ Das ist eine Einordnung und keine Anlageberatung.
 - UBS Chief Investment Office GWM, „Wie können Anleger von Anleihen profitieren – und wo ergeben sich Chancen?“, Investment strategy insights, 29.10.2026 (PDF, Autoren: Matthew Carter, Frederick Mellors, Achim Peijan, Daisy Tseng)
 - [PIMCO: AI financing needs do not override cyclical drivers of yield, Credit Market Lens, 1.6.2026](https://www.pimco.com/eu/en/insights/ai-financing-needs-do-not-override-cyclical-drivers-of-yield)
 - CNBC über StockTitan, Börsenbericht vom 6.11.2026 (Zinserwartung der Fed)
+- Trading Economics, Renditen und Verlauf US-Staatsanleihen, Stand 7.11.2026
 - Eigene Berechnung: Modellrechnung zur Kursänderung (Anleihe mit 4 % Coupon, jährliche Zahlung)
 
-*Dieser Beitrag fasst die genannten Quellen in eigenen Worten zusammen. Die Grafik ist eine eigene Modellrechnung. Alle Angaben ohne Gewähr.*
+*Dieser Beitrag fasst die genannten Quellen in eigenen Worten zusammen. Die Kursgrafik ist eine eigene Modellrechnung, Verlauf und Tabelle der Renditen stammen von Trading Economics. Alle Angaben ohne Gewähr.*
