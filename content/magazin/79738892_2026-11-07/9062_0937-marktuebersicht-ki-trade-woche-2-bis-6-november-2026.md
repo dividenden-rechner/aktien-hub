@@ -6,11 +6,11 @@ author: "Redaktions-Team Dividenden-Rechner.de"
 author_bio: "Das Redaktions-Team von Dividenden-Rechner.de schreibt über Dividendenaktien, Kennzahlen und Steuerthemen für Privatanleger. Die Rechner und Auswertungen auf der Seite entstehen im eigenen Haus."
 category: Analyse
 kein_logo: ja
-image: https://images.unsplash.com/photo-1560221328-12fe60f83ab8?ixid=M3wxMTE3OTgzfDB8MXxzZWFyY2h8NHx8c3RvY2slMjBtYXJrZXQlMjB0cmFkaW5nJTIwc2NyZWVufGVufDF8MHx8fDE3OTQwNDI2MzN8MA&ixlib=rb-4.1.0&w=1600&h=900&fit=crop&crop=entropy&q=80&fm=jpg
-image_alt: "Foto zu Wochenbilanz:: Stock Charts during a live trading session"
-image_credit: "Foto: Nicholas Cappello auf Unsplash"
-image_source: https://unsplash.com/photos/close-up-photo-of-monitor-displaying-graph-Wb63zqJ5gnE?utm_source=dividenden-rechner&utm_medium=referral
-image_artist_url: https://unsplash.com/@bash__profile?utm_source=dividenden-rechner&utm_medium=referral
+image: assets/magazin/marktuebersicht-ki-trade-woche-2-bis-6-november-2026-foto.jpg
+image_alt: "Fassade der New Yorker Börse mit rotem Pfeil nach unten"
+image_credit: "Foto: David Vives auf Unsplash, Pfeil: Dividenden-Rechner.de"
+image_source: https://unsplash.com/photos/new-york-stock-exchange-building-with-american-flags-xnzSgqyP8Hs?utm_source=dividenden-rechner&utm_medium=referral
+image_artist_url: https://unsplash.com/@davidvives?utm_source=dividenden-rechner&utm_medium=referral
 ---
 !!! kurz "Kurz gesagt"
     **Nasdaq Composite:** −3,4 % in der Woche
