@@ -860,12 +860,12 @@ def build_index(posts):
     rest = [x for x in posts if x is not hero and x.get("typ") != "kurz"]
     side, grid, archiv = rest[:4], rest[4:12], rest[12:]
     o += rubrik_html(posts, pre) + '<div id="magmain">\n'
-    o += (f'<section class="mag-top" aria-label="Thema des Tages"><a class="mag-hero" href="{hero["slug"]}/"><div class="mcwrap" style="position:relative;margin:0"><img class="mcover" src="{src(pre, hero["img"])}" alt="" width="1200" height="675" fetchpriority="high">{card_logo(hero, pre)}</div>'
+    o += (f'<section class="mag-top" aria-label="Thema des Tages"><a class="mag-hero" href="{hero["slug"]}/"><div class="mcwrap" style="position:relative;margin:0"><img class="mcover" src="{src(pre, hero["img"])}" alt="{esc(hero.get("image_alt") or hero["title"])}" width="1200" height="675" fetchpriority="high">{card_logo(hero, pre)}</div>'
           f'<div class="mag-hero-body"><p class="kicker"><span class="mag-badge">Thema des Tages</span> {esc(hero["category"])} · {de_dt_kurz(hero["dt"])}{rel_html(hero)}</p><h2>{esc(hero["title"])}</h2><p class="mag-lead">{esc(hero["description"])}</p><span class="mag-more">Artikel lesen →</span></div></a>\n')
     if side:
         o += '<aside class="mag-side" aria-label="Weitere aktuelle Artikel"><h2>Außerdem aktuell</h2><ul>\n'
         for x in side:
-            o += (f'<li><a href="{x["slug"]}/"><span class="mag-thumb"><img src="{src(pre, x["img"])}" alt="" width="120" height="68" loading="lazy">{card_logo(x, pre)}<span class="kicker"><b>{esc(x["category"])}</b>{de_dt_kurz(x["dt"])}</span></span><strong>{esc(x["title"])}</strong></a></li>\n')
+            o += (f'<li><a href="{x["slug"]}/"><span class="mag-thumb"><img src="{src(pre, x["img"])}" alt="{esc(x.get("image_alt") or x["title"])}" width="120" height="68" loading="lazy">{card_logo(x, pre)}<span class="kicker"><b>{esc(x["category"])}</b>{de_dt_kurz(x["dt"])}</span></span><strong>{esc(x["title"])}</strong></a></li>\n')
         o += '</ul></aside>\n'
     o += '</section>\n'
     if kurz_posts:
@@ -877,7 +877,7 @@ def build_index(posts):
     if grid:
         o += '<h2 class="mag-more-h">Weitere Artikel</h2>\n<div class="cards magcards">\n'
         for x in grid:
-            o += (f'<a class="card" href="{x["slug"]}/"><div class="mcwrap" style="position:relative;margin:0"><img class="mcover" src="{src(pre, x["img"])}" alt="" width="1200" height="675" loading="lazy">{card_logo(x, pre)}</div>'
+            o += (f'<a class="card" href="{x["slug"]}/"><div class="mcwrap" style="position:relative;margin:0"><img class="mcover" src="{src(pre, x["img"])}" alt="{esc(x.get("image_alt") or x["title"])}" width="1200" height="675" loading="lazy">{card_logo(x, pre)}</div>'
                   f'<p class="kicker">{esc(x["category"])} · {de_dt_kurz(x["dt"])}</p><h3>{esc(x["title"])}</h3><p>{esc(x["description"])}</p></a>\n')
     if grid: o += '</div>\n'
     if archiv:
@@ -932,7 +932,7 @@ def patch_home(posts):
     if posts:
         block = ('<section class="home-mag" id="magazin"><h2>Neu in den News</h2><p class="sub">Quartalszahlen verständlich erklärt, mit Kurzfassung in drei Punkten.</p>\n<div class="cards magcards">\n')
         for x in posts[:3]:
-            block += (f'<a class="card" href="news/{x["slug"]}/"><div class="mcwrap" style="position:relative;margin:0"><img class="mcover" src="{src("", x["img"])}" alt="" width="1200" height="675" loading="lazy">{card_logo(x, "")}</div>'
+            block += (f'<a class="card" href="news/{x["slug"]}/"><div class="mcwrap" style="position:relative;margin:0"><img class="mcover" src="{src("", x["img"])}" alt="{esc(x.get("image_alt") or x["title"])}" width="1200" height="675" loading="lazy">{card_logo(x, "")}</div>'
                       f'<p class="kicker">{esc(x["category"])} · {de_dt_kurz(x["dt"])}</p><h3>{esc(x["title"])}</h3></a>\n')
         block += '</div>\n<p class="more"><a href="news/">Alle Artikel in den News →</a></p></section>\n'
     mk = "<!-- magazin-neu -->"
