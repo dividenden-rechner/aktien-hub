@@ -112,5 +112,11 @@
   "sym": "ECL",
   "dom": "ecolab.com",
   "name": "Ecolab"
+ },
+ {
+  "key": "nvda",
+  "sym": "NVDA",
+  "dom": "nvidia.com",
+  "name": "Nvidia"
  }
 ]
