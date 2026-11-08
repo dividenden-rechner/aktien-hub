@@ -118,5 +118,11 @@
   "sym": "NVDA",
   "dom": "nvidia.com",
   "name": "Nvidia"
+ },
+ {
+  "key": "main",
+  "sym": "MAIN",
+  "dom": "mainstcapital.com",
+  "name": "Main Street Capital"
  }
 ]

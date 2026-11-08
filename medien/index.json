@@ -2787,5 +2787,17 @@
  "ZTS": {
   "logo": "medien/logo/zts.png",
   "name": "Zoetis"
+ },
+ "MAIN": {
+  "name": "Main Street Capital",
+  "ceo": {
+   "datei": "medien/ceo/main.png",
+   "name": "Dwayne Hyzak",
+   "rolle": "CEO Main Street Capital",
+   "zeile": "Dwayne Hyzak | CEO Main Street Capital",
+   "blick": "frontal",
+   "schnitt": "unten",
+   "seite": "rechts"
+  }
  }
 }
