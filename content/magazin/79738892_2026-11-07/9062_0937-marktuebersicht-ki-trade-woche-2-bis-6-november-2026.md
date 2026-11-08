@@ -27,6 +27,12 @@ Die Woche begann ruhig und endete als die schwächste seit Juni. Zuerst fiel der
 
 Der Ausverkauf hat einen politischen Kern. Die Demokraten gewannen auch dort, wo viele Rechenzentren entstehen, etwa in Texas, und steigende Strompreise waren dort ein Wahlkampfthema. Anleger fürchten nun Auflagen und höhere Kosten für den Netzanschluss. Die UBS sieht rund 30 % der bis 2028 erwarteten neuen Rechenzentrumskapazität in den USA in Gefahr, allein in Texas 18 Gigawatt. Gesetze gibt es bisher keine, es geht um die Erwartung.
 
+Wie scharf der Markt reagierte, zeigt der Chipindex: Am Donnerstag verlor der Philadelphia Semiconductor Index rund 12 %, sein größter Tagesverlust seit März 2020. Auch der Nasdaq 100 gab um etwa 6 % nach, und Nvidia büßte allein an diesem Tag rund 440 Milliarden Dollar Börsenwert ein.
+
+![Philadelphia Semiconductor Index: tägliche Veränderung seit 2020, größter Verlust seit März 2020](/assets/magazin/marktuebersicht-2026-11-06-bloomberg-chipindex.png)
+
+*Quelle: Bloomberg, Newsletter „Bloomberg Money“ vom Wochenende.*
+
 Dass diese Erwartung so heftig durchschlug, liegt an der Ausgangslage. Nach einem langen Anstieg war viel Gutes in den Kursen eingepreist, und die Stimmung hatte schon vorher gelitten: [Alphabet](../alphabet-q3-2026-quartalszahlen/), [Amazon](../tech-ausverkauf-intel-nasdaq-marktueberblick/) und [Intel](../intel-q3-2026-zahlen/) hatten enttäuscht, [Apple](../apple-geschaeftsbericht-2026/) und [Palantir](../palantir-q3-2026-zahlen-prognose/) gaben schwächere Ausblicke. Nvidia fiel am Donnerstag unter den Schlusskurs von Ende 2025, der Jahresgewinn vieler KI-Werte war dünner, als es die Schlagzeilen vermuten ließen.
 
 Wie unterschiedlich die Zahlen der betroffenen Konzerne waren, zeigt die Tabelle. Umsatz und Gewinn des dritten Quartals mit der Veränderung zum Vorjahr:
@@ -68,6 +74,7 @@ Der Maßstab bleibt die Rendite zehnjähriger US-Staatsanleihen, am Donnerstag r
 - Business Insider über Hargreaves Lansdown, Auswertung der Investitionen großer Cloud-Konzerne, 30.10.2026
 - La Nación (AP), „How major US stock indexes fared Wednesday 11/4/2026“
 - Trading-Treff, „Nasdaq 100: Wahlergebnis bremst KI-Rally“, 4.11.2026
+- Bloomberg Money (Newsletter von Adam Auriemma), Wochenende 7./8.11.2026 (Chipindex, Grafik)
 - Eigene Auswertungen: Unternehmensmeldungen auf Dividenden-Rechner.de
 
-*Dieser Beitrag fasst die Berichterstattung der genannten Medien in eigenen Worten zusammen. Kurzzitate sind als solche gekennzeichnet. Die Grafiken sind eigene Darstellungen auf Basis der genannten Daten. Alle Angaben ohne Gewähr.*
+*Dieser Beitrag fasst die Berichterstattung der genannten Medien in eigenen Worten zusammen. Kurzzitate sind als solche gekennzeichnet. Die Chipindex-Grafik stammt von Bloomberg (Quelle genannt), die übrigen Grafiken sind eigene Darstellungen auf Basis der genannten Daten. Alle Angaben ohne Gewähr.*
