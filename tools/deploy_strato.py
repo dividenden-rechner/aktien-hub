@@ -106,6 +106,15 @@ def main():
     todo = [k for k, s in sums.items() if old.get(k) != s]
     gone = [k for k in old if k not in sums]
     print(f"Hochladen: {len(todo)}, loeschen: {len(gone)}, unveraendert: {len(sums) - len(todo)}")
+    # Fuer IndexNow: geaenderte Seiten (nur oeffentliche HTML-Seiten) als Adressliste ablegen
+    try:
+        seiten = []
+        for k in todo:
+            if k.endswith("index.html"):
+                seiten.append(k[: -len("index.html")])
+        open(os.path.join(ROOT, "_geaendert.txt"), "w", encoding="utf-8").write("\n".join(seiten))
+    except Exception as e:
+        print("Adressliste fuer IndexNow nicht geschrieben:", e)
     if a.trocken:
         return
     rp = lambda k: posixpath.join(base, k) if base else k
