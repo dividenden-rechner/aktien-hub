@@ -24,11 +24,11 @@ image_source: "https://commons.wikimedia.org/wiki/File:Ecolab_Denmark.jpg"
 
     Ein Unternehmen, das fast überall unauffällig im Hintergrund arbeitet. Das Geschäft läuft, die Aktie ist dafür teuer und die Dividende klein.
 
-Was halte ich von Ecolab? Ein interessanter Chemiewert: Das Unternehmen reinigt Wasser, sorgt für Hygiene in Hotels, Restaurants, Krankenhäusern und Fabriken und bekämpft nebenbei Schädlinge, und das als Marktführer. Auf den ersten Blick passt das nicht in den Fokus eines Dividendenrechners, denn die Dividendenrendite liegt bei nur rund 1 %. Dazu kommen ein Kurs-Gewinn-Verhältnis von etwa 35, Schulden von gut 13 Milliarden Dollar nach den Zukäufen und ein berichteter Gewinn je Aktie, der im dritten Quartal um 5 % sank, obwohl der Umsatz um 13 % wuchs. Das Gute ist hier also längst im Kurs: ein starkes Geschäft, aber kein Schnäppchen für Dividendenjäger.
+Was halte ich von Ecolab? Ein interessanter Chemiewert: Das Unternehmen reinigt Wasser, sorgt für Hygiene in Hotels, Restaurants, Krankenhäusern und Fabriken und bekämpft nebenbei Schädlinge, und das als Marktführer. Auf den ersten Blick passt das nicht in den Fokus eines Dividendenrechners, denn die Dividendenrendite liegt bei nur rund 1 %. Dazu kommen ein Kurs-Gewinn-Verhältnis von etwa 35, Schulden von gut 13 Milliarden Dollar nach den Zukäufen und ein berichteter Gewinn je Aktie, der im dritten Quartal um 5 % sank, obwohl der Umsatz um 13 % wuchs. Das Gute ist hier also längst im Kurs: ein starkes Geschäft zu einem hohen Preis, für Dividendenjäger ohne Schnäppchenchance.
 
 ## Was Ecolab eigentlich macht
 
-Ecolab sitzt im US-Bundesstaat Minnesota und verkauft keine Produkte im Regal, sondern Lösungen für Betriebe. Wer in einem Restaurant die Spülmaschine laufen lässt, ein Hotelzimmer reinigt, in einer Brauerei Anlagen desinfiziert oder in einem Kraftwerk Kühlwasser aufbereitet, nutzt häufig Chemie, Dosiertechnik und Beratung von Ecolab. Dazu kommen Mitarbeiter, die vor Ort die Anlagen betreuen.
+Ecolab sitzt im US-Bundesstaat Minnesota und verkauft Lösungen für Betriebe: Chemie, Dosiertechnik und Beratung aus einer Hand. Wer in einem Restaurant die Spülmaschine laufen lässt, ein Hotelzimmer reinigt, in einer Brauerei Anlagen desinfiziert oder in einem Kraftwerk Kühlwasser aufbereitet, nutzt häufig Chemie, Dosiertechnik und Beratung von Ecolab. Dazu kommen Mitarbeiter, die vor Ort die Anlagen betreuen.
 
 Das Geschäft hat vier Teile. Die Wassersparte ist mit gut der Hälfte des Umsatzes der größte, sie versorgt Industrie, Lebensmittelhersteller und zunehmend die Technologiebranche. Die Sparte für Hotels, Gastronomie und Reinigung steuert gut ein Drittel bei und verdient mit rund einem Viertel Marge am besten. Die Schädlingsbekämpfung ist mit etwa 8 % Umsatzanteil klein, wächst aber kräftig. Und die Sparte für Pharma und Biotechnik liefert Reinigungs- und Aufbereitungstechnik für Medikamentenhersteller.
 
@@ -41,9 +41,9 @@ Das Geschäft hat vier Teile. Die Wassersparte ist mit gut der Hälfte des Umsat
 
 ## Was das Besondere ist
 
-Ecolab macht sich unentbehrlich. Der Anteil an den Ausgaben der Kunden ist klein, die Folgen eines Ausfalls sind groß: Wer verdorbene Lebensmittel, ein keimbelastetes Krankenhaus oder eine ausgefallene Kühlung riskiert, wechselt nicht wegen ein paar Prozent Preisunterschied. Deshalb setzt das Unternehmen Preise durch. Im dritten Quartal brachten sie 5 Prozentpunkte des Wachstums, die Menge nur 2.
+Ecolab macht sich unentbehrlich. Der Anteil an den Ausgaben der Kunden ist klein, die Folgen eines Ausfalls sind groß: Wer verdorbene Lebensmittel, ein keimbelastetes Krankenhaus oder eine ausgefallene Kühlung riskiert, bleibt auch bei einem Preisaufschlag von ein paar Prozent beim bisherigen Anbieter. Deshalb setzt das Unternehmen Preise durch. Im dritten Quartal brachten sie 5 Prozentpunkte des Wachstums, die Menge nur 2.
 
-Hinzu kommen Daten: Die digitale Sparte, die Anlagen überwacht und Verbrauch steuert, wuchs um 34 % auf 129 Millionen Dollar. Und es gibt ein neues Thema, das die Anleger begeistert: Rechenzentren. Mit der Übernahme von CoolIT, einem Spezialisten für Flüssigkühlung, und Ovivo Electronics, das Reinstwasser für die Chipfertigung liefert, ist Ecolab in den KI-Bau eingestiegen. Das Geschäft mit Hightech-Kunden wuchs organisch um 63 %. Der Konzernchef Christophe Beck bremst selbst: Dieser Wert sei kein Dauerzustand, die Quartale würden schwanken.
+Hinzu kommen Daten: Die digitale Sparte, die Anlagen überwacht und Verbrauch steuert, wuchs um 34 % auf 129 Millionen Dollar. Und es gibt ein neues Thema, das die Anleger begeistert: Rechenzentren. Mit der Übernahme von CoolIT, einem Spezialisten für Flüssigkühlung, und Ovivo Electronics, das Reinstwasser für die Chipfertigung liefert, ist Ecolab in den KI-Bau eingestiegen. Das Geschäft mit Hightech-Kunden wuchs organisch um 63 %. Der Konzernchef Christophe Beck bremst selbst: Dieser Wert sei ein Ausschlag nach oben, die Quartale würden schwanken.
 
 ## Das dritte Quartal
 
