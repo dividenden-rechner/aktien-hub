@@ -10,6 +10,10 @@ quelle_name: "Berkshire Hathaway Inc., Form 10-Q für das dritte Quartal 2026"
 logo_name: "Berkshire Hathaway"
 logo_symbol: BRK-B
 logo_domain: berkshirehathaway.com
+story_portrait: medien/ceo/brk-b.png
+story_quote_by: "Greg Abel | CEO"
+story_portrait_seite: rechts
+story_portrait_schnitt: unten
 story_text: "Berkshire verdiente im dritten Quartal 22,1 Mrd. US-Dollar, 28 % weniger als vor einem Jahr, weil Anlagegewinne und Versicherung nachgaben.\nBahn, Energie und Industrie legten zu, das operative Ergebnis lag mit 12,7 Mrd. US-Dollar nur 5,8 % unter Vorjahr.\nDer Konzern kaufte für 9,6 Mrd. US-Dollar eigene Aktien zurück und hält rund 357 Mrd. US-Dollar in Cash und Staatsanleihen. Eine Dividende zahlt Berkshire nicht."
 image: assets/magazin/berkshire-q3-2026-foto.jpg
 image_alt: "Skyline von Omaha im US-Bundesstaat Nebraska, dem Sitz von Berkshire Hathaway"

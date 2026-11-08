@@ -561,6 +561,7 @@ def share_html(p, url, img):
         # Freigestelltes Portrait (PNG mit Transparenz) mit Zitat unten in der Story
         story["portrait"] = "../../" + p["story_portrait"].lstrip("/")
         story["quote"] = p.get("story_quote", ""); story["quote_by"] = p.get("story_quote_by", "")
+        story["portrait_side"] = p.get("story_portrait_seite", ""); story["portrait_cut"] = p.get("story_portrait_schnitt", "")
     if p.get("story_text"):
         # Fliesstext statt drei Punkten und ohne Headline (Vorlage der Redaktion, 03.11.2026)
         story["text"] = re.sub(r" (%|USD|Mrd\.|Mio\.)", "\u00a0\\1", p["story_text"].strip().replace("\\n", "\n")); story["para"] = True; story["title"] = ""

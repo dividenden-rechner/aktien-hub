@@ -155,19 +155,23 @@
       String(S.text).split(/\n+/).forEach(function (p) { wrap(c, p, 960, 0).forEach(function (l) { c.fillText(l, 60, yy); yy += lh2; }); yy += pg; });
       c.letterSpacing = "0px";
     }
+    /* Platzierung des Freistellers (Archiv: seite/schnitt): steht auf der Seite, zu der die Person gehoert; seitlich abgeschnitten = buendig am Bildrand */
+    var pSide = S.portrait_side === "links" ? "links" : (S.portrait_side === "rechts" ? "rechts" : ""), pCut = S.portrait_cut || "";
+    if (pCut === "links") pSide = "links"; else if (pCut === "rechts") pSide = "rechts";
     if (S.chart && S.portrait) {
-      /* Kursbild links und Portrait rechts sitzen beide unten auf dem gruenen Balken; der Name steht klein links neben der Person */
-      var kc = await load(S.chart), kp = await load(S.portrait), bar = 1866;
-      /* Kursbild komplett zeigen (mit Preisachse rechts): Breite so, dass es links vom Portrait endet */
-      var kpx0 = kp ? 1056 - Math.round(520 * kp.width / kp.height) : 1056;
-      if (kc) { var kw2 = S.para ? Math.min(880, kpx0 - 24 + (kc.height / kc.width > 0.95 ? 190 : 130)) : Math.min(880, kpx0 - 24 + 20), kh2 = Math.round(kw2 * kc.height / kc.width); c.drawImage(hq(kc, kw2, kh2, 0.45), 24, bar - kh2, kw2, kh2); }
+      /* Kursbild und Portrait sitzen beide unten auf dem gruenen Balken; der Name steht klein neben der Person */
+      var kc = await load(S.chart), kp = await load(S.portrait), bar = 1866, onLeft = pSide === "links";
+      var kph = 520, kpw = kp ? Math.round(kph * kp.width / kp.height) : 0;
+      var kpx = onLeft ? (pCut === "links" ? 0 : 24) : (pCut === "rechts" ? 1080 : 1056) - kpw;
+      /* Kursbild komplett zeigen (mit Preisachse rechts): Breite so, dass es neben dem Portrait endet */
+      var kpx0 = kp ? (onLeft ? 1056 - (kpx + kpw) : kpx) : 1056, kcx = onLeft ? kpx + kpw + 8 : 24;
+      if (kc) { var kw2 = onLeft ? Math.min(880, 1056 - kcx) : (S.para ? Math.min(880, kpx0 - 24 + (kc.height / kc.width > 0.95 ? 190 : 130)) : Math.min(880, kpx0 - 24 + 20)), kh2 = Math.round(kw2 * kc.height / kc.width); c.drawImage(hq(kc, kw2, kh2, 0.45), kcx, bar - kh2, kw2, kh2); }
       if (kp) {
-        var kph = 520, kpw = Math.round(kph * kp.width / kp.height), kpx = 1056 - kpw;
         c.drawImage(kp, kpx, bar - kph, kpw, kph);
         if (S.quote_by && !S.para) {
-          var nm = S.quote_by.split("|"); c.textAlign = "right"; c.textBaseline = "alphabetic"; c.fillStyle = "#111";
-          c.font = "700 30px " + F; c.fillText(nm[0].trim(), kpx - 14, bar - 380);
-          if (nm[1]) { c.font = "400 25px " + F; c.fillStyle = "#262626"; c.fillText(nm[1].trim(), kpx - 14, bar - 342); }
+          var nm = S.quote_by.split("|"); c.textAlign = onLeft ? "left" : "right"; c.textBaseline = "alphabetic"; c.fillStyle = "#111"; var nx = onLeft ? kpx + kpw + 14 : kpx - 14;
+          c.font = "700 30px " + F; c.fillText(nm[0].trim(), nx, bar - 380);
+          if (nm[1]) { c.font = "400 25px " + F; c.fillStyle = "#262626"; c.fillText(nm[1].trim(), nx, bar - 342); }
           c.textAlign = "left"; c.textBaseline = "top";
         }
       }
@@ -176,7 +180,7 @@
       var pt = await load(S.portrait);
       if (pt) {
         var phh = S.para ? 520 : 450, pww = Math.round(phh * pt.width / pt.height), pyy = 1866 - phh;
-        c.drawImage(pt, S.para ? 1056 - pww : 60, pyy, pww, phh);
+        var ptx = (S.quote && !S.para) ? 60 : pSide === "links" ? (pCut === "links" ? 0 : 60) : (pSide === "rechts" ? (pCut === "rechts" ? 1080 : 1056) - pww : (S.para ? 1056 - pww : 60)); c.drawImage(pt, ptx, pyy, pww, phh);
         if (S.quote) {
           var qx = 60 + pww + 36, qw = 1020 - qx, qf = 33;
           c.fillStyle = "#111"; c.font = "400 " + qf + "px " + F; c.textBaseline = "top";

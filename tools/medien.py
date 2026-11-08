@@ -62,6 +62,8 @@ def fill(meta):
     c = e.get("ceo")
     if c and not meta.get("story_portrait") and os.path.exists(c.get("datei", "")) and meta.get("category") == "Quartalszahlen":
         meta["story_portrait"] = c["datei"]
+        if c.get("seite") and not meta.get("story_portrait_seite"): meta["story_portrait_seite"] = c["seite"]
+        if c.get("schnitt") and not meta.get("story_portrait_schnitt"): meta["story_portrait_schnitt"] = c["schnitt"]
         if not meta.get("story_quote_by") and c.get("zeile"): meta["story_quote_by"] = c["zeile"]
 if __name__ == "__main__":
     if len(sys.argv) > 1 and sys.argv[1] == "sync": sync()
