@@ -583,6 +583,18 @@
   "logo": "medien/logo/br.png",
   "name": "Broadridge Financial Solutions"
  },
+ "BRK-B": {
+  "ceo": {
+   "blick": "frontal, leicht nach rechts",
+   "datei": "medien/ceo/brk-b.png",
+   "name": "Greg Abel",
+   "rolle": "CEO",
+   "schnitt": "unten",
+   "seite": "rechts",
+   "zeile": "Greg Abel | CEO"
+  },
+  "name": "Berkshire Hathaway"
+ },
  "BT-A.L": {
   "logo": "medien/logo/bt-a-l.png",
   "name": "BT Group"
