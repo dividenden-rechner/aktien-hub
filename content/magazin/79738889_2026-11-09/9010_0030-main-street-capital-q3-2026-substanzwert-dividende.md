@@ -19,6 +19,8 @@ story_portrait_schnitt: unten
 story_text: "Main Street Capital nahm im dritten Quartal 142,5 Mio. US-Dollar an Zinsen, Dividenden und Gebühren ein, 2 % mehr als vor einem Jahr. Das laufende Ergebnis je Aktie fiel um 8 % auf 0,89 US-Dollar, weil das Unternehmen 4,6 % mehr Aktien ausgegeben hat.\nDer Substanzwert je Aktie stieg auf 34,22 US-Dollar, zum 17. Mal in Folge. Die regulären Monatsdividenden steigen um 3,9 % auf 0,265 US-Dollar, dazu kommen 0,30 US-Dollar Sonderdividende.\nDen Gegenwind liefern realisierte Verluste von 27,6 Mio. US-Dollar und Dividendenerträge der Beteiligungen, die um 18 % sanken."
 image: assets/magazin/main-street-q3-2026-foto.jpg
 image_alt: "Skyline von Downtown Houston im US-Bundesstaat Texas, dem Sitz von Main Street Capital"
+image_credit: "David Daniel Turner, CC BY 4.0"
+image_source: "https://commons.wikimedia.org/wiki/File:Downtown_Houston,_TX_Skyline_-_2018.jpg"
 ---
 !!! kurz "Kurz gesagt"
     **Erträge:** 142,5 Mio. US-Dollar (+2 %)
