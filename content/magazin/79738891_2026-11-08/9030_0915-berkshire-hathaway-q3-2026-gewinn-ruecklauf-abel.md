@@ -15,6 +15,7 @@ image: assets/magazin/berkshire-q3-2026-foto.jpg
 image_alt: "Skyline von Omaha im US-Bundesstaat Nebraska, dem Sitz von Berkshire Hathaway"
 image_credit: "Foto: Hurstbergn (CC0), Wikimedia Commons"
 image_source: https://commons.wikimedia.org/wiki/File:Omaha_Skyline_viewed_from_Harrah%27s,_August_2026.jpg
+logo_file: assets/logos/brk-b.png
 ---
 !!! kurz "Kurz gesagt"
     **Nettogewinn:** 22,1 Mrd. US-Dollar (−28 %)
