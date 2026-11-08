@@ -16,10 +16,11 @@ Datei anklicken, dann Stift-Symbol: Zeile `draft: true` löschen und speichern, 
 | 29.10.2026 22:42 | Amazon steigert Umsatz im dritten Quartal auf 201,9 Milliarden Dollar | [79738970_2026-10-29/7757_2242-amazon-q3-2026-zahlen.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/79738970_2026-10-29/7757_2242-amazon-q3-2026-zahlen.md) |
 | 29.10.2026 10:12 | Shell erzielt im dritten Quartal 10,8 Milliarden Dollar Gewinn | [79738970_2026-10-29/8987_1012-shell-q3-2026-ergebnisse.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/79738970_2026-10-29/8987_1012-shell-q3-2026-ergebnisse.md) |
 
-### Online (313)
+### Online (314)
 
 | Datum | Titel | Datei |
 |---|---|---|
+| 08.11.2026 09:15 | Berkshire Hathaway: Der Gewinn bricht ein, doch die Betriebe verdienen mehr | [79738891_2026-11-08/9030_0915-berkshire-hathaway-q3-2026-gewinn-ruecklauf-abel.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/79738891_2026-11-08/9030_0915-berkshire-hathaway-q3-2026-gewinn-ruecklauf-abel.md) |
 | 07.11.2026 10:15 | Wochenausblick: Die Zinserhöhung rückt näher, dazu Inflationszahlen und Zahlen von Siemens, Allianz und Cisco | [79738892_2026-11-07/8984_1015-wochenausblick-9-bis-13-november-2026.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/79738892_2026-11-07/8984_1015-wochenausblick-9-bis-13-november-2026.md) |
 | 07.11.2026 10:00 | Anleihen 2026: Warum die UBS Qualitätsanleihen trotz Zinsschwankungen für attraktiv hält | [79738892_2026-11-07/8999_1000-anleihen-ubs-chancen-renditen-portfolio.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/79738892_2026-11-07/8999_1000-anleihen-ubs-chancen-renditen-portfolio.md) |
 | 07.11.2026 09:54 | Unilever wird reiner Pflegekonzern: Dividende, Rückkauf und ein Umbau mit offenen Fragen | [79738892_2026-11-07/9045_0954-unilever-reiner-pflegekonzern-dividende-rueckkauf.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/79738892_2026-11-07/9045_0954-unilever-reiner-pflegekonzern-dividende-rueckkauf.md) |
