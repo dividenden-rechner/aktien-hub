@@ -16,10 +16,11 @@ Datei anklicken, dann Stift-Symbol: Zeile `draft: true` löschen und speichern, 
 | 29.10.2026 22:42 | Amazon steigert Umsatz im dritten Quartal auf 201,9 Milliarden Dollar | [79738970_2026-10-29/7757_2242-amazon-q3-2026-zahlen.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/79738970_2026-10-29/7757_2242-amazon-q3-2026-zahlen.md) |
 | 29.10.2026 10:12 | Shell erzielt im dritten Quartal 10,8 Milliarden Dollar Gewinn | [79738970_2026-10-29/8987_1012-shell-q3-2026-ergebnisse.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/79738970_2026-10-29/8987_1012-shell-q3-2026-ergebnisse.md) |
 
-### Online (314)
+### Online (315)
 
 | Datum | Titel | Datei |
 |---|---|---|
+| 08.11.2026 20:15 | Ecolab wächst zweistellig, doch der Gewinn je Aktie sinkt: Warum das gute Geschäft für Dividendenjäger schwierig ist | [79738890_2026-11-08/9020_2015-ecolab-q3-2026-wasser-hygiene-dividende-bewertung.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/79738890_2026-11-08/9020_2015-ecolab-q3-2026-wasser-hygiene-dividende-bewertung.md) |
 | 08.11.2026 09:15 | Berkshire Hathaway: Der Gewinn bricht ein, doch die Betriebe verdienen mehr | [79738891_2026-11-08/9030_0915-berkshire-hathaway-q3-2026-gewinn-ruecklauf-abel.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/79738891_2026-11-08/9030_0915-berkshire-hathaway-q3-2026-gewinn-ruecklauf-abel.md) |
 | 07.11.2026 10:15 | Wochenausblick: Die Zinserhöhung rückt näher, dazu Inflationszahlen und Zahlen von Siemens, Allianz und Cisco | [79738892_2026-11-07/8984_1015-wochenausblick-9-bis-13-november-2026.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/79738892_2026-11-07/8984_1015-wochenausblick-9-bis-13-november-2026.md) |
 | 07.11.2026 10:00 | Anleihen 2026: Warum die UBS Qualitätsanleihen trotz Zinsschwankungen für attraktiv hält | [79738892_2026-11-07/8999_1000-anleihen-ubs-chancen-renditen-portfolio.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/79738892_2026-11-07/8999_1000-anleihen-ubs-chancen-renditen-portfolio.md) |
