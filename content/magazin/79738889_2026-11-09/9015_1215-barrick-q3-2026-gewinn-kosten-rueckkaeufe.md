@@ -37,9 +37,9 @@ Beim Kupfer ist der Abstand größer: Die Gesamtkosten steigen um 44 % auf 4,52 
 
 ## Förderung: Nevada trägt, Westafrika erholt sich
 
-Die Goldförderung steigt um 3 % gegenüber dem zweiten Quartal auf 816.000 Unzen. Gegenüber dem Vorjahr ist sie um 2 % niedriger, ohne die verkauften Minen Hemlo und Tongon aber um 6 % höher. Nevada Gold Mines liefert 400.000 Unzen, in Carlin erreichte die Röstanlage einen Quartalsrekord und in Cortez wächst die Goldrush-Grube. Die Mine Loulo-Gounkoto in Mali, die nach dem Streit mit der Regierung wieder anläuft, förderte 16 % mehr als im zweiten Quartal und liegt vor dem Plan. Gebremst haben extremes Wetter in Argentinien und Papua-Neuguinea sowie verzögerter Zugang zu hochgradigem Erz in Tansania.
+Die Goldförderung steigt um 3 % gegenüber dem zweiten Quartal auf 816.000 Unzen. Gegenüber dem Vorjahr ist sie um 2 % niedriger, ohne die verkauften Minen Hemlo und Tongon aber um 6 % höher. Nevada Gold Mines liefert 400.000 Unzen, in Carlin erreichte die Röstanlage einen Quartalsrekord und in Cortez wächst die Goldrush-Grube. Die Mine Loulo-Gounkoto in Mali, die nach der Wiederinbetriebnahme hochfährt, förderte 16 % mehr als im zweiten Quartal und liegt vor dem Plan. Gebremst haben extremes Wetter in Argentinien und Papua-Neuguinea sowie verzögerter Zugang zu hochgradigem Erz in Tansania.
 
-Beim Thema Sicherheit ist die Bilanz schwächer: Acht Unfälle mit Ausfalltagen im Quartal sind der höchste Wert seit mindestens neun Quartalen (zwei Quartale zuvor waren es sechs und zwei), auch wenn die allgemeine Unfallrate von 0,77 auf 0,71 sank.
+Beim Thema Sicherheit ist die Bilanz schwächer: Acht Unfälle mit Ausfalltagen im Quartal sind der höchste Wert seit mindestens neun Quartalen (im Vorquartal sechs), auch wenn die allgemeine Unfallrate von 0,77 auf 0,71 sank.
 
 ## Geld für die Aktionäre
 
