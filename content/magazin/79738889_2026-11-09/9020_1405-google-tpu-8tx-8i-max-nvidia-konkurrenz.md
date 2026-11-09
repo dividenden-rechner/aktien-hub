@@ -10,6 +10,7 @@ quelle_name: "Bloomberg, 9. November 2026"
 logo_symbol: GOOGL
 logo_name: "Alphabet"
 logo_file: assets/logos/googl.png
+story_image: assets/magazin/google-tpu-8tx-8i-max-nvidia-konkurrenz-foto.jpg
 story_chart: assets/magazin/google-tpu-kurse-2026-11-09.jpg
 story_text: "Google macht aus seinem KI-Chip ein Produktportfolio: Zu den bestehenden TPUs kommen die Varianten 8tx für vertrauliches Rechnen und 8i Max für sehr lange Kontextfenster. Früher erschien alle zwei Jahre ein neuer Chip, jetzt gibt es vier Angebote für unterschiedliche Aufgaben.\nDer Markt dahinter wächst rasant. Bloomberg Intelligence rechnet mit mehr als 135 Mrd. USD TPU-Umsatz bis 2028, nach geschätzt 12 Mrd. USD in diesem Jahr. Apple, Meta und Oracle zählen zu den Kunden, Anthropic hat sich eine Kaufoption über bis zu 150 Mrd. USD gesichert. Die TPUs kosten rund 30 % weniger als Nvidias Chips.\nDie Bremsen sind Lieferengpässe bei Speicher und Fertigung, niedrigere Margen als bei Nvidia und die Frage, ob die Rechenzentrumsausgaben 2027 um 5 bis 7 % schrumpfen. Nvidia setzt inzwischen selbst auf spezialisierte Systeme."
 image: assets/magazin/google-tpu-8tx-8i-max-nvidia-konkurrenz-foto.jpg
