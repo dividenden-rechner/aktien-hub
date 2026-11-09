@@ -6,7 +6,7 @@ author: "Redaktions-Team Dividenden-Rechner.de"
 author_bio: "Das Redaktions-Team von Dividenden-Rechner.de schreibt über Dividendenaktien, Kennzahlen und Steuerthemen für Privatanleger. Die Rechner und Auswertungen auf der Seite entstehen im eigenen Haus."
 category: Analyse
 quelle_url: "https://www.bloomberg.com/news/articles/2026-11-09/google-escalates-nvidia-rivalry-with-new-versions-of-its-tpu-systems"
-quelle_name: "Bloomberg, Dina Bass, 9. November 2026"
+quelle_name: "Bloomberg, 9. November 2026"
 logo_symbol: GOOGL
 logo_name: "Alphabet"
 logo_file: assets/logos/googl.png
@@ -15,7 +15,7 @@ image_alt: "Ein Tensor Processing Unit 3.0 von Google, ein KI-Beschleunigerchip,
 image_credit: "Zinskauf, CC BY-SA 4.0"
 image_source: "https://commons.wikimedia.org/wiki/File:Tensor_Processing_Unit_3.0.jpg"
 ---
-Alphabet baut sein Geschäft mit eigenen KI-Chips aus und greift Nvidia damit breiter an. Wie Bloomberg exklusiv berichtet, stellt Google am Montag zwei neue Varianten seiner Tensor Processing Units (TPU) vor. Die TPU 8tx ist für vertrauliches Rechnen gedacht, etwa für Behörden und Unternehmen in regulierten Branchen. Sie arbeitet mit Prozessoren von AMD zusammen und verschlüsselt Daten bereits auf Chipebene. Die TPU 8i Max packt zwei TPU-Chips in ein Gehäuse und ist für Anwendungen mit sehr langen Kontextfenstern ausgelegt, zum Beispiel Wirkstoffforschung, Mathematik und Programmierassistenten. Beide Varianten sind umgebaute Versionen der bestehenden Generation und sollen im kommenden Jahr verfügbar sein.
+Alphabet baut sein Geschäft mit eigenen KI-Chips aus und greift Nvidia damit breiter an. Wie Bloomberg exklusiv berichtet, stellt Google am Montag zwei neue Varianten seiner Tensor Processing Units (TPU) vor. Die TPU 8tx ist für vertrauliches Rechnen gedacht, etwa für Behörden und Unternehmen in regulierten Branchen. Sie arbeitet mit Prozessoren von AMD zusammen und verschlüsselt Daten bereits auf Chipebene. AMD bestätigte am Montag die Zusammenarbeit: Prozessoren der Reihe EPYC der fünften Generation steuern die TPU 8tx, es ist das erste Cloud-TPU-System mit hardwaregestützter Vertraulichkeit. AMD nennt EPYC außerdem den bevorzugten Host-Prozessor von mehr als zehn großen Cloud-Anbietern und KI-Laboren, auch in Systemen mit Nvidia-Chips. Die TPU 8i Max packt zwei TPU-Chips in ein Gehäuse und ist für Anwendungen mit sehr langen Kontextfenstern ausgelegt, zum Beispiel Wirkstoffforschung, Mathematik und Programmierassistenten. Beide Varianten sind umgebaute Versionen der bestehenden Generation und sollen im kommenden Jahr verfügbar sein.
 
 Mit den beiden Neuheiten hat Google vier TPU-Angebote, die jeweils auf andere Aufgaben zielen. Früher kam alle zwei Jahre ein neuer Chip, in diesem Jahr erschienen bereits zwei gleichzeitig. Chipchef Amin Vahdat setzt auf Spezialisierung statt auf einen Chip für den ganzen Markt.
 
@@ -25,4 +25,5 @@ Mit den beiden Neuheiten hat Google vier TPU-Angebote, die jeweils auf andere Au
 
 ## Quellen
 
-- [Bloomberg: Google Escalates Nvidia Rivalry With Specialized Versions of AI Chips (Dina Bass, 9. November 2026)](https://www.bloomberg.com/news/articles/2026-11-09/google-escalates-nvidia-rivalry-with-new-versions-of-its-tpu-systems)
+- [Bloomberg: Google Escalates Nvidia Rivalry With Specialized Versions of AI Chips (9. November 2026)](https://www.bloomberg.com/news/articles/2026-11-09/google-escalates-nvidia-rivalry-with-new-versions-of-its-tpu-systems)
+- AMD, Pressemitteilung „AMD EPYC Expands Its Leadership at the Foundation of AI", 9. November 2026 (GlobeNewswire)
