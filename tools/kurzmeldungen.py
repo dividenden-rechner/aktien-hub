@@ -645,6 +645,7 @@ def main():
         cands = edgar_candidates(firmen, done) + feed_candidates({f["sym"] for f in firmen}, done) + nsm.candidates(MAX_AGE_H, done, log)
     watch = set(load_json(WATCHLIST, {}).get("tickers", []))
     big = {f["sym"] for f in load_json(os.path.join(ia.ROOT, "data", "feeds.json"), {"feeds": []})["feeds"]}
+    cands.sort(key=lambda c: str(c.get("when") or ""), reverse=True)   # Neueste zuerst: bei knappem Kontingent kommen aktuelle Meldungen vor liegengebliebenen
     cands.sort(key=lambda c: 0 if c["sym"] in watch else (1 if c["sym"] in big else 2))   # Wichtige Firmen zuerst
     bud = state.setdefault("budget", {"day": "", "n": 0})
     if bud["day"] != budget_day():
