@@ -10,7 +10,7 @@ quelle_url: https://www.amgen.com/newsroom/press-releases
 quelle_name: "Pressemitteilung Amgen, 9. November 2026"
 logo_symbol: AMGN
 logo_name: "Amgen"
-logo_file: assets/logos/amgn.mono.png
+logo_file: assets/logos/amgn.png
 ---
 Amgen hat auf der Jahrestagung der American Heart Association mehrere neue Auswertungen zu Repatha (Evolocumab) vorgestellt, seinem Cholesterinsenker aus der Gruppe der PCSK9-Hemmer. Am stärksten fällt die Analyse für Patienten mit chronischer Nierenkrankheit aus, die noch keinen Herzinfarkt oder Schlaganfall hatten. Ihr Risiko für Tod durch Herzkrankheit, Herzinfarkt oder ischämischen Schlaganfall war in der Studie VESALIUS-CV rund 90 % höher als bei Patienten ohne Nierenleiden. Repatha senkte dieses Risiko im Median nach 4,6 Jahren um 39 %, das erweiterte Risiko inklusive Gefäßeingriffen um 23 % und das Sterberisiko insgesamt um 29 %. Dazu kommt eine unabhängige Kosten-Nutzen-Analyse, die das Duke Clinical Research Institute mit der TIMI Study Group leitete. Sie bewertet Repatha für Hochrisikopatienten ohne früheren Infarkt als wirtschaftlich, mit Kosten rund 36 % unter der Schwelle der US-Fachgesellschaften.
 
