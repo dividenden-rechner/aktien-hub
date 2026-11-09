@@ -1,0 +1,31 @@
+name: Quartr-Kalender abrufen
+# Liest den Quartr-Kalender (Secret QUARTR_KALENDER_URL) und legt die Termine der naechsten Wochen in data/quartr-termine.json ab.
+# Vorerst nur von Hand zu starten; der Earnings-Kalender (termine-app.json) wird nicht veraendert.
+on:
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: quartr-kalender
+  cancel-in-progress: false
+jobs:
+  holen:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Feed lesen
+        env:
+          QUARTR_KALENDER_URL: ${{ secrets.QUARTR_KALENDER_URL }}
+        run: python3 tools/quartr_kalender.py
+      - name: Committen
+        run: |
+          git config user.name "ir-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add data/quartr-termine.json
+          if git diff --cached --quiet; then echo "Keine Aenderungen"; exit 0; fi
+          git commit -m "Quartr-Kalender: Termine der naechsten Wochen"
+          git pull --rebase -q
+          git push
