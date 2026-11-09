@@ -10,6 +10,7 @@ quelle_url: https://www.sec.gov/Archives/edgar/data/1086222/000119312526452631/d
 quelle_name: "Pressemitteilung Akamai Technologies (SEC-Meldung)"
 logo_symbol: AKAM
 logo_name: "Akamai Technologies"
+logo_file: assets/logos/akam.png
 ---
 <!-- PRÜFEN: Diese Zahlen stehen nicht im Originaltext: 2,2, 2,2, 2,2, Einordnung: 2,2. Bitte pruefen, dann 'draft: true' loeschen. -->
 
