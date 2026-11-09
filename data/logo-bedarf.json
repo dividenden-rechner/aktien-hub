@@ -118,5 +118,11 @@
   "sym": "NVDA",
   "dom": "nvidia.com",
   "name": "Nvidia"
+ },
+ {
+  "key": "b",
+  "sym": "B",
+  "dom": "barrick.com",
+  "name": "Barrick Mining"
  }
 ]
