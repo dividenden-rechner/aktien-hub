@@ -15,7 +15,7 @@ image_source: "https://unsplash.com/de/fotos/eine-bohrinsel-mitten-im-ozean-0wsM
 image_artist_url: "https://unsplash.com/de/@laohu911?utm_source=dividenden-rechner&utm_medium=referral"
 ---
 <!-- PRÜFEN: Alle Tagesangaben (Brent 92,57 USD, WTI 86,85 USD, -16 % in der Vorwoche, Überschuss 1,4 Mio. Barrel, OPEC-Förderung, US-Reserve) stammen aus dem Reuters-Text vom 9.11. (über Investing.com, als Textdatei vorgelegt). Das Hoch "knapp 118 Dollar" am 30.10. stammt aus Gulf News vom 5.11., Reuters nennt es nicht. -->
-<!-- PRÜFEN: Die Abendmeldungen (IAEA-Inspektoren, Anreicherung bis 3,67 %, katarisch-pakistanischer Vorschlag) und die Brent-Werte 91,07 USD und 98,32 USD (Schluss 6.11.) stammen aus einem Screenshot der X-Beiträge von Rory Johnston (Bloomberg-Chart) und sind unbestätigt. Der Wortlaut des verlinkten Beitrags wurde nicht gesehen, nur die beiden Beiträge im Screenshot; bitte prüfen, dass der Link auf den richtigen Beitrag zeigt. -->
+<!-- PRÜFEN: Die Abendmeldungen (IAEA-Inspektoren, Anreicherung bis 3,67 %, katarisch-pakistanischer Vorschlag) und die Brent-Werte 91,07 USD und 98,32 USD (Schluss 6.11.) stammen aus einem Screenshot der X-Beiträge von Rory Johnston (Bloomberg-Chart) und sind unbestätigt. Verlinkt ist der obere der beiden Beiträge im Screenshot (Hinweis auf Al Arabiya mit IAEA-Inspektoren und Anreicherung), laut Divi; der Preis-Chart stammt aus dem darunterliegenden Beitrag. -->
 <!-- PRÜFEN: Q3-Durchschnitt Brent 97 USD, BP-Planung 110 USD, TotalEnergies über 100 USD, Investitionsquote 20 bis 40 %, Schuldenabbau 27 bis 38 % und Dividendenanstieg 4 bis 6 % stammen aus dem eigenen Big-Oil-Artikel vom 31.10. -->
 
 !!! kurz "Kurz gesagt"
