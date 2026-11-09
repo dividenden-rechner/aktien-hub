@@ -16,10 +16,11 @@ Datei anklicken, dann Stift-Symbol: Zeile `draft: true` löschen und speichern, 
 | 29.10.2026 22:42 | Amazon steigert Umsatz im dritten Quartal auf 201,9 Milliarden Dollar | [79738970_2026-10-29/7757_2242-amazon-q3-2026-zahlen.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/79738970_2026-10-29/7757_2242-amazon-q3-2026-zahlen.md) |
 | 29.10.2026 10:12 | Shell erzielt im dritten Quartal 10,8 Milliarden Dollar Gewinn | [79738970_2026-10-29/8987_1012-shell-q3-2026-ergebnisse.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/79738970_2026-10-29/8987_1012-shell-q3-2026-ergebnisse.md) |
 
-### Online (320)
+### Online (321)
 
 | Datum | Titel | Datei |
 |---|---|---|
+| 09.11.2026 14:05 | Google bringt zwei neue KI-Chips gegen Nvidia: Der TPU-Umsatz soll von 12 auf 135 Milliarden Dollar wachsen | [79738889_2026-11-09/9020_1405-google-tpu-8tx-8i-max-nvidia-konkurrenz.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/79738889_2026-11-09/9020_1405-google-tpu-8tx-8i-max-nvidia-konkurrenz.md) |
 | 09.11.2026 13:10 | Nvidia fällt um 6 %, nachdem Chef Huang eine Affäre einräumt und der Verwaltungsrat ermittelt | [79738891_2026-11-08/9040_2115-nvidia-untersuchung-huang-geheimdienst.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/79738891_2026-11-08/9040_2115-nvidia-untersuchung-huang-geheimdienst.md) |
 | 09.11.2026 12:15 | Barrick: Bereinigter Gewinn je Aktie steigt um 41 %, die Kosten je Unze um ein Viertel | [79738889_2026-11-09/9015_1215-barrick-q3-2026-gewinn-kosten-rueckkaeufe.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/79738889_2026-11-09/9015_1215-barrick-q3-2026-gewinn-kosten-rueckkaeufe.md) |
 | 09.11.2026 10:05 | UniCredit will die Commerzbank früher mit der HVB zusammenlegen, Aktionäre müssen mit weniger Dividende rechnen | [79738889_2026-11-09/9005_1005-unicredit-commerzbank-hvb-fusion-dividende.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/79738889_2026-11-09/9005_1005-unicredit-commerzbank-hvb-fusion-dividende.md) |
