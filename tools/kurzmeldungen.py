@@ -646,7 +646,20 @@ def main():
     watch = set(load_json(WATCHLIST, {}).get("tickers", []))
     big = {f["sym"] for f in load_json(os.path.join(ia.ROOT, "data", "feeds.json"), {"feeds": []})["feeds"]}
     cands.sort(key=lambda c: str(c.get("when") or ""), reverse=True)   # Neueste zuerst: bei knappem Kontingent kommen aktuelle Meldungen vor liegengebliebenen
-    cands.sort(key=lambda c: 0 if c["sym"] in watch else (1 if c["sym"] in big else 2))   # Wichtige Firmen zuerst
+    prio = load_json(os.path.join(ROOT, "data", "kurz-prioritaet.json"), {})
+    ki = set(prio.get("ki", [])); asien_ok = set(prio.get("asien_behalten", []))
+    def tier(c):
+        sym = c["sym"]
+        if sym in watch or sym in ki: return 0
+        if sym in big: return 1
+        return 2
+    def asien_unbekannt(c):
+        sym = c["sym"]
+        return sym.rsplit(".", 1)[-1] in ("T", "KS", "NS", "HK", "TW", "AX") and sym not in asien_ok and sym not in watch and sym not in ki
+    vorher = len(cands)
+    cands = [c for c in cands if not asien_unbekannt(c)]
+    if vorher != len(cands): log(f"{vorher - len(cands)} Meldungen unbekannter asiatischer Firmen uebersprungen")
+    cands.sort(key=tier)   # Wichtige Firmen zuerst (stabil: neueste vorn)
     bud = state.setdefault("budget", {"day": "", "n": 0})
     if bud["day"] != budget_day():
         bud.update(day=budget_day(), n=0)
@@ -658,6 +671,8 @@ def main():
             log("Obergrenze erreicht, Rest beim naechsten Lauf."); break
         if not os.environ.get("KURZ_MOCK") and bud["n"] + CALLS_PER_POST > budget_allowed():
             log(f"Tagesbudget fuer diese Tageszeit erreicht ({bud['n']}/{budget_allowed()}), Rest spaeter."); break
+        if tier(c) == 2 and not os.environ.get("KURZ_MOCK") and bud["n"] >= prio.get("stufe3_anteil", 0.4) * budget_allowed():
+            continue   # uebrige Firmen nur, solange das Tagesbudget noch reichlich ist
         if fails >= 2:
             log("Modelle liefern nichts mehr (Kontingent?), Lauf wird beendet."); break
         log(f"- {c['sym']} {c['key']}")

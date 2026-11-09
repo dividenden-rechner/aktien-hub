@@ -1,0 +1,6 @@
+{
+  "_info": "Prioritaet der Kurzmeldungen. Stufe 1: Beobachtungsliste (data/ir-watchlist.json) und KI-Firmen. Stufe 2: Firmen aus data/feeds.json. Stufe 3: alle uebrigen S&P-500-Firmen, nur solange 40 % des Tagesbudgets nicht verbraucht sind. Asiatische Firmen ausserhalb von asien_behalten werden uebersprungen.",
+  "ki": ["NVDA", "AMD", "AVGO", "MSFT", "GOOGL", "GOOG", "AMZN", "META", "ORCL", "TSM", "ASML", "ASML.AS", "MU", "SMCI", "PLTR", "ARM", "DELL", "QCOM", "INTC", "MRVL", "ANET", "VRT", "CRM", "NOW", "ADBE", "LRCX", "AMAT", "KLAC", "CDNS", "SNPS", "TXN", "CEG", "VST", "GEV", "NRG", "CRWV", "NBIS", "SAP.DE"],
+  "asien_behalten": ["7203.T", "6758.T", "9432.T", "005930.KS", "000660.KS", "2454.TW", "9988.HK", "0700.HK", "BHP.AX"],
+  "stufe3_anteil": 0.4
+}

@@ -18,11 +18,11 @@ jobs:
   briefing:
     runs-on: ubuntu-latest
     steps:
-      - name: Nur um 6 und 9 Uhr deutscher Zeit laufen (Zeitplan), Test sofort
+      - name: "Zeitplan nur 6 bis 13 Uhr deutscher Zeit (GitHub startet oft spaet), Test sofort"
         id: zeit
         run: |
           H=$(TZ=Europe/Berlin date +%H)
-          if [ "${{ github.event_name }}" = "schedule" ] && [ "$H" != "06" ] && [ "$H" != "09" ]; then echo "skip=1" >> $GITHUB_OUTPUT; fi
+          if [ "${{ github.event_name }}" = "schedule" ] && { [ "$((10#$H))" -lt 6 ] || [ "$((10#$H))" -gt 13 ]; }; then echo "skip=1" >> $GITHUB_OUTPUT; fi
       - uses: actions/checkout@v4
         if: steps.zeit.outputs.skip != '1'
         with:
