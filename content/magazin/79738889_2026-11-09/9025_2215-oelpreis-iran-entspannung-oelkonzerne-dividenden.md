@@ -15,6 +15,7 @@ image_source: "https://unsplash.com/de/fotos/eine-bohrinsel-mitten-im-ozean-0wsM
 image_artist_url: "https://unsplash.com/de/@laohu911?utm_source=dividenden-rechner&utm_medium=referral"
 ---
 <!-- PRÜFEN: Alle Tagesangaben (Brent 92,57 USD, WTI 86,85 USD, -16 % in der Vorwoche, Überschuss 1,4 Mio. Barrel, OPEC-Förderung, US-Reserve) stammen aus dem Reuters-Text vom 9.11. (über Investing.com, als Textdatei vorgelegt). Das Hoch "knapp 118 Dollar" am 30.10. stammt aus Gulf News vom 5.11., Reuters nennt es nicht. -->
+<!-- PRÜFEN: Die Abendmeldungen (IAEA-Inspektoren, Anreicherung bis 3,67 %, katarisch-pakistanischer Vorschlag) und die Brent-Werte 91,07 USD und 98,32 USD (Schluss 6.11.) stammen aus einem Screenshot der X-Beiträge von Rory Johnston (Bloomberg-Chart) und sind unbestätigt. Der Wortlaut des verlinkten Beitrags wurde nicht gesehen, nur die beiden Beiträge im Screenshot; bitte prüfen, dass der Link auf den richtigen Beitrag zeigt. -->
 <!-- PRÜFEN: Q3-Durchschnitt Brent 97 USD, BP-Planung 110 USD, TotalEnergies über 100 USD, Investitionsquote 20 bis 40 %, Schuldenabbau 27 bis 38 % und Dividendenanstieg 4 bis 6 % stammen aus dem eigenen Big-Oil-Artikel vom 31.10. -->
 
 !!! kurz "Kurz gesagt"
@@ -29,6 +30,8 @@ image_artist_url: "https://unsplash.com/de/@laohu911?utm_source=dividenden-rechn
 Am Sonntag erklärte Donald Trump, neue Angriffe auf den Iran seien sehr unwahrscheinlich, solange die Gespräche zur Beendigung des Konflikts vorankommen. Brent schloss am Montag 5,75 Dollar tiefer bei 92,57 Dollar und gab nach Handelsschluss um mehr als einen weiteren Dollar nach, auf den tiefsten Stand seit Ende August. US-Rohöl (WTI) verlor 4,4 % auf 86,85 Dollar. In der Vorwoche war Brent um 16 % gefallen, der stärkste Wochenverlust seit Beginn der Corona-Pandemie. Vom Hoch bei knapp 118 Dollar Ende Oktober fehlen damit mehr als 20 %.
 
 Der Markt setzt auf Diplomatie, entwarnt ist die Lage am Golf damit noch nicht. Beide Seiten meldeten zuletzt Treffer auf Schiffe in oder nahe der Straße von Hormus. Teheran will nach Angaben eines Sicherheitsbeamten nur verhandeln, wenn Washington sieben Bedingungen aus einem Interimsabkommen vom Juni erfüllt, und US-Vertreter wie auch Diplomaten am Golf bezweifeln einen baldigen Abschluss. Die Huthi bekannten sich zu einem Angriff auf das Aramco-Verwaltungsgebäude in Riad, an der saudischen Ost-West-Pipeline brach nach einem Treffer ein Feuer aus, ohne den Betrieb zu stören.
+
+Am Abend schoben unbestätigte Meldungen den Preis weiter nach unten. Der Rohstoffanalyst Rory Johnston fasst sie in einem [Beitrag auf X](https://x.com/Rory_Johnston/status/2119881116316250329) zusammen: Es soll Absprachen über die Rückkehr von IAEA-Inspektoren geben, die USA sollen eine Urananreicherung im Iran bis 3,67 % zulassen, und Teheran habe angeblich zugestimmt. Ausgangspunkt ist eine Meldung des Senders Al Arabiya, ein katarisch-pakistanischer Vorschlag öffne den Weg zu ernsthaften Verhandlungen zwischen Washington und Teheran wieder. Bestätigt ist davon bisher nichts. Brent fiel zeitweise auf rund 91 Dollar, gut 7 % unter dem Freitagsschluss von 98,32 Dollar.
 
 ## Die Versorgung ist besser, als die Preise zuletzt nahelegten
 
@@ -45,5 +48,6 @@ Für die Ausschüttungen spricht der Puffer, den die Konzerne aufgebaut haben. S
 ## Quellen
 
 - Reuters, „Oil down more than $7 a barrel in post settlement trade as Trump signals restraint on Iran" (9.11.2026, über Investing.com)
+- Rory Johnston (Commodity Context), [Beitrag auf X](https://x.com/Rory_Johnston/status/2119881116316250329) (9.11.2026)
 - Gulf News, „Crude slides toward $93, WTI drops to $87 as Trump rules out immediate Iran strikes" (5.11.2026)
 - Eigene Auswertung der Q3-Berichte, siehe [Big Oil verdient am Krieg, tilgt aber zuerst Schulden](../big-oil-kapitalverwendung-q3-2026/)
