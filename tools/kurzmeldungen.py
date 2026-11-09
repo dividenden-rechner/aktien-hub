@@ -256,6 +256,64 @@ def feed_text(c):
     return txt, c["link"]
 
 
+
+# ---------------------------------------------------------------- Websuche fuer Firmen ohne Feed (Asien)
+def web_candidates(state, done, feed_syms, asien_ok, log):
+    """Einmal pro Tag: Gemini sucht im Web nach Meldungen der letzten 24 Stunden bei den Asien-Firmen ohne eigenen Feed.
+    Es zaehlt nur, was mit Quelle und Datum gefunden wird; die Seite der Quelle wird spaeter geholt und gegen den Text geprueft."""
+    from zoneinfo import ZoneInfo
+    now = datetime.now(ZoneInfo("Europe/Berlin"))
+    if now.hour < 10 or state.get("websuche_tag") == now.strftime("%Y-%m-%d"):
+        return []
+    names = {}
+    for line in open(os.path.join(ROOT, "data", "asia-seed.txt"), encoding="utf-8"):
+        p = line.strip().split("|")
+        if len(p) >= 2 and not line.startswith("#"):
+            names[p[0]] = p[1]
+    firmen = [(sym, names.get(sym, sym)) for sym in sorted(asien_ok) if sym not in feed_syms]
+    gruppen = {}
+    for sym, name in firmen:
+        gruppen.setdefault(sym.rsplit(".", 1)[-1] if "." in sym else "X", []).append((sym, name))
+    batches = []
+    for suf in sorted(gruppen):
+        g = gruppen[suf]
+        batches += [g[i:i + 9] for i in range(0, len(g), 9)]
+    key = ia.api_key(); found = []; ok_all = True
+    heute = now.date(); gestern = heute - timedelta(days=1)
+    for b in batches:
+        liste = "; ".join(f"{sym} ({name})" for sym, name in b)
+        prompt = ("Suche mit der Websuche nach Meldungen der letzten 24 Stunden von diesen boersennotierten Unternehmen: " + liste + ". "
+                  "Gesucht sind nur Pressemitteilungen oder Boersenmitteilungen mit Geschaeftszahlen, Dividende, Aktienrueckkauf, Prognose, Uebernahme oder Fuehrungswechsel. "
+                  "Gib pro gefundener Meldung genau eine Zeile aus im Format: SYMBOL | Datum (TT.MM.JJJJ) | Kernaussage in einem Satz | URL der Originalquelle "
+                  "(bevorzugt Pressemitteilung oder Boersenportal, sonst Nachrichtenagentur). Gibt es bei einem Unternehmen nichts Neues, lass es weg. "
+                  "Gibt es bei keinem etwas, antworte nur mit: KEINE. Erfinde nichts, keine Meldungen, die aelter als 24 Stunden sind.")
+        text, srcs = ia.ground(prompt, key)
+        if not text:
+            ok_all = False; log("  Websuche: keine Antwort (Kontingent?)"); break
+        for ln in text.splitlines():
+            parts = [x.strip() for x in ln.strip().lstrip("-* ").split("|")]
+            if len(parts) < 4 or parts[0] not in dict(b):
+                continue
+            sym, dat, kern, link = parts[0], parts[1], parts[2], parts[3]
+            m = re.search(r"(\d{1,2})\.(\d{1,2})\.(\d{4})", dat)
+            m2 = re.search(r"https?://\S+", link)
+            if not m or not m2:
+                continue
+            try:
+                d = datetime(int(m.group(3)), int(m.group(2)), int(m.group(1))).date()
+            except ValueError:
+                continue
+            if d not in (heute, gestern):
+                continue
+            k = "web:" + sym + ":" + re.sub(r"\W+", "", kern.lower())[:40]
+            if k in done:
+                continue
+            found.append({"key": k, "sym": sym, "name": dict(b)[sym], "title": kern, "link": m2.group(0).rstrip(").,"), "text": "", "when": now.isoformat(), "src": "web"})
+    if ok_all:
+        state["websuche_tag"] = now.strftime("%Y-%m-%d")
+    log(f"Websuche Asien: {len(batches)} Suchen, {len(found)} Treffer")
+    return found
+
 # ---------------------------------------------------------------- Schreiben
 def recent_titles(n=25):
     fs = A.all_md()[:n]
@@ -645,13 +703,19 @@ def main():
         cands = edgar_candidates(firmen, done) + feed_candidates({f["sym"] for f in firmen}, done) + nsm.candidates(MAX_AGE_H, done, log)
     watch = set(load_json(WATCHLIST, {}).get("tickers", []))
     big = {f["sym"] for f in load_json(os.path.join(ia.ROOT, "data", "feeds.json"), {"feeds": []})["feeds"]}
+    if not a.offline and not a.dry and not os.environ.get("KURZ_MOCK"):
+        prio0 = load_json(os.path.join(ROOT, "data", "kurz-prioritaet.json"), {})
+        try:
+            cands += web_candidates(state, done, big, set(prio0.get("asien_behalten", [])), log)
+        except Exception as e:
+            log(f"Websuche Asien fehlgeschlagen: {str(e)[:120]}")
     cands.sort(key=lambda c: str(c.get("when") or ""), reverse=True)   # Neueste zuerst: bei knappem Kontingent kommen aktuelle Meldungen vor liegengebliebenen
     prio = load_json(os.path.join(ROOT, "data", "kurz-prioritaet.json"), {})
     ki = set(prio.get("ki", [])); asien_ok = set(prio.get("asien_behalten", []))
     def tier(c):
         sym = c["sym"]
         if sym in watch or sym in ki: return 0
-        if sym in big: return 1
+        if sym in big or c.get("src") == "web": return 1
         return 2
     def asien_unbekannt(c):
         sym = c["sym"]
