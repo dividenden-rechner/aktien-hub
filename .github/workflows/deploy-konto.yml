@@ -1,0 +1,40 @@
+name: Konto-Server bereitstellen
+# Nur von Hand starten (Actions > Konto-Server bereitstellen > Run workflow). Legt die Datenbank an, spielt das Schema ein und laedt den Worker hoch.
+on:
+  workflow_dispatch:
+permissions:
+  contents: read
+concurrency:
+  group: konto
+  cancel-in-progress: false
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    env:
+      CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+      CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+      BREVO_API_KEY: ${{ secrets.BREVO_API_KEY }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+      - name: Zugangsdaten pruefen
+        run: |
+          if [ -z "$CLOUDFLARE_API_TOKEN" ] || [ -z "$CLOUDFLARE_ACCOUNT_ID" ]; then echo "::error::Cloudflare-Secrets fehlen."; exit 1; fi
+          if [ -z "$BREVO_API_KEY" ]; then echo "::error::Das GitHub-Secret BREVO_API_KEY fehlt."; exit 1; fi
+      - name: Datenbank anlegen oder finden und ID eintragen
+        run: |
+          ID=$(npx --yes wrangler@3 d1 list --json | python3 -c "import sys,json; print(next((d['uuid'] for d in json.load(sys.stdin) if d['name']=='dividenden-konto'), ''))")
+          if [ -z "$ID" ]; then
+            npx --yes wrangler@3 d1 create dividenden-konto
+            ID=$(npx --yes wrangler@3 d1 list --json | python3 -c "import sys,json; print(next((d['uuid'] for d in json.load(sys.stdin) if d['name']=='dividenden-konto'), ''))")
+          fi
+          if [ -z "$ID" ]; then echo "::error::Datenbank konnte nicht angelegt werden (Token braucht das Recht D1: Edit)."; exit 1; fi
+          sed -i "s/HIER-DIE-ID-EINTRAGEN/$ID/" worker-konto/wrangler.toml
+      - name: Tabellen anlegen (idempotent)
+        run: npx --yes wrangler@3 d1 execute dividenden-konto --remote --file worker-konto/schema.sql --config worker-konto/wrangler.toml
+      - name: Worker hochladen
+        run: npx --yes wrangler@3 deploy --config worker-konto/wrangler.toml
+      - name: Brevo-Schluessel als Secret im Worker ablegen
+        run: printf '%s' "$BREVO_API_KEY" | npx --yes wrangler@3 secret put BREVO_API_KEY --config worker-konto/wrangler.toml

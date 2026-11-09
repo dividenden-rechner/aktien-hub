@@ -1,0 +1,15 @@
+name = "konto"
+main = "konto.js"
+compatibility_date = "2025-01-01"
+workers_dev = true
+
+# Keine Geheimnisse, nur Einstellungen.
+[vars]
+ABSENDER_MAIL = "newsletter@dividenden-rechner.de"   # bei Brevo als Absender verifiziert
+SEITE = "https://www.dividenden-rechner.de"          # Adresse der Seite; der Login-Link fuehrt auf SEITE/konto/
+
+# Die Datenbank legt der Workflow "Konto-Server bereitstellen" an und tragt die ID hier ein (siehe worker-konto/README.md).
+[[d1_databases]]
+binding = "DB"
+database_name = "dividenden-konto"
+database_id = "HIER-DIE-ID-EINTRAGEN"

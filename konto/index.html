@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="de"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Mein Konto | Dividenden-Rechner</title><meta name="robots" content="noindex">
+<link rel="stylesheet" href="../assets/site.css"><link rel="icon" href="../favicon.ico" sizes="any">
+<style>
+.kk{max-width:560px;margin:0 auto;padding:40px 16px}
+.kk h1{margin:0 0 12px}.kk label{display:block;margin:14px 0 4px;font-weight:600}
+.kk input[type=email]{width:100%;box-sizing:border-box;padding:10px;border:1px solid #c9d2da;border-radius:4px;font-size:16px}
+.kk .chk{display:flex;gap:8px;align-items:flex-start;margin:14px 0;font-weight:400;font-size:14px}
+.kk button{padding:10px 18px;border:0;background:#2f9e5b;color:#fff;font-weight:700;border-radius:4px;font-size:16px;cursor:pointer}
+.kk button.zweit{background:#fff;color:#14202b;border:1px solid #c9d2da;font-weight:600}
+.kk button.gefahr{background:#fff;color:#b3261e;border:1px solid #b3261e;font-weight:600}
+.kk button:disabled{opacity:.6;cursor:default}
+.kk .hp{position:absolute;left:-9999px}
+#msg{margin:14px 0;min-height:1.4em}#msg.ok{color:#1a7a45}#msg.err{color:#b3261e}
+.kk .zeile{display:flex;gap:10px;flex-wrap:wrap;margin:16px 0}
+.kk small{color:#5d6b78}
+</style></head>
+<body><main class="kk">
+<h1>Mein Konto</h1>
+<div id="off" hidden><p>Das Konto ist noch nicht freigeschaltet. Deine Watchlist bleibt bis dahin in diesem Browser gespeichert.</p></div>
+<form id="login" hidden>
+<p>Melde dich ohne Passwort an: Wir schicken dir einen Link per E-Mail. Danach ist deine Watchlist auf jedem Gerät da.</p>
+<label for="email">E-Mail-Adresse</label>
+<input type="email" id="email" name="email" autocomplete="email" required>
+<input class="hp" type="text" id="website" name="website" tabindex="-1" autocomplete="off" aria-hidden="true">
+<label class="chk"><input type="checkbox" id="einw" required><span>Ich stimme zu, dass meine E-Mail-Adresse und meine Watchlist für das Konto gespeichert werden. Details stehen in der <a href="../datenschutz/">Datenschutzerklärung</a>. Das ist keine Newsletter-Anmeldung.</span></label>
+<button type="submit">Anmelde-Link senden</button>
+</form>
+<section id="drin" hidden>
+<p>Angemeldet als <strong id="wer"></strong>. Deine Watchlist enthält <strong id="anz">0</strong> Aktien und wird automatisch gespeichert.</p>
+<div class="zeile"><button type="button" class="zweit" id="exp">Meine Daten herunterladen</button><button type="button" class="zweit" id="aus">Abmelden</button><button type="button" class="gefahr" id="weg">Konto löschen</button></div>
+<p><small>Beim Löschen werden deine E-Mail-Adresse, deine Anmeldungen und deine Watchlist auf dem Server entfernt. Die Liste in diesem Browser bleibt.</small></p>
+<p><a href="../aktien-hub/">Zum Aktien-Hub</a> · <a href="../">Zur Startseite</a></p>
+</section>
+<p id="msg" role="status"></p>
+</main>
+<script src="../assets/konto.js"></script>
+<script>
+(function(){
+  var $=function(i){return document.getElementById(i)}, msg=$("msg");
+  function say(t,c){msg.textContent=t||"";msg.className=c||""}
+  function zeige(){
+    var ein=Konto.eingerichtet(), drin=Konto.angemeldet();
+    $("off").hidden=ein; $("login").hidden=!ein||drin; $("drin").hidden=!ein||!drin;
+    if(drin){$("wer").textContent=Konto.email();
+      Konto.abgleichen().then(function(l){var n=l?l.length:(function(){try{return JSON.parse(localStorage.getItem("wl")||"[]").length}catch(e){return 0}})();$("anz").textContent=n})}
+  }
+  var t=new URLSearchParams(location.search).get("t");
+  if(t&&Konto.eingerichtet()){
+    history.replaceState(null,"",location.pathname);
+    say("Einen Moment …");
+    Konto.einloesen(t).then(function(x){ if(x.ok){say("Du bist angemeldet.","ok")}else{say((x.j&&x.j.fehler)||"Das hat leider nicht geklappt.","err")} zeige(); });
+  } else zeige();
+  $("login").addEventListener("submit",function(e){
+    e.preventDefault(); var b=this.querySelector("button"); b.disabled=true; say("Einen Moment …");
+    Konto.login($("email").value,$("einw").checked,$("website").value).then(function(x){
+      if(x.ok){say("Wir haben dir einen Link geschickt. Bitte öffne die E-Mail und klicke auf „Jetzt anmelden“. Schau auch im Spam-Ordner nach.","ok");$("login").reset()}
+      else say((x.j&&x.j.fehler)||"Das hat leider nicht geklappt.","err");
+    }).catch(function(){say("Keine Verbindung. Bitte später erneut versuchen.","err")}).then(function(){b.disabled=false});
+  });
+  $("aus").onclick=function(){Konto.abmelden().then(function(){say("Du bist abgemeldet.","ok");zeige()})};
+  $("weg").onclick=function(){ if(!confirm("Konto wirklich löschen? E-Mail-Adresse und gespeicherte Watchlist werden auf dem Server entfernt."))return;
+    Konto.loeschen().then(function(x){ if(x.ok)say("Dein Konto ist gelöscht.","ok"); else say("Löschen hat nicht geklappt.","err"); zeige(); }) };
+  $("exp").onclick=function(){Konto.export().then(function(x){ if(!x.ok){say("Download hat nicht geklappt.","err");return}
+    var a=document.createElement("a"); a.href=URL.createObjectURL(new Blob([JSON.stringify(x.j,null,2)],{type:"application/json"})); a.download="meine-daten-dividenden-rechner.json"; document.body.appendChild(a); a.click(); a.remove() })};
+})();
+</script></body></html>
