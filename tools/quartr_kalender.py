@@ -64,16 +64,21 @@ def termine(ics):
 
 
 def art(titel):
-    """Grobe Einordnung nach dem Titel. Reihenfolge ist wichtig."""
-    t = titel.lower()
-    if re.search(r"\b(cmd|capital markets?|investor day|investor & analyst day|investor and analyst day|analyst day)\b", t):
+    """Grobe Einordnung nach dem Titel (Quartr schreibt "Firma - Ereignis"). Reihenfolge ist wichtig."""
+    t = titel.split(" - ", 1)[-1].lower()
+    if re.search(r"\b(conference|keynote|fireside|meet the management|summit|forum|symposium|congress|webcast|roadshow)\b", t) \
+            and not re.search(r"\b(cmd|investor day|analyst day|capital markets day)\b", t):
+        return "sonstiges"
+    if re.search(r"\b(cmd|capital markets day|investor day|investor & analyst day|investor and analyst day|analyst day)\b", t):
         return "kapitalmarkttag"
     if re.search(r"\b(agm|annual general meeting|hauptversammlung|egm|shareholder meeting)\b", t):
         return "hauptversammlung"
-    if re.search(r"\b(q[1-4]|h[12]|fy|full[- ]year|half[- ]year|annual results|quarter)\b", t) and not re.search(r"\b(q&a|media|conference|keynote)\b", t):
-        return "zahlen"
-    if re.search(r"\b(media|q&a|conference|keynote|fireside|presentation|webcast|call)\b", t):
+    if re.search(r"\b(trading update|investor update|esg update|business update)\b", t):
+        return "update"
+    if re.search(r"\b(q&a|media|presentation|call)\b", t):
         return "sonstiges"
+    if re.search(r"\b(q[1-4]|h[12]|fy|full[- ]year|half[- ]year|annual results|quarter)\b", t):
+        return "zahlen"
     return "unbekannt"
 
 
