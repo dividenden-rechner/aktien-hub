@@ -16,10 +16,11 @@ Datei anklicken, dann Stift-Symbol: Zeile `draft: true` löschen und speichern, 
 | 29.10.2026 22:42 | Amazon steigert Umsatz im dritten Quartal auf 201,9 Milliarden Dollar | [79738970_2026-10-29/7757_2242-amazon-q3-2026-zahlen.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/79738970_2026-10-29/7757_2242-amazon-q3-2026-zahlen.md) |
 | 29.10.2026 10:12 | Shell erzielt im dritten Quartal 10,8 Milliarden Dollar Gewinn | [79738970_2026-10-29/8987_1012-shell-q3-2026-ergebnisse.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/79738970_2026-10-29/8987_1012-shell-q3-2026-ergebnisse.md) |
 
-### Online (322)
+### Online (323)
 
 | Datum | Titel | Datei |
 |---|---|---|
+| 09.11.2026 19:15 | Merck-Wirkstoff Efinopegdutid bringt bei bis zu 63 % der Leberpatienten die MASH-Entzündung zum Abklingen, Placebo 13 % | [79738890_2026-11-09/8399_1915-merck-efinopegdutid-mash-phase-2b.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/79738890_2026-11-09/8399_1915-merck-efinopegdutid-mash-phase-2b.md) |
 | 09.11.2026 16:01 | Akamai Technologies plant Wandelanleihen-Emission über 2,2 Milliarden US-Dollar | [79738890_2026-11-09/8398_1601-akamai-wandelanleihe-emission-2-2-mrd-usd.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/79738890_2026-11-09/8398_1601-akamai-wandelanleihe-emission-2-2-mrd-usd.md) |
 | 09.11.2026 14:05 | Nvidia fällt um 7 %, während Google und AMD mit neuen KI-Chips angreifen | [79738889_2026-11-09/9020_1405-google-tpu-8tx-8i-max-nvidia-konkurrenz.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/79738889_2026-11-09/9020_1405-google-tpu-8tx-8i-max-nvidia-konkurrenz.md) |
 | 09.11.2026 13:10 | Nvidia fällt um 6 %, nachdem Chef Huang eine Affäre einräumt und der Verwaltungsrat ermittelt | [79738891_2026-11-08/9040_2115-nvidia-untersuchung-huang-geheimdienst.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/79738891_2026-11-08/9040_2115-nvidia-untersuchung-huang-geheimdienst.md) |
