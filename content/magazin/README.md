@@ -16,10 +16,11 @@ Datei anklicken, dann Stift-Symbol: Zeile `draft: true` löschen und speichern, 
 | 29.10.2026 22:42 | Amazon steigert Umsatz im dritten Quartal auf 201,9 Milliarden Dollar | [79738970_2026-10-29/7757_2242-amazon-q3-2026-zahlen.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/79738970_2026-10-29/7757_2242-amazon-q3-2026-zahlen.md) |
 | 29.10.2026 10:12 | Shell erzielt im dritten Quartal 10,8 Milliarden Dollar Gewinn | [79738970_2026-10-29/8987_1012-shell-q3-2026-ergebnisse.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/79738970_2026-10-29/8987_1012-shell-q3-2026-ergebnisse.md) |
 
-### Online (317)
+### Online (318)
 
 | Datum | Titel | Datei |
 |---|---|---|
+| 09.11.2026 08:00 | Hannover Rück steigert den Gewinn um 7 %, Großschäden bleiben deutlich unter Plan | [79738889_2026-11-09/9000_0800-hannover-rueck-neun-monate-2026-grossschaeden-prognose.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/79738889_2026-11-09/9000_0800-hannover-rueck-neun-monate-2026-grossschaeden-prognose.md) |
 | 09.11.2026 00:30 | Main Street Capital: Gewinn je Aktie sinkt um 8 %, der Substanzwert wächst zum 17. Mal in Folge | [79738889_2026-11-09/9010_0030-main-street-capital-q3-2026-substanzwert-dividende.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/79738889_2026-11-09/9010_0030-main-street-capital-q3-2026-substanzwert-dividende.md) |
 | 08.11.2026 21:15 | Nvidia-Chef Huang räumt Affäre ein, Verwaltungsrat startet Untersuchung | [79738891_2026-11-08/9040_2115-nvidia-untersuchung-huang-geheimdienst.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/79738891_2026-11-08/9040_2115-nvidia-untersuchung-huang-geheimdienst.md) |
 | 08.11.2026 20:15 | Ecolab wächst zweistellig, doch der Gewinn je Aktie sinkt: Warum das gute Geschäft für Dividendenjäger schwierig ist | [79738890_2026-11-08/9020_2015-ecolab-q3-2026-wasser-hygiene-dividende-bewertung.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/79738890_2026-11-08/9020_2015-ecolab-q3-2026-wasser-hygiene-dividende-bewertung.md) |
