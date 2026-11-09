@@ -1423,6 +1423,15 @@
    "quelle": "https://data.fca.org.uk/artefacts/NSM/RNS/5e845b98-a23f-44f8-a77e-aa82c6874aa8.html"
   },
   {
+   "sym": "AKAM",
+   "name": "Akamai Technologies",
+   "art": "dividende_zahltag",
+   "datum": "2027-05-15",
+   "betrag": "",
+   "waehrung": "USD",
+   "quelle": "https://www.sec.gov/Archives/edgar/data/1086222/000119312526452631/d137487dex991.htm"
+  },
+  {
    "sym": "GSK",
    "name": "GSK plc",
    "art": "dividende_zahltag",
