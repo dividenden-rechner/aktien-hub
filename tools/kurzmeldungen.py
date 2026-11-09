@@ -655,7 +655,7 @@ def main():
         return 2
     def asien_unbekannt(c):
         sym = c["sym"]
-        return sym.rsplit(".", 1)[-1] in ("T", "KS", "NS", "HK", "TW", "AX") and sym not in asien_ok and sym not in watch and sym not in ki
+        return sym.rsplit(".", 1)[-1] in ("T", "KS", "NS", "HK", "TW", "AX", "JK", "SI") and sym not in asien_ok and sym not in watch and sym not in ki
     vorher = len(cands)
     cands = [c for c in cands if not asien_unbekannt(c)]
     if vorher != len(cands): log(f"{vorher - len(cands)} Meldungen unbekannter asiatischer Firmen uebersprungen")
