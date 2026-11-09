@@ -1,5 +1,5 @@
 {
- "stand": "2026-10-30",
+ "stand": "2026-11-09",
  "firmen": [
   {
    "sym": "SAP.DE",
@@ -10,7 +10,7 @@
    "feed": {
     "url": "https://news.sap.com/feed/",
     "eintraege": 30,
-    "neueste": "Thu, 29 Oct 2026 11:00:00 +0000"
+    "neueste": "Mon, 09 Nov 2026 13:15:00 +0000"
    }
   },
   {
@@ -18,12 +18,7 @@
    "name": "Siemens",
    "homepage": "https://www.siemens.com",
    "ir_seite": "https://press.siemens.com/global/en",
-   "ir_seite_ok": true,
-   "feed": {
-    "url": "https://press.siemens.com/en/rss.xml",
-    "eintraege": 2,
-    "neueste": "Mon, 12 Aug 2019 10:41:08 +0000"
-   }
+   "ir_seite_ok": true
   },
   {
    "sym": "ALV.DE",
@@ -67,7 +62,7 @@
    "feed": {
     "url": "https://www.telekom.com/en/newsroom/latest-updates/media-information.rss.feed.418728.xml",
     "eintraege": 10,
-    "neueste": "Wed, 28 Oct 2026 00:00:00 GMT"
+    "neueste": "Mon, 9 Nov 2026 00:00:00 GMT"
    }
   },
   {
@@ -138,12 +133,7 @@
    "name": "Heidelberg Materials",
    "homepage": "https://www.heidelbergmaterials.com",
    "ir_seite": "https://www.heidelbergmaterials.com/en/media/press-releases",
-   "ir_seite_ok": true,
-   "feed": {
-    "url": "https://www.heidelbergmaterials.com/en/rss.xml",
-    "eintraege": 7,
-    "neueste": "Mon, 11 Apr 2022 11:29:58 +0000"
-   }
+   "ir_seite_ok": true
   },
   {
    "sym": "HEN3.DE",
@@ -154,7 +144,7 @@
    "feed": {
     "url": "https://www.henkel.com/service/en/39580/asFeed/index.xml",
     "eintraege": 10,
-    "neueste": "Thu, 29 Oct 2026 07:00:00 GMT"
+    "neueste": "Mon, 09 Nov 2026 23:00:00 GMT"
    }
   },
   {
@@ -166,7 +156,7 @@
    "feed": {
     "url": "https://www.fresenius.com/rss.xml",
     "eintraege": 10,
-    "neueste": "Wed, 28 Oct 2026 16:48:15 +0000"
+    "neueste": "Wed, 04 Nov 2026 05:59:42 +0000"
    }
   },
   {
@@ -333,7 +323,7 @@
    "name": "Air Liquide",
    "homepage": "https://www.airliquide.com",
    "ir_seite": "https://www.airliquide.com/group/press-releases-news",
-   "ir_seite_ok": true
+   "ir_seite_ok": false
   },
   {
    "sym": "BNP.PA",
@@ -351,7 +341,7 @@
    "feed": {
     "url": "https://www.axa.com/rss",
     "eintraege": 30,
-    "neueste": "Thu, 29 Oct 2026 16:45:00 GMT"
+    "neueste": "Fri, 06 Nov 2026 14:00:00 GMT"
    }
   },
   {
@@ -384,7 +374,7 @@
    "feed": {
     "url": "https://www.capgemini.com/feed/",
     "eintraege": 10,
-    "neueste": "Thu, 29 Oct 2026 10:57:39 +0000"
+    "neueste": "Wed, 04 Nov 2026 13:08:48 +0000"
    }
   },
   {
@@ -563,12 +553,7 @@
    "name": "Holcim",
    "homepage": "https://www.holcim.com",
    "ir_seite": "https://www.holcim.com/media",
-   "ir_seite_ok": true,
-   "feed": {
-    "url": "https://www.holcim.com/rss.xml",
-    "eintraege": 1,
-    "neueste": "Tue, 02 Nov 2021 13:18:32 +0000"
-   }
+   "ir_seite_ok": true
   },
   {
    "sym": "NOVO-B.CO",
@@ -614,7 +599,7 @@
    "feed": {
     "url": "https://www.volvogroup.com/en/news-and-media/press-releases/_jcr_content/root/responsivegrid/articlelist.feed.xml",
     "eintraege": 10,
-    "neueste": "Fri, 23 Oct 2026 05:23:36 GMT"
+    "neueste": "Fri, 30 Oct 2026 09:00:00 GMT"
    }
   },
   {
@@ -636,7 +621,7 @@
    "name": "Investor AB",
    "homepage": "https://www.investorab.com",
    "ir_seite": "https://www.investorab.com/media",
-   "ir_seite_ok": false
+   "ir_seite_ok": true
   },
   {
    "sym": "HM-B.ST",
@@ -654,7 +639,7 @@
    "feed": {
     "url": "https://www.home.sandvik/en/news.xml",
     "eintraege": 15,
-    "neueste": "Thu, 22 Oct 2026 08:00:00 +0200"
+    "neueste": "Tue, 03 Nov 2026 11:00:00 +0100"
    }
   },
   {
@@ -713,9 +698,9 @@
    "ir_seite": "https://www.santander.com/en/press-room",
    "ir_seite_ok": true,
    "feed": {
-    "url": "https://www.santander.com/content/santander-corporate/san-global/en/sala-de-comunicacion/insights.sitefeed.rss.xml",
-    "eintraege": 20,
-    "neueste": "Thu, 28 May 2026 12:40:00 +0200"
+    "url": "https://www.santander.com/content/santander-corporate/san-global/en/sala-de-comunicacion/notas-de-prensa.sitefeed.rss.xml",
+    "eintraege": 1,
+    "neueste": "Wed, 4 Nov 2026 09:30:00 +0100"
    }
   },
   {
@@ -727,7 +712,7 @@
    "feed": {
     "url": "https://www.bbva.com/en/rss/press-releases/",
     "eintraege": 10,
-    "neueste": "Fri, 02 Oct 2026 08:22:41 +0000"
+    "neueste": "Wed, 04 Nov 2026 08:31:58 +0000"
    }
   },
   {
@@ -796,12 +781,7 @@
    "name": "Diageo",
    "homepage": "https://www.diageo.com",
    "ir_seite": "https://www.diageo.com/en/news-and-media",
-   "ir_seite_ok": true,
-   "feed": {
-    "url": "https://www.diageo.com/en/rss/financial-calendar",
-    "eintraege": 10,
-    "neueste": "Thu, 03 Dec 2026 09:00:00 GMT"
-   }
+   "ir_seite_ok": true
   },
   {
    "sym": "RIO.L",
@@ -815,19 +795,14 @@
    "name": "British American Tobacco",
    "homepage": "https://www.bat.com",
    "ir_seite": "https://www.bat.com/media",
-   "ir_seite_ok": true
+   "ir_seite_ok": false
   },
   {
    "sym": "REL.L",
    "name": "RELX",
    "homepage": "https://www.relx.com",
    "ir_seite": "https://www.relx.com/media/press-releases/year-2026",
-   "ir_seite_ok": true,
-   "feed": {
-    "url": "https://www.relx.com/rss/financial-calendar",
-    "eintraege": 15,
-    "neueste": ""
-   }
+   "ir_seite_ok": true
   },
   {
    "sym": "LSEG.L",
@@ -934,7 +909,7 @@
    "feed": {
     "url": "https://newsroom.bt.com/feed/en",
     "eintraege": 25,
-    "neueste": "Mon, 26 Oct 2026 09:00:00 +0000"
+    "neueste": "Thu, 05 Nov 2026 07:02:00 +0000"
    }
   },
   {
@@ -949,12 +924,7 @@
    "name": "Nokia",
    "homepage": "https://www.nokia.com",
    "ir_seite": "https://www.nokia.com/newsroom/",
-   "ir_seite_ok": true,
-   "feed": {
-    "url": "https://www.nokia.com/partner-releases-rss/",
-    "eintraege": 50,
-    "neueste": "Wed 21 Oct 2026"
-   }
+   "ir_seite_ok": true
   }
  ]
 }

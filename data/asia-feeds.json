@@ -1,19 +1,19 @@
 {
- "stand": "2026-10-30",
+ "stand": "2026-11-09",
  "firmen": [
   {
    "sym": "TSM",
    "name": "Taiwan Semiconductor",
    "homepage": "https://www.tsmc.com",
    "ir_seite": "https://investor.tsmc.com/english",
-   "ir_seite_ok": true
+   "ir_seite_ok": false
   },
   {
    "sym": "2330.TW",
    "name": "TSMC Taiwan",
    "homepage": "https://www.tsmc.com",
    "ir_seite": "https://pr.tsmc.com/english/latest-news",
-   "ir_seite_ok": false
+   "ir_seite_ok": true
   },
   {
    "sym": "2317.TW",
@@ -31,7 +31,7 @@
    "feed": {
     "url": "https://www.mediatek.com/press-room/rss.xml",
     "eintraege": 10,
-    "neueste": "Wed, 30 Sep 2026 15:00:00 GMT"
+    "neueste": "Tue, 03 Nov 2026 14:00:01 GMT"
    }
   },
   {
@@ -71,7 +71,7 @@
    "feed": {
     "url": "https://news.samsung.com/global/feed",
     "eintraege": 50,
-    "neueste": "Thu, 29 Oct 2026 10:10:00 +0000"
+    "neueste": "Thu, 05 Nov 2026 08:00:00 +0000"
    }
   },
   {
@@ -83,7 +83,7 @@
    "feed": {
     "url": "https://news.skhynix.com/en/feed/",
     "eintraege": 10,
-    "neueste": "Fri, 30 Oct 2026 04:50:32 +0000"
+    "neueste": "Fri, 30 Oct 2026 08:19:49 +0000"
    }
   },
   {
@@ -108,8 +108,8 @@
    "ir_seite_ok": true,
    "feed": {
     "url": "https://www.hyundai.com/wsvc/ww/rss/newsroom.newsroom.do",
-    "eintraege": 1241,
-    "neueste": "Fri, 30 Oct 2026 08:00:00 GMT"
+    "eintraege": 1245,
+    "neueste": "Sun, 08 Nov 2026 00:00:00 GMT"
    }
   },
   {
@@ -197,8 +197,8 @@
    "ir_seite_ok": true,
    "feed": {
     "url": "https://group.ntt/en/newsrelease/rss/release.rdf",
-    "eintraege": 18,
-    "neueste": "2026-10-29T15:00:00+09:00"
+    "eintraege": 23,
+    "neueste": "2026-11-09T11:00:00+09:00"
    }
   },
   {
@@ -217,7 +217,7 @@
    "feed": {
     "url": "https://www.itochu.co.jp:443/en/ir/news/index.xml",
     "eintraege": 20,
-    "neueste": "2026-10-30T06:30:00Z"
+    "neueste": "2026-11-04T04:00:00Z"
    }
   },
   {
@@ -257,7 +257,7 @@
    "feed": {
     "url": "https://www.fastretailing.com/eng/ir/news/index.xml",
     "eintraege": 20,
-    "neueste": "Mon, 26 Oct 2026 13:00:00 +0900"
+    "neueste": "Mon, 09 Nov 2026 19:00:00 +0900"
    }
   },
   {
@@ -282,8 +282,8 @@
    "ir_seite_ok": true,
    "feed": {
     "url": "https://recruit-holdings.com/en/newsroom/rss.xml",
-    "eintraege": 390,
-    "neueste": "Tue, 13 Oct 2026 15:00:00 GMT"
+    "eintraege": 392,
+    "neueste": "Wed, 04 Nov 2026 15:00:00 GMT"
    }
   },
   {
@@ -295,7 +295,7 @@
    "feed": {
     "url": "https://newsroom.kddi.com/english/news/newsrelease.xml",
     "eintraege": 10,
-    "neueste": "Thu, 22 Oct 2026 11:00:00 +0900"
+    "neueste": "Fri, 06 Nov 2026 15:45:03 +0900"
    }
   },
   {
@@ -341,7 +341,7 @@
    "ir_seite_ok": true,
    "feed": {
     "url": "https://www.chugai-pharm.co.jp/rss/news_releases_en.php",
-    "eintraege": 8,
+    "eintraege": 7,
     "neueste": "Tue, 27 Oct 2026 17:00:00 +0900"
    }
   },
@@ -361,7 +361,7 @@
    "feed": {
     "url": "https://www.murata.com/en-global/news/rssfeed",
     "eintraege": 50,
-    "neueste": "Thu, 29 Oct 2026 09:30:00 +0900"
+    "neueste": "Thu, 05 Nov 2026 09:30:00 +0900"
    }
   },
   {
@@ -573,12 +573,7 @@
    "name": "Galaxy Entertainment",
    "homepage": "https://www.galaxyentertainment.com",
    "ir_seite": "https://www.galaxyentertainment.com/en",
-   "ir_seite_ok": true,
-   "feed": {
-    "url": "https://www.galaxyentertainment.com/en/xmlfeed.xml",
-    "eintraege": 10,
-    "neueste": ""
-   }
+   "ir_seite_ok": true
   },
   {
    "sym": "1928.HK",
@@ -624,7 +619,7 @@
    "feed": {
     "url": "https://www.wuxibiologics.com/feed/",
     "eintraege": 10,
-    "neueste": "Wed, 28 Oct 2026 15:28:40 +0000"
+    "neueste": "Wed, 04 Nov 2026 02:51:55 +0000"
    }
   },
   {
@@ -688,12 +683,7 @@
    "name": "Reliance Industries",
    "homepage": "https://www.ril.com",
    "ir_seite": "https://www.ril.com/investors",
-   "ir_seite_ok": false,
-   "feed": {
-    "url": "https://www.ril.com/rss.xml",
-    "eintraege": 10,
-    "neueste": "Wed, 11 Jun 2025 14:07:04 +0000"
-   }
+   "ir_seite_ok": false
   },
   {
    "sym": "TCS.NS",
@@ -781,7 +771,7 @@
    "feed": {
     "url": "https://sunpharma.com/feed/",
     "eintraege": 10,
-    "neueste": "Sun, 25 Oct 2026 03:08:59 +0000"
+    "neueste": "Fri, 30 Oct 2026 10:28:22 +0000"
    }
   },
   {
@@ -789,12 +779,7 @@
    "name": "Tata Motors",
    "homepage": "https://www.tatamotors.com",
    "ir_seite": "https://www.tatamotors.com/",
-   "ir_seite_ok": true,
-   "feed": {
-    "url": "https://www.tatamotors.com/feed/",
-    "eintraege": 4,
-    "neueste": "Wed, 06 Dec 2023 13:43:20 +0000"
-   }
+   "ir_seite_ok": true
   },
   {
    "sym": "ADANIENT.NS",
@@ -851,6 +836,256 @@
    "homepage": "https://www.csl.com",
    "ir_seite": "https://www.csl.com/news",
    "ir_seite_ok": false
+  },
+  {
+   "sym": "8002.T",
+   "name": "Marubeni",
+   "homepage": "https://www.marubeni.com/en",
+   "ir_seite": "https://www.marubeni.com/en/news/",
+   "ir_seite_ok": true
+  },
+  {
+   "sym": "8053.T",
+   "name": "Sumitomo Corp",
+   "homepage": "https://www.sumitomocorp.com/en/jp",
+   "ir_seite": "https://www.sumitomocorp.com/en/jp/news",
+   "ir_seite_ok": true,
+   "feed": {
+    "url": "https://www.sumitomocorp.com/en/jp/news/release/rss",
+    "eintraege": 21,
+    "neueste": "Mon, 02 November 2026 13:00:00"
+   }
+  },
+  {
+   "sym": "2914.T",
+   "name": "Japan Tobacco",
+   "homepage": "https://www.jt.com",
+   "ir_seite": "https://www.jt.com/media/news",
+   "ir_seite_ok": false
+  },
+  {
+   "sym": "5020.T",
+   "name": "ENEOS",
+   "homepage": "https://www.hd.eneos.co.jp/english",
+   "ir_seite": "https://www.hd.eneos.co.jp/english/newsroom",
+   "ir_seite_ok": false
+  },
+  {
+   "sym": "8591.T",
+   "name": "Orix",
+   "homepage": "https://www.orix.co.jp/grp/en",
+   "ir_seite": "https://www.orix.co.jp/grp/en/news",
+   "ir_seite_ok": false
+  },
+  {
+   "sym": "9101.T",
+   "name": "NYK Line",
+   "homepage": "https://www.nyk.com/english",
+   "ir_seite": "https://www.nyk.com/english/news/",
+   "ir_seite_ok": true
+  },
+  {
+   "sym": "9104.T",
+   "name": "Mitsui OSK Lines",
+   "homepage": "https://www.mol.co.jp/en",
+   "ir_seite": "https://www.mol.co.jp/en/pr/",
+   "ir_seite_ok": true
+  },
+  {
+   "sym": "9107.T",
+   "name": "Kawasaki Kisen",
+   "homepage": "https://www.kline.co.jp/en",
+   "ir_seite": "https://www.kline.co.jp/en/news",
+   "ir_seite_ok": false
+  },
+  {
+   "sym": "8801.T",
+   "name": "Mitsui Fudosan",
+   "homepage": "https://www.mitsuifudosan.co.jp/english",
+   "ir_seite": "https://www.mitsuifudosan.co.jp/english/corporate/news/",
+   "ir_seite_ok": true
+  },
+  {
+   "sym": "4568.T",
+   "name": "Daiichi Sankyo",
+   "homepage": "https://www.daiichisankyo.com",
+   "ir_seite": "https://www.daiichisankyo.com/alias/pc/media/press_release/",
+   "ir_seite_ok": true
+  },
+  {
+   "sym": "7751.T",
+   "name": "Canon",
+   "homepage": "https://global.canon",
+   "ir_seite": "https://global.canon/en/news/",
+   "ir_seite_ok": true
+  },
+  {
+   "sym": "6301.T",
+   "name": "Komatsu",
+   "homepage": "https://www.komatsu.jp/en",
+   "ir_seite": "https://www.komatsu.jp/en/newsroom",
+   "ir_seite_ok": true
+  },
+  {
+   "sym": "8725.T",
+   "name": "MS&AD Insurance",
+   "homepage": "https://www.ms-ad-hd.com/en",
+   "ir_seite": "https://www.ms-ad-hd.com/en/news",
+   "ir_seite_ok": false
+  },
+  {
+   "sym": "8630.T",
+   "name": "Sompo Holdings",
+   "homepage": "https://www.sompo-hd.com/en",
+   "ir_seite": "https://www.sompo-hd.com/en/news",
+   "ir_seite_ok": false
+  },
+  {
+   "sym": "0728.HK",
+   "name": "China Telecom",
+   "homepage": "https://www.chinatelecom-h.com",
+   "ir_seite": "https://www.chinatelecom-h.com/en/ir/ir.php",
+   "ir_seite_ok": false
+  },
+  {
+   "sym": "0762.HK",
+   "name": "China Unicom",
+   "homepage": "https://www.chinaunicom.com.hk",
+   "ir_seite": "https://www.chinaunicom.com.hk/en/ir/news.php",
+   "ir_seite_ok": false
+  },
+  {
+   "sym": "1088.HK",
+   "name": "China Shenhua",
+   "homepage": "https://www.csec.com",
+   "ir_seite": "https://www.csec.com/en",
+   "ir_seite_ok": false
+  },
+  {
+   "sym": "0836.HK",
+   "name": "China Resources Power",
+   "homepage": "https://www.cr-power.com",
+   "ir_seite": "https://www.cr-power.com/en/ir",
+   "ir_seite_ok": false
+  },
+  {
+   "sym": "3328.HK",
+   "name": "Bank of Communications",
+   "homepage": "https://www.bankcomm.com/BankCommSite/shtml/jyjr/en/index.shtml",
+   "ir_seite": "https://www.bankcomm.com",
+   "ir_seite_ok": false
+  },
+  {
+   "sym": "2388.HK",
+   "name": "BOC Hong Kong",
+   "homepage": "https://www.bochk.com",
+   "ir_seite": "https://www.bochk.com/en/investor.html",
+   "ir_seite_ok": false
+  },
+  {
+   "sym": "0006.HK",
+   "name": "Power Assets",
+   "homepage": "https://www.powerassets.com",
+   "ir_seite": "https://www.powerassets.com/en/media",
+   "ir_seite_ok": true
+  },
+  {
+   "sym": "0003.HK",
+   "name": "Hong Kong and China Gas",
+   "homepage": "https://www.towngas.com",
+   "ir_seite": "https://www.towngas.com/en/Investor-Relations",
+   "ir_seite_ok": true
+  },
+  {
+   "sym": "0066.HK",
+   "name": "MTR Corporation",
+   "homepage": "https://www.mtr.com.hk",
+   "ir_seite": "https://www.mtr.com.hk/en/corporate/investor/index.html",
+   "ir_seite_ok": true
+  },
+  {
+   "sym": "0823.HK",
+   "name": "Link REIT",
+   "homepage": "https://www.linkreit.com",
+   "ir_seite": "https://www.linkreit.com/en/media-centre",
+   "ir_seite_ok": false
+  },
+  {
+   "sym": "1038.HK",
+   "name": "CK Infrastructure",
+   "homepage": "https://www.cki.com.hk",
+   "ir_seite": "https://www.cki.com.hk/en",
+   "ir_seite_ok": false
+  },
+  {
+   "sym": "1919.HK",
+   "name": "COSCO Shipping Holdings",
+   "homepage": "https://hk.coscoshipping.com/en",
+   "ir_seite": "https://hk.coscoshipping.com/en/Investor-Relations",
+   "ir_seite_ok": true
+  },
+  {
+   "sym": "J36.SI",
+   "name": "Jardine Matheson",
+   "homepage": "https://www.jardines.com",
+   "ir_seite": "https://www.jardines.com/en/media/news",
+   "ir_seite_ok": true
+  },
+  {
+   "sym": "BBCA.JK",
+   "name": "Bank Central Asia",
+   "homepage": "https://www.bca.co.id/en",
+   "ir_seite": "https://www.bca.co.id/en/tentang-bca/relasi-investor",
+   "ir_seite_ok": false
+  },
+  {
+   "sym": "BBRI.JK",
+   "name": "Bank Rakyat Indonesia",
+   "homepage": "https://bri.co.id",
+   "ir_seite": "https://bri.co.id/web/guest/404",
+   "ir_seite_ok": true
+  },
+  {
+   "sym": "BMRI.JK",
+   "name": "Bank Mandiri",
+   "homepage": "https://bankmandiri.co.id",
+   "ir_seite": "https://bankmandiri.co.id/en/investor-relations",
+   "ir_seite_ok": false
+  },
+  {
+   "sym": "TLKM.JK",
+   "name": "Telkom Indonesia",
+   "homepage": "https://www.telkom.co.id",
+   "ir_seite": "https://www.telkom.co.id/sites/about-telkom/en_US/news",
+   "ir_seite_ok": false
+  },
+  {
+   "sym": "ASII.JK",
+   "name": "Astra International",
+   "homepage": "https://www.astra.co.id",
+   "ir_seite": "https://www.astra.co.id/Media-Center",
+   "ir_seite_ok": false
+  },
+  {
+   "sym": "UNVR.JK",
+   "name": "Unilever Indonesia",
+   "homepage": "https://www.unilever.co.id",
+   "ir_seite": "https://www.unilever.co.id/news",
+   "ir_seite_ok": false
+  },
+  {
+   "sym": "ADRO.JK",
+   "name": "Alamtri Resources (Adaro)",
+   "homepage": "https://www.adaro.com",
+   "ir_seite": "https://www.adaro.com/en/media-center",
+   "ir_seite_ok": false
+  },
+  {
+   "sym": "PTBA.JK",
+   "name": "Bukit Asam",
+   "homepage": "https://www.ptba.co.id",
+   "ir_seite": "https://www.ptba.co.id/en/news",
+   "ir_seite_ok": true
   }
  ]
 }

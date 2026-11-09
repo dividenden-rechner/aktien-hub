@@ -369,7 +369,9 @@
   {
    "sym": "SAN.MC",
    "name": "Santander",
-   "region": "Welt"
+   "region": "Welt",
+   "url": "https://www.santander.com/content/santander-corporate/san-global/en/sala-de-comunicacion/notas-de-prensa.sitefeed.rss.xml",
+   "geprueft": true
   },
   {
    "sym": "TSM",
@@ -627,7 +629,9 @@
   {
    "sym": "AAL.L",
    "name": "Anglo American",
-   "region": "Welt"
+   "region": "Welt",
+   "url": "https://www.angloamerican.com/rss/investor-calendar",
+   "geprueft": true
   },
   {
    "sym": "BT-A.L",
@@ -666,6 +670,13 @@
    "sym": "PAH3.DE",
    "name": "Porsche SE",
    "url": "https://www.porsche-se.com/en/media?type=9818",
+   "region": "Welt",
+   "geprueft": true
+  },
+  {
+   "sym": "8053.T",
+   "name": "Sumitomo Corp",
+   "url": "https://www.sumitomocorp.com/en/jp/news/release/rss",
    "region": "Welt",
    "geprueft": true
   }
