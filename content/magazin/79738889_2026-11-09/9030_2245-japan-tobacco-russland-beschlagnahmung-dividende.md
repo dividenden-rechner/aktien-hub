@@ -1,6 +1,6 @@
 ---
 title: "Japan Tobacco verliert sein Russland-Geschäft: Die Aktie fällt in zwei Tagen um ein Drittel"
-description: "Tabakaktien waren zuletzt gefragt, Japan Tobacco stand seit Jahresbeginn weit im Plus. Jetzt greift der russische Staat auf alle Gesellschaften des Konzerns zu. Metro, Nestlé und andere sind noch im Land und müssen mit dem Gleichen rechnen."
+description: "Tabakaktien waren zuletzt gefragt, Japan Tobacco stand seit Jahresbeginn weit im Plus. Jetzt greift der russische Staat auf alle Gesellschaften des Konzerns zu. Philip Morris und andere sind noch im Land und müssen mit dem Gleichen rechnen."
 date: 2026-11-09 22:45
 author: "Redaktions-Team Dividenden-Rechner.de"
 author_bio: "Das Redaktions-Team von Dividenden-Rechner.de schreibt über Dividendenaktien, Kennzahlen und Steuerthemen für Privatanleger. Die Rechner und Auswertungen auf der Seite entstehen im eigenen Haus."
@@ -18,11 +18,11 @@ image_source: "https://commons.wikimedia.org/wiki/File%3AToranomon_Hills.jpg"
 story_image: assets/magazin/japan-tobacco-russland-beschlagnahmung-foto.jpg
 story_text: "Tabak war in den letzten Monaten ein Liebling der Anleger: stabile Cashflows, hohe Ausschüttungen und zuletzt sogar wieder mehr Umsatz im alten Geschäft mit Zigaretten. Japan Tobacco hatte im Gegensatz zu vielen Konkurrenten Russland nie verlassen.
 Das rächt sich jetzt. Moskau hat alle Gesellschaften des Konzerns unter vorläufige Verwaltung gestellt. Ein Zehntel des Umsatzes und ein Viertel des operativen Gewinns hängen daran, die Aktie fiel in zwei Tagen um ein Drittel.
-Auch Nestlé trifft es bereits, Metro und andere westliche Firmen sind noch im Land. Wer dort bleibt, muss damit rechnen, dass der Staat irgendwann zugreift."
+Nestlé, Metro und Auchan hat es dieses Jahr schon getroffen, Philip Morris und andere sind noch im Land. Wer dort bleibt, muss damit rechnen, dass der Staat irgendwann zugreift."
 ---
 <!-- PRÜFEN: Kurs, Tageslimit (4.000 Yen), Staatsanteil (37 %) und Russland-Anteil stammen aus dem Reuters-Text vom 9.11. (über MarketScreener). Gesellschaften, Dekrete und Bilanzzahlen stammen aus der Mitteilung von Japan Tobacco vom 9.11. (Screenshot). -->
 <!-- PRÜFEN: Der Freitagsverlust von 19,3 % ist aus Reuters-Zahlen nachgerechnet (Montag 5.269 Yen = -15,95 % ergibt 6.269 Yen am Freitag; Donnerstag 7.769 Yen). Das Kursplus von rund 40 % seit Jahresbeginn vor dem Absturz ist aus 5.269 Yen = -6,58 % seit Jahresbeginn nachgerechnet. -->
-<!-- PRÜFEN: Aus eigener Kenntnis und nicht gegen Quellen geprüft: Altria und Tabakwerte "zuletzt gefragt" und mehr Umsatz im klassischen Zigarettengeschäft; Abzug von BAT und Imperial aus Russland; Metro, Nestlé, Philip Morris und Coca-Cola HBC sind (noch) in Russland tätig; Begründung des Kremls mit dem Umgang des Westens mit russischem Vermögen; Nestlé-Zahlen (Dekret im September, 1,6 Mrd. CHF Abschreibung, rund 2 % Umsatz, 3 bis 4 % Gewinn); Putins Aussage zur möglichen Rückkehr; Danone/Carlsberg 2023. -->
+<!-- PRÜFEN: Aus eigener Kenntnis und nicht gegen Quellen geprüft: Altria und Tabakwerte "zuletzt gefragt" und mehr Umsatz im klassischen Zigarettengeschäft; Abzug von BAT und Imperial aus Russland; Die Liste der bereits unter Verwaltung gestellten Firmen (Nestlé, Auchan, Metro, Lemana PRO) und der weiter tätigen (Philip Morris mit rund 5,6 Mrd. USD Vermögen und 7 % Umsatzanteil, PepsiCo, Mondelez, P&G, Raiffeisen, UniCredit im Verkauf) stammt aus einem Antwortpost des KI-Bots Grok auf X (9.11., 23:02) und ist nicht geprüft, ebenso die Aussage, das Risiko treffe vor allem Firmen aus unfreundlichen Staaten; Begründung des Kremls mit dem Umgang des Westens mit russischem Vermögen; Nestlé-Zahlen (Dekret im September, 1,6 Mrd. CHF Abschreibung, rund 2 % Umsatz, 3 bis 4 % Gewinn); Putins Aussage zur möglichen Rückkehr; Danone/Carlsberg 2023. -->
 <!-- PRÜFEN: Die Dividende von Japan Tobacco wurde nicht geprüft und im Text nicht bewertet. -->
 
 !!! kurz "Kurz gesagt"
@@ -30,7 +30,7 @@ Auch Nestlé trifft es bereits, Metro und andere westliche Firmen sind noch im L
 
     1. **Kurs:** In zwei Tagen verlor die Aktie ein Drittel, vorher stand sie seit Jahresbeginn rund 40 % im Plus.
     2. **Lage:** Das Geschäft läuft nach Angaben des Konzerns vorerst weiter, die Kontrolle liegt aber beim Staat.
-    3. **Signal:** Nestlé hat es schon getroffen, Metro und andere sind noch im Land.
+    3. **Signal:** Nestlé, Metro und Auchan wurden dieses Jahr schon unter Verwaltung gestellt, Philip Morris und andere sind noch im Land.
 
 ## Ein Liebling der Anleger, der Russland nie verlassen hat
 
@@ -56,9 +56,13 @@ Ob Japan Tobacco die Dividende trotzdem hält, hat der Konzern nicht gesagt. Das
 
 ## Nestlé, Metro und die anderen
 
-Der Fall steht nicht allein. Nestlé hat es im September getroffen: Das Russland-Geschäft steht unter vorläufiger Verwaltung, der Konzern ist rechtlich noch Eigentümer, hat die Werte aber abgeschrieben. Bei Nestlé fällt das weniger ins Gewicht, weil Russland dort nur einen kleinen Teil von Umsatz und Gewinn ausmacht. Schon 2023 hatte Moskau Danone und Carlsberg unter Verwaltung gestellt.
+Der Fall steht nicht allein. In diesem Jahr hat Moskau bereits das Russland-Geschäft von Nestlé, Auchan, Metro und Lemana PRO, dem früheren Leroy Merlin, unter vorläufige Verwaltung gestellt. Bei Nestlé ist der Konzern rechtlich noch Eigentümer, hat die Werte aber abgeschrieben, und weil Russland dort nur einen kleinen Teil von Umsatz und Gewinn ausmacht, fällt das weniger ins Gewicht. Schon 2023 hatte der Kreml Danone und Carlsberg unter Verwaltung gestellt.
 
-Noch im Land sind unter anderem die Handelskette Metro, der Tabakkonzern Philip Morris und der Getränkeabfüller Coca-Cola HBC. Wie man zu ihrem Bleiben steht, ist eine Frage für sich: Manche halten es für vertretbar, weil Mitarbeiter und Versorgung betroffen sind, andere für ein Risiko, das die Konzerne bewusst eingegangen sind. Für Anleger ist die Frage nüchterner. Moskau begründet die Eingriffe mit dem Umgang des Westens mit russischem Vermögen und hat das Instrument jetzt mehrfach genutzt. Wer in Russland bleibt, muss deshalb damit rechnen, dass der Staat irgendwann auch auf seine Firmen zugreift. Entscheidend ist dann, wie groß der Gewinnanteil ist und wie viel Geld im Land festsitzt.
+Weiter im Land aktiv sind Philip Morris, PepsiCo, Mondelez, Procter & Gamble sowie die Banken Raiffeisen und UniCredit, die ihr Geschäft verkaufen wollen. Philip Morris hat dort Vermögen von rund 5,6 Mrd. Dollar und erzielt etwa 7 % seines Umsatzes in Russland. Wie man zum Bleiben dieser Firmen steht, ist eine Frage für sich: Manche halten es für vertretbar, weil Mitarbeiter und Versorgung betroffen sind, andere für ein Risiko, das die Konzerne bewusst eingegangen sind. Für Anleger ist die Frage nüchterner. Moskau begründet die Eingriffe mit dem Umgang des Westens mit russischem Vermögen und hat das Instrument jetzt mehrfach genutzt. Wer bleibt, muss damit rechnen, dass der Staat irgendwann auch auf seine Firmen zugreift. Entscheidend ist dann, wie groß der Gewinnanteil ist und wie viel Geld im Land festsitzt.
+
+## Schützt die Nähe zu Trump US-Firmen?
+
+Auffällig ist, dass unter den bisher betroffenen Konzernen keine amerikanischen sind. Man kann fragen, ob die gute Beziehung zwischen Moskau und Washington US-Firmen vorerst schützt. Belegt ist das nicht, es bleibt eine Vermutung. Dagegen spricht, dass Russland auch die USA als unfreundlichen Staat führt und dass sich die Lage mit den Spannungen schnell ändern kann. Für Philip Morris, PepsiCo, Mondelez und Procter & Gamble gilt deshalb dasselbe wie für alle anderen: Das Risiko ist da, nur der Zeitpunkt ist offen.
 
 ## Quellen
 
