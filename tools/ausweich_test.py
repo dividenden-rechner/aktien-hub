@@ -13,3 +13,11 @@ print("Groq-Ergebnis:", out)
 t, src = ia.tavily_ground("Recherchiere mit der Websuche Hintergrund fuer einen Artikel über Japan Tobacco (2914.T), Dokument: Mitteilung Russland,")
 print("Tavily-Treffer:", len(src))
 print(t[:1200])
+
+import json, urllib.request
+try:
+    req = urllib.request.Request("https://api.groq.com/openai/v1/models", headers={"Authorization": "Bearer " + os.environ.get("GROQ_API_KEY", "").strip(), "User-Agent": "dividenden-rechner-ir/1.0"})
+    d = json.load(urllib.request.urlopen(req, timeout=60))
+    print("Groq-Modelle:", sorted((m.get("id"), m.get("context_window")) for m in d.get("data", []) if m.get("active", True)))
+except Exception as e:
+    print("Modellliste-Problem ->", e)
