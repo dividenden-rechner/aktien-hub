@@ -9,10 +9,10 @@ aufmacher: ja
 kein_logo: ja
 quelle_url: https://www.bls.gov/news.release/cpi.nr0.htm
 quelle_name: "U.S. Bureau of Labor Statistics, Consumer Price Index – October 2026 (10.11.2026)"
-image: assets/magazin/us-inflation-oktober-2026-foto.jpg
-image_alt: "Hinweisschild vor dem Frances-Perkins-Gebäude des US-Arbeitsministeriums in Washington"
-image_credit: "Foto: US Department of Labor, CC BY 2.0"
-image_source: "https://commons.wikimedia.org/wiki/File%3AFrances_Perkins_Building_of_the_United_States_Department_of_Labor_in_Washington%2C_D.C._-_5.jpg"
+image: assets/magazin/us-inflation-oktober-2026-aufmacher.png
+image_alt: "Liniengrafik: Jahresinflation in den USA seit Januar 2024, Höchststand 4,2 % im Mai 2026, September 3,7 %, Oktober 2026 ohne Wert"
+image_credit: "Grafik: Dividenden-Rechner.de, Daten: U.S. Bureau of Labor Statistics"
+image_lizenz: "eigene Grafik"
 ---
 <!-- PRÜFEN: Alle Zahlen stammen aus dem Bericht des Bureau of Labor Statistics (USDL-26-1685, Seiten 1 bis 4, Tabelle A, Tabelle 5), den Divi als PDF geschickt hat. Die Quell-URL ist die allgemeine Adresse der Mitteilung, nicht die des PDFs. -->
 <!-- PRÜFEN: Die Jahresraten stehen in Tabelle 5 des Berichts (Gesamtindex, nicht saisonbereinigt); die Kernrate für September (2,6 %), August (2,4 %) und Mai (2,9 %) stammt aus Grafik 2, die Erwartungen für September (3,6 % und 2,5 %) aus Screenshots einer Börsen-App. Prognosewerte für den Oktober liegen nicht vor. -->
@@ -22,14 +22,16 @@ image_source: "https://commons.wikimedia.org/wiki/File%3AFrances_Perkins_Buildin
 
 !!! kurz "Kurz gesagt"
     **Jahresrate September:** 3,7 % (August 3,4 %, Hoch im Mai 4,2 %)
+
     **Kernrate September (ohne Energie und Lebensmittel):** 2,6 % (August 2,4 %)
+
     **Jahresrate Oktober:** nicht veröffentlicht
+
     **Oktober zum Vormonat:** Gesamtindex +0,4 % (September +0,6 %, erwartet +0,3 %), Kernrate +0,3 % (erwartet +0,2 %)
+
     **Fed:** Eine weitere Zinsanhebung im Dezember ist an den Terminmärkten praktisch eingepreist
 
 Die Inflation in den USA liegt mit zuletzt 3,7 % deutlich über dem Wert vom Jahresbeginn: Im Februar waren es noch 2,4 %, im Mai mit 4,2 % der Höchststand des Jahres. Die Jahresrate für den Oktober gibt es nicht, weil im Oktober 2025 wegen einer Haushaltssperre keine Preise erhoben wurden und der Vergleichswert fehlt. Wie sich der Preisdruck derzeit entwickelt, zeigen deshalb nur die Monatswerte, und die lagen im Oktober mit 0,4 % für den Gesamtindex und 0,3 % für die Kernrate jeweils 0,1 Prozentpunkte über den Erwartungen.
-
-![US-Verbraucherpreise: Veränderung zum Vorjahresmonat seit Januar 2024](/assets/magazin/us-inflation-oktober-2026-jahresrate.png)
 
 ## Die Jahresrate hat sich seit dem Frühjahr gedreht
 
