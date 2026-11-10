@@ -11,9 +11,9 @@ logo_symbol: NVDA
 logo_name: "Nvidia"
 logo_file: assets/logos/nvda.png
 image: assets/magazin/huang-honigfalle-reportage-foto.jpg
-image_alt: "Firmenzentrale von Nvidia in Santa Clara, Kalifornien, mit dem Nvidia-Schriftzug an der Glasfassade"
-image_credit: "Coolcaesar, CC BY-SA 4.0"
-image_source: "https://commons.wikimedia.org/wiki/File:NVIDIA_Headquarters.jpg"
+image_alt: "Honigglas auf rotem Tuch, daneben Geheimdokumente, ein alter Band und ein USB-Stick mit Nvidia-Logo, im Hintergrund Schatten im Halbdunkel"
+image_credit: "KI-generiert (Gemini)"
+image_lizenz: "eigene Grafik"
 ---
 !!! kurz "Kurz gesagt"
     **Der Fall:** Nvidia-Chef Jensen Huang soll nach Medienberichten eine Affäre mit einer Frau gehabt haben, die nach Angaben der US-Regierung für Chinas Geheimdienst arbeitete. Der Verwaltungsrat untersucht, Huang hat sich entschuldigt.
@@ -54,9 +54,8 @@ Und damit sind wir bei dem, was für Anleger zählt. Die vorigen Wochen haben ge
 
 Nvidia selbst hat China in seinem Ausblick schon weitgehend ausgeblendet. Im August meldete der Konzern für das zweite Quartal 96,2 Milliarden Dollar Umsatz, 106 % mehr als im Vorjahr, davon 89,0 Milliarden aus dem Rechenzentrumsgeschäft. Für das dritte Quartal stellte Nvidia rund 108 Milliarden Dollar in Aussicht, bei einer Bruttomarge von etwa 74 %, ohne dabei Rechenzentrums-Umsätze aus China einzurechnen. Das ist eine Ironie, die man bei dieser Geschichte nicht übersehen sollte. Gerade der Markt, in dem die mutmaßliche Agentin ihre Spuren gelegt haben soll, steckt in den Prognosen kaum drin.
 
-Die Zahlen für das dritte Quartal kommen in der kommenden Woche. Sie werden die Frage beantworten, die gerade alle stellen: Ist die Sorge um den Chef und seine Firma berechtigt, oder ist sie in zwei Wochen vergessen? Denn Anleger sind erstaunlich verzeihend, wenn das Geschäft stimmt. Schießt der Umsatz durch die Decke, wird aus der Geschichte vom gefallenen Chef schnell eine Fußnote, die man in einem Jahr in einer Reportage über Honigfallen findet. Enttäuscht Nvidia dagegen, wird sie zum Vorwand für alles, was der Markt ohnehin schon gefürchtet hat.
+Die Zahlen für das dritte Quartal kommen in der kommenden Woche. Sie werden die Frage beantworten, die gerade alle stellen: Ist die Sorge um den Chef und seine Firma berechtigt, oder ist sie in zwei Wochen vergessen? Denn Anleger sind erstaunlich verzeihend, wenn das Geschäft stimmt. Schießt der Umsatz durch die Decke, wird aus der Romanze vom gefallenen Chef schnell eine Fußnote, die man in einem Jahr in einer Reportage über Honigfallen findet. Enttäuscht Nvidia dagegen, wird sie zum Vorwand für alles, was der Markt ohnehin schon gefürchtet hat.
 
-Und weil wir bei Munger waren: Apropos Hebel. Wer in den vergangenen Monaten mit geliehenem Geld auf die Nvidia-Aktie gesetzt hat, dem zeigt nächste Woche, wie viel Hebel das Geschäft verträgt. Die Liebe der Anleger geht am Ende dorthin, wo die Zahlen sind.
 
 ## Quellen
 
@@ -72,4 +71,3 @@ Und weil wir bei Munger waren: Apropos Hebel. Wer in den vergangenen Monaten mit
 <!-- PRÜFEN: Munger-Zitat "liquor, ladies and leverage" – Urheberschaft unklar (Munger/Buffett), deshalb vorsichtig formuliert. -->
 <!-- PRÜFEN: Axios 2020 / Swalwell – Details aus Erinnerung und Suchtreffern, vor Veröffentlichung gegen Axios-Originalartikel prüfen. -->
 <!-- PRÜFEN: "Rund 40 Fälle" Stasi-Romeos, Betty Pack 1941, Mata Hari-Einschätzung aus SPIEGEL-Notizen; MI6-Broschüre 2018. -->
-<!-- PRÜFEN: "Wer mit geliehenem Geld auf Nvidia gesetzt hat" ist Kommentar, keine Tatsachenbehauptung. -->
