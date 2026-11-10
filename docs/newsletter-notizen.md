@@ -27,3 +27,12 @@ Auftrag von Divi: Text für den Newsletter schreiben, dabei die Mitmach-Möglich
 - Ausgewogen schreiben (Wachstum und Nachfrage gegen Verluste und Bewertung), Einstieg mit klarer These.
 - Einordnung der Veränderung in jeder Kernzahl; Quellen nicht im Fließtext nennen.
 - Mitmach-Absatz am Ende mit Hinweis "Werbung/Empfehlungslinks". Keine Anlageberatung.
+
+## Ergänzung: Honigfallen-Text (SPIEGEL, Katja Iken, 10.11.2026, 20:51) für die Huang/Nvidia-Meldung
+
+Divi: "schöner Text für den Newsletter als Ergänzung", der Einstieg gefällt besonders.
+- Einstieg (gefällt Divi): Fall Mordechai Vanunu 1986. Der israelische Atomtechniker reist mit einer angeblichen US-Touristin "Cindy" von London nach Rom, in Wahrheit Mossad-Agentin Cheryl Bentov. In Rom betäubt und verschleppt, nach Prozess unter Ausschluss der Öffentlichkeit 18 Jahre Haft, weil er der Sunday Times Details zum Atomzentrum Dimona verraten hatte. Der Bogen zu Huang: Er soll laut US-Informationen ebenfalls in eine "Honigfalle" getappt sein.
+- Historische Beispiele für die Mitte: Delila/Simson und Judit/Holofernes (Bibel), Mythos vom "fliegenden Geschwader" Katharinas von Medici (nach Una McIlvenna frauenfeindliche Legende), Stasi-"Romeos" von Markus Wolf (rund 40 Fälle, u. a. Gabriele Gast), Chevalier d'Éon, Mata Hari (kaum belegter Nutzen), Betty Pack "Cynthia" (Codebücher der Vichy-Marine 1941), "Salon Kitty" (teils Legende).
+- China: "meiren ji" (List der schönen Person); MI6-Warnbroschüre 2018 an Unternehmen; FBI warnt Geschäftsreisende ausdrücklich.
+- Schluss des Artikels: Huang hätte es besser wissen können; die Affäre habe das Zeug zum großen Honigfallen-Märchen.
+- Beim Schreiben: Vorwürfe gegen Huang nur als Berichte/Vorwürfe darstellen (keine Bestätigung, FBI ermittelt laut SPIEGEL), nicht ausschmücken. SPIEGEL-Text nicht abschreiben, nur eigene Zusammenfassung mit Quellenangabe unten. Volltext liegt als Anhang der Session (nicht im Repo).
