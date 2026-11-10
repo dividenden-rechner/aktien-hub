@@ -1,0 +1,22 @@
+name: Tavily testen
+# Einmal-Test der Websuche mit dem Secret TAVILY_API_KEY. Ergebnis steht im Protokoll, es wird nichts committet.
+on:
+  workflow_dispatch:
+    inputs:
+      frage:
+        description: "Suchfrage"
+        required: false
+        default: "Japan Tobacco Russland vorläufige Verwaltung Aktie"
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Suche
+        env:
+          TAVILY_API_KEY: ${{ secrets.TAVILY_API_KEY }}
+          FRAGE: ${{ inputs.frage }}
+        run: python3 tools/tavily_test.py
