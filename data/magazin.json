@@ -19,12 +19,6 @@
    "date": "2026-11-10T17:16:00+01:00"
   },
   {
-   "slug": "henkel-q3-zahlen-2026-prognose",
-   "title": "Henkel erhöht nach starkem drittem Quartal 2026 die Jahresprognose",
-   "sym": "HEN3.DE",
-   "date": "2026-11-10T17:15:00+01:00"
-  },
-  {
    "slug": "fresenius-medical-care-anleihe-500-millionen-euro",
    "title": "Fresenius Medical Care platziert 500 Millionen Euro schwere Anleihe",
    "sym": "FME.DE",
@@ -35,12 +29,6 @@
    "title": "Porsche SE rutscht nach Millionen-Wertminderung tief in die roten Zahlen",
    "sym": "PAH3.DE",
    "date": "2026-11-10T17:13:00+01:00"
-  },
-  {
-   "slug": "tsmc-q3-zahlen-dividende-2026",
-   "title": "Taiwan Semiconductor Manufacturing Company erzielt im dritten Quartal Gewinn je Aktie von 29,43 Taiwan-Dollar",
-   "sym": "TSM",
-   "date": "2026-11-10T17:12:00+01:00"
   },
   {
    "slug": "us-inflation-oktober-2026-kernrate-energie",
@@ -2087,6 +2075,12 @@
    "title": "Coca-Cola hebt die Ziele für Cashflow und Gewinn je Aktie an",
    "sym": "KO",
    "date": "2026-10-26T21:48:00+01:00"
+  },
+  {
+   "slug": "tsmc-q3-zahlen-2026",
+   "title": "TSMC steigert den Nettogewinn im dritten Quartal um 68,7 % auf 763 Milliarden Taiwan-Dollar",
+   "sym": "TSM",
+   "date": "2026-10-15T17:12:00+02:00"
   }
  ]
 }
