@@ -5,7 +5,6 @@ date: 2026-11-09 13:10
 author: "Redaktions-Team Dividenden-Rechner.de"
 author_bio: "Das Redaktions-Team von Dividenden-Rechner.de schreibt über Dividendenaktien, Kennzahlen und Steuerthemen für Privatanleger. Die Rechner und Auswertungen auf der Seite entstehen im eigenen Haus."
 category: Management
-aufmacher: ja
 quelle_name: "Mitteilung des Nvidia-Verwaltungsrats vom 8. November 2026"
 logo_symbol: NVDA
 logo_name: "Nvidia"
