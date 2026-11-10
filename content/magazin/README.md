@@ -16,10 +16,11 @@ Datei anklicken, dann Stift-Symbol: Zeile `draft: true` löschen und speichern, 
 | 29.10.2026 22:42 | Amazon steigert Umsatz im dritten Quartal auf 201,9 Milliarden Dollar | [79738970_2026-10-29/7757_2242-amazon-q3-2026-zahlen.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/79738970_2026-10-29/7757_2242-amazon-q3-2026-zahlen.md) |
 | 29.10.2026 10:12 | Shell erzielt im dritten Quartal 10,8 Milliarden Dollar Gewinn | [79738970_2026-10-29/8987_1012-shell-q3-2026-ergebnisse.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/79738970_2026-10-29/8987_1012-shell-q3-2026-ergebnisse.md) |
 
-### Online (347)
+### Online (348)
 
 | Datum | Titel | Datei |
 |---|---|---|
+| 10.11.2026 21:40 | Cindy aus London und Jensen Huang: Die älteste Falle der Welt und die Frage, was Anleger daraus machen | [79738889_2026-11-10/9640_2140-huang-honigfalle-reportage-nvidia-quartalszahlen.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/79738889_2026-11-10/9640_2140-huang-honigfalle-reportage-nvidia-quartalszahlen.md) |
 | 10.11.2026 17:16 | Stellantis verkauft Montagewerk in Brampton und kooperiert mit Roshel | [79738889_2026-11-10/8283_1716-stellantis-verkauft-brampton-werk-an-roshel.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/79738889_2026-11-10/8283_1716-stellantis-verkauft-brampton-werk-an-roshel.md) |
 | 10.11.2026 17:16 | Flex Ltd. peilt für 2029 operative Marge von über 7 Prozent an | [79738889_2026-11-10/8283_1716-flex-ltd-ausblick-2027-2029-axiom-spin-off.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/79738889_2026-11-10/8283_1716-flex-ltd-ausblick-2027-2029-axiom-spin-off.md) |
 | 10.11.2026 17:16 | Alibaba strebt Börsengang der Tochtergesellschaft T-Head in Hongkong an | [79738889_2026-11-10/8283_1716-alibaba-plant-boersengang-von-t-head.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/79738889_2026-11-10/8283_1716-alibaba-plant-boersengang-von-t-head.md) |
