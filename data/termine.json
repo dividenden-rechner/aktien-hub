@@ -667,6 +667,24 @@
    "quelle": "https://www.henkel.com/press-and-media/press-releases-and-kits/2026-10-29-henkel-achieves-very-strong-organic-sales-growth-in-the-third-quarter-and-updates-outlook-for-2026-2272164"
   },
   {
+   "sym": "HMC",
+   "name": "Honda Motor Co Ltd",
+   "art": "ergebnis",
+   "datum": "2026-11-10",
+   "betrag": "",
+   "waehrung": "",
+   "quelle": "https://www.sec.gov/Archives/edgar/data/715153/000119312526454310/d164844d6k.htm"
+  },
+  {
+   "sym": "SONY",
+   "name": "Sony Group Corp",
+   "art": "ergebnis",
+   "datum": "2026-11-10",
+   "betrag": "",
+   "waehrung": "",
+   "quelle": "https://www.sec.gov/Archives/edgar/data/313838/000119312526454312/d148641d6k.htm"
+  },
+  {
    "sym": "RMD",
    "name": "ResMed",
    "art": "dividende_exdatum",
@@ -1052,6 +1070,15 @@
    "betrag": "",
    "waehrung": "",
    "quelle": "https://data.fca.org.uk/artefacts/NSM/RNS/48aa0308-1df7-41ca-bc4b-36d29cc7e68a.html"
+  },
+  {
+   "sym": "HMC",
+   "name": "Honda Motor Co Ltd",
+   "art": "dividende_zahltag",
+   "datum": "2026-12-08",
+   "betrag": "35.00",
+   "waehrung": "JPY",
+   "quelle": "https://www.sec.gov/Archives/edgar/data/715153/000119312526454310/d164844d6k.htm"
   },
   {
    "sym": "MCHP",

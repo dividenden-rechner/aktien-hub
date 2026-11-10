@@ -1519,6 +1519,36 @@
    "revenue": 7030000000.0,
    "waehrung": "USD",
    "quelle": "https://www.sec.gov/Archives/edgar/data/2041610/000204161026000062/ex99_q326.htm"
+  },
+  {
+   "sym": "HMC",
+   "name": "Honda Motor Co Ltd",
+   "datum": "2026-11-10",
+   "eps": 132.75,
+   "eps_basis": "berichtet",
+   "revenue": null,
+   "waehrung": "Yen",
+   "quelle": "https://www.sec.gov/Archives/edgar/data/715153/000119312526454310/d164844d6k.htm"
+  },
+  {
+   "sym": "SONY",
+   "name": "Sony Group Corp",
+   "datum": "2026-11-10",
+   "eps": 134.89,
+   "eps_basis": "berichtet",
+   "revenue": null,
+   "waehrung": "Yen",
+   "quelle": "https://www.sec.gov/Archives/edgar/data/313838/000119312526454312/d148641d6k.htm"
+  },
+  {
+   "sym": "TDG",
+   "name": "TransDigm Group",
+   "datum": "2026-11-10",
+   "eps": 10.33,
+   "eps_basis": "berichtet",
+   "revenue": 2988000000.0,
+   "waehrung": "USD",
+   "quelle": "https://www.sec.gov/Archives/edgar/data/1260221/000126022126000073/exhibit991tdg2026q4earning.htm"
   }
  ]
 }
