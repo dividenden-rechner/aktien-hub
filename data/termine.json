@@ -1126,6 +1126,15 @@
    "quelle": "https://www.sec.gov/Archives/edgar/data/10795/000162828026070511/ex9919302026.htm"
   },
   {
+   "sym": "BR",
+   "name": "Broadridge Financial Solutions",
+   "art": "dividende_exdatum",
+   "datum": "2026-12-10",
+   "betrag": "1.09",
+   "waehrung": "USD",
+   "quelle": "https://www.sec.gov/Archives/edgar/data/1383312/000138331226000035/ex991prredividend11-2026.htm"
+  },
+  {
    "sym": "CVX",
    "name": "Chevron Corporation",
    "art": "dividende_zahltag",
@@ -1349,6 +1358,15 @@
    "betrag": "0.33",
    "waehrung": "USD",
    "quelle": "https://www.sec.gov/Archives/edgar/data/707549/000070754926000057/lrcx_exx991xsharexrepurcha.htm"
+  },
+  {
+   "sym": "BR",
+   "name": "Broadridge Financial Solutions",
+   "art": "dividende_zahltag",
+   "datum": "2027-01-11",
+   "betrag": "1.09",
+   "waehrung": "USD",
+   "quelle": "https://www.sec.gov/Archives/edgar/data/1383312/000138331226000035/ex991prredividend11-2026.htm"
   },
   {
    "sym": "MU",
