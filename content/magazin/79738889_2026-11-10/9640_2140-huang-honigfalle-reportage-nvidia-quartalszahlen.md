@@ -1,10 +1,11 @@
 ---
 title: "Cindy aus London und Jensen Huang: Die älteste Falle der Welt und die Frage, was Anleger daraus machen"
 description: "Von Mordechai Vanunu 1986 bis zu den Vorwürfen gegen Nvidia-Chef Jensen Huang: Warum kluge Männer immer wieder in dieselbe Falle laufen, was an der Geschichte belegt ist und warum die Quartalszahlen nächste Woche mehr erzählen als jedes Dementi."
-date: 2026-11-10 21:40
+date: 2026-11-15 10:00
 author: "Redaktions-Team Dividenden-Rechner.de"
 author_bio: "Das Redaktions-Team von Dividenden-Rechner.de schreibt über Dividendenaktien, Kennzahlen und Steuerthemen für Privatanleger. Die Rechner und Auswertungen auf der Seite entstehen im eigenen Haus."
 category: Analyse
+draft: true
 quelle_name: "SPIEGEL, Handelsblatt, Medienberichte, Nvidia-Mitteilung zum 2. Quartal"
 logo_symbol: NVDA
 logo_name: "Nvidia"
