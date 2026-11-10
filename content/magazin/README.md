@@ -16,10 +16,11 @@ Datei anklicken, dann Stift-Symbol: Zeile `draft: true` löschen und speichern, 
 | 29.10.2026 22:42 | Amazon steigert Umsatz im dritten Quartal auf 201,9 Milliarden Dollar | [79738970_2026-10-29/7757_2242-amazon-q3-2026-zahlen.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/79738970_2026-10-29/7757_2242-amazon-q3-2026-zahlen.md) |
 | 29.10.2026 10:12 | Shell erzielt im dritten Quartal 10,8 Milliarden Dollar Gewinn | [79738970_2026-10-29/8987_1012-shell-q3-2026-ergebnisse.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/79738970_2026-10-29/8987_1012-shell-q3-2026-ergebnisse.md) |
 
-### Online (338)
+### Online (339)
 
 | Datum | Titel | Datei |
 |---|---|---|
+| 10.11.2026 14:20 | Johnson & Johnson: Zweite Phase-3-Studie zu Caplyta bei bipolarer Manie erreicht ihr Ziel, 43,9 % der Patienten sprechen an, unter Placebo 23,7 % | [79738889_2026-11-10/9610_1420-johnson-johnson-caplyta-manie-studie-452.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/79738889_2026-11-10/9610_1420-johnson-johnson-caplyta-manie-studie-452.md) |
 | 10.11.2026 14:15 | Sony Group: Operatives Ergebnis klettert im Halbjahr auf 1,1 Mrd. Yen | [79738889_2026-11-10/8584_1415-sony-group-halbjahreszahlen-h1-2026.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/79738889_2026-11-10/8584_1415-sony-group-halbjahreszahlen-h1-2026.md) |
 | 10.11.2026 14:09 | Honda Motor: Operativer Gewinn springt im ersten Halbjahr um 48,1 Prozent nach oben | [79738889_2026-11-10/8590_1409-honda-motor-geschaeftszahlen-h1-2027.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/79738889_2026-11-10/8590_1409-honda-motor-geschaeftszahlen-h1-2027.md) |
 | 10.11.2026 14:07 | Taiwan Semiconductor Manufacturing Company: Oktober-Umsatz springt um 59,7 Prozent nach oben | [79738889_2026-11-10/8592_1407-tsmc-umsatz-oktober-2026.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/79738889_2026-11-10/8592_1407-tsmc-umsatz-oktober-2026.md) |
