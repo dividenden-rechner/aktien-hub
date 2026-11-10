@@ -14,6 +14,7 @@ image: assets/magazin/costco-sonderdividende-30-dollar-aktienrueckkauf-foto.jpg
 image_alt: "Außenansicht einer Costco-Filiale mit Parkplatz und Costco-Schriftzug"
 image_credit: "Jacob Blanck, CC BY-SA 4.0"
 image_source: "https://commons.wikimedia.org/wiki/File:Costco_Wholesale_Club.jpg"
+logo_file: assets/logos/cost.png
 ---
 Der Handelskonzern Costco hat eine einmalige Sonderdividende von 30 US-Dollar je Aktie beschlossen. Sie wird am 4. Dezember 2026 an alle Aktionäre gezahlt, die am 24. November im Register stehen. Insgesamt fließen rund 13,3 Milliarden US-Dollar an die Anteilseigner. Das ist ein Vielfaches dessen, was Costco in einem Quartal regulär ausschüttet.
 
