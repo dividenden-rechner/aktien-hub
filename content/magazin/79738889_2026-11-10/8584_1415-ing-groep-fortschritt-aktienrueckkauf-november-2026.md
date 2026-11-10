@@ -10,6 +10,7 @@ quelle_url: https://www.sec.gov/Archives/edgar/data/1039765/000117184326007299/e
 quelle_name: "Pressemitteilung Ing Groep Nv (SEC-Meldung)"
 logo_symbol: ING
 logo_name: "Ing Groep Nv"
+logo_file: assets/logos/ing.png
 ---
 <!-- PRÜFEN: Diese Zahlen stehen nicht im Originaltext: 108,91, 108,91. Bitte pruefen, dann 'draft: true' loeschen. -->
 
