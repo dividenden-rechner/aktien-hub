@@ -1499,6 +1499,26 @@
    "revenue": 7970000000.0,
    "waehrung": "USD",
    "quelle": "https://www.sec.gov/Archives/edgar/data/36104/000119312526450781/d172862dex991.htm"
+  },
+  {
+   "sym": "OXY",
+   "name": "Occidental Petroleum",
+   "datum": "2026-11-09",
+   "eps": 1.91,
+   "eps_basis": "bereinigt",
+   "revenue": 6567000000.0,
+   "waehrung": "USD",
+   "quelle": "https://www.sec.gov/Archives/edgar/data/797468/000162828026072193/oxyex9919-30x26earningsrel.htm"
+  },
+  {
+   "sym": "SKYD",
+   "name": "Skydance",
+   "datum": "2026-11-09",
+   "eps": null,
+   "eps_basis": "berichtet",
+   "revenue": 7030000000.0,
+   "waehrung": "USD",
+   "quelle": "https://www.sec.gov/Archives/edgar/data/2041610/000204161026000062/ex99_q326.htm"
   }
  ]
 }

@@ -16,10 +16,12 @@ Datei anklicken, dann Stift-Symbol: Zeile `draft: true` löschen und speichern, 
 | 29.10.2026 22:42 | Amazon steigert Umsatz im dritten Quartal auf 201,9 Milliarden Dollar | [79738970_2026-10-29/7757_2242-amazon-q3-2026-zahlen.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/79738970_2026-10-29/7757_2242-amazon-q3-2026-zahlen.md) |
 | 29.10.2026 10:12 | Shell erzielt im dritten Quartal 10,8 Milliarden Dollar Gewinn | [79738970_2026-10-29/8987_1012-shell-q3-2026-ergebnisse.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/79738970_2026-10-29/8987_1012-shell-q3-2026-ergebnisse.md) |
 
-### Online (327)
+### Online (329)
 
 | Datum | Titel | Datei |
 |---|---|---|
+| 10.11.2026 04:12 | Occidental Petroleum meldet im dritten Quartal bereinigten Gewinn von 1,91 US-Dollar je Aktie | [79738889_2026-11-10/9587_0412-occidental-petroleum-q3-2026-zahlen.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/79738889_2026-11-10/9587_0412-occidental-petroleum-q3-2026-zahlen.md) |
+| 10.11.2026 04:10 | Stryker nominiert Quest-Diagnostics-Chef Jim Davis für den Verwaltungsrat | [79738889_2026-11-10/9589_0410-stryker-nominiert-jim-davis-fuer-board-of-directors.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/79738889_2026-11-10/9589_0410-stryker-nominiert-jim-davis-fuer-board-of-directors.md) |
 | 09.11.2026 22:45 | Japan Tobacco verliert sein Russland-Geschäft: Die Aktie fällt in zwei Tagen um ein Drittel | [79738889_2026-11-09/9030_2245-japan-tobacco-russland-beschlagnahmung-dividende.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/79738889_2026-11-09/9030_2245-japan-tobacco-russland-beschlagnahmung-dividende.md) |
 | 09.11.2026 22:15 | Brent verliert binnen zehn Tagen mehr als ein Fünftel: Was das für Exxon, Shell und BP heißt | [79738889_2026-11-09/9025_2215-oelpreis-iran-entspannung-oelkonzerne-dividenden.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/79738889_2026-11-09/9025_2215-oelpreis-iran-entspannung-oelkonzerne-dividenden.md) |
 | 09.11.2026 22:05 | Amgens Repatha senkt bei Nierenkranken das Risiko für Herzinfarkt und Schlaganfall um 39 % | [79738890_2026-11-09/8400_2205-amgen-repatha-aha-2026-nierenkranke-kosten-nutzen.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/79738890_2026-11-09/8400_2205-amgen-repatha-aha-2026-nierenkranke-kosten-nutzen.md) |
