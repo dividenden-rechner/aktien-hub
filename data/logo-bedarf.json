@@ -124,5 +124,233 @@
   "sym": "B",
   "dom": "barrick.com",
   "name": "Barrick Mining"
+ },
+ {
+  "key": "bidu",
+  "sym": "BIDU",
+  "dom": "baidu.com",
+  "name": "Baidu"
+ },
+ {
+  "key": "xpev",
+  "sym": "XPEV",
+  "dom": "xiaopeng.com",
+  "name": "XPeng"
+ },
+ {
+  "key": "tcom",
+  "sym": "TCOM",
+  "dom": "trip.com",
+  "name": "Trip.com"
+ },
+ {
+  "key": "tsn",
+  "sym": "TSN",
+  "dom": "tysonfoods.com",
+  "name": "Tyson Foods"
+ },
+ {
+  "key": "acm",
+  "sym": "ACM",
+  "dom": "aecom.com",
+  "name": "Aecom"
+ },
+ {
+  "key": "hd",
+  "sym": "HD",
+  "dom": "homedepot.com",
+  "name": "Home Depot"
+ },
+ {
+  "key": "dis",
+  "sym": "DIS",
+  "dom": "thewaltdisneycompany.com",
+  "name": "Disney"
+ },
+ {
+  "key": "jd",
+  "sym": "JD",
+  "dom": "jd.com",
+  "name": "JD.com"
+ },
+ {
+  "key": "pdd",
+  "sym": "PDD",
+  "dom": "pddholdings.com",
+  "name": "PDD Holdings"
+ },
+ {
+  "key": "klar",
+  "sym": "KLAR",
+  "dom": "klarna.com",
+  "name": "Klarna"
+ },
+ {
+  "key": "eslt",
+  "sym": "ESLT",
+  "dom": "elbitsystems.com",
+  "name": "Elbit Systems"
+ },
+ {
+  "key": "as",
+  "sym": "AS",
+  "dom": "amersports.com",
+  "name": "Amer Sports"
+ },
+ {
+  "key": "tme",
+  "sym": "TME",
+  "dom": "tencentmusic.com",
+  "name": "Tencent Music"
+ },
+ {
+  "key": "bhp",
+  "sym": "BHP",
+  "dom": "bhp.com",
+  "name": "BHP"
+ },
+ {
+  "key": "low",
+  "sym": "LOW",
+  "dom": "lowes.com",
+  "name": "Lowe's"
+ },
+ {
+  "key": "tgt",
+  "sym": "TGT",
+  "dom": "target.com",
+  "name": "Target"
+ },
+ {
+  "key": "tjx",
+  "sym": "TJX",
+  "dom": "tjx.com",
+  "name": "TJX Companies"
+ },
+ {
+  "key": "glbe",
+  "sym": "GLBE",
+  "dom": "global-e.com",
+  "name": "Global-E"
+ },
+ {
+  "key": "pony",
+  "sym": "PONY",
+  "dom": "pony.ai",
+  "name": "Pony AI"
+ },
+ {
+  "key": "blsh",
+  "sym": "BLSH",
+  "dom": "bullish.com",
+  "name": "Bullish"
+ },
+ {
+  "key": "panw",
+  "sym": "PANW",
+  "dom": "paloaltonetworks.com",
+  "name": "Palo Alto Networks"
+ },
+ {
+  "key": "cpa",
+  "sym": "CPA",
+  "dom": "copa.com",
+  "name": "Copa Holdings"
+ },
+ {
+  "key": "wsm",
+  "sym": "WSM",
+  "dom": "williams-sonoma.com",
+  "name": "Williams-Sonoma"
+ },
+ {
+  "key": "wmt",
+  "sym": "WMT",
+  "dom": "walmart.com",
+  "name": "Walmart"
+ },
+ {
+  "key": "ntes",
+  "sym": "NTES",
+  "dom": "netease.com",
+  "name": "NetEase"
+ },
+ {
+  "key": "futu",
+  "sym": "FUTU",
+  "dom": "futuholdings.com",
+  "name": "Futu"
+ },
+ {
+  "key": "vips",
+  "sym": "VIPS",
+  "dom": "vip.com",
+  "name": "Vipshop"
+ },
+ {
+  "key": "bbwi",
+  "sym": "BBWI",
+  "dom": "bbwinc.com",
+  "name": "Bath & Body Works"
+ },
+ {
+  "key": "wmg",
+  "sym": "WMG",
+  "dom": "wmg.com",
+  "name": "Warner Music"
+ },
+ {
+  "key": "intu",
+  "sym": "INTU",
+  "dom": "intuit.com",
+  "name": "Intuit"
+ },
+ {
+  "key": "rost",
+  "sym": "ROST",
+  "dom": "rossstores.com",
+  "name": "Ross Stores"
+ },
+ {
+  "key": "gap",
+  "sym": "GAP",
+  "dom": "gapinc.com",
+  "name": "Gap"
+ },
+ {
+  "key": "estc",
+  "sym": "ESTC",
+  "dom": "elastic.co",
+  "name": "Elastic"
+ },
+ {
+  "key": "bull",
+  "sym": "BULL",
+  "dom": "webull.com",
+  "name": "Webull"
+ },
+ {
+  "key": "cprt",
+  "sym": "CPRT",
+  "dom": "copart.com",
+  "name": "Copart"
+ },
+ {
+  "key": "veev",
+  "sym": "VEEV",
+  "dom": "veeva.com",
+  "name": "Veeva"
+ },
+ {
+  "key": "bj",
+  "sym": "BJ",
+  "dom": "bjs.com",
+  "name": "BJ's Wholesale"
+ },
+ {
+  "key": "bke",
+  "sym": "BKE",
+  "dom": "buckle.com",
+  "name": "Buckle"
  }
 ]
