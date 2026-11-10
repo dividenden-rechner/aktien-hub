@@ -329,7 +329,14 @@ def tavily_ground(prompt):
     if not key:
         return "", []
     m = re.search(r"Artikel über (.+?) \((.*?)\), Dokument: (.+?),", prompt)
-    query = (f"{m.group(1)} {m.group(2)} {m.group(3)} Aktie Analyse Ausblick" if m else prompt[:250]).strip()
+    m2 = re.search(r"Fakten zu (.+?) \((.*?)\) zum Thema: (.+?) \(Anlass", prompt)
+    if m:
+        query = f"{m.group(1)} {m.group(2)} {m.group(3)} Aktie Analyse Ausblick"
+    elif m2:
+        query = f"{m2.group(1)} {m2.group(2)} {m2.group(3)[:120]}"
+    else:
+        query = prompt[:250]
+    query = query.strip()
     body = {"query": query[:380], "topic": "news", "search_depth": "basic", "max_results": 8, "days": 30}
     req = urllib.request.Request("https://api.tavily.com/search", data=json.dumps(body).encode(),
                                  headers={"Content-Type": "application/json", "Authorization": "Bearer " + key})
@@ -339,6 +346,7 @@ def tavily_ground(prompt):
     except Exception as e:
         print("Tavily-Problem ->", e)
         return "", []
+    print("Tavily-Suche:", query[:120], "->", len(res.get("results", [])), "Treffer")
     lines, src = [], []
     for t in res.get("results", []):
         url = t.get("url") or ""
