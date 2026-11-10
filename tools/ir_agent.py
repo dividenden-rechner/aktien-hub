@@ -223,26 +223,27 @@ def groq_generate(parts, schema):
     if GROQ_CALLS >= int(os.environ.get("GROQ_MAX_PER_RUN", "40")):
         print("Groq-Ausweichanbieter: Obergrenze fuer diesen Lauf erreicht.")
         return None
-    model = os.environ.get("GROQ_MODEL", "llama-3.3-70b-versatile")
+    models = [os.environ["GROQ_MODEL"]] if os.environ.get("GROQ_MODEL") else ["openai/gpt-oss-120b", "qwen/qwen3.8-27b", "openai/gpt-oss-20b"]
     sysmsg = ("Antworte ausschliesslich mit einem gueltigen JSON-Objekt ohne Erklaerung. Es muss diesem Schema entsprechen "
               "(Typnamen klein, Pflichtfelder 'required' immer fuellen, nichts erfinden):\n" + json.dumps(_lower_schema(schema), ensure_ascii=False))
-    body = {"model": model, "temperature": 0.3, "max_tokens": 6000, "response_format": {"type": "json_object"},
-            "messages": [{"role": "system", "content": sysmsg}, {"role": "user", "content": "\n\n".join(p["text"] for p in parts)}]}
-    req = urllib.request.Request("https://api.groq.com/openai/v1/chat/completions", data=json.dumps(body).encode(),
-                                 headers={"Content-Type": "application/json", "Authorization": "Bearer " + key, "User-Agent": "dividenden-rechner-ir/1.0"})
-    GROQ_CALLS += 1
-    try:
-        with urllib.request.urlopen(req, timeout=240) as r:
-            res = json.load(r)
-        out = json.loads(res["choices"][0]["message"]["content"])
-        if isinstance(out, dict) and all(k in out for k in (schema.get("required") or [])):
-            print("Modell: Groq (Ausweichanbieter)", model)
-            return out
-        print("Groq-Problem -> Antwort passt nicht zum Schema:", json.dumps(out)[:200])
-    except urllib.error.HTTPError as e:
-        print("Groq-Problem ->", e.code, e.read().decode()[:300])
-    except Exception as e:
-        print("Groq-Problem ->", e)
+    for model in models:
+        body = {"model": model, "temperature": 0.3, "max_tokens": 8000, "response_format": {"type": "json_object"},
+                "messages": [{"role": "system", "content": sysmsg}, {"role": "user", "content": "\n\n".join(p["text"] for p in parts)}]}
+        req = urllib.request.Request("https://api.groq.com/openai/v1/chat/completions", data=json.dumps(body).encode(),
+                                     headers={"Content-Type": "application/json", "Authorization": "Bearer " + key, "User-Agent": "dividenden-rechner-ir/1.0"})
+        GROQ_CALLS += 1
+        try:
+            with urllib.request.urlopen(req, timeout=240) as r:
+                res = json.load(r)
+            out = json.loads(res["choices"][0]["message"]["content"])
+            if isinstance(out, dict) and all(k in out for k in (schema.get("required") or [])):
+                print("Modell: Groq (Ausweichanbieter)", model)
+                return out
+            print("Groq-Problem -> Antwort passt nicht zum Schema:", model, json.dumps(out)[:200])
+        except urllib.error.HTTPError as e:
+            print("Groq-Problem ->", model, e.code, e.read().decode()[:300])
+        except Exception as e:
+            print("Groq-Problem ->", model, e)
     return None
 
 
