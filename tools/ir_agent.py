@@ -190,6 +190,9 @@ def _generate(parts, schema, key):
             return out
         except Exception:
             last = f"{model}: unerwartete Antwort " + json.dumps(res)[:300]
+    out = groq_generate(parts, schema)
+    if out is not None:
+        return out
     out = claude_generate(parts, schema)
     if out is not None:
         return out
@@ -205,6 +208,42 @@ def _lower_schema(x):
     if isinstance(x, list):
         return [_lower_schema(i) for i in x]
     return x
+
+
+GROQ_CALLS = 0
+
+
+def groq_generate(parts, schema):
+    """Kostenloser Ausweichanbieter (Groq, OpenAI-kompatibel), wenn alle Gemini-Modelle ausfallen. Nur aktiv mit Secret GROQ_API_KEY.
+    Nur Text, keine Bilder oder PDFs. Antwort als JSON-Objekt im Schema von Gemini. Liefert None, wenn nicht moeglich (Limit, Fehler, ungueltige Antwort)."""
+    global GROQ_CALLS
+    key = os.environ.get("GROQ_API_KEY", "").strip()
+    if not key or any("text" not in p for p in parts):
+        return None
+    if GROQ_CALLS >= int(os.environ.get("GROQ_MAX_PER_RUN", "40")):
+        print("Groq-Ausweichanbieter: Obergrenze fuer diesen Lauf erreicht.")
+        return None
+    model = os.environ.get("GROQ_MODEL", "llama-3.3-70b-versatile")
+    sysmsg = ("Antworte ausschliesslich mit einem gueltigen JSON-Objekt ohne Erklaerung. Es muss diesem Schema entsprechen "
+              "(Typnamen klein, Pflichtfelder 'required' immer fuellen, nichts erfinden):\n" + json.dumps(_lower_schema(schema), ensure_ascii=False))
+    body = {"model": model, "temperature": 0.3, "max_tokens": 6000, "response_format": {"type": "json_object"},
+            "messages": [{"role": "system", "content": sysmsg}, {"role": "user", "content": "\n\n".join(p["text"] for p in parts)}]}
+    req = urllib.request.Request("https://api.groq.com/openai/v1/chat/completions", data=json.dumps(body).encode(),
+                                 headers={"Content-Type": "application/json", "Authorization": "Bearer " + key, "User-Agent": "dividenden-rechner-ir/1.0"})
+    GROQ_CALLS += 1
+    try:
+        with urllib.request.urlopen(req, timeout=240) as r:
+            res = json.load(r)
+        out = json.loads(res["choices"][0]["message"]["content"])
+        if isinstance(out, dict) and all(k in out for k in (schema.get("required") or [])):
+            print("Modell: Groq (Ausweichanbieter)", model)
+            return out
+        print("Groq-Problem -> Antwort passt nicht zum Schema:", json.dumps(out)[:200])
+    except urllib.error.HTTPError as e:
+        print("Groq-Problem ->", e.code, e.read().decode()[:300])
+    except Exception as e:
+        print("Groq-Problem ->", e)
+    return None
 
 
 def claude_generate(parts, schema):
@@ -282,12 +321,43 @@ def research(out, key):
     return ground(prompt, key)
 
 
+def tavily_ground(prompt):
+    """Kostenlose Ausweich-Recherche (Tavily-Websuche), wenn die Gemini-Suche ausfaellt. Nur aktiv mit Secret TAVILY_API_KEY.
+    Liefert (Text, [(Titel, URL)]) mit aktuellen Treffern als Stichpunkte, oder ("", [])."""
+    key = os.environ.get("TAVILY_API_KEY", "").strip()
+    if not key:
+        return "", []
+    m = re.search(r"Artikel über (.+?) \((.*?)\), Dokument: (.+?),", prompt)
+    query = (f"{m.group(1)} {m.group(2)} {m.group(3)} Aktie Analyse Ausblick" if m else prompt[:250]).strip()
+    body = {"query": query[:380], "topic": "news", "search_depth": "basic", "max_results": 8, "days": 30}
+    req = urllib.request.Request("https://api.tavily.com/search", data=json.dumps(body).encode(),
+                                 headers={"Content-Type": "application/json", "Authorization": "Bearer " + key})
+    try:
+        with urllib.request.urlopen(req, timeout=60) as r:
+            res = json.load(r)
+    except Exception as e:
+        print("Tavily-Problem ->", e)
+        return "", []
+    lines, src = [], []
+    for t in res.get("results", []):
+        url = t.get("url") or ""
+        if not url or "tavily.com/knowledge" in url:
+            continue
+        title = (t.get("title") or url).strip()
+        datum = (t.get("published_date") or "")[:10]
+        lines.append(f"- {title}" + (f" ({datum})" if datum else "") + ": " + re.sub(r"\s+", " ", t.get("content") or "")[:500])
+        src.append((title, url))
+    if lines:
+        print("Recherche: Tavily (Ausweichanbieter),", len(lines), "Treffer")
+    return "\n".join(lines)[:4000], src[:8]
+
+
 def ground(prompt, key):
     """Websuche (Gemini Grounding) mit beliebigem Auftrag. Liefert (Text, [(Titel, URL)])."""
     body = {"contents": [{"parts": [{"text": prompt}]}], "tools": [{"google_search": {}}], "generationConfig": {"temperature": 0.2}}
     global RESEARCH_OFF
     if RESEARCH_OFF:
-        return "", []
+        return tavily_ground(prompt)
     for model in model_order(key)[:2]:
         url = f"https://generativelanguage.googleapis.com/v1beta/models/{model}:generateContent"
         try:
@@ -312,6 +382,9 @@ def ground(prompt, key):
             time.sleep(20)
         except Exception as e:
             print("Recherche-Problem ->", model, e)
+    t_text, t_src = tavily_ground(prompt)
+    if t_text:
+        return t_text, t_src
     print("::notice title=IR-Agent::Hintergrundrecherche nicht moeglich (Websuche des Keys nicht verfuegbar), Artikel nur aus dem Dokument.")
     return "", []
 
