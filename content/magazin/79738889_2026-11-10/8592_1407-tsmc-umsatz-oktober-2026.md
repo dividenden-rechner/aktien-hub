@@ -10,6 +10,7 @@ quelle_url: https://www.sec.gov/Archives/edgar/data/1046179/000104617926000796/t
 quelle_name: "Pressemitteilung Taiwan Semiconductor Manufacturing Co Ltd (SEC-Meldung)"
 logo_symbol: TSM
 logo_name: "Taiwan Semiconductor Manufacturing Co Ltd"
+logo_file: assets/logos/tsm.png
 ---
 <!-- PRÜFEN: Diese Zahlen stehen nicht im Originaltext: 4,49, Einordnung: 4,49. Bitte pruefen, dann 'draft: true' loeschen. -->
 

@@ -10,6 +10,7 @@ quelle_url: https://www.sec.gov/Archives/edgar/data/313838/000119312526454312/d1
 quelle_name: "Pressemitteilung Sony Group Corp (SEC-Meldung)"
 logo_symbol: SONY
 logo_name: "Sony Group Corp"
+logo_file: assets/logos/sony.png
 ---
 <!-- PRÜFEN: Diese Zahlen stehen nicht im Originaltext: 6,27. Bitte pruefen, dann 'draft: true' loeschen. -->
 

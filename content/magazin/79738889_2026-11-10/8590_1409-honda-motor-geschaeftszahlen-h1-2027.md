@@ -10,6 +10,7 @@ quelle_url: https://www.sec.gov/Archives/edgar/data/715153/000119312526454310/d1
 quelle_name: "Pressemitteilung Honda Motor Co Ltd (SEC-Meldung)"
 logo_symbol: HMC
 logo_name: "Honda Motor Co Ltd"
+logo_file: assets/logos/hmc.png
 ---
 <!-- PRÜFEN: Diese Zahlen stehen nicht im Originaltext: 12,04, 648,74, 648,74, Einordnung: 12,04, Einordnung: 648,74. Bitte pruefen, dann 'draft: true' loeschen. -->
 
