@@ -16,12 +16,13 @@ Datei anklicken, dann Stift-Symbol: Zeile `draft: true` löschen und speichern, 
 | 29.10.2026 22:42 | Amazon steigert Umsatz im dritten Quartal auf 201,9 Milliarden Dollar | [79738970_2026-10-29/7757_2242-amazon-q3-2026-zahlen.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/79738970_2026-10-29/7757_2242-amazon-q3-2026-zahlen.md) |
 | 29.10.2026 10:12 | Shell erzielt im dritten Quartal 10,8 Milliarden Dollar Gewinn | [79738970_2026-10-29/8987_1012-shell-q3-2026-ergebnisse.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/79738970_2026-10-29/8987_1012-shell-q3-2026-ergebnisse.md) |
 
-### Online (333)
+### Online (334)
 
 | Datum | Titel | Datei |
 |---|---|---|
 | 10.11.2026 10:14 | +2,5 % nach Pentagon-Entscheidung: WuXi AppTec erholt sich von US-Schwarzer Liste | [79738889_2026-11-10/8985_1014-wuxi-apptec-aktie-pentagon-streichung-militaerliste.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/79738889_2026-11-10/8985_1014-wuxi-apptec-aktie-pentagon-streichung-militaerliste.md) |
 | 10.11.2026 10:14 | SoftBank sagt 64,6 Mrd. USD für OpenAI zu: Beleihungsquote hält sich bei stabilen 20,6 % | [79738889_2026-11-10/8985_1014-softbank-openai-investition-malaysia-arm-ltv.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/79738889_2026-11-10/8985_1014-softbank-openai-investition-malaysia-arm-ltv.md) |
+| 10.11.2026 10:14 | DBS blickt auf KI-Finanzierungsboom: Soitec-Aktie steigt im Jahr 2026 um 570 % | [79738889_2026-11-10/8985_1014-dbs-group-ki-finanzierung-singapur-soitec-2026.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/79738889_2026-11-10/8985_1014-dbs-group-ki-finanzierung-singapur-soitec-2026.md) |
 | 10.11.2026 09:15 | Vodafone: Abschreibung auf Deutschland führt zum Milliardenverlust, das operative Ergebnis wächst um 6,4 % | [79738889_2026-11-10/9600_0915-vodafone-h1-fy27-abschreibung-deutschland-prognose.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/79738889_2026-11-10/9600_0915-vodafone-h1-fy27-abschreibung-deutschland-prognose.md) |
 | 10.11.2026 08:40 | Infineon: Das Schlussquartal bringt 56 % mehr Segmentergebnis, 2027 soll der Umsatz um ein Fünftel steigen | [79738889_2026-11-10/9595_0840-infineon-q4-2026-segmentergebnis-rechenzentren-ausblick.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/79738889_2026-11-10/9595_0840-infineon-q4-2026-segmentergebnis-rechenzentren-ausblick.md) |
 | 10.11.2026 04:12 | Occidental Petroleum meldet im dritten Quartal bereinigten Gewinn von 1,91 US-Dollar je Aktie | [79738889_2026-11-10/9587_0412-occidental-petroleum-q3-2026-zahlen.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/79738889_2026-11-10/9587_0412-occidental-petroleum-q3-2026-zahlen.md) |
