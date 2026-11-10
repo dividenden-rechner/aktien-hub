@@ -17,10 +17,11 @@ Datei anklicken, dann Stift-Symbol: Zeile `draft: true` löschen und speichern, 
 | 29.10.2026 22:42 | Amazon steigert Umsatz im dritten Quartal auf 201,9 Milliarden Dollar | [79738970_2026-10-29/7757_2242-amazon-q3-2026-zahlen.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/79738970_2026-10-29/7757_2242-amazon-q3-2026-zahlen.md) |
 | 29.10.2026 10:12 | Shell erzielt im dritten Quartal 10,8 Milliarden Dollar Gewinn | [79738970_2026-10-29/8987_1012-shell-q3-2026-ergebnisse.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/79738970_2026-10-29/8987_1012-shell-q3-2026-ergebnisse.md) |
 
-### Online (348)
+### Online (349)
 
 | Datum | Titel | Datei |
 |---|---|---|
+| 10.11.2026 22:15 | Costco zahlt 30 US-Dollar Sonderdividende je Aktie und stockt Rückkauf auf 4 Milliarden auf | [79738889_2026-11-10/7780_2215-costco-sonderdividende-30-dollar-aktienrueckkauf.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/79738889_2026-11-10/7780_2215-costco-sonderdividende-30-dollar-aktienrueckkauf.md) |
 | 10.11.2026 22:10 | Broadridge Financial Solutions erhöht Quartalsdividende auf 1,09 US-Dollar je Aktie | [79738889_2026-11-10/7789_2210-broadridge-financial-solutions-dividende-q1-2027.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/79738889_2026-11-10/7789_2210-broadridge-financial-solutions-dividende-q1-2027.md) |
 | 10.11.2026 17:16 | Stellantis verkauft Montagewerk in Brampton und kooperiert mit Roshel | [79738889_2026-11-10/8283_1716-stellantis-verkauft-brampton-werk-an-roshel.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/79738889_2026-11-10/8283_1716-stellantis-verkauft-brampton-werk-an-roshel.md) |
 | 10.11.2026 17:16 | Flex Ltd. peilt für 2029 operative Marge von über 7 Prozent an | [79738889_2026-11-10/8283_1716-flex-ltd-ausblick-2027-2029-axiom-spin-off.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/79738889_2026-11-10/8283_1716-flex-ltd-ausblick-2027-2029-axiom-spin-off.md) |
