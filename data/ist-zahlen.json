@@ -1521,6 +1521,16 @@
    "quelle": "https://www.sec.gov/Archives/edgar/data/2041610/000204161026000062/ex99_q326.htm"
   },
   {
+   "sym": "HEN3.DE",
+   "name": "Henkel",
+   "datum": "2026-11-10",
+   "eps": null,
+   "eps_basis": "",
+   "revenue": 5713000000.0,
+   "waehrung": "EUR",
+   "quelle": "https://www.henkel.com/press-and-media/press-releases-and-kits/2026-11-10-henkel-posts-very-strong-sales-growth-in-the-third-quarter-2274626"
+  },
+  {
    "sym": "HMC",
    "name": "Honda Motor Co Ltd",
    "datum": "2026-11-10",
@@ -1529,6 +1539,16 @@
    "revenue": null,
    "waehrung": "Yen",
    "quelle": "https://www.sec.gov/Archives/edgar/data/715153/000119312526454310/d164844d6k.htm"
+  },
+  {
+   "sym": "PAH3.DE",
+   "name": "Porsche SE",
+   "datum": "2026-11-10",
+   "eps": null,
+   "eps_basis": "",
+   "revenue": 930000000.0,
+   "waehrung": "EUR",
+   "quelle": "https://www.porsche-se.com/en/media/press-releases/detail/difficult-conditions-in-the-automotive-industry-impact-porsche-ses-earnings-figures"
   },
   {
    "sym": "SONY",
@@ -1549,6 +1569,26 @@
    "revenue": 2988000000.0,
    "waehrung": "USD",
    "quelle": "https://www.sec.gov/Archives/edgar/data/1260221/000126022126000073/exhibit991tdg2026q4earning.htm"
+  },
+  {
+   "sym": "TSM",
+   "name": "Taiwan Semiconductor Manufacturing Co Ltd",
+   "datum": "2026-11-10",
+   "eps": 29.43,
+   "eps_basis": "berichtet",
+   "revenue": 1494240000000.0,
+   "waehrung": "NTD",
+   "quelle": "https://www.sec.gov/Archives/edgar/data/1046179/000104617926000797/tsm-boardx202611xx.htm"
+  },
+  {
+   "sym": "VOD",
+   "name": "Vodafone Group Public Ltd Co",
+   "datum": "2026-11-10",
+   "eps": 1.48,
+   "eps_basis": "bereinigt",
+   "revenue": 21900000000.0,
+   "waehrung": "Euro",
+   "quelle": "https://www.sec.gov/Archives/edgar/data/839923/000165495426009641/a4345c.htm"
   }
  ]
 }

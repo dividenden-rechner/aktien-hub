@@ -775,6 +775,15 @@
    "quelle": "https://www.sec.gov/Archives/edgar/data/1324404/000132440426000023/cf-11042026_ex991xearnings.htm"
   },
   {
+   "sym": "FME.DE",
+   "name": "Fresenius Medical Care",
+   "art": "ergebnis",
+   "datum": "2026-11-16",
+   "betrag": "",
+   "waehrung": "",
+   "quelle": "https://freseniusmedicalcare.com/en/media/newsroom/bond-with-a-volume-of-500-million-euros-2026/"
+  },
+  {
    "sym": "UDR",
    "name": "UDR, Inc.",
    "art": "dividende_exdatum",
@@ -881,6 +890,15 @@
    "betrag": "",
    "waehrung": "",
    "quelle": "https://www.sec.gov/Archives/edgar/data/2023554/000162828026068243/sndkq1-27ex991xpressrelease.htm"
+  },
+  {
+   "sym": "VOD",
+   "name": "Vodafone Group Public Ltd Co",
+   "art": "dividende_exdatum",
+   "datum": "2026-11-19",
+   "betrag": "",
+   "waehrung": "",
+   "quelle": "https://www.sec.gov/Archives/edgar/data/839923/000165495426009641/a4345c.htm"
   },
   {
    "sym": "EVRG",
@@ -1378,6 +1396,15 @@
    "quelle": "https://www.sec.gov/Archives/edgar/data/882184/000088218426000119/a9302026exhibit991.htm"
   },
   {
+   "sym": "VOD",
+   "name": "Vodafone Group Public Ltd Co",
+   "art": "dividende_zahltag",
+   "datum": "2027-02-03",
+   "betrag": "2.306",
+   "waehrung": "EUR",
+   "quelle": "https://www.sec.gov/Archives/edgar/data/839923/000165495426009641/a4345c.htm"
+  },
+  {
    "sym": "TPR",
    "name": "Tapestry, Inc.",
    "art": "ergebnis",
@@ -1403,6 +1430,24 @@
    "betrag": "1.82",
    "waehrung": "USD",
    "quelle": "https://www.sec.gov/Archives/edgar/data/1551152/000155115226000033/abbv-20260930xexhibit991.htm"
+  },
+  {
+   "sym": "TSM",
+   "name": "Taiwan Semiconductor Manufacturing Co Ltd",
+   "art": "dividende_exdatum",
+   "datum": "2027-03-11",
+   "betrag": "9.0",
+   "waehrung": "NTD",
+   "quelle": "https://www.sec.gov/Archives/edgar/data/1046179/000104617926000797/tsm-boardx202611xx.htm"
+  },
+  {
+   "sym": "TSM",
+   "name": "Taiwan Semiconductor Manufacturing Co Ltd",
+   "art": "dividende_zahltag",
+   "datum": "2027-04-08",
+   "betrag": "9.0",
+   "waehrung": "NTD",
+   "quelle": "https://www.sec.gov/Archives/edgar/data/1046179/000104617926000797/tsm-boardx202611xx.htm"
   },
   {
    "sym": "DHI",
