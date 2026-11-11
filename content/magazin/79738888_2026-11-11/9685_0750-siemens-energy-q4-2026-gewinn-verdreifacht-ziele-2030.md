@@ -7,6 +7,9 @@ author_bio: "Das Redaktions-Team von Dividenden-Rechner.de schreibt über Divide
 category: Quartalszahlen
 story_image: assets/magazin/siemens-energy-q4-2026-konzern.jpg
 story_chart: assets/magazin/siemens-energy-q4-2026-kurs.png
+story_portrait: medien/ceo/enr-de-bruch.png
+story_portrait_seite: rechts
+story_portrait_schnitt: unten
 story_text: "Siemens Energy schließt das Geschäftsjahr mit einem Rekordquartal ab: 12,8 Mrd. Euro Umsatz, 21,5 % mehr als vor einem Jahr, und ein Gewinn vor Sondereffekten von 1,54 Mrd. Euro, mehr als das Dreifache. Der Auftragsbestand steigt auf 164 Mrd. Euro, und über 80 % des Umsatzes im nächsten Jahr sind bereits gebucht.\nDie Gasturbinen-Sparte erreicht eine Marge von 16 %, die Netzsparte im Quartal sogar 20 %. Die Windkraft von Siemens Gamesa schreibt im zweiten Quartal in Folge schwarze Zahlen, verbrennt über das Jahr aber noch 1,6 Mrd. Euro. Die Dividende steigt von 0,70 auf 2,30 Euro.\nDie Aktie hat seit dem Frühjahr rund ein Drittel verloren, weil der Markt dem KI-Thema misstraut. Die neuen Ziele für 2030 mit einer Marge von 20 bis 22 % sollen das Vertrauen zurückholen, und die Industriesparte soll mit einem Partner an Bord eigenständig werden."
 logo_name: "Siemens Energy"
 logo_symbol: ENR.DE
