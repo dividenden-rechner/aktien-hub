@@ -431,6 +431,20 @@ table.dt{border-collapse:collapse;width:100%;font-size:.9rem;min-width:620px}
       var cls = String(r.asset_class || "").toUpperCase(), sym = String(r.symbol || "").trim().toUpperCase();
       var date = isoDate(r.date || r.datetime);
       if (!date) return;
+      /* Depotübertrag (Einlieferung von einem anderen Broker): Stücke ohne Kaufbetrag */
+      if (cat === "DELIVERY" && sym && shares) {
+        var raw = num(r.shares, dec);
+        if (raw < 0) return;   // Auslieferung
+        out.push(mk({ id: "tr:" + (r.transaction_id || [date, "xin", sym, shares].join("|")), date: date, type: "buy", key: sym, name: r.name || sym, assetClass: cls === "FUND" ? "etf" : cls === "STOCK" ? "aktie" : "", shares: shares, price: null, amount: 0, fee: 0, tax: 0, src: "tr", note: "Übertrag, Einstandskurs unbekannt", xfer: true }));
+        return;
+      }
+      /* Kapitalmaßnahmen: Split, Fusion (alte ISIN raus, neue rein), Abspaltung. Stücke ändern sich, Geld fließt nicht. */
+      if (cat === "CORPORATE_ACTION" && sym) {
+        var st = num(r.shares, dec);
+        if (!st) return;
+        out.push(mk({ id: "tr:" + (r.transaction_id || [date, r.type, sym, st].join("|")), date: date, type: "ca", ca: String(r.type || "").toUpperCase(), key: sym, name: r.name || sym, assetClass: cls === "FUND" ? "etf" : cls === "STOCK" ? "aktie" : "", shares: st, ts: String(r.datetime || ""), price: null, amount: 0, fee: 0, tax: 0, src: "tr" }));
+        return;
+      }
       if (type === "other" || (cat === "CASH" && type !== "div" && type !== "int" && type !== "dep" && type !== "wd" && type !== "fee" && type !== "tax")) { skipped[r.type || "?"] = (skipped[r.type || "?"] || 0) + 1; return; }
       if (type === "xout") return;
       var t = { id: "tr:" + (r.transaction_id || [date, type, sym, shares, amount].join("|")), date: date, type: type, key: sym, name: r.name || sym, assetClass: cls === "FUND" ? "etf" : cls === "CRYPTO" ? "krypto" : cls === "STOCK" ? "aktie" : "", shares: shares || 0, price: price, amount: amount == null ? 0 : amount, fee: A(num(r.fee, dec)), tax: A(num(r.tax, dec)), src: "tr" };
@@ -519,9 +533,12 @@ table.dt{border-collapse:collapse;width:100%;font-size:.9rem;min-width:620px}
 
   /* ---------- Positionen (Durchschnittskosten) ---------- */
   var order = { buy: 0, xin: 0, div: 1, sell: 2 };
-  function sortTx(tx) { return tx.slice().sort(function (a, b) { return a.date < b.date ? -1 : a.date > b.date ? 1 : (order[a.type] || 0) - (order[b.type] || 0); }); }
+  function sortTx(tx) {
+    var o = function (t) { return t.type === "ca" ? (t.ca === "MERGER" && t.shares < 0 ? 0.4 : 0.5) : (order[t.type] || 0); };
+    return tx.slice().sort(function (a, b) { return a.date < b.date ? -1 : a.date > b.date ? 1 : (o(a) - o(b)) || (a.type === "ca" && b.type === "ca" ? (a.ts < b.ts ? -1 : a.ts > b.ts ? 1 : 0) : 0); });
+  }
   function positions(tx, asOf) {
-    var P = {}, T = sortTx(tx), end = asOf || "9999-12-31";
+    var P = {}, CA = {}, T = sortTx(tx), end = asOf || "9999-12-31";
     T.forEach(function (t) {
       if (t.date > end || !t.key) return;
       var p = P[t.key] || (P[t.key] = { key: t.key, name: t.name, assetClass: t.assetClass || "", shares: 0, cost: 0, realized: 0, soldCost: 0, divs: 0, fees: 0, taxes: 0, firstDate: t.date, lastDate: t.date, lastPrice: null, lastPriceDate: null, oversold: false, note: "" });
@@ -540,6 +557,16 @@ table.dt{border-collapse:collapse;width:100%;font-size:.9rem;min-width:620px}
         if (p.shares < 1e-8) { p.shares = 0; p.cost = 0; }
         var pr2 = t.price || (t.shares ? t.amount / t.shares : null); if (pr2) { p.lastPrice = pr2; p.lastPriceDate = t.date; }
       } else if (t.type === "div") { p.divs += t.amount; p.taxes += t.tax; }
+      else if (t.type === "ca") {
+        if (t.shares < 0) {   // Stücke gehen raus (Fusion oder storniert): Einstand anteilig mitnehmen
+          var s2 = Math.min(-t.shares, p.shares), c2 = p.shares > 0 ? p.cost * s2 / p.shares : 0;
+          p.shares -= s2; p.cost -= c2; if (p.shares < 1e-8) { p.shares = 0; p.cost = 0; }
+          if (t.ca === "MERGER") CA[t.date] = (CA[t.date] || 0) + c2;
+        } else {   // Stücke kommen dazu: Split, Abspaltung oder neue Aktie aus einer Fusion
+          p.shares += t.shares;
+          if (t.ca === "MERGER" && CA[t.date]) { p.cost += CA[t.date]; CA[t.date] = 0; }
+        }
+      }
     });
     Object.keys(P).forEach(function (k) { var p = P[k]; p.avgCost = p.shares > 0 ? p.cost / p.shares : 0; p.closed = p.shares <= 1e-8; });
     return P;
@@ -580,9 +607,10 @@ table.dt{border-collapse:collapse;width:100%;font-size:.9rem;min-width:620px}
   }
 
   /* ---------- Rendite: XIRR ---------- */
-  function cashflows(tx) {
+  function cashflows(tx, priceFn) {
     var cf = [];
     tx.forEach(function (t) {
+      if (t.xfer && priceFn) { var px = priceFn(t.key, t.date); if (px) cf.push({ date: t.date, amt: -t.shares * px.p }); return; }   // Übertrag zum damaligen Kurs
       if (t.type === "buy") { if (t.amount !== 0) cf.push({ date: t.date, amt: -(Math.abs(t.amount) + t.fee) }); }
       else if (t.type === "sell") cf.push({ date: t.date, amt: t.amount - t.fee - t.tax });
       else if (t.type === "div") cf.push({ date: t.date, amt: t.amount });
@@ -625,6 +653,8 @@ table.dt{border-collapse:collapse;width:100%;font-size:.9rem;min-width:620px}
         if (t.type === "buy") { sh[t.key] = (sh[t.key] || 0) + t.shares; flow = Math.abs(t.amount) + t.fee; }
         else if (t.type === "sell") { sh[t.key] = Math.max(0, (sh[t.key] || 0) - t.shares); flow = -(t.amount - t.fee - t.tax); }
         else if (t.type === "div") D += t.amount;
+        else if (t.type === "ca") sh[t.key] = Math.max(0, (sh[t.key] || 0) + t.shares);
+        if (t.xfer) { var px = priceFn(t.key, t.date); flow = px ? t.shares * px.p : 0; }   // Übertrag: Zufluss zum Kurs am Tag der Einlieferung
         F += flow; wF += flow * (dayN(d) - dayN(t.date)) / span; invested += flow;
       }
       var V = 0;
@@ -1195,7 +1225,7 @@ table.dt{border-collapse:collapse;width:100%;font-size:.9rem;min-width:620px}
   }
   function renderAnalyse() {
     var t = totals(), r = rows().filter(function (x) { return !x.closed; }), d = C.divStats(S.tx, today);
-    var cf = C.cashflows(S.tx), irr = C.xirr(cf, t.value, today);
+    var cf = C.cashflows(S.tx, priceFn), irr = C.xirr(cf, t.value, today);
     VAL = C.valuation(S.tx, today, priceFn);
     var have = Object.keys(S.hist).length > 0;
     var tv = r.reduce(function (s, x) { return s + x.value; }, 0);
