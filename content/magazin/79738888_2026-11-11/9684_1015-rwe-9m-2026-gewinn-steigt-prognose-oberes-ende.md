@@ -15,9 +15,9 @@ logo_name: "RWE"
 logo_symbol: RWE.DE
 logo_file: assets/logos/rwe-de.png
 image: assets/magazin/rwe-9m-2026-gewinn-steigt-prognose-oberes-ende-foto.jpg
-image_alt: "Offshore-Windpark Amrumbank West in der Nordsee: Windräder am Horizont über der leicht bewegten See"
-image_credit: "Drahnier / Wikimedia Commons (CC0)"
-image_source: "https://commons.wikimedia.org/wiki/File:Offshore-Windpark_Amrumbank_West.JPG"
+image_alt: "Offshore-Windpark von RWE in der Nordsee: Windräder in der Dämmerung über der bewegten See"
+image_credit: "RWE (Pressebild)"
+image_source: "https://www.rwe.com/en/press/"
 ---
 <!-- PRÜFEN: Konzernzahlen, Segmentzahlen, Ausblick, Nettoschulden, Offshore-Projekte, Auktion und Batterien: Präsentation "9M 2026 Results" von RWE (11.11.2026, Folien 3 bis 18, von Divi als PDF geliefert). Eine Pressemitteilung mit Zitat des Vorstandschefs lag nicht vor, deshalb kein Zitat im Text. -->
 <!-- PRÜFEN: Aus dem finanzen.net-Text (dpa-AFX, 11.11.2026, von Divi geliefert) und nicht in den Folien: Handel habe die Erwartungen der vom Unternehmen befragten Analysten übertroffen, übrige Bereiche entsprachen den Schätzungen, Kursreaktion vorbörslich leicht im Plus (Xetra zeitweise +0,89 % auf 58,66 Euro). Der Kurs von 58,46 Euro (+0,55 %, 09:39 Uhr) stammt aus dem onvista-Screenshot von Divi. -->
@@ -25,7 +25,7 @@ image_source: "https://commons.wikimedia.org/wiki/File:Offshore-Windpark_Amrumba
 <!-- PRÜFEN: Selbst gerechnet: Veränderungen in Prozent (EBITDA +34,6 %, EBIT +48,6 %, Nettoergebnis +42,8 %, EPS +42,4 %, Segmente), Flexible Erzeugung ohne Einmalposten 1.011 gegen 851 Mio. Euro (+18,8 %), Rest-Ergebnis je Aktie von 0,78 Euro im vierten Quartal für das obere Ende von 3,30 Euro, Abstand des Kurses zum 52-Wochen-Hoch (minus 5,7 %) und -Tief (plus 37 %, Werte 62,00 und 42,62 Euro aus onvista), Dividendenrendite 2,3 % und Ausschüttungsquote 40 bis 51 % (1,32 Euro durch 58,46 Euro bzw. durch 3,30 und 2,60 Euro; die Folie nennt nur den Dividendenwert 1,32 Euro, nicht ob er bestätigt oder verändert ist). -->
 <!-- PRÜFEN: Nettoschulden: Die Folie zeigt 17,0 Mrd. Euro zum 30.09., die Jahresprognose liegt bei rund 12 Mrd. Euro ("upgraded guidance"). Die Folien nennen keinen Grund für den erwarteten Rückgang um rund 5 Mrd. Euro im vierten Quartal, deshalb im Text nur als offene Frage. Vorjahreswert der Prognose nicht bekannt. -->
 <!-- PRÜFEN: Auslaufende Technologien: Cashflow minus 669 Mio. Euro nach neun Monaten, Prognose für das Gesamtjahr minus 600 bis minus 300 Mio. Euro. Der Neun-Monats-Wert liegt bereits darunter, die Folie erklärt das nicht. -->
-<!-- PRÜFEN: Das CEO-Foto (Freisteller) kam von Divi ohne Namen; angenommen ist Markus Krebber, Vorstandsvorsitzender. Name im Archiv vor dem Zitat-Einsatz bestätigen. Aufmacher: Amrumbank West (CC0), kein RWE-Pressebild; der Park gehört nach Kenntnis der Redaktion zu RWE, bitte Eigentümerangabe gegenprüfen. -->
+<!-- PRÜFEN: Das CEO-Foto (Freisteller) kam von Divi ohne Namen; angenommen ist Markus Krebber, Vorstandsvorsitzender. Name im Archiv vor dem Zitat-Einsatz bestätigen. Aufmacher: von Divi geliefertes RWE-Foto (Offshore-Windpark, 958 x 360 Pixel), Pressebild-Ausnahme, Nutzungsrechte und genauer Park nicht geprüft; image_source nur die allgemeine Pressseite. -->
 
 !!! kurz "Kurz gesagt (neun Monate 2026)"
     **Ebitda (bereinigt):** 4,58 Mrd. € (+34,6 %)
