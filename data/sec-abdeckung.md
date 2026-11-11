@@ -20,6 +20,17 @@ Nach IFRS (Auslandsfirmen, Beträge in Berichtswährung): 29. Dividende je Aktie
 | schulden_lang | 501 (92%) | 478 (88%) |
 | liquide_mittel | 543 (100%) | 542 (100%) |
 | eigenkapital | 543 (100%) | 543 (100%) |
+| bruttogewinn | 243 (45%) | 204 (38%) |
+| operatives_ergebnis | 450 (83%) | 416 (76%) |
+| abschreibungen | 524 (96%) | 518 (95%) |
+| zinsaufwand | 496 (91%) | 402 (74%) |
+| bilanzsumme | 543 (100%) | 543 (100%) |
+| umlaufvermoegen | 451 (83%) | 448 (82%) |
+| kurzfr_verbindl | 451 (83%) | 448 (82%) |
+| verbindlichkeiten | 404 (74%) | 393 (72%) |
+| vorraete | 342 (63%) | 318 (58%) |
+| gewinnruecklagen | 522 (96%) | 516 (95%) |
+| schulden_kurz | 435 (80%) | 356 (65%) |
 
 ## Lücken bei Kernkennzahlen (37)
 
