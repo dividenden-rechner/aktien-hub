@@ -35,7 +35,7 @@ FIRMEN = [
     ("VIE.PA", "Veolia", "veolia environnement", "FR", "Utilities"), ("CAP.PA", "Capgemini", "capgemini", "FR", "Technology"),
     ("ML.PA", "Michelin", "michelin", "FR", "Consumer Cyclical"), ("URW.PA", "Unibail-Rodamco-Westfield", "unibail", "FR", "Real Estate"),
     # Italien
-    ("ENEL.MI", "Enel", "enel s", "IT", "Utilities"), ("ISP.MI", "Intesa Sanpaolo", "intesa sanpaolo", "IT", "Financial Services"),
+    ("ENEL.MI", "Enel", "enel", "IT", "Utilities"), ("ISP.MI", "Intesa Sanpaolo", "intesa sanpaolo", "IT", "Financial Services"),
     ("G.MI", "Generali", "assicurazioni generali", "IT", "Financial Services"), ("UCG.MI", "UniCredit", "unicredit", "IT", "Financial Services"),
     ("SRG.MI", "Snam", "snam", "IT", "Utilities"), ("TRN.MI", "Terna", "terna", "IT", "Utilities"),
     ("RACE.MI", "Ferrari", "ferrari n", "NL", "Consumer Cyclical"), ("PST.MI", "Poste Italiane", "poste italiane", "IT", "Financial Services"),
@@ -45,7 +45,7 @@ FIRMEN = [
     ("ELE.MC", "Endesa", "endesa", "ES", "Utilities"), ("CABK.MC", "CaixaBank", "caixabank", "ES", "Financial Services"),
     ("NTGY.MC", "Naturgy", "naturgy", "ES", "Utilities"), ("ENG.MC", "Enagás", "enag_s", "ES", "Utilities"),
     ("AENA.MC", "Aena", "aena", "ES", "Industrials"), ("RED.MC", "Redeia", "redeia", "ES", "Utilities"),
-    ("MAP.MC", "Mapfre", "mapfre", "ES", "Financial Services"), ("EDP.LS", "EDP", "edp - energias de portugal", "PT", "Utilities"),
+    ("MAP.MC", "Mapfre", "mapfre", "ES", "Financial Services"), ("EDP.LS", "EDP", "edp", "PT", "Utilities"),
     ("GALP.LS", "Galp", "galp energia", "PT", "Energy"), ("JMT.LS", "Jerónimo Martins", "jer_nimo martins", "PT", "Consumer Defensive"),
     # Benelux
     ("AD.AS", "Ahold Delhaize", "ahold delhaize", "NL", "Consumer Defensive"), ("WKL.AS", "Wolters Kluwer", "wolters kluwer", "NL", "Industrials"),
@@ -61,7 +61,7 @@ FIRMEN = [
     ("SAMPO.HE", "Sampo", "sampo", "FI", "Financial Services"), ("FORTUM.HE", "Fortum", "fortum", "FI", "Utilities"),
     ("UPM.HE", "UPM-Kymmene", "upm-kymmene", "FI", "Basic Materials"), ("NESTE.HE", "Neste", "neste", "FI", "Energy"),
     ("ELISA.HE", "Elisa", "elisa", "FI", "Communication Services"), ("VOLV-B.ST", "Volvo", "volvo", "SE", "Industrials"),
-    ("ATCO-A.ST", "Atlas Copco", "atlas copco", "SE", "Industrials"), ("INVE-B.ST", "Investor AB", "investor ab", "SE", "Financial Services"),
+    ("ATCO-A.ST", "Atlas Copco", "atlas copco", "SE", "Industrials"), ("INVE-B.ST", "Investor AB", "investor a", "SE", "Financial Services"),
     ("SEB-A.ST", "SEB", "skandinaviska enskilda", "SE", "Financial Services"), ("SHB-A.ST", "Handelsbanken", "svenska handelsbanken", "SE", "Financial Services"),
     ("SWED-A.ST", "Swedbank", "swedbank", "SE", "Financial Services"), ("HM-B.ST", "H&M", "hennes & mauritz", "SE", "Consumer Cyclical"),
     ("SAND.ST", "Sandvik", "sandvik", "SE", "Industrials"), ("ASSA-B.ST", "Assa Abloy", "assa abloy", "SE", "Industrials"),
@@ -132,8 +132,11 @@ def norm(s):
 
 def lei_suchen(name, such, land):
     """Rechtsträger per Namenssuche finden: unter allen Treffern der mit dem aehnlichsten Namen und passendem Land."""
-    flt = json.dumps([{"name": "entity.name", "op": "ilike", "val": f"%{such}%"}])
-    j = get(f"{BASIS}/api/filings?include=entity&sort=-period_end&page[size]=60&filter=" + urllib.parse.quote(flt))
+    flt = json.dumps([{"name": "entity.name", "op": "ilike", "val": f"%{such}%"}, {"name": "country", "op": "eq", "val": land}])
+    try:
+        j = get(f"{BASIS}/api/filings?include=entity&sort=-period_end&page[size]=60&filter=" + urllib.parse.quote(flt))
+    except urllib.error.HTTPError:   # Filter auf das Land nicht moeglich: nur nach Namen
+        j = get(f"{BASIS}/api/filings?include=entity&sort=-period_end&page[size]=60&filter=" + urllib.parse.quote(json.dumps([json.loads(flt)[0]])))
     ent = {e.get("id"): e.get("attributes", {}) for e in j.get("included", []) if e.get("type") == "entity"}
     namen, laender = {}, {}
     for d in j.get("data", []):
@@ -304,6 +307,40 @@ def isin_holen(lei, kurse, land):
     return None
 
 
+XETRA_LISTE = "https://www.cashmarket.deutsche-boerse.com/resource/blob/1528/ef73eef09b2e8353e17090956eee878b/data/t7-xetr-allTradableInstruments.csv"
+_INST = None
+
+
+def isin_per_name(name, rname, land, kurse):
+    """Ersatzweg: Heimat-ISIN ueber den Namen in der Xetra-Instrumentenliste (nur Aktien, nur gehandelte, Länderkennung passt)."""
+    global _INST
+    import csv, io
+    from isin_zuordnung import norm as xnorm
+    if _INST is None:
+        _INST = []
+        try:
+            raw = urllib.request.urlopen(urllib.request.Request(XETRA_LISTE, headers={"User-Agent": "Mozilla/5.0 (dividenden-rechner.de)"}), timeout=120).read().decode("utf-8-sig", "replace")
+            zeilen = raw.splitlines()
+            kopf = next(i for i, z in enumerate(zeilen) if "ISIN" in z and ";" in z)
+            for r in csv.DictReader(io.StringIO("\n".join(zeilen[kopf:])), delimiter=";"):
+                isin = (r.get("ISIN") or "").strip()
+                grp = (r.get("Product Assignment Group Description") or "").upper()
+                if re.fullmatch(r"[A-Z]{2}[A-Z0-9]{9}\d", isin) and not any(x in grp for x in ("ETF", "ETP", "ETC", "ETN", "FUND", "BOND")):
+                    nm = r.get("Instrument") or r.get("Instrument Name") or list(r.values())[2]
+                    _INST.append((isin, xnorm(nm)))
+        except Exception as e:
+            print("Xetra-Liste nicht ladbar:", e)
+    ziel = [xnorm(name), xnorm(rname or "")]
+    best, bw = None, 0
+    for isin, n in _INST:
+        if isin[:2] != land or isin not in kurse or kurse[isin][2] != "EUR" or not n:
+            continue
+        w = max(difflib.SequenceMatcher(None, n, z).ratio() for z in ziel if z)
+        if w > bw:
+            best, bw = isin, w
+    return best if bw >= 0.8 else None
+
+
 def main():
     start = time.time()
     os.makedirs("data/esef", exist_ok=True)
@@ -328,7 +365,7 @@ def main():
         if sp["geprueft"].get(t) == heute:
             continue
         try:
-            if t not in sp["lei"]:
+            if not sp["lei"].get(t):   # noch nie gesucht oder beim letzten Mal nicht gefunden
                 r = lei_suchen(name, such, land)
                 sp["lei"][t] = list(r) if r else None
                 time.sleep(3)
@@ -345,7 +382,7 @@ def main():
                 print(t, b["period_end"], len(roh), flush=True)
                 time.sleep(4)
             if t not in sp["isin"] or sp["isin"][t] is None:
-                sp["isin"][t] = isin_holen(lei, kurse, land)
+                sp["isin"][t] = isin_holen(lei, kurse, land) or isin_per_name(name, sp["lei"][t][1], land, kurse)
                 time.sleep(1)
             sp["geprueft"][t] = heute
         except Exception as e:
