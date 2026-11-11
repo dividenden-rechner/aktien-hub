@@ -2,7 +2,7 @@
 """PROBE (11.11.2026): Wie gut decken die ESEF-Jahresberichte bei filings.xbrl.org die wichtigsten europaeischen Dividendenwerte ab?
 Sucht je Firma die neueste Einreichung, laedt deren xBRL-JSON und prueft, ob Umsatz, Gewinn, Gewinn je Aktie, Dividenden,
 operativer Cashflow, Investitionen und Eigenkapital vorhanden sind. Schreibt data/esef-probe.md. Aendert sonst nichts."""
-import json, re, time, urllib.parse, urllib.request
+import json, re, time, urllib.error, urllib.parse, urllib.request
 
 UA = {"User-Agent": "dividenden-rechner.de Datenpruefung (https://www.dividenden-rechner.de/impressum/)"}
 FIRMEN = [  # (Anzeigename, Suchbegriff im Firmennamen)
@@ -31,14 +31,21 @@ KENN = {"Umsatz": ["Revenue", "RevenueFromContractsWithCustomers"], "Gewinn": ["
 
 
 def get(url):
-    with urllib.request.urlopen(urllib.request.Request(url, headers=UA), timeout=120) as r:
-        return json.loads(r.read())
+    for v in range(4):
+        try:
+            with urllib.request.urlopen(urllib.request.Request(url, headers=UA), timeout=120) as r:
+                return json.loads(r.read())
+        except urllib.error.HTTPError as e:
+            if e.code == 429 and v < 3:
+                time.sleep(60 * (v + 1)); continue   # Drosselung abwarten
+            raise
 
 
 def main():
     zeilen, gesamt = [], {k: 0 for k in KENN}
     for name, such in FIRMEN:
-        flt = json.dumps([{"name": "entity.name", "op": "ilike", "val": f"%{such}%"}])
+        kurz = such.split()[0]
+        flt = json.dumps([{"or": [{"name": "entity.name", "op": "ilike", "val": f"%{such}%"}, {"name": "entity.name", "op": "ilike", "val": f"{kurz}%"}]}])
         try:
             j = get("https://filings.xbrl.org/api/filings?include=entity&sort=-period_end&page[size]=5&filter=" + urllib.parse.quote(flt))
         except Exception as e:
@@ -60,7 +67,7 @@ def main():
                 da = [f"JSON-Fehler {str(e)[:40]}"]
         fehlt = [k for k in KENN if k not in da]
         zeilen.append(f"| {name} | {jahr} | {'ja' if jurl else 'nein'} | {len([d for d in da if d in KENN])} von {len(KENN)} | {', '.join(fehlt) or '–'} |")
-        time.sleep(1)
+        time.sleep(8)
     md = ["# Probe: ESEF-Berichte (filings.xbrl.org) für europäische Dividendenwerte", "",
           f"{len(FIRMEN)} Firmen geprüft. Je Kennzahl vorhanden: " + ", ".join(f"{k} {v}" for k, v in gesamt.items()), "",
           "| Firma | Letztes Berichtsjahr | xBRL-JSON | Kennzahlen | fehlt |", "|---|---|---|---|---|"] + zeilen
