@@ -16,6 +16,8 @@ import kurzmeldungen as km
 
 TAGE = int(os.environ.get("PROGNOSE_TAGE", "120"))        # so weit zurueck nach Ergebnismeldungen suchen
 MAX_KI = int(os.environ.get("PROGNOSE_MAX_KI", "60"))     # KI-Aufrufe je Lauf (Gratis-Kontingent schonen)
+ZEITBUDGET = int(os.environ.get("ZEITBUDGET_MIN", "35")) * 60   # danach sauber aufhoeren und speichern (Job-Limit 60 Min.)
+START = time.time()
 OUT, STATE = "data/prognosen.json", "data/prognosen-state.json"
 VOR = re.compile(r"(outlook|guidance|expects?|expected|anticipates?|reaffirm|raises?|raising|lowers?|forecast|full[- ]year|fiscal (year )?20\d\d)", re.I)
 ZAHL = re.compile(r"(per share|EPS|revenue|net sales|sales growth|free cash flow|dividend)", re.I)
@@ -90,6 +92,8 @@ def main():
     print(len(kand), "neue Ergebnismeldungen")
     ki, abbruch, fehler = 0, "", []
     for c in kand:
+        if time.time() - START > ZEITBUDGET:
+            print("Zeitbudget erreicht, Rest beim naechsten Lauf"); break
         if ki >= MAX_KI:
             print("KI-Grenze je Lauf erreicht, Rest beim naechsten Lauf"); break
         r = None

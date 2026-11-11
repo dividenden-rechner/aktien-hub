@@ -17,6 +17,8 @@ import kurzmeldungen as km
 TAGE = int(os.environ.get("DIV_TAGE", "100"))
 MAX_KI = int(os.environ.get("DIV_MAX_KI", "40"))
 MAX_ABRUF = int(os.environ.get("DIV_MAX_MELDUNGEN", "400"))
+ZEITBUDGET = int(os.environ.get("ZEITBUDGET_MIN", "35")) * 60   # danach sauber aufhoeren und speichern (Job-Limit 60 Min.)
+START = time.time()
 OUT, STATE = "data/dividenden-termine.json", "data/dividenden-termine-state.json"
 MON = {m: i + 1 for i, m in enumerate(["jan", "feb", "mar", "apr", "may", "jun", "jul", "aug", "sep", "oct", "nov", "dec"])}
 DATUM = re.compile(r"\b(Jan(?:uary)?|Feb(?:ruary)?|Mar(?:ch)?|Apr(?:il)?|May|June?|July?|Aug(?:ust)?|Sep(?:t(?:ember)?)?|Oct(?:ober)?|Nov(?:ember)?|Dec(?:ember)?)\.?\s+(\d{1,2}),?\s+(20\d\d)")
@@ -98,6 +100,8 @@ def kandidaten(firmen, erledigt):
                 out.append({"sym": t, "name": f["n"], "cik": int(f["cik"]), "acc": acc, "when": dt.isoformat() if dt else "",
                             "primary": (rec.get("primaryDocument") or [""] * 999)[j], "fpi": False})
         time.sleep(0.3)
+        if time.time() - START > ZEITBUDGET / 2:
+            break
     out.sort(key=lambda c: c["when"], reverse=True)
     return out
 
@@ -115,6 +119,8 @@ def main():
     ki = abgerufen = treffer = 0
     fehler = []
     for c in kand:
+        if time.time() - START > ZEITBUDGET:
+            print("Zeitbudget erreicht, Rest beim naechsten Lauf"); break
         if abgerufen >= MAX_ABRUF:
             break
         r = None

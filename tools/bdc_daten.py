@@ -16,6 +16,8 @@ import kurzmeldungen as km
 
 TAGE = int(os.environ.get("BDC_TAGE", "800"))          # rund acht Quartale zurueck
 MAX_KI = int(os.environ.get("BDC_MAX_KI", "50"))
+ZEITBUDGET = int(os.environ.get("ZEITBUDGET_MIN", "35")) * 60   # danach sauber aufhoeren und speichern (Job-Limit 60 Min.)
+START = time.time()
 OUT, STATE = "data/bdc.json", "data/bdc-state.json"
 
 SCHEMA = {"type": "OBJECT", "properties": {
@@ -77,6 +79,8 @@ def main():
     print(len(kand), "Meldungen offen")
     ki, fehler = 0, []
     for c in kand:
+        if time.time() - START > ZEITBUDGET:
+            print("Zeitbudget erreicht, Rest beim naechsten Lauf"); break
         if ki >= MAX_KI:
             break
         try:
