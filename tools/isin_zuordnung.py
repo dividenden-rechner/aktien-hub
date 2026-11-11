@@ -21,6 +21,9 @@ def norm(n):
     return " ".join(t for t in n.split() if t not in WEG and not t.isdigit())
 
 
+TYPEN = {}
+
+
 def main():
     raw = urllib.request.urlopen(urllib.request.Request(URL, headers=UA), timeout=120).read().decode("utf-8-sig", "replace")
     zeilen = raw.splitlines()
@@ -41,7 +44,9 @@ def main():
         if not re.fullmatch(r"[A-Z]{2}[A-Z0-9]{9}\d", isin):
             continue
         typ = (r.get(sp_typ) or "").strip() if sp_typ else ""
-        if typ and typ.upper() not in ("CS", "COMMON STOCK", "EQU", "AKTIE", "ST", "EQUITY", "DR", "ADR", "STOCK"):
+        TYPEN[typ] = TYPEN.get(typ, 0) + 1
+        grp = (r.get("Product Assignment Group Description") or "").upper()
+        if any(x in grp for x in ("ETF", "ETP", "ETC", "ETN", "FUND", "BOND", "ANLEIHE")):
             continue
         inst.append({"isin": isin, "name": r.get(sp_name, "").strip(), "n": norm(r.get(sp_name, "")),
                      "mn": (r.get(sp_mn) or "").strip() if sp_mn else "", "typ": typ})
@@ -80,7 +85,7 @@ def main():
     os.makedirs("data/kurse", exist_ok=True)
     json.dump(out, open("data/kurse/isin-zuordnung.json", "w"), ensure_ascii=False, indent=0)
     md = ["# ISIN-Zuordnung (Xetra-Instrumentenliste)", "",
-          f"Spalten der Liste: {', '.join(spalten)}", f"Instrumente nach Filter: {len(inst)}",
+          f"Spalten der Liste: {len(spalten)}", f"Instrumente nach Filter: {len(inst)}",
           f"Zugeordnet: **{len(out)}** von {len(firmen)}. Unsicher (zum Prüfen): {len(unsicher)}. Ohne Treffer: {len(fehlt)}.",
           "", "Korrekturen als {\"TICKER\": \"ISIN\"} in data/kurse/isin-fest.json eintragen.", "",
           "## Unsicher", ""] + [f"- {x}" for x in unsicher] + ["", "## Ohne Treffer", ""] + [f"- {x}" for x in fehlt]
