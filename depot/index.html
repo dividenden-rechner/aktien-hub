@@ -20,7 +20,7 @@
 <meta name="twitter:image" content="https://dividenden-rechner.github.io/aktien-hub/assets/og-default.png">
 <meta name="theme-color" content="#ffffff">
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "WebApplication", "name": "Depot-Tracker", "description": "Depot einladen (Trade Republic, Scalable Capital, Portfolio Performance), Aufteilung, Gewinne, Dividenden pro Monat, Forecast, XIRR und TWR. Alle Daten bleiben in deinem Browser.", "inLanguage": "de", "url": "https://dividenden-rechner.github.io/aktien-hub/depot/", "applicationCategory": "FinanceApplication", "operatingSystem": "Alle", "dateModified": "2026-10-24"}</script>
-<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Wie lade ich mein Depot von Trade Republic oder Scalable Capital hoch?", "acceptedAnswer": {"@type": "Answer", "text": "Exportiere deine Transaktionen als CSV-Datei aus der App bzw. dem Broker und ziehe die Datei im Reiter Import auf die Fläche. Der Tracker erkennt das Format von Trade Republic, Scalable Capital und Portfolio Performance automatisch. Andere Broker lassen sich über die Spaltenzuordnung einlesen."}}, {"@type": "Question", "name": "Werden meine Depotdaten gespeichert oder übertragen?", "acceptedAnswer": {"@type": "Answer", "text": "Nein, nicht an uns. Dein Depot liegt ausschließlich im Speicher deines Browsers. Für Kurse und Kennzahlen gehen nur ISIN bzw. Börsenkürzel an Financial Modeling Prep, keine Stückzahlen oder Beträge. Ein Backup kannst du als Datei speichern."}}, {"@type": "Question", "name": "Was zeigt der Dividendenkalender?", "acceptedAnswer": {"@type": "Answer", "text": "Er zeigt, wann in den nächsten zwölf Monaten Dividenden zu erwarten sind. Angekündigte Termine stammen von FMP, übrige Zahlungen werden aus deinen Dividenden der letzten zwölf Monate geschätzt."}}, {"@type": "Question", "name": "Was ist der Unterschied zwischen XIRR und TWR?", "acceptedAnswer": {"@type": "Answer", "text": "Der XIRR ist die geldgewichtete Rendite pro Jahr und berücksichtigt, wann du wie viel eingezahlt hast. Der TWR ist die zeitgewichtete Rendite, die Ein- und Auszahlungen herausrechnet und so die Leistung der Anlagen selbst misst."}}, {"@type": "Question", "name": "Wie genau ist der Forecast?", "acceptedAnswer": {"@type": "Answer", "text": "Der Forecast ist eine Rechnung mit Annahmen, keine Prognose. Er nutzt die Dividendenhistorie und das Wachstum je Firma, zeigt ein vorsichtiges, ein neutrales und ein optimistisches Szenario und lässt sich mit Sparrate, Steuer und Reinvestition anpassen."}}]}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Wie lade ich mein Depot von Trade Republic oder Scalable Capital hoch?", "acceptedAnswer": {"@type": "Answer", "text": "Exportiere deine Transaktionen als CSV-Datei aus der App bzw. dem Broker und ziehe die Datei im Reiter Import auf die Fläche. Der Tracker erkennt das Format von Trade Republic, Scalable Capital und Portfolio Performance automatisch. Andere Broker lassen sich über die Spaltenzuordnung einlesen."}}, {"@type": "Question", "name": "Werden meine Depotdaten gespeichert oder übertragen?", "acceptedAnswer": {"@type": "Answer", "text": "Nein, nicht an uns. Dein Depot liegt ausschließlich im Speicher deines Browsers. Für Kurse und Kennzahlen gehen nur ISIN bzw. Börsenkürzel an Financial Modeling Prep, keine Stückzahlen oder Beträge. Ein Backup kannst du als Datei speichern."}}, {"@type": "Question", "name": "Was zeigt der Dividendenkalender?", "acceptedAnswer": {"@type": "Answer", "text": "Er zeigt, wann in den nächsten zwölf Monaten Dividenden zu erwarten sind. Die Zahlungen werden aus deinen Dividenden der letzten zwölf Monate geschätzt; angekündigte Termine der Unternehmen kommen nach und nach dazu."}}, {"@type": "Question", "name": "Was ist der Unterschied zwischen XIRR und TWR?", "acceptedAnswer": {"@type": "Answer", "text": "Der XIRR ist die geldgewichtete Rendite pro Jahr und berücksichtigt, wann du wie viel eingezahlt hast. Der TWR ist die zeitgewichtete Rendite, die Ein- und Auszahlungen herausrechnet und so die Leistung der Anlagen selbst misst."}}, {"@type": "Question", "name": "Wie genau ist der Forecast?", "acceptedAnswer": {"@type": "Answer", "text": "Der Forecast ist eine Rechnung mit Annahmen, keine Prognose. Er nutzt die Dividendenhistorie und das Wachstum je Firma, zeigt ein vorsichtiges, ein neutrales und ein optimistisches Szenario und lässt sich mit Sparrate, Steuer und Reinvestition anpassen."}}]}</script>
 <link rel="icon" href="../favicon.ico" sizes="any">
 <link rel="icon" type="image/png" sizes="32x32" href="../assets/favicon-32.png">
 <link rel="icon" type="image/png" sizes="192x192" href="../assets/favicon-192.png">
@@ -222,7 +222,7 @@ table.dt{border-collapse:collapse;width:100%;font-size:.9rem;min-width:620px}
 <div id="imp-msg" class="dmsg" role="status"></div>
 <div id="imports-list"></div>
 <h3>Kurse und Dividenden aktualisieren</h3>
-<p class="dnote">Lädt über FMP aktuelle Kurse, Sektor, Land und die Dividendenhistorie. Nur ISIN bzw. Kürzel werden übertragen, nie Stückzahlen oder Beträge. Die Abrufe laufen über einen Server dieser Seite, du musst keinen Schlüssel eingeben (das Datenpaket deckt überwiegend US-Aktien ab).</p>
+<p class="dnote">Lädt die Schlusskurse des letzten Handelstags (Xetra, Tradegate, Börse Frankfurt) für alle Positionen mit ISIN sowie Dividende je Aktie, Dividendenwachstum und Sektor aus den Jahresberichten bei der US-Börsenaufsicht SEC. Es wird nichts übertragen, die Daten werden nur heruntergeladen. Deine Depotdaten bleiben in deinem Browser.</p>
 <div class="btnrow"><button type="button" id="btn-refresh" disabled>Kurse aktualisieren</button><button type="button" id="btn-stop" class="ghost" hidden>Stoppen</button></div>
 <div id="d-status" class="dmsg" role="status"></div>
 <h3>Deine Daten</h3>
@@ -270,7 +270,7 @@ table.dt{border-collapse:collapse;width:100%;font-size:.9rem;min-width:620px}
 <section id="p-forecast" hidden><div class="dempty">Noch kein Depot geladen. Wechsle zu <a href="#import">Import</a> und lade dein Depot oder das Beispieldepot.</div><div class="dbody">
 <div class="form-container">
 <div class="form-group"><label for="fc-years">Jahre</label><input id="fc-years" inputmode="numeric" value="10"></div>
-<div class="form-group"><label for="fc-base">Dividendenbasis</label><select id="fc-base"><option value="auto">automatisch (FMP, sonst eigene)</option><option value="own">eigene Zahlungen (12 Monate)</option><option value="fmp">FMP (Dividende je Aktie)</option></select></div>
+<div class="form-group"><label for="fc-base">Dividendenbasis</label><select id="fc-base"><option value="auto">automatisch (Jahresbericht, sonst eigene)</option><option value="own">eigene Zahlungen (12 Monate)</option><option value="fmp">Dividende je Aktie laut Jahresbericht</option></select></div>
 <div class="form-group"><label for="fc-gmode">Dividendenwachstum</label><select id="fc-gmode"><option value="pos">je Firma (Historie, begrenzt)</option><option value="fix">fester Wert für alle</option></select></div>
 <div class="form-group"><label for="fc-gfix">Fester Wert (% p. a.)</label><input id="fc-gfix" inputmode="decimal" value="4"></div>
 <div class="form-group"><label for="fc-gdef">Wenn Historie fehlt (% p. a.)</label><input id="fc-gdef" inputmode="decimal" value="3"></div>
@@ -306,7 +306,7 @@ table.dt{border-collapse:collapse;width:100%;font-size:.9rem;min-width:620px}
 <p>Der Depot-Tracker zeigt dir, wie dein Depot aufgebaut ist, wie viel Gewinn jede Position gemacht hat und welche Dividenden du bekommst. Du lädst dein Depot als CSV-Export von Trade Republic, Scalable Capital, Portfolio Performance oder einem anderen Broker. Danach findest du fünf Bereiche: <strong>Insight</strong> mit Kreisdiagramm und Positionstabelle, <strong>Dividenden</strong> pro Jahr und Monat, den <strong>Dividendenkalender</strong> für die nächsten zwölf Monate, den <strong>Forecast</strong> für kommende Jahre und die <strong>Analyse</strong> mit XIRR, TWR, Dividendenwachstum und Firmenkennzahlen.</p>
 <p>Wie die Kennzahlen entstehen, erklären diese Seiten: <a href="../grundlagen/dividendenrendite/">Dividendenrendite</a>, <a href="../grundlagen/ausschuettungsquote/">Ausschüttungsquote</a>, <a href="../grundlagen/ex-dividenden-tag/">Ex-Dividenden-Tag</a>, <a href="../grundlagen/dividendenbesteuerung/">Besteuerung von Dividenden</a>, <a href="../fortgeschrittene/dividendenwachstum/">Dividendenwachstum</a> und <a href="../fortgeschrittene/bewertung-kgv-dcf/">Bewertung mit KGV und DCF</a>. Einzelne Aktien prüfst du im <a href="../aktien-hub/">Aktien-Hub</a>, neue Ideen findest du mit dem <a href="../screener/">Screener</a>, Zukunftsrechnungen gelingen mit dem <a href="../rechner/dividenden-zinseszins-rechner/">Zinseszins-Rechner</a>.</p>
 <h2>Häufige Fragen</h2>
-<h3>Wie lade ich mein Depot von Trade Republic oder Scalable Capital hoch?</h3><p>Exportiere deine Transaktionen als CSV-Datei aus der App bzw. dem Broker und ziehe die Datei im Reiter Import auf die Fläche. Der Tracker erkennt das Format von Trade Republic, Scalable Capital und Portfolio Performance automatisch. Andere Broker lassen sich über die Spaltenzuordnung einlesen.</p><h3>Werden meine Depotdaten gespeichert oder übertragen?</h3><p>Nein, nicht an uns. Dein Depot liegt ausschließlich im Speicher deines Browsers. Für Kurse und Kennzahlen gehen nur ISIN bzw. Börsenkürzel an Financial Modeling Prep, keine Stückzahlen oder Beträge. Ein Backup kannst du als Datei speichern.</p><h3>Was zeigt der Dividendenkalender?</h3><p>Er zeigt, wann in den nächsten zwölf Monaten Dividenden zu erwarten sind. Angekündigte Termine stammen von FMP, übrige Zahlungen werden aus deinen Dividenden der letzten zwölf Monate geschätzt.</p><h3>Was ist der Unterschied zwischen XIRR und TWR?</h3><p>Der XIRR ist die geldgewichtete Rendite pro Jahr und berücksichtigt, wann du wie viel eingezahlt hast. Der TWR ist die zeitgewichtete Rendite, die Ein- und Auszahlungen herausrechnet und so die Leistung der Anlagen selbst misst.</p><h3>Wie genau ist der Forecast?</h3><p>Der Forecast ist eine Rechnung mit Annahmen, keine Prognose. Er nutzt die Dividendenhistorie und das Wachstum je Firma, zeigt ein vorsichtiges, ein neutrales und ein optimistisches Szenario und lässt sich mit Sparrate, Steuer und Reinvestition anpassen.</p>
+<h3>Wie lade ich mein Depot von Trade Republic oder Scalable Capital hoch?</h3><p>Exportiere deine Transaktionen als CSV-Datei aus der App bzw. dem Broker und ziehe die Datei im Reiter Import auf die Fläche. Der Tracker erkennt das Format von Trade Republic, Scalable Capital und Portfolio Performance automatisch. Andere Broker lassen sich über die Spaltenzuordnung einlesen.</p><h3>Werden meine Depotdaten gespeichert oder übertragen?</h3><p>Nein, nicht an uns. Dein Depot liegt ausschließlich im Speicher deines Browsers. Für Kurse und Kennzahlen gehen nur ISIN bzw. Börsenkürzel an Financial Modeling Prep, keine Stückzahlen oder Beträge. Ein Backup kannst du als Datei speichern.</p><h3>Was zeigt der Dividendenkalender?</h3><p>Er zeigt, wann in den nächsten zwölf Monaten Dividenden zu erwarten sind. Die Zahlungen werden aus deinen Dividenden der letzten zwölf Monate geschätzt; angekündigte Termine der Unternehmen kommen nach und nach dazu.</p><h3>Was ist der Unterschied zwischen XIRR und TWR?</h3><p>Der XIRR ist die geldgewichtete Rendite pro Jahr und berücksichtigt, wann du wie viel eingezahlt hast. Der TWR ist die zeitgewichtete Rendite, die Ein- und Auszahlungen herausrechnet und so die Leistung der Anlagen selbst misst.</p><h3>Wie genau ist der Forecast?</h3><p>Der Forecast ist eine Rechnung mit Annahmen, keine Prognose. Er nutzt die Dividendenhistorie und das Wachstum je Firma, zeigt ein vorsichtiges, ein neutrales und ein optimistisches Szenario und lässt sich mit Sparrate, Steuer und Reinvestition anpassen.</p>
 </div>
 <p class="note"><strong>Hinweis:</strong> Alle Inhalte dienen der allgemeinen Information und sind keine Anlage-, Steuer- oder Rechtsberatung. Berechnungen beruhen auf deinen Importdaten und Annahmen; sie sind keine Prognose.</p>
 </article></main>
@@ -741,7 +741,7 @@ table.dt{border-collapse:collapse;width:100%;font-size:.9rem;min-width:620px}
   function pricePer(p) {
     var m = S.meta[p.key] || {};
     if (m.priceManual > 0) return { p: m.priceManual, src: "manuell" };
-    if (m.price > 0) return { p: m.price, src: "FMP" };
+    if (m.price > 0) return { p: m.price, src: "Börse" };
     if (p.lastPrice > 0) return { p: p.lastPrice, src: "letzter Handel" };
     return { p: p.avgCost || 0, src: "Einstand" };
   }
@@ -921,7 +921,39 @@ table.dt{border-collapse:collapse;width:100%;font-size:.9rem;min-width:620px}
     save(); invalidate(); setMsg("imp-msg", "Beispieldepot geladen. Alle Zahlen sind erfunden und dienen nur zum Ausprobieren.", "ok"); renderImport(); $("d-banner").hidden = false;
   }
 
-  /* ---------- Aktualisieren über FMP ---------- */
+  /* ---------- Aktualisieren mit eigenen Daten (ab 11.11.2026) ----------
+     Kurs: Schlusskurs des letzten Handelstags je ISIN (Xetra, Tradegate, Börse Frankfurt; Deutsche Börse, verzögert).
+     Dividende je Aktie, Wachstum, Serie und Sektor: data/kennzahlen.json (SEC-Jahresberichte, EZB-Kurse). Ohne Abrufe bei FMP. */
+  async function refreshEigen(still) {
+    if (RUN.busy || S.demo) return;
+    var keys = activeKeys(); if (!keys.length) return;
+    RUN.busy = true; $("btn-refresh").disabled = true;
+    var st = function (t) { ["d-status", "in-status", "ka-status"].forEach(function (id) { setMsg(id, t); }); };
+    try {
+      var v = Math.floor(Date.now() / 36e5);
+      var res = await Promise.all([fetch("../data/kurse/xetra-letzter.json?v=" + v).then(function (r) { return r.ok ? r.json() : null; }),
+        fetch("../data/kennzahlen.json?v=" + v).then(function (r) { return r.ok ? r.json() : null; })]);
+      var KU = res[0] && res[0].k || {}, KZ = res[1] && res[1].werte || {}, byIsin = {}, ohne = [], mitKurs = 0;
+      Object.keys(KZ).forEach(function (t) { if (KZ[t].isin) byIsin[KZ[t].isin] = t; });
+      keys.forEach(function (k) {
+        var m = meta(k), isin = C.isIsin(k) ? k : (KZ[k] ? KZ[k].isin : null), t = isin ? byIsin[isin] : (KZ[k] ? k : null), K = t ? KZ[t] : null;
+        if (t && !m.sym) m.sym = t;
+        var q = isin ? KU[isin] : null;
+        if (q && q[2] === "EUR" && q[0] > 0) { m.price = q[0]; m.priceTs = Date.parse(res[0].datum); m.priceBoerse = q[3] || ""; mitKurs++; } else ohne.push(m.name || k);
+        if (K) {
+          if (!m.sector && K.sektor) m.sector = K.sektor;
+          if (K.dividende != null && K.fx) { m.dps = K.dividende / K.fx; m.dpsTs = Date.now(); m.dpsQuelle = "SEC " + K.gj; }
+          if (K.div_wachstum_5j != null) m.g = K.div_wachstum_5j / 100;
+          if (K.dividendenserie != null) m.streak = K.dividendenserie >= 99 ? 9 : K.dividendenserie;
+        }
+      });
+      S.demo = false; save(); invalidate();
+      if (!still || ohne.length) st("Kurse vom " + new Date(res[0].datum).toLocaleDateString("de-DE") + ": " + mitKurs + " von " + keys.length + " Positionen" + (ohne.length ? ". Ohne Börsenkurs: " + ohne.slice(0, 6).join(", ") + (ohne.length > 6 ? " und " + (ohne.length - 6) + " weitere" : "") : "") + ".");
+    } catch (e) { st("Die Kursdaten sind gerade nicht abrufbar."); }
+    finally { RUN.busy = false; renderImport(); if (cur !== "import") render(); }
+  }
+
+  /* ---------- Aktualisieren über FMP (nur mit #key) ---------- */
   function activeKeys() { return rows().filter(function (r) { return !r.closed && r.type !== "krypto"; }).map(function (r) { return r.key; }); }
   async function pool(items, fn, n) { var i = 0; var w = async function () { while (i < items.length && !RUN.abort) { var it = items[i++]; await fn(it); } }; var ws = []; for (var k = 0; k < n; k++) ws.push(w()); await Promise.all(ws); }
   async function refresh() {
@@ -974,7 +1006,7 @@ table.dt{border-collapse:collapse;width:100%;font-size:.9rem;min-width:620px}
   function renderInsight() {
     var r = rows(), t = totals(), act = r.filter(function (x) { return !x.closed; });
     var warn = $("in-warn"); if (!warn) { warn = document.createElement("p"); warn.id = "in-warn"; warn.className = "dmsg err"; $("in-kpis").parentNode.insertBefore(warn, $("in-kpis")); }
-    var noLive = act.filter(function (x) { return x.src !== "FMP" && x.src !== "manuell"; }), pv = noLive.reduce(function (a, x) { return a + x.value; }, 0);
+    var noLive = act.filter(function (x) { return x.src !== "Börse" && x.src !== "manuell"; }), pv = noLive.reduce(function (a, x) { return a + x.value; }, 0);
     warn.hidden = !noLive.length;
     if (noLive.length) warn.innerHTML = "<b>" + noLive.length + " von " + act.length + " Positionen ohne aktuellen Kurs.</b> Kursgewinn und Depotwert sind dadurch ungenau. <details><summary>Welche?</summary>" + noLive.map(function (x) { return esc(x.name); }).join(", ") + "</details>";
     $("in-kpis").innerHTML = kpi("Depotwert", eur(t.value)) + kpi("Investiert (Einstand)", eur(t.cost), "blue") + kpi("Kursgewinn", eur(t.unreal) + "<small> " + (t.cost > 0 ? pct(t.unreal / t.cost) : "") + "</small>", sg(t.unreal) === "neg" ? "negk" : "") + kpi("Dividenden gesamt", eur(t.divs)) + kpi("Gesamtgewinn", eur(t.total) + "<small> " + (t.base > 0 ? pct(t.total / t.base) : "") + "</small>", sg(t.total) === "neg" ? "negk" : "");
@@ -995,8 +1027,8 @@ table.dt{border-collapse:collapse;width:100%;font-size:.9rem;min-width:620px}
       var gv = gain(x), opts = Object.keys(TYPES).map(function (k) { return '<option value="' + k + '"' + (k === x.type ? " selected" : "") + ">" + TYPES[k] + "</option>"; }).join("");
       return "<tr" + (x.closed ? ' class="closed"' : "") + '><td class="l">' + nameCell(x.key, x.name, esc(x.key) + (x.closed ? " · verkauft" : "") + (x.oversold ? " · Verkäufe übersteigen Käufe (Import unvollständig?)" : "") + (x.note ? " · " + esc(x.note) : "")) + '</td><td><select class="tsel" data-type="' + esc(x.key) + '">' + opts + "</select></td><td>" + nf(x.shares, x.shares < 10 ? 4 : 2) + "</td><td>" + eur(x.avg, 2) + '</td><td><button type="button" class="link" data-price="' + esc(x.key) + '" title="Kursquelle: ' + esc(x.src) + '. Klicken zum Ändern.">' + eur(x.price, 2) + (x.src === "FMP" || x.src === "manuell" ? "" : "*") + "</button></td><td>" + eur(x.value) + "</td><td>" + (x.closed ? "–" : pct0(tv > 0 ? x.value / tv : 0)) + '</td><td class="' + sg(gv) + '">' + (unit === "eur" ? (gv == null ? "–" : (gv > 0 ? "+" : "") + eur(gv)) : pct(gv)) + "</td><td>" + eur(x.divs) + "</td></tr>";
     }).join("") + "</tbody></table>";
-    var est = act.filter(function (x) { return x.src !== "FMP" && x.src !== "manuell"; }).length;
-    $("in-note").innerHTML = est ? "* " + est + " Kurs(e) stammen vom letzten Handel im Export, nicht live. " + (S.demo ? "" : '<button type="button" class="link" data-act="refresh">Jetzt Kurse, Kürzel und Dividendendaten von FMP laden</button> (im Gratis-Tarif überwiegend US-Aktien), oder klicke auf einen Kurs und trage ihn selbst ein.') : "Kurse: FMP bzw. von dir eingetragen. Gewinne ohne Gewähr, Steuern sind nur dort berücksichtigt, wo der Export sie enthält.";
+    var est = act.filter(function (x) { return x.src !== "Börse" && x.src !== "manuell"; }).length;
+    $("in-note").innerHTML = est ? "* " + est + " Kurs(e) stammen vom letzten Handel im Export, nicht live. " + (S.demo ? "" : '<button type="button" class="link" data-act="refresh">Kurse jetzt aktualisieren</button>, oder klicke auf einen Kurs und trage ihn selbst ein.') : "Kurse: Schlusskurs des letzten Handelstags (Deutsche Börse, verzögert) bzw. von dir eingetragen. Gewinne ohne Gewähr, Steuern sind nur dort berücksichtigt, wo der Export sie enthält.";
   }
 
   /* ---------- Dividenden ---------- */
@@ -1082,7 +1114,7 @@ table.dt{border-collapse:collapse;width:100%;font-size:.9rem;min-width:620px}
     var keys = []; var d0 = new Date(today + "T00:00:00"); for (var i = 0; i < 13; i++) { var d = new Date(d0.getFullYear(), d0.getMonth() + i, 1); keys.push(d.getFullYear() + "-" + String(d.getMonth() + 1).padStart(2, "0")); }
     var sc = stockColors(ev.map(function (e) { return { key: e.key, amount: e.amount }; })), names = {}; ev.forEach(function (e) { names[e.key] = e.name; });
     stackChart("ka-chart", keys.map(function (k) { return MN[+k.slice(5) - 1] + " " + k.slice(2, 4); }), function (rs, k, i) { var s2 = 0; (by[keys[i]] || []).forEach(function (e) { if (e.key === k) s2 += e.amount; }); return s2; }, ev, sc, names);
-    if (!ev.length) { $("ka-list").innerHTML = '<p class="dnote">Noch keine Zahlungen absehbar. Der Kalender nutzt deine Dividenden der letzten 12 Monate aus dem Import und, nach dem Laden der FMP-Daten, angekündigte Termine.</p>'; $("ka-note").textContent = ""; return; }
+    if (!ev.length) { $("ka-list").innerHTML = '<p class="dnote">Noch keine Zahlungen absehbar. Der Kalender nutzt deine Dividenden der letzten 12 Monate aus dem Import. Angekündigte Termine der Unternehmen kommen bald dazu.</p>'; $("ka-note").textContent = ""; return; }
     var hd = '<div class="cale calhd"><span>' + (mode === "ex" ? "Ex-Tag" : "Zahltag") + "</span><span>Firma</span><span>je Aktie</span><span>aktuell p. a.</span><span>Stück</span><span>Betrag</span><span></span></div>";
     $("ka-list").innerHTML = hd + Object.keys(by).sort().map(function (k) {
       var sum = by[k].reduce(function (s2, e) { return s2 + e.amount; }, 0);
@@ -1092,7 +1124,7 @@ table.dt{border-collapse:collapse;width:100%;font-size:.9rem;min-width:620px}
         return '<div class="cale"><span class="cald">' + dt + (e.approx ? "*" : "") + "</span>" + nameCell(e.key, e.name, other) + '<span class="calc2">' + dp(e.dps) + '</span><span class="calc3">' + dp(e.cur) + '</span><span class="calc4">' + nf(e.shares, e.shares < 10 ? 2 : 0) + '</span><span class="cala">' + eur(e.amount, 2) + '</span><span class="calb ' + (e.src === "FMP" ? "ok" : "") + '">' + (e.src === "FMP" ? "angekündigt" : "geschätzt") + "</span></div>";
       }).join("") + "</div>";
     }).join("");
-    $("ka-note").textContent = "Ex-Tag = Stichtag, an dem die Aktie ohne Dividende gehandelt wird; Zahltag = Auszahlung. Angekündigte Termine kommen von FMP (Dividende je Aktie brutto, Betrag abzüglich der oben eingestellten Steuer). Geschätzt heißt: gleiche Zahlung wie vor einem Jahr aus deinem Import (netto, je Aktie umgerechnet), angepasst an heutige Stückzahl und Wachstum; * = Datum geschätzt bzw. nicht bekannt. „aktuell p. a.“ = Dividende je Aktie der letzten 12 Monate. Termine können abweichen; keine Gewähr.";
+    $("ka-note").textContent = "Ex-Tag = Stichtag, an dem die Aktie ohne Dividende gehandelt wird; Zahltag = Auszahlung. Angekündigte Termine (Dividende je Aktie brutto, Betrag abzüglich der oben eingestellten Steuer) kommen bald aus den Dividendenmeldungen der Unternehmen. Geschätzt heißt: gleiche Zahlung wie vor einem Jahr aus deinem Import (netto, je Aktie umgerechnet), angepasst an heutige Stückzahl und Wachstum; * = Datum geschätzt bzw. nicht bekannt. „aktuell p. a.“ = Dividende je Aktie der letzten 12 Monate. Termine können abweichen; keine Gewähr.";
   }
 
   /* ---------- Forecast ---------- */
@@ -1264,7 +1296,9 @@ table.dt{border-collapse:collapse;width:100%;font-size:.9rem;min-width:620px}
   function init() {
     document.querySelectorAll(".dtab").forEach(function (b) { b.onclick = function () { show(b.dataset.tab); }; });
     document.querySelectorAll(".broker").forEach(function (b) { b.onclick = function () { showBroker(b.dataset.broker); }; });
-    $("btn-refresh").onclick = refresh; $("btn-stop").onclick = function () { RUN.abort = true; }; $("an-btn-stop").onclick = function () { RUN.abort = true; };
+    var mitFMP = /key/.test(location.hash);
+    $("btn-refresh").onclick = function () { mitFMP ? refresh() : refreshEigen(false); };
+    setTimeout(function () { if (!mitFMP) refreshEigen(true); }, 300);   /* Kurse beim Öffnen still aktualisieren */ $("btn-stop").onclick = function () { RUN.abort = true; }; $("an-btn-stop").onclick = function () { RUN.abort = true; };
     $("an-btn-hist").onclick = loadHist; $("an-btn-fund").onclick = loadFund;
     $("btn-wipe").onclick = function () { if (confirm("Alle Depotdaten in diesem Browser löschen? Das lässt sich nur mit einem Backup rückgängig machen.")) { S = { tx: [], meta: {}, imports: [], hist: {}, demo: false }; save(); invalidate(); setMsg("imp-msg", "Alle Depotdaten gelöscht.", "ok"); renderImport(); } };
     $("btn-backup").onclick = function () { var u = URL.createObjectURL(new Blob([JSON.stringify(S)], { type: "application/json" })), a = document.createElement("a"); a.href = u; a.download = "depot-backup-" + today + ".json"; document.body.appendChild(a); a.click(); a.remove(); setTimeout(function () { URL.revokeObjectURL(u); }, 1000); };

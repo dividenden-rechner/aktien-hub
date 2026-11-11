@@ -85,7 +85,7 @@ def main():
         ocf, cx = wert_am(f, "operativer_cf", gj), wert_am(f, "capex", gj)
         fcf = ocf - abs(cx) if ocf is not None and cx is not None else None
         bw = kurs * aktien if aktien else None
-        o = {"isin": z["isin"], "kurs_eur": k_eur, "boerse": {"DETR": "Xetra", "DGAT": "Tradegate", "DFRA": "Frankfurt"}.get(boerse, boerse), "veraenderung": veraend, "datum": tag, "waehrung": w, "gj": gj[:4],
+        o = {"isin": z["isin"], "kurs_eur": k_eur, "boerse": {"DETR": "Xetra", "DGAT": "Tradegate", "DFRA": "Frankfurt"}.get(boerse, boerse), "veraenderung": veraend, "datum": tag, "waehrung": w, "fx": 1.0 if w == "EUR" else rate[w], "gj": gj[:4],
              "boersenwert_eur": round(k_eur * aktien) if aktien else None,
              "dividende": r2(dps, 4), "rendite": r2(dps / kurs * 100) if dps and kurs else None,
              "kgv": r2(kurs / eps, 1) if eps and eps > 0 else None,
