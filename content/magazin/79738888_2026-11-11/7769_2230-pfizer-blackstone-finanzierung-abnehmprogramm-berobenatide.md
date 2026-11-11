@@ -10,6 +10,7 @@ quelle_url: https://www.stocktitan.net/news/PFE/pfizer-and-blackstone-life-scien
 quelle_name: "Pressemitteilung Pfizer und Blackstone Life Sciences (Business Wire)"
 logo_symbol: PFE
 logo_name: "Pfizer"
+logo_file: assets/logos/pfe.png
 ---
 Der Pharmakonzern Pfizer hat sich mit Blackstone Life Sciences auf eine strategische Finanzierungspartnerschaft für sein Adipositasprogramm geeinigt. Von Blackstone verwaltete Fonds übernehmen bis zum Jahr 2028 Entwicklungskosten von bis zu 1,5 Milliarden Dollar für den Wirkstoff Berobenatide. Bei dem Präparat handelt es sich um einen potenziell ersten monatlich verabreichten GLP-1-Rezeptoragonisten zur langfristigen Gewichtskontrolle und Behandlung von Begleiterkrankungen.
 
