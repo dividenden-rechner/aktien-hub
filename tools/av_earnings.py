@@ -6,13 +6,13 @@ import os, sys, csv, io, json, time, datetime, urllib.request, urllib.parse
 
 OUT = "data/av-earnings.json"
 KEY = os.environ.get("ALPHAVANTAGE_API_KEY", "").strip()
-MAX_CALLS = int(os.environ.get("AV_MAX", "150"))
+MAX_CALLS = int(os.environ.get("AV_MAX", "24"))
 BACK, FWD = 4, 14
 calls = 0
 
 def av(**p):
     global calls
-    if calls >= MAX_CALLS: return None
+    if calls >= MAX_CALLS or LIMIT: return None
     calls += 1
     time.sleep(1.1)
     p["apikey"] = KEY
@@ -22,7 +22,10 @@ def av(**p):
     except Exception as e:
         print("AV-Fehler", p.get("function"), p.get("symbol", ""), e); return None
 
+LIMIT = False
 def js(txt):
+    global LIMIT
+    if txt and "rate limit" in txt: LIMIT = True; print("AV-Tageslimit erreicht, Rest morgen."); return None
     try:
         j = json.loads(txt)
     except Exception:
@@ -47,6 +50,14 @@ def watch():
     except Exception: pass
     return s
 
+def prio():
+    s = set()
+    try: s |= {i["sym"] for i in json.load(open("data/termine-app.json", encoding="utf-8"))["items"]}
+    except Exception: pass
+    try: s |= {i["sym"] for i in json.load(open("data/logo-bedarf.json", encoding="utf-8"))}
+    except Exception: pass
+    return s
+
 def main():
     if not KEY:
         print("Kein ALPHAVANTAGE_API_KEY, uebersprungen."); return
@@ -68,11 +79,13 @@ def main():
         t = (r.get("timeOfTheDay") or "").lower()
         zeit = "vor" if "pre" in t or "before" in t else "nach" if "post" in t or "after" in t else ""
         it = items.setdefault((sym, d), {"sym": sym, "datum": d})
+        if it.get("eps_est") is None and num(r.get("estimate")) is not None: it["eps_est"] = num(r.get("estimate")); it["eps_src"] = "kalender"
         it.update(name=r.get("name") or sym, fiscal=r.get("fiscalDateEnding") or "", cur=r.get("currency") or "USD", zeit=zeit or it.get("zeit", ""))
         n += 1
     print("Termine im Fenster:", n)
     # 1) Schaetzungen fuer kommende Termine (heute und spaeter)
-    for (sym, d), it in sorted(items.items(), key=lambda kv: kv[0][1]):
+    PRIO = prio()
+    for (sym, d), it in sorted(items.items(), key=lambda kv: (kv[0][1], kv[0][0] not in PRIO)):
         if d < today.isoformat() or it.get("est_stand") == today.isoformat(): continue
         j = js(av(function="EARNINGS_ESTIMATES", symbol=sym) or "")
         if j is None: continue
@@ -82,7 +95,7 @@ def main():
             c = [e for e in qs if e["date"] < d]
             pick = max(c, key=lambda e: e["date"]) if c else None
             if not pick: continue
-        it.update(fiscal=pick["date"], eps_est=num(pick.get("eps_estimate_average")), eps_n=int(num(pick.get("eps_estimate_analyst_count")) or 0),
+        it.pop("eps_src", None); it.update(fiscal=pick["date"], eps_est=num(pick.get("eps_estimate_average")), eps_n=int(num(pick.get("eps_estimate_analyst_count")) or 0),
                   rev_est=num(pick.get("revenue_estimate_average")), rev_n=int(num(pick.get("revenue_estimate_analyst_count")) or 0), est_stand=today.isoformat())
     # 2) Ist-Zahlen fuer bereits berichtete Termine (kommen bei AV mit Verzug von Stunden bis zu einem Tag)
     for (sym, d), it in sorted(items.items(), key=lambda kv: kv[0][1], reverse=True):
