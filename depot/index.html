@@ -932,7 +932,9 @@ table.dt{border-collapse:collapse;width:100%;font-size:.9rem;min-width:620px}
     try {
       var v = Math.floor(Date.now() / 36e5);
       var res = await Promise.all([fetch("../data/kurse/xetra-letzter.json?v=" + v).then(function (r) { return r.ok ? r.json() : null; }),
-        fetch("../data/kennzahlen.json?v=" + v).then(function (r) { return r.ok ? r.json() : null; })]);
+        fetch("../data/kennzahlen.json?v=" + v).then(function (r) { return r.ok ? r.json() : null; }),
+        fetch("../data/dividenden-termine.json?v=" + v).then(function (r) { return r.ok ? r.json() : null; }).catch(function () { return null; })]);
+      var DT = res[2] && res[2].firmen || {}, heute = new Date().toISOString().slice(0, 10), vor20 = new Date(Date.now() - 20 * 864e5).toISOString().slice(0, 10);
       var KU = res[0] && res[0].k || {}, KZ = res[1] && res[1].werte || {}, byIsin = {}, ohne = [], mitKurs = 0;
       Object.keys(KZ).forEach(function (t) { if (KZ[t].isin) byIsin[KZ[t].isin] = t; });
       keys.forEach(function (k) {
@@ -945,6 +947,12 @@ table.dt{border-collapse:collapse;width:100%;font-size:.9rem;min-width:620px}
           if (K.dividende != null && K.fx) { m.dps = K.dividende / K.fx; m.dpsTs = Date.now(); m.dpsQuelle = "SEC " + K.gj; }
           if (K.div_wachstum_5j != null) m.g = K.div_wachstum_5j / 100;
           if (K.dividendenserie != null) m.streak = K.dividendenserie >= 99 ? 9 : K.dividendenserie;
+          /* Beschlossene Dividenden mit Ex-Tag und Zahltag aus den Pressemitteilungen (in Euro umgerechnet) */
+          var dt = DT[t];
+          if (dt && K.fx) m.divUp = dt.filter(function (x) { return x.zahltag >= heute || x.ex_tag >= vor20; }).map(function (x) {
+            var fx = (x.waehrung || "USD") === K.waehrung ? K.fx : (x.waehrung === "EUR" ? 1 : K.fx);
+            return { d: x.ex_tag, p: x.zahltag, a: x.betrag / fx };
+          });
         }
       });
       S.demo = false; save(); invalidate();
@@ -1071,7 +1079,7 @@ table.dt{border-collapse:collapse;width:100%;font-size:.9rem;min-width:620px}
     R.forEach(function (r) {
       var m = S.meta[r.key] || {}, decl = (m.divUp || []).filter(function (x) { var q = x.p || x.d; return q >= C.addDays(today, -1) && q <= end || (x.d >= today && x.d <= end); });
       var di = dpsInfo(r, "auto", taxRate), cur = di.dps > 0 ? di.dps : null;
-      decl.forEach(function (x) { ev.push({ key: r.key, name: r.name, pay: x.p || "", ex: x.d, dps: x.a, shares: r.shares, cur: cur, amount: r.shares * x.a * (1 - taxRate), src: "FMP" }); });
+      decl.forEach(function (x) { ev.push({ key: r.key, name: r.name, pay: x.p || "", ex: x.d, dps: x.a, shares: r.shares, cur: cur, amount: r.shares * x.a * (1 - taxRate), src: "Meldung" }); });
       var g = m.g == null ? 0 : Math.max(-0.05, Math.min(0.15, m.g));
       var hist = (m.divHist || []).filter(function (x) { return x.d > cut; });
       if (hist.length) {
@@ -1104,11 +1112,11 @@ table.dt{border-collapse:collapse;width:100%;font-size:.9rem;min-width:620px}
   function renderCal() {
     var tx = Math.max(0, Math.min(60, C.num($("ka-tax").value, ",") == null ? 26.375 : C.num($("ka-tax").value, ","))) / 100, mode = $("ka-mode").value;
     var ev = calEvents(tx);
-    ev.forEach(function (e) { e.date = mode === "ex" ? (e.ex || e.pay) : (e.pay || e.ex); e.approx = mode === "ex" ? (!e.ex || e.src !== "FMP") : (!e.pay || e.src !== "FMP"); });
+    ev.forEach(function (e) { e.date = mode === "ex" ? (e.ex || e.pay) : (e.pay || e.ex); e.approx = mode === "ex" ? (!e.ex || e.src !== "Meldung") : (!e.pay || e.src !== "Meldung"); });
     ev.sort(function (a, b) { return a.date < b.date ? -1 : a.date > b.date ? 1 : 0; });
     var by = {}, tot = 0, in30 = 0, lim30 = C.addDays(today, 30);
     ev.forEach(function (e) { var k = e.date.slice(0, 7); (by[k] = by[k] || []).push(e); tot += e.amount; if (e.date <= lim30) in30 += e.amount; });
-    var next = ev.filter(function (e) { return e.date >= today; })[0], nFmp = ev.filter(function (e) { return e.src === "FMP"; }).length;
+    var next = ev.filter(function (e) { return e.date >= today; })[0], nFmp = ev.filter(function (e) { return e.src === "Meldung"; }).length;
     var fd = function (d) { return new Date(d + "T00:00:00").toLocaleDateString("de-DE"); };
     $("ka-kpis").innerHTML = kpi((mode === "ex" ? "Nächster Ex-Tag" : "Nächste Zahlung"), next ? eur(next.amount, 2) + "<small> " + esc(next.name) + ", " + fd(next.date) + "</small>" : "–") + kpi("In den nächsten 30 Tagen", eur(in30)) + kpi("In den nächsten 12 Monaten", eur(tot), "blue") + kpi("Von FMP bestätigt", nFmp + " von " + ev.length + " Terminen");
     var keys = []; var d0 = new Date(today + "T00:00:00"); for (var i = 0; i < 13; i++) { var d = new Date(d0.getFullYear(), d0.getMonth() + i, 1); keys.push(d.getFullYear() + "-" + String(d.getMonth() + 1).padStart(2, "0")); }
@@ -1121,7 +1129,7 @@ table.dt{border-collapse:collapse;width:100%;font-size:.9rem;min-width:620px}
       return '<div class="calm"><div class="calh"><b>' + MNL[+k.slice(5) - 1] + " " + k.slice(0, 4) + "</b><span>" + eur(sum, 2) + "</span></div>" + by[k].map(function (e) {
         var dt = new Date(e.date + "T00:00:00").toLocaleDateString("de-DE", { day: "2-digit", month: "2-digit" }), other = mode === "ex" ? (e.pay ? "Zahltag " + fd(e.pay) : "Zahltag unbekannt") : (e.ex ? "Ex-Tag " + fd(e.ex) : "Ex-Tag unbekannt");
         var dp = function (v) { return v == null ? "–" : eur(v, v < 1 ? 3 : 2); };
-        return '<div class="cale"><span class="cald">' + dt + (e.approx ? "*" : "") + "</span>" + nameCell(e.key, e.name, other) + '<span class="calc2">' + dp(e.dps) + '</span><span class="calc3">' + dp(e.cur) + '</span><span class="calc4">' + nf(e.shares, e.shares < 10 ? 2 : 0) + '</span><span class="cala">' + eur(e.amount, 2) + '</span><span class="calb ' + (e.src === "FMP" ? "ok" : "") + '">' + (e.src === "FMP" ? "angekündigt" : "geschätzt") + "</span></div>";
+        return '<div class="cale"><span class="cald">' + dt + (e.approx ? "*" : "") + "</span>" + nameCell(e.key, e.name, other) + '<span class="calc2">' + dp(e.dps) + '</span><span class="calc3">' + dp(e.cur) + '</span><span class="calc4">' + nf(e.shares, e.shares < 10 ? 2 : 0) + '</span><span class="cala">' + eur(e.amount, 2) + '</span><span class="calb ' + (e.src === "Meldung" ? "ok" : "") + '">' + (e.src === "Meldung" ? "angekündigt" : "geschätzt") + "</span></div>";
       }).join("") + "</div>";
     }).join("");
     $("ka-note").textContent = "Ex-Tag = Stichtag, an dem die Aktie ohne Dividende gehandelt wird; Zahltag = Auszahlung. Angekündigte Termine (Dividende je Aktie brutto, Betrag abzüglich der oben eingestellten Steuer) kommen bald aus den Dividendenmeldungen der Unternehmen. Geschätzt heißt: gleiche Zahlung wie vor einem Jahr aus deinem Import (netto, je Aktie umgerechnet), angepasst an heutige Stückzahl und Wachstum; * = Datum geschätzt bzw. nicht bekannt. „aktuell p. a.“ = Dividende je Aktie der letzten 12 Monate. Termine können abweichen; keine Gewähr.";

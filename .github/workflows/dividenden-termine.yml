@@ -1,0 +1,39 @@
+name: Dividenden-Termine (aus Pressemitteilungen)
+on:
+  push:
+    branches: [main]
+    paths:
+      - "tools/dividenden_termine.py"
+      - ".github/workflows/dividenden-termine.yml"
+  schedule:
+    - cron: "47 */4 * * *"   # alle vier Stunden
+  workflow_dispatch:
+concurrency:
+  group: dividenden-termine
+  cancel-in-progress: false
+permissions:
+  contents: write
+jobs:
+  termine:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install markdown pillow
+      - name: Dividenden auslesen
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+        run: python3 tools/dividenden_termine.py
+      - name: Ergebnis committen
+        run: |
+          git config user.name "dividenden-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add data/dividenden-termine.json data/dividenden-termine-state.json
+          if git diff --cached --quiet; then echo "Nichts Neues"; exit 0; fi
+          git commit -m "Dividenden-Termine aktualisiert"
+          for i in 1 2 3; do git pull --rebase -X theirs -q && git push && break; sleep 5; done
