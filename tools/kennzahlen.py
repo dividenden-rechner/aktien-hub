@@ -53,7 +53,8 @@ def main():
         z = isin.get(t)
         if not isinstance(z, dict) or not z or z["isin"] not in kurse["k"]:
             continue
-        k_eur, veraend, kw = kurse["k"][z["isin"]]
+        k_eur, veraend, kw = kurse["k"][z["isin"]][:3]
+        boerse = kurse["k"][z["isin"]][3] if len(kurse["k"][z["isin"]]) > 3 else "DETR"
         if kw != "EUR":
             continue
         w = f.get("w", "USD")
@@ -69,7 +70,7 @@ def main():
         ocf, cx = wert_am(f, "operativer_cf", gj), wert_am(f, "capex", gj)
         fcf = ocf - abs(cx) if ocf is not None and cx is not None else None
         bw = kurs * aktien if aktien else None
-        o = {"isin": z["isin"], "kurs_eur": k_eur, "veraenderung": veraend, "datum": tag, "waehrung": w, "gj": gj[:4],
+        o = {"isin": z["isin"], "kurs_eur": k_eur, "boerse": {"DETR": "Xetra", "DGAT": "Tradegate", "DFRA": "Frankfurt"}.get(boerse, boerse), "veraenderung": veraend, "datum": tag, "waehrung": w, "gj": gj[:4],
              "boersenwert_eur": round(k_eur * aktien) if aktien else None,
              "dividende": r2(dps, 4), "rendite": r2(dps / kurs * 100) if dps and kurs else None,
              "kgv": r2(kurs / eps, 1) if eps and eps > 0 else None,

@@ -8,9 +8,9 @@ Eine Historie entsteht also erst ab dem Starttag. Nutzung: kostenlos, solange di
 import gzip, io, json, os, re, sys, urllib.request
 
 UA = {"User-Agent": "Mozilla/5.0 (dividenden-rechner.de Tageskurse)"}
-LISTE = "https://mfs.deutsche-boerse.com/api/DETR-posttrade"
 DOWN = "https://mfs.deutsche-boerse.com/api/download/"
-ZIEL = "data/kurse/xetra"
+# Handelsplaetze in der Reihenfolge, in der ihr Kurs bevorzugt wird (Xetra zuerst; viele US-Werte gibt es nur bei Tradegate/Frankfurt)
+PLAETZE = [("DETR", "xetra", "Xetra"), ("DGAT", "tradegate", "Tradegate"), ("DFRA", "frankfurt", "Börse Frankfurt")]
 
 
 def hole(url):
@@ -36,8 +36,8 @@ def verdichten(raw):
             if not isin or not isinstance(p, (int, float)) or p <= 0 or z.get("priceNotation", "MONE") != "MONE":
                 continue
             # Nur Abschluesse im Xetra-Orderbuch fuer den Kurs; ausserboersliche Meldungen (falls vorhanden) zaehlen nicht
-            ven = z.get("venueOfExecution", "XETA")
-            if not str(ven).startswith("XET"):
+            ven = str(z.get("venueOfExecution", ""))
+            if "OFF" in ven or ven in ("SINT", "XXXX"):
                 VEN[ven] = VEN.get(ven, 0) + 1
                 continue
             e = k.get(isin)
@@ -54,36 +54,48 @@ def verdichten(raw):
 
 
 def main():
-    os.makedirs(ZIEL, exist_ok=True)
-    liste = json.loads(hole(LISTE))
-    tage = sorted({m.group(1) for f in liste.get("CurrentFiles", [])
-                   for m in [re.match(r"DETR-posttrade-daily-(\d{4}-\d{2}-\d{2})\.json\.gz$", f)] if m})
-    print("Tagesdateien online:", tage)
-    neu = 0
-    for tag in tage:
-        pfad = f"{ZIEL}/{tag}.json"
-        if os.path.exists(pfad):
-            continue
-        k = verdichten(hole(f"{DOWN}DETR-posttrade-daily-{tag}.json.gz"))
-        if len(k) < 500:
-            print(tag, "zu wenige Werte, uebersprungen:", len(k)); continue
-        json.dump({"datum": tag, "quelle": "Deutsche Börse, Xetra Post-Trade (MiFID II, 15 Min. verzögert)",
-                   "felder": ["eroeffnung", "hoch", "tief", "schluss", "stueck", "abschluesse", "waehrung"], "k": k},
-                  open(pfad, "w"), separators=(",", ":"))
-        neu += 1
-        print(tag, len(k), "ISINs")
-    # Letzter Stand fuer schnelle Abfragen
-    vorhanden = sorted(f for f in os.listdir(ZIEL) if re.fullmatch(r"\d{4}-\d{2}-\d{2}\.json", f))
-    if vorhanden:
-        letzt = json.load(open(f"{ZIEL}/{vorhanden[-1]}"))
-        vor = json.load(open(f"{ZIEL}/{vorhanden[-2]}")) if len(vorhanden) > 1 else None
-        out = {"datum": letzt["datum"], "vortag": vor["datum"] if vor else None, "quelle": letzt["quelle"],
-               "felder": ["schluss", "veraenderung_proz", "waehrung"], "k": {}}
-        for i, v in letzt["k"].items():
-            alt = vor["k"].get(i) if vor else None
-            out["k"][i] = [v[3], round((v[3] / alt[3] - 1) * 100, 2) if alt and alt[3] else None, v[6]]
-        json.dump(out, open("data/kurse/xetra-letzter.json", "w"), separators=(",", ":"))
-    print("neu:", neu, "uebersprungene Handelsplaetze:", VEN)
+    for code, ordner, name in PLAETZE:
+        ziel = f"data/kurse/{ordner}"
+        os.makedirs(ziel, exist_ok=True)
+        try:
+            liste = json.loads(hole(f"https://mfs.deutsche-boerse.com/api/{code}-posttrade"))
+        except Exception as e:
+            print(name, "Liste nicht ladbar:", e); continue
+        tage = sorted({m.group(1) for f in liste.get("CurrentFiles", [])
+                       for m in [re.match(rf"{code}-posttrade-daily-(\d{{4}}-\d{{2}}-\d{{2}})\.json\.gz$", f)] if m})
+        print(name, "Tagesdateien online:", tage)
+        for tag in tage:
+            pfad = f"{ziel}/{tag}.json"
+            if os.path.exists(pfad):
+                continue
+            try:
+                k = verdichten(hole(f"{DOWN}{code}-posttrade-daily-{tag}.json.gz"))
+            except Exception as e:
+                print(name, tag, "Fehler:", e); continue
+            if len(k) < 200:
+                print(name, tag, "zu wenige Werte, uebersprungen:", len(k)); continue
+            json.dump({"datum": tag, "quelle": f"Deutsche Börse, {name} Post-Trade (MiFID II, 15 Min. verzögert)",
+                       "felder": ["eroeffnung", "hoch", "tief", "schluss", "stueck", "abschluesse", "waehrung"], "k": k},
+                      open(pfad, "w"), separators=(",", ":"))
+            print(name, tag, len(k), "ISINs")
+    # Letzter Stand je ISIN: neuester Handelstag, bevorzugter Handelsplatz
+    tage_alle = sorted({f[:10] for _, o, _ in PLAETZE if os.path.isdir(f"data/kurse/{o}")
+                        for f in os.listdir(f"data/kurse/{o}") if re.fullmatch(r"\d{4}-\d{2}-\d{2}\.json", f)})
+    if not tage_alle:
+        return
+    def lade(o, tag):
+        p = f"data/kurse/{o}/{tag}.json"
+        return json.load(open(p))["k"] if os.path.exists(p) else {}
+    letzt = tage_alle[-1]; vor = tage_alle[-2] if len(tage_alle) > 1 else None
+    out = {"datum": letzt, "vortag": vor, "quelle": "Deutsche Börse (Xetra, Tradegate, Börse Frankfurt), MiFID II, 15 Min. verzögert",
+           "felder": ["schluss", "veraenderung_proz", "waehrung", "boerse"], "k": {}}
+    for code, o, name in reversed(PLAETZE):   # bevorzugter Platz zuletzt, ueberschreibt
+        heute, gestern = lade(o, letzt), (lade(o, vor) if vor else {})
+        for i, v in heute.items():
+            alt = gestern.get(i)
+            out["k"][i] = [v[3], round((v[3] / alt[3] - 1) * 100, 2) if alt and alt[3] else None, v[6], code]
+    json.dump(out, open("data/kurse/xetra-letzter.json", "w"), separators=(",", ":"))
+    print("Letzter Stand", letzt, len(out["k"]), "ISINs; uebersprungene Plaetze:", VEN)
 
 
 if __name__ == "__main__":

@@ -67,6 +67,9 @@ def main():
     # 1) OpenFIGI: US-ISIN -> US-Ticker (bis 10 Abfragen je Anfrage, ohne Schluessel 25 Anfragen pro Minute)
     figi = {}
     us = [i for i in inst if i["isin"].startswith("US")]
+    bekannt = {i["isin"] for i in us}
+    # Auch US-Werte, die nur bei Tradegate oder in Frankfurt gehandelt werden (nicht in der Xetra-Liste)
+    us += [{"isin": x, "name": "", "n": "", "mn": "", "typ": ""} for x in gehandelt if x.startswith("US") and x not in bekannt]
     for a in range(0, len(us), 10):
         teil = us[a:a + 10]
         body = json.dumps([{"idType": "ID_ISIN", "idValue": i["isin"], "exchCode": "US"} for i in teil]).encode()
@@ -85,7 +88,7 @@ def main():
                     break
         time.sleep(2.5)
     def bester(lst):   # bei mehreren Xetra-Zeilen derselben Aktie: die mit den meisten Abschluessen
-        return max(lst, key=lambda i: (i["isin"] in gehandelt, gehandelt.get(i["isin"], [0])[0] or 0))
+        return max(lst, key=lambda i: (i["isin"] in gehandelt, i["isin"].startswith("US")))
     out, unsicher, fehlt = {}, [], []
     for t, f in sorted(firmen.items()):
         if t in fest:
