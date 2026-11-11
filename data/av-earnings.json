@@ -1,0 +1,643 @@
+{
+ "updated": "2026-11-11 06:04 UTC",
+ "quelle": "Alpha Vantage",
+ "items": [
+  {
+   "sym": "CRWV",
+   "datum": "2026-11-10",
+   "name": "COREWEAVE INCORPORATED",
+   "fiscal": "2026-09-30",
+   "cur": "USD",
+   "zeit": "nach",
+   "act_try": "2026-11-11"
+  },
+  {
+   "sym": "TDG",
+   "datum": "2026-11-10",
+   "name": "TRANSDIGM GROUP INCORPORATED",
+   "fiscal": "2026-09-30",
+   "cur": "USD",
+   "zeit": "vor",
+   "act_try": "2026-11-11"
+  },
+  {
+   "sym": "VOD",
+   "datum": "2026-11-10",
+   "name": "VODAFONE GROUP PUBLIC LIMITED COMPANY",
+   "fiscal": "2026-09-30",
+   "cur": "USD",
+   "zeit": "vor",
+   "act_try": "2026-11-11"
+  },
+  {
+   "sym": "TECH",
+   "datum": "2026-11-11",
+   "name": "BIO-TECHNE CORPORATION",
+   "fiscal": "2026-09-30",
+   "cur": "USD",
+   "zeit": "",
+   "eps_est": 0.4476,
+   "eps_n": 7,
+   "rev_est": 292201690.0,
+   "rev_n": 8,
+   "est_stand": "2026-11-11",
+   "act_try": "2026-11-11"
+  },
+  {
+   "sym": "VYLR",
+   "datum": "2026-11-11",
+   "name": "VYLOR INCORPORATED",
+   "fiscal": "2026-09-30",
+   "cur": "USD",
+   "zeit": "nach",
+   "eps_est": -0.5207,
+   "eps_n": 8,
+   "rev_est": 918057450.0,
+   "rev_n": 8,
+   "est_stand": "2026-11-11",
+   "act_try": "2026-11-11"
+  },
+  {
+   "sym": "AMAT",
+   "datum": "2026-11-12",
+   "name": "APPLIED MATERIALS INCORPORATED",
+   "fiscal": "2026-10-31",
+   "cur": "USD",
+   "zeit": "nach",
+   "eps_est": 4.0558,
+   "eps_n": 25,
+   "rev_est": 10299491080.0,
+   "rev_n": 24,
+   "est_stand": "2026-11-11"
+  },
+  {
+   "sym": "CSCO",
+   "datum": "2026-11-12",
+   "name": "CISCO SYSTEMS INCORPORATED",
+   "fiscal": "2026-10-31",
+   "cur": "USD",
+   "zeit": "nach",
+   "eps_est": 1.3243,
+   "eps_n": 24,
+   "rev_est": 18115769170.0,
+   "rev_n": 22,
+   "est_stand": "2026-11-11"
+  },
+  {
+   "sym": "MUFG",
+   "datum": "2026-11-13",
+   "name": "MITSUBISHI UFJ FINANCIAL GROUP INCORPORATED",
+   "fiscal": "2026-09-30",
+   "cur": "USD",
+   "zeit": "",
+   "eps_est": 0.4467,
+   "eps_n": 1,
+   "rev_est": 1772561201250.0,
+   "rev_n": 2,
+   "est_stand": "2026-11-11"
+  },
+  {
+   "sym": "SMFG",
+   "datum": "2026-11-13",
+   "name": "SUMITOMO MITSUI FINANCIAL GROUP INCORPORATED",
+   "fiscal": "2026-09-30",
+   "cur": "USD",
+   "zeit": "",
+   "eps_est": 0.2448,
+   "eps_n": 1,
+   "rev_est": 1361652794670.0,
+   "rev_n": 2,
+   "est_stand": "2026-11-11"
+  },
+  {
+   "sym": "ACM",
+   "datum": "2026-11-16",
+   "name": "AECOM",
+   "fiscal": "2026-09-30",
+   "cur": "USD",
+   "zeit": "nach",
+   "eps_est": 1.591,
+   "eps_n": 10,
+   "rev_est": 4098003760.0,
+   "rev_n": 3,
+   "est_stand": "2026-11-11"
+  },
+  {
+   "sym": "BIDU",
+   "datum": "2026-11-16",
+   "name": "BAIDU INCORPORATED",
+   "fiscal": "2026-09-30",
+   "cur": "USD",
+   "zeit": "vor",
+   "eps_est": 6.589,
+   "eps_n": 15,
+   "rev_est": 30598757870.0,
+   "rev_n": 20,
+   "est_stand": "2026-11-11"
+  },
+  {
+   "sym": "TCOM",
+   "datum": "2026-11-16",
+   "name": "TRIP.COM GROUP LIMITED",
+   "fiscal": "2026-09-30",
+   "cur": "USD",
+   "zeit": "",
+   "eps_est": 8.2186,
+   "eps_n": 15,
+   "rev_est": 18927296580.0,
+   "rev_n": 16,
+   "est_stand": "2026-11-11"
+  },
+  {
+   "sym": "TSN",
+   "datum": "2026-11-16",
+   "name": "TYSON FOODS INCORPORATED",
+   "fiscal": "2026-09-30",
+   "cur": "USD",
+   "zeit": "vor",
+   "eps_est": 0.6,
+   "eps_n": 8,
+   "rev_est": 14096286810.0,
+   "rev_n": 9,
+   "est_stand": "2026-11-11"
+  },
+  {
+   "sym": "XPEV",
+   "datum": "2026-11-16",
+   "name": "XPENG INCORPORATED",
+   "fiscal": "2026-09-30",
+   "cur": "USD",
+   "zeit": "vor",
+   "eps_est": -0.705,
+   "eps_n": 2,
+   "rev_est": 23169986570.0,
+   "rev_n": 9,
+   "est_stand": "2026-11-11"
+  },
+  {
+   "sym": "AS",
+   "datum": "2026-11-17",
+   "name": "AMER SPORTS INCORPORATED",
+   "fiscal": "2026-09-30",
+   "cur": "USD",
+   "zeit": "vor",
+   "eps_est": 0.347,
+   "eps_n": 16,
+   "rev_est": 2137067030.0,
+   "rev_n": 14,
+   "est_stand": "2026-11-11"
+  },
+  {
+   "sym": "BHP",
+   "datum": "2026-11-17",
+   "name": "BHP GROUP LIMITED",
+   "fiscal": "2025-03-31",
+   "cur": "USD",
+   "zeit": "",
+   "eps_est": 0.0,
+   "eps_n": 0,
+   "rev_est": 0.0,
+   "rev_n": 0,
+   "est_stand": "2026-11-11"
+  },
+  {
+   "sym": "DIS",
+   "datum": "2026-11-17",
+   "name": "WALT DISNEY COMPANY (THE)",
+   "fiscal": "2026-09-30",
+   "cur": "USD",
+   "zeit": "vor",
+   "eps_est": 1.6901,
+   "eps_n": 23,
+   "rev_est": 25154598640.0,
+   "rev_n": 23,
+   "est_stand": "2026-11-11"
+  },
+  {
+   "sym": "ESLT",
+   "datum": "2026-11-17",
+   "name": "ELBIT SYSTEMS LIMITED",
+   "fiscal": "2026-09-30",
+   "cur": "USD",
+   "zeit": "vor",
+   "eps_est": 3.9376,
+   "eps_n": 4,
+   "rev_est": 2257018670.0,
+   "rev_n": 3,
+   "est_stand": "2026-11-11"
+  },
+  {
+   "sym": "HD",
+   "datum": "2026-11-17",
+   "name": "HOME DEPOT INCORPORATED (THE)",
+   "fiscal": "2026-10-31",
+   "cur": "USD",
+   "zeit": "vor",
+   "eps_est": 3.8381,
+   "eps_n": 30,
+   "rev_est": 42765939720.0,
+   "rev_n": 26,
+   "est_stand": "2026-11-11"
+  },
+  {
+   "sym": "JD",
+   "datum": "2026-11-17",
+   "name": "JD.COM INCORPORATED",
+   "fiscal": "2026-09-30",
+   "cur": "USD",
+   "zeit": "vor",
+   "eps_est": 5.9199,
+   "eps_n": 19,
+   "rev_est": 309876896060.0,
+   "rev_n": 25,
+   "est_stand": "2026-11-11"
+  },
+  {
+   "sym": "KLAR",
+   "datum": "2026-11-17",
+   "name": "KLARNA GROUP PUBLIC LIMITED COMPANY",
+   "fiscal": "2025-12-31",
+   "cur": "USD",
+   "zeit": "vor",
+   "eps_est": null,
+   "eps_n": 0,
+   "rev_est": 1057021650.0,
+   "rev_n": 13,
+   "est_stand": "2026-11-11"
+  },
+  {
+   "sym": "NVDA",
+   "datum": "2026-11-17",
+   "name": "NVIDIA CORPORATION",
+   "fiscal": "2026-10-31",
+   "cur": "USD",
+   "zeit": "nach",
+   "eps_est": 2.4733,
+   "eps_n": 44,
+   "rev_est": 108976833310.0,
+   "rev_n": 45,
+   "est_stand": "2026-11-11"
+  },
+  {
+   "sym": "PDD",
+   "datum": "2026-11-17",
+   "name": "PDD HOLDINGS INCORPORATED",
+   "fiscal": "2026-09-30",
+   "cur": "USD",
+   "zeit": "",
+   "eps_est": 18.8414,
+   "eps_n": 11,
+   "rev_est": 115643262410.0,
+   "rev_n": 12,
+   "est_stand": "2026-11-11"
+  },
+  {
+   "sym": "TME",
+   "datum": "2026-11-17",
+   "name": "TENCENT MUSIC ENTERTAINMENT GROUP",
+   "fiscal": "2026-09-30",
+   "cur": "USD",
+   "zeit": "vor",
+   "eps_est": 1.5043,
+   "eps_n": 10,
+   "rev_est": 9141209060.0,
+   "rev_n": 13,
+   "est_stand": "2026-11-11"
+  },
+  {
+   "sym": "BLSH",
+   "datum": "2026-11-18",
+   "name": "BULLISH",
+   "fiscal": "2026-09-30",
+   "cur": "USD",
+   "zeit": "vor",
+   "eps_est": 0.0793,
+   "eps_n": 9,
+   "rev_est": 80016160.0,
+   "rev_n": 11,
+   "est_stand": "2026-11-11"
+  },
+  {
+   "sym": "CPA",
+   "datum": "2026-11-18",
+   "name": "COPA HOLDINGS SOCIEDAD ANÓNIMA",
+   "fiscal": "2026-09-30",
+   "cur": "USD",
+   "zeit": "nach",
+   "eps_est": 3.7603,
+   "eps_n": 5,
+   "rev_est": 1175973750.0,
+   "rev_n": 8,
+   "est_stand": "2026-11-11"
+  },
+  {
+   "sym": "GLBE",
+   "datum": "2026-11-18",
+   "name": "GLOBAL-E ONLINE LIMITED",
+   "fiscal": "2026-09-30",
+   "cur": "USD",
+   "zeit": "vor",
+   "eps_est": 0.3167,
+   "eps_n": 6,
+   "rev_est": 312577490.0,
+   "rev_n": 11,
+   "est_stand": "2026-11-11"
+  },
+  {
+   "sym": "LOW",
+   "datum": "2026-11-18",
+   "name": "LOWE'S COMPANIES INCORPORATED",
+   "fiscal": "2026-10-31",
+   "cur": "USD",
+   "zeit": "vor"
+  },
+  {
+   "sym": "P",
+   "datum": "2026-11-18",
+   "name": "EVERPURE INCORPORATED",
+   "fiscal": "2026-10-31",
+   "cur": "USD",
+   "zeit": "nach"
+  },
+  {
+   "sym": "PANW",
+   "datum": "2026-11-18",
+   "name": "PALO ALTO NETWORKS INCORPORATED",
+   "fiscal": "2026-10-31",
+   "cur": "USD",
+   "zeit": "nach"
+  },
+  {
+   "sym": "PONY",
+   "datum": "2026-11-18",
+   "name": "PONY AI INCORPORATED",
+   "fiscal": "2026-09-30",
+   "cur": "USD",
+   "zeit": "vor"
+  },
+  {
+   "sym": "TGT",
+   "datum": "2026-11-18",
+   "name": "TARGET CORPORATION",
+   "fiscal": "2026-10-31",
+   "cur": "USD",
+   "zeit": "vor"
+  },
+  {
+   "sym": "TJX",
+   "datum": "2026-11-18",
+   "name": "TJX COMPANIES INCORPORATED (THE)",
+   "fiscal": "2026-10-31",
+   "cur": "USD",
+   "zeit": "vor"
+  },
+  {
+   "sym": "WSM",
+   "datum": "2026-11-18",
+   "name": "WILLIAMS-SONOMA INCORPORATED",
+   "fiscal": "2026-10-31",
+   "cur": "USD",
+   "zeit": ""
+  },
+  {
+   "sym": "BABA",
+   "datum": "2026-11-19",
+   "name": "ALIBABA GROUP HOLDING LIMITED",
+   "fiscal": "2026-09-30",
+   "cur": "USD",
+   "zeit": "vor"
+  },
+  {
+   "sym": "BBWI",
+   "datum": "2026-11-19",
+   "name": "BATH & BODY WORKS INCORPORATED",
+   "fiscal": "2026-10-31",
+   "cur": "USD",
+   "zeit": "vor"
+  },
+  {
+   "sym": "BULL",
+   "datum": "2026-11-19",
+   "name": "WEBULL CORPORATION",
+   "fiscal": "2026-09-30",
+   "cur": "USD",
+   "zeit": "nach"
+  },
+  {
+   "sym": "CPRT",
+   "datum": "2026-11-19",
+   "name": "COPART INCORPORATED",
+   "fiscal": "2026-10-31",
+   "cur": "USD",
+   "zeit": ""
+  },
+  {
+   "sym": "ESTC",
+   "datum": "2026-11-19",
+   "name": "ELASTIC NAAMLOZE VENNOOTSCHAP",
+   "fiscal": "2026-10-31",
+   "cur": "USD",
+   "zeit": "nach"
+  },
+  {
+   "sym": "FUTU",
+   "datum": "2026-11-19",
+   "name": "FUTU HOLDINGS LIMITED",
+   "fiscal": "2026-09-30",
+   "cur": "USD",
+   "zeit": "vor"
+  },
+  {
+   "sym": "GAP",
+   "datum": "2026-11-19",
+   "name": "GAP INCORPORATED (THE)",
+   "fiscal": "2026-10-31",
+   "cur": "USD",
+   "zeit": "nach"
+  },
+  {
+   "sym": "INTU",
+   "datum": "2026-11-19",
+   "name": "INTUIT INCORPORATED",
+   "fiscal": "2026-10-31",
+   "cur": "USD",
+   "zeit": "nach"
+  },
+  {
+   "sym": "KEYS",
+   "datum": "2026-11-19",
+   "name": "KEYSIGHT TECHNOLOGIES INCORPORATED",
+   "fiscal": "2026-10-31",
+   "cur": "USD",
+   "zeit": "nach"
+  },
+  {
+   "sym": "NTES",
+   "datum": "2026-11-19",
+   "name": "NETEASE INCORPORATED",
+   "fiscal": "2026-09-30",
+   "cur": "USD",
+   "zeit": "vor"
+  },
+  {
+   "sym": "ROST",
+   "datum": "2026-11-19",
+   "name": "ROSS STORES INCORPORATED",
+   "fiscal": "2026-10-31",
+   "cur": "USD",
+   "zeit": "nach"
+  },
+  {
+   "sym": "VEEV",
+   "datum": "2026-11-19",
+   "name": "VEEVA SYSTEMS INCORPORATED",
+   "fiscal": "2026-10-31",
+   "cur": "USD",
+   "zeit": ""
+  },
+  {
+   "sym": "VIPS",
+   "datum": "2026-11-19",
+   "name": "VIPSHOP HOLDINGS LIMITED",
+   "fiscal": "2026-09-30",
+   "cur": "USD",
+   "zeit": ""
+  },
+  {
+   "sym": "WMG",
+   "datum": "2026-11-19",
+   "name": "WARNER MUSIC GROUP CORPORATION",
+   "fiscal": "2026-09-30",
+   "cur": "USD",
+   "zeit": "vor"
+  },
+  {
+   "sym": "WMT",
+   "datum": "2026-11-19",
+   "name": "WALMART INCORPORATED",
+   "fiscal": "2026-10-31",
+   "cur": "USD",
+   "zeit": "vor"
+  },
+  {
+   "sym": "BJ",
+   "datum": "2026-11-20",
+   "name": "BJ'S WHOLESALE CLUB HOLDINGS INCORPORATED",
+   "fiscal": "2026-10-31",
+   "cur": "USD",
+   "zeit": "vor"
+  },
+  {
+   "sym": "BKE",
+   "datum": "2026-11-20",
+   "name": "BUCKLE INCORPORATED (THE)",
+   "fiscal": "2026-10-31",
+   "cur": "USD",
+   "zeit": "vor"
+  },
+  {
+   "sym": "A",
+   "datum": "2026-11-23",
+   "name": "AGILENT TECHNOLOGIES INCORPORATED",
+   "fiscal": "2026-10-31",
+   "cur": "USD",
+   "zeit": "nach"
+  },
+  {
+   "sym": "HPE",
+   "datum": "2026-11-23",
+   "name": "HEWLETT PACKARD ENTERPRISE COMPANY",
+   "fiscal": "2026-10-31",
+   "cur": "USD",
+   "zeit": "nach"
+  },
+  {
+   "sym": "J",
+   "datum": "2026-11-23",
+   "name": "JACOBS SOLUTIONS INCORPORATED",
+   "fiscal": "2026-09-30",
+   "cur": "USD",
+   "zeit": "nach"
+  },
+  {
+   "sym": "ADI",
+   "datum": "2026-11-24",
+   "name": "ANALOG DEVICES INCORPORATED",
+   "fiscal": "2026-10-31",
+   "cur": "USD",
+   "zeit": "vor"
+  },
+  {
+   "sym": "ADSK",
+   "datum": "2026-11-24",
+   "name": "AUTODESK INCORPORATED",
+   "fiscal": "2026-10-31",
+   "cur": "USD",
+   "zeit": "nach"
+  },
+  {
+   "sym": "BBY",
+   "datum": "2026-11-24",
+   "name": "BEST BUY COMPANY INCORPORATED",
+   "fiscal": "2026-10-31",
+   "cur": "USD",
+   "zeit": "vor"
+  },
+  {
+   "sym": "DELL",
+   "datum": "2026-11-24",
+   "name": "DELL TECHNOLOGIES INCORPORATED",
+   "fiscal": "2026-10-31",
+   "cur": "USD",
+   "zeit": ""
+  },
+  {
+   "sym": "DLTR",
+   "datum": "2026-11-24",
+   "name": "DOLLAR TREE INCORPORATED",
+   "fiscal": "2026-10-31",
+   "cur": "USD",
+   "zeit": "vor"
+  },
+  {
+   "sym": "HPQ",
+   "datum": "2026-11-24",
+   "name": "HP INCORPORATED",
+   "fiscal": "2026-10-31",
+   "cur": "USD",
+   "zeit": "nach"
+  },
+  {
+   "sym": "MDT",
+   "datum": "2026-11-24",
+   "name": "MEDTRONIC PUBLIC LIMITED COMPANY",
+   "fiscal": "2026-10-31",
+   "cur": "USD",
+   "zeit": "vor"
+  },
+  {
+   "sym": "SJM",
+   "datum": "2026-11-24",
+   "name": "THE J.M. SMUCKER COMPANY",
+   "fiscal": "2026-10-31",
+   "cur": "USD",
+   "zeit": "vor"
+  },
+  {
+   "sym": "WDAY",
+   "datum": "2026-11-24",
+   "name": "WORKDAY INCORPORATED",
+   "fiscal": "2026-10-31",
+   "cur": "USD",
+   "zeit": "nach"
+  },
+  {
+   "sym": "DE",
+   "datum": "2026-11-25",
+   "name": "DEERE & COMPANY",
+   "fiscal": "2026-10-31",
+   "cur": "USD",
+   "zeit": "vor"
+  }
+ ]
+}
