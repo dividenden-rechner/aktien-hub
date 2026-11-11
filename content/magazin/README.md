@@ -3,14 +3,13 @@
 <!-- uebersicht-start -->
 ## Übersicht (wird automatisch erstellt, neueste zuerst)
 
-### Zur Freigabe: Entwürfe (8)
+### Zur Freigabe: Entwürfe (7)
 
 Datei anklicken, dann Stift-Symbol: Zeile `draft: true` löschen und speichern, dann geht der Artikel online.
 
 | Datum | Titel | Datei |
 |---|---|---|
 | 15.11.2026 10:00 | Cindy aus London und Jensen Huang: Die älteste Falle der Welt und die Frage, was Anleger daraus machen | [79738889_2026-11-10/9640_2140-huang-honigfalle-reportage-nvidia-quartalszahlen.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/79738889_2026-11-10/9640_2140-huang-honigfalle-reportage-nvidia-quartalszahlen.md) |
-| 11.11.2026 07:50 | Siemens Energy verdreifacht den Quartalsgewinn und peilt für 2030 eine Marge von 20 bis 22 % an | [79738888_2026-11-11/9685_0750-siemens-energy-q4-2026-gewinn-verdreifacht-ziele-2030.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/79738888_2026-11-11/9685_0750-siemens-energy-q4-2026-gewinn-verdreifacht-ziele-2030.md) |
 | 05.11.2026 23:05 | Wahlsieg der Demokraten löscht den Börsenrausch: Chipwerte brechen ein, Nasdaq rutscht in die Korrektur | [79738894_2026-11-05/7694_2305-marktueberblick-wahlsieg-demokraten-chipwerte-nasdaq-korrektur.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/79738894_2026-11-05/7694_2305-marktueberblick-wahlsieg-demokraten-chipwerte-nasdaq-korrektur.md) |
 | 29.10.2026 23:27 | Comfort Systems USA: Umsatz steigt im Q3 2026 auf 3,8 Milliarden US-Dollar | [79738970_2026-10-29/7672_2327-comfort-systems-usa-q3-2026-zahlen.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/79738970_2026-10-29/7672_2327-comfort-systems-usa-q3-2026-zahlen.md) |
 | 29.10.2026 23:26 | Oracle Corporation: Langfristiger Ausblick und Finanzziele bis FY30 | [79738970_2026-10-29/7673_2326-oracle-ausblick-investor-day-2026.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/79738970_2026-10-29/7673_2326-oracle-ausblick-investor-day-2026.md) |
@@ -18,10 +17,11 @@ Datei anklicken, dann Stift-Symbol: Zeile `draft: true` löschen und speichern, 
 | 29.10.2026 22:42 | Amazon steigert Umsatz im dritten Quartal auf 201,9 Milliarden Dollar | [79738970_2026-10-29/7757_2242-amazon-q3-2026-zahlen.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/79738970_2026-10-29/7757_2242-amazon-q3-2026-zahlen.md) |
 | 29.10.2026 10:12 | Shell erzielt im dritten Quartal 10,8 Milliarden Dollar Gewinn | [79738970_2026-10-29/8987_1012-shell-q3-2026-ergebnisse.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/79738970_2026-10-29/8987_1012-shell-q3-2026-ergebnisse.md) |
 
-### Online (351)
+### Online (352)
 
 | Datum | Titel | Datei |
 |---|---|---|
+| 11.11.2026 07:50 | Siemens Energy verdreifacht den Quartalsgewinn und peilt für 2030 eine Marge von 20 bis 22 % an | [79738888_2026-11-11/9685_0750-siemens-energy-q4-2026-gewinn-verdreifacht-ziele-2030.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/79738888_2026-11-11/9685_0750-siemens-energy-q4-2026-gewinn-verdreifacht-ziele-2030.md) |
 | 11.11.2026 03:21 | Symrise: Martin Huber folgt im April 2027 auf Finanzchef Olaf Klinger | [79738888_2026-11-11/9678_0321-symrise-martin-huber-neuer-cfo-2027.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/79738888_2026-11-11/9678_0321-symrise-martin-huber-neuer-cfo-2027.md) |
 | 10.11.2026 22:50 | CoreWeave: Umsatz +168 % auf 3,7 Mrd. US-Dollar, doch die Zinsen übersteigen das Betriebsergebnis um mehr als das Vierfache | [79738889_2026-11-10/7775_2250-coreweave-q3-2026-umsatz-backlog-zinsen.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/79738889_2026-11-10/7775_2250-coreweave-q3-2026-umsatz-backlog-zinsen.md) |
 | 10.11.2026 22:15 | Costco zahlt 30 US-Dollar Sonderdividende je Aktie und stockt Rückkauf auf 4 Milliarden auf | [79738889_2026-11-10/7780_2215-costco-sonderdividende-30-dollar-aktienrueckkauf.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/79738889_2026-11-10/7780_2215-costco-sonderdividende-30-dollar-aktienrueckkauf.md) |
