@@ -27,6 +27,8 @@ jobs:
       - run: python3 tools/xetra_tageskurse.py
       - name: ISIN-Zuordnung (Xetra-Instrumentenliste)
         run: python3 tools/isin_zuordnung.py
+        env:
+          ZUORDNUNG_NEU: ${{ github.event_name == 'push' && '1' || '' }}
       - name: Kennzahlen (Kurs + SEC + EZB)
         run: python3 tools/kennzahlen.py
       - name: Ergebnis committen

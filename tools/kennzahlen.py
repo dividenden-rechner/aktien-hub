@@ -51,7 +51,7 @@ def main():
     out = {}
     for t, f in sec["firmen"].items():
         z = isin.get(t)
-        if not z or z["isin"] not in kurse["k"]:
+        if not isinstance(z, dict) or not z or z["isin"] not in kurse["k"]:
             continue
         k_eur, veraend, kw = kurse["k"][z["isin"]]
         if kw != "EUR":
