@@ -422,7 +422,8 @@ def main():
             zeilen.append(f"| {t} | {name} | {rname} | keine Jahreswerte | | | |"); continue
         gj = max(enden)
         # Dividende je Aktie: UK im Jahr gezahlt, sonst die vorgeschlagene fuer das Geschaeftsjahr
-        reih = ("_dps_gez", "_dps_vor", "_dps_frei") if land in ("GB", "JE") else ("_dps_vor", "_dps_gez", "_dps_frei")
+        # UK: die "vorgeschlagene" Dividende ist nur die Schluss- oder letzte Quartalsrate, deshalb dort nur gezahlte Werte
+        reih = ("_dps_gez",) if land in ("GB", "JE") else ("_dps_vor", "_dps_gez", "_dps_frei")
         dps = {}
         for k in reversed(reih):
             dps.update(reihen.get(k, {}))
