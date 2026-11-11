@@ -7,6 +7,10 @@ import json, os, re, sys, time
 from datetime import datetime, timedelta, timezone
 
 sys.path.insert(0, os.path.dirname(__file__))
+# Die SEC verlangt im User-Agent eine Kontaktangabe, sonst sperrt www.sec.gov mit 403. Wir nehmen dieselbe wie der SEC-Datenlauf.
+if not os.environ.get("SEC_USER_AGENT"):
+    import sec_fundamentals as _sf
+    os.environ["SEC_USER_AGENT"] = _sf.UA
 import ir_agent as ia
 import kurzmeldungen as km
 
