@@ -1,1 +1,3236 @@
-{}
+{
+"A": {
+"isin": "US00846U1016",
+"xetra": "AGILENT TECHS INC. DL-,01",
+"kuerzel": "AG8",
+"treffer": 0.83
+},
+"AAPL": {
+"isin": "US0378331005",
+"xetra": "APPLE INC.",
+"kuerzel": "APC",
+"treffer": 1.13
+},
+"ABBNY": {
+"isin": "US00287Y1091",
+"xetra": "ABBVIE INC.        DL-,01",
+"kuerzel": "4AB",
+"treffer": 0.8
+},
+"ABBV": {
+"isin": "US00287Y1091",
+"xetra": "ABBVIE INC.        DL-,01",
+"kuerzel": "4AB",
+"treffer": 1.13
+},
+"ABNB": {
+"isin": "US0090661010",
+"xetra": "AIRBNB INC.     DL-,01",
+"kuerzel": "6Z1",
+"treffer": 1.13
+},
+"ABT": {
+"isin": "US0028241000",
+"xetra": "ABBOTT LABS",
+"kuerzel": "ABL",
+"treffer": 0.86
+},
+"ACGL": {
+"isin": "US03945R1023",
+"xetra": "ARCHER AVIATION  A -,0001",
+"kuerzel": "A1C0",
+"treffer": 0.72
+},
+"ACN": {
+"isin": "IE00B4BNMY34",
+"xetra": "ACCENTURE A   DL-,0000225",
+"kuerzel": "CSA",
+"treffer": 0.9
+},
+"ADBE": {
+"isin": "US00724F1012",
+"xetra": "ADOBE INC.",
+"kuerzel": "ADB",
+"treffer": 1.13
+},
+"ADC": {
+"isin": "US2371941053",
+"xetra": "DARDEN REST. INC.",
+"kuerzel": "DDN",
+"treffer": 0.74
+},
+"ADI": {
+"isin": "US0326541051",
+"xetra": "ANALOG DEVICES INC.DL-166",
+"kuerzel": "ANL",
+"treffer": 1.13
+},
+"ADM": {
+"isin": "US0394831020",
+"xetra": "ARCHER DANIELS MIDLAND",
+"kuerzel": "ADM",
+"treffer": 1.13
+},
+"ADP": {
+"isin": "US0530151036",
+"xetra": "AUTOM. DATA PROC. DL -,10",
+"kuerzel": "ADP",
+"treffer": 0.88
+},
+"ADSK": {
+"isin": "US0527691069",
+"xetra": "AUTODESK INC.",
+"kuerzel": "AUD",
+"treffer": 1.13
+},
+"AEE": {
+"isin": "US0268747849",
+"xetra": "AMER.INTL GRP NEW DL 2,50",
+"kuerzel": "AINN",
+"treffer": 0.93
+},
+"AEP": {
+"isin": "US0255371017",
+"xetra": "AMER. EL. PWR     DL 6,50",
+"kuerzel": "AEP",
+"treffer": 0.78
+},
+"AES": {
+"isin": "US9418481035",
+"xetra": "WATERS CORP.       DL-,01",
+"kuerzel": "WAZ",
+"treffer": 0.8
+},
+"AFL": {
+"isin": "US0010551028",
+"xetra": "AFLAC INC.        DL -,10",
+"kuerzel": "AFL",
+"treffer": 1.13
+},
+"AIG": {
+"isin": "US0605051046",
+"xetra": "BANK AMERICA      DL 0,01",
+"kuerzel": "NCB",
+"treffer": 0.83
+},
+"AIZ": {
+"isin": "US04621X1081",
+"xetra": "ASSURANT INC.      DL-,01",
+"kuerzel": "ZAS",
+"treffer": 1.13
+},
+"AJG": {
+"isin": "US3635761097",
+"xetra": "GALLAGHER , A.J.     DL 1",
+"kuerzel": "GAH",
+"treffer": 0.8
+},
+"AKAM": {
+"isin": "US00971T1016",
+"xetra": "AKAMAI TECH.       DL-,01",
+"kuerzel": "AK3",
+"treffer": 0.84
+},
+"ALB": {
+"isin": "US0126531013",
+"xetra": "ALBEMARLE CORP.    DL-,01",
+"kuerzel": "AMC",
+"treffer": 1.13
+},
+"ALGN": {
+"isin": "US0162551016",
+"xetra": "ALIGN TECHNOLOGY DL-,0001",
+"kuerzel": "AFW",
+"treffer": 1.13
+},
+"ALL": {
+"isin": "US0200021014",
+"xetra": "ALLSTATE CORP.     DL-,01",
+"kuerzel": "ALS",
+"treffer": 1.13
+},
+"ALLE": {
+"isin": "IE00BFRT3W74",
+"xetra": "ALLEGION PLC         DL 1",
+"kuerzel": "60A",
+"treffer": 0.9
+},
+"AMAT": {
+"isin": "US0382221051",
+"xetra": "APPLIED MATERIALS INC.",
+"kuerzel": "AP2",
+"treffer": 1.13
+},
+"AMCR": {
+"isin": "US29084Q1004",
+"xetra": "EMCOR GRP INC.     DL-,01",
+"kuerzel": "EM4",
+"treffer": 0.93
+},
+"AMD": {
+"isin": "US0079031078",
+"xetra": "ADVANCED MIC.DEV.  DL-,01",
+"kuerzel": "AMD",
+"treffer": 0.97
+},
+"AME": {
+"isin": "US0311001004",
+"xetra": "AMETEK INC.        DL-,01",
+"kuerzel": "AK1",
+"treffer": 1.13
+},
+"AMGN": {
+"isin": "US0311621009",
+"xetra": "AMGEN INC.       DL-,0001",
+"kuerzel": "AMG",
+"treffer": 1.13
+},
+"AMP": {
+"isin": "US03076C1062",
+"xetra": "AMERIPRISE FINL    DL-,01",
+"kuerzel": "A4S",
+"treffer": 0.99
+},
+"AMT": {
+"isin": "US0304201033",
+"xetra": "AMERICAN WATER WKS DL-,01",
+"kuerzel": "AWC",
+"treffer": 0.87
+},
+"AMZN": {
+"isin": "US0231351067",
+"xetra": "AMAZON.COM INC.    DL-,01",
+"kuerzel": "AMZ",
+"treffer": 1.13
+},
+"ANET": {
+"isin": "US0404132054",
+"xetra": "ARISTA NET.INC. NEW O.N.",
+"kuerzel": "1170",
+"treffer": 0.93
+},
+"AON": {
+"isin": "US0003602069",
+"xetra": "AAON INC.         DL-,004",
+"kuerzel": "AAO",
+"treffer": 0.99
+},
+"AOS": {
+"isin": "US8318652091",
+"xetra": "SMITH -A.O.- CORP.   DL 1",
+"kuerzel": "3SM",
+"treffer": 1.13
+},
+"APA": {
+"isin": "US03743Q1085",
+"xetra": "APA CORP.        DL -,625",
+"kuerzel": "2S3",
+"treffer": 1.13
+},
+"APD": {
+"isin": "US0091581068",
+"xetra": "AIR PROD. CHEM.      DL 1",
+"kuerzel": "AP3",
+"treffer": 0.8
+},
+"APH": {
+"isin": "US0320951017",
+"xetra": "AMPHENOL CORP.  A DL-,001",
+"kuerzel": "XPH",
+"treffer": 1.13
+},
+"APO": {
+"isin": "US03769M1062",
+"xetra": "APOLLO GL.M.NEW DL-,00001",
+"kuerzel": "N7I",
+"treffer": 0.76
+},
+"APP": {
+"isin": "US03831W1080",
+"xetra": "APPLOVIN CORP.A  -,00003",
+"kuerzel": "6RV",
+"treffer": 1.13
+},
+"APTV": {
+"isin": "US00187Y1001",
+"xetra": "API GROUP CORP.",
+"kuerzel": "4XY",
+"treffer": 0.88
+},
+"ARCC": {
+"isin": "DE000A0LE3J1",
+"xetra": "READCREST CAPITAL AG O.N.",
+"kuerzel": "EXJ0",
+"treffer": 0.73
+},
+"ARES": {
+"isin": "US94106L1098",
+"xetra": "WASTE MANAGEMENT",
+"kuerzel": "UWS",
+"treffer": 0.97
+},
+"ASML": {
+"isin": "NL0010273215",
+"xetra": "ASML HOLDING    EO -,09",
+"kuerzel": "ASME",
+"treffer": 1.05
+},
+"ATO": {
+"isin": "US1258961002",
+"xetra": "CMS ENERGY CORP.   DL-,01",
+"kuerzel": "CSG",
+"treffer": 0.95
+},
+"AVGO": {
+"isin": "US11135F1012",
+"xetra": "BROADCOM INC.     DL-,001",
+"kuerzel": "1YD",
+"treffer": 1.13
+},
+"AVY": {
+"isin": "US0536111091",
+"xetra": "AVERY DENNISON       DL 1",
+"kuerzel": "AV3",
+"treffer": 1.13
+},
+"AWK": {
+"isin": "US0304201033",
+"xetra": "AMERICAN WATER WKS DL-,01",
+"kuerzel": "AWC",
+"treffer": 1.08
+},
+"AXON": {
+"isin": "US05464C1018",
+"xetra": "AXON ENTERPRISE DL-,00001",
+"kuerzel": "TCS",
+"treffer": 1.13
+},
+"AXP": {
+"isin": "US0258161092",
+"xetra": "AMER. EXPRESS     DL -,20",
+"kuerzel": "AEC1",
+"treffer": 0.99
+},
+"AZN": {
+"isin": "DE000STRA555",
+"xetra": "STRATEC SE  NA O.N.",
+"kuerzel": "SBS",
+"treffer": 0.72
+},
+"AZO": {
+"isin": "US0533321024",
+"xetra": "AUTOZONE INC.      DL-,01",
+"kuerzel": "AZ5",
+"treffer": 1.13
+},
+"BA": {
+"isin": "US0970231058",
+"xetra": "BOEING CO.           DL 5",
+"kuerzel": "BCO",
+"treffer": 1.13
+},
+"BABA": {
+"isin": "ES0140609019",
+"xetra": "CAIXABANK S.A. EO",
+"kuerzel": "48CA",
+"treffer": 0.68
+},
+"BAC": {
+"isin": "US9290891004",
+"xetra": "VOYA FINANCIAL INC.DL-,01",
+"kuerzel": "V0Y",
+"treffer": 0.8
+},
+"BALL": {
+"isin": "US0900431000",
+"xetra": "BILL HOLDINGS   DL-,00001",
+"kuerzel": "0M5",
+"treffer": 0.88
+},
+"BAX": {
+"isin": "US00246W1036",
+"xetra": "AXT INC.          DL-,001",
+"kuerzel": "AHV",
+"treffer": 0.8
+},
+"BBVA": {
+"isin": "ES0113211835",
+"xetra": "BCO BIL.VIZ.ARG.NOM.EO-49",
+"kuerzel": "BOY",
+"treffer": 0.69
+},
+"BBY": {
+"isin": "US0865161014",
+"xetra": "BEST BUY CO.       DL-,10",
+"kuerzel": "BUY",
+"treffer": 1.13
+},
+"BCS": {
+"isin": "GB0031348658",
+"xetra": "BARCLAYS PLC      LS 0,25",
+"kuerzel": "BCY",
+"treffer": 1.05
+},
+"BDX": {
+"isin": "US0758871091",
+"xetra": "BECTON, DICKINSON    DL 1",
+"kuerzel": "BOX",
+"treffer": 1.02
+},
+"BE": {
+"isin": "US0937121079",
+"xetra": "BLOOM ENERGY A   DL-,0001",
+"kuerzel": "1ZB",
+"treffer": 1.13
+},
+"BEN": {
+"isin": "US03823U1025",
+"xetra": "APPLIED OPTOELECT.DL-,001",
+"kuerzel": "A59",
+"treffer": 0.64
+},
+"BF-B": {
+"isin": "US1156372096",
+"xetra": "BROWN-FORMAN CORP B DL-15",
+"kuerzel": "BF5B",
+"treffer": 1.13
+},
+"BG": {
+"isin": "CH1300646267",
+"xetra": "BUNGE GLOBAL S.A. DL-,01",
+"kuerzel": "Q23",
+"treffer": 0.9
+},
+"BHP": {
+"isin": "GB0007980591",
+"xetra": "BP PLC             DL-,25",
+"kuerzel": "BPE5",
+"treffer": 0.85
+},
+"BIIB": {
+"isin": "US09062X1037",
+"xetra": "BIOGEN INC. DL -,0005",
+"kuerzel": "IDP",
+"treffer": 1.13
+},
+"BKNG": {
+"isin": "US09857L1089",
+"xetra": "BOOKING HLDGS     DL-,008",
+"kuerzel": "PCE1",
+"treffer": 1.13
+},
+"BKR": {
+"isin": "US05722G1004",
+"xetra": "BAKER HUGHES CO.",
+"kuerzel": "68V",
+"treffer": 1.13
+},
+"BLK": {
+"isin": "US09290D1019",
+"xetra": "BLACKROCK INC.       O.N.",
+"kuerzel": "UU2",
+"treffer": 1.13
+},
+"BMY": {
+"isin": "US1101221083",
+"xetra": "BRISTOL-MYERS SQUIBBDL-10",
+"kuerzel": "BRM",
+"treffer": 1.08
+},
+"BNY": {
+"isin": "US0640581007",
+"xetra": "BK N.Y. MELLON    DL -,01",
+"kuerzel": "BN9",
+"treffer": 0.86
+},
+"BP": {
+"isin": "GB0007980591",
+"xetra": "BP PLC             DL-,25",
+"kuerzel": "BPE5",
+"treffer": 1.05
+},
+"BR": {
+"isin": "US11133T1034",
+"xetra": "BROADRIDGE FINL SOL.DL-01",
+"kuerzel": "5B9",
+"treffer": 0.91
+},
+"BRK-B": {
+"isin": "US0846701086",
+"xetra": "BERKSHIRE HATHAWAY A DL 5",
+"kuerzel": "BRH",
+"treffer": 1.08
+},
+"BRO": {
+"isin": "US1152361010",
+"xetra": "BROWN + BROWN      DL-,10",
+"kuerzel": "BTW",
+"treffer": 1.13
+},
+"BSX": {
+"isin": "US1011371077",
+"xetra": "BOSTON SCIENTIFIC  DL-,01",
+"kuerzel": "BSX",
+"treffer": 1.13
+},
+"BTI": {
+"isin": "GB0002875804",
+"xetra": "BRIT.AMER.TOBACCO  LS-,25",
+"kuerzel": "BMT",
+"treffer": 0.88
+},
+"BX": {
+"isin": "US09260D1072",
+"xetra": "BLACKSTONE INC. DL-,00001",
+"kuerzel": "BBN1",
+"treffer": 1.13
+},
+"BXP": {
+"isin": "US9837931008",
+"xetra": "XPO INC.         DL -,001",
+"kuerzel": "UX2A",
+"treffer": 0.8
+},
+"C": {
+"isin": "US1729674242",
+"xetra": "CITIGROUP INC. DL -,01",
+"kuerzel": "TRVC",
+"treffer": 1.13
+},
+"CAH": {
+"isin": "US14149Y1082",
+"xetra": "CARDINAL HEALTH INC.",
+"kuerzel": "CLH",
+"treffer": 1.13
+},
+"CARR": {
+"isin": "US14448C1045",
+"xetra": "CARRIER GLBL CORP  DL-,01",
+"kuerzel": "4PN",
+"treffer": 1.05
+},
+"CASY": {
+"isin": "US1475281036",
+"xetra": "CASEY'S GENL STORES",
+"kuerzel": "CS2",
+"treffer": 1.05
+},
+"CAT": {
+"isin": "US1491231015",
+"xetra": "CATERPILLAR INC.     DL 1",
+"kuerzel": "CAT1",
+"treffer": 1.13
+},
+"CB": {
+"isin": "CH0044328745",
+"xetra": "CHUBB LTD.       SF 24,15",
+"kuerzel": "AEX",
+"treffer": 0.9
+},
+"CBOE": {
+"isin": "US12503M1080",
+"xetra": "CBOE GLOB.MKTS INC.DL-,01",
+"kuerzel": "C67",
+"treffer": 0.98
+},
+"CBRE": {
+"isin": "US12504L1098",
+"xetra": "CBRE GROUP INC. A  DL-,01",
+"kuerzel": "RF6",
+"treffer": 1.13
+},
+"CCI": {
+"isin": "US20030N1019",
+"xetra": "COMCAST CORP.   A  DL-,01",
+"kuerzel": "CTP2",
+"treffer": 0.76
+},
+"CCL": {
+"isin": "US1468691027",
+"xetra": "CARVANA CO.",
+"kuerzel": "CV0",
+"treffer": 0.8
+},
+"CDNS": {
+"isin": "US1273871087",
+"xetra": "CADENCE DESIGN SYS DL-,01",
+"kuerzel": "CDS",
+"treffer": 1.03
+},
+"CDW": {
+"isin": "US12514G1085",
+"xetra": "CDW CORP.          DL-,01",
+"kuerzel": "CDW",
+"treffer": 1.13
+},
+"CEG": {
+"isin": "US21037T1097",
+"xetra": "CONSTELLATION ENERGY",
+"kuerzel": "E7S",
+"treffer": 1.13
+},
+"CF": {
+"isin": "US1252691001",
+"xetra": "CF INDS HLDGS      DL-,01",
+"kuerzel": "C4F",
+"treffer": 0.83
+},
+"CFG": {
+"isin": "US1746101054",
+"xetra": "CITIZENS FINL GROUP DL-01",
+"kuerzel": "1C5",
+"treffer": 0.89
+},
+"CHD": {
+"isin": "US1713401024",
+"xetra": "CHURCH + DWIGHT CO. DL 1",
+"kuerzel": "CXU",
+"treffer": 1.13
+},
+"CHRW": {
+"isin": "US12541W2098",
+"xetra": "C.H. ROB. WORLDWIDE NEW",
+"kuerzel": "CH1A",
+"treffer": 0.99
+},
+"CHTR": {
+"isin": "US16119P1084",
+"xetra": "CHARTER COM. CL. A",
+"kuerzel": "CQD",
+"treffer": 0.8
+},
+"CI": {
+"isin": "US1255231003",
+"xetra": "CIGNA GROUP, THE     DL 1",
+"kuerzel": "CGN",
+"treffer": 1.13
+},
+"CIEN": {
+"isin": "US1717793095",
+"xetra": "CIENA CORP. NEW    DL-,01",
+"kuerzel": "CIE1",
+"treffer": 1.13
+},
+"CINF": {
+"isin": "US1720621010",
+"xetra": "CINCINNATI FINL      DL 2",
+"kuerzel": "CCJ",
+"treffer": 0.99
+},
+"CL": {
+"isin": "US1941621039",
+"xetra": "COLGATE-PALMOLIVE    DL 1",
+"kuerzel": "CPA",
+"treffer": 1.13
+},
+"CLX": {
+"isin": "US1890541097",
+"xetra": "CLOROX CO.           DL 1",
+"kuerzel": "CXX",
+"treffer": 1.13
+},
+"CMCSA": {
+"isin": "US20030N1019",
+"xetra": "COMCAST CORP.   A  DL-,01",
+"kuerzel": "CTP2",
+"treffer": 1.13
+},
+"CME": {
+"isin": "US12572Q1058",
+"xetra": "CME GROUP INC.     DL-,01",
+"kuerzel": "MX4A",
+"treffer": 1.13
+},
+"CMG": {
+"isin": "US1696561059",
+"xetra": "CHIPOTLE MEX.GR.  DL -,01",
+"kuerzel": "C9F",
+"treffer": 0.94
+},
+"CMI": {
+"isin": "US2310211063",
+"xetra": "CUMMINS INC.      DL 2,50",
+"kuerzel": "CUM",
+"treffer": 1.13
+},
+"CMS": {
+"isin": "US1258961002",
+"xetra": "CMS ENERGY CORP.   DL-,01",
+"kuerzel": "CSG",
+"treffer": 1.13
+},
+"CNC": {
+"isin": "US15135B1017",
+"xetra": "CENTENE CORP.     DL-,001",
+"kuerzel": "QEN",
+"treffer": 1.13
+},
+"CNP": {
+"isin": "US15189T1079",
+"xetra": "CENTERPOINT ENERGY INC.",
+"kuerzel": "HOU",
+"treffer": 1.13
+},
+"COF": {
+"isin": "US14040H1059",
+"xetra": "CAPITAL ONE FINL   DL-,01",
+"kuerzel": "CFX",
+"treffer": 0.99
+},
+"COHR": {
+"isin": "US19247G1076",
+"xetra": "COHERENT CORP.",
+"kuerzel": "H7B",
+"treffer": 1.13
+},
+"COIN": {
+"isin": "US19260Q1076",
+"xetra": "COINBASE GLB.CL.A -,00001",
+"kuerzel": "1QZ",
+"treffer": 1.02
+},
+"COO": {
+"isin": "US1921085049",
+"xetra": "COEUR MINING DL -,01",
+"kuerzel": "CDM1",
+"treffer": 0.7
+},
+"COP": {
+"isin": "US20825C1045",
+"xetra": "CONOCOPHILLIPS     DL-,01",
+"kuerzel": "YCP",
+"treffer": 1.13
+},
+"COR": {
+"isin": "US03073E1055",
+"xetra": "CENCORA            DL-,01",
+"kuerzel": "ABG",
+"treffer": 1.13
+},
+"COST": {
+"isin": "US22160K1051",
+"xetra": "COSTCO WHOLESALE  DL-,005",
+"kuerzel": "CTO",
+"treffer": 1.13
+},
+"CPAY": {
+"isin": "US2199481068",
+"xetra": "CORPAY INC.",
+"kuerzel": "07G0",
+"treffer": 1.13
+},
+"CPRT": {
+"isin": "US2172041061",
+"xetra": "COPART INC.",
+"kuerzel": "CO6",
+"treffer": 1.13
+},
+"CPT": {
+"isin": "US2371941053",
+"xetra": "DARDEN REST. INC.",
+"kuerzel": "DDN",
+"treffer": 0.75
+},
+"CRH": {
+"isin": "US7607591002",
+"xetra": "REPUBLIC SERVIC. DL-,01",
+"kuerzel": "RPU",
+"treffer": 0.69
+},
+"CRL": {
+"isin": "US1598641074",
+"xetra": "CHARL.RIV.LAB INTL DL-,01",
+"kuerzel": "RV6",
+"treffer": 0.8
+},
+"CRM": {
+"isin": "US79466L3024",
+"xetra": "SALESFORCE INC.   DL-,001",
+"kuerzel": "FOO",
+"treffer": 1.13
+},
+"CRWD": {
+"isin": "US22788C1053",
+"xetra": "CROWDSTRIKE HLD. DL-,0005",
+"kuerzel": "45C",
+"treffer": 0.98
+},
+"CSCO": {
+"isin": "US17275R1023",
+"xetra": "CISCO SYSTEMS    DL-,001",
+"kuerzel": "CIS",
+"treffer": 1.13
+},
+"CSGP": {
+"isin": "US22160N1090",
+"xetra": "COSTAR GROUP INC.  DL-,01",
+"kuerzel": "RLG",
+"treffer": 1.13
+},
+"CSX": {
+"isin": "US1264081035",
+"xetra": "CSX CORP.            DL 1",
+"kuerzel": "CXR",
+"treffer": 1.13
+},
+"CTAS": {
+"isin": "US1729081059",
+"xetra": "CINTAS CORP.",
+"kuerzel": "CIT",
+"treffer": 1.13
+},
+"CTSH": {
+"isin": "US9255501051",
+"xetra": "VIAVI SOLUTIONS   DL-,001",
+"kuerzel": "UNS1",
+"treffer": 0.84
+},
+"CVNA": {
+"isin": "US1468691027",
+"xetra": "CARVANA CO.",
+"kuerzel": "CV0",
+"treffer": 1.13
+},
+"CVS": {
+"isin": "US1266501006",
+"xetra": "CVS HEALTH CORP.   DL-,01",
+"kuerzel": "CVS",
+"treffer": 1.13
+},
+"CVX": {
+"isin": "US1667641005",
+"xetra": "CHEVRON CORP.      DL-,75",
+"kuerzel": "CHV",
+"treffer": 1.13
+},
+"D": {
+"isin": "US25746U1097",
+"xetra": "DOMINION ENERGY INC.",
+"kuerzel": "DOD",
+"treffer": 1.13
+},
+"DAL": {
+"isin": "US2473617023",
+"xetra": "DELTA AIR LINES INC.",
+"kuerzel": "OYC",
+"treffer": 1.13
+},
+"DASH": {
+"isin": "US25809K1051",
+"xetra": "DOORDASH INC.CL.A -,00001",
+"kuerzel": "DD2",
+"treffer": 1.13
+},
+"DB": {
+"isin": "DE0005140008",
+"xetra": "DEUTSCHE BANK AG NA O.N.",
+"kuerzel": "DBK",
+"treffer": 0.68
+},
+"DD": {
+"isin": "US26614N2018",
+"xetra": "DUPONT DE NEMO. NEW O.N.",
+"kuerzel": "6D8",
+"treffer": 1.01
+},
+"DDOG": {
+"isin": "US23804L1035",
+"xetra": "DATADOG INC.  A DL-,00001",
+"kuerzel": "3QD",
+"treffer": 1.13
+},
+"DE": {
+"isin": "US2441991054",
+"xetra": "DEERE CO.            DL 1",
+"kuerzel": "DCO",
+"treffer": 1.13
+},
+"DECK": {
+"isin": "US2435371073",
+"xetra": "DECKERS OUTDOOR    DL-,01",
+"kuerzel": "DO2",
+"treffer": 1.13
+},
+"DELL": {
+"isin": "US24703L2025",
+"xetra": "DELL TECHS INC. C  DL-,01",
+"kuerzel": "12DA",
+"treffer": 0.7
+},
+"DEO": {
+"isin": "GB0002374006",
+"xetra": "DIAGEO PLC LS-,28935185",
+"kuerzel": "GUI",
+"treffer": 1.05
+},
+"DG": {
+"isin": "US2566771059",
+"xetra": "DOLLAR GENER.CORP.DL-,875",
+"kuerzel": "7DG",
+"treffer": 1.05
+},
+"DGX": {
+"isin": "US74834L1008",
+"xetra": "QUEST DIAGNOSTICS  DL-,01",
+"kuerzel": "QDI",
+"treffer": 1.13
+},
+"DHI": {
+"isin": "US23331A1097",
+"xetra": "D.R.HORTON INC.    DL-,01",
+"kuerzel": "HO2",
+"treffer": 1.13
+},
+"DHR": {
+"isin": "US2358511028",
+"xetra": "DANAHER CORP.      DL-,01",
+"kuerzel": "DAP",
+"treffer": 1.13
+},
+"DIS": {
+"isin": "US2546871060",
+"xetra": "DISNEY (WALT) CO.",
+"kuerzel": "WDP",
+"treffer": 1.13
+},
+"DLR": {
+"isin": "US25402D1028",
+"xetra": "DIGITALOCEAN HLD.-,000025",
+"kuerzel": "0SU",
+"treffer": 0.8
+},
+"DLTR": {
+"isin": "US2567461080",
+"xetra": "DOLLAR TREE INC.   DL-,01",
+"kuerzel": "DT3",
+"treffer": 1.13
+},
+"DOC": {
+"isin": "US2473617023",
+"xetra": "DELTA AIR LINES INC.",
+"kuerzel": "OYC",
+"treffer": 0.63
+},
+"DOV": {
+"isin": "US2600031080",
+"xetra": "DOVER CORP.          DL 1",
+"kuerzel": "DOV",
+"treffer": 1.13
+},
+"DOW": {
+"isin": "US12514G1085",
+"xetra": "CDW CORP.          DL-,01",
+"kuerzel": "CDW",
+"treffer": 0.8
+},
+"DPZ": {
+"isin": "US25754A2015",
+"xetra": "DOMINOS PIZZA INC. DL-,01",
+"kuerzel": "EZV",
+"treffer": 1.09
+},
+"DRI": {
+"isin": "US2371941053",
+"xetra": "DARDEN REST. INC.",
+"kuerzel": "DDN",
+"treffer": 0.89
+},
+"DTE": {
+"isin": "US35834F1049",
+"xetra": "T1 ENERGY INC.       O.N.",
+"kuerzel": "T2T",
+"treffer": 0.97
+},
+"DUK": {
+"isin": "US26441C2044",
+"xetra": "DUKE EN.CORP.    DL -,001",
+"kuerzel": "D2MN",
+"treffer": 0.91
+},
+"DVA": {
+"isin": "US23918K1088",
+"xetra": "DAVITA INC.      DL -,001",
+"kuerzel": "TRL",
+"treffer": 1.13
+},
+"DVN": {
+"isin": "US25746U1097",
+"xetra": "DOMINION ENERGY INC.",
+"kuerzel": "DOD",
+"treffer": 0.87
+},
+"DXCM": {
+"isin": "US2521311074",
+"xetra": "DEXCOM INC.       DL-,001",
+"kuerzel": "DC4",
+"treffer": 1.13
+},
+"E": {
+"isin": "IT0003132476",
+"xetra": "ENI S.P.A.",
+"kuerzel": "ENI",
+"treffer": 1.05
+},
+"EBAY": {
+"isin": "US2786421030",
+"xetra": "EBAY INC.         DL-,001",
+"kuerzel": "EBA",
+"treffer": 1.13
+},
+"ECHO": {
+"isin": "US2787681061",
+"xetra": "ECHOSTAR CORP. A DL -,001",
+"kuerzel": "E20",
+"treffer": 1.13
+},
+"ECL": {
+"isin": "US2788651006",
+"xetra": "ECOLAB INC.          DL 1",
+"kuerzel": "ECJ",
+"treffer": 1.13
+},
+"ED": {
+"isin": "US2091151041",
+"xetra": "CONSOLIDATED EDISON",
+"kuerzel": "EDC",
+"treffer": 1.13
+},
+"EFX": {
+"isin": "US2944291051",
+"xetra": "EQUIFAX INC.      DL 1,25",
+"kuerzel": "EFX",
+"treffer": 1.13
+},
+"EG": {
+"isin": "US2441991054",
+"xetra": "DEERE CO.            DL 1",
+"kuerzel": "DCO",
+"treffer": 0.8
+},
+"EIX": {
+"isin": "US2810201077",
+"xetra": "EDISON INTL",
+"kuerzel": "EIX",
+"treffer": 1.13
+},
+"EL": {
+"isin": "US5184391044",
+"xetra": "ESTEE LAUDER COS A DL-,01",
+"kuerzel": "ELAA",
+"treffer": 0.84
+},
+"ELV": {
+"isin": "US0367521038",
+"xetra": "ELEVANCE HEALTH    DL-,01",
+"kuerzel": "A58",
+"treffer": 1.13
+},
+"EME": {
+"isin": "US29084Q1004",
+"xetra": "EMCOR GRP INC.     DL-,01",
+"kuerzel": "EM4",
+"treffer": 1.13
+},
+"EMR": {
+"isin": "US2910111044",
+"xetra": "EMERSON EL.       DL -,50",
+"kuerzel": "EMR",
+"treffer": 0.9
+},
+"EOG": {
+"isin": "US26875P1012",
+"xetra": "EOG RESOURCES      DL-,01",
+"kuerzel": "EO5",
+"treffer": 1.13
+},
+"EPD": {
+"isin": "US45841N1072",
+"xetra": "INTERACTIVE BROKERS DL-01",
+"kuerzel": "KY6",
+"treffer": 0.64
+},
+"EQIX": {
+"isin": "US2944291051",
+"xetra": "EQUIFAX INC.      DL 1,25",
+"kuerzel": "EFX",
+"treffer": 0.84
+},
+"EQT": {
+"isin": "US26884L1098",
+"xetra": "EQT CORP.",
+"kuerzel": "EQ6",
+"treffer": 1.13
+},
+"ERIE": {
+"isin": "US7841171033",
+"xetra": "SEI INVESTMENT     DL-,01",
+"kuerzel": "SI3",
+"treffer": 0.77
+},
+"ES": {
+"isin": "US91913Y1001",
+"xetra": "VALERO ENERGY CORP.DL-,01",
+"kuerzel": "V1L",
+"treffer": 0.86
+},
+"ESS": {
+"isin": "US7766961061",
+"xetra": "ROPER TECHNOLOGIES DL-,01",
+"kuerzel": "ROP",
+"treffer": 0.66
+},
+"ET": {
+"isin": "US29415C1018",
+"xetra": "EOS ENERGY ENTERPR.CL.A",
+"kuerzel": "F9Q",
+"treffer": 0.74
+},
+"ETN": {
+"isin": "IE00B8KQN827",
+"xetra": "EATON CORP.PLC    DL -,01",
+"kuerzel": "3EC",
+"treffer": 0.9
+},
+"ETR": {
+"isin": "US29364G1031",
+"xetra": "ENTERGY CORP.      DL-,01",
+"kuerzel": "ETY",
+"treffer": 1.13
+},
+"EVRG": {
+"isin": "US30034W1062",
+"xetra": "EVERGY INC.",
+"kuerzel": "3E7",
+"treffer": 1.13
+},
+"EW": {
+"isin": "US28176E1082",
+"xetra": "EDWARDS LIFESCIENCES",
+"kuerzel": "EWL",
+"treffer": 1.13
+},
+"EXC": {
+"isin": "US30161N1019",
+"xetra": "EXELON CORP.",
+"kuerzel": "PEO",
+"treffer": 1.13
+},
+"EXE": {
+"isin": "US1651677353",
+"xetra": "EXPAND ENERGY      DL-,01",
+"kuerzel": "CS1",
+"treffer": 1.13
+},
+"EXPE": {
+"isin": "US30212P3038",
+"xetra": "EXPEDIA GRP INC. DL-,0001",
+"kuerzel": "E3X1",
+"treffer": 1.13
+},
+"EXR": {
+"isin": "US65339F1012",
+"xetra": "NEXTERA ENERGY INC.DL-,01",
+"kuerzel": "FP3",
+"treffer": 0.68
+},
+"F": {
+"isin": "US3453708600",
+"xetra": "FORD MOTOR         DL-,01",
+"kuerzel": "FMC1",
+"treffer": 1.13
+},
+"FANG": {
+"isin": "US25278X1090",
+"xetra": "DIAMONDBACK ENERGY DL-,01",
+"kuerzel": "7DB",
+"treffer": 1.13
+},
+"FAST": {
+"isin": "US3119001044",
+"xetra": "FASTENAL CO.       DL-,01",
+"kuerzel": "FAS",
+"treffer": 1.13
+},
+"FCX": {
+"isin": "US35671D8570",
+"xetra": "FREEPORT-MCMORAN INC.",
+"kuerzel": "FPMB",
+"treffer": 1.13
+},
+"FDS": {
+"isin": "US3030751057",
+"xetra": "FACTSET RESH SYS   DL-,01",
+"kuerzel": "FA1",
+"treffer": 0.93
+},
+"FDX": {
+"isin": "US31428X1063",
+"xetra": "FEDEX CORP.        DL-,10",
+"kuerzel": "FDX",
+"treffer": 1.13
+},
+"FDXF": {
+"isin": "US3143521058",
+"xetra": "FEDEX FGHT HLDG CO. O.N.",
+"kuerzel": "30G",
+"treffer": 0.84
+},
+"FE": {
+"isin": "US3379321074",
+"xetra": "FIRSTENERGY         DL 10",
+"kuerzel": "FE7",
+"treffer": 1.13
+},
+"FERG": {
+"isin": "US31488V1070",
+"xetra": "FERGUSON ENTERPRISES INC.",
+"kuerzel": "UH3",
+"treffer": 1.13
+},
+"FFIV": {
+"isin": "US3156161024",
+"xetra": "F5 O.N.",
+"kuerzel": "FFV",
+"treffer": 1.13
+},
+"FICO": {
+"isin": "US3032501047",
+"xetra": "FAIR ISAAC CORP.   DL-,01",
+"kuerzel": "FRI",
+"treffer": 1.13
+},
+"FIS": {
+"isin": "US31620M1062",
+"xetra": "FIDELITY NATL INF. SVCS",
+"kuerzel": "ZGY",
+"treffer": 0.86
+},
+"FISV": {
+"isin": "US3377381088",
+"xetra": "FISERV INC.        DL-,01",
+"kuerzel": "FIV",
+"treffer": 1.13
+},
+"FITB": {
+"isin": "US3167731005",
+"xetra": "FIFTH THIRD BANCORP",
+"kuerzel": "FFH",
+"treffer": 1.13
+},
+"FIX": {
+"isin": "US1999081045",
+"xetra": "COMFORT SYST. USA  DL-,01",
+"kuerzel": "9CF",
+"treffer": 1.04
+},
+"FLEX": {
+"isin": "US31428X1063",
+"xetra": "FEDEX CORP.        DL-,10",
+"kuerzel": "FDX",
+"treffer": 0.8
+},
+"FOX": {
+"isin": "US35137L1052",
+"xetra": "FOX CORP. A        DL-,01",
+"kuerzel": "FO5",
+"treffer": 1.13
+},
+"FOXA": {
+"isin": "US35137L1052",
+"xetra": "FOX CORP. A        DL-,01",
+"kuerzel": "FO5",
+"treffer": 1.13
+},
+"FRT": {
+"isin": "US7841171033",
+"xetra": "SEI INVESTMENT     DL-,01",
+"kuerzel": "SI3",
+"treffer": 0.75
+},
+"FSLR": {
+"isin": "US3364331070",
+"xetra": "FIRST SOLAR INC. D -,001",
+"kuerzel": "F3A",
+"treffer": 1.05
+},
+"FTNT": {
+"isin": "US34959E1091",
+"xetra": "FORTINET INC.     DL-,001",
+"kuerzel": "FO8",
+"treffer": 1.13
+},
+"FTV": {
+"isin": "US34959J1088",
+"xetra": "FORTIVE CORP.      DL-,01",
+"kuerzel": "F03",
+"treffer": 1.13
+},
+"GD": {
+"isin": "US3695501086",
+"xetra": "GENL DYNAMICS CORP.  DL 1",
+"kuerzel": "GDX",
+"treffer": 1.03
+},
+"GDDY": {
+"isin": "US3802371076",
+"xetra": "GODADDY INC. CL.A DL-,001",
+"kuerzel": "38D",
+"treffer": 1.13
+},
+"GE": {
+"isin": "US37045V1008",
+"xetra": "GENERAL MOTORS     DL-,01",
+"kuerzel": "8GM",
+"treffer": 0.8
+},
+"GEHC": {
+"isin": "US88033G4073",
+"xetra": "TENET HEALTHCARE   DL-,05",
+"kuerzel": "THC1",
+"treffer": 0.96
+},
+"GEN": {
+"isin": "US6687711084",
+"xetra": "GEN DIGITAL INC.   DL-,01",
+"kuerzel": "SYM",
+"treffer": 1.13
+},
+"GEV": {
+"isin": "US36828A1016",
+"xetra": "GE VERNOVA INC.",
+"kuerzel": "Y5C",
+"treffer": 1.13
+},
+"GILD": {
+"isin": "US3755581036",
+"xetra": "GILEAD SCIENCES   DL-,001",
+"kuerzel": "GIS",
+"treffer": 1.13
+},
+"GIS": {
+"isin": "US3703341046",
+"xetra": "GENL MILLS        DL -,10",
+"kuerzel": "GRM",
+"treffer": 1.0
+},
+"GL": {
+"isin": "US37959E1029",
+"xetra": "GLOBE LIFE INC.      DL 1",
+"kuerzel": "TMJ",
+"treffer": 1.13
+},
+"GLW": {
+"isin": "US2193501051",
+"xetra": "CORNING INC.      DL -,50",
+"kuerzel": "GLW",
+"treffer": 0.95
+},
+"GM": {
+"isin": "US37045V1008",
+"xetra": "GENERAL MOTORS     DL-,01",
+"kuerzel": "8GM",
+"treffer": 1.13
+},
+"GNRC": {
+"isin": "US3687361044",
+"xetra": "GENERAC HOLDINGS INC.",
+"kuerzel": "G84",
+"treffer": 1.13
+},
+"GOOG": {
+"isin": "US02079K1079",
+"xetra": "ALPHABET INC.CL.C DL-,001",
+"kuerzel": "ABEC",
+"treffer": 1.13
+},
+"GOOGL": {
+"isin": "US02079K1079",
+"xetra": "ALPHABET INC.CL.C DL-,001",
+"kuerzel": "ABEC",
+"treffer": 1.13
+},
+"GPC": {
+"isin": "US9078181081",
+"xetra": "UNION PAC.        DL 2,50",
+"kuerzel": "UNP",
+"treffer": 0.68
+},
+"GPN": {
+"isin": "US37940X1028",
+"xetra": "GLOBAL PAYMENTS INC.",
+"kuerzel": "GLO",
+"treffer": 1.13
+},
+"GRMN": {
+"isin": "CH0114405324",
+"xetra": "GARMIN LTD   NAM.SF 0,10",
+"kuerzel": "GEY",
+"treffer": 0.9
+},
+"GS": {
+"isin": "US38141G1040",
+"xetra": "GOLDMAN SACHS GRP INC.",
+"kuerzel": "GOS",
+"treffer": 1.13
+},
+"GSK": {
+"isin": "GB00BN7SWP63",
+"xetra": "GSK PLC  LS-,3125",
+"kuerzel": "GS71",
+"treffer": 1.05
+},
+"GWW": {
+"isin": "US3848021040",
+"xetra": "GRAINGER (W.W.) INC. DL 1",
+"kuerzel": "GWW",
+"treffer": 1.13
+},
+"HAL": {
+"isin": "US4062161017",
+"xetra": "HALLIBURTON CO.   DL 2,50",
+"kuerzel": "HAL",
+"treffer": 1.13
+},
+"HAS": {
+"isin": "US4062161017",
+"xetra": "HALLIBURTON CO.   DL 2,50",
+"kuerzel": "HAL",
+"treffer": 0.72
+},
+"HBAN": {
+"isin": "US4461501045",
+"xetra": "HUNTINGTON BANCSHS DL-,01",
+"kuerzel": "HU3",
+"treffer": 1.05
+},
+"HCA": {
+"isin": "US40412C1018",
+"xetra": "HCA HEALTHCARE INC.DL-,01",
+"kuerzel": "2BH",
+"treffer": 1.13
+},
+"HD": {
+"isin": "US4370761029",
+"xetra": "HOME DEPOT INC.    DL-,05",
+"kuerzel": "HDI",
+"treffer": 1.13
+},
+"HIG": {
+"isin": "US4165151048",
+"xetra": "HARTFORD INSURANCE GROUP",
+"kuerzel": "HFF",
+"treffer": 1.13
+},
+"HII": {
+"isin": "US4461501045",
+"xetra": "HUNTINGTON BANCSHS DL-,01",
+"kuerzel": "HU3",
+"treffer": 0.73
+},
+"HLT": {
+"isin": "US43300A2033",
+"xetra": "HILTON WORLD.HDGS DL -,01",
+"kuerzel": "HI91",
+"treffer": 0.92
+},
+"HMC": {
+"isin": "US3453708600",
+"xetra": "FORD MOTOR         DL-,01",
+"kuerzel": "FMC1",
+"treffer": 0.81
+},
+"HON": {
+"isin": "US4385162056",
+"xetra": "HONEYWELL INTL NEW O.N.",
+"kuerzel": "ALD0",
+"treffer": 1.13
+},
+"HOOD": {
+"isin": "US7707001027",
+"xetra": "ROBINH.MKTS CL.A DL-,0001",
+"kuerzel": "7KY",
+"treffer": 0.92
+},
+"HPE": {
+"isin": "US42824C1099",
+"xetra": "HEWLETT PACKARD ENT.",
+"kuerzel": "2HP",
+"treffer": 0.97
+},
+"HPQ": {
+"isin": "US40434L1052",
+"xetra": "HP INC            DL -,01",
+"kuerzel": "7HP",
+"treffer": 1.13
+},
+"HRL": {
+"isin": "US4404521001",
+"xetra": "HORMEL FOODS   DL-,01465",
+"kuerzel": "HO7",
+"treffer": 1.13
+},
+"HSBC": {
+"isin": "GB0005405286",
+"xetra": "HSBC HLDGS PLC     DL-,50",
+"kuerzel": "HBC1",
+"treffer": 1.05
+},
+"HSIC": {
+"isin": "US4278661081",
+"xetra": "HERSHEY CO.          DL 1",
+"kuerzel": "HSY",
+"treffer": 0.76
+},
+"HST": {
+"isin": "US4485791028",
+"xetra": "HYATT HOTELS CL. A DL-,01",
+"kuerzel": "1HTA",
+"treffer": 0.71
+},
+"HSY": {
+"isin": "US4278661081",
+"xetra": "HERSHEY CO.          DL 1",
+"kuerzel": "HSY",
+"treffer": 1.13
+},
+"HUBB": {
+"isin": "US4435106079",
+"xetra": "HUBBELL INC.       DL-,01",
+"kuerzel": "HUEC",
+"treffer": 1.13
+},
+"HUM": {
+"isin": "US4448591028",
+"xetra": "HUMANA INC.       DL-,166",
+"kuerzel": "HUM",
+"treffer": 1.13
+},
+"HWM": {
+"isin": "US4432011082",
+"xetra": "HOWMET AEROSPACE   DL-,01",
+"kuerzel": "48Z",
+"treffer": 1.13
+},
+"IBKR": {
+"isin": "US45841N1072",
+"xetra": "INTERACTIVE BROKERS DL-01",
+"kuerzel": "KY6",
+"treffer": 1.13
+},
+"IBM": {
+"isin": "US4592001014",
+"xetra": "INTL BUS. MACH.    DL-,20",
+"kuerzel": "IBM",
+"treffer": 0.77
+},
+"ICE": {
+"isin": "US45866F1049",
+"xetra": "INTERCONTINENTAL EXCH.INC",
+"kuerzel": "IC2",
+"treffer": 1.04
+},
+"IDXX": {
+"isin": "US45168D1046",
+"xetra": "IDEXX LABS INC.    DL-,10",
+"kuerzel": "IX1",
+"treffer": 0.84
+},
+"IEX": {
+"isin": "US45167R1041",
+"xetra": "IDEX CORP.         DL-,01",
+"kuerzel": "ID7",
+"treffer": 1.13
+},
+"IFF": {
+"isin": "US3434981011",
+"xetra": "FLOWERS FOODS INC. DL-,01",
+"kuerzel": "FWF",
+"treffer": 0.65
+},
+"ILMN": {
+"isin": "US4523271090",
+"xetra": "ILLUMINA INC.      DL-,01",
+"kuerzel": "ILU",
+"treffer": 1.13
+},
+"INCY": {
+"isin": "US45337C1027",
+"xetra": "INCYTE            DL-,001",
+"kuerzel": "ICY",
+"treffer": 1.13
+},
+"ING": {
+"isin": "NL0011821202",
+"xetra": "ING GROEP NV      EO -,01",
+"kuerzel": "INN1",
+"treffer": 1.05
+},
+"INTC": {
+"isin": "US4581401001",
+"xetra": "INTEL CORP.       DL-,001",
+"kuerzel": "INL",
+"treffer": 1.13
+},
+"INTU": {
+"isin": "US4612021034",
+"xetra": "INTUIT INC.        DL-,01",
+"kuerzel": "ITU",
+"treffer": 1.13
+},
+"INVH": {
+"isin": "US1220171060",
+"xetra": "BURLINGTON STORES DL-0001",
+"kuerzel": "BUI",
+"treffer": 0.68
+},
+"IP": {
+"isin": "US4601461035",
+"xetra": "INTL PAPER           DL 1",
+"kuerzel": "INP",
+"treffer": 1.13
+},
+"IQV": {
+"isin": "US46266C1053",
+"xetra": "IQVIA HLDGS        DL-,01",
+"kuerzel": "QTS",
+"treffer": 1.13
+},
+"IR": {
+"isin": "US45687V1061",
+"xetra": "INGERSOLL-RAND    DL -,01",
+"kuerzel": "5GD",
+"treffer": 1.13
+},
+"IRM": {
+"isin": "US68268W1036",
+"xetra": "ONEMAIN HOLDINGS   DL-,01",
+"kuerzel": "0S1",
+"treffer": 0.73
+},
+"ISRG": {
+"isin": "US46120E6023",
+"xetra": "INTUITIVE SURGIC. DL-,001",
+"kuerzel": "IUI1",
+"treffer": 1.07
+},
+"IT": {
+"isin": "US3666511072",
+"xetra": "GARTNER INC. DL -,0005",
+"kuerzel": "GGRA",
+"treffer": 1.13
+},
+"ITW": {
+"isin": "US4523081093",
+"xetra": "ILL. TOOL WKS",
+"kuerzel": "ILT",
+"treffer": 0.9
+},
+"IVZ": {
+"isin": "US95082P1057",
+"xetra": "WESCO INTL INC.    DL-,01",
+"kuerzel": "WP7",
+"treffer": 0.8
+},
+"J": {
+"isin": "US46982L1089",
+"xetra": "JACOBS SOLUTIONS INC. DL1",
+"kuerzel": "Z0Y",
+"treffer": 1.13
+},
+"JBHT": {
+"isin": "US74164F1030",
+"xetra": "PRIMORIS SERVICES CORP.",
+"kuerzel": "1PM",
+"treffer": 0.7
+},
+"JBL": {
+"isin": "US4663131039",
+"xetra": "JABIL DL-,001",
+"kuerzel": "JBL",
+"treffer": 1.13
+},
+"JCI": {
+"isin": "IE00BY7QL619",
+"xetra": "JOHNSON CONTR.INTL.DL-,01",
+"kuerzel": "TYIA",
+"treffer": 0.8
+},
+"JKHY": {
+"isin": "US03945R1023",
+"xetra": "ARCHER AVIATION  A -,0001",
+"kuerzel": "A1C0",
+"treffer": 0.69
+},
+"JNJ": {
+"isin": "US4781601046",
+"xetra": "JOHNSON + JOHNSON    DL 1",
+"kuerzel": "JNJ",
+"treffer": 1.13
+},
+"JPM": {
+"isin": "US46625H1005",
+"xetra": "JPMORGAN CHASE       DL 1",
+"kuerzel": "CMC",
+"treffer": 1.13
+},
+"KDP": {
+"isin": "US49271V1008",
+"xetra": "KEURIG DR PEPPER   DL-,01",
+"kuerzel": "DP5",
+"treffer": 1.13
+},
+"KEY": {
+"isin": "US4932671088",
+"xetra": "KEYCORP              DL 1",
+"kuerzel": "KEY",
+"treffer": 1.13
+},
+"KEYS": {
+"isin": "US49338L1035",
+"xetra": "KEYSIGHT TECHS     DL-,01",
+"kuerzel": "1KT",
+"treffer": 0.86
+},
+"KHC": {
+"isin": "US5007541064",
+"xetra": "KRAFT HEINZ CO.DL -,01",
+"kuerzel": "KHNZ",
+"treffer": 1.13
+},
+"KIM": {
+"isin": "US29261A1007",
+"xetra": "ENCOMP.HEALT.CORP. DL-,01",
+"kuerzel": "HSOA",
+"treffer": 0.71
+},
+"KKR": {
+"isin": "US4972661064",
+"xetra": "KIRBY CORP.       DL 0,10",
+"kuerzel": "KIY",
+"treffer": 0.63
+},
+"KLAC": {
+"isin": "US4824801009",
+"xetra": "KLA CORP.        DL -,001",
+"kuerzel": "KLA",
+"treffer": 1.13
+},
+"KMB": {
+"isin": "US4943681035",
+"xetra": "KIMBERLY-CLARK    DL 1,25",
+"kuerzel": "KMY",
+"treffer": 1.13
+},
+"KMI": {
+"isin": "US49456B1017",
+"xetra": "KINDER MORGAN P DL-,01",
+"kuerzel": "2KD",
+"treffer": 1.13
+},
+"KO": {
+"isin": "US1912161007",
+"xetra": "COCA-COLA CO.      DL-,25",
+"kuerzel": "CCC3",
+"treffer": 1.13
+},
+"KR": {
+"isin": "US5010441013",
+"xetra": "KROGER CO.           DL 1",
+"kuerzel": "KOG",
+"treffer": 1.13
+},
+"KVUE": {
+"isin": "US74624M1027",
+"xetra": "EVERPURE INC CL.A DL-0001",
+"kuerzel": "6PU",
+"treffer": 0.7
+},
+"L": {
+"isin": "US5404241086",
+"xetra": "LOEWS CORP.          DL 1",
+"kuerzel": "LTR",
+"treffer": 1.13
+},
+"LDOS": {
+"isin": "US5253271028",
+"xetra": "LEIDOS HOLDINGS  DL-,0001",
+"kuerzel": "S6IA",
+"treffer": 1.13
+},
+"LEN": {
+"isin": "US5260571048",
+"xetra": "LENNAR CORP.A      DL-,10",
+"kuerzel": "LNN",
+"treffer": 1.13
+},
+"LH": {
+"isin": "US5049221055",
+"xetra": "LABCORP HLDGS INC. O.N.",
+"kuerzel": "N6B",
+"treffer": 1.13
+},
+"LHX": {
+"isin": "US5024311095",
+"xetra": "L3HARRIS TECHS INC.DL-,01",
+"kuerzel": "HRS",
+"treffer": 0.86
+},
+"LII": {
+"isin": "US5261071071",
+"xetra": "LENNOX INTL INC.   DL-,01",
+"kuerzel": "LXI",
+"treffer": 1.13
+},
+"LIN": {
+"isin": "IE000S9YS762",
+"xetra": "LINDE PLC        EO -,001",
+"kuerzel": "LIN",
+"treffer": 0.9
+},
+"LITE": {
+"isin": "US55024U1097",
+"xetra": "LUMENTUM HLDGS IN.DL-,001",
+"kuerzel": "LU2",
+"treffer": 0.97
+},
+"LLY": {
+"isin": "US5324571083",
+"xetra": "ELI LILLY",
+"kuerzel": "LLY",
+"treffer": 0.95
+},
+"LMT": {
+"isin": "US5398301094",
+"xetra": "LOCKHEED MARTIN    DL 1",
+"kuerzel": "LOM",
+"treffer": 1.13
+},
+"LNT": {
+"isin": "US53115L1044",
+"xetra": "LIBERTY ENERGY   A DL-,01",
+"kuerzel": "2LO",
+"treffer": 0.84
+},
+"LOW": {
+"isin": "US3434981011",
+"xetra": "FLOWERS FOODS INC. DL-,01",
+"kuerzel": "FWF",
+"treffer": 0.7
+},
+"LRCX": {
+"isin": "US5128073062",
+"xetra": "LAM RESEARCH CORP. NEW",
+"kuerzel": "LAR0",
+"treffer": 1.13
+},
+"LULU": {
+"isin": "US5500211090",
+"xetra": "LULULEMON ATHLETICA INC.",
+"kuerzel": "33L",
+"treffer": 1.13
+},
+"LUV": {
+"isin": "US8447411088",
+"xetra": "SOUTHW. AIRL. CO.    DL 1",
+"kuerzel": "",
+"treffer": 0.84
+},
+"LVS": {
+"isin": "US5178341070",
+"xetra": "LAS VEGAS SANDS   DL-,001",
+"kuerzel": "LCR",
+"treffer": 1.13
+},
+"LYB": {
+"isin": "NL0009434992",
+"xetra": "LYONDELLBAS.IND.A EO -,04",
+"kuerzel": "DLY",
+"treffer": 0.65
+},
+"LYG": {
+"isin": "GB0008706128",
+"xetra": "LLOYDS BKG GRP     LS-,10",
+"kuerzel": "LLD",
+"treffer": 0.88
+},
+"LYV": {
+"isin": "US5380341090",
+"xetra": "LIVE NATION ENTMT.DL -,01",
+"kuerzel": "3LN",
+"treffer": 0.89
+},
+"MA": {
+"isin": "US57636Q1040",
+"xetra": "MASTERCARD INC.A DL-,0001",
+"kuerzel": "M4I",
+"treffer": 1.13
+},
+"MAA": {
+"isin": "US02376R1023",
+"xetra": "AMERICAN AIRLINES GRP",
+"kuerzel": "A1G",
+"treffer": 0.65
+},
+"MAIN": {
+"isin": "US49714P1084",
+"xetra": "KINSALE CAP.GRP.INC. -,01",
+"kuerzel": "KCH",
+"treffer": 0.66
+},
+"MAR": {
+"isin": "US5719032022",
+"xetra": "MARRIOTT INTL A    DL-,01",
+"kuerzel": "MAQ",
+"treffer": 0.97
+},
+"MAS": {
+"isin": "US5763231090",
+"xetra": "MASTEC INC.        DL-,10",
+"kuerzel": "MY8",
+"treffer": 0.86
+},
+"MCD": {
+"isin": "US5801351017",
+"xetra": "MCDONALDS CORP.   DL-,01",
+"kuerzel": "MDO",
+"treffer": 1.13
+},
+"MCHP": {
+"isin": "US5950171042",
+"xetra": "MICROCHIP TECH.   DL-,001",
+"kuerzel": "MCP",
+"treffer": 0.91
+},
+"MCK": {
+"isin": "US58155Q1031",
+"xetra": "MCKESSON           DL-,01",
+"kuerzel": "MCK",
+"treffer": 1.13
+},
+"MCO": {
+"isin": "US6153691059",
+"xetra": "MOODYS CORP       DL-,01",
+"kuerzel": "DUT",
+"treffer": 1.13
+},
+"MDLZ": {
+"isin": "US6092071058",
+"xetra": "MONDELEZ INTL INC. A",
+"kuerzel": "KTF",
+"treffer": 1.13
+},
+"MDT": {
+"isin": "IE00BTN1Y115",
+"xetra": "MEDTRONIC PLC    DL-,0001",
+"kuerzel": "2M6",
+"treffer": 0.9
+},
+"MET": {
+"isin": "US59156R1086",
+"xetra": "METLIFE INC.       DL-,01",
+"kuerzel": "MWZ",
+"treffer": 1.13
+},
+"META": {
+"isin": "US30303M1027",
+"xetra": "META PLATF.  A DL-,000006",
+"kuerzel": "FB2A",
+"treffer": 0.96
+},
+"MGM": {
+"isin": "US91879Q1094",
+"xetra": "VAIL RESORTS INC.  DL-,01",
+"kuerzel": "VAI",
+"treffer": 0.83
+},
+"MKC": {
+"isin": "US29084Q1004",
+"xetra": "EMCOR GRP INC.     DL-,01",
+"kuerzel": "EM4",
+"treffer": 0.7
+},
+"MLM": {
+"isin": "US5732841060",
+"xetra": "MARTIN MAR. MAT.   DL-,01",
+"kuerzel": "MMX",
+"treffer": 0.85
+},
+"MMM": {
+"isin": "US88579Y1010",
+"xetra": "3M CO.             DL-,01",
+"kuerzel": "MMM",
+"treffer": 1.13
+},
+"MNST": {
+"isin": "US61174X1090",
+"xetra": "MONSTER BEVER.NEW DL-,005",
+"kuerzel": "MOB",
+"treffer": 1.03
+},
+"MO": {
+"isin": "US02209S1033",
+"xetra": "ALTRIA GRP INC.   DL-,333",
+"kuerzel": "PHM7",
+"treffer": 1.13
+},
+"MOS": {
+"isin": "US61945C1036",
+"xetra": "MOSAIC CO. DL-,01",
+"kuerzel": "02M",
+"treffer": 1.13
+},
+"MPC": {
+"isin": "US56585A1025",
+"xetra": "MARATHON PETROLEUM DL-,01",
+"kuerzel": "MPN",
+"treffer": 1.13
+},
+"MPWR": {
+"isin": "US6098391054",
+"xetra": "MONOLITHIC POWER  DL-,001",
+"kuerzel": "NQG",
+"treffer": 0.93
+},
+"MRK": {
+"isin": "US58933Y1055",
+"xetra": "MERCK CO.          DL-,01",
+"kuerzel": "6MK",
+"treffer": 1.13
+},
+"MRNA": {
+"isin": "US60770K1079",
+"xetra": "MODERNA INC.     DL-,0001",
+"kuerzel": "0QF",
+"treffer": 1.13
+},
+"MRSH": {
+"isin": "US5717481023",
+"xetra": "MARSH+MCLENNAN COS.INC.D1",
+"kuerzel": "MSN",
+"treffer": 0.86
+},
+"MRVL": {
+"isin": "US5705351048",
+"xetra": "MARKEL GROUP",
+"kuerzel": "MKV",
+"treffer": 0.9
+},
+"MS": {
+"isin": "US6174464486",
+"xetra": "MORGAN STANLEY     DL-,01",
+"kuerzel": "DWD",
+"treffer": 1.13
+},
+"MSCI": {
+"isin": "US55354G1004",
+"xetra": "MSCI INC. A        DL-,01",
+"kuerzel": "3HM",
+"treffer": 1.13
+},
+"MSFT": {
+"isin": "US5949181045",
+"xetra": "MICROSOFT    DL-,00000625",
+"kuerzel": "MSF",
+"treffer": 1.13
+},
+"MSI": {
+"isin": "US6200763075",
+"xetra": "MOTOROLA SOLUTIONS DL-,01",
+"kuerzel": "MTLA",
+"treffer": 1.13
+},
+"MTB": {
+"isin": "US55261F1049",
+"xetra": "M+T BANK           DL-,50",
+"kuerzel": "MTZ",
+"treffer": 1.13
+},
+"MTD": {
+"isin": "US5926881054",
+"xetra": "METTLER-TOLEDO INTL",
+"kuerzel": "MTO",
+"treffer": 1.13
+},
+"MU": {
+"isin": "US6821891057",
+"xetra": "ON SEMICOND.       DL-,01",
+"kuerzel": "XS4",
+"treffer": 0.84
+},
+"MUFG": {
+"isin": "US7591EP1005",
+"xetra": "REGIONS FINANCIAL  DL-,01",
+"kuerzel": "RN7",
+"treffer": 0.64
+},
+"NCLH": {
+"isin": "US02376R1023",
+"xetra": "AMERICAN AIRLINES GRP",
+"kuerzel": "A1G",
+"treffer": 0.66
+},
+"NDAQ": {
+"isin": "US6311031081",
+"xetra": "NASDAQ INC.       DL -,01",
+"kuerzel": "NAQ",
+"treffer": 1.13
+},
+"NDSN": {
+"isin": "US4571871023",
+"xetra": "INGREDION INC.     DL-,01",
+"kuerzel": "CNP",
+"treffer": 0.76
+},
+"NEE": {
+"isin": "US65339F1012",
+"xetra": "NEXTERA ENERGY INC.DL-,01",
+"kuerzel": "FP3",
+"treffer": 1.13
+},
+"NEM": {
+"isin": "US6516391066",
+"xetra": "NEWMONT CORP.     DL 1,60",
+"kuerzel": "NMM",
+"treffer": 1.13
+},
+"NFLX": {
+"isin": "US64110L1061",
+"xetra": "NETFLIX INC.      DL-,001",
+"kuerzel": "NFC",
+"treffer": 1.13
+},
+"NI": {
+"isin": "US65473P1057",
+"xetra": "NISOURCE INC.",
+"kuerzel": "NOU",
+"treffer": 1.13
+},
+"NKE": {
+"isin": "US6541061031",
+"xetra": "NIKE INC. B",
+"kuerzel": "NKE",
+"treffer": 1.13
+},
+"NOC": {
+"isin": "US6668071029",
+"xetra": "NORTHROP GRUMMAN DL 1",
+"kuerzel": "NTH",
+"treffer": 1.13
+},
+"NOK": {
+"isin": "FI0009000681",
+"xetra": "NOKIA OYJ EO-,06",
+"kuerzel": "NOA3",
+"treffer": 1.05
+},
+"NOW": {
+"isin": "US81762P1021",
+"xetra": "SERVICENOW INC.   DL-,001",
+"kuerzel": "4S0",
+"treffer": 1.13
+},
+"NRG": {
+"isin": "US6293775085",
+"xetra": "NRG ENERGY INC.    DL-,01",
+"kuerzel": "NRA",
+"treffer": 1.13
+},
+"NSC": {
+"isin": "US6558441084",
+"xetra": "NORFOLK STHN CORP.   DL 1",
+"kuerzel": "NFS",
+"treffer": 0.99
+},
+"NTAP": {
+"isin": "US64110D1046",
+"xetra": "NETAPP INC.",
+"kuerzel": "NTA",
+"treffer": 1.13
+},
+"NTRS": {
+"isin": "US6658591044",
+"xetra": "NORTHN TRUST CORP.DL1,666",
+"kuerzel": "NT4",
+"treffer": 0.99
+},
+"NUE": {
+"isin": "US6703461052",
+"xetra": "NUCOR CORP.        DL-,40",
+"kuerzel": "NUO",
+"treffer": 1.13
+},
+"NVDA": {
+"isin": "US67066G1040",
+"xetra": "NVIDIA CORP.      DL-,001",
+"kuerzel": "NVD",
+"treffer": 1.13
+},
+"NVO": {
+"isin": "DK0062498333",
+"xetra": "NOVO-NORDISK AS B  DK 0,1",
+"kuerzel": "NOV",
+"treffer": 0.94
+},
+"NVR": {
+"isin": "US62944T1051",
+"xetra": "NVR INC.           DL-,01",
+"kuerzel": "NVE",
+"treffer": 1.13
+},
+"NVS": {
+"isin": "CH0012005267",
+"xetra": "NOVARTIS NAM.     SF 0,49",
+"kuerzel": "NOT",
+"treffer": 1.05
+},
+"NWS": {
+"isin": "US65249B1098",
+"xetra": "NEWS CORP. A       DL-,01",
+"kuerzel": "NC0",
+"treffer": 1.13
+},
+"NWSA": {
+"isin": "US65249B1098",
+"xetra": "NEWS CORP. A       DL-,01",
+"kuerzel": "NC0",
+"treffer": 1.13
+},
+"NXPI": {
+"isin": "NL0009538784",
+"xetra": "NXP SEMICONDUCTORS EO-,20",
+"kuerzel": "VNX",
+"treffer": 0.9
+},
+"O": {
+"isin": "US7595091023",
+"xetra": "RELIANCE INC.",
+"kuerzel": "RS6",
+"treffer": 0.7
+},
+"ODFL": {
+"isin": "US6795801009",
+"xetra": "OLD DOMIN.FR.LINE  DL-,10",
+"kuerzel": "ODF",
+"treffer": 0.94
+},
+"OKE": {
+"isin": "US09857L1089",
+"xetra": "BOOKING HLDGS     DL-,008",
+"kuerzel": "PCE1",
+"treffer": 0.63
+},
+"OMC": {
+"isin": "US6819191064",
+"xetra": "OMNICOM GRP INC.   DL-,15",
+"kuerzel": "OCN",
+"treffer": 1.13
+},
+"ON": {
+"isin": "US6821891057",
+"xetra": "ON SEMICOND.       DL-,01",
+"kuerzel": "XS4",
+"treffer": 0.89
+},
+"ORCL": {
+"isin": "US68389X1054",
+"xetra": "ORACLE CORP.       DL-,01",
+"kuerzel": "ORC",
+"treffer": 1.13
+},
+"ORLY": {
+"isin": "US67103H1077",
+"xetra": "O'REILLY AUTOMOTIV.DL-,01",
+"kuerzel": "OM6",
+"treffer": 1.1
+},
+"OTIS": {
+"isin": "US68902V1070",
+"xetra": "OTIS WORLDWID.CORP DL-,01",
+"kuerzel": "4PG",
+"treffer": 1.09
+},
+"OXY": {
+"isin": "US6745991058",
+"xetra": "OCCIDENTAL PET.    DL-,20",
+"kuerzel": "OPC",
+"treffer": 0.95
+},
+"P": {
+"isin": "US74624M1027",
+"xetra": "EVERPURE INC CL.A DL-0001",
+"kuerzel": "6PU",
+"treffer": 1.13
+},
+"PANW": {
+"isin": "US6974351057",
+"xetra": "PALO ALTO NETWKS DL-,0001",
+"kuerzel": "5AP",
+"treffer": 1.07
+},
+"PAYX": {
+"isin": "US7043261079",
+"xetra": "PAYCHEX INC.       DL-,01",
+"kuerzel": "PCX",
+"treffer": 1.13
+},
+"PCAR": {
+"isin": "US6937181088",
+"xetra": "PACCAR INC.          DL 1",
+"kuerzel": "PAE",
+"treffer": 1.13
+},
+"PCG": {
+"isin": "US69331C1080",
+"xetra": "PG + E CORP.",
+"kuerzel": "PCG",
+"treffer": 1.13
+},
+"PEG": {
+"isin": "US7445731067",
+"xetra": "PUBL. SVC.ENTER.",
+"kuerzel": "PSE",
+"treffer": 0.85
+},
+"PEP": {
+"isin": "US7134481081",
+"xetra": "PEPSICO INC.     DL-,0166",
+"kuerzel": "PEP",
+"treffer": 1.13
+},
+"PFE": {
+"isin": "US7170811035",
+"xetra": "PFIZER INC.        DL-,05",
+"kuerzel": "PFE",
+"treffer": 1.13
+},
+"PFG": {
+"isin": "US74251V1026",
+"xetra": "PRINCIPAL FINL GRP DL-,01",
+"kuerzel": "PG4",
+"treffer": 0.98
+},
+"PG": {
+"isin": "US7427181091",
+"xetra": "PROCTER GAMBLE",
+"kuerzel": "PRG",
+"treffer": 1.13
+},
+"PGR": {
+"isin": "US7433151039",
+"xetra": "PROGRESSIVE CORP.    DL 1",
+"kuerzel": "PGV",
+"treffer": 1.01
+},
+"PH": {
+"isin": "US7010941042",
+"xetra": "PARKER-HANNIFIN   DL-,50",
+"kuerzel": "PAR",
+"treffer": 1.13
+},
+"PHG": {
+"isin": "NL0000009538",
+"xetra": "KONINKL. PHILIPS EO -,20",
+"kuerzel": "PHI1",
+"treffer": 0.93
+},
+"PHM": {
+"isin": "US7458671010",
+"xetra": "PULTE GROUP INC.  DL -,01",
+"kuerzel": "PU7",
+"treffer": 0.8
+},
+"PKG": {
+"isin": "US6951561090",
+"xetra": "PACKAGING CORP. OF AMER.",
+"kuerzel": "PKA",
+"treffer": 1.05
+},
+"PLD": {
+"isin": "US71535D1063",
+"xetra": "PERSONALIS INC. DL-,001",
+"kuerzel": "04X",
+"treffer": 0.8
+},
+"PLTR": {
+"isin": "US69608A1088",
+"xetra": "PALANTIR TECHNOLOGIES INC",
+"kuerzel": "PTX",
+"treffer": 1.13
+},
+"PM": {
+"isin": "US7181721090",
+"xetra": "PHILIP MORRIS INTL INC.",
+"kuerzel": "4I1",
+"treffer": 1.13
+},
+"PNC": {
+"isin": "US6934751057",
+"xetra": "PNC FINL SERVICES GRP DL5",
+"kuerzel": "PNP",
+"treffer": 1.0
+},
+"PNR": {
+"isin": "US69608A1088",
+"xetra": "PALANTIR TECHNOLOGIES INC",
+"kuerzel": "PTX",
+"treffer": 0.8
+},
+"PNW": {
+"isin": "US72348N1090",
+"xetra": "PINNACLE FINL P. NEW O.N.",
+"kuerzel": "PFZ0",
+"treffer": 0.78
+},
+"PODD": {
+"isin": "US45784P1012",
+"xetra": "INSULET CORP.    DL -,001",
+"kuerzel": "GOV",
+"treffer": 1.13
+},
+"PPG": {
+"isin": "US6934751057",
+"xetra": "PNC FINL SERVICES GRP DL5",
+"kuerzel": "PNP",
+"treffer": 0.71
+},
+"PPL": {
+"isin": "US69351T1060",
+"xetra": "PPL CORP.          DL-,01",
+"kuerzel": "PP9",
+"treffer": 1.13
+},
+"PRU": {
+"isin": "US7443201022",
+"xetra": "PRUDENTIAL FINL    DL-,01",
+"kuerzel": "PLL",
+"treffer": 0.99
+},
+"PSA": {
+"isin": "US7607591002",
+"xetra": "REPUBLIC SERVIC. DL-,01",
+"kuerzel": "RPU",
+"treffer": 0.75
+},
+"PSX": {
+"isin": "US7185461040",
+"xetra": "PHILLIPS 66        DL-,01",
+"kuerzel": "R66",
+"treffer": 1.13
+},
+"PTC": {
+"isin": "US69370C1009",
+"xetra": "PTC INC.          DL -,01",
+"kuerzel": "PMTA",
+"treffer": 1.13
+},
+"PWR": {
+"isin": "US74762E1029",
+"xetra": "QUANTA SVCS     DL-,00001",
+"kuerzel": "QAA",
+"treffer": 0.98
+},
+"PYPL": {
+"isin": "US70450Y1038",
+"xetra": "PAYPAL HDGS INC.DL-,0001",
+"kuerzel": "2PP",
+"treffer": 0.84
+},
+"Q": {
+"isin": "US74743L1008",
+"xetra": "QNITY ELECTRONICS O.N.",
+"kuerzel": "Z5O",
+"treffer": 1.13
+},
+"QCOM": {
+"isin": "US7475251036",
+"xetra": "QUALCOMM INC.    DL-,0001",
+"kuerzel": "QCI",
+"treffer": 1.13
+},
+"RCL": {
+"isin": "US02376R1023",
+"xetra": "AMERICAN AIRLINES GRP",
+"kuerzel": "A1G",
+"treffer": 0.63
+},
+"RDDT": {
+"isin": "US75734B1008",
+"xetra": "REDDIT INC. CL.A",
+"kuerzel": "6VO",
+"treffer": 1.13
+},
+"REG": {
+"isin": "US29415C1018",
+"xetra": "EOS ENERGY ENTERPR.CL.A",
+"kuerzel": "F9Q",
+"treffer": 0.74
+},
+"REGN": {
+"isin": "US75886F1075",
+"xetra": "REGENERON PHARMAC.DL-,001",
+"kuerzel": "RGO",
+"treffer": 0.94
+},
+"RF": {
+"isin": "US7591EP1005",
+"xetra": "REGIONS FINANCIAL  DL-,01",
+"kuerzel": "RN7",
+"treffer": 1.13
+},
+"RIO": {
+"isin": "GB0007188757",
+"xetra": "RIO TINTO PLC      LS-,10",
+"kuerzel": "RIO1",
+"treffer": 1.05
+},
+"RJF": {
+"isin": "US7547301090",
+"xetra": "RAYMOND JAMES FIN. DL-,01",
+"kuerzel": "RJF",
+"treffer": 0.98
+},
+"RL": {
+"isin": "US7512121010",
+"xetra": "RALPH LAUREN A     DL-,01",
+"kuerzel": "PRL",
+"treffer": 1.13
+},
+"RMD": {
+"isin": "US7611521078",
+"xetra": "RESMED INC.       DL-,004",
+"kuerzel": "RME",
+"treffer": 1.13
+},
+"ROK": {
+"isin": "US7739031091",
+"xetra": "ROCKWELL AU.         DL 1",
+"kuerzel": "RWL",
+"treffer": 0.86
+},
+"ROL": {
+"isin": "US7757111049",
+"xetra": "ROLLINS INC.         DL 1",
+"kuerzel": "RLS",
+"treffer": 1.13
+},
+"ROP": {
+"isin": "US7766961061",
+"xetra": "ROPER TECHNOLOGIES DL-,01",
+"kuerzel": "ROP",
+"treffer": 1.13
+},
+"ROST": {
+"isin": "US7782961038",
+"xetra": "ROSS STRS INC.     DL-,01",
+"kuerzel": "RSO",
+"treffer": 1.03
+},
+"RSG": {
+"isin": "US7607591002",
+"xetra": "REPUBLIC SERVIC. DL-,01",
+"kuerzel": "RPU",
+"treffer": 1.07
+},
+"RTX": {
+"isin": "US75513E1010",
+"xetra": "RTX CORP.            -,01",
+"kuerzel": "5UR",
+"treffer": 1.13
+},
+"RVTY": {
+"isin": "US7140461093",
+"xetra": "REVVITY INC.         DL 1",
+"kuerzel": "PKN",
+"treffer": 1.13
+},
+"SAN": {
+"isin": "ES0113900J37",
+"xetra": "BCO SANTANDER N.EO0,5",
+"kuerzel": "BSD2",
+"treffer": 0.98
+},
+"SAP": {
+"isin": "DE0007164600",
+"xetra": "SAP SE O.N.",
+"kuerzel": "SAP",
+"treffer": 1.05
+},
+"SBAC": {
+"isin": "US98980L1017",
+"xetra": "ZOOM COMMUNIC. A DL -,001",
+"kuerzel": "5ZM",
+"treffer": 0.71
+},
+"SBUX": {
+"isin": "US8552441094",
+"xetra": "STARBUCKS CORP.",
+"kuerzel": "SRB",
+"treffer": 1.13
+},
+"SCHW": {
+"isin": "US8085131055",
+"xetra": "CHARLES SCHWAB CORP.DL-01",
+"kuerzel": "SWG",
+"treffer": 1.13
+},
+"SHEL": {
+"isin": "GB00BP6MXD84",
+"xetra": "SHELL PLC           EO-07",
+"kuerzel": "R6C0",
+"treffer": 1.05
+},
+"SHW": {
+"isin": "US8243481061",
+"xetra": "SHERWIN-WILLIAMS     DL 1",
+"kuerzel": "SJ3",
+"treffer": 1.13
+},
+"SJM": {
+"isin": "US8326964058",
+"xetra": "SMUCKER -J.M.-",
+"kuerzel": "JM2",
+"treffer": 1.08
+},
+"SKYD": {
+"isin": "US2358511028",
+"xetra": "DANAHER CORP.      DL-,01",
+"kuerzel": "DAP",
+"treffer": 0.66
+},
+"SLB": {
+"isin": "US78442P1066",
+"xetra": "SLM CORP.          DL-,20",
+"kuerzel": "SM1",
+"treffer": 0.8
+},
+"SMCI": {
+"isin": "US86800U3023",
+"xetra": "SUPER MICRO O.N.",
+"kuerzel": "MS51",
+"treffer": 0.84
+},
+"SNA": {
+"isin": "US83304A1060",
+"xetra": "SNAP INC. CL.A DL-,00001",
+"kuerzel": "1SI",
+"treffer": 1.13
+},
+"SNDK": {
+"isin": "US80004C2008",
+"xetra": "SANDISK CORP.     DL -,01",
+"kuerzel": "BW9",
+"treffer": 1.13
+},
+"SNPS": {
+"isin": "US8716071076",
+"xetra": "SYNOPSYS INC.      DL-,01",
+"kuerzel": "SYP",
+"treffer": 1.13
+},
+"SNY": {
+"isin": "US83406F1021",
+"xetra": "SOFI TECHNOLOGIES",
+"kuerzel": "6B0",
+"treffer": 0.85
+},
+"SO": {
+"isin": "US8425871071",
+"xetra": "THE SOUTHERN CO.     DL 5",
+"kuerzel": "SOT",
+"treffer": 1.13
+},
+"SOLV": {
+"isin": "US55024U1097",
+"xetra": "LUMENTUM HLDGS IN.DL-,001",
+"kuerzel": "LU2",
+"treffer": 0.73
+},
+"SONY": {
+"isin": "BE0003470755",
+"xetra": "SOLVAY S.A.  A",
+"kuerzel": "SOL",
+"treffer": 0.65
+},
+"SPG": {
+"isin": "US84265V1052",
+"xetra": "SOUTHERN COPPER    DL-,01",
+"kuerzel": "PCU",
+"treffer": 0.68
+},
+"SPGI": {
+"isin": "US78409V1044",
+"xetra": "S+P GLOBAL INC.      DL 1",
+"kuerzel": "MHL",
+"treffer": 1.13
+},
+"SRE": {
+"isin": "US8168511090",
+"xetra": "SEMPRA",
+"kuerzel": "SE4",
+"treffer": 1.13
+},
+"STAG": {
+"isin": "US8592411016",
+"xetra": "STERLING INFRASTRU.DL-,01",
+"kuerzel": "UAO",
+"treffer": 0.68
+},
+"STE": {
+"isin": "US29362U1043",
+"xetra": "ENTEGRIS INC.      DL-,01",
+"kuerzel": "ENQ",
+"treffer": 0.84
+},
+"STLA": {
+"isin": "NL00150001Q9",
+"xetra": "STELLANTIS NV     EO -,01",
+"kuerzel": "8TI",
+"treffer": 1.05
+},
+"STLD": {
+"isin": "US8581191009",
+"xetra": "STEEL DYNAMIC    DL-,0025",
+"kuerzel": "SD5",
+"treffer": 1.09
+},
+"STT": {
+"isin": "US8574771031",
+"xetra": "STATE STREET CORP.   DL 1",
+"kuerzel": "ZYA",
+"treffer": 1.13
+},
+"STX": {
+"isin": "US3666511072",
+"xetra": "GARTNER INC. DL -,0005",
+"kuerzel": "GGRA",
+"treffer": 0.7
+},
+"STZ": {
+"isin": "US21036P1084",
+"xetra": "CONST.BRANDS A     DL-,01",
+"kuerzel": "CB1A",
+"treffer": 0.88
+},
+"SW": {
+"isin": "IE00028FXN24",
+"xetra": "SMURFIT WESTROCK   DL-,01",
+"kuerzel": "N4U",
+"treffer": 0.85
+},
+"SWK": {
+"isin": "US5184391044",
+"xetra": "ESTEE LAUDER COS A DL-,01",
+"kuerzel": "ELAA",
+"treffer": 0.69
+},
+"SWKS": {
+"isin": "US83088M1027",
+"xetra": "SKYWORKS SOL.      DL-,25",
+"kuerzel": "AWM",
+"treffer": 0.93
+},
+"SYF": {
+"isin": "US87165B1035",
+"xetra": "SYNCHRONY FIN.    DL-,001",
+"kuerzel": "SFE",
+"treffer": 0.94
+},
+"SYK": {
+"isin": "US8636671013",
+"xetra": "STRYKER CORP.      DL-,10",
+"kuerzel": "SYK",
+"treffer": 1.13
+},
+"SYY": {
+"isin": "US8718291078",
+"xetra": "SYSCO CORP.          DL 1",
+"kuerzel": "SYY",
+"treffer": 1.13
+},
+"T": {
+"isin": "US00206R1023",
+"xetra": "AT + T INC.          DL 1",
+"kuerzel": "SOBA",
+"treffer": 1.13
+},
+"TDG": {
+"isin": "US8936411003",
+"xetra": "TRANSDIGM GROUP    DL-,01",
+"kuerzel": "T7D",
+"treffer": 1.13
+},
+"TDY": {
+"isin": "US8807701029",
+"xetra": "TERADYNE INC.     DL-,125",
+"kuerzel": "TEY",
+"treffer": 0.88
+},
+"TECH": {
+"isin": "US09073M1045",
+"xetra": "BIO-TECHNE CORP.   DL-,01",
+"kuerzel": "TE1",
+"treffer": 1.13
+},
+"TEL": {
+"isin": "IE000IVNQZ81",
+"xetra": "TE CONNECTIVITY   DL-,01",
+"kuerzel": "BZ4",
+"treffer": 0.9
+},
+"TER": {
+"isin": "US8807701029",
+"xetra": "TERADYNE INC.     DL-,125",
+"kuerzel": "TEY",
+"treffer": 1.13
+},
+"TFC": {
+"isin": "US89832Q1094",
+"xetra": "TRUIST FINL CORP.    DL 5",
+"kuerzel": "BBK",
+"treffer": 0.94
+},
+"TGT": {
+"isin": "US87612E1064",
+"xetra": "TARGET CORP.     DL-,0833",
+"kuerzel": "DYH",
+"treffer": 1.13
+},
+"TJX": {
+"isin": "US20464U1007",
+"xetra": "COMPASS INC.CL.A -,00001",
+"kuerzel": "91D",
+"treffer": 0.73
+},
+"TKO": {
+"isin": "US8887871080",
+"xetra": "TOAST INC.CL.A DL-,000001",
+"kuerzel": "71Y",
+"treffer": 0.63
+},
+"TM": {
+"isin": "AT0000A3FW25",
+"xetra": "STEYR MOTORS AG",
+"kuerzel": "4X0",
+"treffer": 0.72
+},
+"TMO": {
+"isin": "US8835561023",
+"xetra": "THERMO FISH.SCIENTIF.DL 1",
+"kuerzel": "TN8",
+"treffer": 1.04
+},
+"TMUS": {
+"isin": "US8725901040",
+"xetra": "T-MOBILE US INC.DL,-00001",
+"kuerzel": "TM5",
+"treffer": 1.13
+},
+"TPL": {
+"isin": "US88262P1021",
+"xetra": "TEXAS PAC.LD CORP. DL-,01",
+"kuerzel": "9WY",
+"treffer": 0.93
+},
+"TPR": {
+"isin": "US8760301072",
+"xetra": "TAPESTRY INC.      DL-,01",
+"kuerzel": "COY",
+"treffer": 1.13
+},
+"TRGP": {
+"isin": "US87612G1013",
+"xetra": "TARGA RESOURCES DL -,001",
+"kuerzel": "TAR",
+"treffer": 1.13
+},
+"TRMB": {
+"isin": "US8962391004",
+"xetra": "TRIMBLE INC.",
+"kuerzel": "TB5",
+"treffer": 1.13
+},
+"TROW": {
+"isin": "US74275K1088",
+"xetra": "PROCORE TECH.INC.DL-,0001",
+"kuerzel": "5PT",
+"treffer": 0.71
+},
+"TRV": {
+"isin": "US89417E1091",
+"xetra": "TRAVELERS COS INC.",
+"kuerzel": "PA9",
+"treffer": 0.77
+},
+"TSCO": {
+"isin": "US8923561067",
+"xetra": "TRACTOR SUPPLY    DL-,008",
+"kuerzel": "TR4",
+"treffer": 1.13
+},
+"TSLA": {
+"isin": "US88160R1014",
+"xetra": "TESLA INC. DL -,001",
+"kuerzel": "TL0",
+"treffer": 1.13
+},
+"TSM": {
+"isin": "NL0009538784",
+"xetra": "NXP SEMICONDUCTORS EO-,20",
+"kuerzel": "VNX",
+"treffer": 0.63
+},
+"TSN": {
+"isin": "US9024941034",
+"xetra": "TYSON FOODS INC A  DL-,10",
+"kuerzel": "TF7A",
+"treffer": 1.13
+},
+"TT": {
+"isin": "US2244081046",
+"xetra": "CRANE CO.",
+"kuerzel": "T12",
+"treffer": 0.93
+},
+"TTE": {
+"isin": "FR0000120271",
+"xetra": "TOTALENERGIES SE  EO 2,50",
+"kuerzel": "TOTB",
+"treffer": 1.05
+},
+"TTWO": {
+"isin": "US8740541094",
+"xetra": "TAKE-TWO INTERACT. SOFTW.",
+"kuerzel": "TKE",
+"treffer": 1.01
+},
+"TWLO": {
+"isin": "US90138F1021",
+"xetra": "TWILIO INC.",
+"kuerzel": "TWH",
+"treffer": 1.13
+},
+"TXN": {
+"isin": "US8825081040",
+"xetra": "TEXAS INSTR.         DL 1",
+"kuerzel": "TII",
+"treffer": 0.92
+},
+"TXT": {
+"isin": "US8832031012",
+"xetra": "TEXTRON INC.      DL-,125",
+"kuerzel": "TXT",
+"treffer": 1.13
+},
+"TYL": {
+"isin": "US8636671013",
+"xetra": "STRYKER CORP.      DL-,10",
+"kuerzel": "SYK",
+"treffer": 0.8
+},
+"UAL": {
+"isin": "US9113121068",
+"xetra": "UNITED PARCEL SE.B DL-01",
+"kuerzel": "UPAB",
+"treffer": 0.84
+},
+"UBER": {
+"isin": "US90353T1007",
+"xetra": "UBER TECH.      DL-,00001",
+"kuerzel": "UT8",
+"treffer": 0.75
+},
+"UBS": {
+"isin": "CH0244767585",
+"xetra": "UBS GROUP AG      SF -,10",
+"kuerzel": "0UB",
+"treffer": 1.05
+},
+"UDR": {
+"isin": "US2441991054",
+"xetra": "DEERE CO.            DL 1",
+"kuerzel": "DCO",
+"treffer": 0.63
+},
+"UHS": {
+"isin": "US9139031002",
+"xetra": "UNIV. HEALTH SERV.B DL-01",
+"kuerzel": "UHS",
+"treffer": 0.91
+},
+"UL": {
+"isin": "GB00BVZK7T90",
+"xetra": "UNILEVER PLC     LS -,035",
+"kuerzel": "UNV0",
+"treffer": 1.05
+},
+"ULTA": {
+"isin": "US90384S3031",
+"xetra": "ULTA BEAUTY DL-,01",
+"kuerzel": "34U",
+"treffer": 1.13
+},
+"UNH": {
+"isin": "US91324P1021",
+"xetra": "UNITEDHEALTH GROUP DL-,01",
+"kuerzel": "UNH",
+"treffer": 1.13
+},
+"UNP": {
+"isin": "US9078181081",
+"xetra": "UNION PAC.        DL 2,50",
+"kuerzel": "UNP",
+"treffer": 0.95
+},
+"UPS": {
+"isin": "US9113121068",
+"xetra": "UNITED PARCEL SE.B DL-01",
+"kuerzel": "UPAB",
+"treffer": 0.89
+},
+"URI": {
+"isin": "US9113631090",
+"xetra": "UNITED RENTALS INC.DL-,01",
+"kuerzel": "UR3",
+"treffer": 1.13
+},
+"USB": {
+"isin": "US9029733048",
+"xetra": "U.S. BANCORP       DL-,01",
+"kuerzel": "UB5",
+"treffer": 1.08
+},
+"V": {
+"isin": "US92826C8394",
+"xetra": "VISA INC. CL. A DL -,0001",
+"kuerzel": "3V64",
+"treffer": 1.13
+},
+"VEEV": {
+"isin": "US9224751084",
+"xetra": "VEEVA SYSTEMS A DL-,00001",
+"kuerzel": "VEE",
+"treffer": 1.13
+},
+"VICI": {
+"isin": "US91879Q1094",
+"xetra": "VAIL RESORTS INC.  DL-,01",
+"kuerzel": "VAI",
+"treffer": 0.72
+},
+"VLO": {
+"isin": "US91913Y1001",
+"xetra": "VALERO ENERGY CORP.DL-,01",
+"kuerzel": "V1L",
+"treffer": 1.03
+},
+"VLTO": {
+"isin": "US92338C1036",
+"xetra": "VERALTO CORP.",
+"kuerzel": "RZ2",
+"treffer": 1.13
+},
+"VMC": {
+"isin": "US9291601097",
+"xetra": "VULCAN MATERIALS CO  DL 1",
+"kuerzel": "VMC",
+"treffer": 1.13
+},
+"VOD": {
+"isin": "GB00BH4HKS39",
+"xetra": "VODAFONE GROUP PLC",
+"kuerzel": "VODI",
+"treffer": 0.75
+},
+"VRSK": {
+"isin": "US92345Y1064",
+"xetra": "VERISK ANALYTICS DL-001",
+"kuerzel": "VA7A",
+"treffer": 1.13
+},
+"VRSN": {
+"isin": "US92343E1029",
+"xetra": "VERISIGN INC.     DL-,001",
+"kuerzel": "VRS",
+"treffer": 0.97
+},
+"VRT": {
+"isin": "US92537N1081",
+"xetra": "VERTIV HOL.CL A DL-,0001",
+"kuerzel": "49V",
+"treffer": 0.88
+},
+"VRTX": {
+"isin": "US92532F1003",
+"xetra": "VERTEX PHARMAC.    DL-,01",
+"kuerzel": "VX1",
+"treffer": 0.85
+},
+"VST": {
+"isin": "US92840M1027",
+"xetra": "VISTRA CORP.       DL-,01",
+"kuerzel": "0V6",
+"treffer": 1.13
+},
+"VTR": {
+"isin": "US1729081059",
+"xetra": "CINTAS CORP.",
+"kuerzel": "CIT",
+"treffer": 0.8
+},
+"VTRS": {
+"isin": "US92556V1061",
+"xetra": "VIATRIS INC.  O.N.",
+"kuerzel": "VIA",
+"treffer": 1.13
+},
+"VZ": {
+"isin": "US92343V1044",
+"xetra": "VERIZON COMM. INC. DL-,10",
+"kuerzel": "BAC",
+"treffer": 0.84
+},
+"WAB": {
+"isin": "US9297401088",
+"xetra": "WESTINGH.AI.BR.T.  DL-,01",
+"kuerzel": "WB2",
+"treffer": 0.87
+},
+"WAT": {
+"isin": "US9418481035",
+"xetra": "WATERS CORP.       DL-,01",
+"kuerzel": "WAZ",
+"treffer": 1.13
+},
+"WDAY": {
+"isin": "US98138H1014",
+"xetra": "WORKDAY INC.CL.A  DL-,001",
+"kuerzel": "W7D",
+"treffer": 1.13
+},
+"WDC": {
+"isin": "US9581021055",
+"xetra": "WESTN DIGITAL      DL-,01",
+"kuerzel": "WDC",
+"treffer": 1.06
+},
+"WEC": {
+"isin": "US92939U1060",
+"xetra": "WEC ENERGY GRP      DL 10",
+"kuerzel": "WIC",
+"treffer": 1.13
+},
+"WELL": {
+"isin": "US5486611073",
+"xetra": "LOWE'S COS INC.    DL-,50",
+"kuerzel": "LWE",
+"treffer": 0.75
+},
+"WFC": {
+"isin": "US9497461015",
+"xetra": "WELLS FARGO + CO.DL 1,666",
+"kuerzel": "NWT",
+"treffer": 1.01
+},
+"WM": {
+"isin": "US94106L1098",
+"xetra": "WASTE MANAGEMENT",
+"kuerzel": "UWS",
+"treffer": 1.13
+},
+"WMB": {
+"isin": "US9699041011",
+"xetra": "WILLIAMS-SONOMA INC.DL-01",
+"kuerzel": "WM1",
+"treffer": 0.86
+},
+"WMT": {
+"isin": "US9311421039",
+"xetra": "WALMART DL-,10",
+"kuerzel": "WMT",
+"treffer": 1.13
+},
+"WRB": {
+"isin": "US1241551027",
+"xetra": "BUTTERFLY NETWORK CL.A",
+"kuerzel": "7JA",
+"treffer": 0.7
+},
+"WSM": {
+"isin": "US9699041011",
+"xetra": "WILLIAMS-SONOMA INC.DL-01",
+"kuerzel": "WM1",
+"treffer": 1.13
+},
+"WST": {
+"isin": "US7607591002",
+"xetra": "REPUBLIC SERVIC. DL-,01",
+"kuerzel": "RPU",
+"treffer": 0.69
+},
+"WTW": {
+"isin": "IE00BDB6Q211",
+"xetra": "WILLIS TOWERS WATSON",
+"kuerzel": "WTY",
+"treffer": 0.9
+},
+"WY": {
+"isin": "US65339F1012",
+"xetra": "NEXTERA ENERGY INC.DL-,01",
+"kuerzel": "FP3",
+"treffer": 0.67
+},
+"WYNN": {
+"isin": "US9831341071",
+"xetra": "WYNN RESORTS LTD   DL-,01",
+"kuerzel": "WYR",
+"treffer": 1.13
+},
+"XEL": {
+"isin": "US98389B1008",
+"xetra": "XCEL ENERGY       DL 2,50",
+"kuerzel": "NRN",
+"treffer": 1.13
+},
+"XOM": {
+"isin": "US30233Q1085",
+"xetra": "EXX.HO.COR. O.N.",
+"kuerzel": "7DZ",
+"treffer": 0.7
+},
+"XYL": {
+"isin": "US14316J1088",
+"xetra": "CARLYLE GROUP INC.",
+"kuerzel": "3VU",
+"treffer": 0.63
+},
+"XYZ": {
+"isin": "US8522341036",
+"xetra": "BLOCK INC. A",
+"kuerzel": "SQ3",
+"treffer": 1.13
+},
+"YUM": {
+"isin": "US9884981013",
+"xetra": "YUM BRANDS",
+"kuerzel": "TGR",
+"treffer": 1.13
+},
+"ZBH": {
+"isin": "US45256X1037",
+"xetra": "IMMUNITYBIO INC. DL-,0001",
+"kuerzel": "26CA",
+"treffer": 0.63
+},
+"ZBRA": {
+"isin": "US2786421030",
+"xetra": "EBAY INC.         DL-,001",
+"kuerzel": "EBA",
+"treffer": 0.8
+},
+"ZTS": {
+"isin": "US98978V1035",
+"xetra": "ZOETIS INC. CL.A  DL -,01",
+"kuerzel": "ZOE",
+"treffer": 1.13
+}
+}
