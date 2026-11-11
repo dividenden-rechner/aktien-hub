@@ -78,17 +78,20 @@ def main():
     firmen = lade("data/sec/fundamentals.json", {}).get("firmen", {})
     state = lade(STATE, {"erledigt": {}})
     daten = lade(OUT, {"firmen": {}})
-    key = ia.api_key()
+    try:
+        key = ia.api_key()
+    except SystemExit as e:
+        key = None; print("Kein Gemini-Schluessel:", e)
     kand = kandidaten(firmen, state["erledigt"])
     print(len(kand), "neue Ergebnismeldungen")
-    ki = 0
+    ki, abbruch, fehler = 0, "", []
     for c in kand:
         if ki >= MAX_KI:
             print("KI-Grenze je Lauf erreicht, Rest beim naechsten Lauf"); break
         try:
             r = km.edgar_press_release(c)
         except Exception as e:
-            print(c["sym"], "Meldung nicht ladbar:", str(e)[:80]); continue
+            fehler.append(f"{c['sym']} Meldung: {str(e)[:80]}"); print(c["sym"], "Meldung nicht ladbar:", str(e)[:80]); continue
         if not r:
             state["erledigt"][c["acc"]] = "ohne Anlage"; continue
         text, url = r
@@ -100,10 +103,10 @@ def main():
         ki += 1
         try:
             res = ia._generate([{"text": PROMPT.format(name=c["name"], sym=c["sym"], text=teil)}], SCHEMA, key)
-        except SystemExit:
-            print("KI nicht verfuegbar, Lauf beendet"); break
+        except SystemExit as e:
+            abbruch = "KI nicht verfuegbar: " + str(e)[:200]; print(abbruch); break
         except Exception as e:
-            print(c["sym"], "KI-Fehler:", str(e)[:100]); continue
+            fehler.append(f"{c['sym']}: {str(e)[:100]}"); print(c["sym"], "KI-Fehler:", str(e)[:100]); continue
         progs = [p for p in (res or {}).get("prognosen", []) if isinstance(p.get("von"), (int, float)) and isinstance(p.get("bis"), (int, float))
                  and re.fullmatch(r"20\d\d", str(p.get("geschaeftsjahr", "")))]
         state["erledigt"][c["acc"]] = f"{len(progs)} Prognosen"
@@ -114,6 +117,8 @@ def main():
         print(c["sym"], c["when"][:10], len(progs), "Prognosen")
         time.sleep(1)
     daten["stand"] = datetime.now(timezone.utc).strftime("%Y-%m-%d")
+    daten["letzter_lauf"] = {"zeit": datetime.now(timezone.utc).strftime("%Y-%m-%d %H:%M"), "kandidaten": len(kand), "ki_aufrufe": ki,
+                             "abbruch": abbruch, "fehler": fehler[:10]}
     daten["hinweis"] = "Eigene Prognosen der Unternehmen aus ihren Ergebnis-Pressemitteilungen (SEC 8-K, Anlage EX-99), automatisch ausgelesen. Keine Analystenschaetzungen."
     json.dump(daten, open(OUT, "w", encoding="utf-8"), ensure_ascii=False, indent=0)
     json.dump(state, open(STATE, "w", encoding="utf-8"), ensure_ascii=False, indent=0)
