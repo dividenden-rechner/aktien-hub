@@ -232,7 +232,7 @@ svg text{fill:var(--mut);font-size:11px;font-family:inherit}
 const DEFAULT_KEY = "proxy";
 let KEY = (()=>{try{return localStorage.getItem("fmpkey")||""}catch(e){return ""}})() || DEFAULT_KEY;
 function askKey(){const k=prompt("FMP API-Key (wird nur in deinem Browser gespeichert):",KEY);if(k!==null){KEY=k.trim();try{localStorage.setItem("fmpkey",KEY)}catch(e){}}}
-if(!KEY)setTimeout(askKey,300);
+/* Ohne FMP-Schlüssel läuft die Seite mit eigenen Daten (SEC, Deutsche Börse); kein Pflicht-Dialog mehr */
 const BASE = "https://financialmodelingprep.com/stable/";
 const $ = id => document.getElementById(id);
 const logo = s => `https://images.financialmodelingprep.com/symbol/${encodeURIComponent(s)}.png`;
@@ -240,7 +240,7 @@ const img = (s,web,nm) => { const d = web ? String(web).replace(/^https?:\/\/(ww
 const esc = s => String(s??"").replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
 
 async function api(path, params={}){
-  if(!KEY){askKey();if(!KEY)throw new Error("Kein API-Key hinterlegt")}
+  if(!KEY)throw new Error("Kein API-Key hinterlegt")
   const u = new URL(BASE+path);
   Object.entries(params).forEach(([k,v])=>u.searchParams.set(k,v));
   const ck="fmp:"+u.toString();
@@ -326,9 +326,12 @@ $("q").addEventListener("input",()=>{clearTimeout(timer);const t=$("q").value.tr
 $("q").addEventListener("keydown",e=>{if(e.key==="Enter"){const b=$("sug").querySelector(".it");if(b)b.click()}if(e.key==="Escape")$("sug").hidden=true});
 async function search(t){
   const my=++seq;
-  const [a,b]=await Promise.allSettled([api("search-name",{query:t,limit:8}),api("search-symbol",{query:t,limit:5})]);
+  const [a,b,S]=await Promise.allSettled([api("search-name",{query:t,limit:8}),api("search-symbol",{query:t,limit:5}),secLoad()]);
   if(my!==seq)return;
   const seen=new Set(),list=[];
+  /* Eigene Liste (SEC-Firmen) zuerst: Treffer über Kürzel oder Namen */
+  const qq=String(t).trim().toUpperCase();
+  if(S.status==="fulfilled"&&S.value&&qq){Object.entries(S.value.firmen).filter(([k,f])=>k.startsWith(qq)||String(f.n).toUpperCase().includes(qq)).sort((x,y)=>(y[0]===qq)-(x[0]===qq)||x[0].length-y[0].length).slice(0,8).forEach(([k,f])=>{seen.add(k);list.push({symbol:k,name:f.n,exchange:"SEC"})})}
   [a,b].forEach(r=>{if(r.status==="fulfilled"&&Array.isArray(r.value))r.value.forEach(x=>{if(!seen.has(x.symbol)){seen.add(x.symbol);list.push(x)}})});
   const sug=$("sug");
   sug.innerHTML=list.length?list.slice(0,10).map(x=>`<div class="sr"><button class="it" data-s="${esc(x.symbol)}">${img(x.symbol)}<span>${esc(x.name)}</span><small>${esc(x.symbol)} · ${esc(x.exchange||"")}</small></button><button class="wlp" data-wl="${esc(x.symbol)}" data-n="${esc(x.name)}" aria-label="Watchlist umschalten"></button></div>`).join(""):`<div class="it">Keine Treffer</div>`;
