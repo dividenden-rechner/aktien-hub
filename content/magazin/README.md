@@ -17,10 +17,11 @@ Datei anklicken, dann Stift-Symbol: Zeile `draft: true` löschen und speichern, 
 | 29.10.2026 22:42 | Amazon steigert Umsatz im dritten Quartal auf 201,9 Milliarden Dollar | [79738970_2026-10-29/7757_2242-amazon-q3-2026-zahlen.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/79738970_2026-10-29/7757_2242-amazon-q3-2026-zahlen.md) |
 | 29.10.2026 10:12 | Shell erzielt im dritten Quartal 10,8 Milliarden Dollar Gewinn | [79738970_2026-10-29/8987_1012-shell-q3-2026-ergebnisse.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/79738970_2026-10-29/8987_1012-shell-q3-2026-ergebnisse.md) |
 
-### Online (354)
+### Online (355)
 
 | Datum | Titel | Datei |
 |---|---|---|
+| 11.11.2026 12:36 | Alibaba-Aktie sinkt um 1,3 % trotz Börsenplänen für Chip-Sparte T-Head | [79738888_2026-11-11/8763_1236-alibaba-aktie-sinkt-um-1-3-prozent-trotz-boersenplaenen-fuer-chip-spar.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/79738888_2026-11-11/8763_1236-alibaba-aktie-sinkt-um-1-3-prozent-trotz-boersenplaenen-fuer-chip-spar.md) |
 | 11.11.2026 11:30 | Singulus: SpaceX bestellt eine Solarlinie im Wert von drei Vierteln eines Jahresumsatzes | [79738888_2026-11-11/9690_1130-singulus-spacex-auftrag-solarlinie-neun-monate-2026.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/79738888_2026-11-11/9690_1130-singulus-spacex-auftrag-solarlinie-neun-monate-2026.md) |
 | 11.11.2026 10:15 | RWE verdient nach neun Monaten 43 % mehr und peilt für 2026 das obere Ende der Prognose an | [79738888_2026-11-11/9684_1015-rwe-9m-2026-gewinn-steigt-prognose-oberes-ende.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/79738888_2026-11-11/9684_1015-rwe-9m-2026-gewinn-steigt-prognose-oberes-ende.md) |
 | 11.11.2026 07:50 | Siemens Energy verdreifacht den Quartalsgewinn und peilt für 2030 eine Marge von 20 bis 22 % an | [79738888_2026-11-11/9685_0750-siemens-energy-q4-2026-gewinn-verdreifacht-ziele-2030.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/79738888_2026-11-11/9685_0750-siemens-energy-q4-2026-gewinn-verdreifacht-ziele-2030.md) |
