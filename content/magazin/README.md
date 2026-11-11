@@ -3,13 +3,14 @@
 <!-- uebersicht-start -->
 ## Übersicht (wird automatisch erstellt, neueste zuerst)
 
-### Zur Freigabe: Entwürfe (7)
+### Zur Freigabe: Entwürfe (8)
 
 Datei anklicken, dann Stift-Symbol: Zeile `draft: true` löschen und speichern, dann geht der Artikel online.
 
 | Datum | Titel | Datei |
 |---|---|---|
 | 15.11.2026 10:00 | Cindy aus London und Jensen Huang: Die älteste Falle der Welt und die Frage, was Anleger daraus machen | [79738889_2026-11-10/9640_2140-huang-honigfalle-reportage-nvidia-quartalszahlen.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/79738889_2026-11-10/9640_2140-huang-honigfalle-reportage-nvidia-quartalszahlen.md) |
+| 11.11.2026 07:50 | Siemens Energy verdreifacht den Quartalsgewinn und peilt für 2030 eine Marge von 20 bis 22 % an | [79738888_2026-11-11/9685_0750-siemens-energy-q4-2026-gewinn-verdreifacht-ziele-2030.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/79738888_2026-11-11/9685_0750-siemens-energy-q4-2026-gewinn-verdreifacht-ziele-2030.md) |
 | 05.11.2026 23:05 | Wahlsieg der Demokraten löscht den Börsenrausch: Chipwerte brechen ein, Nasdaq rutscht in die Korrektur | [79738894_2026-11-05/7694_2305-marktueberblick-wahlsieg-demokraten-chipwerte-nasdaq-korrektur.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/79738894_2026-11-05/7694_2305-marktueberblick-wahlsieg-demokraten-chipwerte-nasdaq-korrektur.md) |
 | 29.10.2026 23:27 | Comfort Systems USA: Umsatz steigt im Q3 2026 auf 3,8 Milliarden US-Dollar | [79738970_2026-10-29/7672_2327-comfort-systems-usa-q3-2026-zahlen.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/79738970_2026-10-29/7672_2327-comfort-systems-usa-q3-2026-zahlen.md) |
 | 29.10.2026 23:26 | Oracle Corporation: Langfristiger Ausblick und Finanzziele bis FY30 | [79738970_2026-10-29/7673_2326-oracle-ausblick-investor-day-2026.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/79738970_2026-10-29/7673_2326-oracle-ausblick-investor-day-2026.md) |
