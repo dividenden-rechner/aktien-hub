@@ -213,7 +213,7 @@ def main():
             if f < 2 or abs(r - f) / f > 0.15:
                 continue
             je = [x for x in ("dividende_je_aktie", "eps_verw") if a in reihen[x] and b in reihen[x] and reihen[x][b][0]]
-            if not je or not all(0.6 < (reihen[x][a][0] / reihen[x][b][0]) / f < 1.6 for x in je):
+            if not je or not any(0.5 < (reihen[x][a][0] / reihen[x][b][0]) / f < 2 for x in je):
                 continue
             for e in [e for e in jahre if e <= a]:
                 for x in ("dividende_je_aktie", "eps_verw"):
