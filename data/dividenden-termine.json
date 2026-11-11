@@ -1,0 +1,617 @@
+{
+"firmen": {
+"COST": [
+{
+"betrag": 30,
+"waehrung": "USD",
+"zahltag": "2026-12-04",
+"stichtag": "2026-11-24",
+"art": "sonder",
+"beleg": "Costco Wholesale Corporation (“Costco” or the “Company”) (Nasdaq: COST) today announced that its Board of Directors has declared a special cash dividend of $30 per share on Costco common stock.",
+"ex_tag": "2026-11-24",
+"meldung": "2026-11-10",
+"quelle": "https://www.sec.gov/Archives/edgar/data/909832/000090983226000134/costex9918-k111026.htm"
+}
+],
+"STLD": [
+{
+"betrag": 0.53,
+"zahltag": "2027-01-08",
+"stichtag": "2026-12-31",
+"art": "regulaer",
+"beleg": " Dividends The company’s board of directors also declared a quarterly cash dividend of $0.53 per common share. The dividend is payable to shareholders of record at the close of business on December 31, 2026, and is payable on or about January 8, 2027.",
+"waehrung": "USD",
+"ex_tag": "2026-12-31",
+"meldung": "2026-11-10",
+"quelle": "https://www.sec.gov/Archives/edgar/data/1022671/000110465926125064/tm2629447d1_ex99-1.htm"
+}
+],
+"BR": [
+{
+"betrag": 1.09,
+"zahltag": "2027-01-11",
+"stichtag": "2026-12-10",
+"art": "regulaer",
+"beleg": "htm EX-99.1 Document EXHIBIT 99.1 Broadridge Declares Quarterly Dividend of $1.09 Per Share NEW YORK, November 10, 2026 -- Broadridge Financial Solutions, Inc (NYSE:BR) announced that its Board of Directors has declared a quarterly cash dividend of $1.09 per share. The dividend is payable on January",
+"waehrung": "USD",
+"ex_tag": "2026-12-10",
+"meldung": "2026-11-10",
+"quelle": "https://www.sec.gov/Archives/edgar/data/1383312/000138331226000035/ex991prredividend11-2026.htm"
+}
+],
+"NRG": [
+{
+"betrag": 0.475,
+"zahltag": "2026-11-16",
+"stichtag": "2026-11-02",
+"art": "regulaer",
+"beleg": " On October 19, 2026, NRG declared a quarterly dividend of $0.475 per common share, or $1.90 per share on an annualized basis. The dividend is payable on November 16, 2026, to common stockholders of record as of November 2, 2026.",
+"waehrung": "USD",
+"ex_tag": "2026-11-02",
+"meldung": "2026-11-09",
+"quelle": "https://www.sec.gov/Archives/edgar/data/1013871/000101387126000022/nrgq32026ex991.htm"
+}
+],
+"KLAC": [
+{
+"betrag": 0.23,
+"zahltag": "2026-12-01",
+"stichtag": "2026-11-16",
+"art": "regulaer",
+"beleg": "com | | KLA Declares Regular Cash Dividend MILPITAS, Calif., Nov 5, 2026 — The KLA Corporation (NASDAQ: KLAC) Board of Directors today declared a quarterly cash dividend of $0.23 per share on its common stock, payable on Dec 1, 2026 to KLA shareholders of record as of the close of business on Nov 16",
+"waehrung": "USD",
+"ex_tag": "2026-11-16",
+"meldung": "2026-11-06",
+"quelle": "https://www.sec.gov/Archives/edgar/data/319201/000119312526451824/d76372dex991.htm"
+}
+],
+"CCI": [
+{
+"betrag": 1.0625,
+"zahltag": "2026-12-31",
+"stichtag": "2026-12-15",
+"art": "regulaer",
+"beleg": "htm EX-99.1 Document Exhibit 99.1 | | | | | | | | | | | | NEWS RELEASE November 5, 2026 | | | | | | | | Contacts: Sunit Patel, CFO | | Hamilton West, VP & Treasurer | FOR IMMEDIATE RELEASE | Crown Castle Inc | | 713-570-3050 Crown Castle Declares Quarterly Common Stock Dividend November 5, 2026 - HO",
+"waehrung": "USD",
+"ex_tag": "2026-12-15",
+"meldung": "2026-11-05",
+"quelle": "https://www.sec.gov/Archives/edgar/data/1051470/000105147026000094/exhibit991-pressreleasedat.htm"
+}
+],
+"LRCX": [
+{
+"betrag": 0.33,
+"waehrung": "USD",
+"zahltag": "2027-01-06",
+"stichtag": "2026-12-02",
+"art": "regulaer",
+"beleg": "Lam Research Corporation (Nasdaq: LRCX) today announced that its Board of Directors approved a $25 billion share repurchase authorization and a quarterly dividend of $0.33 per share of common stock.",
+"ex_tag": "2026-12-02",
+"meldung": "2026-11-05",
+"quelle": "https://www.sec.gov/Archives/edgar/data/707549/000070754926000057/lrcx_exx991xsharexrepurcha.htm"
+}
+],
+"DVN": [
+{
+"betrag": 0.32,
+"zahltag": "2026-12-30",
+"stichtag": "2026-12-15",
+"art": "regulaer",
+"beleg": " RETURN OF CAPITAL Devon’s board of directors declared a fixed quarterly cash dividend of $0.32 per share for the fourth quarter, payable on December 30, 2026, to shareholders of record at the close of business on December 15, 2026, consistent with the company’s strategic priority of delivering valu",
+"waehrung": "USD",
+"ex_tag": "2026-12-15",
+"meldung": "2026-11-05",
+"quelle": "https://www.sec.gov/Archives/edgar/data/1090012/000119312526449884/d120646dex991.htm"
+}
+],
+"SPG": [
+{
+"betrag": 2.3,
+"waehrung": "USD",
+"zahltag": "2026-12-31",
+"stichtag": "2026-12-10",
+"art": "regulaer",
+"beleg": "Today, Simon’s Board of Directors declared a quarterly common stock dividend of $2.30 for the fourth quarter of 2026.",
+"ex_tag": "2026-12-10",
+"meldung": "2026-11-05",
+"quelle": "https://www.sec.gov/Archives/edgar/data/1063761/000110465926123325/tm2627777d2_ex99-1.htm"
+}
+],
+"WYNN": [
+{
+"betrag": 0.25,
+"zahltag": "2026-11-30",
+"stichtag": "2026-11-16",
+"art": "regulaer",
+"beleg": " Wynn Resorts, Limited also announced on November 5, 2026 that its Board of Directors declared a cash dividend of $0.25 per share, payable on November 30, 2026 to stockholders of record as of November 16, 2026. Property Results Macau Operations Wynn Palace Operating revenues from Wynn Palace were $5",
+"waehrung": "USD",
+"ex_tag": "2026-11-16",
+"meldung": "2026-11-05",
+"quelle": "https://www.sec.gov/Archives/edgar/data/1174922/000117492226000078/ex991wrlq32026pressrelease.htm"
+}
+],
+"TSCO": [
+{
+"betrag": 0.24,
+"waehrung": "USD",
+"zahltag": "2026-12-08",
+"stichtag": "2026-11-23",
+"art": "regulaer",
+"beleg": "its Board of Directors declared a quarterly cash dividend of $0.24 per share of the Company’s common stock.",
+"ex_tag": "2026-11-23",
+"meldung": "2026-11-05",
+"quelle": "https://www.sec.gov/Archives/edgar/data/916365/000091636526000076/a1152026tsco-ex991.htm"
+}
+],
+"COP": [
+{
+"betrag": 0.93,
+"waehrung": "USD",
+"zahltag": "2026-12-01",
+"stichtag": "2026-11-16",
+"art": "regulaer",
+"beleg": "ConocoPhillips raised its quarterly ordinary dividend by 11% to $0.93 per share, effective with the fourth-quarter dividend, payable Dec. 1, 2026, to stockholders of record at the close of business on Nov. 16, 2026.",
+"ex_tag": "2026-11-16",
+"meldung": "2026-11-05",
+"quelle": "https://www.sec.gov/Archives/edgar/data/1163165/000116316526000043/cop-20261105x8kexx991.htm"
+}
+],
+"GPN": [
+{
+"betrag": 0.25,
+"zahltag": "2026-12-24",
+"stichtag": "2026-12-10",
+"art": "regulaer",
+"beleg": "” Capital Allocation Global Payments’ Board of Directors approved a dividend of $0.25 per share payable on December 24, 2026 to shareholders of record as of December 10, 2026. Conference Call Global Payments’ management will host a live audio webcast today, November 5, 2026, at 8:00 a.",
+"waehrung": "USD",
+"ex_tag": "2026-12-10",
+"meldung": "2026-11-05",
+"quelle": "https://www.sec.gov/Archives/edgar/data/1123360/000112336026000091/exhibit99120260930.htm"
+}
+],
+"EVRG": [
+{
+"betrag": 0.7225,
+"zahltag": "2026-12-18",
+"stichtag": "2026-11-20",
+"art": "regulaer",
+"beleg": " Dividend Declaration The Board of Directors declared a dividend on the Company’s common stock of $0.7225 per share payable on December 18, 2026. The dividends are payable to shareholders of record as of November 20, 2026.",
+"waehrung": "USD",
+"ex_tag": "2026-11-20",
+"meldung": "2026-11-05",
+"quelle": "https://www.sec.gov/Archives/edgar/data/1711269/000119312526448521/d193466dex991.htm"
+}
+],
+"TPR": [
+{
+"betrag": 0.4625,
+"zahltag": "2026-12-21",
+"stichtag": "2026-12-04",
+"art": "regulaer",
+"beleg": " Shareholder Return Programs The Company now expects to return approximately $2.0 billion to shareholders in Fiscal 2027 through its capital return programs, an increase from prior guidance, which includes approximately $700 million returned in the fiscal first quarter: ● Dividend: The Company’s Boa",
+"waehrung": "USD",
+"ex_tag": "2026-12-04",
+"meldung": "2026-11-05",
+"quelle": "https://www.sec.gov/Archives/edgar/data/1116132/000114036126042034/ef20084882_ex99-1.htm"
+}
+],
+"TRGP": [
+{
+"betrag": 1.25,
+"waehrung": "USD",
+"zahltag": "2026-11-17",
+"stichtag": "2026-10-30",
+"art": "regulaer",
+"beleg": "On October 13, 2026, the Company declared a quarterly cash dividend of $1.25 per common share, or $5.00 per common share on an annualized basis, for the third quarter of 2026.",
+"ex_tag": "2026-10-30",
+"meldung": "2026-11-05",
+"quelle": "https://www.sec.gov/Archives/edgar/data/1389170/000119312526448401/trgp-ex99_1.htm"
+}
+],
+"CF": [
+{
+"betrag": 0.6,
+"waehrung": "USD",
+"zahltag": "2026-11-30",
+"stichtag": "2026-11-16",
+"art": "regulaer",
+"beleg": "On October 7, 2026, CF Industries’ Board of Directors declared a quarterly dividend of $0.60 per common share.",
+"ex_tag": "2026-11-16",
+"meldung": "2026-11-04",
+"quelle": "https://www.sec.gov/Archives/edgar/data/1324404/000132440426000023/cf-11042026_ex991xearnings.htm"
+}
+],
+"AFL": [
+{
+"betrag": 0.61,
+"zahltag": "2026-12-01",
+"stichtag": "2026-11-18",
+"art": "regulaer",
+"beleg": " SHAREHOLDER DIVIDEND The board of directors declared the fourth quarter dividend of $0.61 per share, payable on December 1, 2026 to shareholders of record at the close of business on November 18, 2026.",
+"waehrung": "USD",
+"ex_tag": "2026-11-18",
+"meldung": "2026-11-04",
+"quelle": "https://www.sec.gov/Archives/edgar/data/4977/000162828026070181/aflex991-q32026new.htm"
+}
+],
+"TPL": [
+{
+"betrag": 0.6,
+"zahltag": "2026-12-15",
+"stichtag": "2026-12-01",
+"art": "regulaer",
+"beleg": " Quarterly Dividend Declared On November 2, 2026, the Board declared a quarterly cash dividend of $0.60 per share, payable on December 15, 2026 to stockholders of record at the close of business on December 1, 2026. Conference Call and Webcast Information The Company will hold a conference call on T",
+"waehrung": "USD",
+"ex_tag": "2026-12-01",
+"meldung": "2026-11-04",
+"quelle": "https://www.sec.gov/Archives/edgar/data/1811074/000181107426000075/exhibit991q32026earningsre.htm"
+}
+],
+"EMR": [
+{
+"betrag": 0.595,
+"zahltag": "2026-12-10",
+"stichtag": "2026-11-13",
+"art": "regulaer",
+"beleg": " Emerson also declared a 7% quarterly cash dividend increase to $0.595 per share of common stock payable December 10, 2026 to stockholders of record November 13, 2026.",
+"waehrung": "USD",
+"ex_tag": "2026-11-13",
+"meldung": "2026-11-04",
+"quelle": "https://www.sec.gov/Archives/edgar/data/32604/000003260426000049/a2026q4release_ex991.htm"
+}
+],
+"COR": [
+{
+"betrag": 0.66,
+"zahltag": "2026-11-30",
+"stichtag": "2026-11-13",
+"art": "regulaer",
+"beleg": " Dividend Declaration On November 3, 2026, the Company declared a quarterly dividend of $0.66 per common share, a 10 percent increase in its quarterly dividend rate from $0.60 per common share. The quarterly dividend of $0.66 per common share is payable November 30, 2026, to stockholders of record a",
+"waehrung": "USD",
+"ex_tag": "2026-11-13",
+"meldung": "2026-11-04",
+"quelle": "https://www.sec.gov/Archives/edgar/data/1140859/000114085926000038/exhibit991-q42026.htm"
+}
+],
+"TECH": [
+{
+"betrag": 0.08,
+"waehrung": "USD",
+"zahltag": "2026-11-23",
+"stichtag": "2026-11-13",
+"art": "regulaer",
+"beleg": "Bio-Techne Corporation (NASDAQ: TECH) announced that its Board of Directors has decided to pay a dividend of $0.08 per share for the quarter ended September 30, 2026.",
+"ex_tag": "2026-11-13",
+"meldung": "2026-11-04",
+"quelle": "https://www.sec.gov/Archives/edgar/data/842023/000110465926122283/tech-ex99d1.htm"
+}
+],
+"EXPD": [
+{
+"betrag": 0.81,
+"zahltag": "2026-12-15",
+"stichtag": "2026-12-01",
+"art": "regulaer",
+"beleg": " Hackett | | Geoffrey Buscher | | | President and Chief Executive Officer | | Senior Vice President and Chief Financial Officer | | Director - Investor Relations | | | (206) 674-3455 | | (206) 674-3400 | | (206) 892-4510 FOR IMMEDIATE RELEASE EXPEDITORS ANNOUNCES SEMI-ANNUAL CASH DIVIDEND OF $0.81 B",
+"waehrung": "USD",
+"ex_tag": "2026-12-01",
+"meldung": "2026-11-03",
+"quelle": "https://www.sec.gov/Archives/edgar/data/746515/000119312526445448/expd-ex99_1.htm"
+}
+],
+"APO": [
+{
+"betrag": 0.5625,
+"waehrung": "USD",
+"zahltag": "2026-11-30",
+"stichtag": "2026-11-18",
+"art": "regulaer",
+"beleg": "Apollo Global Management, Inc. has declared a cash dividend of $0.5625 per share of its Common Stock for the third quarter ended September 30, 2026.",
+"ex_tag": "2026-11-18",
+"meldung": "2026-11-03",
+"quelle": "https://www.sec.gov/Archives/edgar/data/1858681/000185868126000063/erex9913q2026.htm"
+}
+],
+"AAPL": [
+{
+"betrag": 0.27,
+"zahltag": "2026-11-16",
+"stichtag": "2026-11-12",
+"art": "regulaer",
+"beleg": "” Apple’s board of directors has declared a cash dividend of $0.27 per share of the Company’s common stock. The dividend is payable on November 16, 2026, to shareholders of record as of the close of business on November 12, 2026.",
+"waehrung": "USD",
+"ex_tag": "2026-11-12",
+"meldung": "2026-11-02",
+"quelle": "https://www.sec.gov/Archives/edgar/data/320193/000032019326000024/a8-kex991q4202609262026.htm"
+}
+],
+"UDR": [
+{
+"betrag": 0.145,
+"waehrung": "USD",
+"zahltag": "2026-11-02",
+"stichtag": "2026-10-19",
+"art": "regulaer",
+"beleg": "October 19, 2026 | November 2, 2026 | $0.145 per common share",
+"ex_tag": "2026-10-19",
+"meldung": "2026-11-02",
+"quelle": "https://www.sec.gov/Archives/edgar/data/74208/000007420826000084/udr-ex99d1.htm"
+},
+{
+"betrag": 0.145,
+"waehrung": "USD",
+"zahltag": "2026-11-30",
+"stichtag": "2026-11-16",
+"art": "regulaer",
+"beleg": "November 16, 2026 | November 30, 2026 | $0.145 per common share",
+"ex_tag": "2026-11-16",
+"meldung": "2026-11-02",
+"quelle": "https://www.sec.gov/Archives/edgar/data/74208/000007420826000084/udr-ex99d1.htm"
+},
+{
+"betrag": 0.145,
+"waehrung": "USD",
+"zahltag": "2026-12-31",
+"stichtag": "2026-12-15",
+"art": "regulaer",
+"beleg": "December 15, 2026 | December 31, 2026 | $0.145 per common share",
+"ex_tag": "2026-12-15",
+"meldung": "2026-11-02",
+"quelle": "https://www.sec.gov/Archives/edgar/data/74208/000007420826000084/udr-ex99d1.htm"
+}
+],
+"SBAC": [
+{
+"betrag": 2.19,
+"zahltag": "2026-12-10",
+"stichtag": "2026-11-12",
+"art": "regulaer",
+"beleg": " Highlights of the third quarter include: | • | | Net income attributable to SBA of $231.3 million or $2.19 per share | • | | Industry-leading AFFO per share of $3.19 | • | | Repurchased 1.7 million shares throughout the quarter | • | | Established a $2.5 billion commercial paper program | • | | Sol",
+"waehrung": "USD",
+"ex_tag": "2026-11-12",
+"meldung": "2026-11-02",
+"quelle": "https://www.sec.gov/Archives/edgar/data/1034054/000119312526443666/d185668dex991.htm"
+}
+],
+"DOC": [
+{
+"betrag": 0.10167,
+"waehrung": "USD",
+"zahltag": "2026-10-30",
+"stichtag": "2026-10-19",
+"art": "regulaer",
+"beleg": "October 19, 2026 | October 30, 2026 | $0.10167 per common share",
+"ex_tag": "2026-10-19",
+"meldung": "2026-11-02",
+"quelle": "https://www.sec.gov/Archives/edgar/data/765880/000162828026068878/ex99109302026.htm"
+},
+{
+"betrag": 0.10167,
+"waehrung": "USD",
+"zahltag": "2026-11-25",
+"stichtag": "2026-11-13",
+"art": "regulaer",
+"beleg": "November 13, 2026 | November 25, 2026 | $0.10167 per common share",
+"ex_tag": "2026-11-13",
+"meldung": "2026-11-02",
+"quelle": "https://www.sec.gov/Archives/edgar/data/765880/000162828026068878/ex99109302026.htm"
+},
+{
+"betrag": 0.10167,
+"waehrung": "USD",
+"zahltag": "2026-12-30",
+"stichtag": "2026-12-18",
+"art": "regulaer",
+"beleg": "December 18, 2026 | December 30, 2026 | $0.10167 per common share",
+"ex_tag": "2026-12-18",
+"meldung": "2026-11-02",
+"quelle": "https://www.sec.gov/Archives/edgar/data/765880/000162828026068878/ex99109302026.htm"
+}
+],
+"FANG": [
+{
+"betrag": 1.18,
+"zahltag": "2026-11-19",
+"stichtag": "2026-11-12",
+"art": "regulaer",
+"beleg": " Cash Capital Expenditures: | | | | | | | | | | | | | | | | | | | | | | | | | | Three Months Ended September 30, | | Nine Months Ended September 30, | | 2026 | | 2025 | | 2026 | | 2025 | | (in millions) | Operated drilling and completion additions to oil and natural gas properties | $ | 884 | | | $ ",
+"waehrung": "USD",
+"ex_tag": "2026-11-12",
+"meldung": "2026-11-02",
+"quelle": "https://www.sec.gov/Archives/edgar/data/1539838/000153983826000180/diamondbackex991-11x2x26.htm"
+}
+],
+"ABBV": [
+{
+"betrag": 1.73,
+"zahltag": "2027-02-16",
+"stichtag": "2027-01-15",
+"art": "regulaer",
+"beleg": " Company Declares Dividend Increase of 5.2 Percent AbbVie is announcing today that its board of directors declared an increase in the company's quarterly cash dividend from $1.73 per share to $1.82 per share beginning with the dividend payable on February 16, 2027 to shareholders of record as of Jan",
+"waehrung": "USD",
+"ex_tag": "2027-01-15",
+"meldung": "2026-10-30",
+"quelle": "https://www.sec.gov/Archives/edgar/data/1551152/000155115226000033/abbv-20260930xexhibit991.htm"
+}
+],
+"FRT": [
+{
+"betrag": 1.16,
+"zahltag": "2027-01-15",
+"stichtag": "2027-01-04",
+"art": "regulaer",
+"beleg": " Regular Quarterly Dividends Federal Realty announced today that its Board of Trustees declared a regular quarterly cash dividend of $1.16 per common share, resulting in an indicated annual rate of $4.64 per common share. The regular common dividend will be payable on January 15, 2027 to common shar",
+"waehrung": "USD",
+"ex_tag": "2027-01-04",
+"meldung": "2026-10-30",
+"quelle": "https://www.sec.gov/Archives/edgar/data/34903/000003490326000054/frt-9302026xex991.htm"
+}
+],
+"EXC": [
+{
+"betrag": 0.42,
+"zahltag": "2026-12-15",
+"stichtag": "2026-12-04",
+"art": "regulaer",
+"beleg": " Recent Developments and Third Quarter Highlights •Dividend: On October 30, 2026, Exelon's Board of Directors declared a regular quarterly dividend of $0.42 per share on Exelon's common stock. The dividend is payable on December 15, 2026, to Exelon shareholders of record as of the close of business ",
+"waehrung": "USD",
+"ex_tag": "2026-12-04",
+"meldung": "2026-10-30",
+"quelle": "https://www.sec.gov/Archives/edgar/data/1109357/000110935726000092/exc-20261030ex991.htm"
+}
+],
+"REGN": [
+{
+"betrag": 0.94,
+"zahltag": "2026-12-03",
+"stichtag": "2026-11-20",
+"art": "regulaer",
+"beleg": " In October 2026, the Company declared a cash dividend of $0.94 per share on the Company's common stock and Class A stock, payable on December 3, 2026 to shareholders of record as of November 20, 2026.",
+"waehrung": "USD",
+"ex_tag": "2026-11-20",
+"meldung": "2026-10-30",
+"quelle": "https://www.sec.gov/Archives/edgar/data/872589/000087258926000032/exhibit991q32026.htm"
+}
+],
+"CVX": [
+{
+"betrag": 1.78,
+"zahltag": "2026-12-10",
+"stichtag": "2026-11-18",
+"art": "regulaer",
+"beleg": " •The company’s Board of Directors declared a quarterly dividend of one dollar and seventy-eight cents ($1.78) per share, payable December 10, 2026, to all holders of common stock as shown on the transfer records of the corporation at the close of business on November 18, 2026. Business Highlights a",
+"waehrung": "USD",
+"ex_tag": "2026-11-18",
+"meldung": "2026-10-30",
+"quelle": "https://www.sec.gov/Archives/edgar/data/93410/000009341026000196/a09302026ex9918-k.htm"
+}
+],
+"RSG": [
+{
+"betrag": 0.67,
+"waehrung": "USD",
+"zahltag": "2027-01-15",
+"stichtag": "2027-01-04",
+"art": "regulaer",
+"beleg": "On October 28, 2026, the Board of Directors declared a regular quarterly dividend of $0.670 per share for shareholders of record on January 4, 2027. The dividend will be paid on January 15, 2027.",
+"ex_tag": "2027-01-04",
+"meldung": "2026-10-29",
+"quelle": "https://www.sec.gov/Archives/edgar/data/1060391/000106039126000326/exhibit991q32026.htm"
+}
+],
+"RMD": [
+{
+"betrag": 0.66,
+"zahltag": "2026-12-17",
+"stichtag": "2026-11-12",
+"art": "regulaer",
+"beleg": " | | | | RMD First Quarter 2027 Earnings Press Release – October 29, 2026 | | Page 3 of 13 Fiscal Year 2027 guidance | | | | | | | | | | Metric | | FY 2027 Guidance as of August 6, 2026 | | FY 2027 Guidance as of October 29, 2026 | | Change | | Revenue | | Core Constant Currency: 5 - 7% growth | | C",
+"waehrung": "USD",
+"ex_tag": "2026-11-12",
+"meldung": "2026-10-29",
+"quelle": "https://www.sec.gov/Archives/edgar/data/943819/000119312526437783/d170451dex991.htm"
+}
+],
+"GILD": [
+{
+"betrag": 0.82,
+"zahltag": "2026-12-30",
+"stichtag": "2026-12-15",
+"art": "regulaer",
+"beleg": " •The Board declared a quarterly dividend of $0.82 per share of common stock for the fourth quarter of 2026. The dividend is payable on December 30, 2026, to stockholders of record at the close of business on December 15, 2026.",
+"waehrung": "USD",
+"ex_tag": "2026-12-15",
+"meldung": "2026-10-29",
+"quelle": "https://www.sec.gov/Archives/edgar/data/882095/000088209526000037/exhibit991earningspressrel.htm"
+}
+],
+"DHI": [
+{
+"betrag": 0.5,
+"zahltag": "2026-11-19",
+"stichtag": "2026-11-12",
+"art": "regulaer",
+"beleg": " Subsequent to year-end, the Company declared a quarterly cash dividend of $0.50 per share, an increase of 11% from its most recent dividend paid. The dividend is payable on November 19, 2026 to stockholders of record on November 12, 2026.",
+"waehrung": "USD",
+"ex_tag": "2026-11-12",
+"meldung": "2026-10-29",
+"quelle": "https://www.sec.gov/Archives/edgar/data/882184/000088218426000119/a9302026exhibit991.htm"
+}
+],
+"KIM": [
+{
+"betrag": 0.28,
+"waehrung": "USD",
+"zahltag": "2026-12-18",
+"stichtag": "2026-12-04",
+"art": "regulaer",
+"beleg": "The board of directors declared a cash dividend of $0.28 per common share",
+"ex_tag": "2026-12-04",
+"meldung": "2026-10-29",
+"quelle": "https://www.sec.gov/Archives/edgar/data/879101/000119312526436941/kim-ex99_1.htm"
+}
+],
+"CTSH": [
+{
+"betrag": 0.33,
+"zahltag": "2026-11-25",
+"stichtag": "2026-11-13",
+"art": "regulaer",
+"beleg": " In October 2026, the Company declared a quarterly cash dividend of $0.33 per share for shareholders of record on November 13, 2026. This dividend will be payable on November 25, 2026.",
+"waehrung": "USD",
+"ex_tag": "2026-11-13",
+"meldung": "2026-10-29",
+"quelle": "https://www.sec.gov/Archives/edgar/data/1058290/000105829026000039/exhibit9919302026.htm"
+}
+],
+"AWK": [
+{
+"betrag": 0.895,
+"zahltag": "2026-12-01",
+"stichtag": "2026-11-12",
+"art": "regulaer",
+"beleg": " Dividends On October 27, 2026, the company’s Board of Directors declared a quarterly cash dividend payment of $0.8950 per share, payable on December 1, 2026, to shareholders of record as of November 12, 2026. 2026 Third Quarter Earnings Conference Call The conference call to discuss the third quart",
+"waehrung": "USD",
+"ex_tag": "2026-11-12",
+"meldung": "2026-10-28",
+"quelle": "https://www.sec.gov/Archives/edgar/data/1410636/000141063626000150/ex991-9302026q3pressrelease.htm"
+}
+],
+"EBAY": [
+{
+"betrag": 0.31,
+"zahltag": "2026-12-18",
+"stichtag": "2026-12-04",
+"art": "regulaer",
+"beleg": " | | | | | | | | | | | (In billions, except per share data and percentages) | Q4 2026 Guidance | Full Year 2026 Guidance | | Revenue | $3.19 - $3.24 | $12.62 - $12.67 | | FX-Neutral Y/Y Growth | 7% - 9% | 12% - 13% | | | | | | Gross Merchandise Volume | $23.7 - $24.1 | $91.5 - $91.9 | | FX-Neutral Y",
+"waehrung": "USD",
+"ex_tag": "2026-12-04",
+"meldung": "2026-10-28",
+"quelle": "https://www.sec.gov/Archives/edgar/data/1065088/000106508826000209/exhibit991erebayq32026.htm"
+}
+],
+"GEN": [
+{
+"betrag": 0.125,
+"waehrung": "USD",
+"zahltag": "2026-12-09",
+"stichtag": "2026-11-16",
+"art": "regulaer",
+"beleg": "Gen's Board of Directors has approved a regular quarterly cash dividend of $0.125 per common share to be paid on December 9, 2026, to all shareholders of record as of the close of business on November 16, 2026.",
+"ex_tag": "2026-11-16",
+"meldung": "2026-10-28",
+"quelle": "https://www.sec.gov/Archives/edgar/data/849399/000084939926000081/ex9901q2fy27.htm"
+}
+]
+},
+"stand": "2026-11-11",
+"hinweis": "Beschlossene Dividenden aus Pressemitteilungen der Unternehmen (SEC 8-K, EX-99). Ex-Tag = Stichtag (USA, seit Mai 2024).",
+"letzter_lauf": {
+"zeit": "2026-11-11 18:57",
+"kandidaten": 1367,
+"abgerufen": 400,
+"mit_dividende": 43,
+"ki_aufrufe": 25,
+"fehler": []
+}
+}
