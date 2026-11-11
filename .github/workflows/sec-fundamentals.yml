@@ -9,7 +9,7 @@ on:
     - cron: "23 4 * * 0"   # sonntags: neue 10-K-Zahlen einsammeln
   workflow_dispatch:
 concurrency:
-  group: kurse-daten
+  group: sec-daten
   cancel-in-progress: false
 permissions:
   contents: write
