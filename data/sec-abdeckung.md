@@ -61,24 +61,32 @@ Nach IFRS (Auslandsfirmen, Beträge in Berichtswährung): 29. Dividende je Aktie
 - VMRK (Vivmark Residential, GJ 2025): umsatz
 - XEL (XCEL ENERGY INC, GJ 2025): umsatz
 
-## Ersatz-Namen und Split-Bereinigungen (117)
+## Ersatz-Namen und Split-Bereinigungen (149)
 
 - AAPL: Split 1:4 zwischen 2017 und 2018 bereinigt
+- AAPL: Split 1:7 zwischen 2011 und 2012 bereinigt
 - ACGL: Split 1:3 zwischen 2015 und 2016 bereinigt
 - ADP capex: PaymentsToAcquireOtherPropertyPlantAndEquipment
 - AFL schulden_lang: DebtInstrumentCarryingAmount
 - AFL: Split 1:2 zwischen 2015 und 2016 bereinigt
+- AMZN: Split 1:20 zwischen 2019 und 2020 bereinigt
 - ANET: Split 1:4 zwischen 2021 und 2022 bereinigt
 - AON aktienrueckkauf: PaymentsForRepurchaseOfEquity
 - AOS: Split 1:2 zwischen 2013 und 2014 bereinigt
+- AOS: Split 1:2 zwischen 2010 und 2011 bereinigt
 - APD schulden_lang: DebtInstrumentCarryingAmount
 - APH: Split 1:2 zwischen 2021 und 2022 bereinigt
 - APH: Split 1:2 zwischen 2018 und 2019 bereinigt
+- APH: Split 1:2 zwischen 2011 und 2012 bereinigt
+- AVGO: Split 1:10 zwischen 2021 und 2022 bereinigt
 - BABA: Split 1:8 zwischen 2017 und 2018 bereinigt
+- BALL: Split 1:2 zwischen 2014 und 2015 bereinigt
 - BE: Split 1:2 zwischen 2018 und 2019 bereinigt
 - BE: Split 1:5 zwischen 2017 und 2018 bereinigt
+- BEN: Split 1:3 zwischen 2010 und 2011 bereinigt
 - BF-B: Split 1:2 zwischen 2014 und 2015 bereinigt
 - BRO: Split 1:2 zwischen 2015 und 2016 bereinigt
+- BX: Split 1:2 zwischen 2014 und 2015 bereinigt
 - CF: Split 1:5 zwischen 2012 und 2013 bereinigt
 - CHD: Split 1:2 zwischen 2013 und 2014 bereinigt
 - CHD: Split 1:2 zwischen 2008 und 2009 bereinigt
@@ -86,6 +94,8 @@ Nach IFRS (Auslandsfirmen, Beträge in Berichtswährung): 29. Dividende je Aktie
 - CMCSA: Split 1:2 zwischen 2014 und 2015 bereinigt
 - CME: Split 1:5 zwischen 2009 und 2010 bereinigt
 - CMG: Split 1:49 zwischen 2021 und 2022 bereinigt
+- CNC: Split 1:3 zwischen 2015 und 2016 bereinigt
+- COO: Split 1:4 zwischen 2021 und 2022 bereinigt
 - CPRT: Split 1:4 zwischen 2020 und 2021 bereinigt
 - CPRT: Split 1:2 zwischen 2014 und 2015 bereinigt
 - CPRT: Split 1:2 zwischen 2009 und 2010 bereinigt
@@ -104,7 +114,9 @@ Nach IFRS (Auslandsfirmen, Beträge in Berichtswährung): 29. Dividende je Aktie
 - DLR capex: PaymentsToDevelopRealEstateAssets
 - DLTR: Split 1:2 zwischen 2010 und 2011 bereinigt
 - DVA: Split 1:2 zwischen 2010 und 2011 bereinigt
+- EL: Split 1:2 zwischen 2009 und 2010 bereinigt
 - EOG capex: PaymentsToAcquireOilAndGasPropertyAndEquipment
+- EOG: Split 1:2 zwischen 2011 und 2012 bereinigt
 - EPD dividenden_gezahlt: DistributionMadeToLimitedPartnerCashDistributionsPaid
 - EPD eigenkapital: PartnersCapital
 - EQIX schulden_lang: DebtInstrumentCarryingAmount
@@ -116,6 +128,7 @@ Nach IFRS (Auslandsfirmen, Beträge in Berichtswährung): 29. Dividende je Aktie
 - FAST: Split 1:2 zwischen 2022 und 2023 bereinigt
 - FAST: Split 1:2 zwischen 2016 und 2017 bereinigt
 - FAST: Split 1:2 zwischen 2008 und 2009 bereinigt
+- FCX: Split 1:2 zwischen 2007 und 2008 bereinigt
 - FISV: Split 1:2 zwischen 2015 und 2016 bereinigt
 - FISV: Split 1:2 zwischen 2010 und 2011 bereinigt
 - FTNT: Split 1:5 zwischen 2019 und 2020 bereinigt
@@ -126,10 +139,14 @@ Nach IFRS (Auslandsfirmen, Beträge in Berichtswährung): 29. Dividende je Aktie
 - HSIC: Split 1:2 zwischen 2014 und 2015 bereinigt
 - IBKR: Split 1:4 zwischen 2022 und 2023 bereinigt
 - IDXX: Split 1:2 zwischen 2012 und 2013 bereinigt
+- IFF: Split 1:2 zwischen 2020 und 2021 bereinigt
 - ILMN schulden_lang: LongTermNotesPayable
 - ISRG: Split 1:3 zwischen 2018 und 2019 bereinigt
 - ISRG: Split 1:3 zwischen 2014 und 2015 bereinigt
+- KDP: Split 1:6 zwischen 2017 und 2018 bereinigt
 - KLAC: Split 1:10 zwischen 2023 und 2024 bereinigt
+- KMI: Split 1:2 zwischen 2014 und 2015 bereinigt
+- KO: Split 1:2 zwischen 2009 und 2010 bereinigt
 - KR: Split 1:2 zwischen 2013 und 2014 bereinigt
 - KVUE schulden_lang: DebtLongtermAndShorttermCombinedAmount
 - LLY capex: PaymentsToAcquireOtherPropertyPlantAndEquipment
@@ -141,29 +158,39 @@ Nach IFRS (Auslandsfirmen, Beträge in Berichtswährung): 29. Dividende je Aktie
 - MCHP: Split 1:2 zwischen 2019 und 2020 bereinigt
 - MET capex: PaymentsToAcquireRealEstateAndRealEstateJointVentures
 - MET schulden_lang: SecuredDebt
+- MKC: Split 1:2 zwischen 2017 und 2018 bereinigt
 - MPC: Split 1:2 zwischen 2012 und 2013 bereinigt
 - NDAQ: Split 1:3 zwischen 2019 und 2020 bereinigt
+- NDSN: Split 1:2 zwischen 2008 und 2009 bereinigt
 - NEE: Split 1:4 zwischen 2017 und 2018 bereinigt
 - NFLX: Split 1:10 zwischen 2022 und 2023 bereinigt
 - NKE: Split 1:2 zwischen 2013 und 2014 bereinigt
 - NKE: Split 1:2 zwischen 2010 und 2011 bereinigt
+- NVDA: Split 1:10 zwischen 2022 und 2023 bereinigt
 - NVDA: Split 1:4 zwischen 2019 und 2020 bereinigt
 - NVO: Split 1:2 zwischen 2020 und 2021 bereinigt
 - O schulden_lang: NotesPayable
 - ODFL: Split 1:2 zwischen 2021 und 2022 bereinigt
 - ORCL schulden_lang: DebtInstrumentCarryingAmount
 - ORLY: Split 1:14 zwischen 2022 und 2023 bereinigt
+- PANW: Split 1:3 zwischen 2020 und 2021 bereinigt
 - PCAR liquide_mittel: CashCashEquivalentsRestrictedCashAndRestrictedCashEquivalentsIncludingDisposalGroupAndDiscontinuedOperations
 - PFG capex: PaymentsToAcquireRealEstateHeldForInvestment
 - PGR schulden_lang: DebtInstrumentCarryingAmount
+- PPG: Split 1:2 zwischen 2012 und 2013 bereinigt
 - REG capex: PaymentsToDevelopRealEstateAssets
 - ROST: Split 1:2 zwischen 2013 und 2014 bereinigt
 - ROST: Split 1:2 zwischen 2009 und 2010 bereinigt
+- SBUX: Split 1:2 zwischen 2012 und 2013 bereinigt
 - SHW aktienrueckkauf: PaymentsForRepurchaseOfEquity
 - SHW: Split 1:3 zwischen 2018 und 2019 bereinigt
 - SLB aktienrueckkauf: PaymentsForRepurchaseOfEquity
 - SMCI aktienrueckkauf: PaymentsForRepurchaseOfEquity
 - SMCI schulden_lang: DebtLongtermAndShorttermCombinedAmount
+- SMFG: Split 1:3 zwischen 2022 und 2023 bereinigt
+- SRE: Split 1:2 zwischen 2020 und 2021 bereinigt
+- SWK: Split 1:2 zwischen 2010 und 2011 bereinigt
+- TECH: Split 1:4 zwischen 2020 und 2021 bereinigt
 - TJX: Split 1:2 zwischen 2016 und 2017 bereinigt
 - TJX: Split 1:2 zwischen 2009 und 2010 bereinigt
 - TPL: Split 1:3 zwischen 2022 und 2023 bereinigt
@@ -172,9 +199,14 @@ Nach IFRS (Auslandsfirmen, Beträge in Berichtswährung): 29. Dividende je Aktie
 - TRMB: Split 1:2 zwischen 2010 und 2011 bereinigt
 - TRV capex: PaymentsToAcquireRealEstateHeldForInvestment
 - TRV schulden_lang: DebtLongtermAndShorttermCombinedAmount
+- TSCO: Split 1:5 zwischen 2021 und 2022 bereinigt
 - TSCO: Split 1:2 zwischen 2010 und 2011 bereinigt
 - UNP: Split 1:2 zwischen 2011 und 2012 bereinigt
+- VTRS: Split 1:2 zwischen 2020 und 2021 bereinigt
+- WAB: Split 1:2 zwischen 2018 und 2019 bereinigt
+- WAB: Split 1:2 zwischen 2010 und 2011 bereinigt
 - WEC capex: PaymentsToAcquireOtherPropertyPlantAndEquipment
+- WEC: Split 1:2 zwischen 2008 und 2009 bereinigt
 - WMT: Split 1:3 zwischen 2021 und 2022 bereinigt
 - WSM: Split 1:2 zwischen 2022 und 2023 bereinigt
 - WST: Split 1:2 zwischen 2010 und 2011 bereinigt
