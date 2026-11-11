@@ -557,7 +557,7 @@ article.wide>:not(.tool):not(.cards){max-width:760px}
     var log = ["Eigene Daten: " + work.length], skip = [];
     work = work.filter(function (D) {
       if (sec && D.profile.sector !== sec) return false;
-      if (ind) { if (/reit|immobil/.test(ind)) return D.profile.sector === "Real Estate"; return String(D.profile.name).toLowerCase().indexOf(ind) > -1; }
+      if (ind) { if (/reit|immobil/.test(ind)) return D.profile.sector === "Real Estate"; if (/bdc/.test(ind)) return !!D.own.bdc; return String(D.profile.name).toLowerCase().indexOf(ind) > -1; }
       return true;
     });
     if (sec || ind) log.push("nach Sektor/Branche: " + work.length);
@@ -682,7 +682,7 @@ article.wide>:not(.tool):not(.cards){max-width:760px}
     "Qualitätswerte": { c: [["roce", "gt", 15], ["nm", "gt", 10], ["revg", "gt", 5], ["nde", "lt", 3], ["pio", "gt", 6]] },
     "Günstig bewertet": { c: [["pe", "lt", 15], ["pb", "lt", 2], ["fcfyield", "gt", 5], ["de", "lt", 1.5]] },
     "REITs": { c: [["yield", "gt", 4], ["pffo", "lt", 18], ["ffopayout", "lt", 90], ["nde", "lt", 7]], ind: "REIT" },
-    "BDCs": { c: [["pnav", "lt", 1.1], ["yield", "gt", 8], ["de", "lt", 1.25]] }
+    "BDCs": { c: [["pnav", "lt", 1.1], ["yield", "gt", 8], ["de", "lt", 1.25]], ind: "BDC" }
   };
   function loadSet(c, ind) {
     $("crits").innerHTML = ""; c.forEach(function (x) { addCrit(x[0], { op: x[1], v1: String(x[2]).replace(".", ","), v2: x[4] === undefined || x[4] === "" ? "" : String(x[4]).replace(".", ","), um: x[3] || "Mrd" }); });

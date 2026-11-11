@@ -119,6 +119,15 @@ def main():
         else:
             fehlt.append(f"{t} ({f['n']})" + (f": bester Kandidat {best[1]['name']} {best[1]['isin']} ({best[0]:.2f})" if best else ""))
     os.makedirs("data/kurse", exist_ok=True)
+    # BDCs (Liste data/bdc-seed.csv), die nicht im S&P 500 stehen: Zuordnung ueber OpenFIGI
+    try:
+        for r in csv.DictReader(open("data/bdc-seed.csv")):
+            t = r["sec_ticker"].upper()
+            if t not in out and t in figi:
+                i = bester(figi[t])
+                out[t] = {"isin": i["isin"], "xetra": i["name"], "kuerzel": i["mn"], "quelle": "openfigi", "bdc": True}
+    except Exception as e:
+        print("BDC-Liste:", e)
     import datetime
     out["_stand"] = datetime.date.today().isoformat()
     json.dump(out, open("data/kurse/isin-zuordnung.json", "w"), ensure_ascii=False, indent=0)

@@ -221,6 +221,45 @@ def main():
             if len(fwd) > 2:
                 o["prognose"] = fwd
         out[t] = o
+    # BDCs: Quartalszahlen aus data/bdc.json + Kurs -> Kurs/NAV, NII-Rendite, Dividendendeckung
+    try:
+        BDC = json.load(open("data/bdc.json", encoding="utf-8")).get("firmen", {})
+    except Exception:
+        BDC = {}
+    for t, b in BDC.items():
+        qs = [q for q in b.get("quartale", []) if q.get("nav_je_aktie")]
+        z = isin.get(t)
+        if not qs or not isinstance(z, dict) or z["isin"] not in kurse["k"]:
+            continue
+        k_eur, veraend, kw = kurse["k"][z["isin"]][:3]
+        if kw != "EUR" or "USD" not in rate:
+            continue
+        boerse = kurse["k"][z["isin"]][3] if len(kurse["k"][z["isin"]]) > 3 else "DETR"
+        kusd = k_eur * rate["USD"]
+        q = qs[-1]
+        nav = q["nav_je_aktie"]
+        nii = q.get("nii_bereinigt_je_aktie") or q.get("nii_je_aktie")
+        reg, zus = q.get("dividende_regulaer") or 0, q.get("dividende_zusatz") or 0
+        alt = next((x for x in reversed(qs[:-1]) if x["periode_ende"] <= str(int(q["periode_ende"][:4]) - 1) + q["periode_ende"][4:]), None)
+        o = out.setdefault(t, {"isin": z["isin"], "name": b.get("name", t), "sektor": "BDC", "waehrung": "USD", "datum": tag,
+                               "kurs_eur": k_eur, "veraenderung": veraend, "kurs_usd": r2(kusd),
+                               "boerse": {"DETR": "Xetra", "DGAT": "Tradegate", "DFRA": "Frankfurt"}.get(boerse, boerse)})
+        o["sektor"] = "BDC"
+        o["bdc"] = {
+            "quartal": q["periode_ende"], "nav": nav, "kurs_nav": r2(kusd / nav, 2),
+            "nii": nii, "nii_rendite": r2(nii * 4 / kusd * 100, 2) if nii else None,
+            "dividende_regulaer": reg or None, "dividende_zusatz": zus or None,
+            "rendite": r2(reg * 4 / kusd * 100, 2) if reg else None, "rendite_inkl_zusatz": r2((reg + zus) * 4 / kusd * 100, 2) if reg or zus else None,
+            "deckung": r2(nii / reg * 100, 0) if nii and reg else None,
+            "nav_1j": r2((nav / alt["nav_je_aktie"] - 1) * 100, 1) if alt and alt.get("nav_je_aktie") else None,
+            "non_accrual": q.get("non_accrual_fv_proz") or None, "verschuldung": q.get("verschuldung_netto") or None,
+            "portfolio_mio": q.get("portfolio_mio") or None, "quelle": q.get("quelle"),
+            "verlauf": [[x["periode_ende"], x.get("nav_je_aktie"), x.get("nii_bereinigt_je_aktie") or x.get("nii_je_aktie"), x.get("dividende_regulaer")] for x in qs]}
+        # Fuer den Screener: allgemeine Felder mit BDC-Werten fuellen
+        o["rendite"] = o.get("rendite") or o["bdc"]["rendite"]
+        o["kbv"] = o["bdc"]["kurs_nav"]
+        o["nav_je_aktie"] = nav
+        o["schulden_ek"] = o["bdc"]["verschuldung"] or o.get("schulden_ek")
     json.dump({"stand": tag, "ezb_kurs_vom": fx_tag,
                "hinweis": "Kurs: Xetra-Schluss (Deutsche Börse, 15 Min. verzögert). Kennzahlen: letztes Geschäftsjahr laut SEC-Bericht; Kurs per EZB-Referenzkurs in die Berichtswährung umgerechnet.",
                "werte": out}, open("data/kennzahlen.json", "w"), ensure_ascii=False, separators=(",", ":"))

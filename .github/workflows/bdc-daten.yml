@@ -1,0 +1,39 @@
+name: BDC-Daten (NAV, NII, Dividenden aus Quartalsmeldungen)
+on:
+  push:
+    branches: [main]
+    paths:
+      - "tools/bdc_daten.py"
+      - ".github/workflows/bdc-daten.yml"
+  schedule:
+    - cron: "29 */6 * * *"   # alle sechs Stunden
+  workflow_dispatch:
+concurrency:
+  group: bdc-daten
+  cancel-in-progress: false
+permissions:
+  contents: write
+jobs:
+  bdc:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install markdown pillow
+      - name: BDC-Quartale auslesen
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+        run: python3 tools/bdc_daten.py
+      - name: Ergebnis committen
+        run: |
+          git config user.name "bdc-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add data/bdc.json data/bdc-state.json
+          if git diff --cached --quiet; then echo "Nichts Neues"; exit 0; fi
+          git commit -m "BDC-Daten aktualisiert"
+          for i in 1 2 3; do git pull --rebase -X theirs -q && git push && break; sleep 5; done
