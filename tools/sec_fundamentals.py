@@ -47,7 +47,25 @@ K = {
                      r"^(StockholdersEquity\w*|PartnersCapital\w*|MembersEquity)$"),
 }
 # Diese Namen passen zwar auf ein Suchmuster, meinen aber etwas anderes
-SPERRE = re.compile(r"(PerShare|Percentage|Remaining|Deferred|Unbilled|Fees|Interest(Expense|Paid)|Current$|Maturities|Repayments|Proceeds|FairValue|Increase|Decrease|Gain|Tax)", re.I)
+SPERRE = re.compile(r"(MinorityInterest|Noncontrolling|Preferred|Subsidiar|PerShare|Percentage|Remaining|Deferred|Unbilled|Fees|Interest(Expense|Paid)|Current$|Maturities|Repayments|Proceeds|FairValue|Increase|Decrease|Gain|Tax)", re.I)
+# Auslaendische Firmen (20-F) melden oft nach IFRS
+K_IFRS = {
+    "umsatz": ["Revenue", "RevenueFromContractsWithCustomers"],
+    "gewinn": ["ProfitLossAttributableToOwnersOfParent", "ProfitLoss"],
+    "eps_verw": ["DilutedEarningsPerShare", "BasicAndDilutedEarningsPerShare"],
+    "dividende_je_aktie": [],
+    "dividenden_gezahlt": ["DividendsPaidToEquityHoldersOfParentClassifiedAsFinancingActivities",
+                           "DividendsPaidClassifiedAsFinancingActivities", "DividendsPaid"],
+    "operativer_cf": ["CashFlowsFromUsedInOperatingActivities"],
+    "capex": ["PurchaseOfPropertyPlantAndEquipmentClassifiedAsInvestingActivities",
+              "PurchaseOfPropertyPlantAndEquipmentIntangibleAssetsOtherThanGoodwillInvestmentPropertyAndOtherNoncurrentAssets"],
+    "aktienrueckkauf": ["PaymentsToAcquireOrRedeemEntitysShares", "PurchaseOfTreasuryShares"],
+    "aktien_verw": ["AdjustedWeightedAverageShares", "WeightedAverageShares"],
+    "schulden_lang": ["NoncurrentPortionOfNoncurrentBorrowings", "LongtermBorrowings", "NoncurrentBorrowings"],
+    "liquide_mittel": ["CashAndCashEquivalents"],
+    "eigenkapital": ["EquityAttributableToOwnersOfParent", "Equity"],
+}
+FORMEN = ("10-K", "20-F", "40-F")
 KERN = ["umsatz", "gewinn", "eps_verw", "dividende_je_aktie", "operativer_cf"]
 
 
@@ -70,10 +88,21 @@ def dauer(x):
         return None
 
 
-def werte_eines_namens(gaap, tag, art, einheit):
+def einheit_waehlen(units, einheit, waehrung):
+    """USD-Kennzahlen: bei Auslandsfirmen in deren Berichtswaehrung (EUR, JPY, TWD ...)."""
+    if einheit in units and (waehrung in (None, "USD") or einheit == "shares"):
+        return units[einheit]
+    if waehrung and einheit in ("USD", "USD/shares"):
+        alt = einheit.replace("USD", waehrung)
+        if alt in units:
+            return units[alt]
+    return units.get(einheit, [])
+
+
+def werte_eines_namens(gaap, tag, art, einheit, waehrung=None):
     cand = {}
-    for x in (gaap.get(tag) or {}).get("units", {}).get(einheit, []):
-        if not str(x.get("form", "")).startswith("10-K"):
+    for x in einheit_waehlen((gaap.get(tag) or {}).get("units", {}), einheit, waehrung):
+        if not str(x.get("form", "")).startswith(FORMEN):
             continue
         if art == "f":
             d = dauer(x)
@@ -85,10 +114,10 @@ def werte_eines_namens(gaap, tag, art, einheit):
     return {e: v[:2] for e, v in cand.items()}
 
 
-def reihe(gaap, art, einheit, tags):
+def reihe(gaap, art, einheit, tags, waehrung=None):
     out = {}
     for tag in tags:
-        for e, v in werte_eines_namens(gaap, tag, art, einheit).items():
+        for e, v in werte_eines_namens(gaap, tag, art, einheit, waehrung).items():
             out.setdefault(e, v)
     return out
 
@@ -131,17 +160,23 @@ def main():
         cf = get(f"https://data.sec.gov/api/xbrl/companyfacts/CIK{int(cik):010d}.json"); time.sleep(0.12)
         if "_fehler" in cf:
             notizen.append(f"{t}: Abruf fehlgeschlagen ({cf['_fehler']})"); continue
-        gaap = (cf.get("facts") or {}).get("us-gaap", {})
+        facts = cf.get("facts") or {}
+        gaap, ifrs, waehrung = facts.get("us-gaap", {}), False, "USD"
+        if not any(g in gaap for g in ("Revenues", "NetIncomeLoss", "RevenueFromContractWithCustomerExcludingAssessedTax")) and facts.get("ifrs-full"):
+            gaap, ifrs = facts["ifrs-full"], True
+            ums = (gaap.get("Revenue") or gaap.get("ProfitLoss") or {}).get("units", {})
+            cur = sorted((len(v), u) for u, v in ums.items() if re.fullmatch(r"[A-Z]{3}", u))
+            waehrung = cur[-1][1] if cur else "USD"
         if not gaap:
-            notizen.append(f"{t}: keine us-gaap-Daten (CIK {cik})"); continue
-        reihen = {k: reihe(gaap, a, e, tags) for k, (a, e, tags, _) in K.items()}
+            notizen.append(f"{t}: keine Finanzdaten (CIK {cik})"); continue
+        reihen = {k: reihe(gaap, a, e, (K_IFRS[k] if ifrs else tags), waehrung) for k, (a, e, tags, _) in K.items()}
         enden = set(reihen["umsatz"]) | set(reihen["gewinn"])
         if not enden:
             notizen.append(f"{t}: keine Jahreswerte"); continue
         letztes_gj = max(enden)
         for k, (a, e, tags, muster) in K.items():
             w = reihen[k]
-            if not w or max(w) < letztes_gj:
+            if not ifrs and (not w or max(w) < letztes_gj):
                 b = ersatz_suchen(gaap, a, e, muster, set(tags), letztes_gj)
                 if b:
                     for end, v in b[2].items():
@@ -150,7 +185,13 @@ def main():
             if a == "s":
                 w = {end: v for end, v in w.items() if end in enden}
             reihen[k] = w
-        fa = {"n": cf.get("entityName") or name, "cik": int(cik), "gj": letztes_gj, "k": {}}
+        # Dividende je Aktie nachrechnen (gezahlte Dividenden / verwaesserte Aktien), wo sie nicht gemeldet wird
+        dg, av, dps = reihen["dividenden_gezahlt"], reihen["aktien_verw"], reihen["dividende_je_aktie"]
+        ber = {e: (round(abs(dg[e][0]) / av[e][0], 4), "berechnet") for e in dg if e in av and av[e][0] and e not in dps and dg[e][0]}
+        fa = {"n": cf.get("entityName") or name, "cik": int(cik), "gj": letztes_gj, "w": waehrung,
+              "std": "IFRS" if ifrs else "US-GAAP", "k": {}}
+        if ber:
+            fa["k"]["dividende_je_aktie_ber"] = [[e, ber[e][0]] for e in sorted(ber)[-JAHRE:]]
         for k, w in reihen.items():
             ends = sorted(w)[-JAHRE:]
             if ends:
@@ -168,17 +209,27 @@ def main():
               open("data/sec/fundamentals.json", "w"), ensure_ascii=False, separators=(",", ":"))
 
     n = len(firmen)
-    voll = [t for t, f in firmen.items() if all(k in f["k"] and f["k"][k][-1][0] >= f["gj"] for k in KERN)]
+    def hat(f, k):
+        if k == "dividende_je_aktie":
+            dg = f["k"].get("dividenden_gezahlt")
+            if not dg or dg[-1][0] < f["gj"] or not dg[-1][1]:
+                return True   # zahlt keine Dividende: keine Luecke
+            return any(x in f["k"] and f["k"][x][-1][0] >= f["gj"] for x in ("dividende_je_aktie", "dividende_je_aktie_ber"))
+        return k in f["k"] and f["k"][k][-1][0] >= f["gj"]
+    voll = [t for t, f in firmen.items() if all(hat(f, k) for k in KERN)]
+    ber_n = sum(1 for f in firmen.values() if "dividende_je_aktie_ber" in f["k"] and "dividende_je_aktie" not in f["k"])
+    ifrs_n = sum(1 for f in firmen.values() if f["std"] == "IFRS")
     md = [f"# SEC-Fundamentaldaten: Abdeckung (Stand {heute.isoformat()})", "",
           f"Firmen mit Daten: **{n}** von {len(liste)}. Kernkennzahlen (Umsatz, Gewinn, EPS, Dividende je Aktie, operativer Cashflow) "
           f"vollständig und aktuell: **{len(voll)}**.", "",
-          "„Aktuell“ heißt: Wert für das letzte Geschäftsjahr der Firma vorhanden. Firmen ohne Dividende fehlen bei der Dividende zu Recht.", "",
+          "„Aktuell“ heißt: Wert für das letzte Geschäftsjahr der Firma vorhanden. Firmen ohne Dividende zählen bei der Dividende nicht als Lücke.", "",
+          f"Nach IFRS (Auslandsfirmen, Beträge in Berichtswährung): {ifrs_n}. Dividende je Aktie nur nachgerechnet (gezahlte Dividenden / Aktien): {ber_n}.", "",
           "| Kennzahl | mit Daten | davon aktuell |", "|---|---:|---:|"]
     for k, s in stat.items():
         md.append(f"| {k} | {s['da']} ({s['da']/max(n,1):.0%}) | {s['aktuell']} ({s['aktuell']/max(n,1):.0%}) |")
     luecken = []
     for t, f in sorted(firmen.items()):
-        fehlt = [k for k in KERN if k not in f["k"] or f["k"][k][-1][0] < f["gj"]]
+        fehlt = [k for k in KERN if not hat(f, k)]
         if fehlt:
             luecken.append(f"- {t} ({f['n']}, GJ {f['gj'][:4]}): {', '.join(fehlt)}")
     md += ["", f"## Lücken bei Kernkennzahlen ({len(luecken)})", ""] + luecken
