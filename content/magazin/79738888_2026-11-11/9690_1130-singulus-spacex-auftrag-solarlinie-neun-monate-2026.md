@@ -10,9 +10,9 @@ logo_name: "Singulus"
 logo_symbol: SNG.DE
 logo_domain: singulus.com
 image: assets/magazin/singulus-spacex-auftrag-solarlinie-neun-monate-2026-foto.jpg
-image_alt: "Foto zu Singulus: Elkem Solar, Kristiansand (Norway). Silica solar wafer factory."
-image_credit: "Foto: Bjoertvedt / Wikimedia Commons, CC BY-SA 3.0"
-image_source: https://commons.wikimedia.org/wiki/File:Elkem_Solar_01.JPG
+image_alt: "Foto zu Singulus: Artist's rendition of GOES R satellite with Earth reflecting off solar panel. (Image credit: NOAA/NESDIS)"
+image_credit: "Foto: NOAA / Wikimedia Commons, Public domain"
+image_source: https://commons.wikimedia.org/wiki/File:Artist%27s_rendition_of_GOES_R_satellite_with_Earth_reflecting_off_solar_panel_(2268-657).jpg
 image_artist_url: 
 logo_file: assets/logos/sng-de.png
 ---
