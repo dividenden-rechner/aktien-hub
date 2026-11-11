@@ -210,7 +210,6 @@ td.co .logo{width:28px;height:28px}
 <body>
 <header id="hub-global-header"><div class="hub-nav-inner"><a class="hub-brand" href="../../"><img class="hub-logo" src="../../assets/logo.png" alt="" width="36" height="36"> <span class="hub-brand-name">Dividenden-Rechner <span>Aktien-Hub</span></span></a><nav class="hub-links" aria-label="Hauptmenü"><a href="../../">Rechner</a><a href="../../aktien-hub/" aria-current="page">Aktien</a><a href="../../depot/">Depot</a><a href="../../news/">News</a><a href="../../earnings/">Earnings</a><a href="../../screener/">Screener</a><a href="../../einfuehrung/">Einführung</a><a href="../../grundlagen/">Grundlagen</a><a href="../../fortgeschrittene/">Fortgeschrittene</a></nav></div></header>
 <script src="../../assets/navigation.js"></script>
-<script src="../../assets/fmpcount.js"></script>
 <script src="../../assets/logos.js"></script>
 <main>
 <h1 style="font-size:26px;margin:4px 0 6px">Aktien vergleichen</h1>
@@ -227,63 +226,54 @@ td.co .logo{width:28px;height:28px}
 <section class="card" id="chart" aria-live="polite"></section>
 <h2>Kennzahlen im Überblick</h2>
 <div class="tablewrap"><table id="tab"></table></div>
-<p class="desc" id="srcnote">Die Daten stammen von Financial Modeling Prep und laufen über den Server dieser Seite. Kennzahlen beziehen sich auf die letzten zwölf Monate (TTM), Jahreswerte auf die letzten Geschäftsjahre. Umsatz, Gewinn und Cashflow stehen in der jeweiligen Berichtswährung, vergleiche deshalb besser Quoten und Wachstumsraten. Die Auswahl hängt vom Datenpaket ab: überwiegend US-Aktien, europäische Titel sind nicht immer verfügbar. Alle Angaben ohne Gewähr, keine Anlageberatung.</p>
+<p class="desc" id="srcnote">Kurse: Schluss des letzten Handelstags an der Deutschen Börse (Xetra, Tradegate oder Frankfurt), verzögert. Jahreszahlen aus den Geschäftsberichten bei der US-Börsenaufsicht SEC und im europäischen Einheitsformat ESEF. Bewertung und Quoten beziehen sich auf das letzte abgeschlossene Geschäftsjahr. Umsatz, Gewinn und Cashflow im Verlauf stehen in der jeweiligen Berichtswährung, vergleiche deshalb besser Quoten und Wachstumsraten. Alle Angaben ohne Gewähr, keine Anlageberatung.</p>
 <p class="desc"><a href="../">← Zurück zum Aktien-Hub</a></p>
 </main>
 <section style="max-width:1080px;margin:36px auto 0;padding:8px 16px 40px;border-top:1px solid #dfe5ea;color:#14202b">
 <p style="font-size:14px"><a href="../../impressum/" style="color:#5d6b78">Impressum</a> · <a href="../../datenschutz/" style="color:#5d6b78">Datenschutz</a></p>
 </section>
 <script>
-const KEY="proxy", BASE="https://financialmodelingprep.com/stable/";
 const $=id=>document.getElementById(id);
 const esc=s=>String(s??"").replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
 const num=(v,d=2)=>v==null||isNaN(v)?"–":Number(v).toLocaleString("de-DE",{minimumFractionDigits:d,maximumFractionDigits:d});
 const pct=v=>v==null||isNaN(v)?"–":num(v*100,1)+" %";
+const pp=v=>v==null||isNaN(v)?"–":num(v,1)+" %";   // Werte schon in Prozent
 const big=v=>{if(v==null||isNaN(v))return "–";const a=Math.abs(v);return a>=1e12?num(v/1e12)+" Bio.":a>=1e9?num(v/1e9)+" Mrd.":a>=1e6?num(v/1e6)+" Mio.":num(v,0)};
-const first=(o,...ks)=>{for(const k of ks)if(o&&o[k]!=null)return o[k]};
-const one=a=>Array.isArray(a)?(a[0]||{}):(a||{});
 const MAXN=8,NAMES={};
-
-async function api(path,params={}){
-  const u=new URL(BASE+path);Object.entries(params).forEach(([k,v])=>u.searchParams.set(k,v));
-  const ck="fmp:"+u.toString();
-  try{const c=JSON.parse(localStorage.getItem(ck)||"null");if(c&&Date.now()-c.t<432e5){if(c.err)throw new Error(c.err);return c.j}}catch(e){if(/^HTTP 40[23]/.test(e.message))throw e}
-  u.searchParams.set("apikey",KEY);
-  const r=await fetch(u),txt=await r.text();let j=null;try{j=JSON.parse(txt)}catch(e){}
-  if(!r.ok){const m=`HTTP ${r.status}: ${(j&&(j["Error Message"]||j.message))||txt}`.slice(0,160);if(r.status===402||r.status===403)try{localStorage.setItem(ck,JSON.stringify({t:Date.now(),err:m}))}catch(e){}throw new Error(m)}
-  if(j&&j["Error Message"])throw new Error(String(j["Error Message"]).slice(0,160));
-  if(Array.isArray(j)&&!j.length)throw new Error("leere Antwort");
-  try{localStorage.setItem(ck,JSON.stringify({t:Date.now(),j}))}catch(e){}
-  return j;
-}
-async function chain(path,base,alts){let e;for(const a of alts){try{return await api(path,{...base,...a})}catch(x){e=x;if(/HTTP 40[23]/.test(x.message)&&!/parameter|limit/i.test(x.message))break}}throw e}
+/* Eigene Daten: data/kennzahlen.json (Kurs Deutsche Börse + Jahreszahlen SEC/ESEF) und die Jahresreihen */
+const TAG=Math.floor(Date.now()/36e5),J=u=>fetch(u+"?v="+TAG).then(r=>r.ok?r.json():null).catch(()=>null);
+let KZ=null,FU=null;
+const kzP=J("../../data/kennzahlen.json").then(j=>KZ=(j&&j.werte)||{});
+let fuP=null;
+function fuLoad(){return fuP||(fuP=Promise.all([J("../../data/sec/fundamentals.json"),J("../../data/esef/fundamentals.json")]).then(([a,b])=>{FU=Object.assign({},(b&&b.firmen)||{},(a&&a.firmen)||{});return FU}))}
 
 /* ---- Kennzahlen ---- */
 const pos=v=>v!=null&&isFinite(v)&&v>0&&v<1000?+v:null;     // Bewertungs-Multiples: negative oder absurde Werte ausblenden
 const fin=v=>v!=null&&isFinite(v)?+v:null;
 const MET=[
- {g:"Bewertung",k:"pe",l:"KGV",f:D=>pos(first(D.r,"priceToEarningsRatioTTM","peRatioTTM")),fmt:v=>num(v,1),note:"Kurs geteilt durch Gewinn je Aktie. Niedriger heißt günstiger, aussagekräftig aber nur im Branchenvergleich. Negative Gewinne werden nicht gezeigt."},
- {g:"Bewertung",k:"pb",l:"KBV",f:D=>pos(first(D.r,"priceToBookRatioTTM")),fmt:v=>num(v,1),note:"Kurs im Verhältnis zum Buchwert je Aktie."},
- {g:"Bewertung",k:"ps",l:"KUV",f:D=>pos(first(D.r,"priceToSalesRatioTTM")),fmt:v=>num(v,1),note:"Kurs im Verhältnis zum Umsatz je Aktie."},
- {g:"Bewertung",k:"pf",l:"Kurs/Free Cashflow",f:D=>pos(first(D.r,"priceToFreeCashFlowRatioTTM")),fmt:v=>num(v,1),note:"Kurs im Verhältnis zum Free Cashflow je Aktie."},
- {g:"Bewertung",k:"ev",l:"EV/EBITDA",f:D=>pos(first(D.m,"evToEBITDATTM")??first(D.r,"enterpriseValueMultipleTTM")),fmt:v=>num(v,1),note:"Unternehmenswert im Verhältnis zum operativen Ergebnis vor Abschreibungen."},
- {g:"Dividende",k:"dy",l:"Dividendenrendite",f:D=>fin(first(D.r,"dividendYieldTTM")),fmt:pct,note:"Dividende der letzten zwölf Monate geteilt durch den Kurs."},
- {g:"Dividende",k:"po",l:"Ausschüttungsquote",f:D=>fin(first(D.r,"dividendPayoutRatioTTM")),fmt:pct,note:"Anteil des Gewinns, der als Dividende ausgezahlt wird. Über 100 % heißt: mehr Dividende als Gewinn."},
- {g:"Dividende",k:"fy",l:"FCF-Rendite",f:D=>fin(first(D.m,"freeCashFlowYieldTTM")),fmt:pct,note:"Free Cashflow geteilt durch den Börsenwert."},
- {g:"Profitabilität",k:"roe",l:"Eigenkapitalrendite (ROE)",f:D=>fin(first(D.m,"returnOnEquityTTM")),fmt:pct,note:"Gewinn im Verhältnis zum Eigenkapital. Bei hoher Verschuldung oder Rückkäufen kann sie verzerrt sein."},
- {g:"Profitabilität",k:"roic",l:"Kapitalrendite (ROIC)",f:D=>fin(first(D.m,"returnOnInvestedCapitalTTM")),fmt:pct,note:"Ertrag auf das gesamte eingesetzte Kapital."},
- {g:"Profitabilität",k:"gm",l:"Bruttomarge",f:D=>fin(first(D.r,"grossProfitMarginTTM")),fmt:pct,note:"Anteil des Umsatzes nach Herstellkosten."},
- {g:"Profitabilität",k:"om",l:"Operative Marge",f:D=>fin(first(D.r,"operatingProfitMarginTTM")),fmt:pct,note:"Operatives Ergebnis geteilt durch Umsatz."},
- {g:"Profitabilität",k:"nm",l:"Nettomarge",f:D=>fin(first(D.r,"netProfitMarginTTM")),fmt:pct,note:"Nettogewinn geteilt durch Umsatz."},
- {g:"Bilanz",k:"nde",l:"Nettoverschuldung/EBITDA",f:D=>fin(first(D.m,"netDebtToEBITDATTM")),fmt:v=>num(v,1)+"×",note:"Wie viele Jahre das operative Ergebnis zur Schuldentilgung bräuchte. Niedriger ist solider, negativ heißt Netto-Cash."},
- {g:"Bilanz",k:"de",l:"Verschuldungsgrad",f:D=>fin(first(D.r,"debtToEquityRatioTTM")),fmt:v=>num(v,2),note:"Schulden im Verhältnis zum Eigenkapital."},
- {g:"Bilanz",k:"icr",l:"Zinsdeckung",f:D=>fin(first(D.r,"interestCoverageRatioTTM")),fmt:v=>num(v,1)+"×",note:"Wie oft das operative Ergebnis die Zinsen deckt."},
- {g:"Größe",k:"mc",l:"Marktkapitalisierung",f:D=>fin(first(D.q,"marketCap")??D.p.marketCap),fmt:big,note:"Börsenwert in der Handelswährung."},
+ {g:"Bewertung",k:"pe",l:"KGV",f:D=>pos(D.kgv),fmt:v=>num(v,1),note:"Kurs geteilt durch Gewinn je Aktie des letzten Geschäftsjahrs. Niedriger heißt günstiger, aussagekräftig aber nur im Branchenvergleich. Negative Gewinne werden nicht gezeigt."},
+ {g:"Bewertung",k:"pb",l:"KBV",f:D=>pos(D.kbv),fmt:v=>num(v,1),note:"Börsenwert im Verhältnis zum Eigenkapital."},
+ {g:"Bewertung",k:"ps",l:"KUV",f:D=>pos(D.kuv),fmt:v=>num(v,1),note:"Börsenwert im Verhältnis zum Umsatz."},
+ {g:"Bewertung",k:"pf",l:"Kurs/Free Cashflow",f:D=>pos(D.kfcf),fmt:v=>num(v,1),note:"Börsenwert im Verhältnis zum Free Cashflow."},
+ {g:"Bewertung",k:"ev",l:"EV/EBITDA",f:D=>pos(D.ev_ebitda),fmt:v=>num(v,1),note:"Unternehmenswert im Verhältnis zum operativen Ergebnis vor Abschreibungen."},
+ {g:"Dividende",k:"dy",l:"Dividendenrendite",f:D=>fin(D.rendite),fmt:pp,note:"Dividende je Aktie des letzten Geschäftsjahrs geteilt durch den Kurs."},
+ {g:"Dividende",k:"po",l:"Ausschüttungsquote",f:D=>fin(D.ausschuettung),fmt:pp,note:"Anteil des Gewinns, der als Dividende ausgezahlt wird. Über 100 % heißt: mehr Dividende als Gewinn."},
+ {g:"Dividende",k:"fy",l:"FCF-Rendite",f:D=>fin(D.fcf_rendite),fmt:pp,note:"Free Cashflow geteilt durch den Börsenwert."},
+ {g:"Profitabilität",k:"roe",l:"Eigenkapitalrendite (ROE)",f:D=>fin(D.roe),fmt:pp,note:"Gewinn im Verhältnis zum Eigenkapital. Bei hoher Verschuldung oder Rückkäufen kann sie verzerrt sein."},
+ {g:"Profitabilität",k:"roic",l:"Kapitalrendite (ROIC)",f:D=>fin(D.roic),fmt:pp,note:"Ertrag auf das gesamte eingesetzte Kapital."},
+ {g:"Dividende",k:"dg",l:"Dividendenwachstum 5 Jahre",f:D=>fin(D.div_wachstum_5j),fmt:pp,note:"Durchschnittliche jährliche Steigerung der Dividende je Aktie über fünf Jahre."},
+ {g:"Profitabilität",k:"gm",l:"Bruttomarge",f:D=>fin(D.bruttomarge),fmt:pp,note:"Anteil des Umsatzes nach Herstellkosten."},
+ {g:"Profitabilität",k:"om",l:"Operative Marge",f:D=>fin(D.operative_marge),fmt:pp,note:"Operatives Ergebnis geteilt durch Umsatz."},
+ {g:"Profitabilität",k:"nm",l:"Nettomarge",f:D=>fin(D.nettomarge),fmt:pp,note:"Nettogewinn geteilt durch Umsatz."},
+ {g:"Bilanz",k:"nde",l:"Nettoverschuldung/EBITDA",f:D=>fin(D.nettoschulden_ebitda),fmt:v=>num(v,1)+"×",note:"Wie viele Jahre das operative Ergebnis zur Schuldentilgung bräuchte. Niedriger ist solider, negativ heißt Netto-Cash."},
+ {g:"Bilanz",k:"de",l:"Verschuldungsgrad",f:D=>fin(D.schulden_ek),fmt:v=>num(v,2),note:"Schulden im Verhältnis zum Eigenkapital."},
+ {g:"Bilanz",k:"icr",l:"Zinsdeckung",f:D=>fin(D.zinsdeckung),fmt:v=>num(v,1)+"×",note:"Wie oft das operative Ergebnis die Zinsen deckt."},
+ {g:"Größe",k:"mc",l:"Marktkapitalisierung",f:D=>fin(D.boersenwert_eur),fmt:v=>big(v)+" €",note:"Börsenwert in Euro zum letzten Schlusskurs."},
  {g:"Verlauf (Jahreswerte)",k:"rev",l:"Umsatz",hist:true,fmt:big,h:H=>H.inc.map(x=>[x.y,fin(x.revenue)]),note:"Jahresumsatz in Berichtswährung."},
  {g:"Verlauf (Jahreswerte)",k:"revg",l:"Umsatzwachstum",hist:true,fmt:pct,h:H=>H.inc.map((x,i)=>[x.y,i&&H.inc[i-1].revenue>0?fin(x.revenue/H.inc[i-1].revenue-1):null]),note:"Veränderung des Jahresumsatzes zum Vorjahr."},
  {g:"Verlauf (Jahreswerte)",k:"ni",l:"Nettogewinn",hist:true,fmt:big,h:H=>H.inc.map(x=>[x.y,fin(x.netIncome)]),note:"Jahresgewinn nach Steuern in Berichtswährung."},
  {g:"Verlauf (Jahreswerte)",k:"nmh",l:"Nettomarge im Verlauf",hist:true,fmt:pct,h:H=>H.inc.map(x=>[x.y,x.revenue>0?fin(x.netIncome/x.revenue):null]),note:"Nettogewinn geteilt durch Umsatz je Geschäftsjahr."},
- {g:"Verlauf (Jahreswerte)",k:"fcf",l:"Free Cashflow",hist:true,fmt:big,h:H=>H.cash.map(x=>[x.y,fin(first(x,"freeCashFlow"))]),note:"Operativer Cashflow abzüglich Investitionen, in Berichtswährung."},
+ {g:"Verlauf (Jahreswerte)",k:"fcf",l:"Free Cashflow",hist:true,fmt:big,h:H=>H.cash.map(x=>[x.y,fin(x.freeCashFlow)]),note:"Operativer Cashflow abzüglich Investitionen, in Berichtswährung."},
  {g:"Verlauf (Jahreswerte)",k:"fcfm",l:"FCF-Marge",hist:true,fmt:pct,h:H=>H.cash.map(x=>{const r=H.inc.find(i=>i.y===x.y);return[x.y,r&&r.revenue>0&&x.freeCashFlow!=null?fin(x.freeCashFlow/r.revenue):null]}),note:"Free Cashflow geteilt durch Umsatz."}
 ];
 const TABLE_KEYS=["pe","pb","dy","po","fy","roe","nm","nde","mc"];
@@ -291,7 +281,7 @@ const SHORT={pe:"KGV",pb:"KBV",dy:"Div.-Rendite",po:"Ausschüttung",fy:"FCF-Rend
 
 /* ---- Zustand ---- */
 let GROUPS=[],S={sel:"",peers:[],met:"pe"};const D={},HD={},ERR={};
-const nameOf=s=>{if(NAMES[s])return NAMES[s];for(const g of GROUPS)for(const m of g.members)if(m[0]===s)return m[1];return (D[s]&&D[s].p&&D[s].p.companyName)||s};
+const nameOf=s=>{if(NAMES[s])return NAMES[s];for(const g of GROUPS)for(const m of g.members)if(m[0]===s)return m[1];return (D[s]&&D[s].name)||s};
 const groupOf=s=>GROUPS.find(g=>g.members.some(m=>m[0]===s));
 const short=n=>String(n).replace(/\s*(Inc\.?|Corp\.?|Corporation|Company|Co\.|Ltd\.?|plc|PLC|Holdings?|Group|N\.V\.|S\.A\.)\s*$/i,"").replace(/,$/,"");
 const logoImg=(s,w)=>window.HubLogos?HubLogos.img("logo",s,w?String(w).replace(/^https?:\/\/(www\.)?/,"").split("/")[0]:"",s):"";
@@ -302,18 +292,16 @@ function presets(sel){const g=groupOf(sel);return g?g.members.map(m=>m[0]).filte
 
 /* ---- Daten laden ---- */
 async function loadCo(s){
-  if(D[s]||ERR[s]&&ERR[s].fatal)return;
-  const names=["p","q","r","m"],calls=[api("profile",{symbol:s}),api("quote",{symbol:s}),api("ratios-ttm",{symbol:s}),api("key-metrics-ttm",{symbol:s})];
-  const res=await Promise.allSettled(calls),d={};
-  res.forEach((x,i)=>{d[names[i]]=x.status==="fulfilled"?one(x.value):{}});
-  if(res.every(x=>x.status==="rejected")){const m=res[0].reason.message||"";ERR[s]={fatal:true,msg:/40[23]/.test(m)?"im aktuellen Datenpaket nicht enthalten":/429/.test(m)?"Tageslimit erreicht":"keine Daten"};return}
-  D[s]=d;delete ERR[s];
+  await kzP;
+  if(KZ[s]){D[s]=KZ[s];delete ERR[s]}else ERR[s]={fatal:true,msg:"noch keine Daten in unserer Sammlung"};
 }
 async function loadHist(s){
-  if(HD[s]||ERR[s]&&ERR[s].fatal)return;
-  const [a,b]=await Promise.allSettled([chain("income-statement",{symbol:s},[{limit:6},{limit:5},{}]),chain("cash-flow-statement",{symbol:s},[{limit:6},{limit:5},{}])]);
-  const prep=r=>r.status==="fulfilled"?[...r.value].map(x=>({...x,y:String(first(x,"fiscalYear")||String(x.date||"").slice(0,4))})).sort((p,q)=>p.y<q.y?-1:1).slice(-6):[];
-  HD[s]={inc:prep(a),cash:prep(b)};
+  if(HD[s])return;await fuLoad();
+  const f=FU[s]||FU[s.replace(/\./g,"-")];if(!f){HD[s]={inc:[],cash:[]};return}
+  const r=k=>Object.fromEntries((f.k[k]||[]).map(([e,v])=>[e,v])),U=r("umsatz"),G=r("gewinn"),O=r("operativer_cf"),C=r("capex");
+  const ends=[...new Set([...Object.keys(U),...Object.keys(G)])].sort().slice(-6);
+  HD[s]={inc:ends.map(e=>({y:e.slice(0,4),revenue:U[e]??null,netIncome:G[e]??null})),
+         cash:ends.filter(e=>O[e]!=null&&C[e]!=null).map(e=>({y:e.slice(0,4),freeCashFlow:O[e]-Math.abs(C[e])}))};
 }
 
 /* ---- Diagramme ---- */
@@ -329,7 +317,7 @@ function hbars(m){
   const med=median(rows.filter(r=>r.s!==S.sel).map(r=>r.v));
   let h=`<div class="hb" role="img" aria-label="${esc(m.l)} im Vergleich">`;
   rows.forEach(r=>{
-    const self=r.s===S.sel,a=Math.min(z,X(r.v)),w=Math.max(.6,Math.abs(X(r.v)-z)),w0=D[r.s]&&D[r.s].p&&D[r.s].p.website;
+    const self=r.s===S.sel,a=Math.min(z,X(r.v)),w=Math.max(.6,Math.abs(X(r.v)-z)),w0="";
     h+=`<div class="hbr${self?" self":""}"><div class="hbn">${logoImg(r.s,w0)}<span>${esc(short(nameOf(r.s)))}<small>${esc(r.s)}</small></span></div>`+
        `<div class="hbt"><i class="hz" style="left:${z}%"></i>${med!=null&&rows.length>2?`<i class="hm" style="left:${X(med)}%"></i>`:""}`+
        `<b class="hbar" style="left:${a}%;width:${w}%;background:${r.v<0?"var(--neg)":self?"var(--acc)":"var(--bar2)"}" title="${esc(nameOf(r.s))}: ${m.fmt(r.v)}"></b>`+
@@ -350,7 +338,7 @@ function lines(m){
   ser.forEach(x=>{const self=x.s===S.sel,c=self?"var(--acc)":COL[x.i%COL.length];
     s+=`<path d="${x.pts.map((p,j)=>(j?"L":"M")+X(p[0])+","+Y(p[1])).join("")}" fill="none" stroke="${c}" stroke-width="${self?3.5:2}"/>`;
     x.pts.forEach(p=>s+=`<circle cx="${X(p[0])}" cy="${Y(p[1])}" r="${self?4:3}" fill="${c}"><title>${esc(nameOf(x.s))} ${esc(p[0])}: ${m.fmt(p[1])}</title></circle>`)});
-  s+=`</svg><div class="kleg">${ser.map(x=>`<span class="lk">${logoImg(x.s,D[x.s]&&D[x.s].p&&D[x.s].p.website)}<i style="background:${x.s===S.sel?"var(--acc)":COL[x.i%COL.length]}"></i>${esc(short(nameOf(x.s)))}</span>`).join("")}</div>`;
+  s+=`</svg><div class="kleg">${ser.map(x=>`<span class="lk">${logoImg(x.s,"")}<i style="background:${x.s===S.sel?"var(--acc)":COL[x.i%COL.length]}"></i>${esc(short(nameOf(x.s)))}</span>`).join("")}</div>`;
   const miss=all().filter(s=>!ser.find(x=>x.s===s));
   return s+(miss.length?`<p class="fnote">Keine Werte für: ${miss.map(x=>esc(nameOf(x))).join(", ")}.</p>`:"");
 }
@@ -369,7 +357,7 @@ function renderTable(){
   const cols=TABLE_KEYS.map(k=>MET.find(m=>m.k===k));
   const rows=all().filter(s=>D[s]);
   let h=`<thead><tr><th>Unternehmen</th>${cols.map(c=>`<th><button type="button" class="thb${c.k===S.met?" on":""}" data-met="${c.k}" title="${esc(c.l)}: Diagramm zeigen">${esc(SHORT[c.k]||c.l)}</button></th>`).join("")}</tr></thead><tbody>`;
-  rows.forEach(s=>{h+=`<tr${s===S.sel?' class="self"':""}><td class="co">${logoImg(s,D[s].p&&D[s].p.website)} <span>${esc(short(nameOf(s)))}<small>${esc(s)}</small></span></td>${cols.map(c=>`<td>${c.fmt(c.f(D[s]))==="–"?"–":c.fmt(c.f(D[s]))}</td>`).join("")}</tr>`});
+  rows.forEach(s=>{h+=`<tr${s===S.sel?' class="self"':""}><td class="co">${logoImg(s,"")} <span>${esc(short(nameOf(s)))}<small>${esc(s)}</small></span></td>${cols.map(c=>`<td>${c.fmt(c.f(D[s]))==="–"?"–":c.fmt(c.f(D[s]))}</td>`).join("")}</tr>`});
   const peers=rows.filter(s=>s!==S.sel);
   if(peers.length>2)h+=`<tr class="med"><td>Peer-Median</td>${cols.map(c=>{const v=median(peers.map(s=>c.f(D[s])));return `<td>${v==null?"–":c.fmt(v)}</td>`}).join("")}</tr>`;
   $("tab").innerHTML=h+"</tbody>";
@@ -400,11 +388,9 @@ function addPeer(s,n){s=String(s).toUpperCase();if(all().includes(s))return;if(a
 let timer,seq=0;
 $("q").addEventListener("input",()=>{clearTimeout(timer);const t=$("q").value.trim();if(t.length<2){$("sug").hidden=true;return}timer=setTimeout(()=>search(t),250)});
 async function search(t){
-  const my=++seq;let res=[];
-  try{const [a,b]=await Promise.allSettled([api("search-name",{query:t,limit:8}),api("search-symbol",{query:t,limit:5})]);
-    const seen=new Set();[a,b].forEach(x=>{if(x.status==="fulfilled")x.value.forEach(r=>{if(r.symbol&&!seen.has(r.symbol)){seen.add(r.symbol);res.push(r)}})})}catch(e){}
-  if(my!==seq)return;
-  $("sug").innerHTML=res.slice(0,8).map(r=>`<button type="button" class="it" data-add="${esc(r.symbol)}" data-n="${esc(r.name||r.symbol)}"><span>${esc(r.name||r.symbol)}</span><small>${esc(r.symbol)}${r.exchange?" · "+esc(r.exchange):""}</small></button>`).join("")||`<div class="it"><span>Keine Treffer</span></div>`;
+  await kzP;const q=t.toLowerCase(),res=[];
+  for(const [sym,w] of Object.entries(KZ)){const n=String(w.name||"");if(sym.toLowerCase().startsWith(q)||n.toLowerCase().includes(q))res.push({symbol:sym,name:n});if(res.length>=8)break}
+  $("sug").innerHTML=res.map(r=>`<button type="button" class="it" data-add="${esc(r.symbol)}" data-n="${esc(r.name||r.symbol)}"><span>${esc(r.name||r.symbol)}</span><small>${esc(r.symbol)}</small></button>`).join("")||`<div class="it"><span>Keine Treffer</span></div>`;
   $("sug").hidden=false;
 }
 
