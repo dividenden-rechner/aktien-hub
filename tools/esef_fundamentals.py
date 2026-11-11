@@ -50,17 +50,17 @@ FIRMEN = [
     # Benelux
     ("AD.AS", "Ahold Delhaize", "ahold delhaize", "NL", "Consumer Defensive"), ("WKL.AS", "Wolters Kluwer", "wolters kluwer", "NL", "Industrials"),
     ("HEIA.AS", "Heineken", "heineken n", "NL", "Consumer Defensive"), ("KPN.AS", "KPN", "koninklijke kpn", "NL", "Communication Services"),
-    ("NN.AS", "NN Group", "nn group", "NL", "Financial Services"), ("ASRNL.AS", "ASR Nederland", "a.s.r", "NL", "Financial Services"),
+    ("NN.AS", "NN Group", "nn group", "NL", "Financial Services"), ("ASRNL.AS", "ASR Nederland", "asr nederland", "NL", "Financial Services"),
     ("AGN.AS", "Aegon", "aegon", "NL", "Financial Services"), ("ABN.AS", "ABN Amro", "abn amro bank", "NL", "Financial Services"),
     ("RAND.AS", "Randstad", "randstad", "NL", "Industrials"), ("AKZA.AS", "Akzo Nobel", "akzo nobel", "NL", "Basic Materials"),
     ("PRX.AS", "Prosus", "prosus", "NL", "Technology"), ("ABI.BR", "Anheuser-Busch InBev", "anheuser-busch inbev", "BE", "Consumer Defensive"),
-    ("KBC.BR", "KBC", "kbc group", "BE", "Financial Services"), ("UCB.BR", "UCB", "ucb", "BE", "Healthcare"),
+    ("KBC.BR", "KBC", "kbc gro", "BE", "Financial Services"), ("UCB.BR", "UCB", "ucb", "BE", "Healthcare"),
     ("AGS.BR", "Ageas", "ageas", "BE", "Financial Services"),
     # Nordeuropa
     ("NDA-FI.HE", "Nordea", "nordea bank", "FI", "Financial Services"), ("KNEBV.HE", "Kone", "kone oyj", "FI", "Industrials"),
     ("SAMPO.HE", "Sampo", "sampo", "FI", "Financial Services"), ("FORTUM.HE", "Fortum", "fortum", "FI", "Utilities"),
     ("UPM.HE", "UPM-Kymmene", "upm-kymmene", "FI", "Basic Materials"), ("NESTE.HE", "Neste", "neste", "FI", "Energy"),
-    ("ELISA.HE", "Elisa", "elisa", "FI", "Communication Services"), ("VOLV-B.ST", "Volvo", "ab volvo", "SE", "Industrials"),
+    ("ELISA.HE", "Elisa", "elisa", "FI", "Communication Services"), ("VOLV-B.ST", "Volvo", "volvo", "SE", "Industrials"),
     ("ATCO-A.ST", "Atlas Copco", "atlas copco", "SE", "Industrials"), ("INVE-B.ST", "Investor AB", "investor ab", "SE", "Financial Services"),
     ("SEB-A.ST", "SEB", "skandinaviska enskilda", "SE", "Financial Services"), ("SHB-A.ST", "Handelsbanken", "svenska handelsbanken", "SE", "Financial Services"),
     ("SWED-A.ST", "Swedbank", "swedbank", "SE", "Financial Services"), ("HM-B.ST", "H&M", "hennes & mauritz", "SE", "Consumer Cyclical"),
@@ -96,7 +96,11 @@ DPS_VORSCHLAG = ["DividendsProposedOrDeclaredBeforeFinancialStatementsAuthorised
 DPS_GEZAHLT = ["DividendsRecognisedAsDistributionsToOwnersPerShare"]
 DPS_FREI = re.compile(r"Dividend.*PerShare|PerShare.*Dividend", re.I)
 DPS_SPERRE = re.compile(r"Prefer|Interim|Special|Extraordinary|Hybrid", re.I)
-CAPEX_FREI = re.compile(r"(Purchase|Acquisition|Payments?For|Investments?In).*(PropertyPlantAndEquipment|TangibleAssets|TangibleFixedAssets)", re.I)
+CAPEX_FREI = re.compile(r"CapitalExpenditure|(Purchase|Acquisition|Payments?For|Investments?In|Payments?ToAcquire).*(PropertyPlant|TangibleAssets|TangibleFixedAssets|IntangibleAssets)", re.I)
+K_ESEF = dict(K_IFRS)
+K_ESEF["eps_verw"] = K_IFRS["eps_verw"] + ["BasicEarningsLossPerShare", "BasicEarningsPerShare"]
+K_ESEF["capex"] = K_IFRS["capex"] + ["PurchaseOfPropertyPlantAndEquipmentAndIntangibleAssets", "PurchaseOfPropertyPlantAndEquipment"]
+ALLE_NAMEN = {n for v in K_ESEF.values() for n in v} | set(DPS_VORSCHLAG) | set(DPS_GEZAHLT)
 BETRAG_POS = {"capex", "dividenden_gezahlt", "aktienrueckkauf", "zinsaufwand"}
 DAUER = {"umsatz", "gewinn", "eps_verw", "dividenden_gezahlt", "operativer_cf", "capex", "aktienrueckkauf", "aktien_verw",
          "bruttogewinn", "operatives_ergebnis", "abschreibungen", "zinsaufwand", "steuern"}
@@ -126,29 +130,31 @@ def norm(s):
     return re.sub(r"[^a-z0-9]+", " ", s).strip()
 
 
-def lei_suchen(name, such):
-    """Rechtsträger per Namenssuche finden: unter allen Treffern der mit dem aehnlichsten Namen."""
-    kurz = such.split()[0]
-    flt = json.dumps([{"or": [{"name": "entity.name", "op": "ilike", "val": f"%{such}%"},
-                              {"name": "entity.name", "op": "ilike", "val": f"{kurz}%"}]}])
-    j = get(f"{BASIS}/api/filings?include=entity&sort=-period_end&page[size]=40&filter=" + urllib.parse.quote(flt))
+def lei_suchen(name, such, land):
+    """Rechtsträger per Namenssuche finden: unter allen Treffern der mit dem aehnlichsten Namen und passendem Land."""
+    flt = json.dumps([{"name": "entity.name", "op": "ilike", "val": f"%{such}%"}])
+    j = get(f"{BASIS}/api/filings?include=entity&sort=-period_end&page[size]=60&filter=" + urllib.parse.quote(flt))
     ent = {e.get("id"): e.get("attributes", {}) for e in j.get("included", []) if e.get("type") == "entity"}
-    namen = {}
+    namen, laender = {}, {}
     for d in j.get("data", []):
         rel = ((d.get("relationships") or {}).get("entity") or {}).get("data") or {}
         a = ent.get(rel.get("id"), {})
-        ju = (d.get("attributes") or {}).get("json_url") or ""
+        at = d.get("attributes") or {}
+        ju = at.get("json_url") or ""
         lei = a.get("identifier") or (ju.split("/")[1] if ju.startswith("/") else None)
         if lei and a.get("name"):
             namen[lei] = a["name"]
+            laender.setdefault(lei, set()).add(at.get("country") or "")
+    muster = re.compile(r"(^|[^a-z])" + re.escape(such.lower()).replace("_", ".").replace("\\.", "."), re.I)
     best, bwert = None, 0.0
     for lei, n in namen.items():
         w = difflib.SequenceMatcher(None, norm(n), norm(name)).ratio()
-        if norm(such.replace("_", "")) and re.search(such.replace("_", ".").lower(), n.lower()):
-            w += 0.3   # Suchbegriff steht im Namen
+        if muster.search(n.lower()):
+            w += 0.5   # Suchbegriff steht am Wortanfang im Namen
+        w += 0.3 if land in laender[lei] else -0.4
         if w > bwert:
             best, bwert = (lei, n), w
-    return best if best and bwert >= 0.55 else None
+    return best if best and bwert >= 0.75 else None
 
 
 def berichte(lei):
@@ -185,79 +191,117 @@ def periode(p):
     return None, d(p, True)
 
 
+def relevant(n):
+    return n in ALLE_NAMEN or DPS_FREI.search(n) or CAPEX_FREI.search(n)
+
+
 def auslesen(x):
-    """Jahreswerte ohne Segment-Dimensionen: {kennzahl: {ende: wert}}, dazu Waehrung."""
-    werte = {}   # konzept -> {ende: (wert, einheit)}
+    """Rohwerte ohne Segment-Dimensionen, nur Geschaeftsjahre und nur die Konzepte, die wir nutzen:
+    {konzept: {ende: [wert, einheit, ist_zeitraum]}}. Wird je Bericht gespeichert, damit Regelaenderungen keinen Neuabruf brauchen."""
+    werte = {}
     for f in (x.get("facts") or {}).values():
         dim = f.get("dimensions", {})
         if set(dim) - {"concept", "entity", "period", "unit", "language"}:
             continue   # Segment, Region, Eigenkapitalkomponente ...
+        lokal = str(dim.get("concept", "")).split(":")[-1]
+        if not relevant(lokal):
+            continue
         try:
             v = float(f.get("value"))
-        except (TypeError, ValueError):
-            continue
-        konzept = str(dim.get("concept", ""))
-        voll, lokal = konzept, konzept.split(":")[-1]
-        try:
             a, e = periode(str(dim.get("period", "")))
-        except ValueError:
+        except (TypeError, ValueError):
             continue
         if a is not None and not 330 <= (e - a).days <= 380:
             continue   # nur ganze Geschaeftsjahre
-        werte.setdefault(lokal, {}).setdefault(e.isoformat(), (v, str(dim.get("unit", "")), voll, a is not None))
+        werte.setdefault(lokal, {}).setdefault(e.isoformat(), [v, str(dim.get("unit", "")), a is not None])
+    return werte
+
+
+def auswerten(werte):
+    """Rohwerte -> {kennzahl: {ende: wert}} und Berichtswaehrung."""
     zaehl = {}
     for n in K_IFRS["umsatz"] + K_IFRS["gewinn"]:
-        for v, u, _, _ in werte.get(n, {}).values():
+        for v, u, _ in werte.get(n, {}).values():
             m = re.fullmatch(r"iso4217:([A-Z]{3})", u)
             if m:
                 zaehl[m.group(1)] = zaehl.get(m.group(1), 0) + 1
-    waehrung = max(zaehl, key=zaehl.get) if zaehl else None
+    w = max(zaehl, key=zaehl.get) if zaehl else None
 
-    def reihe(namen, dauer):
+    def passt(u, je_aktie):
+        if not w:
+            return True
+        if je_aktie:   # Betrag je Aktie in Berichtswaehrung (Pence bei Pfund erlaubt)
+            return "shares" in u and (u.startswith(f"iso4217:{w}") or (w == "GBP" and "GBX" in u.upper()))
+        if u.startswith("iso4217:"):
+            return u == f"iso4217:{w}"
+        return True   # Stueckzahlen, reine Zahlen
+
+    def reihe(namen, dauer, je_aktie=False):
         r = {}
         for n in namen:
-            for e, (v, u, voll, ist_dauer) in werte.get(n, {}).items():
-                if ist_dauer == dauer and e not in r:
-                    if "GBX" in u or "GBp" in u:
+            for e, (v, u, ist_dauer) in werte.get(n, {}).items():
+                if ist_dauer == dauer and e not in r and passt(u, je_aktie):
+                    if "GBX" in u.upper():
                         v /= 100
+                    if je_aktie and not 0 < abs(v) < 5000:
+                        continue
                     r[e] = v
         return r
 
     aus = {}
-    for k, namen in K_IFRS.items():
+    for k, namen in K_ESEF.items():
         if namen:
-            aus[k] = reihe(namen, k in DAUER)
+            aus[k] = reihe(namen, k in DAUER, k == "eps_verw")
     if not any(aus.get("capex", {}).values()):
         frei = [n for n in werte if CAPEX_FREI.search(n) and not re.search(r"Proceeds|Sale|Disposal", n, re.I)]
         aus["capex"] = reihe(sorted(frei), True)
     for k in BETRAG_POS:
         aus[k] = {e: abs(v) for e, v in aus.get(k, {}).items()}
-    # Dividende je Aktie
-    vor, gez = reihe(DPS_VORSCHLAG, True), reihe(DPS_GEZAHLT, True)
-    for e, v in reihe(DPS_VORSCHLAG, False).items():
+    vor, gez = reihe(DPS_VORSCHLAG, True, True), reihe(DPS_GEZAHLT, True, True)
+    for e, v in reihe(DPS_VORSCHLAG, False, True).items():
         vor.setdefault(e, v)
     frei = {}
     for n in sorted(werte):
         if DPS_FREI.search(n) and not DPS_SPERRE.search(n) and n not in DPS_VORSCHLAG + DPS_GEZAHLT:
-            for e, (v, u, voll, ist_dauer) in werte[n].items():
-                if "shares" in u and 0 < v < 1000:
+            for e, v in {**reihe([n], True, True), **reihe([n], False, True)}.items():
+                if v > 0:
                     frei.setdefault(e, v)
     aus["_dps_vor"], aus["_dps_gez"], aus["_dps_frei"] = vor, gez, frei
-    return aus, waehrung
+    return aus, w
 
 
 def isin_holen(lei, kurse, land):
-    try:
-        j = get(f"https://api.gleif.org/api/v1/lei-records/{lei}/isins?page[size]=200")
-    except Exception:
-        return None
-    isins = [d.get("attributes", {}).get("isin") for d in j.get("data", [])]
-    isins = [i for i in isins if i]
-    handel = [i for i in isins if i in kurse and kurse[i][2] == "EUR"]
-    if not handel:
-        return None
-    handel.sort(key=lambda i: (i[:2] != land, i))   # Heimat-ISIN zuerst (bei Aktien meist die Stammaktie)
-    return handel[0]
+    """LEI -> ISINs (GLEIF, alle Seiten; Banken haben Tausende Anleihen), davon die in Euro gehandelten ohne US-Zertifikate,
+    dann per OpenFIGI die erste, die wirklich eine Aktie ist."""
+    kand = []
+    for seite in range(1, 40):
+        try:
+            j = get(f"https://api.gleif.org/api/v1/lei-records/{lei}/isins?page[size]=200&page[number]={seite}")
+        except Exception:
+            break
+        for d in j.get("data", []):
+            i = d.get("attributes", {}).get("isin")
+            if i and i in kurse and kurse[i][2] == "EUR" and not i.startswith("US"):
+                kand.append(i)
+        if seite >= ((j.get("meta") or {}).get("pagination") or {}).get("lastPage", 1):
+            break
+        time.sleep(0.5)
+    kand = sorted(set(kand), key=lambda i: (i[:2] != land, i))[:30]
+    for a in range(0, len(kand), 10):
+        teil = kand[a:a + 10]
+        try:
+            req = urllib.request.Request("https://api.openfigi.com/v3/mapping", headers={"Content-Type": "application/json", **UA},
+                                         data=json.dumps([{"idType": "ID_ISIN", "idValue": i} for i in teil]).encode())
+            res = json.loads(urllib.request.urlopen(req, timeout=60).read())
+        except Exception:
+            time.sleep(15); continue
+        for i, r in zip(teil, res):
+            d = ((r or {}).get("data") or [{}])[0]
+            if d.get("marketSector") == "Equity" and re.search(r"Common Stock|Ordinary|Share", d.get("securityType", "") + d.get("securityType2", ""), re.I) \
+                    and "Pref" not in d.get("securityType", ""):
+                return i
+        time.sleep(3)
+    return None
 
 
 def main():
@@ -267,6 +311,8 @@ def main():
         sp = json.load(open("data/esef/speicher.json", encoding="utf-8"))
     except Exception:
         sp = {}
+    if sp.get("version") != 2:   # Version 2: Rohwerte je Bericht, strengere Namenssuche, ISIN nur fuer Aktien
+        sp = {"version": 2}
     sp.setdefault("lei", {}); sp.setdefault("berichte", {}); sp.setdefault("isin", {}); sp.setdefault("geprueft", {})
     try:
         kurse = json.load(open("data/kurse/xetra-letzter.json"))["k"]
@@ -283,7 +329,7 @@ def main():
             continue
         try:
             if t not in sp["lei"]:
-                r = lei_suchen(name, such)
+                r = lei_suchen(name, such, land)
                 sp["lei"][t] = list(r) if r else None
                 time.sleep(3)
             if not sp["lei"][t]:
@@ -294,9 +340,9 @@ def main():
                 if schl in sp["berichte"]:
                     continue
                 x = get(BASIS + schl if schl.startswith("/") else schl)
-                aus, w = auslesen(x)
-                sp["berichte"][schl] = {"lei": lei, "ende": b["period_end"], "w": w, "k": aus}
-                print(t, b["period_end"], w, sum(1 for v in aus.values() if v), flush=True)
+                roh = auslesen(x)
+                sp["berichte"][schl] = {"lei": lei, "ende": b["period_end"], "roh": roh}
+                print(t, b["period_end"], len(roh), flush=True)
                 time.sleep(4)
             if t not in sp["isin"] or sp["isin"][t] is None:
                 sp["isin"][t] = isin_holen(lei, kurse, land)
@@ -312,24 +358,25 @@ def main():
     for t, name, such, land, sektor in FIRMEN:
         info = sp["lei"].get(t)
         if not info:
-            zeilen.append(f"| {t} | {name} | – | nicht gefunden | | |"); continue
+            zeilen.append(f"| {t} | {name} | – | {'nicht gefunden' if t in sp['lei'] else 'noch nicht geprüft'} | | | |"); continue
         lei, rname = info
         bs = sorted((b for b in sp["berichte"].values() if b["lei"] == lei), key=lambda b: b["ende"])
         if not bs:
-            zeilen.append(f"| {t} | {name} | {rname} | keine Berichte | | |"); continue
-        waehr = [b["w"] for b in bs if b["w"]]
+            zeilen.append(f"| {t} | {name} | {rname} | keine Berichte | | | |"); continue
+        ausw = [auswerten(b["roh"]) for b in bs]
+        waehr = [x[1] for x in ausw if x[1]]
         w = waehr[-1] if waehr else "EUR"
         reihen = {}
-        for b in bs:
-            if b["w"] and b["w"] != w:
+        for aus, bw in ausw:
+            if bw and bw != w:
                 continue   # Waehrungswechsel: aeltere Berichte in anderer Waehrung auslassen
-            for k, r in b["k"].items():
+            for k, r in aus.items():
                 for e, v in r.items():
                     if v is not None:
                         reihen.setdefault(k, {})[e] = v
         enden = set(reihen.get("umsatz", {})) | set(reihen.get("gewinn", {}))
         if not enden:
-            zeilen.append(f"| {t} | {name} | {rname} | keine Jahreswerte | | |"); continue
+            zeilen.append(f"| {t} | {name} | {rname} | keine Jahreswerte | | | |"); continue
         gj = max(enden)
         # Dividende je Aktie: UK im Jahr gezahlt, sonst die vorgeschlagene fuer das Geschaeftsjahr
         reih = ("_dps_gez", "_dps_vor", "_dps_frei") if land in ("GB", "JE") else ("_dps_vor", "_dps_gez", "_dps_frei")
