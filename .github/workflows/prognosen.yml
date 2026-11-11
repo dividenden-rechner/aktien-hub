@@ -1,0 +1,39 @@
+name: Unternehmensprognosen (Ausblick aus Ergebnismeldungen)
+on:
+  push:
+    branches: [main]
+    paths:
+      - "tools/prognosen.py"
+      - ".github/workflows/prognosen.yml"
+  schedule:
+    - cron: "11 */3 * * *"   # alle drei Stunden; je Lauf hoechstens 60 KI-Aufrufe
+  workflow_dispatch:
+concurrency:
+  group: prognosen
+  cancel-in-progress: false
+permissions:
+  contents: write
+jobs:
+  prognosen:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install markdown pillow
+      - name: Ausblicke auslesen
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+        run: python3 tools/prognosen.py
+      - name: Ergebnis committen
+        run: |
+          git config user.name "prognose-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add data/prognosen.json data/prognosen-state.json
+          if git diff --cached --quiet; then echo "Nichts Neues"; exit 0; fi
+          git commit -m "Unternehmensprognosen aktualisiert"
+          for i in 1 2 3; do git pull --rebase -X theirs -q && git push && break; sleep 5; done

@@ -290,6 +290,14 @@ function kzTabelle(K){
      ["Gewinn je Aktie",pc(K.eps_wachstum),"letztes Jahr"],["Freier Cashflow",pc(K.fcf_wachstum),"letztes Jahr"]]],
    ["Qualität",[["Piotroski-Score",K.piotroski==null?"–":K.piotroski+" von 9","Neun Prüfungen zu Gewinn, Cashflow, Schulden und Effizienz; ab 7 gilt als stark"],
      ["Altman-Z",x(K.altman_z,2),"Insolvenzrisiko-Kennzahl; über 3 gilt als sicher, unter 1,8 als gefährdet (nicht für Banken)"]]]];
+  const F=K.prognose;
+  if(F){const R=[];
+    if(F.kgv_forward!=null)R.push(["Forward-KGV",x(F.kgv_forward),`Kurs / ${F.eps_von===F.eps_bis?x(F.eps_von,2):x(F.eps_von,2)+" bis "+x(F.eps_bis,2)} ${esc(K.waehrung)} Gewinn je Aktie (${esc(F.eps_art)}) für ${esc(F.eps_jahr)}${F.eps_veraendert&&F.eps_veraendert!=="unklar"?", Prognose "+esc(F.eps_veraendert):""}`]);
+    if(F.eps_wachstum_erwartet!=null)R.push(["Erwartetes Gewinnwachstum",pc(F.eps_wachstum_erwartet),"Mitte der Prognose gegenüber dem letzten Geschäftsjahr"]);
+    if(F.umsatz_wachstum_erwartet!=null)R.push(["Erwartetes Umsatzwachstum",pc(F.umsatz_wachstum_erwartet),"Umsatzprognose für "+esc(F.umsatz_jahr)+" gegenüber dem letzten Geschäftsjahr"]);
+    else if(F.umsatz_wachstum_von!=null)R.push(["Erwartetes Umsatzwachstum",F.umsatz_wachstum_von===F.umsatz_wachstum_bis?pc(F.umsatz_wachstum_von):`${num(F.umsatz_wachstum_von,1)} bis ${num(F.umsatz_wachstum_bis,1)} %`,"Prognose für "+esc(F.umsatz_jahr)]);
+    if(F.rendite_erwartet!=null)R.push(["Erwartete Dividendenrendite",pc(F.rendite_erwartet,2),`Angekündigte Dividende ${x(F.dividende_erwartet,2)} ${esc(K.waehrung)} für ${esc(F.dividende_jahr)}`]);
+    if(R.length)B.splice(1,0,[`Ausblick des Unternehmens`,R.concat([["Quelle",`<a href="${esc(F.quelle)}" target="_blank" rel="noopener">Ergebnismeldung</a>`,"vom "+new Date(F.datum).toLocaleDateString("de-DE")+"; eigene Prognose des Unternehmens, keine Analystenschätzung"]])]);}
   if(reit)B.push(["REIT",[["FFO je Aktie",x(K.ffo_je_aktie,2)+" "+esc(K.waehrung),"Nettogewinn plus Abschreibungen je Aktie (Näherung)"],["Kurs/FFO",x(K.kurs_ffo),"Bei REITs aussagekräftiger als das KGV"],["FFO-Ausschüttungsquote",pc(K.ffo_ausschuettung,0),"Gezahlte Dividenden / FFO"]]]);
   const zeilen=B.map(([t,R])=>`<tr class="kzg"><td colspan="3">${t}</td></tr>`+R.map(r=>`<tr><td class="k">${r[0]}</td><td class="v">${r[1]}</td><td class="d">${r[2]}</td></tr>`).join("")).join("");
   return `<div class="stk kz"><h3>Kennzahlen</h3><table><tbody>${zeilen}</tbody></table><p class="sn">Kurs: Schluss des letzten Handelstags (${esc(K.boerse||"Xetra")}, ${new Date(K.datum).toLocaleDateString("de-DE")}), Deutsche Börse, 15 Minuten verzögert. Kennzahlen aus dem Jahresbericht ${esc(K.gj)} bei der US-Börsenaufsicht SEC, Kurs mit dem EZB-Referenzkurs umgerechnet. Keine Anlageberatung.</p></div>`;

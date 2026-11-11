@@ -56,6 +56,10 @@ def main():
     kurse = json.load(open("data/kurse/xetra-letzter.json"))
     isin = json.load(open("data/kurse/isin-zuordnung.json"))
     fx = ezb_kurse()
+    try:
+        PROG = json.load(open("data/prognosen.json", encoding="utf-8")).get("firmen", {})
+    except Exception:
+        PROG = {}
     tag = kurse["datum"]
     fx_tag = max((d for d in fx if d <= tag), default=max(fx))
     rate = fx[fx_tag]
@@ -187,6 +191,35 @@ def main():
             "ffo_ausschuettung": P(abs(dg) if dg else None, ffo, 0) if ffo and ffo > 0 else None,
             "altman_z": alt, "piotroski": pio, "ebit_berechnet": op_ber, "eps": r2(eps, 2),
         })
+        # Ausblick der Firma (Prognose aus der Ergebnismeldung): Forward-KGV, erwartetes Wachstum, erwartete Dividendenrendite
+        pr = PROG.get(t)
+        if pr:
+            gjj = int(gj[:4])
+            def wahl(*arten):
+                for a in arten:
+                    c = [x for x in pr["prognosen"] if x["kennzahl"] == a and int(x["geschaeftsjahr"]) >= gjj]
+                    if c:
+                        return min(c, key=lambda x: int(x["geschaeftsjahr"]))
+                return None
+            pe_ = wahl("eps_bereinigt", "eps_gaap")
+            um_ = wahl("umsatz")
+            uw_ = wahl("umsatzwachstum_proz", "organisches_wachstum_proz")
+            dv_ = wahl("dividende_je_aktie")
+            mid = lambda x: (x["von"] + x["bis"]) / 2
+            fwd = {"datum": pr["datum"], "quelle": pr["quelle"]}
+            if pe_ and mid(pe_) > 0:
+                fwd.update({"eps_jahr": pe_["geschaeftsjahr"], "eps_von": pe_["von"], "eps_bis": pe_["bis"], "eps_art": "bereinigt" if pe_["kennzahl"] == "eps_bereinigt" else "GAAP",
+                            "kgv_forward": r2(kurs / mid(pe_), 1), "eps_veraendert": pe_["veraendert"],
+                            "eps_wachstum_erwartet": r2((mid(pe_) / eps - 1) * 100, 1) if eps and eps > 0 and pe_["kennzahl"] == "eps_gaap" else None})
+            if um_ and ums:
+                fwd.update({"umsatz_jahr": um_["geschaeftsjahr"], "umsatz_von": um_["von"], "umsatz_bis": um_["bis"],
+                            "umsatz_wachstum_erwartet": r2((mid(um_) / ums - 1) * 100, 1)})
+            elif uw_:
+                fwd.update({"umsatz_jahr": uw_["geschaeftsjahr"], "umsatz_wachstum_von": uw_["von"], "umsatz_wachstum_bis": uw_["bis"]})
+            if dv_ and kurs:
+                fwd.update({"dividende_jahr": dv_["geschaeftsjahr"], "dividende_erwartet": mid(dv_), "rendite_erwartet": r2(mid(dv_) / kurs * 100, 2)})
+            if len(fwd) > 2:
+                o["prognose"] = fwd
         out[t] = o
     json.dump({"stand": tag, "ezb_kurs_vom": fx_tag,
                "hinweis": "Kurs: Xetra-Schluss (Deutsche Börse, 15 Min. verzögert). Kennzahlen: letztes Geschäftsjahr laut SEC-Bericht; Kurs per EZB-Referenzkurs in die Berichtswährung umgerechnet.",
