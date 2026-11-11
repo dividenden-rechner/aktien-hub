@@ -17,6 +17,7 @@ story_text: "EnerSys macht aus fast unverändertem Umsatz deutlich mehr Gewinn: 
 logo_name: "EnerSys"
 logo_symbol: ENS
 logo_domain: enersys.com
+logo_file: assets/logos/ens.png
 ---
 <!-- PRÜFEN: Alle Konzern-, Segment- und Cashflow-Zahlen aus der Pressemitteilung "EnerSys Reports Second Quarter Fiscal Year 2027 Results" (11.11.2026, PDF von Divi), Tabellen S. 3, 8, 10, 13. Das zweite Geschäftsquartal endete am 4. Oktober 2026, das Geschäftsjahr endet am 31. März. -->
 <!-- PRÜFEN: Nicht aus der Meldung: Konsens Umsatz 972 Mio. Dollar und bereinigter Gewinn je Aktie 3,20 Dollar, 52-Wochen-Hoch 244,30 Dollar (Investing.com, Vorschau vom 11.11.2026); Kursminus von rund 15 % im letzten Monat (StockStory/FinancialContent, 10.11.2026); Kaufpreis Ultralife 320 Mio. Dollar in bar (EnerSys 8-K vom 27./28.10.2026, Finviz). Kurs 147,65 Dollar zum Schluss (−2,43 %) und 145,01 Dollar nachbörslich (−1,79 %) aus dem Yahoo-Screenshot von Divi (11.11.2026, 22:24 Uhr). -->
