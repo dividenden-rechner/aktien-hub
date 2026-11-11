@@ -966,6 +966,19 @@
   },
   "name": "Siemens Energy"
  },
+ "ENS": {
+  "ceo": {
+   "ab": "2026-11-11",
+   "datei": "medien/ceo/ens.png",
+   "name": "Shawn O'Connell",
+   "rolle": "CEO EnerSys",
+   "schnitt": "rechts",
+   "seite": "rechts",
+   "stand": "Story Nov 2026",
+   "zeile": "Shawn O’Connell | CEO EnerSys"
+  },
+  "name": "EnerSys"
+ },
  "EOAN.DE": {
   "ceo": {
    "datei": "medien/ceo/eoan.png",
@@ -1282,10 +1295,10 @@
    "datei": "medien/ceo/ifx.png",
    "name": "Jochen Hanebeck",
    "rolle": "CEO Infineon",
-   "stand": "Story 2025, vor Verwendung CEO pruefen",
-   "zeile": "Jochen Hanebeck | CEO Infineon",
    "schnitt": "links",
-   "seite": "links"
+   "seite": "links",
+   "stand": "Story 2025, vor Verwendung CEO pruefen",
+   "zeile": "Jochen Hanebeck | CEO Infineon"
   },
   "name": "Infineon"
  },
@@ -1562,6 +1575,19 @@
  "MAA": {
   "logo": "medien/logo/maa.png",
   "name": "Mid-America Apartment Communities"
+ },
+ "MAIN": {
+  "ceo": {
+   "blick": "frontal",
+   "datei": "medien/ceo/main.png",
+   "name": "Dwayne Hyzak",
+   "rolle": "CEO Main Street Capital",
+   "schnitt": "unten",
+   "seite": "rechts",
+   "zeile": "Dwayne Hyzak | CEO Main Street Capital"
+  },
+  "logo": "medien/logo/main.png",
+  "name": "Main Street Capital"
  },
  "MAR": {
   "logo": "medien/logo/mar.png",
@@ -2789,18 +2815,5 @@
  "ZTS": {
   "logo": "medien/logo/zts.png",
   "name": "Zoetis"
- },
- "MAIN": {
-  "name": "Main Street Capital",
-  "ceo": {
-   "datei": "medien/ceo/main.png",
-   "name": "Dwayne Hyzak",
-   "rolle": "CEO Main Street Capital",
-   "zeile": "Dwayne Hyzak | CEO Main Street Capital",
-   "blick": "frontal",
-   "schnitt": "unten",
-   "seite": "rechts"
-  },
-  "logo": "medien/logo/main.png"
  }
 }
