@@ -18,6 +18,9 @@ def hole(url):
         return r.read()
 
 
+VEN = {}
+
+
 def verdichten(raw):
     k = {}
     with gzip.open(io.BytesIO(raw), "rt", encoding="utf-8") as f:
@@ -33,7 +36,9 @@ def verdichten(raw):
             if not isin or not isinstance(p, (int, float)) or p <= 0 or z.get("priceNotation", "MONE") != "MONE":
                 continue
             # Nur Abschluesse im Xetra-Orderbuch fuer den Kurs; ausserboersliche Meldungen (falls vorhanden) zaehlen nicht
-            if z.get("venueOfExecution", "XETA") != "XETA":
+            ven = z.get("venueOfExecution", "XETA")
+            if not str(ven).startswith("XET"):
+                VEN[ven] = VEN.get(ven, 0) + 1
                 continue
             e = k.get(isin)
             if e is None:
@@ -78,7 +83,7 @@ def main():
             alt = vor["k"].get(i) if vor else None
             out["k"][i] = [v[3], round((v[3] / alt[3] - 1) * 100, 2) if alt and alt[3] else None, v[6]]
         json.dump(out, open("data/kurse/xetra-letzter.json", "w"), separators=(",", ":"))
-    print("neu:", neu)
+    print("neu:", neu, "uebersprungene Handelsplaetze:", VEN)
 
 
 if __name__ == "__main__":
