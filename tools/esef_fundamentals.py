@@ -263,6 +263,12 @@ def auswerten(werte):
     vor, gez = reihe(DPS_VORSCHLAG, True, True), reihe(DPS_GEZAHLT, True, True)
     for e, v in reihe(DPS_VORSCHLAG, False, True).items():
         vor.setdefault(e, v)
+    if not vor and not gez and w:   # Dividende in anderer Waehrung beschlossen (AB InBev: Bericht in Dollar, Dividende in Euro)
+        for n, ziel in ((DPS_VORSCHLAG[0], vor), (DPS_GEZAHLT[0], gez)):
+            for e, (v, u, _) in werte.get(n, {}).items():
+                m = re.match(r"iso4217:([A-Z]{3})/.*shares", u)
+                if m and m.group(1) != w and 0 < v < 5000:
+                    ziel.setdefault(e, v); aus.setdefault("_dps_wae", {})[e] = m.group(1)
     frei = {}
     for n in sorted(werte):
         if DPS_FREI.search(n) and not DPS_SPERRE.search(n) and n not in DPS_VORSCHLAG + DPS_GEZAHLT:
@@ -421,6 +427,10 @@ def main():
         for k in reversed(reih):
             dps.update(reihen.get(k, {}))
         dps = {e: v for e, v in dps.items() if e in enden}
+        dwae = reihen.get("_dps_wae", {})
+        dps_w = dwae.get(max(dps)) if dps else None
+        if dps:   # nur Jahre in derselben Waehrung wie der letzte Wert
+            dps = {e: v for e, v in dps.items() if dwae.get(e) == dps_w}
         # Gewinn je Aktie in Pence statt Pfund (oder umgekehrt) erkennen: Gewinn / EPS muss zur Aktienzahl passen
         eps, av, gw = reihen.get("eps_verw", {}), reihen.get("aktien_verw", {}), reihen.get("gewinn", {})
         for e in list(eps):
@@ -436,10 +446,12 @@ def main():
         reihen["aktien_verw"] = av
         fa = {"n": name, "rechtstraeger": rname, "lei": lei, "isin": sp["isin"].get(t), "land": land, "sektor": sektor,
               "gj": gj, "w": w, "std": "IFRS", "quelle": "ESEF", "k": {}}
+        if dps_w:
+            fa["dps_w"] = dps_w   # Dividende je Aktie steht in dieser Waehrung, nicht in der Berichtswaehrung
         if dps:
             fa["k"]["dividende_je_aktie"] = [[e, round(dps[e], 4)] for e in sorted(dps)[-JAHRE:]]
         dg = reihen.get("dividenden_gezahlt", {})
-        ber = {e: round(dg[e] / av[e], 4) for e in dg if e in av and av[e] and dg[e] and e not in dps}
+        ber = {} if dps_w else {e: round(dg[e] / av[e], 4) for e in dg if e in av and av[e] and dg[e] and e not in dps}
         if ber:
             fa["k"]["dividende_je_aktie_ber"] = [[e, ber[e]] for e in sorted(ber)[-JAHRE:]]
         eb = {e: round(gw[e] / av[e], 4) for e in gw if e in av and av[e] and e not in eps}

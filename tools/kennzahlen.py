@@ -86,6 +86,12 @@ def main():
         gj = f["gj"]
         dps_r = f["k"].get("dividende_je_aktie") or f["k"].get("dividende_je_aktie_ber") or []
         dps = wert_am(f, "dividende_je_aktie", gj) or wert_am(f, "dividende_je_aktie_ber", gj)
+        dw = f.get("dps_w")   # Dividende in anderer Waehrung als der Bericht (ESEF, z. B. AB InBev): in Berichtswaehrung umrechnen
+        if dw and dw != w and dps:
+            if (dw == "EUR" or dw in rate) and (w == "EUR" or w in rate):
+                dps = dps * (rate[w] if w != "EUR" else 1.0) / (rate[dw] if dw != "EUR" else 1.0)
+            else:
+                dps = None
         eps = wert_am(f, "eps_verw", gj) or wert_am(f, "eps_ber", gj)
         aktien = wert_am(f, "aktien_verw", gj)
         ek = wert_am(f, "eigenkapital", gj)
