@@ -22,7 +22,7 @@ def main():
         try:
             raw, final, ct = hole(u)
             txt = raw.decode("utf-8", "replace")
-            md += [f"## Liste {u}", f"- Status ok, Typ {ct}, {len(raw)} Bytes, Ziel {final}", "", "```", txt[:1500], "```", ""]
+            md += [f"## Liste {u}", f"- Status ok, Typ {ct}, {len(raw)} Bytes, Ziel {final}", "", "```", txt[:600], "```", ""]
             gef = re.findall(r'[\w\-./:]*?\.json\.gz', txt)
             if gef and not dateien:
                 dateien, basis = gef, final
@@ -30,10 +30,35 @@ def main():
             md += [f"## Liste {u}", f"- Fehler: {str(e)[:150]}", ""]
     md.append(f"Gefundene .json.gz-Dateien: {len(dateien)}")
     if dateien:
-        name = sorted(set(dateien))[-1]
-        url = name if name.startswith("http") else urllib.parse.urljoin(basis.rstrip("/") + "/", name)
+        name = sorted(set(dateien))[-1].split("/")[-1]
+        # Download-Pfad aus dem JavaScript der Seite suchen, sonst bekannte Varianten probieren
+        kand = []
         try:
-            raw, _, _ = hole(url)
+            html = hole("https://mfs.deutsche-boerse.com/DETR-posttrade")[0].decode("utf-8", "replace")
+            for js in re.findall(r'src="([^"]+\.js)"', html):
+                try:
+                    jt = hole(urllib.parse.urljoin("https://mfs.deutsche-boerse.com/", js))[0].decode("utf-8", "replace")
+                    for m in re.findall(r'["\'`](/?api/[a-zA-Z/]*download[a-zA-Z/]*)', jt):
+                        kand.append(urllib.parse.urljoin("https://mfs.deutsche-boerse.com/", m.rstrip("/") + "/" + name))
+                    md.append(f"- JS {js}: " + ", ".join(sorted(set(re.findall(r'api/[\w/\-]+', jt)))[:10]))
+                except Exception as e:
+                    md.append(f"- JS {js}: {str(e)[:80]}")
+        except Exception:
+            pass
+        kand += [f"https://mfs.deutsche-boerse.com/api/download/{name}", f"https://mfs.deutsche-boerse.com/DETR-posttrade/{name}",
+                 f"https://mfs.deutsche-boerse.com/api/DETR-posttrade/{name}", f"https://mfs.deutsche-boerse.com/{name}"]
+        raw, url = None, None
+        for k in kand:
+            try:
+                r_, _, ct = hole(k)
+                md.append(f"- Versuch {k}: {len(r_)} Bytes, {ct}, Anfang {r_[:2]!r}")
+                if r_[:2] == b"\x1f\x8b":
+                    raw, url = r_, k; break
+            except Exception as e:
+                md.append(f"- Versuch {k}: {str(e)[:80]}")
+        try:
+            if raw is None:
+                raise RuntimeError("keine gz-Datei gefunden")
             data = gzip.decompress(raw).decode("utf-8", "replace")
             md += ["", f"## Neueste Datei {url}", f"- {len(raw)} Bytes gepackt, {len(data)} Zeichen entpackt", ""]
             zeilen = []
