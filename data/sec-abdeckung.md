@@ -24,6 +24,7 @@ Nach IFRS (Auslandsfirmen, Beträge in Berichtswährung): 29. Dividende je Aktie
 | operatives_ergebnis | 450 (83%) | 416 (76%) |
 | abschreibungen | 524 (96%) | 518 (95%) |
 | zinsaufwand | 496 (91%) | 402 (74%) |
+| steuern | 538 (99%) | 533 (98%) |
 | bilanzsumme | 543 (100%) | 543 (100%) |
 | umlaufvermoegen | 451 (83%) | 448 (82%) |
 | kurzfr_verbindl | 451 (83%) | 448 (82%) |
