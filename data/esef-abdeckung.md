@@ -1,6 +1,6 @@
 # ESEF-Jahreszahlen Europa: Abdeckung (Stand 2026-11-11)
 
-118 Firmen in der Liste, mit Jahreszahlen: **74**, davon mit Börsenkurs (ISIN): **61**.
+118 Firmen in der Liste, mit Jahreszahlen: **110**, davon mit Börsenkurs (ISIN): **96**.
 
 | Kürzel | Name | Rechtsträger laut Bericht | Jahre | Kern | Kurs | fehlt |
 |---|---|---|---|---|---|---|
@@ -82,47 +82,43 @@
 | SWED-A.ST | Swedbank | Swedbank AB | 2019–2025 (SEK) | 5/7 | ja | umsatz, capex |
 | HM-B.ST | H&M | H & M Hennes & Mauritz AB | 2021–2025 (SEK) | 7/7 | ja | – |
 | SAND.ST | Sandvik | Sandvik Aktiebolag | 2020–2025 (SEK) | 7/7 | ja | – |
-| ASSA-B.ST | Assa Abloy | – | noch nicht geprüft | | | |
-| TELIA.ST | Telia | – | noch nicht geprüft | | | |
-| ESSITY-B.ST | Essity | – | noch nicht geprüft | | | |
-| DSV.CO | DSV | – | noch nicht geprüft | | | |
-| CARL-B.CO | Carlsberg | – | noch nicht geprüft | | | |
-| MAERSK-B.CO | A.P. Møller-Mærsk | – | noch nicht geprüft | | | |
-| DANSKE.CO | Danske Bank | – | noch nicht geprüft | | | |
-| COLO-B.CO | Coloplast | – | noch nicht geprüft | | | |
-| EQNR.OL | Equinor | – | noch nicht geprüft | | | |
-| DNB.OL | DNB | – | noch nicht geprüft | | | |
-| TEL.OL | Telenor | – | noch nicht geprüft | | | |
-| ORK.OL | Orkla | – | noch nicht geprüft | | | |
-| MOWI.OL | Mowi | – | noch nicht geprüft | | | |
-| YAR.OL | Yara | – | noch nicht geprüft | | | |
-| NHY.OL | Norsk Hydro | – | noch nicht geprüft | | | |
-| GJF.OL | Gjensidige | – | noch nicht geprüft | | | |
-| OMV.VI | OMV | – | noch nicht geprüft | | | |
-| VER.VI | Verbund | – | noch nicht geprüft | | | |
-| EBS.VI | Erste Group | – | noch nicht geprüft | | | |
-| KRZ.IR | Kerry Group | – | noch nicht geprüft | | | |
-| LGEN.L | Legal & General | – | noch nicht geprüft | | | |
-| NG.L | National Grid | – | noch nicht geprüft | | | |
-| SSE.L | SSE | – | noch nicht geprüft | | | |
-| IMB.L | Imperial Brands | – | noch nicht geprüft | | | |
-| AV.L | Aviva | – | noch nicht geprüft | | | |
-| REL.L | RELX | – | noch nicht geprüft | | | |
-| TSCO.L | Tesco | – | noch nicht geprüft | | | |
-| PHNX.L | Phoenix Group | – | noch nicht geprüft | | | |
-| MNG.L | M&G | – | noch nicht geprüft | | | |
-| RKT.L | Reckitt | – | noch nicht geprüft | | | |
-| BA.L | BAE Systems | – | noch nicht geprüft | | | |
-| GLEN.L | Glencore | – | noch nicht geprüft | | | |
-| UU.L | United Utilities | – | noch nicht geprüft | | | |
-| SVT.L | Severn Trent | – | noch nicht geprüft | | | |
-| NWG.L | NatWest | – | noch nicht geprüft | | | |
-| BT-A.L | BT Group | – | noch nicht geprüft | | | |
-| TW.L | Taylor Wimpey | – | noch nicht geprüft | | | |
-| PSN.L | Persimmon | – | noch nicht geprüft | | | |
-| SGRO.L | Segro | – | noch nicht geprüft | | | |
-| ROG.SW | Roche | – | noch nicht geprüft | | | |
-
-## Hinweise
-
-- Zeitbudget erreicht, Rest im nächsten Lauf
+| ASSA-B.ST | Assa Abloy | ASSA ABLOY AB | 2020–2025 (SEK) | 7/7 | ja | – |
+| TELIA.ST | Telia | TELIA COMPANY AB | 2020–2025 (SEK) | 7/7 | ja | – |
+| ESSITY-B.ST | Essity | Essity Aktiebolag (publ) | 2019–2025 (SEK) | 7/7 | ja | – |
+| DSV.CO | DSV | DSV A/S | 2019–2025 (DKK) | 7/7 | ja | – |
+| CARL-B.CO | Carlsberg | CARLSBERG A/S | 2021–2025 (DKK) | 7/7 | ja | – |
+| MAERSK-B.CO | A.P. Møller-Mærsk | A.P. MØLLER - MÆRSK A/S | 2019–2025 (USD) | 7/7 | ja | – |
+| DANSKE.CO | Danske Bank | DANSKE BANK A/S | 2021–2025 (DKK) | 6/7 | ja | umsatz |
+| COLO-B.CO | Coloplast | COLOPLAST A/S | 2020–2025 (DKK) | 7/7 | ja | – |
+| EQNR.OL | Equinor | EQUINOR ASA | 2019–2025 (USD) | 7/7 | ja | – |
+| DNB.OL | DNB | DNB BANK ASA | 2020–2025 (NOK) | 5/7 | ja | umsatz, capex |
+| TEL.OL | Telenor | TELENOR ASA | 2020–2025 (NOK) | 7/7 | ja | – |
+| ORK.OL | Orkla | ORKLA ASA | 2020–2025 (NOK) | 7/7 | ja | – |
+| MOWI.OL | Mowi | MOWI ASA | 2020–2025 (EUR) | 7/7 | ja | – |
+| YAR.OL | Yara | YARA INTERNATIONAL ASA | 2020–2025 (USD) | 7/7 | ja | – |
+| NHY.OL | Norsk Hydro | Norsk Hydro ASA | 2020–2025 (NOK) | 7/7 | ja | – |
+| GJF.OL | Gjensidige | Gjensidige Forsikring ASA | 2021–2024 (NOK) | 5/7 | ja | umsatz, capex |
+| OMV.VI | OMV | OMV AKTIENGESELLSCHAFT | 2019–2025 (EUR) | 6/7 | ja | capex |
+| VER.VI | Verbund | VERBUND AG | 2019–2025 (EUR) | 7/7 | ja | – |
+| EBS.VI | Erste Group | ERSTE GROUP BANK AG | 2019–2025 (EUR) | 6/7 | ja | umsatz |
+| KRZ.IR | Kerry Group | – | nicht gefunden | | | |
+| LGEN.L | Legal & General | LEGAL & GENERAL GROUP PLC | 2020–2025 (GBP) | 7/7 | ja | – |
+| NG.L | National Grid | NATIONAL GRID PLC | 2020–2026 (GBP) | 6/7 | ja | operativer_cf |
+| SSE.L | SSE | SSE PLC | 2021–2026 (GBP) | 7/7 | ja | – |
+| IMB.L | Imperial Brands | IMPERIAL BRANDS PLC | 2022–2025 (GBP) | 7/7 | ja | – |
+| AV.L | Aviva | AVIVA PLC | 2020–2025 (GBP) | 6/7 | ja | umsatz |
+| REL.L | RELX | RELX PLC | 2019–2025 (GBP) | 7/7 | ja | – |
+| TSCO.L | Tesco | TESCO PLC | 2021–2026 (GBP) | 7/7 | ja | – |
+| PHNX.L | Phoenix Group | – | nicht gefunden | | | |
+| MNG.L | M&G | M&G PLC | 2020–2025 (GBP) | 6/7 | ja | umsatz |
+| RKT.L | Reckitt | RECKITT BENCKISER GROUP PLC | 2020–2025 (GBP) | 7/7 | ja | – |
+| BA.L | BAE Systems | BAE SYSTEMS PLC | 2020–2025 (GBP) | 7/7 | ja | – |
+| GLEN.L | Glencore | – | nicht gefunden | | | |
+| UU.L | United Utilities | UNITED UTILITIES GROUP PLC | 2021–2026 (GBP) | 7/7 | ja | – |
+| SVT.L | Severn Trent | SEVERN TRENT PLC | 2021–2026 (GBP) | 7/7 | ja | – |
+| NWG.L | NatWest | NATWEST GROUP PLC | 2019–2025 (GBP) | 6/7 | ja | umsatz |
+| BT-A.L | BT Group | BT GROUP PLC | 2021–2026 (GBP) | 7/7 | ja | – |
+| TW.L | Taylor Wimpey | TAYLOR WIMPEY PLC | 2020–2025 (GBP) | 7/7 | ja | – |
+| PSN.L | Persimmon | PERSIMMON PUBLIC LIMITED COMPANY | 2020–2025 (GBP) | 7/7 | ja | – |
+| SGRO.L | Segro | SEGRO PUBLIC LIMITED COMPANY | 2020–2025 (GBP) | 6/7 | fehlt | capex |
+| ROG.SW | Roche | – | nicht gefunden | | | |
