@@ -1,10 +1,13 @@
 name: AV-Earnings (Termine, Schaetzungen, Ist-Zahlen)
 on:
   schedule:
-    - cron: "40 5 * * *"    # morgens: Termine und Schaetzungen
-    - cron: "10 13 * * 1-5" # mittags: Ergebnisse der Vor-Boerse-Berichte
-    - cron: "40 22 * * 1-5" # nachts: Ergebnisse der US-Berichte (AV hinkt teils bis zum naechsten Tag nach)
+    - cron: "40 5 * * *"    # morgens: Kalender + 10 Schaetzungen
+    - cron: "40 22 * * 1-5" # nachts: bis zu 10 Ergebnisse (AV hinkt teils bis zum naechsten Tag nach)
   workflow_dispatch:
+    inputs:
+      phase:
+        description: "vorschau oder ergebnisse (leer = nach Uhrzeit)"
+        required: false
 permissions:
   contents: write
 concurrency:
@@ -21,6 +24,7 @@ jobs:
       - name: Alpha Vantage abrufen
         env:
           ALPHAVANTAGE_API_KEY: ${{ secrets.ALPHAVANTAGE_API_KEY }}
+          AV_PHASE: ${{ github.event.inputs.phase }}
         run: python3 tools/av_earnings.py
       - name: Committen
         run: |

@@ -7,6 +7,7 @@ import os, sys, csv, io, json, time, datetime, urllib.request, urllib.parse
 OUT = "data/av-earnings.json"
 KEY = os.environ.get("ALPHAVANTAGE_API_KEY", "").strip()
 MAX_CALLS = int(os.environ.get("AV_MAX", "24"))
+N_VOR, N_ERG = 10, 10   # Tagesbudget Gratis-Schluessel: 25 Aufrufe = 1 Kalender + 10 Vorschau + 10 Ergebnisse
 BACK, FWD = 4, 14
 calls = 0
 
@@ -66,11 +67,13 @@ def main():
     items = {(i["sym"], i["datum"]): i for i in cur.get("items", [])}
     today = datetime.date.today()
     lo, hi = today - datetime.timedelta(days=BACK), today + datetime.timedelta(days=FWD)
-    txt = av(function="EARNINGS_CALENDAR", horizon="3month")
-    if not txt or txt.lstrip().startswith("{"):
+    phase = os.environ.get("AV_PHASE") or ("vorschau" if datetime.datetime.utcnow().hour < 12 else "ergebnisse")
+    print("Phase:", phase)
+    txt = av(function="EARNINGS_CALENDAR", horizon="3month") if phase == "vorschau" else None
+    if phase == "vorschau" and (not txt or txt.lstrip().startswith("{")):
         print("Kalender nicht geladen:", (txt or "")[:160]); return
     W = watch(); n = 0
-    for r in csv.DictReader(io.StringIO(txt)):
+    for r in (csv.DictReader(io.StringIO(txt)) if txt else []):
         sym, d = (r.get("symbol") or "").strip(), (r.get("reportDate") or "").strip()
         if not sym or sym not in W: continue
         try: dd = datetime.date.fromisoformat(d)
@@ -84,9 +87,11 @@ def main():
         n += 1
     print("Termine im Fenster:", n)
     # 1) Schaetzungen fuer kommende Termine (heute und spaeter)
-    PRIO = prio()
+    PRIO = prio(); nv = 0
     for (sym, d), it in sorted(items.items(), key=lambda kv: (kv[0][1], kv[0][0] not in PRIO)):
+        if phase != "vorschau" or nv >= N_VOR: break
         if d < today.isoformat() or it.get("est_stand") == today.isoformat(): continue
+        nv += 1
         j = js(av(function="EARNINGS_ESTIMATES", symbol=sym) or "")
         if j is None: continue
         qs = [e for e in j.get("estimates", []) if e.get("horizon") == "fiscal quarter"]
@@ -97,11 +102,13 @@ def main():
             if not pick: continue
         it.pop("eps_src", None); it.update(fiscal=pick["date"], eps_est=num(pick.get("eps_estimate_average")), eps_n=int(num(pick.get("eps_estimate_analyst_count")) or 0),
                   rev_est=num(pick.get("revenue_estimate_average")), rev_n=int(num(pick.get("revenue_estimate_analyst_count")) or 0), est_stand=today.isoformat())
+    ne = 0
     # 2) Ist-Zahlen fuer bereits berichtete Termine (kommen bei AV mit Verzug von Stunden bis zu einem Tag)
     for (sym, d), it in sorted(items.items(), key=lambda kv: kv[0][1], reverse=True):
+        if phase != "ergebnisse" or ne >= N_ERG: break
         if d > today.isoformat() or (it.get("eps_act") is not None and it.get("rev_act") is not None): continue
         if it.get("act_try") == today.isoformat(): continue
-        it["act_try"] = today.isoformat()
+        it["act_try"] = today.isoformat(); ne += 1
         if it.get("eps_act") is None:
             j = js(av(function="EARNINGS", symbol=sym) or "")
             for q in (j or {}).get("quarterlyEarnings", []):
