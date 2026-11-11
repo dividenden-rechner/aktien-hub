@@ -17,10 +17,11 @@ Datei anklicken, dann Stift-Symbol: Zeile `draft: true` löschen und speichern, 
 | 29.10.2026 22:42 | Amazon steigert Umsatz im dritten Quartal auf 201,9 Milliarden Dollar | [79738970_2026-10-29/7757_2242-amazon-q3-2026-zahlen.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/79738970_2026-10-29/7757_2242-amazon-q3-2026-zahlen.md) |
 | 29.10.2026 10:12 | Shell erzielt im dritten Quartal 10,8 Milliarden Dollar Gewinn | [79738970_2026-10-29/8987_1012-shell-q3-2026-ergebnisse.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/79738970_2026-10-29/8987_1012-shell-q3-2026-ergebnisse.md) |
 
-### Online (350)
+### Online (351)
 
 | Datum | Titel | Datei |
 |---|---|---|
+| 11.11.2026 03:21 | Symrise: Martin Huber folgt im April 2027 auf Finanzchef Olaf Klinger | [79738888_2026-11-11/9678_0321-symrise-martin-huber-neuer-cfo-2027.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/79738888_2026-11-11/9678_0321-symrise-martin-huber-neuer-cfo-2027.md) |
 | 10.11.2026 22:50 | CoreWeave: Umsatz +168 % auf 3,7 Mrd. US-Dollar, doch die Zinsen übersteigen das Betriebsergebnis um mehr als das Vierfache | [79738889_2026-11-10/7775_2250-coreweave-q3-2026-umsatz-backlog-zinsen.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/79738889_2026-11-10/7775_2250-coreweave-q3-2026-umsatz-backlog-zinsen.md) |
 | 10.11.2026 22:15 | Costco zahlt 30 US-Dollar Sonderdividende je Aktie und stockt Rückkauf auf 4 Milliarden auf | [79738889_2026-11-10/7780_2215-costco-sonderdividende-30-dollar-aktienrueckkauf.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/79738889_2026-11-10/7780_2215-costco-sonderdividende-30-dollar-aktienrueckkauf.md) |
 | 10.11.2026 22:10 | Broadridge Financial Solutions erhöht Quartalsdividende auf 1,09 US-Dollar je Aktie | [79738889_2026-11-10/7789_2210-broadridge-financial-solutions-dividende-q1-2027.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/79738889_2026-11-10/7789_2210-broadridge-financial-solutions-dividende-q1-2027.md) |
