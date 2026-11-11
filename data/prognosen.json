@@ -11,7 +11,7 @@
 "bis": 12150000000,
 "einheit": "USD",
 "veraendert": "neu",
-"beleg": "Net sales are anticipated to be in the range of $11,950 million to $12,150 million compared with $10,557 million in fiscal 2026"
+"beleg": "Net sales are anticipated to be in the range of $11,950 million to $12,150 million"
 },
 {
 "kennzahl": "eps_gaap",
@@ -21,15 +21,6 @@
 "einheit": "USD",
 "veraendert": "neu",
 "beleg": "Earnings per share is expected to be in the range of $42.06 to $42.91 per share"
-},
-{
-"kennzahl": "operative_marge_proz",
-"geschaeftsjahr": "2027",
-"von": 52.0,
-"bis": 52.0,
-"einheit": "%",
-"veraendert": "neu",
-"beleg": "corresponding to an EBITDA As Defined margin guide of approximately 52.0% for fiscal 2027"
 },
 {
 "kennzahl": "eps_bereinigt",
@@ -110,7 +101,7 @@
 "bis": 9.9,
 "einheit": "USD",
 "veraendert": "bestaetigt",
-"beleg": "Adjusted EPS | | $7.90 - $9.90"
+"beleg": "NRG is reaffirming its guidance for 2026 as set forth below."
 },
 {
 "kennzahl": "fcf",
@@ -119,7 +110,7 @@
 "bis": 3300000000,
 "einheit": "USD",
 "veraendert": "bestaetigt",
-"beleg": "FCFbG | | $2,800 - $3,300"
+"beleg": "NRG is reaffirming its guidance for 2026 as set forth below."
 },
 {
 "kennzahl": "eps_bereinigt",
@@ -128,7 +119,7 @@
 "bis": 10.05,
 "einheit": "USD",
 "veraendert": "neu",
-"beleg": "Adjusted EPS | | $8.05 - $10.05"
+"beleg": "NRG initiates 2027 guidance as follows:"
 },
 {
 "kennzahl": "fcf",
@@ -137,7 +128,7 @@
 "bis": 3400000000,
 "einheit": "USD",
 "veraendert": "neu",
-"beleg": "FCFbG | | $2,900 - $3,400"
+"beleg": "NRG initiates 2027 guidance as follows:"
 },
 {
 "kennzahl": "dividende_je_aktie",
@@ -145,8 +136,8 @@
 "von": 2.05,
 "bis": 2.05,
 "einheit": "USD",
-"veraendert": "neu",
-"beleg": "8% increase in the annual common dividend to $2.05 per share"
+"veraendert": "angehoben",
+"beleg": "an 8% increase in the annual common dividend to $2.05 per share"
 }
 ]
 },
@@ -162,6 +153,15 @@
 "einheit": "USD",
 "veraendert": "angehoben",
 "beleg": "Narrows 2026 ongoing earnings forecast range to $1.92 to $1.96 per share"
+},
+{
+"kennzahl": "umsatzwachstum_proz",
+"geschaeftsjahr": "2030",
+"von": 7,
+"bis": 9,
+"einheit": "Prozent",
+"veraendert": "angehoben",
+"beleg": "increased its annual EPS growth target to 7% to 9% through at least 2030"
 },
 {
 "kennzahl": "eps_bereinigt",
@@ -218,13 +218,31 @@
 "quelle": "https://www.sec.gov/Archives/edgar/data/910606/000119312526450159/reg-ex99_1.htm",
 "prognosen": [
 {
+"kennzahl": "eps_gaap",
+"geschaeftsjahr": "2026",
+"von": 2.31,
+"bis": 2.33,
+"einheit": "USD",
+"veraendert": "angehoben",
+"beleg": "Net Income Attributable to Common Shareholders per diluted share $2.31 - $2.33"
+},
+{
 "kennzahl": "eps_bereinigt",
 "geschaeftsjahr": "2026",
 "von": 4.65,
 "bis": 4.67,
 "einheit": "USD",
 "veraendert": "angehoben",
-"beleg": "Raised full year 2026 Core Operating Earnings guidance to a range of $4.65 to $4.67 per diluted share"
+"beleg": "Core Operating Earnings per diluted share $4.65 - $4.67"
+},
+{
+"kennzahl": "organisches_wachstum_proz",
+"geschaeftsjahr": "2026",
+"von": 4.25,
+"bis": 4.25,
+"einheit": "Prozent",
+"veraendert": "angehoben",
+"beleg": "Same property NOI growth 4.25% +"
 }
 ]
 },
@@ -239,7 +257,7 @@
 "bis": 5.55,
 "einheit": "USD",
 "veraendert": "angehoben",
-"beleg": "Today, Ameren is raising its 2026 earnings guidance range to $5.35 to $5.55 from $5.25 to $5.45 per share."
+"beleg": "Raising 2026 Earnings Guidance Range to $5.35 to $5.55 per Diluted Share"
 },
 {
 "kennzahl": "eps_bereinigt",
@@ -248,16 +266,16 @@
 "bis": 5.9,
 "einheit": "USD",
 "veraendert": "neu",
-"beleg": "Further, Ameren expects 2027 diluted earnings per share to be in a range of $5.70 to $5.90 per share"
+"beleg": "Establishing 2027 Earnings Guidance Range of $5.70 to $5.90 per Diluted Share"
 },
 {
 "kennzahl": "umsatzwachstum_proz",
 "geschaeftsjahr": "2027",
-"von": 8,
-"bis": 10,
-"einheit": "Prozent",
+"von": 8.0,
+"bis": 10.0,
+"einheit": "%",
 "veraendert": "neu",
-"beleg": "Ameren expects diluted earnings per share to grow at an 8% to 10% compound annual rate from 2027 through 2031"
+"beleg": "Issuing EPS Compound Annual Growth Rate Guidance of 8% to 10% for 2027 through 2031"
 }
 ]
 },
@@ -266,10 +284,28 @@
 "quelle": "https://www.sec.gov/Archives/edgar/data/1037646/000103764626000072/ex-991mtd8xkq32026.htm",
 "prognosen": [
 {
-"kennzahl": "organisches_wachstum_proz",
+"kennzahl": "umsatzwachstum_proz",
 "geschaeftsjahr": "2026",
-"von": 5.0,
-"bis": 5.0,
+"von": 5,
+"bis": 5,
+"einheit": "%",
+"veraendert": "neu",
+"beleg": "management anticipates local currency sales for the fourth quarter of 2026 will increase approximately 5%."
+},
+{
+"kennzahl": "eps_bereinigt",
+"geschaeftsjahr": "2026",
+"von": 14.84,
+"bis": 15.04,
+"einheit": "USD",
+"veraendert": "neu",
+"beleg": "Adjusted EPS is forecast to be $14.84 to $15.04, a growth rate of 11% to 13%."
+},
+{
+"kennzahl": "umsatzwachstum_proz",
+"geschaeftsjahr": "2026",
+"von": 5,
+"bis": 5,
 "einheit": "%",
 "veraendert": "angehoben",
 "beleg": "For the full year 2026, management anticipates local currency sales will increase approximately 5%, which excludes the impact of tariff refunds to customers."
@@ -284,13 +320,13 @@
 "beleg": "Adjusted EPS is forecast to be in the range of $47.70 to $47.90, representing growth of approximately 12%."
 },
 {
-"kennzahl": "organisches_wachstum_proz",
+"kennzahl": "umsatzwachstum_proz",
 "geschaeftsjahr": "2027",
-"von": 5.0,
-"bis": 5.0,
+"von": 5,
+"bis": 5,
 "einheit": "%",
 "veraendert": "neu",
-"beleg": "The Company stated that based on its assessment of market conditions today, management anticipates local currency sales growth of approximately 5% in 2027."
+"beleg": "management anticipates local currency sales growth of approximately 5% in 2027."
 },
 {
 "kennzahl": "eps_bereinigt",
@@ -314,15 +350,15 @@
 "bis": 9.46,
 "einheit": "USD",
 "veraendert": "angehoben",
-"beleg": "Camden updated its earnings guidance for 2026 based on its current and expected views of the apartment market"
+"beleg": "Camden updated its earnings guidance for 2026 based on its current and expected views of the apartment market and general economic conditions"
 },
 {
 "kennzahl": "umsatzwachstum_proz",
 "geschaeftsjahr": "2026",
 "von": -0.25,
 "bis": 0.25,
-"einheit": "%",
-"veraendert": "angehoben",
+"einheit": "Prozent",
+"veraendert": "gesenkt",
 "beleg": "Revenues (0.25)% - 0.25%"
 }
 ]
@@ -336,8 +372,8 @@
 "geschaeftsjahr": "2026",
 "von": 30,
 "bis": 30,
-"einheit": "%",
-"veraendert": "unklar",
+"einheit": "Prozent",
+"veraendert": "gesenkt",
 "beleg": "expecting full-year revenue growth of approximately 30%"
 },
 {
@@ -346,8 +382,17 @@
 "von": 990000000,
 "bis": 1010000000,
 "einheit": "USD",
-"veraendert": "unklar",
+"veraendert": "neu",
 "beleg": "We expect fourth-quarter revenue in a range of $990 million to $1.01 billion"
+},
+{
+"kennzahl": "sonstiges",
+"geschaeftsjahr": "2026",
+"von": 245000000,
+"bis": 250000000,
+"einheit": "USD",
+"veraendert": "neu",
+"beleg": "Adjusted EBITDA of $245 million to $250 million."
 }
 ]
 },
@@ -359,10 +404,10 @@
 "kennzahl": "umsatz",
 "geschaeftsjahr": "2027",
 "von": 1573000000,
-"bis": 1638000000,
+"bis": 16380000000,
 "einheit": "USD",
 "veraendert": "neu",
-"beleg": "Net Sales $1.573 to $1.638 billion"
+"beleg": "We expect net sales for the December quarter to be between down 3% and up 1% sequentially"
 },
 {
 "kennzahl": "operative_marge_proz",
@@ -371,16 +416,7 @@
 "bis": 63.9,
 "einheit": "Prozent",
 "veraendert": "neu",
-"beleg": "GAAP Gross Profit 62.9% to 63.9%"
-},
-{
-"kennzahl": "operative_marge_proz",
-"geschaeftsjahr": "2027",
-"von": 64.0,
-"bis": 65.0,
-"einheit": "Prozent",
-"veraendert": "neu",
-"beleg": "Non-GAAP Gross Profit 64.0% to 65.0%"
+"beleg": "We expect non-GAAP gross margin to be between 64% and 65% and GAAP gross margin to be between 62.9% and 63.9%."
 }
 ]
 },
@@ -405,15 +441,6 @@
 "einheit": "Fans",
 "veraendert": "unklar",
 "beleg": "Venue Nation attendance for the year now expected to exceed 75 million"
-},
-{
-"kennzahl": "sonstiges",
-"geschaeftsjahr": "2026",
-"von": 180000000,
-"bis": 180000000,
-"einheit": "Fans",
-"veraendert": "unklar",
-"beleg": "Fan attendance now expected to approach 180 million for the full year"
 }
 ]
 },
@@ -426,7 +453,7 @@
 "geschaeftsjahr": "2027",
 "von": 1,
 "bis": 3,
-"einheit": "%",
+"einheit": "Prozent",
 "veraendert": "neu",
 "beleg": "Expect 2027 oil production growth of 1-3%"
 }
@@ -443,16 +470,16 @@
 "bis": 4465000000,
 "einheit": "USD",
 "veraendert": "neu",
-"beleg": "Year Ending December 31, 2026 Revenue $4,440 million to $4,465 million"
+"beleg": "Revenue (in millions) $ 4,440 to $ 4,465"
 },
 {
 "kennzahl": "operative_marge_proz",
 "geschaeftsjahr": "2026",
 "von": 25,
 "bis": 25,
-"einheit": "%",
+"einheit": "Prozent",
 "veraendert": "neu",
-"beleg": "Year Ending December 31, 2026 Non-GAAP operating margin 25% to 25%"
+"beleg": "Non-GAAP operating margin 25 % to 25 %"
 },
 {
 "kennzahl": "eps_bereinigt",
@@ -461,23 +488,14 @@
 "bis": 6.68,
 "einheit": "USD",
 "veraendert": "neu",
-"beleg": "Year Ending December 31, 2026 Non-GAAP net income per diluted share $6.47 to $6.68"
-},
-{
-"kennzahl": "umsatz",
-"geschaeftsjahr": "2027",
-"von": 1100000000,
-"bis": 1300000000,
-"einheit": "USD",
-"veraendert": "neu",
-"beleg": "2027 cloud infrastructure services revenue projected to be $1.1 billion to $1.3 billion"
+"beleg": "Non-GAAP net income per diluted share $ 6.47 to $ 6.68"
 },
 {
 "kennzahl": "umsatzwachstum_proz",
 "geschaeftsjahr": "2027",
 "von": 17,
 "bis": 22,
-"einheit": "%",
+"einheit": "Prozent",
 "veraendert": "neu",
 "beleg": "total company revenue growth of 17% to 22% year-over-year when adjusted for foreign exchange"
 },
@@ -503,7 +521,7 @@
 "bis": 6.42,
 "einheit": "USD",
 "veraendert": "unklar",
-"beleg": "Estimated net income attributable to common stockholders per diluted share $ 6.32 to $ 6.42"
+"beleg": "Estimated net income attributable to common stockholders per diluted share $ 6.32 $ 6.42"
 },
 {
 "kennzahl": "sonstiges",
@@ -521,7 +539,7 @@
 "bis": 2.3,
 "einheit": "USD",
 "veraendert": "neu",
-"beleg": "Today, Simon’s Board of Directors declared a quarterly common stock dividend of $2.30 for the fourth quarter of 2026."
+"beleg": "Simon’s Board of Directors declared a quarterly common stock dividend of $2.30 for the fourth quarter of 2026."
 }
 ]
 },
@@ -545,7 +563,7 @@
 "bis": 7.3,
 "einheit": "USD",
 "veraendert": "angehoben",
-"beleg": "Increased adjusted EPS range to $7.20 to $7.30"
+"beleg": "Increased adjusted EPS range to $7.20 to $7.30; from prior range of $7.10 to $7.20"
 },
 {
 "kennzahl": "fcf",
@@ -576,7 +594,7 @@
 "geschaeftsjahr": "2026",
 "von": 16,
 "bis": 18,
-"einheit": "%",
+"einheit": "Prozent",
 "veraendert": "neu",
 "beleg": "representing year-over-year growth of 16% to 18%"
 },
@@ -585,7 +603,7 @@
 "geschaeftsjahr": "2026",
 "von": 17,
 "bis": 19,
-"einheit": "%",
+"einheit": "Prozent",
 "veraendert": "angehoben",
 "beleg": "we now expect year-over-year revenue growth in the high teens"
 },
@@ -594,7 +612,7 @@
 "geschaeftsjahr": "2026",
 "von": 36,
 "bis": 36,
-"einheit": "%",
+"einheit": "Prozent",
 "veraendert": "angehoben",
 "beleg": "we now expect Adjusted EBITDA Margin to increase to approximately 36%"
 }
@@ -693,7 +711,7 @@
 "geschaeftsjahr": "2026",
 "von": 10,
 "bis": 10,
-"einheit": "Prozent",
+"einheit": "%",
 "veraendert": "gesenkt",
 "beleg": "Cummins expects revenue growth of approximately 10% compared to our prior guidance of 10% to 13%."
 },
@@ -702,7 +720,7 @@
 "geschaeftsjahr": "2026",
 "von": 18.2,
 "bis": 18.2,
-"einheit": "Prozent",
+"einheit": "%",
 "veraendert": "bestaetigt",
 "beleg": "EBITDA margins are expected to be approximately 18.2%, consistent with our prior guidance range of 18% to 18.5%"
 }
@@ -739,11 +757,11 @@
 {
 "kennzahl": "umsatzwachstum_proz",
 "geschaeftsjahr": "2026",
-"von": -2.0,
-"bis": -1.0,
+"von": -2,
+"bis": -1,
 "einheit": "Prozent",
 "veraendert": "angehoben",
-"beleg": "(organic operational growth of (2)% to (1)%)"
+"beleg": "organic operational growth of (2)% to (1)%"
 },
 {
 "kennzahl": "eps_bereinigt",
@@ -765,7 +783,7 @@
 "geschaeftsjahr": "2026",
 "von": 4,
 "bis": 5,
-"einheit": "Prozent",
+"einheit": "%",
 "veraendert": "bestaetigt",
 "beleg": "We continue to expect normalized, constant currency adjusted net revenue growth of approximately 4% – 5%"
 },
@@ -776,14 +794,14 @@
 "bis": 13.8,
 "einheit": "USD",
 "veraendert": "bestaetigt",
-"beleg": "adjusted earnings per share of $13.60 – $13.80 for the full year."
+"beleg": "and adjusted earnings per share of $13.60 – $13.80 for the full year."
 },
 {
 "kennzahl": "operative_marge_proz",
 "geschaeftsjahr": "2026",
 "von": 150,
 "bis": 150,
-"einheit": "Basisspunkte",
+"einheit": "basis points",
 "veraendert": "bestaetigt",
 "beleg": "We continue to expect normalized adjusted operating margin expansion of approximately 150 basis points for the full year"
 }
@@ -798,16 +816,16 @@
 "geschaeftsjahr": "2027",
 "von": 4.5,
 "bis": 7.5,
-"einheit": "%",
+"einheit": "Prozent",
 "veraendert": "neu",
 "beleg": "Reported sales growth of 4.5% to 7.5%"
 },
 {
 "kennzahl": "organisches_wachstum_proz",
 "geschaeftsjahr": "2027",
-"von": 6,
-"bis": 9,
-"einheit": "%",
+"von": 6.0,
+"bis": 9.0,
+"einheit": "Prozent",
 "veraendert": "neu",
 "beleg": "organic sales growth of 6% to 9%"
 },
@@ -843,6 +861,15 @@
 "einheit": "USD",
 "veraendert": "angehoben",
 "beleg": "Raises 2026 Adjusted (non-GAAP) EPS guidance to $4.35 to $4.50 from $4.14 to $4.34"
+},
+{
+"kennzahl": "umsatzwachstum_proz",
+"geschaeftsjahr": "2030",
+"von": 6,
+"bis": 8,
+"einheit": "%",
+"veraendert": "bestaetigt",
+"beleg": "reaffirming our long-term adjusted EPS annual growth target of 6% to 8%+ through 2030"
 }
 ]
 },
@@ -854,7 +881,7 @@
 "kennzahl": "eps_bereinigt",
 "geschaeftsjahr": "2027",
 "von": 12.8,
-"bis": 13.0,
+"bis": 13,
 "einheit": "USD",
 "veraendert": "angehoben",
 "beleg": "Cardinal Health is raising its fiscal year 2027 guidance for non-GAAP diluted EPS to $12.80 to $13.00"
@@ -865,15 +892,6 @@
 "datum": "2026-11-05",
 "quelle": "https://www.sec.gov/Archives/edgar/data/1116132/000114036126042034/ef20084882_ex99-1.htm",
 "prognosen": [
-{
-"kennzahl": "sonstiges",
-"geschaeftsjahr": "2027",
-"von": 2000000000,
-"bis": 2000000000,
-"einheit": "USD",
-"veraendert": "angehoben",
-"beleg": "Increases Fiscal Year 2027 Capital Return Outlook to $2.0 Billion Driven by Incremental Share Repurchases"
-},
 {
 "kennzahl": "dividende_je_aktie",
 "geschaeftsjahr": "2027",
@@ -910,8 +928,17 @@
 "von": 14.15,
 "bis": 14.5,
 "einheit": "USD",
-"veraendert": "neu",
+"veraendert": "unklar",
 "beleg": "Air Products expects full-year fiscal 2027 adjusted EPS guidance* in the range of $14.15 to $14.50."
+},
+{
+"kennzahl": "sonstiges",
+"geschaeftsjahr": "2027",
+"von": 3000000000,
+"bis": 3500000000,
+"einheit": "USD",
+"veraendert": "unklar",
+"beleg": "Air Products expects capital expenditures* to be in the range of $3.0 billion to $3.5 billion for full-year fiscal 2027."
 }
 ]
 },
@@ -926,16 +953,16 @@
 "bis": 30.6,
 "einheit": "USD",
 "veraendert": "angehoben",
-"beleg": "Increasing 2026 outlook for adjusted income from operations1 to at least $30.60 per share2"
+"beleg": "Increasing 2026 outlook for adjusted income from operations to at least $30.60 per share"
 },
 {
 "kennzahl": "eps_bereinigt",
 "geschaeftsjahr": "2030",
 "von": 10,
 "bis": 14,
-"einheit": "%",
+"einheit": "Prozent",
 "veraendert": "neu",
-"beleg": "setting long-term financial targets, including 10%-14% adjusted EPS CAGR and ~$50B in cumulative operating cash flow through 2030"
+"beleg": "setting long-term financial targets, including 10%-14% adjusted EPS CAGR"
 },
 {
 "kennzahl": "fcf",
@@ -944,7 +971,7 @@
 "bis": 50000000000,
 "einheit": "USD",
 "veraendert": "neu",
-"beleg": "setting long-term financial targets, including 10%-14% adjusted EPS CAGR and ~$50B in cumulative operating cash flow through 2030"
+"beleg": "~$50B in cumulative operating cash flow through 2030"
 }
 ]
 },
@@ -993,15 +1020,6 @@
 "einheit": "USD",
 "veraendert": "neu",
 "beleg": "The indicated annual dividend for fiscal 2027 is $4.36, which represents a 9.0% increase over fiscal 2026."
-},
-{
-"kennzahl": "sonstiges",
-"geschaeftsjahr": "2027",
-"von": 4.36,
-"bis": 4.36,
-"einheit": "USD",
-"veraendert": "neu",
-"beleg": "The indicated annual dividend for fiscal 2027 is $4.36, which represents a 9.0% increase over fiscal 2026."
 }
 ]
 },
@@ -1032,7 +1050,7 @@
 "geschaeftsjahr": "2027",
 "von": 11.35,
 "bis": 11.55,
-"einheit": "USD",
+"einheit": "$",
 "veraendert": "angehoben",
 "beleg": "Adjusted earnings per diluted share are now anticipated to be in the range of $11.35 to $11.55"
 },
@@ -1091,7 +1109,7 @@
 "bis": 6.75,
 "einheit": "Prozent",
 "veraendert": "angehoben",
-"beleg": "Raising Full Year 2026 Growth Guidance for Comparable Hotel RevPAR to 6.75% and Total RevPAR to 6.0%"
+"beleg": "We now expect full year comparable hotel RevPAR growth of approximately 6.75% and comparable hotel Total RevPAR growth of approximately 6.0% over 2025"
 },
 {
 "kennzahl": "umsatzwachstum_proz",
@@ -1100,7 +1118,7 @@
 "bis": 6.0,
 "einheit": "Prozent",
 "veraendert": "angehoben",
-"beleg": "Raising Full Year 2026 Growth Guidance for Comparable Hotel RevPAR to 6.75% and Total RevPAR to 6.0%"
+"beleg": "We now expect full year comparable hotel RevPAR growth of approximately 6.75% and comparable hotel Total RevPAR growth of approximately 6.0% over 2025"
 }
 ]
 },
@@ -1113,9 +1131,27 @@
 "geschaeftsjahr": "2026",
 "von": 11.5,
 "bis": 11.5,
-"einheit": "Prozent",
+"einheit": "%",
 "veraendert": "angehoben",
 "beleg": "Increasing total company sales growth guidance to approximately 11.5% from 10% to 11%"
+},
+{
+"kennzahl": "umsatzwachstum_proz",
+"geschaeftsjahr": "2026",
+"von": 9.0,
+"bis": 9.5,
+"einheit": "%",
+"veraendert": "angehoben",
+"beleg": "Increasing TAVR sales growth guidance to 9.0% to 9.5% from 8% to 9%"
+},
+{
+"kennzahl": "umsatz",
+"geschaeftsjahr": "2026",
+"von": 780000000,
+"bis": 790000000,
+"einheit": "USD",
+"veraendert": "angehoben",
+"beleg": "Increasing TMTT sales guidance to $780 to $790 million from $760 to $780 million"
 },
 {
 "kennzahl": "eps_bereinigt",
@@ -1139,16 +1175,16 @@
 "bis": 4.7,
 "einheit": "USD",
 "veraendert": "angehoben",
-"beleg": "The Company is updating its 2026 non-GAAP recurring earnings guidance to be in the range of $4.62 per share1 and $4.70 per share1 reflecting an increased midpoint of $4.66 per share1."
+"beleg": "The Company is updating its 2026 non-GAAP recurring earnings guidance to be in the range of $4.62 per share and $4.70 per share."
 },
 {
 "kennzahl": "umsatzwachstum_proz",
 "geschaeftsjahr": "2030",
-"von": 5,
-"bis": 7,
+"von": 5.0,
+"bis": 7.0,
 "einheit": "%",
 "veraendert": "bestaetigt",
-"beleg": "It also reaffirms its cumulative long-term earnings per share growth rate within the range of 5 to 7 percent through 2030"
+"beleg": "It also reaffirms its cumulative long-term earnings per share growth rate within the range of 5 to 7 percent through 2030."
 }
 ]
 },
@@ -1164,6 +1200,15 @@
 "einheit": "USD",
 "veraendert": "unklar",
 "beleg": "Net sales | $4.1 - $4.3 billion"
+},
+{
+"kennzahl": "umsatz",
+"geschaeftsjahr": "2026",
+"von": 1400000000,
+"bis": 1600000000,
+"einheit": "USD",
+"veraendert": "unklar",
+"beleg": "Specialties net sales | $1.4 - $1.6 billion"
 },
 {
 "kennzahl": "sonstiges",
@@ -1196,7 +1241,7 @@
 "bis": 1.8,
 "einheit": "USD",
 "veraendert": "gesenkt",
-"beleg": "For the Transition Period, the Company is lowering its outlook for Adjusted EPS to $1.70 to $1.80 from $1.80 to $1.90"
+"beleg": "For the Transition Period, the Company is lowering its outlook for Adjusted EPS to $1.70 to $1.80 from $1.80 to $1.90 due to the timing of pass-through of higher energy and distribution costs."
 }
 ]
 },
@@ -1237,7 +1282,7 @@
 "stand": "2026-11-11",
 "hinweis": "Eigene Prognosen der Unternehmen aus ihren Ergebnis-Pressemitteilungen (SEC 8-K, Anlage EX-99), automatisch ausgelesen. Keine Analystenschaetzungen.",
 "letzter_lauf": {
-"zeit": "2026-11-11 18:43",
+"zeit": "2026-11-11 18:58",
 "kandidaten": 492,
 "ki_aufrufe": 60,
 "abbruch": "",
