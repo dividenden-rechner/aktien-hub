@@ -732,11 +732,18 @@
 "sec:0000914208-26-000424": "2026-11-11",
 "sec:0001104659-26-125187": "2026-11-11",
 "sec:0000927628-26-000157": "2026-11-11",
-"sec:0001193125-26-455429": "2026-11-11"
+"sec:0001193125-26-455429": "2026-11-11",
+"feed:https://group.ntt/en/newsrelease/2026/11/11/261111b.html": "2026-11-11",
+"feed:https://news.skhynix.com/en/iec-61508-certification-2026-5/": "2026-11-11",
+"feed:https://news.skhynix.com/en/iec-61508-certification-2026-4/": "2026-11-11",
+"feed:https://news.skhynix.com/en/iec-61508-certification-2026-3/": "2026-11-11",
+"feed:https://news.skhynix.com/en/iec-61508-certification-2026-2/": "2026-11-11",
+"feed:https://news.skhynix.com/en/iec-61508-certification-2026-1/": "2026-11-11",
+"feed:https://news.skhynix.com/en/iec-61508-certification-2026/": "2026-11-11"
 },
 "budget": {
-"day": "2026-11-10",
-"n": 53
+"day": "2026-11-11",
+"n": 3
 },
 "fails": {
 "ir:0000804328-26-000127": 1
