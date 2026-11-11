@@ -258,6 +258,27 @@ async function api(path, params={}){
 /* probiert mehrere Parameter-Varianten (z. B. kleineres limit im Gratis-Tarif) */
 async function chain(path,base,alts){let e;for(const a of alts){try{return await api(path,{...base,...a})}catch(x){e=x;if(/HTTP 40[23]/.test(x.message)&&!/parameter|limit/i.test(x.message))break}}throw e}
 const one = a => Array.isArray(a)?(a[0]||{}):(a||{});
+/* ===== SEC-Fundamentaldaten (US-Behördendaten, data/sec/fundamentals.json, wöchentlich aktualisiert) =====
+   Jahreswerte aus den 10-K/20-F-Berichten. Sie haben Vorrang vor FMP; FMP füllt nur Felder, die die SEC nicht liefert
+   (z. B. Bruttogewinn, operatives Ergebnis). Bilanz: FMP zuerst, weil „Schulden gesamt“ dort auch kurzfristige Schulden enthält. */
+let SECP=null;
+function secLoad(){return SECP||(SECP=fetch("../data/sec/fundamentals.json?v="+Math.floor(Date.now()/864e5)).then(r=>r.ok?r.json():null).catch(()=>null))}
+function secFirma(S,sym){if(!S||!S.firmen)return null;const k=String(sym).toUpperCase();return S.firmen[k]||S.firmen[k.replace(/\./g,"-")]||null}
+/* Geschäftsjahr wie bei FMP: endet es im Januar oder in der ersten Februarwoche, zählt es zum Vorjahr (Händler wie Home Depot) */
+function secJahr(end){const d=new Date(end),m=d.getUTCMonth();return String(d.getUTCFullYear()-((m===0||(m===1&&d.getUTCDate()<=7))?1:0))}
+function secReihe(f,k){const o={};(f.k[k]||[]).forEach(([e,v])=>o[secJahr(e)]=v);return o}
+function secDaten(f){
+  const R=k=>secReihe(f,k),rev=R("umsatz"),ni=R("gewinn"),eps=R("eps_verw"),epb=R("eps_ber"),sh=R("aktien_verw"),ocf=R("operativer_cf"),cx=R("capex"),dv=R("dividenden_gezahlt"),bb=R("aktienrueckkauf"),debt=R("schulden_lang"),cash=R("liquide_mittel"),eq=R("eigenkapital"),dps=R("dividende_je_aktie"),dpb=R("dividende_je_aktie_ber");
+  const yrs=[...new Set([...Object.keys(rev),...Object.keys(ni),...Object.keys(ocf)])].sort();
+  const neg=v=>v==null?undefined:-Math.abs(v),def=v=>v==null?undefined:v;
+  const inc=yrs.map(y=>({y,revenue:def(rev[y]),netIncome:def(ni[y]),epsDiluted:def(eps[y]??epb[y]),weightedAverageShsOutDil:def(sh[y]),reportedCurrency:f.w}));
+  const cf=yrs.map(y=>({y,operatingCashFlow:def(ocf[y]),capitalExpenditure:neg(cx[y]),freeCashFlow:ocf[y]!=null&&cx[y]!=null?ocf[y]-Math.abs(cx[y]):undefined,commonDividendsPaid:neg(dv[y]),commonStockRepurchased:neg(bb[y])}));
+  const bs=yrs.map(y=>({y,longTermDebt:def(debt[y]),cashAndCashEquivalents:def(cash[y]),totalStockholdersEquity:def(eq[y])}));
+  const dy=Object.keys({...dps,...dpb}).sort().slice(-10).map(y=>({y,v:dps[y]??dpb[y],ber:dps[y]==null}));
+  return {inc,cf,bs,dy,cur:f.w,gj:f.gj};
+}
+/* Jahreswerte zusammenführen: vorne = Vorrang, hinten füllt nur Lücken */
+function mergeJ(vorne,hinten,n=10){const M={};const put=(a,prio)=>(a||[]).forEach(x=>{const y=String(x.y);M[y]=M[y]||{y};Object.entries(x).forEach(([k,v])=>{if(v==null||k==="y")return;if(prio||M[y][k]==null)M[y][k]=v})});put(hinten,true);put(vorne,true);return Object.values(M).sort((a,b)=>a.y-b.y).slice(-n)}
 
 /* Formatierung */
 const num=(v,d=2)=>v==null||isNaN(v)?"–":Number(v).toLocaleString("de-DE",{minimumFractionDigits:d,maximumFractionDigits:d});
@@ -495,23 +516,29 @@ function steckbrief(sym,p,r,m,inc,cf){
 async function openStock(sym){
   const msg=$("msg"),hub=$("hub");
   msg.className="";msg.textContent=`Lade ${sym} …`;
-  try{await api("profile",{symbol:sym})}catch(e){if(/HTTP 40[23]/.test(e.message)){msg.className="err";msg.textContent=`${sym} ist im aktuellen FMP-Tarif nicht verfügbar (402). Der Gratis-Tarif deckt meist nur US-Börsen ab, z. B. KO, PEP, JNJ.`;return}}
+  const SF=secFirma(await secLoad(),sym),SD=SF?secDaten(SF):null;
+  try{await api("profile",{symbol:sym})}catch(e){if(/HTTP 40[23]/.test(e.message)&&!SD){msg.className="err";msg.textContent=`${sym} ist im aktuellen FMP-Tarif nicht verfügbar (402). Der Gratis-Tarif deckt meist nur US-Börsen ab, z. B. KO, PEP, JNJ.`;return}}
   const from=new Date(Date.now()-5*365*864e5).toISOString().slice(0,10);
   const names=["profile","quote","ratios-ttm","key-metrics-ttm","discounted-cash-flow","price-target-consensus","income","cash","div","price","grades","est"];
   const calls=[api("profile",{symbol:sym}),api("quote",{symbol:sym}),api("ratios-ttm",{symbol:sym}),api("key-metrics-ttm",{symbol:sym}),api("discounted-cash-flow",{symbol:sym}),api("price-target-consensus",{symbol:sym}),
     chain("income-statement",{symbol:sym},[{limit:10},{limit:5},{}]),chain("cash-flow-statement",{symbol:sym},[{limit:10},{limit:5},{}]),chain("dividends",{symbol:sym},[{limit:200},{limit:100},{}]),chain("historical-price-eod/light",{symbol:sym},[{from},{}]),api("grades-consensus",{symbol:sym}),chain("analyst-estimates",{symbol:sym,period:"annual"},[{limit:8,page:0},{limit:5,page:0}])];
   const res=await Promise.allSettled(calls),d={};
   names.forEach((n,i)=>d[n]=res[i].status==="fulfilled"?res[i].value:null);
-  if(!d.profile&&!d.quote){msg.className="err";msg.textContent=`Keine Daten für ${sym}. ${res[0].reason?.message||""}`;return}
-  const p=one(d.profile),q=one(d.quote),r=one(d["ratios-ttm"]),m=one(d["key-metrics-ttm"]),dcf=one(d["discounted-cash-flow"]),pt=one(d["price-target-consensus"]);
+  if(!d.profile&&!d.quote&&!SD){msg.className="err";msg.textContent=`Keine Daten für ${sym}. ${res[0].reason?.message||""}`;return}
+  const p={...one(d.profile)};if(SF&&!p.companyName)p.companyName=SF.n;
+  const q=one(d.quote),r=one(d["ratios-ttm"]),m=one(d["key-metrics-ttm"]),dcf=one(d["discounted-cash-flow"]),pt=one(d["price-target-consensus"]);
   const yr=x=>x.fiscalYear||x.calendarYear||String(x.date).slice(0,4);
-  const inc=(Array.isArray(d.income)?d.income:[]).map(x=>({y:yr(x),...x})).sort((a,b)=>a.y-b.y);
-  const cf=(Array.isArray(d.cash)?d.cash:[]).map(x=>({y:yr(x),...x})).sort((a,b)=>a.y-b.y);
-  const cur=(inc[0]&&inc[0].reportedCurrency)||p.currency||"";
+  const incF=(Array.isArray(d.income)?d.income:[]).map(x=>({y:yr(x),...x})).sort((a,b)=>a.y-b.y);
+  const cfF=(Array.isArray(d.cash)?d.cash:[]).map(x=>({y:yr(x),...x})).sort((a,b)=>a.y-b.y);
+  const inc=SD?mergeJ(SD.inc,incF):incF,cf=SD?mergeJ(SD.cf,cfF):cfF;
+  const cur=SD?SD.cur:((inc[0]&&inc[0].reportedCurrency)||p.currency||"");
   /* Dividenden je Jahr */
   const dy={};(Array.isArray(d.div)?d.div:[]).forEach(x=>{const y=String(x.date).slice(0,4);dy[y]=(dy[y]||0)+(x.adjDividend??x.dividend??0)});
   const thisY=String(new Date().getFullYear());
-  const divs=Object.keys(dy).sort().slice(-10).map(y=>({y,v:dy[y],part:y===thisY}));
+  const divsF=Object.keys(dy).sort().slice(-10).map(y=>({y,v:dy[y],part:y===thisY}));
+  /* Dividende je Aktie: bevorzugt SEC (je Geschäftsjahr, beschlossen bzw. aus gezahlten Dividenden nachgerechnet) */
+  const divs=SD&&SD.dy.length?SD.dy.map(x=>({y:x.y,v:x.v,part:false})):divsF;
+  const divNote=SD&&SD.dy.length?"je Geschäftsjahr, "+esc(SD.cur)+(SD.dy.some(x=>x.ber)?"; teils nachgerechnet aus gezahlten Dividenden und Aktienzahl":"")+". Quelle: SEC":"Summe pro Jahr, "+esc(p.currency||"")+(divs.some(x=>x.part)?"; laufendes Jahr blass (unvollständig)":"");
   /* Kurs */
   const pr=(Array.isArray(d.price)?d.price:[]).slice().reverse();
   const step=Math.max(1,Math.floor(pr.length/120));
@@ -529,7 +556,7 @@ async function openStock(sym){
   ${KC.html}
   ${steckbrief(sym,p,r,m,inc,cf)}
   <div class="grid">
-   ${bars("Dividende je Aktie","Summe pro Jahr, "+esc(p.currency||"")+(divs.some(x=>x.part)?"; laufendes Jahr blass (unvollständig)":""),divs,"var(--c-gold)",v=>num(v))}
+   ${bars("Dividende je Aktie",divNote,divs,"var(--c-gold)",v=>num(v))}
    ${combo(inc,cur)}
    ${margins(inc)}
    ${fcfChart(cf,cur)}
@@ -544,7 +571,7 @@ async function openStock(sym){
   $("start").hidden=true;hub.hidden=false;msg.textContent="";$("sb").onclick=()=>story(LAST);try{KC.init()}catch(e){console.error(e)}
   try{initExplorer(sym,p,cur)}catch(e){console.error(e)}
   try{initValuation(sym,{p,price,r,m,fair,pt,tgt,inc,pts,cur}).catch(e=>console.error(e))}catch(e){console.error(e)}
-  try{initFinance(sym,p,cur,inc,cf)}catch(e){console.error(e)}
+  try{initFinance(sym,p,cur,inc,cf,SD)}catch(e){console.error(e)}
   try{initReports(sym,p)}catch(e){console.error(e)}
   try{initNews(sym,p)}catch(e){console.error(e)}
   const L={profile:"Profil",quote:"Kurs","ratios-ttm":"Kennzahlen","key-metrics-ttm":"Kennzahlen","discounted-cash-flow":"DCF","price-target-consensus":"Kursziele",income:"Umsatz/Gewinn",cash:"Cashflow",div:"Dividenden",price:"Kursverlauf",grades:"Analysten",est:"Prognosen"};
@@ -640,13 +667,16 @@ async function initValuation(sym,c){
 }
 /* ===== Finanzen: Gewinnfluss, Kennzahlen uebereinander, Capex ===== */
 const FCOL=["#2563eb","#16a34a","#f59e0b","#dc2626","#7c3aed","#0891b2","#db2777","#65a30d","#475569","#ea580c","#0d9488","#9333ea","#b45309"];
-async function initFinance(sym,p,cur,inc,cf){
+async function initFinance(sym,p,cur,inc,cf,SD){
   const box=$("fin");if(!box||!inc.length)return;
   const yr=x=>String(x.fiscalYear||x.calendarYear||String(x.date).slice(0,4));
   let bs=[];try{bs=await chain("balance-sheet-statement",{symbol:sym},[{limit:10},{limit:5},{}])}catch(e){}
   if(!document.body.contains(box))return;
+  const fmpDa=Array.isArray(bs)&&bs.length>0;
+  /* Bilanz: FMP zuerst; ohne FMP langfristige Schulden und Cash aus der SEC */
+  bs=SD?mergeJ((Array.isArray(bs)?bs:[]).map(x=>({...x,y:yr(x)})),SD.bs.map(x=>({...x,totalDebt:x.longTermDebt,netDebt:x.longTermDebt!=null&&x.cashAndCashEquivalents!=null?x.longTermDebt-x.cashAndCashEquivalents:undefined}))):bs;
   const B={},I={},C={};
-  inc.forEach(x=>I[String(x.y)]=x);cf.forEach(x=>C[String(x.y)]=x);(Array.isArray(bs)?bs:[]).forEach(x=>B[yr(x)]=x);
+  inc.forEach(x=>I[String(x.y)]=x);cf.forEach(x=>C[String(x.y)]=x);(Array.isArray(bs)?bs:[]).forEach(x=>B[String(x.y||yr(x))]=x);
   const years=inc.map(x=>String(x.y)).slice(-10);
   const ab=v=>v==null?null:Math.abs(v);
   const S=[
@@ -663,7 +693,7 @@ async function initFinance(sym,p,cur,inc,cf){
   const have=S.filter(s=>s.v.some(v=>v!=null));
   let on=new Set(["ni","fcf","cash","debt"].filter(k=>have.some(s=>s.k===k)));let mode="line",sy=years[years.length-1];
   box.className="fin";
-  box.innerHTML=`<h3>Finanzen im Überblick</h3><p class="fsub">Jahreswerte in ${esc(cur||"Berichtswährung")}. Quelle: FMP.</p>
+  box.innerHTML=`<h3>Finanzen im Überblick</h3><p class="fsub">Jahreswerte in ${esc(cur||"Berichtswährung")}. Quelle: ${SD?(fmpDa||inc.some(x=>x.grossProfit!=null)?"SEC-Jahresberichte, ergänzt um FMP":"SEC-Jahresberichte"+(fmpDa?"":" (Schulden: nur langfristige)")):"FMP"}.</p>
   <div class="fcard"><div class="fctl"><b id="fst">Gewinnfluss</b><span class="ftoggle"><button type="button" data-f="gw" aria-pressed="true">Gewinn</button><button type="button" data-f="cf" aria-pressed="false">Cashflow</button></span><select id="fsy" aria-label="Jahr">${years.slice().reverse().map(y=>`<option>${y}</option>`).join("")}</select></div><div class="fscroll" id="fsk"></div><p class="fnote" id="fsn">Vom Umsatz bis zum Nettogewinn. Die Breite der Bänder ist proportional zum Betrag.</p></div>
   <div class="fcard"><div class="fctl"><b>Kennzahlen übereinander legen</b><button type="button" data-m="line" aria-pressed="true">Linien</button><button type="button" data-m="bar" aria-pressed="false">Balken</button></div><div class="fchips" id="fch"></div><div class="fscroll fit" id="fcm"></div><p class="fnote" id="fmn"></p></div>
   ${debtCard()}
@@ -752,7 +782,7 @@ async function initFinance(sym,p,cur,inc,cf){
     if(mode==="bar"){const bw=Math.min(22,iw/years.length/(act.length+.6));act.forEach((s,si)=>s.v.forEach((v,i)=>{if(v==null)return;const x0=Xc(i)-bw*act.length/2+si*bw,y0=Y(Math.max(v,0)),hh=Math.max(Math.abs(Y(v)-Y(0)),1);svg+=`<rect x="${x0}" y="${y0}" width="${bw-1}" height="${hh}" fill="${s.c}" rx="2"><title>${esc(s.l)} ${years[i]}: ${big(v)}</title></rect>`}))}
     else act.forEach(s=>{let d="";s.v.forEach((v,i)=>{if(v==null)return;d+=(d?"L":"M")+Xc(i)+","+Y(v)});svg+=`<path d="${d}" fill="none" stroke="${s.c}" stroke-width="2.4" stroke-linejoin="round"/>`;s.v.forEach((v,i)=>{if(v!=null)svg+=`<circle cx="${Xc(i)}" cy="${Y(v)}" r="3.4" fill="${s.c}"><title>${esc(s.l)} ${years[i]}: ${big(v)}</title></circle>`})});
     el.innerHTML=svg+"</svg>";
-    const miss=S.filter(s=>!have.includes(s)).map(s=>s.l);$("fmn").textContent=miss.length?"Nicht verfügbar: "+miss.join(", ")+" (im FMP-Tarif oder in den Daten nicht enthalten).":"";
+    const miss=S.filter(s=>!have.includes(s)).map(s=>s.l);$("fmn").textContent=miss.length?"Nicht verfügbar: "+miss.join(", ")+(SD?" (in den SEC-Jahresberichten nicht einheitlich ausgewiesen).":" (im FMP-Tarif oder in den Daten nicht enthalten)."):"";
   }
   /* Capex-Tabelle */
   function capex(){

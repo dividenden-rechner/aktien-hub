@@ -192,7 +192,16 @@ def main():
             reihen[k] = w
         # Dividende je Aktie nachrechnen (gezahlte Dividenden / verwaesserte Aktien), wo sie nicht gemeldet wird
         dg, av, dps = reihen["dividenden_gezahlt"], reihen["aktien_verw"], reihen["dividende_je_aktie"]
-        ber = {e: (round(abs(dg[e][0]) / av[e][0], 4), "berechnet") for e in dg if e in av and av[e][0] and e not in dps and dg[e][0]}
+        # Vorzugsdividenden abziehen, wenn der Name nicht ausdruecklich nur Stammaktien meint (Banken wie Citigroup)
+        vz = {} if ifrs else reihe(gaap, "f", "USD", ["DividendsPreferredStock", "DividendsPreferredStockCash",
+                                                      "PreferredStockDividendsIncomeStatementImpact"], waehrung)
+        def stamm(e):
+            v = abs(dg[e][0])
+            if "CommonStock" not in dg[e][1] and e in vz:
+                v -= abs(vz[e][0])
+            return v
+        ber = {e: (round(stamm(e) / av[e][0], 4), "berechnet") for e in dg
+               if e in av and av[e][0] and e not in dps and dg[e][0] and stamm(e) > 0}
         fa = {"n": cf.get("entityName") or name, "cik": int(cik), "gj": letztes_gj, "w": waehrung,
               "std": "IFRS" if ifrs else "US-GAAP", "k": {}}
         if ber:
