@@ -69,7 +69,7 @@ def kandidaten(firmen, erledigt):
                 out.append({"sym": t, "name": f["n"], "cik": int(f["cik"]), "acc": acc, "when": dt.isoformat() if dt else "",
                             "primary": (rec.get("primaryDocument") or [""] * 999)[j], "fpi": False})
             break   # nur die neueste Ergebnismeldung je Firma
-        time.sleep(0.12)
+        time.sleep(0.3)   # SEC drosselt bei schnellen Serienabrufen (Fehler 403)
     out.sort(key=lambda c: c["when"], reverse=True)
     return out
 
@@ -88,8 +88,15 @@ def main():
     for c in kand:
         if ki >= MAX_KI:
             print("KI-Grenze je Lauf erreicht, Rest beim naechsten Lauf"); break
+        r = None
         try:
-            r = km.edgar_press_release(c)
+            for versuch in range(3):
+                try:
+                    r = km.edgar_press_release(c); break
+                except Exception as e:
+                    if "403" in str(e) and versuch < 2:
+                        time.sleep(60); continue   # SEC-Sperre kurz abwarten
+                    raise
         except Exception as e:
             fehler.append(f"{c['sym']} Meldung: {str(e)[:80]}"); print(c["sym"], "Meldung nicht ladbar:", str(e)[:80]); continue
         if not r:
@@ -115,7 +122,7 @@ def main():
             if not alt or alt.get("datum", "") <= c["when"][:10]:
                 daten["firmen"][c["sym"]] = {"datum": c["when"][:10], "quelle": url, "prognosen": progs}
         print(c["sym"], c["when"][:10], len(progs), "Prognosen")
-        time.sleep(1)
+        time.sleep(1.5)
     daten["stand"] = datetime.now(timezone.utc).strftime("%Y-%m-%d")
     daten["letzter_lauf"] = {"zeit": datetime.now(timezone.utc).strftime("%Y-%m-%d %H:%M"), "kandidaten": len(kand), "ki_aufrufe": ki,
                              "abbruch": abbruch, "fehler": fehler[:10]}
