@@ -261,10 +261,11 @@
 "quelle": "openfigi"
 },
 "ASML": {
-"isin": "USN070592100",
-"xetra": "",
-"kuerzel": "",
-"quelle": "openfigi"
+"isin": "NL0010273215",
+"xetra": "ASML HOLDING    EO -,09",
+"kuerzel": "ASME",
+"quelle": "name",
+"treffer": 1.03
 },
 "ATO": {
 "isin": "US0495601058",
@@ -351,10 +352,11 @@
 "quelle": "openfigi"
 },
 "BCS": {
-"isin": "US06738E2046",
-"xetra": "",
-"kuerzel": "",
-"quelle": "openfigi"
+"isin": "GB0031348658",
+"xetra": "BARCLAYS PLC      LS 0,25",
+"kuerzel": "BCY",
+"quelle": "name",
+"treffer": 1.03
 },
 "BDX": {
 "isin": "US0758871091",
@@ -827,10 +829,11 @@
 "quelle": "openfigi"
 },
 "DEO": {
-"isin": "US25243Q2057",
-"xetra": "",
-"kuerzel": "",
-"quelle": "openfigi"
+"isin": "GB0002374006",
+"xetra": "DIAGEO PLC LS-,28935185",
+"kuerzel": "GUI",
+"quelle": "name",
+"treffer": 1.03
 },
 "DG": {
 "isin": "US2566771059",
@@ -935,10 +938,11 @@
 "quelle": "openfigi"
 },
 "E": {
-"isin": "US26874R1086",
-"xetra": "",
-"kuerzel": "",
-"quelle": "openfigi"
+"isin": "IT0003132476",
+"xetra": "ENI S.P.A.",
+"kuerzel": "ENI",
+"quelle": "name",
+"treffer": 1.03
 },
 "EBAY": {
 "isin": "US2786421030",
@@ -1333,10 +1337,11 @@
 "quelle": "openfigi"
 },
 "GSK": {
-"isin": "US37733W2044",
-"xetra": "",
-"kuerzel": "",
-"quelle": "openfigi"
+"isin": "GB00BN7SWP63",
+"xetra": "GSK PLC  LS-,3125",
+"kuerzel": "GS71",
+"quelle": "name",
+"treffer": 1.03
 },
 "GWW": {
 "isin": "US3848021040",
@@ -1519,10 +1524,11 @@
 "quelle": "openfigi"
 },
 "ING": {
-"isin": "US4568371037",
-"xetra": "",
-"kuerzel": "",
-"quelle": "openfigi"
+"isin": "NL0011821202",
+"xetra": "ING GROEP NV      EO -,01",
+"kuerzel": "INN1",
+"quelle": "name",
+"treffer": 1.03
 },
 "INTC": {
 "isin": "US4581401001",
@@ -2056,10 +2062,11 @@
 "quelle": "openfigi"
 },
 "NOK": {
-"isin": "US6549022043",
-"xetra": "",
-"kuerzel": "",
-"quelle": "openfigi"
+"isin": "FI0009000681",
+"xetra": "NOKIA OYJ EO-,06",
+"kuerzel": "NOA3",
+"quelle": "name",
+"treffer": 1.03
 },
 "NOW": {
 "isin": "US81762P1021",
@@ -2104,10 +2111,11 @@
 "quelle": "openfigi"
 },
 "NVO": {
-"isin": "US6701002056",
-"xetra": "",
-"kuerzel": "",
-"quelle": "openfigi"
+"isin": "DK0062498333",
+"xetra": "NOVO-NORDISK AS B  DK 0,1",
+"kuerzel": "NOV",
+"quelle": "name",
+"treffer": 0.92
 },
 "NVR": {
 "isin": "US62944T1051",
@@ -2267,10 +2275,11 @@
 "quelle": "openfigi"
 },
 "PHG": {
-"isin": "US5004723038",
-"xetra": "",
-"kuerzel": "",
-"quelle": "openfigi"
+"isin": "NL0000009538",
+"xetra": "KONINKL. PHILIPS EO -,20",
+"kuerzel": "PHI1",
+"quelle": "name",
+"treffer": 0.91
 },
 "PHM": {
 "isin": "US7458671010",
@@ -2471,16 +2480,18 @@
 "quelle": "openfigi"
 },
 "SAN": {
-"isin": "US05964H1059",
-"xetra": "",
-"kuerzel": "",
-"quelle": "openfigi"
+"isin": "ES0113900J37",
+"xetra": "BCO SANTANDER N.EO0,5",
+"kuerzel": "BSD2",
+"quelle": "name",
+"treffer": 0.96
 },
 "SAP": {
-"isin": "US8030542042",
-"xetra": "",
-"kuerzel": "",
-"quelle": "openfigi"
+"isin": "DE0007164600",
+"xetra": "SAP SE O.N.",
+"kuerzel": "SAP",
+"quelle": "name",
+"treffer": 1.03
 },
 "SBAC": {
 "isin": "US78410G1040",
@@ -2866,10 +2877,11 @@
 "quelle": "openfigi"
 },
 "UL": {
-"isin": "US9047678035",
-"xetra": "",
-"kuerzel": "",
-"quelle": "openfigi"
+"isin": "GB00BVZK7T90",
+"xetra": "UNILEVER PLC     LS -,035",
+"kuerzel": "UNV0",
+"quelle": "name",
+"treffer": 1.03
 },
 "ULTA": {
 "isin": "US90384S3031",
