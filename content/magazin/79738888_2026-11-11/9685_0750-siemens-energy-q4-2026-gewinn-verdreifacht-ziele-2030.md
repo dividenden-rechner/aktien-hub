@@ -12,16 +12,16 @@ logo_name: "Siemens Energy"
 logo_symbol: ENR.DE
 logo_file: assets/logos/enr-de.png
 image: assets/magazin/siemens-energy-q4-2026-gewinn-verdreifacht-ziele-2030-foto.jpg
-image_alt: "Verwaltungs- und Produktionsgebäude von Siemens Energy in Finspång, Schweden, mit Leuchtschrift am Dach"
-image_credit: "Bene Riobó, CC BY-SA 4.0 (Wikimedia Commons)"
-image_source: "https://commons.wikimedia.org/wiki/File:Siemens_Energy_Finsp%C3%A5ng.jpg"
+image_alt: "Ein Mitarbeiter in Schutzhelm und roten Pullover prüft den Läufer einer großen Gasturbine in einer Werkshalle von Siemens Energy"
+image_credit: "Siemens Energy (Pressebild)"
+image_source: "https://www.siemens-energy.com/global/en/home/press-releases.html"
 ---
 <!-- PRÜFEN: Konzern- und Segmentzahlen: Meldung "Q4 FY26 Earnings Release" auf der IR-Seite von Siemens Energy (11.11.2026) und Folien der Analystenpräsentation Q4 FY26 (Screenshots von Divi, Folien 3 bis 29 und 34 bis 37). Folie 38 (Transformation of Industry, Quartal) lag nicht vor, die Aussagen zur Industriesparte beruhen auf den Folien 17, 18, 22 und 29. -->
 <!-- PRÜFEN: Nur aus dem Handelsblatt (11.11.2026, Screenshots von Divi) und in den Unternehmensunterlagen nicht gefunden: Aktienkurs von rund 120 Euro, Hoch von 187 Euro, Kursverlust von rund einem Drittel seit dem Frühjahr, Kurs von rund sieben Euro im Herbst 2023, Trench-Verkauf an GE Vernova für 8,4 Milliarden Euro (zuletzt gut eine Milliarde Umsatz), früherer Trench-Verkauf an Triton, GE-Vernova-Zahlen (Umsatz +18 % auf 12,6 Mrd. Dollar, bereinigtes Ebitda 811 Mio. auf 1,9 Mrd. Dollar), Verkaufsprozess der Industriesparte "Anfang des Jahres" nach Angaben aus Industriekreisen, Marktstimmen zur Aufspaltung. Das Handelsblatt spricht von einem Verkauf, die Folie 18 von einem Co-Investor mit verbleibender Minderheitsbeteiligung. Text folgt der Folie. -->
 <!-- PRÜFEN: Selbst gerechnet aus Folien: Quartalsmarge Gesamtkonzern 12,0 % steht auf Folie 21. Verhältnis Auftragsbestand zu Jahresumsatz 164 / 44,2 = 3,7. Dividendensumme rund 1,9 Mrd. Euro = Aktionärsrückfluss 5,0 Mrd. abzüglich Rückkauf 3,1 Mrd. (Folien 4 und 28), Ausschüttungsquote 1,9 / 4,1 = 46 %. Umsatz und Gewinn 2030 je Sparte aus FY26-Werten mit der angegebenen Wachstumsrate und dem Gewinnfaktor hochgerechnet, nur als Größenordnung. Rendite auf den Kurs 2,30 / 119,84 = 1,9 %. -->
 <!-- PRÜFEN: Folie 12 Netze: Aufteilung der Nachfrage nach Treibern (Gebäude 30 %, Industrie 27 %, Verkehr 23 %, Rechenzentren 20 %) ist aus der Legende zugeordnet, die Farbzuordnung im Kreisdiagramm war auf dem Screenshot nicht eindeutig. -->
 <!-- PRÜFEN: Gamesa: Free Cashflow Gesamtjahr minus 1,6 Mrd. Euro, Auftragseingang Gesamtjahr 5,9 Mrd. Euro (minus 31 % vergleichbar), Gewinn Gesamtjahr 8 Mio. Euro stammen aus den Folien 22 und 37, Screenshot an der Stelle teils verdeckt. -->
-<!-- PRÜFEN: Kein CEO-Foto (Christian Bruch) und kein Kursbild von Divi, deshalb Story mit der Konzernfolie. Aufmacherfoto: Werk Finspång (Schweden), CC BY-SA 4.0, zeigt kein Gasturbinen-Detail. -->
+<!-- PRÜFEN: Kein CEO-Foto (Christian Bruch) und kein Kursbild von Divi, deshalb Story mit der Konzernfolie. Aufmacherfoto: von Divi geliefertes Pressebild (Gasturbinen-Läufer, Siemens-Helm). Lizenz/Freigabe von Siemens Energy nicht geprüft, redaktionelle Nutzung als markierte Ausnahme; Quelle-Link im Front Matter ist nur die allgemeine Pressebereichsseite, bitte durch die genaue Bildquelle ersetzen. -->
 
 !!! kurz "Kurz gesagt"
     **Umsatz Q4:** 12,8 Mrd. Euro (+21,5 % vergleichbar)
