@@ -2,11 +2,11 @@
 title: "Siemens Energy verdreifacht den Quartalsgewinn und peilt für 2030 eine Marge von 20 bis 22 % an"
 description: "Siemens Energy schließt das Geschäftsjahr 2025/26 mit Rekordumsatz im vierten Quartal ab: Der Gewinn vor Sondereffekten steigt auf 1,54 Milliarden Euro, die Dividende von 0,70 auf 2,30 Euro. Jede der vier Sparten hat einen eigenen Weg zu höheren Margen, die Windkraft schreibt erstmals schwarze Zahlen."
 date: 2026-11-11 07:50
-draft: true
 author: "Redaktions-Team Dividenden-Rechner.de"
 author_bio: "Das Redaktions-Team von Dividenden-Rechner.de schreibt über Dividendenaktien, Kennzahlen und Steuerthemen für Privatanleger. Die Rechner und Auswertungen auf der Seite entstehen im eigenen Haus."
 category: Quartalszahlen
 story_image: assets/magazin/siemens-energy-q4-2026-konzern.jpg
+story_chart: assets/magazin/siemens-energy-q4-2026-kurs.png
 story_text: "Siemens Energy schließt das Geschäftsjahr mit einem Rekordquartal ab: 12,8 Mrd. Euro Umsatz, 21,5 % mehr als vor einem Jahr, und ein Gewinn vor Sondereffekten von 1,54 Mrd. Euro, mehr als das Dreifache. Der Auftragsbestand steigt auf 164 Mrd. Euro, und über 80 % des Umsatzes im nächsten Jahr sind bereits gebucht.\nDie Gasturbinen-Sparte erreicht eine Marge von 16 %, die Netzsparte im Quartal sogar 20 %. Die Windkraft von Siemens Gamesa schreibt im zweiten Quartal in Folge schwarze Zahlen, verbrennt über das Jahr aber noch 1,6 Mrd. Euro. Die Dividende steigt von 0,70 auf 2,30 Euro.\nDie Aktie hat seit dem Frühjahr rund ein Drittel verloren, weil der Markt dem KI-Thema misstraut. Die neuen Ziele für 2030 mit einer Marge von 20 bis 22 % sollen das Vertrauen zurückholen, und die Industriesparte soll mit einem Partner an Bord eigenständig werden."
 logo_name: "Siemens Energy"
 logo_symbol: ENR.DE
