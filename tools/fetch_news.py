@@ -125,7 +125,8 @@ def main():
         rows = [r for r in rows if r["title"]]
         rows.sort(key=lambda r: r["date"] or datetime(1970, 1, 1, tzinfo=timezone.utc), reverse=True)
         for r in rows[:PER_FEED]:
-            if r["date"] and r["date"] < lim: continue
+            if not r["date"]: continue   # ohne Datum keine Meldung: sonst landen alte Archiv-Eintraege mit dem heutigen Datum oben (Givaudan, 11.11.2026)
+            if r["date"] < lim: continue
             if r["date"] and r["date"] > now + timedelta(days=1): continue
             items.append({"sym": sym, "name": f["name"], "title": r["title"], "link": r["link"], "date": (r["date"] or now).isoformat(), "text": r["text"][:6000], "quelle": src})
     items.sort(key=lambda x: x["date"], reverse=True)

@@ -905,11 +905,15 @@ def build_index(posts):
         o += '</ul></aside>\n'
     o += '</section>\n'
     if kurz_posts:
-        o += '<h2 class="mag-more-h">Kurzmeldungen</h2>\n<ul class="mag-archiv mag-kurz">\n'
-        for x in kurz_posts[:16]:
-            o += (f'<li><a href="{x["slug"]}/">{mini_logo(x, pre)}<span class="artx"><span class="kicker">{esc(x["category"])} · {de_dt_kurz(x["dt"])}{rel_html(x)}</span>'
-                  f'<strong>{esc(x["title"])}</strong></span></a></li>\n')
-        o += '</ul>\n'
+        # Kurzmeldungen kompakt (11.11.2026): sechs sichtbar, bis zu 18 weitere erst nach Antippen
+        def kurz_li(x):
+            return (f'<li><a href="{x["slug"]}/">{mini_logo(x, pre)}<span class="artx"><span class="kicker">{esc(x["category"])} · {de_dt_kurz(x["dt"])}{rel_html(x)}</span>'
+                    f'<strong>{esc(x["title"])}</strong></span></a></li>\n')
+        o += '<h2 class="mag-more-h">Kurzmeldungen</h2>\n<ul class="mag-archiv mag-kurz">\n' + "".join(kurz_li(x) for x in kurz_posts[:6]) + '</ul>\n'
+        mehr = kurz_posts[6:24]
+        if mehr:
+            o += ('<details class="mag-kurz-mehr"><summary>Weitere Kurzmeldungen</summary>\n<ul class="mag-archiv mag-kurz">\n'
+                  + "".join(kurz_li(x) for x in mehr) + '</ul></details>\n')
     if grid:
         o += '<h2 class="mag-more-h">Weitere Artikel</h2>\n<div class="cards magcards">\n'
         for x in grid:

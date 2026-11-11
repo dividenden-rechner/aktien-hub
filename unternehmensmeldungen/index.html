@@ -87,6 +87,21 @@ img.nk-logo{background:#fff}
 </div></footer>
 <script>
 (function(){
+/* Nur relevante, aktuelle Meldungen (11.11.2026): Ergebnisse, Dividenden, Prognosen, Uebernahmen, Personalien, Anleihen, Zulassungen; ohne Werbung, Blogbeitraege, Archiv-Eintraege und Doppelte */
+var REL=/result|earnings|quarter|\bq[1-4]\b|half[- ]year|first half|fiscal|annual report|financial|dividend|guidance|outlook|forecast|acqui|merger|takeover|divest|spin[- ]?off|sale of|sells|buyback|repurchase|tender offer|\bceo\b|\bcfo\b|chief executive|chief financial|appoint|\bboard\b|chairman|succession|resign|transition|\bfda\b|approv|phase 3|phase iii|bond|notes due|offering|capital increase|redeem|contract|order|investment|invest|billion|milliard|tariff|lawsuit|settlement|investigation|recall|restructur|job cut|layoff|statement from|message to|ergebnis|quartal|halbjahr|geschäftsjahr|dividende|prognose|ausblick|übernahme|führungswechsel|vorstand|aufsichtsrat|rückkauf|anleihe|auftrag|résultats|dividende|acquisition|nomme/i;
+var NOISE=/gift|holiday|deals?\b|black friday|cyber monday|apple arcade|apple music|artist of the year|apple tv|football manager|tips|ways to|guide for|how to|kids|teens|webinar|podcast|interview|award|wins? |named best|recognized as a leader|magic quadrant|exhibition|sonstige ereignisse|^meldung \(|monthly .*news|startup challenge|sustainab|carbon footprint|chef's council|parfums/i;
+function clean(items){
+  var now=Date.now(),yr=new Date().getFullYear(),seen={},cnt={};
+  items.forEach(function(n){var k=n.sym+"|"+n.date;cnt[k]=(cnt[k]||0)+1});
+  return items.filter(function(n){
+    var t=String(n.title||""),k=(n.sym+"|"+t).toLowerCase();
+    if(seen[k])return false;seen[k]=1;
+    if(cnt[n.sym+"|"+n.date]>=3)return false;
+    if(now-new Date(n.date)>14*864e5)return false;
+    var y=(t.match(/\b(19|20)\d\d\b/g)||[]).map(Number);
+    if(y.length&&Math.max.apply(null,y)<yr-1)return false;
+    if(NOISE.test(t))return false;
+    return REL.test(t)})}
 var DAYS=14,all=[],sel=null,q="",errs=[],scope="mine";
 function wlSet(){var o={};try{(JSON.parse(localStorage.getItem("wl")||"[]")||[]).forEach(function(x){if(x&&x.s)o[String(x.s).toUpperCase().split(".")[0]]=1})}catch(e){}return o}
 function vis(){if(scope!=="mine")return all;var w=wlSet();if(!Object.keys(w).length)return all;return all.filter(function(n){return w[String(n.sym||"").toUpperCase().split(".")[0]]})}
@@ -132,9 +147,9 @@ el("q").oninput=function(){q=this.value.trim().toLowerCase();renderList();el("cl
 el("clear").onclick=function(){sel=null;q="";el("q").value="";render()};
 fetch("../data/magazin.json?v="+Math.floor(Date.now()/6e5)).then(function(r){return r.json()}).then(function(j){MAG=j.items||[];renderList()}).catch(function(){});
 fetch("../data/news.json?v="+Math.floor(Date.now()/6e5)).then(function(r){return r.json()}).then(function(j){
-  all=(j.items||[]).sort(function(a,b){return new Date(b.date)-new Date(a.date)});errs=j.errors||[];
+  all=clean(j.items||[]).sort(function(a,b){return new Date(b.date)-new Date(a.date)});errs=j.errors||[];
   el("upd").textContent=j.updated?"Stand: "+new Date(j.updated).toLocaleString("de-DE",{dateStyle:"medium",timeStyle:"short"})+" Uhr":"Noch nicht aktualisiert";
-  if(errs.length)el("errs").innerHTML="Ohne Meldungen: "+errs.map(function(e){return esc(e.sym)}).join(", ")+".";
+  
   setScope(Object.keys(wlSet()).length?"mine":"all")}).catch(function(){all=[];el("upd").textContent="Daten nicht ladbar";render()});
 })();
 </script>
