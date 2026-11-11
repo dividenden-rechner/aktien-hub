@@ -8,6 +8,11 @@ story_text: "Für einen Maschinenbauer mit gut 80 Mio. Euro Jahresumsatz ist es 
 logo_name: "Singulus"
 logo_symbol: SNG.DE
 logo_domain: singulus.com
+image: assets/magazin/singulus-spacex-auftrag-solarlinie-neun-monate-2026-foto.jpg
+image_alt: "Foto zu Singulus: KENNEDY SPACE CENTER, FLA. -- At Astrotech Space Operations in Titusville, Fla., a solar array on one of the THEMIS probes undergoes a light test. THEMIS consists of five identical probes, the largest"
+image_credit: "Foto: Photo credit: NASA/Jack Pfaller / Wikimedia Commons, Public domain"
+image_source: https://commons.wikimedia.org/wiki/File:One_of_five_THEMIS_satellites_undergoes_a_solar_array_test.jpg
+image_artist_url: 
 logo_file: assets/logos/sng-de.png
 ---
 <!-- PRÜFEN: SpaceX-Auftrag (über 60 Mio. Euro, schlüsselfertige HJT-Linie, Lieferung 1. Halbjahr 2027, weitere Linien im Rahmen der Partnerschaft geplant) wurde am Abend des 10.11.2026 bekannt (boerse-express, 10.11., 20:28 Uhr; MarketScreener). Eine Originalmeldung auf singulus.com war im Abruf nicht sichtbar, die News-Seite dort war veraltet. Vor Freigabe gegen die Pressemitteilung von Singulus prüfen. -->
