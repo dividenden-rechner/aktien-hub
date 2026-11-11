@@ -11,11 +11,11 @@ logo_name: "Palantir Technologies"
 story_image: assets/magazin/palantir-q3-2026-zahlen-prognose-folie.png
 logo_symbol: PLTR
 logo_domain: palantir.com
-image: https://images.unsplash.com/photo-1580795478949-1b81005b91ba?ixid=M3wxMTE3OTgzfDB8MXxzZWFyY2h8Mnx8b3BlcmF0aW9ucyUyMGNlbnRlciUyMG1vbml0b3JzfGVufDF8MHx8fDE3OTQzOTMxMjl8MA&ixlib=rb-4.1.0&w=1600&h=900&fit=crop&crop=entropy&q=80&fm=jpg
-image_alt: "Foto zu Palantir Technologies: The Centers for Disease Control and Prevention (CDC) Emergency Operations Center (EOC) is where highly trained experts monitor information, prepare for public health events, and gather in the event of"
-image_credit: "Foto: CDC auf Unsplash"
-image_source: https://unsplash.com/photos/woman-in-black-polo-shirt-using-black-laptop-computer-S8cFStFmRsg?utm_source=dividenden-rechner&utm_medium=referral
-image_artist_url: https://unsplash.com/@cdc?utm_source=dividenden-rechner&utm_medium=referral
+image: https://images.unsplash.com/photo-1526628953301-3e589a6a8b74?ixid=M3wxMTE3OTgzfDB8MXxzZWFyY2h8NXx8ZGF0YSUyMGFuYWx5dGljc3xlbnwxfDB8fHwxNzk0NDMzMTAyfDA&ixlib=rb-4.1.0&w=1600&h=900&fit=crop&crop=entropy&q=80&fm=jpg
+image_alt: "Foto zu Palantir Technologies: Data reporting dashboard on a laptop screen."
+image_credit: "Foto: Stephen Dawson auf Unsplash"
+image_source: https://unsplash.com/photos/turned-on-monitoring-screen-qwtCeJ5cLYs?utm_source=dividenden-rechner&utm_medium=referral
+image_artist_url: https://unsplash.com/@dawson2406?utm_source=dividenden-rechner&utm_medium=referral
 logo_file: assets/logos/pltr.png
 ---
 <!-- PRÜFEN: Alle Zahlen stammen aus der Unternehmenspräsentation „Q3 2026 Business Update“. Eigene Rechnungen (kenntlich gemacht): Quartalsumsatz im vierten Quartal gegenüber dem dritten (+15 %), Anteil Aktienvergütung. Nicht geprüft: Kursreaktion, Analystenerwartungen und ob die Prognose gegenüber dem Vorquartal angehoben wurde, deshalb stehen sie nicht im Text. Palantir zahlt keine Dividende. -->

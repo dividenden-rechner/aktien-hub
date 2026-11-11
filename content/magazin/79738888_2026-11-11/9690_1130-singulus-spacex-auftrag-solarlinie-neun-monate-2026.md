@@ -10,9 +10,9 @@ logo_name: "Singulus"
 logo_symbol: SNG.DE
 logo_domain: singulus.com
 image: assets/magazin/singulus-spacex-auftrag-solarlinie-neun-monate-2026-foto.jpg
-image_alt: "Foto zu Singulus: KENNEDY SPACE CENTER, FLA. -- At Astrotech Space Operations in Titusville, Fla., a solar array on one of the THEMIS probes undergoes a light test. THEMIS consists of five identical probes, the largest"
-image_credit: "Foto: Photo credit: NASA/Jack Pfaller / Wikimedia Commons, Public domain"
-image_source: https://commons.wikimedia.org/wiki/File:One_of_five_THEMIS_satellites_undergoes_a_solar_array_test.jpg
+image_alt: "Foto zu Singulus: Elkem Solar, Kristiansand (Norway). Silica solar wafer factory."
+image_credit: "Foto: Bjoertvedt / Wikimedia Commons, CC BY-SA 3.0"
+image_source: https://commons.wikimedia.org/wiki/File:Elkem_Solar_01.JPG
 image_artist_url: 
 logo_file: assets/logos/sng-de.png
 ---

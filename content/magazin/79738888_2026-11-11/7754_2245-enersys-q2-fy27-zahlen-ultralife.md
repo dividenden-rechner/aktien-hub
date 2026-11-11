@@ -17,6 +17,11 @@ story_text: "EnerSys macht aus fast unverändertem Umsatz deutlich mehr Gewinn: 
 logo_name: "EnerSys"
 logo_symbol: ENS
 logo_domain: enersys.com
+image: assets/magazin/enersys-q2-fy27-zahlen-ultralife-foto.jpg
+image_alt: "Foto zu EnerSys: A rack of lead-acid telecom UPS batteries."
+image_credit: "Foto: Paul Chernikhowsky from Kelowna, BC, Canada / Wikimedia Commons, CC BY 2.0"
+image_source: https://commons.wikimedia.org/wiki/File:Telecomm_batteries.jpg
+image_artist_url: 
 logo_file: assets/logos/ens.png
 ---
 <!-- PRÜFEN: Alle Konzern-, Segment- und Cashflow-Zahlen aus der Pressemitteilung "EnerSys Reports Second Quarter Fiscal Year 2027 Results" (11.11.2026, PDF von Divi), Tabellen S. 3, 8, 10, 13. Das zweite Geschäftsquartal endete am 4. Oktober 2026, das Geschäftsjahr endet am 31. März. -->

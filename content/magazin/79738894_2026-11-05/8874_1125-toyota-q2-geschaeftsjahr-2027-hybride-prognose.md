@@ -13,9 +13,9 @@ logo_name: "Toyota"
 logo_symbol: 7203.T
 logo_domain: global.toyota
 image: assets/magazin/toyota-q2-geschaeftsjahr-2027-hybride-prognose-foto.jpg
-image_alt: "Foto zu Toyota: 2024 Toyota Prius Excel PHEV - 1987cc 2.0 (225PS) Plug-in Hybrid - Silver Metallic"
-image_credit: "Foto: Harvey Bold / Wikimedia Commons, CC0"
-image_source: https://commons.wikimedia.org/wiki/File:2024_Toyota_Prius_Excel_PHEV_-_1987cc_2.0_(225PS)_Plug-in_Hybrid_-_Silver_Metallic_-_10-2024,_Front_Quarter.jpg
+image_alt: "Foto zu Toyota: Toyota_RAV4_Core_Hybrid in Ludwigsburg"
+image_credit: "Foto: Alexander Migl / Wikimedia Commons, CC BY-SA 4.0"
+image_source: https://commons.wikimedia.org/wiki/File:Toyota_RAV4_Core_Hybrid_IMG_7545.jpg
 image_artist_url: 
 logo_file: assets/logos/7203-t.png
 ---

@@ -15,7 +15,7 @@ story_text: "Das Rechenzentrum trägt das Quartal: Der Umsatz mit Servern und KI
 story_quote_by: "Lisa Su | CEO AMD"
 logo_symbol: AMD
 logo_domain: amd.com
-image: https://images.unsplash.com/photo-1753097617151-b8994eb0bb3e?ixid=M3wxMTE3OTgzfDB8MXxzZWFyY2h8NHx8QU1EJTIwSW5zdGluY3QlMjBhY2NlbGVyYXRvcnxlbnwxfDB8fHwxNzk0MzkzMjE2fDA&ixlib=rb-4.1.0&w=1600&h=900&fit=crop&crop=entropy&q=80&fm=jpg
+image: https://images.unsplash.com/photo-1753097617151-b8994eb0bb3e?ixid=M3wxMTE3OTgzfDB8MXxzZWFyY2h8NHx8QU1EJTIwSW5zdGluY3QlMjBhY2NlbGVyYXRvcnxlbnwxfDB8fHwxNzk0NDMzMTI5fDA&ixlib=rb-4.1.0&w=1600&h=900&fit=crop&crop=entropy&q=80&fm=jpg
 image_alt: "Foto zu Advanced Micro Devices: A new amd ryzen processor sits on a desk"
 image_credit: "Foto: Đào Hiếu auf Unsplash"
 image_source: https://unsplash.com/photos/a-new-amd-ryzen-processor-sits-on-a-desk-2bJfnIwQvpk?utm_source=dividenden-rechner&utm_medium=referral
