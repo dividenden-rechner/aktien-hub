@@ -537,7 +537,7 @@ async function openStock(sym){
   msg.className="";msg.textContent=`Lade ${sym} …`;
   const [S_,KZ_]=await Promise.all([secLoad(),kzLoad()]);
   const SF=secFirma(S_,sym),SD=SF?secDaten(SF):null,KZ=KZ_&&KZ_.werte?(KZ_.werte[String(sym).toUpperCase()]||KZ_.werte[String(sym).toUpperCase().replace(/\./g,"-")]||null):null;
-  try{await api("profile",{symbol:sym})}catch(e){if(/HTTP 40[23]/.test(e.message)&&!SD){msg.className="err";msg.textContent=`${sym} ist im aktuellen FMP-Tarif nicht verfügbar (402). Der Gratis-Tarif deckt meist nur US-Börsen ab, z. B. KO, PEP, JNJ.`;return}}
+  try{await api("profile",{symbol:sym})}catch(e){if(/HTTP 40[23]/.test(e.message)&&!SD){msg.className="err";msg.textContent=`Für ${sym} liegen noch keine Daten vor. Probiere z. B. KO, PEP oder JNJ.`;return}}
   const from=new Date(Date.now()-5*365*864e5).toISOString().slice(0,10);
   const names=["profile","quote","ratios-ttm","key-metrics-ttm","discounted-cash-flow","price-target-consensus","income","cash","div","price","grades","est"];
   const calls=[api("profile",{symbol:sym}),api("quote",{symbol:sym}),api("ratios-ttm",{symbol:sym}),api("key-metrics-ttm",{symbol:sym}),api("discounted-cash-flow",{symbol:sym}),api("price-target-consensus",{symbol:sym}),
@@ -609,7 +609,8 @@ async function openStock(sym){
     if(oth.length)h+=`Sonstige Fehler: ${esc(oth.map(f=>f.l+": "+f.m).join(" | "))}`;
     msg.className=oth.length||lim.length?"err":"";msg.innerHTML=h;
     /* Mit eigenen Daten (SEC, Deutsche Börse) ist ein FMP-Limit kein Fehler mehr: nur ein leiser Hinweis */
-    if(SD&&!oth.length){msg.className="";msg.innerHTML=`<small>Zusatzdaten von FMP heute nicht verfügbar (${lim.length?"Tageslimit":"Tarif"}). Kurs, Kennzahlen und Jahreszahlen kommen aus eigenen Daten.</small>`}msg.title=fails.map(f=>f.l+": "+f.m).join("\n");
+    /* Keine technischen Fehlercodes für Leser: mit eigenen Daten gar kein Hinweis, sonst ein schlichter Satz */
+    msg.title="";if(SD){msg.className="";msg.innerHTML=""}else{msg.className="";msg.innerHTML="<small>Einige Zusatzdaten sind für diese Aktie gerade nicht verfügbar.</small>"}msg.title=fails.map(f=>f.l+": "+f.m).join("\n");
   }
   scrollTo(0,0);
 }
@@ -1080,10 +1081,10 @@ function toCSV(cols,rows){
 }
 function xerr(e){
   const m=String(e&&e.message||e);
-  if(/HTTP 402|HTTP 403/.test(m))return "Dieser Datensatz ist im aktuellen FMP-Tarif nicht enthalten (402).";
-  if(/HTTP 429/.test(m))return "Tageslimit des FMP-Tarifs erreicht (429). Bitte später erneut versuchen.";
+  if(/HTTP 402|HTTP 403/.test(m))return "Dieser Datensatz ist derzeit nicht verfügbar.";
+  if(/HTTP 429/.test(m))return "Diese Daten sind heute nicht mehr abrufbar. Bitte später erneut versuchen.";
   if(/leere Antwort/.test(m))return "Keine Daten für diese Auswahl. Entweder gibt es sie nicht, oder sie sind im aktuellen Tarif nicht enthalten.";
-  if(/HTTP 404/.test(m))return "Diese Abfrage gibt es bei FMP nicht (404): "+m;
+  if(/HTTP 404/.test(m))return "Diese Abfrage ist nicht verfügbar.";
   return "Fehler: "+m;
 }
 
