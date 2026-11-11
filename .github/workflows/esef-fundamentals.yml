@@ -1,0 +1,36 @@
+name: ESEF-Jahreszahlen Europa
+on:
+  push:
+    branches: [main]
+    paths:
+      - "tools/esef_fundamentals.py"
+      - ".github/workflows/esef-fundamentals.yml"
+  schedule:
+    - cron: "41 2 * * *"   # nachts; jede Firma wird höchstens einmal am Tag geprüft, Berichte nur einmal geladen
+  workflow_dispatch:
+concurrency:
+  group: sec-daten
+  cancel-in-progress: false
+permissions:
+  contents: write
+jobs:
+  laden:
+    runs-on: ubuntu-latest
+    timeout-minutes: 58
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: python3 tools/esef_fundamentals.py
+      - name: Kennzahlen mit den neuen Jahreszahlen neu rechnen
+        run: python3 tools/kennzahlen.py || echo "Kennzahlen übersprungen"
+      - name: Ergebnis committen
+        if: always()
+        run: |
+          git config user.name "esef-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add data/esef data/esef-abdeckung.md data/kennzahlen.json
+          if git diff --cached --quiet; then echo "Keine Änderungen"; exit 0; fi
+          git commit -m "ESEF-Jahreszahlen Europa aktualisiert"
+          for i in 1 2 3; do git pull --rebase -X theirs -q && git push && break; sleep 5; done

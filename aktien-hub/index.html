@@ -262,7 +262,9 @@ const one = a => Array.isArray(a)?(a[0]||{}):(a||{});
    Jahreswerte aus den 10-K/20-F-Berichten. Sie haben Vorrang vor FMP; FMP füllt nur Felder, die die SEC nicht liefert
    (z. B. Bruttogewinn, operatives Ergebnis). Bilanz: FMP zuerst, weil „Schulden gesamt“ dort auch kurzfristige Schulden enthält. */
 let SECP=null;
-function secLoad(){return SECP||(SECP=fetch("../data/sec/fundamentals.json?v="+Math.floor(Date.now()/864e5)).then(r=>r.ok?r.json():null).catch(()=>null))}
+function secLoad(){const v=Math.floor(Date.now()/864e5),j=u=>fetch(u+"?v="+v).then(r=>r.ok?r.json():null).catch(()=>null);
+  return SECP||(SECP=Promise.all([j("../data/sec/fundamentals.json"),j("../data/esef/fundamentals.json")]).then(([s,e])=>{
+    if(!s&&!e)return null;s=s||{firmen:{}};if(e&&e.firmen)for(const t in e.firmen)if(!s.firmen[t])s.firmen[t]=e.firmen[t];return s}))}
 let KZP=null;
 function kzLoad(){return KZP||(KZP=fetch("../data/kennzahlen.json?v="+Math.floor(Date.now()/36e5)).then(r=>r.ok?r.json():null).catch(()=>null))}
 /* Eigene Kennzahlen: Schlusskurs (Deutsche Börse, verzögert) + SEC-Jahreszahlen + EZB-Kurse; Tabelle im Stil des Steckbriefs */
@@ -324,7 +326,7 @@ function kzTabelle(K){
     g+=`<path d="${pth}" fill="none" stroke="#2563eb" stroke-width="2.5"/>`+V.map((v,i)=>v[1]?`<circle cx="${X(i)}" cy="${YN(v[1])}" r="3.5" fill="#2563eb"><title>${v[0]} NAV ${num(v[1],2)}</title></circle>`:"").join("");
     g+=`<text x="${l-6}" y="${t+10}" text-anchor="end" font-size="11" fill="#2563eb">${num(nmax,0)}</text><text x="${l-6}" y="${t+ih}" text-anchor="end" font-size="11" fill="#2563eb">${num(nmin,0)}</text><text x="${W-r+6}" y="${t+10}" font-size="11" fill="#5d6b78">${num(bmax,2)}</text></svg>`;
     chart=`<div class="fcard"><div class="fctl"><b>NAV, NII und Dividende je Quartal</b></div><div class="kleg"><span><i style="background:#2563eb"></i>NAV je Aktie (linke Achse)</span><span><i style="background:#16a34a"></i>NII je Aktie</span><span><i style="background:#d4a53a"></i>Dividende je Aktie</span></div><div class="fscroll fit">${g}</div><p class="fnote">Liegen die grünen Balken unter den gelben, verdient die BDC ihre Dividende nicht vollständig. Ein fallender NAV kann auf Kreditausfälle hindeuten.</p></div>`}
-  return chart+`<div class="stk kz"><h3>Kennzahlen</h3><table><tbody>${zeilen}</tbody></table><p class="sn">Kurs: Schluss des letzten Handelstags (${esc(K.boerse||"Xetra")}, ${new Date(K.datum).toLocaleDateString("de-DE")}), Deutsche Börse, 15 Minuten verzögert. Kennzahlen aus dem Jahresbericht ${esc(K.gj)} bei der US-Börsenaufsicht SEC, Kurs mit dem EZB-Referenzkurs umgerechnet. Keine Anlageberatung.</p></div>`;
+  return chart+`<div class="stk kz"><h3>Kennzahlen</h3><table><tbody>${zeilen}</tbody></table><p class="sn">Kurs: Schluss des letzten Handelstags (${esc(K.boerse||"Xetra")}, ${new Date(K.datum).toLocaleDateString("de-DE")}), Deutsche Börse, 15 Minuten verzögert. Kennzahlen aus dem Jahresbericht ${esc(K.gj)} ${K.land?"(europäisches Einheitsformat ESEF)":"bei der US-Börsenaufsicht SEC"}, Kurs mit dem EZB-Referenzkurs umgerechnet. Keine Anlageberatung.</p></div>`;
 }
 function secFirma(S,sym){if(!S||!S.firmen)return null;const k=String(sym).toUpperCase();return S.firmen[k]||S.firmen[k.replace(/\./g,"-")]||null}
 /* Geschäftsjahr wie bei FMP: endet es im Januar oder in der ersten Februarwoche, zählt es zum Vorjahr (Händler wie Home Depot) */

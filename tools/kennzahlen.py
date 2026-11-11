@@ -64,8 +64,15 @@ def main():
     fx_tag = max((d for d in fx if d <= tag), default=max(fx))
     rate = fx[fx_tag]
     out = {}
-    for t, f in sec["firmen"].items():
-        z = isin.get(t)
+    alle = dict(sec["firmen"])
+    try:   # Europa aus den ESEF-Jahresberichten (gleiches Format, ISIN steht direkt dabei)
+        for t, f in json.load(open("data/esef/fundamentals.json", encoding="utf-8"))["firmen"].items():
+            if t not in alle and f.get("isin"):
+                alle[t] = f
+    except Exception:
+        pass
+    for t, f in alle.items():
+        z = isin.get(t) or ({"isin": f["isin"]} if f.get("isin") else None)
         if not isinstance(z, dict) or not z or z["isin"] not in kurse["k"]:
             continue
         k_eur, veraend, kw = kurse["k"][z["isin"]][:3]
@@ -117,7 +124,7 @@ def main():
                 break
         U = lambda v: None if v is None else round(v * usd)
         o.update({
-            "name": f["n"], "sektor": SEKTOR.get(t), "kurs_usd": r2(k_eur * rate.get("USD", 1.0)),
+            "name": f["n"], "sektor": SEKTOR.get(t) or f.get("sektor"), "land": f.get("land"), "kurs_usd": r2(k_eur * rate.get("USD", 1.0)),
             "boersenwert_usd": round(k_eur * rate.get("USD", 1.0) * aktien) if aktien else None,
             "umsatz_usd": U(ums), "gewinn_usd": U(gew), "ocf_usd": U(ocf), "fcf_usd": U(fcf), "capex_usd": U(abs(cx) if cx is not None else None),
             "dividenden_usd": U(abs(dg) if dg is not None else None), "schulden_usd": U(sch), "cash_usd": U(cash),
