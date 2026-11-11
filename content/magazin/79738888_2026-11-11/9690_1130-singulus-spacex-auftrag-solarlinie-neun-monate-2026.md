@@ -8,6 +8,7 @@ story_text: "Für einen Maschinenbauer mit gut 80 Mio. Euro Jahresumsatz ist es 
 logo_name: "Singulus"
 logo_symbol: SNG.DE
 logo_domain: singulus.com
+logo_file: assets/logos/sng-de.png
 ---
 <!-- PRÜFEN: SpaceX-Auftrag (über 60 Mio. Euro, schlüsselfertige HJT-Linie, Lieferung 1. Halbjahr 2027, weitere Linien im Rahmen der Partnerschaft geplant) wurde am Abend des 10.11.2026 bekannt (boerse-express, 10.11., 20:28 Uhr; MarketScreener). Eine Originalmeldung auf singulus.com war im Abruf nicht sichtbar, die News-Seite dort war veraltet. Vor Freigabe gegen die Pressemitteilung von Singulus prüfen. -->
 <!-- PRÜFEN: Neun-Monats-Zahlen (Umsatz 60,4 Mio. Euro, +36 %; EBIT 1,2 Mio. Euro nach -2,5 Mio. Euro; Bruttomarge 35,4 % nach 32,5 %; Auftragsbestand 47,1 Mio. Euro ohne SpaceX) aus aktiencheck.de und Investing.com (Earnings Call, 11.11.2026). Widersprüche: Auftragseingang 60,3 Mio. Euro (aktiencheck) gegen 45,0 Mio. Euro (Investing), EBIT im dritten Quartal -1,4 Mio. Euro (aktiencheck) gegen +3,2 Mio. Euro (Investing). Beide Werte deshalb nicht im Text. Mit dem Zwischenbericht abgleichen. -->
