@@ -1,0 +1,32 @@
+name: Xetra-Tageskurse (Deutsche Börse, verzögert)
+on:
+  push:
+    branches: [main]
+    paths:
+      - "tools/xetra_tageskurse.py"
+      - ".github/workflows/xetra-kurse.yml"
+  schedule:
+    - cron: "37 5,17 * * *"   # zweimal täglich, damit keine Tagesdatei verloren geht (bleibt nur rund einen Tag online)
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: xetra-kurse
+jobs:
+  laden:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: python3 tools/xetra_tageskurse.py
+      - name: Ergebnis committen
+        run: |
+          git config user.name "kurse-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add data/kurse
+          if git diff --cached --quiet; then echo "Keine neuen Tage"; exit 0; fi
+          git commit -m "Xetra-Tageskurse"
+          for i in 1 2 3; do git pull --rebase -q && git push && break; sleep 5; done
