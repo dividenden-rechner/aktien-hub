@@ -12,10 +12,8 @@
 "quelle": "openfigi"
 },
 "ABBNY": {
-"isin": "US0003752047",
-"xetra": "",
-"kuerzel": "",
-"quelle": "openfigi"
+"isin": "CH0012221716",
+"quelle": "fest"
 },
 "ABBV": {
 "isin": "US00287Y1091",
@@ -303,6 +301,10 @@
 "kuerzel": "AEC1",
 "quelle": "openfigi"
 },
+"AZN": {
+"isin": "GB0009895292",
+"quelle": "fest"
+},
 "AZO": {
 "isin": "US0533321024",
 "xetra": "AUTOZONE INC.      DL-,01",
@@ -313,12 +315,6 @@
 "isin": "US0970231058",
 "xetra": "BOEING CO.           DL 5",
 "kuerzel": "BCO",
-"quelle": "openfigi"
-},
-"BABA": {
-"isin": "US01609W1027",
-"xetra": "A.G.HLD.ADR8 DL-000003125",
-"kuerzel": "AHLA",
 "quelle": "openfigi"
 },
 "BAC": {
@@ -340,10 +336,8 @@
 "quelle": "openfigi"
 },
 "BBVA": {
-"isin": "US05946K1016",
-"xetra": "",
-"kuerzel": "",
-"quelle": "openfigi"
+"isin": "ES0113211835",
+"quelle": "fest"
 },
 "BBY": {
 "isin": "US0865161014",
@@ -390,10 +384,8 @@
 "treffer": 1.03
 },
 "BHP": {
-"isin": "US0886061086",
-"xetra": "",
-"kuerzel": "",
-"quelle": "openfigi"
+"isin": "AU000000BHP4",
+"quelle": "fest"
 },
 "BIIB": {
 "isin": "US09062X1037",
@@ -463,10 +455,8 @@
 "quelle": "openfigi"
 },
 "BTI": {
-"isin": "US1104481072",
-"xetra": "",
-"kuerzel": "",
-"quelle": "openfigi"
+"isin": "GB0002875804",
+"quelle": "fest"
 },
 "BX": {
 "isin": "US09260D1072",
@@ -799,6 +789,10 @@
 "kuerzel": "DD2",
 "quelle": "openfigi"
 },
+"DB": {
+"isin": "DE0005140008",
+"quelle": "fest"
+},
 "DD": {
 "isin": "US26614N2018",
 "xetra": "DUPONT DE NEMO. NEW O.N.",
@@ -1024,10 +1018,8 @@
 "quelle": "openfigi"
 },
 "ERIC": {
-"isin": "US2948216088",
-"xetra": "",
-"kuerzel": "",
-"quelle": "openfigi"
+"isin": "SE0000108656",
+"quelle": "fest"
 },
 "ERIE": {
 "isin": "US29530P1021",
@@ -1399,10 +1391,8 @@
 "quelle": "openfigi"
 },
 "HMC": {
-"isin": "US4381283088",
-"xetra": "",
-"kuerzel": "",
-"quelle": "openfigi"
+"isin": "JP3854600008",
+"quelle": "fest"
 },
 "HON": {
 "isin": "US4385162056",
@@ -1799,10 +1789,8 @@
 "quelle": "openfigi"
 },
 "LYG": {
-"isin": "US5394391099",
-"xetra": "",
-"kuerzel": "",
-"quelle": "openfigi"
+"isin": "GB0008706128",
+"quelle": "fest"
 },
 "LYV": {
 "isin": "US5380341090",
@@ -2010,10 +1998,8 @@
 "quelle": "openfigi"
 },
 "MUFG": {
-"isin": "US6068221042",
-"xetra": "",
-"kuerzel": "",
-"quelle": "openfigi"
+"isin": "JP3902900004",
+"quelle": "fest"
 },
 "NDAQ": {
 "isin": "US6311031081",
@@ -2547,10 +2533,8 @@
 "quelle": "openfigi"
 },
 "SMFG": {
-"isin": "US86562M2098",
-"xetra": "",
-"kuerzel": "",
-"quelle": "openfigi"
+"isin": "JP3890350006",
+"quelle": "fest"
 },
 "SNA": {
 "isin": "US8330341012",
@@ -2571,10 +2555,8 @@
 "quelle": "openfigi"
 },
 "SNY": {
-"isin": "US80105N1054",
-"xetra": "",
-"kuerzel": "",
-"quelle": "openfigi"
+"isin": "FR0000120578",
+"quelle": "fest"
 },
 "SO": {
 "isin": "US8425871071",
@@ -2589,10 +2571,8 @@
 "quelle": "openfigi"
 },
 "SONY": {
-"isin": "US8356993076",
-"xetra": "",
-"kuerzel": "",
-"quelle": "openfigi"
+"isin": "JP3435000009",
+"quelle": "fest"
 },
 "SPG": {
 "isin": "US8288061091",
@@ -2736,10 +2716,8 @@
 "quelle": "openfigi"
 },
 "TM": {
-"isin": "US8923313071",
-"xetra": "",
-"kuerzel": "",
-"quelle": "openfigi"
+"isin": "JP3633400001",
+"quelle": "fest"
 },
 "TMO": {
 "isin": "US8835561023",
@@ -2799,12 +2777,6 @@
 "isin": "US88160R1014",
 "xetra": "TESLA INC. DL -,001",
 "kuerzel": "TL0",
-"quelle": "openfigi"
-},
-"TSM": {
-"isin": "US8740391003",
-"xetra": "",
-"kuerzel": "",
 "quelle": "openfigi"
 },
 "TSN": {
@@ -2967,10 +2939,8 @@
 "quelle": "openfigi"
 },
 "VOD": {
-"isin": "US92857W3088",
-"xetra": "",
-"kuerzel": "",
-"quelle": "openfigi"
+"isin": "GB00BH4HKS39",
+"quelle": "fest"
 },
 "VRSK": {
 "isin": "US92345Y1064",
