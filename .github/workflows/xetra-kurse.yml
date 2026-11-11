@@ -5,6 +5,9 @@ on:
     paths:
       - "tools/xetra_tageskurse.py"
       - ".github/workflows/xetra-kurse.yml"
+      - "tools/isin_zuordnung.py"
+      - "tools/kennzahlen.py"
+      - "data/kurse/isin-fest.json"
   schedule:
     - cron: "37 5,17 * * *"   # zweimal täglich, damit keine Tagesdatei verloren geht (bleibt nur rund einen Tag online)
   workflow_dispatch:
@@ -22,11 +25,15 @@ jobs:
         with:
           python-version: "3.12"
       - run: python3 tools/xetra_tageskurse.py
+      - name: ISIN-Zuordnung (Xetra-Instrumentenliste)
+        run: python3 tools/isin_zuordnung.py
+      - name: Kennzahlen (Kurs + SEC + EZB)
+        run: python3 tools/kennzahlen.py
       - name: Ergebnis committen
         run: |
           git config user.name "kurse-bot"
           git config user.email "actions@users.noreply.github.com"
-          git add data/kurse
+          git add data/kurse data/kennzahlen.json
           if git diff --cached --quiet; then echo "Keine neuen Tage"; exit 0; fi
           git commit -m "Xetra-Tageskurse"
           for i in 1 2 3; do git pull --rebase -q && git push && break; sleep 5; done
