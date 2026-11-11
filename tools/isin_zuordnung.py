@@ -94,7 +94,7 @@ def main():
         if t in fest:
             out[t] = {"isin": fest[t], "quelle": "fest"}; continue
         # Auslandsfirmen (Bericht nicht in Dollar): lieber die Heimataktie per Namensabgleich als das US-Zertifikat (ADR)
-        heimat = f.get("w") != "USD"
+        heimat = f.get("w") != "USD" or f.get("std") == "IFRS"   # IFRS-Berichter: Kennzahlen je Heimataktie, ADRs haben oft andere Verhältnisse
         if t in figi and not heimat:
             i = bester(figi[t])
             out[t] = {"isin": i["isin"], "xetra": i["name"], "kuerzel": i["mn"], "quelle": "openfigi"}; continue
