@@ -45,6 +45,22 @@ K = {
     "eigenkapital": ("s", "USD", ["StockholdersEquity",
                                   "StockholdersEquityIncludingPortionAttributableToNoncontrollingInterest"],
                      r"^(StockholdersEquity\w*|PartnersCapital\w*|MembersEquity)$"),
+    # Fuer Margen, EBITDA, Bilanzkennzahlen, Altman-Z und Piotroski (ab 11.11.2026)
+    "bruttogewinn": ("f", "USD", ["GrossProfit"], r"^GrossProfit$"),
+    "operatives_ergebnis": ("f", "USD", ["OperatingIncomeLoss"], r"^OperatingIncomeLoss$"),
+    "abschreibungen": ("f", "USD", ["DepreciationDepletionAndAmortization", "DepreciationAndAmortization",
+                                    "DepreciationAmortizationAndAccretionNet", "Depreciation"],
+                       r"^(DepreciationDepletionAndAmortization|DepreciationAndAmortization|DepreciationAmortizationAndAccretionNet)$"),
+    "zinsaufwand": ("f", "USD", ["InterestExpense", "InterestExpenseNonoperating", "InterestExpenseDebt"],
+                    r"^(InterestExpense|InterestExpenseNonoperating|InterestExpenseDebt)$"),
+    "bilanzsumme": ("s", "USD", ["Assets"], r"^Assets$"),
+    "umlaufvermoegen": ("s", "USD", ["AssetsCurrent"], r"^AssetsCurrent$"),
+    "kurzfr_verbindl": ("s", "USD", ["LiabilitiesCurrent"], r"^LiabilitiesCurrent$"),
+    "verbindlichkeiten": ("s", "USD", ["Liabilities"], r"^Liabilities$"),
+    "vorraete": ("s", "USD", ["InventoryNet"], r"^InventoryNet$"),
+    "gewinnruecklagen": ("s", "USD", ["RetainedEarningsAccumulatedDeficit"], r"^RetainedEarningsAccumulatedDeficit$"),
+    "schulden_kurz": ("s", "USD", ["LongTermDebtCurrent", "DebtCurrent", "ShortTermBorrowings"],
+                      r"^(LongTermDebtCurrent|DebtCurrent|ShortTermBorrowings)$"),
 }
 # Diese Namen passen zwar auf ein Suchmuster, meinen aber etwas anderes
 SPERRE = re.compile(r"(MinorityInterest|Noncontrolling|Preferred|Subsidiar|PerShare|Percentage|Remaining|Deferred|Unbilled|Fees|Interest(Expense|Paid)|Current$|Maturities|Repayments|Proceeds|FairValue|Increase|Decrease|Gain|Tax)", re.I)
@@ -65,6 +81,18 @@ K_IFRS = {
     "schulden_lang": ["NoncurrentPortionOfNoncurrentBorrowings", "LongtermBorrowings", "NoncurrentBorrowings"],
     "liquide_mittel": ["CashAndCashEquivalents"],
     "eigenkapital": ["EquityAttributableToOwnersOfParent", "Equity"],
+    "bruttogewinn": ["GrossProfit"],
+    "operatives_ergebnis": ["ProfitLossFromOperatingActivities"],
+    "abschreibungen": ["DepreciationAndAmortisationExpense",
+                       "DepreciationAmortisationAndImpairmentLossReversalOfImpairmentLossRecognisedInProfitOrLoss"],
+    "zinsaufwand": ["InterestExpense", "FinanceCosts"],
+    "bilanzsumme": ["Assets"],
+    "umlaufvermoegen": ["CurrentAssets"],
+    "kurzfr_verbindl": ["CurrentLiabilities"],
+    "verbindlichkeiten": ["Liabilities"],
+    "vorraete": ["Inventories"],
+    "gewinnruecklagen": ["RetainedEarnings"],
+    "schulden_kurz": ["CurrentBorrowings", "CurrentPortionOfNoncurrentBorrowings", "ShorttermBorrowings"],
 }
 FORMEN = ("10-K", "20-F", "40-F")
 KERN = ["umsatz", "gewinn", "eps_verw", "dividende_je_aktie", "operativer_cf"]

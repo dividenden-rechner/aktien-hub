@@ -236,7 +236,7 @@ article.wide>:not(.tool):not(.cards){max-width:760px}
 <p class="status" id="status" role="status" aria-live="polite"></p>
 <div class="xhead2" id="actions" hidden><b id="count"></b><div class="sp"><button type="button" class="ghost" id="towl">In Watchlist übernehmen</button><button type="button" class="ghost" id="copy">Symbole kopieren</button><button type="button" class="ghost" id="tolist">In eigene Liste</button><button type="button" class="ghost" id="csv">CSV speichern</button></div></div>
 <div id="res"></div>
-<p class="legend-x">Fehlende Werte werden als „–“ angezeigt. Eine Aktie, bei der FMP für ein Kriterium keinen Wert liefert, fällt aus dem Ergebnis heraus.</p>
+<p class="legend-x">Fehlende Werte werden als „–“ angezeigt. Eine Aktie ohne Wert für ein Kriterium fällt aus dem Ergebnis heraus.</p>
 
 </section>
 <div class="calc-wrap explain" style="max-width:760px">
@@ -255,11 +255,10 @@ article.wide>:not(.tool):not(.cards){max-width:760px}
 <li><strong>REITs und BDCs:</strong> Nettovermögenswert (NAV) je Aktie, Kurs/NAV, FFO und Kurs/FFO, Ausschüttung im Verhältnis zum FFO.</li>
 </ul>
 <h3>Wichtig bei REITs und BDCs</h3>
-<p>FMP liefert für REITs weder AFFO noch für BDCs das Nettoanlageergebnis (NII). Der Screener nähert deshalb an: FFO ist hier Nettogewinn plus Abschreibungen, der NAV ist das bilanzielle Eigenkapital je Aktie. Das ist grob. Echte FFO-, AFFO- und NAV-Werte findest du in den Quartalsberichten der Unternehmen. Nutze die Näherungen nur zum Vorsortieren.</p>
-<h3>Wie viele API-Aufrufe braucht eine Suche?</h3>
-<p>Der Screener lädt schrittweise: Erst kommen die Profile, dann pro benötigter Datenquelle nur noch die Aktien, die bisher alle Kriterien erfüllen. Je selektiver deine ersten Kriterien sind, desto weniger Aufrufe werden verbraucht. Unter „Weitere Optionen“ legst du eine Obergrenze fest. Der Gratis-Tarif von FMP erlaubt aktuell 250 Aufrufe pro Tag.</p>
-<details><summary>Warum zeigt der Screener keine Treffer?</summary><p>Meist sind die Kriterien zu streng, oder FMP liefert für eine Kennzahl keinen Wert (dann fällt die Aktie heraus). Lockere ein Kriterium oder nutze die eigene Liste. Im Gratis-Tarif ist der Marktscreener meist nicht enthalten.</p></details>
-<details><summary>Brauche ich einen API-Key?</summary><p>Nein, die Abrufe laufen über einen Server dieser Seite. Wenn du einen eigenen Key einträgst, liegt er nur in deinem Browser (localStorage), geht nur an Financial Modeling Prep und gilt auch im Aktien-Hub. Gespeicherte Vorlagen liegen ebenfalls nur in deinem Browser.</p></details>
+<p>Für REITs gibt es kein einheitlich gemeldetes AFFO und für BDCs kein Nettoanlageergebnis (NII). Der Screener nähert deshalb an: FFO ist hier Nettogewinn plus Abschreibungen, der NAV ist das bilanzielle Eigenkapital je Aktie. Das ist eine grobe Orientierung, die Angaben der Unternehmen in ihren Präsentationen sind genauer.</p>
+<h3>Woher kommen die Daten?</h3>
+<p>Die Kennzahlen stammen aus den Jahresberichten, die die Unternehmen bei der US-Börsenaufsicht SEC einreichen, und beziehen sich auf das letzte abgeschlossene Geschäftsjahr. Der Kurs ist der Schlusskurs des letzten Handelstags an Xetra, Tradegate oder der Börse Frankfurt. Beträge werden mit den Referenzkursen der Europäischen Zentralbank umgerechnet. Die Daten werden täglich aktualisiert, die Suche läuft sofort und ohne Limit.</p>
+<details><summary>Warum zeigt der Screener keine Treffer?</summary><p>Meist sind die Kriterien zu streng, oder für eine Kennzahl liegt bei einer Aktie kein Wert vor (dann fällt sie heraus). Lockere ein Kriterium oder entferne es.</p></details>
 <details><summary>Sind die Daten verlässlich?</summary><p>Die Daten stammen von Financial Modeling Prep und können Lücken oder Fehler enthalten. Alle Angaben ohne Gewähr, keine Anlageberatung. Prüfe jede Aktie selbst, bevor du entscheidest.</p></details>
 </div>
 <p class="note"><strong>Hinweis:</strong> Alle Inhalte dienen der allgemeinen Information und sind keine Anlage-, Steuer- oder Rechtsberatung. Kapitalanlagen sind mit Risiken verbunden, bis hin zum Totalverlust.</p>
@@ -536,10 +535,14 @@ article.wide>:not(.tool):not(.cards){max-width:760px}
   /* ---------- Eigene Daten: data/kennzahlen.json (Kurs Deutsche Börse + SEC-Jahreszahlen), ohne Abrufe ---------- */
   var OWN = { mcap: "boersenwert_usd", price: "kurs_usd", pe: "kgv", pb: "kbv", ps: "kuv", pfcf: "kfcf", pocf: "kcv", fcfyield: "fcf_rendite",
     earnyield: "gewinnrendite", yield: "rendite", dps: "dividende", payout: "ausschuettung", fcfpayout: "fcf_ausschuettung", divstreak: "dividendenserie",
-    divcagr: "div_wachstum_5j", divg1: "div_wachstum_1j", divg5: "div_wachstum_5j", divpaid: "dividenden_usd", revg: "umsatz_wachstum",
+    divcagr: "div_wachstum_5j", divg1: "div_wachstum_1j", divpaid: "dividenden_usd", revg: "umsatz_wachstum",
     revg3: "umsatz_wachstum_3j", revg5: "umsatz_wachstum_5j", epsg: "eps_wachstum", nig: "gewinn_wachstum", nig5: "gewinn_wachstum_5j",
-    fcfg: "fcf_wachstum", nm: "nettomarge", roe: "roe", de: "schulden_ek", debt: "schulden_usd", netdebt: "nettoschulden_usd", cash: "cash_usd",
-    equity: "ek_usd", ocf: "ocf_usd", fcf: "fcf_usd", capex: "capex_usd", capexrev: "capex_umsatz", capexocf: "capex_ocf", revenue: "umsatz_usd",
+    fcfg: "fcf_wachstum", nm: "nettomarge", roe: "roe", de: "schulden_ek", debt: "schulden_ges_usd", netdebt: "nettoschulden_usd", cash: "cash_usd",
+    equity: "ek_usd", ev: "ev_usd", evebitda: "ev_ebitda", evsales: "ev_umsatz", evfcf: "ev_fcf", peg: "peg", dyttm: "rendite",
+    opg: "op_wachstum", gm: "bruttomarge", om: "operative_marge", em: "ebitda_marge", roa: "roa", roic: "roic", roce: "roce", da: "schulden_bilanz",
+    nde: "nettoschulden_ebitda", cov: "zinsdeckung", cr: "current_ratio", qr: "quick_ratio", intexp: "zinsaufwand_usd", intshare: "zins_ebitda",
+    ebitda: "ebitda_usd", pio: "piotroski", alt: "altman_z", ffo: "ffo_usd", ffops: "ffo_je_aktie", pffo: "kurs_ffo", ffopayout: "ffo_ausschuettung",
+    ocf: "ocf_usd", fcf: "fcf_usd", capex: "capex_usd", capexrev: "capex_umsatz", capexocf: "capex_ocf", revenue: "umsatz_usd",
     netinc: "gewinn_usd", nav: "nav_je_aktie", pnav: "kbv", ocfpayout: "ocf_ausschuettung" };
   var KZ = null;
   async function kzLaden() { if (KZ) return KZ; var r = await fetch("../data/kennzahlen.json?v=" + Math.floor(Date.now() / 36e5)); if (!r.ok) throw new Error("Eigene Daten nicht ladbar"); KZ = await r.json(); return KZ; }
@@ -567,7 +570,7 @@ article.wide>:not(.tool):not(.cards){max-width:760px}
     });
     ST.rows = work; ST.crit = crit.filter(function (c) { return OWN[c.id]; });
     var msg = work.length + " Treffer. Verlauf: " + log.join(" → ") + ". Stand: Kurs vom " + new Date(J.stand).toLocaleDateString("de-DE") + ".";
-    if (skip.length) msg += " Übersprungen, weil es dafür keine eigenen Daten gibt: " + skip.join(", ") + ". Diese Kriterien gehen im Modus „Gesamter Markt (FMP)“.";
+    if (skip.length) msg += " Übersprungen, weil es dafür derzeit keine Daten gibt: " + skip.join(", ") + ".";
     status(msg, skip.length ? "err" : "ok");
   }
 
@@ -674,7 +677,7 @@ article.wide>:not(.tool):not(.cards){max-width:760px}
 
   /* ---------- Vorlagen ---------- */
   var T = {
-    "Dividenden-Klassiker": { c: [["yield", "gt", 3], ["payout", "lt", 75], ["divstreak", "gt", 9], ["mcap", "gt", 10, "Mrd"], ["nde", "lt", 3.5]] },
+    "Dividenden-Klassiker": { c: [["yield", "gt", 3], ["payout", "lt", 75], ["divstreak", "gt", 8], ["mcap", "gt", 10, "Mrd"], ["nde", "lt", 3.5]] },
     "Dividendenwachstum": { c: [["divcagr", "gt", 7], ["payout", "lt", 60], ["revg5", "gt", 5], ["roce", "gt", 12]] },
     "Qualitätswerte": { c: [["roce", "gt", 15], ["nm", "gt", 10], ["revg", "gt", 5], ["nde", "lt", 3], ["pio", "gt", 6]] },
     "Günstig bewertet": { c: [["pe", "lt", 15], ["pb", "lt", 2], ["fcfyield", "gt", 5], ["de", "lt", 1.5]] },
@@ -700,7 +703,10 @@ article.wide>:not(.tool):not(.cards){max-width:760px}
   function init() {
     if (!$("go")) return;
     showKey(); $("keybtn").onclick = askKey;
-    var sel = $("addcrit"); sel.innerHTML = '<option value="">+ Kriterium hinzufügen …</option>' + cat.map(function (g) { return '<optgroup label="' + esc(g[0]) + '">' + g[1].map(function (m) { return '<option value="' + m.id + '">' + esc(m.l) + "</option>"; }).join("") + "</optgroup>"; }).join("");
+    var sel = $("addcrit");
+    var mitFMP = /key/.test(location.hash);
+    sel.innerHTML = '<option value="">+ Kriterium hinzufügen …</option>' + cat.map(function (g) { var ms = g[1].filter(function (m) { return mitFMP || OWN[m.id]; }); return ms.length ? '<optgroup label="' + esc(g[0]) + '">' + ms.map(function (m) { return '<option value="' + m.id + '">' + esc(m.l) + "</option>"; }).join("") + "</optgroup>" : ""; }).join("");
+    if (!mitFMP) { $("m-markt").hidden = true; $("m-liste").hidden = true; var mg = document.querySelector(".mode"); if (mg) mg.hidden = true; var lim = $("f-max"); if (lim && lim.closest(".form-group")) lim.closest(".form-group").hidden = true; }
     sel.onchange = function () { if (sel.value) addCrit(sel.value); sel.value = ""; };
     $("tpls").innerHTML = Object.keys(T).map(function (n) { return '<button type="button" data-t="' + esc(n) + '">' + esc(n) + "</button>"; }).join("");
     $("tpls").querySelectorAll("[data-t]").forEach(function (b) { b.onclick = function () { var t = T[b.dataset.t]; loadSet(t.c, t.ind); }; });

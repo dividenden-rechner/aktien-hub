@@ -137,6 +137,52 @@ def main():
             "dividendenserie": (99 if dps_r and streak >= len(dps_r) - 1 and streak >= 9 else streak) if dps_r else None,
             "nav_je_aktie": r2(ek / aktien, 2) if ek and aktien else None,
         })
+        # Margen, EBITDA, Unternehmenswert, Bilanz, Altman-Z und Piotroski (SEC-Bilanz und GuV)
+        bg, op, da, zins = g("bruttogewinn"), g("operatives_ergebnis"), g("abschreibungen"), g("zinsaufwand")
+        A, ca, cl, L, inv, re_, sk = g("bilanzsumme"), g("umlaufvermoegen"), g("kurzfr_verbindl"), g("verbindlichkeiten"), g("vorraete"), g("gewinnruecklagen"), g("schulden_kurz")
+        ebitda = op + abs(da) if op is not None and da is not None else None
+        schulden_ges = (sch or 0) + (sk or 0) if sch is not None or sk is not None else None
+        ev = bw + schulden_ges - (cash or 0) if bw and schulden_ges is not None else None
+        ffo = gew + abs(da) if gew is not None and da is not None else None
+        P = lambda a, b, n=1: r2(a / b * 100, n) if a is not None and b else None
+        X = lambda a, b, n=2: r2(a / b, n) if a is not None and b and b > 0 else None
+        alt = None
+        if all(v is not None for v in (ca, cl, re_, op, ums, L)) and A and L and bw:
+            alt = r2(1.2 * (ca - cl) / A + 1.4 * re_ / A + 3.3 * op / A + 0.6 * bw / L + 1.0 * ums / A, 2)
+        # Piotroski-F-Score: 9 Pruefungen gegen das Vorjahr
+        pio = None
+        e1 = (f["k"].get("umsatz") or [[None]])[-2][0] if len(f["k"].get("umsatz") or []) > 1 else None
+        if e1 and A and gew is not None and ocf is not None:
+            A1, n1, o1 = wert_am(f, "bilanzsumme", e1), wert_am(f, "gewinn", e1), wert_am(f, "operativer_cf", e1)
+            if A1 and n1 is not None:
+                lt1, ca1, cl1, sh1 = wert_am(f, "schulden_lang", e1), wert_am(f, "umlaufvermoegen", e1), wert_am(f, "kurzfr_verbindl", e1), wert_am(f, "aktien_verw", e1)
+                bg1, u1 = wert_am(f, "bruttogewinn", e1), wert_am(f, "umsatz", e1)
+                tests = [gew > 0, ocf > 0, gew / A > n1 / A1, ocf > gew,
+                         (sch or 0) / A < (lt1 or 0) / A1 if lt1 is not None or sch is not None else None,
+                         (ca / cl > ca1 / cl1) if ca and cl and ca1 and cl1 else None,
+                         (aktien <= sh1 * 1.005) if aktien and sh1 else None,
+                         (bg / ums > bg1 / u1) if bg and ums and bg1 and u1 else None,
+                         (ums / A > u1 / A1) if ums and u1 else None]
+                if sum(t is not None for t in tests) >= 7:
+                    pio = sum(1 for t in tests if t)
+        epsg5 = wachs(eps, vj("eps_verw", 5), 5)
+        o.update({
+            "bruttomarge": P(bg, ums, 1) if ums and ums > 0 else None, "operative_marge": P(op, ums, 1) if ums and ums > 0 else None,
+            "ebitda_marge": P(ebitda, ums, 1) if ums and ums > 0 else None, "ebitda_usd": U(ebitda), "ev_usd": U(ev),
+            "ev_ebitda": X(ev, ebitda, 1), "ev_umsatz": X(ev, ums, 2), "ev_fcf": X(ev, fcf, 1),
+            "nettoschulden_ebitda": r2((schulden_ges - (cash or 0)) / ebitda, 2) if schulden_ges is not None and ebitda and ebitda > 0 else None,
+            "zinsdeckung": X(op, abs(zins) if zins else None, 1), "zinsaufwand_usd": U(abs(zins) if zins is not None else None),
+            "zins_ebitda": P(abs(zins) if zins is not None else None, ebitda) if ebitda and ebitda > 0 else None,
+            "roa": P(gew, A), "roce": P(op, (A - cl) if A and cl is not None else None),
+            "roic": P(op * 0.79 if op is not None else None, (schulden_ges or 0) + ek if ek else None),
+            "schulden_bilanz": X(schulden_ges, A), "current_ratio": X(ca, cl), "quick_ratio": X((ca - (inv or 0)) if ca is not None else None, cl),
+            "schulden_ges_usd": U(schulden_ges), "op_wachstum": wachs(op, vj("operatives_ergebnis")),
+            "peg": r2((kurs / eps) / epsg5, 2) if eps and eps > 0 and epsg5 and epsg5 > 0 else None,
+            "ffo_usd": U(ffo), "ffo_je_aktie": r2(ffo / aktien, 2) if ffo is not None and aktien else None,
+            "kurs_ffo": X(kurs, ffo / aktien if ffo and aktien else None, 1),
+            "ffo_ausschuettung": P(abs(dg) if dg else None, ffo, 0) if ffo and ffo > 0 else None,
+            "altman_z": alt, "piotroski": pio,
+        })
         out[t] = o
     json.dump({"stand": tag, "ezb_kurs_vom": fx_tag,
                "hinweis": "Kurs: Xetra-Schluss (Deutsche Börse, 15 Min. verzögert). Kennzahlen: letztes Geschäftsjahr laut SEC-Bericht; Kurs per EZB-Referenzkurs in die Berichtswährung umgerechnet.",
