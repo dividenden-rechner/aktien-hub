@@ -18,16 +18,14 @@ logo_name: "EnerSys"
 logo_symbol: ENS
 logo_domain: enersys.com
 image: assets/magazin/enersys-q2-fy27-zahlen-ultralife-foto.jpg
-image_alt: "Foto zu EnerSys: A rack of lead-acid telecom UPS batteries."
-image_credit: "Foto: Paul Chernikhowsky from Kelowna, BC, Canada / Wikimedia Commons, CC BY 2.0"
-image_source: https://commons.wikimedia.org/wiki/File:Telecomm_batteries.jpg
-image_artist_url: 
+image_alt: "Industrieanlage mit Kraftwerksschornsteinen und Rohrleitungen im Abendlicht"
+image_credit: "Foto: eingereicht von der Redaktion"
 logo_file: assets/logos/ens.png
 ---
 <!-- PRÜFEN: Alle Konzern-, Segment- und Cashflow-Zahlen aus der Pressemitteilung "EnerSys Reports Second Quarter Fiscal Year 2027 Results" (11.11.2026, PDF von Divi), Tabellen S. 3, 8, 10, 13. Das zweite Geschäftsquartal endete am 4. Oktober 2026, das Geschäftsjahr endet am 31. März. -->
 <!-- PRÜFEN: Nicht aus der Meldung: Konsens Umsatz 972 Mio. Dollar und bereinigter Gewinn je Aktie 3,20 Dollar, 52-Wochen-Hoch 244,30 Dollar (Investing.com, Vorschau vom 11.11.2026); Kursminus von rund 15 % im letzten Monat (StockStory/FinancialContent, 10.11.2026); Kaufpreis Ultralife 320 Mio. Dollar in bar (EnerSys 8-K vom 27./28.10.2026, Finviz). Kurs 147,65 Dollar zum Schluss (−2,43 %) und 145,01 Dollar nachbörslich (−1,79 %) aus dem Yahoo-Screenshot von Divi (11.11.2026, 22:24 Uhr). -->
 <!-- PRÜFEN: Selbst gerechnet: Steuergutschrift-Anteil am bereinigten Gewinn je Aktie 3,22 − 2,02 = 1,20 Dollar (37 %); Nettogewinn +31 % (89,6 / 68,4); Dividendenerhöhung 0,2875 / 0,2625 = +9,5 %; Rendite 4 × 0,2875 / 147,65 = 0,8 %; Durchschnittspreis Rückkauf 130 Mio. / 679.000 Aktien = rund 191 Dollar; Abstand zum Hoch 147,65 / 244,30 = −40 %; Vorjahreswert bereinigt ohne Steuergutschrift 1,62 Dollar aus +25 % zurückgerechnet, Vorjahres-Bruttomarge 29,1 % aus +80 Basispunkten. -->
-<!-- PRÜFEN: Aufmacherfoto fehlt noch, die Fotoanfrage (Batterien, Rechenzentrum, Gabelstapler) ist angelegt, der Bot ergänzt es. Das von Divi geschickte Kraftwerksfoto zeigt kein EnerSys-Motiv und hat keine erkennbare Lizenz, deshalb nicht verwendet. CEO-Freisteller von Divi (Shawn O'Connell), Geländerrest rechts unten entfernt, abgelegt als medien/ceo/ens.png. -->
+<!-- PRÜFEN: Aufmacherfoto: von Divi mitgeschicktes Kraftwerksfoto (auf Wunsch eingesetzt). Herkunft und Lizenz unbekannt, bitte Bildnachweis ergänzen. Ersatz bei Bedarf: Commons-Foto Telecomm_batteries.jpg (CC BY 2.0), vom Bot gefunden. CEO-Freisteller von Divi (Shawn O'Connell), Geländerrest rechts unten entfernt, abgelegt als medien/ceo/ens.png. -->
 
 !!! kurz "Kurz gesagt (zweites Quartal Geschäftsjahr 2027)"
     **Umsatz:** 950 Mio. $ (Vorjahr 951 Mio. $)
