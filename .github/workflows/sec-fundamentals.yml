@@ -8,6 +8,9 @@ on:
   schedule:
     - cron: "23 4 * * 0"   # sonntags: neue 10-K-Zahlen einsammeln
   workflow_dispatch:
+concurrency:
+  group: kurse-daten
+  cancel-in-progress: false
 permissions:
   contents: write
 jobs:
@@ -29,4 +32,4 @@ jobs:
           git add data/sec/fundamentals.json data/sec-abdeckung.md data/kennzahlen.json
           if git diff --cached --quiet; then echo "Keine Änderungen"; exit 0; fi
           git commit -m "SEC-Fundamentaldaten aktualisiert"
-          for i in 1 2 3; do git pull --rebase -q && git push && break; sleep 5; done
+          for i in 1 2 3; do git pull --rebase -X theirs -q && git push && break; sleep 5; done
