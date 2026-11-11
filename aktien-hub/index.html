@@ -79,6 +79,7 @@ svg text{fill:var(--mut);font-size:11px;font-family:inherit}
 .stk table{width:100%;border-collapse:collapse;font-size:14px;border-top:1px solid var(--line);table-layout:fixed}
 .stk td{padding:9px 6px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top;overflow-wrap:anywhere}
 .stk .k{width:150px;font-weight:600}.stk .v{width:96px;font-weight:600}.stk .d{color:var(--mut)}
+.stk tr.kzg td{padding:14px 6px 6px;font-weight:700;font-size:13px;color:var(--mut);text-transform:uppercase;letter-spacing:.03em;border-bottom:1px solid var(--line)}
 .stk .dot{display:inline-block;width:11px;height:11px;border-radius:50%;margin-right:9px;vertical-align:-1px;background:#b8c2cb}
 .stk .dot.g{background:#2f9e5b}.stk .dot.y{background:#d4a017}.stk .dot.r{background:#c0392b}
 .stk .sn{font-size:12px;color:var(--mut);margin:8px 0 0}
@@ -204,7 +205,6 @@ svg text{fill:var(--mut);font-size:11px;font-family:inherit}
 <body>
 <header id="hub-global-header"><div class="hub-nav-inner"><a class="hub-brand" href="../"><img class="hub-logo" src="../assets/logo.png" alt="" width="36" height="36"> <span class="hub-brand-name">Dividenden-Rechner <span>Aktien-Hub</span></span></a><nav class="hub-links" aria-label="Hauptmenü"><a href="../">Rechner</a><a href="../aktien-hub/" aria-current="page">Aktien</a><a href="../depot/">Depot</a><a href="../news/">News</a><a href="../earnings/">Earnings</a><a href="../screener/">Screener</a><a href="../einfuehrung/">Einführung</a><a href="../grundlagen/">Grundlagen</a><a href="../fortgeschrittene/">Fortgeschrittene</a></nav></div></header>
 <script src="../assets/navigation.js"></script>
-<script src="../assets/fmpcount.js"></script>
 <script src="../assets/logos.js"></script>
 <main>
 <div class="top">
@@ -224,7 +224,7 @@ svg text{fill:var(--mut);font-size:11px;font-family:inherit}
 <section style="max-width:1080px;margin:36px auto 0;padding:14px 16px 40px;border-top:1px solid #dfe5ea;color:#14202b;font-size:14px;line-height:1.6">
 <h2 style="font-size:17px;margin:0 0 8px">So nutzt du den Aktien-Hub</h2>
 <p>Gib oben den Namen oder das Kürzel einer Aktie ein, zum Beispiel Coca-Cola oder SAP. Mit ＋ legst du sie in deine Watchlist; zu den Aktien dort zeigen dir die  passende Nachrichten. Im Hub siehst du zu jedem Unternehmen Kennzahlen, Dividendenverlauf, Umsatz, Gewinn und Free Cashflow der letzten Jahre sowie Bewertungs- und Analystendaten. Daraus lassen sich Kennzahlen wie <a href="../grundlagen/dividendenrendite/" style="color:#1a7a45">Dividendenrendite</a> und <a href="../grundlagen/ausschuettungsquote/" style="color:#1a7a45">Ausschüttungsquote</a> einordnen.</p>
-<p>Die Daten stammen von Financial Modeling Prep. Die Abrufe laufen über einen Server dieser Seite, du musst nichts eingeben. Die Auswahl hängt vom Datenpaket ab: überwiegend US-amerikanische Aktien, deutsche und andere europäische Titel sind nicht in jedem Fall verfügbar. Wenn du einen eigenen API-Key hast, kannst du ihn oben eintragen, er wird nur in deinem Browser gespeichert. Alle Angaben ohne Gewähr, keine Anlageberatung.</p>
+<p>Die Kennzahlen stammen aus den Jahresberichten, die die Unternehmen bei der US-Börsenaufsicht SEC einreichen, und beziehen sich auf das letzte abgeschlossene Geschäftsjahr. Der Kurs ist der Schlusskurs des letzten Handelstags an Xetra, Tradegate oder der Börse Frankfurt (Deutsche Börse, verzögert). Beträge werden mit den Referenzkursen der Europäischen Zentralbank umgerechnet. Abgedeckt sind rund 500 Aktien, vor allem aus dem S&amp;P 500 und große Auslandswerte mit US-Berichten. Alle Angaben ohne Gewähr, keine Anlageberatung.</p>
 <p style="font-size:13px"><a href="../impressum/" style="color:#5d6b78">Impressum</a> · <a href="../datenschutz/" style="color:#5d6b78">Datenschutz</a></p>
 </section>
 <script>
@@ -266,25 +266,40 @@ function secLoad(){return SECP||(SECP=fetch("../data/sec/fundamentals.json?v="+M
 let KZP=null;
 function kzLoad(){return KZP||(KZP=fetch("../data/kennzahlen.json?v="+Math.floor(Date.now()/36e5)).then(r=>r.ok?r.json():null).catch(()=>null))}
 /* Eigene Kennzahlen: Schlusskurs (Deutsche Börse, verzögert) + SEC-Jahreszahlen + EZB-Kurse; Tabelle im Stil des Steckbriefs */
-function kzTabelle(K,stand){
+function kzTabelle(K){
   if(!K)return "";
-  const pc=(v,d=1)=>v==null?"–":num(v,d)+" %",x=(v,d=1)=>v==null?"–":num(v,d);
-  const z=[["Kurs (Schluss)",num(K.kurs_eur)+" €"+(K.veraenderung!=null?` <span class="${K.veraenderung>=0?"pos":"neg"}">${K.veraenderung>0?"+":""}${num(K.veraenderung)} %</span>`:""),`${esc(K.boerse||"Xetra")}, Handelstag ${new Date(K.datum).toLocaleDateString("de-DE")}`],
-    ["Dividendenrendite",pc(K.rendite,2),`Dividende ${x(K.dividende,2)} ${esc(K.waehrung)} je Aktie (Geschäftsjahr ${esc(K.gj)})${K.dividende_berechnet?", nachgerechnet":""}`],
-    ["KGV",x(K.kgv),"Kurs / Gewinn je Aktie des letzten Geschäftsjahres"],
-    ["KBV",x(K.kbv,2),"Börsenwert / Eigenkapital"],
-    ["Ausschüttungsquote",pc(K.ausschuettung,0),"Dividende / Gewinn je Aktie"],
-    ["FCF-Rendite",pc(K.fcf_rendite,2),"Freier Cashflow / Börsenwert"],
-    ["Dividendenwachstum",`${pc(K.div_wachstum_5j)} / ${pc(K.div_wachstum_10j)}`,"pro Jahr über 5 / 10 Jahre"],
-    ["Börsenwert",K.boersenwert_eur?big(K.boersenwert_eur)+" €":"–","Kurs × verwässerte Aktienzahl (Näherung)"]];
-  return `<div class="stk"><h3>Kennzahlen</h3><table><tbody>${z.map(r=>`<tr><td class="k">${r[0]}</td><td class="v">${r[1]}</td><td class="d">${r[2]}</td></tr>`).join("")}</tbody></table><p class="sn">Kurs: Deutsche Börse, 15 Minuten verzögert, Schluss des letzten Handelstags. Kennzahlen aus dem letzten SEC-Jahresbericht, Kurs mit dem EZB-Referenzkurs umgerechnet. Keine Anlageberatung.</p></div>`;
+  const pc=(v,d=1)=>v==null?"–":num(v,d)+" %",x=(v,d=1)=>v==null?"–":num(v,d),xx=(v,d=1)=>v==null?"–":num(v,d)+"×";
+  const verlust=K.eps!=null&&K.eps<=0;
+  const kgv=K.kgv!=null?x(K.kgv):verlust?'<span class="neg">negativ</span>':"–";
+  const reit=K.sektor==="Real Estate";
+  const B=[
+   ["Bewertung",[["KGV",kgv,verlust?"Verlust im letzten Geschäftsjahr, KGV nicht sinnvoll":"Kurs / Gewinn je Aktie"],["KBV",x(K.kbv,2),"Börsenwert / Eigenkapital"],["KUV",x(K.kuv,2),"Börsenwert / Umsatz"],
+     ["Kurs/Cashflow",x(K.kcv),"Börsenwert / operativer Cashflow"],["Kurs/freier Cashflow",x(K.kfcf),"Börsenwert / freier Cashflow"],["EV/EBITDA",x(K.ev_ebitda),"Unternehmenswert / EBITDA"],
+     ["EV/Umsatz",x(K.ev_umsatz,2),"Unternehmenswert / Umsatz"],["PEG",x(K.peg,2),"KGV / Gewinnwachstum je Aktie (5 J.)"],["FCF-Rendite",pc(K.fcf_rendite,2),"Freier Cashflow / Börsenwert"]]],
+   ["Dividende",[["Dividendenrendite",pc(K.rendite,2),`Dividende ${x(K.dividende,2)} ${esc(K.waehrung)} je Aktie${K.dividende_berechnet?" (nachgerechnet)":""}`],
+     ["Ausschüttungsquote",verlust&&K.dividende?'<span class="neg">über Gewinn</span>':pc(K.ausschuettung,0),"Dividende / Gewinn je Aktie"],["Ausschüttung / freier Cashflow",pc(K.fcf_ausschuettung,0),"Gezahlte Dividenden / freier Cashflow"],
+     ["Dividendenwachstum",`${pc(K.div_wachstum_1j)} / ${pc(K.div_wachstum_5j)} / ${pc(K.div_wachstum_10j)}`,"pro Jahr über 1 / 5 / 10 Jahre"],
+     ["Erhöhungen in Folge",K.dividendenserie==null?"–":K.dividendenserie>=99?"9+ Jahre":K.dividendenserie+" Jahre","innerhalb der letzten zehn Jahre"]]],
+   ["Profitabilität",[["Bruttomarge",pc(K.bruttomarge),"Bruttogewinn / Umsatz"],["Operative Marge",pc(K.operative_marge),"Operatives Ergebnis / Umsatz"+(K.ebit_berechnet?" (nachgerechnet)":"")],
+     ["EBITDA-Marge",pc(K.ebitda_marge),"EBITDA / Umsatz"],["Nettomarge",pc(K.nettomarge),"Nettogewinn / Umsatz"],["Eigenkapitalrendite (ROE)",pc(K.roe),"Nettogewinn / Eigenkapital"],
+     ["ROCE",pc(K.roce),"Operatives Ergebnis / (Bilanzsumme − kurzfristige Verbindlichkeiten)"],["ROIC",pc(K.roic),"Operatives Ergebnis nach 21 % Steuern / (Schulden + Eigenkapital)"]]],
+   ["Bilanz",[["Nettoschulden/EBITDA",K.nettoschulden_ebitda!=null&&K.nettoschulden_ebitda<0?"Netto-Cash":xx(K.nettoschulden_ebitda),"In wie vielen Jahren das EBITDA die Nettoschulden tilgen würde"],
+     ["Zinsdeckung",xx(K.zinsdeckung),"Operatives Ergebnis / Zinsaufwand"],["Schulden/Eigenkapital",x(K.schulden_ek,2),"Langfristige Schulden / Eigenkapital"],
+     ["Current Ratio",x(K.current_ratio,2),"Umlaufvermögen / kurzfristige Verbindlichkeiten"]]],
+   ["Wachstum",[["Umsatz",`${pc(K.umsatz_wachstum)} / ${pc(K.umsatz_wachstum_5j)}`,"letztes Jahr / pro Jahr über 5 Jahre"],["Gewinn",`${pc(K.gewinn_wachstum)} / ${pc(K.gewinn_wachstum_5j)}`,"letztes Jahr / pro Jahr über 5 Jahre"],
+     ["Gewinn je Aktie",pc(K.eps_wachstum),"letztes Jahr"],["Freier Cashflow",pc(K.fcf_wachstum),"letztes Jahr"]]],
+   ["Qualität",[["Piotroski-Score",K.piotroski==null?"–":K.piotroski+" von 9","Neun Prüfungen zu Gewinn, Cashflow, Schulden und Effizienz; ab 7 gilt als stark"],
+     ["Altman-Z",x(K.altman_z,2),"Insolvenzrisiko-Kennzahl; über 3 gilt als sicher, unter 1,8 als gefährdet (nicht für Banken)"]]]];
+  if(reit)B.push(["REIT",[["FFO je Aktie",x(K.ffo_je_aktie,2)+" "+esc(K.waehrung),"Nettogewinn plus Abschreibungen je Aktie (Näherung)"],["Kurs/FFO",x(K.kurs_ffo),"Bei REITs aussagekräftiger als das KGV"],["FFO-Ausschüttungsquote",pc(K.ffo_ausschuettung,0),"Gezahlte Dividenden / FFO"]]]);
+  const zeilen=B.map(([t,R])=>`<tr class="kzg"><td colspan="3">${t}</td></tr>`+R.map(r=>`<tr><td class="k">${r[0]}</td><td class="v">${r[1]}</td><td class="d">${r[2]}</td></tr>`).join("")).join("");
+  return `<div class="stk kz"><h3>Kennzahlen</h3><table><tbody>${zeilen}</tbody></table><p class="sn">Kurs: Schluss des letzten Handelstags (${esc(K.boerse||"Xetra")}, ${new Date(K.datum).toLocaleDateString("de-DE")}), Deutsche Börse, 15 Minuten verzögert. Kennzahlen aus dem Jahresbericht ${esc(K.gj)} bei der US-Börsenaufsicht SEC, Kurs mit dem EZB-Referenzkurs umgerechnet. Keine Anlageberatung.</p></div>`;
 }
 function secFirma(S,sym){if(!S||!S.firmen)return null;const k=String(sym).toUpperCase();return S.firmen[k]||S.firmen[k.replace(/\./g,"-")]||null}
 /* Geschäftsjahr wie bei FMP: endet es im Januar oder in der ersten Februarwoche, zählt es zum Vorjahr (Händler wie Home Depot) */
 function secJahr(end){const d=new Date(end),m=d.getUTCMonth();return String(d.getUTCFullYear()-((m===0||(m===1&&d.getUTCDate()<=7))?1:0))}
 function secReihe(f,k){const o={};(f.k[k]||[]).forEach(([e,v])=>o[secJahr(e)]=v);return o}
 function secDaten(f){
-  const R=k=>secReihe(f,k),gp=R("bruttogewinn"),opi=R("operatives_ergebnis"),zi=R("zinsaufwand"),stz=R("steuern"),abs_=R("abschreibungen"),rev=R("umsatz"),ni=R("gewinn"),eps=R("eps_verw"),epb=R("eps_ber"),sh=R("aktien_verw"),ocf=R("operativer_cf"),cx=R("capex"),dv=R("dividenden_gezahlt"),bb=R("aktienrueckkauf"),debt=R("schulden_lang"),cash=R("liquide_mittel"),eq=R("eigenkapital"),dps=R("dividende_je_aktie"),dpb=R("dividende_je_aktie_ber");
+  const R=k=>secReihe(f,k),gp=R("bruttogewinn"),opi=R("operatives_ergebnis"),zi=R("zinsaufwand"),stz=R("steuern"),abs_=R("abschreibungen"),skz=R("schulden_kurz"),rev=R("umsatz"),ni=R("gewinn"),eps=R("eps_verw"),epb=R("eps_ber"),sh=R("aktien_verw"),ocf=R("operativer_cf"),cx=R("capex"),dv=R("dividenden_gezahlt"),bb=R("aktienrueckkauf"),debt=R("schulden_lang"),cash=R("liquide_mittel"),eq=R("eigenkapital"),dps=R("dividende_je_aktie"),dpb=R("dividende_je_aktie_ber");
   const yrs=[...new Set([...Object.keys(rev),...Object.keys(ni),...Object.keys(ocf)])].sort();
   const neg=v=>v==null?undefined:-Math.abs(v),def=v=>v==null?undefined:v;
   /* Operatives Ergebnis: gemeldet oder näherungsweise Gewinn + Steuern + Zinsen */
@@ -294,7 +309,7 @@ function secDaten(f){
     incomeTaxExpense:def(stz[y]),depreciationAndAmortization:abs_[y]!=null?Math.abs(abs_[y]):undefined,
     ebitda:ebit(y)!=null&&abs_[y]!=null?ebit(y)+Math.abs(abs_[y]):undefined}));
   const cf=yrs.map(y=>({y,depreciationAndAmortization:abs_[y]!=null?Math.abs(abs_[y]):undefined,operatingCashFlow:def(ocf[y]),capitalExpenditure:neg(cx[y]),freeCashFlow:ocf[y]!=null&&cx[y]!=null?ocf[y]-Math.abs(cx[y]):undefined,commonDividendsPaid:neg(dv[y]),commonStockRepurchased:neg(bb[y])}));
-  const bs=yrs.map(y=>({y,longTermDebt:def(debt[y]),cashAndCashEquivalents:def(cash[y]),totalStockholdersEquity:def(eq[y])}));
+  const bs=yrs.map(y=>({y,longTermDebt:debt[y]!=null||skz[y]!=null?(debt[y]||0)+(skz[y]||0):undefined,cashAndCashEquivalents:def(cash[y]),totalStockholdersEquity:def(eq[y])}));
   const dy=Object.keys({...dps,...dpb}).sort().slice(-10).map(y=>({y,v:dps[y]??dpb[y],ber:dps[y]==null}));
   return {inc,cf,bs,dy,cur:f.w,gj:f.gj};
 }
@@ -518,7 +533,7 @@ function steckbrief(sym,p,r,m,inc,cf){
   const ec=n>=2?cagr(e0,e1,n):null;
   const P=(v,d=1)=>v==null?"–":num(v*100,d)+" %",X=(v)=>v==null?"–":num(v,1)+"×";
   const rows=[];
-  rows.push(["Bewertung","g0","wird geladen",[pe!=null&&pe>0?"KGV "+num(pe,1):null,pb!=null&&pb>0?"KBV "+num(pb,1):null,ev!=null&&ev>0?"EV/EBITDA "+num(ev,1):null].filter(Boolean).join(" · ")||"keine Daten","bew"]);
+  rows.push(["Bewertung","g0",/key/.test(location.hash)?"wird geladen":"",[pe!=null&&pe>0?"KGV "+num(pe,1):null,pb!=null&&pb>0?"KBV "+num(pb,1):null,ev!=null&&ev>0?"EV/EBITDA "+num(ev,1):null].filter(Boolean).join(" · ")||"keine Daten","bew"]);
   let dc,dg,dv;
   if(!(dyl>0)){dg="";dv="Keine Dividende";dc="–"}
   else{const cov=fy!=null?fy/dyl:null;dg=cov==null?"":cov>=1.5?"g":cov>=1?"y":"r";dv=cov==null?"k. A.":cov>=1.5?"Gedeckt":cov>=1?"Knapp":"Nicht gedeckt";dc=[ "Rendite "+P(dyl),po!=null?"Ausschüttung "+P(po,0):null,fy!=null?"FCF-Rendite "+P(fy):null].filter(Boolean).join(" · ")}
@@ -551,7 +566,12 @@ async function openStock(sym){
   names.forEach((n,i)=>d[n]=res[i].status==="fulfilled"?res[i].value:null);
   if(!d.profile&&!d.quote&&!SD){msg.className="err";msg.textContent=`Keine Daten für ${sym}. ${res[0].reason?.message||""}`;return}
   const p={...one(d.profile)};if(SF&&!p.companyName)p.companyName=SF.n;
-  const q=one(d.quote),r=one(d["ratios-ttm"]),m=one(d["key-metrics-ttm"]),dcf=one(d["discounted-cash-flow"]),pt=one(d["price-target-consensus"]);
+  if(KZ){if(!p.sector&&KZ.sektor)p.sector=KZ.sektor;if(!p.exchange&&KZ.boerse)p.exchange=KZ.boerse;if(!p.marketCap&&KZ.boersenwert_eur)p.marketCap=KZ.boersenwert_eur}
+  /* Eigene Kennzahlen in die Felder, die Steckbrief und Bewertung erwarten; FMP-Werte gehen vor, wenn vorhanden */
+  const kzR=KZ?{priceToEarningsRatioTTM:KZ.kgv,priceToBookRatioTTM:KZ.kbv,dividendYieldTTM:KZ.rendite!=null?KZ.rendite/100:null,dividendPayoutRatioTTM:KZ.ausschuettung!=null?KZ.ausschuettung/100:null,operatingProfitMarginTTM:KZ.operative_marge!=null?KZ.operative_marge/100:null,interestCoverageRatioTTM:KZ.zinsdeckung}:{};
+  const kzM=KZ?{evToEBITDATTM:KZ.ev_ebitda,freeCashFlowYieldTTM:KZ.fcf_rendite!=null?KZ.fcf_rendite/100:null,returnOnInvestedCapitalTTM:KZ.roic!=null?KZ.roic/100:null,returnOnEquityTTM:KZ.roe!=null?KZ.roe/100:null,netDebtToEBITDATTM:KZ.nettoschulden_ebitda}:{};
+  const ohneNull=o=>Object.fromEntries(Object.entries(o||{}).filter(([k,v])=>v!=null));
+  const q=one(d.quote),r={...ohneNull(kzR),...ohneNull(one(d["ratios-ttm"]))},m={...ohneNull(kzM),...ohneNull(one(d["key-metrics-ttm"]))},dcf=one(d["discounted-cash-flow"]),pt=one(d["price-target-consensus"]);
   const yr=x=>x.fiscalYear||x.calendarYear||String(x.date).slice(0,4);
   const incF=(Array.isArray(d.income)?d.income:[]).map(x=>({y:yr(x),...x})).sort((a,b)=>a.y-b.y);
   const cfF=(Array.isArray(d.cash)?d.cash:[]).map(x=>({y:yr(x),...x})).sort((a,b)=>a.y-b.y);
@@ -581,7 +601,7 @@ async function openStock(sym){
   hub.innerHTML=`
   <div class="head">${img(sym,p.website,p.companyName)}<div><div class="nm"><h1>${esc(p.companyName||sym)}</h1><button class="wlh" id="wlb" data-wl="${esc(sym)}" data-n="${esc(p.companyName||sym)}">${wlHas(sym)?"★ Watchlist":"☆ Watchlist"}</button><button class="igh" id="sb" title="Instagram-Story erstellen" aria-label="Instagram-Story erstellen"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r=".6" fill="currentColor"/></svg></button></div><p>${esc(sym)} · ${esc(p.exchange||"")} · ${esc(p.sector||"")}${p.industry?" · "+esc(p.industry):""} · Börsenwert ${big(first(q,"marketCap")??p.marketCap)}</p></div>
   <div class="price">${num(price)} ${esc(p.currency||"")}<small class="${sg(chg)}">${chg==null?"":(chg>0?"+":"")+num(chg)+" % heute"}</small></div></div>
-  ${KC.html}
+  ${pr.length>1?KC.html:""}
   ${kzTabelle(KZ)}
   ${steckbrief(sym,p,r,m,inc,cf)}
   <div class="grid">
@@ -597,9 +617,10 @@ async function openStock(sym){
   <div id="nw"></div>
   ${p.description?`<p class="desc">${esc(p.description)}</p>`:""}
   ${p.website?`<p class="desc"><a href="${esc(p.website)}" target="_blank" rel="noopener">${esc(p.website)}</a></p>`:""}`;
-  $("start").hidden=true;hub.hidden=false;msg.textContent="";$("sb").onclick=()=>story(LAST);try{KC.init()}catch(e){console.error(e)}
-  try{initExplorer(sym,p,cur)}catch(e){console.error(e)}
-  try{initValuation(sym,{p,price,r,m,fair,pt,tgt,inc,pts,cur}).catch(e=>console.error(e))}catch(e){console.error(e)}
+  $("start").hidden=true;hub.hidden=false;msg.textContent="";$("sb").onclick=()=>story(LAST);try{if(pr.length>1)KC.init()}catch(e){console.error(e)}
+  const mitFMP=/key/.test(location.hash);
+  if(mitFMP)try{initExplorer(sym,p,cur)}catch(e){console.error(e)}
+  if(mitFMP)try{initValuation(sym,{p,price,r,m,fair,pt,tgt,inc,pts,cur}).catch(e=>console.error(e))}catch(e){console.error(e)}
   try{initFinance(sym,p,cur,inc,cf,SD)}catch(e){console.error(e)}
   try{initReports(sym,p)}catch(e){console.error(e)}
   try{initNews(sym,p)}catch(e){console.error(e)}
@@ -725,7 +746,7 @@ async function initFinance(sym,p,cur,inc,cf,SD){
   const have=S.filter(s=>s.v.some(v=>v!=null));
   let on=new Set(["ni","fcf","cash","debt"].filter(k=>have.some(s=>s.k===k)));let mode="line",sy=years[years.length-1];
   box.className="fin";
-  box.innerHTML=`<h3>Finanzen im Überblick</h3><p class="fsub">Jahreswerte in ${esc(cur||"Berichtswährung")}. Quelle: ${SD?(fmpDa||inc.some(x=>x.grossProfit!=null)?"SEC-Jahresberichte, ergänzt um FMP":"SEC-Jahresberichte"+(fmpDa?"":" (Schulden: nur langfristige)")):"FMP"}.</p>
+  box.innerHTML=`<h3>Finanzen im Überblick</h3><p class="fsub">Jahreswerte in ${esc(cur||"Berichtswährung")}. Quelle: ${SD?"Jahresberichte bei der SEC":"FMP"}.</p>
   <div class="fcard"><div class="fctl"><b id="fst">Gewinnfluss</b><span class="ftoggle"><button type="button" data-f="gw" aria-pressed="true">Gewinn</button><button type="button" data-f="cf" aria-pressed="false">Cashflow</button></span><select id="fsy" aria-label="Jahr">${years.slice().reverse().map(y=>`<option>${y}</option>`).join("")}</select></div><div class="fscroll" id="fsk"></div><p class="fnote" id="fsn">Vom Umsatz bis zum Nettogewinn. Die Breite der Bänder ist proportional zum Betrag.</p></div>
   <div class="fcard"><div class="fctl"><b>Kennzahlen übereinander legen</b><button type="button" data-m="line" aria-pressed="true">Linien</button><button type="button" data-m="bar" aria-pressed="false">Balken</button></div><div class="fchips" id="fch"></div><div class="fscroll fit" id="fcm"></div><p class="fnote" id="fmn"></p></div>
   ${debtCard()}
@@ -853,7 +874,7 @@ function initNews(sym,p){
     let j=null;
     try{const c=JSON.parse(localStorage.getItem(ck)||"null");if(c&&Date.now()-c.t<36e5)j=c.j}catch(e){}
     if(!j){try{const r=await fetch(NEWS_API+"?lang="+l+"&q="+encodeURIComponent(q));j=await r.json().catch(()=>null);if(!r.ok)throw new Error("HTTP "+r.status+(j&&j.error?": "+j.error:""));try{localStorage.setItem(ck,JSON.stringify({t:Date.now(),j}))}catch(e){}}
-      catch(e){out.innerHTML=`News-Dienst gerade nicht erreichbar (${esc(e.message)}). <a href="${gl}" target="_blank" rel="noopener nofollow">Suche bei Google News öffnen</a>`;return}}
+      catch(e){out.innerHTML=`Die Nachrichten sind gerade nicht abrufbar. <a href="${gl}" target="_blank" rel="noopener nofollow">Suche bei Google News öffnen</a>`;return}}
     const it=j.items||[];
     out.innerHTML=it.length?it.map(x=>`<a class="nwi" href="${esc(x.link)}" target="_blank" rel="noopener nofollow"><b>${esc(x.title)}</b><span>${esc(x.source||"")}${x.source&&x.date?" · ":""}${esc(ago(x.date))}</span></a>`).join("")+`<a class="nwm" href="${gl}" target="_blank" rel="noopener nofollow">Mehr bei Google News</a>`:`Keine Treffer. <a href="${gl}" target="_blank" rel="noopener nofollow">Bei Google News suchen</a>`;
     $("nwsub").textContent="Suche: "+q;

@@ -185,7 +185,7 @@ def main():
             "ffo_usd": U(ffo), "ffo_je_aktie": r2(ffo / aktien, 2) if ffo is not None and aktien else None,
             "kurs_ffo": X(kurs, ffo / aktien if ffo and aktien else None, 1),
             "ffo_ausschuettung": P(abs(dg) if dg else None, ffo, 0) if ffo and ffo > 0 else None,
-            "altman_z": alt, "piotroski": pio, "ebit_berechnet": op_ber,
+            "altman_z": alt, "piotroski": pio, "ebit_berechnet": op_ber, "eps": r2(eps, 2),
         })
         out[t] = o
     json.dump({"stand": tag, "ezb_kurs_vom": fx_tag,
