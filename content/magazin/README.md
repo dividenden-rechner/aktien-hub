@@ -17,10 +17,11 @@ Datei anklicken, dann Stift-Symbol: Zeile `draft: true` löschen und speichern, 
 | 29.10.2026 22:42 | Amazon steigert Umsatz im dritten Quartal auf 201,9 Milliarden Dollar | [79738970_2026-10-29/7757_2242-amazon-q3-2026-zahlen.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/79738970_2026-10-29/7757_2242-amazon-q3-2026-zahlen.md) |
 | 29.10.2026 10:12 | Shell erzielt im dritten Quartal 10,8 Milliarden Dollar Gewinn | [79738970_2026-10-29/8987_1012-shell-q3-2026-ergebnisse.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/79738970_2026-10-29/8987_1012-shell-q3-2026-ergebnisse.md) |
 
-### Online (352)
+### Online (353)
 
 | Datum | Titel | Datei |
 |---|---|---|
+| 11.11.2026 10:15 | RWE verdient nach neun Monaten 43 % mehr und peilt für 2026 das obere Ende der Prognose an | [79738888_2026-11-11/9684_1015-rwe-9m-2026-gewinn-steigt-prognose-oberes-ende.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/79738888_2026-11-11/9684_1015-rwe-9m-2026-gewinn-steigt-prognose-oberes-ende.md) |
 | 11.11.2026 07:50 | Siemens Energy verdreifacht den Quartalsgewinn und peilt für 2030 eine Marge von 20 bis 22 % an | [79738888_2026-11-11/9685_0750-siemens-energy-q4-2026-gewinn-verdreifacht-ziele-2030.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/79738888_2026-11-11/9685_0750-siemens-energy-q4-2026-gewinn-verdreifacht-ziele-2030.md) |
 | 11.11.2026 03:21 | Symrise: Martin Huber folgt im April 2027 auf Finanzchef Olaf Klinger | [79738888_2026-11-11/9678_0321-symrise-martin-huber-neuer-cfo-2027.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/79738888_2026-11-11/9678_0321-symrise-martin-huber-neuer-cfo-2027.md) |
 | 10.11.2026 22:50 | CoreWeave: Umsatz +168 % auf 3,7 Mrd. US-Dollar, doch die Zinsen übersteigen das Betriebsergebnis um mehr als das Vierfache | [79738889_2026-11-10/7775_2250-coreweave-q3-2026-umsatz-backlog-zinsen.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/79738889_2026-11-10/7775_2250-coreweave-q3-2026-umsatz-backlog-zinsen.md) |
