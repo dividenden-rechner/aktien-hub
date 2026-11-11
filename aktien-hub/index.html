@@ -599,7 +599,7 @@ async function openStock(sym){
   try{initReports(sym,p)}catch(e){console.error(e)}
   try{initNews(sym,p)}catch(e){console.error(e)}
   const L={profile:"Profil",quote:"Kurs","ratios-ttm":"Kennzahlen","key-metrics-ttm":"Kennzahlen","discounted-cash-flow":"DCF","price-target-consensus":"Kursziele",income:"Umsatz/Gewinn",cash:"Cashflow",div:"Dividenden",price:"Kursverlauf",grades:"Analysten",est:"Prognosen"};
-  const fails=names.map((n,i)=>res[i].status==="rejected"?{l:L[n],m:res[i].reason.message}:null).filter(Boolean);
+  const fails=names.map((n,i)=>res[i].status==="rejected"?{l:L[n],m:res[i].reason.message}:null).filter(f=>f&&!/Kein API-Key/.test(f.m));
   if(fails.length){
     const lim=fails.filter(f=>/HTTP 429/.test(f.m)),pay=fails.filter(f=>/HTTP 40[23]/.test(f.m)),oth=fails.filter(f=>!lim.includes(f)&&!pay.includes(f));
     const uniq=a=>[...new Set(a.map(f=>f.l))].join(", ");
