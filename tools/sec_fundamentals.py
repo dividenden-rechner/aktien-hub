@@ -52,7 +52,8 @@ SPERRE = re.compile(r"(MinorityInterest|Noncontrolling|Preferred|Subsidiar|PerSh
 K_IFRS = {
     "umsatz": ["Revenue", "RevenueFromContractsWithCustomers"],
     "gewinn": ["ProfitLossAttributableToOwnersOfParent", "ProfitLoss"],
-    "eps_verw": ["DilutedEarningsPerShare", "BasicAndDilutedEarningsPerShare"],
+    "eps_verw": ["DilutedEarningsLossPerShare", "DilutedEarningsPerShare", "BasicAndDilutedEarningsLossPerShare",
+                 "BasicAndDilutedEarningsPerShare"],
     "dividende_je_aktie": [],
     "dividenden_gezahlt": ["DividendsPaidToEquityHoldersOfParentClassifiedAsFinancingActivities",
                            "DividendsPaidClassifiedAsFinancingActivities", "DividendsPaid"],
@@ -122,13 +123,13 @@ def reihe(gaap, art, einheit, tags, waehrung=None):
     return out
 
 
-def ersatz_suchen(gaap, art, einheit, muster, schon, ziel_ende):
+def ersatz_suchen(gaap, art, einheit, muster, schon, ziel_ende, waehrung="USD"):
     """Sucht unter allen Namen der Firma einen, der das Muster trifft und bis ziel_ende reicht."""
     best = None
     for tag in gaap:
         if tag in schon or not re.match(muster, tag) or SPERRE.search(tag):
             continue
-        w = werte_eines_namens(gaap, tag, art, einheit)
+        w = werte_eines_namens(gaap, tag, art, einheit, waehrung)
         if not w or max(w) < ziel_ende:
             continue
         # Bei Schulden lieber den groessten Gesamtwert, sonst den mit der laengsten Reihe
@@ -161,12 +162,16 @@ def main():
         if "_fehler" in cf:
             notizen.append(f"{t}: Abruf fehlgeschlagen ({cf['_fehler']})"); continue
         facts = cf.get("facts") or {}
-        gaap, ifrs, waehrung = facts.get("us-gaap", {}), False, "USD"
-        if not any(g in gaap for g in ("Revenues", "NetIncomeLoss", "RevenueFromContractWithCustomerExcludingAssessedTax")) and facts.get("ifrs-full"):
+        gaap, ifrs = facts.get("us-gaap", {}), False
+        if not any(g in gaap for g in ("Revenues", "NetIncomeLoss", "RevenueFromContractWithCustomerExcludingAssessedTax", "ProfitLoss")) and facts.get("ifrs-full"):
             gaap, ifrs = facts["ifrs-full"], True
-            ums = (gaap.get("Revenue") or gaap.get("ProfitLoss") or {}).get("units", {})
-            cur = sorted((len(v), u) for u, v in ums.items() if re.fullmatch(r"[A-Z]{3}", u))
-            waehrung = cur[-1][1] if cur else "USD"
+        # Berichtswaehrung: die Waehrung mit den meisten Angaben bei Umsatz und Gewinn (USD, EUR, JPY ...)
+        zaehl = {}
+        for g in (K_IFRS["umsatz"] + K_IFRS["gewinn"]) if ifrs else (K["umsatz"][2] + K["gewinn"][2]):
+            for u, v in (gaap.get(g) or {}).get("units", {}).items():
+                if re.fullmatch(r"[A-Z]{3}", u):
+                    zaehl[u] = zaehl.get(u, 0) + len(v)
+        waehrung = max(zaehl, key=zaehl.get) if zaehl else "USD"
         if not gaap:
             notizen.append(f"{t}: keine Finanzdaten (CIK {cik})"); continue
         reihen = {k: reihe(gaap, a, e, (K_IFRS[k] if ifrs else tags), waehrung) for k, (a, e, tags, _) in K.items()}
@@ -177,7 +182,7 @@ def main():
         for k, (a, e, tags, muster) in K.items():
             w = reihen[k]
             if not ifrs and (not w or max(w) < letztes_gj):
-                b = ersatz_suchen(gaap, a, e, muster, set(tags), letztes_gj)
+                b = ersatz_suchen(gaap, a, e, muster, set(tags), letztes_gj, waehrung)
                 if b:
                     for end, v in b[2].items():
                         w.setdefault(end, v)
@@ -192,6 +197,11 @@ def main():
               "std": "IFRS" if ifrs else "US-GAAP", "k": {}}
         if ber:
             fa["k"]["dividende_je_aktie_ber"] = [[e, ber[e][0]] for e in sorted(ber)[-JAHRE:]]
+        # Gewinn je Aktie nachrechnen (Gewinn / verwaesserte Aktien), wo er fehlt
+        gw, eps = reihen["gewinn"], reihen["eps_verw"]
+        eb = {e: round(gw[e][0] / av[e][0], 4) for e in gw if e in av and av[e][0] and e not in eps}
+        if eb:
+            fa["k"]["eps_ber"] = [[e, eb[e]] for e in sorted(eb)[-JAHRE:]]
         for k, w in reihen.items():
             ends = sorted(w)[-JAHRE:]
             if ends:
@@ -215,6 +225,8 @@ def main():
             if not dg or dg[-1][0] < f["gj"] or not dg[-1][1]:
                 return True   # zahlt keine Dividende: keine Luecke
             return any(x in f["k"] and f["k"][x][-1][0] >= f["gj"] for x in ("dividende_je_aktie", "dividende_je_aktie_ber"))
+        if k == "eps_verw":
+            return any(x in f["k"] and f["k"][x][-1][0] >= f["gj"] for x in ("eps_verw", "eps_ber"))
         return k in f["k"] and f["k"][k][-1][0] >= f["gj"]
     voll = [t for t, f in firmen.items() if all(hat(f, k) for k in KERN)]
     ber_n = sum(1 for f in firmen.values() if "dividende_je_aktie_ber" in f["k"] and "dividende_je_aktie" not in f["k"])
