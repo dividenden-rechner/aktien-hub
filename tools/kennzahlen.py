@@ -139,6 +139,10 @@ def main():
         })
         # Margen, EBITDA, Unternehmenswert, Bilanz, Altman-Z und Piotroski (SEC-Bilanz und GuV)
         bg, op, da, zins = g("bruttogewinn"), g("operatives_ergebnis"), g("abschreibungen"), g("zinsaufwand")
+        st = g("steuern")
+        op_ber = False
+        if op is None and gew is not None and st is not None and zins is not None:
+            op, op_ber = gew + st + abs(zins), True   # EBIT naeherungsweise: Gewinn + Steuern + Zinsaufwand
         A, ca, cl, L, inv, re_, sk = g("bilanzsumme"), g("umlaufvermoegen"), g("kurzfr_verbindl"), g("verbindlichkeiten"), g("vorraete"), g("gewinnruecklagen"), g("schulden_kurz")
         ebitda = op + abs(da) if op is not None and da is not None else None
         schulden_ges = (sch or 0) + (sk or 0) if sch is not None or sk is not None else None
@@ -181,7 +185,7 @@ def main():
             "ffo_usd": U(ffo), "ffo_je_aktie": r2(ffo / aktien, 2) if ffo is not None and aktien else None,
             "kurs_ffo": X(kurs, ffo / aktien if ffo and aktien else None, 1),
             "ffo_ausschuettung": P(abs(dg) if dg else None, ffo, 0) if ffo and ffo > 0 else None,
-            "altman_z": alt, "piotroski": pio,
+            "altman_z": alt, "piotroski": pio, "ebit_berechnet": op_ber,
         })
         out[t] = o
     json.dump({"stand": tag, "ezb_kurs_vom": fx_tag,

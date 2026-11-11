@@ -284,11 +284,16 @@ function secFirma(S,sym){if(!S||!S.firmen)return null;const k=String(sym).toUppe
 function secJahr(end){const d=new Date(end),m=d.getUTCMonth();return String(d.getUTCFullYear()-((m===0||(m===1&&d.getUTCDate()<=7))?1:0))}
 function secReihe(f,k){const o={};(f.k[k]||[]).forEach(([e,v])=>o[secJahr(e)]=v);return o}
 function secDaten(f){
-  const R=k=>secReihe(f,k),rev=R("umsatz"),ni=R("gewinn"),eps=R("eps_verw"),epb=R("eps_ber"),sh=R("aktien_verw"),ocf=R("operativer_cf"),cx=R("capex"),dv=R("dividenden_gezahlt"),bb=R("aktienrueckkauf"),debt=R("schulden_lang"),cash=R("liquide_mittel"),eq=R("eigenkapital"),dps=R("dividende_je_aktie"),dpb=R("dividende_je_aktie_ber");
+  const R=k=>secReihe(f,k),gp=R("bruttogewinn"),opi=R("operatives_ergebnis"),zi=R("zinsaufwand"),stz=R("steuern"),abs_=R("abschreibungen"),rev=R("umsatz"),ni=R("gewinn"),eps=R("eps_verw"),epb=R("eps_ber"),sh=R("aktien_verw"),ocf=R("operativer_cf"),cx=R("capex"),dv=R("dividenden_gezahlt"),bb=R("aktienrueckkauf"),debt=R("schulden_lang"),cash=R("liquide_mittel"),eq=R("eigenkapital"),dps=R("dividende_je_aktie"),dpb=R("dividende_je_aktie_ber");
   const yrs=[...new Set([...Object.keys(rev),...Object.keys(ni),...Object.keys(ocf)])].sort();
   const neg=v=>v==null?undefined:-Math.abs(v),def=v=>v==null?undefined:v;
-  const inc=yrs.map(y=>({y,revenue:def(rev[y]),netIncome:def(ni[y]),epsDiluted:def(eps[y]??epb[y]),weightedAverageShsOutDil:def(sh[y]),reportedCurrency:f.w}));
-  const cf=yrs.map(y=>({y,operatingCashFlow:def(ocf[y]),capitalExpenditure:neg(cx[y]),freeCashFlow:ocf[y]!=null&&cx[y]!=null?ocf[y]-Math.abs(cx[y]):undefined,commonDividendsPaid:neg(dv[y]),commonStockRepurchased:neg(bb[y])}));
+  /* Operatives Ergebnis: gemeldet oder näherungsweise Gewinn + Steuern + Zinsen */
+  const ebit=y=>opi[y]??(ni[y]!=null&&stz[y]!=null&&zi[y]!=null?ni[y]+stz[y]+Math.abs(zi[y]):undefined);
+  const inc=yrs.map(y=>({y,revenue:def(rev[y]),netIncome:def(ni[y]),epsDiluted:def(eps[y]??epb[y]),weightedAverageShsOutDil:def(sh[y]),reportedCurrency:f.w,
+    grossProfit:def(gp[y]),costOfRevenue:gp[y]!=null&&rev[y]!=null?rev[y]-gp[y]:undefined,operatingIncome:def(ebit(y)),interestExpense:zi[y]!=null?Math.abs(zi[y]):undefined,
+    incomeTaxExpense:def(stz[y]),depreciationAndAmortization:abs_[y]!=null?Math.abs(abs_[y]):undefined,
+    ebitda:ebit(y)!=null&&abs_[y]!=null?ebit(y)+Math.abs(abs_[y]):undefined}));
+  const cf=yrs.map(y=>({y,depreciationAndAmortization:abs_[y]!=null?Math.abs(abs_[y]):undefined,operatingCashFlow:def(ocf[y]),capitalExpenditure:neg(cx[y]),freeCashFlow:ocf[y]!=null&&cx[y]!=null?ocf[y]-Math.abs(cx[y]):undefined,commonDividendsPaid:neg(dv[y]),commonStockRepurchased:neg(bb[y])}));
   const bs=yrs.map(y=>({y,longTermDebt:def(debt[y]),cashAndCashEquivalents:def(cash[y]),totalStockholdersEquity:def(eq[y])}));
   const dy=Object.keys({...dps,...dpb}).sort().slice(-10).map(y=>({y,v:dps[y]??dpb[y],ber:dps[y]==null}));
   return {inc,cf,bs,dy,cur:f.w,gj:f.gj};
@@ -746,18 +751,18 @@ async function initFinance(sym,p,cur,inc,cf,SD){
   let flow="gw";
   function sankey(){flow==="cf"?cashflow():sankeyP()}
   function sankeyP(){
-    $("fst").textContent="Gewinnfluss";$("fsn").textContent="Vom Umsatz bis zum Nettogewinn. Die Breite der Bänder ist proportional zum Betrag.";
-    const x=I[sy]||{},R=x.revenue,cog=Math.max(x.costOfRevenue||0,0),gp=x.grossProfit!=null?x.grossProfit:(R!=null?R-cog:null),op=x.operatingIncome,ni=x.netIncome,tax=Math.max(x.incomeTaxExpense||0,0),intr=Math.max(x.interestExpense||0,0);
+    $("fst").textContent="Gewinnfluss";$("fsn").textContent="Vom Umsatz bis zum Nettogewinn. Die Breite der Bänder ist proportional zum Betrag."+(I[sy]&&I[sy].grossProfit==null?" Bruttogewinn wird von diesem Unternehmen nicht ausgewiesen.":"");
+    const x=I[sy]||{},hasGP=x.grossProfit!=null,R=x.revenue,cog=hasGP?Math.max(x.costOfRevenue||0,0):0,gp=hasGP?x.grossProfit:R,op=x.operatingIncome,ni=x.netIncome,tax=Math.max(x.incomeTaxExpense||0,0),intr=Math.max(x.interestExpense||0,0);
     const el=$("fsk");if(!(R>0)||gp==null){el.innerHTML='<p class="fnote">Für dieses Jahr fehlen Umsatzdaten.</p>';return}
     const nar=el.clientWidth>0&&el.clientWidth<560;el.classList.toggle("fit",nar);const W=nar?Math.max(300,el.clientWidth):760,Ht=nar?300:330,top=14,gap=12,nw=14,xs=nar?[0,(W-nw)/3,(W-nw)*2/3,W-nw]:[0,215,385,W-190-nw];
     const nodes=[],L=[];const nd=(id,col,v,lab,c)=>{if(v>0){nodes.push({id,col,v,lab,c})}};
-    nd("rev",0,R,"Umsatz","#2563eb");nd("cog",1,cog,"Herstellungskosten","#94a3b8");nd("gp",1,Math.max(gp,0),"Bruttogewinn","#16a34a");
+    nd("rev",0,R,"Umsatz","#2563eb");if(hasGP){nd("cog",1,cog,"Herstellungskosten","#94a3b8");nd("gp",1,Math.max(gp,0),"Bruttogewinn","#16a34a")}
     const opex=Math.max(gp-(op??gp),0);
     if(op!=null&&op>0&&gp>0){nd("opex",2,opex,"Betriebskosten","#94a3b8");nd("op",2,op,"Operatives Ergebnis","#16a34a");
       const intc=Math.min(intr,Math.max(op-tax,0)),oth=op-tax-intc-(ni??0);nd("tax",3,tax,"Steuern","#f59e0b");nd("int",3,intc,"Zinsaufwand","#ef4444");nd("oth",3,Math.abs(oth),oth>=0?"Sonstiges":"Sonstige Erträge","#a78bfa");nd("ni",3,Math.max(ni||0,0),"Nettogewinn","#15803d");}
     const nm=Object.fromEntries(nodes.map(n=>[n.id,n]));
     const lk=(a,b,v)=>{if(nm[a]&&nm[b]&&v>0)L.push({a,b,v,c:nm[b].c})};
-    lk("rev","cog",cog);lk("rev","gp",Math.max(gp,0));lk("gp","opex",opex);lk("gp","op",op>0?op:0);
+    const src=hasGP?"gp":"rev";lk("rev","cog",cog);lk("rev","gp",Math.max(gp,0));lk(src,"opex",opex);lk(src,"op",op>0?op:0);
     if(nm.op){lk("op","tax",tax);lk("op","int",nm.int?.v||0);lk("op","oth",nm.oth?.v||0);lk("op","ni",Math.max(ni||0,0))}
     const sc=(Ht-top*2-70)/R;let svg=`<svg viewBox="0 0 ${W} ${Ht}" role="img" aria-label="Gewinnfluss ${sy}">`;
     for(let c=0;c<4;c++){let yy=top;nodes.filter(n=>n.col===c).forEach(n=>{n.h=Math.max(n.v*sc,2);n.y=yy;n.o=0;n.i=0;yy+=c===3?Math.max(n.h+gap,36):c===0?n.h+gap:n.h+30})}

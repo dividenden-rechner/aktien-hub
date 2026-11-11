@@ -53,6 +53,7 @@ K = {
                        r"^(DepreciationDepletionAndAmortization|DepreciationAndAmortization|DepreciationAmortizationAndAccretionNet)$"),
     "zinsaufwand": ("f", "USD", ["InterestExpense", "InterestExpenseNonoperating", "InterestExpenseDebt"],
                     r"^(InterestExpense|InterestExpenseNonoperating|InterestExpenseDebt)$"),
+    "steuern": ("f", "USD", ["IncomeTaxExpenseBenefit"], r"^IncomeTaxExpenseBenefit$"),
     "bilanzsumme": ("s", "USD", ["Assets"], r"^Assets$"),
     "umlaufvermoegen": ("s", "USD", ["AssetsCurrent"], r"^AssetsCurrent$"),
     "kurzfr_verbindl": ("s", "USD", ["LiabilitiesCurrent"], r"^LiabilitiesCurrent$"),
@@ -86,6 +87,7 @@ K_IFRS = {
     "abschreibungen": ["DepreciationAndAmortisationExpense",
                        "DepreciationAmortisationAndImpairmentLossReversalOfImpairmentLossRecognisedInProfitOrLoss"],
     "zinsaufwand": ["InterestExpense", "FinanceCosts"],
+    "steuern": ["IncomeTaxExpenseContinuingOperations"],
     "bilanzsumme": ["Assets"],
     "umlaufvermoegen": ["CurrentAssets"],
     "kurzfr_verbindl": ["CurrentLiabilities"],
@@ -141,6 +143,17 @@ def werte_eines_namens(gaap, tag, art, einheit, waehrung=None):
         if end not in cand or x.get("filed", "") > cand[end][2]:
             cand[end] = (x["val"], tag, x.get("filed", ""))
     return {e: v[:2] for e, v in cand.items()}
+
+
+def reihe_max(gaap, art, einheit, tags, waehrung=None):
+    """Fuer den Umsatz: je Geschaeftsjahr der groesste Wert ueber alle Namen. Manche Firmen melden unter 'Revenues'
+    nur einen Teilumsatz (z. B. General Mills 2019-2024), der Gesamtumsatz steht dann unter einem anderen Namen."""
+    out = {}
+    for tag in tags:
+        for e, v in werte_eines_namens(gaap, tag, art, einheit, waehrung).items():
+            if e not in out or (v[0] or 0) > (out[e][0] or 0):
+                out[e] = v
+    return out
 
 
 def reihe(gaap, art, einheit, tags, waehrung=None):
@@ -202,7 +215,7 @@ def main():
         waehrung = max(zaehl, key=zaehl.get) if zaehl else "USD"
         if not gaap:
             notizen.append(f"{t}: keine Finanzdaten (CIK {cik})"); continue
-        reihen = {k: reihe(gaap, a, e, (K_IFRS[k] if ifrs else tags), waehrung) for k, (a, e, tags, _) in K.items()}
+        reihen = {k: (reihe_max if k == "umsatz" else reihe)(gaap, a, e, (K_IFRS[k] if ifrs else tags), waehrung) for k, (a, e, tags, _) in K.items()}
         enden = set(reihen["umsatz"]) | set(reihen["gewinn"])
         if not enden:
             notizen.append(f"{t}: keine Jahreswerte"); continue
