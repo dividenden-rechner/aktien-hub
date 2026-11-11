@@ -93,7 +93,9 @@ def main():
     for t, f in sorted(firmen.items()):
         if t in fest:
             out[t] = {"isin": fest[t], "quelle": "fest"}; continue
-        if t in figi:
+        # Auslandsfirmen (Bericht nicht in Dollar): lieber die Heimataktie per Namensabgleich als das US-Zertifikat (ADR)
+        heimat = f.get("w") != "USD"
+        if t in figi and not heimat:
             i = bester(figi[t])
             out[t] = {"isin": i["isin"], "xetra": i["name"], "kuerzel": i["mn"], "quelle": "openfigi"}; continue
         # 2) Namensabgleich fuer den Rest, nur Nicht-US-ISINs (US-Firmen hat OpenFIGI abgedeckt)
@@ -108,6 +110,9 @@ def main():
                 s_ += 0.03
             if best is None or s_ > best[0]:
                 best = (s_, i)
+        if (not best or best[0] < 0.9) and t in figi:
+            i = bester(figi[t])
+            out[t] = {"isin": i["isin"], "xetra": i["name"], "kuerzel": i["mn"], "quelle": "openfigi"}; continue
         if best and best[0] >= 0.9:
             out[t] = {"isin": best[1]["isin"], "xetra": best[1]["name"], "kuerzel": best[1]["mn"], "quelle": "name", "treffer": round(best[0], 2)}
             unsicher.append(f"{t} ({f['n']}) → {best[1]['name']} {best[1]['isin']} ({best[0]:.2f})")

@@ -263,6 +263,22 @@ const one = a => Array.isArray(a)?(a[0]||{}):(a||{});
    (z. B. Bruttogewinn, operatives Ergebnis). Bilanz: FMP zuerst, weil „Schulden gesamt“ dort auch kurzfristige Schulden enthält. */
 let SECP=null;
 function secLoad(){return SECP||(SECP=fetch("../data/sec/fundamentals.json?v="+Math.floor(Date.now()/864e5)).then(r=>r.ok?r.json():null).catch(()=>null))}
+let KZP=null;
+function kzLoad(){return KZP||(KZP=fetch("../data/kennzahlen.json?v="+Math.floor(Date.now()/36e5)).then(r=>r.ok?r.json():null).catch(()=>null))}
+/* Eigene Kennzahlen: Schlusskurs (Deutsche Börse, verzögert) + SEC-Jahreszahlen + EZB-Kurse; Tabelle im Stil des Steckbriefs */
+function kzTabelle(K,stand){
+  if(!K)return "";
+  const pc=(v,d=1)=>v==null?"–":num(v,d)+" %",x=(v,d=1)=>v==null?"–":num(v,d);
+  const z=[["Kurs (Schluss)",num(K.kurs_eur)+" €"+(K.veraenderung!=null?` <span class="${K.veraenderung>=0?"pos":"neg"}">${K.veraenderung>0?"+":""}${num(K.veraenderung)} %</span>`:""),`${esc(K.boerse||"Xetra")}, Handelstag ${new Date(K.datum).toLocaleDateString("de-DE")}`],
+    ["Dividendenrendite",pc(K.rendite,2),`Dividende ${x(K.dividende,2)} ${esc(K.waehrung)} je Aktie (Geschäftsjahr ${esc(K.gj)})${K.dividende_berechnet?", nachgerechnet":""}`],
+    ["KGV",x(K.kgv),"Kurs / Gewinn je Aktie des letzten Geschäftsjahres"],
+    ["KBV",x(K.kbv,2),"Börsenwert / Eigenkapital"],
+    ["Ausschüttungsquote",pc(K.ausschuettung,0),"Dividende / Gewinn je Aktie"],
+    ["FCF-Rendite",pc(K.fcf_rendite,2),"Freier Cashflow / Börsenwert"],
+    ["Dividendenwachstum",`${pc(K.div_wachstum_5j)} / ${pc(K.div_wachstum_10j)}`,"pro Jahr über 5 / 10 Jahre"],
+    ["Börsenwert",K.boersenwert_eur?big(K.boersenwert_eur)+" €":"–","Kurs × verwässerte Aktienzahl (Näherung)"]];
+  return `<div class="stk"><h3>Kennzahlen</h3><table><tbody>${z.map(r=>`<tr><td class="k">${r[0]}</td><td class="v">${r[1]}</td><td class="d">${r[2]}</td></tr>`).join("")}</tbody></table><p class="sn">Kurs: Deutsche Börse, 15 Minuten verzögert, Schluss des letzten Handelstags. Kennzahlen aus dem letzten SEC-Jahresbericht, Kurs mit dem EZB-Referenzkurs umgerechnet. Keine Anlageberatung.</p></div>`;
+}
 function secFirma(S,sym){if(!S||!S.firmen)return null;const k=String(sym).toUpperCase();return S.firmen[k]||S.firmen[k.replace(/\./g,"-")]||null}
 /* Geschäftsjahr wie bei FMP: endet es im Januar oder in der ersten Februarwoche, zählt es zum Vorjahr (Händler wie Home Depot) */
 function secJahr(end){const d=new Date(end),m=d.getUTCMonth();return String(d.getUTCFullYear()-((m===0||(m===1&&d.getUTCDate()<=7))?1:0))}
@@ -516,7 +532,8 @@ function steckbrief(sym,p,r,m,inc,cf){
 async function openStock(sym){
   const msg=$("msg"),hub=$("hub");
   msg.className="";msg.textContent=`Lade ${sym} …`;
-  const SF=secFirma(await secLoad(),sym),SD=SF?secDaten(SF):null;
+  const [S_,KZ_]=await Promise.all([secLoad(),kzLoad()]);
+  const SF=secFirma(S_,sym),SD=SF?secDaten(SF):null,KZ=KZ_&&KZ_.werte?(KZ_.werte[String(sym).toUpperCase()]||KZ_.werte[String(sym).toUpperCase().replace(/\./g,"-")]||null):null;
   try{await api("profile",{symbol:sym})}catch(e){if(/HTTP 40[23]/.test(e.message)&&!SD){msg.className="err";msg.textContent=`${sym} ist im aktuellen FMP-Tarif nicht verfügbar (402). Der Gratis-Tarif deckt meist nur US-Börsen ab, z. B. KO, PEP, JNJ.`;return}}
   const from=new Date(Date.now()-5*365*864e5).toISOString().slice(0,10);
   const names=["profile","quote","ratios-ttm","key-metrics-ttm","discounted-cash-flow","price-target-consensus","income","cash","div","price","grades","est"];
@@ -543,7 +560,10 @@ async function openStock(sym){
   const pr=(Array.isArray(d.price)?d.price:[]).slice().reverse();
   const step=Math.max(1,Math.floor(pr.length/120));
   const pts=pr.filter((_,i)=>i%step===0||i===pr.length-1).map(x=>({d:x.date,v:x.price}));
-  const price=first(q,"price"),chg=q.changePercentage??q.changesPercentage;
+  const fmpPreis=first(q,"price");
+  /* Ohne FMP-Kurs: eigener Schlusskurs in Euro */
+  const price=fmpPreis??(KZ?KZ.kurs_eur:null),chg=fmpPreis!=null?(q.changePercentage??q.changesPercentage):(KZ?KZ.veraenderung:null);
+  if(fmpPreis==null&&KZ)p.currency="EUR";
   const fair=dcf.dcf,tgt=pt.targetConsensus;
   const up=(a)=>price&&a?a/price-1:null;
   const sg=v=>v==null?"":v>=0?"pos":"neg",pc=v=>v==null?"–":(v>0?"+":"")+num(v*100,1)+" %";
@@ -554,6 +574,7 @@ async function openStock(sym){
   <div class="head">${img(sym,p.website,p.companyName)}<div><div class="nm"><h1>${esc(p.companyName||sym)}</h1><button class="wlh" id="wlb" data-wl="${esc(sym)}" data-n="${esc(p.companyName||sym)}">${wlHas(sym)?"★ Watchlist":"☆ Watchlist"}</button><button class="igh" id="sb" title="Instagram-Story erstellen" aria-label="Instagram-Story erstellen"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r=".6" fill="currentColor"/></svg></button></div><p>${esc(sym)} · ${esc(p.exchange||"")} · ${esc(p.sector||"")}${p.industry?" · "+esc(p.industry):""} · Börsenwert ${big(first(q,"marketCap")??p.marketCap)}</p></div>
   <div class="price">${num(price)} ${esc(p.currency||"")}<small class="${sg(chg)}">${chg==null?"":(chg>0?"+":"")+num(chg)+" % heute"}</small></div></div>
   ${KC.html}
+  ${kzTabelle(KZ)}
   ${steckbrief(sym,p,r,m,inc,cf)}
   <div class="grid">
    ${bars("Dividende je Aktie",divNote,divs,"var(--c-gold)",v=>num(v))}

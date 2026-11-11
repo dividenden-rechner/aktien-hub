@@ -190,6 +190,38 @@ def main():
             if a == "s":
                 w = {end: v for end, v in w.items() if end in enden}
             reihen[k] = w
+        # 1) Nur echte Geschaeftsjahre: Jahreswerte, deren Stichtag nicht zum Geschaeftsjahresende passt
+        #    (z. B. ein 12-Monats-Zeitraum bis Juni bei einer Firma mit Jahresende Dezember), fliegen raus
+        md_gj = datetime.date.fromisoformat(letztes_gj)
+        def passt(e):
+            d = datetime.date.fromisoformat(e)
+            return min(abs((d - d.replace(year=d.year, month=md_gj.month, day=min(md_gj.day, 28))).days),
+                       abs((d - d.replace(year=d.year + 1, month=md_gj.month, day=min(md_gj.day, 28))).days),
+                       abs((d - d.replace(year=d.year - 1, month=md_gj.month, day=min(md_gj.day, 28))).days)) <= 10
+        for k in reihen:
+            reihen[k] = {e: v for e, v in reihen[k].items() if passt(e)}
+        enden = {e for e in enden if passt(e)}
+        # 2) Aktiensplits: aeltere Jahreswerte je Aktie stehen in alten Berichten noch unbereinigt. Springt die Aktienzahl
+        #    um einen glatten Faktor und faellt der Wert je Aktie entsprechend, werden alle frueheren Jahre umgerechnet.
+        sh = reihen["aktien_verw"]
+        jahre = sorted(sh)
+        for a, b in reversed(list(zip(jahre, jahre[1:]))):
+            if not sh[a][0] or not sh[b][0]:
+                continue
+            r = sh[b][0] / sh[a][0]
+            f = round(r)
+            if f < 2 or abs(r - f) / f > 0.15:
+                continue
+            je = [x for x in ("dividende_je_aktie", "eps_verw") if a in reihen[x] and b in reihen[x] and reihen[x][b][0]]
+            if not je or not all(0.6 < (reihen[x][a][0] / reihen[x][b][0]) / f < 1.6 for x in je):
+                continue
+            for e in [e for e in jahre if e <= a]:
+                for x in ("dividende_je_aktie", "eps_verw"):
+                    if e in reihen[x]:
+                        reihen[x][e] = (reihen[x][e][0] / f, reihen[x][e][1])
+                if e in sh:
+                    sh[e] = (sh[e][0] * f, sh[e][1])
+            ersatz_log.append(f"{t}: Split 1:{f} zwischen {a[:4]} und {b[:4]} bereinigt")
         # Dividende je Aktie nachrechnen (gezahlte Dividenden / verwaesserte Aktien), wo sie nicht gemeldet wird
         dg, av, dps = reihen["dividenden_gezahlt"], reihen["aktien_verw"], reihen["dividende_je_aktie"]
         # Vorzugsdividenden abziehen, wenn der Name nicht ausdruecklich nur Stammaktien meint (Banken wie Citigroup)
@@ -254,7 +286,7 @@ def main():
         if fehlt:
             luecken.append(f"- {t} ({f['n']}, GJ {f['gj'][:4]}): {', '.join(fehlt)}")
     md += ["", f"## Lücken bei Kernkennzahlen ({len(luecken)})", ""] + luecken
-    md += ["", f"## Ersatz-Namen per Suchmuster ({len(ersatz_log)})", ""] + [f"- {x}" for x in ersatz_log]
+    md += ["", f"## Ersatz-Namen und Split-Bereinigungen ({len(ersatz_log)})", ""] + [f"- {x}" for x in ersatz_log]
     if notizen:
         md += ["", "## Hinweise", ""] + [f"- {x}" for x in notizen]
     open("data/sec-abdeckung.md", "w").write("\n".join(md) + "\n")

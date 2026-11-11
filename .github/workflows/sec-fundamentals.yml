@@ -20,11 +20,13 @@ jobs:
         with:
           python-version: "3.12"
       - run: python3 tools/sec_fundamentals.py
+      - name: Kennzahlen mit den neuen Jahreszahlen neu rechnen
+        run: python3 tools/kennzahlen.py || echo "Kennzahlen übersprungen"
       - name: Ergebnis committen
         run: |
           git config user.name "sec-bot"
           git config user.email "actions@users.noreply.github.com"
-          git add data/sec/fundamentals.json data/sec-abdeckung.md
+          git add data/sec/fundamentals.json data/sec-abdeckung.md data/kennzahlen.json
           if git diff --cached --quiet; then echo "Keine Änderungen"; exit 0; fi
           git commit -m "SEC-Fundamentaldaten aktualisiert"
           for i in 1 2 3; do git pull --rebase -q && git push && break; sleep 5; done
