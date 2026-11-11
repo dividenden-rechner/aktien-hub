@@ -5,7 +5,6 @@ date: 2026-11-10 14:35
 author: "Redaktions-Team Dividenden-Rechner.de"
 author_bio: "Das Redaktions-Team von Dividenden-Rechner.de schreibt über Dividendenaktien, Kennzahlen und Steuerthemen für Privatanleger. Die Rechner und Auswertungen auf der Seite entstehen im eigenen Haus."
 category: Analyse
-aufmacher: ja
 kein_logo: ja
 quelle_url: https://www.bls.gov/news.release/cpi.nr0.htm
 quelle_name: "U.S. Bureau of Labor Statistics, Consumer Price Index – October 2026 (10.11.2026)"
