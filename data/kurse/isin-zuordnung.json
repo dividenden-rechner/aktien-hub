@@ -3135,5 +3135,250 @@
 "kuerzel": "ZOE",
 "quelle": "openfigi"
 },
+"OBDC": {
+"isin": "US69121K1043",
+"xetra": "",
+"kuerzel": "",
+"quelle": "openfigi",
+"bdc": true
+},
+"BXSL": {
+"isin": "US09261X1028",
+"xetra": "",
+"kuerzel": "",
+"quelle": "openfigi",
+"bdc": true
+},
+"FSK": {
+"isin": "US3026352068",
+"xetra": "",
+"kuerzel": "",
+"quelle": "openfigi",
+"bdc": true
+},
+"GBDC": {
+"isin": "US38173M1027",
+"xetra": "",
+"kuerzel": "",
+"quelle": "openfigi",
+"bdc": true
+},
+"HTGC": {
+"isin": "US4270965084",
+"xetra": "",
+"kuerzel": "",
+"quelle": "openfigi",
+"bdc": true
+},
+"TSLX": {
+"isin": "US83012A1097",
+"xetra": "",
+"kuerzel": "",
+"quelle": "openfigi",
+"bdc": true
+},
+"PSEC": {
+"isin": "US74348T1025",
+"xetra": "",
+"kuerzel": "",
+"quelle": "openfigi",
+"bdc": true
+},
+"OCSL": {
+"isin": "US67401P4054",
+"xetra": "",
+"kuerzel": "",
+"quelle": "openfigi",
+"bdc": true
+},
+"CSWC": {
+"isin": "US1405011073",
+"xetra": "CAPITAL STHWEST CORP.DL 1",
+"kuerzel": "SFW",
+"quelle": "openfigi",
+"bdc": true
+},
+"GSBD": {
+"isin": "US38147U1079",
+"xetra": "",
+"kuerzel": "",
+"quelle": "openfigi",
+"bdc": true
+},
+"MFIC": {
+"isin": "US03761U5020",
+"xetra": "",
+"kuerzel": "",
+"quelle": "openfigi",
+"bdc": true
+},
+"TRIN": {
+"isin": "US8964423086",
+"xetra": "",
+"kuerzel": "",
+"quelle": "openfigi",
+"bdc": true
+},
+"NMFC": {
+"isin": "US6475511001",
+"xetra": "",
+"kuerzel": "",
+"quelle": "openfigi",
+"bdc": true
+},
+"BBDC": {
+"isin": "US06759L1035",
+"xetra": "",
+"kuerzel": "",
+"quelle": "openfigi",
+"bdc": true
+},
+"BCSF": {
+"isin": "US05684B1070",
+"xetra": "",
+"kuerzel": "",
+"quelle": "openfigi",
+"bdc": true
+},
+"CGBD": {
+"isin": "US8722801029",
+"xetra": "",
+"kuerzel": "",
+"quelle": "openfigi",
+"bdc": true
+},
+"PFLT": {
+"isin": "US70806A1060",
+"xetra": "",
+"kuerzel": "",
+"quelle": "openfigi",
+"bdc": true
+},
+"SLRC": {
+"isin": "US83413U1007",
+"xetra": "",
+"kuerzel": "",
+"quelle": "openfigi",
+"bdc": true
+},
+"FDUS": {
+"isin": "US3165001070",
+"xetra": "",
+"kuerzel": "",
+"quelle": "openfigi",
+"bdc": true
+},
+"NCDL": {
+"isin": "US67090S1087",
+"xetra": "",
+"kuerzel": "",
+"quelle": "openfigi",
+"bdc": true
+},
+"GAIN": {
+"isin": "US3765461070",
+"xetra": "",
+"kuerzel": "",
+"quelle": "openfigi",
+"bdc": true
+},
+"CCAP": {
+"isin": "US2256551092",
+"xetra": "",
+"kuerzel": "",
+"quelle": "openfigi",
+"bdc": true
+},
+"CION": {
+"isin": "US17259U2042",
+"xetra": "",
+"kuerzel": "",
+"quelle": "openfigi",
+"bdc": true
+},
+"TCPC": {
+"isin": "US09259E1082",
+"xetra": "",
+"kuerzel": "",
+"quelle": "openfigi",
+"bdc": true
+},
+"GLAD": {
+"isin": "US3765358789",
+"xetra": "",
+"kuerzel": "",
+"quelle": "openfigi",
+"bdc": true
+},
+"PNNT": {
+"isin": "US7080621045",
+"xetra": "",
+"kuerzel": "",
+"quelle": "openfigi",
+"bdc": true
+},
+"RWAY": {
+"isin": "US78163D1000",
+"xetra": "",
+"kuerzel": "",
+"quelle": "openfigi",
+"bdc": true
+},
+"SAR": {
+"isin": "US80349A2087",
+"xetra": "",
+"kuerzel": "",
+"quelle": "openfigi",
+"bdc": true
+},
+"SCM": {
+"isin": "US8585681088",
+"xetra": "",
+"kuerzel": "",
+"quelle": "openfigi",
+"bdc": true
+},
+"LIEN": {
+"isin": "US8281741020",
+"xetra": "",
+"kuerzel": "",
+"quelle": "openfigi",
+"bdc": true
+},
+"TPVG": {
+"isin": "US89677Y1001",
+"xetra": "",
+"kuerzel": "",
+"quelle": "openfigi",
+"bdc": true
+},
+"WHF": {
+"isin": "US96524V1061",
+"xetra": "",
+"kuerzel": "",
+"quelle": "openfigi",
+"bdc": true
+},
+"OXSQ": {
+"isin": "US69181V1070",
+"xetra": "",
+"kuerzel": "",
+"quelle": "openfigi",
+"bdc": true
+},
+"GECC": {
+"isin": "US3903207039",
+"xetra": "",
+"kuerzel": "",
+"quelle": "openfigi",
+"bdc": true
+},
+"OFS": {
+"isin": "US67103B1008",
+"xetra": "",
+"kuerzel": "",
+"quelle": "openfigi",
+"bdc": true
+},
 "_stand": "2026-11-11"
 }

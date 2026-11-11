@@ -2,7 +2,7 @@
 
 Spalten der Liste: 153
 Instrumente nach Filter: 2354
-Zugeordnet: **522** von 544. Unsicher (zum Prüfen): 34. Ohne Treffer: 22.
+Zugeordnet: **557** von 544. Unsicher (zum Prüfen): 34. Ohne Treffer: 22.
 
 Korrekturen als {"TICKER": "ISIN"} in data/kurse/isin-fest.json eintragen.
 
