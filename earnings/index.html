@@ -77,7 +77,7 @@ img.ek-logo{background:#fff}
 <li><strong>Dividende:</strong> Die letzte Zahlung im Vergleich zur Zahlung ein Jahr davor und die Summe der letzten zwölf Monate gegen die zwölf Monate davor. So siehst du Erhöhungen und Kürzungen in Prozent.</li>
 <li><strong>Meine Werte:</strong> Der Kalender liest deine Watchlist aus dem Aktien-Hub und die Werte aus deinem Depot, alles nur in deinem Browser.</li>
 </ul>
-<p>Die Daten stammen von Financial Modeling Prep und laufen über einen Server dieser Seite, du musst nichts eingeben. Die Auswahl „Große Unternehmen weltweit“ zeigt alle Firmen ab zehn Milliarden Dollar Börsenwert, auch außerhalb der USA. Bei berichteten Zahlen zeigt ein Etikett, ob Gewinn und Umsatz die Erwartung der Analysten übertroffen, verfehlt oder erfüllt haben (Abweichung ab ein Prozent). Der kleine Balken zeigt das tatsächliche Ergebnis, der dunkle Strich die Erwartung; grün heißt besser, rot schlechter als erwartet. Termine können sich ändern, und Schätzungen sind keine Prognosen der Firma.</p>
+<p>Die Daten stammen von Financial Modeling Prep und Alpha Vantage (Termine, Schätzungen, später die Ergebnisse) und laufen über einen Server dieser Seite, du musst nichts eingeben. Die Auswahl „Große Unternehmen weltweit“ zeigt alle Firmen ab zehn Milliarden Dollar Börsenwert, auch außerhalb der USA. Bei berichteten Zahlen zeigt ein Etikett, ob Gewinn und Umsatz die Erwartung der Analysten übertroffen, verfehlt oder erfüllt haben (Abweichung ab ein Prozent). Der kleine Balken zeigt das tatsächliche Ergebnis, der dunkle Strich die Erwartung; grün heißt besser, rot schlechter als erwartet. Termine können sich ändern, und Schätzungen sind keine Prognosen der Firma.</p>
 <p>Weitere Werkzeuge: <a href="../aktien-hub/">Aktien-Hub</a>, <a href="../depot/">Depot mit Dividendenkalender</a>, <a href="../unternehmensmeldungen/">News-Kalender</a>.</p>
 <p class="note"><strong>Hinweis:</strong> Keine Anlageberatung. Angaben ohne Gewähr.</p>
 </article></main>
@@ -120,7 +120,7 @@ var MINE=mine(),CAL=[],BIG={},sel=null,scope="big",q="",DAYS_BACK=3,DAYS_FWD=11,
 function irDom(sym){var u=irUrl(sym);if(!u)return "";try{return new URL(u).hostname.replace(/^(www|ir|investors?|investor-relations)\./,"")}catch(e){return ""}}
 function logo(sym,name){return window.HubLogos?HubLogos.img("ek-logo",sym,HubLogos.dom(sym)||irDom(sym),name||sym):'<span class="ek-logo">'+esc((name||sym||"?").charAt(0))+"</span>"}
 function key(d){var x=new Date(d);return x.getFullYear()+"-"+("0"+(x.getMonth()+1)).slice(-2)+"-"+("0"+x.getDate()).slice(-2)}
-var NEWS=[];
+var NEWS=[],AVN={};
 var GENERIC={american:1,united:1,general:1,national:1,first:1,global:1,group:1,international:1,financial:1,corporation:1,company:1};
 function nameRe(sym){
   var n=String(nm(sym)||"").replace(/\s*\(.*?\)/g,"").replace(/[.,]/g," ").replace(/\s+(Inc|Corp|Corporation|Co|Company|Group|Holdings?|plc|PLC|Ltd|AG|SE|NV|N\.V|SA|The)\b/g,"").replace(/^The\s+/,"").trim();
@@ -135,7 +135,7 @@ function artFor(sym){
   return null}
 function artIcon(sym){var a=artFor(sym);if(!a)return"";return '<a class="ek-art" href="../news/'+esc(a.slug)+'/" title="Dazu gibt es einen Artikel in den News: '+esc(a.title)+'" aria-label="Artikel in den News: '+esc(a.title)+'"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="5" cy="19" r="2.6"/><path d="M3 9.5v3.2a8.3 8.3 0 0 1 8.3 8.3h3.2A11.5 11.5 0 0 0 3 9.5z"/><path d="M3 3v3.2A14.8 14.8 0 0 1 17.8 21H21A18 18 0 0 0 3 3z"/></svg></a>'}
 var APPN={},IR={};
-function nm(s){return MINE[s]||NAMES[s]||(BIG[s]&&BIG[s].n)||APPN[s]||s}
+function nm(s){return MINE[s]||NAMES[s]||(BIG[s]&&BIG[s].n)||APPN[s]||AVN[s]||s}
 function irUrl(s){var o=IR[s];return o&&o.url?o.url:""}
 var IC_IR='<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20V12M9 20V8M14 20v-5"/><path d="M4 20h10"/><path d="M15 4h5v5M20 4l-7 7"/></svg>',IC_SL='<svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="4" width="18" height="12" rx="1.5"/><path d="M8 20l4-4 4 4"/><path d="M7 12l3-3 3 2 3-4"/></svg>';
 function irLink(s){var o=IR[s]||{},h="";
@@ -190,7 +190,7 @@ function renderList(){
     var ge=done?gr(r.epsActual,r.epsEstimated):null,gv=done?gr(r.revenueActual,r.revenueEstimated):null,vd=verdict(ge,gv);
     var ee=done&&r.epsEstimated!=null?" · Erw. "+num(r.epsEstimated)+" "+gp(ge):"",ev=done&&r.revenueEstimated!=null?" · Erw. "+big(r.revenueEstimated)+" "+gp(gv):"";
     var be=done&&r.epsEstimated!=null?bar(r.epsActual,r.epsEstimated,ge):"",bv=done&&r.revenueEstimated!=null?bar(r.revenueActual,r.revenueEstimated,gv):"";
-    var subp=[];if(r.zeit)subp.push("<b>"+esc(r.zeit)+" Uhr</b>");subp.push(esc(r.was||"Quartalszahlen"));
+    var subp=[];if(r.zeit)subp.push("<b>"+esc(r.zeit)+" Uhr</b>");else if(r.sess)subp.push("<b>"+(r.sess==="vor"?"vor Börse":"nach Börse")+"</b>");subp.push(esc(r.was||"Quartalszahlen"));
     if(!r._k)subp.push(done?"berichtet"+(vd?', <span class="t-'+vd[1]+'">'+vd[0]+"</span>":""):"erwartet");
     var il=irLink(s);
     var sub='<div class="ek-sub2">'+subp.join(" · ")+il+"</div>";
@@ -238,6 +238,14 @@ $("list").onclick=function(e){if(e.target.closest("a"))return;var r=e.target.clo
         if(r.symbol!==it.sym&&r.symbol.split(".")[0]!==it.sym.split(".")[0])return;
         if(Math.abs(Date.parse(r.date)-d0)>4*864e5)return;
         if(it.eps!=null)r.epsActual=it.eps;if(it.revenue!=null)r.revenueActual=it.revenue;r._own=1})})}catch(e6){}
+    try{var avr=await fetch("../data/av-earnings.json",{cache:"no-cache"});if(avr.ok)((await avr.json()).items||[]).forEach(function(it){
+      var d0=Date.parse(it.datum),row=null;
+      CAL.forEach(function(r){if(!row&&(r.symbol===it.sym)&&Math.abs(Date.parse(r.date)-d0)<=4*864e5)row=r});
+      if(!row){if(it.datum<key(f)||it.datum>key(t))return;row={symbol:it.sym,date:it.datum};CAL.push(row)}
+      if(it.eps_est!=null)row.epsEstimated=it.eps_est;if(it.rev_est!=null)row.revenueEstimated=it.rev_est;
+      if(it.eps_act!=null&&row.epsActual==null){row.epsActual=it.eps_act;row._av=1}
+      if(it.rev_act!=null&&row.revenueActual==null)row.revenueActual=it.rev_act;
+      if(it.zeit&&!row.zeit)row.sess=it.zeit;if(it.name&&!NAMES[it.sym])AVN[it.sym]=it.name})}catch(e9){}
     try{var sj=await api("company-screener",{marketCapMoreThan:1e10,isActivelyTrading:"true",limit:1500});(Array.isArray(sj)?sj:[]).forEach(function(x){if(x&&x.symbol)BIG[x.symbol]={n:x.companyName||x.symbol,m:x.marketCap||0}})}catch(e2){}
     if(!Object.keys(BIG).length)scope="mp";
     setScope(scope);

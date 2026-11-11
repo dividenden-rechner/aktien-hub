@@ -162,6 +162,38 @@ def fix_kurz(t):
 
 
 FK_TOK = re.compile(r"^\[\[\s*firma\s*:\s*([A-Za-z0-9.\-]+)\s*(?:\|\s*([a-z0-9\-]+))?\s*\]\]\s*$", re.M)
+
+QT_TOK = re.compile(r"^\[\[\s*quartal\s*:\s*([A-Za-z0-9.\-]+)\s*\]\]\s*$", re.M)
+def _qt_num(v, cur, eps):
+    if v is None: return "–"
+    if eps: return f"{v:.2f}".replace(".", ",") + "\u202f" + ("$" if cur == "USD" else cur)
+    a = abs(v)
+    t = f"{a/1e9:.2f}".replace(".", ",") + "\u202fMrd." if a >= 1e9 else f"{a/1e6:.0f}".replace(".", ",") + "\u202fMio."
+    return t + "\u00a0" + ("$" if cur == "USD" else cur)
+def _qt_dev(act, est):
+    if act is None or not est: return ""
+    g = (act / est - 1) * 100 if est > 0 else None
+    if g is None: return ""
+    return f'<em class="{"up" if g >= 0 else "dn"}">{"+" if g >= 0 else "−"}{abs(g):.1f}'.replace(".", ",") + "\u202f%</em>"
+def _qt_block(m):
+    sym = m.group(1).upper(); it = None
+    try:
+        for x in json.load(open("data/av-earnings.json", encoding="utf-8")).get("items", []):
+            if x.get("sym") == sym and (it is None or x["datum"] > it["datum"]): it = x
+    except Exception: pass
+    if not it or (it.get("eps_est") is None and it.get("rev_est") is None and it.get("eps_act") is None): return ""
+    cur = it.get("cur") or "USD"; done = it.get("eps_act") is not None
+    ds = f'{it["datum"][8:]}.{it["datum"][5:7]}.{it["datum"][:4]}'
+    def col(title, est, act, eps):
+        s = f'<div class="fk-ec"><small>{title}</small>'
+        if done and act is not None: s += f'<b>{_qt_num(act, cur, eps)}</b>{_qt_dev(act, est)}'
+        else: s += f'<b>{_qt_num(est, cur, eps)}</b>'
+        s += f'<span class="fk-es">{"Erwartet: " + _qt_num(est, cur, eps) if done else "Erwartung der Analysten"}</span></div>'
+        return s
+    head = f'<span class="fk-eb {"" if done else "mix"}">{"Berichtet am " if done else "Termin: "}{ds}{"" if done or not it.get("zeit") else (" · vor Börse" if it["zeit"] == "vor" else " · nach Börse")}</span>'
+    note = "Gewinn je Aktie laut Alpha Vantage nach US-GAAP; die Firma selbst nennt oft eine bereinigte Zahl." if done else "Schätzung der Analysten, Stand " + (it.get("est_stand") or it["datum"])[8:] + "." + (it.get("est_stand") or it["datum"])[5:7] + "."
+    return ('\n<div class="fkarte fk-q"><div class="fk-eh">' + head + '</div><div class="fk-eg">' + col("Gewinn je Aktie", it.get("eps_est"), it.get("eps_act"), True)
+            + col("Umsatz", it.get("rev_est"), it.get("rev_act"), False) + f'</div><span class="fk-src">Quelle: Alpha Vantage. {note}</span></div>\n')
 _FK = None
 def _fk_data():
     global _FK
@@ -232,6 +264,7 @@ def md_to_html(md_text, depth):
     md_text = re.sub(r"\{\{logo:([a-z0-9.\-]+)\}\}", _tl, md_text)
     md_text = re.sub(r"<!--\s*PRÜFEN.*?-->\s*", "", md_text, flags=re.S)   # Redaktionshinweise des IR-Agenten nie veröffentlichen
     md_text = fix_kurz(md_text)
+    md_text = QT_TOK.sub(lambda m: "\n\n" + _qt_block(m).strip() + "\n\n", md_text)
     md_text = FK_TOK.sub(lambda m: "\n\n" + _fk_card(m, depth).strip() + "\n\n", md_text)
     md = markdown.Markdown(extensions=["tables", "sane_lists", "admonition", "attr_list", "toc"], extension_configs={"toc": {"permalink": False}})
     h = md.convert(md_text)
