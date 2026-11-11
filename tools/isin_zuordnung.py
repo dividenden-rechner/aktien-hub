@@ -110,7 +110,7 @@ def main():
                 s_ += 0.03
             if best is None or s_ > best[0]:
                 best = (s_, i)
-        if (not best or best[0] < 0.9) and t in figi:
+        if (not best or best[0] < 0.9) and t in figi and not heimat:
             i = bester(figi[t])
             out[t] = {"isin": i["isin"], "xetra": i["name"], "kuerzel": i["mn"], "quelle": "openfigi"}; continue
         if best and best[0] >= 0.9:

@@ -209,10 +209,12 @@ article.wide>:not(.tool):not(.cards){max-width:760px}
 <div class="keybar" id="keybar" hidden><span id="keystate"></span><button type="button" class="ghost" id="keybtn">Eigenen API-Key nutzen</button></div>
 <script>if(/key/.test(location.hash))document.getElementById("keybar").hidden=false</script>
 <div class="mode" role="group" aria-label="Datenquelle wählen">
-<button type="button" id="m-markt" aria-pressed="true">Gesamter Markt</button>
+<button type="button" id="m-eigen" aria-pressed="true" title="Rund 500 Aktien, sofort und ohne Abruflimit">Eigene Daten</button>
+<button type="button" id="m-markt" aria-pressed="false">Gesamter Markt (FMP)</button>
 <button type="button" id="m-liste" aria-pressed="false" title="Funktioniert auch im Gratis-Tarif">Eigene Liste</button>
 </div>
-<p class="note-small" id="marktnote" style="margin:0 0 1rem">Der Screener von FMP liefert vorab alle Aktien, die zu deinen groben Kriterien (Marktkapitalisierung, Kurs, Beta, Dividende, Volumen) passen. Er ist nicht in jedem FMP-Tarif enthalten.</p>
+<p class="note-small" id="eigennote" style="margin:0 0 1rem">Rund 500 Aktien (S&amp;P 500 und große Auslandswerte mit US-Berichten). Kurs: Schluss des letzten Handelstags (Deutsche Börse, verzögert). Kennzahlen aus dem letzten Jahresbericht bei der SEC. Kriterien, für die es keine eigenen Daten gibt, werden übersprungen und unten genannt. Dividendenserien reichen höchstens zehn Jahre zurück; „9+“ heißt, die Dividende stieg in jedem Jahr der Datenreihe.</p>
+<p class="note-small" id="marktnote" hidden style="margin:0 0 1rem">Der Screener von FMP liefert vorab alle Aktien, die zu deinen groben Kriterien (Marktkapitalisierung, Kurs, Beta, Dividende, Volumen) passen. Er ist nicht in jedem FMP-Tarif enthalten.</p>
 <div id="listbox" hidden style="margin-bottom:1rem"><label for="f-list" style="display:block;font-weight:600;font-size:.9rem;margin-bottom:.4rem">Symbole (Komma oder Leerzeichen getrennt, höchstens 300)</label><textarea id="f-list">KO, PEP, JNJ, PG, MCD, O, MSFT, AAPL, XOM, CVX, ABBV, PFE, VZ, T, MMM, IBM, CAT, WMT, HD, LOW, TGT, KMB, CL, GIS, SO, DUK, MO, PM, MDLZ, KHC, MAIN, ARCC, STAG, NNN, WPC</textarea>
 <p class="note-small">Pro Symbol wird zuerst das Profil geladen, danach nur noch für Aktien, die bisher alle Kriterien erfüllen.</p></div>
 <div class="chips" aria-label="Vorlagen"><span class="lbl">Vorlagen:</span><span id="tpls" class="chips" style="margin:0"></span></div>
@@ -455,7 +457,7 @@ article.wide>:not(.tool):not(.cards){max-width:760px}
   var esc = function (s) { return String(s === null || s === undefined ? "" : s).replace(/[&<>"]/g, function (c) { return { "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]; }); };
   var dec = function (v, d) { return v === null || v === undefined || isNaN(v) ? "–" : Number(v).toLocaleString("de-DE", { minimumFractionDigits: d, maximumFractionDigits: d }); };
   var big = function (v) { if (v === null || v === undefined || isNaN(v)) return "–"; var a = Math.abs(v); return a >= 1e12 ? dec(v / 1e12, 2) + " Bio" : a >= 1e9 ? dec(v / 1e9, 2) + " Mrd" : a >= 1e6 ? dec(v / 1e6, 1) + " Mio" : dec(v, 0); };
-  var fmt = function (m, v) { return v === null || v === undefined || isNaN(v) ? "–" : m.u === "pct" ? dec(v, 1) + " %" : m.u === "x" ? dec(v, 2) : m.u === "usd" ? dec(v, 2) : m.u === "big" ? big(v) : m.u === "yrs" ? dec(v, 0) : dec(v, 2); };
+  var fmt = function (m, v) { return v === null || v === undefined || isNaN(v) ? "–" : m.u === "pct" ? dec(v, 1) + " %" : m.u === "x" ? dec(v, 2) : m.u === "usd" ? dec(v, 2) : m.u === "big" ? big(v) : m.u === "yrs" ? (v >= 99 ? "9+" : dec(v, 0)) : dec(v, 2); };
   var parse = function (s) {
     var v = String(s === undefined ? "" : s).trim().replace(/\s/g, ""); if (v === "") return null;
     if (v.indexOf(",") > -1) v = v.replace(/\./g, "").replace(",", "."); else if (/^\d{1,3}(\.\d{3})+$/.test(v)) v = v.replace(/\./g, "");
@@ -491,7 +493,7 @@ article.wide>:not(.tool):not(.cards){max-width:760px}
     return one(j);
   }
 
-  var ST = { mode: "markt", rows: [], crit: [], sort: "mcap", dir: "desc", view: [] };
+  var ST = { mode: "eigen", rows: [], crit: [], sort: "mcap", dir: "desc", view: [] };
   function rowHTML(m, c) {
     c = c || { op: m.dir || "gt", v1: "", v2: "", um: "Mrd" };
     var unit = m.u === "big" ? '<select class="cum" aria-label="Einheit">' + Object.keys(UNITS.big).map(function (k) { return '<option' + (k === c.um ? " selected" : "") + ">" + k + "</option>"; }).join("") + "</select><span class=\"cu2\">USD</span>"
@@ -522,8 +524,8 @@ article.wide>:not(.tool):not(.cards){max-width:760px}
   function status(msg, cls) { var e = $("status"); e.className = "status" + (cls ? " " + cls : ""); e.textContent = msg; }
   function errText(e) {
     var m = String(e && e.message || e);
-    if (/HTTP 402|HTTP 403/.test(m)) return ST.mode === "markt" ? "Der Marktscreener ist im aktuellen FMP-Tarif nicht enthalten (402). Nutze „Eigene Liste“." : "Nicht im Tarif enthalten (402).";
-    if (/HTTP 429/.test(m)) return "Tageslimit des FMP-Tarifs erreicht (429). Bitte später erneut versuchen.";
+    if (/HTTP 402|HTTP 403/.test(m)) return ST.mode === "markt" ? "Der Marktscreener ist derzeit nicht verfügbar. Nutze „Eigene Daten“." : "Diese Daten sind derzeit nicht verfügbar.";
+    if (/HTTP 429/.test(m)) return "Die Zusatzdaten sind heute nicht mehr abrufbar. Nutze „Eigene Daten“ oder versuche es später erneut.";
     if (/leere Antwort/.test(m)) return "Keine Daten gefunden.";
     return "Fehler: " + m;
   }
@@ -531,11 +533,55 @@ article.wide>:not(.tool):not(.cards){max-width:760px}
 
   async function pool(items, fn, n) { var i = 0; var w = async function () { while (i < items.length && !RUN.abort) { var it = items[i++]; await fn(it); } }; var ws = []; for (var k = 0; k < n; k++) ws.push(w()); await Promise.all(ws); }
 
+  /* ---------- Eigene Daten: data/kennzahlen.json (Kurs Deutsche Börse + SEC-Jahreszahlen), ohne Abrufe ---------- */
+  var OWN = { mcap: "boersenwert_usd", price: "kurs_usd", pe: "kgv", pb: "kbv", ps: "kuv", pfcf: "kfcf", pocf: "kcv", fcfyield: "fcf_rendite",
+    earnyield: "gewinnrendite", yield: "rendite", dps: "dividende", payout: "ausschuettung", fcfpayout: "fcf_ausschuettung", divstreak: "dividendenserie",
+    divcagr: "div_wachstum_5j", divg1: "div_wachstum_1j", divg5: "div_wachstum_5j", divpaid: "dividenden_usd", revg: "umsatz_wachstum",
+    revg3: "umsatz_wachstum_3j", revg5: "umsatz_wachstum_5j", epsg: "eps_wachstum", nig: "gewinn_wachstum", nig5: "gewinn_wachstum_5j",
+    fcfg: "fcf_wachstum", nm: "nettomarge", roe: "roe", de: "schulden_ek", debt: "schulden_usd", netdebt: "nettoschulden_usd", cash: "cash_usd",
+    equity: "ek_usd", ocf: "ocf_usd", fcf: "fcf_usd", capex: "capex_usd", capexrev: "capex_umsatz", capexocf: "capex_ocf", revenue: "umsatz_usd",
+    netinc: "gewinn_usd", nav: "nav_je_aktie", pnav: "kbv", ocfpayout: "ocf_ausschuettung" };
+  var KZ = null;
+  async function kzLaden() { if (KZ) return KZ; var r = await fetch("../data/kennzahlen.json?v=" + Math.floor(Date.now() / 36e5)); if (!r.ok) throw new Error("Eigene Daten nicht ladbar"); KZ = await r.json(); return KZ; }
+  function ownRow(sym, K) {
+    var p = { symbol: sym, name: K.name || sym, companyName: K.name || sym, sector: K.sektor || "", industry: "", price: K.kurs_usd, mcap: K.boersenwert_usd, country: "", exchange: K.boerse || "", isEtf: false };
+    return { profile: p, own: K };
+  }
+  async function runEigen(crit) {
+    status("Eigene Daten werden geladen …");
+    var J = await kzLaden(), ind = $("f-ind").value.trim().toLowerCase(), sec = $("f-sector").value;
+    var work = Object.keys(J.werte).map(function (s) { return ownRow(s, J.werte[s]); });
+    var log = ["Eigene Daten: " + work.length], skip = [];
+    work = work.filter(function (D) {
+      if (sec && D.profile.sector !== sec) return false;
+      if (ind) { if (/reit|immobil/.test(ind)) return D.profile.sector === "Real Estate"; return String(D.profile.name).toLowerCase().indexOf(ind) > -1; }
+      return true;
+    });
+    if (sec || ind) log.push("nach Sektor/Branche: " + work.length);
+    crit.forEach(function (c) {
+      var f = OWN[c.id], m = CAT[c.id];
+      if (!f) { skip.push(m.l); return; }
+      var nodata = 0;
+      work = work.filter(function (D) { var v = D.own[f]; if (v === null || v === undefined || isNaN(v)) { nodata++; return false; } return check(v, c); });
+      log.push(m.l + ": " + work.length + (nodata ? " (" + nodata + " ohne Daten)" : ""));
+    });
+    ST.rows = work; ST.crit = crit.filter(function (c) { return OWN[c.id]; });
+    var msg = work.length + " Treffer. Verlauf: " + log.join(" → ") + ". Stand: Kurs vom " + new Date(J.stand).toLocaleDateString("de-DE") + ".";
+    if (skip.length) msg += " Übersprungen, weil es dafür keine eigenen Daten gibt: " + skip.join(", ") + ". Diese Kriterien gehen im Modus „Gesamter Markt (FMP)“.";
+    status(msg, skip.length ? "err" : "ok");
+  }
+
   async function run() {
     if (RUN.busy) return;
     var rc = readCrit();
     if (rc.bad) { status("Bitte für „" + rc.bad + "“ einen Wert eintragen.", "err"); return; }
     var crit = rc.crit;
+    if (ST.mode === "eigen") {
+      RUN.busy = true; $("go").disabled = true;
+      try { await runEigen(crit); } catch (e) { ST.rows = []; status("Eigene Daten sind gerade nicht verfügbar.", "err"); }
+      finally { RUN.busy = false; $("go").disabled = false; render(); }
+      return;
+    }
     RUN.busy = true; RUN.abort = false; RUN.calls = 0; RUN.max = Math.max(1, Math.min(5000, parse($("f-max").value) || 250)); $("go").disabled = true;
     var log = [], warn = [], stopped = false, truncated = 0;
     try {
@@ -609,8 +655,10 @@ article.wide>:not(.tool):not(.cards){max-width:760px}
     { k: "price", l: "Kurs", get: function (D) { return D.profile.price; }, f: function (D) { return dec(D.profile.price, 2); } },
     { k: "mcap", l: "Marktkap.", get: function (D) { return D.profile.mcap; }, f: function (D) { return big(D.profile.mcap); } }];
     var seen = { price: 1, mcap: 1 };
-    ST.crit.forEach(function (c) { if (seen[c.id]) return; seen[c.id] = 1; var m = CAT[c.id]; cols.push({ k: c.id, l: m.l, get: m.get, f: function (D) { return fmt(m, m.get(D)); } }); });
-    if (!seen.yield) cols.splice(5, 0, { k: "yield", l: "Div.-Rendite", get: CAT.yield.get, f: function (D) { return fmt(CAT.yield, CAT.yield.get(D)); } });
+    var getOf = function (m) { return function (D) { return D.own ? (OWN[m.id] ? D.own[OWN[m.id]] : null) : m.get(D); }; };
+    ST.crit.forEach(function (c) { if (seen[c.id]) return; seen[c.id] = 1; var m = CAT[c.id], g = getOf(m); cols.push({ k: c.id, l: m.l, get: g, f: function (D) { return fmt(m, g(D)); } }); });
+    var gy = getOf(CAT.yield);
+    if (!seen.yield) cols.splice(5, 0, { k: "yield", l: "Div.-Rendite", get: gy, f: function (D) { return fmt(CAT.yield, gy(D)); } });
     return cols;
   }
   function render() {
@@ -646,8 +694,8 @@ article.wide>:not(.tool):not(.cards){max-width:760px}
     box.querySelectorAll("[data-del]").forEach(function (b) { b.onclick = function () { var s2 = saved(); delete s2[b.dataset.del]; try { localStorage.setItem("screens", JSON.stringify(s2)); } catch (e) { } renderSaved(); }; });
   }
   function setMode(m) {
-    ST.mode = m; $("m-markt").setAttribute("aria-pressed", String(m === "markt")); $("m-liste").setAttribute("aria-pressed", String(m === "liste"));
-    $("listbox").hidden = m !== "liste"; $("marktnote").hidden = m !== "markt"; $("limitbox").hidden = m !== "markt";
+    ST.mode = m; $("m-eigen").setAttribute("aria-pressed", String(m === "eigen")); $("m-markt").setAttribute("aria-pressed", String(m === "markt")); $("m-liste").setAttribute("aria-pressed", String(m === "liste"));
+    $("listbox").hidden = m !== "liste"; $("marktnote").hidden = m !== "markt"; $("limitbox").hidden = m !== "markt"; $("eigennote").hidden = m !== "eigen";
   }
   function init() {
     if (!$("go")) return;
@@ -656,7 +704,7 @@ article.wide>:not(.tool):not(.cards){max-width:760px}
     sel.onchange = function () { if (sel.value) addCrit(sel.value); sel.value = ""; };
     $("tpls").innerHTML = Object.keys(T).map(function (n) { return '<button type="button" data-t="' + esc(n) + '">' + esc(n) + "</button>"; }).join("");
     $("tpls").querySelectorAll("[data-t]").forEach(function (b) { b.onclick = function () { var t = T[b.dataset.t]; loadSet(t.c, t.ind); }; });
-    $("m-markt").onclick = function () { setMode("markt"); }; $("m-liste").onclick = function () { setMode("liste"); };
+    $("m-eigen").onclick = function () { setMode("eigen"); }; $("m-markt").onclick = function () { setMode("markt"); }; $("m-liste").onclick = function () { setMode("liste"); };
     $("go").onclick = run; $("stop").onclick = function () { RUN.abort = true; };
     $("clear").onclick = function () { $("crits").innerHTML = ""; emptyHint(); $("f-ind").value = ""; };
     $("save").onclick = function () {
@@ -682,7 +730,7 @@ article.wide>:not(.tool):not(.cards){max-width:760px}
       var txt = "﻿" + [ST.cols.map(function (c) { return q(c.l); }).join(";")].concat(ST.view.map(function (D) { return ST.cols.map(function (c) { return q(c.get(D)); }).join(";"); })).join("\r\n");
       var u = URL.createObjectURL(new Blob([txt], { type: "text/csv;charset=utf-8" })), a = document.createElement("a"); a.href = u; a.download = "screener.csv"; document.body.appendChild(a); a.click(); a.remove(); setTimeout(function () { URL.revokeObjectURL(u); }, 2000);
     };
-    setMode("markt"); renderSaved(); emptyHint();
+    setMode("eigen"); renderSaved(); emptyHint();
   }
   if (document.readyState === "loading") document.addEventListener("DOMContentLoaded", init); else init();
 })(typeof window !== "undefined" ? window : globalThis);
