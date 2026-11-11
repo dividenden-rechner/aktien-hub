@@ -607,7 +607,9 @@ async function openStock(sym){
     if(pay.length)h+=`Im FMP-Tarif nicht enthalten (402): ${esc(uniq(pay))}<br>`;
     if(lim.length)h+=`Tageslimit erreicht (429): ${esc(uniq(lim))}<br>`;
     if(oth.length)h+=`Sonstige Fehler: ${esc(oth.map(f=>f.l+": "+f.m).join(" | "))}`;
-    msg.className=oth.length||lim.length?"err":"";msg.innerHTML=h;msg.title=fails.map(f=>f.l+": "+f.m).join("\n");
+    msg.className=oth.length||lim.length?"err":"";msg.innerHTML=h;
+    /* Mit eigenen Daten (SEC, Deutsche Börse) ist ein FMP-Limit kein Fehler mehr: nur ein leiser Hinweis */
+    if(SD&&!oth.length){msg.className="";msg.innerHTML=`<small>Zusatzdaten von FMP heute nicht verfügbar (${lim.length?"Tageslimit":"Tarif"}). Kurs, Kennzahlen und Jahreszahlen kommen aus eigenen Daten.</small>`}msg.title=fails.map(f=>f.l+": "+f.m).join("\n");
   }
   scrollTo(0,0);
 }
