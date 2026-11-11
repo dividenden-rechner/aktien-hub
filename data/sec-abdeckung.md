@@ -1,10 +1,10 @@
 # SEC-Fundamentaldaten: Abdeckung (Stand 2026-11-11)
 
-Firmen mit Daten: **544** von 546. Kernkennzahlen (Umsatz, Gewinn, EPS, Dividende je Aktie, operativer Cashflow) vollständig und aktuell: **509**.
+Firmen mit Daten: **544** von 546. Kernkennzahlen (Umsatz, Gewinn, EPS, Dividende je Aktie, operativer Cashflow) vollständig und aktuell: **507**.
 
 „Aktuell“ heißt: Wert für das letzte Geschäftsjahr der Firma vorhanden. Firmen ohne Dividende zählen bei der Dividende nicht als Lücke.
 
-Nach IFRS (Auslandsfirmen, Beträge in Berichtswährung): 29. Dividende je Aktie nur nachgerechnet (gezahlte Dividenden / Aktien): 55.
+Nach IFRS (Auslandsfirmen, Beträge in Berichtswährung): 29. Dividende je Aktie nur nachgerechnet (gezahlte Dividenden / Aktien): 54.
 
 | Kennzahl | mit Daten | davon aktuell |
 |---|---:|---:|
@@ -21,15 +21,17 @@ Nach IFRS (Auslandsfirmen, Beträge in Berichtswährung): 29. Dividende je Aktie
 | liquide_mittel | 543 (100%) | 542 (100%) |
 | eigenkapital | 543 (100%) | 543 (100%) |
 
-## Lücken bei Kernkennzahlen (35)
+## Lücken bei Kernkennzahlen (37)
 
 - APA (APA CORPORATION, GJ 2025): umsatz
 - ARCC (ARES CAPITAL CORPORATION, GJ 2025): umsatz
 - ARES (ARES MANAGEMENT CORPORATION, GJ 2025): eps_verw
+- BA (THE BOEING COMPANY, GJ 2025): dividende_je_aktie
 - BBVA (BANCO BILBAO VIZCAYA ARGENTARIA, S.A., GJ 2025): umsatz
 - BKR (Baker Hughes Company, GJ 2025): eps_verw, dividende_je_aktie
 - BP (BP PLC, GJ 2025): eps_verw, dividende_je_aktie
 - BRK-B (BERKSHIRE HATHAWAY INC, GJ 2025): eps_verw
+- COHR (Coherent Corp., GJ 2026): dividende_je_aktie
 - DB (DEUTSCHE BANK AKTIENGESELLSCHAFT, GJ 2025): gewinn, eps_verw, operativer_cf
 - DTE (DTE ENERGY CO, GJ 2025): umsatz
 - E (Eni SpA, GJ 2018): umsatz, eps_verw, operativer_cf
