@@ -1,7 +1,7 @@
 # ISIN-Zuordnung (Xetra-Instrumentenliste)
 
 Spalten der Liste: 153
-Instrumente nach Filter: 2351
+Instrumente nach Filter: 2349
 Zugeordnet: **557** von 544. Unsicher (zum Prüfen): 34. Ohne Treffer: 22.
 
 Korrekturen als {"TICKER": "ISIN"} in data/kurse/isin-fest.json eintragen.
