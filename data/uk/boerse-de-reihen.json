@@ -875,6 +875,7 @@ null,
 "RKT.L": {
 "name": "Reckitt Benckiser",
 "isin": "GB00BSZBP530",
+"waehrung": "GBP",
 "umsatz": [
 null,
 null,
@@ -960,6 +961,7 @@ null
 "TSCO.L": {
 "name": "Tesco",
 "isin": "GB00BLGZ9862",
+"waehrung": "GBP",
 "umsatz": [
 63911,
 64760,
@@ -1303,6 +1305,7 @@ null
 "BA.L": {
 "name": "BAE Systems",
 "isin": "GB0002634946",
+"waehrung": "GBP",
 "umsatz": [
 20109,
 20862,
@@ -1388,6 +1391,7 @@ null
 "NWG.L": {
 "name": "NatWest Group",
 "isin": "GB00BM8PJY71",
+"waehrung": "GBP",
 "umsatz": [
 null,
 null,
@@ -1816,6 +1820,7 @@ null,
 "LGEN.L": {
 "name": "Legal & General",
 "isin": "GB0005603997",
+"waehrung": "GBP",
 "umsatz": [
 null,
 null,
@@ -1901,6 +1906,7 @@ null
 "SSE.L": {
 "name": "SSE",
 "isin": "GB0007908733",
+"waehrung": "GBP",
 "umsatz": [
 7332,
 6801,
@@ -2500,6 +2506,7 @@ null
 "BT-A.L": {
 "name": "BT Group",
 "isin": "GB0030913577",
+"waehrung": "GBP",
 "umsatz": [
 23428,
 22905,
@@ -3098,6 +3105,7 @@ null,
 "IHG.L": {
 "name": "InterContinental Hotels Group",
 "isin": "GB00BHJYC057",
+"waehrung": "USD",
 "umsatz": [
 2083,
 992,
@@ -3612,6 +3620,7 @@ null
 "PSN.L": {
 "name": "Persimmon",
 "isin": "GB0006825383",
+"waehrung": "GBP",
 "umsatz": [
 3649,
 3328,
@@ -4040,6 +4049,7 @@ null
 "SGRO.L": {
 "name": "Segro",
 "isin": "GB00B5ZN1N88",
+"waehrung": "GBP",
 "umsatz": [
 433,
 432,
@@ -4125,6 +4135,7 @@ null
 "SVT.L": {
 "name": "Severn Trent",
 "isin": "GB00B1FH8J72",
+"waehrung": "GBP",
 "umsatz": [
 1767,
 1844,
@@ -4468,6 +4479,7 @@ null
 "TW.L": {
 "name": "Taylor Wimpey",
 "isin": "GB0008782301",
+"waehrung": "GBP",
 "umsatz": [
 4341,
 2790,
@@ -4553,6 +4565,7 @@ null
 "UU.L": {
 "name": "United Utilities",
 "isin": "GB00B39J2M42",
+"waehrung": "GBP",
 "umsatz": [
 1819,
 1859,
@@ -4724,6 +4737,7 @@ null,
 "WPP.L": {
 "name": "WPP",
 "isin": "JE00B8KF9B49",
+"waehrung": "GBP",
 "umsatz": [
 13234,
 12003,
@@ -5659,6 +5673,7 @@ null,
 "MNG.L": {
 "name": "M&G",
 "isin": "GB00BKFB1C65",
+"waehrung": "GBP",
 "umsatz": [
 null,
 null,

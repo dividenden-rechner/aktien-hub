@@ -110,5 +110,86 @@
    "DSY Operativer Cashflow 2021-2023 auf 10 Mio. gerundet (Quelle)",
    "AI/KER/EL operatives Ergebnis in Lückenjahren leicht anders abgegrenzt als ESEF"
   ]
+ },
+ "uk_zusatz_offen": {
+  "stand": "2026-11-12",
+  "hinweis": "FTSE 100: Lücken in data/boerse-de/zusatz.json nach Lauf mit stockanalysis.com. Nicht geraten. Waehrung je Firma im Feld waehrung in data/uk/boerse-de-reihen.json (bisher nur für bearbeitete Firmen und die 15 ESEF-Firmen gesetzt; für die übrigen gilt weiter der Standard EUR).",
+  "nicht_bearbeitet_lauf_zu_gross": [
+   "ITRK.L Intertek",
+   "JD.L JD Sports",
+   "DCC.L DCC",
+   "CTEC.L ConvaTec",
+   "CNA.L Centrica",
+   "BTRW.L Barratt Redrow",
+   "BRBY.L Burberry",
+   "AUTO.L Auto Trader",
+   "GAW.L Games Workshop",
+   "BAB.L Babcock",
+   "HWDN.L Howden Joinery",
+   "ENT.L Entain",
+   "FRES.L Fresnillo",
+   "EDV.L Endeavour Mining",
+   "AAF.L Airtel Africa (waehrung vermutlich USD, prüfen)",
+   "Waehrung dieser Firmen noch nicht gesetzt; Reihen in Berichtswährung (nicht Pence)"
+  ],
+  "nicht_bearbeitet_banken_versicherer": [
+   "LLOY.L Lloyds, NWG.L NatWest (ESEF liefert Cashflow, Capex, Cash; Schulden/Umsatz/operatives Ergebnis bei Banken nicht vergleichbar), PRU.L Prudential, LGEN.L Legal & General, PHNX.L Phoenix, MNG.L M&G, III.L 3i, ADM.L Admiral: nicht bearbeitet, nur sinnvoll vergleichbare Posten (Capex, Abschreibungen, Dividenden) möglich"
+  ],
+  "esef_ohne_luecke_nicht_angefasst": [
+   "SSE.L",
+   "TSCO.L",
+   "RKT.L",
+   "BA.L",
+   "UU.L",
+   "BT-A.L",
+   "TW.L (Kerndaten 2021 bis 2025 vollständig in ESEF)"
+  ],
+  "SGRO.L Segro": [
+   "Capex 2021-2025: stockanalysis-Cashflowseite nicht auffindbar (ESEF-Lücke bleibt)"
+  ],
+  "CPG.L Compass": [
+   "Cashflow, Cash, Schulden 2021-2025: nur Gewinnrechnungsseite auffindbar"
+  ],
+  "ABF.L ABF": [
+   "Cashflow 2021-2025, Zinsen, Steuern: Cashflowseite nicht auffindbar"
+  ],
+  "BNZL.L Bunzl": [
+   "Cash, Schulden, operatives Ergebnis 2021-2025: Seiten nicht auffindbar"
+  ],
+  "CRDA.L Croda": [
+   "Cash, Schulden, operatives Ergebnis 2021-2025: Seiten nicht auffindbar"
+  ],
+  "CCH.L Coca-Cola HBC": [
+   "Cashflow 2021-2025: Cashflowseite nicht auffindbar"
+  ],
+  "SN.L Smith & Nephew": [
+   "Cash und Schulden 2021-2025: Bilanzseite nicht auffindbar"
+  ],
+  "SBRY.L Sainsbury": [
+   "Cash und Schulden 2021-2025: Bilanzseite nicht auffindbar; 2021 insgesamt nicht in der Quelle"
+  ],
+  "SMIN.L Smiths": [
+   "Cashflow, Cash, Schulden 2021-2025: nicht auffindbar; operatives Ergebnis 2021 nicht in der Quelle"
+  ],
+  "SPX.L Spirax": [
+   "Cashflow, Cash, Schulden 2021-2025: nicht auffindbar"
+  ],
+  "EXPN.L Experian": [
+   "Geschäftsjahr 2021 (bis März 2021): Quelle beginnt mit 2022"
+  ],
+  "KGF/MKS/NXT/SBRY/WTB": [
+   "Geschäftsjahr 2021: Quelle beginnt mit 2022, deshalb 2021 leer"
+  ],
+  "Währung gemischt in boerse.de-Reihe": [
+   "CPG.L Compass (2021-2023 GBP, ab 2024 USD)",
+   "FLTR.L Flutter (2021-2022 GBP, ab 2023 USD)",
+   "RTO.L Rentokil (2021-2024 GBP, 2025 USD)",
+   "Umsatz dort aus der Quelle in USD ergänzt; übrige Reihenfelder (Gewinn, EPS, Dividende je Aktie, Eigenkapital) für die GBP-Jahre weiter in GBP: nicht durchgehend, Reihe in boerse.de-Rohdatei prüfen"
+  ],
+  "Sonstige": [
+   "ULVR.L Unilever, GSK.L GSK, AAL.L Anglo American, SMIN.L Smiths: Gewinnrechnung der Quelle auf neu dargestellter Basis (Abspaltungen), boerse.de-Umsatzreihe teils alte Basis",
+   "BATS.L: operativer Cashflow 2025 (6.342) laut Quelle auffällig niedrig, nicht gegen Bericht geprüft",
+   "RR.L: operativer Cashflow 2021 negativ laut Quelle, nicht geprüft"
+  ]
  }
 }

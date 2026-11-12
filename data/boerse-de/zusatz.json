@@ -5624,6 +5624,207 @@ null,
 1302
 ],
 "hinweis": "Berichtswährung GBP (Mio. GBP); Umsatz aus der boerse.de-Reihe. Nur Gewinnrechnung ergänzt; Cashflow und Bilanz: Quelle nicht abrufbar. Operatives Ergebnis laut Quelle (Operating Income)."
+},
+"SVT.L": {
+"jahre": [
+2021,
+2022,
+2023,
+2024,
+2025
+],
+"debt": [
+null,
+6771,
+7314,
+8270,
+9697
+],
+"hinweis": "Geschäftsjahr endet Ende März. Berichtswährung GBP. Nur Schulden ergänzt (Lücke in den ESEF-Daten), Total Debt der Quelle inkl. Leasingverbindlichkeiten; 2021 nicht in der Quelle."
+},
+"PSN.L": {
+"jahre": [
+2021,
+2022,
+2023,
+2024,
+2025
+],
+"debt": [
+8.8,
+10.9,
+12.9,
+14.5,
+14.7
+],
+"hinweis": "Berichtswährung GBP. Nur Schulden ergänzt (Lücke in den ESEF-Daten); der Wert besteht laut Quelle im Wesentlichen aus Leasingverbindlichkeiten, Persimmon hat keine Bankschulden ausgewiesen."
+},
+"WPP.L": {
+"jahre": [
+2021,
+2022,
+2023,
+2024,
+2025
+],
+"ebit": [
+1225,
+1353,
+521,
+1315,
+373
+],
+"ocf": [
+2029,
+701,
+1238,
+1408,
+724
+],
+"capex": [
+263.2,
+209,
+177,
+189,
+91
+],
+"div": [
+314.7,
+365,
+423,
+425,
+343
+],
+"da": [
+493.9,
+512,
+525,
+474,
+386
+],
+"bb": [
+818.5,
+862,
+54,
+82,
+97
+],
+"cash": [
+2777,
+2272,
+2218,
+2638,
+2694
+],
+"debt": [
+6826,
+7181,
+6875,
+6348,
+6832
+],
+"zins": [
+279.4,
+354,
+379,
+407,
+343
+],
+"steuer": [
+230.1,
+385,
+149,
+402,
+303
+],
+"hinweis": "Berichtswährung GBP (Mio. GBP); Umsatz aus der boerse.de-Reihe. Bruttogewinn der Quelle weggelassen (Ausweis nicht mit Umsatz vergleichbar). Operatives Ergebnis 2023 und 2025 durch Wertminderungen gedrückt, Quelle nicht gegen den Bericht geprüft; operativer Cashflow 2022 und 2025 deutlich niedriger. Schulden inkl. Leasingverbindlichkeiten."
+},
+"IHG.L": {
+"jahre": [
+2021,
+2022,
+2023,
+2024,
+2025
+],
+"ebit": [
+503,
+699,
+1025,
+1046,
+1213
+],
+"ocf": [
+636,
+646,
+893,
+724,
+898
+],
+"capex": [
+17,
+54,
+28,
+29,
+28
+],
+"div": [
+null,
+233,
+245,
+259,
+270
+],
+"da": [
+192,
+149,
+150,
+53,
+57
+],
+"bb": [
+null,
+483,
+798,
+831,
+907
+],
+"cash": [
+1450,
+976,
+1322,
+1008,
+1129
+],
+"debt": [
+3326,
+2834,
+3617,
+3766,
+4619
+],
+"zins": [
+138,
+121,
+114,
+161,
+195
+],
+"steuer": [
+96,
+164,
+260,
+269,
+315
+],
+"brutto": [
+1037,
+2330,
+2835,
+3007,
+3214
+],
+"hinweis": "Berichtswährung USD (Mio. USD). Gewinnrechnung der Quelle mit Gesamtumsatz inkl. weiterbelasteter Kosten (2021: 2.318); die boerse.de-Umsatzreihe (2021: 1.390) ist enger abgegrenzt, daher Bruttogewinn und operatives Ergebnis nicht auf deren Umsatz beziehbar. Dividenden 2021 und Rückkäufe 2021: Quelle ohne Angabe. Schulden inkl. Leasingverbindlichkeiten."
 }
 }
 }
