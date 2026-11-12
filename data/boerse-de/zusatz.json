@@ -7904,6 +7904,946 @@ null,
 212.6
 ],
 "hinweis": "Versicherer, Berichtswährung GBP (Mio. GBP). Operativer Cashflow bei Versicherern nur eingeschränkt aussagekräftig. Schulden = Total Debt der Quelle (nachrangige Anleihen und Leasing), Cash des Versicherungsgeschäfts nicht vergleichbar und weggelassen. Dividenden 2021 (721) deutlich höher als in den Folgejahren; Aktienrückkäufe nur 2025. Umsatz und operatives Ergebnis nicht sinnvoll vergleichbar (Versicherungsumsatz nach IFRS 17 neu dargestellt)."
+},
+"ROG.SW": {
+"jahre": [
+2021,
+2022,
+2023,
+2024,
+2025
+],
+"ocf": [
+20976,
+17803,
+16095,
+20094,
+18852
+],
+"capex": [
+4549,
+4552,
+4649,
+5009,
+5777
+],
+"da": [
+4443,
+3844,
+3464,
+3423,
+3386
+],
+"div": [
+7773,
+7446,
+7590,
+7650,
+7731
+],
+"bb": [
+18991,
+0,
+0,
+0,
+0
+],
+"cash": [
+6850,
+4991,
+5376,
+6975,
+5582
+],
+"debt": [
+32572,
+26699,
+30850,
+36379,
+33197
+],
+"umsatz": [
+65850,
+65814,
+60441,
+62395,
+63356
+],
+"brutto": [
+46490,
+47876,
+44844,
+46664,
+47194
+],
+"ebit": [
+20253,
+20569,
+17779,
+19617,
+20958
+],
+"zins": [
+null,
+null,
+null,
+null,
+null
+],
+"steuer": [
+null,
+null,
+null,
+null,
+null
+],
+"hinweis": "CHF, Quelle stockanalysis.com (SWX:ROP). Umsatz = Gesamterloes inkl. sonstiger Erloese (hoeher als Produktumsatz bei boerse.de). capex = Sachanlagen plus Kauf immaterieller Werte. cash = liquide Mittel ohne kurzfristige Anlagen (zusaetzlich 9,9 Mrd. CHF 2025). bb 2021 = Rueckkauf der Roche-Aktien von Novartis (ca. 19 Mrd. CHF, Sondereffekt). Zins und Steuer nicht abrufbar (null)."
+},
+"NOVN.SW": {
+"jahre": [
+2021,
+2022,
+2023,
+2024,
+2025
+],
+"ocf": [
+15071,
+14236,
+14458,
+17619,
+19144
+],
+"capex": [
+1870,
+2069,
+1060,
+3734,
+3736
+],
+"da": [
+4949,
+4994,
+8183,
+4599,
+4744
+],
+"div": [
+7368,
+7506,
+7255,
+7624,
+7818
+],
+"bb": [
+3057,
+10652,
+8719,
+8331,
+9212
+],
+"cash": [
+12407,
+7517,
+13393,
+11459,
+11435
+],
+"debt": [
+31093,
+27964,
+26439,
+31401,
+35457
+],
+"umsatz": [
+43974,
+43461,
+46660,
+51722,
+56674
+],
+"brutto": [
+32583,
+31879,
+34188,
+38907,
+43054
+],
+"ebit": [
+10963,
+9213,
+10234,
+16320,
+19005
+],
+"zins": [
+null,
+null,
+null,
+null,
+null
+],
+"steuer": [
+null,
+null,
+null,
+null,
+null
+],
+"hinweis": "USD, Quelle stockanalysis.com (SWX:NOVN). Zahlen 2021-2022 ohne Sandoz (fortgefuehrte Geschaefte, nach Abspaltung Oktober 2023); Umsatz = Gesamterloes inkl. sonstiger Erloese, hoeher als Nettoumsatz bei boerse.de. capex = Sachanlagen plus Nettokauf immaterieller Werte (2023 nur Sachanlagen, da Netto-Verkauf). da 2023 enthaelt hohe Wertberichtigungen (8.183). 2021 Jahresgewinn durch Roche-Beteiligungsverkauf. Dividende in CHF beschlossen. Zins und Steuer nicht abrufbar (null)."
+},
+"SIKA.SW": {
+"jahre": [
+2021,
+2022,
+2023,
+2024,
+2025
+],
+"ocf": [
+1064,
+1100,
+1714,
+1743,
+1708
+],
+"capex": [
+171,
+266,
+280,
+359,
+375
+],
+"da": [
+356,
+373,
+471,
+535,
+551
+],
+"div": [
+355,
+446,
+492,
+265,
+289
+],
+"bb": [
+65,
+67,
+45,
+41,
+8
+],
+"cash": [
+null,
+null,
+null,
+null,
+null
+],
+"debt": [
+null,
+null,
+null,
+null,
+null
+],
+"umsatz": [
+9252,
+10492,
+11239,
+11763,
+11201
+],
+"brutto": [
+4791,
+5180,
+6025,
+6416,
+6154
+],
+"ebit": [
+1397,
+1491,
+1748,
+1723,
+1519
+],
+"zins": [
+null,
+null,
+null,
+null,
+null
+],
+"steuer": [
+null,
+null,
+null,
+null,
+null
+],
+"hinweis": "CHF, Quelle stockanalysis.com. capex = Sachanlagen plus immaterielle Werte. 2023 Uebernahme MBCC (Akquisition 3,2 Mrd. CHF, nicht in capex). Bilanz (Cash, Schulden), Zins und Steuer nicht abrufbar (null)."
+},
+"SDZ.SW": {
+"jahre": [
+2021,
+2022,
+2023,
+2024,
+2025
+],
+"ocf": [
+1354,
+1223,
+362,
+656,
+1594
+],
+"capex": [
+354,
+395,
+620,
+580,
+758
+],
+"da": [
+489,
+458,
+468,
+492,
+524
+],
+"div": [
+null,
+null,
+0,
+215,
+315
+],
+"bb": [
+null,
+null,
+null,
+12,
+0
+],
+"cash": [
+null,
+null,
+null,
+null,
+null
+],
+"debt": [
+null,
+null,
+null,
+null,
+null
+],
+"umsatz": [
+9678,
+9306,
+9979,
+10384,
+11157
+],
+"brutto": [
+4599,
+4378,
+4564,
+4934,
+5300
+],
+"ebit": [
+1394,
+1239,
+375,
+293,
+1445
+],
+"zins": [
+null,
+null,
+null,
+null,
+null
+],
+"steuer": [
+null,
+null,
+null,
+null,
+null
+],
+"hinweis": "USD, Quelle stockanalysis.com. Abspaltung von Novartis Oktober 2023: 2021-2022 Carve-out-Zahlen, keine eigenen Dividenden vor 2023 (null). Umsatz = Gesamterloes (leicht hoeher als boerse.de). capex = Sachanlagen plus immaterielle Werte. 2023 Cashflow durch Abspaltungs- und Finanzierungseffekte belastet (OCF 362). Bilanz (Cash, Schulden), Zins und Steuer nicht abrufbar (null)."
+},
+"CFR.SW": {
+"jahre": [
+2021,
+2022,
+2023,
+2024,
+2025
+],
+"ocf": [
+3220,
+4640,
+4490,
+4700,
+4440
+],
+"capex": [
+513,
+875,
+984,
+1020,
+1180
+],
+"da": [
+1520,
+1550,
+1470,
+1430,
+1560
+],
+"div": [
+524,
+1090,
+1780,
+2070,
+1710
+],
+"bb": [
+null,
+null,
+null,
+54,
+104
+],
+"cash": [
+null,
+null,
+null,
+null,
+null
+],
+"debt": [
+null,
+null,
+null,
+null,
+null
+],
+"umsatz": [
+null,
+16748,
+19953,
+20616,
+21399
+],
+"brutto": [
+null,
+11176,
+13716,
+14034,
+14318
+],
+"ebit": [
+null,
+3784,
+5087,
+4861,
+4490
+],
+"zins": [
+null,
+null,
+null,
+null,
+null
+],
+"steuer": [
+null,
+null,
+null,
+null,
+null
+],
+"hinweis": "EUR, Quelle stocknear.com (Cashflow, auf 10 Mio. gerundet, vermutlich ohne YNAP-Anpassung) und stockanalysis.com (Gewinnrechnung). Geschaeftsjahr endet 31. Maerz (2025 = GJ bis Maerz 2025). 2022 Umsatz 16.748 = nach Umgliederung YNAP als aufgegebenes Geschaeft (boerse.de: 19.181 vor Umgliederung). capex nur Sachanlagen. Bilanz (Cash, Schulden), Zins und Steuer nicht abrufbar (null)."
+},
+"PGHN.SW": {
+"jahre": [
+2021,
+2022,
+2023,
+2024,
+2025
+],
+"ocf": [
+null,
+null,
+null,
+null,
+null
+],
+"capex": [
+null,
+null,
+null,
+null,
+null
+],
+"da": [
+null,
+null,
+null,
+null,
+null
+],
+"div": [
+881,
+988,
+1013,
+1121,
+1228
+],
+"bb": [
+null,
+null,
+null,
+null,
+null
+],
+"cash": [
+null,
+null,
+null,
+null,
+null
+],
+"debt": [
+null,
+null,
+null,
+null,
+null
+],
+"umsatz": [
+2617,
+1865,
+1942,
+2122,
+2555
+],
+"brutto": [
+1757,
+1269,
+1338,
+1464,
+1739
+],
+"ebit": [
+1650,
+1132,
+1193,
+1309,
+1541
+],
+"zins": [
+null,
+null,
+null,
+null,
+null
+],
+"steuer": [
+null,
+null,
+null,
+null,
+null
+],
+"hinweis": "CHF, Quelle stockanalysis.com (Gewinnrechnung) und boerse.de (div). Vermoegensverwalter: Cashflow, Cash und Schulden nicht sinnvoll vergleichbar bzw. nicht abrufbar (null). Umsatz hier Gesamterloes inkl. Performance Fees (weicht von boerse.de ab)."
+},
+"SLHN.SW": {
+"jahre": [
+2021,
+2022,
+2023,
+2024,
+2025
+],
+"ocf": [
+null,
+null,
+null,
+null,
+null
+],
+"capex": [
+null,
+null,
+null,
+null,
+null
+],
+"da": [
+null,
+null,
+null,
+null,
+null
+],
+"div": [
+773,
+908,
+951,
+999,
+1020
+],
+"bb": [
+null,
+null,
+null,
+null,
+null
+],
+"cash": [
+null,
+null,
+null,
+null,
+null
+],
+"debt": [
+null,
+null,
+null,
+null,
+null
+],
+"umsatz": [
+null,
+null,
+null,
+null,
+null
+],
+"brutto": [
+null,
+null,
+null,
+null,
+null
+],
+"ebit": [
+null,
+null,
+null,
+null,
+null
+],
+"zins": [
+null,
+null,
+null,
+null,
+null
+],
+"steuer": [
+null,
+null,
+null,
+null,
+null
+],
+"hinweis": "CHF. Bank/Versicherer: Cashflow, Cash, Schulden, Umsatz, Brutto- und operatives Ergebnis sind nicht sinnvoll mit Industriefirmen vergleichbar (Anlagen, Praemien, Kundeneinlagen) und daher null. div = Dividendenausschuettung laut boerse.de."
+},
+"SREN.SW": {
+"jahre": [
+2021,
+2022,
+2023,
+2024,
+2025
+],
+"ocf": [
+null,
+null,
+null,
+null,
+null
+],
+"capex": [
+null,
+null,
+null,
+null,
+null
+],
+"da": [
+null,
+null,
+null,
+null,
+null
+],
+"div": [
+1705,
+1850,
+1975,
+2161,
+2359
+],
+"bb": [
+null,
+null,
+null,
+null,
+null
+],
+"cash": [
+null,
+null,
+null,
+null,
+null
+],
+"debt": [
+null,
+null,
+null,
+null,
+null
+],
+"umsatz": [
+null,
+null,
+null,
+null,
+null
+],
+"brutto": [
+null,
+null,
+null,
+null,
+null
+],
+"ebit": [
+null,
+null,
+null,
+null,
+null
+],
+"zins": [
+null,
+null,
+null,
+null,
+null
+],
+"steuer": [
+null,
+null,
+null,
+null,
+null
+],
+"hinweis": "USD. Bank/Versicherer: Cashflow, Cash, Schulden, Umsatz, Brutto- und operatives Ergebnis sind nicht sinnvoll mit Industriefirmen vergleichbar (Anlagen, Praemien, Kundeneinlagen) und daher null. div = Dividendenausschuettung laut boerse.de."
+},
+"UBSG.SW": {
+"jahre": [
+2021,
+2022,
+2023,
+2024,
+2025
+],
+"ocf": [
+null,
+null,
+null,
+null,
+null
+],
+"capex": [
+null,
+null,
+null,
+null,
+null
+],
+"da": [
+null,
+null,
+null,
+null,
+null
+],
+"div": [
+1700,
+1709,
+2246,
+2857,
+3401
+],
+"bb": [
+null,
+null,
+null,
+null,
+null
+],
+"cash": [
+null,
+null,
+null,
+null,
+null
+],
+"debt": [
+null,
+null,
+null,
+null,
+null
+],
+"umsatz": [
+null,
+null,
+null,
+null,
+null
+],
+"brutto": [
+null,
+null,
+null,
+null,
+null
+],
+"ebit": [
+null,
+null,
+null,
+null,
+null
+],
+"zins": [
+null,
+null,
+null,
+null,
+null
+],
+"steuer": [
+null,
+null,
+null,
+null,
+null
+],
+"hinweis": "USD. Bank/Versicherer: Cashflow, Cash, Schulden, Umsatz, Brutto- und operatives Ergebnis sind nicht sinnvoll mit Industriefirmen vergleichbar (Anlagen, Praemien, Kundeneinlagen) und daher null. div = Dividendenausschuettung laut boerse.de."
+},
+"ZURN.SW": {
+"jahre": [
+2021,
+2022,
+2023,
+2024,
+2025
+],
+"ocf": [
+null,
+null,
+null,
+null,
+null
+],
+"capex": [
+null,
+null,
+null,
+null,
+null
+],
+"da": [
+null,
+null,
+null,
+null,
+null
+],
+"div": [
+3262,
+3541,
+3744,
+3984,
+4268
+],
+"bb": [
+null,
+null,
+null,
+null,
+null
+],
+"cash": [
+null,
+null,
+null,
+null,
+null
+],
+"debt": [
+null,
+null,
+null,
+null,
+null
+],
+"umsatz": [
+null,
+null,
+null,
+null,
+null
+],
+"brutto": [
+null,
+null,
+null,
+null,
+null
+],
+"ebit": [
+null,
+null,
+null,
+null,
+null
+],
+"zins": [
+null,
+null,
+null,
+null,
+null
+],
+"steuer": [
+null,
+null,
+null,
+null,
+null
+],
+"hinweis": "USD. Bank/Versicherer: Cashflow, Cash, Schulden, Umsatz, Brutto- und operatives Ergebnis sind nicht sinnvoll mit Industriefirmen vergleichbar (Anlagen, Praemien, Kundeneinlagen) und daher null. div = Dividendenausschuettung laut boerse.de."
 }
 }
 }

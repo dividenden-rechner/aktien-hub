@@ -1,0 +1,887 @@
+{
+"quelle": "boerse.de Fundamentalanalyse (Schweiz)",
+"stand": "2026-11-12",
+"einheit": "Mio in Berichtswährung je Firma (Feld waehrung), je Aktie in Berichtswährung; aktien_mio in Mio. Stück",
+"jahre": [
+2019,
+2020,
+2021,
+2022,
+2023,
+2024,
+2025
+],
+"hinweis": "Daten maschinell von boerse.de übernommen, nicht gegen Geschäftsberichte geprüft. Banken/Versicherer ohne Umsatz.",
+"firmen": {
+"ROG.SW": {
+"name": "Roche",
+"isin": "CH0012032113",
+"waehrung": "CHF",
+"hinweis": "Quelle boerse.de. EPS verwaessert; 2023 von boerse.de mit 15,37 (Dublette 2022) angegeben, hier 14,31 laut Roche/stockanalysis. Aktienzahl = Inhaberaktien plus Genussscheine (862,56 Mio., ab 2022 809,25 Mio.).",
+"umsatz": [
+61466,
+58323,
+62801,
+63281,
+58716,
+60495,
+61516
+],
+"ebt": [
+16614,
+17965,
+17398,
+16327,
+14079,
+11793,
+16973
+],
+"jahresueberschuss": [
+13497,
+14295,
+13930,
+12421,
+11498,
+8277,
+12880
+],
+"dividendenausschuettung": [
+7763,
+7849,
+7526,
+7592,
+7769,
+7715,
+7931
+],
+"eigenkapital": [
+32747,
+36341,
+24489,
+27992,
+29315,
+31767,
+33802
+],
+"eps": [
+15.62,
+16.52,
+16.2,
+15.37,
+14.31,
+10.31,
+16.04
+],
+"dividende_je_aktie": [
+9.0,
+9.1,
+9.3,
+9.5,
+9.6,
+9.7,
+9.8
+],
+"aktien_mio": [
+862.56,
+862.56,
+862.56,
+809.25,
+809.25,
+809.25,
+809.25
+],
+"eigenkapitalrendite_pct": [
+41.22,
+39.34,
+56.88,
+44.37,
+39.22,
+26.06,
+38.1
+]
+},
+"PGHN.SW": {
+"name": "Partners Group",
+"isin": "CH0024608827",
+"waehrung": "CHF",
+"hinweis": "Quelle boerse.de. EPS verwaessert. Umsatz = Gesamterloes laut boerse.de, stark schwankend (Performance Fees); Finanzholding.",
+"umsatz": [
+1547,
+1382,
+2590,
+1814,
+1857,
+2018,
+2461
+],
+"ebt": [
+1037,
+929,
+1726,
+1129,
+1209,
+1370,
+1531
+],
+"jahresueberschuss": [
+900,
+805,
+1464,
+1005,
+1003,
+1128,
+1261
+],
+"dividendenausschuettung": [
+681,
+725,
+881,
+988,
+1013,
+1121,
+1228
+],
+"eigenkapital": [
+2288,
+2275,
+2899,
+2416,
+2427,
+2414,
+2187
+],
+"eps": [
+33.66,
+30.36,
+55.12,
+39.09,
+38.55,
+43.08,
+48.45
+],
+"dividende_je_aktie": [
+25.5,
+27.5,
+33,
+37,
+39,
+42,
+46
+],
+"aktien_mio": [
+26.7,
+26.7,
+26.7,
+26.7,
+26.7,
+26.7,
+26.7
+],
+"eigenkapitalrendite_pct": [
+39.33,
+35.38,
+50.5,
+41.59,
+41.34,
+46.71,
+57.64
+]
+},
+"CFR.SW": {
+"name": "Richemont",
+"isin": "CH0210483332",
+"waehrung": "EUR",
+"hinweis": "Quelle boerse.de. Geschaeftsjahr endet 31. Maerz (Spalte 2025 = GJ bis Maerz 2025). Berichtswaehrung EUR; Dividende je Aktie in CHF beschlossen (2022 und 2023 inkl. Sonderdividende 1,00 CHF). EPS laut boerse.de-Zeile verwaessert (je A-Aktie-Aequivalent, entspricht Konzernausweis); Aktienzahl 1.044 Mio. = A-Aktien plus B-Aktien nach boerse.de, nicht aequivalent zur EPS-Basis. 2023: Jahresueberschuss durch Verlust aus aufgegebenem Geschaeft (YNAP) auf 313 Mio. gedrueckt.",
+"umsatz": [
+13989,
+14238,
+13144,
+19181,
+19953,
+20616,
+21399
+],
+"ebt": [
+3168,
+1198,
+1515,
+2577,
+1148,
+3192,
+3477
+],
+"jahresueberschuss": [
+2784,
+933,
+1301,
+2074,
+313,
+2362,
+2751
+],
+"dividendenausschuettung": [
+1017,
+565,
+1131,
+1844,
+1996,
+1609,
+3215
+],
+"eigenkapital": [
+16951,
+17136,
+17774,
+19814,
+18959,
+20521,
+22099
+],
+"eps": [
+4.93,
+1.65,
+2.3,
+3.61,
+0.54,
+4.08,
+4.67
+],
+"dividende_je_aktie": [
+2.0,
+1.0,
+2.0,
+3.25,
+3.5,
+2.75,
+3.0
+],
+"aktien_mio": [
+1044,
+1044,
+1044,
+1044,
+1044,
+1074.76,
+1075.16
+],
+"eigenkapitalrendite_pct": [
+16.42,
+5.44,
+7.32,
+10.47,
+1.65,
+11.51,
+12.45
+]
+},
+"SDZ.SW": {
+"name": "Sandoz",
+"isin": "CH1243598427",
+"waehrung": "USD",
+"hinweis": "Quelle boerse.de. Abspaltung von Novartis Oktober 2023; Zahlen davor carve-out (kombiniert); 2019 bei boerse.de nicht gefuehrt. 2024: boerse.de fuehrt EBT -11, Jahresueberschuss und EPS fehlen dort; Jahresueberschuss 1 Mio. USD laut stockanalysis.com, EPS 2024 nicht verfuegbar (null).",
+"umsatz": [
+null,
+9658,
+9678,
+9306,
+9949,
+10357,
+11086
+],
+"ebt": [
+null,
+706,
+1313,
+1102,
+130,
+-11,
+1207
+],
+"jahresueberschuss": [
+null,
+462,
+908,
+848,
+77,
+1,
+914
+],
+"dividendenausschuettung": [
+null,
+null,
+null,
+null,
+193,
+258,
+346
+],
+"eigenkapital": [
+null,
+7715,
+8153,
+8748,
+8645,
+8163,
+9384
+],
+"eps": [
+null,
+1.07,
+2.11,
+1.97,
+0.18,
+null,
+2.09
+],
+"dividende_je_aktie": [
+null,
+null,
+null,
+null,
+0.45,
+0.6,
+0.8
+],
+"aktien_mio": [
+null,
+431,
+431,
+431,
+431,
+440,
+440
+],
+"eigenkapitalrendite_pct": [
+null,
+5.99,
+11.14,
+9.69,
+0.89,
+null,
+9.74
+]
+},
+"SIKA.SW": {
+"name": "Sika",
+"isin": "CH0418792922",
+"waehrung": "CHF",
+"hinweis": "Quelle boerse.de. EPS verwaessert; Aktienzahl in Mio. (ab 2018 Einheitsaktie nach Abschaffung Inhaberaktien).",
+"umsatz": [
+8109,
+7878,
+9252,
+10492,
+11239,
+11763,
+11201
+],
+"ebt": [
+967,
+1060,
+1336,
+1498,
+1336,
+1563,
+1356
+],
+"jahresueberschuss": [
+752,
+825,
+1048,
+1163,
+1062,
+1246,
+1044
+],
+"dividendenausschuettung": [
+326,
+355,
+465,
+514,
+529,
+578,
+594
+],
+"eigenkapital": [
+3124,
+3286,
+4394,
+4966,
+5920,
+7033,
+6656
+],
+"eps": [
+4.81,
+5.22,
+6.6,
+7.29,
+6.65,
+7.76,
+6.5
+],
+"dividende_je_aktie": [
+2.3,
+2.5,
+2.9,
+3.2,
+3.3,
+3.6,
+3.7
+],
+"aktien_mio": [
+141.78,
+141.78,
+143.04,
+153.74,
+160.48,
+160.48,
+160.48
+],
+"eigenkapitalrendite_pct": [
+24.07,
+25.09,
+23.85,
+23.41,
+17.94,
+17.71,
+15.68
+]
+},
+"SLHN.SW": {
+"name": "Swiss Life",
+"isin": "CH0014852781",
+"waehrung": "CHF",
+"hinweis": "Quelle boerse.de. Versicherer: Umsatz von boerse.de nicht gefuehrt (null). EPS verwaessert.",
+"umsatz": [
+null,
+null,
+null,
+null,
+null,
+null,
+null
+],
+"ebt": [
+1528,
+1351,
+1663,
+1934,
+1366,
+1637,
+1667
+],
+"jahresueberschuss": [
+1199,
+1046,
+1247,
+1449,
+1094,
+1224,
+1234
+],
+"dividendenausschuettung": [
+650,
+668,
+773,
+908,
+951,
+999,
+1020
+],
+"eigenkapital": [
+15920,
+16745,
+15727,
+9489,
+7499,
+7271,
+7062
+],
+"eps": [
+36.48,
+32.78,
+39.93,
+47.76,
+37.01,
+42.29,
+43.47
+],
+"dividende_je_aktie": [
+20,
+21,
+25,
+30,
+33,
+35,
+36.5
+],
+"aktien_mio": [
+34.22,
+32.01,
+31.53,
+30.83,
+29.52,
+28.73,
+28.53
+],
+"eigenkapitalrendite_pct": [
+7.53,
+6.25,
+7.93,
+15.27,
+14.59,
+16.83,
+17.47
+]
+},
+"SREN.SW": {
+"name": "Swiss Re",
+"isin": "CH0126881561",
+"waehrung": "USD",
+"hinweis": "Quelle boerse.de. Rueckversicherer: Umsatz nicht gefuehrt (null). Berichtswaehrung USD; Dividende je Aktie in CHF beschlossen (boerse.de-Werte entsprechen den CHF-Dividenden). EPS verwaessert.",
+"umsatz": [
+null,
+null,
+null,
+null,
+null,
+null,
+null
+],
+"ebt": [
+909,
+-1090,
+1831,
+651,
+4438,
+4133,
+6077
+],
+"jahresueberschuss": [
+727,
+-878,
+1437,
+472,
+3214,
+3241,
+4740
+],
+"dividendenausschuettung": [
+1710,
+1705,
+1705,
+1850,
+1975,
+2161,
+2359
+],
+"eigenkapital": [
+29251,
+27135,
+23568,
+12699,
+16146,
+21892,
+25114
+],
+"eps": [
+2.46,
+-2.97,
+4.35,
+1.63,
+9.94,
+9.48,
+12.95
+],
+"dividende_je_aktie": [
+5.9,
+5.9,
+5.9,
+6.4,
+6.8,
+7.35,
+8.0
+],
+"aktien_mio": [
+327.4,
+317.5,
+317.5,
+317.5,
+317.5,
+317.5,
+317.5
+],
+"eigenkapitalrendite_pct": [
+2.49,
+-3.24,
+6.1,
+3.72,
+19.91,
+14.8,
+18.87
+]
+},
+"UBSG.SW": {
+"name": "UBS",
+"isin": "CH0244767585",
+"waehrung": "USD",
+"hinweis": "Quelle boerse.de. Bank: Umsatz nicht gefuehrt (null). 2023 Jahresueberschuss 27.849 Mio. durch Sondergewinn (Negative Goodwill) aus Credit-Suisse-Uebernahme. EPS verwaessert; Dividende je Aktie in USD.",
+"umsatz": [
+null,
+null,
+null,
+null,
+null,
+null,
+null
+],
+"ebt": [
+5577,
+8155,
+9484,
+9604,
+28739,
+6821,
+8853
+],
+"jahresueberschuss": [
+4304,
+6557,
+7457,
+7630,
+27849,
+5085,
+7767
+],
+"dividendenausschuettung": [
+2640,
+1314,
+1700,
+1709,
+2246,
+2857,
+3401
+],
+"eigenkapital": [
+54533,
+59517,
+60662,
+56876,
+86108,
+85079,
+90213
+],
+"eps": [
+1.14,
+1.77,
+2.06,
+2.25,
+8.45,
+1.52,
+2.36
+],
+"dividende_je_aktie": [
+0.73,
+0.37,
+0.5,
+0.55,
+0.7,
+0.9,
+1.1
+],
+"aktien_mio": [
+3859.06,
+3859.06,
+3702.42,
+3524.64,
+3462.09,
+3462.09,
+3341.58
+],
+"eigenkapitalrendite_pct": [
+7.89,
+11.02,
+12.29,
+13.42,
+32.34,
+5.98,
+8.61
+]
+},
+"ZURN.SW": {
+"name": "Zurich Insurance",
+"isin": "CH0011075394",
+"waehrung": "USD",
+"hinweis": "Quelle boerse.de. Versicherer: Umsatz nicht gefuehrt (null). Berichtswaehrung USD; Dividende je Aktie in CHF beschlossen (boerse.de-Werte entsprechen den CHF-Dividenden). EPS verwaessert.",
+"umsatz": [
+null,
+null,
+null,
+null,
+null,
+null,
+null
+],
+"ebt": [
+6100,
+5395,
+7321,
+5962,
+6458,
+8465,
+10040
+],
+"jahresueberschuss": [
+4147,
+3834,
+5202,
+4603,
+4351,
+5814,
+6798
+],
+"dividendenausschuettung": [
+2961,
+2970,
+3262,
+3541,
+3744,
+3984,
+4268
+],
+"eigenkapital": [
+35004,
+38278,
+37881,
+26634,
+24860,
+25472,
+28515
+],
+"eps": [
+27.51,
+23.98,
+31.68,
+29.36,
+26.71,
+35.33,
+39.12
+],
+"dividende_je_aktie": [
+20,
+20,
+22,
+24,
+26,
+28,
+30
+],
+"aktien_mio": [
+149.61,
+150.46,
+150.46,
+150.46,
+146.36,
+146.36,
+146.36
+],
+"eigenkapitalrendite_pct": [
+11.85,
+10.02,
+13.73,
+17.28,
+17.5,
+22.83,
+23.84
+]
+},
+"NOVN.SW": {
+"name": "Novartis",
+"isin": "CH0012005267",
+"waehrung": "USD",
+"hinweis": "Quelle boerse.de (Seite der Novartis-ADR, 1 ADR = 1 Aktie; Stammaktien-Seite nicht abrufbar). EPS verwaessert. Dividende je Aktie in CHF beschlossen (boerse.de-Werte entsprechen den CHF-Dividenden). Aktienzahl in Mio. laut boerse.de (Stammaktien-Seite nicht abrufbar). 2021 Jahresueberschuss enthaelt Roche-Beteiligungsverkauf; 2023 Sandoz-Abspaltung (Sandoz als aufgegebenes Geschaeft).",
+"umsatz": [
+47498,
+48659,
+51626,
+50545,
+46660,
+50317,
+54532
+],
+"ebt": [
+13530,
+9878,
+26137,
+8371,
+15405,
+13640,
+16352
+],
+"jahresueberschuss": [
+11732,
+8072,
+24021,
+6955,
+14850,
+11941,
+13984
+],
+"dividendenausschuettung": [
+7061,
+6770,
+7212,
+7300,
+7057,
+7214,
+8900
+],
+"eigenkapital": [
+55474,
+56598,
+67655,
+59342,
+46667,
+44046,
+46130
+],
+"eps": [
+5.06,
+3.52,
+10.63,
+3.17,
+7.1,
+5.87,
+7.15
+],
+"dividende_je_aktie": [
+2.95,
+3.0,
+3.1,
+3.2,
+3.3,
+3.5,
+3.7
+],
+"aktien_mio": [
+2527.37,
+2467.06,
+2434.42,
+2403.72,
+2277.48,
+2189.93,
+2112.42
+],
+"eigenkapitalrendite_pct": [
+21.15,
+14.26,
+35.51,
+11.72,
+31.82,
+27.11,
+30.31
+]
+}
+}
+}
