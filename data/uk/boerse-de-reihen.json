@@ -789,6 +789,7 @@ null
 "RR.L": {
 "name": "Rolls-Royce Holdings",
 "isin": "GB00B63H8491",
+"waehrung": "GBP",
 "umsatz": [
 16587,
 11824,
@@ -1130,6 +1131,7 @@ null
 "LSEG.L": {
 "name": "London Stock Exchange Group",
 "isin": "GB00B0SWJX34",
+"waehrung": "GBP",
 "umsatz": [
 2056,
 2124,
@@ -1215,6 +1217,7 @@ null
 "AAL.L": {
 "name": "Anglo American",
 "isin": "GB00BTK05J60",
+"waehrung": "USD",
 "umsatz": [
 29870,
 30902,
@@ -1470,6 +1473,7 @@ null
 "CPG.L": {
 "name": "Compass Group",
 "isin": "GB00BD6K4575",
+"waehrung": "USD",
 "umsatz": [
 25152,
 20198,
@@ -1640,6 +1644,7 @@ null
 "EXPN.L": {
 "name": "Experian",
 "isin": "GB00B19NLV48",
+"waehrung": "USD",
 "umsatz": [
 4861,
 5179,
@@ -1980,6 +1985,7 @@ null
 "FLTR.L": {
 "name": "Flutter Entertainment",
 "isin": "IE00BWT6H894",
+"waehrung": "USD",
 "umsatz": [
 2140,
 4414,
@@ -2065,6 +2071,7 @@ null
 "HLN.L": {
 "name": "Haleon",
 "isin": "GB00BMX86B70",
+"waehrung": "GBP",
 "umsatz": [
 null,
 null,

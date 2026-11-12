@@ -3997,6 +3997,566 @@ null,
 6124
 ],
 "hinweis": "Berichtswährung USD (Mio. USD); Umsatz aus der boerse.de-Reihe. Handelsunternehmen mit Rohstoffhandel: Schulden inkl. Leasingverbindlichkeiten, nicht um Handelsbestände bereinigt."
+},
+"RR.L": {
+"jahre": [
+2021,
+2022,
+2023,
+2024,
+2025
+],
+"ebit": [
+465,
+755,
+1832,
+2419,
+4188
+],
+"ocf": [
+-259,
+1524,
+2485,
+3782,
+4565
+],
+"capex": [
+328,
+359,
+429,
+519,
+621
+],
+"div": [
+null,
+1,
+null,
+null,
+885
+],
+"da": [
+803,
+768,
+751,
+686,
+696
+],
+"bb": [
+3,
+null,
+null,
+null,
+1008
+],
+"cash": [
+2621,
+2607,
+3784,
+5575,
+6244
+],
+"debt": [
+7883,
+6079,
+5868,
+5266,
+4362
+],
+"zins": [
+252,
+153,
+368,
+322,
+306
+],
+"steuer": [
+-418,
+-308,
+23,
+-250,
+1099
+],
+"brutto": [
+2136,
+2686,
+3646,
+4234,
+5910
+],
+"hinweis": "Berichtswährung GBP (Mio. GBP); Umsatz aus der boerse.de-Reihe. Operativer Cashflow 2021 negativ (-259), Dividenden erst 2025 wieder in nennenswerter Höhe. Operatives Ergebnis und Steuern nach Quellenausweis (nicht um Sondereffekte bereinigt, nicht gegen den Bericht geprüft). Schulden inkl. Leasingverbindlichkeiten."
+},
+"LSEG.L": {
+"jahre": [
+2021,
+2022,
+2023,
+2024,
+2025
+],
+"ebit": [
+1454,
+1637,
+1659,
+1892,
+2301
+],
+"ocf": [
+2602,
+2737,
+2942,
+3396,
+3622
+],
+"capex": [
+90,
+193,
+122,
+74,
+124
+],
+"div": [
+426,
+567,
+611,
+642,
+718
+],
+"da": [
+1503,
+1843,
+1249,
+1240,
+1211
+],
+"bb": [
+null,
+303,
+1207,
+1005,
+2072
+],
+"cash": [
+2665,
+3209,
+3580,
+3475,
+3949
+],
+"debt": [
+8421,
+8919,
+9781,
+10042,
+11743
+],
+"zins": [
+175,
+166,
+284,
+339,
+324
+],
+"steuer": [
+302,
+262,
+247,
+337,
+463
+],
+"brutto": [
+5676,
+6679,
+7236,
+7685,
+8233
+],
+"hinweis": "Berichtswährung GBP (Mio. GBP); Umsatz aus der boerse.de-Reihe (2021 ab Übernahme von Refinitiv; Quelle weist 2021 Umsatz 6.535 aus, boerse.de 6.740). Schulden inkl. Leasingverbindlichkeiten."
+},
+"AAL.L": {
+"jahre": [
+2021,
+2022,
+2023,
+2024,
+2025
+],
+"ebit": [
+17314,
+10890,
+6261,
+3475,
+3973
+],
+"ocf": [
+16723,
+9765,
+6496,
+8103,
+5511
+],
+"capex": [
+5732,
+6191,
+5876,
+3974,
+3340
+],
+"div": [
+3047,
+2937,
+1564,
+1026,
+344
+],
+"da": [
+2715,
+2446,
+2685,
+2188,
+2301
+],
+"bb": [
+1084,
+527,
+274,
+112,
+102
+],
+"cash": [
+9066,
+8412,
+6088,
+8167,
+6436
+],
+"debt": [
+12933,
+14365,
+17563,
+18972,
+15798
+],
+"zins": [
+394,
+470,
+948,
+746,
+822
+],
+"steuer": [
+5930,
+3456,
+2251,
+1612,
+1587
+],
+"brutto": [
+28297,
+11070,
+17416,
+11298,
+11698
+],
+"hinweis": "Berichtswährung USD (Mio. USD); Umsatz aus der boerse.de-Reihe. Gewinnrechnung der Quelle 2024 und 2025 ohne aufgegebene Bereiche (Umsatz 2024 17.745, boerse.de 27.290), 2021 bis 2023 vermutlich noch auf alter Basis; Bruttogewinn und operatives Ergebnis daher nicht über die Jahre vergleichbar. Cashflow Konzern. Schulden inkl. Leasingverbindlichkeiten."
+},
+"CPG.L": {
+"jahre": [
+2021,
+2022,
+2023,
+2024,
+2025
+],
+"umsatz": [
+24179,
+28428,
+37907,
+42002,
+46070
+],
+"ebit": [
+1337,
+1617,
+2515,
+2757,
+3031
+],
+"zins": [
+158,
+118,
+210,
+276,
+340
+],
+"steuer": [
+144,
+392,
+525,
+642,
+704
+],
+"hinweis": "Geschäftsjahr endet im September. Berichtswährung laut Quelle USD (Mio. USD, alle Jahre in USD dargestellt; Umsatz 2021 bis 2023 daher aus der Quelle). Die boerse.de-Reihe enthält 2021 bis 2023 vermutlich noch GBP-Werte (Umsatz 2021 17.908), ab 2024 USD: Reihe nicht durchgehend in einer Währung. Cashflow und Bilanz: Quelle nicht abrufbar. Operatives Ergebnis: Operating Income der Quelle."
+},
+"EXPN.L": {
+"jahre": [
+2021,
+2022,
+2023,
+2024,
+2025
+],
+"ebit": [
+null,
+1425,
+1573,
+1742,
+1877
+],
+"ocf": [
+null,
+1797,
+1717,
+1747,
+2005
+],
+"capex": [
+null,
+63,
+64,
+40,
+48
+],
+"div": [
+null,
+444,
+482,
+509,
+546
+],
+"da": [
+null,
+408,
+408,
+420,
+423
+],
+"bb": [
+null,
+173,
+194,
+120,
+199
+],
+"cash": [
+null,
+179,
+202,
+312,
+368
+],
+"debt": [
+null,
+4134,
+4259,
+4399,
+5117
+],
+"zins": [
+null,
+118,
+96,
+189,
+187
+],
+"steuer": [
+null,
+296,
+401,
+348,
+379
+],
+"brutto": [
+null,
+2484,
+2630,
+2897,
+3130
+],
+"hinweis": "Geschäftsjahr endet im März (2025 = Geschäftsjahr bis 31.03.2025). Berichtswährung USD (Mio. USD); Umsatz aus der boerse.de-Reihe. 2021: Quelle beginnt erst mit dem Geschäftsjahr 2022. Schulden inkl. Leasingverbindlichkeiten."
+},
+"FLTR.L": {
+"jahre": [
+2021,
+2022,
+2023,
+2024,
+2025
+],
+"umsatz": [
+8308,
+9463,
+11790,
+14048,
+16383
+],
+"ebit": [
+-449,
+-77,
+176,
+875,
+615
+],
+"ocf": [
+553,
+1163,
+937,
+1602,
+1184
+],
+"capex": [
+122,
+122,
+159,
+144,
+105
+],
+"da": [
+1010,
+1075,
+1285,
+1097,
+1517
+],
+"bb": [
+252,
+3,
+212,
+219,
+1123
+],
+"cash": [
+2206,
+2974,
+3249,
+1531,
+1828
+],
+"debt": [
+5268,
+7244,
+7710,
+7283,
+12872
+],
+"zins": [
+222,
+219,
+430,
+490,
+588
+],
+"steuer": [
+194,
+75,
+120,
+-146,
+286
+],
+"brutto": [
+4427,
+4650,
+5588,
+6702,
+7404
+],
+"hinweis": "Berichtswährung USD (Mio. USD, Quelle: US-Listing, alle Jahre in USD, Umsatz daher aus der Quelle). Die boerse.de-Reihe weist 2021 und 2022 noch GBP aus (Umsatz 2021 6.036), ab 2023 USD: Reihe nicht durchgehend in einer Währung. Keine Dividende. Schulden inkl. Leasingverbindlichkeiten."
+},
+"HLN.L": {
+"jahre": [
+2021,
+2022,
+2023,
+2024,
+2025
+],
+"ebit": [
+1943,
+2396,
+2483,
+2487,
+2503
+],
+"ocf": [
+1356,
+2063,
+2100,
+2301,
+2634
+],
+"capex": [
+228,
+304,
+234,
+250,
+322
+],
+"div": [
+1148,
+2682,
+388,
+570,
+612
+],
+"da": [
+268,
+287,
+309,
+249,
+291
+],
+"bb": [
+null,
+null,
+38,
+624,
+654
+],
+"cash": [
+414,
+684,
+1044,
+2250,
+1324
+],
+"debt": [
+1010,
+10646,
+9606,
+10244,
+8633
+],
+"zins": [
+16,
+278,
+414,
+394,
+347
+],
+"steuer": [
+197,
+499,
+517,
+435,
+472
+],
+"brutto": [
+5984,
+6729,
+6962,
+7103,
+7144
+],
+"hinweis": "Berichtswährung GBP (Mio. GBP); Umsatz aus der boerse.de-Reihe. Abspaltung von GSK 2022: Schulden (2021: 1.010) und Zinsaufwand (2021: 16) vor der Abspaltung nicht mit den Folgejahren vergleichbar. Schulden inkl. Leasingverbindlichkeiten."
 }
 }
 }
