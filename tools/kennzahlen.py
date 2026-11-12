@@ -79,6 +79,12 @@ def main():
                 alle[t] = f
     except Exception:
         pass
+    try:   # DAX, CAC 40, FTSE 100 aus boerse.de (nur Jahresabschluss-Kernzahlen, ohne Cashflow); ESEF und SEC haben Vorrang
+        for t, f in json.load(open("data/boerse-de/fundamentals.json", encoding="utf-8"))["firmen"].items():
+            if t not in alle and f.get("isin"):
+                alle[t] = f
+    except Exception:
+        pass
     for t, f in alle.items():
         z = isin.get(t) or ({"isin": f["isin"]} if f.get("isin") else None)
         if not isinstance(z, dict) or not z or z["isin"] not in kurse["k"]:
