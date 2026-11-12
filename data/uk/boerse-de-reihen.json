@@ -3782,6 +3782,7 @@ null
 "RTO.L": {
 "name": "Rentokil Initial",
 "isin": "GB00B082RF11",
+"waehrung": "USD",
 "umsatz": [
 2714,
 2824,
@@ -3867,6 +3868,7 @@ null
 "SGE.L": {
 "name": "Sage Group",
 "isin": "GB00B8C3BL03",
+"waehrung": "GBP",
 "umsatz": [
 1936,
 1903,
@@ -3952,6 +3954,7 @@ null
 "SBRY.L": {
 "name": "J Sainsbury",
 "isin": "GB00B019KW72",
+"waehrung": "GBP",
 "umsatz": [
 29007,
 28993,
@@ -4293,6 +4296,7 @@ null
 "SMIN.L": {
 "name": "Smiths Group",
 "isin": "GB00B1WY2338",
+"waehrung": "GBP",
 "umsatz": [
 2498,
 2548,
@@ -4378,6 +4382,7 @@ null
 "SPX.L": {
 "name": "Spirax Group",
 "isin": "GB00BWFGQN14",
+"waehrung": "GBP",
 "umsatz": [
 1242,
 1193,
@@ -4633,6 +4638,7 @@ null
 "WTB.L": {
 "name": "Whitbread",
 "isin": "GB00B1KJJ408",
+"waehrung": "GBP",
 "umsatz": [
 2049,
 2072,
