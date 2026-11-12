@@ -2645,14 +2645,272 @@
 "beleg": "Non-GAAP diluted earnings per share of $5.90 to $6.20"
 }
 ]
+},
+"MAR": {
+"datum": "2026-11-02",
+"quelle": "https://www.sec.gov/Archives/edgar/data/1048286/000104828626000040/mar-2026q3xex99earningsrel.htm",
+"prognosen": [
+{
+"kennzahl": "eps_bereinigt",
+"geschaeftsjahr": "2026",
+"von": 12.07,
+"bis": 12.14,
+"einheit": "USD",
+"veraendert": "unklar",
+"beleg": "Adjusted EPS – diluted | $3.14 to $3.21 | $12.07 to $12.14"
+}
+]
+},
+"IDXX": {
+"datum": "2026-11-02",
+"quelle": "https://www.sec.gov/Archives/edgar/data/874716/000110465926120892/tm2628647d1_ex99-1.htm",
+"prognosen": [
+{
+"kennzahl": "umsatz",
+"geschaeftsjahr": "2026",
+"von": 4741000000,
+"bis": 4767000000,
+"einheit": "USD",
+"veraendert": "angehoben",
+"beleg": "Increases 2026 revenue guidance to $4,741 million - $4,767 million, up $32 million at midpoint"
+},
+{
+"kennzahl": "umsatzwachstum_proz",
+"geschaeftsjahr": "2026",
+"von": 10.1,
+"bis": 10.8,
+"einheit": "%",
+"veraendert": "angehoben",
+"beleg": "Outlook for 2026 reported revenue growth raised to 10.1% - 10.8%"
+},
+{
+"kennzahl": "organisches_wachstum_proz",
+"geschaeftsjahr": "2026",
+"von": 9.3,
+"bis": 10.0,
+"einheit": "%",
+"veraendert": "angehoben",
+"beleg": "The Company is increasing its outlook for organic revenue growth to 9.3% - 10.0%"
+},
+{
+"kennzahl": "operative_marge_proz",
+"geschaeftsjahr": "2026",
+"von": 32.1,
+"bis": 32.3,
+"einheit": "%",
+"veraendert": "gesenkt",
+"beleg": "The Company lowered its full year reported operating margin outlook to 32.1% - 32.3%"
+},
+{
+"kennzahl": "eps_gaap",
+"geschaeftsjahr": "2026",
+"von": 14.96,
+"bis": 15.16,
+"einheit": "USD",
+"veraendert": "angehoben",
+"beleg": "Raises 2026 EPS outlook to $14.96 - $15.16, reflecting a $0.25 increase compared to prior guidance midpoint"
+}
+]
+},
+"ABBV": {
+"datum": "2026-10-30",
+"quelle": "https://www.sec.gov/Archives/edgar/data/1551152/000155115226000033/abbv-20260930xexhibit991.htm",
+"prognosen": [
+{
+"kennzahl": "eps_bereinigt",
+"geschaeftsjahr": "2026",
+"von": 13.95,
+"bis": 13.99,
+"einheit": "USD",
+"veraendert": "angehoben",
+"beleg": "Raises 2026 Adjusted Diluted EPS Guidance Range from $13.76 - $13.96 to $13.95 - $13.99"
+}
+]
+},
+"FRT": {
+"datum": "2026-10-30",
+"quelle": "https://www.sec.gov/Archives/edgar/data/34903/000003490326000054/frt-9302026xex991.htm",
+"prognosen": [
+{
+"kennzahl": "eps_gaap",
+"geschaeftsjahr": "2026",
+"von": 4.23,
+"bis": 4.27,
+"einheit": "USD",
+"veraendert": "unklar",
+"beleg": "Tightened guidance for 2026 earnings per diluted share to $4.23 to $4.27."
+}
+]
+},
+"D": {
+"datum": "2026-10-30",
+"quelle": "https://www.sec.gov/Archives/edgar/data/715957/000119312526439883/d-ex99.htm",
+"prognosen": [
+{
+"kennzahl": "eps_bereinigt",
+"geschaeftsjahr": "2026",
+"von": 3.45,
+"bis": 3.69,
+"einheit": "USD",
+"veraendert": "bestaetigt",
+"beleg": "The company expects to be in the top half of the 2026 operating earnings guidance range of $3.45 to $3.69 per share"
+}
+]
+},
+"CHD": {
+"datum": "2026-10-30",
+"quelle": "https://www.sec.gov/Archives/edgar/data/313927/000119312526439864/chd-ex99_1.htm",
+"prognosen": [
+{
+"kennzahl": "umsatzwachstum_proz",
+"geschaeftsjahr": "2026",
+"von": 0.5,
+"bis": 0.5,
+"einheit": "%",
+"veraendert": "angehoben",
+"beleg": "Net Sales approximately +0.5% (Prior Range Flat to +1%)"
+},
+{
+"kennzahl": "organisches_wachstum_proz",
+"geschaeftsjahr": "2026",
+"von": 5.0,
+"bis": 5.0,
+"einheit": "%",
+"veraendert": "angehoben",
+"beleg": "Organic Sales Growth approximately +5%1 (Prior +4% to +5%)"
+},
+{
+"kennzahl": "eps_gaap",
+"geschaeftsjahr": "2026",
+"von": 20.0,
+"bis": 20.0,
+"einheit": "%",
+"veraendert": "unklar",
+"beleg": "EPS +20%; Adjusted EPS approximately +7%¹ (Prior 6% to 8%)"
+},
+{
+"kennzahl": "eps_bereinigt",
+"geschaeftsjahr": "2026",
+"von": 7.0,
+"bis": 7.0,
+"einheit": "%",
+"veraendert": "bestaetigt",
+"beleg": "Adjusted EPS approximately +7%¹ (Prior 6% to 8%)"
+}
+]
+},
+"EXC": {
+"datum": "2026-10-30",
+"quelle": "https://www.sec.gov/Archives/edgar/data/1109357/000110935726000092/exc-20261030ex991.htm",
+"prognosen": [
+{
+"kennzahl": "eps_bereinigt",
+"geschaeftsjahr": "2026",
+"von": 2.85,
+"bis": 2.91,
+"einheit": "USD",
+"veraendert": "unklar",
+"beleg": "Narrowing full year 2026 Adjusted (non-GAAP) operating earnings guidance range to $2.85-$2.91 per share"
+}
+]
+},
+"LNT": {
+"datum": "2026-10-29",
+"quelle": "https://www.sec.gov/Archives/edgar/data/352541/000035254126000045/lnt102920268-kex991.htm",
+"prognosen": [
+{
+"kennzahl": "eps_bereinigt",
+"geschaeftsjahr": "2026",
+"von": 3.41,
+"bis": 3.46,
+"einheit": "USD",
+"veraendert": "angehoben",
+"beleg": "Narrowed 2026 ongoing earnings guidance to $3.41 - $3.46 per share, the top half of the original guidance range"
+},
+{
+"kennzahl": "eps_bereinigt",
+"geschaeftsjahr": "2027",
+"von": 3.63,
+"bis": 3.73,
+"einheit": "USD",
+"veraendert": "neu",
+"beleg": "Alliant Energy is issuing 2027 consolidated ongoing EPS guidance of $3.63 - $3.73"
+},
+{
+"kennzahl": "dividende_je_aktie",
+"geschaeftsjahr": "2027",
+"von": 2.25,
+"bis": 2.25,
+"einheit": "USD",
+"veraendert": "angehoben",
+"beleg": "Alliant Energy has increased its 2027 expected annual common stock dividend target to $2.25 per share."
+}
+]
+},
+"VLTO": {
+"datum": "2026-10-29",
+"quelle": "https://www.sec.gov/Archives/edgar/data/1967680/000196768026000047/vlto-20261029xex991.htm",
+"prognosen": [
+{
+"kennzahl": "organisches_wachstum_proz",
+"geschaeftsjahr": "2026",
+"von": 4.2,
+"bis": 4.5,
+"einheit": "%",
+"veraendert": "angehoben",
+"beleg": "For the full year 2026, the Company raised its non-GAAP core sales growth to a range of 4.2% to 4.5% year-over-year"
+},
+{
+"kennzahl": "eps_bereinigt",
+"geschaeftsjahr": "2026",
+"von": 4.49,
+"bis": 4.52,
+"einheit": "USD",
+"veraendert": "angehoben",
+"beleg": "The Company raised its guidance for adjusted diluted earnings to a range of $4.49 to $4.52 per share"
+}
+]
+},
+"IR": {
+"datum": "2026-10-29",
+"quelle": "https://www.sec.gov/Archives/edgar/data/1699150/000162828026068260/ir2026q3ex991.htm",
+"prognosen": [
+{
+"kennzahl": "umsatzwachstum_proz",
+"geschaeftsjahr": "2026",
+"von": 5.5,
+"bis": 7.0,
+"einheit": "%",
+"veraendert": "unklar",
+"beleg": "Ingersoll Rand is updating its full-year 2026 guidance. Revenue Growth 5.5% to 7.0%"
+},
+{
+"kennzahl": "organisches_wachstum_proz",
+"geschaeftsjahr": "2026",
+"von": 2.0,
+"bis": 3.5,
+"einheit": "%",
+"veraendert": "unklar",
+"beleg": "Organic growth: +2% to +3.5%"
+},
+{
+"kennzahl": "eps_bereinigt",
+"geschaeftsjahr": "2026",
+"von": 3.58,
+"bis": 3.7,
+"einheit": "USD",
+"veraendert": "unklar",
+"beleg": "Adjusted EPS excl. Q3 IEEPA Tariff Refunds $3.58 to $3.70"
+}
+]
 }
 },
 "stand": "2026-11-12",
 "hinweis": "Eigene Prognosen der Unternehmen aus ihren Ergebnis-Pressemitteilungen (SEC 8-K, Anlage EX-99), automatisch ausgelesen. Keine Analystenschaetzungen.",
 "letzter_lauf": {
-"zeit": "2026-11-12 00:50",
-"kandidaten": 420,
-"ki_aufrufe": 60,
+"zeit": "2026-11-12 11:38",
+"kandidaten": 341,
+"ki_aufrufe": 17,
 "abbruch": "",
 "fehler": []
 }
