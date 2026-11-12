@@ -18,11 +18,11 @@ logo_domain: starbucks.com
 image: assets/magazin/starbucks-q4-2026-quartalszahlen-foto.jpg
 image_alt: "Starbucks-Coffeehouse am Abend mit beleuchtetem Schriftzug, davor Hecke und Pflanzen"
 image_credit: "Foto: Trương Tuyết Ly / Unsplash"
-image_source: https://unsplash.com/de/s/fotos/starbucks
+image_source: https://unsplash.com/photos/-KHi-p6dHwI
 image_artist_url: 
 logo_file: assets/logos/sbux.png
 ---
-<!-- PRÜFEN: Aufmacherfoto von Divi auf Unsplash gewählt (Trương Tuyết Ly, Unsplash-Lizenz). Die Adresse der Einzelseite des Fotos fehlt, image_source zeigt auf die Suchseite: bitte durch den Foto-Link ersetzen. -->
+<!-- PRÜFEN: Aufmacherfoto von Divi auf Unsplash gewählt (Trương Tuyết Ly, Unsplash-Lizenz). -->
 <!-- PRÜFEN: Veröffentlicht wurden die Zahlen am 29. Oktober 2026. Der Artikel ist auf den 12.11.2026 datiert, weil Kursbild und Dividendenstichtag (13.11.) von diesem Tag stammen. Datum bitte bestätigen. -->
 <!-- PRÜFEN: Kursangaben (97,03 EUR, –2,10 %, Stand 12.11.2026, 22:15 Uhr) stammen aus dem Screenshot von aktien.guide. Der USD-Kurs von 109,89 USD in der Kennzahlentabelle ist aus den Hub-Daten übernommen und nicht belegt. -->
 <!-- PRÜFEN: Foto von Brian Niccol (assets/magazin/brian-niccol-starbucks.png, aus medien/ceo): Nutzungsrecht prüfen. -->
