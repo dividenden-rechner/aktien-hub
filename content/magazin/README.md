@@ -3,14 +3,13 @@
 <!-- uebersicht-start -->
 ## Übersicht (wird automatisch erstellt, neueste zuerst)
 
-### Zur Freigabe: Entwürfe (8)
+### Zur Freigabe: Entwürfe (7)
 
 Datei anklicken, dann Stift-Symbol: Zeile `draft: true` löschen und speichern, dann geht der Artikel online.
 
 | Datum | Titel | Datei |
 |---|---|---|
 | 15.11.2026 10:00 | Nvidia ohne Huang: Ein Gründer geht, und der Markt prüft, was von der Firma bleibt | [79738889_2026-11-10/9640_2140-nvidia-huang-ruecktritt-wochenend-analyse.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/79738889_2026-11-10/9640_2140-nvidia-huang-ruecktritt-wochenend-analyse.md) |
-| 12.11.2026 20:50 | Mercedes friert Investitionen in Deutschland ein und prüft Werksschließungen | [79738887_2026-11-12/7000_2050-mercedes-benz-investitionsstopp-deutsche-werke.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/79738887_2026-11-12/7000_2050-mercedes-benz-investitionsstopp-deutsche-werke.md) |
 | 05.11.2026 23:05 | Wahlsieg der Demokraten löscht den Börsenrausch: Chipwerte brechen ein, Nasdaq rutscht in die Korrektur | [79738894_2026-11-05/7694_2305-marktueberblick-wahlsieg-demokraten-chipwerte-nasdaq-korrektur.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/79738894_2026-11-05/7694_2305-marktueberblick-wahlsieg-demokraten-chipwerte-nasdaq-korrektur.md) |
 | 29.10.2026 23:27 | Comfort Systems USA: Umsatz steigt im Q3 2026 auf 3,8 Milliarden US-Dollar | [79738970_2026-10-29/7672_2327-comfort-systems-usa-q3-2026-zahlen.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/79738970_2026-10-29/7672_2327-comfort-systems-usa-q3-2026-zahlen.md) |
 | 29.10.2026 23:26 | Oracle Corporation: Langfristiger Ausblick und Finanzziele bis FY30 | [79738970_2026-10-29/7673_2326-oracle-ausblick-investor-day-2026.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/79738970_2026-10-29/7673_2326-oracle-ausblick-investor-day-2026.md) |
@@ -18,10 +17,11 @@ Datei anklicken, dann Stift-Symbol: Zeile `draft: true` löschen und speichern, 
 | 29.10.2026 22:42 | Amazon steigert Umsatz im dritten Quartal auf 201,9 Milliarden Dollar | [79738970_2026-10-29/7757_2242-amazon-q3-2026-zahlen.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/79738970_2026-10-29/7757_2242-amazon-q3-2026-zahlen.md) |
 | 29.10.2026 10:12 | Shell erzielt im dritten Quartal 10,8 Milliarden Dollar Gewinn | [79738970_2026-10-29/8987_1012-shell-q3-2026-ergebnisse.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/79738970_2026-10-29/8987_1012-shell-q3-2026-ergebnisse.md) |
 
-### Online (371)
+### Online (372)
 
 | Datum | Titel | Datei |
 |---|---|---|
+| 12.11.2026 20:50 | Mercedes friert Investitionen in Deutschland ein und prüft Werksschließungen | [79738887_2026-11-12/7000_2050-mercedes-benz-investitionsstopp-deutsche-werke.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/79738887_2026-11-12/7000_2050-mercedes-benz-investitionsstopp-deutsche-werke.md) |
 | 12.11.2026 19:54 | BHP Group beruft Adrian Wood zum neuen Finanzchef | [79738887_2026-11-12/8045_1954-bhp-group-neuer-finanzchef-adrian-wood.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/79738887_2026-11-12/8045_1954-bhp-group-neuer-finanzchef-adrian-wood.md) |
 | 12.11.2026 19:54 | Banco Santander zieht 150,6 Millionen eigene Aktien ein | [79738887_2026-11-12/8045_1954-banco-santander-kapitalherabsetzung-november-2026.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/79738887_2026-11-12/8045_1954-banco-santander-kapitalherabsetzung-november-2026.md) |
 | 12.11.2026 19:51 | Invitation Homes beruft M. Colin Connolly in den Verwaltungsrat | [79738887_2026-11-12/8048_1951-invitation-homes-colin-connolly-verwaltungsrat.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/79738887_2026-11-12/8048_1951-invitation-homes-colin-connolly-verwaltungsrat.md) |
