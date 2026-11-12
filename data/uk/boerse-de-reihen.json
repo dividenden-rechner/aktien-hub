@@ -1730,6 +1730,7 @@ null,
 "IMB.L": {
 "name": "Imperial Brands",
 "isin": "GB0004544929",
+"waehrung": "GBP",
 "umsatz": [
 31594,
 32562,
@@ -2157,6 +2158,7 @@ null,
 "ANTO.L": {
 "name": "Antofagasta",
 "isin": "GB0000456144",
+"waehrung": "USD",
 "umsatz": [
 4965,
 5129,
@@ -2242,6 +2244,7 @@ null,
 "ABF.L": {
 "name": "Associated British Foods",
 "isin": "GB0006731235",
+"waehrung": "GBP",
 "umsatz": [
 15824,
 13937,
@@ -2582,6 +2585,7 @@ null,
 "BNZL.L": {
 "name": "Bunzl",
 "isin": "GB00B0744B38",
+"waehrung": "GBP",
 "umsatz": [
 9327,
 10111,
@@ -2667,6 +2671,7 @@ null,
 "CCH.L": {
 "name": "Coca-Cola HBC",
 "isin": "CH0198251305",
+"waehrung": "EUR",
 "umsatz": [
 7026,
 6132,
@@ -2752,6 +2757,7 @@ null,
 "CRDA.L": {
 "name": "Croda International",
 "isin": "GB00BJFFLV09",
+"waehrung": "GBP",
 "umsatz": [
 1378,
 1390,

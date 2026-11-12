@@ -4557,6 +4557,263 @@ null,
 7144
 ],
 "hinweis": "Berichtswährung GBP (Mio. GBP); Umsatz aus der boerse.de-Reihe. Abspaltung von GSK 2022: Schulden (2021: 1.010) und Zinsaufwand (2021: 16) vor der Abspaltung nicht mit den Folgejahren vergleichbar. Schulden inkl. Leasingverbindlichkeiten."
+},
+"ANTO.L": {
+"jahre": [
+2021,
+2022,
+2023,
+2024,
+2025
+],
+"ebit": [
+3426,
+1617,
+1767,
+1619,
+3345
+],
+"ocf": [
+3670,
+1877,
+2333,
+2285,
+3072
+],
+"capex": [
+1778,
+1879,
+2129,
+2415,
+3685
+],
+"div": [
+710.8,
+1263,
+613.2,
+317.4,
+395.3
+],
+"da": [
+1079,
+1141,
+1211,
+1568,
+1695
+],
+"cash": [
+743.4,
+810.4,
+644.7,
+2189,
+2717
+],
+"debt": [
+3173,
+3277,
+4079,
+5945,
+7659
+],
+"zins": [
+63.5,
+78.7,
+105.7,
+312.3,
+342.2
+],
+"steuer": [
+1242,
+603.6,
+666.1,
+755.1,
+1088
+],
+"brutto": [
+4350,
+2429,
+2658,
+2504,
+4304
+],
+"hinweis": "Berichtswährung USD (Mio. USD); Umsatz aus der boerse.de-Reihe. Aktienrückkäufe: Quelle ohne Angabe. Schulden inkl. Leasingverbindlichkeiten (Total Debt der Quelle)."
+},
+"IMB.L": {
+"jahre": [
+2021
+],
+"ebit": [
+3333
+],
+"ocf": [
+2167
+],
+"capex": [
+200
+],
+"debt": [
+10106
+],
+"hinweis": "Geschäftsjahr endet im September (2021 = Geschäftsjahr bis 30.09.2021). Berichtswährung GBP (Mio. GBP). Nur Lücke 2021 aus der Quelle ergänzt (ESEF-Daten beginnen 2022); Schulden inkl. Leasingverbindlichkeiten."
+},
+"ABF.L": {
+"jahre": [
+2021,
+2022,
+2023,
+2024,
+2025
+],
+"ebit": [
+875,
+1277,
+1403,
+1909,
+1645
+],
+"cash": [
+2275,
+2121,
+1457,
+1323,
+1057
+],
+"debt": [
+3687,
+3892,
+3722,
+3678,
+3686
+],
+"hinweis": "Geschäftsjahr endet im September (2025 = Geschäftsjahr bis September 2025). Berichtswährung GBP (Mio. GBP); Umsatz aus der boerse.de-Reihe. Cashflow, Zinsen, Steuern: Quelle nicht abrufbar; Bruttogewinn der Quelle nicht einheitlich abgegrenzt und weggelassen. Schulden inkl. Leasingverbindlichkeiten."
+},
+"BNZL.L": {
+"jahre": [
+2021,
+2022,
+2023,
+2024,
+2025
+],
+"ocf": [
+733.1,
+951.6,
+904,
+910.9,
+913
+],
+"capex": [
+24.8,
+34.7,
+42.8,
+40.3,
+55.6
+],
+"div": [
+180.4,
+190.5,
+209.7,
+228.6,
+242.2
+],
+"da": [
+269.3,
+309.1,
+333.4,
+372.2,
+391.7
+],
+"bb": [
+34.2,
+74,
+76.4,
+322.9,
+251.1
+],
+"hinweis": "Berichtswährung GBP (Mio. GBP). Nur Cashflow ergänzt; Bilanz und Gewinnrechnung: Quelle nicht abrufbar."
+},
+"CRDA.L": {
+"jahre": [
+2021,
+2022,
+2023,
+2024,
+2025
+],
+"ocf": [
+347.7,
+308.2,
+337.5,
+319.4,
+286.5
+],
+"capex": [
+153,
+141.2,
+180.4,
+178.4,
+117.7
+],
+"div": [
+132.4,
+144.4,
+150.7,
+152.2,
+154.9
+],
+"da": [
+110.6,
+118,
+122.6,
+131.7,
+132.3
+],
+"bb": [
+2.4,
+7.3,
+9.8,
+1.8,
+7.3
+],
+"hinweis": "Berichtswährung GBP (Mio. GBP). Nur Cashflow ergänzt; Bilanz und Gewinnrechnung: Quelle nicht abrufbar."
+},
+"CCH.L": {
+"jahre": [
+2021,
+2022,
+2023,
+2024,
+2025
+],
+"ebit": [
+800.4,
+882.3,
+959.2,
+1177,
+1346
+],
+"cash": [
+782.8,
+719.9,
+1261,
+1548,
+2542
+],
+"debt": [
+2937,
+3420,
+3425,
+3981,
+3913
+],
+"brutto": [
+2598,
+3145,
+3557,
+3878,
+4271
+],
+"hinweis": "Berichtswährung EUR (Mio. EUR); Umsatz aus der boerse.de-Reihe. Cashflow, Zinsen, Steuern: Quelle nicht abrufbar. Schulden inkl. Leasingverbindlichkeiten."
 }
 }
 }
