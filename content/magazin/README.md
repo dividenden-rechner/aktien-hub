@@ -17,10 +17,11 @@ Datei anklicken, dann Stift-Symbol: Zeile `draft: true` löschen und speichern, 
 | 29.10.2026 22:42 | Amazon steigert Umsatz im dritten Quartal auf 201,9 Milliarden Dollar | [79738970_2026-10-29/7757_2242-amazon-q3-2026-zahlen.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/79738970_2026-10-29/7757_2242-amazon-q3-2026-zahlen.md) |
 | 29.10.2026 10:12 | Shell erzielt im dritten Quartal 10,8 Milliarden Dollar Gewinn | [79738970_2026-10-29/8987_1012-shell-q3-2026-ergebnisse.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/79738970_2026-10-29/8987_1012-shell-q3-2026-ergebnisse.md) |
 
-### Online (363)
+### Online (364)
 
 | Datum | Titel | Datei |
 |---|---|---|
+| 12.11.2026 12:59 | Kurssprung und Dividendenfokus bei Japan Tobacco | [79738887_2026-11-12/8740_1259-japan-tobacco-morgenmeldung.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/79738887_2026-11-12/8740_1259-japan-tobacco-morgenmeldung.md) |
 | 12.11.2026 11:45 | Hapag-Lloyd verdient im dritten Quartal fast sechsmal so viel wie vor einem Jahr und hebt die Prognose erneut an | [79738887_2026-11-12/9680_1145-hapag-lloyd-9m-2026-ergebnis-prognose-angehoben.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/79738887_2026-11-12/9680_1145-hapag-lloyd-9m-2026-ergebnis-prognose-angehoben.md) |
 | 12.11.2026 11:30 | Siemens schließt das Geschäftsjahr mit 108 Milliarden Euro Aufträgen ab und erhöht die Dividende auf 5,50 Euro | [79738887_2026-11-12/9681_1130-siemens-q4-2026-auftragseingang-rekord-dividende-5-50.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/79738887_2026-11-12/9681_1130-siemens-q4-2026-auftragseingang-rekord-dividende-5-50.md) |
 | 12.11.2026 11:00 | Munich Re übertrifft die Gewinnschätzung um 18 % und hebt das Jahresziel auf 6,6 Milliarden Euro | [79738887_2026-11-12/9682_1100-munich-re-q3-2026-konsens-uebertroffen-prognose-6-6-mrd.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/79738887_2026-11-12/9682_1100-munich-re-q3-2026-konsens-uebertroffen-prognose-6-6-mrd.md) |
