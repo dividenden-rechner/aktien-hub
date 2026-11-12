@@ -1,0 +1,23 @@
+{
+  "firma": "Allianz SE",
+  "symbol": "ALV.DE",
+  "waehrung": "EUR",
+  "einheit": "Mio € (Dividende und Ergebnis je Aktie in €)",
+  "stand": "2026-11-12",
+  "hinweis": "2021 und 2022 nach IFRS 4 berichtet, ab 2023 nach IFRS 17. Reihen sind daher nicht lückenlos vergleichbar. Für 2022 gibt es deshalb zwei Werte: ursprünglich (IFRS 4, Geschäftsbericht 2022) und angepasst (IFRS 17, Geschäftsbericht 2023). Eigene Berechnungen sind als 'eigen' markiert.",
+  "quelle": "Allianz Konzern, Geschäftsberichte 2021 bis 2025, Abschnitt 'Kennzahlen Allianz Konzern', Konzernbilanz, Kapitalflussrechnung",
+  "jahre": {
+    "2021": {"basis": "IFRS 4", "umsatz": 148511, "operatives_ergebnis": 13400, "jahresueberschuss": 7105, "jahresueberschuss_anteilseigner": 6610, "ergebnis_je_aktie": 15.96, "eigenkapital_anteilseigner": 79952, "operativer_cashflow": 25124, "dividende_je_aktie": 10.80},
+    "2022": {"basis": "IFRS 4", "umsatz": 152671, "operatives_ergebnis": 14164, "jahresueberschuss": 7182, "jahresueberschuss_anteilseigner": 6738, "ergebnis_je_aktie": 16.35, "eigenkapital_anteilseigner": 51474, "operativer_cashflow": 1964, "dividende_je_aktie": 11.40,
+             "angepasst_ifrs17": {"umsatz": 153324, "operatives_ergebnis": 13814, "jahresueberschuss": 6856, "jahresueberschuss_anteilseigner": 6421, "bereinigtes_ergebnis_je_aktie": 16.96, "eigenkapital_anteilseigner": 54415, "operativer_cashflow": 17952}},
+    "2023": {"basis": "IFRS 17", "umsatz": 161700, "operatives_ergebnis": 14746, "jahresueberschuss": 9032, "jahresueberschuss_anteilseigner": 8541, "bereinigtes_ergebnis_je_aktie": 22.61, "eigenkapital_anteilseigner": 58477, "operativer_cashflow": 24462, "dividende_je_aktie": 13.80},
+    "2024": {"basis": "IFRS 17", "umsatz": 179778, "operatives_ergebnis": 16023, "jahresueberschuss": 10540, "jahresueberschuss_anteilseigner": 9931, "bereinigtes_ergebnis_je_aktie": 25.42, "eigenkapital_anteilseigner": 60287, "operativer_cashflow": 31903, "dividende_je_aktie": 15.40},
+    "2025": {"basis": "IFRS 17", "umsatz": 186938, "operatives_ergebnis": 17374, "jahresueberschuss": 11430, "jahresueberschuss_anteilseigner": 10775, "bereinigtes_ergebnis_je_aktie": 28.61, "eigenkapital_anteilseigner": 62722, "operativer_cashflow": 33209, "dividende_je_aktie": 17.10}
+  },
+  "begriffe": {"umsatz": "bis 2022 'Gesamter Umsatz', ab 2023 'Gesamtes Geschäftsvolumen'", "dividende_je_aktie": "Vorschlag je Geschäftsjahr, Auszahlung im Folgejahr"},
+  "eigen": {
+    "dividende_cagr_2021_2025_pct": 12.2,
+    "operatives_ergebnis_cagr_2021_2025_pct": 6.7
+  },
+  "offen": ["unverwässertes Ergebnis je Aktie ab 2023 nicht ausgelesen", "Investitionen nicht ausgelesen"]
+}
