@@ -440,9 +440,9 @@ function combo(inc,cur){
   const L=D[n-1],gu=growth(D,"revenue"),gg=growth(D.filter(x=>x.netIncome!=null),"netIncome");
   return `<div class="card">${kern("Umsatz &amp; Nettogewinn",big(L.revenue)+" "+esc(cur),"var(--c-umsatz)",gu!=null?pcs(gu):"")}<div class="kleg"><span><i style="background:var(--c-umsatz-l)"></i>Umsatz</span><span><i style="background:var(--c-gewinn)"></i>Nettogewinn${L.netIncome!=null?" "+big(L.netIncome)+(gg!=null?" ("+pcs(gg)+")":""):""}</span></div>${s}</svg></div>`;
 }
-function margins(inc){
+function margins(inc,H0){
   const D=inc.filter(x=>x.revenue>0);if(!D.length)return nodata("Margen");
-  const W=370,H=170,pl=8,pr=84,top=14,bot=H-24,n=D.length;
+  const W=370,H=H0||170,pl=8,pr=84,top=14,bot=H-24,n=D.length;
   const S=[["Brutto","grossProfit","var(--c-umsatz)"],["Operativ","operatingIncome","var(--c-gewinn-m)"],["Netto","netIncome","var(--c-gewinn)"]].map(([l,k,c])=>({l,c,v:D.map(x=>x[k]==null?null:x[k]/x.revenue*100)})).filter(a=>a.v.some(v=>v!=null));
   const all=S.flatMap(a=>a.v.filter(v=>v!=null));if(!all.length)return nodata("Margen");
   const mx=Math.max(10,Math.ceil(Math.max(...all)/10)*10),mn=Math.min(0,Math.floor(Math.min(...all)/10)*10),rg=mx-mn,Y=v=>top+(mx-v)/rg*(bot-top),X=i=>pl+(W-pl-pr)*(i+.5)/n;
@@ -471,9 +471,9 @@ function fcfChart(cf,cur){
   const L=D[n-1],g=n>1&&D[n-2].freeCashFlow>0?L.freeCashFlow/D[n-2].freeCashFlow-1:null;
   return `<div class="card">${kern("Free Cashflow",big(L.freeCashFlow)+" "+esc(cur),L.freeCashFlow<0?"var(--neg)":"var(--c-cash)",g!=null?pcs(g):"")}<p>Rot = negativer Cashflow</p>${s}</svg></div>`;
 }
-function epsChart(inc,cur){
+function epsChart(inc,cur,H0){
   const D=inc.map(x=>({y:x.y,v:first(x,"epsDiluted","eps")})).filter(x=>x.v!=null&&!isNaN(x.v));if(!D.length)return nodata("Gewinn je Aktie (verwässert)");
-  const W=370,H=150,pl=20,pr=30,top=28,bot=H-26,n=D.length,vs=D.map(x=>x.v),mx0=Math.max(...vs),mn0=Math.min(...vs),pad=((mx0-mn0)||Math.abs(mx0)||1)*.15,mx=mx0+pad*.6,mn=mn0<0?mn0-pad:Math.max(0,mn0-pad*2.5)*(mn0>0?1:0)||mn0-pad,rg=(mx-mn)||1,Y=v=>top+(mx-v)/rg*(bot-top),X=i=>pl+(W-pl-pr)*(i+.5)/n;
+  const W=370,H=H0||150,pl=20,pr=30,top=28,bot=H-26,n=D.length,vs=D.map(x=>x.v),mx0=Math.max(...vs),mn0=Math.min(...vs),pad=((mx0-mn0)||Math.abs(mx0)||1)*.15,mx=mx0+pad*.6,mn=mn0<0?mn0-pad:Math.max(0,mn0-pad*2.5)*(mn0>0?1:0)||mn0-pad,rg=(mx-mn)||1,Y=v=>top+(mx-v)/rg*(bot-top),X=i=>pl+(W-pl-pr)*(i+.5)/n;
   const pts=D.map((d,i)=>[X(i),Y(d.v)]);
   let s=`<svg viewBox="0 0 ${W} ${H}" role="img" aria-label="Gewinn je Aktie">`;
   if(mn<0&&mx>0)s+=`<line x1="0" x2="${W}" y1="${Y(0)}" y2="${Y(0)}" stroke="var(--line)"/>`;
@@ -1334,7 +1334,7 @@ function story(S){
   const cf=S.cf||[],dn=S.divNote||"";
   /* Uebersicht der Charts, die auf der Aktienseite unter den Kennzahlen stehen; fehlende Daten ergeben eine Karte "Keine Daten", nichts wird erfunden */
   const only=h=>/Keine Daten verfügbar/.test(h)?"":h;
-  const cards=[["full",only(bars("Dividende je Aktie",dn,divs,"var(--c-gold)",v=>num(v)))],["",only(combo(inc,cur))],["",only(margins(inc))],["",only(fcfChart(cf,cur))],["",only(epsChart(inc,cur))]].filter(c=>c[1]);
+  const cards=[["full",only(bars("Dividende je Aktie",dn,divs,"var(--c-gold)",v=>num(v)))],["",only(combo(inc,cur))],["",only(margins(inc,190))],["",only(fcfChart(cf,cur))],["",only(epsChart(inc,cur,205))]].filter(c=>c[1]);
   ov.innerHTML=`<div class="ctl"><button id="cl">✕ Schließen</button></div><div class="hint">Tippen blendet die Buttons aus, dann Screenshot</div>
   <div class="story"><div class="top"></div><div class="sh">Aktuelle Meldung</div><div class="bd">
    <div class="tt">${img(sym)}<div><b>${esc(p.companyName||sym)}</b><span>${esc(sym)}${p.sector?" · "+esc(p.sector):""}</span></div></div>
