@@ -5622,6 +5622,176 @@ null,
 30.12,
 -2.33
 ]
+},
+"MNG.L": {
+"name": "M&G",
+"isin": "GB00BKFB1C65",
+"umsatz": [
+null,
+null,
+null,
+null,
+null,
+null,
+null
+],
+"ebt": [
+1803,
+1605,
+707,
+-2497,
+749,
+145,
+1310
+],
+"jahresueberschuss": [
+1123,
+1138,
+83,
+-1632,
+297,
+-360,
+302
+],
+"dividendenausschuettung": [
+null,
+null,
+null,
+null,
+null,
+null,
+null
+],
+"eigenkapital": [
+5125,
+5577,
+5296,
+2782,
+4041,
+3281,
+3136
+],
+"eps": [
+0.43,
+0.44,
+0.03,
+-0.69,
+0.12,
+-0.15,
+0.13
+],
+"dividende_je_aktie": [
+0.16,
+0.18,
+0.18,
+0.2,
+0.2,
+0.2,
+0.2
+],
+"aktien_mio": [
+2599.91,
+2599.91,
+2599.91,
+2374.71,
+2382.06,
+2407.17,
+2412.52
+],
+"eigenkapitalrendite_pct": [
+21.91,
+20.41,
+1.57,
+-58.66,
+7.35,
+-10.97,
+9.63
+]
+},
+"AUTO.L": {
+"name": "Auto Trader Group",
+"isin": "GB00BVYVFW23",
+"umsatz": [
+null,
+null,
+null,
+null,
+null,
+null,
+null
+],
+"ebt": [
+242,
+252,
+157,
+301,
+294,
+345,
+376
+],
+"jahresueberschuss": [
+198,
+205,
+128,
+245,
+234,
+257,
+283
+],
+"dividendenausschuettung": [
+43,
+22,
+null,
+null,
+null,
+null,
+null
+],
+"eigenkapital": [
+59,
+142,
+459,
+473,
+527,
+552,
+569
+],
+"eps": [
+0.21,
+0.22,
+0.13,
+0.26,
+0.25,
+0.28,
+0.32
+],
+"dividende_je_aktie": [
+0.05,
+0.02,
+null,
+null,
+null,
+null,
+null
+],
+"aktien_mio": [
+933.2,
+922.54,
+969.02,
+946.89,
+923.08,
+907.21,
+884.7
+],
+"eigenkapitalrendite_pct": [
+335.08,
+144.84,
+27.86,
+51.79,
+44.36,
+46.51,
+49.63
+]
 }
 }
 }
