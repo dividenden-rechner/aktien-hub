@@ -5,9 +5,9 @@ M = 1e6
 MAP = {'umsatz':('umsatz',M),'jahresueberschuss':('gewinn',M),'eps':('eps_verw',1),'dividende_je_aktie':('dividende_je_aktie',1),
        'dividendenausschuettung':('dividenden_gezahlt',M),'aktien_mio':('aktien_verw',M),'eigenkapital':('eigenkapital',M),
        'ebt':('ergebnis_vor_steuer',M),'eigenkapitalrendite_pct':('eigenkapitalrendite',1)}
-LAND = {'DE':'DE','PA':'FR','AS':'NL','L':'GB','SW':'CH'}
+LAND = {'DE':'DE','PA':'FR','AS':'NL','L':'GB','SW':'CH','MC':'ES','MI':'IT'}
 out = {}
-for land in ('de','fr','uk','ch'):
+for land in ('de','fr','uk','ch','es','it','nl'):
     p = f'data/{land}/boerse-de-reihen.json'
     if not os.path.exists(p): continue
     d = json.load(open(p, encoding='utf-8'))
