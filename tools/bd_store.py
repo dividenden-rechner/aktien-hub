@@ -1,6 +1,6 @@
 """Legt boerse.de-Reihen 2019-2025 in data/de/boerse-de-reihen.json ab. Aufruf: bd_store.py (liest BATCH aus stdin als JSON)."""
 import json, sys, os
-P = os.path.join(os.path.dirname(__file__), '..', 'data', 'de', 'boerse-de-reihen.json')
+P = sys.argv[1] if len(sys.argv) > 1 else os.path.join(os.path.dirname(__file__), '..', 'data', 'de', 'boerse-de-reihen.json')
 JAHRE = [2019, 2020, 2021, 2022, 2023, 2024, 2025]
 KEYS = ['umsatz','ebt','jahresueberschuss','dividendenausschuettung','eigenkapital','eps','dividende_je_aktie','aktien_mio','eigenkapitalrendite_pct']
 d = json.load(open(P)) if os.path.exists(P) else {"quelle":"boerse.de Fundamentalanalyse (je Firma, Seite 'fundamental-analyse')","stand":"2026-11-12","einheit":"Mio € (je Aktie in €; aktien_mio in Mio. Stück)","jahre":JAHRE,"hinweis":"Jahresüberschuss meist Anteil der Aktionäre, kann je Firma von Pressemitteilungen abweichen. Umsatz bei Banken/Versicherern von boerse.de nicht geführt (null). Nicht geprüft gegen Geschäftsberichte.","firmen":{}}
