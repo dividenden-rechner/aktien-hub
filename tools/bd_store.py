@@ -8,6 +8,8 @@ batch = json.load(sys.stdin)
 for sym, v in batch.items():
     name = v.pop('name'); isin = v.pop('isin')
     row = {'name': name, 'isin': isin}
+    for k in ('waehrung', 'hinweis'):
+        if v.get(k): row[k] = v[k]
     for k in KEYS:
         s = v[k]
         assert len(s) == 7, (sym, k, s)

@@ -5,10 +5,11 @@ M = 1e6
 MAP = {'umsatz':('umsatz',M),'jahresueberschuss':('gewinn',M),'eps':('eps_verw',1),'dividende_je_aktie':('dividende_je_aktie',1),
        'dividendenausschuettung':('dividenden_gezahlt',M),'aktien_mio':('aktien_verw',M),'eigenkapital':('eigenkapital',M),
        'ebt':('ergebnis_vor_steuer',M),'eigenkapitalrendite_pct':('eigenkapitalrendite',1)}
-LAND = {'DE':'DE','PA':'FR','AS':'NL','L':'GB'}
+LAND = {'DE':'DE','PA':'FR','AS':'NL','L':'GB','SW':'CH'}
 out = {}
-for land in ('de','fr','uk'):
+for land in ('de','fr','uk','ch'):
     p = f'data/{land}/boerse-de-reihen.json'
+    if not os.path.exists(p): continue
     d = json.load(open(p, encoding='utf-8'))
     jahre = d.get('jahre', list(range(2019, 2026)))
     for sym, f in d['firmen'].items():
