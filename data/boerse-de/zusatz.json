@@ -1198,7 +1198,42 @@ null,
 2954,
 2326
 ],
-"hinweis": "Geschäftsjahr endet im September."
+"hinweis": "Geschäftsjahr endet im September (2025 = Geschäftsjahr bis 30.09.2025). Cashflow aus stockanalysis.com; Aktienrückkäufe wie von der Quelle ausgewiesen, nicht gegen den Bericht geprüft.",
+"ocf": [
+3065,
+3980,
+3960,
+2780,
+3217
+],
+"capex": [
+1268,
+2053,
+2739,
+2432,
+1800
+],
+"da": [
+1444,
+1570,
+1661,
+1755,
+1766
+],
+"div": [
+286,
+351,
+417,
+456,
+455
+],
+"bb": [
+39,
+39,
+39,
+272,
+44
+]
 },
 "MRK.DE": {
 "jahre": [
@@ -1242,7 +1277,50 @@ null,
 650,
 751,
 693
-]
+],
+"ocf": [
+4616,
+4259,
+3784,
+4586,
+3932
+],
+"capex": [
+1066,
+1531,
+1807,
+1702,
+1585
+],
+"da": [
+1622,
+1696,
+1678,
+1696,
+1770
+],
+"div": [
+748,
+955,
+1152,
+1031,
+1039
+],
+"cash": [
+1899,
+1854,
+1982,
+2517,
+2740
+],
+"debt": [
+10801,
+10428,
+9941,
+10301,
+11968
+],
+"hinweis": "Cashflow und Bilanz aus stockanalysis.com. Schulden inkl. Leasingverbindlichkeiten (Total Debt der Quelle). Aktienrückkäufe: Quelle ohne Angabe."
 },
 "P911.DE": {
 "jahre": [
@@ -1287,7 +1365,21 @@ null,
 5712,
 726
 ],
-"hinweis": "Schulden enthalten das Finanzdienstleistungsgeschäft."
+"hinweis": "Schulden enthalten das Finanzdienstleistungsgeschäft. Operativer Cashflow (Konzern, inkl. Finanzdienstleistungen) und Capex aus den Konzernabschlüssen 2021, 2024 und 2025 (2022 aus einer Drittquelle, investcroc.com, nicht gegen den Bericht geprüft). Capex = Investitionen in immaterielle Vermögenswerte ohne aktivierte Entwicklungskosten und in Sachanlagen; aktivierte Entwicklungskosten kommen hinzu (2024: 1.583, 2025: 963). Operativer Cashflow 2025 deutlich niedriger als 2024.",
+"ocf": [
+6416,
+7114,
+7023,
+6353,
+3614
+],
+"capex": [
+1442,
+1951,
+2016,
+2174,
+2173
+]
 },
 "RHM.DE": {
 "jahre": [
@@ -1390,7 +1482,56 @@ null,
 139,
 1569
 ],
-"hinweis": "Geschäftsjahr endet im September."
+"hinweis": "Geschäftsjahr endet im September (2025 = Geschäftsjahr bis 30.09.2025). Cashflow und Bilanz aus stockanalysis.com. Operativer Cashflow 2025 (5.821) deutlich höher als in den Vorjahren, Quelle nicht gegen den Bericht geprüft. Dividende: nur 2022 mit 72 ausgewiesen, sonst keine; Aktienrückkäufe wie von der Quelle ausgewiesen. Schulden inkl. Leasingverbindlichkeiten.",
+"ocf": [
+1946,
+2218,
+1622,
+2889,
+5821
+],
+"capex": [
+987,
+1157,
+1228,
+1514,
+1724
+],
+"da": [
+1358,
+1552,
+1373,
+1369,
+1535
+],
+"div": [
+null,
+72,
+null,
+null,
+null
+],
+"bb": [
+231,
+null,
+130,
+130,
+170
+],
+"cash": [
+5333,
+5959,
+4588,
+6363,
+9162
+],
+"debt": [
+2728,
+3223,
+4781,
+3766,
+3966
+]
 },
 "SY1.DE": {
 "jahre": [
@@ -1420,7 +1561,50 @@ null,
 536.18,
 711.36,
 609.61
-]
+],
+"ocf": [
+521.56,
+360.11,
+719.51,
+894.91,
+772.3
+],
+"capex": [
+154.31,
+229.8,
+248.87,
+227.42,
+196.78
+],
+"da": [
+274.31,
+289.37,
+289.1,
+296,
+null
+],
+"div": [
+131.36,
+142.57,
+146.76,
+153.75,
+167.73
+],
+"cash": [
+453.81,
+314.86,
+393.03,
+709.49,
+1010
+],
+"debt": [
+1801,
+2547,
+2559,
+2546,
+2630
+],
+"hinweis": "Cashflow und Bilanz aus stockanalysis.com. Abschreibungen 2025 (163) in der Quelle nicht plausibel und weggelassen. Schulden inkl. Leasingverbindlichkeiten (Total Debt der Quelle), 2022 deutlich höher als 2021. Aktienrückkäufe: Quelle ohne Angabe."
 },
 "VNA.DE": {
 "jahre": [
@@ -1450,7 +1634,36 @@ null,
 810.2,
 908.6,
 880.3
-]
+],
+"ocf": [
+1824,
+2084,
+1901,
+2402,
+2448
+],
+"div": [
+514.6,
+672.3,
+372.9,
+506.4,
+647.2
+],
+"cash": [
+1433,
+1302,
+1374,
+1757,
+3257
+],
+"debt": [
+47774,
+45742,
+43630,
+43386,
+43446
+],
+"hinweis": "Immobilienkonzern. Operativer Cashflow, Dividenden, Cash und Schulden aus stockanalysis.com. Capex nicht sinnvoll abgrenzbar (Quelle weist nur den Erwerb von Immobilien aus: 1.957 / 2.476 / 1.104 / 1.266 / 2.403) und deshalb weggelassen; Abschreibungen der Quelle schwanken stark (96 bis 510) und wurden weggelassen. Schulden Total Debt der Quelle. Aktienrückkäufe: Quelle ohne eindeutige Angabe."
 },
 "CON.DE": {
 "jahre": [
@@ -1495,7 +1708,35 @@ null,
 2051,
 1559
 ],
-"hinweis": "Umsatz ab 2024 ohne die abgespaltene Automotive-Sparte (Aumovio), Vorjahre nicht vergleichbar."
+"hinweis": "Umsatz ab 2024 ohne die abgespaltene Automotive-Sparte (Aumovio), Vorjahre nicht vergleichbar. Cashflow aus stockanalysis.com: Capex und Abschreibungen sinken ab 2024 auf etwa die Hälfte (vermutlich Neudarstellung ohne Automotive, nicht geprüft), operativer Cashflow 2025 (395) auffällig niedrig, nicht gegen den Bericht geprüft. Dividende 2021 und Aktienrückkäufe: Quelle ohne Angabe.",
+"ocf": [
+2954,
+2296,
+3328,
+2934,
+395
+],
+"capex": [
+1826,
+2133,
+2124,
+1056,
+1072
+],
+"da": [
+2229,
+2198,
+2118,
+1022,
+1202
+],
+"div": [
+null,
+440,
+300,
+440,
+500
+]
 },
 "BAS.DE": {
 "jahre": [
@@ -1711,7 +1952,43 @@ null,
 2473,
 2825,
 2761
-]
+],
+"ocf": [
+2141,
+1247,
+3255,
+3120,
+2535
+],
+"capex": [
+647,
+593,
+608,
+626,
+693
+],
+"da": [
+650,
+682,
+652,
+655,
+607
+],
+"div": [
+798,
+795,
+771,
+771,
+850
+],
+"bb": [
+null,
+803,
+195,
+null,
+856
+],
+"hinweis": "Cashflow aus stockanalysis.com. Aktienrückkäufe nur 2022, 2023 und 2025 (laut Quelle). Operativer Cashflow 2022 (1.247) deutlich niedriger als in den Folgejahren, nicht gegen den Bericht geprüft."
 },
 "DTG.DE": {
 "jahre": [
@@ -1742,7 +2019,56 @@ null,
 4152,
 3303
 ],
-"hinweis": "Umsatz einschließlich Finanzdienstleistungen."
+"hinweis": "Umsatz einschließlich Finanzdienstleistungen. Cashflow, Cash und Schulden (Quelle: stockanalysis.com, Seite des US-ADR in EUR) enthalten das Finanzdienstleistungsgeschäft; operativer Cashflow 2022 negativ und 2023 niedrig, nicht gegen den Bericht geprüft. Dividenden und Aktienrückkäufe 2021 und 2022: Quelle ohne Angabe. Schulden inkl. Leasingverbindlichkeiten.",
+"ocf": [
+2100,
+-523,
+386,
+1555,
+4336
+],
+"capex": [
+762,
+898,
+1026,
+1417,
+1117
+],
+"da": [
+977,
+1000,
+1039,
+1074,
+988
+],
+"div": [
+null,
+null,
+1070,
+1528,
+1462
+],
+"bb": [
+null,
+null,
+557,
+850,
+616
+],
+"cash": [
+6904,
+5597,
+6722,
+6363,
+8250
+],
+"debt": [
+16599,
+20839,
+25727,
+28666,
+29193
+]
 },
 "DHL.DE": {
 "jahre": [
@@ -1866,7 +2192,21 @@ null,
 254.17,
 294.33
 ],
-"hinweis": "Quelle: stockanalysis.com. Cashflow fehlt noch."
+"hinweis": "Quelle: stockanalysis.com (Gewinnrechnung). Operativer Cashflow und Capex stammen nicht von stockanalysis.com, sondern von Stockopedia (nicht gegen den Geschäftsbericht geprüft). Cash und Schulden: keine brauchbare Quelle, offen.",
+"ocf": [
+135,
+162,
+201,
+257,
+285
+],
+"capex": [
+29.2,
+29.6,
+24.3,
+24.9,
+21.1
+]
 },
 "EOAN.DE": {
 "jahre": [
