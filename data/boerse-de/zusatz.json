@@ -4730,7 +4730,14 @@ null,
 322.9,
 251.1
 ],
-"hinweis": "Berichtswährung GBP (Mio. GBP). Nur Cashflow ergänzt; Bilanz und Gewinnrechnung: Quelle nicht abrufbar."
+"hinweis": "Berichtswährung GBP (Mio. GBP). Cashflow und operatives Ergebnis aus der Quelle (Operating Income); Cash und Schulden: Bilanzseite der Quelle nicht abrufbar.",
+"ebit": [
+644.7,
+757.5,
+810.6,
+819,
+758.6
+]
 },
 "CRDA.L": {
 "jahre": [
@@ -4775,7 +4782,14 @@ null,
 1.8,
 7.3
 ],
-"hinweis": "Berichtswährung GBP (Mio. GBP). Nur Cashflow ergänzt; Bilanz und Gewinnrechnung: Quelle nicht abrufbar."
+"hinweis": "Berichtswährung GBP (Mio. GBP). Cashflow und operatives Ergebnis aus der Quelle (Operating Income, wie ausgewiesen, nicht bereinigt; 2025 deutlich niedriger); Cash und Schulden: Bilanzseite der Quelle nicht abrufbar.",
+"ebit": [
+437.9,
+447.1,
+252.9,
+231.9,
+116.3
+]
 },
 "CCH.L": {
 "jahre": [
@@ -4813,7 +4827,42 @@ null,
 3878,
 4271
 ],
-"hinweis": "Berichtswährung EUR (Mio. EUR); Umsatz aus der boerse.de-Reihe. Cashflow, Zinsen, Steuern: Quelle nicht abrufbar. Schulden inkl. Leasingverbindlichkeiten."
+"hinweis": "Berichtswährung EUR (Mio. EUR); Umsatz aus der boerse.de-Reihe. Cashflow aus der Quelle ergänzt; Zinsen und Steuern: Quelle nicht abrufbar. Aktienrückkäufe nur 2023 und 2024. Schulden inkl. Leasingverbindlichkeiten.",
+"ocf": [
+1142,
+1235,
+1387,
+1392,
+1514
+],
+"capex": [
+506.5,
+523.4,
+610.7,
+615.4,
+752.6
+],
+"da": [
+331.3,
+404.8,
+386.5,
+375.3,
+425.7
+],
+"div": [
+233.6,
+260.2,
+287.2,
+339.7,
+374.4
+],
+"bb": [
+null,
+null,
+42.6,
+183,
+null
+]
 },
 "PSON.L": {
 "jahre": [
@@ -4973,7 +5022,21 @@ null,
 4079,
 4192
 ],
-"hinweis": "Berichtswährung USD (Mio. USD); Umsatz aus der boerse.de-Reihe. Cash und Schulden: Bilanzseite der Quelle nicht abrufbar."
+"hinweis": "Berichtswährung USD (Mio. USD); Umsatz aus der boerse.de-Reihe. Cash und Schulden aus der Quelle (Seite des US-ADR, ebenfalls USD). Schulden inkl. Leasingverbindlichkeiten.",
+"cash": [
+1290,
+350,
+302,
+619,
+557
+],
+"debt": [
+3339,
+2872,
+3084,
+3321,
+3327
+]
 },
 "KGF.L": {
 "jahre": [
@@ -5474,7 +5537,21 @@ null,
 2229,
 2245
 ],
-"hinweis": "Geschäftsjahr endet Anfang März (2025 = Geschäftsjahr bis 01.03.2025, wie in der boerse.de-Reihe). Berichtswährung GBP (Mio. GBP); Umsatz aus der boerse.de-Reihe. 2021: Quelle beginnt mit dem Geschäftsjahr 2022. Cash und Schulden: Bilanzseite der Quelle nicht abrufbar. Capex 2024 einschließlich Sondereffekt der Quelle (1.381), nicht gegen den Bericht geprüft."
+"hinweis": "Geschäftsjahr endet Anfang März (2025 = Geschäftsjahr bis 01.03.2025, wie in der boerse.de-Reihe). Berichtswährung GBP (Mio. GBP); Umsatz aus der boerse.de-Reihe. 2021: Quelle beginnt mit dem Geschäftsjahr 2022. Schulden inkl. Leasingverbindlichkeiten. Capex 2024 einschließlich Sondereffekt der Quelle (1.381), nicht gegen den Bericht geprüft.",
+"cash": [
+null,
+436,
+683,
+877,
+727
+],
+"debt": [
+null,
+7414,
+7145,
+6549,
+6608
+]
 },
 "WTB.L": {
 "jahre": [
@@ -5585,7 +5662,56 @@ null,
 1036,
 1076
 ],
-"hinweis": "Geschäftsjahr endet im Juli (2025 = Geschäftsjahr bis 31.07.2025). Berichtswährung GBP (Mio. GBP). Nur Bruttogewinn und operatives Ergebnis ergänzt (Quelle ab 2022; 2024 mit neu dargestellter Basis ohne aufgegebene Bereiche, Umsatz 2.778 gegenüber 3.132 in der boerse.de-Reihe, daher nicht vergleichbar). Cashflow und Bilanz: Quelle nicht abrufbar."
+"hinweis": "Geschäftsjahr endet im Juli (2025 = Geschäftsjahr bis 31.07.2025). Berichtswährung GBP (Mio. GBP). Bruttogewinn und operatives Ergebnis aus der Quelle (ab 2022; 2024 mit neu dargestellter Basis ohne aufgegebene Bereiche, Umsatz 2.778 gegenüber 3.132 in der boerse.de-Reihe, daher nicht vergleichbar). Cashflow und Bilanz aus der Quelle ergänzt; ob 2022 und 2023 noch aufgegebene Bereiche enthalten, nicht geprüft. 2021: Quelle beginnt mit dem Geschäftsjahr 2022. Schulden inkl. Leasingverbindlichkeiten.",
+"ocf": [
+null,
+279,
+293,
+418,
+456
+],
+"capex": [
+null,
+58,
+53,
+68,
+72
+],
+"da": [
+null,
+119,
+126,
+128,
+131
+],
+"div": [
+null,
+150,
+143,
+147,
+152
+],
+"bb": [
+null,
+527,
+231,
+90,
+326
+],
+"cash": [
+null,
+1056,
+285,
+459,
+195
+],
+"debt": [
+null,
+1206,
+672,
+672,
+667
+]
 },
 "SPX.L": {
 "jahre": [
@@ -5623,7 +5749,56 @@ null,
 1266,
 1302
 ],
-"hinweis": "Berichtswährung GBP (Mio. GBP); Umsatz aus der boerse.de-Reihe. Nur Gewinnrechnung ergänzt; Cashflow und Bilanz: Quelle nicht abrufbar. Operatives Ergebnis laut Quelle (Operating Income)."
+"hinweis": "Berichtswährung GBP (Mio. GBP); Umsatz aus der boerse.de-Reihe. Operatives Ergebnis laut Quelle (Operating Income). Cashflow und Bilanz aus der Quelle ergänzt; Schulden inkl. Leasingverbindlichkeiten, 2022 deutlich höher als 2021. Aktienrückkäufe 2024 und 2025: keine.",
+"ocf": [
+273.4,
+241.1,
+298.6,
+312.8,
+296.2
+],
+"capex": [
+52.8,
+104.3,
+84,
+74.3,
+47.8
+],
+"da": [
+61.1,
+66.5,
+88.9,
+90.6,
+91
+],
+"div": [
+91,
+103.1,
+114.5,
+119,
+122.5
+],
+"bb": [
+26.1,
+20.8,
+12.8,
+null,
+null
+],
+"cash": [
+274.6,
+328.9,
+359.7,
+334.2,
+369
+],
+"debt": [
+465.2,
+1085,
+1123,
+1026,
+1024
+]
 },
 "SVT.L": {
 "jahre": [
