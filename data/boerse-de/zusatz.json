@@ -3726,6 +3726,277 @@ null,
 23720
 ],
 "hinweis": "Berichtswährung GBP (Mio. GBP). Gewinnrechnung der Quelle 2021 offenbar ohne das abgespaltene Consumer-Geschäft (Haleon) dargestellt (Umsatz 24.696), die boerse.de-Umsatzreihe 2021 enthält es noch (34.114); Cashflow 2021 Konzern inkl. Haleon. Schulden inkl. Leasingverbindlichkeiten."
+},
+"REL.L": {
+"jahre": [
+2021,
+2022,
+2023,
+2024,
+2025
+],
+"debt": [
+6167,
+6730,
+6497,
+6544,
+7267
+],
+"hinweis": "Berichtswährung GBP. Nur Schulden ergänzt (Lücke in den ESEF-Daten), inkl. Leasingverbindlichkeiten (Total Debt der Quelle)."
+},
+"BATS.L": {
+"jahre": [
+2021,
+2022,
+2023,
+2024,
+2025
+],
+"ebit": [
+10908,
+11502,
+-10571,
+9796,
+9756
+],
+"ocf": [
+9717,
+10394,
+10714,
+10125,
+6342
+],
+"capex": [
+527,
+523,
+460,
+486,
+551
+],
+"div": [
+4910,
+4975,
+5114,
+5269,
+5292
+],
+"da": [
+901,
+943,
+23836,
+2114,
+2095
+],
+"bb": [
+82,
+2092,
+110,
+792,
+2056
+],
+"cash": [
+2809,
+3446,
+4659,
+5297,
+3827
+],
+"debt": [
+39658,
+43588,
+39917,
+36950,
+35070
+],
+"zins": [
+1471,
+1627,
+1832,
+1772,
+1774
+],
+"steuer": [
+2189,
+2478,
+-2872,
+357,
+2094
+],
+"brutto": [
+21087,
+23076,
+22392,
+21297,
+21167
+],
+"hinweis": "Berichtswährung GBP (Mio. GBP); Umsatz aus der boerse.de-Reihe. Einmaleffekt 2023: Wertminderungen auf Markenwerte (Abschreibungen 23.836, operatives Ergebnis -10.571, Steuern -2.872). Operativer Cashflow 2025 laut Quelle deutlich niedriger (6.342), nicht gegen den Bericht geprüft. Schulden inkl. Leasingverbindlichkeiten."
+},
+"RIO.L": {
+"jahre": [
+2021,
+2022,
+2023,
+2024,
+2025
+],
+"ebit": [
+29437,
+18095,
+14959,
+13990,
+14521
+],
+"ocf": [
+25345,
+16134,
+15160,
+15599,
+16832
+],
+"capex": [
+7384,
+6750,
+7086,
+9621,
+12335
+],
+"div": [
+10918,
+10743,
+6470,
+7025,
+6145
+],
+"da": [
+4496,
+4614,
+4887,
+5545,
+6274
+],
+"cash": [
+12807,
+6775,
+9673,
+8495,
+8872
+],
+"debt": [
+13531,
+12271,
+14868,
+14222,
+23748
+],
+"zins": [
+178,
+346,
+980,
+772,
+1051
+],
+"steuer": [
+8236,
+5614,
+3832,
+4041,
+4319
+],
+"brutto": [
+31341,
+21299,
+17298,
+16179,
+16210
+],
+"hinweis": "Berichtswährung USD (Mio. USD); Umsatz aus der boerse.de-Reihe. Aktienrückkäufe: Quelle ohne Angabe. Schulden 2025 sprunghaft höher (Quelle, nicht gegen den Bericht geprüft). Schulden inkl. Leasingverbindlichkeiten."
+},
+"GLEN.L": {
+"jahre": [
+2021,
+2022,
+2023,
+2024,
+2025
+],
+"ebit": [
+9802,
+24831,
+7390,
+3332,
+3345
+],
+"ocf": [
+8860,
+13659,
+11036,
+10055,
+5642
+],
+"capex": [
+3618,
+4177,
+4484,
+5611,
+5932
+],
+"div": [
+1615,
+3400,
+6450,
+1580,
+1192
+],
+"da": [
+6866,
+7968,
+7285,
+7339,
+7023
+],
+"bb": [
+746,
+2503,
+3672,
+230,
+1992
+],
+"cash": [
+3241,
+1923,
+1925,
+2389,
+2945
+],
+"debt": [
+34741,
+29373,
+32850,
+38946,
+42125
+],
+"zins": [
+1348,
+1771,
+2515,
+2921,
+3246
+],
+"steuer": [
+3026,
+6368,
+2207,
+1696,
+201
+],
+"brutto": [
+12448,
+27517,
+10778,
+6282,
+6124
+],
+"hinweis": "Berichtswährung USD (Mio. USD); Umsatz aus der boerse.de-Reihe. Handelsunternehmen mit Rohstoffhandel: Schulden inkl. Leasingverbindlichkeiten, nicht um Handelsbestände bereinigt."
 }
 }
 }

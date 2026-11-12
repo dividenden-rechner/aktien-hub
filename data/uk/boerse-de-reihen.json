@@ -360,6 +360,7 @@ null
 "RIO.L": {
 "name": "Rio Tinto",
 "isin": "GB0007188757",
+"waehrung": "USD",
 "umsatz": [
 43165,
 44611,
@@ -531,6 +532,7 @@ null
 "BATS.L": {
 "name": "British American Tobacco",
 "isin": "GB0002875804",
+"waehrung": "GBP",
 "umsatz": [
 25877,
 25776,
@@ -616,6 +618,7 @@ null
 "GLEN.L": {
 "name": "Glencore",
 "isin": "JE00B4T3BW64",
+"waehrung": "USD",
 "umsatz": [
 215111,
 142338,
@@ -1041,6 +1044,7 @@ null
 "REL.L": {
 "name": "RELX",
 "isin": "GB00B2B0DG97",
+"waehrung": "GBP",
 "umsatz": [
 7874,
 7110,
