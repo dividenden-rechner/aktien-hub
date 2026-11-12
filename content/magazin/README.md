@@ -3,13 +3,14 @@
 <!-- uebersicht-start -->
 ## Übersicht (wird automatisch erstellt, neueste zuerst)
 
-### Zur Freigabe: Entwürfe (7)
+### Zur Freigabe: Entwürfe (8)
 
 Datei anklicken, dann Stift-Symbol: Zeile `draft: true` löschen und speichern, dann geht der Artikel online.
 
 | Datum | Titel | Datei |
 |---|---|---|
 | 15.11.2026 10:00 | Cindy aus London und Jensen Huang: Die älteste Falle der Welt und die Frage, was Anleger daraus machen | [79738889_2026-11-10/9640_2140-huang-honigfalle-reportage-nvidia-quartalszahlen.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/79738889_2026-11-10/9640_2140-huang-honigfalle-reportage-nvidia-quartalszahlen.md) |
+| 12.11.2026 13:45 | Kraft Heinz verspricht Wachstum ab 2027 und zahlt dafür mit sinkenden Gewinnen | [79738887_2026-11-12/9670_1345-kraft-heinz-investor-day-2026-ziele-2029-dividende.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/79738887_2026-11-12/9670_1345-kraft-heinz-investor-day-2026-ziele-2029-dividende.md) |
 | 05.11.2026 23:05 | Wahlsieg der Demokraten löscht den Börsenrausch: Chipwerte brechen ein, Nasdaq rutscht in die Korrektur | [79738894_2026-11-05/7694_2305-marktueberblick-wahlsieg-demokraten-chipwerte-nasdaq-korrektur.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/79738894_2026-11-05/7694_2305-marktueberblick-wahlsieg-demokraten-chipwerte-nasdaq-korrektur.md) |
 | 29.10.2026 23:27 | Comfort Systems USA: Umsatz steigt im Q3 2026 auf 3,8 Milliarden US-Dollar | [79738970_2026-10-29/7672_2327-comfort-systems-usa-q3-2026-zahlen.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/79738970_2026-10-29/7672_2327-comfort-systems-usa-q3-2026-zahlen.md) |
 | 29.10.2026 23:26 | Oracle Corporation: Langfristiger Ausblick und Finanzziele bis FY30 | [79738970_2026-10-29/7673_2326-oracle-ausblick-investor-day-2026.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/79738970_2026-10-29/7673_2326-oracle-ausblick-investor-day-2026.md) |
@@ -17,10 +18,11 @@ Datei anklicken, dann Stift-Symbol: Zeile `draft: true` löschen und speichern, 
 | 29.10.2026 22:42 | Amazon steigert Umsatz im dritten Quartal auf 201,9 Milliarden Dollar | [79738970_2026-10-29/7757_2242-amazon-q3-2026-zahlen.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/79738970_2026-10-29/7757_2242-amazon-q3-2026-zahlen.md) |
 | 29.10.2026 10:12 | Shell erzielt im dritten Quartal 10,8 Milliarden Dollar Gewinn | [79738970_2026-10-29/8987_1012-shell-q3-2026-ergebnisse.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/79738970_2026-10-29/8987_1012-shell-q3-2026-ergebnisse.md) |
 
-### Online (364)
+### Online (365)
 
 | Datum | Titel | Datei |
 |---|---|---|
+| 12.11.2026 13:45 | Nebius: Umsatz plus 571 %, doch Verzögerungen drücken die Prognose | [79738887_2026-11-12/8739_1345-nebius-q3-2026-umsatz-prognose-verzoegerungen.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/79738887_2026-11-12/8739_1345-nebius-q3-2026-umsatz-prognose-verzoegerungen.md) |
 | 12.11.2026 12:59 | Kurssprung und Dividendenfokus bei Japan Tobacco | [79738887_2026-11-12/8740_1259-japan-tobacco-morgenmeldung.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/79738887_2026-11-12/8740_1259-japan-tobacco-morgenmeldung.md) |
 | 12.11.2026 11:45 | Hapag-Lloyd verdient im dritten Quartal fast sechsmal so viel wie vor einem Jahr und hebt die Prognose erneut an | [79738887_2026-11-12/9680_1145-hapag-lloyd-9m-2026-ergebnis-prognose-angehoben.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/79738887_2026-11-12/9680_1145-hapag-lloyd-9m-2026-ergebnis-prognose-angehoben.md) |
 | 12.11.2026 11:30 | Siemens schließt das Geschäftsjahr mit 108 Milliarden Euro Aufträgen ab und erhöht die Dividende auf 5,50 Euro | [79738887_2026-11-12/9681_1130-siemens-q4-2026-auftragseingang-rekord-dividende-5-50.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/79738887_2026-11-12/9681_1130-siemens-q4-2026-auftragseingang-rekord-dividende-5-50.md) |

@@ -1,6 +1,108 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:dc="http://purl.org/dc/elements/1.1/">
-<channel><title>Dividenden-Rechner Aktien-Hub: News</title><link>https://dividenden-rechner.github.io/aktien-hub/news/</link><description>Dividenden, Kennzahlen und Steuern erklärt</description><language>de-DE</language><lastBuildDate>Thu, 12 Nov 2026 12:12:01 +0000</lastBuildDate><atom:link href="https://dividenden-rechner.github.io/aktien-hub/news/feed.xml" rel="self" type="application/rss+xml"/>
+<channel><title>Dividenden-Rechner Aktien-Hub: News</title><link>https://dividenden-rechner.github.io/aktien-hub/news/</link><description>Dividenden, Kennzahlen und Steuern erklärt</description><language>de-DE</language><lastBuildDate>Thu, 12 Nov 2026 12:52:14 +0000</lastBuildDate><atom:link href="https://dividenden-rechner.github.io/aktien-hub/news/feed.xml" rel="self" type="application/rss+xml"/>
+<item><title>Nebius: Umsatz plus 571 %, doch Verzögerungen drücken die Prognose</title><link>https://dividenden-rechner.github.io/aktien-hub/news/nebius-q3-2026-umsatz-prognose-verzoegerungen/</link><guid isPermaLink="true">https://dividenden-rechner.github.io/aktien-hub/news/nebius-q3-2026-umsatz-prognose-verzoegerungen/</guid><pubDate>Thu, 12 Nov 2026 13:45:00 +0100</pubDate><category>Quartalszahlen</category><dc:creator>Aus der Redaktion</dc:creator><description>Nebius übertrifft im dritten Quartal die Umsatzschätzung, ein Drittel davon ist aber eine Einmalzahlung. Verspätete Rechenzentren drücken das Jahresziel ans untere Ende, für 2027 verspricht der Konzern 12 bis 13 Milliarden Dollar Umsatz und die Gewinnschwelle.</description><enclosure url="https://dividenden-rechner.github.io/aktien-hub/assets/magazin/nebius-q3-2026-umsatz-prognose-verzoegerungen.png" type="image/png" length="0"/><content:encoded><![CDATA[<div class="admonition kurz">
+<p class="admonition-title">Kurz gesagt (drittes Quartal 2026)</p>
+<p><strong>Umsatz:</strong> 981 Mio. $ (+571 %)<br />
+<strong>Nettoergebnis:</strong> −37,5 Mio. $ (Vorjahr −119,6 Mio. $)</p>
+<ol>
+<li><strong>Über der Schätzung, mit Hilfe:</strong> Der Umsatz liegt rund 8 % über dem Konsens, enthält aber rund 325 Mio. Dollar Einmalerlös aus dem neuen Partnermodell. Das operative Ergebnis wird erstmals positiv.</li>
+<li><strong>Bessere Verträge:</strong> Vorauszahlungen der Kunden decken bei neuen Abschlüssen mehr als die gesamten Baukosten, die Preise je GPU-Stunde steigen um über 20 %.</li>
+<li><strong>Prognose:</strong> 2026 nur noch am unteren Ende von 3,0 bis 3,4 Mrd. Dollar, weil Partner-Rechenzentren später fertig werden. 2027: 12 bis 13 Mrd. Dollar Umsatz und Gewinnschwelle vor Steuern zum Jahresende.</li>
+</ol>
+</div>
+<h2 id="ein-starkes-quartal-mit-einer-funote">Ein starkes Quartal mit einer Fußnote</h2>
+<p>Bei Nebius gehört der Superlativ inzwischen zum Quartalsbericht. 981 Millionen Dollar Umsatz, fast siebenmal so viel wie vor einem Jahr, ein bereinigtes <a class="glossar-link" href="https://dividenden-rechner.github.io/aktien-hub/grundlagen/ebitda-ebit/" title="EBIT und EBITDA einfach erklärt">Ebitda</a> von 466 Millionen Dollar und zum ersten Mal ein operativer Gewinn. Gründer Arkady Volozh schreibt im Aktionärsbrief, die Nachfrage sei außergewöhnlich stark. Die Analysten hatten im Durchschnitt rund 907 Millionen Dollar Umsatz erwartet.</p>
+<p>Der Überschuss über die Schätzung hat allerdings eine Fußnote, die über die Bewertung des Quartals entscheidet. Rund 325 Millionen Dollar stammen aus einem sogenannten Asset-Light-Modell: Partner bauen und bezahlen Rechenzentren selbst und betreiben darauf die Technik und Cloud-Software von Nebius. Für die Freischaltung der ersten Phase verbucht Nebius einen einmaligen Erlös. Ohne diesen Betrag bleiben rund 656 Millionen Dollar, gut ein Viertel unter dem Konsens und nur rund 12 % mehr als im zweiten Quartal. Nebius rechnet damit, dass solche Erlöse mit wachsendem Partnernetz regelmäßiger werden.</p>
+<p>Die Börse sieht das vorsichtig. Vorbörslich gab die Aktie um rund 8 % nach, nachdem sie am Vortag im Sog der Zahlen von CoreWeave um gut 15 % gestiegen war. Seit dem Hoch hat sie fast die Hälfte ihres Werts verloren.</p>
+<h2 id="die-zahlen-im-uberblick">Die Zahlen im Überblick</h2>
+<p><img alt="Nebius: Finanzkennzahlen des dritten Quartals 2026 und Ausblick auf 2027" src="https://dividenden-rechner.github.io/aktien-hub/assets/magazin/nebius-q3-2026-kennzahlen.jpg" /></p>
+<div class="tablewrap"><table>
+<thead>
+<tr>
+<th>Kennzahl</th>
+<th style="text-align: right;">Q3 2026</th>
+<th style="text-align: right;">Q3 2025</th>
+<th style="text-align: right;">Veränderung</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Umsatz</td>
+<td style="text-align: right;">980,8 Mio. $</td>
+<td style="text-align: right;">146,1 Mio. $</td>
+<td style="text-align: right;">+571 %</td>
+</tr>
+<tr>
+<td>davon KI-Cloud</td>
+<td style="text-align: right;">973,8 Mio. $</td>
+<td style="text-align: right;">–</td>
+<td style="text-align: right;">+643 %</td>
+</tr>
+<tr>
+<td>Bereinigtes Ebitda</td>
+<td style="text-align: right;">465,8 Mio. $</td>
+<td style="text-align: right;">−5,2 Mio. $</td>
+<td style="text-align: right;">–</td>
+</tr>
+<tr>
+<td>Marge bereinigtes Ebitda</td>
+<td style="text-align: right;">47 %</td>
+<td style="text-align: right;">–</td>
+<td style="text-align: right;">–</td>
+</tr>
+<tr>
+<td>Operatives Ergebnis</td>
+<td style="text-align: right;">50,4 Mio. $</td>
+<td style="text-align: right;">−130,2 Mio. $</td>
+<td style="text-align: right;">–</td>
+</tr>
+<tr>
+<td>Nettoergebnis</td>
+<td style="text-align: right;">−37,5 Mio. $</td>
+<td style="text-align: right;">−119,6 Mio. $</td>
+<td style="text-align: right;">–</td>
+</tr>
+<tr>
+<td>Investitionen (Capex)</td>
+<td style="text-align: right;">7,3 Mrd. $</td>
+<td style="text-align: right;">1,0 Mrd. $</td>
+<td style="text-align: right;">+664 %</td>
+</tr>
+<tr>
+<td>Operativer Cashflow</td>
+<td style="text-align: right;">−273,0 Mio. $</td>
+<td style="text-align: right;">−80,6 Mio. $</td>
+<td style="text-align: right;">–</td>
+</tr>
+</tbody>
+</table></div>
+<p>Die Kostenquoten sinken deutlich, weil der Umsatz schneller wächst als Personal und Verwaltung. Die Kosten der Umsätze fallen von 29 auf 22 % des Umsatzes, Verwaltung und Vertrieb von 61 auf 24 %. Einen Teil der Verbesserung liefert die Buchhaltung: Seit Jahresbeginn schreibt Nebius Server und Netzwerktechnik über fünf statt vier Jahre ab, das senkt die jährliche Abschreibung. Unter dem Strich bleibt ein Verlust, weil die Zinsen auf 112,5 Millionen Dollar steigen und die vorzeitige Wandlung von Anleihen 49,5 Millionen Dollar kostet.</p>
+<h2 id="bessere-vertrage-kunden-zahlen-den-bau-vorab">Bessere Verträge: Kunden zahlen den Bau vorab</h2>
+<p>Der stärkste Teil des Berichts betrifft die Konditionen. Bei den im dritten Quartal unterzeichneten Verträgen decken die Vorauszahlungen der Kunden mehr als 100 % der zugehörigen Investitionen, einschließlich Bau und Netzwerk. Im zweiten Quartal waren es 50 bis 60 %. Über 90 % des neuen Vertragswerts sind mit einer Vorauszahlung verbunden. Die Preise je GPU-Stunde steigen im Schnitt um mehr als 20 %, der jährliche Vertragswert je Megawatt auf über 25 Millionen Dollar. Die Amortisationszeit für vergleichbare Verträge sinkt von einem Jahr und zehn Monaten auf ein Jahr und sieben Monate.</p>
+<p><img alt="Nebius: Deckung der Investitionen durch Vorauszahlungen und Amortisationszeit im zweiten und dritten Quartal 2026" src="https://dividenden-rechner.github.io/aktien-hub/assets/magazin/nebius-q3-2026-vorauszahlungen.jpg" /></p>
+<p>Seit Beginn des dritten Quartals haben Kunden Verträge über 12 Milliarden Dollar unterschrieben. Neu sind große Softwarekonzerne: Databricks, Datadog und Snowflake schlossen erstmals mehrjährige Verträge, Palantir führt Nebius als bevorzugten Cloud-Partner. Die Plattform für Rechenaufgaben laufender KI-Modelle, Token Factory, nähert sich einem Jahresumsatz von mehreren hundert Millionen Dollar. Für Dividendenanleger ist das relevant, weil Nebius damit weniger von wenigen großen KI-Labors abhängt als ein reiner Vermieter von Rechenleistung.</p>
+<p>Ein Punkt in der Bilanz verdient Aufmerksamkeit. Die Forderungen steigen seit Jahresende von 0,7 auf 4,0 Milliarden Dollar, im gleichen Zeitraum wachsen die passiven Abgrenzungen für vorausbezahlte Leistungen auf 9,4 Milliarden Dollar. Ein Teil der vereinbarten Vorauszahlungen ist demnach in Rechnung gestellt, aber noch nicht auf dem Konto. Der operative Cashflow des Quartals liegt deshalb bei minus 273 Millionen Dollar. Auch die vertraglich gesicherten künftigen Umsätze (RPO) wachsen im Quartal nur um 3 % auf 38,7 Milliarden Dollar.</p>
+<h2 id="die-achillesferse-rechenzentren-von-partnern">Die Achillesferse: Rechenzentren von Partnern</h2>
+<p>Wo Nebius selbst baut, liegt der Konzern nach eigenen Angaben im Plan oder davor. Probleme entstehen bei angemieteten Standorten. In New Jersey, wo Nebius Kapazität für Microsoft bereitstellt, hat der Betreiber DataOne die provisorische Stromversorgung früher als geplant abgebaut, bevor die dauerhafte Versorgung mit Brennstoffzellen von Bloom Energy steht. Bis Jahresende soll gut die Hälfte der für Microsoft vereinbarten Kapazität laufen, der Rest im zweiten Quartal 2027. Auch weitere Partnerstandorte rutschen ins erste Halbjahr 2027. Die Verträge bleiben laut Nebius bestehen.</p>
+<p>Die Folgen stehen in der Prognose. Für 2026 erwartet Nebius nur noch das untere Ende der Spanne von 3,0 bis 3,4 Milliarden Dollar, rechnerisch rund 1,0 Milliarden Dollar im vierten Quartal. Den hochgerechneten Jahresumsatz (ARR) von über 7 Milliarden Dollar erreicht der Konzern etwa zwei Monate später, im Februar. Die Kennzahl ARR will Nebius ab 2027 nicht mehr ausweisen, sie bilde das Geschäft nicht mehr richtig ab. Kritiker werden darin einen bequemen Zeitpunkt sehen, Nebius verweist auf die stärkere Gewichtung von Umsatz und Vorsteuerergebnis.</p>
+<h2 id="die-rechnung-fur-2027-die-investitionen-ubersteigen-den-umsatz-um-ein-vielfaches">Die Rechnung für 2027: Die Investitionen übersteigen den Umsatz um ein Vielfaches</h2>
+<p>Für 2027 nennt Nebius erstmals Ziele: 12 bis 13 Milliarden Dollar Umsatz, etwa das Vierfache von 2026, und die Gewinnschwelle vor Steuern im vierten Quartal, nach Zinsen. Die Investitionen sollen auf 40 bis 45 Milliarden Dollar steigen, nach rund 27 Milliarden in diesem Jahr. Dieser Wert liegt bereits über der bisherigen Spanne von 20 bis 25 Milliarden, weil Nebius eigene Standorte für 2027 vorzieht, etwa in Missouri, Alabama und in Finnland.</p>
+<p>Bezahlt werden soll das zu 75 bis 85 % aus Vorauszahlungen und Krediten, die mit den Verträgen großer Kunden mit guter Bonität besichert sind. Ein erstes solches Darlehen über 775 Millionen Dollar zu SOFR plus 2,5 Prozentpunkten wurde im Juli abgeschlossen. Für 2027 erwartet Nebius 17 bis 20 Milliarden Dollar Vorauszahlungen, nach 10 Milliarden in diesem Jahr.</p>
+<p>Der Rest kommt vom Kapitalmarkt, und hier zahlen Aktionäre mit. 2026 hat Nebius Wandelanleihen über 5,8 Milliarden Dollar ausgegeben, rund 1 Milliarde Dollar über den laufenden Verkauf neuer Aktien eingesammelt und im Oktober einen Kredit über 3,5 Milliarden Dollar bei der Citi aufgenommen. Die Finanzschulden stiegen seit Jahresende von 4,1 auf 14,2 Milliarden Dollar, die verwässerte Aktienzahl im Quartal um 24 % zum Vorjahr. Dem stehen 7,4 Milliarden Dollar Barmittel und Beteiligungen gegenüber, darunter ein Minderheitsanteil am Datenbankanbieter ClickHouse, der zuletzt mit rund 15 Milliarden Dollar bewertet wurde. Die Neubewertung dieses Anteils erklärt auch den Gewinn von 393 Millionen Dollar nach neun Monaten.</p>
+<h2 id="was-fur-und-gegen-die-aktie-spricht">Was für und gegen die Aktie spricht</h2>
+<p><strong>Dafür:</strong> Die Nachfrage ist belegt, und die Kunden akzeptieren härtere Bedingungen: höhere Preise, längere Laufzeiten, Vorauszahlungen über den Baukosten. Die Kundenbasis wird breiter, die Kostenquoten sinken, das Cloudgeschäft erreicht eine bereinigte Ebitda-Marge von 53 %. Eigene Standorte geben mehr Kontrolle über Termine und Kosten, und über 4 Gigawatt Stromleistung sind bereits vertraglich gesichert.</p>
+<p><strong>Dagegen:</strong> Der Umsatz-Überschuss hängt an einem Einmalerlös, das Jahresziel sinkt an den unteren Rand, und die Verzögerungen bei Partnern zeigen, wie abhängig das Wachstum von Strom und Baustellen ist. Die Investitionen wachsen schneller als der Umsatz, der Cashflow bleibt negativ, und jede Finanzierungsrunde verwässert oder verschuldet. Die Gewinnschwelle liegt mehr als ein Jahr entfernt und setzt die längere Abschreibung von fünf Jahren voraus. Wie im Fall von CoreWeave reagiert die Aktie heftig auf jede Nachricht zur Finanzierung des KI-Ausbaus, mehr dazu in unserer Analyse zum <a href="https://dividenden-rechner.github.io/aktien-hub/news/ki-finanzierungsnetz-nvidia-meta-coreweave/">KI-Finanzierungsnetz</a>.</p>
+<h2 id="was-als-nachstes-ansteht">Was als Nächstes ansteht</h2>
+<p>Entscheidend sind die kommenden Wochen in New Jersey: Nebius erwartet dort zusätzliche Kapazität aus den Brennstoffzellen. Danach zählt, ob die neuen Standorte 2027 pünktlich ans Netz gehen und ob die Vorauszahlungen tatsächlich in Höhe von 17 bis 20 Milliarden Dollar eingehen. Einkommensanleger finden bei Nebius keine Dividende, die Aktie bleibt eine Wette auf Wachstum mit hohem Kapitalbedarf.</p>
+<details class="quellen"><summary>Quellen</summary><ul>
+<li>Nebius Group: Letter to shareholders Q3 2026 (12.11.2026)</li>
+<li>Nebius Group: Nebius reports third quarter 2026 financial results (12.11.2026)</li>
+<li><a href="https://nebius.com/investor-hub" rel="noopener">Nebius Investor Hub</a></li>
+<li><a href="https://www.marketscreener.com/news/nebius-the-race-for-gigawatts-in-q3-ce785ed8db8fff23" rel="noopener">Marketscreener: Nebius, the race for gigawatts in Q3</a></li>
+<li><a href="https://scanx.trade/stock-market-news/companies/nebius-group-q3-preview-revenue-seen-907-53m-eps-loss-widens/55965498" rel="noopener">scanx.trade: Nebius Group Q3 Preview</a></li>
+<li><a href="https://www.benzinga.com/trading-ideas/previews/26/11/63156890/nebius-q3-preview-stock-down-47-from-highs-market-expert-says-investors-could-get-relief-rally" rel="noopener">Benzinga: Nebius Q3 Preview</a></li>
+</ul></details>]]></content:encoded></item>
 <item><title>Kurssprung und Dividendenfokus bei Japan Tobacco</title><link>https://dividenden-rechner.github.io/aktien-hub/news/japan-tobacco-morgenmeldung/</link><guid isPermaLink="true">https://dividenden-rechner.github.io/aktien-hub/news/japan-tobacco-morgenmeldung/</guid><pubDate>Thu, 12 Nov 2026 12:59:00 +0100</pubDate><category>Analyse</category><dc:creator>Aus der Redaktion</dc:creator><description>Eine Analyse zur aktuellen Entwicklung bei Japan Tobacco mit Blick auf Kennzahlen, Risiken und Einordnung.</description><enclosure url="https://images.unsplash.com/photo-1672552226380-486fe900b322?ixid=M3wxMTE3OTgzfDB8MXxzZWFyY2h8NXx8dG9iYWNjbyUyMHdhcmVob3VzZSUyMGxvZ2lzdGljc3xlbnwxfDB8fHwxNzk0NDg1MTI1fDA&amp;ixlib=rb-4.1.0&amp;w=1600&amp;h=900&amp;fit=crop&amp;crop=entropy&amp;q=80&amp;fm=jpg" type="image/jpeg" length="0"/><content:encoded><![CDATA[<div class="admonition kurz">
 <p class="admonition-title">Kurz gesagt</p>
 <ol>
@@ -1992,22 +2094,4 @@
 <h2 id="wachstum-durch-akquisitionen-und-hohe-zinslast">Wachstum durch Akquisitionen und hohe Zinslast</h2>
 <p>Die TransDigm Group hat im vierten Quartal des Geschäftsjahres 2026 den Nettoumsatz um 23 Prozent auf 2.988 Millionen US-Dollar gesteigert. Für das gesamte Geschäftsjahr wuchs der Umsatz um 20 Prozent auf 10,6 Milliarden US-Dollar. Trotz dieser starken operativen Entwicklung sank der Nettogewinn im vierten Quartal leicht um 4 Prozent auf 586 Millionen US-Dollar. Ursächlich hierfür waren vor allem gestiegene Zinsaufwendungen infolge einer höheren Bruttoschuldenlast sowie höhere Steueraufwendungen. Gleichzeitig investierte das Unternehmen massiv in externes Wachstum und schloss unter anderem die Übernahme von Prince &amp; Izant für rund 1,1 Milliarden US-Dollar ab. Insgesamt wurden im abgelaufenen Geschäftsjahr über 7 Milliarden US-Dollar in Fusionen, Übernahmen sowie Aktienrückkäufe gelenkt. Für das neue Geschäftsjahr 2027 stellt das Management weiteres Wachstum bei Umsatz und Gewinn in Aussicht.</p>
 <p>Weitere Quellen zum Hintergrund: <a href="https://www.quantisnow.com/insight/transdigm-group-incorporated-filed-sec-form-8-k-results-of-operations-6782576" rel="noopener">TDG: Transdigm Group Incorporated filed SEC Form 8-K: Result</a></p>]]></content:encoded></item>
-<item><title>+2,5 % nach Pentagon-Entscheidung: WuXi AppTec erholt sich von US-Schwarzer Liste</title><link>https://dividenden-rechner.github.io/aktien-hub/news/wuxi-apptec-aktie-pentagon-streichung-militaerliste/</link><guid isPermaLink="true">https://dividenden-rechner.github.io/aktien-hub/news/wuxi-apptec-aktie-pentagon-streichung-militaerliste/</guid><pubDate>Tue, 10 Nov 2026 10:14:00 +0100</pubDate><category>Analyse</category><dc:creator>Aus der Redaktion</dc:creator><description>Die Aktie von WuXi AppTec legt nach der Streichung von der US-Militärliste zu. Ein juristischer Erfolg sorgt für Erleichterung an der Börse.</description><enclosure url="https://images.unsplash.com/photo-1748000970909-845f4aa144d2?ixid=M3wxMTE3OTgzfDB8MXxzZWFyY2h8M3x8cGhhcm1hY2V1dGljYWwlMjBtYW51ZmFjdHVyaW5nJTIwY2xlYW5yb29tJTIwcHJvZHVjdGlvbnxlbnwxfDB8fHwxNzk0MzAzNzIyfDA&amp;ixlib=rb-4.1.0&amp;w=1600&amp;h=900&amp;fit=crop&amp;crop=entropy&amp;q=80&amp;fm=jpg" type="image/jpeg" length="0"/><content:encoded><![CDATA[<div class="admonition kurz">
-<p class="admonition-title">Kurz gesagt</p>
-<ol>
-<li>Die Aktie von WuXi AppTec kletterte am Dienstag um 2,5 % beziehungsweise 1,7 % auf 201,4 HKD.</li>
-<li>Das US-Verteidigungsministerium nahm das Unternehmen offiziell von der Liste mutmaßlich militärnaher chinesischer Firmen.</li>
-<li>Hintergrund für die Streichung ist eine gerichtliche Entscheidung zugunsten des Biotech-Dienstleisters.</li>
-</ol>
-</div>
-<h2 id="kurssprung-nach-dem-wegfall-groer-sorgen">Kurssprung nach dem Wegfall großer Sorgen</h2>
-<p>Anleger des chinesischen Auftragsforschers WuXi AppTec atmen auf. Die an der Börse in Hongkong gehandelte Aktie verzeichnete am Dienstag einen Kursgewinn von 2,5 % beziehungsweise 1,7 %, wodurch der Kurs auf 201,4 HKD stieg. Auslöser für die positive Entwicklung an den Märkten ist eine Entscheidung des US-Verteidigungsministeriums. Die Behörde hat das Unternehmen offiziell von ihrer Liste chinesischer Militärunternehmen entfernt.</p>
-<p>Der Schritt folgt direkt auf einen juristischen Erfolg des Biotech-Riesen. WuXi AppTec hatte zuvor erfolgreich gegen die Einstufung geklagt. Ein Gericht gab dem Einspruch des Unternehmens recht, woraufhin das Pentagon in Übereinstimmung mit dem Gerichtsbeschluss handelte. Bislang drohte dem Forschungsdienstleister durch die Listung die Gefährdung wichtiger Geschäftsbeziehungen zu Kunden in den USA. Mit der Streichung fällt eine große regulatorische Belastung weg, die den Kurs zuvor belastet hatte.</p>
-<h2 id="einordnung-und-verbleibende-risiken">Einordnung und verbleibende Risiken</h2>
-<p>Trotz der aktuellen Erholung bleibt abzuwarten, wie sich das internationale Marktumfeld für den Pharmadienstleister weiterentwickelt. Politische Spannungen zwischen den USA und China sowie mögliche künftige regulatorische Hürden stellen weiterhin Risiken für den Sektor dar. Angaben zur finanziellen Lage, zu Wettbewerbern, zu konkreten Dividendenhöhen, Renditen oder Auszahlungsquoten liegen aus den aktuellen Berichten nicht vor. Anleger sollten zudem beachten, dass politische Entscheidungen in Washington die Kursentwicklung chinesischer Unternehmen jederzeit schnell verändern können.</p>
-<details class="quellen"><summary>Quellen</summary><ul>
-<li>WuXi AppTec shares gain after U.S. removes company from military list</li>
-<li>Why is WuXi AppTec stock rallying today?</li>
-</ul></details>
-<p><em>Dieser Beitrag fasst Informationen aus den genannten Quellen in eigenen Worten zusammen. Keine Anlageberatung.</em></p>]]></content:encoded></item>
 </channel></rss>

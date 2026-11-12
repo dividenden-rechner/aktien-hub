@@ -12,6 +12,7 @@ story_text: "Nebius hat im dritten Quartal 981 Mio. Dollar umgesetzt, fast siebe
 logo_name: "Nebius"
 logo_symbol: NBIS
 logo_domain: nebius.com
+logo_file: assets/logos/nbis.png
 ---
 <!-- PRÜFEN: Alle Unternehmenszahlen aus dem Aktionärsbrief Q3 2026 (Letter to shareholders, 12.11.2026) und der Ergebnismitteilung "Nebius reports third quarter 2026 financial results" vom 12.11.2026 mit Bilanz, GuV und Kapitalflussrechnung; beides von Divi geliefert. -->
 <!-- PRÜFEN: Konsens Umsatz rund 907,5 Mio. Dollar und Erwartung eines Verlusts: scanx.trade und marketscreener.com (Vorschau vom 11./12.11.2026), nicht aus den Unternehmensunterlagen. Kursrückgang seit dem Hoch (rund 47 %) aus Benzinga-Vorschau, Monatsminus rund 39 % aus marketscreener. Kurse (Schluss 10.11. 134,00 $, Schluss 11.11. 154,69 $ = +15,44 %, vorbörslich 12.11. 7:25 Uhr New York 142,22 $ = −8,06 %) aus Divis Yahoo-Screenshot; Kursbild daraus nachgebaut, nur drei echte Datenpunkte, keine erfundene Kurve. -->
