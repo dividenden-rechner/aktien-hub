@@ -3108,6 +3108,138 @@ null,
 587
 ],
 "hinweis": "Capex nur 2021 bis 2023 (Quelle ohne 2024 und 2025); operatives Ergebnis 2025 bewusst nicht ergänzt, weil die Quelle anders abgrenzt als die ESEF-Jahre."
+},
+"DG.PA": {
+"jahre": [
+2021,
+2022,
+2023,
+2024,
+2025
+],
+"debt": [
+25391,
+25569,
+27090,
+30132,
+30781
+]
+},
+"SAF.PA": {
+"jahre": [
+2021,
+2022,
+2023,
+2024,
+2025
+],
+"debt": [
+4917,
+5217,
+4522,
+3560,
+2073
+],
+"ebit": [
+null,
+null,
+null,
+null,
+4308
+],
+"hinweis": "Operatives Ergebnis 2025: Profit from operations (konsolidiert, IFRS) laut Ergebnismitteilung."
+},
+"SGO.PA": {
+"jahre": [
+2021,
+2022,
+2023,
+2024,
+2025
+],
+"ebit": [
+null,
+null,
+null,
+4377,
+4551
+],
+"hinweis": "Operatives Ergebnis 2024 und 2025: Business income (Résultat opérationnel) laut Ergebnismitteilung; 2023 nicht ergänzt (Quelle ohne 2023)."
+},
+"CA.PA": {
+"jahre": [
+2021,
+2022,
+2023,
+2024,
+2025
+],
+"ebit": [
+null,
+null,
+null,
+null,
+2137
+],
+"hinweis": "Operatives Ergebnis 2025 (Résultat opérationnel) ohne Italien (als aufgegebener Bereich dargestellt); 2024 neu dargestellt 2.093 gegenüber 1.852 veröffentlicht."
+},
+"LR.PA": {
+"jahre": [
+2021,
+2022,
+2023,
+2024,
+2025
+],
+"capex": [
+null,
+null,
+222.5,
+210.3,
+221.1
+]
+},
+"OR.PA": {
+"jahre": [
+2021,
+2022,
+2023,
+2024,
+2025
+],
+"capex": [
+null,
+null,
+1489,
+1642,
+1495
+]
+},
+"ML.PA": {
+"jahre": [
+2021,
+2022,
+2023,
+2024,
+2025
+],
+"debt": [
+5360,
+null,
+null,
+null,
+null
+]
+},
+"CS.PA": {
+"jahre": [
+2021,
+2022,
+2023,
+2024,
+2025
+],
+"hinweis": "Versicherer: Operativer Cashflow 2024 und 2025 sowie Finanzschulden nicht ergänzt, weil die Quelle für Versicherer stark schwankende, mit der ESEF-Reihe nicht vergleichbare Werte ausweist."
 }
 }
 }
