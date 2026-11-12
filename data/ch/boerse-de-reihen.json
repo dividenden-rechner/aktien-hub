@@ -882,6 +882,876 @@ null
 27.11,
 30.31
 ]
+},
+"NESN.SW": {
+"name": "Nestlé",
+"isin": "CH0038863350",
+"waehrung": "CHF",
+"hinweis": "Umsatz = Operating Revenue (ohne Other Revenue). 2021 Jahresueberschuss enthaelt Buchgewinn aus L'Oreal-Beteiligung (Equity-Ergebnis 8,65 Mrd CHF). EPS verwaessert.",
+"umsatz": [
+92568,
+84343,
+87088,
+94424,
+92998,
+91354,
+89490
+],
+"ebt": [
+16063,
+15737,
+19457,
+12326,
+13823,
+14488,
+11894
+],
+"jahresueberschuss": [
+12609,
+12232,
+16905,
+9270,
+11209,
+10884,
+9033
+],
+"dividendenausschuettung": [
+7776,
+7923,
+7726,
+7871,
+8010,
+7991,
+7974
+],
+"eigenkapital": [
+52035,
+45695,
+53140,
+41982,
+35742,
+35917,
+32810
+],
+"eps": [
+4.3,
+4.29,
+6.06,
+3.42,
+4.23,
+4.19,
+3.51
+],
+"dividende_je_aktie": [
+2.7,
+2.75,
+2.8,
+2.95,
+3.0,
+3.05,
+3.1
+],
+"aktien_mio": [
+2976,
+2881,
+2815,
+2750,
+2670,
+2620,
+2576.52
+],
+"eigenkapitalrendite_pct": [
+24.23,
+26.77,
+31.81,
+22.08,
+31.36,
+30.3,
+27.53
+]
+},
+"ABBN.SW": {
+"name": "ABB",
+"isin": "CH0012221716",
+"waehrung": "USD",
+"hinweis": "Berichtswaehrung USD. Dividende je Aktie wird von ABB in CHF beschlossen; boerse.de weist die Betraege unter USD-Label aus, Waehrung nicht umgerechnet/ungeprueft. EPS verwaessert. 2021 Gewinn enthaelt Buchgewinn Verkauf Power Grids; 2020 Gewinn enthaelt Power-Grids-Verkauf (disc. ops).",
+"umsatz": [
+27978,
+26134,
+28945,
+29446,
+32235,
+32850,
+33220
+],
+"ebt": [
+2300,
+5701,
+5707,
+3351,
+4754,
+5230,
+6219
+],
+"jahresueberschuss": [
+1439,
+5146,
+4546,
+2475,
+3745,
+3935,
+4734
+],
+"dividendenausschuettung": [
+1707,
+1625,
+1700,
+1706,
+1603,
+1655,
+1709
+],
+"eigenkapital": [
+13526,
+15685,
+15579,
+12777,
+13410,
+14488,
+16087
+],
+"eps": [
+0.67,
+2.53,
+2.32,
+1.33,
+2.03,
+2.13,
+2.59
+],
+"dividende_je_aktie": [
+0.8,
+0.8,
+0.82,
+0.84,
+0.87,
+0.9,
+0.94
+],
+"aktien_mio": [
+2168.15,
+2168.15,
+2053.15,
+1964.75,
+1882.0,
+1860.61,
+1843.9
+],
+"eigenkapitalrendite_pct": [
+10.64,
+32.81,
+29.18,
+19.37,
+27.93,
+27.16,
+29.43
+]
+},
+"ALC.SW": {
+"name": "Alcon",
+"isin": "CH0432492467",
+"waehrung": "USD",
+"hinweis": "Berichtswaehrung USD. Dividende je Aktie: boerse.de weist sie unter USD-Label aus; Alcon beschliesst die Dividende in CHF, Waehrung ungeprueft/nicht umgerechnet. Umsatz boerse.de (ohne Other Revenue) weicht leicht von stockanalysis ab (2025: 10401). EPS verwaessert.",
+"umsatz": [
+7362,
+6763,
+8222,
+8654,
+9370,
+9836,
+10319
+],
+"ebt": [
+-332,
+-635,
+418,
+463,
+832,
+1256,
+1160
+],
+"jahresueberschuss": [
+-656,
+-531,
+376,
+335,
+974,
+1018,
+980
+],
+"dividendenausschuettung": [
+95,
+56,
+100,
+116,
+137,
+155,
+182
+],
+"eigenkapital": [
+19303,
+18822,
+19256,
+19677,
+20624,
+21553,
+22034
+],
+"eps": [
+-1.34,
+-1.09,
+0.76,
+0.68,
+1.96,
+2.05,
+1.98
+],
+"dividende_je_aktie": [
+0.19,
+0.1,
+0.2,
+0.21,
+0.24,
+0.28,
+0.28
+],
+"aktien_mio": [
+488.7,
+499.7,
+499.7,
+499.7,
+499.7,
+499.7,
+499.7
+],
+"eigenkapitalrendite_pct": [
+-3.4,
+-2.82,
+1.95,
+1.7,
+4.72,
+4.72,
+4.45
+]
+},
+"GALD.SW": {
+"name": "Galderma",
+"isin": "CH1335392721",
+"waehrung": "USD",
+"hinweis": "boerse.de-Seite fuer Galderma nicht abrufbar; Werte aus stockanalysis.com (USD, Mio.), 2019/2020 nicht verfuegbar (IPO Maerz 2024). Dividende 0,35 CHF je Aktie (CHF, nicht USD) lt. Hauptversammlung 2026, Zuordnung zum GJ 2025; Dividende fuer GJ 2024 nicht verifiziert (gezahlt 2025: 41 Mio USD, hier unter 2025 als Ausschuettung). Aktienzahl/EPS 2021-22 (5188 Mio) vor Aktienkonsolidierung/Neustrukturierung, nicht vergleichbar mit ab 2023 (238 Mio). Umsatz inkl. Other Revenue. EPS verwaessert.",
+"umsatz": [
+null,
+null,
+3445,
+3824,
+4117,
+4440,
+5241
+],
+"ebt": [
+null,
+null,
+-79.6,
+-51.9,
+11,
+310,
+639
+],
+"jahresueberschuss": [
+null,
+null,
+-154.3,
+-98.5,
+-57,
+231,
+613
+],
+"dividendenausschuettung": [
+null,
+null,
+null,
+null,
+null,
+null,
+41
+],
+"eigenkapital": [
+null,
+null,
+4548,
+4469,
+5369,
+7790,
+8149
+],
+"eps": [
+null,
+null,
+-0.03,
+-0.02,
+-0.24,
+0.97,
+2.58
+],
+"dividende_je_aktie": [
+null,
+null,
+null,
+null,
+null,
+null,
+0.35
+],
+"aktien_mio": [
+null,
+null,
+5188,
+5188,
+238,
+238,
+237
+],
+"eigenkapitalrendite_pct": [
+null,
+null,
+null,
+null,
+null,
+null,
+null
+]
+},
+"GEBN.SW": {
+"name": "Geberit",
+"isin": "CH0030170408",
+"waehrung": "CHF",
+"hinweis": "CHF. EPS verwaessert. Aktienzahl ohne Einheit auf boerse.de (Mio. Stueck plausibel).",
+"umsatz": [
+3083,
+2986,
+3461,
+3392,
+3084,
+3086,
+3163
+],
+"ebt": [
+743,
+754,
+888,
+741,
+742,
+737,
+735
+],
+"jahresueberschuss": [
+647,
+642,
+756,
+706,
+617,
+597,
+598
+],
+"dividendenausschuettung": [
+410,
+406,
+440,
+428,
+433,
+422,
+425
+],
+"eigenkapital": [
+1899,
+1922,
+1987,
+1497,
+1320,
+1302,
+1517
+],
+"eps": [
+17.93,
+17.88,
+21.16,
+20.41,
+18.35,
+18.0,
+18.04
+],
+"dividende_je_aktie": [
+11.3,
+11.4,
+12.5,
+12.6,
+12.7,
+12.8,
+12.9
+],
+"aktien_mio": [
+37.04,
+37.04,
+35.87,
+35.87,
+35.19,
+35.19,
+33.92
+],
+"eigenkapitalrendite_pct": [
+34.07,
+33.42,
+38.03,
+47.18,
+46.74,
+45.86,
+39.4
+]
+},
+"GIVN.SW": {
+"name": "Givaudan",
+"isin": "CH0010645932",
+"waehrung": "CHF",
+"hinweis": "CHF. EPS verwaessert. Aktienzahl ohne Einheit auf boerse.de (konstant 9,23 Mio.; Stueckzahl real ca. 9,2 Mio.).",
+"umsatz": [
+6203,
+6322,
+6684,
+7117,
+6915,
+7412,
+7472
+],
+"ebt": [
+808,
+876,
+965,
+928,
+989,
+1313,
+1305
+],
+"jahresueberschuss": [
+702,
+743,
+821,
+856,
+893,
+1090,
+1071
+],
+"dividendenausschuettung": [
+572,
+572,
+609,
+618,
+628,
+646,
+665
+],
+"eigenkapital": [
+3640,
+3490,
+3929,
+4232,
+3993,
+4578,
+4568
+],
+"eps": [
+75.59,
+79.96,
+88.37,
+92.51,
+96.47,
+117.63,
+115.46
+],
+"dividende_je_aktie": [
+62,
+62,
+66,
+67,
+68,
+70,
+72
+],
+"aktien_mio": [
+9.23,
+9.23,
+9.23,
+9.23,
+9.23,
+9.23,
+9.23
+],
+"eigenkapitalrendite_pct": [
+19.29,
+21.29,
+20.9,
+20.23,
+22.36,
+23.81,
+23.45
+]
+},
+"HOLN.SW": {
+"name": "Holcim",
+"isin": "CH0012214059",
+"waehrung": "CHF",
+"hinweis": "CHF. Abspaltung Amrize (Nordamerika-Geschaeft) Mitte 2025: 2019-2024 wie urspruenglich berichtet (inkl. Nordamerika), 2025 Umsatz/Eigenkapital nur fortgefuehrtes Geschaeft; 2025 Jahresueberschuss 13179 und EBT 13724 enthalten ca. 12,8 Mrd CHF Ergebnis aus aufgegebenem Geschaeft (Abspaltungsgewinn). 2025 EPS 23,19 = unverwaessert (boerse.de weist verwaessert fehlerhaft mit 0,70 aus); EPS sonst verwaessert. EK-Rendite 2025 (85,7 %) und Dividende je Aktie 2025 (1,70 CHF nach Abspaltung) nicht mit Vorjahren vergleichbar.",
+"umsatz": [
+26722,
+23142,
+26834,
+29189,
+27009,
+26407,
+15724
+],
+"ebt": [
+3319,
+2719,
+3644,
+4555,
+4174,
+4022,
+13724
+],
+"jahresueberschuss": [
+2246,
+1697,
+2298,
+3308,
+3060,
+2926,
+13179
+],
+"dividendenausschuettung": [
+1227,
+1223,
+1338,
+1471,
+1573,
+1708,
+964
+],
+"eigenkapital": [
+28566,
+26072,
+27685,
+28674,
+25997,
+27239,
+15377
+],
+"eps": [
+3.66,
+2.77,
+3.78,
+5.62,
+5.45,
+5.31,
+23.19
+],
+"dividende_je_aktie": [
+2.0,
+2.0,
+2.2,
+2.5,
+2.8,
+3.1,
+1.7
+],
+"aktien_mio": [
+615.93,
+615.93,
+615.93,
+615.93,
+579.12,
+579.12,
+568.3
+],
+"eigenkapitalrendite_pct": [
+7.86,
+6.51,
+8.3,
+11.54,
+11.77,
+10.74,
+85.71
+]
+},
+"AMRZ.SW": {
+"name": "Amrize",
+"isin": "CH1430134226",
+"waehrung": "USD",
+"hinweis": "boerse.de-Seite nicht abrufbar; Werte aus stockanalysis.com (USD, Mio.). Amrize seit Juni 2025 an der SIX/NYSE; Zahlen vor 2025 sind Carve-out-Zahlen des Nordamerika-Geschaefts von Holcim. Aktien/EPS fuer Zeit vor Abspaltung pro forma (553 Mio.). Keine Dividendendaten gefunden.",
+"umsatz": [
+null,
+null,
+8132,
+10726,
+11677,
+11704,
+11815
+],
+"ebt": [
+null,
+null,
+1127,
+1473,
+1316,
+1641,
+1508
+],
+"jahresueberschuss": [
+null,
+null,
+841,
+1108,
+956,
+1274,
+1185
+],
+"dividendenausschuettung": [
+null,
+null,
+null,
+null,
+null,
+null,
+null
+],
+"eigenkapital": [
+null,
+null,
+null,
+8209,
+9203,
+9915,
+13258
+],
+"eps": [
+null,
+null,
+null,
+null,
+1.73,
+2.3,
+2.14
+],
+"dividende_je_aktie": [
+null,
+null,
+null,
+null,
+null,
+null,
+null
+],
+"aktien_mio": [
+null,
+null,
+null,
+null,
+553,
+553,
+554
+],
+"eigenkapitalrendite_pct": [
+null,
+null,
+null,
+null,
+null,
+null,
+null
+]
+},
+"LOGN.SW": {
+"name": "Logitech",
+"isin": "CH0025751329",
+"waehrung": "USD",
+"hinweis": "USD. Geschaeftsjahr endet 31. Maerz (Jahr = Ende des GJ, z. B. 2025 = GJ April 2024 bis Maerz 2025; Abgleich mit stockanalysis bestaetigt). Dividende je Aktie: boerse.de unter USD-Label; Logitech beschliesst Dividende in CHF, Waehrung nicht geprueft/umgerechnet. Aktienzahl ohne Einheit (Mio. plausibel). EPS verwaessert.",
+"umsatz": [
+2788,
+2976,
+5252,
+5481,
+4539,
+4298,
+4555
+],
+"ebt": [
+271,
+324,
+1148,
+776,
+464,
+622,
+707
+],
+"jahresueberschuss": [
+258,
+450,
+947,
+645,
+365,
+612,
+632
+],
+"dividendenausschuettung": [
+122,
+139,
+156,
+172,
+185,
+198,
+235
+],
+"eigenkapital": [
+1176,
+1489,
+2262,
+2399,
+2258,
+2234,
+2127
+],
+"eps": [
+1.52,
+2.66,
+5.51,
+3.78,
+2.23,
+3.87,
+4.13
+],
+"dividende_je_aktie": [
+0.74,
+0.83,
+0.93,
+1.04,
+1.16,
+1.29,
+1.58
+],
+"aktien_mio": [
+173.11,
+173.11,
+173.11,
+173.11,
+173.11,
+173.11,
+168.99
+],
+"eigenkapitalrendite_pct": [
+21.9,
+30.2,
+41.88,
+26.87,
+16.15,
+27.41,
+29.69
+]
+},
+"LONN.SW": {
+"name": "Lonza",
+"isin": "CH0013841017",
+"waehrung": "CHF",
+"hinweis": "CHF. 2021 Jahresueberschuss enthaelt Gewinn aus Verkauf Capsules/Bioscience (aufgegebenes Geschaeft, ca. 2,27 Mrd). Abweichung 2025: boerse.de zeigt Jahresueberschuss 949, EPS 13,00, Eigenkapital 9134; stockanalysis zeigt Nettoergebnis -275 (inkl. -1184 aufgegebenes Geschaeft Capsules & Health Ingredients), EBT 1101, EK 7913 - boerse-Werte hier unveraendert uebernommen, 2025 ungeprueft. Umsatz 2024 boerse 6574 (urspruenglich) vs 5480 (stockanalysis, fortgefuehrt). Dividende 2025 5,00 CHF ohne Ausschuettungsbetrag. EPS verwaessert.",
+"umsatz": [
+5920,
+4508,
+5409,
+6223,
+6717,
+6574,
+6531
+],
+"ebt": [
+732,
+942,
+3030,
+1448,
+790,
+754,
+1141
+],
+"jahresueberschuss": [
+645,
+869,
+2944,
+1215,
+654,
+636,
+949
+],
+"dividendenausschuettung": [
+204,
+223,
+223,
+260,
+288,
+283,
+null
+],
+"eigenkapital": [
+6494,
+6815,
+9750,
+10597,
+9452,
+9328,
+9134
+],
+"eps": [
+8.68,
+11.7,
+39.68,
+16.36,
+8.88,
+8.92,
+13.0
+],
+"dividende_je_aktie": [
+2.75,
+3.0,
+3.0,
+3.5,
+4.0,
+4.0,
+5.0
+],
+"aktien_mio": [
+74.47,
+74.47,
+74.47,
+74.47,
+74.47,
+72.23,
+72.23
+],
+"eigenkapitalrendite_pct": [
+9.93,
+12.75,
+30.19,
+11.47,
+6.92,
+6.82,
+10.39
+]
 }
 }
 }

@@ -8844,6 +8844,946 @@ null,
 null
 ],
 "hinweis": "USD. Bank/Versicherer: Cashflow, Cash, Schulden, Umsatz, Brutto- und operatives Ergebnis sind nicht sinnvoll mit Industriefirmen vergleichbar (Anlagen, Praemien, Kundeneinlagen) und daher null. div = Dividendenausschuettung laut boerse.de."
+},
+"NESN.SW": {
+"jahre": [
+2021,
+2022,
+2023,
+2024,
+2025
+],
+"ocf": [
+13864,
+11907,
+15941,
+16675,
+15904
+],
+"capex": [
+5341,
+5361,
+6203,
+5963,
+4911
+],
+"da": [
+3167,
+3237,
+3140,
+3264,
+3398
+],
+"div": [
+7681,
+7618,
+7829,
+7816,
+7849
+],
+"bb": [
+6548,
+10679,
+5234,
+4678,
+213
+],
+"cash": [
+6988,
+5511,
+4816,
+5556,
+4579
+],
+"debt": [
+46893,
+54312,
+55241,
+63560,
+57852
+],
+"umsatz": [
+87470,
+94780,
+93351,
+91720,
+89885
+],
+"brutto": [
+42002,
+43035,
+43023,
+43050,
+41191
+],
+"ebit": [
+14640,
+15648,
+15658,
+15556,
+13906
+],
+"zins": [
+815,
+1124,
+1500,
+1700,
+1683
+],
+"steuer": [
+2261,
+2730,
+2314,
+3314,
+2640
+],
+"hinweis": "CHF. capex = Sachanlagen + immaterielle Werte; cash = Cash & Equivalents ohne kurzfr. Anlagen; debt inkl. Leasing; Umsatz inkl. Other Revenue (boerse.de-Reihe ohne). 2021 Nettogewinn enthaelt L'Oreal-Buchgewinn."
+},
+"ABBN.SW": {
+"jahre": [
+2021,
+2022,
+2023,
+2024,
+2025
+],
+"ocf": [
+3330,
+1287,
+4290,
+4675,
+5469
+],
+"capex": [
+820,
+762,
+770,
+799,
+1001
+],
+"da": [
+827,
+762,
+736,
+715,
+766
+],
+"div": [
+1726,
+1698,
+1713,
+1769,
+1907
+],
+"bb": [
+3708,
+3553,
+1258,
+1247,
+1499
+],
+"cash": [
+4159,
+4156,
+3891,
+4326,
+4640
+],
+"debt": [
+6591,
+8902,
+8992,
+7964,
+9236
+],
+"umsatz": [
+28945,
+29446,
+32235,
+30583,
+33220
+],
+"brutto": [
+9538,
+9734,
+11279,
+12001,
+13640
+],
+"ebit": [
+3829,
+3693,
+4900,
+4958,
+5910
+],
+"zins": [
+2,
+2,
+35,
+356,
+null
+],
+"steuer": [
+1057,
+757,
+930,
+1197,
+1570
+],
+"hinweis": "USD. cash = Cash & Equivalents ohne kurzfr. Anlagen (1170/725/1928/1334/1981); debt inkl. Leasing. stockanalysis-Umsatz 2024 (30583) weicht von boerse.de/Geschaeftsbericht (32850) ab (Robotics/Neudarstellung, uneinheitlich zu 2025 und 2023); brutto/ebit 2024 ggf. auf anderer Basis. Zins: 2025 positiv ausgewiesen (Netto-Ertrag), daher null; 2024 -356 enthaelt vermutlich Einmaleffekt. 2021 Nettogewinn und OCF-Basis enthalten Power-Grids-Verkauf."
+},
+"ALC.SW": {
+"jahre": [
+2021,
+2022,
+2023,
+2024,
+2025
+],
+"ocf": [
+1345,
+1217,
+1388,
+2077,
+2271
+],
+"capex": [
+1180,
+1230,
+853,
+670,
+663
+],
+"da": [
+1217,
+1061,
+1219,
+1216,
+1146
+],
+"div": [
+54,
+100,
+116,
+130,
+166
+],
+"bb": [
+22,
+50,
+49,
+47,
+723
+],
+"cash": [
+1575,
+980,
+1094,
+1676,
+1527
+],
+"debt": [
+4486,
+5078,
+5145,
+5140,
+5246
+],
+"umsatz": [
+8291,
+8717,
+9455,
+9911,
+10401
+],
+"brutto": [
+4696,
+4809,
+5247,
+5515,
+5790
+],
+"ebit": [
+818,
+916,
+1078,
+1368,
+1274
+],
+"zins": [
+120,
+138,
+189,
+186,
+204
+],
+"steuer": [
+42,
+128,
+-142,
+238,
+180
+],
+"hinweis": "USD. capex = Sachanlagen + immaterielle Werte; cash ohne kurzfr. Anlagen (3/0/7/165/85); debt inkl. Leasing. ebit = operatives Ergebnis lt. stockanalysis (Alpha Vantage weicht ab). zins und steuer aus Alpha Vantage (stockanalysis-Seite lieferte sie nicht); steuer 2023 negativ (Steuerertrag). 2025 Aktienrueckkauf 723 nach Programmstart."
+},
+"GALD.SW": {
+"jahre": [
+2021,
+2022,
+2023,
+2024,
+2025
+],
+"ocf": [
+195.7,
+111.3,
+165,
+488,
+1185
+],
+"capex": [
+128,
+159.5,
+152,
+275,
+154
+],
+"da": [
+239,
+251.1,
+236,
+249,
+286
+],
+"div": [
+null,
+null,
+null,
+null,
+41
+],
+"bb": [
+null,
+null,
+null,
+15,
+363
+],
+"cash": [
+287.2,
+234.1,
+368,
+457,
+780
+],
+"debt": [
+5689,
+5658,
+4909,
+2759,
+2754
+],
+"umsatz": [
+3445,
+3824,
+4117,
+4440,
+5241
+],
+"brutto": [
+2411,
+2630,
+2885,
+3085,
+3609
+],
+"ebit": [
+349.5,
+400.9,
+606,
+671,
+885
+],
+"zins": [
+352.7,
+398.4,
+561,
+352,
+173
+],
+"steuer": [
+4.6,
+45,
+68,
+79,
+26
+],
+"hinweis": "USD. capex = Sachanlagen + immaterielle Werte; cash = Cash & Equivalents; debt inkl. Leasing. Boersengang Maerz 2024 mit Schuldenabbau (2023 4909 auf 2024 2759); Zinsen 2021-2023 hoch wegen Konzernfinanzierung vor IPO. Dividende erstmals 2025 gezahlt."
+},
+"GEBN.SW": {
+"jahre": [
+2021,
+2022,
+2023,
+2024,
+2025
+],
+"ocf": [
+998.9,
+736.0,
+857.9,
+847.6,
+866.9
+],
+"capex": [
+169.4,
+155.1,
+197.1,
+195.3,
+164.9
+],
+"da": [
+150.7,
+144.6,
+144.1,
+146.2,
+160.2
+],
+"div": [
+404.5,
+433.1,
+423.7,
+419.5,
+421.5
+],
+"bb": [
+356.9,
+667.4,
+329.5,
+214.6,
+83.3
+],
+"cash": [
+511.0,
+205.7,
+356.8,
+407.7,
+585.8
+],
+"debt": [
+783.9,
+1030,
+1321,
+1373,
+1355
+],
+"umsatz": [
+3461,
+3392,
+3084,
+3086,
+3163
+],
+"brutto": [
+2464,
+2317,
+2197,
+2248,
+2329
+],
+"ebit": [
+912.4,
+759.4,
+773.3,
+762.9,
+767.2
+],
+"zins": [
+7.1,
+10.3,
+23.7,
+29.7,
+28.8
+],
+"steuer": [
+132.6,
+34.6,
+124.8,
+140.3,
+136.8
+],
+"hinweis": "CHF. capex = Capital Expenditures lt. stockanalysis (Zukaeufe immaterieller Werte separat nicht ausgewiesen, ggf. enthalten); cash = Cash & Equivalents; debt inkl. Leasing. Steuer 2022 niedrig (34,6, Steuereffekt). da lt. Cashflow (150,7 etc.) hoeher als D&A for EBITDA."
+},
+"GIVN.SW": {
+"jahre": [
+2021,
+2022,
+2023,
+2024,
+2025
+],
+"ocf": [
+1288,
+948,
+1373,
+1625,
+1512
+],
+"capex": [
+256,
+304,
+275,
+293,
+301
+],
+"da": [
+352,
+321,
+302,
+307,
+314
+],
+"div": [
+589,
+607,
+617,
+627,
+645
+],
+"bb": [
+69,
+51,
+29,
+35,
+27
+],
+"cash": [
+274,
+475,
+600,
+749,
+738
+],
+"debt": [
+4673,
+5005,
+4905,
+4751,
+4416
+],
+"umsatz": [
+6684,
+7117,
+6915,
+7412,
+7472
+],
+"brutto": [
+2855,
+2762,
+2846,
+3271,
+3252
+],
+"ebit": [
+1099,
+1098,
+1114,
+1399,
+1366
+],
+"zins": [
+89,
+95,
+114,
+114,
+104
+],
+"steuer": [
+144,
+72,
+96,
+223,
+234
+],
+"hinweis": "CHF. capex = Sachanlagen + immaterielle Werte; cash ohne Trading Securities; debt inkl. Leasing. da lt. Cashflow (hoeher als D&A for EBITDA, das 255-301 zeigt). Eigenkapital 2025 stockanalysis 4537 vs boerse.de 4568."
+},
+"HOLN.SW": {
+"jahre": [
+2021,
+2022,
+2023,
+2024,
+2025
+],
+"ocf": [
+5045,
+4562,
+5470,
+5667,
+2788
+],
+"capex": [
+1532,
+1549,
+1505,
+1085,
+1061
+],
+"da": [
+2076,
+2194,
+1977,
+1129,
+1116
+],
+"div": [
+1245,
+1352,
+1441,
+1583,
+1714
+],
+"bb": [
+211,
+895,
+1809,
+1441,
+null
+],
+"cash": [
+6682,
+9824,
+6082,
+5347,
+5440
+],
+"debt": [
+16905,
+16130,
+14081,
+13856,
+9247
+],
+"umsatz": [
+26834,
+29189,
+27009,
+16201,
+15724
+],
+"brutto": [
+11448,
+12194,
+11473,
+7066,
+6658
+],
+"ebit": [
+3816,
+3502,
+4241,
+2288,
+2221
+],
+"zins": [
+403,
+450,
+553,
+414,
+325
+],
+"steuer": [
+963,
+1027,
+999,
+544,
+474
+],
+"hinweis": "CHF. Bruch durch Amrize-Abspaltung (2025): GuV 2024 und 2025 nur fortgefuehrtes Geschaeft (Umsatz 2024 16201 statt urspruenglich 26407), 2021-2023 unbereinigt inkl. Nordamerika; Zeitreihe daher ab 2024 nicht vergleichbar. Cashflow-Positionen (ocf, da, bb, div) 2024/2025 Basis unklar (ocf 2025 2788 durch Abspaltungseffekte). Steuer 2025 474 bei EBT 934 (fortgefuehrt). Immaterielle Zukaeufe nicht separat, capex = Sachanlagen. cash ohne kurzfr. Anlagen; debt inkl. Leasing."
+},
+"AMRZ.SW": {
+"jahre": [
+2021,
+2022,
+2023,
+2024,
+2025
+],
+"ocf": [
+1492,
+1988,
+2036,
+2282,
+2208
+],
+"capex": [
+394,
+488,
+630,
+642,
+788
+],
+"da": [
+712,
+800,
+865,
+889,
+914
+],
+"div": [
+null,
+null,
+null,
+null,
+null
+],
+"bb": [
+null,
+null,
+null,
+null,
+null
+],
+"cash": [
+null,
+351,
+1107,
+1585,
+1922
+],
+"debt": [
+null,
+8660,
+9524,
+9544,
+6343
+],
+"umsatz": [
+8132,
+10726,
+11677,
+11704,
+11815
+],
+"brutto": [
+1818,
+2472,
+2769,
+3070,
+3034
+],
+"ebit": [
+1300,
+1745,
+1887,
+2150,
+1949
+],
+"zins": [
+179,
+252,
+564,
+547,
+461
+],
+"steuer": [
+284,
+366,
+361,
+368,
+326
+],
+"hinweis": "USD. Carve-out-Zahlen des Nordamerika-Geschaefts (Holcim) vor der Abspaltung im Juni 2025. Bilanz 2021 leer; Dividenden/Rueckkaeufe von stockanalysis nicht ausgewiesen (null); capex = Sachanlagen (immaterielle nicht separat). cash ohne kurzfr. Anlagen; debt inkl. Leasing."
+},
+"LOGN.SW": {
+"jahre": [
+2021,
+2022,
+2023,
+2024,
+2025
+],
+"ocf": [
+null,
+298.32,
+534.01,
+1145,
+842.56
+],
+"capex": [
+null,
+89.15,
+92.35,
+55.9,
+56.13
+],
+"da": [
+null,
+118.54,
+100.72,
+84.75,
+79.76
+],
+"div": [
+null,
+159.41,
+158.68,
+182.31,
+207.85
+],
+"bb": [
+null,
+476.18,
+447.51,
+533.95,
+621.32
+],
+"cash": [
+null,
+1329,
+1149,
+1521,
+1503
+],
+"debt": [
+null,
+41.9,
+71.02,
+77.03,
+92.4
+],
+"umsatz": [
+5252,
+5481,
+4539,
+4298,
+4555
+],
+"brutto": [
+null,
+2277,
+1732,
+1789,
+1972
+],
+"ebit": [
+null,
+784.3,
+502.76,
+597.62,
+668.24
+],
+"zins": [
+null,
+null,
+null,
+null,
+null
+],
+"steuer": [
+null,
+131.31,
+98.95,
+9.45,
+75.34
+],
+"hinweis": "USD. Geschaeftsjahr endet 31. Maerz (Jahr = GJ-Ende, 2025 = GJ bis 03/2025). GJ 2021 fehlt bei stockanalysis (nur 5 Jahre sichtbar), nur Umsatz 2021 aus boerse.de. Zinsaufwand nicht ausgewiesen (Nettozinsertrag). Debt nur Leasingverbindlichkeiten (keine Finanzschulden). capex = Sachanlagen (immaterielle nicht separat). Steuer GJ2024 niedrig (9,45, Steuereffekt). Keine kurzfr. Anlagen separat."
+},
+"LONN.SW": {
+"jahre": [
+2021,
+2022,
+2023,
+2024,
+2025
+],
+"ocf": [
+1217,
+1020,
+1388,
+1274,
+1156
+],
+"capex": [
+1380,
+1921,
+1697,
+1472,
+1378
+],
+"da": [
+497,
+557,
+593,
+619,
+780
+],
+"div": [
+223,
+223,
+260,
+285,
+280
+],
+"bb": [
+174,
+58,
+1020,
+726,
+518
+],
+"cash": [
+1582,
+1339,
+1468,
+1111,
+719
+],
+"debt": [
+2749,
+2587,
+3160,
+5228,
+4679
+],
+"umsatz": [
+5409,
+6223,
+6717,
+5480,
+6531
+],
+"brutto": [
+2110,
+2438,
+2403,
+2006,
+2349
+],
+"ebit": [
+846,
+1387,
+1365,
+1110,
+1397
+],
+"zins": [
+81,
+69,
+100,
+146,
+168
+],
+"steuer": [
+83,
+230,
+135,
+106,
+192
+],
+"hinweis": "CHF. Bruch durch aufgegebenes Geschaeft Capsules & Health Ingredients: GuV 2024 und 2025 nur fortgefuehrt (Umsatz 2024 5480 statt urspruenglich 6574), 2021-2023 unbereinigt; Cashflow-Basis (ocf, capex, da) ggf. inkl. aufgegebenes Geschaeft. 2025 Nettoergebnis -275 (aufgegebenes Geschaeft -1184). capex = Sachanlagen + immaterielle Werte; cash ohne kurzfr. Anlagen (1357/650/50/600/0); debt inkl. Leasing."
 }
 }
 }
