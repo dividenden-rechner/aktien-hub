@@ -1883,7 +1883,52 @@ null,
 80119,
 78704
 ],
-"hinweis": "Quelle: stockanalysis.com. Cashflow und Bilanz fehlen noch."
+"hinweis": "Quelle: stockanalysis.com. Bilanz fehlt noch.",
+"ocf": [
+4069,
+10045,
+5654,
+5673,
+7003
+],
+"capex": [
+4487,
+4576,
+6010,
+6971,
+7940
+]
+},
+"RWE.DE": {
+"jahre": [
+2021,
+2022,
+2023,
+2024,
+2025
+],
+"umsatz": [
+24571,
+38415,
+28521,
+24790,
+18360
+],
+"ocf": [
+7274,
+2406,
+4223,
+6620,
+4954
+],
+"capex": [
+3689,
+3303,
+5146,
+9377,
+10014
+],
+"hinweis": "Quelle: stockanalysis.com. Bilanz fehlt noch."
 }
 }
 }
