@@ -691,6 +691,7 @@ var REGION = {"DE":"R:EU","AT":"R:EU","CH":"R:EU","FR":"R:EU","NL":"R:EU","BE":"
     "Dividenden-Klassiker": { c: [["yield", "gt", 3], ["payout", "lt", 75], ["divstreak", "gt", 8], ["mcap", "gt", 10, "Mrd"], ["nde", "lt", 3.5]] },
     "Dividendenwachstum": { c: [["divcagr", "gt", 7], ["payout", "lt", 60], ["revg5", "gt", 5], ["roce", "gt", 12]] },
     "Qualitätswerte": { c: [["roce", "gt", 15], ["nm", "gt", 10], ["revg", "gt", 5], ["nde", "lt", 3], ["pio", "gt", 6]] },
+    "Unter Modellwert": { c: [["mvpot", "gt", 15], ["mvn", "gt", 2], ["mcap", "gt", 5, "Mrd"], ["nde", "lt", 4]] },
     "Günstig bewertet": { c: [["pe", "lt", 15], ["pb", "lt", 2], ["fcfyield", "gt", 5], ["de", "lt", 1.5]] },
     "REITs": { c: [["yield", "gt", 4], ["pffo", "lt", 18], ["ffopayout", "lt", 90], ["nde", "lt", 7]], ind: "REIT" },
     "BDCs": { c: [["pnav", "lt", 1.1], ["yield", "gt", 8], ["de", "lt", 1.25]], ind: "BDC" }
