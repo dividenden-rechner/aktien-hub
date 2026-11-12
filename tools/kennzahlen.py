@@ -44,6 +44,10 @@ def r2(v, n=2):
 GICS = {"Information Technology": "Technology", "Health Care": "Healthcare", "Financials": "Financial Services",
         "Consumer Discretionary": "Consumer Cyclical", "Consumer Staples": "Consumer Defensive", "Materials": "Basic Materials"}
 SEKTOR = {}
+# Branchen ausserhalb der S&P-500-Liste (data/branchen.json, deutsch) auf die Sektornamen des Screeners abgebildet
+BRANCHE_DE = {"Technologie": "Technology", "Gesundheit": "Healthcare", "Finanzen": "Financial Services", "Zyklischer Konsum": "Consumer Cyclical",
+              "Basiskonsum": "Consumer Defensive", "Rohstoffe": "Basic Materials", "Industrie": "Industrials", "Energie": "Energy",
+              "Versorger": "Utilities", "Immobilien": "Real Estate", "Kommunikation": "Communication Services"}
 
 
 def land_aus_isin(isin, f):
@@ -58,6 +62,12 @@ def main():
     try:
         for x in json.load(open("data/universe.json"))["firmen"]:
             SEKTOR[x["sym"].upper()] = GICS.get(x.get("sektor"), x.get("sektor"))
+    except Exception:
+        pass
+    try:
+        for s, b in json.load(open("data/branchen.json", encoding="utf-8"))["branchen"].items():
+            if b in BRANCHE_DE:
+                SEKTOR.setdefault(s.upper(), BRANCHE_DE[b])
     except Exception:
         pass
     sec = json.load(open("data/sec/fundamentals.json"))
