@@ -12,12 +12,17 @@ story_text: "Nebius hat im dritten Quartal 981 Mio. Dollar umgesetzt, fast siebe
 logo_name: "Nebius"
 logo_symbol: NBIS
 logo_domain: nebius.com
+image: assets/magazin/nebius-q3-2026-umsatz-prognose-verzoegerungen-foto.jpg
+image_alt: "Gang zwischen zwei Reihen Serverschränken mit farbigen Glasfaserkabeln in einem Rechenzentrum"
+image_credit: "Foto: Nebius (Pressebild)"
+image_source: "https://nebius.com"
+image_lizenz: Pressebild
 logo_file: assets/logos/nbis.png
 ---
 <!-- PRÜFEN: Alle Unternehmenszahlen aus dem Aktionärsbrief Q3 2026 (Letter to shareholders, 12.11.2026) und der Ergebnismitteilung "Nebius reports third quarter 2026 financial results" vom 12.11.2026 mit Bilanz, GuV und Kapitalflussrechnung; beides von Divi geliefert. -->
 <!-- PRÜFEN: Konsens Umsatz rund 907,5 Mio. Dollar und Erwartung eines Verlusts: scanx.trade und marketscreener.com (Vorschau vom 11./12.11.2026), nicht aus den Unternehmensunterlagen. Kursrückgang seit dem Hoch (rund 47 %) aus Benzinga-Vorschau, Monatsminus rund 39 % aus marketscreener. Kurse (Schluss 10.11. 134,00 $, Schluss 11.11. 154,69 $ = +15,44 %, vorbörslich 12.11. 7:25 Uhr New York 142,22 $ = −8,06 %) aus Divis Yahoo-Screenshot; Kursbild daraus nachgebaut, nur drei echte Datenpunkte, keine erfundene Kurve. -->
 <!-- PRÜFEN: Selbst gerechnet: Umsatz ohne Partner-Einmalerlös 980,8 − 325 = rund 656 Mio.; Q2-Umsatz aus +68 % zum Vorquartal rückgerechnet (rund 584 Mio.), ohne Einmalerlös also rund +12 % zum Vorquartal; Abstand zum Konsens +8 % mit, −28 % ohne Einmalerlös; rechnerischer Q4-Umsatz 3,0 Mrd. − 1,96 Mrd. = rund 1,04 Mrd.; Finanzschulden 187,5 + 14.003,3 = 14,2 Mrd. (Jahresende 2025: 4,1 Mrd.); Rechnungsabgrenzung 1.445,5 + 7.963,7 = 9,4 Mrd.; verwässerte Aktienzahl 298,0 Mio. gegenüber 241,1 Mio. = +24 %. -->
-<!-- PRÜFEN: Kein CEO-Foto von Divi (Arkady Volozh), das kleine Porträt im Aktionärsbrief ist zu klein für einen sauberen Freisteller; Story daher mit Folie und Kursbild. Aufmacher und Logo kommen über tools/asset.request (NBIS, nebius.com). Diese Aufmacher-Markierung ersetzt die bei Hapag-Lloyd. -->
+<!-- PRÜFEN: Kein CEO-Foto von Divi (Arkady Volozh), das kleine Porträt im Aktionärsbrief ist zu klein für einen sauberen Freisteller; Story daher mit Folie und Kursbild. Aufmacher: von Divi geliefertes Foto eines Nebius-Rechenzentrums, als Pressebild markiert; genaue Bildquelle bitte nachtragen. Logo holt der Build über logo_symbol/logo_domain. Diese Aufmacher-Markierung ersetzt die bei Hapag-Lloyd. -->
 
 !!! kurz "Kurz gesagt (drittes Quartal 2026)"
     **Umsatz:** 981 Mio. $ (+571 %)
