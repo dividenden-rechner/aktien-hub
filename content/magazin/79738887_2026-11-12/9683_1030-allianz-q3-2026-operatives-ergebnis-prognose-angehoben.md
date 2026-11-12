@@ -6,8 +6,9 @@ author: "Redaktions-Team Dividenden-Rechner.de"
 author_bio: "Das Redaktions-Team von Dividenden-Rechner.de schreibt über Dividendenaktien, Kennzahlen und Steuerthemen für Privatanleger. Die Rechner und Auswertungen auf der Seite stehen jedem frei zur Verfügung."
 category: Quartalszahlen
 story_image: assets/magazin/allianz-q3-2026-konsens.jpg
+story_chart: assets/magazin/allianz-q3-2026-kurs.png
 story_portrait: medien/ceo/alv-de.png
-story_portrait_seite: rechts
+story_portrait_seite: links
 story_portrait_schnitt: unten
 story_text: "Die Allianz hat im dritten Quartal mit 4,71 Mrd. Euro operativem Ergebnis die Erwartungen der Analysten um 10 % übertroffen und die Obergrenze ihres Jahresziels auf rund 18,6 Mrd. Euro angehoben. Alle Segmente lagen über dem Konsens.\nDen größten Sprung macht die Vermögensverwaltung: PIMCO und Allianz Global Investors verdienen mit 1,12 Mrd. Euro gut ein Drittel mehr als vor einem Jahr, dank Zuflüssen von 47 Mrd. Euro und höheren Erfolgsgebühren. Bei Schaden und Unfall drücken Unwetter und Waldbrände in Europa mit 1,1 Mrd. Euro, das Segment verdient 8 % weniger.\nDie Solvenzquote liegt bei 219 %, belastet vom angekündigten Kauf von M-Units und den Aktienrückkäufen. Bei der Lebensversicherung sinkt die künftige Gewinnmarge, weil Kapitalmarktbewegungen sie 1,1 Mrd. Euro kosten."
 logo_name: "Allianz"
@@ -24,7 +25,7 @@ image_source: "https://commons.wikimedia.org/wiki/File:Allianz_Koeniginstr_Ausse
 <!-- PRÜFEN: Selbst gerechnet: Veränderungen in Prozent (Segmentergebnisse, Nettoergebnis, Erfolgsgebühren), Rest-Ergebnis für das Oberende der Prognose (18,6 Mrd. minus 14,1 Mrd. = 4,5 Mrd. Euro im vierten Quartal, Vorjahr 4,5 Mrd. Euro), Abstand des Kurses zum Tief (+37 %), ausgezahlte Dividende von rund 17 Euro je Aktie (6.467 Mio. Euro geteilt durch rund 380 Mio. Aktien) und daraus eine Dividendenrendite von rund 3,6 %. Die Dividende je Aktie steht nicht in den Unterlagen, bitte gegen die Hauptversammlung 2026 prüfen. -->
 <!-- PRÜFEN: "M-Units": Die Konsens-Tabelle nennt den angekündigten Kauf von M-Units als Belastung für Eigenkapital und Solvenzquote (minus 4 Punkte). Im Eigenkapital steht für das dritte Quartal eine Veränderung der Beteiligungsquoten von minus 1,6 Mrd. Euro. Die Erklärung, es handle sich um Anteile von PIMCO-Führungskräften, stammt aus dem Wissen der Redaktion und steht nicht in den Unterlagen, bitte prüfen. -->
 <!-- PRÜFEN: Abwicklungsergebnis (Run-off) von minus 3,5 %: Bei Allianz bedeutet ein negativer Wert eine Entlastung der Schadenquote. Die Einordnung stammt aus dem Kommentar "Slightly higher than consensus and normal run-off level". -->
-<!-- PRÜFEN: Das CEO-Foto (Freisteller, medien/ceo/alv-de.png) kam von Divi ohne Namen; angenommen ist Oliver Bäte, Vorstandsvorsitzender, bitte bestätigen. Es gibt kein Kursbild (kein Screenshot geliefert), die Story hat nur die Folie. Aufmacher Allianz-Zentrale Königinstraße (CC BY-SA 2.5, Namensnennung steht in der Bildzeile). Die Meldung zum Kauf des britischen Pannendienstes AA (Börse Express, September) ist nicht aufgenommen, weil der Stand unklar ist. -->
+<!-- PRÜFEN: Das CEO-Foto (Freisteller, medien/ceo/alv-de.png) kam von Divi ohne Namen; angenommen ist Oliver Bäte, Vorstandsvorsitzender, bitte bestätigen. Das Kursbild der Story ist im Hub-Stil (grün) aus Divis aktien.guide-Screenshot (12.11., 10:20 Uhr, L&S, 469,00 Euro, +1,16 %) nachgezeichnet; Verlauf ist eine Näherung, kein Originaldatensatz. Aufmacher Allianz-Zentrale Königinstraße (CC BY-SA 2.5, Namensnennung steht in der Bildzeile). Die Meldung zum Kauf des britischen Pannendienstes AA (Börse Express, September) ist nicht aufgenommen, weil der Stand unklar ist. -->
 
 !!! kurz "Kurz gesagt (drittes Quartal 2026)"
     **Geschäftsvolumen:** 44,4 Mrd. € (+3,8 %)
