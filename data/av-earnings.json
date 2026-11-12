@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-12 03:20 UTC",
+ "updated": "2026-11-12 13:58 UTC",
  "quelle": "Alpha Vantage",
  "items": [
   {
@@ -9,7 +9,12 @@
    "fiscal": "2026-09-30",
    "cur": "USD",
    "zeit": "nach",
-   "act_try": "2026-11-11"
+   "act_try": "2026-11-12",
+   "eps_act": -1.28,
+   "eps_act_basis": "GAAP laut AV",
+   "rep_date": "2026-11-10",
+   "eps_est": -1.45,
+   "rev_act": 3661000000.0
   },
   {
    "sym": "TDG",
@@ -18,7 +23,12 @@
    "fiscal": "2026-09-30",
    "cur": "USD",
    "zeit": "vor",
-   "act_try": "2026-11-11"
+   "act_try": "2026-11-12",
+   "eps_act": 11.88,
+   "eps_act_basis": "GAAP laut AV",
+   "rep_date": "2026-11-10",
+   "eps_est": 11.43,
+   "rev_act": 2987000000.0
   },
   {
    "sym": "VOD",
@@ -27,7 +37,7 @@
    "fiscal": "2026-09-30",
    "cur": "USD",
    "zeit": "vor",
-   "act_try": "2026-11-11"
+   "act_try": "2026-11-12"
   },
   {
    "sym": "TECH",
@@ -41,7 +51,11 @@
    "rev_est": 292201690.0,
    "rev_n": 8,
    "est_stand": "2026-11-11",
-   "act_try": "2026-11-11"
+   "act_try": "2026-11-12",
+   "eps_act": 0.36,
+   "eps_act_basis": "GAAP laut AV",
+   "rep_date": "2026-11-03",
+   "rev_act": 299712000.0
   },
   {
    "sym": "VYLR",
@@ -55,7 +69,10 @@
    "rev_est": 918057450.0,
    "rev_n": 8,
    "est_stand": "2026-11-11",
-   "act_try": "2026-11-11"
+   "act_try": "2026-11-12",
+   "eps_act": -0.42,
+   "eps_act_basis": "GAAP laut AV",
+   "rep_date": "2026-11-11"
   },
   {
    "sym": "AMAT",
@@ -68,7 +85,8 @@
    "eps_n": 25,
    "rev_est": 10299491080.0,
    "rev_n": 24,
-   "est_stand": "2026-11-12"
+   "est_stand": "2026-11-12",
+   "act_try": "2026-11-12"
   },
   {
    "sym": "CSCO",
@@ -81,7 +99,8 @@
    "eps_n": 24,
    "rev_est": 18115769170.0,
    "rev_n": 22,
-   "est_stand": "2026-11-12"
+   "est_stand": "2026-11-12",
+   "act_try": "2026-11-12"
   },
   {
    "sym": "HMC",
