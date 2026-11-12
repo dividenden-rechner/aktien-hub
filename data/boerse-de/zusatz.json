@@ -1929,6 +1929,397 @@ null,
 10014
 ],
 "hinweis": "Quelle: stockanalysis.com. Bilanz fehlt noch."
+},
+"TTE.PA": {
+"jahre": [
+2021,
+2022,
+2023,
+2024,
+2025
+],
+"ocf": [
+30410,
+47367,
+40679,
+30854,
+27343
+],
+"capex": [
+12343,
+13699,
+16478,
+13471,
+15756
+],
+"da": [
+13584,
+13687,
+12693,
+12288,
+13037
+],
+"div": [
+8541,
+7604,
+7831,
+8031,
+8424
+],
+"bb": [
+1823,
+7711,
+10248,
+8452,
+8853
+],
+"cash": [
+21342,
+33026,
+27263,
+25844,
+26202
+],
+"debt": [
+41868,
+36987,
+32722,
+35711,
+40944
+],
+"brutto": [
+66012,
+93862,
+75904,
+67946,
+65604
+],
+"ebit": [
+24241,
+46408,
+31216,
+24662,
+19733
+],
+"zins": [
+1770,
+2076,
+2153,
+2364,
+2558
+],
+"steuer": [
+9587,
+22242,
+13301,
+10775,
+9092
+],
+"hinweis": "Berichtswährung USD (Cashflow, Bilanz, Gewinnrechnung in Mio. USD); Umsatz aus der boerse.de-Reihe (inkl. Verbrauchsteuern)."
+},
+"MC.PA": {
+"jahre": [
+2021,
+2022,
+2023,
+2024,
+2025
+],
+"ocf": [
+null,
+null,
+null,
+null,
+18874
+],
+"capex": [
+2664,
+4969,
+7478,
+5531,
+4567
+],
+"da": [
+4742,
+5234,
+5521,
+6038,
+6088
+],
+"bb": [
+556,
+1616,
+1584,
+312,
+1640
+],
+"cash": [
+null,
+null,
+null,
+null,
+8794
+],
+"debt": [
+null,
+null,
+null,
+null,
+12457
+],
+"brutto": [
+null,
+null,
+null,
+null,
+53528
+],
+"ebit": [
+null,
+null,
+22781,
+19578,
+17668
+],
+"zins": [
+242,
+382,
+973,
+1186,
+1151
+],
+"steuer": [
+null,
+null,
+null,
+null,
+5476
+]
+},
+"EL.PA": {
+"jahre": [
+2021,
+2022,
+2023,
+2024,
+2025
+],
+"ocf": [
+null,
+null,
+null,
+null,
+5291
+],
+"capex": [
+1030,
+1572,
+1531,
+1522,
+1525
+],
+"da": [
+2386,
+2921,
+2947,
+3049,
+3090
+],
+"div": [
+null,
+null,
+null,
+null,
+547
+],
+"bb": [
+null,
+null,
+null,
+null,
+376
+],
+"cash": [
+null,
+null,
+null,
+null,
+3544
+],
+"debt": [
+null,
+null,
+null,
+null,
+6812
+],
+"brutto": [
+null,
+null,
+null,
+null,
+17020
+],
+"ebit": [
+null,
+null,
+null,
+null,
+3473
+],
+"zins": [
+141,
+156,
+198,
+253,
+314
+],
+"steuer": [
+null,
+null,
+null,
+null,
+752
+]
+},
+"AI.PA": {
+"jahre": [
+2021,
+2022,
+2023,
+2024,
+2025
+],
+"ocf": [
+null,
+null,
+null,
+null,
+6518
+],
+"capex": [
+null,
+null,
+3393,
+3525,
+3843
+],
+"da": [
+null,
+null,
+null,
+null,
+2501
+],
+"div": [
+null,
+null,
+null,
+null,
+1955
+],
+"bb": [
+null,
+null,
+null,
+null,
+4
+],
+"brutto": [
+13946,
+16121,
+16461,
+17050,
+17289
+],
+"ebit": [
+null,
+null,
+null,
+null,
+5201
+],
+"hinweis": "Operatives Ergebnis 2025 aus Jahresabschluss-Aggregator (Abgrenzung kann von den ESEF-Jahren um wenige Prozent abweichen)."
+},
+"KER.PA": {
+"jahre": [
+2021,
+2022,
+2023,
+2024,
+2025
+],
+"ocf": [
+null,
+null,
+null,
+4709,
+3158
+],
+"capex": [
+null,
+null,
+null,
+3309,
+830
+],
+"da": [
+1448,
+1668,
+1840,
+2099,
+2053
+],
+"div": [
+null,
+null,
+null,
+1716,
+736
+],
+"cash": [
+null,
+null,
+null,
+3518,
+4313
+],
+"debt": [
+null,
+null,
+null,
+10556,
+10306
+],
+"brutto": [
+null,
+null,
+null,
+12394,
+10660
+],
+"ebit": [
+null,
+null,
+null,
+2440,
+1631
+],
+"zins": [
+152,
+181,
+361,
+603,
+623
+],
+"steuer": [
+null,
+null,
+null,
+455,
+354
+],
+"hinweis": "Operatives Ergebnis ab 2024 aus Jahresabschluss-Aggregator (laufendes operatives Ergebnis, Abgrenzung kann von ESEF-Jahren leicht abweichen)."
 }
 }
 }

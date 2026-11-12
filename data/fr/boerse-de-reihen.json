@@ -101,6 +101,7 @@ null
 "TTE.PA": {
 "name": "TotalEnergies",
 "isin": "FR0000120271",
+"waehrung": "USD",
 "umsatz": [
 200316,
 140685,
