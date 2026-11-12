@@ -3268,6 +3268,7 @@ null
 "KGF.L": {
 "name": "Kingfisher",
 "isin": "GB0033195214",
+"waehrung": "GBP",
 "umsatz": [
 11685,
 11513,
@@ -3353,6 +3354,7 @@ null,
 "MKS.L": {
 "name": "Marks and Spencer",
 "isin": "GB0031274896",
+"waehrung": "GBP",
 "umsatz": [
 10377,
 10182,
@@ -3438,6 +3440,7 @@ null,
 "NXT.L": {
 "name": "Next",
 "isin": "GB0032089863",
+"waehrung": "GBP",
 "umsatz": [
 4167,
 4266,
@@ -3523,6 +3526,7 @@ null,
 "PSON.L": {
 "name": "Pearson",
 "isin": "GB0006776081",
+"waehrung": "GBP",
 "umsatz": [
 3869,
 3397,
@@ -4203,6 +4207,7 @@ null
 "SN.L": {
 "name": "Smith & Nephew",
 "isin": "GB0009223206",
+"waehrung": "USD",
 "umsatz": [
 5138,
 4560,

@@ -4814,6 +4814,427 @@ null,
 4271
 ],
 "hinweis": "Berichtswährung EUR (Mio. EUR); Umsatz aus der boerse.de-Reihe. Cashflow, Zinsen, Steuern: Quelle nicht abrufbar. Schulden inkl. Leasingverbindlichkeiten."
+},
+"PSON.L": {
+"jahre": [
+2021,
+2022,
+2023,
+2024,
+2025
+],
+"ebit": [
+400,
+299,
+546,
+567,
+505
+],
+"ocf": [
+326,
+361,
+525,
+627,
+656
+],
+"capex": [
+64,
+57,
+30,
+33,
+29
+],
+"div": [
+149,
+156,
+154,
+156,
+160
+],
+"da": [
+145,
+144,
+134,
+117,
+115
+],
+"bb": [
+16,
+353,
+186,
+318,
+352
+],
+"cash": [
+937,
+558,
+312,
+543,
+333
+],
+"debt": [
+1434,
+1295,
+1204,
+1530,
+1484
+],
+"zins": [
+68,
+69,
+61,
+79,
+75
+],
+"steuer": [
+-1,
+79,
+113,
+75,
+121
+],
+"brutto": [
+1681,
+1795,
+1835,
+1811,
+1860
+],
+"hinweis": "Berichtswährung GBP (Mio. GBP); Umsatz aus der boerse.de-Reihe. Schulden inkl. Leasingverbindlichkeiten."
+},
+"SN.L": {
+"jahre": [
+2021,
+2022,
+2023,
+2024,
+2025
+],
+"ebit": [
+712,
+658,
+741,
+886,
+794
+],
+"ocf": [
+877,
+468,
+608,
+987,
+1285
+],
+"capex": [
+408,
+358,
+427,
+381,
+433
+],
+"div": [
+329,
+327,
+327,
+327,
+330
+],
+"da": [
+563,
+548,
+527,
+503,
+508
+],
+"bb": [
+null,
+158,
+null,
+null,
+502
+],
+"zins": [
+80,
+80,
+132,
+145,
+140
+],
+"steuer": [
+62,
+12,
+27,
+86,
+154
+],
+"brutto": [
+3698,
+3700,
+3895,
+4079,
+4192
+],
+"hinweis": "Berichtswährung USD (Mio. USD); Umsatz aus der boerse.de-Reihe. Cash und Schulden: Bilanzseite der Quelle nicht abrufbar."
+},
+"KGF.L": {
+"jahre": [
+2021,
+2022,
+2023,
+2024,
+2025
+],
+"ebit": [
+null,
+1098,
+876,
+681,
+652
+],
+"ocf": [
+null,
+1178,
+820,
+1321,
+1302
+],
+"capex": [
+null,
+397,
+449,
+363,
+241
+],
+"div": [
+null,
+254,
+246,
+237,
+228
+],
+"da": [
+null,
+474,
+498,
+530,
+656
+],
+"bb": [
+null,
+186,
+346,
+184,
+251
+],
+"cash": [
+null,
+823,
+286,
+360,
+336
+],
+"debt": [
+null,
+2392,
+2562,
+2476,
+2320
+],
+"zins": [
+null,
+148,
+129,
+133,
+132
+],
+"steuer": [
+null,
+164,
+140,
+130,
+122
+],
+"brutto": [
+null,
+4935,
+4795,
+4776,
+4763
+],
+"hinweis": "Geschäftsjahr endet im Januar (2025 = Geschäftsjahr bis 31.01.2025, wie in der boerse.de-Reihe). Berichtswährung GBP (Mio. GBP); Umsatz aus der boerse.de-Reihe. 2021: Quelle beginnt mit dem Geschäftsjahr bis Januar 2022. Schulden inkl. Leasingverbindlichkeiten."
+},
+"MKS.L": {
+"jahre": [
+2021,
+2022,
+2023,
+2024,
+2025
+],
+"ebit": [
+null,
+703.9,
+680.5,
+931,
+737.8
+],
+"ocf": [
+null,
+1378,
+1030,
+1302,
+1313
+],
+"capex": [
+null,
+192.8,
+325.8,
+359.5,
+408.4
+],
+"div": [
+null,
+null,
+null,
+19.6,
+60.5
+],
+"da": [
+null,
+458.9,
+492,
+447.8,
+408.4
+],
+"bb": [
+null,
+null,
+0.1,
+83.1,
+81.3
+],
+"cash": [
+null,
+1198,
+1068,
+1022,
+864.5
+],
+"debt": [
+null,
+3808,
+3628,
+3133,
+2945
+],
+"zins": [
+null,
+205.4,
+186.6,
+163.2,
+157.2
+],
+"steuer": [
+null,
+82.7,
+111.2,
+247.3,
+219.9
+],
+"brutto": [
+null,
+3616,
+4033,
+4194,
+4602
+],
+"hinweis": "Geschäftsjahr endet Ende März (2025 = Geschäftsjahr bis 29.03.2025, wie in der boerse.de-Reihe). Berichtswährung GBP (Mio. GBP); Umsatz aus der boerse.de-Reihe. 2021: Quelle beginnt mit dem Geschäftsjahr 2022. Dividenden 2022 und 2023: Quelle ohne Angabe. Schulden inkl. Leasingverbindlichkeiten."
+},
+"NXT.L": {
+"jahre": [
+2021,
+2022,
+2023,
+2024,
+2025
+],
+"ebit": [
+null,
+881.9,
+943.5,
+968.7,
+1094
+],
+"ocf": [
+null,
+971.4,
+798.8,
+1120,
+1134
+],
+"capex": [
+null,
+243.6,
+205.1,
+137,
+129.3
+],
+"div": [
+null,
+null,
+237.4,
+248.3,
+257.8
+],
+"da": [
+null,
+218,
+208.5,
+221.8,
+281.7
+],
+"bb": [
+null,
+160,
+352.5,
+293.6,
+487
+],
+"cash": [
+null,
+383,
+105,
+139.3,
+200.4
+],
+"debt": [
+null,
+2106,
+1926,
+1928,
+1877
+],
+"zins": [
+null,
+86.5,
+77.1,
+87,
+96.4
+],
+"steuer": [
+null,
+145.6,
+158.6,
+215.3,
+243.8
+],
+"brutto": [
+null,
+1985,
+2206,
+2457,
+2662
+],
+"hinweis": "Geschäftsjahr endet im Januar (2025 = Geschäftsjahr bis 25.01.2025, wie in der boerse.de-Reihe). Berichtswährung GBP (Mio. GBP); Umsatz aus der boerse.de-Reihe. 2021: Quelle beginnt mit dem Geschäftsjahr bis Januar 2022. Dividenden 2022: Quelle ohne Angabe. Schulden inkl. Leasingverbindlichkeiten."
 }
 }
 }
