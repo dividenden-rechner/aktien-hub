@@ -219,13 +219,14 @@ article.wide>:not(.tool):not(.cards){max-width:760px}
 <p class="note-small">Pro Symbol wird zuerst das Profil geladen, danach nur noch für Aktien, die bisher alle Kriterien erfüllen.</p></div>
 <div class="chips" aria-label="Vorlagen"><span class="lbl">Vorlagen:</span><span id="tpls" class="chips" style="margin:0"></span></div>
 <div class="chips"><span class="lbl" id="savedlbl" hidden>Gespeichert:</span><span id="savedchips" class="chips" style="margin:0" hidden></span></div>
+<div class="form-container basisfilter"><div class="form-group"><label for="f-country">Land oder Region</label><select id="f-country"><option value="">Alle Länder und Regionen</option><optgroup label="Europa"><option value="R:EU">Europa gesamt</option><option value="DE">Deutschland</option><option value="AT">Österreich</option><option value="CH">Schweiz</option><option value="FR">Frankreich</option><option value="NL">Niederlande</option><option value="BE">Belgien</option><option value="LU">Luxemburg</option><option value="IT">Italien</option><option value="ES">Spanien</option><option value="PT">Portugal</option><option value="IE">Irland</option><option value="GB">Großbritannien</option><option value="JE">Jersey</option><option value="DK">Dänemark</option><option value="SE">Schweden</option><option value="NO">Norwegen</option><option value="FI">Finnland</option></optgroup><optgroup label="Nordamerika"><option value="R:NA">Nordamerika gesamt</option><option value="US">USA</option><option value="CA">Kanada</option><option value="BM">Bermuda</option></optgroup><optgroup label="Asien und Pazifik"><option value="R:AP">Asien und Pazifik gesamt</option><option value="JP">Japan</option><option value="AU">Australien</option><option value="HK">Hongkong</option><option value="SG">Singapur</option><option value="KR">Südkorea</option><option value="TW">Taiwan</option><option value="CN">China</option><option value="IN">Indien</option></optgroup><optgroup label="Lateinamerika und Rest"><option value="R:RW">Lateinamerika und Rest gesamt</option><option value="BR">Brasilien</option><option value="MX">Mexiko</option><option value="ZA">Südafrika</option><option value="IL">Israel</option></optgroup></select></div><div class="form-group"><label for="f-sector">Sektor</label><select id="f-sector"><option value="">Alle Sektoren</option><option value="Technology">Technologie</option><option value="Healthcare">Gesundheit</option><option value="Financial Services">Finanzdienstleistungen</option><option value="Consumer Defensive">Basiskonsumgüter</option><option value="Consumer Cyclical">Zyklischer Konsum</option><option value="Industrials">Industrie</option><option value="Energy">Energie</option><option value="Utilities">Versorger</option><option value="Real Estate">Immobilien</option><option value="Basic Materials">Grundstoffe</option><option value="Communication Services">Kommunikation</option></select></div></div>
 <h3 class="sec">Kriterien</h3>
 <div class="addrow"><select id="addcrit" aria-label="Kennzahl als Kriterium hinzufügen"></select></div>
 <div class="crithint" id="crithint">Noch keine Kriterien. Wähle oben eine Kennzahl, zum Beispiel „Dividendenrendite“ oder „Ausschüttungsquote“, stelle „größer als“ oder „kleiner als“ ein und gib einen Wert ein. Du kannst beliebig viele Kriterien kombinieren, oder eine Vorlage laden.</div>
 <div id="crits"></div>
 <details class="moreopt"><summary>Weitere Optionen</summary>
 <div class="form-container">
-<div class="form-group"><label for="f-sector">Sektor</label><select id="f-sector"><option value="">Alle Sektoren</option><option value="Technology">Technologie</option><option value="Healthcare">Gesundheit</option><option value="Financial Services">Finanzdienstleistungen</option><option value="Consumer Defensive">Basiskonsumgüter</option><option value="Consumer Cyclical">Zyklischer Konsum</option><option value="Industrials">Industrie</option><option value="Energy">Energie</option><option value="Utilities">Versorger</option><option value="Real Estate">Immobilien</option><option value="Basic Materials">Grundstoffe</option><option value="Communication Services">Kommunikation</option></select></div><div class="form-group"><label for="f-country">Land</label><select id="f-country"><option value="">Alle Länder</option><option value="US">USA</option><option value="DE">Deutschland</option><option value="CH">Schweiz</option><option value="GB">Großbritannien</option><option value="FR">Frankreich</option><option value="NL">Niederlande</option><option value="DK">Dänemark</option><option value="SE">Schweden</option><option value="CA">Kanada</option><option value="IE">Irland</option><option value="JP">Japan</option></select></div><div class="form-group"><label for="f-exchange">Börse</label><select id="f-exchange"><option value="">Alle Börsen</option><option value="NASDAQ">NASDAQ</option><option value="NYSE">NYSE</option><option value="AMEX">AMEX</option><option value="XETRA">XETRA</option><option value="LSE">London (LSE)</option></select></div>
+<div class="form-group"><label for="f-exchange">Börse</label><select id="f-exchange"><option value="">Alle Börsen</option><option value="NASDAQ">NASDAQ</option><option value="NYSE">NYSE</option><option value="AMEX">AMEX</option><option value="XETRA">XETRA</option><option value="LSE">London (LSE)</option></select></div>
 <div class="form-group"><label for="f-ind">Branche enthält <span class="hint">(z. B. REIT, Bank)</span></label><input id="f-ind" autocomplete="off"></div>
 <div class="form-group" id="limitbox"><label for="f-limit">Höchstens vom Screener laden <span class="hint">(1 bis 1000)</span></label><input id="f-limit" inputmode="numeric" value="500"></div>
 <div class="form-group"><label for="f-max">Höchstens API-Aufrufe je Suche <span class="hint">(Schutz vor Tageslimit; alle Seiten teilen sich bei Gratis 250 pro Tag)</span></label><input id="f-max" inputmode="numeric" value="100"></div>
@@ -547,20 +548,23 @@ article.wide>:not(.tool):not(.cards){max-width:760px}
   var KZ = null;
   async function kzLaden() { if (KZ) return KZ; var r = await fetch("../data/kennzahlen.json?v=" + Math.floor(Date.now() / 36e5)); if (!r.ok) throw new Error("Eigene Daten nicht ladbar"); KZ = await r.json(); return KZ; }
   function ownRow(sym, K) {
-    var p = { symbol: sym, name: K.name || sym, companyName: K.name || sym, sector: K.sektor || "", industry: "", price: K.kurs_usd, mcap: K.boersenwert_usd, country: "", exchange: K.boerse || "", isEtf: false };
+    var p = { symbol: sym, name: K.name || sym, companyName: K.name || sym, sector: K.sektor || "", industry: "", price: K.kurs_usd, mcap: K.boersenwert_usd, country: K.land || "", exchange: K.boerse || "", isEtf: false };
     return { profile: p, own: K };
   }
+var REGION = {"DE":"R:EU","AT":"R:EU","CH":"R:EU","FR":"R:EU","NL":"R:EU","BE":"R:EU","LU":"R:EU","IT":"R:EU","ES":"R:EU","PT":"R:EU","IE":"R:EU","GB":"R:EU","JE":"R:EU","DK":"R:EU","SE":"R:EU","NO":"R:EU","FI":"R:EU","US":"R:NA","CA":"R:NA","BM":"R:NA","JP":"R:AP","AU":"R:AP","HK":"R:AP","SG":"R:AP","KR":"R:AP","TW":"R:AP","CN":"R:AP","IN":"R:AP","BR":"R:RW","MX":"R:RW","ZA":"R:RW","IL":"R:RW"};
+  function landPasst(l, f) { if (!f) return true; if (f.indexOf("R:") === 0) return REGION[l] === f; return l === f; }
   async function runEigen(crit) {
     status("Eigene Daten werden geladen …");
-    var J = await kzLaden(), ind = $("f-ind").value.trim().toLowerCase(), sec = $("f-sector").value;
+    var J = await kzLaden(), ind = $("f-ind").value.trim().toLowerCase(), sec = $("f-sector").value, land = $("f-country").value;
     var work = Object.keys(J.werte).map(function (s) { return ownRow(s, J.werte[s]); });
     var log = ["Eigene Daten: " + work.length], skip = [];
     work = work.filter(function (D) {
       if (sec && D.profile.sector !== sec) return false;
+      if (land && !landPasst(D.profile.country, land)) return false;
       if (ind) { if (/reit|immobil/.test(ind)) return D.profile.sector === "Real Estate"; if (/bdc/.test(ind)) return !!D.own.bdc; return String(D.profile.name).toLowerCase().indexOf(ind) > -1; }
       return true;
     });
-    if (sec || ind) log.push("nach Sektor/Branche: " + work.length);
+    if (sec || ind || land) log.push("nach Sektor/Land/Branche: " + work.length);
     crit.forEach(function (c) {
       var f = OWN[c.id], m = CAT[c.id];
       if (!f) { skip.push(m.l); return; }
@@ -609,7 +613,7 @@ article.wide>:not(.tool):not(.cards){max-width:760px}
       // Basisfilter (Sektor, Land, Börse, ETF, Branche) auch lokal anwenden
       var work = uni.filter(function (D) {
         var p = D.profile;
-        if (base.sector && p.sector !== base.sector) return false; if (base.country && p.country !== base.country) return false; if (base.exchange && p.exchange !== base.exchange) return false;
+        if (base.sector && p.sector !== base.sector) return false; if (base.country && !landPasst(p.country, base.country)) return false; if (base.exchange && p.exchange !== base.exchange) return false;
         if (base.noEtf && p.isEtf) return false; if (ind && p.industry.toLowerCase().indexOf(ind) < 0) return false; return true;
       });
       if (work.length !== uni.length) log.push("nach Sektor/Land/Börse/Branche: " + work.length);
@@ -655,6 +659,7 @@ article.wide>:not(.tool):not(.cards){max-width:760px}
     var cols = [{ k: "symbol", l: "Symbol", get: function (D) { return D.profile.symbol; }, f: function (D) { return slink(D.profile.symbol, "<b>" + esc(D.profile.symbol) + "</b>", true); }, t: 1 },
     { k: "name", l: "Name", get: function (D) { return D.profile.name; }, f: function (D) { return slink(D.profile.symbol, esc(D.profile.name), false); }, t: 1 },
     { k: "sector", l: "Sektor", get: function (D) { return D.profile.sector; }, f: function (D) { return esc(D.profile.sector); }, t: 1 },
+    { k: "country", l: "Land", get: function (D) { return D.profile.country; }, f: function (D) { return esc(D.profile.country || "–"); }, t: 1 },
     { k: "price", l: "Kurs", get: function (D) { return D.profile.price; }, f: function (D) { return dec(D.profile.price, 2); } },
     { k: "mcap", l: "Marktkap.", get: function (D) { return D.profile.mcap; }, f: function (D) { return big(D.profile.mcap); } }];
     var seen = { price: 1, mcap: 1 };
@@ -672,7 +677,7 @@ article.wide>:not(.tool):not(.cards){max-width:760px}
     var tb = rows.slice(0, 500).map(function (D) { return "<tr>" + cols.map(function (c) { return '<td class="' + (c.t ? "l" : "") + '">' + c.f(D) + "</td>"; }).join("") + "</tr>"; }).join("");
     $("res").innerHTML = rows.length ? '<div class="xw"><table><thead><tr>' + th + "</tr></thead><tbody>" + tb + "</tbody></table></div>" : "";
     $("actions").hidden = !rows.length; $("count").textContent = rows.length ? rows.length + " Treffer" : "";
-    $("res").querySelectorAll("[data-sort]").forEach(function (b) { b.onclick = function () { var k = b.dataset.sort; if (ST.sort === k) ST.dir = ST.dir === "asc" ? "desc" : "asc"; else { ST.sort = k; ST.dir = (k === "symbol" || k === "name" || k === "sector") ? "asc" : "desc"; } render(); }; });
+    $("res").querySelectorAll("[data-sort]").forEach(function (b) { b.onclick = function () { var k = b.dataset.sort; if (ST.sort === k) ST.dir = ST.dir === "asc" ? "desc" : "asc"; else { ST.sort = k; ST.dir = (k === "symbol" || k === "name" || k === "sector" || k === "country") ? "asc" : "desc"; } render(); }; });
   }
 
   /* ---------- Vorlagen ---------- */

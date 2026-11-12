@@ -46,6 +46,14 @@ GICS = {"Information Technology": "Technology", "Health Care": "Healthcare", "Fi
 SEKTOR = {}
 
 
+def land_aus_isin(isin, f):
+    """Land aus der ISIN; US-ISIN bei ausländischen SEC-Firmen (Zertifikat) bleibt offen."""
+    l = (isin or "")[:2]
+    if l == "US" and (f.get("w") not in (None, "USD") or f.get("std") == "IFRS"):
+        return None
+    return l or None
+
+
 def main():
     try:
         for x in json.load(open("data/universe.json"))["firmen"]:
@@ -130,7 +138,7 @@ def main():
                 break
         U = lambda v: None if v is None else round(v * usd)
         o.update({
-            "name": f["n"], "sektor": SEKTOR.get(t) or f.get("sektor"), "land": f.get("land"), "kurs_usd": r2(k_eur * rate.get("USD", 1.0)),
+            "name": f["n"], "sektor": SEKTOR.get(t) or f.get("sektor"), "land": f.get("land") or land_aus_isin(z["isin"], f), "kurs_usd": r2(k_eur * rate.get("USD", 1.0)),
             "boersenwert_usd": round(k_eur * rate.get("USD", 1.0) * aktien) if aktien else None,
             "umsatz_usd": U(ums), "gewinn_usd": U(gew), "ocf_usd": U(ocf), "fcf_usd": U(fcf), "capex_usd": U(abs(cx) if cx is not None else None),
             "dividenden_usd": U(abs(dg) if dg is not None else None), "schulden_usd": U(sch), "cash_usd": U(cash),
