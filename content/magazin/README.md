@@ -17,10 +17,11 @@ Datei anklicken, dann Stift-Symbol: Zeile `draft: true` löschen und speichern, 
 | 29.10.2026 22:42 | Amazon steigert Umsatz im dritten Quartal auf 201,9 Milliarden Dollar | [79738970_2026-10-29/7757_2242-amazon-q3-2026-zahlen.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/79738970_2026-10-29/7757_2242-amazon-q3-2026-zahlen.md) |
 | 29.10.2026 10:12 | Shell erzielt im dritten Quartal 10,8 Milliarden Dollar Gewinn | [79738970_2026-10-29/8987_1012-shell-q3-2026-ergebnisse.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/79738970_2026-10-29/8987_1012-shell-q3-2026-ergebnisse.md) |
 
-### Online (360)
+### Online (361)
 
 | Datum | Titel | Datei |
 |---|---|---|
+| 12.11.2026 11:00 | Munich Re übertrifft die Gewinnschätzung um 18 % und hebt das Jahresziel auf 6,6 Milliarden Euro | [79738887_2026-11-12/9682_1100-munich-re-q3-2026-konsens-uebertroffen-prognose-6-6-mrd.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/79738887_2026-11-12/9682_1100-munich-re-q3-2026-konsens-uebertroffen-prognose-6-6-mrd.md) |
 | 12.11.2026 10:30 | Allianz übertrifft die Erwartungen um 10 % und hebt das Gewinnziel für 2026 an | [79738887_2026-11-12/9683_1030-allianz-q3-2026-operatives-ergebnis-prognose-angehoben.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/79738887_2026-11-12/9683_1030-allianz-q3-2026-operatives-ergebnis-prognose-angehoben.md) |
 | 11.11.2026 22:55 | Nvidia: Neuer Bericht über eine Beziehung von Jensen Huang zu einer Managerin | [79738888_2026-11-11/7744_2255-nvidia-huang-bericht-beziehung-managerin.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/79738888_2026-11-11/7744_2255-nvidia-huang-bericht-beziehung-managerin.md) |
 | 11.11.2026 22:45 | EnerSys: Gewinn je Aktie steigt um ein Drittel, der Umsatz tritt auf der Stelle | [79738888_2026-11-11/7754_2245-enersys-q2-fy27-zahlen-ultralife.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/79738888_2026-11-11/7754_2245-enersys-q2-fy27-zahlen-ultralife.md) |
