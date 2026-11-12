@@ -263,8 +263,12 @@ const one = a => Array.isArray(a)?(a[0]||{}):(a||{});
    (z. B. Bruttogewinn, operatives Ergebnis). Bilanz: FMP zuerst, weil „Schulden gesamt“ dort auch kurzfristige Schulden enthält. */
 let SECP=null;
 function secLoad(){const v=Math.floor(Date.now()/864e5),j=u=>fetch(u+"?v="+v).then(r=>r.ok?r.json():null).catch(()=>null);
-  return SECP||(SECP=Promise.all([j("../data/sec/fundamentals.json"),j("../data/esef/fundamentals.json")]).then(([s,e])=>{
-    if(!s&&!e)return null;s=s||{firmen:{}};if(e&&e.firmen)for(const t in e.firmen)if(!s.firmen[t])s.firmen[t]=e.firmen[t];return s}))}
+  return SECP||(SECP=Promise.all([j("../data/sec/fundamentals.json"),j("../data/esef/fundamentals.json"),j("../data/boerse-de/fundamentals.json")]).then(([s,e,b])=>{
+    if(!s&&!e&&!b)return null;s=s||{firmen:{}};if(e&&e.firmen)for(const t in e.firmen)if(!s.firmen[t])s.firmen[t]=e.firmen[t];
+    /* boerse.de (2019 bis 2025): neue Firmen komplett, vorhandene nur um fehlende Reihen und Jahre ergänzt */
+    if(b&&b.firmen)for(const t in b.firmen){const bf=b.firmen[t],o=s.firmen[t];if(!o){s.firmen[t]=bf;continue}
+      o.k=o.k||{};for(const k in bf.k){const have=new Set((o.k[k]||[]).map(([d])=>secJahr(d)));const add=bf.k[k].filter(([d])=>!have.has(secJahr(d)));if(add.length)o.k[k]=(o.k[k]||[]).concat(add).sort((x,y)=>x[0]<y[0]?-1:1)}}
+    return s}))}
 let KZP=null;
 function kzLoad(){return KZP||(KZP=fetch("../data/kennzahlen.json?v="+Math.floor(Date.now()/36e5)).then(r=>r.ok?r.json():null).catch(()=>null))}
 /* Eigene Kennzahlen: Schlusskurs (Deutsche Börse, verzögert) + SEC-Jahreszahlen + EZB-Kurse; Tabelle im Stil des Steckbriefs */
@@ -345,7 +349,7 @@ function secDaten(f){
   const cf=yrs.map(y=>({y,depreciationAndAmortization:abs_[y]!=null?Math.abs(abs_[y]):undefined,operatingCashFlow:def(ocf[y]),capitalExpenditure:neg(cx[y]),freeCashFlow:ocf[y]!=null&&cx[y]!=null?ocf[y]-Math.abs(cx[y]):undefined,commonDividendsPaid:neg(dv[y]),commonStockRepurchased:neg(bb[y])}));
   const bs=yrs.map(y=>({y,longTermDebt:debt[y]!=null||skz[y]!=null?(debt[y]||0)+(skz[y]||0):undefined,cashAndCashEquivalents:def(cash[y]),totalStockholdersEquity:def(eq[y])}));
   const dy=Object.keys({...dps,...dpb}).sort().slice(-10).map(y=>({y,v:dps[y]??dpb[y],ber:dps[y]==null}));
-  return {inc,cf,bs,dy,cur:f.w,gj:f.gj};
+  return {inc,cf,bs,dy,cur:f.w,gj:f.gj,q:f.quelle};
 }
 /* Jahreswerte zusammenführen: vorne = Vorrang, hinten füllt nur Lücken */
 function mergeJ(vorne,hinten,n=10){const M={};const put=(a,prio)=>(a||[]).forEach(x=>{const y=String(x.y);M[y]=M[y]||{y};Object.entries(x).forEach(([k,v])=>{if(v==null||k==="y")return;if(prio||M[y][k]==null)M[y][k]=v})});put(hinten,true);put(vorne,true);return Object.values(M).sort((a,b)=>a.y-b.y).slice(-n)}
@@ -780,7 +784,7 @@ async function initFinance(sym,p,cur,inc,cf,SD){
   const have=S.filter(s=>s.v.some(v=>v!=null));
   let on=new Set(["ni","fcf","cash","debt"].filter(k=>have.some(s=>s.k===k)));let mode="line",sy=years[years.length-1];
   box.className="fin";
-  box.innerHTML=`<h3>Finanzen im Überblick</h3><p class="fsub">Jahreswerte in ${esc(cur||"Berichtswährung")}. Quelle: ${SD?"Jahresberichte bei der SEC":"FMP"}.</p>
+  box.innerHTML=`<h3>Finanzen im Überblick</h3><p class="fsub">Jahreswerte in ${esc(cur||"Berichtswährung")}. Quelle: ${SD?(SD.q==="boerse.de"?"boerse.de (Jahresabschlüsse)":"Jahresberichte bei der SEC"):"FMP"}.</p>
   <div class="fcard"><div class="fctl"><b id="fst">Gewinnfluss</b><span class="ftoggle"><button type="button" data-f="gw" aria-pressed="true">Gewinn</button><button type="button" data-f="cf" aria-pressed="false">Cashflow</button></span><select id="fsy" aria-label="Jahr">${years.slice().reverse().map(y=>`<option>${y}</option>`).join("")}</select></div><div class="fscroll" id="fsk"></div><p class="fnote" id="fsn">Vom Umsatz bis zum Nettogewinn. Die Breite der Bänder ist proportional zum Betrag.</p></div>
   <div class="fcard"><div class="fctl"><b>Kennzahlen übereinander legen</b><button type="button" data-m="line" aria-pressed="true">Linien</button><button type="button" data-m="bar" aria-pressed="false">Balken</button></div><div class="fchips" id="fch"></div><div class="fscroll fit" id="fcm"></div><p class="fnote" id="fmn"></p></div>
   ${debtCard()}
