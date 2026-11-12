@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="de"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex"><title>Bilanzen DAX, CAC 40, FTSE 100</title>
+<style>
+body{font:15px/1.45 system-ui,sans-serif;margin:0;color:#1d1d1b;background:#fff}
+main{max-width:1000px;margin:0 auto;padding:16px}
+h1{font-size:20px;margin:8px 0 4px}
+.s{color:#666;font-size:13px;margin:0 0 12px}
+.bar{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:12px}
+select,input{font:inherit;padding:6px 8px;border:1px solid #bbb;border-radius:3px;background:#fff;min-width:0}
+.w{overflow-x:auto}
+table{border-collapse:collapse;width:100%;font-variant-numeric:tabular-nums}
+th,td{padding:5px 8px;border-bottom:1px solid #e3e3e3;text-align:right;white-space:nowrap}
+th:first-child,td:first-child{text-align:left;position:sticky;left:0;background:#fff}
+th{font-weight:600;border-bottom:2px solid #2a8a3e}
+.h{font-size:13px;color:#555;margin:10px 0;white-space:normal}
+.n{color:#b00}
+a{color:#2a8a3e}
+</style></head><body><main>
+<h1>Bilanzen aus boerse.de</h1>
+<p class="s" id="meta"></p>
+<div class="bar"><select id="idx"><option value="de">DAX</option><option value="fr">CAC 40</option><option value="uk">FTSE 100</option></select>
+<select id="firm"></select><input id="q" placeholder="Firma suchen"></div>
+<div class="w"><table id="t"></table></div>
+<p class="h" id="hin"></p>
+<p class="s">Rohdaten: <a href="../data/de/boerse-de-reihen.json">DAX</a> · <a href="../data/fr/boerse-de-reihen.json">CAC 40</a> · <a href="../data/uk/boerse-de-reihen.json">FTSE 100</a> · <a href="../data/fehlend-bilanzen.json">Fehlende Firmen</a>. Maschinell übernommen, nicht gegen Geschäftsberichte geprüft. Beträge in Mio., Währung je Firma.</p>
+<script>
+var L=[["umsatz","Umsatz"],["ebt","Ergebnis vor Steuer"],["jahresueberschuss","Jahresüberschuss"],["dividendenausschuettung","Dividendenausschüttung"],["eigenkapital","Eigenkapital"],["eps","Gewinn je Aktie"],["dividende_je_aktie","Dividende je Aktie"],["aktien_mio","Aktien (Mio.)"],["eigenkapitalrendite_pct","Eigenkapitalrendite %"]];
+var D={},$=function(i){return document.getElementById(i)};
+function f(v){return v==null?'<span class="n">–</span>':v.toLocaleString('de-DE',{maximumFractionDigits:2})}
+function load(){var k=$('idx').value;fetch('../data/'+k+'/boerse-de-reihen.json').then(r=>r.json()).then(d=>{D=d;$('meta').textContent=(d.stand||'')+' · '+Object.keys(d.firmen).length+' Firmen';fill()})}
+function fill(){var q=$('q').value.toLowerCase(),s=$('firm');s.innerHTML='';Object.keys(D.firmen).forEach(function(k){var x=D.firmen[k];if((x.name+k).toLowerCase().indexOf(q)>-1){var o=document.createElement('option');o.value=k;o.textContent=x.name+' ('+k+')';s.appendChild(o)}});show()}
+function show(){var k=$('firm').value,x=D.firmen&&D.firmen[k];if(!x){$('t').innerHTML='';$('hin').textContent='';return}
+var y=D.jahre||[2019,2020,2021,2022,2023,2024,2025],h='<tr><th>'+x.name+' · '+(x.waehrung||D.einheit||'')+'</th>'+y.map(a=>'<th>'+a+'</th>').join('')+'</tr>';
+L.forEach(function(l){h+='<tr><td>'+l[1]+'</td>'+(x[l[0]]||[]).map(v=>'<td>'+f(v)+'</td>').join('')+'</tr>'});
+$('t').innerHTML=h;$('hin').textContent=x.hinweis?'Hinweis: '+x.hinweis:''}
+$('idx').onchange=load;$('q').oninput=fill;$('firm').onchange=show;load();
+</script></main></body></html>

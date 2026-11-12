@@ -1,0 +1,89 @@
+{
+ "stand": "2026-11-12",
+ "hinweis": "Zweiter Lauf: diese Firmen fehlen noch in data/<land>/boerse-de-reihen.json. Zuerst Wiederholung der Seiten mit Fehler (Abstand mehrere Minuten), danach andere Suche oder Ersatzquelle.",
+ "de": {
+  "seite_fehler": [
+   "Fresenius",
+   "Siemens Healthineers",
+   "Qiagen",
+   "Zalando"
+  ]
+ },
+ "fr": {
+  "seite_fehler": [
+   "Sanofi",
+   "Danone",
+   "Pernod Ricard",
+   "Engie",
+   "Capgemini",
+   "Orange",
+   "Edenred",
+   "Eurofins",
+   "Teleperformance",
+   "Unibail-Rodamco-Westfield"
+  ],
+  "nicht_geprueft": [
+   "Airbus",
+   "Stellantis",
+   "TechnipFMC (Indexzugehörigkeit offen)"
+  ]
+ },
+ "uk": {
+  "seite_fehler": [
+   "HSBC (URL nicht freigegeben, neu suchen)",
+   "Barclays (URL nicht freigegeben, neu suchen)",
+   "Diageo",
+   "Vodafone",
+   "National Grid",
+   "Aviva",
+   "Ashtead",
+   "Halma",
+   "Informa",
+   "Schroders"
+  ],
+  "keine_seite_gefunden": [
+   "Standard Chartered",
+   "Beazley",
+   "Weir",
+   "Smurfit Westrock",
+   "Metlen",
+   "ICG",
+   "Land Securities",
+   "Melrose",
+   "Mondi",
+   "Hikma",
+   "IAG"
+  ],
+  "nicht_gesucht": [
+   "Rightmove",
+   "Unite",
+   "Vistry",
+   "Wise",
+   "Berkeley",
+   "Bellway",
+   "Pershing Square",
+   "weitere bis 100 (Indexliste abgleichen)"
+  ]
+ },
+ "luecken_in_gespeicherten": {
+  "umsatz_fehlt_nachholen": [
+   "BRBY.L Burberry",
+   "AUTO.L Auto Trader",
+   "RKT.L Reckitt"
+  ],
+  "reihe_lueckenhaft": [
+   "GAW.L Games Workshop",
+   "BVI.PA Bureau Veritas (2019)"
+  ],
+  "waehrung_unsicher": [
+   "RTO.L Rentokil"
+  ],
+  "werte_pruefen": [
+   "UU.L Aktienzahl",
+   "EXPN.L 2021 EPS/Aktien",
+   "CTEC.L Aktienzahl 2022, Dividende 2023",
+   "JD.L Split 2022",
+   "DSY.PA/ML.PA/AI.PA Splits"
+  ]
+ }
+}
