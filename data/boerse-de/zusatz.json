@@ -2810,6 +2810,304 @@ null,
 270.8
 ],
 "hinweis": "Operativer Cashflow 2021 bis 2023 auf 10 Mio. gerundet (Quelle), 2024 und 2025 aus der Ergebnismitteilung. Operatives Ergebnis aus Aggregator (leicht andere Abgrenzung als IFRS-Ausweis)."
+},
+"STMPA.PA": {
+"jahre": [
+2021,
+2022,
+2023,
+2024,
+2025
+],
+"ocf": [
+3060,
+5202,
+5992,
+2965,
+2152
+],
+"capex": [
+1840,
+3549,
+4439,
+3088,
+2111
+],
+"da": [
+1045,
+1216,
+1561,
+1760,
+1854
+],
+"div": [
+205,
+212,
+223,
+288,
+321
+],
+"bb": [
+534,
+390,
+400,
+403,
+390
+],
+"cash": [
+3225,
+3258,
+3222,
+2282,
+2837
+],
+"debt": [
+2396,
+2492,
+2655,
+1913,
+1781
+],
+"brutto": [
+5326,
+7635,
+8287,
+5220,
+3999
+],
+"ebit": [
+2428,
+4429,
+4593,
+1655,
+496
+],
+"zins": [
+42,
+13,
+55,
+85,
+55
+],
+"steuer": [
+331,
+520,
+541,
+313,
+220
+],
+"hinweis": "Berichtswährung USD (Cashflow, Bilanz, Gewinnrechnung in Mio. USD)."
+},
+"MT.AS": {
+"jahre": [
+2021,
+2022,
+2023,
+2024,
+2025
+],
+"ocf": [
+9905,
+10203,
+7645,
+4852,
+4808
+],
+"capex": [
+3008,
+3468,
+4613,
+4405,
+4337
+],
+"da": [
+2523,
+2580,
+2675,
+2632,
+2945
+],
+"div": [
+312,
+332,
+369,
+393,
+421
+],
+"bb": [
+5170,
+2937,
+1208,
+1300,
+262
+],
+"cash": [
+4215,
+9300,
+7686,
+6400,
+5392
+],
+"debt": [
+5797,
+8239,
+7430,
+7963,
+9704
+],
+"brutto": [
+19047,
+13961,
+5775,
+6120,
+4580
+],
+"ebit": [
+16625,
+11654,
+3135,
+3444,
+1667
+],
+"zins": [
+357,
+401,
+715,
+510,
+577
+],
+"steuer": [
+2460,
+1717,
+238,
+1535,
+359
+],
+"hinweis": "Berichtswährung USD (Cashflow, Bilanz, Gewinnrechnung in Mio. USD)."
+},
+"PUB.PA": {
+"jahre": [
+2021,
+2022,
+2023,
+2024,
+2025
+],
+"ocf": [
+null,
+null,
+null,
+null,
+2943
+],
+"capex": [
+null,
+null,
+null,
+238,
+250
+],
+"da": [
+733,
+822,
+595,
+606,
+615
+],
+"div": [
+null,
+null,
+null,
+null,
+903
+],
+"bb": [
+127,
+null,
+189,
+148,
+147
+],
+"cash": [
+null,
+null,
+null,
+null,
+4031
+],
+"debt": [
+3446,
+2989,
+2462,
+1843,
+3082
+],
+"brutto": [
+5152,
+6067,
+6399,
+6942,
+7960
+],
+"zins": [
+185,
+205,
+199,
+206,
+201
+],
+"steuer": [
+null,
+null,
+null,
+null,
+577
+]
+},
+"VIE.PA": {
+"jahre": [
+2021,
+2022,
+2023,
+2024,
+2025
+],
+"capex": [
+1728.8,
+2783.6,
+3140,
+null,
+null
+],
+"cash": [
+null,
+null,
+null,
+null,
+8021
+],
+"debt": [
+10463,
+19692,
+18777,
+18281,
+18978
+],
+"zins": [
+393.9,
+620,
+769,
+855,
+825
+],
+"steuer": [
+null,
+null,
+null,
+null,
+587
+],
+"hinweis": "Capex nur 2021 bis 2023 (Quelle ohne 2024 und 2025); operatives Ergebnis 2025 bewusst nicht ergänzt, weil die Quelle anders abgrenzt als die ESEF-Jahre."
 }
 }
 }

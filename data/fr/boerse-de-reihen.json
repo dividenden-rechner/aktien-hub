@@ -952,6 +952,7 @@ null,
 "MT.AS": {
 "name": "ArcelorMittal",
 "isin": "LU1598757687",
+"waehrung": "USD",
 "umsatz": [
 70615,
 53270,
@@ -2057,6 +2058,7 @@ null,
 "STMPA.PA": {
 "name": "STMicroelectronics",
 "isin": "NL0000226223",
+"waehrung": "USD",
 "umsatz": [
 9529,
 10181,
