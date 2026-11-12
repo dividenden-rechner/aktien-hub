@@ -1,6 +1,36 @@
 {
  "items": [
   {
+   "sym": "SAP.DE",
+   "name": "SAP",
+   "datum": "2026-10-21",
+   "eps": 1.89,
+   "eps_basis": "bereinigt",
+   "revenue": 10270000000.0,
+   "waehrung": "EUR",
+   "quelle": "https://finviz.com/news/405805/sap-quarterly-statement-q3-2026"
+  },
+  {
+   "sym": "BAS.DE",
+   "name": "BASF",
+   "datum": "2026-10-28",
+   "eps": 0.72,
+   "eps_basis": "bereinigt",
+   "revenue": 16400000000.0,
+   "waehrung": "EUR",
+   "quelle": "https://www.basf.com/global/de/media/news-releases/2026/10/p-26-180"
+  },
+  {
+   "sym": "MBG.DE",
+   "name": "Mercedes-Benz",
+   "datum": "2026-10-28",
+   "eps": null,
+   "eps_basis": "",
+   "revenue": 30700000000.0,
+   "waehrung": "EUR",
+   "quelle": "https://www.fundresearch.de/nachrichten/quartalszahlen/2026/10/mercedes-macht-nach-schwachem-vorjahresquartal-mehr-gewinn-550215.php"
+  },
+  {
    "sym": "CS.PA",
    "name": "AXA",
    "datum": "2026-10-29",
@@ -1191,6 +1221,16 @@
    "quelle": "https://www.sec.gov/Archives/edgar/data/936340/000093634026000166/exhibit991-93026.htm"
   },
   {
+   "sym": "DTE.DE",
+   "name": "Deutsche Telekom",
+   "datum": "2026-11-05",
+   "eps": 0.58,
+   "eps_basis": "berichtet",
+   "revenue": 31102000000.0,
+   "waehrung": "EUR",
+   "quelle": "https://www.telekom.com/de/newsroom/aktuelles/medieninformationen/2026/11/mehr-wachstum-erhoehte-prognose-rekorddividende"
+  },
+  {
    "sym": "ED",
    "name": "Consolidated Edison",
    "datum": "2026-11-05",
@@ -1589,6 +1629,56 @@
    "revenue": 21900000000.0,
    "waehrung": "Euro",
    "quelle": "https://www.sec.gov/Archives/edgar/data/839923/000165495426009641/a4345c.htm"
+  },
+  {
+   "sym": "ENR.DE",
+   "name": "Siemens Energy",
+   "datum": "2026-11-11",
+   "eps": 1.49,
+   "eps_basis": "berichtet",
+   "revenue": 12800000000.0,
+   "waehrung": "EUR",
+   "quelle": "https://www.siemens-energy.com/global/en/home/investor-relations.html"
+  },
+  {
+   "sym": "ALV.DE",
+   "name": "Allianz",
+   "datum": "2026-11-12",
+   "eps": 7.42,
+   "eps_basis": "berichtet",
+   "revenue": 44400000000.0,
+   "waehrung": "EUR",
+   "quelle": "https://www.allianz.com/en/investor_relations.html"
+  },
+  {
+   "sym": "HLAG.DE",
+   "name": "Hapag-Lloyd",
+   "datum": "2026-11-12",
+   "eps": null,
+   "eps_basis": "",
+   "revenue": 6883000000.0,
+   "waehrung": "USD",
+   "quelle": "https://www.hapag-lloyd.com/de/company/ir/publications/financial-report.html"
+  },
+  {
+   "sym": "MUV2.DE",
+   "name": "Munich Re",
+   "datum": "2026-11-12",
+   "eps": null,
+   "eps_basis": "",
+   "revenue": 16626000000.0,
+   "waehrung": "EUR",
+   "quelle": "https://www.munichre.com/en/company/investors.html"
+  },
+  {
+   "sym": "SIE.DE",
+   "name": "Siemens",
+   "datum": "2026-11-12",
+   "eps": 2.8,
+   "eps_basis": "berichtet",
+   "revenue": 23683000000.0,
+   "waehrung": "EUR",
+   "quelle": "https://www.siemens.com/investor/de"
   }
  ]
 }
