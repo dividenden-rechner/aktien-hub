@@ -106,8 +106,9 @@ svg text{fill:var(--mut);font-size:11px;font-family:inherit}
 .story .pr em.neg{background:#fde3e0;color:#b3372d}
 .story .pr small{font-size:3cqw;color:#6a7783;margin-left:auto}
 .story svg{width:100%;height:auto;display:block}
-.story svg text{font-size:10px;fill:#14202b;font-family:inherit}
-.story svg .ax{fill:#6a7783}
+.story .old svg text{font-size:10px;fill:#14202b;font-family:inherit}
+.story .old svg .ax{fill:#6a7783}
+.story .sg{display:grid;grid-template-columns:1fr 1fr;gap:3cqw 4cqw;align-content:start}.story .bd .tt .logo{width:9cqw;height:9cqw}.story .bd .tt b{font-size:4.6cqw}.story .bd{gap:2cqw;justify-content:flex-start;padding-top:2cqw}.story .bd .pr b{font-size:7cqw}.story .bd .pr small{font-size:2.6cqw}.story .sg .full{grid-column:1/-1}.story .sg .card{border:0;border-top:.5cqw solid #14202b;border-radius:0;padding:1.6cqw 0 0;background:none;min-width:0}.story .sg h3{font-size:3cqw;margin:0 0 .4cqw}.story .sg .kern{font-size:4cqw;margin:0;line-height:1.2}.story .sg .kern small{font-size:2.6cqw;margin-left:1.2cqw;display:inline-block;white-space:nowrap}.story .sg .full svg{max-height:24cqw;width:auto;max-width:100%;margin:0 auto}.story .sg .card>p{display:none}.story .sg svg{height:auto}.story .sg .kleg{display:none}.story .sg .card p{font-size:2.8cqw}.story .sg svg text{font-size:10px}
 .story .ch{display:flex;gap:2cqw;margin-top:1cqw}
 .story .ch span{flex:1;background:#eaf9f0;border-radius:2cqw;padding:.8cqw 1cqw;font-size:3cqw;text-align:center;color:#6a7783}
 .story .ch b{display:block;color:#14202b;font-size:3.8cqw}
@@ -634,7 +635,7 @@ async function openStock(sym){
   const up=(a)=>price&&a?a/price-1:null;
   const sg=v=>v==null?"":v>=0?"pos":"neg",pc=v=>v==null?"–":(v>0?"+":"")+num(v*100,1)+" %";
   const kp=(l,v,c="")=>`<div><b class="${c}">${v}</b><span>${l}</span></div>`;
-  LAST={sym,p,price,chg,cur,pts,divs,inc,est:d.est,g:one(d.grades),tgt,pt,r};
+  LAST={sym,p,price,chg,cur,pts,divs,divNote,cf,inc,est:d.est,g:one(d.grades),tgt,pt,r};
   const KC=kursChart(sym,p.currency||cur,pr,q,price);
   hub.innerHTML=`
   <div class="head">${img(sym,p.website,p.companyName)}<div><div class="nm"><h1>${esc(p.companyName||sym)}</h1><button class="wlh" id="wlb" data-wl="${esc(sym)}" data-n="${esc(p.companyName||sym)}">${wlHas(sym)?"★ Watchlist":"☆ Watchlist"}</button><button class="igh" id="sb" title="Instagram-Story erstellen" aria-label="Instagram-Story erstellen"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r=".6" fill="currentColor"/></svg></button></div><p>${esc(sym)} · ${esc(p.exchange||"")} · ${esc(p.sector||"")}${p.industry?" · "+esc(p.industry):""} · Börsenwert ${big(first(q,"marketCap")??p.marketCap)}</p></div>
@@ -1330,14 +1331,15 @@ function story(S){
     return svg+lines+labs+"</svg>";
   };
   const ov=document.createElement("div");ov.id="ov";
+  const cf=S.cf||[],dn=S.divNote||"";
+  /* Uebersicht der Charts, die auf der Aktienseite unter den Kennzahlen stehen; fehlende Daten ergeben eine Karte "Keine Daten", nichts wird erfunden */
+  const only=h=>/Keine Daten verfügbar/.test(h)?"":h;
+  const cards=[["full",only(bars("Dividende je Aktie",dn,divs,"var(--c-gold)",v=>num(v)))],["",only(combo(inc,cur))],["",only(margins(inc))],["",only(fcfChart(cf,cur))],["",only(epsChart(inc,cur))]].filter(c=>c[1]);
   ov.innerHTML=`<div class="ctl"><button id="cl">✕ Schließen</button></div><div class="hint">Tippen blendet die Buttons aus, dann Screenshot</div>
   <div class="story"><div class="top"></div><div class="sh">Aktuelle Meldung</div><div class="bd">
    <div class="tt">${img(sym)}<div><b>${esc(p.companyName||sym)}</b><span>${esc(sym)}${p.sector?" · "+esc(p.sector):""}</span></div></div>
    <div class="pr"><b>${num(price)} ${cc}</b>${chg!=null?`<em class="${chg<0?"neg":""}">${chg>0?"+":""}${num(chg)} %</em>`:""}<small>Stand ${new Date().toLocaleDateString("de-DE")}</small></div>
-   <div><h4>Kurs, 5 Jahre${tgt!=null&&upT!=null?` · Kursziel ${num(tgt,0)} ${cc} (${upT>0?"+":""}${num(upT*100,1)} %)`:""}</h4>${sline(pts,tgt,pt.targetLow,pt.targetHigh)}</div>
-   <div><h4>Dividende je Aktie (${cc})${divs.some(x=>x.part)?" · e = Prognose":""}</h4>${sbars(divs.slice(-9).map(x=>({y:x.y,v:x.v,p:x.part})),v=>num(v),GD,300,66)}
-    <div class="ch"><span><b>${pct(dy)}</b>Dividendenrendite</span><span><b>${pct(po)}</b>Ausschüttung</span><span><b>${cg==null?"–":pct(cg)}</b>Wachstum 5 J. p. a.</span></div></div>
-   <div><h4>Analysten-Einstufung${tot?` · ${tot} Urteile`:""}</h4>${tot?donut():`<div class="na">Keine Analystendaten verfügbar</div>`}</div>
+   <div class="sg">${cards.map(c=>c[1].replace('<div class="card">','<div class="card'+(c[0]?" "+c[0]:"")+'">')).join("")}</div>
   </div><div class="sf">www.dividenden-rechner.de</div></div>`;
   document.getElementById("ov")?.remove();
   ov.querySelector("#cl").onclick=e=>{e.stopPropagation();ov.remove()};
