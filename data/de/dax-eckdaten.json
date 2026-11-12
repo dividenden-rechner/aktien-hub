@@ -1,0 +1,826 @@
+{
+ "stand": "2026-11-12",
+ "einheit": "Mio € (Dividende/EPS in €); Mrd-Angaben aus Texten auf Mio umgerechnet",
+ "hinweis": "Aus Pressemitteilungen gelesen, nicht gegen Geschäftsbericht geprüft. 'abgeleitet' = aus Veränderungsraten im Text berechnet. 2025er Werte teils vorläufig.",
+ "firmen": {
+  "DTE.DE": {
+   "name": "Deutsche Telekom",
+   "quelle": "telekom.com Bericht zum Geschäftsjahr 2025",
+   "2025": {
+    "umsatz": 119081,
+    "bereinigtes_ebitda": 44244,
+    "konzernueberschuss": 9609,
+    "bereinigter_konzernueberschuss": 9747,
+    "eps": 1.97,
+    "dividende": 1.0,
+    "dividende_status": "Vorschlag"
+   },
+   "2024": {
+    "umsatz": 115769,
+    "bereinigtes_ebitda": 43021,
+    "konzernueberschuss": 11209,
+    "bereinigter_konzernueberschuss": 9397,
+    "eps": 2.27
+   }
+  },
+  "MUV2.DE": {
+   "name": "Munich Re",
+   "quelle": "munichre.com Medieninformation 26.02.2026",
+   "2025": {
+    "versicherungsumsatz": 60412,
+    "konzernergebnis": 6121,
+    "eps": 47.15,
+    "eigenkapital": 33421,
+    "dividende": 24,
+    "dividende_status": "Vorschlag, laut HV 2026 beschlossen"
+   },
+   "2024": {
+    "versicherungsumsatz": 60830,
+    "konzernergebnis": 5690,
+    "eps": 42.93,
+    "eigenkapital": 32901,
+    "dividende": 20,
+    "abgeleitet": [
+     "dividende (aus +20 %)"
+    ]
+   }
+  },
+  "SAP.DE": {
+   "name": "SAP",
+   "quelle": "SAP Quarterly Statement Q4 2025 (vorläufig, ungeprüft)",
+   "2025": {
+    "umsatz": 36800,
+    "ifrs_operatives_ergebnis": 9830,
+    "non_ifrs_operatives_ergebnis": 10419,
+    "ergebnis_nach_steuern": 7492,
+    "eps_ifrs": 6.28,
+    "eps_non_ifrs": 6.15,
+    "free_cashflow": 8239
+   },
+   "2024": {
+    "umsatz": 34176,
+    "ifrs_operatives_ergebnis": 4665,
+    "non_ifrs_operatives_ergebnis": 8153,
+    "ergebnis_nach_steuern": 3150,
+    "eps_ifrs": 2.68,
+    "eps_non_ifrs": 4.53,
+    "free_cashflow": 4222
+   }
+  },
+  "MBG.DE": {
+   "name": "Mercedes-Benz Group",
+   "quelle": "Mercedes-Benz Pressemitteilung 11.02.2026 (vorläufig)",
+   "2025": {
+    "umsatz": 132214,
+    "ebit": 5820,
+    "bereinigtes_ebit": 8235,
+    "ergebnis": 5331,
+    "eps": 5.34,
+    "dividende": 3.5,
+    "dividende_status": "Vorschlag",
+    "free_cashflow_industrie": 5414
+   },
+   "2024": {
+    "umsatz": 145594,
+    "ebit": 13599,
+    "bereinigtes_ebit": 13713,
+    "ergebnis": 10409,
+    "eps": 10.19,
+    "dividende": 4.3,
+    "free_cashflow_industrie": 9152
+   }
+  },
+  "VOW3.DE": {
+   "name": "Volkswagen",
+   "quelle": "volkswagen-group.com Pressemitteilung GJ2025",
+   "2025": {
+    "umsatz": 321913,
+    "operatives_ergebnis": 8868,
+    "ergebnis_vor_steuern": 9307,
+    "ergebnis_nach_steuern": 6904,
+    "dividende_vz": 5.26,
+    "dividende_st": 5.2,
+    "dividende_status": "Vorschlag",
+    "netto_cashflow_automobile": 6445
+   },
+   "2024": {
+    "umsatz": 324656,
+    "operatives_ergebnis": 19060,
+    "ergebnis_vor_steuern": 16806,
+    "ergebnis_nach_steuern": 12394,
+    "netto_cashflow_automobile": 5186
+   }
+  },
+  "BAS.DE": {
+   "name": "BASF",
+   "quelle": "basf.com Pressemitteilung 27.02.2026",
+   "2025": {
+    "umsatz": 59700,
+    "ebitda_vor_sondereinfluessen": 6600,
+    "ebit": 1600,
+    "ergebnis_nach_steuern_u_minderheiten": 1600,
+    "dividende": 2.25,
+    "dividende_status": "Vorschlag",
+    "free_cashflow": 1300
+   },
+   "2024": {
+    "umsatz": 61400,
+    "ebitda_vor_sondereinfluessen": 7200,
+    "ebit": 1776,
+    "ergebnis_nach_steuern_u_minderheiten": 1300,
+    "dividende": 2.25,
+    "free_cashflow": 748,
+    "abgeleitet": [
+     "ebit"
+    ]
+   },
+   "hinweis": "Werte in Mrd gerundet auf 0,1"
+  },
+  "BAYN.DE": {
+   "name": "Bayer",
+   "quelle": "bayer.com Pressemitteilung 04.03.2026",
+   "2025": {
+    "umsatz": 45575,
+    "ebitda_vor_sondereinfluessen": 9669,
+    "ebit": -1077,
+    "konzernergebnis": -3620,
+    "bereinigtes_eps": 4.91,
+    "dividende": 0.11,
+    "dividende_status": "Vorschlag",
+    "free_cashflow": 2084
+   },
+   "2024": {
+    "ebit": -71,
+    "konzernergebnis": -2552,
+    "dividende": 0.11,
+    "ebitda_vor_sondereinfluessen": 10120,
+    "bereinigtes_eps": 5.05,
+    "free_cashflow": 3110,
+    "abgeleitet": [
+     "ebitda_vor_sondereinfluessen",
+     "bereinigtes_eps",
+     "free_cashflow",
+     "dividende"
+    ]
+   }
+  },
+  "DBK.DE": {
+   "name": "Deutsche Bank",
+   "quelle": "db.com Jahresergebnisse 2025 (vorläufig)",
+   "2025": {
+    "ertraege": 32100,
+    "ergebnis_vor_steuern": 9700,
+    "gewinn_nach_steuern_aktionaere": 7100,
+    "dividende": 1.0,
+    "dividende_status": "Vorschlag",
+    "cet1_pct": 14.2,
+    "rote_pct": 9.3
+   },
+   "2024": {
+    "ertraege": 30000,
+    "ergebnis_vor_steuern": 5300,
+    "dividende": 0.68,
+    "cet1_pct": 13.8,
+    "rote_pct": 4.2,
+    "abgeleitet": [
+     "ertraege",
+     "ergebnis_vor_steuern"
+    ]
+   }
+  },
+  "CBK.DE": {
+   "name": "Commerzbank",
+   "quelle": "commerzbank.de Bilanzpressekonferenz 2025 (vorläufig)",
+   "2025": {
+    "ertraege": 12171,
+    "operatives_ergebnis": 4509,
+    "konzernergebnis_aktionaere": 2625,
+    "dividende": 1.1,
+    "dividende_status": "Vorschlag",
+    "rotce_pct": 8.7
+   },
+   "2024": {
+    "ertraege": 11106,
+    "operatives_ergebnis": 3837,
+    "konzernergebnis_aktionaere": 2677,
+    "dividende": 0.65,
+    "rotce_pct": 9.2
+   }
+  },
+  "EOAN.DE": {
+   "name": "E.ON",
+   "quelle": "E.ON EQS-News GJ2025",
+   "2025": {
+    "bereinigtes_ebitda": 9800,
+    "bereinigter_konzernueberschuss": 3000,
+    "dividende": 0.57,
+    "dividende_status": "Vorschlag",
+    "investitionen": 8500,
+    "umsatz": null
+   },
+   "2024": {
+    "bereinigtes_ebitda": 9000,
+    "bereinigter_konzernueberschuss": 2900,
+    "dividende": 0.55,
+    "abgeleitet": [
+     "dividende (aus +4 %)"
+    ]
+   }
+  },
+  "RWE.DE": {
+   "name": "RWE",
+   "quelle": "rwe.com Pressemitteilung März 2026",
+   "2025": {
+    "bereinigtes_ebitda": 5100,
+    "bereinigtes_nettoergebnis": 1800,
+    "bereinigtes_eps": 2.48,
+    "dividende": 1.2,
+    "dividende_status": "Vorschlag"
+   },
+   "2024": {
+    "dividende": 1.1,
+    "abgeleitet": [
+     "dividende (Plus 0,10 €)"
+    ]
+   },
+   "offen": [
+    "Umsatz, Nettoergebnis, Vorjahres-EBITDA fehlen (Tabelle nur als Bild)"
+   ]
+  },
+  "DHL.DE": {
+   "name": "DHL Group",
+   "quelle": "group.dhl.com Pressemitteilung GJ2025",
+   "2025": {
+    "umsatz": 82900,
+    "ebit": 6100,
+    "konzernergebnis_aktionaere": 3500,
+    "eps": 3.09,
+    "dividende": 1.9,
+    "dividende_status": "Vorschlag",
+    "free_cashflow": 3200
+   },
+   "2024": {
+    "umsatz": 84200,
+    "ebit": 5900,
+    "konzernergebnis_aktionaere": 3300,
+    "eps": 2.86,
+    "dividende": 1.85,
+    "free_cashflow": 3000,
+    "abgeleitet": [
+     "konzernergebnis_aktionaere"
+    ]
+   }
+  },
+  "ADS.DE": {
+   "name": "Adidas",
+   "quelle": "adidas Pressemitteilung GJ2025 (vorläufig)",
+   "2025": {
+    "umsatz": 24811,
+    "ebit": 2056,
+    "jahresueberschuss": 1385,
+    "eps": 7.46,
+    "dividende": 2.8,
+    "dividende_status": "Vorschlag"
+   },
+   "2024": {
+    "umsatz": 23683,
+    "ebit": 1337,
+    "jahresueberschuss": 832,
+    "eps": 4.24,
+    "dividende": 2.0
+   }
+  },
+  "AIR.PA": {
+   "name": "Airbus",
+   "quelle": "airbus.com Pressemitteilung FY2025",
+   "2025": {
+    "umsatz": 73420,
+    "ebit": 6082,
+    "ebit_adjusted": 7128,
+    "nettoergebnis": 5221,
+    "eps": 6.61,
+    "dividende": 3.2,
+    "dividende_status": "Vorschlag",
+    "free_cashflow_vor_kundenfinanzierung": 4574
+   },
+   "2024": {
+    "umsatz": 69230,
+    "ebit": 5304,
+    "ebit_adjusted": 5354,
+    "nettoergebnis": 4232,
+    "eps": 5.36,
+    "dividende": 3.0,
+    "free_cashflow_vor_kundenfinanzierung": 4463
+   },
+   "hinweis": "Dividende 2024 = 2,00 regulär + 1,00 Sonderdividende"
+  },
+  "BEI.DE": {
+   "name": "Beiersdorf",
+   "quelle": "beiersdorf.com Pressemitteilung 02.03.2026",
+   "2025": {
+    "umsatz": 9852,
+    "ebit": 1320,
+    "ebit_ohne_sondereffekte": 1378,
+    "periodenergebnis": 955,
+    "eps": 4.25,
+    "dividende": 1.0,
+    "dividende_status": "Vorschlag"
+   },
+   "2024": {
+    "umsatz": 9850,
+    "ebit": 1294,
+    "ebit_ohne_sondereffekte": 1370,
+    "periodenergebnis": 928,
+    "eps": 4.05,
+    "dividende": 1.0
+   }
+  },
+  "BNR.DE": {
+   "name": "Brenntag",
+   "quelle": "dpa-AFX 12.03.2026",
+   "2025": {
+    "umsatz": 15200,
+    "operatives_ebita": 929,
+    "ergebnis_nach_steuern_aktionaere": 265,
+    "dividende": 1.9,
+    "dividende_status": "geplant"
+   },
+   "2024": {
+    "ergebnis_nach_steuern_aktionaere": 536,
+    "dividende": 2.1
+   },
+   "hinweis": "Umsatz/EBITA gerundet, Vorjahr nicht genannt"
+  },
+  "CON.DE": {
+   "name": "Continental",
+   "quelle": "continental.com Pressemitteilung 04.03.2026",
+   "2025": {
+    "umsatz": 19700,
+    "bereinigtes_ebit": 2000,
+    "konzernergebnis": -165,
+    "dividende": 2.7,
+    "dividende_status": "Vorschlag",
+    "bereinigter_free_cashflow": 959
+   },
+   "2024": {
+    "umsatz": 20100,
+    "bereinigtes_ebit": 2200,
+    "konzernergebnis": 1200,
+    "dividende": 2.5,
+    "bereinigter_free_cashflow": 598
+   },
+   "hinweis": "Sondereffekte 2025 aus Aumovio-Abspaltung und OESL-Verkauf"
+  },
+  "DTG.DE": {
+   "name": "Daimler Truck",
+   "quelle": "daimlertruck.com Pressemitteilung 12.03.2026",
+   "2025": {
+    "umsatz_industriegeschaeft": 45900,
+    "bereinigtes_ebit": 3778,
+    "eps": 2.56,
+    "dividende": 1.9,
+    "dividende_status": "Vorschlag",
+    "free_cashflow_industrie": 1824
+   },
+   "2024": {
+    "umsatz_industriegeschaeft": 50700,
+    "bereinigtes_ebit": 4667,
+    "eps": 3.64,
+    "dividende": 1.9,
+    "free_cashflow_industrie": 3152
+   }
+  },
+  "DB1.DE": {
+   "name": "Deutsche Börse",
+   "quelle": "deutsche-boerse.com Pressemitteilung GJ2025",
+   "2025": {
+    "nettoerloese_ohne_treasury": 5200,
+    "ebitda_ohne_treasury": 2700,
+    "dividende": 4.2,
+    "dividende_status": "Vorschlag"
+   },
+   "2024": {
+    "nettoerloese_ohne_treasury": 4800,
+    "ebitda_ohne_treasury": 2400,
+    "dividende": 4.0,
+    "abgeleitet": [
+     "alle 2024-Werte aus Wachstumsraten"
+    ]
+   },
+   "offen": [
+    "Konzernergebnis, EPS"
+   ]
+  },
+  "FRE.DE": {
+   "name": "Fresenius",
+   "quelle": "EQS-News Fresenius 2025",
+   "2025": {
+    "umsatz": 22554,
+    "ebit_vor_sondereinfluessen": 2595,
+    "kernergebnis_ohne_fmc": 1619,
+    "kern_eps_ohne_fmc": 2.87,
+    "dividende": 1.05,
+    "dividende_status": "Vorschlag"
+   },
+   "2024": {
+    "umsatz": 21526,
+    "ebit_vor_sondereinfluessen": 2489,
+    "kernergebnis_ohne_fmc": 1461,
+    "kern_eps_ohne_fmc": 2.59,
+    "dividende": 1.0,
+    "abgeleitet": [
+     "dividende (+5 Cent)"
+    ]
+   }
+  },
+  "HNR1.DE": {
+   "name": "Hannover Rück",
+   "quelle": "Hannover Re EQS-News GJ2025",
+   "2025": {
+    "versicherungsumsatz": 26786,
+    "konzernergebnis": 2641.5,
+    "eps": 21.9,
+    "dividende": 12.5,
+    "dividende_status": "Vorschlag",
+    "eigenkapital_aktionaere": 12900
+   },
+   "2024": {
+    "versicherungsumsatz": 26379,
+    "konzernergebnis": 2328.7,
+    "eps": 19.31,
+    "dividende": 9.0,
+    "eigenkapital_aktionaere": 11800
+   }
+  },
+  "HEI.DE": {
+   "name": "Heidelberg Materials",
+   "quelle": "heidelbergmaterials.com Pressemitteilung GJ2025 (vorläufig)",
+   "2025": {
+    "umsatz": 21500,
+    "rco": 3400,
+    "rcobd_marge_pct": 21.8,
+    "bereinigtes_eps": 12.41
+   },
+   "2024": {
+    "umsatz": 21200,
+    "rco": 3200,
+    "rcobd_marge_pct": 21.3,
+    "bereinigtes_eps": 11.93,
+    "abgeleitet": [
+     "rco",
+     "bereinigtes_eps"
+    ]
+   },
+   "offen": [
+    "Dividende, Konzernergebnis"
+   ]
+  },
+  "HEN3.DE": {
+   "name": "Henkel",
+   "quelle": "Henkel EQS-News GJ2025",
+   "2025": {
+    "umsatz": 20495,
+    "bereinigtes_ebit": 3026,
+    "bereinigtes_eps_vz": 5.33,
+    "dividende_vz": 2.07,
+    "dividende_status": "Vorschlag"
+   },
+   "2024": {
+    "umsatz": 21600,
+    "bereinigtes_ebit": 3089,
+    "bereinigtes_eps_vz": 5.36,
+    "dividende_vz": 2.04,
+    "abgeleitet": [
+     "umsatz",
+     "dividende_vz"
+    ]
+   },
+   "offen": [
+    "Periodenergebnis"
+   ]
+  },
+  "IFX.DE": {
+   "name": "Infineon",
+   "quelle": "Infineon Pressemitteilung Nov 2025 (GJ endet 30.9.)",
+   "2025": {
+    "umsatz": 14662,
+    "segmentergebnis": 2560,
+    "konzernergebnis": 1015,
+    "eps": 0.77,
+    "free_cashflow": -1051,
+    "dividende": 0.35,
+    "dividende_status": "Vorschlag"
+   },
+   "2024": {
+    "umsatz": 14955,
+    "segmentergebnis": 3105,
+    "konzernergebnis": 1301,
+    "eps": 0.98,
+    "free_cashflow": 23,
+    "dividende": 0.35
+   },
+   "hinweis": "Free Cashflow 2025 durch Marvell-Automotive-Ethernet-Zukauf belastet"
+  },
+  "MRK.DE": {
+   "name": "Merck KGaA",
+   "quelle": "chemie.de GJ2025",
+   "2025": {
+    "umsatz": 21100,
+    "ebitda_pre": 6100,
+    "eps_pre": 8.34,
+    "dividende": 2.2,
+    "dividende_status": "Vorschlag"
+   },
+   "2024": {
+    "umsatz": 21200,
+    "eps_pre": 8.63,
+    "dividende": 2.2,
+    "abgeleitet": [
+     "umsatz"
+    ]
+   }
+  },
+  "MTX.DE": {
+   "name": "MTU Aero Engines",
+   "quelle": "mtu.de Pressemitteilung GJ2025",
+   "2025": {
+    "umsatz_adjusted": 8717,
+    "ebit_adjusted": 1351,
+    "nettoergebnis_adjusted": 968,
+    "free_cashflow": 378,
+    "dividende": 3.6,
+    "dividende_status": "Vorschlag"
+   },
+   "2024": {
+    "umsatz_adjusted": 7488,
+    "ebit_adjusted": 1050,
+    "nettoergebnis_adjusted": 764,
+    "free_cashflow": 183,
+    "dividende": 2.2
+   }
+  },
+  "P911.DE": {
+   "name": "Porsche AG",
+   "quelle": "newsroom.porsche.com Jahrespressekonferenz 2026",
+   "2025": {
+    "umsatz": 36270,
+    "operatives_ergebnis": 413,
+    "eps_vz": 0.48,
+    "dividende_vz": 1.01,
+    "dividende_status": "Vorschlag",
+    "netto_cashflow_automobile": 1510
+   },
+   "2024": {
+    "umsatz": 40080,
+    "operatives_ergebnis": 5640,
+    "netto_cashflow_automobile": 3730
+   }
+  },
+  "PAH3.DE": {
+   "name": "Porsche SE",
+   "quelle": "Reuters via cash.ch 26.03.2026",
+   "2025": {
+    "konzernergebnis_bereinigt": 2900,
+    "nettoergebnis": 2700,
+    "dividende_vz": 1.51
+   },
+   "2024": {
+    "dividende_vz": 1.91,
+    "konzernergebnis_bereinigt": 3200,
+    "abgeleitet": [
+     "konzernergebnis_bereinigt"
+    ]
+   },
+   "offen": [
+    "2024-Nettoergebnis: Verlust rund 20 Mrd € laut Text, keine genaue Zahl"
+   ]
+  },
+  "QIA.DE": {
+   "name": "Qiagen",
+   "quelle": "Q4-2025-Call (marketbeat)",
+   "waehrung": "USD",
+   "2025": {
+    "umsatz": 2090,
+    "bereinigte_operative_marge_pct": 29.5,
+    "bereinigtes_eps": 2.4
+   },
+   "2024": {
+    "bereinigtes_eps": 2.18,
+    "bereinigte_operative_marge_pct": 28.7,
+    "abgeleitet": [
+     "marge"
+    ]
+   },
+   "offen": [
+    "Dividende nicht genannt"
+   ]
+  },
+  "RHM.DE": {
+   "name": "Rheinmetall",
+   "quelle": "rheinmetall.com Bilanzvorlage 11.03.2026",
+   "2025": {
+    "umsatz": 9935,
+    "operatives_ergebnis": 1841,
+    "konzernergebnis_aktionaere": 696,
+    "eps_fortgefuehrt": 22.73,
+    "dividende": 11.5,
+    "dividende_status": "Vorschlag",
+    "operativer_free_cashflow": 1218,
+    "auftragsbestand": 63800
+   },
+   "2024": {
+    "umsatz": 7715,
+    "operatives_ergebnis": 1389,
+    "konzernergebnis_aktionaere": 717,
+    "eps_fortgefuehrt": 17.19,
+    "dividende": 8.1,
+    "operativer_free_cashflow": 1056,
+    "auftragsbestand": 46900
+   }
+  },
+  "ENR.DE": {
+   "name": "Siemens Energy",
+   "quelle": "siemens-energy.com Pressemitteilung GJ2025 (bis 30.9.2025)",
+   "2025": {
+    "umsatz": 39100,
+    "ergebnis_vor_sondereffekten": 2355,
+    "nettoergebnis": 1685,
+    "auftragseingang": 58900,
+    "free_cashflow_vor_steuern": 4663,
+    "dividende": 0.7,
+    "dividende_status": "Vorschlag"
+   },
+   "2024": {
+    "ergebnis_vor_sondereffekten": 345,
+    "nettoergebnis": 1335,
+    "dividende": 0.0
+   },
+   "hinweis": "erste Dividende seit vier Jahren"
+  },
+  "SHL.DE": {
+   "name": "Siemens Healthineers",
+   "quelle": "siemens-healthineers.com Q4 FY2025",
+   "2025": {
+    "umsatz": 23400,
+    "bereinigtes_ebit": 3900,
+    "bereinigtes_eps": 2.39,
+    "dividende": 1.0,
+    "dividende_status": "Vorschlag"
+   },
+   "2024": {
+    "dividende": 0.95
+   },
+   "offen": [
+    "Vorjahreswerte, Konzernergebnis (Seite nennt sie nicht)"
+   ]
+  },
+  "SY1.DE": {
+   "name": "Symrise",
+   "quelle": "chemanager GJ2025",
+   "2025": {
+    "umsatz": 4929,
+    "ebitda": 913,
+    "ebitda_bereinigt": 1081,
+    "bereinigtes_eps": 3.67,
+    "eps": 1.78,
+    "dividende": 1.25,
+    "dividende_status": "Vorschlag"
+   },
+   "2024": {
+    "ebitda": 1033,
+    "bereinigtes_eps": 3.42,
+    "dividende": 1.2
+   }
+  },
+  "VNA.DE": {
+   "name": "Vonovia",
+   "quelle": "EQS-News Vonovia 19.03.2026",
+   "2025": {
+    "adjusted_ebitda_total": 2800.8,
+    "adjusted_ebt": 1904.3,
+    "epra_nta_je_aktie": 46.28,
+    "dividende": 1.25,
+    "dividende_status": "Vorschlag"
+   },
+   "2024": {
+    "adjusted_ebitda_total": 2641.8,
+    "adjusted_ebt": 1816.3,
+    "epra_nta_je_aktie": 45.23
+   },
+   "offen": [
+    "Jahresüberschuss, FFO, Dividende 2024"
+   ]
+  },
+  "ZAL.DE": {
+   "name": "Zalando",
+   "quelle": "fashionunited.de März 2026",
+   "2025": {
+    "gmv": 17600,
+    "umsatz": 12300,
+    "bereinigtes_ebit": 590.7,
+    "konzernergebnis_aktionaere": 215.1
+   },
+   "2024": {
+    "gmv": 15300,
+    "umsatz": 10500,
+    "bereinigtes_ebit": 511,
+    "konzernergebnis_aktionaere": 251.1,
+    "abgeleitet": [
+     "gmv",
+     "umsatz",
+     "bereinigtes_ebit"
+    ]
+   },
+   "offen": [
+    "Dividende"
+   ]
+  },
+  "G24.DE": {
+   "name": "Scout24",
+   "quelle": "dpa-AFX GJ2025 (vorläufig)",
+   "2025": {
+    "umsatz": 649.6,
+    "bereinigtes_ebitda": 405.7,
+    "konzernergebnis": 240
+   },
+   "2024": {
+    "umsatz": 566,
+    "bereinigtes_ebitda": 348,
+    "konzernergebnis": 160,
+    "abgeleitet": [
+     "alle 2024-Werte"
+    ]
+   },
+   "offen": [
+    "Dividende (Vorschlag +14 % laut Überschrift der EQS-News, Betrag nicht gelesen)"
+   ]
+  },
+  "SIE.DE": {
+   "name": "Siemens",
+   "quelle": "eigener Artikel Q4 FY2026 (GJ bis 30.9.2026)",
+   "gj2026": {
+    "auftragseingang": 108159,
+    "dividende": 5.5,
+    "dividende_status": "Vorschlag"
+   },
+   "gj2025": {
+    "dividende": 5.35
+   },
+   "hinweis": "Weitere Zahlen siehe content/magazin Siemens-Artikel"
+  },
+  "BMW.DE": {
+   "name": "BMW",
+   "quelle": "elektroauto-news.net (Sekundärquelle, BMW-Newsroom gesperrt)",
+   "2025": {
+    "umsatz": 133500,
+    "ebt": 10200,
+    "konzernueberschuss": 7500,
+    "dividende_st": 4.4,
+    "dividende_vz": 4.42,
+    "dividende_status": "Vorschlag"
+   },
+   "2024": {
+    "umsatz": 142400,
+    "ebt": 11000,
+    "konzernueberschuss": 7700,
+    "dividende_st": 4.3,
+    "dividende_vz": 4.32
+   },
+   "hinweis": "Werte in Mrd gerundet; prüfen gegen BMW-Pressemitteilung"
+  },
+  "ALV.DE": {
+   "name": "Allianz",
+   "datei": "data/de/alv.json"
+  },
+  "FME.DE": {
+   "name": "Fresenius Medical Care",
+   "quelle": "FMC Pressemitteilung GJ2025 (biospace)",
+   "2025": {
+    "umsatz": 19628,
+    "operatives_ergebnis": 1827,
+    "operatives_ergebnis_bereinigt": 2212,
+    "ergebnis_aktionaere": 978,
+    "ergebnis_aktionaere_bereinigt": 1248,
+    "eps": 3.36,
+    "eps_bereinigt": 4.28,
+    "dividende": 1.49,
+    "dividende_status": "Vorschlag, laut HV beschlossen",
+    "free_cashflow": 1782
+   },
+   "2024": {
+    "umsatz": 19336,
+    "operatives_ergebnis": 1392,
+    "operatives_ergebnis_bereinigt": 1797,
+    "ergebnis_aktionaere": 538,
+    "ergebnis_aktionaere_bereinigt": 903,
+    "eps": 1.83,
+    "eps_bereinigt": 3.08,
+    "dividende": 1.44,
+    "free_cashflow": 1701,
+    "abgeleitet": [
+     "dividende (aus +3 %)"
+    ]
+   }
+  }
+ }
+}
