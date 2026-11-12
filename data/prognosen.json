@@ -2903,14 +2903,1622 @@
 "beleg": "Adjusted EPS excl. Q3 IEEPA Tariff Refunds $3.58 to $3.70"
 }
 ]
+},
+"SNDK": {
+"datum": "2026-10-29",
+"quelle": "https://www.sec.gov/Archives/edgar/data/2023554/000162828026068243/sndkq1-27ex991xpressrelease.htm",
+"prognosen": [
+{
+"kennzahl": "umsatz",
+"geschaeftsjahr": "2027",
+"von": 12200000000,
+"bis": 12600000000,
+"einheit": "USD",
+"veraendert": "neu",
+"beleg": "Revenue $12,200 - $12,600"
+},
+{
+"kennzahl": "operative_marge_proz",
+"geschaeftsjahr": "2027",
+"von": 84.4,
+"bis": 85.4,
+"einheit": "Prozent",
+"veraendert": "neu",
+"beleg": "Gross Margin 84.4% - 85.4%"
+},
+{
+"kennzahl": "eps_bereinigt",
+"geschaeftsjahr": "2027",
+"von": 55.0,
+"bis": 57.0,
+"einheit": "USD",
+"veraendert": "neu",
+"beleg": "Diluted Net Income Per Share $55.00 - $57.00"
+}
+]
+},
+"GDDY": {
+"datum": "2026-10-29",
+"quelle": "https://www.sec.gov/Archives/edgar/data/1609711/000160971126000117/gddyex991-20260930xq3earni.htm",
+"prognosen": [
+{
+"kennzahl": "umsatz",
+"geschaeftsjahr": "2026",
+"von": 5215000000,
+"bis": 5255000000,
+"einheit": "USD",
+"veraendert": "unklar",
+"beleg": "GoDaddy expects to finish toward the higher end of its revenue range of $5.215 billion to $5.255 billion."
+},
+{
+"kennzahl": "organisches_wachstum_proz",
+"geschaeftsjahr": "2026",
+"von": 10,
+"bis": 10,
+"einheit": "Prozent",
+"veraendert": "unklar",
+"beleg": "GoDaddy expects full year A&C revenue growth of approximately 10%"
+},
+{
+"kennzahl": "organisches_wachstum_proz",
+"geschaeftsjahr": "2026",
+"von": 4,
+"bis": 4,
+"einheit": "Prozent",
+"veraendert": "unklar",
+"beleg": "Core revenue growth of approximately 4%."
+},
+{
+"kennzahl": "operative_marge_proz",
+"geschaeftsjahr": "2026",
+"von": 33,
+"bis": 33,
+"einheit": "Prozent",
+"veraendert": "bestaetigt",
+"beleg": "GoDaddy reaffirms its NEBITDA margin target of over 33%."
+},
+{
+"kennzahl": "fcf",
+"geschaeftsjahr": "2026",
+"von": 1800000000,
+"bis": 1800000000,
+"einheit": "USD",
+"veraendert": "bestaetigt",
+"beleg": "GoDaddy reaffirms its free cash flow target of approximately $1.8 billion"
+}
+]
+},
+"SYK": {
+"datum": "2026-10-29",
+"quelle": "https://www.sec.gov/Archives/edgar/data/310764/000031076426000059/sykex991earningsq32026.htm",
+"prognosen": [
+{
+"kennzahl": "organisches_wachstum_proz",
+"geschaeftsjahr": "2026",
+"von": 6.5,
+"bis": 7.0,
+"einheit": "Prozent",
+"veraendert": "angehoben",
+"beleg": "We are updating our full year 2026 guidance and now expect organic net sales growth in the range of 6.5% to 7.0%"
+},
+{
+"kennzahl": "eps_bereinigt",
+"geschaeftsjahr": "2026",
+"von": 14.8,
+"bis": 14.9,
+"einheit": "USD",
+"veraendert": "angehoben",
+"beleg": "adjusted net earnings per diluted share to be in the range of $14.80 to $14.90."
+}
+]
+},
+"RSG": {
+"datum": "2026-10-29",
+"quelle": "https://www.sec.gov/Archives/edgar/data/1060391/000106039126000326/exhibit991q32026.htm",
+"prognosen": [
+{
+"kennzahl": "umsatz",
+"geschaeftsjahr": "2026",
+"von": 17425000000,
+"bis": 17475000000,
+"einheit": "USD",
+"veraendert": "angehoben",
+"beleg": "Revenue: Increased most recent guidance to a range of $17.425 billion to $17.475 billion"
+},
+{
+"kennzahl": "fcf",
+"geschaeftsjahr": "2026",
+"von": 2565000000,
+"bis": 2585000000,
+"einheit": "USD",
+"veraendert": "angehoben",
+"beleg": "Adjusted Free Cash Flow: Increased most recent guidance to a range of $2.565 billion to $2.585 billion"
+}
+]
+},
+"WY": {
+"datum": "2026-10-29",
+"quelle": "https://www.sec.gov/Archives/edgar/data/106535/000119312526437799/wy-ex99_1.htm",
+"prognosen": [
+{
+"kennzahl": "sonstiges",
+"geschaeftsjahr": "2026",
+"von": 450000000,
+"bis": 450000000,
+"einheit": "USD",
+"veraendert": "angehoben",
+"beleg": "The company continues to expect full year 2026 Adjusted EBITDA to be approximately $450 million, a $25 million increase from the initial outlook"
+}
+]
+},
+"RDDT": {
+"datum": "2026-10-29",
+"quelle": "https://www.sec.gov/Archives/edgar/data/1713445/000171344526000114/exhibit992q326.htm",
+"prognosen": [
+{
+"kennzahl": "umsatz",
+"geschaeftsjahr": "2026",
+"von": 1000000000,
+"bis": 1030000000,
+"einheit": "USD",
+"veraendert": "neu",
+"beleg": "Revenue in the range of $1,000 million to $1,030 million"
+}
+]
+},
+"TWLO": {
+"datum": "2026-10-29",
+"quelle": "https://www.sec.gov/Archives/edgar/data/1447669/000144766926000106/twloq326ex991.htm",
+"prognosen": [
+{
+"kennzahl": "umsatzwachstum_proz",
+"geschaeftsjahr": "2026",
+"von": 20,
+"bis": 20,
+"einheit": "%",
+"veraendert": "angehoben",
+"beleg": "For fiscal year 2026, Twilio is raising its reported revenue growth outlook to 20%"
+},
+{
+"kennzahl": "organisches_wachstum_proz",
+"geschaeftsjahr": "2026",
+"von": 15,
+"bis": 15,
+"einheit": "%",
+"veraendert": "angehoben",
+"beleg": "its organic revenue growth range outlook to 15% year-over-year"
+},
+{
+"kennzahl": "sonstiges",
+"geschaeftsjahr": "2026",
+"von": 1190000000,
+"bis": 1200000000,
+"einheit": "USD",
+"veraendert": "angehoben",
+"beleg": "raising its 2026 non-GAAP income from operations range to $1.19 billion to $1.20 billion"
+},
+{
+"kennzahl": "fcf",
+"geschaeftsjahr": "2026",
+"von": 1190000000,
+"bis": 1200000000,
+"einheit": "USD",
+"veraendert": "angehoben",
+"beleg": "raising its 2026 free cash flow range to $1.19 billion to $1.20 billion"
+}
+]
+},
+"EIX": {
+"datum": "2026-10-29",
+"quelle": "https://www.sec.gov/Archives/edgar/data/827052/000082705226000072/eix-2026x0930exx991.htm",
+"prognosen": [
+{
+"kennzahl": "eps_bereinigt",
+"geschaeftsjahr": "2026",
+"von": 5.9,
+"bis": 6.2,
+"einheit": "USD",
+"veraendert": "bestaetigt",
+"beleg": "Reaffirmed 2026 core EPS guidance of $5.90 to $6.20"
+},
+{
+"kennzahl": "umsatzwachstum_proz",
+"geschaeftsjahr": "2030",
+"von": 5.0,
+"bis": 7.0,
+"einheit": "%",
+"veraendert": "bestaetigt",
+"beleg": "Continued confidence in delivering 5% to 7% core EPS growth from 2025-2030"
+}
+]
+},
+"DVA": {
+"datum": "2026-10-29",
+"quelle": "https://www.sec.gov/Archives/edgar/data/927066/000092706626000132/dva93026ex991.htm",
+"prognosen": [
+{
+"kennzahl": "eps_bereinigt",
+"geschaeftsjahr": "2026",
+"von": 14.3,
+"bis": 15.2,
+"einheit": "USD",
+"veraendert": "bestaetigt",
+"beleg": "Adjusted diluted net income per share attributable to DaVita Inc. $14.30 $15.20 $14.10 $15.20"
+},
+{
+"kennzahl": "fcf",
+"geschaeftsjahr": "2026",
+"von": 1000000000,
+"bis": 1250000000,
+"einheit": "USD",
+"veraendert": "bestaetigt",
+"beleg": "Free cash flow $1,000 $1,250 $1,000 $1,250"
+},
+{
+"kennzahl": "sonstiges",
+"geschaeftsjahr": "2026",
+"von": 2175,
+"bis": 2250,
+"einheit": "Mio. USD",
+"veraendert": "angehoben",
+"beleg": "Adjusted operating income $2,175 $2,250 $2,150 $2,250"
+}
+]
+},
+"RMD": {
+"datum": "2026-10-29",
+"quelle": "https://www.sec.gov/Archives/edgar/data/943819/000119312526437783/d170451dex991.htm",
+"prognosen": [
+{
+"kennzahl": "organisches_wachstum_proz",
+"geschaeftsjahr": "2027",
+"von": 5,
+"bis": 7,
+"einheit": "Prozent",
+"veraendert": "bestaetigt",
+"beleg": "Core Constant Currency: 5 - 7% growth"
+},
+{
+"kennzahl": "umsatz",
+"geschaeftsjahr": "2027",
+"von": 5750000000,
+"bis": 5850000000,
+"einheit": "USD",
+"veraendert": "bestaetigt",
+"beleg": "Reported: $5.75 - $5.85 Billion"
+},
+{
+"kennzahl": "eps_bereinigt",
+"geschaeftsjahr": "2027",
+"von": 12.0,
+"bis": 12.25,
+"einheit": "USD",
+"veraendert": "bestaetigt",
+"beleg": "$12.00 - $12.25"
+}
+]
+},
+"AMZN": {
+"datum": "2026-10-29",
+"quelle": "https://www.sec.gov/Archives/edgar/data/1018724/000101872426000038/amzn-20260930xex991.htm",
+"prognosen": [
+{
+"kennzahl": "umsatz",
+"geschaeftsjahr": "2026",
+"von": 240000000000,
+"bis": 247000000000,
+"einheit": "USD",
+"veraendert": "neu",
+"beleg": "Net sales are expected to be between $240.0 billion and $247.0 billion"
+},
+{
+"kennzahl": "umsatzwachstum_proz",
+"geschaeftsjahr": "2026",
+"von": 12,
+"bis": 16,
+"einheit": "Prozent",
+"veraendert": "neu",
+"beleg": "or to grow between 12% and 16% compared with fourth quarter 2025."
+},
+{
+"kennzahl": "operative_marge_proz",
+"geschaeftsjahr": "2026",
+"von": 28500000000,
+"bis": 33500000000,
+"einheit": "USD",
+"veraendert": "neu",
+"beleg": "Operating income is expected to be between $28.5 billion and $33.5 billion"
+}
+]
+},
+"DXCM": {
+"datum": "2026-10-29",
+"quelle": "https://www.sec.gov/Archives/edgar/data/1093557/000109355726000193/dxcm09302026-exhibit991.htm",
+"prognosen": [
+{
+"kennzahl": "umsatz",
+"geschaeftsjahr": "2026",
+"von": 5200000000,
+"bis": 5250000000,
+"einheit": "USD",
+"veraendert": "angehoben",
+"beleg": "Revenue of $5.20 - $5.25 billion (approximately 12-13% growth)"
+},
+{
+"kennzahl": "umsatzwachstum_proz",
+"geschaeftsjahr": "2026",
+"von": 12,
+"bis": 13,
+"einheit": "Prozent",
+"veraendert": "angehoben",
+"beleg": "Revenue of $5.20 - $5.25 billion (approximately 12-13% growth)"
+},
+{
+"kennzahl": "operative_marge_proz",
+"geschaeftsjahr": "2026",
+"von": 24,
+"bis": 24,
+"einheit": "Prozent",
+"veraendert": "angehoben",
+"beleg": "Non-GAAP Operating Margin of approximately 24%"
+},
+{
+"kennzahl": "sonstiges",
+"geschaeftsjahr": "2026",
+"von": 64,
+"bis": 64,
+"einheit": "Prozent",
+"veraendert": "bestaetigt",
+"beleg": "Non-GAAP Gross Profit Margin of approximately 64%"
+},
+{
+"kennzahl": "sonstiges",
+"geschaeftsjahr": "2026",
+"von": 32,
+"bis": 32,
+"einheit": "Prozent",
+"veraendert": "angehoben",
+"beleg": "Adjusted EBITDA Margin of approximately 32%"
+}
+]
+},
+"GILD": {
+"datum": "2026-10-29",
+"quelle": "https://www.sec.gov/Archives/edgar/data/882095/000088209526000037/exhibit991earningspressrel.htm",
+"prognosen": [
+{
+"kennzahl": "umsatz",
+"geschaeftsjahr": "2026",
+"von": 31000000000,
+"bis": 31300000000,
+"einheit": "USD",
+"veraendert": "angehoben",
+"beleg": "Product sales $31,000 to $31,300"
+},
+{
+"kennzahl": "eps_gaap",
+"geschaeftsjahr": "2026",
+"von": -4.4,
+"bis": -4.05,
+"einheit": "USD",
+"veraendert": "angehoben",
+"beleg": "Diluted loss per share $(4.40) to $(4.05)"
+},
+{
+"kennzahl": "eps_bereinigt",
+"geschaeftsjahr": "2026",
+"von": -1.2,
+"bis": -0.85,
+"einheit": "USD",
+"veraendert": "angehoben",
+"beleg": "Non-GAAP diluted loss per share $(1.20) to $(0.85)"
+}
+]
+},
+"FSLR": {
+"datum": "2026-10-29",
+"quelle": "https://www.sec.gov/Archives/edgar/data/1274494/000127449426000211/ex991pressreleaseq3-2026.htm",
+"prognosen": [
+{
+"kennzahl": "umsatz",
+"geschaeftsjahr": "2026",
+"von": 4600000000,
+"bis": 4900000000,
+"einheit": "USD",
+"veraendert": "gesenkt",
+"beleg": "Net Sales $4.6B to $4.9B"
+},
+{
+"kennzahl": "sonstiges",
+"geschaeftsjahr": "2026",
+"von": 2550000000,
+"bis": 2750000000,
+"einheit": "USD",
+"veraendert": "gesenkt",
+"beleg": "Adjusted EBITDA $2.55B to $2.75B"
+}
+]
+},
+"MPWR": {
+"datum": "2026-10-29",
+"quelle": "https://www.sec.gov/Archives/edgar/data/1280452/000162828026068202/mpwr-20260930xexx991.htm",
+"prognosen": [
+{
+"kennzahl": "umsatz",
+"geschaeftsjahr": "2026",
+"von": 1315000000,
+"bis": 1385000000,
+"einheit": "USD",
+"veraendert": "neu",
+"beleg": "Revenue in the range of $1,315 million to $1,385 million."
+}
+]
+},
+"DHI": {
+"datum": "2026-10-29",
+"quelle": "https://www.sec.gov/Archives/edgar/data/882184/000088218426000119/a9302026exhibit991.htm",
+"prognosen": [
+{
+"kennzahl": "umsatz",
+"geschaeftsjahr": "2027",
+"von": 30000000000,
+"bis": 32000000000,
+"einheit": "USD",
+"veraendert": "neu",
+"beleg": "Consolidated revenues in the range of $30.0 billion to $32.0 billion"
+},
+{
+"kennzahl": "fcf",
+"geschaeftsjahr": "2027",
+"von": 3500000000,
+"bis": 3500000000,
+"einheit": "USD",
+"veraendert": "neu",
+"beleg": "Consolidated cash flow provided by operations of approximately $3.5 billion"
+}
+]
+},
+"HSY": {
+"datum": "2026-10-29",
+"quelle": "https://www.sec.gov/Archives/edgar/data/47111/000162828026068046/exhibit991_2026xq3.htm",
+"prognosen": [
+{
+"kennzahl": "umsatzwachstum_proz",
+"geschaeftsjahr": "2026",
+"von": 5.0,
+"bis": 5.0,
+"einheit": "Prozent",
+"veraendert": "angehoben",
+"beleg": "Net sales growth ~5%"
+},
+{
+"kennzahl": "organisches_wachstum_proz",
+"geschaeftsjahr": "2026",
+"von": 3.0,
+"bis": 3.0,
+"einheit": "Prozent",
+"veraendert": "angehoben",
+"beleg": "Organic net sales growth ~3%"
+},
+{
+"kennzahl": "eps_gaap",
+"geschaeftsjahr": "2026",
+"von": 84.0,
+"bis": 90.0,
+"einheit": "Prozent",
+"veraendert": "angehoben",
+"beleg": "Reported earnings per share growth 84% to 90%"
+},
+{
+"kennzahl": "eps_bereinigt",
+"geschaeftsjahr": "2026",
+"von": 36.0,
+"bis": 38.5,
+"einheit": "Prozent",
+"veraendert": "angehoben",
+"beleg": "Adjusted earnings per share growth 36% to 38.5%"
+},
+{
+"kennzahl": "eps_gaap",
+"geschaeftsjahr": "2026",
+"von": 8.0,
+"bis": 8.26,
+"einheit": "USD",
+"veraendert": "neu",
+"beleg": "Reported EPS – Diluted $8.00 - $8.26"
+},
+{
+"kennzahl": "eps_bereinigt",
+"geschaeftsjahr": "2026",
+"von": 8.58,
+"bis": 8.74,
+"einheit": "USD",
+"veraendert": "neu",
+"beleg": "Adjusted EPS – Diluted $8.58 - $8.74"
+}
+]
+},
+"EME": {
+"datum": "2026-10-29",
+"quelle": "https://www.sec.gov/Archives/edgar/data/105634/000010563426000132/eme-ex991_2026930xq3.htm",
+"prognosen": [
+{
+"kennzahl": "umsatz",
+"geschaeftsjahr": "2026",
+"von": 20600000000,
+"bis": 21000000000,
+"einheit": "USD",
+"veraendert": "angehoben",
+"beleg": "Increases 2026 Revenue Guidance Range to $20.6 billion - $21.0 billion from $20.0 billion - $20.5 billion"
+},
+{
+"kennzahl": "operative_marge_proz",
+"geschaeftsjahr": "2026",
+"von": 10.0,
+"bis": 10.0,
+"einheit": "Prozent",
+"veraendert": "angehoben",
+"beleg": "Current Guidance (10/29/26) Non-GAAP Operating Margin* ~10%"
+},
+{
+"kennzahl": "eps_bereinigt",
+"geschaeftsjahr": "2026",
+"von": 34.5,
+"bis": 35.5,
+"einheit": "USD",
+"veraendert": "angehoben",
+"beleg": "Increases 2026 Non-GAAP Diluted EPS Guidance Range to $34.50 - $35.50 from $32.00 - $33.25"
+}
+]
+},
+"ICE": {
+"datum": "2026-10-29",
+"quelle": "https://www.sec.gov/Archives/edgar/data/1571949/000110465926119880/tm2628301d1_ex99-1.htm",
+"prognosen": [
+{
+"kennzahl": "umsatzwachstum_proz",
+"geschaeftsjahr": "2026",
+"von": 9,
+"bis": 9,
+"einheit": "Prozent",
+"veraendert": "unklar",
+"beleg": "2026 Exchange Recurring Revenue (% growth) 9%"
+},
+{
+"kennzahl": "umsatzwachstum_proz",
+"geschaeftsjahr": "2026",
+"von": 8,
+"bis": 8,
+"einheit": "Prozent",
+"veraendert": "unklar",
+"beleg": "2026 Fixed Income & Data Services Recurring Revenue (% growth) 8%"
+},
+{
+"kennzahl": "sonstiges",
+"geschaeftsjahr": "2026",
+"von": 1.317,
+"bis": 1.327,
+"einheit": "Mrd. USD",
+"veraendert": "unklar",
+"beleg": "4Q26 Operating Expenses $1.317 - $1.327 billion"
+},
+{
+"kennzahl": "sonstiges",
+"geschaeftsjahr": "2026",
+"von": 1.082,
+"bis": 1.092,
+"einheit": "Mrd. USD",
+"veraendert": "unklar",
+"beleg": "$1.082 - $1.092 billion"
+},
+{
+"kennzahl": "sonstiges",
+"geschaeftsjahr": "2026",
+"von": 170,
+"bis": 180,
+"einheit": "Mio. USD",
+"veraendert": "unklar",
+"beleg": "4Q26 Non-Operating Expense $170 - $180 million"
+},
+{
+"kennzahl": "sonstiges",
+"geschaeftsjahr": "2026",
+"von": 175,
+"bis": 185,
+"einheit": "Mio. USD",
+"veraendert": "unklar",
+"beleg": "$175 - $185 million"
+},
+{
+"kennzahl": "sonstiges",
+"geschaeftsjahr": "2026",
+"von": 1.05,
+"bis": 1.05,
+"einheit": "Mrd. USD",
+"veraendert": "unklar",
+"beleg": "2026 Capital Expenditures ~$1.050 billion"
+},
+{
+"kennzahl": "sonstiges",
+"geschaeftsjahr": "2026",
+"von": 558,
+"bis": 563,
+"einheit": "Mio. Aktien",
+"veraendert": "unklar",
+"beleg": "4Q26 Weighted Average Shares Outstanding 558 - 563 million"
+}
+]
+},
+"CARR": {
+"datum": "2026-10-29",
+"quelle": "https://www.sec.gov/Archives/edgar/data/1783180/000178318026000035/a99-q32026earningsexhibit.htm",
+"prognosen": [
+{
+"kennzahl": "umsatz",
+"geschaeftsjahr": "2026",
+"von": 23800000000,
+"bis": 24000000000,
+"einheit": "USD",
+"veraendert": "angehoben",
+"beleg": "Sales $23.8 to $24.0 billion"
+},
+{
+"kennzahl": "organisches_wachstum_proz",
+"geschaeftsjahr": "2026",
+"von": 10,
+"bis": 10,
+"einheit": "Prozent",
+"veraendert": "angehoben",
+"beleg": "Organic* up ~10%"
+},
+{
+"kennzahl": "sonstiges",
+"geschaeftsjahr": "2026",
+"von": 3500000000,
+"bis": 3500000000,
+"einheit": "USD",
+"veraendert": "bestaetigt",
+"beleg": "Adjusted Operating Profit* ~$3.5 billion"
+},
+{
+"kennzahl": "eps_bereinigt",
+"geschaeftsjahr": "2026",
+"von": 2.85,
+"bis": 2.9,
+"einheit": "USD",
+"veraendert": "gesenkt",
+"beleg": "Adjusted EPS* $2.85 to $2.90"
+},
+{
+"kennzahl": "fcf",
+"geschaeftsjahr": "2026",
+"von": 2000000000,
+"bis": 2000000000,
+"einheit": "USD",
+"veraendert": "bestaetigt",
+"beleg": "Free Cash Flow* ~$2 billion"
+}
+]
+},
+"BAX": {
+"datum": "2026-10-29",
+"quelle": "https://www.sec.gov/Archives/edgar/data/10456/000001045626000004/bax-20260930xex991.htm",
+"prognosen": [
+{
+"kennzahl": "umsatzwachstum_proz",
+"geschaeftsjahr": "2026",
+"von": 4,
+"bis": 5,
+"einheit": "Prozent",
+"veraendert": "angehoben",
+"beleg": "Reported sales growth from continuing operations: 4% to 5% (previously 3% to 4%)"
+},
+{
+"kennzahl": "organisches_wachstum_proz",
+"geschaeftsjahr": "2026",
+"von": 3,
+"bis": 4,
+"einheit": "Prozent",
+"veraendert": "angehoben",
+"beleg": "Organic sales growth from continuing operations: 3% to 4% (previously 2% to 3%)"
+},
+{
+"kennzahl": "eps_bereinigt",
+"geschaeftsjahr": "2026",
+"von": 2.05,
+"bis": 2.15,
+"einheit": "USD",
+"veraendert": "angehoben",
+"beleg": "Adjusted earnings from continuing operations per diluted share: $2.05 to $2.15 (previously $1.95 to $2.15)"
+}
+]
+},
+"LIN": {
+"datum": "2026-10-29",
+"quelle": "https://www.sec.gov/Archives/edgar/data/1707925/000165495426009199/lin_ex991.htm",
+"prognosen": [
+{
+"kennzahl": "eps_bereinigt",
+"geschaeftsjahr": "2026",
+"von": 4.4,
+"bis": 4.5,
+"einheit": "USD",
+"veraendert": "unklar",
+"beleg": "For the fourth quarter of 2026, Linde expects adjusted diluted earnings per share in the range of $4.40 to $4.50"
+},
+{
+"kennzahl": "eps_bereinigt",
+"geschaeftsjahr": "2026",
+"von": 17.82,
+"bis": 17.92,
+"einheit": "USD",
+"veraendert": "unklar",
+"beleg": "For the full year 2026, the company expects adjusted diluted earnings per share to be in the range of $17.82 to $17.92"
+}
+]
+},
+"WST": {
+"datum": "2026-10-29",
+"quelle": "https://www.sec.gov/Archives/edgar/data/105770/000010577026000118/exh991q32026earningsrelease.htm",
+"prognosen": [
+{
+"kennzahl": "umsatz",
+"geschaeftsjahr": "2026",
+"von": 3410000000,
+"bis": 3420000000,
+"einheit": "USD",
+"veraendert": "angehoben",
+"beleg": "Full-year 2026 net sales guidance increased to a range of $3.41 billion to $3.42 billion"
+},
+{
+"kennzahl": "organisches_wachstum_proz",
+"geschaeftsjahr": "2026",
+"von": 11.3,
+"bis": 11.6,
+"einheit": "Prozent",
+"veraendert": "angehoben",
+"beleg": "Organic net sales growth guidance increased to a range of 11.3% to 11.6%"
+},
+{
+"kennzahl": "eps_bereinigt",
+"geschaeftsjahr": "2026",
+"von": 9.38,
+"bis": 9.48,
+"einheit": "USD",
+"veraendert": "angehoben",
+"beleg": "Full-year 2026 adjusted-diluted EPS guidance increased to a range of $9.38 to $9.48"
+}
+]
+},
+"BMY": {
+"datum": "2026-10-29",
+"quelle": "https://www.sec.gov/Archives/edgar/data/14272/000001427226000022/a2026q3ex991-filing.htm",
+"prognosen": [
+{
+"kennzahl": "umsatz",
+"geschaeftsjahr": "2026",
+"von": 49750000000,
+"bis": 50250000000,
+"einheit": "USD",
+"veraendert": "angehoben",
+"beleg": "Raising 2026 revenue guidance to a range of $49.75 billion to $50.25 billion"
+},
+{
+"kennzahl": "eps_bereinigt",
+"geschaeftsjahr": "2026",
+"von": 6.35,
+"bis": 6.55,
+"einheit": "USD",
+"veraendert": "angehoben",
+"beleg": "Updating non-GAAP EPS range to $6.35 to $6.55"
+}
+]
+},
+"HWM": {
+"datum": "2026-10-29",
+"quelle": "https://www.sec.gov/Archives/edgar/data/4281/000110465926119857/tm2628456d1_ex99-1.htm",
+"prognosen": [
+{
+"kennzahl": "umsatz",
+"geschaeftsjahr": "2026",
+"von": 10290000000,
+"bis": 10310000000,
+"einheit": "USD",
+"veraendert": "angehoben",
+"beleg": "Revenue $10,290 - $10,310"
+},
+{
+"kennzahl": "eps_bereinigt",
+"geschaeftsjahr": "2026",
+"von": 5.49,
+"bis": 5.51,
+"einheit": "USD",
+"veraendert": "angehoben",
+"beleg": "Adj. Earnings per Share $5.49 - $5.51"
+},
+{
+"kennzahl": "fcf",
+"geschaeftsjahr": "2026",
+"von": 1950000000,
+"bis": 2050000000,
+"einheit": "USD",
+"veraendert": "angehoben",
+"beleg": "Free Cash Flow $1,950 - $2,050"
+},
+{
+"kennzahl": "umsatz",
+"geschaeftsjahr": "2027",
+"von": 11500000000,
+"bis": 11500000000,
+"einheit": "USD",
+"veraendert": "neu",
+"beleg": "Full Year 2027 Revenue Guidance: Approximately $11.5 Billion"
+}
+]
+},
+"MO": {
+"datum": "2026-10-29",
+"quelle": "https://www.sec.gov/Archives/edgar/data/764180/000076418026000112/exhibit991erq32026.htm",
+"prognosen": [
+{
+"kennzahl": "eps_bereinigt",
+"geschaeftsjahr": "2026",
+"von": 5.66,
+"bis": 5.74,
+"einheit": "USD",
+"veraendert": "angehoben",
+"beleg": "We expect our 2026 full-year adjusted diluted EPS to be in a range of $5.66 to $5.74"
+},
+{
+"kennzahl": "umsatzwachstum_proz",
+"geschaeftsjahr": "2026",
+"von": 4.5,
+"bis": 6.0,
+"einheit": "%",
+"veraendert": "angehoben",
+"beleg": "representing a growth rate of 4.5% to 6.0% from a base of $5.42 in 2025"
+}
+]
+},
+"INCY": {
+"datum": "2026-10-29",
+"quelle": "https://www.sec.gov/Archives/edgar/data/879169/000087916926000063/incy-q32026xexx991.htm",
+"prognosen": [
+{
+"kennzahl": "umsatz",
+"geschaeftsjahr": "2026",
+"von": 5210000000,
+"bis": 5300000000,
+"einheit": "USD",
+"veraendert": "angehoben",
+"beleg": "Total net sales $5,210 - $5,300 million"
+},
+{
+"kennzahl": "umsatz",
+"geschaeftsjahr": "2026",
+"von": 3220000000,
+"bis": 3270000000,
+"einheit": "USD",
+"veraendert": "bestaetigt",
+"beleg": "Jakafi net sales $3,220 - $3,270 million"
+},
+{
+"kennzahl": "umsatz",
+"geschaeftsjahr": "2026",
+"von": 1100000000,
+"bis": 1120000000,
+"einheit": "USD",
+"veraendert": "angehoben",
+"beleg": "Opzelura net sales $1,100 - $1,120 million"
+},
+{
+"kennzahl": "umsatz",
+"geschaeftsjahr": "2026",
+"von": 890000000,
+"bis": 910000000,
+"einheit": "USD",
+"veraendert": "angehoben",
+"beleg": "Hematology and Oncology net sales $890 - $910 million"
+}
+]
+},
+"NCLH": {
+"datum": "2026-10-29",
+"quelle": "https://www.sec.gov/Archives/edgar/data/1513761/000117184326006957/exh_991.htm",
+"prognosen": [
+{
+"kennzahl": "eps_bereinigt",
+"geschaeftsjahr": "2026",
+"von": 1.7,
+"bis": 1.7,
+"einheit": "USD",
+"veraendert": "angehoben",
+"beleg": "Raised full year 2026 guidance, with 2026 Adjusted EBITDA now expected to be approximately $2.55 billion and Adjusted EPS of approximately $1.70."
+},
+{
+"kennzahl": "umsatzwachstum_proz",
+"geschaeftsjahr": "2027",
+"von": 1,
+"bis": 2,
+"einheit": "%",
+"veraendert": "neu",
+"beleg": "We are seeing the early signs of progress and expect Net Yield growth of 1% to 2% in 2027"
+},
+{
+"kennzahl": "eps_bereinigt",
+"geschaeftsjahr": "2026",
+"von": 1.7,
+"bis": 1.7,
+"einheit": "USD",
+"veraendert": "angehoben",
+"beleg": "Adjusted EPS is expected to be approximately $1.70."
+}
+]
+},
+"PWR": {
+"datum": "2026-10-29",
+"quelle": "https://www.sec.gov/Archives/edgar/data/1050915/000119312526436949/d77812dex991.htm",
+"prognosen": [
+{
+"kennzahl": "umsatz",
+"geschaeftsjahr": "2026",
+"von": 41300000000,
+"bis": 41600000000,
+"einheit": "USD",
+"veraendert": "neu",
+"beleg": "For the full year ending December 31, 2026, Quanta now expects revenues to range between $41.3 billion and $41.6 billion"
+},
+{
+"kennzahl": "eps_gaap",
+"geschaeftsjahr": "2026",
+"von": 12.57,
+"bis": 12.97,
+"einheit": "USD",
+"veraendert": "neu",
+"beleg": "diluted earnings per share attributable to common stock to range between $12.57 and $12.97"
+},
+{
+"kennzahl": "eps_bereinigt",
+"geschaeftsjahr": "2026",
+"von": 17.9,
+"bis": 18.3,
+"einheit": "USD",
+"veraendert": "neu",
+"beleg": "adjusted diluted earnings per share attributable to common stock to range between $17.90 and $18.30."
+},
+{
+"kennzahl": "fcf",
+"geschaeftsjahr": "2026",
+"von": 2500000000,
+"bis": 3000000000,
+"einheit": "USD",
+"veraendert": "neu",
+"beleg": "free cash flow (a non-GAAP financial measure) to range between $2.50 billion and $3.00 billion."
+}
+]
+},
+"AOS": {
+"datum": "2026-10-29",
+"quelle": "https://www.sec.gov/Archives/edgar/data/91142/000009114226000102/a9302026exhibit991.htm",
+"prognosen": [
+{
+"kennzahl": "umsatz",
+"geschaeftsjahr": "2026",
+"von": 3270000000,
+"bis": 3290000000,
+"einheit": "USD",
+"veraendert": "unklar",
+"beleg": "Net sales excluding China, of approximately 4%"
+},
+{
+"kennzahl": "eps_bereinigt",
+"geschaeftsjahr": "2026",
+"von": 3.42,
+"bis": 3.52,
+"einheit": "USD",
+"veraendert": "unklar",
+"beleg": "Adjusted EPS, excluding China, of between $3.42 and $3.52"
+}
+]
+},
+"VMC": {
+"datum": "2026-10-29",
+"quelle": "https://www.sec.gov/Archives/edgar/data/1396009/000114036126041095/ef20084525_ex99-1.htm",
+"prognosen": [
+{
+"kennzahl": "sonstiges",
+"geschaeftsjahr": "2026",
+"von": 2400000000,
+"bis": 2400000000,
+"einheit": "USD",
+"veraendert": "neu",
+"beleg": "we expect to deliver approximately $2.4 billion in Adjusted EBITDA for the full year."
+}
+]
+},
+"KIM": {
+"datum": "2026-10-29",
+"quelle": "https://www.sec.gov/Archives/edgar/data/879101/000119312526436941/kim-ex99_1.htm",
+"prognosen": [
+{
+"kennzahl": "eps_gaap",
+"geschaeftsjahr": "2026",
+"von": 1.07,
+"bis": 1.09,
+"einheit": "USD",
+"veraendert": "angehoben",
+"beleg": "Net income: $1.07 to $1.09"
+},
+{
+"kennzahl": "organisches_wachstum_proz",
+"geschaeftsjahr": "2026",
+"von": 3.5,
+"bis": 3.8,
+"einheit": "Prozent",
+"veraendert": "angehoben",
+"beleg": "Same property NOI growth +3.5% to +3.8%"
+}
+]
+},
+"AVY": {
+"datum": "2026-10-29",
+"quelle": "https://www.sec.gov/Archives/edgar/data/8818/000000881826000162/ex9918k10-29x26.htm",
+"prognosen": [
+{
+"kennzahl": "eps_gaap",
+"geschaeftsjahr": "2026",
+"von": 9.45,
+"bis": 9.59,
+"einheit": "USD",
+"veraendert": "unklar",
+"beleg": "Based on the factors listed and other assumptions, the company expects full year 2026 reported EPS of $9.45 to $9.59."
+},
+{
+"kennzahl": "eps_bereinigt",
+"geschaeftsjahr": "2026",
+"von": 10.1,
+"bis": 10.24,
+"einheit": "USD",
+"veraendert": "unklar",
+"beleg": "Excluding an estimated $0.65 impact of restructuring charges and other items, the company expects full year 2026 adjusted EPS of $10.10 to $10.24."
+}
+]
+},
+"MRK": {
+"datum": "2026-10-29",
+"quelle": "https://www.sec.gov/Archives/edgar/data/310158/000110465926119825/tm2628203d1_ex99-1.htm",
+"prognosen": [
+{
+"kennzahl": "umsatz",
+"geschaeftsjahr": "2026",
+"von": 66800000000,
+"bis": 67300000000,
+"einheit": "USD",
+"veraendert": "angehoben",
+"beleg": "Now Expects Sales To Be Between $66.8 Billion and $67.3 Billion"
+},
+{
+"kennzahl": "eps_bereinigt",
+"geschaeftsjahr": "2026",
+"von": 2.77,
+"bis": 2.82,
+"einheit": "USD",
+"veraendert": "angehoben",
+"beleg": "Narrows and Raises Expected Non-GAAP EPS Range To Be Between $2.77 and $2.82"
+}
+]
+},
+"TT": {
+"datum": "2026-10-29",
+"quelle": "https://www.sec.gov/Archives/edgar/data/1466258/000146625826000001/exhibit991-q32026earningsr.htm",
+"prognosen": [
+{
+"kennzahl": "umsatzwachstum_proz",
+"geschaeftsjahr": "2026",
+"von": 13.5,
+"bis": 13.5,
+"einheit": "Prozent",
+"veraendert": "angehoben",
+"beleg": "The Company expects full-year 2026 reported revenue growth of approximately 13.5 percent and organic revenue growth of approximately 11 percent versus full-year 2025."
+},
+{
+"kennzahl": "organisches_wachstum_proz",
+"geschaeftsjahr": "2026",
+"von": 11,
+"bis": 11,
+"einheit": "Prozent",
+"veraendert": "angehoben",
+"beleg": "The Company expects full-year 2026 reported revenue growth of approximately 13.5 percent and organic revenue growth of approximately 11 percent versus full-year 2025."
+},
+{
+"kennzahl": "eps_gaap",
+"geschaeftsjahr": "2026",
+"von": 15.0,
+"bis": 15.1,
+"einheit": "USD",
+"veraendert": "bestaetigt",
+"beleg": "The Company expects GAAP continuing EPS for full-year 2026 of approximately $15.00 to $15.10, including $0.20 for non-GAAP adjustments."
+},
+{
+"kennzahl": "eps_bereinigt",
+"geschaeftsjahr": "2026",
+"von": 15.2,
+"bis": 15.3,
+"einheit": "USD",
+"veraendert": "bestaetigt",
+"beleg": "The Company expects adjusted continuing EPS for full- year 2026 of $15.20 to $15.30."
+}
+]
+},
+"CTSH": {
+"datum": "2026-10-29",
+"quelle": "https://www.sec.gov/Archives/edgar/data/1058290/000105829026000039/exhibit9919302026.htm",
+"prognosen": [
+{
+"kennzahl": "umsatzwachstum_proz",
+"geschaeftsjahr": "2026",
+"von": 4.0,
+"bis": 4.4,
+"einheit": "%",
+"veraendert": "angehoben",
+"beleg": "2026 constant currency revenue growth guidance is revised to 4.0% to 4.4% year-over-year growth"
+},
+{
+"kennzahl": "operative_marge_proz",
+"geschaeftsjahr": "2026",
+"von": 16.1,
+"bis": 16.1,
+"einheit": "%",
+"veraendert": "unklar",
+"beleg": "2026 Adjusted Operating Margin guidance is now approximately 16.1%, year-over-year expansion of 30 basis points"
+},
+{
+"kennzahl": "eps_bereinigt",
+"geschaeftsjahr": "2026",
+"von": 5.72,
+"bis": 5.79,
+"einheit": "USD",
+"veraendert": "angehoben",
+"beleg": "2026 Adjusted Diluted EPS guidance revised to $5.72 to $5.79, year-over-year growth of 8% to 10%"
+},
+{
+"kennzahl": "umsatz",
+"geschaeftsjahr": "2026",
+"von": 22050000000,
+"bis": 22140000000,
+"einheit": "USD",
+"veraendert": "unklar",
+"beleg": "Full-year 2026 revenue is expected to be $22.05 to $22.14 billion"
+},
+{
+"kennzahl": "umsatzwachstum_proz",
+"geschaeftsjahr": "2026",
+"von": 4.5,
+"bis": 4.9,
+"einheit": "%",
+"veraendert": "unklar",
+"beleg": "growth of 4.5% to 4.9%, or 4.0% to 4.4% in constant currency."
+},
+{
+"kennzahl": "operative_marge_proz",
+"geschaeftsjahr": "2026",
+"von": 16.1,
+"bis": 16.1,
+"einheit": "%",
+"veraendert": "unklar",
+"beleg": "Full-year 2026 Adjusted Operating Margin4 is now expected to be approximately 16.1%"
+},
+{
+"kennzahl": "eps_bereinigt",
+"geschaeftsjahr": "2026",
+"von": 5.72,
+"bis": 5.79,
+"einheit": "USD",
+"veraendert": "unklar",
+"beleg": "Full-year 2026 Adjusted Diluted EPS4 is expected to be in the range of $5.72 to $5.79"
+}
+]
+},
+"TXT": {
+"datum": "2026-10-29",
+"quelle": "https://www.sec.gov/Archives/edgar/data/217346/000021734626000043/q320268-kex991.htm",
+"prognosen": [
+{
+"kennzahl": "eps_gaap",
+"geschaeftsjahr": "2026",
+"von": 5.64,
+"bis": 5.74,
+"einheit": "USD",
+"veraendert": "angehoben",
+"beleg": "Textron raised its expectation for full-year 2026 GAAP earnings per share from continuing operations to be in the range of $5.64 to $5.74"
+},
+{
+"kennzahl": "eps_bereinigt",
+"geschaeftsjahr": "2026",
+"von": 6.55,
+"bis": 6.65,
+"einheit": "USD",
+"veraendert": "angehoben",
+"beleg": "Textron also raised its expectation for full-year 2026 adjusted earnings per share from continuing operations... to be in the range of $6.55 to $6.65"
+},
+{
+"kennzahl": "fcf",
+"geschaeftsjahr": "2026",
+"von": 800000000,
+"bis": 900000000,
+"einheit": "USD",
+"veraendert": "angehoben",
+"beleg": "Textron also raised its expectation for manufacturing cash flow before pension contributions... to be in the range of $800 million to $900 million"
+}
+]
+},
+"LHX": {
+"datum": "2026-10-29",
+"quelle": "https://www.sec.gov/Archives/edgar/data/202058/000020205826000084/exhibit991q3cy26earnings.htm",
+"prognosen": [
+{
+"kennzahl": "umsatz",
+"geschaeftsjahr": "2026",
+"von": 23500000000,
+"bis": 23700000000,
+"einheit": "USD",
+"veraendert": "angehoben",
+"beleg": "Increases bottom end of the revenue guidance range to $23.5 billion to $23.7 billion"
+},
+{
+"kennzahl": "eps_gaap",
+"geschaeftsjahr": "2026",
+"von": 12.25,
+"bis": 12.35,
+"einheit": "USD",
+"veraendert": "angehoben",
+"beleg": "increases GAAP EPS range to $12.25 to $12.35"
+},
+{
+"kennzahl": "fcf",
+"geschaeftsjahr": "2026",
+"von": 3000000000,
+"bis": 3000000000,
+"einheit": "USD",
+"veraendert": "bestaetigt",
+"beleg": "maintains FY26 Free Cash Flow guidance of $3 billion"
+}
+]
+},
+"ORLY": {
+"datum": "2026-10-28",
+"quelle": "https://www.sec.gov/Archives/edgar/data/898173/000089817326000050/orly-ex99d1.htm",
+"prognosen": [
+{
+"kennzahl": "umsatzwachstum_proz",
+"geschaeftsjahr": "2026",
+"von": 5.5,
+"bis": 6.5,
+"einheit": "Prozent",
+"veraendert": "angehoben",
+"beleg": "we are raising our full-year 2026 comparable store sales guidance to a range of 5.5% to 6.5%."
+},
+{
+"kennzahl": "operative_marge_proz",
+"geschaeftsjahr": "2026",
+"von": 51.6,
+"bis": 52.1,
+"einheit": "Prozent",
+"veraendert": "angehoben",
+"beleg": "We are also raising our full-year 2026 gross margin guidance to a range of 51.6% to 52.1%"
+},
+{
+"kennzahl": "operative_marge_proz",
+"geschaeftsjahr": "2026",
+"von": 19.5,
+"bis": 20.0,
+"einheit": "Prozent",
+"veraendert": "angehoben",
+"beleg": "and our operating profit guidance to a range of 19.5% to 20.0%."
+},
+{
+"kennzahl": "umsatz",
+"geschaeftsjahr": "2026",
+"von": 19000000000,
+"bis": 19300000000,
+"einheit": "USD",
+"veraendert": "angehoben",
+"beleg": "Total revenue: $19.0 billion to $19.3 billion"
+},
+{
+"kennzahl": "eps_bereinigt",
+"geschaeftsjahr": "2026",
+"von": 3.25,
+"bis": 3.35,
+"einheit": "USD",
+"veraendert": "angehoben",
+"beleg": "Diluted earnings per share: $3.25 to $3.35"
+},
+{
+"kennzahl": "fcf",
+"geschaeftsjahr": "2026",
+"von": 1900000000,
+"bis": 2200000000,
+"einheit": "USD",
+"veraendert": "angehoben",
+"beleg": "Free cash flow: $1.9 billion to $2.2 billion"
+}
+]
+},
+"AWK": {
+"datum": "2026-10-28",
+"quelle": "https://www.sec.gov/Archives/edgar/data/1410636/000141063626000150/ex991-9302026q3pressrelease.htm",
+"prognosen": [
+{
+"kennzahl": "eps_bereinigt",
+"geschaeftsjahr": "2026",
+"von": 6.07,
+"bis": 6.12,
+"einheit": "USD",
+"veraendert": "gesenkt",
+"beleg": "The company’s 2026 adjusted EPS guidance range has been narrowed to $6.07 to $6.12, from the previous 2026 adjusted EPS guidance range of $6.02 to $6.12."
+},
+{
+"kennzahl": "eps_bereinigt",
+"geschaeftsjahr": "2027",
+"von": 6.53,
+"bis": 6.63,
+"einheit": "USD",
+"veraendert": "neu",
+"beleg": "2027 standalone adjusted earnings per share guidance range of $6.53 to $6.63 established"
+}
+]
+},
+"TYL": {
+"datum": "2026-10-28",
+"quelle": "https://www.sec.gov/Archives/edgar/data/860731/000086073126000056/a991earningsrelease-9302026.htm",
+"prognosen": [
+{
+"kennzahl": "umsatz",
+"geschaeftsjahr": "2026",
+"von": 2535000000,
+"bis": 2565000000,
+"einheit": "USD",
+"veraendert": "unklar",
+"beleg": "Total revenues $2.535 billion to $2.565 billion"
+},
+{
+"kennzahl": "eps_bereinigt",
+"geschaeftsjahr": "2026",
+"von": 12.95,
+"bis": 13.2,
+"einheit": "USD",
+"veraendert": "unklar",
+"beleg": "Non-GAAP diluted earnings per share $12.95 to $13.20"
+}
+]
+},
+"EQIX": {
+"datum": "2026-10-28",
+"quelle": "https://www.sec.gov/Archives/edgar/data/1101239/000110123926000178/a991eqix-q326xpr.htm",
+"prognosen": [
+{
+"kennzahl": "umsatz",
+"geschaeftsjahr": "2026",
+"von": 10325000000,
+"bis": 10365000000,
+"einheit": "USD",
+"veraendert": "angehoben",
+"beleg": "For the full year of 2026, total revenues are expected to range between $10.325 and $10.365 billion"
+},
+{
+"kennzahl": "operative_marge_proz",
+"geschaeftsjahr": "2026",
+"von": 51,
+"bis": 51,
+"einheit": "Prozent",
+"veraendert": "bestaetigt",
+"beleg": "Adjusted EBITDA is expected to range between $5.290 and $5.330 billion, reflecting an adjusted EBITDA margin of approximately 51%"
+}
+]
+},
+"CMG": {
+"datum": "2026-10-28",
+"quelle": "https://www.sec.gov/Archives/edgar/data/1058090/000105809026000103/cmg-20261028xex991.htm",
+"prognosen": [
+{
+"kennzahl": "umsatzwachstum_proz",
+"geschaeftsjahr": "2026",
+"von": 1,
+"bis": 3,
+"einheit": "Prozent",
+"veraendert": "bestaetigt",
+"beleg": "Full year comparable restaurant sales growth in the low single digit range"
+}
+]
+},
+"FTNT": {
+"datum": "2026-10-28",
+"quelle": "https://www.sec.gov/Archives/edgar/data/1262039/000126203926000024/ftntq3-2026ex991.htm",
+"prognosen": [
+{
+"kennzahl": "umsatz",
+"geschaeftsjahr": "2026",
+"von": 8125000000,
+"bis": 8215000000,
+"einheit": "USD",
+"veraendert": "unklar",
+"beleg": "Revenue in the range of $8.125 billion to $8.215 billion"
+},
+{
+"kennzahl": "operative_marge_proz",
+"geschaeftsjahr": "2026",
+"von": 36.5,
+"bis": 37.5,
+"einheit": "Prozent",
+"veraendert": "unklar",
+"beleg": "Non-GAAP operating margin in the range of 36.5% to 37.5%"
+},
+{
+"kennzahl": "eps_bereinigt",
+"geschaeftsjahr": "2026",
+"von": 3.54,
+"bis": 3.58,
+"einheit": "USD",
+"veraendert": "unklar",
+"beleg": "Diluted non-GAAP net income per share in the range of $3.54 to $3.58"
+}
+]
+},
+"EBAY": {
+"datum": "2026-10-28",
+"quelle": "https://www.sec.gov/Archives/edgar/data/1065088/000106508826000209/exhibit991erebayq32026.htm",
+"prognosen": [
+{
+"kennzahl": "umsatz",
+"geschaeftsjahr": "2026",
+"von": 12620000000,
+"bis": 12670000000,
+"einheit": "USD",
+"veraendert": "unklar",
+"beleg": "Full Year 2026 Guidance Revenue $12.62 - $12.67"
+},
+{
+"kennzahl": "umsatzwachstum_proz",
+"geschaeftsjahr": "2026",
+"von": 12,
+"bis": 13,
+"einheit": "Prozent",
+"veraendert": "unklar",
+"beleg": "Full Year 2026 Guidance FX-Neutral Y/Y Growth 12% - 13%"
+},
+{
+"kennzahl": "eps_gaap",
+"geschaeftsjahr": "2026",
+"von": 4.26,
+"bis": 4.31,
+"einheit": "USD",
+"veraendert": "unklar",
+"beleg": "Full Year 2026 Guidance Diluted GAAP EPS $4.26 - $4.31"
+},
+{
+"kennzahl": "eps_bereinigt",
+"geschaeftsjahr": "2026",
+"von": 6.25,
+"bis": 6.3,
+"einheit": "USD",
+"veraendert": "unklar",
+"beleg": "Full Year 2026 Guidance Diluted Non-GAAP EPS $6.25 - $6.30"
+}
+]
+},
+"F": {
+"datum": "2026-10-28",
+"quelle": "https://www.sec.gov/Archives/edgar/data/37996/000003799626000190/exhibit99tooctober282026.htm",
+"prognosen": [
+{
+"kennzahl": "operative_marge_proz",
+"geschaeftsjahr": "2029",
+"von": 8,
+"bis": 8,
+"einheit": "%",
+"veraendert": "neu",
+"beleg": "moving us toward an 8% adjusted EBIT margin by 2029."
+},
+{
+"kennzahl": "sonstiges",
+"geschaeftsjahr": "2026",
+"von": 10500000000,
+"bis": 11000000000,
+"einheit": "USD",
+"veraendert": "angehoben",
+"beleg": "Company raises low end of full-year adjusted EBIT guidance to between $10.5 billion and $11 billion"
+},
+{
+"kennzahl": "fcf",
+"geschaeftsjahr": "2026",
+"von": 6000000000,
+"bis": 7000000000,
+"einheit": "USD",
+"veraendert": "bestaetigt",
+"beleg": "adjusted free cash flow guidance remains $6 billion to $7 billion"
+}
+]
+},
+"GEN": {
+"datum": "2026-10-28",
+"quelle": "https://www.sec.gov/Archives/edgar/data/849399/000084939926000081/ex9901q2fy27.htm",
+"prognosen": [
+{
+"kennzahl": "umsatz",
+"geschaeftsjahr": "2027",
+"von": 1365000000,
+"bis": 1390000000,
+"einheit": "USD",
+"veraendert": "neu",
+"beleg": "Q3 FY27 Revenue expected to be in the range of $1.365 billion to $1.390 billion"
+},
+{
+"kennzahl": "eps_bereinigt",
+"geschaeftsjahr": "2027",
+"von": 0.73,
+"bis": 0.75,
+"einheit": "USD",
+"veraendert": "neu",
+"beleg": "Q3 FY27 EPS expected to be in the range of $0.73 to $0.75"
+},
+{
+"kennzahl": "umsatz",
+"geschaeftsjahr": "2027",
+"von": 5465000000,
+"bis": 5515000000,
+"einheit": "USD",
+"veraendert": "angehoben",
+"beleg": "FY27 Revenue expected to be in the range of $5.465 billion to $5.515 billion"
+},
+{
+"kennzahl": "eps_bereinigt",
+"geschaeftsjahr": "2027",
+"von": 2.93,
+"bis": 2.98,
+"einheit": "USD",
+"veraendert": "angehoben",
+"beleg": "FY27 EPS expected to be in the range of $2.93 to $2.98"
+}
+]
+},
+"CVNA": {
+"datum": "2026-10-28",
+"quelle": "https://www.sec.gov/Archives/edgar/data/1690820/000169082026000066/ex99_1q32026.htm",
+"prognosen": [
+{
+"kennzahl": "sonstiges",
+"geschaeftsjahr": "2026",
+"von": 2.7,
+"bis": 3.0,
+"einheit": "Mrd. USD",
+"veraendert": "bestaetigt",
+"beleg": "Adjusted EBITDA in the higher end of our previously communicated range of $2.7 to $3.0 billion for the full year 2026."
+}
+]
+},
+"TMUS": {
+"datum": "2026-10-28",
+"quelle": "https://www.sec.gov/Archives/edgar/data/1283699/000128369926000128/tmus09302026ex991.htm",
+"prognosen": [
+{
+"kennzahl": "fcf",
+"geschaeftsjahr": "2026",
+"von": 18700000000,
+"bis": 18800000000,
+"einheit": "USD",
+"veraendert": "angehoben",
+"beleg": "Adjusted Free Cash Flow, including net payments for UScellular merger-related costs, is now expected to be between $18.7 billion and $18.8 billion"
+}
+]
 }
 },
 "stand": "2026-11-12",
 "hinweis": "Eigene Prognosen der Unternehmen aus ihren Ergebnis-Pressemitteilungen (SEC 8-K, Anlage EX-99), automatisch ausgelesen. Keine Analystenschaetzungen.",
 "letzter_lauf": {
-"zeit": "2026-11-12 11:38",
-"kandidaten": 341,
-"ki_aufrufe": 17,
+"zeit": "2026-11-12 20:11",
+"kandidaten": 322,
+"ki_aufrufe": 60,
 "abbruch": "",
 "fehler": []
 }
