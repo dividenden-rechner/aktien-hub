@@ -5,7 +5,7 @@ date: 2026-11-12 20:50
 author: "Redaktions-Team Dividenden-Rechner.de"
 author_bio: "Das Redaktions-Team von Dividenden-Rechner.de schreibt über Dividendenaktien, Kennzahlen und Steuerthemen für Privatanleger. Die Rechner und Auswertungen auf der Seite entstehen im eigenen Haus."
 category: Sonstige Meldung
-draft: true
+draft: false
 quelle_name: "SPIEGEL, Handelsblatt (12.11.2026), Mercedes-Benz Group (Ad-hoc-Meldung vom 27.10.2026)"
 image: assets/magazin/mercedes-benz-prognoseanpassung-2026-foto.jpg
 image_alt: "Foto zu Mercedes-Benz Group AG: Mercedes-Benz Werk Untertürkheim, Neckarpark, Stuttgart."
