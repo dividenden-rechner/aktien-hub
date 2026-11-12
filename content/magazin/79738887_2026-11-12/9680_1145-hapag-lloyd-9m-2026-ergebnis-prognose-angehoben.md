@@ -5,7 +5,6 @@ date: 2026-11-12 11:45
 author: "Redaktions-Team Dividenden-Rechner.de"
 author_bio: "Das Redaktions-Team von Dividenden-Rechner.de schreibt über Dividendenaktien, Kennzahlen und Steuerthemen für Privatanleger. Die Rechner und Auswertungen auf der Seite stehen jedem frei zur Verfügung."
 category: Quartalszahlen
-aufmacher: ja
 story_image: assets/magazin/hapag-lloyd-9m-2026-ergebnis.jpg
 story_text: "Hapag-Lloyd hat im dritten Quartal 1,0 Mrd. US-Dollar verdient, nach 172 Mio. im Vorjahr. Den Sprung liefern die Frachtraten mit 1.808 Dollar je Container, 28 % mehr, bei gleicher Transportmenge.\nDie Kosten steigen mit: Nahost-Konflikt und Hafenstau treiben die Stückkosten um 11 % auf 1.522 Dollar. Je Container bleiben dennoch 286 Dollar Marge, nach 40 im Vorjahr.\nDas Jahresziel für das EBIT steigt auf 2,0 bis 2,4 Mrd. Dollar. Dahinter stehen offene Fragen: die Rückkehr ins Rote Meer, ein Rekord-Auftragsbuch der Werften und die Übernahme von Zim."
 logo_name: "Hapag-Lloyd"
