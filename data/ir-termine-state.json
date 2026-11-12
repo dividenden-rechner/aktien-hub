@@ -24,30 +24,34 @@
   "gefunden": 0
  },
  "PFE": {
-  "hash": "717ca938626471a4",
+  "hash": "4224dc0b077a14b7",
   "status": "ok",
   "stand": "2026-11-12",
   "gefunden": 0
  },
  "AMGN": {
-  "status": "Seite nicht lesbar",
-  "stand": "2026-11-12"
+  "status": "ok",
+  "stand": "2026-11-12",
+  "hash": "6d250a4799af6b90",
+  "gefunden": 0
  },
  "MCD": {
-  "hash": "17112920c6202a9c",
+  "hash": "da4add07cb21e3fc",
   "status": "ok",
   "stand": "2026-11-12",
   "gefunden": 0
  },
  "KHC": {
-  "hash": "f9c610efd8468fa3",
+  "hash": "c76f2d5b8e2b5a2a",
   "status": "ok",
   "stand": "2026-11-12",
   "gefunden": 0
  },
  "KMB": {
-  "status": "Seite nicht lesbar",
-  "stand": "2026-11-12"
+  "status": "ok",
+  "stand": "2026-11-12",
+  "hash": "d35f00af2168ffcb",
+  "gefunden": 0
  },
  "QCOM": {
   "hash": "54afc66128334f6e",
@@ -62,7 +66,7 @@
   "gefunden": 0
  },
  "ENB": {
-  "hash": "cba270ffec0faf46",
+  "hash": "62d2172d680b6944",
   "status": "ok",
   "stand": "2026-11-12",
   "gefunden": 0
