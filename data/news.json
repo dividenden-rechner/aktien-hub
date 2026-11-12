@@ -1,6 +1,15 @@
 {
- "updated": "2026-11-11T17:08:01.174349+00:00",
+ "updated": "2026-11-12T00:43:34.337433+00:00",
  "items": [
+  {
+   "sym": "MSFT",
+   "name": "Microsoft",
+   "title": "What it takes to bring an AI research assistant to thousands of medical experts",
+   "link": "https://commandline.microsoft.com/from-custom-infrastructure-to-hosted-agents/",
+   "date": "2026-11-11T21:40:16+00:00",
+   "text": "The post What it takes to bring an AI research assistant to thousands of medical experts appeared first on Source.",
+   "quelle": "RSS"
+  },
   {
    "sym": "KO",
    "name": "Coca-Cola",
@@ -35,6 +44,15 @@
    "link": "https://newsroom.ibm.com/campaign?item=3059",
    "date": "2026-11-11T12:02:00+00:00",
    "text": "IBM (NYSE: IBM) today announced IBM Quantum Nighthawk r3, its next-generation processor, will be built to accurately execute 10,000 quantum operations across 520 qubits to tackle larger, more complex problems while maintaining the speed and quality demonstrated by the current generation Nighthawk available today.",
+   "quelle": "RSS"
+  },
+  {
+   "sym": "VZ",
+   "name": "Verizon",
+   "title": "Plan a holiday email marketing campaign in 20 minutes",
+   "link": "https://www.verizon.com/about/news/plan-holiday-email-marketing-campaign",
+   "date": "2026-11-11T11:30:32+00:00",
+   "text": "Plan a holiday email marketing campaign in 20 minutes. Nicole McCullum shares a simple four-email strategy to help small business owners reach more customers.",
    "quelle": "RSS"
   },
   {
@@ -327,6 +345,15 @@
    "link": "https://news.sap.com/2026/11/sap-expands-collaboration-astrazeneca-rise-with-sap-business-ai/",
    "date": "2026-11-10T09:00:00+00:00",
    "text": "WALLDORF — Cloud, data and AI create a stronger foundation for innovation at scale.",
+   "quelle": "RSS"
+  },
+  {
+   "sym": "VZ",
+   "name": "Verizon",
+   "title": "Verizon Business completes one of Europe’s largest Private 5G implementations",
+   "link": "https://www.verizon.com/about/news/verizon-thames-freeport-private-5g",
+   "date": "2026-11-10T08:56:24+00:00",
+   "text": "Verizon Business, Thames Freeport complete one of Europe's largest Private 5G networks.",
    "quelle": "RSS"
   },
   {
@@ -625,7 +652,7 @@
    "sym": "DTE.DE",
    "name": "Deutsche Telekom",
    "title": "Telekom expands AI factory in Munich",
-   "link": "https://www.telekom.com/en/newsroom/latest-updates/media-information/2026/11/ai-demand-rises-deutsche-telekom-expands-ai-factory-in-munich",
+   "link": "https://www.telekom.com/en/newsroom/latest-updates/media-information/2026/11/ai-demand-rises-telekom-expands-ai-factory-in-munich",
    "date": "2026-11-09T00:00:00+00:00",
    "text": "More computing power for artificial intelligence. Deutsche Telekom will further expand its AI factory in Munich's Tucherpark.",
    "quelle": "RSS"
@@ -905,15 +932,6 @@
    "quelle": "RSS"
   },
   {
-   "sym": "VZ",
-   "name": "Verizon",
-   "title": "The 2024 holiday tech gift guide for families",
-   "link": "https://www.verizon.com/about/parenting/tech-gifts-2024-holiday-guide",
-   "date": "2026-11-05T11:46:34+00:00",
-   "text": "You’ll love the look on their faces when they open these. Getting ready for the holiday season was never so easy using this guide for tech gifts.",
-   "quelle": "RSS"
-  },
-  {
    "sym": "SAP.DE",
    "name": "SAP",
    "title": "Three Skills That Define the New Entry-Level Job in the AI Era",
@@ -936,19 +954,19 @@
   {
    "sym": "AMZN",
    "name": "Amazon",
-   "title": "Amazon lanza una alianza con Uber Eats que ofrece entregas sin costo para los miembros Prime",
-   "link": "https://press.aboutamazon.com/2026/11/amazon-lanza-una-alianza-con-uber-eats-que-ofrece-entregas-sin-costo-para-los-miembros-prime",
+   "title": "Amazon Launches Partnership with Uber Eats Featuring $0 Delivery Fee for Prime Members",
+   "link": "https://press.aboutamazon.com/2026/11/amazon-launches-partnership-with-uber-eats-featuring-0-delivery-fee-for-prime-members",
    "date": "2026-11-05T11:00:00+00:00",
-   "text": "Los miembros Prime en Estados Unidos ya pueden pedir comida de restaurantes directamente en Amazon.com y en la aplicación Amazon Shopping, a través de Uber Eats, sin pagar cargos por entrega y con promociones exclusivas que podrían representar ahorros de más de $175 al año*Los miembros Prime, desde Boston, Massachusetts, hasta Boardman, Oregón, y en casi 10,000 ciudades y localidades entre ambos, pueden aprovechar desde hoy mismo una oferta introductoria de $20 de descuento en sus primeros dos pedidos de restaurantes de $25 o más a través de Uber Eats",
+   "text": "U.S. Prime members can now order restaurant delivery right on Amazon.com and in the Amazon Shopping app—powered by Uber Eats—with $0 Delivery Fee and exclusive promotions adding up to potential savings of more than $175 per year*",
    "quelle": "RSS"
   },
   {
    "sym": "AMZN",
    "name": "Amazon",
-   "title": "Amazon Launches Partnership with Uber Eats Featuring $0 Delivery Fee for Prime Members",
-   "link": "https://press.aboutamazon.com/2026/11/amazon-launches-partnership-with-uber-eats-featuring-0-delivery-fee-for-prime-members",
+   "title": "Amazon lanza una alianza con Uber Eats que ofrece entregas sin costo para los miembros Prime",
+   "link": "https://press.aboutamazon.com/2026/11/amazon-lanza-una-alianza-con-uber-eats-que-ofrece-entregas-sin-costo-para-los-miembros-prime",
    "date": "2026-11-05T11:00:00+00:00",
-   "text": "U.S. Prime members can now order restaurant delivery right on Amazon.com and in the Amazon Shopping app—powered by Uber Eats—with $0 Delivery Fee and exclusive promotions adding up to potential savings of more than $175 per year*",
+   "text": "Los miembros Prime en Estados Unidos ya pueden pedir comida de restaurantes directamente en Amazon.com y en la aplicación Amazon Shopping, a través de Uber Eats, sin pagar cargos por entrega y con promociones exclusivas que podrían representar ahorros de más de $175 al año*Los miembros Prime, desde Boston, Massachusetts, hasta Boardman, Oregón, y en casi 10,000 ciudades y localidades entre ambos, pueden aprovechar desde hoy mismo una oferta introductoria de $20 de descuento en sus primeros dos pedidos de restaurantes de $25 o más a través de Uber Eats",
    "quelle": "RSS"
   },
   {
@@ -967,15 +985,6 @@
    "link": "/eng/ir/news/pdf/202611051900_FinalDividend_eng.pdf",
    "date": "2026-11-05T10:00:00+00:00",
    "text": "",
-   "quelle": "RSS"
-  },
-  {
-   "sym": "VZ",
-   "name": "Verizon",
-   "title": "Verizon announces cap increases and expiration and results of its tender offers for five series of notes",
-   "link": "https://www.verizon.com/about/news/verizon-tender-offers-notes-results",
-   "date": "2026-11-05T09:52:57+00:00",
-   "text": "Verizon announced increased purchase caps and final results for its tender offers across five series of notes, accepting $663,976,000 in total aggregate principal amount.",
    "quelle": "RSS"
   },
   {
@@ -1084,15 +1093,6 @@
    "link": "https://blogs.windows.com/windowsexperience/2026/11/03/raising-the-bar-for-8-gb-windows-11-pcs-whats-improved-and-how-to-get-it/",
    "date": "2026-11-04T22:04:18+00:00",
    "text": "The post How Windows 11 is making smarter use of memory on 8 GB PCs appeared first on Source.",
-   "quelle": "RSS"
-  },
-  {
-   "sym": "MSFT",
-   "name": "Microsoft",
-   "title": "Microsoft announces change to director slate for Annual Shareholders Meeting",
-   "link": "https://news.microsoft.com/source/2026/11/04/microsoft-announces-change-to-director-slate-for-annual-shareholders-meeting/",
-   "date": "2026-11-04T21:05:19+00:00",
-   "text": "The post Microsoft announces change to director slate for Annual Shareholders Meeting appeared first on Source.",
    "quelle": "RSS"
   },
   {
@@ -4256,11 +4256,11 @@
  "errors": [
   {
    "sym": "PEP",
-   "fehler": "HTTP Error 429: Too Many Requests"
+   "fehler": "HTTP Error 402: Payment Required"
   },
   {
    "sym": "PG",
-   "fehler": "HTTP Error 429: Too Many Requests"
+   "fehler": "HTTP Error 402: Payment Required"
   },
   {
    "sym": "LLY",
@@ -4272,15 +4272,15 @@
   },
   {
    "sym": "PFE",
-   "fehler": "HTTP Error 429: Too Many Requests"
+   "fehler": "HTTP Error 402: Payment Required"
   },
   {
    "sym": "MRK",
-   "fehler": "HTTP Error 429: Too Many Requests"
+   "fehler": "HTTP Error 402: Payment Required"
   },
   {
    "sym": "O",
-   "fehler": "HTTP Error 429: Too Many Requests"
+   "fehler": "HTTP Error 402: Payment Required"
   },
   {
    "sym": "V",
@@ -4288,23 +4288,23 @@
   },
   {
    "sym": "JPM",
-   "fehler": "HTTP Error 429: Too Many Requests"
+   "fehler": "HTTP Error 402: Payment Required"
   },
   {
    "sym": "CVX",
-   "fehler": "HTTP Error 429: Too Many Requests"
+   "fehler": "HTTP Error 402: Payment Required"
   },
   {
    "sym": "MCD",
-   "fehler": "HTTP Error 429: Too Many Requests"
+   "fehler": "HTTP Error 402: Payment Required"
   },
   {
    "sym": "HD",
-   "fehler": "HTTP Error 429: Too Many Requests"
+   "fehler": "HTTP Error 402: Payment Required"
   },
   {
    "sym": "TXN",
-   "fehler": "HTTP Error 429: Too Many Requests"
+   "fehler": "HTTP Error 402: Payment Required"
   },
   {
    "sym": "AVGO",
@@ -4312,7 +4312,7 @@
   },
   {
    "sym": "CSCO",
-   "fehler": "HTTP Error 429: Too Many Requests"
+   "fehler": "HTTP Error 402: Payment Required"
   },
   {
    "sym": "MDLZ",
@@ -4324,163 +4324,163 @@
   },
   {
    "sym": "GOOGL",
-   "fehler": "HTTP Error 429: Too Many Requests"
+   "fehler": "HTTP Error 402: Payment Required"
   },
   {
    "sym": "SIE.DE",
-   "fehler": "HTTP Error 429: Too Many Requests"
+   "fehler": "HTTP Error 402: Payment Required"
   },
   {
    "sym": "ALV.DE",
-   "fehler": "HTTP Error 429: Too Many Requests"
+   "fehler": "HTTP Error 402: Payment Required"
   },
   {
    "sym": "MBG.DE",
-   "fehler": "HTTP Error 429: Too Many Requests"
+   "fehler": "HTTP Error 402: Payment Required"
   },
   {
    "sym": "BMW.DE",
-   "fehler": "HTTP Error 429: Too Many Requests"
+   "fehler": "HTTP Error 402: Payment Required"
   },
   {
    "sym": "BAS.DE",
-   "fehler": "HTTP Error 429: Too Many Requests"
+   "fehler": "HTTP Error 402: Payment Required"
   },
   {
    "sym": "MUV2.DE",
-   "fehler": "HTTP Error 429: Too Many Requests"
+   "fehler": "HTTP Error 402: Payment Required"
   },
   {
    "sym": "DHL.DE",
-   "fehler": "HTTP Error 429: Too Many Requests"
+   "fehler": "HTTP Error 402: Payment Required"
   },
   {
    "sym": "ADS.DE",
-   "fehler": "HTTP Error 429: Too Many Requests"
+   "fehler": "HTTP Error 402: Payment Required"
   },
   {
    "sym": "RWE.DE",
-   "fehler": "HTTP Error 429: Too Many Requests"
+   "fehler": "HTTP Error 402: Payment Required"
   },
   {
    "sym": "EOAN.DE",
-   "fehler": "HTTP Error 429: Too Many Requests"
+   "fehler": "HTTP Error 402: Payment Required"
   },
   {
    "sym": "DBK.DE",
-   "fehler": "HTTP Error 429: Too Many Requests"
+   "fehler": "HTTP Error 402: Payment Required"
   },
   {
    "sym": "ASML.AS",
-   "fehler": "HTTP Error 429: Too Many Requests"
+   "fehler": "HTTP Error 402: Payment Required"
   },
   {
    "sym": "MC.PA",
-   "fehler": "HTTP Error 429: Too Many Requests"
+   "fehler": "HTTP Error 402: Payment Required"
   },
   {
    "sym": "OR.PA",
-   "fehler": "HTTP Error 429: Too Many Requests"
+   "fehler": "HTTP Error 402: Payment Required"
   },
   {
    "sym": "TTE.PA",
-   "fehler": "HTTP Error 429: Too Many Requests"
+   "fehler": "HTTP Error 402: Payment Required"
   },
   {
    "sym": "SAN.PA",
-   "fehler": "HTTP Error 429: Too Many Requests"
+   "fehler": "HTTP Error 402: Payment Required"
   },
   {
    "sym": "SU.PA",
-   "fehler": "HTTP Error 429: Too Many Requests"
+   "fehler": "HTTP Error 402: Payment Required"
   },
   {
    "sym": "NESN.SW",
-   "fehler": "HTTP Error 429: Too Many Requests"
+   "fehler": "HTTP Error 402: Payment Required"
   },
   {
    "sym": "NOVN.SW",
-   "fehler": "HTTP Error 429: Too Many Requests"
+   "fehler": "HTTP Error 402: Payment Required"
   },
   {
    "sym": "ROG.SW",
-   "fehler": "HTTP Error 429: Too Many Requests"
+   "fehler": "HTTP Error 402: Payment Required"
   },
   {
    "sym": "UBSG.SW",
-   "fehler": "HTTP Error 429: Too Many Requests"
+   "fehler": "HTTP Error 402: Payment Required"
   },
   {
    "sym": "NOVO-B.CO",
-   "fehler": "HTTP Error 429: Too Many Requests"
+   "fehler": "HTTP Error 402: Payment Required"
   },
   {
    "sym": "ULVR.L",
-   "fehler": "HTTP Error 429: Too Many Requests"
+   "fehler": "HTTP Error 402: Payment Required"
   },
   {
    "sym": "SHEL.L",
-   "fehler": "HTTP Error 429: Too Many Requests"
+   "fehler": "HTTP Error 402: Payment Required"
   },
   {
    "sym": "AZN.L",
-   "fehler": "HTTP Error 429: Too Many Requests"
+   "fehler": "HTTP Error 402: Payment Required"
   },
   {
    "sym": "BP.L",
-   "fehler": "HTTP Error 429: Too Many Requests"
+   "fehler": "HTTP Error 402: Payment Required"
   },
   {
    "sym": "ENEL.MI",
-   "fehler": "HTTP Error 429: Too Many Requests"
+   "fehler": "HTTP Error 402: Payment Required"
   },
   {
    "sym": "ISP.MI",
-   "fehler": "HTTP Error 429: Too Many Requests"
+   "fehler": "HTTP Error 402: Payment Required"
   },
   {
    "sym": "IBE.MC",
-   "fehler": "HTTP Error 429: Too Many Requests"
+   "fehler": "HTTP Error 402: Payment Required"
   },
   {
    "sym": "TSM",
-   "fehler": "HTTP Error 429: Too Many Requests"
+   "fehler": "HTTP Error 402: Payment Required"
   },
   {
    "sym": "9988.HK",
-   "fehler": "HTTP Error 429: Too Many Requests"
+   "fehler": "HTTP Error 402: Payment Required"
   },
   {
    "sym": "0700.HK",
-   "fehler": "HTTP Error 429: Too Many Requests"
+   "fehler": "HTTP Error 402: Payment Required"
   },
   {
    "sym": "7203.T",
-   "fehler": "HTTP Error 429: Too Many Requests"
+   "fehler": "HTTP Error 402: Payment Required"
   },
   {
    "sym": "6758.T",
-   "fehler": "HTTP Error 429: Too Many Requests"
+   "fehler": "HTTP Error 402: Payment Required"
   },
   {
    "sym": "BHP.AX",
-   "fehler": "HTTP Error 429: Too Many Requests"
+   "fehler": "HTTP Error 402: Payment Required"
   },
   {
    "sym": "0027.HK",
-   "fehler": "HTTP Error 429: Too Many Requests"
+   "fehler": "HTTP Error 402: Payment Required"
   },
   {
    "sym": "RELIANCE.NS",
-   "fehler": "HTTP Error 429: Too Many Requests"
+   "fehler": "HTTP Error 402: Payment Required"
   },
   {
    "sym": "TATAMOTORS.NS",
-   "fehler": "HTTP Error 429: Too Many Requests"
+   "fehler": "HTTP Error 402: Payment Required"
   },
   {
    "sym": "HEI.DE",
-   "fehler": "HTTP Error 429: Too Many Requests"
+   "fehler": "HTTP Error 402: Payment Required"
   },
   {
    "sym": "FRE.DE",
@@ -4492,15 +4492,15 @@
   },
   {
    "sym": "HOLN.SW",
-   "fehler": "HTTP Error 429: Too Many Requests"
+   "fehler": "HTTP Error 402: Payment Required"
   },
   {
    "sym": "DGE.L",
-   "fehler": "HTTP Error 429: Too Many Requests"
+   "fehler": "HTTP Error 402: Payment Required"
   },
   {
    "sym": "REL.L",
-   "fehler": "HTTP Error 429: Too Many Requests"
+   "fehler": "HTTP Error 402: Payment Required"
   },
   {
    "sym": "AAL.L",
@@ -4508,7 +4508,7 @@
   },
   {
    "sym": "NOKIA.HE",
-   "fehler": "HTTP Error 429: Too Many Requests"
+   "fehler": "HTTP Error 402: Payment Required"
   },
   {
    "sym": "FRE.DE",
