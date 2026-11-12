@@ -15,14 +15,14 @@ story_text: "Starbucks wächst im Kerngeschäft wieder kräftig: Die vergleichba
 story_quote_by: "Brian Niccol | CEO Starbucks"
 logo_symbol: SBUX
 logo_domain: starbucks.com
-image: assets/magazin/starbucks-geschaeftsbericht-2026-foto.jpg
-image_alt: "Foto zu Starbucks Corporation: Ein Starbucks-Coffeehouse in einem Einkaufszentrum in Loulé, Algarve, Portugal"
-image_credit: "Foto: Kolforn / Wikimedia Commons, CC BY-SA 4.0"
-image_source: https://commons.wikimedia.org/wiki/File:2017-12-24_Starbucks_coffee_shop,_MAR_shopping_mall,_Loul%C3%A9.JPG
+image: assets/magazin/starbucks-q4-2026-quartalszahlen-foto.jpg
+image_alt: "Starbucks-Coffeehouse am Abend mit beleuchtetem Schriftzug, davor Hecke und Pflanzen"
+image_credit: "Foto: Trương Tuyết Ly / Unsplash"
+image_source: https://unsplash.com/de/s/fotos/starbucks
 image_artist_url: 
 logo_file: assets/logos/sbux.png
 ---
-<!-- PRÜFEN: Aufmacherfoto ist das Foto des früheren Geschäftsberichts-Artikels (Kolforn, CC BY-SA 4.0). Eine neue Fotoanfrage (Coffeehouse, Außenansicht oder Theke) ist in tools/asset.request angelegt, der Bot ergänzt sie. -->
+<!-- PRÜFEN: Aufmacherfoto von Divi auf Unsplash gewählt (Trương Tuyết Ly, Unsplash-Lizenz). Die Adresse der Einzelseite des Fotos fehlt, image_source zeigt auf die Suchseite: bitte durch den Foto-Link ersetzen. -->
 <!-- PRÜFEN: Veröffentlicht wurden die Zahlen am 29. Oktober 2026. Der Artikel ist auf den 12.11.2026 datiert, weil Kursbild und Dividendenstichtag (13.11.) von diesem Tag stammen. Datum bitte bestätigen. -->
 <!-- PRÜFEN: Kursangaben (97,03 EUR, –2,10 %, Stand 12.11.2026, 22:15 Uhr) stammen aus dem Screenshot von aktien.guide. Der USD-Kurs von 109,89 USD in der Kennzahlentabelle ist aus den Hub-Daten übernommen und nicht belegt. -->
 <!-- PRÜFEN: Foto von Brian Niccol (assets/magazin/brian-niccol-starbucks.png, aus medien/ceo): Nutzungsrecht prüfen. -->
