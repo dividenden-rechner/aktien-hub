@@ -1661,6 +1661,16 @@
    "quelle": "https://www.hapag-lloyd.com/de/company/ir/publications/financial-report.html"
   },
   {
+   "sym": "HMC",
+   "name": "Honda Motor Co Ltd",
+   "datum": "2026-11-12",
+   "eps": 132.75,
+   "eps_basis": "berichtet",
+   "revenue": null,
+   "waehrung": "Yen",
+   "quelle": "https://www.sec.gov/Archives/edgar/data/715153/000119312526456637/d178380d6k.htm"
+  },
+  {
    "sym": "MUV2.DE",
    "name": "Munich Re",
    "datum": "2026-11-12",

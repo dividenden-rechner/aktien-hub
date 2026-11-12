@@ -17,10 +17,13 @@ Datei anklicken, dann Stift-Symbol: Zeile `draft: true` löschen und speichern, 
 | 29.10.2026 22:42 | Amazon steigert Umsatz im dritten Quartal auf 201,9 Milliarden Dollar | [79738970_2026-10-29/7757_2242-amazon-q3-2026-zahlen.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/79738970_2026-10-29/7757_2242-amazon-q3-2026-zahlen.md) |
 | 29.10.2026 10:12 | Shell erzielt im dritten Quartal 10,8 Milliarden Dollar Gewinn | [79738970_2026-10-29/8987_1012-shell-q3-2026-ergebnisse.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/79738970_2026-10-29/8987_1012-shell-q3-2026-ergebnisse.md) |
 
-### Online (366)
+### Online (369)
 
 | Datum | Titel | Datei |
 |---|---|---|
+| 12.11.2026 19:54 | BHP Group beruft Adrian Wood zum neuen Finanzchef | [79738887_2026-11-12/8045_1954-bhp-group-neuer-finanzchef-adrian-wood.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/79738887_2026-11-12/8045_1954-bhp-group-neuer-finanzchef-adrian-wood.md) |
+| 12.11.2026 19:51 | Invitation Homes beruft M. Colin Connolly in den Verwaltungsrat | [79738887_2026-11-12/8048_1951-invitation-homes-colin-connolly-verwaltungsrat.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/79738887_2026-11-12/8048_1951-invitation-homes-colin-connolly-verwaltungsrat.md) |
+| 12.11.2026 19:50 | Banco Santander erhöht Umtauschverhältnis für Santander Brasil um 5 % | [79738887_2026-11-12/8049_1950-banco-santander-erhoeht-umtauschverhaeltnis-fuer-santander-brasil.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/79738887_2026-11-12/8049_1950-banco-santander-erhoeht-umtauschverhaeltnis-fuer-santander-brasil.md) |
 | 12.11.2026 13:45 | Nebius: Umsatz plus 571 %, doch Verzögerungen drücken die Prognose | [79738887_2026-11-12/8739_1345-nebius-q3-2026-umsatz-prognose-verzoegerungen.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/79738887_2026-11-12/8739_1345-nebius-q3-2026-umsatz-prognose-verzoegerungen.md) |
 | 12.11.2026 13:45 | Kraft Heinz verspricht Wachstum ab 2027 und zahlt dafür mit sinkenden Gewinnen | [79738887_2026-11-12/9670_1345-kraft-heinz-investor-day-2026-ziele-2029-dividende.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/79738887_2026-11-12/9670_1345-kraft-heinz-investor-day-2026-ziele-2029-dividende.md) |
 | 12.11.2026 12:59 | Kurssprung und Dividendenfokus bei Japan Tobacco | [79738887_2026-11-12/8740_1259-japan-tobacco-morgenmeldung.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/79738887_2026-11-12/8740_1259-japan-tobacco-morgenmeldung.md) |

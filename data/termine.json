@@ -685,6 +685,24 @@
    "quelle": "https://www.sec.gov/Archives/edgar/data/313838/000119312526454312/d148641d6k.htm"
   },
   {
+   "sym": "HSBC",
+   "name": "Hsbc Holdings Plc",
+   "art": "ergebnis",
+   "datum": "2026-11-11",
+   "betrag": "",
+   "waehrung": "",
+   "quelle": "https://www.sec.gov/Archives/edgar/data/1089113/000165495426009684/a8038c.htm"
+  },
+  {
+   "sym": "LYG",
+   "name": "Lloyds Banking Group plc",
+   "art": "ergebnis",
+   "datum": "2026-11-11",
+   "betrag": "",
+   "waehrung": "",
+   "quelle": "https://www.sec.gov/Archives/edgar/data/1160106/000165495426009682/a7882c.htm"
+  },
+  {
    "sym": "RMD",
    "name": "ResMed",
    "art": "dividende_exdatum",
@@ -719,6 +737,15 @@
    "betrag": "1.18",
    "waehrung": "USD",
    "quelle": "https://www.sec.gov/Archives/edgar/data/1539838/000153983826000180/diamondbackex991-11x2x26.htm"
+  },
+  {
+   "sym": "HMC",
+   "name": "Honda Motor Co Ltd",
+   "art": "ergebnis",
+   "datum": "2026-11-12",
+   "betrag": "",
+   "waehrung": "",
+   "quelle": "https://www.sec.gov/Archives/edgar/data/715153/000119312526456637/d178380d6k.htm"
   },
   {
    "sym": "MRNA",
@@ -764,6 +791,15 @@
    "betrag": "0.595",
    "waehrung": "USD",
    "quelle": "https://www.sec.gov/Archives/edgar/data/32604/000003260426000049/a2026q4release_ex991.htm"
+  },
+  {
+   "sym": "HSBC",
+   "name": "Hsbc Holdings Plc",
+   "art": "ergebnis",
+   "datum": "2026-11-13",
+   "betrag": "",
+   "waehrung": "",
+   "quelle": "https://www.sec.gov/Archives/edgar/data/1089113/000165495426009680/a7814c.htm"
   },
   {
    "sym": "TECH",
@@ -1225,6 +1261,15 @@
    "quelle": "https://www.sec.gov/Archives/edgar/data/882095/000088209526000037/exhibit991earningspressrel.htm"
   },
   {
+   "sym": "SAN",
+   "name": "Banco Santander, S.A.",
+   "art": "ergebnis",
+   "datum": "2026-12-15",
+   "betrag": "",
+   "waehrung": "",
+   "quelle": "https://www.sec.gov/Archives/edgar/data/891478/000095010326017308/dp256619_6k.htm"
+  },
+  {
    "sym": "TPL",
    "name": "Texas Pacific Land Corporation",
    "art": "dividende_zahltag",
@@ -1457,6 +1502,15 @@
    "betrag": "1.82",
    "waehrung": "USD",
    "quelle": "https://www.sec.gov/Archives/edgar/data/1551152/000155115226000033/abbv-20260930xexhibit991.htm"
+  },
+  {
+   "sym": "BHP",
+   "name": "BHP Group Ltd",
+   "art": "ergebnis",
+   "datum": "2027-02-16",
+   "betrag": "",
+   "waehrung": "",
+   "quelle": "https://www.sec.gov/Archives/edgar/data/811809/000119312526456620/d62587d6k.htm"
   },
   {
    "sym": "TSM",
