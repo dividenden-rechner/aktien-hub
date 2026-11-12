@@ -7004,6 +7004,172 @@ null,
 507.63
 ],
 "hinweis": "Geschäftsjahr endet im März (2025 = Geschäftsjahr bis 31.03.2025, wie in der boerse.de-Reihe). Berichtswährung GBP (Mio. GBP). Nur operatives Ergebnis ergänzt (Operating Income der Quelle); Umsatz der Quelle ab 2024 auf fortgeführte Bereiche neu dargestellt (2024: 18.854, 2025: 15.904 gegenüber 19.859 und 18.011 in der boerse.de-Reihe), daher ab 2024 nicht mit dem boerse.de-Umsatz vergleichbar. Cashflow und Bilanz: Quelle nicht abrufbar."
+},
+"LLOY.L": {
+"jahre": [
+2021,
+2022,
+2023,
+2024,
+2025
+],
+"ocf": [
+-13862,
+23606,
+11770,
+-15721,
+-7781
+],
+"capex": [
+3228,
+2432,
+3961,
+4364,
+5071
+],
+"da": [
+2825,
+2396,
+2905,
+2205,
+2207
+],
+"div": [
+1306,
+1913,
+2178,
+2326,
+2463
+],
+"bb": [
+null,
+3408,
+2128,
+3835,
+3469
+],
+"hinweis": "Bank, Berichtswährung GBP (Mio. GBP). Nur Capex, Abschreibungen, Dividenden und Aktienrückkäufe ergänzt. Cashflow aus laufender Geschäftstätigkeit schwankt stark (Kredit- und Einlagengeschäft) und sagt wenig aus. Capex und Abschreibungen wie in der Quelle ausgewiesen, nicht gegen den Bericht geprüft. Umsatz, operatives Ergebnis, Cash und Schulden bei Banken nicht sinnvoll vergleichbar, weggelassen."
+},
+"PRU.L": {
+"jahre": [
+2021,
+2022,
+2023,
+2024,
+2025
+],
+"ocf": [
+-145,
+1078,
+832,
+3609,
+2450
+],
+"capex": [
+36,
+34,
+44,
+101,
+104
+],
+"div": [
+421,
+474,
+533,
+552,
+594
+],
+"bb": [
+null,
+null,
+null,
+860,
+1252
+],
+"hinweis": "Versicherer, Berichtswährung USD (Mio. USD, Quelle: 20-F-Daten des ADR). Nur Cashflow, Capex, Dividenden und Aktienrückkäufe ergänzt; operativer Cashflow bei Versicherern nur eingeschränkt aussagekräftig, 2021 zudem nicht sicher vergleichbar (Abspaltung des US-Geschäfts). Abschreibungen der Quelle (472 bis 601) vermutlich inkl. aktivierter Abschlusskosten und deshalb weggelassen. Aktienrückkäufe 2021 bis 2023: Quelle ohne Angabe. Umsatz, operatives Ergebnis, Cash und Schulden nicht sinnvoll vergleichbar."
+},
+"LGEN.L": {
+"jahre": [
+2021,
+2022,
+2023,
+2024,
+2025
+],
+"da": [
+54,
+57,
+48,
+49,
+44
+],
+"hinweis": "Versicherer, Berichtswährung GBP. Nur Abschreibungen ergänzt (Lücke in den ESEF-Daten); Schulden der Quelle (Short-Term-Debt über 50.000) umfassen offenbar Verbindlichkeiten konsolidierter Fonds und sind nicht vergleichbar, deshalb weggelassen."
+},
+"ADM.L": {
+"jahre": [
+2021,
+2022,
+2023,
+2024,
+2025
+],
+"ocf": [
+244.6,
+476.9,
+279,
+369,
+436.5
+],
+"capex": [
+10.6,
+98.6,
+75.9,
+61.7,
+74.3
+],
+"da": [
+23.6,
+18.2,
+18.2,
+21.6,
+23.4
+],
+"div": [
+720.9,
+525.55,
+257.65,
+320,
+625.74
+],
+"bb": [
+null,
+null,
+null,
+null,
+35.3
+],
+"debt": [
+776.2,
+1028,
+1211,
+1402,
+1894
+],
+"zins": [
+19.8,
+26.1,
+47.3,
+64.2,
+82.7
+],
+"steuer": [
+130.2,
+75.9,
+105.6,
+175.3,
+212.6
+],
+"hinweis": "Versicherer, Berichtswährung GBP (Mio. GBP). Operativer Cashflow bei Versicherern nur eingeschränkt aussagekräftig. Schulden = Total Debt der Quelle (nachrangige Anleihen und Leasing), Cash des Versicherungsgeschäfts nicht vergleichbar und weggelassen. Dividenden 2021 (721) deutlich höher als in den Folgejahren; Aktienrückkäufe nur 2025. Umsatz und operatives Ergebnis nicht sinnvoll vergleichbar (Versicherungsumsatz nach IFRS 17 neu dargestellt)."
 }
 }
 }
