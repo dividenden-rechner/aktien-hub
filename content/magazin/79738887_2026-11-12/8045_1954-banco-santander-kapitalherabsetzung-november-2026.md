@@ -10,6 +10,7 @@ quelle_url: https://www.sec.gov/Archives/edgar/data/891478/000095010326017297/dp
 quelle_name: "Pressemitteilung Banco Santander, S.A. (SEC-Meldung)"
 logo_symbol: SAN
 logo_name: "Banco Santander, S.A."
+logo_file: assets/logos/san.png
 ---
 <!-- PRÜFEN: Diese Zahlen stehen nicht im Originaltext: 150,595, 7,20, 14,41, 3,26, 150,6, 150,6, 75,3, Einordnung: 150,59. Bitte pruefen, dann 'draft: true' loeschen. -->
 
