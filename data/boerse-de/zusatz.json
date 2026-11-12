@@ -3291,6 +3291,441 @@ null
 2025
 ],
 "hinweis": "Bank: Capex der Quelle (6,5 bis 11,9 Mrd. EUR) enthält vermutlich Leasingfahrzeuge der Tochter Ayvens und ist als Investitionskennzahl nicht brauchbar; daher nicht ergänzt. Liquide Mittel, Schulden, Umsatz und operatives Ergebnis 2021 bis 2023 bei Banken nicht vergleichbar und nicht ergänzt."
+},
+"SHEL.L": {
+"jahre": [
+2021,
+2022,
+2023,
+2024,
+2025
+],
+"ebit": [
+24814,
+64331,
+34630,
+33452,
+29834
+],
+"ocf": [
+45104,
+68414,
+54191,
+54687,
+42863
+],
+"capex": [
+19000,
+22600,
+22993,
+19601,
+18947
+],
+"div": [
+6253,
+7405,
+8393,
+8668,
+8472
+],
+"da": [
+25029,
+18188,
+28265,
+25034,
+23424
+],
+"bb": [
+3174,
+19030,
+15506,
+14687,
+15179
+],
+"cash": [
+36970,
+40246,
+38774,
+39110,
+30216
+],
+"debt": [
+89086,
+83795,
+81639,
+77142,
+75688
+],
+"zins": [
+3607,
+3181,
+4673,
+4787,
+4671
+],
+"steuer": [
+9199,
+21941,
+12991,
+13401,
+11637
+],
+"brutto": [
+62770,
+97308,
+78497,
+72813,
+67794
+],
+"hinweis": "Berichtswährung USD (Cashflow, Bilanz, Gewinnrechnung in Mio. USD); Umsatz aus der boerse.de-Reihe. Schulden inkl. Leasingverbindlichkeiten (Total Debt der Quelle)."
+},
+"AZN.L": {
+"jahre": [
+2021,
+2022,
+2023,
+2024,
+2025
+],
+"ebit": [
+2897,
+8812,
+9699,
+12929,
+14292
+],
+"ocf": [
+5963,
+9808,
+10345,
+11861,
+14575
+],
+"capex": [
+1091,
+1091,
+1361,
+1924,
+2810
+],
+"div": [
+3856,
+4364,
+4491,
+4606,
+4846
+],
+"da": [
+4039,
+5178,
+4851,
+4981,
+5392
+],
+"bb": [
+null,
+null,
+null,
+81,
+521
+],
+"cash": [
+6329,
+6166,
+5840,
+5488,
+5711
+],
+"debt": [
+33363,
+31135,
+29649,
+30460,
+29703
+],
+"zins": [
+776,
+917,
+1219,
+1403,
+1365
+],
+"steuer": [
+-380,
+-792,
+938,
+1650,
+2169
+],
+"brutto": [
+25412,
+35710,
+37766,
+44435,
+47993
+],
+"hinweis": "Berichtswährung USD (Cashflow, Bilanz, Gewinnrechnung in Mio. USD); Umsatz aus der boerse.de-Reihe. Schulden inkl. Leasingverbindlichkeiten."
+},
+"ULVR.L": {
+"jahre": [
+2021,
+2022,
+2023,
+2024,
+2025
+],
+"ebit": [
+9637,
+9512,
+9275,
+10278,
+10127
+],
+"ocf": [
+7972,
+7282,
+9426,
+9519,
+8350
+],
+"capex": [
+1108,
+1456,
+1194,
+1381,
+1417
+],
+"div": [
+4483,
+4329,
+4363,
+4319,
+4453
+],
+"da": [
+1746,
+1725,
+1148,
+1030,
+1089
+],
+"bb": [
+3018,
+1509,
+1507,
+1508,
+1510
+],
+"cash": [
+3415,
+4326,
+4159,
+6136,
+3941
+],
+"debt": [
+30133,
+29488,
+29622,
+32053,
+28278
+],
+"zins": [
+498,
+789,
+955,
+999,
+1098
+],
+"steuer": [
+1935,
+2068,
+1990,
+2332,
+2481
+],
+"brutto": [
+22185,
+24167,
+22500,
+24503,
+23709
+],
+"hinweis": "Berichtswährung EUR. Gewinnrechnung der Quelle ab 2023 offenbar ohne das abgespaltene Eisgeschäft neu dargestellt (Umsatz 2023 51.680, 2024 52.479); die boerse.de-Umsatzreihe weist 2023 und 2024 noch inklusive Eisgeschäft aus (nicht vergleichbar mit Bruttogewinn und operativem Ergebnis dieser Jahre). Schulden inkl. Leasingverbindlichkeiten."
+},
+"BP.L": {
+"jahre": [
+2021,
+2022,
+2023,
+2024,
+2025
+],
+"ebit": [
+12639,
+40844,
+30097,
+10448,
+14446
+],
+"ocf": [
+23612,
+40932,
+32039,
+27297,
+24493
+],
+"capex": [
+10887,
+12069,
+14285,
+15297,
+13221
+],
+"div": [
+4302,
+4357,
+4808,
+5002,
+5058
+],
+"da": [
+12519,
+14705,
+16674,
+19391,
+18750
+],
+"bb": [
+3177,
+10000,
+7919,
+7149,
+4486
+],
+"cash": [
+30681,
+29195,
+33030,
+39204,
+36556
+],
+"debt": [
+69787,
+55493,
+63075,
+71547,
+72529
+],
+"zins": [
+1821,
+1851,
+2964,
+3569,
+3981
+],
+"steuer": [
+6740,
+16762,
+7869,
+5553,
+6451
+],
+"brutto": [
+37735,
+69498,
+64057,
+46912,
+51382
+],
+"hinweis": "Berichtswährung USD (Cashflow, Bilanz, Gewinnrechnung in Mio. USD); Umsatz aus der boerse.de-Reihe (Quelle weicht ab: 156.431 / 239.067 / 208.351 / 187.386 / 187.637). Operatives Ergebnis ohne Bereinigung um Einmaleffekte. Schulden inkl. Leasingverbindlichkeiten."
+},
+"GSK.L": {
+"jahre": [
+2021,
+2022,
+2023,
+2024,
+2025
+],
+"ebit": [
+5634,
+7322,
+8403,
+6190,
+9447
+],
+"ocf": [
+7952,
+7403,
+6768,
+6554,
+7741
+],
+"capex": [
+950,
+1143,
+1314,
+1399,
+1348
+],
+"div": [
+3999,
+3467,
+2247,
+2444,
+2564
+],
+"da": [
+2122,
+2147,
+2294,
+2340,
+2094
+],
+"bb": [
+null,
+null,
+null,
+null,
+1377
+],
+"cash": [
+4274,
+3723,
+2936,
+3870,
+3397
+],
+"debt": [
+24174,
+20987,
+18018,
+16986,
+17787
+],
+"zins": [
+762,
+819,
+710,
+615,
+658
+],
+"steuer": [
+83,
+707,
+756,
+526,
+1112
+],
+"brutto": [
+16663,
+19917,
+21940,
+22531,
+23720
+],
+"hinweis": "Berichtswährung GBP (Mio. GBP). Gewinnrechnung der Quelle 2021 offenbar ohne das abgespaltene Consumer-Geschäft (Haleon) dargestellt (Umsatz 24.696), die boerse.de-Umsatzreihe 2021 enthält es noch (34.114); Cashflow 2021 Konzern inkl. Haleon. Schulden inkl. Leasingverbindlichkeiten."
 }
 }
 }
