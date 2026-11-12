@@ -272,7 +272,8 @@
 1.65,
 11.51,
 12.45
-]
+],
+"dividende_waehrung": "CHF"
 },
 "SDZ.SW": {
 "name": "Sandoz",
@@ -620,7 +621,8 @@ null
 19.91,
 14.8,
 18.87
-]
+],
+"dividende_waehrung": "CHF"
 },
 "UBSG.SW": {
 "name": "UBS",
@@ -794,7 +796,8 @@ null
 17.5,
 22.83,
 23.84
-]
+],
+"dividende_waehrung": "CHF"
 },
 "NOVN.SW": {
 "name": "Novartis",
@@ -881,7 +884,8 @@ null
 31.82,
 27.11,
 30.31
-]
+],
+"dividende_waehrung": "CHF"
 },
 "NESN.SW": {
 "name": "Nestlé",
@@ -1055,7 +1059,8 @@ null
 27.93,
 27.16,
 29.43
-]
+],
+"dividende_waehrung": "CHF"
 },
 "ALC.SW": {
 "name": "Alcon",
@@ -1142,7 +1147,8 @@ null
 4.72,
 4.72,
 4.45
-]
+],
+"dividende_waehrung": "CHF"
 },
 "GALD.SW": {
 "name": "Galderma",
@@ -1229,7 +1235,8 @@ null,
 null,
 null,
 null
-]
+],
+"dividende_waehrung": "CHF"
 },
 "GEBN.SW": {
 "name": "Geberit",
@@ -1664,7 +1671,8 @@ null
 16.15,
 27.41,
 29.69
-]
+],
+"dividende_waehrung": "CHF"
 },
 "LONN.SW": {
 "name": "Lonza",

@@ -20,6 +20,7 @@ for land in ('de','fr','uk','ch'):
         e = {'n': f['name'], 'isin': f.get('isin'), 'land': LAND.get(sym.split('.')[-1], ''), 'gj': f'{jahre[-1]}-12-31',
              'w': f.get('waehrung') or d.get('waehrung') or 'EUR', 'quelle': 'boerse.de', 'k': k}
         if f.get('hinweis'): e['hinweis'] = f['hinweis']
+        if f.get('dividende_waehrung') and f['dividende_waehrung'] != e['w']: e['dps_w'] = f['dividende_waehrung']   # Dividende in anderer Waehrung als der Bericht
         out[sym] = e
 # Zusatz aus Jahresabschlüssen (Cashflow, Bilanz, Gewinnrechnung): data/boerse-de/zusatz.json, hat Vorrang je Jahr
 ZMAP = {'ocf':'operativer_cf','capex':'capex','da':'abschreibungen','div':'dividenden_gezahlt','bb':'aktienrueckkauf','cash':'liquide_mittel',
