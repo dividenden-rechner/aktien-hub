@@ -2883,6 +2883,1224 @@ null,
 10.6,
 null
 ]
+},
+"TEMN.SW": {
+"name": "Temenos",
+"isin": "CH0012453913",
+"waehrung": "USD",
+"hinweis": "Berichtswaehrung USD (stockanalysis.com). 2019/2020 nicht verfuegbar (null). dividendenausschuettung = gezahlte Dividenden laut Cashflow. Dividende je Aktie von stockanalysis in USD umgerechnet (Ausschuettung faktisch in CHF). EPS verwaessert. ROE laut stockanalysis. Umsatz 2023 von stockanalysis auf 1.000 gerundet. Jahr 2025: Nettogewinn enthaelt Gewinn aus Verkauf (ca. 120 Mio. USD Verkaufsgewinn). capex = Sachanlagen + immaterielle Werte; da = Abschreibungen + sonstige Amortisation; cash = liquide Mittel + kurzfristige Anlagen; debt inkl. Leasing.",
+"umsatz": [
+null,
+null,
+967,
+949.63,
+1000,
+1044,
+1091
+],
+"ebt": [
+null,
+null,
+211.52,
+145.96,
+172.88,
+209.61,
+336.18
+],
+"jahresueberschuss": [
+null,
+null,
+173.37,
+114.42,
+134.68,
+177.18,
+280.61
+],
+"dividendenausschuettung": [
+null,
+null,
+71.43,
+74.41,
+88.27,
+96.94,
+110.55
+],
+"eigenkapital": [
+null,
+null,
+474.79,
+578.38,
+681.98,
+638.97,
+477.98
+],
+"eps": [
+null,
+null,
+2.4,
+1.59,
+1.85,
+2.43,
+4.0
+],
+"dividende_je_aktie": [
+null,
+null,
+1.097,
+1.19,
+1.425,
+1.435,
+1.766
+],
+"aktien_mio": [
+null,
+null,
+71.58,
+71.77,
+72.49,
+70.7,
+67.32
+],
+"eigenkapitalrendite_pct": [
+null,
+null,
+34.74,
+21.73,
+21.37,
+26.83,
+50.24
+]
+},
+"SPSN.SW": {
+"name": "Swiss Prime Site",
+"isin": "CH0008038389",
+"waehrung": "CHF",
+"hinweis": "Berichtswaehrung CHF (stockanalysis.com), 2019/2020 nicht verfuegbar (null). Immobilienfirma: Umsatz = Gesamtertrag (Mieterertraege 2021-25: 426.69, 432.80, 438.27, 463.50, 456.81; Rest u.a. Verwaltungsgebuehren und Verkaufsgewinne). EBT/Ergebnis enthalten Neubewertungen (2023 Abwertung 250 Mio., Jahresueberschuss 2023 inkl. 149 Mio. aus aufgegebenem Geschaeftsbereich Wincasa-Verkauf). dividendenausschuettung = gezahlte Dividenden laut Cashflow. EPS verwaessert. ROE laut stockanalysis. Zusatz: capex = null (Zukaeufe von Renditeliegenschaften 2021-25 in Mio.: 281.71, 385.65, 439.48, 189.00, 668.16; Verkaeufe 186.30, 303.10, 216.44, 341.09, 134.02); da ohne Aussagekraft (Immobilien werden neubewertet, nicht abgeschrieben); brutto = null; ebit = Betriebsergebnis inkl. Neubewertungseffekten teils nicht enthalten (Abwertungen liegen unter dem Betriebsergebnis); steuer 2023 negativ (Steuerertrag -10.53); cash = nur liquide Mittel; debt inkl. Leasing; bb = Kauf eigener Aktien (Mitarbeiterprogramm).",
+"umsatz": [
+null,
+null,
+776.66,
+695.19,
+667.78,
+670.95,
+559.9
+],
+"ebt": [
+null,
+null,
+633.6,
+505.19,
+76.16,
+444.66,
+489.89
+],
+"jahresueberschuss": [
+null,
+null,
+498.89,
+404.43,
+236.02,
+360.25,
+382.47
+],
+"dividendenausschuettung": [
+null,
+null,
+254.5,
+256.98,
+260.79,
+260.84,
+276.8
+],
+"eigenkapital": [
+null,
+null,
+6410,
+6569,
+6537,
+6678,
+7067
+],
+"eps": [
+null,
+null,
+6.17,
+4.97,
+2.95,
+4.52,
+4.79
+],
+"dividende_je_aktie": [
+null,
+null,
+3.35,
+3.4,
+3.4,
+3.45,
+3.5
+],
+"aktien_mio": [
+null,
+null,
+75.97,
+76.7,
+76.72,
+77.31,
+80.23
+],
+"eigenkapitalrendite_pct": [
+null,
+null,
+7.99,
+6.12,
+1.32,
+5.45,
+5.56
+]
+},
+"PSPN.SW": {
+"name": "PSP Swiss Property",
+"isin": "CH0018294154",
+"waehrung": "CHF",
+"hinweis": "Berichtswaehrung CHF (stockanalysis.com), 2019/2020 nicht verfuegbar (null). Immobilienfirma: Umsatz = Gesamtertrag (Mieterertraege 2021-25: 309.64, 316.23, 331.91, 349.98, 349.23; Rest v.a. Verkaufserloese/Nebenertraege). EBT und Jahresueberschuss enthalten Neubewertungen (2021: +465, 2023: -161, 2025: +231 Mio.). dividendenausschuettung = gezahlte Dividenden laut Cashflow. ROE laut stockanalysis. Zusatz: capex = null (Zukaeufe von Renditeliegenschaften 2021-25: 158.16, 281.94, 357.22, 150.97, 67.13; Verkaeufe 51.89, 58.86, 3.00, 112.43, 22.77); da ohne Aussagekraft (Immobilien werden neubewertet); brutto = null; steuer 2023 negativ (Steuerertrag -94.34); cash = nur liquide Mittel; debt inkl. Leasing; bb = Kauf eigener Aktien.",
+"umsatz": [
+null,
+null,
+377.73,
+413.89,
+371.98,
+357.06,
+351.05
+],
+"ebt": [
+null,
+null,
+739.57,
+404.22,
+113.26,
+453.35,
+503.97
+],
+"jahresueberschuss": [
+null,
+null,
+595.02,
+329.96,
+207.6,
+374.95,
+408.47
+],
+"dividendenausschuettung": [
+null,
+null,
+167.4,
+171.99,
+174.28,
+176.57,
+178.87
+],
+"eigenkapital": [
+null,
+null,
+5019,
+5198,
+5221,
+5411,
+5645
+],
+"eps": [
+null,
+null,
+12.97,
+7.19,
+4.53,
+8.17,
+8.91
+],
+"dividende_je_aktie": [
+null,
+null,
+3.75,
+3.8,
+3.85,
+3.9,
+3.95
+],
+"aktien_mio": [
+null,
+null,
+45.87,
+45.87,
+45.87,
+45.87,
+45.87
+],
+"eigenkapitalrendite_pct": [
+null,
+null,
+12.4,
+6.46,
+3.98,
+7.05,
+7.39
+]
+},
+"SUN.SW": {
+"name": "Sulzer",
+"isin": "CH0038388911",
+"waehrung": "CHF",
+"hinweis": "Berichtswaehrung CHF (stockanalysis.com), 2019/2020 nicht verfuegbar (null). 2021: Jahresueberschuss 1417 und EPS 41.27 enthalten 1278 Mio. Gewinn aus aufgegebenem Geschaeftsbereich (Abspaltung medmix), Umsatz/EBT 2021 nur fortgefuehrte Geschaefte; OCF 2021 inkl. aufgegebene Bereiche nicht sicher. Eigenkapital = Anteil der Aktionaere (ohne Minderheiten). dividendenausschuettung = gezahlte Dividenden laut Cashflow; 2025: 264.6 Mio. (ca. 7.85 je Aktie) liegt deutlich ueber der ordentlichen Dividende (4.25), vermutlich Sonderausschuettung, nicht geprueft. EPS verwaessert. Kein Aktiensplit. ROE laut stockanalysis. capex = Sachanlagen + immaterielle Werte; da = Abschreibungen + sonstige Amortisation; cash = liquide Mittel + kurzfristige Anlagen; debt inkl. Leasing.",
+"umsatz": [
+null,
+null,
+3155,
+3180,
+3282,
+3531,
+3555
+],
+"ebt": [
+null,
+null,
+197.8,
+107,
+304.2,
+353.6,
+387.1
+],
+"jahresueberschuss": [
+null,
+null,
+1417,
+28.6,
+229.1,
+261.9,
+292.8
+],
+"dividendenausschuettung": [
+null,
+null,
+91.9,
+80.6,
+80.9,
+86.5,
+264.6
+],
+"eigenkapital": [
+null,
+null,
+1274,
+1024,
+1095,
+1224,
+1293
+],
+"eps": [
+null,
+null,
+41.27,
+0.83,
+6.67,
+7.64,
+8.57
+],
+"dividende_je_aktie": [
+null,
+null,
+3.5,
+3.5,
+3.75,
+4.25,
+4.75
+],
+"aktien_mio": [
+null,
+null,
+33.73,
+33.74,
+33.81,
+33.75,
+33.74
+],
+"eigenkapitalrendite_pct": [
+null,
+null,
+10.43,
+2.43,
+21.66,
+22.75,
+23.2
+]
+},
+"TECN.SW": {
+"name": "Tecan",
+"isin": "CH0012100191",
+"waehrung": "CHF",
+"hinweis": "Berichtswaehrung CHF (stockanalysis.com), 2019/2020 nicht verfuegbar (null). Umsatz 2022/2023 von stockanalysis auf Mrd. gerundet (1,144 / 1,074). 2025: Verlust wegen Restrukturierung/Wertberichtigungen von 139.5 Mio. (v.a. Goodwill, 2025 Goodwill 553 nach 761). 2021: Zukaeufe (Paragon etc.) 817 Mio. und Kapitalerhoehung 362 Mio. dividendenausschuettung = gezahlte Dividenden laut Cashflow. EPS verwaessert. ROE laut stockanalysis. capex = Sachanlagen + immaterielle Werte; da = Abschreibungen + sonstige Amortisation; cash = liquide Mittel + kurzfristige Anlagen; debt inkl. Leasing.",
+"umsatz": [
+null,
+null,
+946.62,
+1144,
+1074,
+934.28,
+882.48
+],
+"ebt": [
+null,
+null,
+137.93,
+142.49,
+133.81,
+78.28,
+-101.26
+],
+"jahresueberschuss": [
+null,
+null,
+121.66,
+121.13,
+132.08,
+67.66,
+-110.65
+],
+"dividendenausschuettung": [
+null,
+null,
+27.61,
+35.6,
+37.02,
+38.32,
+38.03
+],
+"eigenkapital": [
+null,
+null,
+1225,
+1358,
+1349,
+1435,
+1151
+],
+"eps": [
+null,
+null,
+9.88,
+9.47,
+10.3,
+5.29,
+-8.74
+],
+"dividende_je_aktie": [
+null,
+null,
+2.8,
+2.9,
+3.0,
+3.0,
+3.0
+],
+"aktien_mio": [
+null,
+null,
+12.68,
+12.73,
+12.78,
+12.73,
+12.53
+],
+"eigenkapitalrendite_pct": [
+null,
+null,
+12.42,
+9.38,
+9.76,
+4.86,
+-8.55
+]
+},
+"CLN.SW": {
+"name": "Clariant",
+"isin": "CH0012142631",
+"waehrung": "CHF",
+"hinweis": "Berichtswaehrung CHF (stockanalysis.com, auf ganze Mio. gerundet), 2019/2020 nicht verfuegbar (null). Umsatz/Ergebnis 2021-2022 nach heutiger Darstellung (aufgegebene Geschaefte wie Pigmente/Masterbatches separat; Jahresueberschuss enthaelt Ergebnis aus aufgegebenen Bereichen: 2021 +81, 2022 +217, 2023 -34). 2022 EBT nur 6 wegen sonstiger Sondereffekte -567, 2025 EBT 46 wegen Verlust aus Vermoegensverkauf -230 und Sondereffekten -85. Eigenkapital = Anteil der Aktionaere (ohne Minderheiten). dividendenausschuettung = gezahlte Dividenden laut Cashflow (Ausschuettung teils als Nennwertrueckzahlung). EPS verwaessert. ROE laut stockanalysis. capex = Sachanlagen + immaterielle Werte; da = Abschreibungen (gesamt); cash = liquide Mittel + kurzfristige Anlagen; debt inkl. Leasing und kurzfristiger Schulden. 2024: Zukaeufe 729 (Lucas Meyer) und hoehere Schulden.",
+"umsatz": [
+null,
+null,
+4372,
+5198,
+4377,
+4152,
+3915
+],
+"ebt": [
+null,
+null,
+394,
+6,
+218,
+370,
+46
+],
+"jahresueberschuss": [
+null,
+null,
+344,
+84,
+134,
+244,
+-75
+],
+"dividendenausschuettung": [
+null,
+null,
+230,
+132,
+138,
+139,
+138
+],
+"eigenkapital": [
+null,
+null,
+2358,
+2341,
+2018,
+2335,
+2024
+],
+"eps": [
+null,
+null,
+1.04,
+0.26,
+0.41,
+0.74,
+-0.23
+],
+"dividende_je_aktie": [
+null,
+null,
+0.4,
+0.42,
+0.42,
+0.42,
+0.42
+],
+"aktien_mio": [
+null,
+null,
+329.12,
+329.02,
+328.85,
+328.29,
+328.88
+],
+"eigenkapitalrendite_pct": [
+null,
+null,
+11.77,
+-3.99,
+9.08,
+11.95,
+-1.75
+]
+},
+"DSFIR.SW": {
+"name": "DSM-Firmenich",
+"isin": "CH1216478797",
+"waehrung": "EUR",
+"hinweis": "Berichtswaehrung EUR (stockanalysis.com, Notierung Euronext Amsterdam; Dividende wird in EUR gezahlt). Fusion DSM + Firmenich Mai 2023: 2021 und 2022 zeigen nur Alt-DSM (nicht vergleichbar) und sind daher null. Werte 2023-2025 sind die von stockanalysis ausgewiesenen fortgefuehrten Geschaefte; Tierernaehrung (ANH) und weitere Bereiche sind als aufgegebene Geschaefte abgetrennt (Ergebnis aus aufgegebenen Bereichen 2023 +2789, 2024 -79, 2025 -1381), die Jahre sind dadurch nicht sauber untereinander vergleichbar (Umsatz 2023 10627 bei Konsolidierung ab Mai 2023, nicht auf Gesamtjahr hochgerechnet). Jahresueberschuss = Anteil der Aktionaere (Net Income, vor Abzug Vorzugsdividenden/Sonstiges). EBT = Ergebnis fortgefuehrter Geschaefte vor Steuern. EPS verwaessert (laut stockanalysis auf Net Income to Common). Eigenkapital = Anteil der Aktionaere. ROE: stockanalysis-Wert fuer 2025 (1.66 %) nicht plausibel zum Verlust, daher null. dividendenausschuettung = gezahlte Dividenden laut Cashflow. aktien_mio = Aktien am Jahresende. Zusatz: Cashflow-Posten (OCF, capex, da) koennen aufgegebene Geschaefte enthalten; capex = Sachanlagen + immaterielle Werte; da = Abschreibungen laut Cashflow; cash = liquide Mittel + kurzfristige Anlagen; debt inkl. Leasing; bb 2025 inkl. grosser Rueckkaeufe nach Verkaeufen.",
+"umsatz": [
+null,
+null,
+null,
+null,
+10627,
+9054,
+9034
+],
+"ebt": [
+null,
+null,
+null,
+null,
+-654,
+423,
+460
+],
+"jahresueberschuss": [
+null,
+null,
+null,
+null,
+2137,
+250,
+-1081
+],
+"dividendenausschuettung": [
+null,
+null,
+null,
+null,
+157,
+660,
+659
+],
+"eigenkapital": [
+null,
+null,
+null,
+null,
+22908,
+22511,
+18244
+],
+"eps": [
+null,
+null,
+null,
+null,
+9.14,
+0.84,
+-4.27
+],
+"dividende_je_aktie": [
+null,
+null,
+null,
+null,
+2.5,
+2.5,
+2.5
+],
+"aktien_mio": [
+null,
+null,
+null,
+null,
+265.28,
+264.27,
+251.53
+],
+"eigenkapitalrendite_pct": [
+null,
+null,
+null,
+null,
+null,
+null,
+null
+]
+},
+"BEAN.SW": {
+"name": "Belimo",
+"isin": "CH1101098163",
+"waehrung": "CHF",
+"hinweis": "Berichtswaehrung CHF (stockanalysis.com), 2019/2020 nicht verfuegbar (null). Aktiensplit 2021 (Belimo, ca. 12.3 Mio. Aktien): alle Werte 2021-2025 je Aktie und Aktienzahl nach Split konsistent; Vorjahre 2019/2020 waeren nur vor Split verfuegbar, daher null. Dividende je Aktie = Dividende fuer das jeweilige Geschaeftsjahr (Auszahlung im Folgejahr); dividendenausschuettung = im Jahr gezahlte Dividende laut Cashflow. EPS verwaessert. ROE laut stockanalysis. capex = Sachanlagen + immaterielle Werte; da = Abschreibungen + sonstige Amortisation; cash = liquide Mittel + kurzfristige Anlagen; debt inkl. Leasing (sehr gering).",
+"umsatz": [
+null,
+null,
+765.34,
+846.9,
+858.79,
+943.86,
+1121
+],
+"ebt": [
+null,
+null,
+143.38,
+147.51,
+142.41,
+176.15,
+223.19
+],
+"jahresueberschuss": [
+null,
+null,
+115.67,
+122.8,
+136.96,
+146.78,
+181.63
+],
+"dividendenausschuettung": [
+null,
+null,
+92.24,
+104.53,
+104.54,
+104.54,
+116.85
+],
+"eigenkapital": [
+null,
+null,
+511.3,
+521.83,
+530.63,
+580.74,
+621.83
+],
+"eps": [
+null,
+null,
+9.41,
+9.99,
+11.14,
+11.94,
+14.77
+],
+"dividende_je_aktie": [
+null,
+null,
+8.5,
+8.5,
+8.5,
+9.5,
+10.0
+],
+"aktien_mio": [
+null,
+null,
+12.3,
+12.3,
+12.3,
+12.3,
+12.3
+],
+"eigenkapitalrendite_pct": [
+null,
+null,
+23.09,
+23.75,
+26.01,
+26.41,
+30.21
+]
+},
+"GALE.SW": {
+"name": "Galenica",
+"isin": "CH0360674466",
+"waehrung": "CHF",
+"hinweis": "Berichtswaehrung CHF (stockanalysis.com), 2019/2020 nicht verfuegbar (null). Jahresueberschuss 2023 enthaelt 120.45 Mio. aus aufgegebenem Geschaeftsbereich (Verkauf Alloga/Vifor-Anteil bzw. Abgang), 2022 +8.5. Eigenkapital = Anteil der Aktionaere (ohne Minderheiten). dividendenausschuettung = gezahlte Dividende im Jahr laut Cashflow; Dividende je Aktie = fuer das Geschaeftsjahr (Auszahlung im Folgejahr). EPS verwaessert. ROE laut stockanalysis. capex = Sachanlagen + immaterielle Werte; da = Abschreibungen + sonstige Amortisation; cash = liquide Mittel; debt inkl. Leasing (ca. 244 Mio. Leasing 2025). 2025: Akquisitionen 275 Mio. (Schuldenanstieg).",
+"umsatz": [
+null,
+null,
+3841,
+3595,
+3756,
+3931,
+4146
+],
+"ebt": [
+null,
+null,
+203.03,
+189.61,
+194.95,
+214.6,
+222.37
+],
+"jahresueberschuss": [
+null,
+null,
+167.68,
+165.13,
+285.37,
+182.95,
+181.1
+],
+"dividendenausschuettung": [
+null,
+null,
+89.2,
+104.44,
+110.27,
+110.17,
+115.11
+],
+"eigenkapital": [
+null,
+null,
+1228,
+1246,
+1471,
+1549,
+1482
+],
+"eps": [
+null,
+null,
+3.38,
+3.31,
+5.72,
+3.67,
+3.63
+],
+"dividende_je_aktie": [
+null,
+null,
+2.1,
+2.2,
+2.2,
+2.3,
+2.5
+],
+"aktien_mio": [
+null,
+null,
+49.64,
+49.82,
+49.83,
+49.83,
+49.82
+],
+"eigenkapitalrendite_pct": [
+null,
+null,
+14.71,
+12.67,
+12.16,
+12.14,
+12.11
+]
+},
+"GF.SW": {
+"name": "Georg Fischer",
+"isin": "CH0001752309",
+"waehrung": "CHF",
+"hinweis": "Berichtswaehrung CHF (stockanalysis.com, ganze Mio.), 2019/2020 nicht verfuegbar (null). Achtung Vergleichbarkeit: 2023-2025 ohne das 2025 verkaufte Geschaeft Machining Solutions (als aufgegebener Bereich: Ergebnis 2023 +52, 2024 +58, 2025 -92), Umsatz/EBT 2021-2022 enthalten es vermutlich noch (Umsatz-Bruch 2022 auf 2023). Uponor-Uebernahme 2023 (Zukaeufe 1920 Mio., Schulden steigen auf ca. 2.4 Mrd.). Eigenkapital 2023-2025 von stockanalysis (-44 / 109 / -9) und daraus ROE (22/168/190 %) nicht plausibel, daher null; 2021-2022 plausibel. dividendenausschuettung = gezahlte Dividenden laut Cashflow; Dividende je Aktie = fuer das Geschaeftsjahr. EPS verwaessert. capex = Sachanlagen + immaterielle Werte; da = Abschreibungen; cash = liquide Mittel + kurzfristige Anlagen; debt inkl. Leasing. Cashflow 2025 inkl. Verkaufserloes (Divestitures 582 Mio.).",
+"umsatz": [
+null,
+null,
+3744,
+4020,
+3139,
+3050,
+2998
+],
+"ebt": [
+null,
+null,
+252,
+354,
+255,
+224,
+264
+],
+"jahresueberschuss": [
+null,
+null,
+214,
+276,
+235,
+214,
+103
+],
+"dividendenausschuettung": [
+null,
+null,
+62,
+82,
+107,
+107,
+111
+],
+"eigenkapital": [
+null,
+null,
+1472,
+1602,
+null,
+null,
+null
+],
+"eps": [
+null,
+null,
+2.61,
+3.37,
+2.87,
+2.6,
+1.26
+],
+"dividende_je_aktie": [
+null,
+null,
+1.0,
+1.3,
+1.3,
+1.35,
+1.35
+],
+"aktien_mio": [
+null,
+null,
+81.83,
+81.89,
+81.9,
+81.94,
+81.95
+],
+"eigenkapitalrendite_pct": [
+null,
+null,
+13.79,
+17.77,
+null,
+null,
+null
+]
+},
+"AVOL.SW": {
+"name": "Avolta",
+"isin": "CH0023405456",
+"waehrung": "CHF",
+"hinweis": "Berichtswaehrung CHF (stockanalysis.com), 2019/2020 nicht verfuegbar (null). Fusion Dufry/Autogrill Ende 2023 (Avolta): Umsatz, Schulden und Aktienzahl 2021-2022 (nur Dufry) nicht mit 2023-2025 vergleichbar. 2021 durch Corona Verlust. Jahresueberschuss = Anteil der Aktionaere (nach Minderheiten, 2025: 140 Mio. Minderheiten). Eigenkapital = Anteil der Aktionaere. Dividende je Aktie: 2021/2022 keine Dividende (0), 2023: 0.70, 2024: 1.00, 2025: 1.15 (jeweils fuer das Geschaeftsjahr, Auszahlung im Folgejahr). dividendenausschuettung = gezahlte Dividende im Jahr laut Cashflow (2021-2023: keine). EPS verwaessert. ROE laut stockanalysis. Zusatz: Operativer Cashflow ist vor Leasingzahlungen (IFRS 16, Leasingtilgung steht in 'Other financing', ca. 369 Mio. 2025), FCF daher nicht direkt vergleichbar; da enthaelt Abschreibung auf Nutzungsrechte (Leasing); debt inkl. Leasingverbindlichkeiten (2025: ca. 8.2 Mrd. Leasing); capex = Sachanlagen + immaterielle Werte; cash = liquide Mittel + kurzfristige Anlagen.",
+"umsatz": [
+null,
+null,
+3915,
+6878,
+12790,
+13725,
+13983
+],
+"ebt": [
+null,
+null,
+-407.8,
+196.8,
+298,
+347,
+469
+],
+"jahresueberschuss": [
+null,
+null,
+-385.4,
+58.2,
+87,
+103,
+199
+],
+"dividendenausschuettung": [
+null,
+null,
+0,
+0,
+0,
+104,
+143
+],
+"eigenkapital": [
+null,
+null,
+956.6,
+893,
+2361,
+2349,
+1906
+],
+"eps": [
+null,
+null,
+-4.39,
+0.62,
+0.63,
+0.68,
+1.36
+],
+"dividende_je_aktie": [
+null,
+null,
+0,
+0,
+0.7,
+1.0,
+1.15
+],
+"aktien_mio": [
+null,
+null,
+90.79,
+90.19,
+150.4,
+145.13,
+141.51
+],
+"eigenkapitalrendite_pct": [
+null,
+null,
+-37.41,
+12.06,
+12.48,
+10.37,
+14.83
+]
+},
+"SIGN.SW": {
+"name": "SIG Group",
+"isin": "CH0435377954",
+"waehrung": "EUR",
+"hinweis": "Berichtswaehrung EUR (stockanalysis.com; SIG berichtet in Euro, Aktie und Dividende in CHF). 2019/2020 nicht verfuegbar (null). Dividende je Aktie: von stockanalysis in EUR umgerechnete Werte (tatsaechlich in CHF ausgeschuettet, aus Kapitaleinlagereserven); 2025 nicht verfuegbar (null). dividendenausschuettung = gezahlte Dividenden laut Cashflow in EUR. 2025: Verlust wegen Wertberichtigungen von 272 Mio. EUR (Asset Writedown), 2022 Zukauf Scholle IPN (700 Mio.) und Kapitalerhoehung (Aktienzahl 337 -> 382 Mio.). Kein Aktiensplit. Eigenkapital = gesamt (Minderheiten unwesentlich). EPS verwaessert. ROE laut stockanalysis. capex = Sachanlagen (laut Cashflow; immaterielle nicht separat); da = Abschreibungen + sonstige Amortisation; cash = liquide Mittel; debt inkl. Leasing.",
+"umsatz": [
+null,
+null,
+2062,
+2780,
+3230,
+3329,
+3249
+],
+"ebt": [
+null,
+null,
+224.4,
+88.8,
+324,
+281,
+-46.8
+],
+"jahresueberschuss": [
+null,
+null,
+172.1,
+37.8,
+243.2,
+194.5,
+-87
+],
+"dividendenausschuettung": [
+null,
+null,
+128.1,
+147.9,
+180.2,
+187.8,
+202.7
+],
+"eigenkapital": [
+null,
+null,
+2328,
+3055,
+3097,
+3132,
+2658
+],
+"eps": [
+null,
+null,
+0.51,
+0.1,
+0.64,
+0.51,
+-0.23
+],
+"dividende_je_aktie": [
+null,
+null,
+0.434,
+0.476,
+0.516,
+0.522,
+null
+],
+"aktien_mio": [
+null,
+null,
+337.52,
+382.25,
+382.23,
+382.23,
+382.1
+],
+"eigenkapitalrendite_pct": [
+null,
+null,
+8.31,
+1.4,
+7.91,
+6.25,
+-3.0
+]
+},
+"BANB.SW": {
+"name": "Bachem",
+"isin": "CH1176493729",
+"waehrung": "CHF",
+"hinweis": "Berichtswaehrung CHF (stockanalysis.com), 2019/2020 nicht verfuegbar (null). Aktiensplit 2021 (Bachem, 1:10, rund 74-75 Mio. Aktien): Werte 2021-2025 je Aktie und Aktienzahl nach Split konsistent; Vorjahre waeren nur vor Split verfuegbar, daher null. 2021 Kapitalerhoehung 572 Mio., 2023 108 Mio. dividendenausschuettung = gezahlte Dividenden laut Cashflow (2025: 30.7 Mio. auffaellig niedrig gegenueber Dividende 0.85 x ca. 75 Mio. Aktien, nicht geprueft); Dividende je Aktie = fuer das Geschaeftsjahr. EPS verwaessert. ROE laut stockanalysis. Hoher Investitionszyklus: FCF negativ, Cash 2025 nur noch 31 Mio. capex = Sachanlagen + immaterielle Werte; da = Abschreibungen + sonstige Amortisation; cash = liquide Mittel + kurzfristige Anlagen; debt inkl. Leasing.",
+"umsatz": [
+null,
+null,
+503.23,
+531.74,
+577.32,
+605.26,
+695.07
+],
+"ebt": [
+null,
+null,
+131.39,
+112.07,
+124.21,
+135.21,
+156.4
+],
+"jahresueberschuss": [
+null,
+null,
+114.68,
+100.68,
+111.86,
+120.25,
+148.79
+],
+"dividendenausschuettung": [
+null,
+null,
+20.49,
+51.62,
+56.24,
+59.99,
+30.73
+],
+"eigenkapital": [
+null,
+null,
+1121,
+1170,
+1321,
+1391,
+1458
+],
+"eps": [
+null,
+null,
+1.62,
+1.37,
+1.5,
+1.6,
+1.98
+],
+"dividende_je_aktie": [
+null,
+null,
+0.7,
+0.75,
+0.8,
+0.85,
+0.9
+],
+"aktien_mio": [
+null,
+null,
+73.73,
+73.72,
+74.97,
+74.97,
+74.94
+],
+"eigenkapitalrendite_pct": [
+null,
+null,
+14.37,
+8.79,
+8.98,
+8.87,
+10.44
+]
+},
+"LAND.SW": {
+"name": "Landis+Gyr",
+"isin": "CH0371153492",
+"waehrung": "USD",
+"hinweis": "Berichtswaehrung USD (stockanalysis.com); Aktie in CHF notiert, Dividende in CHF, hier von stockanalysis in USD umgerechnet. ACHTUNG Geschaeftsjahr April-Maerz: Spalte 2021 = GJ April 2021 bis Maerz 2022, 2022 = GJ bis Maerz 2023, 2023 = bis Maerz 2024, 2024 = bis Maerz 2025, 2025 = bis Maerz 2026 (Zuordnung nach Startjahr, wie Landis+Gyr selbst). 2019/2020 nicht verfuegbar (null). Nicht vergleichbar: ab GJ 2024 (bis Maerz 2025) ist das EMEA-Geschaeft als aufgegebener Bereich abgetrennt (Umsatz 1120/1166 statt ca. 1.9 Mrd.; Verlust aus aufgegebenen Bereichen -187 bzw. -208), Vorjahre inkl. EMEA. 2022 (GJ bis Maerz 2023) Jahresueberschuss enthaelt Beteiligungsverkauf (ca. +223 Mio.). Bilanzdaten fuer GJ bis Maerz 2026 (Spalte 2025) bei stockanalysis nicht verfuegbar: Eigenkapital, Aktienzahl, cash, debt = null. ROE von stockanalysis fuer 2024/2025 nicht plausibel (Verlust) = null. Jahresueberschuss = Net Income (Anteil Aktionaere vor Vorzugsdividenden); EBT = Ergebnis fortgefuehrter Geschaefte. dividendenausschuettung = gezahlte Dividende laut Cashflow. EPS verwaessert. capex = Sachanlagen + immaterielle Werte; da = Abschreibungen; Cashflow-Posten insgesamt (evtl. inkl. aufgegebene Bereiche); cash = liquide Mittel; debt inkl. Leasing.",
+"umsatz": [
+null,
+null,
+1464,
+1681,
+1944,
+1120,
+1166
+],
+"ebt": [
+null,
+null,
+72.44,
+288,
+134.22,
+46.77,
+67.39
+],
+"jahresueberschuss": [
+null,
+null,
+79.4,
+207.93,
+109.98,
+-150.46,
+-168.9
+],
+"dividendenausschuettung": [
+null,
+null,
+65.91,
+64.7,
+70.78,
+72.47,
+41.16
+],
+"eigenkapital": [
+null,
+null,
+1384,
+1522,
+1545,
+1315,
+null
+],
+"eps": [
+null,
+null,
+2.59,
+7.32,
+3.78,
+-5.21,
+-5.88
+],
+"dividende_je_aktie": [
+null,
+null,
+2.335,
+2.411,
+2.494,
+1.301,
+1.496
+],
+"aktien_mio": [
+null,
+null,
+28.83,
+28.85,
+28.85,
+28.82,
+null
+],
+"eigenkapitalrendite_pct": [
+null,
+null,
+5.73,
+14.15,
+7.5,
+null,
+null
+]
 }
 }
 }
