@@ -886,11 +886,11 @@ def build_index(posts):
     o = head(depth, title, desc, url, "website", default_img, extra) + nav_html(depth, "news") + "</nav></div></header>\n"
     o += f'<script src="{pre}assets/navigation.js"></script>\n<script src="{pre}assets/logos.js"></script>\n<main class="wrap">\n'
     o += f'<nav class="crumbs" aria-label="Brotkrumen"><a href="{pre}">Start</a> › <span aria-current="page">News</span></nav>\n<h1>News</h1>\n'
-    # Aufmacher: Standard ist der neueste Artikel; mit "aufmacher: ja" im Kopfbereich wird ein juengerer Artikel (max. 3 Tage hinter dem neuesten) zum Hauptthema
+    # Aufmacher: Standard ist der neueste Artikel; mit "aufmacher: ja" im Kopfbereich wird ein Artikel vom selben Tag wie der neueste zum Hauptthema (aeltere Artikel nie)
     longp = [x for x in posts if x.get("typ") != "kurz"] or posts
     hero = longp[0]
     for x in longp:
-        if x.get("aufmacher", "").lower() in ("ja", "true", "1", "yes") and (posts[0]["dt"] - x["dt"]).days <= 3:
+        if x.get("aufmacher", "").lower() in ("ja", "true", "1", "yes") and x["dt"].date() == posts[0]["dt"].date():
             hero = x; break
     kurz_posts = [x for x in posts if x.get("typ") == "kurz"]
     rest = [x for x in posts if x is not hero and x.get("typ") != "kurz"]

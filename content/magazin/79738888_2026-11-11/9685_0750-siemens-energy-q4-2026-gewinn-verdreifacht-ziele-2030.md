@@ -5,7 +5,6 @@ date: 2026-11-11 07:50
 author: "Redaktions-Team Dividenden-Rechner.de"
 author_bio: "Das Redaktions-Team von Dividenden-Rechner.de schreibt über Dividendenaktien, Kennzahlen und Steuerthemen für Privatanleger. Die Rechner und Auswertungen auf der Seite entstehen im eigenen Haus."
 category: Quartalszahlen
-aufmacher: ja
 story_image: assets/magazin/siemens-energy-q4-2026-konzern.jpg
 story_chart: assets/magazin/siemens-energy-q4-2026-kurs.png
 story_portrait: medien/ceo/enr-de-bruch.png
