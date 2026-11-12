@@ -596,6 +596,14 @@ def share_html(p, url, img):
         story["portrait"] = "../../" + p["story_portrait"].lstrip("/")
         story["quote"] = p.get("story_quote", ""); story["quote_by"] = p.get("story_quote_by", "")
         story["portrait_side"] = p.get("story_portrait_seite", ""); story["portrait_cut"] = p.get("story_portrait_schnitt", "")
+    if p.get("story_kz"):
+        # Kennzahlen-Block (KGV, Dividendenrendite, Ausschuettungsquote) aus data/kennzahlen.json: nur Werte, die vorhanden sind
+        try:
+            kz = json.load(open("data/kennzahlen.json", encoding="utf-8"))["werte"].get(str(p.get("logo_symbol") or ""), {})
+            de = lambda v, u="": (("%.1f" % v).replace(".", ",") + u)
+            rows = [[lab, de(kz[k], u)] for lab, k, u in (("KGV", "kgv", ""), ("Dividendenrendite", "rendite", " %"), ("Ausschüttungsquote", "ausschuettung", " %")) if isinstance(kz.get(k), (int, float))]
+            if rows: story["kz"] = {"rows": rows, "stand": "Geschäftsjahr %s, Kurs vom %s" % (kz.get("gj", ""), "%s.%s.%s" % tuple(reversed(str(kz.get("datum", "")).split("-"))) if kz.get("datum") else "")}
+        except Exception: pass
     if p.get("story_text"):
         # Fliesstext statt drei Punkten und ohne Headline (Vorlage der Redaktion, 03.11.2026)
         story["text"] = re.sub(r" (%|USD|Mrd\.|Mio\.)", "\u00a0\\1", p["story_text"].strip().replace("\\n", "\n")); story["para"] = True; story["title"] = ""

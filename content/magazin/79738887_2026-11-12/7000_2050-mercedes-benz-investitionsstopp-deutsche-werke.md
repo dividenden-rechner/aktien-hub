@@ -11,6 +11,9 @@ image: assets/magazin/mercedes-benz-prognoseanpassung-2026-foto.jpg
 image_alt: "Foto zu Mercedes-Benz Group AG: Mercedes-Benz Werk Untertürkheim, Neckarpark, Stuttgart."
 image_credit: "Foto: Julian Herzog ( Website ) / Wikimedia Commons, CC BY 4.0"
 image_source: https://commons.wikimedia.org/wiki/File:Mercedes-Benz_Werk_Untert%C3%BCrkheim_Neckarpark_Stuttgart_2015_02.jpg
+story_chart: assets/magazin/mercedes-benz-investitionsstopp-ergebnis.png
+story_kz: true
+story_text: "Mercedes stoppt alle weiteren Investitionen in deutsche Werke und prüft, welche Standorte sich noch lohnen.\nIm Streit mit dem Betriebsrat geht es um die 35-Stunden-Woche und niedrigere Arbeitskosten. Für Anleger zählt, ob die Kostensenkung die schwache Marge im Pkw-Geschäft stützt oder ein langer Arbeitskampf teuer wird.\nDazu kommen China mit minus 29 % bei den Auslieferungen und die gesenkte Prognose für 2026."
 logo_symbol: MBG.DE
 logo_domain: mercedes-benz.com
 logo_file: assets/logos/mbg-de.png

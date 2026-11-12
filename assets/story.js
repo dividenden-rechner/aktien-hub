@@ -191,6 +191,17 @@
         }
       }
     }
+    if (S.kz && S.kz.rows && S.kz.rows.length) {
+      /* Kennzahlen-Block: schlichte Tabelle, nur vorhandene Werte */
+      var ky = yy + 40; c.textBaseline = "top"; c.textAlign = "left";
+      S.kz.rows.forEach(function (r) {
+        c.strokeStyle = "#111"; c.lineWidth = 2; c.beginPath(); c.moveTo(60, ky); c.lineTo(1020, ky); c.stroke();
+        c.fillStyle = "#262626"; c.font = "400 38px " + F; c.fillText(r[0], 60, ky + 18);
+        c.fillStyle = "#111"; c.font = "700 48px " + F; c.textAlign = "right"; c.fillText(r[1], 1020, ky + 10); c.textAlign = "left"; ky += 78;
+      });
+      c.strokeStyle = "#111"; c.lineWidth = 2; c.beginPath(); c.moveTo(60, ky); c.lineTo(1020, ky); c.stroke();
+      c.fillStyle = "#666"; c.font = "400 24px " + F; c.fillText(S.kz.stand || "", 60, ky + 12); yy = ky + 40;
+    }
     if (S.chart && !S.portrait) {
       var ch = await load(S.chart);
       if (ch) { var top = yy + 30, bot = 1835, r2 = Math.min(960 / ch.width, (bot - top) / ch.height), cw = ch.width * r2, chh = ch.height * r2; c.drawImage(ch, 60 + (960 - cw) / 2, top, cw, chh); }
