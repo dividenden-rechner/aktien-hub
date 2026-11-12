@@ -4,6 +4,21 @@
 "name": "ARES CAPITAL CORP",
 "quartale": [
 {
+"periode_ende": "2025-12-31",
+"nav_je_aktie": 19.94,
+"nii_je_aktie": 0.52,
+"beleg_nav": "Net asset value per share $ 19.94",
+"dividende_quartal": "Q1 2026",
+"dividende_regulaer": 0.48,
+"dividende_zusatz": 0,
+"nii_bereinigt_je_aktie": 0.5,
+"non_accrual_fv_proz": 1.2,
+"portfolio_mio": 29485,
+"verschuldung_netto": 1.08,
+"meldung": "2026-02-04",
+"quelle": "https://www.sec.gov/Archives/edgar/data/1287750/000128775026000004/arccq4-2025exhibit991.htm"
+},
+{
 "periode_ende": "2026-03-31",
 "nav_je_aktie": 19.59,
 "nii_je_aktie": 0.55,
@@ -54,6 +69,36 @@
 "name": "Blue Owl Capital Corp",
 "quartale": [
 {
+"periode_ende": "2025-09-30",
+"nav_je_aktie": 14.89,
+"nii_je_aktie": 0.37,
+"beleg_nav": "Net asset value (“NAV”) per share of $14.89, as compared with $15.03 as of June 30, 2025.",
+"dividende_quartal": "Q4 2025",
+"dividende_regulaer": 0.37,
+"dividende_zusatz": 0,
+"nii_bereinigt_je_aktie": 0.36,
+"non_accrual_fv_proz": 1.3,
+"portfolio_mio": 17136.548,
+"verschuldung_netto": 1.22,
+"meldung": "2025-11-05",
+"quelle": "https://www.sec.gov/Archives/edgar/data/1655888/000119312525267192/d83755dex991.htm"
+},
+{
+"periode_ende": "2025-12-31",
+"nav_je_aktie": 14.81,
+"nii_je_aktie": 0.38,
+"beleg_nav": "Net asset value (\"NAV\") per share of $14.81, as compared with $14.89 as of September 30, 2025.",
+"dividende_quartal": "Q1 2026",
+"dividende_regulaer": 0.37,
+"dividende_zusatz": 0,
+"nii_bereinigt_je_aktie": 0.36,
+"non_accrual_fv_proz": 1.1,
+"portfolio_mio": 16470.893,
+"verschuldung_netto": 1.19,
+"meldung": "2026-02-18",
+"quelle": "https://www.sec.gov/Archives/edgar/data/1655888/000165588826000009/exhibit991-obdcxpressrelea.htm"
+},
+{
 "periode_ende": "2026-03-31",
 "nav_je_aktie": 14.41,
 "nii_je_aktie": 0.32,
@@ -94,6 +139,36 @@
 "BXSL": {
 "name": "Blackstone Secured Lending Fund",
 "quartale": [
+{
+"periode_ende": "2025-09-30",
+"nav_je_aktie": 27.15,
+"nii_je_aktie": 0.82,
+"beleg_nav": "Net asset value of approximately $ 6.3 billion, or $ 27.15 per share at quarter-end",
+"dividende_quartal": "Q3 2025",
+"dividende_regulaer": 0.77,
+"dividende_zusatz": 0,
+"nii_bereinigt_je_aktie": 0,
+"non_accrual_fv_proz": 0.1,
+"portfolio_mio": 13810,
+"verschuldung_netto": 1.22,
+"meldung": "2025-11-10",
+"quelle": "https://www.sec.gov/Archives/edgar/data/1736035/000121390025107817/ea0264431-01_ex991.htm"
+},
+{
+"periode_ende": "2025-12-31",
+"nav_je_aktie": 26.92,
+"nii_je_aktie": 0.8,
+"beleg_nav": "Net asset value of approximately $6.2 billion, or $26.92 per share at quarter-end",
+"dividende_quartal": "Q1 2026",
+"dividende_regulaer": 0.77,
+"dividende_zusatz": 0,
+"nii_bereinigt_je_aktie": 0,
+"non_accrual_fv_proz": 0.5,
+"portfolio_mio": 14200,
+"verschuldung_netto": 0,
+"meldung": "2026-02-25",
+"quelle": "https://www.sec.gov/Archives/edgar/data/1736035/000121390026020083/ea0277994-01_ex991.htm"
+},
 {
 "periode_ende": "2026-03-31",
 "nav_je_aktie": 26.26,
@@ -195,6 +270,36 @@
 "name": "FS KKR Capital Corp",
 "quartale": [
 {
+"periode_ende": "2025-09-30",
+"nav_je_aktie": 21.99,
+"nii_je_aktie": 0.57,
+"beleg_nav": "Net asset value of $21.99 per share, compared to $21.93 per share as of June 30, 2025",
+"dividende_quartal": "Q4 2025",
+"dividende_regulaer": 0.64,
+"dividende_zusatz": 0.06,
+"nii_bereinigt_je_aktie": 0.57,
+"non_accrual_fv_proz": 2.9,
+"portfolio_mio": 13415,
+"verschuldung_netto": 1.16,
+"meldung": "2025-11-05",
+"quelle": "https://www.sec.gov/Archives/edgar/data/1422183/000110465925107029/tm2530215d1_ex99-1.htm"
+},
+{
+"periode_ende": "2025-12-31",
+"nav_je_aktie": 20.89,
+"nii_je_aktie": 0.48,
+"beleg_nav": "Net asset value of $20.89 per share, compared to $21.99 per share as of September 30, 2025 and $23.64 per share as of December 31, 2024",
+"dividende_quartal": "Q1 2026",
+"dividende_regulaer": 0.45,
+"dividende_zusatz": 0.03,
+"nii_bereinigt_je_aktie": 0.52,
+"non_accrual_fv_proz": 3.4,
+"portfolio_mio": 13009,
+"verschuldung_netto": 1.22,
+"meldung": "2026-02-25",
+"quelle": "https://www.sec.gov/Archives/edgar/data/1422183/000110465926019719/tm267104d1_ex99-1.htm"
+},
+{
 "periode_ende": "2026-03-31",
 "nav_je_aktie": 18.83,
 "nii_je_aktie": 0.42,
@@ -244,6 +349,36 @@
 "TSLX": {
 "name": "Sixth Street Specialty Lending, Inc.",
 "quartale": [
+{
+"periode_ende": "2025-09-30",
+"nav_je_aktie": 17.14,
+"nii_je_aktie": 0.54,
+"beleg_nav": "Reported net asset value (NAV) per share was $17.14 at September 30, 2025",
+"dividende_quartal": "Q4 2025",
+"dividende_regulaer": 0.46,
+"dividende_zusatz": 0.03,
+"nii_bereinigt_je_aktie": 0.53,
+"non_accrual_fv_proz": 0.6,
+"portfolio_mio": 3376.3,
+"verschuldung_netto": 1.15,
+"meldung": "2025-11-04",
+"quelle": "https://www.sec.gov/Archives/edgar/data/1508655/000119312525264683/tslx-ex99_1.htm"
+},
+{
+"periode_ende": "2025-12-31",
+"nav_je_aktie": 16.98,
+"nii_je_aktie": 0.53,
+"beleg_nav": "Reported net asset value (NAV) per share was $16.98 at December 31, 2025 as compared to $17.14 at September 30, 2025.",
+"dividende_quartal": "Q1 2026",
+"dividende_regulaer": 0.46,
+"dividende_zusatz": 0.01,
+"nii_bereinigt_je_aktie": 0.52,
+"non_accrual_fv_proz": 0.6,
+"portfolio_mio": 3347.3,
+"verschuldung_netto": 0,
+"meldung": "2026-02-12",
+"quelle": "https://www.sec.gov/Archives/edgar/data/1508655/000119312526048683/tslx-ex99_1.htm"
+},
 {
 "periode_ende": "2026-03-31",
 "nav_je_aktie": 16.24,
@@ -295,6 +430,36 @@
 "name": "Morgan Stanley Direct Lending Fund",
 "quartale": [
 {
+"periode_ende": "2025-09-30",
+"nav_je_aktie": 20.41,
+"nii_je_aktie": 0.5,
+"beleg_nav": "Net asset value of $20.41 per share, as compared to $20.59 as of June 30, 2025",
+"dividende_quartal": "Q4 2025",
+"dividende_regulaer": 0.5,
+"dividende_zusatz": 0,
+"nii_bereinigt_je_aktie": 0,
+"non_accrual_fv_proz": 0,
+"portfolio_mio": 3775.797,
+"verschuldung_netto": 1.13,
+"meldung": "2025-11-06",
+"quelle": "https://www.sec.gov/Archives/edgar/data/1782524/000119312525269710/d928814dex991.htm"
+},
+{
+"periode_ende": "2025-12-31",
+"nav_je_aktie": 20.26,
+"nii_je_aktie": 0.49,
+"beleg_nav": "Net asset value of $20.26 per share, as compared to $20.41 as of September 30, 2025;",
+"dividende_quartal": "Q1 2026",
+"dividende_regulaer": 0.45,
+"dividende_zusatz": 0,
+"nii_bereinigt_je_aktie": 0,
+"non_accrual_fv_proz": 0,
+"portfolio_mio": 3771.55,
+"verschuldung_netto": 1.14,
+"meldung": "2026-02-26",
+"quelle": "https://www.sec.gov/Archives/edgar/data/1782524/000119312526076964/d838021dex991.htm"
+},
+{
 "periode_ende": "2026-03-31",
 "nav_je_aktie": 19.81,
 "nii_je_aktie": 0.47,
@@ -345,6 +510,36 @@
 "name": "Oaktree Specialty Lending Corp",
 "quartale": [
 {
+"periode_ende": "2025-09-30",
+"nav_je_aktie": 16.64,
+"nii_je_aktie": 0.41,
+"beleg_nav": "Net asset value (“NAV”) per share was $16.64 as of September 30, 2025, down as compared with $16.76 and $18.09 as of June 30, 2025.",
+"dividende_quartal": "Q4 2025",
+"dividende_regulaer": 0.4,
+"dividende_zusatz": 0,
+"nii_bereinigt_je_aktie": 0.4,
+"non_accrual_fv_proz": 0,
+"portfolio_mio": 0,
+"verschuldung_netto": 0.97,
+"meldung": "2025-11-18",
+"quelle": "https://www.sec.gov/Archives/edgar/data/1414932/000119312525285254/d24971dex991.htm"
+},
+{
+"periode_ende": "2025-12-31",
+"nav_je_aktie": 16.3,
+"nii_je_aktie": 0.42,
+"beleg_nav": "Net asset value (“NAV”) per share was $16.30 as of December 31, 2025, down as compared with $16.64 as of September 30, 2025.",
+"dividende_quartal": "Q1 2026",
+"dividende_regulaer": 0.4,
+"dividende_zusatz": 0,
+"nii_bereinigt_je_aktie": 0.41,
+"non_accrual_fv_proz": 0,
+"portfolio_mio": 2949.092,
+"verschuldung_netto": 1.07,
+"meldung": "2026-02-04",
+"quelle": "https://www.sec.gov/Archives/edgar/data/1414932/000119312526036643/d12028dex991.htm"
+},
+{
 "periode_ende": "2026-03-31",
 "nav_je_aktie": 15.69,
 "nii_je_aktie": 0.39,
@@ -383,6 +578,36 @@
 "GSBD": {
 "name": "Goldman Sachs BDC, Inc.",
 "quartale": [
+{
+"periode_ende": "2025-09-30",
+"nav_je_aktie": 12.75,
+"nii_je_aktie": 0.4,
+"beleg_nav": "Net asset value (“NAV”) per share as of September 30, 2025 decreased 2.1% to $12.75 from $13.02 as of June 30, 2025.",
+"dividende_quartal": "Q4 2025",
+"dividende_regulaer": 0.32,
+"dividende_zusatz": 0.04,
+"nii_bereinigt_je_aktie": 0.4,
+"non_accrual_fv_proz": 1.5,
+"portfolio_mio": 3196.9,
+"verschuldung_netto": 1.17,
+"meldung": "2025-11-06",
+"quelle": "https://www.sec.gov/Archives/edgar/data/1572694/000119312525270134/d79700dex991.htm"
+},
+{
+"periode_ende": "2025-12-31",
+"nav_je_aktie": 12.64,
+"nii_je_aktie": 0.37,
+"beleg_nav": "Net asset value (“NAV”) per share as of December 31, 2025 decreased 0.9% to $12.64 from $12.75 as of September 30, 2025.",
+"dividende_quartal": "Q1 2026",
+"dividende_regulaer": 0.32,
+"dividende_zusatz": 0.03,
+"nii_bereinigt_je_aktie": 0.37,
+"non_accrual_fv_proz": 1.9,
+"portfolio_mio": 3261.7,
+"verschuldung_netto": 1.27,
+"meldung": "2026-02-27",
+"quelle": "https://www.sec.gov/Archives/edgar/data/1572694/000119312526078362/d117783dex991.htm"
+},
 {
 "periode_ende": "2026-03-31",
 "nav_je_aktie": 12.17,
@@ -434,6 +659,36 @@
 "name": "MidCap Financial Investment Corp",
 "quartale": [
 {
+"periode_ende": "2025-09-30",
+"nav_je_aktie": 14.66,
+"nii_je_aktie": 0.38,
+"beleg_nav": "The Company’s net asset value (“NAV”) was $14.66 per share as of September 30, 2025, compared to $14.75 as of June 30, 2025.",
+"dividende_quartal": "Q3 2025",
+"dividende_regulaer": 0.38,
+"dividende_zusatz": 0,
+"nii_bereinigt_je_aktie": 0,
+"non_accrual_fv_proz": 0,
+"portfolio_mio": 3180,
+"verschuldung_netto": 1.35,
+"meldung": "2025-11-06",
+"quelle": "https://www.sec.gov/Archives/edgar/data/1278752/000119312525269805/d46238dex991.htm"
+},
+{
+"periode_ende": "2025-12-31",
+"nav_je_aktie": 14.18,
+"nii_je_aktie": 0.39,
+"beleg_nav": "The Company’s NAV was $14.18 per share as of December 31, 2025, compared to $14.66 as of September 30, 2025.",
+"dividende_quartal": "Q1 2026",
+"dividende_regulaer": 0.31,
+"dividende_zusatz": 0,
+"nii_bereinigt_je_aktie": 0,
+"non_accrual_fv_proz": 0,
+"portfolio_mio": 3170,
+"verschuldung_netto": 1.45,
+"meldung": "2026-02-26",
+"quelle": "https://www.sec.gov/Archives/edgar/data/1278752/000119312526076894/d24302dex991.htm"
+},
+{
 "periode_ende": "2026-03-31",
 "nav_je_aktie": 13.82,
 "nii_je_aktie": 0.38,
@@ -483,6 +738,36 @@
 "TRIN": {
 "name": "Trinity Capital Inc.",
 "quartale": [
+{
+"periode_ende": "2025-09-30",
+"nav_je_aktie": 13.31,
+"nii_je_aktie": 0.52,
+"beleg_nav": "Net Asset Value (“NAV”) of $998.3 million, or $13.31 per share at the end of Q3.",
+"dividende_quartal": "Q3 2025",
+"dividende_regulaer": 0.51,
+"dividende_zusatz": 0,
+"nii_bereinigt_je_aktie": 0,
+"non_accrual_fv_proz": 1.0,
+"portfolio_mio": 2200,
+"verschuldung_netto": 0,
+"meldung": "2025-11-05",
+"quelle": "https://www.sec.gov/Archives/edgar/data/1786108/000119312525265801/trin-ex99_1.htm"
+},
+{
+"periode_ende": "2025-12-31",
+"nav_je_aktie": 13.4,
+"nii_je_aktie": 0.52,
+"beleg_nav": "Trinity Capital’s preliminary estimate of its net asset value per share as of December 31, 2025 is in the range of $13.36 to $13.44.",
+"dividende_quartal": "Q4 2025",
+"dividende_regulaer": 0,
+"dividende_zusatz": 0,
+"nii_bereinigt_je_aktie": 0,
+"non_accrual_fv_proz": 0.7,
+"portfolio_mio": 0,
+"verschuldung_netto": 0,
+"meldung": "2026-02-03",
+"quelle": "https://www.sec.gov/Archives/edgar/data/1786108/000119312526034463/trin-ex99_1.htm"
+},
 {
 "periode_ende": "2026-03-31",
 "nav_je_aktie": 13.27,
@@ -538,6 +823,36 @@
 "name": "Barings BDC, Inc.",
 "quartale": [
 {
+"periode_ende": "2025-09-30",
+"nav_je_aktie": 11.1,
+"nii_je_aktie": 0.32,
+"beleg_nav": "Net asset value per share as of September 30, 2025 was $11.10, as compared to $11.18 as of June 30, 2025.",
+"dividende_quartal": "Q4 2025",
+"dividende_regulaer": 0.26,
+"dividende_zusatz": 0,
+"nii_bereinigt_je_aktie": 0,
+"non_accrual_fv_proz": 0,
+"portfolio_mio": 2536.3,
+"verschuldung_netto": 1.26,
+"meldung": "2025-11-06",
+"quelle": "https://www.sec.gov/Archives/edgar/data/1379785/000137978525000051/exhibit99120251106earnings.htm"
+},
+{
+"periode_ende": "2025-12-31",
+"nav_je_aktie": 11.09,
+"nii_je_aktie": 0.27,
+"beleg_nav": "Net asset value per share as of December 31, 2025 was $11.09, as compared to $11.10 as of September 30, 2025.",
+"dividende_quartal": "Q1 2026",
+"dividende_regulaer": 0.26,
+"dividende_zusatz": 0,
+"nii_bereinigt_je_aktie": 0,
+"non_accrual_fv_proz": 0.2,
+"portfolio_mio": 2398.5,
+"verschuldung_netto": 1.15,
+"meldung": "2026-02-19",
+"quelle": "https://www.sec.gov/Archives/edgar/data/1379785/000137978526000008/exhibit99120260219earnings.htm"
+},
+{
 "periode_ende": "2026-03-31",
 "nav_je_aktie": 11.02,
 "nii_je_aktie": 0.25,
@@ -587,6 +902,36 @@
 "BCSF": {
 "name": "Bain Capital Specialty Finance, Inc.",
 "quartale": [
+{
+"periode_ende": "2025-09-30",
+"nav_je_aktie": 17.4,
+"nii_je_aktie": 0.45,
+"beleg_nav": "Net asset value per share as of September 30, 2025 was $17.40, as compared to $17.56 as of June 30, 2025.",
+"dividende_quartal": "Q4 2025",
+"dividende_regulaer": 0.42,
+"dividende_zusatz": 0.03,
+"nii_bereinigt_je_aktie": 0,
+"non_accrual_fv_proz": 0.7,
+"portfolio_mio": 2534.1,
+"verschuldung_netto": 1.23,
+"meldung": "2025-11-10",
+"quelle": "https://www.sec.gov/Archives/edgar/data/1655050/000119312525274618/d61433dex991.htm"
+},
+{
+"periode_ende": "2025-12-31",
+"nav_je_aktie": 17.23,
+"nii_je_aktie": 0.46,
+"beleg_nav": "Net asset value per share as of December 31, 2025 was $17.23",
+"dividende_quartal": "Q1 2026",
+"dividende_regulaer": 0.42,
+"dividende_zusatz": 0,
+"nii_bereinigt_je_aktie": 0,
+"non_accrual_fv_proz": 0.8,
+"portfolio_mio": 2508.4,
+"verschuldung_netto": 1.24,
+"meldung": "2026-02-27",
+"quelle": "https://www.sec.gov/Archives/edgar/data/1655050/000119312526078696/d328886dex991.htm"
+},
 {
 "periode_ende": "2026-03-31",
 "nav_je_aktie": 16.86,
@@ -638,6 +983,21 @@
 "name": "Carlyle Secured Lending, Inc.",
 "quartale": [
 {
+"periode_ende": "2025-12-31",
+"nav_je_aktie": 16.26,
+"nii_je_aktie": 0.33,
+"beleg_nav": "Net asset value per common share decreased by 0.6% for the fourth quarter to $16.26 from $16.36 as of September 30, 2025.",
+"dividende_quartal": "Q1 2026",
+"dividende_regulaer": 0.4,
+"dividende_zusatz": 0,
+"nii_bereinigt_je_aktie": 0.36,
+"non_accrual_fv_proz": 0,
+"portfolio_mio": 2500,
+"verschuldung_netto": 0,
+"meldung": "2026-02-24",
+"quelle": "https://www.sec.gov/Archives/edgar/data/1544206/000154420626000012/cgbd_20251231xxex991earnin.htm"
+},
+{
 "periode_ende": "2026-03-31",
 "nav_je_aktie": 15.89,
 "nii_je_aktie": 0.36,
@@ -683,6 +1043,36 @@
 "name": "PennantPark Floating Rate Capital Ltd.",
 "quartale": [
 {
+"periode_ende": "2025-09-30",
+"nav_je_aktie": 10.83,
+"nii_je_aktie": 0.28,
+"beleg_nav": "GAAP net asset value per share $ 10.83",
+"dividende_quartal": "0",
+"dividende_regulaer": 0,
+"dividende_zusatz": 0,
+"nii_bereinigt_je_aktie": 0.28,
+"non_accrual_fv_proz": 0.2,
+"portfolio_mio": 2773.3,
+"verschuldung_netto": 0,
+"meldung": "2025-11-24",
+"quelle": "https://www.sec.gov/Archives/edgar/data/1504619/000117184325007542/exh_991.htm"
+},
+{
+"periode_ende": "2025-12-31",
+"nav_je_aktie": 10.49,
+"nii_je_aktie": 0.27,
+"beleg_nav": "Net asset value per share $ 10.49",
+"dividende_quartal": "Q1 2026",
+"dividende_regulaer": 0.31,
+"dividende_zusatz": 0,
+"nii_bereinigt_je_aktie": 0.27,
+"non_accrual_fv_proz": 0.1,
+"portfolio_mio": 2605.3,
+"verschuldung_netto": 1.57,
+"meldung": "2026-02-09",
+"quelle": "https://www.sec.gov/Archives/edgar/data/1504619/000117184326000703/exh_991.htm"
+},
+{
 "periode_ende": "2026-03-31",
 "nav_je_aktie": 10.47,
 "nii_je_aktie": 0.26,
@@ -717,6 +1107,36 @@
 "SLRC": {
 "name": "SLR Investment Corp.",
 "quartale": [
+{
+"periode_ende": "2025-09-30",
+"nav_je_aktie": 18.21,
+"nii_je_aktie": 0.4,
+"beleg_nav": "As of September 30, 2025, net asset value (“NAV”) was $18.21 per share, an increase from $18.19 per share at June 30, 2025.",
+"dividende_quartal": "Q4 2025",
+"dividende_regulaer": 0.41,
+"dividende_zusatz": 0,
+"nii_bereinigt_je_aktie": 0,
+"non_accrual_fv_proz": 0.3,
+"portfolio_mio": 2100,
+"verschuldung_netto": 1.13,
+"meldung": "2025-11-04",
+"quelle": "https://www.sec.gov/Archives/edgar/data/1418076/000117184325006978/exh_991.htm"
+},
+{
+"periode_ende": "2025-12-31",
+"nav_je_aktie": 18.26,
+"nii_je_aktie": 0.4,
+"beleg_nav": "As of December 31, 2025, net asset value (“NAV”) was $18.26 per share",
+"dividende_quartal": "Q1 2026",
+"dividende_regulaer": 0.41,
+"dividende_zusatz": 0,
+"nii_bereinigt_je_aktie": 0,
+"non_accrual_fv_proz": 0,
+"portfolio_mio": 3304.6,
+"verschuldung_netto": 1.14,
+"meldung": "2026-02-24",
+"quelle": "https://www.sec.gov/Archives/edgar/data/1418076/000117184326001058/exh_991.htm"
+},
 {
 "periode_ende": "2026-03-31",
 "nav_je_aktie": 18.16,
@@ -762,6 +1182,36 @@
 "FDUS": {
 "name": "FIDUS INVESTMENT Corp",
 "quartale": [
+{
+"periode_ende": "2025-09-30",
+"nav_je_aktie": 19.56,
+"nii_je_aktie": 0.49,
+"beleg_nav": "Net asset value (“NAV”) of $711.0 million, or $19.56 per share, as of September 30, 2025",
+"dividende_quartal": "Q4 2025",
+"dividende_regulaer": 0.43,
+"dividende_zusatz": 0.07,
+"nii_bereinigt_je_aktie": 0.5,
+"non_accrual_fv_proz": 0,
+"portfolio_mio": 1200,
+"verschuldung_netto": 0,
+"meldung": "2025-11-06",
+"quelle": "https://www.sec.gov/Archives/edgar/data/1513363/000119312525269480/fdus-ex99_1.htm"
+},
+{
+"periode_ende": "2025-12-31",
+"nav_je_aktie": 19.55,
+"nii_je_aktie": 0.53,
+"beleg_nav": "Net asset value (\"NAV\") of $741.9 million, or $19.55 per share, as of December 31, 2025",
+"dividende_quartal": "Q1 2026",
+"dividende_regulaer": 0.43,
+"dividende_zusatz": 0.09,
+"nii_bereinigt_je_aktie": 0.52,
+"non_accrual_fv_proz": 0,
+"portfolio_mio": 0,
+"verschuldung_netto": 0,
+"meldung": "2026-02-26",
+"quelle": "https://www.sec.gov/Archives/edgar/data/1513363/000119312526076554/fdus-ex99_1.htm"
+},
 {
 "periode_ende": "2026-03-31",
 "nav_je_aktie": 19.55,
@@ -815,11 +1265,57 @@
 },
 "MSIF": {
 "name": "MSC INCOME FUND, INC.",
-"quartale": []
+"quartale": [
+{
+"periode_ende": "2025-12-31",
+"nav_je_aktie": 15.85,
+"nii_je_aktie": 0.28,
+"beleg_nav": "MSC Income’s preliminary estimate of net asset value (“NAV”) per share as of December 31, 2025 is $15.81 to $15.89",
+"dividende_quartal": "0",
+"dividende_regulaer": 0,
+"dividende_zusatz": 0,
+"nii_bereinigt_je_aktie": 0.34,
+"non_accrual_fv_proz": 1.0,
+"portfolio_mio": 0,
+"verschuldung_netto": 0,
+"meldung": "2026-01-20",
+"quelle": "https://www.sec.gov/Archives/edgar/data/1535778/000153577826000012/msif-2026120xexx991prexrel.htm"
+}
+]
 },
 "GAIN": {
 "name": "GLADSTONE INVESTMENT CORPORATIONDE",
 "quartale": [
+{
+"periode_ende": "2025-09-30",
+"nav_je_aktie": 13.53,
+"nii_je_aktie": 0.11,
+"beleg_nav": "Net asset value per common share as of September 30, 2025 was $13.53, compared to $12.99 as of June 30, 2025.",
+"dividende_quartal": "Q4 2025",
+"dividende_regulaer": 0.24,
+"dividende_zusatz": 0,
+"nii_bereinigt_je_aktie": 0.24,
+"non_accrual_fv_proz": 0,
+"portfolio_mio": 1130.859,
+"verschuldung_netto": 0,
+"meldung": "2025-11-04",
+"quelle": "https://www.sec.gov/Archives/edgar/data/1321741/000132174125000023/gain93025er8-kex991x11425.htm"
+},
+{
+"periode_ende": "2025-12-31",
+"nav_je_aktie": 14.95,
+"nii_je_aktie": -0.16,
+"beleg_nav": "Net asset value per common share as of December 31, 2025 was $14.95, compared to $13.53 as of September 30, 2025.",
+"dividende_quartal": "Q1 2026",
+"dividende_regulaer": 0.24,
+"dividende_zusatz": 0,
+"nii_bereinigt_je_aktie": 0.21,
+"non_accrual_fv_proz": 0,
+"portfolio_mio": 1222.792,
+"verschuldung_netto": 0,
+"meldung": "2026-02-03",
+"quelle": "https://www.sec.gov/Archives/edgar/data/1321741/000132174126000006/gain123125er8-kex991x2326.htm"
+},
 {
 "periode_ende": "2026-03-31",
 "nav_je_aktie": 16.78,
@@ -870,6 +1366,36 @@
 "name": "Crescent Capital BDC, Inc.",
 "quartale": [
 {
+"periode_ende": "2025-09-30",
+"nav_je_aktie": 19.28,
+"nii_je_aktie": 0.46,
+"beleg_nav": "Net asset value (NAV) per share was $19.28 at September 30, 2025.",
+"dividende_quartal": "Q4 2025",
+"dividende_regulaer": 0.42,
+"dividende_zusatz": 0,
+"nii_bereinigt_je_aktie": 0,
+"non_accrual_fv_proz": 0,
+"portfolio_mio": 1580.7,
+"verschuldung_netto": 1.23,
+"meldung": "2025-11-12",
+"quelle": "https://www.sec.gov/Archives/edgar/data/1633336/000119312525277614/ccap-ex99_1.htm"
+},
+{
+"periode_ende": "2025-12-31",
+"nav_je_aktie": 19.1,
+"nii_je_aktie": 0.45,
+"beleg_nav": "Reported net asset value (NAV) per share was $19.10 at December 31, 2025.",
+"dividende_quartal": "Q1 2026",
+"dividende_regulaer": 0.42,
+"dividende_zusatz": 0,
+"nii_bereinigt_je_aktie": 0,
+"non_accrual_fv_proz": 0,
+"portfolio_mio": 1569.4,
+"verschuldung_netto": 0,
+"meldung": "2026-02-25",
+"quelle": "https://www.sec.gov/Archives/edgar/data/1633336/000119312526070903/ccap-ex99_1.htm"
+},
+{
 "periode_ende": "2026-03-31",
 "nav_je_aktie": 18.27,
 "nii_je_aktie": 0.42,
@@ -915,6 +1441,21 @@
 "CION": {
 "name": "CION Investment Corp",
 "quartale": [
+{
+"periode_ende": "2025-09-30",
+"nav_je_aktie": 14.86,
+"nii_je_aktie": 0.74,
+"beleg_nav": "Net asset value per share was $14.86 as of September 30, 2025 compared to $14.50 as of June 30, 2025.",
+"dividende_quartal": "Q4 2025",
+"dividende_regulaer": 0.36,
+"dividende_zusatz": 0,
+"nii_bereinigt_je_aktie": 0,
+"non_accrual_fv_proz": 1.75,
+"portfolio_mio": 1738.184,
+"verschuldung_netto": 1.28,
+"meldung": "2025-11-06",
+"quelle": "https://www.sec.gov/Archives/edgar/data/1534254/000110465925107445/tm2530136d1_ex99-1.htm"
+},
 {
 "periode_ende": "2025-12-31",
 "nav_je_aktie": 13.76,
@@ -981,6 +1522,21 @@
 "name": "BlackRock TCP Capital Corp.",
 "quartale": [
 {
+"periode_ende": "2025-09-30",
+"nav_je_aktie": 8.71,
+"nii_je_aktie": 0.32,
+"beleg_nav": "Net asset value per share was $8.71 as of September 30, 2025, unchanged from June 30, 2025.",
+"dividende_quartal": "Q4 2025",
+"dividende_regulaer": 0.25,
+"dividende_zusatz": 0,
+"nii_bereinigt_je_aktie": 0.3,
+"non_accrual_fv_proz": 3.5,
+"portfolio_mio": 0,
+"verschuldung_netto": 1.2,
+"meldung": "2025-11-06",
+"quelle": "https://www.sec.gov/Archives/edgar/data/1370755/000119312525268140/tcpc-ex99_1.htm"
+},
+{
 "periode_ende": "2025-12-31",
 "nav_je_aktie": 7.07,
 "nii_je_aktie": 0.26,
@@ -1031,6 +1587,36 @@
 "name": "GLADSTONE CAPITAL CORP",
 "quartale": [
 {
+"periode_ende": "2025-09-30",
+"nav_je_aktie": 21.34,
+"nii_je_aktie": 0.52,
+"beleg_nav": "Net asset value per common share $21.34",
+"dividende_quartal": "0",
+"dividende_regulaer": 0,
+"dividende_zusatz": 0,
+"nii_bereinigt_je_aktie": 0,
+"non_accrual_fv_proz": 0,
+"portfolio_mio": 859.124,
+"verschuldung_netto": 0,
+"meldung": "2025-11-17",
+"quelle": "https://www.sec.gov/Archives/edgar/data/1143513/000119312525284668/d10148dex991.htm"
+},
+{
+"periode_ende": "2025-12-31",
+"nav_je_aktie": 21.13,
+"nii_je_aktie": 0.5,
+"beleg_nav": "Net asset value per common share $21.13 as of December 31, 2025.",
+"dividende_quartal": "Q1 2026",
+"dividende_regulaer": 0.45,
+"dividende_zusatz": 0,
+"nii_bereinigt_je_aktie": 0,
+"non_accrual_fv_proz": 0,
+"portfolio_mio": 902.912,
+"verschuldung_netto": 0,
+"meldung": "2026-02-04",
+"quelle": "https://www.sec.gov/Archives/edgar/data/1143513/000119312526037714/d42726dex991.htm"
+},
+{
 "periode_ende": "2026-03-31",
 "nav_je_aktie": 21.36,
 "nii_je_aktie": 0.52,
@@ -1066,6 +1652,36 @@
 "name": "PENNANTPARK INVESTMENT CORP",
 "quartale": [
 {
+"periode_ende": "2025-09-30",
+"nav_je_aktie": 7.11,
+"nii_je_aktie": 0.15,
+"beleg_nav": "Net asset value per share $ 7.11",
+"dividende_quartal": "Q4 2025",
+"dividende_regulaer": 0.24,
+"dividende_zusatz": 0,
+"nii_bereinigt_je_aktie": 0.15,
+"non_accrual_fv_proz": 0.1,
+"portfolio_mio": 1287.3,
+"verschuldung_netto": 1.6,
+"meldung": "2025-11-24",
+"quelle": "https://www.sec.gov/Archives/edgar/data/1383414/000117184325007541/exh_991.htm"
+},
+{
+"periode_ende": "2025-12-31",
+"nav_je_aktie": 7.0,
+"nii_je_aktie": 0.11,
+"beleg_nav": "Net asset value per share $ 7.00",
+"dividende_quartal": "Q1 2026",
+"dividende_regulaer": 0.12,
+"dividende_zusatz": 0.12,
+"nii_bereinigt_je_aktie": 0.14,
+"non_accrual_fv_proz": 1.1,
+"portfolio_mio": 1218.5,
+"verschuldung_netto": 1.34,
+"meldung": "2026-02-09",
+"quelle": "https://www.sec.gov/Archives/edgar/data/1383414/000117184326000704/exh_991.htm"
+},
+{
 "periode_ende": "2026-03-31",
 "nav_je_aktie": 6.73,
 "nii_je_aktie": 0.14,
@@ -1100,6 +1716,36 @@
 "PSBD": {
 "name": "Palmer Square Capital BDC Inc.",
 "quartale": [
+{
+"periode_ende": "2025-09-30",
+"nav_je_aktie": 15.39,
+"nii_je_aktie": 0.43,
+"beleg_nav": "Net asset value of $15.39 per share as of September 30, 2025",
+"dividende_quartal": "Q4 2025",
+"dividende_regulaer": 0.36,
+"dividende_zusatz": 0,
+"nii_bereinigt_je_aktie": 0,
+"non_accrual_fv_proz": 0.4,
+"portfolio_mio": 1258.988,
+"verschuldung_netto": 1.53,
+"meldung": "2025-11-05",
+"quelle": "https://www.sec.gov/Archives/edgar/data/1794776/000119312525266983/psbd-ex99_1.htm"
+},
+{
+"periode_ende": "2025-12-31",
+"nav_je_aktie": 14.85,
+"nii_je_aktie": 0.41,
+"beleg_nav": "Net asset value of $14.85 per share as of December 31, 2025",
+"dividende_quartal": "Q1 2026",
+"dividende_regulaer": 0.36,
+"dividende_zusatz": 0,
+"nii_bereinigt_je_aktie": 0,
+"non_accrual_fv_proz": 0.09,
+"portfolio_mio": 1203.64,
+"verschuldung_netto": 1.54,
+"meldung": "2026-02-26",
+"quelle": "https://www.sec.gov/Archives/edgar/data/1794776/000119312526076901/psbd-ex99_1.htm"
+},
 {
 "periode_ende": "2026-03-31",
 "nav_je_aktie": 13.3,
@@ -1144,6 +1790,21 @@
 "RWAY": {
 "name": "Runway Growth Finance Corp.",
 "quartale": [
+{
+"periode_ende": "2025-09-30",
+"nav_je_aktie": 13.55,
+"nii_je_aktie": 0.43,
+"beleg_nav": "As of September 30, 2025, net asset value per share was $13.55, a decrease of 0.8% from $13.66 as of June 30, 2025.",
+"dividende_quartal": "Q4 2025",
+"dividende_regulaer": 0.33,
+"dividende_zusatz": 0,
+"nii_bereinigt_je_aktie": 0,
+"non_accrual_fv_proz": 0,
+"portfolio_mio": 945.964,
+"verschuldung_netto": 0.92,
+"meldung": "2025-11-06",
+"quelle": "https://www.sec.gov/Archives/edgar/data/1653384/000119312525269466/rway-ex99_1.htm"
+},
 {
 "periode_ende": "2025-12-31",
 "nav_je_aktie": 13.42,
@@ -1199,6 +1860,21 @@
 "SAR": {
 "name": "SARATOGA INVESTMENT CORP.",
 "quartale": [
+{
+"periode_ende": "2025-11-30",
+"nav_je_aktie": 25.59,
+"nii_je_aktie": 0.61,
+"beleg_nav": "NAV per share relatively stable at $25.59 per share versus $25.61 per share last quarter",
+"dividende_quartal": "Q4 2026",
+"dividende_regulaer": 0.75,
+"dividende_zusatz": 0,
+"nii_bereinigt_je_aktie": 0.61,
+"non_accrual_fv_proz": 0.2,
+"portfolio_mio": 1015.95,
+"verschuldung_netto": 1.837,
+"meldung": "2026-01-07",
+"quelle": "https://www.sec.gov/Archives/edgar/data/1377936/000121390026002156/ea027212602ex99-1_saratoga.htm"
+},
 {
 "periode_ende": "2026-02-28",
 "nav_je_aktie": 24.42,
@@ -1290,6 +1966,21 @@
 "name": "Chicago Atlantic BDC, Inc.",
 "quartale": [
 {
+"periode_ende": "2025-09-30",
+"nav_je_aktie": 13.27,
+"nii_je_aktie": 0.42,
+"beleg_nav": "As of September 30, 2025, NAV per share was $13.27 compared with $13.23 as of June 30, 2025.",
+"dividende_quartal": "Q4 2025",
+"dividende_regulaer": 0.34,
+"dividende_zusatz": 0,
+"nii_bereinigt_je_aktie": 0,
+"non_accrual_fv_proz": 0,
+"portfolio_mio": 311.4,
+"verschuldung_netto": 0.036,
+"meldung": "2025-11-13",
+"quelle": "https://www.sec.gov/Archives/edgar/data/1843162/000121390025109551/ea026506001ex99-1_chicago.htm"
+},
+{
 "periode_ende": "2025-12-31",
 "nav_je_aktie": 13.3,
 "nii_je_aktie": 0.36,
@@ -1338,6 +2029,21 @@
 "WHF": {
 "name": "WhiteHorse Finance, Inc.",
 "quartale": [
+{
+"periode_ende": "2025-09-30",
+"nav_je_aktie": 11.41,
+"nii_je_aktie": 0.263,
+"beleg_nav": "Net asset value per share was $11.41 as of September 30, 2025.",
+"dividende_quartal": "Q3 2025",
+"dividende_regulaer": 0.25,
+"dividende_zusatz": 0.035,
+"nii_bereinigt_je_aktie": 0.263,
+"non_accrual_fv_proz": 0,
+"portfolio_mio": 568.4,
+"verschuldung_netto": 0,
+"meldung": "2025-11-10",
+"quelle": "https://www.sec.gov/Archives/edgar/data/1552198/000110465925108818/whf-20251110xex99d1.htm"
+},
 {
 "periode_ende": "2025-12-31",
 "nav_je_aktie": 11.68,
@@ -1469,6 +2175,21 @@
 "name": "Great Elm Capital Corp.",
 "quartale": [
 {
+"periode_ende": "2025-09-30",
+"nav_je_aktie": 10.01,
+"nii_je_aktie": 0.2,
+"beleg_nav": "Net assets were $140.1 million, or $10.01 per share, on September 30, 2025.",
+"dividende_quartal": "Q4 2025",
+"dividende_regulaer": 0.37,
+"dividende_zusatz": 0,
+"nii_bereinigt_je_aktie": 0,
+"non_accrual_fv_proz": 0,
+"portfolio_mio": 325.1,
+"verschuldung_netto": 1.5,
+"meldung": "2025-11-04",
+"quelle": "https://www.sec.gov/Archives/edgar/data/1675033/000119312525264872/gecc-ex99_1.htm"
+},
+{
 "periode_ende": "2025-12-31",
 "nav_je_aktie": 8.07,
 "nii_je_aktie": 0.31,
@@ -1584,6 +2305,21 @@
 "name": "Investcorp Credit Management BDC, Inc.",
 "quartale": [
 {
+"periode_ende": "2025-09-30",
+"nav_je_aktie": 5.04,
+"nii_je_aktie": 0.04,
+"beleg_nav": "Net asset value decreased $0.23 per share to $5.04, compared to $5.27 as of June 30, 2025.",
+"dividende_quartal": "Q4 2025",
+"dividende_regulaer": 0.12,
+"dividende_zusatz": 0.02,
+"nii_bereinigt_je_aktie": 0,
+"non_accrual_fv_proz": 0,
+"portfolio_mio": 196.1,
+"verschuldung_netto": 0,
+"meldung": "2025-11-17",
+"quelle": "https://www.sec.gov/Archives/edgar/data/1578348/000119312525284627/d83564dex991.htm"
+},
+{
 "periode_ende": "2025-12-31",
 "nav_je_aktie": 4.25,
 "nii_je_aktie": 0.02,
@@ -1636,11 +2372,11 @@
 ]
 }
 },
-"stand": "2026-11-11",
+"stand": "2026-11-12",
 "hinweis": "Quartalszahlen der BDCs aus ihren Ergebnis-Pressemitteilungen (SEC 8-K, EX-99), automatisch ausgelesen.",
 "letzter_lauf": {
-"zeit": "2026-11-11 18:52",
-"offen": 365,
+"zeit": "2026-11-12 01:02",
+"offen": 278,
 "ki_aufrufe": 50,
 "ohne_sec": [
 "SSSS",
