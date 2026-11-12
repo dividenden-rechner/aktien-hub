@@ -287,12 +287,65 @@ def main():
         o["kbv"] = o["bdc"]["kurs_nav"]
         o["nav_je_aktie"] = nav
         o["schulden_ek"] = o["bdc"]["verschuldung"] or o.get("schulden_ek")
+    modellwerte(out)
     json.dump({"stand": tag, "ezb_kurs_vom": fx_tag,
                "hinweis": "Kurs: Xetra-Schluss (Deutsche Börse, 15 Min. verzögert). Kennzahlen: letztes Geschäftsjahr laut SEC-Bericht; Kurs per EZB-Referenzkurs in die Berichtswährung umgerechnet.",
                "werte": out}, open("data/kennzahlen.json", "w"), ensure_ascii=False, separators=(",", ":"))
     print(len(out), "Aktien mit Kennzahlen, Stand", tag)
     for t in ("KO", "MSFT", "O", "SAP", "JNJ", "ASML"):
         print(t, out.get(t))
+
+
+def modellwerte(out):
+    """Modellwert-Spanne je Aktie in USD aus bis zu fuenf einfachen Modellen (eigene Berechnung, kein Kursziel).
+    Nur Modelle mit vorhandenen Daten; mindestens zwei noetig, Ausreisser (ueber 3x Kurs) fallen weg."""
+    ZINS, G2, JAHRE = 0.08, 0.025, 5
+    de = lambda s: re.sub(r"(\d)\.(\d)", r"\1,\2", s)
+    ohne_fcf = ("Financial Services", "Real Estate", "BDC")
+    for k in out.values():
+        for z in ("modellwert_usd", "modellwert_min_usd", "modellwert_max_usd", "modellwert_potenzial", "modellwert_anzahl", "modellwert_modelle"):
+            k.pop(z, None)
+        kurs = k.get("kurs_usd")
+        zahl = lambda v: isinstance(v, (int, float)) and not isinstance(v, bool)
+        if not zahl(kurs) or kurs <= 0:
+            continue
+        sek = k.get("sektor") or ""
+        bdc = bool(k.get("bdc")) or sek == "BDC"
+        po = k.get("ffo_ausschuettung") if sek == "Real Estate" and zahl(k.get("ffo_ausschuettung")) else k.get("ausschuettung")
+        m = []
+        eps = kurs / k["kgv"] if zahl(k.get("kgv")) and k["kgv"] > 0 else None       # Gewinn je Aktie in USD
+        nav = kurs / k["kbv"] if zahl(k.get("kbv")) and k["kbv"] > 0 else None       # Buchwert je Aktie in USD
+        dps = k["rendite"] / 100 * kurs if zahl(k.get("rendite")) and k["rendite"] > 0 else None
+        # 1) Dividenden-Diskontierung, zweistufig (5 Jahre Wachstum der letzten 5 Jahre, maximal 10 %, danach 2,5 %)
+        if dps and zahl(k.get("div_wachstum_5j")) and not (zahl(po) and po > 100):
+            g = min(max(k["div_wachstum_5j"], 0), 10) / 100
+            v = sum(dps * (1 + g) ** i / (1 + ZINS) ** i for i in range(1, JAHRE + 1))
+            v += dps * (1 + g) ** JAHRE * (1 + G2) / (ZINS - G2) / (1 + ZINS) ** JAHRE
+            m.append(("Dividenden-Diskontierung", v, de("Dividende %.2f USD, Wachstum %.1f %% pro Jahr für 5 Jahre, danach 2,5 %%, Zins 8 %%" % (dps, g * 100))))
+        # 2) Graham-Zahl
+        if eps and nav and sek not in ("Real Estate",) and not bdc and eps > 0:
+            m.append(("Graham-Zahl", (22.5 * eps * nav) ** 0.5, de("Wurzel aus 22,5 x Gewinn %.2f USD x Buchwert %.2f USD je Aktie" % (eps, nav))))
+        # 3) Free-Cashflow-Rendite 5 %
+        if sek not in ohne_fcf and not bdc and zahl(k.get("fcf_usd")) and k["fcf_usd"] > 0 and zahl(k.get("boersenwert_usd")) and k["boersenwert_usd"] > 0:
+            fps = k["fcf_usd"] / (k["boersenwert_usd"] / kurs)
+            m.append(("Free-Cashflow-Rendite", fps / 0.05, de("Free Cashflow %.2f USD je Aktie bei 5 %% Zielrendite" % fps)))
+        # 4) Gewinnwachstum (Lynch): faires KGV = Gewinnwachstum 5 Jahre, begrenzt auf 8 bis 25
+        if eps and zahl(k.get("gewinn_wachstum_5j")) and not bdc and sek != "Real Estate":
+            fk = min(max(k["gewinn_wachstum_5j"], 8), 25)
+            m.append(("Gewinnwachstum", eps * fk, de("Gewinn %.2f USD x faires KGV %.1f (Gewinnwachstum 5 Jahre, begrenzt 8 bis 25)" % (eps, fk))))
+        # 5) Immobilien: FFO x 16, BDC: Substanzwert (NAV)
+        if sek == "Real Estate" and zahl(k.get("ffo_je_aktie")) and k["ffo_je_aktie"] > 0:
+            m.append(("FFO-Multiplikator", k["ffo_je_aktie"] * 16, de("FFO %.2f USD je Aktie x 16" % k["ffo_je_aktie"])))
+        if bdc and nav:
+            m.append(("Substanzwert", nav, de("NAV je Aktie %.2f USD (Faktor 1,0)" % nav)))
+        m = [x for x in m if 0 < x[1] <= 3 * kurs]
+        if len(m) < 2:
+            continue
+        w = sorted(x[1] for x in m)
+        mitte = (w[len(w) // 2] if len(w) % 2 else (w[len(w) // 2 - 1] + w[len(w) // 2]) / 2)
+        k.update({"modellwert_usd": round(mitte, 2), "modellwert_min_usd": round(w[0], 2), "modellwert_max_usd": round(w[-1], 2),
+                  "modellwert_potenzial": round((mitte / kurs - 1) * 100, 1), "modellwert_anzahl": len(m),
+                  "modellwert_modelle": [[a, round(b, 2), c] for a, b, c in m]})
 
 
 if __name__ == "__main__":
