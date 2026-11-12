@@ -1109,7 +1109,29 @@ null,
 null,
 298,
 504
-]
+],
+"ebit": [
+1711,
+2210,
+2571,
+2868,
+2969
+],
+"cash": [
+1030,
+1276,
+1655,
+1872,
+1782
+],
+"debt": [
+6324,
+5357,
+8724,
+9583,
+8135
+],
+"hinweis": "Operating Income der Quelle (stockanalysis.com); der Umsatz der Quelle (4.363 / 5.225 / 6.096 / 7.022 / 7.380) weicht von der boerse.de-Reihe ab. Cash und Schulden (Total Debt inkl. Leasing und kurzfristiger Verbindlichkeiten) bei einem Börsenbetreiber mit Clearing-Geschäft nur eingeschränkt vergleichbar."
 },
 "HEI.DE": {
 "jahre": [
@@ -1153,7 +1175,50 @@ null,
 298,
 350,
 400
-]
+],
+"brutto": [
+11548,
+12479,
+13199,
+13573,
+13833
+],
+"ebit": [
+2140,
+2089,
+2733,
+2865,
+3078
+],
+"zins": [
+220.8,
+151.2,
+206.8,
+272.2,
+286.9
+],
+"steuer": [
+946.7,
+485,
+658.6,
+704.3,
+750.7
+],
+"cash": [
+3115,
+1454,
+3267,
+3220,
+2627
+],
+"debt": [
+8226,
+7110,
+8619,
+8558,
+8387
+],
+"hinweis": "Gewinnrechnung und Bilanz aus stockanalysis.com. Operatives Ergebnis wie ausgewiesen (Operating Income der Quelle). Schulden inkl. Leasingverbindlichkeiten (Total Debt der Quelle)."
 },
 "IFX.DE": {
 "jahre": [
@@ -1815,7 +1880,22 @@ null,
 1041,
 573,
 907
-]
+],
+"cash": [
+2624,
+2516,
+2624,
+2914,
+2670
+],
+"debt": [
+19136,
+20949,
+21347,
+23995,
+23209
+],
+"hinweis": "Cash und Schulden aus stockanalysis.com (Total Debt inkl. Leasingverbindlichkeiten). Aktienrückkäufe: Quelle ohne durchgehende Angabe."
 },
 "FME.DE": {
 "jahre": [
@@ -2106,7 +2186,21 @@ null,
 3066,
 2950
 ],
-"hinweis": "Quelle: Geschäftsbericht 2025 der DHL Group (Kennzahlenübersicht)."
+"hinweis": "Operatives Ergebnis, Cashflow und Capex: Geschäftsbericht 2025 der DHL Group (Kennzahlenübersicht). Cash und Schulden aus stockanalysis.com (Seite des US-ADR, EUR), Total Debt inkl. Leasingverbindlichkeiten.",
+"cash": [
+3531,
+3790,
+3649,
+3619,
+3376
+],
+"debt": [
+19897,
+22166,
+22718,
+24209,
+27486
+]
 },
 "MTX.DE": {
 "jahre": [
@@ -2144,7 +2238,49 @@ null,
 108,
 119
 ],
-"hinweis": "Quelle: stockanalysis.com (Jahresabschlüsse)."
+"hinweis": "Quelle: stockanalysis.com (Jahresabschlüsse). Bruttogewinn und operatives Ergebnis 2023 stark gedrückt bzw. negativ (152 bzw. -273), nicht gegen den Bericht geprüft. Schulden inkl. Leasingverbindlichkeiten (Total Debt der Quelle), 2024 deutlich höher als 2023. Aktienrückkäufe: Quelle ohne Angabe.",
+"brutto": [
+691,
+962,
+152,
+1252,
+1707
+],
+"ebit": [
+358,
+553,
+-273,
+832,
+1214
+],
+"zins": [
+30,
+29,
+41,
+61,
+86
+],
+"steuer": [
+84,
+130,
+-108,
+253,
+335
+],
+"cash": [
+722,
+823,
+883,
+1747,
+1256
+],
+"debt": [
+1450,
+1634,
+1565,
+2834,
+2427
+]
 },
 "PAH3.DE": {
 "jahre": [
@@ -2168,7 +2304,42 @@ null,
 783,
 584
 ],
-"hinweis": "Holding: kein Capex ausgewiesen. Quelle: stockanalysis.com."
+"hinweis": "Holding: kein Capex ausgewiesen, kein Umsatz. Quelle: stockanalysis.com. Operatives Ergebnis, Zinsen und Steuern laut Quelle; das Ergebnis aus den Beteiligungen (Vorsteuerergebnis der Quelle: 2024 -20.150) ist darin nicht enthalten. Schulden: Total Debt der Quelle, 2021 ohne Angabe.",
+"ebit": [
+-42,
+136,
+184,
+-31,
+-52
+],
+"zins": [
+null,
+64,
+320,
+360,
+311
+],
+"steuer": [
+3,
+-53,
+47,
+-133,
+-5
+],
+"cash": [
+271,
+86,
+494,
+1686,
+1038
+],
+"debt": [
+null,
+7093,
+6768,
+7597,
+7053
+]
 },
 "G24.DE": {
 "jahre": [
