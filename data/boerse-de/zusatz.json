@@ -5151,21 +5151,69 @@ null,
 },
 "IMB.L": {
 "jahre": [
-2021
+2021,
+2022,
+2023,
+2024,
+2025
+],
+"brutto": [
+6027,
+null,
+null,
+null,
+null
 ],
 "ebit": [
-3333
+3333,
+null,
+null,
+null,
+null
 ],
 "ocf": [
-2167
+2167,
+null,
+null,
+null,
+null
 ],
 "capex": [
-200
+200,
+null,
+null,
+null,
+null
+],
+"da": [
+579,
+465,
+507,
+515,
+532
 ],
 "debt": [
-10106
+10106,
+null,
+null,
+null,
+null
 ],
-"hinweis": "Geschäftsjahr endet im September (2021 = Geschäftsjahr bis 30.09.2021). Berichtswährung GBP (Mio. GBP). Nur Lücke 2021 aus der Quelle ergänzt (ESEF-Daten beginnen 2022); Schulden inkl. Leasingverbindlichkeiten."
+"zins": [
+435,
+null,
+null,
+null,
+null
+],
+"steuer": [
+331,
+null,
+null,
+null,
+null
+],
+"hinweis": "Geschäftsjahr endet im September (2021 = Geschäftsjahr bis 30.09.2021). Berichtswährung GBP (Mio. GBP). Lücke 2021 aus der Quelle ergänzt (ESEF-Daten beginnen 2022); Abschreibungen 2021 bis 2025 aus der Quelle (Lücke in den ESEF-Daten). Schulden inkl. Leasingverbindlichkeiten."
 },
 "ABF.L": {
 "jahre": [

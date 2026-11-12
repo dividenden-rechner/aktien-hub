@@ -113,28 +113,7 @@
  },
  "uk_zusatz_offen": {
   "stand": "2026-11-12",
-  "hinweis": "FTSE 100: Lücken in data/boerse-de/zusatz.json nach Lauf mit stockanalysis.com. Nicht geraten. Waehrung je Firma im Feld waehrung in data/uk/boerse-de-reihen.json (bisher nur für bearbeitete Firmen und die 15 ESEF-Firmen gesetzt; für die übrigen gilt weiter der Standard EUR).",
-  "nicht_bearbeitet_lauf_zu_gross": [
-   "ITRK.L Intertek",
-   "JD.L JD Sports",
-   "DCC.L DCC",
-   "CTEC.L ConvaTec",
-   "CNA.L Centrica",
-   "BTRW.L Barratt Redrow",
-   "BRBY.L Burberry",
-   "AUTO.L Auto Trader",
-   "GAW.L Games Workshop",
-   "BAB.L Babcock",
-   "HWDN.L Howden Joinery",
-   "ENT.L Entain",
-   "FRES.L Fresnillo",
-   "EDV.L Endeavour Mining",
-   "AAF.L Airtel Africa (waehrung vermutlich USD, prüfen)",
-   "Waehrung dieser Firmen noch nicht gesetzt; Reihen in Berichtswährung (nicht Pence)"
-  ],
-  "nicht_bearbeitet_banken_versicherer": [
-   "LLOY.L Lloyds, NWG.L NatWest (ESEF liefert Cashflow, Capex, Cash; Schulden/Umsatz/operatives Ergebnis bei Banken nicht vergleichbar), PRU.L Prudential, LGEN.L Legal & General, PHNX.L Phoenix, MNG.L M&G, III.L 3i, ADM.L Admiral: nicht bearbeitet, nur sinnvoll vergleichbare Posten (Capex, Abschreibungen, Dividenden) möglich"
-  ],
+  "hinweis": "FTSE 100: Lücken in data/boerse-de/zusatz.json nach Läufen mit stockanalysis.com (Stand Gruppe 8 bis 10). Nicht geraten. Währung je Firma im Feld waehrung in data/uk/boerse-de-reihen.json; für alle bearbeiteten Firmen gegen die Quelle geprüft (keine Korrektur nötig).",
   "esef_ohne_luecke_nicht_angefasst": [
    "SSE.L",
    "TSCO.L",
@@ -143,36 +122,6 @@
    "UU.L",
    "BT-A.L",
    "TW.L (Kerndaten 2021 bis 2025 vollständig in ESEF)"
-  ],
-  "SGRO.L Segro": [
-   "Capex 2021-2025: stockanalysis-Cashflowseite nicht auffindbar (ESEF-Lücke bleibt)"
-  ],
-  "CPG.L Compass": [
-   "Cashflow, Cash, Schulden 2021-2025: nur Gewinnrechnungsseite auffindbar"
-  ],
-  "ABF.L ABF": [
-   "Cashflow 2021-2025, Zinsen, Steuern: Cashflowseite nicht auffindbar"
-  ],
-  "BNZL.L Bunzl": [
-   "Cash, Schulden, operatives Ergebnis 2021-2025: Seiten nicht auffindbar"
-  ],
-  "CRDA.L Croda": [
-   "Cash, Schulden, operatives Ergebnis 2021-2025: Seiten nicht auffindbar"
-  ],
-  "CCH.L Coca-Cola HBC": [
-   "Cashflow 2021-2025: Cashflowseite nicht auffindbar"
-  ],
-  "SN.L Smith & Nephew": [
-   "Cash und Schulden 2021-2025: Bilanzseite nicht auffindbar"
-  ],
-  "SBRY.L Sainsbury": [
-   "Cash und Schulden 2021-2025: Bilanzseite nicht auffindbar; 2021 insgesamt nicht in der Quelle"
-  ],
-  "SMIN.L Smiths": [
-   "Cashflow, Cash, Schulden 2021-2025: nicht auffindbar; operatives Ergebnis 2021 nicht in der Quelle"
-  ],
-  "SPX.L Spirax": [
-   "Cashflow, Cash, Schulden 2021-2025: nicht auffindbar"
   ],
   "EXPN.L Experian": [
    "Geschäftsjahr 2021 (bis März 2021): Quelle beginnt mit 2022"
@@ -190,6 +139,87 @@
    "ULVR.L Unilever, GSK.L GSK, AAL.L Anglo American, SMIN.L Smiths: Gewinnrechnung der Quelle auf neu dargestellter Basis (Abspaltungen), boerse.de-Umsatzreihe teils alte Basis",
    "BATS.L: operativer Cashflow 2025 (6.342) laut Quelle auffällig niedrig, nicht gegen Bericht geprüft",
    "RR.L: operativer Cashflow 2021 negativ laut Quelle, nicht geprüft"
+  ],
+  "nachgeholt_gruppe_8_bis_10": [
+   "ITRK, JD, CTEC, CNA, BTRW, AUTO, GAW, BAB, HWDN, ENT, FRES, EDV, AAF, BRBY vollständig (Geschäftsjahre bei JD/BTRW/AUTO/GAW/BAB/BRBY/AAF im hinweis; 2021 fehlt dort, weil die Quelle erst mit 2022 beginnt)",
+   "LLOY, PRU, LGEN, ADM: nur sinnvoll vergleichbare Posten (Capex, Abschreibungen, Dividenden, Rückkäufe; Cashflow bei Banken/Versicherern mit Hinweis)",
+   "SPX, SMIN, CCH, SN, SBRY, BNZL, CRDA, IMB: Teillücken geschlossen, soweit Quelle abrufbar"
+  ],
+  "offen_neu": {
+   "DCC.L DCC": [
+    "Cashflow, Cash, Schulden 2021-2025: stockanalysis-Cashflow- und Bilanzseite nicht abrufbar (nur Gewinnrechnung); Stockopedia grenzt den operativen Cashflow nicht eindeutig ab, deshalb nicht übernommen",
+    "Umsatz der Quelle ab 2024 auf fortgeführte Bereiche neu dargestellt"
+   ],
+   "CPG.L Compass": [
+    "Cashflow, Cash, Schulden 2021-2025: nur Gewinnrechnungsseite abrufbar"
+   ],
+   "ABF.L ABF": [
+    "Cashflow 2021-2025, Zinsen, Steuern: Cashflowseite nicht abrufbar"
+   ],
+   "BNZL.L Bunzl": [
+    "Cash und Schulden 2021-2025: Bilanzseite nicht abrufbar"
+   ],
+   "CRDA.L Croda": [
+    "Cash und Schulden 2021-2025: Bilanzseite nicht abrufbar"
+   ],
+   "SGRO.L Segro": [
+    "Capex 2021-2025: Cashflowseite nicht abrufbar, bei einem Immobilienkonzern ohnehin schwer abgrenzbar"
+   ],
+   "PHNX.L Phoenix": [
+    "Cashflow, Capex, Dividenden, Bilanz: keine abrufbare stockanalysis-Seite (Treffer nur für andere Firmen)"
+   ],
+   "III.L 3i": [
+    "Cashflow, Capex, Dividenden, Bilanz: keine abrufbare stockanalysis-Seite; als Beteiligungsgesellschaft ohnehin kaum mit Industriekennzahlen vergleichbar"
+   ],
+   "MNG.L M&G": [
+    "Abschreibungen, Schulden: stockanalysis-Cashflow-/Bilanzseite nicht abrufbar (ESEF liefert Cashflow, Capex, Dividenden, Cash)"
+   ],
+   "NWG.L NatWest": [
+    "ESEF liefert Cashflow, Capex, Abschreibungen, Dividenden, Rückkäufe, Zinsen, Steuern, Cash vollständig; Rest bei Banken nicht vergleichbar, nicht angefasst"
+   ],
+   "Banken/Versicherer": [
+    "LLOY, PRU, ADM: Umsatz, operatives Ergebnis und Cash/Schulden (Banken) nicht sinnvoll vergleichbar, weggelassen; LGEN: Schulden der Quelle enthalten Fondsverbindlichkeiten, weggelassen"
+   ],
+   "Sonstige Hinweise": [
+    "EDV.L: Umsatz 2021/2022 in der Quelle neu dargestellt (2.642/2.069 gegenüber 2.778/2.508), Zinsen und Steuern nicht abrufbar",
+    "HWDN.L: Zinsen und Steuern nicht abrufbar; operatives Ergebnis 2023 und 2024 identisch (338,9) laut Quelle",
+    "CNA.L: operatives Ergebnis 2022/2023 inkl. Bewertungseffekte (8.306/13.124)",
+    "FRES.L: Steuern 2022/2023 negativ laut Quelle"
+   ]
+  }
+ },
+ "de_zusatz_offen": {
+  "stand": "2026-11-12",
+  "hinweis": "DAX: Lücken in data/boerse-de/zusatz.json nach Lauf mit stockanalysis.com und Konzernabschlüssen. Nicht geraten. Keine DAX-Firma in den ESEF-Daten.",
+  "EOAN.DE E.ON": [
+   "Cash, Schulden, operatives Ergebnis 2021-2025: stockanalysis liefert für E.ON keine Operating-Income-Zeile und die Bilanzseite ist nicht abrufbar; Stockopedia-Werte (Cash inkl. kurzfristiger Anlagen, kein Schuldenwert) nicht übernommen. Geschäftsberichte 2021-2025 müssten einzeln ausgewertet werden"
+  ],
+  "RWE.DE RWE": [
+   "Cash, Schulden, operatives Ergebnis 2021-2025: wie E.ON (Gewinnrechnung nur mit Umsatz, Bilanzseite nicht abrufbar); Konzernberichte weisen Nettoverschuldung aus, aber nicht Cash und Brutto-Schulden getrennt in einer Mehrjahrestabelle"
+  ],
+  "G24.DE Scout24": [
+   "Cash und Schulden 2021-2025: keine brauchbare Quelle (Stockopedia ohne Schulden)",
+   "Cashflow und Capex stammen aus Stockopedia, nicht aus stockanalysis oder Geschäftsbericht (im hinweis vermerkt)"
+  ],
+  "VNA.DE Vonovia": [
+   "Capex: nicht sinnvoll abgrenzbar (Quelle nur mit Erwerb von Immobilien), weggelassen"
+  ],
+  "P911.DE Porsche AG": [
+   "Capex ohne aktivierte Entwicklungskosten; 2022 aus Drittquelle (investcroc.com); Dividenden nicht übernommen (Cashflow weist Gewinnabführung und Dividende zusammen aus)"
+  ],
+  "CON.DE Continental": [
+   "Cashflow 2021-2023 vermutlich inkl. Automotive, ab 2024 ohne; operativer Cashflow 2025 (395) auffällig niedrig, nicht gegen den Bericht geprüft"
+  ],
+  "Banken/Versicherer": [
+   "MUV2, DBK, CBK, HNR1, ALV: Cash und Schulden nicht sinnvoll vergleichbar, nicht ergänzt; MUV2 Capex 2021 fehlt (Quelle)"
+  ],
+  "SY1.DE Symrise": [
+   "Abschreibungen 2025 (Quelle 163) nicht plausibel, weggelassen"
+  ],
+  "Sonstige Hinweise": [
+   "ENR.DE, IFX.DE: Geschäftsjahr bis September",
+   "DTG.DE: Cashflow, Cash, Schulden inkl. Finanzdienstleistungen; Cash 2024 (6.363) deckungsgleich mit Siemens Energy 2024, aus der Quelle übernommen, nicht gegen den Bericht geprüft",
+   "PAH3.DE: Holding, Schulden 2021 ohne Angabe"
   ]
  }
 }
