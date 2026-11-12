@@ -8,13 +8,13 @@ category: Quartalszahlen
 quelle_url: https://news.vrtx.com/news-releases/news-release-details/vertex-reports-third-quarter-2026-financial-results
 quelle_name: "Pressemitteilung Vertex Pharmaceuticals zum dritten Quartal 2026"
 logo_name: "Vertex Pharmaceuticals"
-image: https://images.unsplash.com/photo-1732690233982-1d4567384ea1?ixid=M3wxMTE3OTgzfDB8MXxzZWFyY2h8Mnx8cGhhcm1hY2V1dGljYWwlMjBsYWJvcmF0b3J5fGVufDF8MHx8fDE3OTQ0MzMwNTR8MA&ixlib=rb-4.1.0&w=1600&h=900&fit=crop&crop=entropy&q=80&fm=jpg
-image_alt: "Foto zu Vertex Pharmaceuticals: A person in a lab coat and gloves working on a machine"
-image_credit: "Foto: Mina Rad auf Unsplash"
-image_source: https://unsplash.com/photos/a-person-in-a-lab-coat-and-gloves-working-on-a-machine-y6zGvWKU6sE?utm_source=dividenden-rechner&utm_medium=referral
-image_artist_url: https://unsplash.com/@miinrad?utm_source=dividenden-rechner&utm_medium=referral
 logo_symbol: VRTX
 logo_domain: vrtx.com
+image: https://images.unsplash.com/photo-1614935151651-0bea6508db6b?ixid=M3wxMTE3OTgzfDB8MXxzZWFyY2h8MXx8cGhhcm1hJTIwbGFiJTIwc2NpZW50aXN0fGVufDF8MHx8fDE3OTQ1MTg4ODF8MA&ixlib=rb-4.1.0&w=1600&h=900&fit=crop&crop=entropy&q=80&fm=jpg
+image_alt: "Foto zu Vertex Pharmaceuticals: Female scientist pipetting colored chemicals into a tube."
+image_credit: "Foto: Julia Koblitz auf Unsplash"
+image_source: https://unsplash.com/photos/scientist-using-pipette-with-test-tubes-in-lab-RlOAwXt2fEA?utm_source=dividenden-rechner&utm_medium=referral
+image_artist_url: https://unsplash.com/@jkoblitz?utm_source=dividenden-rechner&utm_medium=referral
 logo_file: assets/logos/vrtx.png
 ---
 <!-- PRÜFEN: Alle Zahlen stammen aus der Vertex-Pressemitteilung vom 2. November 2026. Nicht geprüft: Kursreaktion der Aktie und die Erwartungen der Analysten, deshalb stehen sie nicht im Text. Vertex zahlt keine Dividende. -->

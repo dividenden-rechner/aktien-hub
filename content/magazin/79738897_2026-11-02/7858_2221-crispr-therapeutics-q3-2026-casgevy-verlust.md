@@ -11,9 +11,9 @@ logo_name: "CRISPR Therapeutics"
 logo_symbol: CRSP
 logo_domain: crisprtx.com
 image: assets/magazin/crispr-therapeutics-q3-2026-casgevy-verlust-foto.jpg
-image_alt: "Foto zu CRISPR Therapeutics: CRISPR-Cas9 is a customizable tool that lets scientists cut and insert small pieces of DNA at precise areas along a DNA strand. This lets scientists study our genes in a specific, targeted way. Credit"
-image_credit: "Foto: NIH Image Gallery from Bethesda, Maryland, USA / Wikimedia Commons, Public domain"
-image_source: https://commons.wikimedia.org/wiki/File:CRISPR_Cas9_(41124064215).jpg
+image_alt: "Foto zu CRISPR Therapeutics: CRISPR-Cas9 is a customizable tool that lets scientists cut and insert small pieces of DNA at precise areas along a DNA strand. The tool is composed of two basic parts: the Cas9 protein, which acts li"
+image_credit: "Foto: National Human Genome Research Institute from Bethesda, MD, / Wikimedia Commons, CC BY 2.0"
+image_source: https://commons.wikimedia.org/wiki/File:CRISPR-Cas9_Editing_of_the_Genome_(26453307604).jpg
 image_artist_url: 
 logo_file: assets/logos/crsp.png
 ---

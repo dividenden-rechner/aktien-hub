@@ -1,5 +1,4 @@
-Unsplash nicht erreichbar: HTTP Error 403: Forbidden
-Foto-Kandidaten: 30 (Commons 30, Unsplash 0)
+Foto-Kandidaten: 62 (Commons 30, Unsplash 32)
   0: File:BalticServers data center.jpg | Server room of BalticServers
   1: File:CAMPUS - Military Data Center (52106762896).jpg | One of three new army data centers that has started operations. It's in the coun
   2: File:CERN data centre.jpg | CERN data centre from the outside
@@ -31,8 +30,7 @@ Foto-Kandidaten: 30 (Commons 30, Unsplash 0)
   28: File:Business applications of AI - 2024 AI index.jpg | Tasks that are automated with AI by a significant proportion of companies, in 20
   29: File:ESO data center (eso-data-centre-9101).jpg | The ESO data center collects all the data ever produced by the VLT, most of the 
 Verfuegbare Flash-Modelle: gemini-3.8-flash, gemini-3.7-flash, gemini-3.6-flash, gemini-3.5-flash, gemini-3.5-flash-lite, gemini-3.1-flash-lite, gemini-3.1-flash-lite-preview, gemini-3-flash-preview, gemini-2.5-flash, gemini-2.5-flash-lite, gemini-flash-latest, gemini-omni-1.1-flash, gemini-omni-1.2-flash, gemini-flash-lite-latest, gemini-omni-flash-preview
-Modell-Problem -> gemini-3.8-flash: The read operation timed out
-Modell-Problem -> gemini-3.7-flash: Fehler 503: {
+Modell-Problem -> gemini-3.8-flash: Fehler 503: {
   "error": {
     "code": 503,
     "message": "This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.",
@@ -40,21 +38,17 @@ Modell-Problem -> gemini-3.7-flash: Fehler 503: {
   }
 }
 
+Modell-Problem -> gemini-3.8-flash: Fehler 429: {
+  "error": {
+    "code": 429,
+    "message": "You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://aistudio.google.com/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceede
+Tageskontingent dieses Modells aufgebraucht, naechstes Modell.
 Modell-Problem -> gemini-3.7-flash: The read operation timed out
-Modell-Problem -> gemini-3.6-flash: Fehler 503: {
-  "error": {
-    "code": 503,
-    "message": "This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.",
-    "status": "UNAVAILABLE"
-  }
-}
-
 Modell: gemini-3.6-flash
-Auswahl durch das Modell: 0
-Neues Foto: File:BalticServers data center.jpg -> assets/magazin/ki-finanzierungsnetz-nvidia-meta-coreweave-foto.jpg
+Auswahl durch das Modell: 41
+Neues Foto: Unsplash aWslrFhs1w4 -> https://images.unsplash.com/photo-1564457461758-8ff96e439e83?ixid=M3wxMTE3OTgzfDB8MXxzZWFyY2h8NXx8c2VydmVyJTIwcm9vbXxlbnwxfDB8fHwxNzk0NTE4NDY1fDA&ixlib=rb-4.1.0&w=1600&h=900&fit=crop&crop=entropy&q=80&fm=jpg
 Logo-Angaben gesetzt, fetch_logos holt das Logo neu.
-Unsplash nicht erreichbar: HTTP Error 403: Forbidden
-Foto-Kandidaten: 26 (Commons 26, Unsplash 0)
+Foto-Kandidaten: 65 (Commons 26, Unsplash 39)
   0: File:A pharmaceutical laboratory with books and equipment on a lo Wellcome V0029790.jpg | A pharmaceutical laboratory with books and equipment on a long wooden table and 
   1: File:Allen & Hanbury,General Pharmaceutical Laboratory Wellcome L0005119.jpg | Pharmacy: 19th century; interior of Allen & Hanburys General Pharmaceutical Labo
   2: File:HK Chai Wan IVE 藥劑實驗室 Pharmaceutical Science Laboratory 簿模衣片 Film coated 專業教育學院柴灣分校 Rm 516.JPG | zh:柴灣 香港專業教育學院柴灣分校 藥劑科學實驗室 展覽品 藥丸 置於透明 膠瓶 備設英文標籤 貼紙
@@ -81,9 +75,12 @@ Foto-Kandidaten: 26 (Commons 26, Unsplash 0)
   23: File:Old wooden pillers preserved within Pemayangtse Monastery, Pelling, West Sikkim.jpg | Old wooden pillers preserved within Pemayangtse Monastery, Pelling, West Sikkim 
   24: File:Yellow Pills.jpg | Production of drugs, yellow pills 1995
   25: File:Pharmacie in Paulista Avenue.jpg | Pharmacie in Paulista Avenue. In some countries, such as Brazil (photo) and Fran
+  26: Unsplash HruSbX2a77M | Laboratory technician monitoring environment in lab
+  27: Unsplash y6zGvWKU6sE | A person in a lab coat and gloves working on a machine
+  28: Unsplash dvYKZyVLC9c | Laboratory technician inspecting environmental monitoring plate.
+  29: Unsplash FcIrL0o71Dk | This photograph depicted a Centers for Disease Control and Prevention (CDC) scie
 Verfuegbare Flash-Modelle: gemini-3.8-flash, gemini-3.7-flash, gemini-3.6-flash, gemini-3.5-flash, gemini-3.5-flash-lite, gemini-3.1-flash-lite, gemini-3.1-flash-lite-preview, gemini-3-flash-preview, gemini-2.5-flash, gemini-2.5-flash-lite, gemini-flash-latest, gemini-omni-1.1-flash, gemini-omni-1.2-flash, gemini-flash-lite-latest, gemini-omni-flash-preview
-Modell-Problem -> gemini-3.8-flash: The read operation timed out
-Modell-Problem -> gemini-3.7-flash: Fehler 503: {
+Modell-Problem -> gemini-3.8-flash: Fehler 503: {
   "error": {
     "code": 503,
     "message": "This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.",
@@ -91,30 +88,6 @@ Modell-Problem -> gemini-3.7-flash: Fehler 503: {
   }
 }
 
-Modell-Problem -> gemini-3.7-flash: Fehler 429: {
-  "error": {
-    "code": 429,
-    "message": "You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://aistudio.google.com/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceede
-Tageskontingent dieses Modells aufgebraucht, naechstes Modell.
-Modell: gemini-3.6-flash
-Auswahl durch das Modell: -1
-Kein passendes Foto gefunden, altes bleibt.
-Logo-Angaben gesetzt, fetch_logos holt das Logo neu.
-Unsplash nicht erreichbar: HTTP Error 403: Forbidden
-Foto-Kandidaten: 12 (Commons 12, Unsplash 0)
-  0: File:Gene-editing Techniques in Plant Cells.jpg | Different gene editing methods used in plant cells
-  1: File:20251019 Replica DNA double helix model Berlin 01.jpg | Adenine of the Replica of the DNA double helix model by Watson and Crick in the 
-  2: File:DNA Double Helix (20468181866).jpg | Credit: National Human Genome Research Institute, National Institutes of Health.
-  3: File:DNA Double Helix (4932403853).jpg | DNA Double Helix
-  4: File:DNA Helix CPK.jpg | Part of a dna double helix showing the minor groove (Space-filling model)
-  5: File:Barbara McClintock (1902-1992) shown in her laboratory in 1947.jpg | Barbara McClintock (1902-1992), Department of Genetics, Carnegie Institution at 
-  6: File:Genetics Laboratory UMAR Puerto Escondido.jpg | This is a Droplet Digital PCR System, QX200, BIORAT used for research at the Lab
-  7: File:CRISPR-Cas9 Editing of the Genome (26453307604).jpg | CRISPR-Cas9 is a customizable tool that lets scientists cut and insert small pie
-  8: File:CRISPR Cas9 (41124064215).jpg | CRISPR-Cas9 is a customizable tool that lets scientists cut and insert small pie
-  9: File:Crispr.jpg | CRISPR research
-  10: File:Schematic of CRISPR-Cas9 off-target sites with DNA bulge and RNA bulge.jpg | figure explaining DNA and RNA bulge in relations to CRISPR-cas9 off-target effec
-  11: File:Viral mediated delivery of genes to neurons 2.jpg | Figure 2.Lentivirus (upper panel) – Part of the retroviridae family (viral sizes
-Verfuegbare Flash-Modelle: gemini-3.8-flash, gemini-3.7-flash, gemini-3.6-flash, gemini-3.5-flash, gemini-3.5-flash-lite, gemini-3.1-flash-lite, gemini-3.1-flash-lite-preview, gemini-3-flash-preview, gemini-2.5-flash, gemini-2.5-flash-lite, gemini-flash-latest, gemini-omni-1.1-flash, gemini-omni-1.2-flash, gemini-flash-lite-latest, gemini-omni-flash-preview
 Modell-Problem -> gemini-3.8-flash: Fehler 503: {
   "error": {
     "code": 503,
@@ -134,11 +107,71 @@ Modell-Problem -> gemini-3.7-flash: Fehler 429: {
     "message": "You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://aistudio.google.com/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceede
 Tageskontingent dieses Modells aufgebraucht, naechstes Modell.
 Modell: gemini-3.6-flash
-Auswahl durch das Modell: 8
-Neues Foto: File:CRISPR Cas9 (41124064215).jpg -> assets/magazin/crispr-therapeutics-q3-2026-casgevy-verlust-foto.jpg
+Auswahl durch das Modell: 42
+Neues Foto: Unsplash RlOAwXt2fEA -> https://images.unsplash.com/photo-1614935151651-0bea6508db6b?ixid=M3wxMTE3OTgzfDB8MXxzZWFyY2h8MXx8cGhhcm1hJTIwbGFiJTIwc2NpZW50aXN0fGVufDF8MHx8fDE3OTQ1MTg4ODF8MA&ixlib=rb-4.1.0&w=1600&h=900&fit=crop&crop=entropy&q=80&fm=jpg
 Logo-Angaben gesetzt, fetch_logos holt das Logo neu.
-Unsplash nicht erreichbar: HTTP Error 403: Forbidden
-Foto-Kandidaten: 30 (Commons 30, Unsplash 0)
+Foto-Kandidaten: 28 (Commons 12, Unsplash 16)
+  0: File:Gene-editing Techniques in Plant Cells.jpg | Different gene editing methods used in plant cells
+  1: File:20251019 Replica DNA double helix model Berlin 01.jpg | Adenine of the Replica of the DNA double helix model by Watson and Crick in the 
+  2: File:DNA Double Helix (20468181866).jpg | Credit: National Human Genome Research Institute, National Institutes of Health.
+  3: File:DNA Double Helix (4932403853).jpg | DNA Double Helix
+  4: File:DNA Helix CPK.jpg | Part of a dna double helix showing the minor groove (Space-filling model)
+  5: File:Barbara McClintock (1902-1992) shown in her laboratory in 1947.jpg | Barbara McClintock (1902-1992), Department of Genetics, Carnegie Institution at 
+  6: File:Genetics Laboratory UMAR Puerto Escondido.jpg | This is a Droplet Digital PCR System, QX200, BIORAT used for research at the Lab
+  7: File:CRISPR-Cas9 Editing of the Genome (26453307604).jpg | CRISPR-Cas9 is a customizable tool that lets scientists cut and insert small pie
+  8: File:CRISPR Cas9 (41124064215).jpg | CRISPR-Cas9 is a customizable tool that lets scientists cut and insert small pie
+  9: File:Crispr.jpg | CRISPR research
+  10: File:Schematic of CRISPR-Cas9 off-target sites with DNA bulge and RNA bulge.jpg | figure explaining DNA and RNA bulge in relations to CRISPR-cas9 off-target effec
+  11: File:Viral mediated delivery of genes to neurons 2.jpg | Figure 2.Lentivirus (upper panel) – Part of the retroviridae family (viral sizes
+  12: Unsplash 8o_LkMpo8ug | a close up of a blue and purple structure
+  13: Unsplash -qycBqByWIY | A white and blue DNA double helix structure against a dark background
+  14: Unsplash Iy7QyzOs1bo | A glowing white DNA double helix structure floating against a dark background
+  15: Unsplash -bJj_81Zois | 3D Rendering DNA With Particles and Blurry Background.
+  16: Unsplash pRt3JVYlJho | a double strand of blue and white spirals
+  17: Unsplash uD98M9OhNmc | 3D rendering capturing the double helix structure of DNA against a blue backdrop
+  18: Unsplash Mm1VIPqd0OA | 3D visualization
+  19: Unsplash 2GEr4fLZt8A | 3D rendering capturing the double helix structure of DNA against a blue backdrop
+  20: Unsplash XknuBmnjbKg | Vaccine. Hands of a scientist, under a sterile hood, preparing the carcinoembryo
+  21: Unsplash oCLuFi9GYNA | DNA Genotyping and Sequencing. A technician works among a fleet of desktop genom
+  22: Unsplash LxPrHCm8-TI | DNA Genotyping and Sequencing. A technician validates genetic variants identifie
+  23: Unsplash rHfsPolwIgk | DNA Genotyping and Sequencing. A technician observing cells under a microscope a
+  24: Unsplash v7ibB19EUbQ | Chanelle Case Borden, Ph.D., a postdoctoral fellow in the National Cancer Instit
+  25: Unsplash GlZv6YgCUyM | DNA Genotyping and Sequencing. A technician works among a fleet of desktop genom
+  26: Unsplash Vb0GY3PWSSM | A female scientist in a laboratory looks through a microscope.
+  27: Unsplash fd0b-Bl4cFc | DNA Genotyping and Sequencing. Vials containing DNA samples from studies of the 
+Verfuegbare Flash-Modelle: gemini-3.8-flash, gemini-3.7-flash, gemini-3.6-flash, gemini-3.5-flash, gemini-3.5-flash-lite, gemini-3.1-flash-lite, gemini-3.1-flash-lite-preview, gemini-3-flash-preview, gemini-2.5-flash, gemini-2.5-flash-lite, gemini-flash-latest, gemini-omni-1.1-flash, gemini-omni-1.2-flash, gemini-flash-lite-latest, gemini-omni-flash-preview
+Modell-Problem -> gemini-3.8-flash: Fehler 503: {
+  "error": {
+    "code": 503,
+    "message": "This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.",
+    "status": "UNAVAILABLE"
+  }
+}
+
+Modell-Problem -> gemini-3.8-flash: Fehler 429: {
+  "error": {
+    "code": 429,
+    "message": "You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://aistudio.google.com/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceede
+Tageskontingent dieses Modells aufgebraucht, naechstes Modell.
+Modell-Problem -> gemini-3.7-flash: Fehler 429: {
+  "error": {
+    "code": 429,
+    "message": "You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://aistudio.google.com/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceede
+Tageskontingent dieses Modells aufgebraucht, naechstes Modell.
+Modell-Problem -> gemini-3.6-flash: The read operation timed out
+Modell-Problem -> gemini-3.5-flash: Fehler 503: {
+  "error": {
+    "code": 503,
+    "message": "This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.",
+    "status": "UNAVAILABLE"
+  }
+}
+
+Modell: gemini-3.5-flash
+Auswahl durch das Modell: 7
+Neues Foto: File:CRISPR-Cas9 Editing of the Genome (26453307604).jpg -> assets/magazin/crispr-therapeutics-q3-2026-casgevy-verlust-foto.jpg
+Logo-Angaben gesetzt, fetch_logos holt das Logo neu.
+Foto-Kandidaten: 60 (Commons 30, Unsplash 30)
   0: File:Day-1-Big-Data-&-Analytics-Conference-0077 (26760110866).jpg | Day-1-Big-Data-&-Analytics-Conference-0077
   1: File:Gartner Benjamin Arnulf Data and Analytics Summit.jpg | Benjamin Arnulf at the Gartner Data and Analytics Summit in Orlando speaking abo
   2: File:Oracle Analytics Cloud Dashboard by Benjamin Arnulf presented by Larry Ellison.jpg | Oracle Analytics Cloud Dashboard by Benjamin Arnulf presented by Larry Ellison
@@ -170,6 +203,22 @@ Foto-Kandidaten: 30 (Commons 30, Unsplash 0)
   28: File:Real-time bus tracking control room in Lebanon.jpg | A group of people in a control room monitoring a fleet management telematics sys
   29: File:SPNN Studio control room.jpg | Studio control room Saint Paul Neighborhood Network (SPNN) 550 Vandalia St #170 
 Verfuegbare Flash-Modelle: gemini-3.8-flash, gemini-3.7-flash, gemini-3.6-flash, gemini-3.5-flash, gemini-3.5-flash-lite, gemini-3.1-flash-lite, gemini-3.1-flash-lite-preview, gemini-3-flash-preview, gemini-2.5-flash, gemini-2.5-flash-lite, gemini-flash-latest, gemini-omni-1.1-flash, gemini-omni-1.2-flash, gemini-flash-lite-latest, gemini-omni-flash-preview
+Modell-Problem -> gemini-3.8-flash: Fehler 503: {
+  "error": {
+    "code": 503,
+    "message": "This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.",
+    "status": "UNAVAILABLE"
+  }
+}
+
+Modell-Problem -> gemini-3.8-flash: Fehler 503: {
+  "error": {
+    "code": 503,
+    "message": "This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.",
+    "status": "UNAVAILABLE"
+  }
+}
+
 Modell-Problem -> gemini-3.8-flash: Fehler 429: {
   "error": {
     "code": 429,
@@ -191,11 +240,10 @@ Modell-Problem -> gemini-3.5-flash: Fehler 429: {
     "message": "You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://aistudio.google.com/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceede
 Tageskontingent dieses Modells aufgebraucht, naechstes Modell.
 Modell: gemini-3.5-flash-lite
-Auswahl durch das Modell: 28
-Neues Foto: File:Real-time bus tracking control room in Lebanon.jpg -> assets/magazin/palantir-q3-2026-zahlen-prognose-foto.jpg
+Auswahl durch das Modell: 24
+Neues Foto: File:ESA-ESOC Main Control Room.jpg -> assets/magazin/palantir-q3-2026-zahlen-prognose-foto.jpg
 Logo-Angaben gesetzt, fetch_logos holt das Logo neu.
-Unsplash nicht erreichbar: HTTP Error 403: Forbidden
-Foto-Kandidaten: 29 (Commons 29, Unsplash 0)
+Foto-Kandidaten: 51 (Commons 27, Unsplash 24)
   0: File:Fawley Oil Refinery (27149863837).jpg | View of Fawley Oil Refinery on the mainland, from the ferry at East Cowes, Isle 
   1: File:Light from Preemraff oil refinery, Lysekil Municipality.jpg | The light from Preemraff oil refinery at night, as seen from the water tower in 
   2: File:Mina-Al-Ahmadi oil refinery night.jpg | An oil refinery in Mina-Al-Ahmadi, Kuwait
@@ -219,12 +267,59 @@ Foto-Kandidaten: 29 (Commons 29, Unsplash 0)
   20: File:Petrochemical Refineries in Metro Houston, Texas (16294430247).jpg | Houston–The Woodlands–Sugar Land is a nine-county metropolitan area defined by t
   21: File:Petrochemical Refineries in Metro Houston, Texas (16454331446).jpg | Houston–The Woodlands–Sugar Land is a nine-county metropolitan area defined by t
   22: File:Photo of Texas city refineries.jpg | Photo of Texas city rifineres seen from Galveston bay
-  23: File:Flare Tower - February 2024.jpg | Flare Tower | NR57 races past Corio, with an extended ten carriage Overland serv
-  24: File:Total satorp refinery flare - panoramio.jpg | total satorp refinery flare
-  25: File:Big Spring Refinery (Big Spring, Texas, USA) 1 (48917011762).jpg | Petroleum is the # 1 most important energy source in modern civilization. Withou
-  26: File:Big Spring Refinery (Big Spring, Texas, USA) 2 (48916278253).jpg | Petroleum is the # 1 most important energy source in modern civilization. Withou
-  27: File:United States Strategic Petroleum Reserve 026.jpg | WORKER CONTROLS FLOW OF CRUDE OIL THROUGH LOADING ARM AT BULL BAY TERMINAL. THE 
-  28: File:Valero refinery, Port Arthur TX, historical plaque.jpg | Inscription reads - "The eruption of the Lucas gusher at the Spindletop oil fiel
+  23: File:Big Spring Refinery (Big Spring, Texas, USA) 1 (48917011762).jpg | Petroleum is the # 1 most important energy source in modern civilization. Withou
+  24: File:Big Spring Refinery (Big Spring, Texas, USA) 2 (48916278253).jpg | Petroleum is the # 1 most important energy source in modern civilization. Withou
+  25: File:United States Strategic Petroleum Reserve 026.jpg | WORKER CONTROLS FLOW OF CRUDE OIL THROUGH LOADING ARM AT BULL BAY TERMINAL. THE 
+  26: File:Valero refinery, Port Arthur TX, historical plaque.jpg | Inscription reads - "The eruption of the Lucas gusher at the Spindletop oil fiel
+  27: Unsplash u13zBF4r56A | The Oil Refinery Factory.
+  28: Unsplash NShzzEoljvY | Black and white refinery
+  29: Unsplash p0_PBYu2Gtk | Operational Upset, an emergency release burn-off!
+Verfuegbare Flash-Modelle: gemini-3.8-flash, gemini-3.7-flash, gemini-3.6-flash, gemini-3.5-flash, gemini-3.5-flash-lite, gemini-3.1-flash-lite, gemini-3.1-flash-lite-preview, gemini-3-flash-preview, gemini-2.5-flash, gemini-2.5-flash-lite, gemini-flash-latest, gemini-omni-1.1-flash, gemini-omni-1.2-flash, gemini-flash-lite-latest, gemini-omni-flash-preview
+Modell-Problem -> gemini-3.8-flash: Fehler 429: {
+  "error": {
+    "code": 429,
+    "message": "You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://aistudio.google.com/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceede
+Tageskontingent dieses Modells aufgebraucht, naechstes Modell.
+Modell-Problem -> gemini-3.7-flash: Fehler 429: {
+  "error": {
+    "code": 429,
+    "message": "You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://aistudio.google.com/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceede
+Tageskontingent dieses Modells aufgebraucht, naechstes Modell.
+Modell: gemini-3.6-flash
+Auswahl durch das Modell: -1
+Kein passendes Foto gefunden, altes bleibt.
+Logo-Angaben gesetzt, fetch_logos holt das Logo neu.
+Foto-Kandidaten: 59 (Commons 19, Unsplash 40)
+  0: File:Datacenter Server Racks (22370909788).jpg | Real Estate
+  1: File:Duga-1 radar data center inside empty server racks 2018.jpg | Disclaimer of best intentions Traveling to the Chernobyl exclusion zone 'as a to
+  2: File:Racks Amravati Data Center.jpg | Data Storage Racks at Pi Data Centers
+  3: File:SunRackMountServers.jpg | Sun Rack Mount Servers
+  4: File:Technician with laptop working on server rack at NERSC.jpg | CC0 waiver: To the extent possible under law, I waive all copyright and related 
+  5: File:Wikimedia Foundation Servers-8055 02.jpg | Wikimedia Foundation Servers
+  6: File:Wikimedia Foundation Servers-8055 12.jpg | Wikimedia Foundation Servers
+  7: File:Wikimedia Foundation Servers-8055 13.jpg | Wikimedia Foundation Servers
+  8: File:Wikimedia Foundation Servers-8055 15.jpg | Wikimedia Foundation Servers
+  9: File:Wikimedia Foundation Servers-8055 22.jpg | Wikimedia Foundation Servers
+  10: File:Anti ai data center sign 2.jpg | Anti-data-center sentiment in rural Kansas neighborhood
+  11: File:Business applications of AI - 2024 AI index.jpg | Tasks that are automated with AI by a significant proportion of companies, in 20
+  12: File:Data center infrastructure in the United States.jpg | Data center infrastructure in the United States
+  13: File:ESO data center (eso-data-centre-9101).jpg | The ESO data center collects all the data ever produced by the VLT, most of the 
+  14: File:ESO data center (eso-data-centre-9107).jpg | The ESO data center collects all the data ever produced by the VLT, most of the 
+  15: File:Number of AI-related regulations in the US - 2024 AI index.jpg | Number of AI-related regulations passed in the US between 2016 and 2023 (data fr
+  16: File:Opinions on AI risk by country - 2024 AI index.jpg | Chart representing the percentage of people reporting nervousness about AI, by c
+  17: File:Poll on AI effect on jobs - 2024 AI index.jpg | 2023 opinion poll on whether people believe AI will change or replace their own 
+  18: File:Private investment in generative AI - 2024 AI index.jpg | Private investment in AI (pink) and generative AI (green). The data is from Quid
+  19: Unsplash 5b9Lr-ggr0E | chip, chipset, AI, artificial intelligence, microchip, technology, innovation, e
+  20: Unsplash U9e6ySWMW_0 | chip, chipset, AI, artificial intelligence, microchip, technology, innovation, e
+  21: Unsplash nWgpCe-LQa4 | I took some macros of my computer while it was running. The photos turned out re
+  22: Unsplash 2bJfnIwQvpk | A new amd ryzen processor sits on a desk
+  23: Unsplash N0QoGN75bkQ | 3D Icon of AMD
+  24: Unsplash DRZ26ZSVTtg | Amd logo illuminated on a dark ceiling
+  25: Unsplash UxaHUdG3SzU | Asus prime b550-plus motherboard close-up view
+  26: Unsplash sw8-yizppMs | black AMD graphics card
+  27: Unsplash lVZjvw-u9V8 | Electric Control Cabinet Production Factory
+  28: Unsplash M5tzZtFCOfs | cable network
+  29: Unsplash 2JJ3wBHu4_0 | a rack of servers in a server room
 Verfuegbare Flash-Modelle: gemini-3.8-flash, gemini-3.7-flash, gemini-3.6-flash, gemini-3.5-flash, gemini-3.5-flash-lite, gemini-3.1-flash-lite, gemini-3.1-flash-lite-preview, gemini-3-flash-preview, gemini-2.5-flash, gemini-2.5-flash-lite, gemini-flash-latest, gemini-omni-1.1-flash, gemini-omni-1.2-flash, gemini-flash-lite-latest, gemini-omni-flash-preview
 Modell-Problem -> gemini-3.8-flash: Fehler 429: {
   "error": {
@@ -247,47 +342,10 @@ Modell-Problem -> gemini-3.5-flash: Fehler 429: {
     "message": "You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://aistudio.google.com/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceede
 Tageskontingent dieses Modells aufgebraucht, naechstes Modell.
 Modell: gemini-3.5-flash-lite
-Auswahl durch das Modell: 17
-Neues Foto: File:Marathon refinery and Garyville Louisville.jpg -> assets/magazin/marathon-petroleum-q3-2026-quartalszahlen-foto.jpg
+Auswahl durch das Modell: 22
+Neues Foto: Unsplash 2bJfnIwQvpk -> https://images.unsplash.com/photo-1753097617151-b8994eb0bb3e?ixid=M3wxMTE3OTgzfDB8MXxzZWFyY2h8NHx8QU1EJTIwSW5zdGluY3QlMjBhY2NlbGVyYXRvcnxlbnwxfDB8fHwxNzk0NTE5NDYzfDA&ixlib=rb-4.1.0&w=1600&h=900&fit=crop&crop=entropy&q=80&fm=jpg
 Logo-Angaben gesetzt, fetch_logos holt das Logo neu.
-Unsplash nicht erreichbar: HTTP Error 403: Forbidden
-Foto-Kandidaten: 19 (Commons 19, Unsplash 0)
-  0: File:Datacenter Server Racks (22370909788).jpg | Real Estate
-  1: File:Duga-1 radar data center inside empty server racks 2018.jpg | Disclaimer of best intentions Traveling to the Chernobyl exclusion zone 'as a to
-  2: File:Racks Amravati Data Center.jpg | Data Storage Racks at Pi Data Centers
-  3: File:SunRackMountServers.jpg | Sun Rack Mount Servers
-  4: File:Technician with laptop working on server rack at NERSC.jpg | CC0 waiver: To the extent possible under law, I waive all copyright and related 
-  5: File:Wikimedia Foundation Servers-8055 02.jpg | Wikimedia Foundation Servers
-  6: File:Wikimedia Foundation Servers-8055 12.jpg | Wikimedia Foundation Servers
-  7: File:Wikimedia Foundation Servers-8055 13.jpg | Wikimedia Foundation Servers
-  8: File:Wikimedia Foundation Servers-8055 15.jpg | Wikimedia Foundation Servers
-  9: File:Wikimedia Foundation Servers-8055 22.jpg | Wikimedia Foundation Servers
-  10: File:Anti ai data center sign 2.jpg | Anti-data-center sentiment in rural Kansas neighborhood
-  11: File:Business applications of AI - 2024 AI index.jpg | Tasks that are automated with AI by a significant proportion of companies, in 20
-  12: File:Data center infrastructure in the United States.jpg | Data center infrastructure in the United States
-  13: File:ESO data center (eso-data-centre-9101).jpg | The ESO data center collects all the data ever produced by the VLT, most of the 
-  14: File:ESO data center (eso-data-centre-9107).jpg | The ESO data center collects all the data ever produced by the VLT, most of the 
-  15: File:Number of AI-related regulations in the US - 2024 AI index.jpg | Number of AI-related regulations passed in the US between 2016 and 2023 (data fr
-  16: File:Opinions on AI risk by country - 2024 AI index.jpg | Chart representing the percentage of people reporting nervousness about AI, by c
-  17: File:Poll on AI effect on jobs - 2024 AI index.jpg | 2023 opinion poll on whether people believe AI will change or replace their own 
-  18: File:Private investment in generative AI - 2024 AI index.jpg | Private investment in AI (pink) and generative AI (green). The data is from Quid
-Verfuegbare Flash-Modelle: gemini-3.8-flash, gemini-3.7-flash, gemini-3.6-flash, gemini-3.5-flash, gemini-3.5-flash-lite, gemini-3.1-flash-lite, gemini-3.1-flash-lite-preview, gemini-3-flash-preview, gemini-2.5-flash, gemini-2.5-flash-lite, gemini-flash-latest, gemini-omni-1.1-flash, gemini-omni-1.2-flash, gemini-flash-lite-latest, gemini-omni-flash-preview
-Modell-Problem -> gemini-3.8-flash: Fehler 429: {
-  "error": {
-    "code": 429,
-    "message": "You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://aistudio.google.com/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceede
-Tageskontingent dieses Modells aufgebraucht, naechstes Modell.
-Modell-Problem -> gemini-3.7-flash: Fehler 429: {
-  "error": {
-    "code": 429,
-    "message": "You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://aistudio.google.com/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceede
-Tageskontingent dieses Modells aufgebraucht, naechstes Modell.
-Modell: gemini-3.6-flash
-Auswahl durch das Modell: 0
-Neues Foto: File:Datacenter Server Racks (22370909788).jpg -> assets/magazin/amd-q3-2026-quartalszahlen-foto.jpg
-Logo-Angaben gesetzt, fetch_logos holt das Logo neu.
-Unsplash nicht erreichbar: HTTP Error 403: Forbidden
-Foto-Kandidaten: 30 (Commons 30, Unsplash 0)
+Foto-Kandidaten: 66 (Commons 30, Unsplash 36)
   0: File:Corridor, Nambour General Hospital, 2025,.jpg | Corridor, Nambour General Hospital, Queensland, 2025
   1: File:Corridor at Mater Private Hospital, Brisbane.jpg | Corridor at Mater Private Hospital, Brisbane
   2: File:Corridor in Uddevalla Hospital.jpg | Corridor in Uddevalla Hospital, Uddevalla, Sweden.
@@ -343,11 +401,32 @@ Modell: gemini-3.5-flash-lite
 Auswahl durch das Modell: 15
 Neues Foto: File:Patient lying in bed in intensive care unit of hospital with apparatuses and hemodialysis machine.jpg -> assets/magazin/fresenius-q3-2026-quartalszahlen-foto.jpg
 Logo-Angaben gesetzt, fetch_logos holt das Logo neu.
-Unsplash nicht erreichbar: HTTP Error 403: Forbidden
-Foto-Kandidaten: 3 (Commons 3, Unsplash 0)
+Foto-Kandidaten: 25 (Commons 3, Unsplash 22)
   0: File:COVIran Barekat vaccine production 03.jpg | Production of COVIran Barekat vaccine, an Iranian COVID-19 vaccine, in a newly c
   1: File:Novo Nordisk, Hillerød, 2024.jpg | Novo Nordisk, Hillerød, 2024
   2: File:Novo Nordisk, byggeri i Hillerød 2024.jpg | Byggeri ved Novo Nordisk i Hillerød
+  3: Unsplash J4HwEwZtIs8 | novolog insulin pen, 4mm bd nano needle with a drop of insulin coming out
+  4: Unsplash TzKc7FGaL7Y | Auto-Injector Pen for the treatment of Diabetes
+  5: Unsplash msQB97gUxY0 | Insulin pens on wooden background, close up
+  6: Unsplash gE4IuJO078g | Close up of a pen ball
+  7: Unsplash HKBGL6bjegY | Close-up of a pen tip against a blurred blue background
+  8: Unsplash 1SEbUPjlgrg | The surgeon/ physician signs my operative knee before knee replacement surgery a
+  9: Unsplash Nv7rzFJm43Y | Blue ink pen tip against a blurred purple background
+  10: Unsplash MlTXrdhYOdk | a close-up of a syringe
+  11: Unsplash NiXMv9iFN1c | Auto-Injector Pen for the treatment of Diabetes
+  12: Unsplash aLCcungJbrc | Auto-Injector Pen for the treatment of Diabetes
+  13: Unsplash S5y5jdRCCsk | Auto-Injector Pen for the treatment of Diabetes
+  14: Unsplash CQT9TjSVMPg | white branded gyro pen
+  15: Unsplash vEbgdrArfq8 | ZIMHI Naloxone
+  16: Unsplash pnRJ4RXgabw | McKesson 27g 1/2" 1cc syringe, individually wrapped
+  17: Unsplash WNX6uk-1LV4 | GLSUN is a optical solution company, offer its customers low-cost, reliable opti
+  18: Unsplash xD5SWy7hMbw | Liquid washing equipment
+  19: Unsplash PT70CT6mATQ | Chocolate Factory
+  20: Unsplash KR9j7uqFhnI | Production line for packaging cut greens in an urban farm
+  21: Unsplash dFlMV5kIMnA | Venus Pharma is a well-known name in the pharmaceutical industry, recognized for
+  22: Unsplash A5hfHOIPdTw | GLSUN is a optical solution company, offer its customers low-cost, reliable opti
+  23: Unsplash GiuvVfcNFzY | Bottles being filled on an automated production line
+  24: Unsplash lzxe6x_rZG8 | A worker operates machinery in a cleanroom
 Verfuegbare Flash-Modelle: gemini-3.8-flash, gemini-3.7-flash, gemini-3.6-flash, gemini-3.5-flash, gemini-3.5-flash-lite, gemini-3.1-flash-lite, gemini-3.1-flash-lite-preview, gemini-3-flash-preview, gemini-2.5-flash, gemini-2.5-flash-lite, gemini-flash-latest, gemini-omni-1.1-flash, gemini-omni-1.2-flash, gemini-flash-lite-latest, gemini-omni-flash-preview
 Modell-Problem -> gemini-3.8-flash: Fehler 429: {
   "error": {
@@ -362,20 +441,32 @@ Modell-Problem -> gemini-3.7-flash: Fehler 503: {
   }
 }
 
-Modell-Problem -> gemini-3.7-flash: The read operation timed out
+Modell-Problem -> gemini-3.7-flash: Fehler 429: {
+  "error": {
+    "code": 429,
+    "message": "You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://aistudio.google.com/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceede
+Tageskontingent dieses Modells aufgebraucht, naechstes Modell.
 Modell-Problem -> gemini-3.6-flash: Fehler 429: {
   "error": {
     "code": 429,
     "message": "You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://aistudio.google.com/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceede
 Tageskontingent dieses Modells aufgebraucht, naechstes Modell.
+Modell-Problem -> gemini-3.5-flash: Fehler 503: {
+  "error": {
+    "code": 503,
+    "message": "This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.",
+    "status": "UNAVAILABLE"
+  }
+}
+
 Modell-Problem -> gemini-3.5-flash: Fehler 429: {
   "error": {
     "code": 429,
     "message": "You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://aistudio.google.com/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceede
 Tageskontingent dieses Modells aufgebraucht, naechstes Modell.
 Modell: gemini-3.5-flash-lite
-Auswahl durch das Modell: -1
-Kein passendes Foto gefunden, altes bleibt.
+Auswahl durch das Modell: 3
+Neues Foto: Unsplash J4HwEwZtIs8 -> https://images.unsplash.com/photo-1612851300081-30cac0077b3b?ixid=M3wxMTE3OTgzfDB8MXxzZWFyY2h8MXx8aW5qZWN0aW9uJTIwcGVuJTIwY2xvc2UlMjB1cHxlbnwxfDB8fHwxNzk0NTE5NDc0fDA&ixlib=rb-4.1.0&w=1600&h=900&fit=crop&crop=entropy&q=80&fm=jpg
 Logo-Angaben gesetzt, fetch_logos holt das Logo neu.
 Foto-Kandidaten: 21 (Commons 5, Unsplash 16)
   0: File:Antikalk 01.jpg | Anticalc/Decalcifier packaging from Germany, ingredients highlighted
@@ -418,7 +509,12 @@ Modell-Problem -> gemini-3.7-flash: Fehler 429: {
     "code": 429,
     "message": "You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://aistudio.google.com/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceede
 Tageskontingent dieses Modells aufgebraucht, naechstes Modell.
-Modell-Problem -> gemini-3.6-flash: Fehler 503: {
+Modell-Problem -> gemini-3.6-flash: Fehler 429: {
+  "error": {
+    "code": 429,
+    "message": "You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://aistudio.google.com/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceede
+Tageskontingent dieses Modells aufgebraucht, naechstes Modell.
+Modell-Problem -> gemini-3.5-flash: Fehler 503: {
   "error": {
     "code": 503,
     "message": "This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.",
@@ -426,11 +522,6 @@ Modell-Problem -> gemini-3.6-flash: Fehler 503: {
   }
 }
 
-Modell-Problem -> gemini-3.6-flash: Fehler 429: {
-  "error": {
-    "code": 429,
-    "message": "You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://aistudio.google.com/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceede
-Tageskontingent dieses Modells aufgebraucht, naechstes Modell.
 Modell-Problem -> gemini-3.5-flash: Fehler 429: {
   "error": {
     "code": 429,
@@ -469,10 +560,22 @@ Foto-Kandidaten: 46 (Commons 30, Unsplash 16)
   25: File:D.J. & L.E. Gill Pharmacy, Kirkgate, Tadcaster (26th August 2019).jpg | D.J. & L.E. Gill Pharmacy, Kirkgate, Tadcaster, North Yorkshire. Taken on the ev
   26: File:Falastin pharmacy, Salfit.jpg | صيدلية فلسطين، شارع القدس، مقابل مستشفى سلفيت الحكومي، مدينة سلفيت، دولة فلسطين
   27: File:Kaisei-Pharmacy Yoshiya.jpg | Kaisei-Pharmacy Yoshiya
-  28: File:Karunya Pharmacy Thycaud.jpg | Karunya Pharmacy Thycaud
-  29: File:Old pharmacy exposition of army pharmacy in exposition History of pharmacies in Kuks Hospital in Kuks, Trutnov District.jpg | Old pharmacy exposition of army pharmacy in exposition History of pharmacies in 
+  28: File:Kaisei Pharmacy Nagata Higashi-Osaka.jpg | Nagata Kaisei Pharmacy in Nagata-Nishi 2-chōme, Higashi-Osaka
+  29: File:Karunya Pharmacy Thycaud.jpg | Karunya Pharmacy Thycaud
 Verfuegbare Flash-Modelle: gemini-3.8-flash, gemini-3.7-flash, gemini-3.6-flash, gemini-3.5-flash, gemini-3.5-flash-lite, gemini-3.1-flash-lite, gemini-3.1-flash-lite-preview, gemini-3-flash-preview, gemini-2.5-flash, gemini-2.5-flash-lite, gemini-flash-latest, gemini-omni-1.1-flash, gemini-omni-1.2-flash, gemini-flash-lite-latest, gemini-omni-flash-preview
-Modell-Problem -> gemini-3.8-flash: The read operation timed out
+Modell-Problem -> gemini-3.8-flash: Fehler 429: {
+  "error": {
+    "code": 429,
+    "message": "You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://aistudio.google.com/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceede
+Tageskontingent dieses Modells aufgebraucht, naechstes Modell.
+Modell-Problem -> gemini-3.7-flash: Fehler 503: {
+  "error": {
+    "code": 503,
+    "message": "This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.",
+    "status": "UNAVAILABLE"
+  }
+}
+
 Modell-Problem -> gemini-3.7-flash: Fehler 429: {
   "error": {
     "code": 429,
@@ -534,6 +637,14 @@ Modell-Problem -> gemini-3.7-flash: Fehler 429: {
     "code": 429,
     "message": "You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://aistudio.google.com/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceede
 Tageskontingent dieses Modells aufgebraucht, naechstes Modell.
+Modell-Problem -> gemini-3.6-flash: Fehler 503: {
+  "error": {
+    "code": 503,
+    "message": "This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.",
+    "status": "UNAVAILABLE"
+  }
+}
+
 Modell-Problem -> gemini-3.6-flash: Fehler 429: {
   "error": {
     "code": 429,
@@ -590,9 +701,19 @@ Modell-Problem -> gemini-3.7-flash: Fehler 429: {
     "code": 429,
     "message": "You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://aistudio.google.com/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceede
 Tageskontingent dieses Modells aufgebraucht, naechstes Modell.
-Modell: gemini-3.6-flash
-Auswahl durch das Modell: 2
-Neues Foto: File:Clinical Chemistry Analyzer , Клинички биохемиски анализатор 3.jpg -> assets/magazin/siemens-healthineers-olyrian-diagnostics-umbenennung-foto.jpg
+Modell-Problem -> gemini-3.6-flash: Fehler 429: {
+  "error": {
+    "code": 429,
+    "message": "You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://aistudio.google.com/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceede
+Tageskontingent dieses Modells aufgebraucht, naechstes Modell.
+Modell-Problem -> gemini-3.5-flash: Fehler 429: {
+  "error": {
+    "code": 429,
+    "message": "You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://aistudio.google.com/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceede
+Tageskontingent dieses Modells aufgebraucht, naechstes Modell.
+Modell: gemini-3.5-flash-lite
+Auswahl durch das Modell: 40
+Neues Foto: Unsplash ZdToNCVLpOg -> https://images.unsplash.com/photo-1599727277757-3f54e54ea618?ixid=M3wxMTE3OTgzfDB8MXxzZWFyY2h8N3x8ZGlhZ25vc3RpYyUyMGxhYm9yYXRvcnklMjBhdXRvbWF0aW9ufGVufDF8MHx8fDE3OTQ0MzQ5MDN8MA&ixlib=rb-4.1.0&w=1600&h=900&fit=crop&crop=entropy&q=80&fm=jpg
 Logo-Angaben gesetzt, fetch_logos holt das Logo neu.
 Foto-Kandidaten: 66 (Commons 30, Unsplash 36)
   0: File:(USA-New York) NYC Medallion Cab Toyota RAV4 NY-Taxi-Y202490C 2024-06-15.jpg | Y202490C, a Toyota RAV4 Medallion Cab in New York City. Photo taken on 2024/6/15
@@ -621,10 +742,10 @@ Foto-Kandidaten: 66 (Commons 30, Unsplash 36)
   23: File:Toyota RAV4 Plug-in Hybrid GR Sport IMG 9896.jpg | Toyota RAV4 Plug-in Hybrid GR Sport at Automobil Messe Bietigheim
   24: File:2006 Toyota Prius T Spirit - 1497cc 1.5 (76PS) Hybrid Synergy Drive - Silver Steel - 03-03-2024, Front Left.jpg | 2006 Toyota Prius T Spirit - 1497cc 1.5 (76PS) Hybrid Synergy Drive - Silver Ste
   25: File:2006 Toyota Prius T Spirit - 1497cc 1.5 (76PS) Hybrid Synergy Drive - Silver Steel - 03-03-2024, Rear Left.jpg | 2006 Toyota Prius T Spirit - 1497cc 1.5 (76PS) Hybrid Synergy Drive - Silver Ste
-  26: File:2023 Toyota Prius Z PHEV.jpg | 2023 Toyota Prius Z PHEV
-  27: File:2024 Toyota Prius Excel PHEV - 1987cc 2.0 (225PS) Plug-in Hybrid - Silver Metallic - 10-2024, Front Quarter.jpg | 2024 Toyota Prius Excel PHEV - 1987cc 2.0 (225PS) Plug-in Hybrid - Silver Metall
-  28: File:2024 Toyota Prius Excel PHEV - 1987cc 2.0 (225PS) Plug-in Hybrid - Silver Metallic - 10-2024, Side.jpg | 2024 Toyota Prius Excel PHEV - 1987cc 2.0 (225PS) Plug-in Hybrid - Silver Metall
-  29: File:2025 Toyota Prius Design PHEV - 1987cc 2.0 (223PS) Plug-in Hybrid - Mustard Metallic - 03-2025, Front.jpg | 2025 Toyota Prius Design PHEV - 1987cc 2.0 (223PS) Plug-in Hybrid - Mustard Meta
+  26: File:2009 Toyota Prius T-Spirit VVT-i HEV - 1797cc 1.8 (134PS) Hybrid - Silver - 12-2023, Front.jpg | 2009 Toyota Prius T-Spirit VVT-i HEV - 1797cc 1.8 (134PS) Hybrid - Silver
+  27: File:2023 Toyota Prius Z PHEV.jpg | 2023 Toyota Prius Z PHEV
+  28: File:2024 Toyota Prius Excel PHEV - 1987cc 2.0 (225PS) Plug-in Hybrid - Silver Metallic - 10-2024, Front Quarter.jpg | 2024 Toyota Prius Excel PHEV - 1987cc 2.0 (225PS) Plug-in Hybrid - Silver Metall
+  29: File:2024 Toyota Prius Excel PHEV - 1987cc 2.0 (225PS) Plug-in Hybrid - Silver Metallic - 10-2024, Side.jpg | 2024 Toyota Prius Excel PHEV - 1987cc 2.0 (225PS) Plug-in Hybrid - Silver Metall
 Verfuegbare Flash-Modelle: gemini-3.8-flash, gemini-3.7-flash, gemini-3.6-flash, gemini-3.5-flash, gemini-3.5-flash-lite, gemini-3.1-flash-lite, gemini-3.1-flash-lite-preview, gemini-3-flash-preview, gemini-2.5-flash, gemini-2.5-flash-lite, gemini-flash-latest, gemini-omni-1.1-flash, gemini-omni-1.2-flash, gemini-flash-lite-latest, gemini-omni-flash-preview
 Modell-Problem -> gemini-3.8-flash: Fehler 429: {
   "error": {
@@ -706,37 +827,37 @@ Modell: gemini-3.5-flash-lite
 Auswahl durch das Modell: 18
 Neues Foto: File:Toilet paper Poland.jpg -> assets/magazin/kimberly-clark-q3-2026-zahlen-kenvue-china-foto.jpg
 Logo-Angaben gesetzt, fetch_logos holt das Logo neu.
-Foto-Kandidaten: 40 (Commons 12, Unsplash 28)
-  0: File:Cleaning products aisle, Laundry soaps and detergents, Meny Supermarket, Bergen Storsenter Shopping Mall, Bergen, Norway, 2017-10-23.jpg | Cleaning products and laundry soaps and detergents aisle in Meny Supermarket at 
-  1: File:BlogHer '07 - Chicago (933781405).jpg | BlogHer '07 - Chicago
-  2: File:BlogHer '07 - Chicago (933923683).jpg | BlogHer '07 - Chicago
-  3: File:BlogHer '07 - Chicago (934104329).jpg | BlogHer '07 - Chicago
-  4: File:BlogHer Sponsors (957748746).jpg | The dome inside the convention center hall had all the major sponsor logos proje
-  5: File:Parte lateral do Dove.jpg | 
-  6: File:Sabonete Dove.jpg | 
-  7: File:Shibuya-Tokyo---2024-10-11 062.jpg | 東京都渋谷区、東京メトロ半蔵門線渋谷駅構内。ボディケア製品・ヘアケア製品の ダヴ の「#かわいいに正解なんてない」の広告。
-  8: File:Shibuya-Tokyo---2024-10-11 063.jpg | 東京都渋谷区、東京メトロ半蔵門線渋谷駅構内。ボディケア製品・ヘアケア製品の ダヴ の「#かわいいに正解なんてない」の広告。
-  9: File:Unilever Distributionszentrum Mannheim.jpg | Unilever Logistikzentrum AXE Dove Rexona Domestos Viss Coral
-  10: File:Unilever Mannheim Seifenfabrik.jpg | Sunlicht im Rheinauhafen mit Wasserturm
-  11: File:愛買忠孝店清潔沐浴用品.jpg | ​愛買忠孝店清潔沐浴用品
-  12: Unsplash fT2rW9PkM0A | Toothbrush, toothpaste, and shampoo on bathroom counter
-  13: Unsplash lile4HrTcvQ | Watsons is an international health, beauty, and personal care chain store.
-  14: Unsplash PL1WRIJOQuQ | Shelves stocked with rows of hair care products
-  15: Unsplash fbI6cQi45eQ | A traditional Thai retail shop specializing in local herbal remedies and medicin
-  16: Unsplash n_EPVz5vVNs | A traditional Thai retail shop specializing in local herbal remedies and medicin
-  17: Unsplash B-xOubb2A7I | Rows of colorful tiles arranged by shade on a shelf
-  18: Unsplash qJ7-UhYBTsY | The Quiet Interval Between Things . . .
-  19: Unsplash 0ktm9oSGpFs | People in a modern store with display shelves
-  20: Unsplash k1tSnHMHHWk | Lora Naturkosmetik 3D Water Splash - Created by https://icespacestudios.de/
-  21: Unsplash jKbOP9V9zg8 | a bottle of keune care and a bottle of shampoo on a pink surface
-  22: Unsplash Eb7WQOqwnp0 | a brown dog standing next to a bath tub filled with water
-  23: Unsplash U_WRp8cLkpM | two bottles of keune care on a pink background
-  24: Unsplash AA-qAyHj9m0 | a woman is taking a bath with her dog
-  25: Unsplash FARVkgAz2ww | two bottles of keune hair care on a pink background
-  26: Unsplash FUKXEbDy05U | a group of white bottles on a wooden table
-  27: Unsplash LZ58cbdEnD0 | shampoo bottle
-  28: Unsplash cghqmLvDvvQ | Guatemala en Estados Unidos, una tienda de consumo diario ubicado en algún rincó
-  29: Unsplash TikgeFyyuOQ | aisle, food, cheese, dairy refrigeration, cookies, biscuit, cereal, tea, coffee,
+Foto-Kandidaten: 39 (Commons 11, Unsplash 28)
+  0: File:BlogHer '07 - Chicago (933781405).jpg | BlogHer '07 - Chicago
+  1: File:BlogHer '07 - Chicago (933923683).jpg | BlogHer '07 - Chicago
+  2: File:BlogHer '07 - Chicago (934104329).jpg | BlogHer '07 - Chicago
+  3: File:BlogHer Sponsors (957748746).jpg | The dome inside the convention center hall had all the major sponsor logos proje
+  4: File:Parte lateral do Dove.jpg | 
+  5: File:Sabonete Dove.jpg | 
+  6: File:Shibuya-Tokyo---2024-10-11 062.jpg | 東京都渋谷区、東京メトロ半蔵門線渋谷駅構内。ボディケア製品・ヘアケア製品の ダヴ の「#かわいいに正解なんてない」の広告。
+  7: File:Shibuya-Tokyo---2024-10-11 063.jpg | 東京都渋谷区、東京メトロ半蔵門線渋谷駅構内。ボディケア製品・ヘアケア製品の ダヴ の「#かわいいに正解なんてない」の広告。
+  8: File:Unilever Distributionszentrum Mannheim.jpg | Unilever Logistikzentrum AXE Dove Rexona Domestos Viss Coral
+  9: File:Unilever Mannheim Seifenfabrik.jpg | Sunlicht im Rheinauhafen mit Wasserturm
+  10: File:愛買忠孝店清潔沐浴用品.jpg | ​愛買忠孝店清潔沐浴用品
+  11: Unsplash fT2rW9PkM0A | Toothbrush, toothpaste, and shampoo on bathroom counter
+  12: Unsplash lile4HrTcvQ | Watsons is an international health, beauty, and personal care chain store.
+  13: Unsplash PL1WRIJOQuQ | Shelves stocked with rows of hair care products
+  14: Unsplash fbI6cQi45eQ | A traditional Thai retail shop specializing in local herbal remedies and medicin
+  15: Unsplash n_EPVz5vVNs | A traditional Thai retail shop specializing in local herbal remedies and medicin
+  16: Unsplash B-xOubb2A7I | Rows of colorful tiles arranged by shade on a shelf
+  17: Unsplash qJ7-UhYBTsY | The Quiet Interval Between Things . . .
+  18: Unsplash 0ktm9oSGpFs | People in a modern store with display shelves
+  19: Unsplash k1tSnHMHHWk | Lora Naturkosmetik 3D Water Splash - Created by https://icespacestudios.de/
+  20: Unsplash jKbOP9V9zg8 | a bottle of keune care and a bottle of shampoo on a pink surface
+  21: Unsplash Eb7WQOqwnp0 | a brown dog standing next to a bath tub filled with water
+  22: Unsplash U_WRp8cLkpM | two bottles of keune care on a pink background
+  23: Unsplash AA-qAyHj9m0 | a woman is taking a bath with her dog
+  24: Unsplash FARVkgAz2ww | two bottles of keune hair care on a pink background
+  25: Unsplash FUKXEbDy05U | a group of white bottles on a wooden table
+  26: Unsplash LZ58cbdEnD0 | shampoo bottle
+  27: Unsplash cghqmLvDvvQ | Guatemala en Estados Unidos, una tienda de consumo diario ubicado en algún rincó
+  28: Unsplash TikgeFyyuOQ | aisle, food, cheese, dairy refrigeration, cookies, biscuit, cereal, tea, coffee,
+  29: Unsplash 8XEl2n7kh-s | Child in a grocery store aisle looking at products
 Verfuegbare Flash-Modelle: gemini-3.8-flash, gemini-3.7-flash, gemini-3.6-flash, gemini-3.5-flash, gemini-3.5-flash-lite, gemini-3.1-flash-lite, gemini-3.1-flash-lite-preview, gemini-3-flash-preview, gemini-2.5-flash, gemini-2.5-flash-lite, gemini-flash-latest, gemini-omni-1.1-flash, gemini-omni-1.2-flash, gemini-flash-lite-latest, gemini-omni-flash-preview
 Modell-Problem -> gemini-3.8-flash: Fehler 429: {
   "error": {
@@ -747,19 +868,21 @@ Modell-Problem -> gemini-3.7-flash: Fehler 429: {
   "error": {
     "code": 429,
     "message": "You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://aistudio.google.com/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceede
-Modell-Problem -> gemini-3.7-flash: Fehler 429: {
-  "error": {
-    "code": 429,
-    "message": "You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://aistudio.google.com/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceede
 Tageskontingent dieses Modells aufgebraucht, naechstes Modell.
 Modell-Problem -> gemini-3.6-flash: Fehler 429: {
   "error": {
     "code": 429,
     "message": "You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://aistudio.google.com/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceede
 Tageskontingent dieses Modells aufgebraucht, naechstes Modell.
-Modell: gemini-3.5-flash
-Auswahl durch das Modell: 0
-Neues Foto: File:Cleaning products aisle, Laundry soaps and detergents, Meny Supermarket, Bergen Storsenter Shopping Mall, Bergen, Norway, 2017-10-23.jpg -> assets/magazin/unilever-reiner-pflegekonzern-dividende-rueckkauf-foto.jpg
+Modell-Problem -> gemini-3.5-flash: Fehler 429: {
+  "error": {
+    "code": 429,
+    "message": "You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://aistudio.google.com/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceede
+Tageskontingent dieses Modells aufgebraucht, naechstes Modell.
+Modell: gemini-3.5-flash-lite
+Auswahl durch das Modell: 13
+Unsplash-Downloadmeldung fehlgeschlagen: HTTP Error 403: Forbidden
+Neues Foto: Unsplash PL1WRIJOQuQ -> https://images.unsplash.com/photo-1776105609708-3d8908ab4dc2?ixid=M3wxMTE3OTgzfDB8MXxzZWFyY2h8M3x8cGVyc29uYWwlMjBjYXJlJTIwcHJvZHVjdHMlMjBzaGVsZnxlbnwxfDB8fHwxNzk0NDM0NTk2fDA&ixlib=rb-4.1.0&w=1600&h=900&fit=crop&crop=entropy&q=80&fm=jpg
 Logo-Angaben gesetzt, fetch_logos holt das Logo neu.
 Foto-Kandidaten: 39 (Commons 16, Unsplash 23)
   0: File:Fluorescent vs non-fluorescent EPE solar panel encapsulant comparison.jpg | A comparison between EPE (ethylene vinyl acetate/polyolefin elastomer) copolymer
@@ -814,5 +937,62 @@ Modell-Problem -> gemini-3.5-flash: Fehler 429: {
     "message": "You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://aistudio.google.com/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceede
 Tageskontingent dieses Modells aufgebraucht, naechstes Modell.
 Modell: gemini-3.5-flash-lite
-Auswahl durch das Modell: 4
-Neues Foto: File:Artist's rendition of GOES R satellite with Earth reflecting off solar panel (2268-657).jpg -> assets/magazin/singulus-spacex-auftrag-solarlinie-neun-monate-2026-foto.jpg
+Auswahl durch das Modell: -1
+Kein passendes Foto gefunden, altes bleibt.
+Logo-Angaben gesetzt, fetch_logos holt das Logo neu.
+Unsplash nicht erreichbar: HTTP Error 403: Forbidden
+Foto-Kandidaten: 30 (Commons 30, Unsplash 0)
+  0: File:Barista prepares espresso at coffee shop.jpg | A barista stands at a coffee shop counter early in the morning, using a tamper t
+  1: File:Baristas at work (Unsplash).jpg | Nashville, United States
+  2: File:Beale Street Brews Counter (26499287821).jpg | Mike (barista) and Angela (coffee shop owner).
+  3: File:Coffee preparation in a modern cafe with steaming equipment and skilled barista at work during the morning rush hour.jpg | A skilled barista works on an espresso machine, preparing coffee with precision.
+  4: File:Confused. (Unsplash).jpg | The Coffee Nook, Mansfield, Australia
+  5: File:DFC 5870 A flight attendant prepares drinks behind the onboard café counter as passengers move through the cabin.jpg | This photograph captures the interior of a creatively repurposed airplane that h
+  6: File:DFC 6090 Colorful neighborhood café in Khao Chi Chan - baristas at work behind the counter amid baked goods jars of treats and a cheerful rainbow-painted interior.jpg | This vibrant photograph captures the interior of a bustling café, likely located
+  7: File:DSC 9564 A barista carefully tamping espresso grounds at a busy street-side coffee stall preparing fresh coffee for customers.jpg | This photo shows a barista at work in a coffee shop. They are wearing a black an
+  8: File:Porto Rico Importing Co. (Coffee importer & barista counter, Bleecker St. location) – January 2023 – by MainlyTwelve.jpg | The Bleecker Street location of Porto Rico Importing Co., a coffee importer and 
+  9: File:ねえマスター (2203075939).jpg | See the film "Café Lumière" to see the importance of traditional Japanese coffee
+  10: File:A civilian contractor (right) takes a break and enjoys a cup of coffee at the counter of Gods Grounds coffee bar on Contingency Operating Base Adder, Tallil, Iraq Sept 110915-A-IX584-047.jpg | A civilian contractor (right) takes a break and enjoys a cup of coffee at the co
+  11: File:CHE — BE — Gde. Bern — Bern Stadt — Hodlerstrasse 8 (Kunstmuseum Bern · Kasse) Mattes 2022-07-30.jpg | Kasse
+  12: File:Espresso machine and counter of a coffee bar in Rome.jpg | Counter of a coffee bar in Rome with a three group espresso machine, cups stacke
+  13: File:Freshly brewed cup of espresso in sunlight on kitchen counter.jpg | Per filename; shot in my kitchen
+  14: File:Man sits at a bar with a small cup of coffee and a glass of liquor.jpg | A man enjoys a small cup of coffee on a bar counter. Next to it is a glass of li
+  15: File:Person making coffee with an espresso machine in a kitchen setting.jpg | A person is preparing coffee using an espresso machine placed on a kitchen count
+  16: File:Serving coffee in a cafe during the morning hours with a waiter carrying a tray of drinks for customers.jpg | A waiter carries a tray with several cups of coffee at a busy cafe. Customers en
+  17: File:Woman drinks coffee in a kitchen while standing near the counter.jpg | A woman stands in a kitchen, holding a cup of coffee. She enjoys a quiet moment 
+  18: File:2019 02 Awesome Coffee Shop in Korat.jpg | Korat's "Awesome Coffee" shop interior. The owner is the winner of Thailand's 7t
+  19: File:Coffee shop "Mango Coffee" in Confucius Temple Kaohsiung (2026) 01.jpg | Coffee shop "Mango Coffee" in Kaohsiung Confucius Temple
+  20: File:Coffee shop in Göteborg railway station, Sweden .jpg | Coffee shop in Göteborg railway station, Sweden.
+  21: File:Empty coffee shop interior with wooden table and water skis.jpg | coffee shop
+  22: File:Figaro Coffee shop interior in Salawag, Dasmariñas, Cavite — 19 Mar 2022.jpg | A view of the cashier's desk, stairs and some chairs and tables at the Figaro Co
+  23: File:French Coffee Shop, Dieppe 2026-05-11.jpg | French Coffee Shop, Dieppe
+  24: File:Interior Johnie's Coffee Shop 2021.jpg | Interior of Johnie's Coffee Shop, Los Angeles, 2021
+  25: File:Johnie's Coffee Shop interior.jpg | Interior of Johnie's, May 2026
+  26: File:Lok Heung Yuen Coffee Shop Interior.jpg | Lok Heung Yuen Coffee Shop Interior 樂香園咖啡室
+  27: File:Starbucks coffee shop interior design.jpg | Starbucks coffee shop interior design
+  28: File:The St John's Coffee Shop in downtown Covington Louisiana, interior, August 2023.jpg | The St John's Coffee Shop in downtown Covington Louisiana, interior, August 2023
+  29: File:Union Pacific Depot coffee shop (Cheyenne, Wyoming) 2025-10-23.jpg | Union Pacific Depot coffee shop (Cheyenne, Wyoming)
+Verfuegbare Flash-Modelle: gemini-3.8-flash, gemini-3.7-flash, gemini-3.6-flash, gemini-3.5-flash, gemini-3.5-flash-lite, gemini-3.1-flash-lite, gemini-3.1-flash-lite-preview, gemini-3-flash-preview, gemini-2.5-flash, gemini-2.5-flash-lite, gemini-flash-latest, gemini-omni-1.1-flash, gemini-omni-1.2-flash, gemini-flash-lite-latest, gemini-omni-flash-preview
+Modell-Problem -> gemini-3.8-flash: Fehler 429: {
+  "error": {
+    "code": 429,
+    "message": "You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://aistudio.google.com/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceede
+Tageskontingent dieses Modells aufgebraucht, naechstes Modell.
+Modell-Problem -> gemini-3.7-flash: Fehler 429: {
+  "error": {
+    "code": 429,
+    "message": "You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://aistudio.google.com/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceede
+Tageskontingent dieses Modells aufgebraucht, naechstes Modell.
+Modell-Problem -> gemini-3.6-flash: Fehler 429: {
+  "error": {
+    "code": 429,
+    "message": "You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://aistudio.google.com/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceede
+Tageskontingent dieses Modells aufgebraucht, naechstes Modell.
+Modell-Problem -> gemini-3.5-flash: Fehler 429: {
+  "error": {
+    "code": 429,
+    "message": "You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://aistudio.google.com/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceede
+Tageskontingent dieses Modells aufgebraucht, naechstes Modell.
+Modell: gemini-3.5-flash-lite
+Auswahl durch das Modell: 27
+Neues Foto: File:Starbucks coffee shop interior design.jpg -> assets/magazin/starbucks-q4-2026-quartalszahlen-foto.jpg

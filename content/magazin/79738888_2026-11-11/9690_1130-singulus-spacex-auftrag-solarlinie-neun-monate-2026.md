@@ -7,13 +7,13 @@ category: Quartalszahlen
 story_text: "Für einen Maschinenbauer mit gut 80 Mio. Euro Jahresumsatz ist es der Auftrag des Jahrzehnts: Singulus baut für SpaceX eine komplette Fertigungslinie für Hochleistungs-Solarzellen, Wert über 60 Mio. Euro. Die Zellen sollen die Starlink-Satelliten versorgen, die SpaceX in Texas fertigt. Ausgeliefert wird im ersten Halbjahr 2027.\nDer Auftrag kommt nicht aus dem Nichts. SpaceX hat Singulus schon im März mit Krediten und einer Wandelanleihe stabilisiert und im Oktober die Schulden beim chinesischen Altaktionär abgelöst. Nach neun Monaten steht ein Umsatzplus von 36 % und wieder ein operativer Gewinn.\nDie Kehrseite: SpaceX ist Kunde, Geldgeber und über die Wandelanleihe womöglich bald Großaktionär. Weitere Linien sind angekündigt, aber noch nicht bestellt, und der Finanzchef geht zum Jahresende. Ob aus der Pilotlinie ein Milliardengeschäft wird, entscheidet sich wohl erst 2028."
 story_chart: assets/magazin/singulus-spacex-auftrag-solarlinie-neun-monate-2026-kurs.png
 logo_name: "Singulus"
-logo_symbol: SNG.DE
-logo_domain: singulus.com
 image: assets/magazin/singulus-spacex-auftrag-solarlinie-neun-monate-2026-foto.jpg
 image_alt: "Foto zu Singulus: Artist's rendition of GOES R satellite with Earth reflecting off solar panel. (Image credit: NOAA/NESDIS)"
 image_credit: "Foto: NOAA / Wikimedia Commons, Public domain"
 image_source: https://commons.wikimedia.org/wiki/File:Artist%27s_rendition_of_GOES_R_satellite_with_Earth_reflecting_off_solar_panel_(2268-657).jpg
 image_artist_url: 
+logo_symbol: SNG.DE
+logo_domain: singulus.com
 logo_file: assets/logos/sng-de.png
 ---
 <!-- PRÜFEN: SpaceX-Auftrag (über 60 Mio. Euro, schlüsselfertige HJT-Linie, Lieferung 1. Halbjahr 2027, weitere Linien im Rahmen der Partnerschaft geplant) wurde am Abend des 10.11.2026 bekannt (boerse-express, 10.11., 20:28 Uhr; MarketScreener). Eine Originalmeldung auf singulus.com war im Abruf nicht sichtbar, die News-Seite dort war veraltet. Vor Freigabe gegen die Pressemitteilung von Singulus prüfen. -->
