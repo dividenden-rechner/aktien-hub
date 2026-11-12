@@ -20,6 +20,22 @@ for land in ('de','fr','uk'):
              'w': f.get('waehrung') or d.get('waehrung') or 'EUR', 'quelle': 'boerse.de', 'k': k}
         if f.get('hinweis'): e['hinweis'] = f['hinweis']
         out[sym] = e
+# Zusatz aus Jahresabschlüssen (Cashflow, Bilanz, Gewinnrechnung): data/boerse-de/zusatz.json, hat Vorrang je Jahr
+ZMAP = {'ocf':'operativer_cf','capex':'capex','da':'abschreibungen','div':'dividenden_gezahlt','bb':'aktienrueckkauf','cash':'liquide_mittel',
+        'debt':'schulden_lang','umsatz':'umsatz','brutto':'bruttogewinn','ebit':'operatives_ergebnis','zins':'zinsaufwand','steuer':'steuern'}
+zp = 'data/boerse-de/zusatz.json'
+if os.path.exists(zp):
+    for sym, z in json.load(open(zp, encoding='utf-8'))['firmen'].items():
+        e = out.get(sym)
+        if not e: continue
+        for src, dst in ZMAP.items():
+            if src not in z: continue
+            alt = {d: v for d, v in e['k'].get(dst, [])}
+            for j, v in zip(z['jahre'], z[src]):
+                if v is not None: alt[f'{j}-12-31'] = round(v*M, 4)
+            if alt: e['k'][dst] = sorted([d, v] for d, v in alt.items())
+        if z.get('hinweis'): e['hinweis'] = (e.get('hinweis', '') + ' ' + z['hinweis']).strip()
+        e['quelle'] = 'boerse.de, Cashflow und Bilanz: Jahresabschlüsse'
 os.makedirs('data/boerse-de', exist_ok=True)
 json.dump({'stand': __import__('datetime').date.today().isoformat(), 'quelle': 'boerse.de Fundamentalanalyse', 'firmen': out},
           open('data/boerse-de/fundamentals.json', 'w', encoding='utf-8'), ensure_ascii=False, separators=(',', ':'))
