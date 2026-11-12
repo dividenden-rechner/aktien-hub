@@ -1743,6 +1743,147 @@ null,
 3303
 ],
 "hinweis": "Umsatz einschließlich Finanzdienstleistungen."
+},
+"DHL.DE": {
+"jahre": [
+2021,
+2022,
+2023,
+2024,
+2025
+],
+"umsatz": [
+81747,
+94436,
+81758,
+84186,
+82855
+],
+"ebit": [
+7978,
+8436,
+6343,
+5886,
+6103
+],
+"ocf": [
+9993,
+10965,
+9258,
+8722,
+9119
+],
+"capex": [
+3895,
+4123,
+3370,
+3066,
+2950
+],
+"hinweis": "Quelle: Geschäftsbericht 2025 der DHL Group (Kennzahlenübersicht)."
+},
+"MTX.DE": {
+"jahre": [
+2021,
+2022,
+2023,
+2024,
+2025
+],
+"ocf": [
+567,
+728,
+777,
+714,
+848
+],
+"capex": [
+262,
+322,
+332,
+459,
+429
+],
+"da": [
+198,
+207,
+236,
+262,
+320
+],
+"div": [
+80,
+112,
+171,
+108,
+119
+],
+"hinweis": "Quelle: stockanalysis.com (Jahresabschlüsse)."
+},
+"PAH3.DE": {
+"jahre": [
+2021,
+2022,
+2023,
+2024,
+2025
+],
+"ocf": [
+708,
+816,
+1873,
+1431,
+700
+],
+"div": [
+676,
+783,
+783,
+783,
+584
+],
+"hinweis": "Holding: kein Capex ausgewiesen. Quelle: stockanalysis.com."
+},
+"G24.DE": {
+"jahre": [
+2021,
+2022,
+2023,
+2024,
+2025
+],
+"umsatz": [
+389.04,
+447.54,
+509.11,
+566.34,
+649.56
+],
+"ebit": [
+143.35,
+197.53,
+242.4,
+254.17,
+294.33
+],
+"hinweis": "Quelle: stockanalysis.com. Cashflow fehlt noch."
+},
+"EOAN.DE": {
+"jahre": [
+2021,
+2022,
+2023,
+2024,
+2025
+],
+"umsatz": [
+77358,
+115660,
+93686,
+80119,
+78704
+],
+"hinweis": "Quelle: stockanalysis.com. Cashflow und Bilanz fehlen noch."
 }
 }
 }
