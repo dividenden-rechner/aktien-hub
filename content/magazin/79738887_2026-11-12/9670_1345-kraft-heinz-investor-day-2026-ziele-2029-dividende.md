@@ -11,6 +11,7 @@ quelle_name: "The Kraft Heinz Company, Pressemitteilung zum Investor Day vom 12.
 logo_name: "The Kraft Heinz Company"
 logo_symbol: KHC
 logo_file: assets/logos/khc.png
+story_chart: assets/magazin/kraft-heinz-investor-day-2026-kurs.png
 story_portrait: assets/magazin/steve-cahillane-kraft-heinz.png
 story_logo_bg: "#1b3a8f"
 story_quote_by: "Steve Cahillane | CEO Kraft Heinz"
@@ -22,7 +23,7 @@ image_source: https://unsplash.com/photos/heinz-tomato-ketchup-bottle-7cO4Fquqqa
 image_artist_url: https://unsplash.com/@mattpopovich?utm_source=dividenden-rechner&utm_medium=referral
 ---
 <!-- PRÜFEN: Aufmacherfoto ist das schon vorhandene Heinz-Foto vom Q3-Artikel (Unsplash). Wenn ein anderes gewünscht ist, bitte über die Foto-Anfrage neu suchen lassen. -->
-<!-- PRÜFEN: Kursangabe aus dem Screenshot von Divi (Lang & Schwarz, 12.11.2026 13:37 Uhr): 22,135 € (+1,63 %), in USD 24,541. Kursbild für die Story muss im Hub-Stil neu gebaut werden. -->
+<!-- PRÜFEN: Kursangabe aus dem Screenshot von Divi (Lang & Schwarz, 12.11.2026 13:37 Uhr): 22,135 € (+1,63 %), in USD 24,541. Kursbild im Hub-Stil ist nachgebaut; die Kurve ist aus dem Screenshot ausgelesen und daher nur ungefähr. -->
 <!-- PRÜFEN: Eigene Rechnungen: Dividendenquote 1,60 / 2,07 bis 2,13 = 75 bis 77 %; Rendite 1,60 / 24,54 = 6,5 %; Dividendendeckung 2,361 Mrd. FCF / 1,423 Mrd. Dividenden = 1,7; Nettoschulden 18,003 Mrd. abzüglich 1,888 Mrd. Cash und 16 Mio. Wertpapiere = rund 16,1 Mrd. (Konzern nennt sie nicht selbst). -->
 <!-- PRÜFEN: Dividende 0,40 USD je Quartal, Zahlung 23.12.2026, Record Date 4.12.2026 stammen aus einer Börsenmeldung, nicht aus dem Investor-Day-Text. -->
 
