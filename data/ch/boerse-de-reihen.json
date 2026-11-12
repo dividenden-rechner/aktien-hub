@@ -1752,6 +1752,1137 @@ null
 6.82,
 10.39
 ]
+},
+"SCMN.SW": {
+"name": "Swisscom",
+"isin": "CH0008742519",
+"waehrung": "CHF",
+"hinweis": "Berichtswaehrung CHF. 2019 und 2020 nicht erfasst (Quelle stockanalysis.com liefert nur 2021 bis 2025; boerse.de nicht abrufbar). Ab 2025 inkl. Vodafone Italia (Uebernahme Ende 2024, Umsatz 2025 +37 %); 2024 Cash-Akquisitionen 7.372. Eigenkapitalrendite = Jahresueberschuss / Eigenkapital zum Jahresende. Abschreibungen und Schulden inkl. Leasing.",
+"umsatz": [
+null,
+null,
+11183,
+11051,
+11072,
+11017,
+15048
+],
+"ebt": [
+null,
+null,
+2152,
+1963,
+2075,
+1861,
+1567
+],
+"jahresueberschuss": [
+null,
+null,
+1832,
+1602,
+1711,
+1542,
+1271
+],
+"dividendenausschuettung": [
+null,
+null,
+null,
+null,
+null,
+null,
+null
+],
+"eigenkapital": [
+null,
+null,
+10813,
+11171,
+11622,
+12154,
+12238
+],
+"eps": [
+null,
+null,
+35.37,
+30.93,
+33.03,
+29.77,
+24.54
+],
+"dividende_je_aktie": [
+null,
+null,
+22,
+22,
+22,
+22,
+26
+],
+"aktien_mio": [
+null,
+null,
+51.8,
+51.8,
+51.8,
+51.8,
+51.8
+],
+"eigenkapitalrendite_pct": [
+null,
+null,
+16.94,
+14.34,
+14.72,
+12.69,
+10.39
+]
+},
+"KNIN.SW": {
+"name": "Kuehne+Nagel",
+"isin": "CH0025238863",
+"waehrung": "CHF",
+"hinweis": "Berichtswaehrung CHF. 2019 und 2020 nicht erfasst (stockanalysis.com liefert nur 2021 bis 2025; boerse.de nicht abrufbar). Jahresueberschuss = Anteil der Aktionaere (nach Minderheiten). Umsatz 2023 gegenueber 2022 -39 % wegen Normalisierung der Seefrachtraten; Dividende je Aktie laut Quelle (2022: 14, vermutlich inkl. Sonderdividende, nicht geprueft). Eigenkapitalrendite = Jahresueberschuss / Eigenkapital (Common Equity) zum Jahresende. Capex inkl. Immaterielle; Abschreibungen und Schulden inkl. Leasing.",
+"umsatz": [
+null,
+null,
+32801,
+39398,
+23849,
+24802,
+24476
+],
+"ebt": [
+null,
+null,
+2945,
+3808,
+1956,
+1638,
+1230
+],
+"jahresueberschuss": [
+null,
+null,
+2032,
+2644,
+1431,
+1181,
+882
+],
+"dividendenausschuettung": [
+null,
+null,
+null,
+null,
+null,
+null,
+null
+],
+"eigenkapital": [
+null,
+null,
+3204,
+4140,
+3153,
+3263,
+2180
+],
+"eps": [
+null,
+null,
+16.92,
+22.15,
+12.06,
+9.97,
+7.43
+],
+"dividende_je_aktie": [
+null,
+null,
+10,
+14,
+10,
+8.25,
+6
+],
+"aktien_mio": [
+null,
+null,
+120.29,
+119.62,
+118.31,
+118.73,
+118.76
+],
+"eigenkapitalrendite_pct": [
+null,
+null,
+63.42,
+63.86,
+45.39,
+36.19,
+40.46
+]
+},
+"SOON.SW": {
+"name": "Sonova",
+"isin": "CH0012549785",
+"waehrung": "CHF",
+"hinweis": "Berichtswaehrung CHF. Geschaeftsjahr endet 31.03.; Zuordnung nach Jahr des Periodenendes (2025 = Geschaeftsjahr bis 31.03.2025, 2022 = bis 31.03.2022). Das Geschaeftsjahr bis 31.03.2026 liegt bereits vor (Umsatz 3.606, Jahresueberschuss 430,6, Dividende 4,70) und steht ausserhalb des Rasters. 2019 bis 2021 nicht erfasst (stockanalysis.com liefert nur 5 Geschaeftsjahre; boerse.de nicht abrufbar). Jahresueberschuss = Anteil der Aktionaere. Aktienzahl zum Periodenende; Eigenkapitalrendite = Jahresueberschuss / Eigenkapital zum Jahresende. Capex inkl. Immaterielle; Abschreibungen ohne Sonstige Amortisation; Schulden inkl. Leasing.",
+"umsatz": [
+null,
+null,
+null,
+3364,
+3738,
+3627,
+3613
+],
+"ebt": [
+null,
+null,
+null,
+728.2,
+715.6,
+647.3,
+684.2
+],
+"jahresueberschuss": [
+null,
+null,
+null,
+649,
+647.5,
+601,
+540.5
+],
+"dividendenausschuettung": [
+null,
+null,
+null,
+null,
+null,
+null,
+null
+],
+"eigenkapital": [
+null,
+null,
+null,
+2411,
+2212,
+2470,
+2665
+],
+"eps": [
+null,
+null,
+null,
+10.42,
+10.75,
+10.08,
+9.07
+],
+"dividende_je_aktie": [
+null,
+null,
+null,
+4.4,
+4.6,
+4.3,
+4.4
+],
+"aktien_mio": [
+null,
+null,
+null,
+61.09,
+59.59,
+59.61,
+59.61
+],
+"eigenkapitalrendite_pct": [
+null,
+null,
+null,
+26.92,
+29.27,
+24.33,
+20.28
+]
+},
+"STMN.SW": {
+"name": "Straumann",
+"isin": "CH1175448666",
+"waehrung": "CHF",
+"hinweis": "Berichtswaehrung CHF. 2019 und 2020 nicht erfasst (stockanalysis.com liefert nur 2021 bis 2025; boerse.de nicht abrufbar). Je-Aktie-Werte und Aktienzahl auf Basis nach dem Aktiensplit 1:10 (2022) ausgewiesen. Jahresueberschuss = Anteil der Aktionaere; 2023 und 2024 mit Verlusten aus aufgegebenem Geschaeftsbereich (-202,1 bzw. -69,3), 2022 Abschreibungen hoch. Eigenkapitalrendite = Jahresueberschuss / Eigenkapital (Common Equity) zum Jahresende. Capex inkl. Immaterielle; Schulden inkl. Leasing.",
+"umsatz": [
+null,
+null,
+2022,
+2321,
+2277,
+2504,
+2605
+],
+"ebt": [
+null,
+null,
+477.38,
+498.44,
+547.31,
+559.56,
+455.07
+],
+"jahresueberschuss": [
+null,
+null,
+396.08,
+434.79,
+246.07,
+388.32,
+355.92
+],
+"dividendenausschuettung": [
+null,
+null,
+null,
+null,
+null,
+null,
+null
+],
+"eigenkapital": [
+null,
+null,
+1495,
+1852,
+1836,
+2040,
+2161
+],
+"eps": [
+null,
+null,
+2.49,
+2.73,
+1.54,
+2.44,
+2.23
+],
+"dividende_je_aktie": [
+null,
+null,
+0.68,
+0.8,
+0.85,
+0.95,
+1.0
+],
+"aktien_mio": [
+null,
+null,
+159.16,
+159.35,
+159.44,
+159.45,
+159.45
+],
+"eigenkapitalrendite_pct": [
+null,
+null,
+26.49,
+23.48,
+13.4,
+19.04,
+16.47
+]
+},
+"SGSN.SW": {
+"name": "SGS",
+"isin": "CH1256740924",
+"waehrung": "CHF",
+"hinweis": "Berichtswaehrung CHF. 2019 und 2020 nicht erfasst (stockanalysis.com liefert nur 2021 bis 2025; boerse.de nicht abrufbar). Je-Aktie-Werte und Aktienzahl auf Basis nach dem Aktiensplit 1:20 (2023) ausgewiesen (Dividende 3,20 je Aktie in allen Jahren). Jahresueberschuss = Anteil der Aktionaere; Eigenkapital = Anteil der Aktionaere (ohne Minderheiten), durch Ausschuettungen und Rueckkaeufe niedrig, daher hohe Eigenkapitalrendite (Jahresueberschuss / Eigenkapital zum Jahresende). Capex inkl. Immaterielle; Schulden inkl. Leasing.",
+"umsatz": [
+null,
+null,
+6405,
+6642,
+6622,
+6794,
+6945
+],
+"ebt": [
+null,
+null,
+924,
+849,
+802,
+847,
+962
+],
+"jahresueberschuss": [
+null,
+null,
+613,
+588,
+553,
+581,
+668
+],
+"dividendenausschuettung": [
+null,
+null,
+null,
+null,
+null,
+null,
+null
+],
+"eigenkapital": [
+null,
+null,
+1117,
+682,
+459,
+797,
+901
+],
+"eps": [
+null,
+null,
+3.27,
+3.16,
+3.01,
+3.09,
+3.48
+],
+"dividende_je_aktie": [
+null,
+null,
+3.2,
+3.2,
+3.2,
+3.2,
+3.2
+],
+"aktien_mio": [
+null,
+null,
+187.29,
+184.23,
+184.31,
+188.89,
+193.12
+],
+"eigenkapitalrendite_pct": [
+null,
+null,
+54.88,
+86.22,
+120.48,
+72.9,
+74.14
+]
+},
+"SCHP.SW": {
+"name": "Schindler (Partizipationsschein)",
+"isin": "CH0024638196",
+"waehrung": "CHF",
+"hinweis": "Berichtswaehrung CHF. Gattung PS (Partizipationsschein, ISIN CH0024638196). Konzernzahlen; Aktienzahl = Namenaktien und PS zusammen (Quelle trennt nicht; PS und Namenaktie sind je Stueck gleich dividendenberechtigt, Je-Aktie-Werte gelten daher fuer den PS). 2019 und 2020 nicht erfasst (stockanalysis.com liefert nur 2021 bis 2025; boerse.de nicht abrufbar). Jahresueberschuss = Anteil der Aktionaere; Eigenkapital ohne Minderheiten. Dividende je Aktie nach Auszahlungsjahr (Auszahlung 2022 bis 2026) dem Geschaeftsjahr zugeordnet: 4,00 / 4,00 / 5,00 / 6,00 / 6,80; die Gewinnrechnungsseite derselben Quelle weist abweichend 4/4/4/6/6 aus (nicht geprueft). Eigenkapitalrendite = Jahresueberschuss / Eigenkapital zum Jahresende. Capex inkl. Immaterielle; Schulden inkl. Leasing.",
+"umsatz": [
+null,
+null,
+11236,
+11346,
+11494,
+11236,
+10947
+],
+"ebt": [
+null,
+null,
+1124,
+853,
+1175,
+1272,
+1353
+],
+"jahresueberschuss": [
+null,
+null,
+828,
+610,
+866,
+950,
+1015
+],
+"dividendenausschuettung": [
+null,
+null,
+null,
+null,
+null,
+null,
+null
+],
+"eigenkapital": [
+null,
+null,
+4303,
+4331,
+4604,
+4954,
+5056
+],
+"eps": [
+null,
+null,
+7.7,
+5.67,
+8.05,
+8.83,
+9.48
+],
+"dividende_je_aktie": [
+null,
+null,
+4,
+4,
+5,
+6,
+6.8
+],
+"aktien_mio": [
+null,
+null,
+107.64,
+107.47,
+107.56,
+107.4,
+106.77
+],
+"eigenkapitalrendite_pct": [
+null,
+null,
+19.24,
+14.08,
+18.81,
+19.18,
+20.08
+]
+},
+"UHR.SW": {
+"name": "Swatch Group (Inhaberaktie)",
+"isin": "CH0012255151",
+"waehrung": "CHF",
+"hinweis": "Berichtswaehrung CHF. Gattung Inhaberaktie (UHR); Je-Aktie-Werte und Aktienzahl in Inhaberaktien-Aequivalenten (Quelle: Gesamtzahl ca. 52 Mio., Namenaktien = 1/5 Inhaberaktie; Dividende je Inhaberaktie nach Auszahlungsjahr 2022 bis 2026 dem Geschaeftsjahr zugeordnet, Gattung der Quelle nicht ausdruecklich genannt). Aktienzahl 2025 in der Quelle nur gerundet (52). 2019 und 2020 nicht erfasst (stockanalysis.com liefert nur 2021 bis 2025; boerse.de nicht abrufbar). Jahresueberschuss 2025 nur 3 (Steueraufwand 133 bei Vorsteuerergebnis 158, Ergebnis je Aktie 0,06), 2024 193. Jahresueberschuss = Anteil der Aktionaere; Eigenkapital ohne Minderheiten. Schulden ohne Leasingverbindlichkeiten (Quelle weist keine aus). Capex inkl. Immaterielle. Eigenkapitalrendite = Jahresueberschuss / Eigenkapital zum Jahresende.",
+"umsatz": [
+null,
+null,
+7313,
+7499,
+7888,
+6735,
+6280
+],
+"ebt": [
+null,
+null,
+1011,
+1096,
+1152,
+345,
+158
+],
+"jahresueberschuss": [
+null,
+null,
+765,
+807,
+869,
+193,
+3
+],
+"dividendenausschuettung": [
+null,
+null,
+null,
+null,
+null,
+null,
+null
+],
+"eigenkapital": [
+null,
+null,
+11540,
+11985,
+12197,
+12112,
+11561
+],
+"eps": [
+null,
+null,
+14.77,
+15.57,
+16.76,
+3.73,
+0.06
+],
+"dividende_je_aktie": [
+null,
+null,
+5.5,
+6.0,
+6.5,
+4.5,
+4.5
+],
+"aktien_mio": [
+null,
+null,
+51.81,
+51.84,
+51.87,
+51.77,
+52
+],
+"eigenkapitalrendite_pct": [
+null,
+null,
+6.63,
+6.73,
+7.12,
+1.59,
+0.03
+]
+},
+"LISN.SW": {
+"name": "Lindt & Spruengli (Namenaktie)",
+"isin": "CH0010570767",
+"waehrung": "CHF",
+"hinweis": "Berichtswaehrung CHF. Gattung Namenaktie (LISN; 1 Namenaktie = 100 Partizipationsscheine): Je-Aktie-Werte (EPS ca. 2.000 bis 3.200 CHF, Dividende 1.200 bis 1.800 CHF) beziehen sich auf die Namenaktie, nicht auf den PS. Aktienzahl in Mio. aus Jahresueberschuss / Ergebnis je Aktie errechnet (Quelle weist nur gerundet 0,23 aus), nicht direkt ausgewiesen. Dividende nach Auszahlungsjahr (2022 bis 2026) dem Geschaeftsjahr zugeordnet. 2019 und 2020 nicht erfasst (stockanalysis.com liefert nur 2021 bis 2025; boerse.de nicht abrufbar). Umsatz inkl. sonstiger Erloese. Eigenkapitalrendite = Jahresueberschuss / Eigenkapital zum Jahresende. Capex inkl. Immaterielle; Schulden inkl. Leasing. Operativer Cashflow 2025 (520) durch Vorratsaufbau stark gesunken.",
+"umsatz": [
+null,
+null,
+4611,
+4999,
+5231,
+5549,
+5950
+],
+"ebt": [
+null,
+null,
+621.7,
+721.5,
+787.5,
+851.3,
+923.5
+],
+"jahresueberschuss": [
+null,
+null,
+490.5,
+569.7,
+671.4,
+672.3,
+727.2
+],
+"dividendenausschuettung": [
+null,
+null,
+null,
+null,
+null,
+null,
+null
+],
+"eigenkapital": [
+null,
+null,
+5224,
+4401,
+4258,
+4840,
+4956
+],
+"eps": [
+null,
+null,
+2048.77,
+2415.92,
+2888.8,
+2917.03,
+3163.95
+],
+"dividende_je_aktie": [
+null,
+null,
+1200,
+1300,
+1400,
+1500,
+1800
+],
+"aktien_mio": [
+null,
+null,
+0.2394,
+0.2358,
+0.2324,
+0.2305,
+0.2298
+],
+"eigenkapitalrendite_pct": [
+null,
+null,
+9.39,
+12.94,
+15.77,
+13.89,
+14.67
+]
+},
+"EMSN.SW": {
+"name": "EMS-Chemie",
+"isin": "CH0016440353",
+"waehrung": "CHF",
+"hinweis": "Berichtswaehrung CHF. 2019 und 2020 nicht erfasst (stockanalysis.com liefert nur 2021 bis 2025; boerse.de nicht abrufbar), ausser Dividende 2020 (17,00, Investor-Seite der EMS-Gruppe). Dividende je Aktie = Gesamtdividende je Geschaeftsjahr inkl. Sonderdividende (EMS-Gruppe, Investor-Seite): 2021 21,00 / 2022 20,00 / 2023 16,00 / 2024 17,25 / 2025 18,40 (2025 Vorschlag des Verwaltungsrats), davon ordentlich 16,50 / 15,75 / 12,75 / 13,95 / 14,65. Jahresueberschuss = Anteil der Aktionaere; Eigenkapital ohne Minderheiten. Eigenkapitalrendite = Jahresueberschuss / Eigenkapital zum Jahresende. Capex inkl. Immaterielle und Immobilien; Schulden inkl. Leasing.",
+"umsatz": [
+null,
+null,
+2254,
+2442,
+2189,
+2071,
+1950
+],
+"ebt": [
+null,
+null,
+641.35,
+606.55,
+491.93,
+549.04,
+563.86
+],
+"jahresueberschuss": [
+null,
+null,
+550.32,
+532.1,
+457.58,
+460.79,
+466.51
+],
+"dividendenausschuettung": [
+null,
+null,
+null,
+null,
+null,
+null,
+null
+],
+"eigenkapital": [
+null,
+null,
+1799,
+1816,
+1742,
+1835,
+1855
+],
+"eps": [
+null,
+null,
+23.53,
+22.75,
+19.56,
+19.7,
+19.95
+],
+"dividende_je_aktie": [
+null,
+17.0,
+21.0,
+20.0,
+16.0,
+17.25,
+18.4
+],
+"aktien_mio": [
+null,
+null,
+23.39,
+23.39,
+23.39,
+23.39,
+23.39
+],
+"eigenkapitalrendite_pct": [
+null,
+null,
+30.59,
+29.3,
+26.27,
+25.11,
+25.15
+]
+},
+"BARN.SW": {
+"name": "Barry Callebaut",
+"isin": "CH0009002962",
+"waehrung": "CHF",
+"hinweis": "Berichtswaehrung CHF. Geschaeftsjahr endet 31.08.; Zuordnung nach Jahr des Periodenendes (2025 = Geschaeftsjahr bis 31.08.2025). Das Geschaeftsjahr bis 31.08.2026 liegt bereits vor (Umsatz 12.190, Jahresueberschuss 157,2) und steht ausserhalb des Rasters 2019 bis 2025. 2019 und 2020 nicht erfasst; fuer 2021 liegen nur Jahresueberschuss (aus Cashflow-Rechnung), Dividende, Cashflow-Posten vor (Gewinnrechnung und Bilanz 2021 nicht im Quellenfenster). Quelle stockanalysis.com; boerse.de nicht abrufbar. Umsatz 2024 und 2025 stark gestiegen durch hohe Kakaopreise (Weitergabe), operativer Cashflow 2024 (-2.064) und 2025 (-43) negativ wegen gebundenen Kapitals in Vorraeten, Schulden und Zinsen daher stark gestiegen. Eigenkapitalrendite = Jahresueberschuss / Eigenkapital zum Jahresende. Capex inkl. Immaterielle; Schulden inkl. Leasing.",
+"umsatz": [
+null,
+null,
+null,
+8092,
+8471,
+10386,
+14789
+],
+"ebt": [
+null,
+null,
+null,
+431.73,
+535.28,
+238.87,
+258.19
+],
+"jahresueberschuss": [
+null,
+null,
+383.94,
+360.71,
+444.36,
+189.79,
+185.87
+],
+"dividendenausschuettung": [
+null,
+null,
+null,
+null,
+null,
+null,
+null
+],
+"eigenkapital": [
+null,
+null,
+null,
+2902,
+2896,
+2839,
+2622
+],
+"eps": [
+null,
+null,
+null,
+65.81,
+81.04,
+34.64,
+33.9
+],
+"dividende_je_aktie": [
+null,
+null,
+28,
+28,
+29,
+29,
+29
+],
+"aktien_mio": [
+null,
+null,
+null,
+5.48,
+5.47,
+5.48,
+5.48
+],
+"eigenkapitalrendite_pct": [
+null,
+null,
+null,
+12.43,
+15.34,
+6.69,
+7.09
+]
+},
+"VACN.SW": {
+"name": "VAT Group",
+"isin": "CH0311864901",
+"waehrung": "CHF",
+"hinweis": "Berichtswaehrung CHF. 2019 und 2020 nicht erfasst (stockanalysis.com liefert nur 2021 bis 2025; boerse.de nicht abrufbar). Dividende je Aktie dem Geschaeftsjahr zugeordnet (Auszahlung im Folgejahr; Abgleich mit den gezahlten Dividenden der Cashflow-Rechnung stimmt). Keine Minderheiten, Eigenkapital = Gesamteigenkapital. Eigenkapitalrendite = Jahresueberschuss / Eigenkapital zum Jahresende. Capex inkl. Immaterielle; Schulden inkl. Leasing. Umsatz 2023 -23 % (Halbleiter-Zyklus).",
+"umsatz": [
+null,
+null,
+901.16,
+1145,
+885.32,
+942.2,
+1074
+],
+"ebt": [
+null,
+null,
+257.74,
+356.45,
+207.09,
+252.59,
+257.31
+],
+"jahresueberschuss": [
+null,
+null,
+217.44,
+306.78,
+190.31,
+211.8,
+214.28
+],
+"dividendenausschuettung": [
+null,
+null,
+null,
+null,
+null,
+null,
+null
+],
+"eigenkapital": [
+null,
+null,
+634.37,
+780.32,
+757.16,
+753.88,
+793.17
+],
+"eps": [
+null,
+null,
+7.25,
+10.23,
+6.35,
+7.06,
+7.15
+],
+"dividende_je_aktie": [
+null,
+null,
+5.5,
+6.25,
+6.25,
+6.25,
+7.0
+],
+"aktien_mio": [
+null,
+null,
+29.99,
+29.98,
+29.98,
+29.98,
+29.97
+],
+"eigenkapitalrendite_pct": [
+null,
+null,
+34.28,
+39.31,
+25.13,
+28.09,
+27.02
+]
+},
+"BAER.SW": {
+"name": "Julius Baer",
+"isin": "CH0102484968",
+"waehrung": "CHF",
+"hinweis": "Berichtswaehrung CHF. Bank: Umsatz null (boerse.de-Konvention; Ertragsgroessen der Quelle nicht vergleichbar mit Industrieumsatz). 2019 und 2020 nicht erfasst (stockanalysis.com liefert nur 2021 bis 2025; boerse.de nicht abrufbar). Dividende je Aktie laut Quelle 2,60 in allen Jahren (bei Julius Baer nicht gegen Geschaeftsbericht geprueft). Aktienzahl 2025 in der Quelle nur gerundet (205). Jahresueberschuss 2023 niedrig durch hohe Kreditrisikovorsorge (606 laut Quelle), 2024 hoch bei sehr niedrigem Steueraufwand (31,9). Eigenkapitalrendite = Jahresueberschuss / Eigenkapital zum Jahresende.",
+"umsatz": [
+null,
+null,
+null,
+null,
+null,
+null,
+null
+],
+"ebt": [
+null,
+null,
+1259,
+1083,
+513.8,
+1054,
+937.6
+],
+"jahresueberschuss": [
+null,
+null,
+1082,
+949.6,
+454,
+1022,
+763.7
+],
+"dividendenausschuettung": [
+null,
+null,
+null,
+null,
+null,
+null,
+null
+],
+"eigenkapital": [
+null,
+null,
+6734,
+6287,
+6161,
+6827,
+7228
+],
+"eps": [
+null,
+null,
+5.06,
+4.56,
+2.21,
+4.98,
+3.72
+],
+"dividende_je_aktie": [
+null,
+null,
+2.6,
+2.6,
+2.6,
+2.6,
+2.6
+],
+"aktien_mio": [
+null,
+null,
+209.23,
+206.6,
+204.82,
+204.86,
+205.0
+],
+"eigenkapitalrendite_pct": [
+null,
+null,
+16.07,
+15.1,
+7.37,
+14.97,
+10.57
+]
+},
+"BALN.SW": {
+"name": "Helvetia Baloise Holding (bis 2024 Baloise Holding)",
+"isin": "CH0466642201",
+"waehrung": "CHF",
+"hinweis": "Berichtswaehrung CHF. Versicherer: Umsatz null. Fusion: Helvetia Holding hat Baloise Ende 2025 uebernommen (Verschmelzung der Holdings am 05.12.2025; Namensaenderung in Helvetia Baloise Holding AG, ISIN CH0466642201, SIX-Ticker HBAN; alte Baloise-ISIN CH0012410517, Ticker BALN, nicht mehr gehandelt). Historie gebrochen: 2020 bis 2024 = Baloise Holding AG (stockanalysis.com, Seite BALN; Jahresueberschuss, Ergebnis je Aktie, Dividende 6,40 / 7,00 / 7,40 / 7,70 / 8,10, Eigenkapital 2023 und 2024 aus der Baloise-Mitteilung 2024: 3.250,0 / 3.629,7; Aktienzahl ca. 45 Mio., Quelle nur gerundet, daher null). 2025 = Helvetia Baloise Holding, aber nach IFRS-Erwerbsbilanzierung enthaelt die Gewinnrechnung 2025 nur Helvetia (Baloise nur in der Bilanz zum 31.12.2025): Jahresueberschuss 552,3 (Aktionaere; Konzernergebnis inkl. Minderheiten 574,7), Ergebnis je Aktie 10,32 auf der alten Helvetia-Aktienzahl (ca. 53 Mio.), Eigenkapital 13.004 (ohne Minderheiten, nach Zusammenschluss) und Aktienzahl 99,06 Mio. zum Jahresende, Dividende 7,70 (Vorschlag an die Generalversammlung, auf Basis der neuen Aktienzahl); Eigenkapitalrendite 2025 daher nicht sinnvoll und null. Werte 2025 nicht mit 2020 bis 2024 vergleichbar. Pro-forma-Zahlen der Gruppe liegen separat vor (Underlying Earnings 1.034,7), hier nicht enthalten. 2019 nicht erfasst. Eigenkapitalrendite = Jahresueberschuss / Eigenkapital zum Jahresende.",
+"umsatz": [
+null,
+null,
+null,
+null,
+null,
+null,
+null
+],
+"ebt": [
+null,
+568.5,
+697.9,
+343.9,
+318.2,
+520.5,
+719
+],
+"jahresueberschuss": [
+null,
+434.3,
+588.4,
+247.8,
+239.6,
+384.8,
+552.3
+],
+"dividendenausschuettung": [
+null,
+null,
+null,
+null,
+null,
+null,
+null
+],
+"eigenkapital": [
+null,
+null,
+null,
+null,
+3250.0,
+3629.7,
+13004
+],
+"eps": [
+null,
+9.64,
+13.06,
+5.49,
+5.29,
+8.48,
+10.32
+],
+"dividende_je_aktie": [
+null,
+6.4,
+7.0,
+7.4,
+7.7,
+8.1,
+7.7
+],
+"aktien_mio": [
+null,
+null,
+null,
+null,
+null,
+null,
+99.06
+],
+"eigenkapitalrendite_pct": [
+null,
+null,
+null,
+null,
+7.37,
+10.6,
+null
+]
 }
 }
 }

@@ -9784,6 +9784,1228 @@ null,
 192
 ],
 "hinweis": "CHF. Bruch durch aufgegebenes Geschaeft Capsules & Health Ingredients: GuV 2024 und 2025 nur fortgefuehrt (Umsatz 2024 5480 statt urspruenglich 6574), 2021-2023 unbereinigt; Cashflow-Basis (ocf, capex, da) ggf. inkl. aufgegebenes Geschaeft. 2025 Nettoergebnis -275 (aufgegebenes Geschaeft -1184). capex = Sachanlagen + immaterielle Werte; cash ohne kurzfr. Anlagen (1357/650/50/600/0); debt inkl. Leasing."
+},
+"SCMN.SW": {
+"jahre": [
+2021,
+2022,
+2023,
+2024,
+2025
+],
+"ocf": [
+4044,
+3876,
+4029,
+4387,
+6012
+],
+"capex": [
+2270,
+2289,
+2272,
+2288,
+3008
+],
+"da": [
+1953,
+1873,
+1844,
+2232,
+3867
+],
+"div": [
+1140,
+1140,
+1140,
+1140,
+1140
+],
+"bb": [
+null,
+null,
+null,
+null,
+null
+],
+"cash": [
+401,
+121,
+148,
+1523,
+258
+],
+"debt": [
+8462,
+7913,
+7580,
+18125,
+16718
+],
+"umsatz": [
+11183,
+11051,
+11072,
+11017,
+15048
+],
+"brutto": [
+6050,
+6086,
+5971,
+6176,
+8677
+],
+"ebit": [
+2126,
+2066,
+2290,
+2021,
+1946
+],
+"zins": [
+118,
+58,
+136,
+210,
+364
+],
+"steuer": [
+319,
+360,
+364,
+320,
+297
+],
+"hinweis": "Berichtswaehrung CHF. 2019 und 2020 nicht erfasst (Quelle stockanalysis.com liefert nur 2021 bis 2025; boerse.de nicht abrufbar). Ab 2025 inkl. Vodafone Italia (Uebernahme Ende 2024, Umsatz 2025 +37 %); 2024 Cash-Akquisitionen 7.372. Eigenkapitalrendite = Jahresueberschuss / Eigenkapital zum Jahresende. Abschreibungen und Schulden inkl. Leasing."
+},
+"KNIN.SW": {
+"jahre": [
+2021,
+2022,
+2023,
+2024,
+2025
+],
+"ocf": [
+2462,
+4404,
+1699,
+1484,
+1781
+],
+"capex": [
+204,
+247,
+310,
+304,
+239
+],
+"da": [
+733,
+769,
+775,
+824,
+909
+],
+"div": [
+538,
+1186,
+1661,
+1182,
+979
+],
+"bb": [
+59,
+646,
+716,
+51,
+20
+],
+"cash": [
+2305,
+3778,
+2011,
+1152,
+750
+],
+"debt": [
+1889,
+1700,
+1818,
+2346,
+3957
+],
+"umsatz": [
+32801,
+39398,
+23849,
+24802,
+24476
+],
+"brutto": [
+9896,
+11109,
+8787,
+8670,
+8800
+],
+"ebit": [
+2951,
+3733,
+1853,
+1652,
+1238
+],
+"zins": [
+20,
+20,
+25,
+37,
+50
+],
+"steuer": [
+790,
+998,
+492,
+408,
+305
+],
+"hinweis": "Berichtswaehrung CHF. 2019 und 2020 nicht erfasst (stockanalysis.com liefert nur 2021 bis 2025; boerse.de nicht abrufbar). Jahresueberschuss = Anteil der Aktionaere (nach Minderheiten). Umsatz 2023 gegenueber 2022 -39 % wegen Normalisierung der Seefrachtraten; Dividende je Aktie laut Quelle (2022: 14, vermutlich inkl. Sonderdividende, nicht geprueft). Eigenkapitalrendite = Jahresueberschuss / Eigenkapital (Common Equity) zum Jahresende. Capex inkl. Immaterielle; Abschreibungen und Schulden inkl. Leasing."
+},
+"SOON.SW": {
+"jahre": [
+2021,
+2022,
+2023,
+2024,
+2025
+],
+"ocf": [
+null,
+941.1,
+783.9,
+753.3,
+793.7
+],
+"capex": [
+null,
+106.6,
+154.3,
+128.6,
+131.7
+],
+"da": [
+null,
+173.5,
+201.6,
+206.1,
+190.6
+],
+"div": [
+null,
+201.6,
+267.6,
+274.1,
+256.2
+],
+"bb": [
+null,
+757.9,
+502.7,
+51.3,
+67.3
+],
+"cash": [
+null,
+610.5,
+413.9,
+513.6,
+686.9
+],
+"debt": [
+null,
+1484,
+1815,
+1795,
+1761
+],
+"umsatz": [
+null,
+3364,
+3738,
+3627,
+3613
+],
+"brutto": [
+null,
+2463,
+2645,
+2622,
+2684
+],
+"ebit": [
+null,
+784.6,
+783.9,
+714.2,
+733.6
+],
+"zins": [
+null,
+21.6,
+23.4,
+28.2,
+26.9
+],
+"steuer": [
+null,
+64.5,
+57.4,
+37.8,
+119.4
+],
+"hinweis": "Berichtswaehrung CHF. Geschaeftsjahr endet 31.03.; Zuordnung nach Jahr des Periodenendes (2025 = Geschaeftsjahr bis 31.03.2025, 2022 = bis 31.03.2022). Das Geschaeftsjahr bis 31.03.2026 liegt bereits vor (Umsatz 3.606, Jahresueberschuss 430,6, Dividende 4,70) und steht ausserhalb des Rasters. 2019 bis 2021 nicht erfasst (stockanalysis.com liefert nur 5 Geschaeftsjahre; boerse.de nicht abrufbar). Jahresueberschuss = Anteil der Aktionaere. Aktienzahl zum Periodenende; Eigenkapitalrendite = Jahresueberschuss / Eigenkapital zum Jahresende. Capex inkl. Immaterielle; Abschreibungen ohne Sonstige Amortisation; Schulden inkl. Leasing."
+},
+"STMN.SW": {
+"jahre": [
+2021,
+2022,
+2023,
+2024,
+2025
+],
+"ocf": [
+560.3,
+415.16,
+503.95,
+483.39,
+503.97
+],
+"capex": [
+120.97,
+195.44,
+187.34,
+167.77,
+223.45
+],
+"da": [
+94.85,
+151.67,
+106.01,
+119.18,
+125.47
+],
+"div": [
+91.38,
+107.43,
+127.45,
+135.43,
+151.34
+],
+"bb": [
+3.5,
+6.86,
+27.34,
+27.82,
+24.56
+],
+"cash": [
+880.42,
+696.1,
+410.31,
+375.49,
+475.43
+],
+"debt": [
+706.57,
+781.61,
+504.23,
+413.89,
+418.93
+],
+"umsatz": [
+2022,
+2321,
+2277,
+2504,
+2605
+],
+"brutto": [
+1540,
+1756,
+1695,
+1788,
+1826
+],
+"ebit": [
+542.49,
+548.94,
+636.33,
+649.65,
+653.93
+],
+"zins": [
+16.94,
+17.02,
+14.6,
+20.99,
+14.55
+],
+"steuer": [
+78.1,
+63.66,
+98.39,
+100.08,
+97.05
+],
+"hinweis": "Berichtswaehrung CHF. 2019 und 2020 nicht erfasst (stockanalysis.com liefert nur 2021 bis 2025; boerse.de nicht abrufbar). Je-Aktie-Werte und Aktienzahl auf Basis nach dem Aktiensplit 1:10 (2022) ausgewiesen. Jahresueberschuss = Anteil der Aktionaere; 2023 und 2024 mit Verlusten aus aufgegebenem Geschaeftsbereich (-202,1 bzw. -69,3; ClearCorrect), 2022 Abschreibungen hoch. Eigenkapitalrendite = Jahresueberschuss / Eigenkapital (Common Equity) zum Jahresende. Capex inkl. Immaterielle; Schulden inkl. Leasing."
+},
+"SGSN.SW": {
+"jahre": [
+2021,
+2022,
+2023,
+2024,
+2025
+],
+"ocf": [
+1169,
+1030,
+1123,
+1224,
+1223
+],
+"capex": [
+336,
+329,
+298,
+251,
+261
+],
+"da": [
+471,
+474,
+453,
+442,
+443
+],
+"div": [
+599,
+599,
+590,
+207,
+222
+],
+"bb": [
+null,
+268,
+10,
+50,
+100
+],
+"cash": [
+1480,
+1623,
+1569,
+1210,
+2330
+],
+"debt": [
+3807,
+4446,
+4408,
+3880,
+4897
+],
+"umsatz": [
+6405,
+6642,
+6622,
+6794,
+6945
+],
+"brutto": [
+2824,
+2913,
+2907,
+2953,
+3078
+],
+"ebit": [
+971,
+918,
+908,
+914,
+984
+],
+"zins": [
+46,
+43,
+70,
+73,
+76
+],
+"steuer": [
+269,
+219,
+205,
+222,
+245
+],
+"hinweis": "Berichtswaehrung CHF. 2019 und 2020 nicht erfasst (stockanalysis.com liefert nur 2021 bis 2025; boerse.de nicht abrufbar). Je-Aktie-Werte und Aktienzahl auf Basis nach dem Aktiensplit 1:20 (2023) ausgewiesen (Dividende 3,20 je Aktie in allen Jahren). Jahresueberschuss = Anteil der Aktionaere; Eigenkapital = Anteil der Aktionaere (ohne Minderheiten), durch Ausschuettungen und Rueckkaeufe niedrig, daher hohe Eigenkapitalrendite (Jahresueberschuss / Eigenkapital zum Jahresende). Capex inkl. Immaterielle; Schulden inkl. Leasing."
+},
+"SCHP.SW": {
+"jahre": [
+2021,
+2022,
+2023,
+2024,
+2025
+],
+"ocf": [
+1314,
+688,
+1271,
+1595,
+1490
+],
+"capex": [
+129,
+126,
+102,
+109,
+107
+],
+"da": [
+339,
+344,
+349,
+330,
+334
+],
+"div": [
+430,
+431,
+430,
+538,
+643
+],
+"bb": [
+null,
+49,
+4,
+65,
+231
+],
+"cash": [
+2841,
+2153,
+2336,
+2599,
+2304
+],
+"debt": [
+1089,
+1044,
+719,
+812,
+688
+],
+"umsatz": [
+11236,
+11346,
+11494,
+11236,
+10947
+],
+"brutto": [
+7822,
+7821,
+8092,
+8186,
+8113
+],
+"ebit": [
+1162,
+899,
+1180,
+1258,
+1376
+],
+"zins": [
+21,
+23,
+25,
+36,
+35
+],
+"steuer": [
+243,
+194,
+240,
+262,
+280
+],
+"hinweis": "Berichtswaehrung CHF. Gattung PS (Partizipationsschein, ISIN CH0024638196). Konzernzahlen; Aktienzahl = Namenaktien und PS zusammen (Quelle trennt nicht; PS und Namenaktie sind je Stueck gleich dividendenberechtigt, Je-Aktie-Werte gelten daher fuer den PS). 2019 und 2020 nicht erfasst (stockanalysis.com liefert nur 2021 bis 2025; boerse.de nicht abrufbar). Jahresueberschuss = Anteil der Aktionaere; Eigenkapital ohne Minderheiten. Dividende je Aktie nach Auszahlungsjahr (Auszahlung 2022 bis 2026) dem Geschaeftsjahr zugeordnet: 4,00 / 4,00 / 5,00 / 6,00 / 6,80; die Gewinnrechnungsseite derselben Quelle weist abweichend 4/4/4/6/6 aus (nicht geprueft). Eigenkapitalrendite = Jahresueberschuss / Eigenkapital zum Jahresende. Capex inkl. Immaterielle; Schulden inkl. Leasing."
+},
+"UHR.SW": {
+"jahre": [
+2021,
+2022,
+2023,
+2024,
+2025
+],
+"ocf": [
+1298,
+724,
+615,
+333,
+507
+],
+"capex": [
+294,
+385,
+784,
+547,
+449
+],
+"da": [
+400,
+371,
+351,
+370,
+380
+],
+"div": [
+181,
+285,
+311,
+335,
+234
+],
+"bb": [
+12,
+2,
+null,
+50,
+null
+],
+"cash": [
+1979,
+2176,
+1683,
+1103,
+1010
+],
+"debt": [
+100,
+10,
+77,
+22,
+38
+],
+"umsatz": [
+7313,
+7499,
+7888,
+6735,
+6280
+],
+"brutto": [
+5808,
+6190,
+6711,
+5603,
+5162
+],
+"ebit": [
+1022,
+1159,
+1191,
+306,
+135
+],
+"zins": [
+5,
+3,
+4,
+3,
+4
+],
+"steuer": [
+237,
+273,
+262,
+126,
+133
+],
+"hinweis": "Quelle stockanalysis.com. Gattung Inhaberaktie (Aequivalente). Schulden ohne Leasing (Quelle weist keine aus). Operatives Ergebnis 2024 und 2025 stark gesunken (306 bzw. 135), Jahresueberschuss 2025 nur 3. Capex 2023 (784) Spitze durch Investitionen in Produktionsstandorte."
+},
+"LISN.SW": {
+"jahre": [
+2021,
+2022,
+2023,
+2024,
+2025
+],
+"ocf": [
+826.8,
+756,
+778.6,
+1182,
+520.4
+],
+"capex": [
+240.6,
+229.6,
+301.8,
+313.5,
+328.8
+],
+"da": [
+252.8,
+248.7,
+250.4,
+256.2,
+268.7
+],
+"div": [
+264.1,
+284.1,
+303.6,
+321.7,
+344.8
+],
+"bb": [
+433.3,
+551.4,
+593.9,
+304.9,
+332.9
+],
+"cash": [
+937.2,
+864.6,
+462.2,
+1015,
+668.2
+],
+"debt": [
+1482,
+1436,
+1406,
+1665,
+1765
+],
+"umsatz": [
+4611,
+4999,
+5231,
+5549,
+5950
+],
+"brutto": [
+3093,
+3322,
+3525,
+3645,
+3736
+],
+"ebit": [
+649,
+753.9,
+826.1,
+906.1,
+980
+],
+"zins": [
+25.4,
+29.7,
+33.6,
+46.1,
+52.1
+],
+"steuer": [
+131.2,
+151.8,
+116.1,
+179,
+196.8
+],
+"hinweis": "Quelle stockanalysis.com. Gattung Namenaktie. Rueckkaeufe/Dividenden sind Konzernzahlen. Operativer Cashflow 2025 (520) wegen Vorratsaufbau deutlich unter 2024 (1.182); Leasingzahlungen in der Quelle 2023 und 2025 mit Schuldentilgung identisch ausgewiesen (moegliche Quellenunschaerfe). Schulden inkl. Leasing."
+},
+"EMSN.SW": {
+"jahre": [
+2021,
+2022,
+2023,
+2024,
+2025
+],
+"ocf": [
+518.31,
+365.89,
+576.47,
+480.37,
+534.34
+],
+"capex": [
+79.93,
+93.97,
+49.39,
+32.85,
+28.39
+],
+"da": [
+55.44,
+50.42,
+48.32,
+51.18,
+53.92
+],
+"div": [
+304.06,
+385.92,
+467.78,
+374.22,
+403.46
+],
+"bb": [
+null,
+null,
+null,
+null,
+null
+],
+"cash": [
+110.6,
+248.57,
+264.38,
+518.37,
+603.1
+],
+"debt": [
+19.41,
+13.52,
+32.34,
+8.78,
+32.5
+],
+"umsatz": [
+2254,
+2442,
+2189,
+2071,
+1950
+],
+"brutto": [
+983.94,
+957.59,
+846.24,
+928.13,
+935.46
+],
+"ebit": [
+641.08,
+611.17,
+493.11,
+539.88,
+567.86
+],
+"zins": [
+0.67,
+0.75,
+0.8,
+1.13,
+0.9
+],
+"steuer": [
+88.48,
+71.69,
+30.73,
+82.91,
+93.04
+],
+"hinweis": "Quelle stockanalysis.com. Ausschuettungen inkl. Sonderdividenden; Aktienrueckkaeufe keine ausgewiesen. Cash 2024 und 2025 hoch (keine nennenswerten Schulden). Schulden inkl. Leasing, Quelle mit kleinen Rundungsabweichungen."
+},
+"BARN.SW": {
+"jahre": [
+2021,
+2022,
+2023,
+2024,
+2025
+],
+"ocf": [
+615.64,
+521.65,
+330.56,
+-2064,
+-42.52
+],
+"capex": [
+275.21,
+275.58,
+240.19,
+285.04,
+294.97
+],
+"da": [
+190.94,
+201.47,
+206.6,
+215.06,
+216.34
+],
+"div": [
+120.72,
+153.47,
+153.6,
+158.93,
+159.05
+],
+"bb": [
+18.4,
+16.95,
+23.63,
+null,
+1.88
+],
+"cash": [
+null,
+878.2,
+488.2,
+978.21,
+1905
+],
+"debt": [
+null,
+2079,
+1797,
+4796,
+6207
+],
+"umsatz": [
+null,
+8092,
+8471,
+10386,
+14789
+],
+"brutto": [
+null,
+1217,
+1349,
+1382,
+1419
+],
+"ebit": [
+null,
+632.78,
+667.85,
+639.87,
+639.96
+],
+"zins": [
+null,
+108.27,
+123.34,
+221.02,
+397.28
+],
+"steuer": [
+null,
+70.79,
+92.15,
+47.94,
+69.81
+],
+"hinweis": "Quelle stockanalysis.com. Geschaeftsjahr bis 31.08. (2025 = bis 31.08.2025); 2021 nur Cashflow-Posten (Gewinnrechnung/Bilanz nicht im Quellenfenster). Operativer Cashflow 2024 (-2.064) und 2025 (-43) negativ durch Vorratsaufbau bei hohen Kakaopreisen (Betrag laut Quelle negativ eingetragen); Schulden inkl. Leasing, Zinsen stark gestiegen."
+},
+"VACN.SW": {
+"jahre": [
+2021,
+2022,
+2023,
+2024,
+2025
+],
+"ocf": [
+239.79,
+293.97,
+256.41,
+240.64,
+299.17
+],
+"capex": [
+42.97,
+66.24,
+69.24,
+55.67,
+68.31
+],
+"da": [
+38.82,
+38.76,
+40.07,
+42.37,
+47.3
+],
+"div": [
+134.98,
+164.96,
+187.44,
+187.42,
+187.36
+],
+"bb": [
+4.34,
+4.46,
+5.74,
+7.02,
+5.42
+],
+"cash": [
+127.15,
+174.37,
+144.11,
+158.12,
+140.94
+],
+"debt": [
+206.94,
+211.18,
+207.31,
+241.79,
+248.28
+],
+"umsatz": [
+901.16,
+1145,
+885.32,
+942.2,
+1074
+],
+"brutto": [
+549.97,
+708.17,
+527.41,
+602.27,
+655.03
+],
+"ebit": [
+256.38,
+360.6,
+204.86,
+244.17,
+252.39
+],
+"zins": [
+3.52,
+3.58,
+5.31,
+5.77,
+3.54
+],
+"steuer": [
+40.3,
+49.67,
+16.78,
+40.79,
+43.03
+],
+"hinweis": "Quelle stockanalysis.com. Schulden inkl. Leasing; Dividende und Aktienrueckkaeufe aus der Cashflow-Rechnung. Operatives Ergebnis 2023 niedrig wegen Zyklus (204,9 gegenueber 360,6 in 2022)."
+},
+"BAER.SW": {
+"jahre": [
+2021,
+2022,
+2023,
+2024,
+2025
+],
+"ocf": [
+null,
+null,
+null,
+null,
+null
+],
+"capex": [
+196.8,
+196.7,
+239.6,
+253.8,
+247.3
+],
+"da": [
+153.6,
+138,
+115.4,
+106.6,
+98.7
+],
+"div": [
+385.8,
+554.1,
+535.6,
+535.6,
+535.6
+],
+"bb": [
+443,
+226.3,
+232,
+58.6,
+63.4
+],
+"cash": [
+null,
+null,
+null,
+null,
+null
+],
+"debt": [
+null,
+null,
+null,
+null,
+null
+],
+"umsatz": [
+null,
+null,
+null,
+null,
+null
+],
+"brutto": [
+null,
+null,
+null,
+null,
+null
+],
+"ebit": [
+null,
+null,
+null,
+null,
+null
+],
+"zins": [
+null,
+null,
+null,
+null,
+null
+],
+"steuer": [
+176.1,
+134,
+60.3,
+31.9,
+173.8
+],
+"hinweis": "Bank: operativer Cashflow (2021 2.082 / 2022 -1.794 / 2023 -929 / 2024 2.126 / 2025 1.232) schwankt stark durch Handels- und Kundengeschaeft und ist nicht vergleichbar, daher null. Cash (liquide Mittel inkl. Kundenpositionen) und Schulden (Einlagen/Verbindlichkeiten) nicht mit Industriefirmen vergleichbar, daher null; ebenso Umsatz, Bruttogewinn, operatives Ergebnis, Zinsen (Zinsaufwand der Quelle sind Einlagenzinsen). Capex = Sachanlagen und Software laut Quelle; Abschreibungen ohne Sonstige Amortisation (zusaetzlich 83,5 bis 146). Quelle stockanalysis.com."
+},
+"BALN.SW": {
+"jahre": [
+2021,
+2022,
+2023,
+2024,
+2025
+],
+"ocf": [
+null,
+null,
+null,
+null,
+null
+],
+"capex": [
+null,
+null,
+null,
+null,
+null
+],
+"da": [
+null,
+null,
+null,
+null,
+null
+],
+"div": [
+null,
+null,
+null,
+null,
+null
+],
+"bb": [
+null,
+null,
+null,
+null,
+null
+],
+"cash": [
+null,
+null,
+null,
+null,
+null
+],
+"debt": [
+null,
+null,
+null,
+null,
+null
+],
+"umsatz": [
+null,
+null,
+null,
+null,
+null
+],
+"brutto": [
+null,
+null,
+null,
+null,
+null
+],
+"ebit": [
+null,
+null,
+null,
+null,
+null
+],
+"zins": [
+50.7,
+40.6,
+79.8,
+80.0,
+78.3
+],
+"steuer": [
+114.6,
+99.5,
+81.9,
+141.1,
+144.3
+],
+"hinweis": "Versicherer, Fusion Ende 2025: Cashflow, Bilanzposten (Cash, Schulden), Umsatz, Bruttogewinn, operatives Ergebnis, Abschreibungen, Dividendenzahlungen und Rueckkaeufe nicht sinnvoll vergleichbar und wegen des Bruchs Baloise (2021 bis 2024) / Helvetia-Erwerber (2025) nicht eingetragen (null). Steuern und Zinsaufwand 2021 bis 2024 laut Quelle fuer Baloise Holding (BALN-Seite), 2025 Helvetia Baloise Holding (nur Helvetia in der Gewinnrechnung). Quelle stockanalysis.com."
 }
 }
 }
