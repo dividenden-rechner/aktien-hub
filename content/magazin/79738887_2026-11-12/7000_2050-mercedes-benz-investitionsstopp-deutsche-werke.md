@@ -12,7 +12,6 @@ image_alt: "Foto zu Mercedes-Benz Group AG: Mercedes-Benz Werk Untertürkheim, N
 image_credit: "Foto: Julian Herzog ( Website ) / Wikimedia Commons, CC BY 4.0"
 image_source: https://commons.wikimedia.org/wiki/File:Mercedes-Benz_Werk_Untert%C3%BCrkheim_Neckarpark_Stuttgart_2015_02.jpg
 story_chart: assets/magazin/mercedes-benz-investitionsstopp-ergebnis.png
-story_kz: true
 story_text: "Mercedes stoppt alle weiteren Investitionen in deutsche Werke und prüft, welche Standorte sich noch lohnen.\nIm Streit mit dem Betriebsrat geht es um die 35-Stunden-Woche und niedrigere Arbeitskosten. Für Anleger zählt, ob die Kostensenkung die schwache Marge im Pkw-Geschäft stützt oder ein langer Arbeitskampf teuer wird.\nDazu kommen China mit minus 29 % bei den Auslieferungen und die gesenkte Prognose für 2026."
 logo_symbol: MBG.DE
 logo_domain: mercedes-benz.com
@@ -42,5 +41,13 @@ Die Zahlen zeigen die Folgen. Der operative Gewinn halbierte sich 2025 auf 5,82 
 ## Was der Schritt für Anleger bedeutet
 
 Die Aktie gab am Donnerstag im Xetra-Handel zeitweise um 1,6 % auf 40,77 Euro nach. Für Aktionäre hat der Konflikt zwei Seiten. Niedrigere Kosten in Deutschland würden die schwache Marge im Pkw-Geschäft stützen, und der Vorstand zeigt, dass er bereit ist, Härte zu zeigen. Gleichzeitig steigt das Risiko eines langen Arbeitskampfs, von Produktionsverlagerungen mit hohen Einmalkosten und von Streit mit Politik und Gewerkschaften, während der Konzern ohnehin mit China und den Zöllen kämpft. Offen ist, ob der Investitionsstopp ein Verhandlungsdruckmittel bleibt oder zu konkreten Schließungsbeschlüssen führt.
+
+| Kennzahl | Mercedes-Benz |
+|---|---|
+| KGV | 7,8 |
+| Dividendenrendite | 8,4 % |
+| Ausschüttungsquote | 66,0 % |
+
+Geschäftsjahr 2025, Kurs vom 11.11.2026.
 
 *Quellen: SPIEGEL und Handelsblatt (12.11.2026), Mercedes-Benz Group, Ad-hoc-Meldung vom 27.10.2026. Keine Anlageberatung.*
