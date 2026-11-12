@@ -27,6 +27,17 @@
 "STLD": [
 {
 "betrag": 0.53,
+"zahltag": "2026-10-09",
+"stichtag": "2026-09-30",
+"art": "regulaer",
+"beleg": " Fort Wayne, IN 46804 Steel Dynamics Announces Third Quarter 2026 Cash Dividend FORT WAYNE, INDIANA, August 14, 2026 / PRNewswire / Steel Dynamics, Inc (NASDAQ/GS: STLD) today announced that the company’s board of directors declared a third quarter cash dividend of $0.53 per common share. The divide",
+"waehrung": "USD",
+"ex_tag": "2026-09-30",
+"meldung": "2026-08-14",
+"quelle": "https://www.sec.gov/Archives/edgar/data/1022671/000110465926096861/tm2623292d1_ex99-1.htm"
+},
+{
+"betrag": 0.53,
 "zahltag": "2027-01-08",
 "stichtag": "2026-12-31",
 "art": "regulaer",
@@ -117,6 +128,17 @@
 ],
 "SPG": [
 {
+"betrag": 2.25,
+"waehrung": "USD",
+"zahltag": "2026-09-30",
+"stichtag": "2026-09-09",
+"art": "regulaer",
+"beleg": "Today, Simon’s Board of Directors declared a quarterly common stock dividend of  $2.25 for the third quarter of 2026.",
+"ex_tag": "2026-09-09",
+"meldung": "2026-08-10",
+"quelle": "https://www.sec.gov/Archives/edgar/data/1063761/000110465926093361/tm2620726d2_ex99-1.htm"
+},
+{
 "betrag": 2.3,
 "waehrung": "USD",
 "zahltag": "2026-12-31",
@@ -194,6 +216,17 @@
 }
 ],
 "TPR": [
+{
+"betrag": 0.4625,
+"zahltag": "2026-09-21",
+"stichtag": "2026-09-04",
+"art": "regulaer",
+"beleg": " Given Tapestry's strong financial position, significant free cash flow generation, and outlook for continued growth, the Company expects to return approximately $1.7 billion to shareholders in Fiscal 2027 through its capital return programs: | | • | Dividend: The Board of Directors approved a 16% i",
+"waehrung": "USD",
+"ex_tag": "2026-09-04",
+"meldung": "2026-08-13",
+"quelle": "https://www.sec.gov/Archives/edgar/data/1116132/000114036126032624/ef20079840_ex99-1.htm"
+},
 {
 "betrag": 0.4625,
 "zahltag": "2026-12-21",
@@ -962,16 +995,185 @@
 "meldung": "2026-09-30",
 "quelle": "https://www.sec.gov/Archives/edgar/data/723125/000072312526000018/a2026q4ex991-pressrelease.htm"
 }
+],
+"DRI": [
+{
+"betrag": 1.62,
+"zahltag": "2026-11-02",
+"stichtag": "2026-10-09",
+"art": "regulaer",
+"beleg": " | | | 1 Dividend Declared Darden’s Board of Directors declared a quarterly cash dividend of $1.62 per share on the Company’s outstanding common stock. The dividend is payable on November 2, 2026 to shareholders of record at the close of business on October 9, 2026.",
+"waehrung": "USD",
+"ex_tag": "2026-10-09",
+"meldung": "2026-09-24",
+"quelle": "https://www.sec.gov/Archives/edgar/data/940944/000094094426000032/exhibit991-q1fy27.htm"
+}
+],
+"KDP": [
+{
+"betrag": 0.23,
+"waehrung": "USD",
+"zahltag": "2026-10-09",
+"stichtag": "2026-09-28",
+"art": "regulaer",
+"beleg": "The regular quarterly dividend will be paid on October 9, 2026, to shareholders of record on September 28, 2026.",
+"ex_tag": "2026-09-28",
+"meldung": "2026-09-16",
+"quelle": "https://www.sec.gov/Archives/edgar/data/1418135/000141813526000058/exhibit991keurigdrpepperde.htm"
+}
+],
+"AON": [
+{
+"betrag": 0.5,
+"zahltag": "2026-08-21",
+"stichtag": "2026-08-06",
+"art": "regulaer",
+"beleg": " On August 5, 2026, the Board declared (i) an ordinary cash dividend of $0.50 per share on all issued and outstanding shares of common and restricted stock to shareholders of record as of the close of business on August 6, 2026 (the “Dividend Record Date”) and (ii) a cash dividend equivalent of $0.5",
+"waehrung": "USD",
+"ex_tag": "2026-08-06",
+"meldung": "2026-09-11",
+"quelle": "https://www.sec.gov/Archives/edgar/data/315293/000119312526388699/d67980dex991.htm"
+}
+],
+"ORCL": [
+{
+"betrag": 0.5,
+"waehrung": "USD",
+"zahltag": "2026-10-23",
+"stichtag": "2026-10-09",
+"art": "regulaer",
+"beleg": "The board of directors declared a quarterly cash dividend of $0.50 per share of outstanding common stock.",
+"ex_tag": "2026-10-09",
+"meldung": "2026-09-10",
+"quelle": "https://www.sec.gov/Archives/edgar/data/1341439/000119312526387905/orcl-ex99_1.htm"
+}
+],
+"MPWR": [
+{
+"betrag": 2.0,
+"waehrung": "USD",
+"zahltag": "2026-10-15",
+"stichtag": "2026-09-30",
+"art": "regulaer",
+"beleg": "...announced today its third quarter dividend of $2.00 per common share to all stockholders of record as of the close of business on September 30, 2026.",
+"ex_tag": "2026-09-30",
+"meldung": "2026-09-10",
+"quelle": "https://www.sec.gov/Archives/edgar/data/1280452/000162828026061318/mpwr-ex991x09102026.htm"
+}
+],
+"AVGO": [
+{
+"betrag": 0.65,
+"zahltag": "2026-09-30",
+"stichtag": "2026-09-30",
+"art": "regulaer",
+"beleg": " 2 Quarterly Dividends The Board of Directors of Broadcom has approved a quarterly cash dividend of $0.65 per share. The dividend is payable on September 30, 2026 to stockholders of record at the close of business (5:00 p.",
+"waehrung": "USD",
+"ex_tag": "2026-09-30",
+"meldung": "2026-09-02",
+"quelle": "https://www.sec.gov/Archives/edgar/data/1730168/000173016826000076/avgo-08022026x8kxex99.htm"
+}
+],
+"HPE": [
+{
+"betrag": 0.1425,
+"zahltag": "2026-10-16",
+"stichtag": "2026-09-17",
+"art": "regulaer",
+"beleg": " Dividend The HPE Board of Directors declared a regular cash dividend of $0.1425 per share on the company’s common stock, payable on or about October 16, 2026, to stockholders of record as of the close of business on September 17, 2026. Fiscal 2026 Fourth Quarter Outlook HPE estimates revenue to be ",
+"waehrung": "USD",
+"ex_tag": "2026-09-17",
+"meldung": "2026-09-02",
+"quelle": "https://www.sec.gov/Archives/edgar/data/1645590/000164559026000078/ex-991x922026x8k.htm"
+}
+],
+"VRT": [
+{
+"betrag": 0.0625,
+"zahltag": "2026-09-24",
+"stichtag": "2026-09-14",
+"art": "regulaer",
+"beleg": "htm EX-99.1 Document Vertiv Declares Quarterly Dividend COLUMBUS, Ohio, September 2, 2026 – Vertiv Holdings Co (NYSE: VRT), a global leader in critical digital infrastructure, today announced that its Board of Directors has declared a quarterly cash dividend of $0.0625 per share of the company's Cla",
+"waehrung": "USD",
+"ex_tag": "2026-09-14",
+"meldung": "2026-09-02",
+"quelle": "https://www.sec.gov/Archives/edgar/data/1674101/000162828026059961/exhibit991vrt-q32026divide.htm"
+}
+],
+"BBY": [
+{
+"betrag": 0.96,
+"zahltag": "2026-10-08",
+"stichtag": "2026-09-17",
+"art": "regulaer",
+"beleg": " Today, the company announced its board of directors has authorized the payment of a regular quarterly cash dividend of $0.96 per common share. The regular quarterly dividend is payable on October 8, 2026, to shareholders of record as of the close of business on September 17, 2026.",
+"waehrung": "USD",
+"ex_tag": "2026-09-17",
+"meldung": "2026-08-27",
+"quelle": "https://www.sec.gov/Archives/edgar/data/764478/000076447826000037/bby-fy27q2xexx99.htm"
+}
+],
+"DG": [
+{
+"betrag": 0.59,
+"zahltag": "2026-10-20",
+"stichtag": "2026-10-06",
+"art": "regulaer",
+"beleg": " Dividend On August 26, 2026, the Company’s Board of Directors declared a quarterly cash dividend of $0.59 per share on the Company’s common stock, payable on or before October 20, 2026 to shareholders of record on October 6, 2026.",
+"waehrung": "USD",
+"ex_tag": "2026-10-06",
+"meldung": "2026-08-27",
+"quelle": "https://www.sec.gov/Archives/edgar/data/29534/000110465926101918/tm2623914d1_ex99.htm"
+}
+],
+"CINF": [
+{
+"betrag": 0.94,
+"waehrung": "USD",
+"zahltag": "2026-10-15",
+"stichtag": "2026-09-23",
+"art": "regulaer",
+"beleg": "the board of directors declared a 94 cents-per-share regular quarterly cash dividend.",
+"ex_tag": "2026-09-23",
+"meldung": "2026-08-21",
+"quelle": "https://www.sec.gov/Archives/edgar/data/20286/000002028626000047/exhibit99108-21x26.htm"
+}
+],
+"CSCO": [
+{
+"betrag": 0.42,
+"waehrung": "USD",
+"zahltag": "2026-10-21",
+"stichtag": "2026-10-02",
+"art": "regulaer",
+"beleg": "Cisco has declared a quarterly dividend of $0.42 per common share to be paid on October 21, 2026, to all stockholders of record as of the close of business on October 2, 2026.",
+"ex_tag": "2026-10-02",
+"meldung": "2026-08-12",
+"quelle": "https://www.sec.gov/Archives/edgar/data/858877/000085887726000106/exhibit991pressrelease-q4f.htm"
+}
+],
+"CAH": [
+{
+"betrag": 0.5158,
+"zahltag": "2026-10-15",
+"stichtag": "2026-10-01",
+"art": "regulaer",
+"beleg": " Recent highlights •Cardinal Health recently completed an additional $350 million accelerated share repurchase program, bringing year-to-date share repurchases in fiscal year 2026 to $1.4 billion •Cardinal Health Board of Directors approved a $5.0 billion increase to the share repurchase program, br",
+"waehrung": "USD",
+"ex_tag": "2026-10-01",
+"meldung": "2026-08-11",
+"quelle": "https://www.sec.gov/Archives/edgar/data/721371/000072137126000037/a26q4_x063026xex991xnewsre.htm"
+}
 ]
 },
 "stand": "2026-11-12",
 "hinweis": "Beschlossene Dividenden aus Pressemitteilungen der Unternehmen (SEC 8-K, EX-99). Ex-Tag = Stichtag (USA, seit Mai 2024).",
 "letzter_lauf": {
-"zeit": "2026-11-12 02:16",
-"kandidaten": 947,
+"zeit": "2026-11-12 13:36",
+"kandidaten": 517,
 "abgerufen": 400,
-"mit_dividende": 29,
-"ki_aufrufe": 16,
+"mit_dividende": 16,
+"ki_aufrufe": 9,
 "fehler": []
 }
 }
