@@ -1,6 +1,6 @@
-# ESEF-Jahreszahlen Europa: Abdeckung (Stand 2026-11-11)
+# ESEF-Jahreszahlen Europa: Abdeckung (Stand 2026-11-12)
 
-118 Firmen in der Liste, mit Jahreszahlen: **110**, davon mit Börsenkurs (ISIN): **96**.
+118 Firmen in der Liste, mit Jahreszahlen: **114**, davon mit Börsenkurs (ISIN): **110**.
 
 | Kürzel | Name | Rechtsträger laut Bericht | Jahre | Kern | Kurs | fehlt |
 |---|---|---|---|---|---|---|
@@ -9,9 +9,9 @@
 | RMS.PA | Hermès | HERMES INTERNATIONAL | 2019–2025 (EUR) | 7/7 | ja | – |
 | KER.PA | Kering | KERING | 2020–2023 (EUR) | 7/7 | ja | – |
 | CS.PA | AXA | AXA | 2019–2025 (EUR) | 6/7 | ja | operativer_cf |
-| BNP.PA | BNP Paribas | BNP PARIBAS | 2020–2025 (EUR) | 5/7 | fehlt | umsatz, capex |
+| BNP.PA | BNP Paribas | BNP PARIBAS | 2020–2025 (EUR) | 5/7 | ja | umsatz, capex |
 | ACA.PA | Crédit Agricole | CREDIT AGRICOLE SA | 2019–2025 (EUR) | 5/7 | ja | umsatz, capex |
-| GLE.PA | Société Générale | SOCIETE GENERALE | 2020–2025 (EUR) | 5/7 | fehlt | umsatz, capex |
+| GLE.PA | Société Générale | SOCIETE GENERALE | 2020–2025 (EUR) | 5/7 | ja | umsatz, capex |
 | SU.PA | Schneider Electric | SCHNEIDER ELECTRIC SE | 2019–2025 (EUR) | 7/7 | ja | – |
 | DG.PA | Vinci | VINCI | 2021–2025 (EUR) | 7/7 | ja | – |
 | SAF.PA | Safran | SAFRAN | 2019–2025 (EUR) | 7/7 | ja | – |
@@ -30,12 +30,12 @@
 | CAP.PA | Capgemini | CAPGEMINI | 2020–2024 (EUR) | 7/7 | ja | – |
 | ML.PA | Michelin | COMPAGNIE GENERALE DES ETABLISSEMENTS MICHELIN | 2020–2025 (EUR) | 7/7 | ja | – |
 | URW.PA | Unibail-Rodamco-Westfield | UNIBAIL-RODAMCO-WESTFIELD SE | 2019–2025 (EUR) | 6/7 | fehlt | umsatz |
-| ENEL.MI | Enel | – | nicht gefunden | | | |
+| ENEL.MI | Enel | ENEL - SPA | 2020–2024 (EUR) | 7/7 | ja | – |
 | ISP.MI | Intesa Sanpaolo | INTESA SANPAOLO SPA | 2020–2022 (EUR) | 5/7 | ja | umsatz, eigenkapital |
 | G.MI | Generali | ASSICURAZIONI GENERALI SOCIETA' PER AZIONI | 2020–2025 (EUR) | 3/7 | ja | umsatz, eps_verw, dividende_je_aktie, capex |
 | UCG.MI | UniCredit | UNICREDIT, SOCIETA' PER AZIONI | 2020–2024 (EUR) | 5/7 | ja | umsatz, eigenkapital |
 | SRG.MI | Snam | SNAM S.P.A. | 2020–2024 (EUR) | 7/7 | ja | – |
-| TRN.MI | Terna | – | nicht gefunden | | | |
+| TRN.MI | Terna | "TERNA - RETE ELETTRICA NAZIONALE SOCIETA' PER AZIONI" (IN FORMA ABBREVIATA "TERNA S.P.A.") | 2020–2024 (EUR) | 7/7 | ja | – |
 | RACE.MI | Ferrari | FERRARI N.V. | 2019–2025 (EUR) | 7/7 | ja | – |
 | PST.MI | Poste Italiane | POSTE ITALIANE - SOCIETA' PER AZIONI | 2020–2024 (EUR) | 6/7 | ja | umsatz |
 | IBE.MC | Iberdrola | IBERDROLA SA | 2019–2025 (EUR) | 6/7 | ja | eps_verw |
@@ -49,7 +49,7 @@
 | AENA.MC | Aena | AENA S.M.E. SA | 2019–2025 (EUR) | 7/7 | ja | – |
 | RED.MC | Redeia | REDEIA CORPORACION SA | 2020–2025 (EUR) | 7/7 | ja | – |
 | MAP.MC | Mapfre | MAPFRE S.A. | 2019–2025 (EUR) | 5/7 | ja | umsatz, eps_verw |
-| EDP.LS | EDP | – | nicht gefunden | | | |
+| EDP.LS | EDP | EDP, S.A. | 2019–2025 (EUR) | 6/7 | ja | capex |
 | GALP.LS | Galp | Galp Energia, SGPS, S.A. | 2020–2025 (EUR) | 5/7 | ja | umsatz, capex |
 | JMT.LS | Jerónimo Martins | JERÓNIMO MARTINS SGPS SA | 2020–2025 (EUR) | 7/7 | ja | – |
 | AD.AS | Ahold Delhaize | Koninklijke Ahold Delhaize N.V. | 2021–2025 (EUR) | 7/7 | ja | – |
@@ -59,24 +59,24 @@
 | NN.AS | NN Group | NN Group N.V. | 2020–2025 (EUR) | 5/7 | ja | umsatz, capex |
 | ASRNL.AS | ASR Nederland | ASR Nederland N.V. | 2020–2025 (EUR) | 6/7 | ja | umsatz |
 | AGN.AS | Aegon | Aegon Ltd. | 2019–2025 (EUR) | 5/7 | fehlt | umsatz, eps_verw |
-| ABN.AS | ABN Amro | ABN AMRO Bank N.V. | 2020–2025 (EUR) | 6/7 | fehlt | umsatz |
+| ABN.AS | ABN Amro | ABN AMRO Bank N.V. | 2020–2025 (EUR) | 6/7 | ja | umsatz |
 | RAND.AS | Randstad | Randstad N.V. | 2020–2025 (EUR) | 6/7 | ja | capex |
 | AKZA.AS | Akzo Nobel | Akzo Nobel N.V. | 2020–2025 (EUR) | 6/7 | ja | operativer_cf |
 | PRX.AS | Prosus | Prosus N.V. | 2021–2024 (USD) | 7/7 | ja | – |
 | ABI.BR | Anheuser-Busch InBev | ANHEUSER-BUSCH INBEV | 2020–2025 (USD) | 7/7 | ja | – |
 | KBC.BR | KBC | KBC GROEP | 2020–2025 (EUR) | 7/7 | ja | – |
-| UCB.BR | UCB | UCB BIOPHARMA | 2021–2022 (EUR) | 7/7 | fehlt | – |
+| UCB.BR | UCB | UCB BIOPHARMA | 2021–2022 (EUR) | 7/7 | ja | – |
 | AGS.BR | Ageas | AGEAS SA/NV | 2020–2022 (EUR) | 7/7 | ja | – |
-| NDA-FI.HE | Nordea | Nordea Bank Abp | 2019–2025 (EUR) | 5/7 | fehlt | umsatz, operativer_cf |
-| KNEBV.HE | Kone | KONE OYJ | 2020–2025 (EUR) | 7/7 | fehlt | – |
-| SAMPO.HE | Sampo | Sampo Oyj | 2019–2025 (EUR) | 6/7 | fehlt | umsatz |
-| FORTUM.HE | Fortum | Fortum Oyj | 2019–2025 (EUR) | 5/7 | fehlt | eps_verw, operativer_cf |
-| UPM.HE | UPM-Kymmene | UPM-KYMMENE OYJ | 2020–2025 (EUR) | 7/7 | fehlt | – |
-| NESTE.HE | Neste | Neste Oyj | 2019–2025 (EUR) | 7/7 | fehlt | – |
+| NDA-FI.HE | Nordea | Nordea Bank Abp | 2019–2025 (EUR) | 5/7 | ja | umsatz, operativer_cf |
+| KNEBV.HE | Kone | KONE OYJ | 2020–2025 (EUR) | 7/7 | ja | – |
+| SAMPO.HE | Sampo | Sampo Oyj | 2019–2025 (EUR) | 6/7 | ja | umsatz |
+| FORTUM.HE | Fortum | Fortum Oyj | 2019–2025 (EUR) | 5/7 | ja | eps_verw, operativer_cf |
+| UPM.HE | UPM-Kymmene | UPM-KYMMENE OYJ | 2020–2025 (EUR) | 7/7 | ja | – |
+| NESTE.HE | Neste | Neste Oyj | 2019–2025 (EUR) | 7/7 | ja | – |
 | ELISA.HE | Elisa | Elisa Oyj | 2019–2025 (EUR) | 7/7 | fehlt | – |
 | VOLV-B.ST | Volvo | Volvo Car AB | 2020–2025 (SEK) | 7/7 | ja | – |
 | ATCO-A.ST | Atlas Copco | ATLAS COPCO AKTIEBOLAG | 2020–2025 (SEK) | 7/7 | ja | – |
-| INVE-B.ST | Investor AB | – | nicht gefunden | | | |
+| INVE-B.ST | Investor AB | Investor Aktiebolag | 2020–2025 (SEK) | 6/7 | ja | capex |
 | SEB-A.ST | SEB | Skandinaviska Enskilda Banken AB | 2020–2025 (SEK) | 6/7 | ja | umsatz |
 | SHB-A.ST | Handelsbanken | Svenska Handelsbanken AB | 2020–2025 (SEK) | 6/7 | ja | umsatz |
 | SWED-A.ST | Swedbank | Swedbank AB | 2019–2025 (SEK) | 5/7 | ja | umsatz, capex |
