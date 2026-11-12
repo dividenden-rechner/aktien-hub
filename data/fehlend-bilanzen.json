@@ -85,5 +85,30 @@
    "JD.L Split 2022",
    "DSY.PA/ML.PA/AI.PA Splits"
   ]
+ },
+ "fr_zusatz_offen": {
+  "stand": "2026-11-12",
+  "hinweis": "CAC 40: Lücken in data/boerse-de/zusatz.json nach Lauf mit stockanalysis.com und Ergebnismitteilungen. Nicht geraten.",
+  "RNO.PA Renault": [
+   "Cash und Schulden 2021-2025: stockanalysis-Bilanzseite nicht abrufbar; Konzernwerte enthalten RCI Banque und sind ohne Aufspaltung Automobil/Finanzierung nicht vergleichbar"
+  ],
+  "SGO.PA Saint-Gobain": [
+   "Operatives Ergebnis 2023 (Business income): Quelle ohne 2023"
+  ],
+  "VIE.PA Veolia": [
+   "Capex 2024 und 2025",
+   "Operativer Cashflow 2025",
+   "Operatives Ergebnis 2025 (Quelle grenzt anders ab als ESEF)"
+  ],
+  "CS.PA AXA": [
+   "Operativer Cashflow 2024 und 2025, Finanzschulden 2021-2025: Versicherer, Quelle nicht vergleichbar mit ESEF"
+  ],
+  "Banken": [
+   "BNP, Crédit Agricole, Société Générale: Cash, Schulden, Umsatz, operatives Ergebnis nicht sinnvoll mit Industriekennzahlen; GLE Capex enthält Leasingfahrzeuge"
+  ],
+  "Sonstige": [
+   "DSY Operativer Cashflow 2021-2023 auf 10 Mio. gerundet (Quelle)",
+   "AI/KER/EL operatives Ergebnis in Lückenjahren leicht anders abgegrenzt als ESEF"
+  ]
  }
 }

@@ -3240,6 +3240,57 @@ null
 2025
 ],
 "hinweis": "Versicherer: Operativer Cashflow 2024 und 2025 sowie Finanzschulden nicht ergänzt, weil die Quelle für Versicherer stark schwankende, mit der ESEF-Reihe nicht vergleichbare Werte ausweist."
+},
+"BNP.PA": {
+"jahre": [
+2021,
+2022,
+2023,
+2024,
+2025
+],
+"capex": [
+1664,
+2529,
+2216,
+2136,
+2875
+],
+"hinweis": "Bank: Capex (Sachanlagen und immaterielle Werte) ergänzt. Liquide Mittel (inkl. Zentralbankguthaben), Schulden (Refinanzierung), Umsatz und operatives Ergebnis nicht ergänzt, weil sie bei Banken mit Industriekennzahlen nicht vergleichbar sind."
+},
+"ACA.PA": {
+"jahre": [
+2021,
+2022,
+2023,
+2024,
+2025
+],
+"capex": [
+876,
+1042,
+885,
+1070,
+1117
+],
+"da": [
+1161,
+1115,
+1180,
+1271,
+1343
+],
+"hinweis": "Bank: Capex und Abschreibungen ergänzt. Liquide Mittel 2023 bis 2025, Schulden (Refinanzierung), Umsatz und operatives Ergebnis nicht ergänzt, weil sie bei Banken mit Industriekennzahlen nicht vergleichbar sind."
+},
+"GLE.PA": {
+"jahre": [
+2021,
+2022,
+2023,
+2024,
+2025
+],
+"hinweis": "Bank: Capex der Quelle (6,5 bis 11,9 Mrd. EUR) enthält vermutlich Leasingfahrzeuge der Tochter Ayvens und ist als Investitionskennzahl nicht brauchbar; daher nicht ergänzt. Liquide Mittel, Schulden, Umsatz und operatives Ergebnis 2021 bis 2023 bei Banken nicht vergleichbar und nicht ergänzt."
 }
 }
 }
