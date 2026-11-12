@@ -5,7 +5,6 @@ date: 2026-11-12 13:45
 author: "Redaktions-Team Dividenden-Rechner.de"
 author_bio: "Das Redaktions-Team von Dividenden-Rechner.de schreibt über Dividendenaktien, Kennzahlen und Steuerthemen für Privatanleger. Die Rechner und Auswertungen auf der Seite entstehen im eigenen Haus."
 category: Analyse
-draft: true
 quelle_url: https://news.kraftheinzcompany.com/press-releases-details/2026/Kraft-Heinz-Outlines-Path-to-Sustainable-Profitable-Growth-at-2026-Investor-Day/default.aspx
 quelle_name: "The Kraft Heinz Company, Pressemitteilung zum Investor Day vom 12. November 2026; Q3-2026-Bericht vom 4. November 2026"
 logo_name: "The Kraft Heinz Company"
