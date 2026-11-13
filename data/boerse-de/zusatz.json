@@ -16740,6 +16740,758 @@ null
 2025
 ],
 "hinweis": "EUR. Quelle stockanalysis.com. Immobilienfirma: capex null (Immobilienkaeufe 185-680 Mio sind Portfolio-Investitionen, nicht mit Sachanlagen-Capex vergleichbar), brutto null, da (5 Mio) unwesentlich. ebit = Betriebsergebnis vor Neubewertungen. cash = liquide Mittel (2021 plus 81 Mio Wertpapiere). debt = Finanzschulden. Ergebnis enthaelt Neubewertungen und 2021/2022 aufgegebene Bereiche."
+},
+"IBE.MC": {
+"jahre": [
+2021,
+2022,
+2023,
+2024,
+2025
+],
+"ocf": [
+8106,
+10443,
+12130,
+11925,
+11635
+],
+"capex": [
+7063,
+6976,
+8258,
+8919,
+8792
+],
+"da": [
+4265,
+4772,
+4767,
+4967,
+5279
+],
+"div": [
+570,
+859,
+949,
+1166,
+1275
+],
+"bb": [
+1897,
+1885,
+2787,
+2076,
+3017
+],
+"cash": [
+5520,
+7475,
+4247,
+4718,
+5518
+],
+"debt": [
+45182,
+51525,
+53653,
+59953,
+59407
+],
+"umsatz": [
+39114,
+53949,
+49335,
+42988,
+44076
+],
+"brutto": [
+null,
+null,
+null,
+null,
+null
+],
+"ebit": [
+7101,
+7957,
+9013,
+9152,
+9979
+],
+"zins": [
+1127,
+1699,
+2071,
+1968,
+2173
+],
+"steuer": [
+1914,
+1161,
+1610,
+1343,
+1671
+],
+"hinweis": "stockanalysis.com (EUR Mio.). Umsatz 2024/2025 nach Anpassung um aufgegebene Geschaeftsbereiche, weicht von boerse.de ab. capex = Sachanlagen + immaterielle Werte. da laut Gewinn-und-Verlust-Rechnung. bb = Rueckkauf eigener Aktien (im Wesentlichen Kapitalherabsetzung im Zuge der Aktiendividende/Scrip). cash = liquide Mittel + kurzfristige Anlagen + Handelswertpapiere. debt = Gesamtschulden inkl. Leasing. Kein Bruttogewinn (Versorger)."
+},
+"TEF.MC": {
+"jahre": [
+2021,
+2022,
+2023,
+2024,
+2025
+],
+"ocf": [
+10268,
+11763,
+11649,
+10994,
+9722
+],
+"capex": [
+6728,
+6350,
+6161,
+5068,
+5446
+],
+"da": [
+8397,
+8796,
+7441,
+7310,
+7667
+],
+"div": [
+617,
+959,
+1701,
+1720,
+1697
+],
+"bb": [
+478,
+365,
+223,
+1243,
+277
+],
+"cash": [
+10762,
+7658,
+7617,
+8496,
+6942
+],
+"debt": [
+50365,
+47756,
+46008,
+47085,
+41921
+],
+"umsatz": [
+39277,
+40776,
+41455,
+36441,
+35945
+],
+"brutto": [
+20286,
+22311,
+21037,
+19648,
+16268
+],
+"ebit": [
+2299,
+3319,
+2350,
+4692,
+1526
+],
+"zins": [
+1564,
+1941,
+2041,
+1960,
+1802
+],
+"steuer": [
+1378,
+641,
+-899,
+617,
+365
+],
+"hinweis": "stockanalysis.com (EUR Mio.). 2021 Jahresergebnis durch Veraeusserungsgewinne (11.442 Mio.) stark erhoeht; 2024/2025 Ergebnis mit aufgegebenen Geschaeftsbereichen (-1.763/-2.384) und Goodwill-Abschreibungen. steuer 2023 negativ (Steuerertrag -899). da 2023 ohne 'Other Amortization' (1.356). capex ohne Erloese aus Anlagenverkaeufen. div = Dividenden an Aktionaere der Muttergesellschaft laut Cashflow. cash = liquide Mittel + kurzfristige Anlagen. debt inkl. Leasing."
+},
+"REP.MC": {
+"jahre": [
+2021,
+2022,
+2023,
+2024,
+2025
+],
+"ocf": [
+4677,
+7832,
+6511,
+4965,
+5365
+],
+"capex": [
+1902,
+3535,
+4289,
+5106,
+3746
+],
+"da": [
+2133,
+2451,
+2316,
+2771,
+2026
+],
+"div": [
+625,
+989,
+979,
+1153,
+1197
+],
+"bb": [
+1552,
+1884,
+1775,
+1135,
+727
+],
+"cash": [
+9073,
+10068,
+8872,
+7036,
+8105
+],
+"debt": [
+14796,
+13676,
+10725,
+12185,
+13246
+],
+"umsatz": [
+44529,
+69291,
+53118,
+51387,
+48349
+],
+"brutto": [
+12017,
+18425,
+14846,
+13682,
+12629
+],
+"ebit": [
+4165,
+8239,
+4600,
+2863,
+2436
+],
+"zins": [
+406,
+415,
+450,
+501,
+472
+],
+"steuer": [
+1801,
+2835,
+1081,
+562,
+717
+],
+"hinweis": "stockanalysis.com (EUR Mio.). Umsatz nach stockanalysis.com (ohne Verbrauchsteuern o. a.) weicht von boerse.de-Reihe ab (z. B. 2025: 48.349 vs. 54.421). da 2024 inkl. Wertminderungen im Cashflow-Posten. cash = liquide Mittel + kurzfristige Anlagen + Handelswertpapiere. debt inkl. Leasing."
+},
+"ELE.MC": {
+"jahre": [
+2021,
+2022,
+2023,
+2024,
+2025
+],
+"ocf": [
+2621,
+1672,
+4697,
+3567,
+4051
+],
+"capex": [
+2082,
+2132,
+2284,
+1846,
+1844
+],
+"da": [
+1529,
+1653,
+1768,
+1903,
+2060
+],
+"div": [
+2132,
+1521,
+1678,
+1058,
+1389
+],
+"bb": [
+null,
+null,
+null,
+null,
+525
+],
+"cash": [
+703,
+871,
+2106,
+840,
+195
+],
+"debt": [
+10392,
+18575,
+13788,
+10530,
+10444
+],
+"umsatz": [
+20527,
+32545,
+25070,
+20935,
+21031
+],
+"brutto": [
+null,
+null,
+null,
+null,
+null
+],
+"ebit": [
+2348,
+3299,
+1664,
+3139,
+3428
+],
+"zins": [
+137,
+241,
+491,
+457,
+339
+],
+"steuer": [
+467,
+891,
+303,
+696,
+681
+],
+"hinweis": "stockanalysis.com (EUR Mio.). da laut GuV. bb nur 2025 (Aktienrueckkauf 525), sonst nicht ausgewiesen (null). cash = liquide Mittel. debt inkl. Leasing. Kein Bruttogewinn (Versorger)."
+},
+"CABK.MC": {
+"jahre": [
+2021,
+2022,
+2023,
+2024,
+2025
+],
+"ocf": [
+null,
+null,
+null,
+null,
+null
+],
+"capex": [
+null,
+null,
+null,
+null,
+null
+],
+"da": [
+546,
+555,
+573,
+558,
+551
+],
+"div": [
+216,
+1178,
+1728,
+3947,
+3211
+],
+"bb": [
+15,
+1818,
+513,
+1292,
+872
+],
+"cash": [
+null,
+null,
+null,
+null,
+null
+],
+"debt": [
+null,
+null,
+null,
+null,
+null
+],
+"umsatz": [
+null,
+null,
+null,
+null,
+null
+],
+"brutto": [
+null,
+null,
+null,
+null,
+null
+],
+"ebit": [
+null,
+null,
+null,
+null,
+null
+],
+"zins": [
+null,
+null,
+null,
+null,
+null
+],
+"steuer": [
+88,
+1189,
+2108,
+2525,
+2775
+],
+"hinweis": "Bank (stockanalysis.com, EUR Mio.): operativer Cashflow, Capex, Liquiditaet, Schulden, Umsatz, EBIT und Zinsen bei Banken nicht sinnvoll vergleichbar, daher null. da ohne sonstige Abschreibungen (2025: 240). steuer 2021 nur 88 wegen Sondereffekt aus der Bankia-Fusion (Sonderertrag 4.300 Mio. 2021)."
+},
+"SAB.MC": {
+"jahre": [
+2021,
+2022,
+2023,
+2024,
+2025
+],
+"ocf": [
+null,
+null,
+null,
+null,
+null
+],
+"capex": [
+null,
+null,
+null,
+null,
+null
+],
+"da": [
+527,
+545,
+519,
+540,
+516
+],
+"div": [
+null,
+281,
+274,
+591,
+1367
+],
+"bb": [
+64,
+86,
+276,
+114,
+1036
+],
+"cash": [
+null,
+null,
+null,
+null,
+null
+],
+"debt": [
+null,
+null,
+null,
+null,
+null
+],
+"umsatz": [
+null,
+null,
+null,
+null,
+null
+],
+"brutto": [
+null,
+null,
+null,
+null,
+null
+],
+"ebit": [
+null,
+null,
+null,
+null,
+null
+],
+"zins": [
+null,
+null,
+null,
+null,
+null
+],
+"steuer": [
+81,
+373,
+557,
+559,
+685
+],
+"hinweis": "Bank (stockanalysis.com, EUR Mio.): operativer Cashflow, Capex, Liquiditaet, Schulden, Umsatz, EBIT und Zinsen bei Banken nicht sinnvoll vergleichbar, daher null. div 2021 nicht ausgewiesen (null). div 2025 laut Cashflow (Anstieg ggue. Vorjahr). steuer: Steuer auf fortgefuehrte Geschaefte."
+},
+"BKT.MC": {
+"jahre": [
+2021,
+2022,
+2023,
+2024,
+2025
+],
+"ocf": [
+null,
+null,
+null,
+null,
+null
+],
+"capex": [
+null,
+null,
+null,
+null,
+null
+],
+"da": [
+78,
+80,
+82,
+87,
+90
+],
+"div": [
+211,
+252,
+406,
+462,
+517
+],
+"bb": [
+49,
+84,
+79,
+79,
+46
+],
+"cash": [
+null,
+null,
+null,
+null,
+null
+],
+"debt": [
+null,
+null,
+null,
+null,
+null
+],
+"umsatz": [
+null,
+null,
+null,
+null,
+null
+],
+"brutto": [
+null,
+null,
+null,
+null,
+null
+],
+"ebit": [
+null,
+null,
+null,
+null,
+null
+],
+"zins": [
+null,
+null,
+null,
+null,
+null
+],
+"steuer": [
+139,
+225,
+384,
+407,
+445
+],
+"hinweis": "Bank (stockanalysis.com, EUR Mio.): operativer Cashflow, Capex, Liquiditaet, Schulden, Umsatz, EBIT und Zinsen bei Banken nicht sinnvoll vergleichbar, daher null. bb = Erwerb eigener Aktien fuer Mitarbeiterprogramme, durch Ausgabe annaehernd ausgeglichen, kein echtes Rueckkaufprogramm. da = Abschreibungen auf immaterielle Werte laut Cashflow."
+},
+"ITX.MC": {
+"jahre": [
+2021,
+2022,
+2023,
+2024,
+2025
+],
+"ocf": [
+6754,
+6674,
+8667,
+9288,
+9232
+],
+"capex": [
+1126,
+1415,
+1872,
+2672,
+2712
+],
+"da": [
+2748,
+2690,
+2775,
+2820,
+2936
+],
+"div": [
+685,
+2895,
+3736,
+4797,
+5235
+],
+"bb": [
+71,
+61,
+null,
+null,
+null
+],
+"cash": [
+9395,
+10083,
+11422,
+11502,
+10960
+],
+"debt": [
+5860,
+5454,
+5567,
+5729,
+5935
+],
+"umsatz": [
+27716,
+32569,
+35947,
+38632,
+39864
+],
+"brutto": [
+15205,
+17828,
+20021,
+21578,
+22436
+],
+"ebit": [
+4264,
+5571,
+6856,
+7594,
+8045
+],
+"zins": [
+113,
+144,
+271,
+353,
+370
+],
+"steuer": [
+949,
+1211,
+1475,
+1700,
+1800
+],
+"hinweis": "stockanalysis.com (EUR Mio.). Geschaeftsjahr endet 31. Januar: 'jahre' 2025 = Februar 2025 bis Januar 2026 (stockanalysis 'FY2026'), 2021 = bis Januar 2022. capex = Sachanlagen + immaterielle Werte. bb nur 2021/2022 ausgewiesen, danach keine Rueckkaeufe (null). cash = liquide Mittel + kurzfristige Anlagen. debt = Gesamtschulden, im Wesentlichen Leasingverbindlichkeiten (kaum Finanzschulden). div = in den Geschaeftsjahren gezahlte Dividenden (inkl. Sonderdividenden)."
 }
 }
 }

@@ -1143,6 +1143,702 @@ null,
 3.78,
 9.74
 ]
+},
+"IBE.MC": {
+"name": "Iberdrola",
+"isin": "ES0144580Y14",
+"waehrung": "EUR",
+"hinweis": "Quelle boerse.de. EPS unverwaessert (verwaessert nicht ausgewiesen). Dividendenausschuettung 2019-2023 bei boerse.de nicht ausgewiesen (null). Umsatz 2024/2025 laut boerse.de (44.739/45.547), stockanalysis.com weist nach Anpassung um aufgegebene Geschaeftsbereiche 42.988/44.076 aus. Aktienzahl 2025: 6.681 Mio. laut boerse.de.",
+"umsatz": [
+36438,
+33145,
+39114,
+53949,
+49335,
+44739,
+45547
+],
+"ebt": [
+4729,
+5034,
+6266,
+6221,
+7004,
+8098,
+8461
+],
+"jahresueberschuss": [
+3406,
+3611,
+3885,
+4339,
+4803,
+5612,
+6285
+],
+"dividendenausschuettung": [
+null,
+null,
+null,
+null,
+null,
+4015,
+4486
+],
+"eigenkapital": [
+37678,
+35413,
+40479,
+41119,
+43111,
+47125,
+50068
+],
+"eps": [
+0.54,
+0.57,
+0.61,
+0.68,
+0.76,
+0.88,
+0.94
+],
+"dividende_je_aktie": [
+0.4,
+0.42,
+0.45,
+0.5,
+0.56,
+0.64,
+0.68
+],
+"aktien_mio": [
+6362.67,
+6350.06,
+6366.09,
+6362.09,
+6350.28,
+6364.25,
+6681.23
+],
+"eigenkapitalrendite_pct": [
+9.04,
+10.2,
+9.6,
+10.55,
+11.14,
+11.91,
+12.55
+]
+},
+"REP.MC": {
+"name": "Repsol",
+"isin": "ES0173516115",
+"waehrung": "EUR",
+"hinweis": "Quelle boerse.de. EPS verwaessert (2019-2023 unverwaessert=verwaessert bzw. wie von boerse.de ausgewiesen). Dividendenausschuettung bei boerse.de nicht ausgewiesen (null). Jahresueberschuss 2019/2020 negativ. Umsatz nach boerse.de weicht fuer 2021-2025 von stockanalysis.com ab (z. B. 2025: 54.421 vs. 48.349); Definition unterschiedlich, nicht abgeglichen.",
+"umsatz": [
+49006,
+32956,
+49480,
+74828,
+58538,
+56713,
+54421
+],
+"ebt": [
+-3201,
+-3304,
+4329,
+7180,
+4365,
+2172,
+2817
+],
+"jahresueberschuss": [
+-3816,
+-3289,
+2499,
+4251,
+3168,
+1756,
+1899
+],
+"dividendenausschuettung": [
+null,
+null,
+null,
+null,
+null,
+null,
+null
+],
+"eigenkapital": [
+24335,
+20295,
+22414,
+25294,
+26197,
+26489,
+25140
+],
+"eps": [
+-2.57,
+-2.15,
+1.71,
+3.2,
+2.6,
+1.43,
+1.62
+],
+"dividende_je_aktie": [
+0.92,
+0.92,
+0.59,
+0.63,
+0.7,
+0.9,
+1.05
+],
+"aktien_mio": [
+1566.04,
+1567.89,
+1527.4,
+1327.4,
+1217.4,
+1157.4,
+1105.37
+],
+"eigenkapitalrendite_pct": [
+-15.68,
+-16.21,
+11.15,
+16.81,
+12.09,
+6.63,
+7.55
+]
+},
+"CABK.MC": {
+"name": "CaixaBank",
+"isin": "ES0140609019",
+"waehrung": "EUR",
+"hinweis": "Quelle boerse.de. Bank: Umsatz null. EPS verwaessert. Fusion mit Bankia im 1. Quartal 2021 (Aktienzahl 2021 sprunghaft, Jahresueberschuss 2021 inkl. negativem Goodwill/Fusionseffekt), Vergleichbarkeit 2019/2020 zu 2021 ff. eingeschraenkt. Aktienzahl bei boerse.de ohne Einheit, als Mio. uebernommen.",
+"umsatz": [
+null,
+null,
+null,
+null,
+null,
+null,
+null
+],
+"ebt": [
+2077,
+1601,
+5317,
+4328,
+6926,
+8319,
+8674
+],
+"jahresueberschuss": [
+1705,
+1381,
+5226,
+3145,
+4816,
+5787,
+5891
+],
+"dividendenausschuettung": [
+897,
+418,
+1178,
+1730,
+2887,
+3132,
+3504
+],
+"eigenkapital": [
+25151,
+27118,
+37013,
+36639,
+36307,
+37425,
+38962
+],
+"eps": [
+0.26,
+0.21,
+0.66,
+0.37,
+0.61,
+0.76,
+0.79
+],
+"dividende_je_aktie": [
+0.15,
+0.07,
+0.15,
+0.23,
+0.39,
+0.44,
+0.5
+],
+"aktien_mio": [
+5981.44,
+5981.44,
+8060.65,
+7502.13,
+7502.13,
+7174.94,
+7024.52
+],
+"eigenkapitalrendite_pct": [
+6.78,
+5.09,
+14.12,
+8.58,
+13.26,
+15.46,
+15.12
+]
+},
+"SAB.MC": {
+"name": "Banco Sabadell",
+"isin": "ES0113860A34",
+"waehrung": "EUR",
+"hinweis": "Quelle boerse.de. Bank: Umsatz null. EPS verwaessert. 2020 Dividende bei boerse.de nicht ausgewiesen (null; Dividende 2020 faktisch ausgesetzt). Jahresueberschuss 2024/2025 enthaelt Ergebnis aufgegebener Geschaeftsbereiche (TSB, laut stockanalysis.com 357/383 Mio.). Dividende je Aktie 2024 (0,20) und 2025 (0,14) wie von boerse.de ausgewiesen, Sonderausschuettungen nicht geprueft. Aktienzahl bei boerse.de ohne Einheit, als Mio. uebernommen (2025 nach Aktienrueckkaeufen).",
+"umsatz": [
+null,
+null,
+null,
+null,
+null,
+null,
+null
+],
+"ebt": [
+951,
+-121,
+620,
+1243,
+1891,
+2514,
+2463
+],
+"jahresueberschuss": [
+768,
+2,
+530,
+859,
+1332,
+1827,
+1775
+],
+"dividendenausschuettung": [
+225,
+null,
+168,
+279,
+324,
+1096,
+700
+],
+"eigenkapital": [
+13172,
+12944,
+13357,
+13841,
+13845,
+15389,
+14631
+],
+"eps": [
+0.13,
+-0.01,
+0.08,
+0.13,
+0.23,
+0.32,
+0.32
+],
+"dividende_je_aktie": [
+0.04,
+null,
+0.03,
+0.04,
+0.06,
+0.2,
+0.14
+],
+"aktien_mio": [
+5626.96,
+5626.96,
+5626.96,
+5626.96,
+5440.22,
+5440.22,
+5023.68
+],
+"eigenkapitalrendite_pct": [
+5.83,
+0.02,
+3.97,
+6.2,
+9.62,
+11.87,
+12.13
+]
+},
+"BKT.MC": {
+"name": "Bankinter",
+"isin": "ES0113679I37",
+"waehrung": "EUR",
+"hinweis": "Quelle boerse.de. Bank: Umsatz null. EPS verwaessert. Jahresueberschuss 2021 (1.333) enthaelt Ergebnis aufgegebener Geschaeftsbereiche (ca. 936 Mio. laut stockanalysis.com); Eigenkapitalrendite 2021 dadurch verzerrt. Aktienzahl bei boerse.de ohne Einheit, als Mio. uebernommen.",
+"umsatz": [
+null,
+null,
+null,
+null,
+null,
+null,
+null
+],
+"ebt": [
+741,
+374,
+1472,
+785,
+1229,
+1360,
+1535
+],
+"jahresueberschuss": [
+551,
+317,
+1333,
+560,
+845,
+953,
+1090
+],
+"dividendenausschuettung": [
+263,
+45,
+219,
+280,
+422,
+477,
+512
+],
+"eigenkapital": [
+4612,
+4816,
+4852,
+5034,
+5323,
+5908,
+6446
+],
+"eps": [
+0.61,
+0.35,
+1.46,
+0.61,
+0.91,
+1.03,
+1.17
+],
+"dividende_je_aktie": [
+0.29,
+0.05,
+0.24,
+0.31,
+0.47,
+0.53,
+0.57
+],
+"aktien_mio": [
+898.87,
+898.87,
+898.87,
+898.87,
+898.87,
+898.87,
+898.87
+],
+"eigenkapitalrendite_pct": [
+11.94,
+6.58,
+27.47,
+11.13,
+15.87,
+16.13,
+16.91
+]
+},
+"ELE.MC": {
+"name": "Endesa",
+"isin": "ES0130670112",
+"waehrung": "EUR",
+"hinweis": "Quelle boerse.de. EPS verwaessert. Aktienzahl bei boerse.de ohne Einheit, als Mio. uebernommen (2025: Aktienrueckkauf, laut stockanalysis.com 1.039 Mio. zum Jahresende).",
+"umsatz": [
+19258,
+16644,
+20899,
+32896,
+25459,
+21307,
+21424
+],
+"ebt": [
+230,
+1788,
+1924,
+3487,
+1065,
+2589,
+2915
+],
+"jahresueberschuss": [
+171,
+1394,
+1435,
+2541,
+742,
+1888,
+2198
+],
+"dividendenausschuettung": [
+1546,
+2132,
+1522,
+1678,
+1059,
+1395,
+1645
+],
+"eigenkapital": [
+7688,
+7315,
+5380,
+5560,
+7017,
+8110,
+8522
+],
+"eps": [
+0.16,
+1.32,
+1.36,
+2.4,
+0.7,
+1.78,
+2.1
+],
+"dividende_je_aktie": [
+1.48,
+2.01,
+1.44,
+1.59,
+1.0,
+1.32,
+1.58
+],
+"aktien_mio": [
+1058.75,
+1058.75,
+1058.75,
+1058.75,
+1058.75,
+1058.75,
+1058.75
+],
+"eigenkapitalrendite_pct": [
+2.22,
+19.06,
+26.67,
+45.7,
+10.57,
+23.28,
+25.79
+]
+},
+"ITX.MC": {
+"name": "Inditex",
+"isin": "ES0148396007",
+"waehrung": "EUR",
+"hinweis": "boerse.de war nicht abrufbar, Quelle stockanalysis.com (nur 5 Jahre, 2019/2020 daher null). Geschaeftsjahr endet am 31. Januar: Jahr 2025 = Geschaeftsjahr Februar 2025 bis Januar 2026 (Inditex-Bezeichnung 'Geschaeftsjahr 2025', bei stockanalysis 'FY2026'), 2021 = bis Januar 2022. Jahresueberschuss = Anteil der Aktionaere. Dividende je Aktie brutto je Geschaeftsjahr, abgeleitet aus den bei stockanalysis netto (nach 19 % Quellensteuer) ausgewiesenen Zahlungen geteilt durch 0,81 (2025: 1,75 laut Ankuendigung inkl. 0,55 Sonderdividende); Dividendenausschuettung = Dividende je Aktie mal Aktienzahl zum Jahresende (berechnet). Aktienzahl = ausstehende Aktien zum Stichtag. Eigenkapital ohne Minderheiten. Eigenkapitalrendite = Jahresueberschuss / Eigenkapital zum Jahresende.",
+"umsatz": [
+null,
+null,
+27716,
+32569,
+35947,
+38632,
+39864
+],
+"ebt": [
+null,
+null,
+4199,
+5358,
+6870,
+7577,
+8020
+],
+"jahresueberschuss": [
+null,
+null,
+3243,
+4130,
+5381,
+5866,
+6220
+],
+"dividendenausschuettung": [
+null,
+null,
+2894,
+3734,
+4794,
+5233,
+5451
+],
+"eigenkapital": [
+null,
+null,
+15733,
+17008,
+18642,
+19676,
+20395
+],
+"eps": [
+null,
+null,
+1.04,
+1.33,
+1.73,
+1.88,
+2.0
+],
+"dividende_je_aktie": [
+null,
+null,
+0.93,
+1.2,
+1.54,
+1.68,
+1.75
+],
+"aktien_mio": [
+null,
+null,
+3112,
+3112,
+3113,
+3115,
+3115
+],
+"eigenkapitalrendite_pct": [
+null,
+null,
+20.61,
+24.28,
+28.87,
+29.81,
+30.5
+]
+},
+"TEF.MC": {
+"name": "Telefonica",
+"isin": "ES0178430E18",
+"waehrung": "EUR",
+"hinweis": "boerse.de war nicht abrufbar, Quelle stockanalysis.com (nur 5 Jahre, 2019/2020 daher null). Jahresueberschuss = Anteil der Aktionaere vor Hybridzinsen; EPS nach Abzug der Hybridkupons (verwaessert). 2021 Jahresueberschuss durch Veraeusserungsgewinne (11.442 Mio.) stark erhoeht; 2025 Verlust (u. a. aufgegebene Geschaeftsbereiche -2.384 Mio., Goodwill-Abschreibung -486 Mio.). Dividende je Aktie = im Kalenderjahr ausgezahlte Dividende (zwei Raten je 0,15), 2021 nicht vollstaendig ausgewiesen (null); Dividendenausschuettung = Dividende je Aktie mal Aktienzahl zum Jahresende (berechnet). Eigenkapital ohne Minderheiten. Eigenkapitalrendite = Jahresueberschuss / Eigenkapital zum Jahresende.",
+"umsatz": [
+null,
+null,
+39277,
+40776,
+41455,
+36441,
+35945
+],
+"ebt": [
+null,
+null,
+12095,
+2960,
+-1473,
+2589,
+-1403
+],
+"jahresueberschuss": [
+null,
+null,
+8137,
+2011,
+-892,
+-49,
+-4318
+],
+"dividendenausschuettung": [
+null,
+null,
+null,
+1696,
+1692,
+1693,
+1689
+],
+"eigenkapital": [
+null,
+null,
+22207,
+25088,
+21852,
+19347,
+14258
+],
+"eps": [
+null,
+null,
+1.34,
+0.31,
+-0.2,
+-0.06,
+-0.81
+],
+"dividende_je_aktie": [
+null,
+null,
+null,
+0.298,
+0.3,
+0.3,
+0.3
+],
+"aktien_mio": [
+null,
+null,
+5640,
+5690,
+5639,
+5643,
+5630
+],
+"eigenkapitalrendite_pct": [
+null,
+null,
+36.64,
+8.02,
+-4.08,
+-0.25,
+-30.29
+]
 }
 }
 }
