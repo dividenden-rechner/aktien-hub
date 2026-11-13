@@ -1709,6 +1709,26 @@
    "revenue": 23683000000.0,
    "waehrung": "EUR",
    "quelle": "https://www.siemens.com/investor/de"
+  },
+  {
+   "sym": "MUFG",
+   "name": "Mitsubishi Ufj Financial Group Inc",
+   "datum": "2026-11-13",
+   "eps": 144.73,
+   "eps_basis": "berichtet",
+   "revenue": null,
+   "waehrung": "JPY",
+   "quelle": "https://www.sec.gov/Archives/edgar/data/67088/000119312526459151/d138419d6k.htm"
+  },
+  {
+   "sym": "SMFG",
+   "name": "Sumitomo Mitsui Financial Group, Inc.",
+   "datum": "2026-11-13",
+   "eps": 132.01,
+   "eps_basis": "berichtet",
+   "revenue": 5800000000.0,
+   "waehrung": "JPY",
+   "quelle": "https://www.sec.gov/Archives/edgar/data/1022837/000119312526459157/d120588d6k.htm"
   }
  ]
 }

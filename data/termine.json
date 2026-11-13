@@ -739,6 +739,24 @@
    "quelle": "https://www.sec.gov/Archives/edgar/data/1089113/000165495426009680/a7814c.htm"
   },
   {
+   "sym": "MUFG",
+   "name": "Mitsubishi Ufj Financial Group Inc",
+   "art": "ergebnis",
+   "datum": "2026-11-13",
+   "betrag": "",
+   "waehrung": "",
+   "quelle": "https://www.sec.gov/Archives/edgar/data/67088/000119312526459151/d138419d6k.htm"
+  },
+  {
+   "sym": "SMFG",
+   "name": "Sumitomo Mitsui Financial Group, Inc.",
+   "art": "ergebnis",
+   "datum": "2026-11-13",
+   "betrag": "",
+   "waehrung": "",
+   "quelle": "https://www.sec.gov/Archives/edgar/data/1022837/000119312526459169/d487040d6k.htm"
+  },
+  {
    "sym": "TECH",
    "name": "Bio-Techne",
    "art": "dividende_exdatum",
@@ -847,6 +865,15 @@
    "quelle": "https://www.sec.gov/Archives/edgar/data/1539838/000153983826000180/diamondbackex991-11x2x26.htm"
   },
   {
+   "sym": "HSBA.L",
+   "name": "HSBC",
+   "art": "ergebnis",
+   "datum": "2026-11-19",
+   "betrag": "",
+   "waehrung": "",
+   "quelle": "https://data.fca.org.uk/artefacts/NSM/RNS/5461c3b9-33af-43b3-bbd5-209ed36f8d7b.html"
+  },
+  {
    "sym": "HSBC",
    "name": "Hsbc Holdings Plc",
    "art": "ergebnis",
@@ -935,6 +962,15 @@
    "betrag": "",
    "waehrung": "",
    "quelle": "https://data.fca.org.uk/artefacts/NSM/RNS/1d1010cb-a6c5-4191-b641-9a0a1ad7fbb4.html"
+  },
+  {
+   "sym": "VRT",
+   "name": "Vertiv",
+   "art": "dividende_exdatum",
+   "datum": "2026-11-24",
+   "betrag": "0.10",
+   "waehrung": "USD",
+   "quelle": "https://www.sec.gov/Archives/edgar/data/1674101/000162828026073564/exhibit991vrt-q42026divide.htm"
   },
   {
    "sym": "AMCR",
@@ -1036,6 +1072,15 @@
    "quelle": "https://www.sec.gov/Archives/edgar/data/707549/000070754926000057/lrcx_exx991xsharexrepurcha.htm"
   },
   {
+   "sym": "SMFG",
+   "name": "Sumitomo Mitsui Financial Group, Inc.",
+   "art": "dividende_zahltag",
+   "datum": "2026-12-02",
+   "betrag": "100",
+   "waehrung": "JPY",
+   "quelle": "https://www.sec.gov/Archives/edgar/data/1022837/000119312526459171/d388220d6k.htm"
+  },
+  {
    "sym": "REGN",
    "name": "Regeneron Pharmaceuticals",
    "art": "dividende_zahltag",
@@ -1070,6 +1115,15 @@
    "betrag": "",
    "waehrung": "",
    "quelle": "https://data.fca.org.uk/artefacts/NSM/RNS/48aa0308-1df7-41ca-bc4b-36d29cc7e68a.html"
+  },
+  {
+   "sym": "MUFG",
+   "name": "Mitsubishi Ufj Financial Group Inc",
+   "art": "dividende_zahltag",
+   "datum": "2026-12-07",
+   "betrag": "48.00",
+   "waehrung": "JPY",
+   "quelle": "https://www.sec.gov/Archives/edgar/data/67088/000119312526459151/d138419d6k.htm"
   },
   {
    "sym": "HMC",
@@ -1241,6 +1295,15 @@
    "betrag": "0.66",
    "waehrung": "USD",
    "quelle": "https://www.sec.gov/Archives/edgar/data/943819/000119312526437783/d170451dex991.htm"
+  },
+  {
+   "sym": "VRT",
+   "name": "Vertiv",
+   "art": "dividende_zahltag",
+   "datum": "2026-12-17",
+   "betrag": "0.10",
+   "waehrung": "USD",
+   "quelle": "https://www.sec.gov/Archives/edgar/data/1674101/000162828026073564/exhibit991vrt-q42026divide.htm"
   },
   {
    "sym": "DOC",
