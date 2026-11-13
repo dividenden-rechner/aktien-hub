@@ -10,3 +10,4 @@ Newsletter sind nur Themengeber. Zahlen aus Primärquellen, eigene Einordnung.
 | 2026-10-31 | Fed-Sitzung Oktober: Folgen für Zinsen, Anleihen, Dividendenaktien | Fed-Beschluss, FRED | Datenlage offen |
 | 2026-10-31 | EZB nach Lagarde: Folgen für Euro-Zinsen und Dividendenwerte | EZB-Beschlüsse, EZB-Datenportal | Datenlage offen |
 | 2026-10-31 | Kupfer/Chile: Codelco, Freeport | Freeport-Quartalsbericht, Preisdaten | Datenlage offen |
+| 2026-11-14 | N26 Altersvorsorgedepot (Start Januar 2027): Bonus bis 430 €, Kosten, Förderung, Einordnung (Werbung von N26) | N26-Seite zum Altersvorsorgedepot (Stand 14.11.2026), Förderregeln Altersvorsorgereform | Recherche erledigt, Vorschlag |
