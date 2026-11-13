@@ -679,6 +679,12 @@
    "url": "https://www.sumitomocorp.com/en/jp/news/release/rss",
    "region": "Welt",
    "geprueft": true
+  },
+  {
+   "sym": "GEV",
+   "name": "GE Vernova",
+   "url": "https://www.gevernova.com/news/subscribe/all/rss.xml",
+   "geprueft": true
   }
  ]
 }

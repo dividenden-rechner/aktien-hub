@@ -7,9 +7,9 @@ category: Analyse
 kein_logo: ja
 quelle_name: "Analystenpräsentation Siemens Energy Q4 GJ 2026, Webcast-Präsentation GE Vernova 3Q 2026, Präsentation und Finanzbericht Mitsubishi Heavy 1H FY2026"
 image: assets/magazin/gasturbinen-dreikampf-siemens-energy-ge-vernova-mitsubishi-heavy-foto.jpg
-image_alt: "Foto zu Gasturbinen-Dreikampf:: Gebze power plant"
-image_credit: "Foto: Harald the Bard / Wikimedia Commons, CC BY-SA 4.0"
-image_source: https://commons.wikimedia.org/wiki/File:A_view_from_a_natural_gas_combined_cycle_power_plant.jpg
+image_alt: "Läufer einer großen Gasturbine vom Typ GT24 mit Schaufelkranz, ausgestellt im Freien"
+image_credit: "Foto: Dergenaue / Wikimedia Commons, CC BY-SA 3.0"
+image_source: https://commons.wikimedia.org/wiki/File:Turbinenl%C3%A4ufer_Gasturbine_G24.jpg
 image_artist_url: 
 ---
 <!-- PRÜFEN: Aufmacherfoto ist über tools/asset.request angefragt (Gasturbine/Gaskraftwerk). Nach dem Mergen läuft der Foto-Bot und trägt image-Felder ein. Passt das Foto nicht, mit anderen Suchbegriffen neu anfragen. -->
