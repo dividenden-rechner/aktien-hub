@@ -1,40 +1,35 @@
 {
- "stand": "2026-11-13 20:18 UTC",
+ "stand": "2026-11-13 20:36 UTC",
  "firmen": [
   {
    "firma": "Toyota",
    "secCode": "72030",
-   "jahresbericht": "S100Y8NY",
-   "quartalsbericht": null,
-   "eps_jahr": null
+   "jahresbericht": null,
+   "quartalsbericht": null
   },
   {
    "firma": "Sony",
    "secCode": "67580",
-   "jahresbericht": "S100YE2C",
-   "quartalsbericht": null,
-   "eps_jahr": null
+   "jahresbericht": null,
+   "quartalsbericht": null
   },
   {
    "firma": "MUFG",
    "secCode": "83060",
-   "jahresbericht": "S100YJQO",
-   "quartalsbericht": null,
-   "eps_jahr": null
+   "jahresbericht": null,
+   "quartalsbericht": null
   },
   {
    "firma": "SMFG",
    "secCode": "83160",
-   "jahresbericht": "S100YERK",
-   "quartalsbericht": null,
-   "eps_jahr": null
+   "jahresbericht": null,
+   "quartalsbericht": null
   },
   {
    "firma": "Honda",
    "secCode": "72670",
-   "jahresbericht": "S100YDD9",
-   "quartalsbericht": null,
-   "eps_jahr": null
+   "jahresbericht": null,
+   "quartalsbericht": null
   }
  ]
 }
