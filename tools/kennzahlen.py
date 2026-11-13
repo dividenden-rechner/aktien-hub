@@ -45,7 +45,7 @@ GICS = {"Information Technology": "Technology", "Health Care": "Healthcare", "Fi
         "Consumer Discretionary": "Consumer Cyclical", "Consumer Staples": "Consumer Defensive", "Materials": "Basic Materials"}
 SEKTOR = {}
 # Firmen, bei denen Kurs (Partizipationsschein) und Je-Aktie-Werte (Namenaktie) nicht zusammenpassen: keine Kennzahlen, bis geklaert
-AUSGENOMMEN = {"LISN.SW"}
+AUSGENOMMEN = {"LISN.SW", "VOLV-B.ST"}   # VOLV-B.ST: ESEF-Daten gehoeren zu Volvo Cars (SE0021628898), nicht zur Volvo Group
 # Branchen ausserhalb der S&P-500-Liste (data/branchen.json, deutsch) auf die Sektornamen des Screeners abgebildet
 BRANCHE_DE = {"Technologie": "Technology", "Gesundheit": "Healthcare", "Finanzen": "Financial Services", "Zyklischer Konsum": "Consumer Cyclical",
               "Basiskonsum": "Consumer Defensive", "Rohstoffe": "Basic Materials", "Industrie": "Industrials", "Energie": "Energy",
