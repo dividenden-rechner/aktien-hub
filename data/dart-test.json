@@ -1,0 +1,50 @@
+{
+ "stand": "2026-11-13 20:36 UTC",
+ "firmen": [
+  {
+   "firma": "Samsung Electronics",
+   "boerse": "005930",
+   "dart_code": "00126380",
+   "eps_jahr": null,
+   "stichtag_jahr": 2025,
+   "eps_ytd": null,
+   "eps_ytd_vorjahr": null
+  },
+  {
+   "firma": "SK Hynix",
+   "boerse": "000660",
+   "dart_code": "00164779",
+   "eps_jahr": null,
+   "stichtag_jahr": 2025,
+   "eps_ytd": null,
+   "eps_ytd_vorjahr": null
+  },
+  {
+   "firma": "KB Financial",
+   "boerse": "105560",
+   "dart_code": "00688996",
+   "eps_jahr": null,
+   "stichtag_jahr": 2025,
+   "eps_ytd": null,
+   "eps_ytd_vorjahr": null
+  },
+  {
+   "firma": "Hyundai Motor",
+   "boerse": "005380",
+   "dart_code": "00164742",
+   "eps_jahr": null,
+   "stichtag_jahr": 2025,
+   "eps_ytd": null,
+   "eps_ytd_vorjahr": null
+  },
+  {
+   "firma": "POSCO Holdings",
+   "boerse": "005490",
+   "dart_code": "00155319",
+   "eps_jahr": null,
+   "stichtag_jahr": 2026,
+   "eps_ytd": null,
+   "eps_ytd_vorjahr": null
+  }
+ ]
+}
