@@ -6,6 +6,11 @@ author: "Kilian Treß"
 category: Analyse
 kein_logo: ja
 quelle_name: "Analystenpräsentation Siemens Energy Q4 GJ 2026, Webcast-Präsentation GE Vernova 3Q 2026, Präsentation und Finanzbericht Mitsubishi Heavy 1H FY2026"
+image: assets/magazin/gasturbinen-dreikampf-siemens-energy-ge-vernova-mitsubishi-heavy-foto.jpg
+image_alt: "Foto zu Gasturbinen-Dreikampf:: Gebze power plant"
+image_credit: "Foto: Harald the Bard / Wikimedia Commons, CC BY-SA 4.0"
+image_source: https://commons.wikimedia.org/wiki/File:A_view_from_a_natural_gas_combined_cycle_power_plant.jpg
+image_artist_url: 
 ---
 <!-- PRÜFEN: Aufmacherfoto ist über tools/asset.request angefragt (Gasturbine/Gaskraftwerk). Nach dem Mergen läuft der Foto-Bot und trägt image-Felder ein. Passt das Foto nicht, mit anderen Suchbegriffen neu anfragen. -->
 <!-- PRÜFEN: Bewertungen (Kurs, Börsenwert, KGV) sind gerundete eigene Berechnungen, Stand 10./11.11.2026: GE Vernova Schlusskurs 10.11. 797,04 $ (Alpha Vantage), erwartetes KGV aus TIKR (rund 42 bei knapp 940 $, auf 797 $ umgerechnet). Siemens Energy rund 126 € am 11.11. vormittags, Börsenwert mit rund 785 Mio. Aktien geschätzt, KGV auf Nettogewinn-Ausblick ~5 Mrd. € abzüglich Minderheiten. Mitsubishi Heavy Börsenwert rund 66,7 Mrd. $ (companiesmarketcap), KGV auf Prognose 440 Mrd. Yen. Falls Divi eigene Bewertungsdaten schickt: Tabelle im Abschnitt "Was der Markt bezahlt" ersetzen. -->

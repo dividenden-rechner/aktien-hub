@@ -48,45 +48,19 @@ Modell-Problem -> gemini-3.8-flash: Fehler 503: {
   }
 }
 
-Modell-Problem -> gemini-3.8-flash: Fehler 503: {
+Modell-Problem -> gemini-3.8-flash: The read operation timed out
+Modell-Problem -> gemini-3.7-flash: Fehler 429: {
   "error": {
-    "code": 503,
-    "message": "This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.",
-    "status": "UNAVAILABLE"
-  }
-}
-
-Modell-Problem -> gemini-3.7-flash: Fehler 503: {
-  "error": {
-    "code": 503,
-    "message": "This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.",
-    "status": "UNAVAILABLE"
-  }
-}
-
-Modell-Problem -> gemini-3.7-flash: Fehler 503: {
-  "error": {
-    "code": 503,
-    "message": "This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.",
-    "status": "UNAVAILABLE"
-  }
-}
-
-Modell-Problem -> gemini-3.7-flash: Fehler 503: {
-  "error": {
-    "code": 503,
-    "message": "This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.",
-    "status": "UNAVAILABLE"
-  }
-}
-
+    "code": 429,
+    "message": "You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://aistudio.google.com/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceede
+Tageskontingent dieses Modells aufgebraucht, naechstes Modell.
 Modell: gemini-3.6-flash
-Auswahl durch das Modell: 35
-Neues Foto: Unsplash 6q5QG8iIgRo -> https://images.unsplash.com/photo-1562789233-495f52b583dd?ixid=M3wxMTE3OTgzfDB8MXxzZWFyY2h8Mnx8Y3lzdGljJTIwZmlicm9zaXMlMjByZXNlYXJjaHxlbnwxfDB8fHwxNzk0NTE4ODgxfDA&ixlib=rb-4.1.0&w=1600&h=900&fit=crop&crop=entropy&q=80&fm=jpg
+Auswahl durch das Modell: -1
+Kein passendes Foto gefunden, altes bleibt.
 Logo-Angaben gesetzt, fetch_logos holt das Logo neu.
 Foto-Kandidaten: 28 (Commons 12, Unsplash 16)
   0: File:Gene-editing Techniques in Plant Cells.jpg | Different gene editing methods used in plant cells
-  1: File:20251019 Replica DNA double helix model Berlin 04.jpg | Guanine in the Replica of the DNA double helix model by Watson and Crick in the 
+  1: File:20251019 Replica DNA double helix model Berlin 01.jpg | Adenine of the Replica of the DNA double helix model by Watson and Crick in the 
   2: File:DNA Double Helix (20468181866).jpg | Credit: National Human Genome Research Institute, National Institutes of Health.
   3: File:DNA Double Helix (4932403853).jpg | DNA Double Helix
   4: File:DNA Helix CPK.jpg | Part of a dna double helix showing the minor groove (Space-filling model)
@@ -114,22 +88,6 @@ Foto-Kandidaten: 28 (Commons 12, Unsplash 16)
   26: Unsplash Vb0GY3PWSSM | A female scientist in a laboratory looks through a microscope.
   27: Unsplash fd0b-Bl4cFc | DNA Genotyping and Sequencing. Vials containing DNA samples from studies of the 
 Verfuegbare Flash-Modelle: gemini-3.8-flash, gemini-3.7-flash, gemini-3.6-flash, gemini-3.5-flash, gemini-3.5-flash-lite, gemini-3.1-flash-lite, gemini-3.1-flash-lite-preview, gemini-3-flash-preview, gemini-2.5-flash, gemini-2.5-flash-lite, gemini-flash-latest, gemini-omni-1.1-flash, gemini-omni-1.2-flash, gemini-flash-lite-latest, gemini-omni-flash-preview
-Modell-Problem -> gemini-3.8-flash: Fehler 503: {
-  "error": {
-    "code": 503,
-    "message": "This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.",
-    "status": "UNAVAILABLE"
-  }
-}
-
-Modell-Problem -> gemini-3.8-flash: Fehler 503: {
-  "error": {
-    "code": 503,
-    "message": "This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.",
-    "status": "UNAVAILABLE"
-  }
-}
-
 Modell-Problem -> gemini-3.8-flash: Fehler 429: {
   "error": {
     "code": 429,
@@ -140,23 +98,9 @@ Modell-Problem -> gemini-3.7-flash: Fehler 429: {
     "code": 429,
     "message": "You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://aistudio.google.com/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceede
 Tageskontingent dieses Modells aufgebraucht, naechstes Modell.
-Modell-Problem -> gemini-3.6-flash: The read operation timed out
-Modell-Problem -> gemini-3.5-flash: Fehler 503: {
-  "error": {
-    "code": 503,
-    "message": "This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.",
-    "status": "UNAVAILABLE"
-  }
-}
-
-Modell-Problem -> gemini-3.5-flash: Fehler 429: {
-  "error": {
-    "code": 429,
-    "message": "You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://aistudio.google.com/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceede
-Tageskontingent dieses Modells aufgebraucht, naechstes Modell.
-Modell: gemini-3.5-flash-lite
-Auswahl durch das Modell: 24
-Neues Foto: Unsplash v7ibB19EUbQ -> https://images.unsplash.com/photo-1583911860205-72f8ac8ddcbe?ixid=M3wxMTE3OTgzfDB8MXxzZWFyY2h8NXx8Z2VuZXRpY3MlMjBsYWJvcmF0b3J5fGVufDF8MHx8fDE3OTQ1MTg5OTh8MA&ixlib=rb-4.1.0&w=1600&h=900&fit=crop&crop=entropy&q=80&fm=jpg
+Modell: gemini-3.6-flash
+Auswahl durch das Modell: 7
+Neues Foto: File:CRISPR-Cas9 Editing of the Genome (26453307604).jpg -> assets/magazin/crispr-therapeutics-q3-2026-casgevy-verlust-foto.jpg
 Bild vorhanden (assets/magazin/palantir-q3-2026-zahlen-prognose-foto.jpg), keine neue Suche. Mit --force erzwingen.
 Bild vorhanden (assets/magazin/marathon-petroleum-q3-2026-quartalszahlen-foto.jpg), keine neue Suche. Mit --force erzwingen.
 Logo-Angaben gesetzt, fetch_logos holt das Logo neu.
@@ -192,6 +136,14 @@ Foto-Kandidaten: 59 (Commons 19, Unsplash 40)
   28: Unsplash M5tzZtFCOfs | cable network
   29: Unsplash 2JJ3wBHu4_0 | a rack of servers in a server room
 Verfuegbare Flash-Modelle: gemini-3.8-flash, gemini-3.7-flash, gemini-3.6-flash, gemini-3.5-flash, gemini-3.5-flash-lite, gemini-3.1-flash-lite, gemini-3.1-flash-lite-preview, gemini-3-flash-preview, gemini-2.5-flash, gemini-2.5-flash-lite, gemini-flash-latest, gemini-omni-1.1-flash, gemini-omni-1.2-flash, gemini-flash-lite-latest, gemini-omni-flash-preview
+Modell-Problem -> gemini-3.8-flash: Fehler 503: {
+  "error": {
+    "code": 503,
+    "message": "The service is currently unavailable.",
+    "status": "UNAVAILABLE"
+  }
+}
+
 Modell-Problem -> gemini-3.8-flash: Fehler 429: {
   "error": {
     "code": 429,
@@ -202,9 +154,19 @@ Modell-Problem -> gemini-3.7-flash: Fehler 429: {
     "code": 429,
     "message": "You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://aistudio.google.com/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceede
 Tageskontingent dieses Modells aufgebraucht, naechstes Modell.
-Modell: gemini-3.6-flash
+Modell-Problem -> gemini-3.6-flash: Fehler 429: {
+  "error": {
+    "code": 429,
+    "message": "You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://aistudio.google.com/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceede
+Tageskontingent dieses Modells aufgebraucht, naechstes Modell.
+Modell-Problem -> gemini-3.5-flash: Fehler 429: {
+  "error": {
+    "code": 429,
+    "message": "You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://aistudio.google.com/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceede
+Tageskontingent dieses Modells aufgebraucht, naechstes Modell.
+Modell: gemini-3.5-flash-lite
 Auswahl durch das Modell: 22
-Neues Foto: Unsplash 2bJfnIwQvpk -> https://images.unsplash.com/photo-1753097617151-b8994eb0bb3e?ixid=M3wxMTE3OTgzfDB8MXxzZWFyY2h8NHx8QU1EJTIwSW5zdGluY3QlMjBhY2NlbGVyYXRvcnxlbnwxfDB8fHwxNzk0NTE5NDYzfDA&ixlib=rb-4.1.0&w=1600&h=900&fit=crop&crop=entropy&q=80&fm=jpg
+Neues Foto: Unsplash 2bJfnIwQvpk -> https://images.unsplash.com/photo-1753097617151-b8994eb0bb3e?ixid=M3wxMTE3OTgzfDB8MXxzZWFyY2h8NHx8QU1EJTIwSW5zdGluY3QlMjBhY2NlbGVyYXRvcnxlbnwxfDB8fHwxNzk0NjA0OTU1fDA&ixlib=rb-4.1.0&w=1600&h=900&fit=crop&crop=entropy&q=80&fm=jpg
 Bild vorhanden (assets/magazin/fresenius-q3-2026-quartalszahlen-foto.jpg), keine neue Suche. Mit --force erzwingen.
 Logo-Angaben gesetzt, fetch_logos holt das Logo neu.
 Foto-Kandidaten: 25 (Commons 3, Unsplash 22)
@@ -244,41 +206,33 @@ Modell-Problem -> gemini-3.7-flash: Fehler 429: {
     "code": 429,
     "message": "You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://aistudio.google.com/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceede
 Tageskontingent dieses Modells aufgebraucht, naechstes Modell.
-Modell-Problem -> gemini-3.6-flash: The read operation timed out
-Modell-Problem -> gemini-3.5-flash: Fehler 503: {
-  "error": {
-    "code": 503,
-    "message": "This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.",
-    "status": "UNAVAILABLE"
-  }
-}
-
-Modell: gemini-3.5-flash
+Modell: gemini-3.6-flash
 Auswahl durch das Modell: 3
-Neues Foto: Unsplash J4HwEwZtIs8 -> https://images.unsplash.com/photo-1612851300081-30cac0077b3b?ixid=M3wxMTE3OTgzfDB8MXxzZWFyY2h8MXx8aW5qZWN0aW9uJTIwcGVuJTIwY2xvc2UlMjB1cHxlbnwxfDB8fHwxNzk0NTE5NDc0fDA&ixlib=rb-4.1.0&w=1600&h=900&fit=crop&crop=entropy&q=80&fm=jpg
+Neues Foto: Unsplash J4HwEwZtIs8 -> https://images.unsplash.com/photo-1612851300081-30cac0077b3b?ixid=M3wxMTE3OTgzfDB8MXxzZWFyY2h8MXx8aW5qZWN0aW9uJTIwcGVuJTIwY2xvc2UlMjB1cHxlbnwxfDB8fHwxNzk0NDMzMTk5fDA&ixlib=rb-4.1.0&w=1600&h=900&fit=crop&crop=entropy&q=80&fm=jpg
 Logo-Angaben gesetzt, fetch_logos holt das Logo neu.
-Foto-Kandidaten: 21 (Commons 5, Unsplash 16)
+Foto-Kandidaten: 22 (Commons 6, Unsplash 16)
   0: File:Antikalk 01.jpg | Anticalc/Decalcifier packaging from Germany, ingredients highlighted
-  1: File:Gebruiksartikelen DSCF5070.jpg | Zicht op diverse gebruiksartikelen, een deel van het interieur, van het Museum d
-  2: File:Kao products.JPG | A few Kao household cleaning products avaiable in Hong Kong.
-  3: File:Kleine cilindrische koker van reinigingstabletten voor kunstgebit, opschrift “Ultradent” in wit en blauw, objectnr 79816.JPG | Objectgegevens Titel: Kleine cilindrische koker van reinigingstabletten voor kun
-  4: File:Rechthoekig pak zeep- en wasmiddelmonsters, veelkleurig, objectnr 76619.JPG | Objectgegevens Titel: Rechthoekig pak zeep- en wasmiddelmonsters, veelkleurig Be
-  5: Unsplash __ZMnefoI3k | person holding yellow plastic spray bottle
-  6: Unsplash XxAy813D66I | white plastic bottles on white plastic container
-  7: Unsplash xp-ND7NjWaA | Cleaning, sanitizing, and disinfecting supplies
-  8: Unsplash DJcVOQUZxF0 | Woman gathering cleaning supplies
-  9: Unsplash xQdp-KbIG3s | KINN Living eco-friendly refillable cleaning products. Photographed by Ollie Gro
-  10: Unsplash BVrJBcmn0EU | a yellow wall with a blue and white towel from it
-  11: Unsplash OxdnFg-I3Lc | white plastic pump bottle on white table
-  12: Unsplash SaVqlZczQXs | At GoGoNano, we understand the importance of maintaining a clean and healthy liv
-  13: Unsplash fT2rW9PkM0A | Toothbrush, toothpaste, and shampoo on bathroom counter
-  14: Unsplash lile4HrTcvQ | Watsons is an international health, beauty, and personal care chain store.
-  15: Unsplash PL1WRIJOQuQ | Shelves stocked with rows of hair care products
-  16: Unsplash fbI6cQi45eQ | A traditional Thai retail shop specializing in local herbal remedies and medicin
-  17: Unsplash n_EPVz5vVNs | A traditional Thai retail shop specializing in local herbal remedies and medicin
-  18: Unsplash B-xOubb2A7I | Rows of colorful tiles arranged by shade on a shelf
-  19: Unsplash qJ7-UhYBTsY | The Quiet Interval Between Things . . .
-  20: Unsplash 0ktm9oSGpFs | People in a modern store with display shelves
+  1: File:Cleaning a VLT mirror (wallpaper).jpg | The 8.2m diameter main mirror of Antu, the first Unit Telescope of ESO's Very La
+  2: File:Gebruiksartikelen DSCF5070.jpg | Zicht op diverse gebruiksartikelen, een deel van het interieur, van het Museum d
+  3: File:Kao products.JPG | A few Kao household cleaning products avaiable in Hong Kong.
+  4: File:Kleine cilindrische koker van reinigingstabletten voor kunstgebit, opschrift “Ultradent” in wit en blauw, objectnr 79816.JPG | Objectgegevens Titel: Kleine cilindrische koker van reinigingstabletten voor kun
+  5: File:Rechthoekig pak zeep- en wasmiddelmonsters, veelkleurig, objectnr 76619.JPG | Objectgegevens Titel: Rechthoekig pak zeep- en wasmiddelmonsters, veelkleurig Be
+  6: Unsplash __ZMnefoI3k | person holding yellow plastic spray bottle
+  7: Unsplash XxAy813D66I | white plastic bottles on white plastic container
+  8: Unsplash xp-ND7NjWaA | Cleaning, sanitizing, and disinfecting supplies
+  9: Unsplash DJcVOQUZxF0 | Woman gathering cleaning supplies
+  10: Unsplash xQdp-KbIG3s | KINN Living eco-friendly refillable cleaning products. Photographed by Ollie Gro
+  11: Unsplash BVrJBcmn0EU | a yellow wall with a blue and white towel from it
+  12: Unsplash OxdnFg-I3Lc | white plastic pump bottle on white table
+  13: Unsplash SaVqlZczQXs | At GoGoNano, we understand the importance of maintaining a clean and healthy liv
+  14: Unsplash fT2rW9PkM0A | Toothbrush, toothpaste, and shampoo on bathroom counter
+  15: Unsplash lile4HrTcvQ | Watsons is an international health, beauty, and personal care chain store.
+  16: Unsplash PL1WRIJOQuQ | Shelves stocked with rows of hair care products
+  17: Unsplash fbI6cQi45eQ | A traditional Thai retail shop specializing in local herbal remedies and medicin
+  18: Unsplash n_EPVz5vVNs | A traditional Thai retail shop specializing in local herbal remedies and medicin
+  19: Unsplash B-xOubb2A7I | Rows of colorful tiles arranged by shade on a shelf
+  20: Unsplash qJ7-UhYBTsY | The Quiet Interval Between Things . . .
+  21: Unsplash 0ktm9oSGpFs | People in a modern store with display shelves
 Verfuegbare Flash-Modelle: gemini-3.8-flash, gemini-3.7-flash, gemini-3.6-flash, gemini-3.5-flash, gemini-3.5-flash-lite, gemini-3.1-flash-lite, gemini-3.1-flash-lite-preview, gemini-3-flash-preview, gemini-2.5-flash, gemini-2.5-flash-lite, gemini-flash-latest, gemini-omni-1.1-flash, gemini-omni-1.2-flash, gemini-flash-lite-latest, gemini-omni-flash-preview
 Modell-Problem -> gemini-3.8-flash: Fehler 429: {
   "error": {
@@ -301,8 +255,8 @@ Modell-Problem -> gemini-3.5-flash: Fehler 429: {
     "message": "You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://aistudio.google.com/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceede
 Tageskontingent dieses Modells aufgebraucht, naechstes Modell.
 Modell: gemini-3.5-flash-lite
-Auswahl durch das Modell: 15
-Neues Foto: Unsplash PL1WRIJOQuQ -> https://images.unsplash.com/photo-1776105609708-3d8908ab4dc2?ixid=M3wxMTE3OTgzfDB8MXxzZWFyY2h8M3x8cGVyc29uYWwlMjBjYXJlJTIwcHJvZHVjdHMlMjBzaGVsZnxlbnwxfDB8fHwxNzk0NTcxMzE4fDA&ixlib=rb-4.1.0&w=1600&h=900&fit=crop&crop=entropy&q=80&fm=jpg
+Auswahl durch das Modell: 16
+Neues Foto: Unsplash PL1WRIJOQuQ -> https://images.unsplash.com/photo-1776105609708-3d8908ab4dc2?ixid=M3wxMTE3OTgzfDB8MXxzZWFyY2h8M3x8cGVyc29uYWwlMjBjYXJlJTIwcHJvZHVjdHMlMjBzaGVsZnxlbnwxfDB8fHwxNzk0NDMzMjA1fDA&ixlib=rb-4.1.0&w=1600&h=900&fit=crop&crop=entropy&q=80&fm=jpg
 Bild vorhanden (assets/magazin/cvs-health-q3-2026-aufspaltung-prognose-foto.jpg), keine neue Suche. Mit --force erzwingen.
 Bild vorhanden (assets/magazin/mcdonalds-q3-2026-quartalszahlen-foto.jpg), keine neue Suche. Mit --force erzwingen.
 Logo-Angaben gesetzt, fetch_logos holt das Logo neu.
@@ -359,42 +313,43 @@ Modell-Problem -> gemini-3.5-flash: Fehler 429: {
     "message": "You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://aistudio.google.com/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceede
 Tageskontingent dieses Modells aufgebraucht, naechstes Modell.
 Modell: gemini-3.5-flash-lite
-Auswahl durch das Modell: 40
-Neues Foto: Unsplash ZdToNCVLpOg -> https://images.unsplash.com/photo-1599727277757-3f54e54ea618?ixid=M3wxMTE3OTgzfDB8MXxzZWFyY2h8N3x8ZGlhZ25vc3RpYyUyMGxhYm9yYXRvcnklMjBhdXRvbWF0aW9ufGVufDF8MHx8fDE3OTQ1NzEzNjd8MA&ixlib=rb-4.1.0&w=1600&h=900&fit=crop&crop=entropy&q=80&fm=jpg
+Auswahl durch das Modell: 2
+Neues Foto: File:Clinical Chemistry Analyzer , Клинички биохемиски анализатор 3.jpg -> assets/magazin/siemens-healthineers-olyrian-diagnostics-umbenennung-foto.jpg
 Bild vorhanden (assets/magazin/toyota-q2-geschaeftsjahr-2027-hybride-prognose-foto.jpg), keine neue Suche. Mit --force erzwingen.
 Bild vorhanden (assets/magazin/kimberly-clark-q3-2026-zahlen-kenvue-china-foto.jpg), keine neue Suche. Mit --force erzwingen.
-Logo-Angaben gesetzt, fetch_logos holt das Logo neu.
-Foto-Kandidaten: 39 (Commons 11, Unsplash 28)
-  0: File:BlogHer '07 - Chicago (933781405).jpg | BlogHer '07 - Chicago
-  1: File:BlogHer '07 - Chicago (933923683).jpg | BlogHer '07 - Chicago
-  2: File:BlogHer '07 - Chicago (934104329).jpg | BlogHer '07 - Chicago
-  3: File:BlogHer Sponsors (957748746).jpg | The dome inside the convention center hall had all the major sponsor logos proje
-  4: File:Parte lateral do Dove.jpg | 
-  5: File:Sabonete Dove.jpg | 
-  6: File:Shibuya-Tokyo---2024-10-11 062.jpg | 東京都渋谷区、東京メトロ半蔵門線渋谷駅構内。ボディケア製品・ヘアケア製品の ダヴ の「#かわいいに正解なんてない」の広告。
-  7: File:Shibuya-Tokyo---2024-10-11 063.jpg | 東京都渋谷区、東京メトロ半蔵門線渋谷駅構内。ボディケア製品・ヘアケア製品の ダヴ の「#かわいいに正解なんてない」の広告。
-  8: File:Unilever Distributionszentrum Mannheim.jpg | Unilever Logistikzentrum AXE Dove Rexona Domestos Viss Coral
-  9: File:Unilever Mannheim Seifenfabrik.jpg | Sunlicht im Rheinauhafen mit Wasserturm
-  10: File:愛買忠孝店清潔沐浴用品.jpg | ​愛買忠孝店清潔沐浴用品
-  11: Unsplash fT2rW9PkM0A | Toothbrush, toothpaste, and shampoo on bathroom counter
-  12: Unsplash lile4HrTcvQ | Watsons is an international health, beauty, and personal care chain store.
-  13: Unsplash PL1WRIJOQuQ | Shelves stocked with rows of hair care products
-  14: Unsplash fbI6cQi45eQ | A traditional Thai retail shop specializing in local herbal remedies and medicin
-  15: Unsplash n_EPVz5vVNs | A traditional Thai retail shop specializing in local herbal remedies and medicin
-  16: Unsplash B-xOubb2A7I | Rows of colorful tiles arranged by shade on a shelf
-  17: Unsplash qJ7-UhYBTsY | The Quiet Interval Between Things . . .
-  18: Unsplash 0ktm9oSGpFs | People in a modern store with display shelves
-  19: Unsplash k1tSnHMHHWk | Lora Naturkosmetik 3D Water Splash - Created by https://icespacestudios.de/
-  20: Unsplash jKbOP9V9zg8 | a bottle of keune care and a bottle of shampoo on a pink surface
-  21: Unsplash Eb7WQOqwnp0 | a brown dog standing next to a bath tub filled with water
-  22: Unsplash U_WRp8cLkpM | two bottles of keune care on a pink background
-  23: Unsplash AA-qAyHj9m0 | a woman is taking a bath with her dog
-  24: Unsplash FARVkgAz2ww | two bottles of keune hair care on a pink background
-  25: Unsplash FUKXEbDy05U | a group of white bottles on a wooden table
-  26: Unsplash LZ58cbdEnD0 | shampoo bottle
-  27: Unsplash cghqmLvDvvQ | Guatemala en Estados Unidos, una tienda de consumo diario ubicado en algún rincó
-  28: Unsplash TikgeFyyuOQ | aisle, food, cheese, dairy refrigeration, cookies, biscuit, cereal, tea, coffee,
-  29: Unsplash 8XEl2n7kh-s | Child in a grocery store aisle looking at products
+Bild vorhanden (assets/magazin/unilever-reiner-pflegekonzern-dividende-rueckkauf-foto.jpg), keine neue Suche. Mit --force erzwingen.
+Bild vorhanden (assets/magazin/singulus-spacex-auftrag-solarlinie-neun-monate-2026-foto.jpg), keine neue Suche. Mit --force erzwingen.
+Foto-Kandidaten: 58 (Commons 30, Unsplash 28)
+  0: File:AUTOMOTIVE GAS TURBINE ENGINE - NARA - 17418368.jpg | Scope and content: The original finding aid described this as: Capture Date: 1/2
+  1: File:AUTOMOTIVE GAS TURBINE ENGINE - NARA - 17418369.jpg | Scope and content: The original finding aid described this as: Capture Date: 1/2
+  2: File:Armengaud Lemale Turbine.jpg | The Armengaud-Lemale early experimental gas turbine. St Denis, Paris,1906
+  3: File:BASELINE GAS TURBINE ENGINE - NARA - 17418394.jpg | Scope and content: The original finding aid described this as: Capture Date: 1/3
+  4: File:BASELINE GAS TURBINE ENGINE - NARA - 17418395.jpg | Scope and content: The original finding aid described this as: Capture Date: 1/3
+  5: File:CHRYSLER GAS TURBINE CAR AND ENGINE - NARA - 17474838.jpg | Scope and content: The original finding aid described this as: Capture Date: 1/1
+  6: File:CHRYSLER GAS TURBINE ENGINE - NARA - 17469871.jpg | Scope and content: The original finding aid described this as: Capture Date: 6/1
+  7: File:CHRYSLER GAS TURBINE ENGINE - NARA - 17469872.jpg | Scope and content: The original finding aid described this as: Capture Date: 6/1
+  8: File:CHRYSLER GAS TURBINE ENGINE - NARA - 17469873.jpg | Scope and content: The original finding aid described this as: Capture Date: 6/1
+  9: File:CHRYSLER GAS TURBINE ENGINE - NARA - 17469900.jpg | Scope and content: The original finding aid described this as: Capture Date: 6/1
+  10: File:CHRYSLER GAS TURBINE ENGINE - NARA - 17469901.jpg | Scope and content: The original finding aid described this as: Capture Date: 6/1
+  11: File:CHRYSLER GAS TURBINE ENGINE TEST - NARA - 17442611.jpg | Scope and content: The original finding aid described this as: Capture Date: 5/2
+  12: File:CHRYSLER GAS TURBINE ENGINE TEST - NARA - 17442612.jpg | Scope and content: The original finding aid described this as: Capture Date: 5/2
+  13: File:Gas Turbine 4.jpg | An LM6000 operating for the Ministry of Electricity of Iraq
+  14: File:Indirectly fired gas turbine engine.jpg | Indirectly fired gas turbine engine constructed by BTOLA Pty Ltd funning on rice
+  15: File:Lagoon Creek Combustion Turbine Plant.jpg | Lagoon Creek Combustion Turbine Plant
+  16: File:The Neuchatel gas turbine exhibited at the 1939 Swiss National Expo.jpg | The Neuchatel GT exhibited at the 1939 Swiss National Expo in Zurich. The Neuchâ
+  17: File:A view from a natural gas combined cycle power plant.jpg | Gebze power plant
+  18: File:A view from a natural gas combined cycle power plant 2.jpg | Gebze power plant
+  19: File:Combined Cycle Power Plant.jpg | This is an image of "African people at work" from
+  20: File:Kazerun Combined Cycle Power Plant 1.jpg | Kazerun Combined Cycle Power Plant (Iran)
+  21: File:Marmaraereğlisi Natural Gas Combined Cycle Power Plant.jpg | Marmaraereğilsi Doğal Gaz Kombine Çevrim Santrali'nin D-110 otoyolundan görünümü
+  22: File:Niroogah shirkoh.jpg | برجهای خنک کننده نیروگاه سیکل ترکیبی شیرکوه یزد
+  23: File:Power Girds of Neyshabur Combined Cycle Power Plant.jpg | Transmission Towers of Neyshabur Combined Cycle Power Plant in Bagrud Road of Ne
+  24: File:A gas pipeline and the power plant in the background.jpg | A gas pipeline and the power plant in the background
+  25: File:Coal-fired Power Plant (3518071026).jpg | Mandalay natural gas-fired power plant in Oxnard, California, United States
+  26: File:Entrance of Assam Gas Based Power Plant 01.jpg | Assam Gas based power plant is Combined Cycle Gas Turbine Project joint venture 
+  27: File:Entrance of Assam Gas Based Power Plant 02.jpg | Assam Gas based power plant is Combined Cycle Gas Turbine Project joint venture 
+  28: File:Entrance of Assam Gas Based Power Plant 03.jpg | Assam Gas based power plant is Combined Cycle Gas Turbine Project joint venture 
+  29: File:Entrance of Assam Gas Based Power Plant 04.jpg | Assam Gas based power plant is Combined Cycle Gas Turbine Project joint venture 
 Verfuegbare Flash-Modelle: gemini-3.8-flash, gemini-3.7-flash, gemini-3.6-flash, gemini-3.5-flash, gemini-3.5-flash-lite, gemini-3.1-flash-lite, gemini-3.1-flash-lite-preview, gemini-3-flash-preview, gemini-2.5-flash, gemini-2.5-flash-lite, gemini-flash-latest, gemini-omni-1.1-flash, gemini-omni-1.2-flash, gemini-flash-lite-latest, gemini-omni-flash-preview
 Modell-Problem -> gemini-3.8-flash: Fehler 429: {
   "error": {
@@ -411,7 +366,11 @@ Modell-Problem -> gemini-3.6-flash: Fehler 429: {
     "code": 429,
     "message": "You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://aistudio.google.com/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceede
 Tageskontingent dieses Modells aufgebraucht, naechstes Modell.
-Modell: gemini-3.5-flash
-Auswahl durch das Modell: 10
-Neues Foto: File:愛買忠孝店清潔沐浴用品.jpg -> assets/magazin/unilever-reiner-pflegekonzern-dividende-rueckkauf-foto.jpg
-Bild vorhanden (assets/magazin/singulus-spacex-auftrag-solarlinie-neun-monate-2026-foto.jpg), keine neue Suche. Mit --force erzwingen.
+Modell-Problem -> gemini-3.5-flash: Fehler 429: {
+  "error": {
+    "code": 429,
+    "message": "You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://aistudio.google.com/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceede
+Tageskontingent dieses Modells aufgebraucht, naechstes Modell.
+Modell: gemini-3.5-flash-lite
+Auswahl durch das Modell: 17
+Neues Foto: File:A view from a natural gas combined cycle power plant.jpg -> assets/magazin/gasturbinen-dreikampf-siemens-energy-ge-vernova-mitsubishi-heavy-foto.jpg
