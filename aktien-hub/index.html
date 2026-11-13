@@ -38,7 +38,7 @@ h2{font-size:15px;margin:26px 0 10px;color:var(--mut);font-weight:600}
 .head>div:not(.price){flex:1 1 0;min-width:0}
 .head .logo{width:64px;height:64px;flex:none}
 .head h1{margin:0;font-size:clamp(18px,4.6vw,26px);line-height:1.2;overflow-wrap:anywhere}
-.head p{margin:2px 0 0;color:var(--mut)}
+.head p{margin:2px 0 0;color:var(--mut);font-size:13px;line-height:1.3}
 .price{flex:0 0 auto;margin-left:auto;text-align:right;font-size:clamp(18px,5vw,26px);font-weight:600;white-space:nowrap}
 .price small{display:block;font-size:14px;font-weight:400}
 .pos{color:var(--pos)}.neg{color:var(--neg)}
@@ -72,7 +72,7 @@ svg text{fill:var(--mut);font-size:11px;font-family:inherit}
 .kc .ks span{color:var(--mut)}.kc .ks b{font-weight:600;font-variant-numeric:tabular-nums;white-space:nowrap}
 @media(max-width:700px){.kc .ks{grid-template-columns:1fr 1fr}}
 @media(max-width:420px){.kc .ks{grid-template-columns:1fr}}
-@media(max-width:480px){.head .logo{width:48px;height:48px}}
+@media(max-width:480px){.head .logo{width:48px;height:48px}.head p{font-size:12px}}
 .grid>.card:last-child:nth-child(odd){grid-column:1/-1}
 .kc .rubriken .rb{flex:none;font:inherit;font-size:13px;font-weight:500;padding:6px 0 8px;border:0;border-bottom:2px solid transparent;margin-bottom:-1px;background:none;color:#8a97a3;cursor:pointer;border-radius:0}
 .kc .rubriken .rb:hover{color:#5b6874}.kc .rubriken .rb.on{color:#33414d;font-weight:600;border-bottom-color:#8a97a3}
@@ -333,7 +333,7 @@ function kzTabelle(K){
     g+=`<path d="${pth}" fill="none" stroke="#2563eb" stroke-width="2.5"/>`+V.map((v,i)=>v[1]?`<circle cx="${X(i)}" cy="${YN(v[1])}" r="3.5" fill="#2563eb"><title>${v[0]} NAV ${num(v[1],2)}</title></circle>`:"").join("");
     g+=`<text x="${l-6}" y="${t+10}" text-anchor="end" font-size="11" fill="#2563eb">${num(nmax,0)}</text><text x="${l-6}" y="${t+ih}" text-anchor="end" font-size="11" fill="#2563eb">${num(nmin,0)}</text><text x="${W-r+6}" y="${t+10}" font-size="11" fill="#5d6b78">${num(bmax,2)}</text></svg>`;
     chart=`<div class="fcard"><div class="fctl"><b>NAV, NII und Dividende je Quartal</b></div><div class="kleg"><span><i style="background:#2563eb"></i>NAV je Aktie (linke Achse)</span><span><i style="background:#15803d"></i>NII je Aktie</span><span><i style="background:#8cc63f"></i>Dividende je Aktie</span></div><div class="fscroll fit">${g}</div><p class="fnote">Liegen die dunkelgrünen Balken unter den lindgrünen, verdient die BDC ihre Dividende nicht vollständig. Ein fallender NAV kann auf Kreditausfälle hindeuten.</p></div>`}
-  return chart+`<div class="stk kz"><h3>Kennzahlen</h3><table><tbody>${zeilen}</tbody></table><p class="sn">Kurs: Schluss des letzten Handelstags (${esc(K.boerse||"Xetra")}, ${new Date(K.datum).toLocaleDateString("de-DE")}), Deutsche Börse, 15 Minuten verzögert. Kennzahlen aus dem Jahresbericht ${esc(K.gj)} ${K.land?"(europäisches Einheitsformat ESEF)":"bei der US-Börsenaufsicht SEC"}, Kurs mit dem EZB-Referenzkurs umgerechnet. Keine Anlageberatung.</p></div>`;
+  return chart+`<div class="stk kz"><table style="margin-top:0"><tbody>${zeilen}</tbody></table><p class="sn">Kurs: Schluss des letzten Handelstags (${esc(K.boerse||"Xetra")}, ${new Date(K.datum).toLocaleDateString("de-DE")}), Deutsche Börse, 15 Minuten verzögert. Kennzahlen aus dem Jahresbericht ${esc(K.gj)} ${K.land?"(europäisches Einheitsformat ESEF)":"bei der US-Börsenaufsicht SEC"}, Kurs mit dem EZB-Referenzkurs umgerechnet. Keine Anlageberatung.</p></div>`;
 }
 function secFirma(S,sym){if(!S||!S.firmen)return null;const k=String(sym).toUpperCase();return S.firmen[k]||S.firmen[k.replace(/\./g,"-")]||null}
 /* Geschäftsjahr wie bei FMP: endet es im Januar oder in der ersten Februarwoche, zählt es zum Vorjahr (Händler wie Home Depot) */
