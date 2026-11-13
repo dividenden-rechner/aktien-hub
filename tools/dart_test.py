@@ -36,9 +36,12 @@ def konto_eps(eintrag_liste, feld):
                 return None
     return None
 
+STATUS = []
 def bericht(corp_code, jahr, code):
     raw = get("fnlttSinglAcnt.json", corp_code=corp_code, bsns_year=str(jahr), reprt_code=code, fs_div="CFS")
-    return json.loads(raw).get("list", []) or []
+    j = json.loads(raw)
+    STATUS.append({"jahr": jahr, "code": code, "status": j.get("status"), "message": j.get("message")})
+    return j.get("list", []) or []
 
 ergebnis = []
 for sc, name in FIRMEN.items():
@@ -64,5 +67,5 @@ for sc, name in FIRMEN.items():
     ergebnis.append(e)
     time.sleep(0.5)
 
-json.dump({"stand": dt.datetime.now(dt.timezone.utc).strftime("%Y-%m-%d %H:%M UTC"), "firmen": ergebnis}, open("data/dart-test.json", "w", encoding="utf-8"), ensure_ascii=False, indent=1)
+json.dump({"status_antworten": STATUS, "stand": dt.datetime.now(dt.timezone.utc).strftime("%Y-%m-%d %H:%M UTC"), "firmen": ergebnis}, open("data/dart-test.json", "w", encoding="utf-8"), ensure_ascii=False, indent=1)
 print(json.dumps(ergebnis, ensure_ascii=False, indent=1))

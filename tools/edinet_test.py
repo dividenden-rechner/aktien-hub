@@ -16,9 +16,13 @@ def get(url):
     with urllib.request.urlopen(urllib.request.Request(url, headers={"User-Agent": "dividenden-rechner.de Datensammlung"}), timeout=120) as r:
         return r.read()
 
+STATUS = []
 def dokumente(tag):
     raw = get(f"{BASE}/documents.json?date={tag}&type=2&Subscription-Key={KEY}")
-    return json.loads(raw).get("results", []) or []
+    j = json.loads(raw)
+    if len(STATUS) < 3:
+        STATUS.append({"tag": tag, "metadata": j.get("metadata")})
+    return j.get("results", []) or []
 
 def xbrl_text(doc_id):
     z = zipfile.ZipFile(io.BytesIO(get(f"{BASE}/documents/{doc_id}?type=1&Subscription-Key={KEY}")))
@@ -78,5 +82,5 @@ for sc, name in FIRMEN.items():
         eintrag["fehler"] = str(e)
     ergebnis.append(eintrag)
 
-json.dump({"stand": dt.datetime.utcnow().strftime("%Y-%m-%d %H:%M UTC"), "firmen": ergebnis}, open("data/edinet-test.json", "w", encoding="utf-8"), ensure_ascii=False, indent=1)
+json.dump({"status_antworten": STATUS, "stand": dt.datetime.utcnow().strftime("%Y-%m-%d %H:%M UTC"), "firmen": ergebnis}, open("data/edinet-test.json", "w", encoding="utf-8"), ensure_ascii=False, indent=1)
 print(json.dumps(ergebnis, ensure_ascii=False, indent=1))
