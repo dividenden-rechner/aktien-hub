@@ -13732,6 +13732,758 @@ null
 95.94
 ],
 "hinweis": "EUR (stockanalysis.com). capex = Capital Expenditures lt. Cashflow (Sachanlagen und ggf. immaterielle Werte, Aufteilung nicht ausgewiesen); da = Abschreibungen lt. Cashflow; cash = Cash und kurzfr. Anlagen; debt inkl. Leasing; div/bb = gezahlte Dividenden bzw. Rueckkaeufe (0 = keine). Auffaellig: 2021 Dividende 249,7 vor Boersengang an frueheren Eigentuemer; hohe Verschuldung (2,2 Mrd.) und Zinsen (ca. 193 Mio.); Eigenkapital 2025 gesunken (u. a. Rueckkaeufe 127,3). Gamenet ab 2023 konsolidiert."
+},
+"WKL.AS": {
+"jahre": [
+2021,
+2022,
+2023,
+2024,
+2025
+],
+"ocf": [
+1292,
+1582,
+1545,
+1654,
+1668
+],
+"capex": [
+240,
+295,
+324,
+314,
+305
+],
+"da": [
+421,
+432,
+440,
+454,
+463
+],
+"div": [
+372,
+424,
+467,
+520,
+563
+],
+"bb": [
+410,
+1000,
+1000,
+1000,
+1096
+],
+"cash": [
+1001,
+1346,
+1135,
+954,
+932
+],
+"debt": [
+3132,
+3617,
+3749,
+4090,
+4972
+],
+"umsatz": [
+4771,
+5453,
+5584,
+5916,
+6125
+],
+"brutto": [
+3397,
+3875,
+4008,
+4290,
+4500
+],
+"ebit": [
+1073,
+1283,
+1327,
+1450,
+1528
+],
+"zins": [
+67,
+72,
+89,
+105,
+124
+],
+"steuer": [
+201,
+249,
+290,
+299,
+341
+],
+"hinweis": "stockanalysis.com, Mio. EUR. capex = Capital Expenditures laut stockanalysis; da = D&A laut Cashflow; debt = Total Debt inkl. Leasing; "
+},
+"RAND.AS": {
+"jahre": [
+2021,
+2022,
+2023,
+2024,
+2025
+],
+"ocf": [
+914,
+1073,
+1194,
+649,
+872
+],
+"capex": [
+65,
+62,
+39,
+41,
+35
+],
+"da": [
+285,
+259,
+276,
+284,
+286
+],
+"div": [
+596,
+400,
+522,
+627,
+284
+],
+"bb": [
+54,
+81,
+294,
+183,
+2
+],
+"cash": [
+859,
+274,
+261,
+357,
+399
+],
+"debt": [
+1274,
+1144,
+1184,
+2218,
+1910
+],
+"umsatz": [
+24635,
+27568,
+25426,
+24122,
+23077
+],
+"brutto": [
+4896,
+5751,
+5278,
+4718,
+4326
+],
+"ebit": [
+1027,
+1152,
+875,
+539,
+527
+],
+"zins": [
+26,
+36,
+77,
+85,
+89
+],
+"steuer": [
+250,
+197,
+138,
+67,
+134
+],
+"hinweis": "stockanalysis.com, Mio. EUR. capex = Capital Expenditures laut stockanalysis; da = D&A laut Cashflow; debt = Total Debt inkl. Leasing; "
+},
+"UMG.AS": {
+"jahre": [
+2021,
+2022,
+2023,
+2024,
+2025
+],
+"ocf": [
+1140,
+1732,
+1885,
+1755,
+1739
+],
+"capex": [
+13,
+33,
+47,
+91,
+70
+],
+"da": [
+277,
+141,
+146,
+164,
+190
+],
+"div": [
+785,
+798,
+929,
+933,
+953
+],
+"bb": [
+null,
+null,
+null,
+null,
+null
+],
+"cash": [
+585,
+439,
+504,
+580,
+494
+],
+"debt": [
+3096,
+2673,
+2514,
+3192,
+3407
+],
+"umsatz": [
+8504,
+10340,
+11108,
+11834,
+12507
+],
+"brutto": [
+3896,
+4587,
+4900,
+5088,
+5311
+],
+"ebit": [
+1435,
+1646,
+1446,
+1941,
+2135
+],
+"zins": [
+38,
+62,
+106,
+129,
+131
+],
+"steuer": [
+277,
+115,
+458,
+778,
+546
+],
+"hinweis": "stockanalysis.com, Mio. EUR. capex = Capital Expenditures laut stockanalysis; da = D&A laut Cashflow; debt = Total Debt inkl. Leasing; UMG: keine Rueckkaeufe ausgewiesen (null). "
+},
+"AKZA.AS": {
+"jahre": [
+2021,
+2022,
+2023,
+2024,
+2025
+],
+"ocf": [
+604,
+254,
+1120,
+668,
+914
+],
+"capex": [
+288,
+292,
+286,
+306,
+309
+],
+"da": [
+351,
+368,
+357,
+371,
+378
+],
+"div": [
+364,
+379,
+343,
+338,
+339
+],
+"bb": [
+1135,
+669,
+0,
+0,
+0
+],
+"cash": [
+1210,
+1786,
+1778,
+1467,
+1920
+],
+"debt": [
+3550,
+5875,
+5563,
+5368,
+4862
+],
+"umsatz": [
+9587,
+10846,
+10668,
+10711,
+10158
+],
+"brutto": [
+3904,
+3923,
+4234,
+4337,
+4049
+],
+"ebit": [
+1089,
+726,
+1062,
+944,
+813
+],
+"zins": [
+74,
+106,
+193,
+190,
+211
+],
+"steuer": [
+246,
+214,
+296,
+246,
+326
+],
+"hinweis": "stockanalysis.com, Mio. EUR. capex = Capital Expenditures laut stockanalysis; da = D&A laut Cashflow; debt = Total Debt inkl. Leasing; "
+},
+"IMCD.AS": {
+"jahre": [
+2021,
+2022,
+2023,
+2024,
+2025
+],
+"ocf": [
+196.26,
+298.84,
+420.01,
+279.21,
+322.28
+],
+"capex": [
+6.11,
+10.88,
+21.24,
+14.06,
+13.04
+],
+"da": [
+92.84,
+105.09,
+114.22,
+136.61,
+142.92
+],
+"div": [
+58.13,
+92.23,
+135.06,
+127.65,
+127.03
+],
+"bb": [
+0,
+13.26,
+0,
+0,
+6.2
+],
+"cash": [
+177.88,
+222.01,
+394.46,
+525.38,
+238.59
+],
+"debt": [
+1118,
+1249,
+1680,
+1807,
+1790
+],
+"umsatz": [
+3453,
+4622,
+4463,
+4747,
+4805
+],
+"brutto": [
+853.76,
+1168,
+1143,
+1222,
+1220
+],
+"ebit": [
+307.76,
+479,
+433.1,
+435.31,
+393.89
+],
+"zins": [
+18.13,
+27.3,
+49.58,
+72.15,
+67.29
+],
+"steuer": [
+76.59,
+122.85,
+110.85,
+101.77,
+73.63
+],
+"hinweis": "stockanalysis.com, Mio. EUR. capex = Capital Expenditures laut stockanalysis; da = D&A laut Cashflow; debt = Total Debt inkl. Leasing; "
+},
+"BESI.AS": {
+"jahre": [
+2021,
+2022,
+2023,
+2024,
+2025
+],
+"ocf": [
+277.85,
+271.87,
+208.57,
+201.08,
+178.14
+],
+"capex": [
+4.95,
+6.54,
+6.59,
+11.95,
+15.46
+],
+"da": [
+9.64,
+10.72,
+11.79,
+13.37,
+14.53
+],
+"div": [
+129.36,
+269.47,
+222.11,
+171.53,
+172.81
+],
+"bb": [
+50.1,
+146.78,
+213.39,
+79.83,
+81.97
+],
+"cash": [
+647.18,
+671.69,
+413.48,
+672.32,
+542.99
+],
+"debt": [
+312.48,
+342.89,
+319.16,
+544.71,
+521.24
+],
+"umsatz": [
+749.3,
+722.87,
+578.86,
+607.47,
+591.33
+],
+"brutto": [
+454.22,
+443.07,
+375.79,
+395.94,
+374.27
+],
+"ebit": [
+324.98,
+294.12,
+213.39,
+195.59,
+173.06
+],
+"zins": [
+10.96,
+12.2,
+11.66,
+16.67,
+25.07
+],
+"steuer": [
+21.42,
+34.84,
+30.61,
+6.53,
+22.31
+],
+"hinweis": "stockanalysis.com, Mio. EUR. capex = Capital Expenditures laut stockanalysis; da = D&A laut Cashflow; debt = Total Debt inkl. Leasing; "
+},
+"ASM.AS": {
+"jahre": [
+2021,
+2022,
+2023,
+2024,
+2025
+],
+"ocf": [
+380.64,
+541.49,
+735.89,
+897.7,
+1061
+],
+"capex": [
+72.2,
+101.18,
+153.66,
+165.4,
+218.1
+],
+"da": [
+67.01,
+85.74,
+129.4,
+126,
+141.3
+],
+"div": [
+96.89,
+121.65,
+123.38,
+135.5,
+147.3
+],
+"bb": [
+140.14,
+0,
+100.93,
+151.4,
+152.1
+],
+"cash": [
+491.51,
+419.32,
+637.26,
+926.5,
+1027
+],
+"debt": [
+23.46,
+28.12,
+33.56,
+35.3,
+77.9
+],
+"umsatz": [
+1730,
+2411,
+2634,
+2933,
+3173
+],
+"brutto": [
+828.13,
+1143,
+1272,
+1481,
+1644
+],
+"ebit": [
+477.14,
+618.76,
+652.74,
+795.5,
+947.8
+],
+"zins": [
+2.01,
+1.52,
+3.95,
+1.9,
+0.9
+],
+"steuer": [
+102.62,
+115.86,
+114.45,
+182.2,
+201.2
+],
+"hinweis": "stockanalysis.com, Mio. EUR. capex = Capital Expenditures laut stockanalysis; da = D&A laut Cashflow; debt = Total Debt inkl. Leasing; "
+},
+"KPN.AS": {
+"jahre": [
+2021,
+2022,
+2023,
+2024,
+2025
+],
+"ocf": [
+2128,
+2188,
+2242,
+2264,
+2308
+],
+"capex": [
+989,
+961,
+991,
+1006,
+1016
+],
+"da": [
+1170,
+1054,
+971,
+987,
+1033
+],
+"div": [
+564,
+588,
+627,
+694,
+734
+],
+"bb": [
+200,
+300,
+300,
+477,
+469
+],
+"cash": [
+1107,
+527,
+828,
+802,
+587
+],
+"debt": [
+7681,
+6657,
+7050,
+7258,
+7120
+],
+"umsatz": [
+5270,
+5312,
+5439,
+5603,
+5797
+],
+"brutto": [
+2794,
+2838,
+2924,
+3014,
+3077
+],
+"ebit": [
+1083,
+1253,
+1365,
+1410,
+1399
+],
+"zins": [
+240,
+224,
+275,
+278,
+268
+],
+"steuer": [
+344,
+227,
+245,
+238,
+217
+],
+"hinweis": "stockanalysis.com, Mio. EUR. capex = Capital Expenditures laut stockanalysis; da = D&A laut Cashflow; debt = Total Debt inkl. Leasing; KPN: Leasingzahlungen (ca. 124-143 p.a.) nicht in capex enthalten. "
 }
 }
 }

@@ -1,0 +1,713 @@
+{
+"quelle": "boerse.de Fundamentalanalyse (je Firma, Seite 'fundamental-analyse')",
+"stand": "2026-11-12",
+"einheit": "Mio € (je Aktie in €; aktien_mio in Mio. Stück)",
+"jahre": [
+2019,
+2020,
+2021,
+2022,
+2023,
+2024,
+2025
+],
+"hinweis": "Jahresüberschuss meist Anteil der Aktionäre, kann je Firma von Pressemitteilungen abweichen. Umsatz bei Banken/Versicherern von boerse.de nicht geführt (null). Nicht geprüft gegen Geschäftsberichte.",
+"firmen": {
+"WKL.AS": {
+"name": "Wolters Kluwer",
+"isin": "NL0000395903",
+"waehrung": "EUR",
+"hinweis": "Quelle stockanalysis.com (boerse.de nicht abrufbar), nur 2021-2025, 2019/2020 null. Dividendenausschuettung = gezahlte Dividenden laut Cashflow. EPS verwaessert. Eigenkapital 2025 stark gesunken durch Rueckkaeufe.",
+"umsatz": [
+null,
+null,
+4771,
+5453,
+5584,
+5916,
+6125
+],
+"ebt": [
+null,
+null,
+929,
+1276,
+1297,
+1378,
+1649
+],
+"jahresueberschuss": [
+null,
+null,
+728,
+1027,
+1007,
+1079,
+1308
+],
+"dividendenausschuettung": [
+null,
+null,
+372,
+424,
+467,
+520,
+563
+],
+"eigenkapital": [
+null,
+null,
+2417,
+2310,
+1749,
+1545,
+798
+],
+"eps": [
+null,
+null,
+2.78,
+4.01,
+4.09,
+4.52,
+5.64
+],
+"dividende_je_aktie": [
+null,
+null,
+1.57,
+1.81,
+2.08,
+2.33,
+2.52
+],
+"aktien_mio": [
+null,
+null,
+258.19,
+248.71,
+240.51,
+234.37,
+226.17
+],
+"eigenkapitalrendite_pct": [
+null,
+null,
+30.12,
+44.46,
+57.58,
+69.84,
+163.91
+]
+},
+"RAND.AS": {
+"name": "Randstad",
+"isin": "NL0000379121",
+"waehrung": "EUR",
+"hinweis": "Quelle stockanalysis.com (boerse.de nicht abrufbar), nur 2021-2025, 2019/2020 null. Eigenkapital = Total Common Equity (ohne Hybrid/Vorzugsanteile, Gesamt inkl. Hybrid 2025: 4002). Dividendenausschuettung = gezahlte Dividenden laut Cashflow (2021 und 2024 inkl. Sonderdividende/Nachzahlung moeglich). EPS verwaessert. Dividende je Aktie 2021/2022 inkl. Sonderanteil.",
+"umsatz": [
+null,
+null,
+24635,
+27568,
+25426,
+24122,
+23077
+],
+"ebt": [
+null,
+null,
+1018,
+1126,
+762,
+190,
+433
+],
+"jahresueberschuss": [
+null,
+null,
+768,
+929,
+624,
+123,
+299
+],
+"dividendenausschuettung": [
+null,
+null,
+596,
+400,
+522,
+627,
+284
+],
+"eigenkapital": [
+null,
+null,
+4596,
+4609,
+4394,
+3827,
+3696
+],
+"eps": [
+null,
+null,
+4.1,
+5.02,
+3.43,
+0.65,
+1.66
+],
+"dividende_je_aktie": [
+null,
+null,
+2.19,
+2.85,
+2.28,
+1.62,
+1.62
+],
+"aktien_mio": [
+null,
+null,
+183.05,
+182.66,
+178.02,
+175.14,
+175.23
+],
+"eigenkapitalrendite_pct": [
+null,
+null,
+16.71,
+20.16,
+14.2,
+3.21,
+8.09
+]
+},
+"UMG.AS": {
+"name": "Universal Music Group",
+"isin": "NL0015000IY2",
+"waehrung": "EUR",
+"hinweis": "Quelle stockanalysis.com (boerse.de nicht abrufbar), nur 2021-2025, 2019/2020 null. Boersengang (Amsterdam) im September 2021; 2021 Dividende je Aktie (0,40) und gezahlte Dividenden (785) enthalten Zahlungen vor der Abspaltung von Vivendi, nicht vollstaendig vergleichbar. Eigenkapital = Total Common Equity. Dividendenausschuettung = gezahlte Dividenden laut Cashflow. EPS verwaessert. Pretax 2024 inkl. Beteiligungsgewinne (Spotify/Tencent Music-Bewertungseffekte). Rueckkaeufe nicht ausgewiesen (null). Aktienzahl ab Stueckzahl 1,8 Mrd.",
+"umsatz": [
+null,
+null,
+8504,
+10340,
+11108,
+11834,
+12507
+],
+"ebt": [
+null,
+null,
+1165,
+900,
+1721,
+2871,
+2086
+],
+"jahresueberschuss": [
+null,
+null,
+886,
+782,
+1259,
+2086,
+1533
+],
+"dividendenausschuettung": [
+null,
+null,
+785,
+798,
+929,
+933,
+953
+],
+"eigenkapital": [
+null,
+null,
+2030,
+2351,
+2962,
+4526,
+4543
+],
+"eps": [
+null,
+null,
+0.49,
+0.43,
+0.68,
+1.13,
+0.83
+],
+"dividende_je_aktie": [
+null,
+null,
+0.4,
+0.51,
+0.51,
+0.52,
+0.52
+],
+"aktien_mio": [
+null,
+null,
+1813,
+1813,
+1821,
+1829,
+1834
+],
+"eigenkapitalrendite_pct": [
+null,
+null,
+43.65,
+33.26,
+42.51,
+46.09,
+33.74
+]
+},
+"AKZA.AS": {
+"name": "Akzo Nobel",
+"isin": "NL0013267909",
+"waehrung": "EUR",
+"hinweis": "Quelle stockanalysis.com (boerse.de nicht abrufbar), nur 2021-2025, 2019/2020 null. Werte 2021 enthalten Einmaleffekte aus dem Verkauf von Specialty Chemicals (Gewinn, hohe Rueckkaeufe 1135); Vergleichbarkeit mit Folgejahren eingeschraenkt. Dividende je Aktie laut stockanalysis 1,98 konstant (inkl. gegebenenfalls Sonderdividende 2021, nicht geprueft). Eigenkapital = Total Common Equity. Dividendenausschuettung = gezahlte Dividenden laut Cashflow. EPS verwaessert. Rueckkaeufe 2023-2025 keine (0). Operativer Cashflow 2022 nach hohem Working-Capital-Aufbau niedrig.",
+"umsatz": [
+null,
+null,
+9587,
+10846,
+10668,
+10711,
+10158
+],
+"ebt": [
+null,
+null,
+1105,
+602,
+784,
+838,
+998
+],
+"jahresueberschuss": [
+null,
+null,
+829,
+352,
+442,
+542,
+635
+],
+"dividendenausschuettung": [
+null,
+null,
+364,
+379,
+343,
+338,
+339
+],
+"eigenkapital": [
+null,
+null,
+5425,
+4333,
+4322,
+4574,
+4659
+],
+"eps": [
+null,
+null,
+4.46,
+2.0,
+2.58,
+3.16,
+3.69
+],
+"dividende_je_aktie": [
+null,
+null,
+1.98,
+1.98,
+1.98,
+1.98,
+1.98
+],
+"aktien_mio": [
+null,
+null,
+178.87,
+170.43,
+170.6,
+170.78,
+171.07
+],
+"eigenkapitalrendite_pct": [
+null,
+null,
+15.28,
+8.12,
+10.23,
+11.85,
+13.63
+]
+},
+"IMCD.AS": {
+"name": "IMCD",
+"isin": "NL0010801007",
+"waehrung": "EUR",
+"hinweis": "Quelle stockanalysis.com (boerse.de nicht abrufbar), nur 2021-2025, 2019/2020 null. Eigenkapital = Total Common Equity. Dividendenausschuettung = gezahlte Dividenden laut Cashflow (Zahlung im Folgejahr zum Dividendenbeschluss; 2021/2022 teils Aktiendividende-Wahlrecht, Cash-Betrag niedriger). EPS verwaessert. Aktienzahl 2024 gestiegen durch Kapitalerhoehung. Capex ohne Akquisitionen.",
+"umsatz": [
+null,
+null,
+3453,
+4622,
+4463,
+4747,
+4805
+],
+"ebt": [
+null,
+null,
+283.83,
+435.85,
+403.08,
+379.98,
+291.13
+],
+"jahresueberschuss": [
+null,
+null,
+207.28,
+313.08,
+292.27,
+278.24,
+217.58
+],
+"dividendenausschuettung": [
+null,
+null,
+58.13,
+92.23,
+135.06,
+127.65,
+127.03
+],
+"eigenkapital": [
+null,
+null,
+1460,
+1672,
+1725,
+2214,
+2041
+],
+"eps": [
+null,
+null,
+3.63,
+5.49,
+5.13,
+4.86,
+3.68
+],
+"dividende_je_aktie": [
+null,
+null,
+1.62,
+2.37,
+2.24,
+2.15,
+1.81
+],
+"aktien_mio": [
+null,
+null,
+56.94,
+56.89,
+56.92,
+59.07,
+59.03
+],
+"eigenkapitalrendite_pct": [
+null,
+null,
+14.2,
+18.72,
+16.94,
+12.57,
+10.66
+]
+},
+"BESI.AS": {
+"name": "BE Semiconductor Industries",
+"isin": "NL0012866412",
+"waehrung": "EUR",
+"hinweis": "Quelle stockanalysis.com (boerse.de nicht abrufbar), nur 2021-2025, 2019/2020 null. Eigenkapital = Total Common Equity. Dividendenausschuettung = gezahlte Dividenden laut Cashflow (Auszahlung im Folgejahr zum Beschluss, jeweils inkl. Sonderanteilen). EPS verwaessert. Gezahlte Dividenden plus Rueckkaeufe uebersteigen in einzelnen Jahren den Gewinn. Verschuldung ab 2024 inkl. Wandelanleihen, Capex laut stockanalysis ohne aktivierte Entwicklungskosten moeglich.",
+"umsatz": [
+null,
+null,
+749.3,
+722.87,
+578.86,
+607.47,
+591.33
+],
+"ebt": [
+null,
+null,
+303.84,
+275.49,
+207.69,
+188.52,
+153.95
+],
+"jahresueberschuss": [
+null,
+null,
+282.42,
+240.65,
+177.08,
+181.99,
+131.64
+],
+"dividendenausschuettung": [
+null,
+null,
+129.36,
+269.47,
+222.11,
+171.53,
+172.81
+],
+"eigenkapital": [
+null,
+null,
+619.27,
+628.54,
+421.41,
+501.26,
+416.4
+],
+"eps": [
+null,
+null,
+3.39,
+2.9,
+2.23,
+2.3,
+1.66
+],
+"dividende_je_aktie": [
+null,
+null,
+3.33,
+2.85,
+2.15,
+2.18,
+1.58
+],
+"aktien_mio": [
+null,
+null,
+77.97,
+78.49,
+77.02,
+79.31,
+79.28
+],
+"eigenkapitalrendite_pct": [
+null,
+null,
+45.61,
+38.29,
+42.02,
+36.31,
+31.61
+]
+},
+"ASM.AS": {
+"name": "ASM International",
+"isin": "NL0000334118",
+"waehrung": "EUR",
+"hinweis": "Quelle stockanalysis.com (boerse.de nicht abrufbar), nur 2021-2025, 2019/2020 null. Eigenkapital = Shareholders' Equity. Dividendenausschuettung = gezahlte Dividenden laut Cashflow. EPS verwaessert. Ergebnis vor Steuern liegt 2023 deutlich ueber dem operativen Ergebnis (Gewinn aus ASMPT-Beteiligungsverkauf bzw. Beteiligungsergebnis); Schulden = nur Leasing/geringe Finanzverbindlichkeiten. Rueckkauf 2022 keiner (0).",
+"umsatz": [
+null,
+null,
+1730,
+2411,
+2634,
+2933,
+3173
+],
+"ebt": [
+null,
+null,
+597.32,
+504.98,
+866.52,
+867.9,
+924.9
+],
+"jahresueberschuss": [
+null,
+null,
+494.71,
+389.11,
+752.07,
+685.7,
+723.7
+],
+"dividendenausschuettung": [
+null,
+null,
+96.89,
+121.65,
+123.38,
+135.5,
+147.3
+],
+"eigenkapital": [
+null,
+null,
+2242,
+2749,
+3227,
+3747,
+4006
+],
+"eps": [
+null,
+null,
+10.11,
+7.93,
+15.18,
+13.89,
+14.7
+],
+"dividende_je_aktie": [
+null,
+null,
+2.5,
+2.5,
+2.75,
+3.0,
+3.25
+],
+"aktien_mio": [
+null,
+null,
+48.57,
+49.33,
+49.2,
+49.1,
+48.88
+],
+"eigenkapitalrendite_pct": [
+null,
+null,
+22.07,
+14.15,
+23.31,
+18.3,
+18.07
+]
+},
+"KPN.AS": {
+"name": "KPN",
+"isin": "NL0000009082",
+"waehrung": "EUR",
+"hinweis": "Quelle stockanalysis.com (boerse.de nicht abrufbar), nur 2021-2025, 2019/2020 null. 2021 Ergebnis vor Steuern/Jahresueberschuss durch Einmalgewinn (Beteiligungs-/Turmverkauf) erhoeht. Eigenkapital = Total Common Equity (ohne Hybridanleihen). EPS nur auf zwei Nachkommastellen (stockanalysis, verwaessert). Dividendenausschuettung = gezahlte Dividenden laut Cashflow. Schulden inkl. Leasing und Hybrid-Anteil nach stockanalysis. Brutto = Umsatz abzgl. Leistungsaufwand laut stockanalysis.",
+"umsatz": [
+null,
+null,
+5270,
+5312,
+5439,
+5603,
+5797
+],
+"ebt": [
+null,
+null,
+1628,
+992,
+1087,
+1086,
+1072
+],
+"jahresueberschuss": [
+null,
+null,
+1288,
+760,
+844,
+848,
+855
+],
+"dividendenausschuettung": [
+null,
+null,
+564,
+588,
+627,
+694,
+734
+],
+"eigenkapital": [
+null,
+null,
+3228,
+3650,
+3558,
+3531,
+3517
+],
+"eps": [
+null,
+null,
+0.3,
+0.18,
+0.2,
+0.2,
+0.21
+],
+"dividende_je_aktie": [
+null,
+null,
+0.136,
+0.143,
+0.15,
+0.17,
+0.182
+],
+"aktien_mio": [
+null,
+null,
+4125,
+4034,
+3944,
+3886,
+3825
+],
+"eigenkapitalrendite_pct": [
+null,
+null,
+39.9,
+20.82,
+23.72,
+24.02,
+24.31
+]
+}
+}
+}
