@@ -44,6 +44,8 @@ def r2(v, n=2):
 GICS = {"Information Technology": "Technology", "Health Care": "Healthcare", "Financials": "Financial Services",
         "Consumer Discretionary": "Consumer Cyclical", "Consumer Staples": "Consumer Defensive", "Materials": "Basic Materials"}
 SEKTOR = {}
+# Firmen, bei denen Kurs (Partizipationsschein) und Je-Aktie-Werte (Namenaktie) nicht zusammenpassen: keine Kennzahlen, bis geklaert
+AUSGENOMMEN = {"LISN.SW"}
 # Branchen ausserhalb der S&P-500-Liste (data/branchen.json, deutsch) auf die Sektornamen des Screeners abgebildet
 BRANCHE_DE = {"Technologie": "Technology", "Gesundheit": "Healthcare", "Finanzen": "Financial Services", "Zyklischer Konsum": "Consumer Cyclical",
               "Basiskonsum": "Consumer Defensive", "Rohstoffe": "Basic Materials", "Industrie": "Industrials", "Energie": "Energy",
@@ -82,9 +84,20 @@ def main():
     fx_tag = max((d for d in fx if d <= tag), default=max(fx))
     rate = fx[fx_tag]
     out = {}
+    BDX = {}
+    try:
+        BDX = json.load(open("data/boerse-de/fundamentals.json", encoding="utf-8"))["firmen"]
+    except Exception:
+        pass
     alle = dict(sec["firmen"])
     try:   # Europa aus den ESEF-Jahresberichten (gleiches Format, ISIN steht direkt dabei)
+        try:
+            BD = json.load(open("data/boerse-de/fundamentals.json", encoding="utf-8"))["firmen"]
+        except Exception:
+            BD = {}
         for t, f in json.load(open("data/esef/fundamentals.json", encoding="utf-8"))["firmen"].items():
+            if t in BD and BD[t].get("gj") and f.get("gj") and int(str(BD[t]["gj"])[:4]) - int(str(f["gj"])[:4]) >= 2:
+                continue   # ESEF-Bericht zwei oder mehr Jahre aelter als die boerse.de-Reihe: die neuere nehmen
             if t not in alle and f.get("isin"):
                 alle[t] = f
     except Exception:
@@ -96,6 +109,8 @@ def main():
     except Exception:
         pass
     for t, f in alle.items():
+        if t in AUSGENOMMEN:
+            continue
         z = isin.get(t) or ({"isin": f["isin"]} if f.get("isin") else None)
         if not isinstance(z, dict) or not z or z["isin"] not in kurse["k"]:
             continue
@@ -115,6 +130,11 @@ def main():
             if (dw == "EUR" or dw in rate) and (w == "EUR" or w in rate):
                 dps = dps * (rate[w] if w != "EUR" else 1.0) / (rate[dw] if dw != "EUR" else 1.0)
             else:
+                dps = None
+        if dps and kurs and dps / kurs > 0.3:   # unplausibel (ESEF liefert teils Cent statt Euro): boerse.de-Wert versuchen, sonst leer
+            alt = BDX.get(t)
+            dps = wert_am(alt, "dividende_je_aktie", alt["gj"]) if alt else None
+            if dps and dps / kurs > 0.3:
                 dps = None
         eps = wert_am(f, "eps_verw", gj) or wert_am(f, "eps_ber", gj)
         aktien = wert_am(f, "aktien_verw", gj)
