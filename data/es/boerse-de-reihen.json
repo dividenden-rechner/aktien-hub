@@ -447,6 +447,702 @@ null,
 12.75,
 13.67
 ]
+},
+"NTGY.MC": {
+"name": "Naturgy",
+"isin": "ES0116870314",
+"waehrung": "EUR",
+"hinweis": "Quelle stockanalysis.com (S&P Global), boerse.de war nicht abrufbar; nur 2021-2025 verfuegbar, 2019/2020 null. Jahresueberschuss = Anteil der Aktionaere, Eigenkapital = Eigenkapital der Aktionaere (ohne Minderheiten), EPS verwaessert, aktien_mio = Aktienzahl zum Jahresende, Dividendenausschuettung = gezahlte Dividenden laut Kapitalflussrechnung (Zahlungsjahr), dividende_je_aktie = je Geschaeftsjahr laut S&P. Dividende je Aktie lt. S&P (2022: 0,70) kann vom beschlossenen Betrag abweichen; 2025 Kapitalerhoehung (1.391 Mio) und Rueckkaeufe (2.580 Mio), Aktienzahl 2025 sinkt auf 926 Mio; 2021 Ergebnis inkl. Veraeusserungen/Restrukturierung.",
+"umsatz": [
+null,
+null,
+22140,
+33965,
+22617,
+19267,
+19455
+],
+"ebt": [
+null,
+null,
+1797,
+2546,
+3042,
+3204,
+3218
+],
+"jahresueberschuss": [
+null,
+null,
+1214,
+1649,
+1986,
+1901,
+2023
+],
+"dividendenausschuettung": [
+null,
+null,
+1290,
+672.58,
+960.67,
+960.71,
+1117
+],
+"eigenkapital": [
+null,
+null,
+5889,
+7574,
+9448,
+9478,
+9342
+],
+"eps": [
+null,
+null,
+1.26,
+1.72,
+2.07,
+1.98,
+2.17
+],
+"dividende_je_aktie": [
+null,
+null,
+1.2,
+0.7,
+1.0,
+1.0,
+1.77
+],
+"aktien_mio": [
+null,
+null,
+960.81,
+960.92,
+960.73,
+960.73,
+926.39
+],
+"eigenkapitalrendite_pct": [
+null,
+null,
+20.61,
+21.77,
+21.02,
+20.06,
+21.65
+]
+},
+"REE.MC": {
+"name": "Redeia",
+"isin": "ES0173093024",
+"waehrung": "EUR",
+"hinweis": "Quelle stockanalysis.com (S&P Global), boerse.de war nicht abrufbar; nur 2021-2025 verfuegbar, 2019/2020 null. Jahresueberschuss = Anteil der Aktionaere, Eigenkapital = Eigenkapital der Aktionaere (ohne Minderheiten), EPS verwaessert, aktien_mio = Aktienzahl zum Jahresende, Dividendenausschuettung = gezahlte Dividenden laut Kapitalflussrechnung (Zahlungsjahr), dividende_je_aktie = je Geschaeftsjahr laut S&P. Boersenkuerzel heute RED (frueher REE). Jahresueberschuss vor Hybrid-Kupons (Ergebnis je Aktie nach Kupons von 17 Mio 2024/2025). 2024 enthaelt Verlust aus aufgegebenem Geschaeftsbereich (Hispasat, -138 Mio). Dividende je Aktie lt. S&P (1,00 bis 2023, 0,80 ab 2024).",
+"umsatz": [
+null,
+null,
+2009,
+2078,
+1876,
+1657,
+1730
+],
+"ebt": [
+null,
+null,
+888.08,
+869.52,
+885.21,
+675.63,
+700.93
+],
+"jahresueberschuss": [
+null,
+null,
+680.63,
+664.73,
+689.64,
+368.44,
+505.64
+],
+"dividendenausschuettung": [
+null,
+null,
+539,
+543.88,
+565.45,
+572.47,
+460.78
+],
+"eigenkapital": [
+null,
+null,
+3631,
+4790,
+5409,
+5154,
+5248
+],
+"eps": [
+null,
+null,
+1.26,
+1.23,
+1.28,
+0.65,
+0.9
+],
+"dividende_je_aktie": [
+null,
+null,
+1.0,
+1.0,
+1.0,
+0.8,
+0.8
+],
+"aktien_mio": [
+null,
+null,
+539.28,
+539.58,
+539.97,
+540.41,
+540.93
+],
+"eigenkapitalrendite_pct": [
+null,
+null,
+18.74,
+13.88,
+12.75,
+7.15,
+9.63
+]
+},
+"ENG.MC": {
+"name": "Enagas",
+"isin": "ES0130960018",
+"waehrung": "EUR",
+"hinweis": "Quelle stockanalysis.com (S&P Global), boerse.de war nicht abrufbar; nur 2021-2025 verfuegbar, 2019/2020 null. Jahresueberschuss = Anteil der Aktionaere, Eigenkapital = Eigenkapital der Aktionaere (ohne Minderheiten), EPS verwaessert, aktien_mio = Aktienzahl zum Jahresende, Dividendenausschuettung = gezahlte Dividenden laut Kapitalflussrechnung (Zahlungsjahr), dividende_je_aktie = je Geschaeftsjahr laut S&P. 2024 Verlust (-299 Mio) durch hohe Wertberichtigungen/Sonderposten (sonstiges Nichtbetriebsergebnis -697 Mio). Dividende je Aktie lt. S&P: 1,70/1,72/1,74, danach gekuerzt auf 1,00; gezahlte Dividende 2024 (106 Mio) liegt deutlich unter dem Schnitt (Zahlungszeitpunkte).",
+"umsatz": [
+null,
+null,
+975.69,
+957.1,
+907.57,
+905.55,
+960.4
+],
+"ebt": [
+null,
+null,
+499.96,
+526.4,
+421.09,
+-312.68,
+408.44
+],
+"jahresueberschuss": [
+null,
+null,
+403.83,
+375.77,
+342.53,
+-299.31,
+339.11
+],
+"dividendenausschuettung": [
+null,
+null,
+444.04,
+179.97,
+182.22,
+106.39,
+261.36
+],
+"eigenkapital": [
+null,
+null,
+3085,
+3202,
+2984,
+2376,
+2301
+],
+"eps": [
+null,
+null,
+1.54,
+1.44,
+1.31,
+-1.15,
+1.29
+],
+"dividende_je_aktie": [
+null,
+null,
+1.7,
+1.72,
+1.74,
+1.0,
+1.0
+],
+"aktien_mio": [
+null,
+null,
+261.49,
+261.17,
+261.27,
+261.12,
+260.01
+],
+"eigenkapitalrendite_pct": [
+null,
+null,
+13.09,
+11.74,
+11.48,
+-12.6,
+14.74
+]
+},
+"MAP.MC": {
+"name": "Mapfre",
+"isin": "ES0124244E34",
+"waehrung": "EUR",
+"hinweis": "Quelle stockanalysis.com (S&P Global), boerse.de war nicht abrufbar; nur 2021-2025 verfuegbar, 2019/2020 null. Jahresueberschuss = Anteil der Aktionaere, Eigenkapital = Eigenkapital der Aktionaere (ohne Minderheiten), EPS verwaessert, aktien_mio = Aktienzahl zum Jahresende, Dividendenausschuettung = gezahlte Dividenden laut Kapitalflussrechnung (Zahlungsjahr), dividende_je_aktie = je Geschaeftsjahr laut S&P. Versicherer: Umsatz = Gesamterloese laut S&P (Praemien plus Kapitalanlageertraege). Bruch 2021 -> 2022 (Umstellung IFRS 4 auf IFRS 17, 2021 nicht vergleichbar, Umsatz 2022 +33 %). Hohe Minderheitsanteile (2025: 665 Mio), daher Jahresueberschuss deutlich unter Konzernergebnis (1.797 Mio).",
+"umsatz": [
+null,
+null,
+19840,
+26415,
+28985,
+29244,
+30016
+],
+"ebt": [
+null,
+null,
+1355,
+1270,
+1648,
+2100,
+2525
+],
+"jahresueberschuss": [
+null,
+null,
+765.2,
+563.6,
+677.2,
+967.5,
+1133
+],
+"dividendenausschuettung": [
+null,
+null,
+614.3,
+876.4,
+446.5,
+477.3,
+512.8
+],
+"eigenkapital": [
+null,
+null,
+8464,
+7797,
+8467,
+8889,
+9410
+],
+"eps": [
+null,
+null,
+0.25,
+0.18,
+0.22,
+0.32,
+0.37
+],
+"dividende_je_aktie": [
+null,
+null,
+0.146,
+0.145,
+0.15,
+0.16,
+0.18
+],
+"aktien_mio": [
+null,
+null,
+3049,
+3060,
+3064,
+3067,
+3064
+],
+"eigenkapitalrendite_pct": [
+null,
+null,
+9.04,
+7.23,
+8.0,
+10.88,
+12.04
+]
+},
+"AENA.MC": {
+"name": "Aena",
+"isin": "ES0105046017",
+"waehrung": "EUR",
+"hinweis": "Quelle stockanalysis.com (S&P Global), boerse.de war nicht abrufbar; nur 2021-2025 verfuegbar, 2019/2020 null. Jahresueberschuss = Anteil der Aktionaere, Eigenkapital = Eigenkapital der Aktionaere (ohne Minderheiten), EPS verwaessert, aktien_mio = Aktienzahl zum Jahresende, Dividendenausschuettung = gezahlte Dividenden laut Kapitalflussrechnung (Zahlungsjahr), dividende_je_aktie = je Geschaeftsjahr laut S&P. Aktiensplit 10:1 im Jahr 2025, alle Je-Aktie-Werte und Aktienzahlen (1.500 Mio) von der Quelle bereits auf den Split angepasst (neue ISIN ES0105046017, alt ES0105046009). 2021 Verlust (Corona). 2021/2022 keine Dividende gezahlt (Dividende je Aktie 2021 null).",
+"umsatz": [
+null,
+null,
+2442,
+4197,
+5055,
+5793,
+6305
+],
+"ebt": [
+null,
+null,
+-722.34,
+1170,
+2166,
+2556,
+2859
+],
+"jahresueberschuss": [
+null,
+null,
+-475.45,
+901.5,
+1631,
+1934,
+2137
+],
+"dividendenausschuettung": [
+null,
+null,
+0,
+0,
+724.25,
+1183,
+1498
+],
+"eigenkapital": [
+null,
+null,
+5649,
+6718,
+7627,
+8564,
+9206
+],
+"eps": [
+null,
+null,
+-0.32,
+0.6,
+1.09,
+1.29,
+1.42
+],
+"dividende_je_aktie": [
+null,
+null,
+0,
+0.475,
+0.766,
+0.976,
+1.09
+],
+"aktien_mio": [
+null,
+null,
+1500,
+1500,
+1500,
+1500,
+1500
+],
+"eigenkapitalrendite_pct": [
+null,
+null,
+-8.42,
+13.42,
+21.38,
+22.58,
+23.21
+]
+},
+"CLNX.MC": {
+"name": "Cellnex",
+"isin": "ES0105066007",
+"waehrung": "EUR",
+"hinweis": "Quelle stockanalysis.com (S&P Global), boerse.de war nicht abrufbar; nur 2021-2025 verfuegbar, 2019/2020 null. Jahresueberschuss = Anteil der Aktionaere, Eigenkapital = Eigenkapital der Aktionaere (ohne Minderheiten), EPS verwaessert, aktien_mio = Aktienzahl zum Jahresende, Dividendenausschuettung = gezahlte Dividenden laut Kapitalflussrechnung (Zahlungsjahr), dividende_je_aktie = je Geschaeftsjahr laut S&P. Durchgehend Verluste (2021-2025) wegen hoher Abschreibungen und Zinsen; 2024 Goodwill-Wertberichtigung 313 Mio. Dividende je Aktie 2025 und gezahlte Dividende 2021 laut Quelle nicht vorhanden (2025 stattdessen Rueckkaeufe 1.000 Mio); gezahlte Dividenden 2025 (11,8 Mio) vermutlich nur Minderheiten. Aktienzahl 2025 gesunken durch Rueckkaeufe.",
+"umsatz": [
+null,
+null,
+2438,
+3248,
+3804,
+4070,
+4120
+],
+"ebt": [
+null,
+null,
+-540.31,
+-502.88,
+-436.41,
+-700.93,
+-451.78
+],
+"jahresueberschuss": [
+null,
+null,
+-362.54,
+-297.06,
+-297.22,
+-28.04,
+-360.78
+],
+"dividendenausschuettung": [
+null,
+null,
+0,
+36.64,
+40.29,
+44.28,
+11.83
+],
+"eigenkapital": [
+null,
+null,
+14194,
+14223,
+13937,
+14158,
+12116
+],
+"eps": [
+null,
+null,
+-0.59,
+-0.44,
+-0.44,
+-0.04,
+-0.53
+],
+"dividende_je_aktie": [
+null,
+null,
+0.048,
+0.052,
+0.057,
+0.063,
+null
+],
+"aktien_mio": [
+null,
+null,
+678.13,
+705.36,
+705.52,
+705.57,
+673.84
+],
+"eigenkapitalrendite_pct": [
+null,
+null,
+-2.55,
+-2.09,
+-2.13,
+-0.2,
+-2.98
+]
+},
+"IAG.MC": {
+"name": "IAG",
+"isin": "ES0177542018",
+"waehrung": "EUR",
+"hinweis": "Quelle stockanalysis.com (S&P Global), boerse.de war nicht abrufbar. Berichtswaehrung EUR (Notierung in London/Madrid, Berichtswaehrung Euro). 2019/2020 aus einer aelteren Fassung der Quelle (Eigenkapital, Aktienzahl, Dividendenzahlung 2019/2020 nicht verfuegbar, null). EPS verwaessert; EPS 2019 (0,84) und 2020 (-1,97) noch auf Basis der Aktienzahl vor der Kapitalerhoehung 2021, nicht vergleichbar mit 2021ff. Dividende je Aktie 2019: 0,145, danach 2020-2023 keine Dividende (null/0), 2024: 0,09, 2025: 0,098. Corona-Verlust 2020 (-6.935 Mio) und 2021 (-2.933 Mio). Aktienzahl zum Jahresende inkl. Rueckkaeufe.",
+"umsatz": [
+25506,
+7806,
+8455,
+23066,
+29453,
+32100,
+33213
+],
+"ebt": [
+2275,
+-7827,
+-3507,
+415,
+3056,
+3563,
+4505
+],
+"jahresueberschuss": [
+1715,
+-6935,
+-2933,
+431,
+2655,
+2732,
+3342
+],
+"dividendenausschuettung": [
+null,
+null,
+0,
+0,
+0,
+147,
+470
+],
+"eigenkapital": [
+null,
+null,
+840,
+2016,
+3272,
+6170,
+7588
+],
+"eps": [
+0.84,
+-1.97,
+-0.59,
+0.06,
+0.51,
+0.55,
+0.7
+],
+"dividende_je_aktie": [
+0.145,
+0,
+0,
+0,
+0,
+0.09,
+0.098
+],
+"aktien_mio": [
+null,
+null,
+4961,
+4954,
+4916,
+4854,
+4565
+],
+"eigenkapitalrendite_pct": [
+null,
+null,
+-349.17,
+21.38,
+81.14,
+44.28,
+44.04
+]
+},
+"MRL.MC": {
+"name": "Merlin Properties",
+"isin": "ES0105025003",
+"waehrung": "EUR",
+"hinweis": "Quelle stockanalysis.com (S&P Global), boerse.de war nicht abrufbar; nur 2021-2025 verfuegbar, 2019/2020 null. Jahresueberschuss = Anteil der Aktionaere, Eigenkapital = Eigenkapital der Aktionaere (ohne Minderheiten), EPS verwaessert, aktien_mio = Aktienzahl zum Jahresende, Dividendenausschuettung = gezahlte Dividenden laut Kapitalflussrechnung (Zahlungsjahr), dividende_je_aktie = je Geschaeftsjahr laut S&P. Immobilien-SOCIMI: Jahresueberschuss enthaelt Neubewertungen (Wertberichtigungen 2022 -249, 2023 -336, Aufwertung 2025 +494 Mio) und 2021/2022 Ergebnis aus aufgegebenen Geschaeftsbereichen (117/222 Mio); Kapitalerhoehung 2024 (Aktien von 468 auf 562 Mio). Dividende je Aktie lt. S&P schwankt (2022 inkl. Sonderausschuettung).",
+"umsatz": [
+null,
+null,
+417.39,
+463.07,
+504.7,
+508.65,
+567
+],
+"ebt": [
+null,
+null,
+403.17,
+48.16,
+-74.99,
+295.95,
+813.25
+],
+"jahresueberschuss": [
+null,
+null,
+512.22,
+263.09,
+-83.5,
+283.76,
+786.13
+],
+"dividendenausschuettung": [
+null,
+null,
+70.03,
+104.26,
+93.67,
+105.17,
+123.32
+],
+"eigenkapital": [
+null,
+null,
+7027,
+6849,
+6539,
+7501,
+8074
+],
+"eps": [
+null,
+null,
+1.1,
+0.56,
+-0.18,
+0.56,
+1.4
+],
+"dividende_je_aktie": [
+null,
+null,
+0.173,
+0.442,
+0.208,
+0.4,
+0.42
+],
+"aktien_mio": [
+null,
+null,
+466.89,
+468.23,
+468.37,
+562.41,
+562.81
+],
+"eigenkapitalrendite_pct": [
+null,
+null,
+7.29,
+3.84,
+-1.28,
+3.78,
+9.74
+]
 }
 }
 }

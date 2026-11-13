@@ -15988,6 +15988,758 @@ null
 495
 ],
 "hinweis": "stockanalysis.com, auf ganze Mio. gerundet. Bruttogewinn null (kein Cost of Revenue ausgewiesen). Capex = Sachanlagen plus Immaterielle (Sachanlagen 1344/1492/2049/2322/2945, Immaterielle 131/212/216/267/401); ohne Zukaeufe (2025 232). D&A laut Cashflow (Gewinnrechnung 2023-2025: 798/874/946). Cash = liquide Mittel plus kurzfristige Anlagen. Schulden inkl. Leasing. Operating Cashflow stark von Working Capital (Forderungen/Verbindlichkeiten aus Energiesystem) beeinflusst."
+},
+"NTGY.MC": {
+"ocf": [
+1001,
+4242,
+4857,
+3992,
+4525
+],
+"capex": [
+1204,
+1687,
+2424,
+2197,
+2149
+],
+"da": [
+1344,
+1286,
+1344,
+1430,
+1482
+],
+"div": [
+1290,
+672.58,
+960.67,
+960.71,
+1117
+],
+"bb": [
+29,
+503,
+20,
+510,
+2580
+],
+"cash": [
+3965,
+4122,
+3686,
+5626,
+4357
+],
+"debt": [
+16812,
+16285,
+15970,
+18022,
+16763
+],
+"umsatz": [
+22140,
+33965,
+22617,
+19267,
+19455
+],
+"brutto": [
+null,
+null,
+null,
+null,
+null
+],
+"ebit": [
+2504,
+3434,
+3760,
+3506,
+3575
+],
+"zins": [
+510,
+568,
+675,
+710,
+708
+],
+"steuer": [
+358,
+697,
+768,
+835,
+833
+],
+"jahre": [
+2021,
+2022,
+2023,
+2024,
+2025
+],
+"hinweis": "EUR. Quelle stockanalysis.com. da = Abschreibungen laut Kapitalflussrechnung (2021 und 2023 beide 1.344, 2021 moeglicherweise ungenau; GuV-Abschreibungen 2021-2025: 1.445/1.384/1.454/1.542/1.601). capex = Sachanlagen und Immaterielles. cash = liquide Mittel plus kurzfr. Anlagen. debt = Gesamtschulden inkl. Leasing. brutto null (keine Kosten der Umsatzerloese ausgewiesen). ebit = operatives Ergebnis. 2021 operativer Cashflow niedrig wegen Working-Capital-Effekten (Energiepreise)."
+},
+"REE.MC": {
+"ocf": [
+1605,
+1567,
+423.69,
+938.41,
+968.74
+],
+"capex": [
+555.91,
+536.19,
+877.56,
+1079,
+1407
+],
+"da": [
+503.21,
+524.52,
+515,
+438.91,
+447.66
+],
+"div": [
+539,
+543.88,
+565.45,
+572.47,
+460.78
+],
+"bb": [
+0,
+13.65,
+0,
+0,
+0
+],
+"cash": [
+1599.4,
+1547.33,
+714.66,
+923.26,
+602.43
+],
+"debt": [
+7319,
+6239,
+5800,
+6579,
+6248
+],
+"umsatz": [
+2009,
+2078,
+1876,
+1657,
+1730
+],
+"brutto": [
+null,
+null,
+null,
+null,
+null
+],
+"ebit": [
+936.16,
+896.66,
+822.46,
+599.82,
+631.04
+],
+"zins": [
+114.48,
+115.49,
+119.51,
+142.17,
+128.8
+],
+"steuer": [
+201.79,
+188.33,
+195.07,
+148.79,
+165.46
+],
+"jahre": [
+2021,
+2022,
+2023,
+2024,
+2025
+],
+"hinweis": "EUR. Quelle stockanalysis.com (Ticker dort RED). capex = Investitionen (Sach- und immaterielle Anlagen), steigt stark durch Netzausbau. cash = liquide Mittel plus kurzfr. Anlagen. debt inkl. Leasing. brutto null (nicht ausgewiesen). ebit ohne Beteiligungsergebnis. Operativer Cashflow 2023 niedrig wegen Working-Capital/Regulierungsverrechnungen; 2024 mit aufgegebenem Bereich (Hispasat)."
+},
+"ENG.MC": {
+"ocf": [
+579.93,
+726.03,
+568.84,
+454.99,
+212.54
+],
+"capex": [
+69.85,
+90.79,
+156.97,
+97.89,
+118.12
+],
+"da": [
+250.4,
+248.89,
+255.59,
+267.74,
+261.83
+],
+"div": [
+444.04,
+179.97,
+182.22,
+106.39,
+261.36
+],
+"bb": [
+0,
+9.68,
+0,
+6.21,
+18.35
+],
+"cash": [
+1455.54,
+1384.82,
+857.55,
+1418.97,
+744.78
+],
+"debt": [
+5721,
+4829,
+4186,
+3700,
+3202
+],
+"umsatz": [
+975.69,
+957.1,
+907.57,
+905.55,
+960.4
+],
+"brutto": [
+null,
+null,
+null,
+null,
+null
+],
+"ebit": [
+414.92,
+332.03,
+307.46,
+287.73,
+236.51
+],
+"zins": [
+95.36,
+95.11,
+116.4,
+106.23,
+70.48
+],
+"steuer": [
+95.32,
+149.98,
+78.09,
+-13.94,
+68.7
+],
+"jahre": [
+2021,
+2022,
+2023,
+2024,
+2025
+],
+"hinweis": "EUR. Quelle stockanalysis.com. ebit ohne Beteiligungsergebnis (Equity-Ergebnis 131-163 Mio p.a. nicht enthalten). capex = Investitionen (Sach- und immaterielle Anlagen). cash = liquide Mittel plus kurzfr. Anlagen. debt inkl. Leasing. brutto null (nicht ausgewiesen). 2024 Verlustjahr, operativer Cashflow 2025 niedrig (212 Mio)."
+},
+"MAP.MC": {
+"ocf": [
+-485.9,
+576.7,
+1617,
+1499,
+1641
+],
+"capex": [
+null,
+229.5,
+217.9,
+287.4,
+217
+],
+"da": [
+147,
+183.3,
+161,
+159.1,
+208.8
+],
+"div": [
+614.3,
+876.4,
+446.5,
+477.3,
+512.8
+],
+"bb": [
+0,
+0,
+0,
+0,
+40.4
+],
+"cash": [
+2888,
+2575,
+2086,
+1747,
+1947
+],
+"debt": [
+3378,
+3252,
+3052,
+2997,
+2980
+],
+"umsatz": [
+19840,
+26415,
+28985,
+29244,
+30016
+],
+"brutto": [
+null,
+null,
+null,
+null,
+null
+],
+"ebit": [
+null,
+null,
+null,
+null,
+null
+],
+"zins": [
+83.2,
+149.3,
+154.4,
+158.4,
+239.3
+],
+"steuer": [
+319.5,
+296.3,
+381.1,
+512.5,
+727.5
+],
+"jahre": [
+2021,
+2022,
+2023,
+2024,
+2025
+],
+"hinweis": "EUR. Quelle stockanalysis.com. Versicherer: Umsatz = Gesamterloese; brutto und ebit null (S&P-Operating-Income bei Versicherern nicht sinnvoll vergleichbar). ocf = Cashflow lt. S&P inkl. Versicherungsgeschaeft (2021 -486 Mio nach IFRS 4, Bruch zu 2022ff). capex 2021 null (Immaterielle dort als Zufluss ausgewiesen), sonst Sachanlagen plus Immaterielle. cash ohne Kapitalanlagen (45 Mrd). debt = Finanzschulden inkl. Leasing, ohne Versicherungsverbindlichkeiten. zins = Zinsaufwand auf Finanzschulden."
+},
+"AENA.MC": {
+"ocf": [
+280.47,
+1863,
+2220,
+2747,
+2787
+],
+"capex": [
+671.08,
+727.7,
+1382.93,
+823.01,
+1059.27
+],
+"da": [
+771.47,
+765.24,
+784.08,
+798.98,
+741.87
+],
+"div": [
+0,
+0,
+724.25,
+1183,
+1498
+],
+"bb": [
+0,
+0,
+0,
+0,
+0
+],
+"cash": [
+1467,
+1574,
+2363,
+1883.87,
+2453.09
+],
+"debt": [
+9002,
+7830,
+8586,
+7319,
+7557
+],
+"umsatz": [
+2442,
+4197,
+5055,
+5793,
+6305
+],
+"brutto": [
+1824,
+3230,
+4011,
+4642,
+5063
+],
+"ebit": [
+-527.32,
+1284,
+1986,
+2608,
+2931
+],
+"zins": [
+102.75,
+113.03,
+205.05,
+282.41,
+254.13
+],
+"steuer": [
+-217.35,
+263.26,
+520.82,
+583.65,
+673.59
+],
+"jahre": [
+2021,
+2022,
+2023,
+2024,
+2025
+],
+"hinweis": "EUR. Quelle stockanalysis.com. capex = Sachanlagen plus immaterielle Anlagen (2023 mit 838 Mio Immateriellen deutlich erhoeht, Konzessionen/Akquisitionen). cash = liquide Mittel plus kurzfr. Anlagen. debt inkl. Leasing. brutto = Umsatz minus Kosten der Umsatzerloese lt. S&P. 2021 Verlustjahr (Corona), 2021/2022 keine Dividendenzahlung, keine Rueckkaeufe. Aktiensplit 10:1 in 2025 hat keine Wirkung auf Betraege."
+},
+"CLNX.MC": {
+"ocf": [
+1141,
+1829,
+2068,
+2307,
+2286
+],
+"capex": [
+1521,
+2569,
+2194,
+2030,
+1760
+],
+"da": [
+1646,
+2421,
+2519,
+2492,
+2627
+],
+"div": [
+0,
+36.64,
+40.29,
+44.28,
+11.83
+],
+"bb": [
+0,
+286.28,
+199.71,
+0,
+1000
+],
+"cash": [
+3927,
+1038,
+1300,
+1092,
+1501
+],
+"debt": [
+18552,
+20902,
+21546,
+21466,
+21903
+],
+"umsatz": [
+2438,
+3248,
+3804,
+4070,
+4120
+],
+"brutto": [
+2141,
+2885,
+3359,
+3662,
+3652
+],
+"ebit": [
+150.78,
+230.32,
+307.5,
+583.76,
+541.92
+],
+"zins": [
+478.17,
+642.29,
+758.06,
+788.23,
+592.22
+],
+"steuer": [
+-154.12,
+-189.95,
+-120.59,
+-657.78,
+-99.11
+],
+"jahre": [
+2021,
+2022,
+2023,
+2024,
+2025
+],
+"hinweis": "EUR. Quelle stockanalysis.com. capex = Investitionen in Sach- und immaterielle Anlagen (ohne Akquisitionen; Leasingzahlungen 448-658 Mio p.a. nicht enthalten). cash = liquide Mittel plus kurzfr. Wertpapiere. debt inkl. Leasing (Gesamtschulden). brutto = Umsatz minus Kosten der Umsatzerloese lt. S&P. ebit = operatives Ergebnis nach hohen Abschreibungen (nicht Cellnex-Adjusted-EBITDA). Dividende 2021 laut Quelle nicht gezahlt."
+},
+"IAG.MC": {
+"ocf": [
+-141,
+4854,
+4602,
+6372,
+6588
+],
+"capex": [
+744,
+3875,
+3282,
+2816,
+3442
+],
+"da": [
+1749,
+1897,
+1878,
+2132,
+2319
+],
+"div": [
+0,
+0,
+0,
+147,
+470
+],
+"bb": [
+24,
+23,
+77,
+202,
+1243
+],
+"cash": [
+7908,
+9566,
+6806,
+9799,
+8290
+],
+"debt": [
+19610,
+19984,
+16082,
+17345,
+14267
+],
+"umsatz": [
+8455,
+23066,
+29453,
+32100,
+33213
+],
+"brutto": [
+164,
+5363,
+7910,
+11819,
+12789
+],
+"ebit": [
+-2944,
+1392,
+3634,
+4531,
+5099
+],
+"zins": [
+768,
+979,
+1095,
+902,
+818
+],
+"steuer": [
+-574,
+-16,
+401,
+831,
+1163
+],
+"jahre": [
+2021,
+2022,
+2023,
+2024,
+2025
+],
+"hinweis": "EUR. Quelle stockanalysis.com. capex = Investitionen in Sachanlagen/Flugzeuge (ohne Leasing-Tilgungen). cash = liquide Mittel plus kurzfr. Anlagen. debt = Gesamtschulden inkl. Leasingverbindlichkeiten. brutto lt. S&P: Umsatz minus Kosten der Umsatzerloese; Abgrenzung ab 2024 geaendert (2023: 7.910, 2024: 11.819), nicht reihenvergleichbar. ocf 2021 negativ (Corona). Keine Dividende 2021-2023."
+},
+"MRL.MC": {
+"ocf": [
+162.46,
+222.16,
+227.97,
+316.78,
+415.6
+],
+"capex": [
+null,
+null,
+null,
+null,
+null
+],
+"da": [
+1.86,
+1.89,
+2.08,
+4.35,
+5.04
+],
+"div": [
+70.03,
+104.26,
+93.67,
+105.17,
+123.32
+],
+"bb": [
+0.01,
+0.14,
+0,
+0,
+0
+],
+"cash": [
+947.68,
+429.45,
+461.22,
+1553,
+1215
+],
+"debt": [
+6266,
+4249,
+4533,
+4943,
+5072
+],
+"umsatz": [
+417.39,
+463.07,
+504.7,
+508.65,
+567
+],
+"brutto": [
+null,
+null,
+null,
+null,
+null
+],
+"ebit": [
+312.44,
+350.52,
+392.38,
+385.31,
+422.53
+],
+"zins": [
+113.01,
+103.38,
+109.52,
+130.21,
+135.94
+],
+"steuer": [
+7.81,
+6.8,
+8.51,
+12.2,
+27.12
+],
+"jahre": [
+2021,
+2022,
+2023,
+2024,
+2025
+],
+"hinweis": "EUR. Quelle stockanalysis.com. Immobilienfirma: capex null (Immobilienkaeufe 185-680 Mio sind Portfolio-Investitionen, nicht mit Sachanlagen-Capex vergleichbar), brutto null, da (5 Mio) unwesentlich. ebit = Betriebsergebnis vor Neubewertungen. cash = liquide Mittel (2021 plus 81 Mio Wertpapiere). debt = Finanzschulden. Ergebnis enthaelt Neubewertungen und 2021/2022 aufgegebene Bereiche."
 }
 }
 }
