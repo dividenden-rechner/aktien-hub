@@ -17,10 +17,11 @@ Datei anklicken, dann Stift-Symbol: Zeile `draft: true` löschen und speichern, 
 | 29.10.2026 22:42 | Amazon steigert Umsatz im dritten Quartal auf 201,9 Milliarden Dollar | [79738970_2026-10-29/7757_2242-amazon-q3-2026-zahlen.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/79738970_2026-10-29/7757_2242-amazon-q3-2026-zahlen.md) |
 | 29.10.2026 10:12 | Shell erzielt im dritten Quartal 10,8 Milliarden Dollar Gewinn | [79738970_2026-10-29/8987_1012-shell-q3-2026-ergebnisse.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/79738970_2026-10-29/8987_1012-shell-q3-2026-ergebnisse.md) |
 
-### Online (373)
+### Online (374)
 
 | Datum | Titel | Datei |
 |---|---|---|
+| 13.11.2026 12:50 | Richemont verdient ein Drittel mehr, doch die Aktie fällt: Dem Markt fehlt ein Ausblick | [79738886_2026-11-13/8749_1250-richemont-h1-fy27-halbjahreszahlen.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/79738886_2026-11-13/8749_1250-richemont-h1-fy27-halbjahreszahlen.md) |
 | 13.11.2026 01:03 | Applied Materials: Bereinigter Gewinn verdoppelt sich fast im vierten Quartal | [79738886_2026-11-13/9896_0103-applied-materials-q4-2026-zahlen.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/79738886_2026-11-13/9896_0103-applied-materials-q4-2026-zahlen.md) |
 | 12.11.2026 22:30 | Starbucks: Gewinn je Aktie +54 % im Schlussquartal, Umsatz –4 %, Dividende 0,63 USD | [79738887_2026-11-12/6900_2230-starbucks-q4-2026-quartalszahlen.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/79738887_2026-11-12/6900_2230-starbucks-q4-2026-quartalszahlen.md) |
 | 12.11.2026 20:50 | Mercedes friert Investitionen in Deutschland ein und prüft Werksschließungen | [79738887_2026-11-12/7000_2050-mercedes-benz-investitionsstopp-deutsche-werke.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/79738887_2026-11-12/7000_2050-mercedes-benz-investitionsstopp-deutsche-werke.md) |
