@@ -1,6 +1,95 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:dc="http://purl.org/dc/elements/1.1/">
-<channel><title>Dividenden-Rechner Aktien-Hub: News</title><link>https://dividenden-rechner.github.io/aktien-hub/news/</link><description>Dividenden, Kennzahlen und Steuern erklärt</description><language>de-DE</language><lastBuildDate>Fri, 13 Nov 2026 20:57:16 +0000</lastBuildDate><atom:link href="https://dividenden-rechner.github.io/aktien-hub/news/feed.xml" rel="self" type="application/rss+xml"/>
+<channel><title>Dividenden-Rechner Aktien-Hub: News</title><link>https://dividenden-rechner.github.io/aktien-hub/news/</link><description>Dividenden, Kennzahlen und Steuern erklärt</description><language>de-DE</language><lastBuildDate>Fri, 13 Nov 2026 21:13:22 +0000</lastBuildDate><atom:link href="https://dividenden-rechner.github.io/aktien-hub/news/feed.xml" rel="self" type="application/rss+xml"/>
+<item><title>Nvidia ohne Huang: Ein Gründer geht, und der Markt prüft, was von der Firma bleibt</title><link>https://dividenden-rechner.github.io/aktien-hub/news/nvidia-huang-ruecktritt-wochenend-analyse/</link><guid isPermaLink="true">https://dividenden-rechner.github.io/aktien-hub/news/nvidia-huang-ruecktritt-wochenend-analyse/</guid><pubDate>Sat, 14 Nov 2026 06:00:00 +0100</pubDate><category>Analyse</category><dc:creator>Kilian Treß</dc:creator><description>Jensen Huang tritt nach zwei Affären als Nvidia-Chef zurück, Finanzchefin Colette Kress übernimmt. Was belegt ist, was nur behauptet wird, wie der Markt reagiert und was die Zahlen am 17. November klären müssen.</description><enclosure url="https://dividenden-rechner.github.io/aktien-hub/assets/magazin/nvidia-huang-untersuchung-foto.jpg" type="image/jpeg" length="0"/><content:encoded><![CDATA[<div class="admonition kurz">
+<p class="admonition-title">Kurz gesagt</p>
+<p><strong>Der Schritt:</strong> Jensen Huang tritt als Präsident, Chef und Verwaltungsrat zurück, sofort. Colette Kress führt kommissarisch, ein Nachfolger wird gesucht.</p>
+<p><strong>Der Markt:</strong> Die Aktie verlor vorbörslich rund 11 %, in der Woche zuvor schon rund 1 Billion US-Dollar Börsenwert.</p>
+<p><strong>Der Test:</strong> Am 17. November meldet Nvidia Zahlen. Sie zeigen, ob die Nachfrage nach KI-Chips vom Chef abhängt oder vom Markt.</p>
+</div>
+<p>Es gibt Firmen, bei denen ein Chefwechsel eine Randnotiz im Wirtschaftsteil ist. Bei Nvidia ist es eine Zäsur. Am Donnerstagnachmittag meldet der Verwaltungsrat, dass Jensen Huang, 63, als Präsident, Vorstandschef und Mitglied des Verwaltungsrats zurücktritt, mit sofortiger Wirkung. Die Aktie fällt vorbörslich um gut 10 %. Wer auf den Kurs schaut, sieht eine Firma, die in dieser Woche rund 1 Billion Dollar an Börsenwert verloren hat und mit gut 4 Billionen Dollar trotzdem noch der zweitwertvollste Konzern der Welt ist. Wer auf den Text der Mitteilung schaut, findet keinen Grund. Das ist bemerkenswert, und es ist die erste Frage dieses Artikels.</p>
+<h2 id="was-nvidia-mitteilt-und-was-offen-bleibt">Was Nvidia mitteilt und was offen bleibt</h2>
+<p>Die Mitteilung ist knapp. Huang tritt zurück, Colette Kress, Finanzchefin seit 2013, übernimmt kommissarisch das Amt des Vorstandschefs und behält ihr Finanzressort. Harvey C. Jones wird erster Vorsitzender des Verwaltungsrats in der Geschichte der Firma. Jones, 73, saß seit 1993 im Gremium und führte früher den Softwarekonzern Synopsys. Der Verwaltungsrat sucht einen dauerhaften Chef, intern wie extern, einen Zeitplan nennt er nicht. Am Freitag wurde bekannt, dass das Gremium dabei Arm-Chef René Haas angesprochen hat. Haas arbeitete sieben Jahre bei Nvidia, bevor er 2013 zu Arm wechselte, und gilt als Vertrauter Huangs. Ob er das Amt angeboten bekommt oder annehmen würde, ist offen, Arm und Nvidia äußerten sich nicht. Die Nvidia-Aktie schloss am Freitag knapp 3 % tiefer bei 161,48 Dollar, in einem insgesamt schwachen Handel mit Chipwerten.</p>
+<p>Ob Huang freiwillig geht oder gegangen wird, lässt die Mitteilung offen. Bloomberg beschrieb den Schritt als Absetzung, das Wall Street Journal hatte zuvor berichtet, der Verwaltungsrat habe am Mittwoch über seine Ablösung beraten. Nach Handelsblatt-Informationen gab es keine geregelte Nachfolge, der Verwaltungsrat soll bereits mit einer externen Firma nach Kandidaten gesucht haben. Elon Musk bot Huang auf X eine neue Stelle an, es wäre ihm eine Ehre. Die beiden kennen sich seit mindestens zehn Jahren und begleiteten Präsident Trump im Frühjahr nach China. Tesla bezieht Nvidia-Chips, um KI-Modelle für autonomes Fahren zu trainieren.</p>
+<h2 id="wie-es-dazu-kam">Wie es dazu kam</h2>
+<p>Der Rücktritt ist das Ende einer Kette, die vor knapp zwei Wochen sichtbar wurde. Die Eckdaten, soweit sie in den Berichten stehen:</p>
+<div class="tablewrap"><table>
+<thead>
+<tr>
+<th>Datum</th>
+<th>Ereignis</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2023</td>
+<td>Megaspeed wird als Ableger der chinesischen Firma 7Road gegründet und baut Rechenzentren in Südostasien mit Nvidia-Chips</td>
+</tr>
+<tr>
+<td>Ende 2024</td>
+<td>Das US-Handelsministerium ermittelt wegen möglicher Umleitung von Chips nach China, später übernimmt das Justizministerium</td>
+</tr>
+<tr>
+<td>Mai 2025</td>
+<td>Reuters zeigt ein Video aus Taiwan, auf dem Huang mit einer Megaspeed-Managerin zu sehen ist</td>
+</tr>
+<tr>
+<td>Frühjahr 2026</td>
+<td>Ein Memo aus dem Umfeld von Außenminister Rubio warnt vor der Frau</td>
+</tr>
+<tr>
+<td>Ende Oktober 2026</td>
+<td>Berichte über den Verdacht, sie arbeite für Chinas Geheimdienst</td>
+</tr>
+<tr>
+<td>8. November</td>
+<td>Huang räumt in einem Brief an die Belegschaft eine Affäre ein, der Verwaltungsrat kündigt eine unabhängige Untersuchung an</td>
+</tr>
+<tr>
+<td>9. November</td>
+<td>Die Aktie fällt zum Wochenstart um 4,3 %, eine Sammelklage gegen Nvidia und Huang wird eingereicht</td>
+</tr>
+<tr>
+<td>10. November</td>
+<td>Die unabhängigen Direktoren beauftragen die Kanzlei Wachtell, Lipton, Rosen &amp; Katz</td>
+</tr>
+<tr>
+<td>11. November</td>
+<td>New York Times und WSJ berichten über eine zweite Beziehung, zu einer Managerin, die ihm direkt untersteht</td>
+</tr>
+<tr>
+<td>12. November</td>
+<td>Verwaltungsrat berät, Huang tritt zurück</td>
+</tr>
+</tbody>
+</table></div>
+<p>Zwei Dinge gehören auseinandergehalten. Die erste Affäre hat Huang selbst eingeräumt, und die zweite berichten die Zeitungen unter Berufung auf Informanten, Nvidia lehnte eine Stellungnahme ab. Dass die Megaspeed-Managerin für Chinas Dienste arbeitete, ist eine Behauptung der US-Regierung, China weist sie zurück. Dass daraus ein Schaden für Nvidia entstanden ist, hat bisher niemand belegt. Der Verwaltungsrat hatte noch am vergangenen Sonntag erklärt, er sehe keinen Grund zur Annahme, dass nationale Sicherheit oder Geschäftsgeheimnisse gelitten haben. Die Mitteilung zum Rücktritt erwähnt die Untersuchung nicht. Ob sie weiterläuft und wann sie endet, ist offen.</p>
+<p>Der zweite Bericht verschiebt allerdings die Gewichte. Eine Beziehung zu einer direkt unterstellten Führungskraft ist ein Governance-Problem, unabhängig von jeder Spionagefrage. Der Verhaltenskodex von Nvidia verlangt, Interessenkonflikte auch durch persönliche Beziehungen zu vermeiden. Für Verwaltungsräte ist das kein Randthema, sie müssen es sanktionieren, sobald es bekannt ist.</p>
+<h2 id="die-alteste-falle-der-welt">Die älteste Falle der Welt</h2>
+<p>Für den Verdacht gegen die erste Frau gibt es eine lange Vorgeschichte. Der SPIEGEL beginnt seinen Text zum Fall mit Mordechai Vanunu. Der israelische Atomtechniker hatte der Sunday Times 1986 Details aus dem geheimen Atomzentrum Dimona verkauft, in London lernte er eine freundliche Amerikanerin kennen, die sich Cindy nannte. Sie reiste mit ihm nach Rom. In Wahrheit hieß sie Cheryl Bentov und arbeitete für den Mossad, Vanunu wurde betäubt, nach Israel gebracht und saß 18 Jahre in Haft.</p>
+<p>Das Muster ist belegt und alt. Der DDR-Auslandsgeheimdienst unter Markus Wolf schickte „Romeos" in die Bundesrepublik, die einsame Sekretärinnen in Ämtern gewannen, rund 40 Fälle gelten als dokumentiert. Chinas Strategielehre kennt für solche Annäherungen ein eigenes Wort, „meiren ji", die List der schönen Person. Der britische Auslandsgeheimdienst MI6 und das FBI warnen Unternehmen und Geschäftsreisende ausdrücklich davor. Der Unterschied zu 1986 liegt in der Beute. Heute geht es um Technologie, um Lieferketten und um Einfluss auf Entscheidungen, und der Mann an der Spitze der KI-Industrie ist das attraktivste Ziel, das es dafür gibt. Ob Huang in eine solche Falle gelaufen ist, steht nicht fest. Dass seine Verwundbarkeit für Investoren ein Risiko war, zeigt dieser Donnerstag.</p>
+<h2 id="was-der-markt-gerade-bewertet">Was der Markt gerade bewertet</h2>
+<p>Die Aktie hatte am 6. Oktober ein Rekordhoch von 239,24 US-Dollar erreicht. Am 9. November schloss sie bei 178,67 Dollar (−4,3 %), am Mittwoch bei 173,73 Dollar. Nach der Meldung über die Beratungen des Verwaltungsrats rutschte sie vorbörslich auf rund 160 Dollar, nach dem Rücktritt waren es etwa 11 % unter dem Vortagesschluss. Das Tief der laufenden Bewegung lag bei 156,20 Dollar, dem niedrigsten Stand seit Juli 2025. In der Grafik von Reuters steht Nvidia damit seit Jahresbeginn bei −14,4 %, der S&amp;P 500 bei +13,1 %.</p>
+<p>Die Analysten reagieren uneinheitlich. Bernstein stufte laut Berichten auf Market-Perform herab und senkte das Kursziel von 400 auf 200 Dollar, Oppenheimer senkte ebenfalls, Baird ging auf Neutral. Raymond James behielt die Einstufung „Strong Buy". Auch die Branche zahlt mit. Vor der Meldung fielen Intel, Marvell und Micron um 2,7 bis 3,5 %, CoreWeave um etwa 7 %, während AMD (+2,3 %) und Broadcom (+1,4 %) zulegten. Der Markt unterscheidet also, wer vom Fall Nvidia abhängt und wer von ihm profitieren könnte.</p>
+<h2 id="was-fur-das-unternehmen-spricht">Was für das Unternehmen spricht</h2>
+<p>Gegen den Pessimismus spricht das Geschäft. Im zweiten Geschäftsquartal meldete Nvidia 96,2 Milliarden Dollar Umsatz, 106 % mehr als im Vorjahr, davon 89,0 Milliarden aus dem Rechenzentrumsgeschäft. Für das dritte Quartal stellte der Konzern rund 108 Milliarden Dollar in Aussicht, bei einer Bruttomarge von etwa 74 %, und das ohne Rechenzentrums-Umsätze aus China. Genau der Markt, in dem die Spionagevorwürfe spielen, steckt in der Prognose also kaum drin.</p>
+<p>Dazu kommt die Besetzung. Kress kennt die Zahlen wie kaum jemand, sie war fast 25 Jahre in Finanzfunktionen tätig, unter anderem bei Cisco und Microsoft, und führt Nvidia seit mehr als einem Jahrzehnt als Finanzchefin durch die Wachstumsjahre. Der Verwaltungsrat besteht nach dem Abgang aus unabhängigen Mitgliedern, und mit Jones bekommt die Firma erstmals eine eigene Aufsichtsspitze. Bei einem Gründer, der Vorstandschef, Präsident und größter Einzelaktionär mit rund 3,6 % der Anteile war, ist das aus Sicht guter Unternehmensführung ein Fortschritt.</p>
+<h2 id="was-dagegen-spricht">Was dagegen spricht</h2>
+<p>Gegen die Beruhigung spricht, dass Huang für Nvidia mehr war als ein Chef. Er hat die Firma 33 Jahre geführt, er hat den Zugang zu Kunden, Regierungen und Lieferanten aufgebaut, und er war nach Berichten mindestens neunmal im Weißen Haus. Dieser Zugang entscheidet über Exportgenehmigungen für Chips nach China, über Regeln, die Nvidia viele Milliarden kosten können. Ob eine kommissarische Chefin, die zugleich Finanzchefin bleibt, diese Rolle ausfüllt, ist ungewiss. Eine Doppelbelastung in der Phase, in der die Untersuchung läuft und ein Nachfolger gesucht wird, ist ein operatives Risiko.</p>
+<p>Hinzu kommt die Unsicherheit über die Politik. Trump hatte Huang öffentlich verteidigt und ihn zum Apec-Gipfel eingeladen. Mit dem Rücktritt verliert dieser Schutz seine Person, die Frage nach dem Umgang von Regierung und Kongress mit Nvidia nach den Zwischenwahlen bleibt bestehen. Eine Anhörung im Kongress war für Mitte November angesetzt, ob sie nach dem Rücktritt stattfindet, ist offen.</p>
+<h2 id="was-jetzt-zu-beobachten-ist">Was jetzt zu beobachten ist</h2>
+<p>Am 17. November meldet Nvidia Zahlen für das dritte Geschäftsquartal. Kress will sich nach Angaben aus der Branche schon vor der Telefonkonferenz schriftlich äußern. Es sind die ersten Zahlen ohne Huang an der Spitze, und sie müssen drei Fragen beantworten. Erstens, ob der Umsatz wie angekündigt bei rund 108 Milliarden Dollar liegt und die Marge hält. Zweitens, ob der Ausblick für das vierte Quartal die Nachfrage der großen Cloud-Anbieter bestätigt. Drittens, was die Firma zu Kunden, Lieferketten und China sagt.</p>
+<p>Danach zählen drei Dinge: wie schnell der Verwaltungsrat einen dauerhaften Chef findet und ob er von innen oder von außen kommt, was die Untersuchung der Kanzlei ergibt und ob sie veröffentlicht wird, und ob die Regierung die Exportregeln für Chips verändert. Für Anleger gilt in solchen Lagen eine einfache Beobachtung: Der Markt verzeiht viel, solange das Geschäft läuft. Liefert Nvidia am Dienstag Zahlen oberhalb der Prognose und einen starken Ausblick, wird aus dem Rücktritt eine Geschichte über Führungswechsel in einem Wachstumskonzern. Enttäuscht der Konzern, wird er zum Anlass, alles in Frage zu stellen, was der Markt über die Firma bisher geglaubt hat.</p>
+<details class="quellen"><summary>Quellen</summary><ul>
+<li>Financial Times über Reuters und Stockanalysis, Nvidia spricht Arm-Chef René Haas als Nachfolger an (13.11.2026)</li>
+<li>Nvidia, Mitteilung „NVIDIA Announces CEO Transition" (12.11.2026)</li>
+<li>Reuters, Live-Bericht zum Rücktritt von Jensen Huang (12.11.2026)</li>
+<li>Handelsblatt, „Nvidia-Chef Huang tritt nach Spionageaffäre zurück" und „Nvidia verliert binnen einer Woche rund eine Billion Dollar an Börsenwert" (12.11.2026)</li>
+<li>Wall Street Journal und New York Times, Berichte zur Huang-Affäre (Oktober und November 2026)</li>
+<li>SPIEGEL, Beitrag zu den Vorwürfen gegen Jensen Huang (10.11.2026)</li>
+<li>Nvidia, Pressemitteilung zum 2. Quartal des Geschäftsjahres 2027 (26.08.2026)</li>
+</ul></details>
+<p><em>Dieser Beitrag fasst Informationen aus den genannten Quellen in eigenen Worten zusammen. Die Vorwürfe gegen Jensen Huang sind teilweise nicht bewiesen. Keine Anlageberatung.</em></p>]]></content:encoded></item>
 <item><title>Novo Nordisk: EU-Zulassung für Frehemgo bei Hämophilie A</title><link>https://dividenden-rechner.github.io/aktien-hub/news/novo-nordisk-frehemgo-eu-zulassung-kurz/</link><guid isPermaLink="true">https://dividenden-rechner.github.io/aktien-hub/news/novo-nordisk-frehemgo-eu-zulassung-kurz/</guid><pubDate>Fri, 13 Nov 2026 19:57:00 +0100</pubDate><category>Management</category><dc:creator>Aus der Redaktion</dc:creator><description>Die EU-Kommission hat Frehemgo (Denecimig) für Hämophilie A zugelassen, mit monatlicher, zweiwöchentlicher oder wöchentlicher Gabe. Der Marktstart ist für die ersten europäischen Länder im kommenden Jahr geplant.</description><enclosure url="https://dividenden-rechner.github.io/aktien-hub/assets/magazin/novo-nordisk-frehemgo-eu-zulassung-kurz.png" type="image/png" length="0"/><content:encoded><![CDATA[<p>Die Europäische Kommission hat Frehemgo von Novo Nordisk zugelassen. Der Wirkstoff Denecimig soll Erwachsenen und Kindern mit angeborener Hämophilie A vorbeugend helfen, Blutungen zu verhindern oder seltener zu machen. Die Zulassung gilt mit und ohne Hemmkörper. Grundlage ist eine positive Empfehlung des EU-Arzneimittelausschusses CHMP vom September 2026.</p>
 <p>Frehemgo ist ein Antikörper, der unter die Haut gespritzt wird und die Funktion des fehlenden Gerinnungsfaktors VIII nachahmt. Patienten und Ärzte können zwischen einer monatlichen, einer zweiwöchentlichen und einer wöchentlichen Gabe wählen. Novo nennt das Präparat die erste Option dieser Art mit drei Dosierungsintervallen in einem einzigen Fertigpen. Den Marktstart in den ersten europäischen Ländern plant das Unternehmen für das kommende Jahr.</p>
 <p>Im Geschäftsjahr 2025 stieg der Umsatz um 6,4 Prozent, der Nettogewinn aber nur um 1,4 Prozent. Die Gewinnentwicklung ist damit deutlich schwächer als der Umsatz. Ob Frehemgo daran etwas ändert, lässt sich erst an späteren Verkaufszahlen ablesen. Preise und erwartete Umsätze nennt Novo noch nicht.</p>
@@ -1375,7 +1464,4 @@
 <li>Börse Express, Kursdaten Allianz-Aktie (12.11.2026)</li>
 </ul></details>
 <p><em>Dieser Beitrag fasst die Berichterstattung der genannten Quellen in eigenen Worten zusammen. Alle Angaben ohne Gewähr. Keine Anlageberatung.</em></p>]]></content:encoded></item>
-<item><title>Nvidia: Neuer Bericht über eine Beziehung von Jensen Huang zu einer Managerin</title><link>https://dividenden-rechner.github.io/aktien-hub/news/nvidia-huang-bericht-beziehung-managerin/</link><guid isPermaLink="true">https://dividenden-rechner.github.io/aktien-hub/news/nvidia-huang-bericht-beziehung-managerin/</guid><pubDate>Wed, 11 Nov 2026 22:55:00 +0100</pubDate><category>Management</category><dc:creator>Aus der Redaktion</dc:creator><description>Die New York Times berichtet über eine Beziehung des Nvidia-Chefs zu einer Managerin, die an ihn berichtet. Huang steht bereits wegen einer Affäre unter Untersuchung.</description><enclosure url="https://dividenden-rechner.github.io/aktien-hub/assets/magazin/nvidia-huang-bericht-beziehung-managerin.png" type="image/png" length="0"/><content:encoded><![CDATA[<p>Jensen Huang, Gründer und Chef von Nvidia, soll eine außereheliche Beziehung zu einer Managerin gehabt haben, die direkt an ihn berichtet. Das meldet die New York Times unter Berufung auf fünf Personen, die bei Nvidia gearbeitet haben. Es handelt sich um Kimberly Powell, die bei Nvidia das Geschäft mit dem Gesundheitswesen leitet. Nach dem Verhaltenskodex des Konzerns sollen Mitarbeiter Interessenkonflikte vermeiden, ausdrücklich auch durch persönliche Beziehungen.</p>
-<p>Zwei der Personen zufolge wurden Huang und Powell im März während der Entwicklerkonferenz GTC in einem Hotel in San José gefilmt. Huangs Sicherheitsleute sollen der Person mit dem Video eine Verschwiegenheitserklärung angeboten haben. Auf Nachfrage der Zeitung sagte Huang am Telefon, man solle nicht direkt mit ihm sprechen, und legte auf. Nvidia gab keine Stellungnahme ab.</p>
-<p>Für Anleger kommt der Bericht zu einem heiklen Zeitpunkt. Der Verwaltungsrat lässt bereits durch die Kanzlei Wachtell, Lipton, Rosen &amp; Katz eine Affäre Huangs mit einer chinesischen Managerin untersuchen, die US-Geheimdienste für eine Spionin halten. China weist die Vorwürfe zurück. Die Vorsitzenden dreier Ausschüsse im Repräsentantenhaus haben Huang zu einer nicht öffentlichen Anhörung gebeten. Die Hintergründe stehen in unserer <a href="https://dividenden-rechner.github.io/aktien-hub/news/nvidia-untersuchung-huang-geheimdienst/">Meldung vom Montag</a>.</p>]]></content:encoded></item>
 </channel></rss>
