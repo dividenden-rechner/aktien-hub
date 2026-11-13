@@ -48,59 +48,28 @@ Modell-Problem -> gemini-3.8-flash: Fehler 503: {
   }
 }
 
-Modell-Problem -> gemini-3.8-flash: The read operation timed out
-Modell-Problem -> gemini-3.7-flash: Fehler 429: {
-  "error": {
-    "code": 429,
-    "message": "You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://aistudio.google.com/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceede
-Tageskontingent dieses Modells aufgebraucht, naechstes Modell.
-Modell: gemini-3.6-flash
-Auswahl durch das Modell: -1
-Kein passendes Foto gefunden, altes bleibt.
-Logo-Angaben gesetzt, fetch_logos holt das Logo neu.
-Foto-Kandidaten: 28 (Commons 12, Unsplash 16)
-  0: File:Gene-editing Techniques in Plant Cells.jpg | Different gene editing methods used in plant cells
-  1: File:20251019 Replica DNA double helix model Berlin 01.jpg | Adenine of the Replica of the DNA double helix model by Watson and Crick in the 
-  2: File:DNA Double Helix (20468181866).jpg | Credit: National Human Genome Research Institute, National Institutes of Health.
-  3: File:DNA Double Helix (4932403853).jpg | DNA Double Helix
-  4: File:DNA Helix CPK.jpg | Part of a dna double helix showing the minor groove (Space-filling model)
-  5: File:Barbara McClintock (1902-1992) shown in her laboratory in 1947.jpg | Barbara McClintock (1902-1992), Department of Genetics, Carnegie Institution at 
-  6: File:Genetics Laboratory UMAR Puerto Escondido.jpg | This is a Droplet Digital PCR System, QX200, BIORAT used for research at the Lab
-  7: File:CRISPR-Cas9 Editing of the Genome (26453307604).jpg | CRISPR-Cas9 is a customizable tool that lets scientists cut and insert small pie
-  8: File:CRISPR Cas9 (41124064215).jpg | CRISPR-Cas9 is a customizable tool that lets scientists cut and insert small pie
-  9: File:Crispr.jpg | CRISPR research
-  10: File:Schematic of CRISPR-Cas9 off-target sites with DNA bulge and RNA bulge.jpg | figure explaining DNA and RNA bulge in relations to CRISPR-cas9 off-target effec
-  11: File:Viral mediated delivery of genes to neurons 2.jpg | Figure 2.Lentivirus (upper panel) – Part of the retroviridae family (viral sizes
-  12: Unsplash 8o_LkMpo8ug | a close up of a blue and purple structure
-  13: Unsplash -qycBqByWIY | A white and blue DNA double helix structure against a dark background
-  14: Unsplash Iy7QyzOs1bo | A glowing white DNA double helix structure floating against a dark background
-  15: Unsplash -bJj_81Zois | 3D Rendering DNA With Particles and Blurry Background.
-  16: Unsplash pRt3JVYlJho | a double strand of blue and white spirals
-  17: Unsplash uD98M9OhNmc | 3D rendering capturing the double helix structure of DNA against a blue backdrop
-  18: Unsplash Mm1VIPqd0OA | 3D visualization
-  19: Unsplash 2GEr4fLZt8A | 3D rendering capturing the double helix structure of DNA against a blue backdrop
-  20: Unsplash XknuBmnjbKg | Vaccine. Hands of a scientist, under a sterile hood, preparing the carcinoembryo
-  21: Unsplash oCLuFi9GYNA | DNA Genotyping and Sequencing. A technician works among a fleet of desktop genom
-  22: Unsplash LxPrHCm8-TI | DNA Genotyping and Sequencing. A technician validates genetic variants identifie
-  23: Unsplash rHfsPolwIgk | DNA Genotyping and Sequencing. A technician observing cells under a microscope a
-  24: Unsplash v7ibB19EUbQ | Chanelle Case Borden, Ph.D., a postdoctoral fellow in the National Cancer Instit
-  25: Unsplash GlZv6YgCUyM | DNA Genotyping and Sequencing. A technician works among a fleet of desktop genom
-  26: Unsplash Vb0GY3PWSSM | A female scientist in a laboratory looks through a microscope.
-  27: Unsplash fd0b-Bl4cFc | DNA Genotyping and Sequencing. Vials containing DNA samples from studies of the 
-Verfuegbare Flash-Modelle: gemini-3.8-flash, gemini-3.7-flash, gemini-3.6-flash, gemini-3.5-flash, gemini-3.5-flash-lite, gemini-3.1-flash-lite, gemini-3.1-flash-lite-preview, gemini-3-flash-preview, gemini-2.5-flash, gemini-2.5-flash-lite, gemini-flash-latest, gemini-omni-1.1-flash, gemini-omni-1.2-flash, gemini-flash-lite-latest, gemini-omni-flash-preview
 Modell-Problem -> gemini-3.8-flash: Fehler 429: {
   "error": {
     "code": 429,
     "message": "You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://aistudio.google.com/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceede
 Tageskontingent dieses Modells aufgebraucht, naechstes Modell.
+Modell-Problem -> gemini-3.7-flash: Fehler 503: {
+  "error": {
+    "code": 503,
+    "message": "This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.",
+    "status": "UNAVAILABLE"
+  }
+}
+
 Modell-Problem -> gemini-3.7-flash: Fehler 429: {
   "error": {
     "code": 429,
     "message": "You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://aistudio.google.com/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceede
 Tageskontingent dieses Modells aufgebraucht, naechstes Modell.
 Modell: gemini-3.6-flash
-Auswahl durch das Modell: 7
-Neues Foto: File:CRISPR-Cas9 Editing of the Genome (26453307604).jpg -> assets/magazin/crispr-therapeutics-q3-2026-casgevy-verlust-foto.jpg
+Auswahl durch das Modell: 47
+Neues Foto: Unsplash wdBqEHzo39g -> https://images.unsplash.com/photo-1604313890727-5542ff314405?ixid=M3wxMTE3OTgzfDB8MXxzZWFyY2h8Nnx8cGhhcm1hJTIwbGFiJTIwc2NpZW50aXN0fGVufDF8MHx8fDE3OTQ0ODcyODl8MA&ixlib=rb-4.1.0&w=1600&h=900&fit=crop&crop=entropy&q=80&fm=jpg
+Bild vorhanden (assets/magazin/crispr-therapeutics-q3-2026-casgevy-verlust-foto.jpg), keine neue Suche. Mit --force erzwingen.
 Bild vorhanden (assets/magazin/palantir-q3-2026-zahlen-prognose-foto.jpg), keine neue Suche. Mit --force erzwingen.
 Bild vorhanden (assets/magazin/marathon-petroleum-q3-2026-quartalszahlen-foto.jpg), keine neue Suche. Mit --force erzwingen.
 Logo-Angaben gesetzt, fetch_logos holt das Logo neu.
@@ -136,40 +105,19 @@ Foto-Kandidaten: 59 (Commons 19, Unsplash 40)
   28: Unsplash M5tzZtFCOfs | cable network
   29: Unsplash 2JJ3wBHu4_0 | a rack of servers in a server room
 Verfuegbare Flash-Modelle: gemini-3.8-flash, gemini-3.7-flash, gemini-3.6-flash, gemini-3.5-flash, gemini-3.5-flash-lite, gemini-3.1-flash-lite, gemini-3.1-flash-lite-preview, gemini-3-flash-preview, gemini-2.5-flash, gemini-2.5-flash-lite, gemini-flash-latest, gemini-omni-1.1-flash, gemini-omni-1.2-flash, gemini-flash-lite-latest, gemini-omni-flash-preview
-Modell-Problem -> gemini-3.8-flash: Fehler 503: {
-  "error": {
-    "code": 503,
-    "message": "The service is currently unavailable.",
-    "status": "UNAVAILABLE"
-  }
-}
-
-Modell-Problem -> gemini-3.8-flash: Fehler 429: {
-  "error": {
-    "code": 429,
-    "message": "You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://aistudio.google.com/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceede
-Tageskontingent dieses Modells aufgebraucht, naechstes Modell.
+Modell-Problem -> gemini-3.8-flash: The read operation timed out
 Modell-Problem -> gemini-3.7-flash: Fehler 429: {
   "error": {
     "code": 429,
     "message": "You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://aistudio.google.com/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceede
 Tageskontingent dieses Modells aufgebraucht, naechstes Modell.
-Modell-Problem -> gemini-3.6-flash: Fehler 429: {
-  "error": {
-    "code": 429,
-    "message": "You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://aistudio.google.com/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceede
-Tageskontingent dieses Modells aufgebraucht, naechstes Modell.
-Modell-Problem -> gemini-3.5-flash: Fehler 429: {
-  "error": {
-    "code": 429,
-    "message": "You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://aistudio.google.com/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceede
-Tageskontingent dieses Modells aufgebraucht, naechstes Modell.
-Modell: gemini-3.5-flash-lite
+Modell: gemini-3.6-flash
 Auswahl durch das Modell: 22
-Neues Foto: Unsplash 2bJfnIwQvpk -> https://images.unsplash.com/photo-1753097617151-b8994eb0bb3e?ixid=M3wxMTE3OTgzfDB8MXxzZWFyY2h8NHx8QU1EJTIwSW5zdGluY3QlMjBhY2NlbGVyYXRvcnxlbnwxfDB8fHwxNzk0NjA0OTU1fDA&ixlib=rb-4.1.0&w=1600&h=900&fit=crop&crop=entropy&q=80&fm=jpg
+Neues Foto: Unsplash 2bJfnIwQvpk -> https://images.unsplash.com/photo-1753097617151-b8994eb0bb3e?ixid=M3wxMTE3OTgzfDB8MXxzZWFyY2h8NHx8QU1EJTIwSW5zdGluY3QlMjBhY2NlbGVyYXRvcnxlbnwxfDB8fHwxNzk0NjA2NDAxfDA&ixlib=rb-4.1.0&w=1600&h=900&fit=crop&crop=entropy&q=80&fm=jpg
 Bild vorhanden (assets/magazin/fresenius-q3-2026-quartalszahlen-foto.jpg), keine neue Suche. Mit --force erzwingen.
 Logo-Angaben gesetzt, fetch_logos holt das Logo neu.
-Foto-Kandidaten: 25 (Commons 3, Unsplash 22)
+Unsplash nicht erreichbar: HTTP Error 403: Forbidden
+Foto-Kandidaten: 11 (Commons 3, Unsplash 8)
   0: File:COVIran Barekat vaccine production 03.jpg | Production of COVIran Barekat vaccine, an Iranian COVID-19 vaccine, in a newly c
   1: File:Novo Nordisk, Hillerød, 2024.jpg | Novo Nordisk, Hillerød, 2024
   2: File:Novo Nordisk, byggeri i Hillerød 2024.jpg | Byggeri ved Novo Nordisk i Hillerød
@@ -181,20 +129,6 @@ Foto-Kandidaten: 25 (Commons 3, Unsplash 22)
   8: Unsplash 1SEbUPjlgrg | The surgeon/ physician signs my operative knee before knee replacement surgery a
   9: Unsplash Nv7rzFJm43Y | Blue ink pen tip against a blurred purple background
   10: Unsplash MlTXrdhYOdk | a close-up of a syringe
-  11: Unsplash NiXMv9iFN1c | Auto-Injector Pen for the treatment of Diabetes
-  12: Unsplash aLCcungJbrc | Auto-Injector Pen for the treatment of Diabetes
-  13: Unsplash S5y5jdRCCsk | Auto-Injector Pen for the treatment of Diabetes
-  14: Unsplash CQT9TjSVMPg | white branded gyro pen
-  15: Unsplash vEbgdrArfq8 | ZIMHI Naloxone
-  16: Unsplash pnRJ4RXgabw | McKesson 27g 1/2" 1cc syringe, individually wrapped
-  17: Unsplash WNX6uk-1LV4 | GLSUN is a optical solution company, offer its customers low-cost, reliable opti
-  18: Unsplash xD5SWy7hMbw | Liquid washing equipment
-  19: Unsplash PT70CT6mATQ | Chocolate Factory
-  20: Unsplash KR9j7uqFhnI | Production line for packaging cut greens in an urban farm
-  21: Unsplash dFlMV5kIMnA | Venus Pharma is a well-known name in the pharmaceutical industry, recognized for
-  22: Unsplash A5hfHOIPdTw | GLSUN is a optical solution company, offer its customers low-cost, reliable opti
-  23: Unsplash GiuvVfcNFzY | Bottles being filled on an automated production line
-  24: Unsplash lzxe6x_rZG8 | A worker operates machinery in a cleanroom
 Verfuegbare Flash-Modelle: gemini-3.8-flash, gemini-3.7-flash, gemini-3.6-flash, gemini-3.5-flash, gemini-3.5-flash-lite, gemini-3.1-flash-lite, gemini-3.1-flash-lite-preview, gemini-3-flash-preview, gemini-2.5-flash, gemini-2.5-flash-lite, gemini-flash-latest, gemini-omni-1.1-flash, gemini-omni-1.2-flash, gemini-flash-lite-latest, gemini-omni-flash-preview
 Modell-Problem -> gemini-3.8-flash: Fehler 429: {
   "error": {
@@ -208,31 +142,17 @@ Modell-Problem -> gemini-3.7-flash: Fehler 429: {
 Tageskontingent dieses Modells aufgebraucht, naechstes Modell.
 Modell: gemini-3.6-flash
 Auswahl durch das Modell: 3
-Neues Foto: Unsplash J4HwEwZtIs8 -> https://images.unsplash.com/photo-1612851300081-30cac0077b3b?ixid=M3wxMTE3OTgzfDB8MXxzZWFyY2h8MXx8aW5qZWN0aW9uJTIwcGVuJTIwY2xvc2UlMjB1cHxlbnwxfDB8fHwxNzk0NDMzMTk5fDA&ixlib=rb-4.1.0&w=1600&h=900&fit=crop&crop=entropy&q=80&fm=jpg
+Unsplash-Downloadmeldung fehlgeschlagen: HTTP Error 403: Forbidden
+Neues Foto: Unsplash J4HwEwZtIs8 -> https://images.unsplash.com/photo-1612851300081-30cac0077b3b?ixid=M3wxMTE3OTgzfDB8MXxzZWFyY2h8MXx8aW5qZWN0aW9uJTIwcGVuJTIwY2xvc2UlMjB1cHxlbnwxfDB8fHwxNzk0NjA2NjY2fDA&ixlib=rb-4.1.0&w=1600&h=900&fit=crop&crop=entropy&q=80&fm=jpg
 Logo-Angaben gesetzt, fetch_logos holt das Logo neu.
-Foto-Kandidaten: 22 (Commons 6, Unsplash 16)
+Unsplash nicht erreichbar: HTTP Error 403: Forbidden
+Foto-Kandidaten: 6 (Commons 6, Unsplash 0)
   0: File:Antikalk 01.jpg | Anticalc/Decalcifier packaging from Germany, ingredients highlighted
   1: File:Cleaning a VLT mirror (wallpaper).jpg | The 8.2m diameter main mirror of Antu, the first Unit Telescope of ESO's Very La
   2: File:Gebruiksartikelen DSCF5070.jpg | Zicht op diverse gebruiksartikelen, een deel van het interieur, van het Museum d
   3: File:Kao products.JPG | A few Kao household cleaning products avaiable in Hong Kong.
   4: File:Kleine cilindrische koker van reinigingstabletten voor kunstgebit, opschrift “Ultradent” in wit en blauw, objectnr 79816.JPG | Objectgegevens Titel: Kleine cilindrische koker van reinigingstabletten voor kun
   5: File:Rechthoekig pak zeep- en wasmiddelmonsters, veelkleurig, objectnr 76619.JPG | Objectgegevens Titel: Rechthoekig pak zeep- en wasmiddelmonsters, veelkleurig Be
-  6: Unsplash __ZMnefoI3k | person holding yellow plastic spray bottle
-  7: Unsplash XxAy813D66I | white plastic bottles on white plastic container
-  8: Unsplash xp-ND7NjWaA | Cleaning, sanitizing, and disinfecting supplies
-  9: Unsplash DJcVOQUZxF0 | Woman gathering cleaning supplies
-  10: Unsplash xQdp-KbIG3s | KINN Living eco-friendly refillable cleaning products. Photographed by Ollie Gro
-  11: Unsplash BVrJBcmn0EU | a yellow wall with a blue and white towel from it
-  12: Unsplash OxdnFg-I3Lc | white plastic pump bottle on white table
-  13: Unsplash SaVqlZczQXs | At GoGoNano, we understand the importance of maintaining a clean and healthy liv
-  14: Unsplash fT2rW9PkM0A | Toothbrush, toothpaste, and shampoo on bathroom counter
-  15: Unsplash lile4HrTcvQ | Watsons is an international health, beauty, and personal care chain store.
-  16: Unsplash PL1WRIJOQuQ | Shelves stocked with rows of hair care products
-  17: Unsplash fbI6cQi45eQ | A traditional Thai retail shop specializing in local herbal remedies and medicin
-  18: Unsplash n_EPVz5vVNs | A traditional Thai retail shop specializing in local herbal remedies and medicin
-  19: Unsplash B-xOubb2A7I | Rows of colorful tiles arranged by shade on a shelf
-  20: Unsplash qJ7-UhYBTsY | The Quiet Interval Between Things . . .
-  21: Unsplash 0ktm9oSGpFs | People in a modern store with display shelves
 Verfuegbare Flash-Modelle: gemini-3.8-flash, gemini-3.7-flash, gemini-3.6-flash, gemini-3.5-flash, gemini-3.5-flash-lite, gemini-3.1-flash-lite, gemini-3.1-flash-lite-preview, gemini-3-flash-preview, gemini-2.5-flash, gemini-2.5-flash-lite, gemini-flash-latest, gemini-omni-1.1-flash, gemini-omni-1.2-flash, gemini-flash-lite-latest, gemini-omni-flash-preview
 Modell-Problem -> gemini-3.8-flash: Fehler 429: {
   "error": {
@@ -249,128 +169,13 @@ Modell-Problem -> gemini-3.6-flash: Fehler 429: {
     "code": 429,
     "message": "You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://aistudio.google.com/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceede
 Tageskontingent dieses Modells aufgebraucht, naechstes Modell.
-Modell-Problem -> gemini-3.5-flash: Fehler 429: {
-  "error": {
-    "code": 429,
-    "message": "You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://aistudio.google.com/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceede
-Tageskontingent dieses Modells aufgebraucht, naechstes Modell.
-Modell: gemini-3.5-flash-lite
-Auswahl durch das Modell: 16
-Neues Foto: Unsplash PL1WRIJOQuQ -> https://images.unsplash.com/photo-1776105609708-3d8908ab4dc2?ixid=M3wxMTE3OTgzfDB8MXxzZWFyY2h8M3x8cGVyc29uYWwlMjBjYXJlJTIwcHJvZHVjdHMlMjBzaGVsZnxlbnwxfDB8fHwxNzk0NDMzMjA1fDA&ixlib=rb-4.1.0&w=1600&h=900&fit=crop&crop=entropy&q=80&fm=jpg
+Modell: gemini-3.5-flash
+Auswahl durch das Modell: -1
+Kein passendes Foto gefunden, altes bleibt.
 Bild vorhanden (assets/magazin/cvs-health-q3-2026-aufspaltung-prognose-foto.jpg), keine neue Suche. Mit --force erzwingen.
 Bild vorhanden (assets/magazin/mcdonalds-q3-2026-quartalszahlen-foto.jpg), keine neue Suche. Mit --force erzwingen.
-Logo-Angaben gesetzt, fetch_logos holt das Logo neu.
-Foto-Kandidaten: 48 (Commons 21, Unsplash 27)
-  0: File:Clinical Chemistry Analyzer , Клинички биохемиски анализатор 1.jpg | Clinical Chemistry Analyzer
-  1: File:Clinical Chemistry Analyzer , Клинички биохемиски анализатор 2.jpg | Clinical Chemistry Analyzer
-  2: File:Clinical Chemistry Analyzer , Клинички биохемиски анализатор 3.jpg | Clinical Chemistry Analyzer are automated analyzer “Immulite” for many biochemic
-  3: File:Clinical Chemistry Analyzer , Клинички биохемиски анализатор 4.jpg | Clinical Chemistry Analyzer
-  4: File:Clinical Chemistry Analyzer , Клинички биохемиски анализатор 5.jpg | Clinical Chemistry Analyzer
-  5: File:Hospital Laboratory.JPG | Holy Rosary Hospital Laboratory, two technicians and analyzers: chemistry (on th
-  6: File:378th EMDS hosts Walking Blood Bank Pre-screening (9006794).jpg | U.S. Air Force Master Sgt. Jessica Bailey, 378th Expeditionary Medical Squadron 
-  7: File:378th EMDS hosts Walking Blood Bank Pre-screening (9006795).jpg | U.S. Air Force Tech. Sgt. Mary Valentine, 378th Expeditionary Medical Squadron m
-  8: File:378th EMDS hosts Walking Blood Bank Pre-screening (9006796).jpg | U.S. Air Force Tech. Sgt. Mary Valentine, left, 378th Expeditionary Medical Squa
-  9: File:423d MDS laboratory plays crucial role in maintaining readiness (8092248).jpg | Staff Sgt. Gisele Garcia, 423d Medical Squadron medical laboratory technician, p
-  10: File:5th Air Naval Gunfire Liaison Company hosts blood drive (10051282).jpg | U.S. Army Spc. Peter Pottorff, right, a medical laboratory technician with Armed
-  11: File:Blanchfield Army Community Hospital celebrates National Medical Laboratory Professional's Week 130422-A-DD678-007.jpg | Blanchfield Army Community Hospital commander Col. Paul R. Cordts and Spc. Jacob
-  12: File:Clinical Pathology Blood Testing Laboratory in Navi Mumbai, India.jpg | A documentative record of a clinical pathology and medical laboratory environmen
-  13: File:NABL Accredited Clinical Pathology Laboratory in Kharghar Navi Mumbai Diagnostic Services.jpg | Medical laboratory technician processing blood test samples in an NABL-accredite
-  14: File:NABL Accredited Pathology Lab and Diagnostic Centre in Kharghar, Navi Mumbai - Full Body Checkup, CBC, Thyroid Blood Test and Home Blood Collection.jpg | A medical technologist loads a blood sample tube into a laboratory centrifuge fo
-  15: File:Samples in a medical lab Hopital Douala Cameroun 27.jpg | This is an image with the theme " Health and Wellness in Africa " from:
-  16: File:US Navy 030905-N-5956C-001 Medical Laboratory Technician Erin Rotter, takes manual differentials of blood samples.jpg | Naval Air Station Whidbey Island, Oak Harbor, Wash. (Sep. 5, 2003) -- Medical La
-  17: File:Lab technician holds a tray of sealed test tubes in a clinical setting during work hours.jpg | A lab technician in a white coat is holding a tray of test tubes that are secure
-  18: File:NACA Technician Cleans a Ramjet in 8- by 6-Foot Supersonic Wind Tunnel (GRC-1950-C-25677).jpg | A technician at the National Advisory Committee for Aeronautics (NACA) Lewis Fli
-  19: File:Refining Innovation 160223-A-AP268-776.jpg | Spc. Jordan Smith, an Army medical lab specialist with the U.S. Army Institute o
-  20: File:Test tubes (1).jpg | Title Test Tubes Description A laboratory is back lit with a rack of test tubes 
-  21: Unsplash 0jE8ynV4mis | Vacutainer tubes with blood. Used in Covid-19 detection.
-  22: Unsplash AniWhid1Gu0 | Lab specimen containers
-  23: Unsplash 2g9uIMeVKvk | DNA Genotyping and Sequencing. Technician prepares for a viral whole-genome sequ
-  24: Unsplash LxPrHCm8-TI | DNA Genotyping and Sequencing. A technician validates genetic variants identifie
-  25: Unsplash GcrSgHDrniY | DNA Genotyping and Sequencing. Technician prepares for a viral whole-genome sequ
-  26: Unsplash Ds7So-ImzwI | a white electronic device with a screen and buttons on a white surface
-  27: Unsplash yJn0zZdFIwU | Blood exam laboratory hospital
-  28: Unsplash 6XVdhgyls-k | a large white machine with a monitor
-  29: Unsplash 9k4Fglw6eFQ | Six blood samples in test tubes. Blood test.
-Verfuegbare Flash-Modelle: gemini-3.8-flash, gemini-3.7-flash, gemini-3.6-flash, gemini-3.5-flash, gemini-3.5-flash-lite, gemini-3.1-flash-lite, gemini-3.1-flash-lite-preview, gemini-3-flash-preview, gemini-2.5-flash, gemini-2.5-flash-lite, gemini-flash-latest, gemini-omni-1.1-flash, gemini-omni-1.2-flash, gemini-flash-lite-latest, gemini-omni-flash-preview
-Modell-Problem -> gemini-3.8-flash: Fehler 429: {
-  "error": {
-    "code": 429,
-    "message": "You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://aistudio.google.com/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceede
-Tageskontingent dieses Modells aufgebraucht, naechstes Modell.
-Modell-Problem -> gemini-3.7-flash: Fehler 429: {
-  "error": {
-    "code": 429,
-    "message": "You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://aistudio.google.com/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceede
-Tageskontingent dieses Modells aufgebraucht, naechstes Modell.
-Modell-Problem -> gemini-3.6-flash: Fehler 429: {
-  "error": {
-    "code": 429,
-    "message": "You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://aistudio.google.com/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceede
-Tageskontingent dieses Modells aufgebraucht, naechstes Modell.
-Modell-Problem -> gemini-3.5-flash: Fehler 429: {
-  "error": {
-    "code": 429,
-    "message": "You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://aistudio.google.com/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceede
-Tageskontingent dieses Modells aufgebraucht, naechstes Modell.
-Modell: gemini-3.5-flash-lite
-Auswahl durch das Modell: 2
-Neues Foto: File:Clinical Chemistry Analyzer , Клинички биохемиски анализатор 3.jpg -> assets/magazin/siemens-healthineers-olyrian-diagnostics-umbenennung-foto.jpg
+Bild vorhanden (assets/magazin/siemens-healthineers-olyrian-diagnostics-umbenennung-foto.jpg), keine neue Suche. Mit --force erzwingen.
 Bild vorhanden (assets/magazin/toyota-q2-geschaeftsjahr-2027-hybride-prognose-foto.jpg), keine neue Suche. Mit --force erzwingen.
 Bild vorhanden (assets/magazin/kimberly-clark-q3-2026-zahlen-kenvue-china-foto.jpg), keine neue Suche. Mit --force erzwingen.
 Bild vorhanden (assets/magazin/unilever-reiner-pflegekonzern-dividende-rueckkauf-foto.jpg), keine neue Suche. Mit --force erzwingen.
 Bild vorhanden (assets/magazin/singulus-spacex-auftrag-solarlinie-neun-monate-2026-foto.jpg), keine neue Suche. Mit --force erzwingen.
-Foto-Kandidaten: 58 (Commons 30, Unsplash 28)
-  0: File:AUTOMOTIVE GAS TURBINE ENGINE - NARA - 17418368.jpg | Scope and content: The original finding aid described this as: Capture Date: 1/2
-  1: File:AUTOMOTIVE GAS TURBINE ENGINE - NARA - 17418369.jpg | Scope and content: The original finding aid described this as: Capture Date: 1/2
-  2: File:Armengaud Lemale Turbine.jpg | The Armengaud-Lemale early experimental gas turbine. St Denis, Paris,1906
-  3: File:BASELINE GAS TURBINE ENGINE - NARA - 17418394.jpg | Scope and content: The original finding aid described this as: Capture Date: 1/3
-  4: File:BASELINE GAS TURBINE ENGINE - NARA - 17418395.jpg | Scope and content: The original finding aid described this as: Capture Date: 1/3
-  5: File:CHRYSLER GAS TURBINE CAR AND ENGINE - NARA - 17474838.jpg | Scope and content: The original finding aid described this as: Capture Date: 1/1
-  6: File:CHRYSLER GAS TURBINE ENGINE - NARA - 17469871.jpg | Scope and content: The original finding aid described this as: Capture Date: 6/1
-  7: File:CHRYSLER GAS TURBINE ENGINE - NARA - 17469872.jpg | Scope and content: The original finding aid described this as: Capture Date: 6/1
-  8: File:CHRYSLER GAS TURBINE ENGINE - NARA - 17469873.jpg | Scope and content: The original finding aid described this as: Capture Date: 6/1
-  9: File:CHRYSLER GAS TURBINE ENGINE - NARA - 17469900.jpg | Scope and content: The original finding aid described this as: Capture Date: 6/1
-  10: File:CHRYSLER GAS TURBINE ENGINE - NARA - 17469901.jpg | Scope and content: The original finding aid described this as: Capture Date: 6/1
-  11: File:CHRYSLER GAS TURBINE ENGINE TEST - NARA - 17442611.jpg | Scope and content: The original finding aid described this as: Capture Date: 5/2
-  12: File:CHRYSLER GAS TURBINE ENGINE TEST - NARA - 17442612.jpg | Scope and content: The original finding aid described this as: Capture Date: 5/2
-  13: File:Gas Turbine 4.jpg | An LM6000 operating for the Ministry of Electricity of Iraq
-  14: File:Indirectly fired gas turbine engine.jpg | Indirectly fired gas turbine engine constructed by BTOLA Pty Ltd funning on rice
-  15: File:Lagoon Creek Combustion Turbine Plant.jpg | Lagoon Creek Combustion Turbine Plant
-  16: File:The Neuchatel gas turbine exhibited at the 1939 Swiss National Expo.jpg | The Neuchatel GT exhibited at the 1939 Swiss National Expo in Zurich. The Neuchâ
-  17: File:A view from a natural gas combined cycle power plant.jpg | Gebze power plant
-  18: File:A view from a natural gas combined cycle power plant 2.jpg | Gebze power plant
-  19: File:Combined Cycle Power Plant.jpg | This is an image of "African people at work" from
-  20: File:Kazerun Combined Cycle Power Plant 1.jpg | Kazerun Combined Cycle Power Plant (Iran)
-  21: File:Marmaraereğlisi Natural Gas Combined Cycle Power Plant.jpg | Marmaraereğilsi Doğal Gaz Kombine Çevrim Santrali'nin D-110 otoyolundan görünümü
-  22: File:Niroogah shirkoh.jpg | برجهای خنک کننده نیروگاه سیکل ترکیبی شیرکوه یزد
-  23: File:Power Girds of Neyshabur Combined Cycle Power Plant.jpg | Transmission Towers of Neyshabur Combined Cycle Power Plant in Bagrud Road of Ne
-  24: File:A gas pipeline and the power plant in the background.jpg | A gas pipeline and the power plant in the background
-  25: File:Coal-fired Power Plant (3518071026).jpg | Mandalay natural gas-fired power plant in Oxnard, California, United States
-  26: File:Entrance of Assam Gas Based Power Plant 01.jpg | Assam Gas based power plant is Combined Cycle Gas Turbine Project joint venture 
-  27: File:Entrance of Assam Gas Based Power Plant 02.jpg | Assam Gas based power plant is Combined Cycle Gas Turbine Project joint venture 
-  28: File:Entrance of Assam Gas Based Power Plant 03.jpg | Assam Gas based power plant is Combined Cycle Gas Turbine Project joint venture 
-  29: File:Entrance of Assam Gas Based Power Plant 04.jpg | Assam Gas based power plant is Combined Cycle Gas Turbine Project joint venture 
-Verfuegbare Flash-Modelle: gemini-3.8-flash, gemini-3.7-flash, gemini-3.6-flash, gemini-3.5-flash, gemini-3.5-flash-lite, gemini-3.1-flash-lite, gemini-3.1-flash-lite-preview, gemini-3-flash-preview, gemini-2.5-flash, gemini-2.5-flash-lite, gemini-flash-latest, gemini-omni-1.1-flash, gemini-omni-1.2-flash, gemini-flash-lite-latest, gemini-omni-flash-preview
-Modell-Problem -> gemini-3.8-flash: Fehler 429: {
-  "error": {
-    "code": 429,
-    "message": "You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://aistudio.google.com/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceede
-Tageskontingent dieses Modells aufgebraucht, naechstes Modell.
-Modell-Problem -> gemini-3.7-flash: Fehler 429: {
-  "error": {
-    "code": 429,
-    "message": "You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://aistudio.google.com/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceede
-Tageskontingent dieses Modells aufgebraucht, naechstes Modell.
-Modell-Problem -> gemini-3.6-flash: Fehler 429: {
-  "error": {
-    "code": 429,
-    "message": "You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://aistudio.google.com/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceede
-Tageskontingent dieses Modells aufgebraucht, naechstes Modell.
-Modell-Problem -> gemini-3.5-flash: Fehler 429: {
-  "error": {
-    "code": 429,
-    "message": "You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://aistudio.google.com/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceede
-Tageskontingent dieses Modells aufgebraucht, naechstes Modell.
-Modell: gemini-3.5-flash-lite
-Auswahl durch das Modell: 17
-Neues Foto: File:A view from a natural gas combined cycle power plant.jpg -> assets/magazin/gasturbinen-dreikampf-siemens-energy-ge-vernova-mitsubishi-heavy-foto.jpg
