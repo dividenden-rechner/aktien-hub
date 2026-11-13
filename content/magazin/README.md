@@ -17,10 +17,12 @@ Datei anklicken, dann Stift-Symbol: Zeile `draft: true` löschen und speichern, 
 | 29.10.2026 22:42 | Amazon steigert Umsatz im dritten Quartal auf 201,9 Milliarden Dollar | [79738970_2026-10-29/7757_2242-amazon-q3-2026-zahlen.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/79738970_2026-10-29/7757_2242-amazon-q3-2026-zahlen.md) |
 | 29.10.2026 10:12 | Shell erzielt im dritten Quartal 10,8 Milliarden Dollar Gewinn | [79738970_2026-10-29/8987_1012-shell-q3-2026-ergebnisse.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/79738970_2026-10-29/8987_1012-shell-q3-2026-ergebnisse.md) |
 
-### Online (384)
+### Online (386)
 
 | Datum | Titel | Datei |
 |---|---|---|
+| 13.11.2026 19:56 | Zealand Pharma: EU-Zulassung für Zeydovio bei Kurzdarmsyndrom | [79738886_2026-11-13/8044_1956-zealand-pharma-zeydovio-eu-zulassung-kurz.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/79738886_2026-11-13/8044_1956-zealand-pharma-zeydovio-eu-zulassung-kurz.md) |
+| 13.11.2026 19:55 | Novartis: EU-Ausschuss empfiehlt Cosentyx für Jugendliche mit Hidradenitis suppurativa | [79738886_2026-11-13/8044_1955-novartis-cosentyx-hs-zulassung-empfehlung-kurz.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/79738886_2026-11-13/8044_1955-novartis-cosentyx-hs-zulassung-empfehlung-kurz.md) |
 | 13.11.2026 18:35 | Nvidia: Verwaltungsrat hat Arm-Chef René Haas als Huang-Nachfolger angesprochen | [79738886_2026-11-13/8164_1835-nvidia-haas-huang-nachfolge-kurz.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/79738886_2026-11-13/8164_1835-nvidia-haas-huang-nachfolge-kurz.md) |
 | 13.11.2026 17:55 | Mitsubishi UFJ Financial Group startet Aktienrückkauf im Wert von 200 Milliarden Yen | [79738886_2026-11-13/8244_1755-mufg-aktienrueckkauf-november-2026.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/79738886_2026-11-13/8244_1755-mufg-aktienrueckkauf-november-2026.md) |
 | 13.11.2026 17:55 | Mitsubishi UFJ Financial Group erhöht Zwischendividende auf 48 Yen | [79738886_2026-11-13/8244_1755-mubishi-ufj-financial-group-halbjahr-2026-dividende.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/79738886_2026-11-13/8244_1755-mubishi-ufj-financial-group-halbjahr-2026-dividende.md) |

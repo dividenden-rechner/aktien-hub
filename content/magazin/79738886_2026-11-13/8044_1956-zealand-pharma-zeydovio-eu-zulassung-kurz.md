@@ -9,6 +9,7 @@ typ: kurz
 quelle_name: "Zealand Pharma, Pressemitteilung Nr. 24/2026 vom 13.11.2026 (Kopenhagen)"
 logo_symbol: ZEAL
 logo_name: "Zealand Pharma"
+logo_file: assets/logos/zeal.png
 ---
 Die Europäische Kommission hat Zeydovio (Glepaglutid) von Zealand Pharma für Erwachsene mit Kurzdarmsyndrom zugelassen. Das Medikament ist ein langwirkendes GLP-2-Präparat, das zweimal pro Woche per Autoinjektor gespritzt wird. Es soll die Abhängigkeit von künstlicher Ernährung über die Vene verringern. Nach Unternehmensangaben ist Zeydovio das erste fertig dosierte GLP-2-Präparat mit Zulassung. Die Zulassung gilt in allen EU-Staaten sowie in Island, Liechtenstein und Norwegen.
 
