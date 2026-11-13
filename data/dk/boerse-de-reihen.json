@@ -708,6 +708,267 @@ null,
 9.98,
 9.84
 ]
+},
+"NOVO-B.CO": {
+"name": "Novo Nordisk",
+"isin": "DK0062498333",
+"waehrung": "DKK",
+"hinweis": "Quelle boerse.de, 2021-2025 gegen Geschaeftsbericht abgeglichen. Aktiensplit 1:2 im Sept. 2023: EPS, Dividende und Aktienzahl 2019/2020 hier auf Nachsplit-Basis umgerechnet (boerse.de zeigt dort Vorsplit-Werte; 2021/2022 stimmen mit Geschaeftsbericht ueberein). EPS = unverwaessert. Dividendenausschuettung 2021 (23.711) und 2024 (50.683) laut Geschaeftsbericht statt boerse.de (22.551 bzw. 50.901). Aktienzahl = Gesamtzahl Aktien zum Jahresende inkl. eigener Aktien. Dividende je Aktie = fuer das Geschaeftsjahr beschlossen.",
+"umsatz": [
+122021,
+126946,
+140800,
+176954,
+232261,
+290403,
+309064
+],
+"ebt": [
+48553,
+53130,
+59080,
+69062,
+104674,
+127191,
+130540
+],
+"jahresueberschuss": [
+38951,
+42138,
+47757,
+55525,
+83683,
+100988,
+102434
+],
+"dividendenausschuettung": [
+19651,
+21066,
+23711,
+27950,
+41987,
+50683,
+51975
+],
+"eigenkapital": [
+57593,
+63325,
+70746,
+83486,
+106561,
+143486,
+194047
+],
+"eps": [
+8.12,
+8.97,
+10.4,
+12.26,
+18.67,
+22.67,
+23.06
+],
+"dividende_je_aktie": [
+4.175,
+4.55,
+5.2,
+6.2,
+9.4,
+11.4,
+11.7
+],
+"aktien_mio": [
+4800,
+4700,
+4620,
+4560,
+4510,
+4465,
+4465
+],
+"eigenkapitalrendite_pct": [
+67.63,
+66.54,
+67.5,
+66.51,
+78.53,
+70.38,
+52.79
+]
+},
+"VWS.CO": {
+"name": "Vestas Wind Systems",
+"isin": "DK0061539921",
+"waehrung": "EUR",
+"hinweis": "Berichtswaehrung EUR, Dividende wird in DKK beschlossen (dividende_je_aktie in DKK). Aktiensplit 1:5 (28.4.2021): EPS, Dividende, Aktienzahl 2019/2020 auf Nachsplit-Basis umgerechnet (DKK 7,93 bzw. 8,45 je Vorsplit-Aktie). 2021-2025 Quelle boerse.de/stockanalysis.com; 2019/2020 aus Vestas-Mitteilungen und Drittseiten (Umsatz, Jahresueberschuss laut Geschaeftsbericht; EBT 2020 und EPS aus investcroc; Eigenkapital 2020 = den Aktionaeren zurechenbar, 4.703 inkl. Minderheiten). Jahresueberschuss 2025 laut boerse.de 787 (Vestas: 780 Periodenergebnis, 778 Aktionaere); 2021 laut boerse.de 167 (stockanalysis zeigt 134 Aktionaere/EBT 224, spaeter angepasst). Dividendenausschuettung = im Folgejahr gezahlter Betrag in EUR Mio. (Cashflow); 2025 noch nicht gezahlt (Ex-Tag 9.4.2026, DKK 0,74 je Aktie), daher null. Aktienzahl 2020 nicht sicher belegt (null); 2019 = 199 Mio. Vorsplit x5.",
+"umsatz": [
+12147,
+14819,
+15587,
+14486,
+15382,
+17295,
+18822
+],
+"ebt": [
+909,
+934,
+257,
+-1696,
+102,
+705,
+1039
+],
+"jahresueberschuss": [
+700,
+771,
+167,
+-1572,
+77,
+499,
+787
+],
+"dividendenausschuettung": [
+208,
+228,
+50,
+0,
+0,
+74,
+null
+],
+"eigenkapital": [
+3345,
+4654,
+4748,
+3044,
+3027,
+3529,
+3867
+],
+"eps": [
+0.71,
+0.78,
+0.17,
+-1.56,
+0.08,
+0.49,
+0.78
+],
+"dividende_je_aktie": [
+1.586,
+1.69,
+0.37,
+0,
+0,
+0.55,
+0.74
+],
+"aktien_mio": [
+995,
+null,
+1005,
+1006,
+1006,
+1006,
+990.42
+],
+"eigenkapitalrendite_pct": [
+20.93,
+16.57,
+3.52,
+-51.64,
+2.54,
+14.14,
+20.35
+]
+},
+"ORSTED.CO": {
+"name": "Orsted",
+"isin": "DK0060094928",
+"waehrung": "DKK",
+"hinweis": "boerse.de nicht abrufbar; Quellen stockanalysis.com (2021-2025), Orsted-Berichte/Zwischenbericht-XBRL (2019/2020). Jahresueberschuss 2021-2025 = Net Income nach Minderheiten, vor Hybridkupons; 2019/2020 = Periodenergebnis laut Orsted (inkl. Minderheiten; 2020 enthaelt rund 10,9 Mrd. Gewinn aus Verkauf des Verteilnetz-/Privatkundengeschaefts, 2019 inkl. Oel/Gas-Altlasten). Eigenkapital = den Aktionaeren zurechenbar (ohne Hybridkapital und Minderheiten); 2019 nicht ermittelt (nur Gesamtkapital 89.562 inkl. Hybrid/Minderheiten). EBT 2019/2020 und EPS 2019/2020 nicht belegt (Quellen widerspruechlich), null. Kapitalerhoehung ca. 60 Mrd. DKK Okt. 2025: Aktien stiegen von 420 auf 1.321 Mio.; EPS 2021-2025 wie berichtet, nicht um Bezugsrechtsabschlag bereinigt. Dividende je Aktie 10,5/11,5/12,5/13,5 fuer GJ 2019-2022, danach keine Dividende (2023-2025 = 0). Dividendenausschuettung = DPS x Aktien (abgeleitet, DKK Mio.). Umsatz 2019/2020 laut Orsted-Jahresbericht (Datenanbieter zeigen 70.398/50.151).",
+"umsatz": [
+67842,
+52601,
+77673,
+114417,
+79255,
+71034,
+73244
+],
+"ebt": [
+null,
+null,
+13277,
+17609,
+-19026,
+2606,
+5988
+],
+"jahresueberschuss": [
+6044,
+16716,
+10962,
+15126,
+-20506,
+-206,
+2440
+],
+"dividendenausschuettung": [
+4411,
+4831,
+5252,
+5673,
+0,
+0,
+0
+],
+"eigenkapital": [
+null,
+81376,
+82056,
+91536,
+75885,
+83093,
+140673
+],
+"eps": [
+null,
+null,
+24.33,
+34.62,
+-50.11,
+-1.22,
+1.95
+],
+"dividende_je_aktie": [
+10.5,
+11.5,
+12.5,
+13.5,
+0,
+0,
+0
+],
+"aktien_mio": [
+null,
+420.07,
+420.17,
+420.23,
+420.23,
+420.23,
+1321
+],
+"eigenkapitalrendite_pct": [
+null,
+20.54,
+13.36,
+16.52,
+-27.02,
+-0.25,
+1.73
+]
 }
 }
 }

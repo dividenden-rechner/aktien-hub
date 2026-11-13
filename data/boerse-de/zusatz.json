@@ -21064,6 +21064,288 @@ null
 1843
 ],
 "hinweis": "DKK, Bank: operativer Cashflow (2021 bis 2025: -345, 25.089, 6.934, -13.740, -3.858) schwankt mit Kredit- und Einlagenbewegungen und ist nicht vergleichbar, daher null. capex null (Quelle-Posten 'Capital Expenditures' 1.029 bis 2.442 enthaelt offenbar Leasingvermoegen, Verkaeufe 623 bis 1.262). da null: die Quelle weist unter 'D&A' dieselben Werte wie 'Occupancy Expenses' aus (z. B. 2025: 708), kein echter Abschreibungsposten. bb null: Quelle zeigt Rueckkaeufe 4.408/3.316/1.763/3.853/3.649 gegenlaeufig zu Aktienausgabe 3.028/1.989/1.759/3.950/1.670 (Eigenhandel in eigenen Aktien), netto nicht eindeutig. cash/debt/Umsatz/Bruttogewinn/EBIT/Zins bei Banken nicht sinnvoll (null). div = gezahlte Dividenden laut Cashflow, vermutlich inkl. Hybridkupons. steuer = Ertragsteuern."
+},
+"NOVO-B.CO": {
+"jahre": [
+2021,
+2022,
+2023,
+2024,
+2025
+],
+"ocf": [
+55000,
+78887,
+108908,
+120968,
+119102
+],
+"capex": [
+7385,
+14753,
+38896,
+51309,
+90113
+],
+"da": [
+6025,
+7362,
+9413,
+19107,
+21982
+],
+"div": [
+21517,
+25303,
+31767,
+44140,
+51763
+],
+"bb": [
+19447,
+24086,
+29924,
+20181,
+1388
+],
+"cash": [
+17485,
+23574,
+30230,
+26308,
+26962
+],
+"debt": [
+26645,
+25784,
+27006,
+102787,
+130958
+],
+"umsatz": [
+140800,
+176954,
+232261,
+290403,
+309064
+],
+"brutto": [
+117142,
+148530,
+196942,
+246843,
+254687
+],
+"ebit": [
+58644,
+74809,
+102574,
+128339,
+127658
+],
+"zins": [
+289,
+378,
+542,
+1640,
+4207
+],
+"steuer": [
+11323,
+13537,
+20991,
+26203,
+28106
+],
+"hinweis": "DKK Mio. Quellen: Novo-Geschaeftsberichte/20-F/6-K (OCF, Capex, D&A, Dividenden, Rueckkaeufe), stockanalysis.com (Bilanz, Zinsaufwand, Bruttogewinn). capex = Sachanlagen + immaterielle Werte (ohne Unternehmenskaeufe; 2024 zusaetzlich 82.163 fuer Catalent-Standorte). da inkl. Wertminderungen. ebit = ausgewiesenes Betriebsergebnis laut Geschaeftsbericht (stockanalysis zeigt abweichend 59.217/75.618/104.698/138.901/140.618). cash inkl. Wertpapiere. debt = Kreditaufnahmen inkl. Leasing. OCF 2021 mit 55.000 gerundet in Quelle. steuer = EBT minus Jahresueberschuss. Starker Capex-Anstieg 2023-2025 (Produktionsausbau, 2025 inkl. 30 Mrd. immaterielle Werte)."
+},
+"VWS.CO": {
+"jahre": [
+2021,
+2022,
+2023,
+2024,
+2025
+],
+"ocf": [
+956,
+-195,
+1027,
+2332,
+2286
+],
+"capex": [
+836,
+819,
+890,
+1155,
+1278
+],
+"da": [
+914,
+834,
+790,
+852,
+1038
+],
+"div": [
+228,
+50,
+0,
+0,
+74
+],
+"bb": [
+12,
+0,
+11,
+40,
+282
+],
+"cash": [
+2536,
+2378,
+3321,
+3977,
+4548
+],
+"debt": [
+1436,
+2427,
+3387,
+3271,
+3374
+],
+"umsatz": [
+15587,
+14486,
+15382,
+17295,
+18822
+],
+"brutto": [
+1556,
+192,
+1283,
+2057,
+2497
+],
+"ebit": [
+428,
+-962,
+36,
+739,
+1067
+],
+"zins": [
+52,
+63,
+235,
+194,
+145
+],
+"steuer": [
+81,
+-124,
+24,
+211,
+259
+],
+"hinweis": "EUR Mio., Quelle stockanalysis.com. OCF 2022 negativ (-195) und Steuer 2022 negativ (Steuererstattung/Verlustjahr) bewusst mit Vorzeichen. capex = Sachanlagen + immaterielle Werte (aktivierte Entwicklung). da = Abschreibungen + Amortisation immaterieller Werte. cash inkl. kurzfristige Anlagen. debt inkl. Leasing. 2021 ggf. spaeter angepasste Werte (stockanalysis: EBT 224, Nettogewinn 134 vs. boerse.de 257/167). Hohe erhaltene Anzahlungen (Contract Liabilities) stuetzen den Cashflow. 2025 Dividende (DKK 0,74) erst 2026 gezahlt."
+},
+"ORSTED.CO": {
+"jahre": [
+2021,
+2022,
+2023,
+2024,
+2025
+],
+"ocf": [
+12148,
+11924,
+28532,
+18356,
+23741
+],
+"capex": [
+34569,
+33004,
+38203,
+42654,
+54776
+],
+"da": [
+7972,
+9754,
+9795,
+10225,
+10195
+],
+"div": [
+4831,
+5252,
+5673,
+0,
+0
+],
+"bb": [
+2971,
+1945,
+699,
+3707,
+0
+],
+"cash": [
+14834,
+40606,
+39660,
+33255,
+87083
+],
+"debt": [
+58527,
+71547,
+88046,
+96618,
+107857
+],
+"umsatz": [
+77673,
+114417,
+79255,
+71034,
+73244
+],
+"brutto": [
+null,
+null,
+null,
+null,
+null
+],
+"ebit": [
+8421,
+11304,
+12853,
+14118,
+12495
+],
+"zins": [
+1841,
+3032,
+4279,
+4095,
+4115
+],
+"steuer": [
+2390,
+2613,
+1156,
+2590,
+2823
+],
+"hinweis": "DKK Mio., Quelle stockanalysis.com. div = an Aktionaere gezahlte Dividende (Vorjahres-DPS x Aktien, abgeleitet); stockanalysis zeigt hoehere Posten (5.260/5.781/6.219/687/713), die Minderheitsdividenden bzw. Hybridkupons enthalten; 2024/2025 keine Dividende. bb laut stockanalysis 'Repurchase of Common Stock' (Orsted hat kein klassisches Aktienrueckkaufprogramm, vermutlich eigene Aktien bzw. Hybridrueckkauf, nur bedingt vergleichbar). Brutto: Orsted weist keinen Bruttogewinn aus, null. ebit = operatives Ergebnis laut stockanalysis (vor Wertminderungen und Verkaufsgewinnen; ausgewiesenes EBIT weicht ab). capex = Brutto-Investitionen (Offshore-Wind, 2025 inkl. Kapitalerhoehung finanziert), Verkaufserloese aus Farm-downs (2025: 12.278) nicht abgezogen. cash inkl. kurzfristige Wertpapiere. debt inkl. Leasing. Kapitalerhoehung 2025: Ausgabe von Aktien ca. 60 Mrd. DKK."
 }
 }
 }
