@@ -1,10 +1,10 @@
 #!/usr/bin/env python3
 """Firmen-Nachrichten fuer den Hub: je Firma eine Datei data/firmennews/<HUB>.json.
-Quelle: Google-News-RSS mit deutscher Ausgabe (hl=de, gl=DE). Nur Meldungen aus deutschsprachigen Quellen,
-damit keine englischen Titel auftauchen. Keine Uebersetzung, keine KI, also keine Token-Kosten.
+Quelle: Google News RSS, einmal deutsch (DE) und einmal englisch (US). Nur Quellen aus der Allowlist
+(Wirtschaftsmedien), keine Routine-Renditerechner, keine Uebersetzung, keine KI, also keine Token-Kosten.
 Universum: die 100 groessten US-Werte und die deutschen Werte aus data/kennzahlen.json.
 Aufruf: python3 tools/firmennews.py [--nur KO,SAP.DE]"""
-import json, os, sys, time, argparse, urllib.request, urllib.parse
+import json, os, re, sys, time, argparse, urllib.request, urllib.parse
 import xml.etree.ElementTree as ET
 from datetime import datetime, timedelta, timezone
 from email.utils import parsedate_to_datetime
@@ -17,11 +17,18 @@ TAGE = 14        # nur Meldungen der letzten 14 Tage
 MAX = 8          # hoechstens so viele je Firma
 PAUSE = 2        # Sekunden zwischen Abrufen
 
-# Deutschsprachige Quellen (Domain-Teil oder Name im Google-News-Quellfeld)
-DE_QUELLEN = ["handelsblatt", "faz.net", "boerse.de", "finanzen.net", "finanzen.ch", "aktionaer", "wiwo", "manager-magazin",
-              "onvista", "boerse-online", "boersenmedien", "spiegel", "zeit.de", "sueddeutsche", "tagesschau", "welt.de",
-              "focus", "n-tv", "stern", "dpa", "heise", "ariva", "deraktionaer", "boerse-frankfurt", "ad-hoc-news", "fool.de",
-              "comdirect", "dpa-afx", "bloomberg.de", "nzz", "srf", "kleinezeitung", "derstandard", "finanzmarktwelt", "wallstreet-online"]
+# Erlaubte Quellen (Teil des Namens oder der Domain, kleingeschrieben)
+QUELLEN = ["handelsblatt", "faz", "wiwo", "manager-magazin", "spiegel", "sueddeutsche", "zeit.de", "welt.de", "tagesschau",
+           "dpa", "boersen-zeitung", "boersenzeitung", "nzz", "reuters", "bloomberg", "wall street journal", "wsj.com",
+           "financial times", "ft.com", "cnbc", "barron", "economist", "new york times", "nytimes", "washington post",
+           "associated press", "apnews", "fortune", "forbes", "the guardian", "bbc", "südwest", "suedwest", "handelszeitung",
+           "finanztreff", "börse online", "boerse-online"]
+# Keine Renditerechner, Chartsignale, Kaufempfehlungen oder Video-/Forenbeitraege
+AUSSCHLUSS = re.compile(
+    r"Investition|hätte .*(abgeworfen|gewonnen|verdient)|So viel|Chartsignal|Chartanalyse|Expertenmeinung|Trading-Chance|"
+    r"Aktie kaufen|Kaufen oder|Kaufempfehlung|Top-Aktie|Aktien-Tipp|Börsenbrief|Kursziel|Hot Stock|stock to buy|should you buy|"
+    r"buy now|Motley Fool|YouTube|Podcast|Video|Anleger aufgepasst|Dividendenkönig|\bwarum\b.*Aktie",
+    re.I)
 
 def universum():
     k = json.load(open(KENN))["werte"]
@@ -29,18 +36,33 @@ def universum():
     de = [(h, v) for h, v in k.items() if v.get("land") == "DE"]
     return [(h, v.get("name") or h) for h, v in us + de]
 
-def suche(name):
-    q = f'"{name}" Aktie'
-    url = "https://news.google.com/rss/search?" + urllib.parse.urlencode({"q": q, "hl": "de", "gl": "DE", "ceid": "DE:de"})
+def suche(name, sprache):
+    if sprache == "de":
+        q, par = f'"{name}" Aktie', {"hl": "de", "gl": "DE", "ceid": "DE:de"}
+    else:
+        q, par = f'"{name}" stock', {"hl": "en-US", "gl": "US", "ceid": "US:en"}
+    url = "https://news.google.com/rss/search?" + urllib.parse.urlencode({"q": q, **par})
     raw = urllib.request.urlopen(urllib.request.Request(url, headers={"User-Agent": UA}), timeout=25).read()
     return ET.fromstring(raw)
 
-def deutsch(quelle, link):
-    s = (quelle or "").lower() + " " + (link or "").lower()
-    return any(d in s for d in DE_QUELLEN)
+def erlaubt(quelle, quelle_url):
+    s = ((quelle or "") + " " + (quelle_url or "")).lower()
+    return any(q in s for q in QUELLEN)
 
 def sammeln(name):
-    root = suche(name)
+    out = []
+    for sprache in ("de", "en"):
+        out += _sammeln(name, sprache)
+    out.sort(key=lambda x: x["datum"], reverse=True)
+    seen, res = set(), []
+    for m in out:
+        k = m["titel"].lower()[:60]
+        if k in seen: continue
+        seen.add(k); res.append(m)
+    return res[:MAX]
+
+def _sammeln(name, sprache):
+    root = suche(name, sprache)
     grenze = datetime.now(timezone.utc) - timedelta(days=TAGE)
     out, gesehen = [], set()
     for it in root.iter("item"):
@@ -54,13 +76,13 @@ def sammeln(name):
         except Exception:
             continue
         if d < grenze or not titel or titel in gesehen: continue
-        if not deutsch(quelle, quelle_url or link): continue
+        if not erlaubt(quelle, quelle_url): continue
+        if AUSSCHLUSS.search(titel): continue
         # Google haengt "- Quelle" an den Titel: abschneiden, damit der Titel sauber bleibt
         if quelle and titel.endswith(" - " + quelle): titel = titel[: -len(quelle) - 3]
         gesehen.add(titel)
-        out.append({"titel": titel, "quelle": quelle, "link": link, "datum": d.date().isoformat()})
-    out.sort(key=lambda x: x["datum"], reverse=True)
-    return out[:MAX]
+        out.append({"titel": titel, "quelle": quelle, "link": link, "datum": d.date().isoformat(), "sprache": sprache})
+    return out
 
 def main():
     ap = argparse.ArgumentParser(); ap.add_argument("--nur", default=""); a = ap.parse_args()
@@ -74,7 +96,7 @@ def main():
             treffer = sammeln(name)
         except Exception as e:
             print("FEHLER", hub, e); continue
-        json.dump({"hub": hub, "name": name, "stand": heute, "quelle": "Google News (deutschsprachige Quellen)",
+        json.dump({"hub": hub, "name": name, "stand": heute, "quelle": "Google News (Wirtschaftsmedien, deutsch und englisch)",
                    "meldungen": treffer}, open(os.path.join(OUT, hub + ".json"), "w"), ensure_ascii=False, indent=1)
         print(hub, len(treffer), "Meldungen")
         if i < len(liste) - 1: time.sleep(PAUSE)

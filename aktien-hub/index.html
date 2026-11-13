@@ -909,6 +909,16 @@ function initNews(sym,p){
   async function load(l){
     const q=l==="de"?`"${nm}" Aktie`:`"${nm}" stock`,ck="news:"+l+":"+q,out=$("nwl");
     out.textContent="Lade News …";
+    // Kuratierte Firmen-News (tools/firmennews.py): Wirtschaftsmedien, deutsch und englisch, mit Link zur Nachrichtenseite
+    try{
+      const f=await fetch("../data/firmennews/"+encodeURIComponent(String(sym).toUpperCase())+".json?v="+Math.floor(Date.now()/36e5)).then(r=>r.ok?r.json():null);
+      if(f&&f.meldungen&&f.meldungen.length){
+        const hub=`<a class="nwm" href="../news/firma/?s=${encodeURIComponent(String(sym).toUpperCase())}">Alle News zu ${esc(f.name||sym)} auf der Nachrichtenseite</a>`;
+        out.innerHTML=f.meldungen.map(x=>`<a class="nwi" href="${esc(x.link)}" target="_blank" rel="noopener nofollow"><b>${esc(x.titel)}${x.sprache==="en"?' <small>(EN)</small>':""}</b><span>${esc(x.quelle||"")}${x.quelle&&x.datum?" · ":""}${esc(x.datum||"")}</span></a>`).join("")+hub;
+        $("nwsub").textContent="Quelle: Google News, Wirtschaftsmedien · Stand "+(f.stand||"");
+        return;
+      }
+    }catch(e){}
     const gl="https://news.google.com/search?q="+encodeURIComponent(q);
     let j=null;
     try{const c=JSON.parse(localStorage.getItem(ck)||"null");if(c&&Date.now()-c.t<36e5)j=c.j}catch(e){}
