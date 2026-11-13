@@ -15,6 +15,7 @@ OUT = os.path.join(ROOT, "data", "firmennews")
 UA = "Mozilla/5.0 (compatible; DividendenRechnerNewsBot/1.0; +https://www.dividenden-rechner.de)"
 TAGE = 14        # nur Meldungen der letzten 14 Tage
 MAX = 8          # hoechstens so viele je Firma
+MAX_PM = 4       # davon hoechstens so viele Pressemitteilungen
 PAUSE = 2        # Sekunden zwischen Abrufen
 
 # Erlaubte Quellen (Teil des Namens oder der Domain, kleingeschrieben)
@@ -72,13 +73,14 @@ def sammeln(hub, name):
     out = pressemitteilungen(hub)
     for sprache in ("de", "en"):
         out += _sammeln(name, sprache)
-    out.sort(key=lambda x: (x.get("typ") == "pm", x["datum"]), reverse=True)
-    seen, res = set(), []
-    for m in out:
+    seen, pm, med = set(), [], []
+    for m in sorted(out, key=lambda x: x["datum"], reverse=True):
         k = m["titel"].lower()[:60]
         if k in seen: continue
-        seen.add(k); res.append(m)
-    return res[:MAX]
+        seen.add(k)
+        (pm if m.get("typ") == "pm" else med).append(m)
+    res = pm[:MAX_PM] + med[:MAX - min(len(pm), MAX_PM)]
+    return sorted(res, key=lambda x: x["datum"], reverse=True)[:MAX]
 
 VERWORFEN = {}
 
