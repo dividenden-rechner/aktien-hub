@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Kurshistorie je Firma aus Alpha Vantage (TIME_SERIES_WEEKLY: Wochenkurse über 20+ Jahre, im Gratis-Tarif verfügbar).
+"""Kurshistorie je Firma aus Alpha Vantage (TIME_SERIES_WEEKLY: Wochenkurse, Gratis-Tarif, gespeichert werden nur die letzten 20 Jahre).
 Holt pro Lauf höchstens AV_MAX Firmen aus data/kurse/historie/queue.json, die noch keine Datei haben,
 und legt sie als data/kurse/historie/<HUB-SYMBOL>.json ab. Keine Aktuell-Abrufe: nur Historie.
 Gratis-Schlüssel: rund 25 Aufrufe am Tag, geteilt mit dem Earnings-Lauf. Standard daher AV_MAX=1."""
@@ -32,11 +32,13 @@ def main():
         for datum in sorted(reihe):
             z = reihe[datum]
             kurse.append([datum, float(z["1. open"]), float(z["2. high"]), float(z["3. low"]), float(z["4. close"]), int(float(z["5. volume"]))])
+        grenze = (datetime.date.today() - datetime.timedelta(days=20*365 + 5)).isoformat()
+        kurse = [k for k in kurse if k[0] >= grenze]   # nur die letzten 20 Jahre
         out = {"hub": f["hub"], "av": f["av"], "name": f["name"], "waehrung_hinweis": "Börsenwährung der Handelslinie, nicht umgerechnet",
                "quelle": "Alpha Vantage TIME_SERIES_WEEKLY (Wochenschlusskurse, ungeteilt)", "stand": datetime.date.today().isoformat(),
                "felder": ["datum", "eröffnung", "hoch", "tief", "schluss", "volumen"], "kurse": kurse}
         json.dump(out, open(os.path.join(ZIEL, f["hub"] + ".json"), "w"), ensure_ascii=False)
-        print("OK", f["hub"], len(kurse), "Tage von", kurse[0][0], "bis", kurse[-1][0])
+        print("OK", f["hub"], len(kurse), "Wochen von", kurse[0][0], "bis", kurse[-1][0])
 
 if __name__ == "__main__":
     main()
