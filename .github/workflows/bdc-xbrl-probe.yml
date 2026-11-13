@@ -1,0 +1,25 @@
+name: Probe BDC-Kennzahlen aus SEC-XBRL
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  probe:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Probe laufen lassen
+        run: python tools/bdc_xbrl_probe.py
+      - name: Ergebnis committen
+        run: |
+          git config user.name "aktien-hub-bot"
+          git config user.email "bot@dividenden-rechner.de"
+          git add data/bdc-xbrl-probe.json
+          git commit -m "Probe: BDC-Kennzahlen aus SEC-XBRL" || exit 0
+          for i in 1 2 3 4 5; do git pull -q --rebase && git push -q && break; sleep 5; done
