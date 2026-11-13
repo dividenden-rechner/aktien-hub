@@ -44,7 +44,7 @@ def frage(sym, name):
     try:
         d = json.load(urllib.request.urlopen(req, timeout=900))
     except urllib.error.HTTPError as e:
-        return None, "HTTP %s %s" % (e.code, e.read()[:300].decode("utf-8", "replace")), {}
+        return None, "HTTP %s %s" % (e.code, e.read()[:600].decode("utf-8", "replace")), {}
     text = "".join(c.get("text", "") for o in d.get("output", []) if o.get("type") == "message"
                    for c in o.get("content", []) if c.get("type") == "output_text")
     suchen = sum(1 for o in d.get("output", []) if o.get("type") == "web_search_call")
@@ -81,7 +81,7 @@ def main():
         t = time.time()
         j, fehler, use = frage(sym, name)
         if fehler:
-            print("FEHLER", sym, fehler); continue
+            print("FEHLER", sym, " ".join(fehler.split())); continue
         j.update({"symbol": sym, "modell": MODELL, "stand": time.strftime("%Y-%m-%d"), "_fehlt": pruefe(j)})
         json.dump(j, open(os.path.join(ZIEL, sym + ".json"), "w"), ensure_ascii=False, indent=1)
         print("OK", sym, "%ds" % (time.time() - t), "Suchen:", j["_suchen"], "Tokens ein/aus:",
