@@ -84,6 +84,7 @@ svg text{fill:var(--mut);font-size:11px;font-family:inherit}
 .fvc{position:absolute;left:50%;top:-5px;width:2px;height:20px;margin-left:-1px;background:var(--fg)}
 .fvm{position:absolute;top:-4px;width:6px;height:18px;margin-left:-3px;border-radius:3px;background:var(--fg);box-shadow:0 0 0 2px var(--bg,#fff)}
 .fvl{display:flex;justify-content:space-between;font-size:11px;color:var(--mut);margin-top:4px}
+.fvq{font-size:13px;color:var(--mut);margin-bottom:6px}.fvq b{color:var(--fg);font-size:15px}
 .stk td{padding:9px 6px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top;overflow-wrap:anywhere}
 .stk .k{width:150px;font-weight:600}.stk .v{width:96px;font-weight:600}.stk .d{color:var(--mut)}
 .stk tr.kzg td{padding:14px 6px 6px;font-weight:700;font-size:13px;color:var(--mut);text-transform:uppercase;letter-spacing:.03em;border-bottom:0}
@@ -588,8 +589,8 @@ function steckbrief(sym,p,r,m,inc,cf,KZ){
     bwc=q<.9?"g":q<=1.1?"y":q<=1.3?"o":"r";bwl=lab;
     bwt=`${lab}: Kurs ${num(fvK,2)} USD, Fair Value ${num(fvW,2)} USD (Mitte aus ${K.modellwert_anzahl||"mehreren"} Modellen)`;
     const x=Math.max(0,Math.min(100,(q-.5)*100));
-    gauge=`<div class="fvg" role="img" aria-label="${lab}: Kurs ${num(fvK,2)} USD, Fair Value ${num(fvW,2)} USD"><div class="fvbar"><span class="fvc"></span><span class="fvm" style="left:${x.toFixed(1)}%"></span></div><div class="fvl"><span>günstig</span><span>fair</span><span>teuer</span></div></div>`}
-  rows.push(["Bewertung",bwc,bwl,bwt,"bew",gauge]);
+    gauge=`<div class="fvg" role="img" aria-label="${lab}: Kurs ${num(fvK,2)} USD, Fair Value ${num(fvW,2)} USD"><div class="fvq"><b>${Math.round(q*100)} %</b> vom Fair Value</div><div class="fvbar"><span class="fvc"></span><span class="fvm" style="left:${x.toFixed(1)}%"></span></div><div class="fvl"><span>günstig</span><span>fair (100 %)</span><span>teuer</span></div></div>`}
+  rows.push(["Fair Value",bwc,bwl,bwt,"bew",gauge]);
   let dc,dg,dv,fcfFehlt=false;
   if(!(dyl>0)){dg="";dv="Keine Dividende";dc="–"}
   else{const cov=fy!=null?fy/dyl:null;dc=[ "Rendite "+P(dyl),po!=null?"Ausschüttung "+P(po,0):"Ausschüttung: noch nicht erfasst",fy!=null?"FCF-Rendite "+P(fy):"FCF-Rendite: noch nicht erfasst"].filter(Boolean).join(" · ");

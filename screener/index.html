@@ -342,7 +342,7 @@ article.wide>:not(.tool):not(.cards){max-width:760px}
       { id: "evfcf", l: "EV/Free Cashflow", u: "x", s: ["metrics"], dir: "lt", get: S("metrics", ["evToFreeCashFlowTTM"]) },
       { id: "fcfyield", l: "Free-Cashflow-Rendite", u: "pct", s: ["metrics"], dir: "gt", get: S("metrics", ["freeCashFlowYieldTTM"], 100) },
       { id: "earnyield", l: "Gewinnrendite (1/KGV)", u: "pct", s: ["metrics"], dir: "gt", get: S("metrics", ["earningsYieldTTM"], 100) },
-      { id: "mvpot", l: "Potenzial zum Modellwert", u: "pct", s: [], dir: "gt", get: function () { return null; }, d: "Eigene Berechnung (Modus Eigene Daten): positiv = Kurs liegt unter der Mitte der Modellwert-Spanne. Kein Kursziel." },
+      { id: "mvpot", l: "Abstand zum Fair Value", u: "pct", s: [], dir: "gt", get: function () { return null; }, d: "Eigene Berechnung (Modus Eigene Daten): positiv = Kurs liegt unter der Mitte der Modellwert-Spanne. Kein Kursziel." },
       { id: "mv", l: "Modellwert (Mitte, USD)", u: "usd", s: [], dir: "gt", get: function () { return null; }, d: "Mitte aus 2 bis 5 einfachen Modellen (Dividenden-Diskontierung, Graham, Free Cashflow, Gewinnwachstum, FFO/NAV). Nur Modus Eigene Daten." },
       { id: "fvq", l: "Fair-Value-Quote (100 % = fair)", u: "num", s: [], dir: "lt", get: function () { return null; }, d: "Kurs in Prozent der Mitte der Modellwerte. Unter 100 % günstig, über 100 % teuer. Eigene Berechnung aus den vorhandenen Daten, kein Kursziel." },
       { id: "mvn", l: "Anzahl Modelle für den Modellwert", u: "num", s: [], dir: "gt", get: function () { return null; }, d: "Mehr Modelle, belastbarere Spanne (mindestens 2 nötig)" },
@@ -669,9 +669,6 @@ var REGION = {"DE":"R:EU","AT":"R:EU","CH":"R:EU","FR":"R:EU","NL":"R:EU","BE":"
     var seen = { price: 1, mcap: 1 };
     var getOf = function (m) { return function (D) { return D.own ? (OWN[m.id] ? D.own[OWN[m.id]] : null) : m.get(D); }; };
     ST.crit.forEach(function (c) { if (seen[c.id]) return; seen[c.id] = 1; var m = CAT[c.id], g = getOf(m); cols.push({ k: c.id, l: m.l, get: g, f: function (D) { return fmt(m, g(D)); } }); });
-    if (seen.mvpot || seen.mv || seen.mvn) cols.push({ k: "mvr", l: "Modellspanne (USD)", get: function (D) { return D.own ? D.own.modellwert_min_usd : null; },
-      f: function (D) { var o = D.own; if (!o || o.modellwert_min_usd === undefined) return "–"; var tip = (o.modellwert_modelle || []).map(function (x) { return x[0] + ": " + dec(x[1], 2) + " USD (" + x[2] + ")"; }).join("\n");
-        return '<span title="' + esc(tip) + '">' + dec(o.modellwert_min_usd, 2) + " – " + dec(o.modellwert_max_usd, 2) + "</span>"; } });
     var gy = getOf(CAT.yield);
     if (!seen.yield) cols.splice(5, 0, { k: "yield", l: "Div.-Rendite", get: gy, f: function (D) { return fmt(CAT.yield, gy(D)); } });
     return cols;
