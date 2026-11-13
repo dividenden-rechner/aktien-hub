@@ -1,11 +1,10 @@
 ---
 title: "Nvidia ohne Huang: Ein Gründer geht, und der Markt prüft, was von der Firma bleibt"
 description: "Jensen Huang tritt nach zwei Affären als Nvidia-Chef zurück, Finanzchefin Colette Kress übernimmt. Was belegt ist, was nur behauptet wird, wie der Markt reagiert und was die Zahlen am 17. November klären müssen."
-date: 2026-11-15 10:00
+date: 2026-11-14 06:00
 author: "Redaktions-Team Dividenden-Rechner.de"
 author_bio: "Das Redaktions-Team von Dividenden-Rechner.de schreibt über Dividendenaktien, Kennzahlen und Steuerthemen für Privatanleger. Die Rechner und Auswertungen auf der Seite entstehen im eigenen Haus."
 category: Analyse
-draft: true
 quelle_name: "Nvidia-Mitteilung vom 12. November 2026, Reuters, Handelsblatt, Wall Street Journal, New York Times, SPIEGEL"
 logo_symbol: NVDA
 logo_name: "Nvidia"
@@ -39,7 +38,7 @@ Es gibt Firmen, bei denen ein Chefwechsel eine Randnotiz im Wirtschaftsteil ist.
 
 ## Was Nvidia mitteilt und was offen bleibt
 
-Die Mitteilung ist knapp. Huang tritt zurück, Colette Kress, Finanzchefin seit 2013, übernimmt kommissarisch das Amt des Vorstandschefs und behält ihr Finanzressort. Harvey C. Jones wird erster Vorsitzender des Verwaltungsrats in der Geschichte der Firma. Jones, 73, saß seit 1993 im Gremium und führte früher den Softwarekonzern Synopsys. Der Verwaltungsrat sucht einen dauerhaften Chef, intern wie extern, einen Zeitplan nennt er nicht.
+Die Mitteilung ist knapp. Huang tritt zurück, Colette Kress, Finanzchefin seit 2013, übernimmt kommissarisch das Amt des Vorstandschefs und behält ihr Finanzressort. Harvey C. Jones wird erster Vorsitzender des Verwaltungsrats in der Geschichte der Firma. Jones, 73, saß seit 1993 im Gremium und führte früher den Softwarekonzern Synopsys. Der Verwaltungsrat sucht einen dauerhaften Chef, intern wie extern, einen Zeitplan nennt er nicht. Am Freitag wurde bekannt, dass das Gremium dabei Arm-Chef René Haas angesprochen hat. Haas arbeitete sieben Jahre bei Nvidia, bevor er 2013 zu Arm wechselte, und gilt als Vertrauter Huangs. Ob er das Amt angeboten bekommt oder annehmen würde, ist offen, Arm und Nvidia äußerten sich nicht. Die Nvidia-Aktie schloss am Freitag knapp 3 % tiefer bei 161,48 Dollar, in einem insgesamt schwachen Handel mit Chipwerten.
 
 Ob Huang freiwillig geht oder gegangen wird, lässt die Mitteilung offen. Bloomberg beschrieb den Schritt als Absetzung, das Wall Street Journal hatte zuvor berichtet, der Verwaltungsrat habe am Mittwoch über seine Ablösung beraten. Nach Handelsblatt-Informationen gab es keine geregelte Nachfolge, der Verwaltungsrat soll bereits mit einer externen Firma nach Kandidaten gesucht haben. Elon Musk bot Huang auf X eine neue Stelle an, es wäre ihm eine Ehre. Die beiden kennen sich seit mindestens zehn Jahren und begleiteten Präsident Trump im Frühjahr nach China. Tesla bezieht Nvidia-Chips, um KI-Modelle für autonomes Fahren zu trainieren.
 
@@ -96,6 +95,7 @@ Danach zählen drei Dinge: wie schnell der Verwaltungsrat einen dauerhaften Chef
 
 ## Quellen
 
+- Financial Times über Reuters und Stockanalysis, Nvidia spricht Arm-Chef René Haas als Nachfolger an (13.11.2026)
 - Nvidia, Mitteilung „NVIDIA Announces CEO Transition" (12.11.2026)
 - Reuters, Live-Bericht zum Rücktritt von Jensen Huang (12.11.2026)
 - Handelsblatt, „Nvidia-Chef Huang tritt nach Spionageaffäre zurück" und „Nvidia verliert binnen einer Woche rund eine Billion Dollar an Börsenwert" (12.11.2026)
