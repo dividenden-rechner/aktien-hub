@@ -18056,6 +18056,758 @@ null
 283.7
 ],
 "hinweis": "Immobilienentwickler/-bestandshalter: Capex = Erwerb und Entwicklung von Immobilien (Investment Property, ohne Unternehmenskaeufe 58-297 Mio.), Bruttogewinn null (nicht sinnvoll definiert). EBIT = Operating Income vor Neubewertungsgewinnen (Neubewertung 2021-2025: ca. 700-1.140 Mio. p.a. im Vorsteuerergebnis). Steuer enthaelt latente Steuern auf Neubewertung. Dividende cash (Aktiendividende-Option senkt die Auszahlung). Cash ohne Wertpapiere (nur Cash & Equivalents). Schulden inkl. Leasing."
+},
+"ASML.AS": {
+"jahre": [
+2021,
+2022,
+2023,
+2024,
+2025
+],
+"ocf": [
+10846,
+8487,
+5443,
+11166,
+12659
+],
+"capex": [
+940.3,
+1319.5,
+2196.6,
+2082.9,
+1631.6
+],
+"da": [
+454.6,
+580.3,
+733.2,
+838.8,
+965
+],
+"div": [
+1368,
+2560,
+2348,
+2453,
+2550
+],
+"bb": [
+8560,
+4640,
+1000,
+500,
+5950
+],
+"cash": [
+7627,
+7378,
+7010,
+12751,
+13322
+],
+"debt": [
+4746,
+4684,
+4990,
+5065,
+4690
+],
+"umsatz": [
+18611,
+21173,
+27559,
+28263,
+32667
+],
+"brutto": [
+9809,
+10700,
+14136,
+14492,
+17258
+],
+"ebit": [
+6536,
+6501,
+9042,
+9023,
+11301
+],
+"zins": [
+54.6,
+60.8,
+152.7,
+162.6,
+118.3
+],
+"steuer": [
+1021,
+969.9,
+1436,
+1681,
+2013
+],
+"hinweis": "EUR. capex = Sachanlagen + immaterielle Werte. da = Abschreibungen laut Cashflow ohne 'Other Amortization' (16,4/3,3/6,6/79,8/74,5). cash = liquide Mittel inkl. kurzfr. Anlagen; debt inkl. Leasing. 2025: Bilanzsumme laut stockanalysis 50.567 (boerse.de 55.577 abweichend)."
+},
+"HEIA.AS": {
+"jahre": [
+2021,
+2022,
+2023,
+2024,
+2025
+],
+"ocf": [
+4181,
+4496,
+4430,
+5503,
+5012
+],
+"capex": [
+1597,
+2011,
+2677,
+2465,
+2402
+],
+"da": [
+1767,
+1900,
+1975,
+2159,
+2147
+],
+"div": [
+796,
+1099,
+1335,
+1199,
+1276
+],
+"bb": [
+0,
+43,
+942,
+5,
+701
+],
+"cash": [
+3248,
+2765,
+2377,
+2350,
+4773
+],
+"debt": [
+16873,
+16377,
+18238,
+17049,
+19279
+],
+"umsatz": [
+21941,
+28719,
+30362,
+29821,
+28753
+],
+"brutto": [
+8615,
+10397,
+10703,
+10796,
+10625
+],
+"ebit": [
+3052,
+4045,
+3809,
+3793,
+3710
+],
+"zins": [
+462,
+458,
+640,
+680,
+620
+],
+"steuer": [
+799,
+1131,
+121,
+846,
+857
+],
+"hinweis": "EUR. umsatz = Netto-Umsatz nach Abzug der Biersteuern (stockanalysis), brutto/ebit darauf bezogen; Konzernumsatz inkl. Steuern siehe reihen. capex = Sachanlagen + immaterielle Werte (vor Verkaeufen von Sachanlagen). da laut Cashflow (inkl. Wertminderungen). div = an Aktionaere der Heineken N.V. gezahlt (ohne Minderheiten-Dividenden). debt inkl. Leasing. Steuer 2023 nur 121 (Steuereffekte, effektive Rate 4,8 %). 2021 bb = keine."
+},
+"INGA.AS": {
+"jahre": [
+2021,
+2022,
+2023,
+2024,
+2025
+],
+"ocf": [
+null,
+null,
+null,
+null,
+null
+],
+"capex": [
+184,
+231,
+246,
+332,
+351
+],
+"da": [
+834,
+711,
+674,
+458,
+442
+],
+"div": [
+2342,
+3093,
+2967,
+3879,
+3884
+],
+"bb": [
+1608,
+1717,
+3531,
+3817,
+3705
+],
+"cash": [
+null,
+null,
+null,
+null,
+null
+],
+"debt": [
+null,
+null,
+null,
+null,
+null
+],
+"umsatz": [
+null,
+null,
+null,
+null,
+null
+],
+"brutto": [
+null,
+null,
+null,
+null,
+null
+],
+"ebit": [
+null,
+null,
+null,
+null,
+null
+],
+"zins": [
+null,
+null,
+null,
+null,
+null
+],
+"steuer": [
+null,
+null,
+null,
+null,
+null
+],
+"hinweis": "EUR. Bank: operativer Cashflow (stark negativ durch Kundengeschaefte), Cash, Schulden, Umsatz, Bruttogewinn, EBIT und Zinsaufwand nicht sinnvoll vergleichbar, daher null. Steuer null, weil die stockanalysis-Gewinnrechnung von ING stark von den Konzernzahlen abweicht (boerse.de/ING-Ergebnis siehe reihen). capex = Sachanlagen (stockanalysis, immaterielle nicht separat). da ohne 'Other Amortization' (2024: 215, 2025: 223). div = gezahlte Dividenden an Aktionaere; bb = Aktienrueckkaeufe."
+},
+"AD.AS": {
+"jahre": [
+2021,
+2022,
+2023,
+2024,
+2025
+],
+"ocf": [
+5468,
+6110,
+6466,
+6224,
+6989
+],
+"capex": [
+2371,
+2490,
+2434,
+2299,
+2564
+],
+"da": [
+2700,
+3062,
+3075,
+3009,
+3117
+],
+"div": [
+856,
+979,
+1044,
+1037,
+1070
+],
+"bb": [
+994,
+997,
+999,
+1000,
+1008
+],
+"cash": [
+null,
+null,
+null,
+6169,
+3605
+],
+"debt": [
+null,
+null,
+null,
+20315,
+18404
+],
+"umsatz": [
+75601,
+86984,
+88734,
+89356,
+92352
+],
+"brutto": [
+20685,
+23295,
+23854,
+23805,
+24514
+],
+"ebit": [
+3390,
+3908,
+3406,
+3406,
+3725
+],
+"zins": [
+null,
+null,
+null,
+340,
+350
+],
+"steuer": [
+null,
+null,
+null,
+481,
+649
+],
+"hinweis": "EUR. Cash/debt/zins/steuer nur 2024 und 2025 (Ahold-Delhaize-Q4-2025-Bericht; stockanalysis-Bilanz und Gewinnrechnung waren nicht abrufbar): cash = Bilanz-Kassenbestand (2025: 3.605, 2024: 6.169; inkl. kurzfr. Anlagen 3.705/6.185), debt = Bruttoschulden inkl. Leasing (Leasing 2025: 10.526). zins = Zinsaufwand (Nettofinanzaufwand 2025: 647, 2024: 562). 2021-2023 null. capex = Sachanlagen und immaterielle Werte lt. stockanalysis-Zeile 'Capital Expenditures'; da ohne 'Other Amortization' (307/371/392/468/473). ebit lt. stockanalysis (2025: 3.725; IFRS-Betriebsergebnis laut Ahold 3.542; 2023 und 2024 identisch 3.406, nicht gegengeprueft). Fiskaljahre mit 52/53 Wochen."
+},
+"PHIA.AS": {
+"jahre": [
+2021,
+2022,
+2023,
+2024,
+2025
+],
+"ocf": [
+5032,
+-185,
+2259,
+1556,
+1162
+],
+"capex": [
+763,
+806,
+644,
+676,
+668
+],
+"da": [
+951,
+1074,
+911,
+857,
+775
+],
+"div": [
+482,
+412,
+2,
+1,
+328
+],
+"bb": [
+1636,
+187,
+662,
+411,
+0
+],
+"cash": [
+2305,
+1183,
+1872,
+2401,
+2794
+],
+"debt": [
+6979,
+8201,
+7689,
+7639,
+8085
+],
+"umsatz": [
+17156,
+17827,
+18169,
+18021,
+17834
+],
+"brutto": [
+7168,
+7194,
+7448,
+7773,
+8058
+],
+"ebit": [
+513,
+-187,
+418,
+939,
+1431
+],
+"zins": [
+156,
+225,
+256,
+268,
+271
+],
+"steuer": [
+-103,
+-113,
+-73,
+963,
+282
+],
+"hinweis": "EUR. capex = Sachanlagen + immaterielle Werte. da ohne 'Other Amortization' (372/528/266/257/252); da/ebit enthalten 2022 Goodwill-Abschreibung 1.357 nur im Pretax, nicht im EBIT. div = Bardividende (Philips schuettet in den meisten Jahren ueberwiegend als Aktien aus: 2023/2024 praktisch 0). bb 2025 = keine. steuer 2021-2023 negativ = Steuerertrag; 2024 963 durch Rueckstellungen fuer Rechtsstreit (Respironics, 984 in Unusual Items). ocf 2021 5.032 inkl. Abgang Signify/Haushaltsgeraete-Effekte (2021 JÜ 3.319 durch 2.711 aus nicht fortgefuehrten Geschaeften). debt inkl. Leasing."
+},
+"PRX.AS": {
+"jahre": [
+2021,
+2022,
+2023,
+2024,
+2025
+],
+"ocf": [
+null,
+-605,
+-120,
+1045,
+1920
+],
+"capex": [
+null,
+242,
+263,
+66,
+105
+],
+"da": [
+null,
+168,
+158,
+159,
+119
+],
+"div": [
+null,
+238,
+191,
+199,
+268
+],
+"bb": [
+null,
+4995,
+10516,
+7277,
+8420
+],
+"cash": [
+null,
+13567,
+20874,
+18990,
+18898
+],
+"debt": [
+null,
+16291,
+16371,
+16328,
+16521
+],
+"umsatz": [
+null,
+5220,
+4947,
+5467,
+6170
+],
+"brutto": [
+null,
+1371,
+1637,
+2222,
+2624
+],
+"ebit": [
+null,
+-749,
+-306,
+-167,
+190
+],
+"zins": [
+null,
+null,
+null,
+null,
+null
+],
+"steuer": [
+null,
+null,
+null,
+null,
+null
+],
+"hinweis": "USD, Geschaeftsjahr endet 31. Maerz (Spalte 2025 = GJ25 bis 31.3.2025, 2022 = GJ22 usw.); GJ21 nicht verfuegbar (stockanalysis nur ab GJ22), zins/steuer nicht abrufbar. Beteiligungsholding: ocf, ebit und Bruttogewinn betreffen nur die konsolidierten Beteiligungen (Tencent-Anteil wird nicht konsolidiert), daher kaum vergleichbar mit Industriefirmen; Nettogewinn (GJ25 12.367) stammt ueberwiegend aus Beteiligungsbewertung. cash = liquide Mittel inkl. kurzfr. Anlagen; debt inkl. Leasing. capex = Sachanlagen + immaterielle Werte. bb = Aktienrueckkaeufe (Prosus/Naspers-Rueckkaufprogramm, hoher Abschlag zum Tencent-Wert)."
+},
+"NN.AS": {
+"jahre": [
+2021,
+2022,
+2023,
+2024,
+2025
+],
+"ocf": [
+null,
+null,
+null,
+null,
+null
+],
+"capex": [
+null,
+null,
+null,
+null,
+null
+],
+"da": [
+117,
+110,
+117,
+120,
+106
+],
+"div": [
+490,
+491,
+498,
+764,
+1049
+],
+"bb": [
+545,
+1391,
+632,
+529,
+298
+],
+"cash": [
+null,
+null,
+null,
+null,
+null
+],
+"debt": [
+null,
+null,
+null,
+null,
+null
+],
+"umsatz": [
+null,
+null,
+null,
+null,
+null
+],
+"brutto": [
+null,
+null,
+null,
+null,
+null
+],
+"ebit": [
+null,
+null,
+null,
+null,
+null
+],
+"zins": [
+null,
+null,
+null,
+null,
+null
+],
+"steuer": [
+669,
+108,
+348,
+334,
+312
+],
+"hinweis": "EUR. Versicherer: ocf (2021-2025 negativ/schwankend durch Versicherungsgeschaefte), capex (praktisch keine, nur 2021: 47), cash, debt, Umsatz, Bruttogewinn, EBIT und Zinsaufwand nicht sinnvoll vergleichbar, daher null. da ohne 'Other Amortization' (33/36/35/37/33). div = an Aktionaere gezahlt (2025 inkl. Zwischendividende), bb = Rueckkaeufe (2025: 298, Programm 300). steuer = Ertragsteuer lt. S&P (2022: 108 bei Pretax 648)."
+},
+"ABN.AS": {
+"jahre": [
+2021,
+2022,
+2023,
+2024,
+2025
+],
+"ocf": [
+null,
+null,
+null,
+null,
+null
+],
+"capex": [
+202,
+187,
+290,
+452,
+392
+],
+"da": [
+181,
+163,
+159,
+149,
+153
+],
+"div": [
+730,
+931,
+1208,
+1364,
+1302
+],
+"bb": [
+0,
+501,
+500,
+500,
+267
+],
+"cash": [
+null,
+null,
+null,
+null,
+null
+],
+"debt": [
+null,
+null,
+null,
+null,
+null
+],
+"umsatz": [
+null,
+null,
+null,
+null,
+null
+],
+"brutto": [
+null,
+null,
+null,
+null,
+null
+],
+"ebit": [
+null,
+null,
+null,
+null,
+null
+],
+"zins": [
+null,
+null,
+null,
+null,
+null
+],
+"steuer": [
+604,
+509,
+847,
+1013,
+834
+],
+"hinweis": "EUR. Bank: ocf (stark negativ durch Kredit-/Einlagengeschaeft), cash (Zentralbankguthaben 45-68 Mrd.), debt (Kapitalmarktfunding 78-97 Mrd.), Umsatz, Bruttogewinn, EBIT und Zinsaufwand (Zinsaufwand 2025: 8.122) nicht sinnvoll vergleichbar, daher null. capex = Sachanlagen + immaterielle Werte. da ohne 'Other Amortization'. div = Dividenden an Aktionaere (inkl. 2025 Zwischendividende), bb 2021 = keine. 2025 bb 267 kleiner als Programm (Rueckkauf teils 2026)."
 }
 }
 }

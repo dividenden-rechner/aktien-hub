@@ -1230,6 +1230,702 @@ null,
 14.7,
 12.79
 ]
+},
+"ASML.AS": {
+"name": "ASML Holding",
+"isin": "NL0010273215",
+"waehrung": "EUR",
+"hinweis": "Quelle boerse.de (2019-2024) und stockanalysis.com (2025: EBT 11.623, Jahresueberschuss 9.609, EPS 24,71, Eigenkapital 19.612 statt abweichender boerse.de-Werte 12.375/10.213/26,26/24.185, die nicht zu den Konzernzahlen passen). EPS verwaessert. Dividende je Aktie = fuer das Geschaeftsjahr; Ausschuettung laut boerse.de.",
+"umsatz": [
+11820,
+13979,
+18611,
+21173,
+27559,
+28263,
+32667
+],
+"ebt": [
+2784,
+4105,
+6905,
+6594,
+9275,
+9252,
+11623
+],
+"jahresueberschuss": [
+2592,
+3554,
+5883,
+5624,
+7839,
+7572,
+9609
+],
+"dividendenausschuettung": [
+1008,
+1145,
+2214,
+2289,
+2400,
+2517,
+2891
+],
+"eigenkapital": [
+12592,
+13865,
+10141,
+8811,
+13452,
+18477,
+19612
+],
+"eps": [
+6.15,
+8.48,
+14.34,
+14.13,
+19.89,
+19.24,
+24.71
+],
+"dividende_je_aktie": [
+2.4,
+2.75,
+5.5,
+5.8,
+6.1,
+6.4,
+7.5
+],
+"aktien_mio": [
+425.66,
+419.5,
+406.48,
+403.14,
+399.58,
+393.83,
+388.15
+],
+"eigenkapitalrendite_pct": [
+20.59,
+25.63,
+58.02,
+63.83,
+58.27,
+40.98,
+49.0
+]
+},
+"HEIA.AS": {
+"name": "Heineken",
+"isin": "NL0000009165",
+"waehrung": "EUR",
+"hinweis": "Quelle boerse.de. Umsatz laut boerse.de = Konzernumsatz inkl. Biersteuern (excise); der Netto-Umsatz (Revenue net of excise) liegt niedriger (2025: 28.753, siehe zusatz). Jahresueberschuss = Anteil der Aktionaere (ohne Minderheiten); EBT vor Minderheiten. Eigenkapital ohne Minderheiten. Aktienzahl laut boerse.de konstant 576 Mio. (ausstehend 2025 ca. 557 Mio.). EPS verwaessert. 2020 Verlust.",
+"umsatz": [
+28521,
+23770,
+26583,
+34676,
+36375,
+35955,
+34257
+],
+"ebt": [
+3284,
+157,
+4334,
+4170,
+2522,
+2007,
+2995
+],
+"jahresueberschuss": [
+2166,
+-204,
+3324,
+2682,
+2304,
+978,
+1885
+],
+"dividendenausschuettung": [
+967,
+403,
+875,
+995,
+978,
+1042,
+1046
+],
+"eigenkapital": [
+16147,
+13392,
+17356,
+19551,
+20056,
+19581,
+17978
+],
+"eps": [
+3.77,
+-0.36,
+5.77,
+4.65,
+4.09,
+1.74,
+3.38
+],
+"dividende_je_aktie": [
+1.68,
+0.7,
+1.24,
+1.73,
+1.73,
+1.86,
+1.9
+],
+"aktien_mio": [
+576,
+576,
+576,
+576,
+576,
+576,
+576
+],
+"eigenkapitalrendite_pct": [
+13.41,
+-1.52,
+19.15,
+13.72,
+11.49,
+4.99,
+10.49
+]
+},
+"INGA.AS": {
+"name": "ING Groep",
+"isin": "NL0011821202",
+"waehrung": "EUR",
+"hinweis": "Quelle boerse.de. Bank: Umsatz null (nicht sinnvoll). Jahresueberschuss/EBT laut boerse.de (stimmen mit den Konzernergebnissen von ING ueberein); die standardisierten stockanalysis-Werte (z. B. Net Income 2022 12.126, 2025 8.324) weichen stark ab und wurden nicht verwendet. EPS verwaessert. Aktienzahl laut boerse.de (Jahresdurchschnitt/-ende, Rueckkaeufe).",
+"umsatz": [
+null,
+null,
+null,
+null,
+null,
+null,
+null
+],
+"ebt": [
+6835,
+3809,
+6782,
+5502,
+10492,
+9300,
+9148
+],
+"jahresueberschuss": [
+4781,
+2485,
+4776,
+3674,
+7287,
+6392,
+6327
+],
+"dividendenausschuettung": [
+935,
+468,
+3419,
+3215,
+3698,
+3282,
+3152
+],
+"eigenkapital": [
+53769,
+54637,
+53919,
+49909,
+51240,
+50314,
+49698
+],
+"eps": [
+1.23,
+0.64,
+1.23,
+1.01,
+2.04,
+1.98,
+2.12
+],
+"dividende_je_aktie": [
+0.24,
+0.12,
+0.89,
+0.87,
+1.11,
+1.06,
+1.09
+],
+"aktien_mio": [
+3896.73,
+3900.67,
+3904.06,
+3726.54,
+3498.19,
+3147.39,
+3021.54
+],
+"eigenkapitalrendite_pct": [
+8.89,
+4.55,
+8.86,
+7.36,
+14.22,
+12.7,
+12.73
+]
+},
+"AD.AS": {
+"name": "Ahold Delhaize",
+"isin": "NL0011794037",
+"waehrung": "EUR",
+"hinweis": "Quelle boerse.de. Geschaeftsjahr endet Ende Dezember/Anfang Januar (2022: 53 Wochen bis 1.1.2023). 2025: Dividendenausschuettung bei boerse.de nicht angegeben (null). Aktienzahl 2025 laut boerse.de 900,00 (gerundet). EPS verwaessert. Eigenkapital laut boerse.de.",
+"umsatz": [
+66260,
+74736,
+75601,
+86984,
+88649,
+89356,
+92352
+],
+"ebt": [
+2183,
+1728,
+2837,
+3260,
+2330,
+2245,
+2895
+],
+"jahresueberschuss": [
+1766,
+1397,
+2246,
+2546,
+1874,
+1764,
+2264
+],
+"dividendenausschuettung": [
+827,
+942,
+961,
+1026,
+1041,
+1069,
+null
+],
+"eigenkapital": [
+14083,
+12432,
+13721,
+15405,
+14755,
+15454,
+14195
+],
+"eps": [
+1.59,
+1.3,
+2.17,
+2.54,
+1.94,
+1.89,
+2.5
+],
+"dividende_je_aktie": [
+0.76,
+0.9,
+0.95,
+1.05,
+1.1,
+1.17,
+1.24
+],
+"aktien_mio": [
+1100.73,
+1100.73,
+1045.72,
+993.72,
+952.36,
+920.49,
+900.0
+],
+"eigenkapitalrendite_pct": [
+12.54,
+11.24,
+16.37,
+16.53,
+12.7,
+11.41,
+15.95
+]
+},
+"PHIA.AS": {
+"name": "Koninklijke Philips",
+"isin": "NL0000009538",
+"waehrung": "EUR",
+"hinweis": "boerse.de-Seite war nicht abrufbar; Daten 2021-2025 von stockanalysis.com (S&P), 2019/2020 null. Jahresueberschuss = Anteil der Aktionaere (2021 inkl. 2.711 aus nicht fortgefuehrten Geschaeften, Verkauf Signify-Reste/Haushaltsgeraete). EPS verwaessert. Eigenkapital ohne Minderheiten. Aktienzahl = ausstehende Aktien zum Jahresende. Dividendenausschuettung null (Philips zahlt teils als Aktiendividende), Dividende je Aktie null (stockanalysis nach Zahlungsjahr, 2022 ohne Wert, daher nicht eindeutig).",
+"umsatz": [
+null,
+null,
+17156,
+17827,
+18169,
+18021,
+17834
+],
+"ebt": [
+null,
+null,
+509,
+-1731,
+-527,
+122,
+1182
+],
+"jahresueberschuss": [
+null,
+null,
+3319,
+-1608,
+-466,
+-702,
+895
+],
+"dividendenausschuettung": [
+null,
+null,
+null,
+null,
+null,
+null,
+null
+],
+"eigenkapital": [
+null,
+null,
+14439,
+13249,
+12028,
+12006,
+10957
+],
+"eps": [
+null,
+null,
+3.47,
+-1.69,
+-0.49,
+-0.75,
+0.93
+],
+"dividende_je_aktie": [
+null,
+null,
+null,
+null,
+null,
+null,
+null
+],
+"aktien_mio": [
+null,
+null,
+916.77,
+928.68,
+914.11,
+925.01,
+951.29
+],
+"eigenkapitalrendite_pct": [
+null,
+null,
+22.99,
+-12.14,
+-3.87,
+-5.85,
+8.17
+]
+},
+"PRX.AS": {
+"name": "Prosus",
+"isin": "NL0013654783",
+"waehrung": "USD",
+"hinweis": "Berichtswaehrung USD, Geschaeftsjahr endet 31. Maerz: Spalte 2025 = GJ Apr 2024 bis Maerz 2025 (FY25), 2019 = FY19 usw. Quelle boerse.de; Umsatz GJ22/GJ23 von stockanalysis nachtraeglich angepasst (5.220 / 4.947 statt 6.866 / 5.765). Ergebnis stark von Beteiligungsgewinnen (Tencent/Naspers-Strukturen) und Rueckkaeufen getrieben, nicht aus dem operativen Geschaeft (Betriebsergebnis GJ25: 190). Dividende wird in EUR beschlossen (GJ25 laut boerse.de 0,20 EUR); je Aktie hier stockanalysis in USD fuer GJ22-GJ25, vor GJ22 null (Aktiensplit 2021/22, boerse.de nicht split-bereinigt). EPS und Aktienzahl vor GJ22 ebenfalls null (Split); EPS GJ22-GJ25 laut stockanalysis (S&P), weicht von boerse.de-Werten ab (12,32/7,36/1,23/5,11). Dividendenausschuettung von boerse.de nicht geliefert.",
+"umsatz": [
+2654,
+3330,
+5116,
+6866,
+5765,
+5467,
+6170
+],
+"ebt": [
+4509,
+3790,
+7332,
+18691,
+10061,
+6751,
+12545
+],
+"jahresueberschuss": [
+4307,
+3824,
+7449,
+18733,
+10112,
+6606,
+12367
+],
+"dividendenausschuettung": [
+null,
+null,
+null,
+null,
+null,
+null,
+null
+],
+"eigenkapital": [
+27117,
+29100,
+43069,
+50421,
+44593,
+41260,
+51046
+],
+"eps": [
+null,
+null,
+null,
+2.22,
+2.51,
+1.74,
+5.1
+],
+"dividende_je_aktie": [
+null,
+null,
+null,
+0.071,
+0.053,
+0.108,
+0.216
+],
+"aktien_mio": [
+null,
+null,
+null,
+3095,
+3069,
+2495,
+2281
+],
+"eigenkapitalrendite_pct": [
+15.88,
+13.14,
+17.3,
+37.15,
+22.68,
+16.01,
+24.23
+]
+},
+"NN.AS": {
+"name": "NN Group",
+"isin": "NL0010773842",
+"waehrung": "EUR",
+"hinweis": "boerse.de-Seite war nicht abrufbar; Daten 2021-2025 von stockanalysis.com (S&P), Jahresueberschuss/EPS 2024 und 2025 mit der Pressemitteilung FY25 abgeglichen (1.583/1.188; EPS 5,58/4,17; EBT 1.936/1.509). 2019/2020 null. Versicherer: Umsatz null (stockanalysis-Gesamtertrag enthaelt Kursgewinne, nicht vergleichbar). Jahresueberschuss = Anteil der Aktionaere vor Zinsen auf AT1/Hybridkapital; 2022 inkl. 1.089 aus nicht fortgefuehrten Geschaeften (Verkauf NN Bank/Delta Lloyd-Reste), 2021 inkl. Verkaufsgewinnen. EPS = nach Abzug AT1-Coupons. Eigenkapital = stockanalysis 'Total Common Equity' inkl. Hybridkapital (Eigenkapital der Aktionaere laut NN: 2024 19.831, 2025 19.078). Dividende je Aktie = Gesamtdividende fuer das GJ. Aktienzahl = Jahresende.",
+"umsatz": [
+null,
+null,
+null,
+null,
+null,
+null,
+null
+],
+"ebt": [
+null,
+null,
+3832,
+648,
+1532,
+1936,
+1509
+],
+"jahresueberschuss": [
+null,
+null,
+3278,
+1634,
+1172,
+1583,
+1188
+],
+"dividendenausschuettung": [
+null,
+null,
+null,
+null,
+null,
+null,
+null
+],
+"eigenkapital": [
+null,
+null,
+34652,
+21029,
+21040,
+21567,
+21062
+],
+"eps": [
+null,
+null,
+10.41,
+5.33,
+4.04,
+5.58,
+4.17
+],
+"dividende_je_aktie": [
+null,
+null,
+2.49,
+2.79,
+3.2,
+3.44,
+3.88
+],
+"aktien_mio": [
+null,
+null,
+305.58,
+281.39,
+273.86,
+267.43,
+262.19
+],
+"eigenkapitalrendite_pct": [
+null,
+null,
+9.46,
+7.77,
+5.57,
+7.34,
+5.64
+]
+},
+"ABN.AS": {
+"name": "ABN AMRO Bank",
+"isin": "NL0011540547",
+"waehrung": "EUR",
+"hinweis": "Bank: Umsatz null. Quelle boerse.de (2019-2020, Aktienzahl, Eigenkapital bis 2024) und stockanalysis.com (2021-2025). Jahresueberschuss = Konzernergebnis inkl. Anteil der AT1-Inhaber; der den Aktionaeren zustehende Gewinn nach AT1 betraegt 2021-2025: 1.140/1.776/2.605/2.283/2.035. EPS 2021-2025 nach AT1 (stockanalysis), 2019/2020 laut boerse.de vor AT1 (2,18/-0,05, nicht direkt vergleichbar). Dividende je Aktie = Gesamtdividende je GJ (Interim+Final); 2020 ausgefallen/null. Dividendenausschuettung 2020 und 2023-2025 null (boerse.de zeigt dort nur die Schlussdividende bzw. 2025 keine Daten). Eigenkapital ohne Minderheiten, inkl. AT1? (Total Common Equity). 2025 aus stockanalysis (boerse.de leer).",
+"umsatz": [
+null,
+null,
+null,
+null,
+null,
+null,
+null
+],
+"ebt": [
+2680,
+356,
+1838,
+2377,
+3544,
+3416,
+3086
+],
+"jahresueberschuss": [
+2046,
+-45,
+1231,
+1868,
+2697,
+2403,
+2252
+],
+"dividendenausschuettung": [
+1203,
+null,
+573,
+889,
+null,
+null,
+null
+],
+"eigenkapital": [
+21471,
+20989,
+21994,
+22812,
+24165,
+26105,
+27040
+],
+"eps": [
+2.18,
+-0.05,
+1.21,
+1.96,
+2.99,
+2.72,
+2.45
+],
+"dividende_je_aktie": [
+1.28,
+null,
+0.61,
+0.99,
+1.51,
+1.35,
+1.24
+],
+"aktien_mio": [
+940,
+940,
+940,
+897.52,
+865.58,
+833.05,
+823.2
+],
+"eigenkapitalrendite_pct": [
+9.53,
+-0.21,
+5.6,
+8.19,
+11.16,
+9.21,
+8.33
+]
 }
 }
 }
