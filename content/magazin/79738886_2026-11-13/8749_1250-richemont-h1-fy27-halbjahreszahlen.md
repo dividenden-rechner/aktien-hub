@@ -10,13 +10,6 @@ quelle_name: "Richemont, Ad-hoc-Mitteilung und Präsentation zum ersten Halbjahr
 logo_name: "Richemont"
 story_image: assets/magazin/richemont-h1-fy27-halbjahreszahlen-f1.png
 story_text: "Richemont wächst im ersten Halbjahr um 16 % auf 12,3 Mrd. Euro. Den größten Teil liefern Cartier, Van Cleef & Arpels und die übrigen Schmuckhäuser, deren Umsatz um 18 % steigt. Amerika legt um 23 % zu, Japan währungsbereinigt um 30 %.\nDer Betriebsgewinn steigt um ein Drittel auf 3,1 Mrd. Euro. Darin stecken 229 Mio. Euro aus erstatteten Zöllen, die sich nicht wiederholen. Ohne sie bleibt eine Marge von 23,6 %, weil der teure Goldpreis auf die Bruttomarge drückt.\nSchwach bleiben China und der Nahe Osten. Im zweiten Quartal wächst der Konzern noch um 13 % nach 20 % im ersten. Einen Ausblick gibt Richemont nicht. Präsident Johann Rupert rechnet mit einem Umfeld, das auf absehbare Zeit unruhig bleibt."
-logo_symbol: CFR.SW
-logo_domain: richemont.com
-image: https://images.unsplash.com/photo-1766595898967-22c61e0be796?ixid=M3wxMTE3OTgzfDB8MXxzZWFyY2h8MXx8bHV4dXJ5JTIwd2F0Y2glMjBvbiUyMHdyaXN0fGVufDF8MHx8fDE3OTQ1NzE0NTZ8MA&ixlib=rb-4.1.0&w=1600&h=900&fit=crop&crop=entropy&q=80&fm=jpg
-image_alt: "Foto zu Richemont: A close-up of a luxury stainless steel wristwatch with a green dial and fluted bezel, worn with a formal suit, capturing timeless elegance and refined craftsmanship."
-image_credit: "Foto: Damian Kamp auf Unsplash"
-image_source: https://unsplash.com/photos/man-wearing-a-luxury-wristwatch-on-his-arm-miLQOt3_sMQ?utm_source=dividenden-rechner&utm_medium=referral
-image_artist_url: https://unsplash.com/@damiankamp?utm_source=dividenden-rechner&utm_medium=referral
 logo_file: assets/logos/cfr-sw.png
 ---
 <!-- PRÜFEN: Aufmacherfoto fehlt noch. Die Anfrage (Schmuck, Luxusuhr, Boutique; Unsplash) steht in tools/asset.request. Divi wählt das Foto auf Unsplash aus. -->
