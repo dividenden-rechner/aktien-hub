@@ -15236,6 +15236,758 @@ null
 842.35
 ],
 "hinweis": "Bank: Umsatz, Bruttogewinn, EBIT, Zinsen, OCF, Cash und Schulden nicht sinnvoll vergleichbar, daher null. steuer 2022 negativ = Steuerertrag. capex = Sachanlagen + immaterielle Werte (2024 und 2025 ohne immaterielle: 2024 nicht ausgewiesen, 2025 mit unplausiblem Zufluss +1658 bei stockanalysis); da 2025 = D&A 193,31 + sonstige Amortisation 184,13. 2025 Uebernahme Pop. Sondrio."
+},
+"ENEL.MI": {
+"jahre": [
+2021,
+2022,
+2023,
+2024,
+2025
+],
+"ocf": [
+9915,
+8649,
+14620,
+13223,
+13926
+],
+"capex": [
+13108,
+14503,
+13563,
+11010,
+10673
+],
+"da": [
+5592,
+6086,
+6353,
+6683,
+7100
+],
+"div": [
+5041,
+5024,
+5317,
+5372,
+6060
+],
+"bb": [
+13,
+14,
+772,
+324,
+2847
+],
+"cash": [
+8945,
+11119,
+6882,
+8189,
+5295
+],
+"debt": [
+72664,
+89593,
+75113,
+71323,
+69011
+],
+"umsatz": [
+83223,
+137956,
+94227,
+75709,
+79394
+],
+"brutto": [
+null,
+null,
+null,
+null,
+null
+],
+"ebit": [
+9375,
+10778,
+12780,
+14005,
+14252
+],
+"zins": [
+2333,
+2628,
+3524,
+3510,
+2846
+],
+"steuer": [
+1620,
+3523,
+2778,
+3654,
+2773
+],
+"hinweis": "stockanalysis.com. Umsatz inkl. Other Revenue (boerse.de-Reihe ohne). Brutto null (Energieversorger ohne Bruttogewinn-Ausweis). Capex = Sachanlagen plus Immaterielle (2021-2025 Sachanlagen 10545/11281/11383/8931/8506, Immaterielle 2563/3222/2180/2079/2167). D&A aus Gewinnrechnung (Cashflow-Rechnung weicht ab: 4601/6170/5387/6683/6577). Cash = liquide Mittel plus kurzfristige Anlagen ohne Trading Securities. Gezahlte Dividenden laut Cashflow (Common Dividends Paid) liegen ueber der Ausschuettung an Enel-Aktionaere, vermutlich inkl. Minderheiten. Rueckkauf 2025 2847 Mio. Schulden inkl. Leasing."
+},
+"UCG.MI": {
+"jahre": [
+2021,
+2022,
+2023,
+2024,
+2025
+],
+"ocf": [
+null,
+null,
+null,
+null,
+null
+],
+"capex": [
+1237,
+1170,
+1150,
+1738,
+1264
+],
+"da": [
+1274,
+1148,
+1625,
+1306,
+1113
+],
+"div": [
+774,
+1702,
+2440,
+4950,
+5007
+],
+"bb": [
+634,
+3543,
+6013,
+6040,
+2948
+],
+"cash": [
+null,
+null,
+null,
+null,
+null
+],
+"debt": [
+null,
+null,
+null,
+null,
+null
+],
+"umsatz": [
+null,
+null,
+null,
+null,
+null
+],
+"brutto": [
+null,
+null,
+null,
+null,
+null
+],
+"ebit": [
+null,
+null,
+null,
+null,
+null
+],
+"zins": [
+null,
+null,
+null,
+null,
+null
+],
+"steuer": [
+-343,
+819,
+1917,
+3086,
+2590
+],
+"hinweis": "stockanalysis.com. Bank: Umsatz, Bruttogewinn, EBIT, Zinsen, Cash und Schulden null (Zins und Einlagen sind operatives Geschaeft; Operating Cashflow durch Handels-/Kreditbestandsaenderungen nicht aussagekraeftig, 2023 -41128). Capex = Sachanlagen plus Immaterielle. D&A 2025 = Abschreibungen 569 plus Other Amortization 544 (2021-2024 ausgewiesen als ein Posten). Steuer 2021 = Steuerertrag -343 (negativ). Dividenden und Rueckkaeufe laut Cashflow-Rechnung."
+},
+"ISP.MI": {
+"jahre": [
+2021,
+2022,
+2023,
+2024,
+2025
+],
+"ocf": [
+null,
+null,
+null,
+null,
+null
+],
+"capex": [
+1874,
+1845,
+1582,
+1665,
+1650
+],
+"da": [
+1446,
+1524,
+1501,
+1491,
+1727
+],
+"div": [
+4041,
+2966,
+4293,
+5830,
+6324
+],
+"bb": [
+1538,
+1118,
+1709,
+1736,
+3464
+],
+"cash": [
+null,
+null,
+null,
+null,
+null
+],
+"debt": [
+null,
+null,
+null,
+null,
+null
+],
+"umsatz": [
+null,
+null,
+null,
+null,
+null
+],
+"brutto": [
+null,
+null,
+null,
+null,
+null
+],
+"ebit": [
+null,
+null,
+null,
+null,
+null
+],
+"zins": [
+null,
+null,
+null,
+null,
+null
+],
+"steuer": [
+1138,
+1673,
+2994,
+3399,
+3304
+],
+"hinweis": "stockanalysis.com. Bank: Umsatz, Bruttogewinn, EBIT, Zinsen, Cash und Schulden null (nicht sinnvoll vergleichbar). Operating Cashflow nicht aussagekraeftig (2024 -40187, 2022 +102276 wegen Bestandsaenderungen). Capex = Sachanlagen plus Immaterielle. D&A 2025 = 623 plus Other Amortization 1104 (2021-2024 ein Posten). Steuer laut stockanalysis (Pretax 2022 6075). Dividenden und Rueckkaeufe laut Cashflow-Rechnung."
+},
+"ENI.MI": {
+"jahre": [
+2021,
+2022,
+2023,
+2024,
+2025
+],
+"ocf": [
+12861,
+17460,
+15119,
+13092,
+13330
+],
+"capex": [
+5233,
+8039,
+9183,
+8464,
+9225
+],
+"da": [
+6953,
+7019,
+7280,
+10129,
+7911
+],
+"div": [
+2419,
+3147,
+3184,
+3206,
+3390
+],
+"bb": [
+400,
+2400,
+1803,
+2012,
+1914
+],
+"cash": [
+14555,
+18406,
+16975,
+14980,
+15091
+],
+"debt": [
+33131,
+31868,
+34065,
+36843,
+34202
+],
+"umsatz": [
+77664,
+133639,
+94789,
+91166,
+83604
+],
+"brutto": [
+22435,
+31480,
+21272,
+20376,
+16852
+],
+"ebit": [
+12416,
+19012,
+10219,
+6009,
+5229
+],
+"zins": [
+789,
+831,
+1045,
+1309,
+1246
+],
+"steuer": [
+4845,
+8088,
+5368,
+3725,
+3020
+],
+"hinweis": "stockanalysis.com. Umsatz inkl. Other Revenue (boerse-Reihe ohne). Capex = Sachanlagen plus Immaterielle (Sachanlagen 4950/7700/8739/7999/8702, Immaterielle 283/339/444/465/523). D&A laut Cashflow; 2024 mit 10129 inkl. Wertminderungen (Gewinnrechnung-D&A 2024 9207), 2025 7911. Cash = liquide Mittel plus Trading Securities (Cash & Short-Term Investments laut stockanalysis); liquide Mittel allein 8254/10155/10193/8183/8100. Schulden inkl. Leasing. Steuerquote sehr hoch (45-57 %, Upstream-Ertraege)."
+},
+"G.MI": {
+"jahre": [
+2021,
+2022,
+2023,
+2024,
+2025
+],
+"ocf": [
+null,
+null,
+null,
+null,
+null
+],
+"capex": [
+null,
+917,
+177,
+378,
+441
+],
+"da": [
+777,
+464,
+298,
+444,
+461
+],
+"div": [
+2310,
+1909,
+1793,
+1986,
+2171
+],
+"bb": [
+null,
+500,
+191,
+764,
+833
+],
+"cash": [
+null,
+null,
+null,
+null,
+null
+],
+"debt": [
+20318,
+36225,
+35346,
+37544,
+39570
+],
+"umsatz": [
+null,
+null,
+null,
+null,
+null
+],
+"brutto": [
+null,
+null,
+null,
+null,
+null
+],
+"ebit": [
+null,
+null,
+null,
+null,
+null
+],
+"zins": [
+736,
+608,
+793,
+1150,
+821
+],
+"steuer": [
+1384,
+1378,
+1536,
+1843,
+1717
+],
+"hinweis": "stockanalysis.com. Versicherer: Umsatz, Bruttogewinn, EBIT, Operating Cashflow (durch Reservenveraenderungen 1732 bis 19669 nicht aussagekraeftig) und Cash (Kapitalanlagen nicht trennbar) null. Debt = Finanzschulden inkl. Leasing (2021 20318, ab 2022 sprunghaft hoeher wegen Umgliederung). Zins = Interest Expense. Capex 2021 nicht ausgewiesen, 2021 Rueckkauf nicht ausgewiesen (null). D&A 2025 = 404 plus Other Amortization 57. Dividenden und Rueckkaeufe laut Cashflow-Rechnung."
+},
+"RACE.MI": {
+"jahre": [
+2021,
+2022,
+2023,
+2024,
+2025
+],
+"ocf": [
+1283,
+1403,
+1717,
+1927,
+2349
+],
+"capex": [
+737,
+805,
+869,
+989,
+943
+],
+"da": [
+456,
+546,
+662,
+667,
+662
+],
+"div": [
+160,
+250,
+329,
+440,
+530
+],
+"bb": [
+231,
+397,
+461,
+581,
+785
+],
+"cash": [
+1352,
+1433,
+1145,
+1698,
+1417
+],
+"debt": [
+2630,
+2812,
+2477,
+3352,
+2884
+],
+"umsatz": [
+4271,
+5095,
+5970,
+6677,
+7146
+],
+"brutto": [
+2190,
+2446,
+2974,
+3347,
+3693
+],
+"ebit": [
+1069,
+1221,
+1611,
+1880,
+2104
+],
+"zins": [
+24,
+25,
+29,
+40,
+41
+],
+"steuer": [
+209,
+238,
+345,
+363,
+464
+],
+"hinweis": "stockanalysis.com, EUR, auf ganze Mio. gerundet. Capex = Sachanlagen plus Immaterielle (aktivierte Entwicklungskosten), Sachanlagen 352/348/382/482/485, Immaterielle 385/457/487/507/458. D&A = Abschreibungen Sachanlagen plus Immaterielle laut Cashflow (Gewinnrechnung-D&A nur Sachanlagen 246/272/300/309/303). Cash inkl. kurzfristige Anlagen und Trading Securities. Schulden inkl. Leasing und Verbindlichkeiten des Finanzierungsgeschaefts (ca. 1,4 bis 1,7 Mrd. EUR, 2021 nicht getrennt)."
+},
+"SRG.MI": {
+"jahre": [
+2021,
+2022,
+2023,
+2024,
+2025
+],
+"ocf": [
+1338,
+4109,
+-135,
+1814,
+2688
+],
+"capex": [
+1244,
+1321,
+1796,
+2814,
+2709
+],
+"da": [
+809,
+868,
+925,
+984,
+1102
+],
+"div": [
+811,
+866,
+933,
+946,
+974
+],
+"bb": [
+5,
+3,
+3,
+2,
+3
+],
+"cash": [
+1337,
+1757,
+1382,
+2156,
+2041
+],
+"debt": [
+15361,
+13680,
+16652,
+18361,
+19535
+],
+"umsatz": [
+3297,
+3515,
+4288,
+3568,
+3885
+],
+"brutto": [
+2556,
+2621,
+2872,
+3143,
+3372
+],
+"ebit": [
+1450,
+1390,
+1504,
+1734,
+1866
+],
+"zins": [
+114,
+140,
+251,
+418,
+439
+],
+"steuer": [
+115,
+378,
+389,
+422,
+397
+],
+"hinweis": "stockanalysis.com. Operating Cashflow 2023 negativ (-135) und 2022 hoch (4109) wegen Erdgas-Vorratsveraenderungen und Working Capital. Capex = Sachanlagen plus Immaterielle (Sachanlagen 1096/1142/1543/2538/2429, Immaterielle 148/179/253/276/280); ohne Zukaeufe (2025 564). Bruttogewinn = Umsatz minus Cost of Revenue (Gasbezug u. a.), nur eingeschraenkt vergleichbar. Cash inkl. kurzfristige Anlagen. Schulden inkl. Leasing."
+},
+"TRN.MI": {
+"jahre": [
+2021,
+2022,
+2023,
+2024,
+2025
+],
+"ocf": [
+832,
+2324,
+1085,
+1477,
+2628
+],
+"capex": [
+1475,
+1704,
+2265,
+2589,
+3346
+],
+"da": [
+656,
+719,
+766,
+862,
+946
+],
+"div": [
+547,
+596,
+672,
+698,
+814
+],
+"bb": [
+10,
+10,
+7,
+8,
+9
+],
+"cash": [
+2525,
+2402,
+1740,
+2739,
+2564
+],
+"debt": [
+12552,
+11062,
+12274,
+13906,
+15576
+],
+"umsatz": [
+2565,
+2924,
+3154,
+3661,
+4010
+],
+"brutto": [
+null,
+null,
+null,
+null,
+null
+],
+"ebit": [
+1174,
+1323,
+1367,
+1697,
+1804
+],
+"zins": [
+92,
+114,
+187,
+274,
+274
+],
+"steuer": [
+318,
+355,
+364,
+455,
+495
+],
+"hinweis": "stockanalysis.com, auf ganze Mio. gerundet. Bruttogewinn null (kein Cost of Revenue ausgewiesen). Capex = Sachanlagen plus Immaterielle (Sachanlagen 1344/1492/2049/2322/2945, Immaterielle 131/212/216/267/401); ohne Zukaeufe (2025 232). D&A laut Cashflow (Gewinnrechnung 2023-2025: 798/874/946). Cash = liquide Mittel plus kurzfristige Anlagen. Schulden inkl. Leasing. Operating Cashflow stark von Working Capital (Forderungen/Verbindlichkeiten aus Energiesystem) beeinflusst."
 }
 }
 }

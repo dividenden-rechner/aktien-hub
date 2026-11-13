@@ -1578,6 +1578,702 @@ null,
 12.36,
 10.97
 ]
+},
+"ENEL.MI": {
+"name": "Enel",
+"isin": "IT0003128367",
+"waehrung": "EUR",
+"hinweis": "Quelle boerse.de (Umsatz = Operating Revenue ohne Other Revenue, EBT, Jahresueberschuss = Anteil der Aktionaere, Eigenkapital ohne Minderheiten, EPS verwaessert, Aktienzahl 10.167 Mio. = Aktienkapital). Dividende je Aktie nach Geschaeftsjahr. Dividendenausschuettung laut boerse.de.",
+"umsatz": [
+80327,
+64623,
+84104,
+135653,
+92882,
+73914,
+78057
+],
+"ebt": [
+4312,
+5463,
+5500,
+6443,
+7045,
+11883,
+8354
+],
+"jahresueberschuss": [
+2174,
+2610,
+3189,
+1682,
+3438,
+7016,
+4225
+],
+"dividendenausschuettung": [
+3335,
+3640,
+3863,
+4067,
+4367,
+4773,
+4916
+],
+"eigenkapital": [
+30377,
+28325,
+29653,
+28657,
+31755,
+33731,
+32068
+],
+"eps": [
+0.21,
+0.26,
+0.31,
+0.15,
+0.32,
+0.67,
+0.39
+],
+"dividende_je_aktie": [
+0.33,
+0.36,
+0.38,
+0.4,
+0.43,
+0.47,
+0.49
+],
+"aktien_mio": [
+10167,
+10167,
+10167,
+10167,
+10167,
+10167,
+10167
+],
+"eigenkapitalrendite_pct": [
+7.16,
+9.21,
+10.75,
+5.87,
+10.83,
+20.8,
+13.18
+]
+},
+"UCG.MI": {
+"name": "UniCredit",
+"isin": "IT0005239360",
+"waehrung": "EUR",
+"hinweis": "Quelle stockanalysis.com (boerse.de-Seite nicht abrufbar), nur 2021-2025, 2019/2020 null. Bank: Umsatz null. Jahresueberschuss = Net Income nach Minderheiten, vor Abzug von Zusatzkapital-Zinsen (Net Income to Common 2021-2025: 2066/6384/9332/9472/10709). Eigenkapital = Total Common Equity ohne Minderheiten. EPS verwaessert. Aktien = Stueck zum Jahresende (Aktienrueckkaeufe, 2021 2211 auf 2025 1503). Dividende je Aktie nach stockanalysis (inkl. Zwischendividende, Geschaeftsjahr). Dividendenausschuettung = Dividende je Aktie x Aktienzahl (berechnet). Eigenkapitalrendite berechnet.",
+"umsatz": [
+null,
+null,
+null,
+null,
+null,
+null,
+null
+],
+"ebt": [
+null,
+null,
+1779,
+7289,
+11451,
+12860,
+13569
+],
+"jahresueberschuss": [
+null,
+null,
+2096,
+6458,
+9507,
+9719,
+10915
+],
+"dividendenausschuettung": [
+null,
+null,
+1190,
+1910,
+3087,
+3704,
+4733
+],
+"eigenkapital": [
+null,
+null,
+62185,
+63339,
+64079,
+62441,
+67711
+],
+"eps": [
+null,
+null,
+0.92,
+3.06,
+5.04,
+5.78,
+6.91
+],
+"dividende_je_aktie": [
+null,
+null,
+0.538,
+0.987,
+1.803,
+2.402,
+3.149
+],
+"aktien_mio": [
+null,
+null,
+2211,
+1935,
+1712,
+1542,
+1503
+],
+"eigenkapitalrendite_pct": [
+null,
+null,
+3.37,
+10.2,
+14.84,
+15.57,
+16.12
+]
+},
+"ISP.MI": {
+"name": "Intesa Sanpaolo",
+"isin": "IT0000072618",
+"waehrung": "EUR",
+"hinweis": "Quelle boerse.de (Aktienseite: EBT, Gewinn, Eigenkapital, EPS verwaessert) plus stockanalysis.com (Aktienzahl, Dividende); nur 2021-2025, 2019/2020 null (boerse.de-Fundamentalseite nicht abrufbar). Bank: Umsatz null. Aktien = gewichteter Durchschnitt (Stueck zum Jahresende nicht erhoben). Dividende je Aktie nach stockanalysis (Geschaeftsjahr inkl. Zwischendividende; 2021 0,251 und 2022 0,164 nicht gegengeprueft). Dividendenausschuettung = Dividende je Aktie x Aktienzahl (berechnet). EPS 2024 boerse 0,49 verwaessert, stockanalysis 0,48. EBT 2022 boerse 6007, stockanalysis 6075; Gewinn 2022 boerse 4354, stockanalysis 4379. Eigenkapitalrendite berechnet.",
+"umsatz": [
+null,
+null,
+null,
+null,
+null,
+null,
+null
+],
+"ebt": [
+null,
+null,
+5181,
+6007,
+10746,
+12058,
+12645
+],
+"jahresueberschuss": [
+null,
+null,
+4185,
+4354,
+7724,
+8666,
+9321
+],
+"dividendenausschuettung": [
+null,
+null,
+4864,
+3168,
+5438,
+6144,
+6612
+],
+"eigenkapital": [
+null,
+null,
+63775,
+61655,
+63963,
+65176,
+65378
+],
+"eps": [
+null,
+null,
+0.22,
+0.23,
+0.42,
+0.49,
+0.53
+],
+"dividende_je_aktie": [
+null,
+null,
+0.251,
+0.164,
+0.296,
+0.341,
+0.376
+],
+"aktien_mio": [
+null,
+null,
+19378,
+19316,
+18370,
+18017,
+17584
+],
+"eigenkapitalrendite_pct": [
+null,
+null,
+6.56,
+7.06,
+12.08,
+13.3,
+14.26
+]
+},
+"ENI.MI": {
+"name": "Eni",
+"isin": "IT0003132476",
+"waehrung": "EUR",
+"hinweis": "Quelle stockanalysis.com (boerse.de-Seite nicht abrufbar), nur 2021-2025, 2019/2020 null. Umsatz = Operating Revenue ohne Other Revenue (2021-2025 Other Revenue 1089/1127/1072/2369/1453). Jahresueberschuss = Anteil der Aktionaere (Net Income, vor Abzug von Zusatzkapital-Zinsen; Net Income to Common 5726/13778/4662/2492/2371). Eigenkapital = Total Common Equity ohne Minderheiten. EPS verwaessert. Aktien = Stueck zum Jahresende (Rueckkaeufe). Dividende je Aktie nach Geschaeftsjahr. Dividendenausschuettung = Dividende je Aktie x Aktienzahl (berechnet). Eigenkapitalrendite berechnet.",
+"umsatz": [
+null,
+null,
+76575,
+132512,
+93717,
+88797,
+82151
+],
+"ebt": [
+null,
+null,
+10685,
+22049,
+10228,
+6489,
+5778
+],
+"jahresueberschuss": [
+null,
+null,
+5821,
+13887,
+4771,
+2624,
+2608
+],
+"dividendenausschuettung": [
+null,
+null,
+3044,
+2944,
+3026,
+3081,
+3106
+],
+"eigenkapital": [
+null,
+null,
+44437,
+54759,
+53184,
+52785,
+47940
+],
+"eps": [
+null,
+null,
+1.6,
+3.95,
+1.4,
+0.78,
+0.78
+],
+"dividende_je_aktie": [
+null,
+null,
+0.86,
+0.88,
+0.94,
+1.0,
+1.05
+],
+"aktien_mio": [
+null,
+null,
+3540,
+3345,
+3219,
+3081,
+2958
+],
+"eigenkapitalrendite_pct": [
+null,
+null,
+13.1,
+25.36,
+8.97,
+4.97,
+5.44
+]
+},
+"G.MI": {
+"name": "Generali",
+"isin": "IT0000062072",
+"waehrung": "EUR",
+"hinweis": "Quelle stockanalysis.com (boerse.de-Seite nicht abrufbar), nur 2021-2025, 2019/2020 null. Versicherer: Umsatz null (Gesamterloese inkl. Kapitalanlageergebnis und fondsgebundene Posten nicht vergleichbar; 2021 95668 vs. 2022 50736 wegen Umgliederung). Jahresueberschuss = Anteil der Aktionaere. Eigenkapital = Total Common Equity ohne Minderheiten. EPS verwaessert. Aktien = Stueck zum Jahresende. Dividende je Aktie nach Geschaeftsjahr. Dividendenausschuettung = Dividende je Aktie x Aktienzahl (berechnet). Eigenkapitalrendite berechnet.",
+"umsatz": [
+null,
+null,
+null,
+null,
+null,
+null,
+null
+],
+"ebt": [
+null,
+null,
+4579,
+3941,
+5574,
+6040,
+6363
+],
+"jahresueberschuss": [
+null,
+null,
+2847,
+2235,
+3747,
+3724,
+4172
+],
+"dividendenausschuettung": [
+null,
+null,
+1685,
+1795,
+1974,
+2176,
+2467
+],
+"eigenkapital": [
+null,
+null,
+29308,
+26650,
+28968,
+30389,
+32064
+],
+"eps": [
+null,
+null,
+1.79,
+1.42,
+2.41,
+2.38,
+2.69
+],
+"dividende_je_aktie": [
+null,
+null,
+1.07,
+1.16,
+1.28,
+1.43,
+1.64
+],
+"aktien_mio": [
+null,
+null,
+1575,
+1547,
+1542,
+1522,
+1504
+],
+"eigenkapitalrendite_pct": [
+null,
+null,
+9.71,
+8.39,
+12.93,
+12.25,
+13.01
+]
+},
+"RACE.MI": {
+"name": "Ferrari",
+"isin": "NL0011585146",
+"waehrung": "EUR",
+"hinweis": "Quelle stockanalysis.com (boerse.de-Seite nicht abrufbar), nur 2021-2025, 2019/2020 null. Berichtswaehrung EUR (Ferrari N.V., Sitz Niederlande). Umsatz = Net Revenues inkl. Other Revenue (2021 ohne). Jahresueberschuss = Anteil der Aktionaere. Eigenkapital = Total Common Equity. EPS verwaessert. Aktien = Stueck zum Jahresende. Dividende je Aktie nach Geschaeftsjahr laut stockanalysis, nicht gegen Ferrari-Berichte geprueft. Dividendenausschuettung = Dividende je Aktie x Aktienzahl (berechnet). Eigenkapitalrendite berechnet.",
+"umsatz": [
+null,
+null,
+4271,
+5095,
+5970,
+6677,
+7146
+],
+"ebt": [
+null,
+null,
+1042,
+1178,
+1602,
+1889,
+2064
+],
+"jahresueberschuss": [
+null,
+null,
+831,
+933,
+1252,
+1522,
+1597
+],
+"dividendenausschuettung": [
+null,
+null,
+250,
+329,
+441,
+535,
+641
+],
+"eigenkapital": [
+null,
+null,
+2206,
+2593,
+3061,
+3534,
+3907
+],
+"eps": [
+null,
+null,
+4.5,
+5.09,
+6.9,
+8.46,
+8.96
+],
+"dividende_je_aktie": [
+null,
+null,
+1.362,
+1.81,
+2.443,
+2.986,
+3.615
+],
+"aktien_mio": [
+null,
+null,
+183.84,
+181.95,
+180.42,
+179.04,
+177.28
+],
+"eigenkapitalrendite_pct": [
+null,
+null,
+37.67,
+35.98,
+40.9,
+43.07,
+40.88
+]
+},
+"SRG.MI": {
+"name": "Snam",
+"isin": "IT0003153415",
+"waehrung": "EUR",
+"hinweis": "Quelle stockanalysis.com (boerse.de-Seite nicht abrufbar), nur 2021-2025, 2019/2020 null. Umsatz = Revenue inkl. Other Revenue (wie berichtet). Jahresueberschuss = Anteil der Aktionaere (Net Income; Net Income to Common 2024/2025: 1251/1236). Eigenkapital = Total Common Equity ohne Minderheiten. EPS verwaessert. Aktien = Stueck zum Jahresende. Dividende je Aktie nach Geschaeftsjahr. Dividendenausschuettung = Dividende je Aktie x Aktienzahl (berechnet). Eigenkapitalrendite berechnet. 2021 EBT inkl. hoher Beteiligungsertraege, Steuerquote 2021 nur 7 %.",
+"umsatz": [
+null,
+null,
+3297,
+3515,
+4288,
+3568,
+3885
+],
+"ebt": [
+null,
+null,
+1615,
+1050,
+1534,
+1679,
+1664
+],
+"jahresueberschuss": [
+null,
+null,
+1496,
+671,
+1135,
+1259,
+1270
+],
+"dividendenausschuettung": [
+null,
+null,
+857,
+924,
+946,
+973,
+1014
+],
+"eigenkapital": [
+null,
+null,
+7203,
+7468,
+7635,
+8929,
+9237
+],
+"eps": [
+null,
+null,
+0.45,
+0.2,
+0.34,
+0.37,
+0.37
+],
+"dividende_je_aktie": [
+null,
+null,
+0.262,
+0.275,
+0.282,
+0.29,
+0.302
+],
+"aktien_mio": [
+null,
+null,
+3272,
+3361,
+3354,
+3354,
+3356
+],
+"eigenkapitalrendite_pct": [
+null,
+null,
+20.77,
+8.99,
+14.87,
+14.1,
+13.75
+]
+},
+"TRN.MI": {
+"name": "Terna",
+"isin": "IT0003242622",
+"waehrung": "EUR",
+"hinweis": "Quelle stockanalysis.com (boerse.de-Seite nicht abrufbar), nur 2021-2025, 2019/2020 null. Umsatz = Revenue inkl. Other Revenue. Jahresueberschuss = Anteil der Aktionaere (Net Income; 2025 Net Income to Common nach Zusatzkapital-Zinsen 1063). Eigenkapital = Total Common Equity ohne Minderheiten. EPS verwaessert (2025 0,53 bezieht sich auf Net Income to Common). Aktien = Stueck zum Jahresende. Dividende je Aktie nach stockanalysis (2024 0,396 und 2025 0,369, Rueckgang untypisch, nicht gegen Terna-Berichte geprueft). Dividendenausschuettung = Dividende je Aktie x Aktienzahl (berechnet). Eigenkapitalrendite berechnet.",
+"umsatz": [
+null,
+null,
+2565,
+2924,
+3154,
+3661,
+4010
+],
+"ebt": [
+null,
+null,
+1122,
+1233,
+1245,
+1506,
+1608
+],
+"jahresueberschuss": [
+null,
+null,
+789,
+857,
+885,
+1062,
+1112
+],
+"dividendenausschuettung": [
+null,
+null,
+584,
+630,
+682,
+794,
+740
+],
+"eigenkapital": [
+null,
+null,
+4682,
+6142,
+6324,
+7524,
+7791
+],
+"eps": [
+null,
+null,
+0.39,
+0.43,
+0.43,
+0.52,
+0.53
+],
+"dividende_je_aktie": [
+null,
+null,
+0.291,
+0.314,
+0.34,
+0.396,
+0.369
+],
+"aktien_mio": [
+null,
+null,
+2007,
+2006,
+2006,
+2006,
+2006
+],
+"eigenkapitalrendite_pct": [
+null,
+null,
+16.85,
+13.95,
+13.99,
+14.11,
+14.27
+]
 }
 }
 }
