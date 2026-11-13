@@ -230,6 +230,17 @@
 "name": "Blackstone Secured Lending Fund",
 "quartale": [
 {
+"periode_ende": "2024-09-30",
+"nav_je_aktie": 27.27,
+"nii_je_aktie": 0.91,
+"nii_bereinigt_je_aktie": 0,
+"non_accrual_fv_proz": 0.1,
+"portfolio_mio": 12000,
+"verschuldung_netto": 0.005574581297587742,
+"meldung": "2024-11-12",
+"quelle": "https://www.sec.gov/Archives/edgar/data/1736035/000119312524255091/d848624dex991.htm"
+},
+{
 "periode_ende": "2024-12-31",
 "nav_je_aktie": 27.39,
 "nii_je_aktie": 0.84,
@@ -500,6 +511,21 @@
 "name": "Sixth Street Specialty Lending, Inc.",
 "quartale": [
 {
+"periode_ende": "2024-09-30",
+"nav_je_aktie": 17.12,
+"nii_je_aktie": 0.59,
+"beleg_nav": "Reported net asset value (NAV) per share was $17.12 at September 30, 2024",
+"dividende_quartal": "Q4 2024",
+"dividende_regulaer": 0.46,
+"dividende_zusatz": 0.05,
+"nii_bereinigt_je_aktie": 0.57,
+"non_accrual_fv_proz": 1.9,
+"portfolio_mio": 3441.1,
+"verschuldung_netto": 1.19,
+"meldung": "2024-11-05",
+"quelle": "https://www.sec.gov/Archives/edgar/data/1508655/000095017024121446/tslx-ex99_1.htm"
+},
+{
 "periode_ende": "2024-12-31",
 "nav_je_aktie": 17.16,
 "nii_je_aktie": 0.62,
@@ -624,6 +650,21 @@
 "MSDL": {
 "name": "Morgan Stanley Direct Lending Fund",
 "quartale": [
+{
+"periode_ende": "2024-09-30",
+"nav_je_aktie": 20.83,
+"nii_je_aktie": 0.66,
+"beleg_nav": "Net asset value of $20.83 per share",
+"dividende_quartal": "Q4 2024",
+"dividende_regulaer": 0.5,
+"dividende_zusatz": 0.1,
+"nii_bereinigt_je_aktie": 0,
+"non_accrual_fv_proz": 0,
+"portfolio_mio": 3640.324,
+"verschuldung_netto": 0.94,
+"meldung": "2024-11-07",
+"quelle": "https://www.sec.gov/Archives/edgar/data/1782524/000119312524253290/d862399dex991.htm"
+},
 {
 "periode_ende": "2024-12-31",
 "nav_je_aktie": 20.81,
@@ -879,6 +920,21 @@
 "name": "Goldman Sachs BDC, Inc.",
 "quartale": [
 {
+"periode_ende": "2024-09-30",
+"nav_je_aktie": 13.54,
+"nii_je_aktie": 0.58,
+"beleg_nav": "Net asset value (\"NAV\") per share for the quarter ended September 30, 2024 decreased 1.0% to $13.54 from $13.67 as of June 30, 2024.",
+"dividende_quartal": "Q4 2024",
+"dividende_regulaer": 0.45,
+"dividende_zusatz": 0,
+"nii_bereinigt_je_aktie": 0.57,
+"non_accrual_fv_proz": 2.2,
+"portfolio_mio": 3442.1,
+"verschuldung_netto": 1.16,
+"meldung": "2024-11-07",
+"quelle": "https://www.sec.gov/Archives/edgar/data/1572694/000119312524253310/d862485dex991.htm"
+},
+{
 "periode_ende": "2024-12-31",
 "nav_je_aktie": 13.41,
 "nii_je_aktie": 0.48,
@@ -998,6 +1054,31 @@
 "MFIC": {
 "name": "MidCap Financial Investment Corp",
 "quartale": [
+{
+"periode_ende": "2024-09-30",
+"nav_je_aktie": 15.1,
+"nii_je_aktie": 0.44,
+"nii_bereinigt_je_aktie": 0,
+"portfolio_mio": 3030.0,
+"verschuldung_netto": 1.1600000000000001,
+"meldung": "2024-11-07",
+"quelle": "https://www.sec.gov/Archives/edgar/data/1278752/000119312524252707/d806618dex991.htm"
+},
+{
+"periode_ende": "2024-12-31",
+"nav_je_aktie": 14.98,
+"nii_je_aktie": 0.4,
+"beleg_nav": "Net asset value per share as of the end of the quarter was $14.98, compared to $15.10 as of September 30, 2024",
+"dividende_quartal": "Q1 2025",
+"dividende_regulaer": 0.38,
+"dividende_zusatz": 0,
+"nii_bereinigt_je_aktie": 0,
+"non_accrual_fv_proz": 0,
+"portfolio_mio": 3010.0,
+"verschuldung_netto": 1.16,
+"meldung": "2025-02-25",
+"quelle": "https://www.sec.gov/Archives/edgar/data/1278752/000119312525035227/d906342dex991.htm"
+},
 {
 "periode_ende": "2025-03-31",
 "nav_je_aktie": 14.93,
@@ -1208,6 +1289,21 @@
 "name": "Barings BDC, Inc.",
 "quartale": [
 {
+"periode_ende": "2024-09-30",
+"nav_je_aktie": 11.32,
+"nii_je_aktie": 0.29,
+"beleg_nav": "Net asset value per share as of September 30, 2024 was $11.32, as compared to $11.36 as of June 30, 2024.",
+"dividende_quartal": "Q4 2024",
+"dividende_regulaer": 0.26,
+"dividende_zusatz": 0,
+"nii_bereinigt_je_aktie": 0,
+"non_accrual_fv_proz": 0,
+"portfolio_mio": 2416.7,
+"verschuldung_netto": 1.09,
+"meldung": "2024-11-06",
+"quelle": "https://www.sec.gov/Archives/edgar/data/1379785/000137978524000064/exhibit99120241106earnings.htm"
+},
+{
 "periode_ende": "2024-12-31",
 "nav_je_aktie": 11.29,
 "nii_je_aktie": 0.28,
@@ -1333,6 +1429,21 @@
 "name": "Bain Capital Specialty Finance, Inc.",
 "quartale": [
 {
+"periode_ende": "2024-09-30",
+"nav_je_aktie": 17.76,
+"nii_je_aktie": 0.53,
+"beleg_nav": "Net asset value per share as of September 30, 2024 was $17.76, as compared to $17.70 as of June 30, 2024.",
+"dividende_quartal": "Q4 2024",
+"dividende_regulaer": 0.42,
+"dividende_zusatz": 0.03,
+"nii_bereinigt_je_aktie": 0,
+"non_accrual_fv_proz": 1.1,
+"portfolio_mio": 2408.0,
+"verschuldung_netto": 1.09,
+"meldung": "2024-11-05",
+"quelle": "https://www.sec.gov/Archives/edgar/data/1655050/000095017024121619/bcsf-ex99_1.htm"
+},
+{
 "periode_ende": "2024-12-31",
 "nav_je_aktie": 17.65,
 "nii_je_aktie": 0.52,
@@ -1457,6 +1568,21 @@
 "CGBD": {
 "name": "Carlyle Secured Lending, Inc.",
 "quartale": [
+{
+"periode_ende": "2024-09-30",
+"nav_je_aktie": 16.85,
+"nii_je_aktie": 0.47,
+"beleg_nav": "Net asset value per common share decreased by 0.6% for the third quarter to $16.85 from $16.95 as of June 30, 2024.",
+"dividende_quartal": "Q4 2024",
+"dividende_regulaer": 0.4,
+"dividende_zusatz": 0.05,
+"nii_bereinigt_je_aktie": 0.49,
+"non_accrual_fv_proz": 0,
+"portfolio_mio": 1700,
+"verschuldung_netto": 0,
+"meldung": "2024-11-05",
+"quelle": "https://www.sec.gov/Archives/edgar/data/1544206/000154420624000066/cgbd_2024930xxex991earning.htm"
+},
 {
 "periode_ende": "2024-12-31",
 "nav_je_aktie": 16.8,
@@ -1703,6 +1829,17 @@
 "name": "SLR Investment Corp.",
 "quartale": [
 {
+"periode_ende": "2024-09-30",
+"nav_je_aktie": 18.2,
+"nii_je_aktie": 0.45,
+"nii_bereinigt_je_aktie": 0.0,
+"non_accrual_fv_proz": 0.4,
+"portfolio_mio": 3192.5,
+"verschuldung_netto": 1.1,
+"meldung": "2024-11-06",
+"quelle": "https://www.sec.gov/Archives/edgar/data/1418076/000117184324006064/exh_991.htm"
+},
+{
 "periode_ende": "2024-12-31",
 "nav_je_aktie": 18.2,
 "nii_je_aktie": 0.44,
@@ -1822,6 +1959,21 @@
 "FDUS": {
 "name": "FIDUS INVESTMENT Corp",
 "quartale": [
+{
+"periode_ende": "2024-09-30",
+"nav_je_aktie": 19.42,
+"nii_je_aktie": 0.64,
+"beleg_nav": "Net asset value (“NAV”) of $658.8 million, or $19.42 per share, as of September 30, 2024",
+"dividende_quartal": "Q4 2024",
+"dividende_regulaer": 0.43,
+"dividende_zusatz": 0.18,
+"nii_bereinigt_je_aktie": 0.61,
+"non_accrual_fv_proz": 0,
+"portfolio_mio": 1090.7,
+"verschuldung_netto": 0,
+"meldung": "2024-10-31",
+"quelle": "https://www.sec.gov/Archives/edgar/data/1513363/000095017024119520/fdus-ex99_1.htm"
+},
 {
 "periode_ende": "2024-12-31",
 "nav_je_aktie": 19.33,
@@ -1972,6 +2124,21 @@
 "name": "GLADSTONE INVESTMENT CORPORATIONDE",
 "quartale": [
 {
+"periode_ende": "2024-09-30",
+"nav_je_aktie": 12.49,
+"nii_je_aktie": 0.2,
+"beleg_nav": "Net asset value per common share as of September 30, 2024 was $12.49",
+"dividende_quartal": "Q4 2024",
+"dividende_regulaer": 0.24,
+"dividende_zusatz": 0.7,
+"nii_bereinigt_je_aktie": 0.24,
+"non_accrual_fv_proz": 0.0,
+"portfolio_mio": 853.307,
+"verschuldung_netto": 0.0,
+"meldung": "2024-11-07",
+"quelle": "https://www.sec.gov/Archives/edgar/data/1321741/000132174124000018/gain93024er8-kex991x11724.htm"
+},
+{
 "periode_ende": "2024-12-31",
 "nav_je_aktie": 13.3,
 "nii_je_aktie": 0.03,
@@ -2096,6 +2263,21 @@
 "name": "Crescent Capital BDC, Inc.",
 "quartale": [
 {
+"periode_ende": "2024-09-30",
+"nav_je_aktie": 20.2,
+"nii_je_aktie": 0.64,
+"beleg_nav": "Reported net asset value per share was $20.20 as of September 30, 2024.",
+"dividende_quartal": "Q4 2024",
+"dividende_regulaer": 0.42,
+"dividende_zusatz": 0.07,
+"nii_bereinigt_je_aktie": 0,
+"non_accrual_fv_proz": 0,
+"portfolio_mio": 1591.4,
+"verschuldung_netto": 1.15,
+"meldung": "2024-11-12",
+"quelle": "https://www.sec.gov/Archives/edgar/data/1633336/000095017024124487/ccap-ex99_1.htm"
+},
+{
 "periode_ende": "2024-12-31",
 "nav_je_aktie": 19.98,
 "nii_je_aktie": 0.55,
@@ -2216,6 +2398,21 @@
 "CION": {
 "name": "CION Investment Corp",
 "quartale": [
+{
+"periode_ende": "2024-09-30",
+"nav_je_aktie": 15.73,
+"nii_je_aktie": 0.4,
+"beleg_nav": "Net asset value per share was $15.73 as of September 30, 2024",
+"dividende_quartal": "Q4 2024",
+"dividende_regulaer": 0.36,
+"dividende_zusatz": 0,
+"nii_bereinigt_je_aktie": 0,
+"non_accrual_fv_proz": 1.85,
+"portfolio_mio": 1752.726,
+"verschuldung_netto": 1.18,
+"meldung": "2024-11-07",
+"quelle": "https://www.sec.gov/Archives/edgar/data/1534254/000110465924115087/tm2427532d1_ex99-1.htm"
+},
 {
 "periode_ende": "2024-12-31",
 "nav_je_aktie": 15.43,
@@ -2342,6 +2539,21 @@
 "name": "BlackRock TCP Capital Corp.",
 "quartale": [
 {
+"periode_ende": "2024-09-30",
+"nav_je_aktie": 10.11,
+"nii_je_aktie": 0.4,
+"beleg_nav": "Net asset value per share was $10.11 as of September 30, 2024 compared to $10.20 as of June 30, 2024.",
+"dividende_quartal": "Q4 2024",
+"dividende_regulaer": 0.34,
+"dividende_zusatz": 0.1,
+"nii_bereinigt_je_aktie": 0.36,
+"non_accrual_fv_proz": 3.8,
+"portfolio_mio": 0,
+"verschuldung_netto": 1.08,
+"meldung": "2024-11-06",
+"quelle": "https://www.sec.gov/Archives/edgar/data/1370755/000095017024121835/tcpc-ex99_1.htm"
+},
+{
 "periode_ende": "2024-12-31",
 "nav_je_aktie": 9.23,
 "nii_je_aktie": 0.4,
@@ -2451,6 +2663,21 @@
 "GLAD": {
 "name": "GLADSTONE CAPITAL CORP",
 "quartale": [
+{
+"periode_ende": "2024-09-30",
+"nav_je_aktie": 21.18,
+"nii_je_aktie": 0.5,
+"beleg_nav": "Net asset value per common share: $21.18",
+"dividende_quartal": "Q1 2025",
+"dividende_regulaer": 0.495,
+"dividende_zusatz": 0.4,
+"nii_bereinigt_je_aktie": 0,
+"non_accrual_fv_proz": 0,
+"portfolio_mio": 796.26,
+"verschuldung_netto": 0,
+"meldung": "2024-11-13",
+"quelle": "https://www.sec.gov/Archives/edgar/data/1143513/000119312524257247/d833548dex991.htm"
+},
 {
 "periode_ende": "2024-12-31",
 "nav_je_aktie": 21.51,
@@ -2687,6 +2914,21 @@
 "name": "Palmer Square Capital BDC Inc.",
 "quartale": [
 {
+"periode_ende": "2024-09-30",
+"nav_je_aktie": 16.61,
+"nii_je_aktie": 0.48,
+"beleg_nav": "Net asset value of $16.61 per share as of September 30, 2024, compared to $16.85 per share as of June 30, 2024",
+"dividende_quartal": "Q4 2024",
+"dividende_regulaer": 0.42,
+"dividende_zusatz": 0,
+"nii_bereinigt_je_aktie": 0,
+"non_accrual_fv_proz": 0.26,
+"portfolio_mio": 1389.801,
+"verschuldung_netto": 1.52,
+"meldung": "2024-11-05",
+"quelle": "https://www.sec.gov/Archives/edgar/data/1794776/000095017024121485/psbd-ex99_1.htm"
+},
+{
 "periode_ende": "2024-12-31",
 "nav_je_aktie": 16.5,
 "nii_je_aktie": 0.45,
@@ -2921,6 +3163,21 @@
 "name": "SARATOGA INVESTMENT CORP.",
 "quartale": [
 {
+"periode_ende": "2024-08-31",
+"nav_je_aktie": 27.07,
+"nii_je_aktie": 1.33,
+"beleg_nav": "a return to increasing NAV per share",
+"dividende_quartal": "Q2 2025",
+"dividende_regulaer": 0.74,
+"dividende_zusatz": 0,
+"nii_bereinigt_je_aktie": 1.33,
+"non_accrual_fv_proz": 0.3,
+"portfolio_mio": 1040.711,
+"verschuldung_netto": 1.72,
+"meldung": "2024-10-08",
+"quelle": "https://www.sec.gov/Archives/edgar/data/1377936/000121390024086277/ea021704801ex99-1_sarato.htm"
+},
+{
 "periode_ende": "2024-11-30",
 "nav_je_aktie": 26.95,
 "nii_je_aktie": 0.9,
@@ -3086,6 +3343,21 @@
 "name": "Chicago Atlantic BDC, Inc.",
 "quartale": [
 {
+"periode_ende": "2024-09-30",
+"nav_je_aktie": 13.28,
+"nii_je_aktie": 0.0,
+"beleg_nav": "Net asset value (\"NAV\") per share was $13.28 on September 30, 2024",
+"dividende_quartal": "0",
+"dividende_regulaer": 0,
+"dividende_zusatz": 0,
+"nii_bereinigt_je_aktie": 0,
+"non_accrual_fv_proz": 0.0,
+"portfolio_mio": 55.8,
+"verschuldung_netto": 0,
+"meldung": "2024-11-08",
+"quelle": "https://www.sec.gov/Archives/edgar/data/1843162/000095010324016105/dp220515_ex9901.htm"
+},
+{
 "periode_ende": "2024-12-31",
 "nav_je_aktie": 13.2,
 "nii_je_aktie": 0.35,
@@ -3209,6 +3481,21 @@
 "WHF": {
 "name": "WhiteHorse Finance, Inc.",
 "quartale": [
+{
+"periode_ende": "2024-09-30",
+"nav_je_aktie": 12.77,
+"nii_je_aktie": 0.394,
+"beleg_nav": "Net asset value per share September 30, 2024: 12.77",
+"dividende_quartal": "Q3 2024",
+"dividende_regulaer": 0.385,
+"dividende_zusatz": 0.245,
+"nii_bereinigt_je_aktie": 0.394,
+"non_accrual_fv_proz": 0,
+"portfolio_mio": 654.3,
+"verschuldung_netto": 0,
+"meldung": "2024-11-07",
+"quelle": "https://www.sec.gov/Archives/edgar/data/1552198/000155837024014754/whf-20241107xex99d1.htm"
+},
 {
 "periode_ende": "2024-12-31",
 "nav_je_aktie": 12.31,
@@ -3335,6 +3622,21 @@
 "name": "Oxford Square Capital Corp.",
 "quartale": [
 {
+"periode_ende": "2024-09-30",
+"nav_je_aktie": 2.35,
+"nii_je_aktie": 0.1,
+"beleg_nav": "Net asset value (“NAV”) per share as of September 30, 2024 stood at $2.35",
+"dividende_quartal": "Q1 2025",
+"dividende_regulaer": 0.105,
+"dividende_zusatz": 0,
+"nii_bereinigt_je_aktie": 0,
+"non_accrual_fv_proz": 3.3,
+"portfolio_mio": 262.89,
+"verschuldung_netto": 0.69,
+"meldung": "2024-11-05",
+"quelle": "https://www.sec.gov/Archives/edgar/data/1259429/000121390024094345/ea022000801_ex99-1.htm"
+},
+{
 "periode_ende": "2024-12-31",
 "nav_je_aktie": 2.3,
 "nii_je_aktie": 0.42,
@@ -3459,6 +3761,21 @@
 "GECC": {
 "name": "Great Elm Capital Corp.",
 "quartale": [
+{
+"periode_ende": "2024-09-30",
+"nav_je_aktie": 12.04,
+"nii_je_aktie": 0.39,
+"beleg_nav": "Net assets were $125.8 million, or $12.04 per share, on September 30, 2024.",
+"dividende_quartal": "Q4 2024",
+"dividende_regulaer": 0.35,
+"dividende_zusatz": 0,
+"nii_bereinigt_je_aktie": 0,
+"non_accrual_fv_proz": 0,
+"portfolio_mio": 418.757,
+"verschuldung_netto": 0,
+"meldung": "2024-10-31",
+"quelle": "https://www.sec.gov/Archives/edgar/data/1675033/000095017024119233/gecc-ex99_1.htm"
+},
 {
 "periode_ende": "2024-12-31",
 "nav_je_aktie": 11.79,
@@ -3765,15 +4082,13 @@
 "stand": "2026-11-13",
 "hinweis": "Quartalszahlen der BDCs aus ihren Ergebnis-Pressemitteilungen (SEC 8-K, EX-99), automatisch ausgelesen.",
 "letzter_lauf": {
-"zeit": "2026-11-13 00:02",
-"offen": 125,
-"ki_aufrufe": 50,
+"zeit": "2026-11-13 07:12",
+"offen": 34,
+"ki_aufrufe": 22,
 "ohne_sec": [
 "SSSS",
 "MRCC"
 ],
-"fehler": [
-"MFIC: HTTP Error 503: Service Unavailable"
-]
+"fehler": []
 }
 }
