@@ -1,0 +1,215 @@
+{
+ "stand": "2026-11-13 19:57 UTC",
+ "firmen": [
+  {
+   "symbol": "CPT",
+   "name": "CAMDEN PROPERTY TRUST",
+   "kurs_usd": 98.62,
+   "kgv_hub": 27.9,
+   "eps_ttm": 10.7,
+   "kgv_ttm": 9.2,
+   "stand": "bis 2026-09-30",
+   "operative_marge": 4061.9
+  },
+  {
+   "symbol": "GS",
+   "name": "The Goldman Sachs Group, Inc.",
+   "kurs_usd": 922.38,
+   "kgv_hub": 18.0,
+   "eps_ttm": 69.55,
+   "kgv_ttm": 13.3,
+   "stand": "bis 2026-09-30",
+   "operative_marge": 152.1
+  },
+  {
+   "symbol": "VICI",
+   "name": "VICI Properties Inc.",
+   "kurs_usd": 24.88,
+   "kgv_hub": 9.5,
+   "eps_ttm": 2.16,
+   "kgv_ttm": 11.5,
+   "stand": "bis 2026-09-30",
+   "operative_marge": 90.4
+  },
+  {
+   "symbol": "APP",
+   "name": "AppLovin Corporation",
+   "kurs_usd": 408.22,
+   "kgv_hub": 41.9,
+   "eps_ttm": 14.85,
+   "kgv_ttm": 27.5,
+   "stand": "bis 2026-09-30",
+   "operative_marge": 75.8
+  },
+  {
+   "symbol": "MU",
+   "name": "Micron Technology, Inc.",
+   "kurs_usd": 796.5,
+   "kgv_hub": 10.7,
+   "eps_ttm": 74.33,
+   "kgv_ttm": 10.7,
+   "stand": "nur Jahreswert (kein neues Quartal)",
+   "operative_marge": 74.6
+  },
+  {
+   "symbol": "TPL",
+   "name": "Texas Pacific Land Corporation",
+   "kurs_usd": 282.57,
+   "kgv_hub": 40.5,
+   "eps_ttm": -1.86,
+   "kgv_ttm": null,
+   "stand": "bis 2026-09-30",
+   "operative_marge": 74.2
+  },
+  {
+   "symbol": "REG",
+   "name": "REGENCY CENTERS CORPORATION",
+   "kurs_usd": 75.35,
+   "kgv_hub": null,
+   "eps_ttm": null,
+   "kgv_ttm": null,
+   "stand": "kein Jahreswert",
+   "operative_marge": 72.3
+  },
+  {
+   "symbol": "VRSN",
+   "name": "VERISIGN INC/CA",
+   "kurs_usd": 314.15,
+   "kgv_hub": 35.7,
+   "eps_ttm": 6.24,
+   "kgv_ttm": 50.3,
+   "stand": "nur Jahreswert (kein neues Quartal)",
+   "operative_marge": 67.7
+  },
+  {
+   "symbol": "CME",
+   "name": "CME GROUP INC.",
+   "kurs_usd": 317.03,
+   "kgv_hub": 28.4,
+   "eps_ttm": 12.2,
+   "kgv_ttm": 26.0,
+   "stand": "bis 2026-09-30",
+   "operative_marge": 64.9
+  },
+  {
+   "symbol": "SNDK",
+   "name": "Sandisk Corporation",
+   "kurs_usd": 936.34,
+   "kgv_hub": 12.7,
+   "eps_ttm": 125.61,
+   "kgv_ttm": 7.5,
+   "stand": "bis 2026-10-02",
+   "operative_marge": 61.2
+  },
+  {
+   "symbol": "V",
+   "name": "VISA INC.",
+   "kurs_usd": 426.95,
+   "kgv_hub": null,
+   "eps_ttm": null,
+   "kgv_ttm": null,
+   "stand": "keine EPS-Reihe",
+   "operative_marge": 61.2
+  },
+  {
+   "symbol": "NVDA",
+   "name": "NVIDIA CORP",
+   "kurs_usd": 166.41,
+   "kgv_hub": 34.0,
+   "eps_ttm": 7.91,
+   "kgv_ttm": 21.0,
+   "stand": "bis 2026-07-26",
+   "operative_marge": 60.4
+  },
+  {
+   "symbol": "MA",
+   "name": "Mastercard Incorporated",
+   "kurs_usd": 661.54,
+   "kgv_hub": 40.0,
+   "eps_ttm": 19.11,
+   "kgv_ttm": 34.6,
+   "stand": "bis 2026-09-30",
+   "operative_marge": 57.6
+  },
+  {
+   "symbol": "MSCI",
+   "name": "MSCI INC.",
+   "kurs_usd": 656.88,
+   "kgv_hub": 41.9,
+   "eps_ttm": 18.91,
+   "kgv_ttm": 34.7,
+   "stand": "bis 2026-09-30",
+   "operative_marge": 54.7
+  },
+  {
+   "symbol": "FICO",
+   "name": "Fair Isaac Corp",
+   "kurs_usd": 719.71,
+   "kgv_hub": 19.8,
+   "eps_ttm": 36.32,
+   "kgv_ttm": 19.8,
+   "stand": "nur Jahreswert (kein neues Quartal)",
+   "operative_marge": 49.9
+  },
+  {
+   "symbol": "SPG",
+   "name": "SIMON PROPERTY GROUP, INC.",
+   "kurs_usd": 235.25,
+   "kgv_hub": 16.6,
+   "eps_ttm": 13.85,
+   "kgv_ttm": 17.0,
+   "stand": "bis 2026-09-30",
+   "operative_marge": 49.9
+  },
+  {
+   "symbol": "PLD",
+   "name": "Prologis, Inc.",
+   "kurs_usd": 129.09,
+   "kgv_hub": 36.3,
+   "eps_ttm": 3.98,
+   "kgv_ttm": 32.4,
+   "stand": "bis 2026-03-31",
+   "operative_marge": 49.6
+  },
+  {
+   "symbol": "CCI",
+   "name": "CROWN CASTLE INC.",
+   "kurs_usd": 89.76,
+   "kgv_hub": 88.9,
+   "eps_ttm": 1.89,
+   "kgv_ttm": 47.5,
+   "stand": "bis 2026-09-30",
+   "operative_marge": 48.7
+  },
+  {
+   "symbol": "SBAC",
+   "name": "SBA COMMUNICATIONS CORPORATION",
+   "kurs_usd": 187.27,
+   "kgv_hub": 19.1,
+   "eps_ttm": 9.26,
+   "kgv_ttm": 20.2,
+   "stand": "bis 2026-09-30",
+   "operative_marge": 47.7
+  },
+  {
+   "symbol": "ESS",
+   "name": "ESSEX PROPERTY TRUST, INC.",
+   "kurs_usd": 272.37,
+   "kgv_hub": 26.2,
+   "eps_ttm": 6.43,
+   "kgv_ttm": 42.4,
+   "stand": "bis 2026-06-30",
+   "operative_marge": 47.6
+  },
+  {
+   "symbol": "AVGO",
+   "name": "Broadcom Inc.",
+   "kurs_usd": 362.96,
+   "kgv_hub": 76.1,
+   "eps_ttm": 7.84,
+   "kgv_ttm": 46.3,
+   "stand": "bis 2026-08-02",
+   "operative_marge": 39.9
+  }
+ ]
+}
