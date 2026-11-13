@@ -656,7 +656,7 @@ var REGION = {"DE":"R:EU","AT":"R:EU","CH":"R:EU","FR":"R:EU","NL":"R:EU","BE":"
   /* Logo und Name führen zur Aktienseite (../aktien-hub/?s=SYMBOL) */
   function slink(sym, inner, logo) {
     sym = String(sym || ""); if (!/^[A-Za-z0-9.\-^]{1,12}$/.test(sym)) return inner;
-    return '<a class="slk" href="../aktien-hub/?s=' + encodeURIComponent(sym) + '" title="' + esc(sym) + ' öffnen">' + (logo ? (window.HubLogos ? HubLogos.img("lg", sym, "", sym) : "") : "") + inner + "</a>";
+    return '<a class="slk" href="../aktien-hub/?s=' + encodeURIComponent(sym) + '" title="' + esc(sym) + ' öffnen">' + (window.HubLogos ? HubLogos.img("lg", sym, "", sym) : "") + inner + "</a>";
   }
   function colsFor() {
     var cols = [{ k: "symbol", l: "Symbol", get: function (D) { return D.profile.symbol; }, f: function (D) { return slink(D.profile.symbol, "<b>" + esc(D.profile.symbol) + "</b>", true); }, t: 1 },

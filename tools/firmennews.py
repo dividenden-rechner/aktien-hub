@@ -51,11 +51,28 @@ def erlaubt(quelle, quelle_url):
     s = ((quelle or "") + " " + (quelle_url or "")).lower()
     return any(q in s for q in QUELLEN)
 
-def sammeln(name):
+def pressemitteilungen(hub):
+    """Unternehmens-Pressemitteilungen aus data/news.json (IR-Feeds und SEC), letzte TAGE Tage."""
+    p = os.path.join(ROOT, "data", "news.json")
+    if not os.path.exists(p): return []
+    grenze = datetime.now(timezone.utc) - timedelta(days=TAGE)
     out = []
+    for x in json.load(open(p, encoding="utf-8")).get("items", []):
+        if (x.get("sym") or "").upper() != hub.upper(): continue
+        try: d = datetime.fromisoformat((x.get("date") or "").replace("Z", "+00:00"))
+        except Exception: continue
+        if d.tzinfo is None: d = d.replace(tzinfo=timezone.utc)
+        titel = (x.get("title") or "").strip()
+        if d < grenze or not titel or AUSSCHLUSS.search(titel): continue
+        out.append({"titel": titel, "quelle": "Unternehmen" if x.get("quelle") != "SEC" else "SEC-Meldung",
+                    "link": x.get("link") or "", "datum": d.date().isoformat(), "sprache": "en", "typ": "pm"})
+    return out
+
+def sammeln(hub, name):
+    out = pressemitteilungen(hub)
     for sprache in ("de", "en"):
         out += _sammeln(name, sprache)
-    out.sort(key=lambda x: x["datum"], reverse=True)
+    out.sort(key=lambda x: (x.get("typ") == "pm", x["datum"]), reverse=True)
     seen, res = set(), []
     for m in out:
         k = m["titel"].lower()[:60]
@@ -99,7 +116,7 @@ def main():
     heute = datetime.now(timezone.utc).date().isoformat()
     for i, (hub, name) in enumerate(liste):
         try:
-            treffer = sammeln(name)
+            treffer = sammeln(hub, name)
         except Exception as e:
             print("FEHLER", hub, e); continue
         json.dump({"hub": hub, "name": name, "stand": heute, "quelle": "Google News (Wirtschaftsmedien, deutsch und englisch)",

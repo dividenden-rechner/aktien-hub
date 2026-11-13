@@ -904,7 +904,7 @@ const NEWS_API="https://news-proxy.dividenden-rechner.workers.dev/";
 function initNews(sym,p){
   const box=$("nw");if(!box)return;
   const nm=String(p.companyName||sym).replace(/,?\s+(Inc\.?|Corp\.?|Corporation|Company|Co\.|Ltd\.?|plc|PLC|N\.V\.|S\.A\.|SE|AG|Holdings?)\b\.?/g,"").replace(/^The\s+/i,"").trim()||sym;
-  box.innerHTML=`<div class="xhead"><h3>Unternehmens-News</h3><small id="nwsub"></small><span class="sp"><button type="button" data-l="de" aria-pressed="true">Deutsch</button><button type="button" data-l="en" aria-pressed="false">Englisch</button></span></div><div id="nwl" class="nwl" role="status">Lade News …</div>`;
+  box.innerHTML=`<div class="xhead"><h3>${window.HubLogos?HubLogos.img("lg",sym,"",nm)+" ":""}Unternehmens-News</h3><small id="nwsub"></small><span class="sp"><button type="button" data-l="de" aria-pressed="true">Deutsch</button><button type="button" data-l="en" aria-pressed="false">Englisch</button></span></div><div id="nwl" class="nwl" role="status">Lade News …</div>`;
   const ago=d=>{if(!d)return"";const m=Math.round((Date.now()-new Date(d))/6e4);if(m<60)return`vor ${Math.max(m,1)} Min.`;const h=Math.round(m/60);if(h<24)return`vor ${h} Std.`;const t=Math.round(h/24);return t===1?"gestern":`vor ${t} Tagen`};
   async function load(l){
     const q=l==="de"?`"${nm}" Aktie`:`"${nm}" stock`,ck="news:"+l+":"+q,out=$("nwl");
@@ -913,8 +913,8 @@ function initNews(sym,p){
     try{
       const f=await fetch("../data/firmennews/"+encodeURIComponent(String(sym).toUpperCase())+".json?v="+Math.floor(Date.now()/36e5)).then(r=>r.ok?r.json():null);
       if(f&&f.meldungen&&f.meldungen.length){
-        const hub=`<a class="nwm" href="../news/firma/?s=${encodeURIComponent(String(sym).toUpperCase())}">Alle News zu ${esc(f.name||sym)} auf der Nachrichtenseite</a>`;
-        out.innerHTML=f.meldungen.map(x=>`<a class="nwi" href="${esc(x.link)}" target="_blank" rel="noopener nofollow"><b>${esc(x.titel)}${x.sprache==="en"?' <small>(EN)</small>':""}</b><span>${esc(x.quelle||"")}${x.quelle&&x.datum?" · ":""}${esc(x.datum||"")}</span></a>`).join("")+hub;
+        const hub=`<a class="nwm" href="../firmen-news/?s=${encodeURIComponent(String(sym).toUpperCase())}">Alle News zu ${esc(f.name||sym)} auf der Nachrichtenseite</a>`;
+        out.innerHTML=f.meldungen.map(x=>`<a class="nwi" href="${esc(x.link)}" target="_blank" rel="noopener nofollow"><b>${x.typ==="pm"?'<small class="pmtag">Pressemitteilung</small> ':""}${esc(x.titel)}${x.sprache==="en"?' <small>(EN)</small>':""}</b><span>${esc(x.quelle||"")}${x.quelle&&x.datum?" · ":""}${esc(x.datum||"")}</span></a>`).join("")+hub;
         $("nwsub").textContent="Quelle: Google News, Wirtschaftsmedien · Stand "+(f.stand||"");
         return;
       }

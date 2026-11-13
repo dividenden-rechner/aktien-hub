@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Firmen-News</title>
+<link rel="stylesheet" href="../assets/site.css">
+<style>
+  body{margin:0;background:#fff;color:#14202b;font-family:Inter,system-ui,sans-serif;padding:16px}
+  main{max-width:820px;margin:0 auto}
+  h1{font-size:1.5rem;margin:.5rem 0 .25rem}
+  .sub{color:#5d6b78;font-size:.9rem;margin:0 0 1rem}
+  .tag{display:inline-block;font-size:.75rem;color:#1a7a45;border:1px solid #1a7a45;border-radius:3px;padding:0 .3rem;margin-left:.3rem}
+  ul{list-style:none;padding:0;margin:0}
+  li{border-bottom:1px solid #dfe5ea;padding:.7rem 0}
+  li a{color:#14202b;text-decoration:none;font-weight:600}
+  li a:hover{color:#1a7a45;text-decoration:underline}
+  li .meta{color:#5d6b78;font-size:.85rem;margin-top:.15rem}
+  .back{display:inline-block;margin:.5rem 0 1rem;color:#1a7a45}
+  .msg{color:#5d6b78}
+  .pmtag{color:#1a7a45;font-size:.75rem;font-weight:600}
+  h1 img{width:32px;height:32px;border-radius:6px;vertical-align:middle;margin-right:.4rem}
+</style>
+</head>
+<body>
+<main>
+  <a class="back" href="../aktien-hub/" id="zurueck">← Zur Aktien-Hub-Seite</a>
+  <h1 id="titel">Firmen-News</h1>
+  <p class="sub" id="sub">Wirtschaftsnachrichten zur Firma, deutsch und englisch. Titel werden nicht übersetzt.</p>
+  <div id="liste" class="msg">Lade …</div>
+</main>
+<script src="../assets/logos.js"></script>
+<script>
+(function(){
+  var s=(new URLSearchParams(location.search).get("s")||"").toUpperCase();
+  var box=document.getElementById("liste");
+  function esc(t){return String(t||"").replace(/[&<>"]/g,function(c){return {"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]})}
+  if(!/^[A-Z0-9.\-^]{1,12}$/.test(s)){box.textContent="Keine Firma gewählt. Bitte über den Aktien-Hub öffnen.";return}
+  document.getElementById("zurueck").href="../aktien-hub/?s="+encodeURIComponent(s);
+  fetch("../data/firmennews/"+encodeURIComponent(s)+".json").then(function(r){return r.ok?r.json():null}).then(function(f){
+    if(!f||!f.meldungen||!f.meldungen.length){box.textContent="Keine aktuellen Meldungen zu "+s+".";return}
+    var t=document.getElementById("titel"); t.innerHTML=(window.HubLogos?HubLogos.img("lg",s,"",f.name||s)+" ":"")+esc((f.name||s)+" – Firmen-News");
+    document.title=(f.name||s)+" – Firmen-News";
+    box.className="";
+    box.innerHTML="<ul>"+f.meldungen.map(function(m){return '<li><a href="'+esc(m.link)+'" target="_blank" rel="noopener nofollow">'+(m.typ==="pm"?'<span class="tag">Pressemitteilung</span> ':"")+esc(m.titel)+(m.sprache==="en"?'<span class="tag">EN</span>':"")+'</a><div class="meta">'+esc(m.quelle)+" · "+esc(m.datum)+"</div></li>"}).join("")+"</ul>";
+  }).catch(function(){box.textContent="Die Meldungen konnten nicht geladen werden."});
+})();
+</script>
+</body>
+</html>
