@@ -17492,6 +17492,570 @@ null
 1800
 ],
 "hinweis": "stockanalysis.com (EUR Mio.). Geschaeftsjahr endet 31. Januar: 'jahre' 2025 = Februar 2025 bis Januar 2026 (stockanalysis 'FY2026'), 2021 = bis Januar 2022. capex = Sachanlagen + immaterielle Werte. bb nur 2021/2022 ausgewiesen, danach keine Rueckkaeufe (null). cash = liquide Mittel + kurzfristige Anlagen. debt = Gesamtschulden, im Wesentlichen Leasingverbindlichkeiten (kaum Finanzschulden). div = in den Geschaeftsjahren gezahlte Dividenden (inkl. Sonderdividenden)."
+},
+"EXOR.AS": {
+"jahre": [
+2021,
+2022,
+2023,
+2024,
+2025
+],
+"ocf": [
+4177,
+4918,
+4032,
+47,
+2863
+],
+"capex": [
+1960,
+2448,
+2810,
+null,
+null
+],
+"da": [
+1728,
+1853,
+2050,
+null,
+null
+],
+"div": [
+455,
+601,
+716,
+99,
+93
+],
+"bb": [
+null,
+255,
+996,
+249,
+1000
+],
+"cash": [
+8669,
+14591,
+8678,
+169,
+1408
+],
+"debt": [
+28950,
+33970,
+40218,
+4144,
+3708
+],
+"umsatz": [
+33617,
+41844,
+45405,
+null,
+null
+],
+"brutto": [
+7638,
+9505,
+11971,
+null,
+null
+],
+"ebit": [
+3151,
+4112,
+5983,
+null,
+null
+],
+"zins": [
+191,
+982,
+94,
+113,
+100
+],
+"steuer": [
+1302,
+1060,
+1095,
+91,
+98
+],
+"hinweis": "Exor wird ab 2024 als Investmentgesellschaft (IFRS 10) ohne Konsolidierung der Beteiligungen gefuehrt: 2021-2023 konsolidiert (Ferrari, CNH, Stellantis-Vorlaeufer etc.), 2024/2025 nur Holding; Umsatz, Bruttogewinn, EBIT und Capex 2024/2025 daher null (Operating Income 2024 +15.340 und 2025 -3.597 sind Bewertungsergebnisse). OCF 2024 (47) und 2025 (2.863) betreffen nur die Holding. Dividenden 2021-2023 inkl. Minderheiten-Dividenden in Konzerngesellschaften (eigene Dividende ca. 100). D&A 2021/2022 = Abschreibungen plus 'Other Amortization' (1.094+634, 1.208+645). Umsatz 2023 laut stockanalysis 45.405 (boerse.de 44.742). Zins 2022 (982) inkl. Finanzdienstleistungen; Cash inkl. kurzfristiger Anlagen; Schulden inkl. Leasing und Finanzdienstleistungs-Refinanzierung 2021-2023."
+},
+"VPK.AS": {
+"jahre": [
+2021,
+2022,
+2023,
+2024,
+2025
+],
+"ocf": [
+682,
+825.2,
+866.2,
+909.1,
+900.1
+],
+"capex": [
+518.5,
+386.1,
+414.0,
+335.7,
+362.0
+],
+"da": [
+315,
+319.7,
+301.6,
+286,
+291
+],
+"div": [
+150.5,
+156.8,
+163.1,
+183.5,
+185.3
+],
+"bb": [
+2.9,
+null,
+10.5,
+308.2,
+102.2
+],
+"cash": [
+73.4,
+33.8,
+197,
+104.8,
+99.5
+],
+"debt": [
+2999,
+3085,
+2510,
+2768,
+2811
+],
+"umsatz": [
+1242,
+1384,
+1439,
+1328,
+1311
+],
+"brutto": [
+1188,
+1329,
+1376,
+1273,
+1254
+],
+"ebit": [
+312,
+355.5,
+431.8,
+401.9,
+376.9
+],
+"zins": [
+106.2,
+120,
+131.2,
+116.4,
+126.6
+],
+"steuer": [
+60,
+101.2,
+73.8,
+81.6,
+84.4
+],
+"hinweis": "Capex = Sachanlagen plus immaterielle Werte. D&A ohne 'Other Amortization' (16,8-24,2). EBIT = Operating Income laut stockanalysis, ohne Ergebnis aus Beteiligungen (226-254 Mio. p.a.) und ohne Sondereffekte; Vopak-eigenes EBIT ist hoeher. Bruttogewinn = Umsatz abzueglich Materialkosten. Dividenden ohne Minderheitenanteile. 2022 Nettoverlust durch Wertberichtigungen 449 Mio. 2023 Desinvestitionserloese 523 Mio. Cash inkl. kurzfristiger Anlagen; Schulden inkl. Leasing."
+},
+"SBMO.AS": {
+"jahre": [
+2021,
+2022,
+2023,
+2024,
+2025
+],
+"ocf": [
+-755,
+-1049,
+-169,
+1482,
+1214
+],
+"capex": [
+61,
+82,
+173,
+116,
+69
+],
+"da": [
+103,
+78,
+56,
+61,
+48
+],
+"div": [
+166,
+177,
+198,
+150,
+164
+],
+"bb": [
+178,
+null,
+5,
+102,
+174
+],
+"cash": [
+1021,
+683,
+543,
+806,
+1086
+],
+"debt": [
+7701,
+8564,
+9291,
+8943,
+9155
+],
+"umsatz": [
+3748,
+4913,
+4962,
+4784,
+5903
+],
+"brutto": [
+922,
+1182,
+1419,
+1132,
+2019
+],
+"ebit": [
+716,
+986,
+1198,
+895,
+1772
+],
+"zins": [
+304,
+383,
+598,
+680,
+653
+],
+"steuer": [
+71,
+104,
+-25,
+73,
+117
+],
+"hinweis": "Berichtswaehrung USD. OCF 2021-2023 negativ (Eintrag mit Vorzeichen), weil bei Leasing-Projekten (Finance Lease) der Aufbau von Forderungen aus Leasingverhaeltnissen im operativen Cashflow steht (Aenderung Forderungen -2.0 bis -3.0 Mrd. p.a.); Cashflow daher nur eingeschraenkt vergleichbar. Schulden (9.155) inkl. nicht-regressfaehiger Projektfinanzierung und Leasing. Zinsaufwand hoch wegen Projektfinanzierung. Steuer 2023 = Steuererstattung (-25). Capex = Sachanlagen plus immaterielle Werte. Dividenden ohne Minderheiten. Umsatz inkl. Leasing-Finanzerloesen (Other Revenue). Cash inkl. kurzfristiger Anlagen."
+},
+"JDEP.AS": {
+"jahre": [
+2021,
+2022,
+2023,
+2024,
+2025
+],
+"ocf": [
+1623,
+1606,
+823,
+1374,
+1431
+],
+"capex": [
+255,
+248,
+301,
+330,
+301
+],
+"da": [
+394,
+417,
+638,
+457,
+443
+],
+"div": [
+176,
+345,
+341,
+341,
+354
+],
+"bb": [
+null,
+500,
+null,
+null,
+122
+],
+"cash": [
+666,
+971,
+2054,
+1269,
+1838
+],
+"debt": [
+4935,
+4967,
+5940,
+5588,
+5574
+],
+"umsatz": [
+7001,
+8151,
+8191,
+8837,
+9921
+],
+"brutto": [
+2973,
+3005,
+3018,
+3257,
+3097
+],
+"ebit": [
+1110,
+957,
+695.2,
+1072,
+771.3
+],
+"zins": [
+134,
+85,
+94,
+147,
+142
+],
+"steuer": [
+220,
+257,
+173,
+247,
+173
+],
+"hinweis": "OCF, Capex, D&A, Dividende und Rueckkauf aus den JDE-Peet's-Berichten (FY2022, FY2023, FY2024, FY2025 Financial Statements, FY2025 ungeprueft); OCF dort vor Zinszahlungen (Zinsen 68-125 Mio. separat), stockanalysis weist abweichend niedrigere Werte aus. D&A inkl. Wertminderungen (2023: 638). Capex = Sachanlagen plus immaterielle Werte. Zins = Zinsaufwand laut stockanalysis. Cash inkl. kurzfristiger Anlagen; Schulden inkl. Leasing. Boersennotierung nach Uebernahme eingestellt. 2021 Dividende 176 (nur Halbjahr nach Boersengang)."
+},
+"AALB.AS": {
+"jahre": [
+2021,
+2022,
+2023,
+2024,
+2025
+],
+"ocf": [
+291.7,
+247.3,
+492.1,
+432.7,
+374.9
+],
+"capex": [
+156.8,
+202.0,
+234.6,
+262.9,
+224.0
+],
+"da": [
+172.5,
+182.1,
+193.5,
+211.5,
+217.6
+],
+"div": [
+66.3,
+182.5,
+122.7,
+125.0,
+123.5
+],
+"bb": [
+null,
+null,
+null,
+null,
+75.6
+],
+"cash": [
+72,
+108.6,
+134.2,
+95.9,
+124.7
+],
+"debt": [
+567.2,
+872.8,
+702.6,
+686.6,
+1100
+],
+"umsatz": [
+2979,
+3230,
+3324,
+3149,
+3091
+],
+"brutto": [
+1841,
+2016,
+2073,
+1989,
+1944
+],
+"ebit": [
+352.7,
+408.8,
+427.8,
+341,
+326.3
+],
+"zins": [
+13.7,
+20.5,
+33.6,
+29.8,
+45.6
+],
+"steuer": [
+125.1,
+102.3,
+103.5,
+74.2,
+62.1
+],
+"hinweis": "Capex = Sachanlagen plus immaterielle Werte. D&A ohne 'Other Amortization' (5,7-8,2). EBIT = Operating Income laut stockanalysis (vor Restrukturierung, Wertminderungen und Veraeusserungsgewinnen; 2021 Verkaufsgewinn 172,6 nicht enthalten). Dividende 2022 inkl. Sonderdividende (0,64 je Aktie). Cash inkl. kurzfristiger Anlagen; Schulden inkl. Leasing. 2025 Aktienrueckkauf 75,6."
+},
+"CTPNV.AS": {
+"jahre": [
+2021,
+2022,
+2023,
+2024,
+2025
+],
+"ocf": [
+139.06,
+290.2,
+318.4,
+340,
+382.7
+],
+"capex": [
+884.45,
+1149,
+1130,
+1154,
+1195
+],
+"da": [
+10.12,
+12.4,
+14.4,
+15.3,
+14.2
+],
+"div": [
+5.51,
+124,
+164,
+151.4,
+83.7
+],
+"bb": [
+null,
+null,
+null,
+null,
+null
+],
+"cash": [
+892.82,
+660.6,
+690.6,
+855.4,
+708.4
+],
+"debt": [
+4527,
+5937,
+7046,
+8210,
+9286
+],
+"umsatz": [
+407.37,
+589.1,
+680.1,
+870.8,
+972.5
+],
+"brutto": [
+null,
+null,
+null,
+null,
+null
+],
+"ebit": [
+266.31,
+344.3,
+437.3,
+561.7,
+666.3
+],
+"zins": [
+70.88,
+84.9,
+129,
+241.7,
+293.7
+],
+"steuer": [
+250.75,
+186.6,
+289.5,
+248.7,
+283.7
+],
+"hinweis": "Immobilienentwickler/-bestandshalter: Capex = Erwerb und Entwicklung von Immobilien (Investment Property, ohne Unternehmenskaeufe 58-297 Mio.), Bruttogewinn null (nicht sinnvoll definiert). EBIT = Operating Income vor Neubewertungsgewinnen (Neubewertung 2021-2025: ca. 700-1.140 Mio. p.a. im Vorsteuerergebnis). Steuer enthaelt latente Steuern auf Neubewertung. Dividende cash (Aktiendividende-Option senkt die Auszahlung). Cash ohne Wertpapiere (nur Cash & Equivalents). Schulden inkl. Leasing."
 }
 }
 }
