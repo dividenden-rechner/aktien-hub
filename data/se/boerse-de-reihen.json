@@ -1,0 +1,713 @@
+{
+"quelle": "boerse.de Fundamentalanalyse (je Firma, Seite 'fundamental-analyse')",
+"stand": "2026-11-12",
+"einheit": "Mio € (je Aktie in €; aktien_mio in Mio. Stück)",
+"jahre": [
+2019,
+2020,
+2021,
+2022,
+2023,
+2024,
+2025
+],
+"hinweis": "Jahresüberschuss meist Anteil der Aktionäre, kann je Firma von Pressemitteilungen abweichen. Umsatz bei Banken/Versicherern von boerse.de nicht geführt (null). Nicht geprüft gegen Geschäftsberichte.",
+"firmen": {
+"GETI-B.ST": {
+"name": "Getinge",
+"isin": "SE0000202624",
+"waehrung": "SEK",
+"hinweis": "Quelle boerse.de. Berichtswaehrung SEK. Jahresueberschuss = Anteil der Aktionaere. EPS unverwaessert (verwaessert identisch ab 2023). Dividendenausschuettung von boerse.de nicht geliefert (null). Aktien insgesamt (A+B) 272,37 Mio. EK = Anteil der Aktionaere (stockanalysis inkl. Minderheiten weicht ab). Dividende 2025 = 4,75 SEK (beschlossen/vorgeschlagen).",
+"umsatz": [
+26559,
+29819,
+27049,
+28292,
+31827,
+34759,
+34969
+],
+"ebt": [
+1909,
+4485,
+4188,
+3472,
+3343,
+2282,
+3145
+],
+"jahresueberschuss": [
+1222,
+3239,
+2970,
+2491,
+2412,
+1638,
+2258
+],
+"dividendenausschuettung": [
+null,
+null,
+null,
+null,
+null,
+null,
+null
+],
+"eigenkapital": [
+20496,
+21024,
+24750,
+30038,
+30166,
+33005,
+29430
+],
+"eps": [
+4.49,
+11.89,
+10.9,
+9.15,
+8.86,
+6.01,
+8.29
+],
+"dividende_je_aktie": [
+1.5,
+3.0,
+4.0,
+4.25,
+4.4,
+4.6,
+4.75
+],
+"aktien_mio": [
+272.37,
+272.37,
+272.37,
+272.37,
+272.37,
+272.37,
+272.37
+],
+"eigenkapitalrendite_pct": [
+5.96,
+15.41,
+12.0,
+8.29,
+8.0,
+4.96,
+7.67
+]
+},
+"LIFCO-B.ST": {
+"name": "Lifco",
+"isin": "SE0015949201",
+"waehrung": "SEK",
+"hinweis": "Quelle boerse.de. 2019 und 2020 von boerse.de nicht geliefert (null). Jahresueberschuss = Anteil der Aktionaere, EK ohne Minderheiten. EPS unverwaessert = verwaessert.",
+"umsatz": [
+null,
+null,
+17480,
+21552,
+24454,
+26137,
+28251
+],
+"ebt": [
+null,
+null,
+3070,
+3842,
+4374,
+4454,
+4756
+],
+"jahresueberschuss": [
+null,
+null,
+2390,
+2784,
+3274,
+3301,
+3633
+],
+"dividendenausschuettung": [
+null,
+null,
+681,
+818,
+954,
+1090,
+1226
+],
+"eigenkapital": [
+null,
+null,
+10645,
+13238,
+15212,
+18257,
+19137
+],
+"eps": [
+null,
+null,
+5.26,
+6.13,
+7.21,
+7.27,
+8.0
+],
+"dividende_je_aktie": [
+null,
+null,
+1.5,
+1.8,
+2.1,
+2.4,
+2.7
+],
+"aktien_mio": [
+null,
+null,
+454.22,
+454.22,
+454.22,
+454.22,
+454.22
+],
+"eigenkapitalrendite_pct": [
+null,
+null,
+22.45,
+21.03,
+21.52,
+18.08,
+18.98
+]
+},
+"ELUX-B.ST": {
+"name": "Electrolux",
+"isin": "SE0016589188",
+"waehrung": "SEK",
+"hinweis": "Quelle boerse.de. Jahresueberschuss = Anteil der Aktionaere (Verluste 2022-2024). EPS unverwaessert (2025 verwaessert 3,19). Aktien_mio = ausgegebene Aktien A+B (308,92 bis 2021; 283,08 ab 2022 nach Einziehung), im Umlauf ca. 270 Mio. Dividende 2022-2025 = 0 (Hauptversammlungen 2023-2026 ohne Ausschuettung; FY2025 Vorschlag der Verwaltung ohne Dividende laut Electrolux/Meldung 13.02.2026, AGM-Beschluss nicht geprueft); boerse.de zeigt dort '-', hier als 0 gesetzt.",
+"umsatz": [
+118981,
+115960,
+125631,
+134880,
+134451,
+136150,
+131282
+],
+"ebt": [
+3145,
+7692,
+6255,
+-1672,
+-5111,
+-847,
+1815
+],
+"jahresueberschuss": [
+2509,
+6584,
+4678,
+-1320,
+-5227,
+-1394,
+878
+],
+"dividendenausschuettung": [
+null,
+null,
+null,
+0,
+0,
+0,
+0
+],
+"eigenkapital": [
+22566,
+18702,
+18604,
+16443,
+11268,
+9718,
+8700
+],
+"eps": [
+8.12,
+21.31,
+15.14,
+-4.66,
+-18.46,
+-4.92,
+3.1
+],
+"dividende_je_aktie": [
+8.5,
+8.0,
+9.2,
+0,
+0,
+0,
+0
+],
+"aktien_mio": [
+308.92,
+308.92,
+308.92,
+283.08,
+283.08,
+283.08,
+282.97
+],
+"eigenkapitalrendite_pct": [
+11.12,
+35.2,
+25.15,
+-8.03,
+-46.39,
+-14.34,
+10.09
+]
+},
+"NIBE-B.ST": {
+"name": "NIBE Industrier",
+"isin": "SE0015988019",
+"waehrung": "SEK",
+"hinweis": "Quelle boerse.de. 2019 von boerse.de nicht geliefert (null). Aktiensplit 4:1 im Jahr 2021: EPS 2020 (boerse 5,69), Dividende 2020 (boerse 1,55) und Aktienzahl 2020 (boerse 504,02) hier split-bereinigt (durch 4 bzw. mal 4; EPS = 2866/2016,07). Jahresueberschuss = Anteil der Aktionaere, EK ohne Minderheiten. Dividendenausschuettung 2020 = 781 (Mio.), Jahreszuordnung wie boerse.de.",
+"umsatz": [
+null,
+27146,
+30832,
+40071,
+46649,
+40521,
+40841
+],
+"ebt": [
+null,
+3658,
+4318,
+5675,
+6331,
+1536,
+3155
+],
+"jahresueberschuss": [
+null,
+2866,
+3320,
+4351,
+4785,
+1173,
+2277
+],
+"dividendenausschuettung": [
+null,
+781,
+1008,
+1310,
+1310,
+605,
+706
+],
+"eigenkapital": [
+null,
+17588,
+21438,
+27935,
+30160,
+32140,
+30290
+],
+"eps": [
+null,
+1.42,
+1.65,
+2.16,
+2.37,
+0.58,
+1.13
+],
+"dividende_je_aktie": [
+null,
+0.39,
+0.5,
+0.65,
+0.65,
+0.3,
+0.35
+],
+"aktien_mio": [
+null,
+2016.07,
+2016.07,
+2016.07,
+2016.07,
+2016.07,
+2016.07
+],
+"eigenkapitalrendite_pct": [
+null,
+16.3,
+15.49,
+15.58,
+15.87,
+3.65,
+7.52
+]
+},
+"SAAB-B.ST": {
+"name": "Saab",
+"isin": "SE0021921269",
+"waehrung": "SEK",
+"hinweis": "Quelle boerse.de. Aktien_mio, EPS und Dividende split-bereinigt (Aktiensplit 4:1; boerse.de zeigt konsistent 543,38 Mio. ausgegebene Aktien). EPS = unverwaessert laut boerse.de auf Basis ausgegebener Aktien; stockanalysis.com weist ohne eigene Aktien 3,64 / 4,15 / 6,36 / 7,81 / 11,77 (2021-2025) aus. Verwaessertes EPS 2020-2023 bei boerse.de vermutlich nicht splitbereinigt und deshalb nicht verwendet. 2019 von boerse.de nicht geliefert (null). Jahresueberschuss = Anteil der Aktionaere.",
+"umsatz": [
+null,
+35431,
+39154,
+42006,
+51609,
+63751,
+79146
+],
+"ebt": [
+null,
+1112,
+2577,
+2819,
+4418,
+5289,
+8019
+],
+"jahresueberschuss": [
+null,
+1073,
+1926,
+2195,
+3381,
+4171,
+6314
+],
+"dividendenausschuettung": [
+null,
+622,
+646,
+702,
+853,
+1087,
+1293
+],
+"eigenkapital": [
+null,
+21466,
+22976,
+29486,
+32035,
+35503,
+43336
+],
+"eps": [
+null,
+1.97,
+3.54,
+4.04,
+6.22,
+7.68,
+11.62
+],
+"dividende_je_aktie": [
+null,
+1.18,
+1.23,
+1.32,
+1.6,
+2.0,
+2.4
+],
+"aktien_mio": [
+null,
+543.38,
+543.38,
+543.38,
+543.38,
+543.38,
+543.38
+],
+"eigenkapitalrendite_pct": [
+null,
+5.0,
+8.38,
+7.44,
+10.55,
+11.75,
+14.57
+]
+},
+"TREL-B.ST": {
+"name": "Trelleborg",
+"isin": "SE0000114837",
+"waehrung": "SEK",
+"hinweis": "boerse.de-Fundamentalseite nicht abrufbar, Quelle stockanalysis.com (nur 2021-2025, 2019/2020 null). Umsatz/EBT 2021-2023 auf fortgefuehrte Geschaefte umgestellt (Wheel Systems als aufgegebenes Geschaeft); Jahresueberschuss enthaelt aufgegebene Geschaefte (2021: 1007, 2022: 1828, 2023: 6593), daher 2023 Jahresueberschuss 10075 bei EBT 4797. Eigenkapital = Anteil der Aktionaere (ohne Minderheiten), Eigenkapitalrendite selbst berechnet = Jahresueberschuss / Eigenkapital Jahresende (2023 durch Sonderergebnis verzerrt). aktien_mio = gewichteter Durchschnitt unverwaessert (gerundet); Dividendenausschuettung gesamt nicht geliefert (null, gezahlte Dividende siehe Zusatzdatei).",
+"umsatz": [
+null,
+null,
+23789,
+30095,
+34286,
+34170,
+34329
+],
+"ebt": [
+null,
+null,
+3680,
+4595,
+4797,
+4990,
+4811
+],
+"jahresueberschuss": [
+null,
+null,
+3717,
+5260,
+10075,
+3737,
+3596
+],
+"dividendenausschuettung": [
+null,
+null,
+null,
+null,
+null,
+null,
+null
+],
+"eigenkapital": [
+null,
+null,
+32990,
+37482,
+41722,
+41565,
+36495
+],
+"eps": [
+null,
+null,
+13.71,
+19.93,
+40.24,
+15.73,
+15.14
+],
+"dividende_je_aktie": [
+null,
+null,
+5.5,
+6.0,
+6.75,
+7.5,
+8.0
+],
+"aktien_mio": [
+null,
+null,
+271,
+264,
+250,
+238,
+238
+],
+"eigenkapitalrendite_pct": [
+null,
+null,
+11.27,
+14.03,
+24.15,
+8.99,
+9.85
+]
+},
+"INDU-C.ST": {
+"name": "Industrivaerden",
+"isin": "SE0000107203",
+"waehrung": "SEK",
+"hinweis": "Beteiligungsgesellschaft. boerse.de-Fundamentalseite nicht abrufbar, Quelle stockanalysis.com (INDU.A, gleiche Gesellschaft; EPS/Dividende gelten fuer A- und C-Aktie) und Industrivaerden-Bilanzpressemeldung; nur 2021-2025, 2019/2020 null. Umsatz null: 'Revenue' bei stockanalysis ist das Ergebnis aus Wertaenderungen/Dividenden der Beteiligungen (2022 negativ), nicht mit Umsatz vergleichbar. EBT/Jahresueberschuss enthalten die Wertaenderungen der Beteiligungen und schwanken stark. Dividende je Aktie nach Geschaeftsjahr (Beschluss im Folgejahr; 2021: 6,75 ... 2025: 8,75 vorgeschlagen). Dividendenausschuettung = im Folgejahr tatsaechlich gezahlte Summe (2021-2024), 2025 null (noch nicht gezahlt, im Datensatz nicht enthalten). Eigenkapital = Shareholders Equity (zu Marktwerten bilanziert). Aktien 432 Mio. gerundet (laut stockanalysis). Eigenkapitalrendite selbst berechnet.",
+"umsatz": [
+null,
+null,
+null,
+null,
+null,
+null,
+null
+],
+"ebt": [
+null,
+null,
+26675,
+-13977,
+26987,
+12722,
+35514
+],
+"jahresueberschuss": [
+null,
+null,
+26594,
+-13967,
+26844,
+12654,
+35401
+],
+"dividendenausschuettung": [
+null,
+null,
+2915,
+3131,
+3347,
+3563,
+null
+],
+"eigenkapital": [
+null,
+null,
+143079,
+126180,
+149880,
+159178,
+191018
+],
+"eps": [
+null,
+null,
+61.57,
+-32.34,
+62.15,
+29.3,
+81.97
+],
+"dividende_je_aktie": [
+null,
+null,
+6.75,
+7.25,
+7.75,
+8.25,
+8.75
+],
+"aktien_mio": [
+null,
+null,
+432,
+432,
+432,
+432,
+432
+],
+"eigenkapitalrendite_pct": [
+null,
+null,
+18.59,
+-11.07,
+17.91,
+7.95,
+18.53
+]
+},
+"KINV-B.ST": {
+"name": "Kinnevik",
+"isin": "SE0022060521",
+"waehrung": "SEK",
+"hinweis": "Beteiligungsgesellschaft. boerse.de-Fundamentalseite nicht abrufbar, Quelle stockanalysis.com und Kinnevik Financial Key Ratios (nur 2021-2025, 2019/2020 null). Umsatz null: 'Revenue' bei stockanalysis ist das Ergebnis aus Wertaenderungen der Beteiligungen (2022-2025 negativ), nicht als Umsatz vergleichbar. EBT = Jahresueberschuss ausser 2021 (Steuer 5), 2024 (Steuer 1) und 2025 (Steuerertrag 892). Dividende: 2021 Sachdividende 196,22 SEK je Aktie (bilanzieller Wert, 172,75 fuer TSR; keine Barausschuettung), 2024 Bardividende 23 SEK (gezahlt 6370 Mio.), 2022/2023/2025 keine Ausschuettung (laut Kinnevik-Kennzahlen '-', hier 0). Dividendenausschuettung 2021 null (Sachdividende, Gesamtbetrag nicht geliefert), 2024 = 6370 gezahlt. Aktien_mio = Jahresendbestand (2023/2024 ohne Incentive-Aktien out-of-the-money). Eigenkapital = Shareholders Equity = NAV. Eigenkapitalrendite selbst berechnet.",
+"umsatz": [
+null,
+null,
+null,
+null,
+null,
+null,
+null
+],
+"ebt": [
+null,
+null,
+14782,
+-19519,
+-4766,
+-2622,
+-4238
+],
+"jahresueberschuss": [
+null,
+null,
+14777,
+-19519,
+-4766,
+-2623,
+-3346
+],
+"dividendenausschuettung": [
+null,
+null,
+null,
+0,
+0,
+6370,
+0
+],
+"eigenkapital": [
+null,
+null,
+72391,
+52906,
+48161,
+39202,
+35872
+],
+"eps": [
+null,
+null,
+53.12,
+-69.83,
+-17.22,
+-9.47,
+-12.08
+],
+"dividende_je_aktie": [
+null,
+null,
+196.22,
+0,
+0,
+23.0,
+0
+],
+"aktien_mio": [
+null,
+null,
+276.6,
+280.08,
+276.97,
+276.97,
+276.97
+],
+"eigenkapitalrendite_pct": [
+null,
+null,
+20.41,
+-36.89,
+-9.9,
+-6.69,
+-9.33
+]
+}
+}
+}

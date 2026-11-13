@@ -19560,6 +19560,758 @@ null
 111.68
 ],
 "hinweis": "DKK Mio. (nicht EUR/NOK), stockanalysis.com. Bruttogewinn nach Definition der Quelle (Umsatz minus Warenaufwand); 2025: 4.541 (Hauptseite) gegenueber 4.875 auf einer Spiegelseite, ebit 2025 843,06 vs 841,76. Zinsen und Steuer 2025 (161,4 / 111,68) nur von der Spiegelseite. capex = Cashflow-Zeile Capital Expenditures. debt inkl. Leasing. ocf 2024 mit 2.355 durch Working-Capital-Effekte auffaellig hoch."
+},
+"GETI-B.ST": {
+"jahre": [
+2021,
+2022,
+2023,
+2024,
+2025
+],
+"ocf": [
+6560,
+3367,
+2957,
+4577,
+3949
+],
+"capex": [
+930,
+1136,
+1353,
+1309,
+1314
+],
+"da": [
+1429,
+1430,
+1555,
+1666,
+1703
+],
+"div": [
+817,
+1090,
+1158,
+1198,
+1253
+],
+"bb": [
+null,
+null,
+null,
+null,
+null
+],
+"cash": [
+4077,
+5676,
+2728,
+2961,
+3401
+],
+"debt": [
+4311,
+5824,
+8076,
+10727,
+10884
+],
+"umsatz": [
+27049,
+28292,
+31827,
+34759,
+34969
+],
+"brutto": [
+13580,
+13410,
+14495,
+16153,
+16654
+],
+"ebit": [
+4867,
+3883,
+3699,
+3705,
+4475
+],
+"zins": [
+152,
+205,
+451,
+574,
+583
+],
+"steuer": [
+1187,
+956,
+915,
+628,
+869
+],
+"hinweis": "Quelle stockanalysis.com, SEK. capex 2021-2024 = Sachanlagen + immaterielle Werte (separate Zeilen); 2025 weist stockanalysis nur eine Zeile (1314) aus, vermutlich gesamt, nicht geprueft. bb: keine Rueckkaeufe ausgewiesen (null). debt inkl. Leasing. Pretax 2025 stockanalysis 3144 vs boerse.de 3145 (Rundung)."
+},
+"LIFCO-B.ST": {
+"jahre": [
+2021,
+2022,
+2023,
+2024,
+2025
+],
+"ocf": [
+2938,
+3069,
+4458,
+4630,
+5124
+],
+"capex": [
+312,
+348,
+481,
+536,
+542
+],
+"da": [
+939,
+1151,
+1482,
+1684,
+1858
+],
+"div": [
+643,
+848,
+973,
+954,
+1090
+],
+"bb": [
+null,
+null,
+null,
+null,
+null
+],
+"cash": [
+1509,
+1703,
+1591,
+1517,
+1878
+],
+"debt": [
+6908,
+8263,
+9521,
+10361,
+10964
+],
+"umsatz": [
+17480,
+21552,
+24454,
+26137,
+28251
+],
+"brutto": [
+7330,
+9008,
+10817,
+11589,
+12344
+],
+"ebit": [
+3132,
+3921,
+4734,
+4863,
+5225
+],
+"zins": [
+63,
+128,
+426,
+516,
+408
+],
+"steuer": [
+641,
+1014,
+1051,
+1105,
+1087
+],
+"hinweis": "Quelle stockanalysis.com, SEK. capex = Sachanlagen + immaterielle Werte (zwei Zeilen addiert). bb: keine Rueckkaeufe ausgewiesen (null). debt inkl. Leasing."
+},
+"ELUX-B.ST": {
+"jahre": [
+2021,
+2022,
+2023,
+2024,
+2025
+],
+"ocf": [
+7059,
+-2274,
+4003,
+4197,
+1177
+],
+"capex": [
+5913,
+7385,
+5695,
+4647,
+3358
+],
+"da": [
+4160,
+4924,
+5649,
+5706,
+4975
+],
+"div": [
+2299,
+2521,
+0,
+0,
+0
+],
+"bb": [
+894,
+2138,
+0,
+0,
+0
+],
+"cash": [
+11088,
+17727,
+15498,
+16339,
+15821
+],
+"debt": [
+18871,
+41824,
+41126,
+43778,
+43777
+],
+"umsatz": [
+125631,
+134880,
+134451,
+136150,
+131282
+],
+"brutto": [
+23984,
+17703,
+17696,
+20299,
+21702
+],
+"ebit": [
+7274,
+-993,
+-2572,
+980,
+2985
+],
+"zins": [
+391,
+729,
+2016,
+2076,
+1997
+],
+"steuer": [
+1577,
+-352,
+116,
+547,
+936
+],
+"hinweis": "Quelle stockanalysis.com, SEK. Auffaelligkeiten: operativer Cashflow 2022 negativ (-2274), EBIT 2022/2023 negativ, Steuer 2022 = Steuerertrag (-352). capex = Sachanlagen + immaterielle Werte (zwei Zeilen addiert). div/bb 2023-2025 = 0 (Quelle zeigt '-', keine Dividende fuer 2022-2024, keine Rueckkaeufe). debt inkl. Leasing; Gesamtschulden 2022 mehr als verdoppelt (18871 auf 41824)."
+},
+"NIBE-B.ST": {
+"jahre": [
+2021,
+2022,
+2023,
+2024,
+2025
+],
+"ocf": [
+3262,
+2614,
+2580,
+4006,
+4888
+],
+"capex": [
+1324,
+2241,
+3720,
+2647,
+1649
+],
+"da": [
+1296,
+1538,
+1815,
+1891,
+1954
+],
+"div": [
+781,
+1008,
+1310,
+1310,
+605
+],
+"bb": [
+null,
+null,
+null,
+null,
+null
+],
+"cash": [
+4746,
+4817,
+4283,
+5607,
+5458
+],
+"debt": [
+9782,
+11143,
+22470,
+24337,
+22232
+],
+"umsatz": [
+30832,
+40071,
+46649,
+40521,
+40841
+],
+"brutto": [
+10204,
+12609,
+15623,
+10974,
+12865
+],
+"ebit": [
+4186,
+5240,
+6524,
+1534,
+3873
+],
+"zins": [
+196,
+260,
+882,
+1419,
+1049
+],
+"steuer": [
+940,
+1280,
+1535,
+374,
+875
+],
+"hinweis": "Quelle stockanalysis.com, SEK. capex = Sachanlagen + immaterielle Werte (zwei Zeilen addiert). bb: keine Rueckkaeufe ausgewiesen (null). debt inkl. Leasing; Gesamtschulden 2023 mehr als verdoppelt (11143 auf 22470). Pretax 2025: 3155."
+},
+"SAAB-B.ST": {
+"jahre": [
+2021,
+2022,
+2023,
+2024,
+2025
+],
+"ocf": [
+5713,
+4654,
+6462,
+6732,
+12105
+],
+"capex": [
+2520,
+2310,
+3538,
+4839,
+7222
+],
+"da": [
+1388,
+1573,
+1671,
+2011,
+2342
+],
+"div": [
+622,
+647,
+703,
+856,
+1076
+],
+"bb": [
+246,
+0,
+0,
+0,
+0
+],
+"cash": [
+11879,
+13280,
+13709,
+11922,
+15494
+],
+"debt": [
+9765,
+10010,
+10062,
+10387,
+14715
+],
+"umsatz": [
+39154,
+42006,
+51609,
+63751,
+79146
+],
+"brutto": [
+8205,
+8886,
+11260,
+13663,
+17168
+],
+"ebit": [
+2892,
+3205,
+4482,
+5407,
+7544
+],
+"zins": [
+292,
+307,
+526,
+559,
+570
+],
+"steuer": [
+552,
+536,
+975,
+1079,
+1663
+],
+"hinweis": "Quelle stockanalysis.com, SEK. capex = Sachanlagen + immaterielle Werte (zwei Zeilen addiert; Anstieg 2024/2025 laut Quelle, nicht geprueft). bb 2022-2025 = 0 (Quelle '-'). debt inkl. Leasing; Leasing 2025 stark gestiegen (2337 auf 4198 langfristig). ocf 2025 12105 deutlich ueber Vorjahr 6732."
+},
+"TREL-B.ST": {
+"jahre": [
+2021,
+2022,
+2023,
+2024,
+2025
+],
+"ocf": [
+5891,
+14070,
+21139,
+5077,
+5323
+],
+"capex": [
+1045,
+1330,
+1678,
+1883,
+1713
+],
+"da": [
+1204,
+1334,
+1757,
+1864,
+1948
+],
+"div": [
+1355,
+1481,
+1524,
+1617,
+1719
+],
+"bb": [
+null,
+3079,
+3880,
+4127,
+2658
+],
+"cash": [
+3467,
+3936,
+10558,
+2163,
+2027
+],
+"debt": [
+11404,
+25153,
+8297,
+8561,
+9132
+],
+"umsatz": [
+23789,
+30095,
+34286,
+34170,
+34329
+],
+"brutto": [
+8560,
+10757,
+12094,
+12443,
+12919
+],
+"ebit": [
+3748,
+4894,
+5512,
+5466,
+5834
+],
+"zins": [
+238,
+404,
+695,
+481,
+524
+],
+"steuer": [
+971,
+1166,
+1316,
+1254,
+1215
+],
+"hinweis": "Quelle stockanalysis.com, SEK. Achtung: operativer Cashflow 2022 (14070) und 2023 (21139) sowie Cash 2023 (10558) und Schulden 2022 (25153) sind vermutlich durch den Verkauf von Wheel Systems (aufgegebene Geschaefte 2021-2023) verzerrt, nicht mit 2021/2024/2025 vergleichbar (nicht im Detail geprueft). Umsatz/Brutto/EBIT/Zins/Steuer = fortgefuehrte Geschaefte (2021-2023 umgestellt). capex = Sachanlagen + immaterielle Werte (zwei Zeilen addiert). bb 2021 von Quelle nicht ausgewiesen (null)."
+},
+"INDU-C.ST": {
+"jahre": [
+2021,
+2022,
+2023,
+2024,
+2025
+],
+"ocf": [
+6988,
+5237,
+6057,
+8290,
+9212
+],
+"capex": [
+null,
+null,
+null,
+null,
+null
+],
+"da": [
+5,
+5,
+5,
+6,
+6
+],
+"div": [
+2720,
+2915,
+3131,
+3347,
+3563
+],
+"bb": [
+null,
+null,
+null,
+null,
+null
+],
+"cash": [
+697,
+795,
+869,
+843,
+1343
+],
+"debt": [
+7224,
+8182,
+8200,
+7789,
+7284
+],
+"umsatz": [
+null,
+null,
+null,
+null,
+null
+],
+"brutto": [
+null,
+null,
+null,
+null,
+null
+],
+"ebit": [
+null,
+null,
+null,
+null,
+null
+],
+"zins": [
+41,
+81,
+197,
+181,
+164
+],
+"steuer": [
+81,
+-10,
+143,
+68,
+113
+],
+"hinweis": "Beteiligungsgesellschaft, Quelle stockanalysis.com (INDU.A), SEK. umsatz/brutto/ebit null: Ertraege bestehen aus Wertaenderungen und Dividenden der Beteiligungen (2022 negativ), nicht als Umsatz/Bruttogewinn/EBIT vergleichbar. capex nicht ausgewiesen (null), Beteiligungskaeufe (Investment in Securities) 2021-2025: 2259, 3184, 2854, 4566, 4650. bb nicht ausgewiesen (null). ocf enthaelt erhaltene Dividenden der Beteiligungen. Steuer 2022 = Steuerertrag (-10). debt inkl. Anleihen/Kredite, ohne Leasing-Ausweis."
+},
+"KINV-B.ST": {
+"jahre": [
+2021,
+2022,
+2023,
+2024,
+2025
+],
+"ocf": [
+1313,
+3179,
+600,
+-220,
+-215
+],
+"capex": [
+null,
+null,
+null,
+null,
+null
+],
+"da": [
+null,
+null,
+null,
+null,
+null
+],
+"div": [
+44,
+0,
+0,
+6370,
+0
+],
+"bb": [
+null,
+null,
+null,
+null,
+null
+],
+"cash": [
+10544,
+13848,
+11951,
+14619,
+10392
+],
+"debt": [
+4694,
+3488,
+3487,
+3492,
+1995
+],
+"umsatz": [
+null,
+null,
+null,
+null,
+null
+],
+"brutto": [
+null,
+null,
+null,
+null,
+null
+],
+"ebit": [
+null,
+null,
+null,
+null,
+null
+],
+"zins": [
+42,
+55,
+44,
+49,
+35
+],
+"steuer": [
+5,
+0,
+0,
+1,
+-892
+],
+"hinweis": "Beteiligungsgesellschaft, Quelle stockanalysis.com, SEK. umsatz/brutto/ebit null: 'Revenue' ist das Ergebnis aus Wertaenderungen der Beteiligungen (2021 +14958, 2022-2025 negativ), kein Umsatz; Operating Income folgt daraus und ist nicht vergleichbar. capex/da/bb in der Quelle nicht vorhanden (null). div 2021 = 44 Barzahlung (zusaetzlich Sachdividende, siehe Reihen-Hinweis), 2024 = 6370 (23 SEK je Aktie). Steuer 2025 = Steuerertrag (-892). Investment in Securities (Investing CF) 2021-2025: -215, +1381, -2840, +8871, -2649."
 }
 }
 }
