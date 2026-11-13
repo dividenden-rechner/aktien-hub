@@ -1,0 +1,452 @@
+{
+"quelle": "boerse.de Fundamentalanalyse (je Firma, Seite 'fundamental-analyse')",
+"stand": "2026-11-12",
+"einheit": "Mio € (je Aktie in €; aktien_mio in Mio. Stück)",
+"jahre": [
+2019,
+2020,
+2021,
+2022,
+2023,
+2024,
+2025
+],
+"hinweis": "Jahresüberschuss meist Anteil der Aktionäre, kann je Firma von Pressemitteilungen abweichen. Umsatz bei Banken/Versicherern von boerse.de nicht geführt (null). Nicht geprüft gegen Geschäftsberichte.",
+"firmen": {
+"ACS.MC": {
+"name": "ACS",
+"isin": "ES0167050915",
+"waehrung": "EUR",
+"hinweis": "Quelle stockanalysis.com (boerse.de nicht abrufbar), 2019/2020 daher null. Konzern inkl. Hochtief/Turner. 2021: Jahresueberschuss 3045 enthaelt 3947 Ergebnis aus aufgegebenem Geschaeft (Industrieservices-Verkauf an Vinci); fortgefuehrt Verlust von 732; EBT 2021 (57,5) und Steuer 2021 (789) entsprechend auf fortgefuehrter Basis, daher nicht mit Jahresueberschuss abstimmbar. Jahresueberschuss = Anteil der Aktionaere. Eigenkapital = Total Common Equity ohne Minderheiten. Dividendenausschuettung = bar gezahlte Dividenden (Scrip-Anteil nicht enthalten). Dividende je Aktie lt. stockanalysis. Aktien = Stueck zum Jahresende; EPS verwaessert.",
+"umsatz": [
+null,
+null,
+27837,
+33615,
+35739,
+41636,
+49857
+],
+"ebt": [
+null,
+null,
+57.5,
+1009,
+1127,
+993.34,
+1662
+],
+"jahresueberschuss": [
+null,
+null,
+3045,
+668.23,
+780.12,
+827.58,
+950.34
+],
+"dividendenausschuettung": [
+null,
+null,
+396.01,
+351.75,
+394.46,
+368.13,
+420.55
+],
+"eigenkapital": [
+null,
+null,
+6334,
+5547,
+5329,
+4714,
+4815
+],
+"eps": [
+null,
+null,
+10.73,
+2.5,
+3.0,
+3.23,
+3.69
+],
+"dividende_je_aktie": [
+null,
+null,
+2.0,
+2.012,
+2.012,
+2.011,
+2.323
+],
+"aktien_mio": [
+null,
+null,
+275.79,
+258.26,
+260.61,
+254.8,
+259.74
+],
+"eigenkapitalrendite_pct": [
+null,
+null,
+48.07,
+12.05,
+14.64,
+17.56,
+19.74
+]
+},
+"AMS.MC": {
+"name": "Amadeus IT Group",
+"isin": "ES0109067019",
+"waehrung": "EUR",
+"hinweis": "Quelle stockanalysis.com (boerse.de nicht abrufbar), 2019/2020 daher null. 2021 pandemiebedingt Verlust. Dividende 2021 ausgesetzt (stockanalysis: keine Angabe, 2022 erste Dividende 0,74 EUR, gezahlt 2023). Dividendenausschuettung = bar gezahlte Dividenden im Jahr (2021/2022 keine). Jahresueberschuss = Anteil der Aktionaere. Eigenkapital = Total Common Equity. Aktien = Stueck zum Jahresende; EPS verwaessert.",
+"umsatz": [
+null,
+null,
+2670,
+4486,
+5441,
+6142,
+6517
+],
+"ebt": [
+null,
+null,
+-203.1,
+868.8,
+1360,
+1548,
+1721
+],
+"jahresueberschuss": [
+null,
+null,
+-142.4,
+664.4,
+1118,
+1253,
+1336
+],
+"dividendenausschuettung": [
+null,
+null,
+null,
+null,
+332.5,
+541.9,
+615.1
+],
+"eigenkapital": [
+null,
+null,
+3745,
+4586,
+4483,
+5064,
+4854
+],
+"eps": [
+null,
+null,
+-0.32,
+1.45,
+2.43,
+2.79,
+3.01
+],
+"dividende_je_aktie": [
+null,
+null,
+null,
+0.74,
+1.24,
+1.39,
+1.54
+],
+"aktien_mio": [
+null,
+null,
+449.89,
+450.02,
+440.59,
+436.51,
+430.92
+],
+"eigenkapitalrendite_pct": [
+null,
+null,
+-3.8,
+14.49,
+24.94,
+24.74,
+27.52
+]
+},
+"BBVA.MC": {
+"name": "BBVA",
+"isin": "ES0113211835",
+"waehrung": "EUR",
+"hinweis": "Quelle stockanalysis.com (boerse.de nicht abrufbar), 2019/2020 daher null. Bank: Umsatz null. Jahresueberschuss = Ergebnis der Eigentuemer der Muttergesellschaft vor AT1-Kuponabzug. Eigenkapital = Total Common Equity ohne Minderheiten. Dividendenausschuettung = gezahlte Stammdividenden laut Cashflow. Dividende je Aktie lt. stockanalysis (Gesamtdividende des Jahres inkl. Abschlag, 2025 0,92). Aktien = Stueck zum Jahresende; EPS verwaessert.",
+"umsatz": [
+null,
+null,
+null,
+null,
+null,
+null,
+null
+],
+"ebt": [
+null,
+null,
+7247,
+10268,
+12419,
+15405,
+16226
+],
+"jahresueberschuss": [
+null,
+null,
+4653,
+6358,
+8019,
+10054,
+10511
+],
+"dividendenausschuettung": [
+null,
+null,
+926,
+2185,
+2808,
+3913,
+4196
+],
+"eigenkapital": [
+null,
+null,
+43907,
+46895,
+51701,
+55654,
+57355
+],
+"eps": [
+null,
+null,
+0.67,
+0.98,
+1.29,
+1.68,
+1.76
+],
+"dividende_je_aktie": [
+null,
+null,
+0.31,
+0.43,
+0.55,
+0.7,
+0.92
+],
+"aktien_mio": [
+null,
+null,
+6540,
+6025,
+5834,
+5757,
+5691
+],
+"eigenkapitalrendite_pct": [
+null,
+null,
+10.6,
+13.56,
+15.51,
+18.07,
+18.33
+]
+},
+"FER.MC": {
+"name": "Ferrovial",
+"isin": "NL0015001FS8",
+"waehrung": "EUR",
+"hinweis": "Quelle stockanalysis.com (boerse.de nicht abrufbar), 2019/2020 daher null. Sitzverlegung in die Niederlande 2023 (Ferrovial SE/N.V.), Reihe konsistent. Jahresueberschuss = Anteil der Aktionaere. 2021 (Gewinn aus Verkaeufen ca. 1,1 Mrd) und 2024 (Verkauf Heathrow-Beteiligung, Gewinn ca. 2,2 Mrd) enthalten Einmalgewinne, daher EPS/ROE verzerrt. Eigenkapital = Total Common Equity ohne Minderheiten. Dividendenausschuettung = bar gezahlte Dividenden (ueberwiegend Aktiendividende/Scrip, 2021 nicht ausgewiesen). Dividende je Aktie lt. stockanalysis. Aktien = Stueck zum Jahresende; EPS verwaessert.",
+"umsatz": [
+null,
+null,
+6910,
+7551,
+8515,
+9148,
+9627
+],
+"ebt": [
+null,
+null,
+966,
+268,
+610,
+3621,
+1070
+],
+"jahresueberschuss": [
+null,
+null,
+1198,
+185,
+341,
+3239,
+888
+],
+"dividendenausschuettung": [
+null,
+null,
+null,
+132,
+136,
+130,
+156
+],
+"eigenkapital": [
+null,
+null,
+4039,
+4113,
+3766,
+6075,
+5908
+],
+"eps": [
+null,
+null,
+1.63,
+0.24,
+0.46,
+4.47,
+1.24
+],
+"dividende_je_aktie": [
+null,
+null,
+0.583,
+0.701,
+0.731,
+0.813,
+1.112
+],
+"aktien_mio": [
+null,
+null,
+728.53,
+726.27,
+735.93,
+721.81,
+720.63
+],
+"eigenkapitalrendite_pct": [
+null,
+null,
+29.66,
+4.5,
+9.05,
+53.32,
+15.03
+]
+},
+"SAN.MC": {
+"name": "Banco Santander",
+"isin": "ES0113900J37",
+"waehrung": "EUR",
+"hinweis": "Quelle stockanalysis.com (boerse.de nicht abrufbar), 2019/2020 daher null. Bank: Umsatz null. Jahresueberschuss = Ergebnis der Eigentuemer der Muttergesellschaft vor AT1-Kuponabzug (Ergebnis je Aktie nach Abzug). Eigenkapital = Total Common Equity ohne Minderheiten. Dividendenausschuettung = gezahlte Dividenden laut Cashflow. Dividende je Aktie lt. stockanalysis. Aktien = Stueck zum Jahresende.",
+"umsatz": [
+null,
+null,
+null,
+null,
+null,
+null,
+null
+],
+"ebt": [
+null,
+null,
+14547,
+15250,
+15005,
+17347,
+18681
+],
+"jahresueberschuss": [
+null,
+null,
+8124,
+9605,
+11076,
+12574,
+14101
+],
+"dividendenausschuettung": [
+null,
+null,
+1313,
+1848,
+2261,
+3017,
+3341
+],
+"eigenkapital": [
+null,
+null,
+86930,
+89104,
+95423,
+98601,
+103170
+],
+"eps": [
+null,
+null,
+0.44,
+0.54,
+0.65,
+0.77,
+0.9
+],
+"dividende_je_aktie": [
+null,
+null,
+0.1,
+0.118,
+0.176,
+0.21,
+0.24
+],
+"aktien_mio": [
+null,
+null,
+17063,
+16551,
+15886,
+15137,
+14678
+],
+"eigenkapitalrendite_pct": [
+null,
+null,
+9.35,
+10.78,
+11.61,
+12.75,
+13.67
+]
+}
+}
+}

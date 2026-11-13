@@ -1,0 +1,887 @@
+{
+"quelle": "boerse.de Fundamentalanalyse (je Firma, Seite 'fundamental-analyse')",
+"stand": "2026-11-12",
+"einheit": "Mio € (je Aktie in €; aktien_mio in Mio. Stück)",
+"jahre": [
+2019,
+2020,
+2021,
+2022,
+2023,
+2024,
+2025
+],
+"hinweis": "Jahresüberschuss meist Anteil der Aktionäre, kann je Firma von Pressemitteilungen abweichen. Umsatz bei Banken/Versicherern von boerse.de nicht geführt (null). Nicht geprüft gegen Geschäftsberichte.",
+"firmen": {
+"A2A.MI": {
+"name": "A2A",
+"isin": "IT0001233417",
+"waehrung": "EUR",
+"hinweis": "Quelle boerse.de (Umsatz ohne Other Revenue, EBT, Eigenkapital) plus stockanalysis.com (Dividende je Aktie nach Geschaeftsjahr, Jahresueberschuss = Anteil der Aktionaere). Nur 2021-2025 verfuegbar, 2019/2020 null. Dividendenausschuettung = Dividende je Aktie x Aktienzahl (berechnet). Eigenkapital 2024 laut boerse.de 5445, stockanalysis 5534. Aktienzahl 2021 mit 3132,9 angesetzt (Filing-Wert 3133).",
+"umsatz": [
+null,
+null,
+11352,
+22946,
+14492,
+12570,
+13739
+],
+"ebt": [
+null,
+null,
+586,
+792,
+882,
+1211,
+1092
+],
+"jahresueberschuss": [
+null,
+null,
+504,
+401,
+659,
+864,
+750
+],
+"dividendenausschuettung": [
+null,
+null,
+257,
+282,
+301,
+313,
+326
+],
+"eigenkapital": [
+null,
+null,
+3760,
+3899,
+4240,
+5445,
+5917
+],
+"eps": [
+null,
+null,
+0.16,
+0.13,
+0.21,
+0.28,
+0.24
+],
+"dividende_je_aktie": [
+null,
+null,
+0.082,
+0.09,
+0.096,
+0.1,
+0.104
+],
+"aktien_mio": [
+null,
+null,
+3132.9,
+3132.9,
+3132.9,
+3132.9,
+3132.9
+],
+"eigenkapitalrendite_pct": [
+null,
+null,
+13.4,
+10.28,
+15.54,
+15.87,
+12.68
+]
+},
+"HER.MI": {
+"name": "Hera",
+"isin": "IT0001250932",
+"waehrung": "EUR",
+"hinweis": "Quelle stockanalysis.com (boerse.de-Seite nicht abgerufen), nur 2021-2025, 2019/2020 null. Umsatz inkl. Other Revenue; Jahresueberschuss = Anteil der Aktionaere; Eigenkapital = Total Common Equity ohne Minderheiten; Aktien = Stueck zum Jahresende (Filing-Wert). Dividende je Aktie nach Geschaeftsjahr. Dividendenausschuettung = Dividende je Aktie x Aktienzahl (berechnet). EPS verwaessert.",
+"umsatz": [
+null,
+null,
+10915,
+20564,
+15464,
+13010,
+12928
+],
+"ebt": [
+null,
+null,
+406.9,
+408.8,
+656.4,
+736.2,
+710.8
+],
+"jahresueberschuss": [
+null,
+null,
+333.5,
+255.2,
+441.4,
+494.5,
+464.3
+],
+"dividendenausschuettung": [
+null,
+null,
+175,
+181,
+202,
+216,
+236
+],
+"eigenkapital": [
+null,
+null,
+3200,
+3398,
+3438,
+3680,
+4081
+],
+"eps": [
+null,
+null,
+0.23,
+0.17,
+0.3,
+0.34,
+0.32
+],
+"dividende_je_aktie": [
+null,
+null,
+0.12,
+0.125,
+0.14,
+0.15,
+0.16
+],
+"aktien_mio": [
+null,
+null,
+1460,
+1451,
+1444,
+1441,
+1478
+],
+"eigenkapitalrendite_pct": [
+null,
+null,
+10.42,
+7.51,
+12.84,
+13.44,
+11.38
+]
+},
+"AMP.MI": {
+"name": "Amplifon",
+"isin": "IT0004056880",
+"waehrung": "EUR",
+"hinweis": "Quelle stockanalysis.com (boerse.de nicht abrufbar), nur 2021-2025 verfuegbar, 2019/2020 null. Berichtswaehrung EUR. EPS verwaessert, Aktienzahl unverwaessert (Mio.), Eigenkapital = Eigenkapital der Aktionaere ohne Minderheiten, Jahresueberschuss Anteil der Aktionaere, dividendenausschuettung = gezahlte Dividenden lt. Cashflow, Dividende je Aktie nach Geschaeftsjahr. Aktiensplit 2021 bereinigt. 2021 Jahresueberschuss inkl. aufgegebenem Geschaeft (-5,76).",
+"umsatz": [
+null,
+null,
+1948,
+2119,
+2260,
+2409,
+2396
+],
+"ebt": [
+null,
+null,
+223.36,
+243.74,
+209.75,
+196.78,
+131.79
+],
+"jahresueberschuss": [
+null,
+null,
+157.79,
+178.53,
+155.14,
+145.37,
+91.33
+],
+"dividendenausschuettung": [
+null,
+null,
+49.36,
+58.24,
+65.36,
+65.59,
+65.3
+],
+"eigenkapital": [
+null,
+null,
+925.18,
+1039,
+1101,
+1150,
+998.21
+],
+"eps": [
+null,
+null,
+0.69,
+0.79,
+0.69,
+0.64,
+0.4
+],
+"dividende_je_aktie": [
+null,
+null,
+0.26,
+0.29,
+0.29,
+0.29,
+0.29
+],
+"aktien_mio": [
+null,
+null,
+225,
+224,
+224,
+226,
+223
+],
+"eigenkapitalrendite_pct": [
+null,
+null,
+17.06,
+17.18,
+14.09,
+12.64,
+9.15
+]
+},
+"BC.MI": {
+"name": "Brunello Cucinelli",
+"isin": "IT0004764699",
+"waehrung": "EUR",
+"hinweis": "Quelle stockanalysis.com (boerse.de nicht abrufbar), nur 2021-2025 verfuegbar, 2019/2020 null. Berichtswaehrung EUR. EPS verwaessert, Aktienzahl unverwaessert (Mio.), Eigenkapital = Eigenkapital der Aktionaere ohne Minderheiten, Jahresueberschuss Anteil der Aktionaere, dividendenausschuettung = gezahlte Dividenden lt. Cashflow, Dividende je Aktie nach Geschaeftsjahr. Aktienzahl von der Quelle nur gerundet (68 Mio.). 2021 keine Dividende gezahlt (null im Cashflow = 0).",
+"umsatz": [
+null,
+null,
+712.18,
+919.71,
+1139,
+1279,
+1408
+],
+"ebt": [
+null,
+null,
+64.03,
+123.97,
+173.34,
+179.74,
+198.7
+],
+"jahresueberschuss": [
+null,
+null,
+53.32,
+80.6,
+114.62,
+119.48,
+135.03
+],
+"dividendenausschuettung": [
+null,
+null,
+0,
+28.56,
+44.2,
+61.88,
+63.92
+],
+"eigenkapital": [
+null,
+null,
+316.14,
+382.54,
+441.79,
+489.94,
+546.02
+],
+"eps": [
+null,
+null,
+0.78,
+1.19,
+1.69,
+1.76,
+1.99
+],
+"dividende_je_aktie": [
+null,
+null,
+0.42,
+0.65,
+0.91,
+0.94,
+1.04
+],
+"aktien_mio": [
+null,
+null,
+68,
+68,
+68,
+68,
+68
+],
+"eigenkapitalrendite_pct": [
+null,
+null,
+16.87,
+21.07,
+25.94,
+24.39,
+24.73
+]
+},
+"BZU.MI": {
+"name": "Buzzi",
+"isin": "IT0001347308",
+"waehrung": "EUR",
+"hinweis": "Quelle stockanalysis.com (boerse.de nicht abrufbar), nur 2021-2025 verfuegbar, 2019/2020 null. Berichtswaehrung EUR. EPS verwaessert, Aktienzahl unverwaessert (Mio.), Eigenkapital = Eigenkapital der Aktionaere ohne Minderheiten, Jahresueberschuss Anteil der Aktionaere, dividendenausschuettung = gezahlte Dividenden lt. Cashflow, Dividende je Aktie nach Geschaeftsjahr. Quelle liefert Buzzi halbjaehrlich; Jahreswerte konsolidiert. 2021 Dividende inkl. Sonderausschuettung (191,9 gezahlt, Dividende je Aktie 0,40 ohne Sonderanteil).",
+"umsatz": [
+null,
+null,
+3447,
+3998,
+4333,
+4325,
+4527
+],
+"ebt": [
+null,
+null,
+635.25,
+589.3,
+1141,
+1093,
+1177
+],
+"jahresueberschuss": [
+null,
+null,
+541.9,
+458.79,
+966.55,
+942.32,
+921.31
+],
+"dividendenausschuettung": [
+null,
+null,
+191.94,
+73.49,
+83.31,
+111.08,
+126.94
+],
+"eigenkapital": [
+null,
+null,
+4369,
+4906,
+5626,
+6603,
+7087
+],
+"eps": [
+null,
+null,
+2.82,
+2.46,
+5.22,
+5.14,
+5.09
+],
+"dividende_je_aktie": [
+null,
+null,
+0.4,
+0.45,
+0.6,
+0.7,
+0.7
+],
+"aktien_mio": [
+null,
+null,
+192,
+186,
+185,
+183,
+181
+],
+"eigenkapitalrendite_pct": [
+null,
+null,
+12.4,
+9.35,
+17.18,
+14.27,
+13.0
+]
+},
+"CPR.MI": {
+"name": "Davide Campari-Milano",
+"isin": "NL0015435975",
+"waehrung": "EUR",
+"hinweis": "Quelle stockanalysis.com (boerse.de nicht abrufbar), nur 2021-2025 verfuegbar, 2019/2020 null. Berichtswaehrung EUR. EPS verwaessert, Aktienzahl unverwaessert (Mio.), Eigenkapital = Eigenkapital der Aktionaere ohne Minderheiten, Jahresueberschuss Anteil der Aktionaere, dividendenausschuettung = gezahlte Dividenden lt. Cashflow, Dividende je Aktie nach Geschaeftsjahr. Gesellschaft seit 2021 niederlaendische N.V. (frueher IT0003849244); Aktiensplit/Gratisaktien rueckwirkend bereinigt. Aktienzahl 2024/2025 steigt durch Umwandlung von Treueaktien (Basis 1.200 Mio.).",
+"umsatz": [
+null,
+null,
+2173,
+2698,
+2919,
+3070,
+3051
+],
+"ebt": [
+null,
+null,
+388.6,
+475.0,
+466.5,
+255.6,
+460.4
+],
+"jahresueberschuss": [
+null,
+null,
+284.8,
+333.0,
+330.5,
+201.6,
+346.3
+],
+"dividendenausschuettung": [
+null,
+null,
+61.6,
+67.6,
+67.5,
+78.1,
+78.0
+],
+"eigenkapital": [
+null,
+null,
+2372,
+2676,
+2925,
+3854,
+3863
+],
+"eps": [
+null,
+null,
+0.25,
+0.29,
+0.29,
+0.17,
+0.29
+],
+"dividende_je_aktie": [
+null,
+null,
+0.06,
+0.06,
+0.065,
+0.065,
+0.1
+],
+"aktien_mio": [
+null,
+null,
+1127,
+1126,
+1128,
+1200,
+1200
+],
+"eigenkapitalrendite_pct": [
+null,
+null,
+12.01,
+12.44,
+11.3,
+5.23,
+8.96
+]
+},
+"MONC.MI": {
+"name": "Moncler",
+"isin": "IT0004965148",
+"waehrung": "EUR",
+"hinweis": "Quelle stockanalysis.com (boerse.de nicht abrufbar), nur 2021-2025 verfuegbar, 2019/2020 null. Berichtswaehrung EUR. EPS verwaessert, Aktienzahl unverwaessert (Mio.), Eigenkapital = Eigenkapital der Aktionaere ohne Minderheiten, Jahresueberschuss Anteil der Aktionaere, dividendenausschuettung = gezahlte Dividenden lt. Cashflow, Dividende je Aktie nach Geschaeftsjahr. Aktienzahl von der Quelle gerundet.",
+"umsatz": [
+null,
+null,
+2046,
+2603,
+2984,
+3109,
+3132
+],
+"ebt": [
+null,
+null,
+557.61,
+747.33,
+870.64,
+909.81,
+887.17
+],
+"jahresueberschuss": [
+null,
+null,
+393.53,
+606.7,
+611.93,
+639.6,
+626.67
+],
+"dividendenausschuettung": [
+null,
+null,
+120.68,
+160.96,
+303.44,
+311.01,
+353.23
+],
+"eigenkapital": [
+null,
+null,
+2499,
+2902,
+3214,
+3587,
+3850
+],
+"eps": [
+null,
+null,
+1.47,
+2.24,
+2.26,
+2.36,
+2.31
+],
+"dividende_je_aktie": [
+null,
+null,
+0.6,
+1.12,
+1.15,
+1.3,
+1.4
+],
+"aktien_mio": [
+null,
+null,
+266,
+269,
+270,
+271,
+271
+],
+"eigenkapitalrendite_pct": [
+null,
+null,
+15.75,
+20.91,
+19.04,
+17.83,
+16.28
+]
+},
+"REC.MI": {
+"name": "Recordati",
+"isin": "IT0003828271",
+"waehrung": "EUR",
+"hinweis": "Quelle stockanalysis.com (boerse.de nicht abrufbar), nur 2021-2025 verfuegbar, 2019/2020 null. Berichtswaehrung EUR. EPS verwaessert, Aktienzahl unverwaessert (Mio.), Eigenkapital = Eigenkapital der Aktionaere ohne Minderheiten, Jahresueberschuss Anteil der Aktionaere, dividendenausschuettung = gezahlte Dividenden lt. Cashflow, Dividende je Aktie nach Geschaeftsjahr. Aktienzahl von der Quelle gerundet.",
+"umsatz": [
+null,
+null,
+1580,
+1853,
+2082,
+2342,
+2618
+],
+"ebt": [
+null,
+null,
+463.35,
+401.44,
+491.04,
+547.18,
+581.27
+],
+"jahresueberschuss": [
+null,
+null,
+385.97,
+312.34,
+389.21,
+416.51,
+443.62
+],
+"dividendenausschuettung": [
+null,
+null,
+216.74,
+230.6,
+245.96,
+253.72,
+267.56
+],
+"eigenkapital": [
+null,
+null,
+1382,
+1546,
+1686,
+1877,
+1920
+],
+"eps": [
+null,
+null,
+1.85,
+1.49,
+1.86,
+1.99,
+2.12
+],
+"dividende_je_aktie": [
+null,
+null,
+1.1,
+1.15,
+1.2,
+1.27,
+1.34
+],
+"aktien_mio": [
+null,
+null,
+206,
+206,
+206,
+206,
+205
+],
+"eigenkapitalrendite_pct": [
+null,
+null,
+27.93,
+20.2,
+23.08,
+22.19,
+23.11
+]
+},
+"TPRO.MI": {
+"name": "Technoprobe",
+"isin": "IT0005482994",
+"waehrung": "EUR",
+"hinweis": "Quelle stockanalysis.com (boerse.de nicht abrufbar), nur 2021-2025 verfuegbar, 2019/2020 null. Berichtswaehrung EUR. EPS verwaessert, Aktienzahl unverwaessert (Mio.), Eigenkapital = Eigenkapital der Aktionaere ohne Minderheiten, Jahresueberschuss Anteil der Aktionaere, dividendenausschuettung = gezahlte Dividenden lt. Cashflow, Dividende je Aktie nach Geschaeftsjahr. Boersengang 2021; Dividende je Aktie: keine Ausschuettung ab 2022 (0), 2021 gezahlte 3,7 Mio. nicht je Aktie ausgewiesen (null). 2023 Steuerertrag (Jahresueberschuss ueber Vorsteuer).",
+"umsatz": [
+null,
+null,
+391.74,
+548.93,
+409.27,
+543.15,
+628.38
+],
+"ebt": [
+null,
+null,
+152.42,
+207.23,
+85.25,
+97.0,
+128.1
+],
+"jahresueberschuss": [
+null,
+null,
+118.32,
+147.9,
+97.0,
+63.83,
+97.66
+],
+"dividendenausschuettung": [
+null,
+null,
+3.7,
+0,
+0,
+0,
+0
+],
+"eigenkapital": [
+null,
+null,
+443.75,
+735.94,
+815.77,
+1238,
+1237
+],
+"eps": [
+null,
+null,
+0.21,
+0.25,
+0.16,
+0.1,
+0.15
+],
+"dividende_je_aktie": [
+null,
+null,
+null,
+0,
+0,
+0,
+0
+],
+"aktien_mio": [
+null,
+null,
+576,
+598,
+600,
+631,
+645
+],
+"eigenkapitalrendite_pct": [
+null,
+null,
+26.66,
+20.1,
+11.89,
+5.16,
+7.89
+]
+},
+"LTMC.MI": {
+"name": "Lottomatica Group",
+"isin": "IT0005541336",
+"waehrung": "EUR",
+"hinweis": "Quelle stockanalysis.com (boerse.de nicht abrufbar), nur 2021-2025 verfuegbar, 2019/2020 null. Berichtswaehrung EUR. EPS verwaessert, Aktienzahl unverwaessert (Mio.), Eigenkapital = Eigenkapital der Aktionaere ohne Minderheiten, Jahresueberschuss Anteil der Aktionaere, dividendenausschuettung = gezahlte Dividenden lt. Cashflow, Dividende je Aktie nach Geschaeftsjahr. Boersengang November 2023 und Gamenet-Zukauf 2023: Werte 2021/2022 vor Boersengang mit anderer Konzernstruktur, eingeschraenkt vergleichbar. Dividende je Aktie erst ab 2023 (null davor). Eigenkapitalrendite 2021 null (negatives Eigenkapital), 2022 rechnerisch 140 % (Eigenkapital nur 51,4).",
+"umsatz": [
+null,
+null,
+808.11,
+1395,
+1632,
+2005,
+2247
+],
+"ebt": [
+null,
+null,
+-50.26,
+133.26,
+137.14,
+180.89,
+275.78
+],
+"jahresueberschuss": [
+null,
+null,
+-57.56,
+72.12,
+67.94,
+98.6,
+174.3
+],
+"dividendenausschuettung": [
+null,
+null,
+249.7,
+16.25,
+0,
+67.11,
+78.17
+],
+"eigenkapital": [
+null,
+null,
+-24.42,
+51.39,
+498.01,
+517.97,
+325.07
+],
+"eps": [
+null,
+null,
+-0.29,
+0.36,
+0.29,
+0.39,
+0.7
+],
+"dividende_je_aktie": [
+null,
+null,
+null,
+null,
+0.26,
+0.3,
+0.44
+],
+"aktien_mio": [
+null,
+null,
+200,
+200,
+234,
+252,
+249
+],
+"eigenkapitalrendite_pct": [
+null,
+null,
+null,
+140.34,
+13.64,
+19.04,
+53.62
+]
+}
+}
+}
