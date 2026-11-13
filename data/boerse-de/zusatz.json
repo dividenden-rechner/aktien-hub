@@ -22098,6 +22098,852 @@ null
 2875
 ],
 "hinweis": "SEK Mio., stockanalysis.com (S&P). capex = Sachanlagen (immaterielle Investitionen nicht gesondert ausgewiesen, daher ggf. leicht untererfasst); da inkl. sonstiger Amortisation; Akquisitionen 2021 3,8 / 2022 3,7 / 2025 9,4 Mrd. (nicht in capex), 2025 Schulden dadurch deutlich hoeher; debt = Gesamtschulden inkl. Leasing; bb: 2023-2025 keine Rueckkaeufe (null); ebit laut S&P; cash = liquide Mittel + kurzfristige Anlagen. 2022 ocf durch Vorratsaufbau niedrig."
+},
+"NOKIA.HE": {
+"jahre": [
+2021,
+2022,
+2023,
+2024,
+2025
+],
+"ocf": [
+2625,
+1474,
+1317,
+2493,
+2071
+],
+"capex": [
+560,
+601,
+652,
+472,
+606
+],
+"da": [
+1095,
+1140,
+1087,
+1014,
+1119
+],
+"div": [
+9,
+336,
+611,
+714,
+753
+],
+"bb": [
+0,
+300,
+300,
+680,
+624
+],
+"cash": [
+9268,
+8547,
+7823,
+8312,
+6445
+],
+"debt": [
+5662,
+5618,
+5216,
+4760,
+4416
+],
+"umsatz": [
+22202,
+23761,
+21138,
+19220,
+19889
+],
+"brutto": [
+8834,
+10186,
+8697,
+9044,
+8880
+],
+"ebit": [
+1795,
+2705,
+2015,
+2300,
+1536
+],
+"zins": [
+206,
+220,
+354,
+326,
+219
+],
+"steuer": [
+272,
+-2033,
+820,
+380,
+277
+],
+"hinweis": "stockanalysis.com, EUR Mio. Umsatz ab 2023 restated ohne Submarine Networks (2023: 21.138; 2022: 23.761 laut stockanalysis, boerse.de 24.911 original). cash = liquide Mittel plus kurzfristige Anlagen. debt inkl. Leasing. Steuer 2022 negativ (Steuerertrag -2.033 durch Aktivierung latenter Steuern). Dividenden 2021 nur 9 (Dividende wurde 2021 erst im Q4 wieder aufgenommen)."
+},
+"STERV.HE": {
+"jahre": [
+2021,
+2022,
+2023,
+2024,
+2025
+],
+"ocf": [
+1476,
+1582,
+752,
+952,
+645
+],
+"capex": [
+644,
+704,
+989,
+1113,
+775
+],
+"da": [
+548,
+534,
+533,
+500,
+482
+],
+"div": [
+237,
+434,
+472,
+146,
+209
+],
+"bb": [
+3,
+1,
+6,
+3,
+2
+],
+"cash": [
+1481,
+1917,
+2464,
+1999,
+1212
+],
+"debt": [
+3938,
+3972,
+5779,
+5779,
+4474
+],
+"umsatz": [
+10164,
+11680,
+9396,
+9049,
+9326
+],
+"brutto": [
+4350,
+4959,
+3054,
+2311,
+2306
+],
+"ebit": [
+1159,
+1669,
+37,
+267,
+233
+],
+"zins": [
+126,
+125,
+183,
+214,
+196
+],
+"steuer": [
+151,
+322,
+-64,
+65,
+97
+],
+"hinweis": "stockanalysis.com, EUR Mio. ebit = IFRS-Betriebsergebnis laut stockanalysis (nicht das 'operative EBIT' des Konzerns). da inkl. sonstiger Amortisation. div inkl. Dividenden an Minderheiten (daher ueber Dividende x Aktien). debt 2023 und 2024 beide 5.779 (aus Bilanzposten nachgerechnet, kein Fehler). Steuer 2023 negativ (Steuerertrag)."
+},
+"WRT1V.HE": {
+"jahre": [
+2021,
+2022,
+2023,
+2024,
+2025
+],
+"ocf": [
+731,
+-62,
+822,
+1208,
+1598
+],
+"capex": [
+142,
+156,
+148,
+170,
+150
+],
+"da": [
+150,
+143,
+137,
+151,
+163
+],
+"div": [
+119,
+143,
+153,
+188,
+263
+],
+"bb": [
+18,
+0,
+10,
+0,
+16
+],
+"cash": [
+964,
+461,
+819,
+1554,
+2590
+],
+"debt": [
+972,
+949,
+859,
+766,
+582
+],
+"umsatz": [
+4782,
+5848,
+6018,
+6451,
+6915
+],
+"brutto": [
+2091,
+2177,
+2599,
+2977,
+3226
+],
+"ebit": [
+280,
+105,
+415,
+674,
+802
+],
+"zins": [
+25,
+32,
+58,
+60,
+61
+],
+"steuer": [
+103,
+26,
+95,
+180,
+198
+],
+"hinweis": "stockanalysis.com, EUR Mio. OCF 2022 negativ (-62), nicht auf positiv gedreht. capex = Sachanlagen plus immaterielle Werte (2025 weist stockanalysis keine separate Immaterielle-Zeile aus, daher nur 150). da inkl. sonstiger Amortisation. Umsatz inkl. sonstiger Erloese (6.915 vs. 6.914)."
+},
+"ELISA.HE": {
+"jahre": [
+2021,
+2022,
+2023,
+2024,
+2025
+],
+"ocf": [
+595.7,
+591.8,
+647.8,
+650.9,
+688.6
+],
+"capex": [
+258.8,
+270.9,
+304.7,
+306.7,
+279.0
+],
+"da": [
+266.6,
+263.4,
+268.5,
+279.2,
+298.4
+],
+"div": [
+310.9,
+328.1,
+343.5,
+359.8,
+381.4
+],
+"bb": [
+null,
+null,
+null,
+null,
+null
+],
+"cash": [
+114.1,
+85.4,
+63.4,
+89.9,
+189.5
+],
+"debt": [
+1333,
+1361,
+1368,
+1563,
+1698
+],
+"umsatz": [
+1998,
+2130,
+2181,
+2192,
+2257
+],
+"brutto": [
+860.5,
+913.9,
+945.5,
+974.3,
+993.4
+],
+"ebit": [
+429.0,
+470.3,
+477.2,
+487.0,
+462.9
+],
+"zins": [
+13.0,
+15.9,
+29.8,
+40.8,
+44.7
+],
+"steuer": [
+74.9,
+83.2,
+84.1,
+91.5,
+83.0
+],
+"hinweis": "stockanalysis.com, EUR Mio. bb null: Elisa weist keine Aktienrueckkaeufe aus. da inkl. sonstiger Amortisation (2024: 267,1+12,1; 2025: 280,9+17,5). capex ohne Leasingzahlungen."
+},
+"KESKOB.HE": {
+"jahre": [
+2021,
+2022,
+2023,
+2024,
+2025
+],
+"ocf": [
+1152,
+915.2,
+1050,
+1008,
+879.7
+],
+"capex": [
+239.4,
+352.4,
+539.2,
+491.4,
+502.3
+],
+"da": [
+480.1,
+488.7,
+537.2,
+570.1,
+580.7
+],
+"div": [
+297.8,
+406.7,
+430.3,
+320.3,
+370.2
+],
+"bb": [
+null,
+null,
+null,
+null,
+null
+],
+"cash": [
+387.7,
+314.1,
+227.3,
+488.1,
+166.2
+],
+"debt": [
+2295,
+2418,
+2787,
+3396,
+3573
+],
+"umsatz": [
+11300,
+11809,
+11784,
+11920,
+12475
+],
+"brutto": [
+1648,
+1742,
+1677,
+1714,
+1808
+],
+"ebit": [
+749.0,
+790.2,
+682.1,
+600.9,
+618.2
+],
+"zins": [
+76.1,
+72.4,
+98.3,
+127.7,
+137.5
+],
+"steuer": [
+141.1,
+151.2,
+118.0,
+92.0,
+105.5
+],
+"hinweis": "stockanalysis.com, EUR Mio. da, debt und Zinsen inkl. Leasing (IFRS 16, Leasingzahlungen 2021-2025 rund 320-370 p.a. sind in den Finanzierungs-Cashflows, nicht im ocf-Abzug). bb null: kein Rueckkaufposten."
+},
+"ORNBV.HE": {
+"jahre": [
+2021,
+2022,
+2023,
+2024,
+2025
+],
+"ocf": [
+215.7,
+434.4,
+119.0,
+293.4,
+316.8
+],
+"capex": [
+85.0,
+73.1,
+116.8,
+86.9,
+97.6
+],
+"da": [
+45.2,
+47.5,
+50.5,
+51.4,
+56.3
+],
+"div": [
+211.2,
+211.2,
+224.5,
+228.0,
+231.1
+],
+"bb": [
+0,
+17.9,
+0,
+0,
+0
+],
+"cash": [
+216.7,
+332.6,
+106.7,
+205.6,
+160.9
+],
+"debt": [
+108.5,
+214.0,
+200.0,
+327.2,
+305.4
+],
+"umsatz": [
+1041,
+1341,
+1190,
+1542,
+1890
+],
+"brutto": [
+593.5,
+851.6,
+657.8,
+946.4,
+1213
+],
+"ebit": [
+240.3,
+438.8,
+236.8,
+454.9,
+631.8
+],
+"zins": [
+1.0,
+1.5,
+5.2,
+7.6,
+8.2
+],
+"steuer": [
+48.5,
+90.8,
+55.1,
+83.2,
+127.5
+],
+"hinweis": "stockanalysis.com, EUR Mio. capex = Sachanlagen plus immaterielle Werte. brutto = Umsatz minus Umsatzkosten laut stockanalysis. ocf 2025 belastet durch Forderungsaufbau (-336)."
+},
+"VALMT.HE": {
+"jahre": [
+2021,
+2022,
+2023,
+2024,
+2025
+],
+"ocf": [
+482,
+36,
+352,
+554,
+581
+],
+"capex": [
+97,
+112,
+125,
+107,
+103
+],
+"da": [
+120,
+203,
+196,
+219,
+209
+],
+"div": [
+134,
+179,
+239,
+248,
+248
+],
+"bb": [
+3,
+5,
+4,
+3,
+3
+],
+"cash": [
+564,
+308,
+460,
+520,
+560
+],
+"debt": [
+476,
+808,
+1484,
+1544,
+1461
+],
+"umsatz": [
+3935,
+5074,
+5532,
+5359,
+5197
+],
+"brutto": [
+993,
+1264,
+1429,
+1512,
+1478
+],
+"ebit": [
+406,
+426,
+510,
+521,
+535
+],
+"zins": [
+1,
+10,
+38,
+89,
+74
+],
+"steuer": [
+99,
+94,
+114,
+102,
+96
+],
+"hinweis": "stockanalysis.com, EUR Mio. Neles-Fusion Mitte 2022 (ab 2022 hoeherer Umsatz, Abschreibungen, Schulden). ebit = Betriebsergebnis laut stockanalysis vor Restrukturierungs- und Sonderposten (diese stehen darunter, z. B. 2025: -67 und -24), daher hoeher als das berichtete EBIT. capex = Sachanlagen plus immaterielle Werte. da inkl. sonstiger Amortisation. ocf 2022 nur 36 durch Working-Capital-Aufbau."
+},
+"KCR.HE": {
+"jahre": [
+2021,
+2022,
+2023,
+2024,
+2025
+],
+"ocf": [
+168.4,
+66.7,
+557.3,
+491.6,
+569.5
+],
+"capex": [
+40.5,
+44.7,
+52.4,
+69.2,
+49.4
+],
+"da": [
+119.8,
+115.2,
+114.7,
+120.4,
+136.6
+],
+"div": [
+69.6,
+98.9,
+99.0,
+106.9,
+130.7
+],
+"bb": [
+null,
+null,
+null,
+null,
+null
+],
+"cash": [
+320.7,
+415.7,
+587.2,
+710.0,
+631.9
+],
+"debt": [
+865.1,
+1106.0,
+954.9,
+895.9,
+469.9
+],
+"umsatz": [
+3186,
+3365,
+3966,
+4227,
+4188
+],
+"brutto": [
+1773,
+1855,
+2146,
+2349,
+2393
+],
+"ebit": [
+233.8,
+232.4,
+404.1,
+511.4,
+552.3
+],
+"zins": [
+19.0,
+26.5,
+46.8,
+54.0,
+36.3
+],
+"steuer": [
+45.1,
+52.2,
+92.0,
+116.9,
+116.8
+],
+"hinweis": "stockanalysis.com, EUR Mio. capex = Zeile Capital Expenditures (separate Immaterielle-Zeile fehlt). da inkl. sonstiger Amortisation. ocf 2021/2022 niedrig durch Working-Capital-Aufbau. bb null: kein Rueckkaufposten. ebit = Betriebsergebnis laut stockanalysis (nach Sonderposten teils darunter ausgewiesen)."
+},
+"OUT1V.HE": {
+"jahre": [
+2021,
+2022,
+2023,
+2024,
+2025
+],
+"ocf": [
+597,
+778,
+325,
+147,
+79
+],
+"capex": [
+156,
+155,
+146,
+211,
+144
+],
+"da": [
+272,
+286,
+242,
+213,
+215
+],
+"div": [
+0,
+68,
+152,
+110,
+116
+],
+"bb": [
+0,
+42,
+70,
+34,
+0
+],
+"cash": [
+328,
+549,
+529,
+341,
+389
+],
+"debt": [
+711,
+643,
+454,
+506,
+666
+],
+"umsatz": [
+7243,
+9494,
+6961,
+5942,
+5468
+],
+"brutto": [
+933,
+1347,
+487,
+232,
+189
+],
+"ebit": [
+666,
+1020,
+163,
+-67,
+-133
+],
+"zins": [
+61,
+41,
+58,
+64,
+54
+],
+"steuer": [
+84,
+-154,
+-22,
+-49,
+-36
+],
+"hinweis": "stockanalysis.com, EUR Mio., fortgefuehrtes Geschaeft (2021 Umsatz 7.243 restated, boerse.de-Reihe 7.709 original). ebit negativ 2024/2025 (-67/-133, Betriebsverlust). Steuer 2022-2025 negativ (Steuerertrag, 2022 -154 durch latente Steuern). capex = Sachanlagen plus immaterielle Werte. Dividenden 2021 null (Dividende fuer 2020 entfiel), Kapitalerhoehung 2021 (+205) nicht erfasst. Zinsaufwand brutto."
 }
 }
 }

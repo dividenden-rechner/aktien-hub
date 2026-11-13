@@ -1,0 +1,800 @@
+{
+"quelle": "boerse.de Fundamentalanalyse (je Firma, Seite 'fundamental-analyse')",
+"stand": "2026-11-12",
+"einheit": "Mio € (je Aktie in €; aktien_mio in Mio. Stück)",
+"jahre": [
+2019,
+2020,
+2021,
+2022,
+2023,
+2024,
+2025
+],
+"hinweis": "Jahresüberschuss meist Anteil der Aktionäre, kann je Firma von Pressemitteilungen abweichen. Umsatz bei Banken/Versicherern von boerse.de nicht geführt (null). Nicht geprüft gegen Geschäftsberichte.",
+"firmen": {
+"NOKIA.HE": {
+"name": "Nokia",
+"isin": "FI0009000681",
+"waehrung": "EUR",
+"hinweis": "Quelle boerse.de (Umsatz/Ergebnis wie urspruenglich berichtet; 2024/2025 laut Konzern ohne die 2024 als aufgegeben ausgewiesene Submarine-Networks-Sparte, Umsatz 2023 restated 21.138 statt 22.258; Jahresueberschuss 2024 inkl. Verlust aus aufgegebenem Geschaeft -427 und EBT 2024 daher 1.664 statt 2.091 aus fortgefuehrten Geschaeften). EPS unverwaessert; 2019 von boerse.de nicht angegeben (Jahresueberschuss nur 7 Mio, EPS rechnerisch 0,00), null. Dividende fuer 2019 und 2020 nicht gezahlt (0). Aktienzahl laut boerse.de (ausgegebene Aktien, fuer 2025 vermutlich nicht um die Kapitalerhoehung bereinigt). Eigenkapital ohne Minderheiten.",
+"umsatz": [
+23315,
+21852,
+22202,
+24911,
+22258,
+19220,
+19889
+],
+"ebt": [
+149,
+740,
+1926,
+2233,
+1504,
+1664,
+937
+],
+"jahresueberschuss": [
+7,
+-2523,
+1623,
+4250,
+665,
+1277,
+651
+],
+"dividendenausschuettung": [
+0,
+0,
+454,
+670,
+718,
+752,
+782
+],
+"eigenkapital": [
+15325,
+12465,
+17360,
+21333,
+20537,
+20657,
+20967
+],
+"eps": [
+null,
+-0.45,
+0.29,
+0.75,
+0.12,
+0.23,
+0.12
+],
+"dividende_je_aktie": [
+0.0,
+0.0,
+0.08,
+0.12,
+0.13,
+0.14,
+0.14
+],
+"aktien_mio": [
+5635.95,
+5653.89,
+5675.46,
+5632.3,
+5613.5,
+5614.07,
+5614.07
+],
+"eigenkapitalrendite_pct": [
+0.05,
+-20.24,
+9.35,
+19.92,
+3.24,
+6.18,
+3.1
+]
+},
+"STERV.HE": {
+"name": "Stora Enso",
+"isin": "FI0009005953",
+"waehrung": "EUR",
+"hinweis": "Quelle boerse.de (A-Aktie, ISIN der A-Aktie; Gesamtzahl A+R-Aktien 788,62 Mio). Dividendenausschuettung von boerse.de nicht angegeben (null), gezahlte Dividenden siehe Zusatzdaten. Dividende je Aktie 2023: 0,20 (Basisdividende 0,10 plus zweite Rate 0,10 laut Stora Enso), boerse.de zeigt nur 0,10. Jahresueberschuss laut boerse.de/stockanalysis ohne Minderheiten. EPS unverwaessert.",
+"umsatz": [
+10055,
+8553,
+10164,
+11680,
+9396,
+9049,
+9326
+],
+"ebt": [
+1137,
+773,
+1419,
+1858,
+-495,
+-118,
+783
+],
+"jahresueberschuss": [
+880,
+626,
+1266,
+1550,
+-357,
+-136,
+695
+],
+"dividendenausschuettung": [
+null,
+null,
+null,
+null,
+null,
+null,
+null
+],
+"eigenkapital": [
+7429,
+8809,
+10683,
+12532,
+10985,
+10139,
+10796
+],
+"eps": [
+1.12,
+0.79,
+1.61,
+1.97,
+-0.45,
+-0.17,
+0.88
+],
+"dividende_je_aktie": [
+0.5,
+0.3,
+0.55,
+0.6,
+0.2,
+0.25,
+0.25
+],
+"aktien_mio": [
+788.62,
+788.62,
+788.62,
+788.62,
+788.62,
+788.62,
+788.62
+],
+"eigenkapitalrendite_pct": [
+11.85,
+7.11,
+11.85,
+12.37,
+-3.25,
+-1.34,
+6.44
+]
+},
+"WRT1V.HE": {
+"name": "Wärtsilä",
+"isin": "FI0009003727",
+"waehrung": "EUR",
+"hinweis": "Quelle boerse.de (B-Aktie ISIN, Aktienzahl 591,72 Mio = ausgegebene Aktien). Dividende 2025: 1,06 (Basis 0,54 plus Sonderdividende 0,52 laut Beschluss Hauptversammlung 12.03.2026), boerse.de zeigt nur 0,54; Ausschuettung 624 passt zu 1,06. Jahresueberschuss 2022 und EPS 2022 laut stockanalysis (-64 / -0,11) statt boerse.de (-59 / -0,10), Eigenkapitalrendite 2022 daher neu gerechnet (-3,00). Dividendenausschuettung 2019/2020 nicht angegeben (null). EPS unverwaessert.",
+"umsatz": [
+5170,
+4604,
+4778,
+5842,
+6015,
+6449,
+6914
+],
+"ebt": [
+315,
+191,
+296,
+-32,
+364,
+687,
+828
+],
+"jahresueberschuss": [
+217,
+134,
+193,
+-64,
+258,
+503,
+626
+],
+"dividendenausschuettung": [
+null,
+null,
+142,
+153,
+188,
+259,
+624
+],
+"eigenkapital": [
+2396,
+2177,
+2315,
+2135,
+2225,
+2525,
+2877
+],
+"eps": [
+0.37,
+0.23,
+0.33,
+-0.11,
+0.44,
+0.85,
+1.06
+],
+"dividende_je_aktie": [
+0.48,
+0.2,
+0.24,
+0.26,
+0.32,
+0.44,
+1.06
+],
+"aktien_mio": [
+591.72,
+591.72,
+591.72,
+591.72,
+591.72,
+591.72,
+591.72
+],
+"eigenkapitalrendite_pct": [
+9.06,
+6.16,
+8.34,
+-3.0,
+11.6,
+19.92,
+21.76
+]
+},
+"ELISA.HE": {
+"name": "Elisa",
+"isin": "FI0009007884",
+"waehrung": "EUR",
+"hinweis": "boerse.de nicht abrufbar. Quellen: Umsatz/EBT/Jahresueberschuss (Anteil Aktionaere) Inderes bzw. Elisa-Abschluss 2020 (2019/2020 Eigenkapital und Gewinn aus Elisa Financial Statements 2020), 2021-2025 Eigenkapital (Mutterunternehmen) und Aktienzahl (Stueck ohne eigene Aktien) stockanalysis.com; 2019/2020 Aktienzahl = gewichteter Durchschnitt. EPS 2019-2022 und 2025 laut Elisa bzw. stockanalysis, 2023 und 2024 aus Anteil Aktionaere/Aktien gerechnet (stockanalysis nennt 2,34/2,23, dort Minderheiten eingerechnet). Dividendenausschuettung = im Folgejahr gezahlte Dividende laut Cashflow (2019: 296,2 laut Eigenkapitalveraenderung), 2025 noch nicht gezahlt (null). Dividende je Aktie laut Beschluss.",
+"umsatz": [
+1844,
+1895,
+1998,
+2130,
+2181,
+2192,
+2257
+],
+"ebt": [
+371.9,
+398.4,
+418.4,
+456.0,
+458.1,
+446.1,
+424.9
+],
+"jahresueberschuss": [
+303.0,
+328.0,
+343.5,
+372.8,
+374.0,
+354.6,
+341.9
+],
+"dividendenausschuettung": [
+296.2,
+310.9,
+328.1,
+343.5,
+359.8,
+381.4,
+null
+],
+"eigenkapital": [
+1149.6,
+1182.7,
+1198,
+1247,
+1290,
+1286,
+1253
+],
+"eps": [
+1.9,
+2.05,
+2.15,
+2.33,
+2.33,
+2.21,
+2.13
+],
+"dividende_je_aktie": [
+1.85,
+1.95,
+2.05,
+2.15,
+2.25,
+2.35,
+2.4
+],
+"aktien_mio": [
+159.88,
+160.07,
+160.19,
+160.26,
+160.39,
+160.41,
+160.51
+],
+"eigenkapitalrendite_pct": [
+26.36,
+27.73,
+28.67,
+29.9,
+28.99,
+27.57,
+27.29
+]
+},
+"KESKOB.HE": {
+"name": "Kesko (B)",
+"isin": "FI0009000202",
+"waehrung": "EUR",
+"hinweis": "Quelle boerse.de (B-Aktie). Aktiensplit 4:1 im Jahr 2021: EPS, Dividende je Aktie und Aktienzahl 2019/2020 auf Basis nach Split umgerechnet (boerse.de: EPS 3,39/4,33 und Dividende 2,52 sowie 100,14/100,02 Mio Aktien vor Split; 2020-Dividende 0,75 war bereits nach Split). Aktienzahl 2021-2025 = ausstehende Aktien laut stockanalysis, 2019/2020 = boerse.de x4 (naeherungsweise). EPS 2021-2025 laut stockanalysis (unverwaessert = verwaessert). Jahresueberschuss Anteil Aktionaere.",
+"umsatz": [
+10720,
+10669,
+11300,
+11809,
+11784,
+11920,
+12475
+],
+"ebt": [
+415,
+528,
+713,
+761,
+614,
+472,
+510
+],
+"jahresueberschuss": [
+339,
+433,
+572,
+610,
+496,
+379,
+404
+],
+"dividendenausschuettung": [
+250,
+295,
+418,
+429,
+406,
+358,
+358
+],
+"eigenkapital": [
+2026,
+2189,
+2530,
+2742,
+2758,
+2722,
+2798
+],
+"eps": [
+0.85,
+1.08,
+1.44,
+1.53,
+1.25,
+0.95,
+1.02
+],
+"dividende_je_aktie": [
+0.63,
+0.75,
+1.06,
+1.08,
+1.02,
+0.9,
+0.9
+],
+"aktien_mio": [
+400.56,
+400.08,
+397.11,
+397.46,
+397.77,
+397.96,
+398.12
+],
+"eigenkapitalrendite_pct": [
+16.74,
+19.8,
+22.61,
+22.24,
+17.97,
+13.93,
+14.45
+]
+},
+"ORNBV.HE": {
+"name": "Orion",
+"isin": "FI0009014377",
+"waehrung": "EUR",
+"hinweis": "Quelle boerse.de (B-Aktie). Dividendenausschuettung von boerse.de nicht angegeben; hier die im Folgejahr gezahlte Dividende laut Cashflow (FY2020 bis FY2024), 2019 und 2025 nicht verfuegbar (null). EPS 2021-2025 laut stockanalysis (2019/2020 boerse.de, unverwaessert). Aktienzahl laut boerse.de (ausgegebene Aktien).",
+"umsatz": [
+1051,
+1078,
+1041,
+1341,
+1190,
+1542,
+1890
+],
+"ebt": [
+251,
+278,
+242,
+440,
+272,
+413,
+628
+],
+"jahresueberschuss": [
+200,
+220,
+194,
+350,
+217,
+330,
+500
+],
+"dividendenausschuettung": [
+null,
+211.2,
+211.2,
+224.5,
+228.0,
+231.1,
+null
+],
+"eigenkapital": [
+779,
+731,
+748,
+908,
+890,
+1005,
+1285
+],
+"eps": [
+1.41,
+1.56,
+1.38,
+2.49,
+1.54,
+2.35,
+3.56
+],
+"dividende_je_aktie": [
+1.5,
+1.5,
+1.5,
+1.6,
+1.62,
+1.64,
+1.8
+],
+"aktien_mio": [
+141.91,
+141.13,
+141.13,
+141.13,
+141.13,
+141.13,
+141.13
+],
+"eigenkapitalrendite_pct": [
+25.71,
+30.07,
+25.91,
+38.49,
+24.36,
+32.83,
+38.95
+]
+},
+"VALMT.HE": {
+"name": "Valmet",
+"isin": "FI4000074984",
+"waehrung": "EUR",
+"hinweis": "Quelle boerse.de. Fusion mit Neles Mitte 2022: Aktienzahl steigt von 149,5 auf 184,5 Mio, Umsatz/Gewinn 2019-2021 nicht pro forma, EPS 2019-2021 und Dividende je Aktie nicht auf neue Aktienzahl umgerechnet. Eigenkapital 2021 laut stockanalysis (1.326, Aktionaere) statt boerse.de (1.137, dort Dublette von 2020), Eigenkapitalrendite daher aus Jahresueberschuss/Eigenkapital gerechnet. EPS unverwaessert laut boerse.de (stockanalysis 2022: 1,92 statt 1,83). Dividendenausschuettung 2019 nicht angegeben (null).",
+"umsatz": [
+3547,
+3740,
+3935,
+5074,
+5532,
+5359,
+5197
+],
+"ebt": [
+269,
+307,
+395,
+431,
+473,
+383,
+376
+],
+"jahresueberschuss": [
+201,
+231,
+295,
+338,
+357,
+280,
+279
+],
+"dividendenausschuettung": [
+null,
+135,
+179,
+239,
+249,
+249,
+249
+],
+"eigenkapital": [
+1040,
+1137,
+1326,
+2496,
+2565,
+2607,
+2584
+],
+"eps": [
+1.34,
+1.54,
+1.97,
+1.83,
+1.93,
+1.52,
+1.51
+],
+"dividende_je_aktie": [
+0.8,
+0.9,
+1.2,
+1.3,
+1.35,
+1.35,
+1.35
+],
+"aktien_mio": [
+149.86,
+149.86,
+149.47,
+184.53,
+184.53,
+184.53,
+184.53
+],
+"eigenkapitalrendite_pct": [
+19.33,
+20.32,
+22.25,
+13.54,
+13.92,
+10.74,
+10.8
+]
+},
+"KCR.HE": {
+"name": "Konecranes",
+"isin": "FI0009005870",
+"waehrung": "EUR",
+"hinweis": "Quelle boerse.de. Aktiensplit 1:3 (zwei Gratisaktien je Aktie, Stichtag 30.03.2026, 79,22 auf 237,67 Mio Aktien): EPS, Dividende je Aktie und Aktienzahl aller Jahre auf Basis nach Split umgerechnet (boerse.de zeigt noch Werte vor Split, z. B. EPS 2025 5,05 und Dividende 2,25; die Dividende 2025 von 2,25 vor Split = 0,75 je neue Aktie, neue Aktien waren fuer 2025 nicht dividendenberechtigt). Umgerechnete Werte auf zwei Stellen gerundet (EPS 2019/2020 und Dividende 2020-2022 entsprechend Drittel). EPS unverwaessert. Dividendenausschuettung unveraendert (Mio EUR).",
+"umsatz": [
+3327,
+3179,
+3186,
+3365,
+3966,
+4227,
+4188
+],
+"ebt": [
+119,
+170,
+193,
+191,
+368,
+485,
+517
+],
+"jahresueberschuss": [
+81,
+122,
+147,
+140,
+276,
+368,
+400
+],
+"dividendenausschuettung": [
+95,
+70,
+70,
+99,
+107,
+131,
+178
+],
+"eigenkapital": [
+1238,
+1242,
+1351,
+1433,
+1595,
+1858,
+2087
+],
+"eps": [
+0.34,
+0.51,
+0.62,
+0.59,
+1.16,
+1.55,
+1.68
+],
+"dividende_je_aktie": [
+0.4,
+0.29,
+0.29,
+0.42,
+0.45,
+0.55,
+0.75
+],
+"aktien_mio": [
+236.76,
+237.66,
+237.66,
+237.66,
+237.66,
+237.66,
+237.66
+],
+"eigenkapitalrendite_pct": [
+6.55,
+9.84,
+10.87,
+9.79,
+17.28,
+19.83,
+19.15
+]
+},
+"OUT1V.HE": {
+"name": "Outokumpu",
+"isin": "FI0009002422",
+"waehrung": "EUR",
+"hinweis": "Quelle boerse.de. Werte wie urspruenglich berichtet: 2021 Umsatz 7.709 und EBT 640 inkl. spaeter als aufgegeben ausgewiesener Teile (stockanalysis restated: Umsatz 7.243, EBT 610); Jahresueberschuss 2022 1.086 aus fortgefuehrtem Geschaeft (stockanalysis inkl. aufgegebenem Geschaeft 1.140, EPS dort 2,52/2,33). Dividende 2020 nicht gezahlt (0), 2022 inkl. Sonderdividende (0,25 plus 0,10). Aktienzahl laut boerse.de (ausgegebene Aktien, 2025 inkl. neuer Aktien). EPS unverwaessert laut boerse.de.",
+"umsatz": [
+6403,
+5639,
+7709,
+9494,
+6961,
+5942,
+5468
+],
+"ebt": [
+-41,
+-151,
+640,
+933,
+-128,
+-89,
+-174
+],
+"jahresueberschuss": [
+-75,
+-116,
+553,
+1086,
+-106,
+-40,
+-137
+],
+"dividendenausschuettung": [
+41,
+0,
+68,
+155,
+112,
+110,
+61
+],
+"eigenkapital": [
+2562,
+2360,
+3120,
+4119,
+3762,
+3748,
+3405
+],
+"eps": [
+-0.18,
+-0.28,
+1.21,
+2.38,
+-0.23,
+-0.09,
+-0.29
+],
+"dividende_je_aktie": [
+0.1,
+0.0,
+0.15,
+0.35,
+0.26,
+0.26,
+0.13
+],
+"aktien_mio": [
+416.37,
+416.37,
+456.87,
+456.87,
+456.87,
+456.87,
+473.02
+],
+"eigenkapitalrendite_pct": [
+-2.93,
+-4.92,
+17.72,
+26.37,
+-2.82,
+-1.07,
+-4.02
+]
+}
+}
+}
