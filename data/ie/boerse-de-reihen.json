@@ -1,0 +1,365 @@
+{
+"quelle": "boerse.de Fundamentalanalyse (je Firma, Seite 'fundamental-analyse')",
+"stand": "2026-11-12",
+"einheit": "Mio € (je Aktie in €; aktien_mio in Mio. Stück)",
+"jahre": [
+2019,
+2020,
+2021,
+2022,
+2023,
+2024,
+2025
+],
+"hinweis": "Jahresüberschuss meist Anteil der Aktionäre, kann je Firma von Pressemitteilungen abweichen. Umsatz bei Banken/Versicherern von boerse.de nicht geführt (null). Nicht geprüft gegen Geschäftsberichte.",
+"firmen": {
+"KYG.IR": {
+"name": "Kerry Group",
+"isin": "IE0004906560",
+"waehrung": "EUR",
+"hinweis": "Quelle boerse.de. EPS verwaessert. Umsatz 2023 laut boerse.de 8.020 (urspruenglich berichtet), stockanalysis weist 2023 rueckwirkend angepasst 6.975 aus (Abgang Dairy Ireland); 2019-2022 nicht angepasst, daher Umsatz-Reihe nicht voll vergleichbar. Dividende je Aktie 2022 (0,73) und Ausschuettung 2022 (130) laut boerse.de wirken niedrig gegenueber gezahlten Dividenden im Cashflow (173,6), vermutlich Zahlungszeitpunkt; nicht geprueft. Aktienzahl laut boerse.de (Mio. angenommen).",
+"umsatz": [
+7241,
+6953,
+7351,
+8772,
+8020,
+6929,
+6758
+],
+"ebt": [
+646,
+635,
+816,
+699,
+823,
+839,
+759
+],
+"jahresueberschuss": [
+567,
+554,
+763,
+606,
+728,
+734,
+659
+],
+"dividendenausschuettung": [
+139,
+143,
+168,
+130,
+203,
+205,
+226
+],
+"eigenkapital": [
+4562,
+4656,
+5601,
+6222,
+6521,
+6486,
+5952
+],
+"eps": [
+3.2,
+3.12,
+4.3,
+3.41,
+4.1,
+4.24,
+3.99
+],
+"dividende_je_aktie": [
+0.79,
+0.86,
+0.95,
+0.73,
+1.15,
+1.27,
+1.4
+],
+"aktien_mio": [
+176.51,
+176.7,
+176.85,
+176.99,
+175.79,
+166.44,
+161.1
+],
+"eigenkapitalrendite_pct": [
+12.42,
+11.9,
+13.62,
+9.75,
+11.17,
+11.32,
+11.06
+]
+},
+"GL9.IR": {
+"name": "Glanbia",
+"isin": "IE0000669501",
+"waehrung": "USD",
+"hinweis": "Quelle stockanalysis.com (2021-2025, boerse.de-Fundamentalseite nicht abrufbar), 2019/2020 nicht verfuegbar (null) ausser Dividende. Berichtswaehrung USD, Dividende je Aktie wird in EUR beschlossen (boerse.de Dividendenseite, Zahlungsjahr: Maerz+August). Geschaeftsjahr endet am Samstag nahe 31.12. (FY2021 bis 01.01.2022, FY2024 bis 04.01.2025, FY2025 bis 03.01.2026). Umsatz 2024 (3.840) stark unter 2023 (5.425), Vorjahre nicht vergleichbar (stockanalysis: -29 %). Jahresueberschuss = Anteil Aktionaere; EPS verwaessert; Dividendenausschuettung = im Cashflow gezahlte Dividenden (USD); Eigenkapital = Total Common Equity; Aktien = ausstehende Aktien Jahresende.",
+"umsatz": [
+null,
+null,
+4773,
+5944,
+5425,
+3840,
+3946
+],
+"ebt": [
+null,
+null,
+179.69,
+237.4,
+392.4,
+208,
+209.2
+],
+"jahresueberschuss": [
+null,
+null,
+189.92,
+271.4,
+344.4,
+164.7,
+183.3
+],
+"dividendenausschuettung": [
+null,
+null,
+91.55,
+88.9,
+97.2,
+104.4,
+117.8
+],
+"eigenkapital": [
+null,
+null,
+1970,
+1984,
+2133,
+2073,
+1927
+],
+"eps": [
+null,
+null,
+0.65,
+0.97,
+1.27,
+0.62,
+0.72
+],
+"dividende_je_aktie": [
+0.252,
+0.266,
+0.277,
+0.305,
+0.335,
+0.369,
+0.405
+],
+"aktien_mio": [
+null,
+null,
+286.76,
+270.58,
+262.7,
+257.53,
+242.48
+],
+"eigenkapitalrendite_pct": [
+null,
+null,
+9.64,
+13.68,
+16.15,
+7.95,
+9.51
+]
+},
+"BIRG.IR": {
+"name": "Bank of Ireland Group",
+"isin": "IE00BD1RP616",
+"waehrung": "EUR",
+"hinweis": "Bank, Umsatz null. Quelle stockanalysis.com (Income Statement 2021-2025; boerse.de nicht abrufbar), 2019/2020 fehlen. EBT = Pretax Income, Jahresueberschuss = Net Income to Common (nach AT1-Kupons), EPS = verwaessert, Aktien = gewichtete Basis-Aktien. Eigenkapital, Dividende je Aktie und Ausschuettung konnten nicht beschafft werden (Bilanz/Cashflow-Seiten nicht abrufbar, Tageslimit), daher null.",
+"umsatz": [
+null,
+null,
+null,
+null,
+null,
+null,
+null
+],
+"ebt": [
+null,
+null,
+1221,
+1011,
+1938,
+1855,
+1393
+],
+"jahresueberschuss": [
+null,
+null,
+980,
+781,
+1486,
+1453,
+1115
+],
+"dividendenausschuettung": [
+null,
+null,
+null,
+null,
+null,
+null,
+null
+],
+"eigenkapital": [
+null,
+null,
+null,
+null,
+null,
+null,
+null
+],
+"eps": [
+null,
+null,
+0.91,
+0.73,
+1.4,
+1.42,
+1.15
+],
+"dividende_je_aktie": [
+null,
+null,
+null,
+null,
+null,
+null,
+null
+],
+"aktien_mio": [
+null,
+null,
+1075,
+1071,
+1061,
+1024,
+971
+],
+"eigenkapitalrendite_pct": [
+null,
+null,
+null,
+null,
+null,
+null,
+null
+]
+},
+"A5G.IR": {
+"name": "AIB Group",
+"isin": "IE00BF0L3536",
+"waehrung": "EUR",
+"hinweis": "Bank, Umsatz null. Quelle stockanalysis.com (Income Statement 2021-2025; boerse.de nicht abrufbar), 2019/2020 fehlen. EBT = Pretax Income, Jahresueberschuss = Net Income to Common (nach AT1-Kupons), EPS verwaessert, Aktien = gewichtete Basis-Aktien. Dividende je Aktie laut stockanalysis-Summary (nicht gegengeprueft). Eigenkapital und Ausschuettung nicht beschafft (Bilanz/Cashflow-Seiten nicht abrufbar, Tageslimit), daher null.",
+"umsatz": [
+null,
+null,
+null,
+null,
+null,
+null,
+null
+],
+"ebt": [
+null,
+null,
+629,
+880,
+2394,
+2702,
+2399
+],
+"jahresueberschuss": [
+null,
+null,
+582,
+702,
+1996,
+2274,
+2056
+],
+"dividendenausschuettung": [
+null,
+null,
+null,
+null,
+null,
+null,
+null
+],
+"eigenkapital": [
+null,
+null,
+null,
+null,
+null,
+null,
+null
+],
+"eps": [
+null,
+null,
+0.21,
+0.26,
+0.76,
+0.92,
+0.93
+],
+"dividende_je_aktie": [
+null,
+null,
+0.045,
+0.062,
+0.266,
+0.37,
+0.586
+],
+"aktien_mio": [
+null,
+null,
+2714,
+2688,
+2636,
+2459,
+2203
+],
+"eigenkapitalrendite_pct": [
+null,
+null,
+null,
+null,
+null,
+null,
+null
+]
+}
+}
+}

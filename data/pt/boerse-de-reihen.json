@@ -1,0 +1,104 @@
+{
+"quelle": "boerse.de Fundamentalanalyse (je Firma, Seite 'fundamental-analyse')",
+"stand": "2026-11-12",
+"einheit": "Mio € (je Aktie in €; aktien_mio in Mio. Stück)",
+"jahre": [
+2019,
+2020,
+2021,
+2022,
+2023,
+2024,
+2025
+],
+"hinweis": "Jahresüberschuss meist Anteil der Aktionäre, kann je Firma von Pressemitteilungen abweichen. Umsatz bei Banken/Versicherern von boerse.de nicht geführt (null). Nicht geprüft gegen Geschäftsberichte.",
+"firmen": {
+"EDPR.LS": {
+"name": "EDP Renovaveis",
+"isin": "ES0127797019",
+"waehrung": "EUR",
+"hinweis": "Quelle boerse.de (Umsatz/EBT/Gewinn/Eigenkapital 2021-2025, Eigenkapital ohne Minderheiten), 2019/2020 aus stockanalysis/investcroc; Umsatz 2019 aus Umsatzaenderung abgeleitet (1.731+92,94). EPS/Aktienzahl stockanalysis (boerse.de nennt 2021 EPS 0,38, hier 0,70). Dividendenausschuettung = gezahlte Dividenden lt. Cashflow (weicht von DPS x Aktien ab). DPS nach Geschaeftsjahr (2025: 0,124 gezahlt 12.05.2026). Eigenkapital 2019/2020, DPS 2019 unbekannt.",
+"umsatz": [
+1824,
+1731,
+1758,
+2371,
+2239,
+2320,
+2688
+],
+"ebt": [
+709.1,
+768.9,
+903,
+962,
+561,
+-382,
+476
+],
+"jahresueberschuss": [
+475.1,
+555.7,
+655.4,
+616.2,
+309.0,
+-556.2,
+215.8
+],
+"dividendenausschuettung": [
+98.7,
+106.6,
+114.1,
+155.1,
+66.4,
+51.1,
+40.4
+],
+"eigenkapital": [
+null,
+null,
+8767,
+9026,
+11062,
+10703,
+10274
+],
+"eps": [
+0.54,
+0.64,
+0.7,
+0.64,
+0.31,
+-0.54,
+0.21
+],
+"dividende_je_aktie": [
+null,
+0.08,
+0.09,
+0.265,
+0.2,
+0.084,
+0.124
+],
+"aktien_mio": [
+872,
+872,
+935,
+961,
+1011,
+1035,
+1047
+],
+"eigenkapitalrendite_pct": [
+null,
+null,
+7.48,
+6.83,
+2.79,
+-5.2,
+2.1
+]
+}
+}
+}

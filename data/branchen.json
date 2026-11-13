@@ -318,6 +318,21 @@
   "JDEP.AS": "Basiskonsum",
   "AALB.AS": "Industrie",
   "CTPNV.AS": "Immobilien",
-  "VOLCAR-B.ST": "Zyklischer Konsum"
+  "VOLCAR-B.ST": "Zyklischer Konsum",
+  "SOLB.BR": "Rohstoffe",
+  "ACKB.BR": "Finanzen",
+  "GBLB.BR": "Finanzen",
+  "PROX.BR": "Kommunikation",
+  "ELI.BR": "Versorger",
+  "UMI.BR": "Rohstoffe",
+  "ANDR.VI": "Industrie",
+  "VIG.VI": "Finanzen",
+  "VOE.VI": "Rohstoffe",
+  "WIE.VI": "Rohstoffe",
+  "EDPR.LS": "Versorger",
+  "KYG.IR": "Basiskonsum",
+  "GL9.IR": "Basiskonsum",
+  "BIRG.IR": "Finanzen",
+  "A5G.IR": "Finanzen"
  }
 }

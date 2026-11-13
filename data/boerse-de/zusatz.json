@@ -22944,6 +22944,1134 @@ null
 -36
 ],
 "hinweis": "stockanalysis.com, EUR Mio., fortgefuehrtes Geschaeft (2021 Umsatz 7.243 restated, boerse.de-Reihe 7.709 original). ebit negativ 2024/2025 (-67/-133, Betriebsverlust). Steuer 2022-2025 negativ (Steuerertrag, 2022 -154 durch latente Steuern). capex = Sachanlagen plus immaterielle Werte. Dividenden 2021 null (Dividende fuer 2020 entfiel), Kapitalerhoehung 2021 (+205) nicht erfasst. Zinsaufwand brutto."
+},
+"ANDR.VI": {
+"jahre": [
+2021,
+2022,
+2023,
+2024,
+2025
+],
+"ocf": [
+529.6,
+710.8,
+375.0,
+636.5,
+652.7
+],
+"capex": [
+110.3,
+155.0,
+170.8,
+179.5,
+198.1
+],
+"da": [
+228.7,
+235.5,
+216.7,
+223.7,
+238.4
+],
+"div": [
+99.2,
+163.2,
+207.7,
+248.5,
+253.8
+],
+"bb": [
+4.7,
+16.0,
+0,
+116.6,
+0
+],
+"cash": [
+1758,
+2031,
+1819,
+1477,
+1295
+],
+"debt": [
+1368,
+1288,
+1139,
+812.3,
+830.8
+],
+"umsatz": [
+6463,
+7543,
+8660,
+8314,
+7883
+],
+"brutto": [
+3039,
+3484,
+3862,
+3979,
+3916
+],
+"ebit": [
+456.7,
+559.4,
+653.8,
+610.5,
+564.3
+],
+"zins": [
+36.2,
+32.3,
+37.3,
+35.3,
+40.1
+],
+"steuer": [
+117.9,
+138.3,
+183.9,
+150.0,
+142.2
+],
+"hinweis": "stockanalysis.com. capex = Capital Expenditures (Sachanlagen, immaterielle nicht separat), bb 0 = kein Rueckkauf, cash = liquide Mittel plus kurzfristige Anlagen, debt inkl. Leasing, zins = Zinsaufwand. 2023 OCF niedrig wegen Working Capital (Anzahlungen/Forderungen)."
+},
+"VIG.VI": {
+"jahre": [
+2021,
+2022,
+2023,
+2024,
+2025
+],
+"ocf": [
+null,
+null,
+null,
+null,
+null
+],
+"capex": [
+434.11,
+397.11,
+398.22,
+358.75,
+357.66
+],
+"da": [
+71.73,
+99.88,
+253.44,
+287.93,
+323.93
+],
+"div": [
+96,
+193.98,
+185.71,
+199.85,
+222.37
+],
+"bb": [
+null,
+null,
+null,
+null,
+null
+],
+"cash": [
+2456,
+2315,
+1558,
+1748,
+1368
+],
+"debt": [
+2591,
+2909,
+2394,
+2313,
+2415
+],
+"umsatz": [
+null,
+null,
+null,
+null,
+null
+],
+"brutto": [
+null,
+null,
+null,
+null,
+null
+],
+"ebit": [
+null,
+null,
+null,
+null,
+null
+],
+"zins": [
+98.4,
+95.27,
+87.89,
+71.53,
+75.19
+],
+"steuer": [
+123.34,
+121.69,
+196.44,
+234.25,
+302.99
+],
+"hinweis": "Versicherer: OCF (Schwankung durch Versicherungsrueckstellungen, 2022/2023 negativ), Umsatz, Bruttogewinn, EBIT nicht sinnvoll vergleichbar, daher null. capex = Sachanlagen plus immaterielle Werte. cash ohne Kapitalanlagen. debt = Finanzschulden plus Leasing laut stockanalysis. da springt 2021 zu 2022 und 2023 (Ursache nicht geprueft)."
+},
+"VOE.VI": {
+"jahre": [
+2021,
+2022,
+2023,
+2024,
+2025
+],
+"ocf": [
+1243,
+956.2,
+1448,
+1421,
+1540
+],
+"capex": [
+654,
+752.1,
+1082,
+1109,
+983.4
+],
+"da": [
+745.7,
+761.7,
+735.4,
+760,
+736.3
+],
+"div": [
+89.3,
+214.2,
+257.2,
+120,
+102.9
+],
+"bb": [
+0,
+175.8,
+37.3,
+0,
+0
+],
+"cash": [
+988.4,
+1397,
+1480,
+1086,
+1205
+],
+"debt": [
+3270,
+3079,
+3148,
+2755,
+2488
+],
+"umsatz": [
+14923,
+18225,
+16684,
+15744,
+15063
+],
+"brutto": [
+3362,
+3634,
+2795,
+2838,
+3015
+],
+"ebit": [
+1459,
+1695,
+497,
+540.5,
+676.1
+],
+"zins": [
+94.2,
+160,
+245.8,
+206.3,
+159.3
+],
+"steuer": [
+310.1,
+405.5,
+167.8,
+91.9,
+162.3
+],
+"hinweis": "Geschaeftsjahr April-Maerz, Jahr 2021 = GJ 2021/22 usw. stockanalysis.com. bb 0 = kein Rueckkauf. cash inkl. kurzfristiger Anlagen, debt inkl. Leasing. Umsatz/Ergebnis 2021-2023 teils um aufgegebene Geschaefte bereinigt (laut stockanalysis Ergebnis aus aufgegebenem Geschaeft 2022 und 2023)."
+},
+"WIE.VI": {
+"jahre": [
+2021,
+2022,
+2023,
+2024,
+2025
+],
+"ocf": [
+510.56,
+723.8,
+409.95,
+606,
+630
+],
+"capex": [
+279.76,
+352.57,
+271.59,
+312,
+281
+],
+"da": [
+251.24,
+276.26,
+286.79,
+362,
+377
+],
+"div": [
+78.09,
+83.87,
+94.85,
+100,
+104
+],
+"bb": [
+214.63,
+213.45,
+26.02,
+34,
+29
+],
+"cash": [
+370.59,
+305.59,
+420.19,
+282,
+226
+],
+"debt": [
+1539,
+1452,
+1701,
+2125,
+1917
+],
+"umsatz": [
+3971,
+4977,
+4224,
+4513,
+4566
+],
+"brutto": [
+1439,
+1947,
+1613,
+1611,
+1603
+],
+"ebit": [
+414.76,
+708.74,
+478.38,
+343,
+341
+],
+"zins": [
+38.82,
+47.22,
+73.48,
+115,
+105
+],
+"steuer": [
+62.2,
+119.8,
+89.21,
+67,
+65
+],
+"hinweis": "stockanalysis.com. 2024 Zukaeufe 634 Mio (Cash Acquisitions), Schulden und D&A steigen. cash inkl. kurzfristiger Anlagen, debt inkl. Leasing."
+},
+"EDPR.LS": {
+"jahre": [
+2021,
+2022,
+2023,
+2024,
+2025
+],
+"ocf": [
+811.49,
+1049,
+844.61,
+673.72,
+1040
+],
+"capex": [
+2372,
+2350,
+4114,
+4179,
+2802
+],
+"da": [
+623.32,
+716.31,
+774.58,
+865.84,
+933.83
+],
+"div": [
+114.09,
+155.05,
+66.4,
+51.1,
+40.4
+],
+"bb": [
+null,
+null,
+null,
+null,
+null
+],
+"cash": [
+1004,
+1172,
+1372,
+1196,
+1199
+],
+"debt": [
+4902,
+7300,
+8333,
+9514,
+9372
+],
+"umsatz": [
+1580,
+2138,
+2008,
+2017,
+2267
+],
+"brutto": [
+null,
+null,
+null,
+null,
+null
+],
+"ebit": [
+434.96,
+547.03,
+217.89,
+75.02,
+303.07
+],
+"zins": [
+170.87,
+301.81,
+278.4,
+266.81,
+391.6
+],
+"steuer": [
+93.01,
+145.3,
+101.9,
+21.5,
+168.43
+],
+"hinweis": "stockanalysis.com. Umsatz ohne sonstige Erträge (boerse.de-Umsatz höher: 1758/2371/2239/2320/2688). Kein Bruttogewinn (Versorger). Rückkäufe nicht ausgewiesen. Dividenden lt. Cashflow. Schulden inkl. Leasing."
+},
+"KYG.IR": {
+"jahre": [
+2021,
+2022,
+2023,
+2024,
+2025
+],
+"ocf": [
+654,
+721.8,
+1038,
+988.7,
+755.5
+],
+"capex": [
+263.9,
+208.8,
+266,
+283.9,
+230
+],
+"da": [
+247.7,
+272.5,
+271.9,
+293.4,
+279.3
+],
+"div": [
+157.5,
+173.6,
+191.3,
+205.2,
+215.2
+],
+"bb": [
+null,
+null,
+101.7,
+556.5,
+500.3
+],
+"cash": [
+1039,
+1007,
+943.7,
+1610,
+348.9
+],
+"debt": [
+3198,
+3224,
+2548,
+3536,
+2593
+],
+"umsatz": [
+7351,
+8772,
+6975,
+6929,
+6758
+],
+"brutto": [
+3424,
+3908,
+3387,
+3560,
+3457
+],
+"ebit": [
+781.5,
+912,
+825.7,
+896.7,
+898.3
+],
+"zins": [
+69.5,
+73.9,
+74.9,
+89.7,
+87.8
+],
+"steuer": [
+53.3,
+92.5,
+89.7,
+105,
+99.9
+],
+"hinweis": "stockanalysis.com (ISE:KRZ), EUR. Umsatz 2023 = 6.975 (rueckwirkend angepasst, Reihen-Datei nennt 8.020 urspruenglich); 2022 und 2021 nicht angepasst. Rueckkaeufe 2021/2022 null (Strich = keine). 2025 Cash stark gesunken (348,9 nach 1.610) bei Rueckkaeufen 500,3. Debt inkl. Leasing laut stockanalysis. Capex-Definition (ob inkl. immaterieller) nicht verifiziert."
+},
+"GL9.IR": {
+"jahre": [
+2021,
+2022,
+2023,
+2024,
+2025
+],
+"ocf": [
+285.57,
+314.3,
+427.8,
+443.2,
+368.5
+],
+"capex": [
+88.7,
+72.5,
+74.2,
+87.1,
+84.8
+],
+"da": [
+144.32,
+150.2,
+149.0,
+156.2,
+148.8
+],
+"div": [
+91.55,
+88.9,
+97.2,
+104.4,
+117.8
+],
+"bb": [
+106.9,
+207.4,
+148.1,
+129.8,
+248.8
+],
+"cash": [
+262.71,
+467.9,
+413.7,
+417,
+491.2
+],
+"debt": [
+1085,
+1080,
+771.8,
+958.9,
+1126
+],
+"umsatz": [
+4773,
+5944,
+5425,
+3840,
+3946
+],
+"brutto": [
+951.89,
+1023,
+1124,
+1165,
+1062
+],
+"ebit": [
+235.07,
+286.6,
+392.6,
+396.1,
+350.3
+],
+"zins": [
+19.67,
+20.3,
+19.2,
+29.4,
+29.2
+],
+"steuer": [
+19.33,
+27.1,
+44.7,
+43.3,
+25.9
+],
+"hinweis": "stockanalysis.com (ISE:GL9), USD (Dividende je Aktie wird in EUR beschlossen). Capex = Sachanlagen plus Kauf immaterieller Werte (je Jahr summiert); da = D&A plus sonstige Amortisation (summiert). Geschaeftsjahre enden um den 31.12. (FY2021 bis 01.01.2022, FY2024 bis 04.01.2025, FY2025 bis 03.01.2026). Umsatz 2024 bricht um 29 % ein, Vorjahre nicht vergleichbar. Debt inkl. Leasing (Total Debt laut stockanalysis)."
+},
+"BIRG.IR": {
+"jahre": [
+2021,
+2022,
+2023,
+2024,
+2025
+],
+"ocf": [
+null,
+null,
+null,
+null,
+null
+],
+"capex": [
+null,
+null,
+null,
+null,
+null
+],
+"da": [
+null,
+null,
+null,
+null,
+null
+],
+"div": [
+null,
+null,
+null,
+null,
+null
+],
+"bb": [
+null,
+null,
+null,
+null,
+null
+],
+"cash": [
+null,
+null,
+null,
+null,
+null
+],
+"debt": [
+null,
+null,
+null,
+null,
+null
+],
+"umsatz": [
+null,
+null,
+null,
+null,
+null
+],
+"brutto": [
+null,
+null,
+null,
+null,
+null
+],
+"ebit": [
+null,
+null,
+null,
+null,
+null
+],
+"zins": [
+null,
+null,
+null,
+null,
+null
+],
+"steuer": [
+166.0,
+153.0,
+337.0,
+324.0,
+192.0
+],
+"hinweis": "Bank, EUR. Steuer = Income Tax Expense (stockanalysis). Operativer Cashflow, Capex, Bilanzposten, Rueckkaeufe und Dividenden nicht beschafft (Seiten nicht abrufbar); bei Banken ohnehin kaum vergleichbar. Zins/Brutto/EBIT nicht sinnvoll."
+},
+"A5G.IR": {
+"jahre": [
+2021,
+2022,
+2023,
+2024,
+2025
+],
+"ocf": [
+null,
+null,
+null,
+null,
+null
+],
+"capex": [
+null,
+null,
+null,
+null,
+null
+],
+"da": [
+null,
+null,
+null,
+null,
+null
+],
+"div": [
+null,
+null,
+null,
+null,
+null
+],
+"bb": [
+null,
+null,
+null,
+null,
+null
+],
+"cash": [
+null,
+null,
+null,
+null,
+null
+],
+"debt": [
+null,
+null,
+null,
+null,
+null
+],
+"umsatz": [
+null,
+null,
+null,
+null,
+null
+],
+"brutto": [
+null,
+null,
+null,
+null,
+null
+],
+"ebit": [
+null,
+null,
+null,
+null,
+null
+],
+"zins": [
+null,
+null,
+null,
+null,
+null
+],
+"steuer": [
+-16,
+115,
+336,
+351,
+260
+],
+"hinweis": "Bank, EUR. Steuer = Income Tax Expense (stockanalysis), 2021 negativ (Steuerertrag -16). Operativer Cashflow, Capex, Bilanzposten, Rueckkaeufe und Dividenden nicht beschafft; bei Banken ohnehin kaum vergleichbar. Zins/Brutto/EBIT nicht sinnvoll."
+},
+"VOLV-B.ST": {
+"jahre": [
+2021,
+2022,
+2023,
+2024,
+2025
+],
+"ocf": [
+33647,
+33244,
+21396,
+46444,
+45595
+],
+"capex": [
+21839,
+25846,
+18398,
+18385,
+26130
+],
+"da": [
+7399,
+8084,
+8691,
+9342,
+10085
+],
+"div": [
+30498,
+26432,
+28465,
+36597,
+37614
+],
+"bb": [
+null,
+null,
+null,
+null,
+null
+],
+"cash": [
+63133,
+84738,
+84875,
+87078,
+75908
+],
+"debt": [
+153831,
+214023,
+239295,
+264732,
+248788
+],
+"umsatz": [
+372216,
+473479,
+552252,
+526816,
+479183
+],
+"brutto": [
+87304,
+105871,
+145935,
+139716,
+112386
+],
+"ebit": [
+41343,
+46914,
+80651,
+68421,
+48498
+],
+"zins": [
+1167,
+1205,
+1684,
+1592,
+1819
+],
+"steuer": [
+9947,
+12108,
+16794,
+16634,
+12685
+],
+"hinweis": "SEK, Quelle stockanalysis.com (S&P-Daten). Volvo Group inkl. Finanzierungsgeschäft (Customer Finance): debt (248,8 Mrd. SEK 2025) und OCF enthalten dieses Geschäft, Verschuldung daher nicht mit Industrieunternehmen vergleichbar; Zinsaufwand der Finanzsparte steckt teils in den Umsatzkosten. capex = Sachanlagen (Capital Expenditures inkl. Leasingfahrzeuge) plus immaterielle Werte; stockanalysis-FCF rechnet ohne immaterielle Werte. da = D&A laut Cashflow ohne Abschreibung vermieteter Fahrzeuge (weitere 10,7-11,9 Mrd. SEK p.a. als Other Amortization); im EBITDA von stockanalysis nur 5,5-7,5 Mrd. ebit = Operating Income laut stockanalysis (bereinigt), Volvo selbst weist 2021 43.074 aus. div = gezahlte ordentliche Dividende laut Cashflow plus Extra-Dividende (je Aktie x 2.033 Mio., berechnet; im stockanalysis-Cashflow nicht als Dividende ausgewiesen, aber in Finanzierungs-Cashflow-Differenz erkennbar); Zahlung im jeweiligen Jahr (Beschluss des Vorjahres). bb: keine Rückkäufe erkennbar, Aktienzahl konstant. cash = Cash plus kurzfristige Anlagen plus Handelspapiere. debt = Total Debt inkl. Leasing und Finance-Division-Kredite. Stockanalysis-FCF 2024 stimmt exakt mit TTM überein, evtl. Datenfehler (nicht verwendet)."
+},
+"ELI.BR": {
+"jahre": [
+2021,
+2022,
+2023,
+2024,
+2025
+],
+"ocf": [
+3953,
+1431,
+-1509,
+944.2,
+2090
+],
+"capex": [
+1220.8,
+1570.7,
+2314.3,
+4675.8,
+5040.4
+],
+"da": [
+467.5,
+513.7,
+557.5,
+619.4,
+741.6
+],
+"div": [
+136.8,
+139.6,
+156.8,
+175.6,
+158.5
+],
+"bb": [
+null,
+null,
+null,
+null,
+null
+],
+"cash": [
+3050,
+4151,
+1368,
+2030,
+4142
+],
+"debt": [
+7936,
+8583,
+10010,
+14829,
+17772
+],
+"umsatz": [
+2551,
+3616,
+3843,
+3767,
+4442
+],
+"brutto": [
+null,
+null,
+null,
+null,
+null
+],
+"ebit": [
+335,
+337.9,
+758.1,
+942,
+1633
+],
+"zins": [
+112.8,
+113.9,
+163.7,
+235.8,
+289.5
+],
+"steuer": [
+105.2,
+147.5,
+155.5,
+227.3,
+185
+],
+"hinweis": "stockanalysis.com. OCF 2023 (-1509) und 2024 negativ wegen Veraenderung der Verbindlichkeiten (Netzentgelt-/Regulierungssalden), tatsaechlich negativ, nicht korrigiert. Capex = Sachanlagen + immaterielle Werte. Aktienrueckkauf null: stockanalysis weist 2023 -701 aus, was kein Rueckkauf sein duerfte (Elia kauft keine eigenen Aktien zurueck). Kein Bruttogewinn ausgewiesen. Zins = Zinsaufwand brutto. EBIT = Operating Income laut stockanalysis. Debt inkl. Leasing. 2025 Kapitalerhoehung (2,2 Mrd.)."
+},
+"UMI.BR": {
+"jahre": [
+2021,
+2022,
+2023,
+2024,
+2025
+],
+"ocf": [
+1259,
+634.17,
+1043,
+868.75,
+710.71
+],
+"capex": [
+415.8,
+491.23,
+884.74,
+582.14,
+324.84
+],
+"da": [
+261.98,
+268.57,
+279.33,
+265.47,
+244.5
+],
+"div": [
+180.54,
+192.05,
+192.3,
+192.38,
+60.13
+],
+"bb": [
+22.16,
+43.18,
+0,
+0,
+0
+],
+"cash": [
+1194,
+1240,
+1515,
+2013,
+1559
+],
+"debt": [
+2154.74,
+2342.97,
+2748.41,
+3436.26,
+2841.66
+],
+"umsatz": [
+24066,
+25449,
+18280,
+14869,
+19388
+],
+"brutto": [
+1568,
+1667,
+1520,
+1229,
+1708
+],
+"ebit": [
+907.56,
+838.18,
+633.74,
+141.54,
+1033
+],
+"zins": [
+64.46,
+81.4,
+110.21,
+114.42,
+121.19
+],
+"steuer": [
+179.04,
+137.6,
+104.94,
+106.95,
+382.24
+],
+"hinweis": "stockanalysis.com. Umsatz inkl. Metallwert. Capex = Sachanlagen + immaterielle Werte. Debt = kurz- und langfristige Schulden plus Leasing (Summe eigener Rechnung aus Bilanzposten). Operating Income nach S&P-Klassifikation, weicht vom bereinigten EBIT des Unternehmens ab (2025: 1.033 Mio. wirkt hoch gegenueber Vorsteuerergebnis 772 Mio.; Steuer 2025 382 Mio. auffaellig hoch). 2024 Wertberichtigungen rund 1,4 Mrd. EUR."
 }
 }
 }

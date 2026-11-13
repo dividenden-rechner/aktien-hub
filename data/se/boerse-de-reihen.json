@@ -1404,6 +1404,93 @@ null,
 17.63,
 19.06
 ]
+},
+"VOLV-B.ST": {
+"name": "AB Volvo (Volvo Group)",
+"isin": "SE0000115446",
+"waehrung": "SEK",
+"hinweis": "boerse.de nicht abrufbar; Quellen: Volvo-Quartalsberichte Q4 2019/2020/2021 (2019-2021) und stockanalysis.com (2021-2025), Beträge in SEK. Volvo Group, nicht Volvo Cars. Jahresüberschuss = Anteil der AB-Volvo-Aktionäre, EBT = Income after financial items (2019/2020 laut Volvo, 2021-2025 laut stockanalysis), Eigenkapital = Anteil der Aktionäre. EPS verwässert. Dividende je Aktie = für das Geschäftsjahr beschlossen, ordentlich plus Extra: 2020 6,00+9,00, 2021 6,50+6,50, 2022 7,00+7,00, 2023 7,50+10,50, 2024 8,00+10,50, 2025 8,50+4,50. 2019: vorgeschlagene 5,50+7,50 wurden nicht ausgezahlt (Vorschlag zurückgezogen), daher 0. Dividendenausschüttung = Dividende je Aktie x 2.033 Mio. Aktien (berechnet). Aktienzahl konstant 2.033 Mio. (ohne eigene Aktien). boerse.de zeigt die Dividende in EUR nach Zahlungsjahr, hier SEK nach Geschäftsjahr.",
+"umsatz": [
+431980,
+338446,
+372216,
+473479,
+552252,
+526816,
+479183
+],
+"ebt": [
+46832,
+25917,
+43190,
+45077,
+66726,
+67209,
+47392
+],
+"jahresueberschuss": [
+35861,
+19318,
+32787,
+32722,
+49825,
+50389,
+34456
+],
+"dividendenausschuettung": [
+0,
+30495,
+26429,
+28462,
+36594,
+37610,
+26429
+],
+"eigenkapital": [
+138595,
+145295,
+141045,
+162717,
+177791,
+194049,
+178395
+],
+"eps": [
+17.64,
+9.5,
+16.12,
+16.09,
+24.5,
+24.78,
+16.94
+],
+"dividende_je_aktie": [
+0,
+15.0,
+13.0,
+14.0,
+18.0,
+18.5,
+13.0
+],
+"aktien_mio": [
+2033,
+2033,
+2033,
+2033,
+2033,
+2033,
+2033
+],
+"eigenkapitalrendite_pct": [
+25.87,
+13.3,
+23.25,
+20.11,
+28.02,
+25.97,
+19.31
+]
 }
 }
 }
