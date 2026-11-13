@@ -534,6 +534,180 @@ null,
 -76.37,
 17.18
 ]
+},
+"COFB.BR": {
+"name": "Cofinimmo",
+"isin": "BE0003593044",
+"waehrung": "EUR",
+"hinweis": "boerse.de nicht abrufbar. 2021-2025 stockanalysis.com; 2019/2020 aus der Cofinimmo-Jahresmitteilung 2020 (EBT, Jahresueberschuss Konzernanteil, Eigenkapital der Aktionaere, Ergebnis je Aktie, Bruttodividende, Aktienzahl zum Jahresende). Umsatz = Total Revenue laut stockanalysis (Mieten plus Nebenkostenumlagen); fuer 2019/2020 kein vergleichbarer Wert (null), Mieteinnahmen laut Unternehmen 232,6 / 251,5 Mio. Immobiliengesellschaft (belgische GVV/SIR): EBT und Jahresueberschuss enthalten Neubewertungen des Portfolios und der Zinsabsicherungen (2023 Verlust durch Abwertungen, 2022 hoher Bewertungsgewinn). dividendenausschuettung = gezahlte Dividenden laut Cashflow (2019/2020 null); 2024 niedrig bei gleicher Dividende je Aktie, Grundkapital stieg (vermutlich Wahldividende in Aktien, nicht geprueft). Dividende je Aktie 2025 auf 5,20 gesenkt. Eigenkapital ohne Minderheiten. EPS verwaessert (2019/2020 Konzernanteil je Aktie). Aktienzahl zum Jahresende; Kapitalerhoehungen 2021 und 2023. Eigenkapitalrendite selbst berechnet.",
+"umsatz": [
+null,
+null,
+343.12,
+367.71,
+388.97,
+391.72,
+381.76
+],
+"ebt": [
+216.24,
+125.86,
+273.55,
+493.94,
+-47.13,
+80.27,
+227.7
+],
+"jahresueberschuss": [
+204.62,
+119.22,
+260.34,
+482.94,
+-55.5,
+63.89,
+213.46
+],
+"dividendenausschuettung": [
+null,
+null,
+107.09,
+134.96,
+160.09,
+153.42,
+236.55
+],
+"eigenkapital": [
+2451.34,
+2574.78,
+3233,
+3637,
+3623,
+3535,
+3511
+],
+"eps": [
+8.37,
+4.5,
+8.68,
+14.79,
+-1.63,
+1.7,
+5.61
+],
+"dividende_je_aktie": [
+5.6,
+5.8,
+6.0,
+6.2,
+6.2,
+6.2,
+5.2
+],
+"aktien_mio": [
+25.8,
+27.02,
+31.66,
+32.85,
+36.74,
+38.08,
+38.08
+],
+"eigenkapitalrendite_pct": [
+8.35,
+4.63,
+8.05,
+13.28,
+-1.53,
+1.81,
+6.08
+]
+},
+"WDP.BR": {
+"name": "Warehouses De Pauw",
+"isin": "BE0974349814",
+"waehrung": "EUR",
+"hinweis": "boerse.de nicht abrufbar. 2021-2025 stockanalysis.com; 2019/2020 nur Jahresueberschuss (IFRS, Konzernanteil), Eigenkapital, Ergebnis je Aktie und Bruttodividende aus der Kennzahlenuebersicht von WDP (wdp.eu), Umsatz, EBT, gezahlte Dividende und Aktienzahl 2019/2020 null. Je-Aktie-Werte nach dem Aktiensplit 7:1 von Anfang 2020. Umsatz = Total Revenue laut stockanalysis (Mieten, Nebenkostenumlagen, Solarertraege u. a.). Immobiliengesellschaft (belgische GVV/SIR): EBT und Jahresueberschuss enthalten Neubewertungen (2021 +826 Mio., 2022/2023 Abwertungen 158 / 223 Mio.), EPS deshalb stark schwankend; EPRA-Ergebnis je Aktie laut WDP 2019-2024: 0,93 / 1,00 / 1,10 / 1,25 / 1,40 / 1,50. dividendenausschuettung = bar gezahlte Dividenden laut Cashflow (Wahldividende, ein Teil wird in Aktien bezogen). Eigenkapital ohne Minderheiten. Aktienzahl zum Jahresende, laufende Kapitalerhoehungen. Eigenkapitalrendite selbst berechnet.",
+"umsatz": [
+null,
+null,
+315.69,
+393.43,
+399.83,
+471.12,
+545.07
+],
+"ebt": [
+null,
+null,
+1115,
+342.64,
+-34.7,
+472.89,
+420.04
+],
+"jahresueberschuss": [
+393.7,
+324.6,
+982.27,
+351.71,
+22.3,
+435.5,
+353.92
+],
+"dividendenausschuettung": [
+null,
+null,
+86.82,
+163.62,
+127.5,
+143.26,
+163.57
+],
+"eigenkapital": [
+2103.9,
+2353.9,
+3510,
+4273,
+4443,
+4746,
+5018
+],
+"eps": [
+2.4,
+1.87,
+5.38,
+1.86,
+0.11,
+1.96,
+1.54
+],
+"dividende_je_aktie": [
+0.74,
+0.8,
+0.88,
+1.0,
+1.12,
+1.2,
+1.23
+],
+"aktien_mio": [
+null,
+null,
+184.77,
+203.98,
+219.43,
+225.53,
+235.14
+],
+"eigenkapitalrendite_pct": [
+18.71,
+13.79,
+27.98,
+8.23,
+0.5,
+9.18,
+7.05
+]
 }
 }
 }

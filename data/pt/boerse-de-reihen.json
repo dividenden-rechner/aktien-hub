@@ -99,6 +99,441 @@ null,
 -5.2,
 2.1
 ]
+},
+"SON.LS": {
+"name": "Sonae",
+"isin": "PTSON0AM0001",
+"waehrung": "EUR",
+"hinweis": "Quelle stockanalysis.com (S&P), da boerse.de nicht abrufbar; dort nur 2021-2025, 2019 daher null. 2020: Umsatz, Jahresueberschuss und Dividende je Aktie aus den Wachstumsraten 2021 von stockanalysis zurueckgerechnet (Umsatz auf angepasster Vergleichsbasis), uebrige 2020er Werte null. Eigenkapital ohne Minderheiten, Eigenkapitalrendite = Jahresueberschuss / Eigenkapital zum Jahresende. Dividendenausschuettung = im Kalenderjahr gezahlte Dividenden laut Cashflow (Vorjahresdividende), Dividende je Aktie nach Geschaeftsjahr. Aktienzahl zum Jahresende ohne eigene Aktien. Umsatz inkl. sonstiger Ertraege (2025: 110,9). EPS verwaessert, aus Jahresueberschuss / verwaesserter Aktienzahl auf 3 Stellen gerechnet (stockanalysis rundet auf 0,10/0,11/0,18/0,17/0,14). Jahresueberschuss 2021-2023 enthaelt aufgegebene Geschaeftsbereiche. Umsatzsprung 2024/2025 durch Uebernahmen (u. a. Musti, Druni).",
+"umsatz": [
+null,
+6778.0,
+7124,
+7834,
+8506,
+10082,
+11471
+],
+"ebt": [
+null,
+null,
+309.02,
+363.12,
+445.48,
+329.8,
+356.46
+],
+"jahresueberschuss": [
+null,
+70.9,
+267.48,
+335.55,
+357.06,
+222.67,
+199.22
+],
+"dividendenausschuettung": [
+null,
+null,
+96.1,
+169.59,
+161.7,
+160.69,
+166.12
+],
+"eigenkapital": [
+null,
+null,
+2541,
+2791,
+3025,
+3064,
+3187
+],
+"eps": [
+null,
+null,
+0.138,
+0.174,
+0.184,
+0.114,
+0.102
+],
+"dividende_je_aktie": [
+null,
+0.049,
+0.051,
+0.054,
+0.056,
+0.059,
+0.062
+],
+"aktien_mio": [
+null,
+null,
+1915,
+1920,
+1930,
+1938,
+1945
+],
+"eigenkapitalrendite_pct": [
+null,
+null,
+10.53,
+12.02,
+11.8,
+7.27,
+6.25
+]
+},
+"REN.LS": {
+"name": "REN Redes Energeticas Nacionais",
+"isin": "PTREL0AM0008",
+"waehrung": "EUR",
+"hinweis": "Quelle stockanalysis.com (S&P), da boerse.de nicht abrufbar; dort nur 2021-2025, 2019 daher null. 2020: Umsatz, Jahresueberschuss und Dividende je Aktie aus den Wachstumsraten 2021 von stockanalysis zurueckgerechnet (Umsatz auf angepasster Vergleichsbasis), uebrige 2020er Werte null. Eigenkapital ohne Minderheiten, Eigenkapitalrendite = Jahresueberschuss / Eigenkapital zum Jahresende. Dividendenausschuettung = im Kalenderjahr gezahlte Dividenden laut Cashflow (Vorjahresdividende), Dividende je Aktie nach Geschaeftsjahr. Aktienzahl zum Jahresende ohne eigene Aktien. Boersenkuerzel bei Euronext/stockanalysis: RENE. Umsatz nach S&P-Abgrenzung (2025: 1.060; von REN berichtet 1.108, 2024 1.032, 2023 991,2, 2022 824,7, 2021 838,4). Keine Minderheiten. Aktienzahl 663,31 Mio. (667,19 Mio. ausgegeben abzueglich eigener Aktien). Dividendenzahlung 2021/2022 laut Cashflow (113,4 / 144,6) hoeher als Aktienzahl x Dividende je Aktie, vermutlich Zahlungszeitpunkt bzw. Zwischendividende; nicht geprueft.",
+"umsatz": [
+null,
+725.3,
+805.31,
+787.08,
+949.42,
+991.08,
+1060
+],
+"ebt": [
+null,
+null,
+149.23,
+166.03,
+191.89,
+167.52,
+176.23
+],
+"jahresueberschuss": [
+null,
+109.2,
+97.15,
+111.77,
+149.24,
+152.51,
+159.81
+],
+"dividendenausschuettung": [
+null,
+null,
+113.43,
+144.6,
+102.15,
+102.15,
+104.14
+],
+"eigenkapital": [
+null,
+null,
+1410,
+1518,
+1512,
+1552,
+1524
+],
+"eps": [
+null,
+null,
+0.15,
+0.17,
+0.22,
+0.23,
+0.24
+],
+"dividende_je_aktie": [
+null,
+0.171,
+0.154,
+0.154,
+0.154,
+0.157,
+0.16
+],
+"aktien_mio": [
+null,
+null,
+663.31,
+663.31,
+663.31,
+663.31,
+663.31
+],
+"eigenkapitalrendite_pct": [
+null,
+null,
+6.89,
+7.36,
+9.87,
+9.83,
+10.49
+]
+},
+"ALTR.LS": {
+"name": "Altri",
+"isin": "PTALT0AE0002",
+"waehrung": "EUR",
+"hinweis": "Quelle stockanalysis.com (S&P), da boerse.de nicht abrufbar; dort nur 2021-2025, 2019 daher null. 2020: Umsatz, Jahresueberschuss und Dividende je Aktie aus den Wachstumsraten 2021 von stockanalysis zurueckgerechnet (Umsatz auf angepasster Vergleichsbasis), uebrige 2020er Werte null. Eigenkapital ohne Minderheiten, Eigenkapitalrendite = Jahresueberschuss / Eigenkapital zum Jahresende. Dividendenausschuettung = im Kalenderjahr gezahlte Dividenden laut Cashflow (Vorjahresdividende), Dividende je Aktie nach Geschaeftsjahr. Aktienzahl zum Jahresende ohne eigene Aktien. Abspaltung Greenvolt 2022: Jahresueberschuss 2022 (427,9) enthaelt 275,3 aus aufgegebenen Geschaeftsbereichen (fortgefuehrt 152,1); Greenvolt-Aktien wurden 2022 zusaetzlich als Sachdividende ausgeschuettet (nicht in Dividendenausschuettung/Dividende je Aktie enthalten). Umsatz ohne Greenvolt (rueckwirkend angepasst). Eigenkapitalrendite 2022 dadurch verzerrt (70 %). EPS verwaessert.",
+"umsatz": [
+null,
+567.6,
+785.22,
+1052,
+752.43,
+837.9,
+676.29
+],
+"ebt": [
+null,
+null,
+150.19,
+206.97,
+46.95,
+137.81,
+24.31
+],
+"jahresueberschuss": [
+null,
+35.0,
+127.64,
+427.85,
+42.79,
+107.2,
+21.38
+],
+"dividendenausschuettung": [
+null,
+null,
+71.8,
+79.1,
+63.44,
+51.28,
+61.54
+],
+"eigenkapital": [
+null,
+null,
+542.11,
+607.69,
+407.42,
+454.92,
+418.51
+],
+"eps": [
+null,
+null,
+0.62,
+2.08,
+0.21,
+0.52,
+0.1
+],
+"dividende_je_aktie": [
+null,
+0.25,
+0.24,
+0.25,
+0.25,
+0.3,
+0.25
+],
+"aktien_mio": [
+null,
+null,
+205.13,
+205.13,
+205.13,
+205.13,
+205.13
+],
+"eigenkapitalrendite_pct": [
+null,
+null,
+23.55,
+70.41,
+10.5,
+23.56,
+5.11
+]
+},
+"CTT.LS": {
+"name": "CTT Correios de Portugal",
+"isin": "PTCTT0AM0001",
+"waehrung": "EUR",
+"hinweis": "Quelle stockanalysis.com (S&P), da boerse.de nicht abrufbar; dort nur 2021-2025, 2019 daher null. 2020: Umsatz, Jahresueberschuss und Dividende je Aktie aus den Wachstumsraten 2021 von stockanalysis zurueckgerechnet (Umsatz auf angepasster Vergleichsbasis), uebrige 2020er Werte null. Eigenkapital ohne Minderheiten, Eigenkapitalrendite = Jahresueberschuss / Eigenkapital zum Jahresende. Dividendenausschuettung = im Kalenderjahr gezahlte Dividenden laut Cashflow (Vorjahresdividende), Dividende je Aktie nach Geschaeftsjahr. Aktienzahl zum Jahresende ohne eigene Aktien. Umsatz nach S&P-Abgrenzung inkl. Banco CTT (von CTT berichtet 847,9/906,6/985,2/1.107/1.292). Aktienzahl sinkt durch Rueckkaeufe mit Einziehung (150 Mio. auf 132,6 Mio.). EPS verwaessert. Ab 2024 Minderheiten (Einstieg Generali bei Banco CTT), 2025 Uebernahme Cacesa.",
+"umsatz": [
+null,
+738.5,
+841.07,
+901.1,
+1011,
+1177,
+1322
+],
+"ebt": [
+null,
+null,
+50.81,
+46.71,
+61.54,
+56.34,
+72.33
+],
+"jahresueberschuss": [
+null,
+16.7,
+38.4,
+36.41,
+60.51,
+45.54,
+50.71
+],
+"dividendenausschuettung": [
+null,
+null,
+12.75,
+17.66,
+17.89,
+24.97,
+24.37
+],
+"eigenkapital": [
+null,
+null,
+173.98,
+223.6,
+251.63,
+247.58,
+257.42
+],
+"eps": [
+null,
+null,
+0.26,
+0.25,
+0.43,
+0.33,
+0.38
+],
+"dividende_je_aktie": [
+null,
+0.085,
+0.12,
+0.125,
+0.17,
+0.17,
+0.19
+],
+"aktien_mio": [
+null,
+null,
+148.5,
+146.71,
+139.51,
+134.65,
+132.62
+],
+"eigenkapitalrendite_pct": [
+null,
+null,
+22.07,
+16.28,
+24.05,
+18.39,
+19.7
+]
+},
+"BCP.LS": {
+"name": "Banco Comercial Portugues (Millennium bcp)",
+"isin": "PTBCP0AM0015",
+"waehrung": "EUR",
+"hinweis": "Quelle stockanalysis.com (S&P), da boerse.de nicht abrufbar; dort nur 2021-2025, 2019 daher null. Bank: Umsatz null. Jahresueberschuss = Anteil der Aktionaere vor AT1-Kupons (wie von BCP berichtet); 2020 (183,0) aus der Wachstumsrate von stockanalysis zurueckgerechnet plus AT1-Kupon 37, uebrige 2020er Werte null. EPS = Ergebnis nach AT1-Kupons / durchschnittliche Aktienzahl, auf 4 Stellen gerechnet (stockanalysis rundet auf 0,01 bis 0,07). Eigenkapital = den Aktionaeren zurechenbar ohne Minderheiten (enthaelt vermutlich AT1-Instrument von 400 Mio., bei stockanalysis nicht getrennt); Eigenkapitalrendite = Jahresueberschuss / dieses Eigenkapital. Dividendenausschuettung = im Kalenderjahr gezahlt laut Cashflow abzueglich AT1-Kupons (2021 und 2023 keine Dividende gezahlt). Dividende je Aktie nach Geschaeftsjahr; 2021 bei stockanalysis gerundet 0,001 (gezahlt 2022 rund 13,6 Mio.), 2022 keine. Aktienzahl 2025 gesunken durch Rueckkauf (200 Mio.). 2021-2023 belastet durch Rueckstellungen fuer Franken-Kredite der polnischen Tochter Bank Millennium.",
+"umsatz": [
+null,
+null,
+null,
+null,
+null,
+null,
+null
+],
+"ebt": [
+null,
+null,
+157.74,
+418.35,
+1488,
+1341,
+1569
+],
+"jahresueberschuss": [
+null,
+183.0,
+138.08,
+197.39,
+856.05,
+906.38,
+1019
+],
+"dividendenausschuettung": [
+null,
+null,
+0,
+13.6,
+0,
+256.93,
+447.65
+],
+"eigenkapital": [
+null,
+null,
+6119,
+5155,
+6303,
+7095,
+7813
+],
+"eps": [
+null,
+null,
+0.0067,
+0.0106,
+0.0542,
+0.0577,
+0.066
+],
+"dividende_je_aktie": [
+null,
+null,
+0.001,
+0,
+0.017,
+0.03,
+0.034
+],
+"aktien_mio": [
+null,
+null,
+15114,
+15114,
+15114,
+15114,
+14805
+],
+"eigenkapitalrendite_pct": [
+null,
+null,
+2.26,
+3.83,
+13.58,
+12.77,
+13.04
+]
 }
 }
 }
