@@ -29,4 +29,10 @@ jobs:
           git config user.name "news-bot"
           git config user.email "news-bot@users.noreply.github.com"
           git add data/firmennews assets/logos/hub
-          git diff --cached --quiet || (git commit -qm "Firmen-Nachrichten aktualisiert" && git pull -q --rebase && git push -q)
+          if git diff --cached --quiet; then exit 0; fi
+          git commit -qm "Firmen-Nachrichten und Logos aktualisiert"
+          for i in 1 2 3 4 5; do
+            git pull -q --rebase && git push -q && exit 0
+            sleep $((i * 5))
+          done
+          exit 1
