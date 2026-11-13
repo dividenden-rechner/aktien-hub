@@ -11,11 +11,11 @@ logo_name: "Nvidia"
 logo_file: assets/logos/nvda.png
 story_portrait: assets/magazin/colette-kress-nvidia.png
 story_quote_by: "Colette Kress | Interims-CEO Nvidia"
-image: assets/magazin/nvidia-huang-untersuchung-foto.jpg
-image_alt: "Nvidia-Chef Jensen Huang gestikuliert beim Gespräch vor einer Wand mit Nvidia- und CES-Logos"
-image_credit: "Maurizio Pesce, CC BY 2.0"
-image_source: "https://commons.wikimedia.org/wiki/File:Nvidia_CEO_Jensen_Huang_gestikuliert.jpg"
 story_text: "Nvidia-Gründer Jensen Huang ist nach zwei Affären mit sofortiger Wirkung zurückgetreten. Finanzchefin Colette Kress führt das Unternehmen kommissarisch, Harvey C. Jones wird erster Vorsitzender des Verwaltungsrats.\nDie Aktie verlor vorbörslich rund 11 %. Belegt ist die Affäre, die Spionagevorwürfe stammen aus Aussagen der US-Regierung und sind nicht bewiesen. Offen ist, wer dauerhaft folgt.\nAm 17. November legt Nvidia Zahlen vor. Sie zeigen, ob das Geschäft ohne den Gründer an der Spitze weiterläuft."
+image: assets/magazin/nvidia-huang-ruecktritt-wochenend-analyse-foto.jpg
+image_alt: "Zentrale von Nvidia in Santa Clara mit dem weißen Stahldach über dem Eingang und dem Firmenschild an der San Tomas Expressway"
+image_credit: "Foto: Coolcaesar / Wikimedia Commons, CC BY-SA 4.0"
+image_source: https://commons.wikimedia.org/wiki/File:2788-2888_San_Tomas_Expwy.jpg
 ---
 <!-- PRÜFEN: Stand des Textes ist Donnerstag, 12. November 2026, gegen 15 Uhr. Bis zur Veröffentlichung am Wochenende bitte neu prüfen: Aktienkurs, Anhörung im Kongress, Ergebnis der Untersuchung, Äußerungen von Huang, Kursziele der Analysten. -->
 <!-- PRÜFEN: Zahlentermin 17. November 2026 (Q3 FY27, Quartalsende 25. Oktober) stammt aus einem Fachportal (PPC Land), nicht aus einer Nvidia-Mitteilung. Bitte gegen die Nvidia-Termine prüfen. -->
