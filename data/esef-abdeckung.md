@@ -1,4 +1,4 @@
-# ESEF-Jahreszahlen Europa: Abdeckung (Stand 2026-11-12)
+# ESEF-Jahreszahlen Europa: Abdeckung (Stand 2026-11-13)
 
 118 Firmen in der Liste, mit Jahreszahlen: **114**, davon mit Börsenkurs (ISIN): **110**.
 
@@ -74,7 +74,7 @@
 | UPM.HE | UPM-Kymmene | UPM-KYMMENE OYJ | 2020–2025 (EUR) | 7/7 | ja | – |
 | NESTE.HE | Neste | Neste Oyj | 2019–2025 (EUR) | 7/7 | ja | – |
 | ELISA.HE | Elisa | Elisa Oyj | 2019–2025 (EUR) | 7/7 | fehlt | – |
-| VOLV-B.ST | Volvo | Volvo Car AB | 2020–2025 (SEK) | 7/7 | ja | – |
+| VOLCAR-B.ST | Volvo Cars | Volvo Car AB | 2020–2025 (SEK) | 7/7 | ja | – |
 | ATCO-A.ST | Atlas Copco | ATLAS COPCO AKTIEBOLAG | 2020–2025 (SEK) | 7/7 | ja | – |
 | INVE-B.ST | Investor AB | Investor Aktiebolag | 2020–2025 (SEK) | 6/7 | ja | capex |
 | SEB-A.ST | SEB | Skandinaviska Enskilda Banken AB | 2020–2025 (SEK) | 6/7 | ja | umsatz |
