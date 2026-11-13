@@ -1,0 +1,29 @@
+name: Alpha Vantage Kurshistorie (je Firma)
+on:
+  schedule:
+    - cron: "20 7 * * *"
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: av-historie
+  cancel-in-progress: false
+jobs:
+  holen:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - name: Historie holen
+        env:
+          ALPHAVANTAGE_API_KEY: ${{ secrets.ALPHAVANTAGE_API_KEY }}
+          AV_MAX: "1"
+        run: python3 tools/av_historie.py
+      - name: Committen
+        run: |
+          git config user.name "av-historie-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add data/kurse/historie
+          if git diff --cached --quiet; then echo "Nichts Neues"; exit 0; fi
+          git commit -m "Kurshistorie Alpha Vantage: neue Firma"
+          for i in 1 2 3; do git pull --rebase -q && git push -q && break; sleep 5; done

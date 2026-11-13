@@ -1,0 +1,12 @@
+{
+ "_hinweis": "Warteschlange für die Kurshistorie aus Alpha Vantage (TIME_SERIES_DAILY, full). Eine Datei je Firma: data/kurse/historie/<HUB-SYMBOL>.json. 'av' ist das Alpha-Vantage-Symbol; 'geprueft' = mit Abruf bestätigt.",
+ "firmen": [
+  {"hub": "RMS.PA", "av": "RMS.PAR", "name": "Hermès", "geprueft": true},
+  {"hub": "CFR.SW", "av": "CFR.SWX", "name": "Richemont", "geprueft": false},
+  {"hub": "MC.PA", "av": "MC.PAR", "name": "LVMH", "geprueft": false},
+  {"hub": "KER.PA", "av": "KER.PAR", "name": "Kering", "geprueft": false},
+  {"hub": "BRBY.L", "av": "BRBY.LON", "name": "Burberry", "geprueft": false},
+  {"hub": "SBUX", "av": "SBUX", "name": "Starbucks", "geprueft": false},
+  {"hub": "NVDA", "av": "NVDA", "name": "Nvidia", "geprueft": false}
+ ]
+}
