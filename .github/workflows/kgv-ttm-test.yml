@@ -1,0 +1,25 @@
+name: KGV-Test TTM (US Top 20)
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: KGV-Test laufen lassen
+        run: python tools/kgv_ttm_test.py
+      - name: Ergebnis committen
+        run: |
+          git config user.name "aktien-hub-bot"
+          git config user.email "bot@dividenden-rechner.de"
+          git add data/kgv-ttm-test.json data/kgv-ttm-test.md
+          git commit -m "KGV-Test TTM: Ergebnis" || exit 0
+          git push
