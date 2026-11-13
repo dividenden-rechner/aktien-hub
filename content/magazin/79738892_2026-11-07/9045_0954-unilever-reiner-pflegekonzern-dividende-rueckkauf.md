@@ -11,7 +11,7 @@ logo_name: "Unilever PLC"
 story_text: "Unilever zahlt eine Quartalsdividende von 0,4664 Euro, 3 % mehr als vor einem Jahr, das sind rund 1,87 Euro im Jahr und bei einem Kurs von etwa 59,60 Euro gut 3 % Rendite.\nIm dritten Quartal wuchs der Umsatz um 5,2 %, davon 2,9 % aus höherer Menge. Die Jahresziele hat das Unternehmen angehoben, das Pflegegeschäft wächst deutlich schneller als die Lebensmittel.\nDer Umbau zum reinen Pflegekonzern bringt 15,7 Mrd. USD in bar von McCormick und finanziert einen Rückkauf von 6 Mrd. Euro bis 2029. Offen ist, wie die Dividende nach dem Umbau aussieht."
 logo_symbol: ULVR.L
 logo_domain: unilever.com
-image: https://images.unsplash.com/photo-1776105609708-3d8908ab4dc2?ixid=M3wxMTE3OTgzfDB8MXxzZWFyY2h8M3x8cGVyc29uYWwlMjBjYXJlJTIwcHJvZHVjdHMlMjBzaGVsZnxlbnwxfDB8fHwxNzk0NDM0NTk2fDA&ixlib=rb-4.1.0&w=1600&h=900&fit=crop&crop=entropy&q=80&fm=jpg
+image: https://images.unsplash.com/photo-1776105609708-3d8908ab4dc2?ixid=M3wxMTE3OTgzfDB8MXxzZWFyY2h8M3x8cGVyc29uYWwlMjBjYXJlJTIwcHJvZHVjdHMlMjBzaGVsZnxlbnwxfDB8fHwxNzk0NTcxMzE4fDA&ixlib=rb-4.1.0&w=1600&h=900&fit=crop&crop=entropy&q=80&fm=jpg
 image_alt: "Foto zu Unilever PLC: Shelves stocked with rows of hair care products"
 image_credit: "Foto: FS Cut & Color auf Unsplash"
 image_source: https://unsplash.com/photos/shelves-stocked-with-rows-of-hair-care-products-PL1WRIJOQuQ?utm_source=dividenden-rechner&utm_medium=referral

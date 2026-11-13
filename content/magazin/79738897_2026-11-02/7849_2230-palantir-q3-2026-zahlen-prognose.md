@@ -12,9 +12,9 @@ story_image: assets/magazin/palantir-q3-2026-zahlen-prognose-folie.png
 logo_symbol: PLTR
 logo_domain: palantir.com
 image: assets/magazin/palantir-q3-2026-zahlen-prognose-foto.jpg
-image_alt: "Foto zu Palantir Technologies: ESA-ESOC Main Control Room with the Hera team assembling"
-image_credit: "Foto: ESA/J.Mai / Wikimedia Commons, CC BY 4.0"
-image_source: https://commons.wikimedia.org/wiki/File:ESA-ESOC_Main_Control_Room.jpg
+image_alt: "Foto zu Palantir Technologies: A group of people in a control room monitoring a fleet management telematics system. The wall-sized display shows GPS-based tracking data and satellite imagery of vehicles in Beirut, Lebanon, along wi"
+image_credit: "Foto: UrusHyby / Wikimedia Commons, CC0"
+image_source: https://commons.wikimedia.org/wiki/File:Real-time_bus_tracking_control_room_in_Lebanon.jpg
 image_artist_url: 
 logo_file: assets/logos/pltr.png
 ---
