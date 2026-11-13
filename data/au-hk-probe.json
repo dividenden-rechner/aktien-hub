@@ -1,0 +1,24 @@
+{
+ "stand": "2026-11-13 23:00 UTC",
+ "pruefung": {
+  "ASX Ankuendigungen BHP": {
+   "fehler": "The read operation timed out"
+  },
+  "ASX Firmenauskunft BHP": {
+   "fehler": "The read operation timed out"
+  },
+  "ASX Kurs BHP": {
+   "fehler": "HTTP Error 503: Service Unavailable"
+  },
+  "HKEX Titelsuche": {
+   "status": 200,
+   "typ": "text/html;charset=UTF-8",
+   "ausschnitt": "<!DOCTYPE html>\n<html class=\"news-hkex\" xmlns=\"http://www.w3.org/1999/xhtml\"><head id=\"j_idt2\">\n    <title>Listed Company Information Title Search</title>\n    <meta charset=\"UTF-8\" />\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\" />\n    <meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge\" />\n    <meta name=\"format-detection\" content=\"telephone=no\" />\n    <link href=\"/ncms/images/favicon.ico\" rel=\"icon\" />\n    <link href=\"/ncms/css/main.css\" rel=\"stylesheet\" />\n    <link href=\"/ncms/css/titlesearch.css\" rel=\"stylesheet\" />\n\t\n    <script type=\"text/javascript\" src=\"/ncm"
+  },
+  "HKEX Aktienliste": {
+   "status": 200,
+   "typ": "text/html",
+   "ausschnitt": "﻿<!DOCTYPE html>\n<html lang=\"en\" class=\"news-hkex\">\n\n<head>\n    <title>HKEXnews</title>\n    <meta charset=\"UTF-8\">\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">\n    <meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge\" />\n    <meta name=\"description=\" content=\"Find the latest regulatory announcements and public disclosures of HKEX listed companies as well as listing related exchange reports.\" />\n    <link href=\"/ncms/images/favicon.ico\" rel=\"icon\" />\n    <link href=\"/ncms/css/main_index.css\" rel=\"stylesheet\">\n    <link rel=\"alternate\" hreflang=\"en\" href=\"https://www.h"
+  }
+ }
+}
