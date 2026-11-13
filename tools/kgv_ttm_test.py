@@ -31,17 +31,19 @@ def eps_reihe(facts):
     return None
 
 def ttm(u):
+    u = [x for x in u if x.get("start") and x.get("end")]
     jahre = [x for x in u if x.get("form") in ("10-K", "10-K/A") and x.get("fp") == "FY" and 340 <= tage(x["start"], x["end"]) <= 380]
     if not jahre:
         return None, "kein Jahreswert"
     fy = max(jahre, key=lambda x: x["end"])
-    ytd = [x for x in u if x.get("form") in ("10-Q", "10-Q/A") and x.get("start") == fy["start"] and tage(x["start"], x["end"]) >= 80 and x["end"] > fy["end"]]
-    if not ytd:
+    # laufendes Jahr: beginnt direkt nach dem letzten Geschaeftsjahr, Dauer mind. 80 Tage (Quartal oder Halbjahr)
+    cur_liste = [x for x in u if x.get("form") in ("10-Q", "10-Q/A") and 0 <= tage(fy["end"], x["start"]) <= 10 and tage(x["start"], x["end"]) >= 80 and x["end"] > fy["end"]]
+    if not cur_liste:
         return fy["val"], "nur Jahreswert (kein neues Quartal)"
-    cur = max(ytd, key=lambda x: x["end"])
-    vor_start = (d(fy["start"]) - dt.timedelta(days=365)).isoformat()
+    cur = max(cur_liste, key=lambda x: x["end"])
+    vor_start = (d(cur["start"]) - dt.timedelta(days=365)).isoformat()
     vor_end = (d(cur["end"]) - dt.timedelta(days=365)).isoformat()
-    vor = [x for x in u if x.get("start") and abs(tage(x["start"], vor_start)) <= 10 and abs(tage(x["end"], vor_end)) <= 10]
+    vor = [x for x in u if abs(tage(x["start"], vor_start)) <= 10 and abs(tage(x["end"], vor_end)) <= 10 and tage(x["start"], x["end"]) >= 80]
     if not vor:
         return None, "Vorjahresquartal fehlt"
     v = max(vor, key=lambda x: x["end"])
