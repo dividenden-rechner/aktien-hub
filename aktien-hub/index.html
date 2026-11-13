@@ -83,7 +83,7 @@ svg text{fill:var(--mut);font-size:11px;font-family:inherit}
 .stk .k{width:150px;font-weight:600}.stk .v{width:96px;font-weight:600}.stk .d{color:var(--mut)}
 .stk tr.kzg td{padding:14px 6px 6px;font-weight:700;font-size:13px;color:var(--mut);text-transform:uppercase;letter-spacing:.03em;border-bottom:1px solid var(--line)}
 .stk .dot{display:inline-block;width:11px;height:11px;border-radius:50%;margin-right:9px;vertical-align:-1px;background:#b8c2cb}
-.stk .dot.g{background:#2f9e5b}.stk .dot.y{background:#d4a017}.stk .dot.r{background:#c0392b}
+.stk .dot.g{background:#2f9e5b}.stk .dot.y{background:#d4a017}.stk .dot.o{background:#e67e22}.stk .dot.r{background:#c0392b}
 .stk .sn{font-size:12px;color:var(--mut);margin:8px 0 0}
 @media(max-width:560px){.stk tbody,.stk tr{display:block}.stk tr{display:grid;grid-template-columns:1fr auto;padding:8px 0;border-bottom:1px solid var(--line)}.stk td{border:0;padding:2px 4px;width:auto!important}.stk .d{grid-column:1/-1}}
 #ov{position:fixed;inset:0;background:#fff;z-index:50;display:flex;align-items:center;justify-content:center;overflow:auto}
@@ -582,7 +582,8 @@ function steckbrief(sym,p,r,m,inc,cf){
   else{const cov=fy!=null?fy/dyl:null;dc=[ "Rendite "+P(dyl),po!=null?"Ausschüttung "+P(po,0):null,fy!=null?"FCF-Rendite "+P(fy):null].filter(Boolean).join(" · ");
     if(cov!=null){dg=cov>=1.5?"g":cov>=1?"y":"r";dv=cov>=1.5?"Gedeckt":cov>=1?"Knapp":"Nicht gedeckt"}
     else if(po!=null){/* Kein Free Cashflow: Ersatz ist die Ausschüttungsquote, Richtwert 75 % */
-      dg=po<=.75?"g":po<=1?"y":"r";dv=(po<=.75?"Moderat":po<=1?"Hoch":"Über 100 %")+"*";fcfFehlt=true}
+      if(po<=.75){dg="g";dv="Gedeckt*"}else if(po<=.85){dg="y";dv="Hoch*"}else if(po<=1){dg="o";dv="Sehr hoch*"}else{dg="r";dv="Nicht gedeckt*"}
+      fcfFehlt=true}
     else{dg="";dv="k. A."}}
   rows.push(["Dividende",dg,dv,dc]);
   const pg=roic==null?"":roic>=.10?"g":roic>=.05?"y":"r";
@@ -595,7 +596,7 @@ function steckbrief(sym,p,r,m,inc,cf){
   if(rc!=null||ec!=null){const sc=(rc==null?0:rc>=.05?1:rc<.02?-1:0)+(ec==null?0:ec>=.05?1:ec<0?-1:0);wg=sc>=2?"g":sc<=-1?"r":"y";wv=sc>=2?"Stark":sc<=-1?"Schwach":"Mittel"}
   rows.push(["Wachstum",wg,wv,[rc!=null?"Umsatz "+P(rc)+" p. a.":null,ec!=null?"Gewinn je Aktie "+P(ec)+" p. a.":null].filter(Boolean).join(" · ")+(n>=2?" ("+n+" J.)":"")||"keine Daten"]);
   const tr=rows.map(x=>`<tr${x[4]?` id="st-${x[4]}"`:""}><td class="k"><span class="dot ${x[1]==="g0"?"":x[1]}"></span>${x[0]}</td><td class="v">${x[2]}</td><td class="d">${esc(x[3])}</td></tr>`).join("");
-  return `<div class="stk"><h3>Steckbrief</h3><table><tbody>${tr}</tbody></table><p class="sn">Ampel nach festen Regeln, keine Anlageberatung. Grün, gelb und rot ordnen nur ein, wie die Zahlen im Vergleich zu üblichen Schwellen oder zur eigenen Geschichte stehen.${fcfFehlt?" * Der Free Cashflow liegt nicht vor, weil Angaben fehlen. Die Ampel bewertet die Dividende deshalb nach der Ausschüttungsquote (Richtwert 75 %).":""}</p></div>`;
+  return `<div class="stk"><h3>Steckbrief</h3><table><tbody>${tr}</tbody></table><p class="sn">Ampel nach festen Regeln, keine Anlageberatung. Grün, gelb und rot ordnen nur ein, wie die Zahlen im Vergleich zu üblichen Schwellen oder zur eigenen Geschichte stehen.${fcfFehlt?" * Der Free Cashflow liegt nicht vor, weil Angaben fehlen. Die Ampel bewertet die Dividende deshalb nach der Ausschüttungsquote: grün bis 75 %, gelb bis 85 %, orange bis 100 %, rot darüber.":""}</p></div>`;
 }
 
 /* Hub laden */
