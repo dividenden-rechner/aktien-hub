@@ -10,15 +10,21 @@ quelle_name: "Richemont, Ad-hoc-Mitteilung und Präsentation zum ersten Halbjahr
 logo_name: "Richemont"
 logo_symbol: CFR.SW
 logo_domain: richemont.com
+image: assets/magazin/richemont-h1-fy27-halbjahreszahlen-foto.jpg
+image_alt: "Vintage-Ohrringe aus Gold mit Edelsteinen und Perlen in einer Schmuckbox"
+image_credit: "Foto: Aliona Zahrai / Unsplash"
+image_source: https://unsplash.com/de/fotos/ono9LOvVi5M
+story_chart: assets/magazin/richemont-kurs-20j.png
+story_portrait: assets/magazin/richemont-ceo-freisteller.png
+story_quote_by: "Nicolas Bos | CEO Richemont"
 story_image: assets/magazin/richemont-h1-fy27-halbjahreszahlen-f1.png
 story_text: "Richemont wächst im ersten Halbjahr um 16 % auf 12,3 Mrd. Euro. Den größten Teil liefern Cartier, Van Cleef & Arpels und die übrigen Schmuckhäuser, deren Umsatz um 18 % steigt. Amerika legt um 23 % zu, Japan währungsbereinigt um 30 %.\nDer Betriebsgewinn steigt um ein Drittel auf 3,1 Mrd. Euro. Darin stecken 229 Mio. Euro aus erstatteten Zöllen, die sich nicht wiederholen. Ohne sie bleibt eine Marge von 23,6 %, weil der teure Goldpreis auf die Bruttomarge drückt.\nSchwach bleiben China und der Nahe Osten. Im zweiten Quartal wächst der Konzern noch um 13 % nach 20 % im ersten. Einen Ausblick gibt Richemont nicht. Präsident Johann Rupert rechnet mit einem Umfeld, das auf absehbare Zeit unruhig bleibt."
 ---
-<!-- PRÜFEN: Aufmacherfoto fehlt noch. Die Anfrage (Schmuck, Luxusuhr, Boutique; Unsplash) steht in tools/asset.request. Divi wählt das Foto auf Unsplash aus. -->
+<!-- PRÜFEN: Name des CEO für das Porträt (Nicolas Bos laut Präsentation) bitte bestätigen. -->
 <!-- PRÜFEN: Kursangaben (Zürich 167,55 CHF um 11:20 Uhr, –4,9 % gegenüber 176,15 CHF Vortagesschluss; Tradegate zeitweise fast –8 %; AWP-Konsens Betriebsgewinn 2,89 Mrd. Euro; KGV rund 25,5; UBS-Kursziel 210 CHF) stammen aus Marktberichten vom 13.11.2026 und sind nicht aus der Mitteilung. -->
 <!-- PRÜFEN: Dividendenrendite ist eigene Rechnung mit dem Zürcher Kurs von 167,55 CHF. -->
 <!-- PRÜFEN: Die Grafiken „Umsatz und Gewinn" und „Dividende je Aktie" stammen aus den Hub-Daten (Quelle dort: boerse.de, nicht gegen die Geschäftsberichte geprüft). Die Dividende für 2026 (3,30 CHF plus 1,00 CHF Sonderdividende) ist aus der Halbjahresmitteilung ergänzt. -->
-<!-- PRÜFEN: Folie f1 (Umsatzbrücke nach Regionen) ist nur zugeschnitten. Passt der Zuschnitt? Sonst Bildzeilen löschen. -->
-<!-- PRÜFEN: Kein Porträt von Johann Rupert oder Nicolas Bos im Archiv, die Story läuft deshalb ohne Person. -->
+<!-- PRÜFEN: Kursbild ist aus dem aktien.guide-Screenshot nachgezeichnet und auf den Schlusskurs von 176,15 CHF abgeglichen; Verlauf grob, keine Einzelwerte. Folie f1 (Umsatzbrücke nach Regionen) ist nur zugeschnitten. Passt der Zuschnitt? Sonst Bildzeilen löschen. -->
 
 !!! kurz "Kurz gesagt"
     **Umsatz:** 12,3 Mrd. Euro (+16 %)
@@ -33,6 +39,9 @@ story_text: "Richemont wächst im ersten Halbjahr um 16 % auf 12,3 Mrd. Euro. De
 Wer in diesem Sommer in New York, Tokio oder Paris ein Armband von Cartier kaufen wollte, musste in vielen Boutiquen warten. Die Zahlen von Richemont zeigen, wie gut dieses Geschäft läuft: Der Umsatz steigt im ersten Halbjahr des Geschäftsjahres 2027 (April bis September) um **16 Prozent auf 12,3 Mrd. Euro**, der Betriebsgewinn um **33 Prozent auf 3,1 Mrd. Euro**. Unter dem Strich bleiben 2,5 Mrd. Euro, 39 Prozent mehr als im Vorjahr.
 
 Die Aktie verliert am Freitag in Zürich trotzdem rund fünf Prozent auf 167,55 Franken. Drei Punkte erklären das. Der Betriebsgewinn enthält einen Einmaleffekt von 229 Mio. Euro aus Zollerstattungen in den USA. Ohne ihn bleiben 2,9 Mrd. Euro, das entspricht ziemlich genau der Schätzung der Analysten von 2,89 Mrd. Euro. Zweitens hat sich das Wachstum verlangsamt: Im ersten Quartal lag es währungsbereinigt bei 20 Prozent, im zweiten bei 13 Prozent. Drittens gibt Richemont keinen Ausblick auf das Gesamtjahr, und die Aktie war mit dem rund 25-Fachen des erwarteten Jahresgewinns hoch bewertet in die Zahlen gegangen.
+
+![Kursverlauf der Richemont-Aktie seit 2007 in Schweizer Franken](/assets/magazin/richemont-kurs-20j.png)
+*Kursverlauf der Richemont-Aktie seit 2007 in Schweizer Franken, nachgezeichnet vom Kursverlauf des 13. November 2026. Die Kurve ist grob, Einzelwerte lassen sich daraus nicht ablesen.*
 
 ![Umsatzentwicklung von Richemont im ersten Halbjahr nach Regionen](/assets/magazin/richemont-h1-fy27-halbjahreszahlen-f1.png)
 *Woher das Umsatzplus von 1,7 Mrd. Euro kommt: Amerika und Asien-Pazifik liefern den größten Teil, der Nahe Osten schrumpft. Quelle: Richemont, Präsentation zum ersten Halbjahr. Ausschnitt nur zugeschnitten, sonst unverändert.*
