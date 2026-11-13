@@ -24072,6 +24072,288 @@ null
 382.24
 ],
 "hinweis": "stockanalysis.com. Umsatz inkl. Metallwert. Capex = Sachanlagen + immaterielle Werte. Debt = kurz- und langfristige Schulden plus Leasing (Summe eigener Rechnung aus Bilanzposten). Operating Income nach S&P-Klassifikation, weicht vom bereinigten EBIT des Unternehmens ab (2025: 1.033 Mio. wirkt hoch gegenueber Vorsteuerergebnis 772 Mio.; Steuer 2025 382 Mio. auffaellig hoch). 2024 Wertberichtigungen rund 1,4 Mrd. EUR."
+},
+"POST.VI": {
+"jahre": [
+2021,
+2022,
+2023,
+2024,
+2025
+],
+"ocf": [
+493.3,
+-80.0,
+254.5,
+121.7,
+362.4
+],
+"capex": [
+176.1,
+170.9,
+164.7,
+161.4,
+144.5
+],
+"da": [
+159.6,
+181.7,
+189.7,
+209.8,
+216.2
+],
+"div": [
+120.0,
+128.4,
+118.2,
+120.2,
+123.6
+],
+"bb": [
+0,
+0,
+0,
+0,
+0
+],
+"cash": [
+116.2,
+120.1,
+107.9,
+118.9,
+204.5
+],
+"debt": [
+406.7,
+679.7,
+693.5,
+745.3,
+837.2
+],
+"umsatz": [
+2525,
+2525,
+2747,
+3132,
+3056
+],
+"brutto": [
+573.1,
+542.9,
+594.2,
+666.5,
+627.3
+],
+"ebit": [
+165.2,
+159.2,
+153.0,
+183.1,
+166.1
+],
+"zins": [
+12.9,
+14.5,
+19.3,
+25.4,
+29.0
+],
+"steuer": [
+58.0,
+35.6,
+48.5,
+50.8,
+47.0
+],
+"hinweis": "stockanalysis.com. Konzern enthaelt die bank99: OCF schwankt stark durch Kundeneinlagen/Kredite der Bank (2022 negativ, -80 Mio.; 2021 sehr hoch), daher nur eingeschraenkt aussagekraeftig. capex = Sachanlagen (Capital Expenditures) plus immaterielle Werte. cash = liquide Mittel plus kurzfristige Anlagen ohne Finanzvermoegen der bank99. debt = Total Debt inkl. Leasing und inkl. Finanzverbindlichkeiten der Finanzsparte (ohne Kundeneinlagen). bb 0 = kein Rueckkauf ausgewiesen. Umsatz 2021 und 2022 laut stockanalysis identisch (2.525), Umsatz inkl. sonstiger Ertraege. 2021 Zugang liquider Mittel aus Erwerb (bank99/ING-Privatkunden, 336,5 Mio.)."
+},
+"RBI.VI": {
+"jahre": [
+2021,
+2022,
+2023,
+2024,
+2025
+],
+"ocf": [
+null,
+null,
+null,
+null,
+null
+],
+"capex": [
+451,
+484,
+592,
+497,
+547
+],
+"da": [
+231,
+260,
+273,
+234,
+255
+],
+"div": [
+497,
+93,
+372,
+517,
+480
+],
+"bb": [
+null,
+null,
+null,
+null,
+null
+],
+"cash": [
+null,
+null,
+null,
+null,
+null
+],
+"debt": [
+null,
+null,
+null,
+null,
+null
+],
+"umsatz": [
+null,
+null,
+null,
+null,
+null
+],
+"brutto": [
+null,
+null,
+null,
+null,
+null
+],
+"ebit": [
+null,
+null,
+null,
+null,
+null
+],
+"zins": [
+null,
+null,
+null,
+null,
+null
+],
+"steuer": [
+368,
+859,
+958,
+953,
+1013
+],
+"hinweis": "Bank: OCF (schwankt mit Einlagen/Krediten zwischen -2,0 und +21,0 Mrd.), liquide Mittel, Schulden, Umsatz, Bruttogewinn, EBIT und Zinsaufwand nicht sinnvoll vergleichbar, daher null. bb null: die bei stockanalysis ausgewiesenen Rueckkaeufe (2024: 472, 2025: 174 Mio.) betreffen vermutlich AT1-Kapital (2024 zugleich Emission 645 Mio.), keine Aktienrueckkaeufe; nicht geprueft. div inkl. AT1-Kupons; 2021 inkl. nachgeholter Zusatzdividende fuer 2019. capex = Sachanlagen und immaterielle Werte laut stockanalysis. da ohne 'Other Amortization' (175-256 Mio.). Steuerquote 2025 hoch (38 %)."
+},
+"EVN.VI": {
+"jahre": [
+2021,
+2022,
+2023,
+2024,
+2025
+],
+"ocf": [
+789.6,
+151.0,
+942.4,
+1167,
+935.2
+],
+"capex": [
+415.4,
+564.2,
+691.0,
+752.5,
+909.4
+],
+"da": [
+312.2,
+297.4,
+317.5,
+348.3,
+363.5
+],
+"div": [
+87.3,
+92.7,
+92.7,
+203.2,
+160.5
+],
+"bb": [
+0,
+0,
+0,
+0,
+0
+],
+"cash": [
+521.6,
+499.5,
+313.8,
+238.7,
+276.9
+],
+"debt": [
+1098,
+1590,
+1527,
+1193,
+1314
+],
+"umsatz": [
+2428,
+4094,
+3799,
+2927,
+3049
+],
+"brutto": [
+null,
+null,
+null,
+null,
+null
+],
+"ebit": [
+222.6,
+322.4,
+580.8,
+385.8,
+332.0
+],
+"zins": [
+55.5,
+33.8,
+47.0,
+47.6,
+43.1
+],
+"steuer": [
+14.7,
+64.0,
+74.0,
+32.1,
+65.6
+],
+"hinweis": "Geschaeftsjahr Oktober-September, Jahr 2021 = GJ 2020/21 usw. stockanalysis.com. brutto null (kein Bruttogewinn ausgewiesen). capex 2024 und 2025: stockanalysis weist keine Capital Expenditures aus, sondern die Investitionen unter 'Sale (Purchase) of Intangibles' (752,5 / 909,4 Mio.); hier als Investitionen in Sachanlagen und immaterielle Werte uebernommen, der dort gezeigte Free Cashflow (= OCF) ist deshalb fuer diese Jahre zu hoch. OCF 2022 niedrig (151 Mio.) wegen Working Capital in der Energiekrise. div 2024 inkl. Sonderdividende (0,62 je Aktie). cash inkl. kurzfristiger Anlagen, debt inkl. Leasing. bb 0 = kein Rueckkauf. Umsatz 2024 -23 % nach Preisrueckgang. Steuerquote niedrig wegen hoher Beteiligungsertraege (Verbund, at equity)."
 }
 }
 }

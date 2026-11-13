@@ -360,6 +360,267 @@ null,
 2.8,
 5.93
 ]
+},
+"POST.VI": {
+"name": "Österreichische Post",
+"isin": "AT0000APOST4",
+"waehrung": "EUR",
+"hinweis": "boerse.de-Fundamentalseite nicht abrufbar; Quelle stockanalysis.com (S&P Global), nur 2021-2025, 2019/2020 null (ausser Dividende je Aktie 2019/2020 von der boerse.de-Dividendenseite). Umsatz inkl. sonstiger Ertraege und Finanzdienstleistungen (bank99), weicht leicht von den berichteten Umsatzerloesen ab. EBT = Pretax Income, Jahresueberschuss = Anteil Aktionaere, Eigenkapital = Total Common Equity (ohne Minderheiten), dividendenausschuettung = gezahlte Dividende laut Cashflow im jeweiligen Jahr (2021 mit 120 Mio. hoeher als 1,60 x 67,55 Mio. Aktien, vermutlich inkl. Minderheiten), dividende_je_aktie = fuer das Geschaeftsjahr. Eigenkapitalrendite selbst berechnet (Jahresueberschuss / Eigenkapital zum Jahresende).",
+"umsatz": [
+null,
+null,
+2525,
+2525,
+2747,
+3132,
+3056
+],
+"ebt": [
+null,
+null,
+216.4,
+163.8,
+187.3,
+196.7,
+181.0
+],
+"jahresueberschuss": [
+null,
+null,
+152.3,
+125.7,
+132.6,
+137.9,
+132.2
+],
+"dividendenausschuettung": [
+null,
+null,
+120.0,
+128.4,
+118.2,
+120.2,
+123.6
+],
+"eigenkapital": [
+null,
+null,
+644.3,
+679.7,
+683.3,
+717.9,
+726.0
+],
+"eps": [
+null,
+null,
+2.25,
+1.86,
+1.96,
+2.04,
+1.96
+],
+"dividende_je_aktie": [
+2.08,
+1.6,
+1.9,
+1.75,
+1.78,
+1.83,
+1.83
+],
+"aktien_mio": [
+null,
+null,
+67.55,
+67.55,
+67.55,
+67.55,
+67.55
+],
+"eigenkapitalrendite_pct": [
+null,
+null,
+23.64,
+18.49,
+19.41,
+19.21,
+18.21
+]
+},
+"RBI.VI": {
+"name": "Raiffeisen Bank International",
+"isin": "AT0000606306",
+"waehrung": "EUR",
+"hinweis": "Bank: Umsatz null. boerse.de-Fundamentalseite nicht abrufbar; Quelle stockanalysis.com, nur 2021-2025, 2019/2020 null. EBT = Pretax Income aus fortgefuehrtem Geschaeft (belastet durch Rechtsrueckstellungen, v. a. Polen/Russland: 2024 -1.497, 2025 -1.910 Mio.). Jahresueberschuss = Konzernergebnis nach Minderheiten, vor AT1-Kupons (92-118 Mio. p. a.), inkl. aufgegebener Geschaeftsbereiche (2024: -673 Mio., Verkauf Belarus). EPS nach Abzug der AT1-Kupons. Eigenkapital = Total Common Equity, enthaelt AT1-Kapital (rund 1,6 Mrd.), ohne Minderheiten. dividendenausschuettung = Auszahlung laut Cashflow im jeweiligen Jahr inkl. AT1-Kupons (2022 nur AT1-Kupons, 93 Mio.). Dividende je Aktie fuer das Geschaeftsjahr; 2021 = 0 (stockanalysis ohne Wert, 2022 floss laut Cashflow keine Stammdividende; Gewinn 2021 wurde vorgetragen). Eigenkapitalrendite selbst berechnet.",
+"umsatz": [
+null,
+null,
+null,
+null,
+null,
+null,
+null
+],
+"ebt": [
+null,
+null,
+1789,
+4203,
+3412,
+2984,
+2634
+],
+"jahresueberschuss": [
+null,
+null,
+1372,
+3627,
+2386,
+1157,
+1371
+],
+"dividendenausschuettung": [
+null,
+null,
+497,
+93,
+372,
+517,
+480
+],
+"eigenkapital": [
+null,
+null,
+14465,
+17637,
+18619,
+19080,
+21077
+],
+"eps": [
+null,
+null,
+3.89,
+10.74,
+6.94,
+3.19,
+3.82
+],
+"dividende_je_aktie": [
+null,
+null,
+0.0,
+0.8,
+1.25,
+1.1,
+1.6
+],
+"aktien_mio": [
+null,
+null,
+328.62,
+328.43,
+328.37,
+328.41,
+328.24
+],
+"eigenkapitalrendite_pct": [
+null,
+null,
+9.48,
+20.56,
+12.81,
+6.06,
+6.5
+]
+},
+"EVN.VI": {
+"name": "EVN",
+"isin": "AT0000741053",
+"waehrung": "EUR",
+"hinweis": "Geschaeftsjahr Oktober bis September: Jahr 2021 = GJ 2020/21 (Ende 30.09.2021) bis 2025 = GJ 2024/25 (Ende 30.09.2025); GJ 2025/26 noch nicht berichtet. boerse.de-Fundamentalseite nicht abrufbar; Quelle stockanalysis.com, nur 5 Jahre, 2019/2020 null. EBT = Pretax Income, Jahresueberschuss = Anteil Aktionaere (2024/2025 inkl. aufgegebenem Geschaeft +10,4 / -19,7 Mio.), Eigenkapital = Total Common Equity (ohne Minderheiten; schwankt mit der Bewertung der Verbund-Beteiligung). dividendenausschuettung = Auszahlung laut Cashflow im jeweiligen GJ. Dividende je Aktie fuer das GJ; 2023 (GJ 2022/23) = 0,52 Basis plus 0,62 Sonderdividende = 1,14 (stockanalysis nennt nur 0,52; die Auszahlung von 203,2 Mio. im Folgejahr entspricht 1,14 je Aktie). Eigenkapitalrendite selbst berechnet.",
+"umsatz": [
+null,
+null,
+2428,
+4094,
+3799,
+2927,
+3049
+],
+"ebt": [
+null,
+null,
+366.4,
+301.1,
+656.1,
+549.8,
+574.4
+],
+"jahresueberschuss": [
+null,
+null,
+325.3,
+209.6,
+529.7,
+471.7,
+436.7
+],
+"dividendenausschuettung": [
+null,
+null,
+87.3,
+92.7,
+92.7,
+203.2,
+160.5
+],
+"eigenkapital": [
+null,
+null,
+6281,
+7048,
+6165,
+6415,
+6328
+],
+"eps": [
+null,
+null,
+1.83,
+1.18,
+2.97,
+2.65,
+2.45
+],
+"dividende_je_aktie": [
+null,
+null,
+0.52,
+0.52,
+1.14,
+0.9,
+0.9
+],
+"aktien_mio": [
+null,
+null,
+178.18,
+178.22,
+178.26,
+178.28,
+178.31
+],
+"eigenkapitalrendite_pct": [
+null,
+null,
+5.18,
+2.97,
+8.59,
+7.35,
+6.9
+]
 }
 }
 }
