@@ -27,7 +27,9 @@ QUELLEN = ["handelsblatt", "faz", "wiwo", "manager-magazin", "spiegel", "sueddeu
 AUSSCHLUSS = re.compile(
     r"Investition|hätte .*(abgeworfen|gewonnen|verdient)|So viel|Chartsignal|Chartanalyse|Expertenmeinung|Trading-Chance|"
     r"Aktie kaufen|Kaufen oder|Kaufempfehlung|Top-Aktie|Aktien-Tipp|Börsenbrief|Kursziel|Hot Stock|stock to buy|should you buy|"
-    r"buy now|Motley Fool|YouTube|Podcast|Video|Anleger aufgepasst|Dividendenkönig|\bwarum\b.*Aktie",
+    r"buy now|Motley Fool|YouTube|Podcast|Video|Anleger aufgepasst|Dividendenkönig|\bwarum\b.*Aktie|"
+    r"Handelsstart|Handelsende|Zweiter Tag|Tag ohne|Tag mit|Im Plus|Im Minus|Im Fokus|Kurs-Check|Börsentag|Tagesgewinner|Tagesverlierer|"
+    r"Stock Price|stock price|Shares of|Stock Quote|Pre-Market|premarket|Ticker|Analystenmeinung",
     re.I)
 
 def universum():
@@ -38,9 +40,9 @@ def universum():
 
 def suche(name, sprache):
     if sprache == "de":
-        q, par = f'"{name}" Aktie', {"hl": "de", "gl": "DE", "ceid": "DE:de"}
+        q, par = f'"{name}" Unternehmen', {"hl": "de", "gl": "DE", "ceid": "DE:de"}
     else:
-        q, par = f'"{name}" stock', {"hl": "en-US", "gl": "US", "ceid": "US:en"}
+        q, par = f'"{name}"', {"hl": "en-US", "gl": "US", "ceid": "US:en"}
     url = "https://news.google.com/rss/search?" + urllib.parse.urlencode({"q": q, **par})
     raw = urllib.request.urlopen(urllib.request.Request(url, headers={"User-Agent": UA}), timeout=25).read()
     return ET.fromstring(raw)
@@ -61,6 +63,8 @@ def sammeln(name):
         seen.add(k); res.append(m)
     return res[:MAX]
 
+VERWORFEN = {}
+
 def _sammeln(name, sprache):
     root = suche(name, sprache)
     grenze = datetime.now(timezone.utc) - timedelta(days=TAGE)
@@ -76,8 +80,10 @@ def _sammeln(name, sprache):
         except Exception:
             continue
         if d < grenze or not titel or titel in gesehen: continue
-        if not erlaubt(quelle, quelle_url): continue
-        if AUSSCHLUSS.search(titel): continue
+        if not erlaubt(quelle, quelle_url):
+            VERWORFEN[quelle or "?"] = VERWORFEN.get(quelle or "?", 0) + 1; continue
+        if AUSSCHLUSS.search(titel):
+            VERWORFEN["Filter"] = VERWORFEN.get("Filter", 0) + 1; continue
         # Google haengt "- Quelle" an den Titel: abschneiden, damit der Titel sauber bleibt
         if quelle and titel.endswith(" - " + quelle): titel = titel[: -len(quelle) - 3]
         gesehen.add(titel)
@@ -98,7 +104,9 @@ def main():
             print("FEHLER", hub, e); continue
         json.dump({"hub": hub, "name": name, "stand": heute, "quelle": "Google News (Wirtschaftsmedien, deutsch und englisch)",
                    "meldungen": treffer}, open(os.path.join(OUT, hub + ".json"), "w"), ensure_ascii=False, indent=1)
-        print(hub, len(treffer), "Meldungen")
+        top = sorted(VERWORFEN.items(), key=lambda x: -x[1])[:8]
+        print(hub, len(treffer), "Meldungen; verworfen:", top)
+        VERWORFEN.clear()
         if i < len(liste) - 1: time.sleep(PAUSE)
 
 if __name__ == "__main__":
