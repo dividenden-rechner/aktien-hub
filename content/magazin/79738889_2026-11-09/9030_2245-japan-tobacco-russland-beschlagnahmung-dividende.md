@@ -54,6 +54,30 @@ Vorläufige Verwaltung klingt nach einem Übergang, ist aber ein Zugriff mit off
 
 Ob Japan Tobacco die Dividende trotzdem hält, hat der Konzern nicht gesagt. Das hängt von den übrigen Märkten und davon ab, wie viel der Russland-Ertrag noch zu retten ist. Auch dazu schweigt der Konzern bisher.
 
+## Die Aktie in Zahlen
+
+![Kursverlauf der Japan-Tobacco-Aktie in den letzten fünf Jahren in Yen](/assets/magazin/japan-tobacco-kurs-5-jahre.png)
+
+Trotz des Einbruchs liegt die Aktie noch gut 150 % über dem Stand von vor fünf Jahren, vom Hoch im Oktober ist sie rund 20 % entfernt. Die Kennzahlen beziehen sich auf das letzte Geschäftsjahr, also noch mit dem Russland-Geschäft.
+
+| Kennzahl | Wert |
+|---|---|
+| Kurs (Tokio, 13.11.2026) | 5.944 Yen |
+| Börsenwert | 9,9 Billionen Yen |
+| KGV | 17,2 |
+| Dividende je Aktie | 272 Yen |
+| Dividendenrendite | 4,5 % |
+| Ausschüttungsquote | 81 % (Schnitt drei Jahre: 94 %) |
+| Dividendenwachstum | 14 % pro Jahr (fünf Jahre) |
+| Umsatz | 3,8 Billionen Yen |
+| Nettogewinn | 617 Mrd. Yen (Marge 16,1 %) |
+| Freier Cashflow | 804 Mrd. Yen |
+| Nettoverschuldung | 592 Mrd. Yen |
+| Eigenkapitalquote | 48,5 % |
+| Analysten | 15 Kaufen, 4 Halten |
+
+Für die Dividende ist die Ausschüttungsquote die wichtigste Zahl. Japan Tobacco zahlt schon heute gut vier Fünftel des Gewinns aus. Fällt ein großer Teil des Russland-Ertrags dauerhaft weg, wird es enger. Der freie Cashflow liegt allerdings deutlich über dem Gewinn und gibt dem Konzern einen Puffer.
+
 ## Nestlé, Metro und die anderen
 
 Der Fall steht nicht allein. In diesem Jahr hat Moskau bereits das Russland-Geschäft von Nestlé, Auchan, Metro und Lemana PRO, dem früheren Leroy Merlin, unter vorläufige Verwaltung gestellt. Bei Nestlé ist der Konzern rechtlich noch Eigentümer, hat die Werte aber abgeschrieben, und weil Russland dort nur einen kleinen Teil von Umsatz und Gewinn ausmacht, fällt das weniger ins Gewicht. Schon 2023 hatte der Kreml Danone und Carlsberg unter Verwaltung gestellt.
@@ -66,6 +90,7 @@ Auffällig ist, dass unter den bisher betroffenen Konzernen keine amerikanischen
 
 ## Quellen
 
+- Kennzahlen: aktien.guide, Stand 13.11.2026; Kursverlauf: eigene Berechnung aus Wochenkursen des ADR (Alpha Vantage) und dem Dollar-Yen-Kurs
 - Reuters, „Japan Tobacco nach Beschlagnahmung von Einheiten in Russland den zweiten Tag in Folge am Tageslimit im Minus" (9.11.2026, übersetzt von MarketScreener)
 - Japan Tobacco, „当社グループのロシア事業について（続報）" (9.11.2026)
 - Philip Morris International, Geschäftsbericht 10-K für 2025 (Russland-Anteil am Umsatz, Vermögen und Barmittel der russischen Gesellschaften)
