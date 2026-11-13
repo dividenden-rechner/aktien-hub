@@ -5585,14 +5585,272 @@
 "beleg": "Core FFO per share: $16.90 $17.10"
 }
 ]
+},
+"CDNS": {
+"datum": "2026-10-26",
+"quelle": "https://www.sec.gov/Archives/edgar/data/813672/000081367226000116/cdns10262026ex9901.htm",
+"prognosen": [
+{
+"kennzahl": "umsatzwachstum_proz",
+"geschaeftsjahr": "2026",
+"von": 21,
+"bis": 21,
+"einheit": "%",
+"veraendert": "angehoben",
+"beleg": "Raising 2026 Revenue Growth Outlook to 21% and Non-GAAP EPS to $8.40"
+},
+{
+"kennzahl": "umsatz",
+"geschaeftsjahr": "2026",
+"von": 6387000000,
+"bis": 6417000000,
+"einheit": "USD",
+"veraendert": "angehoben",
+"beleg": "Revenue in the range of $6.387 billion to $6.417 billion"
+},
+{
+"kennzahl": "operative_marge_proz",
+"geschaeftsjahr": "2026",
+"von": 28.2,
+"bis": 29.2,
+"einheit": "%",
+"veraendert": "unklar",
+"beleg": "GAAP operating margin in the range of 28.2% to 29.2%"
+},
+{
+"kennzahl": "operative_marge_proz",
+"geschaeftsjahr": "2026",
+"von": 44.2,
+"bis": 45.2,
+"einheit": "%",
+"veraendert": "unklar",
+"beleg": "Non-GAAP operating margin in the range of 44.2% to 45.2%"
+},
+{
+"kennzahl": "eps_gaap",
+"geschaeftsjahr": "2026",
+"von": 4.84,
+"bis": 4.9,
+"einheit": "USD",
+"veraendert": "unklar",
+"beleg": "GAAP diluted net income per share in the range of $4.84 to $4.90"
+},
+{
+"kennzahl": "eps_bereinigt",
+"geschaeftsjahr": "2026",
+"von": 8.37,
+"bis": 8.43,
+"einheit": "USD",
+"veraendert": "angehoben",
+"beleg": "Non-GAAP diluted net income per share in the range of $8.37 to $8.43"
+}
+]
+},
+"VZ": {
+"datum": "2026-10-26",
+"quelle": "https://www.sec.gov/Archives/edgar/data/732712/000073271226000049/a2026q3exhibit99.htm",
+"prognosen": [
+{
+"kennzahl": "eps_bereinigt",
+"geschaeftsjahr": "2026",
+"von": 5.04,
+"bis": 5.06,
+"einheit": "USD",
+"veraendert": "angehoben",
+"beleg": "Adjusted EPS¹: $5.04 to $5.06, or 7.0 to 7.5 percent growth year-over-year, up from 6.0 to 7.0 percent."
+},
+{
+"kennzahl": "fcf",
+"geschaeftsjahr": "2026",
+"von": 12,
+"bis": 12,
+"einheit": "%",
+"veraendert": "angehoben",
+"beleg": "Free cash flow¹: expected to approach 12.0 percent growth year-over-year, up from 9.0 to 10.0 percent."
+},
+{
+"kennzahl": "umsatzwachstum_proz",
+"geschaeftsjahr": "2026",
+"von": 2.75,
+"bis": 3.0,
+"einheit": "%",
+"veraendert": "angehoben",
+"beleg": "Mobility and broadband service revenue: upper half of annual guidance of 2.5 to 3.0 percent growth"
+}
+]
+},
+"AXP": {
+"datum": "2026-10-23",
+"quelle": "https://www.sec.gov/Archives/edgar/data/4962/000000496226000405/q326exhibit991.htm",
+"prognosen": [
+{
+"kennzahl": "eps_gaap",
+"geschaeftsjahr": "2026",
+"von": 18.3,
+"bis": 18.6,
+"einheit": "USD",
+"veraendert": "angehoben",
+"beleg": "Given our performance year-to-date, we are raising our full-year EPS guidance to between $18.30 and $18.60 ($17.60-$17.90 adjusted)"
+},
+{
+"kennzahl": "eps_bereinigt",
+"geschaeftsjahr": "2026",
+"von": 17.6,
+"bis": 17.9,
+"einheit": "USD",
+"veraendert": "angehoben",
+"beleg": "Given our performance year-to-date, we are raising our full-year EPS guidance to between $18.30 and $18.60 ($17.60-$17.90 adjusted)"
+},
+{
+"kennzahl": "umsatzwachstum_proz",
+"geschaeftsjahr": "2026",
+"von": 10,
+"bis": 10,
+"einheit": "%",
+"veraendert": "bestaetigt",
+"beleg": "we're on track to deliver another year of 10 percent revenue growth."
+}
+]
+},
+"DECK": {
+"datum": "2026-10-22",
+"quelle": "https://www.sec.gov/Archives/edgar/data/910521/000091052126000028/deckex991pressrelease-9302.htm",
+"prognosen": [
+{
+"kennzahl": "eps_gaap",
+"geschaeftsjahr": "2027",
+"von": 7.8,
+"bis": 7.95,
+"einheit": "USD",
+"veraendert": "angehoben",
+"beleg": "FULL YEAR FY 2027 DILUTED EPS GUIDANCE RAISED TO RANGE OF $7.80-$7.95"
+},
+{
+"kennzahl": "umsatz",
+"geschaeftsjahr": "2027",
+"von": 5700000000,
+"bis": 5725000000,
+"einheit": "USD",
+"veraendert": "unklar",
+"beleg": "Net consolidated sales are now expected to be in the range of $5.700 billion to $5.725 billion."
+},
+{
+"kennzahl": "operative_marge_proz",
+"geschaeftsjahr": "2027",
+"von": 23,
+"bis": 23,
+"einheit": "%",
+"veraendert": "unklar",
+"beleg": "Operating margin is now expected to be approximately 23%."
+}
+]
+},
+"BE": {
+"datum": "2026-10-22",
+"quelle": "https://www.sec.gov/Archives/edgar/data/1664703/000162828026066890/ex991_q326financialresults.htm",
+"prognosen": [
+{
+"kennzahl": "umsatz",
+"geschaeftsjahr": "2026",
+"von": 4400000000,
+"bis": 4600000000,
+"einheit": "USD",
+"veraendert": "angehoben",
+"beleg": "Raises full year 2026 revenue guidance to $4.4 billion - $4.6 billion, representing 122% year-over-year growth at the midpoint"
+},
+{
+"kennzahl": "eps_bereinigt",
+"geschaeftsjahr": "2026",
+"von": 3.1,
+"bis": 3.4,
+"einheit": "USD",
+"veraendert": "angehoben",
+"beleg": "Bloom Energy is increasing its financial guidance for full-year 2026 as follows: Non-GAAP EPS: $3.10 - $3.40"
+}
+]
+},
+"TSCO": {
+"datum": "2026-10-22",
+"quelle": "https://www.sec.gov/Archives/edgar/data/916365/000091636526000069/ex991-q32026earningsrelease.htm",
+"prognosen": [
+{
+"kennzahl": "umsatzwachstum_proz",
+"geschaeftsjahr": "2026",
+"von": 2.5,
+"bis": 3.5,
+"einheit": "%",
+"veraendert": "bestaetigt",
+"beleg": "Tractor Supply is reaffirming its financial outlook for fiscal year 2026."
+},
+{
+"kennzahl": "organisches_wachstum_proz",
+"geschaeftsjahr": "2026",
+"von": -1,
+"bis": 0,
+"einheit": "%",
+"veraendert": "bestaetigt",
+"beleg": "Tractor Supply is reaffirming its financial outlook for fiscal year 2026."
+},
+{
+"kennzahl": "operative_marge_proz",
+"geschaeftsjahr": "2026",
+"von": 8.0,
+"bis": 8.3,
+"einheit": "%",
+"veraendert": "bestaetigt",
+"beleg": "Tractor Supply is reaffirming its financial outlook for fiscal year 2026."
+},
+{
+"kennzahl": "eps_gaap",
+"geschaeftsjahr": "2026",
+"von": 1.78,
+"bis": 1.88,
+"einheit": "USD",
+"veraendert": "bestaetigt",
+"beleg": "Tractor Supply is reaffirming its financial outlook for fiscal year 2026."
+},
+{
+"kennzahl": "eps_bereinigt",
+"geschaeftsjahr": "2026",
+"von": 1.9,
+"bis": 2.0,
+"einheit": "USD",
+"veraendert": "bestaetigt",
+"beleg": "Tractor Supply is reaffirming its financial outlook for fiscal year 2026."
+}
+]
+},
+"NDAQ": {
+"datum": "2026-10-22",
+"quelle": "https://www.sec.gov/Archives/edgar/data/1120193/000112019326000017/earningsrelease3q26ex-991.htm",
+"prognosen": [
+{
+"kennzahl": "sonstiges",
+"geschaeftsjahr": "2026",
+"von": 2550000000,
+"bis": 2580000000,
+"einheit": "USD",
+"veraendert": "unklar",
+"beleg": "The company is updating its 2026 non-GAAP operating expense guidance to a range of $2.550 billion to $2.580 billion."
+},
+{
+"kennzahl": "sonstiges",
+"geschaeftsjahr": "2026",
+"von": 22.5,
+"bis": 24.5,
+"einheit": "%",
+"veraendert": "bestaetigt",
+"beleg": "The company is maintaining its 2026 non-GAAP tax rate guidance in the range of 22.5% to 24.5%."
+}
+]
 }
 },
 "stand": "2026-11-13",
 "hinweis": "Eigene Prognosen der Unternehmen aus ihren Ergebnis-Pressemitteilungen (SEC 8-K, Anlage EX-99), automatisch ausgelesen. Keine Analystenschaetzungen.",
 "letzter_lauf": {
-"zeit": "2026-11-13 02:02",
-"kandidaten": 241,
-"ki_aufrufe": 60,
+"zeit": "2026-11-13 11:27",
+"kandidaten": 158,
+"ki_aufrufe": 17,
 "abbruch": "",
 "fehler": []
 }
