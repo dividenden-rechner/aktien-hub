@@ -333,7 +333,7 @@ def modellwerte(out):
     de = lambda s: re.sub(r"(\d)\.(\d)", r"\1,\2", s)
     ohne_fcf = ("Financial Services", "Real Estate", "BDC")
     for k in out.values():
-        for z in ("modellwert_usd", "modellwert_min_usd", "modellwert_max_usd", "modellwert_potenzial", "modellwert_anzahl", "modellwert_modelle"):
+        for z in ("modellwert_usd", "modellwert_min_usd", "modellwert_max_usd", "modellwert_potenzial", "fair_quote", "modellwert_anzahl", "modellwert_modelle"):
             k.pop(z, None)
         kurs = k.get("kurs_usd")
         zahl = lambda v: isinstance(v, (int, float)) and not isinstance(v, bool)
@@ -374,7 +374,7 @@ def modellwerte(out):
         w = sorted(x[1] for x in m)
         mitte = (w[len(w) // 2] if len(w) % 2 else (w[len(w) // 2 - 1] + w[len(w) // 2]) / 2)
         k.update({"modellwert_usd": round(mitte, 2), "modellwert_min_usd": round(w[0], 2), "modellwert_max_usd": round(w[-1], 2),
-                  "modellwert_potenzial": round((mitte / kurs - 1) * 100, 1), "modellwert_anzahl": len(m),
+                  "modellwert_potenzial": round((mitte / kurs - 1) * 100, 1), "fair_quote": round(kurs / mitte * 100, 1), "modellwert_anzahl": len(m),
                   "modellwert_modelle": [[a, round(b, 2), c] for a, b, c in m]})
 
 

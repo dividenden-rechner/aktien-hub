@@ -344,6 +344,7 @@ article.wide>:not(.tool):not(.cards){max-width:760px}
       { id: "earnyield", l: "Gewinnrendite (1/KGV)", u: "pct", s: ["metrics"], dir: "gt", get: S("metrics", ["earningsYieldTTM"], 100) },
       { id: "mvpot", l: "Potenzial zum Modellwert", u: "pct", s: [], dir: "gt", get: function () { return null; }, d: "Eigene Berechnung (Modus Eigene Daten): positiv = Kurs liegt unter der Mitte der Modellwert-Spanne. Kein Kursziel." },
       { id: "mv", l: "Modellwert (Mitte, USD)", u: "usd", s: [], dir: "gt", get: function () { return null; }, d: "Mitte aus 2 bis 5 einfachen Modellen (Dividenden-Diskontierung, Graham, Free Cashflow, Gewinnwachstum, FFO/NAV). Nur Modus Eigene Daten." },
+      { id: "fvq", l: "Fair-Value-Quote (100 % = fair)", u: "num", s: [], dir: "lt", get: function () { return null; }, d: "Kurs in Prozent der Mitte der Modellwerte. Unter 100 % günstig, über 100 % teuer. Eigene Berechnung aus den vorhandenen Daten, kein Kursziel." },
       { id: "mvn", l: "Anzahl Modelle für den Modellwert", u: "num", s: [], dir: "gt", get: function () { return null; }, d: "Mehr Modelle, belastbarere Spanne (mindestens 2 nötig)" },
       { id: "dcfup", l: "Abstand zum DCF-Wert (Potenzial)", u: "pct", s: ["dcf"], dir: "gt", get: function (D) { var d = first(D.dcf, ["dcf"]), p = first(D.dcf, ["Stock Price", "stockPrice"]) || first(D.profile, ["price"]); return (d === null || !p) ? null : (d - p) / p * 100; }, d: "Positiv = Kurs liegt unter dem DCF-Wert von FMP" },
       { id: "tgtup", l: "Abstand zum Analysten-Kursziel", u: "pct", s: ["target"], dir: "gt", get: function (D) { var t = first(D.target, ["targetConsensus", "targetMedian"]), p = first(D.profile, ["price"]); return (t === null || !p) ? null : (t - p) / p * 100; } }
@@ -547,7 +548,7 @@ article.wide>:not(.tool):not(.cards){max-width:760px}
     nde: "nettoschulden_ebitda", cov: "zinsdeckung", cr: "current_ratio", qr: "quick_ratio", intexp: "zinsaufwand_usd", intshare: "zins_ebitda",
     ebitda: "ebitda_usd", pio: "piotroski", alt: "altman_z", ffo: "ffo_usd", ffops: "ffo_je_aktie", pffo: "kurs_ffo", ffopayout: "ffo_ausschuettung",
     ocf: "ocf_usd", fcf: "fcf_usd", capex: "capex_usd", capexrev: "capex_umsatz", capexocf: "capex_ocf", revenue: "umsatz_usd",
-    netinc: "gewinn_usd", nav: "nav_je_aktie", pnav: "kbv", ocfpayout: "ocf_ausschuettung", mvpot: "modellwert_potenzial", mv: "modellwert_usd", mvn: "modellwert_anzahl" };
+    netinc: "gewinn_usd", nav: "nav_je_aktie", pnav: "kbv", ocfpayout: "ocf_ausschuettung", mvpot: "modellwert_potenzial", fvq: "fair_quote", mv: "modellwert_usd", mvn: "modellwert_anzahl" };
   var KZ = null;
   async function kzLaden() { if (KZ) return KZ; var r = await fetch("../data/kennzahlen.json?v=" + Math.floor(Date.now() / 36e5)); if (!r.ok) throw new Error("Eigene Daten nicht ladbar"); KZ = await r.json(); return KZ; }
   function ownRow(sym, K) {
@@ -692,6 +693,8 @@ var REGION = {"DE":"R:EU","AT":"R:EU","CH":"R:EU","FR":"R:EU","NL":"R:EU","BE":"
     "Dividendenwachstum": { c: [["divcagr", "gt", 7], ["payout", "lt", 60], ["revg5", "gt", 5], ["roce", "gt", 12]] },
     "Qualitätswerte": { c: [["roce", "gt", 15], ["nm", "gt", 10], ["revg", "gt", 5], ["nde", "lt", 3], ["pio", "gt", 6]] },
     "Unter Modellwert": { c: [["mvpot", "gt", 15], ["mvn", "gt", 2], ["mcap", "gt", 5, "Mrd"], ["nde", "lt", 4]] },
+    "Unterbewertet (unter 90 % fair)": { c: [["fvq", "lt", 90], ["mvn", "gt", 2], ["mcap", "gt", 5, "Mrd"]] },
+    "Überbewertet (über 110 % fair)": { c: [["fvq", "gt", 110], ["mvn", "gt", 2], ["mcap", "gt", 5, "Mrd"]] },
     "Günstig bewertet": { c: [["pe", "lt", 15], ["pb", "lt", 2], ["fcfyield", "gt", 5], ["de", "lt", 1.5]] },
     "REITs": { c: [["yield", "gt", 4], ["pffo", "lt", 18], ["ffopayout", "lt", 90], ["nde", "lt", 7]], ind: "REIT" },
     "BDCs": { c: [["pnav", "lt", 1.1], ["yield", "gt", 8], ["de", "lt", 1.25]], ind: "BDC" }
