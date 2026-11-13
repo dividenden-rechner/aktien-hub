@@ -1,0 +1,987 @@
+{
+ "stand": "2026-11-13 23:40 UTC",
+ "firmen": {
+  "ARCC": {
+   "NetAssetValuePerShare": {
+    "anzahl": 98,
+    "erstes_ende": "2012-12-31",
+    "letztes_ende": "2026-09-30"
+   },
+   "NetInvestmentIncome": {
+    "anzahl": 56,
+    "erstes_ende": "2020-12-31",
+    "letztes_ende": "2026-09-30"
+   },
+   "CommonStockDividendsPerShareDeclared": {
+    "anzahl": 92,
+    "erstes_ende": "2020-12-31",
+    "letztes_ende": "2026-09-30"
+   },
+   "InvestmentOwnedAtFairValue": {
+    "anzahl": 34,
+    "erstes_ende": "2021-12-31",
+    "letztes_ende": "2026-09-30"
+   },
+   "DebtInstrumentCarryingAmount": {
+    "anzahl": 34,
+    "erstes_ende": "2021-12-31",
+    "letztes_ende": "2026-09-30"
+   }
+  },
+  "OBDC": {
+   "NetAssetValuePerShare": {
+    "anzahl": 86,
+    "erstes_ende": "2015-12-31",
+    "letztes_ende": "2026-09-30"
+   },
+   "NetInvestmentIncome": {
+    "anzahl": 52,
+    "erstes_ende": "2020-12-31",
+    "letztes_ende": "2026-09-30"
+   },
+   "CommonStockDividendsPerShareDeclared": {
+    "anzahl": 52,
+    "erstes_ende": "2019-05-28",
+    "letztes_ende": "2024-09-30"
+   },
+   "InvestmentOwnedAtFairValue": {
+    "anzahl": 32,
+    "erstes_ende": "2021-12-31",
+    "letztes_ende": "2026-09-30"
+   },
+   "DebtInstrumentCarryingAmount": {
+    "anzahl": 32,
+    "erstes_ende": "2021-12-31",
+    "letztes_ende": "2026-09-30"
+   }
+  },
+  "BXSL": {
+   "NetAssetValuePerShare": {
+    "anzahl": 94,
+    "erstes_ende": "2017-12-31",
+    "letztes_ende": "2026-09-30"
+   },
+   "NetInvestmentIncome": {
+    "anzahl": 56,
+    "erstes_ende": "2020-12-31",
+    "letztes_ende": "2026-09-30"
+   },
+   "CommonStockDividendsPerShareDeclared": {
+    "anzahl": 89,
+    "erstes_ende": "2020-12-31",
+    "letztes_ende": "2026-09-30"
+   },
+   "InvestmentOwnedAtFairValue": {
+    "anzahl": 34,
+    "erstes_ende": "2021-12-31",
+    "letztes_ende": "2026-09-30"
+   },
+   "DebtInstrumentCarryingAmount": {
+    "anzahl": 34,
+    "erstes_ende": "2021-12-31",
+    "letztes_ende": "2026-09-30"
+   }
+  },
+  "MAIN": {
+   "NetAssetValuePerShare": {
+    "anzahl": 114,
+    "erstes_ende": "2012-12-31",
+    "letztes_ende": "2026-09-30"
+   },
+   "NetInvestmentIncome": {
+    "anzahl": 58,
+    "erstes_ende": "2020-12-31",
+    "letztes_ende": "2026-09-30"
+   },
+   "InvestmentOwnedAtFairValue": {
+    "anzahl": 37,
+    "erstes_ende": "2021-09-30",
+    "letztes_ende": "2026-09-30"
+   },
+   "DebtInstrumentCarryingAmount": {
+    "anzahl": 34,
+    "erstes_ende": "2021-12-31",
+    "letztes_ende": "2026-09-30"
+   }
+  },
+  "FSK": {
+   "NetAssetValuePerShare": {
+    "anzahl": 69,
+    "erstes_ende": "2017-12-31",
+    "letztes_ende": "2026-09-30"
+   },
+   "NetInvestmentIncome": {
+    "anzahl": 28,
+    "erstes_ende": "2020-12-31",
+    "letztes_ende": "2026-09-30"
+   },
+   "CommonStockDividendsPerShareDeclared": {
+    "anzahl": 46,
+    "erstes_ende": "2021-03-31",
+    "letztes_ende": "2026-09-30"
+   },
+   "InvestmentOwnedAtFairValue": {
+    "anzahl": 34,
+    "erstes_ende": "2021-12-31",
+    "letztes_ende": "2026-09-30"
+   },
+   "DebtInstrumentCarryingAmount": {
+    "anzahl": 52,
+    "erstes_ende": "2018-12-31",
+    "letztes_ende": "2026-09-30"
+   }
+  },
+  "GBDC": {
+   "NetAssetValuePerShare": {
+    "anzahl": 90,
+    "erstes_ende": "2017-09-30",
+    "letztes_ende": "2026-06-30"
+   },
+   "NetInvestmentIncome": {
+    "anzahl": 52,
+    "erstes_ende": "2020-09-30",
+    "letztes_ende": "2026-06-30"
+   },
+   "CommonStockDividendsPerShareDeclared": {
+    "anzahl": 52,
+    "erstes_ende": "2020-09-30",
+    "letztes_ende": "2026-06-30"
+   },
+   "InvestmentOwnedAtFairValue": {
+    "anzahl": 32,
+    "erstes_ende": "2021-09-30",
+    "letztes_ende": "2026-06-30"
+   },
+   "DebtInstrumentCarryingAmount": {
+    "anzahl": 32,
+    "erstes_ende": "2021-09-30",
+    "letztes_ende": "2026-06-30"
+   }
+  },
+  "HTGC": {
+   "NetAssetValuePerShare": {
+    "anzahl": 107,
+    "erstes_ende": "2014-12-31",
+    "letztes_ende": "2026-09-30"
+   },
+   "NetInvestmentIncome": {
+    "anzahl": 56,
+    "erstes_ende": "2020-12-31",
+    "letztes_ende": "2026-09-30"
+   },
+   "CommonStockDividendsPerShareDeclared": {
+    "anzahl": 2,
+    "erstes_ende": "2022-09-30",
+    "letztes_ende": "2022-09-30"
+   },
+   "InvestmentOwnedAtFairValue": {
+    "anzahl": 34,
+    "erstes_ende": "2021-12-31",
+    "letztes_ende": "2026-09-30"
+   },
+   "DebtInstrumentCarryingAmount": {
+    "anzahl": 34,
+    "erstes_ende": "2021-12-31",
+    "letztes_ende": "2026-09-30"
+   }
+  },
+  "TSLX": {
+   "NetAssetValuePerShare": {
+    "anzahl": 127,
+    "erstes_ende": "2013-12-31",
+    "letztes_ende": "2026-09-30"
+   },
+   "NetInvestmentIncome": {
+    "anzahl": 23,
+    "erstes_ende": "2023-12-31",
+    "letztes_ende": "2026-09-30"
+   },
+   "InvestmentOwnedAtFairValue": {
+    "anzahl": 34,
+    "erstes_ende": "2021-12-31",
+    "letztes_ende": "2026-09-30"
+   },
+   "DebtInstrumentCarryingAmount": {
+    "anzahl": 34,
+    "erstes_ende": "2021-12-31",
+    "letztes_ende": "2026-09-30"
+   }
+  },
+  "MSDL": {
+   "NetAssetValuePerShare": {
+    "anzahl": 65,
+    "erstes_ende": "2019-12-31",
+    "letztes_ende": "2026-09-30"
+   },
+   "NetInvestmentIncome": {
+    "anzahl": 49,
+    "erstes_ende": "2021-12-31",
+    "letztes_ende": "2026-09-30"
+   },
+   "CommonStockDividendsPerShareDeclared": {
+    "anzahl": 36,
+    "erstes_ende": "2022-03-25",
+    "letztes_ende": "2024-06-30"
+   },
+   "InvestmentOwnedAtFairValue": {
+    "anzahl": 30,
+    "erstes_ende": "2022-12-31",
+    "letztes_ende": "2026-09-30"
+   },
+   "DebtInstrumentCarryingAmount": {
+    "anzahl": 30,
+    "erstes_ende": "2022-12-31",
+    "letztes_ende": "2026-09-30"
+   }
+  },
+  "PSEC": {
+   "NetAssetValuePerShare": {
+    "anzahl": 160,
+    "erstes_ende": "2017-06-30",
+    "letztes_ende": "2026-09-30"
+   },
+   "NetInvestmentIncome": {
+    "anzahl": 105,
+    "erstes_ende": "2020-09-30",
+    "letztes_ende": "2026-09-30"
+   },
+   "CommonStockDividendsPerShareDeclared": {
+    "anzahl": 6,
+    "erstes_ende": "2023-07-31",
+    "letztes_ende": "2024-09-30"
+   },
+   "InvestmentOwnedAtFairValue": {
+    "anzahl": 32,
+    "erstes_ende": "2022-06-30",
+    "letztes_ende": "2026-09-30"
+   },
+   "DebtInstrumentCarryingAmount": {
+    "anzahl": 32,
+    "erstes_ende": "2022-06-30",
+    "letztes_ende": "2026-09-30"
+   }
+  },
+  "OCSL": {
+   "NetAssetValuePerShare": {
+    "anzahl": 100,
+    "erstes_ende": "2018-09-30",
+    "letztes_ende": "2026-06-30"
+   },
+   "NetInvestmentIncome": {
+    "anzahl": 49,
+    "erstes_ende": "2021-09-30",
+    "letztes_ende": "2026-06-30"
+   },
+   "CommonStockDividendsPerShareDeclared": {
+    "anzahl": 1,
+    "erstes_ende": "2025-11-10",
+    "letztes_ende": "2025-11-10"
+   },
+   "InvestmentOwnedAtFairValue": {
+    "anzahl": 30,
+    "erstes_ende": "2022-09-30",
+    "letztes_ende": "2026-06-30"
+   }
+  },
+  "CSWC": {
+   "NetAssetValuePerShare": {
+    "anzahl": 118,
+    "erstes_ende": "2016-03-31",
+    "letztes_ende": "2026-09-30"
+   },
+   "NetInvestmentIncome": {
+    "anzahl": 90,
+    "erstes_ende": "2010-03-31",
+    "letztes_ende": "2026-09-30"
+   },
+   "CommonStockDividendsPerShareDeclared": {
+    "anzahl": 24,
+    "erstes_ende": "2022-09-30",
+    "letztes_ende": "2025-06-30"
+   },
+   "InvestmentOwnedAtFairValue": {
+    "anzahl": 50,
+    "erstes_ende": "2011-03-31",
+    "letztes_ende": "2026-09-30"
+   },
+   "DebtInstrumentCarryingAmount": {
+    "anzahl": 34,
+    "erstes_ende": "2022-03-31",
+    "letztes_ende": "2026-09-30"
+   }
+  },
+  "GSBD": {
+   "NetAssetValuePerShare": {
+    "anzahl": 118,
+    "erstes_ende": "2013-01-31",
+    "letztes_ende": "2026-09-30"
+   },
+   "NetInvestmentIncome": {
+    "anzahl": 56,
+    "erstes_ende": "2020-12-31",
+    "letztes_ende": "2026-09-30"
+   },
+   "InvestmentOwnedAtFairValue": {
+    "anzahl": 34,
+    "erstes_ende": "2021-12-31",
+    "letztes_ende": "2026-09-30"
+   }
+  },
+  "MFIC": {
+   "NetAssetValuePerShare": {
+    "anzahl": 82,
+    "erstes_ende": "2019-03-31",
+    "letztes_ende": "2026-09-30"
+   },
+   "NetInvestmentIncome": {
+    "anzahl": 66,
+    "erstes_ende": "2021-03-31",
+    "letztes_ende": "2026-09-30"
+   },
+   "InvestmentOwnedAtFairValue": {
+    "anzahl": 32,
+    "erstes_ende": "2022-03-31",
+    "letztes_ende": "2026-09-30"
+   },
+   "DebtInstrumentCarryingAmount": {
+    "anzahl": 32,
+    "erstes_ende": "2022-03-31",
+    "letztes_ende": "2026-09-30"
+   }
+  },
+  "TRIN": {
+   "NetAssetValuePerShare": {
+    "anzahl": 159,
+    "erstes_ende": "2019-12-31",
+    "letztes_ende": "2026-09-30"
+   },
+   "NetInvestmentIncome": {
+    "anzahl": 37,
+    "erstes_ende": "2020-12-31",
+    "letztes_ende": "2026-09-30"
+   },
+   "CommonStockDividendsPerShareDeclared": {
+    "anzahl": 3,
+    "erstes_ende": "2026-03-31",
+    "letztes_ende": "2026-09-30"
+   },
+   "InvestmentOwnedAtFairValue": {
+    "anzahl": 34,
+    "erstes_ende": "2021-12-31",
+    "letztes_ende": "2026-09-30"
+   }
+  },
+  "NMFC": {
+   "NetAssetValuePerShare": {
+    "anzahl": 94,
+    "erstes_ende": "2017-12-31",
+    "letztes_ende": "2026-09-30"
+   },
+   "NetInvestmentIncome": {
+    "anzahl": 56,
+    "erstes_ende": "2020-12-31",
+    "letztes_ende": "2026-09-30"
+   },
+   "CommonStockDividendsPerShareDeclared": {
+    "anzahl": 56,
+    "erstes_ende": "2020-12-31",
+    "letztes_ende": "2026-09-30"
+   },
+   "InvestmentOwnedAtFairValue": {
+    "anzahl": 34,
+    "erstes_ende": "2021-12-31",
+    "letztes_ende": "2026-09-30"
+   }
+  },
+  "BBDC": {
+   "NetAssetValuePerShare": {
+    "anzahl": 109,
+    "erstes_ende": "2013-12-31",
+    "letztes_ende": "2026-09-30"
+   },
+   "NetInvestmentIncome": {
+    "anzahl": 56,
+    "erstes_ende": "2020-12-31",
+    "letztes_ende": "2026-09-30"
+   },
+   "CommonStockDividendsPerShareDeclared": {
+    "anzahl": 100,
+    "erstes_ende": "2020-02-27",
+    "letztes_ende": "2026-09-30"
+   },
+   "InvestmentOwnedAtFairValue": {
+    "anzahl": 34,
+    "erstes_ende": "2021-12-31",
+    "letztes_ende": "2026-09-30"
+   }
+  },
+  "BCSF": {
+   "NetAssetValuePerShare": {
+    "anzahl": 120,
+    "erstes_ende": "2016-12-31",
+    "letztes_ende": "2026-09-30"
+   },
+   "NetInvestmentIncome": {
+    "anzahl": 104,
+    "erstes_ende": "2020-03-31",
+    "letztes_ende": "2026-09-30"
+   },
+   "InvestmentOwnedAtFairValue": {
+    "anzahl": 34,
+    "erstes_ende": "2021-12-31",
+    "letztes_ende": "2026-09-30"
+   },
+   "DebtInstrumentCarryingAmount": {
+    "anzahl": 34,
+    "erstes_ende": "2021-12-31",
+    "letztes_ende": "2026-09-30"
+   }
+  },
+  "CGBD": {
+   "NetAssetValuePerShare": {
+    "anzahl": 98,
+    "erstes_ende": "2013-12-31",
+    "letztes_ende": "2026-09-30"
+   },
+   "NetInvestmentIncome": {
+    "anzahl": 56,
+    "erstes_ende": "2020-12-31",
+    "letztes_ende": "2026-09-30"
+   },
+   "CommonStockDividendsPerShareDeclared": {
+    "anzahl": 5,
+    "erstes_ende": "2020-09-30",
+    "letztes_ende": "2024-03-31"
+   },
+   "InvestmentOwnedAtFairValue": {
+    "anzahl": 34,
+    "erstes_ende": "2021-12-31",
+    "letztes_ende": "2026-09-30"
+   },
+   "DebtInstrumentCarryingAmount": {
+    "anzahl": 24,
+    "erstes_ende": "2022-12-31",
+    "letztes_ende": "2026-09-30"
+   }
+  },
+  "PFLT": {
+   "NetAssetValuePerShare": {
+    "anzahl": 90,
+    "erstes_ende": "2017-09-30",
+    "letztes_ende": "2026-06-30"
+   },
+   "NetInvestmentIncome": {
+    "anzahl": 38,
+    "erstes_ende": "2020-09-30",
+    "letztes_ende": "2025-09-30"
+   },
+   "InvestmentOwnedAtFairValue": {
+    "anzahl": 32,
+    "erstes_ende": "2021-09-30",
+    "letztes_ende": "2026-06-30"
+   }
+  },
+  "SLRC": {
+   "NetAssetValuePerShare": {
+    "anzahl": 98,
+    "erstes_ende": "2017-12-31",
+    "letztes_ende": "2026-09-30"
+   },
+   "NetInvestmentIncome": {
+    "anzahl": 60,
+    "erstes_ende": "2020-12-31",
+    "letztes_ende": "2026-09-30"
+   },
+   "InvestmentOwnedAtFairValue": {
+    "anzahl": 16,
+    "erstes_ende": "2022-12-31",
+    "letztes_ende": "2026-09-30"
+   },
+   "DebtInstrumentCarryingAmount": {
+    "anzahl": 36,
+    "erstes_ende": "2021-12-31",
+    "letztes_ende": "2026-09-30"
+   }
+  },
+  "FDUS": {
+   "NetAssetValuePerShare": {
+    "anzahl": 132,
+    "erstes_ende": "2012-12-31",
+    "letztes_ende": "2026-09-30"
+   },
+   "CommonStockDividendsPerShareDeclared": {
+    "anzahl": 56,
+    "erstes_ende": "2020-12-31",
+    "letztes_ende": "2026-09-30"
+   },
+   "InvestmentOwnedAtFairValue": {
+    "anzahl": 34,
+    "erstes_ende": "2021-12-31",
+    "letztes_ende": "2026-09-30"
+   },
+   "DebtInstrumentCarryingAmount": {
+    "anzahl": 34,
+    "erstes_ende": "2021-12-31",
+    "letztes_ende": "2026-09-30"
+   }
+  },
+  "NCDL": {
+   "NetAssetValuePerShare": {
+    "anzahl": 71,
+    "erstes_ende": "2018-12-31",
+    "letztes_ende": "2026-09-30"
+   },
+   "NetInvestmentIncome": {
+    "anzahl": 13,
+    "erstes_ende": "2021-12-31",
+    "letztes_ende": "2026-09-30"
+   },
+   "CommonStockDividendsPerShareDeclared": {
+    "anzahl": 93,
+    "erstes_ende": "2020-04-16",
+    "letztes_ende": "2024-05-01"
+   },
+   "InvestmentOwnedAtFairValue": {
+    "anzahl": 29,
+    "erstes_ende": "2022-12-31",
+    "letztes_ende": "2026-09-30"
+   }
+  },
+  "MSIF": {
+   "NetAssetValuePerShare": {
+    "anzahl": 76,
+    "erstes_ende": "2014-12-31",
+    "letztes_ende": "2026-09-30"
+   },
+   "NetInvestmentIncome": {
+    "anzahl": 51,
+    "erstes_ende": "2021-12-31",
+    "letztes_ende": "2026-09-30"
+   },
+   "InvestmentOwnedAtFairValue": {
+    "anzahl": 30,
+    "erstes_ende": "2022-12-31",
+    "letztes_ende": "2026-09-30"
+   },
+   "DebtInstrumentCarryingAmount": {
+    "anzahl": 30,
+    "erstes_ende": "2022-12-31",
+    "letztes_ende": "2026-09-30"
+   }
+  },
+  "GAIN": {
+   "NetAssetValuePerShare": {
+    "anzahl": 108,
+    "erstes_ende": "2013-03-31",
+    "letztes_ende": "2026-09-30"
+   },
+   "NetInvestmentIncome": {
+    "anzahl": 56,
+    "erstes_ende": "2021-03-31",
+    "letztes_ende": "2026-09-30"
+   },
+   "InvestmentOwnedAtFairValue": {
+    "anzahl": 34,
+    "erstes_ende": "2022-03-31",
+    "letztes_ende": "2026-09-30"
+   },
+   "DebtInstrumentCarryingAmount": {
+    "anzahl": 66,
+    "erstes_ende": "2014-03-31",
+    "letztes_ende": "2026-09-30"
+   }
+  },
+  "CCAP": {
+   "NetAssetValuePerShare": {
+    "anzahl": 103,
+    "erstes_ende": "2017-12-31",
+    "letztes_ende": "2026-09-30"
+   },
+   "NetInvestmentIncome": {
+    "anzahl": 56,
+    "erstes_ende": "2020-12-31",
+    "letztes_ende": "2026-09-30"
+   },
+   "InvestmentOwnedAtFairValue": {
+    "anzahl": 35,
+    "erstes_ende": "2021-12-31",
+    "letztes_ende": "2026-09-30"
+   }
+  },
+  "CION": {
+   "NetAssetValuePerShare": {
+    "anzahl": 94,
+    "erstes_ende": "2017-12-31",
+    "letztes_ende": "2026-09-30"
+   },
+   "NetInvestmentIncome": {
+    "anzahl": 69,
+    "erstes_ende": "2020-12-31",
+    "letztes_ende": "2026-09-30"
+   },
+   "CommonStockDividendsPerShareDeclared": {
+    "anzahl": 167,
+    "erstes_ende": "2020-03-31",
+    "letztes_ende": "2026-09-30"
+   },
+   "InvestmentOwnedAtFairValue": {
+    "anzahl": 34,
+    "erstes_ende": "2021-12-31",
+    "letztes_ende": "2026-09-30"
+   },
+   "DebtInstrumentCarryingAmount": {
+    "anzahl": 7,
+    "erstes_ende": "2025-03-31",
+    "letztes_ende": "2026-09-30"
+   }
+  },
+  "TCPC": {
+   "NetAssetValuePerShare": {
+    "anzahl": 143,
+    "erstes_ende": "2017-12-31",
+    "letztes_ende": "2026-09-30"
+   },
+   "NetInvestmentIncome": {
+    "anzahl": 56,
+    "erstes_ende": "2020-12-31",
+    "letztes_ende": "2026-09-30"
+   },
+   "CommonStockDividendsPerShareDeclared": {
+    "anzahl": 46,
+    "erstes_ende": "2018-12-31",
+    "letztes_ende": "2026-09-30"
+   },
+   "InvestmentOwnedAtFairValue": {
+    "anzahl": 34,
+    "erstes_ende": "2021-12-31",
+    "letztes_ende": "2026-09-30"
+   }
+  },
+  "GLAD": {
+   "NetAssetValuePerShare": {
+    "anzahl": 93,
+    "erstes_ende": "2013-09-30",
+    "letztes_ende": "2026-06-30"
+   },
+   "NetInvestmentIncome": {
+    "anzahl": 49,
+    "erstes_ende": "2021-09-30",
+    "letztes_ende": "2026-06-30"
+   },
+   "InvestmentOwnedAtFairValue": {
+    "anzahl": 30,
+    "erstes_ende": "2022-09-30",
+    "letztes_ende": "2026-06-30"
+   },
+   "DebtInstrumentCarryingAmount": {
+    "anzahl": 54,
+    "erstes_ende": "2014-09-30",
+    "letztes_ende": "2026-06-30"
+   }
+  },
+  "PNNT": {
+   "NetAssetValuePerShare": {
+    "anzahl": 90,
+    "erstes_ende": "2017-09-30",
+    "letztes_ende": "2026-06-30"
+   },
+   "NetInvestmentIncome": {
+    "anzahl": 48,
+    "erstes_ende": "2020-09-30",
+    "letztes_ende": "2026-06-30"
+   },
+   "InvestmentOwnedAtFairValue": {
+    "anzahl": 32,
+    "erstes_ende": "2021-09-30",
+    "letztes_ende": "2026-06-30"
+   }
+  },
+  "PSBD": {
+   "NetAssetValuePerShare": {
+    "anzahl": 70,
+    "erstes_ende": "2020-01-22",
+    "letztes_ende": "2026-09-30"
+   },
+   "NetInvestmentIncome": {
+    "anzahl": 67,
+    "erstes_ende": "2021-09-30",
+    "letztes_ende": "2026-09-30"
+   },
+   "InvestmentOwnedAtFairValue": {
+    "anzahl": 34,
+    "erstes_ende": "2021-12-31",
+    "letztes_ende": "2026-09-30"
+   }
+  },
+  "RWAY": {
+   "NetAssetValuePerShare": {
+    "anzahl": 113,
+    "erstes_ende": "2015-12-31",
+    "letztes_ende": "2026-09-30"
+   },
+   "NetInvestmentIncome": {
+    "anzahl": 56,
+    "erstes_ende": "2020-12-31",
+    "letztes_ende": "2026-09-30"
+   },
+   "InvestmentOwnedAtFairValue": {
+    "anzahl": 35,
+    "erstes_ende": "2021-12-31",
+    "letztes_ende": "2026-09-30"
+   },
+   "DebtInstrumentCarryingAmount": {
+    "anzahl": 32,
+    "erstes_ende": "2017-12-31",
+    "letztes_ende": "2025-12-31"
+   }
+  },
+  "SAR": {
+   "NetAssetValuePerShare": {
+    "anzahl": 76,
+    "erstes_ende": "2018-02-28",
+    "letztes_ende": "2026-08-31"
+   },
+   "NetInvestmentIncome": {
+    "anzahl": 69,
+    "erstes_ende": "2021-02-28",
+    "letztes_ende": "2026-08-31"
+   },
+   "CommonStockDividendsPerShareDeclared": {
+    "anzahl": 5,
+    "erstes_ende": "2023-01-04",
+    "letztes_ende": "2026-08-31"
+   },
+   "InvestmentOwnedAtFairValue": {
+    "anzahl": 34,
+    "erstes_ende": "2022-02-28",
+    "letztes_ende": "2026-08-31"
+   }
+  },
+  "SCM": {
+   "NetAssetValuePerShare": {
+    "anzahl": 95,
+    "erstes_ende": "2012-12-31",
+    "letztes_ende": "2026-09-30"
+   },
+   "NetInvestmentIncome": {
+    "anzahl": 56,
+    "erstes_ende": "2020-12-31",
+    "letztes_ende": "2026-09-30"
+   },
+   "CommonStockDividendsPerShareDeclared": {
+    "anzahl": 266,
+    "erstes_ende": "2012-12-31",
+    "letztes_ende": "2026-09-30"
+   },
+   "InvestmentOwnedAtFairValue": {
+    "anzahl": 34,
+    "erstes_ende": "2021-12-31",
+    "letztes_ende": "2026-09-30"
+   }
+  },
+  "HRZN": {
+   "NetAssetValuePerShare": {
+    "anzahl": 86,
+    "erstes_ende": "2014-12-31",
+    "letztes_ende": "2026-09-30"
+   },
+   "NetInvestmentIncome": {
+    "anzahl": 49,
+    "erstes_ende": "2021-12-31",
+    "letztes_ende": "2026-09-30"
+   },
+   "CommonStockDividendsPerShareDeclared": {
+    "anzahl": 73,
+    "erstes_ende": "2020-12-31",
+    "letztes_ende": "2026-09-30"
+   },
+   "InvestmentOwnedAtFairValue": {
+    "anzahl": 34,
+    "erstes_ende": "2021-12-31",
+    "letztes_ende": "2026-09-30"
+   },
+   "DebtInstrumentCarryingAmount": {
+    "anzahl": 61,
+    "erstes_ende": "2014-12-31",
+    "letztes_ende": "2026-09-30"
+   }
+  },
+  "LIEN": {
+   "NetAssetValuePerShare": {
+    "anzahl": 63,
+    "erstes_ende": "2022-02-02",
+    "letztes_ende": "2026-09-30"
+   },
+   "NetInvestmentIncome": {
+    "anzahl": 50,
+    "erstes_ende": "2021-12-31",
+    "letztes_ende": "2026-09-30"
+   },
+   "InvestmentOwnedAtFairValue": {
+    "anzahl": 31,
+    "erstes_ende": "2022-03-31",
+    "letztes_ende": "2026-09-30"
+   }
+  },
+  "SSSS": {
+   "fehler": "keine CIK"
+  },
+  "TPVG": {
+   "NetAssetValuePerShare": {
+    "anzahl": 143,
+    "erstes_ende": "2017-12-31",
+    "letztes_ende": "2026-09-30"
+   },
+   "NetInvestmentIncome": {
+    "anzahl": 56,
+    "erstes_ende": "2020-12-31",
+    "letztes_ende": "2026-09-30"
+   },
+   "CommonStockDividendsPerShareDeclared": {
+    "anzahl": 53,
+    "erstes_ende": "2021-03-31",
+    "letztes_ende": "2024-08-06"
+   },
+   "InvestmentOwnedAtFairValue": {
+    "anzahl": 34,
+    "erstes_ende": "2021-12-31",
+    "letztes_ende": "2026-09-30"
+   },
+   "DebtInstrumentCarryingAmount": {
+    "anzahl": 34,
+    "erstes_ende": "2021-12-31",
+    "letztes_ende": "2026-09-30"
+   }
+  },
+  "WHF": {
+   "NetAssetValuePerShare": {
+    "anzahl": 76,
+    "erstes_ende": "2017-12-31",
+    "letztes_ende": "2026-09-30"
+   },
+   "NetInvestmentIncome": {
+    "anzahl": 56,
+    "erstes_ende": "2020-12-31",
+    "letztes_ende": "2026-09-30"
+   },
+   "InvestmentOwnedAtFairValue": {
+    "anzahl": 34,
+    "erstes_ende": "2021-12-31",
+    "letztes_ende": "2026-09-30"
+   },
+   "DebtInstrumentCarryingAmount": {
+    "anzahl": 14,
+    "erstes_ende": "2021-12-31",
+    "letztes_ende": "2025-12-31"
+   }
+  },
+  "MRCC": {
+   "fehler": "keine CIK"
+  },
+  "OXSQ": {
+   "NetAssetValuePerShare": {
+    "anzahl": 95,
+    "erstes_ende": "2012-12-31",
+    "letztes_ende": "2026-09-30"
+   },
+   "NetInvestmentIncome": {
+    "anzahl": 56,
+    "erstes_ende": "2020-12-31",
+    "letztes_ende": "2026-09-30"
+   },
+   "InvestmentOwnedAtFairValue": {
+    "anzahl": 11,
+    "erstes_ende": "2021-12-31",
+    "letztes_ende": "2026-06-30"
+   }
+  },
+  "GECC": {
+   "NetAssetValuePerShare": {
+    "anzahl": 158,
+    "erstes_ende": "2017-12-31",
+    "letztes_ende": "2026-09-30"
+   },
+   "NetInvestmentIncome": {
+    "anzahl": 56,
+    "erstes_ende": "2020-12-31",
+    "letztes_ende": "2026-09-30"
+   },
+   "InvestmentOwnedAtFairValue": {
+    "anzahl": 34,
+    "erstes_ende": "2021-12-31",
+    "letztes_ende": "2026-09-30"
+   }
+  },
+  "OFS": {
+   "NetAssetValuePerShare": {
+    "anzahl": 108,
+    "erstes_ende": "2017-12-31",
+    "letztes_ende": "2026-09-30"
+   },
+   "NetInvestmentIncome": {
+    "anzahl": 64,
+    "erstes_ende": "2018-12-31",
+    "letztes_ende": "2026-09-30"
+   },
+   "CommonStockDividendsPerShareDeclared": {
+    "anzahl": 7,
+    "erstes_ende": "2020-12-31",
+    "letztes_ende": "2022-12-31"
+   },
+   "InvestmentOwnedAtFairValue": {
+    "anzahl": 34,
+    "erstes_ende": "2021-12-31",
+    "letztes_ende": "2026-09-30"
+   },
+   "DebtInstrumentCarryingAmount": {
+    "anzahl": 9,
+    "erstes_ende": "2022-12-31",
+    "letztes_ende": "2026-09-30"
+   }
+  },
+  "ICMB": {
+   "NetAssetValuePerShare": {
+    "anzahl": 67,
+    "erstes_ende": "2018-06-30",
+    "letztes_ende": "2026-09-30"
+   },
+   "NetInvestmentIncome": {
+    "anzahl": 50,
+    "erstes_ende": "2021-06-30",
+    "letztes_ende": "2026-09-30"
+   },
+   "CommonStockDividendsPerShareDeclared": {
+    "anzahl": 50,
+    "erstes_ende": "2021-06-30",
+    "letztes_ende": "2026-09-30"
+   },
+   "InvestmentOwnedAtFairValue": {
+    "anzahl": 31,
+    "erstes_ende": "2022-06-30",
+    "letztes_ende": "2026-09-30"
+   },
+   "DebtInstrumentCarryingAmount": {
+    "anzahl": 24,
+    "erstes_ende": "2022-12-31",
+    "letztes_ende": "2026-09-30"
+   }
+  },
+  "RAND": {
+   "NetAssetValuePerShare": {
+    "anzahl": 85,
+    "erstes_ende": "2018-12-31",
+    "letztes_ende": "2026-09-30"
+   },
+   "NetInvestmentIncome": {
+    "anzahl": 49,
+    "erstes_ende": "2021-12-31",
+    "letztes_ende": "2026-09-30"
+   },
+   "InvestmentOwnedAtFairValue": {
+    "anzahl": 30,
+    "erstes_ende": "2022-12-31",
+    "letztes_ende": "2026-09-30"
+   }
+  }
+ }
+}
