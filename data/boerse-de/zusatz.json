@@ -18808,6 +18808,758 @@ null
 834
 ],
 "hinweis": "EUR. Bank: ocf (stark negativ durch Kredit-/Einlagengeschaeft), cash (Zentralbankguthaben 45-68 Mrd.), debt (Kapitalmarktfunding 78-97 Mrd.), Umsatz, Bruttogewinn, EBIT und Zinsaufwand (Zinsaufwand 2025: 8.122) nicht sinnvoll vergleichbar, daher null. capex = Sachanlagen + immaterielle Werte. da ohne 'Other Amortization'. div = Dividenden an Aktionaere (inkl. 2025 Zwischendividende), bb 2021 = keine. 2025 bb 267 kleiner als Programm (Rueckkauf teils 2026)."
+},
+"AKRBP.OL": {
+"jahre": [
+2021,
+2022,
+2023,
+2024,
+2025
+],
+"ocf": [
+4282,
+5730,
+5407,
+6423,
+6958
+],
+"capex": [
+1554.46,
+1831.8,
+3410.6,
+5112.7,
+7123.3
+],
+"da": [
+1296,
+1917,
+2594,
+2617,
+2764
+],
+"div": [
+487.5,
+1006,
+1390,
+1517,
+1593
+],
+"bb": [
+8.6,
+0,
+10.5,
+0,
+5.6
+],
+"cash": [
+1971,
+2756,
+3388,
+4147,
+2644
+],
+"debt": [
+3713,
+5414,
+6502,
+8173,
+9738
+],
+"umsatz": [
+5694,
+12974,
+13670,
+12380,
+10954
+],
+"brutto": [
+4996,
+12105,
+12673,
+11510,
+9842
+],
+"ebit": [
+3245,
+9874,
+9692,
+8466,
+6591
+],
+"zins": [
+139.53,
+107.7,
+161.8,
+95.5,
+70.4
+],
+"steuer": [
+2068,
+7174,
+7428,
+6221,
+4475
+],
+"hinweis": "USD Mio., stockanalysis.com. capex = Sachanlagen plus immaterielle Werte. da laut Cashflow. debt inkl. Leasing. Steuer sehr hoch (Norwegische Oelsteuer ca. 78 Prozent). 2022 Zukauf Lundin Energy Norway (Cash-Akquisition 1.229 Mio. nicht in capex). cash 2025 inkl. 300 Mio. kurzfristige Anlagen."
+},
+"SALM.OL": {
+"jahre": [
+2021,
+2022,
+2023,
+2024,
+2025
+],
+"ocf": [
+2908,
+4592,
+9294,
+5381,
+3260
+],
+"capex": [
+2224.03,
+2454.88,
+2353,
+2582,
+1950
+],
+"da": [
+803.14,
+1001,
+1419,
+1691,
+1946
+],
+"div": [
+2261,
+2354,
+2748,
+4611,
+2941
+],
+"bb": [
+16.04,
+0,
+0,
+0,
+50
+],
+"cash": [
+926.68,
+2713,
+785,
+518,
+765
+],
+"debt": [
+6445,
+23217,
+15751,
+19110,
+23440
+],
+"umsatz": [
+14963,
+19985,
+27891,
+26318,
+27343
+],
+"brutto": [
+8234,
+10810,
+16749,
+12684,
+12215
+],
+"ebit": [
+3685,
+4908,
+9502,
+5080,
+3408
+],
+"zins": [
+184.65,
+364.25,
+1223,
+1258,
+1456
+],
+"steuer": [
+718.82,
+954,
+4534,
+1096,
+571
+],
+"hinweis": "NOK Mio., stockanalysis.com. capex = Sachanlagen plus immaterielle Werte (Konzessionen 2024: 792). Akquisitionen (2022: 2.092, 2025: 356) nicht in capex. Bruttogewinn nach Definition der Datenquelle (Umsatz minus Warenaufwand). 2023 ocf enthaelt Steuer-/Sondereffekte (Sonstige 4.331). Dividenden inkl. Ausschuettungen an Minderheiten nicht enthalten."
+},
+"STB.OL": {
+"jahre": [
+2021,
+2022,
+2023,
+2024,
+2025
+],
+"ocf": [
+null,
+null,
+null,
+null,
+null
+],
+"capex": [
+null,
+null,
+null,
+null,
+null
+],
+"da": [
+null,
+null,
+null,
+null,
+null
+],
+"div": [
+1522,
+1659,
+1741,
+1847,
+2057
+],
+"bb": [
+144,
+500,
+1670,
+1555,
+1501
+],
+"cash": [
+null,
+null,
+null,
+null,
+null
+],
+"debt": [
+null,
+null,
+null,
+null,
+null
+],
+"umsatz": [
+null,
+null,
+null,
+null,
+null
+],
+"brutto": [
+null,
+null,
+null,
+null,
+null
+],
+"ebit": [
+null,
+null,
+null,
+null,
+null
+],
+"zins": [
+null,
+null,
+null,
+null,
+null
+],
+"steuer": [
+846,
+-19,
+-84,
+1121,
+1033
+],
+"hinweis": "NOK Mio., stockanalysis.com. Versicherer/Bank: Cashflow (stark von Versicherungs- und Bankgeschaeft/Kundengeldern bestimmt, 2021 -3.489 bis 2025 +4.714), Kasse, Schulden (Bankfinanzierung/Nachranganleihen), Umsatz, Bruttogewinn, EBIT und Zinsen nicht sinnvoll vergleichbar, daher null. Steuer: 2022 -19 und 2023 -84 (Steuerertrag) mit Vorzeichen wie in der Quelle."
+},
+"TOM.OL": {
+"jahre": [
+2021,
+2022,
+2023,
+2024,
+2025
+],
+"ocf": [
+177.54,
+109.22,
+136.8,
+235.5,
+170.9
+],
+"capex": [
+59.11,
+78.96,
+92.9,
+118.3,
+131.5
+],
+"da": [
+69.65,
+73.55,
+75.6,
+82.5,
+94.9
+],
+"div": [
+44.2,
+84.19,
+45.4,
+49.8,
+54.8
+],
+"bb": [
+0,
+12.15,
+0,
+0,
+7.6
+],
+"cash": [
+63.04,
+71.19,
+103.9,
+123,
+87.4
+],
+"debt": [
+201.5,
+337.68,
+437,
+543.6,
+694.2
+],
+"umsatz": [
+1089,
+1158,
+1288,
+1348,
+1318
+],
+"brutto": [
+655.22,
+677.35,
+765.4,
+804.2,
+833.4
+],
+"ebit": [
+155.28,
+137.73,
+107.9,
+157.1,
+148
+],
+"zins": [
+5.32,
+6.96,
+15.6,
+22.2,
+28.5
+],
+"steuer": [
+39.02,
+31.69,
+20.6,
+31.7,
+31.5
+],
+"hinweis": "EUR Mio., stockanalysis.com. da = Abschreibungen laut Cashflow (ohne Sonstige Amortisation 13-20 Mio.; EBITDA-Zeile der Quelle weist nur 43-54 aus, andere Abgrenzung). debt inkl. Leasing. Akquisitionen (2024: 55,1; 2025: 44,3) nicht in capex. div 2022 (84,2) auffaellig hoch, nicht aufgeklaert."
+},
+"FRO.OL": {
+"jahre": [
+2021,
+2022,
+2023,
+2024,
+2025
+],
+"ocf": [
+85.26,
+385.33,
+856.18,
+736.41,
+682.46
+],
+"capex": [
+473.76,
+335.82,
+1631,
+915.25,
+12.53
+],
+"da": [
+144.17,
+146.04,
+212.96,
+316.28,
+305.3
+],
+"div": [
+0,
+33.39,
+638.93,
+434.12,
+207.04
+],
+"bb": [
+null,
+null,
+null,
+null,
+null
+],
+"cash": [
+115.51,
+490.81,
+315.75,
+419.56,
+253.71
+],
+"debt": [
+2384,
+2394,
+3459,
+3746,
+3068
+],
+"umsatz": [
+749.38,
+1430,
+1802,
+2050,
+1965
+],
+"brutto": [
+192.44,
+649.5,
+1007,
+1045,
+972.51
+],
+"ebit": [
+4.93,
+437.46,
+724.31,
+669.63,
+592.82
+],
+"zins": [
+44,
+45.09,
+170.46,
+293.12,
+231.83
+],
+"steuer": [
+4.63,
+0.41,
+0.21,
+7.67,
+6.02
+],
+"hinweis": "USD Mio., stockanalysis.com. capex = Zugaenge Schiffe/Sachanlagen (Cashflow-Zeile Capital Expenditures); 2025 mit 12,5 Mio. auffaellig niedrig (Schiffsverkaeufe 37 Mio. getrennt), 2023 Flottenzukauf 1.631. Aktienrueckkaeufe in der Quelle nicht ausgewiesen (null). Steuer minimal (Tonnagesteuer). cash inkl. kurzfristige Anlagen. debt inkl. Leasing."
+},
+"ELK.OL": {
+"jahre": [
+2021,
+2022,
+2023,
+2024,
+2025
+],
+"ocf": [
+4913,
+9314,
+2769,
+2030,
+1176
+],
+"capex": [
+3266,
+4213,
+4988,
+3398,
+2359
+],
+"da": [
+1713,
+1888,
+2352,
+905,
+2714
+],
+"div": [
+96,
+1900,
+3815,
+0,
+190
+],
+"bb": [
+278,
+38,
+8,
+0,
+0
+],
+"cash": [
+7040,
+9255,
+6370,
+4401,
+2709
+],
+"debt": [
+12534,
+12383,
+16371,
+12994,
+12040
+],
+"umsatz": [
+33083,
+45017,
+21134,
+17810,
+16535
+],
+"brutto": [
+17098,
+23041,
+10309,
+9497,
+8904
+],
+"ebit": [
+5655,
+11726,
+3236,
+1409,
+1363
+],
+"zins": [
+250,
+289,
+657,
+768,
+539
+],
+"steuer": [
+1163,
+2594,
+781,
+-588,
+149
+],
+"hinweis": "NOK Mio., stockanalysis.com. Vergleichbarkeit gestoert: Silicones ab 2023 als aufgegebener Bereich. Umsatz, Bruttogewinn, EBIT, Zinsen, Steuer 2023-2025 nur fortgefuehrte Bereiche, 2021/2022 inkl. Silicones. Cashflow (ocf, capex, da, div, bb) ist Gesamtkonzern. da 2024 (905) und 2025 (2.714) springen auffaellig (vermutlich Abschreibungen/Wertminderungen im Cashflow je nach Zuordnung der aufgegebenen Bereiche), nicht geklaert. cash und debt: Silicones-Posten in Bilanz 2024/2025 als 'zur Veraeusserung gehalten' ausgelagert (Other Current Assets 23-28 Mrd.), daher nur Restkonzern. Steuer 2024 negativ (Steuerertrag). capex = Cashflow-Zeile Capital Expenditures."
+},
+"AKER.OL": {
+"jahre": [
+2021,
+2022,
+2023,
+2024,
+2025
+],
+"ocf": [
+1796,
+-2780,
+1537,
+9743,
+4491
+],
+"capex": [
+5875,
+4691,
+3183,
+2083,
+3045
+],
+"da": [
+816,
+1386,
+1231,
+1171,
+1517
+],
+"div": [
+1745,
+1077,
+2229,
+3789,
+3929
+],
+"bb": [
+0,
+10,
+0,
+0,
+93
+],
+"cash": [
+14787,
+13208,
+8421,
+12562,
+2877
+],
+"debt": [
+32231,
+35046,
+29987,
+37909,
+42685
+],
+"umsatz": [
+8911,
+26363,
+6712,
+12886,
+18364
+],
+"brutto": [
+5791,
+19232,
+4107,
+9626,
+13783
+],
+"ebit": [
+-625,
+11095,
+-3747,
+631,
+5065
+],
+"zins": [
+846,
+1288,
+1908,
+3378,
+3415
+],
+"steuer": [
+24,
+-1482,
+477,
+181,
+-237
+],
+"hinweis": "NOK Mio., stockanalysis.com. Beteiligungsholding mit konsolidierten Tochtergesellschaften (Aker Horizons, Aker BioMarine u.a., Aker BP at-equity), Posten wegen Verkaeufen, Deconsolidierungen und aufgegebenen Bereichen nur eingeschraenkt vergleichbar. ocf 2022 negativ (-2.780, Vorzeichen wie Quelle). capex = Sachanlagen plus immaterielle Werte (ab 2023 getrennt ausgewiesen). Akquisitionen (2021: 4.852) nicht enthalten. div 2022 (1.077) niedriger als uebliche zwei Raten (29 NOK x 74,29 = 2.154), nicht geklaert. Steuer 2022 und 2025 negativ (Steuerertrag). cash ohne Wertpapieranlagen (2025 Kauf 8,7 Mrd. in Wertpapiere)."
+},
+"BAKKA.OL": {
+"jahre": [
+2021,
+2022,
+2023,
+2024,
+2025
+],
+"ocf": [
+1125,
+1202,
+1023,
+2355,
+1079
+],
+"capex": [
+1116,
+1236,
+1062,
+1026,
+1135
+],
+"da": [
+530.4,
+535.33,
+636.71,
+704.03,
+783.82
+],
+"div": [
+215.87,
+304,
+591.43,
+515.27,
+500.52
+],
+"bb": [
+0,
+0,
+0,
+7.86,
+15.21
+],
+"cash": [
+509.16,
+719.6,
+411.67,
+480.51,
+299.75
+],
+"debt": [
+2968,
+3843,
+4341,
+3779,
+5044
+],
+"umsatz": [
+5554,
+7130,
+7141,
+7334,
+7007
+],
+"brutto": [
+3931,
+5079,
+4478,
+4476,
+4541
+],
+"ebit": [
+1115,
+1771,
+1250,
+959.12,
+843.06
+],
+"zins": [
+40.61,
+61.95,
+181.79,
+199.53,
+161.4
+],
+"steuer": [
+173.63,
+346.01,
+193.14,
+206.84,
+111.68
+],
+"hinweis": "DKK Mio. (nicht EUR/NOK), stockanalysis.com. Bruttogewinn nach Definition der Quelle (Umsatz minus Warenaufwand); 2025: 4.541 (Hauptseite) gegenueber 4.875 auf einer Spiegelseite, ebit 2025 843,06 vs 841,76. Zinsen und Steuer 2025 (161,4 / 111,68) nur von der Spiegelseite. capex = Cashflow-Zeile Capital Expenditures. debt inkl. Leasing. ocf 2024 mit 2.355 durch Working-Capital-Effekte auffaellig hoch."
 }
 }
 }

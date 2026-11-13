@@ -1,0 +1,713 @@
+{
+"quelle": "boerse.de Fundamentalanalyse (je Firma, Seite 'fundamental-analyse')",
+"stand": "2026-11-12",
+"einheit": "Mio € (je Aktie in €; aktien_mio in Mio. Stück)",
+"jahre": [
+2019,
+2020,
+2021,
+2022,
+2023,
+2024,
+2025
+],
+"hinweis": "Jahresüberschuss meist Anteil der Aktionäre, kann je Firma von Pressemitteilungen abweichen. Umsatz bei Banken/Versicherern von boerse.de nicht geführt (null). Nicht geprüft gegen Geschäftsberichte.",
+"firmen": {
+"AKRBP.OL": {
+"name": "Aker BP",
+"isin": "NO0010345853",
+"waehrung": "USD",
+"hinweis": "Quelle stockanalysis.com (boerse.de nicht abrufbar), nur 2021-2025 verfuegbar, 2019/2020 null. Berichtswaehrung USD, Aktie notiert in NOK. Ab 2022 Fusion mit Lundin Energy Norway (Aktienzahl 360 auf 632 Mio.). Jahresueberschuss durch hohe Steuerquote (rund 78-97 Prozent, Sondersteuer Norwegen) und Wertberichtigungen niedrig; 2025: Goodwill-Wertminderung 1.489 Mio. USD. Aktienzahl = Stand Jahresende. Dividendenausschuettung = gezahlte Dividenden laut Cashflow.",
+"umsatz": [
+null,
+null,
+5694,
+12974,
+13670,
+12380,
+10954
+],
+"ebt": [
+null,
+null,
+2896,
+8777,
+8764,
+8049,
+4607
+],
+"jahresueberschuss": [
+null,
+null,
+827.93,
+1603,
+1336,
+1828,
+132.3
+],
+"dividendenausschuettung": [
+null,
+null,
+487.5,
+1006,
+1390,
+1517,
+1593
+],
+"eigenkapital": [
+null,
+null,
+2197,
+12427,
+12362,
+12691,
+11226
+],
+"eps": [
+null,
+null,
+2.3,
+3.23,
+2.12,
+2.9,
+0.21
+],
+"dividende_je_aktie": [
+null,
+null,
+1.36,
+2.0,
+2.2,
+2.4,
+2.52
+],
+"aktien_mio": [
+null,
+null,
+359.79,
+631.79,
+631.29,
+631.97,
+631.74
+],
+"eigenkapitalrendite_pct": [
+null,
+null,
+37.68,
+12.9,
+10.81,
+14.4,
+1.18
+]
+},
+"SALM.OL": {
+"name": "SalMar",
+"isin": "NO0010310956",
+"waehrung": "NOK",
+"hinweis": "Quelle stockanalysis.com (boerse.de nicht abrufbar), nur 2021-2025, 2019/2020 null. Berichtswaehrung NOK. Jahresueberschuss und Eigenkapital = Anteil der Aktionaere (ohne Minderheiten; inkl. Minderheiten waeren Eigenkapital 15.483/24.155/23.079/20.240/20.148). 2022 Uebernahme NTS (Aktienzahl 117,7 auf 131,4 Mio.), 2023 Teilverkauf/Deconsolidierung (Ergebnis aus aufgegebenen Bereichen 657 Mio. 2023). 2023 DPS 35 NOK inkl. Sonderdividende. EPS verwaessert. Aktienzahl Stand Jahresende. Dividendenausschuettung = gezahlte Dividenden laut Cashflow.",
+"umsatz": [
+null,
+null,
+14963,
+19985,
+27891,
+26318,
+27343
+],
+"ebt": [
+null,
+null,
+3387,
+4562,
+7279,
+4201,
+1692
+],
+"jahresueberschuss": [
+null,
+null,
+2617,
+3312,
+3203,
+2969,
+1105
+],
+"dividendenausschuettung": [
+null,
+null,
+2261,
+2354,
+2748,
+4611,
+2941
+],
+"eigenkapital": [
+null,
+null,
+13230,
+19356,
+19901,
+17927,
+17745
+],
+"eps": [
+null,
+null,
+22.57,
+27.6,
+24.33,
+22.49,
+8.24
+],
+"dividende_je_aktie": [
+null,
+null,
+20.0,
+20.0,
+35.0,
+22.0,
+10.0
+],
+"aktien_mio": [
+null,
+null,
+117.7,
+131.43,
+131.76,
+131.92,
+135.33
+],
+"eigenkapitalrendite_pct": [
+null,
+null,
+19.78,
+17.11,
+16.09,
+16.56,
+6.23
+]
+},
+"STB.OL": {
+"name": "Storebrand",
+"isin": "NO0003053605",
+"waehrung": "NOK",
+"hinweis": "Versicherer/Bank: Umsatz null (Gesamterloes inkl. Kapitalanlageergebnis, 2022 negativ, nicht vergleichbar). Quelle stockanalysis.com (boerse.de nicht abrufbar), nur 2021-2025, 2019/2020 null. Jahresueberschuss und Eigenkapital = Anteil der Stammaktionaere (ohne Minderheiten/Hybridkapital-Zinsen). 2021 noch nach altem Rechnungslegungsstandard (IFRS 4), ab 2022 IFRS 17: Eigenkapital 2021 (37.709) mit Folgejahren nur eingeschraenkt vergleichbar. Aktienzahl Stand Jahresende (Rueckkaeufe). Dividendenausschuettung = gezahlte Dividenden laut Cashflow.",
+"umsatz": [
+null,
+null,
+null,
+null,
+null,
+null,
+null
+],
+"ebt": [
+null,
+null,
+3976,
+2357,
+3293,
+6644,
+6056
+],
+"jahresueberschuss": [
+null,
+null,
+3121,
+2362,
+3350,
+5494,
+5018
+],
+"dividendenausschuettung": [
+null,
+null,
+1522,
+1659,
+1741,
+1847,
+2057
+],
+"eigenkapital": [
+null,
+null,
+37709,
+29519,
+29531,
+31712,
+33210
+],
+"eps": [
+null,
+null,
+6.68,
+5.04,
+7.31,
+12.49,
+11.7
+],
+"dividende_je_aktie": [
+null,
+null,
+3.5,
+3.7,
+4.1,
+4.7,
+5.4
+],
+"aktien_mio": [
+null,
+null,
+470.14,
+464.21,
+447.32,
+433.98,
+423.93
+],
+"eigenkapitalrendite_pct": [
+null,
+null,
+8.28,
+8.0,
+11.34,
+17.32,
+15.11
+]
+},
+"TOM.OL": {
+"name": "Tomra",
+"isin": "NO0012470089",
+"waehrung": "EUR",
+"hinweis": "Quelle stockanalysis.com (boerse.de nicht abrufbar), nur 2021-2025, 2019/2020 null. Berichtswaehrung EUR (Quelle fuehrt alle Jahre in EUR, frueher NOK). Dividende wird nach Kenntnis in NOK beschlossen; hier EUR-Betraege der Quelle, nicht gegen die Beschluesse geprueft. Jahresueberschuss und Eigenkapital = Anteil der Aktionaere (ohne Minderheiten; Eigenkapital inkl. Minderheiten 615/624/614/636/620). Dividendenausschuettung = gezahlte Dividenden laut Cashflow; 2022 mit 84,2 Mio. auffaellig hoch gegenueber 2021 (44,2) und 2023 (45,4), nicht aufgeklaert. Aktienzahl Stand Jahresende.",
+"umsatz": [
+null,
+null,
+1089,
+1158,
+1288,
+1348,
+1318
+],
+"ebt": [
+null,
+null,
+152.06,
+133.09,
+84.7,
+131.1,
+129.9
+],
+"jahresueberschuss": [
+null,
+null,
+108.94,
+97.71,
+59.5,
+93.8,
+93
+],
+"dividendenausschuettung": [
+null,
+null,
+44.2,
+84.19,
+45.4,
+49.8,
+54.8
+],
+"eigenkapital": [
+null,
+null,
+598.13,
+605.92,
+590.4,
+603.3,
+583.8
+],
+"eps": [
+null,
+null,
+0.37,
+0.33,
+0.2,
+0.32,
+0.31
+],
+"dividende_je_aktie": [
+null,
+null,
+0.165,
+0.171,
+0.174,
+0.183,
+0.182
+],
+"aktien_mio": [
+null,
+null,
+295.46,
+295.24,
+295.53,
+295.79,
+295.4
+],
+"eigenkapitalrendite_pct": [
+null,
+null,
+18.21,
+16.13,
+10.08,
+15.55,
+15.93
+]
+},
+"FRO.OL": {
+"name": "Frontline",
+"isin": "CY0200352116",
+"waehrung": "USD",
+"hinweis": "Quelle stockanalysis.com (boerse.de nicht abrufbar), nur 2021-2025, 2019/2020 null. Berichtswaehrung USD (Aktie in Oslo in NOK, zusaetzlich NYSE). Dividende je Aktie = Summe der Ex-Dividenden-Zahlungen im jeweiligen Kalenderjahr (nicht nach Geschaeftsjahr zugeordnet): 2021 keine Zahlung, 2022 nur 0,15 USD (Sep), 2023 2,87, 2024 1,95, 2025 0,93; passt zu den gezahlten Dividenden im Cashflow. Aktienzahl Stand Jahresende (2022 Kapitalerhoehung auf 222,6 Mio.). Eigenkapital = Total Common Equity. Gewinn 2021 leicht negativ.",
+"umsatz": [
+null,
+null,
+749.38,
+1430,
+1802,
+2050,
+1965
+],
+"ebt": [
+null,
+null,
+-10.33,
+475.95,
+656.62,
+503.25,
+385.1
+],
+"jahresueberschuss": [
+null,
+null,
+-14.96,
+475.54,
+656.41,
+495.58,
+379.08
+],
+"dividendenausschuettung": [
+null,
+null,
+0,
+33.39,
+638.93,
+434.12,
+207.04
+],
+"eigenkapital": [
+null,
+null,
+1643,
+2260,
+2278,
+2341,
+2511
+],
+"eps": [
+null,
+null,
+-0.08,
+2.22,
+2.95,
+2.23,
+1.7
+],
+"dividende_je_aktie": [
+null,
+null,
+0,
+0.15,
+2.87,
+1.95,
+0.93
+],
+"aktien_mio": [
+null,
+null,
+203.53,
+222.62,
+222.62,
+222.62,
+222.62
+],
+"eigenkapitalrendite_pct": [
+null,
+null,
+-0.91,
+21.04,
+28.82,
+21.17,
+15.1
+]
+},
+"ELK.OL": {
+"name": "Elkem",
+"isin": "NO0010816093",
+"waehrung": "NOK",
+"hinweis": "Quelle stockanalysis.com (boerse.de nicht abrufbar), nur 2021-2025, 2019/2020 null. Berichtswaehrung NOK. ACHTUNG Vergleichbarkeit: Silicones-Geschaeft wird ab 2023 als aufgegebener Bereich ausgewiesen; Umsatz und EBT 2023-2025 nur fortgefuehrte Bereiche (2021/2022 inkl. Silicones, nicht angepasst, daher Umsatzsprung 2022 45.017 auf 2023 21.134). Jahresueberschuss (Anteil der Aktionaere) enthaelt aufgegebene Bereiche (2023 -1.927, 2024 -1.538, 2025 -969). Eigenkapital = Total Common Equity (ohne Minderheiten). EPS verwaessert. Dividende je Aktie dem Geschaeftsjahr zugeordnet (Beschluss/Zahlung im Folgejahr, NOK): FY2021 3,00, FY2022 6,00, FY2023 keine, FY2024 0,30; FY2025 mit 0 angesetzt, da bis Nov. 2026 keine Zahlung gelistet ist (nicht bestaetigt). Dividendenausschuettung = gezahlte Dividenden im Jahr laut Cashflow. Aktienzahl Stand Jahresende.",
+"umsatz": [
+null,
+null,
+33083,
+45017,
+21134,
+17810,
+16535
+],
+"ebt": [
+null,
+null,
+5827,
+12235,
+2878,
+1527,
+534
+],
+"jahresueberschuss": [
+null,
+null,
+4628,
+9561,
+72,
+488,
+-668
+],
+"dividendenausschuettung": [
+null,
+null,
+96,
+1900,
+3815,
+0,
+190
+],
+"eigenkapital": [
+null,
+null,
+19789,
+28640,
+24325,
+25912,
+23921
+],
+"eps": [
+null,
+null,
+7.44,
+15.04,
+0.11,
+0.77,
+-1.06
+],
+"dividende_je_aktie": [
+null,
+null,
+3.0,
+6.0,
+0,
+0.3,
+0
+],
+"aktien_mio": [
+null,
+null,
+633.04,
+634.48,
+633.89,
+634.17,
+634.22
+],
+"eigenkapitalrendite_pct": [
+null,
+null,
+23.39,
+33.38,
+0.3,
+1.88,
+-2.79
+]
+},
+"AKER.OL": {
+"name": "Aker ASA",
+"isin": "NO0010234552",
+"waehrung": "NOK",
+"hinweis": "Beteiligungsholding (Aker BP, Aker Horizons, Cognite u.a.); Konzernzahlen mit Beteiligungen at-equity (Aker BP nicht konsolidiert), stark von Beteiligungsgewinnen/Wertberichtigungen und aufgegebenen Bereichen (2021 +2.661, 2024 +8.248) gepraegt; Umsatz/EBT nur fortgefuehrte Bereiche, Jahre nur eingeschraenkt vergleichbar. Quelle stockanalysis.com (boerse.de nicht abrufbar), nur 2021-2025, 2019/2020 null. Jahresueberschuss und Eigenkapital = Anteil der Aker-Aktionaere (Eigenkapital inkl. Minderheiten: 35.463/53.846/50.792/64.220/51.030). Dividende je Aktie = Summe der im Kalenderjahr ausgeschuetteten Zahlungen (zwei Raten pro Jahr, NOK): 2021 23,5, 2022 29,0, 2023 30,0, 2024 51,0, 2025 53,0 (enthaelt Sonderdividenden; in der Quelle als Einzelrate je Geschaeftsjahr 14,5/15,0/15,5/26,5/29,0 ausgewiesen). Dividendenausschuettung = Dividende x 74,29 Mio. Aktien (2022: Cashflow zeigt nur 1.077, entspricht einer Rate; hier 2.154). Aktienzahl 74,29 Mio. konstant.",
+"umsatz": [
+null,
+null,
+8911,
+26363,
+6712,
+12886,
+18364
+],
+"ebt": [
+null,
+null,
+590,
+9107,
+-754,
+1883,
+2280
+],
+"jahresueberschuss": [
+null,
+null,
+4242,
+14177,
+3235,
+7197,
+3930
+],
+"dividendenausschuettung": [
+null,
+null,
+1746,
+2154,
+2229,
+3789,
+3929
+],
+"eigenkapital": [
+null,
+null,
+28111,
+43694,
+44930,
+52718,
+46798
+],
+"eps": [
+null,
+null,
+57.11,
+190.83,
+43.54,
+96.87,
+52.91
+],
+"dividende_je_aktie": [
+null,
+null,
+23.5,
+29.0,
+30.0,
+51.0,
+53.0
+],
+"aktien_mio": [
+null,
+null,
+74.29,
+74.29,
+74.3,
+74.29,
+74.29
+],
+"eigenkapitalrendite_pct": [
+null,
+null,
+15.09,
+32.45,
+7.2,
+13.65,
+8.4
+]
+},
+"BAKKA.OL": {
+"name": "Bakkafrost",
+"isin": "FO0000000179",
+"waehrung": "DKK",
+"hinweis": "Quelle stockanalysis.com (boerse.de nicht abrufbar), nur 2021-2025, 2019/2020 null. Berichtswaehrung DKK (Aktie in Oslo in NOK; Geschaeftsbericht 2025 nennt Dividende in DKK). Dividende je Aktie dem Geschaeftsjahr zugeordnet (Zahlung im Folgejahr): FY2021 5,14, FY2022 10,00, FY2023 8,70, FY2024 8,44, FY2025 3,45 (laut Quelle bzw. Geschaeftsbericht-Vorschlag, nicht gegen Beschluss geprueft). Dividendenausschuettung = im Jahr gezahlte Dividenden laut Cashflow (also Vorjahresdividende). Eigenkapital = Total Common Equity. Jahresueberschuss 2025 530,17 (stockanalysis.com Hauptseite); eine Spiegelseite der Quelle zeigt 517,35 und EPS 8,73 statt 8,94, EBT 2025 (635,44) stammt von dieser Spiegelseite, daher mit Unsicherheit. Aktienzahl Stand Jahresende.",
+"umsatz": [
+null,
+null,
+5554,
+7130,
+7141,
+7334,
+7007
+],
+"ebt": [
+null,
+null,
+1138,
+1690,
+1148,
+851.63,
+635.44
+],
+"jahresueberschuss": [
+null,
+null,
+964.05,
+1345,
+955.57,
+656.6,
+530.17
+],
+"dividendenausschuettung": [
+null,
+null,
+215.87,
+304,
+591.43,
+515.27,
+500.52
+],
+"eigenkapital": [
+null,
+null,
+9347,
+10392,
+10863,
+11165,
+11042
+],
+"eps": [
+null,
+null,
+16.32,
+22.76,
+16.15,
+11.08,
+8.94
+],
+"dividende_je_aktie": [
+null,
+null,
+5.14,
+10.0,
+8.7,
+8.44,
+3.45
+],
+"aktien_mio": [
+null,
+null,
+59.08,
+59.1,
+59.21,
+59.27,
+59.29
+],
+"eigenkapitalrendite_pct": [
+null,
+null,
+10.31,
+12.94,
+8.8,
+5.88,
+4.8
+]
+}
+}
+}
