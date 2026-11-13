@@ -23,10 +23,12 @@
   function dom(sym) { return BY[String(sym || "").toUpperCase()] || ""; }
   /* Logos kommen ueber den Zwischenserver (CORS), damit weisse Logos erkannt und auf dunklem Grund gezeigt werden koennen. */
   var LP = "https://fmp-proxy.dividenden-rechner.workers.dev/logo/";
+  /* Eigene Logos im Repo (assets/logos/hub/<KUERZEL>.png), relativ zu dieser Datei */
+  var LOCAL = (function () { var s = document.currentScript && document.currentScript.src; return s ? s.replace(/logos\.js.*$/, "") + "logos/hub/" : "../assets/logos/hub/"; })();
   function img(cls, sym, d, name) {
     sym = String(sym || ""); d = d || dom(sym);
     var ph = String(name || sym || "?").charAt(0).toUpperCase(), esc = function (s) { return String(s).replace(/[&<>"']/g, function (c) { return { "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]; }); };
-    var src = sym ? LP + encodeURIComponent(sym) + (d ? "?d=" + encodeURIComponent(d) : "") : (d ? fav(d) : "");
+    var src = sym ? LOCAL + encodeURIComponent(sym.toUpperCase()) + ".png" : (d ? fav(d) : "");
     if (!src) return '<span class="' + esc(cls) + ' lgph">' + esc(ph) + "</span>";
     return '<img class="' + esc(cls) + '" src="' + esc(src) + '" alt="" loading="lazy"' + (sym ? ' crossorigin="anonymous"' : "") + ' data-sym="' + esc(sym) + '" data-dom="' + esc(d || "") + '" data-ph="' + esc(ph) + '"' + (sym ? "" : ' data-st="1"') + ">";
   }
@@ -35,7 +37,8 @@
     var i = e.target; if (!i || i.tagName !== "IMG" || !i.dataset || (i.dataset.sym === undefined && i.dataset.dom === undefined)) return;
     var st = +i.dataset.st || 0, d = i.dataset.dom || dom(i.dataset.sym);
     i.dataset.st = st + 1; i.removeAttribute("crossorigin");
-    if (st === 0 && i.dataset.sym) { i.src = "https://images.financialmodelingprep.com/symbol/" + encodeURIComponent(i.dataset.sym) + ".png"; return; }
+    if (st === 0 && i.dataset.sym) { i.src = LP + encodeURIComponent(i.dataset.sym) + (d ? "?d=" + encodeURIComponent(d) : ""); i.setAttribute("crossorigin", "anonymous"); return; }
+    if (st === 1 && i.dataset.sym) { i.src = "https://images.financialmodelingprep.com/symbol/" + encodeURIComponent(i.dataset.sym) + ".png"; return; }
     if (st <= 1 && d) { i.dataset.st = 2; i.src = fav(d); return; }
     var s = document.createElement("span"); s.className = i.className + " lgph"; s.textContent = i.dataset.ph || "?"; i.replaceWith(s);
   }, true);
