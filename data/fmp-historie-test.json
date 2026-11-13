@@ -1,0 +1,19 @@
+{
+ "stand": "2026-11-13 23:22 UTC",
+ "ergebnis": {
+  "KO stable": {
+   "anzahl": 1255,
+   "von": "2021-11-15",
+   "bis": "2026-11-13"
+  },
+  "KO v3": {
+   "http": 403
+  },
+  "MCD stable": {
+   "http": 402
+  },
+  "MCD v3": {
+   "http": 403
+  }
+ }
+}
