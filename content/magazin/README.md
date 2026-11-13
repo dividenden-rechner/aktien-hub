@@ -17,10 +17,11 @@ Datei anklicken, dann Stift-Symbol: Zeile `draft: true` löschen und speichern, 
 | 29.10.2026 22:42 | Amazon steigert Umsatz im dritten Quartal auf 201,9 Milliarden Dollar | [79738970_2026-10-29/7757_2242-amazon-q3-2026-zahlen.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/79738970_2026-10-29/7757_2242-amazon-q3-2026-zahlen.md) |
 | 29.10.2026 10:12 | Shell erzielt im dritten Quartal 10,8 Milliarden Dollar Gewinn | [79738970_2026-10-29/8987_1012-shell-q3-2026-ergebnisse.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/79738970_2026-10-29/8987_1012-shell-q3-2026-ergebnisse.md) |
 
-### Online (383)
+### Online (384)
 
 | Datum | Titel | Datei |
 |---|---|---|
+| 13.11.2026 18:35 | Nvidia: Verwaltungsrat hat Arm-Chef René Haas als Huang-Nachfolger angesprochen | [79738886_2026-11-13/8164_1835-nvidia-haas-huang-nachfolge-kurz.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/79738886_2026-11-13/8164_1835-nvidia-haas-huang-nachfolge-kurz.md) |
 | 13.11.2026 17:55 | Mitsubishi UFJ Financial Group startet Aktienrückkauf im Wert von 200 Milliarden Yen | [79738886_2026-11-13/8244_1755-mufg-aktienrueckkauf-november-2026.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/79738886_2026-11-13/8244_1755-mufg-aktienrueckkauf-november-2026.md) |
 | 13.11.2026 17:55 | Mitsubishi UFJ Financial Group erhöht Zwischendividende auf 48 Yen | [79738886_2026-11-13/8244_1755-mubishi-ufj-financial-group-halbjahr-2026-dividende.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/79738886_2026-11-13/8244_1755-mubishi-ufj-financial-group-halbjahr-2026-dividende.md) |
 | 13.11.2026 17:54 | Mitsubishi UFJ Financial Group hebt Gewinnziel an und erhöht Jahresdividende auf 100 Yen | [79738886_2026-11-13/8245_1754-mufg-erhoeht-gewinnziel-und-dividende-2027.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/79738886_2026-11-13/8245_1754-mufg-erhoeht-gewinnziel-und-dividende-2027.md) |
