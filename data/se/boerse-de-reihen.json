@@ -708,6 +708,702 @@ null,
 -6.69,
 -9.33
 ]
+},
+"ERIC-B.ST": {
+"name": "Ericsson",
+"isin": "SE0000108656",
+"waehrung": "SEK",
+"hinweis": "Quelle boerse.de (ergaenzt/geprueft mit stockanalysis.com). Berichtswaehrung SEK. Dividendenausschuettung von boerse.de nicht geliefert (null). EPS verwaessert. Aktienzahl laut boerse.de (ausgegebene Aktien A+B, ca. 3.333 Mio. im Umlauf). 2019 Jahresueberschuss durch Restrukturierung/Wertberichtigungen niedrig, 2023 Verlust durch Goodwill-Abschreibung (Vonage), 2025 Gewinn mit Sondergewinn aus Verkaeufen.",
+"umsatz": [
+227216,
+232390,
+232314,
+271546,
+263351,
+247880,
+236681
+],
+"ebt": [
+8762,
+27212,
+29250,
+24609,
+-23319,
+2589,
+38302
+],
+"jahresueberschuss": [
+2223,
+17483,
+22694,
+18724,
+-26446,
+20,
+28428
+],
+"dividendenausschuettung": [
+null,
+null,
+null,
+null,
+null,
+null,
+null
+],
+"eigenkapital": [
+82559,
+86674,
+108775,
+134814,
+98673,
+94284,
+109535
+],
+"eps": [
+0.67,
+5.24,
+6.81,
+5.62,
+-7.94,
+0.01,
+8.51
+],
+"dividende_je_aktie": [
+1.5,
+2.0,
+2.5,
+2.7,
+2.7,
+2.85,
+3.0
+],
+"aktien_mio": [
+3334.15,
+3334.15,
+3334.15,
+3334.15,
+3344.15,
+3348.25,
+3371.35
+],
+"eigenkapitalrendite_pct": [
+2.69,
+20.17,
+20.86,
+13.89,
+-26.8,
+0.02,
+25.95
+]
+},
+"SKF-B.ST": {
+"name": "SKF",
+"isin": "SE0000108227",
+"waehrung": "SEK",
+"hinweis": "Quelle boerse.de, geprueft mit stockanalysis.com. SEK. Jahresueberschuss = Anteil der Aktionaere (Minderheitsanteile 2025: 322). Dividendenausschuettung = Dividende je Aktie x 455,35 Mio. Aktien; Wert 2021 von boerse.de (2.974) auf 3.187 korrigiert (7,00 x 455,35).",
+"umsatz": [
+86013,
+74852,
+81732,
+96933,
+103881,
+98722,
+91583
+],
+"ebt": [
+8469,
+6300,
+10063,
+7293,
+9181,
+9089,
+6425
+],
+"jahresueberschuss": [
+5557,
+4298,
+7331,
+4469,
+6395,
+6474,
+3927
+],
+"dividendenausschuettung": [
+2846,
+2960,
+3187,
+3187,
+3415,
+3529,
+3529
+],
+"eigenkapital": [
+35512,
+34309,
+43645,
+51927,
+52743,
+59649,
+53558
+],
+"eps": [
+12.2,
+9.44,
+16.1,
+9.81,
+14.04,
+14.22,
+8.62
+],
+"dividende_je_aktie": [
+6.25,
+6.5,
+7.0,
+7.0,
+7.5,
+7.75,
+7.75
+],
+"aktien_mio": [
+455.35,
+455.35,
+455.35,
+455.35,
+455.35,
+455.35,
+455.35
+],
+"eigenkapitalrendite_pct": [
+15.65,
+12.53,
+16.8,
+8.61,
+12.12,
+10.85,
+7.33
+]
+},
+"SCA-B.ST": {
+"name": "SCA",
+"isin": "SE0000112724",
+"waehrung": "SEK",
+"hinweis": "Quelle boerse.de, geprueft mit stockanalysis.com. SEK. Umsatz = Nettoumsatz (ohne sonstige Erloese). 2019 ungewoehnlich hoch (EBT 19,5 Mrd. bei Umsatz 19,6 Mrd.), vermutlich Wertaenderung biologischer Vermoegenswerte (Wald); nicht geprueft. Jahresueberschuss 2021 auf Anteil der Aktionaere 5.941 gesetzt (boerse.de: 6.101 inkl. Minderheiten), EPS 2021 8,46 laut Bericht (boerse.de 8,69). Dividende 2021 von boerse.de mit 3,25 angegeben, hier 2,25 SEK (laut stockanalysis; passt zur gezahlten Summe 1.580), Ausschuettung entsprechend 1.580. Dividende 2019 und Ausschuettung 2019 nicht verfuegbar (null). Aktienzahl 702,34 Mio. konstant.",
+"umsatz": [
+19591,
+18410,
+18822,
+20794,
+18081,
+20232,
+20427
+],
+"ebt": [
+19539,
+1028,
+7527,
+8603,
+4443,
+4521,
+3999
+],
+"jahresueberschuss": [
+15522,
+767,
+5941,
+6748,
+3675,
+3639,
+3205
+],
+"dividendenausschuettung": [
+null,
+1405,
+1580,
+1756,
+1931,
+2107,
+2107
+],
+"eigenkapital": [
+68510,
+72163,
+83055,
+96358,
+104284,
+104035,
+101521
+],
+"eps": [
+22.1,
+1.09,
+8.46,
+9.61,
+5.24,
+5.18,
+4.57
+],
+"dividende_je_aktie": [
+null,
+2.0,
+2.25,
+2.5,
+2.75,
+3.0,
+3.0
+],
+"aktien_mio": [
+702.34,
+702.34,
+702.34,
+702.34,
+702.34,
+702.34,
+702.34
+],
+"eigenkapitalrendite_pct": [
+22.66,
+1.06,
+7.15,
+7.0,
+3.52,
+3.5,
+3.16
+]
+},
+"SKA-B.ST": {
+"name": "Skanska",
+"isin": "SE0000113250",
+"waehrung": "SEK",
+"hinweis": "Quelle boerse.de, geprueft mit stockanalysis.com. SEK. EPS verwaessert. Dividende je Aktie laut boerse.de, offenbar inkl. Sonderdividenden (2021 10,00; 2025 14,00; ordentliche Dividende laut stockanalysis 2021 7,00, 2022 7,50, 2023 5,50, 2024 8,00, 2025 8,50). Wert 2019 (3,25) wirkt unplausibel und ist nicht geprueft. Dividendenausschuettung nur 2024/2025 von boerse.de geliefert (gezahlte Dividenden siehe Zusatzdaten). Eigenkapital 2021 boerse.de 45.682 (stockanalysis 45.351). Eigenkapitalrendite 2023 und 2024 von boerse.de identisch (8,89 %), 2024 laut Rechnung 10,2 % (5.552/62.466) hier korrigiert.",
+"umsatz": [
+172846,
+160344,
+143865,
+163174,
+167168,
+176481,
+176658
+],
+"ebt": [
+7340,
+12404,
+8125,
+10312,
+5890,
+7415,
+7268
+],
+"jahresueberschuss": [
+6031,
+9875,
+6864,
+8256,
+4998,
+5552,
+5702
+],
+"dividendenausschuettung": [
+null,
+null,
+null,
+null,
+null,
+3292,
+5795
+],
+"eigenkapital": [
+32924,
+38620,
+45682,
+55111,
+56202,
+62466,
+61759
+],
+"eps": [
+14.62,
+23.84,
+16.52,
+19.9,
+12.07,
+13.4,
+13.76
+],
+"dividende_je_aktie": [
+3.25,
+9.5,
+10.0,
+7.5,
+5.5,
+8.0,
+14.0
+],
+"aktien_mio": [
+419.9,
+419.9,
+419.9,
+419.9,
+419.9,
+419.9,
+419.9
+],
+"eigenkapitalrendite_pct": [
+18.32,
+25.57,
+15.03,
+14.98,
+8.89,
+8.89,
+9.23
+]
+},
+"TEL2-B.ST": {
+"name": "Tele2",
+"isin": "SE0005190238",
+"waehrung": "SEK",
+"hinweis": "Quelle boerse.de, geprueft mit stockanalysis.com. SEK. Jahresueberschuss 2022 = 5.574 inkl. aufgegebener Geschaeftsbereiche (boerse.de: 5.213 nur fortgefuehrt, passt nicht zum EPS 8,03); EPS verwaessert. EBT 2021 laut boerse.de 4.653 (stockanalysis fortgefuehrte Geschaeftsbereiche 4.307). 2020 Jahresueberschuss durch Sondereffekte (Beteiligungsverkaeufe) ueber EBT. Dividende je Aktie laut boerse.de, 2025 10,50 SEK enthaelt Sonderausschuettung (2024 6,35). Dividendenausschuettung = beschlossene Summe laut boerse.de. Eigenkapitalrendite 2022 neu berechnet. Aktienzahl laut boerse.de (Einheit Mio., nicht bestaetigt).",
+"umsatz": [
+27659,
+26554,
+26789,
+28102,
+29099,
+29583,
+29890
+],
+"ebt": [
+6122,
+7030,
+4653,
+5907,
+4578,
+4785,
+5678
+],
+"jahresueberschuss": [
+5004,
+7408,
+4306,
+5574,
+3732,
+3870,
+4587
+],
+"dividendenausschuettung": [
+3799,
+4100,
+4700,
+4700,
+4800,
+4400,
+7300
+],
+"eigenkapital": [
+34805,
+32751,
+31142,
+23683,
+22780,
+22097,
+22267
+],
+"eps": [
+7.24,
+10.71,
+6.21,
+8.03,
+5.37,
+5.56,
+6.58
+],
+"dividende_je_aktie": [
+5.5,
+6.0,
+6.75,
+6.8,
+6.9,
+6.35,
+10.5
+],
+"aktien_mio": [
+690.34,
+690.34,
+692.82,
+695.02,
+696.22,
+696.22,
+696.22
+],
+"eigenkapitalrendite_pct": [
+14.38,
+22.62,
+13.83,
+23.53,
+16.38,
+17.51,
+20.6
+]
+},
+"BOL.ST": {
+"name": "Boliden",
+"isin": "SE0020050417",
+"waehrung": "SEK",
+"hinweis": "Quelle: stockanalysis.com und Boliden-Berichte (boerse.de-Seite nicht abrufbar). 2019/2020: Umsatz, Jahresueberschuss (Konzernergebnis), EPS, DPS aus Boliden-Bilanzpressekonferenz; EBT 2020 = EBIT 8.935 + Finanzergebnis -267; EBT 2019 und Eigenkapital 2019 nicht ermittelbar (null); Eigenkapital 2020 = Gesamtkapital inkl. Minderheiten. DPS = ordentliche Dividende; zusaetzlich Ausschuettung per Aktienrueckzahlung: 2020 6,00, 2021 15,50, 2022 11,50 SEK. Dividendenausschuettung = ordentlich plus Rueckzahlung je Geschaeftsjahr (2019 und 2020 aus Boliden-Bericht; 2022 = 7.248 im Folgejahr gezahlt). 2024: Dividende von HV 2025 gestrichen (0). 2025: 11,00 SEK vorgeschlagen, Ausschuettung noch nicht gezahlt (null). 2025 Kapitalerhoehung (Zinkgruvan/Somincor-Akquisition). Aktienzahl 2019/2020 aus Dividendensumme abgeleitet (ca. 273,5 Mio.).",
+"umsatz": [
+49936,
+56321,
+68636,
+86437,
+78554,
+89207,
+93509
+],
+"ebt": [
+null,
+8668,
+10840,
+15602,
+7600,
+12555,
+11901
+],
+"jahresueberschuss": [
+5788,
+6801,
+8701,
+12410,
+6073,
+10022,
+9404
+],
+"dividendenausschuettung": [
+1915,
+3898,
+7111,
+7248,
+2051,
+0,
+null
+],
+"eigenkapital": [
+null,
+45638,
+50866,
+58311,
+56404,
+64992,
+76512
+],
+"eps": [
+21.15,
+24.86,
+31.81,
+45.37,
+22.2,
+36.65,
+33.39
+],
+"dividende_je_aktie": [
+7.0,
+8.25,
+10.5,
+15.0,
+7.5,
+0.0,
+11.0
+],
+"aktien_mio": [
+273.5,
+273.5,
+273.51,
+273.51,
+273.47,
+273.47,
+283.96
+],
+"eigenkapitalrendite_pct": [
+null,
+14.9,
+17.11,
+21.28,
+10.77,
+15.42,
+12.29
+]
+},
+"HEXA-B.ST": {
+"name": "Hexagon",
+"isin": "SE0015961909",
+"waehrung": "EUR",
+"hinweis": "Quelle boerse.de, geprueft mit stockanalysis.com. Berichtswaehrung EUR (Kurs in SEK notiert). 7:1-Aktiensplit 2021: EPS, Dividende und Aktienzahl 2020 auf Split-Basis umgerechnet (boerse.de zeigt 2020 vor Split: EPS 1,60, DPS 0,65, 386,47 Mio. Aktien); 2020 EPS = Jahresueberschuss/Aktien. 2019 von boerse.de nicht geliefert (Dividende 2019 = 0,62 EUR Vorsplit / 7, laut Bilanzpressemitteilung vorgeschlagen). 2025 Gewinnrueckgang durch Abschreibungen und Restrukturierung (EPS 0,23 nach 0,38). Aktienzahl 2021-2025 laut boerse.de 2.705,48 Mio. verwaessert (im Umlauf ca. 2.684 Mio.).",
+"umsatz": [
+null,
+3764,
+4341,
+5161,
+5435,
+5401,
+5425
+],
+"ebt": [
+null,
+760,
+984,
+1248,
+1061,
+1262,
+794
+],
+"jahresueberschuss": [
+null,
+618,
+802,
+1008,
+859,
+1023,
+617
+],
+"dividendenausschuettung": [
+null,
+239,
+297,
+323,
+349,
+379,
+379
+],
+"eigenkapital": [
+null,
+5935,
+8732,
+9830,
+10014,
+11161,
+10223
+],
+"eps": [
+null,
+0.23,
+0.31,
+0.37,
+0.32,
+0.38,
+0.23
+],
+"dividende_je_aktie": [
+0.0886,
+0.0929,
+0.11,
+0.12,
+0.13,
+0.14,
+0.14
+],
+"aktien_mio": [
+null,
+2705.48,
+2705.48,
+2705.48,
+2705.48,
+2705.48,
+2705.48
+],
+"eigenkapitalrendite_pct": [
+null,
+10.41,
+9.18,
+10.25,
+8.58,
+9.17,
+6.04
+]
+},
+"ALFA.ST": {
+"name": "Alfa Laval",
+"isin": "SE0000695876",
+"waehrung": "SEK",
+"hinweis": "Quelle boerse.de, geprueft mit stockanalysis.com. SEK. EPS verwaessert (2021 11,35 / 2022 10,88 laut boerse.de; stockanalysis 11,38 / 10,89). EBT 2021/2022 laut boerse.de (stockanalysis 6.109 / 6.143). Dividendenausschuettung = Dividende je Aktie x Aktienzahl. Aktienzahl 2019-2021 419,46 Mio. (Einheit Mio. nicht von der Seite bestaetigt); 2022 Aktienrueckkaeufe, danach 413,3 Mio.",
+"umsatz": [
+46517,
+41468,
+40911,
+52135,
+63598,
+66954,
+69674
+],
+"ebt": [
+7221,
+4977,
+6142,
+6179,
+8650,
+9996,
+11198
+],
+"jahresueberschuss": [
+5486,
+3553,
+4759,
+4503,
+6330,
+7391,
+8272
+],
+"dividendenausschuettung": [
+2307,
+2307,
+2517,
+2483,
+3100,
+3513,
+3720
+],
+"eigenkapital": [
+27600,
+28908,
+32096,
+35382,
+37033,
+41912,
+43409
+],
+"eps": [
+13.08,
+8.47,
+11.35,
+10.88,
+15.31,
+17.88,
+20.01
+],
+"dividende_je_aktie": [
+5.5,
+5.5,
+6.0,
+6.0,
+7.5,
+8.5,
+9.0
+],
+"aktien_mio": [
+419.46,
+419.46,
+419.46,
+413.88,
+413.29,
+413.33,
+413.33
+],
+"eigenkapitalrendite_pct": [
+19.88,
+12.29,
+14.83,
+12.73,
+17.09,
+17.63,
+19.06
+]
 }
 }
 }

@@ -21346,6 +21346,758 @@ null
 2823
 ],
 "hinweis": "DKK Mio., Quelle stockanalysis.com. div = an Aktionaere gezahlte Dividende (Vorjahres-DPS x Aktien, abgeleitet); stockanalysis zeigt hoehere Posten (5.260/5.781/6.219/687/713), die Minderheitsdividenden bzw. Hybridkupons enthalten; 2024/2025 keine Dividende. bb laut stockanalysis 'Repurchase of Common Stock' (Orsted hat kein klassisches Aktienrueckkaufprogramm, vermutlich eigene Aktien bzw. Hybridrueckkauf, nur bedingt vergleichbar). Brutto: Orsted weist keinen Bruttogewinn aus, null. ebit = operatives Ergebnis laut stockanalysis (vor Wertminderungen und Verkaufsgewinnen; ausgewiesenes EBIT weicht ab). capex = Brutto-Investitionen (Offshore-Wind, 2025 inkl. Kapitalerhoehung finanziert), Verkaufserloese aus Farm-downs (2025: 12.278) nicht abgezogen. cash inkl. kurzfristige Wertpapiere. debt inkl. Leasing. Kapitalerhoehung 2025: Ausgabe von Aktien ca. 60 Mrd. DKK."
+},
+"ERIC-B.ST": {
+"jahre": [
+2021,
+2022,
+2023,
+2024,
+2025
+],
+"ocf": [
+39065,
+30863,
+7177,
+46261,
+32954
+],
+"capex": [
+4625,
+6197,
+5470,
+3640,
+3768
+],
+"da": [
+8458,
+10142,
+11157,
+10020,
+8909
+],
+"div": [
+6658,
+8325,
+8991,
+8997,
+9499
+],
+"bb": [
+null,
+null,
+null,
+null,
+null
+],
+"cash": [
+66982,
+47085,
+44774,
+56431,
+56642
+],
+"debt": [
+41225,
+42242,
+54328,
+45541,
+40264
+],
+"umsatz": [
+232314,
+271546,
+263351,
+247880,
+236681
+],
+"brutto": [
+101022,
+113490,
+104404,
+111411,
+113945
+],
+"ebit": [
+31479,
+29551,
+17755,
+22237,
+32366
+],
+"zins": [
+951,
+1436,
+2746,
+2907,
+2038
+],
+"steuer": [
+6270,
+5497,
+2785,
+2215,
+9588
+],
+"hinweis": "SEK Mio., stockanalysis.com (S&P). capex = Sachanlagen + immaterielle Werte; da = Abschreibungen + sonstige Amortisation; cash = liquide Mittel + kurzfristige Anlagen (ohne langfristige verzinsliche Wertpapiere, 2025 ca. 40,7 Mrd. unter Langfristanlagen); debt = Gesamtschulden inkl. Leasing; ebit ohne Sondereffekte (S&P): 2023 ohne Goodwill-Abschreibung 31,9 Mrd., 2024 ohne Abschreibungen 15,1 Mrd.; zins = Zinsaufwand; Aktienrueckkaeufe keine ausgewiesen (null)."
+},
+"SKF-B.ST": {
+"jahre": [
+2021,
+2022,
+2023,
+2024,
+2025
+],
+"ocf": [
+5248,
+5641,
+13783,
+10792,
+8392
+],
+"capex": [
+3887,
+5207,
+5759,
+5004,
+3622
+],
+"da": [
+3272,
+3655,
+4147,
+4086,
+4075
+],
+"div": [
+2960,
+3187,
+3187,
+3415,
+3529
+],
+"bb": [
+null,
+null,
+null,
+null,
+null
+],
+"cash": [
+13657,
+10635,
+13650,
+11093,
+9146
+],
+"debt": [
+19336,
+22135,
+21954,
+20760,
+15340
+],
+"umsatz": [
+81732,
+96933,
+103881,
+98722,
+91583
+],
+"brutto": [
+23308,
+24595,
+26486,
+27569,
+25074
+],
+"ebit": [
+10205,
+9326,
+11045,
+10626,
+7137
+],
+"zins": [
+308,
+406,
+943,
+816,
+611
+],
+"steuer": [
+2484,
+2438,
+2404,
+2202,
+2176
+],
+"hinweis": "SEK Mio., stockanalysis.com (S&P). capex = Sachanlagen + immaterielle Werte; da = Abschreibungen + sonstige Amortisation; div = im Jahr gezahlte Dividende an Aktionaere (ohne Minderheiten); cash = liquide Mittel + kurzfristige Anlagen; debt = Gesamtschulden inkl. Leasing (ohne Pensionen); zins = Zinsaufwand; Rueckkaeufe keine (null). 2022 operativer Cashflow durch Lageraufbau niedrig; 2025 Gewinn mit Veraeusserungsgewinn 1,0 Mrd."
+},
+"SCA-B.ST": {
+"jahre": [
+2021,
+2022,
+2023,
+2024,
+2025
+],
+"ocf": [
+5974,
+6325,
+3894,
+3486,
+4017
+],
+"capex": [
+5111,
+5961,
+3135,
+2171,
+2815
+],
+"da": [
+1496,
+1552,
+1946,
+2116,
+2132
+],
+"div": [
+1405,
+1580,
+1756,
+1931,
+2107
+],
+"bb": [
+null,
+null,
+null,
+null,
+null
+],
+"cash": [
+1056,
+836,
+502,
+1328,
+590
+],
+"debt": [
+10139,
+12540,
+13400,
+14583,
+14637
+],
+"umsatz": [
+18822,
+20794,
+18081,
+20232,
+20427
+],
+"brutto": [
+null,
+null,
+null,
+null,
+null
+],
+"ebit": [
+5789,
+6840,
+2610,
+3333,
+2655
+],
+"zins": [
+105,
+68,
+454,
+550,
+410
+],
+"steuer": [
+1426,
+1782,
+818,
+882,
+794
+],
+"hinweis": "SEK Mio., stockanalysis.com (S&P). umsatz = Nettoumsatz; brutto null, weil S&P Bruttogewinn auf Gesamterloese inkl. sonstiger Erloese (Wald-Wertaenderung) basiert und nicht vergleichbar ist. ebit = operatives Ergebnis laut S&P ohne Wertaenderung biologischer Vermoegenswerte (diese 1,8 bis 2,2 Mrd. p.a. stecken im EBT). capex = Sachanlagen + immaterielle Werte (2021/22 hauptsaechlich Windpark/Holzwerke/Investitionsprogramm). debt = Gesamtschulden inkl. Leasing. Rueckkaeufe keine (null)."
+},
+"SKA-B.ST": {
+"jahre": [
+2021,
+2022,
+2023,
+2024,
+2025
+],
+"ocf": [
+7436,
+510,
+3207,
+9113,
+7360
+],
+"capex": [
+1923,
+2247,
+2594,
+2673,
+3175
+],
+"da": [
+2669,
+2715,
+2747,
+2712,
+2831
+],
+"div": [
+2742,
+4124,
+3081,
+2257,
+3295
+],
+"bb": [
+242,
+507,
+510,
+207,
+89
+],
+"cash": [
+10947,
+10014,
+17912,
+22039,
+19009
+],
+"debt": [
+14998,
+14699,
+17846,
+19162,
+15916
+],
+"umsatz": [
+143865,
+163174,
+167168,
+176481,
+176658
+],
+"brutto": [
+15725,
+16702,
+13433,
+14480,
+14752
+],
+"ebit": [
+7845,
+7657,
+4194,
+5778,
+6297
+],
+"zins": [
+153,
+null,
+41,
+407,
+367
+],
+"steuer": [
+1238,
+2027,
+861,
+1831,
+1496
+],
+"hinweis": "SEK Mio., stockanalysis.com (S&P). Bauunternehmen: Cashflow durch Projektentwicklung (Immobilienverkaeufe, Vorraete, Anzahlungen) stark schwankend (2022 ocf nur 510). capex = Sachanlagen + immaterielle Werte; da inkl. sonstiger Amortisation; cash = liquide Mittel + kurzfristige Anlagen (ohne gebundene Mittel 8,8 Mrd. 2025); debt = Gesamtschulden inkl. Leasing; ebit laut S&P (ohne Beteiligungsergebnis und Sonderposten), von Skanskas berichtetem operativen Ergebnis abweichend; zins 2022 nicht ausgewiesen (null)."
+},
+"TEL2-B.ST": {
+"jahre": [
+2021,
+2022,
+2023,
+2024,
+2025
+],
+"ocf": [
+10297,
+8250,
+10013,
+9778,
+11343
+],
+"capex": [
+3328,
+3581,
+4059,
+3975,
+3714
+],
+"da": [
+5952,
+6189,
+6152,
+5944,
+6189
+],
+"div": [
+4137,
+4658,
+4702,
+4777,
+4403
+],
+"bb": [
+null,
+null,
+null,
+null,
+null
+],
+"cash": [
+880,
+1116,
+1634,
+317,
+249
+],
+"debt": [
+30838,
+32782,
+31777,
+30845,
+29117
+],
+"umsatz": [
+26789,
+28102,
+29099,
+29583,
+29890
+],
+"brutto": [
+10985,
+11286,
+11903,
+12766,
+13037
+],
+"ebit": [
+4882,
+5085,
+5730,
+6214,
+7191
+],
+"zins": [
+458,
+611,
+1061,
+1197,
+985
+],
+"steuer": [
+347,
+694,
+846,
+915,
+1099
+],
+"hinweis": "SEK Mio., stockanalysis.com (S&P). capex = Sachanlagen + immaterielle Werte (inkl. Frequenzlizenzen); da inkl. Leasing-Nutzungsrechte und Lizenzen; debt = Gesamtschulden inkl. Leasing; ebit laut S&P (ohne Restrukturierungs- und Sonderposten); 2022 Beteiligungsergebnis 1,7 Mrd. und Zufluss 8,8 Mrd. aus Anlagen (Beteiligungsverkauf, nicht naeher geprueft); Rueckkaeufe keine (null)."
+},
+"BOL.ST": {
+"jahre": [
+2021,
+2022,
+2023,
+2024,
+2025
+],
+"ocf": [
+13144,
+16398,
+12183,
+17659,
+20686
+],
+"capex": [
+5989,
+10028,
+15531,
+14988,
+15495
+],
+"da": [
+5621,
+6162,
+6246,
+6783,
+8780
+],
+"div": [
+3897,
+7111,
+7248,
+2051,
+0
+],
+"bb": [
+null,
+0,
+11,
+0,
+91
+],
+"cash": [
+8251,
+12159,
+4978,
+7052,
+9237
+],
+"debt": [
+6162,
+11192,
+14582,
+16507,
+23795
+],
+"umsatz": [
+68636,
+86437,
+78554,
+89207,
+93509
+],
+"brutto": [
+12930,
+18147,
+10737,
+12902,
+15787
+],
+"ebit": [
+11082,
+15895,
+8287,
+13692,
+13192
+],
+"zins": [
+118,
+251,
+693,
+954,
+1092
+],
+"steuer": [
+2135,
+3191,
+1526,
+2529,
+2492
+],
+"hinweis": "SEK Mio. ebit = berichtetes operatives Ergebnis (Boliden, inkl. Neubewertung Prozesslager; stockanalysis weist 2024 nur 9.806 aus). capex = Sachanlagen + immaterielle Werte (2021 Gesamtinvestitionen). da inkl. Abschreibungen/Wertminderungen. div 2021-2023 inkl. Aktienrueckzahlung (Dividende 2021: 2.256 + Rueckzahlung 1.641), 2024 keine Dividende beschlossen, 2025 keine Zahlung. bb 2021 nicht ermittelt (null). debt = verzinsliche Verbindlichkeiten inkl. Leasing. brutto = Bruttogewinn laut S&P. zins = Zinsaufwand laut stockanalysis. 2025: Akquisitionen Somincor/Zinkgruvan 14,4 Mrd. und Kapitalerhoehung 3,7 Mrd."
+},
+"HEXA-B.ST": {
+"jahre": [
+2021,
+2022,
+2023,
+2024,
+2025
+],
+"ocf": [
+1324,
+1331,
+1370,
+1588,
+1467
+],
+"capex": [
+463.2,
+575.4,
+626.6,
+632.3,
+615.2
+],
+"da": [
+405.6,
+456.9,
+508.5,
+539.2,
+584.6
+],
+"div": [
+238.4,
+295.8,
+322.8,
+349,
+375.8
+],
+"bb": [
+62.2,
+71,
+47.1,
+null,
+null
+],
+"cash": [
+472.1,
+486.3,
+547.1,
+663.8,
+758.2
+],
+"debt": [
+2938,
+3874,
+4083,
+3831,
+4114
+],
+"umsatz": [
+4341,
+5161,
+5435,
+5401,
+5425
+],
+"brutto": [
+2800,
+3361,
+3543,
+3610,
+3597
+],
+"ebit": [
+1295,
+1333,
+1250,
+1422,
+1020
+],
+"zins": [
+19.1,
+34.9,
+152.8,
+170,
+135.6
+],
+"steuer": [
+173.6,
+228.9,
+188.9,
+227.1,
+166.7
+],
+"hinweis": "EUR Mio., stockanalysis.com (S&P). capex = Sachanlagen + immaterielle Werte (Immaterielle ca. 80 % davon, vor allem aktivierte Entwicklungskosten); da inkl. Amortisation Immaterieller (u. a. erworbene Kundenbeziehungen); debt = Gesamtschulden inkl. Leasing; cash = liquide Mittel + kurzfristige Anlagen; ebit laut S&P (2025 durch Abschreibungen/Restrukturierung belastet); Aktienrueckkaeufe 2024/2025 keine (null); Akquisitionen 2021 748 / 2022 1.195 / 2023 376 / 2025 549 Mio. nicht in capex."
+},
+"ALFA.ST": {
+"jahre": [
+2021,
+2022,
+2023,
+2024,
+2025
+],
+"ocf": [
+5264,
+3291,
+9169,
+12778,
+9166
+],
+"capex": [
+1229,
+1853,
+2440,
+3336,
+2660
+],
+"da": [
+1987,
+2392,
+2524,
+2418,
+2503
+],
+"div": [
+2307,
+2480,
+2480,
+3100,
+3513
+],
+"bb": [
+1339,
+661,
+null,
+null,
+null
+],
+"cash": [
+3641,
+4656,
+5857,
+7813,
+7825
+],
+"debt": [
+10802,
+18156,
+16208,
+13312,
+21011
+],
+"umsatz": [
+40911,
+52135,
+63598,
+66954,
+69674
+],
+"brutto": [
+14510,
+17646,
+20884,
+23207,
+25198
+],
+"ebit": [
+6209,
+7202,
+9269,
+10481,
+11820
+],
+"zins": [
+217,
+319,
+506,
+493,
+571
+],
+"steuer": [
+1308,
+1574,
+2269,
+2564,
+2875
+],
+"hinweis": "SEK Mio., stockanalysis.com (S&P). capex = Sachanlagen (immaterielle Investitionen nicht gesondert ausgewiesen, daher ggf. leicht untererfasst); da inkl. sonstiger Amortisation; Akquisitionen 2021 3,8 / 2022 3,7 / 2025 9,4 Mrd. (nicht in capex), 2025 Schulden dadurch deutlich hoeher; debt = Gesamtschulden inkl. Leasing; bb: 2023-2025 keine Rueckkaeufe (null); ebit laut S&P; cash = liquide Mittel + kurzfristige Anlagen. 2022 ocf durch Vorratsaufbau niedrig."
 }
 }
 }
