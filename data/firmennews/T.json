@@ -3,5 +3,38 @@
  "name": "AT&T INC.",
  "stand": "2026-11-13",
  "quelle": "Google News (Wirtschaftsmedien, deutsch und englisch)",
- "meldungen": []
+ "meldungen": [
+  {
+   "titel": "AT&T Breaks Ground on New Global Headquarters",
+   "quelle": "Unternehmen",
+   "link": "https://about.att.com/story/2026/americas-most-connected-corporate-campus.html",
+   "datum": "2026-11-12",
+   "sprache": "en",
+   "typ": "pm"
+  },
+  {
+   "titel": "AT&T Makes Kids’ First Tech More Affordable for Families This Holiday Season",
+   "quelle": "Unternehmen",
+   "link": "https://about.att.com/story/2026/kids-holiday.html",
+   "datum": "2026-11-12",
+   "sprache": "en",
+   "typ": "pm"
+  },
+  {
+   "titel": "Building the Future of Connected Vehicles with Rivian",
+   "quelle": "Unternehmen",
+   "link": "https://about.att.com/blogs/2026/att-rivian-customer-testimonial.html",
+   "datum": "2026-11-10",
+   "sprache": "en",
+   "typ": "pm"
+  },
+  {
+   "titel": "AT&T Makes Holiday Shopping Easy with Gifts for Everyone and Every Budget",
+   "quelle": "Unternehmen",
+   "link": "https://about.att.com/story/2026/samsung-holiday.html",
+   "datum": "2026-11-06",
+   "sprache": "en",
+   "typ": "pm"
+  }
+ ]
 }

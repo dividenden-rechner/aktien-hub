@@ -3,5 +3,14 @@
  "name": "COCA COLA CO",
  "stand": "2026-11-13",
  "quelle": "Google News (Wirtschaftsmedien, deutsch und englisch)",
- "meldungen": []
+ "meldungen": [
+  {
+   "titel": "The Coca-Cola Company Announces Participation in Morgan Stanley Global Consumer & Retail Conference",
+   "quelle": "Unternehmen",
+   "link": "https://investors.coca-colacompany.com/news-events/press-releases/detail/1177/the-coca-cola-company-announces-participation-in-morgan-stanley-global-consumer-retail-conference",
+   "datum": "2026-11-11",
+   "sprache": "en",
+   "typ": "pm"
+  }
+ ]
 }

@@ -5,6 +5,27 @@
  "quelle": "Google News (Wirtschaftsmedien, deutsch und englisch)",
  "meldungen": [
   {
+   "titel": "Microsoft Races to Fix Outlook in One of Its Longest Outages",
+   "quelle": "Bloomberg.com",
+   "link": "https://news.google.com/rss/articles/CBMirAFBVV95cUxQbXc2TFhrUDB2c25fNklOQ3BNd2UtVVgxNXA3SE9TQTJTT3Rrd0FCWjBhclhDR2tGYWktTGJmTkUzQ09kbWEtaFR1Rm1ydHg4dmJWb1J3QmV1bmtjR1FmZ2Q4eXAwRjkwNTV1aGNlX3d6RjQyeTZhMmZRYndjZjJpSmhvRjZjV1o2NmlxNm80OVJISEtIUllIMzMzakpyZFVOcDA5d1ZSZlpFUnVH?oc=5",
+   "datum": "2026-11-13",
+   "sprache": "en"
+  },
+  {
+   "titel": "Microsoft Outage Sends Traders Back to Phones and Fax",
+   "quelle": "Bloomberg.com",
+   "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxOTTRrc2phRjRxQzA1Q2h0QWMwZXNqT3VSd1hTWHVTT0w3alpOODhxM1FvYy1KYlhpUjE5V2N1aERhU2VNbkVLMktXcGgxeFVhempSYkdPWG9JbUdmNFBIYjVtWDBBY3h6eENWNVU0UjRjUWNnS3BpTks4TEQ5MFpVRzY3R2drTm1BeXJXMjQxVUxSUWZSbkZtUTRjSTRSZXkwX1hnMnkzd2hTVU5GZEVJSXV3?oc=5",
+   "datum": "2026-11-13",
+   "sprache": "en"
+  },
+  {
+   "titel": "NHS Forced to Reschedule Procedures After Microsoft Outage",
+   "quelle": "Bloomberg.com",
+   "link": "https://news.google.com/rss/articles/CBMirgFBVV95cUxNcDhSS0h2SjdLZEVkUWZZMWVtWTZMY09nbXdnY3cyQmVJN3g1aElGVG5YamU5Ry1MYk80UWdYck9oVTVWMVl5bzFhMUx3cnhRdS1ybUxZOE9yZXVLWlVJNEJoUm04RWRCS1pmN3o0aC12NWJIQ2tQRG5jcUkteHBGeE14bVNrOHJoeHBFR3ZGT0NWZnVZQ3hXVXpCcUYyczQxY0NzNVVMOVR6MHgwMFE?oc=5",
+   "datum": "2026-11-13",
+   "sprache": "en"
+  },
+  {
    "titel": "What it takes to bring an AI research assistant to thousands of medical experts",
    "quelle": "Unternehmen",
    "link": "https://commandline.microsoft.com/from-custom-infrastructure-to-hosted-agents/",
@@ -21,6 +42,13 @@
    "typ": "pm"
   },
   {
+   "titel": "Microsoft Vows to Pay Its Own Way to Power Data Centers",
+   "quelle": "Bloomberg.com",
+   "link": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxPbGdoX2lkTENMZU93QnRMcXZwM0hnNTMtRHdyV0M1YVpWTDljbFkwOUpiNWxCbm04bnlUa1djMHYtWUZNWnc1dVdrQk9vWjJrQnBvZDBLRE9TTGtuUWw0UlNreE1OUDRhc2djdi1lSWhkUWt2dTVyLTkwUVNucVZrLTZYVHVKdGNWS19DSnVlSWxCdnlES2d6NWt5OERrcGpfaFdWVTJXZFJ2UQ?oc=5",
+   "datum": "2026-11-11",
+   "sprache": "en"
+  },
+  {
    "titel": "The Ohio State University and Microsoft announce five-year strategic partnership to accelerate innovation across clinical care, education and research",
    "quelle": "Unternehmen",
    "link": "https://news.microsoft.com/source/2026/11/10/the-ohio-state-university-and-microsoft-announce-five-year-strategic-partnership-to-accelerate-innovation-across-clinical-care-education-and-research/",
@@ -33,38 +61,6 @@
    "quelle": "Unternehmen",
    "link": "https://news.microsoft.com/source/2026/11/10/ibm-and-microsoft-announce-a-new-ai-agent-platform-designed-for-industry-specific-transformation/",
    "datum": "2026-11-10",
-   "sprache": "en",
-   "typ": "pm"
-  },
-  {
-   "titel": "Northern Trust and Microsoft Frontier Company collaborate to transform client onboarding through AI",
-   "quelle": "Unternehmen",
-   "link": "https://news.microsoft.com/source/2026/11/09/northern-trust-and-microsoft-frontier-company-collaborate-to-transform-client-onboarding-through-ai/",
-   "datum": "2026-11-09",
-   "sprache": "en",
-   "typ": "pm"
-  },
-  {
-   "titel": "How catching AI agent mistakes can make them more reliable",
-   "quelle": "Unternehmen",
-   "link": "https://commandline.microsoft.com/thinkingbox-part-two-expanded-model-evals-reinforcement-learning-rewards/",
-   "datum": "2026-11-07",
-   "sprache": "en",
-   "typ": "pm"
-  },
-  {
-   "titel": "AI is speeding up how Windows security flaws are found and fixed",
-   "quelle": "Unternehmen",
-   "link": "https://blogs.windows.com/windowsexperience/2026/11/05/a-new-standard-for-vulnerability-management-in-the-ai-era/",
-   "datum": "2026-11-05",
-   "sprache": "en",
-   "typ": "pm"
-  },
-  {
-   "titel": "A faster, simpler XBOX experience is coming to more screens",
-   "quelle": "Unternehmen",
-   "link": "https://news.xbox.com/en-us/2026/11/05/a-faster-simpler-xbox-experience-is-coming-to-pc-web-and-cloud/",
-   "datum": "2026-11-05",
    "sprache": "en",
    "typ": "pm"
   }

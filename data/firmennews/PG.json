@@ -3,5 +3,14 @@
  "name": "PROCTER & GAMBLE Co",
  "stand": "2026-11-13",
  "quelle": "Google News (Wirtschaftsmedien, deutsch und englisch)",
- "meldungen": []
+ "meldungen": [
+  {
+   "titel": "Sonstige Ereignisse",
+   "quelle": "SEC-Meldung",
+   "link": "https://www.sec.gov/Archives/edgar/data/80424/000162828026069608/pg-20261103.htm",
+   "datum": "2026-11-03",
+   "sprache": "en",
+   "typ": "pm"
+  }
+ ]
 }

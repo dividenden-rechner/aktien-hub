@@ -5,6 +5,14 @@
  "quelle": "Google News (Wirtschaftsmedien, deutsch und englisch)",
  "meldungen": [
   {
+   "titel": "Quartalszahlen",
+   "quelle": "SEC-Meldung",
+   "link": "https://www.sec.gov/Archives/edgar/data/858877/000085887726000170/csco-20261112.htm",
+   "datum": "2026-11-12",
+   "sprache": "en",
+   "typ": "pm"
+  },
+  {
    "titel": "Cisco Raises Sales Guidance in Sign of AI-Fueled Momentum",
    "quelle": "Bloomberg.com",
    "link": "https://news.google.com/rss/articles/CBMirAFBVV95cUxQRTI3SjM0X2d3dFJKVGJ1bi1HWjhXSmZEcEw1TkUycUJiOTNwUnByMDJwT0EwbE5kNzBWWWlhVWpfaktPd0VIWW83b0hONWVvaGtSdU40cF9xeW4wb0FvdkZYdFNHUEcwOFRDRlVmajJyTzdCYTdxcE9NNDc2Zk5vXzNPcWEwbjFheE85MFRlWS1nNW1lcE1Md2duYXhIRlZocGpVdVN2eXVNbkhT?oc=5",

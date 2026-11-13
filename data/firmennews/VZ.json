@@ -3,5 +3,38 @@
  "name": "Verizon Communications Inc.",
  "stand": "2026-11-13",
  "quelle": "Google News (Wirtschaftsmedien, deutsch und englisch)",
- "meldungen": []
+ "meldungen": [
+  {
+   "titel": "Plan a holiday email marketing campaign in 20 minutes",
+   "quelle": "Unternehmen",
+   "link": "https://www.verizon.com/about/news/plan-holiday-email-marketing-campaign",
+   "datum": "2026-11-11",
+   "sprache": "en",
+   "typ": "pm"
+  },
+  {
+   "titel": "Verizon Business completes one of Europe’s largest Private 5G implementations",
+   "quelle": "Unternehmen",
+   "link": "https://www.verizon.com/about/news/verizon-thames-freeport-private-5g",
+   "datum": "2026-11-10",
+   "sprache": "en",
+   "typ": "pm"
+  },
+  {
+   "titel": "4 ways to follow AI security best practices at work",
+   "quelle": "Unternehmen",
+   "link": "https://www.verizon.com/about/news/ai-security-workplace-best-practices",
+   "datum": "2026-11-09",
+   "sprache": "en",
+   "typ": "pm"
+  },
+  {
+   "titel": "Social media safety for kids goes beyond age. Explore 5 levels of readiness.",
+   "quelle": "Unternehmen",
+   "link": "https://www.verizon.com/about/parenting/5-signs-child-ready-social-media-apps",
+   "datum": "2026-11-09",
+   "sprache": "en",
+   "typ": "pm"
+  }
+ ]
 }

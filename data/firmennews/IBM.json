@@ -3,5 +3,38 @@
  "name": "INTERNATIONAL BUSINESS MACHINES CORPORATION",
  "stand": "2026-11-13",
  "quelle": "Google News (Wirtschaftsmedien, deutsch und englisch)",
- "meldungen": []
+ "meldungen": [
+  {
+   "titel": "IBM advances agent identity security with new Vault capabilities",
+   "quelle": "Unternehmen",
+   "link": "https://newsroom.ibm.com/blog-ibm-advances-agent-identity-security-with-new-vault-capabilities",
+   "datum": "2026-11-12",
+   "sprache": "en",
+   "typ": "pm"
+  },
+  {
+   "titel": "IBM Announces Winner of Sports Tech Startup Prize Challenge at Web Summit Lisbon 2026",
+   "quelle": "Unternehmen",
+   "link": "https://newsroom.ibm.com/campaign?item=3064",
+   "datum": "2026-11-12",
+   "sprache": "en",
+   "typ": "pm"
+  },
+  {
+   "titel": "IBM Quantum Nighthawk Demonstrates New Levels of Speed and Quality, with Plans to Scale Beyond 1,000 Qubits in 2027",
+   "quelle": "Unternehmen",
+   "link": "https://newsroom.ibm.com/campaign?item=3059",
+   "datum": "2026-11-11",
+   "sprache": "en",
+   "typ": "pm"
+  },
+  {
+   "titel": "IBM and Microsoft Announce a New AI Agent Platform Designed for Industry-Specific Transformation",
+   "quelle": "Unternehmen",
+   "link": "https://newsroom.ibm.com/campaign?item=3056",
+   "datum": "2026-11-10",
+   "sprache": "en",
+   "typ": "pm"
+  }
+ ]
 }
