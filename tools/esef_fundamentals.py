@@ -60,7 +60,7 @@ FIRMEN = [
     ("NDA-FI.HE", "Nordea", "nordea bank", "FI", "Financial Services"), ("KNEBV.HE", "Kone", "kone oyj", "FI", "Industrials"),
     ("SAMPO.HE", "Sampo", "sampo", "FI", "Financial Services"), ("FORTUM.HE", "Fortum", "fortum", "FI", "Utilities"),
     ("UPM.HE", "UPM-Kymmene", "upm-kymmene", "FI", "Basic Materials"), ("NESTE.HE", "Neste", "neste", "FI", "Energy"),
-    ("ELISA.HE", "Elisa", "elisa", "FI", "Communication Services"), ("VOLV-B.ST", "Volvo", "volvo", "SE", "Industrials"),
+    ("ELISA.HE", "Elisa", "elisa", "FI", "Communication Services"), ("VOLCAR-B.ST", "Volvo Cars", "volvo car", "SE", "Consumer Cyclical"),
     ("ATCO-A.ST", "Atlas Copco", "atlas copco", "SE", "Industrials"), ("INVE-B.ST", "Investor AB", "investor a", "SE", "Financial Services"),
     ("SEB-A.ST", "SEB", "skandinaviska enskilda", "SE", "Financial Services"), ("SHB-A.ST", "Handelsbanken", "svenska handelsbanken", "SE", "Financial Services"),
     ("SWED-A.ST", "Swedbank", "swedbank", "SE", "Financial Services"), ("HM-B.ST", "H&M", "hennes & mauritz", "SE", "Consumer Cyclical"),
