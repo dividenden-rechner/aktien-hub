@@ -8,11 +8,14 @@ category: Quartalszahlen
 quelle_url: https://www.richemont.com/en/home/investors/results-reports-presentations/
 quelle_name: "Richemont, Ad-hoc-Mitteilung und Präsentation zum ersten Halbjahr des Geschäftsjahres 2027 (13. November 2026)"
 logo_name: "Richemont"
+image: assets/magazin/richemont-h1-fy27-halbjahreszahlen-foto.jpg
+image_alt: "Vintage-Ohrringe aus Gold mit Edelsteinen und Perlen in einer Schmuckbox"
+image_credit: "Foto: Aliona Zahrai / Unsplash"
+image_source: https://unsplash.com/de/fotos/ono9LOvVi5M
 story_image: assets/magazin/richemont-h1-fy27-halbjahreszahlen-f1.png
 story_text: "Richemont wächst im ersten Halbjahr um 16 % auf 12,3 Mrd. Euro. Den größten Teil liefern Cartier, Van Cleef & Arpels und die übrigen Schmuckhäuser, deren Umsatz um 18 % steigt. Amerika legt um 23 % zu, Japan währungsbereinigt um 30 %.\nDer Betriebsgewinn steigt um ein Drittel auf 3,1 Mrd. Euro. Darin stecken 229 Mio. Euro aus erstatteten Zöllen, die sich nicht wiederholen. Ohne sie bleibt eine Marge von 23,6 %, weil der teure Goldpreis auf die Bruttomarge drückt.\nSchwach bleiben China und der Nahe Osten. Im zweiten Quartal wächst der Konzern noch um 13 % nach 20 % im ersten. Einen Ausblick gibt Richemont nicht. Präsident Johann Rupert rechnet mit einem Umfeld, das auf absehbare Zeit unruhig bleibt."
 logo_file: assets/logos/cfr-sw.png
 ---
-<!-- PRÜFEN: Aufmacherfoto fehlt noch. Die Anfrage (Schmuck, Luxusuhr, Boutique; Unsplash) steht in tools/asset.request. Divi wählt das Foto auf Unsplash aus. -->
 <!-- PRÜFEN: Kursangaben (Zürich 167,55 CHF um 11:20 Uhr, –4,9 % gegenüber 176,15 CHF Vortagesschluss; Tradegate zeitweise fast –8 %; AWP-Konsens Betriebsgewinn 2,89 Mrd. Euro; KGV rund 25,5; UBS-Kursziel 210 CHF) stammen aus Marktberichten vom 13.11.2026 und sind nicht aus der Mitteilung. -->
 <!-- PRÜFEN: Dividendenrendite ist eigene Rechnung mit dem Zürcher Kurs von 167,55 CHF. -->
 <!-- PRÜFEN: Die Grafiken „Umsatz und Gewinn" und „Dividende je Aktie" stammen aus den Hub-Daten (Quelle dort: boerse.de, nicht gegen die Geschäftsberichte geprüft). Die Dividende für 2026 (3,30 CHF plus 1,00 CHF Sonderdividende) ist aus der Halbjahresmitteilung ergänzt. -->

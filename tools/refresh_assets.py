@@ -20,6 +20,7 @@ def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("slug"); ap.add_argument("--terms", default=""); ap.add_argument("--symbol", default=""); ap.add_argument("--domain", default="")
     ap.add_argument("--fokus", default="")
+    ap.add_argument("--force", action="store_true", help="auch dann suchen, wenn schon ein Bild da ist")
     a = ap.parse_args()
     path = __import__("artikel").find(a.slug)
     if not path:
@@ -27,6 +28,10 @@ def main():
     raw = open(path, encoding="utf-8").read()
     m = re.match(r"^---\s*\n(.*?)\n---\s*\n(.*)$", raw, re.S)
     head, body = m.group(1), m.group(2)
+    vorhanden = re.search(r"^image:\s*(\S.*?)\s*$", head, re.M)
+    if vorhanden and os.path.exists(vorhanden.group(1)) and not a.force:
+        print(f"Bild vorhanden ({vorhanden.group(1)}), keine neue Suche. Mit --force erzwingen.")
+        return
     name = (re.search(r'^logo_name:\s*"?(.*?)"?\s*$', head, re.M) or re.search(r'^title:\s*"?(\S+)', head, re.M)).group(1)
     if a.symbol or a.domain:
         if a.symbol: head = setf(head, "logo_symbol", a.symbol)
