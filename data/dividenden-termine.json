@@ -1241,6 +1241,17 @@
 "ex_tag": "2026-09-14",
 "meldung": "2026-09-02",
 "quelle": "https://www.sec.gov/Archives/edgar/data/1674101/000162828026059961/exhibit991vrt-q32026divide.htm"
+},
+{
+"betrag": 0.1,
+"waehrung": "USD",
+"zahltag": "2026-12-17",
+"stichtag": "2026-11-24",
+"art": "regulaer",
+"beleg": "fourth-quarter cash dividend of $0.10 per share of Class A common stock... is payable on December 17, 2026, to shareholders of record... on November 24, 2026.",
+"ex_tag": "2026-11-24",
+"meldung": "2026-11-13",
+"quelle": "https://www.sec.gov/Archives/edgar/data/1674101/000162828026073564/exhibit991vrt-q42026divide.htm"
 }
 ],
 "BBY": [
@@ -1336,11 +1347,11 @@
 "stand": "2026-11-13",
 "hinweis": "Beschlossene Dividenden aus Pressemitteilungen der Unternehmen (SEC 8-K, EX-99). Ex-Tag = Stichtag (USA, seit Mai 2024).",
 "letzter_lauf": {
-"zeit": "2026-11-13 07:25",
-"kandidaten": 0,
-"abgerufen": 0,
-"mit_dividende": 0,
-"ki_aufrufe": 0,
+"zeit": "2026-11-13 16:51",
+"kandidaten": 3,
+"abgerufen": 3,
+"mit_dividende": 1,
+"ki_aufrufe": 1,
 "fehler": []
 }
 }
