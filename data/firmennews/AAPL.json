@@ -3,5 +3,27 @@
  "name": "Apple Inc.",
  "stand": "2026-11-13",
  "quelle": "Google News (Wirtschaftsmedien, deutsch und englisch)",
- "meldungen": []
+ "meldungen": [
+  {
+   "titel": "Apple’s HomeView Makes Up for Late Arrival with Ecosystem Perks: Review",
+   "quelle": "Bloomberg.com",
+   "link": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxNN2wwbUI0bVhHZ0c4NVQ4QVV0emVnOTRzODJIbjU5eV9GSXUxVnZ0N2UzaE1wQmh5M0ZZWlVITEZXZEtHRHFPNG5idUZ1TVFudEZvT1A5QlNMQnpIamZ0c19WR2VnTHlfbnp6WXpNaEFRVUctQy10SEM5SmNpZTRKc051a1VJSkRNSGZhY2dYdERFVTJSaWF4UldoMDZ0NkpuZEZDUWVidDdPdm9Uc2xiZlp1WXFvNEJlUUlrNjlMQkZ2Sk9mR3NPRA?oc=5",
+   "datum": "2026-11-12",
+   "sprache": "en"
+  },
+  {
+   "titel": "Thai Officials Meet Apple Over Spyware Alerts to Politicians",
+   "quelle": "Bloomberg.com",
+   "link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxQeWZUZnlIXzA1cU9vSVVBcXZFMElEclI2MmU5YnRyS2U4ajY3Yy14QS03bkpINFJnaUItcUZqWUJwRWp0b3JwNWVqdllidTdqS2UyM1BJWmpfNXlkQkoyRzU0ZDFhNXVUOVpRN3RfdU53OXY1SjU5d1N1RVkyeTZwX19ZYWRyQUpHV1c4dmFJcGtRNjJYUUdHMm96b1laSEJDYjg4SG1aYTlNc3UyZ3pwUQ?oc=5",
+   "datum": "2026-11-11",
+   "sprache": "en"
+  },
+  {
+   "titel": "Google Adds Gemini Voice AI Assistant to Apple CarPlay",
+   "quelle": "Bloomberg.com",
+   "link": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxPeHVxSVBEQ0VNQmRBdDYtY0dZNk0tVHFpZ1I3eVRURnB2anRqTDN2dGZDb29xRG90eTZLN3ZmSktIVnFWVkFqWlp3ejc2LWFPa01BZ0JhQTl6MHFKamNfalljd2NsS1ExNzdSSEhpbHBnemxrdHZ5NG1yWEpKVWw1MlQydUJ4YU51UnBQb1AxVWcyczBVM2RfSWFucjAzZERsbnlCeElSR0E?oc=5",
+   "datum": "2026-11-11",
+   "sprache": "en"
+  }
+ ]
 }
