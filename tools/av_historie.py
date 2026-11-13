@@ -20,14 +20,17 @@ def main():
     if not KEY:
         print("ALPHAVANTAGE_API_KEY fehlt"); sys.exit(0)
     q = json.load(open(Q))
-    offen = [f for f in q["firmen"] if not os.path.exists(os.path.join(ZIEL, f["hub"] + ".json"))]
+    offen = [f for f in q["firmen"] if not f.get("fehl") and not os.path.exists(os.path.join(ZIEL, f["hub"] + ".json"))]
     print("Offen:", len(offen), "von", len(q["firmen"]))
     for f in offen[:MAX]:
         time.sleep(13)   # höchstens 5 Aufrufe pro Minute
         d = hole(f["av"])
         reihe = d.get("Weekly Time Series")
         if not reihe:
-            print("KEIN ERGEBNIS", f["hub"], f["av"], str(d)[:200]); continue
+            print("KEIN ERGEBNIS", f["hub"], f["av"], str(d)[:200])
+            if "Error Message" in d:   # Symbol unbekannt: nicht erneut versuchen
+                f["fehl"] = d["Error Message"][:120]; json.dump(q, open(Q, "w"), ensure_ascii=False, indent=1)
+            continue
         kurse = []
         for datum in sorted(reihe):
             z = reihe[datum]

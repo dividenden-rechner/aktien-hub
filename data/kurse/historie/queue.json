@@ -1,12 +1,5465 @@
 {
  "_hinweis": "Warteschlange für die Kurshistorie aus Alpha Vantage (TIME_SERIES_DAILY, full). Eine Datei je Firma: data/kurse/historie/<HUB-SYMBOL>.json. 'av' ist das Alpha-Vantage-Symbol; 'geprueft' = mit Abruf bestätigt.",
  "firmen": [
-  {"hub": "RMS.PA", "av": "RMS.PAR", "name": "Hermès", "geprueft": true},
-  {"hub": "CFR.SW", "av": "CFR.SWX", "name": "Richemont", "geprueft": false},
-  {"hub": "MC.PA", "av": "MC.PAR", "name": "LVMH", "geprueft": false},
-  {"hub": "KER.PA", "av": "KER.PAR", "name": "Kering", "geprueft": false},
-  {"hub": "BRBY.L", "av": "BRBY.LON", "name": "Burberry", "geprueft": false},
-  {"hub": "SBUX", "av": "SBUX", "name": "Starbucks", "geprueft": false},
-  {"hub": "NVDA", "av": "NVDA", "name": "Nvidia", "geprueft": false}
+  {
+   "hub": "RMS.PA",
+   "av": "RMS.PAR",
+   "name": "Hermès",
+   "geprueft": true
+  },
+  {
+   "hub": "CFR.SW",
+   "av": "CFR.SWX",
+   "name": "Richemont",
+   "geprueft": false
+  },
+  {
+   "hub": "MC.PA",
+   "av": "MC.PAR",
+   "name": "LVMH",
+   "geprueft": false
+  },
+  {
+   "hub": "KER.PA",
+   "av": "KER.PAR",
+   "name": "Kering",
+   "geprueft": false
+  },
+  {
+   "hub": "BRBY.L",
+   "av": "BRBY.LON",
+   "name": "Burberry",
+   "geprueft": false
+  },
+  {
+   "hub": "SBUX",
+   "av": "SBUX",
+   "name": "Starbucks",
+   "geprueft": false
+  },
+  {
+   "hub": "NVDA",
+   "av": "NVDA",
+   "name": "Nvidia",
+   "geprueft": false
+  },
+  {
+   "hub": "A",
+   "av": "A",
+   "name": "AGILENT TECHNOLOGIES, INC.",
+   "geprueft": false
+  },
+  {
+   "hub": "AAPL",
+   "av": "AAPL",
+   "name": "Apple Inc.",
+   "geprueft": false
+  },
+  {
+   "hub": "ABBNY",
+   "av": "ABBNY",
+   "name": "ABB Ltd",
+   "geprueft": false
+  },
+  {
+   "hub": "ABBV",
+   "av": "ABBV",
+   "name": "AbbVie Inc.",
+   "geprueft": false
+  },
+  {
+   "hub": "ABNB",
+   "av": "ABNB",
+   "name": "Airbnb, Inc.",
+   "geprueft": false
+  },
+  {
+   "hub": "ABT",
+   "av": "ABT",
+   "name": "ABBOTT LABORATORIES",
+   "geprueft": false
+  },
+  {
+   "hub": "ACN",
+   "av": "ACN",
+   "name": "Accenture plc",
+   "geprueft": false
+  },
+  {
+   "hub": "ADBE",
+   "av": "ADBE",
+   "name": "ADOBE INC.",
+   "geprueft": false
+  },
+  {
+   "hub": "ADC",
+   "av": "ADC",
+   "name": "AGREE REALTY CORPORATION",
+   "geprueft": false
+  },
+  {
+   "hub": "ADI",
+   "av": "ADI",
+   "name": "ANALOG DEVICES INC",
+   "geprueft": false
+  },
+  {
+   "hub": "ADM",
+   "av": "ADM",
+   "name": "Archer-Daniels-Midland Co",
+   "geprueft": false
+  },
+  {
+   "hub": "ADP",
+   "av": "ADP",
+   "name": "AUTOMATIC DATA PROCESSING, INC.",
+   "geprueft": false
+  },
+  {
+   "hub": "ADSK",
+   "av": "ADSK",
+   "name": "Autodesk, Inc.",
+   "geprueft": false
+  },
+  {
+   "hub": "AEE",
+   "av": "AEE",
+   "name": "AMEREN CORP",
+   "geprueft": false
+  },
+  {
+   "hub": "AEP",
+   "av": "AEP",
+   "name": "American Electric Power Company, Inc.",
+   "geprueft": false
+  },
+  {
+   "hub": "AES",
+   "av": "AES",
+   "name": "THE AES CORPORATION",
+   "geprueft": false
+  },
+  {
+   "hub": "AFL",
+   "av": "AFL",
+   "name": "Aflac Incorporated",
+   "geprueft": false
+  },
+  {
+   "hub": "AIG",
+   "av": "AIG",
+   "name": "American International Group, Inc.",
+   "geprueft": false
+  },
+  {
+   "hub": "AIZ",
+   "av": "AIZ",
+   "name": "Assurant, Inc.",
+   "geprueft": false
+  },
+  {
+   "hub": "AJG",
+   "av": "AJG",
+   "name": "ARTHUR J. GALLAGHER & CO.",
+   "geprueft": false
+  },
+  {
+   "hub": "AKAM",
+   "av": "AKAM",
+   "name": "Akamai Technologies, Inc",
+   "geprueft": false
+  },
+  {
+   "hub": "ALB",
+   "av": "ALB",
+   "name": "ALBEMARLE CORPORATION",
+   "geprueft": false
+  },
+  {
+   "hub": "ALGN",
+   "av": "ALGN",
+   "name": "ALIGN TECHNOLOGY, INC.",
+   "geprueft": false
+  },
+  {
+   "hub": "ALL",
+   "av": "ALL",
+   "name": "ALLSTATE CORP",
+   "geprueft": false
+  },
+  {
+   "hub": "ALLE",
+   "av": "ALLE",
+   "name": "Allegion plc",
+   "geprueft": false
+  },
+  {
+   "hub": "AMAT",
+   "av": "AMAT",
+   "name": "APPLIED MATERIALS INC /DE",
+   "geprueft": false
+  },
+  {
+   "hub": "AMD",
+   "av": "AMD",
+   "name": "ADVANCED MICRO DEVICES, INC",
+   "geprueft": false
+  },
+  {
+   "hub": "AME",
+   "av": "AME",
+   "name": "AMETEK INC/",
+   "geprueft": false
+  },
+  {
+   "hub": "AMGN",
+   "av": "AMGN",
+   "name": "Amgen Inc.",
+   "geprueft": false
+  },
+  {
+   "hub": "AMP",
+   "av": "AMP",
+   "name": "AMERIPRISE FINANCIAL, INC.",
+   "geprueft": false
+  },
+  {
+   "hub": "AMT",
+   "av": "AMT",
+   "name": "AMERICAN TOWER CORP /MA/",
+   "geprueft": false
+  },
+  {
+   "hub": "AMZN",
+   "av": "AMZN",
+   "name": "AMAZON.COM, INC.",
+   "geprueft": false
+  },
+  {
+   "hub": "ANET",
+   "av": "ANET",
+   "name": "Arista Networks, Inc.",
+   "geprueft": false
+  },
+  {
+   "hub": "AON",
+   "av": "AON",
+   "name": "Aon plc",
+   "geprueft": false
+  },
+  {
+   "hub": "AOS",
+   "av": "AOS",
+   "name": "A. O. Smith Corporation",
+   "geprueft": false
+  },
+  {
+   "hub": "APA",
+   "av": "APA",
+   "name": "APA CORPORATION",
+   "geprueft": false
+  },
+  {
+   "hub": "APD",
+   "av": "APD",
+   "name": "AIR PRODUCTS AND CHEMICALS, INC.",
+   "geprueft": false
+  },
+  {
+   "hub": "APH",
+   "av": "APH",
+   "name": "AMPHENOL CORPORATION",
+   "geprueft": false
+  },
+  {
+   "hub": "APO",
+   "av": "APO",
+   "name": "APOLLO GLOBAL MANAGEMENT, INC.",
+   "geprueft": false
+  },
+  {
+   "hub": "APP",
+   "av": "APP",
+   "name": "AppLovin Corporation",
+   "geprueft": false
+  },
+  {
+   "hub": "ARCC",
+   "av": "ARCC",
+   "name": "ARES CAPITAL CORPORATION",
+   "geprueft": false
+  },
+  {
+   "hub": "ARE",
+   "av": "ARE",
+   "name": "ALEXANDRIA REAL ESTATE EQUITIES, INC.",
+   "geprueft": false
+  },
+  {
+   "hub": "ARES",
+   "av": "ARES",
+   "name": "ARES MANAGEMENT CORPORATION",
+   "geprueft": false
+  },
+  {
+   "hub": "ASML",
+   "av": "ASML",
+   "name": "ASML HOLDING NV",
+   "geprueft": false
+  },
+  {
+   "hub": "ATO",
+   "av": "ATO",
+   "name": "ATMOS ENERGY CORP",
+   "geprueft": false
+  },
+  {
+   "hub": "AVGO",
+   "av": "AVGO",
+   "name": "Broadcom Inc.",
+   "geprueft": false
+  },
+  {
+   "hub": "AVY",
+   "av": "AVY",
+   "name": "AVERY DENNISON CORPORATION",
+   "geprueft": false
+  },
+  {
+   "hub": "AWK",
+   "av": "AWK",
+   "name": "AMERICAN WATER WORKS COMPANY, INC.",
+   "geprueft": false
+  },
+  {
+   "hub": "AXON",
+   "av": "AXON",
+   "name": "Axon Enterprise, Inc.",
+   "geprueft": false
+  },
+  {
+   "hub": "AXP",
+   "av": "AXP",
+   "name": "AMERICAN EXPRESS CO",
+   "geprueft": false
+  },
+  {
+   "hub": "AZN",
+   "av": "AZN",
+   "name": "ASTRAZENECA PLC",
+   "geprueft": false
+  },
+  {
+   "hub": "AZO",
+   "av": "AZO",
+   "name": "AutoZone, Inc.",
+   "geprueft": false
+  },
+  {
+   "hub": "BA",
+   "av": "BA",
+   "name": "THE BOEING COMPANY",
+   "geprueft": false
+  },
+  {
+   "hub": "BAC",
+   "av": "BAC",
+   "name": "BofA Finance LLC",
+   "geprueft": false
+  },
+  {
+   "hub": "BALL",
+   "av": "BALL",
+   "name": "BALL CORPORATION",
+   "geprueft": false
+  },
+  {
+   "hub": "BAX",
+   "av": "BAX",
+   "name": "BAXTER INTERNATIONAL INC.",
+   "geprueft": false
+  },
+  {
+   "hub": "BBVA",
+   "av": "BBVA",
+   "name": "BANCO BILBAO VIZCAYA ARGENTARIA, S.A.",
+   "geprueft": false
+  },
+  {
+   "hub": "BBY",
+   "av": "BBY",
+   "name": "Best Buy Co., Inc.",
+   "geprueft": false
+  },
+  {
+   "hub": "BCS",
+   "av": "BCS",
+   "name": "BARCLAYS PLC",
+   "geprueft": false
+  },
+  {
+   "hub": "BDX",
+   "av": "BDX",
+   "name": "BECTON, DICKINSON AND COMPANY",
+   "geprueft": false
+  },
+  {
+   "hub": "BE",
+   "av": "BE",
+   "name": "BLOOM ENERGY CORPORATION",
+   "geprueft": false
+  },
+  {
+   "hub": "BEN",
+   "av": "BEN",
+   "name": "FRANKLIN TEMPLETON, INC.",
+   "geprueft": false
+  },
+  {
+   "hub": "BF-B",
+   "av": "BF-B",
+   "name": "BROWN FORMAN CORP",
+   "geprueft": false
+  },
+  {
+   "hub": "BG",
+   "av": "BG",
+   "name": "BUNGE GLOBAL SA",
+   "geprueft": false
+  },
+  {
+   "hub": "BHP",
+   "av": "BHP",
+   "name": "BHP GROUP LIMITED",
+   "geprueft": false
+  },
+  {
+   "hub": "BIIB",
+   "av": "BIIB",
+   "name": "BIOGEN INC.",
+   "geprueft": false
+  },
+  {
+   "hub": "BKNG",
+   "av": "BKNG",
+   "name": "Booking Holdings Inc.",
+   "geprueft": false
+  },
+  {
+   "hub": "BKR",
+   "av": "BKR",
+   "name": "Baker Hughes Company",
+   "geprueft": false
+  },
+  {
+   "hub": "BLK",
+   "av": "BLK",
+   "name": "BlackRock, Inc.",
+   "geprueft": false
+  },
+  {
+   "hub": "BMY",
+   "av": "BMY",
+   "name": "BRISTOL-MYERS SQUIBB COMPANY",
+   "geprueft": false
+  },
+  {
+   "hub": "BNY",
+   "av": "BNY",
+   "name": "THE BANK OF NEW YORK MELLON CORPORATION",
+   "geprueft": false
+  },
+  {
+   "hub": "BP",
+   "av": "BP",
+   "name": "BP PLC",
+   "geprueft": false
+  },
+  {
+   "hub": "BR",
+   "av": "BR",
+   "name": "BROADRIDGE FINANCIAL SOLUTIONS, INC.",
+   "geprueft": false
+  },
+  {
+   "hub": "BRK-B",
+   "av": "BRK-B",
+   "name": "BERKSHIRE HATHAWAY INC",
+   "geprueft": false
+  },
+  {
+   "hub": "BRO",
+   "av": "BRO",
+   "name": "BROWN & BROWN, INC.",
+   "geprueft": false
+  },
+  {
+   "hub": "BSX",
+   "av": "BSX",
+   "name": "BOSTON SCIENTIFIC CORPORATION",
+   "geprueft": false
+  },
+  {
+   "hub": "BTI",
+   "av": "BTI",
+   "name": "British American Tobacco p.l.c.",
+   "geprueft": false
+  },
+  {
+   "hub": "BX",
+   "av": "BX",
+   "name": "Blackstone Inc.",
+   "geprueft": false
+  },
+  {
+   "hub": "BXP",
+   "av": "BXP",
+   "name": "BXP, INC.",
+   "geprueft": false
+  },
+  {
+   "hub": "C",
+   "av": "C",
+   "name": "Citigroup Inc",
+   "geprueft": false
+  },
+  {
+   "hub": "CAH",
+   "av": "CAH",
+   "name": "Cardinal Health, Inc.",
+   "geprueft": false
+  },
+  {
+   "hub": "CARR",
+   "av": "CARR",
+   "name": "CARRIER GLOBAL Corp",
+   "geprueft": false
+  },
+  {
+   "hub": "CASY",
+   "av": "CASY",
+   "name": "CASEY’S GENERAL STORES, INC.",
+   "geprueft": false
+  },
+  {
+   "hub": "CAT",
+   "av": "CAT",
+   "name": "CATERPILLAR INC",
+   "geprueft": false
+  },
+  {
+   "hub": "CB",
+   "av": "CB",
+   "name": "CHUBB LIMITED",
+   "geprueft": false
+  },
+  {
+   "hub": "CBOE",
+   "av": "CBOE",
+   "name": "Cboe Global Markets, Inc.",
+   "geprueft": false
+  },
+  {
+   "hub": "CBRE",
+   "av": "CBRE",
+   "name": "CBRE GROUP, INC.",
+   "geprueft": false
+  },
+  {
+   "hub": "CCI",
+   "av": "CCI",
+   "name": "CROWN CASTLE INC.",
+   "geprueft": false
+  },
+  {
+   "hub": "CDNS",
+   "av": "CDNS",
+   "name": "Cadence Design Systems, Inc.",
+   "geprueft": false
+  },
+  {
+   "hub": "CDW",
+   "av": "CDW",
+   "name": "CDW CORP",
+   "geprueft": false
+  },
+  {
+   "hub": "CEG",
+   "av": "CEG",
+   "name": "CONSTELLATION ENERGY CORPORATION",
+   "geprueft": false
+  },
+  {
+   "hub": "CF",
+   "av": "CF",
+   "name": "CF INDUSTRIES HOLDINGS, INC.",
+   "geprueft": false
+  },
+  {
+   "hub": "CFG",
+   "av": "CFG",
+   "name": "CITIZENS FINANCIAL GROUP INC/RI",
+   "geprueft": false
+  },
+  {
+   "hub": "CHD",
+   "av": "CHD",
+   "name": "CHURCH & DWIGHT CO., INC.",
+   "geprueft": false
+  },
+  {
+   "hub": "CHRW",
+   "av": "CHRW",
+   "name": "C.H. ROBINSON WORLDWIDE, INC.",
+   "geprueft": false
+  },
+  {
+   "hub": "CHTR",
+   "av": "CHTR",
+   "name": "Charter Communications, Inc.",
+   "geprueft": false
+  },
+  {
+   "hub": "CI",
+   "av": "CI",
+   "name": "The Cigna Group",
+   "geprueft": false
+  },
+  {
+   "hub": "CIEN",
+   "av": "CIEN",
+   "name": "Ciena Corp",
+   "geprueft": false
+  },
+  {
+   "hub": "CINF",
+   "av": "CINF",
+   "name": "CINCINNATI FINANCIAL CORPORATION",
+   "geprueft": false
+  },
+  {
+   "hub": "CL",
+   "av": "CL",
+   "name": "COLGATE-PALMOLIVE COMPANY",
+   "geprueft": false
+  },
+  {
+   "hub": "CLX",
+   "av": "CLX",
+   "name": "THE CLOROX COMPANY",
+   "geprueft": false
+  },
+  {
+   "hub": "CMCSA",
+   "av": "CMCSA",
+   "name": "COMCAST CORPORATION",
+   "geprueft": false
+  },
+  {
+   "hub": "CME",
+   "av": "CME",
+   "name": "CME GROUP INC.",
+   "geprueft": false
+  },
+  {
+   "hub": "CMG",
+   "av": "CMG",
+   "name": "CHIPOTLE MEXICAN GRILL, INC.",
+   "geprueft": false
+  },
+  {
+   "hub": "CMI",
+   "av": "CMI",
+   "name": "CUMMINS INC.",
+   "geprueft": false
+  },
+  {
+   "hub": "CMS",
+   "av": "CMS",
+   "name": "CMS ENERGY CORP",
+   "geprueft": false
+  },
+  {
+   "hub": "CNC",
+   "av": "CNC",
+   "name": "CENTENE CORPORATION",
+   "geprueft": false
+  },
+  {
+   "hub": "CNP",
+   "av": "CNP",
+   "name": "CENTERPOINT ENERGY INC",
+   "geprueft": false
+  },
+  {
+   "hub": "COF",
+   "av": "COF",
+   "name": "CAPITAL ONE FINANCIAL CORP",
+   "geprueft": false
+  },
+  {
+   "hub": "COHR",
+   "av": "COHR",
+   "name": "Coherent Corp.",
+   "geprueft": false
+  },
+  {
+   "hub": "COIN",
+   "av": "COIN",
+   "name": "Coinbase Global, Inc.",
+   "geprueft": false
+  },
+  {
+   "hub": "COO",
+   "av": "COO",
+   "name": "The Cooper Companies, Inc.",
+   "geprueft": false
+  },
+  {
+   "hub": "COP",
+   "av": "COP",
+   "name": "ConocoPhillips",
+   "geprueft": false
+  },
+  {
+   "hub": "COR",
+   "av": "COR",
+   "name": "CENCORA, INC.",
+   "geprueft": false
+  },
+  {
+   "hub": "COST",
+   "av": "COST",
+   "name": "COSTCO WHOLESALE CORP /NEW",
+   "geprueft": false
+  },
+  {
+   "hub": "CPAY",
+   "av": "CPAY",
+   "name": "Corpay, Inc",
+   "geprueft": false
+  },
+  {
+   "hub": "CPRT",
+   "av": "CPRT",
+   "name": "COPART, INC.",
+   "geprueft": false
+  },
+  {
+   "hub": "CPT",
+   "av": "CPT",
+   "name": "CAMDEN PROPERTY TRUST",
+   "geprueft": false
+  },
+  {
+   "hub": "CRL",
+   "av": "CRL",
+   "name": "CHARLES RIVER LABORATORIES INTERNATIONAL, INC.",
+   "geprueft": false
+  },
+  {
+   "hub": "CRM",
+   "av": "CRM",
+   "name": "Salesforce, Inc.",
+   "geprueft": false
+  },
+  {
+   "hub": "CRWD",
+   "av": "CRWD",
+   "name": "CrowdStrike Holdings, Inc.",
+   "geprueft": false
+  },
+  {
+   "hub": "CSCO",
+   "av": "CSCO",
+   "name": "CISCO SYSTEMS, INC.",
+   "geprueft": false
+  },
+  {
+   "hub": "CSGP",
+   "av": "CSGP",
+   "name": "CoStar Group, Inc.",
+   "geprueft": false
+  },
+  {
+   "hub": "CSX",
+   "av": "CSX",
+   "name": "CSX CORPORATION",
+   "geprueft": false
+  },
+  {
+   "hub": "CTAS",
+   "av": "CTAS",
+   "name": "Cintas Corporation",
+   "geprueft": false
+  },
+  {
+   "hub": "CTSH",
+   "av": "CTSH",
+   "name": "COGNIZANT TECHNOLOGY SOLUTIONS CORPORATION",
+   "geprueft": false
+  },
+  {
+   "hub": "CVNA",
+   "av": "CVNA",
+   "name": "CARVANA CO.",
+   "geprueft": false
+  },
+  {
+   "hub": "CVS",
+   "av": "CVS",
+   "name": "CVS HEALTH Corp",
+   "geprueft": false
+  },
+  {
+   "hub": "CVX",
+   "av": "CVX",
+   "name": "Chevron Corp",
+   "geprueft": false
+  },
+  {
+   "hub": "D",
+   "av": "D",
+   "name": "DOMINION ENERGY, INC",
+   "geprueft": false
+  },
+  {
+   "hub": "DAL",
+   "av": "DAL",
+   "name": "DELTA AIR LINES, INC.",
+   "geprueft": false
+  },
+  {
+   "hub": "DASH",
+   "av": "DASH",
+   "name": "DOORDASH, INC.",
+   "geprueft": false
+  },
+  {
+   "hub": "DB",
+   "av": "DB",
+   "name": "DEUTSCHE BANK AKTIENGESELLSCHAFT",
+   "geprueft": false
+  },
+  {
+   "hub": "DD",
+   "av": "DD",
+   "name": "DUPONT DE NEMOURS, INC.",
+   "geprueft": false
+  },
+  {
+   "hub": "DDOG",
+   "av": "DDOG",
+   "name": "Datadog, Inc.",
+   "geprueft": false
+  },
+  {
+   "hub": "DE",
+   "av": "DE",
+   "name": "DEERE & CO",
+   "geprueft": false
+  },
+  {
+   "hub": "DECK",
+   "av": "DECK",
+   "name": "DECKERS OUTDOOR CORP",
+   "geprueft": false
+  },
+  {
+   "hub": "DELL",
+   "av": "DELL",
+   "name": "Dell Technologies Inc.",
+   "geprueft": false
+  },
+  {
+   "hub": "DEO",
+   "av": "DEO",
+   "name": "DIAGEO plc",
+   "geprueft": false
+  },
+  {
+   "hub": "DG",
+   "av": "DG",
+   "name": "DOLLAR GENERAL CORP",
+   "geprueft": false
+  },
+  {
+   "hub": "DGX",
+   "av": "DGX",
+   "name": "Quest Diagnostics Inc",
+   "geprueft": false
+  },
+  {
+   "hub": "DHI",
+   "av": "DHI",
+   "name": "D.R. Horton, Inc.",
+   "geprueft": false
+  },
+  {
+   "hub": "DHR",
+   "av": "DHR",
+   "name": "DANAHER CORPORATION",
+   "geprueft": false
+  },
+  {
+   "hub": "DIS",
+   "av": "DIS",
+   "name": "WALT DISNEY CO/",
+   "geprueft": false
+  },
+  {
+   "hub": "DLR",
+   "av": "DLR",
+   "name": "DIGITAL REALTY TRUST, INC.",
+   "geprueft": false
+  },
+  {
+   "hub": "DLTR",
+   "av": "DLTR",
+   "name": "DOLLAR TREE, INC.",
+   "geprueft": false
+  },
+  {
+   "hub": "DOC",
+   "av": "DOC",
+   "name": "Healthpeak Properties, Inc.",
+   "geprueft": false
+  },
+  {
+   "hub": "DOV",
+   "av": "DOV",
+   "name": "DOVER Corp",
+   "geprueft": false
+  },
+  {
+   "hub": "DOW",
+   "av": "DOW",
+   "name": "Dow Inc.",
+   "geprueft": false
+  },
+  {
+   "hub": "DPZ",
+   "av": "DPZ",
+   "name": "Domino’s Pizza, Inc.",
+   "geprueft": false
+  },
+  {
+   "hub": "DRI",
+   "av": "DRI",
+   "name": "DARDEN RESTAURANTS, INC.",
+   "geprueft": false
+  },
+  {
+   "hub": "DTE",
+   "av": "DTE",
+   "name": "DTE ENERGY CO",
+   "geprueft": false
+  },
+  {
+   "hub": "DUK",
+   "av": "DUK",
+   "name": "Duke Energy CORP",
+   "geprueft": false
+  },
+  {
+   "hub": "DVA",
+   "av": "DVA",
+   "name": "DAVITA INC.",
+   "geprueft": false
+  },
+  {
+   "hub": "DVN",
+   "av": "DVN",
+   "name": "DEVON ENERGY CORP/DE",
+   "geprueft": false
+  },
+  {
+   "hub": "DXCM",
+   "av": "DXCM",
+   "name": "DEXCOM, INC.",
+   "geprueft": false
+  },
+  {
+   "hub": "E",
+   "av": "E",
+   "name": "Eni SpA",
+   "geprueft": false
+  },
+  {
+   "hub": "EBAY",
+   "av": "EBAY",
+   "name": "eBay Inc.",
+   "geprueft": false
+  },
+  {
+   "hub": "ECHO",
+   "av": "ECHO",
+   "name": "EchoStar Corporation",
+   "geprueft": false
+  },
+  {
+   "hub": "ECL",
+   "av": "ECL",
+   "name": "ECOLAB INC.",
+   "geprueft": false
+  },
+  {
+   "hub": "ED",
+   "av": "ED",
+   "name": "Consolidated Edison, Inc.",
+   "geprueft": false
+  },
+  {
+   "hub": "EFX",
+   "av": "EFX",
+   "name": "EQUIFAX INC",
+   "geprueft": false
+  },
+  {
+   "hub": "EIX",
+   "av": "EIX",
+   "name": "EDISON INTERNATIONAL",
+   "geprueft": false
+  },
+  {
+   "hub": "EL",
+   "av": "EL",
+   "name": "Estee Lauder Companies Inc",
+   "geprueft": false
+  },
+  {
+   "hub": "ELV",
+   "av": "ELV",
+   "name": "Elevance Health, Inc.",
+   "geprueft": false
+  },
+  {
+   "hub": "EME",
+   "av": "EME",
+   "name": "EMCOR Group, Inc.",
+   "geprueft": false
+  },
+  {
+   "hub": "EMR",
+   "av": "EMR",
+   "name": "Emerson Electric Co.",
+   "geprueft": false
+  },
+  {
+   "hub": "EOG",
+   "av": "EOG",
+   "name": "EOG RESOURCES, INC.",
+   "geprueft": false
+  },
+  {
+   "hub": "EQIX",
+   "av": "EQIX",
+   "name": "EQUINIX INC",
+   "geprueft": false
+  },
+  {
+   "hub": "EQT",
+   "av": "EQT",
+   "name": "EQT CORPORATION",
+   "geprueft": false
+  },
+  {
+   "hub": "ERIC",
+   "av": "ERIC",
+   "name": "ERICSSON LM TELEPHONE CO",
+   "geprueft": false
+  },
+  {
+   "hub": "ERIE",
+   "av": "ERIE",
+   "name": "ERIE INDEMNITY COMPANY",
+   "geprueft": false
+  },
+  {
+   "hub": "ES",
+   "av": "ES",
+   "name": "EVERSOURCE ENERGY",
+   "geprueft": false
+  },
+  {
+   "hub": "ESS",
+   "av": "ESS",
+   "name": "ESSEX PROPERTY TRUST, INC.",
+   "geprueft": false
+  },
+  {
+   "hub": "ETN",
+   "av": "ETN",
+   "name": "EATON CORPORATION plc",
+   "geprueft": false
+  },
+  {
+   "hub": "ETR",
+   "av": "ETR",
+   "name": "ENTERGY CORP /DE/",
+   "geprueft": false
+  },
+  {
+   "hub": "EVRG",
+   "av": "EVRG",
+   "name": "Evergy, Inc.",
+   "geprueft": false
+  },
+  {
+   "hub": "EW",
+   "av": "EW",
+   "name": "EDWARDS LIFESCIENCES CORPORATION",
+   "geprueft": false
+  },
+  {
+   "hub": "EXC",
+   "av": "EXC",
+   "name": "EXELON CORPORATION",
+   "geprueft": false
+  },
+  {
+   "hub": "EXE",
+   "av": "EXE",
+   "name": "EXPAND ENERGY CORPORATION",
+   "geprueft": false
+  },
+  {
+   "hub": "EXPD",
+   "av": "EXPD",
+   "name": "EXPEDITORS INTERNATIONAL OF WASHINGTON, INC.",
+   "geprueft": false
+  },
+  {
+   "hub": "EXPE",
+   "av": "EXPE",
+   "name": "EXPEDIA GROUP, INC.",
+   "geprueft": false
+  },
+  {
+   "hub": "EXR",
+   "av": "EXR",
+   "name": "EXTRA SPACE STORAGE INC.",
+   "geprueft": false
+  },
+  {
+   "hub": "F",
+   "av": "F",
+   "name": "Ford Motor Co",
+   "geprueft": false
+  },
+  {
+   "hub": "FANG",
+   "av": "FANG",
+   "name": "Diamondback Energy, Inc.",
+   "geprueft": false
+  },
+  {
+   "hub": "FAST",
+   "av": "FAST",
+   "name": "FASTENAL CO",
+   "geprueft": false
+  },
+  {
+   "hub": "FCX",
+   "av": "FCX",
+   "name": "Freeport-McMoRan Inc.",
+   "geprueft": false
+  },
+  {
+   "hub": "FDS",
+   "av": "FDS",
+   "name": "FACTSET RESEARCH SYSTEMS INC",
+   "geprueft": false
+  },
+  {
+   "hub": "FDX",
+   "av": "FDX",
+   "name": "FedEx Corporation",
+   "geprueft": false
+  },
+  {
+   "hub": "FDXF",
+   "av": "FDXF",
+   "name": "FedEx Freight Holding Company, Inc.",
+   "geprueft": false
+  },
+  {
+   "hub": "FE",
+   "av": "FE",
+   "name": "FIRSTENERGY CORP",
+   "geprueft": false
+  },
+  {
+   "hub": "FERG",
+   "av": "FERG",
+   "name": "Ferguson Enterprises Inc.",
+   "geprueft": false
+  },
+  {
+   "hub": "FFIV",
+   "av": "FFIV",
+   "name": "F5, INC.",
+   "geprueft": false
+  },
+  {
+   "hub": "FICO",
+   "av": "FICO",
+   "name": "Fair Isaac Corp",
+   "geprueft": false
+  },
+  {
+   "hub": "FIS",
+   "av": "FIS",
+   "name": "Fidelity National Information Services, Inc.",
+   "geprueft": false
+  },
+  {
+   "hub": "FISV",
+   "av": "FISV",
+   "name": "FISERV, INC.",
+   "geprueft": false
+  },
+  {
+   "hub": "FITB",
+   "av": "FITB",
+   "name": "Fifth Third Bancorp",
+   "geprueft": false
+  },
+  {
+   "hub": "FIX",
+   "av": "FIX",
+   "name": "COMFORT SYSTEMS USA, INC.",
+   "geprueft": false
+  },
+  {
+   "hub": "FOX",
+   "av": "FOX",
+   "name": "Fox Corp",
+   "geprueft": false
+  },
+  {
+   "hub": "FOXA",
+   "av": "FOXA",
+   "name": "Fox Corp",
+   "geprueft": false
+  },
+  {
+   "hub": "FRT",
+   "av": "FRT",
+   "name": "FEDERAL REALTY INVESTMENT TRUST",
+   "geprueft": false
+  },
+  {
+   "hub": "FSLR",
+   "av": "FSLR",
+   "name": "First Solar, Inc.",
+   "geprueft": false
+  },
+  {
+   "hub": "FTNT",
+   "av": "FTNT",
+   "name": "FORTINET, INC.",
+   "geprueft": false
+  },
+  {
+   "hub": "FTV",
+   "av": "FTV",
+   "name": "Fortive Corporation",
+   "geprueft": false
+  },
+  {
+   "hub": "GD",
+   "av": "GD",
+   "name": "GENERAL DYNAMICS CORPORATION",
+   "geprueft": false
+  },
+  {
+   "hub": "GDDY",
+   "av": "GDDY",
+   "name": "GoDaddy Inc.",
+   "geprueft": false
+  },
+  {
+   "hub": "GE",
+   "av": "GE",
+   "name": "GENERAL ELECTRIC COMPANY",
+   "geprueft": false
+  },
+  {
+   "hub": "GEHC",
+   "av": "GEHC",
+   "name": "GE HEALTHCARE TECHNOLOGIES INC.",
+   "geprueft": false
+  },
+  {
+   "hub": "GEN",
+   "av": "GEN",
+   "name": "Gen Digital Inc.",
+   "geprueft": false
+  },
+  {
+   "hub": "GEV",
+   "av": "GEV",
+   "name": "GE Vernova Inc.",
+   "geprueft": false
+  },
+  {
+   "hub": "GILD",
+   "av": "GILD",
+   "name": "GILEAD SCIENCES, INC.",
+   "geprueft": false
+  },
+  {
+   "hub": "GIS",
+   "av": "GIS",
+   "name": "GENERAL MILLS, INC.",
+   "geprueft": false
+  },
+  {
+   "hub": "GL",
+   "av": "GL",
+   "name": "GLOBE LIFE INC.",
+   "geprueft": false
+  },
+  {
+   "hub": "GLW",
+   "av": "GLW",
+   "name": "CORNING INC /NY",
+   "geprueft": false
+  },
+  {
+   "hub": "GM",
+   "av": "GM",
+   "name": "GENERAL MOTORS COMPANY",
+   "geprueft": false
+  },
+  {
+   "hub": "GNRC",
+   "av": "GNRC",
+   "name": "GENERAC HOLDINGS INC.",
+   "geprueft": false
+  },
+  {
+   "hub": "GOOG",
+   "av": "GOOG",
+   "name": "Alphabet Inc.",
+   "geprueft": false
+  },
+  {
+   "hub": "GOOGL",
+   "av": "GOOGL",
+   "name": "Alphabet Inc.",
+   "geprueft": false
+  },
+  {
+   "hub": "GPC",
+   "av": "GPC",
+   "name": "GENUINE PARTS CO",
+   "geprueft": false
+  },
+  {
+   "hub": "GPN",
+   "av": "GPN",
+   "name": "GLOBAL PAYMENTS INC.",
+   "geprueft": false
+  },
+  {
+   "hub": "GRMN",
+   "av": "GRMN",
+   "name": "GARMIN LTD",
+   "geprueft": false
+  },
+  {
+   "hub": "GS",
+   "av": "GS",
+   "name": "The Goldman Sachs Group, Inc.",
+   "geprueft": false
+  },
+  {
+   "hub": "GSK",
+   "av": "GSK",
+   "name": "GSK plc",
+   "geprueft": false
+  },
+  {
+   "hub": "GWW",
+   "av": "GWW",
+   "name": "W.W. Grainger, Inc.",
+   "geprueft": false
+  },
+  {
+   "hub": "HAL",
+   "av": "HAL",
+   "name": "HALLIBURTON COMPANY",
+   "geprueft": false
+  },
+  {
+   "hub": "HAS",
+   "av": "HAS",
+   "name": "HASBRO, INC.",
+   "geprueft": false
+  },
+  {
+   "hub": "HBAN",
+   "av": "HBAN",
+   "name": "Huntington Bancshares Incorporated",
+   "geprueft": false
+  },
+  {
+   "hub": "HCA",
+   "av": "HCA",
+   "name": "HCA Healthcare, Inc.",
+   "geprueft": false
+  },
+  {
+   "hub": "HD",
+   "av": "HD",
+   "name": "The Home Depot, Inc.",
+   "geprueft": false
+  },
+  {
+   "hub": "HIG",
+   "av": "HIG",
+   "name": "The Hartford Insurance Group, Inc.",
+   "geprueft": false
+  },
+  {
+   "hub": "HII",
+   "av": "HII",
+   "name": "HUNTINGTON INGALLS INDUSTRIES, INC.",
+   "geprueft": false
+  },
+  {
+   "hub": "HLT",
+   "av": "HLT",
+   "name": "Hilton Worldwide Holdings Inc.",
+   "geprueft": false
+  },
+  {
+   "hub": "HMC",
+   "av": "HMC",
+   "name": "HONDA MOTOR CO., LTD.",
+   "geprueft": false
+  },
+  {
+   "hub": "HON",
+   "av": "HON",
+   "name": "Honeywell International Inc",
+   "geprueft": false
+  },
+  {
+   "hub": "HOOD",
+   "av": "HOOD",
+   "name": "Robinhood Markets, Inc.",
+   "geprueft": false
+  },
+  {
+   "hub": "HPE",
+   "av": "HPE",
+   "name": "HEWLETT PACKARD ENTERPRISE COMPANY",
+   "geprueft": false
+  },
+  {
+   "hub": "HPQ",
+   "av": "HPQ",
+   "name": "HP INC.",
+   "geprueft": false
+  },
+  {
+   "hub": "HRL",
+   "av": "HRL",
+   "name": "HORMEL FOODS CORPORATION",
+   "geprueft": false
+  },
+  {
+   "hub": "HSBC",
+   "av": "HSBC",
+   "name": "HSBC HOLDINGS PLC",
+   "geprueft": false
+  },
+  {
+   "hub": "HSIC",
+   "av": "HSIC",
+   "name": "HENRY SCHEIN, INC.",
+   "geprueft": false
+  },
+  {
+   "hub": "HST",
+   "av": "HST",
+   "name": "HOST HOTELS & RESORTS, INC.",
+   "geprueft": false
+  },
+  {
+   "hub": "HSY",
+   "av": "HSY",
+   "name": "HERSHEY CO",
+   "geprueft": false
+  },
+  {
+   "hub": "HUBB",
+   "av": "HUBB",
+   "name": "HUBBELL INC",
+   "geprueft": false
+  },
+  {
+   "hub": "HUM",
+   "av": "HUM",
+   "name": "HUMANA INC",
+   "geprueft": false
+  },
+  {
+   "hub": "HWM",
+   "av": "HWM",
+   "name": "HOWMET AEROSPACE INC.",
+   "geprueft": false
+  },
+  {
+   "hub": "IBKR",
+   "av": "IBKR",
+   "name": "INTERACTIVE BROKERS GROUP, INC.",
+   "geprueft": false
+  },
+  {
+   "hub": "IBM",
+   "av": "IBM",
+   "name": "INTERNATIONAL BUSINESS MACHINES CORPORATION",
+   "geprueft": false
+  },
+  {
+   "hub": "ICE",
+   "av": "ICE",
+   "name": "INTERCONTINENTAL EXCHANGE, INC.",
+   "geprueft": false
+  },
+  {
+   "hub": "IDXX",
+   "av": "IDXX",
+   "name": "IDEXX LABORATORIES INC /DE",
+   "geprueft": false
+  },
+  {
+   "hub": "IEX",
+   "av": "IEX",
+   "name": "IDEX CORP",
+   "geprueft": false
+  },
+  {
+   "hub": "IFF",
+   "av": "IFF",
+   "name": "INTERNATIONAL FLAVORS & FRAGRANCES INC",
+   "geprueft": false
+  },
+  {
+   "hub": "ILMN",
+   "av": "ILMN",
+   "name": "Illumina, Inc.",
+   "geprueft": false
+  },
+  {
+   "hub": "INCY",
+   "av": "INCY",
+   "name": "INCYTE CORPORATION",
+   "geprueft": false
+  },
+  {
+   "hub": "ING",
+   "av": "ING",
+   "name": "ING GROEP NV",
+   "geprueft": false
+  },
+  {
+   "hub": "INTC",
+   "av": "INTC",
+   "name": "Intel Corporation",
+   "geprueft": false
+  },
+  {
+   "hub": "INTU",
+   "av": "INTU",
+   "name": "INTUIT INC.",
+   "geprueft": false
+  },
+  {
+   "hub": "INVH",
+   "av": "INVH",
+   "name": "Invitation Homes Inc.",
+   "geprueft": false
+  },
+  {
+   "hub": "IP",
+   "av": "IP",
+   "name": "INTERNATIONAL PAPER COMPANY",
+   "geprueft": false
+  },
+  {
+   "hub": "IQV",
+   "av": "IQV",
+   "name": "IQVIA HOLDINGS INC.",
+   "geprueft": false
+  },
+  {
+   "hub": "IR",
+   "av": "IR",
+   "name": "Ingersoll Rand Inc.",
+   "geprueft": false
+  },
+  {
+   "hub": "IRM",
+   "av": "IRM",
+   "name": "IRON MOUNTAIN INC",
+   "geprueft": false
+  },
+  {
+   "hub": "ISRG",
+   "av": "ISRG",
+   "name": "Intuitive Surgical, Inc.",
+   "geprueft": false
+  },
+  {
+   "hub": "IT",
+   "av": "IT",
+   "name": "Gartner, Inc.",
+   "geprueft": false
+  },
+  {
+   "hub": "ITW",
+   "av": "ITW",
+   "name": "ILLINOIS TOOL WORKS INC",
+   "geprueft": false
+  },
+  {
+   "hub": "J",
+   "av": "J",
+   "name": "JACOBS SOLUTIONS INC.",
+   "geprueft": false
+  },
+  {
+   "hub": "JBHT",
+   "av": "JBHT",
+   "name": "J.B. HUNT TRANSPORT SERVICES, INC.",
+   "geprueft": false
+  },
+  {
+   "hub": "JBL",
+   "av": "JBL",
+   "name": "JABIL INC",
+   "geprueft": false
+  },
+  {
+   "hub": "JCI",
+   "av": "JCI",
+   "name": "JOHNSON CONTROLS INTERNATIONAL PLC",
+   "geprueft": false
+  },
+  {
+   "hub": "JKHY",
+   "av": "JKHY",
+   "name": "JACK HENRY & ASSOCIATES, INC.",
+   "geprueft": false
+  },
+  {
+   "hub": "JNJ",
+   "av": "JNJ",
+   "name": "Johnson & Johnson",
+   "geprueft": false
+  },
+  {
+   "hub": "JPM",
+   "av": "JPM",
+   "name": "JPMORGAN CHASE & CO",
+   "geprueft": false
+  },
+  {
+   "hub": "KDP",
+   "av": "KDP",
+   "name": "Keurig Dr Pepper Inc.",
+   "geprueft": false
+  },
+  {
+   "hub": "KEY",
+   "av": "KEY",
+   "name": "KeyCorp",
+   "geprueft": false
+  },
+  {
+   "hub": "KEYS",
+   "av": "KEYS",
+   "name": "KEYSIGHT TECHNOLOGIES, INC.",
+   "geprueft": false
+  },
+  {
+   "hub": "KHC",
+   "av": "KHC",
+   "name": "Kraft Heinz Co",
+   "geprueft": false
+  },
+  {
+   "hub": "KIM",
+   "av": "KIM",
+   "name": "Kimco Realty Corporation",
+   "geprueft": false
+  },
+  {
+   "hub": "KKR",
+   "av": "KKR",
+   "name": "KKR & CO. INC.",
+   "geprueft": false
+  },
+  {
+   "hub": "KLAC",
+   "av": "KLAC",
+   "name": "KLA CORP",
+   "geprueft": false
+  },
+  {
+   "hub": "KMB",
+   "av": "KMB",
+   "name": "KIMBERLY-CLARK CORPORATION",
+   "geprueft": false
+  },
+  {
+   "hub": "KMI",
+   "av": "KMI",
+   "name": "KINDER MORGAN, INC.",
+   "geprueft": false
+  },
+  {
+   "hub": "KO",
+   "av": "KO",
+   "name": "COCA COLA CO",
+   "geprueft": false
+  },
+  {
+   "hub": "KR",
+   "av": "KR",
+   "name": "KROGER CO",
+   "geprueft": false
+  },
+  {
+   "hub": "L",
+   "av": "L",
+   "name": "LOEWS CORP",
+   "geprueft": false
+  },
+  {
+   "hub": "LDOS",
+   "av": "LDOS",
+   "name": "Leidos Holdings, Inc.",
+   "geprueft": false
+  },
+  {
+   "hub": "LEN",
+   "av": "LEN",
+   "name": "LENNAR CORP /NEW/",
+   "geprueft": false
+  },
+  {
+   "hub": "LH",
+   "av": "LH",
+   "name": "LABCORP HOLDINGS INC.",
+   "geprueft": false
+  },
+  {
+   "hub": "LHX",
+   "av": "LHX",
+   "name": "L3HARRIS TECHNOLOGIES, INC. /DE/",
+   "geprueft": false
+  },
+  {
+   "hub": "LII",
+   "av": "LII",
+   "name": "LENNOX INTERNATIONAL INC",
+   "geprueft": false
+  },
+  {
+   "hub": "LIN",
+   "av": "LIN",
+   "name": "Linde plc",
+   "geprueft": false
+  },
+  {
+   "hub": "LITE",
+   "av": "LITE",
+   "name": "Lumentum Holdings Inc.",
+   "geprueft": false
+  },
+  {
+   "hub": "LLY",
+   "av": "LLY",
+   "name": "ELI LILLY AND COMPANY",
+   "geprueft": false
+  },
+  {
+   "hub": "LMT",
+   "av": "LMT",
+   "name": "LOCKHEED MARTIN CORPORATION",
+   "geprueft": false
+  },
+  {
+   "hub": "LNT",
+   "av": "LNT",
+   "name": "ALLIANT ENERGY CORPORATION",
+   "geprueft": false
+  },
+  {
+   "hub": "LOW",
+   "av": "LOW",
+   "name": "LOWES COMPANIES INC",
+   "geprueft": false
+  },
+  {
+   "hub": "LRCX",
+   "av": "LRCX",
+   "name": "LAM RESEARCH CORPORATION",
+   "geprueft": false
+  },
+  {
+   "hub": "LULU",
+   "av": "LULU",
+   "name": "lululemon athletica inc.",
+   "geprueft": false
+  },
+  {
+   "hub": "LUV",
+   "av": "LUV",
+   "name": "SOUTHWEST AIRLINES CO",
+   "geprueft": false
+  },
+  {
+   "hub": "LVS",
+   "av": "LVS",
+   "name": "LAS VEGAS SANDS CORP",
+   "geprueft": false
+  },
+  {
+   "hub": "LYG",
+   "av": "LYG",
+   "name": "Lloyds Banking Group plc",
+   "geprueft": false
+  },
+  {
+   "hub": "LYV",
+   "av": "LYV",
+   "name": "LIVE NATION ENTERTAINMENT, INC.",
+   "geprueft": false
+  },
+  {
+   "hub": "MA",
+   "av": "MA",
+   "name": "Mastercard Incorporated",
+   "geprueft": false
+  },
+  {
+   "hub": "MAA",
+   "av": "MAA",
+   "name": "MID-AMERICA APARTMENT COMMUNITIES, INC.",
+   "geprueft": false
+  },
+  {
+   "hub": "MAIN",
+   "av": "MAIN",
+   "name": "Main Street Capital Corporation",
+   "geprueft": false
+  },
+  {
+   "hub": "MAR",
+   "av": "MAR",
+   "name": "MARRIOTT INTERNATIONAL INC /MD/",
+   "geprueft": false
+  },
+  {
+   "hub": "MAS",
+   "av": "MAS",
+   "name": "Masco Corporation",
+   "geprueft": false
+  },
+  {
+   "hub": "MCD",
+   "av": "MCD",
+   "name": "MCDONALDS CORP",
+   "geprueft": false
+  },
+  {
+   "hub": "MCHP",
+   "av": "MCHP",
+   "name": "MICROCHIP TECHNOLOGY INC",
+   "geprueft": false
+  },
+  {
+   "hub": "MCK",
+   "av": "MCK",
+   "name": "McKESSON CORPORATION",
+   "geprueft": false
+  },
+  {
+   "hub": "MCO",
+   "av": "MCO",
+   "name": "MOODYS CORP /DE/",
+   "geprueft": false
+  },
+  {
+   "hub": "MDLZ",
+   "av": "MDLZ",
+   "name": "Mondelez International, Inc.",
+   "geprueft": false
+  },
+  {
+   "hub": "MDT",
+   "av": "MDT",
+   "name": "Medtronic plc",
+   "geprueft": false
+  },
+  {
+   "hub": "MET",
+   "av": "MET",
+   "name": "MetLife, Inc.",
+   "geprueft": false
+  },
+  {
+   "hub": "META",
+   "av": "META",
+   "name": "Meta Platforms, Inc.",
+   "geprueft": false
+  },
+  {
+   "hub": "MGM",
+   "av": "MGM",
+   "name": "MGM Resorts International",
+   "geprueft": false
+  },
+  {
+   "hub": "MKC",
+   "av": "MKC",
+   "name": "McCORMICK & COMPANY, INCORPORATED",
+   "geprueft": false
+  },
+  {
+   "hub": "MLM",
+   "av": "MLM",
+   "name": "MARTIN MARIETTA MATERIALS, INC.",
+   "geprueft": false
+  },
+  {
+   "hub": "MMM",
+   "av": "MMM",
+   "name": "3M COMPANY",
+   "geprueft": false
+  },
+  {
+   "hub": "MNST",
+   "av": "MNST",
+   "name": "Monster Beverage Corp",
+   "geprueft": false
+  },
+  {
+   "hub": "MO",
+   "av": "MO",
+   "name": "Altria Group, Inc.",
+   "geprueft": false
+  },
+  {
+   "hub": "MOS",
+   "av": "MOS",
+   "name": "MOSAIC CO",
+   "geprueft": false
+  },
+  {
+   "hub": "MPC",
+   "av": "MPC",
+   "name": "Marathon Petroleum Corporation",
+   "geprueft": false
+  },
+  {
+   "hub": "MPWR",
+   "av": "MPWR",
+   "name": "Monolithic Power Systems, Inc.",
+   "geprueft": false
+  },
+  {
+   "hub": "MRK",
+   "av": "MRK",
+   "name": "Merck & Co., Inc.",
+   "geprueft": false
+  },
+  {
+   "hub": "MRNA",
+   "av": "MRNA",
+   "name": "Moderna, Inc.",
+   "geprueft": false
+  },
+  {
+   "hub": "MRSH",
+   "av": "MRSH",
+   "name": "MARSH & MCLENNAN COMPANIES, INC.",
+   "geprueft": false
+  },
+  {
+   "hub": "MRVL",
+   "av": "MRVL",
+   "name": "MARVELL TECHNOLOGY, INC",
+   "geprueft": false
+  },
+  {
+   "hub": "MS",
+   "av": "MS",
+   "name": "MORGAN STANLEY",
+   "geprueft": false
+  },
+  {
+   "hub": "MSCI",
+   "av": "MSCI",
+   "name": "MSCI INC.",
+   "geprueft": false
+  },
+  {
+   "hub": "MSFT",
+   "av": "MSFT",
+   "name": "MICROSOFT CORP",
+   "geprueft": false
+  },
+  {
+   "hub": "MSI",
+   "av": "MSI",
+   "name": "MOTOROLA SOLUTIONS, INC.",
+   "geprueft": false
+  },
+  {
+   "hub": "MTB",
+   "av": "MTB",
+   "name": "M&T BANK CORPORATION",
+   "geprueft": false
+  },
+  {
+   "hub": "MTD",
+   "av": "MTD",
+   "name": "Mettler-Toledo International Inc.",
+   "geprueft": false
+  },
+  {
+   "hub": "MU",
+   "av": "MU",
+   "name": "Micron Technology, Inc.",
+   "geprueft": false
+  },
+  {
+   "hub": "MUFG",
+   "av": "MUFG",
+   "name": "Mitsubishi UFJ Financial Group, Inc.",
+   "geprueft": false
+  },
+  {
+   "hub": "NDAQ",
+   "av": "NDAQ",
+   "name": "Nasdaq, Inc.",
+   "geprueft": false
+  },
+  {
+   "hub": "NDSN",
+   "av": "NDSN",
+   "name": "NORDSON CORPORATION",
+   "geprueft": false
+  },
+  {
+   "hub": "NEE",
+   "av": "NEE",
+   "name": "NEXTERA ENERGY INC",
+   "geprueft": false
+  },
+  {
+   "hub": "NEM",
+   "av": "NEM",
+   "name": "NEWMONT CORPORATION",
+   "geprueft": false
+  },
+  {
+   "hub": "NFLX",
+   "av": "NFLX",
+   "name": "Netflix, Inc.",
+   "geprueft": false
+  },
+  {
+   "hub": "NI",
+   "av": "NI",
+   "name": "NISOURCE INC.",
+   "geprueft": false
+  },
+  {
+   "hub": "NKE",
+   "av": "NKE",
+   "name": "NIKE, Inc.",
+   "geprueft": false
+  },
+  {
+   "hub": "NOC",
+   "av": "NOC",
+   "name": "NORTHROP GRUMMAN CORP /DE/",
+   "geprueft": false
+  },
+  {
+   "hub": "NOK",
+   "av": "NOK",
+   "name": "Nokia Corporation",
+   "geprueft": false
+  },
+  {
+   "hub": "NOW",
+   "av": "NOW",
+   "name": "SERVICENOW, INC.",
+   "geprueft": false
+  },
+  {
+   "hub": "NRG",
+   "av": "NRG",
+   "name": "NRG ENERGY, INC.",
+   "geprueft": false
+  },
+  {
+   "hub": "NSC",
+   "av": "NSC",
+   "name": "NORFOLK SOUTHERN CORP",
+   "geprueft": false
+  },
+  {
+   "hub": "NTAP",
+   "av": "NTAP",
+   "name": "NetApp, Inc.",
+   "geprueft": false
+  },
+  {
+   "hub": "NTRS",
+   "av": "NTRS",
+   "name": "NORTHERN TRUST CORP",
+   "geprueft": false
+  },
+  {
+   "hub": "NUE",
+   "av": "NUE",
+   "name": "NUCOR CORPORATION",
+   "geprueft": false
+  },
+  {
+   "hub": "NVO",
+   "av": "NVO",
+   "name": "NOVO NORDISK A/S",
+   "geprueft": false
+  },
+  {
+   "hub": "NVR",
+   "av": "NVR",
+   "name": "NVR, Inc.",
+   "geprueft": false
+  },
+  {
+   "hub": "NVS",
+   "av": "NVS",
+   "name": "Novartis AG",
+   "geprueft": false
+  },
+  {
+   "hub": "NWS",
+   "av": "NWS",
+   "name": "NEWS CORPORATION",
+   "geprueft": false
+  },
+  {
+   "hub": "NWSA",
+   "av": "NWSA",
+   "name": "NEWS CORPORATION",
+   "geprueft": false
+  },
+  {
+   "hub": "NXPI",
+   "av": "NXPI",
+   "name": "NXP Semiconductors N.V.",
+   "geprueft": false
+  },
+  {
+   "hub": "O",
+   "av": "O",
+   "name": "REALTY INCOME CORPORATION",
+   "geprueft": false
+  },
+  {
+   "hub": "ODFL",
+   "av": "ODFL",
+   "name": "OLD DOMINION FREIGHT LINE, INC.",
+   "geprueft": false
+  },
+  {
+   "hub": "OKE",
+   "av": "OKE",
+   "name": "ONEOK, Inc.",
+   "geprueft": false
+  },
+  {
+   "hub": "OMC",
+   "av": "OMC",
+   "name": "OMNICOM GROUP INC.",
+   "geprueft": false
+  },
+  {
+   "hub": "ON",
+   "av": "ON",
+   "name": "ON SEMICONDUCTOR CORP",
+   "geprueft": false
+  },
+  {
+   "hub": "ORCL",
+   "av": "ORCL",
+   "name": "ORACLE CORP",
+   "geprueft": false
+  },
+  {
+   "hub": "ORLY",
+   "av": "ORLY",
+   "name": "O Reilly Automotive Inc",
+   "geprueft": false
+  },
+  {
+   "hub": "OTIS",
+   "av": "OTIS",
+   "name": "Otis Worldwide Corporation",
+   "geprueft": false
+  },
+  {
+   "hub": "OXY",
+   "av": "OXY",
+   "name": "OCCIDENTAL PETROLEUM CORPORATION",
+   "geprueft": false
+  },
+  {
+   "hub": "P",
+   "av": "P",
+   "name": "Everpure, Inc.",
+   "geprueft": false
+  },
+  {
+   "hub": "PANW",
+   "av": "PANW",
+   "name": "Palo Alto Networks, Inc.",
+   "geprueft": false
+  },
+  {
+   "hub": "PAYX",
+   "av": "PAYX",
+   "name": "Paychex, Inc.",
+   "geprueft": false
+  },
+  {
+   "hub": "PCAR",
+   "av": "PCAR",
+   "name": "PACCAR Inc",
+   "geprueft": false
+  },
+  {
+   "hub": "PCG",
+   "av": "PCG",
+   "name": "PG&E CORP",
+   "geprueft": false
+  },
+  {
+   "hub": "PEG",
+   "av": "PEG",
+   "name": "PUBLIC SERVICE ENTERPRISE GROUP INC",
+   "geprueft": false
+  },
+  {
+   "hub": "PEP",
+   "av": "PEP",
+   "name": "PEPSICO INC",
+   "geprueft": false
+  },
+  {
+   "hub": "PFE",
+   "av": "PFE",
+   "name": "PFIZER INC",
+   "geprueft": false
+  },
+  {
+   "hub": "PFG",
+   "av": "PFG",
+   "name": "PRINCIPAL FINANCIAL GROUP, INC",
+   "geprueft": false
+  },
+  {
+   "hub": "PG",
+   "av": "PG",
+   "name": "PROCTER & GAMBLE Co",
+   "geprueft": false
+  },
+  {
+   "hub": "PGR",
+   "av": "PGR",
+   "name": "PROGRESSIVE CORP/OH/",
+   "geprueft": false
+  },
+  {
+   "hub": "PH",
+   "av": "PH",
+   "name": "PARKER-HANNIFIN CORPORATION",
+   "geprueft": false
+  },
+  {
+   "hub": "PHG",
+   "av": "PHG",
+   "name": "KONINKLIJKE PHILIPS NV",
+   "geprueft": false
+  },
+  {
+   "hub": "PHM",
+   "av": "PHM",
+   "name": "PULTEGROUP, INC.",
+   "geprueft": false
+  },
+  {
+   "hub": "PKG",
+   "av": "PKG",
+   "name": "PACKAGING CORP OF AMERICA",
+   "geprueft": false
+  },
+  {
+   "hub": "PLD",
+   "av": "PLD",
+   "name": "Prologis, Inc.",
+   "geprueft": false
+  },
+  {
+   "hub": "PLTR",
+   "av": "PLTR",
+   "name": "Palantir Technologies Inc.",
+   "geprueft": false
+  },
+  {
+   "hub": "PM",
+   "av": "PM",
+   "name": "Philip Morris International Inc.",
+   "geprueft": false
+  },
+  {
+   "hub": "PNC",
+   "av": "PNC",
+   "name": "PNC Financial Services Group, Inc.",
+   "geprueft": false
+  },
+  {
+   "hub": "PNW",
+   "av": "PNW",
+   "name": "PINNACLE WEST CAPITAL CORPORATION",
+   "geprueft": false
+  },
+  {
+   "hub": "PODD",
+   "av": "PODD",
+   "name": "INSULET CORPORATION",
+   "geprueft": false
+  },
+  {
+   "hub": "PPG",
+   "av": "PPG",
+   "name": "PPG INDUSTRIES INC",
+   "geprueft": false
+  },
+  {
+   "hub": "PPL",
+   "av": "PPL",
+   "name": "PPL Corp",
+   "geprueft": false
+  },
+  {
+   "hub": "PRU",
+   "av": "PRU",
+   "name": "Prudential Financial, Inc.",
+   "geprueft": false
+  },
+  {
+   "hub": "PSA",
+   "av": "PSA",
+   "name": "Public Storage",
+   "geprueft": false
+  },
+  {
+   "hub": "PSX",
+   "av": "PSX",
+   "name": "Phillips 66",
+   "geprueft": false
+  },
+  {
+   "hub": "PTC",
+   "av": "PTC",
+   "name": "PTC Inc.",
+   "geprueft": false
+  },
+  {
+   "hub": "PWR",
+   "av": "PWR",
+   "name": "Quanta Services, Inc.",
+   "geprueft": false
+  },
+  {
+   "hub": "PYPL",
+   "av": "PYPL",
+   "name": "PayPal Holdings, Inc.",
+   "geprueft": false
+  },
+  {
+   "hub": "Q",
+   "av": "Q",
+   "name": "QNITY ELECTRONICS, INC.",
+   "geprueft": false
+  },
+  {
+   "hub": "QCOM",
+   "av": "QCOM",
+   "name": "QUALCOMM INC/DE",
+   "geprueft": false
+  },
+  {
+   "hub": "RDDT",
+   "av": "RDDT",
+   "name": "Reddit, Inc.",
+   "geprueft": false
+  },
+  {
+   "hub": "REG",
+   "av": "REG",
+   "name": "REGENCY CENTERS CORPORATION",
+   "geprueft": false
+  },
+  {
+   "hub": "REGN",
+   "av": "REGN",
+   "name": "REGENERON PHARMACEUTICALS, INC.",
+   "geprueft": false
+  },
+  {
+   "hub": "RF",
+   "av": "RF",
+   "name": "Regions Financial Corporation",
+   "geprueft": false
+  },
+  {
+   "hub": "RIO",
+   "av": "RIO",
+   "name": "RIO TINTO PLC",
+   "geprueft": false
+  },
+  {
+   "hub": "RJF",
+   "av": "RJF",
+   "name": "RAYMOND JAMES FINANCIAL, INC.",
+   "geprueft": false
+  },
+  {
+   "hub": "RL",
+   "av": "RL",
+   "name": "Ralph Lauren Corporation",
+   "geprueft": false
+  },
+  {
+   "hub": "RMD",
+   "av": "RMD",
+   "name": "ResMed Inc.",
+   "geprueft": false
+  },
+  {
+   "hub": "ROK",
+   "av": "ROK",
+   "name": "Rockwell Automation, Inc.",
+   "geprueft": false
+  },
+  {
+   "hub": "ROL",
+   "av": "ROL",
+   "name": "ROLLINS, INC.",
+   "geprueft": false
+  },
+  {
+   "hub": "ROP",
+   "av": "ROP",
+   "name": "ROPER TECHNOLOGIES, INC.",
+   "geprueft": false
+  },
+  {
+   "hub": "ROST",
+   "av": "ROST",
+   "name": "Ross Stores, Inc.",
+   "geprueft": false
+  },
+  {
+   "hub": "RSG",
+   "av": "RSG",
+   "name": "REPUBLIC SERVICES, INC.",
+   "geprueft": false
+  },
+  {
+   "hub": "RTX",
+   "av": "RTX",
+   "name": "RTX CORPORATION",
+   "geprueft": false
+  },
+  {
+   "hub": "RVTY",
+   "av": "RVTY",
+   "name": "REVVITY, INC",
+   "geprueft": false
+  },
+  {
+   "hub": "SAN",
+   "av": "SAN",
+   "name": "Banco Santander, S.A.",
+   "geprueft": false
+  },
+  {
+   "hub": "SAP",
+   "av": "SAP",
+   "name": "SAP SE",
+   "geprueft": false
+  },
+  {
+   "hub": "SBAC",
+   "av": "SBAC",
+   "name": "SBA COMMUNICATIONS CORPORATION",
+   "geprueft": false
+  },
+  {
+   "hub": "SCHW",
+   "av": "SCHW",
+   "name": "SCHWAB CHARLES CORP",
+   "geprueft": false
+  },
+  {
+   "hub": "SHEL",
+   "av": "SHEL",
+   "name": "Shell plc",
+   "geprueft": false
+  },
+  {
+   "hub": "SHW",
+   "av": "SHW",
+   "name": "THE SHERWIN-WILLIAMS COMPANY",
+   "geprueft": false
+  },
+  {
+   "hub": "SJM",
+   "av": "SJM",
+   "name": "J M SMUCKER Co",
+   "geprueft": false
+  },
+  {
+   "hub": "SKYD",
+   "av": "SKYD",
+   "name": "Skydance Corporation",
+   "geprueft": false
+  },
+  {
+   "hub": "SMCI",
+   "av": "SMCI",
+   "name": "Super Micro Computer, Inc.",
+   "geprueft": false
+  },
+  {
+   "hub": "SMFG",
+   "av": "SMFG",
+   "name": "SUMITOMO MITSUI FINANCIAL GROUP, INC.",
+   "geprueft": false
+  },
+  {
+   "hub": "SNA",
+   "av": "SNA",
+   "name": "Snap-on Inc",
+   "geprueft": false
+  },
+  {
+   "hub": "SNDK",
+   "av": "SNDK",
+   "name": "Sandisk Corporation",
+   "geprueft": false
+  },
+  {
+   "hub": "SNPS",
+   "av": "SNPS",
+   "name": "SYNOPSYS INC",
+   "geprueft": false
+  },
+  {
+   "hub": "SNY",
+   "av": "SNY",
+   "name": "Sanofi",
+   "geprueft": false
+  },
+  {
+   "hub": "SO",
+   "av": "SO",
+   "name": "SOUTHERN CO",
+   "geprueft": false
+  },
+  {
+   "hub": "SOLV",
+   "av": "SOLV",
+   "name": "SOLVENTUM CORPORATION",
+   "geprueft": false
+  },
+  {
+   "hub": "SONY",
+   "av": "SONY",
+   "name": "Sony Group Corporation",
+   "geprueft": false
+  },
+  {
+   "hub": "SPG",
+   "av": "SPG",
+   "name": "SIMON PROPERTY GROUP, INC.",
+   "geprueft": false
+  },
+  {
+   "hub": "SPGI",
+   "av": "SPGI",
+   "name": "S&P Global Inc.",
+   "geprueft": false
+  },
+  {
+   "hub": "SRE",
+   "av": "SRE",
+   "name": "SEMPRA",
+   "geprueft": false
+  },
+  {
+   "hub": "STAG",
+   "av": "STAG",
+   "name": "STAG Industrial, Inc.",
+   "geprueft": false
+  },
+  {
+   "hub": "STLA",
+   "av": "STLA",
+   "name": "Stellantis N.V.",
+   "geprueft": false
+  },
+  {
+   "hub": "STLD",
+   "av": "STLD",
+   "name": "Steel Dynamics, Inc.",
+   "geprueft": false
+  },
+  {
+   "hub": "STT",
+   "av": "STT",
+   "name": "STATE STREET CORPORATION",
+   "geprueft": false
+  },
+  {
+   "hub": "STZ",
+   "av": "STZ",
+   "name": "CONSTELLATION BRANDS, INC.",
+   "geprueft": false
+  },
+  {
+   "hub": "SW",
+   "av": "SW",
+   "name": "Smurfit Westrock plc",
+   "geprueft": false
+  },
+  {
+   "hub": "SWK",
+   "av": "SWK",
+   "name": "STANLEY BLACK & DECKER, INC.",
+   "geprueft": false
+  },
+  {
+   "hub": "SWKS",
+   "av": "SWKS",
+   "name": "Skyworks Solutions, Inc.",
+   "geprueft": false
+  },
+  {
+   "hub": "SYF",
+   "av": "SYF",
+   "name": "SYNCHRONY FINANCIAL",
+   "geprueft": false
+  },
+  {
+   "hub": "SYK",
+   "av": "SYK",
+   "name": "STRYKER CORP",
+   "geprueft": false
+  },
+  {
+   "hub": "SYY",
+   "av": "SYY",
+   "name": "Sysco Corporation",
+   "geprueft": false
+  },
+  {
+   "hub": "T",
+   "av": "T",
+   "name": "AT&T INC.",
+   "geprueft": false
+  },
+  {
+   "hub": "TDG",
+   "av": "TDG",
+   "name": "TransDigm Group Incorporated",
+   "geprueft": false
+  },
+  {
+   "hub": "TDY",
+   "av": "TDY",
+   "name": "TELEDYNE TECHNOLOGIES INC",
+   "geprueft": false
+  },
+  {
+   "hub": "TECH",
+   "av": "TECH",
+   "name": "BIO-TECHNE Corp",
+   "geprueft": false
+  },
+  {
+   "hub": "TEL",
+   "av": "TEL",
+   "name": "TE CONNECTIVITY PLC",
+   "geprueft": false
+  },
+  {
+   "hub": "TER",
+   "av": "TER",
+   "name": "TERADYNE, INC.",
+   "geprueft": false
+  },
+  {
+   "hub": "TFC",
+   "av": "TFC",
+   "name": "TRUIST FINANCIAL CORPORATION",
+   "geprueft": false
+  },
+  {
+   "hub": "TGT",
+   "av": "TGT",
+   "name": "Target Corporation",
+   "geprueft": false
+  },
+  {
+   "hub": "TJX",
+   "av": "TJX",
+   "name": "The TJX Companies, Inc.",
+   "geprueft": false
+  },
+  {
+   "hub": "TM",
+   "av": "TM",
+   "name": "TOYOTA MOTOR CORP/",
+   "geprueft": false
+  },
+  {
+   "hub": "TMO",
+   "av": "TMO",
+   "name": "THERMO FISHER SCIENTIFIC INC.",
+   "geprueft": false
+  },
+  {
+   "hub": "TMUS",
+   "av": "TMUS",
+   "name": "T-MOBILE US, INC.",
+   "geprueft": false
+  },
+  {
+   "hub": "TPL",
+   "av": "TPL",
+   "name": "Texas Pacific Land Corporation",
+   "geprueft": false
+  },
+  {
+   "hub": "TPR",
+   "av": "TPR",
+   "name": "Tapestry, Inc",
+   "geprueft": false
+  },
+  {
+   "hub": "TRGP",
+   "av": "TRGP",
+   "name": "TARGA RESOURCES CORP.",
+   "geprueft": false
+  },
+  {
+   "hub": "TRMB",
+   "av": "TRMB",
+   "name": "TRIMBLE INC.",
+   "geprueft": false
+  },
+  {
+   "hub": "TROW",
+   "av": "TROW",
+   "name": "PRICE T ROWE GROUP INC",
+   "geprueft": false
+  },
+  {
+   "hub": "TRV",
+   "av": "TRV",
+   "name": "Travelers Companies, Inc.",
+   "geprueft": false
+  },
+  {
+   "hub": "TSCO",
+   "av": "TSCO",
+   "name": "TRACTOR SUPPLY CO /DE/",
+   "geprueft": false
+  },
+  {
+   "hub": "TSLA",
+   "av": "TSLA",
+   "name": "Tesla, Inc.",
+   "geprueft": false
+  },
+  {
+   "hub": "TSN",
+   "av": "TSN",
+   "name": "TYSON FOODS, INC.",
+   "geprueft": false
+  },
+  {
+   "hub": "TTE",
+   "av": "TTE",
+   "name": "TotalEnergies SE",
+   "geprueft": false
+  },
+  {
+   "hub": "TTWO",
+   "av": "TTWO",
+   "name": "TAKE-TWO INTERACTIVE SOFTWARE, INC.",
+   "geprueft": false
+  },
+  {
+   "hub": "TWLO",
+   "av": "TWLO",
+   "name": "TWILIO INC.",
+   "geprueft": false
+  },
+  {
+   "hub": "TXN",
+   "av": "TXN",
+   "name": "TEXAS INSTRUMENTS INC",
+   "geprueft": false
+  },
+  {
+   "hub": "TXT",
+   "av": "TXT",
+   "name": "TEXTRON INC",
+   "geprueft": false
+  },
+  {
+   "hub": "TYL",
+   "av": "TYL",
+   "name": "TYLER TECHNOLOGIES, INC.",
+   "geprueft": false
+  },
+  {
+   "hub": "UAL",
+   "av": "UAL",
+   "name": "United Airlines Holdings, Inc.",
+   "geprueft": false
+  },
+  {
+   "hub": "UBER",
+   "av": "UBER",
+   "name": "UBER TECHNOLOGIES, INC.",
+   "geprueft": false
+  },
+  {
+   "hub": "UBS",
+   "av": "UBS",
+   "name": "UBS Group AG",
+   "geprueft": false
+  },
+  {
+   "hub": "UDR",
+   "av": "UDR",
+   "name": "UDR, Inc.",
+   "geprueft": false
+  },
+  {
+   "hub": "UHS",
+   "av": "UHS",
+   "name": "UNIVERSAL HEALTH SERVICES, INC.",
+   "geprueft": false
+  },
+  {
+   "hub": "UL",
+   "av": "UL",
+   "name": "UNILEVER PLC",
+   "geprueft": false
+  },
+  {
+   "hub": "ULTA",
+   "av": "ULTA",
+   "name": "ULTA BEAUTY, INC.",
+   "geprueft": false
+  },
+  {
+   "hub": "UNH",
+   "av": "UNH",
+   "name": "UnitedHealth Group Incorporated",
+   "geprueft": false
+  },
+  {
+   "hub": "UNP",
+   "av": "UNP",
+   "name": "UNION PACIFIC CORP",
+   "geprueft": false
+  },
+  {
+   "hub": "UPS",
+   "av": "UPS",
+   "name": "United Parcel Service, Inc.",
+   "geprueft": false
+  },
+  {
+   "hub": "URI",
+   "av": "URI",
+   "name": "United Rentals, Inc.",
+   "geprueft": false
+  },
+  {
+   "hub": "USB",
+   "av": "USB",
+   "name": "US BANCORP \\DE\\",
+   "geprueft": false
+  },
+  {
+   "hub": "V",
+   "av": "V",
+   "name": "VISA INC.",
+   "geprueft": false
+  },
+  {
+   "hub": "VEEV",
+   "av": "VEEV",
+   "name": "Veeva Systems Inc.",
+   "geprueft": false
+  },
+  {
+   "hub": "VICI",
+   "av": "VICI",
+   "name": "VICI Properties Inc.",
+   "geprueft": false
+  },
+  {
+   "hub": "VLO",
+   "av": "VLO",
+   "name": "VALERO ENERGY CORP/TX",
+   "geprueft": false
+  },
+  {
+   "hub": "VLTO",
+   "av": "VLTO",
+   "name": "VERALTO CORPORATION",
+   "geprueft": false
+  },
+  {
+   "hub": "VMC",
+   "av": "VMC",
+   "name": "VULCAN MATERIALS COMPANY",
+   "geprueft": false
+  },
+  {
+   "hub": "VMRK",
+   "av": "VMRK",
+   "name": "Vivmark Residential",
+   "geprueft": false
+  },
+  {
+   "hub": "VOD",
+   "av": "VOD",
+   "name": "VODAFONE GROUP PUBLIC LTD CO",
+   "geprueft": false
+  },
+  {
+   "hub": "VRSK",
+   "av": "VRSK",
+   "name": "Verisk Analytics, Inc.",
+   "geprueft": false
+  },
+  {
+   "hub": "VRSN",
+   "av": "VRSN",
+   "name": "VERISIGN INC/CA",
+   "geprueft": false
+  },
+  {
+   "hub": "VRT",
+   "av": "VRT",
+   "name": "Vertiv Holdings Co",
+   "geprueft": false
+  },
+  {
+   "hub": "VRTX",
+   "av": "VRTX",
+   "name": "VERTEX PHARMACEUTICALS INC / MA",
+   "geprueft": false
+  },
+  {
+   "hub": "VST",
+   "av": "VST",
+   "name": "Vistra Corp.",
+   "geprueft": false
+  },
+  {
+   "hub": "VTR",
+   "av": "VTR",
+   "name": "Ventas, Inc.",
+   "geprueft": false
+  },
+  {
+   "hub": "VTRS",
+   "av": "VTRS",
+   "name": "VIATRIS INC.",
+   "geprueft": false
+  },
+  {
+   "hub": "VZ",
+   "av": "VZ",
+   "name": "Verizon Communications Inc.",
+   "geprueft": false
+  },
+  {
+   "hub": "WAB",
+   "av": "WAB",
+   "name": "WESTINGHOUSE AIR BRAKE TECHNOLOGIES CORPORATION",
+   "geprueft": false
+  },
+  {
+   "hub": "WAT",
+   "av": "WAT",
+   "name": "Waters Corporation",
+   "geprueft": false
+  },
+  {
+   "hub": "WDAY",
+   "av": "WDAY",
+   "name": "Workday, Inc.",
+   "geprueft": false
+  },
+  {
+   "hub": "WDC",
+   "av": "WDC",
+   "name": "WESTERN DIGITAL CORPORATION",
+   "geprueft": false
+  },
+  {
+   "hub": "WEC",
+   "av": "WEC",
+   "name": "WEC ENERGY GROUP, INC.",
+   "geprueft": false
+  },
+  {
+   "hub": "WELL",
+   "av": "WELL",
+   "name": "WELLTOWER INC.",
+   "geprueft": false
+  },
+  {
+   "hub": "WFC",
+   "av": "WFC",
+   "name": "WELLS        FARGO & COMPANY/MN",
+   "geprueft": false
+  },
+  {
+   "hub": "WM",
+   "av": "WM",
+   "name": "Waste Management, Inc.",
+   "geprueft": false
+  },
+  {
+   "hub": "WMB",
+   "av": "WMB",
+   "name": "WILLIAMS COMPANIES, INC.",
+   "geprueft": false
+  },
+  {
+   "hub": "WMT",
+   "av": "WMT",
+   "name": "Walmart Inc.",
+   "geprueft": false
+  },
+  {
+   "hub": "WRB",
+   "av": "WRB",
+   "name": "BERKLEY W R CORP",
+   "geprueft": false
+  },
+  {
+   "hub": "WSM",
+   "av": "WSM",
+   "name": "WILLIAMS-SONOMA, INC.",
+   "geprueft": false
+  },
+  {
+   "hub": "WST",
+   "av": "WST",
+   "name": "WEST PHARMACEUTICAL SERVICES, INC.",
+   "geprueft": false
+  },
+  {
+   "hub": "WTW",
+   "av": "WTW",
+   "name": "WILLIS TOWERS WATSON PLC",
+   "geprueft": false
+  },
+  {
+   "hub": "WY",
+   "av": "WY",
+   "name": "WEYERHAEUSER COMPANY",
+   "geprueft": false
+  },
+  {
+   "hub": "WYNN",
+   "av": "WYNN",
+   "name": "WYNN RESORTS, LIMITED",
+   "geprueft": false
+  },
+  {
+   "hub": "XEL",
+   "av": "XEL",
+   "name": "XCEL ENERGY INC",
+   "geprueft": false
+  },
+  {
+   "hub": "XOM",
+   "av": "XOM",
+   "name": "Exxon Mobil Corporation",
+   "geprueft": false
+  },
+  {
+   "hub": "XYL",
+   "av": "XYL",
+   "name": "Xylem Inc.",
+   "geprueft": false
+  },
+  {
+   "hub": "XYZ",
+   "av": "XYZ",
+   "name": "Block, Inc.",
+   "geprueft": false
+  },
+  {
+   "hub": "YUM",
+   "av": "YUM",
+   "name": "YUM! BRANDS, INC.",
+   "geprueft": false
+  },
+  {
+   "hub": "ZBH",
+   "av": "ZBH",
+   "name": "ZIMMER BIOMET HOLDINGS, INC.",
+   "geprueft": false
+  },
+  {
+   "hub": "ZBRA",
+   "av": "ZBRA",
+   "name": "Zebra Technologies Corporation",
+   "geprueft": false
+  },
+  {
+   "hub": "ZTS",
+   "av": "ZTS",
+   "name": "Zoetis Inc.",
+   "geprueft": false
+  },
+  {
+   "hub": "OR.PA",
+   "av": "OR.PAR",
+   "name": "L'Oréal",
+   "geprueft": false
+  },
+  {
+   "hub": "CS.PA",
+   "av": "CS.PAR",
+   "name": "AXA",
+   "geprueft": false
+  },
+  {
+   "hub": "BNP.PA",
+   "av": "BNP.PAR",
+   "name": "BNP Paribas",
+   "geprueft": false
+  },
+  {
+   "hub": "ACA.PA",
+   "av": "ACA.PAR",
+   "name": "Crédit Agricole",
+   "geprueft": false
+  },
+  {
+   "hub": "GLE.PA",
+   "av": "GLE.PAR",
+   "name": "Société Générale",
+   "geprueft": false
+  },
+  {
+   "hub": "SU.PA",
+   "av": "SU.PAR",
+   "name": "Schneider Electric",
+   "geprueft": false
+  },
+  {
+   "hub": "DG.PA",
+   "av": "DG.PAR",
+   "name": "Vinci",
+   "geprueft": false
+  },
+  {
+   "hub": "SAF.PA",
+   "av": "SAF.PAR",
+   "name": "Safran",
+   "geprueft": false
+  },
+  {
+   "hub": "AIR.PA",
+   "av": "AIR.PAR",
+   "name": "Airbus",
+   "geprueft": false
+  },
+  {
+   "hub": "SGO.PA",
+   "av": "SGO.PAR",
+   "name": "Saint-Gobain",
+   "geprueft": false
+  },
+  {
+   "hub": "LR.PA",
+   "av": "LR.PAR",
+   "name": "Legrand",
+   "geprueft": false
+  },
+  {
+   "hub": "BN.PA",
+   "av": "BN.PAR",
+   "name": "Danone",
+   "geprueft": false
+  },
+  {
+   "hub": "RI.PA",
+   "av": "RI.PAR",
+   "name": "Pernod Ricard",
+   "geprueft": false
+  },
+  {
+   "hub": "CA.PA",
+   "av": "CA.PAR",
+   "name": "Carrefour",
+   "geprueft": false
+  },
+  {
+   "hub": "AI.PA",
+   "av": "AI.PAR",
+   "name": "Air Liquide",
+   "geprueft": false
+  },
+  {
+   "hub": "EL.PA",
+   "av": "EL.PAR",
+   "name": "EssilorLuxottica",
+   "geprueft": false
+  },
+  {
+   "hub": "ORA.PA",
+   "av": "ORA.PAR",
+   "name": "Orange",
+   "geprueft": false
+  },
+  {
+   "hub": "PUB.PA",
+   "av": "PUB.PAR",
+   "name": "Publicis",
+   "geprueft": false
+  },
+  {
+   "hub": "ENGI.PA",
+   "av": "ENGI.PAR",
+   "name": "Engie",
+   "geprueft": false
+  },
+  {
+   "hub": "VIE.PA",
+   "av": "VIE.PAR",
+   "name": "Veolia",
+   "geprueft": false
+  },
+  {
+   "hub": "CAP.PA",
+   "av": "CAP.PAR",
+   "name": "Capgemini",
+   "geprueft": false
+  },
+  {
+   "hub": "ML.PA",
+   "av": "ML.PAR",
+   "name": "Michelin",
+   "geprueft": false
+  },
+  {
+   "hub": "ENEL.MI",
+   "av": "ENEL.MIL",
+   "name": "Enel",
+   "geprueft": false
+  },
+  {
+   "hub": "G.MI",
+   "av": "G.MIL",
+   "name": "Generali",
+   "geprueft": false
+  },
+  {
+   "hub": "UCG.MI",
+   "av": "UCG.MIL",
+   "name": "UniCredit",
+   "geprueft": false
+  },
+  {
+   "hub": "SRG.MI",
+   "av": "SRG.MIL",
+   "name": "Snam",
+   "geprueft": false
+  },
+  {
+   "hub": "TRN.MI",
+   "av": "TRN.MIL",
+   "name": "Terna",
+   "geprueft": false
+  },
+  {
+   "hub": "RACE.MI",
+   "av": "RACE.MIL",
+   "name": "Ferrari",
+   "geprueft": false
+  },
+  {
+   "hub": "PST.MI",
+   "av": "PST.MIL",
+   "name": "Poste Italiane",
+   "geprueft": false
+  },
+  {
+   "hub": "IBE.MC",
+   "av": "IBE.BME",
+   "name": "Iberdrola",
+   "geprueft": false
+  },
+  {
+   "hub": "ITX.MC",
+   "av": "ITX.BME",
+   "name": "Inditex",
+   "geprueft": false
+  },
+  {
+   "hub": "TEF.MC",
+   "av": "TEF.BME",
+   "name": "Telefónica",
+   "geprueft": false
+  },
+  {
+   "hub": "REP.MC",
+   "av": "REP.BME",
+   "name": "Repsol",
+   "geprueft": false
+  },
+  {
+   "hub": "ELE.MC",
+   "av": "ELE.BME",
+   "name": "Endesa",
+   "geprueft": false
+  },
+  {
+   "hub": "CABK.MC",
+   "av": "CABK.BME",
+   "name": "CaixaBank",
+   "geprueft": false
+  },
+  {
+   "hub": "NTGY.MC",
+   "av": "NTGY.BME",
+   "name": "Naturgy",
+   "geprueft": false
+  },
+  {
+   "hub": "ENG.MC",
+   "av": "ENG.BME",
+   "name": "Enagás",
+   "geprueft": false
+  },
+  {
+   "hub": "AENA.MC",
+   "av": "AENA.BME",
+   "name": "Aena",
+   "geprueft": false
+  },
+  {
+   "hub": "RED.MC",
+   "av": "RED.BME",
+   "name": "Redeia",
+   "geprueft": false
+  },
+  {
+   "hub": "MAP.MC",
+   "av": "MAP.BME",
+   "name": "Mapfre",
+   "geprueft": false
+  },
+  {
+   "hub": "EDP.LS",
+   "av": "EDP.LIS",
+   "name": "EDP",
+   "geprueft": false
+  },
+  {
+   "hub": "GALP.LS",
+   "av": "GALP.LIS",
+   "name": "Galp",
+   "geprueft": false
+  },
+  {
+   "hub": "JMT.LS",
+   "av": "JMT.LIS",
+   "name": "Jerónimo Martins",
+   "geprueft": false
+  },
+  {
+   "hub": "AD.AS",
+   "av": "AD.AMS",
+   "name": "Ahold Delhaize",
+   "geprueft": false
+  },
+  {
+   "hub": "WKL.AS",
+   "av": "WKL.AMS",
+   "name": "Wolters Kluwer",
+   "geprueft": false
+  },
+  {
+   "hub": "HEIA.AS",
+   "av": "HEIA.AMS",
+   "name": "Heineken",
+   "geprueft": false
+  },
+  {
+   "hub": "KPN.AS",
+   "av": "KPN.AMS",
+   "name": "KPN",
+   "geprueft": false
+  },
+  {
+   "hub": "NN.AS",
+   "av": "NN.AMS",
+   "name": "NN Group",
+   "geprueft": false
+  },
+  {
+   "hub": "ASRNL.AS",
+   "av": "ASRNL.AMS",
+   "name": "ASR Nederland",
+   "geprueft": false
+  },
+  {
+   "hub": "ABN.AS",
+   "av": "ABN.AMS",
+   "name": "ABN Amro",
+   "geprueft": false
+  },
+  {
+   "hub": "RAND.AS",
+   "av": "RAND.AMS",
+   "name": "Randstad",
+   "geprueft": false
+  },
+  {
+   "hub": "AKZA.AS",
+   "av": "AKZA.AMS",
+   "name": "Akzo Nobel",
+   "geprueft": false
+  },
+  {
+   "hub": "PRX.AS",
+   "av": "PRX.AMS",
+   "name": "Prosus",
+   "geprueft": false
+  },
+  {
+   "hub": "ABI.BR",
+   "av": "ABI.BRU",
+   "name": "Anheuser-Busch InBev",
+   "geprueft": false
+  },
+  {
+   "hub": "KBC.BR",
+   "av": "KBC.BRU",
+   "name": "KBC",
+   "geprueft": false
+  },
+  {
+   "hub": "UCB.BR",
+   "av": "UCB.BRU",
+   "name": "UCB",
+   "geprueft": false
+  },
+  {
+   "hub": "AGS.BR",
+   "av": "AGS.BRU",
+   "name": "Ageas",
+   "geprueft": false
+  },
+  {
+   "hub": "NDA-FI.HE",
+   "av": "NDA-FI.HEL",
+   "name": "Nordea",
+   "geprueft": false
+  },
+  {
+   "hub": "KNEBV.HE",
+   "av": "KNEBV.HEL",
+   "name": "Kone",
+   "geprueft": false
+  },
+  {
+   "hub": "SAMPO.HE",
+   "av": "SAMPO.HEL",
+   "name": "Sampo",
+   "geprueft": false
+  },
+  {
+   "hub": "FORTUM.HE",
+   "av": "FORTUM.HEL",
+   "name": "Fortum",
+   "geprueft": false
+  },
+  {
+   "hub": "UPM.HE",
+   "av": "UPM.HEL",
+   "name": "UPM-Kymmene",
+   "geprueft": false
+  },
+  {
+   "hub": "NESTE.HE",
+   "av": "NESTE.HEL",
+   "name": "Neste",
+   "geprueft": false
+  },
+  {
+   "hub": "VOLCAR-B.ST",
+   "av": "VOLCAR-B.STO",
+   "name": "Volvo Cars",
+   "geprueft": false
+  },
+  {
+   "hub": "ATCO-A.ST",
+   "av": "ATCO-A.STO",
+   "name": "Atlas Copco",
+   "geprueft": false
+  },
+  {
+   "hub": "INVE-B.ST",
+   "av": "INVE-B.STO",
+   "name": "Investor AB",
+   "geprueft": false
+  },
+  {
+   "hub": "SEB-A.ST",
+   "av": "SEB-A.STO",
+   "name": "SEB",
+   "geprueft": false
+  },
+  {
+   "hub": "SHB-A.ST",
+   "av": "SHB-A.STO",
+   "name": "Handelsbanken",
+   "geprueft": false
+  },
+  {
+   "hub": "SWED-A.ST",
+   "av": "SWED-A.STO",
+   "name": "Swedbank",
+   "geprueft": false
+  },
+  {
+   "hub": "HM-B.ST",
+   "av": "HM-B.STO",
+   "name": "H&M",
+   "geprueft": false
+  },
+  {
+   "hub": "SAND.ST",
+   "av": "SAND.STO",
+   "name": "Sandvik",
+   "geprueft": false
+  },
+  {
+   "hub": "ASSA-B.ST",
+   "av": "ASSA-B.STO",
+   "name": "Assa Abloy",
+   "geprueft": false
+  },
+  {
+   "hub": "TELIA.ST",
+   "av": "TELIA.STO",
+   "name": "Telia",
+   "geprueft": false
+  },
+  {
+   "hub": "ESSITY-B.ST",
+   "av": "ESSITY-B.STO",
+   "name": "Essity",
+   "geprueft": false
+  },
+  {
+   "hub": "DSV.CO",
+   "av": "DSV.CPH",
+   "name": "DSV",
+   "geprueft": false
+  },
+  {
+   "hub": "CARL-B.CO",
+   "av": "CARL-B.CPH",
+   "name": "Carlsberg",
+   "geprueft": false
+  },
+  {
+   "hub": "MAERSK-B.CO",
+   "av": "MAERSK-B.CPH",
+   "name": "A.P. Møller-Mærsk",
+   "geprueft": false
+  },
+  {
+   "hub": "DANSKE.CO",
+   "av": "DANSKE.CPH",
+   "name": "Danske Bank",
+   "geprueft": false
+  },
+  {
+   "hub": "COLO-B.CO",
+   "av": "COLO-B.CPH",
+   "name": "Coloplast",
+   "geprueft": false
+  },
+  {
+   "hub": "EQNR.OL",
+   "av": "EQNR.OSL",
+   "name": "Equinor",
+   "geprueft": false
+  },
+  {
+   "hub": "DNB.OL",
+   "av": "DNB.OSL",
+   "name": "DNB",
+   "geprueft": false
+  },
+  {
+   "hub": "TEL.OL",
+   "av": "TEL.OSL",
+   "name": "Telenor",
+   "geprueft": false
+  },
+  {
+   "hub": "ORK.OL",
+   "av": "ORK.OSL",
+   "name": "Orkla",
+   "geprueft": false
+  },
+  {
+   "hub": "MOWI.OL",
+   "av": "MOWI.OSL",
+   "name": "Mowi",
+   "geprueft": false
+  },
+  {
+   "hub": "YAR.OL",
+   "av": "YAR.OSL",
+   "name": "Yara",
+   "geprueft": false
+  },
+  {
+   "hub": "NHY.OL",
+   "av": "NHY.OSL",
+   "name": "Norsk Hydro",
+   "geprueft": false
+  },
+  {
+   "hub": "GJF.OL",
+   "av": "GJF.OSL",
+   "name": "Gjensidige",
+   "geprueft": false
+  },
+  {
+   "hub": "OMV.VI",
+   "av": "OMV.VIE",
+   "name": "OMV",
+   "geprueft": false
+  },
+  {
+   "hub": "VER.VI",
+   "av": "VER.VIE",
+   "name": "Verbund",
+   "geprueft": false
+  },
+  {
+   "hub": "EBS.VI",
+   "av": "EBS.VIE",
+   "name": "Erste Group",
+   "geprueft": false
+  },
+  {
+   "hub": "LGEN.L",
+   "av": "LGEN.LON",
+   "name": "Legal & General",
+   "geprueft": false
+  },
+  {
+   "hub": "NG.L",
+   "av": "NG.LON",
+   "name": "National Grid",
+   "geprueft": false
+  },
+  {
+   "hub": "SSE.L",
+   "av": "SSE.LON",
+   "name": "SSE",
+   "geprueft": false
+  },
+  {
+   "hub": "IMB.L",
+   "av": "IMB.LON",
+   "name": "Imperial Brands",
+   "geprueft": false
+  },
+  {
+   "hub": "AV.L",
+   "av": "AV.LON",
+   "name": "Aviva",
+   "geprueft": false
+  },
+  {
+   "hub": "REL.L",
+   "av": "REL.LON",
+   "name": "RELX",
+   "geprueft": false
+  },
+  {
+   "hub": "TSCO.L",
+   "av": "TSCO.LON",
+   "name": "Tesco",
+   "geprueft": false
+  },
+  {
+   "hub": "MNG.L",
+   "av": "MNG.LON",
+   "name": "M&G",
+   "geprueft": false
+  },
+  {
+   "hub": "RKT.L",
+   "av": "RKT.LON",
+   "name": "Reckitt",
+   "geprueft": false
+  },
+  {
+   "hub": "BA.L",
+   "av": "BA.LON",
+   "name": "BAE Systems",
+   "geprueft": false
+  },
+  {
+   "hub": "UU.L",
+   "av": "UU.LON",
+   "name": "United Utilities",
+   "geprueft": false
+  },
+  {
+   "hub": "SVT.L",
+   "av": "SVT.LON",
+   "name": "Severn Trent",
+   "geprueft": false
+  },
+  {
+   "hub": "NWG.L",
+   "av": "NWG.LON",
+   "name": "NatWest",
+   "geprueft": false
+  },
+  {
+   "hub": "BT-A.L",
+   "av": "BT-A.LON",
+   "name": "BT Group",
+   "geprueft": false
+  },
+  {
+   "hub": "TW.L",
+   "av": "TW.LON",
+   "name": "Taylor Wimpey",
+   "geprueft": false
+  },
+  {
+   "hub": "PSN.L",
+   "av": "PSN.LON",
+   "name": "Persimmon",
+   "geprueft": false
+  },
+  {
+   "hub": "DTE.DE",
+   "av": "DTE.DEX",
+   "name": "Deutsche Telekom",
+   "geprueft": false
+  },
+  {
+   "hub": "ALV.DE",
+   "av": "ALV.DEX",
+   "name": "Allianz",
+   "geprueft": false
+  },
+  {
+   "hub": "SAP.DE",
+   "av": "SAP.DEX",
+   "name": "SAP",
+   "geprueft": false
+  },
+  {
+   "hub": "MUV2.DE",
+   "av": "MUV2.DEX",
+   "name": "Munich Re",
+   "geprueft": false
+  },
+  {
+   "hub": "SIE.DE",
+   "av": "SIE.DEX",
+   "name": "Siemens",
+   "geprueft": false
+  },
+  {
+   "hub": "BMW.DE",
+   "av": "BMW.DEX",
+   "name": "BMW",
+   "geprueft": false
+  },
+  {
+   "hub": "MBG.DE",
+   "av": "MBG.DEX",
+   "name": "Mercedes-Benz Group",
+   "geprueft": false
+  },
+  {
+   "hub": "VOW3.DE",
+   "av": "VOW3.DEX",
+   "name": "Volkswagen Vz",
+   "geprueft": false
+  },
+  {
+   "hub": "BAS.DE",
+   "av": "BAS.DEX",
+   "name": "BASF",
+   "geprueft": false
+  },
+  {
+   "hub": "BAYN.DE",
+   "av": "BAYN.DEX",
+   "name": "Bayer",
+   "geprueft": false
+  },
+  {
+   "hub": "DBK.DE",
+   "av": "DBK.DEX",
+   "name": "Deutsche Bank",
+   "geprueft": false
+  },
+  {
+   "hub": "CBK.DE",
+   "av": "CBK.DEX",
+   "name": "Commerzbank",
+   "geprueft": false
+  },
+  {
+   "hub": "EOAN.DE",
+   "av": "EOAN.DEX",
+   "name": "E.ON",
+   "geprueft": false
+  },
+  {
+   "hub": "RWE.DE",
+   "av": "RWE.DEX",
+   "name": "RWE",
+   "geprueft": false
+  },
+  {
+   "hub": "DHL.DE",
+   "av": "DHL.DEX",
+   "name": "DHL Group",
+   "geprueft": false
+  },
+  {
+   "hub": "ADS.DE",
+   "av": "ADS.DEX",
+   "name": "Adidas",
+   "geprueft": false
+  },
+  {
+   "hub": "BEI.DE",
+   "av": "BEI.DEX",
+   "name": "Beiersdorf",
+   "geprueft": false
+  },
+  {
+   "hub": "BNR.DE",
+   "av": "BNR.DEX",
+   "name": "Brenntag",
+   "geprueft": false
+  },
+  {
+   "hub": "CON.DE",
+   "av": "CON.DEX",
+   "name": "Continental",
+   "geprueft": false
+  },
+  {
+   "hub": "DTG.DE",
+   "av": "DTG.DEX",
+   "name": "Daimler Truck",
+   "geprueft": false
+  },
+  {
+   "hub": "DB1.DE",
+   "av": "DB1.DEX",
+   "name": "Deutsche Börse",
+   "geprueft": false
+  },
+  {
+   "hub": "FME.DE",
+   "av": "FME.DEX",
+   "name": "Fresenius Medical Care",
+   "geprueft": false
+  },
+  {
+   "hub": "HNR1.DE",
+   "av": "HNR1.DEX",
+   "name": "Hannover Rück",
+   "geprueft": false
+  },
+  {
+   "hub": "HEI.DE",
+   "av": "HEI.DEX",
+   "name": "Heidelberg Materials",
+   "geprueft": false
+  },
+  {
+   "hub": "HEN3.DE",
+   "av": "HEN3.DEX",
+   "name": "Henkel Vz",
+   "geprueft": false
+  },
+  {
+   "hub": "IFX.DE",
+   "av": "IFX.DEX",
+   "name": "Infineon",
+   "geprueft": false
+  },
+  {
+   "hub": "MRK.DE",
+   "av": "MRK.DEX",
+   "name": "Merck KGaA",
+   "geprueft": false
+  },
+  {
+   "hub": "MTX.DE",
+   "av": "MTX.DEX",
+   "name": "MTU Aero Engines",
+   "geprueft": false
+  },
+  {
+   "hub": "P911.DE",
+   "av": "P911.DEX",
+   "name": "Porsche AG Vz",
+   "geprueft": false
+  },
+  {
+   "hub": "PAH3.DE",
+   "av": "PAH3.DEX",
+   "name": "Porsche Automobil Holding",
+   "geprueft": false
+  },
+  {
+   "hub": "RHM.DE",
+   "av": "RHM.DEX",
+   "name": "Rheinmetall",
+   "geprueft": false
+  },
+  {
+   "hub": "ENR.DE",
+   "av": "ENR.DEX",
+   "name": "Siemens Energy",
+   "geprueft": false
+  },
+  {
+   "hub": "SY1.DE",
+   "av": "SY1.DEX",
+   "name": "Symrise",
+   "geprueft": false
+  },
+  {
+   "hub": "VNA.DE",
+   "av": "VNA.DEX",
+   "name": "Vonovia",
+   "geprueft": false
+  },
+  {
+   "hub": "G24.DE",
+   "av": "G24.DEX",
+   "name": "Scout24",
+   "geprueft": false
+  },
+  {
+   "hub": "TTE.PA",
+   "av": "TTE.PAR",
+   "name": "TotalEnergies",
+   "geprueft": false
+  },
+  {
+   "hub": "AC.PA",
+   "av": "AC.PAR",
+   "name": "Accor",
+   "geprueft": false
+  },
+  {
+   "hub": "MT.AS",
+   "av": "MT.AMS",
+   "name": "ArcelorMittal",
+   "geprueft": false
+  },
+  {
+   "hub": "EN.PA",
+   "av": "EN.PAR",
+   "name": "Bouygues",
+   "geprueft": false
+  },
+  {
+   "hub": "BVI.PA",
+   "av": "BVI.PAR",
+   "name": "Bureau Veritas",
+   "geprueft": false
+  },
+  {
+   "hub": "DSY.PA",
+   "av": "DSY.PAR",
+   "name": "Dassault Systèmes",
+   "geprueft": false
+  },
+  {
+   "hub": "RNO.PA",
+   "av": "RNO.PAR",
+   "name": "Renault",
+   "geprueft": false
+  },
+  {
+   "hub": "STMPA.PA",
+   "av": "STMPA.PAR",
+   "name": "STMicroelectronics",
+   "geprueft": false
+  },
+  {
+   "hub": "HO.PA",
+   "av": "HO.PAR",
+   "name": "Thales",
+   "geprueft": false
+  },
+  {
+   "hub": "SHEL.L",
+   "av": "SHEL.LON",
+   "name": "Shell",
+   "geprueft": false
+  },
+  {
+   "hub": "AZN.L",
+   "av": "AZN.LON",
+   "name": "AstraZeneca",
+   "geprueft": false
+  },
+  {
+   "hub": "ULVR.L",
+   "av": "ULVR.LON",
+   "name": "Unilever",
+   "geprueft": false
+  },
+  {
+   "hub": "BP.L",
+   "av": "BP.LON",
+   "name": "BP",
+   "geprueft": false
+  },
+  {
+   "hub": "RIO.L",
+   "av": "RIO.LON",
+   "name": "Rio Tinto",
+   "geprueft": false
+  },
+  {
+   "hub": "GSK.L",
+   "av": "GSK.LON",
+   "name": "GSK",
+   "geprueft": false
+  },
+  {
+   "hub": "BATS.L",
+   "av": "BATS.LON",
+   "name": "British American Tobacco",
+   "geprueft": false
+  },
+  {
+   "hub": "GLEN.L",
+   "av": "GLEN.LON",
+   "name": "Glencore",
+   "geprueft": false
+  },
+  {
+   "hub": "LLOY.L",
+   "av": "LLOY.LON",
+   "name": "Lloyds Banking Group",
+   "geprueft": false
+  },
+  {
+   "hub": "RR.L",
+   "av": "RR.LON",
+   "name": "Rolls-Royce Holdings",
+   "geprueft": false
+  },
+  {
+   "hub": "LSEG.L",
+   "av": "LSEG.LON",
+   "name": "London Stock Exchange Group",
+   "geprueft": false
+  },
+  {
+   "hub": "AAL.L",
+   "av": "AAL.LON",
+   "name": "Anglo American",
+   "geprueft": false
+  },
+  {
+   "hub": "CPG.L",
+   "av": "CPG.LON",
+   "name": "Compass Group",
+   "geprueft": false
+  },
+  {
+   "hub": "PRU.L",
+   "av": "PRU.LON",
+   "name": "Prudential",
+   "geprueft": false
+  },
+  {
+   "hub": "EXPN.L",
+   "av": "EXPN.LON",
+   "name": "Experian",
+   "geprueft": false
+  },
+  {
+   "hub": "FLTR.L",
+   "av": "FLTR.LON",
+   "name": "Flutter Entertainment",
+   "geprueft": false
+  },
+  {
+   "hub": "HLN.L",
+   "av": "HLN.LON",
+   "name": "Haleon",
+   "geprueft": false
+  },
+  {
+   "hub": "ANTO.L",
+   "av": "ANTO.LON",
+   "name": "Antofagasta",
+   "geprueft": false
+  },
+  {
+   "hub": "ABF.L",
+   "av": "ABF.LON",
+   "name": "Associated British Foods",
+   "geprueft": false
+  },
+  {
+   "hub": "III.L",
+   "av": "III.LON",
+   "name": "3i Group",
+   "geprueft": false
+  },
+  {
+   "hub": "ADM.L",
+   "av": "ADM.LON",
+   "name": "Admiral Group",
+   "geprueft": false
+  },
+  {
+   "hub": "BNZL.L",
+   "av": "BNZL.LON",
+   "name": "Bunzl",
+   "geprueft": false
+  },
+  {
+   "hub": "CCH.L",
+   "av": "CCH.LON",
+   "name": "Coca-Cola HBC",
+   "geprueft": false
+  },
+  {
+   "hub": "CRDA.L",
+   "av": "CRDA.LON",
+   "name": "Croda International",
+   "geprueft": false
+  },
+  {
+   "hub": "ENT.L",
+   "av": "ENT.LON",
+   "name": "Entain",
+   "geprueft": false
+  },
+  {
+   "hub": "FRES.L",
+   "av": "FRES.LON",
+   "name": "Fresnillo",
+   "geprueft": false
+  },
+  {
+   "hub": "HWDN.L",
+   "av": "HWDN.LON",
+   "name": "Howden Joinery",
+   "geprueft": false
+  },
+  {
+   "hub": "IHG.L",
+   "av": "IHG.LON",
+   "name": "InterContinental Hotels Group",
+   "geprueft": false
+  },
+  {
+   "hub": "ITRK.L",
+   "av": "ITRK.LON",
+   "name": "Intertek Group",
+   "geprueft": false
+  },
+  {
+   "hub": "KGF.L",
+   "av": "KGF.LON",
+   "name": "Kingfisher",
+   "geprueft": false
+  },
+  {
+   "hub": "MKS.L",
+   "av": "MKS.LON",
+   "name": "Marks and Spencer",
+   "geprueft": false
+  },
+  {
+   "hub": "NXT.L",
+   "av": "NXT.LON",
+   "name": "Next",
+   "geprueft": false
+  },
+  {
+   "hub": "PSON.L",
+   "av": "PSON.LON",
+   "name": "Pearson",
+   "geprueft": false
+  },
+  {
+   "hub": "PHNX.L",
+   "av": "PHNX.LON",
+   "name": "Phoenix Group",
+   "geprueft": false
+  },
+  {
+   "hub": "RTO.L",
+   "av": "RTO.LON",
+   "name": "Rentokil Initial",
+   "geprueft": false
+  },
+  {
+   "hub": "SGE.L",
+   "av": "SGE.LON",
+   "name": "Sage Group",
+   "geprueft": false
+  },
+  {
+   "hub": "SBRY.L",
+   "av": "SBRY.LON",
+   "name": "J Sainsbury",
+   "geprueft": false
+  },
+  {
+   "hub": "SGRO.L",
+   "av": "SGRO.LON",
+   "name": "Segro",
+   "geprueft": false
+  },
+  {
+   "hub": "SN.L",
+   "av": "SN.LON",
+   "name": "Smith & Nephew",
+   "geprueft": false
+  },
+  {
+   "hub": "SMIN.L",
+   "av": "SMIN.LON",
+   "name": "Smiths Group",
+   "geprueft": false
+  },
+  {
+   "hub": "SPX.L",
+   "av": "SPX.LON",
+   "name": "Spirax Group",
+   "geprueft": false
+  },
+  {
+   "hub": "WTB.L",
+   "av": "WTB.LON",
+   "name": "Whitbread",
+   "geprueft": false
+  },
+  {
+   "hub": "WPP.L",
+   "av": "WPP.LON",
+   "name": "WPP",
+   "geprueft": false
+  },
+  {
+   "hub": "BAB.L",
+   "av": "BAB.LON",
+   "name": "Babcock International",
+   "geprueft": false
+  },
+  {
+   "hub": "EDV.L",
+   "av": "EDV.LON",
+   "name": "Endeavour Mining",
+   "geprueft": false
+  },
+  {
+   "hub": "GAW.L",
+   "av": "GAW.LON",
+   "name": "Games Workshop",
+   "geprueft": false
+  },
+  {
+   "hub": "AAF.L",
+   "av": "AAF.LON",
+   "name": "Airtel Africa",
+   "geprueft": false
+  },
+  {
+   "hub": "JD.L",
+   "av": "JD.LON",
+   "name": "JD Sports Fashion",
+   "geprueft": false
+  },
+  {
+   "hub": "BTRW.L",
+   "av": "BTRW.LON",
+   "name": "Barratt Redrow",
+   "geprueft": false
+  },
+  {
+   "hub": "DCC.L",
+   "av": "DCC.LON",
+   "name": "DCC",
+   "geprueft": false
+  },
+  {
+   "hub": "CTEC.L",
+   "av": "CTEC.LON",
+   "name": "ConvaTec",
+   "geprueft": false
+  },
+  {
+   "hub": "CNA.L",
+   "av": "CNA.LON",
+   "name": "Centrica",
+   "geprueft": false
+  },
+  {
+   "hub": "AUTO.L",
+   "av": "AUTO.LON",
+   "name": "Auto Trader Group",
+   "geprueft": false
+  },
+  {
+   "hub": "ROG.SW",
+   "av": "ROG.SWX",
+   "name": "Roche",
+   "geprueft": false
+  },
+  {
+   "hub": "PGHN.SW",
+   "av": "PGHN.SWX",
+   "name": "Partners Group",
+   "geprueft": false
+  },
+  {
+   "hub": "SDZ.SW",
+   "av": "SDZ.SWX",
+   "name": "Sandoz",
+   "geprueft": false
+  },
+  {
+   "hub": "SIKA.SW",
+   "av": "SIKA.SWX",
+   "name": "Sika",
+   "geprueft": false
+  },
+  {
+   "hub": "SLHN.SW",
+   "av": "SLHN.SWX",
+   "name": "Swiss Life",
+   "geprueft": false
+  },
+  {
+   "hub": "SREN.SW",
+   "av": "SREN.SWX",
+   "name": "Swiss Re",
+   "geprueft": false
+  },
+  {
+   "hub": "UBSG.SW",
+   "av": "UBSG.SWX",
+   "name": "UBS",
+   "geprueft": false
+  },
+  {
+   "hub": "ZURN.SW",
+   "av": "ZURN.SWX",
+   "name": "Zurich Insurance",
+   "geprueft": false
+  },
+  {
+   "hub": "NOVN.SW",
+   "av": "NOVN.SWX",
+   "name": "Novartis",
+   "geprueft": false
+  },
+  {
+   "hub": "NESN.SW",
+   "av": "NESN.SWX",
+   "name": "Nestlé",
+   "geprueft": false
+  },
+  {
+   "hub": "ABBN.SW",
+   "av": "ABBN.SWX",
+   "name": "ABB",
+   "geprueft": false
+  },
+  {
+   "hub": "ALC.SW",
+   "av": "ALC.SWX",
+   "name": "Alcon",
+   "geprueft": false
+  },
+  {
+   "hub": "GALD.SW",
+   "av": "GALD.SWX",
+   "name": "Galderma",
+   "geprueft": false
+  },
+  {
+   "hub": "GEBN.SW",
+   "av": "GEBN.SWX",
+   "name": "Geberit",
+   "geprueft": false
+  },
+  {
+   "hub": "GIVN.SW",
+   "av": "GIVN.SWX",
+   "name": "Givaudan",
+   "geprueft": false
+  },
+  {
+   "hub": "HOLN.SW",
+   "av": "HOLN.SWX",
+   "name": "Holcim",
+   "geprueft": false
+  },
+  {
+   "hub": "AMRZ.SW",
+   "av": "AMRZ.SWX",
+   "name": "Amrize",
+   "geprueft": false
+  },
+  {
+   "hub": "LOGN.SW",
+   "av": "LOGN.SWX",
+   "name": "Logitech",
+   "geprueft": false
+  },
+  {
+   "hub": "LONN.SW",
+   "av": "LONN.SWX",
+   "name": "Lonza",
+   "geprueft": false
+  },
+  {
+   "hub": "SCMN.SW",
+   "av": "SCMN.SWX",
+   "name": "Swisscom",
+   "geprueft": false
+  },
+  {
+   "hub": "KNIN.SW",
+   "av": "KNIN.SWX",
+   "name": "Kuehne+Nagel",
+   "geprueft": false
+  },
+  {
+   "hub": "SOON.SW",
+   "av": "SOON.SWX",
+   "name": "Sonova",
+   "geprueft": false
+  },
+  {
+   "hub": "STMN.SW",
+   "av": "STMN.SWX",
+   "name": "Straumann",
+   "geprueft": false
+  },
+  {
+   "hub": "SGSN.SW",
+   "av": "SGSN.SWX",
+   "name": "SGS",
+   "geprueft": false
+  },
+  {
+   "hub": "SCHP.SW",
+   "av": "SCHP.SWX",
+   "name": "Schindler (Partizipationsschein)",
+   "geprueft": false
+  },
+  {
+   "hub": "UHR.SW",
+   "av": "UHR.SWX",
+   "name": "Swatch Group (Inhaberaktie)",
+   "geprueft": false
+  },
+  {
+   "hub": "EMSN.SW",
+   "av": "EMSN.SWX",
+   "name": "EMS-Chemie",
+   "geprueft": false
+  },
+  {
+   "hub": "BARN.SW",
+   "av": "BARN.SWX",
+   "name": "Barry Callebaut",
+   "geprueft": false
+  },
+  {
+   "hub": "VACN.SW",
+   "av": "VACN.SWX",
+   "name": "VAT Group",
+   "geprueft": false
+  },
+  {
+   "hub": "BAER.SW",
+   "av": "BAER.SWX",
+   "name": "Julius Baer",
+   "geprueft": false
+  },
+  {
+   "hub": "BALN.SW",
+   "av": "BALN.SWX",
+   "name": "Helvetia Baloise Holding (bis 2024 Baloise Holding)",
+   "geprueft": false
+  },
+  {
+   "hub": "TEMN.SW",
+   "av": "TEMN.SWX",
+   "name": "Temenos",
+   "geprueft": false
+  },
+  {
+   "hub": "SPSN.SW",
+   "av": "SPSN.SWX",
+   "name": "Swiss Prime Site",
+   "geprueft": false
+  },
+  {
+   "hub": "PSPN.SW",
+   "av": "PSPN.SWX",
+   "name": "PSP Swiss Property",
+   "geprueft": false
+  },
+  {
+   "hub": "SUN.SW",
+   "av": "SUN.SWX",
+   "name": "Sulzer",
+   "geprueft": false
+  },
+  {
+   "hub": "TECN.SW",
+   "av": "TECN.SWX",
+   "name": "Tecan",
+   "geprueft": false
+  },
+  {
+   "hub": "CLN.SW",
+   "av": "CLN.SWX",
+   "name": "Clariant",
+   "geprueft": false
+  },
+  {
+   "hub": "DSFIR.SW",
+   "av": "DSFIR.SWX",
+   "name": "DSM-Firmenich",
+   "geprueft": false
+  },
+  {
+   "hub": "BEAN.SW",
+   "av": "BEAN.SWX",
+   "name": "Belimo",
+   "geprueft": false
+  },
+  {
+   "hub": "GALE.SW",
+   "av": "GALE.SWX",
+   "name": "Galenica",
+   "geprueft": false
+  },
+  {
+   "hub": "AVOL.SW",
+   "av": "AVOL.SWX",
+   "name": "Avolta",
+   "geprueft": false
+  },
+  {
+   "hub": "SIGN.SW",
+   "av": "SIGN.SWX",
+   "name": "SIG Group",
+   "geprueft": false
+  },
+  {
+   "hub": "BANB.SW",
+   "av": "BANB.SWX",
+   "name": "Bachem",
+   "geprueft": false
+  },
+  {
+   "hub": "LAND.SW",
+   "av": "LAND.SWX",
+   "name": "Landis+Gyr",
+   "geprueft": false
+  },
+  {
+   "hub": "ACS.MC",
+   "av": "ACS.BME",
+   "name": "ACS",
+   "geprueft": false
+  },
+  {
+   "hub": "AMS.MC",
+   "av": "AMS.BME",
+   "name": "Amadeus IT Group",
+   "geprueft": false
+  },
+  {
+   "hub": "BBVA.MC",
+   "av": "BBVA.BME",
+   "name": "BBVA",
+   "geprueft": false
+  },
+  {
+   "hub": "FER.MC",
+   "av": "FER.BME",
+   "name": "Ferrovial",
+   "geprueft": false
+  },
+  {
+   "hub": "SAN.MC",
+   "av": "SAN.BME",
+   "name": "Banco Santander",
+   "geprueft": false
+  },
+  {
+   "hub": "REE.MC",
+   "av": "REE.BME",
+   "name": "Redeia",
+   "geprueft": false
+  },
+  {
+   "hub": "CLNX.MC",
+   "av": "CLNX.BME",
+   "name": "Cellnex",
+   "geprueft": false
+  },
+  {
+   "hub": "IAG.MC",
+   "av": "IAG.BME",
+   "name": "IAG",
+   "geprueft": false
+  },
+  {
+   "hub": "MRL.MC",
+   "av": "MRL.BME",
+   "name": "Merlin Properties",
+   "geprueft": false
+  },
+  {
+   "hub": "SAB.MC",
+   "av": "SAB.BME",
+   "name": "Banco Sabadell",
+   "geprueft": false
+  },
+  {
+   "hub": "BKT.MC",
+   "av": "BKT.BME",
+   "name": "Bankinter",
+   "geprueft": false
+  },
+  {
+   "hub": "A2A.MI",
+   "av": "A2A.MIL",
+   "name": "A2A",
+   "geprueft": false
+  },
+  {
+   "hub": "HER.MI",
+   "av": "HER.MIL",
+   "name": "Hera",
+   "geprueft": false
+  },
+  {
+   "hub": "AMP.MI",
+   "av": "AMP.MIL",
+   "name": "Amplifon",
+   "geprueft": false
+  },
+  {
+   "hub": "BC.MI",
+   "av": "BC.MIL",
+   "name": "Brunello Cucinelli",
+   "geprueft": false
+  },
+  {
+   "hub": "BZU.MI",
+   "av": "BZU.MIL",
+   "name": "Buzzi",
+   "geprueft": false
+  },
+  {
+   "hub": "CPR.MI",
+   "av": "CPR.MIL",
+   "name": "Davide Campari-Milano",
+   "geprueft": false
+  },
+  {
+   "hub": "MONC.MI",
+   "av": "MONC.MIL",
+   "name": "Moncler",
+   "geprueft": false
+  },
+  {
+   "hub": "REC.MI",
+   "av": "REC.MIL",
+   "name": "Recordati",
+   "geprueft": false
+  },
+  {
+   "hub": "LTMC.MI",
+   "av": "LTMC.MIL",
+   "name": "Lottomatica Group",
+   "geprueft": false
+  },
+  {
+   "hub": "PRY.MI",
+   "av": "PRY.MIL",
+   "name": "Prysmian",
+   "geprueft": false
+  },
+  {
+   "hub": "MB.MI",
+   "av": "MB.MIL",
+   "name": "Mediobanca",
+   "geprueft": false
+  },
+  {
+   "hub": "BAMI.MI",
+   "av": "BAMI.MIL",
+   "name": "Banco BPM",
+   "geprueft": false
+  },
+  {
+   "hub": "LDO.MI",
+   "av": "LDO.MIL",
+   "name": "Leonardo",
+   "geprueft": false
+  },
+  {
+   "hub": "STLAM.MI",
+   "av": "STLAM.MIL",
+   "name": "Stellantis",
+   "geprueft": false
+  },
+  {
+   "hub": "BPE.MI",
+   "av": "BPE.MIL",
+   "name": "BPER Banca",
+   "geprueft": false
+  },
+  {
+   "hub": "ISP.MI",
+   "av": "ISP.MIL",
+   "name": "Intesa Sanpaolo",
+   "geprueft": false
+  },
+  {
+   "hub": "ENI.MI",
+   "av": "ENI.MIL",
+   "name": "Eni",
+   "geprueft": false
+  },
+  {
+   "hub": "UMG.AS",
+   "av": "UMG.AMS",
+   "name": "Universal Music Group",
+   "geprueft": false
+  },
+  {
+   "hub": "IMCD.AS",
+   "av": "IMCD.AMS",
+   "name": "IMCD",
+   "geprueft": false
+  },
+  {
+   "hub": "BESI.AS",
+   "av": "BESI.AMS",
+   "name": "BE Semiconductor Industries",
+   "geprueft": false
+  },
+  {
+   "hub": "ASM.AS",
+   "av": "ASM.AMS",
+   "name": "ASM International",
+   "geprueft": false
+  },
+  {
+   "hub": "EXOR.AS",
+   "av": "EXOR.AMS",
+   "name": "Exor",
+   "geprueft": false
+  },
+  {
+   "hub": "VPK.AS",
+   "av": "VPK.AMS",
+   "name": "Vopak",
+   "geprueft": false
+  },
+  {
+   "hub": "SBMO.AS",
+   "av": "SBMO.AMS",
+   "name": "SBM Offshore",
+   "geprueft": false
+  },
+  {
+   "hub": "AALB.AS",
+   "av": "AALB.AMS",
+   "name": "Aalberts",
+   "geprueft": false
+  },
+  {
+   "hub": "CTPNV.AS",
+   "av": "CTPNV.AMS",
+   "name": "CTP N.V.",
+   "geprueft": false
+  },
+  {
+   "hub": "ASML.AS",
+   "av": "ASML.AMS",
+   "name": "ASML Holding",
+   "geprueft": false
+  },
+  {
+   "hub": "INGA.AS",
+   "av": "INGA.AMS",
+   "name": "ING Groep",
+   "geprueft": false
+  },
+  {
+   "hub": "PHIA.AS",
+   "av": "PHIA.AMS",
+   "name": "Koninklijke Philips",
+   "geprueft": false
+  },
+  {
+   "hub": "GETI-B.ST",
+   "av": "GETI-B.STO",
+   "name": "Getinge",
+   "geprueft": false
+  },
+  {
+   "hub": "LIFCO-B.ST",
+   "av": "LIFCO-B.STO",
+   "name": "Lifco",
+   "geprueft": false
+  },
+  {
+   "hub": "ELUX-B.ST",
+   "av": "ELUX-B.STO",
+   "name": "Electrolux",
+   "geprueft": false
+  },
+  {
+   "hub": "NIBE-B.ST",
+   "av": "NIBE-B.STO",
+   "name": "NIBE Industrier",
+   "geprueft": false
+  },
+  {
+   "hub": "SAAB-B.ST",
+   "av": "SAAB-B.STO",
+   "name": "Saab",
+   "geprueft": false
+  },
+  {
+   "hub": "TREL-B.ST",
+   "av": "TREL-B.STO",
+   "name": "Trelleborg",
+   "geprueft": false
+  },
+  {
+   "hub": "INDU-C.ST",
+   "av": "INDU-C.STO",
+   "name": "Industrivaerden",
+   "geprueft": false
+  },
+  {
+   "hub": "KINV-B.ST",
+   "av": "KINV-B.STO",
+   "name": "Kinnevik",
+   "geprueft": false
+  },
+  {
+   "hub": "ERIC-B.ST",
+   "av": "ERIC-B.STO",
+   "name": "Ericsson",
+   "geprueft": false
+  },
+  {
+   "hub": "SKF-B.ST",
+   "av": "SKF-B.STO",
+   "name": "SKF",
+   "geprueft": false
+  },
+  {
+   "hub": "SCA-B.ST",
+   "av": "SCA-B.STO",
+   "name": "SCA",
+   "geprueft": false
+  },
+  {
+   "hub": "SKA-B.ST",
+   "av": "SKA-B.STO",
+   "name": "Skanska",
+   "geprueft": false
+  },
+  {
+   "hub": "TEL2-B.ST",
+   "av": "TEL2-B.STO",
+   "name": "Tele2",
+   "geprueft": false
+  },
+  {
+   "hub": "BOL.ST",
+   "av": "BOL.STO",
+   "name": "Boliden",
+   "geprueft": false
+  },
+  {
+   "hub": "HEXA-B.ST",
+   "av": "HEXA-B.STO",
+   "name": "Hexagon",
+   "geprueft": false
+  },
+  {
+   "hub": "ALFA.ST",
+   "av": "ALFA.STO",
+   "name": "Alfa Laval",
+   "geprueft": false
+  },
+  {
+   "hub": "VOLV-B.ST",
+   "av": "VOLV-B.STO",
+   "name": "AB Volvo (Volvo Group)",
+   "geprueft": false
+  },
+  {
+   "hub": "AKRBP.OL",
+   "av": "AKRBP.OSL",
+   "name": "Aker BP",
+   "geprueft": false
+  },
+  {
+   "hub": "SALM.OL",
+   "av": "SALM.OSL",
+   "name": "SalMar",
+   "geprueft": false
+  },
+  {
+   "hub": "STB.OL",
+   "av": "STB.OSL",
+   "name": "Storebrand",
+   "geprueft": false
+  },
+  {
+   "hub": "TOM.OL",
+   "av": "TOM.OSL",
+   "name": "Tomra",
+   "geprueft": false
+  },
+  {
+   "hub": "FRO.OL",
+   "av": "FRO.OSL",
+   "name": "Frontline",
+   "geprueft": false
+  },
+  {
+   "hub": "ELK.OL",
+   "av": "ELK.OSL",
+   "name": "Elkem",
+   "geprueft": false
+  },
+  {
+   "hub": "AKER.OL",
+   "av": "AKER.OSL",
+   "name": "Aker ASA",
+   "geprueft": false
+  },
+  {
+   "hub": "BAKKA.OL",
+   "av": "BAKKA.OSL",
+   "name": "Bakkafrost",
+   "geprueft": false
+  },
+  {
+   "hub": "PNDORA.CO",
+   "av": "PNDORA.CPH",
+   "name": "Pandora",
+   "geprueft": false
+  },
+  {
+   "hub": "TRYG.CO",
+   "av": "TRYG.CPH",
+   "name": "Tryg",
+   "geprueft": false
+  },
+  {
+   "hub": "ISS.CO",
+   "av": "ISS.CPH",
+   "name": "ISS",
+   "geprueft": false
+  },
+  {
+   "hub": "NZYM-B.CO",
+   "av": "NZYM-B.CPH",
+   "name": "Novonesis (ehem. Novozymes)",
+   "geprueft": false
+  },
+  {
+   "hub": "FLS.CO",
+   "av": "FLS.CPH",
+   "name": "FLSmidth",
+   "geprueft": false
+  },
+  {
+   "hub": "DEMANT.CO",
+   "av": "DEMANT.CPH",
+   "name": "Demant",
+   "geprueft": false
+  },
+  {
+   "hub": "JYSK.CO",
+   "av": "JYSK.CPH",
+   "name": "Jyske Bank",
+   "geprueft": false
+  },
+  {
+   "hub": "NOVO-B.CO",
+   "av": "NOVO-B.CPH",
+   "name": "Novo Nordisk",
+   "geprueft": false
+  },
+  {
+   "hub": "VWS.CO",
+   "av": "VWS.CPH",
+   "name": "Vestas Wind Systems",
+   "geprueft": false
+  },
+  {
+   "hub": "ORSTED.CO",
+   "av": "ORSTED.CPH",
+   "name": "Orsted",
+   "geprueft": false
+  },
+  {
+   "hub": "NOKIA.HE",
+   "av": "NOKIA.HEL",
+   "name": "Nokia",
+   "geprueft": false
+  },
+  {
+   "hub": "STERV.HE",
+   "av": "STERV.HEL",
+   "name": "Stora Enso",
+   "geprueft": false
+  },
+  {
+   "hub": "WRT1V.HE",
+   "av": "WRT1V.HEL",
+   "name": "Wärtsilä",
+   "geprueft": false
+  },
+  {
+   "hub": "ELISA.HE",
+   "av": "ELISA.HEL",
+   "name": "Elisa",
+   "geprueft": false
+  },
+  {
+   "hub": "KESKOB.HE",
+   "av": "KESKOB.HEL",
+   "name": "Kesko (B)",
+   "geprueft": false
+  },
+  {
+   "hub": "ORNBV.HE",
+   "av": "ORNBV.HEL",
+   "name": "Orion",
+   "geprueft": false
+  },
+  {
+   "hub": "VALMT.HE",
+   "av": "VALMT.HEL",
+   "name": "Valmet",
+   "geprueft": false
+  },
+  {
+   "hub": "KCR.HE",
+   "av": "KCR.HEL",
+   "name": "Konecranes",
+   "geprueft": false
+  },
+  {
+   "hub": "OUT1V.HE",
+   "av": "OUT1V.HEL",
+   "name": "Outokumpu",
+   "geprueft": false
+  },
+  {
+   "hub": "SOLB.BR",
+   "av": "SOLB.BRU",
+   "name": "Solvay",
+   "geprueft": false
+  },
+  {
+   "hub": "ACKB.BR",
+   "av": "ACKB.BRU",
+   "name": "Ackermans & van Haaren",
+   "geprueft": false
+  },
+  {
+   "hub": "GBLB.BR",
+   "av": "GBLB.BRU",
+   "name": "Groupe Bruxelles Lambert",
+   "geprueft": false
+  },
+  {
+   "hub": "PROX.BR",
+   "av": "PROX.BRU",
+   "name": "Proximus",
+   "geprueft": false
+  },
+  {
+   "hub": "ELI.BR",
+   "av": "ELI.BRU",
+   "name": "Elia Group",
+   "geprueft": false
+  },
+  {
+   "hub": "UMI.BR",
+   "av": "UMI.BRU",
+   "name": "Umicore",
+   "geprueft": false
+  },
+  {
+   "hub": "WDP.BR",
+   "av": "WDP.BRU",
+   "name": "Warehouses De Pauw",
+   "geprueft": false
+  },
+  {
+   "hub": "ANDR.VI",
+   "av": "ANDR.VIE",
+   "name": "Andritz",
+   "geprueft": false
+  },
+  {
+   "hub": "VIG.VI",
+   "av": "VIG.VIE",
+   "name": "Vienna Insurance Group",
+   "geprueft": false
+  },
+  {
+   "hub": "VOE.VI",
+   "av": "VOE.VIE",
+   "name": "voestalpine",
+   "geprueft": false
+  },
+  {
+   "hub": "WIE.VI",
+   "av": "WIE.VIE",
+   "name": "Wienerberger",
+   "geprueft": false
+  },
+  {
+   "hub": "POST.VI",
+   "av": "POST.VIE",
+   "name": "Österreichische Post",
+   "geprueft": false
+  },
+  {
+   "hub": "RBI.VI",
+   "av": "RBI.VIE",
+   "name": "Raiffeisen Bank International",
+   "geprueft": false
+  },
+  {
+   "hub": "EVN.VI",
+   "av": "EVN.VIE",
+   "name": "EVN",
+   "geprueft": false
+  },
+  {
+   "hub": "EDPR.LS",
+   "av": "EDPR.LIS",
+   "name": "EDP Renovaveis",
+   "geprueft": false
+  },
+  {
+   "hub": "SON.LS",
+   "av": "SON.LIS",
+   "name": "Sonae",
+   "geprueft": false
+  },
+  {
+   "hub": "REN.LS",
+   "av": "REN.LIS",
+   "name": "REN Redes Energeticas Nacionais",
+   "geprueft": false
+  },
+  {
+   "hub": "ALTR.LS",
+   "av": "ALTR.LIS",
+   "name": "Altri",
+   "geprueft": false
+  },
+  {
+   "hub": "CTT.LS",
+   "av": "CTT.LIS",
+   "name": "CTT Correios de Portugal",
+   "geprueft": false
+  },
+  {
+   "hub": "BCP.LS",
+   "av": "BCP.LIS",
+   "name": "Banco Comercial Portugues (Millennium bcp)",
+   "geprueft": false
+  },
+  {
+   "hub": "KYG.IR",
+   "av": "KYG.DUB",
+   "name": "Kerry Group",
+   "geprueft": false
+  },
+  {
+   "hub": "GL9.IR",
+   "av": "GL9.DUB",
+   "name": "Glanbia",
+   "geprueft": false
+  },
+  {
+   "hub": "BIRG.IR",
+   "av": "BIRG.DUB",
+   "name": "Bank of Ireland Group",
+   "geprueft": false
+  },
+  {
+   "hub": "A5G.IR",
+   "av": "A5G.DUB",
+   "name": "AIB Group",
+   "geprueft": false
+  },
+  {
+   "hub": "OBDC",
+   "av": "OBDC",
+   "name": "Blue Owl Capital Corp",
+   "geprueft": false
+  },
+  {
+   "hub": "BXSL",
+   "av": "BXSL",
+   "name": "Blackstone Secured Lending Fund",
+   "geprueft": false
+  },
+  {
+   "hub": "FSK",
+   "av": "FSK",
+   "name": "FS KKR Capital Corp",
+   "geprueft": false
+  },
+  {
+   "hub": "TSLX",
+   "av": "TSLX",
+   "name": "Sixth Street Specialty Lending, Inc.",
+   "geprueft": false
+  },
+  {
+   "hub": "OCSL",
+   "av": "OCSL",
+   "name": "Oaktree Specialty Lending Corp",
+   "geprueft": false
+  },
+  {
+   "hub": "GSBD",
+   "av": "GSBD",
+   "name": "Goldman Sachs BDC, Inc.",
+   "geprueft": false
+  },
+  {
+   "hub": "MFIC",
+   "av": "MFIC",
+   "name": "MidCap Financial Investment Corp",
+   "geprueft": false
+  },
+  {
+   "hub": "TRIN",
+   "av": "TRIN",
+   "name": "Trinity Capital Inc.",
+   "geprueft": false
+  },
+  {
+   "hub": "BBDC",
+   "av": "BBDC",
+   "name": "Barings BDC, Inc.",
+   "geprueft": false
+  },
+  {
+   "hub": "BCSF",
+   "av": "BCSF",
+   "name": "Bain Capital Specialty Finance, Inc.",
+   "geprueft": false
+  },
+  {
+   "hub": "CGBD",
+   "av": "CGBD",
+   "name": "Carlyle Secured Lending, Inc.",
+   "geprueft": false
+  },
+  {
+   "hub": "PFLT",
+   "av": "PFLT",
+   "name": "PennantPark Floating Rate Capital Ltd.",
+   "geprueft": false
+  },
+  {
+   "hub": "SLRC",
+   "av": "SLRC",
+   "name": "SLR Investment Corp.",
+   "geprueft": false
+  },
+  {
+   "hub": "FDUS",
+   "av": "FDUS",
+   "name": "FIDUS INVESTMENT Corp",
+   "geprueft": false
+  },
+  {
+   "hub": "GAIN",
+   "av": "GAIN",
+   "name": "GLADSTONE INVESTMENT CORPORATIONDE",
+   "geprueft": false
+  },
+  {
+   "hub": "CCAP",
+   "av": "CCAP",
+   "name": "Crescent Capital BDC, Inc.",
+   "geprueft": false
+  },
+  {
+   "hub": "CION",
+   "av": "CION",
+   "name": "CION Investment Corp",
+   "geprueft": false
+  },
+  {
+   "hub": "TCPC",
+   "av": "TCPC",
+   "name": "BlackRock TCP Capital Corp.",
+   "geprueft": false
+  },
+  {
+   "hub": "GLAD",
+   "av": "GLAD",
+   "name": "GLADSTONE CAPITAL CORP",
+   "geprueft": false
+  },
+  {
+   "hub": "PNNT",
+   "av": "PNNT",
+   "name": "PENNANTPARK INVESTMENT CORP",
+   "geprueft": false
+  },
+  {
+   "hub": "RWAY",
+   "av": "RWAY",
+   "name": "Runway Growth Finance Corp.",
+   "geprueft": false
+  },
+  {
+   "hub": "SAR",
+   "av": "SAR",
+   "name": "SARATOGA INVESTMENT CORP.",
+   "geprueft": false
+  },
+  {
+   "hub": "SCM",
+   "av": "SCM",
+   "name": "Stellus Capital Investment Corp",
+   "geprueft": false
+  },
+  {
+   "hub": "LIEN",
+   "av": "LIEN",
+   "name": "Chicago Atlantic BDC, Inc.",
+   "geprueft": false
+  },
+  {
+   "hub": "WHF",
+   "av": "WHF",
+   "name": "WhiteHorse Finance, Inc.",
+   "geprueft": false
+  },
+  {
+   "hub": "OXSQ",
+   "av": "OXSQ",
+   "name": "Oxford Square Capital Corp.",
+   "geprueft": false
+  },
+  {
+   "hub": "GECC",
+   "av": "GECC",
+   "name": "Great Elm Capital Corp.",
+   "geprueft": false
+  },
+  {
+   "hub": "OFS",
+   "av": "OFS",
+   "name": "OFS Capital Corp",
+   "geprueft": false
+  }
  ]
 }
