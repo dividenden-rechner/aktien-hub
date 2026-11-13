@@ -11,11 +11,11 @@ logo_name: "Unilever PLC"
 story_text: "Unilever zahlt eine Quartalsdividende von 0,4664 Euro, 3 % mehr als vor einem Jahr, das sind rund 1,87 Euro im Jahr und bei einem Kurs von etwa 59,60 Euro gut 3 % Rendite.\nIm dritten Quartal wuchs der Umsatz um 5,2 %, davon 2,9 % aus höherer Menge. Die Jahresziele hat das Unternehmen angehoben, das Pflegegeschäft wächst deutlich schneller als die Lebensmittel.\nDer Umbau zum reinen Pflegekonzern bringt 15,7 Mrd. USD in bar von McCormick und finanziert einen Rückkauf von 6 Mrd. Euro bis 2029. Offen ist, wie die Dividende nach dem Umbau aussieht."
 logo_symbol: ULVR.L
 logo_domain: unilever.com
-image: https://images.unsplash.com/photo-1776105609708-3d8908ab4dc2?ixid=M3wxMTE3OTgzfDB8MXxzZWFyY2h8M3x8cGVyc29uYWwlMjBjYXJlJTIwcHJvZHVjdHMlMjBzaGVsZnxlbnwxfDB8fHwxNzk0NTcxMzE4fDA&ixlib=rb-4.1.0&w=1600&h=900&fit=crop&crop=entropy&q=80&fm=jpg
-image_alt: "Foto zu Unilever PLC: Shelves stocked with rows of hair care products"
-image_credit: "Foto: FS Cut & Color auf Unsplash"
-image_source: https://unsplash.com/photos/shelves-stocked-with-rows-of-hair-care-products-PL1WRIJOQuQ?utm_source=dividenden-rechner&utm_medium=referral
-image_artist_url: https://unsplash.com/@fscutandcolorofficial?utm_source=dividenden-rechner&utm_medium=referral
+image: assets/magazin/unilever-reiner-pflegekonzern-dividende-rueckkauf-foto.jpg
+image_alt: "Foto zu Unilever PLC: ​愛買忠孝店清潔沐浴用品"
+image_credit: "Foto: Applejace / Wikimedia Commons, CC BY-SA 4.0"
+image_source: https://commons.wikimedia.org/wiki/File:%E6%84%9B%E8%B2%B7%E5%BF%A0%E5%AD%9D%E5%BA%97%E6%B8%85%E6%BD%94%E6%B2%90%E6%B5%B4%E7%94%A8%E5%93%81.jpg
+image_artist_url: 
 logo_file: assets/logos/ulvr-l.png
 ---
 !!! kurz "Kurz gesagt"

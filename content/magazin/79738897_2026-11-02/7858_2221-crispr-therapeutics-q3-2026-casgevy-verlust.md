@@ -10,10 +10,10 @@ quelle_name: "Pressemitteilung CRISPR Therapeutics (SEC-Meldung)"
 logo_name: "CRISPR Therapeutics"
 logo_symbol: CRSP
 logo_domain: crisprtx.com
-image: https://images.unsplash.com/photo-1579154204601-01588f351e67?ixid=M3wxMTE3OTgzfDB8MXxzZWFyY2h8Mnx8Z2VuZXRpY3MlMjBsYWJvcmF0b3J5fGVufDF8MHx8fDE3OTQ1MTg5OTh8MA&ixlib=rb-4.1.0&w=1600&h=900&fit=crop&crop=entropy&q=80&fm=jpg
-image_alt: "Foto zu CRISPR Therapeutics: DNA Genotyping and Sequencing. A technician works among a fleet of desktop genomic sequencing machines at the Cancer Genomics Research Laboratory, part of the National Cancer Institute's Division of C"
+image: https://images.unsplash.com/photo-1583911860205-72f8ac8ddcbe?ixid=M3wxMTE3OTgzfDB8MXxzZWFyY2h8NXx8Z2VuZXRpY3MlMjBsYWJvcmF0b3J5fGVufDF8MHx8fDE3OTQ1MTg5OTh8MA&ixlib=rb-4.1.0&w=1600&h=900&fit=crop&crop=entropy&q=80&fm=jpg
+image_alt: "Foto zu CRISPR Therapeutics: Chanelle Case Borden, Ph.D., a postdoctoral fellow in the National Cancer Institute's Experimental Immunology Branch, pipetting DNA samples into a tube for polymerase chain reaction, or PCR, a laborat"
 image_credit: "Foto: National Cancer Institute auf Unsplash"
-image_source: https://unsplash.com/photos/woman-standing-in-front-of-the-digital-machine-oCLuFi9GYNA?utm_source=dividenden-rechner&utm_medium=referral
+image_source: https://unsplash.com/photos/woman-in-white-long-sleeve-shirt-holding-silver-and-black-metal-tool-v7ibB19EUbQ?utm_source=dividenden-rechner&utm_medium=referral
 image_artist_url: https://unsplash.com/@nci?utm_source=dividenden-rechner&utm_medium=referral
 logo_file: assets/logos/crsp.png
 ---
