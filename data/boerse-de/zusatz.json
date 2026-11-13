@@ -14484,6 +14484,758 @@ null
 217
 ],
 "hinweis": "stockanalysis.com, Mio. EUR. capex = Capital Expenditures laut stockanalysis; da = D&A laut Cashflow; debt = Total Debt inkl. Leasing; KPN: Leasingzahlungen (ca. 124-143 p.a.) nicht in capex enthalten. "
+},
+"PRY.MI": {
+"jahre": [
+2021,
+2022,
+2023,
+2024,
+2025
+],
+"ocf": [
+777,
+1038,
+1416,
+1933,
+2162
+],
+"capex": [
+283,
+454,
+672,
+793,
+791
+],
+"da": [
+337,
+375,
+365,
+481,
+648
+],
+"div": [
+132,
+144,
+158,
+191,
+229
+],
+"bb": [
+0,
+0,
+0,
+327,
+47
+],
+"cash": [
+1957,
+1579,
+1870,
+1082,
+2085
+],
+"debt": [
+3741,
+3074,
+3105,
+5419,
+5227
+],
+"umsatz": [
+12736,
+16067,
+15354,
+17026,
+19650
+],
+"brutto": [
+4050,
+5344,
+5587,
+6181,
+7821
+],
+"ebit": [
+550,
+824,
+1049,
+1233,
+1917
+],
+"zins": [
+72,
+64,
+90,
+182,
+214
+],
+"steuer": [
+166,
+230,
+217,
+233,
+358
+],
+"hinweis": "stockanalysis.com. capex = Sachanlagen + immaterielle Werte; da = Abschreibungen + sonstige Amortisation; cash = liquide Mittel inkl. kurzfristige Anlagen und Wertpapiere; debt inkl. Leasing. umsatz = Operating Revenue; Bruttogewinn 2025 (7821) bezieht sich auf Gesamterloese inkl. Other Revenue 483. EBIT 2025 enthaelt Veraeusserungsgewinn rund 390. 2024 Encore-Wire-Uebernahme (Acquisitions 4126), 2025 Kapitalerhoehung."
+},
+"MB.MI": {
+"jahre": [
+2021,
+2022,
+2023,
+2024,
+2025
+],
+"ocf": [
+null,
+null,
+null,
+null,
+null
+],
+"capex": [
+null,
+52.37,
+76.1,
+87.67,
+145.6
+],
+"da": [
+null,
+86.6,
+92.3,
+null,
+null
+],
+"div": [
+null,
+579.62,
+633.95,
+1153,
+942.78
+],
+"bb": [
+null,
+241.43,
+0,
+187.6,
+342.36
+],
+"cash": [
+null,
+null,
+null,
+null,
+null
+],
+"debt": [
+null,
+null,
+null,
+null,
+null
+],
+"umsatz": [
+null,
+null,
+null,
+null,
+null
+],
+"brutto": [
+null,
+null,
+null,
+null,
+null
+],
+"ebit": [
+null,
+null,
+null,
+null,
+null
+],
+"zins": [
+null,
+null,
+null,
+null,
+null
+],
+"steuer": [
+null,
+252,
+394.48,
+433.97,
+445.12
+],
+"hinweis": "Bank (Geschaeftsjahr Juni): Umsatz, Bruttogewinn, EBIT, Zinsen, OCF, Cash und Schulden nicht sinnvoll vergleichbar, daher null. Spalten 2022-2025 = GJ Juni 2022-2025, 2021 fehlt bei stockanalysis. da 2024/2025 von stockanalysis nicht ausgewiesen. capex = Sachanlagen + immaterielle Werte. Dez-2025-Spalte (unklare Periode, nach MPS-Uebernahme) nicht verwendet."
+},
+"BMPS.MI": {
+"jahre": [
+2021,
+2022,
+2023,
+2024,
+2025
+],
+"ocf": [
+null,
+null,
+null,
+null,
+null
+],
+"capex": [
+108.69,
+65.71,
+111.44,
+68.42,
+116.91
+],
+"da": [
+208.57,
+193.47,
+179.46,
+173.65,
+185.94
+],
+"div": [
+0,
+0,
+0,
+314.92,
+1083
+],
+"bb": [
+0,
+0,
+2.63,
+0,
+96.41
+],
+"cash": [
+null,
+null,
+null,
+null,
+null
+],
+"debt": [
+null,
+null,
+null,
+null,
+null
+],
+"umsatz": [
+null,
+null,
+null,
+null,
+null
+],
+"brutto": [
+null,
+null,
+null,
+null,
+null
+],
+"ebit": [
+null,
+null,
+null,
+null,
+null
+],
+"zins": [
+null,
+null,
+null,
+null,
+null
+],
+"steuer": [
+-51.17,
+-426.62,
+-345.58,
+-508.1,
+-1124
+],
+"hinweis": "Bank: Umsatz, Bruttogewinn, EBIT, Zinsen, OCF, Cash und Schulden nicht sinnvoll vergleichbar, daher null. steuer: negativ = Steuerertrag (Aktivierung latenter Steuern). capex = Sachanlagen + immaterielle Werte; da 2025 = D&A 117,63 + sonstige Amortisation 68,31. 2025 Uebernahme Mediobanca (Zahlungsmittel aus Akquisition +868, nicht enthalten)."
+},
+"BAMI.MI": {
+"jahre": [
+2021,
+2022,
+2023,
+2024,
+2025
+],
+"ocf": [
+null,
+null,
+null,
+null,
+null
+],
+"capex": [
+198.52,
+326.58,
+189.0,
+256.44,
+511.6
+],
+"da": [
+280.29,
+312.22,
+277.71,
+292.88,
+327.71
+],
+"div": [
+0,
+288.34,
+349.52,
+1449,
+1599
+],
+"bb": [
+0,
+16.02,
+30.09,
+50.04,
+17.01
+],
+"cash": [
+null,
+null,
+null,
+null,
+null
+],
+"debt": [
+null,
+null,
+null,
+null,
+null
+],
+"umsatz": [
+null,
+null,
+null,
+null,
+null
+],
+"brutto": [
+null,
+null,
+null,
+null,
+null
+],
+"ebit": [
+null,
+null,
+null,
+null,
+null
+],
+"zins": [
+null,
+null,
+null,
+null,
+null
+],
+"steuer": [
+84.96,
+320.7,
+513.22,
+675.86,
+759.17
+],
+"hinweis": "Bank: Umsatz, Bruttogewinn, EBIT, Zinsen, OCF, Cash und Schulden nicht sinnvoll vergleichbar, daher null. capex = Sachanlagen + immaterielle Werte (2025 inkl. 420 immaterielle, evtl. Software/Akquisitionsbezug); da 2025 = D&A 209,98 + sonstige Amortisation 117,73. 2025 Uebernahme Anima (Zahlungsmittel Akquisition -1053 nicht enthalten)."
+},
+"LDO.MI": {
+"jahre": [
+2021,
+2022,
+2023,
+2024,
+2025
+],
+"ocf": [
+742,
+1152,
+1186,
+1541,
+1742
+],
+"capex": [
+615,
+762,
+782,
+895,
+1016
+],
+"da": [
+485,
+551,
+569,
+663,
+657
+],
+"div": [
+0,
+79,
+81,
+161,
+300
+],
+"bb": [
+0,
+0,
+0,
+0,
+30
+],
+"cash": [
+2479,
+1511,
+2407,
+2556,
+3238
+],
+"debt": [
+5684,
+4614,
+4930,
+4700,
+4489
+],
+"umsatz": [
+14135,
+14713,
+15291,
+17763,
+19503
+],
+"brutto": [
+5258,
+5675,
+5957,
+7086,
+7750
+],
+"ebit": [
+1028,
+1030,
+1082,
+1325,
+1904
+],
+"zins": [
+140,
+120,
+147,
+138,
+96
+],
+"steuer": [
+166,
+51,
+129,
+289,
+315
+],
+"hinweis": "stockanalysis.com. capex wie ausgewiesen (Sachanlagen/Entwicklung); da = Abschreibungen + sonstige Amortisation; debt inkl. Leasing; EBIT 2025 enthaelt Veraeusserungsgewinn rund 283 (Jahresabschluss-Posten 'Loss (Gain) from Sale of Assets')."
+},
+"STLAM.MI": {
+"jahre": [
+2021,
+2022,
+2023,
+2024,
+2025
+],
+"ocf": [
+18646,
+19959,
+17954,
+1535,
+-4650
+],
+"capex": [
+8687,
+8615,
+10193,
+11060,
+7987
+],
+"da": [
+5871,
+6797,
+7549,
+7226,
+6981
+],
+"div": [
+307,
+3353,
+4208,
+4651,
+1959
+],
+"bb": [
+0,
+923,
+2434,
+3000,
+0
+],
+"cash": [
+50399,
+49175,
+47158,
+35392,
+29375
+],
+"debt": [
+33677,
+27171,
+29502,
+37251,
+45983
+],
+"umsatz": [
+149419,
+179592,
+189544,
+156878,
+153508
+],
+"brutto": [
+29476,
+35265,
+38144,
+20887,
+7938
+],
+"ebit": [
+15841,
+20999,
+22907,
+6296,
+-6156
+],
+"zins": [
+601,
+1022,
+1127,
+1312,
+1272
+],
+"steuer": [
+1911,
+2729,
+3793,
+-1488,
+-4273
+],
+"hinweis": "stockanalysis.com. 2025: operativer Cashflow -4650 und EBIT -6156 (negativ, nicht auf positiv umgedreht), Sonderbelastungen 17,2 Mrd EUR; steuer 2024/2025 negativ = Steuerertrag. Cash inkl. kurzfristige Anlagen/Wertpapiere; debt inkl. Leasing und Finanzdienstleistungsschulden (Industrie + Financial Services gemischt). da = D&A + sonstige Amortisation. 2021: Fusion FCA/PSA, Acquisitions +21788 (Zufluss durch Fusion)."
+},
+"PST.MI": {
+"jahre": [
+2021,
+2022,
+2023,
+2024,
+2025
+],
+"ocf": [
+null,
+null,
+null,
+null,
+null
+],
+"capex": [
+754,
+810,
+846,
+965,
+1178
+],
+"da": [
+807,
+834,
+878,
+924,
+986
+],
+"div": [
+662,
+798,
+877,
+1156,
+1488
+],
+"bb": [
+0,
+46,
+55,
+44,
+49
+],
+"cash": [
+null,
+null,
+null,
+null,
+null
+],
+"debt": [
+null,
+null,
+null,
+null,
+null
+],
+"umsatz": [
+null,
+11574,
+12619,
+13483,
+14026
+],
+"brutto": [
+null,
+3975,
+4053,
+4488,
+4880
+],
+"ebit": [
+2116,
+2808,
+2802,
+3091,
+3307
+],
+"zins": [
+31,
+33,
+39,
+52,
+67
+],
+"steuer": [
+588,
+850,
+794,
+658,
+1001
+],
+"hinweis": "Gemischter Konzern mit Bank-/Versicherungsgeschaeft: operativer Cashflow (starke Schwankung, 180 bis 4184 durch Finanzgeschaeft), Cash und Schulden (rund 99 Mrd EUR inkl. Einlagen/Finanzdienstleistung) nicht sinnvoll vergleichbar, daher null. Umsatz/Bruttogewinn 2021 wegen abweichender Erloesdefinition (31710) null. capex = Sachanlagen + immaterielle Werte."
+},
+"BPE.MI": {
+"jahre": [
+2021,
+2022,
+2023,
+2024,
+2025
+],
+"ocf": [
+null,
+null,
+null,
+null,
+null
+],
+"capex": [
+246.24,
+334.59,
+381.52,
+358.1,
+312.32
+],
+"da": [
+285.08,
+232.39,
+267.44,
+338.21,
+377.44
+],
+"div": [
+56.51,
+84.67,
+169.71,
+423.83,
+1049
+],
+"bb": [
+3.06,
+0,
+0,
+28.66,
+21.04
+],
+"cash": [
+null,
+null,
+null,
+null,
+null
+],
+"debt": [
+null,
+null,
+null,
+null,
+null
+],
+"umsatz": [
+null,
+null,
+null,
+null,
+null
+],
+"brutto": [
+null,
+null,
+null,
+null,
+null
+],
+"ebit": [
+null,
+null,
+null,
+null,
+null
+],
+"zins": [
+null,
+null,
+null,
+null,
+null
+],
+"steuer": [
+134.22,
+-85.79,
+172.87,
+615.47,
+842.35
+],
+"hinweis": "Bank: Umsatz, Bruttogewinn, EBIT, Zinsen, OCF, Cash und Schulden nicht sinnvoll vergleichbar, daher null. steuer 2022 negativ = Steuerertrag. capex = Sachanlagen + immaterielle Werte (2024 und 2025 ohne immaterielle: 2024 nicht ausgewiesen, 2025 mit unplausiblem Zufluss +1658 bei stockanalysis); da 2025 = D&A 193,31 + sonstige Amortisation 184,13. 2025 Uebernahme Pop. Sondrio."
 }
 }
 }

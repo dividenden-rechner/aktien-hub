@@ -882,6 +882,702 @@ null,
 19.04,
 53.62
 ]
+},
+"PRY.MI": {
+"name": "Prysmian",
+"isin": "IT0004176001",
+"waehrung": "EUR",
+"hinweis": "Quelle stockanalysis.com (S&P Global), boerse.de war nicht abrufbar; nur 2021-2025 verfuegbar, 2019/2020 null. Dividendenausschuettung = Dividende je Aktie x Aktienzahl zum Jahresende (berechnet). EPS verwaessert, Jahresueberschuss = Anteil der Aktionaere, Eigenkapital ohne Minderheiten. Umsatz = Operating Revenue ohne Other Revenue (2025 inkl. Other Revenue 20133). 2025: Jahresueberschuss an Aktionaere 1237 (Konzern 1270, abzgl. 33 Vorzugs-/Wandelanleihe-Anpassung); operatives Ergebnis 2025 enthaelt Veraeusserungsgewinn von rund 390. 2024 Uebernahme Encore Wire, 2025 Kapitalerhoehung (Zufluss 976).",
+"umsatz": [
+null,
+null,
+12736,
+16067,
+15354,
+17026,
+19650
+],
+"ebt": [
+null,
+null,
+476,
+739,
+764,
+981,
+1654
+],
+"jahresueberschuss": [
+null,
+null,
+308,
+504,
+529,
+729,
+1237
+],
+"dividendenausschuettung": [
+null,
+null,
+145,
+158,
+191,
+230,
+258
+],
+"eigenkapital": [
+null,
+null,
+2915,
+3585,
+3781,
+5087,
+6474
+],
+"eps": [
+null,
+null,
+1.17,
+1.9,
+1.84,
+2.52,
+4.3
+],
+"dividende_je_aktie": [
+null,
+null,
+0.55,
+0.6,
+0.7,
+0.8,
+0.9
+],
+"aktien_mio": [
+null,
+null,
+263.5,
+263.53,
+272.81,
+286.91,
+286.78
+],
+"eigenkapitalrendite_pct": [
+null,
+null,
+10.57,
+14.06,
+13.99,
+14.33,
+19.11
+]
+},
+"MB.MI": {
+"name": "Mediobanca",
+"isin": "IT0000062957",
+"waehrung": "EUR",
+"hinweis": "Quelle stockanalysis.com (S&P Global), boerse.de war nicht abrufbar; nur 2022-2025 verfuegbar, 2019-2021 null. Dividendenausschuettung = Dividende je Aktie x Aktienzahl zum Jahresende (berechnet). EPS verwaessert, Jahresueberschuss = Anteil der Aktionaere, Eigenkapital ohne Minderheiten. Geschaeftsjahr endet 30. Juni; Spalte 2022 = GJ Juni 2022, ..., 2025 = GJ Juni 2025. stockanalysis zeigt zusaetzlich eine Spalte Dez 2025 (Umstellung/Zwischenperiode nach Uebernahme durch MPS, Periodenlaenge unklar), nicht verwendet. Umsatz null (Bank). Dividende je Aktie nach Geschaeftsjahr laut stockanalysis.",
+"umsatz": [
+null,
+null,
+null,
+null,
+null,
+null,
+null
+],
+"ebt": [
+null,
+null,
+null,
+1162,
+1423,
+1710,
+1778
+],
+"jahresueberschuss": [
+null,
+null,
+null,
+907,
+1026,
+1273,
+1332
+],
+"dividendenausschuettung": [
+null,
+null,
+null,
+629,
+715,
+885,
+930
+],
+"eigenkapital": [
+null,
+null,
+null,
+10647,
+11325,
+11157,
+11363
+],
+"eps": [
+null,
+null,
+null,
+1.08,
+1.21,
+1.53,
+1.63
+],
+"dividende_je_aktie": [
+null,
+null,
+null,
+0.75,
+0.85,
+1.07,
+1.15
+],
+"aktien_mio": [
+null,
+null,
+null,
+838.89,
+840.8,
+826.65,
+808.57
+],
+"eigenkapitalrendite_pct": [
+null,
+null,
+null,
+8.52,
+9.06,
+11.41,
+11.72
+]
+},
+"BMPS.MI": {
+"name": "Banca Monte dei Paschi di Siena",
+"isin": "IT0005218752",
+"waehrung": "EUR",
+"hinweis": "Quelle stockanalysis.com (S&P Global), boerse.de war nicht abrufbar; nur 2021-2025 verfuegbar, 2019/2020 null. Dividendenausschuettung = Dividende je Aktie x Aktienzahl zum Jahresende (berechnet). EPS verwaessert, Jahresueberschuss = Anteil der Aktionaere, Eigenkapital ohne Minderheiten. Umsatz null (Bank). EPS 2021 (31,39) und 2022 (-0,85) sind nicht vergleichbar: Zusammenlegung der Aktien 2021 (Aktienzahl 10,02 Mio. Ende 2021), Kapitalerhoehung 2022 (1260 Mio. Aktien Ende 2022, gewichtet 210); EPS laut Berichtswerten. Nettogewinne 2023-2025 stark durch Steuerertraege/aktivierte latente Steuern gestuetzt (Steuerposten 2025 -1124). 2025 Uebernahme Mediobanca (Aktienzahl 3038, Eigenkapital und Dividendenausschuettung 2025 dadurch nicht mit Vorjahren vergleichbar). Dividende je Aktie 2025 (0,86) laut stockanalysis fuer GJ 2025, Auszahlung 2026; 2024 gezahlt 1083.",
+"umsatz": [
+null,
+null,
+null,
+null,
+null,
+null,
+null
+],
+"ebt": [
+null,
+null,
+258,
+-605,
+1702,
+1465,
+1588
+],
+"jahresueberschuss": [
+null,
+null,
+310,
+-178,
+2052,
+1951,
+2716
+],
+"dividendenausschuettung": [
+null,
+null,
+0,
+0,
+315,
+1084,
+2613
+],
+"eigenkapital": [
+null,
+null,
+6173,
+7860,
+9978,
+11649,
+27961
+],
+"eps": [
+null,
+null,
+31.39,
+-0.85,
+1.63,
+1.55,
+1.54
+],
+"dividende_je_aktie": [
+null,
+null,
+0,
+0,
+0.25,
+0.86,
+0.86
+],
+"aktien_mio": [
+null,
+null,
+10.02,
+1260,
+1260,
+1260,
+3038
+],
+"eigenkapitalrendite_pct": [
+null,
+null,
+5.01,
+-2.27,
+20.57,
+16.75,
+9.71
+]
+},
+"BAMI.MI": {
+"name": "Banco BPM",
+"isin": "IT0005218380",
+"waehrung": "EUR",
+"hinweis": "Quelle stockanalysis.com (S&P Global), boerse.de war nicht abrufbar; nur 2021-2025 verfuegbar, 2019/2020 null. Dividendenausschuettung = Dividende je Aktie x Aktienzahl zum Jahresende (berechnet). EPS verwaessert, Jahresueberschuss = Anteil der Aktionaere, Eigenkapital ohne Minderheiten. Umsatz null (Bank). Dividende je Aktie nach Geschaeftsjahr aus Zahlungen (Zwischen- plus Schlussdividende) zugeordnet: GJ2021 0,19, GJ2022 0,23, GJ2023 0,56, GJ2024 1,00 (0,40 Nov 2024 + 0,60 Mai 2025), GJ2025 1,00 (0,46 Nov 2025 + 0,54 Apr 2026). Jahresueberschuss = Anteil der Stammaktionaere.",
+"umsatz": [
+null,
+null,
+null,
+null,
+null,
+null,
+null
+],
+"ebt": [
+null,
+null,
+654,
+1005,
+1778,
+2596,
+2862
+],
+"jahresueberschuss": [
+null,
+null,
+569,
+682,
+1260,
+1915,
+2082
+],
+"dividendenausschuettung": [
+null,
+null,
+287,
+347,
+844,
+1501,
+1503
+],
+"eigenkapital": [
+null,
+null,
+13095,
+13016,
+14038,
+14604,
+15505
+],
+"eps": [
+null,
+null,
+0.38,
+0.45,
+0.84,
+1.27,
+1.38
+],
+"dividende_je_aktie": [
+null,
+null,
+0.19,
+0.23,
+0.56,
+1.0,
+1.0
+],
+"aktien_mio": [
+null,
+null,
+1512,
+1509,
+1508,
+1501,
+1503
+],
+"eigenkapitalrendite_pct": [
+null,
+null,
+4.35,
+5.24,
+8.98,
+13.11,
+13.43
+]
+},
+"LDO.MI": {
+"name": "Leonardo",
+"isin": "IT0003856405",
+"waehrung": "EUR",
+"hinweis": "Quelle stockanalysis.com (S&P Global), boerse.de war nicht abrufbar; nur 2021-2025 verfuegbar, 2019/2020 null. Dividendenausschuettung = Dividende je Aktie x Aktienzahl zum Jahresende (berechnet). EPS verwaessert, Jahresueberschuss = Anteil der Aktionaere, Eigenkapital ohne Minderheiten. Umsatz = Gesamterloese. 2025 Jahresueberschuss enthaelt Veraeusserungsgewinn (rund 283). Dividende je Aktie 2025 0,63.",
+"umsatz": [
+null,
+null,
+14135,
+14713,
+15291,
+17763,
+19503
+],
+"ebt": [
+null,
+null,
+753,
+983,
+824,
+1446,
+1649
+],
+"jahresueberschuss": [
+null,
+null,
+586,
+927,
+658,
+1074,
+1224
+],
+"dividendenausschuettung": [
+null,
+null,
+81,
+81,
+161,
+300,
+363
+],
+"eigenkapital": [
+null,
+null,
+6428,
+7183,
+7800,
+8990,
+9560
+],
+"eps": [
+null,
+null,
+1.02,
+1.61,
+1.14,
+1.87,
+2.12
+],
+"dividende_je_aktie": [
+null,
+null,
+0.14,
+0.14,
+0.28,
+0.52,
+0.63
+],
+"aktien_mio": [
+null,
+null,
+575.31,
+575.31,
+575.31,
+576.44,
+576.94
+],
+"eigenkapitalrendite_pct": [
+null,
+null,
+9.12,
+12.91,
+8.44,
+11.95,
+12.8
+]
+},
+"STLAM.MI": {
+"name": "Stellantis",
+"isin": "NL00150001Q9",
+"waehrung": "EUR",
+"hinweis": "Quelle stockanalysis.com (S&P Global), boerse.de war nicht abrufbar; nur 2021-2025 verfuegbar, 2019/2020 null. Dividendenausschuettung = Dividende je Aktie x Aktienzahl zum Jahresende (berechnet). EPS verwaessert, Jahresueberschuss = Anteil der Aktionaere, Eigenkapital ohne Minderheiten. Fusion FCA/PSA Januar 2021, daher 2019/2020 nicht vergleichbar (null). Umsatz = Gesamterloese inkl. Other Revenue. 2021 Jahresueberschuss enthaelt 990 aus aufgegebenem Geschaeftsbereich (Faurecia-Abspaltung). 2025: Sonderbelastungen (Restrukturierung/Wertberichtigungen) von rund 17,2 Mrd EUR, Nettoverlust -22368; Dividende 2025 = 0 (stockanalysis zeigt keine Dividende fuer GJ2025). EPS 2021 4,50 verwaessert (Aktienzahl Jahresende 3133).",
+"umsatz": [
+null,
+null,
+149419,
+179592,
+189544,
+156878,
+153508
+],
+"ebt": [
+null,
+null,
+15129,
+19508,
+22418,
+4032,
+-26605
+],
+"jahresueberschuss": [
+null,
+null,
+14200,
+16799,
+18596,
+5473,
+-22368
+],
+"dividendenausschuettung": [
+null,
+null,
+3258,
+4213,
+4686,
+1958,
+0
+],
+"eigenkapital": [
+null,
+null,
+55907,
+71999,
+81693,
+81692,
+53551
+],
+"eps": [
+null,
+null,
+4.5,
+5.31,
+5.94,
+1.84,
+-7.75
+],
+"dividende_je_aktie": [
+null,
+null,
+1.04,
+1.34,
+1.55,
+0.68,
+0
+],
+"aktien_mio": [
+null,
+null,
+3133,
+3144,
+3023,
+2880,
+2897
+],
+"eigenkapitalrendite_pct": [
+null,
+null,
+25.4,
+23.33,
+22.76,
+6.7,
+-41.77
+]
+},
+"PST.MI": {
+"name": "Poste Italiane",
+"isin": "IT0003796171",
+"waehrung": "EUR",
+"hinweis": "Quelle stockanalysis.com (S&P Global), boerse.de war nicht abrufbar; nur 2021-2025 verfuegbar, 2019/2020 null. Dividendenausschuettung = Dividende je Aktie x Aktienzahl zum Jahresende (berechnet). EPS verwaessert, Jahresueberschuss = Anteil der Aktionaere, Eigenkapital ohne Minderheiten. Konglomerat aus Post, Logistik, Finanzdienstleistungen, Versicherung. Umsatz 2022-2025 = Gesamterloese laut stockanalysis; 2021 (31710) wegen abweichender Erloesdefinition (Versicherungspraemien brutto) nicht vergleichbar, daher null. Dividende je Aktie laut stockanalysis (Zuordnung nicht gegen Geschaeftsbericht geprueft). Nettogewinn 2021 und 2022 beide 1578.",
+"umsatz": [
+null,
+null,
+null,
+11574,
+12619,
+13483,
+14026
+],
+"ebt": [
+null,
+null,
+2168,
+2433,
+2727,
+2671,
+3237
+],
+"jahresueberschuss": [
+null,
+null,
+1578,
+1578,
+1922,
+1994,
+2214
+],
+"dividendenausschuettung": [
+null,
+null,
+768,
+844,
+1036,
+1399,
+1618
+],
+"eigenkapital": [
+null,
+null,
+12102,
+7834,
+10322,
+11583,
+13839
+],
+"eps": [
+null,
+null,
+1.21,
+1.21,
+1.48,
+1.54,
+1.71
+],
+"dividende_je_aktie": [
+null,
+null,
+0.59,
+0.65,
+0.8,
+1.08,
+1.25
+],
+"aktien_mio": [
+null,
+null,
+1301,
+1299,
+1295,
+1295,
+1294
+],
+"eigenkapitalrendite_pct": [
+null,
+null,
+13.04,
+20.14,
+18.62,
+17.21,
+16.0
+]
+},
+"BPE.MI": {
+"name": "BPER Banca",
+"isin": "IT0000066123",
+"waehrung": "EUR",
+"hinweis": "Quelle stockanalysis.com (S&P Global), boerse.de war nicht abrufbar; nur 2021-2025 verfuegbar, 2019/2020 null. Dividendenausschuettung = Dividende je Aktie x Aktienzahl zum Jahresende (berechnet). EPS verwaessert, Jahresueberschuss = Anteil der Aktionaere, Eigenkapital ohne Minderheiten. Umsatz null (Bank). Dividende je Aktie laut stockanalysis nach Geschaeftsjahr. 2021 Jahresueberschuss durch Sondererloese (rund 1127 sonstige Einmalposten, u.a. Badwill Uebernahmen), 2022 durch Steuerertrag/Einmalposten gestuetzt (Steuerposten -86). 2025 Uebernahme Banca Popolare di Sondrio (Aktienzahl 1962 Mio. Ende 2025 gegenueber 1416 Ende 2024, Eigenkapital und Dividendenausschuettung 2025 nicht mit Vorjahren vergleichbar).",
+"umsatz": [
+null,
+null,
+null,
+null,
+null,
+null,
+null
+],
+"ebt": [
+null,
+null,
+693,
+1388,
+1725,
+2054,
+2723
+],
+"jahresueberschuss": [
+null,
+null,
+525,
+1449,
+1519,
+1403,
+1818
+],
+"dividendenausschuettung": [
+null,
+null,
+85,
+170,
+424,
+850,
+1275
+],
+"eigenkapital": [
+null,
+null,
+6696,
+7940,
+9366,
+11354,
+16565
+],
+"eps": [
+null,
+null,
+0.36,
+1.0,
+1.05,
+0.97,
+1.09
+],
+"dividende_je_aktie": [
+null,
+null,
+0.06,
+0.12,
+0.3,
+0.6,
+0.65
+],
+"aktien_mio": [
+null,
+null,
+1411,
+1414,
+1415,
+1416,
+1962
+],
+"eigenkapitalrendite_pct": [
+null,
+null,
+7.84,
+18.25,
+16.22,
+12.36,
+10.97
+]
 }
 }
 }
