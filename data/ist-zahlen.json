@@ -1651,6 +1651,26 @@
    "quelle": "https://www.allianz.com/en/investor_relations.html"
   },
   {
+   "sym": "AMAT",
+   "name": "Applied Materials",
+   "datum": "2026-11-12",
+   "eps": 4.16,
+   "eps_basis": "bereinigt",
+   "revenue": 10410000000.0,
+   "waehrung": "USD",
+   "quelle": "https://www.sec.gov/Archives/edgar/data/6951/000162828026073360/exhibit991q42026earningsre.htm"
+  },
+  {
+   "sym": "CSCO",
+   "name": "Cisco",
+   "datum": "2026-11-12",
+   "eps": 1.4,
+   "eps_basis": "bereinigt",
+   "revenue": 18500000000.0,
+   "waehrung": "USD",
+   "quelle": "https://www.sec.gov/Archives/edgar/data/858877/000085887726000170/exhibit991pressrelease-q1f.htm"
+  },
+  {
    "sym": "HLAG.DE",
    "name": "Hapag-Lloyd",
    "datum": "2026-11-12",

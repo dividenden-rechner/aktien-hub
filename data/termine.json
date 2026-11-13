@@ -1,78 +1,6 @@
 {
  "termine": [
   {
-   "sym": "DVA",
-   "name": "DaVita",
-   "art": "ergebnis",
-   "datum": "2026-10-29",
-   "betrag": "",
-   "waehrung": "",
-   "quelle": "https://www.sec.gov/Archives/edgar/data/927066/000092706626000132/dva93026ex991.htm"
-  },
-  {
-   "sym": "EIX",
-   "name": "Edison International",
-   "art": "ergebnis",
-   "datum": "2026-10-29",
-   "betrag": "",
-   "waehrung": "",
-   "quelle": "https://www.sec.gov/Archives/edgar/data/827052/000082705226000072/eix-2026x0930exx991.htm"
-  },
-  {
-   "sym": "GILD",
-   "name": "Gilead Sciences",
-   "art": "ergebnis",
-   "datum": "2026-10-29",
-   "betrag": "",
-   "waehrung": "",
-   "quelle": "https://www.sec.gov/Archives/edgar/data/882095/000088209526000037/exhibit991earningspressrel.htm"
-  },
-  {
-   "sym": "MPWR",
-   "name": "Monolithic Power Systems",
-   "art": "ergebnis",
-   "datum": "2026-10-29",
-   "betrag": "",
-   "waehrung": "",
-   "quelle": "https://www.sec.gov/Archives/edgar/data/1280452/000162828026068202/mpwr-20260930xexx991.htm"
-  },
-  {
-   "sym": "RDDT",
-   "name": "Reddit",
-   "art": "ergebnis",
-   "datum": "2026-10-29",
-   "betrag": "",
-   "waehrung": "",
-   "quelle": "https://www.sec.gov/Archives/edgar/data/1713445/000171344526000114/exhibit992q326.htm"
-  },
-  {
-   "sym": "RMD",
-   "name": "ResMed",
-   "art": "ergebnis",
-   "datum": "2026-10-29",
-   "betrag": "",
-   "waehrung": "",
-   "quelle": "https://www.sec.gov/Archives/edgar/data/943819/000119312526437783/d170451dex991.htm"
-  },
-  {
-   "sym": "RSG",
-   "name": "Republic Services",
-   "art": "ergebnis",
-   "datum": "2026-10-29",
-   "betrag": "",
-   "waehrung": "",
-   "quelle": "https://www.sec.gov/Archives/edgar/data/1060391/000106039126000326/exhibit991q32026.htm"
-  },
-  {
-   "sym": "SYK",
-   "name": "Stryker Corporation",
-   "art": "ergebnis",
-   "datum": "2026-10-29",
-   "betrag": "",
-   "waehrung": "",
-   "quelle": "https://www.sec.gov/Archives/edgar/data/310764/000031076426000059/sykex991earningsq32026.htm"
-  },
-  {
    "sym": "DOC",
    "name": "Healthpeak Properties",
    "art": "dividende_zahltag",
@@ -719,6 +647,15 @@
    "betrag": "",
    "waehrung": "",
    "quelle": "https://www.sec.gov/Archives/edgar/data/1086222/000119312526455539/d51061dex991.htm"
+  },
+  {
+   "sym": "CSCO",
+   "name": "Cisco",
+   "art": "ergebnis",
+   "datum": "2026-11-12",
+   "betrag": "",
+   "waehrung": "",
+   "quelle": "https://www.sec.gov/Archives/edgar/data/858877/000085887726000170/exhibit991pressrelease-q1f.htm"
   },
   {
    "sym": "DHI",
@@ -1387,6 +1324,15 @@
    "quelle": "https://www.sec.gov/Archives/edgar/data/217410/000165495426009451/a6665b.htm"
   },
   {
+   "sym": "CSCO",
+   "name": "Cisco",
+   "art": "dividende_exdatum",
+   "datum": "2027-01-04",
+   "betrag": "0.42",
+   "waehrung": "USD",
+   "quelle": "https://www.sec.gov/Archives/edgar/data/858877/000085887726000170/exhibit991pressrelease-q1f.htm"
+  },
+  {
    "sym": "RSG",
    "name": "Republic Services",
    "art": "dividende_exdatum",
@@ -1466,6 +1412,15 @@
    "betrag": "",
    "waehrung": "",
    "quelle": "https://www.sec.gov/Archives/edgar/data/882184/000088218426000119/a9302026exhibit991.htm"
+  },
+  {
+   "sym": "CSCO",
+   "name": "Cisco",
+   "art": "dividende_zahltag",
+   "datum": "2027-01-20",
+   "betrag": "0.42",
+   "waehrung": "USD",
+   "quelle": "https://www.sec.gov/Archives/edgar/data/858877/000085887726000170/exhibit991pressrelease-q1f.htm"
   },
   {
    "sym": "VOD",
