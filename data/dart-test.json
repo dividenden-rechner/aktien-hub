@@ -1,5 +1,91 @@
 {
- "stand": "2026-11-13 20:36 UTC",
+ "status_antworten": [
+  {
+   "jahr": 2025,
+   "code": "11011",
+   "status": "000",
+   "message": "정상"
+  },
+  {
+   "jahr": 2026,
+   "code": "11014",
+   "status": "013",
+   "message": "조회된 데이타가 없습니다."
+  },
+  {
+   "jahr": 2025,
+   "code": "11014",
+   "status": "000",
+   "message": "정상"
+  },
+  {
+   "jahr": 2025,
+   "code": "11011",
+   "status": "000",
+   "message": "정상"
+  },
+  {
+   "jahr": 2026,
+   "code": "11014",
+   "status": "013",
+   "message": "조회된 데이타가 없습니다."
+  },
+  {
+   "jahr": 2025,
+   "code": "11014",
+   "status": "000",
+   "message": "정상"
+  },
+  {
+   "jahr": 2025,
+   "code": "11011",
+   "status": "000",
+   "message": "정상"
+  },
+  {
+   "jahr": 2026,
+   "code": "11014",
+   "status": "013",
+   "message": "조회된 데이타가 없습니다."
+  },
+  {
+   "jahr": 2025,
+   "code": "11014",
+   "status": "000",
+   "message": "정상"
+  },
+  {
+   "jahr": 2025,
+   "code": "11011",
+   "status": "000",
+   "message": "정상"
+  },
+  {
+   "jahr": 2026,
+   "code": "11014",
+   "status": "013",
+   "message": "조회된 데이타가 없습니다."
+  },
+  {
+   "jahr": 2025,
+   "code": "11014",
+   "status": "000",
+   "message": "정상"
+  },
+  {
+   "jahr": 2025,
+   "code": "11011",
+   "status": "000",
+   "message": "정상"
+  },
+  {
+   "jahr": 2026,
+   "code": "11014",
+   "status": "000",
+   "message": "정상"
+  }
+ ],
+ "stand": "2026-11-13 22:57 UTC",
  "firmen": [
   {
    "firma": "Samsung Electronics",
