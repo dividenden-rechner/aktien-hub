@@ -17,10 +17,11 @@ Datei anklicken, dann Stift-Symbol: Zeile `draft: true` löschen und speichern, 
 | 29.10.2026 22:42 | Amazon steigert Umsatz im dritten Quartal auf 201,9 Milliarden Dollar | [79738970_2026-10-29/7757_2242-amazon-q3-2026-zahlen.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/79738970_2026-10-29/7757_2242-amazon-q3-2026-zahlen.md) |
 | 29.10.2026 10:12 | Shell erzielt im dritten Quartal 10,8 Milliarden Dollar Gewinn | [79738970_2026-10-29/8987_1012-shell-q3-2026-ergebnisse.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/79738970_2026-10-29/8987_1012-shell-q3-2026-ergebnisse.md) |
 
-### Online (386)
+### Online (387)
 
 | Datum | Titel | Datei |
 |---|---|---|
+| 13.11.2026 19:57 | Novo Nordisk: EU-Zulassung für Frehemgo bei Hämophilie A | [79738886_2026-11-13/8042_1957-novo-nordisk-frehemgo-eu-zulassung-kurz.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/79738886_2026-11-13/8042_1957-novo-nordisk-frehemgo-eu-zulassung-kurz.md) |
 | 13.11.2026 19:56 | Zealand Pharma: EU-Zulassung für Zeydovio bei Kurzdarmsyndrom | [79738886_2026-11-13/8044_1956-zealand-pharma-zeydovio-eu-zulassung-kurz.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/79738886_2026-11-13/8044_1956-zealand-pharma-zeydovio-eu-zulassung-kurz.md) |
 | 13.11.2026 19:55 | Novartis: EU-Ausschuss empfiehlt Cosentyx für Jugendliche mit Hidradenitis suppurativa | [79738886_2026-11-13/8044_1955-novartis-cosentyx-hs-zulassung-empfehlung-kurz.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/79738886_2026-11-13/8044_1955-novartis-cosentyx-hs-zulassung-empfehlung-kurz.md) |
 | 13.11.2026 18:35 | Nvidia: Verwaltungsrat hat Arm-Chef René Haas als Huang-Nachfolger angesprochen | [79738886_2026-11-13/8164_1835-nvidia-haas-huang-nachfolge-kurz.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/79738886_2026-11-13/8164_1835-nvidia-haas-huang-nachfolge-kurz.md) |
