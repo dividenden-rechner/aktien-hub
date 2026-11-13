@@ -1,0 +1,713 @@
+{
+"quelle": "boerse.de Fundamentalanalyse (je Firma, Seite 'fundamental-analyse')",
+"stand": "2026-11-12",
+"einheit": "Mio € (je Aktie in €; aktien_mio in Mio. Stück)",
+"jahre": [
+2019,
+2020,
+2021,
+2022,
+2023,
+2024,
+2025
+],
+"hinweis": "Jahresüberschuss meist Anteil der Aktionäre, kann je Firma von Pressemitteilungen abweichen. Umsatz bei Banken/Versicherern von boerse.de nicht geführt (null). Nicht geprüft gegen Geschäftsberichte.",
+"firmen": {
+"PNDORA.CO": {
+"name": "Pandora",
+"isin": "DK0060252690",
+"waehrung": "DKK",
+"hinweis": "Quelle stockanalysis.com (boerse.de-Fundamentalseite nicht abrufbar), 2019/2020 nicht verfuegbar (null). Berichtswaehrung DKK. EPS verwaessert, aktien_mio = verwaessert gewichtet. dividendenausschuettung = im Jahr gezahlte Dividenden laut Cashflow (2021 ohne Ausweis, null). dividende_je_aktie = fuer das Geschaeftsjahr beschlossen. Eigenkapitalrendite = Jahresueberschuss / Eigenkapital zum Jahresende (berechnet).",
+"umsatz": [
+null,
+null,
+23394,
+26463,
+28136,
+31680,
+32549
+],
+"ebt": [
+null,
+null,
+5378,
+6533,
+6234,
+6926,
+6912
+],
+"jahresueberschuss": [
+null,
+null,
+4160,
+5029,
+4740,
+5227,
+5241
+],
+"dividendenausschuettung": [
+null,
+null,
+null,
+1514,
+1412,
+1471,
+1567
+],
+"eigenkapital": [
+null,
+null,
+7001,
+7167,
+5355,
+5508,
+5282
+],
+"eps": [
+null,
+null,
+41.7,
+53.7,
+55.1,
+64.6,
+67.9
+],
+"dividende_je_aktie": [
+null,
+null,
+16,
+16,
+18,
+20,
+22
+],
+"aktien_mio": [
+null,
+null,
+100,
+94,
+86,
+81,
+77
+],
+"eigenkapitalrendite_pct": [
+null,
+null,
+59.42,
+70.17,
+88.52,
+94.9,
+99.22
+]
+},
+"TRYG.CO": {
+"name": "Tryg",
+"isin": "DK0060636678",
+"waehrung": "DKK",
+"hinweis": "Versicherer: Umsatz null (Praemieneinnahmen 2025: 41.970 Mio. DKK, Gesamterloes inkl. Kapitalanlageergebnis nicht vergleichbar). Quelle stockanalysis.com (boerse.de nicht abrufbar), 2019/2020 nicht verfuegbar (null). 2021 enthaelt die RSA-Scandinavia-Uebernahme nur teilweise (Aktienzahl stieg von rund 300 auf rund 610 Mio.), daher 2021 nicht mit 2022 ff. vergleichbar. Jahresueberschuss = Anteil der Stammaktionaere (nach Hybridkupons ab 2023). Eigenkapital = Total Equity laut Stockopedia (kann Hybridkapital enthalten), Eigenkapitalrendite daraus berechnet. EPS verwaessert, aktien_mio verwaessert gewichtet. dividendenausschuettung = im Jahr gezahlt (Cashflow), dividende_je_aktie = fuer das Geschaeftsjahr.",
+"umsatz": [
+null,
+null,
+null,
+null,
+null,
+null,
+null
+],
+"ebt": [
+null,
+null,
+3956,
+3051,
+5029,
+6304,
+7212
+],
+"jahresueberschuss": [
+null,
+null,
+3158,
+2247,
+3794,
+4743,
+5338
+],
+"dividendenausschuettung": [
+null,
+null,
+2630,
+3771,
+4607,
+4816,
+4972
+],
+"eigenkapital": [
+null,
+null,
+49007,
+42503,
+40350,
+38863,
+39620
+],
+"eps": [
+null,
+null,
+5.51,
+3.47,
+6.07,
+7.7,
+8.8
+],
+"dividende_je_aktie": [
+null,
+null,
+4.28,
+6.29,
+7.4,
+7.8,
+8.2
+],
+"aktien_mio": [
+null,
+null,
+573,
+647,
+626,
+616,
+606
+],
+"eigenkapitalrendite_pct": [
+null,
+null,
+6.44,
+5.29,
+9.4,
+12.2,
+13.47
+]
+},
+"ISS.CO": {
+"name": "ISS",
+"isin": "DK0060542181",
+"waehrung": "DKK",
+"hinweis": "Quelle stockanalysis.com (boerse.de nicht abrufbar), 2019/2020 nicht verfuegbar (null). Jahresueberschuss = Anteil der Aktionaere (nach Minderheiten); 2023 enthaelt Verlust aus aufgegebenen Geschaeftsbereichen (-1.652 Mio. DKK), daher EPS 2023 nur 1,51. Eigenkapital = Total Common Equity ohne Minderheiten (Eigenkapital inkl. Minderheiten 2025: 10.540). EPS verwaessert, aktien_mio verwaessert gewichtet. dividendenausschuettung = im Jahr gezahlt (Cashflow); 2021/2022 keine Zahlung (Dividende fuer 2020 und 2021 ausgesetzt, Wiederaufnahme mit FY2022), daher 0. dividende_je_aktie = fuer das Geschaeftsjahr (2021: keine, 0).",
+"umsatz": [
+null,
+null,
+71363,
+73838,
+78681,
+83761,
+84684
+],
+"ebt": [
+null,
+null,
+1045,
+2520,
+2531,
+3299,
+3289
+],
+"jahresueberschuss": [
+null,
+null,
+615,
+2058,
+279,
+2581,
+2603
+],
+"dividendenausschuettung": [
+null,
+null,
+0,
+0,
+390,
+425,
+534
+],
+"eigenkapital": [
+null,
+null,
+7583,
+10156,
+9893,
+11143,
+9776
+],
+"eps": [
+null,
+null,
+3.33,
+11.01,
+1.51,
+14.12,
+15.4
+],
+"dividende_je_aktie": [
+null,
+null,
+0,
+2.1,
+2.3,
+3.1,
+3.2
+],
+"aktien_mio": [
+null,
+null,
+186,
+187,
+188,
+183,
+169
+],
+"eigenkapitalrendite_pct": [
+null,
+null,
+8.11,
+20.26,
+2.82,
+23.16,
+26.63
+]
+},
+"NZYM-B.CO": {
+"name": "Novonesis (ehem. Novozymes)",
+"isin": "DK0060336014",
+"waehrung": "EUR",
+"hinweis": "Quelle stockanalysis.com (boerse.de nicht abrufbar), 2019/2020 nicht verfuegbar (null). Berichtswaehrung EUR (Kurs in DKK). Bruch 2024: Fusion mit Chr. Hansen (Abschluss Ende Januar 2024), bis 2023 nur Novozymes allein, ab 2024 Konzern Novonesis (Umsatz 2024 +60 %, Eigenkapital 2024 von 1.876 auf 11.176, Aktienzahl von rund 278 auf rund 467 Mio.), Eigenkapitalrendite 2024 dadurch verzerrt. aktien_mio 2024 null: stockanalysis zeigt dort den Vorfusionswert 278, EPS 0,67 impliziert deutlich hoehere gewichtete Aktienzahl; EPS verwaessert. Eigenkapital = Total Common Equity ohne Minderheiten. dividendenausschuettung = im Jahr gezahlt (Cashflow; 2023 mit 379 auffaellig hoch gegenueber Dividende je Aktie, Quelle unveraendert uebernommen). dividende_je_aktie = fuer das Geschaeftsjahr, 2023 in der Quelle nicht ausgewiesen (null).",
+"umsatz": [
+null,
+null,
+2011,
+2360,
+2402,
+3834,
+4158
+],
+"ebt": [
+null,
+null,
+527.76,
+612.51,
+524.7,
+417.1,
+743.4
+],
+"jahresueberschuss": [
+null,
+null,
+423.12,
+494.2,
+405.9,
+305.8,
+583.6
+],
+"dividendenausschuettung": [
+null,
+null,
+197.03,
+204.89,
+379,
+249.7,
+402.7
+],
+"eigenkapital": [
+null,
+null,
+1591,
+1860,
+1876,
+11176,
+10855
+],
+"eps": [
+null,
+null,
+1.51,
+1.77,
+1.46,
+0.67,
+1.25
+],
+"dividende_je_aktie": [
+null,
+null,
+0.74,
+0.807,
+null,
+0.83,
+0.87
+],
+"aktien_mio": [
+null,
+null,
+280,
+279,
+278,
+null,
+467
+],
+"eigenkapitalrendite_pct": [
+null,
+null,
+26.59,
+26.57,
+21.64,
+2.74,
+5.38
+]
+},
+"FLS.CO": {
+"name": "FLSmidth",
+"isin": "DK0010234467",
+"waehrung": "DKK",
+"hinweis": "Quelle stockanalysis.com (boerse.de nicht abrufbar), 2019/2020 nicht verfuegbar (null). Bruch durch Verkauf des Cement-Geschaefts: Umsatz/EBT ab 2024 nur fortgefuehrte Geschaefte (Bergbau), 2021 bis 2023 laut Quelle noch inklusive (daher Umsatz 2023 24.106 gegenueber 15.740 in 2024). 2025: Ergebnis aus fortgefuehrten Geschaeften 714, aufgegebene Bereiche -706, Konzernergebnis 8, Anteil der Aktionaere in der Quelle nicht ausgewiesen (null), EPS verwaessert -0,17; Steuern 2025 mit 1.257 sehr hoch. Eigenkapital = Total Common Equity ohne Minderheiten. EPS verwaessert, aktien_mio verwaessert gewichtet. dividendenausschuettung = im Jahr gezahlt (Cashflow); dividende_je_aktie = fuer das Geschaeftsjahr (2024: 8,00 inkl. Sonderanteil durch Verkaufserloes, laut Quelle).",
+"umsatz": [
+null,
+null,
+17581,
+21849,
+24106,
+15740,
+14612
+],
+"ebt": [
+null,
+null,
+587,
+552,
+1054,
+1216,
+1971
+],
+"jahresueberschuss": [
+null,
+null,
+358,
+370,
+497,
+1018,
+null
+],
+"dividendenausschuettung": [
+null,
+null,
+101,
+170,
+170,
+228,
+457
+],
+"eigenkapital": [
+null,
+null,
+10371,
+10813,
+10857,
+11801,
+9512
+],
+"eps": [
+null,
+null,
+6.87,
+6.52,
+8.73,
+17.69,
+-0.17
+],
+"dividende_je_aktie": [
+null,
+null,
+3,
+3,
+4,
+8,
+4
+],
+"aktien_mio": [
+null,
+null,
+52,
+57,
+57,
+57,
+57
+],
+"eigenkapitalrendite_pct": [
+null,
+null,
+3.45,
+3.42,
+4.58,
+8.63,
+null
+]
+},
+"DEMANT.CO": {
+"name": "Demant",
+"isin": "DK0060738599",
+"waehrung": "DKK",
+"hinweis": "Quelle stockanalysis.com (boerse.de nicht abrufbar), 2019/2020 nicht verfuegbar (null). Jahresueberschuss inkl. aufgegebener Geschaeftsbereiche (2021 bis 2025 jeweils negativ: -183, -192, -1.025, -504, -823; Ergebnis aus fortgefuehrten Geschaeften 2025: 2.367, 2024: 2.892), EPS daher ebenfalls inkl. aufgegebener Bereiche. Umsatz/EBT laut Quelle nur fortgefuehrte Geschaefte. Demant zahlt keine ordentliche Dividende (Ausschuettung ueber Aktienrueckkaeufe), Quelle weist keine Dividendenzeilen aus, daher Dividende und Ausschuettung 0. Eigenkapital = Total Common Equity ohne Minderheiten. EPS verwaessert (= unverwaessert), aktien_mio gewichtet.",
+"umsatz": [
+null,
+null,
+17905,
+19705,
+21601,
+22419,
+22971
+],
+"ebt": [
+null,
+null,
+3461,
+2927,
+3745,
+3716,
+3101
+],
+"jahresueberschuss": [
+null,
+null,
+2513,
+2082,
+1795,
+2387,
+1545
+],
+"dividendenausschuettung": [
+null,
+null,
+0,
+0,
+0,
+0,
+0
+],
+"eigenkapital": [
+null,
+null,
+7977,
+8561,
+9256,
+9564,
+9842
+],
+"eps": [
+null,
+null,
+10.7,
+9.21,
+8.04,
+10.99,
+7.31
+],
+"dividende_je_aktie": [
+null,
+null,
+0,
+0,
+0,
+0,
+0
+],
+"aktien_mio": [
+null,
+null,
+235,
+226,
+223,
+217,
+211
+],
+"eigenkapitalrendite_pct": [
+null,
+null,
+31.5,
+24.32,
+19.39,
+24.96,
+15.7
+]
+},
+"ROCK-B.CO": {
+"name": "Rockwool",
+"isin": "DK0010219153",
+"waehrung": "EUR",
+"hinweis": "Quelle stockanalysis.com (boerse.de nicht abrufbar), 2019/2020 nicht verfuegbar (null). Berichtswaehrung EUR (Kurs in DKK). Die Dividende wird nach Kenntnis der Quelle in DKK beschlossen, hier jedoch in EUR laut stockanalysis (umgerechnet), dividende_waehrung daher nicht gesetzt, DKK-Betraege nicht geprueft. 2025: Ergebnis durch Verlust aus Anlagenverkaeufen/Abgaengen von -394 Mio. EUR (Quelle: 'Gain (Loss) on Sale of Assets') und hohe Steuer 165 auf EBT 193 stark gedrueckt (Jahresueberschuss 28, EPS 0,10), EBT ohne Sondereffekte 609. EPS verwaessert, aktien_mio verwaessert gewichtet. Eigenkapital = Total Common Equity. dividendenausschuettung = im Jahr gezahlt (Cashflow); dividende_je_aktie = fuer das Geschaeftsjahr.",
+"umsatz": [
+null,
+null,
+3088,
+3907,
+3620,
+3855,
+3877
+],
+"ebt": [
+null,
+null,
+393,
+358,
+522,
+696,
+193
+],
+"jahresueberschuss": [
+null,
+null,
+303,
+273,
+389,
+550,
+28
+],
+"dividendenausschuettung": [
+null,
+null,
+93,
+102,
+101,
+125,
+178
+],
+"eigenkapital": [
+null,
+null,
+2394,
+2580,
+2804,
+3085,
+2741
+],
+"eps": [
+null,
+null,
+1.4,
+1.26,
+1.8,
+2.58,
+0.1
+],
+"dividende_je_aktie": [
+null,
+null,
+0.471,
+0.47,
+0.577,
+0.845,
+0.6
+],
+"aktien_mio": [
+null,
+null,
+216,
+216,
+216,
+214,
+206
+],
+"eigenkapitalrendite_pct": [
+null,
+null,
+12.66,
+10.58,
+13.87,
+17.83,
+1.02
+]
+},
+"JYSK.CO": {
+"name": "Jyske Bank",
+"isin": "DK0010307958",
+"waehrung": "DKK",
+"hinweis": "Bank: Umsatz null. Quelle stockanalysis.com (boerse.de nicht abrufbar), 2019/2020 nicht verfuegbar (null). EPS 2024/2025 (80,03/85,49) und Dividende 2025 (25,00) gegen Jahresabschlussmeldung 2025 bestaetigt. Jahresueberschuss = Anteil der Stammaktionaere nach Hybridkupons (Konzernergebnis 2025: 5.414). Eigenkapital = Shareholders' Equity inkl. Hybridkapital/Minderheiten, daher Eigenkapitalrendite (berechnet) etwas niedriger als bei reinem Stammkapital. dividendenausschuettung = im Jahr gezahlt laut Cashflow, vermutlich inkl. Hybridkupons (2025: 1.803 gegenueber rund 1.480 Dividende fuer 2024). dividende_je_aktie 2021/2022 in der Quelle nicht ausgewiesen (null). EPS verwaessert (= unverwaessert), aktien_mio gewichtet.",
+"umsatz": [
+null,
+null,
+null,
+null,
+null,
+null,
+null
+],
+"ebt": [
+null,
+null,
+4027,
+4557,
+7888,
+7165,
+7257
+],
+"jahresueberschuss": [
+null,
+null,
+3000,
+3605,
+5741,
+5050,
+5150
+],
+"dividendenausschuettung": [
+null,
+null,
+176,
+144,
+665,
+719,
+1803
+],
+"eigenkapital": [
+null,
+null,
+38266,
+40624,
+45886,
+50588,
+52312
+],
+"eps": [
+null,
+null,
+42.4,
+55.35,
+89.34,
+80.03,
+85.49
+],
+"dividende_je_aktie": [
+null,
+null,
+null,
+null,
+7.78,
+24,
+25
+],
+"aktien_mio": [
+null,
+null,
+71,
+65,
+64,
+63,
+60
+],
+"eigenkapitalrendite_pct": [
+null,
+null,
+7.84,
+8.87,
+12.51,
+9.98,
+9.84
+]
+}
+}
+}

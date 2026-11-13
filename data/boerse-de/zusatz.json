@@ -20312,6 +20312,758 @@ null
 -892
 ],
 "hinweis": "Beteiligungsgesellschaft, Quelle stockanalysis.com, SEK. umsatz/brutto/ebit null: 'Revenue' ist das Ergebnis aus Wertaenderungen der Beteiligungen (2021 +14958, 2022-2025 negativ), kein Umsatz; Operating Income folgt daraus und ist nicht vergleichbar. capex/da/bb in der Quelle nicht vorhanden (null). div 2021 = 44 Barzahlung (zusaetzlich Sachdividende, siehe Reihen-Hinweis), 2024 = 6370 (23 SEK je Aktie). Steuer 2025 = Steuerertrag (-892). Investment in Securities (Investing CF) 2021-2025: -215, +1381, -2840, +8871, -2649."
+},
+"PNDORA.CO": {
+"jahre": [
+2021,
+2022,
+2023,
+2024,
+2025
+],
+"ocf": [
+6228,
+4434,
+7384,
+8721,
+7361
+],
+"capex": [
+585,
+1191,
+1488,
+1679,
+1911
+],
+"da": [
+1914,
+1973,
+2079,
+2353,
+2586
+],
+"div": [
+null,
+1514,
+1412,
+1471,
+1567
+],
+"bb": [
+3325,
+3527,
+5022,
+4013,
+4384
+],
+"cash": [
+1043,
+794,
+1397,
+2394,
+1314
+],
+"debt": [
+3926,
+7588,
+11167,
+13401,
+15024
+],
+"umsatz": [
+23394,
+26463,
+28136,
+31680,
+32549
+],
+"brutto": [
+17804,
+20190,
+22124,
+25289,
+25801
+],
+"ebit": [
+5783,
+6743,
+7038,
+7974,
+7837
+],
+"zins": [
+133,
+262,
+644,
+801,
+846
+],
+"steuer": [
+1218,
+1504,
+1494,
+1699,
+1671
+],
+"hinweis": "DKK. capex = Sachanlagen + immaterielle Werte. da laut Cashflow inkl. Nutzungsrechte (Income-Statement-D&A ohne Leasing waere niedriger, 2025: 1120). debt inkl. Leasing. cash inkl. kurzfristiger Wertpapiere. zins = Zinsaufwand. Dividende 2021 nicht ausgewiesen (null). Akquisitionen nicht in capex."
+},
+"TRYG.CO": {
+"jahre": [
+2021,
+2022,
+2023,
+2024,
+2025
+],
+"ocf": [
+3670,
+243,
+6569,
+5649,
+6869
+],
+"capex": [
+22,
+50,
+571,
+828,
+487
+],
+"da": [
+262,
+926,
+1174,
+1126,
+1095
+],
+"div": [
+2630,
+3771,
+4607,
+4816,
+4972
+],
+"bb": [
+137,
+3253,
+2531,
+707,
+1803
+],
+"cash": [
+null,
+null,
+null,
+null,
+null
+],
+"debt": [
+null,
+null,
+null,
+null,
+null
+],
+"umsatz": [
+null,
+null,
+null,
+null,
+null
+],
+"brutto": [
+null,
+null,
+null,
+null,
+null
+],
+"ebit": [
+4757,
+4189,
+5741,
+6846,
+7508
+],
+"zins": [
+182,
+154,
+344,
+392,
+295
+],
+"steuer": [
+795,
+804,
+1178,
+1488,
+1807
+],
+"hinweis": "DKK, Versicherer: Umsatz/Bruttogewinn null (nicht sinnvoll), cash und debt null (Bilanz ohne vergleichbare Posten, Kapitalanlagen dominieren). OCF bei Versicherern stark von Kapitalanlagen und Rueckstellungen beeinflusst (2022: 243, 2025: 6.869), nur eingeschraenkt vergleichbar. capex = Sachanlagen + immaterielle Werte (2021 nur Sachanlagen 22, 2022 ohne Ausweis immaterieller Werte). da = Abschreibungen laut Cashflow ohne 'Other Amortization'. 2021 mit RSA-Uebernahme (Aktienausgabe 36.320 Mio., Kapitalanlagen +39.749 Mio.), Vorjahre nicht vergleichbar. ebit = operatives Ergebnis laut stockanalysis (vor Zinsaufwand), zins = Zinsaufwand."
+},
+"ISS.CO": {
+"jahre": [
+2021,
+2022,
+2023,
+2024,
+2025
+],
+"ocf": [
+3221,
+3333,
+3392,
+3727,
+3989
+],
+"capex": [
+628,
+809,
+719,
+634,
+667
+],
+"da": [
+1535,
+1379,
+1322,
+1336,
+1387
+],
+"div": [
+0,
+0,
+390,
+425,
+534
+],
+"bb": [
+0,
+0,
+0,
+1217,
+2810
+],
+"cash": [
+3531,
+5318,
+6210,
+6969,
+1864
+],
+"debt": [
+16982,
+16800,
+16719,
+18341,
+15077
+],
+"umsatz": [
+71363,
+73838,
+78681,
+83761,
+84684
+],
+"brutto": [
+66343,
+67353,
+71358,
+76242,
+77514
+],
+"ebit": [
+1202,
+2696,
+3148,
+3943,
+3920
+],
+"zins": [
+396,
+421,
+577,
+742,
+740
+],
+"steuer": [
+509,
+405,
+554,
+658,
+676
+],
+"hinweis": "DKK. capex = Sachanlagen laut Cashflow (immaterielle Werte nicht separat ausgewiesen). da laut Cashflow inkl. Nutzungsrechte (ohne 'Other Amortization'). debt = kurz- und langfristige Finanzschulden plus Leasing (ohne Pensionen). cash inkl. kurzfristiger Anlagen; Rueckgang 2025 durch Schuldentilgung 4.625 und Rueckkaeufe 2.810. div/bb 0 = laut Quelle keine Zahlung (Dividendenstopp bis FY2022, Rueckkaeufe erst ab 2024). Akquisitionen/Desinvestitionen nicht in capex. Das stockanalysis-Cashflow-'Net Income' 2024/2025 (5.162/5.206) weicht ab (Darstellungsfehler der Quelle), OCF 3.727/3.989 stimmt mit FCF-Zeile ueberein. 2023 Wertberichtigung 937 (aufgegebene Geschaefte)."
+},
+"NZYM-B.CO": {
+"jahre": [
+2021,
+2022,
+2023,
+2024,
+2025
+],
+"ocf": [
+546.32,
+538.57,
+557.1,
+1020,
+1222
+],
+"capex": [
+166.77,
+388.53,
+275.8,
+359.8,
+470.8
+],
+"da": [
+171.75,
+182.7,
+186.4,
+544.1,
+574.8
+],
+"div": [
+197.03,
+204.89,
+379,
+249.7,
+402.7
+],
+"bb": [
+201.74,
+67.22,
+0,
+0,
+99.9
+],
+"cash": [
+129.52,
+139.95,
+149.7,
+280,
+275.3
+],
+"debt": [
+847.45,
+934.22,
+1044,
+1797,
+3005
+],
+"umsatz": [
+2011,
+2360,
+2402,
+3834,
+4158
+],
+"brutto": [
+1162,
+1289,
+1305,
+1993,
+2305
+],
+"ebit": [
+523.72,
+602.42,
+610.9,
+842.9,
+961.7
+],
+"zins": [
+13.72,
+13.71,
+6.5,
+76.4,
+68.3
+],
+"steuer": [
+104.77,
+116.96,
+116.8,
+111.3,
+159.8
+],
+"hinweis": "EUR. Bis 2023 Novozymes allein, ab 2024 inkl. Chr. Hansen (Fusion Ende Januar 2024), Zeitreihe dadurch nicht vergleichbar (2024: Umsatz +60 %, D&A 186 auf 544, Schulden 1.044 auf 1.797). 2025 Akquisition fuer 1.520 Mio. EUR (Cash Acquisitions, nicht in capex), dadurch Schulden 3.005. capex = Sachanlagen + immaterielle Werte. da laut Cashflow (2021/2022 ohne 'Other Amortization' 13). debt inkl. Leasing. bb 0 = laut Quelle keine Rueckkaeufe 2023/2024. div 2023 mit 379 auffaellig (Quelle unveraendert)."
+},
+"FLS.CO": {
+"jahre": [
+2021,
+2022,
+2023,
+2024,
+2025
+],
+"ocf": [
+1449,
+968,
+623,
+640,
+996
+],
+"capex": [
+295,
+333,
+499,
+696,
+585
+],
+"da": [
+551,
+560,
+499,
+391,
+363
+],
+"div": [
+101,
+170,
+170,
+228,
+457
+],
+"bb": [
+0,
+0,
+1,
+20,
+1033
+],
+"cash": [
+1965,
+2237,
+1408,
+1121,
+645
+],
+"debt": [
+1047,
+2867,
+1920,
+1773,
+2571
+],
+"umsatz": [
+17581,
+21849,
+24106,
+15740,
+14612
+],
+"brutto": [
+4173,
+5076,
+5960,
+5006,
+5110
+],
+"ebit": [
+716,
+871,
+1098,
+1421,
+1852
+],
+"zins": [
+84,
+86,
+161,
+140,
+117
+],
+"steuer": [
+213,
+201,
+382,
+415,
+1257
+],
+"hinweis": "DKK. Umsatz, Bruttogewinn, EBIT, Zins, Steuer ab 2024 nur fortgefuehrte Geschaefte (Cement verkauft/aufgegeben), 2021 bis 2023 Vorjahreszahlen nicht angepasst, daher Zeitreihe nicht vergleichbar. Steuer 2025 mit 1.257 bei EBT 1.971 auffaellig hoch (Quelle). capex = Sachanlagen + immaterielle Werte. da laut Cashflow ohne 'Other Amortization'. debt inkl. Leasing. cash inkl. kurzfristiger Anlagen. bb 2021/2022 ohne Ausweis (0). 2022 Akquisition 2.120 (Cash Acquisitions, nicht in capex), 2025 Rueckkaeufe 1.033."
+},
+"DEMANT.CO": {
+"jahre": [
+2021,
+2022,
+2023,
+2024,
+2025
+],
+"ocf": [
+3279,
+2369,
+4226,
+4064,
+3973
+],
+"capex": [
+726,
+924,
+835,
+779,
+857
+],
+"da": [
+1065,
+1176,
+1293,
+1435,
+1519
+],
+"div": [
+0,
+0,
+0,
+0,
+0
+],
+"bb": [
+3200,
+1840,
+846,
+2301,
+582
+],
+"cash": [
+1172,
+1130,
+1138,
+1112,
+1330
+],
+"debt": [
+11338,
+15076,
+14454,
+15681,
+20988
+],
+"umsatz": [
+17905,
+19705,
+21601,
+22419,
+22971
+],
+"brutto": [
+13458,
+14669,
+16320,
+17090,
+17371
+],
+"ebit": [
+3419,
+3109,
+4457,
+4363,
+3968
+],
+"zins": [
+109,
+191,
+531,
+652,
+553
+],
+"steuer": [
+750,
+651,
+922,
+824,
+734
+],
+"hinweis": "DKK. capex = Sachanlagen + immaterielle Werte. da laut Cashflow inkl. Nutzungsrechte (IS-Angabe ohne Leasing 2025: 718). div 0: Quelle weist keine Dividendenzahlung aus (Demant zahlt keine ordentliche Dividende). debt inkl. Leasing und kurzfristiger Schulden. Akquisitionen nicht in capex (2025: 6.285, 2022: 2.323), treiben den Schuldenanstieg (2025: 20.988). OCF/Gewinn koennen aufgegebene Geschaefte enthalten."
+},
+"ROCK-B.CO": {
+"jahre": [
+2021,
+2022,
+2023,
+2024,
+2025
+],
+"ocf": [
+426,
+394,
+707,
+817,
+610
+],
+"capex": [
+302,
+334,
+326,
+387,
+473
+],
+"da": [
+195,
+229,
+242,
+248,
+269
+],
+"div": [
+93,
+102,
+101,
+125,
+178
+],
+"bb": [
+7,
+2,
+3,
+152,
+157
+],
+"cash": [
+166,
+209,
+354,
+403,
+108
+],
+"debt": [
+90,
+233,
+115,
+122,
+276
+],
+"umsatz": [
+3088,
+3907,
+3620,
+3855,
+3877
+],
+"brutto": [
+1972,
+2225,
+2318,
+2573,
+2613
+],
+"ebit": [
+401,
+401,
+533,
+676,
+594
+],
+"zins": [
+10,
+11,
+22,
+17,
+18
+],
+"steuer": [
+90,
+85,
+133,
+146,
+165
+],
+"hinweis": "EUR. capex = Sachanlagen + immaterielle Werte. da laut Cashflow ohne 'Other Amortization' (6 bis 9). debt inkl. Leasing und kurzfristiger Schulden. 2025: EBIT 594 ohne den Sonderverlust von -394 (steht unterhalb EBIT), Steuer 165 bei EBT 193 (Steuerquote 85 %); OCF enthaelt 'Other Operating Activities' +371 (Rueckrechnung des Sondereffekts); Debt-Anstieg 2025 durch 150 neue Kredite."
+},
+"JYSK.CO": {
+"jahre": [
+2021,
+2022,
+2023,
+2024,
+2025
+],
+"ocf": [
+null,
+null,
+null,
+null,
+null
+],
+"capex": [
+null,
+null,
+null,
+null,
+null
+],
+"da": [
+null,
+null,
+null,
+null,
+null
+],
+"div": [
+176,
+144,
+665,
+719,
+1803
+],
+"bb": [
+null,
+null,
+null,
+null,
+null
+],
+"cash": [
+null,
+null,
+null,
+null,
+null
+],
+"debt": [
+null,
+null,
+null,
+null,
+null
+],
+"umsatz": [
+null,
+null,
+null,
+null,
+null
+],
+"brutto": [
+null,
+null,
+null,
+null,
+null
+],
+"ebit": [
+null,
+null,
+null,
+null,
+null
+],
+"zins": [
+null,
+null,
+null,
+null,
+null
+],
+"steuer": [
+851,
+805,
+1984,
+1853,
+1843
+],
+"hinweis": "DKK, Bank: operativer Cashflow (2021 bis 2025: -345, 25.089, 6.934, -13.740, -3.858) schwankt mit Kredit- und Einlagenbewegungen und ist nicht vergleichbar, daher null. capex null (Quelle-Posten 'Capital Expenditures' 1.029 bis 2.442 enthaelt offenbar Leasingvermoegen, Verkaeufe 623 bis 1.262). da null: die Quelle weist unter 'D&A' dieselben Werte wie 'Occupancy Expenses' aus (z. B. 2025: 708), kein echter Abschreibungsposten. bb null: Quelle zeigt Rueckkaeufe 4.408/3.316/1.763/3.853/3.649 gegenlaeufig zu Aktienausgabe 3.028/1.989/1.759/3.950/1.670 (Eigenhandel in eigenen Aktien), netto nicht eindeutig. cash/debt/Umsatz/Bruttogewinn/EBIT/Zins bei Banken nicht sinnvoll (null). div = gezahlte Dividenden laut Cashflow, vermutlich inkl. Hybridkupons. steuer = Ertragsteuern."
 }
 }
 }
