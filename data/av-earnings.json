@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-12 13:58 UTC",
+ "updated": "2026-11-13 02:53 UTC",
  "quelle": "Alpha Vantage",
  "items": [
   {
@@ -113,7 +113,7 @@
    "eps_n": 0,
    "rev_est": 5816042211640.0,
    "rev_n": 8,
-   "est_stand": "2026-11-12"
+   "est_stand": "2026-11-13"
   },
   {
    "sym": "MUFG",
@@ -126,7 +126,7 @@
    "eps_n": 1,
    "rev_est": 1772561201250.0,
    "rev_n": 2,
-   "est_stand": "2026-11-12"
+   "est_stand": "2026-11-13"
   },
   {
    "sym": "SMFG",
@@ -139,7 +139,7 @@
    "eps_n": 1,
    "rev_est": 1361652794670.0,
    "rev_n": 2,
-   "est_stand": "2026-11-12"
+   "est_stand": "2026-11-13"
   },
   {
    "sym": "ACM",
@@ -152,7 +152,7 @@
    "eps_n": 10,
    "rev_est": 4098003760.0,
    "rev_n": 3,
-   "est_stand": "2026-11-12"
+   "est_stand": "2026-11-13"
   },
   {
    "sym": "BIDU",
@@ -165,7 +165,7 @@
    "eps_n": 15,
    "rev_est": 30598757870.0,
    "rev_n": 20,
-   "est_stand": "2026-11-12"
+   "est_stand": "2026-11-13"
   },
   {
    "sym": "TCOM",
@@ -178,7 +178,7 @@
    "eps_n": 15,
    "rev_est": 18927296580.0,
    "rev_n": 16,
-   "est_stand": "2026-11-12"
+   "est_stand": "2026-11-13"
   },
   {
    "sym": "TSN",
@@ -191,7 +191,7 @@
    "eps_n": 8,
    "rev_est": 14096286810.0,
    "rev_n": 9,
-   "est_stand": "2026-11-12"
+   "est_stand": "2026-11-13"
   },
   {
    "sym": "XPEV",
@@ -204,7 +204,7 @@
    "eps_n": 2,
    "rev_est": 23169986570.0,
    "rev_n": 9,
-   "est_stand": "2026-11-12"
+   "est_stand": "2026-11-13"
   },
   {
    "sym": "AS",
@@ -217,20 +217,20 @@
    "eps_n": 16,
    "rev_est": 2137067030.0,
    "rev_n": 14,
-   "est_stand": "2026-11-11"
+   "est_stand": "2026-11-13"
   },
   {
    "sym": "BHP",
    "datum": "2026-11-17",
    "name": "BHP GROUP LIMITED",
-   "fiscal": "2026-09-30",
+   "fiscal": "2025-03-31",
    "cur": "USD",
    "zeit": "",
    "eps_est": 0.0,
    "eps_n": 0,
    "rev_est": 0.0,
    "rev_n": 0,
-   "est_stand": "2026-11-11"
+   "est_stand": "2026-11-13"
   },
   {
    "sym": "DIS",
@@ -676,7 +676,7 @@
    "name": "DELL TECHNOLOGIES INCORPORATED",
    "fiscal": "2026-10-31",
    "cur": "USD",
-   "zeit": "",
+   "zeit": "nach",
    "eps_est": 6.41,
    "eps_src": "kalender"
   },
