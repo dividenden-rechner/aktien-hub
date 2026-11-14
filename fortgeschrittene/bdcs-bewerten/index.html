@@ -53,6 +53,13 @@
 .bdc-status{font-size:14px;color:#5d6b78}
 .bdc-ig{margin:10px 0 0;font-size:15px}
 .bdc-ig a{font-weight:600}
+.bdc-warn{margin:14px 0;padding:12px 14px;border-left:4px solid #c0392b;background:#fdf1ef;font-size:15px;line-height:1.55;color:#14202b}
+.bdc-warn a{color:#166a3c}
+.bdc-ig{margin:14px 0 22px;padding:14px;border:1px solid #e5e9ee;background:#fff;text-align:center}
+.bdc-ig-t{margin:0 0 10px;font-size:15px}
+.bdc-ig-btn{all:unset;cursor:pointer;display:inline-block;padding:10px 20px;border-radius:22px;background:#2f9e5b;color:#fff;font-weight:700;font-size:15px}
+.bdc-ig-btn:focus-visible{outline:2px solid #14202b;outline-offset:2px}
+.bdc-ig-h{margin:10px 0 0;font-size:12.5px;color:#5d6b78}
 @media (max-width:420px){.bdc-tab{font-size:13px}.bdc-tab th,.bdc-tab td{padding:7px 3px}.fn img,.fn .lgph{width:30px;height:30px}}
 </style>
 </head>
@@ -80,7 +87,13 @@
 <p class="bdc-leg"><span><i style="background:#2f9e5b"></i>grün: Kurs unter NAV, günstig</span><span><i style="background:#c0392b"></i>rot: Kurs über NAV, teuer</span></p>
 <p class="bdc-note">Bei einzelnen Werten stammt die Rendite aus der letzten bekannten Quartalsdividende mal 4. Fehlt ein Kurs von den Börsen, nehmen wir den Kurs aus unserer eigenen BDC-Liste, und das wird so ausgewiesen.</p>
 
-<p class="bdc-ig"><a href="https://www.instagram.com/p/DR6XoMPglVf/" target="_blank" rel="noopener nofollow">Passend dazu auf Instagram: Beitrag ansehen</a></p>
+<div class="bdc-warn" role="note"><strong>Achtung: Eine hohe Dividendenrendite ist oft ein Warnsignal.</strong> Sie entsteht meist, weil der Kurs gefallen ist, und der Markt rechnet dann häufig mit einer Kürzung. Ob die Dividende gedeckt ist, zeigt die Rendite allein nicht. Prüfe zusätzlich, ob der Nettoinvestitionsertrag (NII) die Dividende deckt, wie sich der NAV entwickelt und wie viele Kredite nicht mehr bedient werden (Non-Accruals). Diese Werte findest du im <a href="../../screener/">Screener</a> und auf der Aktienseite im <a href="../../aktien-hub/">Aktien-Hub</a>. Ein deutlicher Abschlag zum NAV bei sehr hoher Rendite ist meist ein Zeichen, dass etwas nicht stimmt.</div>
+<div class="bdc-ig" id="bdc-ig">
+<p class="bdc-ig-t"><strong>Passend dazu auf Instagram:</strong> unser Beitrag zu BDCs</p>
+<button type="button" class="bdc-ig-btn" id="bdc-ig-btn">Instagram-Beitrag anzeigen</button>
+<p class="bdc-ig-h">Beim Anzeigen lädt die Seite Inhalte von Instagram, dabei werden Daten an Meta übertragen. <a href="https://www.instagram.com/p/DR6XoMPglVf/" target="_blank" rel="noopener nofollow">Direkt auf Instagram öffnen</a></p>
+</div>
+<script>(function(){var b=document.getElementById("bdc-ig-btn");if(!b)return;b.onclick=function(){var w=document.getElementById("bdc-ig");w.innerHTML='<blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/p/DR6XoMPglVf/" data-instgrm-version="14" style="margin:0 auto;max-width:540px;width:100%"><a href="https://www.instagram.com/p/DR6XoMPglVf/">Beitrag auf Instagram ansehen</a></blockquote>';var sc=document.createElement("script");sc.async=true;sc.src="https://www.instagram.com/embed.js";document.body.appendChild(sc);};})();</script>
 <h2>So liest du die Tabelle</h2>
 <p>Kurs/NAV setzt den Börsenkurs ins Verhältnis zum Nettovermögenswert je Aktie. Liegt der Wert unter 1, zahlst du weniger als den Buchwert der Kredite und Beteiligungen. Liegt er darüber, zahlst du einen Aufschlag, meist, weil der Markt der Gesellschaft mehr zutraut. Die Dividendenrendite ist die laufende Dividende geteilt durch den Kurs.</p>
 <p>Die Marktkapitalisierung ist der Kurs mal die Aktienzahl aus den SEC-Daten. Mit einem Klick auf die Spaltenüberschrift sortierst du die Tabelle nach Größe.</p>
