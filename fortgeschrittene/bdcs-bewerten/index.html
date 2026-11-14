@@ -274,11 +274,15 @@ async function draw(rows, stand){
   x.fillStyle="#ffffff"; x.fillRect(0,0,W,H);
   var tpl=await loadImg("../../assets/story-vorlagen/daten-fakten.png");
   if(tpl) x.drawImage(tpl,0,0,W,H);
+  /* Aufmacherfoto (Unsplash) unter dem gruenen Kopf, ausgeschnitten auf 1080 x 260 */
+  var ph=await loadImg("../../assets/share/bdc-aufmacher-unsplash.jpg");
+  var PY=194, PH=260;
+  if(ph){ var sc=Math.max(W/ph.width, PH/ph.height), sw=W/sc, sh=PH/sc, sx=(ph.width-sw)/2, sy=(ph.height-sh)/2; x.drawImage(ph,sx,sy,sw,sh,0,PY,W,PH); }
   x.textBaseline="top"; x.fillStyle="#111";
-  x.font="700 56px "+F; x.fillText("BDCs im Vergleich",60,228);
-  x.font="400 26px "+F; x.fillStyle="#262626"; x.fillText("Kurs/NAV, Rendite und Marktkapitalisierung · Stand "+stand,60,298);
-  var top=368, cols={t:60, kurs:500, mc:660, dy:830, pn:1020};
-  var avail=1800-top-70, n=rows.length, rh=Math.min(44, Math.floor(avail/(n+1))), fs=Math.min(26, Math.round(rh*0.6));
+  x.font="700 52px "+F; x.fillText("BDCs im Vergleich",60,PY+PH+30);
+  x.font="400 24px "+F; x.fillStyle="#262626"; x.fillText("Kurs/NAV, Rendite und Marktkapitalisierung · Stand "+stand,60,PY+PH+98);
+  var top=PY+PH+160, cols={t:60, kurs:500, mc:660, dy:830, pn:1020};
+  var avail=1800-top-70, n=rows.length, rh=Math.min(40, Math.floor(avail/(n+1))), fs=Math.min(22, Math.round(rh*0.6));
   x.fillStyle="#111"; x.font="700 "+Math.round(fs*0.9)+"px "+F; x.textAlign="left"; x.fillText("BDC",cols.t,top);
   x.textAlign="right"; x.fillText("Kurs $",cols.kurs,top); x.fillText("Mrd. $",cols.mc,top); x.fillText("Rendite",cols.dy,top); x.fillText("Kurs/NAV",cols.pn,top);
   var y=top+rh; x.strokeStyle="#111"; x.lineWidth=2; x.beginPath(); x.moveTo(60,y-8); x.lineTo(1020,y-8); x.stroke();
@@ -291,7 +295,8 @@ async function draw(rows, stand){
   });
   x.strokeStyle="#111"; x.beginPath(); x.moveTo(60,y-8); x.lineTo(1020,y-8); x.stroke();
   x.textAlign="left"; x.font="400 22px "+F; x.fillStyle="#444";
-  x.fillText("Keine Anlageberatung · Daten: SEC, Börsen und eigene BDC-Liste", 60, 1812);
+  x.fillText("Keine Anlageberatung · Daten: SEC, Börsen und eigene BDC-Liste", 60, 1800);
+  x.font="400 18px "+F; x.fillStyle="#666"; x.fillText("Foto: Sean Pollock / Unsplash", 60, 1834);
   return new Promise(function(res){ c.toBlob(res,"image/png"); });
 }
 function say(t){ if(msg) msg.textContent=t; }
