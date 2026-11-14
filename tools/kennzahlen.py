@@ -287,6 +287,11 @@ def main():
         FMPK = json.load(open("data/bdc-kurse-fmp.json", encoding="utf-8")).get("kurse", {})
     except Exception:
         FMPK = {}
+    # Ersatz: eigene BDC-Liste (Google Sheet), nur wenn FMP fuer den Ticker keinen Kurs liefert
+    try:
+        SHEETK = json.load(open("data/bdc-kurse-sheet.json", encoding="utf-8")).get("kurse", {})
+    except Exception:
+        SHEETK = {}
     for t, b in BDC.items():
         qs = [q for q in b.get("quartale", []) if q.get("nav_je_aktie")]
         z = isin.get(t)
@@ -302,10 +307,14 @@ def main():
         else:
             # Nur US-Listung: Kurs aus dem FMP-Abruf (USD); Aktienzahl, Dividenden und NAV kommen aus den SEC-Daten
             fk = FMPK.get(t)
+            if fk and fk.get("kurs"):
+                boerse = fk.get("boerse") or "US"
+            else:
+                fk = SHEETK.get(t)
+                boerse = "Eigene Liste"
             if not fk or not fk.get("kurs") or "USD" not in rate:
                 continue
             kusd = float(fk["kurs"]); k_eur = kusd / rate["USD"]; veraend = None
-            boerse = fk.get("boerse") or "US"
         q = qs[-1]
         nav = q["nav_je_aktie"]
         nii = q.get("nii_bereinigt_je_aktie") or q.get("nii_je_aktie")

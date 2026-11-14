@@ -1,0 +1,47 @@
+name: BDC-Kurse aus eigener Liste (Sheet)
+on:
+  push:
+    branches: [main]
+    paths:
+      - "tools/sheet_bdc_kurse.py"
+      - ".github/workflows/bdc-sheet-kurse.yml"
+  schedule:
+    # 20:00 Berlin: zweimal, damit die Sommerzeit mit abgedeckt ist; der Lauf prueft die Ortszeit
+    - cron: "0 18,19 * * *"
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: bdc-sheet-kurse
+jobs:
+  laden:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Nur um 20 Uhr Berlin laufen (ausser manuell oder bei Aenderung)
+        id: zeit
+        run: |
+          h=$(TZ=Europe/Berlin date +%H)
+          if [ "${{ github.event_name }}" = "schedule" ] && [ "$h" != "20" ]; then
+            echo "skip=1" >> "$GITHUB_OUTPUT"; echo "Berlin $h Uhr, kein Lauf"
+          else
+            echo "skip=0" >> "$GITHUB_OUTPUT"
+          fi
+      - name: Sheet-CSV lesen
+        if: steps.zeit.outputs.skip == '0'
+        env:
+          BDC_SHEET_CSV: "https://docs.google.com/spreadsheets/d/e/2PACX-1vTLnsms65Rp_FDKDcY66NwsFoOOCjjvXw6mt3p7sMl1xHBUhUWB_1GSOnYlIHg9y6uvqwoA-OAYEZnV/pub?gid=541058615&single=true&output=csv"
+        run: python3 tools/sheet_bdc_kurse.py
+      - name: Ergebnis committen
+        if: steps.zeit.outputs.skip == '0'
+        run: |
+          git config user.name "kurse-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add data/bdc-kurse-sheet.json
+          if git diff --cached --quiet; then echo "Keine Aenderung"; exit 0; fi
+          git commit -m "BDC-Kurse aus eigener Liste (Sheet)"
+          for i in 1 2 3; do git pull --rebase -X theirs -q && git push && break; sleep 5; done
