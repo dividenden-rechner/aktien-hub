@@ -4,6 +4,9 @@ description: "Der Claude-Entwickler will bis zu 64 Mrd. Dollar einsammeln, die N
 date: 2026-11-14 06:00
 author: "Aus der Redaktion"
 category: Analyse
+image: assets/magazin/anthropic-boersengang-foto.jpg
+image_alt: "KI-generiertes Bild: Messestand von Anthropic mit dem Schriftzug Constitutional AI"
+image_credit: "Bild: KI-generiert, kein Originalfoto"
 kein_logo: ja
 quelle_name: "Handelsblatt (11. und 13.11.2026), Bloomberg (12.11.2026), Financial Times, Börsenprospekt (S-1/A), Börse Online (13.11.2026)"
 ---
