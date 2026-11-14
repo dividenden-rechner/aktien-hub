@@ -108,7 +108,9 @@
 "meldung": "2026-10-27",
 "quelle": "https://www.sec.gov/Archives/edgar/data/1287750/000162828026067382/arccq3-2026exhibit991.htm"
 }
-]
+],
+"aktien": 722194973,
+"aktien_stand": "2026-10-22"
 },
 "OBDC": {
 "name": "Blue Owl Capital Corp",
@@ -224,7 +226,9 @@
 "meldung": "2026-11-04",
 "quelle": "https://www.sec.gov/Archives/edgar/data/1655888/000165588826000070/exhibit991pressrelease-ann.htm"
 }
-]
+],
+"aktien": 490029642,
+"aktien_stand": "2026-10-30"
 },
 "BXSL": {
 "name": "Blackstone Secured Lending Fund",
@@ -345,7 +349,9 @@
 "meldung": "2026-11-04",
 "quelle": "https://www.sec.gov/Archives/edgar/data/1736035/000121390026115721/ea0310494-01_ex991.htm"
 }
-]
+],
+"aktien": 233284585,
+"aktien_stand": "2026-11-02"
 },
 "MAIN": {
 "name": "Main Street Capital CORP",
@@ -395,7 +401,9 @@
 "meldung": "2026-10-15",
 "quelle": "https://www.sec.gov/Archives/edgar/data/1396440/000139644026000106/main-q32026xprexerxexx991.htm"
 }
-]
+],
+"aktien": 93846603,
+"aktien_stand": "2026-11-05"
 },
 "FSK": {
 "name": "FS KKR Capital Corp",
@@ -497,15 +505,21 @@
 "meldung": "2026-11-05",
 "quelle": "https://www.sec.gov/Archives/edgar/data/1422183/000110465926123011/tm2628917d1_ex99-1.htm"
 }
-]
+],
+"aktien": 271986599,
+"aktien_stand": "2026-10-30"
 },
 "GBDC": {
 "name": "GOLUB CAPITAL BDC, Inc.",
-"quartale": []
+"quartale": [],
+"aktien": 259651589,
+"aktien_stand": "2026-08-03"
 },
 "HTGC": {
 "name": "Hercules Capital, Inc.",
-"quartale": []
+"quartale": [],
+"aktien": 189548796,
+"aktien_stand": "2026-10-22"
 },
 "TSLX": {
 "name": "Sixth Street Specialty Lending, Inc.",
@@ -645,7 +659,9 @@
 "meldung": "2026-11-03",
 "quelle": "https://www.sec.gov/Archives/edgar/data/1508655/000119312526445319/tslx-ex99_1.htm"
 }
-]
+],
+"aktien": 95713159,
+"aktien_stand": "2026-11-03"
 },
 "MSDL": {
 "name": "Morgan Stanley Direct Lending Fund",
@@ -781,11 +797,15 @@
 "meldung": "2026-11-05",
 "quelle": "https://www.sec.gov/Archives/edgar/data/1782524/000119312526449954/d160109dex991.htm"
 }
-]
+],
+"aktien": 83301477,
+"aktien_stand": "2026-11-04"
 },
 "PSEC": {
 "name": "PROSPECT CAPITAL CORP",
-"quartale": []
+"quartale": [],
+"aktien": 556989222,
+"aktien_stand": "2026-11-03"
 },
 "OCSL": {
 "name": "Oaktree Specialty Lending Corp",
@@ -910,11 +930,15 @@
 "meldung": "2026-08-05",
 "quelle": "https://www.sec.gov/Archives/edgar/data/1414932/000119312526333737/d158058dex991.htm"
 }
-]
+],
+"aktien": 88085523,
+"aktien_stand": "2026-08-04"
 },
 "CSWC": {
 "name": "CAPITAL SOUTHWEST CORP",
-"quartale": []
+"quartale": [],
+"aktien": 66495019,
+"aktien_stand": "2026-10-29"
 },
 "GSBD": {
 "name": "Goldman Sachs BDC, Inc.",
@@ -1049,7 +1073,9 @@
 "meldung": "2026-11-05",
 "quelle": "https://www.sec.gov/Archives/edgar/data/1572694/000119312526450313/d829105dex991.htm"
 }
-]
+],
+"aktien": 111049130,
+"aktien_stand": "2026-11-05"
 },
 "MFIC": {
 "name": "MidCap Financial Investment Corp",
@@ -1184,7 +1210,9 @@
 "meldung": "2026-10-27",
 "quelle": "https://www.sec.gov/Archives/edgar/data/1278752/000119312526432622/d115048dex991.htm"
 }
-]
+],
+"aktien": 82372628,
+"aktien_stand": "2026-11-04"
 },
 "TRIN": {
 "name": "Trinity Capital Inc.",
@@ -1279,11 +1307,15 @@
 "meldung": "2026-11-04",
 "quelle": "https://www.sec.gov/Archives/edgar/data/1786108/000119312526446244/trin-ex99_1.htm"
 }
-]
+],
+"aktien": 98816137,
+"aktien_stand": "2026-11-02"
 },
 "NMFC": {
 "name": "New Mountain Finance Corp",
-"quartale": []
+"quartale": [],
+"aktien": 94452390,
+"aktien_stand": "2026-11-02"
 },
 "BBDC": {
 "name": "Barings BDC, Inc.",
@@ -1423,7 +1455,9 @@
 "meldung": "2026-11-05",
 "quelle": "https://www.sec.gov/Archives/edgar/data/1379785/000137978526000041/exhibit99120261105earnings.htm"
 }
-]
+],
+"aktien": 104706884,
+"aktien_stand": "2026-11-05"
 },
 "BCSF": {
 "name": "Bain Capital Specialty Finance, Inc.",
@@ -1563,7 +1597,9 @@
 "meldung": "2026-11-09",
 "quelle": "https://www.sec.gov/Archives/edgar/data/1655050/000119312526453801/bcsf-ex99_1.htm"
 }
-]
+],
+"aktien": 64868507,
+"aktien_stand": "2026-11-09"
 },
 "CGBD": {
 "name": "Carlyle Secured Lending, Inc.",
@@ -1698,7 +1734,9 @@
 "meldung": "2026-11-05",
 "quelle": "https://www.sec.gov/Archives/edgar/data/1544206/000154420626000067/cgbd_2026930xxex991earning.htm"
 }
-]
+],
+"aktien": 68010677,
+"aktien_stand": "2026-11-04"
 },
 "PFLT": {
 "name": "PennantPark Floating Rate Capital Ltd.",
@@ -1823,7 +1861,9 @@
 "meldung": "2026-08-10",
 "quelle": "https://www.sec.gov/Archives/edgar/data/1504619/000117184326005387/exh_991.htm"
 }
-]
+],
+"aktien": 99217896,
+"aktien_stand": "2026-08-10"
 },
 "SLRC": {
 "name": "SLR Investment Corp.",
@@ -1954,7 +1994,9 @@
 "meldung": "2026-11-03",
 "quelle": "https://www.sec.gov/Archives/edgar/data/1418076/000117184326007082/exh_991.htm"
 }
-]
+],
+"aktien": 53670632,
+"aktien_stand": "2026-10-30"
 },
 "FDUS": {
 "name": "FIDUS INVESTMENT Corp",
@@ -2094,11 +2136,15 @@
 "meldung": "2026-11-05",
 "quelle": "https://www.sec.gov/Archives/edgar/data/1513363/000119312526449781/fdus-ex99_1.htm"
 }
-]
+],
+"aktien": 39770605,
+"aktien_stand": "2026-11-03"
 },
 "NCDL": {
 "name": "Nuveen Churchill Direct Lending Corp.",
-"quartale": []
+"quartale": [],
+"aktien": 49108771,
+"aktien_stand": "2026-11-02"
 },
 "MSIF": {
 "name": "MSC INCOME FUND, INC.",
@@ -2118,7 +2164,9 @@
 "meldung": "2026-01-20",
 "quelle": "https://www.sec.gov/Archives/edgar/data/1535778/000153577826000012/msif-2026120xexx991prexrel.htm"
 }
-]
+],
+"aktien": 45112524,
+"aktien_stand": "2026-11-05"
 },
 "GAIN": {
 "name": "GLADSTONE INVESTMENT CORPORATIONDE",
@@ -2257,7 +2305,9 @@
 "meldung": "2026-11-09",
 "quelle": "https://www.sec.gov/Archives/edgar/data/1321741/000132174126000024/gain93026er8-kex991x11926.htm"
 }
-]
+],
+"aktien": 39821967,
+"aktien_stand": "2026-11-06"
 },
 "CCAP": {
 "name": "Crescent Capital BDC, Inc.",
@@ -2393,7 +2443,9 @@
 "meldung": "2026-11-09",
 "quelle": "https://www.sec.gov/Archives/edgar/data/1633336/000119312526453594/ccap-ex99_1.htm"
 }
-]
+],
+"aktien": 36845952,
+"aktien_stand": "2026-11-09"
 },
 "CION": {
 "name": "CION Investment Corp",
@@ -2533,7 +2585,9 @@
 "meldung": "2026-11-05",
 "quelle": "https://www.sec.gov/Archives/edgar/data/1534254/000110465926123088/tm2629026d1_ex99-1.htm"
 }
-]
+],
+"aktien": 49202704,
+"aktien_stand": "2026-10-28"
 },
 "TCPC": {
 "name": "BlackRock TCP Capital Corp.",
@@ -2658,7 +2712,9 @@
 "meldung": "2026-11-05",
 "quelle": "https://www.sec.gov/Archives/edgar/data/1370755/000119312526448654/tcpc-ex99_1.htm"
 }
-]
+],
+"aktien": 83902775,
+"aktien_stand": "2026-11-05"
 },
 "GLAD": {
 "name": "GLADSTONE CAPITAL CORP",
@@ -2783,7 +2839,9 @@
 "meldung": "2026-08-04",
 "quelle": "https://www.sec.gov/Archives/edgar/data/1143513/000119312526332851/d115483dex991.htm"
 }
-]
+],
+"aktien": 22593069,
+"aktien_stand": "2026-08-03"
 },
 "PNNT": {
 "name": "PENNANTPARK INVESTMENT CORP",
@@ -2908,7 +2966,9 @@
 "meldung": "2026-08-10",
 "quelle": "https://www.sec.gov/Archives/edgar/data/1383414/000117184326005386/exh_991.htm"
 }
-]
+],
+"aktien": 65296094,
+"aktien_stand": "2026-08-10"
 },
 "PSBD": {
 "name": "Palmer Square Capital BDC Inc.",
@@ -3042,7 +3102,9 @@
 "meldung": "2026-11-04",
 "quelle": "https://www.sec.gov/Archives/edgar/data/1794776/000119312526447291/psbd-ex99_1.htm"
 }
-]
+],
+"aktien": 30138536,
+"aktien_stand": "2026-11-03"
 },
 "RWAY": {
 "name": "Runway Growth Finance Corp.",
@@ -3157,7 +3219,9 @@
 "meldung": "2026-11-05",
 "quelle": "https://www.sec.gov/Archives/edgar/data/1653384/000119312526449767/rway-ex99_1.htm"
 }
-]
+],
+"aktien": 41185187,
+"aktien_stand": "2026-11-02"
 },
 "SAR": {
 "name": "SARATOGA INVESTMENT CORP.",
@@ -3297,7 +3361,9 @@
 "meldung": "2026-10-06",
 "quelle": "https://www.sec.gov/Archives/edgar/data/1377936/000121390026107199/ea030779301ex99-1.htm"
 }
-]
+],
+"aktien": 15559638,
+"aktien_stand": "2026-10-05"
 },
 "SCM": {
 "name": "Stellus Capital Investment Corp",
@@ -3317,7 +3383,9 @@
 "meldung": "2026-07-29",
 "quelle": "https://www.sec.gov/Archives/edgar/data/1551901/000110465926088224/tm2621520d1_ex99-1.htm"
 }
-]
+],
+"aktien": 28179374,
+"aktien_stand": "2026-11-09"
 },
 "HRZN": {
 "name": "Horizon Technology Finance Corp",
@@ -3337,7 +3405,9 @@
 "meldung": "2026-08-04",
 "quelle": "https://www.sec.gov/Archives/edgar/data/1487428/000143774926025688/ex_998180.htm"
 }
-]
+],
+"aktien": 65134487,
+"aktien_stand": "2026-11-05"
 },
 "LIEN": {
 "name": "Chicago Atlantic BDC, Inc.",
@@ -3472,11 +3542,15 @@
 "meldung": "2026-11-12",
 "quelle": "https://www.sec.gov/Archives/edgar/data/1843162/000121390026118353/ea031189601ex99-1.htm"
 }
-]
+],
+"aktien": 22820590,
+"aktien_stand": "2026-11-10"
 },
 "TPVG": {
 "name": "TriplePoint Venture Growth BDC Corp.",
-"quartale": []
+"quartale": [],
+"aktien": 40842783,
+"aktien_stand": "2026-11-04"
 },
 "WHF": {
 "name": "WhiteHorse Finance, Inc.",
@@ -3616,7 +3690,9 @@
 "meldung": "2026-11-09",
 "quelle": "https://www.sec.gov/Archives/edgar/data/1552198/000110465926124178/whf-ex99d1.htm"
 }
-]
+],
+"aktien": 21476471,
+"aktien_stand": "2026-11-05"
 },
 "OXSQ": {
 "name": "Oxford Square Capital Corp.",
@@ -3756,7 +3832,9 @@
 "meldung": "2026-10-30",
 "quelle": "https://www.sec.gov/Archives/edgar/data/1259429/000121390026114080/ea031027601_ex99-1.htm"
 }
-]
+],
+"aktien": 121267697,
+"aktien_stand": "2026-11-02"
 },
 "GECC": {
 "name": "Great Elm Capital Corp.",
@@ -3896,7 +3974,9 @@
 "meldung": "2026-11-02",
 "quelle": "https://www.sec.gov/Archives/edgar/data/1675033/000119312526443709/gecc-ex99_1.htm"
 }
-]
+],
+"aktien": 13659450,
+"aktien_stand": "2026-10-26"
 },
 "OFS": {
 "name": "OFS Capital Corp",
@@ -3946,7 +4026,9 @@
 "meldung": "2026-10-29",
 "quelle": "https://www.sec.gov/Archives/edgar/data/1487918/000148791826000090/ofs-ex99_1.htm"
 }
-]
+],
+"aktien": 13398078,
+"aktien_stand": "2026-10-27"
 },
 "ICMB": {
 "name": "Investcorp Credit Management BDC, Inc.",
@@ -4071,7 +4153,9 @@
 "meldung": "2026-11-13",
 "quelle": "https://www.sec.gov/Archives/edgar/data/1578348/000119312526460653/d174574dex991.htm"
 }
-]
+],
+"aktien": 14432472,
+"aktien_stand": "2026-11-12"
 },
 "RAND": {
 "name": "RAND CAPITAL CORP",
@@ -4091,15 +4175,17 @@
 "meldung": "2026-11-04",
 "quelle": "https://www.sec.gov/Archives/edgar/data/81955/000149315226049886/ex99-1.htm"
 }
-]
+],
+"aktien": 2969814,
+"aktien_stand": "2026-11-04"
 }
 },
 "stand": "2026-11-14",
 "hinweis": "Quartalszahlen der BDCs aus ihren Ergebnis-Pressemitteilungen (SEC 8-K, EX-99), automatisch ausgelesen.",
 "letzter_lauf": {
-"zeit": "2026-11-14 06:55",
-"offen": 1,
-"ki_aufrufe": 1,
+"zeit": "2026-11-14 08:35",
+"offen": 0,
+"ki_aufrufe": 0,
 "ohne_sec": [
 "SSSS",
 "MRCC"
