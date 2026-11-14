@@ -49,7 +49,7 @@
    }
   }
  ],
- "stand": "2026-11-14 19:22 UTC",
+ "stand": "2026-11-14 19:29 UTC",
  "firmen": [
   {
    "firma": "Toyota",
@@ -59,7 +59,12 @@
    "eps_jahr": 295.25,
    "eps_ytd": null,
    "eps_ytd_vorjahr": null,
-   "stichtag": null
+   "stichtag": null,
+   "kontexte_eps_h1": [
+    "InterimDuration",
+    "Prior1InterimDuration",
+    "Prior1YearDuration"
+   ]
   },
   {
    "firma": "Sony",
@@ -69,7 +74,12 @@
    "eps_jahr": -54.7,
    "eps_ytd": null,
    "eps_ytd_vorjahr": null,
-   "stichtag": null
+   "stichtag": null,
+   "kontexte_eps_h1": [
+    "InterimDuration",
+    "Prior1InterimDuration",
+    "Prior1YearDuration"
+   ]
   },
   {
    "firma": "MUFG",
@@ -93,7 +103,12 @@
    "eps_jahr": -106.06,
    "eps_ytd": null,
    "eps_ytd_vorjahr": null,
-   "stichtag": null
+   "stichtag": null,
+   "kontexte_eps_h1": [
+    "InterimDuration",
+    "Prior1InterimDuration",
+    "Prior1YearDuration"
+   ]
   }
  ]
 }
