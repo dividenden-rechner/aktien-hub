@@ -74,7 +74,7 @@ def edinet_fundamente(sec):
     if found["120"]:
         x = edinet_xbrl(found["120"])
         out["eps_jahr"] = wert(x, eps_re, ["CurrentYearDuration"])
-        out["dps_jahr"] = wert(x, r"[\w\-]+:DividendPaidPerShare\w*", ["CurrentYearDuration"])
+        out["dps_jahr"] = wert(x, r"jpcrp_cor:DividendPaidPerShareSummaryOfBusinessResults", ["CurrentYearDuration_NonConsolidatedMember", "CurrentYearDuration"])
     if found["160"]:
         x = edinet_xbrl(found["160"])
         out["eps_h1"] = wert(x, eps_re, ["InterimDuration", "CurrentYTDDuration", "CurrentSemiAnnualDuration"])
