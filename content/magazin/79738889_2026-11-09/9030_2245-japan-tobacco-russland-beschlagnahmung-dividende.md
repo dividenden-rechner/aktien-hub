@@ -79,7 +79,11 @@ Die Dividende kostet bei rund 1,67 Milliarden Aktien etwa 450 Milliarden Yen im 
 
 Mit 272 Yen je Aktie ist die Dividende heute gedeckt, und der Freie Cashflow soll 2026 bei 596 Mrd. Yen liegen. Ohne Russland steigt die Ausschüttungsquote aber auf rund 97 %, das Konzernziel liegt bei etwa 75 %.
 
-Eine Kürzung ist damit nicht sofort nötig, aber sie ist realistisch, falls der Gewinn dauerhaft fehlt. Die Bilanz trägt den Schlag mit einer Nettoverschuldung von rund 618 Mrd. Yen und einer Eigenkapitalquote von knapp 49 % zunächst. Die Investitionen in RRP sind aber hoch, und ein Gewinnausfall würde sie schwerer finanzierbar machen.
+Eine Kürzung ist damit nicht sofort nötig, aber sie ist realistisch, falls der Gewinn dauerhaft fehlt. Die Bilanz trägt den Schlag mit einer Nettoverschuldung von rund 618 Mrd. Yen und einer Eigenkapitalquote von knapp 49 % zunächst. RRP steht für risikoreduzierte Produkte. Gemeint sind Tabakprodukte, bei denen der Tabak erhitzt statt verbrannt wird, etwa das Heizstäbchen-System Ploom. Der Konzern wirbt damit, dass dabei weniger Schadstoffe entstehen als beim Rauchen einer Zigarette, und genau dieses Geschäft will er mit hohen Summen ausbauen.
+
+<!-- BILDLÜCKE: Grafik aus der Bilanz fehlt im Repo. Nach dem Hochladen als assets/magazin/japan-tobacco-bilanz-q3-2026.jpg hier einfügen: ![Bilanz ...](/assets/magazin/japan-tobacco-bilanz-q3-2026.jpg) plus Quellenzeile. -->
+
+Bis 2028 sind rund 800 Mrd. Yen für RRP vorgesehen. Die Investitionen sind damit hoch, und ein Gewinnausfall würde sie schwerer finanzierbar machen.
 
 ## Die positiven Seiten
 
