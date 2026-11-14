@@ -4055,6 +4055,21 @@
 "verschuldung_netto": 2.05,
 "meldung": "2026-05-13",
 "quelle": "https://www.sec.gov/Archives/edgar/data/1578348/000119312526221718/d127978dex991.htm"
+},
+{
+"periode_ende": "2026-09-30",
+"nav_je_aktie": 3.02,
+"nii_je_aktie": -0.13,
+"beleg_nav": "Net asset value decreased $0.42 per share to $3.02, compared to $3.44 as of June 30, 2026.",
+"dividende_quartal": "0",
+"dividende_regulaer": 0,
+"dividende_zusatz": 0,
+"nii_bereinigt_je_aktie": 0,
+"non_accrual_fv_proz": 0,
+"portfolio_mio": 132.7,
+"verschuldung_netto": 0,
+"meldung": "2026-11-13",
+"quelle": "https://www.sec.gov/Archives/edgar/data/1578348/000119312526460653/d174574dex991.htm"
 }
 ]
 },
@@ -4079,12 +4094,12 @@
 ]
 }
 },
-"stand": "2026-11-13",
+"stand": "2026-11-14",
 "hinweis": "Quartalszahlen der BDCs aus ihren Ergebnis-Pressemitteilungen (SEC 8-K, EX-99), automatisch ausgelesen.",
 "letzter_lauf": {
-"zeit": "2026-11-13 19:54",
-"offen": 0,
-"ki_aufrufe": 0,
+"zeit": "2026-11-14 06:55",
+"offen": 1,
+"ki_aufrufe": 1,
 "ohne_sec": [
 "SSSS",
 "MRCC"
