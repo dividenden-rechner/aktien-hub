@@ -1,0 +1,75 @@
+{
+ "stand": "2026-11-14 08:42 UTC",
+ "kurse": {
+  "ARCC": {
+   "kurs": 19.17,
+   "mktcap": 13844477632,
+   "letzte_dividende": 1.92,
+   "boerse": "NASDAQ"
+  },
+  "OBDC": {
+   "kurs": 10.97,
+   "mktcap": 5375629100,
+   "letzte_dividende": 1.38,
+   "boerse": "NYSE"
+  },
+  "BXSL": {
+   "kurs": 23.78,
+   "mktcap": 5547507051,
+   "letzte_dividende": 3.08,
+   "boerse": "NYSE"
+  },
+  "MAIN": {
+   "kurs": 56.4,
+   "mktcap": 5292948240,
+   "letzte_dividende": 4.34,
+   "boerse": "NYSE"
+  },
+  "FSK": {
+   "kurs": 11.72,
+   "mktcap": 3205803959,
+   "letzte_dividende": 2.04,
+   "boerse": "NYSE"
+  }
+ },
+ "fehler": {
+  "GBDC": "HTTP Error 429: Too Many Requests",
+  "HTGC": "HTTP Error 429: Too Many Requests",
+  "TSLX": "HTTP Error 429: Too Many Requests",
+  "MSDL": "HTTP Error 429: Too Many Requests",
+  "PSEC": "HTTP Error 429: Too Many Requests",
+  "OCSL": "HTTP Error 429: Too Many Requests",
+  "CSWC": "HTTP Error 429: Too Many Requests",
+  "GSBD": "HTTP Error 429: Too Many Requests",
+  "MFIC": "HTTP Error 429: Too Many Requests",
+  "TRIN": "HTTP Error 429: Too Many Requests",
+  "NMFC": "HTTP Error 429: Too Many Requests",
+  "BBDC": "HTTP Error 429: Too Many Requests",
+  "BCSF": "HTTP Error 429: Too Many Requests",
+  "CGBD": "HTTP Error 429: Too Many Requests",
+  "PFLT": "HTTP Error 429: Too Many Requests",
+  "SLRC": "HTTP Error 429: Too Many Requests",
+  "FDUS": "HTTP Error 429: Too Many Requests",
+  "NCDL": "HTTP Error 429: Too Many Requests",
+  "MSIF": "HTTP Error 429: Too Many Requests",
+  "GAIN": "HTTP Error 429: Too Many Requests",
+  "CCAP": "HTTP Error 429: Too Many Requests",
+  "CION": "HTTP Error 429: Too Many Requests",
+  "TCPC": "HTTP Error 429: Too Many Requests",
+  "GLAD": "HTTP Error 429: Too Many Requests",
+  "PNNT": "HTTP Error 429: Too Many Requests",
+  "PSBD": "HTTP Error 429: Too Many Requests",
+  "RWAY": "HTTP Error 429: Too Many Requests",
+  "SAR": "HTTP Error 429: Too Many Requests",
+  "SCM": "HTTP Error 429: Too Many Requests",
+  "HRZN": "HTTP Error 429: Too Many Requests",
+  "LIEN": "HTTP Error 429: Too Many Requests",
+  "TPVG": "HTTP Error 429: Too Many Requests",
+  "WHF": "HTTP Error 429: Too Many Requests",
+  "OXSQ": "HTTP Error 429: Too Many Requests",
+  "GECC": "HTTP Error 429: Too Many Requests",
+  "OFS": "HTTP Error 429: Too Many Requests",
+  "ICMB": "HTTP Error 429: Too Many Requests",
+  "RAND": "HTTP Error 429: Too Many Requests"
+ }
+}
