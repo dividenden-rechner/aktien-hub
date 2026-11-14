@@ -1,5 +1,5 @@
 {
- "stand": "2026-11-14 20:19 UTC",
+ "stand": "2026-11-14 21:49 UTC",
  "anzahl": 53,
  "firmen": [
   {
@@ -10,7 +10,7 @@
    "jahresbericht": "S100Y8NY",
    "halbjahresbericht": "S100ZCG0",
    "eps_jahr": 295.25,
-   "dps_jahr": null,
+   "dps_jahr": 95.0,
    "eps_h1": 185.97,
    "eps_h1_vorjahr": 136.07,
    "eps_ttm": 345.15
@@ -23,7 +23,7 @@
    "jahresbericht": "S100YE2C",
    "halbjahresbericht": "S100ZDFO",
    "eps_jahr": -54.7,
-   "dps_jahr": null,
+   "dps_jahr": 25.0,
    "eps_h1": 134.89,
    "eps_h1_vorjahr": 99.83,
    "eps_ttm": -19.64
@@ -36,7 +36,7 @@
    "jahresbericht": "S100YJQO",
    "halbjahresbericht": null,
    "eps_jahr": 213.16,
-   "dps_jahr": null
+   "dps_jahr": 86.0
   },
   {
    "ticker": "6861.T",
@@ -46,7 +46,7 @@
    "jahresbericht": "S100YAHE",
    "halbjahresbericht": "S100ZAMI",
    "eps_jahr": 1835.63,
-   "dps_jahr": null,
+   "dps_jahr": 550.0,
    "eps_h1": 1231.53,
    "eps_h1_vorjahr": 824.49,
    "eps_ttm": 2242.67
@@ -59,7 +59,7 @@
    "jahresbericht": "S100YGH5",
    "halbjahresbericht": "S100ZE31",
    "eps_jahr": 873.51,
-   "dps_jahr": null,
+   "dps_jahr": 27.5,
    "eps_h1": -136.47,
    "eps_h1_vorjahr": 510.37,
    "eps_ttm": 226.67
@@ -72,7 +72,7 @@
    "jahresbericht": "S100YEOO",
    "halbjahresbericht": "S100ZEBX",
    "eps_jahr": 1254.57,
-   "dps_jahr": null,
+   "dps_jahr": 628.0,
    "eps_h1": 166.13,
    "eps_h1_vorjahr": 105.46,
    "eps_ttm": 1315.24
@@ -85,7 +85,7 @@
    "jahresbericht": "S100YCP3",
    "halbjahresbericht": "S100ZCGQ",
    "eps_jahr": 12.61,
-   "dps_jahr": null,
+   "dps_jahr": 5.3,
    "eps_h1": 6.15,
    "eps_h1_vorjahr": 7.2,
    "eps_ttm": 11.56
@@ -98,7 +98,7 @@
    "jahresbericht": "S100YGBO",
    "halbjahresbericht": "S100ZEYY",
    "eps_jahr": 176.76,
-   "dps_jahr": null,
+   "dps_jahr": 50.0,
    "eps_h1": 93.2,
    "eps_h1_vorjahr": 103.63,
    "eps_ttm": 166.33
@@ -111,7 +111,7 @@
    "jahresbericht": "S100YA6H",
    "halbjahresbericht": "S100ZF5H",
    "eps_jahr": 128.0,
-   "dps_jahr": null,
+   "dps_jahr": 42.0,
    "eps_h1": 83.06,
    "eps_h1_vorjahr": 70.84,
    "eps_ttm": 140.22
@@ -124,7 +124,7 @@
    "jahresbericht": "S100YB25",
    "halbjahresbericht": "S100ZG6J",
    "eps_jahr": 210.92,
-   "dps_jahr": null,
+   "dps_jahr": 110.0,
    "eps_h1": 169.21,
    "eps_h1_vorjahr": 91.87,
    "eps_ttm": 288.26
@@ -137,7 +137,7 @@
    "jahresbericht": "S100YAVT",
    "halbjahresbericht": "S100ZDOR",
    "eps_jahr": 291.12,
-   "dps_jahr": null,
+   "dps_jahr": 115.0,
    "eps_h1": 202.88,
    "eps_h1_vorjahr": 147.41,
    "eps_ttm": 346.59
@@ -150,7 +150,7 @@
    "jahresbericht": "S100YERK",
    "halbjahresbericht": null,
    "eps_jahr": 411.97,
-   "dps_jahr": null
+   "dps_jahr": 157.0
   },
   {
    "ticker": "8411.T",
@@ -160,7 +160,7 @@
    "jahresbericht": "S100YF8Y",
    "halbjahresbericht": null,
    "eps_jahr": 502.92,
-   "dps_jahr": null
+   "dps_jahr": 145.0
   },
   {
    "ticker": "9983.T",
@@ -178,7 +178,7 @@
    "jahresbericht": "S100YE9I",
    "halbjahresbericht": "S100ZGX0",
    "eps_jahr": 252.69,
-   "dps_jahr": null,
+   "dps_jahr": 106.0,
    "eps_h1": 155.71,
    "eps_h1_vorjahr": 136.61,
    "eps_ttm": 271.79
@@ -191,7 +191,7 @@
    "jahresbericht": "S100Y9NX",
    "halbjahresbericht": "S100ZB07",
    "eps_jahr": 364.51,
-   "dps_jahr": null,
+   "dps_jahr": 219.0,
    "eps_h1": 191.63,
    "eps_h1_vorjahr": 170.87,
    "eps_ttm": 385.27
@@ -204,7 +204,7 @@
    "jahresbericht": "S100YDHL",
    "halbjahresbericht": "S100ZE5R",
    "eps_jahr": 349.78,
-   "dps_jahr": null,
+   "dps_jahr": 25.0,
    "eps_h1": 296.01,
    "eps_h1_vorjahr": 173.12,
    "eps_ttm": 472.67
@@ -217,7 +217,7 @@
    "jahresbericht": "S100YKG2",
    "halbjahresbericht": "S100ZDAA",
    "eps_jahr": 183.59,
-   "dps_jahr": null,
+   "dps_jahr": 80.0,
    "eps_h1": 96.83,
    "eps_h1_vorjahr": 92.37,
    "eps_ttm": 188.05
@@ -230,7 +230,7 @@
    "jahresbericht": "S100YE76",
    "halbjahresbericht": "S100ZDGN",
    "eps_jahr": 11.35,
-   "dps_jahr": null,
+   "dps_jahr": 8.6,
    "eps_h1": 7.52,
    "eps_h1_vorjahr": 7.22,
    "eps_ttm": 11.65
@@ -243,7 +243,7 @@
    "jahresbericht": "S100YFQL",
    "halbjahresbericht": "S100ZBQ7",
    "eps_jahr": 939.92,
-   "dps_jahr": null,
+   "dps_jahr": 340.0,
    "eps_h1": 612.34,
    "eps_h1_vorjahr": 549.61,
    "eps_ttm": 1002.65
@@ -256,7 +256,7 @@
    "jahresbericht": "S100YDD9",
    "halbjahresbericht": "S100ZE3B",
    "eps_jahr": -106.06,
-   "dps_jahr": null,
+   "dps_jahr": 70.0,
    "eps_h1": 132.75,
    "eps_h1_vorjahr": 76.3,
    "eps_ttm": -49.61
@@ -269,7 +269,7 @@
    "jahresbericht": "S100Y9T1",
    "halbjahresbericht": "S100ZB8L",
    "eps_jahr": 162.96,
-   "dps_jahr": null,
+   "dps_jahr": 67.0,
    "eps_h1": 46.36,
    "eps_h1_vorjahr": 47.7,
    "eps_ttm": 161.62
@@ -282,7 +282,7 @@
    "jahresbericht": "S100YB5L",
    "halbjahresbericht": "S100ZA8J",
    "eps_jahr": -96.75,
-   "dps_jahr": null,
+   "dps_jahr": 200.0,
    "eps_h1": 192.53,
    "eps_h1_vorjahr": 71.57,
    "eps_ttm": 24.21
@@ -315,7 +315,7 @@
    "jahresbericht": "S100YHPY",
    "halbjahresbericht": "S100ZD31",
    "eps_jahr": 127.66,
-   "dps_jahr": null,
+   "dps_jahr": 65.0,
    "eps_h1": 102.43,
    "eps_h1_vorjahr": 71.77,
    "eps_ttm": 158.32
@@ -328,7 +328,7 @@
    "jahresbericht": "S100Y90T",
    "halbjahresbericht": "S100ZBSX",
    "eps_jahr": 743.93,
-   "dps_jahr": null,
+   "dps_jahr": 295.0,
    "eps_h1": 408.44,
    "eps_h1_vorjahr": 313.19,
    "eps_ttm": 839.18
@@ -341,7 +341,7 @@
    "jahresbericht": "S100YCJX",
    "halbjahresbericht": "S100ZF9P",
    "eps_jahr": 74.34,
-   "dps_jahr": null,
+   "dps_jahr": 15.0,
    "eps_h1": 37.73,
    "eps_h1_vorjahr": 29.47,
    "eps_ttm": 82.6
@@ -354,7 +354,7 @@
    "jahresbericht": "S100YLS8",
    "halbjahresbericht": null,
    "eps_jahr": 279.35,
-   "dps_jahr": null
+   "dps_jahr": 218.0
   },
   {
    "ticker": "8002.T",
@@ -364,7 +364,7 @@
    "jahresbericht": "S100YAY4",
    "halbjahresbericht": "S100ZDK7",
    "eps_jahr": 330.42,
-   "dps_jahr": null,
+   "dps_jahr": 107.5,
    "eps_h1": 207.58,
    "eps_h1_vorjahr": 185.18,
    "eps_ttm": 352.82
@@ -377,7 +377,7 @@
    "jahresbericht": "S100YARD",
    "halbjahresbericht": "S100ZC2X",
    "eps_jahr": 499.09,
-   "dps_jahr": null,
+   "dps_jahr": 150.0,
    "eps_h1": 73.35,
    "eps_h1_vorjahr": 62.28,
    "eps_ttm": 510.16
@@ -400,7 +400,7 @@
    "jahresbericht": "S100YF7I",
    "halbjahresbericht": "S100ZE82",
    "eps_jahr": 96.18,
-   "dps_jahr": null,
+   "dps_jahr": 34.0,
    "eps_h1": 191.73,
    "eps_h1_vorjahr": 24.07,
    "eps_ttm": 263.84
@@ -413,7 +413,7 @@
    "jahresbericht": "S100YG5L",
    "halbjahresbericht": "S100ZF6N",
    "eps_jahr": 400.27,
-   "dps_jahr": null,
+   "dps_jahr": 156.1,
    "eps_h1": 785.16,
    "eps_h1_vorjahr": 240.42,
    "eps_ttm": 945.01
@@ -426,7 +426,7 @@
    "jahresbericht": "S100YBT6",
    "halbjahresbericht": "S100ZCNS",
    "eps_jahr": 504.85,
-   "dps_jahr": null,
+   "dps_jahr": 230.0,
    "eps_h1": 503.86,
    "eps_h1_vorjahr": 230.16,
    "eps_ttm": 778.55
@@ -439,7 +439,7 @@
    "jahresbericht": "S100YI2T",
    "halbjahresbericht": "S100ZGRG",
    "eps_jahr": 619.78,
-   "dps_jahr": null,
+   "dps_jahr": 200.0,
    "eps_h1": 521.76,
    "eps_h1_vorjahr": 337.25,
    "eps_ttm": 804.29
@@ -452,7 +452,7 @@
    "jahresbericht": "S100YC6B",
    "halbjahresbericht": "S100ZCD8",
    "eps_jahr": 210.42,
-   "dps_jahr": null,
+   "dps_jahr": 120.0,
    "eps_h1": 203.63,
    "eps_h1_vorjahr": 108.61,
    "eps_ttm": 305.44
@@ -465,7 +465,7 @@
    "jahresbericht": "S100YHUO",
    "halbjahresbericht": "S100ZDDH",
    "eps_jahr": 101.04,
-   "dps_jahr": null,
+   "dps_jahr": 35.0,
    "eps_h1": 51.57,
    "eps_h1_vorjahr": 54.88,
    "eps_ttm": 97.73
@@ -478,7 +478,7 @@
    "jahresbericht": "S100YEY0",
    "halbjahresbericht": "S100ZBLO",
    "eps_jahr": 140.44,
-   "dps_jahr": null,
+   "dps_jahr": 78.0,
    "eps_h1": 83.22,
    "eps_h1_vorjahr": 70.55,
    "eps_ttm": 153.11
@@ -501,7 +501,7 @@
    "jahresbericht": "S100YD25",
    "halbjahresbericht": "S100ZF9F",
    "eps_jahr": 413.9,
-   "dps_jahr": null,
+   "dps_jahr": 190.0,
    "eps_h1": 215.06,
    "eps_h1_vorjahr": 191.8,
    "eps_ttm": 437.16
@@ -514,7 +514,7 @@
    "jahresbericht": "S100YNCJ",
    "halbjahresbericht": null,
    "eps_jahr": 342.98,
-   "dps_jahr": null
+   "dps_jahr": 160.0
   },
   {
    "ticker": "8630.T",
@@ -524,7 +524,7 @@
    "jahresbericht": "S100YC6Z",
    "halbjahresbericht": null,
    "eps_jahr": 701.03,
-   "dps_jahr": null
+   "dps_jahr": 150.0
   },
   {
    "ticker": "005930.KS",
