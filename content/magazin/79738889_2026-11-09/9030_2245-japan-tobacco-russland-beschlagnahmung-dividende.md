@@ -35,15 +35,19 @@ Nestlé, Metro und Auchan hat es dieses Jahr schon getroffen, Philip Morris und 
 
 Trotz des Einbruchs liegt die Aktie noch gut 150 % über dem Stand von vor fünf Jahren. Vom Hoch im Oktober ist sie rund 20 % entfernt.
 
-<style>
-@media (max-width:560px){
-  .tablewrap.kzw table{table-layout:fixed;font-size:14px}
-  .tablewrap.kzw th,.tablewrap.kzw td{padding:7px 6px;overflow-wrap:anywhere}
-  .tablewrap.kzw th:first-child,.tablewrap.kzw td:first-child{width:46%}
-  .tablewrap.kzw.kz3 th:first-child,.tablewrap.kzw.kz3 td:first-child{width:34%}
-}
-</style>
-<div class="tablewrap kzw"><table class="kzt"><thead><tr><th>Kennzahl</th><th>Wert</th></tr></thead><tbody><tr><td>Kurs (Tokio, 13.11.2026)</td><td>5.944 Yen</td></tr><tr><td>Börsenwert</td><td>9,9 Billionen Yen</td></tr><tr><td>KGV auf Prognose 2026 (372,88 Yen je Aktie)</td><td>15,9</td></tr><tr><td>KGV ohne Russland (grobe Schätzung, rund 280 Yen je Aktie)</td><td>21,2</td></tr><tr><td>Dividende je Aktie 2026 (Prognose)</td><td>272 Yen</td></tr><tr><td>Dividendenrendite</td><td>4,6 %</td></tr><tr><td>Ausschüttungsquote 2026 (Prognose)</td><td>73 %, Konzernziel rund 75 %</td></tr><tr><td>Umsatz 2026 (Prognose)</td><td>3.903 Mrd. Yen</td></tr><tr><td>Bereinigter operativer Gewinn 2026 (Prognose)</td><td>1.079 Mrd. Yen (+21,9 %)</td></tr><tr><td>Gewinn 2026 (Prognose, nach Canada-Anpassung)</td><td>662 Mrd. Yen</td></tr><tr><td>Freier Cashflow 2026 (Prognose)</td><td>596 Mrd. Yen (2025: 273 Mrd. Yen)</td></tr><tr><td>Nettoverschuldung (30.9.2026)</td><td>rund 618 Mrd. Yen</td></tr><tr><td>Eigenkapitalquote (30.9.2026)</td><td>knapp 49 %</td></tr></tbody></table>
+- **Kurs (Tokio, 13.11.2026):** 5.944 Yen
+- **Börsenwert:** 9,9 Billionen Yen
+- **KGV auf Prognose 2026 (372,88 Yen je Aktie):** 15,9
+- **KGV ohne Russland (grobe Schätzung, rund 280 Yen je Aktie):** 21,2
+- **Dividende je Aktie 2026 (Prognose):** 272 Yen
+- **Dividendenrendite:** 4,6 %
+- **Ausschüttungsquote 2026 (Prognose):** 73 %, Konzernziel rund 75 %
+- **Umsatz 2026 (Prognose):** 3.903 Mrd. Yen
+- **Bereinigter operativer Gewinn 2026 (Prognose):** 1.079 Mrd. Yen (+21,9 %)
+- **Gewinn 2026 (Prognose, nach Canada-Anpassung):** 662 Mrd. Yen
+- **Freier Cashflow 2026 (Prognose):** 596 Mrd. Yen (2025: 273 Mrd. Yen)
+- **Nettoverschuldung (30.9.2026):** rund 618 Mrd. Yen
+- **Eigenkapitalquote (30.9.2026):** knapp 49 %
 
 Die Dividende kostet bei rund 1,67 Milliarden Aktien etwa 450 Milliarden Yen im Jahr. Die Prognosewerte stammen vom 29. Oktober und damit von vor dem Dekret.
 
@@ -87,9 +91,11 @@ Auffällig ist das Verhältnis: Ein Zehntel des Umsatzes bringt ein Viertel des 
 
 ## War der Kurssturz übertrieben?
 
-Der Maßstab ist das Kurs-Gewinn-Verhältnis (KGV). Die Tabelle zeigt, wie teuer die Aktie auf dem Prognosegewinn je Zeitpunkt ist:
+Der Maßstab ist das Kurs-Gewinn-Verhältnis (KGV). Die Liste zeigt, wie teuer die Aktie auf dem Prognosegewinn zu den drei Zeitpunkten ist:
 
-<div class="tablewrap kzw kz3"><table class="kzt"><thead><tr><th>Zeitpunkt</th><th>Kurs (Yen)</th><th>KGV mit Prognose (373 Yen)</th><th>KGV ohne Russland (rund 280 Yen)</th></tr></thead><tbody><tr><td>Donnerstag, 5.11. (vor dem Absturz)</td><td>7.769</td><td>20,8</td><td>27,7</td></tr><tr><td>Montag, 9.11. (Tief)</td><td>5.269</td><td>14,1</td><td>18,8</td></tr><tr><td>Freitag, 13.11.</td><td>5.944</td><td>15,9</td><td>21,2</td></tr></tbody></table>
+- **Donnerstag, 5.11. (vor dem Absturz):** 7.769 Yen, KGV 20,8 mit Prognose, 27,7 ohne Russland
+- **Montag, 9.11. (Tief):** 5.269 Yen, KGV 14,1 mit Prognose, 18,8 ohne Russland
+- **Freitag, 13.11.:** 5.944 Yen, KGV 15,9 mit Prognose, 21,2 ohne Russland
 
 Vor dem Absturz war die Aktie auf dem Prognosegewinn schon teuer. Ein Viertel weniger Gewinn hätte bei gleichem Kurs ein KGV von knapp 28 bedeutet.
 
