@@ -19,15 +19,43 @@ story_text: "Tabak war in den letzten Monaten ein Liebling der Anleger: stabile 
 Das rächt sich jetzt. Moskau hat alle Gesellschaften des Konzerns unter vorläufige Verwaltung gestellt. Ein Zehntel des Umsatzes und ein Viertel des operativen Gewinns hängen daran, die Aktie fiel in zwei Tagen um ein Drittel.
 Nestlé, Metro und Auchan hat es dieses Jahr schon getroffen, Philip Morris und andere sind noch im Land. Wer dort bleibt, muss damit rechnen, dass der Staat irgendwann zugreift."
 ---
-<!-- PRÜFEN (Stand 14.11.): Umsatz, Gewinn, Prognose, Dividende, Ausschüttungsquote, FCF, Nettoverschuldung und Eigenkapitalquote stammen aus dem Q3-Bericht vom 29.10.2026 und der Investor-Präsentation 2025. Die Zeile „ohne Russland“ und die Russland-Anteile sind eigene Rechnung auf Basis der Mitteilung vom 9.11. und als grobe Schätzung gekennzeichnet. Kurse: Reuters-Angaben (Donnerstag 7.769, Montag 5.269, Freitag 6.269 Yen) und Kurs 13.11. (5.944 Yen). Aufmacher: Foto Javad Esmaeili, Unsplash. Nicht einzeln geprüft: der Status von Mondelez, PepsiCo und Procter & Gamble in Russland. -->
+<!-- PRÜFEN (Stand 14.11.): Umsatz, Gewinn, Prognose, Dividende, Ausschüttungsquote, FCF, Nettoverschuldung und Eigenkapitalquote stammen aus dem Q3-Bericht vom 29.10.2026 und der Investor-Präsentation 2025. Die Zeile „ohne Russland“ und die Russland-Anteile sind eigene Rechnung auf Basis der Mitteilung vom 9.11. und als grobe Schätzung gekennzeichnet. Kurse: Reuters-Angaben (Donnerstag 7.769, Montag 5.269, Freitag 6.269 Yen) und Kurs 13.11. (5.944 Yen). Aufmacher: Foto Javad Esmaeili, Unsplash. Nicht einzeln geprüft: der Status von Mondelez, PepsiCo und Procter & Gamble in Russland. Offen: die Erholung von rund 7 % am Folgetag, die im Text nicht als Zahl steht, und der Euro-Wert des Umsatzes. -->
 
 !!! kurz "Kurz gesagt"
     **Kern:** Japan Tobacco hat Russland im Gegensatz zu vielen Konkurrenten nie verlassen. Jetzt stellt Moskau alle Gesellschaften des Konzerns unter vorläufige Verwaltung. Damit stehen rund ein Zehntel des Umsatzes und ein Viertel des bereinigten operativen Gewinns auf dem Spiel.
 
     1. **Kurs:** Die Aktie verlor in zwei Tagen ein Drittel. Bis zum 13. November erholte sie sich auf 5.944 Yen. Vorher lag sie seit Jahresbeginn rund 40 % im Plus.
     2. **Zahlen:** Der übrige Konzern wächst weiter. Nach neun Monaten stieg der bereinigte operative Gewinn um 21,6 % (währungsbereinigt 16,9 %), die Prognose für 2026 hat der Konzern im Oktober angehoben.
-    3. **Bewertung:** Vor dem Dekret kostete die Aktie etwa das 21-Fache des erwarteten Gewinns. Mit dem kleineren Gewinn ohne Russland liegt sie beim Kurs von 13. November wieder etwa beim 21-Fachen. Der Kurs preist den Verlust also weitgehend ein.
+    3. **Bewertung:** Vor dem Dekret kostete die Aktie etwa das 21-Fache des erwarteten Gewinns. Mit dem kleineren Gewinn ohne Russland liegt sie beim Kurs vom 13. November wieder etwa beim 21-Fachen. Der Kurs preist den Verlust also weitgehend ein.
     4. **Fazit:** Eine Kaufgelegenheit wäre der Einbruch nur, wenn Russland dauerhaft verloren ist und der Rest des Konzerns die Dividende trägt. Beides ist offen.
+
+Japan Tobacco war für mich bis vor Kurzem eine ruhige Dividendenaktie. Dann kam am 9. November das Dekret aus Moskau, und von einem Tag auf den anderen stand die Frage im Raum, wie viel vom Russland-Geschäft überhaupt noch dem Konzern gehört. Die Aktie hatte in diesem Jahr knapp 40 % zugelegt und verlor danach rund ein Drittel. Deshalb lohnt der genaue Blick, was dort eigentlich passiert ist.
+
+## Das Risiko für Aktionäre
+
+Wer während eines Krieges sein Geschäft in Russland weiterführt, geht ein Risiko ein. Japan Tobacco steht dabei nicht allein da. Philip Morris verkauft dort weiter, und auch die amerikanischen Konzerne Mondelez und Procter & Gamble sind aktiv.
+
+Dass dieses Risiko real ist, zeigen Nestlé und die Metro Group, deren Russland-Gesellschaften unter vorläufige Verwaltung gestellt wurden. Für Aktionäre heißt das: Wer in Firmen investiert ist, die noch in Russland tätig sind, muss damit rechnen, dass so etwas passieren kann. Es muss nicht passieren, und das ist keine Wertung gegen einzelne Unternehmen.
+
+## Was der Verlust für den Konzern bedeutet
+
+Japan Tobacco gehört zu den größten Tabakkonzernen der Welt. Mit der Übernahme verliert der Konzern nun rund ein Zehntel seines Umsatzes und etwa ein Viertel des bereinigten operativen Gewinns. Der Gewinnverlust ist also deutlich größer als der Umsatzverlust, weil Russland überdurchschnittlich profitabel war.
+
+Im dritten Quartal wuchs die Region Osteuropa, Nahost und Afrika (EMA), zu der Russland gehört, beim Kernumsatz um 12,8 %. Ein Teil davon kam aus Preiserhöhungen, die sich durchsetzten, obwohl das Volumen sank. Dieses Wachstum fällt mit dem Dekret weg.
+
+![Luftaufnahme einer Produktionsanlage mit russischer und japanischer Flagge](/assets/magazin/japan-tobacco-russland-beschlagnahmung-foto.jpg)
+
+*Foto: Japan Tobacco, bearbeitet*
+
+Im dritten Quartal sank das Volumen in Russland um 3,6 %. Preise und Mix glichen das aus, Winston und Camel gewannen dort Marktanteile. Bis zum Dekret zählte Russland also zu den soliden Märkten des Konzerns.
+
+Rechnet man den Anteil der Mitteilung vom 9. November auf die Prognose für 2026 um, ergibt sich grob:
+
+- **Umsatz:** rund 390 Mrd. Yen von 3.903 Mrd. Yen
+- **Bereinigter operativer Gewinn:** rund 270 Mrd. Yen von 1.079 Mrd. Yen
+- **Gewinn je Aktie:** rund 280 Yen von 373 Yen
+
+Diese Rechnung ist grob. Sie setzt voraus, dass Russland dauerhaft wegfällt und es keine Entschädigung gibt.
 
 ## Die Aktie in Zahlen
 
@@ -47,28 +75,17 @@ Trotz des Einbruchs liegt die Aktie noch gut 150 % über dem Stand von vor fünf
 
 Die Dividende kostet bei rund 1,67 Milliarden Aktien etwa 450 Milliarden Yen im Jahr. Die Prognosewerte stammen vom 29. Oktober und damit von vor dem Dekret.
 
-## Wie der Konzern aufgestellt ist
+## Ist die Dividende in Gefahr?
 
-Japan Tobacco macht rund 96 Prozent seines Umsatzes mit Tabak, das Lebensmittelgeschäft ist mit gut 4 Prozent klein. Das Pharmageschäft hat der Konzern 2025 an Shionogi übertragen. Im Tabak gibt es zwei Bereiche: die klassischen Zigaretten (Winston, Camel, Mevius, LD, dazu die integrierte Vector Group) und die risikoreduzierten Produkte (RRP), vor allem das Heizstäbchen-System Ploom.
+Mit 272 Yen je Aktie ist die Dividende heute gedeckt, und der Freie Cashflow soll 2026 bei 596 Mrd. Yen liegen. Ohne Russland steigt die Ausschüttungsquote aber auf rund 97 %, das Konzernziel liegt bei etwa 75 %.
 
-Bei den Zigaretten kommt das Wachstum vor allem aus dem Preis. Der Preisbeitrag lag 2025 bei 10,8 %, im Schnitt der Jahre 2022 bis 2024 bei 7,1 %.
+Eine Kürzung ist damit nicht sofort nötig, aber sie ist realistisch, falls der Gewinn dauerhaft fehlt. Die Bilanz trägt den Schlag mit einer Nettoverschuldung von rund 618 Mrd. Yen und einer Eigenkapitalquote von knapp 49 % zunächst. Die Investitionen in RRP sind aber hoch, und ein Gewinnausfall würde sie schwerer finanzierbar machen.
 
-## Wie groß das Russland-Loch ist
+## Die positiven Seiten
 
-Im dritten Quartal sank das Volumen in Russland um 3,6 %. Preise und Mix glichen das aus, Winston und Camel gewannen dort Marktanteile. Russland zählt also bis zum Dekret zu den soliden Märkten des Konzerns.
+Der übrige Konzern wächst weiter. In Japan legt vor allem das risikoreduzierte Geschäft zu: Der RRP-Absatz stieg dort um 28,5 %, weil das Heizstäbchen-System Ploom Anteile gewinnt. In Asien steigt der Kernumsatz um 6,7 %, der bereinigte operative Gewinn um 23,5 %.
 
-![Luftaufnahme einer Produktionsanlage mit russischer und japanischer Flagge](/assets/magazin/japan-tobacco-russland-beschlagnahmung-foto.jpg)
-
-*Foto: Japan Tobacco, bearbeitet*
-
-Die Mitteilung vom 9. November nennt einen Anteil von rund einem Zehntel am Umsatz und einem Viertel am bereinigten operativen Gewinn. Rechnet man das auf die Prognose für 2026 um, ergibt sich grob:
-- **Umsatz:** rund 390 Mrd. Yen von 3.903 Mrd. Yen
-- **Bereinigter operativer Gewinn:** rund 270 Mrd. Yen von 1.079 Mrd. Yen
-- **Gewinn je Aktie:** Wenn der Gewinnanteil proportional zum operativen Gewinn wegfällt, bleiben rund 280 Yen von 373 Yen übrig.
-
-Diese Rechnung ist grob. Sie setzt voraus, dass Russland dauerhaft wegfällt und es keine Entschädigung gibt.
-
-Auffällig ist das Verhältnis: Ein Zehntel des Umsatzes bringt ein Viertel des Gewinns. Russland war also überdurchschnittlich profitabel, und genau deshalb trifft der Verlust so stark.
+Dagegen wächst der Gewinn in Westeuropa kaum, der bereinigte operative Gewinn stieg nur um 0,6 %. Die Menge sinkt, der Preis trägt das Geschäft. Das Wachstum im übrigen Konzern ist also ungleich verteilt, und es reicht nicht allein, um den Ausfall aus Russland auszugleichen.
 
 ## War der Kurssturz übertrieben?
 
@@ -78,39 +95,12 @@ Der Maßstab ist das Kurs-Gewinn-Verhältnis (KGV). Die Liste zeigt, wie teuer d
 - **Montag, 9.11. (Tief):** 5.269 Yen, KGV 14,1 mit Prognose, 18,8 ohne Russland
 - **Freitag, 13.11.:** 5.944 Yen, KGV 15,9 mit Prognose, 21,2 ohne Russland
 
-Vor dem Absturz war die Aktie auf dem Prognosegewinn schon teuer. Ein Viertel weniger Gewinn hätte bei gleichem Kurs ein KGV von knapp 28 bedeutet.
+Vor dem Absturz war die Aktie auf dem Prognosegewinn schon teuer. Ein Viertel weniger Gewinn hätte bei gleichem Kurs ein KGV von knapp 28 bedeutet. Ein Teil des Kursplus seit Jahresbeginn beruhte auf der Annahme, Russland sei sicher, und diese Annahme ist weggefallen.
 
-Ein Teil der rund 40 % Kursplus seit Jahresbeginn beruhte auf der Annahme, Russland sei sicher. Diese Annahme ist weggefallen.
+Am 13. November stand die Aktie bei 5.944 Yen, und auf dem kleineren Gewinn entspricht das ungefähr dem alten Bewertungsniveau. Der Markt hat den Verlust damit weitgehend eingepreist. Das Tief vom Montag lag darunter, bei einem KGV von knapp 19 auf dem kleineren Gewinn, und von dort hat sich die Aktie bis Freitag um rund 13 % erholt. Ich halte den Kurs am Montag für eine Überreaktion. Also war offensichtlich Potenzial nach oben, und noch ist der Drops nicht ganz gelutscht.
 
-Am 13. November stand die Aktie bei 5.944 Yen. Auf dem kleineren Gewinn entspricht das ungefähr dem alten Bewertungsniveau. Der Markt hat den Verlust damit weitgehend eingepreist. Nur das Tief am Montag lag darunter, bei einem KGV von knapp 19 auf dem kleineren Gewinn. Das wäre eine Überreaktion gewesen, und die Aktie hat sich davon wieder gelöst.
-
-## Kaufgelegenheit oder nicht?
-
-Die Zahlen erklären den Einbruch, machen ihn aber nicht automatisch zur Chance. Dafür müssten drei Dinge zusammenkommen.
-
-Erstens muss der übrige Konzern weiter wachsen. Die Zahlen des dritten Quartals sprechen dafür, vor allem in Asien: Der Gewinn stieg dort stark, und RRP legt kräftig zu. In Westeuropa wächst der Gewinn dagegen kaum. Dazu kommt die Prognose vom Oktober, die vor dem Dekret angehoben wurde und jetzt überprüft werden muss.
-
-Zweitens muss die Dividende zu tragen sein. Mit 272 Yen je Aktie kostet sie rund 450 Mrd. Yen im Jahr, der Freie Cashflow soll 2026 bei 596 Mrd. Yen liegen. Die Dividende ist damit gedeckt. Ohne Russland steigt die Ausschüttungsquote aber auf rund 97 %, und das Konzernziel liegt bei rund 75 %. Eine Kürzung ist nicht sofort nötig, aber auf Dauer wird der Puffer eng.
-
-Drittens muss Russland verloren sein oder zumindest angemessen entschädigt werden. Eine vorläufige Verwaltung kann in eine dauerhafte Übernahme übergehen, eine Entschädigung ist bisher nicht festgelegt. Für Euro-Anleger kommt das Yen-Risiko dazu.
-
-Die Bilanz ist für den Schlag stark genug, mit einer Nettoverschuldung von rund 618 Mrd. Yen und einer Eigenkapitalquote von knapp 49 %. Die Investitionen in RRP sind aber hoch, und ein Gewinnausfall würde sie schwerer finanzierbar machen.
-
-Das ist eine Einordnung und keine Anlageberatung. Ob der Einbruch eine Chance ist, muss jeder Leser für sich entscheiden.
-
-## Die anderen Konzerne und die Frage nach dem Schutz
-
-Nestlé, Auchan, Metro und Lemana PRO hat Moskau in diesem Jahr ebenfalls unter vorläufige Verwaltung gestellt. Bei Nestlé hat der Konzern die Werte abgeschrieben, weil Russland nur einen kleinen Teil von Umsatz und Gewinn ausmacht. Schon 2023 traf es Danone und Carlsberg.
-
-Philip Morris erzielt nach seinem Geschäftsbericht für 2025 rund 6 % seines Umsatzes in Russland. Das dortige Vermögen lag bei etwa 4,8 Mrd. US-Dollar, davon rund 2,3 Mrd. Dollar Barmittel. Auch Mondelez, PepsiCo und Procter & Gamble sind in Russland aktiv.
-
-Ob Moskau bei ihnen ebenso zugreift, bleibt abzuwarten. Bisher traf es Konzerne aus Europa und Japan, keine US-Firma.
-
-Trump dürfte großes Interesse daran haben, dass Putin amerikanische Konzerne nicht enteignet. Ein Zugriff auf US-Firmen wäre ein politischer Konflikt, den Washington eher vermeiden möchte.
-
-Das ist eine Vermutung, belegt ist sie nicht. Ob dieser Schutz hält, ist offen, denn die politische Lage kann sich schnell ändern.
-
-Für Anleger entscheidet am Ende, wie viel Gewinn und wie viel Geld im Land festsitzt.
+!!! kurz "Fazit"
+    Die Zahlen erklären den Einbruch, machen ihn aber nicht automatisch zur Chance. Dafür müssten drei Dinge zusammenkommen: Der übrige Konzern muss weiter wachsen, die Dividende muss zu tragen sein, und Russland muss verloren oder angemessen entschädigt sein. Das ist eine Einordnung und keine Anlageberatung. Ob der Einbruch eine Chance ist, muss jeder Leser für sich entscheiden.
 
 ## Quellen
 
