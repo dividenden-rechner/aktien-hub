@@ -31,6 +31,17 @@ Nestlé, Metro und Auchan hat es dieses Jahr schon getroffen, Philip Morris und 
     1. **Kurs:** In zwei Tagen verlor die Aktie ein Drittel, vorher stand sie seit Jahresbeginn rund 40 % im Plus.
     2. **Lage:** Das Geschäft läuft nach Angaben des Konzerns vorerst weiter, die Kontrolle liegt aber beim Staat.
     3. **Signal:** Nestlé, Metro und Auchan wurden dieses Jahr schon unter Verwaltung gestellt, Philip Morris und andere sind noch im Land.
+    4. **Chance oder Warnsignal:** Ein Viertel des operativen Gewinns fällt womöglich weg, der Kurs hat dagegen ein Drittel verloren. Für Anleger, die günstiger einsteigen wollen, kann genau das eine Gelegenheit sein. Warnsignal bleibt der Fall, solange Moskau weiter zugreift.
+
+## Chance oder Warnsignal?
+
+Der Rückgang um ein Drittel wirkt gemessen an dem, was tatsächlich wegfällt, auf den ersten Blick sehr groß. Verloren sind rund ein Zehntel des Umsatzes und ein Viertel des bereinigten operativen Gewinns. Der Rest des Konzerns in Japan und den übrigen Märkten arbeitet weiter. Im letzten Geschäftsjahr erwirtschaftete Japan Tobacco zudem einen freien Cashflow von 804 Mrd. Yen, deutlich mehr als den Nettogewinn von 617 Mrd. Yen. Die Bilanz ist solide, die Eigenkapitalquote liegt bei 48,5 %.
+
+Wer den Einbruch als Einstiegschance sieht, rechnet ungefähr so: Fällt der Russland-Anteil dauerhaft weg und verteilen sich die Verluste gleichmäßig auf den Gewinn, bleiben etwa drei Viertel davon übrig. Eine unveränderte Dividende entspräche dann einer Ausschüttungsquote von gut 100 % statt 81 %. Das ist auf Dauer nicht haltbar, aber der Cashflow gibt dem Konzern einen Puffer, und Kürzungen müssen nicht sofort kommen.
+
+Dagegen spricht, dass der Fall nicht abgeschlossen ist. Eine vorläufige Verwaltung kann in eine dauerhafte Übernahme übergehen, und die Entschädigung wäre dann ungewiss. Moskau hat dieses Instrument bereits mehrfach eingesetzt, und andere Konzerne im Land sind noch betroffen. Hinzu kommt das Währungsrisiko: Wer in Euro investiert, trägt den Yen-Kurs mit. Die Aktie war zudem vor dem Absturz um rund 40 % gestiegen, weil der Markt das Russland-Geschäft als sicher einstufte. Diese Annahme ist nun weggefallen.
+
+Ob der Kurs den Schaden schon vollständig einpreist, lässt sich aus den Zahlen nicht sicher ablesen. Der Einbruch kann eine Chance sein, wenn der Rest des Konzerns die Dividende trägt. Er bleibt ein Warnsignal, wenn Moskau weiter zugreift. Das ist eine Einordnung und keine Anlageberatung. Die Entscheidung liegt bei jedem Leser selbst.
 
 ## Ein Liebling der Anleger, der Russland nie verlassen hat
 
