@@ -53,24 +53,6 @@ Japan Tobacco macht rund 96 Prozent seines Umsatzes mit Tabak, das Lebensmittelg
 
 Bei den Zigaretten kommt das Wachstum vor allem aus dem Preis. Der Preisbeitrag lag 2025 bei 10,8 %, im Schnitt der Jahre 2022 bis 2024 bei 7,1 %.
 
-Die Menge schrumpft dagegen. Der Zigarettenmarkt verlor 2025 rund 2,7 % Volumen, und in den ersten neun Monaten 2026 setzte sich der Rückgang fort. Der Konzern gewinnt Marktanteile, verkauft insgesamt aber nicht mehr Zigaretten.
-
-![Tabak-Segment im dritten Quartal 2026 mit Kernumsatz und bereinigtem operativen Gewinn in Milliarden Yen](/assets/magazin/japan-tobacco-segment-q3-2026.jpg)
-
-*Quelle: Japan Tobacco, Third Quarter Earnings Report 2026, S. 5*
-
-Das eigentliche Wachstumsfeld ist RRP. Der RRP-Umsatz stieg in den ersten neun Monaten 2026 um 30,6 % auf 119,3 Mrd. Yen, das sind gut 4 % des Tabakumsatzes.
-
-Bis 2028 will der Konzern rund 800 Mrd. Yen in dieses Geschäft investieren. Für den Zeitraum 2026 bis 2028 stellt er einen bereinigten operativen Gewinn im hohen einstelligen Prozentbereich pro Jahr in Aussicht.
-
-Die Zahlen für die ersten neun Monate 2026, bereinigt um Wechselkurse, zeigen deutlich, wo Japan Tobacco am stärksten wächst. Am meisten legt der Umsatz in Osteuropa, Nahost und Afrika (EMA) zu, dort steigt der Kernumsatz um 12,8 %. Der bereinigte operative Gewinn wächst in dieser Region um 23,5 %.
-
-Diese Region ist mit gut der Hälfte des Tabakumsatzes und fast der Hälfte des Tabakgewinns der größte Block. Hier liegt Russland, und genau dieser Teil des Wachstums fällt in Zukunft weg.
-
-In Asien (u. a. Japan, Philippinen, Taiwan) steigt der Kernumsatz um 6,7 %, der bereinigte operative Gewinn um 23,5 %. In Japan wächst vor allem der RRP-Absatz um 28,5 %, weil Ploom Anteile gewinnt.
-
-In Westeuropa wächst der Gewinn kaum. Der Kernumsatz steigt um 2,3 %, der bereinigte operative Gewinn nur um 0,6 %. Die Menge sinkt, der Preis trägt das Geschäft.
-
 ## Wie groß das Russland-Loch ist
 
 Im dritten Quartal sank das Volumen in Russland um 3,6 %. Preise und Mix glichen das aus, Winston und Camel gewannen dort Marktanteile. Russland zählt also bis zum Dekret zu den soliden Märkten des Konzerns.
