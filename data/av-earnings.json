@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-13 13:25 UTC",
+ "updated": "2026-11-14 02:41 UTC",
  "quelle": "Alpha Vantage",
  "items": [
   {
@@ -165,7 +165,7 @@
    "eps_n": 10,
    "rev_est": 4098003760.0,
    "rev_n": 3,
-   "est_stand": "2026-11-13"
+   "est_stand": "2026-11-14"
   },
   {
    "sym": "BIDU",
@@ -174,11 +174,11 @@
    "fiscal": "2026-09-30",
    "cur": "USD",
    "zeit": "vor",
-   "eps_est": 6.589,
+   "eps_est": 6.1624,
    "eps_n": 15,
-   "rev_est": 30598757870.0,
-   "rev_n": 20,
-   "est_stand": "2026-11-13"
+   "rev_est": 30629578930.0,
+   "rev_n": 21,
+   "est_stand": "2026-11-14"
   },
   {
    "sym": "TCOM",
@@ -191,7 +191,7 @@
    "eps_n": 15,
    "rev_est": 18927296580.0,
    "rev_n": 16,
-   "est_stand": "2026-11-13"
+   "est_stand": "2026-11-14"
   },
   {
    "sym": "TSN",
@@ -204,7 +204,7 @@
    "eps_n": 8,
    "rev_est": 14096286810.0,
    "rev_n": 9,
-   "est_stand": "2026-11-13"
+   "est_stand": "2026-11-14"
   },
   {
    "sym": "XPEV",
@@ -217,7 +217,7 @@
    "eps_n": 2,
    "rev_est": 23169986570.0,
    "rev_n": 9,
-   "est_stand": "2026-11-13"
+   "est_stand": "2026-11-14"
   },
   {
    "sym": "AS",
@@ -226,11 +226,11 @@
    "fiscal": "2026-09-30",
    "cur": "USD",
    "zeit": "vor",
-   "eps_est": 0.347,
-   "eps_n": 16,
-   "rev_est": 2137067030.0,
-   "rev_n": 14,
-   "est_stand": "2026-11-13"
+   "eps_est": 0.3477,
+   "eps_n": 17,
+   "rev_est": 2137782700.0,
+   "rev_n": 15,
+   "est_stand": "2026-11-14"
   },
   {
    "sym": "BHP",
@@ -243,7 +243,7 @@
    "eps_n": 0,
    "rev_est": 0.0,
    "rev_n": 0,
-   "est_stand": "2026-11-13"
+   "est_stand": "2026-11-14"
   },
   {
    "sym": "DIS",
@@ -254,9 +254,9 @@
    "zeit": "vor",
    "eps_est": 1.6901,
    "eps_n": 23,
-   "rev_est": 25154598640.0,
-   "rev_n": 23,
-   "est_stand": "2026-11-11"
+   "rev_est": 25155317560.0,
+   "rev_n": 21,
+   "est_stand": "2026-11-14"
   },
   {
    "sym": "ESLT",
@@ -269,7 +269,7 @@
    "eps_n": 4,
    "rev_est": 2257018670.0,
    "rev_n": 3,
-   "est_stand": "2026-11-11"
+   "est_stand": "2026-11-14"
   },
   {
    "sym": "HD",
@@ -278,11 +278,11 @@
    "fiscal": "2026-10-31",
    "cur": "USD",
    "zeit": "vor",
-   "eps_est": 3.8381,
+   "eps_est": 3.8373,
    "eps_n": 30,
-   "rev_est": 42765939720.0,
+   "rev_est": 42778385490.0,
    "rev_n": 26,
-   "est_stand": "2026-11-11"
+   "est_stand": "2026-11-14"
   },
   {
    "sym": "JD",
@@ -426,6 +426,16 @@
    "fiscal": "2026-09-30",
    "cur": "USD",
    "zeit": "vor"
+  },
+  {
+   "sym": "TECH",
+   "datum": "2026-11-18",
+   "eps_est": 0.4,
+   "eps_src": "kalender",
+   "name": "BIO-TECHNE CORPORATION",
+   "fiscal": "2026-09-30",
+   "cur": "USD",
+   "zeit": ""
   },
   {
    "sym": "TGT",
