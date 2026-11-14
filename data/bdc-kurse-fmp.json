@@ -1,6 +1,111 @@
 {
- "stand": "2026-11-14 08:44 UTC",
- "kurse": {},
+ "stand": "2026-11-14 08:44 UTC (wiederhergestellt aus Test vom 08:37)",
+ "kurse": {
+  "HTGC": {
+   "kurs": 15.87,
+   "boerse": "NYSE"
+  },
+  "TSLX": {
+   "kurs": 17.64,
+   "boerse": "NYSE"
+  },
+  "MSDL": {
+   "kurs": 13.84,
+   "boerse": "NYSE"
+  },
+  "PSEC": {
+   "kurs": 1.46,
+   "boerse": "NASDAQ"
+  },
+  "CSWC": {
+   "kurs": 23.45,
+   "boerse": "NASDAQ"
+  },
+  "NMFC": {
+   "kurs": 6.7,
+   "boerse": "NASDAQ"
+  },
+  "CGBD": {
+   "kurs": 11.08,
+   "boerse": "NASDAQ"
+  },
+  "SLRC": {
+   "kurs": 11.61,
+   "boerse": "NASDAQ"
+  },
+  "NCDL": {
+   "kurs": 11.79,
+   "boerse": "NYSE"
+  },
+  "MSIF": {
+   "kurs": 12.44,
+   "boerse": "NYSE"
+  },
+  "CCAP": {
+   "kurs": 10.13,
+   "boerse": "NASDAQ"
+  },
+  "CION": {
+   "kurs": 6.09,
+   "boerse": "NYSE"
+  },
+  "PSBD": {
+   "kurs": 9.8,
+   "boerse": "NYSE"
+  },
+  "SAR": {
+   "kurs": 11.47,
+   "boerse": "NYSE"
+  },
+  "SCM": {
+   "kurs": 6.75,
+   "boerse": "NYSE"
+  },
+  "HRZN": {
+   "kurs": 3.72,
+   "boerse": "NASDAQ"
+  },
+  "LIEN": {
+   "kurs": 9.08,
+   "boerse": "NASDAQ"
+  },
+  "TPVG": {
+   "kurs": 3.99,
+   "boerse": "NYSE"
+  },
+  "WHF": {
+   "kurs": 8.26,
+   "boerse": "NASDAQ"
+  },
+  "GECC": {
+   "kurs": 4.91,
+   "boerse": "NASDAQ"
+  },
+  "OFS": {
+   "kurs": 3.685,
+   "boerse": "NASDAQ"
+  },
+  "ICMB": {
+   "kurs": 1.04,
+   "boerse": "NASDAQ"
+  },
+  "RAND": {
+   "kurs": 9.6001,
+   "boerse": "NASDAQ"
+  },
+  "GBDC": {
+   "kurs": 12.54,
+   "boerse": "NASDAQ"
+  },
+  "ARCC": {
+   "kurs": 19.17,
+   "boerse": "NASDAQ"
+  },
+  "MAIN": {
+   "kurs": 56.4,
+   "boerse": "NYSE"
+  }
+ },
  "fehler": {
   "ARCC": "HTTP Error 429: Too Many Requests",
   "OBDC": "HTTP Error 429: Too Many Requests",
