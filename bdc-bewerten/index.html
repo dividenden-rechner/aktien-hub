@@ -3,15 +3,15 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>BDCs bewerten: Kurs/NAV und Dividendenrendite im Überblick</title>
-<meta name="description" content="Alle BDCs im Überblick: Kurs, Marktkapitalisierung, Dividendenrendite und Kurs/NAV. Grün heißt Kurs unter NAV, rot heißt Kurs über NAV.">
+<title>BDC analysieren: Was ist die beste BDC? Kurs/NAV, Rendite und Liste</title>
+<meta name="description" content="BDC analysieren: Welche BDC ist die beste? Kurs/NAV, Dividendendeckung, Kreditqualität und Verschuldung im Vergleich, dazu die Tabelle aller BDCs mit Börsenwert und Rendite.">
 <meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large">
 <link rel="canonical" href="https://dividenden-rechner.github.io/aktien-hub/bdc-bewerten/">
 <meta property="og:type" content="website">
 <meta property="og:locale" content="de_DE">
 <meta property="og:site_name" content="Dividenden-Rechner Aktien-Hub">
-<meta property="og:title" content="BDCs bewerten: Kurs/NAV und Dividendenrendite im Überblick">
-<meta property="og:description" content="Alle BDCs im Überblick: Kurs, Marktkapitalisierung, Dividendenrendite und Kurs/NAV.">
+<meta property="og:title" content="BDC analysieren: Was ist die beste BDC?">
+<meta property="og:description" content="BDC analysieren: Welche BDC ist die beste? Kurs/NAV, Dividendendeckung und Kreditqualität, dazu die Tabelle aller BDCs.">
 <meta property="og:url" content="https://dividenden-rechner.github.io/aktien-hub/bdc-bewerten/">
 <meta property="og:image" content="https://dividenden-rechner.github.io/aktien-hub/assets/og-default.png">
 <meta name="theme-color" content="#ffffff">
@@ -54,11 +54,9 @@
 <script src="../assets/navigation.js"></script>
 <script src="../assets/logos.js"></script>
 <main class="wrap"><article>
-<nav class="crumbs" aria-label="Brotkrumen"><a href="../">Start</a> › <a href="../fortgeschrittene/">Fortgeschrittene</a> › <span aria-current="page">BDCs bewerten</span></nav>
-<h1>BDCs bewerten: NII, NAV und Dividendendeckung</h1>
-<p class="meta">Übersicht aller BDCs mit Kursdaten aus dem Screener. <a href="../fortgeschrittene/bdcs-bewerten/">Zum Ratgeber, wie du BDCs bewertest</a></p>
+<nav class="crumbs" aria-label="Brotkrumen"><a href="../">Start</a> › <a href="../fortgeschrittene/">Fortgeschrittene</a> › <span aria-current="page">BDC analysieren</span></nav>
+<h1>BDC analysieren: Was ist die beste BDC?</h1>
 
-<p class="bdc-ig"><a href="https://www.instagram.com/p/DR6XoMPglVf/" target="_blank" rel="noopener nofollow">Passend dazu auf Instagram: Beitrag ansehen</a></p>
 <p class="bdc-status" id="bdc-status">Lade Daten …</p>
 <table class="bdc-tab" id="bdc-tab" aria-describedby="bdc-status">
 <colgroup><col class="c1"><col class="c2"><col class="c3"><col class="c4"><col class="c5"></colgroup>
@@ -72,7 +70,47 @@
 <tbody id="bdc-body"></tbody>
 </table>
 <p class="bdc-leg"><span><i style="background:#2f9e5b"></i>grün: Kurs unter NAV, günstig</span><span><i style="background:#c0392b"></i>rot: Kurs über NAV, teuer</span></p>
-<p class="bdc-note">* Rendite aus der letzten bekannten Quartalsdividende mal 4, weil das aktuelle Quartal noch nicht erfasst ist. Kurs/NAV ist der Börsenkurs geteilt durch den Nettovermögenswert je Aktie. Börsenwert in Milliarden US-Dollar. Die Dividendenrendite beruht auf der laufenden Dividende. Keine Anlageberatung.</p>
+<p class="bdc-note">* Rendite aus der letzten bekannten Quartalsdividende mal 4, weil das aktuelle Quartal noch nicht erfasst ist.</p>
+
+<p class="lead">Die eine beste BDC gibt es nicht. Eine Business Development Company (BDC) ist eine börsennotierte US-Gesellschaft, die vor allem Kredite an mittelgroße Unternehmen vergibt. Gut ist eine BDC dann, wenn der Börsenkurs nicht über dem Substanzwert liegt, die Dividende aus dem laufenden Ertrag gedeckt ist und die Kreditbücher sauber sind. Die Tabelle zeigt alle BDCs, zu denen wir Kursdaten haben.</p>
+
+<h2>So liest du die Tabelle</h2>
+<p>Der Börsenwert zeigt die Größe einer Gesellschaft. Große BDCs wie Ares Capital sind meist leichter handelbar, kleinere Häuser schwanken oft stärker. Kurs/NAV setzt den Börsenkurs ins Verhältnis zum Nettovermögenswert je Aktie. Liegt der Wert unter 1, zahlst du weniger als den Buchwert der Kredite und Beteiligungen. Liegt er darüber, zahlst du einen Aufschlag, meist, weil der Markt der Gesellschaft mehr zutraut.</p>
+<p>Ares Capital steht bei 0,99 und damit knapp unter dem Substanzwert. Main Street liegt bei 1,66 und damit deutlich darüber. Die Farbe beschreibt nur die Bewertung, nicht die Qualität der Kredite. Ein grüner Wert kann trotzdem schwach sein.</p>
+
+<h2>Die fünf Kriterien für einen Vergleich</h2>
+<ol>
+<li><strong>Kurs zu NAV.</strong> Der Nettovermögenswert je Aktie ist der Maßstab. Ein dauerhafter Abschlag kann ein Warnsignal sein, wenn der NAV zugleich schrumpft.</li>
+<li><strong>Dividendendeckung.</strong> Entscheidend ist der Nettoanlageertrag je Aktie (NII), nicht ein Buchgewinn. Liegt er unter der Dividende, wird der Substanzwert langsam aufgezehrt.</li>
+<li><strong>Kreditqualität.</strong> Der Anteil notleidender Kredite (Non-Accruals) und Zinsen, die als zusätzliche Kredite statt in bar fließen (PIK), zeigen, wie gut das Portfolio läuft.</li>
+<li><strong>Verschuldung.</strong> BDCs dürfen sich nach US-Regeln stark verschulden. Viele liegen zwischen 1 und 1,25 zu 1. Mehr Hebel bringt höhere Erträge, verstärkt aber auch Verluste.</li>
+<li><strong>Gebühren und Anreize.</strong> Verwaltungsgebühr und Gewinnbeteiligung des Managers bestimmen, was bei dir ankommt. Ein Management, das selbst Anteile hält, ist eher auf die Aktionäre ausgerichtet.</li>
+</ol>
+
+<h2>Warum eine hohe Rendite allein nicht reicht</h2>
+<p>Viele BDCs zahlen zwischen 9 und 12 Prozent Dividende. Solche Renditen spiegeln das Risiko wider, dass Kredite ausfallen. Trinity Capital zahlt rund 11,5 Prozent und notiert zugleich mit 1,30 über dem NAV. Wer nur die höchste Zahl in der Tabelle sucht, landet oft bei Werten, deren Substanz schrumpft. Der Blick auf Kurs/NAV und Deckung schützt davor.</p>
+
+<h2>So findest du die passende BDC</h2>
+<p>Für die Vorauswahl eignet sich der Screener. Dort ist das Preset „BDCs“ mit Kurs/NAV unter 1,1, Rendite über 8 Prozent und Verschuldung unter 1,25 hinterlegt. Die Vorauswahl ersetzt aber keine Prüfung. Lies danach die letzten vier bis acht Quartalsmeldungen: Wie entwickelt sich der NAV? Bleibt die Deckung stabil? Steigt der Anteil notleidender Kredite?</p>
+<p class="bdc-ig"><a href="https://www.instagram.com/p/DR6XoMPglVf/" target="_blank" rel="noopener nofollow">Passend dazu auf Instagram: Beitrag ansehen</a></p>
+
+<h2>Steuern und Praxis in Deutschland</h2>
+<p>Auf US-Ausschüttungen fällt Quellensteuer an, deren Anrechnung in Deutschland eine eigene Rechnung braucht. Nicht jeder Broker bietet alle BDCs an, und die Abgeltungsteuer verlangt bei US-Titeln zusätzliche Angaben. Wie das im Detail funktioniert, erklärt der <a href="../fortgeschrittene/bdcs-bewerten/">Ratgeber zu BDCs</a>.</p>
+
+<h2>Was die Übersicht nicht zeigt</h2>
+<p>Die Tabelle umfasst derzeit 19 BDCs, zu denen wir einen Kurs im Screener haben. Insgesamt verfolgen wir mehr Gesellschaften. Bei einzelnen fehlen Kurs- oder Dividendendaten noch. Werte mit Stern stammen aus der letzten bekannten Quartalsdividende. Die NAV-Werte kommen aus den Quartalsmeldungen und hinken dem Börsenkurs immer etwas hinterher.</p>
+
+<h2>Die Anlaufstelle für BDCs im deutschsprachigen Raum</h2>
+<p>Diese Seite soll die erste Adresse für BDCs im deutschsprachigen Raum werden: mit einer Tabelle, die du auf dem Handy lesen und als Bild teilen kannst, mit einer Ampel für Kurs/NAV und mit einer Anleitung, wie du die Zahlen einordnest. Die Daten aktualisieren wir laufend aus den Quartalsberichten und den Kursen. Alle Kennzahlen einzelner Gesellschaften findest du im <a href="../screener/">Screener</a>, zur Einordnung hilft der <a href="../fortgeschrittene/bdcs-bewerten/">Ratgeber</a>, und mehr zu Dividenden allgemein bietet der <a href="../grundlagen/">Grundlagen-Bereich</a>.</p>
+
+<details class="quellen"><summary>Quellen</summary>
+<ul>
+<li>Quartalsmeldungen der BDCs (SEC-Einreichungen, Anlage 99.1)</li>
+<li>Kurse von Xetra und Tradegate, Stand siehe oben</li>
+<li>Screener-Daten des Dividenden-Rechners</li>
+</ul>
+</details>
+<p class="note"><strong>Hinweis:</strong> Keine Anlageberatung. Die Angaben dienen der Information und ersetzen keine eigene Prüfung. Kapitalanlagen sind mit Risiken verbunden, bis hin zum Totalverlust.</p>
 </article></main>
 <footer class="site-footer"><div class="wrap">
 <div class="cols">
