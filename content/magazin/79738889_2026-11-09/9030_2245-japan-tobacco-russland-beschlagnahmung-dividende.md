@@ -11,16 +11,15 @@ logo_domain: jt.com
 logo_file: assets/logos/2914.png
 quelle_url: "https://www.marketscreener.com/"
 quelle_name: "Japan Tobacco: Third Quarter Earnings Report 2026 (29.10.2026), Investor Meeting 2025, Mitteilung zum Russland-Geschäft (9.11.2026), Reuters über MarketScreener (9.11.2026)"
-image: assets/magazin/japan-tobacco-russland-beschlagnahmung-foto.jpg
-image_alt: "Luftaufnahme einer Produktionsanlage mit russischer und japanischer Flagge"
-image_credit: "Foto: Japan Tobacco, bearbeitet"
-image_lizenz: Pressebild
+image: assets/magazin/japan-tobacco-zigaretten-foto.jpg
+image_alt: "Zigarettenschachtel der Marke Winston mit Zigaretten auf einem Tisch"
+image_credit: "Foto: Javad Esmaeili, Unsplash"
 story_image: assets/magazin/japan-tobacco-russland-beschlagnahmung-foto.jpg
 story_text: "Tabak war in den letzten Monaten ein Liebling der Anleger: stabile Cashflows, hohe Ausschüttungen und zuletzt sogar wieder mehr Umsatz im alten Geschäft mit Zigaretten. Japan Tobacco hatte im Gegensatz zu vielen Konkurrenten Russland nie verlassen.
 Das rächt sich jetzt. Moskau hat alle Gesellschaften des Konzerns unter vorläufige Verwaltung gestellt. Ein Zehntel des Umsatzes und ein Viertel des operativen Gewinns hängen daran, die Aktie fiel in zwei Tagen um ein Drittel.
 Nestlé, Metro und Auchan hat es dieses Jahr schon getroffen, Philip Morris und andere sind noch im Land. Wer dort bleibt, muss damit rechnen, dass der Staat irgendwann zugreift."
 ---
-<!-- PRÜFEN (Stand 14.11.): Umsatz, Gewinn, Prognose, Dividende, Ausschüttungsquote, FCF, Nettoverschuldung und Eigenkapitalquote stammen aus dem Q3-Bericht vom 29.10.2026 und der Investor-Präsentation 2025 (nicht mehr aus aktien.guide). Die Zeile „ohne Russland“ und die Russland-Anteile sind eigene Rechnung auf Basis der Mitteilung vom 9.11. und sind als grobe Schätzung gekennzeichnet. Kurse: Reuters-Angaben (Donnerstag 7.769, Montag 5.269, Freitag 6.269 Yen) und Kurs 13.11. (5.944 Yen). Nicht geprüft: der Status von Mondelez, PepsiCo und Procter & Gamble in Russland; diese Angaben sind als Stand „nach unserem Stand, nicht einzeln geprüft“ formuliert. -->
+<!-- PRÜFEN (Stand 14.11.): Umsatz, Gewinn, Prognose, Dividende, Ausschüttungsquote, FCF, Nettoverschuldung und Eigenkapitalquote stammen aus dem Q3-Bericht vom 29.10.2026 und der Investor-Präsentation 2025. Die Zeile „ohne Russland“ und die Russland-Anteile sind eigene Rechnung auf Basis der Mitteilung vom 9.11. und als grobe Schätzung gekennzeichnet. Kurse: Reuters-Angaben (Donnerstag 7.769, Montag 5.269, Freitag 6.269 Yen) und Kurs 13.11. (5.944 Yen). Aufmacher: Foto Javad Esmaeili, Unsplash. Nicht einzeln geprüft: der Status von Mondelez, PepsiCo und Procter & Gamble in Russland. -->
 
 !!! kurz "Kurz gesagt"
     **Kern:** Japan Tobacco hat Russland im Gegensatz zu vielen Konkurrenten nie verlassen. Jetzt stellt Moskau alle Gesellschaften des Konzerns unter vorläufige Verwaltung. Damit stehen rund ein Zehntel des Umsatzes und ein Viertel des bereinigten operativen Gewinns auf dem Spiel.
@@ -34,7 +33,7 @@ Nestlé, Metro und Auchan hat es dieses Jahr schon getroffen, Philip Morris und 
 
 ![Kursverlauf der Japan-Tobacco-Aktie in den letzten fünf Jahren in Yen](/assets/magazin/japan-tobacco-kurs-5-jahre.png)
 
-Trotz des Einbruchs liegt die Aktie noch gut 150 % über dem Stand von vor fünf Jahren, vom Hoch im Oktober ist sie rund 20 % entfernt.
+Trotz des Einbruchs liegt die Aktie noch gut 150 % über dem Stand von vor fünf Jahren. Vom Hoch im Oktober ist sie rund 20 % entfernt.
 
 <style>
 @media (max-width:560px){
@@ -52,13 +51,17 @@ Die Dividende kostet bei rund 1,67 Milliarden Aktien etwa 450 Milliarden Yen im 
 
 Japan Tobacco macht rund 96 Prozent seines Umsatzes mit Tabak, das Lebensmittelgeschäft ist mit gut 4 Prozent klein. Das Pharmageschäft hat der Konzern 2025 an Shionogi übertragen. Im Tabak gibt es zwei Bereiche: die klassischen Zigaretten (Winston, Camel, Mevius, LD, dazu die integrierte Vector Group) und die risikoreduzierten Produkte (RRP), vor allem das Heizstäbchen-System Ploom.
 
-Bei den Zigaretten kommt das Wachstum vor allem aus dem Preis. Der Preisbeitrag lag 2025 bei 10,8 %, im Schnitt der Jahre 2022 bis 2024 bei 7,1 %. Die Menge schrumpft dagegen. Der Zigarettenmarkt verlor 2025 rund 2,7 % Volumen, in den ersten neun Monaten 2026 setzte sich der Rückgang fort. Der Konzern gewinnt Marktanteile, verkauft aber insgesamt nicht mehr Zigaretten.
+Bei den Zigaretten kommt das Wachstum vor allem aus dem Preis. Der Preisbeitrag lag 2025 bei 10,8 %, im Schnitt der Jahre 2022 bis 2024 bei 7,1 %.
 
-Das eigentliche Wachstumsfeld ist RRP. Der RRP-Umsatz stieg in den ersten neun Monaten 2026 um 30,6 % auf 119,3 Mrd. Yen, das sind gut 4 % des Tabakumsatzes. Bis 2028 will der Konzern rund 800 Mrd. Yen in dieses Geschäft investieren. Für den Zeitraum 2026 bis 2028 stellt er einen bereinigten operativen Gewinn im hohen einstelligen Prozentbereich pro Jahr in Aussicht.
+Die Menge schrumpft dagegen. Der Zigarettenmarkt verlor 2025 rund 2,7 % Volumen, und in den ersten neun Monaten 2026 setzte sich der Rückgang fort. Der Konzern gewinnt Marktanteile, verkauft insgesamt aber nicht mehr Zigaretten.
 
-![Zigarettenschachtel der Marke Winston mit Zigaretten auf einem Tisch](/assets/magazin/japan-tobacco-zigaretten-foto.jpg)
+![Tabak-Segment im dritten Quartal 2026 mit Kernumsatz und bereinigtem operativen Gewinn in Milliarden Yen](/assets/magazin/japan-tobacco-segment-q3-2026.jpg)
 
-*Foto: Javad Esmaeili, Unsplash*
+*Quelle: Japan Tobacco, Third Quarter Earnings Report 2026, S. 5*
+
+Das eigentliche Wachstumsfeld ist RRP. Der RRP-Umsatz stieg in den ersten neun Monaten 2026 um 30,6 % auf 119,3 Mrd. Yen, das sind gut 4 % des Tabakumsatzes.
+
+Bis 2028 will der Konzern rund 800 Mrd. Yen in dieses Geschäft investieren. Für den Zeitraum 2026 bis 2028 stellt er einen bereinigten operativen Gewinn im hohen einstelligen Prozentbereich pro Jahr in Aussicht.
 
 Regional zeigt sich, wo der Konzern wächst. In den ersten neun Monaten 2026, bereinigt um Wechselkurse:
 - **Asien** (u. a. Japan, Philippinen, Taiwan): Kernumsatz +6,7 %, bereinigter operativer Gewinn +23,5 %. In Japan steigt der RRP-Absatz um 28,5 %, weil Ploom Anteile gewinnt.
@@ -69,21 +72,28 @@ Regional zeigt sich, wo der Konzern wächst. In den ersten neun Monaten 2026, be
 
 Im dritten Quartal sank das Volumen in Russland um 3,6 %. Preise und Mix glichen das aus, Winston und Camel gewannen dort Marktanteile. Russland zählt also bis zum Dekret zu den soliden Märkten des Konzerns.
 
+![Luftaufnahme einer Produktionsanlage mit russischer und japanischer Flagge](/assets/magazin/japan-tobacco-russland-beschlagnahmung-foto.jpg)
+
+*Foto: Japan Tobacco, bearbeitet*
+
 Die Mitteilung vom 9. November nennt einen Anteil von rund einem Zehntel am Umsatz und einem Viertel am bereinigten operativen Gewinn. Rechnet man das auf die Prognose für 2026 um, ergibt sich grob:
 - **Umsatz:** rund 390 Mrd. Yen von 3.903 Mrd. Yen
 - **Bereinigter operativer Gewinn:** rund 270 Mrd. Yen von 1.079 Mrd. Yen
 - **Gewinn je Aktie:** Wenn der Gewinnanteil proportional zum operativen Gewinn wegfällt, bleiben rund 280 Yen von 373 Yen übrig.
 
-Diese Rechnung ist grob. Sie setzt voraus, dass Russland dauerhaft wegfällt und es keine Entschädigung gibt. Auffällig ist das Verhältnis: Ein Zehntel des Umsatzes bringt ein Viertel des Gewinns. Russland war also überdurchschnittlich profitabel, und genau deshalb trifft der Verlust so stark.
+Diese Rechnung ist grob. Sie setzt voraus, dass Russland dauerhaft wegfällt und es keine Entschädigung gibt.
+
+Auffällig ist das Verhältnis: Ein Zehntel des Umsatzes bringt ein Viertel des Gewinns. Russland war also überdurchschnittlich profitabel, und genau deshalb trifft der Verlust so stark.
 
 ## War der Kurssturz übertrieben?
 
 Der Maßstab ist das Kurs-Gewinn-Verhältnis (KGV). Die Tabelle zeigt, wie teuer die Aktie auf dem Prognosegewinn je Zeitpunkt ist:
 
-
 <div class="tablewrap kzw kz3"><table class="kzt"><thead><tr><th>Zeitpunkt</th><th>Kurs (Yen)</th><th>KGV mit Prognose (373 Yen)</th><th>KGV ohne Russland (rund 280 Yen)</th></tr></thead><tbody><tr><td>Donnerstag, 5.11. (vor dem Absturz)</td><td>7.769</td><td>20,8</td><td>27,7</td></tr><tr><td>Montag, 9.11. (Tief)</td><td>5.269</td><td>14,1</td><td>18,8</td></tr><tr><td>Freitag, 13.11.</td><td>5.944</td><td>15,9</td><td>21,2</td></tr></tbody></table>
 
-Vor dem Absturz war die Aktie auf dem Prognosegewinn schon teuer. Ein Viertel weniger Gewinn hätte bei gleichem Kurs ein KGV von knapp 28 bedeutet. Ein Teil der rund 40 % Kursplus seit Jahresbeginn beruhte auf der Annahme, Russland sei sicher. Diese Annahme ist weggefallen.
+Vor dem Absturz war die Aktie auf dem Prognosegewinn schon teuer. Ein Viertel weniger Gewinn hätte bei gleichem Kurs ein KGV von knapp 28 bedeutet.
+
+Ein Teil der rund 40 % Kursplus seit Jahresbeginn beruhte auf der Annahme, Russland sei sicher. Diese Annahme ist weggefallen.
 
 Am 13. November stand die Aktie bei 5.944 Yen. Auf dem kleineren Gewinn entspricht das ungefähr dem alten Bewertungsniveau. Der Markt hat den Verlust damit weitgehend eingepreist. Nur das Tief am Montag lag darunter, bei einem KGV von knapp 19 auf dem kleineren Gewinn. Das wäre eine Überreaktion gewesen, und die Aktie hat sich davon wieder gelöst.
 
@@ -109,7 +119,9 @@ Philip Morris erzielt nach seinem Geschäftsbericht für 2025 rund 6 % seines Um
 
 Ob Moskau bei ihnen ebenso zugreift, bleibt abzuwarten. Bisher traf es Konzerne aus Europa und Japan, keine US-Firma.
 
-Trump dürfte großes Interesse daran haben, dass Putin amerikanische Konzerne nicht enteignet. Ein Zugriff auf US-Firmen wäre ein politischer Konflikt, den Washington eher vermeiden möchte. Das ist eine Vermutung, belegt ist sie nicht. Ob dieser Schutz hält, ist offen, denn die politische Lage kann sich schnell ändern.
+Trump dürfte großes Interesse daran haben, dass Putin amerikanische Konzerne nicht enteignet. Ein Zugriff auf US-Firmen wäre ein politischer Konflikt, den Washington eher vermeiden möchte.
+
+Das ist eine Vermutung, belegt ist sie nicht. Ob dieser Schutz hält, ist offen, denn die politische Lage kann sich schnell ändern.
 
 Für Anleger entscheidet am Ende, wie viel Gewinn und wie viel Geld im Land festsitzt.
 
