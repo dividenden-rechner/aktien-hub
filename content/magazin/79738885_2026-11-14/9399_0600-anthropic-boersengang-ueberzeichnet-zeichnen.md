@@ -9,6 +9,11 @@ image_alt: "KI-generiertes Bild: Messestand von Anthropic mit dem Schriftzug Con
 image_credit: "Bild: KI-generiert, kein Originalfoto"
 kein_logo: ja
 quelle_name: "Handelsblatt (11. und 13.11.2026), Bloomberg (12.11.2026), Financial Times, Börsenprospekt (S-1/A), Börse Online (13.11.2026)"
+share_image: assets/magazin/anthropic-boersengang-teilen-foto.jpg
+share_image_credit: "Foto: Sean Pollock / Unsplash"
+teilen_unten: ja
+share_title: "Anthropic-Börsengang sechsfach überzeichnet: So kommen Privatanleger an die Aktie"
+share_zeilen: nein
 ---
 <!-- PRÜFEN: Zahlen aus Handelsblatt-Artikeln vom 11.11. und 13.11.2026 (Screenshots von Divi), nicht alle selbst am Prospekt geprüft: 64,4 Mrd. $ Erlös, 801,4 Mio. neue + 23,6 Mio. alte Aktien, 26 Mrd. $ Privatplatzierung (Nvidia rund 10 Mrd.), Gesamtvolumen mit Mehrzuteilung ~100 Mrd. $, Q3-Umsatz 17 Mrd. $ (zwölfmal so viel wie im Vorjahr, +47 % zum Vorquartal nach +144 %), Umsatzrate 81 Mrd. $ (31.10.), operativer Verlust Q3 567 Mio. $ nach erstem Gewinn in Q2, Verpflichtungen ~900 Mrd. $, 11.900 Kunden mit >100.000 $, bis zu 20 % für Privatanleger, 5 % in Wohltätigkeitsfonds. -->
 <!-- PRÜFEN: Zeichnungsfristen (Trade Republic 18.11., 16 Uhr; Scalable 18.11., 12 Uhr, ab 110 €) aus Börse Online vom 13.11.; vor Versand in den Apps gegenprüfen. Preisfestsetzung 18.11., Handelsstart 19.11. laut Handelsblatt/CNBC. -->

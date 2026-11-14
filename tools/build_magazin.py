@@ -358,8 +358,9 @@ def make_share_card(p, slug, img):
     lf = p.get("logo_file") or ""
     logo_ok = bool(lf) and not lf.endswith(".mono.png") and os.path.exists(lf)
     photo_ok = bool(img) and not ext(img) and os.path.exists(img) and "-foto" in img
-    lines = kurz_lines(p.get("body_md", ""))
-    key = hashlib.md5(json.dumps([p["title"], lines, lf if logo_ok else "", img if photo_ok else "", cashtag(p), p.get("category")], ensure_ascii=False).encode()).hexdigest()[:8]
+    lines = [] if str(p.get("share_zeilen", "")).lower() in ("nein", "false", "0") else kurz_lines(p.get("body_md", ""))
+    stitle = p.get("share_title") or p["title"]
+    key = hashlib.md5(json.dumps([stitle, lines, lf if logo_ok else "", img if photo_ok else "", cashtag(p), p.get("category")], ensure_ascii=False).encode()).hexdigest()[:8]
     rel = f"assets/share/{slug}-{key}.jpg"
     if os.path.exists(rel):
         return rel
@@ -400,20 +401,28 @@ def make_share_card(p, slug, img):
     lab = (p.get("category") or "News").upper() + (("  ·  " + cashtag(p)) if cashtag(p) else "")
     d.text((x, 48 + 46), lab, font=font(30), fill=green)
     f = font(58)
-    words_, tl, cur = p["title"].split(), [], ""
+    words_, tl, cur = stitle.split(), [], ""
     for w in words_:
         t = (cur + " " + w).strip()
         if d.textlength(t, font=f) > W - 120: tl.append(cur); cur = w
         else: cur = t
     tl.append(cur)
     y = 250
+    if len(tl) > 3:                          # zu lang: dritte Zeile mit Auslassungszeichen kuerzen
+        t3 = tl[2]
+        while t3 and d.textlength(t3 + " …", font=f) > W - 120: t3 = t3.rsplit(" ", 1)[0] if " " in t3 else t3[:-1]
+        tl = tl[:2] + [t3 + " …"]
     for ln in tl[:3]:
         d.text((60, y), ln, font=f, fill="#ffffff"); y += 72
     y += 14
     for ln in lines[:2]:
         k, _, v = ln.partition(":")
         d.text((60, y), k + ":", font=font(38), fill=green)
-        d.text((60 + d.textlength(k + ": ", font=font(38)) + 6, y - 4), v.strip(), font=font(44), fill="#ffffff"); y += 62
+        x0 = 60 + d.textlength(k + ": ", font=font(38)) + 6; v = v.strip()
+        if d.textlength(v, font=font(44)) > W - 60 - x0:      # Wert passt nicht: kuerzen
+            while v and d.textlength(v + " …", font=font(44)) > W - 60 - x0: v = v.rsplit(" ", 1)[0] if " " in v else v[:-1]
+            v += " …"
+        d.text((x0, y - 4), v, font=font(44), fill="#ffffff"); y += 62
     d.text((60, H - 56), "dividenden-rechner.de", font=font(28, False), fill="#a9bdb1")
     im.save(rel, quality=88, optimize=True)
     return rel
@@ -624,20 +633,20 @@ def share_html(p, url, img):
         ("mail", "Per E-Mail senden", "mailto:?subject=" + q(p["title"]) + "&body=" + q(p["description"] + "\n\n" + page)),
     ]
     h = '<div class="sharebar" id="teilen" data-url="%s" data-story="%s"><span class="sharelab">Teilen</span>' % (esc(page), esc(json.dumps(story, ensure_ascii=False)))
-    h += '<button type="button" class="sharebtn ig" id="igshare" title="Als Instagram-Story teilen" aria-label="Als Instagram-Story teilen">%s</button>' % ICONS["instagram"]
+    h += '<button type="button" class="sharebtn ig js-ig" id="igshare" title="Als Instagram-Story teilen" aria-label="Als Instagram-Story teilen">%s</button>' % ICONS["instagram"]
     links.insert(0, ("threads", "Auf Threads teilen", "https://www.threads.com/intent/post?text=" + q(p["title"] + " " + page)))
     for k, label, href in links:
         h += '<a class="sharebtn %s" href="%s" target="_blank" rel="noopener nofollow" title="%s" aria-label="%s">%s</a>' % (k, esc(href), label, label, ICONS[k])
-    h += '<button type="button" class="sharebtn" id="cpshare" title="Link kopieren" aria-label="Link kopieren">%s</button>' % ICONS["link"]
+    h += '<button type="button" class="sharebtn js-cp" id="cpshare" title="Link kopieren" aria-label="Link kopieren">%s</button>' % ICONS["link"]
     h += '<span class="sharemsg" id="igmsg" role="status"></span></div>\n'
     return h
 
 
 SHARE_JS = r"""<script src="../../assets/story.js"></script>
 <script src="../../assets/kurse.js"></script>
-<script>(function(){var bar=document.querySelector(".sharebar");if(!bar)return;var m=document.getElementById("igmsg"),pg=bar.getAttribute("data-url"),S=JSON.parse(bar.getAttribute("data-story")||"{}");
-document.getElementById("cpshare").onclick=async function(){try{await navigator.clipboard.writeText(pg);m.textContent="Link kopiert."}catch(e){m.textContent=pg}};
-document.getElementById("igshare").onclick=function(){window.StoryShare(S,m)}})();</script>"""
+<script>(function(){document.querySelectorAll(".sharebar").forEach(function(bar){var m=bar.querySelector(".sharemsg"),pg=bar.getAttribute("data-url"),S=JSON.parse(bar.getAttribute("data-story")||"{}"),cp=bar.querySelector(".js-cp"),ig=bar.querySelector(".js-ig");
+if(cp)cp.onclick=async function(){try{await navigator.clipboard.writeText(pg);m.textContent="Link kopiert."}catch(e){m.textContent=pg}};
+if(ig)ig.onclick=function(){window.StoryShare(S,m)}})})();</script>"""
 
 
 def build_post(p, posts):
@@ -676,7 +685,7 @@ def build_post(p, posts):
             {"@type": "Question", "name": q, "acceptedAnswer": {"@type": "Answer", "text": a}} for q, a in faq]})
     extra = '<meta property="article:published_time" content="%s">\n<meta property="article:modified_time" content="%s">\n<meta property="article:section" content="%s">\n' % (iso(p["dt"]), iso(p["upd"]), esc(p["category"]))
     extra += "".join('<script type="application/ld+json">%s</script>\n' % json.dumps(x, ensure_ascii=False) for x in ld)
-    o = head(depth, p["title"], p["description"], url, "article", absu(make_share_card(p, slug, img)).replace("&", "&amp;"), extra) + nav_html(depth, "news") + "</nav></div></header>\n"
+    o = head(depth, p["title"], p["description"], url, "article", absu(make_share_card(p, slug, (p.get("share_image") or "").lstrip("/") or img)).replace("&", "&amp;"), extra) + nav_html(depth, "news") + "</nav></div></header>\n"
     o += f'<script src="{pre}assets/navigation.js"></script>\n<script src="{pre}assets/logos.js"></script>\n<script src="{pre}assets/fkearn.js"></script>\n<main class="wrap"><article class="post">\n'
     o += f'<nav class="crumbs" aria-label="Brotkrumen"><a href="{pre}">Start</a> › <a href="{pre}news/">News</a> › <span aria-current="page">{esc(p["title"])}</span></nav>\n'
     o += f'<p class="kicker">{esc(p["category"])}</p>\n{logo_html(p)}{kurs_chip(p)}<p class="lead">{esc(p["description"])}</p>\n'
@@ -697,6 +706,10 @@ def build_post(p, posts):
     bio = p.get("author_bio") or 'Die Redaktion von Dividenden-Rechner.de schreibt über Dividendenaktien, Kennzahlen und Steuerthemen für Privatanleger. Die Rechner und Auswertungen auf der Seite entstehen im eigenen Haus.'
     aimg = f'<img class="authorimg" src="{pre}{p["author_img"]}" alt="{esc(author)}" width="64" height="64" loading="lazy">' if p.get("author_img") else ""
     o += f'<aside class="authorbox{" hasimg" if aimg else ""}">{aimg}<div><strong>{esc(author)}</strong><p>{esc(bio)}</p><p>{KURZ_HINWEIS if kurz else "Bei Grafiken, Tabellen und Textentwürfen kommen KI-Werkzeuge zum Einsatz. Jeder Beitrag wird redaktionell geprüft und geht erst danach online."} <a href="{pre}ueber-uns/">Mehr über uns</a></p></div></aside>\n'
+    if str(p.get("teilen_unten", "")).lower() in ("ja", "true", "1"):
+        bar = share_html(p, url, img if ext(img) else pre + img)
+        bar = re.sub(r' id="(teilen|igshare|cpshare|igmsg)"', "", bar).replace('class="sharebar"', 'class="sharebar sharebar-unten"', 1)
+        o += bar
     others = [x for x in posts if x["slug"] != slug and x.get("typ") != "kurz"][:3]
     if others:
         o += '<aside class="related"><h2>Weitere Artikel</h2><ul>\n' + "\n".join(f'<li><a href="{pre}news/{x["slug"]}/">{esc(x["title"])}</a></li>' for x in others) + "\n</ul></aside>\n"
