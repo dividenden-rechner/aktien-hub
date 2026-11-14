@@ -25,10 +25,13 @@ for e in ET.fromstring(xml).iter("list"):
     if sc in FIRMEN:
         corp[sc] = e.findtext("corp_code")
 
+KONTEN_DEBUG = []
 def konto_eps(eintrag_liste, feld):
     for z in eintrag_liste:
         n = z.get("account_nm", "")
-        if "주당" in n and "이익" in n and "기본" in n:
+        if "주당" in n and len(KONTEN_DEBUG) < 40:
+            KONTEN_DEBUG.append({"id": z.get("account_id"), "name": n, "sj": z.get("sj_div")})
+        if z.get("account_id") == "ifrs-full_BasicEarningsLossPerShare" or ("주당" in n and "이익" in n and "기본" in n):
             wert = (z.get(feld) or "").replace(",", "")
             try:
                 return float(wert)
@@ -67,5 +70,5 @@ for sc, name in FIRMEN.items():
     ergebnis.append(e)
     time.sleep(0.5)
 
-json.dump({"status_antworten": STATUS, "stand": dt.datetime.now(dt.timezone.utc).strftime("%Y-%m-%d %H:%M UTC"), "firmen": ergebnis}, open("data/dart-test.json", "w", encoding="utf-8"), ensure_ascii=False, indent=1)
+json.dump({"status_antworten": STATUS, "konten_debug": KONTEN_DEBUG, "stand": dt.datetime.now(dt.timezone.utc).strftime("%Y-%m-%d %H:%M UTC"), "firmen": ergebnis}, open("data/dart-test.json", "w", encoding="utf-8"), ensure_ascii=False, indent=1)
 print(json.dumps(ergebnis, ensure_ascii=False, indent=1))

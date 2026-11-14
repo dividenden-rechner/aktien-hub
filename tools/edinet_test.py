@@ -53,7 +53,7 @@ for tag in tage:
     try:
         for d in dokumente(tag):
             sc = d.get("secCode")
-            if sc in FIRMEN and d.get("docTypeCode") in ("120000", "140000"):
+            if sc in FIRMEN and d.get("docTypeCode") in ("120", "140"):
                 key = (sc, d["docTypeCode"])
                 if key not in gefunden or d.get("submitDateTime", "") > gefunden[key].get("submitDateTime", ""):
                     gefunden[key] = d
@@ -63,7 +63,7 @@ for tag in tage:
 
 ergebnis = []
 for sc, name in FIRMEN.items():
-    jahr, quartal = gefunden.get((sc, "120000")), gefunden.get((sc, "140000"))
+    jahr, quartal = gefunden.get((sc, "120")), gefunden.get((sc, "140"))
     eintrag = {"firma": name, "secCode": sc, "jahresbericht": jahr and jahr.get("docID"), "quartalsbericht": quartal and quartal.get("docID")}
     try:
         if jahr:
