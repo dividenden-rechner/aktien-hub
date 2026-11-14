@@ -283,27 +283,42 @@ def main():
         BDC = json.load(open("data/bdc.json", encoding="utf-8")).get("firmen", {})
     except Exception:
         BDC = {}
+    try:
+        FMPK = json.load(open("data/bdc-kurse-fmp.json", encoding="utf-8")).get("kurse", {})
+    except Exception:
+        FMPK = {}
     for t, b in BDC.items():
         qs = [q for q in b.get("quartale", []) if q.get("nav_je_aktie")]
         z = isin.get(t)
-        if not qs or not isinstance(z, dict) or z["isin"] not in kurse["k"]:
+        if not qs:
             continue
-        k_eur, veraend, kw = kurse["k"][z["isin"]][:3]
-        if kw != "EUR" or "USD" not in rate:
-            continue
-        boerse = kurse["k"][z["isin"]][3] if len(kurse["k"][z["isin"]]) > 3 else "DETR"
-        kusd = k_eur * rate["USD"]
+        fk = None
+        if isinstance(z, dict) and z["isin"] in kurse["k"]:
+            k_eur, veraend, kw = kurse["k"][z["isin"]][:3]
+            if kw != "EUR" or "USD" not in rate:
+                continue
+            boerse = kurse["k"][z["isin"]][3] if len(kurse["k"][z["isin"]]) > 3 else "DETR"
+            kusd = k_eur * rate["USD"]
+        else:
+            # Nur US-Listung: Kurs aus dem FMP-Abruf (USD), Boersenwert aus Aktienzahl oder FMP
+            fk = FMPK.get(t)
+            if not fk or not fk.get("kurs") or "USD" not in rate:
+                continue
+            kusd = float(fk["kurs"]); k_eur = kusd / rate["USD"]; veraend = None
+            boerse = fk.get("boerse") or "US"
         q = qs[-1]
         nav = q["nav_je_aktie"]
         nii = q.get("nii_bereinigt_je_aktie") or q.get("nii_je_aktie")
         reg, zus = q.get("dividende_regulaer") or 0, q.get("dividende_zusatz") or 0
         alt = next((x for x in reversed(qs[:-1]) if x["periode_ende"] <= str(int(q["periode_ende"][:4]) - 1) + q["periode_ende"][4:]), None)
-        o = out.setdefault(t, {"isin": z["isin"], "name": b.get("name", t), "sektor": "BDC", "waehrung": "USD", "datum": tag,
-                               "kurs_eur": k_eur, "veraenderung": veraend, "kurs_usd": r2(kusd),
+        o = out.setdefault(t, {"isin": z["isin"] if isinstance(z, dict) else None, "name": b.get("name", t), "sektor": "BDC", "waehrung": "USD", "datum": tag,
+                               "kurs_eur": round(k_eur, 4), "veraenderung": veraend, "kurs_usd": r2(kusd),
                                "boerse": {"DETR": "Xetra", "DGAT": "Tradegate", "DFRA": "Frankfurt"}.get(boerse, boerse)})
         o["sektor"] = "BDC"
         if b.get("aktien") and not o.get("boersenwert_usd"):
             o["boersenwert_usd"] = round(kusd * b["aktien"]); o["boersenwert_eur"] = round(k_eur * b["aktien"])
+        elif fk and fk.get("mktcap") and not o.get("boersenwert_usd"):
+            o["boersenwert_usd"] = round(fk["mktcap"])
         o["bdc"] = {
             "quartal": q["periode_ende"], "nav": nav, "kurs_nav": r2(kusd / nav, 2),
             "nii": nii, "nii_rendite": r2(nii * 4 / kusd * 100, 2) if nii else None,
@@ -320,6 +335,10 @@ def main():
             letzte = [x[3] for x in o["bdc"]["verlauf"] if x[3]]
             if letzte:
                 o["bdc"]["rendite"] = r2(letzte[-1] * 4 / kusd * 100, 2)
+                o["bdc"]["rendite_geschaetzt"] = True
+            elif fk and fk.get("letzte_dividende"):
+                # Ohne Quartalsdaten: letzte Dividende des Profils x 4 (bei Monatszahlern zu niedrig, daher geschaetzt)
+                o["bdc"]["rendite"] = r2(fk["letzte_dividende"] * 4 / kusd * 100, 2)
                 o["bdc"]["rendite_geschaetzt"] = True
         o["rendite"] = o.get("rendite") or o["bdc"]["rendite"]
         o["kbv"] = o["bdc"]["kurs_nav"]

@@ -1,0 +1,36 @@
+name: BDC-Kurse FMP
+on:
+  push:
+    branches: [main]
+    paths:
+      - "tools/fmp_bdc_kurse.py"
+      - ".github/workflows/bdc-kurse-fmp.yml"
+  schedule:
+    - cron: "17 22 * * 1-5"   # werktags nach US-Handelsschluss
+  workflow_dispatch:
+concurrency:
+  group: bdc-kurse-fmp
+  cancel-in-progress: false
+permissions:
+  contents: write
+jobs:
+  kurse:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: BDC-Kurse abrufen
+        env:
+          FMP_API_KEY: ${{ secrets.FMP_API_KEY }}
+        run: python3 tools/fmp_bdc_kurse.py
+      - name: Ergebnis committen
+        run: |
+          git config user.name "bdc-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add data/bdc-kurse-fmp.json
+          if git diff --cached --quiet; then echo "Nichts Neues"; exit 0; fi
+          git commit -m "BDC-Kurse FMP aktualisiert"
+          for i in 1 2 3; do git pull --rebase -X theirs -q && git push && break; sleep 5; done
