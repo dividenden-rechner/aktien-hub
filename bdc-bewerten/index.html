@@ -29,7 +29,7 @@
 .bdc-tab thead button{all:unset;box-sizing:border-box;display:block;width:100%;padding:8px 4px;text-align:center;cursor:pointer;font:inherit;color:inherit;line-height:1.25;white-space:normal}
 .bdc-tab thead button:focus-visible{outline:2px solid #2f9e5b;outline-offset:-2px}
 .bdc-tab th.fi,.bdc-tab thead th.fi button{text-align:left}
-.bdc-tab col.c1{width:40%}.bdc-tab col.c2{width:20%}.bdc-tab col.c4{width:18%}.bdc-tab col.c5{width:22%}
+.bdc-tab col.c1{width:34%}.bdc-tab col.c2{width:14%}.bdc-tab col.c3{width:16%}.bdc-tab col.c4{width:16%}.bdc-tab col.c5{width:20%}
 .bdc-tab td.fi{text-align:left}
 .fn{display:flex;align-items:center;gap:7px;min-width:0}
 .fn img,.fn .lgph{width:34px;height:34px;flex:none;object-fit:contain;border-radius:4px}
@@ -59,10 +59,11 @@
 
 <p class="bdc-status" id="bdc-status">Lade Daten …</p>
 <table class="bdc-tab" id="bdc-tab" aria-describedby="bdc-status">
-<colgroup><col class="c1"><col class="c2"><col class="c4"><col class="c5"></colgroup>
+<colgroup><col class="c1"><col class="c2"><col class="c3"><col class="c4"><col class="c5"></colgroup>
 <thead><tr>
 <th class="fi"><button type="button" data-k="n" aria-sort="none">BDC</button></th>
 <th><button type="button" data-k="kurs" aria-sort="none">Kurs $</button></th>
+<th><button type="button" data-k="mc" aria-sort="none">Marktkap. Mrd. $</button></th>
 <th><button type="button" data-k="dy" aria-sort="none">Rendite</button></th>
 <th><button type="button" data-k="pnav" aria-sort="none">Kurs / NAV</button></th>
 </tr></thead>
@@ -75,6 +76,7 @@
 
 <h2>So liest du die Tabelle</h2>
 <p>Kurs/NAV setzt den Börsenkurs ins Verhältnis zum Nettovermögenswert je Aktie. Liegt der Wert unter 1, zahlst du weniger als den Buchwert der Kredite und Beteiligungen. Liegt er darüber, zahlst du einen Aufschlag, meist, weil der Markt der Gesellschaft mehr zutraut. Die Dividendenrendite ist die laufende Dividende geteilt durch den Kurs.</p>
+<p>Die Marktkapitalisierung ist der Kurs mal die Aktienzahl aus den SEC-Daten. Mit einem Klick auf die Spaltenüberschrift sortierst du die Tabelle nach Größe.</p>
 <p>Ares Capital steht bei 0,99 und damit knapp unter dem Substanzwert. Main Street liegt bei 1,66 und damit deutlich darüber. Die Farbe beschreibt nur die Bewertung, nicht die Qualität der Kredite. Ein grüner Wert kann trotzdem schwach sein.</p>
 
 <h2>Die fünf Kriterien für einen Vergleich</h2>
@@ -137,7 +139,7 @@
       var logo = window.HubLogos ? window.HubLogos.img("lg", r.t, "", r.name) : "";
       return '<tr><td class="fi"><a href="../aktien-hub/?s=' + encodeURIComponent(r.t) + '" style="text-decoration:none;color:inherit"><span class="fn">' + logo +
         '<span><b>' + esc(r.t) + '</b><small>' + esc(r.name) + '</small></span></span></a></td>' +
-        '<td>' + num(r.kurs, 2) + '</td><td>' + (r.dy == null ? "–" : num(r.dy, 1) + " %") + '</td>' +
+        '<td>' + num(r.kurs, 2) + '</td><td>' + (r.mc == null ? "–" : num(r.mc, 2)) + '</td><td>' + (r.dy == null ? "–" : num(r.dy, 1) + " %") + '</td>' +
         '<td class="pn' + cls + '">' + (r.pnav == null ? "–" : num(r.pnav, 2)) + '</td></tr>';
     }).join("");
     document.querySelectorAll("#bdc-tab thead button").forEach(function (b) {
@@ -155,7 +157,7 @@
   fetch("../data/kennzahlen.json", { cache: "no-cache" }).then(function (r) { return r.json(); }).then(function (d) {
     rows = Object.keys(d.werte).filter(function (t) { var v = d.werte[t]; return v.sektor === "BDC" || v.bdc; }).map(function (t) {
       var v = d.werte[t], nav = v.bdc && v.bdc.kurs_nav != null ? v.bdc.kurs_nav : v.kbv;
-      return { t: t, name: v.name || t, kurs: v.kurs_usd, dy: typeof v.rendite === "number" ? v.rendite : null, geschaetzt: !!(v.bdc && v.bdc.rendite_geschaetzt), pnav: typeof nav === "number" ? nav : null };
+      return { t: t, name: v.name || t, kurs: v.kurs_usd, mc: typeof v.boersenwert_usd === "number" ? v.boersenwert_usd / 1e9 : null, dy: typeof v.rendite === "number" ? v.rendite : null, geschaetzt: !!(v.bdc && v.bdc.rendite_geschaetzt), pnav: typeof nav === "number" ? nav : null };
     });
     status.textContent = rows.length + " BDCs · Stand " + (d.stand || "");
     draw();
