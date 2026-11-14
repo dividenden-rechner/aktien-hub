@@ -114,11 +114,13 @@ Das ist eine Einordnung und keine Anlageberatung. Ob der Einbruch eine Chance is
 
 Nestlé, Auchan, Metro und Lemana PRO hat Moskau in diesem Jahr ebenfalls unter vorläufige Verwaltung gestellt. Bei Nestlé hat der Konzern die Werte abgeschrieben, weil Russland nur einen kleinen Teil von Umsatz und Gewinn ausmacht. Schon 2023 traf es Danone und Carlsberg.
 
-Philip Morris erzielt nach seinem Geschäftsbericht für 2025 rund 6 % seines Umsatzes in Russland. Das dortige Vermögen lag bei etwa 4,8 Mrd. US-Dollar, davon rund 2,3 Mrd. Dollar Barmittel. Mondelez, PepsiCo und Procter & Gamble sind nach unserem Stand ebenfalls noch im Land. Wie weit sie sich zurückziehen wollen, haben wir für jede Firma einzeln nicht geprüft.
+Philip Morris erzielt nach seinem Geschäftsbericht für 2025 rund 6 % seines Umsatzes in Russland. Das dortige Vermögen lag bei etwa 4,8 Mrd. US-Dollar, davon rund 2,3 Mrd. Dollar Barmittel. Auch Mondelez, PepsiCo und Procter & Gamble sind in Russland aktiv.
 
-Auffällig ist, dass unter den bisher betroffenen Konzernen keine US-Firmen sind. Ob die Nähe zwischen Moskau und Washington US-Firmen schützt, lässt sich aus den bisherigen Fällen nicht belegen. Es bleibt eine Vermutung, und die Lage kann sich mit den politischen Spannungen schnell ändern. Für Philip Morris, PepsiCo, Mondelez und Procter & Gamble gilt deshalb dasselbe wie für Japan Tobacco: Das Risiko besteht, offen ist nur der Zeitpunkt.
+Ob Moskau bei ihnen ebenso zugreift, bleibt abzuwarten. Bisher traf es Konzerne aus Europa und Japan, keine US-Firma.
 
-Wer in Russland Geschäft macht, muss damit rechnen, dass der Staat irgendwann zugreift. Entscheidend ist dann, wie groß der Gewinnanteil ist und wie viel Geld im Land festsitzt.
+Trump dürfte großes Interesse daran haben, dass Putin amerikanische Konzerne nicht enteignet. Ein Zugriff auf US-Firmen wäre ein politischer Konflikt, den Washington eher vermeiden möchte. Das ist eine Vermutung, belegt ist sie nicht. Ob dieser Schutz hält, ist offen, denn die politische Lage kann sich schnell ändern.
+
+Für Anleger entscheidet am Ende, wie viel Gewinn und wie viel Geld im Land festsitzt.
 
 ## Quellen
 
