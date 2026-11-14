@@ -1,0 +1,214 @@
+{
+ "stand": "2026-11-14 19:44 UTC",
+ "firmen": [
+  {
+   "ticker": "AAPL",
+   "land": "USA",
+   "kurs_vortag": {
+    "basis": "https://api.massive.com",
+    "status": 200,
+    "ergebnis": {
+     "T": "AAPL",
+     "v": 40027467.0,
+     "vw": 357.5292,
+     "o": 357.96,
+     "c": 356.27,
+     "h": 360.83,
+     "l": 355.75,
+     "t": 1794560400000,
+     "n": 696735
+    }
+   },
+   "firma": {
+    "basis": "https://api.massive.com",
+    "status": 200,
+    "ergebnis": {
+     "name": "Apple Inc.",
+     "market_cap": 5157180748160.0,
+     "primary_exchange": "XNAS",
+     "locale": "us",
+     "currency_name": "usd",
+     "type": "CS"
+    }
+   },
+   "dividenden": {
+    "basis": "https://api.massive.com",
+    "status": 200,
+    "anzahl": 4,
+    "letzte": [
+     {
+      "cash_amount": 0.27,
+      "currency": "USD",
+      "declaration_date": "2026-11-02",
+      "dividend_type": "CD",
+      "ex_dividend_date": "2026-11-12",
+      "frequency": 4,
+      "id": "Efc26ecd4b3dcd7215ea595f126f9194832a57cb2e42487777b7527211617842c",
+      "pay_date": "2026-11-16",
+      "record_date": "2026-11-12",
+      "ticker": "AAPL"
+     },
+     {
+      "cash_amount": 0.27,
+      "currency": "USD",
+      "declaration_date": "2026-07-30",
+      "dividend_type": "CD",
+      "ex_dividend_date": "2026-08-10",
+      "frequency": 4,
+      "id": "E1e778b36bcedb4d1589a970be52c16294ad4bc89c8627d56a3b970f6cf2a6e10",
+      "pay_date": "2026-08-13",
+      "record_date": "2026-08-10",
+      "ticker": "AAPL"
+     }
+    ]
+   },
+   "finanzen": {
+    "basis": "https://api.massive.com",
+    "status": 404,
+    "antwort": ""
+   }
+  },
+  {
+   "ticker": "KO",
+   "land": "USA",
+   "kurs_vortag": {
+    "basis": "https://api.massive.com",
+    "status": 200,
+    "ergebnis": {
+     "T": "KO",
+     "v": 18037684.0,
+     "vw": 99.0531,
+     "o": 98.18,
+     "c": 99.25,
+     "h": 99.3,
+     "l": 97.96,
+     "t": 1794560400000,
+     "n": 269574
+    }
+   },
+   "firma": {
+    "basis": "https://api.massive.com",
+    "status": 200,
+    "ergebnis": {
+     "name": "Coca-Cola Company",
+     "market_cap": 419177363522.39996,
+     "primary_exchange": "XNYS",
+     "locale": "us",
+     "currency_name": "usd",
+     "type": "CS"
+    }
+   },
+   "dividenden": {
+    "basis": "https://api.massive.com",
+    "status": 200,
+    "anzahl": 4,
+    "letzte": [
+     {
+      "cash_amount": 0.53,
+      "currency": "USD",
+      "declaration_date": "2026-10-15",
+      "dividend_type": "CD",
+      "ex_dividend_date": "2026-12-01",
+      "frequency": 4,
+      "id": "E0817d52dd3719224f5bc3ca5a1da4b249c5f4485d7212e5f6bccc48b784b1454",
+      "pay_date": "2026-12-15",
+      "record_date": "2026-12-01",
+      "ticker": "KO"
+     },
+     {
+      "cash_amount": 0.53,
+      "currency": "USD",
+      "declaration_date": "2026-07-15",
+      "dividend_type": "CD",
+      "ex_dividend_date": "2026-09-15",
+      "frequency": 4,
+      "id": "E805b4a3926e722b0e7e6ae3cf1f3d709a769f44faab354654a5ada3995a679ef",
+      "pay_date": "2026-10-01",
+      "record_date": "2026-09-15",
+      "ticker": "KO"
+     }
+    ]
+   },
+   "finanzen": {
+    "basis": "https://api.massive.com",
+    "status": 404,
+    "antwort": ""
+   }
+  },
+  {
+   "ticker": "XTKS:7203",
+   "land": "Japan (Toyota)",
+   "kurs_vortag": {
+    "basis": "https://api.massive.com",
+    "status": 404,
+    "antwort": "{\"status\":\"ERROR\",\"request_id\":\"6a9b29552bba7ba61722e3db8506b1e1\",\"error\":\"Ticker prefix does not exist\"}"
+   },
+   "firma": {
+    "basis": "https://api.massive.com",
+    "status": 404,
+    "antwort": "{\"status\":\"NOT_FOUND\",\"request_id\":\"d77b15c42d8d6418789b8e12ce6f2719\",\"message\":\"Ticker not found.\"}"
+   },
+   "dividenden": {
+    "basis": "https://api.massive.com",
+    "status": 200,
+    "anzahl": 0,
+    "letzte": []
+   },
+   "finanzen": {
+    "basis": "https://api.massive.com",
+    "status": 404,
+    "antwort": ""
+   }
+  },
+  {
+   "ticker": "XASX:WBC",
+   "land": "Australien (Westpac)",
+   "kurs_vortag": {
+    "basis": "https://api.massive.com",
+    "status": 404,
+    "antwort": "{\"status\":\"ERROR\",\"request_id\":\"50a5c250c70b2d928aec825216a26c20\",\"error\":\"Ticker prefix does not exist\"}"
+   },
+   "firma": {
+    "basis": "https://api.massive.com",
+    "status": 404,
+    "antwort": "{\"status\":\"NOT_FOUND\",\"request_id\":\"58294751835659d149a9447e3721878f\",\"message\":\"Ticker not found.\"}"
+   },
+   "dividenden": {
+    "basis": "https://api.massive.com",
+    "status": 200,
+    "anzahl": 0,
+    "letzte": []
+   },
+   "finanzen": {
+    "basis": "https://api.massive.com",
+    "status": 404,
+    "antwort": ""
+   }
+  },
+  {
+   "ticker": "XKRX:005930",
+   "land": "Korea (Samsung)",
+   "kurs_vortag": {
+    "basis": "https://api.massive.com",
+    "status": 404,
+    "antwort": "{\"status\":\"ERROR\",\"request_id\":\"03c0c8b91accc876e145dca1ea366932\",\"error\":\"Ticker prefix does not exist\"}"
+   },
+   "firma": {
+    "basis": "https://api.massive.com",
+    "status": 404,
+    "antwort": "{\"status\":\"NOT_FOUND\",\"request_id\":\"a4aa03d8f60c32d975263b30b620616e\",\"message\":\"Ticker not found.\"}"
+   },
+   "dividenden": {
+    "basis": "https://api.massive.com",
+    "status": 200,
+    "anzahl": 0,
+    "letzte": []
+   },
+   "finanzen": {
+    "basis": "https://api.massive.com",
+    "status": 404,
+    "antwort": ""
+   }
+  }
+ ]
+}
