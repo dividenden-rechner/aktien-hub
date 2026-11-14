@@ -67,10 +67,13 @@ Das eigentliche Wachstumsfeld ist RRP. Der RRP-Umsatz stieg in den ersten neun M
 
 Bis 2028 will der Konzern rund 800 Mrd. Yen in dieses Geschäft investieren. Für den Zeitraum 2026 bis 2028 stellt er einen bereinigten operativen Gewinn im hohen einstelligen Prozentbereich pro Jahr in Aussicht.
 
-Regional zeigt sich, wo der Konzern wächst. In den ersten neun Monaten 2026, bereinigt um Wechselkurse:
-- **Asien** (u. a. Japan, Philippinen, Taiwan): Kernumsatz +6,7 %, bereinigter operativer Gewinn +23,5 %. In Japan steigt der RRP-Absatz um 28,5 %, weil Ploom Anteile gewinnt.
-- **Westeuropa**: Kernumsatz +2,3 %, bereinigter operativer Gewinn +0,6 %. Die Menge sinkt, der Preis trägt das Geschäft. Hier wächst der Gewinn kaum.
-- **Osteuropa, Nahost und Afrika (EMA)**: Kernumsatz +12,8 %, bereinigter operativer Gewinn +23,5 %. Diese Region ist mit gut der Hälfte des Tabakumsatzes und fast der Hälfte des Tabakgewinns der größte Block. Hier liegt Russland.
+Die Zahlen für die ersten neun Monate 2026, bereinigt um Wechselkurse, zeigen deutlich, wo Japan Tobacco am stärksten wächst. Am meisten legt der Umsatz in Osteuropa, Nahost und Afrika (EMA) zu, dort steigt der Kernumsatz um 12,8 %. Der bereinigte operative Gewinn wächst in dieser Region um 23,5 %.
+
+Diese Region ist mit gut der Hälfte des Tabakumsatzes und fast der Hälfte des Tabakgewinns der größte Block. Hier liegt Russland, und genau dieser Teil des Wachstums fällt in Zukunft weg.
+
+In Asien (u. a. Japan, Philippinen, Taiwan) steigt der Kernumsatz um 6,7 %, der bereinigte operative Gewinn um 23,5 %. In Japan wächst vor allem der RRP-Absatz um 28,5 %, weil Ploom Anteile gewinnt.
+
+In Westeuropa wächst der Gewinn kaum. Der Kernumsatz steigt um 2,3 %, der bereinigte operative Gewinn nur um 0,6 %. Die Menge sinkt, der Preis trägt das Geschäft.
 
 ## Wie groß das Russland-Loch ist
 
