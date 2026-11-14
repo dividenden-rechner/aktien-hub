@@ -1,6 +1,6 @@
 """TESTLAUF: Gewinn je Aktie (Jahr, laufendes Jahr, Vorjahr) aus EDINET fuer ein paar japanische Firmen.
 
-TTM = Jahreswert (Jahresbericht 120) + Jahresbeginn bis Stichtag (Quartalsbericht 043000)
+TTM = Jahreswert (Jahresbericht 120) + Jahresbeginn bis Stichtag (Halbjahresbericht 160; Quartalsberichte gibt es in Japan seit April 2024 nicht mehr)
       - Jahresbeginn bis Stichtag im Vorjahr (steht im selben Quartalsbericht).
 Quelle: EDINET-API v2 (FSA). Schluessel aus dem Geheimnis EDINET_API_KEY.
 Ausgabe: data/edinet-test.json
@@ -53,7 +53,7 @@ for tag in tage:
     try:
         for d in dokumente(tag):
             sc = d.get("secCode")
-            if sc in FIRMEN and d.get("docTypeCode") in ("120", "140"):
+            if sc in FIRMEN and d.get("docTypeCode") in ("120", "160"):
                 key = (sc, d["docTypeCode"])
                 if key not in gefunden or d.get("submitDateTime", "") > gefunden[key].get("submitDateTime", ""):
                     gefunden[key] = d
@@ -63,7 +63,7 @@ for tag in tage:
 
 ergebnis = []
 for sc, name in FIRMEN.items():
-    jahr, quartal = gefunden.get((sc, "120")), gefunden.get((sc, "140"))
+    jahr, quartal = gefunden.get((sc, "120")), gefunden.get((sc, "160"))
     eintrag = {"firma": name, "secCode": sc, "jahresbericht": jahr and jahr.get("docID"), "quartalsbericht": quartal and quartal.get("docID")}
     try:
         if jahr:
