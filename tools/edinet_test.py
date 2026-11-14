@@ -73,8 +73,8 @@ for sc, name in FIRMEN.items():
             qx = xbrl_text(quartal["docID"])
             qe = eps(qx)
             # Halbjahresbericht: Kontextnamen je nach Taxonomie YTD oder SemiAnnual
-            cur = next((k for k in ("CurrentYTDDuration", "CurrentSemiAnnualDuration") if k in qe), None)
-            pri = next((k for k in ("Prior1YTDDuration", "Prior1SemiAnnualDuration") if k in qe), None)
+            cur = next((k for k in ("CurrentYTDDuration", "CurrentSemiAnnualDuration", "InterimDuration") if k in qe), None)
+            pri = next((k for k in ("Prior1YTDDuration", "Prior1SemiAnnualDuration", "Prior1InterimDuration") if k in qe), None)
             eintrag["eps_ytd"] = qe.get(cur) if cur else None
             eintrag["eps_ytd_vorjahr"] = qe.get(pri) if pri else None
             ko = kontexte(qx)
