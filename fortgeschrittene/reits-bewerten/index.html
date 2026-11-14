@@ -29,6 +29,33 @@
 <link rel="apple-touch-icon" href="../../assets/apple-touch-icon.png">
 <link rel="stylesheet" href="../../assets/navigation.css?v=20261025a">
 <link rel="manifest" href="../../manifest.webmanifest">
+<style>
+.bdc-tab{width:100%;table-layout:fixed;border-collapse:collapse;font-size:14px;margin:14px 0 8px;background:#fff}
+.bdc-tab th,.bdc-tab td{padding:8px 4px;border-bottom:1px solid #e5e9ee;text-align:center;white-space:nowrap;vertical-align:middle;font-variant-numeric:tabular-nums}
+.bdc-tab thead th{font-size:12.5px;font-weight:600;color:#5d6b78;background:#f5f8fa;padding:0;white-space:normal}
+.bdc-tab thead button{all:unset;box-sizing:border-box;display:block;width:100%;padding:8px 4px;text-align:center;cursor:pointer;font:inherit;color:inherit;line-height:1.25;white-space:normal}
+.bdc-tab thead button:focus-visible{outline:2px solid #2f9e5b;outline-offset:-2px}
+.bdc-tab th.fi,.bdc-tab thead th.fi button{text-align:left}
+.bdc-tab col.c1{width:30%}.bdc-tab col.c2{width:16%}.bdc-tab col.c3{width:18%}.bdc-tab col.c4{width:18%}.bdc-tab col.c5{width:18%}
+.bdc-tab td.fi{text-align:left}
+.fn{display:flex;align-items:center;gap:7px;min-width:0}
+.fn img,.fn .lgph{width:34px;height:34px;flex:none;object-fit:contain;border-radius:4px}
+.fn .lgph{display:inline-flex;align-items:center;justify-content:center;background:#eef2f5;color:#5d6b78;font-weight:700;font-size:12px}
+.fn>span{min-width:0;overflow:hidden}
+.fn b{display:block;font-size:14px;line-height:1.2}
+.fn small{display:block;font-size:11.5px;line-height:1.25;color:#5d6b78;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+
+
+
+.bdc-leg{font-size:13px;color:#5d6b78;display:flex;flex-wrap:wrap;gap:4px 16px;margin:4px 0 6px}
+.bdc-leg i{display:inline-block;width:12px;height:12px;border-radius:3px;margin-right:6px;vertical-align:-1px}
+.bdc-note{font-size:12.5px;color:#5d6b78;margin:6px 0 0}
+.bdc-status{font-size:14px;color:#5d6b78}
+
+#bdc-share{flex-wrap:nowrap;gap:4px}#bdc-share .sharebtn{width:32px;height:32px}#bdc-share .sharebtn svg{width:15px;height:15px}
+#reit-share{flex-wrap:nowrap;gap:4px}#reit-share .sharebtn{width:32px;height:32px}#reit-share .sharebtn svg{width:15px;height:15px}
+.bdc-tab td.num{font-variant-numeric:tabular-nums}
+</style>
 </head>
 <body>
 <header id="hub-global-header"><div class="hub-nav-inner"><a class="hub-brand" href="../../"><img class="hub-logo" src="../../assets/logo.png" alt="" width="36" height="36"> <span class="hub-brand-name">Dividenden-Rechner <span>Aktien-Hub</span></span></a><nav class="hub-links" aria-label="Hauptmenü"><a href="../../">Rechner</a><a href="../../aktien-hub/">Aktien</a><a href="../../depot/">Depot</a><a href="../../news/">News</a><a href="../../earnings/">Earnings</a><a href="../../screener/">Screener</a><a href="../../einfuehrung/">Einführung</a><a href="../../grundlagen/">Grundlagen</a><a href="../../fortgeschrittene/" aria-current="page">Fortgeschrittene</a></nav></div></header>
@@ -37,6 +64,21 @@
 <main class="wrap"><article>
 <nav class="crumbs" aria-label="Brotkrumen"><a href="../../">Start</a> › <a href="../../fortgeschrittene/">Fortgeschrittene</a> › <span aria-current="page">REITs bewerten: FFO, AFFO, NAV und Verschuldung</span></nav>
 <h1>REITs bewerten: FFO, AFFO, NAV und Verschuldung</h1>
+<p class="lead">Für REITs ist der FFO die Gewinngröße, die zählt. Die Tabelle zeigt für alle REITs mit Kurs und FFO das Verhältnis aus Kurs und FFO sowie die FFO-Rendite. Wie beim BDC-Vergleich gilt: Eine niedrige Zahl ist nicht automatisch günstig, sie kann auch ein Risikoabschlag sein.</p>
+<p class="bdc-status" id="reit-status">Lade Daten …</p>
+<table class="bdc-tab" id="reit-tab" aria-describedby="reit-status">
+<colgroup><col class="c1"><col class="c2"><col class="c3"><col class="c4"><col class="c5"></colgroup>
+<thead><tr>
+<th class="fi"><button type="button" data-k="n" aria-sort="none">REIT</button></th>
+<th><button type="button" data-k="kurs" aria-sort="none">Kurs $</button></th>
+<th><button type="button" data-k="mc" aria-sort="none">Marktkap. Mrd. $</button></th>
+<th><button type="button" data-k="pffo" aria-sort="none">Kurs / FFO</button></th>
+<th><button type="button" data-k="ffor" aria-sort="none">FFO-Rendite</button></th>
+</tr></thead>
+<tbody id="reit-body"></tbody>
+</table>
+<p class="bdc-note">FFO je Aktie aus den SEC-Daten, Kurs aus Tradegate. Bei negativem FFO zeigen wir weder Kurs/FFO noch FFO-Rendite.</p>
+<div class="sharebar" id="reit-share" data-url="https://www.dividenden-rechner.de/fortgeschrittene/reits-bewerten/"><span class="sharelab">Teilen</span><button type="button" class="sharebtn ig js-img" title="Tabelle als Bild teilen" aria-label="Tabelle als Bild teilen"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5.2" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="12" cy="12" r="4.1" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="17.3" cy="6.7" r="1.3"/></svg></button><a class="sharebtn threads" href="https://www.threads.com/intent/post?text=REITs%20im%20Vergleich%3A%20Kurs%2FFFO%2C%20FFO-Rendite%20und%20Marktkapitalisierung%20https%3A%2F%2Fwww.dividenden-rechner.de%2Ffortgeschrittene%2Freits-bewerten%2F" target="_blank" rel="noopener nofollow" title="Auf Threads teilen" aria-label="Auf Threads teilen"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12.186 24h-.007c-3.581-.024-6.334-1.205-8.184-3.509C2.35 18.44 1.5 15.586 1.472 12.01v-.017c.03-3.579.879-6.43 2.525-8.482C5.845 1.205 8.6.024 12.18 0h.014c2.746.02 5.043.725 6.826 2.098 1.677 1.29 2.858 3.13 3.509 5.467l-2.04.569c-1.104-3.96-3.898-5.984-8.304-6.015-2.91.022-5.11.936-6.54 2.717C4.307 6.504 3.616 8.914 3.589 12c.027 3.086.718 5.496 2.057 7.164 1.43 1.783 3.631 2.698 6.54 2.717 2.623-.02 4.358-.631 5.8-2.045 1.647-1.613 1.618-3.593 1.09-4.798-.31-.71-.873-1.3-1.634-1.75-.192 1.352-.622 2.446-1.284 3.272-.886 1.102-2.14 1.704-3.73 1.79-1.202.065-2.361-.218-3.259-.801-1.063-.689-1.685-1.74-1.752-2.964-.065-1.19.408-2.285 1.33-3.082.88-.76 2.119-1.207 3.583-1.291a13.853 13.853 0 0 1 3.02.142c-.126-.742-.375-1.332-.75-1.757-.513-.586-1.308-.883-2.359-.89h-.029c-.844 0-1.992.232-2.721 1.32L7.734 7.847c.98-1.454 2.568-2.256 4.478-2.256h.044c3.194.02 5.097 1.975 5.287 5.388.108.046.216.094.321.142 1.49.7 2.58 1.761 3.154 3.07.797 1.82.871 4.79-1.548 7.158-1.85 1.81-4.094 2.628-7.277 2.65Zm1.003-11.69c-.242 0-.487.007-.739.021-1.836.103-2.98.946-2.916 2.143.067 1.256 1.452 1.839 2.784 1.767 1.224-.065 2.818-.543 3.086-3.71a10.5 10.5 0 0 0-2.215-.221z"/></svg></a><a class="sharebtn x" href="https://twitter.com/intent/tweet?text=REITs%20im%20Vergleich%3A%20Kurs%2FFFO%2C%20FFO-Rendite%20und%20Marktkapitalisierung&amp;url=https%3A%2F%2Fwww.dividenden-rechner.de%2Ffortgeschrittene%2Freits-bewerten%2F" target="_blank" rel="noopener nofollow" title="Auf X teilen" aria-label="Auf X teilen"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg></a><a class="sharebtn facebook" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwww.dividenden-rechner.de%2Ffortgeschrittene%2Freits-bewerten%2F" target="_blank" rel="noopener nofollow" title="Auf Facebook teilen" aria-label="Auf Facebook teilen"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg></a><a class="sharebtn linkedin" href="https://www.linkedin.com/sharing/share-offsite/?url=https%3A%2F%2Fwww.dividenden-rechner.de%2Ffortgeschrittene%2Freits-bewerten%2F" target="_blank" rel="noopener nofollow" title="Auf LinkedIn teilen" aria-label="Auf LinkedIn teilen"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg></a><a class="sharebtn whatsapp" href="https://wa.me/?text=REITs%20im%20Vergleich%3A%20Kurs%2FFFO%2C%20FFO-Rendite%20und%20Marktkapitalisierung%20https%3A%2F%2Fwww.dividenden-rechner.de%2Ffortgeschrittene%2Freits-bewerten%2F" target="_blank" rel="noopener nofollow" title="Per WhatsApp senden" aria-label="Per WhatsApp senden"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a10 10 0 00-8.6 15.1L2 22l5-1.3A10 10 0 1012 2zm0 18.2c-1.5 0-3-.4-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1112 20.2zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1-1.4-.7-2.4-1.3-3.3-2.9-.2-.4.2-.4.7-1.3.1-.2 0-.3 0-.5l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5c-.2 0-.5.1-.7.3-.8.8-1 1.7-.9 2.6.2 1.1.8 2.1 1.6 3 1.4 1.7 3.1 2.6 5.2 3.2.7.2 1.3.2 1.8.1.6-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.2-1.2-.1-.1-.3-.2-.5-.3z"/></svg></a><a class="sharebtn telegram" href="https://t.me/share/url?url=https%3A%2F%2Fwww.dividenden-rechner.de%2Ffortgeschrittene%2Freits-bewerten%2F&amp;text=REITs%20im%20Vergleich%3A%20Kurs%2FFFO%2C%20FFO-Rendite%20und%20Marktkapitalisierung" target="_blank" rel="noopener nofollow" title="Per Telegram senden" aria-label="Per Telegram senden"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9.78 18.65l.28-4.23 7.68-6.92c.34-.31-.07-.46-.52-.19L7.74 13.3 3.64 12c-.88-.25-.89-.86.2-1.3l15.97-6.16c.73-.33 1.43.18 1.15 1.3l-2.72 12.81c-.19.91-.74 1.13-1.5.71L12.6 16.3l-1.99 1.93c-.23.23-.42.42-.83.42z"/></svg></a><a class="sharebtn mail" href="mailto:?subject=REITs%20im%20Vergleich%3A%20Kurs%2FFFO%2C%20FFO-Rendite%20und%20Marktkapitalisierung&amp;body=REITs%20im%20Vergleich%3A%20Kurs%2FFFO%2C%20FFO-Rendite%20und%20Marktkapitalisierung%0A%0Ahttps%3A%2F%2Fwww.dividenden-rechner.de%2Ffortgeschrittene%2Freits-bewerten%2F" target="_blank" rel="noopener nofollow" title="Per E-Mail senden" aria-label="Per E-Mail senden"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="2.5" y="5" width="19" height="14" rx="2.2" fill="none" stroke="currentColor" stroke-width="2"/><path d="M3.5 7l8.5 6.2L20.5 7" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg></a><button type="button" class="sharebtn js-cp" title="Link kopieren" aria-label="Link kopieren"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M10 14a4 4 0 005.7 0l3-3a4 4 0 00-5.7-5.7l-1 1M14 10a4 4 0 00-5.7 0l-3 3a4 4 0 005.7 5.7l1-1" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg></button><span class="sharemsg" id="reit-share-msg" role="status"></span></div>
 <p class="meta">Zuletzt aktualisiert: 26. Oktober 2026 · 4 Min. Lesezeit</p>
 <p class="lead">REITs zahlen hohe Dividenden und lassen sich trotzdem schlecht mit dem KGV bewerten. Wer sie wie Industrieaktien liest, kommt zu falschen Schlüssen. Hier sind die Zahlen, die wirklich zählen.</p>
 <h2>Was ein REIT ist und warum er viel ausschüttet</h2>
@@ -109,5 +151,91 @@
 </div>
 <p>Alle Inhalte dienen der allgemeinen Information und sind keine Anlage-, Steuer- oder Rechtsberatung. Kapitalanlagen sind mit Risiken verbunden.</p>
 </div></footer>
+<script>(function(){
+var bar=document.getElementById("reit-share"), body=document.getElementById("reit-body"), status=document.getElementById("reit-status"), msg=document.getElementById("reit-share-msg");
+if(!body) return;
+var TXT="REITs im Vergleich: Kurs/FFO, FFO-Rendite und Marktkapitalisierung", PG=bar.getAttribute("data-url");
+var rows=[], key="pffo", dir=1;
+function num(v,d){ return typeof v==="number"&&isFinite(v) ? v.toLocaleString("de-DE",{minimumFractionDigits:d,maximumFractionDigits:d}) : "–"; }
+function esc(t){ return String(t==null?"":t).replace(/[&<>"']/g,function(c){return {"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c];}); }
+function draw(){
+  var list=rows.slice().sort(function(a,b){
+    var x=a[key], y=b[key];
+    if(key==="n") return dir*String(x).localeCompare(String(y),"de");
+    if(x==null) return 1; if(y==null) return -1;
+    return dir*(x-y);
+  });
+  body.innerHTML=list.map(function(r){
+    return '<tr><td class="fi"><a href="../../aktien-hub/?s='+encodeURIComponent(r.t)+'" style="text-decoration:none;color:inherit"><span class="fn"><span><b>'+esc(r.t)+'</b><small>'+esc(r.name)+'</small></span></span></a></td>'+
+      '<td>'+num(r.kurs,2)+'</td><td>'+num(r.mc,2)+'</td><td>'+(r.pffo==null?"–":num(r.pffo,1)+" x")+'</td><td>'+(r.ffor==null?"–":num(r.ffor,1)+" %")+'</td></tr>';
+  }).join("");
+  document.querySelectorAll("#reit-tab thead button").forEach(function(b){
+    var on=b.dataset.k===key;
+    b.setAttribute("aria-sort", on ? (dir<0?"descending":"ascending") : "none");
+    b.textContent=b.textContent.replace(/\s[▲▼]$/,"")+(on?(dir<0?" ▼":" ▲"):"");
+  });
+}
+document.querySelectorAll("#reit-tab thead button").forEach(function(b){
+  b.addEventListener("click", function(){
+    if(key===b.dataset.k) dir=-dir; else { key=b.dataset.k; dir=b.dataset.k==="n"?1:-1; }
+    draw();
+  });
+});
+fetch("../../data/kennzahlen.json",{cache:"no-cache"}).then(function(r){return r.json();}).then(function(d){
+  var w=d.werte||d;
+  rows=Object.keys(w).filter(function(t){ var v=w[t]; return v && v.sektor==="Real Estate" && typeof v.kurs_usd==="number"; }).map(function(t){
+    var v=w[t], ffo=typeof v.ffo_je_aktie==="number"?v.ffo_je_aktie:null, k=v.kurs_usd;
+    return { t:t, name:v.name||t, kurs:k, mc:typeof v.boersenwert_usd==="number"?v.boersenwert_usd/1e9:null,
+      pffo: ffo!=null&&ffo>0 ? k/ffo : null, ffor: ffo!=null&&ffo>0&&k ? ffo/k*100 : null };
+  });
+  status.textContent=rows.length+" REITs · Stand "+(d.stand||"");
+  draw();
+  window.REIT_STAND=(d.stand||"");
+}).catch(function(){ status.textContent="Daten konnten gerade nicht geladen werden."; });
+
+/* Teilen: wie auf der BDC-Seite, Bild auf der Vorlage Daten & Fakten */
+var fontsDone=null;
+function fonts(){ if(fontsDone) return fontsDone; fontsDone=Promise.all([["400","Inter-Regular.otf"],["700","Inter-Bold.otf"]].map(function(f){ try{ var ff=new FontFace("InterS","url(../../assets/fonts/"+f[1]+")",{weight:f[0]}); return ff.load().then(function(x){document.fonts.add(x);}); }catch(e){ return Promise.resolve(); } })).catch(function(){}); return fontsDone; }
+function loadImg(u){ return new Promise(function(res){ var i=new Image(); i.onload=function(){res(i)}; i.onerror=function(){res(null)}; i.src=u; }); }
+function rowsFromTable(){ return Array.prototype.map.call(document.querySelectorAll("#reit-body tr"),function(tr){ var td=tr.querySelectorAll("td"), t=tr.querySelector("b"); return {t:t?t.textContent:"", kurs:td[1].textContent, mc:td[2].textContent, pffo:td[3].textContent, ffor:td[4].textContent}; }); }
+async function draw2(rs, stand){
+  await fonts();
+  var W=1080,H=1920,c=document.createElement("canvas"); c.width=W; c.height=H;
+  var x=c.getContext("2d"), F='InterS,Inter,"Segoe UI",Roboto,Helvetica,Arial,sans-serif';
+  x.fillStyle="#ffffff"; x.fillRect(0,0,W,H);
+  var tpl=await loadImg("../../assets/story-vorlagen/daten-fakten.png"); if(tpl) x.drawImage(tpl,0,0,W,H);
+  x.textBaseline="top"; x.fillStyle="#111";
+  x.font="700 52px "+F; x.fillText("REITs im Vergleich",60,228);
+  x.font="400 24px "+F; x.fillStyle="#262626"; x.fillText("Kurs/FFO, FFO-Rendite und Marktkapitalisierung · Stand "+stand,60,298);
+  var top=372, cols={t:60,kurs:470,mc:610,pffo:790,ffor:1020};
+  var avail=1800-top-70, n=rs.length, rh=Math.min(44,Math.floor(avail/(n+1))), fs=Math.min(24,Math.round(rh*0.6));
+  x.fillStyle="#111"; x.font="700 "+Math.round(fs*0.9)+"px "+F; x.textAlign="left"; x.fillText("REIT",cols.t,top);
+  x.textAlign="right"; x.fillText("Kurs $",cols.kurs,top); x.fillText("Mrd. $",cols.mc,top); x.fillText("Kurs/FFO",cols.pffo,top); x.fillText("FFO-Rend.",cols.ffor,top);
+  var y=top+rh; x.strokeStyle="#111"; x.lineWidth=2; x.beginPath(); x.moveTo(60,y-8); x.lineTo(1020,y-8); x.stroke();
+  rs.forEach(function(r){
+    x.fillStyle="#111"; x.font="700 "+fs+"px "+F; x.textAlign="left"; x.fillText(r.t,cols.t,y);
+    x.font="400 "+fs+"px "+F; x.textAlign="right"; x.fillText(r.kurs,cols.kurs,y); x.fillText(r.mc,cols.mc,y); x.fillText(r.pffo.replace(" x",""),cols.pffo,y); x.fillText(r.ffor.replace(" %",""),cols.ffor,y);
+    y+=rh;
+  });
+  x.strokeStyle="#111"; x.beginPath(); x.moveTo(60,y-8); x.lineTo(1020,y-8); x.stroke();
+  x.textAlign="left"; x.font="400 22px "+F; x.fillStyle="#444"; x.fillText("Keine Anlageberatung · Daten: SEC und Tradegate", 60, 1800);
+  return new Promise(function(res){ c.toBlob(res,"image/png"); });
+}
+function say(t){ if(msg) msg.textContent=t; }
+function stamp(){ var st=(window.REIT_STAND||""); st=st.replace(/^.*?(\d{4}-\d{2}-\d{2}).*$/,"$1"); return st.replace(/^(\d{4})-(\d{2})-(\d{2})$/,"$3.$2.$1") || "heute"; }
+function download(f){ var a=document.createElement("a"); a.href=URL.createObjectURL(f); a.download=f.name; document.body.appendChild(a); a.click(); a.remove(); }
+async function shareImg(service,url){
+  say("Bild wird erstellt …");
+  var bl=await draw2(rowsFromTable(), stamp());
+  if(!bl){ say("Das Bild konnte nicht erstellt werden."); return; }
+  var f=new File([bl],"reit-tabelle.png",{type:"image/png"});
+  try{ if(navigator.canShare && navigator.canShare({files:[f]})){ await navigator.share({files:[f],text:TXT,url:PG,title:TXT}); say(""); return; } }catch(e){ if(e&&e.name==="AbortError"){ say(""); return; } }
+  download(f);
+  say("Bild gespeichert. Hänge es in "+service+" an, der Text ist vorbereitet.");
+}
+var igb=bar.querySelector(".js-img"), cpb=bar.querySelector(".js-cp");
+if(igb) igb.addEventListener("click", function(){ shareImg("Instagram", null); });
+if(cpb) cpb.addEventListener("click", async function(){ try{ await navigator.clipboard.writeText(PG); say("Link kopiert."); }catch(e){ say(PG); } });
+})();</script>
 </body>
 </html>
