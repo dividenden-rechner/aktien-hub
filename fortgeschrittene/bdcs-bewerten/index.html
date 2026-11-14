@@ -249,7 +249,8 @@
 </script>
 <script>(function(){
 var bar=document.getElementById("bdc-share"); if(!bar) return;
-var msg=document.getElementById("bdc-share-msg"), igb=bar.querySelector(".js-img"), cpb=bar.querySelector(".js-cp"), pg=bar.getAttribute("data-url");
+var msg=document.getElementById("bdc-share-msg"), pg=bar.getAttribute("data-url");
+var TXT="BDCs im Vergleich: Kurs/NAV, Rendite und Marktkapitalisierung";
 var fontsDone=null;
 function fonts(){
   if(fontsDone) return fontsDone;
@@ -257,57 +258,73 @@ function fonts(){
     try{ var ff=new FontFace("InterS","url(../../assets/fonts/"+f[1]+")",{weight:f[0]}); return ff.load().then(function(x){document.fonts.add(x);}); }catch(e){ return Promise.resolve(); }
   })).catch(function(){}); return fontsDone;
 }
+function loadImg(u){ return new Promise(function(res){ var i=new Image(); i.onload=function(){res(i)}; i.onerror=function(){res(null)}; i.src=u; }); }
 function rowsFromTable(){
   return Array.prototype.map.call(document.querySelectorAll("#bdc-body tr"), function(tr){
-    var td=tr.querySelectorAll("td");
-    var t=tr.querySelector("b"), n=tr.querySelector("small");
-    var pn=td[4];
-    return { t:t?t.textContent:"", n:n?n.textContent:"", kurs:td[1].textContent, mc:td[2].textContent, dy:td[3].textContent, pnav:pn.textContent, cls:pn.className };
+    var td=tr.querySelectorAll("td"), t=tr.querySelector("b");
+    return { t:t?t.textContent:"", kurs:td[1].textContent, mc:td[2].textContent, dy:td[3].textContent, pnav:td[4].textContent };
   });
 }
-function draw(rows, stand){
+/* Vorlage "Daten & Fakten": gruener Kopf und Fuss kommen aus dem Bild, Inhalt schwarz auf weiss, ohne Farbflaechen */
+async function draw(rows, stand){
+  await fonts();
   var W=1080, H=1920, c=document.createElement("canvas"); c.width=W; c.height=H;
-  var x=c.getContext("2d"), G="#2f9e5b", D="#14202b", M="#5d6b78", F="InterS, Inter, Arial, sans-serif";
+  var x=c.getContext("2d"), F='InterS,Inter,"Segoe UI",Roboto,Helvetica,Arial,sans-serif';
   x.fillStyle="#ffffff"; x.fillRect(0,0,W,H);
-  x.fillStyle=G; x.fillRect(0,0,W,170);
-  x.fillStyle="#ffffff"; x.font="700 46px "+F; x.fillText("BDCs im Vergleich", 60, 84);
-  x.font="400 26px "+F; x.fillText("Kurs/NAV, Rendite und Marktkapitalisierung · Stand "+stand, 60, 130);
-  var cols={name:60, kurs:600, mc:730, dy:870, pn:1020};
-  var y=230;
-  x.fillStyle=M; x.font="700 20px "+F;
-  x.textAlign="left"; x.fillText("BDC", cols.name, y);
-  x.textAlign="right"; x.fillText("Kurs $", cols.kurs, y); x.fillText("Mrd. $", cols.mc, y); x.fillText("Rendite", cols.dy, y); x.fillText("Kurs/NAV", cols.pn, y);
-  x.textAlign="left"; y+=14; x.fillStyle="#d9e2e9"; x.fillRect(60,y,960,2); y+=12;
+  var tpl=await loadImg("../../assets/story-vorlagen/daten-fakten.png");
+  if(tpl) x.drawImage(tpl,0,0,W,H);
+  x.textBaseline="top"; x.fillStyle="#111";
+  x.font="700 56px "+F; x.fillText("BDCs im Vergleich",60,228);
+  x.font="400 26px "+F; x.fillStyle="#262626"; x.fillText("Kurs/NAV, Rendite und Marktkapitalisierung · Stand "+stand,60,298);
+  var top=368, cols={t:60, kurs:500, mc:660, dy:830, pn:1020};
+  var avail=1800-top-70, n=rows.length, rh=Math.min(44, Math.floor(avail/(n+1))), fs=Math.min(26, Math.round(rh*0.6));
+  x.fillStyle="#111"; x.font="700 "+Math.round(fs*0.9)+"px "+F; x.textAlign="left"; x.fillText("BDC",cols.t,top);
+  x.textAlign="right"; x.fillText("Kurs $",cols.kurs,top); x.fillText("Mrd. $",cols.mc,top); x.fillText("Rendite",cols.dy,top); x.fillText("Kurs/NAV",cols.pn,top);
+  var y=top+rh; x.strokeStyle="#111"; x.lineWidth=2; x.beginPath(); x.moveTo(60,y-8); x.lineTo(1020,y-8); x.stroke();
   rows.forEach(function(r){
-    y+=36;
-    x.fillStyle=D; x.font="700 20px "+F; x.textAlign="left"; x.fillText(r.t, cols.name, y);
-    x.fillStyle=M; x.font="400 16px "+F; var nm=r.n; while(x.measureText(nm).width>300 && nm.length>4){ nm=nm.slice(0,-2); } if(nm!==r.n) nm=nm.replace(/\s+\S*$/,"")+" …"; x.fillText(nm, cols.name+ (r.t.length*12)+14, y);
-    x.fillStyle=D; x.font="400 20px "+F; x.textAlign="right";
-    x.fillText(r.kurs, cols.kurs, y); x.fillText(r.mc, cols.mc, y); x.fillText(r.dy, cols.dy, y);
-    var g=r.cls.indexOf("g")>=0, rr=r.cls.indexOf("r")>=0;
-    if(g||rr){ x.fillStyle=g?"#e3f4ea":"#fbe6e3"; x.fillRect(cols.pn-92, y-25, 110, 32); x.fillStyle=g?"#166a3c":"#a93226"; x.font="700 20px "+F; }
-    x.fillText(r.pnav, cols.pn, y);
-    x.fillStyle="#eef2f5"; x.fillRect(60, y+10, 960, 1);
+    x.fillStyle="#111"; x.font="700 "+fs+"px "+F; x.textAlign="left"; x.fillText(r.t,cols.t,y);
+    x.font="400 "+fs+"px "+F; x.textAlign="right";
+    x.fillText(r.kurs,cols.kurs,y); x.fillText(r.mc,cols.mc,y); x.fillText(r.dy,cols.dy,y);
+    x.font="700 "+fs+"px "+F; x.fillText(r.pnav,cols.pn,y);
+    y+=rh;
   });
-  x.fillStyle=G; x.fillRect(0,H-120,W,120);
-  x.fillStyle="#ffffff"; x.textAlign="left"; x.font="700 26px "+F; x.fillText("dividenden-rechner.de", 60, H-62);
-  x.font="400 20px "+F; x.fillText("Keine Anlageberatung · Daten: SEC, Börsen und eigene BDC-Liste", 60, H-30);
+  x.strokeStyle="#111"; x.beginPath(); x.moveTo(60,y-8); x.lineTo(1020,y-8); x.stroke();
+  x.textAlign="left"; x.font="400 22px "+F; x.fillStyle="#444";
+  x.fillText("Keine Anlageberatung · Daten: SEC, Börsen und eigene BDC-Liste", 60, 1812);
   return new Promise(function(res){ c.toBlob(res,"image/png"); });
 }
 function say(t){ if(msg) msg.textContent=t; }
-if(igb) igb.onclick=async function(){
+function stamp(){
+  var st=((document.getElementById("bdc-status")||{}).textContent||"").replace(/^.*Stand\s*/,"").trim();
+  return st.replace(/^(\d{4})-(\d{2})-(\d{2})$/,"$3.$2.$1") || "heute";
+}
+async function imageFile(){
+  var bl=await draw(rowsFromTable(), stamp());
+  return bl ? new File([bl],"bdc-tabelle.png",{type:"image/png"}) : null;
+}
+function download(f){ var a=document.createElement("a"); a.href=URL.createObjectURL(f); a.download=f.name; document.body.appendChild(a); a.click(); a.remove(); }
+/* Teilen: erst das Bild ueber das Teilen-Menue des Geraets (Threads, X, Instagram erscheinen dort), sonst Bild speichern und Link oeffnen */
+async function shareTo(service, url){
   say("Bild wird erstellt …");
-  await fonts();
-  var stand=(document.getElementById("bdc-status")||{}).textContent||"";
-  stand=stand.replace(/^.*Stand\s*/,"").trim(); stand=stand.replace(/^(\d{4})-(\d{2})-(\d{2})$/,"$3.$2.$1");
-  var bl=await draw(rowsFromTable(), stand||"heute");
-  if(!bl){ say("Das Bild konnte nicht erstellt werden."); return; }
-  var f=new File([bl],"bdc-tabelle.png",{type:"image/png"});
-  try{ if(navigator.canShare && navigator.canShare({files:[f]})){ await navigator.share({files:[f]}); say(""); return; } }catch(e){ if(e&&e.name==="AbortError") return; }
-  var a=document.createElement("a"); a.href=URL.createObjectURL(bl); a.download="bdc-tabelle.png"; document.body.appendChild(a); a.click(); a.remove();
-  say("Bild gespeichert. Hänge es in Threads oder X an und füge den Link dazu.");
-};
-if(cpb) cpb.onclick=async function(){ try{ await navigator.clipboard.writeText(pg); say("Link kopiert."); }catch(e){ say(pg); } };
+  var f=await imageFile();
+  if(!f){ say("Das Bild konnte nicht erstellt werden."); return; }
+  var text=TXT+"\n\n#BDC #Dividende #Aktien";
+  try{
+    if(navigator.canShare && navigator.canShare({files:[f]})){
+      await navigator.share({files:[f], text:text, url:pg, title:TXT});
+      say(""); return;
+    }
+  }catch(e){ if(e&&e.name==="AbortError"){ say(""); return; } }
+  download(f);
+  if(url){ window.open(url,"_blank","noopener"); say("Bild gespeichert. Hänge es in "+service+" an, der Text ist vorbereitet."); }
+  else say("Bild gespeichert. In Instagram: Story → Bild aus der Galerie wählen.");
+}
+var igb=bar.querySelector(".js-img"), cpb=bar.querySelector(".js-cp");
+var th=bar.querySelector(".threads"), xb=bar.querySelector(".x");
+if(igb) igb.addEventListener("click", function(){ shareTo("Instagram", null); });
+if(th) th.addEventListener("click", function(e){ e.preventDefault(); shareTo("Threads", th.href); });
+if(xb) xb.addEventListener("click", function(e){ e.preventDefault(); shareTo("X", xb.href); });
+if(cpb) cpb.addEventListener("click", async function(){ try{ await navigator.clipboard.writeText(pg); say("Link kopiert."); }catch(e){ say(pg); } });
 })();</script>
 </body>
 </html>
