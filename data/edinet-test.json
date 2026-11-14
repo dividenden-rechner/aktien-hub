@@ -1,6 +1,22 @@
 {
  "status_antworten": [
   {
+   "tag": "2026-11-14",
+   "metadata": {
+    "title": "提出された書類を把握するためのAPI",
+    "parameter": {
+     "date": "2026-11-14",
+     "type": "2"
+    },
+    "resultset": {
+     "count": 0
+    },
+    "processDateTime": "2026-11-15 00:00",
+    "status": "200",
+    "message": "OK"
+   }
+  },
+  {
    "tag": "2026-11-13",
    "metadata": {
     "title": "提出された書類を把握するためのAPI",
@@ -11,7 +27,7 @@
     "resultset": {
      "count": 2118
     },
-    "processDateTime": "2026-11-14 00:08",
+    "processDateTime": "2026-11-15 00:00",
     "status": "200",
     "message": "OK"
    }
@@ -27,59 +43,48 @@
     "resultset": {
      "count": 1081
     },
-    "processDateTime": "2026-11-14 00:08",
-    "status": "200",
-    "message": "OK"
-   }
-  },
-  {
-   "tag": "2026-11-11",
-   "metadata": {
-    "title": "提出された書類を把握するためのAPI",
-    "parameter": {
-     "date": "2026-11-11",
-     "type": "2"
-    },
-    "resultset": {
-     "count": 635
-    },
-    "processDateTime": "2026-11-14 00:08",
+    "processDateTime": "2026-11-15 00:00",
     "status": "200",
     "message": "OK"
    }
   }
  ],
- "stand": "2026-11-13 22:57 UTC",
+ "stand": "2026-11-14 19:13 UTC",
  "firmen": [
   {
    "firma": "Toyota",
    "secCode": "72030",
-   "jahresbericht": null,
-   "quartalsbericht": null
+   "jahresbericht": "S100Y8NY",
+   "quartalsbericht": null,
+   "eps_jahr": 295.25
   },
   {
    "firma": "Sony",
    "secCode": "67580",
-   "jahresbericht": null,
-   "quartalsbericht": null
+   "jahresbericht": "S100YE2C",
+   "quartalsbericht": null,
+   "eps_jahr": -54.7
   },
   {
    "firma": "MUFG",
    "secCode": "83060",
-   "jahresbericht": null,
-   "quartalsbericht": null
+   "jahresbericht": "S100YJQO",
+   "quartalsbericht": null,
+   "eps_jahr": 213.16
   },
   {
    "firma": "SMFG",
    "secCode": "83160",
-   "jahresbericht": null,
-   "quartalsbericht": null
+   "jahresbericht": "S100YERK",
+   "quartalsbericht": null,
+   "eps_jahr": 411.97
   },
   {
    "firma": "Honda",
    "secCode": "72670",
-   "jahresbericht": null,
-   "quartalsbericht": null
+   "jahresbericht": "S100YDD9",
+   "quartalsbericht": null,
+   "eps_jahr": -106.06
   }
  ]
 }
