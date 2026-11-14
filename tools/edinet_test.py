@@ -72,10 +72,15 @@ for sc, name in FIRMEN.items():
         if quartal:
             qx = xbrl_text(quartal["docID"])
             qe = eps(qx)
-            eintrag["eps_ytd"] = qe.get("CurrentYTDDuration")
-            eintrag["eps_ytd_vorjahr"] = qe.get("Prior1YTDDuration")
+            # Halbjahresbericht: Kontextnamen je nach Taxonomie YTD oder SemiAnnual
+            cur = next((k for k in ("CurrentYTDDuration", "CurrentSemiAnnualDuration") if k in qe), None)
+            pri = next((k for k in ("Prior1YTDDuration", "Prior1SemiAnnualDuration") if k in qe), None)
+            eintrag["eps_ytd"] = qe.get(cur) if cur else None
+            eintrag["eps_ytd_vorjahr"] = qe.get(pri) if pri else None
             ko = kontexte(qx)
-            eintrag["stichtag"] = ko.get("CurrentYTDDuration", (None, None))[1]
+            eintrag["stichtag"] = ko.get(cur or "CurrentYTDDuration", (None, None))[1]
+            if eintrag["eps_ytd"] is None:
+                eintrag["kontexte_eps_h1"] = sorted(set(re.findall(r'contextRef="([^"]+)"', " ".join(re.findall(r"<[\w\-]+:BasicEarningsLossPerShare\w*\s[^>]*>", qx)))))[:12]
         if eintrag.get("eps_jahr") is not None and eintrag.get("eps_ytd") is not None and eintrag.get("eps_ytd_vorjahr") is not None:
             eintrag["eps_ttm"] = round(eintrag["eps_jahr"] + eintrag["eps_ytd"] - eintrag["eps_ytd_vorjahr"], 2)
     except Exception as e:
