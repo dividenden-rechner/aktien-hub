@@ -302,6 +302,8 @@ def main():
                                "kurs_eur": k_eur, "veraenderung": veraend, "kurs_usd": r2(kusd),
                                "boerse": {"DETR": "Xetra", "DGAT": "Tradegate", "DFRA": "Frankfurt"}.get(boerse, boerse)})
         o["sektor"] = "BDC"
+        if b.get("aktien") and not o.get("boersenwert_usd"):
+            o["boersenwert_usd"] = round(kusd * b["aktien"]); o["boersenwert_eur"] = round(k_eur * b["aktien"])
         o["bdc"] = {
             "quartal": q["periode_ende"], "nav": nav, "kurs_nav": r2(kusd / nav, 2),
             "nii": nii, "nii_rendite": r2(nii * 4 / kusd * 100, 2) if nii else None,
@@ -313,6 +315,12 @@ def main():
             "portfolio_mio": q.get("portfolio_mio") or None, "quelle": q.get("quelle"),
             "verlauf": [[x["periode_ende"], x.get("nav_je_aktie"), x.get("nii_bereinigt_je_aktie") or x.get("nii_je_aktie"), x.get("dividende_regulaer")] for x in qs]}
         # Fuer den Screener: allgemeine Felder mit BDC-Werten fuellen
+        if not o["bdc"]["rendite"] and kusd:
+            # Letzte bekannte Quartalsdividende x 4, wenn das aktuelle Quartal noch nicht erfasst ist
+            letzte = [x[3] for x in o["bdc"]["verlauf"] if x[3]]
+            if letzte:
+                o["bdc"]["rendite"] = r2(letzte[-1] * 4 / kusd * 100, 2)
+                o["bdc"]["rendite_geschaetzt"] = True
         o["rendite"] = o.get("rendite") or o["bdc"]["rendite"]
         o["kbv"] = o["bdc"]["kurs_nav"]
         o["nav_je_aktie"] = nav

@@ -46,6 +46,19 @@ def lade(p, d):
         return d
 
 
+def aktien_sec(cik):
+    """Ausstehende Aktien aus den SEC-Basisdaten (dei:EntityCommonStockSharesOutstanding), neuester Stand."""
+    try:
+        f = json.loads(ia.http(f"https://data.sec.gov/api/xbrl/companyfacts/CIK{cik:010d}.json", ua=km.UA_HDR, timeout=30))
+        u = f["facts"]["dei"]["EntityCommonStockSharesOutstanding"]["units"]["shares"]
+        best = max(u, key=lambda x: x.get("end", ""))
+        time.sleep(0.2)
+        return int(best["val"]), best.get("end")
+    except Exception:
+        time.sleep(0.2)
+        return None, None
+
+
 def main():
     seed = [r["sec_ticker"].upper() for r in csv.DictReader(open("data/bdc-seed.csv"))]
     tick = json.loads(ia.http("https://www.sec.gov/files/company_tickers.json", ua=km.UA_HDR))
@@ -64,6 +77,9 @@ def main():
         except Exception:
             fehlt.append(t); time.sleep(0.3); continue
         daten["firmen"].setdefault(t, {"name": v["title"], "quartale": []})
+        a_, a_end = aktien_sec(int(v["cik_str"]))   # Anzahl Aktien (SEC dei) fuer den Boersenwert
+        if a_:
+            daten["firmen"][t]["aktien"], daten["firmen"][t]["aktien_stand"] = a_, a_end
         for j, form in enumerate(rec.get("form", [])[:120]):
             if form != "8-K" or "2.02" not in (rec.get("items", [""] * 999)[j] or ""):
                 continue

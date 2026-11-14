@@ -44,6 +44,8 @@
 .bdc-leg i{display:inline-block;width:12px;height:12px;border-radius:3px;margin-right:6px;vertical-align:-1px}
 .bdc-note{font-size:12.5px;color:#5d6b78;margin:6px 0 0}
 .bdc-status{font-size:14px;color:#5d6b78}
+.bdc-ig{margin:10px 0 0;font-size:15px}
+.bdc-ig a{font-weight:600}
 @media (max-width:420px){.bdc-tab{font-size:13px}.bdc-tab th,.bdc-tab td{padding:7px 3px}.fn img,.fn .lgph{width:20px;height:20px}}
 </style>
 </head>
@@ -56,6 +58,7 @@
 <h1>BDCs bewerten: NII, NAV und Dividendendeckung</h1>
 <p class="meta">Übersicht aller BDCs mit Kursdaten aus dem Screener. <a href="../fortgeschrittene/bdcs-bewerten/">Zum Ratgeber, wie du BDCs bewertest</a></p>
 
+<p class="bdc-ig"><a href="https://www.instagram.com/p/DR6XoMPglVf/" target="_blank" rel="noopener nofollow">Passend dazu auf Instagram: Beitrag ansehen</a></p>
 <p class="bdc-status" id="bdc-status">Lade Daten …</p>
 <table class="bdc-tab" id="bdc-tab" aria-describedby="bdc-status">
 <colgroup><col class="c1"><col class="c2"><col class="c3"><col class="c4"><col class="c5"></colgroup>
@@ -69,7 +72,7 @@
 <tbody id="bdc-body"></tbody>
 </table>
 <p class="bdc-leg"><span><i style="background:#2f9e5b"></i>grün: Kurs unter NAV, günstig</span><span><i style="background:#c0392b"></i>rot: Kurs über NAV, teuer</span></p>
-<p class="bdc-note">Kurs/NAV ist der Börsenkurs geteilt durch den Nettovermögenswert je Aktie. Börsenwert in Milliarden US-Dollar. Die Dividendenrendite beruht auf der laufenden Dividende. Keine Anlageberatung.</p>
+<p class="bdc-note">* Rendite aus der letzten bekannten Quartalsdividende mal 4, weil das aktuelle Quartal noch nicht erfasst ist. Kurs/NAV ist der Börsenkurs geteilt durch den Nettovermögenswert je Aktie. Börsenwert in Milliarden US-Dollar. Die Dividendenrendite beruht auf der laufenden Dividende. Keine Anlageberatung.</p>
 </article></main>
 <footer class="site-footer"><div class="wrap">
 <div class="cols">
@@ -97,7 +100,7 @@
       var logo = window.HubLogos ? window.HubLogos.img("lg", r.t, "", r.name) : "";
       return '<tr><td class="fi"><a href="../aktien-hub/?s=' + encodeURIComponent(r.t) + '" style="text-decoration:none;color:inherit"><span class="fn">' + logo +
         '<span><b>' + esc(r.t) + '</b><small>' + esc(r.name) + '</small></span></span></a></td>' +
-        '<td>' + num(r.kurs, 2) + '</td><td>' + num(r.mc, 1) + '</td><td>' + (r.dy == null ? "–" : num(r.dy, 1) + " %") + '</td>' +
+        '<td>' + num(r.kurs, 2) + '</td><td>' + num(r.mc, 1) + '</td><td>' + (r.dy == null ? "–" : num(r.dy, 1) + " %" + (r.geschaetzt ? "*" : "")) + '</td>' +
         '<td class="pn' + cls + '">' + (r.pnav == null ? "–" : num(r.pnav, 2)) + '</td></tr>';
     }).join("");
     document.querySelectorAll("#bdc-tab thead button").forEach(function (b) {
@@ -115,7 +118,7 @@
   fetch("../data/kennzahlen.json", { cache: "no-cache" }).then(function (r) { return r.json(); }).then(function (d) {
     rows = Object.keys(d.werte).filter(function (t) { var v = d.werte[t]; return v.sektor === "BDC" || v.bdc; }).map(function (t) {
       var v = d.werte[t], nav = v.bdc && v.bdc.kurs_nav != null ? v.bdc.kurs_nav : v.kbv;
-      return { t: t, name: v.name || t, kurs: v.kurs_usd, mc: typeof v.boersenwert_usd === "number" ? v.boersenwert_usd / 1e9 : null, dy: typeof v.rendite === "number" ? v.rendite : null, pnav: typeof nav === "number" ? nav : null };
+      return { t: t, name: v.name || t, kurs: v.kurs_usd, mc: typeof v.boersenwert_usd === "number" ? v.boersenwert_usd / 1e9 : null, dy: typeof v.rendite === "number" ? v.rendite : null, geschaetzt: !!(v.bdc && v.bdc.rendite_geschaetzt), pnav: typeof nav === "number" ? nav : null };
     });
     status.textContent = rows.length + " BDCs · Stand " + (d.stand || "");
     draw();
