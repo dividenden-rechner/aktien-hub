@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-14T01:26:50.319069+00:00",
+ "updated": "2026-11-14T10:25:39.172459+00:00",
  "items": [
   {
    "sym": "MSFT",
@@ -4421,52 +4421,16 @@
    "date": "2026-09-15T13:00:00+00:00",
    "text": "",
    "quelle": "RSS"
-  },
-  {
-   "sym": "VOLV-B.ST",
-   "name": "Volvo",
-   "title": "Industry leaders scale full value chain for hydrogen mobility across Europe",
-   "link": "https://www.volvogroup.com/en/news-and-media/news/2026/sep/industry-leaders-scale-full-value-chain-for-hydrogen-mobility-across-europe.html",
-   "date": "2026-09-15T09:12:00+00:00",
-   "text": "Today at IAA Transportation, Volvo Group, Daimler Truck, Toyota Motor Corporation, Bosch, Air Liquide, TotalEnergies, TEAL Mobility, and MB Energy unveiled their plans to accelerate the rollout of hydrogen-powered vehicles across Europe. For the first time in Europe, the German ecosystem has put in place all the conditions for a scalable deployment of Hydrogen trucks by 2030, driven by the German authorities and European industrial leaders along the value chain. Building on the German deployment model as a practical baseline, scaling these solutions across the continent calls for aligned support from national governments and the European Commission to ensure long-term energy resilience and competitiveness.",
-   "quelle": "RSS"
-  },
-  {
-   "sym": "2454.TW",
-   "name": "MediaTek",
-   "title": "MediaTek Dimensity 9600 Pro Sets New Standard for Flagship Smartphone Chips",
-   "link": "https://www.mediatek.com/press-room/mediatek-dimensity-9600-pro-sets-new-standard-for-flagship-smartphone-chips",
-   "date": "2026-09-15T07:30:00+00:00",
-   "text": "HSINCHU, Taiwan – Sept. 15, 2026 – MediaTek, the world’s number one provider of mobile chipsets, today announced the launch of the Dimensity 9600 Pro. This flagship SoC achieved a significant technological milestone, adopting the new 2nm process node; as the first company to announce reaching this threshold, MediaTek is showcasing its leadership in innovation with the Dimensity 9600 Pro. With the next generation of silicon now available in the Dimensity lineup, the Dimensity 9600 Pro will enable many transformative capabilities, combining flagship performance and power efficiency with advanced agentic AI experiences.",
-   "quelle": "RSS"
-  },
-  {
-   "sym": "CS.PA",
-   "name": "AXA",
-   "title": "\"With our new plan, “Growing Forward”, we will build the AXA of the next decade, driven by a clear ambition: to become the insurer best positioned to meet our customers’ growing protection needs and address the emergence of new risks\"",
-   "link": "https://www.axa.com/en/news/growing-forward-news",
-   "date": "2026-09-15T06:00:00+00:00",
-   "text": "",
-   "quelle": "RSS"
-  },
-  {
-   "sym": "CS.PA",
-   "name": "AXA",
-   "title": "AXA announces its 2027-2029 strategy and financial targets",
-   "link": "https://www.axa.com/en/press/press-releases/axa-announces-its-2027-2029-strategy-and-financial-targets",
-   "date": "2026-09-15T05:00:00+00:00",
-   "text": "AXA aims to leverage its industry‑leading margins, strong balance sheet and well‑diversified multi‑line model to drive market share gains and sustained earnings growth\nThe new plan will focus on accelerating customer-driven organic growth at attractive margins, and scaling AI to deepen our competitive moat\nAXA increases its ambition with four main financial targets for the 2027-2029 plan period:\n- Underlying earnings per share1 CAGR2 2026E-2029E between 7% and 9%\n- Underlying return on equity1 between 15% and 17% over 2027E to 2029E\n- Mid-teens CAGR in book value per share1,3, inclusive of cumulative dividends, over 2026 to 2029E\n- Circa. Euro 25 billion cumulative organic cash upstream over 2027E to 2029E\nAttractive capital management policy4 with a total payout ratio5 target of 75%\nFor 2026, AXA expects underlying earnings per share growth to be at the top end of the target range of 6-8%6 and underlying ROE at the top end of the target range of 14% to 16%6",
-   "quelle": "RSS"
   }
  ],
  "errors": [
   {
    "sym": "PEP",
-   "fehler": "HTTP Error 402: Payment Required"
+   "fehler": "HTTP Error 429: Too Many Requests"
   },
   {
    "sym": "PG",
-   "fehler": "HTTP Error 402: Payment Required"
+   "fehler": "HTTP Error 429: Too Many Requests"
   },
   {
    "sym": "LLY",
@@ -4478,15 +4442,15 @@
   },
   {
    "sym": "PFE",
-   "fehler": "HTTP Error 402: Payment Required"
+   "fehler": "HTTP Error 429: Too Many Requests"
   },
   {
    "sym": "MRK",
-   "fehler": "HTTP Error 402: Payment Required"
+   "fehler": "HTTP Error 429: Too Many Requests"
   },
   {
    "sym": "O",
-   "fehler": "HTTP Error 402: Payment Required"
+   "fehler": "HTTP Error 429: Too Many Requests"
   },
   {
    "sym": "V",
@@ -4494,23 +4458,23 @@
   },
   {
    "sym": "JPM",
-   "fehler": "HTTP Error 402: Payment Required"
+   "fehler": "HTTP Error 429: Too Many Requests"
   },
   {
    "sym": "CVX",
-   "fehler": "HTTP Error 402: Payment Required"
+   "fehler": "HTTP Error 429: Too Many Requests"
   },
   {
    "sym": "MCD",
-   "fehler": "HTTP Error 402: Payment Required"
+   "fehler": "HTTP Error 429: Too Many Requests"
   },
   {
    "sym": "HD",
-   "fehler": "HTTP Error 402: Payment Required"
+   "fehler": "HTTP Error 429: Too Many Requests"
   },
   {
    "sym": "TXN",
-   "fehler": "HTTP Error 402: Payment Required"
+   "fehler": "HTTP Error 429: Too Many Requests"
   },
   {
    "sym": "AVGO",
@@ -4518,7 +4482,7 @@
   },
   {
    "sym": "CSCO",
-   "fehler": "HTTP Error 402: Payment Required"
+   "fehler": "HTTP Error 429: Too Many Requests"
   },
   {
    "sym": "MDLZ",
@@ -4530,163 +4494,163 @@
   },
   {
    "sym": "GOOGL",
-   "fehler": "HTTP Error 402: Payment Required"
+   "fehler": "HTTP Error 429: Too Many Requests"
   },
   {
    "sym": "SIE.DE",
-   "fehler": "HTTP Error 402: Payment Required"
+   "fehler": "HTTP Error 429: Too Many Requests"
   },
   {
    "sym": "ALV.DE",
-   "fehler": "HTTP Error 402: Payment Required"
+   "fehler": "HTTP Error 429: Too Many Requests"
   },
   {
    "sym": "MBG.DE",
-   "fehler": "HTTP Error 402: Payment Required"
+   "fehler": "HTTP Error 429: Too Many Requests"
   },
   {
    "sym": "BMW.DE",
-   "fehler": "HTTP Error 402: Payment Required"
+   "fehler": "HTTP Error 429: Too Many Requests"
   },
   {
    "sym": "BAS.DE",
-   "fehler": "HTTP Error 402: Payment Required"
+   "fehler": "HTTP Error 429: Too Many Requests"
   },
   {
    "sym": "MUV2.DE",
-   "fehler": "HTTP Error 402: Payment Required"
+   "fehler": "HTTP Error 429: Too Many Requests"
   },
   {
    "sym": "DHL.DE",
-   "fehler": "HTTP Error 402: Payment Required"
+   "fehler": "HTTP Error 429: Too Many Requests"
   },
   {
    "sym": "ADS.DE",
-   "fehler": "HTTP Error 402: Payment Required"
+   "fehler": "HTTP Error 429: Too Many Requests"
   },
   {
    "sym": "RWE.DE",
-   "fehler": "HTTP Error 402: Payment Required"
+   "fehler": "HTTP Error 429: Too Many Requests"
   },
   {
    "sym": "EOAN.DE",
-   "fehler": "HTTP Error 402: Payment Required"
+   "fehler": "HTTP Error 429: Too Many Requests"
   },
   {
    "sym": "DBK.DE",
-   "fehler": "HTTP Error 402: Payment Required"
+   "fehler": "HTTP Error 429: Too Many Requests"
   },
   {
    "sym": "ASML.AS",
-   "fehler": "HTTP Error 402: Payment Required"
+   "fehler": "HTTP Error 429: Too Many Requests"
   },
   {
    "sym": "MC.PA",
-   "fehler": "HTTP Error 402: Payment Required"
+   "fehler": "HTTP Error 429: Too Many Requests"
   },
   {
    "sym": "OR.PA",
-   "fehler": "HTTP Error 402: Payment Required"
+   "fehler": "HTTP Error 429: Too Many Requests"
   },
   {
    "sym": "TTE.PA",
-   "fehler": "HTTP Error 402: Payment Required"
+   "fehler": "HTTP Error 429: Too Many Requests"
   },
   {
    "sym": "SAN.PA",
-   "fehler": "HTTP Error 402: Payment Required"
+   "fehler": "HTTP Error 429: Too Many Requests"
   },
   {
    "sym": "SU.PA",
-   "fehler": "HTTP Error 402: Payment Required"
+   "fehler": "HTTP Error 429: Too Many Requests"
   },
   {
    "sym": "NESN.SW",
-   "fehler": "HTTP Error 402: Payment Required"
+   "fehler": "HTTP Error 429: Too Many Requests"
   },
   {
    "sym": "NOVN.SW",
-   "fehler": "HTTP Error 402: Payment Required"
+   "fehler": "HTTP Error 429: Too Many Requests"
   },
   {
    "sym": "ROG.SW",
-   "fehler": "HTTP Error 402: Payment Required"
+   "fehler": "HTTP Error 429: Too Many Requests"
   },
   {
    "sym": "UBSG.SW",
-   "fehler": "HTTP Error 402: Payment Required"
+   "fehler": "HTTP Error 429: Too Many Requests"
   },
   {
    "sym": "NOVO-B.CO",
-   "fehler": "HTTP Error 402: Payment Required"
+   "fehler": "HTTP Error 429: Too Many Requests"
   },
   {
    "sym": "ULVR.L",
-   "fehler": "HTTP Error 402: Payment Required"
+   "fehler": "HTTP Error 429: Too Many Requests"
   },
   {
    "sym": "SHEL.L",
-   "fehler": "HTTP Error 402: Payment Required"
+   "fehler": "HTTP Error 429: Too Many Requests"
   },
   {
    "sym": "AZN.L",
-   "fehler": "HTTP Error 402: Payment Required"
+   "fehler": "HTTP Error 429: Too Many Requests"
   },
   {
    "sym": "BP.L",
-   "fehler": "HTTP Error 402: Payment Required"
+   "fehler": "HTTP Error 429: Too Many Requests"
   },
   {
    "sym": "ENEL.MI",
-   "fehler": "HTTP Error 402: Payment Required"
+   "fehler": "HTTP Error 429: Too Many Requests"
   },
   {
    "sym": "ISP.MI",
-   "fehler": "HTTP Error 402: Payment Required"
+   "fehler": "HTTP Error 429: Too Many Requests"
   },
   {
    "sym": "IBE.MC",
-   "fehler": "HTTP Error 402: Payment Required"
+   "fehler": "HTTP Error 429: Too Many Requests"
   },
   {
    "sym": "TSM",
-   "fehler": "HTTP Error 402: Payment Required"
+   "fehler": "HTTP Error 429: Too Many Requests"
   },
   {
    "sym": "9988.HK",
-   "fehler": "HTTP Error 402: Payment Required"
+   "fehler": "HTTP Error 429: Too Many Requests"
   },
   {
    "sym": "0700.HK",
-   "fehler": "HTTP Error 402: Payment Required"
+   "fehler": "HTTP Error 429: Too Many Requests"
   },
   {
    "sym": "7203.T",
-   "fehler": "HTTP Error 402: Payment Required"
+   "fehler": "HTTP Error 429: Too Many Requests"
   },
   {
    "sym": "6758.T",
-   "fehler": "HTTP Error 402: Payment Required"
+   "fehler": "HTTP Error 429: Too Many Requests"
   },
   {
    "sym": "BHP.AX",
-   "fehler": "HTTP Error 402: Payment Required"
+   "fehler": "HTTP Error 429: Too Many Requests"
   },
   {
    "sym": "0027.HK",
-   "fehler": "HTTP Error 402: Payment Required"
+   "fehler": "HTTP Error 429: Too Many Requests"
   },
   {
    "sym": "RELIANCE.NS",
-   "fehler": "HTTP Error 402: Payment Required"
+   "fehler": "HTTP Error 429: Too Many Requests"
   },
   {
    "sym": "TATAMOTORS.NS",
-   "fehler": "HTTP Error 402: Payment Required"
+   "fehler": "HTTP Error 429: Too Many Requests"
   },
   {
    "sym": "HEI.DE",
-   "fehler": "HTTP Error 402: Payment Required"
+   "fehler": "HTTP Error 429: Too Many Requests"
   },
   {
    "sym": "FRE.DE",
@@ -4698,15 +4662,15 @@
   },
   {
    "sym": "HOLN.SW",
-   "fehler": "HTTP Error 402: Payment Required"
+   "fehler": "HTTP Error 429: Too Many Requests"
   },
   {
    "sym": "DGE.L",
-   "fehler": "HTTP Error 402: Payment Required"
+   "fehler": "HTTP Error 429: Too Many Requests"
   },
   {
    "sym": "REL.L",
-   "fehler": "HTTP Error 402: Payment Required"
+   "fehler": "HTTP Error 429: Too Many Requests"
   },
   {
    "sym": "AAL.L",
@@ -4714,7 +4678,7 @@
   },
   {
    "sym": "NOKIA.HE",
-   "fehler": "HTTP Error 402: Payment Required"
+   "fehler": "HTTP Error 429: Too Many Requests"
   },
   {
    "sym": "FRE.DE",
