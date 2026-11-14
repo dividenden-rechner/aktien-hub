@@ -13,11 +13,11 @@
 <meta property="og:title" content="REITs bewerten: FFO, AFFO, NAV und Verschuldung">
 <meta property="og:description" content="Wie du REITs bewertest: FFO und AFFO, Kurs/FFO, Abschlag zum Nettoinventarwert, Verschuldung, Zinssensitivität und Dividendendeckung. Mit Rechenbeispiel und Checkliste.">
 <meta property="og:url" content="https://dividenden-rechner.github.io/aktien-hub/fortgeschrittene/reits-bewerten/">
-<meta property="og:image" content="https://dividenden-rechner.github.io/aktien-hub/assets/og-default.png">
+<meta property="og:image" content="https://dividenden-rechner.github.io/aktien-hub/assets/share/bdc-bewerten-aufmacher-1200.jpg">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="675">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:image" content="https://dividenden-rechner.github.io/aktien-hub/assets/og-default.png">
+<meta name="twitter:image" content="https://dividenden-rechner.github.io/aktien-hub/assets/share/bdc-bewerten-aufmacher-1200.jpg">
 <meta name="theme-color" content="#ffffff">
 <link rel="stylesheet" href="../../assets/site.css">
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Start", "item": "https://dividenden-rechner.github.io/aktien-hub/"}, {"@type": "ListItem", "position": 2, "name": "Fortgeschrittene", "item": "https://dividenden-rechner.github.io/aktien-hub/fortgeschrittene/"}, {"@type": "ListItem", "position": 3, "name": "REITs bewerten: FFO, AFFO, NAV und Verschuldung", "item": "https://dividenden-rechner.github.io/aktien-hub/fortgeschrittene/reits-bewerten/"}]}</script>
@@ -214,10 +214,13 @@ async function draw2(rs, stand){
   var x=c.getContext("2d"), F='InterS,Inter,"Segoe UI",Roboto,Helvetica,Arial,sans-serif';
   x.fillStyle="#ffffff"; x.fillRect(0,0,W,H);
   var tpl=await loadImg("../../assets/story-vorlagen/daten-fakten.png"); if(tpl) x.drawImage(tpl,0,0,W,H);
+  var ph=await loadImg("../../assets/share/bdc-aufmacher-unsplash.jpg");
+  var PY=194, PH=260;
+  if(ph){ var sc=Math.max(W/ph.width, PH/ph.height), sw=W/sc, sh=PH/sc, sx=(ph.width-sw)/2, sy=(ph.height-sh)/2; x.drawImage(ph,sx,sy,sw,sh,0,PY,W,PH); }
   x.textBaseline="top"; x.fillStyle="#111";
-  x.font="700 52px "+F; x.fillText("REITs im Vergleich",60,228);
-  x.font="400 24px "+F; x.fillStyle="#262626"; x.fillText("Kurs/FFO, FFO-Rendite und Marktkapitalisierung · Stand "+stand,60,298);
-  var top=372, cols={t:60,kurs:470,mc:610,pffo:790,ffor:1020};
+  x.font="700 52px "+F; x.fillText("REITs im Vergleich",60,PY+PH+30);
+  x.font="400 24px "+F; x.fillStyle="#262626"; x.fillText("Kurs/FFO, FFO-Rendite und Marktkapitalisierung · Stand "+stand,60,PY+PH+98);
+  var top=PY+PH+160, cols={t:60,kurs:470,mc:610,pffo:790,ffor:1020};
   var avail=1800-top-70, n=rs.length, rh=Math.min(44,Math.floor(avail/(n+1))), fs=Math.min(24,Math.round(rh*0.6));
   x.fillStyle="#111"; x.font="700 "+Math.round(fs*0.9)+"px "+F; x.textAlign="left"; x.fillText("REIT",cols.t,top);
   x.textAlign="right"; x.fillText("Kurs $",cols.kurs,top); x.fillText("Mrd. $",cols.mc,top); x.fillText("Kurs/FFO",cols.pffo,top); x.fillText("FFO-Rend.",cols.ffor,top);
@@ -229,6 +232,7 @@ async function draw2(rs, stand){
   });
   x.strokeStyle="#111"; x.beginPath(); x.moveTo(60,y-8); x.lineTo(1020,y-8); x.stroke();
   x.textAlign="left"; x.font="400 22px "+F; x.fillStyle="#444"; x.fillText("Keine Anlageberatung · Daten: SEC und Tradegate", 60, 1800);
+  x.font="400 18px "+F; x.fillStyle="#666"; x.fillText("Foto: Sean Pollock / Unsplash", 60, 1834);
   return new Promise(function(res){ c.toBlob(res,"image/png"); });
 }
 function say(t){ if(msg) msg.textContent=t; }
