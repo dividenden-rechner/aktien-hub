@@ -1,0 +1,27 @@
+name: Finnhub-Test (Kurse, Profile, Kennzahlen)
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Finnhub-Test laufen lassen
+        env:
+          FINNHUB_API_KEY: ${{ secrets.FINNHUB_API_KEY }}
+        run: python tools/finnhub_test.py
+      - name: Ergebnis committen
+        run: |
+          git config user.name "aktien-hub-bot"
+          git config user.email "bot@dividenden-rechner.de"
+          git add data/finnhub-test.json
+          git commit -m "Finnhub-Test: Ergebnis" || exit 0
+          for i in 1 2 3 4 5; do git pull -q --rebase && git push -q && break; sleep 5; done
