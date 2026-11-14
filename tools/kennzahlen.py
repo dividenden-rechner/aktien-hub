@@ -333,7 +333,7 @@ def modellwerte(out):
     de = lambda s: re.sub(r"(\d)\.(\d)", r"\1,\2", s)
     ohne_fcf = ("Financial Services", "Real Estate", "BDC")
     for k in out.values():
-        for z in ("modellwert_usd", "modellwert_min_usd", "modellwert_max_usd", "modellwert_potenzial", "fair_quote", "modellwert_anzahl", "modellwert_modelle"):
+        for z in ("modellwert_usd", "modellwert_min_usd", "modellwert_max_usd", "modellwert_potenzial", "fair_quote", "modellwert_anzahl", "modellwert_modelle", "erw_rendite"):
             k.pop(z, None)
         kurs = k.get("kurs_usd")
         zahl = lambda v: isinstance(v, (int, float)) and not isinstance(v, bool)
@@ -341,6 +341,9 @@ def modellwerte(out):
             continue
         sek = k.get("sektor") or ""
         bdc = bool(k.get("bdc")) or sek == "BDC"
+        # Erwartete Jahresrendite bei gleichbleibendem KGV: Dividendenrendite + Gewinnwachstum (5 Jahre), ohne Bewertungsaenderung
+        if zahl(k.get("rendite")) and zahl(k.get("gewinn_wachstum_5j")) and not bdc and sek not in ("Real Estate", "Financial Services"):
+            k["erw_rendite"] = round(k["rendite"] + k["gewinn_wachstum_5j"], 1)
         po = k.get("ffo_ausschuettung") if sek == "Real Estate" and zahl(k.get("ffo_ausschuettung")) else k.get("ausschuettung")
         m = []
         eps = kurs / k["kgv"] if zahl(k.get("kgv")) and k["kgv"] > 0 else None       # Gewinn je Aktie in USD

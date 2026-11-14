@@ -80,8 +80,8 @@ svg text{fill:var(--mut);font-size:11px;font-family:inherit}
 .stk h3{font-size:15px;margin:22px 0 8px;color:var(--mut);font-weight:600}
 .stk table{width:100%;border-collapse:collapse;font-size:14px;border-top:0;table-layout:fixed}
 .fvg{margin:4px 0 8px;max-width:380px}
-.fvbar{position:relative;height:10px;border-radius:5px;background:linear-gradient(90deg,#2f9e5b 0%,#d4a017 40%,#e67e22 70%,#c0392b 100%)}
-.fvc{position:absolute;left:50%;top:-5px;width:2px;height:20px;margin-left:-1px;background:var(--fg)}
+.fvbar{position:relative;height:10px;border-radius:5px;background:linear-gradient(90deg,#c0392b 0 42.9%,#d4a017 42.9% 57.1%,#2f9e5b 57.1% 100%)}
+.fvc{position:absolute;left:28.6%;top:-5px;width:2px;height:20px;margin-left:-1px;background:var(--fg);opacity:.5}
 .fvm{position:absolute;top:-4px;width:6px;height:18px;margin-left:-3px;border-radius:3px;background:var(--fg);box-shadow:0 0 0 2px var(--bg,#fff)}
 .fvl{display:flex;justify-content:space-between;font-size:11px;color:var(--mut);margin-top:4px}
 .fvq{font-size:13px;color:var(--mut);margin-bottom:6px}.fvq b{color:var(--fg);font-size:15px}
@@ -583,14 +583,14 @@ function steckbrief(sym,p,r,m,inc,cf,KZ){
   const ec=n>=2?cagr(e0,e1,n):null;
   const P=(v,d=1)=>v==null?"–":num(v*100,d)+" %",X=(v)=>v==null?"–":num(v,1)+"×";
   const rows=[];
-  /* Fair Value aus den Modellwerten (data/kennzahlen.json): Kurs gegen Mitte der Modelle */
-  const fvK=K.kurs_usd,fvW=K.modellwert_usd;let bwc="g0",bwl="",bwt="Kein Fair Value für diese Firma, weil der Modellwert fehlt",gauge="";
-  if(fvK>0&&fvW>0){const q=fvK/fvW,pos=Math.max(0,Math.min(1,q/1.5*1)) ;const lab=q<.9?"Günstig":q<=1.1?"Fair":q<=1.3?"Teuer":"Sehr teuer";
-    bwc=q<.9?"g":q<=1.1?"y":q<=1.3?"o":"r";bwl=lab;
-    bwt=`${lab}: Kurs ${num(fvK,2)} USD, Fair Value ${num(fvW,2)} USD (Mitte aus ${K.modellwert_anzahl||"mehreren"} Modellen)`;
-    const x=Math.max(0,Math.min(100,(q-.5)*100));
-    gauge=`<div class="fvg" role="img" aria-label="${lab}: Kurs ${num(fvK,2)} USD, Fair Value ${num(fvW,2)} USD"><div class="fvq"><b>${Math.round(q*100)} %</b> vom Fair Value</div><div class="fvbar"><span class="fvc"></span><span class="fvm" style="left:${x.toFixed(1)}%"></span></div><div class="fvl"><span>günstig</span><span>fair (100 %)</span><span>teuer</span></div></div>`}
-  rows.push(["Fair Value",bwc,bwl,bwt,"bew",gauge]);
+  /* Erwartete Jahresrendite bei gleichbleibendem KGV (data/kennzahlen.json): Dividendenrendite + Gewinnwachstum 5 Jahre */
+  const er=K.erw_rendite;let bwc="g0",bwl="",bwt="Keine erwartete Rendite berechenbar, weil Dividende oder Gewinnwachstum fehlen",gauge="";
+  if(typeof er==="number"){const txt=(er>0?"+":"")+num(er,1)+" %";
+    const c=er>=10?"g":er>=5?"y":"r";const lab=er>=10?"Hohes erwartetes Wachstum":er>=5?"Mittleres erwartetes Wachstum":"Wenig Renditewachstum, eher teuer";
+    bwc=c;bwl=txt;bwt=`${lab}: ${txt} Jahresrendite, wenn das KGV gleich bleibt (Dividendenrendite plus Gewinnwachstum der letzten 5 Jahre)`;
+    const pos=(Math.max(-10,Math.min(25,er))+10)/35*100;
+    gauge=`<div class="fvg" role="img" aria-label="${bwt}"><div class="fvq"><b>${txt}</b> erwartet pro Jahr bei gleichem KGV</div><div class="fvbar"><span class="fvc"></span><span class="fvm" style="left:${pos.toFixed(1)}%"></span></div><div class="fvl"><span>rot unter 5 %</span><span>gelb 5 bis 10 %</span><span>grün ab 10 %</span></div></div>`}
+  rows.push(["Erwartete Rendite (1 Jahr)",bwc,bwl,bwt,"bew",gauge]);
   let dc,dg,dv,fcfFehlt=false;
   if(!(dyl>0)){dg="";dv="Keine Dividende";dc="–"}
   else{const cov=fy!=null?fy/dyl:null;dc=[ "Rendite "+P(dyl),po!=null?"Ausschüttung "+P(po,0):"Ausschüttung: noch nicht erfasst",fy!=null?"FCF-Rendite "+P(fy):"FCF-Rendite: noch nicht erfasst"].filter(Boolean).join(" · ");
