@@ -12,7 +12,6 @@ quelle_name: "Handelsblatt (11. und 13.11.2026), Bloomberg (12.11.2026), Financi
 ---
 <!-- PRÜFEN: Zahlen aus Handelsblatt-Artikeln vom 11.11. und 13.11.2026 (Screenshots von Divi), nicht alle selbst am Prospekt geprüft: 64,4 Mrd. $ Erlös, 801,4 Mio. neue + 23,6 Mio. alte Aktien, 26 Mrd. $ Privatplatzierung (Nvidia rund 10 Mrd.), Gesamtvolumen mit Mehrzuteilung ~100 Mrd. $, Q3-Umsatz 17 Mrd. $ (zwölfmal so viel wie im Vorjahr, +47 % zum Vorquartal nach +144 %), Umsatzrate 81 Mrd. $ (31.10.), operativer Verlust Q3 567 Mio. $ nach erstem Gewinn in Q2, Verpflichtungen ~900 Mrd. $, 11.900 Kunden mit >100.000 $, bis zu 20 % für Privatanleger, 5 % in Wohltätigkeitsfonds. -->
 <!-- PRÜFEN: Zeichnungsfristen (Trade Republic 18.11., 16 Uhr; Scalable 18.11., 12 Uhr, ab 110 €) aus Börse Online vom 13.11.; vor Versand in den Apps gegenprüfen. Preisfestsetzung 18.11., Handelsstart 19.11. laut Handelsblatt/CNBC. -->
-<!-- PRÜFEN: Ob Smartbroker+ die Zeichnung anbietet, ist nicht bekannt; der Link steht deshalb nur für den Kauf nach dem Börsenstart. -->
 
 !!! kurz "Kurz gesagt"
     **Der Börsengang:** Anthropic will bis zu 64,4 Mrd. Dollar einsammeln, die Bücher sollen rund sechsfach überzeichnet sein. Am Mittwoch steht der Preis fest, am Donnerstag beginnt der Handel an der Nasdaq.
@@ -78,7 +77,11 @@ In Deutschland bieten bisher Trade Republic und Scalable Capital die Zeichnung a
 Wer nicht zeichnet oder leer ausgeht, kann die Aktie ab Donnerstag über die Börse kaufen, allerdings zum dann gültigen Kurs. Bei großen Börsengängen liegt der erste Kurs oft deutlich über dem Ausgabepreis und schwankt in den ersten Tagen stark.
 
 !!! werbung "Werbung · Empfehlungslinks"
-    Noch ohne Depot? Über diese Links bekommst du einen Bonus, ich erhalte eine Prämie, für dich ändert sich nichts: [Trade Republic](https://refnocode.trade.re/hksktnqx) (Willkommensbonus für Neukunden) und [Scalable Capital](https://de.scalable.capital/einladung/bshmzm) (25 € Startbonus und die Chance auf einen Extra-Bonus fürs Altersvorsorgedepot). Wer nach dem Börsenstart über die Börse kaufen will, kann das auch bei [Smartbroker+](https://www.smartbrokerplus.de/de-de/freunde-werben/?pid=User_invite&c=refer_a_friend&cr_id=d8a4caa37a21be3d1aa58362f8acee8ca6f4f45a158ae2132cb9659e8ca821a5) tun (Freunde-werben-Link).
+    Noch ohne Depot? Über diese Links bekommst du einen Bonus, ich erhalte eine Prämie, für dich ändert sich nichts: [Trade Republic](https://refnocode.trade.re/hksktnqx) (Willkommensbonus für Neukunden) und [Scalable Capital](https://de.scalable.capital/einladung/bshmzm) (25 € Startbonus und die Chance auf einen Extra-Bonus fürs Altersvorsorgedepot).
+
+## Kann ich die Anthropic-Aktie schon kaufen?
+
+Börsennotiert ist die Aktie noch nicht, die ISIN steht aber fest: US03703U1079 (WKN A42SXH). Zeichnen kannst du nur über die Banken und Broker, die Anthropic für das Angebot ausgewählt hat, eine Zuteilung ist nicht garantiert. Bei [Smartbroker+](https://www.smartbrokerplus.de/de-de/freunde-werben/?pid=User_invite&c=refer_a_friend&cr_id=d8a4caa37a21be3d1aa58362f8acee8ca6f4f45a158ae2132cb9659e8ca821a5) kannst du deine Order schon vor dem Handelsstart ins Orderbuch geben (Werbung, Empfehlungslink). Indirekt sind Anleger über Konzerne wie Amazon und Alphabet beteiligt, die Anteile an Anthropic halten und in vielen Welt- und Technologie-ETFs enthalten sind. Das ist eine Einordnung und keine Empfehlung. (Stand: 13.11.2026)
 
 ## Einordnung
 
