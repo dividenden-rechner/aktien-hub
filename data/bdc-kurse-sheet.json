@@ -1,0 +1,171 @@
+{
+ "stand": "14.11.2026 10:36 (Berlin)",
+ "quelle": "Eigene BDC-Liste (Google Sheets)",
+ "anzahl": 41,
+ "kurse": {
+  "ARCC": {
+   "kurs": 19.17,
+   "marktkap_mrd": 13.844
+  },
+  "OBDC": {
+   "kurs": 10.97,
+   "marktkap_mrd": 5.376
+  },
+  "BXSL": {
+   "kurs": 23.78,
+   "marktkap_mrd": 5.548
+  },
+  "MAIN": {
+   "kurs": 56.4,
+   "marktkap_mrd": 5.293
+  },
+  "FSK": {
+   "kurs": 11.72,
+   "marktkap_mrd": 3.188
+  },
+  "GBDC": {
+   "kurs": 12.54,
+   "marktkap_mrd": 3.256
+  },
+  "HTGC": {
+   "kurs": 15.87,
+   "marktkap_mrd": 3.008
+  },
+  "TSLX": {
+   "kurs": 17.64,
+   "marktkap_mrd": 1.688
+  },
+  "MSDL": {
+   "kurs": 13.84,
+   "marktkap_mrd": 1.153
+  },
+  "PSEC": {
+   "kurs": 1.46,
+   "marktkap_mrd": 0.81
+  },
+  "OCSL": {
+   "kurs": 12.16,
+   "marktkap_mrd": 1.071
+  },
+  "SFW": {
+   "kurs": 20.88,
+   "marktkap_mrd": 1.559
+  },
+  "GSBD": {
+   "kurs": 8.25,
+   "marktkap_mrd": 0.916
+  },
+  "MFIC": {
+   "kurs": 10.18,
+   "marktkap_mrd": 0.839
+  },
+  "NMFC": {
+   "kurs": 6.7,
+   "marktkap_mrd": 0.633
+  },
+  "BBDC": {
+   "kurs": 8.59,
+   "marktkap_mrd": 0.899
+  },
+  "BCSF": {
+   "kurs": 11.07,
+   "marktkap_mrd": 0.718
+  },
+  "CGBD": {
+   "kurs": 11.08,
+   "marktkap_mrd": 0.754
+  },
+  "SLRC": {
+   "kurs": 11.61,
+   "marktkap_mrd": 0.623
+  },
+  "FDUS": {
+   "kurs": 19.41,
+   "marktkap_mrd": 0.772
+  },
+  "NCDL": {
+   "kurs": 11.79,
+   "marktkap_mrd": 0.579
+  },
+  "MSIF": {
+   "kurs": 12.44,
+   "marktkap_mrd": 0.561
+  },
+  "GAIN": {
+   "kurs": 14.88,
+   "marktkap_mrd": 0.593
+  },
+  "CCAP": {
+   "kurs": 10.13,
+   "marktkap_mrd": 0.373
+  },
+  "CION": {
+   "kurs": 6.09,
+   "marktkap_mrd": 0.3
+  },
+  "TCPC": {
+   "kurs": 4.11,
+   "marktkap_mrd": 0.345
+  },
+  "GLAD": {
+   "kurs": 19.41,
+   "marktkap_mrd": 0.439
+  },
+  "PNNT": {
+   "kurs": 3.14,
+   "marktkap_mrd": 0.205
+  },
+  "PSBD": {
+   "kurs": 9.8,
+   "marktkap_mrd": 0.295
+  },
+  "RWAY": {
+   "kurs": 6.7,
+   "marktkap_mrd": 0.276
+  },
+  "SAR": {
+   "kurs": 11.47,
+   "marktkap_mrd": 0.178
+  },
+  "SCM": {
+   "kurs": 6.75,
+   "marktkap_mrd": 0.19
+  },
+  "HRZN": {
+   "kurs": 3.72,
+   "marktkap_mrd": 0.242
+  },
+  "LIEN": {
+   "kurs": 9.08,
+   "marktkap_mrd": 0.207
+  },
+  "TPVG": {
+   "kurs": 3.99,
+   "marktkap_mrd": 0.163
+  },
+  "WHF": {
+   "kurs": 8.26,
+   "marktkap_mrd": 0.177
+  },
+  "OXSQ": {
+   "kurs": 0.76,
+   "marktkap_mrd": 0.092
+  },
+  "GECC": {
+   "kurs": 4.91,
+   "marktkap_mrd": 0.067
+  },
+  "OFS": {
+   "kurs": 3.69,
+   "marktkap_mrd": 0.049
+  },
+  "ICMB": {
+   "kurs": 1.04,
+   "marktkap_mrd": 0.015
+  },
+  "RAND": {
+   "kurs": 9.6,
+   "marktkap_mrd": 0.029
+  }
+ }
+}
