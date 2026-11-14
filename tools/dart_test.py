@@ -41,7 +41,7 @@ def konto_eps(eintrag_liste, feld):
 
 STATUS = []
 def bericht(corp_code, jahr, code):
-    raw = get("fnlttSinglAcnt.json", corp_code=corp_code, bsns_year=str(jahr), reprt_code=code, fs_div="CFS")
+    raw = get("fnlttSinglAcntAll.json", corp_code=corp_code, bsns_year=str(jahr), reprt_code=code, fs_div="CFS")
     j = json.loads(raw)
     STATUS.append({"jahr": jahr, "code": code, "status": j.get("status"), "message": j.get("message")})
     return j.get("list", []) or []
