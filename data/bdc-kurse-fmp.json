@@ -1,38 +1,12 @@
 {
- "stand": "2026-11-14 08:42 UTC",
- "kurse": {
-  "ARCC": {
-   "kurs": 19.17,
-   "mktcap": 13844477632,
-   "letzte_dividende": 1.92,
-   "boerse": "NASDAQ"
-  },
-  "OBDC": {
-   "kurs": 10.97,
-   "mktcap": 5375629100,
-   "letzte_dividende": 1.38,
-   "boerse": "NYSE"
-  },
-  "BXSL": {
-   "kurs": 23.78,
-   "mktcap": 5547507051,
-   "letzte_dividende": 3.08,
-   "boerse": "NYSE"
-  },
-  "MAIN": {
-   "kurs": 56.4,
-   "mktcap": 5292948240,
-   "letzte_dividende": 4.34,
-   "boerse": "NYSE"
-  },
-  "FSK": {
-   "kurs": 11.72,
-   "mktcap": 3205803959,
-   "letzte_dividende": 2.04,
-   "boerse": "NYSE"
-  }
- },
+ "stand": "2026-11-14 08:43 UTC",
+ "kurse": {},
  "fehler": {
+  "ARCC": "HTTP Error 429: Too Many Requests",
+  "OBDC": "HTTP Error 429: Too Many Requests",
+  "BXSL": "HTTP Error 429: Too Many Requests",
+  "MAIN": "HTTP Error 429: Too Many Requests",
+  "FSK": "HTTP Error 429: Too Many Requests",
   "GBDC": "HTTP Error 429: Too Many Requests",
   "HTGC": "HTTP Error 429: Too Many Requests",
   "TSLX": "HTTP Error 429: Too Many Requests",
