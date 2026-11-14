@@ -37,17 +37,13 @@ Trotz des Einbruchs liegt die Aktie noch gut 150 % über dem Stand von vor fünf
 
 - **Kurs (Tokio, 13.11.2026):** 5.944 Yen
 - **Börsenwert:** 9,9 Billionen Yen
-- **KGV auf Prognose 2026 (372,88 Yen je Aktie):** 15,9
-- **KGV ohne Russland (grobe Schätzung, rund 280 Yen je Aktie):** 21,2
+- **KGV auf Prognose 2026:** 15,9
+- **KGV ohne Russland (grobe Schätzung):** 21,2
 - **Dividende je Aktie 2026 (Prognose):** 272 Yen
 - **Dividendenrendite:** 4,6 %
 - **Ausschüttungsquote 2026 (Prognose):** 73 %, Konzernziel rund 75 %
-- **Umsatz 2026 (Prognose):** 3.903 Mrd. Yen
-- **Bereinigter operativer Gewinn 2026 (Prognose):** 1.079 Mrd. Yen (+21,9 %)
-- **Gewinn 2026 (Prognose, nach Canada-Anpassung):** 662 Mrd. Yen
-- **Freier Cashflow 2026 (Prognose):** 596 Mrd. Yen (2025: 273 Mrd. Yen)
-- **Nettoverschuldung (30.9.2026):** rund 618 Mrd. Yen
-- **Eigenkapitalquote (30.9.2026):** knapp 49 %
+- **Umsatzwachstum 2026 (Prognose):** +12,6 %
+- **Gewinnwachstum 2026 (bereinigter operativer Gewinn, Prognose):** +21,9 %
 
 Die Dividende kostet bei rund 1,67 Milliarden Aktien etwa 450 Milliarden Yen im Jahr. Die Prognosewerte stammen vom 29. Oktober und damit von vor dem Dekret.
 
