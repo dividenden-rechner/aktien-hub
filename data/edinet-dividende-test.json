@@ -1,0 +1,190 @@
+{
+ "stand": "2026-11-14 21:42 UTC",
+ "docID": "S100Y8NY",
+ "datum": "2026-06-10",
+ "elemente": {
+  "jpcrp_cor:DateOfResolutionDividendsOfSurplus": [
+   {
+    "kontext": "FilingDateInstant_Row1Member",
+    "wert": "2025-11-05"
+   },
+   {
+    "kontext": "FilingDateInstant_Row2Member",
+    "wert": "2026-05-08"
+   }
+  ],
+  "jpcrp_cor:DividendPaidPerShareSummaryOfBusinessResults": [
+   {
+    "kontext": "Prior4YearDuration_NonConsolidatedMember",
+    "wert": "148"
+   },
+   {
+    "kontext": "Prior3YearDuration_NonConsolidatedMember",
+    "wert": "60"
+   },
+   {
+    "kontext": "Prior2YearDuration_NonConsolidatedMember",
+    "wert": "75"
+   },
+   {
+    "kontext": "Prior1YearDuration_NonConsolidatedMember",
+    "wert": "90"
+   },
+   {
+    "kontext": "CurrentYearDuration_NonConsolidatedMember",
+    "wert": "95"
+   }
+  ],
+  "jpcrp_cor:DividendPerShareDividendsOfSurplus": [
+   {
+    "kontext": "FilingDateInstant_Row1Member",
+    "wert": "45.00"
+   },
+   {
+    "kontext": "FilingDateInstant_Row2Member",
+    "wert": "50.00"
+   }
+  ],
+  "jpcrp_cor:DividendPolicyTextBlock": [
+   {
+    "kontext": "FilingDateInstant",
+    "wert": "&lt;p style=\"page-break-before:always; line-height:0.75pt; width:100%; font-size"
+   }
+  ],
+  "jpcrp_cor:InterimDividendPaidPerShareSummaryOfBusinessResults": [
+   {
+    "kontext": "Prior4YearDuration_NonConsolidatedMember",
+    "wert": "120"
+   },
+   {
+    "kontext": "Prior3YearDuration_NonConsolidatedMember",
+    "wert": "25"
+   },
+   {
+    "kontext": "Prior2YearDuration_NonConsolidatedMember",
+    "wert": "30"
+   },
+   {
+    "kontext": "Prior1YearDuration_NonConsolidatedMember",
+    "wert": "40"
+   },
+   {
+    "kontext": "CurrentYearDuration_NonConsolidatedMember",
+    "wert": "45"
+   }
+  ],
+  "jpcrp_cor:ResolutionDividendsOfSurplus": [
+   {
+    "kontext": "FilingDateInstant_Row1Member",
+    "wert": "取締役会決議"
+   },
+   {
+    "kontext": "FilingDateInstant_Row2Member",
+    "wert": "取締役会決議"
+   }
+  ],
+  "jpcrp_cor:TotalAmountOfDividendsDividendsOfSurplus": [
+   {
+    "kontext": "FilingDateInstant_Row1Member",
+    "wert": "586527000000"
+   },
+   {
+    "kontext": "FilingDateInstant_Row2Member",
+    "wert": "651697000000"
+   }
+  ],
+  "jpigp_cor:DividendsPaidToNonControllingInterestsFinCFIFRS": [
+   {
+    "kontext": "Prior1YearDuration",
+    "wert": "-127232000000"
+   },
+   {
+    "kontext": "CurrentYearDuration",
+    "wert": "-125416000000"
+   }
+  ],
+  "jpigp_cor:DividendsPaidToOwnersOfParentFinCFIFRS": [
+   {
+    "kontext": "Prior1YearDuration",
+    "wert": "-1132329000000"
+   },
+   {
+    "kontext": "CurrentYearDuration",
+    "wert": "-1238974000000"
+   }
+  ],
+  "jpigp_cor:DividendsReceivedOpeCFIFRS": [
+   {
+    "kontext": "Prior1YearDuration",
+    "wert": "623295000000"
+   },
+   {
+    "kontext": "CurrentYearDuration",
+    "wert": "430774000000"
+   }
+  ],
+  "jpigp_cor:DividendsSSIFRS": [
+   {
+    "kontext": "Prior1YearDuration_RetainedEarningsIFRSMember",
+    "wert": "-1132329000000"
+   },
+   {
+    "kontext": "Prior1YearDuration_EquityAttributableToOwnersOfParentIFRSMember",
+    "wert": "-1132329000000"
+   },
+   {
+    "kontext": "Prior1YearDuration_NonControllingInterestsIFRSMember",
+    "wert": "-127232000000"
+   },
+   {
+    "kontext": "Prior1YearDuration",
+    "wert": "-1259560000000"
+   },
+   {
+    "kontext": "CurrentYearDuration_RetainedEarningsIFRSMember",
+    "wert": "-1238974000000"
+   },
+   {
+    "kontext": "CurrentYearDuration_EquityAttributableToOwnersOfParentIFRSMember",
+    "wert": "-1238974000000"
+   }
+  ],
+  "jppfs_cor:DividendsFromSurplus": [
+   {
+    "kontext": "Prior1YearDuration_NonConsolidatedMember_RetainedEarningsBroughtForwardMember",
+    "wert": "-1132329000000"
+   },
+   {
+    "kontext": "Prior1YearDuration_NonConsolidatedMember_RetainedEarningsMember",
+    "wert": "-1132329000000"
+   },
+   {
+    "kontext": "Prior1YearDuration_NonConsolidatedMember_ShareholdersEquityMember",
+    "wert": "-1132329000000"
+   },
+   {
+    "kontext": "Prior1YearDuration_NonConsolidatedMember",
+    "wert": "-1132329000000"
+   },
+   {
+    "kontext": "CurrentYearDuration_NonConsolidatedMember_RetainedEarningsBroughtForwardMember",
+    "wert": "-1238974000000"
+   },
+   {
+    "kontext": "CurrentYearDuration_NonConsolidatedMember_RetainedEarningsMember",
+    "wert": "-1238974000000"
+   }
+  ],
+  "jppfs_cor:DividendsIncomeNOI": [
+   {
+    "kontext": "Prior1YearDuration_NonConsolidatedMember",
+    "wert": "1769423000000"
+   },
+   {
+    "kontext": "CurrentYearDuration_NonConsolidatedMember",
+    "wert": "1338273000000"
+   }
+  ]
+ },
+ "anzahl_elemente": 13
+}
