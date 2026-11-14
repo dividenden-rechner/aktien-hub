@@ -1,4 +1,4 @@
-"""Kurse, Boersenwerte und letzte Dividenden der BDCs aus dem FMP-Profil (Gratis-Schluessel).
+"""Nur der Kurs der BDCs aus dem FMP-Profil (Gratis-Schluessel). Aktienzahl, Dividenden und NAV kommen aus den SEC-Daten.
 Nur fuer BDCs, die an keiner deutschen Boerse gehandelt werden. Ausgabe: data/bdc-kurse-fmp.json."""
 import datetime as dt, json, os, time, urllib.parse, urllib.request
 
@@ -12,7 +12,7 @@ for sym in FIRMEN:
             j = json.loads(r.read())
         p = j[0] if isinstance(j, list) and j else (j if isinstance(j, dict) else {})
         if p.get("price"):
-            KURSE[sym] = {"kurs": p.get("price"), "mktcap": p.get("marketCap"), "letzte_dividende": p.get("lastDividend"), "boerse": p.get("exchange")}
+            KURSE[sym] = {"kurs": p.get("price"), "boerse": p.get("exchange")}
         else:
             FEHLER[sym] = "kein Kurs"
     except Exception as e:

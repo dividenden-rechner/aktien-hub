@@ -300,7 +300,7 @@ def main():
             boerse = kurse["k"][z["isin"]][3] if len(kurse["k"][z["isin"]]) > 3 else "DETR"
             kusd = k_eur * rate["USD"]
         else:
-            # Nur US-Listung: Kurs aus dem FMP-Abruf (USD), Boersenwert aus Aktienzahl oder FMP
+            # Nur US-Listung: Kurs aus dem FMP-Abruf (USD); Aktienzahl, Dividenden und NAV kommen aus den SEC-Daten
             fk = FMPK.get(t)
             if not fk or not fk.get("kurs") or "USD" not in rate:
                 continue
@@ -317,8 +317,6 @@ def main():
         o["sektor"] = "BDC"
         if b.get("aktien") and not o.get("boersenwert_usd"):
             o["boersenwert_usd"] = round(kusd * b["aktien"]); o["boersenwert_eur"] = round(k_eur * b["aktien"])
-        elif fk and fk.get("mktcap") and not o.get("boersenwert_usd"):
-            o["boersenwert_usd"] = round(fk["mktcap"])
         o["bdc"] = {
             "quartal": q["periode_ende"], "nav": nav, "kurs_nav": r2(kusd / nav, 2),
             "nii": nii, "nii_rendite": r2(nii * 4 / kusd * 100, 2) if nii else None,
@@ -335,10 +333,6 @@ def main():
             letzte = [x[3] for x in o["bdc"]["verlauf"] if x[3]]
             if letzte:
                 o["bdc"]["rendite"] = r2(letzte[-1] * 4 / kusd * 100, 2)
-                o["bdc"]["rendite_geschaetzt"] = True
-            elif fk and fk.get("letzte_dividende"):
-                # Ohne Quartalsdaten: letzte Dividende des Profils x 4 (bei Monatszahlern zu niedrig, daher geschaetzt)
-                o["bdc"]["rendite"] = r2(fk["letzte_dividende"] * 4 / kusd * 100, 2)
                 o["bdc"]["rendite_geschaetzt"] = True
         o["rendite"] = o.get("rendite") or o["bdc"]["rendite"]
         o["kbv"] = o["bdc"]["kurs_nav"]
