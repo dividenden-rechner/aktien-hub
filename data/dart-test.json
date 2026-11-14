@@ -85,53 +85,134 @@
    "message": "정상"
   }
  ],
- "konten_debug": [],
- "stand": "2026-11-14 19:09 UTC",
+ "konten_debug": [
+  {
+   "id": "ifrs-full_BasicEarningsLossPerShare",
+   "name": "기본주당이익",
+   "sj": "IS"
+  },
+  {
+   "id": "ifrs-full_BasicEarningsLossPerShare",
+   "name": "기본주당이익",
+   "sj": "IS"
+  },
+  {
+   "id": "ifrs-full_BasicEarningsLossPerShare",
+   "name": "기본주당이익",
+   "sj": "IS"
+  },
+  {
+   "id": "ifrs-full_BasicEarningsLossPerShare",
+   "name": "기본주당순이익(손실)",
+   "sj": "CIS"
+  },
+  {
+   "id": "ifrs-full_BasicEarningsLossPerShare",
+   "name": "기본주당분기순이익",
+   "sj": "CIS"
+  },
+  {
+   "id": "ifrs-full_BasicEarningsLossPerShare",
+   "name": "기본주당분기순이익",
+   "sj": "CIS"
+  },
+  {
+   "id": "ifrs-full_BasicEarningsLossPerShare",
+   "name": "기본주당이익",
+   "sj": "CIS"
+  },
+  {
+   "id": "ifrs-full_BasicEarningsLossPerShare",
+   "name": "기본주당이익",
+   "sj": "CIS"
+  },
+  {
+   "id": "ifrs-full_BasicEarningsLossPerShare",
+   "name": "기본주당이익",
+   "sj": "CIS"
+  },
+  {
+   "id": "dart_BasicEarningsLossPerSharePreferredStock",
+   "name": "1우선주기본주당이익(손실)",
+   "sj": "IS"
+  },
+  {
+   "id": "dart_BasicEarningsLossPerSharePreferredStock",
+   "name": "1우선주기본주당이익(손실)",
+   "sj": "IS"
+  },
+  {
+   "id": "dart_BasicEarningsLossPerSharePreferredStock",
+   "name": "1우선주기본주당이익(손실)",
+   "sj": "IS"
+  },
+  {
+   "id": "ifrs-full_BasicEarningsLossPerShare",
+   "name": "기본주당순이익",
+   "sj": "CIS"
+  },
+  {
+   "id": "ifrs-full_BasicEarningsLossPerShare",
+   "name": "기본주당순이익",
+   "sj": "CIS"
+  },
+  {
+   "id": "ifrs-full_BasicEarningsLossPerShare",
+   "name": "기본주당순이익",
+   "sj": "CIS"
+  }
+ ],
+ "stand": "2026-11-14 19:15 UTC",
  "firmen": [
   {
    "firma": "Samsung Electronics",
    "boerse": "005930",
    "dart_code": "00126380",
-   "eps_jahr": null,
+   "eps_jahr": 6605.0,
    "stichtag_jahr": 2025,
-   "eps_ytd": null,
-   "eps_ytd_vorjahr": null
+   "eps_ytd": 3724.0,
+   "eps_ytd_vorjahr": 3834.0,
+   "eps_ttm": 6495.0
   },
   {
    "firma": "SK Hynix",
    "boerse": "000660",
    "dart_code": "00164779",
-   "eps_jahr": null,
+   "eps_jahr": 62044.0,
    "stichtag_jahr": 2025,
-   "eps_ytd": null,
-   "eps_ytd_vorjahr": null
+   "eps_ytd": 40135.0,
+   "eps_ytd_vorjahr": 17118.0,
+   "eps_ttm": 85061.0
   },
   {
    "firma": "KB Financial",
    "boerse": "105560",
    "dart_code": "00688996",
-   "eps_jahr": null,
+   "eps_jahr": 15410.0,
    "stichtag_jahr": 2025,
-   "eps_ytd": null,
-   "eps_ytd_vorjahr": null
+   "eps_ytd": 13531.0,
+   "eps_ytd_vorjahr": 11165.0,
+   "eps_ttm": 17776.0
   },
   {
    "firma": "Hyundai Motor",
    "boerse": "005380",
    "dart_code": "00164742",
-   "eps_jahr": null,
+   "eps_jahr": 37851.0,
    "stichtag_jahr": 2025,
-   "eps_ytd": null,
-   "eps_ytd_vorjahr": null
+   "eps_ytd": 32330.0,
+   "eps_ytd_vorjahr": 38696.0,
+   "eps_ttm": 31485.0
   },
   {
    "firma": "POSCO Holdings",
    "boerse": "005490",
    "dart_code": "00155319",
-   "eps_jahr": null,
+   "eps_jahr": 8697.0,
    "stichtag_jahr": 2026,
-   "eps_ytd": null,
-   "eps_ytd_vorjahr": null
+   "eps_ytd": 18427.0,
+   "eps_ytd_vorjahr": 11677.0,
+   "eps_ttm": 15447.0
   }
  ]
 }
