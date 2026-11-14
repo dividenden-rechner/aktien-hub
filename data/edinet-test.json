@@ -49,7 +49,7 @@
    }
   }
  ],
- "stand": "2026-11-14 19:29 UTC",
+ "stand": "2026-11-14 19:33 UTC",
  "firmen": [
   {
    "firma": "Toyota",
@@ -57,14 +57,10 @@
    "jahresbericht": "S100Y8NY",
    "quartalsbericht": "S100ZCG0",
    "eps_jahr": 295.25,
-   "eps_ytd": null,
-   "eps_ytd_vorjahr": null,
-   "stichtag": null,
-   "kontexte_eps_h1": [
-    "InterimDuration",
-    "Prior1InterimDuration",
-    "Prior1YearDuration"
-   ]
+   "eps_ytd": 185.97,
+   "eps_ytd_vorjahr": 136.07,
+   "stichtag": "2026-09-30",
+   "eps_ttm": 345.15
   },
   {
    "firma": "Sony",
@@ -72,14 +68,10 @@
    "jahresbericht": "S100YE2C",
    "quartalsbericht": "S100ZDFO",
    "eps_jahr": -54.7,
-   "eps_ytd": null,
-   "eps_ytd_vorjahr": null,
-   "stichtag": null,
-   "kontexte_eps_h1": [
-    "InterimDuration",
-    "Prior1InterimDuration",
-    "Prior1YearDuration"
-   ]
+   "eps_ytd": 134.89,
+   "eps_ytd_vorjahr": 99.83,
+   "stichtag": "2026-09-30",
+   "eps_ttm": -19.64
   },
   {
    "firma": "MUFG",
@@ -101,14 +93,10 @@
    "jahresbericht": "S100YDD9",
    "quartalsbericht": "S100ZE3B",
    "eps_jahr": -106.06,
-   "eps_ytd": null,
-   "eps_ytd_vorjahr": null,
-   "stichtag": null,
-   "kontexte_eps_h1": [
-    "InterimDuration",
-    "Prior1InterimDuration",
-    "Prior1YearDuration"
-   ]
+   "eps_ytd": 132.75,
+   "eps_ytd_vorjahr": 76.3,
+   "stichtag": "2026-09-30",
+   "eps_ttm": -49.61
   }
  ]
 }
