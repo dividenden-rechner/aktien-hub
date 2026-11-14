@@ -11,7 +11,8 @@
    "hub": "CFR.SW",
    "av": "CFR.SWX",
    "name": "Richemont",
-   "geprueft": false
+   "geprueft": false,
+   "fehl": "Invalid API call. Please retry or visit the documentation (https://www.alphavantage.co/documentation/) for TIME_SERIES_W"
   },
   {
    "hub": "MC.PA",
