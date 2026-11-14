@@ -1,15 +1,15 @@
 # ISIN-Zuordnung (Xetra-Instrumentenliste)
 
 Spalten der Liste: 153
-Instrumente nach Filter: 2349
-Zugeordnet: **557** von 544. Unsicher (zum Prüfen): 34. Ohne Treffer: 22.
+Instrumente nach Filter: 2347
+Zugeordnet: **525** von 544. Unsicher (zum Prüfen): 34. Ohne Treffer: 41.
 
 Korrekturen als {"TICKER": "ISIN"} in data/kurse/isin-fest.json eintragen.
 
 ## Über den Namen zugeordnet (bitte prüfen)
 
 - ACN (Accenture plc) → ACCENTURE A   DL-,0000225 IE00B4BNMY34 (1.03)
-- ALLE (Allegion plc) → ALLEGION PLC         DL 1 IE00BFRT3W74 (1.03)
+- ALLE (Allegion plc) → ALLEGION PLC         DL 1 IE00BFRT3W74 (1.00)
 - AON (Aon plc) → AON PLC A         DL -,01 IE00BLP1HW54 (1.03)
 - ASML (ASML HOLDING NV) → ASML HOLDING    EO -,09 NL0010273215 (1.03)
 - BCS (BARCLAYS PLC) → BARCLAYS PLC      LS 0,25 GB0031348658 (1.03)
@@ -45,25 +45,44 @@ Korrekturen als {"TICKER": "ISIN"} in data/kurse/isin-fest.json eintragen.
 
 ## Ohne Treffer
 
-- ACGL (ARCH CAPITAL GROUP LTD.): bester Kandidat READCREST CAPITAL AG O.N. DE000A0LE3J1 (0.72)
+- ACGL (ARCH CAPITAL GROUP LTD.): bester Kandidat READCREST CAPITAL AG O.N. DE000A0LE3J1 (0.69)
+- ADC (AGREE REALTY CORPORATION): bester Kandidat GRENKE AG NA O.N. DE000A161N30 (0.60)
+- AEE (AMEREN CORP): bester Kandidat ARGENX SE EO -,10 NL0010832176 (0.70)
 - AMCR (AMCOR PLC): bester Kandidat FAMICORD AG DE000A0BL849 (0.80)
 - APTV (APTIV PLC): bester Kandidat AVIVA PLC          LS-,33 GB00BPQY8M80 (0.63)
+- ATO (ATMOS ENERGY CORP): bester Kandidat SFC ENERGY AG DE0007568578 (0.76)
 - BABA (Alibaba Group Holding Ltd): bester Kandidat CAIXABANK S.A. EO ES0140609019 (0.66)
+- BALL (BALL CORPORATION): bester Kandidat BASLER AG O.N. DE0005102008 (0.63)
 - CCL (Carnival Corp Ltd.): bester Kandidat AVIVA PLC          LS-,33 GB00BPQY8M80 (0.65)
 - CRH (CRH PUBLIC LTD CO): bester Kandidat PUBLICIS GRP INH. EO 0,40 FR0000130577 (0.58)
+- DOC (Healthpeak Properties, Inc.): bester Kandidat CPI PROPERTY GRP   EO-,01 LU0251710041 (0.55)
 - EG (EVEREST GROUP, LTD.): bester Kandidat LEVERAGE SHARES SL ETP XS3299469752 (0.67)
 - EPD (ENTERPRISE PRODUCTS PARTNERS L.P.): bester Kandidat NXP SEMICONDUCTORS EO-,20 NL0009538784 (0.51)
+- ESS (ESSEX PROPERTY TRUST, INC.): bester Kandidat CPI PROPERTY GRP   EO-,01 LU0251710041 (0.69)
 - ET (Energy Transfer LP): bester Kandidat ENERGEAN PLC      LS -,01 GB00BG12Y042 (0.64)
+- EXR (EXTRA SPACE STORAGE INC.): bester Kandidat XTR P SILVER EUR 60 DE000A1E0HS6 (0.51)
 - FLEX (FLEX LTD.): bester Kandidat VOLEX PLC         LS -,25 GB0009390070 (0.70)
+- FRT (FEDERAL REALTY INVESTMENT TRUST): bester Kandidat TOKENTUS INVESTMENT AG DE000A3CN9R8 (0.62)
+- GPC (GENUINE PARTS CO): bester Kandidat WENG FINE ART AG NA O.N. DE0005181606 (0.65)
+- HSIC (HENRY SCHEIN, INC.): bester Kandidat HUBER+SUHNER NA    SF-,25 CH0030380734 (0.62)
+- HST (HOST HOTELS & RESORTS, INC.): bester Kandidat STEYR MOTORS AG AT0000A3FW25 (0.55)
 - IVZ (Invesco Ltd.): bester Kandidat IVECO GROUP N.V.  EO 1 NL0015000LU4 (0.86)
 - KVUE (Kenvue Inc.): bester Kandidat ENEL S.P.A.          EO 1 IT0003128367 (0.63)
+- LNT (ALLIANT ENERGY CORPORATION): bester Kandidat ALLIANZ SE NA O.N. DE0008404005 (0.70)
 - LYB (LYONDELLBASELL INDUSTRIES N.V.): bester Kandidat LYONDELLBAS.IND.A EO -,04 NL0009434992 (0.78)
 - NCLH (NORWEGIAN CRUISE LINE HOLDINGS LTD.): bester Kandidat ORANGE INH.          EO 4 FR0000133308 (0.55)
+- NDSN (NORDSON CORPORATION): bester Kandidat NORDEX SE O.N. DE000A0D6554 (0.65)
+- NWS (NEWS CORPORATION): bester Kandidat NESTE OYJ FI0009013296 (0.70)
 - PNR (Pentair plc): bester Kandidat PNE AG  NA O.N. DE000A0JBPG2 (0.65)
+- PNW (PINNACLE WEST CAPITAL CORPORATION): bester Kandidat READCREST CAPITAL AG O.N. DE000A0LE3J1 (0.68)
+- PPG (PPG INDUSTRIES INC): bester Kandidat MS INDUSTRIE AG DE0005855183 (0.80)
 - RCL (ROYAL CARIBBEAN CRUISES LTD): bester Kandidat ROYAL UNIBREW NAM.   DK 2 DK0060634707 (0.53)
+- REG (REGENCY CENTERS CORPORATION): bester Kandidat METLEN EN.+MTLS     EO 1 GB00BTQGS779 (0.58)
 - SLB (SLB LIMITED/NV): bester Kandidat SBO AG AT0000946652 (0.70)
 - STE (STERIS plc): bester Kandidat TENARIS S.A. DL 1 LU2598331598 (0.80)
 - STX (Seagate Technology Holdings plc): bester Kandidat SEAGATE TEC.HLD.DL-,00001 IE00BKVD2N49 (0.67)
 - TKO (TKO GROUP HOLDINGS, INC.): bester Kandidat KION GROUP AG DE000KGX8881 (0.60)
 - TSM (Taiwan Semiconductor Manufacturing Company Limited): bester Kandidat NXP SEMICONDUCTORS EO-,20 NL0009538784 (0.61)
 - TT (TRANE TECHNOLOGIES PLC): bester Kandidat BERTRANDT AG O.N. DE0005232805 (0.60)
+- UDR (UDR, Inc.): bester Kandidat DUERR AG O.N. DE0005565204 (0.53)
+- WRB (BERKLEY W R CORP): bester Kandidat CERES POWER HLDGS  LS-,10 GB00BG5KQW09 (0.58)
