@@ -12,9 +12,9 @@ logo_file: assets/logos/2914.png
 quelle_url: "https://www.marketscreener.com/"
 quelle_name: "Reuters (über MarketScreener), 9. November 2026, und Mitteilung von Japan Tobacco vom 9. November 2026"
 image: assets/magazin/japan-tobacco-russland-beschlagnahmung-foto.jpg
-image_alt: "Zwei Hochhäuser mit Glasfassade im Tokioter Stadtteil Toranomon vor blauem Himmel"
-image_credit: "Foto: Syced auf Wikimedia Commons (CC0)"
-image_source: "https://commons.wikimedia.org/wiki/File%3AToranomon_Hills.jpg"
+image_alt: "Luftaufnahme einer Produktionsanlage mit russischer und japanischer Flagge"
+image_credit: "Foto: Japan Tobacco, bearbeitet"
+image_lizenz: Pressebild
 story_image: assets/magazin/japan-tobacco-russland-beschlagnahmung-foto.jpg
 story_text: "Tabak war in den letzten Monaten ein Liebling der Anleger: stabile Cashflows, hohe Ausschüttungen und zuletzt sogar wieder mehr Umsatz im alten Geschäft mit Zigaretten. Japan Tobacco hatte im Gegensatz zu vielen Konkurrenten Russland nie verlassen.
 Das rächt sich jetzt. Moskau hat alle Gesellschaften des Konzerns unter vorläufige Verwaltung gestellt. Ein Zehntel des Umsatzes und ein Viertel des operativen Gewinns hängen daran, die Aktie fiel in zwei Tagen um ein Drittel.
