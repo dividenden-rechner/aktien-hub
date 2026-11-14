@@ -1,0 +1,27 @@
+name: FMP-BDC-Test
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  probe:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Test laufen lassen
+        env:
+          FMP_API_KEY: ${{ secrets.FMP_API_KEY }}
+        run: python tools/fmp_bdc_test.py
+      - name: Ergebnis committen
+        run: |
+          git config user.name "aktien-hub-bot"
+          git config user.email "bot@dividenden-rechner.de"
+          git add data/fmp-bdc-test.json
+          git commit -m "FMP-BDC-Test" || exit 0
+          for i in 1 2 3 4 5; do git pull -q --rebase && git push -q && break; sleep 5; done
