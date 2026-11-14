@@ -81,7 +81,13 @@ Mit 272 Yen je Aktie ist die Dividende heute gedeckt, und der Freie Cashflow sol
 
 Eine Kürzung ist damit nicht sofort nötig, aber sie ist realistisch, falls der Gewinn dauerhaft fehlt. Die Bilanz trägt den Schlag mit einer Nettoverschuldung von rund 618 Mrd. Yen und einer Eigenkapitalquote von knapp 49 % zunächst. RRP steht für risikoreduzierte Produkte. Gemeint sind Tabakprodukte, bei denen der Tabak erhitzt statt verbrannt wird, etwa das Heizstäbchen-System Ploom. Der Konzern wirbt damit, dass dabei weniger Schadstoffe entstehen als beim Rauchen einer Zigarette, und genau dieses Geschäft will er mit hohen Summen ausbauen.
 
-<!-- BILDLÜCKE: Grafik aus der Bilanz fehlt im Repo. Nach dem Hochladen als assets/magazin/japan-tobacco-bilanz-q3-2026.jpg hier einfügen: ![Bilanz ...](/assets/magazin/japan-tobacco-bilanz-q3-2026.jpg) plus Quellenzeile. -->
+In den ersten neun Monaten 2026 stieg der RRP-Umsatz um 30,6 % auf 119,3 Mrd. Yen. Die folgende Übersicht zeigt das Tabak-Segment im dritten Quartal, mit dem RRP-Absatz und dem RRP-Umsatz.
+
+![Tabak-Segment im dritten Quartal 2026 mit Kernumsatz, bereinigtem operativen Gewinn und RRP-Absatz in Milliarden Yen](/assets/magazin/japan-tobacco-rrp-segment-q3-2026.jpg)
+
+*Quelle: Japan Tobacco, Third Quarter Earnings Report 2026, S. 5*
+
+<!-- BILDLÜCKE: Grafik aus der Bilanz fehlt noch. Nach dem Hochladen als assets/magazin/japan-tobacco-bilanz-q3-2026.jpg hier einfügen: ![Bilanz ...](/assets/magazin/japan-tobacco-bilanz-q3-2026.jpg) plus Quellenzeile. -->
 
 Bis 2028 sind rund 800 Mrd. Yen für RRP vorgesehen. Die Investitionen sind damit hoch, und ein Gewinnausfall würde sie schwerer finanzierbar machen.
 
