@@ -1,60 +1,6 @@
 {
  "termine": [
   {
-   "sym": "DOC",
-   "name": "Healthpeak Properties",
-   "art": "dividende_zahltag",
-   "datum": "2026-10-30",
-   "betrag": "0.10167",
-   "waehrung": "USD",
-   "quelle": "https://www.sec.gov/Archives/edgar/data/765880/000162828026068878/ex99109302026.htm"
-  },
-  {
-   "sym": "ERIE",
-   "name": "Erie Indemnity",
-   "art": "ergebnis",
-   "datum": "2026-10-30",
-   "betrag": "",
-   "waehrung": "",
-   "quelle": "https://www.sec.gov/Archives/edgar/data/922621/000162828026068265/ex-99109302026.htm"
-  },
-  {
-   "sym": "GD",
-   "name": "General Dynamics",
-   "art": "ergebnis",
-   "datum": "2026-10-30",
-   "betrag": "",
-   "waehrung": "",
-   "quelle": "https://www.sec.gov/Archives/edgar/data/40533/000004053326000036/gd-20261004exhibit991.htm"
-  },
-  {
-   "sym": "LYB",
-   "name": "LyondellBasell",
-   "art": "ergebnis",
-   "datum": "2026-10-30",
-   "betrag": "",
-   "waehrung": "",
-   "quelle": "https://www.sec.gov/Archives/edgar/data/1489393/000148939326000067/a2026q3ex991_pressrelease.htm"
-  },
-  {
-   "sym": "REGN",
-   "name": "Regeneron Pharmaceuticals",
-   "art": "ergebnis",
-   "datum": "2026-10-30",
-   "betrag": "",
-   "waehrung": "",
-   "quelle": "https://www.sec.gov/Archives/edgar/data/872589/000087258926000032/exhibit991q32026.htm"
-  },
-  {
-   "sym": "WY",
-   "name": "Weyerhaeuser",
-   "art": "ergebnis",
-   "datum": "2026-10-30",
-   "betrag": "",
-   "waehrung": "",
-   "quelle": "https://www.sec.gov/Archives/edgar/data/106535/000119312526437799/wy-ex99_1.htm"
-  },
-  {
    "sym": "CLX",
    "name": "Clorox",
    "art": "ergebnis",
@@ -1333,6 +1279,15 @@
    "quelle": "https://www.sec.gov/Archives/edgar/data/1116132/000114036126042034/ef20084882_ex99-1.htm"
   },
   {
+   "sym": "CINF",
+   "name": "Cincinnati Financial",
+   "art": "dividende_exdatum",
+   "datum": "2026-12-23",
+   "betrag": "",
+   "waehrung": "USD",
+   "quelle": "https://www.sec.gov/Archives/edgar/data/20286/000002028626000064/exhibit99111-13x26.htm"
+  },
+  {
    "sym": "GPN",
    "name": "Global Payments",
    "art": "dividende_zahltag",
@@ -1448,6 +1403,15 @@
    "betrag": "1.82",
    "waehrung": "USD",
    "quelle": "https://www.sec.gov/Archives/edgar/data/1551152/000155115226000033/abbv-20260930xexhibit991.htm"
+  },
+  {
+   "sym": "CINF",
+   "name": "Cincinnati Financial",
+   "art": "dividende_zahltag",
+   "datum": "2027-01-15",
+   "betrag": "",
+   "waehrung": "USD",
+   "quelle": "https://www.sec.gov/Archives/edgar/data/20286/000002028626000064/exhibit99111-13x26.htm"
   },
   {
    "sym": "FRT",
