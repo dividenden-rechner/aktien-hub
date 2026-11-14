@@ -1,9 +1,24 @@
 {
  "hub": "T",
  "name": "AT&T INC.",
- "stand": "2026-11-13",
+ "stand": "2026-11-14",
  "quelle": "Google News (Wirtschaftsmedien, deutsch und englisch)",
  "meldungen": [
+  {
+   "titel": "AT&T Makes Holiday Shopping Easy with Gifts for Everyone and Every Budget",
+   "quelle": "Unternehmen",
+   "link": "https://about.att.com/story/2026/apple-holiday.html",
+   "datum": "2026-11-13",
+   "sprache": "en",
+   "typ": "pm"
+  },
+  {
+   "titel": "AT&T sues Comcast over 'fiber-powered' internet advertising",
+   "quelle": "Reuters",
+   "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxPbmZOanVUTE1QN3BzNDJkUEhzTV9hRl9TQ0l0b2szSGpXaEQ3YTB0MTNvcFhtRmF2STNPbDVtczBldkctb1Q1WW5MVkxoN2Y4NWk5dGMyOHpDUUliWl80YUlXQ1drdzZoOU9hMFM5eDlZRGY0WTluLS1pcDUyWGdYc0gzNzJzelA4NGhwZk1QUE8xVFVQSWxUQXFrUkVhS2wyWkthd2Z6UmdXX3VFNVU2TS1R?oc=5",
+   "datum": "2026-11-13",
+   "sprache": "en"
+  },
   {
    "titel": "AT&T Breaks Ground on New Global Headquarters",
    "quelle": "Unternehmen",
@@ -29,12 +44,11 @@
    "typ": "pm"
   },
   {
-   "titel": "AT&T Makes Holiday Shopping Easy with Gifts for Everyone and Every Budget",
-   "quelle": "Unternehmen",
-   "link": "https://about.att.com/story/2026/samsung-holiday.html",
-   "datum": "2026-11-06",
-   "sprache": "en",
-   "typ": "pm"
+   "titel": "How Musk Plans to Shake Up the US Wireless Industry",
+   "quelle": "Bloomberg",
+   "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxQemVlS0RTNjMzZ1ZNQVNrbTB0aGFmUmtTZnVZNFgxYWpXNVVBV3gzRk0zMGdNSjNwVVY5eFJKZXRBaHpncU1yZFJXSWlrMlZMaHMweU1EYThRZmtxWl9JS0VwT0FjMlp2NzFLYjZ2TnJtYU5ZRGFsN21YOEtNT2tqQUlrbEhGaFZuSnNNTHlJd0o4eXFSQndKckNGbXdSVkZiUkNmV25UMkROd2NMZG80?oc=5",
+   "datum": "2026-11-05",
+   "sprache": "en"
   }
  ]
 }

@@ -1,7 +1,15 @@
 {
  "hub": "SPGI",
  "name": "S&P Global Inc.",
- "stand": "2026-11-13",
+ "stand": "2026-11-14",
  "quelle": "Google News (Wirtschaftsmedien, deutsch und englisch)",
- "meldungen": []
+ "meldungen": [
+  {
+   "titel": "Fired S&P Global Worker Accuses Company of Caregiver Retaliation",
+   "quelle": "Bloomberg Law News",
+   "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxQVWRMQ3QzS085cndvY04xVXFBVjZtN0RKTHVhUGJjc0pDeUR0b3FGdXh2WHo5dDJwRWZ4b29MdlhPR2xzbENtLUdGZDBsLU8tOVZmTG42bDAyYTVWWkxyZzFnMFp5b0gzWGRVUTE3Zmpxb0lON1ZBN1duN05EZDAtcDlYVTItNVRiSnFKYTJSX0NlbGhBbXlRdjd4c2JmalM2RllzRV9CMTZULWFXNnZGSERPNA?oc=5",
+   "datum": "2026-11-13",
+   "sprache": "en"
+  }
+ ]
 }

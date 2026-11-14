@@ -1,9 +1,25 @@
 {
  "hub": "VZ",
  "name": "Verizon Communications Inc.",
- "stand": "2026-11-13",
+ "stand": "2026-11-14",
  "quelle": "Google News (Wirtschaftsmedien, deutsch und englisch)",
  "meldungen": [
+  {
+   "titel": "Your family tech agreement can be a sticky note on the fridge",
+   "quelle": "Unternehmen",
+   "link": "https://www.verizon.com/about/parenting/family-tech-agreement-rules",
+   "datum": "2026-11-12",
+   "sprache": "en",
+   "typ": "pm"
+  },
+  {
+   "titel": "Verizon Shine makes 98-year-old Buffalo Bills fan’s birthday wish come true",
+   "quelle": "Unternehmen",
+   "link": "https://www.verizon.com/about/news/verizon-shine-bills-fan-birthday-wish",
+   "datum": "2026-11-12",
+   "sprache": "en",
+   "typ": "pm"
+  },
   {
    "titel": "Plan a holiday email marketing campaign in 20 minutes",
    "quelle": "Unternehmen",
@@ -21,20 +37,11 @@
    "typ": "pm"
   },
   {
-   "titel": "4 ways to follow AI security best practices at work",
-   "quelle": "Unternehmen",
-   "link": "https://www.verizon.com/about/news/ai-security-workplace-best-practices",
-   "datum": "2026-11-09",
-   "sprache": "en",
-   "typ": "pm"
-  },
-  {
-   "titel": "Social media safety for kids goes beyond age. Explore 5 levels of readiness.",
-   "quelle": "Unternehmen",
-   "link": "https://www.verizon.com/about/parenting/5-signs-child-ready-social-media-apps",
-   "datum": "2026-11-09",
-   "sprache": "en",
-   "typ": "pm"
+   "titel": "How Musk Plans to Shake Up the US Wireless Industry",
+   "quelle": "Bloomberg",
+   "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxQemVlS0RTNjMzZ1ZNQVNrbTB0aGFmUmtTZnVZNFgxYWpXNVVBV3gzRk0zMGdNSjNwVVY5eFJKZXRBaHpncU1yZFJXSWlrMlZMaHMweU1EYThRZmtxWl9JS0VwT0FjMlp2NzFLYjZ2TnJtYU5ZRGFsN21YOEtNT2tqQUlrbEhGaFZuSnNNTHlJd0o4eXFSQndKckNGbXdSVkZiUkNmV25UMkROd2NMZG80?oc=5",
+   "datum": "2026-11-05",
+   "sprache": "en"
   }
  ]
 }

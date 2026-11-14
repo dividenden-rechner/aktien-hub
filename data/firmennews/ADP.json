@@ -1,7 +1,15 @@
 {
  "hub": "ADP",
  "name": "AUTOMATIC DATA PROCESSING, INC.",
- "stand": "2026-11-13",
+ "stand": "2026-11-14",
  "quelle": "Google News (Wirtschaftsmedien, deutsch und englisch)",
- "meldungen": []
+ "meldungen": [
+  {
+   "titel": "Automatic Data Processing",
+   "quelle": "Forbes",
+   "link": "https://news.google.com/rss/articles/CBMia0FVX3lxTE82VW42S0Z3bXNyZzlZclhqZGM1RGM1aDNkYXYyc2pkMGNuejlLQ1FKMjRld0pQWjc2VzZYd053Y29aSnZ6bmlZNW5PSXVvbFlwOHFQbDJaZmNIc2xnSlo3ZE5sbGdGQjJCNmJF?oc=5",
+   "datum": "2026-11-12",
+   "sprache": "en"
+  }
+ ]
 }

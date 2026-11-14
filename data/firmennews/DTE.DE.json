@@ -1,7 +1,7 @@
 {
  "hub": "DTE.DE",
  "name": "Deutsche Telekom",
- "stand": "2026-11-13",
+ "stand": "2026-11-14",
  "quelle": "Google News (Wirtschaftsmedien, deutsch und englisch)",
  "meldungen": [
   {
@@ -27,13 +27,6 @@
    "typ": "pm"
   },
   {
-   "titel": "Telekom erweitert KI-Fabrik für mehr digitale Souveränität",
-   "quelle": "FAZ",
-   "link": "https://news.google.com/rss/articles/CBMixgFBVV95cUxNZmVTcmhiVl9sZ3lwRmJZSlBtWFB4RVlxb3U1UlJXblduTWwtaTJJRmRvZkJBWWNlQWROY1NGVmZtTGtuR1JYQnR3YVdLTkhYT2luUUExYmxwOGp2MG9ReU42dWtPZE54RXQ4MGdqZ3VuMkxwTExIaFJpVFdnSG1wZHRLbk94bnR0RlNwU0x3cGVMVmUwNzhTVDlxSlpkdE5XSUhRelBjLS1ZQlM3TFQ0OE55LUEzaWY1Ym9NM2sySGtycldMTEE?oc=5",
-   "datum": "2026-11-09",
-   "sprache": "de"
-  },
-  {
    "titel": "Deutsche Telekom Adds Latest Nvidia Chips in German AI Buildout",
    "quelle": "Bloomberg.com",
    "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxQTGlfcXo2b1dOUURzYWNXbjRlU0xkYlU4TGtWblMtZW02a1IwM0xRd2VCOUZkdHVDNUgyckhrVzFmX0l1VzkydjdKaE95dkI2RkxyRXBoQjVVa2s5Z01CNDRESDZNNEFON3F0WEFHM1EyekkwZVg1OUJWMXY0clRHQ2U3Z3pDbENaNDBWUVprcUhtSTdKNW1paW9CcDB5UkRmZjlCYU1kOGxCbWE3am5HajVEZW0?oc=5",
@@ -47,6 +40,13 @@
    "datum": "2026-11-05",
    "sprache": "en",
    "typ": "pm"
+  },
+  {
+   "titel": "Deutsche Telekom Plans €2 Billion 2027 Buyback After Profit Beat",
+   "quelle": "Bloomberg.com",
+   "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxQeHUtUTl5SFpGQ05MVEJUVXFTOTVXeTVocUFEaGVFaVNiaExuQVJoMDRNWnh6aWFnc0NLUUk1ejRvc3ZwUEdzTVZ3eTQ2Z2JYRzNtSTNfczZjOUtUQm9WX0hWWkVnd0JpdXJTV09TQWQyM3BOTTRLXzBIb1czRXUxeTZkbE40UURyRWI0c213Ujd1ajFKSDJNRnhneXRjbWp2ei1rSktpZW5VSGF3b0JnZVNoWmY?oc=5",
+   "datum": "2026-11-05",
+   "sprache": "en"
   },
   {
    "titel": "T-Systems and Sparxity strengthen Europe’s sovereign AI infrastructure with energy-efficient computing technology",

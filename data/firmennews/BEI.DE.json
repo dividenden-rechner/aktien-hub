@@ -1,7 +1,15 @@
 {
  "hub": "BEI.DE",
  "name": "Beiersdorf",
- "stand": "2026-11-13",
+ "stand": "2026-11-14",
  "quelle": "Google News (Wirtschaftsmedien, deutsch und englisch)",
- "meldungen": []
+ "meldungen": [
+  {
+   "titel": "Beiersdorf-Aktie: Unternehmen erholt sich",
+   "quelle": "WELT",
+   "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxOaUlkbV9BemJxSjNPOFZfUnBKRG5lcUhkMEV3NTFoaDRFcGxaT2F5VHlYa1BBT3VEbms3RGVFZDZld1JrakJ3NTdZcV96RE1DV1RhZXgwOFA1VEFyZVd0TTZaamRPdWh1VjJud21zT3lmS3lnSGNFM0x0SFl1dm1fWXRGMlRtYlVxYmZzenRLRjBYNWJlRDBhUVNfbEJYSkdMbmg1TGFOaS1RVjJhcVdaNWlKSQ?oc=5",
+   "datum": "2026-11-10",
+   "sprache": "de"
+  }
+ ]
 }

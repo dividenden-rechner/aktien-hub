@@ -1,9 +1,25 @@
 {
  "hub": "SAP.DE",
  "name": "SAP",
- "stand": "2026-11-13",
+ "stand": "2026-11-14",
  "quelle": "Google News (Wirtschaftsmedien, deutsch und englisch)",
  "meldungen": [
+  {
+   "titel": "SAP Named a Leader in Two 2026 IDC MarketScapes: Worldwide Warehouse Management for Manufacturing and for Retail",
+   "quelle": "Unternehmen",
+   "link": "https://news.sap.com/2026/11/sap-leader-idc-marketscapes-warehouse-management-manufacturing-retail/",
+   "datum": "2026-11-13",
+   "sprache": "en",
+   "typ": "pm"
+  },
+  {
+   "titel": "Successful SAP Transformation Starts With Business Processes, Not Tech",
+   "quelle": "Unternehmen",
+   "link": "https://news.sap.com/2026/11/successful-sap-transformation-business-processes/",
+   "datum": "2026-11-13",
+   "sprache": "en",
+   "typ": "pm"
+  },
   {
    "titel": "SAP Puts Product-Level Cloud Emissions and Energy Data in Customers’ Hands",
    "quelle": "Unternehmen",
@@ -21,27 +37,11 @@
    "typ": "pm"
   },
   {
-   "titel": "Meet the Hybrid AI Buyer: The Customer Journey Is Fractured, and That’s Progress",
-   "quelle": "Unternehmen",
-   "link": "https://news.sap.com/2026/11/hybrid-ai-buyer-customer-experience-research-data-journey-progress/",
-   "datum": "2026-11-12",
-   "sprache": "en",
-   "typ": "pm"
-  },
-  {
    "titel": "SAP-Kontrolleur legt Mandat nach US-Sanktionen nieder",
    "quelle": "Börsen-Zeitung",
    "link": "https://news.google.com/rss/articles/CBMimAFBVV95cUxOUmM1dllHaXdqUlJmcVVxM0VYLVEzVnFOTjRwNERhUTJIbURET3JKZ05yWS11NGh2NjJfVWExRlJQTE5pdHJhbEc1QjkzQ25YcFFnUzJBRFVxTGZscVRnTS05NGR1UmsxZ3N4REZJU3hLc2R0RzRPcExRbzM4R2RmS2FsWTlULWZQSmNtbmh3Wm8wQm1RY3VfdQ?oc=5",
    "datum": "2026-11-12",
    "sprache": "de"
-  },
-  {
-   "titel": "SAP and VFC Open Intelligent Fashion Store",
-   "quelle": "Unternehmen",
-   "link": "https://news.sap.com/2026/11/sap-and-vf-corporation-open-intelligent-fashion-store/",
-   "datum": "2026-11-11",
-   "sprache": "en",
-   "typ": "pm"
   },
   {
    "titel": "SAP: Aufsichtsrat Qi Lu tritt nach US-Sanktionen zurück",

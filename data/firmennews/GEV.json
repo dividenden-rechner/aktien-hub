@@ -1,9 +1,25 @@
 {
  "hub": "GEV",
  "name": "GE Vernova Inc.",
- "stand": "2026-11-13",
+ "stand": "2026-11-14",
  "quelle": "Google News (Wirtschaftsmedien, deutsch und englisch)",
  "meldungen": [
+  {
+   "titel": "GE Vernova to Invest $34.5 Million in Shreveport Facility Expansion to Meet Growing Grid Infrastructure Demand",
+   "quelle": "Unternehmen",
+   "link": "https://www.gevernova.com/news/press-releases/ge-vernova-invest-345-million-shreveport-facility-expansion-meet-growing-grid",
+   "datum": "2026-11-10",
+   "sprache": "en",
+   "typ": "pm"
+  },
+  {
+   "titel": "GE Vernova Advances Hydrogen Capabilities for Aeroderivative Gas Turbines with New Milestones",
+   "quelle": "Unternehmen",
+   "link": "https://www.gevernova.com/news/press-releases/ge-vernova-advances-hydrogen-capabilities-aeroderivative-gas-turbines-new-milestones",
+   "datum": "2026-11-10",
+   "sprache": "en",
+   "typ": "pm"
+  },
   {
    "titel": "GE Vernova shares slide after SoftBank revises US data center project plans",
    "quelle": "Reuters",
@@ -17,6 +33,22 @@
    "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxQWV92ZlJaNndLYm9BU1QtRGdudFZFa1hwVWJaVGdJSXhlckREN2RXVVN2UEdmb1pFb3BrZ1BnXzZZZUFnNnI1TXVfSVg2bERPeHZSb0xSWTVpcXd2d1BYdXRKTjJMc3NhVElQY1M3V1dScWhIZGNHTll6S2dWenZjSEJCVGpOLV80OXVaZVk0UmpJM1FDUzN4aVZZYWdobFRLVUg5NlU5cmdFMlRJNm1VYktYOXBvdw?oc=5",
    "datum": "2026-11-10",
    "sprache": "en"
+  },
+  {
+   "titel": "GE Vernova to spotlight electrification, energy security and local collaboration as Climate Supporter of COP31 in Türkiye",
+   "quelle": "Unternehmen",
+   "link": "https://www.gevernova.com/news/press-releases/ge-vernova-spotlight-electrification-energy-security-local-collaboration-climate",
+   "datum": "2026-11-09",
+   "sprache": "en",
+   "typ": "pm"
+  },
+  {
+   "titel": "GE Vernova continues wind energy expansion in Germany with new order from Stadtwerke Heidenheim AG",
+   "quelle": "Unternehmen",
+   "link": "https://www.gevernova.com/news/press-releases/ge-vernova-continues-wind-energy-expansion-germany-new-order-stadtwerke-heidenheim",
+   "datum": "2026-11-09",
+   "sprache": "en",
+   "typ": "pm"
   }
  ]
 }

@@ -1,34 +1,42 @@
 {
  "hub": "NVDA",
  "name": "NVIDIA CORP",
- "stand": "2026-11-13",
+ "stand": "2026-11-14",
  "quelle": "Google News (Wirtschaftsmedien, deutsch und englisch)",
  "meldungen": [
   {
+   "titel": "The Nvidia board’s artificial independence",
+   "quelle": "Financial Times",
+   "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTE9XOGVLNEFzTGd5Nl9aem9ta3RQbE91Mnh4eGZObjZrVFRzWXhsWUFxZ3NEZ1VuXzlYVlUwS3NSV0ZYMUJxM2ZVR0JNb0wyekNWQ1gtTlhsSENoLUFxd3ZJTlkzMjlsbUlRV3lPQnE5eXg?oc=5",
+   "datum": "2026-11-14",
+   "sprache": "en"
+  },
+  {
+   "titel": "How AI Is Helping Care Teams Get Patients the Right Care, Sooner",
+   "quelle": "Unternehmen",
+   "link": "https://blogs.nvidia.com/blog/how-ai-is-helping-care-teams/",
+   "datum": "2026-11-13",
+   "sprache": "en",
+   "typ": "pm"
+  },
+  {
    "titel": "‘I’m a Piece of Sh--’: Jensen Huang’s Last Hours as Nvidia CEO",
-   "quelle": "Bloomberg.com",
+   "quelle": "Bloomberg",
    "link": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxNLUFpTEJfdXRzTFZ2TklSSUpraEZZZVdGbTZjWHBVbWY5YVVWYzViaDkzNXBzaklIRUdmTDAxd3RYX3lscTFrTFRwdVR1Wnd3QzMtUVk4TVVmak5kNWkxWmMzYlltN1F6cVhRQXlMOGtaX1FKczc1cmQ3WUJJaDJmVGRkZWYzR2pnSWVZU3Z1TWhjUHVCREtWbEtVTUw0ckQ4M0VmR0Mya2o?oc=5",
    "datum": "2026-11-13",
    "sprache": "en"
   },
   {
-   "titel": "China Internet Stock Gains Face Reality Check in Nvidia Fallout",
-   "quelle": "Bloomberg.com",
-   "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxPVFJxT1NoZ2NEcUN5bmUzclFYY0thVmdyaS1ESV9IVGNKcGdMSUhLeUZYWDB0S1NINWRnMWRwUEdWUnFfY1VQRDlIUjBLcmJ3QjVXVVhEbDFwNWVCV0o1Qzh5UGswNGpjYjhIRzRGT203aTlQalByaWNWemJOTnVfQVdCcHFsVWhZLUtSdkhOZEhzZlEtMW4wX0VvTGIyQTdKM0h0X0U5WVFrRThKa0N1U0ZKZkk?oc=5",
+   "titel": "Super Micro, run by Jensen Huang’s friend, says Megaspeed was ‘never’ its customer",
+   "quelle": "Fortune",
+   "link": "https://news.google.com/rss/articles/CBMijwFBVV95cUxNSWtYMllsc1Rta1ozeUZSM0RncUhIdkVhRnliTFNrQXBtOUdkaUhfU0pKbHQtVVhVeUlXX21ZY2phU0ZoaHpGYjBqVXpweGdCWjhnUElZR1A2NlNKeUFNLTlmbnZwQU9ueW5fbUJuU05hb1JvMWhjbTM0NEFhZXFMQUVrNlpSZUxLdEJ4WGVVdw?oc=5",
    "datum": "2026-11-13",
    "sprache": "en"
   },
   {
-   "titel": "Nvidia’s Huang Ousted by Board After Reports of Three Affairs",
-   "quelle": "Bloomberg.com",
-   "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxNZEt6Rnp1a2x5UjJnTnQ0S0s1RDA5SkhBc0VWbHE5Y0YwU3dlbjN5MGxacXZHbnZVNjN3dG1uZWlhcVpXeFZSQy1LZWt2dlVmajBCdUR1YThadWplblgteE1jNVBFYWlKcVluSzFWS0Y0UzBiNGtNNFl2UUE5NGNCdnJ2QXZYVktYM3VyQ0lKQzFCaGtlcV9DRTA0c3JqbGFPeG9OSGxlTkh6QXZ2Z2pEZGpROA?oc=5",
-   "datum": "2026-11-13",
-   "sprache": "en"
-  },
-  {
-   "titel": "US Stocks Drift Before Inflation Test of Fed Bets: Markets Wrap",
-   "quelle": "Bloomberg.com",
-   "link": "https://news.google.com/rss/articles/CBMilAFBVV95cUxPTmVnUHB5bWw0Y052NTU5ZkNsOGdwUXVCWnIwczVnQWJKWmJiaUZta09PNGhNYVZWSENvOFVReWJIVldFcDJNcmlOQ3RyMWhHQThNcmtnU0FIZldHWHJ4NldqbkVrYUlseVNBN0xycmRrUjdFVWRQQll6MzhBUHNOS2NidGtDc01LeWlNd01WNGJxcm5E?oc=5",
+   "titel": "Silicon Valley’s Group Chats Are Having a Moment of Jensanity",
+   "quelle": "Bloomberg",
+   "link": "https://news.google.com/rss/articles/CBMixAFBVV95cUxNc05XMTZjZHBFWThPUWRIVTFrbzFWSVFLY1d6dFJ0bzBpd2JJeHRaRFc2UjRGN29EeWxDSk9jVTVKVmZ4N0N5ek5iZEVVcWdYNFQzVkRiWmRMN2VuZ1V6d2JQMC1TdXN5VmZYQXhiRzdQY1lqUVJvdTlkbW9SRTlBSXVzZGNKdjVleHhydnZqQXpQMkJ5T0RzaVNJZG5PVDFNeFpZeVpCQ2dGTjlTZ1dYRTRYeUpwbUpLYTYwY0Foc21WeHdn?oc=5",
    "datum": "2026-11-13",
    "sprache": "en"
   },
@@ -53,14 +61,6 @@
    "quelle": "Unternehmen",
    "link": "https://nvidianews.nvidia.com/news/nvidia-announces-ceo-transition",
    "datum": "2026-11-12",
-   "sprache": "en",
-   "typ": "pm"
-  },
-  {
-   "titel": "How AI Helps Recyclers Turn Mixed Waste Into Reusable Material",
-   "quelle": "Unternehmen",
-   "link": "https://blogs.nvidia.com/blog/ai-recycling-startups/",
-   "datum": "2026-11-11",
    "sprache": "en",
    "typ": "pm"
   }
