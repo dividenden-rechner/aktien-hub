@@ -1,0 +1,29 @@
+name: EDINET Dividende Test
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Dividenden-Elemente aus Toyota-Jahresbericht lesen
+        env:
+          EDINET_API_KEY: ${{ secrets.EDINET_API_KEY }}
+        run: python3 tools/edinet_dividende_test.py
+      - name: Ergebnis committen
+        run: |
+          git config user.name "kurse-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add data/edinet-dividende-test.json
+          if git diff --cached --quiet; then echo "Keine Aenderung"; exit 0; fi
+          git commit -m "EDINET Dividende Test" -m "Co-Authored-By: Claude Haiku 5.5 <noreply@anthropic.com>" -m "Claude-Session: https://claude.ai/code/session_019XvbgBLukfMhVVHAfy3Xu4"
+          for i in 1 2 3; do git pull --rebase -X theirs -q && git push && break; sleep 5; done
