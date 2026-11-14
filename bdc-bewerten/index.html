@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>BDC analysieren: Was ist die beste BDC? Kurs/NAV, Rendite und Liste</title>
-<meta name="description" content="BDC analysieren: Welche BDC ist die beste? Kurs/NAV, Dividendendeckung, Kreditqualität und Verschuldung im Vergleich, dazu die Tabelle aller BDCs mit Börsenwert und Rendite.">
+<meta name="description" content="BDC analysieren: Welche BDC ist die beste? Kurs/NAV, Dividendendeckung, Kreditqualität und Verschuldung im Vergleich, dazu die Tabelle aller BDCs mit Rendite und Kurs/NAV.">
 <meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large">
 <link rel="canonical" href="https://dividenden-rechner.github.io/aktien-hub/bdc-bewerten/">
 <meta property="og:type" content="website">
@@ -24,12 +24,12 @@
 <link rel="manifest" href="../manifest.webmanifest">
 <style>
 .bdc-tab{width:100%;table-layout:fixed;border-collapse:collapse;font-size:14px;margin:14px 0 8px;background:#fff}
-.bdc-tab th,.bdc-tab td{padding:8px 4px;border-bottom:1px solid #e5e9ee;text-align:right;white-space:nowrap;vertical-align:middle;font-variant-numeric:tabular-nums}
+.bdc-tab th,.bdc-tab td{padding:8px 4px;border-bottom:1px solid #e5e9ee;text-align:center;white-space:nowrap;vertical-align:middle;font-variant-numeric:tabular-nums}
 .bdc-tab thead th{font-size:12.5px;font-weight:600;color:#5d6b78;background:#f5f8fa;padding:0;white-space:normal}
-.bdc-tab thead button{all:unset;box-sizing:border-box;display:block;width:100%;padding:8px 4px;text-align:right;cursor:pointer;font:inherit;color:inherit;line-height:1.25;white-space:normal}
+.bdc-tab thead button{all:unset;box-sizing:border-box;display:block;width:100%;padding:8px 4px;text-align:center;cursor:pointer;font:inherit;color:inherit;line-height:1.25;white-space:normal}
 .bdc-tab thead button:focus-visible{outline:2px solid #2f9e5b;outline-offset:-2px}
 .bdc-tab th.fi,.bdc-tab thead th.fi button{text-align:left}
-.bdc-tab col.c1{width:37%}.bdc-tab col.c2{width:14%}.bdc-tab col.c3{width:17%}.bdc-tab col.c4{width:15%}.bdc-tab col.c5{width:17%}
+.bdc-tab col.c1{width:40%}.bdc-tab col.c2{width:20%}.bdc-tab col.c4{width:18%}.bdc-tab col.c5{width:22%}
 .bdc-tab td.fi{text-align:left}
 .fn{display:flex;align-items:center;gap:7px;min-width:0}
 .fn img,.fn .lgph{width:24px;height:24px;flex:none;object-fit:contain;border-radius:4px}
@@ -59,23 +59,22 @@
 
 <p class="bdc-status" id="bdc-status">Lade Daten …</p>
 <table class="bdc-tab" id="bdc-tab" aria-describedby="bdc-status">
-<colgroup><col class="c1"><col class="c2"><col class="c3"><col class="c4"><col class="c5"></colgroup>
+<colgroup><col class="c1"><col class="c2"><col class="c4"><col class="c5"></colgroup>
 <thead><tr>
 <th class="fi"><button type="button" data-k="n" aria-sort="none">BDC</button></th>
 <th><button type="button" data-k="kurs" aria-sort="none">Kurs $</button></th>
-<th><button type="button" data-k="mc" aria-sort="descending">Wert Mrd. $ ▼</button></th>
 <th><button type="button" data-k="dy" aria-sort="none">Rendite</button></th>
 <th><button type="button" data-k="pnav" aria-sort="none">Kurs / NAV</button></th>
 </tr></thead>
 <tbody id="bdc-body"></tbody>
 </table>
 <p class="bdc-leg"><span><i style="background:#2f9e5b"></i>grün: Kurs unter NAV, günstig</span><span><i style="background:#c0392b"></i>rot: Kurs über NAV, teuer</span></p>
-<p class="bdc-note">* Rendite aus der letzten bekannten Quartalsdividende mal 4, weil das aktuelle Quartal noch nicht erfasst ist.</p>
+<p class="bdc-note">Bei einzelnen Werten stammt die Rendite aus der letzten bekannten Quartalsdividende mal 4.</p>
 
 <p class="lead">Die eine beste BDC gibt es nicht. Eine Business Development Company (BDC) ist eine börsennotierte US-Gesellschaft, die vor allem Kredite an mittelgroße Unternehmen vergibt. Gut ist eine BDC dann, wenn der Börsenkurs nicht über dem Substanzwert liegt, die Dividende aus dem laufenden Ertrag gedeckt ist und die Kreditbücher sauber sind. Die Tabelle zeigt alle BDCs, zu denen wir Kursdaten haben.</p>
 
 <h2>So liest du die Tabelle</h2>
-<p>Der Börsenwert zeigt die Größe einer Gesellschaft. Große BDCs wie Ares Capital sind meist leichter handelbar, kleinere Häuser schwanken oft stärker. Kurs/NAV setzt den Börsenkurs ins Verhältnis zum Nettovermögenswert je Aktie. Liegt der Wert unter 1, zahlst du weniger als den Buchwert der Kredite und Beteiligungen. Liegt er darüber, zahlst du einen Aufschlag, meist, weil der Markt der Gesellschaft mehr zutraut.</p>
+<p>Kurs/NAV setzt den Börsenkurs ins Verhältnis zum Nettovermögenswert je Aktie. Liegt der Wert unter 1, zahlst du weniger als den Buchwert der Kredite und Beteiligungen. Liegt er darüber, zahlst du einen Aufschlag, meist, weil der Markt der Gesellschaft mehr zutraut. Die Dividendenrendite ist die laufende Dividende geteilt durch den Kurs.</p>
 <p>Ares Capital steht bei 0,99 und damit knapp unter dem Substanzwert. Main Street liegt bei 1,66 und damit deutlich darüber. Die Farbe beschreibt nur die Bewertung, nicht die Qualität der Kredite. Ein grüner Wert kann trotzdem schwach sein.</p>
 
 <h2>Die fünf Kriterien für einen Vergleich</h2>
@@ -121,7 +120,7 @@
 </div></footer>
 <script>
 (function () {
-  var rows = [], key = "mc", dir = -1;
+  var rows = [], key = "pnav", dir = 1;
   var body = document.getElementById("bdc-body"), status = document.getElementById("bdc-status");
   function esc(s) { return String(s == null ? "" : s).replace(/[&<>"']/g, function (c) { return { "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]; }); }
   function num(v, d) { return typeof v === "number" && isFinite(v) ? v.toLocaleString("de-DE", { minimumFractionDigits: d, maximumFractionDigits: d }) : "–"; }
@@ -138,7 +137,7 @@
       var logo = window.HubLogos ? window.HubLogos.img("lg", r.t, "", r.name) : "";
       return '<tr><td class="fi"><a href="../aktien-hub/?s=' + encodeURIComponent(r.t) + '" style="text-decoration:none;color:inherit"><span class="fn">' + logo +
         '<span><b>' + esc(r.t) + '</b><small>' + esc(r.name) + '</small></span></span></a></td>' +
-        '<td>' + num(r.kurs, 2) + '</td><td>' + num(r.mc, 1) + '</td><td>' + (r.dy == null ? "–" : num(r.dy, 1) + " %" + (r.geschaetzt ? "*" : "")) + '</td>' +
+        '<td>' + num(r.kurs, 2) + '</td><td>' + (r.dy == null ? "–" : num(r.dy, 1) + " %") + '</td>' +
         '<td class="pn' + cls + '">' + (r.pnav == null ? "–" : num(r.pnav, 2)) + '</td></tr>';
     }).join("");
     document.querySelectorAll("#bdc-tab thead button").forEach(function (b) {
@@ -156,7 +155,7 @@
   fetch("../data/kennzahlen.json", { cache: "no-cache" }).then(function (r) { return r.json(); }).then(function (d) {
     rows = Object.keys(d.werte).filter(function (t) { var v = d.werte[t]; return v.sektor === "BDC" || v.bdc; }).map(function (t) {
       var v = d.werte[t], nav = v.bdc && v.bdc.kurs_nav != null ? v.bdc.kurs_nav : v.kbv;
-      return { t: t, name: v.name || t, kurs: v.kurs_usd, mc: typeof v.boersenwert_usd === "number" ? v.boersenwert_usd / 1e9 : null, dy: typeof v.rendite === "number" ? v.rendite : null, geschaetzt: !!(v.bdc && v.bdc.rendite_geschaetzt), pnav: typeof nav === "number" ? nav : null };
+      return { t: t, name: v.name || t, kurs: v.kurs_usd, dy: typeof v.rendite === "number" ? v.rendite : null, geschaetzt: !!(v.bdc && v.bdc.rendite_geschaetzt), pnav: typeof nav === "number" ? nav : null };
     });
     status.textContent = rows.length + " BDCs · Stand " + (d.stand || "");
     draw();
