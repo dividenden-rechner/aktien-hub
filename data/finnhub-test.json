@@ -1,0 +1,125 @@
+{
+ "stand": "2026-11-14 19:35 UTC",
+ "firmen": [
+  {
+   "symbol": "AAPL",
+   "land": "USA",
+   "quote": {
+    "status": 200,
+    "c": 356.27,
+    "dp": 0.3917,
+    "t": 1794603600
+   },
+   "profil": {
+    "status": 200,
+    "name": "Apple Inc.",
+    "exchange": "NASDAQ NMS - GLOBAL MARKET",
+    "country": "US",
+    "currency": "USD",
+    "marketCapitalization": 5177380.424341398,
+    "finnhubIndustry": "Technology"
+   },
+   "kennzahlen": {
+    "status": 200,
+    "felder": 133,
+    "beispiel": {
+     "dividendYieldIndicatedAnnual": 0.50534,
+     "peTTM": 39.368,
+     "marketCapitalization": 5203465.5
+    }
+   },
+   "dividende": {
+    "status": 403,
+    "antwort": "{\"error\":\"You don't have access to this resource.\"}"
+   }
+  },
+  {
+   "symbol": "7203.T",
+   "land": "Japan",
+   "quote": {
+    "status": 403,
+    "c": null,
+    "dp": null,
+    "t": null
+   },
+   "profil": {
+    "status": 403
+   },
+   "kennzahlen": {
+    "status": 403,
+    "felder": 0,
+    "beispiel": {}
+   },
+   "dividende": {
+    "status": 403,
+    "antwort": "{\"error\":\"You don't have access to this resource.\"}"
+   }
+  },
+  {
+   "symbol": "WBC.AX",
+   "land": "Australien",
+   "quote": {
+    "status": 403,
+    "c": null,
+    "dp": null,
+    "t": null
+   },
+   "profil": {
+    "status": 403
+   },
+   "kennzahlen": {
+    "status": 403,
+    "felder": 0,
+    "beispiel": {}
+   },
+   "dividende": {
+    "status": 403,
+    "antwort": "{\"error\":\"You don't have access to this resource.\"}"
+   }
+  },
+  {
+   "symbol": "005930.KS",
+   "land": "Korea",
+   "quote": {
+    "status": 403,
+    "c": null,
+    "dp": null,
+    "t": null
+   },
+   "profil": {
+    "status": 403
+   },
+   "kennzahlen": {
+    "status": 403,
+    "felder": 0,
+    "beispiel": {}
+   },
+   "dividende": {
+    "status": 403,
+    "antwort": "{\"error\":\"You don't have access to this resource.\"}"
+   }
+  },
+  {
+   "symbol": "0005.HK",
+   "land": "Hongkong",
+   "quote": {
+    "status": 403,
+    "c": null,
+    "dp": null,
+    "t": null
+   },
+   "profil": {
+    "status": 403
+   },
+   "kennzahlen": {
+    "status": 403,
+    "felder": 0,
+    "beispiel": {}
+   },
+   "dividende": {
+    "status": 403,
+    "antwort": "{\"error\":\"You don't have access to this resource.\"}"
+   }
+  }
+ ]
+}
