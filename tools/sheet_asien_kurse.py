@@ -43,6 +43,21 @@ def main():
     with urllib.request.urlopen(URL, timeout=60) as r:
         text = r.read().decode("utf-8", "replace")
     rows = list(csv.reader(io.StringIO(text)))
+    # Die Tabelle beginnt nicht mehr zwingend in Zeile 1: oben steht ein Kursblock (USD/JPY).
+    start = next((i for i, r in enumerate(rows) if any(c.strip() == "Unternehmen" for c in r)), None)
+    if start is None:
+        print("Kopfzeile mit 'Unternehmen' nicht gefunden", file=sys.stderr)
+        sys.exit(1)
+    jpy_kurs = None
+    for r in rows[:start]:
+        for i, c in enumerate(r):
+            if "JPY pro USD" in c:
+                # Wert steht links neben der Beschriftung oder eine Zelle davor
+                for j in (i - 1, i - 2):
+                    if j >= 0 and zahl(r[j]):
+                        jpy_kurs = zahl(r[j])
+                        break
+    rows = rows[start:]
     kopf = [c.strip() for c in rows[0]]
     idx = {k: i for i, k in enumerate(kopf)}
     need = ["Unternehmen", "Land", "Original-Ticker", "Währung", "Kurs", "Marketcap (Mrd.)", "KGV"]
@@ -81,6 +96,7 @@ def main():
         "stand": jetzt.strftime("%d.%m.%Y %H:%M") + " (Berlin)",
         "quelle": "Eigene Asien-Liste (Google Sheets, Japan und Korea)",
         "anzahl": len(firmen),
+        "jpy_je_usd": jpy_kurs,
         "firmen": firmen,
     }
     os.makedirs("data", exist_ok=True)
