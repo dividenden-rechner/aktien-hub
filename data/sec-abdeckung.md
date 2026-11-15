@@ -1,4 +1,4 @@
-# SEC-Fundamentaldaten: Abdeckung (Stand 2026-11-11)
+# SEC-Fundamentaldaten: Abdeckung (Stand 2026-11-15)
 
 Firmen mit Daten: **544** von 546. Kernkennzahlen (Umsatz, Gewinn, EPS, Dividende je Aktie, operativer Cashflow) vollständig und aktuell: **507**.
 
@@ -21,9 +21,9 @@ Nach IFRS (Auslandsfirmen, Beträge in Berichtswährung): 29. Dividende je Aktie
 | liquide_mittel | 543 (100%) | 542 (100%) |
 | eigenkapital | 543 (100%) | 543 (100%) |
 | bruttogewinn | 243 (45%) | 204 (38%) |
-| operatives_ergebnis | 450 (83%) | 416 (76%) |
+| operatives_ergebnis | 450 (83%) | 415 (76%) |
 | abschreibungen | 524 (96%) | 518 (95%) |
-| zinsaufwand | 496 (91%) | 402 (74%) |
+| zinsaufwand | 496 (91%) | 403 (74%) |
 | steuern | 538 (99%) | 533 (98%) |
 | bilanzsumme | 543 (100%) | 543 (100%) |
 | umlaufvermoegen | 451 (83%) | 448 (82%) |
@@ -228,4 +228,4 @@ Nach IFRS (Auslandsfirmen, Beträge in Berichtswährung): 29. Dividende je Aktie
 ## Hinweise
 
 - HONA: keine Jahreswerte
-- VYLR: keine Finanzdaten (CIK 2128626)
+- VYLR: keine Jahreswerte
