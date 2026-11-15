@@ -1,0 +1,475 @@
+{
+ "stand": "15.11.2026 09:12 (Berlin)",
+ "quelle": "Eigene Asien-Liste (Google Sheets, Japan und Korea)",
+ "anzahl": 52,
+ "firmen": {
+  "7203.T": {
+   "name": "Toyota",
+   "land": "Japan",
+   "waehrung": "USD",
+   "kurs": 212.43,
+   "kurs_heimat": null,
+   "marktkap_mrd": 315.4,
+   "kgv": 9.86
+  },
+  "6758.T": {
+   "name": "Sony Group",
+   "land": "Japan",
+   "waehrung": "USD",
+   "kurs": 27.07,
+   "kurs_heimat": null,
+   "marktkap_mrd": 162.45,
+   "kgv": null
+  },
+  "8306.T": {
+   "name": "Mitsubishi UFJ Financial",
+   "land": "Japan",
+   "waehrung": "USD",
+   "kurs": 21.83,
+   "kurs_heimat": null,
+   "marktkap_mrd": 260.79,
+   "kgv": 14.74
+  },
+  "6861.T": {
+   "name": "Keyence",
+   "land": "Japan",
+   "waehrung": "USD",
+   "kurs": 466.08,
+   "kurs_heimat": null,
+   "marktkap_mrd": 18138.42,
+   "kgv": null
+  },
+  "9984.T": {
+   "name": "SoftBank Group",
+   "land": "Japan",
+   "waehrung": "USD",
+   "kurs": 10.95,
+   "kurs_heimat": null,
+   "marktkap_mrd": 126.74,
+   "kgv": null
+  },
+  "9432.T": {
+   "name": "NTT",
+   "land": "Japan",
+   "waehrung": "USD",
+   "kurs": 26.32,
+   "kurs_heimat": null,
+   "marktkap_mrd": 95.39,
+   "kgv": 14.56
+  },
+  "6501.T": {
+   "name": "Hitachi",
+   "land": "Japan",
+   "waehrung": "USD",
+   "kurs": 30.83,
+   "kurs_heimat": null,
+   "marktkap_mrd": 140.79,
+   "kgv": 29.64
+  },
+  "8001.T": {
+   "name": "Itochu",
+   "land": "Japan",
+   "waehrung": "USD",
+   "kurs": 15.11,
+   "kurs_heimat": null,
+   "marktkap_mrd": 19113.77,
+   "kgv": null
+  },
+  "8058.T": {
+   "name": "Mitsubishi Corp",
+   "land": "Japan",
+   "waehrung": "USD",
+   "kurs": 33.55,
+   "kurs_heimat": null,
+   "marktkap_mrd": 20055.4,
+   "kgv": null
+  },
+  "8031.T": {
+   "name": "Mitsui & Co",
+   "land": "Japan",
+   "waehrung": "USD",
+   "kurs": 641.89,
+   "kurs_heimat": null,
+   "marktkap_mrd": 91.4,
+   "kgv": 14.79
+  },
+  "8316.T": {
+   "name": "Sumitomo Mitsui Financial",
+   "land": "Japan",
+   "waehrung": "USD",
+   "kurs": 24.74,
+   "kurs_heimat": null,
+   "marktkap_mrd": 157.96,
+   "kgv": 7.39
+  },
+  "8411.T": {
+   "name": "Mizuho Financial",
+   "land": "Japan",
+   "waehrung": "USD",
+   "kurs": 10.34,
+   "kurs_heimat": null,
+   "marktkap_mrd": 126.17,
+   "kgv": null
+  },
+  "9983.T": {
+   "name": "Fast Retailing",
+   "land": "Japan",
+   "waehrung": "USD",
+   "kurs": 51.69,
+   "kurs_heimat": null,
+   "marktkap_mrd": 26132.3,
+   "kgv": null
+  },
+  "4063.T": {
+   "name": "Shin-Etsu Chemical",
+   "land": "Japan",
+   "waehrung": "USD",
+   "kurs": 17.78,
+   "kurs_heimat": null,
+   "marktkap_mrd": 11322.41,
+   "kgv": null
+  },
+  "7974.T": {
+   "name": "Nintendo",
+   "land": "Japan",
+   "waehrung": "USD",
+   "kurs": 13.7,
+   "kurs_heimat": null,
+   "marktkap_mrd": 11293.13,
+   "kgv": null
+  },
+  "6098.T": {
+   "name": "Recruit Holdings",
+   "land": "Japan",
+   "waehrung": "USD",
+   "kurs": 22.0,
+   "kurs_heimat": null,
+   "marktkap_mrd": 25857.17,
+   "kgv": null
+  },
+  "9433.T": {
+   "name": "KDDI",
+   "land": "Japan",
+   "waehrung": "USD",
+   "kurs": 17.82,
+   "kurs_heimat": null,
+   "marktkap_mrd": 11421.23,
+   "kgv": null
+  },
+  "9434.T": {
+   "name": "SoftBank Corp",
+   "land": "Japan",
+   "waehrung": "USD",
+   "kurs": 14.99,
+   "kurs_heimat": null,
+   "marktkap_mrd": 11846.4,
+   "kgv": null
+  },
+  "6367.T": {
+   "name": "Daikin",
+   "land": "Japan",
+   "waehrung": "USD",
+   "kurs": 14.66,
+   "kurs_heimat": null,
+   "marktkap_mrd": 6882.32,
+   "kgv": null
+  },
+  "7267.T": {
+   "name": "Honda",
+   "land": "Japan",
+   "waehrung": "USD",
+   "kurs": 34.3,
+   "kurs_heimat": null,
+   "marktkap_mrd": 52.58,
+   "kgv": null
+  },
+  "6902.T": {
+   "name": "Denso",
+   "land": "Japan",
+   "waehrung": "USD",
+   "kurs": 12.06,
+   "kurs_heimat": null,
+   "marktkap_mrd": 5637.11,
+   "kgv": null
+  },
+  "4502.T": {
+   "name": "Takeda",
+   "land": "Japan",
+   "waehrung": "USD",
+   "kurs": 21.43,
+   "kurs_heimat": null,
+   "marktkap_mrd": 69.45,
+   "kgv": 326.78
+  },
+  "4519.T": {
+   "name": "Chugai Pharma",
+   "land": "Japan",
+   "waehrung": "USD",
+   "kurs": 22.51,
+   "kurs_heimat": null,
+   "marktkap_mrd": 12057.31,
+   "kgv": null
+  },
+  "6594.T": {
+   "name": "Nidec",
+   "land": "Japan",
+   "waehrung": "USD",
+   "kurs": 2.6,
+   "kurs_heimat": null,
+   "marktkap_mrd": 12.85,
+   "kgv": null
+  },
+  "6981.T": {
+   "name": "Murata",
+   "land": "Japan",
+   "waehrung": "USD",
+   "kurs": 16.09,
+   "kurs_heimat": null,
+   "marktkap_mrd": 10162.46,
+   "kgv": null
+  },
+  "7741.T": {
+   "name": "HOYA",
+   "land": "Japan",
+   "waehrung": "USD",
+   "kurs": 149.44,
+   "kurs_heimat": null,
+   "marktkap_mrd": 50.12,
+   "kgv": 28.41
+  },
+  "4661.T": {
+   "name": "Oriental Land",
+   "land": "Japan",
+   "waehrung": "USD",
+   "kurs": 23.84,
+   "kurs_heimat": null,
+   "marktkap_mrd": 6865.12,
+   "kgv": null
+  },
+  "8766.T": {
+   "name": "Tokio Marine",
+   "land": "Japan",
+   "waehrung": "USD",
+   "kurs": 3.76,
+   "kurs_heimat": null,
+   "marktkap_mrd": 108.39,
+   "kgv": 31.71
+  },
+  "8002.T": {
+   "name": "Marubeni",
+   "land": "Japan",
+   "waehrung": "USD",
+   "kurs": 32.59,
+   "kurs_heimat": null,
+   "marktkap_mrd": 8617.67,
+   "kgv": null
+  },
+  "8053.T": {
+   "name": "Sumitomo Corp",
+   "land": "Japan",
+   "waehrung": "USD",
+   "kurs": 10.87,
+   "kurs_heimat": null,
+   "marktkap_mrd": 51.78,
+   "kgv": 12.77
+  },
+  "2914.T": {
+   "name": "Japan Tobacco",
+   "land": "Japan",
+   "waehrung": "USD",
+   "kurs": 18.51,
+   "kurs_heimat": null,
+   "marktkap_mrd": 74.37,
+   "kgv": 17.0
+  },
+  "5020.T": {
+   "name": "ENEOS",
+   "land": "Japan",
+   "waehrung": "USD",
+   "kurs": 15.58,
+   "kurs_heimat": null,
+   "marktkap_mrd": 3331.25,
+   "kgv": null
+  },
+  "8591.T": {
+   "name": "Orix",
+   "land": "Japan",
+   "waehrung": "USD",
+   "kurs": 34.39,
+   "kurs_heimat": null,
+   "marktkap_mrd": 38.84,
+   "kgv": 5.84
+  },
+  "9101.T": {
+   "name": "NYK Line",
+   "land": "Japan",
+   "waehrung": "USD",
+   "kurs": 8.68,
+   "kurs_heimat": null,
+   "marktkap_mrd": 17.53,
+   "kgv": 8.99
+  },
+  "9104.T": {
+   "name": "Mitsui OSK Lines",
+   "land": "Japan",
+   "waehrung": "USD",
+   "kurs": 21.24,
+   "kurs_heimat": null,
+   "marktkap_mrd": 2478.56,
+   "kgv": null
+  },
+  "9107.T": {
+   "name": "Kawasaki Kisen",
+   "land": "Japan",
+   "waehrung": "USD",
+   "kurs": 18.55,
+   "kurs_heimat": null,
+   "marktkap_mrd": 1858.57,
+   "kgv": null
+  },
+  "8801.T": {
+   "name": "Mitsui Fudosan",
+   "land": "Japan",
+   "waehrung": "USD",
+   "kurs": 30.41,
+   "kurs_heimat": null,
+   "marktkap_mrd": 4371.04,
+   "kgv": null
+  },
+  "4568.T": {
+   "name": "Daiichi Sankyo",
+   "land": "Japan",
+   "waehrung": "USD",
+   "kurs": 17.97,
+   "kurs_heimat": null,
+   "marktkap_mrd": 33.24,
+   "kgv": 18.75
+  },
+  "7751.T": {
+   "name": "Canon",
+   "land": "Japan",
+   "waehrung": "USD",
+   "kurs": 30.28,
+   "kurs_heimat": null,
+   "marktkap_mrd": 40.35,
+   "kgv": 11.64
+  },
+  "6301.T": {
+   "name": "Komatsu",
+   "land": "Japan",
+   "waehrung": "USD",
+   "kurs": 38.5,
+   "kurs_heimat": null,
+   "marktkap_mrd": 35.26,
+   "kgv": 14.05
+  },
+  "8725.T": {
+   "name": "MS&AD Insurance",
+   "land": "Japan",
+   "waehrung": "USD",
+   "kurs": 33.39,
+   "kurs_heimat": null,
+   "marktkap_mrd": 49.64,
+   "kgv": null
+  },
+  "8630.T": {
+   "name": "Sompo Holdings",
+   "land": "Japan",
+   "waehrung": "USD",
+   "kurs": 22.85,
+   "kurs_heimat": null,
+   "marktkap_mrd": 6810.53,
+   "kgv": null
+  },
+  "005930.KS": {
+   "name": "Samsung Electronics",
+   "land": "Südkorea",
+   "waehrung": "KRW",
+   "kurs": 206000.0,
+   "kurs_heimat": 206000.0,
+   "marktkap_mrd": 1338073.82,
+   "kgv": 9.17
+  },
+  "000660.KS": {
+   "name": "SK Hynix",
+   "land": "Südkorea",
+   "waehrung": "EUR",
+   "kurs": 808.0,
+   "kurs_heimat": 1216000.0,
+   "marktkap_mrd": 665.23,
+   "kgv": 5.34
+  },
+  "373220.KS": {
+   "name": "LG Energy Solution",
+   "land": "Südkorea",
+   "waehrung": "KRW",
+   "kurs": 324500.0,
+   "kurs_heimat": 324500.0,
+   "marktkap_mrd": 75933.0,
+   "kgv": null
+  },
+  "207940.KS": {
+   "name": "Samsung Biologics",
+   "land": "Südkorea",
+   "waehrung": "KRW",
+   "kurs": 1411000.0,
+   "kurs_heimat": 1411000.0,
+   "marktkap_mrd": 68519.5,
+   "kgv": 30.74
+  },
+  "005380.KS": {
+   "name": "Hyundai Motor",
+   "land": "Südkorea",
+   "waehrung": "KRW",
+   "kurs": 269500.0,
+   "kurs_heimat": 269500.0,
+   "marktkap_mrd": 63580.68,
+   "kgv": 8.65
+  },
+  "000270.KS": {
+   "name": "Kia",
+   "land": "Südkorea",
+   "waehrung": "KRW",
+   "kurs": 94600.0,
+   "kurs_heimat": 94600.0,
+   "marktkap_mrd": 36933.07,
+   "kgv": 5.2
+  },
+  "005490.KS": {
+   "name": "POSCO Holdings",
+   "land": "Südkorea",
+   "waehrung": "USD",
+   "kurs": 50.09,
+   "kurs_heimat": 275000.0,
+   "marktkap_mrd": 16.21,
+   "kgv": 17.32
+  },
+  "035420.KS": {
+   "name": "Naver",
+   "land": "Südkorea",
+   "waehrung": "KRW",
+   "kurs": 172500.0,
+   "kurs_heimat": 172500.0,
+   "marktkap_mrd": 26241.82,
+   "kgv": 12.98
+  },
+  "105560.KS": {
+   "name": "KB Financial",
+   "land": "Südkorea",
+   "waehrung": "USD",
+   "kurs": 117.42,
+   "kurs_heimat": 159000.0,
+   "marktkap_mrd": 41.65,
+   "kgv": 9.27
+  },
+  "055550.KS": {
+   "name": "Shinhan Financial",
+   "land": "Südkorea",
+   "waehrung": "USD",
+   "kurs": 66.59,
+   "kurs_heimat": 89800.0,
+   "marktkap_mrd": 31.13,
+   "kgv": 8.17
+  }
+ }
+}
