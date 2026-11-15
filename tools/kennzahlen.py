@@ -134,6 +134,10 @@ def main():
     except Exception:
         pass
     sec = json.load(open("data/sec/fundamentals.json"))
+    try:
+        TTM = json.load(open("data/sec/ttm.json", encoding="utf-8")).get("firmen", {})   # US: Summe der letzten vier Quartale
+    except Exception:
+        TTM = {}
     kurse = json.load(open("data/kurse/xetra-letzter.json"))
     isin = json.load(open("data/kurse/isin-zuordnung.json"))
     fx = ezb_kurse()
@@ -198,6 +202,9 @@ def main():
             if dps and dps / kurs > 0.3:
                 dps = None
         eps = wert_am(f, "eps_verw", gj) or wert_am(f, "eps_ber", gj)
+        tt = TTM.get(t, {}).get("ttm", {}) if w == "USD" and t in TTM else {}
+        if tt.get("eps_verw") and tt["eps_verw"] > 0: eps = tt["eps_verw"]          # KGV und Gewinnrendite aus den letzten vier Quartalen
+        if tt.get("dividende_je_aktie") and tt["dividende_je_aktie"] > 0: dps = tt["dividende_je_aktie"]
         aktien = wert_am(f, "aktien_verw", gj)
         ek = wert_am(f, "eigenkapital", gj)
         ocf, cx = wert_am(f, "operativer_cf", gj), wert_am(f, "capex", gj)

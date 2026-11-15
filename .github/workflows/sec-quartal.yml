@@ -1,5 +1,7 @@
 name: SEC-Quartalszahlen (US, aus EDGAR)
 on:
+  schedule:
+    - cron: "17 3 * * 0"   # wöchentlich, sonntags 03:17 UTC
   push:
     branches: [main]
     paths:
