@@ -1,0 +1,34 @@
+name: SEC-Quartalszahlen (US, aus EDGAR)
+on:
+  push:
+    branches: [main]
+    paths:
+      - "tools/sec_quartal.py"
+      - ".github/workflows/sec-quartal.yml"
+  workflow_dispatch:
+concurrency:
+  group: sec-quartal
+  cancel-in-progress: false
+permissions:
+  contents: write
+jobs:
+  quartal:
+    runs-on: ubuntu-latest
+    timeout-minutes: 90
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Quartalszahlen aus EDGAR holen
+        env:
+          SEC_UA: ${{ secrets.SEC_UA }}
+        run: python3 tools/sec_quartal.py
+      - name: Ergebnis committen
+        run: |
+          git config user.name "sec-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add data/sec/quartal.json
+          if git diff --cached --quiet; then echo "Nichts Neues"; exit 0; fi
+          git commit -m "SEC-Quartalszahlen aktualisiert"
+          for i in 1 2 3; do git pull --rebase -X theirs -q && git push && break; sleep 5; done
