@@ -210,14 +210,30 @@ table.dt{border-collapse:collapse;width:100%;font-size:.9rem;min-width:620px}
 <section id="p-import">
 <p id="d-summary"></p>
 <h3>Depot einladen</h3>
-<div class="brokers">
-<button type="button" class="broker" data-broker="tr">Trade Republic</button>
-<button type="button" class="broker" data-broker="scalable">Scalable Capital</button>
-<button type="button" class="broker" data-broker="pp">Portfolio Performance / pytr</button>
-<button type="button" class="broker" data-broker="csv">Anderer Broker (CSV)</button>
-<button type="button" class="broker" data-broker="manual">Manuell eintragen</button>
-<button type="button" class="broker" data-broker="demo">Beispieldepot</button>
-</div>
+<div class="form-group broker-pick"><label for="broker-sel">Depot oder Broker wählen</label><select id="broker-sel">
+<optgroup label="Automatischer Import">
+<option value="tr">Trade Republic</option>
+<option value="scalable">Scalable Capital</option>
+<option value="pp">Portfolio Performance / pytr</option>
+</optgroup>
+<optgroup label="Import mit Spaltenzuordnung (CSV)">
+<option value="comdirect">comdirect</option>
+<option value="consors">Consorsbank</option>
+<option value="dkb">DKB</option>
+<option value="ing">ING</option>
+<option value="flatex">Flatex</option>
+<option value="smartbroker">Smartbroker+</option>
+<option value="justtrade">Justtrade</option>
+<option value="baader">Baader Bank</option>
+<option value="ibkr">Interactive Brokers</option>
+<option value="t212">Trading 212</option>
+<option value="csv">Anderer Broker (CSV)</option>
+</optgroup>
+<optgroup label="Sonstiges">
+<option value="manual">Manuell eintragen</option>
+<option value="demo">Beispieldepot</option>
+</optgroup>
+</select></div>
 <div id="imp-box"></div>
 <div id="imp-msg" class="dmsg" role="status"></div>
 <div id="imports-list"></div>
@@ -840,8 +856,19 @@ table.dt{border-collapse:collapse;width:100%;font-size:.9rem;min-width:620px}
     scalable: ["Scalable Capital", "Im Scalable-Broker unter <b>Transaktionen</b> den CSV-Export starten (Scalable beschreibt das in der Hilfe unter „Wie kann ich meine Transaktionen ansehen und exportieren?“). Lade die Datei hier hoch."],
     pp: ["Portfolio Performance / pytr", "Exportiere in Portfolio Performance über <b>Datei → Exportieren → Transaktionen (CSV)</b> oder nutze die CSV von <b>pytr</b> (<code>pytr export_transactions</code>). Lade die Datei hier hoch."],
     csv: ["Anderer Broker (CSV)", "Lade eine beliebige CSV mit Transaktionen hoch. Danach ordnest du die Spalten zu: Datum, ISIN, Stückzahl, Kurs oder Betrag genügen. Damit lassen sich auch Comdirect, ING, DKB, Flatex, Consorsbank, Smartbroker, Trading 212 und andere einlesen."],
+    comdirect: ["comdirect", "Lade hier den Transaktions- bzw. Umsatzexport (CSV) hoch und ordne danach die Spalten zu. Die Depotübersicht allein enthält keine Kaufdaten und lässt sich deshalb nicht vollständig auswerten."],
+    consors: ["Consorsbank", "Exportiere die Transaktionen (Käufe, Verkäufe, Dividenden) als CSV aus dem Broker. Lade die Datei hier hoch und ordne danach die Spalten zu: Datum, ISIN, Stückzahl, Kurs oder Betrag genügen."],
+    dkb: ["DKB", "Exportiere die Transaktionen (Käufe, Verkäufe, Dividenden) als CSV aus dem Broker. Lade die Datei hier hoch und ordne danach die Spalten zu: Datum, ISIN, Stückzahl, Kurs oder Betrag genügen."],
+    ing: ["ING", "Exportiere die Transaktionen (Käufe, Verkäufe, Dividenden) als CSV aus dem Broker. Lade die Datei hier hoch und ordne danach die Spalten zu: Datum, ISIN, Stückzahl, Kurs oder Betrag genügen."],
+    flatex: ["Flatex", "Exportiere die Transaktionen (Käufe, Verkäufe, Dividenden) als CSV aus dem Broker. Lade die Datei hier hoch und ordne danach die Spalten zu: Datum, ISIN, Stückzahl, Kurs oder Betrag genügen."],
+    smartbroker: ["Smartbroker+", "Exportiere die Transaktionen (Käufe, Verkäufe, Dividenden) als CSV aus dem Broker. Lade die Datei hier hoch und ordne danach die Spalten zu: Datum, ISIN, Stückzahl, Kurs oder Betrag genügen."],
+    justtrade: ["Justtrade", "Exportiere die Transaktionen (Käufe, Verkäufe, Dividenden) als CSV aus dem Broker. Lade die Datei hier hoch und ordne danach die Spalten zu: Datum, ISIN, Stückzahl, Kurs oder Betrag genügen."],
+    baader: ["Baader Bank", "Exportiere die Transaktionen (Käufe, Verkäufe, Dividenden) als CSV aus dem Broker. Lade die Datei hier hoch und ordne danach die Spalten zu: Datum, ISIN, Stückzahl, Kurs oder Betrag genügen."],
+    ibkr: ["Interactive Brokers", "Exportiere die Transaktionen (Käufe, Verkäufe, Dividenden) als CSV aus dem Broker. Lade die Datei hier hoch und ordne danach die Spalten zu: Datum, ISIN, Stückzahl, Kurs oder Betrag genügen."],
+    t212: ["Trading 212", "Exportiere die Transaktionen (Käufe, Verkäufe, Dividenden) als CSV aus dem Broker. Lade die Datei hier hoch und ordne danach die Spalten zu: Datum, ISIN, Stückzahl, Kurs oder Betrag genügen."],
     manual: ["Manuell eintragen", "Trage einzelne Käufe, Verkäufe oder Dividenden von Hand ein."]
   };
+  Object.keys(HOWTO).forEach(function (k) { if (HOWTO[k][1] === "Exportiere die Transaktionen (Käufe, Verkäufe, Dividenden) als CSV aus dem Broker. Lade die Datei hier hoch und ordne danach die Spalten zu: Datum, ISIN, Stückzahl, Kurs oder Betrag genügen.") HOWTO[k][1] = "Exportiere die Transaktionen (Käufe, Verkäufe, Dividenden) als CSV aus dem Broker. Lade die Datei hier hoch und ordne danach die Spalten zu: Datum, ISIN, Stückzahl, Kurs oder Betrag genügen."; });
   var pending = null;
   function renderImport() {
     var n = S.tx.length, r = rows().filter(function (x) { return !x.closed; });
@@ -851,7 +878,7 @@ table.dt{border-collapse:collapse;width:100%;font-size:.9rem;min-width:620px}
   }
   function showBroker(b) {
     var h = HOWTO[b], box = $("imp-box"); pending = null;
-    document.querySelectorAll(".broker").forEach(function (x) { x.classList.toggle("on", x.dataset.broker === b); });
+    var sel = document.getElementById("broker-sel"); if (sel && sel.value !== b) sel.value = b;
     if (b === "demo") { loadDemo(); return; }
     if (b === "manual") {
       box.innerHTML = '<h3>' + h[0] + "</h3><p>" + h[1] + '</p><div class="form-container"><div class="form-group"><label>Datum</label><input id="m-date" type="date" value="' + today + '"></div><div class="form-group"><label>Art</label><select id="m-type"><option value="buy">Kauf</option><option value="sell">Verkauf</option><option value="div">Dividende (Betrag in €)</option></select></div><div class="form-group"><label>ISIN oder Kürzel</label><input id="m-key" placeholder="z. B. US1912161007"></div><div class="form-group"><label>Name <span class="hint">(optional)</span></label><input id="m-name"></div><div class="form-group"><label>Stück</label><input id="m-shares" inputmode="decimal"></div><div class="form-group"><label>Kurs je Stück / Betrag (€)</label><input id="m-price" inputmode="decimal"></div><div class="form-group"><label>Gebühr (€)</label><input id="m-fee" inputmode="decimal" value="0"></div></div><button type="button" id="m-add">Eintragen</button>';
@@ -873,11 +900,12 @@ table.dt{border-collapse:collapse;width:100%;font-size:.9rem;min-width:620px}
     });
   }
   var LABEL = { tr: "Trade Republic", scalable: "Scalable Capital", pp: "Portfolio Performance / pytr", csv: "CSV" };
+  Object.keys(HOWTO).forEach(function (k) { if (!LABEL[k]) LABEL[k] = HOWTO[k][0]; });
   function handleCSV(text, name, broker) {
     var p = C.parseCSV(text);
     if (!p.rows.length) { setMsg("imp-msg", name + ": keine Zeilen erkannt.", "err"); return; }
     var fmt = C.detectFormat(p.headers);
-    if (broker === "csv" && fmt === "generic") { showMapping(p, name); return; }
+    if (fmt === "generic" && ["tr", "scalable", "pp"].indexOf(broker) === -1) { showMapping(p, name); return; }
     if (fmt === "generic") { setMsg("imp-msg", name + ": Format nicht erkannt. Wähle „Anderer Broker (CSV)“, um die Spalten selbst zuzuordnen.", "err"); return; }
     var res = fmt === "tr" ? C.normTR(p.rows) : fmt === "scalable" ? C.normScalable(p.rows) : C.normPP(p.rows);
     commit(res, LABEL[fmt] + " (" + name + ")", fmt !== broker && broker !== "csv" ? "Hinweis: Die Datei sieht nach " + LABEL[fmt] + " aus und wurde so gelesen. " : "");
@@ -1333,7 +1361,7 @@ table.dt{border-collapse:collapse;width:100%;font-size:.9rem;min-width:620px}
   }
   function init() {
     document.querySelectorAll(".dtab").forEach(function (b) { b.onclick = function () { show(b.dataset.tab); }; });
-    document.querySelectorAll(".broker").forEach(function (b) { b.onclick = function () { showBroker(b.dataset.broker); }; });
+    var bs = document.getElementById("broker-sel"); if (bs) bs.onchange = function () { showBroker(bs.value); };
     var mitFMP = /key/.test(location.hash);
     $("btn-refresh").onclick = function () { mitFMP ? refresh() : refreshEigen(false); };
     setTimeout(function () { if (!mitFMP) refreshEigen(true); }, 300);   /* Kurse beim Öffnen still aktualisieren */ $("btn-stop").onclick = function () { RUN.abort = true; }; $("an-btn-stop").onclick = function () { RUN.abort = true; };

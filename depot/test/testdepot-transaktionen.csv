@@ -1,0 +1,8 @@
+Datum;Art;ISIN;Name;Stück;Kurs;Betrag
+02.01.2024;Kauf;TS0000000011;Testfirma Alpha;10;50,00;-500,00
+15.03.2024;Dividende;TS0000000011;Testfirma Alpha;10;0;12,50
+10.05.2024;Kauf;TS0000000028;Testfirma Beta;5;100,00;-500,00
+20.08.2024;Dividende;TS0000000028;Testfirma Beta;5;0;15,00
+12.11.2024;Verkauf;TS0000000011;Testfirma Alpha;4;60,00;240,00
+14.02.2025;Dividende;TS0000000011;Testfirma Alpha;6;0;7,50
+05.06.2025;Kauf;TS0000000045;Testfirma Gamma;20;25,00;-500,00
