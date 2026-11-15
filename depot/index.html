@@ -406,6 +406,10 @@ table.dt{border-collapse:collapse;width:100%;font-size:.9rem;min-width:620px}
     }
     if (cur !== "" || row.length) { row.push(cur); if (row.length > 1 || row[0] !== "") rows.push(row); }
     if (!rows.length) return { headers: [], rows: [], delim: best };
+    /* Exporte mit Vorspann (z. B. Consorsbank): Kopfzeile ist die Zeile mit "Stück/Nominal" */
+    var hk = -1;
+    for (var k = 0; k < rows.length && hk < 0; k++) { for (var c = 0; c < rows[k].length; c++) { if (rows[k][c].trim().toLowerCase() === "stück/nominal") { hk = k; break; } } }
+    if (hk > 0) rows = rows.slice(hk);
     var headers = rows[0].map(function (h) { return h.trim(); });
     return { headers: headers, delim: best, rows: rows.slice(1).map(function (r) { var o = {}; headers.forEach(function (h, k) { o[h.toLowerCase()] = r[k] === undefined ? "" : r[k]; }); return o; }) };
   }
@@ -433,6 +437,7 @@ table.dt{border-collapse:collapse;width:100%;font-size:.9rem;min-width:620px}
     var h = headers.map(function (x) { return x.toLowerCase(); }), has = function (n) { return h.indexOf(n) > -1; };
     if (has("transaction_id") && has("category") && has("asset_class")) return "tr";
     if (has("stück / nominale") && has("kaufkurs in eur") && has("wkn")) return "comdirect";
+    if (has("stück/nominal") && has("einstandskurs inkl. nk") && has("wkn")) return "consors";
     if (has("assettype") && has("reference") && has("isin") && has("shares")) return "scalable";
     if (has("typ") && has("datum") && (has("wertpapiername") || has("isin")) && (has("stück") || has("stueck") || has("wert"))) return "pp";
     return "generic";
@@ -485,6 +490,22 @@ table.dt{border-collapse:collapse;width:100%;font-size:.9rem;min-width:620px}
       var betrag = kw != null ? -Math.abs(kw) : (pr != null ? -st * pr : 0);
       out.push(mk({ id: "cd:" + [key, defDate, st, i].join("|"), date: defDate, type: "buy", key: key, name: r.bezeichnung || key,
         assetClass: /etf/.test(typ) ? "etf" : /aktie/.test(typ) ? "aktie" : "", shares: st, price: pr, amount: betrag, fee: 0, tax: 0, src: "comdirect" }));
+    });
+    return { tx: out, skipped: skipped };
+  }
+  /* Consorsbank Depotübersicht (Kompakt oder Erweitert): eine Zeile je Position mit Einstandskurs. Kaufdatum fehlt, deshalb defDate. */
+  function normConsors(rows, defDate) {
+    var out = [], skipped = {};
+    rows.forEach(function (r, i) {
+      var st = num(r["stück/nominal"], ","), pr = num(r["einstandskurs inkl. nk"], ","), ew = num(r["einstandswert"], ",");
+      if (!st || st <= 0) return;   // Summenzeilen und Leerzeilen haben keine Stückzahl
+      var wkn = String(r.wkn || "").trim(), isin = String(r.isin || "").trim().toUpperCase();
+      var key = isIsin(isin) ? isin : wkn;
+      if (!key) { skipped["ohne ISIN/WKN"] = (skipped["ohne ISIN/WKN"] || 0) + 1; return; }
+      var gat = String(r.gattung || "").toLowerCase();
+      var betrag = ew != null ? -Math.abs(ew) : (pr != null ? -st * pr : 0);
+      out.push(mk({ id: "cs:" + [key, defDate, st, i].join("|"), date: defDate, type: "buy", key: key, name: r.name || key,
+        assetClass: /aktie/.test(gat) ? "aktie" : "", shares: st, price: pr, amount: betrag, fee: 0, tax: 0, src: "consors" }));
     });
     return { tx: out, skipped: skipped };
   }
@@ -734,7 +755,7 @@ table.dt{border-collapse:collapse;width:100%;font-size:.9rem;min-width:620px}
     return w > 0 ? { v: s / w, cover: w } : null;
   }
 
-  var api = { guessDec: guessDec, num: num, isoDate: isoDate, parseCSV: parseCSV, classifyType: classifyType, isIsin: isIsin, detectFormat: detectFormat, normTR: normTR, normScalable: normScalable, normPP: normPP, normComdirect: normComdirect, normGeneric: normGeneric, manualTx: manualTx, positions: positions, divStats: divStats, dpsHistory: dpsHistory, cashflows: cashflows, xirr: xirr, monthEnds: monthEnds, valuation: valuation, lastTxPrice: lastTxPrice, forecast: forecast, weighted: weighted, sortTx: sortTx, addDays: addDays, todayIso: todayIso, dayN: dayN };
+  var api = { guessDec: guessDec, num: num, isoDate: isoDate, parseCSV: parseCSV, classifyType: classifyType, isIsin: isIsin, detectFormat: detectFormat, normTR: normTR, normScalable: normScalable, normPP: normPP, normComdirect: normComdirect, normConsors: normConsors, normGeneric: normGeneric, manualTx: manualTx, positions: positions, divStats: divStats, dpsHistory: dpsHistory, cashflows: cashflows, xirr: xirr, monthEnds: monthEnds, valuation: valuation, lastTxPrice: lastTxPrice, forecast: forecast, weighted: weighted, sortTx: sortTx, addDays: addDays, todayIso: todayIso, dayN: dayN };
   if (typeof module !== "undefined" && module.exports) module.exports = api;
   root.DepotCore = api;
 })(typeof window !== "undefined" ? window : globalThis);
@@ -873,8 +894,8 @@ table.dt{border-collapse:collapse;width:100%;font-size:.9rem;min-width:620px}
     scalable: ["Scalable Capital", "Im Scalable-Broker unter <b>Transaktionen</b> den CSV-Export starten (Scalable beschreibt das in der Hilfe unter „Wie kann ich meine Transaktionen ansehen und exportieren?“). Lade die Datei hier hoch."],
     pp: ["Portfolio Performance / pytr", "Exportiere in Portfolio Performance über <b>Datei → Exportieren → Transaktionen (CSV)</b> oder nutze die CSV von <b>pytr</b> (<code>pytr export_transactions</code>). Lade die Datei hier hoch."],
     csv: ["Anderer Broker (CSV)", "Lade eine beliebige CSV mit Transaktionen hoch. Danach ordnest du die Spalten zu: Datum, ISIN, Stückzahl, Kurs oder Betrag genügen. Damit lassen sich auch Comdirect, ING, DKB, Flatex, Consorsbank, Smartbroker, Trading 212 und andere einlesen."],
+    consors: ["Consorsbank", "Lade die Depotübersicht (CSV) der Consorsbank hoch, Ansicht „Kompakt“ oder „Erweitert“. Die Datei enthält Stückzahl und Einstandskurs je Position. Kaufdaten fehlen, deshalb gibt es unten ein Feld für das Datum."],
     comdirect: ["comdirect", "Lade hier den Transaktions- bzw. Umsatzexport (CSV) hoch und ordne danach die Spalten zu. Die Depotübersicht allein enthält keine Kaufdaten und lässt sich deshalb nicht vollständig auswerten."],
-    consors: ["Consorsbank", "Exportiere die Transaktionen (Käufe, Verkäufe, Dividenden) als CSV aus dem Broker. Lade die Datei hier hoch und ordne danach die Spalten zu: Datum, ISIN, Stückzahl, Kurs oder Betrag genügen."],
     dkb: ["DKB", "Exportiere die Transaktionen (Käufe, Verkäufe, Dividenden) als CSV aus dem Broker. Lade die Datei hier hoch und ordne danach die Spalten zu: Datum, ISIN, Stückzahl, Kurs oder Betrag genügen."],
     ing: ["ING", "Exportiere die Transaktionen (Käufe, Verkäufe, Dividenden) als CSV aus dem Broker. Lade die Datei hier hoch und ordne danach die Spalten zu: Datum, ISIN, Stückzahl, Kurs oder Betrag genügen."],
     flatex: ["Flatex", "Exportiere die Transaktionen (Käufe, Verkäufe, Dividenden) als CSV aus dem Broker. Lade die Datei hier hoch und ordne danach die Spalten zu: Datum, ISIN, Stückzahl, Kurs oder Betrag genügen."],
@@ -901,7 +922,7 @@ table.dt{border-collapse:collapse;width:100%;font-size:.9rem;min-width:620px}
       box.innerHTML = '<h3>' + h[0] + "</h3><p>" + h[1] + '</p><div class="form-container"><div class="form-group"><label>Datum</label><input id="m-date" type="date" value="' + today + '"></div><div class="form-group"><label>Art</label><select id="m-type"><option value="buy">Kauf</option><option value="sell">Verkauf</option><option value="div">Dividende (Betrag in €)</option></select></div><div class="form-group"><label>ISIN oder Kürzel</label><input id="m-key" placeholder="z. B. US1912161007"></div><div class="form-group"><label>Name <span class="hint">(optional)</span></label><input id="m-name"></div><div class="form-group"><label>Stück</label><input id="m-shares" inputmode="decimal"></div><div class="form-group"><label>Kurs je Stück / Betrag (€)</label><input id="m-price" inputmode="decimal"></div><div class="form-group"><label>Gebühr (€)</label><input id="m-fee" inputmode="decimal" value="0"></div></div><button type="button" id="m-add">Eintragen</button>';
       $("m-add").onclick = addManual; return;
     }
-    var extra = b === "comdirect" ? '<div class="form-group"><label for="cd-date">Kaufdatum, falls unbekannt (gilt für alle Positionen)</label><input type="date" id="cd-date" value="' + today + '"></div>' : "";
+    var extra = (b === "comdirect" || b === "consors") ? '<div class="form-group"><label for="cd-date">Kaufdatum, falls unbekannt (gilt für alle Positionen)</label><input type="date" id="cd-date" value="' + today + '"></div>' : "";
     box.innerHTML = "<h3>" + h[0] + "</h3><p>" + h[1] + "</p>" + extra + '<label class="drop" id="drop"><input type="file" id="imp-file" multiple hidden><span>CSV-Datei hierher ziehen oder <u>auswählen</u></span></label><div id="imp-map"></div>';
     var f = $("imp-file"), drop = $("drop");
     f.onchange = function () { readFiles(f.files, b); f.value = ""; };
@@ -930,7 +951,8 @@ table.dt{border-collapse:collapse;width:100%;font-size:.9rem;min-width:620px}
     if (fmt === "generic" && ["tr", "scalable", "pp"].indexOf(broker) === -1) { showMapping(p, name); return; }
     if (fmt === "generic") { setMsg("imp-msg", name + ": Format nicht erkannt. Wähle „Anderer Broker (CSV)“, um die Spalten selbst zuzuordnen.", "err"); return; }
     var res = fmt === "tr" ? C.normTR(p.rows) : fmt === "scalable" ? C.normScalable(p.rows)
-      : fmt === "comdirect" ? C.normComdirect(p.rows, ($("cd-date") && $("cd-date").value) || today) : C.normPP(p.rows);
+      : fmt === "comdirect" ? C.normComdirect(p.rows, ($("cd-date") && $("cd-date").value) || today)
+      : fmt === "consors" ? C.normConsors(p.rows, ($("cd-date") && $("cd-date").value) || today) : C.normPP(p.rows);
     commit(res, LABEL[fmt] + " (" + name + ")", fmt !== broker && broker !== "csv" ? "Hinweis: Die Datei sieht nach " + LABEL[fmt] + " aus und wurde so gelesen. " : "");
   }
   var GUESS = { date: /^(datum|date|buchungstag|handelstag|valuta|ausführungstag)/i, type: /^(typ|type|art|transaktion|geschäft|vorgang|aktion)/i, key: /^(isin|wkn|symbol|ticker)/i, name: /(name|bezeichnung|wertpapier|titel|description|beschreibung)/i, shares: /^(stück|stueck|anzahl|shares|menge|quantity|nominal)/i, price: /^(kurs|price|preis|ausführungskurs)/i, amount: /^(betrag|amount|wert|summe|total|kurswert)/i, fee: /^(gebühr|gebuehr|fee|provision|kosten|entgelt)/i, tax: /^(steuer|tax)/i };
