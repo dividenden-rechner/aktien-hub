@@ -20,8 +20,15 @@ UA = "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chr
 def kurs(ticker):
     url = BASE + urllib.parse.quote(ticker) + "?range=5d&interval=1d"
     req = urllib.request.Request(url, headers={"User-Agent": UA})
-    with urllib.request.urlopen(req, timeout=30) as r:
-        data = json.loads(r.read().decode("utf-8"))
+    for versuch in range(4):
+        try:
+            with urllib.request.urlopen(req, timeout=30) as r:
+                data = json.loads(r.read().decode("utf-8"))
+            break
+        except urllib.error.HTTPError as e:
+            if e.code != 429 or versuch == 3:
+                raise
+            time.sleep(5 * (versuch + 1))
     res = data["chart"]["result"][0]
     meta = res["meta"]
     return {
@@ -44,7 +51,7 @@ def main():
         except Exception as e:  # einzelne Firma darf den Lauf nicht stoppen
             fehler.append(f"{t}: {type(e).__name__} {e}")
             print(fehler[-1], file=sys.stderr)
-        time.sleep(0.4)
+        time.sleep(1.5)
     jetzt = datetime.now(timezone(timedelta(hours=1)))
     daten = {
         "stand": jetzt.strftime("%d.%m.%Y %H:%M") + " (Berlin)",
