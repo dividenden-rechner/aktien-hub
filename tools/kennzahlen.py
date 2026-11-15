@@ -8,6 +8,35 @@ import json, re, urllib.request, xml.etree.ElementTree as ET
 EZB = "https://www.ecb.europa.eu/stats/eurofxref/eurofxref-hist-90d.xml"
 
 
+def asien_werte(out, rate, tag):
+    """Japan und Korea: Kurs aus der eigenen Asien-Liste (Sheet), Gewinn und Dividende aus data/asien-fundamente.json.
+    Kein ISIN in dieser Pipeline; der Eintrag ist mit isin=None angelegt (wie die BDCs)."""
+    try:
+        fund = {f["ticker"]: f for f in json.load(open("data/asien-fundamente.json", encoding="utf-8"))["firmen"]}
+        kurse = json.load(open("data/asien-kurse-sheet.json", encoding="utf-8"))["firmen"]
+    except Exception:
+        return
+    for t, k in kurse.items():
+        f = fund.get(t)
+        heimat = k.get("kurs_heimat")
+        # Heimatwaehrung nach Land: Japan = JPY, Korea = KRW (die Sheet-Spalte Waehrung zeigt fuer Japan USD)
+        w = {"Japan": "JPY", "Südkorea": "KRW", "Korea": "KRW"}.get(k.get("land") or (f or {}).get("land"))
+        if not f or not heimat or w not in rate:
+            continue
+        eur = heimat / rate[w]
+        eps = f.get("eps_ttm") or f.get("eps_jahr")
+        dps = f.get("dps_jahr")
+        out[t] = {"isin": None, "name": k.get("name") or f.get("name"), "sektor": "Asien", "land": k.get("land") or f.get("land"),
+                  "waehrung": w, "kurs_heimat": heimat, "kurs_eur": round(eur, 4), "kurs_usd": None,
+                  "boerse": {"JP": "Tokio", "KR": "Seoul"}.get("JP" if w == "JPY" else "KR"), "veraenderung": None,
+                  "datum": tag, "fx": rate[w], "gj": str(f.get("stichtag_jahr") or "")[:4] or None,
+                  "boersenwert_eur": round(k["marktkap_mrd"] * 1e9 / rate["USD"]) if k.get("marktkap_mrd") and "USD" in rate else None,
+                  "dividende": dps, "rendite": r2(dps / heimat * 100) if dps and heimat else None,
+                  "kgv": r2(heimat / eps, 1) if eps and eps > 0 else None,
+                  "ausschuettung": r2(dps / eps * 100, 0) if dps and eps and eps > 0 else None,
+                  "dividende_berechnet": False, "quelle": f.get("quelle")}
+
+
 def ezb_kurse():
     x = ET.fromstring(urllib.request.urlopen(urllib.request.Request(EZB, headers={"User-Agent": "dividenden-rechner.de"}), timeout=60).read())
     tage = {}
@@ -347,6 +376,7 @@ def main():
         o["kbv"] = o["bdc"]["kurs_nav"]
         o["nav_je_aktie"] = nav
         o["schulden_ek"] = o["bdc"]["verschuldung"] or o.get("schulden_ek")
+    asien_werte(out, rate, tag)
     modellwerte(out)
     json.dump({"stand": tag, "ezb_kurs_vom": fx_tag,
                "hinweis": "Kurs: Xetra-Schluss (Deutsche Börse, 15 Min. verzögert). Kennzahlen: letztes Geschäftsjahr laut SEC-Bericht; Kurs per EZB-Referenzkurs in die Berichtswährung umgerechnet.",
