@@ -415,7 +415,7 @@ document.addEventListener("click",e=>{
 });
 
 /* Diagramme (SVG) */
-function bars(title,note,data,color="var(--bar)",f=short){
+function bars(title,note,data,color="var(--bar)",f=short,kopf=""){
   data=data.filter(d=>d.v!=null&&!isNaN(d.v));
   if(!data.length)return `<div class="card"><h3>${title}</h3><p>Keine Daten verfügbar.</p></div>`;
   const W=480,H=210,pt=22,pb=24,n=data.length,gap=8,bw=(W-gap*(n+1))/n;
@@ -428,7 +428,7 @@ function bars(title,note,data,color="var(--bar)",f=short){
     s+=`<text x="${x+bw/2}" y="${d.v>=0?top-4:top+h+11}" text-anchor="middle">${f(d.v)}</text>`;
     s+=`<text x="${x+bw/2}" y="${H-6}" text-anchor="middle">${String(d.y).slice(-n>8?-2:0)}</text>`;
   });
-  return `<div class="card"><h3>${title}</h3>${note?`<p>${note}</p>`:""}${s}</svg></div>`;
+  return `<div class="card"><h3>${title}</h3>${kopf}${note?`<p>${note}</p>`:""}${s}</svg></div>`;
 }
 
 /* ===== Neue Diagramme: Farben nach Bedeutung ===== */
@@ -467,7 +467,8 @@ function margins(inc,H0){
   ends.forEach(e=>s+=`<text x="${e.x+9}" y="${e.y+4}" font-size="11" font-weight="700" style="fill:${e.c}">${e.t}</text>`);
   D.forEach((d,i)=>s+=`<text x="${X(i)}" y="${H-5}" text-anchor="middle" font-size="11" ${i===n-1?'font-weight="700" style="fill:var(--ink)"':""}>${yl(d.y,n)}</text>`);
   const gl=S.find(a=>a.l==="Brutto"),ol=S.find(a=>a.l==="Operativ"),nl=S.find(a=>a.l==="Netto"),f=a=>a&&a.v[a.v.length-1]!=null?num(a.v[a.v.length-1],0)+" %":null;
-  return `<div class="card">${kern("Margen",f(gl)||f(nl)||"–","var(--ink)",[f(gl)?"Brutto":"",f(ol)?f(ol)+" operativ":"",f(nl)?f(nl)+" netto":""].filter(Boolean).join(" · "))}<p>Anteil vom Umsatz</p>${s}</svg></div>`;
+  const zeile=(a,l)=>a&&a.v[a.v.length-1]!=null?`<div>${l} ${num(a.v[a.v.length-1],0)} %</div>`:"";
+  return `<div class="card"><h3>Margen</h3><div class="kern" style="color:var(--ink)">${zeile(gl,"Brutto")}${zeile(ol,"operativ")}${zeile(nl,"netto")}</div><p>Anteil vom Umsatz</p>${s}</svg></div>`;
 }
 function fcfChart(cf,cur){
   const D=cf.filter(x=>x.freeCashFlow!=null&&!isNaN(x.freeCashFlow));if(!D.length)return nodata("Free Cashflow");
@@ -1371,7 +1372,8 @@ function story(S){
   /* Kennzahlen-Tabelle neben dem Dividendenchart: nur Werte, die vorhanden sind */
   const KZs=S.KZ||{},kzr=[["KGV",KZs.kgv,0],["KBV",KZs.kbv,0],["PEG",KZs.peg,0],["Schulden/EK",KZs.schulden_ek,0],["Ausschüttung / FCF",KZs.fcf_ausschuettung,1]].filter(r=>typeof r[1]==="number"&&isFinite(r[1])&&!(r[0]==="KGV"&&r[1]<=0));
   const kzCard=kzr.length?`<div class="card kzt"><h3>Kennzahlen</h3><table>${kzr.map(r=>`<tr><td>${r[0]}</td><td>${num(r[1],r[2]?0:2).replace(/,00$/,"")}${r[2]?" %":""}</td></tr>`).join("")}</table></div>`:"";
-  const cards=[[kzCard?"":"full",only(bars("Dividende je Aktie",dn,divs,"var(--c-gold)",v=>num(v)))],["",kzCard],["",only(combo(inc,cur))],["",only(margins(inc,190))],["",only(fcfChart(cf,cur))],["",only(epsChart(inc,cur,205))]].filter(c=>c[1]);
+  const kopfDiv=typeof KZs.rendite==="number"?`<div class="kern" style="color:var(--ink)">Dividendenrendite: ${num(KZs.rendite,2)} %</div>`:"";
+  const cards=[[kzCard?"":"full",only(bars("Dividende je Aktie",dn,divs,"var(--c-gold)",v=>num(v),kopfDiv))],["",kzCard],["",only(combo(inc,cur))],["",only(margins(inc,190))],["",only(fcfChart(cf,cur))],["",only(epsChart(inc,cur,205))]].filter(c=>c[1]);
   ov.innerHTML=`<div class="ctl"><button id="cl">✕ Schließen</button></div><div class="hint">Tippen blendet die Buttons aus, dann Screenshot</div>
   <div class="story"><div class="top"></div><div class="sh">Aktuelle Meldung</div><div class="bd">
    <div class="tt">${img(sym)}<div><b>${esc(p.companyName||sym)}</b><span>${esc(sym)}${p.sector?" · "+esc(p.sector):""}</span></div></div>
