@@ -66,6 +66,7 @@ def main():
         print("Spalten fehlen:", fehlt, kopf, file=sys.stderr)
         sys.exit(1)
     heimat_idx = next((i for i, k in enumerate(kopf) if k.startswith("Kurs Heimatbörse")), None)
+    aktien_je_adr_idx = idx.get("Aktien je ADR")
 
     def feld(r, name):
         i = idx[name]
@@ -82,6 +83,12 @@ def main():
         heimat = None
         if heimat_idx is not None and heimat_idx < len(r):
             heimat = zahl(r[heimat_idx])
+        # Fehlt der Heimatkurs, aber gibt es USD-Kurs, JPY-Kurs und "Aktien je ADR", wird er umgerechnet:
+        # Heimatkurs je Aktie = USD-Kurs x JPY je USD / Aktien je ADR. Ohne Verhaeltnis bleibt er leer.
+        if heimat is None and jpy_kurs and aktien_je_adr_idx is not None and kurs and feld(r, "Währung").strip() == "USD":
+            ratio = zahl(feld(r, "Aktien je ADR"))
+            if ratio:
+                heimat = round(kurs * jpy_kurs / ratio, 2)
         firmen[t] = {
             "name": feld(r, "Unternehmen").strip(),
             "land": feld(r, "Land").strip(),
