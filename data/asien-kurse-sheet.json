@@ -1,5 +1,5 @@
 {
- "stand": "15.11.2026 15:15 (Berlin)",
+ "stand": "15.11.2026 15:25 (Berlin)",
  "quelle": "Eigene Asien-Liste (Google Sheets, Japan und Korea)",
  "anzahl": 52,
  "jpy_je_usd": 159.8,
@@ -9,7 +9,7 @@
    "land": "Japan",
    "waehrung": "USD",
    "kurs": 212.43,
-   "kurs_heimat": null,
+   "kurs_heimat": 3394.53,
    "marktkap_mrd": 315.4,
    "kgv": 9.86
   },
@@ -18,7 +18,7 @@
    "land": "Japan",
    "waehrung": "USD",
    "kurs": 27.07,
-   "kurs_heimat": null,
+   "kurs_heimat": 4325.65,
    "marktkap_mrd": 162.45,
    "kgv": null
   },
@@ -27,7 +27,7 @@
    "land": "Japan",
    "waehrung": "USD",
    "kurs": 21.83,
-   "kurs_heimat": null,
+   "kurs_heimat": 3488.32,
    "marktkap_mrd": 260.79,
    "kgv": 14.74
   },
@@ -36,7 +36,7 @@
    "land": "Japan",
    "waehrung": "USD",
    "kurs": 466.08,
-   "kurs_heimat": null,
+   "kurs_heimat": 74477.25,
    "marktkap_mrd": 18138.42,
    "kgv": null
   },
@@ -45,7 +45,7 @@
    "land": "Japan",
    "waehrung": "USD",
    "kurs": 10.95,
-   "kurs_heimat": null,
+   "kurs_heimat": 3499.51,
    "marktkap_mrd": 126.74,
    "kgv": null
   },
@@ -54,7 +54,7 @@
    "land": "Japan",
    "waehrung": "USD",
    "kurs": 26.32,
-   "kurs_heimat": null,
+   "kurs_heimat": 168.23,
    "marktkap_mrd": 95.39,
    "kgv": 14.56
   },
@@ -63,7 +63,7 @@
    "land": "Japan",
    "waehrung": "USD",
    "kurs": 30.83,
-   "kurs_heimat": null,
+   "kurs_heimat": 2463.24,
    "marktkap_mrd": 140.79,
    "kgv": 29.64
   },
@@ -72,7 +72,7 @@
    "land": "Japan",
    "waehrung": "USD",
    "kurs": 15.11,
-   "kurs_heimat": null,
+   "kurs_heimat": 1207.25,
    "marktkap_mrd": 19113.77,
    "kgv": null
   },
@@ -81,7 +81,7 @@
    "land": "Japan",
    "waehrung": "USD",
    "kurs": 33.55,
-   "kurs_heimat": null,
+   "kurs_heimat": 5361.12,
    "marktkap_mrd": 20055.4,
    "kgv": null
   },
@@ -90,7 +90,7 @@
    "land": "Japan",
    "waehrung": "USD",
    "kurs": 641.89,
-   "kurs_heimat": null,
+   "kurs_heimat": 5128.54,
    "marktkap_mrd": 91.4,
    "kgv": 14.79
   },
@@ -99,7 +99,7 @@
    "land": "Japan",
    "waehrung": "USD",
    "kurs": 24.74,
-   "kurs_heimat": null,
+   "kurs_heimat": 19766.64,
    "marktkap_mrd": 157.96,
    "kgv": 7.39
   },
@@ -108,7 +108,7 @@
    "land": "Japan",
    "waehrung": "USD",
    "kurs": 10.34,
-   "kurs_heimat": null,
+   "kurs_heimat": 8261.4,
    "marktkap_mrd": 126.17,
    "kgv": null
   },
@@ -117,7 +117,7 @@
    "land": "Japan",
    "waehrung": "USD",
    "kurs": 51.69,
-   "kurs_heimat": null,
+   "kurs_heimat": 82598.04,
    "marktkap_mrd": 26132.3,
    "kgv": null
   },
@@ -126,7 +126,7 @@
    "land": "Japan",
    "waehrung": "USD",
    "kurs": 17.78,
-   "kurs_heimat": null,
+   "kurs_heimat": 11364.62,
    "marktkap_mrd": 11322.41,
    "kgv": null
   },
@@ -135,7 +135,7 @@
    "land": "Japan",
    "waehrung": "USD",
    "kurs": 13.7,
-   "kurs_heimat": null,
+   "kurs_heimat": 8756.77,
    "marktkap_mrd": 11293.13,
    "kgv": null
   },
@@ -144,7 +144,7 @@
    "land": "Japan",
    "waehrung": "USD",
    "kurs": 22.0,
-   "kurs_heimat": null,
+   "kurs_heimat": 17577.45,
    "marktkap_mrd": 25857.17,
    "kgv": null
   },
@@ -153,7 +153,7 @@
    "land": "Japan",
    "waehrung": "USD",
    "kurs": 17.82,
-   "kurs_heimat": null,
+   "kurs_heimat": 5695.09,
    "marktkap_mrd": 11421.23,
    "kgv": null
   },
@@ -162,7 +162,7 @@
    "land": "Japan",
    "waehrung": "USD",
    "kurs": 14.99,
-   "kurs_heimat": null,
+   "kurs_heimat": 239.53,
    "marktkap_mrd": 11846.4,
    "kgv": null
   },
@@ -171,7 +171,7 @@
    "land": "Japan",
    "waehrung": "USD",
    "kurs": 14.66,
-   "kurs_heimat": null,
+   "kurs_heimat": 23425.95,
    "marktkap_mrd": 6882.32,
    "kgv": null
   },
@@ -180,7 +180,7 @@
    "land": "Japan",
    "waehrung": "USD",
    "kurs": 34.3,
-   "kurs_heimat": null,
+   "kurs_heimat": 1826.99,
    "marktkap_mrd": 52.58,
    "kgv": null
   },
@@ -189,7 +189,7 @@
    "land": "Japan",
    "waehrung": "USD",
    "kurs": 12.06,
-   "kurs_heimat": null,
+   "kurs_heimat": 3854.26,
    "marktkap_mrd": 5637.11,
    "kgv": null
   },
@@ -198,7 +198,7 @@
    "land": "Japan",
    "waehrung": "USD",
    "kurs": 21.43,
-   "kurs_heimat": null,
+   "kurs_heimat": 6848.81,
    "marktkap_mrd": 69.45,
    "kgv": 326.78
   },
@@ -207,7 +207,7 @@
    "land": "Japan",
    "waehrung": "USD",
    "kurs": 22.51,
-   "kurs_heimat": null,
+   "kurs_heimat": 7193.97,
    "marktkap_mrd": 12057.31,
    "kgv": null
   },
@@ -216,7 +216,7 @@
    "land": "Japan",
    "waehrung": "USD",
    "kurs": 2.6,
-   "kurs_heimat": null,
+   "kurs_heimat": 1661.87,
    "marktkap_mrd": 12.85,
    "kgv": null
   },
@@ -225,7 +225,7 @@
    "land": "Japan",
    "waehrung": "USD",
    "kurs": 16.09,
-   "kurs_heimat": null,
+   "kurs_heimat": 2571.1,
    "marktkap_mrd": 10162.46,
    "kgv": null
   },
@@ -234,7 +234,7 @@
    "land": "Japan",
    "waehrung": "USD",
    "kurs": 149.44,
-   "kurs_heimat": null,
+   "kurs_heimat": 23879.77,
    "marktkap_mrd": 50.12,
    "kgv": 28.41
   },
@@ -243,7 +243,7 @@
    "land": "Japan",
    "waehrung": "USD",
    "kurs": 23.84,
-   "kurs_heimat": null,
+   "kurs_heimat": 3809.51,
    "marktkap_mrd": 6865.12,
    "kgv": null
   },
@@ -252,7 +252,7 @@
    "land": "Japan",
    "waehrung": "USD",
    "kurs": 3.76,
-   "kurs_heimat": null,
+   "kurs_heimat": 6008.29,
    "marktkap_mrd": 108.39,
    "kgv": 31.71
   },
@@ -261,7 +261,7 @@
    "land": "Japan",
    "waehrung": "USD",
    "kurs": 32.59,
-   "kurs_heimat": null,
+   "kurs_heimat": 5207.72,
    "marktkap_mrd": 8617.67,
    "kgv": null
   },
@@ -270,7 +270,7 @@
    "land": "Japan",
    "waehrung": "USD",
    "kurs": 10.87,
-   "kurs_heimat": null,
+   "kurs_heimat": 6947.89,
    "marktkap_mrd": 51.78,
    "kgv": 12.77
   },
@@ -279,7 +279,7 @@
    "land": "Japan",
    "waehrung": "USD",
    "kurs": 18.51,
-   "kurs_heimat": null,
+   "kurs_heimat": 5915.61,
    "marktkap_mrd": 74.37,
    "kgv": 17.0
   },
@@ -288,7 +288,7 @@
    "land": "Japan",
    "waehrung": "USD",
    "kurs": 15.58,
-   "kurs_heimat": null,
+   "kurs_heimat": 1244.8,
    "marktkap_mrd": 3331.25,
    "kgv": null
   },
@@ -297,7 +297,7 @@
    "land": "Japan",
    "waehrung": "USD",
    "kurs": 34.39,
-   "kurs_heimat": null,
+   "kurs_heimat": 1099.07,
    "marktkap_mrd": 38.84,
    "kgv": 5.84
   },
@@ -306,7 +306,7 @@
    "land": "Japan",
    "waehrung": "USD",
    "kurs": 8.68,
-   "kurs_heimat": null,
+   "kurs_heimat": 5548.08,
    "marktkap_mrd": 17.53,
    "kgv": 8.99
   },
@@ -315,7 +315,7 @@
    "land": "Japan",
    "waehrung": "USD",
    "kurs": 21.24,
-   "kurs_heimat": null,
+   "kurs_heimat": 6788.09,
    "marktkap_mrd": 2478.56,
    "kgv": null
   },
@@ -324,7 +324,7 @@
    "land": "Japan",
    "waehrung": "USD",
    "kurs": 18.55,
-   "kurs_heimat": null,
+   "kurs_heimat": 2964.2,
    "marktkap_mrd": 1858.57,
    "kgv": null
   },
@@ -333,7 +333,7 @@
    "land": "Japan",
    "waehrung": "USD",
    "kurs": 30.41,
-   "kurs_heimat": null,
+   "kurs_heimat": 1619.79,
    "marktkap_mrd": 4371.04,
    "kgv": null
   },
@@ -342,7 +342,7 @@
    "land": "Japan",
    "waehrung": "USD",
    "kurs": 17.97,
-   "kurs_heimat": null,
+   "kurs_heimat": 5743.03,
    "marktkap_mrd": 33.24,
    "kgv": 18.75
   },
@@ -351,7 +351,7 @@
    "land": "Japan",
    "waehrung": "USD",
    "kurs": 30.28,
-   "kurs_heimat": null,
+   "kurs_heimat": 4838.59,
    "marktkap_mrd": 40.35,
    "kgv": 11.64
   },
@@ -360,7 +360,7 @@
    "land": "Japan",
    "waehrung": "USD",
    "kurs": 38.5,
-   "kurs_heimat": null,
+   "kurs_heimat": 6152.11,
    "marktkap_mrd": 35.26,
    "kgv": 14.05
   },
@@ -369,7 +369,7 @@
    "land": "Japan",
    "waehrung": "USD",
    "kurs": 33.39,
-   "kurs_heimat": null,
+   "kurs_heimat": 5335.56,
    "marktkap_mrd": 49.64,
    "kgv": null
   },
@@ -378,7 +378,7 @@
    "land": "Japan",
    "waehrung": "USD",
    "kurs": 22.85,
-   "kurs_heimat": null,
+   "kurs_heimat": 7302.63,
    "marktkap_mrd": 6810.53,
    "kgv": null
   },
