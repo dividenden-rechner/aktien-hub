@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-14 12:29 UTC",
+ "updated": "2026-11-15 12:56 UTC",
  "quelle": "Alpha Vantage",
  "items": [
   {
@@ -37,7 +37,7 @@
    "fiscal": "2026-09-30",
    "cur": "USD",
    "zeit": "vor",
-   "act_try": "2026-11-14"
+   "act_try": "2026-11-15"
   },
   {
    "sym": "TECH",
@@ -141,10 +141,11 @@
    "rev_est": 1772561201250.0,
    "rev_n": 2,
    "est_stand": "2026-11-13",
-   "act_try": "2026-11-14",
+   "act_try": "2026-11-15",
    "eps_act": 0.46,
    "eps_act_basis": "GAAP laut AV",
-   "rep_date": "2026-11-13"
+   "rep_date": "2026-11-13",
+   "rev_act": 3758210970000.0
   },
   {
    "sym": "SMFG",
@@ -158,10 +159,11 @@
    "rev_est": 1361652794670.0,
    "rev_n": 2,
    "est_stand": "2026-11-13",
-   "act_try": "2026-11-14",
+   "act_try": "2026-11-15",
    "eps_act": 0.2483,
    "eps_act_basis": "GAAP laut AV",
-   "rep_date": "2026-11-12"
+   "rep_date": "2026-11-12",
+   "rev_act": 2770048125000.0
   },
   {
    "sym": "ACM",
