@@ -1,3 +1,4 @@
+import re
 #!/usr/bin/env python3
 """Taegliche Kennzahlen je Aktie (ab 11.11.2026): Xetra-Schlusskurs (Deutsche Boerse, verzoegert, kostenlos) +
 SEC-Jahreszahlen + EZB-Referenzkurse. Schreibt data/kennzahlen.json.
@@ -16,6 +17,9 @@ def asien_werte(out, rate, tag):
         kurse = json.load(open("data/asien-kurse-sheet.json", encoding="utf-8"))["firmen"]
     except Exception:
         return
+    # Stand des Sheets (z. B. "15.11.2026 15:25 (Berlin)") als ISO-Datum fuer die Eintraege
+    m = re.match(r"(\d{2})\.(\d{2})\.(\d{4})", str(json.load(open("data/asien-kurse-sheet.json", encoding="utf-8")).get("stand", "")))
+    stand_iso = f"{m.group(3)}-{m.group(2)}-{m.group(1)}" if m else tag
     for t, k in kurse.items():
         f = fund.get(t)
         heimat = k.get("kurs_heimat")
@@ -26,11 +30,14 @@ def asien_werte(out, rate, tag):
         eur = heimat / rate[w]
         eps = f.get("eps_ttm") or f.get("eps_jahr")
         dps = f.get("dps_jahr")
-        out[t] = {"isin": None, "name": k.get("name") or f.get("name"), "sektor": "Asien", "land": k.get("land") or f.get("land"),
-                  "waehrung": w, "kurs_heimat": heimat, "kurs_eur": round(eur, 4), "kurs_usd": None,
+        land = {"JP": "JP", "KR": "KR"}.get(w and {"JPY": "JP", "KRW": "KR"}[w])
+        usd = rate.get("USD")
+        out[t] = {"isin": None, "name": k.get("name") or f.get("name"), "sektor": "Asien", "land": land,
+                  "waehrung": w, "kurs_heimat": heimat, "kurs_eur": round(eur, 4), "kurs_usd": round(eur * usd, 2) if usd else None,
                   "boerse": {"JP": "Tokio", "KR": "Seoul"}.get("JP" if w == "JPY" else "KR"), "veraenderung": None,
-                  "datum": tag, "fx": rate[w], "gj": str(f.get("stichtag_jahr") or "")[:4] or None,
+                  "datum": stand_iso, "fx": rate[w], "gj": str(f.get("stichtag_jahr") or "")[:4] or None,
                   "boersenwert_eur": round(k["marktkap_mrd"] * 1e9 / rate["USD"]) if k.get("marktkap_mrd") and "USD" in rate else None,
+                  "boersenwert_usd": round(k["marktkap_mrd"] * 1e9) if k.get("marktkap_mrd") else None,
                   "dividende": dps, "rendite": r2(dps / heimat * 100) if dps and heimat else None,
                   "kgv": r2(heimat / eps, 1) if eps and eps > 0 else None,
                   "ausschuettung": r2(dps / eps * 100, 0) if dps and eps and eps > 0 else None,
