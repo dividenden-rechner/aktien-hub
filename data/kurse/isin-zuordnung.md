@@ -48,7 +48,7 @@ Korrekturen als {"TICKER": "ISIN"} in data/kurse/isin-fest.json eintragen.
 - ACGL (ARCH CAPITAL GROUP LTD.): bester Kandidat READCREST CAPITAL AG O.N. DE000A0LE3J1 (0.69)
 - ADC (AGREE REALTY CORPORATION): bester Kandidat GRENKE AG NA O.N. DE000A161N30 (0.60)
 - AEE (AMEREN CORP): bester Kandidat ARGENX SE EO -,10 NL0010832176 (0.70)
-- AMCR (AMCOR PLC): bester Kandidat FAMICORD AG DE000A0BL849 (0.80)
+- AMCR (Amcor plc): bester Kandidat FAMICORD AG DE000A0BL849 (0.80)
 - APTV (APTIV PLC): bester Kandidat AVIVA PLC          LS-,33 GB00BPQY8M80 (0.63)
 - ATO (ATMOS ENERGY CORP): bester Kandidat SFC ENERGY AG DE0007568578 (0.76)
 - BABA (Alibaba Group Holding Ltd): bester Kandidat CAIXABANK S.A. EO ES0140609019 (0.66)
