@@ -42,7 +42,8 @@ def main():
         try:
             firmen[t] = kurs(t)
         except Exception as e:  # einzelne Firma darf den Lauf nicht stoppen
-            fehler.append(f"{t}: {type(e).__name__}")
+            fehler.append(f"{t}: {type(e).__name__} {e}")
+            print(fehler[-1], file=sys.stderr)
         time.sleep(0.4)
     jetzt = datetime.now(timezone(timedelta(hours=1)))
     daten = {
