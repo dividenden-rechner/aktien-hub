@@ -1369,7 +1369,7 @@ function story(S){
   /* Uebersicht der Charts, die auf der Aktienseite unter den Kennzahlen stehen; fehlende Daten ergeben eine Karte "Keine Daten", nichts wird erfunden */
   const only=h=>/Keine Daten verfügbar/.test(h)?"":h;
   /* Kennzahlen-Tabelle neben dem Dividendenchart: nur Werte, die vorhanden sind */
-  const KZs=S.KZ||{},kzr=[["KGV",KZs.kgv,0],["KBV",KZs.kbv,0],["PEG",KZs.peg,0],["Schulden/EK",KZs.schulden_ek,0],["Ausschüttung",KZs.ausschuettung,1]].filter(r=>typeof r[1]==="number"&&isFinite(r[1])&&!(r[0]==="KGV"&&r[1]<=0));
+  const KZs=S.KZ||{},kzr=[["KGV",KZs.kgv,0],["KBV",KZs.kbv,0],["PEG",KZs.peg,0],["Schulden/EK",KZs.schulden_ek,0],["Ausschüttung / FCF",KZs.fcf_ausschuettung,1]].filter(r=>typeof r[1]==="number"&&isFinite(r[1])&&!(r[0]==="KGV"&&r[1]<=0));
   const kzCard=kzr.length?`<div class="card kzt"><h3>Kennzahlen</h3><table>${kzr.map(r=>`<tr><td>${r[0]}</td><td>${num(r[1],r[2]?0:2).replace(/,00$/,"")}${r[2]?" %":""}</td></tr>`).join("")}</table></div>`:"";
   const cards=[[kzCard?"":"full",only(bars("Dividende je Aktie",dn,divs,"var(--c-gold)",v=>num(v)))],["",kzCard],["",only(combo(inc,cur))],["",only(margins(inc,190))],["",only(fcfChart(cf,cur))],["",only(epsChart(inc,cur,205))]].filter(c=>c[1]);
   ov.innerHTML=`<div class="ctl"><button id="cl">✕ Schließen</button></div><div class="hint">Tippen blendet die Buttons aus, dann Screenshot</div>
