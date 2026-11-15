@@ -902,7 +902,7 @@ table.dt{border-collapse:collapse;width:100%;font-size:.9rem;min-width:620px}
       $("m-add").onclick = addManual; return;
     }
     var extra = b === "comdirect" ? '<div class="form-group"><label for="cd-date">Kaufdatum, falls unbekannt (gilt für alle Positionen)</label><input type="date" id="cd-date" value="' + today + '"></div>' : "";
-    box.innerHTML = "<h3>" + h[0] + "</h3><p>" + h[1] + "</p>" + extra + '<label class="drop" id="drop"><input type="file" id="imp-file" accept=".csv,text/csv,text/plain" multiple hidden><span>CSV-Datei hierher ziehen oder <u>auswählen</u></span></label><div id="imp-map"></div>';
+    box.innerHTML = "<h3>" + h[0] + "</h3><p>" + h[1] + "</p>" + extra + '<label class="drop" id="drop"><input type="file" id="imp-file" multiple hidden><span>CSV-Datei hierher ziehen oder <u>auswählen</u></span></label><div id="imp-map"></div>';
     var f = $("imp-file"), drop = $("drop");
     f.onchange = function () { readFiles(f.files, b); f.value = ""; };
     ["dragover", "dragenter"].forEach(function (ev) { drop.addEventListener(ev, function (e) { e.preventDefault(); drop.classList.add("over"); }); });
@@ -1385,7 +1385,7 @@ table.dt{border-collapse:collapse;width:100%;font-size:.9rem;min-width:620px}
   }
   function init() {
     document.querySelectorAll(".dtab").forEach(function (b) { b.onclick = function () { show(b.dataset.tab); }; });
-    var bs = document.getElementById("broker-sel"); if (bs) bs.onchange = function () { showBroker(bs.value); };
+    var bs = document.getElementById("broker-sel"); if (bs) { bs.onchange = function () { showBroker(bs.value); }; showBroker(bs.value); }
     var mitFMP = /key/.test(location.hash);
     $("btn-refresh").onclick = function () { mitFMP ? refresh() : refreshEigen(false); };
     setTimeout(function () { if (!mitFMP) refreshEigen(true); }, 300);   /* Kurse beim Öffnen still aktualisieren */ $("btn-stop").onclick = function () { RUN.abort = true; }; $("an-btn-stop").onclick = function () { RUN.abort = true; };
