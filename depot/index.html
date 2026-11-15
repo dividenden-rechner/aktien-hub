@@ -1028,6 +1028,15 @@ table.dt{border-collapse:collapse;width:100%;font-size:.9rem;min-width:620px}
   /* ---------- Aktualisieren mit eigenen Daten (ab 11.11.2026) ----------
      Kurs: Schlusskurs des letzten Handelstags je ISIN (Xetra, Tradegate, Börse Frankfurt; Deutsche Börse, verzögert).
      Dividende je Aktie, Wachstum, Serie und Sektor: data/kennzahlen.json (SEC-Jahresberichte, EZB-Kurse). Ohne Abrufe bei FMP. */
+  /* Deutsche ISIN aus der WKN: DE + "000" + WKN + Prüfziffer (Luhn über Buchstaben-Ziffern) */
+  function deIsinAusWkn(w) {
+    w = String(w || "").trim().toUpperCase();
+    if (!/^[A-Z0-9]{6}$/.test(w)) return null;
+    var body = "DE000" + w, s = "", i, d, sum = 0, dbl = true;
+    for (i = 0; i < body.length; i++) { var c = body[i]; s += /[A-Z]/.test(c) ? String(c.charCodeAt(0) - 55) : c; }
+    for (i = s.length - 1; i >= 0; i--) { d = +s[i]; if (dbl) { d *= 2; if (d > 9) d -= 9; } sum += d; dbl = !dbl; }
+    return body + ((10 - sum % 10) % 10);
+  }
   async function refreshEigen(still) {
     if (RUN.busy || S.demo) return;
     var keys = activeKeys(); if (!keys.length) return;
@@ -1042,7 +1051,9 @@ table.dt{border-collapse:collapse;width:100%;font-size:.9rem;min-width:620px}
       var KU = res[0] && res[0].k || {}, KZ = res[1] && res[1].werte || {}, byIsin = {}, ohne = [], mitKurs = 0;
       Object.keys(KZ).forEach(function (t) { if (KZ[t].isin) byIsin[KZ[t].isin] = t; });
       keys.forEach(function (k) {
-        var m = meta(k), isin = C.isIsin(k) ? k : (KZ[k] ? KZ[k].isin : null), t = isin ? byIsin[isin] : (KZ[k] ? k : null), K = t ? KZ[t] : null;
+        var m = meta(k), isin = C.isIsin(k) ? k : (KZ[k] ? KZ[k].isin : null);
+        if (!isin) { var dein = deIsinAusWkn(k); if (dein && KU[dein]) isin = dein; }   /* WKN-Import (z. B. Consors): ISIN ableiten, nur wenn Kursdaten dazu existieren */
+        var t = isin ? byIsin[isin] : (KZ[k] ? k : null), K = t ? KZ[t] : null;
         if (t && !m.sym) m.sym = t;
         var q = isin ? KU[isin] : null;
         if (q && q[2] === "EUR" && q[0] > 0) { m.price = q[0]; m.priceTs = Date.parse(res[0].datum); m.priceBoerse = q[3] || ""; mitKurs++; } else ohne.push(m.name || k);
