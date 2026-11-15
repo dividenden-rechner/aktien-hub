@@ -1037,6 +1037,8 @@ table.dt{border-collapse:collapse;width:100%;font-size:.9rem;min-width:620px}
     for (i = s.length - 1; i >= 0; i--) { d = +s[i]; if (dbl) { d *= 2; if (d > 9) d -= 9; } sum += d; dbl = !dbl; }
     return body + ((10 - sum % 10) % 10);
   }
+  /* WKN -> ISIN für Titel ohne ISIN im Import (Consors). Quellen: Kennzahlen-Daten, Wertpapierseiten (justETF, Börse Stuttgart, Commerzbank) */
+  var WKN_ISIN = { "A14TU4": "US5007541064", "A12DFH": "CH0244767585", "A2QJX9": "US74767V1098", "A3E3UN": "US35834F1049", "A0M430": "LU0323578657" };
   async function refreshEigen(still) {
     if (RUN.busy || S.demo) return;
     var keys = activeKeys(); if (!keys.length) return;
@@ -1052,6 +1054,7 @@ table.dt{border-collapse:collapse;width:100%;font-size:.9rem;min-width:620px}
       Object.keys(KZ).forEach(function (t) { if (KZ[t].isin) byIsin[KZ[t].isin] = t; });
       keys.forEach(function (k) {
         var m = meta(k), isin = C.isIsin(k) ? k : (KZ[k] ? KZ[k].isin : null);
+        if (!isin && WKN_ISIN[k]) isin = WKN_ISIN[k];
         if (!isin) { var dein = deIsinAusWkn(k); if (dein && KU[dein]) isin = dein; }   /* WKN-Import (z. B. Consors): ISIN ableiten, nur wenn Kursdaten dazu existieren */
         var t = isin ? byIsin[isin] : (KZ[k] ? k : null), K = t ? KZ[t] : null;
         if (t && !m.sym) m.sym = t;
