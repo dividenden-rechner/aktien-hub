@@ -9,7 +9,7 @@
 <link rel="canonical" href="https://dividenden-rechner.github.io/aktien-hub/aktien-hub/">
 <style>
 :root{color-scheme:light;--bg:#fff;--ink:#14202b;--mut:#5d6b78;--line:#dfe5ea;--card:#fff;--acc:#2f9e5b;--pos:#1a7a45;--neg:#b3372d;--bar:#2f9e5b;--bar2:#3a6ea5;--c-umsatz:#2f6fdb;--c-umsatz-l:#c9dafa;--c-gewinn:#1f9d55;--c-gewinn-m:#6cc190;--c-gewinn-l:#bfe5cf;--c-cash:#0e9aa7;--c-cash-l:#bde6ea;--c-kosten:#f08a24;--c-gold:#8cc63f}
-.kern{font-size:22px;font-weight:700;margin:2px 0 2px;line-height:1.25}.kern small{font-size:13px;font-weight:600;margin-left:8px;color:var(--mut)}.kleg{display:flex;gap:12px;flex-wrap:wrap;font-size:12px;color:var(--mut);margin:4px 0 2px}.kleg i{display:inline-block;width:10px;height:10px;border-radius:2px;margin-right:4px;vertical-align:-1px}
+.kzl{font-size:16px;font-weight:700;line-height:1.35;margin:4px 0 8px;color:var(--ink)}.kern{font-size:22px;font-weight:700;margin:2px 0 2px;line-height:1.25}.kern small{font-size:13px;font-weight:600;margin-left:8px;color:var(--mut)}.kleg{display:flex;gap:12px;flex-wrap:wrap;font-size:12px;color:var(--mut);margin:4px 0 2px}.kleg i{display:inline-block;width:10px;height:10px;border-radius:2px;margin-right:4px;vertical-align:-1px}
 *{box-sizing:border-box}
 body{margin:0;background:var(--bg);color:var(--ink);font:15px/1.5 "IBM Plex Sans",system-ui,sans-serif;padding:0}
 main{max-width:1080px;margin:0 auto;padding:20px 16px 48px}
@@ -468,7 +468,7 @@ function margins(inc,H0){
   D.forEach((d,i)=>s+=`<text x="${X(i)}" y="${H-5}" text-anchor="middle" font-size="11" ${i===n-1?'font-weight="700" style="fill:var(--ink)"':""}>${yl(d.y,n)}</text>`);
   const gl=S.find(a=>a.l==="Brutto"),ol=S.find(a=>a.l==="Operativ"),nl=S.find(a=>a.l==="Netto"),f=a=>a&&a.v[a.v.length-1]!=null?num(a.v[a.v.length-1],0)+" %":null;
   const zeile=(a,l)=>a&&a.v[a.v.length-1]!=null?`<div>${l} ${num(a.v[a.v.length-1],0)} %</div>`:"";
-  return `<div class="card"><h3>Margen</h3><div class="kern" style="color:var(--ink)">${zeile(gl,"Brutto")}${zeile(ol,"operativ")}${zeile(nl,"netto")}</div><p>Anteil vom Umsatz</p>${s}</svg></div>`;
+  return `<div class="card"><h3>Margen</h3><div class="kzl">${zeile(gl,"Brutto")}${zeile(ol,"operativ")}${zeile(nl,"netto")}</div><p>Anteil vom Umsatz</p>${s}</svg></div>`;
 }
 function fcfChart(cf,cur){
   const D=cf.filter(x=>x.freeCashFlow!=null&&!isNaN(x.freeCashFlow));if(!D.length)return nodata("Free Cashflow");
@@ -1372,7 +1372,7 @@ function story(S){
   /* Kennzahlen-Tabelle neben dem Dividendenchart: nur Werte, die vorhanden sind */
   const KZs=S.KZ||{},kzr=[["KGV",KZs.kgv,0],["KBV",KZs.kbv,0],["PEG",KZs.peg,0],["Schulden/EK",KZs.schulden_ek,0],["Ausschüttung / FCF",KZs.fcf_ausschuettung,1]].filter(r=>typeof r[1]==="number"&&isFinite(r[1])&&!(r[0]==="KGV"&&r[1]<=0));
   const kzCard=kzr.length?`<div class="card kzt"><h3>Kennzahlen</h3><table>${kzr.map(r=>`<tr><td>${r[0]}</td><td>${num(r[1],r[2]?0:2).replace(/,00$/,"")}${r[2]?" %":""}</td></tr>`).join("")}</table></div>`:"";
-  const kopfDiv=typeof KZs.rendite==="number"?`<div class="kern" style="color:var(--ink)">Dividendenrendite: ${num(KZs.rendite,2)} %</div>`:"";
+  const kopfDiv=typeof KZs.rendite==="number"?`<div class="kzl">Dividendenrendite: ${num(KZs.rendite,2)} %</div>`:"";
   const cards=[[kzCard?"":"full",only(bars("Dividende je Aktie",dn,divs,"var(--c-gold)",v=>num(v),kopfDiv))],["",kzCard],["",only(combo(inc,cur))],["",only(margins(inc,190))],["",only(fcfChart(cf,cur))],["",only(epsChart(inc,cur,205))]].filter(c=>c[1]);
   ov.innerHTML=`<div class="ctl"><button id="cl">✕ Schließen</button></div><div class="hint">Tippen blendet die Buttons aus, dann Screenshot</div>
   <div class="story"><div class="top"></div><div class="sh">Aktuelle Meldung</div><div class="bd">
