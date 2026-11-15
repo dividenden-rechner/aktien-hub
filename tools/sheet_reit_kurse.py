@@ -21,7 +21,7 @@ def zahl(s):
     s = (s or "").strip()
     if not s or s.startswith("#") or s in ("–", "-"):
         return None
-    s = s.replace("%", "").replace("+", "").replace(" Mrd.", "").replace(" $", "")
+    s = s.replace("\u00a0", " ").replace("%", "").replace("+", "").replace("Mrd.", "").replace("$", "").strip()
     if "," in s:
         s = s.replace(".", "").replace(",", ".")
     try:
