@@ -37,6 +37,25 @@ def asien_werte(out, rate, tag):
         land = {"JP": "JP", "KR": "KR"}.get(w and {"JPY": "JP", "KRW": "KR"}[w])
         usd = rate.get("USD")
         zuo = BRANCHEN.get(t, {})
+        b = k.get("bilanz") or {}
+        M = 1e6
+        ums, gew, ek = (b.get("umsatz") or 0) * M, (b.get("gewinn") or 0) * M, (b.get("eigenkapital") or 0) * M
+        schuld, liq, ocf = (b.get("schulden") or 0) * M, (b.get("liquide") or 0) * M, (b.get("ocf") or 0) * M
+        aktien = (b.get("aktien") or 0) * M
+        usd_je = rate["USD"] / rate[w] if w in rate and "USD" in rate else None   # USD je Einheit Heimatwaehrung
+        bilanz_werte = {
+            "roe": r2(gew / ek * 100, 1) if gew and ek > 0 else None,
+            "nettomarge": r2(gew / ums * 100, 1) if gew and ums > 0 else None,
+            "schulden_ek": r2(schuld / ek, 2) if schuld and ek > 0 else None,
+            "kbv": r2(heimat * aktien / ek, 2) if aktien and ek > 0 else None,
+            "umsatz_usd": round(ums * usd_je) if ums and usd_je else None,
+            "gewinn_usd": round(gew * usd_je) if gew and usd_je else None,
+            "ek_usd": round(ek * usd_je) if ek and usd_je else None,
+            "schulden_ges_usd": round(schuld * usd_je) if schuld and usd_je else None,
+            "cash_usd": round(liq * usd_je) if liq and usd_je else None,
+            "ocf_usd": round(ocf * usd_je) if ocf and usd_je else None,
+        }
+        bilanz_werte = {a: v for a, v in bilanz_werte.items() if v is not None}
         out[t] = {"isin": None, "name": k.get("name") or f.get("name"), "sektor": zuo.get("sektor") or "Asien",
                   "branche": zuo.get("branche"), "land": land,
                   "waehrung": w, "kurs_heimat": heimat, "kurs_eur": round(eur, 4), "kurs_usd": round(eur * usd, 2) if usd else None,
@@ -47,7 +66,7 @@ def asien_werte(out, rate, tag):
                   "dividende": dps, "rendite": r2(dps / heimat * 100) if dps and heimat else None,
                   "kgv": r2(heimat / eps, 1) if eps and eps > 0 else None,
                   "ausschuettung": r2(dps / eps * 100, 0) if dps and eps and eps > 0 else None,
-                  "dividende_berechnet": False, "quelle": f.get("quelle")}
+                  "dividende_berechnet": False, "quelle": f.get("quelle"), **bilanz_werte}
 
 
 def ezb_kurse():

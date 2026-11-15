@@ -31,6 +31,14 @@ def zahl(s):
         return None
 
 
+# Zusätzliche Spalten im Sheet (Beginn des Spaltentitels, Mio. Heimatwährung, Stückzahl in Mio.)
+BILANZ_SPALTEN = {
+    "Umsatz (Mio.)": "umsatz", "Gewinn (Mio.)": "gewinn", "Eigenkapital (Mio.)": "eigenkapital",
+    "Schulden gesamt (Mio.)": "schulden", "Liquide Mittel (Mio.)": "liquide",
+    "Operativer Cashflow (Mio.)": "ocf", "Aktien (Mio.)": "aktien",
+}
+
+
 def ticker(s):
     s = (s or "").strip()
     return re.sub(r"^[A-Z]+:", "", s)
@@ -89,7 +97,15 @@ def main():
             ratio = zahl(feld(r, "Aktien je ADR"))
             if ratio:
                 heimat = round(kurs * jpy_kurs / ratio, 2)
+        bilanz = {}
+        for spalte, schluessel in BILANZ_SPALTEN.items():
+            i = next((idx[k] for k in idx if k.startswith(spalte)), None)
+            if i is not None and i < len(r):
+                v = zahl(r[i])
+                if v is not None:
+                    bilanz[schluessel] = v   # in Millionen Heimatwährung, so wie im Sheet eingetragen
         firmen[t] = {
+            "bilanz": bilanz,
             "name": feld(r, "Unternehmen").strip(),
             "land": feld(r, "Land").strip(),
             "waehrung": feld(r, "Währung").strip() or None,
