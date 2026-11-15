@@ -4,6 +4,7 @@ on:
     branches: [main]
     paths:
       - "tools/sec_quartal.py"
+      - "tools/sec_ttm.py"
       - ".github/workflows/sec-quartal.yml"
   workflow_dispatch:
 concurrency:
@@ -23,7 +24,7 @@ jobs:
       - name: Quartalszahlen aus EDGAR holen
         env:
           SEC_UA: ${{ secrets.SEC_UA }}
-        run: python3 tools/sec_quartal.py
+        run: python3 tools/sec_quartal.py && python3 tools/sec_ttm.py
       - name: Ergebnis committen
         run: |
           git config user.name "sec-bot"
