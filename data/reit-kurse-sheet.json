@@ -1,6 +1,227 @@
 {
- "stand": "15.11.2026 09:14 (Berlin)",
+ "stand": "15.11.2026 09:22 (Berlin)",
  "quelle": "Eigene REIT-Liste (Google Sheets)",
- "anzahl": 0,
- "kurse": {}
+ "anzahl": 55,
+ "kurse": {
+  "WELL": {
+   "kurs": 244.46,
+   "marktkap_mrd": 179.34
+  },
+  "PLD": {
+   "kurs": 128.67,
+   "marktkap_mrd": 122.3
+  },
+  "EQIX": {
+   "kurs": 1053.79,
+   "marktkap_mrd": 104.31
+  },
+  "AMT": {
+   "kurs": 191.64,
+   "marktkap_mrd": 88.88
+  },
+  "SPG": {
+   "kurs": 232.97,
+   "marktkap_mrd": 75.13
+  },
+  "DLR": {
+   "kurs": 179.99,
+   "marktkap_mrd": 68.09
+  },
+  "PSA": {
+   "kurs": 332.59,
+   "marktkap_mrd": 62.14
+  },
+  "O": {
+   "kurs": 58.82,
+   "marktkap_mrd": 55.94
+  },
+  "VMRK": {
+   "kurs": 64.22,
+   "marktkap_mrd": 23.87
+  },
+  "VTR": {
+   "kurs": 88.92,
+   "marktkap_mrd": 47.02
+  },
+  "CCI": {
+   "kurs": 90.83,
+   "marktkap_mrd": 38.65
+  },
+  "EXR": {
+   "kurs": 158.5,
+   "marktkap_mrd": 33.08
+  },
+  "IRM": {
+   "kurs": 113.75,
+   "marktkap_mrd": 33.88
+  },
+  "VICI": {
+   "kurs": 25.01,
+   "marktkap_mrd": 27.54
+  },
+  "SBAC": {
+   "kurs": 189.35,
+   "marktkap_mrd": 19.77
+  },
+  "ESS": {
+   "kurs": 273.32,
+   "marktkap_mrd": 17.58
+  },
+  "HST": {
+   "kurs": 25.5,
+   "marktkap_mrd": 17.47
+  },
+  "KIM": {
+   "kurs": 25.55,
+   "marktkap_mrd": 16.98
+  },
+  "LAMR": {
+   "kurs": 161.76,
+   "marktkap_mrd": 16.43
+  },
+  "INVH": {
+   "kurs": 26.85,
+   "marktkap_mrd": 15.47
+  },
+  "WPC": {
+   "kurs": 65.67,
+   "marktkap_mrd": 15.11
+  },
+  "WY": {
+   "kurs": 20.81,
+   "marktkap_mrd": 14.99
+  },
+  "OHI": {
+   "kurs": 47.05,
+   "marktkap_mrd": 14.32
+  },
+  "SUI": {
+   "kurs": 118.52,
+   "marktkap_mrd": 14.15
+  },
+  "REG": {
+   "kurs": 76.11,
+   "marktkap_mrd": 14.23
+  },
+  "DOC": {
+   "kurs": 19.98,
+   "marktkap_mrd": 13.78
+  },
+  "MAA": {
+   "kurs": 117.89,
+   "marktkap_mrd": 13.67
+  },
+  "NLY": {
+   "kurs": 17.65,
+   "marktkap_mrd": 13.91
+  },
+  "AMH": {
+   "kurs": 32.42,
+   "marktkap_mrd": 11.59
+  },
+  "ADC": {
+   "kurs": 69.37,
+   "marktkap_mrd": 9.03
+  },
+  "NNN": {
+   "kurs": 41.18,
+   "marktkap_mrd": 7.99
+  },
+  "EPRT": {
+   "kurs": 27.78,
+   "marktkap_mrd": 6.12
+  },
+  "BNL": {
+   "kurs": 17.6,
+   "marktkap_mrd": 3.38
+  },
+  "FCPT": {
+   "kurs": 23.32,
+   "marktkap_mrd": 2.56
+  },
+  "NTST": {
+   "kurs": 18.51,
+   "marktkap_mrd": 2.33
+  },
+  "GTY": {
+   "kurs": 28.66,
+   "marktkap_mrd": 1.92
+  },
+  "GNL": {
+   "kurs": 6.58,
+   "marktkap_mrd": 1.47
+  },
+  "GLPI": {
+   "kurs": 39.34,
+   "marktkap_mrd": 11.44
+  },
+  "EPR": {
+   "kurs": 60.15,
+   "marktkap_mrd": 4.61
+  },
+  "STAG": {
+   "kurs": 36.97,
+   "marktkap_mrd": 7.13
+  },
+  "REXR": {
+   "kurs": 37.55,
+   "marktkap_mrd": 7.97
+  },
+  "EGP": {
+   "kurs": 197.62,
+   "marktkap_mrd": 10.63
+  },
+  "FR": {
+   "kurs": 55.18,
+   "marktkap_mrd": 7.32
+  },
+  "COLD": {
+   "kurs": 16.69,
+   "marktkap_mrd": 4.77
+  },
+  "CUBE": {
+   "kurs": 44.91,
+   "marktkap_mrd": 10.03
+  },
+  "FRT": {
+   "kurs": 112.92,
+   "marktkap_mrd": 9.71
+  },
+  "BRX": {
+   "kurs": 30.3,
+   "marktkap_mrd": 9.3
+  },
+  "SKT": {
+   "kurs": 39.5,
+   "marktkap_mrd": 4.54
+  },
+  "ELS": {
+   "kurs": 62.12,
+   "marktkap_mrd": 12.1
+  },
+  "CPT": {
+   "kurs": 99.15,
+   "marktkap_mrd": 9.92
+  },
+  "UDR": {
+   "kurs": 36.44,
+   "marktkap_mrd": 11.55
+  },
+  "ARE": {
+   "kurs": 43.84,
+   "marktkap_mrd": 7.64
+  },
+  "BXP": {
+   "kurs": 63.78,
+   "marktkap_mrd": 10.19
+  },
+  "CTRE": {
+   "kurs": 38.07,
+   "marktkap_mrd": 9.81
+  },
+  "AGNC": {
+   "kurs": 8.23,
+   "marktkap_mrd": 10.48
+  }
+ }
 }
