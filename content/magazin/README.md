@@ -16,11 +16,10 @@ Datei anklicken, dann Stift-Symbol: Zeile `draft: true` löschen und speichern, 
 | 29.10.2026 22:42 | Amazon steigert Umsatz im dritten Quartal auf 201,9 Milliarden Dollar | [79738970_2026-10-29/7757_2242-amazon-q3-2026-zahlen.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/79738970_2026-10-29/7757_2242-amazon-q3-2026-zahlen.md) |
 | 29.10.2026 10:12 | Shell erzielt im dritten Quartal 10,8 Milliarden Dollar Gewinn | [79738970_2026-10-29/8987_1012-shell-q3-2026-ergebnisse.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/79738970_2026-10-29/8987_1012-shell-q3-2026-ergebnisse.md) |
 
-### Online (392)
+### Online (391)
 
 | Datum | Titel | Datei |
 |---|---|---|
-| 15.11.2026 21:51 | Wer in der Börsenwoche vom 16. November bis 20. November meldet | [79738884_2026-11-15/7848_2151-wochenvorschau-2026-11-16.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/79738884_2026-11-15/7848_2151-wochenvorschau-2026-11-16.md) |
 | 14.11.2026 19:00 | News Ausblick: Die Woche der Wahrheit für Nvidia, Anthropic und die Inflation | [79738885_2026-11-14/9500_1900-news-ausblick.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/79738885_2026-11-14/9500_1900-news-ausblick.md) |
 | 14.11.2026 06:00 | Nvidia ohne Huang: Ein Gründer geht, und der Markt prüft, was von der Firma bleibt | [79738889_2026-11-10/9640_2140-nvidia-huang-ruecktritt-wochenend-analyse.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/79738889_2026-11-10/9640_2140-nvidia-huang-ruecktritt-wochenend-analyse.md) |
 | 14.11.2026 06:00 | Gasturbinen: Wer hat die besten Chancen? | [79738885_2026-11-14/9399_0600-gasturbinen-dreikampf-siemens-energy-ge-vernova-mitsubishi-heavy.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/79738885_2026-11-14/9399_0600-gasturbinen-dreikampf-siemens-energy-ge-vernova-mitsubishi-heavy.md) |
