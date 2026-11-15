@@ -17,6 +17,10 @@ def asien_werte(out, rate, tag):
         kurse = json.load(open("data/asien-kurse-sheet.json", encoding="utf-8"))["firmen"]
     except Exception:
         return
+    try:
+        BRANCHEN = json.load(open("data/asien-branchen.json", encoding="utf-8")).get("firmen", {})
+    except Exception:
+        BRANCHEN = {}
     # Stand des Sheets (z. B. "15.11.2026 15:25 (Berlin)") als ISO-Datum fuer die Eintraege
     m = re.match(r"(\d{2})\.(\d{2})\.(\d{4})", str(json.load(open("data/asien-kurse-sheet.json", encoding="utf-8")).get("stand", "")))
     stand_iso = f"{m.group(3)}-{m.group(2)}-{m.group(1)}" if m else tag
@@ -32,7 +36,9 @@ def asien_werte(out, rate, tag):
         dps = f.get("dps_jahr")
         land = {"JP": "JP", "KR": "KR"}.get(w and {"JPY": "JP", "KRW": "KR"}[w])
         usd = rate.get("USD")
-        out[t] = {"isin": None, "name": k.get("name") or f.get("name"), "sektor": "Asien", "land": land,
+        zuo = BRANCHEN.get(t, {})
+        out[t] = {"isin": None, "name": k.get("name") or f.get("name"), "sektor": zuo.get("sektor") or "Asien",
+                  "branche": zuo.get("branche"), "land": land,
                   "waehrung": w, "kurs_heimat": heimat, "kurs_eur": round(eur, 4), "kurs_usd": round(eur * usd, 2) if usd else None,
                   "boerse": {"JP": "Tokio", "KR": "Seoul"}.get("JP" if w == "JPY" else "KR"), "veraenderung": None,
                   "datum": stand_iso, "fx": rate[w], "gj": str(f.get("stichtag_jahr") or "")[:4] or None,

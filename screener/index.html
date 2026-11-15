@@ -552,7 +552,7 @@ article.wide>:not(.tool):not(.cards){max-width:760px}
   var KZ = null;
   async function kzLaden() { if (KZ) return KZ; var r = await fetch("../data/kennzahlen.json?v=" + Math.floor(Date.now() / 36e5)); if (!r.ok) throw new Error("Eigene Daten nicht ladbar"); KZ = await r.json(); return KZ; }
   function ownRow(sym, K) {
-    var p = { symbol: sym, name: K.name || sym, companyName: K.name || sym, sector: K.sektor || "", industry: "", price: K.kurs_usd, mcap: K.boersenwert_usd, country: K.land || "", exchange: K.boerse || "", isEtf: false };
+    var p = { symbol: sym, name: K.name || sym, companyName: K.name || sym, sector: K.sektor || "", industry: K.branche || "", price: K.kurs_usd, mcap: K.boersenwert_usd, country: K.land || "", exchange: K.boerse || "", isEtf: false };
     return { profile: p, own: K };
   }
 var REGION = {"DE":"R:EU","AT":"R:EU","CH":"R:EU","FR":"R:EU","NL":"R:EU","BE":"R:EU","LU":"R:EU","IT":"R:EU","ES":"R:EU","PT":"R:EU","IE":"R:EU","GB":"R:EU","JE":"R:EU","DK":"R:EU","SE":"R:EU","NO":"R:EU","FI":"R:EU","US":"R:NA","CA":"R:NA","BM":"R:NA","JP":"R:AP","AU":"R:AP","HK":"R:AP","SG":"R:AP","KR":"R:AP","TW":"R:AP","CN":"R:AP","IN":"R:AP","BR":"R:RW","MX":"R:RW","ZA":"R:RW","IL":"R:RW"};
@@ -565,7 +565,7 @@ var REGION = {"DE":"R:EU","AT":"R:EU","CH":"R:EU","FR":"R:EU","NL":"R:EU","BE":"
     work = work.filter(function (D) {
       if (sec && D.profile.sector !== sec) return false;
       if (land && !landPasst(D.profile.country, land)) return false;
-      if (ind) { if (/reit|immobil/.test(ind)) return D.profile.sector === "Real Estate"; if (/bdc/.test(ind)) return !!D.own.bdc; return String(D.profile.name).toLowerCase().indexOf(ind) > -1; }
+      if (ind) { if (/reit|immobil/.test(ind)) return D.profile.sector === "Real Estate"; if (/bdc/.test(ind)) return !!D.own.bdc; return String(D.profile.name).toLowerCase().indexOf(ind) > -1 || String(D.profile.industry || "").toLowerCase().indexOf(ind) > -1; }
       return true;
     });
     if (sec || ind || land) log.push("nach Sektor/Land/Branche: " + work.length);
