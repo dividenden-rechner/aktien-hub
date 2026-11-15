@@ -956,6 +956,7 @@ table.dt{border-collapse:collapse;width:100%;font-size:.9rem;min-width:620px}
     if (fresh.length) S.imports.push({ label: label, count: fresh.length, date: new Date().toLocaleDateString("de-DE"), ids: fresh.map(function (t) { return t.id; }) });
     fresh.forEach(function (t) { if (t.key && t.name && t.name !== t.key) { var m = meta(t.key); if (!m.name) m.name = t.name; } });
     save(); invalidate();
+    if (!mitFMP) refreshEigen(true);   /* nach jedem Import die Kurse nachladen */
     setMsg("imp-msg", pre + res.tx.length + " Transaktionen erkannt, " + fresh.length + " neu, " + (res.tx.length - fresh.length) + " schon vorhanden." + (sk.length ? " Nicht verarbeitet: " + sk.join(", ") + "." : ""), fresh.length ? "ok" : "");
     renderImport();
     if (fresh.length) setTimeout(function () { if (confirm("Import fertig. Jetzt zu „Insight“ wechseln?")) show("insight"); }, 50);
