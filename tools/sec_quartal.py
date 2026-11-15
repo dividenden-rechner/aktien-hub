@@ -6,7 +6,7 @@ Die Abfrage braucht data.sec.gov; im Sandbox-Netz nicht erreichbar, daher laeuft
 Kontaktangabe fuer die SEC per Umgebungsvariable SEC_UA (z. B. 'Firmenname kontakt@domain')."""
 import json, os, time, datetime, urllib.request, urllib.error
 
-UA = os.environ.get("SEC_UA", "dividenden-rechner.de Aktien-Hub")
+UA = os.environ.get("SEC_UA") or "dividenden-rechner.de Aktien-Hub"   # leerer Secret-Wert zählt als nicht gesetzt
 QUARTALE = 8
 # Reihenfolge = Prioritaet; das erste vorhandene XBRL-Konzept gewinnt je Quartal
 KONZEPTE = {
@@ -96,6 +96,8 @@ def main():
                "firmen": ausgabe},
               open("data/sec/quartal.json", "w", encoding="utf-8"), ensure_ascii=False, separators=(",", ":"))
     print(len(ausgabe), "Firmen mit Quartalsdaten;", len(fehler), "ohne Abruf:", ", ".join(fehler[:30]))
+    if not ausgabe:
+        raise SystemExit("Keine Quartalsdaten erhalten. Bitte den Secret SEC_UA mit einer Kontaktangabe setzen.")
 
 
 if __name__ == "__main__":
