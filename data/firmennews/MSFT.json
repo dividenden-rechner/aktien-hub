@@ -1,12 +1,12 @@
 {
  "hub": "MSFT",
  "name": "MICROSOFT CORP",
- "stand": "2026-11-14",
+ "stand": "2026-11-15",
  "quelle": "Google News (Wirtschaftsmedien, deutsch und englisch)",
  "meldungen": [
   {
    "titel": "Microsoft Says Making Progress Fixing One of Its Longest Outages",
-   "quelle": "Bloomberg",
+   "quelle": "Bloomberg.com",
    "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxOeENuMk4tX1MwYkVSbFlHNFhKc0RGTFBMbTdrMzRLYktPdDBfeFJmT3lhZkp4QmZsOFo5SUVSZFh5VzZPN2xMZ0FMcXZzOXVTSzJkWUdJSFdRSjVNZHVnV3pXWDh2Mk1kM19uSkw5MlFKSS1qcnpzbG4zcjRJM3VGX1MzaEtsdHExWlloTWdzQ0cxaFFvNUJzWk9CcXJRVGdvSGpGT3RJSHZFNUcxTkplNnF4cDdxUQ?oc=5",
    "datum": "2026-11-14",
    "sprache": "en"
@@ -28,9 +28,16 @@
    "typ": "pm"
   },
   {
-   "titel": "Microsoft Outage Disrupts Oil Trader Data and Dealmaking",
-   "quelle": "Bloomberg",
-   "link": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxOMnRsek9walg2RUx5dlB5bzBZVTdqTVNydHp2VTBTdmxfWTdNY3pFWmQzQk8zckhRQWY5MWd0aUpPMHB1Z293ZF82WjVwdTg3VXRHckNpV0QyMFJMQUJ4WDZ0aEpZbnJVcmxVLTNiLXVfV3FuU1BCeXlhZWF2YzlZZGIzTWR0ZHZUa1R4QVpIblAxMWxVNmtiaXduSUlrNV9URGhwalMwYVVoNzQ?oc=5",
+   "titel": "Microsoft says services experiencing ‘broad recovery’ after global outage",
+   "quelle": "Financial Times",
+   "link": "https://news.google.com/rss/articles/CBMihAFBVV95cUxNc1JOaEdsdTdDNG5MMWZtVW5rSWx1S2dKTXZ3ZmdOVUd2X2NFa1BmeS1kWkZpZ0diYmxZNGEtQ3R1MzNVN0RBM0txbHpfakxKR1MtblJZMFhsXzlacTlqUEpCZGZicmZLcm5yaHU3bGRDX1hBUHBPNEZ3TXJlZEwtTXRGeHg?oc=5",
+   "datum": "2026-11-13",
+   "sprache": "en"
+  },
+  {
+   "titel": "Microsoft Races to Fix Outlook in One of Its Longest Outages",
+   "quelle": "Bloomberg.com",
+   "link": "https://news.google.com/rss/articles/CBMirAFBVV95cUxQbXc2TFhrUDB2c25fNklOQ3BNd2UtVVgxNXA3SE9TQTJTT3Rrd0FCWjBhclhDR2tGYWktTGJmTkUzQ09kbWEtaFR1Rm1ydHg4dmJWb1J3QmV1bmtjR1FmZ2Q4eXAwRjkwNTV1aGNlX3d6RjQyeTZhMmZRYndjZjJpSmhvRjZjV1o2NmlxNm80OVJISEtIUllIMzMzakpyZFVOcDA5d1ZSZlpFUnVH?oc=5",
    "datum": "2026-11-13",
    "sprache": "en"
   },
@@ -38,13 +45,6 @@
    "titel": "Microsoft outage exposes global reliance on core tech providers",
    "quelle": "Financial Times",
    "link": "https://news.google.com/rss/articles/CBMihAFBVV95cUxPV2gtUWFFTFVPQlVyam5rc0x4NnFKd1pPZTNCeWIzQllEd0hlNFJJTGVKcnhRTndjQ3Y0X19wUDFCNmRoXzlNWEVXazNkYkE3aGJfeWp3OVlSVUNZUGgyalE3X0EyeTJnZy02bDN3M3JvU1NwU3FLWW1Fd2NpNVM0YW5BOE0?oc=5",
-   "datum": "2026-11-13",
-   "sprache": "en"
-  },
-  {
-   "titel": "Microsoft says services experiencing ‘broad recovery’ after global outage",
-   "quelle": "Financial Times",
-   "link": "https://news.google.com/rss/articles/CBMihAFBVV95cUxNc1JOaEdsdTdDNG5MMWZtVW5rSWx1S2dKTXZ3ZmdOVUd2X2NFa1BmeS1kWkZpZ0diYmxZNGEtQ3R1MzNVN0RBM0txbHpfakxKR1MtblJZMFhsXzlacTlqUEpCZGZicmZLcm5yaHU3bGRDX1hBUHBPNEZ3TXJlZEwtTXRGeHg?oc=5",
    "datum": "2026-11-13",
    "sprache": "en"
   },

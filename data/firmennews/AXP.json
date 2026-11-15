@@ -1,7 +1,15 @@
 {
  "hub": "AXP",
  "name": "AMERICAN EXPRESS CO",
- "stand": "2026-11-14",
+ "stand": "2026-11-15",
  "quelle": "Google News (Wirtschaftsmedien, deutsch und englisch)",
- "meldungen": []
+ "meldungen": [
+  {
+   "titel": "American Express",
+   "quelle": "Forbes",
+   "link": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE5xMnd1RXpJSUNDR290RjBXNTA4M2dnUTN1RlNTdm1rMVBmQS0ySFNTVm80bGZyaDJfR3pYbm80Si12NlVMdFZCNzJLWTd2bC1heDlUOW40Sm40TE1rZWc4?oc=5",
+   "datum": "2026-11-12",
+   "sprache": "en"
+  }
+ ]
 }

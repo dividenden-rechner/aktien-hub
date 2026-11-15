@@ -1,7 +1,7 @@
 {
  "hub": "RWE.DE",
  "name": "RWE",
- "stand": "2026-11-14",
+ "stand": "2026-11-15",
  "quelle": "Google News (Wirtschaftsmedien, deutsch und englisch)",
  "meldungen": [
   {
@@ -33,13 +33,6 @@
    "sprache": "de"
   },
   {
-   "titel": "KKR, Germany’s RWE Invest $16 Billion in U.K. Wind-Power Projects",
-   "quelle": "WSJ",
-   "link": "https://news.google.com/rss/articles/CBMipwFBVV95cUxOaldxMGtXXzBtUjFRLXdaU0pIanMzXzJEM19WOVpJSDRzXy1yQm1rRkZ3YlZfeEpOd05XUGNRTXhZNXNJUFdMN0Jyek1MMktpVElTREJ4a2JOU2tkRVBldUNsWmpBbjV4WTl5NXB2NlhSd0p6c1NpV0NZTmZJYjVlR216bGczLWhOVllhaXAyN1lmTUV4QmxJWS1zb1ZpM2RlbHR3VGh0Yw?oc=5",
-   "datum": "2026-11-11",
-   "sprache": "en"
-  },
-  {
    "titel": "RWE, KKR finalise $16 billion investment in UK renewables",
    "quelle": "Reuters",
    "link": "https://news.google.com/rss/articles/CBMipwFBVV95cUxPMWZqWUJrNUF3VmVHaFNVY2FzczhHRm1hLTN1b3BBNTRQc2xzOS1XLTgyMTkxVFNON29LQnNiV1NFYjRNZXFrSnJnV2pvaC1nTklFR2JHZlRSMklwQUxmbThGdWdCakRvVlNCX2pYN3pwTFVNSW43MVBTblN4UHhKWFhHS21WdnNsSFRXQXBQTldUR1dDZzJXTXEtZlpPaEZ5VUJUUGludw?oc=5",
@@ -47,16 +40,23 @@
    "sprache": "en"
   },
   {
-   "titel": "Deal worth £12bn to build windfarms off Norfolk coast",
-   "quelle": "BBC",
-   "link": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE0xbEhoSGgzWjdOd280UkFMOHdEa0Z0SzUzdlQ1UEhURDZiZjhJVGZQYV9lY3hFQmRxYUFHcVpCQTFiMXN4c1FXVm1wLXY3WGtYYlVyeTJsRTVEdGc?oc=5",
+   "titel": "KKR, Germany’s RWE Invest $16 Billion in U.K. Wind-Power Projects",
+   "quelle": "WSJ",
+   "link": "https://news.google.com/rss/articles/CBMipwFBVV95cUxOaldxMGtXXzBtUjFRLXdaU0pIanMzXzJEM19WOVpJSDRzXy1yQm1rRkZ3YlZfeEpOd05XUGNRTXhZNXNJUFdMN0Jyek1MMktpVElTREJ4a2JOU2tkRVBldUNsWmpBbjV4WTl5NXB2NlhSd0p6c1NpV0NZTmZJYjVlR216bGczLWhOVllhaXAyN1lmTUV4QmxJWS1zb1ZpM2RlbHR3VGh0Yw?oc=5",
    "datum": "2026-11-11",
    "sprache": "en"
   },
   {
-   "titel": "RWE posts 9-month core earnings above expectations on favourable conditions",
-   "quelle": "Reuters",
-   "link": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxOd3E3QUlLYU5FdXZoYkV3V1dLakpjVENEN1gya2c0YkNydU1CUEoyOThPRm9JX1ltLVZOWHVILVdndzhqOFFOWk50U2taSzU1RXJGQlRHSHlUSmptYWZoY2JpZW94ZVhGNUlIVnY0UzBFVURHdXNHZmlYbGtpb3h6V1dpNmxadV8xV3NqaVZpNzRUQnZ2ajFJN3B4Ykoyazh4S2NUWG1mdTkzWWxCeVg5VEd4TFBLX1ZGU0Q4NG55OUlXZw?oc=5",
+   "titel": "Data centre demand unbroken despite scrutiny: RWE CFO",
+   "quelle": "CNBC",
+   "link": "https://news.google.com/rss/articles/CBMimwFBVV95cUxNeXV6TEZZaTJmb2IzME9sYXJYd2JlbHlwVTNtcmtJaWU0bE41SDl0RW5hMm5JamZ5X3d4Mkw4SUhVMk53Vy16MTZpSExWTHhHMGxrbjF6bU1CeDEtRThKRzNMSTBwcGV3cDhYcEV4NExvcXNldWJRY2RqUEtHUGJVZ0tacHBKVDdYbWJ5RERfTXU0R3Nkd1JIMUxJdw?oc=5",
+   "datum": "2026-11-11",
+   "sprache": "en"
+  },
+  {
+   "titel": "Deal worth £12bn to build windfarms off Norfolk coast",
+   "quelle": "BBC",
+   "link": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE0xbEhoSGgzWjdOd280UkFMOHdEa0Z0SzUzdlQ1UEhURDZiZjhJVGZQYV9lY3hFQmRxYUFHcVpCQTFiMXN4c1FXVm1wLXY3WGtYYlVyeTJsRTVEdGc?oc=5",
    "datum": "2026-11-11",
    "sprache": "en"
   }

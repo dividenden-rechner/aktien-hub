@@ -1,9 +1,16 @@
 {
  "hub": "BMW.DE",
  "name": "BMW",
- "stand": "2026-11-14",
+ "stand": "2026-11-15",
  "quelle": "Google News (Wirtschaftsmedien, deutsch und englisch)",
  "meldungen": [
+  {
+   "titel": "Two die in Leeds car crash after police pursuit",
+   "quelle": "BBC",
+   "link": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE1xWGlGRWpjVDFpLXNibXVaLXBQdGdRV0pSWVZiRU9QazEybEwwSVA5dWdVd2tCZTBidmpvdnBGVGlRZ2VJLXJRZEh0WUJtOXBvX1lZQWRxRzlvQmM?oc=5",
+   "datum": "2026-11-15",
+   "sprache": "en"
+  },
   {
    "titel": "US urges owners of 720,000 BMW vehicles to park outside over fire risks",
    "quelle": "Reuters",
@@ -13,9 +20,16 @@
   },
   {
    "titel": "BMW Owners Told to Park Outside Over Risk of Cars Catching Fire",
-   "quelle": "Bloomberg",
+   "quelle": "Bloomberg.com",
    "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxPb3QxVUk5VHhIZlpzQ1lOLVhLSVJTSmFXLVZKc2ljZVFBWHZQejd5S2Y1SFFldUxTc3BLLUFVSUxKcHQwLXVlbnR5M1ZnakMzcFdaajVBS1RCa0hSVllFb0VXS0RER2UwV3Jmem1GeVZNTm5DTWk3dTZGaXBWSEo5Tk5aM3YwdHMybzZZbTBKUTNHblF1eWhDN2JkSHBmZjcyMXFZXzM3XzBaNlFfMl9kc3RzSU4?oc=5",
    "datum": "2026-11-13",
+   "sprache": "en"
+  },
+  {
+   "titel": "Worker's terror as ram-raiders crash BMW into shop",
+   "quelle": "BBC",
+   "link": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE5FWEZXSFE4dlZkZ0JDOTFITEZHWnlkek5kUHQ2OVhIWm9xQ0VPbk5rMHFISzBVdTVHaFJ0ZWZsWTRuXzZmRng1REtYZUk0X1VFZ1p5LTAwdkhGQkk?oc=5",
+   "datum": "2026-11-12",
    "sprache": "en"
   },
   {

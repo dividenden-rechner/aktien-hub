@@ -1,16 +1,9 @@
 {
  "hub": "DTE.DE",
  "name": "Deutsche Telekom",
- "stand": "2026-11-14",
+ "stand": "2026-11-15",
  "quelle": "Google News (Wirtschaftsmedien, deutsch und englisch)",
  "meldungen": [
-  {
-   "titel": "Dax: Telekom, Siemens und Allianz mit Gewinnplus trotz Auto-Krise",
-   "quelle": "Manager Magazin",
-   "link": "https://news.google.com/rss/articles/CBMi6wFBVV95cUxOQ01sRlNZUTRUV0Z6SUJ2MEZNZE1jazhDV3UxMEdwVHVaMkRtandqZk9MWHJmN1EtNXZXT2hGSm5ZLWlRNnAzQlVXX25oZC0wWThfWU9hbDlfaDNGTGF6dXc2N2xBUUdHQmxoSXRRQ3otWTZUYVRVdnhQR3FBbUVxYkdYcG12M1hnRXp2QTVLT0R1RVpObmp4c0o0Nk50NmtiQTNRMUJWY2dGYkhNSXlaT1FRSTk1MURaWVJaQkhwaVJvMThDOGg1Zmh4UTZHNGxVal9zc1N5OC1XYzFHMmEwX0hSeHpKQlp4bmk0?oc=5",
-   "datum": "2026-11-13",
-   "sprache": "de"
-  },
   {
    "titel": "Deutsche Telekom-Aktie: Unternehmen erholt sich",
    "quelle": "WELT",
@@ -27,26 +20,12 @@
    "typ": "pm"
   },
   {
-   "titel": "Deutsche Telekom Adds Latest Nvidia Chips in German AI Buildout",
-   "quelle": "Bloomberg.com",
-   "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxQTGlfcXo2b1dOUURzYWNXbjRlU0xkYlU4TGtWblMtZW02a1IwM0xRd2VCOUZkdHVDNUgyckhrVzFmX0l1VzkydjdKaE95dkI2RkxyRXBoQjVVa2s5Z01CNDRESDZNNEFON3F0WEFHM1EyekkwZVg1OUJWMXY0clRHQ2U3Z3pDbENaNDBWUVprcUhtSTdKNW1paW9CcDB5UkRmZjlCYU1kOGxCbWE3am5HajVEZW0?oc=5",
-   "datum": "2026-11-09",
-   "sprache": "en"
-  },
-  {
    "titel": "More growth, raised guidance, record dividend",
    "quelle": "Unternehmen",
    "link": "https://www.telekom.com/en/newsroom/latest-updates/media-information/2026/11/more-growth-raised-guidance-record-dividend",
    "datum": "2026-11-05",
    "sprache": "en",
    "typ": "pm"
-  },
-  {
-   "titel": "Deutsche Telekom Plans €2 Billion 2027 Buyback After Profit Beat",
-   "quelle": "Bloomberg.com",
-   "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxQeHUtUTl5SFpGQ05MVEJUVXFTOTVXeTVocUFEaGVFaVNiaExuQVJoMDRNWnh6aWFnc0NLUUk1ejRvc3ZwUEdzTVZ3eTQ2Z2JYRzNtSTNfczZjOUtUQm9WX0hWWkVnd0JpdXJTV09TQWQyM3BOTTRLXzBIb1czRXUxeTZkbE40UURyRWI0c213Ujd1ajFKSDJNRnhneXRjbWp2ei1rSktpZW5VSGF3b0JnZVNoWmY?oc=5",
-   "datum": "2026-11-05",
-   "sprache": "en"
   },
   {
    "titel": "T-Systems and Sparxity strengthen Europe’s sovereign AI infrastructure with energy-efficient computing technology",
