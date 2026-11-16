@@ -1,3191 +1,3411 @@
 {
- "A": {
-  "isin": "US00846U1016",
-  "xetra": "AGILENT TECHS INC. DL-,01",
-  "kuerzel": "AG8",
-  "quelle": "openfigi"
- },
- "AAPL": {
-  "isin": "US0378331005",
-  "xetra": "APPLE INC.",
-  "kuerzel": "APC",
-  "quelle": "openfigi"
- },
- "ABBNY": {
-  "isin": "CH0012221716",
-  "quelle": "fest"
- },
- "ABBV": {
-  "isin": "US00287Y1091",
-  "xetra": "ABBVIE INC.        DL-,01",
-  "kuerzel": "4AB",
-  "quelle": "openfigi"
- },
- "ABNB": {
-  "isin": "US0090661010",
-  "xetra": "AIRBNB INC.     DL-,01",
-  "kuerzel": "6Z1",
-  "quelle": "openfigi"
- },
- "ABT": {
-  "isin": "US0028241000",
-  "xetra": "ABBOTT LABS",
-  "kuerzel": "ABL",
-  "quelle": "openfigi"
- },
- "ACN": {
-  "isin": "IE00B4BNMY34",
-  "xetra": "ACCENTURE A   DL-,0000225",
-  "kuerzel": "CSA",
-  "quelle": "name",
-  "treffer": 1.03
- },
- "ADBE": {
-  "isin": "US00724F1012",
-  "xetra": "ADOBE INC.",
-  "kuerzel": "ADB",
-  "quelle": "openfigi"
- },
- "ADI": {
-  "isin": "US0326541051",
-  "xetra": "ANALOG DEVICES INC.DL-166",
-  "kuerzel": "ANL",
-  "quelle": "openfigi"
- },
- "ADM": {
-  "isin": "US0394831020",
-  "xetra": "ARCHER DANIELS MIDLAND",
-  "kuerzel": "ADM",
-  "quelle": "openfigi"
- },
- "ADP": {
-  "isin": "US0530151036",
-  "xetra": "AUTOM. DATA PROC. DL -,10",
-  "kuerzel": "ADP",
-  "quelle": "openfigi"
- },
- "ADSK": {
-  "isin": "US0527691069",
-  "xetra": "AUTODESK INC.",
-  "kuerzel": "AUD",
-  "quelle": "openfigi"
- },
- "AEP": {
-  "isin": "US0255371017",
-  "xetra": "AMER. EL. PWR     DL 6,50",
-  "kuerzel": "AEP",
-  "quelle": "openfigi"
- },
- "AES": {
-  "isin": "US00130H1059",
-  "xetra": "",
-  "kuerzel": "",
-  "quelle": "openfigi"
- },
- "AFL": {
-  "isin": "US0010551028",
-  "xetra": "AFLAC INC.        DL -,10",
-  "kuerzel": "AFL",
-  "quelle": "openfigi"
- },
- "AIG": {
-  "isin": "US0268747849",
-  "xetra": "AMER.INTL GRP NEW DL 2,50",
-  "kuerzel": "AINN",
-  "quelle": "openfigi"
- },
- "AIZ": {
-  "isin": "US04621X1081",
-  "xetra": "ASSURANT INC.      DL-,01",
-  "kuerzel": "ZAS",
-  "quelle": "openfigi"
- },
- "AJG": {
-  "isin": "US3635761097",
-  "xetra": "GALLAGHER , A.J.     DL 1",
-  "kuerzel": "GAH",
-  "quelle": "openfigi"
- },
- "AKAM": {
-  "isin": "US00971T1016",
-  "xetra": "AKAMAI TECH.       DL-,01",
-  "kuerzel": "AK3",
-  "quelle": "openfigi"
- },
- "ALB": {
-  "isin": "US0126531013",
-  "xetra": "ALBEMARLE CORP.    DL-,01",
-  "kuerzel": "AMC",
-  "quelle": "openfigi"
- },
- "ALGN": {
-  "isin": "US0162551016",
-  "xetra": "ALIGN TECHNOLOGY DL-,0001",
-  "kuerzel": "AFW",
-  "quelle": "openfigi"
- },
- "ALL": {
-  "isin": "US0200021014",
-  "xetra": "ALLSTATE CORP.     DL-,01",
-  "kuerzel": "ALS",
-  "quelle": "openfigi"
- },
- "ALLE": {
-  "isin": "IE00BFRT3W74",
-  "xetra": "ALLEGION PLC         DL 1",
-  "kuerzel": "60A",
-  "quelle": "name",
-  "treffer": 1.0
- },
- "AMAT": {
-  "isin": "US0382221051",
-  "xetra": "APPLIED MATERIALS INC.",
-  "kuerzel": "AP2",
-  "quelle": "openfigi"
- },
- "AMD": {
-  "isin": "US0079031078",
-  "xetra": "ADVANCED MIC.DEV.  DL-,01",
-  "kuerzel": "AMD",
-  "quelle": "openfigi"
- },
- "AME": {
-  "isin": "US0311001004",
-  "xetra": "AMETEK INC.        DL-,01",
-  "kuerzel": "AK1",
-  "quelle": "openfigi"
- },
- "AMGN": {
-  "isin": "US0311621009",
-  "xetra": "AMGEN INC.       DL-,0001",
-  "kuerzel": "AMG",
-  "quelle": "openfigi"
- },
- "AMP": {
-  "isin": "US03076C1062",
-  "xetra": "AMERIPRISE FINL    DL-,01",
-  "kuerzel": "A4S",
-  "quelle": "openfigi"
- },
- "AMT": {
-  "isin": "US03027X1000",
-  "xetra": "",
-  "kuerzel": "",
-  "quelle": "openfigi"
- },
- "AMZN": {
-  "isin": "US0231351067",
-  "xetra": "AMAZON.COM INC.    DL-,01",
-  "kuerzel": "AMZ",
-  "quelle": "openfigi"
- },
- "ANET": {
-  "isin": "US0404132054",
-  "xetra": "ARISTA NET.INC. NEW O.N.",
-  "kuerzel": "1170",
-  "quelle": "openfigi"
- },
- "AON": {
-  "isin": "IE00BLP1HW54",
-  "xetra": "AON PLC A         DL -,01",
-  "kuerzel": "4VK",
-  "quelle": "name",
-  "treffer": 1.03
- },
- "AOS": {
-  "isin": "US8318652091",
-  "xetra": "SMITH -A.O.- CORP.   DL 1",
-  "kuerzel": "3SM",
-  "quelle": "openfigi"
- },
- "APA": {
-  "isin": "US03743Q1085",
-  "xetra": "APA CORP.        DL -,625",
-  "kuerzel": "2S3",
-  "quelle": "openfigi"
- },
- "APD": {
-  "isin": "US0091581068",
-  "xetra": "AIR PROD. CHEM.      DL 1",
-  "kuerzel": "AP3",
-  "quelle": "openfigi"
- },
- "APH": {
-  "isin": "US0320951017",
-  "xetra": "AMPHENOL CORP.  A DL-,001",
-  "kuerzel": "XPH",
-  "quelle": "openfigi"
- },
- "APO": {
-  "isin": "US03769M1062",
-  "xetra": "APOLLO GL.M.NEW DL-,00001",
-  "kuerzel": "N7I",
-  "quelle": "openfigi"
- },
- "APP": {
-  "isin": "US03831W1080",
-  "xetra": "APPLOVIN CORP.A  -,00003",
-  "kuerzel": "6RV",
-  "quelle": "openfigi"
- },
- "ARCC": {
-  "isin": "US04010L1035",
-  "xetra": "",
-  "kuerzel": "",
-  "quelle": "openfigi"
- },
- "ARE": {
-  "isin": "US0152711091",
-  "xetra": "",
-  "kuerzel": "",
-  "quelle": "openfigi"
- },
- "ARES": {
-  "isin": "US03990B1017",
-  "xetra": "ARES MNGMT CORP.CL.A",
-  "kuerzel": "0QN",
-  "quelle": "openfigi"
- },
- "ASML": {
-  "isin": "NL0010273215",
-  "xetra": "ASML HOLDING    EO -,09",
-  "kuerzel": "ASME",
-  "quelle": "name",
-  "treffer": 1.03
- },
- "AVGO": {
-  "isin": "US11135F1012",
-  "xetra": "BROADCOM INC.     DL-,001",
-  "kuerzel": "1YD",
-  "quelle": "openfigi"
- },
- "AVY": {
-  "isin": "US0536111091",
-  "xetra": "AVERY DENNISON       DL 1",
-  "kuerzel": "AV3",
-  "quelle": "openfigi"
- },
- "AWK": {
-  "isin": "US0304201033",
-  "xetra": "AMERICAN WATER WKS DL-,01",
-  "kuerzel": "AWC",
-  "quelle": "openfigi"
- },
- "AXON": {
-  "isin": "US05464C1018",
-  "xetra": "AXON ENTERPRISE DL-,00001",
-  "kuerzel": "TCS",
-  "quelle": "openfigi"
- },
- "AXP": {
-  "isin": "US0258161092",
-  "xetra": "AMER. EXPRESS     DL -,20",
-  "kuerzel": "AEC1",
-  "quelle": "openfigi"
- },
- "AZN": {
-  "isin": "GB0009895292",
-  "quelle": "fest"
- },
- "AZO": {
-  "isin": "US0533321024",
-  "xetra": "AUTOZONE INC.      DL-,01",
-  "kuerzel": "AZ5",
-  "quelle": "openfigi"
- },
- "BA": {
-  "isin": "US0970231058",
-  "xetra": "BOEING CO.           DL 5",
-  "kuerzel": "BCO",
-  "quelle": "openfigi"
- },
- "BAC": {
-  "isin": "US0605051046",
-  "xetra": "BANK AMERICA      DL 0,01",
-  "kuerzel": "NCB",
-  "quelle": "openfigi"
- },
- "BAX": {
-  "isin": "US0718131099",
-  "xetra": "",
-  "kuerzel": "",
-  "quelle": "openfigi"
- },
- "BBVA": {
-  "isin": "ES0113211835",
-  "quelle": "fest"
- },
- "BBY": {
-  "isin": "US0865161014",
-  "xetra": "BEST BUY CO.       DL-,10",
-  "kuerzel": "BUY",
-  "quelle": "openfigi"
- },
- "BCS": {
-  "isin": "GB0031348658",
-  "xetra": "BARCLAYS PLC      LS 0,25",
-  "kuerzel": "BCY",
-  "quelle": "name",
-  "treffer": 1.03
- },
- "BDX": {
-  "isin": "US0758871091",
-  "xetra": "BECTON, DICKINSON    DL 1",
-  "kuerzel": "BOX",
-  "quelle": "openfigi"
- },
- "BE": {
-  "isin": "US0937121079",
-  "xetra": "BLOOM ENERGY A   DL-,0001",
-  "kuerzel": "1ZB",
-  "quelle": "openfigi"
- },
- "BEN": {
-  "isin": "US3546131018",
-  "xetra": "",
-  "kuerzel": "",
-  "quelle": "openfigi"
- },
- "BF-B": {
-  "isin": "US1156372096",
-  "xetra": "BROWN-FORMAN CORP B DL-15",
-  "kuerzel": "BF5B",
-  "quelle": "openfigi"
- },
- "BG": {
-  "isin": "CH1300646267",
-  "xetra": "BUNGE GLOBAL S.A. DL-,01",
-  "kuerzel": "Q23",
-  "quelle": "name",
-  "treffer": 1.03
- },
- "BHP": {
-  "isin": "AU000000BHP4",
-  "quelle": "fest"
- },
- "BIIB": {
-  "isin": "US09062X1037",
-  "xetra": "BIOGEN INC. DL -,0005",
-  "kuerzel": "IDP",
-  "quelle": "openfigi"
- },
- "BKNG": {
-  "isin": "US09857L1089",
-  "xetra": "BOOKING HLDGS     DL-,008",
-  "kuerzel": "PCE1",
-  "quelle": "openfigi"
- },
- "BKR": {
-  "isin": "US05722G1004",
-  "xetra": "BAKER HUGHES CO.",
-  "kuerzel": "68V",
-  "quelle": "openfigi"
- },
- "BLK": {
-  "isin": "US09290D1019",
-  "xetra": "BLACKROCK INC.       O.N.",
-  "kuerzel": "UU2",
-  "quelle": "openfigi"
- },
- "BMY": {
-  "isin": "US1101221083",
-  "xetra": "BRISTOL-MYERS SQUIBBDL-10",
-  "kuerzel": "BRM",
-  "quelle": "openfigi"
- },
- "BNY": {
-  "isin": "US0640581007",
-  "xetra": "BK N.Y. MELLON    DL -,01",
-  "kuerzel": "BN9",
-  "quelle": "openfigi"
- },
- "BP": {
-  "isin": "GB0007980591",
-  "xetra": "BP PLC             DL-,25",
-  "kuerzel": "BPE5",
-  "quelle": "name",
-  "treffer": 1.03
- },
- "BR": {
-  "isin": "US11133T1034",
-  "xetra": "BROADRIDGE FINL SOL.DL-01",
-  "kuerzel": "5B9",
-  "quelle": "openfigi"
- },
- "BRK-B": {
-  "isin": "US0846707026",
-  "xetra": "BERKSH. H.B NEW DL-,00333",
-  "kuerzel": "BRYN",
-  "quelle": "openfigi"
- },
- "BRO": {
-  "isin": "US1152361010",
-  "xetra": "BROWN + BROWN      DL-,10",
-  "kuerzel": "BTW",
-  "quelle": "openfigi"
- },
- "BSX": {
-  "isin": "US1011371077",
-  "xetra": "BOSTON SCIENTIFIC  DL-,01",
-  "kuerzel": "BSX",
-  "quelle": "openfigi"
- },
- "BTI": {
-  "isin": "GB0002875804",
-  "quelle": "fest"
- },
- "BX": {
-  "isin": "US09260D1072",
-  "xetra": "BLACKSTONE INC. DL-,00001",
-  "kuerzel": "BBN1",
-  "quelle": "openfigi"
- },
- "BXP": {
-  "isin": "US1011211018",
-  "xetra": "",
-  "kuerzel": "",
-  "quelle": "openfigi"
- },
- "C": {
-  "isin": "US1729674242",
-  "xetra": "CITIGROUP INC. DL -,01",
-  "kuerzel": "TRVC",
-  "quelle": "openfigi"
- },
- "CAH": {
-  "isin": "US14149Y1082",
-  "xetra": "CARDINAL HEALTH INC.",
-  "kuerzel": "CLH",
-  "quelle": "openfigi"
- },
- "CARR": {
-  "isin": "US14448C1045",
-  "xetra": "CARRIER GLBL CORP  DL-,01",
-  "kuerzel": "4PN",
-  "quelle": "openfigi"
- },
- "CASY": {
-  "isin": "US1475281036",
-  "xetra": "CASEY'S GENL STORES",
-  "kuerzel": "CS2",
-  "quelle": "openfigi"
- },
- "CAT": {
-  "isin": "US1491231015",
-  "xetra": "CATERPILLAR INC.     DL 1",
-  "kuerzel": "CAT1",
-  "quelle": "openfigi"
- },
- "CB": {
-  "isin": "CH0044328745",
-  "xetra": "CHUBB LTD.       SF 24,15",
-  "kuerzel": "AEX",
-  "quelle": "name",
-  "treffer": 1.03
- },
- "CBOE": {
-  "isin": "US12503M1080",
-  "xetra": "CBOE GLOB.MKTS INC.DL-,01",
-  "kuerzel": "C67",
-  "quelle": "openfigi"
- },
- "CBRE": {
-  "isin": "US12504L1098",
-  "xetra": "CBRE GROUP INC. A  DL-,01",
-  "kuerzel": "RF6",
-  "quelle": "openfigi"
- },
- "CCI": {
-  "isin": "US22822V1017",
-  "xetra": "",
-  "kuerzel": "",
-  "quelle": "openfigi"
- },
- "CDNS": {
-  "isin": "US1273871087",
-  "xetra": "CADENCE DESIGN SYS DL-,01",
-  "kuerzel": "CDS",
-  "quelle": "openfigi"
- },
- "CDW": {
-  "isin": "US12514G1085",
-  "xetra": "CDW CORP.          DL-,01",
-  "kuerzel": "CDW",
-  "quelle": "openfigi"
- },
- "CEG": {
-  "isin": "US21037T1097",
-  "xetra": "CONSTELLATION ENERGY",
-  "kuerzel": "E7S",
-  "quelle": "openfigi"
- },
- "CF": {
-  "isin": "US1252691001",
-  "xetra": "CF INDS HLDGS      DL-,01",
-  "kuerzel": "C4F",
-  "quelle": "openfigi"
- },
- "CFG": {
-  "isin": "US1746101054",
-  "xetra": "CITIZENS FINL GROUP DL-01",
-  "kuerzel": "1C5",
-  "quelle": "openfigi"
- },
- "CHD": {
-  "isin": "US1713401024",
-  "xetra": "CHURCH + DWIGHT CO. DL 1",
-  "kuerzel": "CXU",
-  "quelle": "openfigi"
- },
- "CHRW": {
-  "isin": "US12541W2098",
-  "xetra": "C.H. ROB. WORLDWIDE NEW",
-  "kuerzel": "CH1A",
-  "quelle": "openfigi"
- },
- "CHTR": {
-  "isin": "US16119P1084",
-  "xetra": "CHARTER COM. CL. A",
-  "kuerzel": "CQD",
-  "quelle": "openfigi"
- },
- "CI": {
-  "isin": "US1255231003",
-  "xetra": "CIGNA GROUP, THE     DL 1",
-  "kuerzel": "CGN",
-  "quelle": "openfigi"
- },
- "CIEN": {
-  "isin": "US1717793095",
-  "xetra": "CIENA CORP. NEW    DL-,01",
-  "kuerzel": "CIE1",
-  "quelle": "openfigi"
- },
- "CINF": {
-  "isin": "US1720621010",
-  "xetra": "CINCINNATI FINL      DL 2",
-  "kuerzel": "CCJ",
-  "quelle": "openfigi"
- },
- "CL": {
-  "isin": "US1941621039",
-  "xetra": "COLGATE-PALMOLIVE    DL 1",
-  "kuerzel": "CPA",
-  "quelle": "openfigi"
- },
- "CLX": {
-  "isin": "US1890541097",
-  "xetra": "CLOROX CO.           DL 1",
-  "kuerzel": "CXX",
-  "quelle": "openfigi"
- },
- "CMCSA": {
-  "isin": "US20030N1019",
-  "xetra": "COMCAST CORP.   A  DL-,01",
-  "kuerzel": "CTP2",
-  "quelle": "openfigi"
- },
- "CME": {
-  "isin": "US12572Q1058",
-  "xetra": "CME GROUP INC.     DL-,01",
-  "kuerzel": "MX4A",
-  "quelle": "openfigi"
- },
- "CMG": {
-  "isin": "US1696561059",
-  "xetra": "CHIPOTLE MEX.GR.  DL -,01",
-  "kuerzel": "C9F",
-  "quelle": "openfigi"
- },
- "CMI": {
-  "isin": "US2310211063",
-  "xetra": "CUMMINS INC.      DL 2,50",
-  "kuerzel": "CUM",
-  "quelle": "openfigi"
- },
- "CMS": {
-  "isin": "US1258961002",
-  "xetra": "CMS ENERGY CORP.   DL-,01",
-  "kuerzel": "CSG",
-  "quelle": "openfigi"
- },
- "CNC": {
-  "isin": "US15135B1017",
-  "xetra": "CENTENE CORP.     DL-,001",
-  "kuerzel": "QEN",
-  "quelle": "openfigi"
- },
- "CNP": {
-  "isin": "US15189T1079",
-  "xetra": "CENTERPOINT ENERGY INC.",
-  "kuerzel": "HOU",
-  "quelle": "openfigi"
- },
- "COF": {
-  "isin": "US14040H1059",
-  "xetra": "CAPITAL ONE FINL   DL-,01",
-  "kuerzel": "CFX",
-  "quelle": "openfigi"
- },
- "COHR": {
-  "isin": "US19247G1076",
-  "xetra": "COHERENT CORP.",
-  "kuerzel": "H7B",
-  "quelle": "openfigi"
- },
- "COIN": {
-  "isin": "US19260Q1076",
-  "xetra": "COINBASE GLB.CL.A -,00001",
-  "kuerzel": "1QZ",
-  "quelle": "openfigi"
- },
- "COO": {
-  "isin": "US2166485019",
-  "xetra": "COOPER COS. INC. O.N.",
-  "kuerzel": "CP60",
-  "quelle": "openfigi"
- },
- "COP": {
-  "isin": "US20825C1045",
-  "xetra": "CONOCOPHILLIPS     DL-,01",
-  "kuerzel": "YCP",
-  "quelle": "openfigi"
- },
- "COR": {
-  "isin": "US03073E1055",
-  "xetra": "CENCORA            DL-,01",
-  "kuerzel": "ABG",
-  "quelle": "openfigi"
- },
- "COST": {
-  "isin": "US22160K1051",
-  "xetra": "COSTCO WHOLESALE  DL-,005",
-  "kuerzel": "CTO",
-  "quelle": "openfigi"
- },
- "CPAY": {
-  "isin": "US2199481068",
-  "xetra": "CORPAY INC.",
-  "kuerzel": "07G0",
-  "quelle": "openfigi"
- },
- "CPRT": {
-  "isin": "US2172041061",
-  "xetra": "COPART INC.",
-  "kuerzel": "CO6",
-  "quelle": "openfigi"
- },
- "CPT": {
-  "isin": "US1331311027",
-  "xetra": "",
-  "kuerzel": "",
-  "quelle": "openfigi"
- },
- "CRL": {
-  "isin": "US1598641074",
-  "xetra": "CHARL.RIV.LAB INTL DL-,01",
-  "kuerzel": "RV6",
-  "quelle": "openfigi"
- },
- "CRM": {
-  "isin": "US79466L3024",
-  "xetra": "SALESFORCE INC.   DL-,001",
-  "kuerzel": "FOO",
-  "quelle": "openfigi"
- },
- "CRWD": {
-  "isin": "US22788C1053",
-  "xetra": "CROWDSTRIKE HLD. DL-,0005",
-  "kuerzel": "45C",
-  "quelle": "openfigi"
- },
- "CSCO": {
-  "isin": "US17275R1023",
-  "xetra": "CISCO SYSTEMS    DL-,001",
-  "kuerzel": "CIS",
-  "quelle": "openfigi"
- },
- "CSGP": {
-  "isin": "US22160N1090",
-  "xetra": "COSTAR GROUP INC.  DL-,01",
-  "kuerzel": "RLG",
-  "quelle": "openfigi"
- },
- "CSX": {
-  "isin": "US1264081035",
-  "xetra": "CSX CORP.            DL 1",
-  "kuerzel": "CXR",
-  "quelle": "openfigi"
- },
- "CTAS": {
-  "isin": "US1729081059",
-  "xetra": "CINTAS CORP.",
-  "kuerzel": "CIT",
-  "quelle": "openfigi"
- },
- "CTSH": {
-  "isin": "US1924461023",
-  "xetra": "COGNIZANT TECH. SOL.A",
-  "kuerzel": "COZ",
-  "quelle": "openfigi"
- },
- "CVNA": {
-  "isin": "US1468691027",
-  "xetra": "CARVANA CO.",
-  "kuerzel": "CV0",
-  "quelle": "openfigi"
- },
- "CVS": {
-  "isin": "US1266501006",
-  "xetra": "CVS HEALTH CORP.   DL-,01",
-  "kuerzel": "CVS",
-  "quelle": "openfigi"
- },
- "CVX": {
-  "isin": "US1667641005",
-  "xetra": "CHEVRON CORP.      DL-,75",
-  "kuerzel": "CHV",
-  "quelle": "openfigi"
- },
- "D": {
-  "isin": "US25746U1097",
-  "xetra": "DOMINION ENERGY INC.",
-  "kuerzel": "DOD",
-  "quelle": "openfigi"
- },
- "DAL": {
-  "isin": "US2473617023",
-  "xetra": "DELTA AIR LINES INC.",
-  "kuerzel": "OYC",
-  "quelle": "openfigi"
- },
- "DASH": {
-  "isin": "US25809K1051",
-  "xetra": "DOORDASH INC.CL.A -,00001",
-  "kuerzel": "DD2",
-  "quelle": "openfigi"
- },
- "DB": {
-  "isin": "DE0005140008",
-  "quelle": "fest"
- },
- "DD": {
-  "isin": "US26614N2018",
-  "xetra": "DUPONT DE NEMO. NEW O.N.",
-  "kuerzel": "6D8",
-  "quelle": "openfigi"
- },
- "DDOG": {
-  "isin": "US23804L1035",
-  "xetra": "DATADOG INC.  A DL-,00001",
-  "kuerzel": "3QD",
-  "quelle": "openfigi"
- },
- "DE": {
-  "isin": "US2441991054",
-  "xetra": "DEERE CO.            DL 1",
-  "kuerzel": "DCO",
-  "quelle": "openfigi"
- },
- "DECK": {
-  "isin": "US2435371073",
-  "xetra": "DECKERS OUTDOOR    DL-,01",
-  "kuerzel": "DO2",
-  "quelle": "openfigi"
- },
- "DELL": {
-  "isin": "US24703L2025",
-  "xetra": "DELL TECHS INC. C  DL-,01",
-  "kuerzel": "12DA",
-  "quelle": "openfigi"
- },
- "DEO": {
-  "isin": "GB0002374006",
-  "xetra": "DIAGEO PLC LS-,28935185",
-  "kuerzel": "GUI",
-  "quelle": "name",
-  "treffer": 1.03
- },
- "DG": {
-  "isin": "US2566771059",
-  "xetra": "DOLLAR GENER.CORP.DL-,875",
-  "kuerzel": "7DG",
-  "quelle": "openfigi"
- },
- "DGX": {
-  "isin": "US74834L1008",
-  "xetra": "QUEST DIAGNOSTICS  DL-,01",
-  "kuerzel": "QDI",
-  "quelle": "openfigi"
- },
- "DHI": {
-  "isin": "US23331A1097",
-  "xetra": "D.R.HORTON INC.    DL-,01",
-  "kuerzel": "HO2",
-  "quelle": "openfigi"
- },
- "DHR": {
-  "isin": "US2358511028",
-  "xetra": "DANAHER CORP.      DL-,01",
-  "kuerzel": "DAP",
-  "quelle": "openfigi"
- },
- "DIS": {
-  "isin": "US2546871060",
-  "xetra": "DISNEY (WALT) CO.",
-  "kuerzel": "WDP",
-  "quelle": "openfigi"
- },
- "DLR": {
-  "isin": "US2538681030",
-  "xetra": "",
-  "kuerzel": "",
-  "quelle": "openfigi"
- },
- "DLTR": {
-  "isin": "US2567461080",
-  "xetra": "DOLLAR TREE INC.   DL-,01",
-  "kuerzel": "DT3",
-  "quelle": "openfigi"
- },
- "DOV": {
-  "isin": "US2600031080",
-  "xetra": "DOVER CORP.          DL 1",
-  "kuerzel": "DOV",
-  "quelle": "openfigi"
- },
- "DOW": {
-  "isin": "US2605571031",
-  "xetra": "",
-  "kuerzel": "",
-  "quelle": "openfigi"
- },
- "DPZ": {
-  "isin": "US25754A2015",
-  "xetra": "DOMINOS PIZZA INC. DL-,01",
-  "kuerzel": "EZV",
-  "quelle": "openfigi"
- },
- "DRI": {
-  "isin": "US2371941053",
-  "xetra": "DARDEN REST. INC.",
-  "kuerzel": "DDN",
-  "quelle": "openfigi"
- },
- "DTE": {
-  "isin": "US2333311072",
-  "xetra": "DTE EN. CO.",
-  "kuerzel": "DGY",
-  "quelle": "openfigi"
- },
- "DUK": {
-  "isin": "US26441C2044",
-  "xetra": "DUKE EN.CORP.    DL -,001",
-  "kuerzel": "D2MN",
-  "quelle": "openfigi"
- },
- "DVA": {
-  "isin": "US23918K1088",
-  "xetra": "DAVITA INC.      DL -,001",
-  "kuerzel": "TRL",
-  "quelle": "openfigi"
- },
- "DVN": {
-  "isin": "US25179M1036",
-  "xetra": "",
-  "kuerzel": "",
-  "quelle": "openfigi"
- },
- "DXCM": {
-  "isin": "US2521311074",
-  "xetra": "DEXCOM INC.       DL-,001",
-  "kuerzel": "DC4",
-  "quelle": "openfigi"
- },
- "E": {
-  "isin": "IT0003132476",
-  "xetra": "ENI S.P.A.",
-  "kuerzel": "ENI",
-  "quelle": "name",
-  "treffer": 1.03
- },
- "EBAY": {
-  "isin": "US2786421030",
-  "xetra": "EBAY INC.         DL-,001",
-  "kuerzel": "EBA",
-  "quelle": "openfigi"
- },
- "ECHO": {
-  "isin": "US2787681061",
-  "xetra": "ECHOSTAR CORP. A DL -,001",
-  "kuerzel": "E20",
-  "quelle": "openfigi"
- },
- "ECL": {
-  "isin": "US2788651006",
-  "xetra": "ECOLAB INC.          DL 1",
-  "kuerzel": "ECJ",
-  "quelle": "openfigi"
- },
- "ED": {
-  "isin": "US2091151041",
-  "xetra": "CONSOLIDATED EDISON",
-  "kuerzel": "EDC",
-  "quelle": "openfigi"
- },
- "EFX": {
-  "isin": "US2944291051",
-  "xetra": "EQUIFAX INC.      DL 1,25",
-  "kuerzel": "EFX",
-  "quelle": "openfigi"
- },
- "EIX": {
-  "isin": "US2810201077",
-  "xetra": "EDISON INTL",
-  "kuerzel": "EIX",
-  "quelle": "openfigi"
- },
- "EL": {
-  "isin": "US5184391044",
-  "xetra": "ESTEE LAUDER COS A DL-,01",
-  "kuerzel": "ELAA",
-  "quelle": "openfigi"
- },
- "ELV": {
-  "isin": "US0367521038",
-  "xetra": "ELEVANCE HEALTH    DL-,01",
-  "kuerzel": "A58",
-  "quelle": "openfigi"
- },
- "EME": {
-  "isin": "US29084Q1004",
-  "xetra": "EMCOR GRP INC.     DL-,01",
-  "kuerzel": "EM4",
-  "quelle": "openfigi"
- },
- "EMR": {
-  "isin": "US2910111044",
-  "xetra": "EMERSON EL.       DL -,50",
-  "kuerzel": "EMR",
-  "quelle": "openfigi"
- },
- "EOG": {
-  "isin": "US26875P1012",
-  "xetra": "EOG RESOURCES      DL-,01",
-  "kuerzel": "EO5",
-  "quelle": "openfigi"
- },
- "EQIX": {
-  "isin": "US29444U7000",
-  "xetra": "",
-  "kuerzel": "",
-  "quelle": "openfigi"
- },
- "EQT": {
-  "isin": "US26884L1098",
-  "xetra": "EQT CORP.",
-  "kuerzel": "EQ6",
-  "quelle": "openfigi"
- },
- "ERIC": {
-  "isin": "SE0000108656",
-  "quelle": "fest"
- },
- "ERIE": {
-  "isin": "US29530P1021",
-  "xetra": "",
-  "kuerzel": "",
-  "quelle": "openfigi"
- },
- "ES": {
-  "isin": "US30040W1080",
-  "xetra": "",
-  "kuerzel": "",
-  "quelle": "openfigi"
- },
- "ETN": {
-  "isin": "IE00B8KQN827",
-  "xetra": "EATON CORP.PLC    DL -,01",
-  "kuerzel": "3EC",
-  "quelle": "name",
-  "treffer": 1.03
- },
- "ETR": {
-  "isin": "US29364G1031",
-  "xetra": "ENTERGY CORP.      DL-,01",
-  "kuerzel": "ETY",
-  "quelle": "openfigi"
- },
- "EVRG": {
-  "isin": "US30034W1062",
-  "xetra": "EVERGY INC.",
-  "kuerzel": "3E7",
-  "quelle": "openfigi"
- },
- "EW": {
-  "isin": "US28176E1082",
-  "xetra": "EDWARDS LIFESCIENCES",
-  "kuerzel": "EWL",
-  "quelle": "openfigi"
- },
- "EXC": {
-  "isin": "US30161N1019",
-  "xetra": "EXELON CORP.",
-  "kuerzel": "PEO",
-  "quelle": "openfigi"
- },
- "EXE": {
-  "isin": "US1651677353",
-  "xetra": "EXPAND ENERGY      DL-,01",
-  "kuerzel": "CS1",
-  "quelle": "openfigi"
- },
- "EXPD": {
-  "isin": "US3021301094",
-  "xetra": "",
-  "kuerzel": "",
-  "quelle": "openfigi"
- },
- "EXPE": {
-  "isin": "US30212P3038",
-  "xetra": "EXPEDIA GRP INC. DL-,0001",
-  "kuerzel": "E3X1",
-  "quelle": "openfigi"
- },
- "F": {
-  "isin": "US3453708600",
-  "xetra": "FORD MOTOR         DL-,01",
-  "kuerzel": "FMC1",
-  "quelle": "openfigi"
- },
- "FANG": {
-  "isin": "US25278X1090",
-  "xetra": "DIAMONDBACK ENERGY DL-,01",
-  "kuerzel": "7DB",
-  "quelle": "openfigi"
- },
- "FAST": {
-  "isin": "US3119001044",
-  "xetra": "FASTENAL CO.       DL-,01",
-  "kuerzel": "FAS",
-  "quelle": "openfigi"
- },
- "FCX": {
-  "isin": "US35671D8570",
-  "xetra": "FREEPORT-MCMORAN INC.",
-  "kuerzel": "FPMB",
-  "quelle": "openfigi"
- },
- "FDS": {
-  "isin": "US3030751057",
-  "xetra": "FACTSET RESH SYS   DL-,01",
-  "kuerzel": "FA1",
-  "quelle": "openfigi"
- },
- "FDX": {
-  "isin": "US31428X1063",
-  "xetra": "FEDEX CORP.        DL-,10",
-  "kuerzel": "FDX",
-  "quelle": "openfigi"
- },
- "FDXF": {
-  "isin": "US3143521058",
-  "xetra": "FEDEX FGHT HLDG CO. O.N.",
-  "kuerzel": "30G",
-  "quelle": "openfigi"
- },
- "FE": {
-  "isin": "US3379321074",
-  "xetra": "FIRSTENERGY         DL 10",
-  "kuerzel": "FE7",
-  "quelle": "openfigi"
- },
- "FERG": {
-  "isin": "US31488V1070",
-  "xetra": "FERGUSON ENTERPRISES INC.",
-  "kuerzel": "UH3",
-  "quelle": "openfigi"
- },
- "FFIV": {
-  "isin": "US3156161024",
-  "xetra": "F5 O.N.",
-  "kuerzel": "FFV",
-  "quelle": "openfigi"
- },
- "FICO": {
-  "isin": "US3032501047",
-  "xetra": "FAIR ISAAC CORP.   DL-,01",
-  "kuerzel": "FRI",
-  "quelle": "openfigi"
- },
- "FIS": {
-  "isin": "US31620M1062",
-  "xetra": "FIDELITY NATL INF. SVCS",
-  "kuerzel": "ZGY",
-  "quelle": "openfigi"
- },
- "FISV": {
-  "isin": "US3377381088",
-  "xetra": "FISERV INC.        DL-,01",
-  "kuerzel": "FIV",
-  "quelle": "openfigi"
- },
- "FITB": {
-  "isin": "US3167731005",
-  "xetra": "FIFTH THIRD BANCORP",
-  "kuerzel": "FFH",
-  "quelle": "openfigi"
- },
- "FIX": {
-  "isin": "US1999081045",
-  "xetra": "COMFORT SYST. USA  DL-,01",
-  "kuerzel": "9CF",
-  "quelle": "openfigi"
- },
- "FOX": {
-  "isin": "US35137L2043",
-  "xetra": "FOX CORP. B        DL-,01",
-  "kuerzel": "FO5B",
-  "quelle": "openfigi"
- },
- "FOXA": {
-  "isin": "US35137L1052",
-  "xetra": "FOX CORP. A        DL-,01",
-  "kuerzel": "FO5",
-  "quelle": "openfigi"
- },
- "FSLR": {
-  "isin": "US3364331070",
-  "xetra": "FIRST SOLAR INC. D -,001",
-  "kuerzel": "F3A",
-  "quelle": "openfigi"
- },
- "FTNT": {
-  "isin": "US34959E1091",
-  "xetra": "FORTINET INC.     DL-,001",
-  "kuerzel": "FO8",
-  "quelle": "openfigi"
- },
- "FTV": {
-  "isin": "US34959J1088",
-  "xetra": "FORTIVE CORP.      DL-,01",
-  "kuerzel": "F03",
-  "quelle": "openfigi"
- },
- "GD": {
-  "isin": "US3695501086",
-  "xetra": "GENL DYNAMICS CORP.  DL 1",
-  "kuerzel": "GDX",
-  "quelle": "openfigi"
- },
- "GDDY": {
-  "isin": "US3802371076",
-  "xetra": "GODADDY INC. CL.A DL-,001",
-  "kuerzel": "38D",
-  "quelle": "openfigi"
- },
- "GE": {
-  "isin": "US3696043013",
-  "xetra": "GE AEROSPACE      DL -,06",
-  "kuerzel": "GCP",
-  "quelle": "openfigi"
- },
- "GEHC": {
-  "isin": "US36266G1076",
-  "xetra": "GE HEALTHC.TECH.INC. -,01",
-  "kuerzel": "L0T",
-  "quelle": "openfigi"
- },
- "GEN": {
-  "isin": "US6687711084",
-  "xetra": "GEN DIGITAL INC.   DL-,01",
-  "kuerzel": "SYM",
-  "quelle": "openfigi"
- },
- "GEV": {
-  "isin": "US36828A1016",
-  "xetra": "GE VERNOVA INC.",
-  "kuerzel": "Y5C",
-  "quelle": "openfigi"
- },
- "GILD": {
-  "isin": "US3755581036",
-  "xetra": "GILEAD SCIENCES   DL-,001",
-  "kuerzel": "GIS",
-  "quelle": "openfigi"
- },
- "GIS": {
-  "isin": "US3703341046",
-  "xetra": "GENL MILLS        DL -,10",
-  "kuerzel": "GRM",
-  "quelle": "openfigi"
- },
- "GL": {
-  "isin": "US37959E1029",
-  "xetra": "GLOBE LIFE INC.      DL 1",
-  "kuerzel": "TMJ",
-  "quelle": "openfigi"
- },
- "GLW": {
-  "isin": "US2193501051",
-  "xetra": "CORNING INC.      DL -,50",
-  "kuerzel": "GLW",
-  "quelle": "openfigi"
- },
- "GM": {
-  "isin": "US37045V1008",
-  "xetra": "GENERAL MOTORS     DL-,01",
-  "kuerzel": "8GM",
-  "quelle": "openfigi"
- },
- "GNRC": {
-  "isin": "US3687361044",
-  "xetra": "GENERAC HOLDINGS INC.",
-  "kuerzel": "G84",
-  "quelle": "openfigi"
- },
- "GOOG": {
-  "isin": "US02079K1079",
-  "xetra": "ALPHABET INC.CL.C DL-,001",
-  "kuerzel": "ABEC",
-  "quelle": "openfigi"
- },
- "GOOGL": {
-  "isin": "US02079K3059",
-  "xetra": "ALPHABET INC.CL.A DL-,001",
-  "kuerzel": "ABEA",
-  "quelle": "openfigi"
- },
- "GPN": {
-  "isin": "US37940X1028",
-  "xetra": "GLOBAL PAYMENTS INC.",
-  "kuerzel": "GLO",
-  "quelle": "openfigi"
- },
- "GRMN": {
-  "isin": "CH0114405324",
-  "xetra": "GARMIN LTD   NAM.SF 0,10",
-  "kuerzel": "GEY",
-  "quelle": "name",
-  "treffer": 1.03
- },
- "GS": {
-  "isin": "US38141G1040",
-  "xetra": "GOLDMAN SACHS GRP INC.",
-  "kuerzel": "GOS",
-  "quelle": "openfigi"
- },
- "GSK": {
-  "isin": "GB00BN7SWP63",
-  "xetra": "GSK PLC  LS-,3125",
-  "kuerzel": "GS71",
-  "quelle": "name",
-  "treffer": 1.03
- },
- "GWW": {
-  "isin": "US3848021040",
-  "xetra": "GRAINGER (W.W.) INC. DL 1",
-  "kuerzel": "GWW",
-  "quelle": "openfigi"
- },
- "HAL": {
-  "isin": "US4062161017",
-  "xetra": "HALLIBURTON CO.   DL 2,50",
-  "kuerzel": "HAL",
-  "quelle": "openfigi"
- },
- "HAS": {
-  "isin": "US4180561072",
-  "xetra": "",
-  "kuerzel": "",
-  "quelle": "openfigi"
- },
- "HBAN": {
-  "isin": "US4461501045",
-  "xetra": "HUNTINGTON BANCSHS DL-,01",
-  "kuerzel": "HU3",
-  "quelle": "openfigi"
- },
- "HCA": {
-  "isin": "US40412C1018",
-  "xetra": "HCA HEALTHCARE INC.DL-,01",
-  "kuerzel": "2BH",
-  "quelle": "openfigi"
- },
- "HD": {
-  "isin": "US4370761029",
-  "xetra": "HOME DEPOT INC.    DL-,05",
-  "kuerzel": "HDI",
-  "quelle": "openfigi"
- },
- "HIG": {
-  "isin": "US4165151048",
-  "xetra": "HARTFORD INSURANCE GROUP",
-  "kuerzel": "HFF",
-  "quelle": "openfigi"
- },
- "HII": {
-  "isin": "US4464131063",
-  "xetra": "",
-  "kuerzel": "",
-  "quelle": "openfigi"
- },
- "HLT": {
-  "isin": "US43300A2033",
-  "xetra": "HILTON WORLD.HDGS DL -,01",
-  "kuerzel": "HI91",
-  "quelle": "openfigi"
- },
- "HMC": {
-  "isin": "JP3854600008",
-  "quelle": "fest"
- },
- "HON": {
-  "isin": "US4385162056",
-  "xetra": "HONEYWELL INTL NEW O.N.",
-  "kuerzel": "ALD0",
-  "quelle": "openfigi"
- },
- "HOOD": {
-  "isin": "US7707001027",
-  "xetra": "ROBINH.MKTS CL.A DL-,0001",
-  "kuerzel": "7KY",
-  "quelle": "openfigi"
- },
- "HPE": {
-  "isin": "US42824C1099",
-  "xetra": "HEWLETT PACKARD ENT.",
-  "kuerzel": "2HP",
-  "quelle": "openfigi"
- },
- "HPQ": {
-  "isin": "US40434L1052",
-  "xetra": "HP INC            DL -,01",
-  "kuerzel": "7HP",
-  "quelle": "openfigi"
- },
- "HRL": {
-  "isin": "US4404521001",
-  "xetra": "HORMEL FOODS   DL-,01465",
-  "kuerzel": "HO7",
-  "quelle": "openfigi"
- },
- "HSBC": {
-  "isin": "GB0005405286",
-  "xetra": "HSBC HLDGS PLC     DL-,50",
-  "kuerzel": "HBC1",
-  "quelle": "name",
-  "treffer": 1.03
- },
- "HSY": {
-  "isin": "US4278661081",
-  "xetra": "HERSHEY CO.          DL 1",
-  "kuerzel": "HSY",
-  "quelle": "openfigi"
- },
- "HUBB": {
-  "isin": "US4435106079",
-  "xetra": "HUBBELL INC.       DL-,01",
-  "kuerzel": "HUEC",
-  "quelle": "openfigi"
- },
- "HUM": {
-  "isin": "US4448591028",
-  "xetra": "HUMANA INC.       DL-,166",
-  "kuerzel": "HUM",
-  "quelle": "openfigi"
- },
- "HWM": {
-  "isin": "US4432011082",
-  "xetra": "HOWMET AEROSPACE   DL-,01",
-  "kuerzel": "48Z",
-  "quelle": "openfigi"
- },
- "IBKR": {
-  "isin": "US45841N1072",
-  "xetra": "INTERACTIVE BROKERS DL-01",
-  "kuerzel": "KY6",
-  "quelle": "openfigi"
- },
- "IBM": {
-  "isin": "US4592001014",
-  "xetra": "INTL BUS. MACH.    DL-,20",
-  "kuerzel": "IBM",
-  "quelle": "openfigi"
- },
- "ICE": {
-  "isin": "US45866F1049",
-  "xetra": "INTERCONTINENTAL EXCH.INC",
-  "kuerzel": "IC2",
-  "quelle": "openfigi"
- },
- "IDXX": {
-  "isin": "US45168D1046",
-  "xetra": "IDEXX LABS INC.    DL-,10",
-  "kuerzel": "IX1",
-  "quelle": "openfigi"
- },
- "IEX": {
-  "isin": "US45167R1041",
-  "xetra": "IDEX CORP.         DL-,01",
-  "kuerzel": "ID7",
-  "quelle": "openfigi"
- },
- "IFF": {
-  "isin": "US4595061015",
-  "xetra": "",
-  "kuerzel": "",
-  "quelle": "openfigi"
- },
- "ILMN": {
-  "isin": "US4523271090",
-  "xetra": "ILLUMINA INC.      DL-,01",
-  "kuerzel": "ILU",
-  "quelle": "openfigi"
- },
- "INCY": {
-  "isin": "US45337C1027",
-  "xetra": "INCYTE            DL-,001",
-  "kuerzel": "ICY",
-  "quelle": "openfigi"
- },
- "ING": {
-  "isin": "NL0011821202",
-  "xetra": "ING GROEP NV      EO -,01",
-  "kuerzel": "INN1",
-  "quelle": "name",
-  "treffer": 1.03
- },
- "INTC": {
-  "isin": "US4581401001",
-  "xetra": "INTEL CORP.       DL-,001",
-  "kuerzel": "INL",
-  "quelle": "openfigi"
- },
- "INTU": {
-  "isin": "US4612021034",
-  "xetra": "INTUIT INC.        DL-,01",
-  "kuerzel": "ITU",
-  "quelle": "openfigi"
- },
- "INVH": {
-  "isin": "US46187W1071",
-  "xetra": "",
-  "kuerzel": "",
-  "quelle": "openfigi"
- },
- "IP": {
-  "isin": "US4601461035",
-  "xetra": "INTL PAPER           DL 1",
-  "kuerzel": "INP",
-  "quelle": "openfigi"
- },
- "IQV": {
-  "isin": "US46266C1053",
-  "xetra": "IQVIA HLDGS        DL-,01",
-  "kuerzel": "QTS",
-  "quelle": "openfigi"
- },
- "IR": {
-  "isin": "US45687V1061",
-  "xetra": "INGERSOLL-RAND    DL -,01",
-  "kuerzel": "5GD",
-  "quelle": "openfigi"
- },
- "IRM": {
-  "isin": "US46284V1017",
-  "xetra": "",
-  "kuerzel": "",
-  "quelle": "openfigi"
- },
- "ISRG": {
-  "isin": "US46120E6023",
-  "xetra": "INTUITIVE SURGIC. DL-,001",
-  "kuerzel": "IUI1",
-  "quelle": "openfigi"
- },
- "IT": {
-  "isin": "US3666511072",
-  "xetra": "GARTNER INC. DL -,0005",
-  "kuerzel": "GGRA",
-  "quelle": "openfigi"
- },
- "ITW": {
-  "isin": "US4523081093",
-  "xetra": "ILL. TOOL WKS",
-  "kuerzel": "ILT",
-  "quelle": "openfigi"
- },
- "J": {
-  "isin": "US46982L1089",
-  "xetra": "JACOBS SOLUTIONS INC. DL1",
-  "kuerzel": "Z0Y",
-  "quelle": "openfigi"
- },
- "JBHT": {
-  "isin": "US4456581077",
-  "xetra": "HUNT (J.B.) TRANS. DL-,01",
-  "kuerzel": "JB1",
-  "quelle": "openfigi"
- },
- "JBL": {
-  "isin": "US4663131039",
-  "xetra": "JABIL DL-,001",
-  "kuerzel": "JBL",
-  "quelle": "openfigi"
- },
- "JCI": {
-  "isin": "IE00BY7QL619",
-  "xetra": "JOHNSON CONTR.INTL.DL-,01",
-  "kuerzel": "TYIA",
-  "quelle": "name",
-  "treffer": 0.93
- },
- "JKHY": {
-  "isin": "US4262811015",
-  "xetra": "",
-  "kuerzel": "",
-  "quelle": "openfigi"
- },
- "JNJ": {
-  "isin": "US4781601046",
-  "xetra": "JOHNSON + JOHNSON    DL 1",
-  "kuerzel": "JNJ",
-  "quelle": "openfigi"
- },
- "JPM": {
-  "isin": "US46625H1005",
-  "xetra": "JPMORGAN CHASE       DL 1",
-  "kuerzel": "CMC",
-  "quelle": "openfigi"
- },
- "KDP": {
-  "isin": "US49271V1008",
-  "xetra": "KEURIG DR PEPPER   DL-,01",
-  "kuerzel": "DP5",
-  "quelle": "openfigi"
- },
- "KEY": {
-  "isin": "US4932671088",
-  "xetra": "KEYCORP              DL 1",
-  "kuerzel": "KEY",
-  "quelle": "openfigi"
- },
- "KEYS": {
-  "isin": "US49338L1035",
-  "xetra": "KEYSIGHT TECHS     DL-,01",
-  "kuerzel": "1KT",
-  "quelle": "openfigi"
- },
- "KHC": {
-  "isin": "US5007541064",
-  "xetra": "KRAFT HEINZ CO.DL -,01",
-  "kuerzel": "KHNZ",
-  "quelle": "openfigi"
- },
- "KIM": {
-  "isin": "US49446R1095",
-  "xetra": "",
-  "kuerzel": "",
-  "quelle": "openfigi"
- },
- "KKR": {
-  "isin": "US48251W1045",
-  "xetra": "",
-  "kuerzel": "",
-  "quelle": "openfigi"
- },
- "KLAC": {
-  "isin": "US4824801009",
-  "xetra": "KLA CORP.        DL -,001",
-  "kuerzel": "KLA",
-  "quelle": "openfigi"
- },
- "KMB": {
-  "isin": "US4943681035",
-  "xetra": "KIMBERLY-CLARK    DL 1,25",
-  "kuerzel": "KMY",
-  "quelle": "openfigi"
- },
- "KMI": {
-  "isin": "US49456B1017",
-  "xetra": "KINDER MORGAN P DL-,01",
-  "kuerzel": "2KD",
-  "quelle": "openfigi"
- },
- "KO": {
-  "isin": "US1912161007",
-  "xetra": "COCA-COLA CO.      DL-,25",
-  "kuerzel": "CCC3",
-  "quelle": "openfigi"
- },
- "KR": {
-  "isin": "US5010441013",
-  "xetra": "KROGER CO.           DL 1",
-  "kuerzel": "KOG",
-  "quelle": "openfigi"
- },
- "L": {
-  "isin": "US5404241086",
-  "xetra": "LOEWS CORP.          DL 1",
-  "kuerzel": "LTR",
-  "quelle": "openfigi"
- },
- "LDOS": {
-  "isin": "US5253271028",
-  "xetra": "LEIDOS HOLDINGS  DL-,0001",
-  "kuerzel": "S6IA",
-  "quelle": "openfigi"
- },
- "LEN": {
-  "isin": "US5260571048",
-  "xetra": "LENNAR CORP.A      DL-,10",
-  "kuerzel": "LNN",
-  "quelle": "openfigi"
- },
- "LH": {
-  "isin": "US5049221055",
-  "xetra": "LABCORP HLDGS INC. O.N.",
-  "kuerzel": "N6B",
-  "quelle": "openfigi"
- },
- "LHX": {
-  "isin": "US5024311095",
-  "xetra": "L3HARRIS TECHS INC.DL-,01",
-  "kuerzel": "HRS",
-  "quelle": "openfigi"
- },
- "LII": {
-  "isin": "US5261071071",
-  "xetra": "LENNOX INTL INC.   DL-,01",
-  "kuerzel": "LXI",
-  "quelle": "openfigi"
- },
- "LIN": {
-  "isin": "IE000S9YS762",
-  "xetra": "LINDE PLC        EO -,001",
-  "kuerzel": "LIN",
-  "quelle": "name",
-  "treffer": 1.03
- },
- "LITE": {
-  "isin": "US55024U1097",
-  "xetra": "LUMENTUM HLDGS IN.DL-,001",
-  "kuerzel": "LU2",
-  "quelle": "openfigi"
- },
- "LLY": {
-  "isin": "US5324571083",
-  "xetra": "ELI LILLY",
-  "kuerzel": "LLY",
-  "quelle": "openfigi"
- },
- "LMT": {
-  "isin": "US5398301094",
-  "xetra": "LOCKHEED MARTIN    DL 1",
-  "kuerzel": "LOM",
-  "quelle": "openfigi"
- },
- "LOW": {
-  "isin": "US5486611073",
-  "xetra": "LOWE'S COS INC.    DL-,50",
-  "kuerzel": "LWE",
-  "quelle": "openfigi"
- },
- "LRCX": {
-  "isin": "US5128073062",
-  "xetra": "LAM RESEARCH CORP. NEW",
-  "kuerzel": "LAR0",
-  "quelle": "openfigi"
- },
- "LULU": {
-  "isin": "US5500211090",
-  "xetra": "LULULEMON ATHLETICA INC.",
-  "kuerzel": "33L",
-  "quelle": "openfigi"
- },
- "LUV": {
-  "isin": "US8447411088",
-  "xetra": "",
-  "kuerzel": "",
-  "quelle": "openfigi"
- },
- "LVS": {
-  "isin": "US5178341070",
-  "xetra": "LAS VEGAS SANDS   DL-,001",
-  "kuerzel": "LCR",
-  "quelle": "openfigi"
- },
- "LYG": {
-  "isin": "GB0008706128",
-  "quelle": "fest"
- },
- "LYV": {
-  "isin": "US5380341090",
-  "xetra": "LIVE NATION ENTMT.DL -,01",
-  "kuerzel": "3LN",
-  "quelle": "openfigi"
- },
- "MA": {
-  "isin": "US57636Q1040",
-  "xetra": "MASTERCARD INC.A DL-,0001",
-  "kuerzel": "M4I",
-  "quelle": "openfigi"
- },
- "MAA": {
-  "isin": "US59522J1034",
-  "xetra": "",
-  "kuerzel": "",
-  "quelle": "openfigi"
- },
- "MAIN": {
-  "isin": "US56035L1044",
-  "xetra": "",
-  "kuerzel": "",
-  "quelle": "openfigi"
- },
- "MAR": {
-  "isin": "US5719032022",
-  "xetra": "MARRIOTT INTL A    DL-,01",
-  "kuerzel": "MAQ",
-  "quelle": "openfigi"
- },
- "MAS": {
-  "isin": "US5745991068",
-  "xetra": "",
-  "kuerzel": "",
-  "quelle": "openfigi"
- },
- "MCD": {
-  "isin": "US5801351017",
-  "xetra": "MCDONALDS CORP.   DL-,01",
-  "kuerzel": "MDO",
-  "quelle": "openfigi"
- },
- "MCHP": {
-  "isin": "US5950171042",
-  "xetra": "MICROCHIP TECH.   DL-,001",
-  "kuerzel": "MCP",
-  "quelle": "openfigi"
- },
- "MCK": {
-  "isin": "US58155Q1031",
-  "xetra": "MCKESSON           DL-,01",
-  "kuerzel": "MCK",
-  "quelle": "openfigi"
- },
- "MCO": {
-  "isin": "US6153691059",
-  "xetra": "MOODYS CORP       DL-,01",
-  "kuerzel": "DUT",
-  "quelle": "openfigi"
- },
- "MDLZ": {
-  "isin": "US6092071058",
-  "xetra": "MONDELEZ INTL INC. A",
-  "kuerzel": "KTF",
-  "quelle": "openfigi"
- },
- "MDT": {
-  "isin": "IE00BTN1Y115",
-  "xetra": "MEDTRONIC PLC    DL-,0001",
-  "kuerzel": "2M6",
-  "quelle": "name",
-  "treffer": 1.03
- },
- "MET": {
-  "isin": "US59156R1086",
-  "xetra": "METLIFE INC.       DL-,01",
-  "kuerzel": "MWZ",
-  "quelle": "openfigi"
- },
- "META": {
-  "isin": "US30303M1027",
-  "xetra": "META PLATF.  A DL-,000006",
-  "kuerzel": "FB2A",
-  "quelle": "openfigi"
- },
- "MGM": {
-  "isin": "US5529531015",
-  "xetra": "",
-  "kuerzel": "",
-  "quelle": "openfigi"
- },
- "MKC": {
-  "isin": "US5797802064",
-  "xetra": "",
-  "kuerzel": "",
-  "quelle": "openfigi"
- },
- "MLM": {
-  "isin": "US5732841060",
-  "xetra": "MARTIN MAR. MAT.   DL-,01",
-  "kuerzel": "MMX",
-  "quelle": "openfigi"
- },
- "MMM": {
-  "isin": "US88579Y1010",
-  "xetra": "3M CO.             DL-,01",
-  "kuerzel": "MMM",
-  "quelle": "openfigi"
- },
- "MNST": {
-  "isin": "US61174X1090",
-  "xetra": "MONSTER BEVER.NEW DL-,005",
-  "kuerzel": "MOB",
-  "quelle": "openfigi"
- },
- "MO": {
-  "isin": "US02209S1033",
-  "xetra": "ALTRIA GRP INC.   DL-,333",
-  "kuerzel": "PHM7",
-  "quelle": "openfigi"
- },
- "MOS": {
-  "isin": "US61945C1036",
-  "xetra": "MOSAIC CO. DL-,01",
-  "kuerzel": "02M",
-  "quelle": "openfigi"
- },
- "MPC": {
-  "isin": "US56585A1025",
-  "xetra": "MARATHON PETROLEUM DL-,01",
-  "kuerzel": "MPN",
-  "quelle": "openfigi"
- },
- "MPWR": {
-  "isin": "US6098391054",
-  "xetra": "MONOLITHIC POWER  DL-,001",
-  "kuerzel": "NQG",
-  "quelle": "openfigi"
- },
- "MRK": {
-  "isin": "US58933Y1055",
-  "xetra": "MERCK CO.          DL-,01",
-  "kuerzel": "6MK",
-  "quelle": "openfigi"
- },
- "MRNA": {
-  "isin": "US60770K1079",
-  "xetra": "MODERNA INC.     DL-,0001",
-  "kuerzel": "0QF",
-  "quelle": "openfigi"
- },
- "MRSH": {
-  "isin": "US5717481023",
-  "xetra": "MARSH+MCLENNAN COS.INC.D1",
-  "kuerzel": "MSN",
-  "quelle": "openfigi"
- },
- "MRVL": {
-  "isin": "US5738741041",
-  "xetra": "MARVELL TECH. GRP DL-,002",
-  "kuerzel": "9MW",
-  "quelle": "openfigi"
- },
- "MS": {
-  "isin": "US6174464486",
-  "xetra": "MORGAN STANLEY     DL-,01",
-  "kuerzel": "DWD",
-  "quelle": "openfigi"
- },
- "MSCI": {
-  "isin": "US55354G1004",
-  "xetra": "MSCI INC. A        DL-,01",
-  "kuerzel": "3HM",
-  "quelle": "openfigi"
- },
- "MSFT": {
-  "isin": "US5949181045",
-  "xetra": "MICROSOFT    DL-,00000625",
-  "kuerzel": "MSF",
-  "quelle": "openfigi"
- },
- "MSI": {
-  "isin": "US6200763075",
-  "xetra": "MOTOROLA SOLUTIONS DL-,01",
-  "kuerzel": "MTLA",
-  "quelle": "openfigi"
- },
- "MTB": {
-  "isin": "US55261F1049",
-  "xetra": "M+T BANK           DL-,50",
-  "kuerzel": "MTZ",
-  "quelle": "openfigi"
- },
- "MTD": {
-  "isin": "US5926881054",
-  "xetra": "METTLER-TOLEDO INTL",
-  "kuerzel": "MTO",
-  "quelle": "openfigi"
- },
- "MU": {
-  "isin": "US5951121038",
-  "xetra": "MICRON TECHN. INC. DL-,10",
-  "kuerzel": "MTE",
-  "quelle": "openfigi"
- },
- "MUFG": {
-  "isin": "JP3902900004",
-  "quelle": "fest"
- },
- "NDAQ": {
-  "isin": "US6311031081",
-  "xetra": "NASDAQ INC.       DL -,01",
-  "kuerzel": "NAQ",
-  "quelle": "openfigi"
- },
- "NEE": {
-  "isin": "US65339F1012",
-  "xetra": "NEXTERA ENERGY INC.DL-,01",
-  "kuerzel": "FP3",
-  "quelle": "openfigi"
- },
- "NEM": {
-  "isin": "US6516391066",
-  "xetra": "NEWMONT CORP.     DL 1,60",
-  "kuerzel": "NMM",
-  "quelle": "openfigi"
- },
- "NFLX": {
-  "isin": "US64110L1061",
-  "xetra": "NETFLIX INC.      DL-,001",
-  "kuerzel": "NFC",
-  "quelle": "openfigi"
- },
- "NI": {
-  "isin": "US65473P1057",
-  "xetra": "NISOURCE INC.",
-  "kuerzel": "NOU",
-  "quelle": "openfigi"
- },
- "NKE": {
-  "isin": "US6541061031",
-  "xetra": "NIKE INC. B",
-  "kuerzel": "NKE",
-  "quelle": "openfigi"
- },
- "NOC": {
-  "isin": "US6668071029",
-  "xetra": "NORTHROP GRUMMAN DL 1",
-  "kuerzel": "NTH",
-  "quelle": "openfigi"
- },
- "NOK": {
-  "isin": "FI0009000681",
-  "xetra": "NOKIA OYJ EO-,06",
-  "kuerzel": "NOA3",
-  "quelle": "name",
-  "treffer": 1.03
- },
- "NOW": {
-  "isin": "US81762P1021",
-  "xetra": "SERVICENOW INC.   DL-,001",
-  "kuerzel": "4S0",
-  "quelle": "openfigi"
- },
- "NRG": {
-  "isin": "US6293775085",
-  "xetra": "NRG ENERGY INC.    DL-,01",
-  "kuerzel": "NRA",
-  "quelle": "openfigi"
- },
- "NSC": {
-  "isin": "US6558441084",
-  "xetra": "NORFOLK STHN CORP.   DL 1",
-  "kuerzel": "NFS",
-  "quelle": "openfigi"
- },
- "NTAP": {
-  "isin": "US64110D1046",
-  "xetra": "NETAPP INC.",
-  "kuerzel": "NTA",
-  "quelle": "openfigi"
- },
- "NTRS": {
-  "isin": "US6658591044",
-  "xetra": "NORTHN TRUST CORP.DL1,666",
-  "kuerzel": "NT4",
-  "quelle": "openfigi"
- },
- "NUE": {
-  "isin": "US6703461052",
-  "xetra": "NUCOR CORP.        DL-,40",
-  "kuerzel": "NUO",
-  "quelle": "openfigi"
- },
- "NVDA": {
-  "isin": "US67066G1040",
-  "xetra": "NVIDIA CORP.      DL-,001",
-  "kuerzel": "NVD",
-  "quelle": "openfigi"
- },
- "NVO": {
-  "isin": "DK0062498333",
-  "xetra": "NOVO-NORDISK AS B  DK 0,1",
-  "kuerzel": "NOV",
-  "quelle": "name",
-  "treffer": 0.92
- },
- "NVR": {
-  "isin": "US62944T1051",
-  "xetra": "NVR INC.           DL-,01",
-  "kuerzel": "NVE",
-  "quelle": "openfigi"
- },
- "NVS": {
-  "isin": "CH0012005267",
-  "xetra": "NOVARTIS NAM.     SF 0,49",
-  "kuerzel": "NOT",
-  "quelle": "name",
-  "treffer": 1.03
- },
- "NWSA": {
-  "isin": "US65249B1098",
-  "xetra": "NEWS CORP. A       DL-,01",
-  "kuerzel": "NC0",
-  "quelle": "openfigi"
- },
- "NXPI": {
-  "isin": "NL0009538784",
-  "xetra": "NXP SEMICONDUCTORS EO-,20",
-  "kuerzel": "VNX",
-  "quelle": "name",
-  "treffer": 1.03
- },
- "O": {
-  "isin": "US7561091049",
-  "xetra": "",
-  "kuerzel": "",
-  "quelle": "openfigi"
- },
- "ODFL": {
-  "isin": "US6795801009",
-  "xetra": "OLD DOMIN.FR.LINE  DL-,10",
-  "kuerzel": "ODF",
-  "quelle": "openfigi"
- },
- "OKE": {
-  "isin": "US30609A1097",
-  "xetra": "",
-  "kuerzel": "",
-  "quelle": "openfigi"
- },
- "OMC": {
-  "isin": "US6819191064",
-  "xetra": "OMNICOM GRP INC.   DL-,15",
-  "kuerzel": "OCN",
-  "quelle": "openfigi"
- },
- "ON": {
-  "isin": "US6821891057",
-  "xetra": "ON SEMICOND.       DL-,01",
-  "kuerzel": "XS4",
-  "quelle": "openfigi"
- },
- "ORCL": {
-  "isin": "US68389X1054",
-  "xetra": "ORACLE CORP.       DL-,01",
-  "kuerzel": "ORC",
-  "quelle": "openfigi"
- },
- "ORLY": {
-  "isin": "US67103H1077",
-  "xetra": "O'REILLY AUTOMOTIV.DL-,01",
-  "kuerzel": "OM6",
-  "quelle": "openfigi"
- },
- "OTIS": {
-  "isin": "US68902V1070",
-  "xetra": "OTIS WORLDWID.CORP DL-,01",
-  "kuerzel": "4PG",
-  "quelle": "openfigi"
- },
- "OXY": {
-  "isin": "US6745991058",
-  "xetra": "OCCIDENTAL PET.    DL-,20",
-  "kuerzel": "OPC",
-  "quelle": "openfigi"
- },
- "P": {
-  "isin": "US74624M1027",
-  "xetra": "EVERPURE INC CL.A DL-0001",
-  "kuerzel": "6PU",
-  "quelle": "openfigi"
- },
- "PANW": {
-  "isin": "US6974351057",
-  "xetra": "PALO ALTO NETWKS DL-,0001",
-  "kuerzel": "5AP",
-  "quelle": "openfigi"
- },
- "PAYX": {
-  "isin": "US7043261079",
-  "xetra": "PAYCHEX INC.       DL-,01",
-  "kuerzel": "PCX",
-  "quelle": "openfigi"
- },
- "PCAR": {
-  "isin": "US6937181088",
-  "xetra": "PACCAR INC.          DL 1",
-  "kuerzel": "PAE",
-  "quelle": "openfigi"
- },
- "PCG": {
-  "isin": "US69331C1080",
-  "xetra": "PG + E CORP.",
-  "kuerzel": "PCG",
-  "quelle": "openfigi"
- },
- "PEG": {
-  "isin": "US7445731067",
-  "xetra": "PUBL. SVC.ENTER.",
-  "kuerzel": "PSE",
-  "quelle": "openfigi"
- },
- "PEP": {
-  "isin": "US7134481081",
-  "xetra": "PEPSICO INC.     DL-,0166",
-  "kuerzel": "PEP",
-  "quelle": "openfigi"
- },
- "PFE": {
-  "isin": "US7170811035",
-  "xetra": "PFIZER INC.        DL-,05",
-  "kuerzel": "PFE",
-  "quelle": "openfigi"
- },
- "PFG": {
-  "isin": "US74251V1026",
-  "xetra": "PRINCIPAL FINL GRP DL-,01",
-  "kuerzel": "PG4",
-  "quelle": "openfigi"
- },
- "PG": {
-  "isin": "US7427181091",
-  "xetra": "PROCTER GAMBLE",
-  "kuerzel": "PRG",
-  "quelle": "openfigi"
- },
- "PGR": {
-  "isin": "US7433151039",
-  "xetra": "PROGRESSIVE CORP.    DL 1",
-  "kuerzel": "PGV",
-  "quelle": "openfigi"
- },
- "PH": {
-  "isin": "US7010941042",
-  "xetra": "PARKER-HANNIFIN   DL-,50",
-  "kuerzel": "PAR",
-  "quelle": "openfigi"
- },
- "PHG": {
-  "isin": "NL0000009538",
-  "xetra": "KONINKL. PHILIPS EO -,20",
-  "kuerzel": "PHI1",
-  "quelle": "name",
-  "treffer": 0.91
- },
- "PHM": {
-  "isin": "US7458671010",
-  "xetra": "PULTE GROUP INC.  DL -,01",
-  "kuerzel": "PU7",
-  "quelle": "openfigi"
- },
- "PKG": {
-  "isin": "US6951561090",
-  "xetra": "PACKAGING CORP. OF AMER.",
-  "kuerzel": "PKA",
-  "quelle": "openfigi"
- },
- "PLD": {
-  "isin": "US74340W1036",
-  "xetra": "",
-  "kuerzel": "",
-  "quelle": "openfigi"
- },
- "PLTR": {
-  "isin": "US69608A1088",
-  "xetra": "PALANTIR TECHNOLOGIES INC",
-  "kuerzel": "PTX",
-  "quelle": "openfigi"
- },
- "PM": {
-  "isin": "US7181721090",
-  "xetra": "PHILIP MORRIS INTL INC.",
-  "kuerzel": "4I1",
-  "quelle": "openfigi"
- },
- "PNC": {
-  "isin": "US6934751057",
-  "xetra": "PNC FINL SERVICES GRP DL5",
-  "kuerzel": "PNP",
-  "quelle": "openfigi"
- },
- "PODD": {
-  "isin": "US45784P1012",
-  "xetra": "INSULET CORP.    DL -,001",
-  "kuerzel": "GOV",
-  "quelle": "openfigi"
- },
- "PPL": {
-  "isin": "US69351T1060",
-  "xetra": "PPL CORP.          DL-,01",
-  "kuerzel": "PP9",
-  "quelle": "openfigi"
- },
- "PRU": {
-  "isin": "US7443201022",
-  "xetra": "PRUDENTIAL FINL    DL-,01",
-  "kuerzel": "PLL",
-  "quelle": "openfigi"
- },
- "PSA": {
-  "isin": "US74460D1090",
-  "xetra": "",
-  "kuerzel": "",
-  "quelle": "openfigi"
- },
- "PSX": {
-  "isin": "US7185461040",
-  "xetra": "PHILLIPS 66        DL-,01",
-  "kuerzel": "R66",
-  "quelle": "openfigi"
- },
- "PTC": {
-  "isin": "US69370C1009",
-  "xetra": "PTC INC.          DL -,01",
-  "kuerzel": "PMTA",
-  "quelle": "openfigi"
- },
- "PWR": {
-  "isin": "US74762E1029",
-  "xetra": "QUANTA SVCS     DL-,00001",
-  "kuerzel": "QAA",
-  "quelle": "openfigi"
- },
- "PYPL": {
-  "isin": "US70450Y1038",
-  "xetra": "PAYPAL HDGS INC.DL-,0001",
-  "kuerzel": "2PP",
-  "quelle": "openfigi"
- },
- "Q": {
-  "isin": "US74743L1008",
-  "xetra": "QNITY ELECTRONICS O.N.",
-  "kuerzel": "Z5O",
-  "quelle": "openfigi"
- },
- "QCOM": {
-  "isin": "US7475251036",
-  "xetra": "QUALCOMM INC.    DL-,0001",
-  "kuerzel": "QCI",
-  "quelle": "openfigi"
- },
- "RDDT": {
-  "isin": "US75734B1008",
-  "xetra": "REDDIT INC. CL.A",
-  "kuerzel": "6VO",
-  "quelle": "openfigi"
- },
- "REGN": {
-  "isin": "US75886F1075",
-  "xetra": "REGENERON PHARMAC.DL-,001",
-  "kuerzel": "RGO",
-  "quelle": "openfigi"
- },
- "RF": {
-  "isin": "US7591EP1005",
-  "xetra": "REGIONS FINANCIAL  DL-,01",
-  "kuerzel": "RN7",
-  "quelle": "openfigi"
- },
- "RIO": {
-  "isin": "GB0007188757",
-  "xetra": "RIO TINTO PLC      LS-,10",
-  "kuerzel": "RIO1",
-  "quelle": "name",
-  "treffer": 1.03
- },
- "RJF": {
-  "isin": "US7547301090",
-  "xetra": "RAYMOND JAMES FIN. DL-,01",
-  "kuerzel": "RJF",
-  "quelle": "openfigi"
- },
- "RL": {
-  "isin": "US7512121010",
-  "xetra": "RALPH LAUREN A     DL-,01",
-  "kuerzel": "PRL",
-  "quelle": "openfigi"
- },
- "RMD": {
-  "isin": "US7611521078",
-  "xetra": "RESMED INC.       DL-,004",
-  "kuerzel": "RME",
-  "quelle": "openfigi"
- },
- "ROK": {
-  "isin": "US7739031091",
-  "xetra": "ROCKWELL AU.         DL 1",
-  "kuerzel": "RWL",
-  "quelle": "openfigi"
- },
- "ROL": {
-  "isin": "US7757111049",
-  "xetra": "ROLLINS INC.         DL 1",
-  "kuerzel": "RLS",
-  "quelle": "openfigi"
- },
- "ROP": {
-  "isin": "US7766961061",
-  "xetra": "ROPER TECHNOLOGIES DL-,01",
-  "kuerzel": "ROP",
-  "quelle": "openfigi"
- },
- "ROST": {
-  "isin": "US7782961038",
-  "xetra": "ROSS STRS INC.     DL-,01",
-  "kuerzel": "RSO",
-  "quelle": "openfigi"
- },
- "RSG": {
-  "isin": "US7607591002",
-  "xetra": "REPUBLIC SERVIC. DL-,01",
-  "kuerzel": "RPU",
-  "quelle": "openfigi"
- },
- "RTX": {
-  "isin": "US75513E1010",
-  "xetra": "RTX CORP.            -,01",
-  "kuerzel": "5UR",
-  "quelle": "openfigi"
- },
- "RVTY": {
-  "isin": "US7140461093",
-  "xetra": "REVVITY INC.         DL 1",
-  "kuerzel": "PKN",
-  "quelle": "openfigi"
- },
- "SAN": {
-  "isin": "ES0113900J37",
-  "xetra": "BCO SANTANDER N.EO0,5",
-  "kuerzel": "BSD2",
-  "quelle": "name",
-  "treffer": 0.96
- },
- "SAP": {
-  "isin": "DE0007164600",
-  "xetra": "SAP SE O.N.",
-  "kuerzel": "SAP",
-  "quelle": "name",
-  "treffer": 1.03
- },
- "SBAC": {
-  "isin": "US78410G1040",
-  "xetra": "",
-  "kuerzel": "",
-  "quelle": "openfigi"
- },
- "SBUX": {
-  "isin": "US8552441094",
-  "xetra": "STARBUCKS CORP.",
-  "kuerzel": "SRB",
-  "quelle": "openfigi"
- },
- "SCHW": {
-  "isin": "US8085131055",
-  "xetra": "CHARLES SCHWAB CORP.DL-01",
-  "kuerzel": "SWG",
-  "quelle": "openfigi"
- },
- "SHEL": {
-  "isin": "GB00BP6MXD84",
-  "xetra": "SHELL PLC           EO-07",
-  "kuerzel": "R6C0",
-  "quelle": "name",
-  "treffer": 1.03
- },
- "SHW": {
-  "isin": "US8243481061",
-  "xetra": "SHERWIN-WILLIAMS     DL 1",
-  "kuerzel": "SJ3",
-  "quelle": "openfigi"
- },
- "SJM": {
-  "isin": "US8326964058",
-  "xetra": "SMUCKER -J.M.-",
-  "kuerzel": "JM2",
-  "quelle": "openfigi"
- },
- "SKYD": {
-  "isin": "US69932A2042",
-  "xetra": "",
-  "kuerzel": "",
-  "quelle": "openfigi"
- },
- "SMCI": {
-  "isin": "US86800U3023",
-  "xetra": "SUPER MICRO O.N.",
-  "kuerzel": "MS51",
-  "quelle": "openfigi"
- },
- "SMFG": {
-  "isin": "JP3890350006",
-  "quelle": "fest"
- },
- "SNA": {
-  "isin": "US8330341012",
-  "xetra": "",
-  "kuerzel": "",
-  "quelle": "openfigi"
- },
- "SNDK": {
-  "isin": "US80004C2008",
-  "xetra": "SANDISK CORP.     DL -,01",
-  "kuerzel": "BW9",
-  "quelle": "openfigi"
- },
- "SNPS": {
-  "isin": "US8716071076",
-  "xetra": "SYNOPSYS INC.      DL-,01",
-  "kuerzel": "SYP",
-  "quelle": "openfigi"
- },
- "SNY": {
-  "isin": "FR0000120578",
-  "quelle": "fest"
- },
- "SO": {
-  "isin": "US8425871071",
-  "xetra": "THE SOUTHERN CO.     DL 5",
-  "kuerzel": "SOT",
-  "quelle": "openfigi"
- },
- "SOLV": {
-  "isin": "US83444M1018",
-  "xetra": "",
-  "kuerzel": "",
-  "quelle": "openfigi"
- },
- "SONY": {
-  "isin": "JP3435000009",
-  "quelle": "fest"
- },
- "SPG": {
-  "isin": "US8288061091",
-  "xetra": "",
-  "kuerzel": "",
-  "quelle": "openfigi"
- },
- "SPGI": {
-  "isin": "US78409V1044",
-  "xetra": "S+P GLOBAL INC.      DL 1",
-  "kuerzel": "MHL",
-  "quelle": "openfigi"
- },
- "SRE": {
-  "isin": "US8168511090",
-  "xetra": "SEMPRA",
-  "kuerzel": "SE4",
-  "quelle": "openfigi"
- },
- "STAG": {
-  "isin": "US85254J1025",
-  "xetra": "",
-  "kuerzel": "",
-  "quelle": "openfigi"
- },
- "STLA": {
-  "isin": "NL00150001Q9",
-  "xetra": "STELLANTIS NV     EO -,01",
-  "kuerzel": "8TI",
-  "quelle": "name",
-  "treffer": 1.03
- },
- "STLD": {
-  "isin": "US8581191009",
-  "xetra": "STEEL DYNAMIC    DL-,0025",
-  "kuerzel": "SD5",
-  "quelle": "openfigi"
- },
- "STT": {
-  "isin": "US8574771031",
-  "xetra": "STATE STREET CORP.   DL 1",
-  "kuerzel": "ZYA",
-  "quelle": "openfigi"
- },
- "STZ": {
-  "isin": "US21036P1084",
-  "xetra": "CONST.BRANDS A     DL-,01",
-  "kuerzel": "CB1A",
-  "quelle": "openfigi"
- },
- "SW": {
-  "isin": "IE00028FXN24",
-  "xetra": "SMURFIT WESTROCK   DL-,01",
-  "kuerzel": "N4U",
-  "quelle": "name",
-  "treffer": 1.03
- },
- "SWK": {
-  "isin": "US8545021011",
-  "xetra": "",
-  "kuerzel": "",
-  "quelle": "openfigi"
- },
- "SWKS": {
-  "isin": "US83088M1027",
-  "xetra": "SKYWORKS SOL.      DL-,25",
-  "kuerzel": "AWM",
-  "quelle": "openfigi"
- },
- "SYF": {
-  "isin": "US87165B1035",
-  "xetra": "SYNCHRONY FIN.    DL-,001",
-  "kuerzel": "SFE",
-  "quelle": "openfigi"
- },
- "SYK": {
-  "isin": "US8636671013",
-  "xetra": "STRYKER CORP.      DL-,10",
-  "kuerzel": "SYK",
-  "quelle": "openfigi"
- },
- "SYY": {
-  "isin": "US8718291078",
-  "xetra": "SYSCO CORP.          DL 1",
-  "kuerzel": "SYY",
-  "quelle": "openfigi"
- },
- "T": {
-  "isin": "US00206R1023",
-  "xetra": "AT + T INC.          DL 1",
-  "kuerzel": "SOBA",
-  "quelle": "openfigi"
- },
- "TDG": {
-  "isin": "US8936411003",
-  "xetra": "TRANSDIGM GROUP    DL-,01",
-  "kuerzel": "T7D",
-  "quelle": "openfigi"
- },
- "TDY": {
-  "isin": "US8793601050",
-  "xetra": "",
-  "kuerzel": "",
-  "quelle": "openfigi"
- },
- "TECH": {
-  "isin": "US09073M1045",
-  "xetra": "BIO-TECHNE CORP.   DL-,01",
-  "kuerzel": "TE1",
-  "quelle": "openfigi"
- },
- "TEL": {
-  "isin": "IE000IVNQZ81",
-  "xetra": "TE CONNECTIVITY   DL-,01",
-  "kuerzel": "BZ4",
-  "quelle": "name",
-  "treffer": 1.03
- },
- "TER": {
-  "isin": "US8807701029",
-  "xetra": "TERADYNE INC.     DL-,125",
-  "kuerzel": "TEY",
-  "quelle": "openfigi"
- },
- "TFC": {
-  "isin": "US89832Q1094",
-  "xetra": "TRUIST FINL CORP.    DL 5",
-  "kuerzel": "BBK",
-  "quelle": "openfigi"
- },
- "TGT": {
-  "isin": "US87612E1064",
-  "xetra": "TARGET CORP.     DL-,0833",
-  "kuerzel": "DYH",
-  "quelle": "openfigi"
- },
- "TJX": {
-  "isin": "US8725401090",
-  "xetra": "TJX COS INC.         DL 1",
-  "kuerzel": "TJX",
-  "quelle": "openfigi"
- },
- "TM": {
-  "isin": "JP3633400001",
-  "quelle": "fest"
- },
- "TMO": {
-  "isin": "US8835561023",
-  "xetra": "THERMO FISH.SCIENTIF.DL 1",
-  "kuerzel": "TN8",
-  "quelle": "openfigi"
- },
- "TMUS": {
-  "isin": "US8725901040",
-  "xetra": "T-MOBILE US INC.DL,-00001",
-  "kuerzel": "TM5",
-  "quelle": "openfigi"
- },
- "TPL": {
-  "isin": "US88262P1021",
-  "xetra": "TEXAS PAC.LD CORP. DL-,01",
-  "kuerzel": "9WY",
-  "quelle": "openfigi"
- },
- "TPR": {
-  "isin": "US8760301072",
-  "xetra": "TAPESTRY INC.      DL-,01",
-  "kuerzel": "COY",
-  "quelle": "openfigi"
- },
- "TRGP": {
-  "isin": "US87612G1013",
-  "xetra": "TARGA RESOURCES DL -,001",
-  "kuerzel": "TAR",
-  "quelle": "openfigi"
- },
- "TRMB": {
-  "isin": "US8962391004",
-  "xetra": "TRIMBLE INC.",
-  "kuerzel": "TB5",
-  "quelle": "openfigi"
- },
- "TROW": {
-  "isin": "US74144T1088",
-  "xetra": "",
-  "kuerzel": "",
-  "quelle": "openfigi"
- },
- "TRV": {
-  "isin": "US89417E1091",
-  "xetra": "TRAVELERS COS INC.",
-  "kuerzel": "PA9",
-  "quelle": "openfigi"
- },
- "TSCO": {
-  "isin": "US8923561067",
-  "xetra": "TRACTOR SUPPLY    DL-,008",
-  "kuerzel": "TR4",
-  "quelle": "openfigi"
- },
- "TSLA": {
-  "isin": "US88160R1014",
-  "xetra": "TESLA INC. DL -,001",
-  "kuerzel": "TL0",
-  "quelle": "openfigi"
- },
- "TSN": {
-  "isin": "US9024941034",
-  "xetra": "TYSON FOODS INC A  DL-,10",
-  "kuerzel": "TF7A",
-  "quelle": "openfigi"
- },
- "TTE": {
-  "isin": "FR0000120271",
-  "xetra": "TOTALENERGIES SE  EO 2,50",
-  "kuerzel": "TOTB",
-  "quelle": "name",
-  "treffer": 1.03
- },
- "TTWO": {
-  "isin": "US8740541094",
-  "xetra": "TAKE-TWO INTERACT. SOFTW.",
-  "kuerzel": "TKE",
-  "quelle": "openfigi"
- },
- "TWLO": {
-  "isin": "US90138F1021",
-  "xetra": "TWILIO INC.",
-  "kuerzel": "TWH",
-  "quelle": "openfigi"
- },
- "TXN": {
-  "isin": "US8825081040",
-  "xetra": "TEXAS INSTR.         DL 1",
-  "kuerzel": "TII",
-  "quelle": "openfigi"
- },
- "TXT": {
-  "isin": "US8832031012",
-  "xetra": "TEXTRON INC.      DL-,125",
-  "kuerzel": "TXT",
-  "quelle": "openfigi"
- },
- "TYL": {
-  "isin": "US9022521051",
-  "xetra": "TYLER TECHS INC.   DL-,01",
-  "kuerzel": "TYP",
-  "quelle": "openfigi"
- },
- "UAL": {
-  "isin": "US9100471096",
-  "xetra": "",
-  "kuerzel": "",
-  "quelle": "openfigi"
- },
- "UBER": {
-  "isin": "US90353T1007",
-  "xetra": "UBER TECH.      DL-,00001",
-  "kuerzel": "UT8",
-  "quelle": "openfigi"
- },
- "UBS": {
-  "isin": "CH0244767585",
-  "xetra": "UBS GROUP AG      SF -,10",
-  "kuerzel": "0UB",
-  "quelle": "name",
-  "treffer": 1.03
- },
- "UHS": {
-  "isin": "US9139031002",
-  "xetra": "UNIV. HEALTH SERV.B DL-01",
-  "kuerzel": "UHS",
-  "quelle": "openfigi"
- },
- "UL": {
-  "isin": "GB00BVZK7T90",
-  "xetra": "UNILEVER PLC     LS -,035",
-  "kuerzel": "UNV0",
-  "quelle": "name",
-  "treffer": 1.03
- },
- "ULTA": {
-  "isin": "US90384S3031",
-  "xetra": "ULTA BEAUTY DL-,01",
-  "kuerzel": "34U",
-  "quelle": "openfigi"
- },
- "UNH": {
-  "isin": "US91324P1021",
-  "xetra": "UNITEDHEALTH GROUP DL-,01",
-  "kuerzel": "UNH",
-  "quelle": "openfigi"
- },
- "UNP": {
-  "isin": "US9078181081",
-  "xetra": "UNION PAC.        DL 2,50",
-  "kuerzel": "UNP",
-  "quelle": "openfigi"
- },
- "UPS": {
-  "isin": "US9113121068",
-  "xetra": "UNITED PARCEL SE.B DL-01",
-  "kuerzel": "UPAB",
-  "quelle": "openfigi"
- },
- "URI": {
-  "isin": "US9113631090",
-  "xetra": "UNITED RENTALS INC.DL-,01",
-  "kuerzel": "UR3",
-  "quelle": "openfigi"
- },
- "USB": {
-  "isin": "US9029733048",
-  "xetra": "U.S. BANCORP       DL-,01",
-  "kuerzel": "UB5",
-  "quelle": "openfigi"
- },
- "V": {
-  "isin": "US92826C8394",
-  "xetra": "VISA INC. CL. A DL -,0001",
-  "kuerzel": "3V64",
-  "quelle": "openfigi"
- },
- "VEEV": {
-  "isin": "US9224751084",
-  "xetra": "VEEVA SYSTEMS A DL-,00001",
-  "kuerzel": "VEE",
-  "quelle": "openfigi"
- },
- "VICI": {
-  "isin": "US9256521090",
-  "xetra": "",
-  "kuerzel": "",
-  "quelle": "openfigi"
- },
- "VLO": {
-  "isin": "US91913Y1001",
-  "xetra": "VALERO ENERGY CORP.DL-,01",
-  "kuerzel": "V1L",
-  "quelle": "openfigi"
- },
- "VLTO": {
-  "isin": "US92338C1036",
-  "xetra": "VERALTO CORP.",
-  "kuerzel": "RZ2",
-  "quelle": "openfigi"
- },
- "VMC": {
-  "isin": "US9291601097",
-  "xetra": "VULCAN MATERIALS CO  DL 1",
-  "kuerzel": "VMC",
-  "quelle": "openfigi"
- },
- "VMRK": {
-  "isin": "US29476L1070",
-  "xetra": "",
-  "kuerzel": "",
-  "quelle": "openfigi"
- },
- "VOD": {
-  "isin": "GB00BH4HKS39",
-  "quelle": "fest"
- },
- "VRSK": {
-  "isin": "US92345Y1064",
-  "xetra": "VERISK ANALYTICS DL-001",
-  "kuerzel": "VA7A",
-  "quelle": "openfigi"
- },
- "VRSN": {
-  "isin": "US92343E1029",
-  "xetra": "VERISIGN INC.     DL-,001",
-  "kuerzel": "VRS",
-  "quelle": "openfigi"
- },
- "VRT": {
-  "isin": "US92537N1081",
-  "xetra": "VERTIV HOL.CL A DL-,0001",
-  "kuerzel": "49V",
-  "quelle": "openfigi"
- },
- "VRTX": {
-  "isin": "US92532F1003",
-  "xetra": "VERTEX PHARMAC.    DL-,01",
-  "kuerzel": "VX1",
-  "quelle": "openfigi"
- },
- "VST": {
-  "isin": "US92840M1027",
-  "xetra": "VISTRA CORP.       DL-,01",
-  "kuerzel": "0V6",
-  "quelle": "openfigi"
- },
- "VTR": {
-  "isin": "US92276F1003",
-  "xetra": "",
-  "kuerzel": "",
-  "quelle": "openfigi"
- },
- "VTRS": {
-  "isin": "US92556V1061",
-  "xetra": "VIATRIS INC.  O.N.",
-  "kuerzel": "VIA",
-  "quelle": "openfigi"
- },
- "VZ": {
-  "isin": "US92343V1044",
-  "xetra": "VERIZON COMM. INC. DL-,10",
-  "kuerzel": "BAC",
-  "quelle": "openfigi"
- },
- "WAB": {
-  "isin": "US9297401088",
-  "xetra": "WESTINGH.AI.BR.T.  DL-,01",
-  "kuerzel": "WB2",
-  "quelle": "openfigi"
- },
- "WAT": {
-  "isin": "US9418481035",
-  "xetra": "WATERS CORP.       DL-,01",
-  "kuerzel": "WAZ",
-  "quelle": "openfigi"
- },
- "WDAY": {
-  "isin": "US98138H1014",
-  "xetra": "WORKDAY INC.CL.A  DL-,001",
-  "kuerzel": "W7D",
-  "quelle": "openfigi"
- },
- "WDC": {
-  "isin": "US9581021055",
-  "xetra": "WESTN DIGITAL      DL-,01",
-  "kuerzel": "WDC",
-  "quelle": "openfigi"
- },
- "WEC": {
-  "isin": "US92939U1060",
-  "xetra": "WEC ENERGY GRP      DL 10",
-  "kuerzel": "WIC",
-  "quelle": "openfigi"
- },
- "WELL": {
-  "isin": "US95040Q1040",
-  "xetra": "",
-  "kuerzel": "",
-  "quelle": "openfigi"
- },
- "WFC": {
-  "isin": "US9497461015",
-  "xetra": "WELLS FARGO + CO.DL 1,666",
-  "kuerzel": "NWT",
-  "quelle": "openfigi"
- },
- "WM": {
-  "isin": "US94106L1098",
-  "xetra": "WASTE MANAGEMENT",
-  "kuerzel": "UWS",
-  "quelle": "openfigi"
- },
- "WMB": {
-  "isin": "US9694571004",
-  "xetra": "WILLIAMS COS INC.    DL 1",
-  "kuerzel": "WMB",
-  "quelle": "openfigi"
- },
- "WMT": {
-  "isin": "US9311421039",
-  "xetra": "WALMART DL-,10",
-  "kuerzel": "WMT",
-  "quelle": "openfigi"
- },
- "WSM": {
-  "isin": "US9699041011",
-  "xetra": "WILLIAMS-SONOMA INC.DL-01",
-  "kuerzel": "WM1",
-  "quelle": "openfigi"
- },
- "WST": {
-  "isin": "US9553061055",
-  "xetra": "",
-  "kuerzel": "",
-  "quelle": "openfigi"
- },
- "WTW": {
-  "isin": "IE00BDB6Q211",
-  "xetra": "WILLIS TOWERS WATSON",
-  "kuerzel": "WTY",
-  "quelle": "name",
-  "treffer": 1.03
- },
- "WY": {
-  "isin": "US9621661043",
-  "xetra": "",
-  "kuerzel": "",
-  "quelle": "openfigi"
- },
- "WYNN": {
-  "isin": "US9831341071",
-  "xetra": "WYNN RESORTS LTD   DL-,01",
-  "kuerzel": "WYR",
-  "quelle": "openfigi"
- },
- "XEL": {
-  "isin": "US98389B1008",
-  "xetra": "XCEL ENERGY       DL 2,50",
-  "kuerzel": "NRN",
-  "quelle": "openfigi"
- },
- "XOM": {
-  "isin": "US30233Q1085",
-  "xetra": "EXX.HO.COR. O.N.",
-  "kuerzel": "7DZ",
-  "quelle": "openfigi"
- },
- "XYL": {
-  "isin": "US98419M1009",
-  "xetra": "",
-  "kuerzel": "",
-  "quelle": "openfigi"
- },
- "XYZ": {
-  "isin": "US8522341036",
-  "xetra": "BLOCK INC. A",
-  "kuerzel": "SQ3",
-  "quelle": "openfigi"
- },
- "YUM": {
-  "isin": "US9884981013",
-  "xetra": "YUM BRANDS",
-  "kuerzel": "TGR",
-  "quelle": "openfigi"
- },
- "ZBH": {
-  "isin": "US98956P1021",
-  "xetra": "",
-  "kuerzel": "",
-  "quelle": "openfigi"
- },
- "ZBRA": {
-  "isin": "US9892071054",
-  "xetra": "ZEBRA TECH. A      DL-,01",
-  "kuerzel": "ZT1A",
-  "quelle": "openfigi"
- },
- "ZTS": {
-  "isin": "US98978V1035",
-  "xetra": "ZOETIS INC. CL.A  DL -,01",
-  "kuerzel": "ZOE",
-  "quelle": "openfigi"
- },
- "OBDC": {
-  "isin": "US69121K1043",
-  "xetra": "",
-  "kuerzel": "",
-  "quelle": "openfigi",
-  "bdc": true
- },
- "BXSL": {
-  "isin": "US09261X1028",
-  "xetra": "",
-  "kuerzel": "",
-  "quelle": "openfigi",
-  "bdc": true
- },
- "FSK": {
-  "isin": "US3026352068",
-  "xetra": "",
-  "kuerzel": "",
-  "quelle": "openfigi",
-  "bdc": true
- },
- "GBDC": {
-  "isin": "US38173M1027",
-  "xetra": "",
-  "kuerzel": "",
-  "quelle": "openfigi",
-  "bdc": true
- },
- "HTGC": {
-  "isin": "US4270965084",
-  "xetra": "",
-  "kuerzel": "",
-  "quelle": "openfigi",
-  "bdc": true
- },
- "PSEC": {
-  "isin": "US74348T1025",
-  "xetra": "",
-  "kuerzel": "",
-  "quelle": "openfigi",
-  "bdc": true
- },
- "OCSL": {
-  "isin": "US67401P4054",
-  "xetra": "",
-  "kuerzel": "",
-  "quelle": "openfigi",
-  "bdc": true
- },
- "CSWC": {
-  "isin": "US1405011073",
-  "xetra": "CAPITAL STHWEST CORP.DL 1",
-  "kuerzel": "SFW",
-  "quelle": "openfigi",
-  "bdc": true
- },
- "GSBD": {
-  "isin": "US38147U1079",
-  "xetra": "",
-  "kuerzel": "",
-  "quelle": "openfigi",
-  "bdc": true
- },
- "MFIC": {
-  "isin": "US03761U5020",
-  "xetra": "",
-  "kuerzel": "",
-  "quelle": "openfigi",
-  "bdc": true
- },
- "TRIN": {
-  "isin": "US8964423086",
-  "xetra": "",
-  "kuerzel": "",
-  "quelle": "openfigi",
-  "bdc": true
- },
- "NMFC": {
-  "isin": "US6475511001",
-  "xetra": "",
-  "kuerzel": "",
-  "quelle": "openfigi",
-  "bdc": true
- },
- "BBDC": {
-  "isin": "US06759L1035",
-  "xetra": "",
-  "kuerzel": "",
-  "quelle": "openfigi",
-  "bdc": true
- },
- "BCSF": {
-  "isin": "US05684B1070",
-  "xetra": "",
-  "kuerzel": "",
-  "quelle": "openfigi",
-  "bdc": true
- },
- "PFLT": {
-  "isin": "US70806A1060",
-  "xetra": "",
-  "kuerzel": "",
-  "quelle": "openfigi",
-  "bdc": true
- },
- "FDUS": {
-  "isin": "US3165001070",
-  "xetra": "",
-  "kuerzel": "",
-  "quelle": "openfigi",
-  "bdc": true
- },
- "GAIN": {
-  "isin": "US3765461070",
-  "xetra": "",
-  "kuerzel": "",
-  "quelle": "openfigi",
-  "bdc": true
- },
- "TCPC": {
-  "isin": "US09259E1082",
-  "xetra": "",
-  "kuerzel": "",
-  "quelle": "openfigi",
-  "bdc": true
- },
- "GLAD": {
-  "isin": "US3765358789",
-  "xetra": "",
-  "kuerzel": "",
-  "quelle": "openfigi",
-  "bdc": true
- },
- "PNNT": {
-  "isin": "US7080621045",
-  "xetra": "",
-  "kuerzel": "",
-  "quelle": "openfigi",
-  "bdc": true
- },
- "RWAY": {
-  "isin": "US78163D1000",
-  "xetra": "",
-  "kuerzel": "",
-  "quelle": "openfigi",
-  "bdc": true
- },
- "OXSQ": {
-  "isin": "US69181V1070",
-  "xetra": "",
-  "kuerzel": "",
-  "quelle": "openfigi",
-  "bdc": true
- },
- "_stand": "2026-11-16",
- "NNN": {
-  "isin": "US6374171063",
-  "xetra": "",
-  "kuerzel": "",
-  "quelle": "manuell (justETF, Tradegate-Kurs vorhanden)"
- },
- "ADC": {
-  "isin": "US0084921008",
-  "xetra": "",
-  "kuerzel": "",
-  "quelle": "manuell (onvista, justETF, Parqet; Tradegate-Kurs vorhanden)"
- }
+"A": {
+"isin": "US00846U1016",
+"xetra": "AGILENT TECHS INC. DL-,01",
+"kuerzel": "AG8",
+"quelle": "openfigi"
+},
+"AAPL": {
+"isin": "US0378331005",
+"xetra": "APPLE INC.",
+"kuerzel": "APC",
+"quelle": "openfigi"
+},
+"ABBNY": {
+"isin": "CH0012221716",
+"quelle": "fest"
+},
+"ABBV": {
+"isin": "US00287Y1091",
+"xetra": "ABBVIE INC.        DL-,01",
+"kuerzel": "4AB",
+"quelle": "openfigi"
+},
+"ABNB": {
+"isin": "US0090661010",
+"xetra": "AIRBNB INC.     DL-,01",
+"kuerzel": "6Z1",
+"quelle": "openfigi"
+},
+"ABT": {
+"isin": "US0028241000",
+"xetra": "ABBOTT LABS",
+"kuerzel": "ABL",
+"quelle": "openfigi"
+},
+"ACN": {
+"isin": "IE00B4BNMY34",
+"xetra": "ACCENTURE A   DL-,0000225",
+"kuerzel": "CSA",
+"quelle": "name",
+"treffer": 1.03
+},
+"ADBE": {
+"isin": "US00724F1012",
+"xetra": "ADOBE INC.",
+"kuerzel": "ADB",
+"quelle": "openfigi"
+},
+"ADC": {
+"isin": "US0084921008",
+"xetra": "",
+"kuerzel": "",
+"quelle": "openfigi"
+},
+"ADI": {
+"isin": "US0326541051",
+"xetra": "ANALOG DEVICES INC.DL-166",
+"kuerzel": "ANL",
+"quelle": "openfigi"
+},
+"ADM": {
+"isin": "US0394831020",
+"xetra": "ARCHER DANIELS MIDLAND",
+"kuerzel": "ADM",
+"quelle": "openfigi"
+},
+"ADP": {
+"isin": "US0530151036",
+"xetra": "AUTOM. DATA PROC. DL -,10",
+"kuerzel": "ADP",
+"quelle": "openfigi"
+},
+"ADSK": {
+"isin": "US0527691069",
+"xetra": "AUTODESK INC.",
+"kuerzel": "AUD",
+"quelle": "openfigi"
+},
+"AEE": {
+"isin": "US0236081024",
+"xetra": "",
+"kuerzel": "",
+"quelle": "openfigi"
+},
+"AEP": {
+"isin": "US0255371017",
+"xetra": "AMER. EL. PWR     DL 6,50",
+"kuerzel": "AEP",
+"quelle": "openfigi"
+},
+"AES": {
+"isin": "US00130H1059",
+"xetra": "",
+"kuerzel": "",
+"quelle": "openfigi"
+},
+"AFL": {
+"isin": "US0010551028",
+"xetra": "AFLAC INC.        DL -,10",
+"kuerzel": "AFL",
+"quelle": "openfigi"
+},
+"AIG": {
+"isin": "US0268747849",
+"xetra": "AMER.INTL GRP NEW DL 2,50",
+"kuerzel": "AINN",
+"quelle": "openfigi"
+},
+"AIZ": {
+"isin": "US04621X1081",
+"xetra": "ASSURANT INC.      DL-,01",
+"kuerzel": "ZAS",
+"quelle": "openfigi"
+},
+"AJG": {
+"isin": "US3635761097",
+"xetra": "GALLAGHER , A.J.     DL 1",
+"kuerzel": "GAH",
+"quelle": "openfigi"
+},
+"AKAM": {
+"isin": "US00971T1016",
+"xetra": "AKAMAI TECH.       DL-,01",
+"kuerzel": "AK3",
+"quelle": "openfigi"
+},
+"ALB": {
+"isin": "US0126531013",
+"xetra": "ALBEMARLE CORP.    DL-,01",
+"kuerzel": "AMC",
+"quelle": "openfigi"
+},
+"ALGN": {
+"isin": "US0162551016",
+"xetra": "ALIGN TECHNOLOGY DL-,0001",
+"kuerzel": "AFW",
+"quelle": "openfigi"
+},
+"ALL": {
+"isin": "US0200021014",
+"xetra": "ALLSTATE CORP.     DL-,01",
+"kuerzel": "ALS",
+"quelle": "openfigi"
+},
+"ALLE": {
+"isin": "IE00BFRT3W74",
+"xetra": "ALLEGION PLC         DL 1",
+"kuerzel": "60A",
+"quelle": "name",
+"treffer": 1.03
+},
+"AMAT": {
+"isin": "US0382221051",
+"xetra": "APPLIED MATERIALS INC.",
+"kuerzel": "AP2",
+"quelle": "openfigi"
+},
+"AMD": {
+"isin": "US0079031078",
+"xetra": "ADVANCED MIC.DEV.  DL-,01",
+"kuerzel": "AMD",
+"quelle": "openfigi"
+},
+"AME": {
+"isin": "US0311001004",
+"xetra": "AMETEK INC.        DL-,01",
+"kuerzel": "AK1",
+"quelle": "openfigi"
+},
+"AMGN": {
+"isin": "US0311621009",
+"xetra": "AMGEN INC.       DL-,0001",
+"kuerzel": "AMG",
+"quelle": "openfigi"
+},
+"AMP": {
+"isin": "US03076C1062",
+"xetra": "AMERIPRISE FINL    DL-,01",
+"kuerzel": "A4S",
+"quelle": "openfigi"
+},
+"AMT": {
+"isin": "US03027X1000",
+"xetra": "",
+"kuerzel": "",
+"quelle": "openfigi"
+},
+"AMZN": {
+"isin": "US0231351067",
+"xetra": "AMAZON.COM INC.    DL-,01",
+"kuerzel": "AMZ",
+"quelle": "openfigi"
+},
+"ANET": {
+"isin": "US0404132054",
+"xetra": "ARISTA NET.INC. NEW O.N.",
+"kuerzel": "1170",
+"quelle": "openfigi"
+},
+"AON": {
+"isin": "IE00BLP1HW54",
+"xetra": "AON PLC A         DL -,01",
+"kuerzel": "4VK",
+"quelle": "name",
+"treffer": 1.03
+},
+"AOS": {
+"isin": "US8318652091",
+"xetra": "SMITH -A.O.- CORP.   DL 1",
+"kuerzel": "3SM",
+"quelle": "openfigi"
+},
+"APA": {
+"isin": "US03743Q1085",
+"xetra": "APA CORP.        DL -,625",
+"kuerzel": "2S3",
+"quelle": "openfigi"
+},
+"APD": {
+"isin": "US0091581068",
+"xetra": "AIR PROD. CHEM.      DL 1",
+"kuerzel": "AP3",
+"quelle": "openfigi"
+},
+"APH": {
+"isin": "US0320951017",
+"xetra": "AMPHENOL CORP.  A DL-,001",
+"kuerzel": "XPH",
+"quelle": "openfigi"
+},
+"APO": {
+"isin": "US03769M1062",
+"xetra": "APOLLO GL.M.NEW DL-,00001",
+"kuerzel": "N7I",
+"quelle": "openfigi"
+},
+"APP": {
+"isin": "US03831W1080",
+"xetra": "APPLOVIN CORP.A  -,00003",
+"kuerzel": "6RV",
+"quelle": "openfigi"
+},
+"ARCC": {
+"isin": "US04010L1035",
+"xetra": "",
+"kuerzel": "",
+"quelle": "openfigi"
+},
+"ARE": {
+"isin": "US0152711091",
+"xetra": "",
+"kuerzel": "",
+"quelle": "openfigi"
+},
+"ARES": {
+"isin": "US03990B1017",
+"xetra": "ARES MNGMT CORP.CL.A",
+"kuerzel": "0QN",
+"quelle": "openfigi"
+},
+"ASML": {
+"isin": "NL0010273215",
+"xetra": "ASML HOLDING    EO -,09",
+"kuerzel": "ASME",
+"quelle": "name",
+"treffer": 1.03
+},
+"ATO": {
+"isin": "US0495601058",
+"xetra": "",
+"kuerzel": "",
+"quelle": "openfigi"
+},
+"AVGO": {
+"isin": "US11135F1012",
+"xetra": "BROADCOM INC.     DL-,001",
+"kuerzel": "1YD",
+"quelle": "openfigi"
+},
+"AVY": {
+"isin": "US0536111091",
+"xetra": "AVERY DENNISON       DL 1",
+"kuerzel": "AV3",
+"quelle": "openfigi"
+},
+"AWK": {
+"isin": "US0304201033",
+"xetra": "AMERICAN WATER WKS DL-,01",
+"kuerzel": "AWC",
+"quelle": "openfigi"
+},
+"AXON": {
+"isin": "US05464C1018",
+"xetra": "AXON ENTERPRISE DL-,00001",
+"kuerzel": "TCS",
+"quelle": "openfigi"
+},
+"AXP": {
+"isin": "US0258161092",
+"xetra": "AMER. EXPRESS     DL -,20",
+"kuerzel": "AEC1",
+"quelle": "openfigi"
+},
+"AZN": {
+"isin": "GB0009895292",
+"quelle": "fest"
+},
+"AZO": {
+"isin": "US0533321024",
+"xetra": "AUTOZONE INC.      DL-,01",
+"kuerzel": "AZ5",
+"quelle": "openfigi"
+},
+"BA": {
+"isin": "US0970231058",
+"xetra": "BOEING CO.           DL 5",
+"kuerzel": "BCO",
+"quelle": "openfigi"
+},
+"BAC": {
+"isin": "US0605051046",
+"xetra": "BANK AMERICA      DL 0,01",
+"kuerzel": "NCB",
+"quelle": "openfigi"
+},
+"BALL": {
+"isin": "US0584981064",
+"xetra": "",
+"kuerzel": "",
+"quelle": "openfigi"
+},
+"BAX": {
+"isin": "US0718131099",
+"xetra": "",
+"kuerzel": "",
+"quelle": "openfigi"
+},
+"BBVA": {
+"isin": "ES0113211835",
+"quelle": "fest"
+},
+"BBY": {
+"isin": "US0865161014",
+"xetra": "BEST BUY CO.       DL-,10",
+"kuerzel": "BUY",
+"quelle": "openfigi"
+},
+"BCS": {
+"isin": "GB0031348658",
+"xetra": "BARCLAYS PLC      LS 0,25",
+"kuerzel": "BCY",
+"quelle": "name",
+"treffer": 1.03
+},
+"BDX": {
+"isin": "US0758871091",
+"xetra": "BECTON, DICKINSON    DL 1",
+"kuerzel": "BOX",
+"quelle": "openfigi"
+},
+"BE": {
+"isin": "US0937121079",
+"xetra": "BLOOM ENERGY A   DL-,0001",
+"kuerzel": "1ZB",
+"quelle": "openfigi"
+},
+"BEN": {
+"isin": "US3546131018",
+"xetra": "",
+"kuerzel": "",
+"quelle": "openfigi"
+},
+"BF-B": {
+"isin": "US1156372096",
+"xetra": "BROWN-FORMAN CORP B DL-15",
+"kuerzel": "BF5B",
+"quelle": "openfigi"
+},
+"BG": {
+"isin": "CH1300646267",
+"xetra": "BUNGE GLOBAL S.A. DL-,01",
+"kuerzel": "Q23",
+"quelle": "name",
+"treffer": 1.03
+},
+"BHP": {
+"isin": "AU000000BHP4",
+"quelle": "fest"
+},
+"BIIB": {
+"isin": "US09062X1037",
+"xetra": "BIOGEN INC. DL -,0005",
+"kuerzel": "IDP",
+"quelle": "openfigi"
+},
+"BKNG": {
+"isin": "US09857L1089",
+"xetra": "BOOKING HLDGS     DL-,008",
+"kuerzel": "PCE1",
+"quelle": "openfigi"
+},
+"BKR": {
+"isin": "US05722G1004",
+"xetra": "BAKER HUGHES CO.",
+"kuerzel": "68V",
+"quelle": "openfigi"
+},
+"BLK": {
+"isin": "US09290D1019",
+"xetra": "BLACKROCK INC.       O.N.",
+"kuerzel": "UU2",
+"quelle": "openfigi"
+},
+"BMY": {
+"isin": "US1101221083",
+"xetra": "BRISTOL-MYERS SQUIBBDL-10",
+"kuerzel": "BRM",
+"quelle": "openfigi"
+},
+"BNY": {
+"isin": "US0640581007",
+"xetra": "BK N.Y. MELLON    DL -,01",
+"kuerzel": "BN9",
+"quelle": "openfigi"
+},
+"BP": {
+"isin": "GB0007980591",
+"xetra": "BP PLC             DL-,25",
+"kuerzel": "BPE5",
+"quelle": "name",
+"treffer": 1.03
+},
+"BR": {
+"isin": "US11133T1034",
+"xetra": "BROADRIDGE FINL SOL.DL-01",
+"kuerzel": "5B9",
+"quelle": "openfigi"
+},
+"BRK-B": {
+"isin": "US0846707026",
+"xetra": "BERKSH. H.B NEW DL-,00333",
+"kuerzel": "BRYN",
+"quelle": "openfigi"
+},
+"BRO": {
+"isin": "US1152361010",
+"xetra": "BROWN + BROWN      DL-,10",
+"kuerzel": "BTW",
+"quelle": "openfigi"
+},
+"BSX": {
+"isin": "US1011371077",
+"xetra": "BOSTON SCIENTIFIC  DL-,01",
+"kuerzel": "BSX",
+"quelle": "openfigi"
+},
+"BTI": {
+"isin": "GB0002875804",
+"quelle": "fest"
+},
+"BX": {
+"isin": "US09260D1072",
+"xetra": "BLACKSTONE INC. DL-,00001",
+"kuerzel": "BBN1",
+"quelle": "openfigi"
+},
+"BXP": {
+"isin": "US1011211018",
+"xetra": "",
+"kuerzel": "",
+"quelle": "openfigi"
+},
+"C": {
+"isin": "US1729674242",
+"xetra": "CITIGROUP INC. DL -,01",
+"kuerzel": "TRVC",
+"quelle": "openfigi"
+},
+"CAH": {
+"isin": "US14149Y1082",
+"xetra": "CARDINAL HEALTH INC.",
+"kuerzel": "CLH",
+"quelle": "openfigi"
+},
+"CARR": {
+"isin": "US14448C1045",
+"xetra": "CARRIER GLBL CORP  DL-,01",
+"kuerzel": "4PN",
+"quelle": "openfigi"
+},
+"CASY": {
+"isin": "US1475281036",
+"xetra": "CASEY'S GENL STORES",
+"kuerzel": "CS2",
+"quelle": "openfigi"
+},
+"CAT": {
+"isin": "US1491231015",
+"xetra": "CATERPILLAR INC.     DL 1",
+"kuerzel": "CAT1",
+"quelle": "openfigi"
+},
+"CB": {
+"isin": "CH0044328745",
+"xetra": "CHUBB LTD.       SF 24,15",
+"kuerzel": "AEX",
+"quelle": "name",
+"treffer": 1.03
+},
+"CBOE": {
+"isin": "US12503M1080",
+"xetra": "CBOE GLOB.MKTS INC.DL-,01",
+"kuerzel": "C67",
+"quelle": "openfigi"
+},
+"CBRE": {
+"isin": "US12504L1098",
+"xetra": "CBRE GROUP INC. A  DL-,01",
+"kuerzel": "RF6",
+"quelle": "openfigi"
+},
+"CCI": {
+"isin": "US22822V1017",
+"xetra": "",
+"kuerzel": "",
+"quelle": "openfigi"
+},
+"CDNS": {
+"isin": "US1273871087",
+"xetra": "CADENCE DESIGN SYS DL-,01",
+"kuerzel": "CDS",
+"quelle": "openfigi"
+},
+"CDW": {
+"isin": "US12514G1085",
+"xetra": "CDW CORP.          DL-,01",
+"kuerzel": "CDW",
+"quelle": "openfigi"
+},
+"CEG": {
+"isin": "US21037T1097",
+"xetra": "CONSTELLATION ENERGY",
+"kuerzel": "E7S",
+"quelle": "openfigi"
+},
+"CF": {
+"isin": "US1252691001",
+"xetra": "CF INDS HLDGS      DL-,01",
+"kuerzel": "C4F",
+"quelle": "openfigi"
+},
+"CFG": {
+"isin": "US1746101054",
+"xetra": "CITIZENS FINL GROUP DL-01",
+"kuerzel": "1C5",
+"quelle": "openfigi"
+},
+"CHD": {
+"isin": "US1713401024",
+"xetra": "CHURCH + DWIGHT CO. DL 1",
+"kuerzel": "CXU",
+"quelle": "openfigi"
+},
+"CHRW": {
+"isin": "US12541W2098",
+"xetra": "C.H. ROB. WORLDWIDE NEW",
+"kuerzel": "CH1A",
+"quelle": "openfigi"
+},
+"CHTR": {
+"isin": "US16119P1084",
+"xetra": "CHARTER COM. CL. A",
+"kuerzel": "CQD",
+"quelle": "openfigi"
+},
+"CI": {
+"isin": "US1255231003",
+"xetra": "CIGNA GROUP, THE     DL 1",
+"kuerzel": "CGN",
+"quelle": "openfigi"
+},
+"CIEN": {
+"isin": "US1717793095",
+"xetra": "CIENA CORP. NEW    DL-,01",
+"kuerzel": "CIE1",
+"quelle": "openfigi"
+},
+"CINF": {
+"isin": "US1720621010",
+"xetra": "CINCINNATI FINL      DL 2",
+"kuerzel": "CCJ",
+"quelle": "openfigi"
+},
+"CL": {
+"isin": "US1941621039",
+"xetra": "COLGATE-PALMOLIVE    DL 1",
+"kuerzel": "CPA",
+"quelle": "openfigi"
+},
+"CLX": {
+"isin": "US1890541097",
+"xetra": "CLOROX CO.           DL 1",
+"kuerzel": "CXX",
+"quelle": "openfigi"
+},
+"CMCSA": {
+"isin": "US20030N1019",
+"xetra": "COMCAST CORP.   A  DL-,01",
+"kuerzel": "CTP2",
+"quelle": "openfigi"
+},
+"CME": {
+"isin": "US12572Q1058",
+"xetra": "CME GROUP INC.     DL-,01",
+"kuerzel": "MX4A",
+"quelle": "openfigi"
+},
+"CMG": {
+"isin": "US1696561059",
+"xetra": "CHIPOTLE MEX.GR.  DL -,01",
+"kuerzel": "C9F",
+"quelle": "openfigi"
+},
+"CMI": {
+"isin": "US2310211063",
+"xetra": "CUMMINS INC.      DL 2,50",
+"kuerzel": "CUM",
+"quelle": "openfigi"
+},
+"CMS": {
+"isin": "US1258961002",
+"xetra": "CMS ENERGY CORP.   DL-,01",
+"kuerzel": "CSG",
+"quelle": "openfigi"
+},
+"CNC": {
+"isin": "US15135B1017",
+"xetra": "CENTENE CORP.     DL-,001",
+"kuerzel": "QEN",
+"quelle": "openfigi"
+},
+"CNP": {
+"isin": "US15189T1079",
+"xetra": "CENTERPOINT ENERGY INC.",
+"kuerzel": "HOU",
+"quelle": "openfigi"
+},
+"COF": {
+"isin": "US14040H1059",
+"xetra": "CAPITAL ONE FINL   DL-,01",
+"kuerzel": "CFX",
+"quelle": "openfigi"
+},
+"COHR": {
+"isin": "US19247G1076",
+"xetra": "COHERENT CORP.",
+"kuerzel": "H7B",
+"quelle": "openfigi"
+},
+"COIN": {
+"isin": "US19260Q1076",
+"xetra": "COINBASE GLB.CL.A -,00001",
+"kuerzel": "1QZ",
+"quelle": "openfigi"
+},
+"COO": {
+"isin": "US2166485019",
+"xetra": "COOPER COS. INC. O.N.",
+"kuerzel": "CP60",
+"quelle": "openfigi"
+},
+"COP": {
+"isin": "US20825C1045",
+"xetra": "CONOCOPHILLIPS     DL-,01",
+"kuerzel": "YCP",
+"quelle": "openfigi"
+},
+"COR": {
+"isin": "US03073E1055",
+"xetra": "CENCORA            DL-,01",
+"kuerzel": "ABG",
+"quelle": "openfigi"
+},
+"COST": {
+"isin": "US22160K1051",
+"xetra": "COSTCO WHOLESALE  DL-,005",
+"kuerzel": "CTO",
+"quelle": "openfigi"
+},
+"CPAY": {
+"isin": "US2199481068",
+"xetra": "CORPAY INC.",
+"kuerzel": "07G0",
+"quelle": "openfigi"
+},
+"CPRT": {
+"isin": "US2172041061",
+"xetra": "COPART INC.",
+"kuerzel": "CO6",
+"quelle": "openfigi"
+},
+"CPT": {
+"isin": "US1331311027",
+"xetra": "",
+"kuerzel": "",
+"quelle": "openfigi"
+},
+"CRL": {
+"isin": "US1598641074",
+"xetra": "CHARL.RIV.LAB INTL DL-,01",
+"kuerzel": "RV6",
+"quelle": "openfigi"
+},
+"CRM": {
+"isin": "US79466L3024",
+"xetra": "SALESFORCE INC.   DL-,001",
+"kuerzel": "FOO",
+"quelle": "openfigi"
+},
+"CRWD": {
+"isin": "US22788C1053",
+"xetra": "CROWDSTRIKE HLD. DL-,0005",
+"kuerzel": "45C",
+"quelle": "openfigi"
+},
+"CSCO": {
+"isin": "US17275R1023",
+"xetra": "CISCO SYSTEMS    DL-,001",
+"kuerzel": "CIS",
+"quelle": "openfigi"
+},
+"CSGP": {
+"isin": "US22160N1090",
+"xetra": "COSTAR GROUP INC.  DL-,01",
+"kuerzel": "RLG",
+"quelle": "openfigi"
+},
+"CSX": {
+"isin": "US1264081035",
+"xetra": "CSX CORP.            DL 1",
+"kuerzel": "CXR",
+"quelle": "openfigi"
+},
+"CTAS": {
+"isin": "US1729081059",
+"xetra": "CINTAS CORP.",
+"kuerzel": "CIT",
+"quelle": "openfigi"
+},
+"CTSH": {
+"isin": "US1924461023",
+"xetra": "COGNIZANT TECH. SOL.A",
+"kuerzel": "COZ",
+"quelle": "openfigi"
+},
+"CVNA": {
+"isin": "US1468691027",
+"xetra": "CARVANA CO.",
+"kuerzel": "CV0",
+"quelle": "openfigi"
+},
+"CVS": {
+"isin": "US1266501006",
+"xetra": "CVS HEALTH CORP.   DL-,01",
+"kuerzel": "CVS",
+"quelle": "openfigi"
+},
+"CVX": {
+"isin": "US1667641005",
+"xetra": "CHEVRON CORP.      DL-,75",
+"kuerzel": "CHV",
+"quelle": "openfigi"
+},
+"D": {
+"isin": "US25746U1097",
+"xetra": "DOMINION ENERGY INC.",
+"kuerzel": "DOD",
+"quelle": "openfigi"
+},
+"DAL": {
+"isin": "US2473617023",
+"xetra": "DELTA AIR LINES INC.",
+"kuerzel": "OYC",
+"quelle": "openfigi"
+},
+"DASH": {
+"isin": "US25809K1051",
+"xetra": "DOORDASH INC.CL.A -,00001",
+"kuerzel": "DD2",
+"quelle": "openfigi"
+},
+"DB": {
+"isin": "DE0005140008",
+"quelle": "fest"
+},
+"DD": {
+"isin": "US26614N2018",
+"xetra": "DUPONT DE NEMO. NEW O.N.",
+"kuerzel": "6D8",
+"quelle": "openfigi"
+},
+"DDOG": {
+"isin": "US23804L1035",
+"xetra": "DATADOG INC.  A DL-,00001",
+"kuerzel": "3QD",
+"quelle": "openfigi"
+},
+"DE": {
+"isin": "US2441991054",
+"xetra": "DEERE CO.            DL 1",
+"kuerzel": "DCO",
+"quelle": "openfigi"
+},
+"DECK": {
+"isin": "US2435371073",
+"xetra": "DECKERS OUTDOOR    DL-,01",
+"kuerzel": "DO2",
+"quelle": "openfigi"
+},
+"DELL": {
+"isin": "US24703L2025",
+"xetra": "DELL TECHS INC. C  DL-,01",
+"kuerzel": "12DA",
+"quelle": "openfigi"
+},
+"DEO": {
+"isin": "GB0002374006",
+"xetra": "DIAGEO PLC LS-,28935185",
+"kuerzel": "GUI",
+"quelle": "name",
+"treffer": 1.03
+},
+"DG": {
+"isin": "US2566771059",
+"xetra": "DOLLAR GENER.CORP.DL-,875",
+"kuerzel": "7DG",
+"quelle": "openfigi"
+},
+"DGX": {
+"isin": "US74834L1008",
+"xetra": "QUEST DIAGNOSTICS  DL-,01",
+"kuerzel": "QDI",
+"quelle": "openfigi"
+},
+"DHI": {
+"isin": "US23331A1097",
+"xetra": "D.R.HORTON INC.    DL-,01",
+"kuerzel": "HO2",
+"quelle": "openfigi"
+},
+"DHR": {
+"isin": "US2358511028",
+"xetra": "DANAHER CORP.      DL-,01",
+"kuerzel": "DAP",
+"quelle": "openfigi"
+},
+"DIS": {
+"isin": "US2546871060",
+"xetra": "DISNEY (WALT) CO.",
+"kuerzel": "WDP",
+"quelle": "openfigi"
+},
+"DLR": {
+"isin": "US2538681030",
+"xetra": "",
+"kuerzel": "",
+"quelle": "openfigi"
+},
+"DLTR": {
+"isin": "US2567461080",
+"xetra": "DOLLAR TREE INC.   DL-,01",
+"kuerzel": "DT3",
+"quelle": "openfigi"
+},
+"DOC": {
+"isin": "US42250P1030",
+"xetra": "",
+"kuerzel": "",
+"quelle": "openfigi"
+},
+"DOV": {
+"isin": "US2600031080",
+"xetra": "DOVER CORP.          DL 1",
+"kuerzel": "DOV",
+"quelle": "openfigi"
+},
+"DOW": {
+"isin": "US2605571031",
+"xetra": "",
+"kuerzel": "",
+"quelle": "openfigi"
+},
+"DPZ": {
+"isin": "US25754A2015",
+"xetra": "DOMINOS PIZZA INC. DL-,01",
+"kuerzel": "EZV",
+"quelle": "openfigi"
+},
+"DRI": {
+"isin": "US2371941053",
+"xetra": "DARDEN REST. INC.",
+"kuerzel": "DDN",
+"quelle": "openfigi"
+},
+"DTE": {
+"isin": "US2333311072",
+"xetra": "DTE EN. CO.",
+"kuerzel": "DGY",
+"quelle": "openfigi"
+},
+"DUK": {
+"isin": "US26441C2044",
+"xetra": "DUKE EN.CORP.    DL -,001",
+"kuerzel": "D2MN",
+"quelle": "openfigi"
+},
+"DVA": {
+"isin": "US23918K1088",
+"xetra": "DAVITA INC.      DL -,001",
+"kuerzel": "TRL",
+"quelle": "openfigi"
+},
+"DVN": {
+"isin": "US25179M1036",
+"xetra": "",
+"kuerzel": "",
+"quelle": "openfigi"
+},
+"DXCM": {
+"isin": "US2521311074",
+"xetra": "DEXCOM INC.       DL-,001",
+"kuerzel": "DC4",
+"quelle": "openfigi"
+},
+"E": {
+"isin": "IT0003132476",
+"xetra": "ENI S.P.A.",
+"kuerzel": "ENI",
+"quelle": "name",
+"treffer": 1.03
+},
+"EBAY": {
+"isin": "US2786421030",
+"xetra": "EBAY INC.         DL-,001",
+"kuerzel": "EBA",
+"quelle": "openfigi"
+},
+"ECHO": {
+"isin": "US2787681061",
+"xetra": "ECHOSTAR CORP. A DL -,001",
+"kuerzel": "E20",
+"quelle": "openfigi"
+},
+"ECL": {
+"isin": "US2788651006",
+"xetra": "ECOLAB INC.          DL 1",
+"kuerzel": "ECJ",
+"quelle": "openfigi"
+},
+"ED": {
+"isin": "US2091151041",
+"xetra": "CONSOLIDATED EDISON",
+"kuerzel": "EDC",
+"quelle": "openfigi"
+},
+"EFX": {
+"isin": "US2944291051",
+"xetra": "EQUIFAX INC.      DL 1,25",
+"kuerzel": "EFX",
+"quelle": "openfigi"
+},
+"EIX": {
+"isin": "US2810201077",
+"xetra": "EDISON INTL",
+"kuerzel": "EIX",
+"quelle": "openfigi"
+},
+"EL": {
+"isin": "US5184391044",
+"xetra": "ESTEE LAUDER COS A DL-,01",
+"kuerzel": "ELAA",
+"quelle": "openfigi"
+},
+"ELV": {
+"isin": "US0367521038",
+"xetra": "ELEVANCE HEALTH    DL-,01",
+"kuerzel": "A58",
+"quelle": "openfigi"
+},
+"EME": {
+"isin": "US29084Q1004",
+"xetra": "EMCOR GRP INC.     DL-,01",
+"kuerzel": "EM4",
+"quelle": "openfigi"
+},
+"EMR": {
+"isin": "US2910111044",
+"xetra": "EMERSON EL.       DL -,50",
+"kuerzel": "EMR",
+"quelle": "openfigi"
+},
+"EOG": {
+"isin": "US26875P1012",
+"xetra": "EOG RESOURCES      DL-,01",
+"kuerzel": "EO5",
+"quelle": "openfigi"
+},
+"EQIX": {
+"isin": "US29444U7000",
+"xetra": "",
+"kuerzel": "",
+"quelle": "openfigi"
+},
+"EQT": {
+"isin": "US26884L1098",
+"xetra": "EQT CORP.",
+"kuerzel": "EQ6",
+"quelle": "openfigi"
+},
+"ERIC": {
+"isin": "SE0000108656",
+"quelle": "fest"
+},
+"ERIE": {
+"isin": "US29530P1021",
+"xetra": "",
+"kuerzel": "",
+"quelle": "openfigi"
+},
+"ES": {
+"isin": "US30040W1080",
+"xetra": "",
+"kuerzel": "",
+"quelle": "openfigi"
+},
+"ESS": {
+"isin": "US2971781057",
+"xetra": "",
+"kuerzel": "",
+"quelle": "openfigi"
+},
+"ETN": {
+"isin": "IE00B8KQN827",
+"xetra": "EATON CORP.PLC    DL -,01",
+"kuerzel": "3EC",
+"quelle": "name",
+"treffer": 1.03
+},
+"ETR": {
+"isin": "US29364G1031",
+"xetra": "ENTERGY CORP.      DL-,01",
+"kuerzel": "ETY",
+"quelle": "openfigi"
+},
+"EVRG": {
+"isin": "US30034W1062",
+"xetra": "EVERGY INC.",
+"kuerzel": "3E7",
+"quelle": "openfigi"
+},
+"EW": {
+"isin": "US28176E1082",
+"xetra": "EDWARDS LIFESCIENCES",
+"kuerzel": "EWL",
+"quelle": "openfigi"
+},
+"EXC": {
+"isin": "US30161N1019",
+"xetra": "EXELON CORP.",
+"kuerzel": "PEO",
+"quelle": "openfigi"
+},
+"EXE": {
+"isin": "US1651677353",
+"xetra": "EXPAND ENERGY      DL-,01",
+"kuerzel": "CS1",
+"quelle": "openfigi"
+},
+"EXPD": {
+"isin": "US3021301094",
+"xetra": "",
+"kuerzel": "",
+"quelle": "openfigi"
+},
+"EXPE": {
+"isin": "US30212P3038",
+"xetra": "EXPEDIA GRP INC. DL-,0001",
+"kuerzel": "E3X1",
+"quelle": "openfigi"
+},
+"EXR": {
+"isin": "US30225T1025",
+"xetra": "",
+"kuerzel": "",
+"quelle": "openfigi"
+},
+"F": {
+"isin": "US3453708600",
+"xetra": "FORD MOTOR         DL-,01",
+"kuerzel": "FMC1",
+"quelle": "openfigi"
+},
+"FANG": {
+"isin": "US25278X1090",
+"xetra": "DIAMONDBACK ENERGY DL-,01",
+"kuerzel": "7DB",
+"quelle": "openfigi"
+},
+"FAST": {
+"isin": "US3119001044",
+"xetra": "FASTENAL CO.       DL-,01",
+"kuerzel": "FAS",
+"quelle": "openfigi"
+},
+"FCX": {
+"isin": "US35671D8570",
+"xetra": "FREEPORT-MCMORAN INC.",
+"kuerzel": "FPMB",
+"quelle": "openfigi"
+},
+"FDS": {
+"isin": "US3030751057",
+"xetra": "FACTSET RESH SYS   DL-,01",
+"kuerzel": "FA1",
+"quelle": "openfigi"
+},
+"FDX": {
+"isin": "US31428X1063",
+"xetra": "FEDEX CORP.        DL-,10",
+"kuerzel": "FDX",
+"quelle": "openfigi"
+},
+"FDXF": {
+"isin": "US3143521058",
+"xetra": "FEDEX FGHT HLDG CO. O.N.",
+"kuerzel": "30G",
+"quelle": "openfigi"
+},
+"FE": {
+"isin": "US3379321074",
+"xetra": "FIRSTENERGY         DL 10",
+"kuerzel": "FE7",
+"quelle": "openfigi"
+},
+"FERG": {
+"isin": "US31488V1070",
+"xetra": "FERGUSON ENTERPRISES INC.",
+"kuerzel": "UH3",
+"quelle": "openfigi"
+},
+"FFIV": {
+"isin": "US3156161024",
+"xetra": "F5 O.N.",
+"kuerzel": "FFV",
+"quelle": "openfigi"
+},
+"FICO": {
+"isin": "US3032501047",
+"xetra": "FAIR ISAAC CORP.   DL-,01",
+"kuerzel": "FRI",
+"quelle": "openfigi"
+},
+"FIS": {
+"isin": "US31620M1062",
+"xetra": "FIDELITY NATL INF. SVCS",
+"kuerzel": "ZGY",
+"quelle": "openfigi"
+},
+"FISV": {
+"isin": "US3377381088",
+"xetra": "FISERV INC.        DL-,01",
+"kuerzel": "FIV",
+"quelle": "openfigi"
+},
+"FITB": {
+"isin": "US3167731005",
+"xetra": "FIFTH THIRD BANCORP",
+"kuerzel": "FFH",
+"quelle": "openfigi"
+},
+"FIX": {
+"isin": "US1999081045",
+"xetra": "COMFORT SYST. USA  DL-,01",
+"kuerzel": "9CF",
+"quelle": "openfigi"
+},
+"FOX": {
+"isin": "US35137L2043",
+"xetra": "FOX CORP. B        DL-,01",
+"kuerzel": "FO5B",
+"quelle": "openfigi"
+},
+"FOXA": {
+"isin": "US35137L1052",
+"xetra": "FOX CORP. A        DL-,01",
+"kuerzel": "FO5",
+"quelle": "openfigi"
+},
+"FRT": {
+"isin": "US3137451015",
+"xetra": "",
+"kuerzel": "",
+"quelle": "openfigi"
+},
+"FSLR": {
+"isin": "US3364331070",
+"xetra": "FIRST SOLAR INC. D -,001",
+"kuerzel": "F3A",
+"quelle": "openfigi"
+},
+"FTNT": {
+"isin": "US34959E1091",
+"xetra": "FORTINET INC.     DL-,001",
+"kuerzel": "FO8",
+"quelle": "openfigi"
+},
+"FTV": {
+"isin": "US34959J1088",
+"xetra": "FORTIVE CORP.      DL-,01",
+"kuerzel": "F03",
+"quelle": "openfigi"
+},
+"GD": {
+"isin": "US3695501086",
+"xetra": "GENL DYNAMICS CORP.  DL 1",
+"kuerzel": "GDX",
+"quelle": "openfigi"
+},
+"GDDY": {
+"isin": "US3802371076",
+"xetra": "GODADDY INC. CL.A DL-,001",
+"kuerzel": "38D",
+"quelle": "openfigi"
+},
+"GE": {
+"isin": "US3696043013",
+"xetra": "GE AEROSPACE      DL -,06",
+"kuerzel": "GCP",
+"quelle": "openfigi"
+},
+"GEHC": {
+"isin": "US36266G1076",
+"xetra": "GE HEALTHC.TECH.INC. -,01",
+"kuerzel": "L0T",
+"quelle": "openfigi"
+},
+"GEN": {
+"isin": "US6687711084",
+"xetra": "GEN DIGITAL INC.   DL-,01",
+"kuerzel": "SYM",
+"quelle": "openfigi"
+},
+"GEV": {
+"isin": "US36828A1016",
+"xetra": "GE VERNOVA INC.",
+"kuerzel": "Y5C",
+"quelle": "openfigi"
+},
+"GILD": {
+"isin": "US3755581036",
+"xetra": "GILEAD SCIENCES   DL-,001",
+"kuerzel": "GIS",
+"quelle": "openfigi"
+},
+"GIS": {
+"isin": "US3703341046",
+"xetra": "GENL MILLS        DL -,10",
+"kuerzel": "GRM",
+"quelle": "openfigi"
+},
+"GL": {
+"isin": "US37959E1029",
+"xetra": "GLOBE LIFE INC.      DL 1",
+"kuerzel": "TMJ",
+"quelle": "openfigi"
+},
+"GLW": {
+"isin": "US2193501051",
+"xetra": "CORNING INC.      DL -,50",
+"kuerzel": "GLW",
+"quelle": "openfigi"
+},
+"GM": {
+"isin": "US37045V1008",
+"xetra": "GENERAL MOTORS     DL-,01",
+"kuerzel": "8GM",
+"quelle": "openfigi"
+},
+"GNRC": {
+"isin": "US3687361044",
+"xetra": "GENERAC HOLDINGS INC.",
+"kuerzel": "G84",
+"quelle": "openfigi"
+},
+"GOOG": {
+"isin": "US02079K1079",
+"xetra": "ALPHABET INC.CL.C DL-,001",
+"kuerzel": "ABEC",
+"quelle": "openfigi"
+},
+"GOOGL": {
+"isin": "US02079K3059",
+"xetra": "ALPHABET INC.CL.A DL-,001",
+"kuerzel": "ABEA",
+"quelle": "openfigi"
+},
+"GPC": {
+"isin": "US3724601055",
+"xetra": "",
+"kuerzel": "",
+"quelle": "openfigi"
+},
+"GPN": {
+"isin": "US37940X1028",
+"xetra": "GLOBAL PAYMENTS INC.",
+"kuerzel": "GLO",
+"quelle": "openfigi"
+},
+"GRMN": {
+"isin": "CH0114405324",
+"xetra": "GARMIN LTD   NAM.SF 0,10",
+"kuerzel": "GEY",
+"quelle": "name",
+"treffer": 1.03
+},
+"GS": {
+"isin": "US38141G1040",
+"xetra": "GOLDMAN SACHS GRP INC.",
+"kuerzel": "GOS",
+"quelle": "openfigi"
+},
+"GSK": {
+"isin": "GB00BN7SWP63",
+"xetra": "GSK PLC  LS-,3125",
+"kuerzel": "GS71",
+"quelle": "name",
+"treffer": 1.03
+},
+"GWW": {
+"isin": "US3848021040",
+"xetra": "GRAINGER (W.W.) INC. DL 1",
+"kuerzel": "GWW",
+"quelle": "openfigi"
+},
+"HAL": {
+"isin": "US4062161017",
+"xetra": "HALLIBURTON CO.   DL 2,50",
+"kuerzel": "HAL",
+"quelle": "openfigi"
+},
+"HAS": {
+"isin": "US4180561072",
+"xetra": "",
+"kuerzel": "",
+"quelle": "openfigi"
+},
+"HBAN": {
+"isin": "US4461501045",
+"xetra": "HUNTINGTON BANCSHS DL-,01",
+"kuerzel": "HU3",
+"quelle": "openfigi"
+},
+"HCA": {
+"isin": "US40412C1018",
+"xetra": "HCA HEALTHCARE INC.DL-,01",
+"kuerzel": "2BH",
+"quelle": "openfigi"
+},
+"HD": {
+"isin": "US4370761029",
+"xetra": "HOME DEPOT INC.    DL-,05",
+"kuerzel": "HDI",
+"quelle": "openfigi"
+},
+"HIG": {
+"isin": "US4165151048",
+"xetra": "HARTFORD INSURANCE GROUP",
+"kuerzel": "HFF",
+"quelle": "openfigi"
+},
+"HII": {
+"isin": "US4464131063",
+"xetra": "",
+"kuerzel": "",
+"quelle": "openfigi"
+},
+"HLT": {
+"isin": "US43300A2033",
+"xetra": "HILTON WORLD.HDGS DL -,01",
+"kuerzel": "HI91",
+"quelle": "openfigi"
+},
+"HMC": {
+"isin": "JP3854600008",
+"quelle": "fest"
+},
+"HON": {
+"isin": "US4385162056",
+"xetra": "HONEYWELL INTL NEW O.N.",
+"kuerzel": "ALD0",
+"quelle": "openfigi"
+},
+"HOOD": {
+"isin": "US7707001027",
+"xetra": "ROBINH.MKTS CL.A DL-,0001",
+"kuerzel": "7KY",
+"quelle": "openfigi"
+},
+"HPE": {
+"isin": "US42824C1099",
+"xetra": "HEWLETT PACKARD ENT.",
+"kuerzel": "2HP",
+"quelle": "openfigi"
+},
+"HPQ": {
+"isin": "US40434L1052",
+"xetra": "HP INC            DL -,01",
+"kuerzel": "7HP",
+"quelle": "openfigi"
+},
+"HRL": {
+"isin": "US4404521001",
+"xetra": "HORMEL FOODS   DL-,01465",
+"kuerzel": "HO7",
+"quelle": "openfigi"
+},
+"HSBC": {
+"isin": "GB0005405286",
+"xetra": "HSBC HLDGS PLC     DL-,50",
+"kuerzel": "HBC1",
+"quelle": "name",
+"treffer": 1.03
+},
+"HSIC": {
+"isin": "US8064071025",
+"xetra": "",
+"kuerzel": "",
+"quelle": "openfigi"
+},
+"HST": {
+"isin": "US44107P1049",
+"xetra": "",
+"kuerzel": "",
+"quelle": "openfigi"
+},
+"HSY": {
+"isin": "US4278661081",
+"xetra": "HERSHEY CO.          DL 1",
+"kuerzel": "HSY",
+"quelle": "openfigi"
+},
+"HUBB": {
+"isin": "US4435106079",
+"xetra": "HUBBELL INC.       DL-,01",
+"kuerzel": "HUEC",
+"quelle": "openfigi"
+},
+"HUM": {
+"isin": "US4448591028",
+"xetra": "HUMANA INC.       DL-,166",
+"kuerzel": "HUM",
+"quelle": "openfigi"
+},
+"HWM": {
+"isin": "US4432011082",
+"xetra": "HOWMET AEROSPACE   DL-,01",
+"kuerzel": "48Z",
+"quelle": "openfigi"
+},
+"IBKR": {
+"isin": "US45841N1072",
+"xetra": "INTERACTIVE BROKERS DL-01",
+"kuerzel": "KY6",
+"quelle": "openfigi"
+},
+"IBM": {
+"isin": "US4592001014",
+"xetra": "INTL BUS. MACH.    DL-,20",
+"kuerzel": "IBM",
+"quelle": "openfigi"
+},
+"ICE": {
+"isin": "US45866F1049",
+"xetra": "INTERCONTINENTAL EXCH.INC",
+"kuerzel": "IC2",
+"quelle": "openfigi"
+},
+"IDXX": {
+"isin": "US45168D1046",
+"xetra": "IDEXX LABS INC.    DL-,10",
+"kuerzel": "IX1",
+"quelle": "openfigi"
+},
+"IEX": {
+"isin": "US45167R1041",
+"xetra": "IDEX CORP.         DL-,01",
+"kuerzel": "ID7",
+"quelle": "openfigi"
+},
+"IFF": {
+"isin": "US4595061015",
+"xetra": "",
+"kuerzel": "",
+"quelle": "openfigi"
+},
+"ILMN": {
+"isin": "US4523271090",
+"xetra": "ILLUMINA INC.      DL-,01",
+"kuerzel": "ILU",
+"quelle": "openfigi"
+},
+"INCY": {
+"isin": "US45337C1027",
+"xetra": "INCYTE            DL-,001",
+"kuerzel": "ICY",
+"quelle": "openfigi"
+},
+"ING": {
+"isin": "NL0011821202",
+"xetra": "ING GROEP NV      EO -,01",
+"kuerzel": "INN1",
+"quelle": "name",
+"treffer": 1.03
+},
+"INTC": {
+"isin": "US4581401001",
+"xetra": "INTEL CORP.       DL-,001",
+"kuerzel": "INL",
+"quelle": "openfigi"
+},
+"INTU": {
+"isin": "US4612021034",
+"xetra": "INTUIT INC.        DL-,01",
+"kuerzel": "ITU",
+"quelle": "openfigi"
+},
+"INVH": {
+"isin": "US46187W1071",
+"xetra": "",
+"kuerzel": "",
+"quelle": "openfigi"
+},
+"IP": {
+"isin": "US4601461035",
+"xetra": "INTL PAPER           DL 1",
+"kuerzel": "INP",
+"quelle": "openfigi"
+},
+"IQV": {
+"isin": "US46266C1053",
+"xetra": "IQVIA HLDGS        DL-,01",
+"kuerzel": "QTS",
+"quelle": "openfigi"
+},
+"IR": {
+"isin": "US45687V1061",
+"xetra": "INGERSOLL-RAND    DL -,01",
+"kuerzel": "5GD",
+"quelle": "openfigi"
+},
+"IRM": {
+"isin": "US46284V1017",
+"xetra": "",
+"kuerzel": "",
+"quelle": "openfigi"
+},
+"ISRG": {
+"isin": "US46120E6023",
+"xetra": "INTUITIVE SURGIC. DL-,001",
+"kuerzel": "IUI1",
+"quelle": "openfigi"
+},
+"IT": {
+"isin": "US3666511072",
+"xetra": "GARTNER INC. DL -,0005",
+"kuerzel": "GGRA",
+"quelle": "openfigi"
+},
+"ITW": {
+"isin": "US4523081093",
+"xetra": "ILL. TOOL WKS",
+"kuerzel": "ILT",
+"quelle": "openfigi"
+},
+"J": {
+"isin": "US46982L1089",
+"xetra": "JACOBS SOLUTIONS INC. DL1",
+"kuerzel": "Z0Y",
+"quelle": "openfigi"
+},
+"JBHT": {
+"isin": "US4456581077",
+"xetra": "HUNT (J.B.) TRANS. DL-,01",
+"kuerzel": "JB1",
+"quelle": "openfigi"
+},
+"JBL": {
+"isin": "US4663131039",
+"xetra": "JABIL DL-,001",
+"kuerzel": "JBL",
+"quelle": "openfigi"
+},
+"JCI": {
+"isin": "IE00BY7QL619",
+"xetra": "JOHNSON CONTR.INTL.DL-,01",
+"kuerzel": "TYIA",
+"quelle": "name",
+"treffer": 0.93
+},
+"JKHY": {
+"isin": "US4262811015",
+"xetra": "",
+"kuerzel": "",
+"quelle": "openfigi"
+},
+"JNJ": {
+"isin": "US4781601046",
+"xetra": "JOHNSON + JOHNSON    DL 1",
+"kuerzel": "JNJ",
+"quelle": "openfigi"
+},
+"JPM": {
+"isin": "US46625H1005",
+"xetra": "JPMORGAN CHASE       DL 1",
+"kuerzel": "CMC",
+"quelle": "openfigi"
+},
+"KDP": {
+"isin": "US49271V1008",
+"xetra": "KEURIG DR PEPPER   DL-,01",
+"kuerzel": "DP5",
+"quelle": "openfigi"
+},
+"KEY": {
+"isin": "US4932671088",
+"xetra": "KEYCORP              DL 1",
+"kuerzel": "KEY",
+"quelle": "openfigi"
+},
+"KEYS": {
+"isin": "US49338L1035",
+"xetra": "KEYSIGHT TECHS     DL-,01",
+"kuerzel": "1KT",
+"quelle": "openfigi"
+},
+"KHC": {
+"isin": "US5007541064",
+"xetra": "KRAFT HEINZ CO.DL -,01",
+"kuerzel": "KHNZ",
+"quelle": "openfigi"
+},
+"KIM": {
+"isin": "US49446R1095",
+"xetra": "",
+"kuerzel": "",
+"quelle": "openfigi"
+},
+"KKR": {
+"isin": "US48251W1045",
+"xetra": "",
+"kuerzel": "",
+"quelle": "openfigi"
+},
+"KLAC": {
+"isin": "US4824801009",
+"xetra": "KLA CORP.        DL -,001",
+"kuerzel": "KLA",
+"quelle": "openfigi"
+},
+"KMB": {
+"isin": "US4943681035",
+"xetra": "KIMBERLY-CLARK    DL 1,25",
+"kuerzel": "KMY",
+"quelle": "openfigi"
+},
+"KMI": {
+"isin": "US49456B1017",
+"xetra": "KINDER MORGAN P DL-,01",
+"kuerzel": "2KD",
+"quelle": "openfigi"
+},
+"KO": {
+"isin": "US1912161007",
+"xetra": "COCA-COLA CO.      DL-,25",
+"kuerzel": "CCC3",
+"quelle": "openfigi"
+},
+"KR": {
+"isin": "US5010441013",
+"xetra": "KROGER CO.           DL 1",
+"kuerzel": "KOG",
+"quelle": "openfigi"
+},
+"L": {
+"isin": "US5404241086",
+"xetra": "LOEWS CORP.          DL 1",
+"kuerzel": "LTR",
+"quelle": "openfigi"
+},
+"LDOS": {
+"isin": "US5253271028",
+"xetra": "LEIDOS HOLDINGS  DL-,0001",
+"kuerzel": "S6IA",
+"quelle": "openfigi"
+},
+"LEN": {
+"isin": "US5260571048",
+"xetra": "LENNAR CORP.A      DL-,10",
+"kuerzel": "LNN",
+"quelle": "openfigi"
+},
+"LH": {
+"isin": "US5049221055",
+"xetra": "LABCORP HLDGS INC. O.N.",
+"kuerzel": "N6B",
+"quelle": "openfigi"
+},
+"LHX": {
+"isin": "US5024311095",
+"xetra": "L3HARRIS TECHS INC.DL-,01",
+"kuerzel": "HRS",
+"quelle": "openfigi"
+},
+"LII": {
+"isin": "US5261071071",
+"xetra": "LENNOX INTL INC.   DL-,01",
+"kuerzel": "LXI",
+"quelle": "openfigi"
+},
+"LIN": {
+"isin": "IE000S9YS762",
+"xetra": "LINDE PLC        EO -,001",
+"kuerzel": "LIN",
+"quelle": "name",
+"treffer": 1.03
+},
+"LITE": {
+"isin": "US55024U1097",
+"xetra": "LUMENTUM HLDGS IN.DL-,001",
+"kuerzel": "LU2",
+"quelle": "openfigi"
+},
+"LLY": {
+"isin": "US5324571083",
+"xetra": "ELI LILLY",
+"kuerzel": "LLY",
+"quelle": "openfigi"
+},
+"LMT": {
+"isin": "US5398301094",
+"xetra": "LOCKHEED MARTIN    DL 1",
+"kuerzel": "LOM",
+"quelle": "openfigi"
+},
+"LNT": {
+"isin": "US0188021085",
+"xetra": "",
+"kuerzel": "",
+"quelle": "openfigi"
+},
+"LOW": {
+"isin": "US5486611073",
+"xetra": "LOWE'S COS INC.    DL-,50",
+"kuerzel": "LWE",
+"quelle": "openfigi"
+},
+"LRCX": {
+"isin": "US5128073062",
+"xetra": "LAM RESEARCH CORP. NEW",
+"kuerzel": "LAR0",
+"quelle": "openfigi"
+},
+"LULU": {
+"isin": "US5500211090",
+"xetra": "LULULEMON ATHLETICA INC.",
+"kuerzel": "33L",
+"quelle": "openfigi"
+},
+"LUV": {
+"isin": "US8447411088",
+"xetra": "",
+"kuerzel": "",
+"quelle": "openfigi"
+},
+"LVS": {
+"isin": "US5178341070",
+"xetra": "LAS VEGAS SANDS   DL-,001",
+"kuerzel": "LCR",
+"quelle": "openfigi"
+},
+"LYG": {
+"isin": "GB0008706128",
+"quelle": "fest"
+},
+"LYV": {
+"isin": "US5380341090",
+"xetra": "LIVE NATION ENTMT.DL -,01",
+"kuerzel": "3LN",
+"quelle": "openfigi"
+},
+"MA": {
+"isin": "US57636Q1040",
+"xetra": "MASTERCARD INC.A DL-,0001",
+"kuerzel": "M4I",
+"quelle": "openfigi"
+},
+"MAA": {
+"isin": "US59522J1034",
+"xetra": "",
+"kuerzel": "",
+"quelle": "openfigi"
+},
+"MAIN": {
+"isin": "US56035L1044",
+"xetra": "",
+"kuerzel": "",
+"quelle": "openfigi"
+},
+"MAR": {
+"isin": "US5719032022",
+"xetra": "MARRIOTT INTL A    DL-,01",
+"kuerzel": "MAQ",
+"quelle": "openfigi"
+},
+"MAS": {
+"isin": "US5745991068",
+"xetra": "",
+"kuerzel": "",
+"quelle": "openfigi"
+},
+"MCD": {
+"isin": "US5801351017",
+"xetra": "MCDONALDS CORP.   DL-,01",
+"kuerzel": "MDO",
+"quelle": "openfigi"
+},
+"MCHP": {
+"isin": "US5950171042",
+"xetra": "MICROCHIP TECH.   DL-,001",
+"kuerzel": "MCP",
+"quelle": "openfigi"
+},
+"MCK": {
+"isin": "US58155Q1031",
+"xetra": "MCKESSON           DL-,01",
+"kuerzel": "MCK",
+"quelle": "openfigi"
+},
+"MCO": {
+"isin": "US6153691059",
+"xetra": "MOODYS CORP       DL-,01",
+"kuerzel": "DUT",
+"quelle": "openfigi"
+},
+"MDLZ": {
+"isin": "US6092071058",
+"xetra": "MONDELEZ INTL INC. A",
+"kuerzel": "KTF",
+"quelle": "openfigi"
+},
+"MDT": {
+"isin": "IE00BTN1Y115",
+"xetra": "MEDTRONIC PLC    DL-,0001",
+"kuerzel": "2M6",
+"quelle": "name",
+"treffer": 1.03
+},
+"MET": {
+"isin": "US59156R1086",
+"xetra": "METLIFE INC.       DL-,01",
+"kuerzel": "MWZ",
+"quelle": "openfigi"
+},
+"META": {
+"isin": "US30303M1027",
+"xetra": "META PLATF.  A DL-,000006",
+"kuerzel": "FB2A",
+"quelle": "openfigi"
+},
+"MGM": {
+"isin": "US5529531015",
+"xetra": "",
+"kuerzel": "",
+"quelle": "openfigi"
+},
+"MKC": {
+"isin": "US5797802064",
+"xetra": "",
+"kuerzel": "",
+"quelle": "openfigi"
+},
+"MLM": {
+"isin": "US5732841060",
+"xetra": "MARTIN MAR. MAT.   DL-,01",
+"kuerzel": "MMX",
+"quelle": "openfigi"
+},
+"MMM": {
+"isin": "US88579Y1010",
+"xetra": "3M CO.             DL-,01",
+"kuerzel": "MMM",
+"quelle": "openfigi"
+},
+"MNST": {
+"isin": "US61174X1090",
+"xetra": "MONSTER BEVER.NEW DL-,005",
+"kuerzel": "MOB",
+"quelle": "openfigi"
+},
+"MO": {
+"isin": "US02209S1033",
+"xetra": "ALTRIA GRP INC.   DL-,333",
+"kuerzel": "PHM7",
+"quelle": "openfigi"
+},
+"MOS": {
+"isin": "US61945C1036",
+"xetra": "MOSAIC CO. DL-,01",
+"kuerzel": "02M",
+"quelle": "openfigi"
+},
+"MPC": {
+"isin": "US56585A1025",
+"xetra": "MARATHON PETROLEUM DL-,01",
+"kuerzel": "MPN",
+"quelle": "openfigi"
+},
+"MPWR": {
+"isin": "US6098391054",
+"xetra": "MONOLITHIC POWER  DL-,001",
+"kuerzel": "NQG",
+"quelle": "openfigi"
+},
+"MRK": {
+"isin": "US58933Y1055",
+"xetra": "MERCK CO.          DL-,01",
+"kuerzel": "6MK",
+"quelle": "openfigi"
+},
+"MRNA": {
+"isin": "US60770K1079",
+"xetra": "MODERNA INC.     DL-,0001",
+"kuerzel": "0QF",
+"quelle": "openfigi"
+},
+"MRSH": {
+"isin": "US5717481023",
+"xetra": "MARSH+MCLENNAN COS.INC.D1",
+"kuerzel": "MSN",
+"quelle": "openfigi"
+},
+"MRVL": {
+"isin": "US5738741041",
+"xetra": "MARVELL TECH. GRP DL-,002",
+"kuerzel": "9MW",
+"quelle": "openfigi"
+},
+"MS": {
+"isin": "US6174464486",
+"xetra": "MORGAN STANLEY     DL-,01",
+"kuerzel": "DWD",
+"quelle": "openfigi"
+},
+"MSCI": {
+"isin": "US55354G1004",
+"xetra": "MSCI INC. A        DL-,01",
+"kuerzel": "3HM",
+"quelle": "openfigi"
+},
+"MSFT": {
+"isin": "US5949181045",
+"xetra": "MICROSOFT    DL-,00000625",
+"kuerzel": "MSF",
+"quelle": "openfigi"
+},
+"MSI": {
+"isin": "US6200763075",
+"xetra": "MOTOROLA SOLUTIONS DL-,01",
+"kuerzel": "MTLA",
+"quelle": "openfigi"
+},
+"MTB": {
+"isin": "US55261F1049",
+"xetra": "M+T BANK           DL-,50",
+"kuerzel": "MTZ",
+"quelle": "openfigi"
+},
+"MTD": {
+"isin": "US5926881054",
+"xetra": "METTLER-TOLEDO INTL",
+"kuerzel": "MTO",
+"quelle": "openfigi"
+},
+"MU": {
+"isin": "US5951121038",
+"xetra": "MICRON TECHN. INC. DL-,10",
+"kuerzel": "MTE",
+"quelle": "openfigi"
+},
+"MUFG": {
+"isin": "JP3902900004",
+"quelle": "fest"
+},
+"NDAQ": {
+"isin": "US6311031081",
+"xetra": "NASDAQ INC.       DL -,01",
+"kuerzel": "NAQ",
+"quelle": "openfigi"
+},
+"NDSN": {
+"isin": "US6556631025",
+"xetra": "",
+"kuerzel": "",
+"quelle": "openfigi"
+},
+"NEE": {
+"isin": "US65339F1012",
+"xetra": "NEXTERA ENERGY INC.DL-,01",
+"kuerzel": "FP3",
+"quelle": "openfigi"
+},
+"NEM": {
+"isin": "US6516391066",
+"xetra": "NEWMONT CORP.     DL 1,60",
+"kuerzel": "NMM",
+"quelle": "openfigi"
+},
+"NFLX": {
+"isin": "US64110L1061",
+"xetra": "NETFLIX INC.      DL-,001",
+"kuerzel": "NFC",
+"quelle": "openfigi"
+},
+"NI": {
+"isin": "US65473P1057",
+"xetra": "NISOURCE INC.",
+"kuerzel": "NOU",
+"quelle": "openfigi"
+},
+"NKE": {
+"isin": "US6541061031",
+"xetra": "NIKE INC. B",
+"kuerzel": "NKE",
+"quelle": "openfigi"
+},
+"NNN": {
+"isin": "US6374171063",
+"xetra": "",
+"kuerzel": "",
+"quelle": "openfigi"
+},
+"NOC": {
+"isin": "US6668071029",
+"xetra": "NORTHROP GRUMMAN DL 1",
+"kuerzel": "NTH",
+"quelle": "openfigi"
+},
+"NOK": {
+"isin": "FI0009000681",
+"xetra": "NOKIA OYJ EO-,06",
+"kuerzel": "NOA3",
+"quelle": "name",
+"treffer": 1.03
+},
+"NOW": {
+"isin": "US81762P1021",
+"xetra": "SERVICENOW INC.   DL-,001",
+"kuerzel": "4S0",
+"quelle": "openfigi"
+},
+"NRG": {
+"isin": "US6293775085",
+"xetra": "NRG ENERGY INC.    DL-,01",
+"kuerzel": "NRA",
+"quelle": "openfigi"
+},
+"NSC": {
+"isin": "US6558441084",
+"xetra": "NORFOLK STHN CORP.   DL 1",
+"kuerzel": "NFS",
+"quelle": "openfigi"
+},
+"NTAP": {
+"isin": "US64110D1046",
+"xetra": "NETAPP INC.",
+"kuerzel": "NTA",
+"quelle": "openfigi"
+},
+"NTRS": {
+"isin": "US6658591044",
+"xetra": "NORTHN TRUST CORP.DL1,666",
+"kuerzel": "NT4",
+"quelle": "openfigi"
+},
+"NUE": {
+"isin": "US6703461052",
+"xetra": "NUCOR CORP.        DL-,40",
+"kuerzel": "NUO",
+"quelle": "openfigi"
+},
+"NVDA": {
+"isin": "US67066G1040",
+"xetra": "NVIDIA CORP.      DL-,001",
+"kuerzel": "NVD",
+"quelle": "openfigi"
+},
+"NVO": {
+"isin": "DK0062498333",
+"xetra": "NOVO-NORDISK AS B  DK 0,1",
+"kuerzel": "NOV",
+"quelle": "name",
+"treffer": 0.92
+},
+"NVR": {
+"isin": "US62944T1051",
+"xetra": "NVR INC.           DL-,01",
+"kuerzel": "NVE",
+"quelle": "openfigi"
+},
+"NVS": {
+"isin": "CH0012005267",
+"xetra": "NOVARTIS NAM.     SF 0,49",
+"kuerzel": "NOT",
+"quelle": "name",
+"treffer": 1.03
+},
+"NWS": {
+"isin": "US65249B2088",
+"xetra": "",
+"kuerzel": "",
+"quelle": "openfigi"
+},
+"NWSA": {
+"isin": "US65249B1098",
+"xetra": "NEWS CORP. A       DL-,01",
+"kuerzel": "NC0",
+"quelle": "openfigi"
+},
+"NXPI": {
+"isin": "NL0009538784",
+"xetra": "NXP SEMICONDUCTORS EO-,20",
+"kuerzel": "VNX",
+"quelle": "name",
+"treffer": 1.03
+},
+"O": {
+"isin": "US7561091049",
+"xetra": "",
+"kuerzel": "",
+"quelle": "openfigi"
+},
+"ODFL": {
+"isin": "US6795801009",
+"xetra": "OLD DOMIN.FR.LINE  DL-,10",
+"kuerzel": "ODF",
+"quelle": "openfigi"
+},
+"OKE": {
+"isin": "US30609A1097",
+"xetra": "",
+"kuerzel": "",
+"quelle": "openfigi"
+},
+"OMC": {
+"isin": "US6819191064",
+"xetra": "OMNICOM GRP INC.   DL-,15",
+"kuerzel": "OCN",
+"quelle": "openfigi"
+},
+"ON": {
+"isin": "US6821891057",
+"xetra": "ON SEMICOND.       DL-,01",
+"kuerzel": "XS4",
+"quelle": "openfigi"
+},
+"ORCL": {
+"isin": "US68389X1054",
+"xetra": "ORACLE CORP.       DL-,01",
+"kuerzel": "ORC",
+"quelle": "openfigi"
+},
+"ORLY": {
+"isin": "US67103H1077",
+"xetra": "O'REILLY AUTOMOTIV.DL-,01",
+"kuerzel": "OM6",
+"quelle": "openfigi"
+},
+"OTIS": {
+"isin": "US68902V1070",
+"xetra": "OTIS WORLDWID.CORP DL-,01",
+"kuerzel": "4PG",
+"quelle": "openfigi"
+},
+"OXY": {
+"isin": "US6745991058",
+"xetra": "OCCIDENTAL PET.    DL-,20",
+"kuerzel": "OPC",
+"quelle": "openfigi"
+},
+"P": {
+"isin": "US74624M1027",
+"xetra": "EVERPURE INC CL.A DL-0001",
+"kuerzel": "6PU",
+"quelle": "openfigi"
+},
+"PANW": {
+"isin": "US6974351057",
+"xetra": "PALO ALTO NETWKS DL-,0001",
+"kuerzel": "5AP",
+"quelle": "openfigi"
+},
+"PAYX": {
+"isin": "US7043261079",
+"xetra": "PAYCHEX INC.       DL-,01",
+"kuerzel": "PCX",
+"quelle": "openfigi"
+},
+"PCAR": {
+"isin": "US6937181088",
+"xetra": "PACCAR INC.          DL 1",
+"kuerzel": "PAE",
+"quelle": "openfigi"
+},
+"PCG": {
+"isin": "US69331C1080",
+"xetra": "PG + E CORP.",
+"kuerzel": "PCG",
+"quelle": "openfigi"
+},
+"PEG": {
+"isin": "US7445731067",
+"xetra": "PUBL. SVC.ENTER.",
+"kuerzel": "PSE",
+"quelle": "openfigi"
+},
+"PEP": {
+"isin": "US7134481081",
+"xetra": "PEPSICO INC.     DL-,0166",
+"kuerzel": "PEP",
+"quelle": "openfigi"
+},
+"PFE": {
+"isin": "US7170811035",
+"xetra": "PFIZER INC.        DL-,05",
+"kuerzel": "PFE",
+"quelle": "openfigi"
+},
+"PFG": {
+"isin": "US74251V1026",
+"xetra": "PRINCIPAL FINL GRP DL-,01",
+"kuerzel": "PG4",
+"quelle": "openfigi"
+},
+"PG": {
+"isin": "US7427181091",
+"xetra": "PROCTER GAMBLE",
+"kuerzel": "PRG",
+"quelle": "openfigi"
+},
+"PGR": {
+"isin": "US7433151039",
+"xetra": "PROGRESSIVE CORP.    DL 1",
+"kuerzel": "PGV",
+"quelle": "openfigi"
+},
+"PH": {
+"isin": "US7010941042",
+"xetra": "PARKER-HANNIFIN   DL-,50",
+"kuerzel": "PAR",
+"quelle": "openfigi"
+},
+"PHG": {
+"isin": "NL0000009538",
+"xetra": "KONINKL. PHILIPS EO -,20",
+"kuerzel": "PHI1",
+"quelle": "name",
+"treffer": 0.91
+},
+"PHM": {
+"isin": "US7458671010",
+"xetra": "PULTE GROUP INC.  DL -,01",
+"kuerzel": "PU7",
+"quelle": "openfigi"
+},
+"PKG": {
+"isin": "US6951561090",
+"xetra": "PACKAGING CORP. OF AMER.",
+"kuerzel": "PKA",
+"quelle": "openfigi"
+},
+"PLD": {
+"isin": "US74340W1036",
+"xetra": "",
+"kuerzel": "",
+"quelle": "openfigi"
+},
+"PLTR": {
+"isin": "US69608A1088",
+"xetra": "PALANTIR TECHNOLOGIES INC",
+"kuerzel": "PTX",
+"quelle": "openfigi"
+},
+"PM": {
+"isin": "US7181721090",
+"xetra": "PHILIP MORRIS INTL INC.",
+"kuerzel": "4I1",
+"quelle": "openfigi"
+},
+"PNC": {
+"isin": "US6934751057",
+"xetra": "PNC FINL SERVICES GRP DL5",
+"kuerzel": "PNP",
+"quelle": "openfigi"
+},
+"PNW": {
+"isin": "US7234841010",
+"xetra": "",
+"kuerzel": "",
+"quelle": "openfigi"
+},
+"PODD": {
+"isin": "US45784P1012",
+"xetra": "INSULET CORP.    DL -,001",
+"kuerzel": "GOV",
+"quelle": "openfigi"
+},
+"PPG": {
+"isin": "US6935061076",
+"xetra": "",
+"kuerzel": "",
+"quelle": "openfigi"
+},
+"PPL": {
+"isin": "US69351T1060",
+"xetra": "PPL CORP.          DL-,01",
+"kuerzel": "PP9",
+"quelle": "openfigi"
+},
+"PRU": {
+"isin": "US7443201022",
+"xetra": "PRUDENTIAL FINL    DL-,01",
+"kuerzel": "PLL",
+"quelle": "openfigi"
+},
+"PSA": {
+"isin": "US74460D1090",
+"xetra": "",
+"kuerzel": "",
+"quelle": "openfigi"
+},
+"PSX": {
+"isin": "US7185461040",
+"xetra": "PHILLIPS 66        DL-,01",
+"kuerzel": "R66",
+"quelle": "openfigi"
+},
+"PTC": {
+"isin": "US69370C1009",
+"xetra": "PTC INC.          DL -,01",
+"kuerzel": "PMTA",
+"quelle": "openfigi"
+},
+"PWR": {
+"isin": "US74762E1029",
+"xetra": "QUANTA SVCS     DL-,00001",
+"kuerzel": "QAA",
+"quelle": "openfigi"
+},
+"PYPL": {
+"isin": "US70450Y1038",
+"xetra": "PAYPAL HDGS INC.DL-,0001",
+"kuerzel": "2PP",
+"quelle": "openfigi"
+},
+"Q": {
+"isin": "US74743L1008",
+"xetra": "QNITY ELECTRONICS O.N.",
+"kuerzel": "Z5O",
+"quelle": "openfigi"
+},
+"QCOM": {
+"isin": "US7475251036",
+"xetra": "QUALCOMM INC.    DL-,0001",
+"kuerzel": "QCI",
+"quelle": "openfigi"
+},
+"RDDT": {
+"isin": "US75734B1008",
+"xetra": "REDDIT INC. CL.A",
+"kuerzel": "6VO",
+"quelle": "openfigi"
+},
+"REG": {
+"isin": "US7588491032",
+"xetra": "",
+"kuerzel": "",
+"quelle": "openfigi"
+},
+"REGN": {
+"isin": "US75886F1075",
+"xetra": "REGENERON PHARMAC.DL-,001",
+"kuerzel": "RGO",
+"quelle": "openfigi"
+},
+"RF": {
+"isin": "US7591EP1005",
+"xetra": "REGIONS FINANCIAL  DL-,01",
+"kuerzel": "RN7",
+"quelle": "openfigi"
+},
+"RIO": {
+"isin": "GB0007188757",
+"xetra": "RIO TINTO PLC      LS-,10",
+"kuerzel": "RIO1",
+"quelle": "name",
+"treffer": 1.03
+},
+"RJF": {
+"isin": "US7547301090",
+"xetra": "RAYMOND JAMES FIN. DL-,01",
+"kuerzel": "RJF",
+"quelle": "openfigi"
+},
+"RL": {
+"isin": "US7512121010",
+"xetra": "RALPH LAUREN A     DL-,01",
+"kuerzel": "PRL",
+"quelle": "openfigi"
+},
+"RMD": {
+"isin": "US7611521078",
+"xetra": "RESMED INC.       DL-,004",
+"kuerzel": "RME",
+"quelle": "openfigi"
+},
+"ROK": {
+"isin": "US7739031091",
+"xetra": "ROCKWELL AU.         DL 1",
+"kuerzel": "RWL",
+"quelle": "openfigi"
+},
+"ROL": {
+"isin": "US7757111049",
+"xetra": "ROLLINS INC.         DL 1",
+"kuerzel": "RLS",
+"quelle": "openfigi"
+},
+"ROP": {
+"isin": "US7766961061",
+"xetra": "ROPER TECHNOLOGIES DL-,01",
+"kuerzel": "ROP",
+"quelle": "openfigi"
+},
+"ROST": {
+"isin": "US7782961038",
+"xetra": "ROSS STRS INC.     DL-,01",
+"kuerzel": "RSO",
+"quelle": "openfigi"
+},
+"RSG": {
+"isin": "US7607591002",
+"xetra": "REPUBLIC SERVIC. DL-,01",
+"kuerzel": "RPU",
+"quelle": "openfigi"
+},
+"RTX": {
+"isin": "US75513E1010",
+"xetra": "RTX CORP.            -,01",
+"kuerzel": "5UR",
+"quelle": "openfigi"
+},
+"RVTY": {
+"isin": "US7140461093",
+"xetra": "REVVITY INC.         DL 1",
+"kuerzel": "PKN",
+"quelle": "openfigi"
+},
+"SAN": {
+"isin": "ES0113900J37",
+"xetra": "BCO SANTANDER N.EO0,5",
+"kuerzel": "BSD2",
+"quelle": "name",
+"treffer": 0.96
+},
+"SAP": {
+"isin": "DE0007164600",
+"xetra": "SAP SE O.N.",
+"kuerzel": "SAP",
+"quelle": "name",
+"treffer": 1.03
+},
+"SBAC": {
+"isin": "US78410G1040",
+"xetra": "",
+"kuerzel": "",
+"quelle": "openfigi"
+},
+"SBUX": {
+"isin": "US8552441094",
+"xetra": "STARBUCKS CORP.",
+"kuerzel": "SRB",
+"quelle": "openfigi"
+},
+"SCHW": {
+"isin": "US8085131055",
+"xetra": "CHARLES SCHWAB CORP.DL-01",
+"kuerzel": "SWG",
+"quelle": "openfigi"
+},
+"SHEL": {
+"isin": "GB00BP6MXD84",
+"xetra": "SHELL PLC           EO-07",
+"kuerzel": "R6C0",
+"quelle": "name",
+"treffer": 1.03
+},
+"SHW": {
+"isin": "US8243481061",
+"xetra": "SHERWIN-WILLIAMS     DL 1",
+"kuerzel": "SJ3",
+"quelle": "openfigi"
+},
+"SJM": {
+"isin": "US8326964058",
+"xetra": "SMUCKER -J.M.-",
+"kuerzel": "JM2",
+"quelle": "openfigi"
+},
+"SKYD": {
+"isin": "US69932A2042",
+"xetra": "",
+"kuerzel": "",
+"quelle": "openfigi"
+},
+"SMCI": {
+"isin": "US86800U3023",
+"xetra": "SUPER MICRO O.N.",
+"kuerzel": "MS51",
+"quelle": "openfigi"
+},
+"SMFG": {
+"isin": "JP3890350006",
+"quelle": "fest"
+},
+"SNA": {
+"isin": "US8330341012",
+"xetra": "",
+"kuerzel": "",
+"quelle": "openfigi"
+},
+"SNDK": {
+"isin": "US80004C2008",
+"xetra": "SANDISK CORP.     DL -,01",
+"kuerzel": "BW9",
+"quelle": "openfigi"
+},
+"SNPS": {
+"isin": "US8716071076",
+"xetra": "SYNOPSYS INC.      DL-,01",
+"kuerzel": "SYP",
+"quelle": "openfigi"
+},
+"SNY": {
+"isin": "FR0000120578",
+"quelle": "fest"
+},
+"SO": {
+"isin": "US8425871071",
+"xetra": "THE SOUTHERN CO.     DL 5",
+"kuerzel": "SOT",
+"quelle": "openfigi"
+},
+"SOLV": {
+"isin": "US83444M1018",
+"xetra": "",
+"kuerzel": "",
+"quelle": "openfigi"
+},
+"SONY": {
+"isin": "JP3435000009",
+"quelle": "fest"
+},
+"SPG": {
+"isin": "US8288061091",
+"xetra": "",
+"kuerzel": "",
+"quelle": "openfigi"
+},
+"SPGI": {
+"isin": "US78409V1044",
+"xetra": "S+P GLOBAL INC.      DL 1",
+"kuerzel": "MHL",
+"quelle": "openfigi"
+},
+"SRE": {
+"isin": "US8168511090",
+"xetra": "SEMPRA",
+"kuerzel": "SE4",
+"quelle": "openfigi"
+},
+"STAG": {
+"isin": "US85254J1025",
+"xetra": "",
+"kuerzel": "",
+"quelle": "openfigi"
+},
+"STLA": {
+"isin": "NL00150001Q9",
+"xetra": "STELLANTIS NV     EO -,01",
+"kuerzel": "8TI",
+"quelle": "name",
+"treffer": 1.03
+},
+"STLD": {
+"isin": "US8581191009",
+"xetra": "STEEL DYNAMIC    DL-,0025",
+"kuerzel": "SD5",
+"quelle": "openfigi"
+},
+"STT": {
+"isin": "US8574771031",
+"xetra": "STATE STREET CORP.   DL 1",
+"kuerzel": "ZYA",
+"quelle": "openfigi"
+},
+"STZ": {
+"isin": "US21036P1084",
+"xetra": "CONST.BRANDS A     DL-,01",
+"kuerzel": "CB1A",
+"quelle": "openfigi"
+},
+"SW": {
+"isin": "IE00028FXN24",
+"xetra": "SMURFIT WESTROCK   DL-,01",
+"kuerzel": "N4U",
+"quelle": "name",
+"treffer": 1.03
+},
+"SWK": {
+"isin": "US8545021011",
+"xetra": "",
+"kuerzel": "",
+"quelle": "openfigi"
+},
+"SWKS": {
+"isin": "US83088M1027",
+"xetra": "SKYWORKS SOL.      DL-,25",
+"kuerzel": "AWM",
+"quelle": "openfigi"
+},
+"SYF": {
+"isin": "US87165B1035",
+"xetra": "SYNCHRONY FIN.    DL-,001",
+"kuerzel": "SFE",
+"quelle": "openfigi"
+},
+"SYK": {
+"isin": "US8636671013",
+"xetra": "STRYKER CORP.      DL-,10",
+"kuerzel": "SYK",
+"quelle": "openfigi"
+},
+"SYY": {
+"isin": "US8718291078",
+"xetra": "SYSCO CORP.          DL 1",
+"kuerzel": "SYY",
+"quelle": "openfigi"
+},
+"T": {
+"isin": "US00206R1023",
+"xetra": "AT + T INC.          DL 1",
+"kuerzel": "SOBA",
+"quelle": "openfigi"
+},
+"TDG": {
+"isin": "US8936411003",
+"xetra": "TRANSDIGM GROUP    DL-,01",
+"kuerzel": "T7D",
+"quelle": "openfigi"
+},
+"TDY": {
+"isin": "US8793601050",
+"xetra": "",
+"kuerzel": "",
+"quelle": "openfigi"
+},
+"TECH": {
+"isin": "US09073M1045",
+"xetra": "BIO-TECHNE CORP.   DL-,01",
+"kuerzel": "TE1",
+"quelle": "openfigi"
+},
+"TEL": {
+"isin": "IE000IVNQZ81",
+"xetra": "TE CONNECTIVITY   DL-,01",
+"kuerzel": "BZ4",
+"quelle": "name",
+"treffer": 1.03
+},
+"TER": {
+"isin": "US8807701029",
+"xetra": "TERADYNE INC.     DL-,125",
+"kuerzel": "TEY",
+"quelle": "openfigi"
+},
+"TFC": {
+"isin": "US89832Q1094",
+"xetra": "TRUIST FINL CORP.    DL 5",
+"kuerzel": "BBK",
+"quelle": "openfigi"
+},
+"TGT": {
+"isin": "US87612E1064",
+"xetra": "TARGET CORP.     DL-,0833",
+"kuerzel": "DYH",
+"quelle": "openfigi"
+},
+"TJX": {
+"isin": "US8725401090",
+"xetra": "TJX COS INC.         DL 1",
+"kuerzel": "TJX",
+"quelle": "openfigi"
+},
+"TM": {
+"isin": "JP3633400001",
+"quelle": "fest"
+},
+"TMO": {
+"isin": "US8835561023",
+"xetra": "THERMO FISH.SCIENTIF.DL 1",
+"kuerzel": "TN8",
+"quelle": "openfigi"
+},
+"TMUS": {
+"isin": "US8725901040",
+"xetra": "T-MOBILE US INC.DL,-00001",
+"kuerzel": "TM5",
+"quelle": "openfigi"
+},
+"TPL": {
+"isin": "US88262P1021",
+"xetra": "TEXAS PAC.LD CORP. DL-,01",
+"kuerzel": "9WY",
+"quelle": "openfigi"
+},
+"TPR": {
+"isin": "US8760301072",
+"xetra": "TAPESTRY INC.      DL-,01",
+"kuerzel": "COY",
+"quelle": "openfigi"
+},
+"TRGP": {
+"isin": "US87612G1013",
+"xetra": "TARGA RESOURCES DL -,001",
+"kuerzel": "TAR",
+"quelle": "openfigi"
+},
+"TRMB": {
+"isin": "US8962391004",
+"xetra": "TRIMBLE INC.",
+"kuerzel": "TB5",
+"quelle": "openfigi"
+},
+"TROW": {
+"isin": "US74144T1088",
+"xetra": "",
+"kuerzel": "",
+"quelle": "openfigi"
+},
+"TRV": {
+"isin": "US89417E1091",
+"xetra": "TRAVELERS COS INC.",
+"kuerzel": "PA9",
+"quelle": "openfigi"
+},
+"TSCO": {
+"isin": "US8923561067",
+"xetra": "TRACTOR SUPPLY    DL-,008",
+"kuerzel": "TR4",
+"quelle": "openfigi"
+},
+"TSLA": {
+"isin": "US88160R1014",
+"xetra": "TESLA INC. DL -,001",
+"kuerzel": "TL0",
+"quelle": "openfigi"
+},
+"TSN": {
+"isin": "US9024941034",
+"xetra": "TYSON FOODS INC A  DL-,10",
+"kuerzel": "TF7A",
+"quelle": "openfigi"
+},
+"TTE": {
+"isin": "FR0000120271",
+"xetra": "TOTALENERGIES SE  EO 2,50",
+"kuerzel": "TOTB",
+"quelle": "name",
+"treffer": 1.03
+},
+"TTWO": {
+"isin": "US8740541094",
+"xetra": "TAKE-TWO INTERACT. SOFTW.",
+"kuerzel": "TKE",
+"quelle": "openfigi"
+},
+"TWLO": {
+"isin": "US90138F1021",
+"xetra": "TWILIO INC.",
+"kuerzel": "TWH",
+"quelle": "openfigi"
+},
+"TXN": {
+"isin": "US8825081040",
+"xetra": "TEXAS INSTR.         DL 1",
+"kuerzel": "TII",
+"quelle": "openfigi"
+},
+"TXT": {
+"isin": "US8832031012",
+"xetra": "TEXTRON INC.      DL-,125",
+"kuerzel": "TXT",
+"quelle": "openfigi"
+},
+"TYL": {
+"isin": "US9022521051",
+"xetra": "TYLER TECHS INC.   DL-,01",
+"kuerzel": "TYP",
+"quelle": "openfigi"
+},
+"UAL": {
+"isin": "US9100471096",
+"xetra": "",
+"kuerzel": "",
+"quelle": "openfigi"
+},
+"UBER": {
+"isin": "US90353T1007",
+"xetra": "UBER TECH.      DL-,00001",
+"kuerzel": "UT8",
+"quelle": "openfigi"
+},
+"UBS": {
+"isin": "CH0244767585",
+"xetra": "UBS GROUP AG      SF -,10",
+"kuerzel": "0UB",
+"quelle": "name",
+"treffer": 1.03
+},
+"UDR": {
+"isin": "US9026531049",
+"xetra": "",
+"kuerzel": "",
+"quelle": "openfigi"
+},
+"UHS": {
+"isin": "US9139031002",
+"xetra": "UNIV. HEALTH SERV.B DL-01",
+"kuerzel": "UHS",
+"quelle": "openfigi"
+},
+"UL": {
+"isin": "GB00BVZK7T90",
+"xetra": "UNILEVER PLC     LS -,035",
+"kuerzel": "UNV0",
+"quelle": "name",
+"treffer": 1.03
+},
+"ULTA": {
+"isin": "US90384S3031",
+"xetra": "ULTA BEAUTY DL-,01",
+"kuerzel": "34U",
+"quelle": "openfigi"
+},
+"UNH": {
+"isin": "US91324P1021",
+"xetra": "UNITEDHEALTH GROUP DL-,01",
+"kuerzel": "UNH",
+"quelle": "openfigi"
+},
+"UNP": {
+"isin": "US9078181081",
+"xetra": "UNION PAC.        DL 2,50",
+"kuerzel": "UNP",
+"quelle": "openfigi"
+},
+"UPS": {
+"isin": "US9113121068",
+"xetra": "UNITED PARCEL SE.B DL-01",
+"kuerzel": "UPAB",
+"quelle": "openfigi"
+},
+"URI": {
+"isin": "US9113631090",
+"xetra": "UNITED RENTALS INC.DL-,01",
+"kuerzel": "UR3",
+"quelle": "openfigi"
+},
+"USB": {
+"isin": "US9029733048",
+"xetra": "U.S. BANCORP       DL-,01",
+"kuerzel": "UB5",
+"quelle": "openfigi"
+},
+"V": {
+"isin": "US92826C8394",
+"xetra": "VISA INC. CL. A DL -,0001",
+"kuerzel": "3V64",
+"quelle": "openfigi"
+},
+"VEEV": {
+"isin": "US9224751084",
+"xetra": "VEEVA SYSTEMS A DL-,00001",
+"kuerzel": "VEE",
+"quelle": "openfigi"
+},
+"VICI": {
+"isin": "US9256521090",
+"xetra": "",
+"kuerzel": "",
+"quelle": "openfigi"
+},
+"VLO": {
+"isin": "US91913Y1001",
+"xetra": "VALERO ENERGY CORP.DL-,01",
+"kuerzel": "V1L",
+"quelle": "openfigi"
+},
+"VLTO": {
+"isin": "US92338C1036",
+"xetra": "VERALTO CORP.",
+"kuerzel": "RZ2",
+"quelle": "openfigi"
+},
+"VMC": {
+"isin": "US9291601097",
+"xetra": "VULCAN MATERIALS CO  DL 1",
+"kuerzel": "VMC",
+"quelle": "openfigi"
+},
+"VMRK": {
+"isin": "US29476L1070",
+"xetra": "",
+"kuerzel": "",
+"quelle": "openfigi"
+},
+"VOD": {
+"isin": "GB00BH4HKS39",
+"quelle": "fest"
+},
+"VRSK": {
+"isin": "US92345Y1064",
+"xetra": "VERISK ANALYTICS DL-001",
+"kuerzel": "VA7A",
+"quelle": "openfigi"
+},
+"VRSN": {
+"isin": "US92343E1029",
+"xetra": "VERISIGN INC.     DL-,001",
+"kuerzel": "VRS",
+"quelle": "openfigi"
+},
+"VRT": {
+"isin": "US92537N1081",
+"xetra": "VERTIV HOL.CL A DL-,0001",
+"kuerzel": "49V",
+"quelle": "openfigi"
+},
+"VRTX": {
+"isin": "US92532F1003",
+"xetra": "VERTEX PHARMAC.    DL-,01",
+"kuerzel": "VX1",
+"quelle": "openfigi"
+},
+"VST": {
+"isin": "US92840M1027",
+"xetra": "VISTRA CORP.       DL-,01",
+"kuerzel": "0V6",
+"quelle": "openfigi"
+},
+"VTR": {
+"isin": "US92276F1003",
+"xetra": "",
+"kuerzel": "",
+"quelle": "openfigi"
+},
+"VTRS": {
+"isin": "US92556V1061",
+"xetra": "VIATRIS INC.  O.N.",
+"kuerzel": "VIA",
+"quelle": "openfigi"
+},
+"VZ": {
+"isin": "US92343V1044",
+"xetra": "VERIZON COMM. INC. DL-,10",
+"kuerzel": "BAC",
+"quelle": "openfigi"
+},
+"WAB": {
+"isin": "US9297401088",
+"xetra": "WESTINGH.AI.BR.T.  DL-,01",
+"kuerzel": "WB2",
+"quelle": "openfigi"
+},
+"WAT": {
+"isin": "US9418481035",
+"xetra": "WATERS CORP.       DL-,01",
+"kuerzel": "WAZ",
+"quelle": "openfigi"
+},
+"WDAY": {
+"isin": "US98138H1014",
+"xetra": "WORKDAY INC.CL.A  DL-,001",
+"kuerzel": "W7D",
+"quelle": "openfigi"
+},
+"WDC": {
+"isin": "US9581021055",
+"xetra": "WESTN DIGITAL      DL-,01",
+"kuerzel": "WDC",
+"quelle": "openfigi"
+},
+"WEC": {
+"isin": "US92939U1060",
+"xetra": "WEC ENERGY GRP      DL 10",
+"kuerzel": "WIC",
+"quelle": "openfigi"
+},
+"WELL": {
+"isin": "US95040Q1040",
+"xetra": "",
+"kuerzel": "",
+"quelle": "openfigi"
+},
+"WFC": {
+"isin": "US9497461015",
+"xetra": "WELLS FARGO + CO.DL 1,666",
+"kuerzel": "NWT",
+"quelle": "openfigi"
+},
+"WM": {
+"isin": "US94106L1098",
+"xetra": "WASTE MANAGEMENT",
+"kuerzel": "UWS",
+"quelle": "openfigi"
+},
+"WMB": {
+"isin": "US9694571004",
+"xetra": "WILLIAMS COS INC.    DL 1",
+"kuerzel": "WMB",
+"quelle": "openfigi"
+},
+"WMT": {
+"isin": "US9311421039",
+"xetra": "WALMART DL-,10",
+"kuerzel": "WMT",
+"quelle": "openfigi"
+},
+"WRB": {
+"isin": "US0844231029",
+"xetra": "",
+"kuerzel": "",
+"quelle": "openfigi"
+},
+"WSM": {
+"isin": "US9699041011",
+"xetra": "WILLIAMS-SONOMA INC.DL-01",
+"kuerzel": "WM1",
+"quelle": "openfigi"
+},
+"WST": {
+"isin": "US9553061055",
+"xetra": "",
+"kuerzel": "",
+"quelle": "openfigi"
+},
+"WTW": {
+"isin": "IE00BDB6Q211",
+"xetra": "WILLIS TOWERS WATSON",
+"kuerzel": "WTY",
+"quelle": "name",
+"treffer": 1.03
+},
+"WY": {
+"isin": "US9621661043",
+"xetra": "",
+"kuerzel": "",
+"quelle": "openfigi"
+},
+"WYNN": {
+"isin": "US9831341071",
+"xetra": "WYNN RESORTS LTD   DL-,01",
+"kuerzel": "WYR",
+"quelle": "openfigi"
+},
+"XEL": {
+"isin": "US98389B1008",
+"xetra": "XCEL ENERGY       DL 2,50",
+"kuerzel": "NRN",
+"quelle": "openfigi"
+},
+"XOM": {
+"isin": "US30233Q1085",
+"xetra": "EXX.HO.COR. O.N.",
+"kuerzel": "7DZ",
+"quelle": "openfigi"
+},
+"XYL": {
+"isin": "US98419M1009",
+"xetra": "",
+"kuerzel": "",
+"quelle": "openfigi"
+},
+"XYZ": {
+"isin": "US8522341036",
+"xetra": "BLOCK INC. A",
+"kuerzel": "SQ3",
+"quelle": "openfigi"
+},
+"YUM": {
+"isin": "US9884981013",
+"xetra": "YUM BRANDS",
+"kuerzel": "TGR",
+"quelle": "openfigi"
+},
+"ZBH": {
+"isin": "US98956P1021",
+"xetra": "",
+"kuerzel": "",
+"quelle": "openfigi"
+},
+"ZBRA": {
+"isin": "US9892071054",
+"xetra": "ZEBRA TECH. A      DL-,01",
+"kuerzel": "ZT1A",
+"quelle": "openfigi"
+},
+"ZTS": {
+"isin": "US98978V1035",
+"xetra": "ZOETIS INC. CL.A  DL -,01",
+"kuerzel": "ZOE",
+"quelle": "openfigi"
+},
+"OBDC": {
+"isin": "US69121K1043",
+"xetra": "",
+"kuerzel": "",
+"quelle": "openfigi",
+"bdc": true
+},
+"BXSL": {
+"isin": "US09261X1028",
+"xetra": "",
+"kuerzel": "",
+"quelle": "openfigi",
+"bdc": true
+},
+"FSK": {
+"isin": "US3026352068",
+"xetra": "",
+"kuerzel": "",
+"quelle": "openfigi",
+"bdc": true
+},
+"GBDC": {
+"isin": "US38173M1027",
+"xetra": "",
+"kuerzel": "",
+"quelle": "openfigi",
+"bdc": true
+},
+"HTGC": {
+"isin": "US4270965084",
+"xetra": "",
+"kuerzel": "",
+"quelle": "openfigi",
+"bdc": true
+},
+"TSLX": {
+"isin": "US83012A1097",
+"xetra": "",
+"kuerzel": "",
+"quelle": "openfigi",
+"bdc": true
+},
+"PSEC": {
+"isin": "US74348T1025",
+"xetra": "",
+"kuerzel": "",
+"quelle": "openfigi",
+"bdc": true
+},
+"OCSL": {
+"isin": "US67401P4054",
+"xetra": "",
+"kuerzel": "",
+"quelle": "openfigi",
+"bdc": true
+},
+"CSWC": {
+"isin": "US1405011073",
+"xetra": "CAPITAL STHWEST CORP.DL 1",
+"kuerzel": "SFW",
+"quelle": "openfigi",
+"bdc": true
+},
+"GSBD": {
+"isin": "US38147U1079",
+"xetra": "",
+"kuerzel": "",
+"quelle": "openfigi",
+"bdc": true
+},
+"MFIC": {
+"isin": "US03761U5020",
+"xetra": "",
+"kuerzel": "",
+"quelle": "openfigi",
+"bdc": true
+},
+"TRIN": {
+"isin": "US8964423086",
+"xetra": "",
+"kuerzel": "",
+"quelle": "openfigi",
+"bdc": true
+},
+"NMFC": {
+"isin": "US6475511001",
+"xetra": "",
+"kuerzel": "",
+"quelle": "openfigi",
+"bdc": true
+},
+"BBDC": {
+"isin": "US06759L1035",
+"xetra": "",
+"kuerzel": "",
+"quelle": "openfigi",
+"bdc": true
+},
+"BCSF": {
+"isin": "US05684B1070",
+"xetra": "",
+"kuerzel": "",
+"quelle": "openfigi",
+"bdc": true
+},
+"CGBD": {
+"isin": "US8722801029",
+"xetra": "",
+"kuerzel": "",
+"quelle": "openfigi",
+"bdc": true
+},
+"PFLT": {
+"isin": "US70806A1060",
+"xetra": "",
+"kuerzel": "",
+"quelle": "openfigi",
+"bdc": true
+},
+"SLRC": {
+"isin": "US83413U1007",
+"xetra": "",
+"kuerzel": "",
+"quelle": "openfigi",
+"bdc": true
+},
+"FDUS": {
+"isin": "US3165001070",
+"xetra": "",
+"kuerzel": "",
+"quelle": "openfigi",
+"bdc": true
+},
+"NCDL": {
+"isin": "US67090S1087",
+"xetra": "",
+"kuerzel": "",
+"quelle": "openfigi",
+"bdc": true
+},
+"GAIN": {
+"isin": "US3765461070",
+"xetra": "",
+"kuerzel": "",
+"quelle": "openfigi",
+"bdc": true
+},
+"CCAP": {
+"isin": "US2256551092",
+"xetra": "",
+"kuerzel": "",
+"quelle": "openfigi",
+"bdc": true
+},
+"CION": {
+"isin": "US17259U2042",
+"xetra": "",
+"kuerzel": "",
+"quelle": "openfigi",
+"bdc": true
+},
+"TCPC": {
+"isin": "US09259E1082",
+"xetra": "",
+"kuerzel": "",
+"quelle": "openfigi",
+"bdc": true
+},
+"GLAD": {
+"isin": "US3765358789",
+"xetra": "",
+"kuerzel": "",
+"quelle": "openfigi",
+"bdc": true
+},
+"PNNT": {
+"isin": "US7080621045",
+"xetra": "",
+"kuerzel": "",
+"quelle": "openfigi",
+"bdc": true
+},
+"RWAY": {
+"isin": "US78163D1000",
+"xetra": "",
+"kuerzel": "",
+"quelle": "openfigi",
+"bdc": true
+},
+"SAR": {
+"isin": "US80349A2087",
+"xetra": "",
+"kuerzel": "",
+"quelle": "openfigi",
+"bdc": true
+},
+"SCM": {
+"isin": "US8585681088",
+"xetra": "",
+"kuerzel": "",
+"quelle": "openfigi",
+"bdc": true
+},
+"LIEN": {
+"isin": "US8281741020",
+"xetra": "",
+"kuerzel": "",
+"quelle": "openfigi",
+"bdc": true
+},
+"TPVG": {
+"isin": "US89677Y1001",
+"xetra": "",
+"kuerzel": "",
+"quelle": "openfigi",
+"bdc": true
+},
+"WHF": {
+"isin": "US96524V1061",
+"xetra": "",
+"kuerzel": "",
+"quelle": "openfigi",
+"bdc": true
+},
+"OXSQ": {
+"isin": "US69181V1070",
+"xetra": "",
+"kuerzel": "",
+"quelle": "openfigi",
+"bdc": true
+},
+"GECC": {
+"isin": "US3903207039",
+"xetra": "",
+"kuerzel": "",
+"quelle": "openfigi",
+"bdc": true
+},
+"OFS": {
+"isin": "US67103B1008",
+"xetra": "",
+"kuerzel": "",
+"quelle": "openfigi",
+"bdc": true
+},
+"KBDC": {
+"isin": "US48662X1054",
+"xetra": "",
+"kuerzel": "",
+"quelle": "openfigi",
+"bdc": true
+},
+"PFX": {
+"isin": "US71742W1036",
+"xetra": "",
+"kuerzel": "",
+"quelle": "openfigi",
+"bdc": true
+},
+"NSLR": {
+"isin": "US86887Q1094",
+"xetra": "",
+"kuerzel": "",
+"quelle": "openfigi",
+"bdc": true
+},
+"_stand": "2026-11-16"
 }
