@@ -138,6 +138,10 @@ def main():
         TTM = json.load(open("data/sec/ttm.json", encoding="utf-8")).get("firmen", {})   # US: Summe der letzten vier Quartale
     except Exception:
         TTM = {}
+    try:
+        PFLEGE = json.load(open("data/reit-pflege.json", encoding="utf-8")).get("firmen", {})   # manuelle Werte fuer einzelne REITs
+    except Exception:
+        PFLEGE = {}
     kurse = json.load(open("data/kurse/xetra-letzter.json"))
     isin = json.load(open("data/kurse/isin-zuordnung.json"))
     fx = ezb_kurse()
@@ -283,6 +287,11 @@ def main():
         schulden_ges = (sch or 0) + (sk or 0) if sch is not None or sk is not None else None
         ev = bw + schulden_ges - (cash or 0) if bw and schulden_ges is not None else None
         ffo = gew + abs(da) if gew is not None and da is not None else None
+        pf = PFLEGE.get(t, {})   # manuelle Werte gehen vor der Naeherung
+        if pf.get("ffo_je_aktie") is not None and aktien:
+            ffo = pf["ffo_je_aktie"] * aktien
+        if pf.get("dividenden_gezahlt_mio") is not None:
+            dg = -pf["dividenden_gezahlt_mio"] * 1e6
         P = lambda a, b, n=1: r2(a / b * 100, n) if a is not None and b else None
         X = lambda a, b, n=2: r2(a / b, n) if a is not None and b and b > 0 else None
         alt = None

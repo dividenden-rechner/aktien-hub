@@ -1,0 +1,24 @@
+{
+  "stand": "2026-11-16",
+  "hinweis": "Manuell gepflegte Werte fuer REITs, bei denen die automatische Berechnung versagt. Jeder Eintrag hat eine Quelle. Werte gelten fuer das genannte Geschaeftsjahr und ueberschreiben die automatische Berechnung in tools/kennzahlen.py.",
+  "firmen": {
+    "ARE": {
+      "ffo_je_aktie": 7.69,
+      "ffo_art": "FFO je Aktie verwaessert, unbereinigt (Definition wie bei Alexandria selbst, Wertminderungen herausgerechnet)",
+      "geschaeftsjahr": "2025",
+      "quelle": "Alexandria 4Q25 Supplemental Press Release, https://s2.q4cdn.com/884574073/files/doc_news/2026/01/4Q25-Supp-Press-Release.pdf"
+    },
+    "PSA": {
+      "dividenden_gezahlt_mio": 2303,
+      "geschaeftsjahr": "2025",
+      "hinweis": "Naeherung: 9 Monate 2025 (1.727,5 Mio. $) plus Q4 2025 (ca. 575,8 Mio. $). Enthaelt auch Ausschuettungen an Vorzugsaktionaere und LTIP-Einheiten.",
+      "quelle": "Public Storage 10-Q 30.09.2026 (Vorjahreswerte), https://s1.q4cdn.com/588671402/files/content_files/PSA-09-30-2026-10-Q-Final-10-26.pdf; Quartalswerte Q3/Q4 2025 von weissratings.com"
+    },
+    "SPG": {
+      "dividenden_gezahlt_mio": 2790,
+      "geschaeftsjahr": "2025",
+      "hinweis": "Drittquelle, nicht gegen den Originalbericht geprueft (PDF war nicht lesbar).",
+      "quelle": "tickerleague.com, Dividends Paid fuer SPG, Geschaeftsjahr 2025"
+    }
+  }
+}
