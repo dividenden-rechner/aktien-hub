@@ -16,10 +16,11 @@ Datei anklicken, dann Stift-Symbol: Zeile `draft: true` löschen und speichern, 
 | 29.10.2026 22:42 | Amazon steigert Umsatz im dritten Quartal auf 201,9 Milliarden Dollar | [79738970_2026-10-29/7757_2242-amazon-q3-2026-zahlen.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/79738970_2026-10-29/7757_2242-amazon-q3-2026-zahlen.md) |
 | 29.10.2026 10:12 | Shell erzielt im dritten Quartal 10,8 Milliarden Dollar Gewinn | [79738970_2026-10-29/8987_1012-shell-q3-2026-ergebnisse.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/79738970_2026-10-29/8987_1012-shell-q3-2026-ergebnisse.md) |
 
-### Online (400)
+### Online (401)
 
 | Datum | Titel | Datei |
 |---|---|---|
+| 16.11.2026 21:10 | Fed-Zinsen: Chance auf einen halben Prozentpunkt mehr zur Juli-Sitzung 2027 steigt auf 97 % | [79738883_2026-11-16/8978_1031-fed-zinsen-erhoehung-chance.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/79738883_2026-11-16/8978_1031-fed-zinsen-erhoehung-chance.md) |
 | 16.11.2026 20:04 | Henry Schein senkt bereinigte Gewinnprognose für 2026 auf 5,42 bis 5,48 US-Dollar | [79738883_2026-11-16/7995_2004-henry-schein-prognose-anpassung-2026.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/79738883_2026-11-16/7995_2004-henry-schein-prognose-anpassung-2026.md) |
 | 16.11.2026 20:03 | BBVA meldet Zwischenstand zum Aktienrückkauf in Höhe von über 336 Millionen Euro | [79738883_2026-11-16/7996_2003-bbva-aktienrueckkauf-zweite-tranche-november-2026.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/79738883_2026-11-16/7996_2003-bbva-aktienrueckkauf-zweite-tranche-november-2026.md) |
 | 16.11.2026 20:03 | AstraZeneca erhält EU-Zulassungsempfehlung für Blutdruckmittel Baxfendy | [79738883_2026-11-16/7996_2003-astrazeneca-baxfendy-eu-zulassungsempfehlung.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/79738883_2026-11-16/7996_2003-astrazeneca-baxfendy-eu-zulassungsempfehlung.md) |
