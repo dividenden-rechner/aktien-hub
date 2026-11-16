@@ -94,6 +94,22 @@ def main():
         for i, v in heute.items():
             alt = gestern.get(i)
             out["k"][i] = [v[3], round((v[3] / alt[3] - 1) * 100, 2) if alt and alt[3] else None, v[6], code]
+    # Werte ohne Notierung am letzten Handelstag: letzter frueherer Kurs, mit Datum (5. Feld)
+    def frueher(o):
+        p = f"data/kurse/{o}"
+        if not os.path.isdir(p):
+            return None, {}
+        tage_o = sorted(f[:10] for f in os.listdir(p) if re.fullmatch(r"\d{4}-\d{2}-\d{2}\.json", f) and f[:10] < letzt)
+        for t in reversed(tage_o[-6:]):
+            d = lade(o, t)
+            if d:
+                return t, d
+        return None, {}
+    for code, o, name in reversed(PLAETZE):
+        tg, d = frueher(o)
+        for i, v in d.items():
+            if i not in out["k"]:
+                out["k"][i] = [v[3], None, v[6], code, tg]
     json.dump(out, open("data/kurse/xetra-letzter.json", "w"), separators=(",", ":"))
     print("Letzter Stand", letzt, len(out["k"]), "ISINs; uebersprungene Plaetze:", VEN)
 
