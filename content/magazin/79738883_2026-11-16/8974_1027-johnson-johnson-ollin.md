@@ -5,11 +5,14 @@ date: 2026-11-16 11:50
 author: "Redaktions-Team Dividenden-Rechner.de"
 author_bio: "Das Redaktions-Team von Dividenden-Rechner.de schreibt über Dividendenaktien, Kennzahlen und Steuerthemen für Privatanleger. Die Rechner und Auswertungen auf der Seite entstehen im eigenen Haus."
 category: Übernahmen
+image: /assets/magazin/johnson-johnson-ollin-aufmacher.jpg
+image_alt: "Foto zu Johnson & Johnson: Labor mit Pipette und Probenbehältern"
+image_credit: "Foto: National Institute of Allergy and Infectious Diseases auf Unsplash"
 logo_name: "Johnson & Johnson"
 logo_symbol: JNJ
 logo_file: assets/logos/jnj.png
 ---
-<!-- PRÜFEN: Kein Aufmacherfoto eingetragen. Bitte per Foto-Anfrage ein Unsplash-Foto suchen lassen oder image-Zeilen ergänzen. -->
+<!-- PRÜFEN: Aufmacherfoto ist von Divi geliefert (Unsplash). Unsplash-Link und Fotografen-Profil fehlen noch, bitte in image_source und image_artist_url nachtragen. -->
 <!-- PRÜFEN: Quellen: Financial Times vom 15.11.2026 (über MarketScreener/MT Newswires vom 16.11.2026), Biopharma Dive zu Ollin Biosciences (September 2025). -->
 
 Johnson & Johnson steht offenbar vor dem Kauf von Ollin Biosciences. Die Financial Times berichtete am Sonntag, der Konzern könne den Deal schon am Montag bekanntgeben. Bestätigt ist noch nichts. Die Gespräche könnten scheitern, und beide Seiten hatten zunächst nicht geantwortet.
