@@ -77,7 +77,7 @@
 <thead><tr>
 <th class="fi"><button type="button" data-k="n" aria-sort="none">REIT</button></th>
 <th><button type="button" data-k="kurs" aria-sort="none">Kurs $</button></th>
-<th><button type="button" data-k="mc" aria-sort="none">Marktkap. Mrd. $</button></th>
+<th><button type="button" data-k="mc" aria-sort="none">Mkt-Cap Mrd. $</button></th>
 <th><button type="button" data-k="pffo" aria-sort="none">Kurs / FFO</button></th>
 <th><button type="button" data-k="ffor" aria-sort="none">FFO-Rendite</button></th>
 <th><button type="button" data-k="rend" aria-sort="none">Div.-Rendite</button></th>
@@ -196,7 +196,8 @@ document.querySelectorAll("#reit-tab thead button").forEach(function(b){
 });
 fetch("../../data/kennzahlen.json",{cache:"no-cache"}).then(function(r){return r.json();}).then(function(d){
   var w=d.werte||d;
-  rows=Object.keys(w).filter(function(t){ var v=w[t]; return v && v.sektor==="Real Estate" && typeof v.kurs_usd==="number"; }).map(function(t){
+  var KEIN_REIT={"8801.T":1,"CSGP":1};   /* Immobilienkonzern (Japan) und Datenanbieter, keine REITs */
+  rows=Object.keys(w).filter(function(t){ var v=w[t]; return v && v.sektor==="Real Estate" && !KEIN_REIT[t] && typeof v.kurs_usd==="number"; }).map(function(t){
     var v=w[t], ffo=typeof v.ffo_je_aktie==="number"?v.ffo_je_aktie:null, k=v.kurs_usd;
     return { t:t, name:v.name||t, kurs:k, mc:typeof v.boersenwert_usd==="number"?v.boersenwert_usd/1e9:null,
       pffo: ffo!=null&&ffo>0 ? k/ffo : null, ffor: ffo!=null&&ffo>0&&k ? ffo/k*100 : null,

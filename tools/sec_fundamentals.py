@@ -25,7 +25,7 @@ K = {
     "dividende_je_aktie": ("f", "USD/shares", ["CommonStockDividendsPerShareDeclared", "CommonStockDividendsPerShareCashPaid"],
                            r"^(CommonStockDividendsPerShare\w*|DistributionMadeToLimitedPartnerDistributionsPaidPerUnit|DistributionMadeToLimitedPartnerDistributionsDeclaredPerUnit)$"),
     "dividenden_gezahlt": ("f", "USD", ["PaymentsOfDividendsCommonStock", "PaymentsOfDividends", "PaymentsOfOrdinaryDividends"],
-                           r"^(PaymentsOf\w*Dividends\w*|PaymentsOfDistributionsToAffiliates|DistributionMadeToLimitedPartnerCashDistributionsPaid)$"),
+                           r"^(PaymentsOf\w*Dividends\w*|DividendsCommonStockCash|PaymentsOfDistributionsToAffiliates|DistributionMadeToLimitedPartnerCashDistributionsPaid)$"),
     "operativer_cf": ("f", "USD", ["NetCashProvidedByUsedInOperatingActivities",
                                    "NetCashProvidedByUsedInOperatingActivitiesContinuingOperations"],
                       r"^NetCashProvidedByUsedInOperatingActivities\w*$"),
