@@ -8224,26 +8224,77 @@
 ]
 },
 "TSN": {
-"datum": "2026-08-03",
-"quelle": "https://www.sec.gov/Archives/edgar/data/100493/000010049326000057/tsn2026q3exh-991.htm",
+"datum": "2026-11-16",
+"quelle": "https://www.sec.gov/Archives/edgar/data/100493/000010049326000077/tsn2026q4exh-991.htm",
 "prognosen": [
 {
 "kennzahl": "umsatzwachstum_proz",
-"geschaeftsjahr": "2026",
-"von": 2.5,
-"bis": 3.5,
+"geschaeftsjahr": "2027",
+"von": -5.5,
+"bis": -3.5,
 "einheit": "%",
 "veraendert": "unklar",
-"beleg": "We expect sales to be up 2.5% to 3.5% in fiscal 2026 as compared to fiscal 2025."
+"beleg": "We expect sales to decrease 3.5% to 5.5% in fiscal 2027 as compared to fiscal 2026, primarily due to lower Beef segment volumes"
 },
 {
 "kennzahl": "fcf",
-"geschaeftsjahr": "2026",
-"von": 1300000000,
-"bis": 1700000000,
+"geschaeftsjahr": "2027",
+"von": 800000000,
+"bis": 1300000000,
 "einheit": "USD",
 "veraendert": "unklar",
-"beleg": "We expect free cash flow to be between $1.3 billion and $1.7 billion for fiscal 2026."
+"beleg": "We expect free cash flow to be between $0.8 billion and $1.3 billion for fiscal 2027."
+},
+{
+"kennzahl": "dividende_je_aktie",
+"geschaeftsjahr": "2027",
+"von": 2.08,
+"bis": 2.08,
+"einheit": "USD",
+"veraendert": "unklar",
+"beleg": "This results in an annual dividend rate in fiscal 2027 of $2.08 for Class A shares and $1.872 for Class B shares"
+},
+{
+"kennzahl": "dividende_je_aktie",
+"geschaeftsjahr": "2027",
+"von": 1.872,
+"bis": 1.872,
+"einheit": "USD",
+"veraendert": "unklar",
+"beleg": "This results in an annual dividend rate in fiscal 2027 of $2.08 for Class A shares and $1.872 for Class B shares"
+}
+]
+},
+"NNN": {
+"datum": "2026-11-04",
+"quelle": "https://www.sec.gov/Archives/edgar/data/751364/000075136426000002/nnn-ex99_1.htm",
+"prognosen": [
+{
+"kennzahl": "eps_bereinigt",
+"geschaeftsjahr": "2026",
+"von": 3.5,
+"bis": 3.54,
+"einheit": "USD",
+"veraendert": "bestaetigt",
+"beleg": "Maintained 2026 Core FFO per share guidance of $3.50 - $3.54"
+},
+{
+"kennzahl": "eps_bereinigt",
+"geschaeftsjahr": "2026",
+"von": 3.55,
+"bis": 3.59,
+"einheit": "USD",
+"veraendert": "bestaetigt",
+"beleg": "Maintained 2026 AFFO per share guidance of $3.55 - $3.59"
+},
+{
+"kennzahl": "eps_bereinigt",
+"geschaeftsjahr": "2026",
+"von": 2.0,
+"bis": 2.04,
+"einheit": "USD",
+"veraendert": "gesenkt",
+"beleg": "Net earnings per share excluding any gains on disposition of real estate, impairment losses and retirement and severance costs $2.00 - $2.04"
 }
 ]
 }
@@ -8251,9 +8302,9 @@
 "stand": "2026-11-16",
 "hinweis": "Eigene Prognosen der Unternehmen aus ihren Ergebnis-Pressemitteilungen (SEC 8-K, Anlage EX-99), automatisch ausgelesen. Keine Analystenschaetzungen.",
 "letzter_lauf": {
-"zeit": "2026-11-16 06:21",
-"kandidaten": 0,
-"ki_aufrufe": 0,
+"zeit": "2026-11-16 19:40",
+"kandidaten": 2,
+"ki_aufrufe": 2,
 "abbruch": "",
 "fehler": []
 }
