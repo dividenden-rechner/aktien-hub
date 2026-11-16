@@ -7,7 +7,7 @@ Schreibt data/sec/ttm.json: je Firma Quartale mit Geschaeftsjahr-Nummer und TTM-
 Bricht die Reihe (fehlendes oder ungleich langes Quartal), bleibt der TTM-Wert leer."""
 import json, datetime
 
-METRIKEN = ["umsatz", "gewinn", "eps_verw", "dividende_je_aktie"]
+METRIKEN = ["umsatz", "gewinn", "eps_verw", "dividende_je_aktie"]   # Cashflow-Posten folgen unten aus kumulierten Werten
 TAGE_QUARTAL = (80, 100)
 
 
@@ -46,6 +46,36 @@ def ttm(quartale):
     return round(sum(x[1] for x in letzte), 4)
 
 
+def quartale_aus_kumuliert(eintraege):
+    """eintraege: [start, end, dauer_monate, wert] kumuliert je Geschaeftsjahr (3, 6, 9, 12 Monate).
+    Quartalswert = Differenz zum vorherigen kumulierten Wert derselben Kette; lueckenhafte Ketten werden verworfen."""
+    ketten = {}
+    for s, e, m, w in eintraege:
+        ketten.setdefault(s, []).append((m, d(e), w))
+    out = []
+    for lst in ketten.values():
+        lst.sort()
+        vorher = None
+        for m, ende, w in lst:
+            if vorher is None:
+                if m == 3:
+                    out.append([ende.isoformat(), round(w, 4), "Q1", None])
+                vorher = (m, w)
+                continue
+            vm, vw = vorher
+            if m - vm != 3:
+                vorher = None if m != 3 else (m, w)   # Kette neu beginnen, wenn ein Zwischenwert fehlt
+                if m == 3:
+                    out.append([ende.isoformat(), round(w, 4), "Q1", None])
+                continue
+            out.append([ende.isoformat(), round(w - vw, 4), "Q%d" % (m // 3), None])
+            vorher = (m, w)
+    return sorted(out, key=lambda x: x[0])
+
+
+KUM_METRIKEN = {"ocf": "operativer_cf", "capex": "capex", "div": "dividenden_gezahlt"}
+
+
 def main():
     q = json.load(open("data/sec/quartal.json", encoding="utf-8"))["firmen"]
     f = json.load(open("data/sec/fundamentals.json", encoding="utf-8"))["firmen"]
@@ -59,6 +89,16 @@ def main():
             quartale_neu[m] = alle
             aktuell = bool(alle) and (datetime.date.today() - d(alle[-1][0])).days <= 200
             werte[m] = ttm(alle) if aktuell else None   # veraltete Reihen (z. B. 2010) bekommen keine TTM-Werte
+        kum = qd.get("kumuliert", {})
+        for quelle, m in KUM_METRIKEN.items():
+            alle = quartale_aus_kumuliert(kum.get(quelle, []))[-8:]
+            quartale_neu[m] = alle
+            aktuell = bool(alle) and (datetime.date.today() - d(alle[-1][0])).days <= 200
+            werte[m] = ttm(alle) if aktuell else None
+        if werte.get("operativer_cf") is not None and werte.get("capex") is not None:
+            werte["fcf"] = round(werte["operativer_cf"] - abs(werte["capex"]), 4)
+            if werte.get("dividenden_gezahlt") is not None and werte["fcf"] > 0:
+                werte["ausschuettung_fcf"] = round(abs(werte["dividenden_gezahlt"]) / werte["fcf"] * 100, 1)
         if not any(quartale_neu.values()):
             continue
         letzte = quartale_neu["umsatz"][-1] if quartale_neu["umsatz"] else None

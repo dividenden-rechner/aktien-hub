@@ -594,8 +594,12 @@ function steckbrief(sym,p,r,m,inc,cf,KZ){
   rows.push(["Erwartete Rendite (1 Jahr)",bwc,bwl,bwt,"bew",gauge]);
   let dc,dg,dv,fcfFehlt=false;
   if(!(dyl>0)){dg="";dv="Keine Dividende";dc="–"}
-  else{const cov=fy!=null?fy/dyl:null;dc=[ "Rendite "+P(dyl),po!=null?"Ausschüttung "+P(po,0):"Ausschüttung: noch nicht erfasst",fy!=null?"FCF-Rendite "+P(fy):"FCF-Rendite: noch nicht erfasst"].filter(Boolean).join(" · ");
-    if(cov!=null){dg=cov>=1.5?"g":cov>=1?"y":"r";dv=cov>=1.5?"Gedeckt":cov>=1?"Knapp":"Nicht gedeckt"}
+  else{const cov=fy!=null?fy/dyl:null;
+    /* Gewinn- und Cashflow-Ausschüttung nebeneinander, mit dem Zeitraum, auf den sie sich beziehen */
+    const base=K.cf_basis==="ttm"?"letzte 4 Quartale":K.cf_basis?"Geschäftsjahr "+K.cf_basis:"";
+    const cfPo=K.fcf_ausschuettung!=null?K.fcf_ausschuettung:(fy>0?dyl/fy*100:null);
+    dc=["Rendite "+P(dyl),po!=null?"Ausschüttung vom Gewinn "+P(po,0):"Ausschüttung vom Gewinn: noch nicht erfasst",cfPo!=null?"vom freien Cashflow "+num(cfPo,0)+" % ("+base+")":"Cashflow-Ausschüttung: noch nicht erfasst"].join(" · ");
+    if(cov!=null){dg=cov>=1.5?"g":cov>=1?"y":"r";dv=cov>=1.5?"Cashflow deckt Dividende":cov>=1?"Cashflow knapp":"Cashflow reicht nicht"}
     else if(po!=null){/* Kein Free Cashflow: Ersatz ist die Ausschüttungsquote, Richtwert 75 % */
       if(po<=.75){dg="g";dv="Gedeckt*"}else if(po<=.85){dg="y";dv="Hoch*"}else if(po<=1){dg="o";dv="Sehr hoch*"}else{dg="r";dv="Nicht gedeckt*"}
       fcfFehlt=true}

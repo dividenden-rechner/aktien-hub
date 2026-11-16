@@ -208,6 +208,10 @@ def main():
         aktien = wert_am(f, "aktien_verw", gj)
         ek = wert_am(f, "eigenkapital", gj)
         ocf, cx = wert_am(f, "operativer_cf", gj), wert_am(f, "capex", gj)
+        cf_basis = str(gj)[:4]   # Geschaeftsjahr, wenn kein TTM-Cashflow vorliegt
+        if tt.get("operativer_cf") is not None and tt.get("capex") is not None:
+            ocf, cx = tt["operativer_cf"], abs(tt["capex"])   # Cashflow der letzten vier Quartale, gleiche Periode wie Gewinn
+            cf_basis = "ttm"
         fcf = ocf - abs(cx) if ocf is not None and cx is not None else None
         bw = kurs * aktien if aktien else None
         o = {"isin": z["isin"], "kurs_eur": k_eur, "boerse": {"DETR": "Xetra", "DGAT": "Tradegate", "DFRA": "Frankfurt"}.get(boerse, boerse), "veraenderung": veraend, "datum": tag, "waehrung": w, "fx": 1.0 if w == "EUR" else rate[w], "gj": gj[:4],
@@ -218,7 +222,7 @@ def main():
              "ausschuettung": r2(dps / eps * 100, 0) if dps and eps and eps > 0 else None,
              "fcf_rendite": r2(fcf / bw * 100) if fcf is not None and bw else None,
              "div_wachstum_5j": cagr(dps_r, 5), "div_wachstum_10j": cagr(dps_r, 9),
-             "dividende_berechnet": "dividende_je_aktie" not in f["k"]}
+             "dividende_berechnet": "dividende_je_aktie" not in f["k"], "cf_basis": cf_basis}
         # Erweiterte Werte fuer den Screener (Geldbetraege zusaetzlich in USD, damit sie vergleichbar sind)
         usd = (rate["USD"] / rate[w]) if w != "EUR" and w in rate else rate.get("USD", 1.0)   # 1 Einheit Berichtswaehrung in USD
         if w == "USD":
@@ -232,6 +236,8 @@ def main():
         def wachs(a, b, n=1):
             return round(((a / b) ** (1 / n) - 1) * 100, 1) if a is not None and b and b > 0 and a > 0 else None
         ums, gew, dg, sch, cash = g("umsatz"), g("gewinn"), g("dividenden_gezahlt"), g("schulden_lang"), g("liquide_mittel")
+        if cf_basis == "ttm" and tt.get("dividenden_gezahlt") is not None:
+            dg = -abs(tt["dividenden_gezahlt"])   # Dividenden der letzten vier Quartale
         eps_a = vj("eps_verw")
         fcf_a = (vj("operativer_cf") - abs(vj("capex"))) if vj("operativer_cf") is not None and vj("capex") is not None else None
         streak = 0
@@ -260,7 +266,7 @@ def main():
             "capex_ocf": r2(abs(cx) / ocf * 100, 1) if cx is not None and ocf and ocf > 0 else None,
             "umsatz_wachstum": wachs(ums, vj("umsatz")), "umsatz_wachstum_3j": wachs(ums, vj("umsatz", 3), 3), "umsatz_wachstum_5j": wachs(ums, vj("umsatz", 5), 5),
             "gewinn_wachstum": wachs(gew, vj("gewinn")), "gewinn_wachstum_5j": wachs(gew, vj("gewinn", 5), 5),
-            "eps_wachstum": wachs(eps, eps_a), "fcf_wachstum": wachs(fcf, fcf_a),
+            "eps_wachstum": wachs(eps, eps_a), "fcf_wachstum": wachs(fcf, fcf_a) if cf_basis != "ttm" else None,
             "div_wachstum_1j": wachs(dps_r[-1][1], dps_r[-2][1]) if len(dps_r) > 1 else None,
             # Ganze Datenreihe (bis 10 Jahre) durchgehend erhoeht: die echte Serie ist vermutlich laenger -> 99 = "9+"
             "dividendenserie": (99 if dps_r and streak >= len(dps_r) - 1 and streak >= 9 else streak) if dps_r else None,

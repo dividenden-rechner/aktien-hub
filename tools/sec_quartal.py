@@ -68,6 +68,41 @@ def quartale(facts, namen, einheit):
     return [[x["end"], x["wert"], x["fp"], x["fy"]] for x in liste]
 
 
+# Cashflow-Posten werden in 10-Q und 10-K kumuliert gemeldet (3, 6, 9 bzw. 12 Monate seit Geschaeftsjahresbeginn)
+KUMULIERT = {
+    "ocf": ["NetCashProvidedByUsedInOperatingActivities", "NetCashProvidedByUsedInOperatingActivitiesContinuingOperations"],
+    "capex": ["PaymentsToAcquirePropertyPlantAndEquipment", "PaymentsToAcquireProductiveAssets"],
+    "div": ["PaymentsOfDividendsCommonStock", "PaymentsOfDividends", "PaymentsOfOrdinaryDividends"],
+}
+DAUER_MONATE = [(80, 100, 3), (170, 200, 6), (260, 290, 9), (350, 380, 12)]
+
+
+def kumuliert(facts, namen):
+    """Liefert [start, end, dauer_monate, wert] je Meldung; neueste Einreichung gewinnt je Zeitraum."""
+    gefunden = {}
+    for name in namen:
+        konzept = facts.get("facts", {}).get("us-gaap", {}).get(name)
+        if not konzept:
+            continue
+        for e in konzept.get("units", {}).get("USD", []):
+            if e.get("form") not in ("10-Q", "10-K") or not e.get("start") or not e.get("end"):
+                continue
+            t = tage(e["start"], e["end"])
+            monate = next((m for lo, hi, m in DAUER_MONATE if lo <= t <= hi), None)
+            if monate is None:
+                continue
+            schluessel = (e["start"], e["end"])
+            alt = gefunden.get(schluessel)
+            if alt and alt["filed"] >= e.get("filed", ""):
+                continue
+            gefunden[schluessel] = {"start": e["start"], "end": e["end"], "m": monate, "wert": e["val"],
+                                    "filed": e.get("filed", "")}
+        if gefunden:
+            break
+    liste = sorted(gefunden.values(), key=lambda x: (x["start"], x["end"]))[-16:]
+    return [[x["start"], x["end"], x["m"], x["wert"]] for x in liste]
+
+
 def main():
     fund = json.load(open("data/sec/fundamentals.json", encoding="utf-8"))["firmen"]
     ausgabe = {}
@@ -84,8 +119,13 @@ def main():
             wert = quartale(facts, namen, einheit)
             if wert:
                 q[metrik] = wert
-        if q:
-            ausgabe[ticker] = {"n": f.get("n", ""), "cik": f["cik"], "quartale": q}
+        kum = {}
+        for metrik, namen in KUMULIERT.items():
+            eintraege = kumuliert(facts, namen)
+            if eintraege:
+                kum[metrik] = eintraege
+        if q or kum:
+            ausgabe[ticker] = {"n": f.get("n", ""), "cik": f["cik"], "quartale": q, "kumuliert": kum}
         time.sleep(0.15)   # SEC: hoechstens etwa zehn Anfragen je Sekunde
         if i % 50 == 0:
             print(i, "Firmen verarbeitet", flush=True)
@@ -93,6 +133,7 @@ def main():
     json.dump({"stand": datetime.date.today().isoformat(),
                "quelle": "SEC EDGAR companyfacts (10-Q, letzte 8 Quartale)",
                "einheiten": {k: v[0] for k, v in KONZEPTE.items()},
+               "kumuliert_einheit": "USD (Cashflow, kumuliert seit Geschaeftsjahresbeginn)",
                "firmen": ausgabe},
               open("data/sec/quartal.json", "w", encoding="utf-8"), ensure_ascii=False, separators=(",", ":"))
     print(len(ausgabe), "Firmen mit Quartalsdaten;", len(fehler), "ohne Abruf:", ", ".join(fehler[:30]))
