@@ -8,8 +8,11 @@ category: Rechtsstreit
 logo_name: "Intel"
 logo_symbol: INTC
 logo_file: assets/logos/intc.png
+image: /assets/magazin/intel-aufmacher.jpg
+image_alt: "Intel-Hauptquartier in Santa Clara mit Intel-Werbung an der Glasfassade"
+image_credit: "Foto: Intel"
+image_source: "https://www.intel.com"
 ---
-<!-- PRÜFEN: Aufmacher und CEO-Foto fehlen. Intel-Newsroom bietet ein Porträt von Lip-Bu Tan zum Download an (download.intel.com/newsroom/2023/bio/images/Intel-Lip-Bu-Tan.jpg), ohne ausdrückliche Lizenz. Von hier nicht erreichbar. Bitte das Bild liefern oder über die Foto-Anfrage suchen lassen. -->
 <!-- PRÜFEN: Quelle der Klage ist die Mitteilung der Kanzlei Robbins Geller über Dow Jones (Wall Street Journal, 16.11.2026). Intel hat laut Bericht noch nicht geantwortet. -->
 
 !!! kurz "Kurz gesagt"
@@ -27,6 +30,10 @@ Die Aktie fiel am 30. Oktober um 28,6 %, nachdem Intel die Zahlen für das dritt
 Die Klage argumentiert, Intel habe drei Dinge verschwiegen: das Ausmaß der PC-Schwäche, den Lagerüberhang und Lieferengpässe, die die Produktion für Rechenzentren begrenzten. Der Nutzen aus dem KI-Boom sei durch den PC-Rückgang mehr als aufgezehrt worden. Die Kläger vertreten Aktionäre, die die Aktie zwischen dem 23. Juli und dem 29. Oktober 2026 besaßen.
 
 Konzernchef Lip-Bu Tan sagte im Gespräch mit Analysten, er sei von Fertigungsproblemen, Lieferengpässen und einer „beispiellosen Speicherknappheit“ enttäuscht. Diese Aussage belegt, dass Intel die Probleme selbst benannt hat. Die Kläger müssen nachweisen, dass der Konzern das Ausmaß schon früher kannte und trotzdem verschwieg.
+
+![Lip-Bu Tan, CEO von Intel](/assets/magazin/intel-lip-bu-tan.jpg)
+
+Lip-Bu Tan, CEO von Intel. Foto: Intel
 
 ## Warum die Klage nicht überrascht
 
