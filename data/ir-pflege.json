@@ -1,0 +1,13 @@
+{
+  "stand": "2026-11-16",
+  "hinweis": "Cashflow aus Investor-Relations-Unterlagen, wenn die SEC-Daten im Hub noch nicht bis zu diesem Geschäftsende reichen. tools/kennzahlen.py nimmt diese Werte, bis die SEC-Daten denselben Zeitraum haben. Dann wird verglichen (Ergebnis in data/ir-pruefung.json): bei Übereinstimmung zählt die SEC, bei Abweichung bleibt der IR-Wert.",
+  "firmen": {
+    "TSN": {
+      "periode_ende": "2026-10-03",
+      "ocf_mio": 2433,
+      "capex_mio": 770,
+      "geschaeftsjahr": "2026",
+      "quelle": "Tyson Foods, Supplemental Information Q4 Fiscal 2026 (16.11.2026), Folien 'Free Cash Flow Non-GAAP Reconciliation' und 'Strong Cash Management' (über Quartr)"
+    }
+  }
+}

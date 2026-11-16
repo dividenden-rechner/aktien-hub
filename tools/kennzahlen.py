@@ -142,6 +142,11 @@ def main():
         PFLEGE = json.load(open("data/reit-pflege.json", encoding="utf-8")).get("firmen", {})   # manuelle Werte fuer einzelne REITs
     except Exception:
         PFLEGE = {}
+    try:
+        IRP = json.load(open("data/ir-pflege.json", encoding="utf-8")).get("firmen", {})   # Cashflow aus Investor-Relations-Unterlagen, bis die SEC-Daten den Zeitraum haben
+    except Exception:
+        IRP = {}
+    IRPRUEF = {}   # Vergleich IR gegen SEC, wenn beide denselben Zeitraum haben
     kurse = json.load(open("data/kurse/xetra-letzter.json"))
     isin = json.load(open("data/kurse/isin-zuordnung.json"))
     fx = ezb_kurse()
@@ -216,6 +221,29 @@ def main():
         if tt.get("operativer_cf") is not None and tt.get("capex") is not None:
             ocf, cx = tt["operativer_cf"], abs(tt["capex"])   # Cashflow der letzten vier Quartale, gleiche Periode wie Gewinn
             cf_basis = "ttm"
+        ir = IRP.get(t)
+        if ir and w == "USD":
+            sec_ende = TTM.get(t, {}).get("letztes_quartal") or ""
+            if sec_ende > ir["periode_ende"]:   # SEC hat den Zeitraum inzwischen: IR-Wert ersetzt, Vergleich festhalten
+                IRPRUEF[t] = {"periode": ir["periode_ende"], "status": "durch SEC ersetzt", "sec_periode": sec_ende}
+            elif sec_ende == ir["periode_ende"] and tt.get("operativer_cf") is not None:
+                s_ocf, s_cx = tt["operativer_cf"], abs(tt["capex"])
+                ab = round(((s_ocf - ir["ocf_mio"] * 1e6) / (ir["ocf_mio"] * 1e6)) * 100, 2) if ir["ocf_mio"] else None
+                ab_cx = round(((s_cx - ir["capex_mio"] * 1e6) / (ir["capex_mio"] * 1e6)) * 100, 2) if ir["capex_mio"] else None
+                ok = ab is not None and abs(ab) <= 1 and ab_cx is not None and abs(ab_cx) <= 1
+                IRPRUEF[t] = {"periode": ir["periode_ende"], "status": "bestaetigt" if ok else "abweichung",
+                              "ocf_sec_mio": round(s_ocf / 1e6), "ocf_ir_mio": ir["ocf_mio"], "ocf_abweichung_proz": ab,
+                              "capex_sec_mio": round(s_cx / 1e6), "capex_ir_mio": ir["capex_mio"], "capex_abweichung_proz": ab_cx}
+                if ok:
+                    ocf, cx = s_ocf, s_cx          # SEC bestaetigt: SEC bleibt Quelle
+                    cf_basis = "ttm"
+                    IRPRUEF[t]["quelle"] = "SEC"
+                    ir = None
+            if ir and (sec_ende < ir["periode_ende"] or IRPRUEF.get(t, {}).get("status") == "abweichung"):   # SEC noch nicht so weit oder abweichend: IR-Wert verwenden
+                ocf, cx = ir["ocf_mio"] * 1e6, ir["capex_mio"] * 1e6
+                cf_basis = "ir"
+                IRPRUEF.setdefault(t, {"periode": ir["periode_ende"], "status": "nur IR (SEC noch ohne diesen Zeitraum)", "sec_periode": sec_ende})
+                IRPRUEF[t]["quelle"] = ir.get("quelle", "")
         fcf = ocf - abs(cx) if ocf is not None and cx is not None else None
         bw = kurs * aktien if aktien else None
         o = {"isin": z["isin"], "kurs_eur": k_eur, "boerse": {"DETR": "Xetra", "DGAT": "Tradegate", "DFRA": "Frankfurt"}.get(boerse, boerse), "veraenderung": veraend, "datum": tag, "waehrung": w, "fx": 1.0 if w == "EUR" else rate[w], "gj": gj[:4],
@@ -432,6 +460,8 @@ def main():
         o["schulden_ek"] = o["bdc"]["verschuldung"] or o.get("schulden_ek")
     asien_werte(out, rate, tag)
     modellwerte(out)
+    json.dump({"stand": tag, "hinweis": "Vergleich der Investor-Relations-Cashflow-Werte mit den SEC-Daten, sobald beide denselben Zeitraum haben. Bei Abweichung gilt der IR-Wert.", "firmen": IRPRUEF},
+              open("data/ir-pruefung.json", "w", encoding="utf-8"), ensure_ascii=False, indent=1)
     json.dump({"stand": tag, "ezb_kurs_vom": fx_tag,
                "hinweis": "Kurs: Xetra-Schluss (Deutsche Börse, 15 Min. verzögert). Kennzahlen: letztes Geschäftsjahr laut SEC-Bericht; Kurs per EZB-Referenzkurs in die Berichtswährung umgerechnet.",
                "werte": out}, open("data/kennzahlen.json", "w"), ensure_ascii=False, separators=(",", ":"))
