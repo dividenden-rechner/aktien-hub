@@ -1,0 +1,12 @@
+{
+ "stand": "2026-11-13",
+ "hinweis": "Vergleich der Investor-Relations-Cashflow-Werte mit den SEC-Daten, sobald beide denselben Zeitraum haben. Bei Abweichung gilt der IR-Wert.",
+ "firmen": {
+  "TSN": {
+   "periode": "2026-10-03",
+   "status": "nur IR (SEC noch ohne diesen Zeitraum)",
+   "sec_periode": "2026-06-27",
+   "quelle": "Tyson Foods, Supplemental Information Q4 Fiscal 2026 (16.11.2026), Folien 'Free Cash Flow Non-GAAP Reconciliation' und 'Strong Cash Management' (über Quartr)"
+  }
+ }
+}
