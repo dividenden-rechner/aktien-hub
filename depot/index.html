@@ -1038,7 +1038,7 @@ table.dt{border-collapse:collapse;width:100%;font-size:.9rem;min-width:620px}
     return body + ((10 - sum % 10) % 10);
   }
   /* WKN -> ISIN für Titel ohne ISIN im Import (Consors). Quellen: Kennzahlen-Daten, Wertpapierseiten (justETF, Börse Stuttgart, Commerzbank) */
-  var WKN_ISIN = { "A14TU4": "US5007541064", "A12DFH": "CH0244767585", "A2QJX9": "US74767V1098", "A3E3UN": "US35834F1049", "A0M430": "LU0323578657" };
+  var WKN_ISIN = { "A14TU4": "US5007541064", "A12DFH": "CH0244767585", "A2QJX9": "US74767V1098", "A3E3UN": "US35834F1049", "A0M430": "LU0323578657", "765974": "GRS419003009" };
   async function refreshEigen(still) {
     if (RUN.busy || S.demo) return;
     var keys = activeKeys(); if (!keys.length) return;
