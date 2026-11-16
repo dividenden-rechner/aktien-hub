@@ -7,7 +7,7 @@ MAP = {'umsatz':('umsatz',M),'jahresueberschuss':('gewinn',M),'eps':('eps_verw',
        'ebt':('ergebnis_vor_steuer',M),'eigenkapitalrendite_pct':('eigenkapitalrendite',1)}
 LAND = {'DE':'DE','PA':'FR','AS':'NL','L':'GB','SW':'CH','MC':'ES','MI':'IT','ST':'SE','OL':'NO','CO':'DK','HE':'FI','BR':'BE','VI':'AT','LS':'PT','IR':'IE','T':'JP','HK':'HK','SI':'SG','TA':'IL','AT':'GR','AX':'AU'}
 out = {}
-for land in ('de','fr','uk','ch','es','it','nl','se','no','dk','fi','be','at','pt','ie','jp','hk','sg','il','gr','au'):
+for land in ('de','gefluester','fr','uk','ch','es','it','nl','se','no','dk','fi','be','at','pt','ie','jp','hk','sg','il','gr','au'):
     p = f'data/{land}/boerse-de-reihen.json'
     if not os.path.exists(p): continue
     d = json.load(open(p, encoding='utf-8'))
@@ -18,7 +18,7 @@ for land in ('de','fr','uk','ch','es','it','nl','se','no','dk','fi','be','at','p
             vals = [[f'{j}-12-31', round(v*fac, 4) if fac != 1 else v] for j, v in zip(jahre, f.get(src) or []) if v is not None]
             if vals: k[dst] = vals
         e = {'n': f['name'], 'isin': f.get('isin'), 'land': LAND.get(sym.split('.')[-1], ''), 'gj': f'{jahre[-1]}-12-31',
-             'w': f.get('waehrung') or d.get('waehrung') or 'EUR', 'quelle': 'boerse.de', 'k': k}
+             'w': f.get('waehrung') or d.get('waehrung') or 'EUR', 'quelle': d.get('quelle_kurz', 'boerse.de'), 'k': k}
         if f.get('hinweis'): e['hinweis'] = f['hinweis']
         if f.get('dividende_waehrung') and f['dividende_waehrung'] != e['w']: e['dps_w'] = f['dividende_waehrung']   # Dividende in anderer Waehrung als der Bericht
         out[sym] = e
@@ -37,7 +37,7 @@ if os.path.exists(zp):
                 if v is not None: alt[f'{j}-12-31'] = round(v*M, 4)
             if alt: e['k'][dst] = sorted([d, v] for d, v in alt.items())
         if z.get('hinweis'): e['hinweis'] = (e.get('hinweis', '') + ' ' + z['hinweis']).strip()
-        e['quelle'] = 'boerse.de, Cashflow und Bilanz: Jahresabschlüsse'
+        e['quelle'] = 'boerse.de, Cashflow und Bilanz: Jahresabschlüsse' if e['quelle'] == 'boerse.de' else e['quelle'] + ', Cashflow aus Aggregator'
 os.makedirs('data/boerse-de', exist_ok=True)
 json.dump({'stand': __import__('datetime').date.today().isoformat(), 'quelle': 'boerse.de Fundamentalanalyse', 'firmen': out},
           open('data/boerse-de/fundamentals.json', 'w', encoding='utf-8'), ensure_ascii=False, separators=(',', ':'))

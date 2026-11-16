@@ -1,0 +1,448 @@
+{
+"stand": "2026-11-16",
+"quelle": "boersengefluester.de (Aggregator, Stand 16.11.2026)",
+"einheit": "Mio € (je Aktie in €)",
+"jahre": [
+2019,
+2020,
+2021,
+2022,
+2023,
+2024,
+2025
+],
+"hinweis": "Aggregatordaten, nicht gegen Geschäftsberichte geprüft.",
+"firmen": {
+"TLX.DE": {
+"name": "Talanx AG",
+"isin": "DE000TLX1005",
+"umsatz": [
+39494,
+41109,
+45507,
+53431,
+43237,
+48150,
+48994
+],
+"jahresueberschuss": [
+1671,
+1196,
+1730,
+2461,
+2545,
+3284,
+3888
+],
+"ebt": [
+null,
+null,
+null,
+null,
+null,
+null,
+null
+],
+"dividendenausschuettung": [
+null,
+null,
+null,
+null,
+null,
+null,
+null
+],
+"eigenkapital": [
+null,
+null,
+null,
+null,
+null,
+null,
+null
+],
+"eps": [
+3.65,
+2.66,
+4.0,
+4.63,
+6.21,
+7.65,
+9.6
+],
+"dividende_je_aktie": [
+1.5,
+1.5,
+1.6,
+2.0,
+2.35,
+2.7,
+3.6
+],
+"aktien_mio": [
+null,
+null,
+null,
+null,
+null,
+null,
+null
+],
+"eigenkapitalrendite_pct": [
+null,
+null,
+null,
+null,
+null,
+null,
+null
+],
+"hinweis": "Quelle boersengefluester.de (Aggregator), nicht gegen Geschäftsbericht geprüft. Umsatzrückgang 2023 vermutlich Umstellung auf IFRS 17, prüfen. Eigenkapital und Investitionen fehlen."
+},
+"KBX.DE": {
+"name": "Knorr-Bremse AG",
+"isin": "DE000KBX1006",
+"umsatz": [
+6936.53,
+6156.75,
+6705.64,
+7149.74,
+7925.61,
+7883.2,
+7817.3
+],
+"jahresueberschuss": [
+632.02,
+532.17,
+647.37,
+506.26,
+576.2,
+477.3,
+572.0
+],
+"ebt": [
+null,
+null,
+null,
+null,
+null,
+null,
+null
+],
+"dividendenausschuettung": [
+null,
+null,
+null,
+null,
+null,
+null,
+null
+],
+"eigenkapital": [
+null,
+null,
+null,
+null,
+null,
+null,
+null
+],
+"eps": [
+3.65,
+3.07,
+3.85,
+3.03,
+3.43,
+2.76,
+3.31
+],
+"dividende_je_aktie": [
+1.8,
+1.52,
+1.85,
+1.45,
+1.64,
+1.75,
+1.9
+],
+"aktien_mio": [
+null,
+null,
+null,
+null,
+null,
+null,
+null
+],
+"eigenkapitalrendite_pct": [
+null,
+null,
+null,
+null,
+null,
+null,
+null
+],
+"hinweis": "Quelle boersengefluester.de, Unternehmensangaben, nicht gegen Geschäftsbericht geprüft. Eigenkapital und Investitionen fehlen."
+},
+"DWS.DE": {
+"name": "DWS Group GmbH & Co. KGaA",
+"isin": "DE000DWS1007",
+"umsatz": [
+null,
+null,
+2720,
+2712,
+2603,
+2765,
+3009
+],
+"jahresueberschuss": [
+null,
+null,
+782,
+595,
+553,
+658,
+928
+],
+"ebt": [
+null,
+null,
+null,
+null,
+null,
+null,
+null
+],
+"dividendenausschuettung": [
+null,
+null,
+null,
+null,
+null,
+null,
+null
+],
+"eigenkapital": [
+null,
+null,
+null,
+null,
+null,
+null,
+null
+],
+"eps": [
+null,
+null,
+3.9,
+2.97,
+2.76,
+3.25,
+4.64
+],
+"dividende_je_aktie": [
+null,
+null,
+2.0,
+2.05,
+6.1,
+2.2,
+3.0
+],
+"aktien_mio": [
+null,
+null,
+null,
+null,
+null,
+null,
+null
+],
+"eigenkapitalrendite_pct": [
+null,
+null,
+null,
+null,
+null,
+null,
+null
+],
+"hinweis": "Quelle boersengefluester.de, nicht geprüft. Dividende 2023 mit 6,10 EUR ist auffällig (vermutlich Sonderausschüttung), vor Verwendung prüfen. Umsatz und Ergebnis ab 2021 vorhanden."
+},
+"LHA.DE": {
+"name": "Deutsche Lufthansa AG",
+"isin": "DE0008232125",
+"umsatz": [
+null,
+null,
+null,
+null,
+35442,
+37581,
+39597
+],
+"jahresueberschuss": [
+null,
+null,
+null,
+null,
+1689,
+1393,
+1363
+],
+"ebt": [
+null,
+null,
+null,
+null,
+null,
+null,
+null
+],
+"dividendenausschuettung": [
+null,
+null,
+null,
+null,
+null,
+null,
+null
+],
+"eigenkapital": [
+null,
+null,
+null,
+null,
+null,
+null,
+null
+],
+"eps": [
+null,
+null,
+null,
+null,
+1.4,
+1.15,
+1.12
+],
+"dividende_je_aktie": [
+null,
+null,
+null,
+null,
+0.3,
+0.3,
+0.33
+],
+"aktien_mio": [
+null,
+null,
+null,
+null,
+null,
+null,
+null
+],
+"eigenkapitalrendite_pct": [
+null,
+null,
+null,
+null,
+null,
+null,
+null
+],
+"hinweis": "Quelle boersengefluester.de, nicht geprüft. Vor 2023 keine Werte. Eigenkapital und Investitionen fehlen."
+},
+"SRT3.DE": {
+"name": "Sartorius AG",
+"isin": "DE0007165607",
+"umsatz": [
+null,
+null,
+3449.22,
+4174.7,
+3395.7,
+3380.7,
+3538.1
+],
+"jahresueberschuss": [
+null,
+null,
+426.98,
+655.4,
+290.0,
+137.4,
+230.4
+],
+"ebt": [
+null,
+null,
+null,
+null,
+null,
+null,
+null
+],
+"dividendenausschuettung": [
+null,
+null,
+null,
+null,
+null,
+null,
+null
+],
+"eigenkapital": [
+null,
+null,
+null,
+null,
+null,
+null,
+null
+],
+"eps": [
+null,
+null,
+8.08,
+9.57,
+4.94,
+4.05,
+4.78
+],
+"dividende_je_aktie": [
+null,
+null,
+1.25,
+1.43,
+0.73,
+0.73,
+0.73
+],
+"aktien_mio": [
+null,
+null,
+null,
+null,
+null,
+null,
+null
+],
+"eigenkapitalrendite_pct": [
+null,
+null,
+null,
+null,
+null,
+null,
+null
+],
+"hinweis": "Quelle boersengefluester.de, nicht geprüft. Zahlen zur Stammaktie (DE0007165607); der MDAX-Eintrag führt die Vorzugsaktie DE0007165631, Klasse vor Verwendung klären. Vor 2021 keine Werte."
+}
+},
+"quelle_kurz": "boersengefluester.de"
+}
