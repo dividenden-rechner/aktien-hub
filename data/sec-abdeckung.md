@@ -1,6 +1,6 @@
 # SEC-Fundamentaldaten: Abdeckung (Stand 2026-11-16)
 
-Firmen mit Daten: **544** von 546. Kernkennzahlen (Umsatz, Gewinn, EPS, Dividende je Aktie, operativer Cashflow) vollständig und aktuell: **507**.
+Firmen mit Daten: **545** von 547. Kernkennzahlen (Umsatz, Gewinn, EPS, Dividende je Aktie, operativer Cashflow) vollständig und aktuell: **508**.
 
 „Aktuell“ heißt: Wert für das letzte Geschäftsjahr der Firma vorhanden. Firmen ohne Dividende zählen bei der Dividende nicht als Lücke.
 
@@ -8,29 +8,29 @@ Nach IFRS (Auslandsfirmen, Beträge in Berichtswährung): 29. Dividende je Aktie
 
 | Kennzahl | mit Daten | davon aktuell |
 |---|---:|---:|
-| umsatz | 534 (98%) | 525 (97%) |
-| gewinn | 544 (100%) | 543 (100%) |
-| eps_verw | 529 (97%) | 518 (95%) |
-| dividende_je_aktie | 402 (74%) | 363 (67%) |
-| dividenden_gezahlt | 462 (85%) | 444 (82%) |
-| operativer_cf | 542 (100%) | 541 (99%) |
-| capex | 518 (95%) | 492 (90%) |
+| umsatz | 535 (98%) | 526 (97%) |
+| gewinn | 545 (100%) | 544 (100%) |
+| eps_verw | 530 (97%) | 519 (95%) |
+| dividende_je_aktie | 403 (74%) | 364 (67%) |
+| dividenden_gezahlt | 463 (85%) | 445 (82%) |
+| operativer_cf | 543 (100%) | 542 (99%) |
+| capex | 519 (95%) | 493 (90%) |
 | aktienrueckkauf | 507 (93%) | 437 (80%) |
-| aktien_verw | 531 (98%) | 522 (96%) |
+| aktien_verw | 532 (98%) | 523 (96%) |
 | schulden_lang | 501 (92%) | 478 (88%) |
-| liquide_mittel | 543 (100%) | 542 (100%) |
-| eigenkapital | 543 (100%) | 543 (100%) |
-| bruttogewinn | 243 (45%) | 204 (38%) |
-| operatives_ergebnis | 450 (83%) | 415 (76%) |
-| abschreibungen | 524 (96%) | 518 (95%) |
-| zinsaufwand | 496 (91%) | 403 (74%) |
-| steuern | 538 (99%) | 533 (98%) |
-| bilanzsumme | 543 (100%) | 543 (100%) |
+| liquide_mittel | 544 (100%) | 543 (100%) |
+| eigenkapital | 544 (100%) | 544 (100%) |
+| bruttogewinn | 243 (45%) | 204 (37%) |
+| operatives_ergebnis | 451 (83%) | 416 (76%) |
+| abschreibungen | 525 (96%) | 519 (95%) |
+| zinsaufwand | 497 (91%) | 404 (74%) |
+| steuern | 539 (99%) | 533 (98%) |
+| bilanzsumme | 544 (100%) | 544 (100%) |
 | umlaufvermoegen | 451 (83%) | 448 (82%) |
 | kurzfr_verbindl | 451 (83%) | 448 (82%) |
-| verbindlichkeiten | 404 (74%) | 393 (72%) |
+| verbindlichkeiten | 405 (74%) | 394 (72%) |
 | vorraete | 342 (63%) | 318 (58%) |
-| gewinnruecklagen | 522 (96%) | 516 (95%) |
+| gewinnruecklagen | 523 (96%) | 517 (95%) |
 | schulden_kurz | 435 (80%) | 356 (65%) |
 
 ## Lücken bei Kernkennzahlen (37)
@@ -73,7 +73,7 @@ Nach IFRS (Auslandsfirmen, Beträge in Berichtswährung): 29. Dividende je Aktie
 - VMRK (Vivmark Residential, GJ 2025): umsatz
 - XEL (XCEL ENERGY INC, GJ 2025): umsatz
 
-## Ersatz-Namen und Split-Bereinigungen (153)
+## Ersatz-Namen und Split-Bereinigungen (154)
 
 - AAPL: Split 1:4 zwischen 2017 und 2018 bereinigt
 - AAPL: Split 1:7 zwischen 2011 und 2012 bereinigt
@@ -181,6 +181,7 @@ Nach IFRS (Auslandsfirmen, Beträge in Berichtswährung): 29. Dividende je Aktie
 - NFLX: Split 1:10 zwischen 2022 und 2023 bereinigt
 - NKE: Split 1:2 zwischen 2013 und 2014 bereinigt
 - NKE: Split 1:2 zwischen 2010 und 2011 bereinigt
+- NNN capex: PaymentsToAcquireRealEstateHeldForInvestment
 - NVDA: Split 1:10 zwischen 2022 und 2023 bereinigt
 - NVDA: Split 1:4 zwischen 2019 und 2020 bereinigt
 - NVO: Split 1:2 zwischen 2020 und 2021 bereinigt
