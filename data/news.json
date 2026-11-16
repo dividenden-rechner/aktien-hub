@@ -1,6 +1,141 @@
 {
- "updated": "2026-11-16T06:29:18.509396+00:00",
+ "updated": "2026-11-16T19:36:40.906964+00:00",
  "items": [
+  {
+   "sym": "IBM",
+   "name": "IBM",
+   "title": "IBM and AMD accelerate quantum error correction decoding at scale",
+   "link": "https://newsroom.ibm.com/blog-pelagos-accelerates-quantum-error-correction-decoding-at-scale",
+   "date": "2026-11-16T16:07:00+00:00",
+   "text": "New open-source tool from IBM and AMD helps researchers evaluate quantum error-correction decoders at scale for future fault-tolerant quantum systems. Key takeaways: IBM and AMD released Pelagos,...",
+   "quelle": "RSS"
+  },
+  {
+   "sym": "NVDA",
+   "name": "Nvidia",
+   "title": "Lambda Boosts AI Factory Resiliency and Efficiency With NVIDIA Photonics",
+   "link": "https://blogs.nvidia.com/blog/lambda-photonics/",
+   "date": "2026-11-16T16:00:51+00:00",
+   "text": "",
+   "quelle": "RSS"
+  },
+  {
+   "sym": "NVDA",
+   "name": "Nvidia",
+   "title": "NVIDIA Expands Slurm to Bring Quantum Computing Into Supercomputing",
+   "link": "https://blogs.nvidia.com/blog/slurm-quantum-computing-supercomputing/",
+   "date": "2026-11-16T16:00:47+00:00",
+   "text": "",
+   "quelle": "RSS"
+  },
+  {
+   "sym": "NVDA",
+   "name": "Nvidia",
+   "title": "NVIDIA Sweeps MLPerf Training and Endpoints as Vera Rubin Debuts With Leading Performance",
+   "link": "https://blogs.nvidia.com/blog/mlperf-training-endpoints-vera-rubin/",
+   "date": "2026-11-16T16:00:25+00:00",
+   "text": "",
+   "quelle": "RSS"
+  },
+  {
+   "sym": "NVDA",
+   "name": "Nvidia",
+   "title": "NVIDIA CUDA-X Libraries Give Agents the Tools to Accelerate Scientific Discovery",
+   "link": "https://blogs.nvidia.com/blog/cuda-x-libraries-agents-accelerate-scientific-discovery/",
+   "date": "2026-11-16T16:00:16+00:00",
+   "text": "",
+   "quelle": "RSS"
+  },
+  {
+   "sym": "NVDA",
+   "name": "Nvidia",
+   "title": "CUDA at 20: How the Platform Transformed Scientific Computing",
+   "link": "https://blogs.nvidia.com/blog/20-years-cuda/",
+   "date": "2026-11-16T16:00:11+00:00",
+   "text": "",
+   "quelle": "RSS"
+  },
+  {
+   "sym": "NVDA",
+   "name": "Nvidia",
+   "title": "NVIDIA Announces Rubin HPC — A New GPU to Accelerate Agents for Science, Engineering and Analytics",
+   "link": "https://blogs.nvidia.com/blog/rubin-hpc/",
+   "date": "2026-11-16T16:00:01+00:00",
+   "text": "",
+   "quelle": "RSS"
+  },
+  {
+   "sym": "IBM",
+   "name": "IBM",
+   "title": "IBM, Fermilab, and NVIDIA Announce Plans for New Co-Design Platform to Accelerate the Development of Next-Generation, Modular Quantum Computers",
+   "link": "https://newsroom.ibm.com/campaign?item=3068",
+   "date": "2026-11-16T16:00:00+00:00",
+   "text": "IBM (NYSE: IBM) today announced plans to collaborate with NVIDIA and Fermi National Accelerator Laboratory (Fermilab) to advance the integration of quantum and classical computing and explore how these technologies can scale together in the modular architectures that will define fault-tolerant quantum computers.",
+   "quelle": "RSS"
+  },
+  {
+   "sym": "NVDA",
+   "name": "Nvidia",
+   "title": "NVIDIA Announces Collaboration With IBM and Fermi National Accelerator Laboratory to Launch Quantum-Classical Codesign Platform, Plus Error-Correction Breakthrough to Advance Practical Quantum Computing",
+   "link": "https://nvidianews.nvidia.com/news/nvidia-announces-collaboration-with-ibm-and-fermi-national-accelerator-laboratory-to-launch-quantum-classical-codesign-platform-plus-error-correction-breakthrough-to-advance-practical-quantum-computing",
+   "date": "2026-11-16T16:00:00+00:00",
+   "text": "",
+   "quelle": "RSS"
+  },
+  {
+   "sym": "NVDA",
+   "name": "Nvidia",
+   "title": "NVIDIA Expands Vera CPU Platform to Accelerate Scientific Discovery",
+   "link": "https://nvidianews.nvidia.com/news/nvidia-expands-vera-cpu-platform-to-accelerate-scientific-discovery",
+   "date": "2026-11-16T16:00:00+00:00",
+   "text": "",
+   "quelle": "RSS"
+  },
+  {
+   "sym": "NVDA",
+   "name": "Nvidia",
+   "title": "NVIDIA Introduces Nemotron for Science to Accelerate Discoveries With Agents",
+   "link": "https://nvidianews.nvidia.com/news/nvidia-introduces-nemotron-for-science-to-accelerate-discoveries-with-agents",
+   "date": "2026-11-16T16:00:00+00:00",
+   "text": "",
+   "quelle": "RSS"
+  },
+  {
+   "sym": "XOM",
+   "name": "Exxon Mobil",
+   "title": "ExxonMobil starts production at Uaru, raising Guyana’s installed capacity to 1.1 million barrels per day",
+   "link": "https://investor.exxonmobil.com/company-information/press-releases/detail/1216/exxonmobil-starts-production-at-uaru-raising-guyanas",
+   "date": "2026-11-16T15:19:00+00:00",
+   "text": "",
+   "quelle": "RSS"
+  },
+  {
+   "sym": "SAP.DE",
+   "name": "SAP",
+   "title": "SAP Completes Acquisition of TechWolf",
+   "link": "https://news.sap.com/2026/11/sap-completes-acquisition-of-techwolf/",
+   "date": "2026-11-16T15:00:00+00:00",
+   "text": "WALLDORF — SAP has completed the acquisition of the AI work intelligence platform provider.",
+   "quelle": "RSS"
+  },
+  {
+   "sym": "BT-A.L",
+   "name": "BT Group",
+   "title": "From live football to blockbuster games: building a network for Britain’s biggest digital moments",
+   "link": "https://newsroom.bt.com/from-live-football-to-blockbuster-games-building-a-network-for-britains-biggest-digital-moments/",
+   "date": "2026-11-16T14:57:09+00:00",
+   "text": "By Luciano Oliveira, Managing Director Products, Consumer, BT",
+   "quelle": "RSS"
+  },
+  {
+   "sym": "XOM",
+   "name": "Exxon Mobil",
+   "title": "ExxonMobil: Cash tender offers to purchase certain outstanding notes",
+   "link": "https://investor.exxonmobil.com/company-information/press-releases/detail/1215/exxonmobil-cash-tender-offers-to-purchase-certain",
+   "date": "2026-11-16T14:00:00+00:00",
+   "text": "",
+   "quelle": "RSS"
+  },
   {
    "sym": "8053.T",
    "name": "Sumitomo Corp",
@@ -8,6 +143,71 @@
    "link": "http://localhost/-/media/Files/hq/news/release/2026/21830/21830_en.pdf",
    "date": "2026-11-16T13:30:00+00:00",
    "text": "",
+   "quelle": "RSS"
+  },
+  {
+   "sym": "CAP.PA",
+   "name": "Capgemini",
+   "title": "From AI ambition to real CX impact: Why transformation must remain human-led",
+   "link": "https://www.capgemini.com/insights/expert-perspectives/from-ai-ambition-to-real-cx-impact-why-transformation-must-remain-human-led/",
+   "date": "2026-11-16T13:14:32+00:00",
+   "text": "At ServiceNow Knowledge 2026, leaders from Capgemini, ServiceNow, Sage, and DHL shared how successful CX transformation depends on connecting AI with people, processes, data, and governance to deliver measurable business outcomes.\nThe post From AI ambition to real CX impact: Why transformation must remain human-led appeared first on Capgemini.",
+   "quelle": "RSS"
+  },
+  {
+   "sym": "JNJ",
+   "name": "Johnson & Johnson",
+   "title": "Johnson & Johnson to acquire Ollin Biosciences and late-stage bispecific antibody with best-in-class potential in ophthalmology",
+   "link": "https://www.investor.jnj.com/investor-news/news-details/2026/Johnson--Johnson-to-acquire-Ollin-Biosciences-and-late-stage-bispecific-antibody-with-best-in-class-potential-in-ophthalmology/default.aspx",
+   "date": "2026-11-16T13:00:00+00:00",
+   "text": "",
+   "quelle": "RSS"
+  },
+  {
+   "sym": "WMT",
+   "name": "Walmart",
+   "title": "Führungswechsel",
+   "link": "https://www.sec.gov/Archives/edgar/data/104169/000010416926000165/wmt-20261113.htm",
+   "date": "2026-11-16T12:58:13+00:00",
+   "text": "",
+   "quelle": "SEC",
+   "kat": "Führungswechsel",
+   "form": "8-K"
+  },
+  {
+   "sym": "SAP.DE",
+   "name": "SAP",
+   "title": "Order Management Built Straight into SAP",
+   "link": "https://news.sap.com/2026/11/order-management-built-straight-into-sap-dataxstream/",
+   "date": "2026-11-16T12:15:00+00:00",
+   "text": "The fewer systems you have to stitch together, the fewer things there are to break.",
+   "quelle": "RSS"
+  },
+  {
+   "sym": "VZ",
+   "name": "Verizon",
+   "title": "Cool tech gifts for kids and teens",
+   "link": "https://www.verizon.com/about/parenting/cool-tech-gifts-kids-and-teens",
+   "date": "2026-11-16T11:31:24+00:00",
+   "text": "Tech gifts for kids and teens by age, plus how to get the Gizmo Watch 4 on us with a new line on an Unlimited watch plan.",
+   "quelle": "RSS"
+  },
+  {
+   "sym": "VZ",
+   "name": "Verizon",
+   "title": "Ready for Cyber Five? Quick tips to avoid online shopping scams",
+   "link": "https://www.verizon.com/about/parenting/online-shopping-scams",
+   "date": "2026-11-16T11:31:24+00:00",
+   "text": "Cyber Five brings lots of deals and plenty of opportunities for online shopping scams. Learn online shopping safety tips to help your family shop safely this holiday season.",
+   "quelle": "RSS"
+  },
+  {
+   "sym": "6981.T",
+   "name": "Murata",
+   "title": "Murata Introduces New Series of Isolated DC-DC Converters for High-Voltage SiC Gate Drives",
+   "link": "https://www.murata.com/en-global/news/power/isolated-gate-drive-power/2026/1116",
+   "date": "2026-11-16T09:00:00+00:00",
+   "text": "Murata Manufacturing Co., Ltd. introduces the MGJ2T2 series of 2W SIP isolated gate-drive DC-DC converters for high-voltage silicon carbide (SiC) power applications.",
    "quelle": "RSS"
   },
   {
@@ -166,6 +366,15 @@
    "quelle": "RSS"
   },
   {
+   "sym": "HEN3.DE",
+   "name": "Henkel",
+   "title": "Henkel receives “Building Public Trust Award”",
+   "link": "https://www.henkel.com/press-and-media/press-releases-and-kits/2026-11-13-henkel-receives-building-public-trust-award-2275216",
+   "date": "2026-11-12T23:00:00+00:00",
+   "text": "",
+   "quelle": "RSS"
+  },
+  {
    "sym": "XOM",
    "name": "Exxon Mobil",
    "title": "ExxonMobil Advances Next Phase of Guyana Development with Longtail",
@@ -234,7 +443,7 @@
    "sym": "AMZN",
    "name": "Amazon",
    "title": "Min Jin Lee’s Contemporary Epic American Hagwon Selected as Amazon’s Best Book of 2026",
-   "link": "https://press.aboutamazon.com/books-and-authors/2026/11/min-jin-lees-contemporary-epic-american-hagwon-selected-as-amazons-best-book-of-2026",
+   "link": "https://press.aboutamazon.com/2026/11/min-jin-lees-contemporary-epic-american-hagwon-selected-as-amazons-best-book-of-2026",
    "date": "2026-11-12T14:15:00+00:00",
    "text": "With hundreds of Editor favorites across categories — from Romance to new additions like Buzzworthy and Horror — Amazon's Best Books of 2026 list has something for every reader this holiday season",
    "quelle": "RSS"
@@ -243,7 +452,7 @@
    "sym": "AMZN",
    "name": "Amazon",
    "title": "Min Jin Lee’s Contemporary Epic American Hagwon Selected as Amazon’s Best Book of 2026",
-   "link": "https://press.aboutamazon.com/2026/11/min-jin-lees-contemporary-epic-american-hagwon-selected-as-amazons-best-book-of-2026",
+   "link": "https://press.aboutamazon.com/books-and-authors/2026/11/min-jin-lees-contemporary-epic-american-hagwon-selected-as-amazons-best-book-of-2026",
    "date": "2026-11-12T14:15:00+00:00",
    "text": "With hundreds of Editor favorites across categories — from Romance to new additions like Buzzworthy and Horror — Amazon's Best Books of 2026 list has something for every reader this holiday season",
    "quelle": "RSS"
@@ -649,15 +858,6 @@
    "quelle": "RSS"
   },
   {
-   "sym": "NVDA",
-   "name": "Nvidia",
-   "title": "NVIDIA Expands Open Source Commitment With OpenShell Donation and New AI Infrastructure",
-   "link": "https://blogs.nvidia.com/blog/open-source-openshell-infrastructure/",
-   "date": "2026-11-10T16:00:03+00:00",
-   "text": "",
-   "quelle": "RSS"
-  },
-  {
    "sym": "SY1.DE",
    "name": "Symrise",
    "title": "Symrise AG announces Chief Financial Officer transition and extension of Walter Ribeiro’s Executive Board appointment",
@@ -714,15 +914,6 @@
    "form": "6-K"
   },
   {
-   "sym": "IBM",
-   "name": "IBM",
-   "title": "IBM and Microsoft Announce a New AI Agent Platform Designed for Industry-Specific Transformation",
-   "link": "https://newsroom.ibm.com/campaign?item=3056",
-   "date": "2026-11-10T13:06:00+00:00",
-   "text": "IBM (NYSE: IBM) and Microsoft (NASDAQ: MSFT) today announced Imagine Enterprise, an agentic platform designed to help enterprises build, run, and govern AI agents that help people execute industry-specific processes. IBM Consulting and Microsoft have combined their technologies and expertise with forward-deployed engineering support for qualifying engagements to help enterprises accelerate AI deployment.",
-   "quelle": "RSS"
-  },
-  {
    "sym": "MSFT",
    "name": "Microsoft",
    "title": "IBM and Microsoft announce a new AI agent platform designed for industry-specific transformation",
@@ -756,15 +947,6 @@
    "link": "https://www.home.sandvik/en/news-and-media/news/2026/11/susanne-norgren-awarded-polhem-prize-for-groundbreaking-materials-innovation2/",
    "date": "2026-11-10T12:08:49+00:00",
    "text": "Susanne Norgren, Group Expert at Sandvik, has been awarded the 2026 Polhem Prize (Polhemspriset) for a material innovation that has revolutionized the global rock drilling industry. The Polhem Prize is Sweden's oldest and one of its most prestigious engineering awards.",
-   "quelle": "RSS"
-  },
-  {
-   "sym": "IBM",
-   "name": "IBM",
-   "title": "IBM Impact Accelerator Brings AI and Quantum to the Future of Learning and Work",
-   "link": "https://newsroom.ibm.com/campaign?item=3053",
-   "date": "2026-11-10T12:03:00+00:00",
-   "text": "IBM (NYSE: IBM) today announced four organizations selected for the new education and workforce development cohort of the IBM Impact Accelerator, a pro bono social innovation program that provides grants of IBM technology and expertise to help nonprofit and government organizations to design, develop and scale technology-enabled solutions to challenges facing communities around the world.",
    "quelle": "RSS"
   },
   {
@@ -945,15 +1127,6 @@
    "quelle": "RSS"
   },
   {
-   "sym": "NVDA",
-   "name": "Nvidia",
-   "title": "Practice Makes Precise: At CoRL, NVIDIA and Partners Reveal How Robots Rehearse Delicate Work in Simulation",
-   "link": "https://blogs.nvidia.com/blog/robotics-simulation-advancements-corl/",
-   "date": "2026-11-09T14:00:01+00:00",
-   "text": "",
-   "quelle": "RSS"
-  },
-  {
    "sym": "SAP.DE",
    "name": "SAP",
    "title": "Oliva Cigar: Crafting a Digital Legacy for the Next Century",
@@ -965,17 +1138,17 @@
   {
    "sym": "SAP.DE",
    "name": "SAP",
-   "title": "SAP Recognized as a Leader in the 2026 Gartner® Magic Quadrant™ for Cloud ERP for Product-Centric Enterprises",
-   "link": "https://news.sap.com/2026/11/sap-a-leader-2026-gartner-magic-quadrant-cloud-erp-product-centric-enterprises/",
-   "date": "2026-11-09T12:15:00+00:00",
+   "title": "SAP Recognized as a Leader in the 2026 Gartner® Magic Quadrant™ for Cloud ERP for Service-Centric Enterprises",
+   "link": "https://news.sap.com/2026/11/sap-a-leader-2026-gartner-magic-quadrant-cloud-erp-service-centric-enterprises/",
+   "date": "2026-11-09T12:16:00+00:00",
    "text": "This is the fifth consecutive year SAP is a Leader.",
    "quelle": "RSS"
   },
   {
    "sym": "SAP.DE",
    "name": "SAP",
-   "title": "SAP Recognized as a Leader in the 2026 Gartner® Magic Quadrant™ for Cloud ERP for Service-Centric Enterprises",
-   "link": "https://news.sap.com/2026/11/sap-a-leader-2026-gartner-magic-quadrant-cloud-erp-service-centric-enterprises/",
+   "title": "SAP Recognized as a Leader in the 2026 Gartner® Magic Quadrant™ for Cloud ERP for Product-Centric Enterprises",
+   "link": "https://news.sap.com/2026/11/sap-a-leader-2026-gartner-magic-quadrant-cloud-erp-product-centric-enterprises/",
    "date": "2026-11-09T12:15:00+00:00",
    "text": "This is the fifth consecutive year SAP is a Leader.",
    "quelle": "RSS"
@@ -1035,65 +1208,11 @@
    "quelle": "RSS"
   },
   {
-   "sym": "NVDA",
-   "name": "Nvidia",
-   "title": "NVIDIA Announces New Planned Investments in Korean Startups at the MSIT-NVIDIA AI Startup Partnership Forum",
-   "link": "https://blogs.nvidia.com/blog/korean-startup-investments-msit/",
-   "date": "2026-11-09T08:00:53+00:00",
-   "text": "",
-   "quelle": "RSS"
-  },
-  {
-   "sym": "SAP.DE",
-   "name": "SAP",
-   "title": "Interview with Manish Prasad: “Touch Any Growth Lever in India and You’ll Find SAP There”",
-   "link": "https://news.sap.com/2026/11/interview-with-manish-prasad-sap-india/",
-   "date": "2026-11-09T05:15:00+00:00",
-   "text": "SAP India President and MD Manish Prasad makes the case for why India is becoming a strategically important market in SAP's global story.",
-   "quelle": "RSS"
-  },
-  {
-   "sym": "NVDA",
-   "name": "Nvidia",
-   "title": "Korea Advances Physical AI Across Industries With NVIDIA",
-   "link": "https://blogs.nvidia.com/blog/korea-physical-ai-ecosystem/",
-   "date": "2026-11-09T05:00:40+00:00",
-   "text": "",
-   "quelle": "RSS"
-  },
-  {
-   "sym": "NVDA",
-   "name": "Nvidia",
-   "title": "Korea’s AI Ecosystem Advances and Secures Agentic AI With NVIDIA",
-   "link": "https://blogs.nvidia.com/blog/korea-secure-agentic-ai/",
-   "date": "2026-11-09T05:00:39+00:00",
-   "text": "",
-   "quelle": "RSS"
-  },
-  {
-   "sym": "NVDA",
-   "name": "Nvidia",
-   "title": "From Chips to Skills, NVIDIA and Korea Expand Sovereign AI Collaboration",
-   "link": "https://blogs.nvidia.com/blog/korea-sovereign-ai-collaboration/",
-   "date": "2026-11-09T05:00:04+00:00",
-   "text": "",
-   "quelle": "RSS"
-  },
-  {
-   "sym": "NVDA",
-   "name": "Nvidia",
-   "title": "NVIDIA Dynamo Recipes Bring Korea’s Leading Open Models to Production",
-   "link": "https://blogs.nvidia.com/blog/nvidia-dynamo-korea-open-models/",
-   "date": "2026-11-09T05:00:00+00:00",
-   "text": "",
-   "quelle": "RSS"
-  },
-  {
-   "sym": "NVDA",
-   "name": "Nvidia",
-   "title": "NVIDIA, Rebellions and SK Telecom Announce Collaboration to Advance Sovereign AI Infrastructure With NVIDIA NVLink Fusion",
-   "link": "https://nvidianews.nvidia.com/news/nvidia-rebellions-and-sk-telecom-announce-collaboration-to-advance-sovereign-ai-infrastructure-with-nvidia-nvlink-fusion",
-   "date": "2026-11-09T05:00:00+00:00",
+   "sym": "005930.KS",
+   "name": "Samsung Electronics",
+   "title": "Samsung Celebrates 100,000 Smart Signage Flip Displays Sold in Germany",
+   "link": "https://news.samsung.com/global/samsung-celebrates-100000-smart-signage-flip-displays-sold-in-germany",
+   "date": "2026-11-09T08:00:00+00:00",
    "text": "",
    "quelle": "RSS"
   },
@@ -1131,15 +1250,6 @@
    "link": "https://www.henkel.com/press-and-media/press-releases-and-kits/2026-11-09-high-performance-thermal-grease-from-henkel-delivers-for-high-power-applications-2273388",
    "date": "2026-11-08T23:00:00+00:00",
    "text": "Extending its portfolio of thin bond line, low thermal impedance thermal interface materials (TIMs), Henkel today announced the commercialization of Loctite Bergquist TGR 5000SF, a high-performance thermal grease designed for high-power components used in critical markets. Target applications include some of the most vital devices for modern data center, telecom, and power generation infrastructures, including 5G antennas and remote radio units, data center switches, routers, and servers, as well as power devices like IGBTs, motor drives, and power modules.",
-   "quelle": "RSS"
-  },
-  {
-   "sym": "NVDA",
-   "name": "Nvidia",
-   "title": "A Message to Our Company",
-   "link": "https://nvidianews.nvidia.com/news/a-message-to-our-company",
-   "date": "2026-11-08T21:02:00+00:00",
-   "text": "",
    "quelle": "RSS"
   },
   {
@@ -1235,21 +1345,21 @@
    "quelle": "RSS"
   },
   {
-   "sym": "SAP.DE",
-   "name": "SAP",
-   "title": "New Research Finds AI Is Moving Faster Than Organizations Can Adapt",
-   "link": "https://news.sap.com/2026/11/new-economist-enterprise-research-ai-moving-faster-than-organizations-can-adapt/",
-   "date": "2026-11-06T13:15:00+00:00",
-   "text": "A new Economist Enterprise global survey of finance, HR, and supply chain leaders reveals a shared reality.",
-   "quelle": "RSS"
-  },
-  {
    "sym": "GEV",
    "name": "GE Vernova",
    "title": "GE Vernova to support India’s energy transition with 6 GW HVDC transmission project",
    "link": "https://www.gevernova.com/news/press-releases/ge-vernova-support-india-energy-transition-6-gw-hvdc-transmission-project",
    "date": "2026-11-06T11:31:37+00:00",
    "text": "NEW DELHI (6 November 2026) – GE Vernova (NYSE: GEV) today announced it has been officially chosen by PowerGrid Corporation of India Limited (PGCIL) to deliver a critical 6 GW High-Voltage Direct Current (HVDC) transmission corridor. The project was booked in the fourth quarter of 2026",
+   "quelle": "RSS"
+  },
+  {
+   "sym": "005930.KS",
+   "name": "Samsung Electronics",
+   "title": "Samsung Employees Celebrate Diwali With Lights, Color, and Togetherness",
+   "link": "https://news.samsung.com/global/samsung-employees-celebrate-diwali-with-lights-color-and-togetherness",
+   "date": "2026-11-06T08:00:00+00:00",
+   "text": "",
    "quelle": "RSS"
   },
   {
@@ -1307,24 +1417,6 @@
    "quelle": "SEC",
    "kat": "Sonstige Ereignisse",
    "form": "8-K"
-  },
-  {
-   "sym": "VZ",
-   "name": "Verizon",
-   "title": "Verizon offers two months of free home internet plus holiday deals",
-   "link": "https://www.verizon.com/about/news/home-internet-two-months-free-holidays",
-   "date": "2026-11-05T12:27:30+00:00",
-   "text": "New Verizon Fios, Frontier Fiber and 5G Home internet customers get two months of home internet on us. Select plans add a Samsung 43\" TV and Soundbar bundle or $200 toward gift cards for holiday shopping.",
-   "quelle": "RSS"
-  },
-  {
-   "sym": "VZ",
-   "name": "Verizon",
-   "title": "Powering the play: Verizon elevates the NFL gameday experience worldwide",
-   "link": "https://www.verizon.com/about/news/verizon-powers-nfl-gameday-experience",
-   "date": "2026-11-05T12:12:53+00:00",
-   "text": "Verizon is powering the 2026 NFL season through multi-hundred-million-dollar stadium network upgrades and global private wireless expansion across nine international games.",
-   "quelle": "RSS"
   },
   {
    "sym": "MSFT",
@@ -1510,6 +1602,15 @@
    "link": "https://www.santander.com/en/press-room/press-releases/2026/11/six-quantum-and-ai-solutions-for-business-challenges-win-the-santander-x-global-challenge-the-quantum-ai-leap",
    "date": "2026-11-04T08:30:00+00:00",
    "text": "Three Spanish, one German, one British and one U.S. companies have stood out among 440 candidates in this international challenge promoted by Banco Santander together with IBM, Bluzec and Oxentia Foundation.",
+   "quelle": "RSS"
+  },
+  {
+   "sym": "005930.KS",
+   "name": "Samsung Electronics",
+   "title": "Samsung Launches SmartPlan in Singapore With Flexible Payments and Extended Product Care",
+   "link": "https://news.samsung.com/global/samsung-launches-smartplan-in-singapore-with-flexible-payments-and-extended-product-care",
+   "date": "2026-11-04T08:00:00+00:00",
+   "text": "",
    "quelle": "RSS"
   },
   {
@@ -1734,6 +1835,15 @@
    "link": "https://www.wuxibiologics.com/webinars-podcasts/cro/mass-spectrometry-across-the-drug-discovery-funnel/",
    "date": "2026-11-03T08:38:36+00:00",
    "text": "Webinar title: Mass Spectrometry Across the Drug Discovery Funnel: From Structure and Function to In Vivo Insights Abstract: Biologic therapeutics are increasingly complex, with variations in sequence, PTMs, assembly, conjugation, and molecular transformation in vivo. These features can influence candidate quality, function, developability, and the interpretation of exposure. Mass spectrometry (MS) provides the molecular […]",
+   "quelle": "RSS"
+  },
+  {
+   "sym": "005930.KS",
+   "name": "Samsung Electronics",
+   "title": "Samsung Partners With Englesson To Integrate TV Technology Into Swedish Furniture Design",
+   "link": "https://news.samsung.com/global/samsung-partners-with-englesson-to-integrate-tv-technology-into-swedish-furniture-design",
+   "date": "2026-11-03T08:00:00+00:00",
+   "text": "",
    "quelle": "RSS"
   },
   {
@@ -2345,15 +2455,6 @@
    "quelle": "RSS"
   },
   {
-   "sym": "005930.KS",
-   "name": "Samsung Electronics",
-   "title": "Samsung Ranks No. 5 in Interbrand’s ‘Best Global Brands 2026’ for Seventh Consecutive Year",
-   "link": "https://news.samsung.com/global/samsung-ranks-no-5-in-interbrands-best-global-brands-2026-for-seventh-consecutive-year",
-   "date": "2026-10-28T13:39:00+00:00",
-   "text": "",
-   "quelle": "RSS"
-  },
-  {
    "sym": "GEV",
    "name": "GE Vernova",
    "title": "Quartalszahlen",
@@ -2560,15 +2661,6 @@
    "quelle": "RSS"
   },
   {
-   "sym": "005930.KS",
-   "name": "Samsung Electronics",
-   "title": "[Hands-On] Comfort, Convenience, and More: A Day With Galaxy Buds On",
-   "link": "https://news.samsung.com/global/hands-on-comfort-convenience-and-more-a-day-with-galaxy-buds-on",
-   "date": "2026-10-27T08:00:00+00:00",
-   "text": "",
-   "quelle": "RSS"
-  },
-  {
    "sym": "4519.T",
    "name": "Chugai Pharma",
    "title": "Chugai Announces 2026 3rd Quarter Results",
@@ -2634,30 +2726,12 @@
    "form": "8-K"
   },
   {
-   "sym": "HEN3.DE",
-   "name": "Henkel",
-   "title": "Henkel introduces next-generation light cure adhesives for medical device assembly",
-   "link": "https://www.henkel.com/press-and-media/press-releases-and-kits/2026-10-26-henkel-introduces-next-generation-light-cure-adhesives-for-medical-device-assembly-2260396",
-   "date": "2026-10-26T10:00:00+00:00",
-   "text": "",
-   "quelle": "RSS"
-  },
-  {
    "sym": "BT-A.L",
    "name": "BT Group",
    "title": "BT Work Ready programme helps Llanelli pupils build skills for future careers",
    "link": "https://newsroom.bt.com/bt-work-ready-programme-helps-llanelli-pupils-build-skills-for-future-careers/",
    "date": "2026-10-26T09:00:00+00:00",
    "text": "Young people in Llanelli have been putting their creativity and problem-solving abilities to the test as part of an interactive BT event helping pupils prepare for the changing world of work.",
-   "quelle": "RSS"
-  },
-  {
-   "sym": "005930.KS",
-   "name": "Samsung Electronics",
-   "title": "[Interview] Sound That Connects: 80 Years of Audio and the Future of Connected Experiences",
-   "link": "https://news.samsung.com/global/interview-sound-that-connects-80-years-of-audio-and-the-future-of-connected-experiences",
-   "date": "2026-10-26T08:00:00+00:00",
-   "text": "",
    "quelle": "RSS"
   },
   {
@@ -2789,15 +2863,6 @@
    "quelle": "RSS"
   },
   {
-   "sym": "005930.KS",
-   "name": "Samsung Electronics",
-   "title": "Inside JBL Playback Gallery: 80 Years of Sound Innovation",
-   "link": "https://news.samsung.com/global/inside-jbl-playback-gallery-80-years-of-sound-innovation",
-   "date": "2026-10-23T08:00:00+00:00",
-   "text": "",
-   "quelle": "RSS"
-  },
-  {
    "sym": "9433.T",
    "name": "KDDI",
    "title": "Apology Regarding the Grassland Fire of 8 October 2026 in Mongolia's Nömrög Nature Reserve",
@@ -2905,15 +2970,6 @@
    "link": "https://www.gevernova.com/news/press-releases/ge-vernova-foundation-marks-milestone-first-staffordshire-students-begin-engineers",
    "date": "2026-10-22T12:45:07+00:00",
    "text": "STAFFORDSHIRE, UK – October 22, 2026 – The GE Vernova Foundation today celebrated the official launch of Engineers of Change in Staffordshire, with the first students beginning programming this week. The launch event brought together GE Vernova leadership, local officials, and community partners to",
-   "quelle": "RSS"
-  },
-  {
-   "sym": "JNJ",
-   "name": "Johnson & Johnson",
-   "title": "Johnson & Johnson Reports First Real-World VARIPULSE Pro Platform Data and 12-Month OMNYPULSE Platform Outcomes for Atrial Fibrillation Treatment at APHRS 2026",
-   "link": "https://www.investor.jnj.com/investor-news/news-details/2026/Johnson--Johnson-Reports-First-Real-World-VARIPULSE-Pro-Platform-Data-and-12-Month-OMNYPULSE-Platform-Outcomes-for-Atrial-Fibrillation-Treatment-at-APHRS-2026/default.aspx",
-   "date": "2026-10-22T11:45:00+00:00",
-   "text": "",
    "quelle": "RSS"
   },
   {
@@ -3437,15 +3493,6 @@
    "link": "https://www.gevernova.com/news/press-releases/net-zero-without-compromising-reliability-ge-vernova-shows-how-spain-can-design",
    "date": "2026-10-14T20:13:02+00:00",
    "text": "MADRID, SPAIN (15 October 2026) – Spain has emerged as one of Europe’s leading renewable energy markets, with renewables supplying nearly 57% of electricity in 2025 and more than 80% renewable electricity expected by 2030. But as renewable penetration accelerates and electricity demand is projected",
-   "quelle": "RSS"
-  },
-  {
-   "sym": "CAP.PA",
-   "name": "Capgemini",
-   "title": "Human in the loop",
-   "link": "https://www.capgemini.com/insights/expert-perspectives/human-in-the-loop/",
-   "date": "2026-10-14T09:06:53+00:00",
-   "text": "The post Human in the loop appeared first on Capgemini.",
    "quelle": "RSS"
   },
   {
@@ -4340,34 +4387,16 @@
    "quelle": "SEC",
    "kat": "Mitteilung (Reg FD)",
    "form": "8-K"
-  },
-  {
-   "sym": "8053.T",
-   "name": "Sumitomo Corp",
-   "title": "Sumitomo Corporation to Sell Part of Its Stake in Gas-Fired Power Generation Business in Thailand",
-   "link": "http://localhost/en/jp/news/release/2026/group/21640",
-   "date": "2026-09-17T10:00:00+00:00",
-   "text": "",
-   "quelle": "RSS"
-  },
-  {
-   "sym": "CS.PA",
-   "name": "AXA",
-   "title": "AXA Launches an Online Risk Prevention Program for Youth",
-   "link": "https://www.axa.com/en/press/press-releases/axa-launches-an-online-risk-prevention-program-for-youth",
-   "date": "2026-09-17T09:30:00+00:00",
-   "text": "AXA announces the launch of Safe Cyber Space, an initiative aimed at raising awareness and equipping teenagers, their parents, and educators to face digital challenges, amid rising online risks. Led by AXA and with support from the AXA Foundation for Human Progress over the next three years, this project brings together UNICEF, Simplon Foundation, and everyone.AI with a shared goal: to better protect young people online.\nThe program will address key risks associated with digital use, such as phishing, cyber bullying, fake news, digital addiction, and the integration of best practices for Artificial Intelligence in education.\nOverall, the initiative aims to reach over 15,000 middle school students through in-person sessions and nearly 3 million adults and children across France, Spain, and Portugal through national campaigns. The goal is to make Safe Cyber Space one of Europe’s most extensive awareness programs on these topics.\nThe project is also supported by France’s High Commissioner for Children, Sarah El Haïry, and Najat Maalla M’jid, UN Secretary-General’s Special Rapporteur on Violence Against Children.\nThis partnership will focus on three main areas, combining awareness, research, and training:\nRaising Awareness Among Youth and Adults about Major Risks\nResources from Cybervengers.club, a series of educational mangas created by AXA, will be gradually deployed to 15,000 young people in partnership with Simplon Foundation through face-to-face sessions at schools and community centers. Additionally, UNICEF, an organization dedicated to child protection, will promote this awareness campaign within its networks in France. Finally, dedicated training sessions will be organized for parents, teachers, educators, and AXA employees in France and Spain to help them detect early warning signs and provide initial solutions.\nNational Campaigns and Studies to Better Understand Digital Usage\nThrough discussion groups, UNICEF will conduct in-depth research on digital habits of target audiences, aiming to publish strategic reports for policymakers and economic stakeholders. These will inform public policies and private initiatives to enhance online child protection.\nTraining for Parents and Educators\neveryone.AI will actively contribute to developing online training modules dedicated to parents and educators. These educational contents will be progressively developed and deployed to AXA employees, partners, and the general public.\nThis partnership aligns with AXA’s commitment to fostering a safer and more responsible digital environment, consistent with the Group’s mission: to protect what matters.",
-   "quelle": "RSS"
   }
  ],
  "errors": [
   {
    "sym": "PEP",
-   "fehler": "HTTP Error 402: Payment Required"
+   "fehler": "HTTP Error 429: Too Many Requests"
   },
   {
    "sym": "PG",
-   "fehler": "HTTP Error 402: Payment Required"
+   "fehler": "HTTP Error 429: Too Many Requests"
   },
   {
    "sym": "LLY",
@@ -4379,15 +4408,15 @@
   },
   {
    "sym": "PFE",
-   "fehler": "HTTP Error 402: Payment Required"
+   "fehler": "HTTP Error 429: Too Many Requests"
   },
   {
    "sym": "MRK",
-   "fehler": "HTTP Error 402: Payment Required"
+   "fehler": "HTTP Error 429: Too Many Requests"
   },
   {
    "sym": "O",
-   "fehler": "HTTP Error 402: Payment Required"
+   "fehler": "HTTP Error 429: Too Many Requests"
   },
   {
    "sym": "V",
