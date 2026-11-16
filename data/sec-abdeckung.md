@@ -1,4 +1,4 @@
-# SEC-Fundamentaldaten: Abdeckung (Stand 2026-11-15)
+# SEC-Fundamentaldaten: Abdeckung (Stand 2026-11-16)
 
 Firmen mit Daten: **544** von 546. Kernkennzahlen (Umsatz, Gewinn, EPS, Dividende je Aktie, operativer Cashflow) vollständig und aktuell: **507**.
 
@@ -12,7 +12,7 @@ Nach IFRS (Auslandsfirmen, Beträge in Berichtswährung): 29. Dividende je Aktie
 | gewinn | 544 (100%) | 543 (100%) |
 | eps_verw | 529 (97%) | 518 (95%) |
 | dividende_je_aktie | 402 (74%) | 363 (67%) |
-| dividenden_gezahlt | 459 (84%) | 440 (81%) |
+| dividenden_gezahlt | 462 (85%) | 444 (82%) |
 | operativer_cf | 542 (100%) | 541 (99%) |
 | capex | 518 (95%) | 492 (90%) |
 | aktienrueckkauf | 507 (93%) | 437 (80%) |
@@ -73,12 +73,14 @@ Nach IFRS (Auslandsfirmen, Beträge in Berichtswährung): 29. Dividende je Aktie
 - VMRK (Vivmark Residential, GJ 2025): umsatz
 - XEL (XCEL ENERGY INC, GJ 2025): umsatz
 
-## Ersatz-Namen und Split-Bereinigungen (149)
+## Ersatz-Namen und Split-Bereinigungen (153)
 
 - AAPL: Split 1:4 zwischen 2017 und 2018 bereinigt
 - AAPL: Split 1:7 zwischen 2011 und 2012 bereinigt
+- ACGL dividenden_gezahlt: DividendsCommonStockCash
 - ACGL: Split 1:3 zwischen 2015 und 2016 bereinigt
 - ADP capex: PaymentsToAcquireOtherPropertyPlantAndEquipment
+- ADSK dividenden_gezahlt: DividendsCommonStockCash
 - AFL schulden_lang: DebtInstrumentCarryingAmount
 - AFL: Split 1:2 zwischen 2015 und 2016 bereinigt
 - AMZN: Split 1:20 zwischen 2019 und 2020 bereinigt
@@ -143,6 +145,7 @@ Nach IFRS (Auslandsfirmen, Beträge in Berichtswährung): 29. Dividende je Aktie
 - FCX: Split 1:2 zwischen 2007 und 2008 bereinigt
 - FISV: Split 1:2 zwischen 2015 und 2016 bereinigt
 - FISV: Split 1:2 zwischen 2010 und 2011 bereinigt
+- FRT dividenden_gezahlt: DividendsCommonStockCash
 - FTNT: Split 1:5 zwischen 2019 und 2020 bereinigt
 - GILD: Split 1:2 zwischen 2009 und 2010 bereinigt
 - GS schulden_lang: DebtLongtermAndShorttermCombinedAmount
@@ -214,6 +217,7 @@ Nach IFRS (Auslandsfirmen, Beträge in Berichtswährung): 29. Dividende je Aktie
 - TSCO: Split 1:5 zwischen 2021 und 2022 bereinigt
 - TSCO: Split 1:2 zwischen 2010 und 2011 bereinigt
 - UNP: Split 1:2 zwischen 2011 und 2012 bereinigt
+- VTRS dividenden_gezahlt: DividendsCommonStockCash
 - VTRS: Split 1:2 zwischen 2020 und 2021 bereinigt
 - WAB: Split 1:2 zwischen 2018 und 2019 bereinigt
 - WAB: Split 1:2 zwischen 2010 und 2011 bereinigt
