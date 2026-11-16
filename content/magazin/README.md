@@ -16,10 +16,12 @@ Datei anklicken, dann Stift-Symbol: Zeile `draft: true` löschen und speichern, 
 | 29.10.2026 22:42 | Amazon steigert Umsatz im dritten Quartal auf 201,9 Milliarden Dollar | [79738970_2026-10-29/7757_2242-amazon-q3-2026-zahlen.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/79738970_2026-10-29/7757_2242-amazon-q3-2026-zahlen.md) |
 | 29.10.2026 10:12 | Shell erzielt im dritten Quartal 10,8 Milliarden Dollar Gewinn | [79738970_2026-10-29/8987_1012-shell-q3-2026-ergebnisse.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/79738970_2026-10-29/8987_1012-shell-q3-2026-ergebnisse.md) |
 
-### Online (397)
+### Online (399)
 
 | Datum | Titel | Datei |
 |---|---|---|
+| 16.11.2026 20:04 | Henry Schein senkt bereinigte Gewinnprognose für 2026 auf 5,42 bis 5,48 US-Dollar | [79738883_2026-11-16/7995_2004-henry-schein-prognose-anpassung-2026.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/79738883_2026-11-16/7995_2004-henry-schein-prognose-anpassung-2026.md) |
+| 16.11.2026 20:03 | AstraZeneca erhält EU-Zulassungsempfehlung für Blutdruckmittel Baxfendy | [79738883_2026-11-16/7996_2003-astrazeneca-baxfendy-eu-zulassungsempfehlung.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/79738883_2026-11-16/7996_2003-astrazeneca-baxfendy-eu-zulassungsempfehlung.md) |
 | 16.11.2026 15:40 | Intel: Sammelklage nach Kurssturz von 29 %, Vorwurf: PC-Schwäche verschwiegen | [79738883_2026-11-16/8977_1030-intel-sammelklage.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/79738883_2026-11-16/8977_1030-intel-sammelklage.md) |
 | 16.11.2026 13:40 | Tyson Foods: Rindfleisch drückt den Gewinn, der freie Cashflow steigt um 41 % | [79738883_2026-11-16/8976_1029-tyson-foods-q4-2026.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/79738883_2026-11-16/8976_1029-tyson-foods-q4-2026.md) |
 | 16.11.2026 13:17 | Subaru zielt auf höhere Sparsamkeit im Vergleich zu bisherigen Antrieben: 228-PS-Boxermotor für 2026 überarbeitet | [79738883_2026-11-16/8682_1317-subaru-boxermotor-hybrid-2026-brz.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/79738883_2026-11-16/8682_1317-subaru-boxermotor-hybrid-2026-brz.md) |

@@ -1009,6 +1009,15 @@
    "quelle": "https://www.sec.gov/Archives/edgar/data/1163165/000116316526000043/cop-20261105x8kexx991.htm"
   },
   {
+   "sym": "TSN",
+   "name": "Tyson Foods",
+   "art": "dividende_exdatum",
+   "datum": "2026-12-01",
+   "betrag": "0.52",
+   "waehrung": "USD",
+   "quelle": "https://www.sec.gov/Archives/edgar/data/100493/000010049326000077/tsn2026q4exh-991.htm"
+  },
+  {
    "sym": "LRCX",
    "name": "Lam Research",
    "art": "dividende_exdatum",
@@ -1214,6 +1223,15 @@
    "betrag": "0.60",
    "waehrung": "USD",
    "quelle": "https://www.sec.gov/Archives/edgar/data/1811074/000181107426000075/exhibit991q32026earningsre.htm"
+  },
+  {
+   "sym": "TSN",
+   "name": "Tyson Foods",
+   "art": "dividende_zahltag",
+   "datum": "2026-12-15",
+   "betrag": "0.52",
+   "waehrung": "USD",
+   "quelle": "https://www.sec.gov/Archives/edgar/data/100493/000010049326000077/tsn2026q4exh-991.htm"
   },
   {
    "sym": "UDR",
@@ -1495,6 +1513,15 @@
    "quelle": "https://www.sec.gov/Archives/edgar/data/811809/000119312526456620/d62587d6k.htm"
   },
   {
+   "sym": "TSN",
+   "name": "Tyson Foods",
+   "art": "dividende_exdatum",
+   "datum": "2027-03-01",
+   "betrag": "0.52",
+   "waehrung": "USD",
+   "quelle": "https://www.sec.gov/Archives/edgar/data/100493/000010049326000077/tsn2026q4exh-991.htm"
+  },
+  {
    "sym": "TSM",
    "name": "Taiwan Semiconductor Manufacturing Co Ltd",
    "art": "dividende_exdatum",
@@ -1502,6 +1529,15 @@
    "betrag": "9.0",
    "waehrung": "NTD",
    "quelle": "https://www.sec.gov/Archives/edgar/data/1046179/000104617926000797/tsm-boardx202611xx.htm"
+  },
+  {
+   "sym": "TSN",
+   "name": "Tyson Foods",
+   "art": "dividende_zahltag",
+   "datum": "2027-03-15",
+   "betrag": "0.52",
+   "waehrung": "USD",
+   "quelle": "https://www.sec.gov/Archives/edgar/data/100493/000010049326000077/tsn2026q4exh-991.htm"
   },
   {
    "sym": "TSM",

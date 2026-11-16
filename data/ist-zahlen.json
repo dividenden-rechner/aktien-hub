@@ -1729,6 +1729,16 @@
    "revenue": 5800000000.0,
    "waehrung": "JPY",
    "quelle": "https://www.sec.gov/Archives/edgar/data/1022837/000119312526459157/d120588d6k.htm"
+  },
+  {
+   "sym": "TSN",
+   "name": "Tyson Foods",
+   "datum": "2026-11-16",
+   "eps": 0.61,
+   "eps_basis": "bereinigt",
+   "revenue": 14585000000.0,
+   "waehrung": "USD",
+   "quelle": "https://www.sec.gov/Archives/edgar/data/100493/000010049326000077/tsn2026q4exh-991.htm"
   }
  ]
 }
