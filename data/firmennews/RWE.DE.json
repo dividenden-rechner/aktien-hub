@@ -1,9 +1,16 @@
 {
  "hub": "RWE.DE",
  "name": "RWE",
- "stand": "2026-11-15",
+ "stand": "2026-11-16",
  "quelle": "Google News (Wirtschaftsmedien, deutsch und englisch)",
  "meldungen": [
+  {
+   "titel": "Uniper: Noch drei Bieter im Rennen um verstaatlichten Energiekonzern",
+   "quelle": "Manager Magazin",
+   "link": "https://news.google.com/rss/articles/CBMi7gFBVV95cUxQOFFSd3l3YWw2ajBBdHo1ME5KNlpOQWFFYlI4cUo5Z0VlUGdidnQwNWJTbnNLYjRJMVV4cUF0V1FEZjFIa29oakxFSUJzVkI2bnZ6S2gwa01qQUF1QktseTBsazN3eTZtbXM4REZOVlc3QjRXMUlLWEtTb0RBWE9SdEpzd3JYOEFVVmdNeVR1S1pnRndFa3pmaEItUGdfdmsxTmtlTjV5R05VLUJHNktQemFQMlI0cnFwOHdlRGtvU09jRE9hV0o3enFNU2lVZWVORDRoLWJTZGFad2MtNFZheHE5T3V5RW1iNUFOUlV3?oc=5",
+   "datum": "2026-11-14",
+   "sprache": "de"
+  },
   {
    "titel": "Germany plans to buy RWE and E.ON's stakes in nuclear firm Urenco, sources say",
    "quelle": "Reuters",
@@ -19,18 +26,18 @@
    "sprache": "de"
   },
   {
-   "titel": "RWE-Aktie steigt: Versorger profitiert von Energiehandel",
-   "quelle": "Manager Magazin",
-   "link": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxOLWxHc3F5alFMU2lhMkVOS0Y1WlZMRzJaTUNTYzc0UDBybTlSLVVlOHNHQ01zNFRUR19GSnF4RWhkOFcyUTIzeF9kcmNhWThpd0w4b0E2NGJMTzNobVJvTEctbDJ3UmFKb1JZMk14UDhWeEVIcXVLYWRZNW1JRzQ3c1EyejF0ZXpjcXlwRnJRcUY3d1U2MWpuTlRVdHljWkhaOXRtdVB5RmtTUTN3bVpOMUp2eFdjcTFPbUZWT0RQYzlNVm12QnBoT201MDBlak5IWFJOSGJzTExMNkRuNHc?oc=5",
+   "titel": "KKR, Germany’s RWE Invest $16 Billion in U.K. Wind-Power Projects",
+   "quelle": "WSJ",
+   "link": "https://news.google.com/rss/articles/CBMipwFBVV95cUxOaldxMGtXXzBtUjFRLXdaU0pIanMzXzJEM19WOVpJSDRzXy1yQm1rRkZ3YlZfeEpOd05XUGNRTXhZNXNJUFdMN0Jyek1MMktpVElTREJ4a2JOU2tkRVBldUNsWmpBbjV4WTl5NXB2NlhSd0p6c1NpV0NZTmZJYjVlR216bGczLWhOVllhaXAyN1lmTUV4QmxJWS1zb1ZpM2RlbHR3VGh0Yw?oc=5",
    "datum": "2026-11-11",
-   "sprache": "de"
+   "sprache": "en"
   },
   {
-   "titel": "RWE will weitere Reservekraftwerke bauen",
-   "quelle": "Börsen-Zeitung",
-   "link": "https://news.google.com/rss/articles/CBMilwFBVV95cUxOdHNNMlo0Q29XX2t4YjVodW1UdlJDemJfcjJWRFdEeEl2X0dGQ2FISkVPSzVDYy02eFM3XzFzN2xBLXhHcWM2Rm1oTURpNnFFVlJ5WlAwTXNUN01yOWQ0UERCZnQxb1dSN2Zqckk5ek9lbnFwQWFHOGZlU2hOcTJpbzBSM19KUUx5T3Q4dDFXVXo4M3JtamI0?oc=5",
+   "titel": "Deal worth £12bn to build windfarms off Norfolk coast",
+   "quelle": "BBC",
+   "link": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE0xbEhoSGgzWjdOd280UkFMOHdEa0Z0SzUzdlQ1UEhURDZiZjhJVGZQYV9lY3hFQmRxYUFHcVpCQTFiMXN4c1FXVm1wLXY3WGtYYlVyeTJsRTVEdGc?oc=5",
    "datum": "2026-11-11",
-   "sprache": "de"
+   "sprache": "en"
   },
   {
    "titel": "RWE, KKR finalise $16 billion investment in UK renewables",
@@ -40,23 +47,16 @@
    "sprache": "en"
   },
   {
-   "titel": "KKR, Germany’s RWE Invest $16 Billion in U.K. Wind-Power Projects",
-   "quelle": "WSJ",
-   "link": "https://news.google.com/rss/articles/CBMipwFBVV95cUxOaldxMGtXXzBtUjFRLXdaU0pIanMzXzJEM19WOVpJSDRzXy1yQm1rRkZ3YlZfeEpOd05XUGNRTXhZNXNJUFdMN0Jyek1MMktpVElTREJ4a2JOU2tkRVBldUNsWmpBbjV4WTl5NXB2NlhSd0p6c1NpV0NZTmZJYjVlR216bGczLWhOVllhaXAyN1lmTUV4QmxJWS1zb1ZpM2RlbHR3VGh0Yw?oc=5",
+   "titel": "RWE posts 9-month core earnings above expectations on favourable conditions",
+   "quelle": "Reuters",
+   "link": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxOd3E3QUlLYU5FdXZoYkV3V1dLakpjVENEN1gya2c0YkNydU1CUEoyOThPRm9JX1ltLVZOWHVILVdndzhqOFFOWk50U2taSzU1RXJGQlRHSHlUSmptYWZoY2JpZW94ZVhGNUlIVnY0UzBFVURHdXNHZmlYbGtpb3h6V1dpNmxadV8xV3NqaVZpNzRUQnZ2ajFJN3B4Ykoyazh4S2NUWG1mdTkzWWxCeVg5VEd4TFBLX1ZGU0Q4NG55OUlXZw?oc=5",
    "datum": "2026-11-11",
    "sprache": "en"
   },
   {
-   "titel": "Data centre demand unbroken despite scrutiny: RWE CFO",
-   "quelle": "CNBC",
-   "link": "https://news.google.com/rss/articles/CBMimwFBVV95cUxNeXV6TEZZaTJmb2IzME9sYXJYd2JlbHlwVTNtcmtJaWU0bE41SDl0RW5hMm5JamZ5X3d4Mkw4SUhVMk53Vy16MTZpSExWTHhHMGxrbjF6bU1CeDEtRThKRzNMSTBwcGV3cDhYcEV4NExvcXNldWJRY2RqUEtHUGJVZ0tacHBKVDdYbWJ5RERfTXU0R3Nkd1JIMUxJdw?oc=5",
-   "datum": "2026-11-11",
-   "sprache": "en"
-  },
-  {
-   "titel": "Deal worth £12bn to build windfarms off Norfolk coast",
-   "quelle": "BBC",
-   "link": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE0xbEhoSGgzWjdOd280UkFMOHdEa0Z0SzUzdlQ1UEhURDZiZjhJVGZQYV9lY3hFQmRxYUFHcVpCQTFiMXN4c1FXVm1wLXY3WGtYYlVyeTJsRTVEdGc?oc=5",
+   "titel": "KKR and RWE are rich firms. Why do they need a UK state loan for their windfarms? | Nils Pratley",
+   "quelle": "The Guardian",
+   "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxQOXdJbHpNelFxSzdaa3pFLUZ0d0Y4VG0xc3FVX3FGN1JIZ1dMMmxleGJWaDlCeUdSZjgwdmdBWF9NZmFpa2R5bm9nS3VrT194cDZ1RW9fOHA3aTBwOUc3VzJyaXc3cDd1blZtdlhhQnZkdWhhMnZiLWFFRTZLZHBBTnJONkpxRzVpSjdxY3d5QktVTFpsUmMyRlBmRWU4eXFrWDZRdzNkVXJsdkR1UEljc1ZJYw?oc=5",
    "datum": "2026-11-11",
    "sprache": "en"
   }

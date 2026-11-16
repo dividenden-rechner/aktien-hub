@@ -1,28 +1,21 @@
 {
  "hub": "ORCL",
  "name": "ORACLE CORP",
- "stand": "2026-11-15",
+ "stand": "2026-11-16",
  "quelle": "Google News (Wirtschaftsmedien, deutsch und englisch)",
  "meldungen": [
   {
+   "titel": "AI Debt Blowups Become Fodder for ETFs Aimed at Retail Investors",
+   "quelle": "Bloomberg",
+   "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxQZlY1TnNTbnlnZ1gwYXRpaTN2UXQwZVcyOUlBS21tSDNTdkhBWE5ubFFVZ2d5d1pscGp0VHBRWi1pZnJKYktNY0kxN29xRF96RkYtbHlfeHNZMkVwaHYxRmZudi1FU1pKX3pibWpBMVFvN3RQVE1QMVZNWkx5aVZEdHNRXzNwZXU3eXhTOFM2SWhrSEM0MEhYOW5hRUQyd2pKdW9xd0F6OUt0NF9tX3V4U2IxSXJrUQ?oc=5",
+   "datum": "2026-11-10",
+   "sprache": "en"
+  },
+  {
    "titel": "Microsoft Winding Down Oracle Deal to Rent AI Cloud Capacity",
-   "quelle": "Bloomberg.com",
+   "quelle": "Bloomberg",
    "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxPeXFhaDRlRjBvZktGaFM2eExYdGpJakRNazYxc2Y2UWoyMDJzS1VFb2Z5ZTNkSVhMRHBTbUdtb25kZHJUdkpRVXRQU1hQVGtIbS1maVNoeGhSZ2pHOGF1aDY3R1AwSTU4TmlmSEdEc19RYlowVXAzc0NlSzdVZ2xBZXduc2FzT3ViQ0xDS3RYdklKMzFnVzRtUkZKQnVBWlBDTWtGcGZUU01ZSktQTG5aOE9lbXE?oc=5",
    "datum": "2026-11-06",
-   "sprache": "en"
-  },
-  {
-   "titel": "Oracle Data Center Developer Waives Key Air Permit Deadline",
-   "quelle": "Bloomberg.com",
-   "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxPUV9SN2taamxXRkRRMVhvZUFQbEttZlJvRmxONTBtdk9NZjBhMmdZZ3pEOFdHdTlkcEI2NEYxaEY3X2tRMkxQZExiRkswdERGblN0dS1NOEtzNmE2cnVzZlNaeDBNZXZ4YUVVNGhfZUtTTm9hMlJTTHdUTG16a3BDOGxRaFROSExZWGlOdGl0dDdtUDloU2FobTgwcURHMXl4ZVNiTUxvc2Y0clhvY0Iw?oc=5",
-   "datum": "2026-11-05",
-   "sprache": "en"
-  },
-  {
-   "titel": "Huang Drops From World’s Top 10 Richest After Chips Selloff",
-   "quelle": "Bloomberg.com",
-   "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxNSV9wemNUMHdoQVROdEFTdE0zLTQxaXJoYS1rT0Zab3d4Nkd5TU00RFVhU21fQm1GcFIzS0Y2RkcxQjBydzlad2V5SXl2Z2xOZmlnY2ZmTHpkSGd2OW9jVnZUVWp5eEdKTnJsQjd6VldGaXZaQm5VUmRFeGhsTTQtZ0JPYTFPMjZYaFlub2xIcDlBcW9fUGpOSktCRXRqLUZUdlRBUnZrN2dQdnBkVWRn?oc=5",
-   "datum": "2026-11-05",
    "sprache": "en"
   }
  ]

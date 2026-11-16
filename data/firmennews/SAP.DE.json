@@ -1,9 +1,24 @@
 {
  "hub": "SAP.DE",
  "name": "SAP",
- "stand": "2026-11-15",
+ "stand": "2026-11-16",
  "quelle": "Google News (Wirtschaftsmedien, deutsch und englisch)",
  "meldungen": [
+  {
+   "titel": "India’s Rise: From Promise to Platform for Global Growth",
+   "quelle": "Unternehmen",
+   "link": "https://news.sap.com/2026/11/india-promise-to-platform-global-growth/",
+   "datum": "2026-11-16",
+   "sprache": "en",
+   "typ": "pm"
+  },
+  {
+   "titel": "AI Startup Dreamteam Raises Capital to Challenge Salesforce, SAP",
+   "quelle": "Bloomberg",
+   "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxOQi10bmVBRE1LOElDMjBnNTh6MnRaZGZ5SU1TMG9HUEwyRlRiU3pUN0RJanRoM1lXMHVYMXJtSXc2c0tPa3h3c2xFREx6d2V2dTJiLTV1amtxV2pZTlF4T3VYMzVaWlBDMFJnaHduSnpJcG5UV3hadGpHaVE4UGRuVnJHTlpvcDE0WThkV3k4YVpMWWRPenkzcXVERlZ6bmh4bzJnRk5meFJuOVNwX0ZUa3lBNlQ?oc=5",
+   "datum": "2026-11-16",
+   "sprache": "en"
+  },
   {
    "titel": "SAP Named a Leader in Two 2026 IDC MarketScapes: Worldwide Warehouse Management for Manufacturing and for Retail",
    "quelle": "Unternehmen",
@@ -29,14 +44,6 @@
    "typ": "pm"
   },
   {
-   "titel": "A Smooth Ride Through Peak Season with Trek Bikes",
-   "quelle": "Unternehmen",
-   "link": "https://news.sap.com/2026/11/a-smooth-ride-through-peak-season-with-trek-bikes/",
-   "datum": "2026-11-12",
-   "sprache": "en",
-   "typ": "pm"
-  },
-  {
    "titel": "SAP-Kontrolleur legt Mandat nach US-Sanktionen nieder",
    "quelle": "Börsen-Zeitung",
    "link": "https://news.google.com/rss/articles/CBMimAFBVV95cUxOUmM1dllHaXdqUlJmcVVxM0VYLVEzVnFOTjRwNERhUTJIbURET3JKZ05yWS11NGh2NjJfVWExRlJQTE5pdHJhbEc1QjkzQ25YcFFnUzJBRFVxTGZscVRnTS05NGR1UmsxZ3N4REZJU3hLc2R0RzRPcExRbzM4R2RmS2FsWTlULWZQSmNtbmh3Wm8wQm1RY3VfdQ?oc=5",
@@ -49,20 +56,6 @@
    "link": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxOM0NMallrVXN5NG9RcFM4ZndVcHR4X1NFc3loem5NTE1qUXFnTVBjTXM1ZFZ1WG5UbDhrd3VJN3NRRW43LUxLeGFqUTh3OWQzU3hEN1BDWTJUR19ESUJWNVdVYWtSSWlYRDBOdXNKTDEwV2xLbVo5bDRGS3RrQ1hrVW8xUGl1Y0E3QjBRbHVFdV9HU2otd1VlQXB5Q2tkcWF0bEVKNXgwaG5hS2NHbDBiMnhGazZnZUtGSklzQXhCaTgwRjJnUzd6RExrMGhnVGdTNS1z?oc=5",
    "datum": "2026-11-11",
    "sprache": "de"
-  },
-  {
-   "titel": "SAP-Finanzchef hält Kündigungsschutz für „größte Handschelle“",
-   "quelle": "Börsen-Zeitung",
-   "link": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxQbVJMVGM4QXlnaGpSaTZobDJCTW9pOXktbVFvdVZlYjlKTnVqSG9Xa3I4dW9tRFl3YUpuR09LWjNWSW9CRDJZRlVDM2Q0bDlDdF94WDJaX1F3NVN2RVJPNi1DMEZ6TE9ON2Nldlh0SThrbTc1V3JBNDQweWtjNlpfaVgteTZyWG1XSzB0aWE3cGJTTV9tdUpRcHd6Z0o0VWt2MGZJUGd1ZHVzR2NIak9kV19XWlZRc2xzSVBCeEZWaElHTUE?oc=5",
-   "datum": "2026-11-11",
-   "sprache": "de"
-  },
-  {
-   "titel": "SAP Touts AI Tools, But the Numbers Are Hard to Find",
-   "quelle": "Bloomberg.com",
-   "link": "https://news.google.com/rss/articles/CBMivgFBVV95cUxObGJROGY3RGcxWmszbnlSRWVjODZ6YkxZVWc2SGFEa0dIWWZkSzR3ZFVPXy1jV1RmQkk4d2VzVnVZeFM4ZEo5Z29NU3c3V2RRWnItSEk4OWlwcnlDYW9IYTY1Sjk0Qm1wLThTVlQwajdRZ0JGWG1iM1lvT1VZbm5zVDJ2N0dEdW0tdXJpdmduVS1ZZ2Zib2tVVGRGMDlkZzNLU2xpZ09yM1hlaXpuaHJfUl9VUm1SU2xKekdJYWpn?oc=5",
-   "datum": "2026-11-11",
-   "sprache": "en"
   }
  ]
 }

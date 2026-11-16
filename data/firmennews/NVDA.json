@@ -1,21 +1,43 @@
 {
  "hub": "NVDA",
  "name": "NVIDIA CORP",
- "stand": "2026-11-15",
+ "stand": "2026-11-16",
  "quelle": "Google News (Wirtschaftsmedien, deutsch und englisch)",
  "meldungen": [
   {
-   "titel": "Juicy 6% Yields Gain Appeal After Nvidia Drama: Credit Weekly",
-   "quelle": "Bloomberg.com",
-   "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxOTzVYbEh2b3Y2SkVCTlRkZXpFWGhVTVNRdUFhWk9XMW1QbEl6X0NyMkdIVFJFQjNlUXd5QjNqeE14eUh0MW41bzYwUmpDemZSZ1BnOHJHRk8taUFtaE5hR0ROc2otbjBaTDJwUE5EbXNrQjlxcjZfSWdrZnNPOV96TWJMQlRNNXdUZUVvcFBVbzl1MlNtUHBCLS1kRWZKSERYOENCbGFCUFhnUUtNMUNF?oc=5",
-   "datum": "2026-11-14",
+   "titel": "AI Day Seoul Brings Together Korea’s Industry Leaders, Startups and Developer Communities",
+   "quelle": "Unternehmen",
+   "link": "https://blogs.nvidia.com/blog/ai-day-seoul-wrapup/",
+   "datum": "2026-11-16",
+   "sprache": "en",
+   "typ": "pm"
+  },
+  {
+   "titel": "The tech world's calls for Jensen Huang to return to Nvidia are growing",
+   "quelle": "CNBC",
+   "link": "https://news.google.com/rss/articles/CBMid0FVX3lxTE4zZGg4VnlWUVpIeXZqdVlBSnRlcHVKbkV0bHhhdlAyYXRXM2pGZ0tTazdBSDVTdjg2bDJVWHFUTW1sNGplSGc0am1CUWNacFlVRDhSaEdSZUY5Tnk3U3JqUG5zV0hEVDI5VTRscXZ1dmV3aGF3azhV0gF8QVVfeXFMTTNNam1SSml6UmxyVDB6T2IyQU93Y2lQbjlRb3ZMQVlqSXllSnQxNzR1QmNSTEo2aTZjUjRKS1lLMTltRTAzZHlOLWpRWGUwS0NxakR2STYzbXh3UTItbDU0X042Y2NMeUFuSlU4bm1PS1VLdHJfZ0dtYXI0Yg?oc=5",
+   "datum": "2026-11-16",
    "sprache": "en"
   },
   {
-   "titel": "The Nvidia board’s artificial independence",
-   "quelle": "Financial Times",
-   "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTE9XOGVLNEFzTGd5Nl9aem9ta3RQbE91Mnh4eGZObjZrVFRzWXhsWUFxZ3NEZ1VuXzlYVlUwS3NSV0ZYMUJxM2ZVR0JNb0wyekNWQ1gtTlhsSENoLUFxd3ZJTlkzMjlsbUlRV3lPQnE5eXg?oc=5",
-   "datum": "2026-11-14",
+   "titel": "US Moves to Curb Remote Access to Nvidia’s Advanced AI Chips",
+   "quelle": "Bloomberg",
+   "link": "https://news.google.com/rss/articles/CBMipgFBVV95cUxQU3diZGZDaW14MTdtajJNSTFnMXF3MWtpODZRZDN3UVVRZXBwQllnQXFRRUFYbTAzQmJkLW1qTDAzZDhyYW54UjdBVjFrZVRzV3JiTVRTdmlybkVtRnZVSWlMTnFvYVp3dkFGeWhUVFdrUE1Na3E0WTVuekRuSm5jN1A2aDBnb1NjYXRhYmJfdjlBQWY1X093Q1hHTDM4ZzNhdlYwNVRn?oc=5",
+   "datum": "2026-11-16",
+   "sprache": "en"
+  },
+  {
+   "titel": "Nvidia Fuels Half of Israel’s Growth as Economy Beats Forecasts",
+   "quelle": "Bloomberg",
+   "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxPbWpyODU4NXRqQXViUUNld0QtalBPc0thWW83TkRzZm5BZUs2OE5STURLdVRXVWRiazBEc0pMZEREQ2ZIVm5LdjRFVEVhQXp1MDJ2WU9INEIzMFR5N0tLc01GbFBncGJmY3dtVU1ydUxwd0daZW11T1Nhd3NMQUdiRS1LakdDeWxtMjg2WVRyMEZsRG5JakVscEowbmJObHo2bnd0dnhPMjhvb3hNenZubmJYYmM?oc=5",
+   "datum": "2026-11-16",
+   "sprache": "en"
+  },
+  {
+   "titel": "US Futures Drop as Market Looks to Nvidia Results, Anthropic IPO",
+   "quelle": "Bloomberg",
+   "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxPcFhFeVFsT0wxMG1zZWtMN1gzNzV5XzN2aUJtclZEa2NaUTN0a2Y3cV83djJMeWZ0Zk5uUThTa2o0SGhQb1NrUGJVWXBLV2xoRzFyUC1mU0s1bXJfekVJaDl2RndqTGJfN0Vkd25OS0JROUNZQ0V3bjJ0b0dkUDIwNlpCcXl4NVpHX3pGQkNCZjZOOFliV0JjaG96NnJVM1BfVDRIa2x1MElXNVZXZ1VHNXdyaXE?oc=5",
+   "datum": "2026-11-16",
    "sprache": "en"
   },
   {
@@ -25,20 +47,6 @@
    "datum": "2026-11-13",
    "sprache": "en",
    "typ": "pm"
-  },
-  {
-   "titel": "‘I’m a Piece of Sh--’: Jensen Huang’s Last Hours as Nvidia CEO",
-   "quelle": "Bloomberg.com",
-   "link": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxNLUFpTEJfdXRzTFZ2TklSSUpraEZZZVdGbTZjWHBVbWY5YVVWYzViaDkzNXBzaklIRUdmTDAxd3RYX3lscTFrTFRwdVR1Wnd3QzMtUVk4TVVmak5kNWkxWmMzYlltN1F6cVhRQXlMOGtaX1FKczc1cmQ3WUJJaDJmVGRkZWYzR2pnSWVZU3Z1TWhjUHVCREtWbEtVTUw0ckQ4M0VmR0Mya2o?oc=5",
-   "datum": "2026-11-13",
-   "sprache": "en"
-  },
-  {
-   "titel": "Alice Huang-Linked Firm Procured Banned Nvidia Chips in China",
-   "quelle": "Bloomberg.com",
-   "link": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxQZGhfekJtSDUzVXhKZHNDNzgtTXc1RXBUVk9sR3JJX0ZtNDdmazBHU2ZvRXJEN25HMWpOTVdxWng1Y1VXa05OSGlwMmFGUllzMDgyRnkzWWxFdk5pLUhZd1BvUUNXS3NYYXg2TzdxSk9MSXowWWpGTG1CdUxka01oODhvVzBnNDN3Sk5uYWtybjVoelhGRVFWNk5MR2g1Ykx3cXVJazNUWE92ZElRbmVQYzEwaUxBc3lHRHdBVDJvVjA?oc=5",
-   "datum": "2026-11-13",
-   "sprache": "en"
   },
   {
    "titel": "A New Dawn in the Cloud: ‘Warhammer 40,000: Dawn of War IV’ Is Coming to GeForce NOW",
@@ -52,14 +60,6 @@
    "titel": "Führungswechsel",
    "quelle": "SEC-Meldung",
    "link": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000082/nvda-20261111.htm",
-   "datum": "2026-11-12",
-   "sprache": "en",
-   "typ": "pm"
-  },
-  {
-   "titel": "NVIDIA Announces CEO Transition",
-   "quelle": "Unternehmen",
-   "link": "https://nvidianews.nvidia.com/news/nvidia-announces-ceo-transition",
    "datum": "2026-11-12",
    "sprache": "en",
    "typ": "pm"

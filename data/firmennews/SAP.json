@@ -1,7 +1,15 @@
 {
  "hub": "SAP",
  "name": "SAP SE",
- "stand": "2026-11-15",
+ "stand": "2026-11-16",
  "quelle": "Google News (Wirtschaftsmedien, deutsch und englisch)",
- "meldungen": []
+ "meldungen": [
+  {
+   "titel": "AI Startup Dreamteam Raises Capital to Challenge Salesforce, SAP",
+   "quelle": "Bloomberg",
+   "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxOQi10bmVBRE1LOElDMjBnNTh6MnRaZGZ5SU1TMG9HUEwyRlRiU3pUN0RJanRoM1lXMHVYMXJtSXc2c0tPa3h3c2xFREx6d2V2dTJiLTV1amtxV2pZTlF4T3VYMzVaWlBDMFJnaHduSnpJcG5UV3hadGpHaVE4UGRuVnJHTlpvcDE0WThkV3k4YVpMWWRPenkzcXVERlZ6bmh4bzJnRk5meFJuOVNwX0ZUa3lBNlQ?oc=5",
+   "datum": "2026-11-16",
+   "sprache": "en"
+  }
+ ]
 }

@@ -1,9 +1,24 @@
 {
  "hub": "AAPL",
  "name": "Apple Inc.",
- "stand": "2026-11-15",
+ "stand": "2026-11-16",
  "quelle": "Google News (Wirtschaftsmedien, deutsch und englisch)",
  "meldungen": [
+  {
+   "titel": "Apple launches research study to explore the use of AI for health",
+   "quelle": "Unternehmen",
+   "link": "https://www.apple.com/newsroom/2026/11/apple-launches-research-study-to-explore-the-use-of-ai-for-health/",
+   "datum": "2026-11-16",
+   "sprache": "en",
+   "typ": "pm"
+  },
+  {
+   "titel": "Big Tech Mounts Last-Ditch Push to Rewrite Canada’s Data Access Bill",
+   "quelle": "Bloomberg",
+   "link": "https://news.google.com/rss/articles/CBMixwFBVV95cUxNNTNGVEtwVkRtX2piNkZPVXphSWF4OTFCX2RycGdkcllweEhfWjJLMTdkSmpud24tNmJkZ1Z4ZjFaQnN1QlJXcFlTRWlpWGhzOUV2N0FNM0xXNW5zSk13Q09vZF8yLUMtbjRNMzN2eEgzejEyT2pIMFlOa3lrZHJLWkxHelE2am5DRmZScnM5T2gwOXNuOUQ1ZDFvUndBenk4RVZFUGFjeFZFdGI4S2tuY3E3VGpRSW9xUUU0Qm1YNnh2aVZoYXJR?oc=5",
+   "datum": "2026-11-16",
+   "sprache": "en"
+  },
   {
    "titel": "Apple HomeView available today",
    "quelle": "Unternehmen",
@@ -20,13 +35,6 @@
    "sprache": "en"
   },
   {
-   "titel": "Apple’s HomeView Makes Up for Late Arrival with Ecosystem Perks: Review",
-   "quelle": "Bloomberg.com",
-   "link": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxNN2wwbUI0bVhHZ0c4NVQ4QVV0emVnOTRzODJIbjU5eV9GSXUxVnZ0N2UzaE1wQmh5M0ZZWlVITEZXZEtHRHFPNG5idUZ1TVFudEZvT1A5QlNMQnpIamZ0c19WR2VnTHlfbnp6WXpNaEFRVUctQy10SEM5SmNpZTRKc051a1VJSkRNSGZhY2dYdERFVTJSaWF4UldoMDZ0NkpuZEZDUWVidDdPdm9Uc2xiZlp1WXFvNEJlUUlrNjlMQkZ2Sk9mR3NPRA?oc=5",
-   "datum": "2026-11-12",
-   "sprache": "en"
-  },
-  {
    "titel": "Apple TV introduces new Sign Language interpretation feature",
    "quelle": "Unternehmen",
    "link": "https://www.apple.com/newsroom/2026/11/apple-tv-introduces-new-sign-language-interpretation-feature/",
@@ -39,14 +47,6 @@
    "quelle": "Unternehmen",
    "link": "https://www.apple.com/newsroom/2026/11/football-manager-and-other-hit-franchises-headline-apple-arcades-holiday-lineup/",
    "datum": "2026-11-10",
-   "sprache": "en",
-   "typ": "pm"
-  },
-  {
-   "titel": "Sonstige Ereignisse",
-   "quelle": "SEC-Meldung",
-   "link": "https://www.sec.gov/Archives/edgar/data/320193/000114036126042798/ef20085077_8k.htm",
-   "datum": "2026-11-09",
    "sprache": "en",
    "typ": "pm"
   }

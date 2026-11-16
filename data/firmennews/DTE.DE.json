@@ -1,16 +1,9 @@
 {
  "hub": "DTE.DE",
  "name": "Deutsche Telekom",
- "stand": "2026-11-15",
+ "stand": "2026-11-16",
  "quelle": "Google News (Wirtschaftsmedien, deutsch und englisch)",
  "meldungen": [
-  {
-   "titel": "Deutsche Telekom-Aktie: Unternehmen erholt sich",
-   "quelle": "WELT",
-   "link": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxOaG1zcVc0cDRhNU85T0laU25ETjJ4Z0FSVHVpN1dCbkNQVlI1OENtMzFEMFZ6WHpUSjM1UkFsT3hyR2w5VEJIOFdWVWJTY0ZDalB4ZlRoZzBjUVpZRVBWakdwMUZ0NWE0QVk0elRIeEl2OVRqYS1qMXFrbU1KU3BMNi0tbWg4Rkc0OXdCVm1weENrcWs0ZFU5OUk3a1E2c0U3SlNXbWY0T0c3a2JOeTZKNzEydkF1OU1uODhN?oc=5",
-   "datum": "2026-11-12",
-   "sprache": "de"
-  },
   {
    "titel": "Telekom expands AI factory in Munich",
    "quelle": "Unternehmen",
@@ -32,14 +25,6 @@
    "quelle": "Unternehmen",
    "link": "https://www.telekom.com/en/newsroom/latest-updates/media-information/2026/11/t-systems-and-sparxity-strengthen-europes-sovereign-ai-infrastru",
    "datum": "2026-11-03",
-   "sprache": "en",
-   "typ": "pm"
-  },
-  {
-   "titel": "Deutsche Telekom Christmas campaign: Take time to connect",
-   "quelle": "Unternehmen",
-   "link": "https://www.telekom.com/en/newsroom/latest-updates/media-information/2026/11/deutsche-telekom-christmas-campaign-take-time-to-connect",
-   "datum": "2026-11-02",
    "sprache": "en",
    "typ": "pm"
   }
