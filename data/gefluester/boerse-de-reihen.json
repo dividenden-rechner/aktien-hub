@@ -442,6 +442,608 @@ null,
 null
 ],
 "hinweis": "Quelle boersengefluester.de, nicht geprüft. Zahlen zur Stammaktie (DE0007165607); der MDAX-Eintrag führt die Vorzugsaktie DE0007165631, Klasse vor Verwendung klären. Vor 2021 keine Werte."
+},
+"EVK.DE": {
+"name": "Evonik Industries AG",
+"isin": "DE000EVNK013",
+"umsatz": [
+13108,
+12199,
+14955,
+18488,
+15267,
+15157,
+null
+],
+"jahresueberschuss": [
+2127,
+479,
+767,
+555,
+-452,
+240,
+null
+],
+"ebt": [
+null,
+null,
+null,
+null,
+null,
+null,
+null
+],
+"dividendenausschuettung": [
+null,
+null,
+null,
+null,
+null,
+null,
+null
+],
+"eigenkapital": [
+null,
+null,
+null,
+null,
+null,
+null,
+null
+],
+"eps": [
+4.52,
+1.0,
+1.6,
+1.16,
+-1.0,
+0.48,
+null
+],
+"dividende_je_aktie": [
+1.15,
+1.15,
+1.17,
+1.17,
+1.17,
+1.17,
+null
+],
+"aktien_mio": [
+null,
+null,
+null,
+null,
+null,
+null,
+null
+],
+"eigenkapitalrendite_pct": [
+null,
+null,
+null,
+null,
+null,
+null,
+null
+],
+"hinweis": "Quelle boersengefluester.de (Aggregator), nicht gegen Geschäftsbericht geprüft. Geschätzte Jahre (e) nicht übernommen."
+},
+"HAG.DE": {
+"name": "Hensoldt AG",
+"isin": "DE000HAG0005",
+"umsatz": [
+1114.16,
+1206.9,
+1474.3,
+1707.0,
+1847.0,
+2240.0,
+2455.0
+],
+"jahresueberschuss": [
+8.17,
+-64.5,
+62.7,
+80.0,
+56.0,
+106.0,
+86.0
+],
+"ebt": [
+null,
+null,
+null,
+null,
+null,
+null,
+null
+],
+"dividendenausschuettung": [
+null,
+null,
+null,
+null,
+null,
+null,
+null
+],
+"eigenkapital": [
+null,
+null,
+null,
+null,
+null,
+null,
+null
+],
+"eps": [
+0.18,
+-0.75,
+0.6,
+0.75,
+0.51,
+0.92,
+0.77
+],
+"dividende_je_aktie": [
+0,
+0.13,
+0.25,
+0.3,
+0.4,
+0.5,
+0.55
+],
+"aktien_mio": [
+null,
+null,
+null,
+null,
+null,
+null,
+null
+],
+"eigenkapitalrendite_pct": [
+null,
+null,
+null,
+null,
+null,
+null,
+null
+],
+"hinweis": "Quelle boersengefluester.de (Aggregator), nicht gegen Geschäftsbericht geprüft. Geschätzte Jahre (e) nicht übernommen."
+},
+"FRA.DE": {
+"name": "Fraport AG",
+"isin": "DE0005773303",
+"umsatz": [
+3705.8,
+1677.0,
+2143.3,
+3194.4,
+4000.5,
+4427.0,
+4432.2
+],
+"jahresueberschuss": [
+454.3,
+-690.4,
+91.8,
+166.6,
+430.5,
+501.9,
+468.1
+],
+"ebt": [
+null,
+null,
+null,
+null,
+null,
+null,
+null
+],
+"dividendenausschuettung": [
+null,
+null,
+null,
+null,
+null,
+null,
+null
+],
+"eigenkapital": [
+null,
+null,
+null,
+null,
+null,
+null,
+null
+],
+"eps": [
+4.54,
+-7.09,
+0.89,
+1.43,
+4.26,
+4.88,
+4.67
+],
+"dividende_je_aktie": [
+0,
+0,
+0,
+0,
+0,
+0,
+1.0
+],
+"aktien_mio": [
+null,
+null,
+null,
+null,
+null,
+null,
+null
+],
+"eigenkapitalrendite_pct": [
+null,
+null,
+null,
+null,
+null,
+null,
+null
+],
+"hinweis": "Quelle boersengefluester.de (Aggregator), nicht gegen Geschäftsbericht geprüft. Geschätzte Jahre (e) nicht übernommen."
+},
+"KGX.DE": {
+"name": "KION GROUP AG",
+"isin": "DE000KGX8881",
+"umsatz": [
+8806.5,
+8341.6,
+10294.3,
+11135.6,
+11433.7,
+11503.2,
+11297.2
+],
+"jahresueberschuss": [
+444.8,
+210.9,
+568.0,
+105.8,
+314.4,
+369.2,
+240.5
+],
+"ebt": [
+null,
+null,
+null,
+null,
+null,
+null,
+null
+],
+"dividendenausschuettung": [
+null,
+null,
+null,
+null,
+null,
+null,
+null
+],
+"eigenkapital": [
+null,
+null,
+null,
+null,
+null,
+null,
+null
+],
+"eps": [
+3.86,
+1.81,
+4.33,
+0.75,
+2.33,
+2.75,
+1.75
+],
+"dividende_je_aktie": [
+0.04,
+0.41,
+1.5,
+0.19,
+0.7,
+0.82,
+0.62
+],
+"aktien_mio": [
+null,
+null,
+null,
+null,
+null,
+null,
+null
+],
+"eigenkapitalrendite_pct": [
+null,
+null,
+null,
+null,
+null,
+null,
+null
+],
+"hinweis": "Quelle boersengefluester.de (Aggregator), nicht gegen Geschäftsbericht geprüft. Geschätzte Jahre (e) nicht übernommen."
+},
+"SHA0.DE": {
+"name": "Schaeffler AG",
+"isin": "DE000SHA0100",
+"umsatz": [
+14427,
+12600,
+13852,
+15809,
+16313,
+18188,
+23492
+],
+"jahresueberschuss": [
+440,
+-415,
+775,
+585,
+335,
+-605,
+-392
+],
+"ebt": [
+null,
+null,
+null,
+null,
+null,
+null,
+null
+],
+"dividendenausschuettung": [
+null,
+null,
+null,
+null,
+null,
+null,
+null
+],
+"eigenkapital": [
+null,
+null,
+null,
+null,
+null,
+null,
+null
+],
+"eps": [
+0.65,
+-0.63,
+1.13,
+0.83,
+0.47,
+-0.86,
+-0.45
+],
+"dividende_je_aktie": [
+0.45,
+0.24,
+0.5,
+0.45,
+0.45,
+0.25,
+0.3
+],
+"aktien_mio": [
+null,
+null,
+null,
+null,
+null,
+null,
+null
+],
+"eigenkapitalrendite_pct": [
+null,
+null,
+null,
+null,
+null,
+null,
+null
+],
+"hinweis": "Quelle boersengefluester.de (Aggregator), nicht gegen Geschäftsbericht geprüft. Geschätzte Jahre (e) nicht übernommen."
+},
+"8TRA.DE": {
+"name": "TRATON SE",
+"isin": "DE000TRAT0N7",
+"umsatz": [
+null,
+null,
+null,
+null,
+null,
+null,
+null
+],
+"jahresueberschuss": [
+null,
+null,
+null,
+null,
+null,
+null,
+null
+],
+"ebt": [
+null,
+null,
+null,
+null,
+null,
+null,
+null
+],
+"dividendenausschuettung": [
+null,
+null,
+null,
+null,
+null,
+null,
+null
+],
+"eigenkapital": [
+null,
+null,
+null,
+null,
+null,
+null,
+null
+],
+"eps": [
+3.04,
+-0.2,
+0.91,
+2.28,
+4.9,
+5.61,
+null
+],
+"dividende_je_aktie": [
+null,
+null,
+null,
+null,
+null,
+null,
+null
+],
+"aktien_mio": [
+null,
+null,
+null,
+null,
+null,
+null,
+null
+],
+"eigenkapitalrendite_pct": [
+null,
+null,
+null,
+null,
+null,
+null,
+null
+],
+"hinweis": "Nur Ergebnis je Aktie verfügbar (boersengefluester.de), Umsatz und Dividende fehlen. EPS 2024 ungeprüft. Quelle boersengefluester.de (Aggregator), nicht gegen Geschäftsbericht geprüft. Geschätzte Jahre (e) nicht übernommen."
+},
+"DHER.DE": {
+"name": "Delivery Hero SE",
+"isin": "DE000A2E4K43",
+"umsatz": [
+null,
+null,
+null,
+null,
+null,
+null,
+null
+],
+"jahresueberschuss": [
+null,
+null,
+null,
+null,
+null,
+null,
+null
+],
+"ebt": [
+null,
+null,
+null,
+null,
+null,
+null,
+null
+],
+"dividendenausschuettung": [
+null,
+null,
+null,
+null,
+null,
+null,
+null
+],
+"eigenkapital": [
+null,
+null,
+null,
+null,
+null,
+null,
+null
+],
+"eps": [
+null,
+null,
+null,
+null,
+null,
+null,
+null
+],
+"dividende_je_aktie": [
+null,
+null,
+null,
+null,
+null,
+null,
+null
+],
+"aktien_mio": [
+null,
+null,
+null,
+null,
+null,
+null,
+null
+],
+"eigenkapitalrendite_pct": [
+null,
+null,
+null,
+null,
+null,
+null,
+null
+],
+"hinweis": "Nur Ergebnis je Aktie verfügbar (boersengefluester.de, Verluste), Umsatz fehlt. Ergebnis aus Liste übernommen, nicht geprüft."
 }
 },
 "quelle_kurz": "boersengefluester.de"
