@@ -1,6 +1,60 @@
 {
- "updated": "2026-11-15T06:31:52.307841+00:00",
+ "updated": "2026-11-16T06:29:18.509396+00:00",
  "items": [
+  {
+   "sym": "8053.T",
+   "name": "Sumitomo Corp",
+   "title": "Personnel Changes",
+   "link": "http://localhost/-/media/Files/hq/news/release/2026/21830/21830_en.pdf",
+   "date": "2026-11-16T13:30:00+00:00",
+   "text": "",
+   "quelle": "RSS"
+  },
+  {
+   "sym": "005930.KS",
+   "name": "Samsung Electronics",
+   "title": "Inside Dakar 2026: How Galaxy Innovation Shaped the Athlete Experience",
+   "link": "https://news.samsung.com/global/inside-dakar-2026-how-galaxy-innovation-shaped-the-athlete-experience",
+   "date": "2026-11-16T08:00:00+00:00",
+   "text": "",
+   "quelle": "RSS"
+  },
+  {
+   "sym": "SAP.DE",
+   "name": "SAP",
+   "title": "India’s Rise: From Promise to Platform for Global Growth",
+   "link": "https://news.sap.com/2026/11/india-promise-to-platform-global-growth/",
+   "date": "2026-11-16T05:15:00+00:00",
+   "text": "For much of the past three decades, India's global economic story was defined by potential. That narrative has changed dramatically.",
+   "quelle": "RSS"
+  },
+  {
+   "sym": "9432.T",
+   "name": "NTT",
+   "title": "NTT and ispace Enter into Collaboration Agreement to Realize Cislunar and Lunar Infrastructure Using IOWN Optical Communication Technologies (PDF : 335KB)",
+   "link": "https://group.ntt/en/newsrelease/2026/11/16/261116c.html",
+   "date": "2026-11-16T05:00:00+00:00",
+   "text": "",
+   "quelle": "RSS"
+  },
+  {
+   "sym": "AAPL",
+   "name": "Apple",
+   "title": "Apple launches research study to explore the use of AI for health",
+   "link": "https://www.apple.com/newsroom/2026/11/apple-launches-research-study-to-explore-the-use-of-ai-for-health/",
+   "date": "2026-11-16T01:18:33.934000+00:00",
+   "text": "Apple today announced the launch of the Apple Health AI Usage Study in the United States, which includes a virtual research study and associated app.",
+   "quelle": "RSS"
+  },
+  {
+   "sym": "NVDA",
+   "name": "Nvidia",
+   "title": "AI Day Seoul Brings Together Korea’s Industry Leaders, Startups and Developer Communities",
+   "link": "https://blogs.nvidia.com/blog/ai-day-seoul-wrapup/",
+   "date": "2026-11-16T00:00:28+00:00",
+   "text": "",
+   "quelle": "RSS"
+  },
   {
    "sym": "005930.KS",
    "name": "Samsung Electronics",
@@ -365,6 +419,15 @@
    "name": "NTT",
    "title": "Sompo Holdings and NTT Partner to Promote Physical AI Deployment in the Nursing Care Sector",
    "link": "https://group.ntt/en/newsrelease/2026/11/12/261112b.html",
+   "date": "2026-11-12T02:00:00+00:00",
+   "text": "",
+   "quelle": "RSS"
+  },
+  {
+   "sym": "9432.T",
+   "name": "NTT",
+   "title": "NTT DATA becomes AI Consulting Partner of the Nitto ATP Finals",
+   "link": "https://www.nttdata.com/global/en/news/press-release/2026/november/111200",
    "date": "2026-11-12T02:00:00+00:00",
    "text": "",
    "quelle": "RSS"
@@ -1080,15 +1143,6 @@
    "quelle": "RSS"
   },
   {
-   "sym": "NVDA",
-   "name": "Nvidia",
-   "title": "Statement From NVIDIA Board of Directors",
-   "link": "https://nvidianews.nvidia.com/news/statement-from-nvidia-board-of-directors",
-   "date": "2026-11-08T20:00:00+00:00",
-   "text": "",
-   "quelle": "RSS"
-  },
-  {
    "sym": "JNJ",
    "name": "Johnson & Johnson",
    "title": "Johnson & Johnson reports 73% PSA response rate with investigational pasritamig-based immunotherapy combination in advanced prostate cancer",
@@ -1187,15 +1241,6 @@
    "link": "https://news.sap.com/2026/11/new-economist-enterprise-research-ai-moving-faster-than-organizations-can-adapt/",
    "date": "2026-11-06T13:15:00+00:00",
    "text": "A new Economist Enterprise global survey of finance, HR, and supply chain leaders reveals a shared reality.",
-   "quelle": "RSS"
-  },
-  {
-   "sym": "SAP.DE",
-   "name": "SAP",
-   "title": "What Manufacturers Can Learn from ifm’s Digital Manufacturing Journey",
-   "link": "https://news.sap.com/2026/11/what-manufacturers-can-learn-from-ifm/",
-   "date": "2026-11-06T12:15:00+00:00",
-   "text": "For manufacturers evaluating their own transformation journey, standardization is no longer just an IT objective but a business strategy.",
    "quelle": "RSS"
   },
   {
@@ -2275,6 +2320,15 @@
   {
    "sym": "8766.T",
    "name": "Tokio Marine",
+   "title": "Uploaded materials of \"Overview of Economic Value-Based Solvency Regulation and Internal ESR\"",
+   "link": "https://www.tokiomarinehd.com/en/ir/event/presentation/2026/",
+   "date": "2026-10-28T15:00:00+00:00",
+   "text": "",
+   "quelle": "RSS"
+  },
+  {
+   "sym": "8766.T",
+   "name": "Tokio Marine",
    "title": "Economic Value-based Solvency Margin Ratio of Tokio Marine Holdings (Consolidated) as of March 31, 2026",
    "link": "https://www.tokiomarinehd.com/en/newsroom/topics/2026/f5hrqd000000fems-att/Regulatory_ESR_202603_e.pdf",
    "date": "2026-10-28T15:00:00+00:00",
@@ -2342,15 +2396,6 @@
    "name": "NTT",
    "title": "SAP and NTT to Cooperate on Delivering Trusted Sovereign Cloud and SAP Business AI Capabilities",
    "link": "https://group.ntt/en/newsrelease/2026/10/28/261028a.html",
-   "date": "2026-10-28T08:00:00+00:00",
-   "text": "",
-   "quelle": "RSS"
-  },
-  {
-   "sym": "9432.T",
-   "name": "NTT",
-   "title": "SAP and NTT to Cooperate on Delivering Trusted Sovereign Cloud and SAP Business AI Capabilities",
-   "link": "https://www.nttdata.com/global/en/news/press-release/2026/october/102800",
    "date": "2026-10-28T08:00:00+00:00",
    "text": "",
    "quelle": "RSS"
@@ -2529,15 +2574,6 @@
    "title": "Chugai Announces 2026 3rd Quarter Results",
    "link": "https://www.chugai-pharm.co.jp/english/news/detail/20261027170000_1297.html",
    "date": "2026-10-27T08:00:00+00:00",
-   "text": "",
-   "quelle": "RSS"
-  },
-  {
-   "sym": "9432.T",
-   "name": "NTT",
-   "title": "NTT DOCOMO BUSINESS Named as a Runner-Up in Gartner(R) Eye on Innovation Awards 2026 for docomo business ANCAR(R) Service",
-   "link": "https://www.ntt.com/en/about-us/press-releases/news/article/2026/1027.html",
-   "date": "2026-10-27T04:00:00+00:00",
    "text": "",
    "quelle": "RSS"
   },
@@ -2872,15 +2908,6 @@
    "quelle": "RSS"
   },
   {
-   "sym": "AAPL",
-   "name": "Apple",
-   "title": "Developers bring incredible new app experiences to iPhone Duo",
-   "link": "https://www.apple.com/newsroom/2026/10/developers-bring-incredible-new-app-experiences-to-iphone-duo/",
-   "date": "2026-10-22T11:59:15.686000+00:00",
-   "text": "Starting this Friday, iPhone Duo users can discover amazing apps and games optimized for the first foldable iPhone.",
-   "quelle": "RSS"
-  },
-  {
    "sym": "JNJ",
    "name": "Johnson & Johnson",
    "title": "Johnson & Johnson Reports First Real-World VARIPULSE Pro Platform Data and 12-Month OMNYPULSE Platform Outcomes for Atrial Fibrillation Treatment at APHRS 2026",
@@ -3032,15 +3059,6 @@
    "link": "https://about.att.com/story/2026/3q-earnings.html",
    "date": "2026-10-21T10:30:00+00:00",
    "text": "AT&T's third-quarter results extend the momentum of its investment-led strategy as it delivers advanced connectivity to more consumers and businesses.",
-   "quelle": "RSS"
-  },
-  {
-   "sym": "005930.KS",
-   "name": "Samsung Electronics",
-   "title": "[Infographic] 80 Years of JBL: From Studios and Stages to Everyday Life",
-   "link": "https://news.samsung.com/global/infographic-80-years-of-jbl-from-studios-and-stages-to-everyday-life",
-   "date": "2026-10-21T08:00:00+00:00",
-   "text": "",
    "quelle": "RSS"
   },
   {
@@ -3344,24 +3362,6 @@
    "quelle": "SEC",
    "kat": "Mitteilung (Reg FD)",
    "form": "8-K"
-  },
-  {
-   "sym": "4519.T",
-   "name": "Chugai Pharma",
-   "title": "Chugai Receives Porter Prize 2026",
-   "link": "https://www.chugai-pharm.co.jp/english/news/detail/20261016190000_1291.html",
-   "date": "2026-10-16T10:00:00+00:00",
-   "text": "",
-   "quelle": "RSS"
-  },
-  {
-   "sym": "4519.T",
-   "name": "Chugai Pharma",
-   "title": "Roche’s Announcement Regarding Enspryng (FDA Approval for Thyroid Eye Disease)",
-   "link": "https://www.chugai-pharm.co.jp/english/news/detail/20261016153000_1294.html",
-   "date": "2026-10-16T06:30:00+00:00",
-   "text": "",
-   "quelle": "RSS"
   },
   {
    "sym": "HSBA.L",
@@ -4358,42 +4358,6 @@
    "date": "2026-09-17T09:30:00+00:00",
    "text": "AXA announces the launch of Safe Cyber Space, an initiative aimed at raising awareness and equipping teenagers, their parents, and educators to face digital challenges, amid rising online risks. Led by AXA and with support from the AXA Foundation for Human Progress over the next three years, this project brings together UNICEF, Simplon Foundation, and everyone.AI with a shared goal: to better protect young people online.\nThe program will address key risks associated with digital use, such as phishing, cyber bullying, fake news, digital addiction, and the integration of best practices for Artificial Intelligence in education.\nOverall, the initiative aims to reach over 15,000 middle school students through in-person sessions and nearly 3 million adults and children across France, Spain, and Portugal through national campaigns. The goal is to make Safe Cyber Space one of Europe’s most extensive awareness programs on these topics.\nThe project is also supported by France’s High Commissioner for Children, Sarah El Haïry, and Najat Maalla M’jid, UN Secretary-General’s Special Rapporteur on Violence Against Children.\nThis partnership will focus on three main areas, combining awareness, research, and training:\nRaising Awareness Among Youth and Adults about Major Risks\nResources from Cybervengers.club, a series of educational mangas created by AXA, will be gradually deployed to 15,000 young people in partnership with Simplon Foundation through face-to-face sessions at schools and community centers. Additionally, UNICEF, an organization dedicated to child protection, will promote this awareness campaign within its networks in France. Finally, dedicated training sessions will be organized for parents, teachers, educators, and AXA employees in France and Spain to help them detect early warning signs and provide initial solutions.\nNational Campaigns and Studies to Better Understand Digital Usage\nThrough discussion groups, UNICEF will conduct in-depth research on digital habits of target audiences, aiming to publish strategic reports for policymakers and economic stakeholders. These will inform public policies and private initiatives to enhance online child protection.\nTraining for Parents and Educators\neveryone.AI will actively contribute to developing online training modules dedicated to parents and educators. These educational contents will be progressively developed and deployed to AXA employees, partners, and the general public.\nThis partnership aligns with AXA’s commitment to fostering a safer and more responsible digital environment, consistent with the Group’s mission: to protect what matters.",
    "quelle": "RSS"
-  },
-  {
-   "sym": "8053.T",
-   "name": "Sumitomo Corp",
-   "title": "Personnel Changes and Organizational Changes",
-   "link": "http://localhost/-/media/Files/hq/news/release/2026/21700/21700_en.pdf",
-   "date": "2026-09-16T13:30:00+00:00",
-   "text": "",
-   "quelle": "RSS"
-  },
-  {
-   "sym": "SY1.DE",
-   "name": "Symrise",
-   "title": "Symrise completes acquisition of Floral Concept, strengthening its position in Premium Naturals",
-   "link": "/newsroom/article/symrise-completes-acquisition-of-floral-concept-strengthening-its-position-in-premium-naturals/",
-   "date": "2026-09-16T11:53:55+00:00",
-   "text": "– Completion reinforces Symrise’s Premium Naturals position in fragrance\n– Floral Concept joins Maison Lautier 1795 in a Naturals cluster in Grasse\n– Combined expertise spans sourcing, transformation and fragrance creation\n– Acquisition supports ONE Symrise and active portfolio development",
-   "quelle": "RSS"
-  },
-  {
-   "sym": "BT-A.L",
-   "name": "BT Group",
-   "title": "BT urges customers not to ignore the switch to digital landlines",
-   "link": "https://newsroom.bt.com/bt-urges-customers-not-to-ignore-the-switch-to-digital-landlines/",
-   "date": "2026-09-16T08:00:00+00:00",
-   "text": "By Lucy Baker, Consumer Digital Voice Director, BT",
-   "quelle": "RSS"
-  },
-  {
-   "sym": "BT-A.L",
-   "name": "BT Group",
-   "title": "Transforming rail incident response: BT’s Drone SIM powers police drone capability",
-   "link": "https://newsroom.bt.com/transforming-rail-incident-response-bts-drone-sim-powers-police-drone-capability/",
-   "date": "2026-09-16T08:00:00+00:00",
-   "text": "BT Business enables first national routine BVLOS drone operations in UK policing with British Transport Police.",
-   "quelle": "RSS"
   }
  ],
  "errors": [
@@ -4431,23 +4395,23 @@
   },
   {
    "sym": "JPM",
-   "fehler": "HTTP Error 402: Payment Required"
+   "fehler": "HTTP Error 429: Too Many Requests"
   },
   {
    "sym": "CVX",
-   "fehler": "HTTP Error 402: Payment Required"
+   "fehler": "HTTP Error 429: Too Many Requests"
   },
   {
    "sym": "MCD",
-   "fehler": "HTTP Error 402: Payment Required"
+   "fehler": "HTTP Error 429: Too Many Requests"
   },
   {
    "sym": "HD",
-   "fehler": "HTTP Error 402: Payment Required"
+   "fehler": "HTTP Error 429: Too Many Requests"
   },
   {
    "sym": "TXN",
-   "fehler": "HTTP Error 402: Payment Required"
+   "fehler": "HTTP Error 429: Too Many Requests"
   },
   {
    "sym": "AVGO",
@@ -4455,7 +4419,7 @@
   },
   {
    "sym": "CSCO",
-   "fehler": "HTTP Error 402: Payment Required"
+   "fehler": "HTTP Error 429: Too Many Requests"
   },
   {
    "sym": "MDLZ",
@@ -4467,163 +4431,163 @@
   },
   {
    "sym": "GOOGL",
-   "fehler": "HTTP Error 402: Payment Required"
+   "fehler": "HTTP Error 429: Too Many Requests"
   },
   {
    "sym": "SIE.DE",
-   "fehler": "HTTP Error 402: Payment Required"
+   "fehler": "HTTP Error 429: Too Many Requests"
   },
   {
    "sym": "ALV.DE",
-   "fehler": "HTTP Error 402: Payment Required"
+   "fehler": "HTTP Error 429: Too Many Requests"
   },
   {
    "sym": "MBG.DE",
-   "fehler": "HTTP Error 402: Payment Required"
+   "fehler": "HTTP Error 429: Too Many Requests"
   },
   {
    "sym": "BMW.DE",
-   "fehler": "HTTP Error 402: Payment Required"
+   "fehler": "HTTP Error 429: Too Many Requests"
   },
   {
    "sym": "BAS.DE",
-   "fehler": "HTTP Error 402: Payment Required"
+   "fehler": "HTTP Error 429: Too Many Requests"
   },
   {
    "sym": "MUV2.DE",
-   "fehler": "HTTP Error 402: Payment Required"
+   "fehler": "HTTP Error 429: Too Many Requests"
   },
   {
    "sym": "DHL.DE",
-   "fehler": "HTTP Error 402: Payment Required"
+   "fehler": "HTTP Error 429: Too Many Requests"
   },
   {
    "sym": "ADS.DE",
-   "fehler": "HTTP Error 402: Payment Required"
+   "fehler": "HTTP Error 429: Too Many Requests"
   },
   {
    "sym": "RWE.DE",
-   "fehler": "HTTP Error 402: Payment Required"
+   "fehler": "HTTP Error 429: Too Many Requests"
   },
   {
    "sym": "EOAN.DE",
-   "fehler": "HTTP Error 402: Payment Required"
+   "fehler": "HTTP Error 429: Too Many Requests"
   },
   {
    "sym": "DBK.DE",
-   "fehler": "HTTP Error 402: Payment Required"
+   "fehler": "HTTP Error 429: Too Many Requests"
   },
   {
    "sym": "ASML.AS",
-   "fehler": "HTTP Error 402: Payment Required"
+   "fehler": "HTTP Error 429: Too Many Requests"
   },
   {
    "sym": "MC.PA",
-   "fehler": "HTTP Error 402: Payment Required"
+   "fehler": "HTTP Error 429: Too Many Requests"
   },
   {
    "sym": "OR.PA",
-   "fehler": "HTTP Error 402: Payment Required"
+   "fehler": "HTTP Error 429: Too Many Requests"
   },
   {
    "sym": "TTE.PA",
-   "fehler": "HTTP Error 402: Payment Required"
+   "fehler": "HTTP Error 429: Too Many Requests"
   },
   {
    "sym": "SAN.PA",
-   "fehler": "HTTP Error 402: Payment Required"
+   "fehler": "HTTP Error 429: Too Many Requests"
   },
   {
    "sym": "SU.PA",
-   "fehler": "HTTP Error 402: Payment Required"
+   "fehler": "HTTP Error 429: Too Many Requests"
   },
   {
    "sym": "NESN.SW",
-   "fehler": "HTTP Error 402: Payment Required"
+   "fehler": "HTTP Error 429: Too Many Requests"
   },
   {
    "sym": "NOVN.SW",
-   "fehler": "HTTP Error 402: Payment Required"
+   "fehler": "HTTP Error 429: Too Many Requests"
   },
   {
    "sym": "ROG.SW",
-   "fehler": "HTTP Error 402: Payment Required"
+   "fehler": "HTTP Error 429: Too Many Requests"
   },
   {
    "sym": "UBSG.SW",
-   "fehler": "HTTP Error 402: Payment Required"
+   "fehler": "HTTP Error 429: Too Many Requests"
   },
   {
    "sym": "NOVO-B.CO",
-   "fehler": "HTTP Error 402: Payment Required"
+   "fehler": "HTTP Error 429: Too Many Requests"
   },
   {
    "sym": "ULVR.L",
-   "fehler": "HTTP Error 402: Payment Required"
+   "fehler": "HTTP Error 429: Too Many Requests"
   },
   {
    "sym": "SHEL.L",
-   "fehler": "HTTP Error 402: Payment Required"
+   "fehler": "HTTP Error 429: Too Many Requests"
   },
   {
    "sym": "AZN.L",
-   "fehler": "HTTP Error 402: Payment Required"
+   "fehler": "HTTP Error 429: Too Many Requests"
   },
   {
    "sym": "BP.L",
-   "fehler": "HTTP Error 402: Payment Required"
+   "fehler": "HTTP Error 429: Too Many Requests"
   },
   {
    "sym": "ENEL.MI",
-   "fehler": "HTTP Error 402: Payment Required"
+   "fehler": "HTTP Error 429: Too Many Requests"
   },
   {
    "sym": "ISP.MI",
-   "fehler": "HTTP Error 402: Payment Required"
+   "fehler": "HTTP Error 429: Too Many Requests"
   },
   {
    "sym": "IBE.MC",
-   "fehler": "HTTP Error 402: Payment Required"
+   "fehler": "HTTP Error 429: Too Many Requests"
   },
   {
    "sym": "TSM",
-   "fehler": "HTTP Error 402: Payment Required"
+   "fehler": "HTTP Error 429: Too Many Requests"
   },
   {
    "sym": "9988.HK",
-   "fehler": "HTTP Error 402: Payment Required"
+   "fehler": "HTTP Error 429: Too Many Requests"
   },
   {
    "sym": "0700.HK",
-   "fehler": "HTTP Error 402: Payment Required"
+   "fehler": "HTTP Error 429: Too Many Requests"
   },
   {
    "sym": "7203.T",
-   "fehler": "HTTP Error 402: Payment Required"
+   "fehler": "HTTP Error 429: Too Many Requests"
   },
   {
    "sym": "6758.T",
-   "fehler": "HTTP Error 402: Payment Required"
+   "fehler": "HTTP Error 429: Too Many Requests"
   },
   {
    "sym": "BHP.AX",
-   "fehler": "HTTP Error 402: Payment Required"
+   "fehler": "HTTP Error 429: Too Many Requests"
   },
   {
    "sym": "0027.HK",
-   "fehler": "HTTP Error 402: Payment Required"
+   "fehler": "HTTP Error 429: Too Many Requests"
   },
   {
    "sym": "RELIANCE.NS",
-   "fehler": "HTTP Error 402: Payment Required"
+   "fehler": "HTTP Error 429: Too Many Requests"
   },
   {
    "sym": "TATAMOTORS.NS",
-   "fehler": "HTTP Error 402: Payment Required"
+   "fehler": "HTTP Error 429: Too Many Requests"
   },
   {
    "sym": "HEI.DE",
-   "fehler": "HTTP Error 402: Payment Required"
+   "fehler": "HTTP Error 429: Too Many Requests"
   },
   {
    "sym": "FRE.DE",
@@ -4635,15 +4599,15 @@
   },
   {
    "sym": "HOLN.SW",
-   "fehler": "HTTP Error 402: Payment Required"
+   "fehler": "HTTP Error 429: Too Many Requests"
   },
   {
    "sym": "DGE.L",
-   "fehler": "HTTP Error 402: Payment Required"
+   "fehler": "HTTP Error 429: Too Many Requests"
   },
   {
    "sym": "REL.L",
-   "fehler": "HTTP Error 402: Payment Required"
+   "fehler": "HTTP Error 429: Too Many Requests"
   },
   {
    "sym": "AAL.L",
@@ -4651,7 +4615,7 @@
   },
   {
    "sym": "NOKIA.HE",
-   "fehler": "HTTP Error 402: Payment Required"
+   "fehler": "HTTP Error 429: Too Many Requests"
   },
   {
    "sym": "FRE.DE",
