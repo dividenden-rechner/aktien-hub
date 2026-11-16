@@ -47,30 +47,23 @@ def ttm(quartale):
 
 
 def quartale_aus_kumuliert(eintraege):
-    """eintraege: [start, end, dauer_monate, wert] kumuliert je Geschaeftsjahr (3, 6, 9, 12 Monate).
-    Quartalswert = Differenz zum vorherigen kumulierten Wert derselben Kette; lueckenhafte Ketten werden verworfen."""
-    ketten = {}
-    for s, e, m, w in eintraege:
-        ketten.setdefault(s, []).append((m, d(e), w))
-    out = []
-    for lst in ketten.values():
-        lst.sort()
-        vorher = None
-        for m, ende, w in lst:
-            if vorher is None:
-                if m == 3:
-                    out.append([ende.isoformat(), round(w, 4), "Q1", None])
-                vorher = (m, w)
+    """eintraege: [start, end, dauer_monate, wert] kumuliert seit Geschaeftsjahresbeginn (3, 6, 9, 12 Monate).
+    Die Vorperiode ist die Meldung mit drei Monaten weniger und einem Enddatum etwa ein Quartal frueher.
+    Die Startdaten schwanken zwischen Meldungen (52/53-Wochen-Jahre), daher wird ueber die Enddaten verkettet."""
+    werte = {}
+    for _s, e, m, w in eintraege:
+        werte[(m, d(e))] = w
+    out = {}
+    for (m, ende), w in werte.items():
+        if m == 3:
+            q = w
+        else:
+            vorher = [v for (mm, ee), v in werte.items() if mm == m - 3 and 60 <= (ende - ee).days <= 120]
+            if not vorher:
                 continue
-            vm, vw = vorher
-            if m - vm != 3:
-                vorher = None if m != 3 else (m, w)   # Kette neu beginnen, wenn ein Zwischenwert fehlt
-                if m == 3:
-                    out.append([ende.isoformat(), round(w, 4), "Q1", None])
-                continue
-            out.append([ende.isoformat(), round(w - vw, 4), "Q%d" % (m // 3), None])
-            vorher = (m, w)
-    return sorted(out, key=lambda x: x[0])
+            q = w - vorher[0]
+        out[ende] = [ende.isoformat(), round(q, 4), "Q%d" % (m // 3), None]
+    return [out[k] for k in sorted(out)]
 
 
 KUM_METRIKEN = {"ocf": "operativer_cf", "capex": "capex", "div": "dividenden_gezahlt"}

@@ -78,12 +78,14 @@ DAUER_MONATE = [(80, 100, 3), (170, 200, 6), (260, 290, 9), (350, 380, 12)]
 
 
 def kumuliert(facts, namen):
-    """Liefert [start, end, dauer_monate, wert] je Meldung; neueste Einreichung gewinnt je Zeitraum."""
-    gefunden = {}
+    """Liefert [start, end, dauer_monate, wert] je Meldung. Von den Konzeptnamen wird der mit dem neuesten
+    Enddatum genommen (Firmen wechseln den Namen), je Zeitraum gewinnt die neueste Einreichung."""
+    beste = []
     for name in namen:
         konzept = facts.get("facts", {}).get("us-gaap", {}).get(name)
         if not konzept:
             continue
+        gefunden = {}
         for e in konzept.get("units", {}).get("USD", []):
             if e.get("form") not in ("10-Q", "10-K") or not e.get("start") or not e.get("end"):
                 continue
@@ -98,9 +100,9 @@ def kumuliert(facts, namen):
             gefunden[schluessel] = {"start": e["start"], "end": e["end"], "m": monate, "wert": e["val"],
                                     "filed": e.get("filed", "")}
         if gefunden:
-            break
-    liste = sorted(gefunden.values(), key=lambda x: (x["start"], x["end"]))[-16:]
-    return [[x["start"], x["end"], x["m"], x["wert"]] for x in liste]
+            liste = sorted(gefunden.values(), key=lambda x: (x["start"], x["end"]))[-16:]
+            beste.append((max(x["end"] for x in liste), [[x["start"], x["end"], x["m"], x["wert"]] for x in liste]))
+    return max(beste)[1] if beste else []
 
 
 def main():
