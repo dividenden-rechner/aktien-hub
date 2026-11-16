@@ -36,7 +36,7 @@ Nach einem so starken Kursrückgang reichen Kanzleien in den USA oft Sammelklage
 
 Die Speicherknappheit ist kein Intel-Problem allein. KI-Server im Rechenzentrum treiben die Preise für Speicherchips in die Höhe. Die PC-Hersteller haben deshalb ihre Preise angehoben und verkaufen weniger. Dass Intel das Problem nicht vorhersah, ist plausibel. Dass es vorsätzlich schwieg, muss erst gezeigt werden.
 
-Die Nachfrage nach Rechenzentrumsprozessoren ist real. Der Umsatz im dritten Quartal lag laut Hub bei 16,5 Mrd. USD, rund 21 % über dem Vorjahresquartal. Die Aktie war vor dem Bericht außerdem mehr als doppelt so teuer wie ein Jahr zuvor. Ein Teil des Kursverlusts ist daher auch eine Korrektur nach einem starken Anstieg.
+Die Nachfrage nach Rechenzentrumsprozessoren ist real. Der Umsatz im dritten Quartal lag bei 16,5 Mrd. USD, rund 21 % über dem Vorjahresquartal. Die Aktie war vor dem Bericht außerdem mehr als doppelt so teuer wie ein Jahr zuvor. Ein Teil des Kursverlusts ist daher auch eine Korrektur nach einem starken Anstieg.
 
 ## Die Zahlen aus dem Hub
 
