@@ -12,6 +12,7 @@ image_source: https://unsplash.com/photos/row-of-wind-turbines-in-the-deep-blue-
 image_artist_url: https://unsplash.com/@rogueli?utm_source=dividenden-rechner&utm_medium=referral
 logo_name: "Legal & General"
 logo_symbol: LGEN.L
+logo_file: assets/logos/lgen-l.png
 ---
 <!-- PRÜFEN: Aufmacherfoto ist automatisch von Unsplash gewaehlt: bitte pruefen, ob es zum Artikel passt (sonst image-Zeilen entfernen, dann entsteht ein Titelbild automatisch). -->
 <!-- PRÜFEN: Quelle: https://group.legalandgeneral.com/newsroom/press-releases/2026/11/positive-q3-momentum-remain-on-track-to-meet-or-exceed-our-strategic-targets/ -->
