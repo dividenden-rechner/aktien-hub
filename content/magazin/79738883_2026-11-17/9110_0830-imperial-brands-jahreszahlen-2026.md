@@ -14,7 +14,7 @@ image_alt: "Foto zu Imperial Brands: Hand hält eine blu bar Packung mit Erdbeer
 image_credit: "Foto: Imperial Brands"
 image_lizenz: Pressebild
 ---
-<!-- PRÜFEN: Kurs aus dem aktien.guide-Screenshot (35,65 € am 17.11.2026) ist im Text bewusst nicht als Rendite verwendet. Für eine Rendite fehlt der Pfund-Euro-Kurs zum Stichtag. Vor Veröffentlichung ergänzen, falls gewünscht. -->
+<!-- PRÜFEN: Umrechnung mit EZB-Referenzkurs 16.11.2026 (0,83450 GBP je EUR, Quelle ecb.europa.eu). Der Kurs vom 17.11. ist bei Erstellung noch nicht veröffentlicht. Kurs 35,65 € aus aktien.guide-Screenshot, Stand 17.11.2026, vor Veröffentlichung gegenprüfen. -->
 <!-- PRÜFEN: Der Gewinn je Aktie wird in der Tabelle mit konstanter Währung ausgewiesen; die Ist-Veränderung weicht leicht ab (bereinigt +8,3 %). -->
 <!-- PRÜFEN: Die Ausschüttungsquote ist eine eigene Rechnung aus Dividende und bereinigtem Gewinn je Aktie. -->
 
@@ -94,6 +94,6 @@ Zum Jahresende tritt Thérèse Esperdy als Vorsitzende zurück. Ihr Nachfolger w
 
 Die Zahlen zeigen einen Konzern, der seine Preismacht im Tabakgeschäft nutzt, die Dividende jährlich um rund 4 % erhöht und den Umbau in Richtung NGP vorantreibt. Dagegen stehen ein rückläufiges Volumen, ein berichtetes Ergebnis, das deutlich fällt, und ein Cashflow-Ausblick, der unter dem Vorjahr liegt. Wer die Aktie beurteilen will, sollte vor allem den freien Cashflow nach Rechtskosten und Strategiekosten verfolgen.
 
-Eine Dividendenrendite auf den aktuellen Kurs lässt sich hier noch nicht seriös berechnen, weil der Umrechnungskurs Pfund zu Euro zum Stichtag fehlt. Dieser Artikel ist keine Anlageberatung.
+Umgerechnet mit dem EZB-Referenzkurs vom 16. November 2026 (1 € = 0,83450 £) entspricht die Dividende von 166,72 p rund 2,00 €. Bezogen auf den Kurs von 35,65 € (aktien.guide, 17.11.2026) ergibt sich eine Dividendenrendite von rund 5,6 %. Das ist eine Rechnung auf Basis der Dividende des Geschäftsjahres 2026, keine Prognose, und der Kurs schwankt täglich. Dieser Artikel ist keine Anlageberatung.
 
 *Quellen: Imperial Brands PLC, Full Year Results Statement für das am 30. September 2026 endende Geschäftsjahr (17.11.2026); Präsentation „Full Year Results“ vom 17.11.2026.*

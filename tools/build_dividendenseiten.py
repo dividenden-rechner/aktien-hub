@@ -215,6 +215,19 @@ document.querySelectorAll('table.sortable').forEach(function(t){var hs=t.tHead?t
 function go(){var b=t.tBodies[0];var rows=Array.prototype.slice.call(b.rows);var num=th.getAttribute('data-num')==='1';rows.sort(function(x,y){var a=v(x.cells[i],num),c=v(y.cells[i],num);return (a>c?1:a<c?-1:0)*dir});rows.forEach(function(r){b.appendChild(r)});dir=-dir}
 th.addEventListener('click',go);th.addEventListener('keydown',function(e){if(e.key==='Enter'||e.key===' '){e.preventDefault();go()}})})})})();</script>"""
 
+TAB_CSS = """<style>.ari-tab{table-layout:fixed;width:100%;font-size:14px;border-collapse:collapse;margin:12px 0 8px}
+.ari-tab th,.ari-tab td{padding:8px 4px;border-bottom:1px solid #e5e9ee;text-align:center;white-space:nowrap;vertical-align:middle;font-variant-numeric:tabular-nums}
+.ari-tab thead th{font-size:12.5px;font-weight:600;color:#5d6b78;background:#f5f8fa;cursor:pointer;white-space:normal;line-height:1.25;vertical-align:bottom}
+.ari-tab th.fi,.ari-tab td.fi{text-align:left}
+.ari-tab td.fi a{display:flex;align-items:center;gap:7px;min-width:0;text-decoration:none;color:inherit}
+.ari-tab td.fi .nm{min-width:0;overflow:hidden;text-overflow:ellipsis}
+.ari-tab .arlogo{flex:0 0 30px;width:30px;height:30px;padding:3px;border-radius:6px}
+.ari-tab col.c1{width:44%}.ari-tab col.c2,.ari-tab col.c3,.ari-tab col.c4{width:18.6%}
+.ari-tab col.c5{width:18.6%}
+.ari-hint{font-size:13px;color:#5d6b78;margin:4px 0 0}</style>"""
+COLS4 = '<colgroup><col class="c1"><col class="c2"><col class="c3"><col class="c4"></colgroup>'
+COLS6 = '<colgroup><col class="c1"><col class="c2"><col class="c3"><col class="c4"><col class="c5"></colgroup>'
+
 PEER_BLOCKS = {}
 
 def peer_block(sym, cfg_by_sym, gruppen):
@@ -450,7 +463,7 @@ def uebersicht(rs, kopf_links, kopf, fuss, jahr):
     zeilen = []
     for r in sorted(rs, key=lambda r: -(r["rendite"] or 0)):
         f = r["f"]
-        zeilen.append(f'<tr><td data-v="{esc(f["name"])}"><a href="{f["slug"]}/" style="display:flex;align-items:center;gap:10px">{logo_span(f["sym"], f["name"], "../")}{esc(f["name"])}</a></td>'
+        zeilen.append(f'<tr><td class="fi" data-v="{esc(f["name"])}"><a href="{f["slug"]}/">{logo_span(f["sym"], f["name"], "../")}<span class="nm">{esc(f["name"])}</span></a></td>'
                       f'<td class="n" data-v="{r["rendite"] or ""}">{proz(r["rendite"]) if r["rendite"] else "–"}</td>'
                       f'<td class="n" data-v="{r["dps_letzt"]}">{de(r["dps_letzt"])}</td>'
                       f'<td class="n" data-v="{r["cagr5"] if r["cagr5"] is not None else ""}">{proz(r["cagr5"], vz=True) if r["cagr5"] is not None else "–"}</td>'
@@ -483,8 +496,9 @@ def uebersicht(rs, kopf_links, kopf, fuss, jahr):
 <main class="wrap"><article>
 <nav class="crumbs" aria-label="Brotkrumen"><a href="../">Start</a> › <span aria-current="page">Dividenden</span></nav>
 <h1>US-Dividendenaktien im Überblick</h1>
-<p class="lead">Die bekanntesten US-Dividendenwerte mit Rendite, letzter Jahresdividende und Wachstum über fünf Jahre. Ein Klick auf den Namen führt zur ausführlichen Seite mit Historie, Terminen und Rechner.</p>
-<div class="tablewrap"><table class="sortable"><thead><tr><th>Aktie</th><th class="n" data-num="1">Rendite</th><th class="n" data-num="1">Dividende je Aktie (USD)</th><th class="n" data-num="1">Wachstum 5 J. p. a.</th><th class="n" data-num="1">Erhöhungen in Folge (Jahre)</th><th>Zahlweise</th></tr></thead><tbody>
+<p class="lead">Eine Auswahl der beliebtesten US-Dividendenaktien mit Rendite, letzter Jahresdividende und Wachstum über fünf Jahre. Ein Klick auf den Namen führt zur ausführlichen Seite mit Historie, Terminen und Rechner.</p>
+{TAB_CSS}
+<div class="tablewrap"><table class="sortable ari-tab">{COLS6}<thead><tr><th class="fi">Aktie</th><th class="n" data-num="1">Rendite</th><th class="n" data-num="1">Dividende je Aktie (USD)</th><th class="n" data-num="1">Wachstum 5 J. p. a.</th><th class="n" data-num="1">Erhöhungen in Folge (Jahre)</th><th>Zahlweise</th></tr></thead><tbody>
 {"".join(zeilen)}
 </tbody></table></div>
 <p>Welche dieser Werte ihre Dividende seit mindestens 25 oder 50 Jahren erhöhen, zeigt die <a href="aristokraten/">Liste der Dividend Kings und Dividendenaristokraten</a>.</p>
@@ -506,12 +520,12 @@ def aristokraten(rs, kopf_links, kopf, fuss, jahr):
     for titel, lo, hi in gruppen:
         g = sorted([r for r in rs if r["serie_jahre"] is not None and lo <= r["serie_jahre"] <= hi], key=lambda r: -r["serie_jahre"])
         if not g: continue
-        z = "".join(f'<tr><td data-v="{esc(r["f"]["name"])}"><a href="../{r["f"]["slug"]}/" style="display:flex;align-items:center;gap:10px">{logo_span(r["f"]["sym"], r["f"]["name"], "../../")}{esc(r["f"]["name"])}</a></td>'
+        z = "".join(f'<tr><td class="fi" data-v="{esc(r["f"]["name"])}"><a href="../{r["f"]["slug"]}/">{logo_span(r["f"]["sym"], r["f"]["name"], "../../")}<span class="nm">{esc(r["f"]["name"])}</span></a></td>'
                     f'<td class="n" data-v="{r["serie_jahre"]}"><strong>{r["serie_jahre"]}</strong></td>'
                     f'<td class="n" data-v="{r["rendite"] or ""}">{proz(r["rendite"]) if r["rendite"] else "–"}</td>'
                     f'<td class="n" data-v="{r["cagr5"] if r["cagr5"] is not None else ""}">{proz(r["cagr5"], vz=True) if r["cagr5"] is not None else "–"}</td></tr>'
                     for r in g)
-        teile.append(f'<h2>{esc(titel)}</h2><div class="tablewrap"><table class="sortable" style="table-layout:fixed"><colgroup><col style="width:46%"><col style="width:18%"><col style="width:18%"><col style="width:18%"></colgroup><thead><tr><th>Aktie</th><th class="n" data-num="1">Jahre in Folge</th>'
+        teile.append(f'<h2>{esc(titel)}</h2><div class="tablewrap"><table class="sortable ari-tab">{COLS4}<thead><tr><th class="fi">Aktie</th><th class="n" data-num="1">Jahre in Folge</th>'
                      f'<th class="n" data-num="1">Rendite</th><th class="n" data-num="1">Wachstum 5 J. p. a.</th></tr></thead><tbody>{z}</tbody></table></div>')
     n_king = sum(1 for r in rs if (r["serie_jahre"] or 0) >= 50); n_ari = sum(1 for r in rs if 25 <= (r["serie_jahre"] or 0) < 50)
     ohne = sorted([r for r in rs if r["serie_jahre"] is not None and r["serie_jahre"] < 10], key=lambda r: -r["serie_jahre"])
@@ -548,6 +562,7 @@ def aristokraten(rs, kopf_links, kopf, fuss, jahr):
 <nav class="crumbs" aria-label="Brotkrumen"><a href="../../">Start</a> › <a href="../">Dividenden</a> › <span aria-current="page">Dividend Kings und Aristokraten</span></nav>
 <h1>Dividend Kings und Dividendenaristokraten</h1>
 <p class="lead">Wer seine Dividende über Jahrzehnte jedes Jahr erhöht, hat Rezessionen, Zinswenden und Krisen überstanden, ohne die Ausschüttung anzutasten. Unter den Werten, zu denen wir eigene Dividendenseiten führen, sind derzeit {n_king} Dividend Kings mit mindestens 50 Erhöhungen in Folge und {n_ari} weitere mit mindestens 25 Jahren.</p>
+{TAB_CSS}<p class="ari-hint">Eine Auswahl der beliebtesten Dividendenwerte, keine vollständige Liste aller Dividendenaristokraten. Ein Klick auf eine Spalte sortiert die Tabelle.</p>
 {"".join(teile)}
 {ohne_html}
 <p class="meta">Jahre in Folge: recherchiert aus Angaben der Unternehmen und von S&amp;P Dow Jones Indices, fortgeschrieben mit jeder neuen Erhöhung. Rendite: Dividende des letzten Geschäftsjahres zum letzten Börsenkurs in Euro. Die Liste wächst mit jeder neuen Firmenseite. Stand: {datum(datetime.date.today().isoformat())}.</p>
