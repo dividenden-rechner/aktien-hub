@@ -30,7 +30,7 @@ jobs:
         run: |
           git config user.name "esef-bot"
           git config user.email "actions@users.noreply.github.com"
-          git add data/esef data/esef-abdeckung.md data/kennzahlen.json
+          git add data/esef data/esef-abdeckung.md data/kennzahlen.json data/ir-pruefung.json
           if git diff --cached --quiet; then echo "Keine Änderungen"; exit 0; fi
           git commit -m "ESEF-Jahreszahlen Europa aktualisiert"
-          for i in 1 2 3; do git pull --rebase -X theirs -q && git push && break; sleep 5; done
+          ok=0; for i in 1 2 3; do git pull --rebase --autostash -X theirs -q && git push && ok=1 && break; sleep 5; done; [ "$ok" = 1 ] || { echo "Push fehlgeschlagen"; git status --short | head -20; exit 1; }

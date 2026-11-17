@@ -42,4 +42,4 @@ jobs:
           git add data/wechselkurse-ezb.json
           if git diff --cached --quiet; then echo "Keine Aenderung"; exit 0; fi
           git commit -m "EZB-Wechselkurse"
-          for i in 1 2 3; do git pull --rebase -X theirs -q && git push && break; sleep 5; done
+          for i in 1 2 3; do git pull --rebase --autostash -X theirs -q && git push && break; sleep 5; done

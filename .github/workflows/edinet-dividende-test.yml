@@ -26,4 +26,4 @@ jobs:
           git add data/edinet-dividende-test.json
           if git diff --cached --quiet; then echo "Keine Aenderung"; exit 0; fi
           git commit -m "EDINET Dividende Test" -m "Co-Authored-By: Claude Haiku 5.5 <noreply@anthropic.com>" -m "Claude-Session: https://claude.ai/code/session_019XvbgBLukfMhVVHAfy3Xu4"
-          for i in 1 2 3; do git pull --rebase -X theirs -q && git push && break; sleep 5; done
+          for i in 1 2 3; do git pull --rebase --autostash -X theirs -q && git push && break; sleep 5; done
