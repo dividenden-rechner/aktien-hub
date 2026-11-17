@@ -64,6 +64,8 @@ def lies(raw, gesucht, out):
         if len(row) <= max(ii, iw):
             continue
         isin, wkn = row[ii].strip().strip('"'), row[iw].strip().strip('"')
+        if len(wkn) == 9 and wkn.startswith("000"):   # die Börse führt die WKN neunstellig mit drei führenden Nullen
+            wkn = wkn[3:]
         if isin in gesucht and re.fullmatch(r"[A-Z0-9]{6}", wkn) and isin not in out:
             out[isin] = wkn; n += 1
     if not n:
