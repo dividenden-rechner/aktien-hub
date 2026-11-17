@@ -1,6 +1,51 @@
 {
- "updated": "2026-11-16T19:36:40.906964+00:00",
+ "updated": "2026-11-17T03:54:08.846521+00:00",
  "items": [
+  {
+   "sym": "8053.T",
+   "name": "Sumitomo Corp",
+   "title": "Sale of Summit Capital Leasing, a Motorcycle Finance Company in Thailand",
+   "link": "http://localhost/en/jp/news/release/2026/group/21810",
+   "date": "2026-11-17T10:00:00+00:00",
+   "text": "",
+   "quelle": "RSS"
+  },
+  {
+   "sym": "000660.KS",
+   "name": "SK Hynix",
+   "title": "[AI Ecosystem] Completing AI: Physical intelligence and the role of memory",
+   "link": "https://news.skhynix.com/en/ai-ecosystem-series-ep4-5/",
+   "date": "2026-11-16T23:58:24+00:00",
+   "text": "As AI workloads evolve toward inference and agentic AI, the criteria for system performance are also changing. Computing power alone is no longer enough. Where data is stored, how quickly it moves, and how efficiently it is processed now have",
+   "quelle": "RSS"
+  },
+  {
+   "sym": "NVDA",
+   "name": "Nvidia",
+   "title": "NVIDIA DGX Spark Developer Kit Turns a Desk Into a Supercomputing Lab",
+   "link": "https://blogs.nvidia.com/blog/dgx-spark-hpc-developer-kit-sc26/",
+   "date": "2026-11-16T23:00:05+00:00",
+   "text": "",
+   "quelle": "RSS"
+  },
+  {
+   "sym": "MSFT",
+   "name": "Microsoft",
+   "title": "Join us Nov. 17 for live coverage and top news from Microsoft Ignite",
+   "link": "https://news.microsoft.com/events/ignite/2026/live-news/",
+   "date": "2026-11-16T20:06:57+00:00",
+   "text": "The post Join us Nov. 17 for live coverage and top news from Microsoft Ignite appeared first on Source.",
+   "quelle": "RSS"
+  },
+  {
+   "sym": "NVDA",
+   "name": "Nvidia",
+   "title": "How the World’s Most Advanced AI Infrastructure Supply Chain Invents the Future",
+   "link": "https://blogs.nvidia.com/blog/ai-infrastructure-supply-chain/",
+   "date": "2026-11-16T20:00:37+00:00",
+   "text": "",
+   "quelle": "RSS"
+  },
   {
    "sym": "IBM",
    "name": "IBM",
@@ -741,15 +786,6 @@
    "quelle": "RSS"
   },
   {
-   "sym": "NVDA",
-   "name": "Nvidia",
-   "title": "How AI Helps Recyclers Turn Mixed Waste Into Reusable Material",
-   "link": "https://blogs.nvidia.com/blog/ai-recycling-startups/",
-   "date": "2026-11-11T03:00:20+00:00",
-   "text": "",
-   "quelle": "RSS"
-  },
-  {
    "sym": "000660.KS",
    "name": "SK Hynix",
    "title": "‘Safeguarding against system failures and cyber threats’: SK hynix builds trust in physical AI memory",
@@ -827,15 +863,6 @@
    "title": "Samsung Gallery Makes It Easier To Access Photos and Videos Across Galaxy Devices",
    "link": "https://news.samsung.com/global/samsung-gallery-makes-it-easier-to-access-photos-and-videos-across-galaxy-devices",
    "date": "2026-11-10T21:00:00+00:00",
-   "text": "",
-   "quelle": "RSS"
-  },
-  {
-   "sym": "NVDA",
-   "name": "Nvidia",
-   "title": "Statement From the Independent Members of the NVIDIA Board",
-   "link": "https://nvidianews.nvidia.com/news/statement-from-the-independent-members-of-the-nvidia-board",
-   "date": "2026-11-10T19:07:00+00:00",
    "text": "",
    "quelle": "RSS"
   },
@@ -1286,15 +1313,6 @@
    "link": "https://www.investor.jnj.com/investor-news/news-details/2026/Johnson--Johnson-announces-new-Phase-2-nipocalimab-study-data-in-Sjgrens-disease-that-reveal-insights-on-importance-of-symptom-improvements-most-valued-by-patients/default.aspx",
    "date": "2026-11-07T15:03:00+00:00",
    "text": "",
-   "quelle": "RSS"
-  },
-  {
-   "sym": "MSFT",
-   "name": "Microsoft",
-   "title": "How catching AI agent mistakes can make them more reliable",
-   "link": "https://commandline.microsoft.com/thinkingbox-part-two-expanded-model-evals-reinforcement-learning-rewards/",
-   "date": "2026-11-07T00:35:00+00:00",
-   "text": "The post How catching AI agent mistakes can make them more reliable appeared first on Source.",
    "quelle": "RSS"
   },
   {
@@ -2202,15 +2220,6 @@
    "link": "https://www.hyundai.com/worldwide/en/newsroom/detail/0000001300",
    "date": "2026-10-30T06:00:00+00:00",
    "text": "Hyundai Motor Group plans to establish two special-purpose companies to develop an AI data center in Saemangeum, Gunsan city, and GPU services\nConstruction is targeted to begin in early 2027, with services planned to start in early 2030\nHMG Saemangeum Office opens as part of AI data center project, providing a hub for collaborating with local stakeholders and advancing project execution\nThe data center is expected to support AI development for autonomous driving, robotics and vehicle engineering",
-   "quelle": "RSS"
-  },
-  {
-   "sym": "000660.KS",
-   "name": "SK Hynix",
-   "title": "SK hynix Hosts First Partners Day in Japan, Sharing Business Direction with Key Local Partners",
-   "link": "https://news.skhynix.com/en/2026-partners-day-japan/",
-   "date": "2026-10-30T04:50:32+00:00",
-   "text": "As advances in AI technology drive rapid growth in memory demand, global collaboration is becoming increasingly important to securing stable supply chains. In order to share its business direction and further strengthen their partnerships, SK hynix brought together key partners",
    "quelle": "RSS"
   },
   {
@@ -4356,47 +4365,16 @@
    "date": "2026-09-18T04:00:00+00:00",
    "text": "",
    "quelle": "RSS"
-  },
-  {
-   "sym": "9433.T",
-   "name": "KDDI",
-   "title": "Launch of a Distributed Data Center Demonstration Utilizing Retail Robots",
-   "link": "https://newsroom.kddi.com/english/news/detail/kddi_nr-1169_4724.html",
-   "date": "2026-09-18T02:00:00+00:00",
-   "text": "Launch of a Distributed Data Center Demonstration Utilizing Retail Robots",
-   "quelle": "RSS"
-  },
-  {
-   "sym": "PEP",
-   "name": "PepsiCo",
-   "title": "Führungswechsel",
-   "link": "https://www.sec.gov/Archives/edgar/data/77476/000007747626000042/pep-20260917.htm",
-   "date": "2026-09-17T21:10:36+00:00",
-   "text": "",
-   "quelle": "SEC",
-   "kat": "Führungswechsel",
-   "form": "8-K"
-  },
-  {
-   "sym": "TXN",
-   "name": "Texas Instruments",
-   "title": "7% to $1.52 per share, marking 23 consecutive years of increases",
-   "link": "https://www.sec.gov/Archives/edgar/data/97476/000095010326014118/dp253473_8k.htm",
-   "date": "2026-09-17T20:11:46+00:00",
-   "text": "EX-99\n2\ndp253473_ex99.htm\nEXHIBIT 99\nExhibit 99\nTI increases dividend\n7% to $1.52 per share, marking 23 consecutive years of increases\nDALLAS (Sept. 17, 2026) – Texas\nInstruments Incorporated (TI) (Nasdaq: TXN) today said it will raise its quarterly cash dividend 7%, from $1.42 per share to $1.52, or\n$6.08 annualized. The higher dividend will be payable November 10, 2026, to stockholders of record on October 30, 2026, contingent upon\nformal declaration by the board of directors at its regular meeting in October.\nThe increase is consistent with TI’s\nlong-term objective for dividends by providing a sustainable and growing dividend and reflects the company’s continued commitment\nto return all free cash flow to its owners over time. Today’s announcement marks 23 consecutive years of dividend increases.\nNotice regarding forward-looking statements\nThis release includes forward-looking\nstatements intended to qualify for the safe harbor from liability established by the Private Securities Litigation Reform Act of 1995.\nThese forward-looking statements generally can be identified by phrases such as TI or its management \"believes,\" \"expects,\"\n\"anticipates,\" \"foresees,\" \"forecasts,\" \"estimates\" or other words or phrases of similar import.\nSimilarly, statements herein that describe TI's business strategy, outlook, objectives, plans, intentions or goals also are forward-looking\nstatements. All such forward-looking statements are subject to certain risks and uncertainties that could cause actual results to differ\nmaterially from those in forward-looking statements.\nWe urge you to carefully consider the\nfollowing important factors that could cause actual results to differ materially from the expectations of TI or our management:\n·Economic,\nsocial and political conditions, and natural events in the countries in which we, our customers\nor our suppliers operate, including global trade policies;\n·Our\nability to compete in products and prices in an intensely competitive industry;\n·Market\ndemand for semiconductors, particularly in the industrial and automotive markets, and customer\ndemand that differs from forecasts;\n·Losses\nor curtailments of purchases from key customers or the timing and amount of customer inventory\nadjustments;\n·Evolving\ncybersecurity and other threats relating to our information technology systems or those of\nour customers, suppliers and other third parties;\n·Our\nability to successfully implement and realize opportunities from strategic, business and\norganizational changes, or our ability to realize our expectations regarding the amount and\ntiming of associated restructuring charges and cost savings;\n·Our\nability to develop, manufacture and market innovative products in a rapidly changing technological\nenvironment, our timely implementation of new manufacturing technologies and installation\nof manufacturing equipment, and our ability to realize expected returns on significant investments\nin manufacturing capacity;\n·Availability\nand cost of key materials, utilities, manufacturing equipment, third-party manufacturing\nservices and manufacturing technology;\n·Our\nability to retain, train and recruit skilled personnel and effectively manage key employee\nsuccession;\n·Product\nliability, warranty or other claims relating to our products, software, manufacturing, delivery,\nservices, design or communications, or recalls by our customers for a product containing\none of our parts;\n·Financial\ndifficulties of our distributors or semiconductor distributors' promotion of competing product\nlines to our detriment; or disputes with current or former distributors;\n·Our\nability to maintain or improve profit margins, including our ability to utilize our manufacturing\nfacilities at sufficient levels to cover our fixed operating costs, in an intensely competitive\nand cyclical industry and changing regulatory environment;\n·Compliance\nwith or changes in the complex laws, rules and regulations to which we are or may become\nsubject, or actions of enforcement authorities, that restrict our ability to operate our\nbusiness or subject us to fines, penalties or other legal liability;\n·Changes\nin tax law and accounting standards that impact the tax rate applicable to us, the jurisdictions\nin which profits are determined to be earned and taxed, adverse resolution of tax audits,\nincreases in tariff rates, and the ability to realize deferred tax assets;\n·Our\nability to maintain and enforce a strong intellectual property portfolio and maintain freedom\nof operation in all jurisdictions where we conduct business; or our exposure to infringement\nclaims;\n·Our\nability to make principal and interest payments on our debt when due;\n·Instability\nin the global credit and financial markets; and\n·Impairments\nof our non-financial assets.\nFor a more detailed discussion of these\nfactors, see the Risk factors discussion in Item 1A of our most recent Form 10-K. The forward-looking statements included in this release\nare made only as of the date of this release, and we undertake no obligation to update the forward-looking statements to reflect subsequent\nevents or circumstances. If we do update any forward-looking statement, you should not infer that we will make additional updates with\nrespect to that statement or any other forward-looking statement.\nAbout Texas Instruments\nTexas Instruments\nIncorporated (Nasdaq: TXN) is a global semiconductor company that designs, manufactures and sells analog and embedded processing\nchips for markets such as industrial, automotive, data center, personal electronics and communications equipment. At our core, we have\na passion to create a better world by making electronics more affordable through semiconductors. This passion is alive today as each\ngeneration of innovation builds upon the last to make our technology more reliable, more affordable and lower power, making it possible\nfor semiconductors to go into electronics everywhere. Learn more at TI.com.",
-   "quelle": "SEC",
-   "kat": "Mitteilung (Reg FD)",
-   "form": "8-K"
   }
  ],
  "errors": [
   {
    "sym": "PEP",
-   "fehler": "HTTP Error 429: Too Many Requests"
+   "fehler": "HTTP Error 402: Payment Required"
   },
   {
    "sym": "PG",
-   "fehler": "HTTP Error 429: Too Many Requests"
+   "fehler": "HTTP Error 402: Payment Required"
   },
   {
    "sym": "LLY",
@@ -4408,15 +4386,15 @@
   },
   {
    "sym": "PFE",
-   "fehler": "HTTP Error 429: Too Many Requests"
+   "fehler": "HTTP Error 402: Payment Required"
   },
   {
    "sym": "MRK",
-   "fehler": "HTTP Error 429: Too Many Requests"
+   "fehler": "HTTP Error 402: Payment Required"
   },
   {
    "sym": "O",
-   "fehler": "HTTP Error 429: Too Many Requests"
+   "fehler": "HTTP Error 402: Payment Required"
   },
   {
    "sym": "V",
@@ -4424,23 +4402,23 @@
   },
   {
    "sym": "JPM",
-   "fehler": "HTTP Error 429: Too Many Requests"
+   "fehler": "HTTP Error 402: Payment Required"
   },
   {
    "sym": "CVX",
-   "fehler": "HTTP Error 429: Too Many Requests"
+   "fehler": "HTTP Error 402: Payment Required"
   },
   {
    "sym": "MCD",
-   "fehler": "HTTP Error 429: Too Many Requests"
+   "fehler": "HTTP Error 402: Payment Required"
   },
   {
    "sym": "HD",
-   "fehler": "HTTP Error 429: Too Many Requests"
+   "fehler": "HTTP Error 402: Payment Required"
   },
   {
    "sym": "TXN",
-   "fehler": "HTTP Error 429: Too Many Requests"
+   "fehler": "HTTP Error 402: Payment Required"
   },
   {
    "sym": "AVGO",
@@ -4448,7 +4426,7 @@
   },
   {
    "sym": "CSCO",
-   "fehler": "HTTP Error 429: Too Many Requests"
+   "fehler": "HTTP Error 402: Payment Required"
   },
   {
    "sym": "MDLZ",
@@ -4460,163 +4438,163 @@
   },
   {
    "sym": "GOOGL",
-   "fehler": "HTTP Error 429: Too Many Requests"
+   "fehler": "HTTP Error 402: Payment Required"
   },
   {
    "sym": "SIE.DE",
-   "fehler": "HTTP Error 429: Too Many Requests"
+   "fehler": "HTTP Error 402: Payment Required"
   },
   {
    "sym": "ALV.DE",
-   "fehler": "HTTP Error 429: Too Many Requests"
+   "fehler": "HTTP Error 402: Payment Required"
   },
   {
    "sym": "MBG.DE",
-   "fehler": "HTTP Error 429: Too Many Requests"
+   "fehler": "HTTP Error 402: Payment Required"
   },
   {
    "sym": "BMW.DE",
-   "fehler": "HTTP Error 429: Too Many Requests"
+   "fehler": "HTTP Error 402: Payment Required"
   },
   {
    "sym": "BAS.DE",
-   "fehler": "HTTP Error 429: Too Many Requests"
+   "fehler": "HTTP Error 402: Payment Required"
   },
   {
    "sym": "MUV2.DE",
-   "fehler": "HTTP Error 429: Too Many Requests"
+   "fehler": "HTTP Error 402: Payment Required"
   },
   {
    "sym": "DHL.DE",
-   "fehler": "HTTP Error 429: Too Many Requests"
+   "fehler": "HTTP Error 402: Payment Required"
   },
   {
    "sym": "ADS.DE",
-   "fehler": "HTTP Error 429: Too Many Requests"
+   "fehler": "HTTP Error 402: Payment Required"
   },
   {
    "sym": "RWE.DE",
-   "fehler": "HTTP Error 429: Too Many Requests"
+   "fehler": "HTTP Error 402: Payment Required"
   },
   {
    "sym": "EOAN.DE",
-   "fehler": "HTTP Error 429: Too Many Requests"
+   "fehler": "HTTP Error 402: Payment Required"
   },
   {
    "sym": "DBK.DE",
-   "fehler": "HTTP Error 429: Too Many Requests"
+   "fehler": "HTTP Error 402: Payment Required"
   },
   {
    "sym": "ASML.AS",
-   "fehler": "HTTP Error 429: Too Many Requests"
+   "fehler": "HTTP Error 402: Payment Required"
   },
   {
    "sym": "MC.PA",
-   "fehler": "HTTP Error 429: Too Many Requests"
+   "fehler": "HTTP Error 402: Payment Required"
   },
   {
    "sym": "OR.PA",
-   "fehler": "HTTP Error 429: Too Many Requests"
+   "fehler": "HTTP Error 402: Payment Required"
   },
   {
    "sym": "TTE.PA",
-   "fehler": "HTTP Error 429: Too Many Requests"
+   "fehler": "HTTP Error 402: Payment Required"
   },
   {
    "sym": "SAN.PA",
-   "fehler": "HTTP Error 429: Too Many Requests"
+   "fehler": "HTTP Error 402: Payment Required"
   },
   {
    "sym": "SU.PA",
-   "fehler": "HTTP Error 429: Too Many Requests"
+   "fehler": "HTTP Error 402: Payment Required"
   },
   {
    "sym": "NESN.SW",
-   "fehler": "HTTP Error 429: Too Many Requests"
+   "fehler": "HTTP Error 402: Payment Required"
   },
   {
    "sym": "NOVN.SW",
-   "fehler": "HTTP Error 429: Too Many Requests"
+   "fehler": "HTTP Error 402: Payment Required"
   },
   {
    "sym": "ROG.SW",
-   "fehler": "HTTP Error 429: Too Many Requests"
+   "fehler": "HTTP Error 402: Payment Required"
   },
   {
    "sym": "UBSG.SW",
-   "fehler": "HTTP Error 429: Too Many Requests"
+   "fehler": "HTTP Error 402: Payment Required"
   },
   {
    "sym": "NOVO-B.CO",
-   "fehler": "HTTP Error 429: Too Many Requests"
+   "fehler": "HTTP Error 402: Payment Required"
   },
   {
    "sym": "ULVR.L",
-   "fehler": "HTTP Error 429: Too Many Requests"
+   "fehler": "HTTP Error 402: Payment Required"
   },
   {
    "sym": "SHEL.L",
-   "fehler": "HTTP Error 429: Too Many Requests"
+   "fehler": "HTTP Error 402: Payment Required"
   },
   {
    "sym": "AZN.L",
-   "fehler": "HTTP Error 429: Too Many Requests"
+   "fehler": "HTTP Error 402: Payment Required"
   },
   {
    "sym": "BP.L",
-   "fehler": "HTTP Error 429: Too Many Requests"
+   "fehler": "HTTP Error 402: Payment Required"
   },
   {
    "sym": "ENEL.MI",
-   "fehler": "HTTP Error 429: Too Many Requests"
+   "fehler": "HTTP Error 402: Payment Required"
   },
   {
    "sym": "ISP.MI",
-   "fehler": "HTTP Error 429: Too Many Requests"
+   "fehler": "HTTP Error 402: Payment Required"
   },
   {
    "sym": "IBE.MC",
-   "fehler": "HTTP Error 429: Too Many Requests"
+   "fehler": "HTTP Error 402: Payment Required"
   },
   {
    "sym": "TSM",
-   "fehler": "HTTP Error 429: Too Many Requests"
+   "fehler": "HTTP Error 402: Payment Required"
   },
   {
    "sym": "9988.HK",
-   "fehler": "HTTP Error 429: Too Many Requests"
+   "fehler": "HTTP Error 402: Payment Required"
   },
   {
    "sym": "0700.HK",
-   "fehler": "HTTP Error 429: Too Many Requests"
+   "fehler": "HTTP Error 402: Payment Required"
   },
   {
    "sym": "7203.T",
-   "fehler": "HTTP Error 429: Too Many Requests"
+   "fehler": "HTTP Error 402: Payment Required"
   },
   {
    "sym": "6758.T",
-   "fehler": "HTTP Error 429: Too Many Requests"
+   "fehler": "HTTP Error 402: Payment Required"
   },
   {
    "sym": "BHP.AX",
-   "fehler": "HTTP Error 429: Too Many Requests"
+   "fehler": "HTTP Error 402: Payment Required"
   },
   {
    "sym": "0027.HK",
-   "fehler": "HTTP Error 429: Too Many Requests"
+   "fehler": "HTTP Error 402: Payment Required"
   },
   {
    "sym": "RELIANCE.NS",
-   "fehler": "HTTP Error 429: Too Many Requests"
+   "fehler": "HTTP Error 402: Payment Required"
   },
   {
    "sym": "TATAMOTORS.NS",
-   "fehler": "HTTP Error 429: Too Many Requests"
+   "fehler": "HTTP Error 402: Payment Required"
   },
   {
    "sym": "HEI.DE",
-   "fehler": "HTTP Error 429: Too Many Requests"
+   "fehler": "HTTP Error 402: Payment Required"
   },
   {
    "sym": "FRE.DE",
@@ -4628,15 +4606,15 @@
   },
   {
    "sym": "HOLN.SW",
-   "fehler": "HTTP Error 429: Too Many Requests"
+   "fehler": "HTTP Error 402: Payment Required"
   },
   {
    "sym": "DGE.L",
-   "fehler": "HTTP Error 429: Too Many Requests"
+   "fehler": "HTTP Error 402: Payment Required"
   },
   {
    "sym": "REL.L",
-   "fehler": "HTTP Error 429: Too Many Requests"
+   "fehler": "HTTP Error 402: Payment Required"
   },
   {
    "sym": "AAL.L",
@@ -4644,7 +4622,7 @@
   },
   {
    "sym": "NOKIA.HE",
-   "fehler": "HTTP Error 429: Too Many Requests"
+   "fehler": "HTTP Error 402: Payment Required"
   },
   {
    "sym": "FRE.DE",
