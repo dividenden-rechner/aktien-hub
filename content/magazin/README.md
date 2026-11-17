@@ -19,12 +19,14 @@ Datei anklicken, dann Stift-Symbol: Zeile `draft: true` löschen und speichern, 
 | 29.10.2026 22:42 | Amazon steigert Umsatz im dritten Quartal auf 201,9 Milliarden Dollar | [79738970_2026-10-29/7757_2242-amazon-q3-2026-zahlen.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/79738970_2026-10-29/7757_2242-amazon-q3-2026-zahlen.md) |
 | 29.10.2026 10:12 | Shell erzielt im dritten Quartal 10,8 Milliarden Dollar Gewinn | [79738970_2026-10-29/8987_1012-shell-q3-2026-ergebnisse.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/79738970_2026-10-29/8987_1012-shell-q3-2026-ergebnisse.md) |
 
-### Online (405)
+### Online (407)
 
 | Datum | Titel | Datei |
 |---|---|---|
 | 18.11.2026 08:00 | Imperial Brands 2026: Gewinn je Aktie plus 8,8 %, aber der Berichtsgewinn fällt | [79738883_2026-11-17/9110_0830-imperial-brands-jahreszahlen-2026.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/79738883_2026-11-17/9110_0830-imperial-brands-jahreszahlen-2026.md) |
 | 17.11.2026 13:39 | Übernahme von 100 % der Anteile: Pigeon expandiert mit 381,3 Mio. USD teurem Zukauf in den USA | [79738882_2026-11-17/8660_1339-pigeon-uebernahme-eleeo-brands-usa-expansion.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/79738882_2026-11-17/8660_1339-pigeon-uebernahme-eleeo-brands-usa-expansion.md) |
+| 17.11.2026 13:39 | JD.com: Nettogewinn steigt um 22,6 % auf 6,5 Mrd. RMB, verfehlt aber Analysten-Erwartungen | [79738882_2026-11-17/8660_1339-jd-com-q3-gewinn-erwartungen-verfehlt-2026.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/79738882_2026-11-17/8660_1339-jd-com-q3-gewinn-erwartungen-verfehlt-2026.md) |
+| 17.11.2026 13:39 | Gewinn soll um 3 bis 6 % steigen: Jardine Matheson kündigt mindestens 2,50 USD Dividende an | [79738882_2026-11-17/8660_1339-jardine-matheson-gewinnwachstum-dividende-2026.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/79738882_2026-11-17/8660_1339-jardine-matheson-gewinnwachstum-dividende-2026.md) |
 | 17.11.2026 11:50 | Datenleak kostet die Deutsche Bank knapp 6 Prozent an der Börse | [79738883_2026-11-17/8849_1150-deutsche-bank-datenleak-aktie.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/79738883_2026-11-17/8849_1150-deutsche-bank-datenleak-aktie.md) |
 | 17.11.2026 11:00 | Home Depot: Richard McPhail übernimmt den CEO-Posten vom Finanzchef | [79738883_2026-11-17/9130_1100-home-depot-neuer-ceo.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/79738883_2026-11-17/9130_1100-home-depot-neuer-ceo.md) |
 | 16.11.2026 21:10 | Fed-Zinsen: Chance auf einen halben Prozentpunkt mehr zur Juli-Sitzung 2027 steigt auf 97 % | [79738883_2026-11-16/8978_1031-fed-zinsen-erhoehung-chance.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/79738883_2026-11-16/8978_1031-fed-zinsen-erhoehung-chance.md) |
