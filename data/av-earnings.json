@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-16 13:58 UTC",
+ "updated": "2026-11-17 04:46 UTC",
  "quelle": "Alpha Vantage",
  "items": [
   {
@@ -246,7 +246,7 @@
    "eps_n": 17,
    "rev_est": 2137782700.0,
    "rev_n": 15,
-   "est_stand": "2026-11-14"
+   "est_stand": "2026-11-17"
   },
   {
    "sym": "BHP",
@@ -259,7 +259,7 @@
    "eps_n": 0,
    "rev_est": 0.0,
    "rev_n": 0,
-   "est_stand": "2026-11-14"
+   "est_stand": "2026-11-17"
   },
   {
    "sym": "DIS",
@@ -268,11 +268,11 @@
    "fiscal": "2026-09-30",
    "cur": "USD",
    "zeit": "vor",
-   "eps_est": 1.6901,
+   "eps_est": 1.681,
    "eps_n": 23,
-   "rev_est": 25155317560.0,
-   "rev_n": 21,
-   "est_stand": "2026-11-14"
+   "rev_est": 25148666760.0,
+   "rev_n": 22,
+   "est_stand": "2026-11-17"
   },
   {
    "sym": "ESLT",
@@ -285,7 +285,7 @@
    "eps_n": 4,
    "rev_est": 2257018670.0,
    "rev_n": 3,
-   "est_stand": "2026-11-14"
+   "est_stand": "2026-11-17"
   },
   {
    "sym": "HD",
@@ -294,11 +294,11 @@
    "fiscal": "2026-10-31",
    "cur": "USD",
    "zeit": "vor",
-   "eps_est": 3.8373,
+   "eps_est": 3.838,
    "eps_n": 30,
-   "rev_est": 42778385490.0,
-   "rev_n": 26,
-   "est_stand": "2026-11-14"
+   "rev_est": 42779693430.0,
+   "rev_n": 27,
+   "est_stand": "2026-11-17"
   },
   {
    "sym": "JD",
@@ -307,25 +307,24 @@
    "fiscal": "2026-09-30",
    "cur": "USD",
    "zeit": "vor",
-   "eps_est": 5.9199,
+   "eps_est": 5.8799,
    "eps_n": 19,
-   "rev_est": 309876896060.0,
+   "rev_est": 309801336060.0,
    "rev_n": 25,
-   "est_stand": "2026-11-11"
+   "est_stand": "2026-11-17"
   },
   {
    "sym": "KLAR",
    "datum": "2026-11-17",
    "name": "KLARNA GROUP PUBLIC LIMITED COMPANY",
-   "fiscal": "2026-09-30",
+   "fiscal": "2025-12-31",
    "cur": "USD",
    "zeit": "vor",
-   "eps_est": -0.16,
+   "eps_est": null,
    "eps_n": 0,
    "rev_est": 1057021650.0,
    "rev_n": 13,
-   "est_stand": "2026-11-11",
-   "eps_src": "kalender"
+   "est_stand": "2026-11-17"
   },
   {
    "sym": "NVDA",
@@ -334,11 +333,11 @@
    "fiscal": "2026-10-31",
    "cur": "USD",
    "zeit": "nach",
-   "eps_est": 2.4733,
-   "eps_n": 44,
-   "rev_est": 108976833310.0,
+   "eps_est": 2.4712,
+   "eps_n": 43,
+   "rev_est": 108731903900.0,
    "rev_n": 45,
-   "est_stand": "2026-11-11"
+   "est_stand": "2026-11-17"
   },
   {
    "sym": "PDD",
@@ -349,9 +348,9 @@
    "zeit": "",
    "eps_est": 18.8414,
    "eps_n": 11,
-   "rev_est": 115643262410.0,
-   "rev_n": 12,
-   "est_stand": "2026-11-11"
+   "rev_est": 115509319140.0,
+   "rev_n": 13,
+   "est_stand": "2026-11-17"
   },
   {
    "sym": "TME",
@@ -364,7 +363,7 @@
    "eps_n": 10,
    "rev_est": 9141209060.0,
    "rev_n": 13,
-   "est_stand": "2026-11-11"
+   "est_stand": "2026-11-17"
   },
   {
    "sym": "BLSH",
@@ -582,6 +581,16 @@
    "eps_src": "kalender"
   },
   {
+   "sym": "PDD",
+   "datum": "2026-11-19",
+   "eps_est": 2.61,
+   "eps_src": "kalender",
+   "name": "PDD HOLDINGS INCORPORATED",
+   "fiscal": "2026-09-30",
+   "cur": "USD",
+   "zeit": "vor"
+  },
+  {
    "sym": "ROST",
    "datum": "2026-11-19",
    "name": "ROSS STORES INCORPORATED",
@@ -778,6 +787,36 @@
    "zeit": "vor",
    "eps_est": 4.07,
    "eps_src": "kalender"
+  },
+  {
+   "sym": "CRWD",
+   "datum": "2026-12-01",
+   "eps_est": 0.0,
+   "eps_src": "kalender",
+   "name": "CROWDSTRIKE HOLDINGS INCORPORATED",
+   "fiscal": "2026-10-31",
+   "cur": "USD",
+   "zeit": "nach"
+  },
+  {
+   "sym": "MRVL",
+   "datum": "2026-12-01",
+   "eps_est": 0.79,
+   "eps_src": "kalender",
+   "name": "MARVELL TECHNOLOGY INCORPORATED",
+   "fiscal": "2026-10-31",
+   "cur": "USD",
+   "zeit": "nach"
+  },
+  {
+   "sym": "NTAP",
+   "datum": "2026-12-01",
+   "eps_est": 2.13,
+   "eps_src": "kalender",
+   "name": "NETAPP INCORPORATED",
+   "fiscal": "2026-10-31",
+   "cur": "USD",
+   "zeit": "nach"
   }
  ]
 }
