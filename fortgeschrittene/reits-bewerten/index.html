@@ -179,7 +179,8 @@ function draw(){
   body.innerHTML=list.map(function(r){
     var logo=window.HubLogos ? window.HubLogos.img("lg", r.t, "", r.name) : "";
     var cls=(r.pffo==null||!med) ? "" : r.pffo < med*0.9 ? " g" : r.pffo > med*1.1 ? " r" : "";
-    return '<tr><td class="fi"><a href="../../aktien-hub/?s='+encodeURIComponent(r.t)+'" style="text-decoration:none;color:inherit"><span class="fn">'+logo+'<span><b>'+esc(r.t)+'</b><small>'+esc(r.name)+'</small></span></span></a></td>'+
+    var ziel=DIV[String(r.t).toUpperCase()]?"../../dividende/"+DIV[String(r.t).toUpperCase()]+"/":"../../aktien-hub/?s="+encodeURIComponent(r.t);
+    return '<tr><td class="fi"><a href="'+ziel+'" style="text-decoration:none;color:inherit"><span class="fn">'+logo+'<span><b>'+esc(r.t)+'</b><small>'+esc(r.name)+'</small></span></span></a></td>'+
       '<td>'+num(r.kurs,2)+'</td><td>'+num(r.mc,2)+'</td><td class="pn'+cls+'">'+(r.pffo==null?"–":num(r.pffo,1)+" x")+'</td><td>'+(r.ffor==null?"–":num(r.ffor,1)+" %")+'</td><td>'+(r.rend==null?"–":num(r.rend,2)+" %")+'</td><td>'+(r.ffoq==null?"–":num(r.ffoq,0)+" %")+'</td></tr>';
   }).join("");
   document.querySelectorAll("#reit-tab thead button").forEach(function(b){
@@ -194,7 +195,13 @@ document.querySelectorAll("#reit-tab thead button").forEach(function(b){
     draw();
   });
 });
-fetch("../../data/kennzahlen.json",{cache:"no-cache"}).then(function(r){return r.json();}).then(function(d){
+var DIV={};
+var divP=fetch("../../data/dividendenseiten.json",{cache:"no-cache"}).then(function(r){return r.json();}).then(function(c){
+  var firmen=Array.isArray(c)?c:(c.firmen||c.firms||[]);
+  firmen.forEach(function(f){ if(f&&f.sym&&f.slug) DIV[String(f.sym).toUpperCase()]=f.slug; });
+}).catch(function(){});
+var kzP=fetch("../../data/kennzahlen.json",{cache:"no-cache"}).then(function(r){return r.json();});
+Promise.all([kzP,divP]).then(function(res){ var d=res[0];
   var w=d.werte||d;
   var KEIN_REIT={"8801.T":1,"CSGP":1};   /* Immobilienkonzern (Japan) und Datenanbieter, keine REITs */
   rows=Object.keys(w).filter(function(t){ var v=w[t]; return v && v.sektor==="Real Estate" && !KEIN_REIT[t] && typeof v.kurs_usd==="number"; }).map(function(t){
