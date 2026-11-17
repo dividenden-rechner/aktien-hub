@@ -164,3 +164,4 @@ article p,article li,article td{overflow-wrap:anywhere}
 
 .tl{width:24px;height:24px;border-radius:6px;object-fit:contain;vertical-align:middle;margin-right:8px;background:#fff}.tl-0{display:inline-block;background:#f1f5f9}.post td:first-child{white-space:nowrap}
 .tl[src*=".mono."]{background:#94a3b8;padding:2px}
+.firmlink{color:inherit;text-decoration:underline;text-decoration-color:var(--acc);text-decoration-thickness:2px;text-underline-offset:2px}

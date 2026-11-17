@@ -260,21 +260,37 @@ def _tl(m):
     return '<span class="tl tl-0"></span>'
 
 
+# Firmennamen im Fliesstext verlinken. Ziel: Dividendenseite, wenn es sie gibt.
+# HUB_VERLINKEN: spaeter auf True, dann verweisen auch Firmen ohne Dividendenseite auf den Aktien-Hub.
+# Solange der Hub oeffentlich versteckt ist, entfernt live_filter diese Links ohnehin (nur Text bleibt).
+HUB_VERLINKEN = False
 _FIRMEN = None
 def _firmen():
-    """Firmennamen aus den Dividendenseiten: name -> slug (nur Firmen, deren Seite es gibt)."""
+    """Liste (Name, Ziel relativ zur Wurzel): erst Dividendenseiten, optional danach Hub-Firmen."""
     global _FIRMEN
     if _FIRMEN is None:
+        liste = []
         try:
             c = json.load(open("data/dividendenseiten.json", encoding="utf-8"))
-            _FIRMEN = [(f["name"], f["slug"]) for f in c.get("firmen", []) if len(f.get("name", "")) >= 4 and f.get("name") != "Target"]
-            _FIRMEN.sort(key=lambda x: -len(x[0]))
+            liste += [(f["name"], "dividende/" + f["slug"] + "/") for f in c.get("firmen", []) if len(f.get("name", "")) >= 4]
         except Exception:
-            _FIRMEN = []
+            pass
+        if HUB_VERLINKEN:
+            try:
+                w = json.load(open("data/kennzahlen.json", encoding="utf-8"))["werte"]
+                liste += [(v["name"], "aktien-hub/?s=" + t) for t, v in w.items() if v.get("name") and len(v["name"]) >= 5]
+            except Exception:
+                pass
+        liste = [x for x in liste if x[0] != "Target"]
+        seen = set(); out = []
+        for n, z in liste:
+            if n not in seen: seen.add(n); out.append((n, z))
+        out.sort(key=lambda x: -len(x[0]))
+        _FIRMEN = out
     return _FIRMEN
 
 def firmen_links(h, depth):
-    """Erste Nennung jeder Firma im Fließtext wird zum Link auf ihre Dividendenseite (nicht in Links, Überschriften, Code)."""
+    """Erste Nennung jeder Firma im Fliesstext wird zum Link (nicht in Links, Ueberschriften, Code)."""
     pre = "../" * depth
     gesetzt = set()
     skip = 0
@@ -283,15 +299,14 @@ def firmen_links(h, depth):
         if t.startswith("<"):
             m = re.match(r"<(/?)(a|h[1-6]|code|script|style)\b", t, re.I)
             if m:
-                skip += -1 if m.group(1) else 1
-                skip = max(skip, 0)
+                skip = max(0, skip + (-1 if m.group(1) else 1))
             continue
         if skip: continue
-        for name, slug in _firmen():
+        for name, ziel in _firmen():
             if name in gesetzt: continue
             pat = re.compile(r"(?<![\w\-])" + re.escape(name) + r"(?![\w\-])")
             if pat.search(t):
-                t = pat.sub(f'<a href="{pre}dividende/{slug}/">{name}</a>', t, count=1)
+                t = pat.sub(f'<a class="firmlink" href="{pre}{ziel}">{name}</a>', t, count=1)
                 gesetzt.add(name)
         teile[i] = t
     return "".join(teile)
