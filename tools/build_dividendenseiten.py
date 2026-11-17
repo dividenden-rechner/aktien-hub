@@ -284,11 +284,14 @@ def peer_block(sym, cfg_by_sym, gruppen):
 def seite(r, kopf_links, kopf, fuss, mag, kurs_datum, sec_stand, usd_je_eur, jahr):
     f = r["f"]; name = f["name"]; url = f"dividende/{f['slug']}/"
     rend = proz(r["rendite"]) if r["rendite"] else None
-    title = f"{name} Dividende {jahr}: Rendite, Historie und Termine"
+    title = f"{name} Dividende {jahr}: Rendite, Termine und Historie"
+    kennung = ", ".join(x for x in (f"ISIN {r['isin']}" if r.get("isin") else "", f"WKN {r['wkn']}" if r.get("wkn") else "") if x)
     desc_teile = [f"{name} zahlt aufs Jahr gerechnet eine reguläre Dividende von {de(r['dps_jahr'])} US-Dollar je Aktie" if r["dps_jahr"] else
                   f"{name} zahlte im Geschäftsjahr {r['gj_letzt']} eine Dividende von {de(r['dps_letzt'])} US-Dollar je Aktie"]
     if rend: desc_teile.append(f"die Dividendenrendite liegt bei rund {rend}")
-    desc = ", ".join(desc_teile) + ". Historie, Wachstum, Ausschüttungsquote, Termine und Rechner."
+    # Kurz halten (Suchmaschinen zeigen rund 155 Zeichen): Rendite, Jahresdividende, Zahlweise, dann ISIN/WKN fuer die Suche danach
+    desc = (f"{name} Dividende: " + (f"{rend} Rendite, " if rend else "") + f"{de(r['dps_basis'])} USD je Aktie im Jahr, "
+            f"{RHYTHMUS.get(f['rhythmus'], 'regelmäßig')} gezahlt. Termine, Historie, Rechner." + (f" {kennung}" if kennung else ""))
     rhythmus = RHYTHMUS.get(f["rhythmus"], "regelmäßig")
 
     # Einleitung: eine kurze, aus den Zahlen gebaute Einordnung
@@ -438,6 +441,10 @@ a.addEventListener("input",function(){{b.value="";r()}});b.addEventListener("inp
                        f"{name} hat die Dividende {jahre_text(sj)} in Folge erhöht" + (" und zählt damit zu den Dividend Kings." if sj >= 50 else " und zählt damit zu den Dividendenaristokraten." if sj >= 25 else ".")))
     elif se and sj == 0:
         faq.insert(1, (f"Erhöht {name} die Dividende jedes Jahr?", se.get("text", "")))
+    if kennung:
+        faq.append((f"Welche WKN und ISIN hat die {name}-Aktie?",
+                    f"Die {name}-Aktie hat " + (f"die ISIN {r['isin']}" if r.get("isin") else "") + (" und " if r.get("isin") and r.get("wkn") else "")
+                    + (f"die WKN {r['wkn']}" if r.get("wkn") else "") + f". Das Börsenkürzel in den USA ist {f['sym']}."))
     faq_html = "".join(f"<details><summary>{esc(q)}</summary><p>{esc(a)}</p></details>" for q, a in faq)
 
     ld = [
@@ -445,6 +452,12 @@ a.addEventListener("input",function(){{b.value="";r()}});b.addEventListener("inp
             {"@type": "ListItem", "position": 1, "name": "Start", "item": BASE},
             {"@type": "ListItem", "position": 2, "name": "Dividenden", "item": BASE + "dividende/"},
             {"@type": "ListItem", "position": 3, "name": f"{name} Dividende", "item": BASE + url}]},
+        {"@context": "https://schema.org", "@type": "WebPage", "name": title, "description": desc, "url": BASE + url, "inLanguage": "de-DE",
+         "dateModified": datetime.date.today().isoformat(), "isPartOf": {"@type": "WebSite", "name": "Dividenden-Rechner", "url": BASE},
+         "primaryImageOfPage": BASE + url + "og.png" if r.get("og_bild") else BASE + "assets/og-default.png",
+         "about": {"@type": "Corporation", "name": name, "legalName": r.get("sec_name") or name, "tickerSymbol": f["sym"],
+                   **({"identifier": [{"@type": "PropertyValue", "propertyID": p, "value": v} for p, v in (("ISIN", r.get("isin")), ("WKN", r.get("wkn"))) if v]}
+                      if r.get("isin") or r.get("wkn") else {})}},
         {"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [
             {"@type": "Question", "name": q, "acceptedAnswer": {"@type": "Answer", "text": a}} for q, a in faq]},
     ]
@@ -457,6 +470,7 @@ a.addEventListener("input",function(){{b.value="";r()}});b.addEventListener("inp
         serie_quelle_html = (f'<li>Dividendenerhöhungen in Folge: <a href="{esc(se["quelle"])}" rel="nofollow noopener" target="_blank">{esc(dom)}</a>'
                              f' (Stand {datum(se["stand"]) if se.get("stand") else "–"})</li>')
     heute = datetime.date.today().isoformat()
+    og_img = BASE + url + "og.png" if r.get("og_bild") else BASE + "assets/og-default.png"
     logo = logo_span(f["sym"], name, "../../")
 
     return f'''<!DOCTYPE html>
@@ -468,15 +482,23 @@ a.addEventListener("input",function(){{b.value="";r()}});b.addEventListener("inp
 <meta name="description" content="{esc(desc)}">
 <meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large">
 <link rel="canonical" href="{BASE}{url}">
-<meta property="og:type" content="website">
+<meta property="og:type" content="article">
 <meta property="og:locale" content="de_DE">
 <meta property="og:site_name" content="Dividenden-Rechner Aktien-Hub">
 <meta property="og:title" content="{esc(title)}">
 <meta property="og:description" content="{esc(desc)}">
 <meta property="og:url" content="{BASE}{url}">
-<meta property="og:image" content="{BASE}assets/og-default.png">
+<meta property="og:image" content="{og_img}">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="{esc(name)} Dividende{(' – ' + esc(kennung)) if kennung else ''}">
+<meta property="article:modified_time" content="{heute}">
 <meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="{esc(title)}">
+<meta name="twitter:description" content="{esc(desc)}">
+<meta name="twitter:image" content="{og_img}">
 <meta name="theme-color" content="#ffffff">
+<link rel="alternate" hreflang="de" href="{BASE}{url}">
 <link rel="stylesheet" href="../../assets/site.css">
 {ld_html}{kopf_links}
 </head>
@@ -485,7 +507,7 @@ a.addEventListener("input",function(){{b.value="";r()}});b.addEventListener("inp
 <main class="wrap"><article>
 <nav class="crumbs" aria-label="Brotkrumen"><a href="../../">Start</a> › <a href="../">Dividenden</a> › <span aria-current="page">{esc(name)}</span></nav>
 <div class="titlerow" style="gap:12px">{logo}<h1>{esc(name)} Dividende</h1></div>
-<p class="meta">Stand: {datum(heute)} · Kurs vom {kurs_d} · Kürzel {esc(f["sym"])}{" · ISIN " + esc(r["isin"]) if r.get("isin") else ""}</p>
+<p class="meta">Stand: {datum(heute)} · Kurs vom {kurs_d} · Kürzel {esc(f["sym"])}{" · ISIN " + esc(r["isin"]) if r.get("isin") else ""}{" · WKN " + esc(r["wkn"]) if r.get("wkn") else ""}</p>
 <p class="lead">{lead}</p>
 <div class="tablewrap"><table><tbody>{tab}</tbody></table></div>
 {quote_text}
@@ -598,8 +620,7 @@ def aristokraten(rs, kopf_links, kopf, fuss, jahr):
         ohne_html = ('<h2>Ohne lange Erhöhungsserie</h2><p>Diese Werte zahlen Dividende, haben sie aber nur kurz oder zuletzt gar nicht erhöht: '
                      + ", ".join(f'<a href="../{r["f"]["slug"]}/">{esc(r["f"]["name"])}</a>' for r in ohne) + ".</p>")
     title = f"Dividend Kings und Dividendenaristokraten {jahr}: Liste mit Rendite"
-    desc = (f"Welche US-Aktien ihre Dividende seit 25 oder 50 Jahren in Folge erhöhen: Procter & Gamble, Coca-Cola, Johnson & Johnson, PepsiCo und weitere, "
-            f"mit Rendite und Dividendenwachstum. Täglich aktualisiert.")
+    desc = "Dividend Kings und Dividendenaristokraten: US-Aktien mit 25 oder 50 Jahren Dividendenerhöhung in Folge, mit Rendite und Wachstum. Täglich aktualisiert."
     return f'''<!DOCTYPE html>
 <html lang="de">
 <head>
@@ -650,6 +671,7 @@ def sitemap_llms(eintraege):
     s = re.sub(r"- \[[^\]]*\]\(" + re.escape(BASE) + r"dividende/[^)]*\)[^\n]*\n", "", s)
     add = "".join(f"- [{t}]({BASE}{u}): {d}\n" for u, t, d in eintraege)
     s = s.replace("\n## Hinweis", "\n" + add + "\n## Hinweis", 1) if "\n## Hinweis" in s else s.rstrip("\n") + "\n" + add
+    s = re.sub(r"\n{4,}", "\n\n\n", s)
     open(f, "w", encoding="utf-8").write(s)
 
 
@@ -668,11 +690,64 @@ def weiterleitungen(rs):
     w.writeheader(); w.writerows(rows)
 
 
+WKN = {}
+OG_MERK_PFAD = os.path.join(ROOT, "data", "dividende-og.json")   # welche ISIN/WKN im Vorschaubild steht
+try:
+    OG_MERK = json.load(open(OG_MERK_PFAD, encoding="utf-8"))
+except Exception:
+    OG_MERK = {}
+
+
+def og_bild(r):
+    """Vorschaubild fuer Open Graph (1200x630) je Firma: Logo, Name, ISIN/WKN, keine Tageswerte (aendert sich so nicht taeglich).
+    Wird nur erzeugt, wenn es fehlt oder sich ISIN/WKN geaendert haben (Pillow noetig, sonst bleibt das Standardbild)."""
+    f = r["f"]; ziel = os.path.join(ROOT, "dividende", f["slug"], "og.png")
+    kennung = " · ".join(x for x in (f"ISIN {r['isin']}" if r.get("isin") else "", f"WKN {r['wkn']}" if r.get("wkn") else "", f"Kürzel {f['sym']}") if x)
+    if os.path.exists(ziel) and OG_MERK.get(f["slug"]) == kennung:
+        r["og_bild"] = True; return
+    try:
+        from PIL import Image, ImageDraw, ImageFont
+    except Exception:
+        r["og_bild"] = os.path.exists(ziel); return
+    def font(size, bold=True):
+        for ff in ("/usr/share/fonts/opentype/inter/Inter-Bold.otf" if bold else "/usr/share/fonts/opentype/inter/Inter-Regular.otf",
+                   "/usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf" if bold else "/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf"):
+            if os.path.exists(ff): return ImageFont.truetype(ff, size)
+        return ImageFont.load_default()
+    W, H, GR = 1200, 630, (47, 158, 91)
+    im = Image.new("RGB", (W, H), "white"); d = ImageDraw.Draw(im)
+    d.rectangle([0, 0, W, 70], fill=GR); d.rectangle([0, H - 70, W, H], fill=GR)
+    d.text((48, 35), "DIVIDENDE", font=font(30), fill="white", anchor="lm")
+    d.text((W // 2, H - 35), "www.dividenden-rechner.de", font=font(28, False), fill="white", anchor="mm")
+    k = f["sym"].lower()
+    lp = next((x for x in (os.path.join(ROOT, "assets", "logos", k + ".png"), os.path.join(ROOT, "assets", "logos", "hub", f["sym"].upper() + ".png")) if os.path.exists(x)), None)
+    x0 = 48
+    if lp:
+        try:
+            lg = Image.open(lp).convert("RGBA"); lg.thumbnail((200, 200))
+            im.paste(lg, (48 + (200 - lg.width) // 2, 140 + (200 - lg.height) // 2), lg); x0 = 290
+        except Exception:
+            pass
+    name = f["name"]; fs = 76
+    while fs > 40 and d.textlength(name, font=font(fs)) > W - x0 - 48: fs -= 4
+    d.text((x0, 200), name, font=font(fs), fill=(20, 32, 43), anchor="lm")
+    d.text((x0, 290), "Dividende, Rendite, Termine und Historie", font=font(34, False), fill=(93, 107, 120), anchor="lm")
+    d.line([48, 400, W - 48, 400], fill=(223, 229, 234), width=2)
+    d.text((48, 470), kennung, font=font(32, False), fill=(20, 32, 43), anchor="lm")
+    im.save(ziel, optimize=True)
+    OG_MERK[f["slug"]] = kennung
+    r["og_bild"] = True
+
+
 def main():
     cfg = lade("data/dividendenseiten.json")["firmen"]
     secj = lade("data/sec/fundamentals.json"); sec = secj["firmen"]
     kurse = lade("data/kurse/xetra-letzter.json"); iz = lade("data/kurse/isin-zuordnung.json")
     usd_je_eur = lade("data/wechselkurse-ezb.json")["je_eur"]["USD"]
+    try:
+        WKN.update(lade("data/kurse/wkn.json").get("k", {}))
+    except Exception:
+        pass
     termine = lade("data/dividenden-termine.json").get("firmen", {})
     mag = sorted(lade("data/magazin.json").get("items", []), key=lambda m: m.get("date", ""), reverse=True)
     jahr = datetime.date.today().year
@@ -685,6 +760,9 @@ def main():
         PEER_BLOCKS[f["sym"]] = peer_block(f["sym"], cfg_by_sym, gruppen)
     for f in cfg:
         r = kennzahlen(f, sec, kurse, iz, usd_je_eur, termine)
+        if r:
+            r["wkn"] = f.get("wkn") or WKN.get(r.get("isin") or "")
+            og_bild(r)
         if not r:
             print("übersprungen (keine Daten):", f["sym"]); continue
         h, t, d, u = *seite(r, kl1, k1, f1, mag, kurse.get("datum"), secj.get("stand", ""), usd_je_eur, jahr),
@@ -700,6 +778,7 @@ def main():
     eintraege.insert(1, ("dividende/aristokraten/", t, d))
     sitemap_llms(eintraege)
     weiterleitungen(rs)
+    json.dump(OG_MERK, open(OG_MERK_PFAD, "w", encoding="utf-8"), ensure_ascii=False, indent=0, sort_keys=True)
     print(f"{len(rs)} Dividendenseiten gebaut")
 
 

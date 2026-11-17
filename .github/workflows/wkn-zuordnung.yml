@@ -1,0 +1,33 @@
+name: WKN-Zuordnung (Deutsche Börse, handelbare Instrumente)
+on:
+  push:
+    branches: [main]
+    paths:
+      - "tools/wkn_zuordnung.py"
+      - ".github/workflows/wkn-zuordnung.yml"
+  schedule:
+    - cron: "23 4 * * 1"   # montags
+  workflow_dispatch:
+concurrency:
+  group: wkn-zuordnung
+  cancel-in-progress: false
+permissions:
+  contents: write
+jobs:
+  wkn:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: python3 tools/wkn_zuordnung.py
+      - name: Ergebnis committen
+        run: |
+          git config user.name "dividenden-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add data/kurse/wkn.json
+          if git diff --cached --quiet; then echo "Nichts Neues"; exit 0; fi
+          git commit -m "WKN-Zuordnung aktualisiert"
+          for i in 1 2 3; do git pull --rebase -X theirs -q && git push && break; sleep 5; done
