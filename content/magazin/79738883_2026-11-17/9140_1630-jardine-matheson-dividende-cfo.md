@@ -10,15 +10,17 @@ logo_symbol: JARD
 logo_domain: jardines.com
 logo_file: assets/logos/jard.png
 story_image: assets/magazin/jardine-eps-prognose-folie.png
+image: assets/magazin/jardine-matheson-hongkong-aufmacher.jpg
+image_alt: "Hongkonger Skyline mit dem Riesenrad und dem hellen Jardine House im Vordergrund, dahinter das IFC"
+image_source: "https://unsplash.com/de/@sebastiengoldberg"
+image_artist_url: "https://unsplash.com/de/@sebastiengoldberg"
 story_quartal: {"gewinn":{"label":"Gewinn je Aktie","wert":"5,50–5,65 $","pct":"+3–6 %"},"umsatz":{"label":"Dividende","wert":"mind. 2,50 $","pct":"+6 %"}}
 story_text: "Jardine Matheson hat am 17. November die Zwischenmitteilung zum dritten Quartal 2026 veröffentlicht. Die Gewinnprognose für 2026 liegt bei 5,50 bis 5,65 $ je Aktie und ist damit gegenüber dem bereinigten Vorjahreswert um 3 bis 6 % höher.\n\nDie Mindestdividende für 2026 soll bei 2,50 $ liegen, rund 6 % mehr als im Vorjahr. Gleichzeitig kündigt der Finanzchef Graham Baker seinen Rückzug zum zweiten Quartal 2027 an. Sein externer Nachfolger kommt im ersten Halbjahr 2027.\n\nDer Konzern gibt sich selbstbewusst: Der Rückkauf über 500 Mio. $ ist zu 36 % erledigt, Gammon gehört inzwischen komplett zur Engineering-Sparte, und die Ziele bis 2030 bleiben stehen. Offen ist vor allem, wie schnell die neuen Geschäfte den Gewinn tragen."
-image_alt: "Folie aus der Präsentation von Jardine Matheson: 2026 Gewinnprognose je Aktie von 5,50 bis 5,65 US-Dollar"
-image_credit: "Folie: Jardine Matheson"
-image_lizenz: Folie
+image_credit: "Foto: Sebastien Goldberg auf Unsplash"
+image_lizenz: Unsplash
 ---
 <!-- PRÜFEN: Bereinigter Vorjahreswert 5,33 $ ist die Basis der 3–6 %-Steigerung (laut Mitteilung, bereinigt um Veräußerungen). Der berichtete Wert 2025 lag bei 5,72 $. -->
 <!-- PRÜFEN: Dividendenrendite fehlt, weil der Aktienkurs in den Unterlagen nicht steht. Kurs und Dividendenhistorie nachtragen. -->
-<!-- PRÜFEN: Aufmacherfoto fehlt (Unsplash-Suche steht aus). -->
 
 !!! kurz "Kurz gesagt"
     **Die Dividende:** Für 2026 sollen es mindestens 2,50 $ je Aktie sein, rund 6 % mehr als im Vorjahr.
