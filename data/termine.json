@@ -1,60 +1,6 @@
 {
  "termine": [
   {
-   "sym": "CLX",
-   "name": "Clorox",
-   "art": "ergebnis",
-   "datum": "2026-11-02",
-   "betrag": "",
-   "waehrung": "",
-   "quelle": "https://www.sec.gov/Archives/edgar/data/21076/000002107626000044/ex991-pressreleasedatednov.htm"
-  },
-  {
-   "sym": "EL",
-   "name": "Estée Lauder Companies (The)",
-   "art": "ergebnis",
-   "datum": "2026-11-02",
-   "betrag": "",
-   "waehrung": "USD",
-   "quelle": "https://www.sec.gov/Archives/edgar/data/1001250/000100125026000057/fy2027q1exhibit991.htm"
-  },
-  {
-   "sym": "MAR",
-   "name": "Marriott International",
-   "art": "ergebnis",
-   "datum": "2026-11-02",
-   "betrag": "",
-   "waehrung": "",
-   "quelle": "https://www.sec.gov/Archives/edgar/data/1048286/000104828626000040/mar-2026q3xex99earningsrel.htm"
-  },
-  {
-   "sym": "SAN",
-   "name": "Banco Santander, S.A.",
-   "art": "dividende_zahltag",
-   "datum": "2026-11-02",
-   "betrag": "0.127",
-   "waehrung": "EUR",
-   "quelle": "https://www.sec.gov/Archives/edgar/data/891478/000089147826000098/financieroq326ingles.htm"
-  },
-  {
-   "sym": "SBAC",
-   "name": "SBA Communications",
-   "art": "ergebnis",
-   "datum": "2026-11-02",
-   "betrag": "",
-   "waehrung": "",
-   "quelle": "https://www.sec.gov/Archives/edgar/data/1034054/000119312526443666/d185668dex991.htm"
-  },
-  {
-   "sym": "UDR",
-   "name": "UDR, Inc.",
-   "art": "dividende_zahltag",
-   "datum": "2026-11-02",
-   "betrag": "0.145",
-   "waehrung": "USD",
-   "quelle": "https://www.sec.gov/Archives/edgar/data/74208/000007420826000084/udr-ex99d1.htm"
-  },
-  {
    "sym": "ADM",
    "name": "Archer Daniels Midland",
    "art": "ergebnis",
@@ -1205,6 +1151,15 @@
    "betrag": "0.82",
    "waehrung": "USD",
    "quelle": "https://www.sec.gov/Archives/edgar/data/882095/000088209526000037/exhibit991earningspressrel.htm"
+  },
+  {
+   "sym": "MET",
+   "name": "MetLife",
+   "art": "dividende_zahltag",
+   "datum": "2026-12-15",
+   "betrag": "",
+   "waehrung": "USD",
+   "quelle": "https://www.sec.gov/Archives/edgar/data/1099219/000109921926000064/ex991newsrelease111626.htm"
   },
   {
    "sym": "SAN",
