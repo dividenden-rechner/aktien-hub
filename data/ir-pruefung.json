@@ -4,9 +4,14 @@
  "firmen": {
   "TSN": {
    "periode": "2026-10-03",
-   "status": "nur IR (SEC noch ohne diesen Zeitraum)",
-   "sec_periode": "2026-06-27",
-   "quelle": "Tyson Foods, Supplemental Information Q4 Fiscal 2026 (16.11.2026), Folien 'Free Cash Flow Non-GAAP Reconciliation' und 'Strong Cash Management' (über Quartr)"
+   "status": "bestaetigt",
+   "ocf_sec_mio": 2433,
+   "ocf_ir_mio": 2433,
+   "ocf_abweichung_proz": 0.0,
+   "capex_sec_mio": 770,
+   "capex_ir_mio": 770,
+   "capex_abweichung_proz": 0.0,
+   "quelle": "SEC"
   }
  }
 }
