@@ -208,7 +208,7 @@ def logo_span(sym, name, prefix):
     fehlt auch das, holt logos.js das Bild ueber den Zwischenserver nach und zeigt sonst einen Buchstaben."""
     k = sym.lower()
     if os.path.exists(os.path.join(ROOT, "assets", "logos", k + ".png")):
-        return f'<span class="arlogo"><img src="{prefix}assets/logos/{k}.png" alt="" width="30" height="30" loading="lazy"></span>'
+        return f'<span class="arlogo"><img src="{prefix}assets/logos/{k}.png" alt="" width="30" height="30" loading="lazy" data-sym="{esc(sym.upper())}" data-ph="{esc((name or sym)[:1].upper())}"></span>'
     up = sym.upper()
     ph = esc((name or sym)[:1].upper())
     return (f'<span class="arlogo"><img src="{prefix}assets/logos/hub/{esc(up)}.png" alt="" width="30" height="30" loading="lazy" '

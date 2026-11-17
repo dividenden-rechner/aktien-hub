@@ -48,9 +48,10 @@
     i.dataset.chk = "1";
     try {
       var c = document.createElement("canvas"), w = c.width = 24, h = c.height = 24, x = c.getContext("2d"); x.drawImage(i, 0, 0, w, h);
-      var px = x.getImageData(0, 0, w, h).data, n = 0, lum = 0;
-      for (var k = 0; k < px.length; k += 4) if (px[k + 3] > 128) { n++; lum += 0.2126 * px[k] + 0.7152 * px[k + 1] + 0.0722 * px[k + 2]; }
-      if (n > 8 && lum / n > 205) { i.style.background = "#e4e9ef"; i.style.padding = "4px"; i.style.boxSizing = "border-box"; i.classList.add("lgdark"); }
+      var px = x.getImageData(0, 0, w, h).data, n = 0, hell = 0;
+      for (var k = 0; k < px.length; k += 4) if (px[k + 3] > 128) { n++; if (0.2126 * px[k] + 0.7152 * px[k + 1] + 0.0722 * px[k + 2] > 200) hell++; }
+      /* Helle oder teils helle Logos (weiss auf transparent) bekommen eine dunkelblaue Kachel, damit sie auf hellem Grund sichtbar bleiben. */
+      if (n > 8 && hell / n >= 0.4) { i.style.background = "#1e3a5f"; i.style.padding = "4px"; i.style.boxSizing = "border-box"; i.style.borderRadius = "6px"; i.classList.add("lgdark"); }
     } catch (err) { /* nicht lesbar: so lassen */ }
   }, true);
   window.HubLogos = { byName: byName, dom: dom, fav: fav, img: img };
