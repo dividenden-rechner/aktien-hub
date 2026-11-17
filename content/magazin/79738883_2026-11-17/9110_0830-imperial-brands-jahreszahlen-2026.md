@@ -6,10 +6,12 @@ author: "Redaktions-Team Dividenden-Rechner.de"
 author_bio: "Das Redaktions-Team von Dividenden-Rechner.de schreibt über Dividendenaktien, Kennzahlen und Steuerthemen für Privatanleger. Die Rechner und Auswertungen auf der Seite entstehen im eigenen Haus."
 category: Analyse
 kein_logo: ja
-draft: true
+image: assets/magazin/imperial-brands-blu-produkt-foto.jpg
+image_alt: "Foto zu Imperial Brands: Hand hält eine blu bar Packung mit Erdbeer-Eis-Geschmack, im Hintergrund die Verkaufsverpackung"
+image_credit: "Foto: Imperial Brands"
+image_lizenz: Pressebild
 ---
 <!-- PRÜFEN: Kurs aus dem aktien.guide-Screenshot (35,65 € am 17.11.2026) ist im Text bewusst nicht als Rendite verwendet. Für eine Rendite fehlt der Pfund-Euro-Kurs zum Stichtag. Vor Veröffentlichung ergänzen, falls gewünscht. -->
-<!-- PRÜFEN: Aufmacherfoto fehlt. Über die Unsplash-Anfrage ein Foto zu Zigarettenindustrie, Produktion oder Börse suchen lassen und image, image_alt, image_credit, image_source, image_lizenz ergänzen. -->
 <!-- PRÜFEN: Alle Zahlen stammen aus dem Full Year Results Statement und der Präsentation vom 17.11.2026. Die Ausschüttungsquote ist eine eigene Rechnung aus Dividende und bereinigtem Gewinn je Aktie. -->
 <!-- PRÜFEN: Der Gewinn je Aktie wird in der Tabelle mit konstanter Währung ausgewiesen; die Ist-Veränderung weicht leicht ab (bereinigt +8,3 %). -->
 
