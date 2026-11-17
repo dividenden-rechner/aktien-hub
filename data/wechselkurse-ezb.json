@@ -1,14 +1,14 @@
 {
- "stand": "15.11.2026 09:38 (Berlin)",
- "datum_ezb": "2026-11-13",
+ "stand": "17.11.2026 11:35 (Berlin)",
+ "datum_ezb": "2026-11-16",
  "quelle": "EZB Referenzkurse (taeglich, ca. 16 Uhr CET)",
  "je_eur": {
-  "USD": 1.1052,
-  "JPY": 176.83,
-  "KRW": 1477.8
+  "USD": 1.1014,
+  "JPY": 175.78,
+  "KRW": 1470.23
  },
  "abgeleitet": {
-  "JPY_je_USD": 159.9982,
-  "USD_je_KRW": 0.00074787
+  "JPY_je_USD": 159.5969,
+  "USD_je_KRW": 0.00074913
  }
 }
