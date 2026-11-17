@@ -5,7 +5,10 @@ date: 2026-11-18 08:00
 author: "Redaktions-Team Dividenden-Rechner.de"
 author_bio: "Das Redaktions-Team von Dividenden-Rechner.de schreibt über Dividendenaktien, Kennzahlen und Steuerthemen für Privatanleger. Die Rechner und Auswertungen auf der Seite entstehen im eigenen Haus."
 category: Analyse
-kein_logo: ja
+logo_name: "Imperial Brands"
+logo_symbol: IMB
+logo_domain: imperialbrandsplc.com
+logo_file: assets/logos/imb-l.png
 image: assets/magazin/imperial-brands-blu-produkt-foto.jpg
 image_alt: "Foto zu Imperial Brands: Hand hält eine blu bar Packung mit Erdbeer-Eis-Geschmack, im Hintergrund die Verkaufsverpackung"
 image_credit: "Foto: Imperial Brands"
