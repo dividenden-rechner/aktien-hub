@@ -45,7 +45,9 @@ def datum(iso):
 def gj_label(iso, dez=True):
     """Geschäftsjahr-Beschriftung: Kalenderjahr bei Abschluss im Dezember, sonst z. B. '2025/26'."""
     d = datetime.date.fromisoformat(iso)
-    return str(d.year) if d.month == 12 else f"{d.year - 1}/{str(d.year)[2:]}"
+    if d.month == 12: return str(d.year)
+    if d.month == 1 and d.day <= 10: return str(d.year - 1)   # Abschluss in den ersten Januartagen = Kalenderjahr davor
+    return f"{d.year - 1}/{str(d.year)[2:]}"
 
 
 def betrag(v):
@@ -84,6 +86,26 @@ def kennzahlen(f, sec, kurse, iz, usd_je_eur, termine):
     dps = reihe(k, "dividende_je_aktie", weg)
     if not dps:
         return None
+    # Wer laut Recherche länger erhöht, als unsere Daten zurückreichen, darf in den Daten nicht sinken:
+    # einzelne Ausreißer (falsch zugeordnete Jahreswerte) fallen dann heraus.
+    # nur der jüngste lückenlose Block an Geschäftsjahren
+    for kk in range(len(dps) - 1, 0, -1):
+        if int(dps[kk][0][:4]) - int(dps[kk - 1][0][:4]) > 1:
+            dps = dps[kk:]; break
+    sj = (f.get("serie") or {}).get("jahre")
+    if sj and sj >= len(dps) - 1:
+        i = 0
+        roh = list(dps)
+        while i < len(dps) - 1:
+            if dps[i + 1][1] < dps[i][1] * 0.995:
+                weg_i = i if i == 0 or dps[i + 1][1] >= dps[i - 1][1] else i + 1
+                print(f"  {f['sym']}: Wert {dps[weg_i][0][:4]} ({dps[weg_i][1]}) passt nicht zur Erhöhungsserie, ausgelassen")
+                dps.pop(weg_i); i = max(i - 1, 0)
+            else:
+                i += 1
+        if len(roh) - len(dps) > 2:   # zu viele Brüche: Daten passen nicht zur Serie, nichts glätten
+            print(f"  {f['sym']}: Reihe passt nicht zur Erhöhungsserie, ungeglättet gelassen")
+            dps = roh
     dez = s["gj"][5:7] == "12"
     r = {"f": f, "sec_name": s["n"], "gj": s["gj"], "dez": dez, "dps": dps, "cik": s.get("cik", "")}
     letzt_d, letzt = dps[-1]
@@ -190,7 +212,16 @@ def seite(r, kopf_links, kopf, fuss, mag, kurs_datum, sec_stand, usd_je_eur, jah
     rhythmus = "monatlich" if f["rhythmus"] == 12 else "vierteljährlich"
 
     # Einleitung: eine kurze, aus den Zahlen gebaute Einordnung
-    s = [esc(f["satz"])]
+    sj0 = r["serie_jahre"]
+    if f.get("satz"):
+        einl = f["satz"]
+    elif sj0 and sj0 >= 50:
+        einl = f"{name} zählt zu den Dividend Kings: Die Dividende steigt seit {sj0} Jahren in Folge."
+    elif sj0 and sj0 >= 25:
+        einl = f"{name} gehört zu den Dividendenaristokraten und hat die Dividende {sj0} Jahre in Folge erhöht."
+    else:
+        einl = f"{name} zahlt {rhythmus} eine Dividende."
+    s = [esc(einl)]
     if r["veraenderung"] is not None and len(r["dps"]) >= 2:
         if r["veraenderung"] > 0.0005:
             s.append(f"Im Geschäftsjahr {r['gj_letzt']} stieg die Dividende je Aktie um {proz(r['veraenderung'])} auf {de(r['dps_letzt'])} US-Dollar.")
@@ -318,6 +349,8 @@ a.addEventListener("input",function(){{b.value="";r()}});b.addEventListener("inp
     ]
     ld_html = "".join(f'<script type="application/ld+json">{json.dumps(x, ensure_ascii=False)}</script>\n' for x in ld)
     serie_quelle_html = ""
+    if se and not se.get("quelle") and se.get("quelle_text"):
+        serie_quelle_html = f'<li>Dividendenerhöhungen in Folge: {esc(se["quelle_text"])} (Stand {datum(se["stand"]) if se.get("stand") else "–"})</li>'
     if se and se.get("quelle"):
         dom = re.sub(r"^https?://(www\.)?", "", se["quelle"]).split("/")[0]
         serie_quelle_html = (f'<li>Dividendenerhöhungen in Folge: <a href="{esc(se["quelle"])}" rel="nofollow noopener" target="_blank">{esc(dom)}</a>'
