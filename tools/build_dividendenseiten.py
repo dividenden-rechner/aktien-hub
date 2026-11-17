@@ -1,0 +1,450 @@
+#!/usr/bin/env python3
+"""Baut die öffentlichen Dividendenseiten je Firma:  dividende/<slug>/index.html  und die Übersicht  dividende/index.html.
+
+Daten (nur vorhandene, nichts geschätzt):
+  data/dividendenseiten.json       Firmenliste (Name, Slug, Typ, Zahlungsrhythmus, ein Satz Einordnung, alte Adressen)
+  data/sec/fundamentals.json       Dividende je Aktie, Gewinn je Aktie, Cashflow usw. (SEC, Geschäftsjahre)
+  data/kurse/xetra-letzter.json    letzter Schlusskurs in Euro (über data/kurse/isin-zuordnung.json)
+  data/wechselkurse-ezb.json       USD je EUR (EZB)
+  data/dividenden-termine.json     zuletzt beschlossene Dividende mit Ex-Tag und Zahltag (falls schon erfasst)
+  data/magazin.json                eigene News-Artikel zur Firma (Feld sym)
+
+Danach: Sitemap und llms.txt ergänzen, 301-Weiterleitungen in tools/umzug/redirects-entwurf.csv auf die neuen Seiten setzen.
+Aufruf:  python3 tools/build_dividendenseiten.py
+"""
+import csv, datetime, html, json, os, re
+
+ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+BASE = "https://dividenden-rechner.github.io/aktien-hub/"   # wird beim Live-Bau durch die echte Domain ersetzt
+VORLAGE = os.path.join(ROOT, "grundlagen", "dividendenaristokraten", "index.html")
+STEUER_US = 0.2555   # 15 % US-Quellensteuer (W-8BEN) + 10 % deutsche Abgeltungsteuer nach Anrechnung + Soli darauf, ohne Kirchensteuer
+MONATE = ["Januar", "Februar", "März", "April", "Mai", "Juni", "Juli", "August", "September", "Oktober", "November", "Dezember"]
+esc = lambda s: html.escape(str(s), quote=True)
+
+
+def lade(p):
+    return json.load(open(os.path.join(ROOT, p), encoding="utf-8"))
+
+
+def de(x, n=2):
+    s = f"{x:,.{n}f}"
+    return s.replace(",", "X").replace(".", ",").replace("X", ".")
+
+
+def proz(x, n=1, vz=False):
+    if 0 < abs(x) < 0.005: n = 2
+    s = de(x * 100, n) + " %"
+    return ("+" + s if x > 0 else s) if vz else s
+
+
+def datum(iso):
+    d = datetime.date.fromisoformat(iso[:10])
+    return f"{d.day}. {MONATE[d.month - 1]} {d.year}"
+
+
+def gj_label(iso, dez=True):
+    """Geschäftsjahr-Beschriftung: Kalenderjahr bei Abschluss im Dezember, sonst z. B. '2025/26'."""
+    d = datetime.date.fromisoformat(iso)
+    return str(d.year) if d.month == 12 else f"{d.year - 1}/{str(d.year)[2:]}"
+
+
+def betrag(v):
+    """Dividendenbetrag: zwei Nachkommastellen, mehr nur wenn nötig (z. B. 0,0125 oder 2,6305)."""
+    return de(v) if abs(round(v, 2) - v) < 1e-9 else de(v, 4).rstrip("0").rstrip(",")
+
+
+def rahmen(tiefe):
+    """Kopf und Fuß der Seite aus einer bestehenden Seite übernehmen, damit Menü und Footer überall gleich sind."""
+    v = open(VORLAGE, encoding="utf-8").read()
+    head_links = re.search(r'(<link rel="icon".*?<link rel="manifest"[^>]*>)', v, re.S).group(1)
+    kopf = re.search(r'(<header id="hub-global-header">.*?</header>\s*<script[^>]*navigation\.js[^>]*></script>\s*<script[^>]*logos\.js[^>]*></script>)', v, re.S).group(1)
+    fuss = re.search(r'(<footer class="site-footer">.*?</footer>)', v, re.S).group(1)
+    kopf = kopf.replace(' aria-current="page"', "")
+    pre = "../" * tiefe
+    fix = lambda s: s.replace('"../../', '"' + pre)
+    return fix(head_links), fix(kopf), fix(fuss)
+
+
+def reihe(k, key, weg):
+    return [(d, v) for d, v in k.get(key, []) if d[:4] not in weg and v is not None]
+
+
+def wert_am(serie, d):
+    for dd, v in serie:
+        if dd == d:
+            return v
+    return None
+
+
+def kennzahlen(f, sec, kurse, iz, usd_je_eur, termine):
+    s = sec.get(f["sym"])
+    if not s:
+        return None
+    k, weg = s["k"], set(f.get("weglassen", []))
+    dps = reihe(k, "dividende_je_aktie", weg)
+    if not dps:
+        return None
+    dez = s["gj"][5:7] == "12"
+    r = {"f": f, "sec_name": s["n"], "gj": s["gj"], "dez": dez, "dps": dps}
+    letzt_d, letzt = dps[-1]
+    r["dps_letzt"], r["gj_letzt"] = letzt, gj_label(letzt_d, dez)
+    # Kurs (Euro) und Rendite
+    i = iz.get(f["sym"]) or {}
+    isin = i.get("isin") if isinstance(i, dict) else i
+    kz = kurse["k"].get(isin) if isin else None
+    r["isin"] = isin
+    if kz and kz[0]:
+        r["kurs_eur"], r["kurs_waehrung"] = kz[0], kz[2]
+        r["kurs_usd"] = kz[0] * usd_je_eur if kz[2] == "EUR" else None
+        r["rendite"] = letzt / r["kurs_usd"] if r["kurs_usd"] else None
+    else:
+        r["kurs_eur"] = r["kurs_usd"] = r["rendite"] = None
+    # Wachstum
+    vals = [v for _, v in dps]
+    r["cagr5"] = (vals[-1] / vals[-6]) ** (1 / 5) - 1 if len(vals) >= 6 and vals[-6] > 0 else None
+    r["veraenderung"] = vals[-1] / vals[-2] - 1 if len(vals) >= 2 and vals[-2] > 0 else None
+    serie = 0
+    for a, b in zip(vals[-2::-1], vals[::-1]):
+        if b > a * 1.0005:
+            serie += 1
+        else:
+            break
+    r["erhoehungen"] = serie
+    r["kuerzung"] = any(b < a * 0.97 for a, b in zip(vals, vals[1:]))
+    # Ausschüttungsquoten (letztes Geschäftsjahr)
+    eps = wert_am(reihe(k, "eps_verw", weg), letzt_d)
+    r["eps"] = eps
+    r["quote_gewinn"] = letzt / eps if eps and eps > 0 else None
+    # Free-Cashflow-Quote als Durchschnitt der letzten drei Geschäftsjahre (einzelne Jahre schwanken stark, z. B. durch Einmalzahlungen)
+    gez_s, ocf_s, cap_s = (dict(reihe(k, n, weg)) for n in ("dividenden_gezahlt", "operativer_cf", "capex"))
+    jahre = [d for d, _ in dps[-3:] if d in gez_s and d in ocf_s and d in cap_s]
+    sg, sf = sum(gez_s[d] for d in jahre), sum(ocf_s[d] - abs(cap_s[d]) for d in jahre)
+    r["quote_fcf"] = sg / sf if len(jahre) == 3 and sf > 0 and sg > 0 and f["typ"] != "bdc" else None
+    if f["typ"] == "reit":
+        gew, abs_, aktien = (wert_am(reihe(k, n, weg), letzt_d) for n in ("gewinn", "abschreibungen", "aktien_verw"))
+        ffo = (gew + abs_) / aktien if gew is not None and abs_ and aktien else None
+        r["ffo"] = ffo
+        r["quote_ffo"] = letzt / ffo if ffo and ffo > 0 else None
+    # zuletzt beschlossene Dividende
+    reg = [t for t in termine.get(f["sym"], []) if t.get("art") == "regulaer" and t.get("waehrung", "USD") == "USD"]
+    reg.sort(key=lambda t: t.get("meldung") or t.get("ex_tag") or "")
+    r["termin"] = reg[-1] if reg else None
+    if r["termin"] and r["kurs_usd"]:
+        r["rendite_fwd"] = r["termin"]["betrag"] * f["rhythmus"] / r["kurs_usd"]
+    else:
+        r["rendite_fwd"] = None
+    return r
+
+
+def balken(dps, dez):
+    """Schlichtes Balkendiagramm (SVG) der Dividende je Aktie pro Geschäftsjahr."""
+    n = len(dps); w, h, pad_l, pad_b, pad_t = 720, 260, 8, 28, 22
+    bw = (w - pad_l * 2) / n
+    mx = max(v for _, v in dps) or 1
+    teile = []
+    for i, (d, v) in enumerate(dps):
+        bh = (h - pad_b - pad_t) * v / mx
+        x = pad_l + i * bw + bw * 0.18; y = h - pad_b - bh
+        teile.append(f'<rect x="{x:.1f}" y="{y:.1f}" width="{bw * 0.64:.1f}" height="{bh:.1f}" rx="3" fill="#2f9e5b"/>')
+        teile.append(f'<text x="{x + bw * 0.32:.1f}" y="{y - 6:.1f}" text-anchor="middle" font-size="12" fill="#14202b">{betrag(v) if v < 0.1 else de(v, 2)}</text>')
+        teile.append(f'<text x="{x + bw * 0.32:.1f}" y="{h - 8}" text-anchor="middle" font-size="12" fill="#5d6b78">{esc(gj_label(d, dez))}</text>')
+    return (f'<svg viewBox="0 0 {w} {h}" width="100%" role="img" aria-label="Dividende je Aktie in US-Dollar pro Geschäftsjahr" '
+            f'style="max-width:{w}px;display:block;margin:10px 0 4px">{"".join(teile)}</svg>')
+
+
+def news_links(sym, mag, tiefe):
+    its = [m for m in mag if (m.get("sym") or "").upper() == sym][:3]
+    pre = "../" * tiefe
+    return "".join(f'<li><a href="{pre}news/{esc(m["slug"])}/">{esc(m["title"])}</a></li>' for m in its)
+
+
+def seite(r, kopf_links, kopf, fuss, mag, kurs_datum, sec_stand, usd_je_eur, jahr):
+    f = r["f"]; name = f["name"]; url = f"dividende/{f['slug']}/"
+    rend = proz(r["rendite"]) if r["rendite"] else None
+    title = f"{name} Dividende {jahr}: Rendite, Historie und Termine"
+    desc_teile = [f"{name} zahlte im Geschäftsjahr {r['gj_letzt']} eine Dividende von {de(r['dps_letzt'])} US-Dollar je Aktie"]
+    if rend: desc_teile.append(f"die Dividendenrendite liegt bei rund {rend}")
+    desc = ", ".join(desc_teile) + ". Historie, Wachstum, Ausschüttungsquote, Termine und Rechner."
+    rhythmus = "monatlich" if f["rhythmus"] == 12 else "vierteljährlich"
+
+    # Einleitung: eine kurze, aus den Zahlen gebaute Einordnung
+    s = [esc(f["satz"])]
+    if r["veraenderung"] is not None and len(r["dps"]) >= 2:
+        if r["veraenderung"] > 0.0005:
+            s.append(f"Im Geschäftsjahr {r['gj_letzt']} stieg die Dividende je Aktie um {proz(r['veraenderung'])} auf {de(r['dps_letzt'])} US-Dollar.")
+        elif r["veraenderung"] < -0.0005:
+            s.append(f"Im Geschäftsjahr {r['gj_letzt']} sank die Dividende je Aktie um {proz(-r['veraenderung'])} auf {de(r['dps_letzt'])} US-Dollar.")
+        else:
+            s.append(f"Im Geschäftsjahr {r['gj_letzt']} blieb die Dividende mit {de(r['dps_letzt'])} US-Dollar je Aktie unverändert.")
+    if r["cagr5"] is not None:
+        s.append(f"Über fünf Jahre wuchs sie im Schnitt um {proz(r['cagr5'])} pro Jahr.")
+    lead = " ".join(s)
+
+    # Kennzahlen-Tabelle
+    zeilen = []
+    if rend:
+        zeilen.append(("Dividendenrendite", f"{rend}", f"Dividende des Geschäftsjahres {r['gj_letzt']} zum Kurs von {de(r['kurs_eur'])} €"))
+    if r["rendite_fwd"]:
+        zeilen.append(("Rendite auf Basis der aktuellen Dividende", proz(r["rendite_fwd"]), f"zuletzt beschlossene Dividende × {f['rhythmus']}"))
+    zeilen.append((f"Dividende je Aktie ({r['gj_letzt']})", f"{de(r['dps_letzt'])} USD", f"rund {de(r['dps_letzt'] / usd_je_eur)} €"))
+    if r["veraenderung"] is not None:
+        zeilen.append(("Veränderung zum Vorjahr", proz(r["veraenderung"], vz=True), ""))
+    if r["cagr5"] is not None:
+        zeilen.append(("Dividendenwachstum (5 Jahre, pro Jahr)", proz(r["cagr5"], vz=True), ""))
+    if len(r["dps"]) >= 3:
+        zeilen.append((f"Jahre mit Erhöhung seit {gj_label(r['dps'][0][0])}", f"{sum(1 for (_, a), (_, b) in zip(r['dps'], r['dps'][1:]) if b > a * 1.0005)} von {len(r['dps']) - 1}", ""))
+    if f["typ"] == "reit" and r.get("quote_ffo"):
+        zeilen.append(("Ausschüttungsquote (auf FFO)", proz(r["quote_ffo"], 0), "FFO genähert: Gewinn plus Abschreibungen je Aktie"))
+    elif f["typ"] == "bdc" and r["quote_gewinn"]:
+        zeilen.append(("Ausschüttungsquote (auf Gewinn je Aktie)", proz(r["quote_gewinn"], 0), "bei BDCs schwankt der Gewinn mit den Bewertungen, wichtiger ist das NII"))
+    elif r["quote_gewinn"]:
+        zeilen.append(("Ausschüttungsquote (auf Gewinn)", proz(r["quote_gewinn"], 0), ""))
+    elif r["eps"] is not None and r["eps"] <= 0:
+        zeilen.append(("Ausschüttungsquote (auf Gewinn)", "nicht aussagekräftig", "Verlust im letzten Geschäftsjahr"))
+    if r["quote_fcf"] and f["typ"] != "reit":
+        zeilen.append(("Ausschüttungsquote (auf Free Cashflow)", proz(r["quote_fcf"], 0), "Durchschnitt der letzten drei Geschäftsjahre"))
+    zeilen.append(("Zahlweise", rhythmus, ""))
+    tab = "".join(f'<tr><td>{esc(a)}' + (f'<br><span style="font-size:13px;color:var(--mut)">{c}</span>' if c else "") +
+                  f'</td><td class="n" style="white-space:nowrap"><strong>{b}</strong></td></tr>' for a, b, c in zeilen)
+
+    # Termine
+    t = r["termin"]
+    if t:
+        termin_html = ('<div class="tablewrap"><table><thead><tr><th>Beschlossen am</th><th class="n">Betrag</th><th>Ex-Tag</th><th>Zahltag</th></tr></thead><tbody>'
+                       f'<tr><td>{datum(t["meldung"]) if t.get("meldung") else "–"}</td><td class="n">{betrag(t["betrag"])} USD</td>'
+                       f'<td>{datum(t["ex_tag"]) if t.get("ex_tag") else "–"}</td><td>{datum(t["zahltag"]) if t.get("zahltag") else "–"}</td></tr></tbody></table></div>'
+                       '<p class="meta">Wer die Aktie spätestens am Handelstag vor dem Ex-Tag kauft, erhält die Dividende. In den USA sind Ex-Tag und Stichtag seit Mai 2024 identisch.</p>')
+    else:
+        termin_html = (f'<p>{esc(name)} zahlt {rhythmus}. Die nächste beschlossene Dividende mit Ex-Tag und Zahltag tragen wir hier ein, sobald das Unternehmen sie veröffentlicht.</p>')
+
+    # Historie-Tabelle
+    hist_zeilen = []
+    for i in range(len(r["dps"]) - 1, -1, -1):
+        d, v = r["dps"][i]
+        vor = r["dps"][i - 1][1] if i > 0 else None
+        hist_zeilen.append(f'<tr><td>{esc(gj_label(d))}</td><td class="n">{betrag(v)}</td>'
+                           f'<td class="n">{proz(v / vor - 1, vz=True) if vor else "–"}</td></tr>')
+    hist = "".join(hist_zeilen)
+
+    quote_text = ""
+    qg, qf = r["quote_gewinn"], r["quote_fcf"]
+    if f["typ"] == "normal" and qg and qf:
+        if qg > 1 and qf <= 1:
+            quote_text = (f'<p>Die Ausschüttungsquote auf den Gewinn liegt über 100&nbsp;%, die auf den Free Cashflow darunter. Der Buchgewinn war zuletzt '
+                          f'also niedriger als der erwirtschaftete Cashflow, etwa durch Abschreibungen oder Sondereffekte. Aus dem Cashflow war die Dividende gedeckt.</p>')
+        elif qf > 1 and qg <= 1:
+            quote_text = (f'<p>Der Gewinn deckt die Dividende, der freie Cashflow der letzten drei Jahre reichte dafür aber nicht ganz. '
+                          f'Das kann an hohen Investitionen oder Einmalzahlungen liegen. Dauerhaft muss eine Dividende aus dem Cashflow bezahlt werden.</p>')
+        elif qf > 1 and qg > 1:
+            quote_text = '<p>Sowohl Gewinn als auch freier Cashflow lagen zuletzt unter der gezahlten Dividende. Die Differenz wurde aus Reserven oder Schulden bezahlt, das ist auf Dauer nicht tragfähig.</p>'
+    typ_hinweis = ""
+    if f["typ"] == "reit":
+        typ_hinweis = f'<p>Bei REITs sagt die Quote auf den Gewinn wenig, weil hohe Abschreibungen den Gewinn drücken. Aussagekräftiger ist die Quote auf FFO, siehe <a href="../../fortgeschrittene/reits-bewerten/">REITs bewerten</a>.</p>'
+    elif f["typ"] == "bdc":
+        typ_hinweis = f'<p>BDCs müssen den Großteil ihrer Erträge ausschütten. Ob die Dividende gedeckt ist, zeigt der Vergleich mit dem Nettoertrag aus Zinsen (NII), siehe <a href="../../fortgeschrittene/bdcs-bewerten/">BDCs bewerten</a>.</p>'
+    if f["typ"] == "bdc" and f["sym"] == "MAIN":
+        typ_hinweis += "<p>Die Jahreswerte enthalten neben der monatlichen Dividende auch die Sonderdividenden.</p>"
+
+    news = news_links(f["sym"], mag, 2)
+    news_html = f'<h2>Aktuelle Meldungen zu {esc(name)}</h2><ul>{news}</ul>' if news else ""
+
+    kurs_d = datum(kurs_datum) if kurs_datum else ""
+    rechner = f'''<h2>Was bringt die {esc(name)}-Aktie im Jahr?</h2>
+<div class="calc" id="divcalc" data-dps="{r['dps_letzt']}" data-fx="{usd_je_eur}" data-kurs="{r['kurs_eur'] or ''}" data-steuer="{STEUER_US}">
+<div class="grid"><div><label for="anz">Anzahl Aktien</label><input id="anz" type="number" min="0" step="1" value="100" inputmode="numeric"></div>
+<div><label for="betr">oder Anlagebetrag in Euro <span class="hint">(zum letzten Kurs)</span></label><input id="betr" type="number" min="0" step="100" inputmode="decimal" placeholder="z. B. 5000"></div></div>
+<div class="tablewrap"><table><tbody>
+<tr><td>Dividende brutto pro Jahr</td><td class="n"><strong id="r-brutto">–</strong></td></tr>
+<tr><td>nach Steuern (ca.)</td><td class="n"><strong id="r-netto">–</strong></td></tr>
+<tr><td>pro {"Monat" if f["rhythmus"] == 12 else "Quartal"} (brutto)</td><td class="n"><strong id="r-rate">–</strong></td></tr>
+</tbody></table></div>
+<p class="meta">Grundlage: Dividende des Geschäftsjahres {r['gj_letzt']} ({de(r['dps_letzt'])} USD je Aktie), umgerechnet zum EZB-Kurs ({de(usd_je_eur, 4)} USD je Euro). Nach Steuern: 15&nbsp;% US-Quellensteuer mit W-8BEN plus Abgeltungsteuer und Soli in Deutschland, zusammen rund 25,6&nbsp;%, ohne Kirchensteuer und ohne Sparer-Pauschbetrag.</p>
+</div>
+<script>(function(){{var c=document.getElementById("divcalc");if(!c)return;var dps=+c.dataset.dps,fx=+c.dataset.fx,k=+c.dataset.kurs,st=+c.dataset.steuer,per={f["rhythmus"]};
+var a=document.getElementById("anz"),b=document.getElementById("betr");function e(x){{return x.toLocaleString("de-DE",{{minimumFractionDigits:2,maximumFractionDigits:2}})+"\\u00a0€"}}
+function r(){{var n=+a.value||0,g=n*dps/fx;document.getElementById("r-brutto").textContent=e(g);document.getElementById("r-netto").textContent=e(g*(1-st));document.getElementById("r-rate").textContent=e(g/per)}}
+a.addEventListener("input",function(){{b.value="";r()}});b.addEventListener("input",function(){{if(k>0){{a.value=Math.floor((+b.value||0)/k)}}r()}});r()}})();</script>'''
+
+    faq = []
+    faq.append((f"Wie hoch ist die Dividende von {name}?",
+                f"Im Geschäftsjahr {r['gj_letzt']} zahlte {name} {de(r['dps_letzt'])} US-Dollar je Aktie" + (f", das entspricht beim aktuellen Kurs einer Rendite von rund {rend}." if rend else ".")))
+    if t:
+        faq.append((f"Wann zahlt {name} die nächste Dividende?",
+                    f"Zuletzt wurden {betrag(t['betrag'])} US-Dollar je Aktie beschlossen" + (f", Ex-Tag ist der {datum(t['ex_tag'])}" if t.get("ex_tag") else "") + (f", ausgezahlt wird am {datum(t['zahltag'])}." if t.get("zahltag") else ".")))
+    else:
+        faq.append((f"Wie oft zahlt {name} Dividende?", f"{name} zahlt die Dividende {rhythmus}."))
+    faq.append((f"Wie wird die {name}-Dividende in Deutschland besteuert?",
+                "In den USA werden mit dem Formular W-8BEN 15 % Quellensteuer einbehalten. Diese wird auf die deutsche Abgeltungsteuer angerechnet, sodass in Deutschland noch rund 10 % plus Solidaritätszuschlag anfallen."))
+    faq_html = "".join(f"<details><summary>{esc(q)}</summary><p>{esc(a)}</p></details>" for q, a in faq)
+
+    ld = [
+        {"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [
+            {"@type": "ListItem", "position": 1, "name": "Start", "item": BASE},
+            {"@type": "ListItem", "position": 2, "name": "Dividenden", "item": BASE + "dividende/"},
+            {"@type": "ListItem", "position": 3, "name": f"{name} Dividende", "item": BASE + url}]},
+        {"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [
+            {"@type": "Question", "name": q, "acceptedAnswer": {"@type": "Answer", "text": a}} for q, a in faq]},
+    ]
+    ld_html = "".join(f'<script type="application/ld+json">{json.dumps(x, ensure_ascii=False)}</script>\n' for x in ld)
+    heute = datetime.date.today().isoformat()
+    logo = f'<span class="arlogo"><img src="../../assets/logos/{f["sym"].lower()}.png" alt="" width="30" height="30" data-sym="{esc(f["sym"])}"></span>' \
+        if os.path.exists(os.path.join(ROOT, "assets", "logos", f["sym"].lower() + ".png")) else ""
+
+    return f'''<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{esc(title)}</title>
+<meta name="description" content="{esc(desc)}">
+<meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large">
+<link rel="canonical" href="{BASE}{url}">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="de_DE">
+<meta property="og:site_name" content="Dividenden-Rechner Aktien-Hub">
+<meta property="og:title" content="{esc(title)}">
+<meta property="og:description" content="{esc(desc)}">
+<meta property="og:url" content="{BASE}{url}">
+<meta property="og:image" content="{BASE}assets/og-default.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#ffffff">
+<link rel="stylesheet" href="../../assets/site.css">
+{ld_html}{kopf_links}
+</head>
+<body>
+{kopf}
+<main class="wrap"><article>
+<nav class="crumbs" aria-label="Brotkrumen"><a href="../../">Start</a> › <a href="../">Dividenden</a> › <span aria-current="page">{esc(name)}</span></nav>
+<div class="titlerow" style="gap:12px">{logo}<h1>{esc(name)} Dividende</h1></div>
+<p class="meta">Stand: {datum(heute)} · Kurs vom {kurs_d} · Kürzel {esc(f["sym"])}{" · ISIN " + esc(r["isin"]) if r.get("isin") else ""}</p>
+<p class="lead">{lead}</p>
+<div class="tablewrap"><table><tbody>{tab}</tbody></table></div>
+{quote_text}
+<h2>Nächste Dividende</h2>
+{termin_html}
+<h2>Dividendenhistorie</h2>
+<p>Dividende je Aktie in US-Dollar pro Geschäftsjahr, wie im Geschäftsbericht ausgewiesen.</p>
+{balken(r["dps"], r["dez"])}
+<div class="tablewrap"><table><thead><tr><th>Geschäftsjahr</th><th class="n">Dividende je Aktie (USD)</th><th class="n">Veränderung</th></tr></thead><tbody>{hist}</tbody></table></div>
+{typ_hinweis}
+{rechner}
+{news_html}
+<h2>Häufige Fragen</h2>
+{faq_html}
+<aside class="related"><h2>Weiterlesen</h2><ul>
+<li><a href="../">Weitere US-Dividendenaktien im Überblick</a></li>
+<li><a href="../../grundlagen/dividendenaristokraten/">Dividendenaristokraten und Dividend Kings</a></li>
+<li><a href="../../fortgeschrittene/quellensteuer/usa/">USA: Quellensteuer und W-8BEN</a></li>
+<li><a href="../../">Dividendenrechner: Wie wächst dein Depot?</a></li>
+</ul></aside>
+<p class="note"><strong>Hinweis:</strong> Diese Seite dient der allgemeinen Information und ist keine Anlageberatung. Die Zahlen stammen aus den Geschäftsberichten (SEC) und Börsenkursen, sie werden täglich aktualisiert. Vergangene Dividenden sind keine Garantie für künftige Zahlungen. Datenstand Fundamentaldaten: {datum(sec_stand)}.</p>
+</article></main>
+{fuss}
+</body>
+</html>
+''', title, desc, url
+
+
+def uebersicht(rs, kopf_links, kopf, fuss, jahr):
+    zeilen = []
+    for r in sorted(rs, key=lambda r: -(r["rendite"] or 0)):
+        f = r["f"]
+        zeilen.append(f'<tr><td><a href="{f["slug"]}/">{esc(f["name"])}</a></td><td class="n">{proz(r["rendite"]) if r["rendite"] else "–"}</td>'
+                      f'<td class="n">{de(r["dps_letzt"])}</td><td class="n">{proz(r["cagr5"], vz=True) if r["cagr5"] is not None else "–"}</td>'
+                      f'<td>{"monatlich" if f["rhythmus"] == 12 else "vierteljährlich"}</td></tr>')
+    title = f"US-Dividendenaktien {jahr}: Rendite, Historie und Termine"
+    desc = "Dividendenrendite, Dividende je Aktie, Wachstum und Zahlweise bekannter US-Dividendenaktien wie Coca-Cola, Realty Income, PepsiCo und Altria, täglich aktualisiert."
+    return f'''<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{esc(title)}</title>
+<meta name="description" content="{esc(desc)}">
+<meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large">
+<link rel="canonical" href="{BASE}dividende/">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="de_DE">
+<meta property="og:site_name" content="Dividenden-Rechner Aktien-Hub">
+<meta property="og:title" content="{esc(title)}">
+<meta property="og:description" content="{esc(desc)}">
+<meta property="og:url" content="{BASE}dividende/">
+<meta property="og:image" content="{BASE}assets/og-default.png">
+<meta name="theme-color" content="#ffffff">
+<link rel="stylesheet" href="../assets/site.css">
+{kopf_links}
+</head>
+<body>
+{kopf}
+<main class="wrap"><article>
+<nav class="crumbs" aria-label="Brotkrumen"><a href="../">Start</a> › <span aria-current="page">Dividenden</span></nav>
+<h1>US-Dividendenaktien im Überblick</h1>
+<p class="lead">Die bekanntesten US-Dividendenwerte mit Rendite, letzter Jahresdividende und Wachstum über fünf Jahre. Ein Klick auf den Namen führt zur ausführlichen Seite mit Historie, Terminen und Rechner.</p>
+<div class="tablewrap"><table><thead><tr><th>Aktie</th><th class="n">Rendite</th><th class="n">Dividende je Aktie (USD)</th><th class="n">Wachstum 5 J. p. a.</th><th>Zahlweise</th></tr></thead><tbody>
+{"".join(zeilen)}
+</tbody></table></div>
+<p class="meta">Rendite: Dividende des letzten Geschäftsjahres zum letzten Börsenkurs in Euro. Sortiert nach Rendite. Stand: {datum(datetime.date.today().isoformat())}.</p>
+<p class="note"><strong>Hinweis:</strong> Diese Übersicht dient der allgemeinen Information und ist keine Anlageberatung. Eine hohe Rendite kann auch ein Warnsignal sein, siehe <a href="../grundlagen/dividendenfalle/">Dividendenfalle erkennen</a>.</p>
+</article></main>
+{fuss}
+</body>
+</html>
+''', title, desc
+
+
+def sitemap_llms(eintraege):
+    f = os.path.join(ROOT, "sitemap.xml"); s = open(f, encoding="utf-8").read()
+    s = re.sub(r"<url><loc>" + re.escape(BASE) + r"dividende/[^<]*</loc>.*?</url>\n?", "", s)
+    heute = datetime.date.today().isoformat()
+    add = "".join(f"<url><loc>{BASE}{u}</loc><lastmod>{heute}</lastmod><priority>{'0.8' if u == 'dividende/' else '0.7'}</priority></url>\n" for u, _, _ in eintraege)
+    open(f, "w", encoding="utf-8").write(s.replace("</urlset>", add + "</urlset>"))
+    f = os.path.join(ROOT, "llms.txt"); s = open(f, encoding="utf-8").read()
+    s = re.sub(r"- \[[^\]]*\]\(" + re.escape(BASE) + r"dividende/[^)]*\)[^\n]*\n", "", s)
+    add = "".join(f"- [{t}]({BASE}{u}): {d}\n" for u, t, d in eintraege)
+    s = s.replace("\n## Hinweis", "\n" + add + "\n## Hinweis", 1) if "\n## Hinweis" in s else s.rstrip("\n") + "\n" + add
+    open(f, "w", encoding="utf-8").write(s)
+
+
+def weiterleitungen(rs):
+    """Alte Google-Sites-Adressen der Firmen auf die neuen Dividendenseiten umbiegen."""
+    p = os.path.join(ROOT, "tools", "umzug", "redirects-entwurf.csv")
+    rows = list(csv.DictReader(open(p, encoding="utf-8")))
+    felder = list(rows[0].keys())
+    ziel = {a.lower(): f"/dividende/{r['f']['slug']}/" for r in rs for a in r["f"].get("alt", [])}
+    for row in rows:
+        z = ziel.get(row["alter_pfad"].strip().rstrip("/").lower())
+        if z:
+            row["neuer_pfad"], row["status"] = z, "301 (Dividendenseite der Firma)"
+    nl = "\r\n" if b"\r\n" in open(p, "rb").read(200) else "\n"
+    w = csv.DictWriter(open(p, "w", encoding="utf-8", newline=""), fieldnames=felder, lineterminator=nl)
+    w.writeheader(); w.writerows(rows)
+
+
+def main():
+    cfg = lade("data/dividendenseiten.json")["firmen"]
+    secj = lade("data/sec/fundamentals.json"); sec = secj["firmen"]
+    kurse = lade("data/kurse/xetra-letzter.json"); iz = lade("data/kurse/isin-zuordnung.json")
+    usd_je_eur = lade("data/wechselkurse-ezb.json")["je_eur"]["USD"]
+    termine = lade("data/dividenden-termine.json").get("firmen", {})
+    mag = sorted(lade("data/magazin.json").get("items", []), key=lambda m: m.get("date", ""), reverse=True)
+    jahr = datetime.date.today().year
+    kl1, k1, f1 = rahmen(2); kl0, k0, f0 = rahmen(1)
+    rs, eintraege = [], []
+    for f in cfg:
+        r = kennzahlen(f, sec, kurse, iz, usd_je_eur, termine)
+        if not r:
+            print("übersprungen (keine Daten):", f["sym"]); continue
+        h, t, d, u = *seite(r, kl1, k1, f1, mag, kurse.get("datum"), secj.get("stand", ""), usd_je_eur, jahr),
+        os.makedirs(os.path.join(ROOT, u), exist_ok=True)
+        open(os.path.join(ROOT, u, "index.html"), "w", encoding="utf-8").write(h)
+        rs.append(r); eintraege.append((u, t, d))
+    h, t, d = uebersicht(rs, kl0, k0, f0, jahr)
+    open(os.path.join(ROOT, "dividende", "index.html"), "w", encoding="utf-8").write(h)
+    eintraege.insert(0, ("dividende/", t, d))
+    sitemap_llms(eintraege)
+    weiterleitungen(rs)
+    print(f"{len(rs)} Dividendenseiten gebaut")
+
+
+if __name__ == "__main__":
+    main()

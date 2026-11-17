@@ -7,19 +7,19 @@ alter_pfad,klicks_3_monate,impressionen,position,neuer_pfad,status
 /fortgeschrittene/quellensteuer/frankreich,22,885,14.3,/fortgeschrittene/quellensteuer/frankreich/,gleich
 /fortgeschrittene/quellensteuer,21,495,15.57,/fortgeschrittene/quellensteuer/,gleich
 /fortgeschrittene/fair-value-berechnen,17,1578,9.74,/fortgeschrittene/bewertung-kgv-dcf/,301
-/aktien-analysen/coca-cola,14,439,37.47,/magazin/,301 (alte Analyse wird nicht nachgebaut)
+/aktien-analysen/coca-cola,14,439,37.47,/dividende/coca-cola/,301 (Dividendenseite der Firma)
 /fortgeschrittene/reits-analysieren,13,871,13.06,/fortgeschrittene/reits-bewerten/,301
-/aktien-analysen/pepsico,11,922,10.26,/magazin/,301 (alte Analyse wird nicht nachgebaut)
+/aktien-analysen/pepsico,11,922,10.26,/dividende/pepsico/,301 (Dividendenseite der Firma)
 /grundlagen/rendite,8,860,30.98,/grundlagen/dividendenrendite/,301
 /fortgeschrittene/reinvestieren,8,110,12.81,/rechner/dividenden-zinseszins-rechner/,301 pruefen
 /grundlagen/wachstum,7,597,8.72,/fortgeschrittene/dividendenwachstum/,301
-/rechner/Altersvorsorgedepot,6,925,38.53,/,301 (Rechner auf Startseite)
+/rechner/Altersvorsorgedepot,6,925,38.53,/altersvorsorgedepot/,301 (eigene Rechnerseite)
 /einführung/dividenden-oder-kapitalertrag,6,466,8.12,/einfuehrung/,301 pruefen
 /fortgeschrittene/peer-group-analyse,4,1847,13.17,/fortgeschrittene/,301 auf Uebersicht (kein Ersatz)
 /grundlagen/historie,4,174,8.3,/grundlagen/,301 auf Uebersicht (kein Ersatz)
 /impressum,4,32,6.97,/impressum/,gleich
-/aktien-analysen/pfizer,3,274,14.09,/magazin/,301 (alte Analyse wird nicht nachgebaut)
-/aktuelle-finanznachrichten/main-street-capital,3,155,40.82,/magazin/,"301 (Nachricht, kein Ersatz)"
+/aktien-analysen/pfizer,3,274,14.09,/dividende/pfizer/,301 (Dividendenseite der Firma)
+/aktuelle-finanznachrichten/main-street-capital,3,155,40.82,/dividende/main-street-capital/,301 (Dividendenseite der Firma)
 /fortgeschrittene/strategien/monatliche-dividenden,2,963,13.7,/fortgeschrittene/,301 auf Uebersicht (kein Ersatz)
 /aktien-analysen/analyse-nach-peter-lynch,2,549,7.05,/magazin/,301 (alte Analyse wird nicht nachgebaut)
 /aktien-analysen/analyse-nach-benjamin-graham,2,524,17.03,/magazin/,301 (alte Analyse wird nicht nachgebaut)
@@ -32,13 +32,13 @@ alter_pfad,klicks_3_monate,impressionen,position,neuer_pfad,status
 /rechner/etf-rechner/etf-rechner,1,263,52.81,/,301 (Rechner auf Startseite)
 /aktien-analysen/jardine-matheson,1,130,18.17,/magazin/,301 (alte Analyse wird nicht nachgebaut)
 /rechner/rentenlücke-schließen,1,41,18.49,/,301 (Rechner auf Startseite)
-/aktien-analysen/procter-gamble,0,433,13.53,/magazin/,301 (alte Analyse wird nicht nachgebaut)
+/aktien-analysen/procter-gamble,0,433,13.53,/dividende/procter-gamble/,301 (Dividendenseite der Firma)
 /buchtipps,0,322,1.75,/,301 auf Uebersicht (kein Ersatz)
 /fortgeschrittene/strategien/dogs-of-the-dow-2025,0,313,32.14,/fortgeschrittene/,301 auf Uebersicht (kein Ersatz)
 /einführung/was-sind-dividenden,0,254,31.19,/,301 auf Uebersicht (kein Ersatz)
 /fortgeschrittene/aktien-vergleich,0,217,44.7,/fortgeschrittene/,301 auf Uebersicht (kein Ersatz)
 /über-uns,0,212,11.87,/ueber-uns/,301
-/rechner/vorabsteuer-pauschale,0,171,46.79,/,301 (Rechner auf Startseite)
+/rechner/vorabsteuer-pauschale,0,171,46.79,/vorabpauschale-rechner/,301 (eigene Rechnerseite)
 /grundlagen,0,159,16.59,/grundlagen/,gleich
 /rechner/fair-value-rechner-kgv,0,158,38.04,/fortgeschrittene/bewertung-kgv-dcf/,301 pruefen
 /einführung/strategie-mit-dividenden,0,147,15.86,/,301 auf Uebersicht (kein Ersatz)
@@ -47,7 +47,7 @@ alter_pfad,klicks_3_monate,impressionen,position,neuer_pfad,status
 /fortgeschrittene/rückerstattung,0,104,20.46,/fortgeschrittene/quellensteuer/rueckerstattung/,301
 /grundlagen/quartalsberichte,0,88,6.9,/grundlagen/,301 auf Uebersicht (kein Ersatz)
 /einführung,0,85,18.93,/einfuehrung/,301
-/aktien-analysen/chevron,0,62,18.34,/magazin/,301 (alte Analyse wird nicht nachgebaut)
+/aktien-analysen/chevron,0,62,18.34,/dividende/chevron/,301 (Dividendenseite der Firma)
 /aktien-analysen,0,56,5.09,/magazin/,301 (alte Analyse wird nicht nachgebaut)
 /news/kalender,0,56,70.84,/unternehmensmeldungen/,"301 (Nachricht, kein Ersatz)"
 /news/coca-cola,0,54,56.76,/unternehmensmeldungen/,"301 (Nachricht, kein Ersatz)"
