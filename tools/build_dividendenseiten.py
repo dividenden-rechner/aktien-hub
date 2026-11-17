@@ -202,6 +202,18 @@ def news_links(sym, mag, tiefe):
     return "".join(f'<li><a href="{pre}news/{esc(m["slug"])}/">{esc(m["title"])}</a></li>' for m in its)
 
 
+
+PEER_BLOCKS = {}
+
+def peer_block(sym, cfg_by_sym, gruppen):
+    """Querverlinkung je Aktie: Aristokratenliste plus bis zu drei Aktien aus derselben Peer-Gruppe."""
+    gr = next((g for g in gruppen if sym in g["members"]), None)
+    peers = [m for m in (gr["members"] if gr else []) if m != sym and m in cfg_by_sym][:3]
+    items = "".join(f'<li><a href="../{cfg_by_sym[m]["slug"]}/">{esc(cfg_by_sym[m]["name"])}</a></li>' for m in peers)
+    peer_teil = (f'<p>Aus der Gruppe „{esc(gr["name"])}“ lohnt der Blick auf:</p><ul>{items}</ul>' if peers else "")
+    return (f'<h2>Vergleich und Einordnung</h2>{peer_teil}'
+            f'<p><a href="../aristokraten/">Alle Dividendenaristokraten und Dividend Kings im Vergleich</a></p>')
+
 def seite(r, kopf_links, kopf, fuss, mag, kurs_datum, sec_stand, usd_je_eur, jahr):
     f = r["f"]; name = f["name"]; url = f"dividende/{f['slug']}/"
     rend = proz(r["rendite"]) if r["rendite"] else None
@@ -400,6 +412,7 @@ a.addEventListener("input",function(){{b.value="";r()}});b.addEventListener("inp
 {news_html}
 <h2>Häufige Fragen</h2>
 {faq_html}
+{PEER_BLOCKS.get(f["sym"], "")}
 <aside class="related"><h2>Weiterlesen</h2><ul>
 <li><a href="../">Weitere US-Dividendenaktien im Überblick</a></li>
 <li><a href="../aristokraten/">Liste: Dividend Kings und Dividendenaristokraten</a></li>
@@ -568,6 +581,11 @@ def main():
     jahr = datetime.date.today().year
     kl1, k1, f1 = rahmen(2); kl0, k0, f0 = rahmen(1)
     rs, eintraege = [], []
+    cfg_by_sym = {f["sym"]: f for f in cfg}
+    gruppen = lade("data/dividende-peers.json")["gruppen"]
+    PEER_BLOCKS.clear()
+    for f in cfg:
+        PEER_BLOCKS[f["sym"]] = peer_block(f["sym"], cfg_by_sym, gruppen)
     for f in cfg:
         r = kennzahlen(f, sec, kurse, iz, usd_je_eur, termine)
         if not r:

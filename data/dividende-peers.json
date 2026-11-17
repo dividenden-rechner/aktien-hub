@@ -1,0 +1,258 @@
+{
+ "_hinweis": "Peer-Gruppen für die Dividendenseiten (dividende/<slug>/). Jede Aktie verlinkt auf weitere Aktien derselben Gruppe. Die erste Gruppe, in der ein Ticker steht, gilt. Nur Ticker aus data/dividendenseiten.json werden verlinkt.",
+ "gruppen": [
+  {
+   "id": "reits",
+   "name": "REITs und Immobilien",
+   "members": [
+    "O",
+    "NNN",
+    "FRT",
+    "ESS",
+    "UHT"
+   ]
+  },
+  {
+   "id": "bdc",
+   "name": "Business Development Companies",
+   "members": [
+    "MAIN",
+    "ARCC"
+   ]
+  },
+  {
+   "id": "tabak",
+   "name": "Tabak",
+   "members": [
+    "MO",
+    "UVV"
+   ]
+  },
+  {
+   "id": "genuss",
+   "name": "Getränke und Genussmittel",
+   "members": [
+    "KO",
+    "PEP",
+    "BF-B"
+   ]
+  },
+  {
+   "id": "haushalt",
+   "name": "Haushalt und Körperpflege",
+   "members": [
+    "PG",
+    "CL",
+    "KMB",
+    "CLX",
+    "CHD"
+   ]
+  },
+  {
+   "id": "lebensmittel",
+   "name": "Lebensmittel",
+   "members": [
+    "GIS",
+    "KHC",
+    "HRL",
+    "SJM",
+    "MKC",
+    "ADM",
+    "MZTI"
+   ]
+  },
+  {
+   "id": "handel",
+   "name": "Handel und Vertrieb",
+   "members": [
+    "WMT",
+    "TGT",
+    "LOW",
+    "GPC",
+    "SYY"
+   ]
+  },
+  {
+   "id": "marken",
+   "name": "Marken und Gastronomie",
+   "members": [
+    "MCD",
+    "NKE"
+   ]
+  },
+  {
+   "id": "pharma",
+   "name": "Pharma",
+   "members": [
+    "JNJ",
+    "PFE",
+    "ABBV"
+   ]
+  },
+  {
+   "id": "medizin",
+   "name": "Medizintechnik und Gesundheitsdienste",
+   "members": [
+    "ABT",
+    "MDT",
+    "BDX",
+    "WST",
+    "CAH"
+   ]
+  },
+  {
+   "id": "tech",
+   "name": "Technologie und Halbleiter",
+   "members": [
+    "MSFT",
+    "AAPL",
+    "GOOGL",
+    "NVDA"
+   ]
+  },
+  {
+   "id": "software",
+   "name": "Software und Dienstleistungen",
+   "members": [
+    "MSFT",
+    "IBM",
+    "ADP",
+    "JKHY",
+    "SPGI",
+    "ROP",
+    "CASS"
+   ]
+  },
+  {
+   "id": "versicherer",
+   "name": "Versicherer",
+   "members": [
+    "CB",
+    "BRO",
+    "CINF",
+    "AFL"
+   ]
+  },
+  {
+   "id": "regionalbanken",
+   "name": "Regionalbanken",
+   "members": [
+    "CBSH",
+    "UBSI",
+    "UMBF",
+    "CBU",
+    "WABC",
+    "BANF",
+    "CFR",
+    "AROW"
+   ]
+  },
+  {
+   "id": "vermoegen",
+   "name": "Vermögensverwaltung",
+   "members": [
+    "BEN",
+    "TROW",
+    "SEIC"
+   ]
+  },
+  {
+   "id": "energie",
+   "name": "Öl und Gas",
+   "members": [
+    "XOM",
+    "CVX"
+   ]
+  },
+  {
+   "id": "versorger",
+   "name": "Strom, Gas und Infrastruktur",
+   "members": [
+    "NEE",
+    "SO",
+    "ED",
+    "ES",
+    "ATO",
+    "NJR",
+    "NFG",
+    "MGEE",
+    "BKH",
+    "D",
+    "AEP",
+    "XEL",
+    "VZ"
+   ]
+  },
+  {
+   "id": "wasser",
+   "name": "Wasserversorger",
+   "members": [
+    "AWR",
+    "CWT",
+    "NWN",
+    "HTO",
+    "YORW"
+   ]
+  },
+  {
+   "id": "maschinen",
+   "name": "Maschinen und Werkzeuge",
+   "members": [
+    "CAT",
+    "AOS",
+    "ITW",
+    "DOV",
+    "PH",
+    "SWK",
+    "EMR",
+    "NDSN",
+    "GGG",
+    "DCI",
+    "TNC",
+    "BMI",
+    "LECO",
+    "PII",
+    "CSL",
+    "MATW",
+    "SON",
+    "MGRC",
+    "LHX"
+   ]
+  },
+  {
+   "id": "industrieservice",
+   "name": "Industrie-Service und Sicherheit",
+   "members": [
+    "GWW",
+    "FAST",
+    "CTAS",
+    "ABM",
+    "ATR",
+    "MSA"
+   ]
+  },
+  {
+   "id": "logistik",
+   "name": "Logistik",
+   "members": [
+    "CHRW",
+    "EXPD"
+   ]
+  },
+  {
+   "id": "chemie",
+   "name": "Chemie und Grundstoffe",
+   "members": [
+    "ALB",
+    "APD",
+    "LIN",
+    "ECL",
+    "SHW",
+    "PPG",
+    "SCL",
+    "FUL",
+    "NUE"
+   ]
+  }
+ ]
+}
