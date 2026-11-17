@@ -10,6 +10,7 @@ quelle_url: https://www.sec.gov/Archives/edgar/data/1744489/000174448926000065/f
 quelle_name: "Pressemitteilung Walt Disney Company (The) (SEC-Meldung)"
 logo_symbol: DIS
 logo_name: "Walt Disney Company (The)"
+logo_file: assets/logos/dis.png
 ---
 <!-- PRÜFEN: Diese Zahlen stehen nicht im Originaltext: 25,95. Bitte pruefen, dann 'draft: true' loeschen. -->
 

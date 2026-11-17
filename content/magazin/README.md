@@ -19,11 +19,12 @@ Datei anklicken, dann Stift-Symbol: Zeile `draft: true` löschen und speichern, 
 | 29.10.2026 22:42 | Amazon steigert Umsatz im dritten Quartal auf 201,9 Milliarden Dollar | [79738970_2026-10-29/7757_2242-amazon-q3-2026-zahlen.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/79738970_2026-10-29/7757_2242-amazon-q3-2026-zahlen.md) |
 | 29.10.2026 10:12 | Shell erzielt im dritten Quartal 10,8 Milliarden Dollar Gewinn | [79738970_2026-10-29/8987_1012-shell-q3-2026-ergebnisse.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/79738970_2026-10-29/8987_1012-shell-q3-2026-ergebnisse.md) |
 
-### Online (410)
+### Online (411)
 
 | Datum | Titel | Datei |
 |---|---|---|
 | 18.11.2026 08:00 | Imperial Brands 2026: Gewinn je Aktie plus 8,8 %, aber der Berichtsgewinn fällt | [79738883_2026-11-17/9110_0830-imperial-brands-jahreszahlen-2026.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/79738883_2026-11-17/9110_0830-imperial-brands-jahreszahlen-2026.md) |
+| 17.11.2026 15:18 | Walt Disney steigert bereinigten Gewinn auf 7,02 US-Dollar und hebt Dividende um 33 % | [79738882_2026-11-17/8481_1518-disney-erhoeht-dividende-nach-starkem-jahresabschluss.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/79738882_2026-11-17/8481_1518-disney-erhoeht-dividende-nach-starkem-jahresabschluss.md) |
 | 17.11.2026 15:18 | BP baut Board mit zwei erfahrenen Direktoren um | [79738882_2026-11-17/8481_1518-bp-neue-direktoren-board-umbau.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/79738882_2026-11-17/8481_1518-bp-neue-direktoren-board-umbau.md) |
 | 17.11.2026 15:11 | BP startet Rückkaufangebot für US-Dollar-Anleihen im Volumen von bis zu 6 Mrd. US-Dollar | [79738882_2026-11-17/8488_1511-bp-rueckkaufangebot-anleihen-6mrd-nov-2026.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/79738882_2026-11-17/8488_1511-bp-rueckkaufangebot-anleihen-6mrd-nov-2026.md) |
 | 17.11.2026 15:10 | Duke Energy: North Carolina genehmigt Erlösbedarf von 496 Mio. US-Dollar | [79738882_2026-11-17/8489_1510-duke-energy-regulatorische-entscheidung-tarifverfahren-north-carolina.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/79738882_2026-11-17/8489_1510-duke-energy-regulatorische-entscheidung-tarifverfahren-north-carolina.md) |
