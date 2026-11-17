@@ -85,7 +85,7 @@ def kennzahlen(f, sec, kurse, iz, usd_je_eur, termine):
     if not dps:
         return None
     dez = s["gj"][5:7] == "12"
-    r = {"f": f, "sec_name": s["n"], "gj": s["gj"], "dez": dez, "dps": dps}
+    r = {"f": f, "sec_name": s["n"], "gj": s["gj"], "dez": dez, "dps": dps, "cik": s.get("cik", "")}
     letzt_d, letzt = dps[-1]
     r["dps_letzt"], r["gj_letzt"] = letzt, gj_label(letzt_d, dez)
     # Kurs (Euro) und Rendite
@@ -129,11 +129,33 @@ def kennzahlen(f, sec, kurse, iz, usd_je_eur, termine):
     reg = [t for t in termine.get(f["sym"], []) if t.get("art") == "regulaer" and t.get("waehrung", "USD") == "USD"]
     reg.sort(key=lambda t: t.get("meldung") or t.get("ex_tag") or "")
     r["termin"] = reg[-1] if reg else None
+    # Jahre mit Dividendenerhöhung in Folge (recherchiert), fortgeschrieben über neue Beschlüsse
+    se = dict(f.get("serie") or {})
+    r["serie"] = se
+    r["serie_jahre"] = se.get("jahre")
+    if se.get("betrag") and se.get("zuletzt_erhoeht"):
+        hoeher = [t for t in reg if (t.get("meldung") or "")[:4].isdigit() and int(t["meldung"][:4]) > se["zuletzt_erhoeht"]
+                  and t["betrag"] > se["betrag"] * 1.0005]
+        if hoeher:
+            r["serie_jahre"] = (se.get("jahre") or 0) + 1 if se.get("jahre") is not None else None
+            r["serie_fortgeschrieben"] = hoeher[0]
     if r["termin"] and r["kurs_usd"]:
         r["rendite_fwd"] = r["termin"]["betrag"] * f["rhythmus"] / r["kurs_usd"]
     else:
         r["rendite_fwd"] = None
     return r
+
+
+def status(jahre):
+    if jahre is None: return ""
+    if jahre >= 50: return "Dividend King"
+    if jahre >= 25: return "Dividendenaristokrat"
+    if jahre >= 10: return "10+ Jahre Dividendenwachstum"
+    return ""
+
+
+def jahre_text(j):
+    return f"{j} Jahr" if j == 1 else f"{j} Jahre"
 
 
 def balken(dps, dez):
@@ -191,8 +213,12 @@ def seite(r, kopf_links, kopf, fuss, mag, kurs_datum, sec_stand, usd_je_eur, jah
         zeilen.append(("Veränderung zum Vorjahr", proz(r["veraenderung"], vz=True), ""))
     if r["cagr5"] is not None:
         zeilen.append(("Dividendenwachstum (5 Jahre, pro Jahr)", proz(r["cagr5"], vz=True), ""))
-    if len(r["dps"]) >= 3:
-        zeilen.append((f"Jahre mit Erhöhung seit {gj_label(r['dps'][0][0])}", f"{sum(1 for (_, a), (_, b) in zip(r['dps'], r['dps'][1:]) if b > a * 1.0005)} von {len(r['dps']) - 1}", ""))
+    se, sj = r["serie"], r["serie_jahre"]
+    if se:
+        wert = jahre_text(sj) if sj is not None else "nie gesenkt"
+        if sj == 0: wert = "keine"
+        st = status(sj)
+        zeilen.append(("Dividendenerhöhungen in Folge" + (f" ({st})" if st else ""), wert, esc(se.get("text", ""))))
     if f["typ"] == "reit" and r.get("quote_ffo"):
         zeilen.append(("Ausschüttungsquote (auf FFO)", proz(r["quote_ffo"], 0), "FFO genähert: Gewinn plus Abschreibungen je Aktie"))
     elif f["typ"] == "bdc" and r["quote_gewinn"]:
@@ -275,6 +301,11 @@ a.addEventListener("input",function(){{b.value="";r()}});b.addEventListener("inp
         faq.append((f"Wie oft zahlt {name} Dividende?", f"{name} zahlt die Dividende {rhythmus}."))
     faq.append((f"Wie wird die {name}-Dividende in Deutschland besteuert?",
                 "In den USA werden mit dem Formular W-8BEN 15 % Quellensteuer einbehalten. Diese wird auf die deutsche Abgeltungsteuer angerechnet, sodass in Deutschland noch rund 10 % plus Solidaritätszuschlag anfallen."))
+    if se and sj:
+        faq.insert(1, (f"Seit wie vielen Jahren erhöht {name} die Dividende?",
+                       f"{name} hat die Dividende {jahre_text(sj)} in Folge erhöht" + (" und zählt damit zu den Dividend Kings." if sj >= 50 else " und zählt damit zu den Dividendenaristokraten." if sj >= 25 else ".")))
+    elif se and sj == 0:
+        faq.insert(1, (f"Erhöht {name} die Dividende jedes Jahr?", se.get("text", "")))
     faq_html = "".join(f"<details><summary>{esc(q)}</summary><p>{esc(a)}</p></details>" for q, a in faq)
 
     ld = [
@@ -286,6 +317,11 @@ a.addEventListener("input",function(){{b.value="";r()}});b.addEventListener("inp
             {"@type": "Question", "name": q, "acceptedAnswer": {"@type": "Answer", "text": a}} for q, a in faq]},
     ]
     ld_html = "".join(f'<script type="application/ld+json">{json.dumps(x, ensure_ascii=False)}</script>\n' for x in ld)
+    serie_quelle_html = ""
+    if se and se.get("quelle"):
+        dom = re.sub(r"^https?://(www\.)?", "", se["quelle"]).split("/")[0]
+        serie_quelle_html = (f'<li>Dividendenerhöhungen in Folge: <a href="{esc(se["quelle"])}" rel="nofollow noopener" target="_blank">{esc(dom)}</a>'
+                             f' (Stand {datum(se["stand"]) if se.get("stand") else "–"})</li>')
     heute = datetime.date.today().isoformat()
     logo = f'<span class="arlogo"><img src="../../assets/logos/{f["sym"].lower()}.png" alt="" width="30" height="30" data-sym="{esc(f["sym"])}"></span>' \
         if os.path.exists(os.path.join(ROOT, "assets", "logos", f["sym"].lower() + ".png")) else ""
@@ -333,10 +369,17 @@ a.addEventListener("input",function(){{b.value="";r()}});b.addEventListener("inp
 {faq_html}
 <aside class="related"><h2>Weiterlesen</h2><ul>
 <li><a href="../">Weitere US-Dividendenaktien im Überblick</a></li>
-<li><a href="../../grundlagen/dividendenaristokraten/">Dividendenaristokraten und Dividend Kings</a></li>
+<li><a href="../aristokraten/">Liste: Dividend Kings und Dividendenaristokraten</a></li>
+<li><a href="../../grundlagen/dividendenaristokraten/">Was Dividendenaristokraten und Dividend Kings sind</a></li>
 <li><a href="../../fortgeschrittene/quellensteuer/usa/">USA: Quellensteuer und W-8BEN</a></li>
 <li><a href="../../">Dividendenrechner: Wie wächst dein Depot?</a></li>
 </ul></aside>
+<details style="margin:18px 0 0"><summary style="font-size:14px;color:var(--accd);cursor:pointer;list-style:none">Quellen</summary>
+<ul style="font-size:14px;margin-top:8px">
+<li>Dividende je Aktie, Gewinn und Cashflow: Geschäftsberichte bei der SEC (<a href="https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&amp;CIK={r['cik']}&amp;type=10-K" rel="nofollow noopener" target="_blank">EDGAR</a>)</li>
+<li>Kurs: Schlusskurs deutscher Börsenplätze vom {kurs_d}, Wechselkurs: EZB-Referenzkurs</li>
+{serie_quelle_html}
+</ul></details>
 <p class="note"><strong>Hinweis:</strong> Diese Seite dient der allgemeinen Information und ist keine Anlageberatung. Die Zahlen stammen aus den Geschäftsberichten (SEC) und Börsenkursen, sie werden täglich aktualisiert. Vergangene Dividenden sind keine Garantie für künftige Zahlungen. Datenstand Fundamentaldaten: {datum(sec_stand)}.</p>
 </article></main>
 {fuss}
@@ -351,6 +394,7 @@ def uebersicht(rs, kopf_links, kopf, fuss, jahr):
         f = r["f"]
         zeilen.append(f'<tr><td><a href="{f["slug"]}/">{esc(f["name"])}</a></td><td class="n">{proz(r["rendite"]) if r["rendite"] else "–"}</td>'
                       f'<td class="n">{de(r["dps_letzt"])}</td><td class="n">{proz(r["cagr5"], vz=True) if r["cagr5"] is not None else "–"}</td>'
+                      f'<td class="n">{r["serie_jahre"] if r["serie_jahre"] is not None else "–"}</td>'
                       f'<td>{"monatlich" if f["rhythmus"] == 12 else "vierteljährlich"}</td></tr>')
     title = f"US-Dividendenaktien {jahr}: Rendite, Historie und Termine"
     desc = "Dividendenrendite, Dividende je Aktie, Wachstum und Zahlweise bekannter US-Dividendenaktien wie Coca-Cola, Realty Income, PepsiCo und Altria, täglich aktualisiert."
@@ -380,11 +424,72 @@ def uebersicht(rs, kopf_links, kopf, fuss, jahr):
 <nav class="crumbs" aria-label="Brotkrumen"><a href="../">Start</a> › <span aria-current="page">Dividenden</span></nav>
 <h1>US-Dividendenaktien im Überblick</h1>
 <p class="lead">Die bekanntesten US-Dividendenwerte mit Rendite, letzter Jahresdividende und Wachstum über fünf Jahre. Ein Klick auf den Namen führt zur ausführlichen Seite mit Historie, Terminen und Rechner.</p>
-<div class="tablewrap"><table><thead><tr><th>Aktie</th><th class="n">Rendite</th><th class="n">Dividende je Aktie (USD)</th><th class="n">Wachstum 5 J. p. a.</th><th>Zahlweise</th></tr></thead><tbody>
+<div class="tablewrap"><table><thead><tr><th>Aktie</th><th class="n">Rendite</th><th class="n">Dividende je Aktie (USD)</th><th class="n">Wachstum 5 J. p. a.</th><th class="n">Erhöhungen in Folge (Jahre)</th><th>Zahlweise</th></tr></thead><tbody>
 {"".join(zeilen)}
 </tbody></table></div>
+<p>Welche dieser Werte ihre Dividende seit mindestens 25 oder 50 Jahren erhöhen, zeigt die <a href="aristokraten/">Liste der Dividend Kings und Dividendenaristokraten</a>.</p>
 <p class="meta">Rendite: Dividende des letzten Geschäftsjahres zum letzten Börsenkurs in Euro. Sortiert nach Rendite. Stand: {datum(datetime.date.today().isoformat())}.</p>
 <p class="note"><strong>Hinweis:</strong> Diese Übersicht dient der allgemeinen Information und ist keine Anlageberatung. Eine hohe Rendite kann auch ein Warnsignal sein, siehe <a href="../grundlagen/dividendenfalle/">Dividendenfalle erkennen</a>.</p>
+</article></main>
+{fuss}
+</body>
+</html>
+''', title, desc
+
+
+def aristokraten(rs, kopf_links, kopf, fuss, jahr):
+    """Liste der Werte nach Jahren mit Dividendenerhöhung in Folge (nur recherchierte Zahlen)."""
+    gruppen = [("Dividend Kings: 50 Jahre und mehr", 50, 999), ("Dividendenaristokraten: 25 bis 49 Jahre", 25, 49),
+               ("Auf dem Weg: 10 bis 24 Jahre", 10, 24)]
+    teile = []
+    for titel, lo, hi in gruppen:
+        g = sorted([r for r in rs if r["serie_jahre"] is not None and lo <= r["serie_jahre"] <= hi], key=lambda r: -r["serie_jahre"])
+        if not g: continue
+        z = "".join(f'<tr><td><a href="../{r["f"]["slug"]}/">{esc(r["f"]["name"])}</a></td><td class="n"><strong>{r["serie_jahre"]}</strong></td>'
+                    f'<td class="n">{proz(r["rendite"]) if r["rendite"] else "–"}</td><td class="n">{proz(r["cagr5"], vz=True) if r["cagr5"] is not None else "–"}</td></tr>'
+                    for r in g)
+        teile.append(f'<h2>{esc(titel)}</h2><div class="tablewrap"><table style="table-layout:fixed;min-width:480px"><colgroup><col style="width:40%"><col style="width:20%"><col style="width:20%"><col style="width:20%"></colgroup><thead><tr><th>Aktie</th><th class="n">Jahre in Folge</th>'
+                     f'<th class="n">Rendite</th><th class="n">Wachstum 5 J. p. a.</th></tr></thead><tbody>{z}</tbody></table></div>')
+    n_king = sum(1 for r in rs if (r["serie_jahre"] or 0) >= 50); n_ari = sum(1 for r in rs if 25 <= (r["serie_jahre"] or 0) < 50)
+    ohne = sorted([r for r in rs if r["serie_jahre"] is not None and r["serie_jahre"] < 10], key=lambda r: -r["serie_jahre"])
+    ohne_html = ""
+    if ohne:
+        ohne_html = ('<h2>Ohne lange Erhöhungsserie</h2><p>Diese Werte zahlen Dividende, haben sie aber nur kurz oder zuletzt gar nicht erhöht: '
+                     + ", ".join(f'<a href="../{r["f"]["slug"]}/">{esc(r["f"]["name"])}</a>' for r in ohne) + ".</p>")
+    title = f"Dividend Kings und Dividendenaristokraten {jahr}: Liste mit Rendite"
+    desc = (f"Welche US-Aktien ihre Dividende seit 25 oder 50 Jahren in Folge erhöhen: Procter & Gamble, Coca-Cola, Johnson & Johnson, PepsiCo und weitere, "
+            f"mit Rendite und Dividendenwachstum. Täglich aktualisiert.")
+    return f'''<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{esc(title)}</title>
+<meta name="description" content="{esc(desc)}">
+<meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large">
+<link rel="canonical" href="{BASE}dividende/aristokraten/">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="de_DE">
+<meta property="og:site_name" content="Dividenden-Rechner Aktien-Hub">
+<meta property="og:title" content="{esc(title)}">
+<meta property="og:description" content="{esc(desc)}">
+<meta property="og:url" content="{BASE}dividende/aristokraten/">
+<meta property="og:image" content="{BASE}assets/og-default.png">
+<meta name="theme-color" content="#ffffff">
+<link rel="stylesheet" href="../../assets/site.css">
+{kopf_links}
+</head>
+<body>
+{kopf}
+<main class="wrap"><article>
+<nav class="crumbs" aria-label="Brotkrumen"><a href="../../">Start</a> › <a href="../">Dividenden</a> › <span aria-current="page">Dividend Kings und Aristokraten</span></nav>
+<h1>Dividend Kings und Dividendenaristokraten</h1>
+<p class="lead">Wer seine Dividende über Jahrzehnte jedes Jahr erhöht, hat Rezessionen, Zinswenden und Krisen überstanden, ohne die Ausschüttung anzutasten. Unter den Werten, zu denen wir eigene Dividendenseiten führen, sind derzeit {n_king} Dividend Kings mit mindestens 50 Erhöhungen in Folge und {n_ari} weitere mit mindestens 25 Jahren.</p>
+{"".join(teile)}
+{ohne_html}
+<p class="meta">Jahre in Folge: recherchiert aus Angaben der Unternehmen und von S&amp;P Dow Jones Indices, fortgeschrieben mit jeder neuen Erhöhung. Rendite: Dividende des letzten Geschäftsjahres zum letzten Börsenkurs in Euro. Die Liste wächst mit jeder neuen Firmenseite. Stand: {datum(datetime.date.today().isoformat())}.</p>
+<p>Offiziell sind Dividendenaristokraten Mitglieder des S&amp;P 500 Dividend Aristocrats Index. Dafür zählen neben den 25 Jahren auch Größe und Handelsvolumen. Was hinter den Begriffen steckt und worauf du achten solltest, erklärt der Beitrag <a href="../../grundlagen/dividendenaristokraten/">Dividendenaristokraten, Dividend Kings und Champions</a>.</p>
+<p class="note"><strong>Hinweis:</strong> Diese Liste dient der allgemeinen Information und ist keine Anlageberatung. Eine lange Erhöhungsserie ist keine Garantie für künftige Dividenden.</p>
 </article></main>
 {fuss}
 </body>
@@ -441,6 +546,10 @@ def main():
     h, t, d = uebersicht(rs, kl0, k0, f0, jahr)
     open(os.path.join(ROOT, "dividende", "index.html"), "w", encoding="utf-8").write(h)
     eintraege.insert(0, ("dividende/", t, d))
+    h, t, d = aristokraten(rs, kl1, k1, f1, jahr)
+    os.makedirs(os.path.join(ROOT, "dividende", "aristokraten"), exist_ok=True)
+    open(os.path.join(ROOT, "dividende", "aristokraten", "index.html"), "w", encoding="utf-8").write(h)
+    eintraege.insert(1, ("dividende/aristokraten/", t, d))
     sitemap_llms(eintraege)
     weiterleitungen(rs)
     print(f"{len(rs)} Dividendenseiten gebaut")

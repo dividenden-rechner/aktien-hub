@@ -1,25 +1,360 @@
 {
-  "hinweis": "Firmen für die öffentlichen Dividendenseiten /dividende/<slug>/ (tools/build_dividendenseiten.py). typ: normal, reit oder bdc. rhythmus: Zahlungen pro Jahr. weglassen: Geschäftsjahre (JJJJ), deren SEC-Wert nachweislich falsch ist. alt: alte Adressen, die per 301 hierher zeigen sollen.",
-  "firmen": [
-    {"sym": "O", "name": "Realty Income", "slug": "realty-income", "typ": "reit", "rhythmus": 12, "satz": "Realty Income ist ein US-Immobilienkonzern (REIT), der vor allem Einzelhandelsflächen langfristig vermietet und seine Dividende monatlich auszahlt.", "alt": []},
-    {"sym": "KO", "name": "Coca-Cola", "slug": "coca-cola", "typ": "normal", "rhythmus": 4, "satz": "Coca-Cola gehört zu den Dividend Kings, also den Unternehmen, die ihre Dividende seit mehr als 50 Jahren ohne Unterbrechung erhöhen.", "alt": ["/aktien-analysen/coca-cola"]},
-    {"sym": "MAIN", "name": "Main Street Capital", "slug": "main-street-capital", "typ": "bdc", "rhythmus": 12, "satz": "Main Street Capital ist eine Business Development Company (BDC), die mittelständischen US-Firmen Kredite und Eigenkapital gibt. Sie zahlt eine monatliche Dividende und zusätzlich Sonderdividenden.", "alt": ["/aktuelle-finanznachrichten/main-street-capital"]},
-    {"sym": "PEP", "name": "PepsiCo", "slug": "pepsico", "typ": "normal", "rhythmus": 4, "satz": "PepsiCo zählt zu den Dividend Kings und erhöht seine Dividende seit mehr als 50 Jahren in Folge.", "alt": ["/aktien-analysen/pepsico"]},
-    {"sym": "PFE", "name": "Pfizer", "slug": "pfizer", "typ": "normal", "rhythmus": 4, "satz": "Pfizer hat seine Dividende 2009 halbiert und sie seitdem Jahr für Jahr wieder angehoben.", "alt": ["/aktien-analysen/pfizer"]},
-    {"sym": "MO", "name": "Altria", "slug": "altria", "typ": "normal", "rhythmus": 4, "satz": "Der Tabakkonzern Altria (Marlboro in den USA) zählt zu den Dividend Kings und gehört zu den renditestärksten Werten im S&P 500.", "alt": []},
-    {"sym": "ARCC", "name": "Ares Capital", "slug": "ares-capital", "typ": "bdc", "rhythmus": 4, "satz": "Ares Capital ist die größte börsennotierte Business Development Company (BDC) der USA und zahlt vierteljährlich eine Dividende.", "alt": []},
-    {"sym": "GIS", "name": "General Mills", "slug": "general-mills", "typ": "normal", "rhythmus": 4, "satz": "General Mills (Cheerios, Häagen-Dazs) zahlt seit mehr als 125 Jahren ununterbrochen Dividende. Das Geschäftsjahr endet Ende Mai.", "alt": []},
-    {"sym": "NKE", "name": "Nike", "slug": "nike", "typ": "normal", "rhythmus": 4, "satz": "Nike erhöht seine Dividende seit mehr als 20 Jahren jedes Jahr. Das Geschäftsjahr endet Ende Mai.", "alt": []},
-    {"sym": "KHC", "name": "Kraft Heinz", "slug": "kraft-heinz", "typ": "normal", "rhythmus": 4, "satz": "Kraft Heinz hat seine Dividende 2019 deutlich gekürzt und zahlt seitdem einen gleichbleibenden Betrag.", "alt": []},
-    {"sym": "MSFT", "name": "Microsoft", "slug": "microsoft", "typ": "normal", "rhythmus": 4, "satz": "Microsoft zahlt seit 2003 eine Dividende und hebt sie seit vielen Jahren regelmäßig an. Das Geschäftsjahr endet Ende Juni.", "alt": []},
-    {"sym": "NVDA", "name": "Nvidia", "slug": "nvidia", "typ": "normal", "rhythmus": 4, "satz": "Nvidia zahlt nur eine sehr kleine Dividende. Den größten Teil der Gewinne gibt der Chipkonzern über Aktienrückkäufe zurück. Das Geschäftsjahr endet Ende Januar.", "alt": []},
-    {"sym": "VZ", "name": "Verizon", "slug": "verizon", "typ": "normal", "rhythmus": 4, "satz": "Der Telekomkonzern Verizon gehört zu den renditestärksten großen US-Werten und erhöht die Dividende jedes Jahr in kleinen Schritten.", "alt": []},
-    {"sym": "AAPL", "name": "Apple", "slug": "apple", "typ": "normal", "rhythmus": 4, "satz": "Apple zahlt seit 2012 wieder eine Dividende. Die Rendite ist niedrig, weil Apple deutlich mehr Geld für Aktienrückkäufe ausgibt. Das Geschäftsjahr endet Ende September.", "alt": []},
-    {"sym": "CVX", "name": "Chevron", "slug": "chevron", "typ": "normal", "rhythmus": 4, "satz": "Der Ölkonzern Chevron gehört zu den Dividendenaristokraten und hat seine Dividende auch in Jahren mit schwachem Ölpreis erhöht.", "alt": ["/aktien-analysen/chevron"]},
-    {"sym": "MCD", "name": "McDonald's", "slug": "mcdonalds", "typ": "normal", "rhythmus": 4, "satz": "McDonald's gehört zu den Dividendenaristokraten und erhöht seine Dividende seit Jahrzehnten jedes Jahr.", "alt": []},
-    {"sym": "GOOGL", "name": "Alphabet", "slug": "alphabet", "typ": "normal", "rhythmus": 4, "satz": "Alphabet (Google) zahlt erst seit 2024 eine Dividende. Die Historie ist deshalb kurz.", "alt": []},
-    {"sym": "PG", "name": "Procter & Gamble", "slug": "procter-gamble", "typ": "normal", "rhythmus": 4, "satz": "Procter & Gamble (Pampers, Gillette, Ariel) zählt zu den Dividend Kings. Das Geschäftsjahr endet Ende Juni.", "weglassen": ["2017"], "alt": ["/aktien-analysen/procter-gamble"]},
-    {"sym": "JNJ", "name": "Johnson & Johnson", "slug": "johnson-johnson", "typ": "normal", "rhythmus": 4, "satz": "Johnson & Johnson zählt zu den Dividend Kings und erhöht seine Dividende seit mehr als 50 Jahren in Folge.", "alt": []},
-    {"sym": "ABBV", "name": "AbbVie", "slug": "abbvie", "typ": "normal", "rhythmus": 4, "satz": "AbbVie wurde 2013 von Abbott abgespalten und rechnet die Dividendenhistorie der Mutter mit ein. Damit zählt der Pharmakonzern zu den Dividend Kings.", "alt": []}
-  ]
+ "hinweis": "Firmen für die öffentlichen Dividendenseiten /dividende/<slug>/ (tools/build_dividendenseiten.py). typ: normal, reit oder bdc. rhythmus: Zahlungen pro Jahr. weglassen: Geschäftsjahre (JJJJ), deren SEC-Wert nachweislich falsch ist. alt: alte Adressen, die per 301 hierher zeigen sollen. serie: recherchierte Zahl der Jahre mit Dividendenerhöhung in Folge (jahre, null = keine Zählung), Jahr der letzten Erhöhung, aktueller Betrag je Zahlung. Meldet der Termine-Agent in einem späteren Jahr einen höheren regulären Betrag, zählt der Generator ein Jahr dazu.",
+ "firmen": [
+  {
+   "sym": "O",
+   "name": "Realty Income",
+   "slug": "realty-income",
+   "typ": "reit",
+   "rhythmus": 12,
+   "satz": "Realty Income ist ein US-Immobilienkonzern (REIT), der vor allem Einzelhandelsflächen langfristig vermietet und seine Dividende monatlich auszahlt.",
+   "alt": [],
+   "serie": {
+    "jahre": 32,
+    "zuletzt_erhoeht": 2026,
+    "betrag": null,
+    "text": "Laut Unternehmen seit über 31 Jahren jedes Jahr erhöht, Mitglied im S&P 500 Dividend Aristocrats Index (Stand 2026).",
+    "quelle": "https://www.realtyincome.com/investors/press-releases/136th-common-stock-monthly-dividend-increase-declared-realty-income",
+    "stand": "2026-11-17"
+   }
+  },
+  {
+   "sym": "KO",
+   "name": "Coca-Cola",
+   "slug": "coca-cola",
+   "typ": "normal",
+   "rhythmus": 4,
+   "satz": "Coca-Cola gehört zu den Dividend Kings, also den Unternehmen, die ihre Dividende seit mehr als 50 Jahren ohne Unterbrechung erhöhen.",
+   "alt": [
+    "/aktien-analysen/coca-cola"
+   ],
+   "serie": {
+    "jahre": 64,
+    "zuletzt_erhoeht": 2026,
+    "betrag": 0.53,
+    "text": "2026 zum 64. Mal in Folge erhöht (Unternehmensangabe).",
+    "quelle": "https://in.marketscreener.com/news/the-coca-cola-company-increases-the-quarterly-dividend-payable-on-april-1-2026-ce7e5ddcde89f421",
+    "stand": "2026-11-17"
+   }
+  },
+  {
+   "sym": "MAIN",
+   "name": "Main Street Capital",
+   "slug": "main-street-capital",
+   "typ": "bdc",
+   "rhythmus": 12,
+   "satz": "Main Street Capital ist eine Business Development Company (BDC), die mittelständischen US-Firmen Kredite und Eigenkapital gibt. Sie zahlt eine monatliche Dividende und zusätzlich Sonderdividenden.",
+   "alt": [
+    "/aktuelle-finanznachrichten/main-street-capital"
+   ],
+   "serie": {
+    "jahre": null,
+    "zuletzt_erhoeht": 2026,
+    "betrag": 0.265,
+    "text": "Die reguläre Monatsdividende wurde seit dem Börsengang 2007 nie gesenkt und regelmäßig erhöht (Unternehmensangabe).",
+    "quelle": "https://www.mainstcapital.com/investors/news-events/press-releases/detail/2762",
+    "stand": "2026-11-17"
+   }
+  },
+  {
+   "sym": "PEP",
+   "name": "PepsiCo",
+   "slug": "pepsico",
+   "typ": "normal",
+   "rhythmus": 4,
+   "satz": "PepsiCo zählt zu den Dividend Kings und erhöht seine Dividende seit mehr als 50 Jahren in Folge.",
+   "alt": [
+    "/aktien-analysen/pepsico"
+   ],
+   "serie": {
+    "jahre": 54,
+    "zuletzt_erhoeht": 2026,
+    "betrag": 1.48,
+    "text": "2026 zum 54. Mal in Folge erhöht (Unternehmensangabe).",
+    "quelle": "https://www.pepsico.com/newsroom/press-releases/2026/pepsico-declares-quarterly-dividend",
+    "stand": "2026-11-17"
+   }
+  },
+  {
+   "sym": "PFE",
+   "name": "Pfizer",
+   "slug": "pfizer",
+   "typ": "normal",
+   "rhythmus": 4,
+   "satz": "Pfizer hat seine Dividende 2009 halbiert und sie danach mehr als zehn Jahre lang jedes Jahr wieder angehoben. Seit Anfang 2025 ist sie unverändert.",
+   "alt": [
+    "/aktien-analysen/pfizer"
+   ],
+   "serie": {
+    "jahre": 0,
+    "zuletzt_erhoeht": 2025,
+    "betrag": 0.43,
+    "text": "Nach der Kürzung 2009 mehr als zehn Jahre in Folge erhöht. Seit Anfang 2025 unverändert bei 0,43 US-Dollar je Quartal.",
+    "quelle": "https://247wallst.com/investing/2026/09/18/pfizers-dividend-yield-is-enormous-but-is-the-payout-still-growing/",
+    "stand": "2026-11-17"
+   }
+  },
+  {
+   "sym": "MO",
+   "name": "Altria",
+   "slug": "altria",
+   "typ": "normal",
+   "rhythmus": 4,
+   "satz": "Der Tabakkonzern Altria (Marlboro in den USA) zählt zu den Dividend Kings und gehört zu den renditestärksten Werten im S&P 500.",
+   "alt": [],
+   "serie": {
+    "jahre": 57,
+    "zuletzt_erhoeht": 2026,
+    "betrag": 1.11,
+    "text": "Im August 2026 erhöht, laut Unternehmen die 61. Erhöhung in 57 Jahren.",
+    "quelle": "https://kalkine.com/news/dividend-stocks/altria-dividend-rises-47-to-111-yielding-644",
+    "stand": "2026-11-17"
+   }
+  },
+  {
+   "sym": "ARCC",
+   "name": "Ares Capital",
+   "slug": "ares-capital",
+   "typ": "bdc",
+   "rhythmus": 4,
+   "satz": "Ares Capital ist die größte börsennotierte Business Development Company (BDC) der USA und zahlt seit Jahren eine stabile Quartalsdividende.",
+   "alt": [],
+   "serie": {
+    "jahre": 0,
+    "zuletzt_erhoeht": 2023,
+    "betrag": 0.48,
+    "text": "Laut Unternehmen seit mehr als 16 Jahren eine stabile oder steigende Quartalsdividende, seit 2023 unverändert bei 0,48 US-Dollar.",
+    "quelle": "https://www.itiger.com/hans/news/2608368604",
+    "stand": "2026-11-17"
+   }
+  },
+  {
+   "sym": "GIS",
+   "name": "General Mills",
+   "slug": "general-mills",
+   "typ": "normal",
+   "rhythmus": 4,
+   "satz": "General Mills (Cheerios, Häagen-Dazs) zahlt seit 127 Jahren ununterbrochen Dividende, hat sie 2026 aber nicht erhöht. Das Geschäftsjahr endet Ende Mai.",
+   "alt": [],
+   "serie": {
+    "jahre": 0,
+    "zuletzt_erhoeht": 2025,
+    "betrag": 0.61,
+    "text": "Zahlt seit 127 Jahren ohne Unterbrechung Dividende, zuletzt im Juni 2025 erhöht. 2026 blieb die Quartalsdividende bei 0,61 US-Dollar.",
+    "quelle": "https://www.businesswire.com/news/home/20260127379870/en/",
+    "stand": "2026-11-17"
+   }
+  },
+  {
+   "sym": "NKE",
+   "name": "Nike",
+   "slug": "nike",
+   "typ": "normal",
+   "rhythmus": 4,
+   "satz": "Nike erhöht seine Dividende seit mehr als 20 Jahren jedes Jahr. Das Geschäftsjahr endet Ende Mai.",
+   "alt": [],
+   "serie": {
+    "jahre": 24,
+    "zuletzt_erhoeht": 2025,
+    "betrag": 0.41,
+    "text": "Im November 2025 zum 24. Mal in Folge erhöht (Unternehmensangabe).",
+    "quelle": "https://www.businesswire.com/news/home/20211118006257/en/NIKE-Inc.-Announces-11-Percent-Increase-in-Quarterly-Dividend",
+    "stand": "2026-11-17"
+   }
+  },
+  {
+   "sym": "KHC",
+   "name": "Kraft Heinz",
+   "slug": "kraft-heinz",
+   "typ": "normal",
+   "rhythmus": 4,
+   "satz": "Kraft Heinz hat seine Dividende 2019 deutlich gekürzt und zahlt seitdem einen gleichbleibenden Betrag.",
+   "alt": [],
+   "serie": {
+    "jahre": 0,
+    "zuletzt_erhoeht": 2018,
+    "betrag": 0.4,
+    "text": "Seit der Kürzung 2019 unverändert bei 0,40 US-Dollar je Quartal.",
+    "quelle": "https://news.kraftheinzcompany.com/press-releases-details/2026/The-Kraft-Heinz-Company-Declares-Regular-Quarterly-Dividend-of-0-40-Per-Share-e37f9f749/default.aspx",
+    "stand": "2026-11-17"
+   }
+  },
+  {
+   "sym": "MSFT",
+   "name": "Microsoft",
+   "slug": "microsoft",
+   "typ": "normal",
+   "rhythmus": 4,
+   "satz": "Microsoft zahlt seit 2003 eine Dividende und hat sie 24 Jahre in Folge erhöht. Mit der nächsten Erhöhung wären es 25 Jahre. Das Geschäftsjahr endet Ende Juni.",
+   "alt": [],
+   "serie": {
+    "jahre": 24,
+    "zuletzt_erhoeht": 2026,
+    "betrag": 0.98,
+    "text": "Im September 2026 zum 24. Mal in Folge erhöht.",
+    "quelle": "https://financebuzz.com/news/microsoft-dividend-hike-ai-spending",
+    "stand": "2026-11-17"
+   }
+  },
+  {
+   "sym": "NVDA",
+   "name": "Nvidia",
+   "slug": "nvidia",
+   "typ": "normal",
+   "rhythmus": 4,
+   "satz": "Nvidia gibt den größten Teil seiner Gewinne über Aktienrückkäufe zurück. Im Mai 2026 hob der Chipkonzern die Quartalsdividende von 0,01 auf 0,25 US-Dollar an, die Rendite bleibt trotzdem klein. Das Geschäftsjahr endet Ende Januar.",
+   "alt": [],
+   "serie": {
+    "jahre": 1,
+    "zuletzt_erhoeht": 2026,
+    "betrag": 0.25,
+    "text": "Im Mai 2026 von 0,01 auf 0,25 US-Dollar je Quartal angehoben, 2025 gab es keine Erhöhung.",
+    "quelle": "https://www.fool.com/investing/2026/05/21/nvidia-just-raised-its-dividend-by-2400-and-that-w/",
+    "stand": "2026-11-17"
+   }
+  },
+  {
+   "sym": "VZ",
+   "name": "Verizon",
+   "slug": "verizon",
+   "typ": "normal",
+   "rhythmus": 4,
+   "satz": "Der Telekomkonzern Verizon gehört zu den renditestärksten großen US-Werten und erhöht die Dividende jedes Jahr in kleinen Schritten.",
+   "alt": [],
+   "serie": {
+    "jahre": 20,
+    "zuletzt_erhoeht": 2026,
+    "betrag": 0.7075,
+    "text": "2026 zum 20. Mal in Folge erhöht (Angabe des Finanzchefs).",
+    "quelle": "https://247wallst.com/investing/2026/09/03/verizons-dividend-is-one-of-the-biggest-in-the-sp-500-but-is-it-safe/",
+    "stand": "2026-11-17"
+   }
+  },
+  {
+   "sym": "AAPL",
+   "name": "Apple",
+   "slug": "apple",
+   "typ": "normal",
+   "rhythmus": 4,
+   "satz": "Apple zahlt seit 2012 wieder eine Dividende. Die Rendite ist niedrig, weil Apple deutlich mehr Geld für Aktienrückkäufe ausgibt. Das Geschäftsjahr endet Ende September.",
+   "alt": [],
+   "serie": {
+    "jahre": 14,
+    "zuletzt_erhoeht": 2026,
+    "betrag": 0.27,
+    "text": "Seit 2013 jedes Jahr erhöht, zuletzt im April 2026.",
+    "quelle": "https://www.marketbeat.com/instant-alerts/apple-inc-nasdaqaapl-declares-quarterly-dividend-of-027-2026-05-01/",
+    "stand": "2026-11-17"
+   }
+  },
+  {
+   "sym": "CVX",
+   "name": "Chevron",
+   "slug": "chevron",
+   "typ": "normal",
+   "rhythmus": 4,
+   "satz": "Der Ölkonzern Chevron gehört zu den Dividendenaristokraten und hat seine Dividende auch in Jahren mit schwachem Ölpreis erhöht.",
+   "alt": [
+    "/aktien-analysen/chevron"
+   ],
+   "serie": {
+    "jahre": 39,
+    "zuletzt_erhoeht": 2026,
+    "betrag": 1.78,
+    "text": "Im Januar 2026 zum 39. Mal in Folge erhöht.",
+    "quelle": "https://www.morningstar.com/news/dow-jones/202601303441/chevron-raises-quarterly-dividend-by-41-to-178",
+    "stand": "2026-11-17"
+   }
+  },
+  {
+   "sym": "MCD",
+   "name": "McDonald's",
+   "slug": "mcdonalds",
+   "typ": "normal",
+   "rhythmus": 4,
+   "satz": "McDonald's hat seine Dividende 2026 zum 50. Mal in Folge erhöht und zählt damit zu den Dividend Kings.",
+   "alt": [],
+   "serie": {
+    "jahre": 50,
+    "zuletzt_erhoeht": 2026,
+    "betrag": 1.93,
+    "text": "Im September 2026 zum 50. Mal in Folge erhöht, damit zählt McDonald's zu den Dividend Kings (Unternehmensangabe).",
+    "quelle": "https://finviz.com/news/393398/mcdonalds-marks-50-consecutive-years-of-dividend-increases-joining-the-ranks-of-dividend-kings",
+    "stand": "2026-11-17"
+   }
+  },
+  {
+   "sym": "GOOGL",
+   "name": "Alphabet",
+   "slug": "alphabet",
+   "typ": "normal",
+   "rhythmus": 4,
+   "satz": "Alphabet (Google) zahlt erst seit 2024 eine Dividende. Die Historie ist deshalb kurz.",
+   "alt": [],
+   "serie": {
+    "jahre": 2,
+    "zuletzt_erhoeht": 2026,
+    "betrag": 0.22,
+    "text": "Dividende seit 2024, erhöht 2025 und im April 2026.",
+    "quelle": "https://www.suredividend.com/wp-content/uploads/2026/05/GOOGL-2026-05-05.pdf",
+    "stand": "2026-11-17"
+   }
+  },
+  {
+   "sym": "PG",
+   "name": "Procter & Gamble",
+   "slug": "procter-gamble",
+   "typ": "normal",
+   "rhythmus": 4,
+   "satz": "Procter & Gamble (Pampers, Gillette, Ariel) zählt zu den Dividend Kings. Das Geschäftsjahr endet Ende Juni.",
+   "weglassen": [
+    "2017"
+   ],
+   "alt": [
+    "/aktien-analysen/procter-gamble"
+   ],
+   "serie": {
+    "jahre": 70,
+    "zuletzt_erhoeht": 2026,
+    "betrag": 1.0885,
+    "text": "Im April 2026 zum 70. Mal in Folge erhöht (Unternehmensangabe).",
+    "quelle": "https://www.sec.gov/Archives/edgar/data/80424/000008042426000048/pgdividendreleaseapril2026.htm",
+    "stand": "2026-11-17"
+   }
+  },
+  {
+   "sym": "JNJ",
+   "name": "Johnson & Johnson",
+   "slug": "johnson-johnson",
+   "typ": "normal",
+   "rhythmus": 4,
+   "satz": "Johnson & Johnson zählt zu den Dividend Kings und erhöht seine Dividende seit mehr als 50 Jahren in Folge.",
+   "alt": [],
+   "serie": {
+    "jahre": 64,
+    "zuletzt_erhoeht": 2026,
+    "betrag": 1.34,
+    "text": "Im April 2026 zum 64. Mal in Folge erhöht (Unternehmensangabe).",
+    "quelle": "https://www.jnj.com/media-center/press-releases/johnson-johnson-announces-64th-consecutive-year-of-dividend-increase-raises-quarterly-dividend-by-3-1",
+    "stand": "2026-11-17"
+   }
+  },
+  {
+   "sym": "ABBV",
+   "name": "AbbVie",
+   "slug": "abbvie",
+   "typ": "normal",
+   "rhythmus": 4,
+   "satz": "AbbVie wurde 2013 von Abbott abgespalten und rechnet die Dividendenhistorie der Mutter mit ein. Damit zählt der Pharmakonzern zu den Dividend Kings.",
+   "alt": [],
+   "serie": {
+    "jahre": 54,
+    "zuletzt_erhoeht": 2026,
+    "betrag": 1.73,
+    "text": "54 Jahre in Folge erhöht, eingerechnet die Jahre vor der Abspaltung von Abbott 2013. Mitglied im S&P 500 Dividend Aristocrats Index.",
+    "quelle": "https://www.kiplinger.com/slideshow/investing/T018-S003-best-dividend-stocks-for-bear-markets/index.html",
+    "stand": "2026-11-17"
+   }
+  }
+ ]
 }
