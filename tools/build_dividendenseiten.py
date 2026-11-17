@@ -204,11 +204,15 @@ def news_links(sym, mag, tiefe):
 
 
 def logo_span(sym, name, prefix):
-    """Logo einer Firma; ohne Bilddatei ein Buchstaben-Logo wie auf den Magazinseiten."""
+    """Logo einer Firma wie auf der BDC-Liste: zuerst assets/logos/<kuerzel>.png, sonst assets/logos/hub/<KUERZEL>.png,
+    fehlt auch das, holt logos.js das Bild ueber den Zwischenserver nach und zeigt sonst einen Buchstaben."""
     k = sym.lower()
     if os.path.exists(os.path.join(ROOT, "assets", "logos", k + ".png")):
         return f'<span class="arlogo"><img src="{prefix}assets/logos/{k}.png" alt="" width="30" height="30" loading="lazy"></span>'
-    return f'<span class="arlogo mono" aria-hidden="true">{esc((name or sym)[:1].upper())}</span>'
+    up = sym.upper()
+    ph = esc((name or sym)[:1].upper())
+    return (f'<span class="arlogo"><img src="{prefix}assets/logos/hub/{esc(up)}.png" alt="" width="30" height="30" loading="lazy" '
+            f'data-sym="{esc(up)}" data-ph="{ph}"></span>')
 
 SORT_JS = """<script>(function(){function v(td,num){var d=td.getAttribute('data-v');if(d===null)d=td.textContent.trim();if(!num)return d.toLowerCase();var n=parseFloat(d);return isNaN(n)?-Infinity:n}
 document.querySelectorAll('table.sortable').forEach(function(t){var hs=t.tHead?t.tHead.rows[0].cells:[];Array.prototype.forEach.call(hs,function(th,i){th.style.cursor='pointer';th.title='Sortieren';th.setAttribute('tabindex','0');var dir=1;
