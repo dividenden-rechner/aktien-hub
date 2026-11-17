@@ -1,88 +1,88 @@
 {
- "stand": "2026-11-14 08:44 UTC (wiederhergestellt aus Test vom 08:37)",
+ "stand": "2026-11-17 04:30 UTC",
  "kurse": {
   "HTGC": {
-   "kurs": 15.87,
+   "kurs": 15.77,
    "boerse": "NYSE"
   },
   "TSLX": {
-   "kurs": 17.64,
+   "kurs": 17.44,
    "boerse": "NYSE"
   },
   "MSDL": {
-   "kurs": 13.84,
+   "kurs": 13.7,
    "boerse": "NYSE"
   },
   "PSEC": {
-   "kurs": 1.46,
+   "kurs": 1.35,
    "boerse": "NASDAQ"
   },
   "CSWC": {
-   "kurs": 23.45,
+   "kurs": 23.2,
    "boerse": "NASDAQ"
   },
   "NMFC": {
-   "kurs": 6.7,
+   "kurs": 6.64,
    "boerse": "NASDAQ"
   },
   "CGBD": {
-   "kurs": 11.08,
+   "kurs": 10.92,
    "boerse": "NASDAQ"
   },
   "SLRC": {
-   "kurs": 11.61,
+   "kurs": 11.39,
    "boerse": "NASDAQ"
   },
   "NCDL": {
-   "kurs": 11.79,
+   "kurs": 11.64,
    "boerse": "NYSE"
   },
   "MSIF": {
-   "kurs": 12.44,
+   "kurs": 12.33,
    "boerse": "NYSE"
   },
   "CCAP": {
-   "kurs": 10.13,
+   "kurs": 10.08,
    "boerse": "NASDAQ"
   },
   "CION": {
-   "kurs": 6.09,
+   "kurs": 5.99,
    "boerse": "NYSE"
   },
   "PSBD": {
-   "kurs": 9.8,
+   "kurs": 9.69,
    "boerse": "NYSE"
   },
   "SAR": {
-   "kurs": 11.47,
+   "kurs": 10.9,
    "boerse": "NYSE"
   },
   "SCM": {
-   "kurs": 6.75,
+   "kurs": 6.63,
    "boerse": "NYSE"
   },
   "HRZN": {
-   "kurs": 3.72,
+   "kurs": 3.43,
    "boerse": "NASDAQ"
   },
   "LIEN": {
-   "kurs": 9.08,
+   "kurs": 8.99,
    "boerse": "NASDAQ"
   },
   "TPVG": {
-   "kurs": 3.99,
+   "kurs": 3.78,
    "boerse": "NYSE"
   },
   "WHF": {
-   "kurs": 8.26,
+   "kurs": 8.12,
    "boerse": "NASDAQ"
   },
   "GECC": {
-   "kurs": 4.91,
+   "kurs": 4.92,
    "boerse": "NASDAQ"
   },
   "OFS": {
-   "kurs": 3.685,
+   "kurs": 3.62,
    "boerse": "NASDAQ"
   },
   "ICMB": {
@@ -90,65 +90,109 @@
    "boerse": "NASDAQ"
   },
   "RAND": {
-   "kurs": 9.6001,
+   "kurs": 9.706,
    "boerse": "NASDAQ"
   },
   "GBDC": {
-   "kurs": 12.54,
+   "kurs": 12.4,
    "boerse": "NASDAQ"
   },
   "ARCC": {
-   "kurs": 19.17,
+   "kurs": 19.08,
    "boerse": "NASDAQ"
   },
   "MAIN": {
-   "kurs": 56.4,
+   "kurs": 56.18,
    "boerse": "NYSE"
+  },
+  "OBDC": {
+   "kurs": 10.83,
+   "boerse": "NYSE"
+  },
+  "BXSL": {
+   "kurs": 23.75,
+   "boerse": "NYSE"
+  },
+  "FSK": {
+   "kurs": 11.57,
+   "boerse": "NYSE"
+  },
+  "OCSL": {
+   "kurs": 12.03,
+   "boerse": "NASDAQ"
+  },
+  "GSBD": {
+   "kurs": 8.03,
+   "boerse": "NYSE"
+  },
+  "MFIC": {
+   "kurs": 10.14,
+   "boerse": "NASDAQ"
+  },
+  "TRIN": {
+   "kurs": 17.49,
+   "boerse": "NYSE"
+  },
+  "BBDC": {
+   "kurs": 8.56,
+   "boerse": "NYSE"
+  },
+  "BCSF": {
+   "kurs": 10.87,
+   "boerse": "NYSE"
+  },
+  "PFLT": {
+   "kurs": 6.51,
+   "boerse": "NYSE"
+  },
+  "FDUS": {
+   "kurs": 19.27,
+   "boerse": "NASDAQ"
+  },
+  "GAIN": {
+   "kurs": 14.61,
+   "boerse": "NASDAQ"
+  },
+  "TCPC": {
+   "kurs": 4.09,
+   "boerse": "NASDAQ"
+  },
+  "GLAD": {
+   "kurs": 19.15,
+   "boerse": "NASDAQ"
+  },
+  "PNNT": {
+   "kurs": 3.11,
+   "boerse": "NYSE"
+  },
+  "RWAY": {
+   "kurs": 6.66,
+   "boerse": "NASDAQ"
+  },
+  "SSSS": {
+   "kurs": 11.46,
+   "boerse": "NASDAQ"
+  },
+  "MRCC": {
+   "kurs": 5.08,
+   "boerse": "NASDAQ"
+  },
+  "OXSQ": {
+   "kurs": 0.6201,
+   "boerse": "NASDAQ"
+  },
+  "KBDC": {
+   "kurs": 12.66,
+   "boerse": "NYSE"
+  },
+  "PFX": {
+   "kurs": 40.23,
+   "boerse": "NASDAQ"
+  },
+  "NSLR": {
+   "kurs": 5.4,
+   "boerse": "NASDAQ"
   }
  },
- "fehler": {
-  "ARCC": "HTTP Error 429: Too Many Requests",
-  "OBDC": "HTTP Error 429: Too Many Requests",
-  "BXSL": "HTTP Error 429: Too Many Requests",
-  "MAIN": "HTTP Error 429: Too Many Requests",
-  "FSK": "HTTP Error 429: Too Many Requests",
-  "GBDC": "HTTP Error 429: Too Many Requests",
-  "HTGC": "HTTP Error 429: Too Many Requests",
-  "TSLX": "HTTP Error 429: Too Many Requests",
-  "MSDL": "HTTP Error 429: Too Many Requests",
-  "PSEC": "HTTP Error 429: Too Many Requests",
-  "OCSL": "HTTP Error 429: Too Many Requests",
-  "CSWC": "HTTP Error 429: Too Many Requests",
-  "GSBD": "HTTP Error 429: Too Many Requests",
-  "MFIC": "HTTP Error 429: Too Many Requests",
-  "TRIN": "HTTP Error 429: Too Many Requests",
-  "NMFC": "HTTP Error 429: Too Many Requests",
-  "BBDC": "HTTP Error 429: Too Many Requests",
-  "BCSF": "HTTP Error 429: Too Many Requests",
-  "CGBD": "HTTP Error 429: Too Many Requests",
-  "PFLT": "HTTP Error 429: Too Many Requests",
-  "SLRC": "HTTP Error 429: Too Many Requests",
-  "FDUS": "HTTP Error 429: Too Many Requests",
-  "NCDL": "HTTP Error 429: Too Many Requests",
-  "MSIF": "HTTP Error 429: Too Many Requests",
-  "GAIN": "HTTP Error 429: Too Many Requests",
-  "CCAP": "HTTP Error 429: Too Many Requests",
-  "CION": "HTTP Error 429: Too Many Requests",
-  "TCPC": "HTTP Error 429: Too Many Requests",
-  "GLAD": "HTTP Error 429: Too Many Requests",
-  "PNNT": "HTTP Error 429: Too Many Requests",
-  "PSBD": "HTTP Error 429: Too Many Requests",
-  "RWAY": "HTTP Error 429: Too Many Requests",
-  "SAR": "HTTP Error 429: Too Many Requests",
-  "SCM": "HTTP Error 429: Too Many Requests",
-  "HRZN": "HTTP Error 429: Too Many Requests",
-  "LIEN": "HTTP Error 429: Too Many Requests",
-  "TPVG": "HTTP Error 429: Too Many Requests",
-  "WHF": "HTTP Error 429: Too Many Requests",
-  "OXSQ": "HTTP Error 429: Too Many Requests",
-  "GECC": "HTTP Error 429: Too Many Requests",
-  "OFS": "HTTP Error 429: Too Many Requests",
-  "ICMB": "HTTP Error 429: Too Many Requests",
-  "RAND": "HTTP Error 429: Too Many Requests"
- }
+ "fehler": {}
 }
