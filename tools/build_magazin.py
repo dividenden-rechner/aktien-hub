@@ -4,6 +4,7 @@ Startseiten-Teaser und Navigationseintrag. Aufruf im Repo-Hauptordner:  python3 
 Benötigt: pip install markdown pillow"""
 import urllib.parse, re, os, sys, json, html, glob, datetime, email.utils
 from zoneinfo import ZoneInfo
+import json
 import markdown
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 import glossar
@@ -259,6 +260,42 @@ def _tl(m):
     return '<span class="tl tl-0"></span>'
 
 
+_FIRMEN = None
+def _firmen():
+    """Firmennamen aus den Dividendenseiten: name -> slug (nur Firmen, deren Seite es gibt)."""
+    global _FIRMEN
+    if _FIRMEN is None:
+        try:
+            c = json.load(open("data/dividendenseiten.json", encoding="utf-8"))
+            _FIRMEN = [(f["name"], f["slug"]) for f in c.get("firmen", []) if len(f.get("name", "")) >= 4 and f.get("name") != "Target"]
+            _FIRMEN.sort(key=lambda x: -len(x[0]))
+        except Exception:
+            _FIRMEN = []
+    return _FIRMEN
+
+def firmen_links(h, depth):
+    """Erste Nennung jeder Firma im Fließtext wird zum Link auf ihre Dividendenseite (nicht in Links, Überschriften, Code)."""
+    pre = "../" * depth
+    gesetzt = set()
+    skip = 0
+    teile = re.split(r"(<[^>]+>)", h)
+    for i, t in enumerate(teile):
+        if t.startswith("<"):
+            m = re.match(r"<(/?)(a|h[1-6]|code|script|style)\b", t, re.I)
+            if m:
+                skip += -1 if m.group(1) else 1
+                skip = max(skip, 0)
+            continue
+        if skip: continue
+        for name, slug in _firmen():
+            if name in gesetzt: continue
+            pat = re.compile(r"(?<![\w\-])" + re.escape(name) + r"(?![\w\-])")
+            if pat.search(t):
+                t = pat.sub(f'<a href="{pre}dividende/{slug}/">{name}</a>', t, count=1)
+                gesetzt.add(name)
+        teile[i] = t
+    return "".join(teile)
+
 def md_to_html(md_text, depth):
     pre = "../" * depth
     md_text = re.sub(r"\{\{logo:([a-z0-9.\-]+)\}\}", _tl, md_text)
@@ -271,6 +308,7 @@ def md_to_html(md_text, depth):
     h = re.sub(r'(href|src)="/(?!/)', lambda m: f'{m.group(1)}="{pre}', h)       # /pfad/ -> relativ
     h = re.sub(r"<table>", '<div class="tablewrap"><table>', h); h = h.replace("</table>", "</table></div>")
     h = re.sub(r'<a href="(https?://[^"]+)"', r'<a href="\1" rel="noopener"', h)
+    h = firmen_links(h, depth)
     return h
 
 def words(s): return len(re.sub(r"<[^>]+>", " ", s).split())
