@@ -227,9 +227,12 @@
     var tx = 300;
     [["Gewinn", q.gewinn], ["Umsatz", q.umsatz]].forEach(function (r, i) {
       if (!r[1]) return;
-      var y = ly + 24 + i * 100, lab = r[0] + ": ", wert = String(r[1].wert || ""), pct = String(r[1].pct || "");
-      c.font = "400 50px " + F; c.fillStyle = D; c.fillText(lab, tx, y); var w1 = c.measureText(lab).width;
-      c.font = "700 50px " + F; c.fillText(wert, tx + w1, y); var w2 = c.measureText(wert + " ").width;
+      var y = ly + 24 + i * 100, lab = (r[1].label || r[0]) + ": ", wert = String(r[1].wert || ""), pct = String(r[1].pct || "");
+      /* Zeile passt in die Breite: bei langen Werten wird die Schrift verkleinert */
+      var fs = 50; c.font = "700 " + fs + "px " + F; var tot = c.measureText(lab + wert + " (" + pct + ")").width;
+      if (tot > 760) fs = Math.max(30, Math.floor(50 * 760 / tot));
+      c.font = "400 " + fs + "px " + F; c.fillStyle = D; c.fillText(lab, tx, y); var w1 = c.measureText(lab).width;
+      c.font = "700 " + fs + "px " + F; c.fillText(wert, tx + w1, y); var w2 = c.measureText(wert + " ").width;
       c.fillStyle = /^\s*[-\u2212\u2013]/.test(pct) ? ROT : GRUEN; c.fillText("(" + pct + ")", tx + w1 + w2, y);
     });
     /* Mitte: Bild (Folie, Screenshot) oder, wenn keins da ist, die Kennzahlen als Tabelle */
