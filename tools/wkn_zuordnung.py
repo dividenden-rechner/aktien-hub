@@ -40,19 +40,34 @@ def csv_links():
 
 
 def lies(raw, gesucht, out):
-    text = raw.decode("utf-8-sig", "replace")
+    if raw[:2] in (b"\xff\xfe", b"\xfe\xff"):
+        text = raw.decode("utf-16", "replace")
+    else:
+        try:
+            text = raw.decode("utf-8-sig")
+        except UnicodeDecodeError:
+            text = raw.decode("latin-1")
     zeilen = text.splitlines()
-    # Kopfzeile suchen (vor der Tabelle stehen oft Titel und Datum)
-    for i, z in enumerate(zeilen[:20]):
-        if "ISIN" in z and "WKN" in z:
+    # Kopfzeile suchen (vor der Tabelle stehen oft Titel und Datum); Trenner Semikolon oder Komma
+    for i, z in enumerate(zeilen[:80]):
+        zu = z.upper()
+        if "ISIN" in zu and "WKN" in zu:
             break
     else:
+        print("  keine Kopfzeile mit ISIN und WKN, Anfang:", [z[:120] for z in zeilen[:4]], "Bytes:", len(raw))
         return 0
+    trenner = ";" if zeilen[i].count(";") >= zeilen[i].count(",") else ","
+    kopf = [k.strip().strip('"').upper() for k in next(csv.reader([zeilen[i]], delimiter=trenner))]
+    ii, iw = kopf.index("ISIN"), kopf.index("WKN")
     n = 0
-    for row in csv.DictReader(io.StringIO("\n".join(zeilen[i:])), delimiter=";"):
-        isin, wkn = (row.get("ISIN") or "").strip(), (row.get("WKN") or "").strip()
+    for row in csv.reader(zeilen[i + 1:], delimiter=trenner):
+        if len(row) <= max(ii, iw):
+            continue
+        isin, wkn = row[ii].strip().strip('"'), row[iw].strip().strip('"')
         if isin in gesucht and re.fullmatch(r"[A-Z0-9]{6}", wkn) and isin not in out:
             out[isin] = wkn; n += 1
+    if not n:
+        print("  Kopf:", kopf[:12], "Beispiel:", zeilen[i + 1][:160] if len(zeilen) > i + 1 else "")
     return n
 
 
