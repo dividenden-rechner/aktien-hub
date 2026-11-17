@@ -112,7 +112,7 @@ def kennzahlen(f, sec, kurse, iz, usd_je_eur, termine):
     r["dps_letzt"], r["gj_letzt"] = letzt, gj_label(letzt_d, dez)
     # Kurs (Euro) und Rendite
     i = iz.get(f["sym"]) or {}
-    isin = i.get("isin") if isinstance(i, dict) else i
+    isin = (i.get("isin") if isinstance(i, dict) else i) or f.get("isin")
     kz = kurse["k"].get(isin) if isin else None
     r["isin"] = isin
     if kz and kz[0]:
