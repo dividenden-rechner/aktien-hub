@@ -3,7 +3,7 @@
 <!-- uebersicht-start -->
 ## Übersicht (wird automatisch erstellt, neueste zuerst)
 
-### Zur Freigabe: Entwürfe (10)
+### Zur Freigabe: Entwürfe (9)
 
 Datei anklicken, dann Stift-Symbol: Zeile `draft: true` löschen und speichern, dann geht der Artikel online.
 
@@ -11,7 +11,6 @@ Datei anklicken, dann Stift-Symbol: Zeile `draft: true` löschen und speichern, 
 |---|---|---|
 | 21.11.2026 08:00 | Chinas KI-Firmen lernen von US-Modellen: Wie Destillation die Chip-Sperren unterläuft | [79738883_2026-11-17/9100_0657-china-destillation-us-ki-modelle.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/79738883_2026-11-17/9100_0657-china-destillation-us-ki-modelle.md) |
 | 18.11.2026 09:00 | Imperial, BAT und Philip Morris: Wer kommt bei neuen Produkten voran? | [79738883_2026-11-17/9120_0900-imperial-bat-pmi-vergleich.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/79738883_2026-11-17/9120_0900-imperial-bat-pmi-vergleich.md) |
-| 18.11.2026 08:00 | Imperial Brands 2026: Gewinn je Aktie plus 8,8 %, aber der Berichtsgewinn fällt | [79738883_2026-11-17/9110_0830-imperial-brands-jahreszahlen-2026.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/79738883_2026-11-17/9110_0830-imperial-brands-jahreszahlen-2026.md) |
 | 16.11.2026 23:40 | Agree Realty im Vergleich: Dividende rund 4,7 %, AFFO-Prognose angehoben, Verschuldung niedriger als bei NNN und Realty Income | [79738883_2026-11-16/9050_2340-agree-realty-vergleich-nnn-realty-income.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/79738883_2026-11-16/9050_2340-agree-realty-vergleich-nnn-realty-income.md) |
 | 05.11.2026 23:05 | Wahlsieg der Demokraten löscht den Börsenrausch: Chipwerte brechen ein, Nasdaq rutscht in die Korrektur | [79738894_2026-11-05/7694_2305-marktueberblick-wahlsieg-demokraten-chipwerte-nasdaq-korrektur.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/79738894_2026-11-05/7694_2305-marktueberblick-wahlsieg-demokraten-chipwerte-nasdaq-korrektur.md) |
 | 29.10.2026 23:27 | Comfort Systems USA: Umsatz steigt im Q3 2026 auf 3,8 Milliarden US-Dollar | [79738970_2026-10-29/7672_2327-comfort-systems-usa-q3-2026-zahlen.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/79738970_2026-10-29/7672_2327-comfort-systems-usa-q3-2026-zahlen.md) |
@@ -20,10 +19,11 @@ Datei anklicken, dann Stift-Symbol: Zeile `draft: true` löschen und speichern, 
 | 29.10.2026 22:42 | Amazon steigert Umsatz im dritten Quartal auf 201,9 Milliarden Dollar | [79738970_2026-10-29/7757_2242-amazon-q3-2026-zahlen.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/79738970_2026-10-29/7757_2242-amazon-q3-2026-zahlen.md) |
 | 29.10.2026 10:12 | Shell erzielt im dritten Quartal 10,8 Milliarden Dollar Gewinn | [79738970_2026-10-29/8987_1012-shell-q3-2026-ergebnisse.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/79738970_2026-10-29/8987_1012-shell-q3-2026-ergebnisse.md) |
 
-### Online (401)
+### Online (402)
 
 | Datum | Titel | Datei |
 |---|---|---|
+| 18.11.2026 08:00 | Imperial Brands 2026: Gewinn je Aktie plus 8,8 %, aber der Berichtsgewinn fällt | [79738883_2026-11-17/9110_0830-imperial-brands-jahreszahlen-2026.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/79738883_2026-11-17/9110_0830-imperial-brands-jahreszahlen-2026.md) |
 | 16.11.2026 21:10 | Fed-Zinsen: Chance auf einen halben Prozentpunkt mehr zur Juli-Sitzung 2027 steigt auf 97 % | [79738883_2026-11-16/8978_1031-fed-zinsen-erhoehung-chance.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/79738883_2026-11-16/8978_1031-fed-zinsen-erhoehung-chance.md) |
 | 16.11.2026 20:04 | Henry Schein senkt bereinigte Gewinnprognose für 2026 auf 5,42 bis 5,48 US-Dollar | [79738883_2026-11-16/7995_2004-henry-schein-prognose-anpassung-2026.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/79738883_2026-11-16/7995_2004-henry-schein-prognose-anpassung-2026.md) |
 | 16.11.2026 20:03 | BBVA meldet Zwischenstand zum Aktienrückkauf in Höhe von über 336 Millionen Euro | [79738883_2026-11-16/7996_2003-bbva-aktienrueckkauf-zweite-tranche-november-2026.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/79738883_2026-11-16/7996_2003-bbva-aktienrueckkauf-zweite-tranche-november-2026.md) |
