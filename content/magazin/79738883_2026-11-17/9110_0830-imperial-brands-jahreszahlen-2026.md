@@ -15,8 +15,8 @@ image_credit: "Foto: Imperial Brands"
 image_lizenz: Pressebild
 ---
 <!-- PRÜFEN: Kurs aus dem aktien.guide-Screenshot (35,65 € am 17.11.2026) ist im Text bewusst nicht als Rendite verwendet. Für eine Rendite fehlt der Pfund-Euro-Kurs zum Stichtag. Vor Veröffentlichung ergänzen, falls gewünscht. -->
-<!-- PRÜFEN: Alle Zahlen stammen aus dem Full Year Results Statement und der Präsentation vom 17.11.2026. Die Ausschüttungsquote ist eine eigene Rechnung aus Dividende und bereinigtem Gewinn je Aktie. -->
 <!-- PRÜFEN: Der Gewinn je Aktie wird in der Tabelle mit konstanter Währung ausgewiesen; die Ist-Veränderung weicht leicht ab (bereinigt +8,3 %). -->
+<!-- PRÜFEN: Die Ausschüttungsquote ist eine eigene Rechnung aus Dividende und bereinigtem Gewinn je Aktie. -->
 
 !!! kurz "Kurz gesagt"
     **Die Zahlen:** Das bereinigte Betriebsergebnis steigt um 3,7 % auf 4,13 Mrd. £. Der bereinigte Gewinn je Aktie legt um 8,8 % zu.
@@ -27,16 +27,21 @@ Imperial Brands hat am 17. November 2026 die Zahlen zum Geschäftsjahr bis 30. S
 
 ## Die Kennzahlen im Überblick
 
-| Kennzahl | FY26 | FY25 | Veränderung (konstante Währung) |
-|---|---|---|---|
-| Umsatz, berichtet | 31.677 Mio. £ | 32.171 Mio. £ | -1,5 % |
-| Tabak & NGP Nettoumsatz, bereinigt | 8.506 Mio. £ | 8.316 Mio. £ | +2,1 % |
-| Betriebsergebnis, bereinigt | 4.130 Mio. £ | 3.988 Mio. £ | +3,7 % |
-| Betriebsergebnis, berichtet | 3.134 Mio. £ | 3.490 Mio. £ | -10,2 % |
-| Gewinn je Aktie, bereinigt | 341,0 p | 315,0 p | +8,8 % |
-| Gewinn je Aktie, berichtet | 242,9 p | 251,1 p | -3,3 % |
-| Dividende je Aktie | 166,72 p | 160,32 p | +4,0 % |
-| Nettoverschuldung, bereinigt | 8.786 Mio. £ | 8.406 Mio. £ | k. A. |
+| Kennzahl | FY26 (Veränderung) |
+|---|---|
+| Umsatz, berichtet | 31.677 Mio. £ (-1,5 %) |
+| Tabak & NGP, bereinigt | 8.506 Mio. £ (+2,1 %) |
+| Betriebsergebnis, bereinigt | 4.130 Mio. £ (+3,7 %) |
+| Betriebsergebnis, berichtet | 3.134 Mio. £ (-10,2 %) |
+| Gewinn je Aktie, bereinigt | 341,0 p (+8,8 %) |
+| Gewinn je Aktie, berichtet | 242,9 p (-3,3 %) |
+| Dividende je Aktie | 166,72 p (+4,0 %) |
+| Nettoverschuldung, bereinigt | 8.786 Mio. £ |
+
+*Veränderungen zum Vorjahr in konstanter Währung.*
+
+![Kennzahlen des Geschäftsjahres 2026 (Imperial Brands, Präsentation)](/assets/magazin/imb-fy26-folie-kennzahlen.jpg)
+*Folie aus der Präsentation „Full Year Results“ von Imperial Brands vom 17.11.2026, S. 6.*
 
 Die Differenz zwischen bereinigtem und berichtetem Betriebsergebnis beträgt 996 Mio. £. Den größten Teil machen Abschreibungen auf erworbene Markenrechte mit 338 Mio. £ aus. Hinzu kommen 327 Mio. £ Programmkosten der 2030-Strategie und 313 Mio. £ für historische Rechtsfälle in Delaware.
 
@@ -44,13 +49,19 @@ Die Differenz zwischen bereinigtem und berichtetem Betriebsergebnis beträgt 996
 
 Der Konzern erhöht die Preise und verliert dafür Stückzahlen. Im Geschäftsjahr sank das Tabakvolumen um 3,4 % auf 180,6 Mrd. Stück. Die Preise und der Produktmix stiegen um 5,1 %, sodass der Tabakumsatz konstanter Währung um 1,7 % zulegte.
 
+![Preis und Volumen nach Region (Imperial Brands, Präsentation)](/assets/magazin/imb-fy26-folie-preis-volumen.jpg)
+*Folie aus der Präsentation „Full Year Results“ von Imperial Brands vom 17.11.2026, S. 10.*
+
 - **Europa:** Tabak- und NGP-Umsatz +0,9 %, bereinigtes Betriebsergebnis +6,5 %. Die Schließung des Werks in Langenhagen und der Abbau von Handelsmarken (Private Label) drückten das Volumen. In Großbritannien verlor die Marke Marktanteile um 70 Basispunkte.
 - **Amerika:** Tabak- und NGP-Umsatz +2,8 %, bereinigtes Betriebsergebnis +3,6 %. Die Preise glichen rückläufige Volumen aus. Im NGP-Geschäft sank der Umsatz um 17,1 %, weil der Vape-Markt myblu verlassen wurde. Dort lief der Umsatz mit Zone und Black Buffalo gegen diesen Rückgang.
 - **Afrika, Asien, Australien, Osteuropa (AAACE):** Tabak- und NGP-Umsatz +3,2 %, bereinigtes Betriebsergebnis -1,8 %. Australien belastet, weil dort die Mengen wegen steigender Regulierung sinken.
-- **Logista (Distribution):** Bereinigtes Betriebsergebnis 337 Mio. £, im Vorjahresvergleich +4,1 % konstant. Die Transportsparte erholte sich.
+- **Logista (Distribution):** Bereinigtes Betriebsergebnis 337 Mio. £, konstant gerechnet +4,1 %. Die Transportsparte erholte sich.
 - **Neue Produkte (NGP):** Der Umsatz stieg konstant gerechnet um 11,4 %. Das bereinigte NGP-Ergebnis blieb mit einem Verlust von 63 Mio. £ im Minus, verbesserte sich aber um 5 Mio. £. Die Akquisitionen Black Buffalo (USA) und Helwit (Schweden) tragen zum Wachstum bei.
 
 Die Kategorie „Smokeless“ wird ab FY27 gesondert ausgewiesen. Sie umfasst die nikotinhaltigen Beutel (Tobacco-Free Oral Nicotine), die im Norden Europas laufen. Im Geschäftsjahr erzielte sie 554 Mio. £ Umsatz und 14 Mio. £ bereinigtes Betriebsergebnis.
+
+![Brücke des bereinigten Betriebsergebnisses (Imperial Brands, Präsentation)](/assets/magazin/imb-fy26-folie-ergebnisbruecke.jpg)
+*Folie aus der Präsentation „Full Year Results“ von Imperial Brands vom 17.11.2026, S. 11.*
 
 ## Was an den Zahlen auffällt
 

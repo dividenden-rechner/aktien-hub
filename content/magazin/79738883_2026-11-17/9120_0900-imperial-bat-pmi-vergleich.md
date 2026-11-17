@@ -25,18 +25,16 @@ Die drei Konzerne stehen vor derselben Aufgabe. Die Zigarette verkauft sich welt
 
 Die drei Unternehmen berichten für verschiedene Zeiträume und in verschiedenen Währungen. Deshalb vergleichen wir die Wachstumsraten in konstanter Währung.
 
-| Kennzahl | Imperial (FY bis Sep. 2026) | BAT (H1 bis Jun. 2026) | Philip Morris (9M bis Sep. 2026) |
-|---|---|---|---|
-| Umsatz | Tabak & NGP bereinigt +2,1 % | +2,9 % | +5,9 % organisch |
-| Bereinigtes Betriebsergebnis | +3,7 % | +2,5 % | Prognose auf Mitte bis untere Hälfte von 7–9 % gesenkt |
-| Bereinigter Gewinn je Aktie | +8,8 % | +5,9 % | +8,4 % ohne Währungseffekt |
-| Neue Produkte, Umsatzwachstum | NGP +11,4 % | Neue Kategorien +18,0 % | Rauchfreier Umsatz im 3. Quartal +6,3 % organisch |
-| Anteil neuer Produkte am Umsatz | rund 5 % (NGP 419 Mio. £) | rund 16 % (eigene Berechnung) | rund 42 % (9M) |
-| Zigarettenmenge | Tabakvolumen -3,4 % | Zigarettenmarktanteil -30 Basispunkte | Zigarettenversand -1,2 % (9M) |
-| Dividende | +4,0 % je Aktie | in Pfund wachsend zugesagt | Quartalsdividende +8,8 % auf 1,60 $ |
-| Rückkauf | 1,5 Mrd. £ für FY27 | 1,3 Mrd. £ für 2026 | keine Angabe im Material |
+- **Umsatz:** Imperial +2,1 % · BAT +2,9 % · Philip Morris +5,9 %
+- **Betriebsergebnis:** Imperial +3,7 % · BAT +2,5 % · Philip Morris Prognose gesenkt
+- **Gewinn je Aktie:** Imperial +8,8 % · BAT +5,9 % · Philip Morris +8,4 %
+- **Neue Produkte:** Imperial +11,4 % · BAT +18,0 % · Philip Morris +6,3 %
+- **Anteil neue Produkte:** Imperial ca. 5 % · BAT ca. 16 % · Philip Morris ca. 42 %
+- **Zigaretten:** Imperial Volumen -3,4 % · BAT Marktanteil -30 Bp. · Philip Morris Versand -1,2 %
+- **Dividende je Aktie:** Imperial +4,0 % · BAT wächst · Philip Morris +8,8 %
+- **Rückkauf:** Imperial 1,5 Mrd. £ · BAT 1,3 Mrd. £ · Philip Morris keine Angabe
 
-Bei Imperial sind die Zahlen auf das Geschäftsjahr bis September bezogen, bei BAT auf das erste Halbjahr. Die Angaben von Philip Morris beziehen sich auf die ersten neun Monate.
+*Veränderungen in konstanter Währung. Zeiträume: Imperial bis Sep. 2026 (Geschäftsjahr), BAT das erste Halbjahr, Philip Morris die ersten neun Monate. Bei Philip Morris: organisches Wachstum, bei den neuen Produkten das dritte Quartal (Rauchfreies), beim Zigarettenversand die ersten neun Monate.*
 
 ## Neue Produkte: Wer hat die größte Basis?
 
