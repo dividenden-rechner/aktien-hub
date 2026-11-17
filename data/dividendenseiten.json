@@ -1,5 +1,5 @@
 {
- "hinweis": "Firmen für die öffentlichen Dividendenseiten /dividende/<slug>/ (tools/build_dividendenseiten.py). typ: normal, reit oder bdc. rhythmus: Zahlungen pro Jahr. weglassen: Geschäftsjahre (JJJJ), deren SEC-Wert nachweislich falsch ist. alt: alte Adressen, die per 301 hierher zeigen sollen. serie: recherchierte Zahl der Jahre mit Dividendenerhöhung in Folge (jahre, null = keine Zählung), Jahr der letzten Erhöhung, aktueller Betrag je Zahlung. Meldet der Termine-Agent in einem späteren Jahr einen höheren regulären Betrag, zählt der Generator ein Jahr dazu.",
+ "hinweis": "Firmen für die öffentlichen Dividendenseiten /dividende/<slug>/ (tools/build_dividendenseiten.py). typ: normal, reit oder bdc. rhythmus: Zahlungen pro Jahr. weglassen: Geschäftsjahre (JJJJ), deren SEC-Wert nachweislich falsch ist. alt: alte Adressen, die per 301 hierher zeigen sollen. serie: recherchierte Zahl der Jahre mit Dividendenerhöhung in Folge (jahre, null = keine Zählung), Jahr der letzten Erhöhung, aktueller Betrag je Zahlung. Meldet der Termine-Agent in einem späteren Jahr einen höheren regulären Betrag, zählt der Generator ein Jahr dazu. sonder: recherchierte Sonder-/Zusatzdividenden der letzten zwölf Monate (betrag_jahr), fließen nicht in die Rendite ein und stehen in einer eigenen Zeile; Beschlüsse mit art=sonder aus dem Termine-Agent haben Vorrang. Die Rendite rechnet mit der zuletzt beschlossenen regulären Dividende (Termine-Agent, sonst serie.betrag) × rhythmus.",
  "firmen": [
   {
    "sym": "O",
@@ -52,6 +52,12 @@
     "zuletzt_erhoeht": 2026,
     "betrag": 0.265,
     "text": "Die reguläre Monatsdividende wurde seit dem Börsengang 2007 nie gesenkt und regelmäßig erhöht (Unternehmensangabe).",
+    "quelle": "https://www.mainstcapital.com/investors/news-events/press-releases/detail/2762",
+    "stand": "2026-11-17"
+   },
+   "sonder": {
+    "betrag_jahr": 1.2,
+    "text": "Zusatzdividende von 0,30 US-Dollar je Quartal (Dezember 2025 bis September 2026)",
     "quelle": "https://www.mainstcapital.com/investors/news-events/press-releases/detail/2762",
     "stand": "2026-11-17"
    }
@@ -757,11 +763,11 @@
    "alt": [],
    "serie": {
     "jahre": 52,
-    "zuletzt_erhoeht": null,
-    "betrag": null,
-    "text": "Laut Liste der S&P 500 Dividend Aristocrats (Kiplinger, Stand Juli 2026). Erhöhungen danach sind noch nicht eingerechnet.",
-    "quelle": "https://www.kiplinger.com/slideshow/investing/T018-S003-best-dividend-stocks-for-bear-markets/index.html",
-    "stand": "2026-07-15"
+    "zuletzt_erhoeht": 2026,
+    "betrag": 0.8875,
+    "text": "Im Januar 2026 zum 52. Mal in Folge erhöht (Unternehmensangabe), seitdem 88,75 US-Cent je Quartal.",
+    "quelle": "https://investor.conedison.com/news-releases/news-release-details/con-edison-declares-common-stock-dividend-70",
+    "stand": "2026-11-17"
    }
   },
   {
@@ -820,7 +826,7 @@
    "name": "Expeditors International",
    "slug": "expeditors-international",
    "typ": "normal",
-   "rhythmus": 4,
+   "rhythmus": 2,
    "satz": "",
    "alt": [],
    "serie": {

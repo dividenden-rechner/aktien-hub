@@ -1,0 +1,9 @@
+{
+ "hinweis": "Recherchierte aktuelle reguläre Dividende je Zahlung für Werte, bei denen die SEC-/Jahreszahlen ein falsches Bild geben (Kürzung, Aussetzung, Sonder- oder Zusatzdividenden). Wird in tools/kennzahlen.py vor allen anderen Quellen verwendet. regulaer = Betrag je Zahlung in Berichtswährung, rhythmus = Zahlungen pro Jahr, sonder_jahr = Sonderzahlungen der letzten zwölf Monate (nicht in der Rendite), ausgesetzt = keine laufende Dividende.",
+ "firmen": {
+  "MAIN": {"regulaer": 0.265, "rhythmus": 12, "sonder_jahr": 1.2, "text": "monatlich 0,265 USD, dazu 0,30 USD Zusatzdividende je Quartal", "quelle": "https://www.mainstcapital.com/investors/news-events/press-releases/detail/2762", "stand": "2026-11-17"},
+  "DOW": {"regulaer": 0.35, "rhythmus": 4, "text": "Mitte 2025 von 0,70 auf 0,35 USD je Quartal halbiert", "quelle": "https://investors.dow.com/en/investor-resources/share-price-information/default.aspx", "stand": "2026-11-17"},
+  "STLA": {"regulaer": 0, "rhythmus": 1, "ausgesetzt": true, "text": "Dividende für 2026 ausgesetzt (Februar 2026)", "quelle": "https://www.barchart.com/story/news/72416/stellantis-suspends-dividend-due-to-26-billion-restructuring-charge", "stand": "2026-11-17"},
+  "ED": {"regulaer": 0.8875, "rhythmus": 4, "text": "seit Januar 2026 88,75 US-Cent je Quartal", "quelle": "https://investor.conedison.com/news-releases/news-release-details/con-edison-declares-common-stock-dividend-70", "stand": "2026-11-17"}
+ }
+}

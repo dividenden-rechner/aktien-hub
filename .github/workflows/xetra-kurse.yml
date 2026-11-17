@@ -7,6 +7,7 @@ on:
       - ".github/workflows/xetra-kurse.yml"
       - "tools/isin_zuordnung.py"
       - "tools/kennzahlen.py"
+      - "data/dividenden-korrekturen.json"
       - "data/kurse/isin-fest.json"
   schedule:
     - cron: "37 5,17 * * *"   # zweimal täglich, damit keine Tagesdatei verloren geht (bleibt nur rund einen Tag online)

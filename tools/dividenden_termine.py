@@ -25,6 +25,10 @@ DATUM = re.compile(r"\b(Jan(?:uary)?|Feb(?:ruary)?|Mar(?:ch)?|Apr(?:il)?|May|Jun
 SATZ = re.compile(r"[^.]*?(?:declar|approv|authoriz|announc)[^.]{0,300}?dividend[^.]{0,500}\.(?:[^.]{0,300}\.)?", re.I)
 
 
+# Sonder- und Zusatzdividenden (z. B. Main Street "supplemental", PACCAR "extra", CME "annual variable") zaehlen nicht zur regulaeren Dividende
+SONDER = re.compile(r"special|one-time|supplemental|extra\s+(?:cash\s+)?dividend|variable\s+dividend|annual\s+variable", re.I)
+
+
 def iso(m):
     return f"{int(m.group(3)):04d}-{MON[m.group(1)[:3].lower()]:02d}-{int(m.group(2)):02d}"
 
@@ -47,7 +51,7 @@ def muster(text):
         if betrag and pay and rec:
             mp = DATUM.search(pay.group(0)); mr = DATUM.search(rec.group(0))
             out.append({"betrag": float(betrag.group(1).replace("§", ".")), "zahltag": iso(mp), "stichtag": iso(mr),
-                        "art": "sonder" if re.search(r"special|one-time", satz, re.I) else "regulaer", "beleg": satz[:300].replace("§", ".")})
+                        "art": "sonder" if SONDER.search(satz) else "regulaer", "beleg": satz[:300].replace("§", ".")})
         elif re.search(r"dividend", satz, re.I) and (betrag or pay):
             unklar = True
     if out:
@@ -60,7 +64,7 @@ SCHEMA = {"type": "OBJECT", "properties": {"dividenden": {"type": "ARRAY", "item
     "art": {"type": "STRING", "enum": ["regulaer", "sonder"]}, "beleg": {"type": "STRING"}},
     "required": ["betrag", "waehrung", "zahltag", "stichtag", "art", "beleg"]}}}, "required": ["dividenden"]}
 PROMPT = """Aus dieser Pressemitteilung von {name}: Welche Dividende je Stammaktie wurde beschlossen bzw. erklaert?
-Je Dividende: Betrag je Aktie, Waehrung, Zahltag (payable date) und Stichtag (record date) als JJJJ-MM-TT, Art (regulaer oder sonder),
+Je Dividende: Betrag je Aktie, Waehrung, Zahltag (payable date) und Stichtag (record date) als JJJJ-MM-TT, Art (regulaer oder sonder; sonder = special, supplemental, extra oder variable dividend),
 beleg = Originalsatz (hoechstens 30 Woerter). Keine Vorzugsaktien, keine bereits frueher gezahlten Dividenden, keine Jahressummen.
 Wenn keine Dividende mit Zahltag beschlossen wurde: leere Liste.
 

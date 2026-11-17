@@ -67,6 +67,10 @@ def rahmen(tiefe):
     return fix(head_links), fix(kopf), fix(fuss)
 
 
+RHYTHMUS = {12: "monatlich", 4: "vierteljährlich", 2: "halbjährlich", 1: "jährlich"}
+RATE = {12: "Monat", 4: "Quartal", 2: "Halbjahr", 1: "Jahr"}
+
+
 def reihe(k, key, weg):
     return [(d, v) for d, v in k.get(key, []) if d[:4] not in weg and v is not None]
 
@@ -118,9 +122,8 @@ def kennzahlen(f, sec, kurse, iz, usd_je_eur, termine):
     if kz and kz[0]:
         r["kurs_eur"], r["kurs_waehrung"] = kz[0], kz[2]
         r["kurs_usd"] = kz[0] * usd_je_eur if kz[2] == "EUR" else None
-        r["rendite"] = letzt / r["kurs_usd"] if r["kurs_usd"] else None
     else:
-        r["kurs_eur"] = r["kurs_usd"] = r["rendite"] = None
+        r["kurs_eur"] = r["kurs_usd"] = None
     # Wachstum
     vals = [v for _, v in dps]
     r["cagr5"] = (vals[-1] / vals[-6]) ** (1 / 5) - 1 if len(vals) >= 6 and vals[-6] > 0 else None
@@ -161,10 +164,45 @@ def kennzahlen(f, sec, kurse, iz, usd_je_eur, termine):
         if hoeher:
             r["serie_jahre"] = (se.get("jahre") or 0) + 1 if se.get("jahre") is not None else None
             r["serie_fortgeschrieben"] = hoeher[0]
-    if r["termin"] and r["kurs_usd"]:
-        r["rendite_fwd"] = r["termin"]["betrag"] * f["rhythmus"] / r["kurs_usd"]
+    # Dividendenrendite (ab 17.11.2026): zuletzt beschlossene REGULAERE Dividende x Zahlungen pro Jahr.
+    # Sonder- und Zusatzdividenden zaehlen nicht mit, sie stehen in einer eigenen Zeile. Reihenfolge der Quellen:
+    # 1. Beschluss aus der Pressemitteilung (Termine-Agent), 2. recherchierter Betrag je Zahlung (serie.betrag),
+    # 3. Ersatz: Dividende des letzten Geschaeftsjahres (kann Sonderzahlungen enthalten, wird so gekennzeichnet).
+    heute = datetime.date.today()
+    def frisch(t, tage):
+        d = t.get("meldung") or t.get("ex_tag") or ""
+        try:
+            return (heute - datetime.date.fromisoformat(d[:10])).days <= tage
+        except ValueError:
+            return False
+    if r["termin"] and frisch(r["termin"], 400):
+        r["reg_betrag"], r["reg_quelle"] = r["termin"]["betrag"], "beschluss"
+    elif se.get("betrag"):
+        r["reg_betrag"], r["reg_quelle"] = se["betrag"], "recherche"
     else:
-        r["rendite_fwd"] = None
+        r["reg_betrag"], r["reg_quelle"] = None, None
+    r["dps_jahr"] = r["reg_betrag"] * f["rhythmus"] if r["reg_betrag"] else None
+    # Sonderdividenden der letzten 12 Monate: aus den Beschluessen, sonst recherchiert (Feld sonder in der Konfiguration)
+    sonder = [t for t in termine.get(f["sym"], []) if t.get("art") == "sonder" and t.get("waehrung", "USD") == "USD" and frisch(t, 365)]
+    sk = f.get("sonder") or {}
+    if sonder:
+        r["sonder_jahr"] = sum(t["betrag"] for t in sonder)
+        r["sonder_text"] = "laut Beschlüssen der letzten zwölf Monate"
+    elif sk.get("betrag_jahr"):
+        r["sonder_jahr"], r["sonder_text"] = sk["betrag_jahr"], sk.get("text", "")
+    else:
+        r["sonder_jahr"], r["sonder_text"] = None, ""
+    k_usd = r["kurs_usd"]
+    r["rendite_gj"] = letzt / k_usd if k_usd else None
+    if r["dps_jahr"] and k_usd:
+        r["rendite"], r["rendite_basis"] = r["dps_jahr"] / k_usd, "aktuell"
+    elif r["sonder_jahr"] and k_usd and letzt > r["sonder_jahr"]:
+        r["rendite"], r["rendite_basis"] = (letzt - r["sonder_jahr"]) / k_usd, "gj_ohne_sonder"
+    else:
+        r["rendite"], r["rendite_basis"] = r["rendite_gj"], "gj"
+    r["rendite_sonder"] = r["sonder_jahr"] / k_usd if r["sonder_jahr"] and k_usd else None
+    # Jahresdividende fuer Rechner und Uebersicht (ohne Sonderzahlungen)
+    r["dps_basis"] = r["dps_jahr"] or (letzt - r["sonder_jahr"] if r["rendite_basis"] == "gj_ohne_sonder" else letzt)
     return r
 
 
@@ -247,10 +285,11 @@ def seite(r, kopf_links, kopf, fuss, mag, kurs_datum, sec_stand, usd_je_eur, jah
     f = r["f"]; name = f["name"]; url = f"dividende/{f['slug']}/"
     rend = proz(r["rendite"]) if r["rendite"] else None
     title = f"{name} Dividende {jahr}: Rendite, Historie und Termine"
-    desc_teile = [f"{name} zahlte im Geschäftsjahr {r['gj_letzt']} eine Dividende von {de(r['dps_letzt'])} US-Dollar je Aktie"]
+    desc_teile = [f"{name} zahlt aufs Jahr gerechnet eine reguläre Dividende von {de(r['dps_jahr'])} US-Dollar je Aktie" if r["dps_jahr"] else
+                  f"{name} zahlte im Geschäftsjahr {r['gj_letzt']} eine Dividende von {de(r['dps_letzt'])} US-Dollar je Aktie"]
     if rend: desc_teile.append(f"die Dividendenrendite liegt bei rund {rend}")
     desc = ", ".join(desc_teile) + ". Historie, Wachstum, Ausschüttungsquote, Termine und Rechner."
-    rhythmus = "monatlich" if f["rhythmus"] == 12 else "vierteljährlich"
+    rhythmus = RHYTHMUS.get(f["rhythmus"], "regelmäßig")
 
     # Einleitung: eine kurze, aus den Zahlen gebaute Einordnung
     sj0 = r["serie_jahre"]
@@ -277,10 +316,21 @@ def seite(r, kopf_links, kopf, fuss, mag, kurs_datum, sec_stand, usd_je_eur, jah
     # Kennzahlen-Tabelle
     zeilen = []
     if rend:
-        zeilen.append(("Dividendenrendite", f"{rend}", f"Dividende des Geschäftsjahres {r['gj_letzt']} zum Kurs von {de(r['kurs_eur'])} €"))
-    if r["rendite_fwd"]:
-        zeilen.append(("Rendite auf Basis der aktuellen Dividende", proz(r["rendite_fwd"]), f"zuletzt beschlossene Dividende × {f['rhythmus']}"))
-    zeilen.append((f"Dividende je Aktie ({r['gj_letzt']})", f"{de(r['dps_letzt'])} USD", f"rund {de(r['dps_letzt'] / usd_je_eur)} €"))
+        if r["rendite_basis"] == "aktuell":
+            basis = (f"aktuelle reguläre Dividende ({betrag(r['reg_betrag'])} USD × {f['rhythmus']}) zum Kurs von {de(r['kurs_eur'])} €"
+                     if f["rhythmus"] > 1 else f"aktuelle reguläre Dividende ({betrag(r['reg_betrag'])} USD) zum Kurs von {de(r['kurs_eur'])} €")
+        elif r["rendite_basis"] == "gj_ohne_sonder":
+            basis = f"Dividende des Geschäftsjahres {r['gj_letzt']} ohne Sonderzahlungen zum Kurs von {de(r['kurs_eur'])} €"
+        else:
+            basis = f"Dividende des Geschäftsjahres {r['gj_letzt']} zum Kurs von {de(r['kurs_eur'])} €"
+        zeilen.append(("Dividendenrendite", f"{rend}", basis))
+    if r["rendite_sonder"]:
+        zeilen.append(("Sonderdividenden (12 Monate)", f"{de(r['sonder_jahr'])} USD",
+                       f"zusätzlich rund {proz(r['rendite_sonder'])} Rendite, in der Dividendenrendite nicht enthalten" + (f"; {esc(r['sonder_text'])}" if r["sonder_text"] else "")))
+    if r["dps_jahr"]:
+        zeilen.append(("Reguläre Dividende je Aktie (aufs Jahr gerechnet)", f"{de(r['dps_jahr'])} USD", f"rund {de(r['dps_jahr'] / usd_je_eur)} €"))
+    zeilen.append((f"Dividende je Aktie ({r['gj_letzt']})", f"{de(r['dps_letzt'])} USD",
+                   f"rund {de(r['dps_letzt'] / usd_je_eur)} €" + (", einschließlich Sonderzahlungen" if r["sonder_jahr"] else "")))
     if r["veraenderung"] is not None:
         zeilen.append(("Veränderung zum Vorjahr", proz(r["veraenderung"], vz=True), ""))
     if r["cagr5"] is not None:
@@ -300,7 +350,14 @@ def seite(r, kopf_links, kopf, fuss, mag, kurs_datum, sec_stand, usd_je_eur, jah
     elif r["eps"] is not None and r["eps"] <= 0:
         zeilen.append(("Ausschüttungsquote (auf Gewinn)", "nicht aussagekräftig", "Verlust im letzten Geschäftsjahr"))
     if r["quote_fcf"] and f["typ"] != "reit":
-        zeilen.append(("Ausschüttungsquote (auf Free Cashflow)", proz(r["quote_fcf"], 0), "Durchschnitt der letzten drei Geschäftsjahre"))
+        if r["quote_fcf"] > 1:
+            # Über 100 %: meist verzerrt durch Firmenkäufe, Steuer- oder andere Einmalzahlungen, die den Free Cashflow drücken
+            wert = "über 300&nbsp;%*" if r["quote_fcf"] > 3 else proz(r["quote_fcf"], 0) + "*"
+            zeilen.append(("Ausschüttungsquote (auf Free Cashflow)", wert,
+                           "Durchschnitt der letzten drei Geschäftsjahre<br>* Über 100&nbsp;% deutet oft auf Sondereffekte hin: Zahlungen für zugekaufte Firmen, "
+                           "Steuernachzahlungen oder andere Einmalzahlungen drücken den Free Cashflow einzelner Jahre. Die laufende Deckung ist dann meist besser, als die Quote zeigt."))
+        else:
+            zeilen.append(("Ausschüttungsquote (auf Free Cashflow)", proz(r["quote_fcf"], 0), "Durchschnitt der letzten drei Geschäftsjahre"))
     zeilen.append(("Zahlweise", rhythmus, ""))
     tab = "".join(f'<tr><td>{esc(a)}' + (f'<br><span style="font-size:13px;color:var(--mut)">{c}</span>' if c else "") +
                   f'</td><td class="n" style="white-space:nowrap"><strong>{b}</strong></td></tr>' for a, b, c in zeilen)
@@ -340,23 +397,23 @@ def seite(r, kopf_links, kopf, fuss, mag, kurs_datum, sec_stand, usd_je_eur, jah
         typ_hinweis = f'<p>Bei REITs sagt die Quote auf den Gewinn wenig, weil hohe Abschreibungen den Gewinn drücken. Aussagekräftiger ist die Quote auf FFO, siehe <a href="../../fortgeschrittene/reits-bewerten/">REITs bewerten</a>.</p>'
     elif f["typ"] == "bdc":
         typ_hinweis = f'<p>BDCs müssen den Großteil ihrer Erträge ausschütten. Ob die Dividende gedeckt ist, zeigt der Vergleich mit dem Nettoertrag aus Zinsen (NII), siehe <a href="../../fortgeschrittene/bdcs-bewerten/">BDCs bewerten</a>.</p>'
-    if f["typ"] == "bdc" and f["sym"] == "MAIN":
-        typ_hinweis += "<p>Die Jahreswerte enthalten neben der monatlichen Dividende auch die Sonderdividenden.</p>"
+    if r["sonder_jahr"]:
+        typ_hinweis += "<p>Die Jahreswerte in der Historie enthalten neben der regulären Dividende auch die Sonderdividenden. Die Dividendenrendite oben rechnet nur mit der regulären Dividende.</p>"
 
     news = news_links(f["sym"], mag, 2)
     news_html = f'<h2>Aktuelle Meldungen zu {esc(name)}</h2><ul>{news}</ul>' if news else ""
 
     kurs_d = datum(kurs_datum) if kurs_datum else ""
     rechner = f'''<h2>Was bringt die {esc(name)}-Aktie im Jahr?</h2>
-<div class="calc" id="divcalc" data-dps="{r['dps_letzt']}" data-fx="{usd_je_eur}" data-kurs="{r['kurs_eur'] or ''}" data-steuer="{STEUER_US}">
+<div class="calc" id="divcalc" data-dps="{r['dps_basis']}" data-fx="{usd_je_eur}" data-kurs="{r['kurs_eur'] or ''}" data-steuer="{STEUER_US}">
 <div class="grid"><div><label for="anz">Anzahl Aktien</label><input id="anz" type="number" min="0" step="1" value="100" inputmode="numeric"></div>
 <div><label for="betr">oder Anlagebetrag in Euro <span class="hint">(zum letzten Kurs)</span></label><input id="betr" type="number" min="0" step="100" inputmode="decimal" placeholder="z. B. 5000"></div></div>
 <div class="tablewrap"><table><tbody>
 <tr><td>Dividende brutto pro Jahr</td><td class="n"><strong id="r-brutto">–</strong></td></tr>
 <tr><td>nach Steuern (ca.)</td><td class="n"><strong id="r-netto">–</strong></td></tr>
-<tr><td>pro {"Monat" if f["rhythmus"] == 12 else "Quartal"} (brutto)</td><td class="n"><strong id="r-rate">–</strong></td></tr>
+<tr><td>pro {RATE.get(f["rhythmus"], "Zahlung")} (brutto)</td><td class="n"><strong id="r-rate">–</strong></td></tr>
 </tbody></table></div>
-<p class="meta">Grundlage: Dividende des Geschäftsjahres {r['gj_letzt']} ({de(r['dps_letzt'])} USD je Aktie), umgerechnet zum EZB-Kurs ({de(usd_je_eur, 4)} USD je Euro). Nach Steuern: 15&nbsp;% US-Quellensteuer mit W-8BEN plus Abgeltungsteuer und Soli in Deutschland, zusammen rund 25,6&nbsp;%, ohne Kirchensteuer und ohne Sparer-Pauschbetrag.</p>
+<p class="meta">Grundlage: {"aktuelle reguläre Dividende aufs Jahr gerechnet" if r["dps_jahr"] else "Dividende des Geschäftsjahres " + r["gj_letzt"] + (" ohne Sonderzahlungen" if r["rendite_basis"] == "gj_ohne_sonder" else "")} ({de(r['dps_basis'])} USD je Aktie{", ohne Sonderdividenden" if r["sonder_jahr"] else ""}), umgerechnet zum EZB-Kurs ({de(usd_je_eur, 4)} USD je Euro). Nach Steuern: 15&nbsp;% US-Quellensteuer mit W-8BEN plus Abgeltungsteuer und Soli in Deutschland, zusammen rund 25,6&nbsp;%, ohne Kirchensteuer und ohne Sparer-Pauschbetrag.</p>
 </div>
 <script>(function(){{var c=document.getElementById("divcalc");if(!c)return;var dps=+c.dataset.dps,fx=+c.dataset.fx,k=+c.dataset.kurs,st=+c.dataset.steuer,per={f["rhythmus"]};
 var a=document.getElementById("anz"),b=document.getElementById("betr");function e(x){{return x.toLocaleString("de-DE",{{minimumFractionDigits:2,maximumFractionDigits:2}})+"\\u00a0€"}}
@@ -365,7 +422,10 @@ a.addEventListener("input",function(){{b.value="";r()}});b.addEventListener("inp
 
     faq = []
     faq.append((f"Wie hoch ist die Dividende von {name}?",
-                f"Im Geschäftsjahr {r['gj_letzt']} zahlte {name} {de(r['dps_letzt'])} US-Dollar je Aktie" + (f", das entspricht beim aktuellen Kurs einer Rendite von rund {rend}." if rend else ".")))
+                (f"Die reguläre Dividende liegt aufs Jahr gerechnet bei {de(r['dps_jahr'])} US-Dollar je Aktie" if r["dps_jahr"] else
+                 f"Im Geschäftsjahr {r['gj_letzt']} zahlte {name} {de(r['dps_letzt'])} US-Dollar je Aktie")
+                + (f", das entspricht beim aktuellen Kurs einer Rendite von rund {rend}." if rend else ".")
+                + (f" Dazu kamen in den letzten zwölf Monaten Sonderdividenden von {de(r['sonder_jahr'])} US-Dollar." if r["sonder_jahr"] else "")))
     if t:
         faq.append((f"Wann zahlt {name} die nächste Dividende?",
                     f"Zuletzt wurden {betrag(t['betrag'])} US-Dollar je Aktie beschlossen" + (f", Ex-Tag ist der {datum(t['ex_tag'])}" if t.get("ex_tag") else "") + (f", ausgezahlt wird am {datum(t['zahltag'])}." if t.get("zahltag") else ".")))
@@ -469,10 +529,10 @@ def uebersicht(rs, kopf_links, kopf, fuss, jahr):
         f = r["f"]
         zeilen.append(f'<tr><td class="fi" data-v="{esc(f["name"])}"><a href="{f["slug"]}/">{logo_span(f["sym"], f["name"], "../")}<span class="nm">{esc(f["name"])}</span></a></td>'
                       f'<td class="n" data-v="{r["rendite"] or ""}">{proz(r["rendite"]) if r["rendite"] else "–"}</td>'
-                      f'<td class="n" data-v="{r["dps_letzt"]}">{de(r["dps_letzt"])}</td>'
+                      f'<td class="n" data-v="{r["dps_basis"]}">{de(r["dps_basis"])}</td>'
                       f'<td class="n" data-v="{r["cagr5"] if r["cagr5"] is not None else ""}">{proz(r["cagr5"], vz=True) if r["cagr5"] is not None else "–"}</td>'
                       f'<td class="n" data-v="{r["serie_jahre"] if r["serie_jahre"] is not None else ""}">{r["serie_jahre"] if r["serie_jahre"] is not None else "–"}</td>'
-                      f'<td data-v="{"monatlich" if f["rhythmus"] == 12 else "vierteljährlich"}">{"monatlich" if f["rhythmus"] == 12 else "vierteljährlich"}</td></tr>')
+                      f'<td data-v="{RHYTHMUS.get(f["rhythmus"], "")}">{RHYTHMUS.get(f["rhythmus"], "–")}</td></tr>')
     title = f"US-Dividendenaktien {jahr}: Rendite, Historie und Termine"
     desc = "Dividendenrendite, Dividende je Aktie, Wachstum und Zahlweise bekannter US-Dividendenaktien wie Coca-Cola, Realty Income, PepsiCo und Altria, täglich aktualisiert."
     return f'''<!DOCTYPE html>
@@ -506,7 +566,7 @@ def uebersicht(rs, kopf_links, kopf, fuss, jahr):
 {"".join(zeilen)}
 </tbody></table></div>
 <p>Welche dieser Werte ihre Dividende seit mindestens 25 oder 50 Jahren erhöhen, zeigt die <a href="aristokraten/">Liste der Dividend Kings und Dividendenaristokraten</a>.</p>
-<p class="meta">Rendite: Dividende des letzten Geschäftsjahres zum letzten Börsenkurs in Euro. Sortiert nach Rendite. Stand: {datum(datetime.date.today().isoformat())}.</p>
+<p class="meta">Rendite und Dividende: aktuelle reguläre Dividende aufs Jahr gerechnet, wo noch kein Beschluss vorliegt die Dividende des letzten Geschäftsjahres; jeweils ohne Sonderdividenden, zum letzten Börsenkurs in Euro. Sortiert nach Rendite. Stand: {datum(datetime.date.today().isoformat())}.</p>
 <p class="note"><strong>Hinweis:</strong> Diese Übersicht dient der allgemeinen Information und ist keine Anlageberatung. Eine hohe Rendite kann auch ein Warnsignal sein, siehe <a href="../grundlagen/dividendenfalle/">Dividendenfalle erkennen</a>.</p>
 </article></main>
 {fuss}
@@ -569,7 +629,7 @@ def aristokraten(rs, kopf_links, kopf, fuss, jahr):
 {TAB_CSS}<p class="ari-hint">Eine Auswahl der beliebtesten Dividendenwerte, keine vollständige Liste aller Dividendenaristokraten. Ein Klick auf eine Spalte sortiert die Tabelle.</p>
 {"".join(teile)}
 {ohne_html}
-<p class="meta">Jahre in Folge: recherchiert aus Angaben der Unternehmen und von S&amp;P Dow Jones Indices, fortgeschrieben mit jeder neuen Erhöhung. Rendite: Dividende des letzten Geschäftsjahres zum letzten Börsenkurs in Euro. Die Liste wächst mit jeder neuen Firmenseite. Stand: {datum(datetime.date.today().isoformat())}.</p>
+<p class="meta">Jahre in Folge: recherchiert aus Angaben der Unternehmen und von S&amp;P Dow Jones Indices, fortgeschrieben mit jeder neuen Erhöhung. Rendite: aktuelle reguläre Dividende aufs Jahr gerechnet (sonst die des letzten Geschäftsjahres), ohne Sonderdividenden, zum letzten Börsenkurs in Euro. Die Liste wächst mit jeder neuen Firmenseite. Stand: {datum(datetime.date.today().isoformat())}.</p>
 <p>Offiziell sind Dividendenaristokraten Mitglieder des S&amp;P 500 Dividend Aristocrats Index. Dafür zählen neben den 25 Jahren auch Größe und Handelsvolumen. Was hinter den Begriffen steckt und worauf du achten solltest, erklärt der Beitrag <a href="../../grundlagen/dividendenaristokraten/">Dividendenaristokraten, Dividend Kings und Champions</a>.</p>
 <p class="note"><strong>Hinweis:</strong> Diese Liste dient der allgemeinen Information und ist keine Anlageberatung. Eine lange Erhöhungsserie ist keine Garantie für künftige Dividenden.</p>
 </article></main>

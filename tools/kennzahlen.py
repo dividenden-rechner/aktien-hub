@@ -459,6 +459,7 @@ def main():
         o["nav_je_aktie"] = nav
         o["schulden_ek"] = o["bdc"]["verschuldung"] or o.get("schulden_ek")
     asien_werte(out, rate, tag)
+    dividenden_korrektur(out)
     modellwerte(out)
     json.dump({"stand": tag, "hinweis": "Vergleich der Investor-Relations-Cashflow-Werte mit den SEC-Daten, sobald beide denselben Zeitraum haben. Bei Abweichung gilt der IR-Wert.", "firmen": IRPRUEF},
               open("data/ir-pruefung.json", "w", encoding="utf-8"), ensure_ascii=False, indent=1)
@@ -468,6 +469,92 @@ def main():
     print(len(out), "Aktien mit Kennzahlen, Stand", tag)
     for t in ("KO", "MSFT", "O", "SAP", "JNJ", "ASML"):
         print(t, out.get(t))
+
+
+def dividenden_korrektur(out):
+    """Ab 17.11.2026: Dividendenrendite auf Basis der aktuellen REGULAEREN Dividende x Zahlungen pro Jahr.
+    Sonder- und Zusatzdividenden stehen getrennt (dividende_sonder, rendite_sonder) und zaehlen nicht zur Rendite.
+    Quellen in dieser Reihenfolge: 1. data/dividenden-korrekturen.json (recherchiert: Kuerzungen, Aussetzungen, Zusatzdividenden),
+    2. beschlossene Dividende aus den Pressemitteilungen (data/dividenden-termine.json, hoechstens 400 Tage alt),
+    3. recherchierter Betrag je Zahlung aus data/dividendenseiten.json (serie.betrag).
+    Danach Plausibilitaet: veraltete Geschaeftsjahre (aelter als zwei Jahre) und Renditen ueber 15 % (ausser BDCs) fallen weg."""
+    import datetime as _dt
+    heute = _dt.date.today()
+    def lade(p, k):
+        try:
+            return json.load(open(p, encoding="utf-8")).get(k, {})
+        except Exception:
+            return {}
+    KORR = lade("data/dividenden-korrekturen.json", "firmen")
+    TER = lade("data/dividenden-termine.json", "firmen")
+    CFG = {f["sym"]: f for f in (lade("data/dividendenseiten.json", "firmen") or [])}
+    def alter(d):
+        try:
+            return (heute - _dt.date.fromisoformat(str(d)[:10])).days
+        except ValueError:
+            return 9999
+    def rhythmus_aus(liste):
+        tage = sorted(t["zahltag"] for t in liste if t.get("zahltag"))
+        if len(tage) < 2:
+            return None
+        ab = [(_dt.date.fromisoformat(b) - _dt.date.fromisoformat(a)).days for a, b in zip(tage, tage[1:])]
+        m = sorted(ab)[len(ab) // 2]
+        return 12 if m < 45 else 4 if m < 135 else 2 if m < 270 else 1
+    zahl = lambda v: isinstance(v, (int, float)) and not isinstance(v, bool)
+    for t, o in out.items():
+        kurs = o.get("kurs_usd") if o.get("waehrung") == "USD" else None
+        reg = rh = sonder = None; quelle = None
+        ko, cf = KORR.get(t), CFG.get(t)
+        ter = [x for x in TER.get(t, []) if x.get("waehrung", "USD") == "USD"]
+        regs = sorted([x for x in ter if x.get("art") == "regulaer"], key=lambda x: x.get("meldung") or x.get("ex_tag") or "")
+        sond = [x for x in ter if x.get("art") == "sonder" and alter(x.get("meldung") or x.get("ex_tag")) <= 365]
+        if ko:
+            reg, rh, sonder, quelle = ko.get("regulaer"), ko.get("rhythmus"), ko.get("sonder_jahr"), "korrektur"
+            if ko.get("ausgesetzt"):
+                o.update({"dividende": 0, "rendite": 0, "dividende_basis": "ausgesetzt", "dividende_hinweis": ko.get("text"), "ausschuettung": 0})
+                continue
+        elif regs and alter(regs[-1].get("meldung") or regs[-1].get("ex_tag")) <= 400:
+            reg = regs[-1]["betrag"]; rh = (cf or {}).get("rhythmus") or rhythmus_aus(regs); quelle = "beschluss"
+        elif cf and (cf.get("serie") or {}).get("betrag"):
+            reg, rh, quelle = cf["serie"]["betrag"], cf.get("rhythmus"), "recherche"
+        if sonder is None and sond:
+            sonder = sum(x["betrag"] for x in sond)
+        if sonder is None and cf and (cf.get("sonder") or {}).get("betrag_jahr"):
+            sonder = cf["sonder"]["betrag_jahr"]
+        if reg and rh and kurs:
+            dps = reg * rh
+            eps = kurs / o["kgv"] if zahl(o.get("kgv")) and o["kgv"] > 0 else None
+            o.update({"dividende": round(dps, 4), "rendite": r2(dps / kurs * 100), "dividende_basis": "aktuell", "dividende_quelle": quelle})
+            if eps:
+                o["ausschuettung"] = r2(dps / eps * 100, 0)
+            if ko and ko.get("text"):
+                o["dividende_hinweis"] = ko["text"]
+            b = o.get("bdc")
+            if b and not b.get("dividende_regulaer"):   # BDC-Auslesung ohne regulaere Dividende (z. B. Monatszahler): ergaenzen
+                q = reg * rh / 4
+                b.update({"dividende_regulaer": round(q, 4), "rendite": r2(dps / kurs * 100, 2), "rendite_geschaetzt": False})
+                if b.get("nii"):
+                    b["deckung"] = r2(b["nii"] / q * 100, 0)
+        if sonder and kurs:
+            o["dividende_sonder"] = round(sonder, 4)
+            o["rendite_sonder"] = r2(sonder / kurs * 100)
+            if o.get("bdc") and not o["bdc"].get("dividende_zusatz"):
+                o["bdc"]["dividende_zusatz"] = round(sonder / 4, 4)
+                o["bdc"]["rendite_inkl_zusatz"] = r2((o["dividende"] + sonder) / kurs * 100, 2) if zahl(o.get("dividende")) else None
+        # Plausibilitaet
+        if o.get("dividende_basis") != "aktuell":
+            gj = str(o.get("gj") or "")
+            if gj[:4].isdigit() and int(gj[:4]) < heute.year - 2 and zahl(o.get("rendite")):
+                print(f"  {t}: Dividende aus Geschaeftsjahr {gj} veraltet, ausgeblendet")
+                o.update({"dividende": None, "rendite": None, "ausschuettung": None})
+            elif zahl(o.get("rendite")) and o["rendite"] > 15 and not o.get("bdc") and o.get("sektor") != "BDC":
+                print(f"  {t}: Rendite {o['rendite']} % unplausibel, ausgeblendet")
+                o.update({"dividende": None, "rendite": None})
+            elif zahl(o.get("rendite")) and o["rendite"] > 10 and o.get("waehrung") in ("JPY", "KRW"):
+                print(f"  {t}: Rendite {o['rendite']} % unplausibel (Asien), ausgeblendet")
+                o.update({"dividende": None, "rendite": None})
+            elif o.get("bdc") and o["bdc"].get("rendite"):
+                o["rendite"] = o["bdc"]["rendite"]   # BDCs: regulaere Quartalsdividende statt SEC-Summe mit Zusatzdividenden
 
 
 def modellwerte(out):
