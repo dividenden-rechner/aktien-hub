@@ -3,7 +3,7 @@
 <!-- uebersicht-start -->
 ## Übersicht (wird automatisch erstellt, neueste zuerst)
 
-### Zur Freigabe: Entwürfe (9)
+### Zur Freigabe: Entwürfe (10)
 
 Datei anklicken, dann Stift-Symbol: Zeile `draft: true` löschen und speichern, dann geht der Artikel online.
 
@@ -11,6 +11,7 @@ Datei anklicken, dann Stift-Symbol: Zeile `draft: true` löschen und speichern, 
 |---|---|---|
 | 21.11.2026 08:00 | Chinas KI-Firmen lernen von US-Modellen: Wie Destillation die Chip-Sperren unterläuft | [79738883_2026-11-17/9100_0657-china-destillation-us-ki-modelle.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/79738883_2026-11-17/9100_0657-china-destillation-us-ki-modelle.md) |
 | 18.11.2026 09:00 | Imperial, BAT und Philip Morris: Wer kommt bei neuen Produkten voran? | [79738883_2026-11-17/9120_0900-imperial-bat-pmi-vergleich.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/79738883_2026-11-17/9120_0900-imperial-bat-pmi-vergleich.md) |
+| 17.11.2026 22:30 | Nvidia Q3 2026: [Überschrift mit Vergleichswert, nach den Zahlen] | [79738883_2026-11-17/9160_2230-nvidia-q3-2026.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/79738883_2026-11-17/9160_2230-nvidia-q3-2026.md) |
 | 16.11.2026 23:40 | Agree Realty im Vergleich: Dividende rund 4,7 %, AFFO-Prognose angehoben, Verschuldung niedriger als bei NNN und Realty Income | [79738883_2026-11-16/9050_2340-agree-realty-vergleich-nnn-realty-income.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/79738883_2026-11-16/9050_2340-agree-realty-vergleich-nnn-realty-income.md) |
 | 05.11.2026 23:05 | Wahlsieg der Demokraten löscht den Börsenrausch: Chipwerte brechen ein, Nasdaq rutscht in die Korrektur | [79738894_2026-11-05/7694_2305-marktueberblick-wahlsieg-demokraten-chipwerte-nasdaq-korrektur.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/79738894_2026-11-05/7694_2305-marktueberblick-wahlsieg-demokraten-chipwerte-nasdaq-korrektur.md) |
 | 29.10.2026 23:27 | Comfort Systems USA: Umsatz steigt im Q3 2026 auf 3,8 Milliarden US-Dollar | [79738970_2026-10-29/7672_2327-comfort-systems-usa-q3-2026-zahlen.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/79738970_2026-10-29/7672_2327-comfort-systems-usa-q3-2026-zahlen.md) |
