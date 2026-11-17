@@ -52,7 +52,7 @@ Im Oktober hatte der Konzern einen Ausblick bis 2030 genannt: Die Dividende soll
 Der größte Schritt der letzten Wochen betrifft den Bau- und Infrastrukturbereich. Jardine hat im Oktober die restlichen 50 % an Gammon Construction übernommen. Der Kaufpreis beträgt 250 Mio. Pfund (rund 330 Mio. $). Gemessen am erwarteten Gewinn 2026 entspricht das einem KGV von rund 6,6. Die Zahlung verteilt sich auf drei gleich große Raten, die erste wird über Kredite der Engineering-Sparte finanziert. Die Gewinne aus Gammon fließen jetzt komplett in die Konzernzahlen.
 
 ![Transaktionsüberblick Gammon (Jardine Matheson, Präsentation)](/assets/magazin/jardine-gammon-folie.png)
-*Folie aus der Präsentation „Delivering progress“ von Jardine Matheson vom 15.10.2026, S. 4.*
+*Folie aus der Präsentation „Delivering progress“ von Jardine Matheson vom 15.10.2026, S. 3.*
 
 Die Engineering- und Infrastruktursparte (JE&I) meldete für das dritte Quartal einen um 15 % höheren bereinigten Gewinn. Der Auftragsbestand der beiden Tochtergesellschaften Gammon und Jardine Engineering Corporation liegt bei mehr als 7 Mrd. $. Das Ziel bis 2030 ist eine Verdopplung des Gewinns.
 
