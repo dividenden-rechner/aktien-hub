@@ -203,13 +203,25 @@ def news_links(sym, mag, tiefe):
 
 
 
+def logo_span(sym, name, prefix):
+    """Logo einer Firma; ohne Bilddatei ein Buchstaben-Logo wie auf den Magazinseiten."""
+    k = sym.lower()
+    if os.path.exists(os.path.join(ROOT, "assets", "logos", k + ".png")):
+        return f'<span class="arlogo"><img src="{prefix}assets/logos/{k}.png" alt="" width="30" height="30" loading="lazy"></span>'
+    return f'<span class="arlogo mono" aria-hidden="true">{esc((name or sym)[:1].upper())}</span>'
+
+SORT_JS = """<script>(function(){function v(td,num){var d=td.getAttribute('data-v');if(d===null)d=td.textContent.trim();if(!num)return d.toLowerCase();var n=parseFloat(d);return isNaN(n)?-Infinity:n}
+document.querySelectorAll('table.sortable').forEach(function(t){var hs=t.tHead?t.tHead.rows[0].cells:[];Array.prototype.forEach.call(hs,function(th,i){th.style.cursor='pointer';th.title='Sortieren';th.setAttribute('tabindex','0');var dir=1;
+function go(){var b=t.tBodies[0];var rows=Array.prototype.slice.call(b.rows);var num=th.getAttribute('data-num')==='1';rows.sort(function(x,y){var a=v(x.cells[i],num),c=v(y.cells[i],num);return (a>c?1:a<c?-1:0)*dir});rows.forEach(function(r){b.appendChild(r)});dir=-dir}
+th.addEventListener('click',go);th.addEventListener('keydown',function(e){if(e.key==='Enter'||e.key===' '){e.preventDefault();go()}})})})})();</script>"""
+
 PEER_BLOCKS = {}
 
 def peer_block(sym, cfg_by_sym, gruppen):
     """Querverlinkung je Aktie: Aristokratenliste plus bis zu drei Aktien aus derselben Peer-Gruppe."""
     gr = next((g for g in gruppen if sym in g["members"]), None)
     peers = [m for m in (gr["members"] if gr else []) if m != sym and m in cfg_by_sym][:3]
-    items = "".join(f'<li><a href="../{cfg_by_sym[m]["slug"]}/">{esc(cfg_by_sym[m]["name"])}</a></li>' for m in peers)
+    items = "".join(f'<li><a href="../{cfg_by_sym[m]["slug"]}/" style="display:flex;align-items:center;gap:10px">{logo_span(m, cfg_by_sym[m]["name"], "../../")}{esc(cfg_by_sym[m]["name"])}</a></li>' for m in peers)
     peer_teil = (f'<p>Aus der Gruppe „{esc(gr["name"])}“ lohnt der Blick auf:</p><ul>{items}</ul>' if peers else "")
     return (f'<h2>Vergleich und Einordnung</h2>{peer_teil}'
             f'<p><a href="../aristokraten/">Alle Dividendenaristokraten und Dividend Kings im Vergleich</a></p>')
@@ -368,8 +380,7 @@ a.addEventListener("input",function(){{b.value="";r()}});b.addEventListener("inp
         serie_quelle_html = (f'<li>Dividendenerhöhungen in Folge: <a href="{esc(se["quelle"])}" rel="nofollow noopener" target="_blank">{esc(dom)}</a>'
                              f' (Stand {datum(se["stand"]) if se.get("stand") else "–"})</li>')
     heute = datetime.date.today().isoformat()
-    logo = f'<span class="arlogo"><img src="../../assets/logos/{f["sym"].lower()}.png" alt="" width="30" height="30" data-sym="{esc(f["sym"])}"></span>' \
-        if os.path.exists(os.path.join(ROOT, "assets", "logos", f["sym"].lower() + ".png")) else ""
+    logo = logo_span(f["sym"], name, "../../")
 
     return f'''<!DOCTYPE html>
 <html lang="de">
@@ -429,6 +440,7 @@ a.addEventListener("input",function(){{b.value="";r()}});b.addEventListener("inp
 <p class="note"><strong>Hinweis:</strong> Diese Seite dient der allgemeinen Information und ist keine Anlageberatung. Die Zahlen stammen aus den Geschäftsberichten (SEC) und Börsenkursen, sie werden täglich aktualisiert. Vergangene Dividenden sind keine Garantie für künftige Zahlungen. Datenstand Fundamentaldaten: {datum(sec_stand)}.</p>
 </article></main>
 {fuss}
+{SORT_JS}
 </body>
 </html>
 ''', title, desc, url
@@ -438,10 +450,12 @@ def uebersicht(rs, kopf_links, kopf, fuss, jahr):
     zeilen = []
     for r in sorted(rs, key=lambda r: -(r["rendite"] or 0)):
         f = r["f"]
-        zeilen.append(f'<tr><td><a href="{f["slug"]}/">{esc(f["name"])}</a></td><td class="n">{proz(r["rendite"]) if r["rendite"] else "–"}</td>'
-                      f'<td class="n">{de(r["dps_letzt"])}</td><td class="n">{proz(r["cagr5"], vz=True) if r["cagr5"] is not None else "–"}</td>'
-                      f'<td class="n">{r["serie_jahre"] if r["serie_jahre"] is not None else "–"}</td>'
-                      f'<td>{"monatlich" if f["rhythmus"] == 12 else "vierteljährlich"}</td></tr>')
+        zeilen.append(f'<tr><td data-v="{esc(f["name"])}"><a href="{f["slug"]}/" style="display:flex;align-items:center;gap:10px">{logo_span(f["sym"], f["name"], "../")}{esc(f["name"])}</a></td>'
+                      f'<td class="n" data-v="{r["rendite"] or ""}">{proz(r["rendite"]) if r["rendite"] else "–"}</td>'
+                      f'<td class="n" data-v="{r["dps_letzt"]}">{de(r["dps_letzt"])}</td>'
+                      f'<td class="n" data-v="{r["cagr5"] if r["cagr5"] is not None else ""}">{proz(r["cagr5"], vz=True) if r["cagr5"] is not None else "–"}</td>'
+                      f'<td class="n" data-v="{r["serie_jahre"] if r["serie_jahre"] is not None else ""}">{r["serie_jahre"] if r["serie_jahre"] is not None else "–"}</td>'
+                      f'<td data-v="{"monatlich" if f["rhythmus"] == 12 else "vierteljährlich"}">{"monatlich" if f["rhythmus"] == 12 else "vierteljährlich"}</td></tr>')
     title = f"US-Dividendenaktien {jahr}: Rendite, Historie und Termine"
     desc = "Dividendenrendite, Dividende je Aktie, Wachstum und Zahlweise bekannter US-Dividendenaktien wie Coca-Cola, Realty Income, PepsiCo und Altria, täglich aktualisiert."
     return f'''<!DOCTYPE html>
@@ -470,7 +484,7 @@ def uebersicht(rs, kopf_links, kopf, fuss, jahr):
 <nav class="crumbs" aria-label="Brotkrumen"><a href="../">Start</a> › <span aria-current="page">Dividenden</span></nav>
 <h1>US-Dividendenaktien im Überblick</h1>
 <p class="lead">Die bekanntesten US-Dividendenwerte mit Rendite, letzter Jahresdividende und Wachstum über fünf Jahre. Ein Klick auf den Namen führt zur ausführlichen Seite mit Historie, Terminen und Rechner.</p>
-<div class="tablewrap"><table><thead><tr><th>Aktie</th><th class="n">Rendite</th><th class="n">Dividende je Aktie (USD)</th><th class="n">Wachstum 5 J. p. a.</th><th class="n">Erhöhungen in Folge (Jahre)</th><th>Zahlweise</th></tr></thead><tbody>
+<div class="tablewrap"><table class="sortable"><thead><tr><th>Aktie</th><th class="n" data-num="1">Rendite</th><th class="n" data-num="1">Dividende je Aktie (USD)</th><th class="n" data-num="1">Wachstum 5 J. p. a.</th><th class="n" data-num="1">Erhöhungen in Folge (Jahre)</th><th>Zahlweise</th></tr></thead><tbody>
 {"".join(zeilen)}
 </tbody></table></div>
 <p>Welche dieser Werte ihre Dividende seit mindestens 25 oder 50 Jahren erhöhen, zeigt die <a href="aristokraten/">Liste der Dividend Kings und Dividendenaristokraten</a>.</p>
@@ -478,6 +492,7 @@ def uebersicht(rs, kopf_links, kopf, fuss, jahr):
 <p class="note"><strong>Hinweis:</strong> Diese Übersicht dient der allgemeinen Information und ist keine Anlageberatung. Eine hohe Rendite kann auch ein Warnsignal sein, siehe <a href="../grundlagen/dividendenfalle/">Dividendenfalle erkennen</a>.</p>
 </article></main>
 {fuss}
+{SORT_JS}
 </body>
 </html>
 ''', title, desc
@@ -491,11 +506,13 @@ def aristokraten(rs, kopf_links, kopf, fuss, jahr):
     for titel, lo, hi in gruppen:
         g = sorted([r for r in rs if r["serie_jahre"] is not None and lo <= r["serie_jahre"] <= hi], key=lambda r: -r["serie_jahre"])
         if not g: continue
-        z = "".join(f'<tr><td><a href="../{r["f"]["slug"]}/">{esc(r["f"]["name"])}</a></td><td class="n"><strong>{r["serie_jahre"]}</strong></td>'
-                    f'<td class="n">{proz(r["rendite"]) if r["rendite"] else "–"}</td><td class="n">{proz(r["cagr5"], vz=True) if r["cagr5"] is not None else "–"}</td></tr>'
+        z = "".join(f'<tr><td data-v="{esc(r["f"]["name"])}"><a href="../{r["f"]["slug"]}/" style="display:flex;align-items:center;gap:10px">{logo_span(r["f"]["sym"], r["f"]["name"], "../../")}{esc(r["f"]["name"])}</a></td>'
+                    f'<td class="n" data-v="{r["serie_jahre"]}"><strong>{r["serie_jahre"]}</strong></td>'
+                    f'<td class="n" data-v="{r["rendite"] or ""}">{proz(r["rendite"]) if r["rendite"] else "–"}</td>'
+                    f'<td class="n" data-v="{r["cagr5"] if r["cagr5"] is not None else ""}">{proz(r["cagr5"], vz=True) if r["cagr5"] is not None else "–"}</td></tr>'
                     for r in g)
-        teile.append(f'<h2>{esc(titel)}</h2><div class="tablewrap"><table style="table-layout:fixed;min-width:480px"><colgroup><col style="width:40%"><col style="width:20%"><col style="width:20%"><col style="width:20%"></colgroup><thead><tr><th>Aktie</th><th class="n">Jahre in Folge</th>'
-                     f'<th class="n">Rendite</th><th class="n">Wachstum 5 J. p. a.</th></tr></thead><tbody>{z}</tbody></table></div>')
+        teile.append(f'<h2>{esc(titel)}</h2><div class="tablewrap"><table class="sortable" style="table-layout:fixed"><colgroup><col style="width:46%"><col style="width:18%"><col style="width:18%"><col style="width:18%"></colgroup><thead><tr><th>Aktie</th><th class="n" data-num="1">Jahre in Folge</th>'
+                     f'<th class="n" data-num="1">Rendite</th><th class="n" data-num="1">Wachstum 5 J. p. a.</th></tr></thead><tbody>{z}</tbody></table></div>')
     n_king = sum(1 for r in rs if (r["serie_jahre"] or 0) >= 50); n_ari = sum(1 for r in rs if 25 <= (r["serie_jahre"] or 0) < 50)
     ohne = sorted([r for r in rs if r["serie_jahre"] is not None and r["serie_jahre"] < 10], key=lambda r: -r["serie_jahre"])
     ohne_html = ""
@@ -538,6 +555,7 @@ def aristokraten(rs, kopf_links, kopf, fuss, jahr):
 <p class="note"><strong>Hinweis:</strong> Diese Liste dient der allgemeinen Information und ist keine Anlageberatung. Eine lange Erhöhungsserie ist keine Garantie für künftige Dividenden.</p>
 </article></main>
 {fuss}
+{SORT_JS}
 </body>
 </html>
 ''', title, desc
