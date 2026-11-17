@@ -820,6 +820,15 @@
    "quelle": "https://www.sec.gov/Archives/edgar/data/872589/000087258926000032/exhibit991q32026.htm"
   },
   {
+   "sym": "BP",
+   "name": "Bp Plc",
+   "art": "ergebnis",
+   "datum": "2026-11-23",
+   "betrag": "6000000000",
+   "waehrung": "USD",
+   "quelle": "https://www.sec.gov/Archives/edgar/data/313807/000119312526464801/d188579dex991.htm"
+  },
+  {
    "sym": "MCHP",
    "name": "Microchip Technology",
    "art": "dividende_exdatum",
@@ -1306,6 +1315,15 @@
    "quelle": "https://www.sec.gov/Archives/edgar/data/74208/000007420826000084/udr-ex99d1.htm"
   },
   {
+   "sym": "DUK",
+   "name": "Duke Energy",
+   "art": "dividende_zahltag",
+   "datum": "2027-01-01",
+   "betrag": "",
+   "waehrung": "",
+   "quelle": "https://www.sec.gov/Archives/edgar/data/1326160/000110465926128747/tm2629986d1_ex99-1.htm"
+  },
+  {
    "sym": "UL",
    "name": "Unilever Plc",
    "art": "ergebnis",
@@ -1421,6 +1439,15 @@
    "betrag": "0.42",
    "waehrung": "USD",
    "quelle": "https://www.sec.gov/Archives/edgar/data/858877/000085887726000170/exhibit991pressrelease-q1f.htm"
+  },
+  {
+   "sym": "DIS",
+   "name": "Walt Disney Company (The)",
+   "art": "dividende_zahltag",
+   "datum": "2027-01-22",
+   "betrag": "1.00",
+   "waehrung": "USD",
+   "quelle": "https://www.sec.gov/Archives/edgar/data/1744489/000174448926000065/fy2026_q4xerxex991.htm"
   },
   {
    "sym": "VOD",
@@ -1556,6 +1583,15 @@
    "betrag": "",
    "waehrung": "USD",
    "quelle": "https://www.sec.gov/Archives/edgar/data/1086222/000119312526452631/d137487dex991.htm"
+  },
+  {
+   "sym": "DIS",
+   "name": "Walt Disney Company (The)",
+   "art": "dividende_zahltag",
+   "datum": "2027-07-13",
+   "betrag": "1.00",
+   "waehrung": "USD",
+   "quelle": "https://www.sec.gov/Archives/edgar/data/1744489/000174448926000065/fy2026_q4xerxex991.htm"
   },
   {
    "sym": "GSK",
