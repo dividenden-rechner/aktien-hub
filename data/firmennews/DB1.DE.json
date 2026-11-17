@@ -1,7 +1,22 @@
 {
  "hub": "DB1.DE",
  "name": "Deutsche Börse",
- "stand": "2026-11-16",
+ "stand": "2026-11-17",
  "quelle": "Google News (Wirtschaftsmedien, deutsch und englisch)",
- "meldungen": []
+ "meldungen": [
+  {
+   "titel": "Deutsche Börse-Aktie: Unternehmen gibt nach",
+   "quelle": "WELT",
+   "link": "https://news.google.com/rss/articles/CBMitwFBVV95cUxQUmVQMHpaNmRHNlZwWFJTLUZvZnR5cDBwZkJTZzdqbndLb3JmNFRURmFMVHVoTi1CTmx1N2ozZE14YTVZbzNQYnNReXBHMUN3V0JZTUtJaFRBUzVSa3lKNjJlYWZYbWllbVltS0hPd0JEYVFYR1JxeW5VQV9rQ3lOaTl2UEROSHIyV1c2LVFkcDJ3YlgzNzhYaWJDYWV6dzA2SGxMcVI1VDZPZ1AxN1dMYmhLakhHbUk?oc=5",
+   "datum": "2026-11-17",
+   "sprache": "de"
+  },
+  {
+   "titel": "EQS-Stimmrechte: Deutsche Börse AG (deutsch)",
+   "quelle": "Börse Online",
+   "link": "https://news.google.com/rss/articles/CBMilgFBVV95cUxPX01jSjZVVnZxZEV0RXB2TzJxVnhDNkFucHN5a1hFaURXU0d2NlFkQTJ4eTdNZ012d1kxam16YnFqbXRyOFkwT1VSZGF4WXZmMG4wT0xPNnNYLVhGYWExZnFhS2xJWEU5emJSZzVoZVNOSkstLVB0bWJrN1JUT3BIT0kwZGF6MFRxNXQ2X2NjaUg4TnVQZWc?oc=5",
+   "datum": "2026-11-17",
+   "sprache": "de"
+  }
+ ]
 }

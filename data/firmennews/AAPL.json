@@ -1,9 +1,23 @@
 {
  "hub": "AAPL",
  "name": "Apple Inc.",
- "stand": "2026-11-16",
+ "stand": "2026-11-17",
  "quelle": "Google News (Wirtschaftsmedien, deutsch und englisch)",
  "meldungen": [
+  {
+   "titel": "Apple Watch’s New AI Features Hear Your Conversations But Miss the Point",
+   "quelle": "Bloomberg.com",
+   "link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxPNDJkb0JWekFjWDVtUFBXZDJsdGY5OTYwb1JhdzRZQ2RNb2tWMV9UdXQ3cEE0dWN5SEhNckU0aV9mSUNpeWtpR0wydjJRSHpUcHdzUnh4c28xMTQxU0U2Q3hnWmg5dTU3elVtcHh6aU5XbnNUYzFvWE44YzhTWnlpVjZxTk5FSzl0bDFjcklpclBpWDVCXzhKQ2Q2X1pGQ3hWYlpwbFZSdUxqckRncTEwZg?oc=5",
+   "datum": "2026-11-17",
+   "sprache": "en"
+  },
+  {
+   "titel": "Popular websites compromised in bid to steal crypto, target iPhone users",
+   "quelle": "Reuters",
+   "link": "https://news.google.com/rss/articles/CBMitwFBVV95cUxPTS1sYjJVSFJKSWN4SHY1S3g4aDJwdmd1SXp0YTY5aDJUNF9PS08zR29LWkVzVXk2d2tXZFh0dm9QRVNxc2xXYzczdWpXYmYwTmgwUDZfSFhBRE1XT3JHQnpNZERDdU5yMy16dDdVa1hYTVBqa0xGbTVPNkJBZTlIWmc4cldZaTI2QnpoaWo3NUxOb3FXQmZQck0yQzYzMVJ5MTROcFdTUGU4b0pmLUZ2Y3V3LVVJaEU?oc=5",
+   "datum": "2026-11-17",
+   "sprache": "en"
+  },
   {
    "titel": "Apple launches research study to explore the use of AI for health",
    "quelle": "Unternehmen",
@@ -13,9 +27,16 @@
    "typ": "pm"
   },
   {
-   "titel": "Big Tech Mounts Last-Ditch Push to Rewrite Canada’s Data Access Bill",
-   "quelle": "Bloomberg",
-   "link": "https://news.google.com/rss/articles/CBMixwFBVV95cUxNNTNGVEtwVkRtX2piNkZPVXphSWF4OTFCX2RycGdkcllweEhfWjJLMTdkSmpud24tNmJkZ1Z4ZjFaQnN1QlJXcFlTRWlpWGhzOUV2N0FNM0xXNW5zSk13Q09vZF8yLUMtbjRNMzN2eEgzejEyT2pIMFlOa3lrZHJLWkxHelE2am5DRmZScnM5T2gwOXNuOUQ1ZDFvUndBenk4RVZFUGFjeFZFdGI4S2tuY3E3VGpRSW9xUUU0Qm1YNnh2aVZoYXJR?oc=5",
+   "titel": "Apple Taps 26-Year Veteran to Run Pay, Card and Wallet Services",
+   "quelle": "Bloomberg.com",
+   "link": "https://news.google.com/rss/articles/CBMixAFBVV95cUxON2dJemZpYUs0R0ZKTl9qLTVybHhOUzhvTHplUU1yd1V6U0N2SUtnWTY3bHZCUW1XaWJwMTQ5WF85OHI2cDlabkxjZTA0VVdGaUJ0eHBTMC1TOGRWZ1BtZ0dqaG5oVnU4X0FBNnQxRUo3ZnoyWEdPT3RTNXhmLU9fZnYzVkZHa3lVaFlCVHZ0b2Q5Q3E5ejlrT092eTBwR2RiWlR2aG5TTkhrZ040Q2VkQVBLMHFTNUtteEk3ck91TFFocnJp?oc=5",
+   "datum": "2026-11-16",
+   "sprache": "en"
+  },
+  {
+   "titel": "Apple to Let Users Face-Unlock iPhone Duo, Addressing Key Drawback",
+   "quelle": "Bloomberg.com",
+   "link": "https://news.google.com/rss/articles/CBMitwFBVV95cUxOaS1qX2lXTFNMeFRLM2NNV2tNalNwc3diMTdaUGcwbTE4WENOTGFzM3dTdF9fWmxrVHZPRUNZSS10aTlreTdrckVfQW1qT2stdXNha3ZPVmVmTzZBYV9pMXFPY25zUk9Ham1IbE9UbGU5Nmlpa0lYMjBBTE5HTnNJM0duN0pRR0pDV2xvU3NnMnpUUTR2R3N2OGFlaWlxdV9MMGpYdnVLMVk5YVBVdUd4Ujc3MmFyWE0?oc=5",
    "datum": "2026-11-16",
    "sprache": "en"
   },
@@ -26,13 +47,6 @@
    "datum": "2026-11-13",
    "sprache": "en",
    "typ": "pm"
-  },
-  {
-   "titel": "Epic Games adds to legal lineup for Supreme Court showdown with Apple",
-   "quelle": "Reuters",
-   "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxNX1BoNzlRTGsxelZvc2xWZ0tnVERRbjNUeTh5ZGZUdS1LSmN6TTdkc3FTQWJNUllZUXRxQXl0aEg4MVR3b0xHdnp2TnZEVnlLaTNtb2d6LVV1NF9TRE1iaDNoNzJGT2oyUkhqYlZhUE00RGZJdzFKVThPWHVuaW5WSXVMSVEzOV96dXZ5bXF4bnZiR2tLY2laeUlYUlVOTFY2YUt1WTdYNXI3MWROQTV2b2Y3MlpMZw?oc=5",
-   "datum": "2026-11-13",
-   "sprache": "en"
   },
   {
    "titel": "Apple TV introduces new Sign Language interpretation feature",

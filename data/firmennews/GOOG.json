@@ -1,7 +1,22 @@
 {
  "hub": "GOOG",
  "name": "Alphabet Inc.",
- "stand": "2026-11-16",
+ "stand": "2026-11-17",
  "quelle": "Google News (Wirtschaftsmedien, deutsch und englisch)",
- "meldungen": []
+ "meldungen": [
+  {
+   "titel": "Sequoia, Greenoaks Lead Isomorphic Labs $5 Billion Funding Round",
+   "quelle": "Bloomberg.com",
+   "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxQeXZEU2ZzeHFQMGRPZkRpOEVaZnhIOThLQ0xrSEZ3c1RJcFZGQW9HRlpTVEdHSU5WWVZhbTRGTlZWclAwUk1oMzdUa1dGcnZLQmhiY1VTRHU0bTBHWDhwdEs5LVVtNjVyc1JMMzI1RzlVWWt5WG9NLThWY2o0YVhOTnNTM3kzYzZYaTNsRGVCWDFTT0FYZ1RFWWhnR3RwTk5aNE5Bd2x1dTZfTTF1YXpMNGlEeUg?oc=5",
+   "datum": "2026-11-17",
+   "sprache": "en"
+  },
+  {
+   "titel": "Google Parent to Take Part in $3 Billion in Prepaid Energy Deals",
+   "quelle": "Bloomberg.com",
+   "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxQUlVHdU1ReTVhcXg4YjVZZTRpenFBV0phdVppOU9FY1U2QlJXTHdJWFFnWThLMV9XdG9hUzZPWVRTSk0yNURRY3BZd0p5ZHIxTmdYOG41dXkyVEhFSWxLU3UtcUt6NGdudG5tYkFsOVh3dWtjMGhIQlkxQWR6aTRYMnZkLWFreFM4VDVLbWtZZWtFYWx2djdXd3RvM3hTbVVaeEdjVk5FSnhEN2R3b2ZlaEM3SDA?oc=5",
+   "datum": "2026-11-16",
+   "sprache": "en"
+  }
+ ]
 }

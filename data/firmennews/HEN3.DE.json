@@ -1,9 +1,17 @@
 {
  "hub": "HEN3.DE",
  "name": "Henkel Vz",
- "stand": "2026-11-16",
+ "stand": "2026-11-17",
  "quelle": "Google News (Wirtschaftsmedien, deutsch und englisch)",
  "meldungen": [
+  {
+   "titel": "Henkel receives “Building Public Trust Award”",
+   "quelle": "Unternehmen",
+   "link": "https://www.henkel.com/press-and-media/press-releases-and-kits/2026-11-13-henkel-receives-building-public-trust-award-2275216",
+   "datum": "2026-11-12",
+   "sprache": "en",
+   "typ": "pm"
+  },
   {
    "titel": "Henkel at BAU 2027: adhesive and sealant technologies for timber construction and building components",
    "quelle": "Unternehmen",
@@ -25,14 +33,6 @@
    "quelle": "Unternehmen",
    "link": "https://www.henkel.com/press-and-media/press-releases-and-kits/2026-11-10-henkel-posts-very-strong-sales-growth-in-the-third-quarter-2274626",
    "datum": "2026-11-10",
-   "sprache": "en",
-   "typ": "pm"
-  },
-  {
-   "titel": "Q3 2026 Statement",
-   "quelle": "Unternehmen",
-   "link": "https://www.henkel.com/press-and-media/press-releases-and-kits/2026-11-10-publication-q3-2026-statement-2272808",
-   "datum": "2026-11-09",
    "sprache": "en",
    "typ": "pm"
   }

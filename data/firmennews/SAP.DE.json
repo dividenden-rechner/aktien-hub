@@ -1,61 +1,68 @@
 {
  "hub": "SAP.DE",
  "name": "SAP",
- "stand": "2026-11-16",
+ "stand": "2026-11-17",
  "quelle": "Google News (Wirtschaftsmedien, deutsch und englisch)",
  "meldungen": [
   {
-   "titel": "India’s Rise: From Promise to Platform for Global Growth",
+   "titel": "Advancing Supply Chain Planning: SAP Named a Leader in Multiple 2026 IDC MarketScape Assessments",
    "quelle": "Unternehmen",
-   "link": "https://news.sap.com/2026/11/india-promise-to-platform-global-growth/",
+   "link": "https://news.sap.com/2026/11/sap-named-leader-idc-marketscape-supply-chain-assessments/",
+   "datum": "2026-11-17",
+   "sprache": "en",
+   "typ": "pm"
+  },
+  {
+   "titel": "GxP Compliance in Life Sciences Is Non-Negotiable: SAP Is Raising the Standard",
+   "quelle": "Unternehmen",
+   "link": "https://news.sap.com/2026/11/gxp-compliance-life-sciences-sap-raising-standard/",
+   "datum": "2026-11-17",
+   "sprache": "en",
+   "typ": "pm"
+  },
+  {
+   "titel": "Thomas Saueressig to Leave SAP Executive Board",
+   "quelle": "Unternehmen",
+   "link": "https://news.sap.com/2026/11/thomas-saueressig-to-leave-sap-executive-board/",
+   "datum": "2026-11-17",
+   "sprache": "en",
+   "typ": "pm"
+  },
+  {
+   "titel": "Vertrauter von CEO Christian Klein: SAP-Vorstand Thomas Saueressig wird Chef von Ionos",
+   "quelle": "Manager Magazin",
+   "link": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxQczlOSks2dEdUTHdES0ZUSDdvMHZQdUdYcFJBV3VXaDBKdW51dEotWjlrSTRJb2ZXQkdhYlVxMjEzdHhOSG5aMlpnaEl5NkpJNi1BRWJaRDVtTTQ5Q24wRFBNUDBka3o4ZkZXbVpDOTNuQkU4VDE3UGNNaC0wZ2p4VlI3VVY3S3F4d1F6ZWNmZ3JMeU1BamZsTDMxbkZDZFA3S1NodVZOQVduMVdvdzdwQllmcHBWTS1RNXJTSmkxakJJLTcxX01RampYa0wyanJzSVFn?oc=5",
+   "datum": "2026-11-17",
+   "sprache": "de"
+  },
+  {
+   "titel": "SAP Executive Saueressig Quits to Become Ionos CEO",
+   "quelle": "Bloomberg.com",
+   "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxQY3pnUGhrakczaVVjTXI3SFpCZE9VazEwenp2LW93MVJSUFI2ZHJja0l6MXNfYzlBU1ZTSklJVlNHYjNleHhMRWg2dklneVBTcEFPVEpOY2F5cXNkT1p4UVpmbUtVUks5S2NDbE9PU05uM2d5cEE1am0xVVFmcDhMUXlLbklOc0pmTjMxRkJObXROdkllUDVfRGZlMG8ySFVfZVNTZ0tQam5tWmExajk0eUI1M2k?oc=5",
+   "datum": "2026-11-17",
+   "sprache": "en"
+  },
+  {
+   "titel": "SAP Completes Acquisition of TechWolf",
+   "quelle": "Unternehmen",
+   "link": "https://news.sap.com/2026/11/sap-completes-acquisition-of-techwolf/",
    "datum": "2026-11-16",
    "sprache": "en",
    "typ": "pm"
   },
   {
    "titel": "AI Startup Dreamteam Raises Capital to Challenge Salesforce, SAP",
-   "quelle": "Bloomberg",
+   "quelle": "Bloomberg.com",
    "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxOQi10bmVBRE1LOElDMjBnNTh6MnRaZGZ5SU1TMG9HUEwyRlRiU3pUN0RJanRoM1lXMHVYMXJtSXc2c0tPa3h3c2xFREx6d2V2dTJiLTV1amtxV2pZTlF4T3VYMzVaWlBDMFJnaHduSnpJcG5UV3hadGpHaVE4UGRuVnJHTlpvcDE0WThkV3k4YVpMWWRPenkzcXVERlZ6bmh4bzJnRk5meFJuOVNwX0ZUa3lBNlQ?oc=5",
    "datum": "2026-11-16",
    "sprache": "en"
   },
   {
-   "titel": "SAP Named a Leader in Two 2026 IDC MarketScapes: Worldwide Warehouse Management for Manufacturing and for Retail",
-   "quelle": "Unternehmen",
-   "link": "https://news.sap.com/2026/11/sap-leader-idc-marketscapes-warehouse-management-manufacturing-retail/",
-   "datum": "2026-11-13",
-   "sprache": "en",
-   "typ": "pm"
-  },
-  {
-   "titel": "Successful SAP Transformation Starts With Business Processes, Not Tech",
-   "quelle": "Unternehmen",
-   "link": "https://news.sap.com/2026/11/successful-sap-transformation-business-processes/",
-   "datum": "2026-11-13",
-   "sprache": "en",
-   "typ": "pm"
-  },
-  {
-   "titel": "SAP Puts Product-Level Cloud Emissions and Energy Data in Customers’ Hands",
-   "quelle": "Unternehmen",
-   "link": "https://news.sap.com/2026/11/sap-product-level-cloud-emissions-energy-data-customers/",
+   "titel": "A way of life is disappearing on Cambodia’s Tonle Sap as El Niño pressures lake communities",
+   "quelle": "AP News",
+   "link": "https://news.google.com/rss/articles/CBMioAFBVV95cUxPSXFZM3hyVnp2TkhzNnB4N3ZsZUg1UGFlVFh0N0lPY3JCbm9nYWg2WnNjTGpnaEEzaWZ3UEF0OGNkNW0tVk9nVFZFMm5KVjZGWklkaVEwZU5tYlhkMkRKRE16aHpZbEZKc3ZyV29HSk5XTi1OSDItMHJOYWQwemVhbGxvVkdZMHk3cWJCR0tFQWJ4akMwNEoza1d0YWd2c0J4?oc=5",
    "datum": "2026-11-12",
-   "sprache": "en",
-   "typ": "pm"
-  },
-  {
-   "titel": "SAP-Kontrolleur legt Mandat nach US-Sanktionen nieder",
-   "quelle": "Börsen-Zeitung",
-   "link": "https://news.google.com/rss/articles/CBMimAFBVV95cUxOUmM1dllHaXdqUlJmcVVxM0VYLVEzVnFOTjRwNERhUTJIbURET3JKZ05yWS11NGh2NjJfVWExRlJQTE5pdHJhbEc1QjkzQ25YcFFnUzJBRFVxTGZscVRnTS05NGR1UmsxZ3N4REZJU3hLc2R0RzRPcExRbzM4R2RmS2FsWTlULWZQSmNtbmh3Wm8wQm1RY3VfdQ?oc=5",
-   "datum": "2026-11-12",
-   "sprache": "de"
-  },
-  {
-   "titel": "SAP: Aufsichtsrat Qi Lu tritt nach US-Sanktionen zurück",
-   "quelle": "Manager Magazin",
-   "link": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxOM0NMallrVXN5NG9RcFM4ZndVcHR4X1NFc3loem5NTE1qUXFnTVBjTXM1ZFZ1WG5UbDhrd3VJN3NRRW43LUxLeGFqUTh3OWQzU3hEN1BDWTJUR19ESUJWNVdVYWtSSWlYRDBOdXNKTDEwV2xLbVo5bDRGS3RrQ1hrVW8xUGl1Y0E3QjBRbHVFdV9HU2otd1VlQXB5Q2tkcWF0bEVKNXgwaG5hS2NHbDBiMnhGazZnZUtGSklzQXhCaTgwRjJnUzd6RExrMGhnVGdTNS1z?oc=5",
-   "datum": "2026-11-11",
-   "sprache": "de"
+   "sprache": "en"
   }
  ]
 }

@@ -1,9 +1,25 @@
 {
  "hub": "VZ",
  "name": "Verizon Communications Inc.",
- "stand": "2026-11-16",
+ "stand": "2026-11-17",
  "quelle": "Google News (Wirtschaftsmedien, deutsch und englisch)",
  "meldungen": [
+  {
+   "titel": "Cool tech gifts for kids and teens",
+   "quelle": "Unternehmen",
+   "link": "https://www.verizon.com/about/parenting/cool-tech-gifts-kids-and-teens",
+   "datum": "2026-11-16",
+   "sprache": "en",
+   "typ": "pm"
+  },
+  {
+   "titel": "Ready for Cyber Five? Quick tips to avoid online shopping scams",
+   "quelle": "Unternehmen",
+   "link": "https://www.verizon.com/about/parenting/online-shopping-scams",
+   "datum": "2026-11-16",
+   "sprache": "en",
+   "typ": "pm"
+  },
   {
    "titel": "Your family tech agreement can be a sticky note on the fridge",
    "quelle": "Unternehmen",
@@ -17,22 +33,6 @@
    "quelle": "Unternehmen",
    "link": "https://www.verizon.com/about/news/verizon-shine-bills-fan-birthday-wish",
    "datum": "2026-11-12",
-   "sprache": "en",
-   "typ": "pm"
-  },
-  {
-   "titel": "Plan a holiday email marketing campaign in 20 minutes",
-   "quelle": "Unternehmen",
-   "link": "https://www.verizon.com/about/news/plan-holiday-email-marketing-campaign",
-   "datum": "2026-11-11",
-   "sprache": "en",
-   "typ": "pm"
-  },
-  {
-   "titel": "Verizon Business completes one of Europe’s largest Private 5G implementations",
-   "quelle": "Unternehmen",
-   "link": "https://www.verizon.com/about/news/verizon-thames-freeport-private-5g",
-   "datum": "2026-11-10",
    "sprache": "en",
    "typ": "pm"
   }

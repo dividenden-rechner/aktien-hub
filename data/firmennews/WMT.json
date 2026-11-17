@@ -1,15 +1,16 @@
 {
  "hub": "WMT",
  "name": "Walmart Inc.",
- "stand": "2026-11-16",
+ "stand": "2026-11-17",
  "quelle": "Google News (Wirtschaftsmedien, deutsch und englisch)",
  "meldungen": [
   {
-   "titel": "Walmart Names Joe Creed to Board of Directors – Company Announcement",
-   "quelle": "Financial Times",
-   "link": "https://news.google.com/rss/articles/CBMipgFBVV95cUxQN2dzUzNSSzZSbGJvLXl2RjZlRFNud3RQclFzZHRwc0lzN1gyU0JBallzMTZCaUVOclpsdWFtcXJ6WW5aaVJ5bVJ2Yjk0T0dOTndDRlVQUkNWRDVaOWxDU1prckF5S285bEdWeDFBdktHQ3ZscktESDJfN3ZVdlRvN3BXNm51TzN5ZElDRWJIZUx0V3Y5QTNzX1FSUnVPaXVvQ0VhdXZn?oc=5",
+   "titel": "Führungswechsel",
+   "quelle": "SEC-Meldung",
+   "link": "https://www.sec.gov/Archives/edgar/data/104169/000010416926000165/wmt-20261113.htm",
    "datum": "2026-11-16",
-   "sprache": "en"
+   "sprache": "en",
+   "typ": "pm"
   }
  ]
 }

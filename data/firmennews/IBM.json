@@ -1,40 +1,47 @@
 {
  "hub": "IBM",
- "name": "INTERNATIONAL BUSINESS MACHINES CORPORATION",
- "stand": "2026-11-16",
+ "name": "INTERNATIONAL BUSINESS MACHINES CORP",
+ "stand": "2026-11-17",
  "quelle": "Google News (Wirtschaftsmedien, deutsch und englisch)",
  "meldungen": [
   {
-   "titel": "IBM advances agent identity security with new Vault capabilities",
+   "titel": "We Build Software Together. Why Do We Secure It Alone?",
    "quelle": "Unternehmen",
-   "link": "https://newsroom.ibm.com/blog-ibm-advances-agent-identity-security-with-new-vault-capabilities",
-   "datum": "2026-11-12",
+   "link": "https://newsroom.ibm.com/blog-we-build-software-together-why-do-we-secure-it-alone",
+   "datum": "2026-11-17",
    "sprache": "en",
    "typ": "pm"
   },
   {
-   "titel": "IBM Announces Winner of Sports Tech Startup Prize Challenge at Web Summit Lisbon 2026",
+   "titel": "IBM Study: Chief AI Officers See Where AI Creates Value, but Few Control Investment Decisions",
    "quelle": "Unternehmen",
-   "link": "https://newsroom.ibm.com/campaign?item=3064",
-   "datum": "2026-11-12",
+   "link": "https://newsroom.ibm.com/campaign?item=3072",
+   "datum": "2026-11-17",
    "sprache": "en",
    "typ": "pm"
   },
   {
-   "titel": "IBM Quantum Nighthawk Demonstrates New Levels of Speed and Quality, with Plans to Scale Beyond 1,000 Qubits in 2027",
+   "titel": "IBM and AMD accelerate quantum error correction decoding at scale",
    "quelle": "Unternehmen",
-   "link": "https://newsroom.ibm.com/campaign?item=3059",
-   "datum": "2026-11-11",
+   "link": "https://newsroom.ibm.com/blog-pelagos-accelerates-quantum-error-correction-decoding-at-scale",
+   "datum": "2026-11-16",
    "sprache": "en",
    "typ": "pm"
   },
   {
-   "titel": "IBM and Microsoft Announce a New AI Agent Platform Designed for Industry-Specific Transformation",
+   "titel": "IBM, Fermilab, and NVIDIA Announce Plans for New Co-Design Platform to Accelerate the Development of Next-Generation, Modular Quantum Computers",
    "quelle": "Unternehmen",
-   "link": "https://newsroom.ibm.com/campaign?item=3056",
+   "link": "https://newsroom.ibm.com/campaign?item=3068",
+   "datum": "2026-11-16",
+   "sprache": "en",
+   "typ": "pm"
+  },
+  {
+   "titel": "IBM to End Immigration Sponsorship for Roles in Biggest Unit",
+   "quelle": "Bloomberg.com",
+   "link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxNWkNVZ2FFbXVhdXZoalpCU2hEY3QwSEtHRVUwTzF3RkN1S0tTTXpyb1J6OUVyb1cxTnVEbW13ck8tanhTVklnNTJtZUVSMmFHajRjRVlYZms2RURjd0FBTlc2Smt2MEpLN2NMUGlrUlFfVWZrb0RsWlZWaEdPV2FrZmVCelVnM1pFZXpTM05DNEJJSkJ1NWFSUlRrRmo0aHNDeGxiZzY3czBnWDNFQVdhaQ?oc=5",
    "datum": "2026-11-10",
-   "sprache": "en",
-   "typ": "pm"
+   "sprache": "en"
   }
  ]
 }

@@ -1,14 +1,43 @@
 {
  "hub": "MSFT",
  "name": "MICROSOFT CORP",
- "stand": "2026-11-16",
+ "stand": "2026-11-17",
  "quelle": "Google News (Wirtschaftsmedien, deutsch und englisch)",
  "meldungen": [
   {
-   "titel": "Microsoft Says Making Progress Fixing One of Its Longest Outages",
-   "quelle": "Bloomberg",
-   "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxOeENuMk4tX1MwYkVSbFlHNFhKc0RGTFBMbTdrMzRLYktPdDBfeFJmT3lhZkp4QmZsOFo5SUVSZFh5VzZPN2xMZ0FMcXZzOXVTSzJkWUdJSFdRSjVNZHVnV3pXWDh2Mk1kM19uSkw5MlFKSS1qcnpzbG4zcjRJM3VGX1MzaEtsdHExWlloTWdzQ0cxaFFvNUJzWk9CcXJRVGdvSGpGT3RJSHZFNUcxTkplNnF4cDdxUQ?oc=5",
-   "datum": "2026-11-14",
+   "titel": "AI Agents in Bond Market Arrive With a Stealthy Microsoft Trade",
+   "quelle": "Bloomberg.com",
+   "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxQRDE1Y1FPaVcyOWNoSXNJZ2JCVmE2LXNVemhTaVhVNlctMVFFUG5YU2pDcTN2N3ZSZWNwVWcyOE5PVFlsMzRDZTMtMEFoZHE1cWJqaHp0Tm5oTDdHTDVLOHF0Tm8xc1RfaVFQSVlnSWdDMUNhZ3pLWGxHR3JNOXhWRDlkZDFwdnREVTlIbWx5TjRtMzlIUnU2ek9BQlpEUWE1dEVOMHlKci02ZDktbllDT3BIb3I?oc=5",
+   "datum": "2026-11-17",
+   "sprache": "en"
+  },
+  {
+   "titel": "Trump Downplays JPMorgan and Microsoft Outages, Saying ‘It’s Life’",
+   "quelle": "Bloomberg.com",
+   "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxQQTA4cTRma25CQXkzaGNfV3psSC01R2RpMklQOHctcjdLcjFqRGtkdWlyaFltbTBKZjhtVWFvcTRjS1FUU3RZclJRamY4VmJ3NzN2UUg1Tlpncjl0Vk5xWXpOSF8xM1hVa2tJU3NtUHFjQW51RVBSZ3l2TVJUZG5PZWtpeGhva0Z3U0NGaktIS1BoeUE3SjJod05qMWVQeUxJYVVYdzRXS05LMkQzSmRn?oc=5",
+   "datum": "2026-11-17",
+   "sprache": "en"
+  },
+  {
+   "titel": "Join us today for live coverage and top news from Microsoft Ignite",
+   "quelle": "Unternehmen",
+   "link": "https://news.microsoft.com/events/ignite/2026/live-news/",
+   "datum": "2026-11-16",
+   "sprache": "en",
+   "typ": "pm"
+  },
+  {
+   "titel": "Microsoft Bug Undetected Since July Triggered Worldwide Outage",
+   "quelle": "Bloomberg.com",
+   "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxPYzVuWmo1ZEZLMzlpSkZTZnJwQk5uaHlLMGFYdWV6cGpySEVhdzZ1X09OZkp3VHh6LU5iTkd2emY5Um1UVkR5MWN6QTUzTUhVRnFIQkQ1MzN1SVBpQ3RtampsdV9BNklLeG4xNE1lUllkUHNaTTJPblMtc0UwZ2VBbldJc3ZESktOSnRZX1phN1J2SnQ5UW9fVmxnbWUzYmhPSnNlQWFrYnZ6bVpuU3YxbFdpUQ?oc=5",
+   "datum": "2026-11-16",
+   "sprache": "en"
+  },
+  {
+   "titel": "MIT sues Microsoft for patent infringement over data center technology",
+   "quelle": "Reuters",
+   "link": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxQcDlaeXZ2cmhNSC1IbzBMQnNUQWhNb3k4cEQ0Zk5zNktHRG9CZnhpOFowNTBKTHNLY2J2S3pKZmRxZVBvbjE1UE41b0wwYy1XSkI5OU1YbHotRFZwcDdSZHp4cXZfWEYzaWVHMU0tN1dIZXItNEFtOTd5MHJGY2tsT2xNbXBYNThfcjUyN2VkRmo1ZEZyVTBUM1c2R1h5ZDFCTzQ1Rms1X1BVNGJRbVVLM194dERiOG1RWUtV?oc=5",
+   "datum": "2026-11-16",
    "sprache": "en"
   },
   {
@@ -28,38 +57,9 @@
    "typ": "pm"
   },
   {
-   "titel": "Microsoft says services experiencing ‘broad recovery’ after global outage",
-   "quelle": "Financial Times",
-   "link": "https://news.google.com/rss/articles/CBMihAFBVV95cUxNc1JOaEdsdTdDNG5MMWZtVW5rSWx1S2dKTXZ3ZmdOVUd2X2NFa1BmeS1kWkZpZ0diYmxZNGEtQ3R1MzNVN0RBM0txbHpfakxKR1MtblJZMFhsXzlacTlqUEpCZGZicmZLcm5yaHU3bGRDX1hBUHBPNEZ3TXJlZEwtTXRGeHg?oc=5",
-   "datum": "2026-11-13",
-   "sprache": "en"
-  },
-  {
-   "titel": "Microsoft Discovers AI Can’t Keep the Email Going. Workers Rejoice",
-   "quelle": "Bloomberg",
-   "link": "https://news.google.com/rss/articles/CBMirgFBVV95cUxQWG9QSGRuclBSN0NVcjhfaU9GM1M4dmQ5eDdWdFA1NUJocHV3TXpEVU5kZmVpVV9wemdhWXlIRHRoTHdmVkVyYUhiRElFQlB2ekNWV01xRHREWWs3bzRNRmxxdkx1bzloQVhjNEUxQmJ1b3ZGSkxYYmVWQk9rdWVDZjRCNEQyTTBXRXdQSFNHc3g5dl9GcDVfa25qTV9JNE1jR3J6Um5NYzNoSDZDZUE?oc=5",
-   "datum": "2026-11-13",
-   "sprache": "en"
-  },
-  {
-   "titel": "Microsoft outage exposes global reliance on core tech providers",
-   "quelle": "Financial Times",
-   "link": "https://news.google.com/rss/articles/CBMihAFBVV95cUxPV2gtUWFFTFVPQlVyam5rc0x4NnFKd1pPZTNCeWIzQllEd0hlNFJJTGVKcnhRTndjQ3Y0X19wUDFCNmRoXzlNWEVXazNkYkE3aGJfeWp3OVlSVUNZUGgyalE3X0EyeTJnZy02bDN3M3JvU1NwU3FLWW1Fd2NpNVM0YW5BOE0?oc=5",
-   "datum": "2026-11-13",
-   "sprache": "en"
-  },
-  {
    "titel": "Nearly 500 AI projects, over 200 customers: Lessons on making AI work for business",
    "quelle": "Unternehmen",
    "link": "https://blogs.microsoft.com/blog/2026/11/12/from-ai-ambition-to-business-impact/",
-   "datum": "2026-11-12",
-   "sprache": "en",
-   "typ": "pm"
-  },
-  {
-   "titel": "Revisit the games and moments that shaped your XBOX story with Playback",
-   "quelle": "Unternehmen",
-   "link": "https://news.xbox.com/en-us/2026/11/12/xbox-playback-25th-anniversary-review/",
    "datum": "2026-11-12",
    "sprache": "en",
    "typ": "pm"

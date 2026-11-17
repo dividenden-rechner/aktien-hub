@@ -1,9 +1,16 @@
 {
  "hub": "DTE.DE",
  "name": "Deutsche Telekom",
- "stand": "2026-11-16",
+ "stand": "2026-11-17",
  "quelle": "Google News (Wirtschaftsmedien, deutsch und englisch)",
  "meldungen": [
+  {
+   "titel": "Deutsche Telekom-Aktie: Unternehmen erholt sich",
+   "quelle": "WELT",
+   "link": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxPc0szZVBiaDlBX3BSaXAyQjNOdURDanBmS0pOZVhiUlVQNVR3VkRjdEwxZ1QtZ21fdHk5dHMtVERscVZsb3B4dHdNcmMtS1AzVFktNy04WnRzTFFtM1c0REJUdmxhbHgydFg0VTkwbk9qZ1Z2NU93SlBKQUhMamRFb01oTVVTYXBtUHNNWkRxSk1jRVhNZ3gzcW5hcFFFQUxwTFNzdExfZWo2RGJqcE9BeEhHNmp4dDJxUndZ?oc=5",
+   "datum": "2026-11-17",
+   "sprache": "de"
+  },
   {
    "titel": "Telekom expands AI factory in Munich",
    "quelle": "Unternehmen",
@@ -21,12 +28,11 @@
    "typ": "pm"
   },
   {
-   "titel": "T-Systems and Sparxity strengthen Europe’s sovereign AI infrastructure with energy-efficient computing technology",
-   "quelle": "Unternehmen",
-   "link": "https://www.telekom.com/en/newsroom/latest-updates/media-information/2026/11/t-systems-and-sparxity-strengthen-europes-sovereign-ai-infrastru",
-   "datum": "2026-11-03",
-   "sprache": "en",
-   "typ": "pm"
+   "titel": "Deutsche Telekom Raises Outlook and Plans Dividend Increase",
+   "quelle": "WSJ",
+   "link": "https://news.google.com/rss/articles/CBMipAFBVV95cUxOOTNFSEdOcnpsXzRnaWppcWgyZGlScEFRLXlVY1NiUUNRVmNsaVlnSHYteDkwc1B3RWVBZ3JGWGpaemNHNWtpWEhjd0MxZjhPU0tpRWtHQjlObndxSXpLRXZ0dlRTLTVDcUUzTmlqOHk4ekRqdENaQUxDcVFFY3doZ2pBM1ZzQkQ5OFdZWWJqUDM3R2VhLUk1NG5mTVBtVlNWOTFPbw?oc=5",
+   "datum": "2026-11-05",
+   "sprache": "en"
   }
  ]
 }

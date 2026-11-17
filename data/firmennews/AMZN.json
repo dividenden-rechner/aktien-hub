@@ -1,61 +1,68 @@
 {
  "hub": "AMZN",
  "name": "AMAZON.COM, INC.",
- "stand": "2026-11-16",
+ "stand": "2026-11-17",
  "quelle": "Google News (Wirtschaftsmedien, deutsch und englisch)",
  "meldungen": [
   {
+   "titel": "LSEG Risk Intelligence expands World-Check One cloud infrastructure in APAC with Singapore deployment",
+   "quelle": "Unternehmen",
+   "link": "https://press.aboutamazon.com/aws/2026/11/lseg-risk-intelligence-expands-world-check-one-cloud-infrastructure-in-apac-with-singapore-deployment",
+   "datum": "2026-11-17",
+   "sprache": "en",
+   "typ": "pm"
+  },
+  {
+   "titel": "ANZ completes major cloud data transformation, strengthening data foundations to improve customer experiences",
+   "quelle": "Unternehmen",
+   "link": "https://press.aboutamazon.com/aws/2026/11/anz-completes-major-cloud-data-transformation-strengthening-data-foundations-to-improve-customer-experiences",
+   "datum": "2026-11-17",
+   "sprache": "en",
+   "typ": "pm"
+  },
+  {
+   "titel": "Transamerica Expands Strategic Relationship with AWS to Scale Responsible AI Capabilities",
+   "quelle": "Unternehmen",
+   "link": "https://press.aboutamazon.com/aws/2026/11/transamerica-expands-strategic-relationship-with-aws-to-scale-responsible-ai-capabilities",
+   "datum": "2026-11-17",
+   "sprache": "en",
+   "typ": "pm"
+  },
+  {
+   "titel": "Amazon Grocery Launches Its Own Line of Prepared Meals with Same-Day Delivery: Salads Starting Under $3, All Meals Under $8",
+   "quelle": "Unternehmen",
+   "link": "https://press.aboutamazon.com/2026/11/amazon-grocery-launches-its-own-line-of-prepared-meals-with-same-day-delivery-salads-starting-under-3-all-meals-under-8",
+   "datum": "2026-11-17",
+   "sprache": "en",
+   "typ": "pm"
+  },
+  {
+   "titel": "Amazon, Google to Have About 28% of Anthropic Stock After IPO",
+   "quelle": "Bloomberg.com",
+   "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxPV2pZZmdyc0t4VzZKQ21zUWRjVENMam14ZG1qQ2ludXhhSmxGbUF5NVNmX1h0a1B2SlBMNEVZWmRZRDZSbFQyTWZKMHZuZzJrNk13Z21iaV9nbGxBaVlwTmJ4cVVMdnVYSUZrRHJNcF9ObGVyZ19MbzEzeElOcmtNTmRfSGtEOUlkNGRWZENESVliWUtfd3lyQ1ZmY0FYWTNiRzduZW02QjhyOWx6UUFN?oc=5",
+   "datum": "2026-11-17",
+   "sprache": "en"
+  },
+  {
+   "titel": "Robert Pattinson Is the New James Bond for MGM Reboot",
+   "quelle": "Bloomberg.com",
+   "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxQLXlXbHNwZ19EVEZDbWtiY05rWF9sWndHSUlCNHYwY1plYmRqOWxRdElnNHVPWVZvbzk5MmdlMmJCb0s0ZGtfUVN3eEtSRHBDSnkwcmNveFFGeXczTlp0VGFKcVBDT014Vm95YXZ1Vmd6bzdiTGYwWjBYbXFBSmlMVlhKLXZRaFZnR1NETTRuSGxFcl9TaS1ZQThKMnp6UGhLbjlrWkxfT0s2anhXQ19aOUFYOEM?oc=5",
+   "datum": "2026-11-17",
+   "sprache": "en"
+  },
+  {
    "titel": "Uber Starts Offering Amazon’s Driverless Zoox Rides in Las Vegas",
-   "quelle": "Bloomberg",
+   "quelle": "Bloomberg.com",
    "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxOcXdqaVIzMmoxQXdXNG9EZWtCMnpSNTB4Z1duZEEzUGt2N2p1SUZpc1IzNTJKb2VwUVIxZVBDTFNfU1hSNVdFT0JuN25zOHdCc1J6YUgyUTV1LXV6ZjRpcnk2YVpQS0RmMTZsSk1hamVNbUp3cjVjWWQzQ041SG5OZnZuLUVubzFqa1Uyb2lqZEEtZTA2QmdQLVptNkt4UlRXRi1KS01sV1BIaFF4Vk15WE9WcU53Zw?oc=5",
    "datum": "2026-11-16",
    "sprache": "en"
   },
   {
    "titel": "SpaceX Rival's Rocket Failure Destroys 40 Amazon Satellites",
-   "quelle": "Bloomberg",
+   "quelle": "Bloomberg.com",
    "link": "https://news.google.com/rss/articles/CBMirgFBVV95cUxQYjFiUTduZWFLVmlUemd4SmlPYUpnSG9QLWpycTFfbmxpMEwtd1MxbnJpVU1vYnNoMlYtSG8xOEJjOThHQnI3NWQ0NVlybzAtbG5XbnJfR1o0d3M5ZjJaMTA4RVNrdVlmR2duc0ljd2VYTl80ajAyME1HMjU5VWRrb2hkSGdPdzNHc0JHRnktMG5tc29aTjAwN09OSUpSLU1KNTM3ZlllUFZJOHNrRkE?oc=5",
    "datum": "2026-11-16",
    "sprache": "en"
-  },
-  {
-   "titel": "ULA’s Vulcan Rocket Fails Midflight, Loses Amazon Satellites",
-   "quelle": "Bloomberg",
-   "link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxOTW0yRGhpTTVJMHZVdlM4NUc2WDJGWkljT0VmREZ6NTNDcENHYzJ0ZUpab01nTFZxMnlsaFB3OVVzQ3h6TVZCVUdVejZRdWxJWlRrWU1jNmpMSzNuN0w2UXNEdlA5Wk4yVEVxOFR4aUFBczQwZkNMWUdhR2ltaXlZXzhjN0xlbGNjekE4eDNMSllEUlRFcXh3dGVodUNaT3VSVUlUQ0Z5d1Y2RVlYXzR5VQ?oc=5",
-   "datum": "2026-11-15",
-   "sprache": "en"
-  },
-  {
-   "titel": "Future Ready 2030: Amazon Is Helping More People Build Skills for New Careers in AI, Robotics, and Beyond",
-   "quelle": "Unternehmen",
-   "link": "https://press.aboutamazon.com/2026/11/future-ready-2030-amazon-is-helping-more-people-build-skills-for-new-careers-in-ai-robotics-and-beyond",
-   "datum": "2026-11-12",
-   "sprache": "en",
-   "typ": "pm"
-  },
-  {
-   "titel": "Min Jin Lee’s Contemporary Epic American Hagwon Selected as Amazon’s Best Book of 2026",
-   "quelle": "Unternehmen",
-   "link": "https://press.aboutamazon.com/books-and-authors/2026/11/min-jin-lees-contemporary-epic-american-hagwon-selected-as-amazons-best-book-of-2026",
-   "datum": "2026-11-12",
-   "sprache": "en",
-   "typ": "pm"
-  },
-  {
-   "titel": "Amazon Housing Fund marks five years, $2.7 billion deployed to create or preserve more than 27,000 affordable homes",
-   "quelle": "Unternehmen",
-   "link": "https://press.aboutamazon.com/community/2026/11/amazon-housing-fund-marks-five-years-2-7-billion-deployed-to-create-or-preserve-more-than-27-000-affordable-homes",
-   "datum": "2026-11-12",
-   "sprache": "en",
-   "typ": "pm"
-  },
-  {
-   "titel": "New Whole Foods Market in Valrico, Florida, to Open December 16",
-   "quelle": "Unternehmen",
-   "link": "https://press.aboutamazon.com/2026/11/new-whole-foods-market-in-valrico-florida-to-open-december-16",
-   "datum": "2026-11-12",
-   "sprache": "en",
-   "typ": "pm"
   }
  ]
 }
