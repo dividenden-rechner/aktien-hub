@@ -208,7 +208,62 @@
     }
     return new Promise(function (res) { cv.toBlob(res, "image/png"); });
   }
+  /* Quartals-Story (S.quartal): oben links Logo, rechts daneben Gewinn und darunter Umsatz mit Veraenderung in Klammern,
+     darunter Bild oder Kennzahlen-Tabelle, optional Chart, unten rechts der CEO. Platz links unten fuer eigenen Text (Zwischenablage). */
+  async function drawQuartal(S) {
+    var W = 1080, H = 1920, cv = document.createElement("canvas"); cv.width = W; cv.height = H; var c = cv.getContext("2d");
+    c.imageSmoothingEnabled = true; c.imageSmoothingQuality = "high"; c.textBaseline = "top";
+    var F = 'InterS,Inter,"Segoe UI",Roboto,Helvetica,Arial,sans-serif', D = "#111", GRUEN = "#1a7f3c", ROT = "#c62828";
+    var tpl = await load(S.tpl), logo = await load(S.logo), q = S.quartal || {};
+    if (tpl) c.drawImage(tpl, 0, 0, W, H); else { c.fillStyle = "#fff"; c.fillRect(0, 0, W, H); c.fillStyle = "#99e6b1"; c.fillRect(0, 108, W, 86); c.fillRect(0, 1866, W, 54); }
+    /* Oben links: Logo auf weisser Karte mit feinem Rand (ohne schwarzen Rahmen) */
+    var sz = 200, lx = 60, ly = 230;
+    if (logo) {
+      c.fillStyle = "#fff"; c.strokeStyle = "#dfe5ec"; c.lineWidth = 2; rr(c, lx, ly, sz, sz, 24); c.fill(); c.stroke();
+      var lq = Math.min((sz - 36) / logo.width, (sz - 36) / logo.height);
+      c.drawImage(logo, lx + (sz - logo.width * lq) / 2, ly + (sz - logo.height * lq) / 2, logo.width * lq, logo.height * lq);
+    }
+    /* Rechts daneben: Gewinn, darunter Umsatz; Veraenderung in Klammern, gruen bei Plus, rot bei Minus */
+    var tx = 300;
+    [["Gewinn", q.gewinn], ["Umsatz", q.umsatz]].forEach(function (r, i) {
+      if (!r[1]) return;
+      var y = ly + 24 + i * 100, lab = r[0] + ": ", wert = String(r[1].wert || ""), pct = String(r[1].pct || "");
+      c.font = "400 50px " + F; c.fillStyle = D; c.fillText(lab, tx, y); var w1 = c.measureText(lab).width;
+      c.font = "700 50px " + F; c.fillText(wert, tx + w1, y); var w2 = c.measureText(wert + " ").width;
+      c.fillStyle = /^\s*[-\u2212\u2013]/.test(pct) ? ROT : GRUEN; c.fillText("(" + pct + ")", tx + w1 + w2, y);
+    });
+    /* Mitte: Bild (Folie, Screenshot) oder, wenn keins da ist, die Kennzahlen als Tabelle */
+    var top = 520, mh = q.chart ? 420 : 740;
+    var photo = S.img ? await load(S.img) : null;
+    if (photo) {
+      var r0 = Math.min(960 / photo.width, mh / photo.height), iw = photo.width * r0, ih = photo.height * r0;
+      c.drawImage(photo, 60 + (960 - iw) / 2, top + (mh - ih) / 2, iw, ih);
+    } else if (q.tabelle && q.tabelle.length) {
+      q.tabelle.forEach(function (row, n) {
+        var y = top + 10 + n * 128;
+        c.fillStyle = "#f3f6f8"; rr(c, 60, y, 960, 110, 16); c.fill();
+        c.fillStyle = D; c.font = "400 36px " + F; c.fillText(row[0], 92, y + 36);
+        c.font = "700 42px " + F; c.textAlign = "right"; c.fillText(row[1], 988, y + 34); c.textAlign = "left";
+      });
+    }
+    /* Optional: Chart unter dem Bild, bis knapp vor den unteren Bereich */
+    if (S.chart) {
+      var ch = await load(S.chart);
+      if (ch) { var cy = top + mh + 20, bot = 1240, r2 = Math.min(960 / ch.width, (bot - cy) / ch.height), cw = ch.width * r2, chh = ch.height * r2; c.drawImage(ch, 60 + (960 - cw) / 2, cy, cw, chh); }
+    }
+    /* Unten rechts: CEO, unten bündig auf der Balkenlinie; Name klein links neben der Person */
+    if (S.portrait) {
+      var pt = await load(S.portrait);
+      if (pt) {
+        var ph = 560, pw = pt.width * ph / pt.height, px = 1020 - pw, py = 1866 - ph;
+        c.drawImage(pt, px, py, pw, ph);
+        if (S.quote_by) { var nm = String(S.quote_by).split("|")[0]; c.font = "700 28px " + F; c.fillStyle = D; c.textAlign = "right"; c.fillText(nm, px - 16, 1866 - 60); c.textAlign = "left"; }
+      }
+    }
+    return new Promise(function (res) { cv.toBlob(res, "image/png"); });
+  }
   window.StoryRender = async function (S) {
+    if (S && S.quartal) { await fonts(); try { return await drawQuartal(S); } catch (e) { return null; } }
     await fonts(); var bl = null;
     try { bl = await draw(S, true); } catch (e) { bl = null; }
     if (!bl) { try { bl = await draw(S, false); } catch (e) {} }

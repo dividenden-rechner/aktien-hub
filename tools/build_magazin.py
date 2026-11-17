@@ -671,6 +671,14 @@ def share_html(p, url, img):
         story["text"] = re.sub(r" (%|USD|Mrd\.|Mio\.)", "\u00a0\\1", p["story_text"].strip().replace("\\n", "\n")); story["para"] = True; story["title"] = ""
         if not p.get("story_image"):
             story["img"] = ""
+    if p.get("story_quartal"):
+        # Quartals-Story: Logo links oben, Gewinn und Umsatz mit Veraenderung rechts daneben, Bild oder Tabelle in der Mitte,
+        # CEO unten rechts; der Text geht in die Zwischenablage (siehe assets/story.js, drawQuartal)
+        try:
+            story["quartal"] = json.loads(p["story_quartal"])
+            story["tpl"] = "../../assets/story-vorlagen/quartalsbericht.png"
+        except Exception:
+            pass
     if p.get("typ") == "kurz":
         # Kurzmeldung: kein Kasten mit Kennzahlen, daher der Einleitungstext als Story-Text; ohne eigenes Foto bleibt das Bildfeld weg
         story["text"] = kurz_story_text(p.get("body_md", ""))

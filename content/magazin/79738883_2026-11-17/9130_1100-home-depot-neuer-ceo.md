@@ -13,6 +13,8 @@ image: assets/magazin/home-depot-mcphail-ceo.jpg
 image_alt: "Richard McPhail lächelt im Gartenbereich einer Home-Depot-Filiale, im Hintergrund Zimmerpflanzen, er trägt die orangefarbene Schürze des Unternehmens"
 image_credit: "Foto: The Home Depot"
 image_lizenz: Pressebild
+story_quartal: {"gewinn":{"wert":"3,7 Mrd. $","pct":"+3,1 %"},"umsatz":{"wert":"43,4 Mrd. $","pct":"+4,9 %"},"tabelle":[["Vergleichbarer Umsatz","+2,2 %"],["Bereinigter Gewinn je Aktie","3,86 $ (+3,2 %)"],["Bereinigte Betriebsmarge","13,0 % (Vj. 13,3 %)"],["Prognose Umsatz 2026","+4,5 %"]]}
+story_text: "Home Depot bekommt einen neuen CEO: Richard McPhail übernimmt am 23. November, Ted Decker bleibt Chairman.\n\nDas Quartal war solide. Der vergleichbare Umsatz stieg um 2,2 %, der bereinigte Gewinn je Aktie um 3,2 %. Die Marge ist leicht gesunken.\n\nDas Jahresziel ist vorsichtig. Erwartet werden rund 4,5 % mehr Umsatz, der bereinigte Gewinn je Aktie soll um etwa 2 % wachsen."
 ---
 <!-- PRÜFEN: Foto aus der Pressemitteilung von The Home Depot über PR Newswire (17.11.2026). Pressebild als markierte Ausnahme. -->
 <!-- PRÜFEN: Kurs- und Bewertungsangaben fehlen bewusst; die Pressemitteilung nennt keine Kennzahlen zur Aktie. -->
