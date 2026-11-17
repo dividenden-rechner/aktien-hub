@@ -2,7 +2,7 @@
 
 Spalten der Liste: 153
 Instrumente nach Filter: 2347
-Zugeordnet: **561** von 545. Unsicher (zum Prüfen): 34. Ohne Treffer: 22.
+Zugeordnet: **606** von 601. Unsicher (zum Prüfen): 34. Ohne Treffer: 33.
 
 Korrekturen als {"TICKER": "ISIN"} in data/kurse/isin-fest.json eintragen.
 
@@ -48,20 +48,31 @@ Korrekturen als {"TICKER": "ISIN"} in data/kurse/isin-fest.json eintragen.
 - ACGL (ARCH CAPITAL GROUP LTD.): bester Kandidat READCREST CAPITAL AG O.N. DE000A0LE3J1 (0.72)
 - AMCR (Amcor plc): bester Kandidat FAMICORD AG DE000A0BL849 (0.80)
 - APTV (APTIV PLC): bester Kandidat AVIVA PLC          LS-,33 GB00BPQY8M80 (0.63)
+- ARTNA (ARTESIAN RESOURCES CORPORATION): bester Kandidat VULCAN ENERGY RESOURCES AU0000066086 (0.62)
 - BABA (Alibaba Group Holding Ltd): bester Kandidat CAIXABANK S.A. EO ES0140609019 (0.66)
+- BKH (Black Hills Corporation): bester Kandidat HORNBACH HOLD.ST O.N. DE0006083405 (0.55)
 - CCL (Carnival Corp Ltd.): bester Kandidat AVIVA PLC          LS-,33 GB00BPQY8M80 (0.65)
 - CRH (CRH PUBLIC LTD CO): bester Kandidat PUBLICIS GRP INH. EO 0,40 FR0000130577 (0.58)
+- CTBI (COMMUNITY TRUST BANCORP, INC.): bester Kandidat COMMERZBANK AG DE000CBK1001 (0.53)
+- DGICA (Donegal Group Inc.): bester Kandidat DANONE S.A. EO -,25 FR0000120644 (0.65)
 - EG (EVEREST GROUP, LTD.): bester Kandidat LEVERAGE SHARES SL ETP XS3299469752 (0.67)
 - EPD (ENTERPRISE PRODUCTS PARTNERS L.P.): bester Kandidat NXP SEMICONDUCTORS EO-,20 NL0009538784 (0.51)
 - ET (Energy Transfer LP): bester Kandidat ENERGEAN PLC      LS -,01 GB00BG12Y042 (0.64)
 - FLEX (FLEX LTD.): bester Kandidat VOLEX PLC         LS -,25 GB0009390070 (0.70)
 - IVZ (Invesco Ltd.): bester Kandidat IVECO GROUP N.V.  EO 1 NL0015000LU4 (0.86)
 - KVUE (Kenvue Inc.): bester Kandidat ENEL S.P.A.          EO 1 IT0003128367 (0.63)
+- LARK (LANDMARK BANCORP, INC.): bester Kandidat SCAND.TOBACCO GROUP DK 1 DK0060696300 (0.58)
 - LYB (LYONDELLBASELL INDUSTRIES N.V.): bester Kandidat LYONDELLBAS.IND.A EO -,04 NL0009434992 (0.78)
+- MSEX (MIDDLESEX WATER COMPANY): bester Kandidat HEIDELBERG MATERIALS O.N. DE0006047004 (0.54)
+- NC (NACCO INDUSTRIES, INC.): bester Kandidat MS INDUSTRIE AG DE0005855183 (0.74)
 - NCLH (NORWEGIAN CRUISE LINE HOLDINGS LTD.): bester Kandidat ORANGE INH.          EO 4 FR0000133308 (0.55)
+- NWFL (Norwood Financial Corp): bester Kandidat NORDEA BANK ABP FI4000297767 (0.53)
 - PNR (Pentair plc): bester Kandidat PNE AG  NA O.N. DE000A0JBPG2 (0.65)
+- RBCAA (REPUBLIC BANCORP, INC.): bester Kandidat REDEIA CORPO       EO-,50 ES0173093024 (0.60)
 - RCL (ROYAL CARIBBEAN CRUISES LTD): bester Kandidat ROYAL UNIBREW NAM.   DK 2 DK0060634707 (0.53)
+- RGCO (RGC Resources, Inc.): bester Kandidat VULCAN ENERGY RESOURCES AU0000066086 (0.70)
 - SLB (SLB LIMITED/NV): bester Kandidat SBO AG AT0000946652 (0.70)
+- SRCE (1st Source Corp): bester Kandidat FIRST SENSOR AG O.N. DE0007201907 (0.58)
 - STE (STERIS plc): bester Kandidat TENARIS S.A. DL 1 LU2598331598 (0.80)
 - STX (Seagate Technology Holdings plc): bester Kandidat SEAGATE TEC.HLD.DL-,00001 IE00BKVD2N49 (0.67)
 - TKO (TKO GROUP HOLDINGS, INC.): bester Kandidat KION GROUP AG DE000KGX8881 (0.60)
