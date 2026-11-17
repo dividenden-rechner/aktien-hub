@@ -23,6 +23,8 @@ jobs:
         with:
           python-version: "3.12"
       - run: python3 tools/sec_fundamentals.py
+        env:
+          SEC_UA: ${{ secrets.SEC_UA }}
       - name: Kennzahlen mit den neuen Jahreszahlen neu rechnen
         run: python3 tools/kennzahlen.py || echo "Kennzahlen übersprungen"
       - name: Ergebnis committen

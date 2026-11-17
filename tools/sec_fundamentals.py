@@ -6,10 +6,16 @@ Schreibt data/sec/fundamentals.json (kompakt, je Firma Zeitreihen) und data/sec-
 US-Behoerdendaten sind frei nutzbar; Kurse, FFO/AFFO und Nicht-US-Firmen kommen hier nicht vor."""
 import json, os, re, time, datetime, urllib.request
 
-UA = "dividenden-rechner.de Kilian Tress dividenden.rechner@gmail.com"
+# Die SEC verlangt einen Absender mit Kontakt. Er kommt aus dem GitHub-Secret SEC_UA, damit keine Adresse im öffentlichen Repo steht.
+UA = os.environ.get("SEC_UA", "").strip() or "dividenden-rechner.de Datenabruf"
 JAHRE = 10
 # Zusaetzliche US-Werte ausserhalb des S&P 500 (Ticker -> CIK leer = aus SEC-Tickerliste)
 ZUSATZ = {"VICI": None, "MAIN": None, "ARCC": None, "ADC": None, "STAG": None, "EPD": None, "ET": None}
+# Dividenden-Aristokraten ausserhalb des S&P 500 (ab 17.11.2026, fuer die Dividendenseiten /dividende/)
+ZUSATZ.update({t: None for t in (
+    "AWR NWN MZTI CWT HTO CBSH SCL FUL BKH NFG MSA UVV TNC MSEX RPM RLI UBSI MGEE CSL CTBI ORI DCI BRC UHT SRCE NC "
+    "WABC GGG SON TMP MGRC CBU SEIC WTRG ABM ATR BMI FELE UMBF CFR AROW WLY BANF NJR ARTNA LECO RGCO PII OZK YORW "
+    "MATW PB RBCAA NWFL LARK CASS DGICA").split()})
 # Feste Zuordnung, wo die SEC-Tickerliste auf eine falsche Gesellschaft zeigt
 CIK_FEST = {"XOM": 34088}
 
