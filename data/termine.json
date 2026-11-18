@@ -649,6 +649,15 @@
    "quelle": "https://www.sec.gov/Archives/edgar/data/746515/000119312526444872/expd-ex99_1.htm"
   },
   {
+   "sym": "PANW",
+   "name": "Palo Alto Networks",
+   "art": "ergebnis",
+   "datum": "2026-11-18",
+   "betrag": "",
+   "waehrung": "",
+   "quelle": "https://www.sec.gov/Archives/edgar/data/1327567/000132756726000030/ex991q127earningsrelease.htm"
+  },
+  {
    "sym": "BABA",
    "name": "Alibaba Group Holding Ltd",
    "art": "ergebnis",
@@ -1187,6 +1196,15 @@
    "betrag": "",
    "waehrung": "USD",
    "quelle": "https://www.sec.gov/Archives/edgar/data/1748790/000174879026000029/exhibit991q12026transition.htm"
+  },
+  {
+   "sym": "PGR",
+   "name": "Progressive Corporation",
+   "art": "ergebnis",
+   "datum": "2026-12-16",
+   "betrag": "",
+   "waehrung": "",
+   "quelle": "https://www.sec.gov/Archives/edgar/data/80661/000008066126000384/pgr202610ex99earningsrelea.htm"
   },
   {
    "sym": "OXY",

@@ -1751,6 +1751,46 @@
    "quelle": "https://www.sec.gov/Archives/edgar/data/1744489/000174448926000065/fy2026_q4xerxex991.htm"
   },
   {
+   "sym": "LOW",
+   "name": "Lowe's",
+   "datum": "2026-11-18",
+   "eps": 2.98,
+   "eps_basis": "berichtet",
+   "revenue": 22800000000.0,
+   "waehrung": "USD",
+   "quelle": "https://www.sec.gov/Archives/edgar/data/60667/000006066726000126/exhibit991-10302026.htm"
+  },
+  {
+   "sym": "P",
+   "name": "Everpure",
+   "datum": "2026-11-18",
+   "eps": 0.29,
+   "eps_basis": "berichtet",
+   "revenue": null,
+   "waehrung": "USD",
+   "quelle": "https://www.sec.gov/Archives/edgar/data/1474432/000147443226000110/everpure-ex991q3fy2027xpre.htm"
+  },
+  {
+   "sym": "PANW",
+   "name": "Palo Alto Networks",
+   "datum": "2026-11-18",
+   "eps": 1.05,
+   "eps_basis": "bereinigt",
+   "revenue": 3440000000.0,
+   "waehrung": "USD",
+   "quelle": "https://www.sec.gov/Archives/edgar/data/1327567/000132756726000030/ex991q127earningsrelease.htm"
+  },
+  {
+   "sym": "PGR",
+   "name": "Progressive Corporation",
+   "datum": "2026-11-18",
+   "eps": 1.43,
+   "eps_basis": "berichtet",
+   "revenue": null,
+   "waehrung": "USD",
+   "quelle": "https://www.sec.gov/Archives/edgar/data/80661/000008066126000384/pgr202610ex99earningsrelea.htm"
+  },
+  {
    "sym": "TGT",
    "name": "Target Corporation",
    "datum": "2026-11-18",
@@ -1759,6 +1799,16 @@
    "revenue": null,
    "waehrung": "USD",
    "quelle": "https://www.sec.gov/Archives/edgar/data/27419/000002741926000051/a2026q3ex-99.htm"
+  },
+  {
+   "sym": "VOD",
+   "name": "Vodafone Group Public Ltd Co",
+   "datum": "2026-11-18",
+   "eps": -20.75,
+   "eps_basis": "berichtet",
+   "revenue": null,
+   "waehrung": "EUR",
+   "quelle": "https://www.sec.gov/Archives/edgar/data/839923/000119312526466568/d98993d6k.htm"
   }
  ]
 }
