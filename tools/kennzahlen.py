@@ -4,7 +4,7 @@ import re
 SEC-Jahreszahlen + EZB-Referenzkurse. Schreibt data/kennzahlen.json.
 Alle Bewertungskennzahlen beziehen sich auf das letzte abgeschlossene Geschaeftsjahr (kein TTM).
 Der Kurs wird mit dem EZB-Referenzkurs des Handelstags in die Berichtswaehrung umgerechnet."""
-import json, re, urllib.request, xml.etree.ElementTree as ET
+import glob, json, os, re, urllib.request, xml.etree.ElementTree as ET
 
 EZB = "https://www.ecb.europa.eu/stats/eurofxref/eurofxref-hist-90d.xml"
 
@@ -173,6 +173,18 @@ def main():
             if t in BD and BD[t].get("gj") and f.get("gj") and int(str(BD[t]["gj"])[:4]) - int(str(f["gj"])[:4]) >= 2:
                 continue   # ESEF-Bericht zwei oder mehr Jahre aelter als die boerse.de-Reihe: die neuere nehmen
             if t not in alle and f.get("isin"):
+                alle[t] = f
+    except Exception:
+        pass
+    try:   # ganzes Europa-Universum (tools/esef_universum.py): eine Datei je Firma; feste ESEF-Liste und SEC gehen vor
+        for pf in sorted(glob.glob("data/esef/firma/*.json")):
+            t = os.path.basename(pf)[:-5]
+            if t.startswith("_") or t in alle:
+                continue
+            f = json.load(open(pf, encoding="utf-8"))
+            if t in BD and BD[t].get("gj") and f.get("gj") and int(str(BD[t]["gj"])[:4]) - int(str(f["gj"])[:4]) >= 2:
+                continue
+            if f.get("isin"):
                 alle[t] = f
     except Exception:
         pass

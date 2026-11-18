@@ -1,0 +1,34 @@
+name: ESEF-Jahreszahlen ganzes Europa-Universum
+on:
+  push:
+    branches: [main]
+    paths:
+      - "tools/esef_universum.py"
+      - ".github/workflows/esef-universum.yml"
+  schedule:
+    - cron: "23 1,9,15 * * *"   # dreimal am Tag je ~50 Minuten, bis alle Emittenten einmal geprüft sind; danach nur Nachprüfungen
+  workflow_dispatch:
+concurrency:
+  group: esef-universum
+  cancel-in-progress: false
+permissions:
+  contents: write
+jobs:
+  laden:
+    runs-on: ubuntu-latest
+    timeout-minutes: 58
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: python3 tools/esef_universum.py --max-minuten 48
+      - name: Ergebnis committen
+        if: always()
+        run: |
+          git config user.name "esef-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add data/esef/universum data/esef/firma data/esef-universum-abdeckung.md
+          if git diff --cached --quiet; then echo "Keine Änderungen"; exit 0; fi
+          git commit -q -m "ESEF-Jahreszahlen Europa-Universum aktualisiert"
+          ok=0; for i in 1 2 3; do git pull --rebase --autostash -X theirs -q && git push && ok=1 && break; sleep 5; done; [ "$ok" = 1 ] || { echo "Push fehlgeschlagen"; exit 1; }

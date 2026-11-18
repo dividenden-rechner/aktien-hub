@@ -350,6 +350,19 @@ function kzTabelle(K){
 }
 /* Herkunft der Jahreswerte für Beschriftungen */
 function quelleText(q,kurz){return q==="boerse.de"?"boerse.de (Jahresabschlüsse)":q==="ESEF"?(kurz?"ESEF-Jahresberichte":"ESEF-Jahresberichte (europäisches Einheitsformat)"):q&&/Geschäftsbericht/.test(q)?(kurz?"Geschäftsbericht":"Geschäftsberichte (PDF), maschinell übernommen, ungeprüft"):(kurz?"SEC":"Jahresberichte bei der SEC")}
+/* Ganzes Europa-Universum (data/esef/firma/<Kürzel>.json) und weitere Asien-Firmen (data/asien/firma/): erst beim Aufruf laden.
+   Bei boerse.de-Firmen geht ESEF vor, boerse.de füllt nur fehlende Jahre. */
+const FIRMA={};let FIDX=null;
+function firmaIndex(){const v=Math.floor(Date.now()/864e5),j=u=>fetch(u+"?v="+v).then(r=>r.ok?r.json():{}).catch(()=>({}));
+  return FIDX||(FIDX=Promise.all([j("../data/esef/firma/_index.json"),j("../data/asien/firma/_index.json")]).then(([e,a])=>({...a,...e})))}
+async function firmaNachladen(S,sym){if(!S||!S.firmen)return;const t=String(sym).toUpperCase(),o=S.firmen[t];
+  if(o&&!/^boerse\.de/.test(o.quelle||""))return;
+  if(!(t in FIRMA)){FIRMA[t]=null;const v=Math.floor(Date.now()/864e5);
+    for(const d of ["esef","asien"]){const r=await fetch(`../data/${d}/firma/${encodeURIComponent(t)}.json?v=${v}`).catch(()=>null);
+      if(r&&r.ok){FIRMA[t]=await r.json().catch(()=>null);if(FIRMA[t])break}}}
+  const f=FIRMA[t];if(!f)return;if(!o){S.firmen[t]=f;return}
+  const n={...f,k:{...f.k}};for(const k in o.k||{}){const have=new Set((n.k[k]||[]).map(([d])=>secJahr(d)));const add=o.k[k].filter(([d])=>!have.has(secJahr(d)));if(add.length)n.k[k]=(n.k[k]||[]).concat(add).sort((x,y)=>x[0]<y[0]?-1:1)}
+  S.firmen[t]=n}
 function secFirma(S,sym){if(!S||!S.firmen)return null;const k=String(sym).toUpperCase();return S.firmen[k]||S.firmen[k.replace(/\./g,"-")]||null}
 /* Geschäftsjahr wie bei FMP: endet es im Januar oder in der ersten Februarwoche, zählt es zum Vorjahr (Händler wie Home Depot) */
 function secJahr(end){const d=new Date(end),m=d.getUTCMonth();return String(d.getUTCFullYear()-((m===0||(m===1&&d.getUTCDate()<=7))?1:0))}
@@ -402,7 +415,7 @@ $("q").addEventListener("input",()=>{clearTimeout(timer);const t=$("q").value.tr
 $("q").addEventListener("keydown",e=>{if(e.key==="Enter"){const b=$("sug").querySelector(".it");if(b)b.click()}if(e.key==="Escape")$("sug").hidden=true});
 async function search(t){
   const my=++seq;
-  const [a,b,S,KZS]=await Promise.allSettled([api("search-name",{query:t,limit:8}),api("search-symbol",{query:t,limit:5}),secLoad(),kzLoad()]);
+  const [a,b,S,KZS,FI]=await Promise.allSettled([api("search-name",{query:t,limit:8}),api("search-symbol",{query:t,limit:5}),secLoad(),kzLoad(),firmaIndex()]);
   if(my!==seq)return;
   const seen=new Set(),list=[];
   /* Eigene Liste (SEC-Firmen) zuerst: Treffer über Kürzel oder Namen */
@@ -410,6 +423,8 @@ async function search(t){
   if(S.status==="fulfilled"&&S.value&&qq){Object.entries(S.value.firmen).filter(([k,f])=>k.startsWith(qq)||String(f.n).toUpperCase().includes(qq)).sort((x,y)=>(y[0]===qq)-(x[0]===qq)||x[0].length-y[0].length).slice(0,8).forEach(([k,f])=>{seen.add(k);list.push({symbol:k,name:f.n,exchange:quelleText(f.quelle,true)})})}
   /* Kennzahlen-Liste (alle Hub-Firmen): Treffer über Kürzel oder Namen */
   if(KZS.status==="fulfilled"&&KZS.value&&KZS.value.werte&&qq){Object.entries(KZS.value.werte).filter(([k,v])=>k.toUpperCase().startsWith(qq)||String(v.name||"").toUpperCase().includes(qq)).sort((x,y)=>(y[0].toUpperCase()===qq)-(x[0].toUpperCase()===qq)||x[0].length-y[0].length).slice(0,8).forEach(([k,v])=>{if(!seen.has(k)){seen.add(k);list.push({symbol:k,name:v.name||k,exchange:v.boerse||""})}})}
+  /* Firmen aus dem ganzen Europa-Universum (ESEF) ohne Kurs in der Kennzahlen-Liste */
+  if(FI.status==="fulfilled"&&FI.value&&qq){Object.entries(FI.value).filter(([k,v])=>k.startsWith(qq)||String(v[0]).toUpperCase().includes(qq)||v[1]===qq).sort((x,y)=>(y[0]===qq)-(x[0]===qq)||x[0].length-y[0].length).slice(0,8).forEach(([k,v])=>{if(!seen.has(k)){seen.add(k);list.push({symbol:k,name:v[0],exchange:"ESEF-Bericht"})}})}
   [a,b].forEach(r=>{if(r.status==="fulfilled"&&Array.isArray(r.value))r.value.forEach(x=>{if(!seen.has(x.symbol)){seen.add(x.symbol);list.push(x)}})});
   const sug=$("sug");
   sug.innerHTML=list.length?list.slice(0,10).map(x=>`<div class="sr"><button class="it" data-s="${esc(x.symbol)}">${img(x.symbol)}<span>${esc(x.name)}</span><small>${esc(x.symbol)} · ${esc(x.exchange||"")}</small></button><button class="wlp" data-wl="${esc(x.symbol)}" data-n="${esc(x.name)}" aria-label="Watchlist umschalten"></button></div>`).join(""):`<div class="it">Keine Treffer</div>`;
@@ -635,6 +650,7 @@ async function openStock(sym){
   const msg=$("msg"),hub=$("hub");
   msg.className="";msg.textContent=`Lade ${sym} …`;
   const [S_,KZ_]=await Promise.all([secLoad(),kzLoad()]);
+  await firmaNachladen(S_,sym);
   const SF=secFirma(S_,sym),SD=SF?secDaten(SF):null,KZ=KZ_&&KZ_.werte?(KZ_.werte[String(sym).toUpperCase()]||KZ_.werte[String(sym).toUpperCase().replace(/\./g,"-")]||null):null;
   try{await api("profile",{symbol:sym})}catch(e){if(/HTTP 40[23]/.test(e.message)&&!SD){msg.className="err";msg.textContent=`Für ${sym} liegen noch keine Daten vor. Probiere z. B. KO, PEP oder JNJ.`;return}}
   const from=new Date(Date.now()-5*365*864e5).toISOString().slice(0,10);
