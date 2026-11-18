@@ -1,0 +1,159 @@
+{
+  "symbol": "0142.HK",
+  "company": "First Pacific Company Limited",
+  "source_url": "https://www.firstpacific.com/wp-content/uploads/2026/04/ew0142.pdf",
+  "pdf_sha256": "4dca002f1a256863e5343968f47d6f669dfcdf7930509a445f6aad0585822fe0",
+  "source_report_year": 2025,
+  "currency": "USD",
+  "unit": "million",
+  "printed_page_rule": {
+    "offset": -2
+  },
+  "tables": [
+    {
+      "id": "ten_year_a",
+      "page": 4,
+      "years": [
+        2025,
+        2024,
+        2023,
+        2022,
+        2021,
+        2020,
+        2019,
+        2018,
+        2017,
+        2016
+      ],
+      "header_regex": "2025 2024 2023 2022 2021 2020 2019 2018 2017 2016",
+      "presentation_notes": {
+        "2017": "Turnover/gross margin restated for GBPC discontinued operation",
+        "2018": "Turnover/gross margin restated for GBPC discontinued operation",
+        "2019": "Turnover/gross margin restated for GBPC discontinued operation"
+      }
+    },
+    {
+      "id": "ten_year_b",
+      "page": 5,
+      "years": [
+        2025,
+        2024,
+        2023,
+        2022,
+        2021,
+        2020,
+        2019,
+        2018,
+        2017,
+        2016
+      ],
+      "header_regex": "2025 2024 2023 2022 2021 2020 2019 2018 2017 2016"
+    }
+  ],
+  "fields": [
+    {
+      "field": "revenue",
+      "table": "ten_year_a",
+      "label": "^Turnover$"
+    },
+    {
+      "field": "net_profit",
+      "table": "ten_year_a",
+      "label": "^Profit for the year$"
+    },
+    {
+      "field": "net_income_attributable",
+      "table": "ten_year_a",
+      "label": "attributable to owners of the parent$",
+      "occurrence": 1
+    },
+    {
+      "field": "recurring_profit",
+      "table": "ten_year_a",
+      "label": "^Recurring profit$",
+      "definition": "Issuer non-GAAP recurring profit"
+    },
+    {
+      "field": "ordinary_share_distributions",
+      "table": "ten_year_a",
+      "label": "^Ordinary share distributions$"
+    },
+    {
+      "field": "eps_basic",
+      "table": "ten_year_a",
+      "label": "^Basic earnings/\\(loss\\)$",
+      "unit": "cents"
+    },
+    {
+      "field": "distributions_per_share_incl_special",
+      "table": "ten_year_a",
+      "label": "^Distributions$",
+      "unit": "cents",
+      "definition": "U.S. cents per share; 2025 includes special distribution (0.15 cent)"
+    },
+    {
+      "field": "total_assets",
+      "table": "ten_year_b",
+      "label": "^Total assets$"
+    },
+    {
+      "field": "total_liabilities",
+      "table": "ten_year_b",
+      "label": "^Total liabilities$"
+    },
+    {
+      "field": "total_equity",
+      "table": "ten_year_b",
+      "label": "^Total equity$"
+    },
+    {
+      "field": "equity_attributable",
+      "table": "ten_year_b",
+      "label": "^Equity attributable to owners of the parent$"
+    },
+    {
+      "field": "net_debt",
+      "table": "ten_year_b",
+      "label": "^Net debt$"
+    },
+    {
+      "field": "operating_cash_flow",
+      "table": "ten_year_b",
+      "label": "^Net cash flows from operating activities$"
+    },
+    {
+      "field": "capex_issuer_defined",
+      "table": "ten_year_b",
+      "label": "^Capital expenditure$",
+      "definition": "Issuer-defined capital expenditure (incl. concession assets)"
+    }
+  ],
+  "checks": [
+    {
+      "name": "balance_sheet_identity",
+      "left": [
+        "total_assets"
+      ],
+      "right": [
+        "total_liabilities",
+        "total_equity"
+      ],
+      "tolerance": "0.1"
+    }
+  ],
+  "cross_check_latest": {
+    "revenue": "revenue",
+    "net_profit": "net_profit",
+    "net_income_attributable": "net_income_attributable",
+    "total_assets": "total_assets",
+    "total_liabilities": "total_liabilities",
+    "total_equity": "total_equity",
+    "equity_attributable": "equity_attributable",
+    "operating_cash_flow": "operating_cash_flow",
+    "eps_basic": "eps_basic"
+  },
+  "caveats": [
+    "Column order in the source is descending (2025 ... 2016).",
+    "2017-2019 turnover restated (GBPC discontinued operation)."
+  ]
+}

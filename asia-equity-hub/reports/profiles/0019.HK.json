@@ -1,0 +1,352 @@
+{
+  "symbol": "0019.HK",
+  "company": "Swire Pacific Limited",
+  "fiscal_year": 2025,
+  "period_end": "2025-12-31",
+  "accounting_standard": "HKFRS Accounting Standards (HKICPA)",
+  "currency": "HKD",
+  "unit": "million",
+  "source_url": "https://www1.hkexnews.hk/listedco/listconews/sehk/2026/0408/2026040800985.pdf",
+  "source_type": "HKEXnews official filing",
+  "printed_page_rule": {
+    "offset": -2
+  },
+  "statements": {
+    "income": {
+      "header_regex": "2025 HK\\$M 2024 HK\\$M"
+    },
+    "balance": {
+      "header_regex": "31st December 2025 HK\\$M 31st December 2024 HK\\$M"
+    },
+    "cash_flow": {
+      "header_regex": "2025 HK\\$M 2024 HK\\$M"
+    }
+  },
+  "caveats": [
+    "Two share classes ('A' and 'B'); per-share figures refer to 'A' shares (0019.HK). 'B' shares (0087.HK) receive 1/5.",
+    "Cash flow closing cash (HK$20,966m) differs from balance-sheet bank balances (HK$23,172m) because deposits > 3 months are excluded.",
+    "Large non-cash investment-property revaluation losses depress IFRS profit; issuer also reports underlying profit."
+  ],
+  "pdf_sha256": "2f4b1b4435e04184d4b5940f21b96c2ce34c91af9eb95eeb4d825a31313a60a2",
+  "pdf_page_count": 260,
+  "manual_review": {
+    "human_review": "pending",
+    "assistant_visual_check": {
+      "date": "2026-11-18",
+      "by": "AI assistant (Claude), not a human reviewer",
+      "method": "statement pages rendered with pdftoppm and read visually; every extracted value on these pages compared with the rendered table",
+      "pdf_pages": [
+        149
+      ],
+      "result": "all values on the listed pages match the rendered original, incl. column (fiscal year 2025) and sign"
+    },
+    "note": "Set human_review to \"approved\" with name/date only after a person has checked the cited pages."
+  },
+  "fields": [
+    {
+      "field": "revenue",
+      "page": 147,
+      "label": "^Revenue$",
+      "columns": 2,
+      "column": 0,
+      "statement": "income"
+    },
+    {
+      "field": "operating_profit",
+      "page": 147,
+      "label": "^Operating profit$",
+      "columns": 2,
+      "column": 0,
+      "statement": "income",
+      "definition": "Operating profit incl. investment-property fair-value changes"
+    },
+    {
+      "field": "profit_before_tax",
+      "page": 147,
+      "label": "^Profit before taxation$",
+      "columns": 2,
+      "column": 0,
+      "statement": "income"
+    },
+    {
+      "field": "net_profit",
+      "page": 147,
+      "label": "^Profit for the year$",
+      "columns": 2,
+      "column": 0,
+      "statement": "income"
+    },
+    {
+      "field": "net_income_attributable",
+      "page": 147,
+      "label": "^The Company.s shareholders$",
+      "columns": 2,
+      "column": 0,
+      "statement": "income"
+    },
+    {
+      "field": "nci_profit",
+      "page": 147,
+      "label": "^Non-controlling interests$",
+      "columns": 2,
+      "column": 0,
+      "statement": "income"
+    },
+    {
+      "field": "underlying_profit_attributable",
+      "page": 147,
+      "label": "^Underlying profit attributable to the Company.s shareholders$",
+      "columns": 2,
+      "column": 0,
+      "statement": "income",
+      "definition": "Issuer non-GAAP measure (excludes investment-property revaluation etc.)"
+    },
+    {
+      "field": "eps_basic",
+      "page": 147,
+      "label": "^.A. share – basic$",
+      "columns": 2,
+      "column": 0,
+      "statement": "income",
+      "unit": "units",
+      "definition": "Basic EPS per 'A' share"
+    },
+    {
+      "field": "non_current_assets",
+      "page": 149,
+      "label": "^$",
+      "columns": 2,
+      "column": 0,
+      "statement": "balance",
+      "after": "Retirement benefit assets"
+    },
+    {
+      "field": "current_assets",
+      "page": 149,
+      "label": "^$",
+      "columns": 2,
+      "column": 0,
+      "statement": "balance",
+      "after": "Assets classified as held for sale"
+    },
+    {
+      "field": "cash",
+      "page": 149,
+      "label": "^Bank balances and short-term deposits$",
+      "columns": 2,
+      "column": 0,
+      "statement": "balance",
+      "definition": "Bank balances and short-term deposits"
+    },
+    {
+      "field": "current_liabilities",
+      "page": 149,
+      "label": "^$",
+      "columns": 2,
+      "column": 0,
+      "statement": "balance",
+      "after": "Liabilities associated with assets classified as held for sale"
+    },
+    {
+      "field": "non_current_liabilities",
+      "page": 149,
+      "label": "^$",
+      "columns": 2,
+      "column": 0,
+      "statement": "balance",
+      "after": "Retirement benefit liabilities"
+    },
+    {
+      "field": "net_assets",
+      "page": 149,
+      "label": "^NET ASSETS$",
+      "columns": 2,
+      "column": 0,
+      "statement": "balance"
+    },
+    {
+      "field": "equity_attributable",
+      "page": 149,
+      "label": "^Equity attributable to the Company.s shareholders$",
+      "columns": 2,
+      "column": 0,
+      "statement": "balance"
+    },
+    {
+      "field": "total_equity",
+      "page": 149,
+      "label": "^TOTAL EQUITY$",
+      "columns": 2,
+      "column": 0,
+      "statement": "balance"
+    },
+    {
+      "field": "operating_cash_flow",
+      "page": 150,
+      "label": "^Net cash generated from operating activities$",
+      "columns": 2,
+      "column": 0,
+      "statement": "cash_flow"
+    },
+    {
+      "field": "capex",
+      "page": 150,
+      "label": "^Purchase of property, plant and equipment and right-of-use assets$",
+      "columns": 2,
+      "column": 0,
+      "statement": "cash_flow",
+      "sign": "abs",
+      "definition": "Purchase of PPE and right-of-use assets (excludes investment-property additions)"
+    },
+    {
+      "field": "dividends_paid_to_shareholders",
+      "page": 150,
+      "label": "^Dividends paid to the Company.s shareholders$",
+      "columns": 2,
+      "column": 0,
+      "statement": "cash_flow",
+      "sign": "abs"
+    },
+    {
+      "field": "cash_end_cf",
+      "page": 150,
+      "label": "^Cash and cash equivalents at 31st December$",
+      "columns": 2,
+      "column": 0,
+      "statement": "cash_flow"
+    },
+    {
+      "field": "total_borrowings",
+      "page": 92,
+      "label": "^Total borrowings$",
+      "columns": 2,
+      "column": 0,
+      "header_regex": "2025 HK\\$M 2024 HK\\$M Total borrowings"
+    },
+    {
+      "field": "net_debt",
+      "page": 92,
+      "label": "^Net debt$",
+      "columns": 2,
+      "column": 0,
+      "header_regex": "2025 HK\\$M 2024 HK\\$M Total borrowings",
+      "definition": "Issuer-defined: total borrowings less bank balances and short-term deposits"
+    },
+    {
+      "field": "dividend_first_interim_a",
+      "page": 170,
+      "pattern": "First interim dividend paid on 10th October 2025 of HK\\$([\\d.]+) per .A. share",
+      "unit": "units"
+    },
+    {
+      "field": "dividend_second_interim_a",
+      "page": 170,
+      "pattern": "Second interim dividend declared on 12th March 2026 of HK\\$([\\d.]+) per .A. share",
+      "unit": "units"
+    },
+    {
+      "field": "dividend_per_share_ten_year",
+      "page": 242,
+      "label": "^Dividends per share$",
+      "columns": 10,
+      "column": 9,
+      "occurrence": 1,
+      "unit": "units",
+      "header_regex": "2024 HK\\$M 2025 HK\\$M",
+      "definition": "Ten-year summary, 'A' share row, 2025 column"
+    }
+  ],
+  "derived": [
+    {
+      "field": "total_assets",
+      "sum": [
+        "non_current_assets",
+        "current_assets"
+      ],
+      "statement": "balance",
+      "definition": "Non-current + current assets"
+    },
+    {
+      "field": "total_liabilities",
+      "sum": [
+        "current_liabilities",
+        "non_current_liabilities"
+      ],
+      "statement": "balance",
+      "definition": "Current + non-current liabilities"
+    },
+    {
+      "field": "dividend_per_share",
+      "sum": [
+        "dividend_first_interim_a",
+        "dividend_second_interim_a"
+      ],
+      "unit": "units",
+      "definition": "Full-year dividend per 'A' share (first interim paid + second interim declared)"
+    },
+    {
+      "field": "free_cash_flow",
+      "sum": [
+        "operating_cash_flow",
+        "-capex"
+      ],
+      "definition": "Operating cash flow minus capex as defined in this profile (simple FCF, not issuer-defined)",
+      "statement": "cash_flow"
+    }
+  ],
+  "checks": [
+    {
+      "name": "balance_sheet_identity",
+      "left": [
+        "total_assets"
+      ],
+      "right": [
+        "total_liabilities",
+        "total_equity"
+      ],
+      "tolerance": "1"
+    },
+    {
+      "name": "profit_split",
+      "left": [
+        "net_profit"
+      ],
+      "right": [
+        "net_income_attributable",
+        "nci_profit"
+      ],
+      "tolerance": "1"
+    },
+    {
+      "name": "net_assets_equals_total_equity",
+      "left": [
+        "net_assets"
+      ],
+      "right": [
+        "total_equity"
+      ],
+      "tolerance": "0"
+    },
+    {
+      "name": "net_debt_definition",
+      "left": [
+        "net_debt"
+      ],
+      "right": [
+        "total_borrowings",
+        "-cash"
+      ],
+      "tolerance": "0"
+    },
+    {
+      "name": "dps_matches_ten_year_summary",
+      "left": [
+        "dividend_per_share"
+      ],
+      "right": [
+        "dividend_per_share_ten_year"
+      ],
+      "tolerance": "0.0005"
+    }
+  ]
+}

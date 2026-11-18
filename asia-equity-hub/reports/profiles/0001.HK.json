@@ -1,0 +1,316 @@
+{
+  "symbol": "0001.HK",
+  "company": "CK Hutchison Holdings Limited",
+  "fiscal_year": 2025,
+  "period_end": "2025-12-31",
+  "accounting_standard": "IFRS Accounting Standards (first-time adoption in 2025, see note 2 / note 48)",
+  "currency": "HKD",
+  "unit": "million",
+  "source_url": "https://doc.irasia.com/listco/hk/ckh/annual/2025/ar2025.pdf",
+  "source_type": "issuer annual report hosted by irasia (CKH IR distributor)",
+  "printed_page_rule": {
+    "offset": -2
+  },
+  "statements": {
+    "income": {
+      "header_regex": "2025 # 2025 2024 2023",
+      "title": "Consolidated Income Statement"
+    },
+    "balance": {
+      "header_regex": "31 December 2025 31 December 2024",
+      "title": "Consolidated Statement of Financial Position"
+    },
+    "cash_flow": {
+      "header_regex": "2025 # 2025 2024 2023",
+      "title": "Consolidated Statement of Cash Flows"
+    }
+  },
+  "caveats": [
+    "A US$ convenience-translation column precedes the HK$ columns; it is ignored.",
+    "Financial-highlights \"total revenue\" (HK$507,297m) is on a proportionate basis incl. associates/JVs and is NOT comparable with IFRS revenue (HK$280,036m)."
+  ],
+  "pdf_sha256": "e5fe1da8c7c39d04586814fa3e6b9ec13c4db2c79034a93a89d7dd533fa42440",
+  "pdf_page_count": 352,
+  "manual_review": {
+    "human_review": "pending",
+    "assistant_visual_check": {
+      "date": "2026-11-18",
+      "by": "AI assistant (Claude), not a human reviewer",
+      "method": "statement pages rendered with pdftoppm and read visually; every extracted value on these pages compared with the rendered table",
+      "pdf_pages": [
+        134
+      ],
+      "result": "all values on the listed pages match the rendered original, incl. column (fiscal year 2025) and sign"
+    },
+    "note": "Set human_review to \"approved\" with name/date only after a person has checked the cited pages."
+  },
+  "fields": [
+    {
+      "field": "revenue",
+      "page": 134,
+      "label": "^Revenue$",
+      "columns": 3,
+      "column": 0,
+      "statement": "income",
+      "definition": "Revenue (IFRS consolidated; excludes share of associates/JVs)"
+    },
+    {
+      "field": "profit_before_tax",
+      "page": 134,
+      "label": "^Profit before tax$",
+      "columns": 3,
+      "column": 0,
+      "statement": "income"
+    },
+    {
+      "field": "net_profit",
+      "page": 134,
+      "label": "^Profit after tax$",
+      "columns": 3,
+      "column": 0,
+      "statement": "income",
+      "definition": "Profit after tax incl. non-controlling interests"
+    },
+    {
+      "field": "nci_profit",
+      "page": 134,
+      "label": "^Profit attributable to non-controlling interests and holders of perpetual capital securities$",
+      "columns": 3,
+      "column": 0,
+      "statement": "income",
+      "sign": "abs"
+    },
+    {
+      "field": "net_income_attributable",
+      "page": 134,
+      "label": "^Profit attributable to ordinary shareholders$",
+      "columns": 3,
+      "column": 0,
+      "statement": "income"
+    },
+    {
+      "field": "eps_basic",
+      "page": 134,
+      "label": "^Earnings per share for profit attributable to ordinary shareholders$",
+      "columns": 3,
+      "column": 0,
+      "statement": "income",
+      "unit": "units"
+    },
+    {
+      "field": "non_current_assets",
+      "page": 136,
+      "label": "^$",
+      "columns": 4,
+      "column": 0,
+      "statement": "balance",
+      "after": "Other non-current assets"
+    },
+    {
+      "field": "current_assets",
+      "page": 136,
+      "label": "^$",
+      "columns": 4,
+      "column": 0,
+      "statement": "balance",
+      "after": "^\\s*[\\d,]*\\s*– Assets classified as held for sale"
+    },
+    {
+      "field": "cash",
+      "page": 136,
+      "label": "^Cash and cash equivalents$",
+      "columns": 4,
+      "column": 0,
+      "statement": "balance"
+    },
+    {
+      "field": "current_liabilities",
+      "page": 136,
+      "label": "^$",
+      "columns": 4,
+      "column": 0,
+      "statement": "balance",
+      "after": "as held for sale – – – 1,127"
+    },
+    {
+      "field": "non_current_liabilities",
+      "page": 136,
+      "label": "^$",
+      "columns": 4,
+      "column": 0,
+      "statement": "balance",
+      "after": "Other non-current liabilities"
+    },
+    {
+      "field": "net_assets",
+      "page": 136,
+      "label": "^Net assets$",
+      "columns": 4,
+      "column": 0,
+      "statement": "balance"
+    },
+    {
+      "field": "equity_attributable",
+      "page": 137,
+      "label": "^Total ordinary shareholders. funds$",
+      "columns": 4,
+      "column": 0,
+      "statement": "balance"
+    },
+    {
+      "field": "total_equity",
+      "page": 137,
+      "label": "^Total equity$",
+      "columns": 4,
+      "column": 0,
+      "statement": "balance"
+    },
+    {
+      "field": "operating_cash_flow",
+      "page": 141,
+      "label": "^Net cash from operating activities$",
+      "columns": 3,
+      "column": 0,
+      "statement": "cash_flow"
+    },
+    {
+      "field": "capex",
+      "page": 141,
+      "label": "^Purchase of fixed assets$",
+      "columns": 3,
+      "column": 0,
+      "statement": "cash_flow",
+      "sign": "abs",
+      "definition": "Purchase of fixed assets (excludes licences, brand names)"
+    },
+    {
+      "field": "dividends_paid_to_shareholders",
+      "page": 141,
+      "label": "^Dividends paid to ordinary shareholders$",
+      "columns": 3,
+      "column": 0,
+      "statement": "cash_flow",
+      "sign": "abs"
+    },
+    {
+      "field": "cash_end_cf",
+      "page": 141,
+      "label": "^Cash and cash equivalents at 31 December$",
+      "columns": 3,
+      "column": 0,
+      "statement": "cash_flow"
+    },
+    {
+      "field": "net_debt",
+      "page": 142,
+      "label": "^Net debt$",
+      "columns": 3,
+      "column": 0,
+      "statement": "cash_flow",
+      "definition": "Issuer-defined net debt incl. loans from NCI shareholders"
+    },
+    {
+      "field": "dividend_per_share",
+      "page": 17,
+      "pattern": "Full year dividend per share ([\\d.]+) ",
+      "unit": "units",
+      "definition": "Full-year ordinary dividend per share (interim paid + final proposed)"
+    },
+    {
+      "field": "dividend_interim_per_share",
+      "page": 207,
+      "pattern": "Interim dividend, paid of HK\\$([\\d.]+) per share",
+      "unit": "units"
+    },
+    {
+      "field": "dividend_final_per_share",
+      "page": 207,
+      "pattern": "Final dividend, proposed of HK\\$([\\d.]+) per share",
+      "unit": "units"
+    }
+  ],
+  "derived": [
+    {
+      "field": "total_assets",
+      "sum": [
+        "non_current_assets",
+        "current_assets"
+      ],
+      "statement": "balance",
+      "definition": "Non-current + current assets (no printed total line)"
+    },
+    {
+      "field": "total_liabilities",
+      "sum": [
+        "current_liabilities",
+        "non_current_liabilities"
+      ],
+      "statement": "balance",
+      "definition": "Current + non-current liabilities (no printed total line)"
+    },
+    {
+      "field": "free_cash_flow",
+      "sum": [
+        "operating_cash_flow",
+        "-capex"
+      ],
+      "definition": "Operating cash flow minus capex as defined in this profile (simple FCF, not issuer-defined)",
+      "statement": "cash_flow"
+    }
+  ],
+  "checks": [
+    {
+      "name": "balance_sheet_identity",
+      "left": [
+        "total_assets"
+      ],
+      "right": [
+        "total_liabilities",
+        "total_equity"
+      ],
+      "tolerance": "1"
+    },
+    {
+      "name": "profit_split",
+      "left": [
+        "net_profit"
+      ],
+      "right": [
+        "net_income_attributable",
+        "nci_profit"
+      ],
+      "tolerance": "1"
+    },
+    {
+      "name": "net_assets_equals_total_equity",
+      "left": [
+        "net_assets"
+      ],
+      "right": [
+        "total_equity"
+      ],
+      "tolerance": "0"
+    },
+    {
+      "name": "cash_flow_closing_cash_equals_balance_sheet",
+      "left": [
+        "cash_end_cf"
+      ],
+      "right": [
+        "cash"
+      ],
+      "tolerance": "0"
+    },
+    {
+      "name": "dps_interim_plus_final",
+      "left": [
+        "dividend_per_share"
+      ],
+      "right": [
+        "dividend_interim_per_share",
+        "dividend_final_per_share"
+      ],
+      "tolerance": "0.0005"
+    }
+  ]
+}

@@ -1,0 +1,318 @@
+{
+  "symbol": "002594.SZ",
+  "company": "BYD Company Limited (比亚迪股份有限公司)",
+  "fiscal_year": 2025,
+  "period_end": "2025-12-31",
+  "accounting_standard": "PRC Accounting Standards for Business Enterprises (企业会计准则)",
+  "currency": "CNY",
+  "unit": "thousand",
+  "source_url": "https://disc.static.szse.cn/download/disc/disk03/finalpage/2026-03-28/f5cdbdbf-b138-4e83-8c6d-5a7eecb9e670.PDF",
+  "source_type": "Shenzhen Stock Exchange disclosure (A-share full annual report, Chinese)",
+  "printed_page_rule": {
+    "offset": 0
+  },
+  "statements": {
+    "income": {
+      "header_regex": "附注七 2025 年 2024 年"
+    },
+    "balance": {
+      "header_regex": "2025 年 12 月31 日 2024 年 12 月31 日"
+    },
+    "cash_flow": {
+      "header_regex": "附注七 2025 年 2024 年"
+    }
+  },
+  "ratios_not_meaningful": [
+    "cash_dividend_cover"
+  ],
+  "caveats": [
+    "Amounts in RMB thousand (千元), as stated on page 123 (财务附注中报表的单位为：千元).",
+    "2024 comparatives in the income statement are restated (经重述); 2024 EPS adjusted for the 2025 bonus issue (8 bonus shares + 12 capitalisation shares per 10).",
+    "Cash-flow line for dividends also contains interest payments; no cash dividend cover is computed.",
+    "Dividend per share is a board proposal pending AGM approval."
+  ],
+  "pdf_sha256": "710d8b2e08e37ba521f1c4071d2c3e2369d3cadabc21a45073215d9f72138b0b",
+  "pdf_page_count": 268,
+  "manual_review": {
+    "human_review": "pending",
+    "assistant_visual_check": {
+      "date": "2026-11-18",
+      "by": "AI assistant (Claude), not a human reviewer",
+      "method": "statement pages rendered with pdftoppm and read visually; every extracted value on these pages compared with the rendered table",
+      "pdf_pages": [
+        126
+      ],
+      "result": "all values on the listed pages match the rendered original, incl. column (fiscal year 2025) and sign"
+    },
+    "note": "Set human_review to \"approved\" with name/date only after a person has checked the cited pages."
+  },
+  "fields": [
+    {
+      "field": "revenue",
+      "page": 126,
+      "label": "营业收入$",
+      "columns": 2,
+      "column": 0,
+      "statement": "income",
+      "definition": "营业收入 (operating revenue)"
+    },
+    {
+      "field": "operating_profit",
+      "page": 126,
+      "label": "营业利润$",
+      "columns": 2,
+      "column": 0,
+      "statement": "income",
+      "definition": "营业利润 (PRC GAAP operating profit)"
+    },
+    {
+      "field": "profit_before_tax",
+      "page": 126,
+      "label": "利润总额$",
+      "columns": 2,
+      "column": 0,
+      "statement": "income"
+    },
+    {
+      "field": "net_profit",
+      "page": 126,
+      "label": "^四、\\s*净利润$",
+      "columns": 2,
+      "column": 0,
+      "statement": "income"
+    },
+    {
+      "field": "net_income_attributable",
+      "page": 126,
+      "label": "归属于母公司所有者的净利润$",
+      "columns": 2,
+      "column": 0,
+      "statement": "income"
+    },
+    {
+      "field": "nci_profit",
+      "page": 126,
+      "label": "少数股东损益$",
+      "columns": 2,
+      "column": 0,
+      "statement": "income"
+    },
+    {
+      "field": "eps_basic",
+      "page": 126,
+      "label": "基本每股收益$",
+      "columns": 2,
+      "column": 0,
+      "statement": "income",
+      "unit": "units",
+      "definition": "Basic EPS, RMB per share (2024 restated for bonus issue)"
+    },
+    {
+      "field": "cash",
+      "page": 123,
+      "label": "^货币资金$",
+      "columns": 2,
+      "column": 0,
+      "statement": "balance",
+      "definition": "货币资金 (monetary funds, incl. restricted)"
+    },
+    {
+      "field": "current_assets",
+      "page": 123,
+      "label": "^流动资产合计$",
+      "columns": 2,
+      "column": 0,
+      "statement": "balance"
+    },
+    {
+      "field": "non_current_assets",
+      "page": 123,
+      "label": "^非流动资产合计$",
+      "columns": 2,
+      "column": 0,
+      "statement": "balance"
+    },
+    {
+      "field": "total_assets",
+      "page": 123,
+      "label": "^资产总计$",
+      "columns": 2,
+      "column": 0,
+      "statement": "balance"
+    },
+    {
+      "field": "current_liabilities",
+      "page": 124,
+      "label": "^流动负债合计$",
+      "columns": 2,
+      "column": 0,
+      "statement": "balance"
+    },
+    {
+      "field": "non_current_liabilities",
+      "page": 124,
+      "label": "^非流动负债合计$",
+      "columns": 2,
+      "column": 0,
+      "statement": "balance"
+    },
+    {
+      "field": "total_liabilities",
+      "page": 124,
+      "label": "^负债合计$",
+      "columns": 2,
+      "column": 0,
+      "statement": "balance"
+    },
+    {
+      "field": "equity_attributable",
+      "page": 125,
+      "label": "归属于母公司股东权益合计$",
+      "columns": 2,
+      "column": 0,
+      "statement": "balance"
+    },
+    {
+      "field": "total_equity",
+      "page": 125,
+      "label": "^股东权益合计$",
+      "columns": 2,
+      "column": 0,
+      "statement": "balance"
+    },
+    {
+      "field": "liabilities_and_equity",
+      "page": 125,
+      "label": "^负债和股东权益总计$",
+      "columns": 2,
+      "column": 0,
+      "statement": "balance"
+    },
+    {
+      "field": "operating_cash_flow",
+      "page": 130,
+      "label": "经营活动产生的现金流量净额$",
+      "columns": 2,
+      "column": 0,
+      "statement": "cash_flow"
+    },
+    {
+      "field": "capex",
+      "page": 130,
+      "label": "购建固定资产、无形资产和其他长期资产支付的现金$",
+      "columns": 2,
+      "column": 0,
+      "statement": "cash_flow",
+      "sign": "abs"
+    },
+    {
+      "field": "dividends_and_interest_paid",
+      "page": 131,
+      "label": "分配股利、利润或偿付利息支付的现金$",
+      "columns": 2,
+      "column": 0,
+      "statement": "cash_flow",
+      "sign": "abs",
+      "definition": "Dividends, profit distributions AND interest paid (not dividends only)"
+    },
+    {
+      "field": "cash_end_cf",
+      "page": 131,
+      "label": "年末现金及现金等价物余额$",
+      "columns": 2,
+      "column": 0,
+      "statement": "cash_flow"
+    },
+    {
+      "field": "dividend_per_share",
+      "page": 249,
+      "pattern": "每股现金股利人民币\\s*([\\d.]+)\\s*元",
+      "unit": "units",
+      "definition": "Proposed FY2025 cash dividend per share (RMB, tax incl.), subject to AGM"
+    },
+    {
+      "field": "dividend_per_10_shares",
+      "page": 5,
+      "pattern": "每\\s*10\\s*股派发现金红利\\s*([\\d.]+)\\s*元",
+      "unit": "units"
+    }
+  ],
+  "derived": [
+    {
+      "field": "free_cash_flow",
+      "sum": [
+        "operating_cash_flow",
+        "-capex"
+      ],
+      "definition": "Operating cash flow minus capex as defined in this profile (simple FCF, not issuer-defined)",
+      "statement": "cash_flow"
+    }
+  ],
+  "checks": [
+    {
+      "name": "balance_sheet_identity",
+      "left": [
+        "total_assets"
+      ],
+      "right": [
+        "total_liabilities",
+        "total_equity"
+      ],
+      "tolerance": "1"
+    },
+    {
+      "name": "profit_split",
+      "left": [
+        "net_profit"
+      ],
+      "right": [
+        "net_income_attributable",
+        "nci_profit"
+      ],
+      "tolerance": "1"
+    },
+    {
+      "name": "liabilities_and_equity_total",
+      "left": [
+        "liabilities_and_equity"
+      ],
+      "right": [
+        "total_assets"
+      ],
+      "tolerance": "0"
+    },
+    {
+      "name": "assets_split",
+      "left": [
+        "total_assets"
+      ],
+      "right": [
+        "current_assets",
+        "non_current_assets"
+      ],
+      "tolerance": "1"
+    },
+    {
+      "name": "liabilities_split",
+      "left": [
+        "total_liabilities"
+      ],
+      "right": [
+        "current_liabilities",
+        "non_current_liabilities"
+      ],
+      "tolerance": "1"
+    },
+    {
+      "name": "dps_vs_per_10_shares",
+      "left": [
+        "dividend_per_10_shares"
+      ],
+      "right": [
+        "dividend_per_share"
+      ],
+      "factor": "10",
+      "tolerance": "0.0005"
+    }
+  ]
+}

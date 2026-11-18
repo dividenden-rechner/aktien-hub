@@ -1,0 +1,3531 @@
+{
+  "schema_version": 1,
+  "companies": [
+    {
+      "symbol": "0001.HK",
+      "company": "CK Hutchison Holdings Limited",
+      "years": {
+        "2024": {
+          "symbol": "0001.HK",
+          "company": "CK Hutchison Holdings Limited",
+          "fiscal_year": 2024,
+          "source_report_year": 2025,
+          "source_url": "https://doc.irasia.com/listco/hk/ckh/annual/2025/ar2025.pdf",
+          "currency": "HKD",
+          "unit": "million",
+          "status": "comparative_extracted_pending_review",
+          "human_review": "pending",
+          "facts": [
+            {
+              "field": "revenue",
+              "value": "281351",
+              "value_in_units": "281351000000",
+              "currency": "HKD",
+              "unit": "million",
+              "fiscal_year": 2024,
+              "source_report_year": 2025,
+              "source_url": "https://doc.irasia.com/listco/hk/ckh/annual/2025/ar2025.pdf",
+              "pdf_sha256": "e5fe1da8c7c39d04586814fa3e6b9ec13c4db2c79034a93a89d7dd533fa42440",
+              "pdf_page": 134,
+              "printed_page": "132",
+              "evidence": "35,902 Revenue 5  280,036  281,351  275,575",
+              "raw_token": "281,351",
+              "column_index": 1,
+              "row_values": [
+                "280,036",
+                "281,351",
+                "275,575"
+              ],
+              "method": "comparative_table_column",
+              "verification_status": "machine_extracted"
+            },
+            {
+              "field": "profit_before_tax",
+              "value": "28570",
+              "value_in_units": "28570000000",
+              "currency": "HKD",
+              "unit": "million",
+              "fiscal_year": 2024,
+              "source_report_year": 2025,
+              "source_url": "https://doc.irasia.com/listco/hk/ckh/annual/2025/ar2025.pdf",
+              "pdf_sha256": "e5fe1da8c7c39d04586814fa3e6b9ec13c4db2c79034a93a89d7dd533fa42440",
+              "pdf_page": 134,
+              "printed_page": "132",
+              "evidence": "3,412 Profit before tax  26,607  28,570  33,554",
+              "raw_token": "28,570",
+              "column_index": 1,
+              "row_values": [
+                "26,607",
+                "28,570",
+                "33,554"
+              ],
+              "method": "comparative_table_column",
+              "verification_status": "machine_extracted"
+            },
+            {
+              "field": "net_profit",
+              "value": "23853",
+              "value_in_units": "23853000000",
+              "currency": "HKD",
+              "unit": "million",
+              "fiscal_year": 2024,
+              "source_report_year": 2025,
+              "source_url": "https://doc.irasia.com/listco/hk/ckh/annual/2025/ar2025.pdf",
+              "pdf_sha256": "e5fe1da8c7c39d04586814fa3e6b9ec13c4db2c79034a93a89d7dd533fa42440",
+              "pdf_page": 134,
+              "printed_page": "132",
+              "evidence": "2,483 Profit after tax  19,370  23,853  30,551",
+              "raw_token": "23,853",
+              "column_index": 1,
+              "row_values": [
+                "19,370",
+                "23,853",
+                "30,551"
+              ],
+              "method": "comparative_table_column",
+              "verification_status": "machine_extracted"
+            },
+            {
+              "field": "nci_profit",
+              "value": "6765",
+              "value_in_units": "6765000000",
+              "currency": "HKD",
+              "unit": "million",
+              "fiscal_year": 2024,
+              "source_report_year": 2025,
+              "source_url": "https://doc.irasia.com/listco/hk/ckh/annual/2025/ar2025.pdf",
+              "pdf_sha256": "e5fe1da8c7c39d04586814fa3e6b9ec13c4db2c79034a93a89d7dd533fa42440",
+              "pdf_page": 134,
+              "printed_page": "132",
+              "evidence": "holders of perpetual capital securities  (7,529)  (6,765)  (6,712)",
+              "raw_token": "(6,765)",
+              "column_index": 1,
+              "row_values": [
+                "(7,529)",
+                "(6,765)",
+                "(6,712)"
+              ],
+              "method": "comparative_table_column",
+              "verification_status": "machine_extracted"
+            },
+            {
+              "field": "net_income_attributable",
+              "value": "17088",
+              "value_in_units": "17088000000",
+              "currency": "HKD",
+              "unit": "million",
+              "fiscal_year": 2024,
+              "source_report_year": 2025,
+              "source_url": "https://doc.irasia.com/listco/hk/ckh/annual/2025/ar2025.pdf",
+              "pdf_sha256": "e5fe1da8c7c39d04586814fa3e6b9ec13c4db2c79034a93a89d7dd533fa42440",
+              "pdf_page": 134,
+              "printed_page": "132",
+              "evidence": "1,518 Profit attributable to ordinary shareholders  11,841  17,088  23,839",
+              "raw_token": "17,088",
+              "column_index": 1,
+              "row_values": [
+                "11,841",
+                "17,088",
+                "23,839"
+              ],
+              "method": "comparative_table_column",
+              "verification_status": "machine_extracted"
+            },
+            {
+              "field": "eps_basic",
+              "value": "4.46",
+              "value_in_units": "4.46",
+              "currency": "HKD",
+              "unit": "units",
+              "fiscal_year": 2024,
+              "source_report_year": 2025,
+              "source_url": "https://doc.irasia.com/listco/hk/ckh/annual/2025/ar2025.pdf",
+              "pdf_sha256": "e5fe1da8c7c39d04586814fa3e6b9ec13c4db2c79034a93a89d7dd533fa42440",
+              "pdf_page": 134,
+              "printed_page": "132",
+              "evidence": "shareholders 11 HK$ 3.09 HK$ 4.46 HK$ 6.22",
+              "raw_token": "4.46",
+              "column_index": 1,
+              "row_values": [
+                "3.09",
+                "4.46",
+                "6.22"
+              ],
+              "method": "comparative_table_column",
+              "verification_status": "machine_extracted"
+            },
+            {
+              "field": "non_current_assets",
+              "value": "920349",
+              "value_in_units": "920349000000",
+              "currency": "HKD",
+              "unit": "million",
+              "fiscal_year": 2024,
+              "source_report_year": 2025,
+              "source_url": "https://doc.irasia.com/listco/hk/ckh/annual/2025/ar2025.pdf",
+              "pdf_sha256": "e5fe1da8c7c39d04586814fa3e6b9ec13c4db2c79034a93a89d7dd533fa42440",
+              "pdf_page": 136,
+              "printed_page": "134",
+              "evidence": "120,889  942,930 920,349 956,517 924,162",
+              "raw_token": "920,349",
+              "column_index": 1,
+              "row_values": [
+                "942,930",
+                "920,349",
+                "956,517",
+                "924,162"
+              ],
+              "method": "comparative_table_column",
+              "verification_status": "machine_extracted"
+            },
+            {
+              "field": "current_assets",
+              "value": "192193",
+              "value_in_units": "192193000000",
+              "currency": "HKD",
+              "unit": "million",
+              "fiscal_year": 2024,
+              "source_report_year": 2025,
+              "source_url": "https://doc.irasia.com/listco/hk/ckh/annual/2025/ar2025.pdf",
+              "pdf_sha256": "e5fe1da8c7c39d04586814fa3e6b9ec13c4db2c79034a93a89d7dd533fa42440",
+              "pdf_page": 136,
+              "printed_page": "134",
+              "evidence": "27,274  212,743 192,193 202,386 224,275",
+              "raw_token": "192,193",
+              "column_index": 1,
+              "row_values": [
+                "212,743",
+                "192,193",
+                "202,386",
+                "224,275"
+              ],
+              "method": "comparative_table_column",
+              "verification_status": "machine_extracted"
+            },
+            {
+              "field": "cash",
+              "value": "121303",
+              "value_in_units": "121303000000",
+              "currency": "HKD",
+              "unit": "million",
+              "fiscal_year": 2024,
+              "source_report_year": 2025,
+              "source_url": "https://doc.irasia.com/listco/hk/ckh/annual/2025/ar2025.pdf",
+              "pdf_sha256": "e5fe1da8c7c39d04586814fa3e6b9ec13c4db2c79034a93a89d7dd533fa42440",
+              "pdf_page": 136,
+              "printed_page": "134",
+              "evidence": "18,429 Cash and cash equivalents 24  143,748 121,303 127,323 138,085",
+              "raw_token": "121,303",
+              "column_index": 1,
+              "row_values": [
+                "143,748",
+                "121,303",
+                "127,323",
+                "138,085"
+              ],
+              "method": "comparative_table_column",
+              "verification_status": "machine_extracted"
+            },
+            {
+              "field": "current_liabilities",
+              "value": "130985",
+              "value_in_units": "130985000000",
+              "currency": "HKD",
+              "unit": "million",
+              "fiscal_year": 2024,
+              "source_report_year": 2025,
+              "source_url": "https://doc.irasia.com/listco/hk/ckh/annual/2025/ar2025.pdf",
+              "pdf_sha256": "e5fe1da8c7c39d04586814fa3e6b9ec13c4db2c79034a93a89d7dd533fa42440",
+              "pdf_page": 136,
+              "printed_page": "134",
+              "evidence": "17,359  135,399 130,985 162,525 176,515",
+              "raw_token": "130,985",
+              "column_index": 1,
+              "row_values": [
+                "135,399",
+                "130,985",
+                "162,525",
+                "176,515"
+              ],
+              "method": "comparative_table_column",
+              "verification_status": "machine_extracted"
+            },
+            {
+              "field": "non_current_liabilities",
+              "value": "328965",
+              "value_in_units": "328965000000",
+              "currency": "HKD",
+              "unit": "million",
+              "fiscal_year": 2024,
+              "source_report_year": 2025,
+              "source_url": "https://doc.irasia.com/listco/hk/ckh/annual/2025/ar2025.pdf",
+              "pdf_sha256": "e5fe1da8c7c39d04586814fa3e6b9ec13c4db2c79034a93a89d7dd533fa42440",
+              "pdf_page": 136,
+              "printed_page": "134",
+              "evidence": "42,549 331,882 328,965 325,829 324,613",
+              "raw_token": "328,965",
+              "column_index": 1,
+              "row_values": [
+                "331,882",
+                "328,965",
+                "325,829",
+                "324,613"
+              ],
+              "method": "comparative_table_column",
+              "verification_status": "machine_extracted"
+            },
+            {
+              "field": "net_assets",
+              "value": "652592",
+              "value_in_units": "652592000000",
+              "currency": "HKD",
+              "unit": "million",
+              "fiscal_year": 2024,
+              "source_report_year": 2025,
+              "source_url": "https://doc.irasia.com/listco/hk/ckh/annual/2025/ar2025.pdf",
+              "pdf_sha256": "e5fe1da8c7c39d04586814fa3e6b9ec13c4db2c79034a93a89d7dd533fa42440",
+              "pdf_page": 136,
+              "printed_page": "134",
+              "evidence": "88,255 Net assets  688,392 652,592 670,549 647,309",
+              "raw_token": "652,592",
+              "column_index": 1,
+              "row_values": [
+                "688,392",
+                "652,592",
+                "670,549",
+                "647,309"
+              ],
+              "method": "comparative_table_column",
+              "verification_status": "machine_extracted"
+            },
+            {
+              "field": "equity_attributable",
+              "value": "534715",
+              "value_in_units": "534715000000",
+              "currency": "HKD",
+              "unit": "million",
+              "fiscal_year": 2024,
+              "source_report_year": 2025,
+              "source_url": "https://doc.irasia.com/listco/hk/ckh/annual/2025/ar2025.pdf",
+              "pdf_sha256": "e5fe1da8c7c39d04586814fa3e6b9ec13c4db2c79034a93a89d7dd533fa42440",
+              "pdf_page": 137,
+              "printed_page": "135",
+              "evidence": "72,150 Total ordinary shareholders’ funds  562,772 534,715 544,035 523,513",
+              "raw_token": "534,715",
+              "column_index": 1,
+              "row_values": [
+                "562,772",
+                "534,715",
+                "544,035",
+                "523,513"
+              ],
+              "method": "comparative_table_column",
+              "verification_status": "machine_extracted"
+            },
+            {
+              "field": "total_equity",
+              "value": "652592",
+              "value_in_units": "652592000000",
+              "currency": "HKD",
+              "unit": "million",
+              "fiscal_year": 2024,
+              "source_report_year": 2025,
+              "source_url": "https://doc.irasia.com/listco/hk/ckh/annual/2025/ar2025.pdf",
+              "pdf_sha256": "e5fe1da8c7c39d04586814fa3e6b9ec13c4db2c79034a93a89d7dd533fa42440",
+              "pdf_page": 137,
+              "printed_page": "135",
+              "evidence": "88,255 Total equity  688,392 652,592 670,549 647,309",
+              "raw_token": "652,592",
+              "column_index": 1,
+              "row_values": [
+                "688,392",
+                "652,592",
+                "670,549",
+                "647,309"
+              ],
+              "method": "comparative_table_column",
+              "verification_status": "machine_extracted"
+            },
+            {
+              "field": "operating_cash_flow",
+              "value": "54228",
+              "value_in_units": "54228000000",
+              "currency": "HKD",
+              "unit": "million",
+              "fiscal_year": 2024,
+              "source_report_year": 2025,
+              "source_url": "https://doc.irasia.com/listco/hk/ckh/annual/2025/ar2025.pdf",
+              "pdf_sha256": "e5fe1da8c7c39d04586814fa3e6b9ec13c4db2c79034a93a89d7dd533fa42440",
+              "pdf_page": 141,
+              "printed_page": "139",
+              "evidence": "8,021 Net cash from operating activities 62,567 54,228 51,437",
+              "raw_token": "54,228",
+              "column_index": 1,
+              "row_values": [
+                "62,567",
+                "54,228",
+                "51,437"
+              ],
+              "method": "comparative_table_column",
+              "verification_status": "machine_extracted"
+            },
+            {
+              "field": "capex",
+              "value": "20365",
+              "value_in_units": "20365000000",
+              "currency": "HKD",
+              "unit": "million",
+              "fiscal_year": 2024,
+              "source_report_year": 2025,
+              "source_url": "https://doc.irasia.com/listco/hk/ckh/annual/2025/ar2025.pdf",
+              "pdf_sha256": "e5fe1da8c7c39d04586814fa3e6b9ec13c4db2c79034a93a89d7dd533fa42440",
+              "pdf_page": 141,
+              "printed_page": "139",
+              "evidence": "(2,403) Purchase of fixed assets 13 (18,743) (20,365) (21,670)",
+              "raw_token": "(20,365)",
+              "column_index": 1,
+              "row_values": [
+                "(18,743)",
+                "(20,365)",
+                "(21,670)"
+              ],
+              "method": "comparative_table_column",
+              "verification_status": "machine_extracted"
+            },
+            {
+              "field": "dividends_paid_to_shareholders",
+              "value": "9433",
+              "value_in_units": "9433000000",
+              "currency": "HKD",
+              "unit": "million",
+              "fiscal_year": 2024,
+              "source_report_year": 2025,
+              "source_url": "https://doc.irasia.com/listco/hk/ckh/annual/2025/ar2025.pdf",
+              "pdf_sha256": "e5fe1da8c7c39d04586814fa3e6b9ec13c4db2c79034a93a89d7dd533fa42440",
+              "pdf_page": 141,
+              "printed_page": "139",
+              "evidence": "(1,093) Dividends paid to ordinary shareholders (8,518) (9,433) (10,885)",
+              "raw_token": "(9,433)",
+              "column_index": 1,
+              "row_values": [
+                "(8,518)",
+                "(9,433)",
+                "(10,885)"
+              ],
+              "method": "comparative_table_column",
+              "verification_status": "machine_extracted"
+            },
+            {
+              "field": "cash_end_cf",
+              "value": "121303",
+              "value_in_units": "121303000000",
+              "currency": "HKD",
+              "unit": "million",
+              "fiscal_year": 2024,
+              "source_report_year": 2025,
+              "source_url": "https://doc.irasia.com/listco/hk/ckh/annual/2025/ar2025.pdf",
+              "pdf_sha256": "e5fe1da8c7c39d04586814fa3e6b9ec13c4db2c79034a93a89d7dd533fa42440",
+              "pdf_page": 141,
+              "printed_page": "139",
+              "evidence": "18,429 Cash and cash equivalents at 31 December 143,748 121,303 127,323",
+              "raw_token": "121,303",
+              "column_index": 1,
+              "row_values": [
+                "143,748",
+                "121,303",
+                "127,323"
+              ],
+              "method": "comparative_table_column",
+              "verification_status": "machine_extracted"
+            },
+            {
+              "field": "net_debt",
+              "value": "132029",
+              "value_in_units": "132029000000",
+              "currency": "HKD",
+              "unit": "million",
+              "fiscal_year": 2024,
+              "source_report_year": 2025,
+              "source_url": "https://doc.irasia.com/listco/hk/ckh/annual/2025/ar2025.pdf",
+              "pdf_sha256": "e5fe1da8c7c39d04586814fa3e6b9ec13c4db2c79034a93a89d7dd533fa42440",
+              "pdf_page": 142,
+              "printed_page": "140",
+              "evidence": "15,115 Net debt 117,885 132,029 133,830",
+              "raw_token": "132,029",
+              "column_index": 1,
+              "row_values": [
+                "117,885",
+                "132,029",
+                "133,830"
+              ],
+              "method": "comparative_table_column",
+              "verification_status": "machine_extracted"
+            }
+          ],
+          "omitted": [
+            {
+              "field": "dividend_per_share",
+              "reason": "no_comparative_table_row"
+            },
+            {
+              "field": "dividend_interim_per_share",
+              "reason": "no_comparative_table_row"
+            },
+            {
+              "field": "dividend_final_per_share",
+              "reason": "no_comparative_table_row"
+            }
+          ],
+          "warning": "Comparative column from FY2025 PDF; not independently checked against FY2024 annual report or a second PDF engine."
+        },
+        "2025": {
+          "fiscal_year": 2025,
+          "status": "extracted_consistent",
+          "human_review": "pending",
+          "facts": [
+            {
+              "field": "revenue",
+              "value": "280036",
+              "currency": "HKD",
+              "unit": "million",
+              "pdf_page": 134,
+              "source_url": "https://doc.irasia.com/listco/hk/ckh/annual/2025/ar2025.pdf",
+              "verification_status": "machine_extracted"
+            },
+            {
+              "field": "profit_before_tax",
+              "value": "26607",
+              "currency": "HKD",
+              "unit": "million",
+              "pdf_page": 134,
+              "source_url": "https://doc.irasia.com/listco/hk/ckh/annual/2025/ar2025.pdf",
+              "verification_status": "machine_extracted"
+            },
+            {
+              "field": "net_profit",
+              "value": "19370",
+              "currency": "HKD",
+              "unit": "million",
+              "pdf_page": 134,
+              "source_url": "https://doc.irasia.com/listco/hk/ckh/annual/2025/ar2025.pdf",
+              "verification_status": "machine_extracted"
+            },
+            {
+              "field": "nci_profit",
+              "value": "7529",
+              "currency": "HKD",
+              "unit": "million",
+              "pdf_page": 134,
+              "source_url": "https://doc.irasia.com/listco/hk/ckh/annual/2025/ar2025.pdf",
+              "verification_status": "machine_extracted"
+            },
+            {
+              "field": "net_income_attributable",
+              "value": "11841",
+              "currency": "HKD",
+              "unit": "million",
+              "pdf_page": 134,
+              "source_url": "https://doc.irasia.com/listco/hk/ckh/annual/2025/ar2025.pdf",
+              "verification_status": "machine_extracted"
+            },
+            {
+              "field": "eps_basic",
+              "value": "3.09",
+              "currency": "HKD",
+              "unit": "units",
+              "pdf_page": 134,
+              "source_url": "https://doc.irasia.com/listco/hk/ckh/annual/2025/ar2025.pdf",
+              "verification_status": "machine_extracted"
+            },
+            {
+              "field": "non_current_assets",
+              "value": "942930",
+              "currency": "HKD",
+              "unit": "million",
+              "pdf_page": 136,
+              "source_url": "https://doc.irasia.com/listco/hk/ckh/annual/2025/ar2025.pdf",
+              "verification_status": "machine_extracted"
+            },
+            {
+              "field": "current_assets",
+              "value": "212743",
+              "currency": "HKD",
+              "unit": "million",
+              "pdf_page": 136,
+              "source_url": "https://doc.irasia.com/listco/hk/ckh/annual/2025/ar2025.pdf",
+              "verification_status": "machine_extracted"
+            },
+            {
+              "field": "cash",
+              "value": "143748",
+              "currency": "HKD",
+              "unit": "million",
+              "pdf_page": 136,
+              "source_url": "https://doc.irasia.com/listco/hk/ckh/annual/2025/ar2025.pdf",
+              "verification_status": "machine_extracted"
+            },
+            {
+              "field": "current_liabilities",
+              "value": "135399",
+              "currency": "HKD",
+              "unit": "million",
+              "pdf_page": 136,
+              "source_url": "https://doc.irasia.com/listco/hk/ckh/annual/2025/ar2025.pdf",
+              "verification_status": "machine_extracted"
+            },
+            {
+              "field": "non_current_liabilities",
+              "value": "331882",
+              "currency": "HKD",
+              "unit": "million",
+              "pdf_page": 136,
+              "source_url": "https://doc.irasia.com/listco/hk/ckh/annual/2025/ar2025.pdf",
+              "verification_status": "machine_extracted"
+            },
+            {
+              "field": "net_assets",
+              "value": "688392",
+              "currency": "HKD",
+              "unit": "million",
+              "pdf_page": 136,
+              "source_url": "https://doc.irasia.com/listco/hk/ckh/annual/2025/ar2025.pdf",
+              "verification_status": "machine_extracted"
+            },
+            {
+              "field": "equity_attributable",
+              "value": "562772",
+              "currency": "HKD",
+              "unit": "million",
+              "pdf_page": 137,
+              "source_url": "https://doc.irasia.com/listco/hk/ckh/annual/2025/ar2025.pdf",
+              "verification_status": "machine_extracted"
+            },
+            {
+              "field": "total_equity",
+              "value": "688392",
+              "currency": "HKD",
+              "unit": "million",
+              "pdf_page": 137,
+              "source_url": "https://doc.irasia.com/listco/hk/ckh/annual/2025/ar2025.pdf",
+              "verification_status": "machine_extracted"
+            },
+            {
+              "field": "operating_cash_flow",
+              "value": "62567",
+              "currency": "HKD",
+              "unit": "million",
+              "pdf_page": 141,
+              "source_url": "https://doc.irasia.com/listco/hk/ckh/annual/2025/ar2025.pdf",
+              "verification_status": "machine_extracted"
+            },
+            {
+              "field": "capex",
+              "value": "18743",
+              "currency": "HKD",
+              "unit": "million",
+              "pdf_page": 141,
+              "source_url": "https://doc.irasia.com/listco/hk/ckh/annual/2025/ar2025.pdf",
+              "verification_status": "machine_extracted"
+            },
+            {
+              "field": "dividends_paid_to_shareholders",
+              "value": "8518",
+              "currency": "HKD",
+              "unit": "million",
+              "pdf_page": 141,
+              "source_url": "https://doc.irasia.com/listco/hk/ckh/annual/2025/ar2025.pdf",
+              "verification_status": "machine_extracted"
+            },
+            {
+              "field": "cash_end_cf",
+              "value": "143748",
+              "currency": "HKD",
+              "unit": "million",
+              "pdf_page": 141,
+              "source_url": "https://doc.irasia.com/listco/hk/ckh/annual/2025/ar2025.pdf",
+              "verification_status": "machine_extracted"
+            },
+            {
+              "field": "net_debt",
+              "value": "117885",
+              "currency": "HKD",
+              "unit": "million",
+              "pdf_page": 142,
+              "source_url": "https://doc.irasia.com/listco/hk/ckh/annual/2025/ar2025.pdf",
+              "verification_status": "machine_extracted"
+            },
+            {
+              "field": "dividend_per_share",
+              "value": "2.312",
+              "currency": "HKD",
+              "unit": "units",
+              "pdf_page": 17,
+              "source_url": "https://doc.irasia.com/listco/hk/ckh/annual/2025/ar2025.pdf",
+              "verification_status": "machine_extracted"
+            },
+            {
+              "field": "dividend_interim_per_share",
+              "value": "0.71",
+              "currency": "HKD",
+              "unit": "units",
+              "pdf_page": 207,
+              "source_url": "https://doc.irasia.com/listco/hk/ckh/annual/2025/ar2025.pdf",
+              "verification_status": "machine_extracted"
+            },
+            {
+              "field": "dividend_final_per_share",
+              "value": "1.602",
+              "currency": "HKD",
+              "unit": "units",
+              "pdf_page": 207,
+              "source_url": "https://doc.irasia.com/listco/hk/ckh/annual/2025/ar2025.pdf",
+              "verification_status": "machine_extracted"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "symbol": "0019.HK",
+      "company": "Swire Pacific Limited",
+      "years": {
+        "2024": {
+          "symbol": "0019.HK",
+          "company": "Swire Pacific Limited",
+          "fiscal_year": 2024,
+          "source_report_year": 2025,
+          "source_url": "https://www1.hkexnews.hk/listedco/listconews/sehk/2026/0408/2026040800985.pdf",
+          "currency": "HKD",
+          "unit": "million",
+          "status": "comparative_extracted_pending_review",
+          "human_review": "pending",
+          "facts": [
+            {
+              "field": "revenue",
+              "value": "81969",
+              "value_in_units": "81969000000",
+              "currency": "HKD",
+              "unit": "million",
+              "fiscal_year": 2024,
+              "source_report_year": 2025,
+              "source_url": "https://www1.hkexnews.hk/listedco/listconews/sehk/2026/0408/2026040800985.pdf",
+              "pdf_sha256": "2f4b1b4435e04184d4b5940f21b96c2ce34c91af9eb95eeb4d825a31313a60a2",
+              "pdf_page": 147,
+              "printed_page": "145",
+              "evidence": "Revenue 4 90,467 81,969",
+              "raw_token": "81,969",
+              "column_index": 1,
+              "row_values": [
+                "90,467",
+                "81,969"
+              ],
+              "method": "comparative_table_column",
+              "verification_status": "machine_extracted"
+            },
+            {
+              "field": "operating_profit",
+              "value": "4240",
+              "value_in_units": "4240000000",
+              "currency": "HKD",
+              "unit": "million",
+              "fiscal_year": 2024,
+              "source_report_year": 2025,
+              "source_url": "https://www1.hkexnews.hk/listedco/listconews/sehk/2026/0408/2026040800985.pdf",
+              "pdf_sha256": "2f4b1b4435e04184d4b5940f21b96c2ce34c91af9eb95eeb4d825a31313a60a2",
+              "pdf_page": 147,
+              "printed_page": "145",
+              "evidence": "Operating profit 4,454 4,240",
+              "raw_token": "4,240",
+              "column_index": 1,
+              "row_values": [
+                "4,454",
+                "4,240"
+              ],
+              "method": "comparative_table_column",
+              "verification_status": "machine_extracted"
+            },
+            {
+              "field": "profit_before_tax",
+              "value": "7785",
+              "value_in_units": "7785000000",
+              "currency": "HKD",
+              "unit": "million",
+              "fiscal_year": 2024,
+              "source_report_year": 2025,
+              "source_url": "https://www1.hkexnews.hk/listedco/listconews/sehk/2026/0408/2026040800985.pdf",
+              "pdf_sha256": "2f4b1b4435e04184d4b5940f21b96c2ce34c91af9eb95eeb4d825a31313a60a2",
+              "pdf_page": 147,
+              "printed_page": "145",
+              "evidence": "Profit before taxation 5,836 7,785",
+              "raw_token": "7,785",
+              "column_index": 1,
+              "row_values": [
+                "5,836",
+                "7,785"
+              ],
+              "method": "comparative_table_column",
+              "verification_status": "machine_extracted"
+            },
+            {
+              "field": "net_profit",
+              "value": "4701",
+              "value_in_units": "4701000000",
+              "currency": "HKD",
+              "unit": "million",
+              "fiscal_year": 2024,
+              "source_report_year": 2025,
+              "source_url": "https://www1.hkexnews.hk/listedco/listconews/sehk/2026/0408/2026040800985.pdf",
+              "pdf_sha256": "2f4b1b4435e04184d4b5940f21b96c2ce34c91af9eb95eeb4d825a31313a60a2",
+              "pdf_page": 147,
+              "printed_page": "145",
+              "evidence": "Profit for the year 3,495 4,701",
+              "raw_token": "4,701",
+              "column_index": 1,
+              "row_values": [
+                "3,495",
+                "4,701"
+              ],
+              "method": "comparative_table_column",
+              "verification_status": "machine_extracted"
+            },
+            {
+              "field": "net_income_attributable",
+              "value": "4321",
+              "value_in_units": "4321000000",
+              "currency": "HKD",
+              "unit": "million",
+              "fiscal_year": 2024,
+              "source_report_year": 2025,
+              "source_url": "https://www1.hkexnews.hk/listedco/listconews/sehk/2026/0408/2026040800985.pdf",
+              "pdf_sha256": "2f4b1b4435e04184d4b5940f21b96c2ce34c91af9eb95eeb4d825a31313a60a2",
+              "pdf_page": 147,
+              "printed_page": "145",
+              "evidence": "The Company’s shareholders 35 2,938 4,321",
+              "raw_token": "4,321",
+              "column_index": 1,
+              "row_values": [
+                "2,938",
+                "4,321"
+              ],
+              "method": "comparative_table_column",
+              "verification_status": "machine_extracted"
+            },
+            {
+              "field": "nci_profit",
+              "value": "380",
+              "value_in_units": "380000000",
+              "currency": "HKD",
+              "unit": "million",
+              "fiscal_year": 2024,
+              "source_report_year": 2025,
+              "source_url": "https://www1.hkexnews.hk/listedco/listconews/sehk/2026/0408/2026040800985.pdf",
+              "pdf_sha256": "2f4b1b4435e04184d4b5940f21b96c2ce34c91af9eb95eeb4d825a31313a60a2",
+              "pdf_page": 147,
+              "printed_page": "145",
+              "evidence": "Non-controlling interests 36 557 380",
+              "raw_token": "380",
+              "column_index": 1,
+              "row_values": [
+                "557",
+                "380"
+              ],
+              "method": "comparative_table_column",
+              "verification_status": "machine_extracted"
+            },
+            {
+              "field": "underlying_profit_attributable",
+              "value": "10471",
+              "value_in_units": "10471000000",
+              "currency": "HKD",
+              "unit": "million",
+              "fiscal_year": 2024,
+              "source_report_year": 2025,
+              "source_url": "https://www1.hkexnews.hk/listedco/listconews/sehk/2026/0408/2026040800985.pdf",
+              "pdf_sha256": "2f4b1b4435e04184d4b5940f21b96c2ce34c91af9eb95eeb4d825a31313a60a2",
+              "pdf_page": 147,
+              "printed_page": "145",
+              "evidence": "Underlying profit attributable to the Company’s shareholders 11 11,373 10,471",
+              "raw_token": "10,471",
+              "column_index": 1,
+              "row_values": [
+                "11,373",
+                "10,471"
+              ],
+              "method": "comparative_table_column",
+              "verification_status": "machine_extracted"
+            },
+            {
+              "field": "eps_basic",
+              "value": "3.06",
+              "value_in_units": "3.06",
+              "currency": "HKD",
+              "unit": "units",
+              "fiscal_year": 2024,
+              "source_report_year": 2025,
+              "source_url": "https://www1.hkexnews.hk/listedco/listconews/sehk/2026/0408/2026040800985.pdf",
+              "pdf_sha256": "2f4b1b4435e04184d4b5940f21b96c2ce34c91af9eb95eeb4d825a31313a60a2",
+              "pdf_page": 147,
+              "printed_page": "145",
+              "evidence": "‘A’ share – basic 2.17 3.06",
+              "raw_token": "3.06",
+              "column_index": 1,
+              "row_values": [
+                "2.17",
+                "3.06"
+              ],
+              "method": "comparative_table_column",
+              "verification_status": "machine_extracted"
+            },
+            {
+              "field": "non_current_assets",
+              "value": "417175",
+              "value_in_units": "417175000000",
+              "currency": "HKD",
+              "unit": "million",
+              "fiscal_year": 2024,
+              "source_report_year": 2025,
+              "source_url": "https://www1.hkexnews.hk/listedco/listconews/sehk/2026/0408/2026040800985.pdf",
+              "pdf_sha256": "2f4b1b4435e04184d4b5940f21b96c2ce34c91af9eb95eeb4d825a31313a60a2",
+              "pdf_page": 149,
+              "printed_page": "147",
+              "evidence": "416,475 417,175",
+              "raw_token": "417,175",
+              "column_index": 1,
+              "row_values": [
+                "416,475",
+                "417,175"
+              ],
+              "method": "comparative_table_column",
+              "verification_status": "machine_extracted"
+            },
+            {
+              "field": "current_assets",
+              "value": "59386",
+              "value_in_units": "59386000000",
+              "currency": "HKD",
+              "unit": "million",
+              "fiscal_year": 2024,
+              "source_report_year": 2025,
+              "source_url": "https://www1.hkexnews.hk/listedco/listconews/sehk/2026/0408/2026040800985.pdf",
+              "pdf_sha256": "2f4b1b4435e04184d4b5940f21b96c2ce34c91af9eb95eeb4d825a31313a60a2",
+              "pdf_page": 149,
+              "printed_page": "147",
+              "evidence": "59,938 59,386",
+              "raw_token": "59,386",
+              "column_index": 1,
+              "row_values": [
+                "59,938",
+                "59,386"
+              ],
+              "method": "comparative_table_column",
+              "verification_status": "machine_extracted"
+            },
+            {
+              "field": "cash",
+              "value": "21028",
+              "value_in_units": "21028000000",
+              "currency": "HKD",
+              "unit": "million",
+              "fiscal_year": 2024,
+              "source_report_year": 2025,
+              "source_url": "https://www1.hkexnews.hk/listedco/listconews/sehk/2026/0408/2026040800985.pdf",
+              "pdf_sha256": "2f4b1b4435e04184d4b5940f21b96c2ce34c91af9eb95eeb4d825a31313a60a2",
+              "pdf_page": 149,
+              "printed_page": "147",
+              "evidence": "Bank balances and short-term deposits 27 23,172 21,028",
+              "raw_token": "21,028",
+              "column_index": 1,
+              "row_values": [
+                "23,172",
+                "21,028"
+              ],
+              "method": "comparative_table_column",
+              "verification_status": "machine_extracted"
+            },
+            {
+              "field": "current_liabilities",
+              "value": "56026",
+              "value_in_units": "56026000000",
+              "currency": "HKD",
+              "unit": "million",
+              "fiscal_year": 2024,
+              "source_report_year": 2025,
+              "source_url": "https://www1.hkexnews.hk/listedco/listconews/sehk/2026/0408/2026040800985.pdf",
+              "pdf_sha256": "2f4b1b4435e04184d4b5940f21b96c2ce34c91af9eb95eeb4d825a31313a60a2",
+              "pdf_page": 149,
+              "printed_page": "147",
+              "evidence": "61,247 56,026",
+              "raw_token": "56,026",
+              "column_index": 1,
+              "row_values": [
+                "61,247",
+                "56,026"
+              ],
+              "method": "comparative_table_column",
+              "verification_status": "machine_extracted"
+            },
+            {
+              "field": "non_current_liabilities",
+              "value": "101868",
+              "value_in_units": "101868000000",
+              "currency": "HKD",
+              "unit": "million",
+              "fiscal_year": 2024,
+              "source_report_year": 2025,
+              "source_url": "https://www1.hkexnews.hk/listedco/listconews/sehk/2026/0408/2026040800985.pdf",
+              "pdf_sha256": "2f4b1b4435e04184d4b5940f21b96c2ce34c91af9eb95eeb4d825a31313a60a2",
+              "pdf_page": 149,
+              "printed_page": "147",
+              "evidence": "98,931 101,868",
+              "raw_token": "101,868",
+              "column_index": 1,
+              "row_values": [
+                "98,931",
+                "101,868"
+              ],
+              "method": "comparative_table_column",
+              "verification_status": "machine_extracted"
+            },
+            {
+              "field": "net_assets",
+              "value": "318667",
+              "value_in_units": "318667000000",
+              "currency": "HKD",
+              "unit": "million",
+              "fiscal_year": 2024,
+              "source_report_year": 2025,
+              "source_url": "https://www1.hkexnews.hk/listedco/listconews/sehk/2026/0408/2026040800985.pdf",
+              "pdf_sha256": "2f4b1b4435e04184d4b5940f21b96c2ce34c91af9eb95eeb4d825a31313a60a2",
+              "pdf_page": 149,
+              "printed_page": "147",
+              "evidence": "NET ASSETS 316,235 318,667",
+              "raw_token": "318,667",
+              "column_index": 1,
+              "row_values": [
+                "316,235",
+                "318,667"
+              ],
+              "method": "comparative_table_column",
+              "verification_status": "machine_extracted"
+            },
+            {
+              "field": "equity_attributable",
+              "value": "258300",
+              "value_in_units": "258300000000",
+              "currency": "HKD",
+              "unit": "million",
+              "fiscal_year": 2024,
+              "source_report_year": 2025,
+              "source_url": "https://www1.hkexnews.hk/listedco/listconews/sehk/2026/0408/2026040800985.pdf",
+              "pdf_sha256": "2f4b1b4435e04184d4b5940f21b96c2ce34c91af9eb95eeb4d825a31313a60a2",
+              "pdf_page": 149,
+              "printed_page": "147",
+              "evidence": "Equity attributable to the Company’s shareholders 259,577 258,300",
+              "raw_token": "258,300",
+              "column_index": 1,
+              "row_values": [
+                "259,577",
+                "258,300"
+              ],
+              "method": "comparative_table_column",
+              "verification_status": "machine_extracted"
+            },
+            {
+              "field": "total_equity",
+              "value": "318667",
+              "value_in_units": "318667000000",
+              "currency": "HKD",
+              "unit": "million",
+              "fiscal_year": 2024,
+              "source_report_year": 2025,
+              "source_url": "https://www1.hkexnews.hk/listedco/listconews/sehk/2026/0408/2026040800985.pdf",
+              "pdf_sha256": "2f4b1b4435e04184d4b5940f21b96c2ce34c91af9eb95eeb4d825a31313a60a2",
+              "pdf_page": 149,
+              "printed_page": "147",
+              "evidence": "TOTAL EQUITY 316,235 318,667",
+              "raw_token": "318,667",
+              "column_index": 1,
+              "row_values": [
+                "316,235",
+                "318,667"
+              ],
+              "method": "comparative_table_column",
+              "verification_status": "machine_extracted"
+            },
+            {
+              "field": "operating_cash_flow",
+              "value": "10458",
+              "value_in_units": "10458000000",
+              "currency": "HKD",
+              "unit": "million",
+              "fiscal_year": 2024,
+              "source_report_year": 2025,
+              "source_url": "https://www1.hkexnews.hk/listedco/listconews/sehk/2026/0408/2026040800985.pdf",
+              "pdf_sha256": "2f4b1b4435e04184d4b5940f21b96c2ce34c91af9eb95eeb4d825a31313a60a2",
+              "pdf_page": 150,
+              "printed_page": "148",
+              "evidence": "Net cash generated from operating activities 14,551 10,458",
+              "raw_token": "10,458",
+              "column_index": 1,
+              "row_values": [
+                "14,551",
+                "10,458"
+              ],
+              "method": "comparative_table_column",
+              "verification_status": "machine_extracted"
+            },
+            {
+              "field": "capex",
+              "value": "4411",
+              "value_in_units": "4411000000",
+              "currency": "HKD",
+              "unit": "million",
+              "fiscal_year": 2024,
+              "source_report_year": 2025,
+              "source_url": "https://www1.hkexnews.hk/listedco/listconews/sehk/2026/0408/2026040800985.pdf",
+              "pdf_sha256": "2f4b1b4435e04184d4b5940f21b96c2ce34c91af9eb95eeb4d825a31313a60a2",
+              "pdf_page": 150,
+              "printed_page": "148",
+              "evidence": "Purchase of property, plant and equipment and right-of-use assets 43(b) (5,595) (4,411)",
+              "raw_token": "(4,411)",
+              "column_index": 1,
+              "row_values": [
+                "(5,595)",
+                "(4,411)"
+              ],
+              "method": "comparative_table_column",
+              "verification_status": "machine_extracted"
+            },
+            {
+              "field": "dividends_paid_to_shareholders",
+              "value": "4586",
+              "value_in_units": "4586000000",
+              "currency": "HKD",
+              "unit": "million",
+              "fiscal_year": 2024,
+              "source_report_year": 2025,
+              "source_url": "https://www1.hkexnews.hk/listedco/listconews/sehk/2026/0408/2026040800985.pdf",
+              "pdf_sha256": "2f4b1b4435e04184d4b5940f21b96c2ce34c91af9eb95eeb4d825a31313a60a2",
+              "pdf_page": 150,
+              "printed_page": "148",
+              "evidence": "Dividends paid to the Company’s shareholders 35 (4,602) (4,586)",
+              "raw_token": "(4,586)",
+              "column_index": 1,
+              "row_values": [
+                "(4,602)",
+                "(4,586)"
+              ],
+              "method": "comparative_table_column",
+              "verification_status": "machine_extracted"
+            },
+            {
+              "field": "cash_end_cf",
+              "value": "19821",
+              "value_in_units": "19821000000",
+              "currency": "HKD",
+              "unit": "million",
+              "fiscal_year": 2024,
+              "source_report_year": 2025,
+              "source_url": "https://www1.hkexnews.hk/listedco/listconews/sehk/2026/0408/2026040800985.pdf",
+              "pdf_sha256": "2f4b1b4435e04184d4b5940f21b96c2ce34c91af9eb95eeb4d825a31313a60a2",
+              "pdf_page": 150,
+              "printed_page": "148",
+              "evidence": "Cash and cash equivalents at 31st December 20,966 19,821",
+              "raw_token": "19,821",
+              "column_index": 1,
+              "row_values": [
+                "20,966",
+                "19,821"
+              ],
+              "method": "comparative_table_column",
+              "verification_status": "machine_extracted"
+            },
+            {
+              "field": "total_borrowings",
+              "value": "91591",
+              "value_in_units": "91591000000",
+              "currency": "HKD",
+              "unit": "million",
+              "fiscal_year": 2024,
+              "source_report_year": 2025,
+              "source_url": "https://www1.hkexnews.hk/listedco/listconews/sehk/2026/0408/2026040800985.pdf",
+              "pdf_sha256": "2f4b1b4435e04184d4b5940f21b96c2ce34c91af9eb95eeb4d825a31313a60a2",
+              "pdf_page": 92,
+              "printed_page": "90",
+              "evidence": "Total borrowings 88,436 91,591",
+              "raw_token": "91,591",
+              "column_index": 1,
+              "row_values": [
+                "88,436",
+                "91,591"
+              ],
+              "method": "comparative_table_column",
+              "verification_status": "machine_extracted"
+            },
+            {
+              "field": "net_debt",
+              "value": "70563",
+              "value_in_units": "70563000000",
+              "currency": "HKD",
+              "unit": "million",
+              "fiscal_year": 2024,
+              "source_report_year": 2025,
+              "source_url": "https://www1.hkexnews.hk/listedco/listconews/sehk/2026/0408/2026040800985.pdf",
+              "pdf_sha256": "2f4b1b4435e04184d4b5940f21b96c2ce34c91af9eb95eeb4d825a31313a60a2",
+              "pdf_page": 92,
+              "printed_page": "90",
+              "evidence": "Net debt 65,264 70,563",
+              "raw_token": "70,563",
+              "column_index": 1,
+              "row_values": [
+                "65,264",
+                "70,563"
+              ],
+              "method": "comparative_table_column",
+              "verification_status": "machine_extracted"
+            },
+            {
+              "field": "dividend_per_share_ten_year",
+              "value": "3.35",
+              "value_in_units": "3.35",
+              "currency": "HKD",
+              "unit": "units",
+              "fiscal_year": 2024,
+              "source_report_year": 2025,
+              "source_url": "https://www1.hkexnews.hk/listedco/listconews/sehk/2026/0408/2026040800985.pdf",
+              "pdf_sha256": "2f4b1b4435e04184d4b5940f21b96c2ce34c91af9eb95eeb4d825a31313a60a2",
+              "pdf_page": 242,
+              "printed_page": "240",
+              "evidence": "Dividends per share 2.10 2.10 3.00 3.00 1.70 2.60 3.00 11.32 3.35 3.80",
+              "raw_token": "3.35",
+              "column_index": 8,
+              "row_values": [
+                "2.10",
+                "2.10",
+                "3.00",
+                "3.00",
+                "1.70",
+                "2.60",
+                "3.00",
+                "11.32",
+                "3.35",
+                "3.80"
+              ],
+              "method": "comparative_table_column",
+              "verification_status": "machine_extracted"
+            }
+          ],
+          "omitted": [
+            {
+              "field": "dividend_first_interim_a",
+              "reason": "no_comparative_table_row"
+            },
+            {
+              "field": "dividend_second_interim_a",
+              "reason": "no_comparative_table_row"
+            }
+          ],
+          "warning": "Comparative column from FY2025 PDF; not independently checked against FY2024 annual report or a second PDF engine."
+        },
+        "2025": {
+          "fiscal_year": 2025,
+          "status": "extracted_consistent",
+          "human_review": "pending",
+          "facts": [
+            {
+              "field": "revenue",
+              "value": "90467",
+              "currency": "HKD",
+              "unit": "million",
+              "pdf_page": 147,
+              "source_url": "https://www1.hkexnews.hk/listedco/listconews/sehk/2026/0408/2026040800985.pdf",
+              "verification_status": "machine_extracted"
+            },
+            {
+              "field": "operating_profit",
+              "value": "4454",
+              "currency": "HKD",
+              "unit": "million",
+              "pdf_page": 147,
+              "source_url": "https://www1.hkexnews.hk/listedco/listconews/sehk/2026/0408/2026040800985.pdf",
+              "verification_status": "machine_extracted"
+            },
+            {
+              "field": "profit_before_tax",
+              "value": "5836",
+              "currency": "HKD",
+              "unit": "million",
+              "pdf_page": 147,
+              "source_url": "https://www1.hkexnews.hk/listedco/listconews/sehk/2026/0408/2026040800985.pdf",
+              "verification_status": "machine_extracted"
+            },
+            {
+              "field": "net_profit",
+              "value": "3495",
+              "currency": "HKD",
+              "unit": "million",
+              "pdf_page": 147,
+              "source_url": "https://www1.hkexnews.hk/listedco/listconews/sehk/2026/0408/2026040800985.pdf",
+              "verification_status": "machine_extracted"
+            },
+            {
+              "field": "net_income_attributable",
+              "value": "2938",
+              "currency": "HKD",
+              "unit": "million",
+              "pdf_page": 147,
+              "source_url": "https://www1.hkexnews.hk/listedco/listconews/sehk/2026/0408/2026040800985.pdf",
+              "verification_status": "machine_extracted"
+            },
+            {
+              "field": "nci_profit",
+              "value": "557",
+              "currency": "HKD",
+              "unit": "million",
+              "pdf_page": 147,
+              "source_url": "https://www1.hkexnews.hk/listedco/listconews/sehk/2026/0408/2026040800985.pdf",
+              "verification_status": "machine_extracted"
+            },
+            {
+              "field": "underlying_profit_attributable",
+              "value": "11373",
+              "currency": "HKD",
+              "unit": "million",
+              "pdf_page": 147,
+              "source_url": "https://www1.hkexnews.hk/listedco/listconews/sehk/2026/0408/2026040800985.pdf",
+              "verification_status": "machine_extracted"
+            },
+            {
+              "field": "eps_basic",
+              "value": "2.17",
+              "currency": "HKD",
+              "unit": "units",
+              "pdf_page": 147,
+              "source_url": "https://www1.hkexnews.hk/listedco/listconews/sehk/2026/0408/2026040800985.pdf",
+              "verification_status": "machine_extracted"
+            },
+            {
+              "field": "non_current_assets",
+              "value": "416475",
+              "currency": "HKD",
+              "unit": "million",
+              "pdf_page": 149,
+              "source_url": "https://www1.hkexnews.hk/listedco/listconews/sehk/2026/0408/2026040800985.pdf",
+              "verification_status": "machine_extracted"
+            },
+            {
+              "field": "current_assets",
+              "value": "59938",
+              "currency": "HKD",
+              "unit": "million",
+              "pdf_page": 149,
+              "source_url": "https://www1.hkexnews.hk/listedco/listconews/sehk/2026/0408/2026040800985.pdf",
+              "verification_status": "machine_extracted"
+            },
+            {
+              "field": "cash",
+              "value": "23172",
+              "currency": "HKD",
+              "unit": "million",
+              "pdf_page": 149,
+              "source_url": "https://www1.hkexnews.hk/listedco/listconews/sehk/2026/0408/2026040800985.pdf",
+              "verification_status": "machine_extracted"
+            },
+            {
+              "field": "current_liabilities",
+              "value": "61247",
+              "currency": "HKD",
+              "unit": "million",
+              "pdf_page": 149,
+              "source_url": "https://www1.hkexnews.hk/listedco/listconews/sehk/2026/0408/2026040800985.pdf",
+              "verification_status": "machine_extracted"
+            },
+            {
+              "field": "non_current_liabilities",
+              "value": "98931",
+              "currency": "HKD",
+              "unit": "million",
+              "pdf_page": 149,
+              "source_url": "https://www1.hkexnews.hk/listedco/listconews/sehk/2026/0408/2026040800985.pdf",
+              "verification_status": "machine_extracted"
+            },
+            {
+              "field": "net_assets",
+              "value": "316235",
+              "currency": "HKD",
+              "unit": "million",
+              "pdf_page": 149,
+              "source_url": "https://www1.hkexnews.hk/listedco/listconews/sehk/2026/0408/2026040800985.pdf",
+              "verification_status": "machine_extracted"
+            },
+            {
+              "field": "equity_attributable",
+              "value": "259577",
+              "currency": "HKD",
+              "unit": "million",
+              "pdf_page": 149,
+              "source_url": "https://www1.hkexnews.hk/listedco/listconews/sehk/2026/0408/2026040800985.pdf",
+              "verification_status": "machine_extracted"
+            },
+            {
+              "field": "total_equity",
+              "value": "316235",
+              "currency": "HKD",
+              "unit": "million",
+              "pdf_page": 149,
+              "source_url": "https://www1.hkexnews.hk/listedco/listconews/sehk/2026/0408/2026040800985.pdf",
+              "verification_status": "machine_extracted"
+            },
+            {
+              "field": "operating_cash_flow",
+              "value": "14551",
+              "currency": "HKD",
+              "unit": "million",
+              "pdf_page": 150,
+              "source_url": "https://www1.hkexnews.hk/listedco/listconews/sehk/2026/0408/2026040800985.pdf",
+              "verification_status": "machine_extracted"
+            },
+            {
+              "field": "capex",
+              "value": "5595",
+              "currency": "HKD",
+              "unit": "million",
+              "pdf_page": 150,
+              "source_url": "https://www1.hkexnews.hk/listedco/listconews/sehk/2026/0408/2026040800985.pdf",
+              "verification_status": "machine_extracted"
+            },
+            {
+              "field": "dividends_paid_to_shareholders",
+              "value": "4602",
+              "currency": "HKD",
+              "unit": "million",
+              "pdf_page": 150,
+              "source_url": "https://www1.hkexnews.hk/listedco/listconews/sehk/2026/0408/2026040800985.pdf",
+              "verification_status": "machine_extracted"
+            },
+            {
+              "field": "cash_end_cf",
+              "value": "20966",
+              "currency": "HKD",
+              "unit": "million",
+              "pdf_page": 150,
+              "source_url": "https://www1.hkexnews.hk/listedco/listconews/sehk/2026/0408/2026040800985.pdf",
+              "verification_status": "machine_extracted"
+            },
+            {
+              "field": "total_borrowings",
+              "value": "88436",
+              "currency": "HKD",
+              "unit": "million",
+              "pdf_page": 92,
+              "source_url": "https://www1.hkexnews.hk/listedco/listconews/sehk/2026/0408/2026040800985.pdf",
+              "verification_status": "machine_extracted"
+            },
+            {
+              "field": "net_debt",
+              "value": "65264",
+              "currency": "HKD",
+              "unit": "million",
+              "pdf_page": 92,
+              "source_url": "https://www1.hkexnews.hk/listedco/listconews/sehk/2026/0408/2026040800985.pdf",
+              "verification_status": "machine_extracted"
+            },
+            {
+              "field": "dividend_first_interim_a",
+              "value": "1.3",
+              "currency": "HKD",
+              "unit": "units",
+              "pdf_page": 170,
+              "source_url": "https://www1.hkexnews.hk/listedco/listconews/sehk/2026/0408/2026040800985.pdf",
+              "verification_status": "machine_extracted"
+            },
+            {
+              "field": "dividend_second_interim_a",
+              "value": "2.5",
+              "currency": "HKD",
+              "unit": "units",
+              "pdf_page": 170,
+              "source_url": "https://www1.hkexnews.hk/listedco/listconews/sehk/2026/0408/2026040800985.pdf",
+              "verification_status": "machine_extracted"
+            },
+            {
+              "field": "dividend_per_share_ten_year",
+              "value": "3.8",
+              "currency": "HKD",
+              "unit": "units",
+              "pdf_page": 242,
+              "source_url": "https://www1.hkexnews.hk/listedco/listconews/sehk/2026/0408/2026040800985.pdf",
+              "verification_status": "machine_extracted"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "symbol": "002594.SZ",
+      "company": "BYD Company Limited (比亚迪股份有限公司)",
+      "years": {
+        "2024": {
+          "symbol": "002594.SZ",
+          "company": "BYD Company Limited (比亚迪股份有限公司)",
+          "fiscal_year": 2024,
+          "source_report_year": 2025,
+          "source_url": "https://disc.static.szse.cn/download/disc/disk03/finalpage/2026-03-28/f5cdbdbf-b138-4e83-8c6d-5a7eecb9e670.PDF",
+          "currency": "CNY",
+          "unit": "thousand",
+          "status": "comparative_extracted_pending_review",
+          "human_review": "pending",
+          "facts": [
+            {
+              "field": "revenue",
+              "value": "777102455",
+              "value_in_units": "777102455000",
+              "currency": "CNY",
+              "unit": "thousand",
+              "fiscal_year": 2024,
+              "source_report_year": 2025,
+              "source_url": "https://disc.static.szse.cn/download/disc/disk03/finalpage/2026-03-28/f5cdbdbf-b138-4e83-8c6d-5a7eecb9e670.PDF",
+              "pdf_sha256": "710d8b2e08e37ba521f1c4071d2c3e2369d3cadabc21a45073215d9f72138b0b",
+              "pdf_page": 126,
+              "printed_page": "126",
+              "evidence": "一、 营业收入 45  803,964,958     777,102,455",
+              "raw_token": "777,102,455",
+              "column_index": 1,
+              "row_values": [
+                "803,964,958",
+                "777,102,455"
+              ],
+              "method": "comparative_table_column",
+              "verification_status": "machine_extracted"
+            },
+            {
+              "field": "operating_profit",
+              "value": "50486047",
+              "value_in_units": "50486047000",
+              "currency": "CNY",
+              "unit": "thousand",
+              "fiscal_year": 2024,
+              "source_report_year": 2025,
+              "source_url": "https://disc.static.szse.cn/download/disc/disk03/finalpage/2026-03-28/f5cdbdbf-b138-4e83-8c6d-5a7eecb9e670.PDF",
+              "pdf_sha256": "710d8b2e08e37ba521f1c4071d2c3e2369d3cadabc21a45073215d9f72138b0b",
+              "pdf_page": 126,
+              "printed_page": "126",
+              "evidence": "二、 营业利润   40,184,709     50,486,047",
+              "raw_token": "50,486,047",
+              "column_index": 1,
+              "row_values": [
+                "40,184,709",
+                "50,486,047"
+              ],
+              "method": "comparative_table_column",
+              "verification_status": "machine_extracted"
+            },
+            {
+              "field": "profit_before_tax",
+              "value": "49680677",
+              "value_in_units": "49680677000",
+              "currency": "CNY",
+              "unit": "thousand",
+              "fiscal_year": 2024,
+              "source_report_year": 2025,
+              "source_url": "https://disc.static.szse.cn/download/disc/disk03/finalpage/2026-03-28/f5cdbdbf-b138-4e83-8c6d-5a7eecb9e670.PDF",
+              "pdf_sha256": "710d8b2e08e37ba521f1c4071d2c3e2369d3cadabc21a45073215d9f72138b0b",
+              "pdf_page": 126,
+              "printed_page": "126",
+              "evidence": "三、 利润总额   39,753,049   49,680,677",
+              "raw_token": "49,680,677",
+              "column_index": 1,
+              "row_values": [
+                "39,753,049",
+                "49,680,677"
+              ],
+              "method": "comparative_table_column",
+              "verification_status": "machine_extracted"
+            },
+            {
+              "field": "net_profit",
+              "value": "41587940",
+              "value_in_units": "41587940000",
+              "currency": "CNY",
+              "unit": "thousand",
+              "fiscal_year": 2024,
+              "source_report_year": 2025,
+              "source_url": "https://disc.static.szse.cn/download/disc/disk03/finalpage/2026-03-28/f5cdbdbf-b138-4e83-8c6d-5a7eecb9e670.PDF",
+              "pdf_sha256": "710d8b2e08e37ba521f1c4071d2c3e2369d3cadabc21a45073215d9f72138b0b",
+              "pdf_page": 126,
+              "printed_page": "126",
+              "evidence": "四、 净利润   33,760,758     41,587,940",
+              "raw_token": "41,587,940",
+              "column_index": 1,
+              "row_values": [
+                "33,760,758",
+                "41,587,940"
+              ],
+              "method": "comparative_table_column",
+              "verification_status": "machine_extracted"
+            },
+            {
+              "field": "net_income_attributable",
+              "value": "40254346",
+              "value_in_units": "40254346000",
+              "currency": "CNY",
+              "unit": "thousand",
+              "fiscal_year": 2024,
+              "source_report_year": 2025,
+              "source_url": "https://disc.static.szse.cn/download/disc/disk03/finalpage/2026-03-28/f5cdbdbf-b138-4e83-8c6d-5a7eecb9e670.PDF",
+              "pdf_sha256": "710d8b2e08e37ba521f1c4071d2c3e2369d3cadabc21a45073215d9f72138b0b",
+              "pdf_page": 126,
+              "printed_page": "126",
+              "evidence": "归属于母公司所有者的净利润   32,619,022     40,254,346",
+              "raw_token": "40,254,346",
+              "column_index": 1,
+              "row_values": [
+                "32,619,022",
+                "40,254,346"
+              ],
+              "method": "comparative_table_column",
+              "verification_status": "machine_extracted"
+            },
+            {
+              "field": "nci_profit",
+              "value": "1333594",
+              "value_in_units": "1333594000",
+              "currency": "CNY",
+              "unit": "thousand",
+              "fiscal_year": 2024,
+              "source_report_year": 2025,
+              "source_url": "https://disc.static.szse.cn/download/disc/disk03/finalpage/2026-03-28/f5cdbdbf-b138-4e83-8c6d-5a7eecb9e670.PDF",
+              "pdf_sha256": "710d8b2e08e37ba521f1c4071d2c3e2369d3cadabc21a45073215d9f72138b0b",
+              "pdf_page": 126,
+              "printed_page": "126",
+              "evidence": "少数股东损益     1,141,736      1,333,594",
+              "raw_token": "1,333,594",
+              "column_index": 1,
+              "row_values": [
+                "1,141,736",
+                "1,333,594"
+              ],
+              "method": "comparative_table_column",
+              "verification_status": "machine_extracted"
+            },
+            {
+              "field": "eps_basic",
+              "value": "4.61",
+              "value_in_units": "4.61",
+              "currency": "CNY",
+              "unit": "units",
+              "fiscal_year": 2024,
+              "source_report_year": 2025,
+              "source_url": "https://disc.static.szse.cn/download/disc/disk03/finalpage/2026-03-28/f5cdbdbf-b138-4e83-8c6d-5a7eecb9e670.PDF",
+              "pdf_sha256": "710d8b2e08e37ba521f1c4071d2c3e2369d3cadabc21a45073215d9f72138b0b",
+              "pdf_page": 126,
+              "printed_page": "126",
+              "evidence": "基本每股收益 60  3.58   4.61",
+              "raw_token": "4.61",
+              "column_index": 1,
+              "row_values": [
+                "3.58",
+                "4.61"
+              ],
+              "method": "comparative_table_column",
+              "verification_status": "machine_extracted"
+            },
+            {
+              "field": "cash",
+              "value": "102738734",
+              "value_in_units": "102738734000",
+              "currency": "CNY",
+              "unit": "thousand",
+              "fiscal_year": 2024,
+              "source_report_year": 2025,
+              "source_url": "https://disc.static.szse.cn/download/disc/disk03/finalpage/2026-03-28/f5cdbdbf-b138-4e83-8c6d-5a7eecb9e670.PDF",
+              "pdf_sha256": "710d8b2e08e37ba521f1c4071d2c3e2369d3cadabc21a45073215d9f72138b0b",
+              "pdf_page": 123,
+              "printed_page": "123",
+              "evidence": "货币资金 1   75,424,747     102,738,734",
+              "raw_token": "102,738,734",
+              "column_index": 1,
+              "row_values": [
+                "75,424,747",
+                "102,738,734"
+              ],
+              "method": "comparative_table_column",
+              "verification_status": "machine_extracted"
+            },
+            {
+              "field": "current_assets",
+              "value": "370572244",
+              "value_in_units": "370572244000",
+              "currency": "CNY",
+              "unit": "thousand",
+              "fiscal_year": 2024,
+              "source_report_year": 2025,
+              "source_url": "https://disc.static.szse.cn/download/disc/disk03/finalpage/2026-03-28/f5cdbdbf-b138-4e83-8c6d-5a7eecb9e670.PDF",
+              "pdf_sha256": "710d8b2e08e37ba521f1c4071d2c3e2369d3cadabc21a45073215d9f72138b0b",
+              "pdf_page": 123,
+              "printed_page": "123",
+              "evidence": "流动资产合计   371,467,558     370,572,244",
+              "raw_token": "370,572,244",
+              "column_index": 1,
+              "row_values": [
+                "371,467,558",
+                "370,572,244"
+              ],
+              "method": "comparative_table_column",
+              "verification_status": "machine_extracted"
+            },
+            {
+              "field": "non_current_assets",
+              "value": "412783611",
+              "value_in_units": "412783611000",
+              "currency": "CNY",
+              "unit": "thousand",
+              "fiscal_year": 2024,
+              "source_report_year": 2025,
+              "source_url": "https://disc.static.szse.cn/download/disc/disk03/finalpage/2026-03-28/f5cdbdbf-b138-4e83-8c6d-5a7eecb9e670.PDF",
+              "pdf_sha256": "710d8b2e08e37ba521f1c4071d2c3e2369d3cadabc21a45073215d9f72138b0b",
+              "pdf_page": 123,
+              "printed_page": "123",
+              "evidence": "非流动资产合计   512,262,325    412,783,611",
+              "raw_token": "412,783,611",
+              "column_index": 1,
+              "row_values": [
+                "512,262,325",
+                "412,783,611"
+              ],
+              "method": "comparative_table_column",
+              "verification_status": "machine_extracted"
+            },
+            {
+              "field": "total_assets",
+              "value": "783355855",
+              "value_in_units": "783355855000",
+              "currency": "CNY",
+              "unit": "thousand",
+              "fiscal_year": 2024,
+              "source_report_year": 2025,
+              "source_url": "https://disc.static.szse.cn/download/disc/disk03/finalpage/2026-03-28/f5cdbdbf-b138-4e83-8c6d-5a7eecb9e670.PDF",
+              "pdf_sha256": "710d8b2e08e37ba521f1c4071d2c3e2369d3cadabc21a45073215d9f72138b0b",
+              "pdf_page": 123,
+              "printed_page": "123",
+              "evidence": "资产总计   883,729,883   783,355,855",
+              "raw_token": "783,355,855",
+              "column_index": 1,
+              "row_values": [
+                "883,729,883",
+                "783,355,855"
+              ],
+              "method": "comparative_table_column",
+              "verification_status": "machine_extracted"
+            },
+            {
+              "field": "current_liabilities",
+              "value": "495985176",
+              "value_in_units": "495985176000",
+              "currency": "CNY",
+              "unit": "thousand",
+              "fiscal_year": 2024,
+              "source_report_year": 2025,
+              "source_url": "https://disc.static.szse.cn/download/disc/disk03/finalpage/2026-03-28/f5cdbdbf-b138-4e83-8c6d-5a7eecb9e670.PDF",
+              "pdf_sha256": "710d8b2e08e37ba521f1c4071d2c3e2369d3cadabc21a45073215d9f72138b0b",
+              "pdf_page": 124,
+              "printed_page": "124",
+              "evidence": "流动负债合计   468,451,357     495,985,176",
+              "raw_token": "495,985,176",
+              "column_index": 1,
+              "row_values": [
+                "468,451,357",
+                "495,985,176"
+              ],
+              "method": "comparative_table_column",
+              "verification_status": "machine_extracted"
+            },
+            {
+              "field": "non_current_liabilities",
+              "value": "88682470",
+              "value_in_units": "88682470000",
+              "currency": "CNY",
+              "unit": "thousand",
+              "fiscal_year": 2024,
+              "source_report_year": 2025,
+              "source_url": "https://disc.static.szse.cn/download/disc/disk03/finalpage/2026-03-28/f5cdbdbf-b138-4e83-8c6d-5a7eecb9e670.PDF",
+              "pdf_sha256": "710d8b2e08e37ba521f1c4071d2c3e2369d3cadabc21a45073215d9f72138b0b",
+              "pdf_page": 124,
+              "printed_page": "124",
+              "evidence": "非流动负债合计   156,739,341      88,682,470",
+              "raw_token": "88,682,470",
+              "column_index": 1,
+              "row_values": [
+                "156,739,341",
+                "88,682,470"
+              ],
+              "method": "comparative_table_column",
+              "verification_status": "machine_extracted"
+            },
+            {
+              "field": "total_liabilities",
+              "value": "584667646",
+              "value_in_units": "584667646000",
+              "currency": "CNY",
+              "unit": "thousand",
+              "fiscal_year": 2024,
+              "source_report_year": 2025,
+              "source_url": "https://disc.static.szse.cn/download/disc/disk03/finalpage/2026-03-28/f5cdbdbf-b138-4e83-8c6d-5a7eecb9e670.PDF",
+              "pdf_sha256": "710d8b2e08e37ba521f1c4071d2c3e2369d3cadabc21a45073215d9f72138b0b",
+              "pdf_page": 124,
+              "printed_page": "124",
+              "evidence": "负债合计   625,190,698     584,667,646",
+              "raw_token": "584,667,646",
+              "column_index": 1,
+              "row_values": [
+                "625,190,698",
+                "584,667,646"
+              ],
+              "method": "comparative_table_column",
+              "verification_status": "machine_extracted"
+            },
+            {
+              "field": "equity_attributable",
+              "value": "185251104",
+              "value_in_units": "185251104000",
+              "currency": "CNY",
+              "unit": "thousand",
+              "fiscal_year": 2024,
+              "source_report_year": 2025,
+              "source_url": "https://disc.static.szse.cn/download/disc/disk03/finalpage/2026-03-28/f5cdbdbf-b138-4e83-8c6d-5a7eecb9e670.PDF",
+              "pdf_sha256": "710d8b2e08e37ba521f1c4071d2c3e2369d3cadabc21a45073215d9f72138b0b",
+              "pdf_page": 125,
+              "printed_page": "125",
+              "evidence": "归属于母公司股东权益合计   246,274,606     185,251,104",
+              "raw_token": "185,251,104",
+              "column_index": 1,
+              "row_values": [
+                "246,274,606",
+                "185,251,104"
+              ],
+              "method": "comparative_table_column",
+              "verification_status": "machine_extracted"
+            },
+            {
+              "field": "total_equity",
+              "value": "198688209",
+              "value_in_units": "198688209000",
+              "currency": "CNY",
+              "unit": "thousand",
+              "fiscal_year": 2024,
+              "source_report_year": 2025,
+              "source_url": "https://disc.static.szse.cn/download/disc/disk03/finalpage/2026-03-28/f5cdbdbf-b138-4e83-8c6d-5a7eecb9e670.PDF",
+              "pdf_sha256": "710d8b2e08e37ba521f1c4071d2c3e2369d3cadabc21a45073215d9f72138b0b",
+              "pdf_page": 125,
+              "printed_page": "125",
+              "evidence": "股东权益合计   258,539,185   198,688,209",
+              "raw_token": "198,688,209",
+              "column_index": 1,
+              "row_values": [
+                "258,539,185",
+                "198,688,209"
+              ],
+              "method": "comparative_table_column",
+              "verification_status": "machine_extracted"
+            },
+            {
+              "field": "liabilities_and_equity",
+              "value": "783355855",
+              "value_in_units": "783355855000",
+              "currency": "CNY",
+              "unit": "thousand",
+              "fiscal_year": 2024,
+              "source_report_year": 2025,
+              "source_url": "https://disc.static.szse.cn/download/disc/disk03/finalpage/2026-03-28/f5cdbdbf-b138-4e83-8c6d-5a7eecb9e670.PDF",
+              "pdf_sha256": "710d8b2e08e37ba521f1c4071d2c3e2369d3cadabc21a45073215d9f72138b0b",
+              "pdf_page": 125,
+              "printed_page": "125",
+              "evidence": "负债和股东权益总计   883,729,883   783,355,855",
+              "raw_token": "783,355,855",
+              "column_index": 1,
+              "row_values": [
+                "883,729,883",
+                "783,355,855"
+              ],
+              "method": "comparative_table_column",
+              "verification_status": "machine_extracted"
+            },
+            {
+              "field": "operating_cash_flow",
+              "value": "133453873",
+              "value_in_units": "133453873000",
+              "currency": "CNY",
+              "unit": "thousand",
+              "fiscal_year": 2024,
+              "source_report_year": 2025,
+              "source_url": "https://disc.static.szse.cn/download/disc/disk03/finalpage/2026-03-28/f5cdbdbf-b138-4e83-8c6d-5a7eecb9e670.PDF",
+              "pdf_sha256": "710d8b2e08e37ba521f1c4071d2c3e2369d3cadabc21a45073215d9f72138b0b",
+              "pdf_page": 130,
+              "printed_page": "130",
+              "evidence": "经营活动产生的现金流量净额 62   59,135,544     133,453,873",
+              "raw_token": "133,453,873",
+              "column_index": 1,
+              "row_values": [
+                "59,135,544",
+                "133,453,873"
+              ],
+              "method": "comparative_table_column",
+              "verification_status": "machine_extracted"
+            },
+            {
+              "field": "capex",
+              "value": "97359768",
+              "value_in_units": "97359768000",
+              "currency": "CNY",
+              "unit": "thousand",
+              "fiscal_year": 2024,
+              "source_report_year": 2025,
+              "source_url": "https://disc.static.szse.cn/download/disc/disk03/finalpage/2026-03-28/f5cdbdbf-b138-4e83-8c6d-5a7eecb9e670.PDF",
+              "pdf_sha256": "710d8b2e08e37ba521f1c4071d2c3e2369d3cadabc21a45073215d9f72138b0b",
+              "pdf_page": 130,
+              "printed_page": "130",
+              "evidence": "购建固定资产、无形资产和其他长期资产支付的现金    156,807,853     97,359,768",
+              "raw_token": "97,359,768",
+              "column_index": 1,
+              "row_values": [
+                "156,807,853",
+                "97,359,768"
+              ],
+              "method": "comparative_table_column",
+              "verification_status": "machine_extracted"
+            },
+            {
+              "field": "dividends_and_interest_paid",
+              "value": "10051081",
+              "value_in_units": "10051081000",
+              "currency": "CNY",
+              "unit": "thousand",
+              "fiscal_year": 2024,
+              "source_report_year": 2025,
+              "source_url": "https://disc.static.szse.cn/download/disc/disk03/finalpage/2026-03-28/f5cdbdbf-b138-4e83-8c6d-5a7eecb9e670.PDF",
+              "pdf_sha256": "710d8b2e08e37ba521f1c4071d2c3e2369d3cadabc21a45073215d9f72138b0b",
+              "pdf_page": 131,
+              "printed_page": "131",
+              "evidence": "分配股利、利润或偿付利息支付的现金    14,125,279     10,051,081",
+              "raw_token": "10,051,081",
+              "column_index": 1,
+              "row_values": [
+                "14,125,279",
+                "10,051,081"
+              ],
+              "method": "comparative_table_column",
+              "verification_status": "machine_extracted"
+            },
+            {
+              "field": "cash_end_cf",
+              "value": "102256542",
+              "value_in_units": "102256542000",
+              "currency": "CNY",
+              "unit": "thousand",
+              "fiscal_year": 2024,
+              "source_report_year": 2025,
+              "source_url": "https://disc.static.szse.cn/download/disc/disk03/finalpage/2026-03-28/f5cdbdbf-b138-4e83-8c6d-5a7eecb9e670.PDF",
+              "pdf_sha256": "710d8b2e08e37ba521f1c4071d2c3e2369d3cadabc21a45073215d9f72138b0b",
+              "pdf_page": 131,
+              "printed_page": "131",
+              "evidence": "六、 年末现金及现金等价物余额 62  68,395,197    102,256,542",
+              "raw_token": "102,256,542",
+              "column_index": 1,
+              "row_values": [
+                "68,395,197",
+                "102,256,542"
+              ],
+              "method": "comparative_table_column",
+              "verification_status": "machine_extracted"
+            }
+          ],
+          "omitted": [
+            {
+              "field": "dividend_per_share",
+              "reason": "no_comparative_table_row"
+            },
+            {
+              "field": "dividend_per_10_shares",
+              "reason": "no_comparative_table_row"
+            }
+          ],
+          "warning": "Comparative column from FY2025 PDF; not independently checked against FY2024 annual report or a second PDF engine."
+        },
+        "2025": {
+          "fiscal_year": 2025,
+          "status": "extracted_consistent",
+          "human_review": "pending",
+          "facts": [
+            {
+              "field": "revenue",
+              "value": "803964958",
+              "currency": "CNY",
+              "unit": "thousand",
+              "pdf_page": 126,
+              "source_url": "https://disc.static.szse.cn/download/disc/disk03/finalpage/2026-03-28/f5cdbdbf-b138-4e83-8c6d-5a7eecb9e670.PDF",
+              "verification_status": "machine_extracted"
+            },
+            {
+              "field": "operating_profit",
+              "value": "40184709",
+              "currency": "CNY",
+              "unit": "thousand",
+              "pdf_page": 126,
+              "source_url": "https://disc.static.szse.cn/download/disc/disk03/finalpage/2026-03-28/f5cdbdbf-b138-4e83-8c6d-5a7eecb9e670.PDF",
+              "verification_status": "machine_extracted"
+            },
+            {
+              "field": "profit_before_tax",
+              "value": "39753049",
+              "currency": "CNY",
+              "unit": "thousand",
+              "pdf_page": 126,
+              "source_url": "https://disc.static.szse.cn/download/disc/disk03/finalpage/2026-03-28/f5cdbdbf-b138-4e83-8c6d-5a7eecb9e670.PDF",
+              "verification_status": "machine_extracted"
+            },
+            {
+              "field": "net_profit",
+              "value": "33760758",
+              "currency": "CNY",
+              "unit": "thousand",
+              "pdf_page": 126,
+              "source_url": "https://disc.static.szse.cn/download/disc/disk03/finalpage/2026-03-28/f5cdbdbf-b138-4e83-8c6d-5a7eecb9e670.PDF",
+              "verification_status": "machine_extracted"
+            },
+            {
+              "field": "net_income_attributable",
+              "value": "32619022",
+              "currency": "CNY",
+              "unit": "thousand",
+              "pdf_page": 126,
+              "source_url": "https://disc.static.szse.cn/download/disc/disk03/finalpage/2026-03-28/f5cdbdbf-b138-4e83-8c6d-5a7eecb9e670.PDF",
+              "verification_status": "machine_extracted"
+            },
+            {
+              "field": "nci_profit",
+              "value": "1141736",
+              "currency": "CNY",
+              "unit": "thousand",
+              "pdf_page": 126,
+              "source_url": "https://disc.static.szse.cn/download/disc/disk03/finalpage/2026-03-28/f5cdbdbf-b138-4e83-8c6d-5a7eecb9e670.PDF",
+              "verification_status": "machine_extracted"
+            },
+            {
+              "field": "eps_basic",
+              "value": "3.58",
+              "currency": "CNY",
+              "unit": "units",
+              "pdf_page": 126,
+              "source_url": "https://disc.static.szse.cn/download/disc/disk03/finalpage/2026-03-28/f5cdbdbf-b138-4e83-8c6d-5a7eecb9e670.PDF",
+              "verification_status": "machine_extracted"
+            },
+            {
+              "field": "cash",
+              "value": "75424747",
+              "currency": "CNY",
+              "unit": "thousand",
+              "pdf_page": 123,
+              "source_url": "https://disc.static.szse.cn/download/disc/disk03/finalpage/2026-03-28/f5cdbdbf-b138-4e83-8c6d-5a7eecb9e670.PDF",
+              "verification_status": "machine_extracted"
+            },
+            {
+              "field": "current_assets",
+              "value": "371467558",
+              "currency": "CNY",
+              "unit": "thousand",
+              "pdf_page": 123,
+              "source_url": "https://disc.static.szse.cn/download/disc/disk03/finalpage/2026-03-28/f5cdbdbf-b138-4e83-8c6d-5a7eecb9e670.PDF",
+              "verification_status": "machine_extracted"
+            },
+            {
+              "field": "non_current_assets",
+              "value": "512262325",
+              "currency": "CNY",
+              "unit": "thousand",
+              "pdf_page": 123,
+              "source_url": "https://disc.static.szse.cn/download/disc/disk03/finalpage/2026-03-28/f5cdbdbf-b138-4e83-8c6d-5a7eecb9e670.PDF",
+              "verification_status": "machine_extracted"
+            },
+            {
+              "field": "total_assets",
+              "value": "883729883",
+              "currency": "CNY",
+              "unit": "thousand",
+              "pdf_page": 123,
+              "source_url": "https://disc.static.szse.cn/download/disc/disk03/finalpage/2026-03-28/f5cdbdbf-b138-4e83-8c6d-5a7eecb9e670.PDF",
+              "verification_status": "machine_extracted"
+            },
+            {
+              "field": "current_liabilities",
+              "value": "468451357",
+              "currency": "CNY",
+              "unit": "thousand",
+              "pdf_page": 124,
+              "source_url": "https://disc.static.szse.cn/download/disc/disk03/finalpage/2026-03-28/f5cdbdbf-b138-4e83-8c6d-5a7eecb9e670.PDF",
+              "verification_status": "machine_extracted"
+            },
+            {
+              "field": "non_current_liabilities",
+              "value": "156739341",
+              "currency": "CNY",
+              "unit": "thousand",
+              "pdf_page": 124,
+              "source_url": "https://disc.static.szse.cn/download/disc/disk03/finalpage/2026-03-28/f5cdbdbf-b138-4e83-8c6d-5a7eecb9e670.PDF",
+              "verification_status": "machine_extracted"
+            },
+            {
+              "field": "total_liabilities",
+              "value": "625190698",
+              "currency": "CNY",
+              "unit": "thousand",
+              "pdf_page": 124,
+              "source_url": "https://disc.static.szse.cn/download/disc/disk03/finalpage/2026-03-28/f5cdbdbf-b138-4e83-8c6d-5a7eecb9e670.PDF",
+              "verification_status": "machine_extracted"
+            },
+            {
+              "field": "equity_attributable",
+              "value": "246274606",
+              "currency": "CNY",
+              "unit": "thousand",
+              "pdf_page": 125,
+              "source_url": "https://disc.static.szse.cn/download/disc/disk03/finalpage/2026-03-28/f5cdbdbf-b138-4e83-8c6d-5a7eecb9e670.PDF",
+              "verification_status": "machine_extracted"
+            },
+            {
+              "field": "total_equity",
+              "value": "258539185",
+              "currency": "CNY",
+              "unit": "thousand",
+              "pdf_page": 125,
+              "source_url": "https://disc.static.szse.cn/download/disc/disk03/finalpage/2026-03-28/f5cdbdbf-b138-4e83-8c6d-5a7eecb9e670.PDF",
+              "verification_status": "machine_extracted"
+            },
+            {
+              "field": "liabilities_and_equity",
+              "value": "883729883",
+              "currency": "CNY",
+              "unit": "thousand",
+              "pdf_page": 125,
+              "source_url": "https://disc.static.szse.cn/download/disc/disk03/finalpage/2026-03-28/f5cdbdbf-b138-4e83-8c6d-5a7eecb9e670.PDF",
+              "verification_status": "machine_extracted"
+            },
+            {
+              "field": "operating_cash_flow",
+              "value": "59135544",
+              "currency": "CNY",
+              "unit": "thousand",
+              "pdf_page": 130,
+              "source_url": "https://disc.static.szse.cn/download/disc/disk03/finalpage/2026-03-28/f5cdbdbf-b138-4e83-8c6d-5a7eecb9e670.PDF",
+              "verification_status": "machine_extracted"
+            },
+            {
+              "field": "capex",
+              "value": "156807853",
+              "currency": "CNY",
+              "unit": "thousand",
+              "pdf_page": 130,
+              "source_url": "https://disc.static.szse.cn/download/disc/disk03/finalpage/2026-03-28/f5cdbdbf-b138-4e83-8c6d-5a7eecb9e670.PDF",
+              "verification_status": "machine_extracted"
+            },
+            {
+              "field": "dividends_and_interest_paid",
+              "value": "14125279",
+              "currency": "CNY",
+              "unit": "thousand",
+              "pdf_page": 131,
+              "source_url": "https://disc.static.szse.cn/download/disc/disk03/finalpage/2026-03-28/f5cdbdbf-b138-4e83-8c6d-5a7eecb9e670.PDF",
+              "verification_status": "machine_extracted"
+            },
+            {
+              "field": "cash_end_cf",
+              "value": "68395197",
+              "currency": "CNY",
+              "unit": "thousand",
+              "pdf_page": 131,
+              "source_url": "https://disc.static.szse.cn/download/disc/disk03/finalpage/2026-03-28/f5cdbdbf-b138-4e83-8c6d-5a7eecb9e670.PDF",
+              "verification_status": "machine_extracted"
+            },
+            {
+              "field": "dividend_per_share",
+              "value": "0.358",
+              "currency": "CNY",
+              "unit": "units",
+              "pdf_page": 249,
+              "source_url": "https://disc.static.szse.cn/download/disc/disk03/finalpage/2026-03-28/f5cdbdbf-b138-4e83-8c6d-5a7eecb9e670.PDF",
+              "verification_status": "machine_extracted"
+            },
+            {
+              "field": "dividend_per_10_shares",
+              "value": "3.58",
+              "currency": "CNY",
+              "unit": "units",
+              "pdf_page": 5,
+              "source_url": "https://disc.static.szse.cn/download/disc/disk03/finalpage/2026-03-28/f5cdbdbf-b138-4e83-8c6d-5a7eecb9e670.PDF",
+              "verification_status": "machine_extracted"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "symbol": "0142.HK",
+      "company": "First Pacific Company Limited",
+      "years": {
+        "2024": {
+          "symbol": "0142.HK",
+          "company": "First Pacific Company Limited",
+          "fiscal_year": 2024,
+          "source_report_year": 2025,
+          "source_url": "https://www.firstpacific.com/wp-content/uploads/2026/04/ew0142.pdf",
+          "currency": "USD",
+          "unit": "million",
+          "status": "comparative_extracted_pending_review",
+          "human_review": "pending",
+          "facts": [
+            {
+              "field": "revenue",
+              "value": "10057.2",
+              "value_in_units": "10057200000",
+              "currency": "USD",
+              "unit": "million",
+              "fiscal_year": 2024,
+              "source_report_year": 2025,
+              "source_url": "https://www.firstpacific.com/wp-content/uploads/2026/04/ew0142.pdf",
+              "pdf_sha256": "4dca002f1a256863e5343968f47d6f669dfcdf7930509a445f6aad0585822fe0",
+              "pdf_page": 103,
+              "printed_page": "101",
+              "evidence": "Turnover 4 10,232.5 10,057.2",
+              "raw_token": "10,057.2",
+              "column_index": 1,
+              "row_values": [
+                "10,232.5",
+                "10,057.2"
+              ],
+              "method": "comparative_table_column",
+              "verification_status": "machine_extracted"
+            },
+            {
+              "field": "profit_before_tax",
+              "value": "2027.1",
+              "value_in_units": "2027100000",
+              "currency": "USD",
+              "unit": "million",
+              "fiscal_year": 2024,
+              "source_report_year": 2025,
+              "source_url": "https://www.firstpacific.com/wp-content/uploads/2026/04/ew0142.pdf",
+              "pdf_sha256": "4dca002f1a256863e5343968f47d6f669dfcdf7930509a445f6aad0585822fe0",
+              "pdf_page": 103,
+              "printed_page": "101",
+              "evidence": "Profit before Taxation 5 2,252.0 2,027.1",
+              "raw_token": "2,027.1",
+              "column_index": 1,
+              "row_values": [
+                "2,252.0",
+                "2,027.1"
+              ],
+              "method": "comparative_table_column",
+              "verification_status": "machine_extracted"
+            },
+            {
+              "field": "net_profit",
+              "value": "1603.3",
+              "value_in_units": "1603300000",
+              "currency": "USD",
+              "unit": "million",
+              "fiscal_year": 2024,
+              "source_report_year": 2025,
+              "source_url": "https://www.firstpacific.com/wp-content/uploads/2026/04/ew0142.pdf",
+              "pdf_sha256": "4dca002f1a256863e5343968f47d6f669dfcdf7930509a445f6aad0585822fe0",
+              "pdf_page": 103,
+              "printed_page": "101",
+              "evidence": "Profit for the Year 1,780.9 1,603.3",
+              "raw_token": "1,603.3",
+              "column_index": 1,
+              "row_values": [
+                "1,780.9",
+                "1,603.3"
+              ],
+              "method": "comparative_table_column",
+              "verification_status": "machine_extracted"
+            },
+            {
+              "field": "net_income_attributable",
+              "value": "600.3",
+              "value_in_units": "600300000",
+              "currency": "USD",
+              "unit": "million",
+              "fiscal_year": 2024,
+              "source_report_year": 2025,
+              "source_url": "https://www.firstpacific.com/wp-content/uploads/2026/04/ew0142.pdf",
+              "pdf_sha256": "4dca002f1a256863e5343968f47d6f669dfcdf7930509a445f6aad0585822fe0",
+              "pdf_page": 103,
+              "printed_page": "101",
+              "evidence": "Owners of the Parent 7 661.0 600.3",
+              "raw_token": "600.3",
+              "column_index": 1,
+              "row_values": [
+                "661.0",
+                "600.3"
+              ],
+              "method": "comparative_table_column",
+              "verification_status": "machine_extracted"
+            },
+            {
+              "field": "nci_profit",
+              "value": "1003",
+              "value_in_units": "1003000000",
+              "currency": "USD",
+              "unit": "million",
+              "fiscal_year": 2024,
+              "source_report_year": 2025,
+              "source_url": "https://www.firstpacific.com/wp-content/uploads/2026/04/ew0142.pdf",
+              "pdf_sha256": "4dca002f1a256863e5343968f47d6f669dfcdf7930509a445f6aad0585822fe0",
+              "pdf_page": 103,
+              "printed_page": "101",
+              "evidence": "Non-controlling Interests 1,119.9 1,003.0",
+              "raw_token": "1,003.0",
+              "column_index": 1,
+              "row_values": [
+                "1,119.9",
+                "1,003.0"
+              ],
+              "method": "comparative_table_column",
+              "verification_status": "machine_extracted"
+            },
+            {
+              "field": "eps_basic",
+              "value": "14.15",
+              "value_in_units": "0.1415",
+              "currency": "USD",
+              "unit": "cents",
+              "fiscal_year": 2024,
+              "source_report_year": 2025,
+              "source_url": "https://www.firstpacific.com/wp-content/uploads/2026/04/ew0142.pdf",
+              "pdf_sha256": "4dca002f1a256863e5343968f47d6f669dfcdf7930509a445f6aad0585822fe0",
+              "pdf_page": 103,
+              "printed_page": "101",
+              "evidence": "Basic 15.53 14.15",
+              "raw_token": "14.15",
+              "column_index": 1,
+              "row_values": [
+                "15.53",
+                "14.15"
+              ],
+              "method": "comparative_table_column",
+              "verification_status": "machine_extracted"
+            },
+            {
+              "field": "non_current_assets",
+              "value": "21941.9",
+              "value_in_units": "21941900000",
+              "currency": "USD",
+              "unit": "million",
+              "fiscal_year": 2024,
+              "source_report_year": 2025,
+              "source_url": "https://www.firstpacific.com/wp-content/uploads/2026/04/ew0142.pdf",
+              "pdf_sha256": "4dca002f1a256863e5343968f47d6f669dfcdf7930509a445f6aad0585822fe0",
+              "pdf_page": 105,
+              "printed_page": "103",
+              "evidence": "22,949.1 21,941.9",
+              "raw_token": "21,941.9",
+              "column_index": 1,
+              "row_values": [
+                "22,949.1",
+                "21,941.9"
+              ],
+              "method": "comparative_table_column",
+              "verification_status": "machine_extracted"
+            },
+            {
+              "field": "current_assets",
+              "value": "6736",
+              "value_in_units": "6736000000",
+              "currency": "USD",
+              "unit": "million",
+              "fiscal_year": 2024,
+              "source_report_year": 2025,
+              "source_url": "https://www.firstpacific.com/wp-content/uploads/2026/04/ew0142.pdf",
+              "pdf_sha256": "4dca002f1a256863e5343968f47d6f669dfcdf7930509a445f6aad0585822fe0",
+              "pdf_page": 105,
+              "printed_page": "103",
+              "evidence": "7,698.5 6,736.0",
+              "raw_token": "6,736.0",
+              "column_index": 1,
+              "row_values": [
+                "7,698.5",
+                "6,736.0"
+              ],
+              "method": "comparative_table_column",
+              "verification_status": "machine_extracted"
+            },
+            {
+              "field": "cash",
+              "value": "3324.2",
+              "value_in_units": "3324200000",
+              "currency": "USD",
+              "unit": "million",
+              "fiscal_year": 2024,
+              "source_report_year": 2025,
+              "source_url": "https://www.firstpacific.com/wp-content/uploads/2026/04/ew0142.pdf",
+              "pdf_sha256": "4dca002f1a256863e5343968f47d6f669dfcdf7930509a445f6aad0585822fe0",
+              "pdf_page": 105,
+              "printed_page": "103",
+              "evidence": "Cash and cash equivalents and short-term deposits 22 4,206.1 3,324.2",
+              "raw_token": "3,324.2",
+              "column_index": 1,
+              "row_values": [
+                "4,206.1",
+                "3,324.2"
+              ],
+              "method": "comparative_table_column",
+              "verification_status": "machine_extracted"
+            },
+            {
+              "field": "current_liabilities",
+              "value": "4993",
+              "value_in_units": "4993000000",
+              "currency": "USD",
+              "unit": "million",
+              "fiscal_year": 2024,
+              "source_report_year": 2025,
+              "source_url": "https://www.firstpacific.com/wp-content/uploads/2026/04/ew0142.pdf",
+              "pdf_sha256": "4dca002f1a256863e5343968f47d6f669dfcdf7930509a445f6aad0585822fe0",
+              "pdf_page": 105,
+              "printed_page": "103",
+              "evidence": "5,338.3 4,993.0",
+              "raw_token": "4,993.0",
+              "column_index": 1,
+              "row_values": [
+                "5,338.3",
+                "4,993.0"
+              ],
+              "method": "comparative_table_column",
+              "verification_status": "machine_extracted"
+            },
+            {
+              "field": "non_current_liabilities",
+              "value": "11754.7",
+              "value_in_units": "11754700000",
+              "currency": "USD",
+              "unit": "million",
+              "fiscal_year": 2024,
+              "source_report_year": 2025,
+              "source_url": "https://www.firstpacific.com/wp-content/uploads/2026/04/ew0142.pdf",
+              "pdf_sha256": "4dca002f1a256863e5343968f47d6f669dfcdf7930509a445f6aad0585822fe0",
+              "pdf_page": 105,
+              "printed_page": "103",
+              "evidence": "12,185.7 11,754.7",
+              "raw_token": "11,754.7",
+              "column_index": 1,
+              "row_values": [
+                "12,185.7",
+                "11,754.7"
+              ],
+              "method": "comparative_table_column",
+              "verification_status": "machine_extracted"
+            },
+            {
+              "field": "equity_attributable",
+              "value": "3926.2",
+              "value_in_units": "3926200000",
+              "currency": "USD",
+              "unit": "million",
+              "fiscal_year": 2024,
+              "source_report_year": 2025,
+              "source_url": "https://www.firstpacific.com/wp-content/uploads/2026/04/ew0142.pdf",
+              "pdf_sha256": "4dca002f1a256863e5343968f47d6f669dfcdf7930509a445f6aad0585822fe0",
+              "pdf_page": 105,
+              "printed_page": "103",
+              "evidence": "Equity attributable to owners of the parent 4,388.8 3,926.2",
+              "raw_token": "3,926.2",
+              "column_index": 1,
+              "row_values": [
+                "4,388.8",
+                "3,926.2"
+              ],
+              "method": "comparative_table_column",
+              "verification_status": "machine_extracted"
+            },
+            {
+              "field": "total_equity",
+              "value": "11930.2",
+              "value_in_units": "11930200000",
+              "currency": "USD",
+              "unit": "million",
+              "fiscal_year": 2024,
+              "source_report_year": 2025,
+              "source_url": "https://www.firstpacific.com/wp-content/uploads/2026/04/ew0142.pdf",
+              "pdf_sha256": "4dca002f1a256863e5343968f47d6f669dfcdf7930509a445f6aad0585822fe0",
+              "pdf_page": 105,
+              "printed_page": "103",
+              "evidence": "Total Equity 13,123.6 11,930.2",
+              "raw_token": "11,930.2",
+              "column_index": 1,
+              "row_values": [
+                "13,123.6",
+                "11,930.2"
+              ],
+              "method": "comparative_table_column",
+              "verification_status": "machine_extracted"
+            },
+            {
+              "field": "operating_cash_flow",
+              "value": "1746.5",
+              "value_in_units": "1746500000",
+              "currency": "USD",
+              "unit": "million",
+              "fiscal_year": 2024,
+              "source_report_year": 2025,
+              "source_url": "https://www.firstpacific.com/wp-content/uploads/2026/04/ew0142.pdf",
+              "pdf_sha256": "4dca002f1a256863e5343968f47d6f669dfcdf7930509a445f6aad0585822fe0",
+              "pdf_page": 107,
+              "printed_page": "105",
+              "evidence": "Net Cash Flows From Operating Activities 1,748.3 1,746.5",
+              "raw_token": "1,746.5",
+              "column_index": 1,
+              "row_values": [
+                "1,748.3",
+                "1,746.5"
+              ],
+              "method": "comparative_table_column",
+              "verification_status": "machine_extracted"
+            },
+            {
+              "field": "capex",
+              "value": "444.9",
+              "value_in_units": "444900000",
+              "currency": "USD",
+              "unit": "million",
+              "fiscal_year": 2024,
+              "source_report_year": 2025,
+              "source_url": "https://www.firstpacific.com/wp-content/uploads/2026/04/ew0142.pdf",
+              "pdf_sha256": "4dca002f1a256863e5343968f47d6f669dfcdf7930509a445f6aad0585822fe0",
+              "pdf_page": 108,
+              "printed_page": "106",
+              "evidence": "Payments for purchases of property, plant and equipment (528.8) (444.9)",
+              "raw_token": "(444.9)",
+              "column_index": 1,
+              "row_values": [
+                "(528.8)",
+                "(444.9)"
+              ],
+              "method": "comparative_table_column",
+              "verification_status": "machine_extracted"
+            },
+            {
+              "field": "dividends_paid_to_shareholders",
+              "value": "133.2",
+              "value_in_units": "133200000",
+              "currency": "USD",
+              "unit": "million",
+              "fiscal_year": 2024,
+              "source_report_year": 2025,
+              "source_url": "https://www.firstpacific.com/wp-content/uploads/2026/04/ew0142.pdf",
+              "pdf_sha256": "4dca002f1a256863e5343968f47d6f669dfcdf7930509a445f6aad0585822fe0",
+              "pdf_page": 108,
+              "printed_page": "106",
+              "evidence": "Distributions paid to shareholders 33(I) (144.6) (133.2)",
+              "raw_token": "(133.2)",
+              "column_index": 1,
+              "row_values": [
+                "(144.6)",
+                "(133.2)"
+              ],
+              "method": "comparative_table_column",
+              "verification_status": "machine_extracted"
+            },
+            {
+              "field": "cash_end_cf",
+              "value": "3287",
+              "value_in_units": "3287000000",
+              "currency": "USD",
+              "unit": "million",
+              "fiscal_year": 2024,
+              "source_report_year": 2025,
+              "source_url": "https://www.firstpacific.com/wp-content/uploads/2026/04/ew0142.pdf",
+              "pdf_sha256": "4dca002f1a256863e5343968f47d6f669dfcdf7930509a445f6aad0585822fe0",
+              "pdf_page": 108,
+              "printed_page": "106",
+              "evidence": "Cash and Cash Equivalents at 31 December 4,149.4 3,287.0",
+              "raw_token": "3,287.0",
+              "column_index": 1,
+              "row_values": [
+                "4,149.4",
+                "3,287.0"
+              ],
+              "method": "comparative_table_column",
+              "verification_status": "machine_extracted"
+            }
+          ],
+          "omitted": [
+            {
+              "field": "dividend_per_share",
+              "reason": "no_comparative_table_row"
+            },
+            {
+              "field": "dividend_per_share_usd_cents",
+              "reason": "no_comparative_table_row"
+            },
+            {
+              "field": "dividend_interim_usd_cents",
+              "reason": "no_comparative_table_row"
+            },
+            {
+              "field": "dividend_final_usd_cents",
+              "reason": "no_comparative_table_row"
+            }
+          ],
+          "warning": "Comparative column from FY2025 PDF; not independently checked against FY2024 annual report or a second PDF engine."
+        },
+        "2025": {
+          "fiscal_year": 2025,
+          "status": "extracted_consistent",
+          "human_review": "pending",
+          "facts": [
+            {
+              "field": "revenue",
+              "value": "10232.5",
+              "currency": "USD",
+              "unit": "million",
+              "pdf_page": 103,
+              "source_url": "https://www.firstpacific.com/wp-content/uploads/2026/04/ew0142.pdf",
+              "verification_status": "machine_extracted"
+            },
+            {
+              "field": "profit_before_tax",
+              "value": "2252",
+              "currency": "USD",
+              "unit": "million",
+              "pdf_page": 103,
+              "source_url": "https://www.firstpacific.com/wp-content/uploads/2026/04/ew0142.pdf",
+              "verification_status": "machine_extracted"
+            },
+            {
+              "field": "net_profit",
+              "value": "1780.9",
+              "currency": "USD",
+              "unit": "million",
+              "pdf_page": 103,
+              "source_url": "https://www.firstpacific.com/wp-content/uploads/2026/04/ew0142.pdf",
+              "verification_status": "machine_extracted"
+            },
+            {
+              "field": "net_income_attributable",
+              "value": "661",
+              "currency": "USD",
+              "unit": "million",
+              "pdf_page": 103,
+              "source_url": "https://www.firstpacific.com/wp-content/uploads/2026/04/ew0142.pdf",
+              "verification_status": "machine_extracted"
+            },
+            {
+              "field": "nci_profit",
+              "value": "1119.9",
+              "currency": "USD",
+              "unit": "million",
+              "pdf_page": 103,
+              "source_url": "https://www.firstpacific.com/wp-content/uploads/2026/04/ew0142.pdf",
+              "verification_status": "machine_extracted"
+            },
+            {
+              "field": "eps_basic",
+              "value": "15.53",
+              "currency": "USD",
+              "unit": "cents",
+              "pdf_page": 103,
+              "source_url": "https://www.firstpacific.com/wp-content/uploads/2026/04/ew0142.pdf",
+              "verification_status": "machine_extracted"
+            },
+            {
+              "field": "non_current_assets",
+              "value": "22949.1",
+              "currency": "USD",
+              "unit": "million",
+              "pdf_page": 105,
+              "source_url": "https://www.firstpacific.com/wp-content/uploads/2026/04/ew0142.pdf",
+              "verification_status": "machine_extracted"
+            },
+            {
+              "field": "current_assets",
+              "value": "7698.5",
+              "currency": "USD",
+              "unit": "million",
+              "pdf_page": 105,
+              "source_url": "https://www.firstpacific.com/wp-content/uploads/2026/04/ew0142.pdf",
+              "verification_status": "machine_extracted"
+            },
+            {
+              "field": "cash",
+              "value": "4206.1",
+              "currency": "USD",
+              "unit": "million",
+              "pdf_page": 105,
+              "source_url": "https://www.firstpacific.com/wp-content/uploads/2026/04/ew0142.pdf",
+              "verification_status": "machine_extracted"
+            },
+            {
+              "field": "current_liabilities",
+              "value": "5338.3",
+              "currency": "USD",
+              "unit": "million",
+              "pdf_page": 105,
+              "source_url": "https://www.firstpacific.com/wp-content/uploads/2026/04/ew0142.pdf",
+              "verification_status": "machine_extracted"
+            },
+            {
+              "field": "non_current_liabilities",
+              "value": "12185.7",
+              "currency": "USD",
+              "unit": "million",
+              "pdf_page": 105,
+              "source_url": "https://www.firstpacific.com/wp-content/uploads/2026/04/ew0142.pdf",
+              "verification_status": "machine_extracted"
+            },
+            {
+              "field": "equity_attributable",
+              "value": "4388.8",
+              "currency": "USD",
+              "unit": "million",
+              "pdf_page": 105,
+              "source_url": "https://www.firstpacific.com/wp-content/uploads/2026/04/ew0142.pdf",
+              "verification_status": "machine_extracted"
+            },
+            {
+              "field": "total_equity",
+              "value": "13123.6",
+              "currency": "USD",
+              "unit": "million",
+              "pdf_page": 105,
+              "source_url": "https://www.firstpacific.com/wp-content/uploads/2026/04/ew0142.pdf",
+              "verification_status": "machine_extracted"
+            },
+            {
+              "field": "operating_cash_flow",
+              "value": "1748.3",
+              "currency": "USD",
+              "unit": "million",
+              "pdf_page": 107,
+              "source_url": "https://www.firstpacific.com/wp-content/uploads/2026/04/ew0142.pdf",
+              "verification_status": "machine_extracted"
+            },
+            {
+              "field": "capex",
+              "value": "528.8",
+              "currency": "USD",
+              "unit": "million",
+              "pdf_page": 108,
+              "source_url": "https://www.firstpacific.com/wp-content/uploads/2026/04/ew0142.pdf",
+              "verification_status": "machine_extracted"
+            },
+            {
+              "field": "dividends_paid_to_shareholders",
+              "value": "144.6",
+              "currency": "USD",
+              "unit": "million",
+              "pdf_page": 108,
+              "source_url": "https://www.firstpacific.com/wp-content/uploads/2026/04/ew0142.pdf",
+              "verification_status": "machine_extracted"
+            },
+            {
+              "field": "cash_end_cf",
+              "value": "4149.4",
+              "currency": "USD",
+              "unit": "million",
+              "pdf_page": 108,
+              "source_url": "https://www.firstpacific.com/wp-content/uploads/2026/04/ew0142.pdf",
+              "verification_status": "machine_extracted"
+            },
+            {
+              "field": "dividend_per_share",
+              "value": "27",
+              "currency": "HKD",
+              "unit": "cents",
+              "pdf_page": 14,
+              "source_url": "https://www.firstpacific.com/wp-content/uploads/2026/04/ew0142.pdf",
+              "verification_status": "machine_extracted"
+            },
+            {
+              "field": "dividend_per_share_usd_cents",
+              "value": "3.46",
+              "currency": "USD",
+              "unit": "cents",
+              "pdf_page": 14,
+              "source_url": "https://www.firstpacific.com/wp-content/uploads/2026/04/ew0142.pdf",
+              "verification_status": "machine_extracted"
+            },
+            {
+              "field": "dividend_interim_usd_cents",
+              "value": "1.67",
+              "currency": "USD",
+              "unit": "cents",
+              "pdf_page": 14,
+              "source_url": "https://www.firstpacific.com/wp-content/uploads/2026/04/ew0142.pdf",
+              "verification_status": "machine_extracted"
+            },
+            {
+              "field": "dividend_final_usd_cents",
+              "value": "1.79",
+              "currency": "USD",
+              "unit": "cents",
+              "pdf_page": 14,
+              "source_url": "https://www.firstpacific.com/wp-content/uploads/2026/04/ew0142.pdf",
+              "verification_status": "machine_extracted"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "symbol": "D05.SI",
+      "company": "DBS Group Holdings Ltd",
+      "years": {
+        "2024": {
+          "symbol": "D05.SI",
+          "company": "DBS Group Holdings Ltd",
+          "fiscal_year": 2024,
+          "source_report_year": 2025,
+          "source_url": "https://www.dbs.com/iwov-resources/images/investors/annual-report/dbs-annual-report-2025.pdf",
+          "currency": "SGD",
+          "unit": "million",
+          "status": "comparative_extracted_pending_review",
+          "human_review": "pending",
+          "facts": [
+            {
+              "field": "revenue",
+              "value": "22297",
+              "value_in_units": "22297000000",
+              "currency": "SGD",
+              "unit": "million",
+              "fiscal_year": 2024,
+              "source_report_year": 2025,
+              "source_url": "https://www.dbs.com/iwov-resources/images/investors/annual-report/dbs-annual-report-2025.pdf",
+              "pdf_sha256": "e7952ba9dff9e339070334ec5d67a71c81a8c618be7f34abad6f3118189b38ce",
+              "pdf_page": 58,
+              "printed_page": "112-113",
+              "evidence": "Total income 22,900 22,297",
+              "raw_token": "22,297",
+              "column_index": 1,
+              "row_values": [
+                "22,900",
+                "22,297"
+              ],
+              "method": "comparative_table_column",
+              "verification_status": "machine_extracted"
+            },
+            {
+              "field": "net_interest_income",
+              "value": "14424",
+              "value_in_units": "14424000000",
+              "currency": "SGD",
+              "unit": "million",
+              "fiscal_year": 2024,
+              "source_report_year": 2025,
+              "source_url": "https://www.dbs.com/iwov-resources/images/investors/annual-report/dbs-annual-report-2025.pdf",
+              "pdf_sha256": "e7952ba9dff9e339070334ec5d67a71c81a8c618be7f34abad6f3118189b38ce",
+              "pdf_page": 58,
+              "printed_page": "112-113",
+              "evidence": "Net interest income 4 14,500 14,424",
+              "raw_token": "14,424",
+              "column_index": 1,
+              "row_values": [
+                "14,500",
+                "14,424"
+              ],
+              "method": "comparative_table_column",
+              "verification_status": "machine_extracted"
+            },
+            {
+              "field": "non_interest_income",
+              "value": "7873",
+              "value_in_units": "7873000000",
+              "currency": "SGD",
+              "unit": "million",
+              "fiscal_year": 2024,
+              "source_report_year": 2025,
+              "source_url": "https://www.dbs.com/iwov-resources/images/investors/annual-report/dbs-annual-report-2025.pdf",
+              "pdf_sha256": "e7952ba9dff9e339070334ec5d67a71c81a8c618be7f34abad6f3118189b38ce",
+              "pdf_page": 58,
+              "printed_page": "112-113",
+              "evidence": "Non-interest income 8,400 7,873",
+              "raw_token": "7,873",
+              "column_index": 1,
+              "row_values": [
+                "8,400",
+                "7,873"
+              ],
+              "method": "comparative_table_column",
+              "verification_status": "machine_extracted"
+            },
+            {
+              "field": "allowances",
+              "value": "622",
+              "value_in_units": "622000000",
+              "currency": "SGD",
+              "unit": "million",
+              "fiscal_year": 2024,
+              "source_report_year": 2025,
+              "source_url": "https://www.dbs.com/iwov-resources/images/investors/annual-report/dbs-annual-report-2025.pdf",
+              "pdf_sha256": "e7952ba9dff9e339070334ec5d67a71c81a8c618be7f34abad6f3118189b38ce",
+              "pdf_page": 58,
+              "printed_page": "112-113",
+              "evidence": "Allowances for credit and other losses 11 791 622",
+              "raw_token": "622",
+              "column_index": 1,
+              "row_values": [
+                "791",
+                "622"
+              ],
+              "method": "comparative_table_column",
+              "verification_status": "machine_extracted"
+            },
+            {
+              "field": "profit_before_tax",
+              "value": "12884",
+              "value_in_units": "12884000000",
+              "currency": "SGD",
+              "unit": "million",
+              "fiscal_year": 2024,
+              "source_report_year": 2025,
+              "source_url": "https://www.dbs.com/iwov-resources/images/investors/annual-report/dbs-annual-report-2025.pdf",
+              "pdf_sha256": "e7952ba9dff9e339070334ec5d67a71c81a8c618be7f34abad6f3118189b38ce",
+              "pdf_page": 58,
+              "printed_page": "112-113",
+              "evidence": "Profit before tax 12,999 12,884",
+              "raw_token": "12,884",
+              "column_index": 1,
+              "row_values": [
+                "12,999",
+                "12,884"
+              ],
+              "method": "comparative_table_column",
+              "verification_status": "machine_extracted"
+            },
+            {
+              "field": "net_profit",
+              "value": "11290",
+              "value_in_units": "11290000000",
+              "currency": "SGD",
+              "unit": "million",
+              "fiscal_year": 2024,
+              "source_report_year": 2025,
+              "source_url": "https://www.dbs.com/iwov-resources/images/investors/annual-report/dbs-annual-report-2025.pdf",
+              "pdf_sha256": "e7952ba9dff9e339070334ec5d67a71c81a8c618be7f34abad6f3118189b38ce",
+              "pdf_page": 58,
+              "printed_page": "112-113",
+              "evidence": "Net profit 10,934 11,290",
+              "raw_token": "11,290",
+              "column_index": 1,
+              "row_values": [
+                "10,934",
+                "11,290"
+              ],
+              "method": "comparative_table_column",
+              "verification_status": "machine_extracted"
+            },
+            {
+              "field": "net_income_attributable",
+              "value": "11289",
+              "value_in_units": "11289000000",
+              "currency": "SGD",
+              "unit": "million",
+              "fiscal_year": 2024,
+              "source_report_year": 2025,
+              "source_url": "https://www.dbs.com/iwov-resources/images/investors/annual-report/dbs-annual-report-2025.pdf",
+              "pdf_sha256": "e7952ba9dff9e339070334ec5d67a71c81a8c618be7f34abad6f3118189b38ce",
+              "pdf_page": 58,
+              "printed_page": "112-113",
+              "evidence": "Shareholders of the parent 10,933 11,289",
+              "raw_token": "11,289",
+              "column_index": 1,
+              "row_values": [
+                "10,933",
+                "11,289"
+              ],
+              "method": "comparative_table_column",
+              "verification_status": "machine_extracted"
+            },
+            {
+              "field": "nci_profit",
+              "value": "1",
+              "value_in_units": "1000000",
+              "currency": "SGD",
+              "unit": "million",
+              "fiscal_year": 2024,
+              "source_report_year": 2025,
+              "source_url": "https://www.dbs.com/iwov-resources/images/investors/annual-report/dbs-annual-report-2025.pdf",
+              "pdf_sha256": "e7952ba9dff9e339070334ec5d67a71c81a8c618be7f34abad6f3118189b38ce",
+              "pdf_page": 58,
+              "printed_page": "112-113",
+              "evidence": "Non-controlling interests 1 1",
+              "raw_token": "1",
+              "column_index": 1,
+              "row_values": [
+                "1",
+                "1"
+              ],
+              "method": "comparative_table_column",
+              "verification_status": "machine_extracted"
+            },
+            {
+              "field": "eps_basic",
+              "value": "3.94",
+              "value_in_units": "3.94",
+              "currency": "SGD",
+              "unit": "units",
+              "fiscal_year": 2024,
+              "source_report_year": 2025,
+              "source_url": "https://www.dbs.com/iwov-resources/images/investors/annual-report/dbs-annual-report-2025.pdf",
+              "pdf_sha256": "e7952ba9dff9e339070334ec5d67a71c81a8c618be7f34abad6f3118189b38ce",
+              "pdf_page": 58,
+              "printed_page": "112-113",
+              "evidence": "Basic 13 3.84 3.94",
+              "raw_token": "3.94",
+              "column_index": 1,
+              "row_values": [
+                "3.84",
+                "3.94"
+              ],
+              "method": "comparative_table_column",
+              "verification_status": "machine_extracted"
+            },
+            {
+              "field": "total_assets",
+              "value": "827219",
+              "value_in_units": "827219000000",
+              "currency": "SGD",
+              "unit": "million",
+              "fiscal_year": 2024,
+              "source_report_year": 2025,
+              "source_url": "https://www.dbs.com/iwov-resources/images/investors/annual-report/dbs-annual-report-2025.pdf",
+              "pdf_sha256": "e7952ba9dff9e339070334ec5d67a71c81a8c618be7f34abad6f3118189b38ce",
+              "pdf_page": 59,
+              "printed_page": "114-115",
+              "evidence": "Total assets 897,488 827,219 24,010 25,999",
+              "raw_token": "827,219",
+              "column_index": 1,
+              "row_values": [
+                "897,488",
+                "827,219",
+                "24,010",
+                "25,999"
+              ],
+              "method": "comparative_table_column",
+              "verification_status": "machine_extracted"
+            },
+            {
+              "field": "total_liabilities",
+              "value": "758386",
+              "value_in_units": "758386000000",
+              "currency": "SGD",
+              "unit": "million",
+              "fiscal_year": 2024,
+              "source_report_year": 2025,
+              "source_url": "https://www.dbs.com/iwov-resources/images/investors/annual-report/dbs-annual-report-2025.pdf",
+              "pdf_sha256": "e7952ba9dff9e339070334ec5d67a71c81a8c618be7f34abad6f3118189b38ce",
+              "pdf_page": 59,
+              "printed_page": "114-115",
+              "evidence": "Total liabilities 828,572 758,386 6,367 6,305",
+              "raw_token": "758,386",
+              "column_index": 1,
+              "row_values": [
+                "828,572",
+                "758,386",
+                "6,367",
+                "6,305"
+              ],
+              "method": "comparative_table_column",
+              "verification_status": "machine_extracted"
+            },
+            {
+              "field": "equity_attributable",
+              "value": "68786",
+              "value_in_units": "68786000000",
+              "currency": "SGD",
+              "unit": "million",
+              "fiscal_year": 2024,
+              "source_report_year": 2025,
+              "source_url": "https://www.dbs.com/iwov-resources/images/investors/annual-report/dbs-annual-report-2025.pdf",
+              "pdf_sha256": "e7952ba9dff9e339070334ec5d67a71c81a8c618be7f34abad6f3118189b38ce",
+              "pdf_page": 59,
+              "printed_page": "114-115",
+              "evidence": "Shareholders' funds 68,867 68,786 17,643 19,694",
+              "raw_token": "68,786",
+              "column_index": 1,
+              "row_values": [
+                "68,867",
+                "68,786",
+                "17,643",
+                "19,694"
+              ],
+              "method": "comparative_table_column",
+              "verification_status": "machine_extracted"
+            },
+            {
+              "field": "total_equity",
+              "value": "68833",
+              "value_in_units": "68833000000",
+              "currency": "SGD",
+              "unit": "million",
+              "fiscal_year": 2024,
+              "source_report_year": 2025,
+              "source_url": "https://www.dbs.com/iwov-resources/images/investors/annual-report/dbs-annual-report-2025.pdf",
+              "pdf_sha256": "e7952ba9dff9e339070334ec5d67a71c81a8c618be7f34abad6f3118189b38ce",
+              "pdf_page": 59,
+              "printed_page": "114-115",
+              "evidence": "Total equity 68,916 68,833 17,643 19,694",
+              "raw_token": "68,833",
+              "column_index": 1,
+              "row_values": [
+                "68,916",
+                "68,833",
+                "17,643",
+                "19,694"
+              ],
+              "method": "comparative_table_column",
+              "verification_status": "machine_extracted"
+            },
+            {
+              "field": "net_assets",
+              "value": "68833",
+              "value_in_units": "68833000000",
+              "currency": "SGD",
+              "unit": "million",
+              "fiscal_year": 2024,
+              "source_report_year": 2025,
+              "source_url": "https://www.dbs.com/iwov-resources/images/investors/annual-report/dbs-annual-report-2025.pdf",
+              "pdf_sha256": "e7952ba9dff9e339070334ec5d67a71c81a8c618be7f34abad6f3118189b38ce",
+              "pdf_page": 59,
+              "printed_page": "114-115",
+              "evidence": "Net assets 68,916 68,833 17,643 19,694",
+              "raw_token": "68,833",
+              "column_index": 1,
+              "row_values": [
+                "68,916",
+                "68,833",
+                "17,643",
+                "19,694"
+              ],
+              "method": "comparative_table_column",
+              "verification_status": "machine_extracted"
+            },
+            {
+              "field": "cash",
+              "value": "58646",
+              "value_in_units": "58646000000",
+              "currency": "SGD",
+              "unit": "million",
+              "fiscal_year": 2024,
+              "source_report_year": 2025,
+              "source_url": "https://www.dbs.com/iwov-resources/images/investors/annual-report/dbs-annual-report-2025.pdf",
+              "pdf_sha256": "e7952ba9dff9e339070334ec5d67a71c81a8c618be7f34abad6f3118189b38ce",
+              "pdf_page": 59,
+              "printed_page": "114-115",
+              "evidence": "Cash and balances with central banks 15 55,844 58,646 – –",
+              "raw_token": "58,646",
+              "column_index": 1,
+              "row_values": [
+                "55,844",
+                "58,646",
+                "–",
+                "–"
+              ],
+              "method": "comparative_table_column",
+              "verification_status": "machine_extracted"
+            },
+            {
+              "field": "customer_loans",
+              "value": "430594",
+              "value_in_units": "430594000000",
+              "currency": "SGD",
+              "unit": "million",
+              "fiscal_year": 2024,
+              "source_report_year": 2025,
+              "source_url": "https://www.dbs.com/iwov-resources/images/investors/annual-report/dbs-annual-report-2025.pdf",
+              "pdf_sha256": "e7952ba9dff9e339070334ec5d67a71c81a8c618be7f34abad6f3118189b38ce",
+              "pdf_page": 59,
+              "printed_page": "114-115",
+              "evidence": "Loans and advances to customers 18 445,011 430,594 – –",
+              "raw_token": "430,594",
+              "column_index": 1,
+              "row_values": [
+                "445,011",
+                "430,594",
+                "–",
+                "–"
+              ],
+              "method": "comparative_table_column",
+              "verification_status": "machine_extracted"
+            },
+            {
+              "field": "customer_deposits",
+              "value": "561730",
+              "value_in_units": "561730000000",
+              "currency": "SGD",
+              "unit": "million",
+              "fiscal_year": 2024,
+              "source_report_year": 2025,
+              "source_url": "https://www.dbs.com/iwov-resources/images/investors/annual-report/dbs-annual-report-2025.pdf",
+              "pdf_sha256": "e7952ba9dff9e339070334ec5d67a71c81a8c618be7f34abad6f3118189b38ce",
+              "pdf_page": 59,
+              "printed_page": "114-115",
+              "evidence": "Deposits and balances from customers 28 610,023 561,730 – –",
+              "raw_token": "561,730",
+              "column_index": 1,
+              "row_values": [
+                "610,023",
+                "561,730",
+                "–",
+                "–"
+              ],
+              "method": "comparative_table_column",
+              "verification_status": "machine_extracted"
+            },
+            {
+              "field": "operating_cash_flow",
+              "value": "15341",
+              "value_in_units": "15341000000",
+              "currency": "SGD",
+              "unit": "million",
+              "fiscal_year": 2024,
+              "source_report_year": 2025,
+              "source_url": "https://www.dbs.com/iwov-resources/images/investors/annual-report/dbs-annual-report-2025.pdf",
+              "pdf_sha256": "e7952ba9dff9e339070334ec5d67a71c81a8c618be7f34abad6f3118189b38ce",
+              "pdf_page": 60,
+              "printed_page": "116-117",
+              "evidence": "Net cash generated from operating activities (1) 11,024 15,341",
+              "raw_token": "15,341",
+              "column_index": 1,
+              "row_values": [
+                "11,024",
+                "15,341"
+              ],
+              "method": "comparative_table_column",
+              "verification_status": "machine_extracted"
+            },
+            {
+              "field": "capex",
+              "value": "916",
+              "value_in_units": "916000000",
+              "currency": "SGD",
+              "unit": "million",
+              "fiscal_year": 2024,
+              "source_report_year": 2025,
+              "source_url": "https://www.dbs.com/iwov-resources/images/investors/annual-report/dbs-annual-report-2025.pdf",
+              "pdf_sha256": "e7952ba9dff9e339070334ec5d67a71c81a8c618be7f34abad6f3118189b38ce",
+              "pdf_page": 60,
+              "printed_page": "116-117",
+              "evidence": "Purchase of properties and other fixed assets (525) (916)",
+              "raw_token": "(916)",
+              "column_index": 1,
+              "row_values": [
+                "(525)",
+                "(916)"
+              ],
+              "method": "comparative_table_column",
+              "verification_status": "machine_extracted"
+            },
+            {
+              "field": "dividends_paid_to_shareholders",
+              "value": "6083",
+              "value_in_units": "6083000000",
+              "currency": "SGD",
+              "unit": "million",
+              "fiscal_year": 2024,
+              "source_report_year": 2025,
+              "source_url": "https://www.dbs.com/iwov-resources/images/investors/annual-report/dbs-annual-report-2025.pdf",
+              "pdf_sha256": "e7952ba9dff9e339070334ec5d67a71c81a8c618be7f34abad6f3118189b38ce",
+              "pdf_page": 60,
+              "printed_page": "116-117",
+              "evidence": "Dividends paid to shareholders of the Company(a) (8,151) (6,083)",
+              "raw_token": "(6,083)",
+              "column_index": 1,
+              "row_values": [
+                "(8,151)",
+                "(6,083)"
+              ],
+              "method": "comparative_table_column",
+              "verification_status": "machine_extracted"
+            },
+            {
+              "field": "dividend_per_share",
+              "value": "2.22",
+              "value_in_units": "2.22",
+              "currency": "SGD",
+              "unit": "units",
+              "fiscal_year": 2024,
+              "source_report_year": 2025,
+              "source_url": "https://www.dbs.com/iwov-resources/images/investors/annual-report/dbs-annual-report-2025.pdf",
+              "pdf_sha256": "e7952ba9dff9e339070334ec5d67a71c81a8c618be7f34abad6f3118189b38ce",
+              "pdf_page": 89,
+              "printed_page": "174-175",
+              "evidence": "Dividends per share(6)  3.06  2.22  1.75 1.82  1.09",
+              "raw_token": "2.22",
+              "column_index": 1,
+              "row_values": [
+                "3.06",
+                "2.22",
+                "1.75",
+                "1.82",
+                "1.09"
+              ],
+              "method": "comparative_table_column",
+              "verification_status": "machine_extracted"
+            }
+          ],
+          "omitted": [
+            {
+              "field": "dividend_interim_ordinary",
+              "reason": "no_comparative_table_row"
+            },
+            {
+              "field": "dividend_final_ordinary",
+              "reason": "no_comparative_table_row"
+            },
+            {
+              "field": "capital_return_q1_q3",
+              "reason": "no_comparative_table_row"
+            },
+            {
+              "field": "capital_return_q4",
+              "reason": "no_comparative_table_row"
+            }
+          ],
+          "warning": "Comparative column from FY2025 PDF; not independently checked against FY2024 annual report or a second PDF engine."
+        },
+        "2025": {
+          "fiscal_year": 2025,
+          "status": "extracted_consistent",
+          "human_review": "pending",
+          "facts": [
+            {
+              "field": "revenue",
+              "value": "22900",
+              "currency": "SGD",
+              "unit": "million",
+              "pdf_page": 58,
+              "source_url": "https://www.dbs.com/iwov-resources/images/investors/annual-report/dbs-annual-report-2025.pdf",
+              "verification_status": "machine_extracted"
+            },
+            {
+              "field": "net_interest_income",
+              "value": "14500",
+              "currency": "SGD",
+              "unit": "million",
+              "pdf_page": 58,
+              "source_url": "https://www.dbs.com/iwov-resources/images/investors/annual-report/dbs-annual-report-2025.pdf",
+              "verification_status": "machine_extracted"
+            },
+            {
+              "field": "non_interest_income",
+              "value": "8400",
+              "currency": "SGD",
+              "unit": "million",
+              "pdf_page": 58,
+              "source_url": "https://www.dbs.com/iwov-resources/images/investors/annual-report/dbs-annual-report-2025.pdf",
+              "verification_status": "machine_extracted"
+            },
+            {
+              "field": "allowances",
+              "value": "791",
+              "currency": "SGD",
+              "unit": "million",
+              "pdf_page": 58,
+              "source_url": "https://www.dbs.com/iwov-resources/images/investors/annual-report/dbs-annual-report-2025.pdf",
+              "verification_status": "machine_extracted"
+            },
+            {
+              "field": "profit_before_tax",
+              "value": "12999",
+              "currency": "SGD",
+              "unit": "million",
+              "pdf_page": 58,
+              "source_url": "https://www.dbs.com/iwov-resources/images/investors/annual-report/dbs-annual-report-2025.pdf",
+              "verification_status": "machine_extracted"
+            },
+            {
+              "field": "net_profit",
+              "value": "10934",
+              "currency": "SGD",
+              "unit": "million",
+              "pdf_page": 58,
+              "source_url": "https://www.dbs.com/iwov-resources/images/investors/annual-report/dbs-annual-report-2025.pdf",
+              "verification_status": "machine_extracted"
+            },
+            {
+              "field": "net_income_attributable",
+              "value": "10933",
+              "currency": "SGD",
+              "unit": "million",
+              "pdf_page": 58,
+              "source_url": "https://www.dbs.com/iwov-resources/images/investors/annual-report/dbs-annual-report-2025.pdf",
+              "verification_status": "machine_extracted"
+            },
+            {
+              "field": "nci_profit",
+              "value": "1",
+              "currency": "SGD",
+              "unit": "million",
+              "pdf_page": 58,
+              "source_url": "https://www.dbs.com/iwov-resources/images/investors/annual-report/dbs-annual-report-2025.pdf",
+              "verification_status": "machine_extracted"
+            },
+            {
+              "field": "eps_basic",
+              "value": "3.84",
+              "currency": "SGD",
+              "unit": "units",
+              "pdf_page": 58,
+              "source_url": "https://www.dbs.com/iwov-resources/images/investors/annual-report/dbs-annual-report-2025.pdf",
+              "verification_status": "machine_extracted"
+            },
+            {
+              "field": "total_assets",
+              "value": "897488",
+              "currency": "SGD",
+              "unit": "million",
+              "pdf_page": 59,
+              "source_url": "https://www.dbs.com/iwov-resources/images/investors/annual-report/dbs-annual-report-2025.pdf",
+              "verification_status": "machine_extracted"
+            },
+            {
+              "field": "total_liabilities",
+              "value": "828572",
+              "currency": "SGD",
+              "unit": "million",
+              "pdf_page": 59,
+              "source_url": "https://www.dbs.com/iwov-resources/images/investors/annual-report/dbs-annual-report-2025.pdf",
+              "verification_status": "machine_extracted"
+            },
+            {
+              "field": "equity_attributable",
+              "value": "68867",
+              "currency": "SGD",
+              "unit": "million",
+              "pdf_page": 59,
+              "source_url": "https://www.dbs.com/iwov-resources/images/investors/annual-report/dbs-annual-report-2025.pdf",
+              "verification_status": "machine_extracted"
+            },
+            {
+              "field": "total_equity",
+              "value": "68916",
+              "currency": "SGD",
+              "unit": "million",
+              "pdf_page": 59,
+              "source_url": "https://www.dbs.com/iwov-resources/images/investors/annual-report/dbs-annual-report-2025.pdf",
+              "verification_status": "machine_extracted"
+            },
+            {
+              "field": "net_assets",
+              "value": "68916",
+              "currency": "SGD",
+              "unit": "million",
+              "pdf_page": 59,
+              "source_url": "https://www.dbs.com/iwov-resources/images/investors/annual-report/dbs-annual-report-2025.pdf",
+              "verification_status": "machine_extracted"
+            },
+            {
+              "field": "cash",
+              "value": "55844",
+              "currency": "SGD",
+              "unit": "million",
+              "pdf_page": 59,
+              "source_url": "https://www.dbs.com/iwov-resources/images/investors/annual-report/dbs-annual-report-2025.pdf",
+              "verification_status": "machine_extracted"
+            },
+            {
+              "field": "customer_loans",
+              "value": "445011",
+              "currency": "SGD",
+              "unit": "million",
+              "pdf_page": 59,
+              "source_url": "https://www.dbs.com/iwov-resources/images/investors/annual-report/dbs-annual-report-2025.pdf",
+              "verification_status": "machine_extracted"
+            },
+            {
+              "field": "customer_deposits",
+              "value": "610023",
+              "currency": "SGD",
+              "unit": "million",
+              "pdf_page": 59,
+              "source_url": "https://www.dbs.com/iwov-resources/images/investors/annual-report/dbs-annual-report-2025.pdf",
+              "verification_status": "machine_extracted"
+            },
+            {
+              "field": "operating_cash_flow",
+              "value": "11024",
+              "currency": "SGD",
+              "unit": "million",
+              "pdf_page": 60,
+              "source_url": "https://www.dbs.com/iwov-resources/images/investors/annual-report/dbs-annual-report-2025.pdf",
+              "verification_status": "machine_extracted"
+            },
+            {
+              "field": "capex",
+              "value": "525",
+              "currency": "SGD",
+              "unit": "million",
+              "pdf_page": 60,
+              "source_url": "https://www.dbs.com/iwov-resources/images/investors/annual-report/dbs-annual-report-2025.pdf",
+              "verification_status": "machine_extracted"
+            },
+            {
+              "field": "dividends_paid_to_shareholders",
+              "value": "8151",
+              "currency": "SGD",
+              "unit": "million",
+              "pdf_page": 60,
+              "source_url": "https://www.dbs.com/iwov-resources/images/investors/annual-report/dbs-annual-report-2025.pdf",
+              "verification_status": "machine_extracted"
+            },
+            {
+              "field": "dividend_per_share",
+              "value": "3.06",
+              "currency": "SGD",
+              "unit": "units",
+              "pdf_page": 89,
+              "source_url": "https://www.dbs.com/iwov-resources/images/investors/annual-report/dbs-annual-report-2025.pdf",
+              "verification_status": "machine_extracted"
+            },
+            {
+              "field": "dividend_interim_ordinary",
+              "value": "1.8",
+              "currency": "SGD",
+              "unit": "units",
+              "pdf_page": 75,
+              "source_url": "https://www.dbs.com/iwov-resources/images/investors/annual-report/dbs-annual-report-2025.pdf",
+              "verification_status": "machine_extracted"
+            },
+            {
+              "field": "dividend_final_ordinary",
+              "value": "0.66",
+              "currency": "SGD",
+              "unit": "units",
+              "pdf_page": 75,
+              "source_url": "https://www.dbs.com/iwov-resources/images/investors/annual-report/dbs-annual-report-2025.pdf",
+              "verification_status": "machine_extracted"
+            },
+            {
+              "field": "capital_return_q1_q3",
+              "value": "0.45",
+              "currency": "SGD",
+              "unit": "units",
+              "pdf_page": 75,
+              "source_url": "https://www.dbs.com/iwov-resources/images/investors/annual-report/dbs-annual-report-2025.pdf",
+              "verification_status": "machine_extracted"
+            },
+            {
+              "field": "capital_return_q4",
+              "value": "0.15",
+              "currency": "SGD",
+              "unit": "units",
+              "pdf_page": 75,
+              "source_url": "https://www.dbs.com/iwov-resources/images/investors/annual-report/dbs-annual-report-2025.pdf",
+              "verification_status": "machine_extracted"
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "note": "2024 comparative figures from 2025 reports, not independently verified; no currency conversion."
+}

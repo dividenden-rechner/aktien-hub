@@ -1,0 +1,69 @@
+{
+  "schema_version": 1,
+  "purpose": "Additional official-report coverage candidates, not extracted or human verified",
+  "companies": [
+    {
+      "symbol": "J36.SI",
+      "company": "Jardine Matheson Holdings Limited",
+      "market": "SGX",
+      "fiscal_year": 2025,
+      "currency": "USD",
+      "annual_report_landing_page": "https://ar.jardines.com/2025/Download.html",
+      "official_pdf_candidate": "https://www.jardines.com/content/dam/jardines/corporate/documents/investors/reports---presentations/2025/JM-AR2025-Locked.pdf",
+      "sgx_announcement": "https://links.sgx.com/1.0.0/corporate-announcements/5K83PUCUMR2QGHPN/",
+      "status": "official_sources_located_not_downloaded",
+      "pdf_sha256": null,
+      "extraction_profile": null,
+      "human_review": "pending",
+      "notes": "2025 annual report listed by issuer and SGX. Must download, hash-pin, identify statement pages and add a tested extraction profile before publishing figures."
+    },
+    {
+      "symbol": "O39.SI",
+      "company": "Oversea-Chinese Banking Corporation (OCBC)",
+      "market": "SGX",
+      "currency": "SGD",
+      "status": "candidate_source_not_registered",
+      "official_pdf_candidate": null,
+      "pdf_sha256": null,
+      "extraction_profile": null,
+      "human_review": "pending",
+      "notes": "Find official annual report, download and hash-pin, build issuer-specific profile and tests before publishing."
+    },
+    {
+      "symbol": "U11.SI",
+      "company": "United Overseas Bank (UOB)",
+      "market": "SGX",
+      "currency": "SGD",
+      "status": "candidate_source_not_registered",
+      "official_pdf_candidate": null,
+      "pdf_sha256": null,
+      "extraction_profile": null,
+      "human_review": "pending",
+      "notes": "Find official annual report, download and hash-pin, build issuer-specific profile and tests before publishing."
+    },
+    {
+      "symbol": "600519.SS",
+      "company": "Kweichow Moutai",
+      "market": "SSE",
+      "currency": "CNY",
+      "status": "candidate_source_not_registered",
+      "official_pdf_candidate": null,
+      "pdf_sha256": null,
+      "extraction_profile": null,
+      "human_review": "pending",
+      "notes": "Find official annual report, download and hash-pin, build issuer-specific profile and tests before publishing."
+    },
+    {
+      "symbol": "600036.SS",
+      "company": "China Merchants Bank",
+      "market": "SSE",
+      "currency": "CNY",
+      "status": "candidate_source_not_registered",
+      "official_pdf_candidate": null,
+      "pdf_sha256": null,
+      "extraction_profile": null,
+      "human_review": "pending",
+      "notes": "Find official annual report, download and hash-pin, build issuer-specific profile and tests before publishing."
+    }
+  ]
+}

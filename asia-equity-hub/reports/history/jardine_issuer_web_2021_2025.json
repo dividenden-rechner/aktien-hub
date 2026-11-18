@@ -1,0 +1,303 @@
+{
+  "schema_version": 1,
+  "symbol": "J36.SI",
+  "company": "Jardine Matheson Holdings Limited",
+  "currency": "USD",
+  "status": "issuer_web_transcribed_pending_pdf_review",
+  "human_review": "pending",
+  "facts": [
+    {
+      "field": "underlying_net_profit",
+      "fiscal_year": 2021,
+      "value": 1513,
+      "currency": "USD",
+      "unit": "million",
+      "source_url": "https://ar.jardines.com/2025/Highlights.html",
+      "source_section": "Highlights: five-year historical charts",
+      "verification_status": "issuer_web_transcribed",
+      "human_review": "pending"
+    },
+    {
+      "field": "underlying_net_profit",
+      "fiscal_year": 2022,
+      "value": 1584,
+      "currency": "USD",
+      "unit": "million",
+      "source_url": "https://ar.jardines.com/2025/Highlights.html",
+      "source_section": "Highlights: five-year historical charts",
+      "verification_status": "issuer_web_transcribed",
+      "human_review": "pending"
+    },
+    {
+      "field": "underlying_net_profit",
+      "fiscal_year": 2023,
+      "value": 1661,
+      "currency": "USD",
+      "unit": "million",
+      "source_url": "https://ar.jardines.com/2025/Highlights.html",
+      "source_section": "Highlights: five-year historical charts",
+      "verification_status": "issuer_web_transcribed",
+      "human_review": "pending"
+    },
+    {
+      "field": "underlying_net_profit",
+      "fiscal_year": 2024,
+      "value": 1518,
+      "currency": "USD",
+      "unit": "million",
+      "source_url": "https://ar.jardines.com/2025/Highlights.html",
+      "source_section": "Highlights: five-year historical charts",
+      "verification_status": "issuer_web_transcribed",
+      "human_review": "pending"
+    },
+    {
+      "field": "underlying_net_profit",
+      "fiscal_year": 2025,
+      "value": 1681,
+      "currency": "USD",
+      "unit": "million",
+      "source_url": "https://ar.jardines.com/2025/Highlights.html",
+      "source_section": "Highlights: five-year historical charts",
+      "verification_status": "issuer_web_transcribed",
+      "human_review": "pending"
+    },
+    {
+      "field": "parent_free_cash_flow",
+      "fiscal_year": 2021,
+      "value": 680,
+      "currency": "USD",
+      "unit": "million",
+      "source_url": "https://ar.jardines.com/2025/Highlights.html",
+      "source_section": "Highlights: five-year historical charts",
+      "verification_status": "issuer_web_transcribed",
+      "human_review": "pending"
+    },
+    {
+      "field": "parent_free_cash_flow",
+      "fiscal_year": 2022,
+      "value": 698,
+      "currency": "USD",
+      "unit": "million",
+      "source_url": "https://ar.jardines.com/2025/Highlights.html",
+      "source_section": "Highlights: five-year historical charts",
+      "verification_status": "issuer_web_transcribed",
+      "human_review": "pending"
+    },
+    {
+      "field": "parent_free_cash_flow",
+      "fiscal_year": 2023,
+      "value": 778,
+      "currency": "USD",
+      "unit": "million",
+      "source_url": "https://ar.jardines.com/2025/Highlights.html",
+      "source_section": "Highlights: five-year historical charts",
+      "verification_status": "issuer_web_transcribed",
+      "human_review": "pending"
+    },
+    {
+      "field": "parent_free_cash_flow",
+      "fiscal_year": 2024,
+      "value": 875,
+      "currency": "USD",
+      "unit": "million",
+      "source_url": "https://ar.jardines.com/2025/Highlights.html",
+      "source_section": "Highlights: five-year historical charts",
+      "verification_status": "issuer_web_transcribed",
+      "human_review": "pending"
+    },
+    {
+      "field": "parent_free_cash_flow",
+      "fiscal_year": 2025,
+      "value": 933,
+      "currency": "USD",
+      "unit": "million",
+      "source_url": "https://ar.jardines.com/2025/Highlights.html",
+      "source_section": "Highlights: five-year historical charts",
+      "verification_status": "issuer_web_transcribed",
+      "human_review": "pending"
+    },
+    {
+      "field": "underlying_eps",
+      "fiscal_year": 2021,
+      "value": 4.83,
+      "currency": "USD",
+      "unit": "units",
+      "source_url": "https://ar.jardines.com/2025/Highlights.html",
+      "source_section": "Highlights: five-year historical charts",
+      "verification_status": "issuer_web_transcribed",
+      "human_review": "pending"
+    },
+    {
+      "field": "underlying_eps",
+      "fiscal_year": 2022,
+      "value": 5.49,
+      "currency": "USD",
+      "unit": "units",
+      "source_url": "https://ar.jardines.com/2025/Highlights.html",
+      "source_section": "Highlights: five-year historical charts",
+      "verification_status": "issuer_web_transcribed",
+      "human_review": "pending"
+    },
+    {
+      "field": "underlying_eps",
+      "fiscal_year": 2023,
+      "value": 5.74,
+      "currency": "USD",
+      "unit": "units",
+      "source_url": "https://ar.jardines.com/2025/Highlights.html",
+      "source_section": "Highlights: five-year historical charts",
+      "verification_status": "issuer_web_transcribed",
+      "human_review": "pending"
+    },
+    {
+      "field": "underlying_eps",
+      "fiscal_year": 2024,
+      "value": 5.24,
+      "currency": "USD",
+      "unit": "units",
+      "source_url": "https://ar.jardines.com/2025/Highlights.html",
+      "source_section": "Highlights: five-year historical charts",
+      "verification_status": "issuer_web_transcribed",
+      "human_review": "pending"
+    },
+    {
+      "field": "underlying_eps",
+      "fiscal_year": 2025,
+      "value": 5.72,
+      "currency": "USD",
+      "unit": "units",
+      "source_url": "https://ar.jardines.com/2025/Highlights.html",
+      "source_section": "Highlights: five-year historical charts",
+      "verification_status": "issuer_web_transcribed",
+      "human_review": "pending"
+    },
+    {
+      "field": "dividend_per_share",
+      "fiscal_year": 2021,
+      "value": 2.0,
+      "currency": "USD",
+      "unit": "units",
+      "source_url": "https://ar.jardines.com/2025/Highlights.html",
+      "source_section": "Highlights: five-year historical charts",
+      "verification_status": "issuer_web_transcribed",
+      "human_review": "pending"
+    },
+    {
+      "field": "dividend_per_share",
+      "fiscal_year": 2022,
+      "value": 2.15,
+      "currency": "USD",
+      "unit": "units",
+      "source_url": "https://ar.jardines.com/2025/Highlights.html",
+      "source_section": "Highlights: five-year historical charts",
+      "verification_status": "issuer_web_transcribed",
+      "human_review": "pending"
+    },
+    {
+      "field": "dividend_per_share",
+      "fiscal_year": 2023,
+      "value": 2.25,
+      "currency": "USD",
+      "unit": "units",
+      "source_url": "https://ar.jardines.com/2025/Highlights.html",
+      "source_section": "Highlights: five-year historical charts",
+      "verification_status": "issuer_web_transcribed",
+      "human_review": "pending"
+    },
+    {
+      "field": "dividend_per_share",
+      "fiscal_year": 2024,
+      "value": 2.25,
+      "currency": "USD",
+      "unit": "units",
+      "source_url": "https://ar.jardines.com/2025/Highlights.html",
+      "source_section": "Highlights: five-year historical charts",
+      "verification_status": "issuer_web_transcribed",
+      "human_review": "pending"
+    },
+    {
+      "field": "dividend_per_share",
+      "fiscal_year": 2025,
+      "value": 2.35,
+      "currency": "USD",
+      "unit": "units",
+      "source_url": "https://ar.jardines.com/2025/Highlights.html",
+      "source_section": "Highlights: five-year historical charts",
+      "verification_status": "issuer_web_transcribed",
+      "human_review": "pending"
+    },
+    {
+      "field": "revenue",
+      "fiscal_year": 2024,
+      "value": 34864,
+      "currency": "USD",
+      "unit": "million",
+      "source_url": "https://ar.jardines.com/2025/CFOStatement.html",
+      "source_section": "Chief Financial Officer statement: underlying business performance (2024 restated as indicated by issuer)",
+      "verification_status": "issuer_web_transcribed",
+      "human_review": "pending"
+    },
+    {
+      "field": "operating_profit",
+      "fiscal_year": 2024,
+      "value": 3924,
+      "currency": "USD",
+      "unit": "million",
+      "source_url": "https://ar.jardines.com/2025/CFOStatement.html",
+      "source_section": "Chief Financial Officer statement: underlying business performance (2024 restated as indicated by issuer)",
+      "verification_status": "issuer_web_transcribed",
+      "human_review": "pending"
+    },
+    {
+      "field": "reported_net_profit",
+      "fiscal_year": 2024,
+      "value": -468,
+      "currency": "USD",
+      "unit": "million",
+      "source_url": "https://ar.jardines.com/2025/CFOStatement.html",
+      "source_section": "Chief Financial Officer statement: underlying business performance (2024 restated as indicated by issuer)",
+      "verification_status": "issuer_web_transcribed",
+      "human_review": "pending"
+    },
+    {
+      "field": "revenue",
+      "fiscal_year": 2025,
+      "value": 33817,
+      "currency": "USD",
+      "unit": "million",
+      "source_url": "https://ar.jardines.com/2025/CFOStatement.html",
+      "source_section": "Chief Financial Officer statement: underlying business performance (2024 restated as indicated by issuer)",
+      "verification_status": "issuer_web_transcribed",
+      "human_review": "pending"
+    },
+    {
+      "field": "operating_profit",
+      "fiscal_year": 2025,
+      "value": 3716,
+      "currency": "USD",
+      "unit": "million",
+      "source_url": "https://ar.jardines.com/2025/CFOStatement.html",
+      "source_section": "Chief Financial Officer statement: underlying business performance (2024 restated as indicated by issuer)",
+      "verification_status": "issuer_web_transcribed",
+      "human_review": "pending"
+    },
+    {
+      "field": "reported_net_profit",
+      "fiscal_year": 2025,
+      "value": 1109,
+      "currency": "USD",
+      "unit": "million",
+      "source_url": "https://ar.jardines.com/2025/CFOStatement.html",
+      "source_section": "Chief Financial Officer statement: underlying business performance (2024 restated as indicated by issuer)",
+      "verification_status": "issuer_web_transcribed",
+      "human_review": "pending"
+    }
+  ],
+  "notes": [
+    "These are transcriptions of official issuer web tables, NOT extracted from the downloaded PDF.",
+    "Underlying net profit differs from reported net profit; do not merge these metrics.",
+    "Parent free cash flow is not consolidated free cash flow.",
+    "2024 CFO comparison marked with an asterisk by issuer; do not treat as originally published 2024 values.",
+    "2020 unavailable from this source; no fabricated value."
+  ]
+}

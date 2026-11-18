@@ -1,0 +1,916 @@
+{
+  "symbol": "002594.SZ",
+  "company": "BYD Company Limited (比亚迪股份有限公司)",
+  "fiscal_year": 2025,
+  "period_end": "2025-12-31",
+  "accounting_standard": "PRC Accounting Standards for Business Enterprises (企业会计准则)",
+  "currency": "CNY",
+  "unit": "thousand",
+  "source_url": "https://disc.static.szse.cn/download/disc/disk03/finalpage/2026-03-28/f5cdbdbf-b138-4e83-8c6d-5a7eecb9e670.PDF",
+  "pdf_sha256": "710d8b2e08e37ba521f1c4071d2c3e2369d3cadabc21a45073215d9f72138b0b",
+  "pdf_sha256_expected": "710d8b2e08e37ba521f1c4071d2c3e2369d3cadabc21a45073215d9f72138b0b",
+  "pdf_sha256_status": "match",
+  "page_count": 268,
+  "status": "extracted_consistent",
+  "facts": [
+    {
+      "field": "revenue",
+      "definition": "营业收入 (operating revenue)",
+      "statement": "income",
+      "fiscal_year": 2025,
+      "period_end": "2025-12-31",
+      "currency": "CNY",
+      "unit": "thousand",
+      "kind": "amount",
+      "pdf_page": 126,
+      "printed_page": "126",
+      "source_url": "https://disc.static.szse.cn/download/disc/disk03/finalpage/2026-03-28/f5cdbdbf-b138-4e83-8c6d-5a7eecb9e670.PDF",
+      "method": "table_row",
+      "verification_status": "machine_extracted",
+      "value": "803964958",
+      "value_in_units": "803964958000",
+      "raw_token": "803,964,958",
+      "row_values": [
+        "803,964,958",
+        "777,102,455"
+      ],
+      "column_index": 0,
+      "line": 7,
+      "evidence": "一、 营业收入 45  803,964,958     777,102,455"
+    },
+    {
+      "field": "operating_profit",
+      "definition": "营业利润 (PRC GAAP operating profit)",
+      "statement": "income",
+      "fiscal_year": 2025,
+      "period_end": "2025-12-31",
+      "currency": "CNY",
+      "unit": "thousand",
+      "kind": "amount",
+      "pdf_page": 126,
+      "printed_page": "126",
+      "source_url": "https://disc.static.szse.cn/download/disc/disk03/finalpage/2026-03-28/f5cdbdbf-b138-4e83-8c6d-5a7eecb9e670.PDF",
+      "method": "table_row",
+      "verification_status": "machine_extracted",
+      "value": "40184709",
+      "value_in_units": "40184709000",
+      "raw_token": "40,184,709",
+      "row_values": [
+        "40,184,709",
+        "50,486,047"
+      ],
+      "column_index": 0,
+      "line": 27,
+      "evidence": "二、 营业利润   40,184,709     50,486,047"
+    },
+    {
+      "field": "profit_before_tax",
+      "definition": null,
+      "statement": "income",
+      "fiscal_year": 2025,
+      "period_end": "2025-12-31",
+      "currency": "CNY",
+      "unit": "thousand",
+      "kind": "amount",
+      "pdf_page": 126,
+      "printed_page": "126",
+      "source_url": "https://disc.static.szse.cn/download/disc/disk03/finalpage/2026-03-28/f5cdbdbf-b138-4e83-8c6d-5a7eecb9e670.PDF",
+      "method": "table_row",
+      "verification_status": "machine_extracted",
+      "value": "39753049",
+      "value_in_units": "39753049000",
+      "raw_token": "39,753,049",
+      "row_values": [
+        "39,753,049",
+        "49,680,677"
+      ],
+      "column_index": 0,
+      "line": 31,
+      "evidence": "三、 利润总额   39,753,049   49,680,677"
+    },
+    {
+      "field": "net_profit",
+      "definition": null,
+      "statement": "income",
+      "fiscal_year": 2025,
+      "period_end": "2025-12-31",
+      "currency": "CNY",
+      "unit": "thousand",
+      "kind": "amount",
+      "pdf_page": 126,
+      "printed_page": "126",
+      "source_url": "https://disc.static.szse.cn/download/disc/disk03/finalpage/2026-03-28/f5cdbdbf-b138-4e83-8c6d-5a7eecb9e670.PDF",
+      "method": "table_row",
+      "verification_status": "machine_extracted",
+      "value": "33760758",
+      "value_in_units": "33760758000",
+      "raw_token": "33,760,758",
+      "row_values": [
+        "33,760,758",
+        "41,587,940"
+      ],
+      "column_index": 0,
+      "line": 34,
+      "evidence": "四、 净利润   33,760,758     41,587,940"
+    },
+    {
+      "field": "net_income_attributable",
+      "definition": null,
+      "statement": "income",
+      "fiscal_year": 2025,
+      "period_end": "2025-12-31",
+      "currency": "CNY",
+      "unit": "thousand",
+      "kind": "amount",
+      "pdf_page": 126,
+      "printed_page": "126",
+      "source_url": "https://disc.static.szse.cn/download/disc/disk03/finalpage/2026-03-28/f5cdbdbf-b138-4e83-8c6d-5a7eecb9e670.PDF",
+      "method": "table_row",
+      "verification_status": "machine_extracted",
+      "value": "32619022",
+      "value_in_units": "32619022000",
+      "raw_token": "32,619,022",
+      "row_values": [
+        "32,619,022",
+        "40,254,346"
+      ],
+      "column_index": 0,
+      "line": 41,
+      "evidence": "归属于母公司所有者的净利润   32,619,022     40,254,346"
+    },
+    {
+      "field": "nci_profit",
+      "definition": null,
+      "statement": "income",
+      "fiscal_year": 2025,
+      "period_end": "2025-12-31",
+      "currency": "CNY",
+      "unit": "thousand",
+      "kind": "amount",
+      "pdf_page": 126,
+      "printed_page": "126",
+      "source_url": "https://disc.static.szse.cn/download/disc/disk03/finalpage/2026-03-28/f5cdbdbf-b138-4e83-8c6d-5a7eecb9e670.PDF",
+      "method": "table_row",
+      "verification_status": "machine_extracted",
+      "value": "1141736",
+      "value_in_units": "1141736000",
+      "raw_token": "1,141,736",
+      "row_values": [
+        "1,141,736",
+        "1,333,594"
+      ],
+      "column_index": 0,
+      "line": 43,
+      "evidence": "少数股东损益     1,141,736      1,333,594"
+    },
+    {
+      "field": "eps_basic",
+      "definition": "Basic EPS, RMB per share (2024 restated for bonus issue)",
+      "statement": "income",
+      "fiscal_year": 2025,
+      "period_end": "2025-12-31",
+      "currency": "CNY",
+      "unit": "units",
+      "kind": "amount",
+      "pdf_page": 126,
+      "printed_page": "126",
+      "source_url": "https://disc.static.szse.cn/download/disc/disk03/finalpage/2026-03-28/f5cdbdbf-b138-4e83-8c6d-5a7eecb9e670.PDF",
+      "method": "table_row",
+      "verification_status": "machine_extracted",
+      "value": "3.58",
+      "value_in_units": "3.58",
+      "raw_token": "3.58",
+      "row_values": [
+        "3.58",
+        "4.61"
+      ],
+      "column_index": 0,
+      "line": 46,
+      "evidence": "基本每股收益 60  3.58   4.61"
+    },
+    {
+      "field": "cash",
+      "definition": "货币资金 (monetary funds, incl. restricted)",
+      "statement": "balance",
+      "fiscal_year": 2025,
+      "period_end": "2025-12-31",
+      "currency": "CNY",
+      "unit": "thousand",
+      "kind": "amount",
+      "pdf_page": 123,
+      "printed_page": "123",
+      "source_url": "https://disc.static.szse.cn/download/disc/disk03/finalpage/2026-03-28/f5cdbdbf-b138-4e83-8c6d-5a7eecb9e670.PDF",
+      "method": "table_row",
+      "verification_status": "machine_extracted",
+      "value": "75424747",
+      "value_in_units": "75424747000",
+      "raw_token": "75,424,747",
+      "row_values": [
+        "75,424,747",
+        "102,738,734"
+      ],
+      "column_index": 0,
+      "line": 10,
+      "evidence": "货币资金 1   75,424,747     102,738,734"
+    },
+    {
+      "field": "current_assets",
+      "definition": null,
+      "statement": "balance",
+      "fiscal_year": 2025,
+      "period_end": "2025-12-31",
+      "currency": "CNY",
+      "unit": "thousand",
+      "kind": "amount",
+      "pdf_page": 123,
+      "printed_page": "123",
+      "source_url": "https://disc.static.szse.cn/download/disc/disk03/finalpage/2026-03-28/f5cdbdbf-b138-4e83-8c6d-5a7eecb9e670.PDF",
+      "method": "table_row",
+      "verification_status": "machine_extracted",
+      "value": "371467558",
+      "value_in_units": "371467558000",
+      "raw_token": "371,467,558",
+      "row_values": [
+        "371,467,558",
+        "370,572,244"
+      ],
+      "column_index": 0,
+      "line": 23,
+      "evidence": "流动资产合计   371,467,558     370,572,244"
+    },
+    {
+      "field": "non_current_assets",
+      "definition": null,
+      "statement": "balance",
+      "fiscal_year": 2025,
+      "period_end": "2025-12-31",
+      "currency": "CNY",
+      "unit": "thousand",
+      "kind": "amount",
+      "pdf_page": 123,
+      "printed_page": "123",
+      "source_url": "https://disc.static.szse.cn/download/disc/disk03/finalpage/2026-03-28/f5cdbdbf-b138-4e83-8c6d-5a7eecb9e670.PDF",
+      "method": "table_row",
+      "verification_status": "machine_extracted",
+      "value": "512262325",
+      "value_in_units": "512262325000",
+      "raw_token": "512,262,325",
+      "row_values": [
+        "512,262,325",
+        "412,783,611"
+      ],
+      "column_index": 0,
+      "line": 41,
+      "evidence": "非流动资产合计   512,262,325    412,783,611"
+    },
+    {
+      "field": "total_assets",
+      "definition": null,
+      "statement": "balance",
+      "fiscal_year": 2025,
+      "period_end": "2025-12-31",
+      "currency": "CNY",
+      "unit": "thousand",
+      "kind": "amount",
+      "pdf_page": 123,
+      "printed_page": "123",
+      "source_url": "https://disc.static.szse.cn/download/disc/disk03/finalpage/2026-03-28/f5cdbdbf-b138-4e83-8c6d-5a7eecb9e670.PDF",
+      "method": "table_row",
+      "verification_status": "machine_extracted",
+      "value": "883729883",
+      "value_in_units": "883729883000",
+      "raw_token": "883,729,883",
+      "row_values": [
+        "883,729,883",
+        "783,355,855"
+      ],
+      "column_index": 0,
+      "line": 43,
+      "evidence": "资产总计   883,729,883   783,355,855"
+    },
+    {
+      "field": "current_liabilities",
+      "definition": null,
+      "statement": "balance",
+      "fiscal_year": 2025,
+      "period_end": "2025-12-31",
+      "currency": "CNY",
+      "unit": "thousand",
+      "kind": "amount",
+      "pdf_page": 124,
+      "printed_page": "124",
+      "source_url": "https://disc.static.szse.cn/download/disc/disk03/finalpage/2026-03-28/f5cdbdbf-b138-4e83-8c6d-5a7eecb9e670.PDF",
+      "method": "table_row",
+      "verification_status": "machine_extracted",
+      "value": "468451357",
+      "value_in_units": "468451357000",
+      "raw_token": "468,451,357",
+      "row_values": [
+        "468,451,357",
+        "495,985,176"
+      ],
+      "column_index": 0,
+      "line": 20,
+      "evidence": "流动负债合计   468,451,357     495,985,176"
+    },
+    {
+      "field": "non_current_liabilities",
+      "definition": null,
+      "statement": "balance",
+      "fiscal_year": 2025,
+      "period_end": "2025-12-31",
+      "currency": "CNY",
+      "unit": "thousand",
+      "kind": "amount",
+      "pdf_page": 124,
+      "printed_page": "124",
+      "source_url": "https://disc.static.szse.cn/download/disc/disk03/finalpage/2026-03-28/f5cdbdbf-b138-4e83-8c6d-5a7eecb9e670.PDF",
+      "method": "table_row",
+      "verification_status": "machine_extracted",
+      "value": "156739341",
+      "value_in_units": "156739341000",
+      "raw_token": "156,739,341",
+      "row_values": [
+        "156,739,341",
+        "88,682,470"
+      ],
+      "column_index": 0,
+      "line": 29,
+      "evidence": "非流动负债合计   156,739,341      88,682,470"
+    },
+    {
+      "field": "total_liabilities",
+      "definition": null,
+      "statement": "balance",
+      "fiscal_year": 2025,
+      "period_end": "2025-12-31",
+      "currency": "CNY",
+      "unit": "thousand",
+      "kind": "amount",
+      "pdf_page": 124,
+      "printed_page": "124",
+      "source_url": "https://disc.static.szse.cn/download/disc/disk03/finalpage/2026-03-28/f5cdbdbf-b138-4e83-8c6d-5a7eecb9e670.PDF",
+      "method": "table_row",
+      "verification_status": "machine_extracted",
+      "value": "625190698",
+      "value_in_units": "625190698000",
+      "raw_token": "625,190,698",
+      "row_values": [
+        "625,190,698",
+        "584,667,646"
+      ],
+      "column_index": 0,
+      "line": 31,
+      "evidence": "负债合计   625,190,698     584,667,646"
+    },
+    {
+      "field": "equity_attributable",
+      "definition": null,
+      "statement": "balance",
+      "fiscal_year": 2025,
+      "period_end": "2025-12-31",
+      "currency": "CNY",
+      "unit": "thousand",
+      "kind": "amount",
+      "pdf_page": 125,
+      "printed_page": "125",
+      "source_url": "https://disc.static.szse.cn/download/disc/disk03/finalpage/2026-03-28/f5cdbdbf-b138-4e83-8c6d-5a7eecb9e670.PDF",
+      "method": "table_row",
+      "verification_status": "machine_extracted",
+      "value": "246274606",
+      "value_in_units": "246274606000",
+      "raw_token": "246,274,606",
+      "row_values": [
+        "246,274,606",
+        "185,251,104"
+      ],
+      "column_index": 0,
+      "line": 18,
+      "evidence": "归属于母公司股东权益合计   246,274,606     185,251,104"
+    },
+    {
+      "field": "total_equity",
+      "definition": null,
+      "statement": "balance",
+      "fiscal_year": 2025,
+      "period_end": "2025-12-31",
+      "currency": "CNY",
+      "unit": "thousand",
+      "kind": "amount",
+      "pdf_page": 125,
+      "printed_page": "125",
+      "source_url": "https://disc.static.szse.cn/download/disc/disk03/finalpage/2026-03-28/f5cdbdbf-b138-4e83-8c6d-5a7eecb9e670.PDF",
+      "method": "table_row",
+      "verification_status": "machine_extracted",
+      "value": "258539185",
+      "value_in_units": "258539185000",
+      "raw_token": "258,539,185",
+      "row_values": [
+        "258,539,185",
+        "198,688,209"
+      ],
+      "column_index": 0,
+      "line": 21,
+      "evidence": "股东权益合计   258,539,185   198,688,209"
+    },
+    {
+      "field": "liabilities_and_equity",
+      "definition": null,
+      "statement": "balance",
+      "fiscal_year": 2025,
+      "period_end": "2025-12-31",
+      "currency": "CNY",
+      "unit": "thousand",
+      "kind": "amount",
+      "pdf_page": 125,
+      "printed_page": "125",
+      "source_url": "https://disc.static.szse.cn/download/disc/disk03/finalpage/2026-03-28/f5cdbdbf-b138-4e83-8c6d-5a7eecb9e670.PDF",
+      "method": "table_row",
+      "verification_status": "machine_extracted",
+      "value": "883729883",
+      "value_in_units": "883729883000",
+      "raw_token": "883,729,883",
+      "row_values": [
+        "883,729,883",
+        "783,355,855"
+      ],
+      "column_index": 0,
+      "line": 23,
+      "evidence": "负债和股东权益总计   883,729,883   783,355,855"
+    },
+    {
+      "field": "operating_cash_flow",
+      "definition": null,
+      "statement": "cash_flow",
+      "fiscal_year": 2025,
+      "period_end": "2025-12-31",
+      "currency": "CNY",
+      "unit": "thousand",
+      "kind": "amount",
+      "pdf_page": 130,
+      "printed_page": "130",
+      "source_url": "https://disc.static.szse.cn/download/disc/disk03/finalpage/2026-03-28/f5cdbdbf-b138-4e83-8c6d-5a7eecb9e670.PDF",
+      "method": "table_row",
+      "verification_status": "machine_extracted",
+      "value": "59135544",
+      "value_in_units": "59135544000",
+      "raw_token": "59,135,544",
+      "row_values": [
+        "59,135,544",
+        "133,453,873"
+      ],
+      "column_index": 0,
+      "line": 21,
+      "evidence": "经营活动产生的现金流量净额 62   59,135,544     133,453,873"
+    },
+    {
+      "field": "capex",
+      "definition": null,
+      "statement": "cash_flow",
+      "fiscal_year": 2025,
+      "period_end": "2025-12-31",
+      "currency": "CNY",
+      "unit": "thousand",
+      "kind": "amount",
+      "pdf_page": 130,
+      "printed_page": "130",
+      "source_url": "https://disc.static.szse.cn/download/disc/disk03/finalpage/2026-03-28/f5cdbdbf-b138-4e83-8c6d-5a7eecb9e670.PDF",
+      "method": "table_row",
+      "verification_status": "machine_extracted",
+      "value": "156807853",
+      "value_in_units": "156807853000",
+      "raw_token": "156,807,853",
+      "row_values": [
+        "156,807,853",
+        "97,359,768"
+      ],
+      "column_index": 0,
+      "line": 36,
+      "evidence": "购建固定资产、无形资产和其他长期资产支付的现金    156,807,853     97,359,768"
+    },
+    {
+      "field": "dividends_and_interest_paid",
+      "definition": "Dividends, profit distributions AND interest paid (not dividends only)",
+      "statement": "cash_flow",
+      "fiscal_year": 2025,
+      "period_end": "2025-12-31",
+      "currency": "CNY",
+      "unit": "thousand",
+      "kind": "amount",
+      "pdf_page": 131,
+      "printed_page": "131",
+      "source_url": "https://disc.static.szse.cn/download/disc/disk03/finalpage/2026-03-28/f5cdbdbf-b138-4e83-8c6d-5a7eecb9e670.PDF",
+      "method": "table_row",
+      "verification_status": "machine_extracted",
+      "value": "14125279",
+      "value_in_units": "14125279000",
+      "raw_token": "14,125,279",
+      "row_values": [
+        "14,125,279",
+        "10,051,081"
+      ],
+      "column_index": 0,
+      "line": 18,
+      "evidence": "分配股利、利润或偿付利息支付的现金    14,125,279     10,051,081"
+    },
+    {
+      "field": "cash_end_cf",
+      "definition": null,
+      "statement": "cash_flow",
+      "fiscal_year": 2025,
+      "period_end": "2025-12-31",
+      "currency": "CNY",
+      "unit": "thousand",
+      "kind": "amount",
+      "pdf_page": 131,
+      "printed_page": "131",
+      "source_url": "https://disc.static.szse.cn/download/disc/disk03/finalpage/2026-03-28/f5cdbdbf-b138-4e83-8c6d-5a7eecb9e670.PDF",
+      "method": "table_row",
+      "verification_status": "machine_extracted",
+      "value": "68395197",
+      "value_in_units": "68395197000",
+      "raw_token": "68,395,197",
+      "row_values": [
+        "68,395,197",
+        "102,256,542"
+      ],
+      "column_index": 0,
+      "line": 33,
+      "evidence": "六、 年末现金及现金等价物余额 62  68,395,197    102,256,542"
+    },
+    {
+      "field": "dividend_per_share",
+      "definition": "Proposed FY2025 cash dividend per share (RMB, tax incl.), subject to AGM",
+      "statement": null,
+      "fiscal_year": 2025,
+      "period_end": "2025-12-31",
+      "currency": "CNY",
+      "unit": "units",
+      "kind": "amount",
+      "pdf_page": 249,
+      "printed_page": "249",
+      "source_url": "https://disc.static.szse.cn/download/disc/disk03/finalpage/2026-03-28/f5cdbdbf-b138-4e83-8c6d-5a7eecb9e670.PDF",
+      "method": "text_regex",
+      "verification_status": "machine_extracted",
+      "value": "0.358",
+      "value_in_units": "0.358",
+      "raw_token": "0.358",
+      "line": 23,
+      "evidence": "17,197,565 股为基数，分配现金股利人民币 3,263,957 千元（即每股现金股利人民币 0.358 元（含税））， 该股利分配方案尚待股东大会审议批准。"
+    },
+    {
+      "field": "dividend_per_10_shares",
+      "definition": null,
+      "statement": null,
+      "fiscal_year": 2025,
+      "period_end": "2025-12-31",
+      "currency": "CNY",
+      "unit": "units",
+      "kind": "amount",
+      "pdf_page": 5,
+      "printed_page": "5",
+      "source_url": "https://disc.static.szse.cn/download/disc/disk03/finalpage/2026-03-28/f5cdbdbf-b138-4e83-8c6d-5a7eecb9e670.PDF",
+      "method": "text_regex",
+      "verification_status": "machine_extracted",
+      "value": "3.58",
+      "value_in_units": "3.58",
+      "raw_token": "3.58",
+      "line": 16,
+      "evidence": "向全体股东每 10 股派发现金红利 3.58 元（含税），送红股 0 股（含税），不 以公积金转增股本。"
+    }
+  ],
+  "derived": [
+    {
+      "field": "free_cash_flow",
+      "definition": "Operating cash flow minus capex as defined in this profile (simple FCF, not issuer-defined)",
+      "statement": "cash_flow",
+      "fiscal_year": 2025,
+      "period_end": "2025-12-31",
+      "currency": "CNY",
+      "unit": "thousand",
+      "kind": "amount",
+      "value": "-97672309",
+      "value_in_units": "-97672309000",
+      "method": "derived",
+      "derived_from": [
+        "operating_cash_flow",
+        "-capex"
+      ],
+      "pdf_page": [
+        130
+      ],
+      "source_url": "https://disc.static.szse.cn/download/disc/disk03/finalpage/2026-03-28/f5cdbdbf-b138-4e83-8c6d-5a7eecb9e670.PDF",
+      "verification_status": "derived_from_machine_extracted"
+    }
+  ],
+  "errors": [],
+  "checks": [
+    {
+      "name": "balance_sheet_identity",
+      "left": [
+        "total_assets"
+      ],
+      "right": [
+        "total_liabilities",
+        "total_equity"
+      ],
+      "factor": null,
+      "left_value": "883729883",
+      "right_value": "883729883",
+      "difference": "0",
+      "tolerance": "1",
+      "status": "pass"
+    },
+    {
+      "name": "profit_split",
+      "left": [
+        "net_profit"
+      ],
+      "right": [
+        "net_income_attributable",
+        "nci_profit"
+      ],
+      "factor": null,
+      "left_value": "33760758",
+      "right_value": "33760758",
+      "difference": "0",
+      "tolerance": "1",
+      "status": "pass"
+    },
+    {
+      "name": "liabilities_and_equity_total",
+      "left": [
+        "liabilities_and_equity"
+      ],
+      "right": [
+        "total_assets"
+      ],
+      "factor": null,
+      "left_value": "883729883",
+      "right_value": "883729883",
+      "difference": "0",
+      "tolerance": "0",
+      "status": "pass"
+    },
+    {
+      "name": "assets_split",
+      "left": [
+        "total_assets"
+      ],
+      "right": [
+        "current_assets",
+        "non_current_assets"
+      ],
+      "factor": null,
+      "left_value": "883729883",
+      "right_value": "883729883",
+      "difference": "0",
+      "tolerance": "1",
+      "status": "pass"
+    },
+    {
+      "name": "liabilities_split",
+      "left": [
+        "total_liabilities"
+      ],
+      "right": [
+        "current_liabilities",
+        "non_current_liabilities"
+      ],
+      "factor": null,
+      "left_value": "625190698",
+      "right_value": "625190698",
+      "difference": "0",
+      "tolerance": "1",
+      "status": "pass"
+    },
+    {
+      "name": "dps_vs_per_10_shares",
+      "left": [
+        "dividend_per_10_shares"
+      ],
+      "right": [
+        "dividend_per_share"
+      ],
+      "factor": "10",
+      "left_value": "3.58",
+      "right_value": "3.58",
+      "difference": "0",
+      "tolerance": "0.0005",
+      "status": "pass"
+    }
+  ],
+  "ratios": {
+    "net_margin": {
+      "value": "0.0406",
+      "formula": "net_income_attributable / revenue",
+      "note": null
+    },
+    "operating_margin": {
+      "value": "0.0500",
+      "formula": "operating_profit / revenue",
+      "note": null
+    },
+    "return_on_equity_simple": {
+      "value": "0.1324",
+      "formula": "net_income_attributable / equity_attributable",
+      "note": null
+    },
+    "equity_ratio": {
+      "value": "0.2926",
+      "formula": "total_equity / total_assets",
+      "note": null
+    },
+    "liabilities_to_assets": {
+      "value": "0.7074",
+      "formula": "total_liabilities / total_assets",
+      "note": null
+    },
+    "cash_conversion": {
+      "value": "1.7516",
+      "formula": "operating_cash_flow / net_profit",
+      "note": null
+    },
+    "payout_ratio_per_share": {
+      "value": "0.1000",
+      "formula": "dividend_per_share / eps_basic",
+      "note": null
+    },
+    "cash_dividend_cover": {
+      "value": null,
+      "formula": "free_cash_flow / dividends_paid_to_shareholders",
+      "note": "not meaningful for this issuer"
+    }
+  },
+  "manual_review": {
+    "human_review": "pending",
+    "assistant_visual_check": {
+      "date": "2026-11-18",
+      "by": "AI assistant (Claude), not a human reviewer",
+      "method": "statement pages rendered with pdftoppm and read visually; every extracted value on these pages compared with the rendered table",
+      "pdf_pages": [
+        126
+      ],
+      "result": "all values on the listed pages match the rendered original, incl. column (fiscal year 2025) and sign"
+    },
+    "note": "Set human_review to \"approved\" with name/date only after a person has checked the cited pages."
+  },
+  "caveats": [
+    "Amounts in RMB thousand (千元), as stated on page 123 (财务附注中报表的单位为：千元).",
+    "2024 comparatives in the income statement are restated (经重述); 2024 EPS adjusted for the 2025 bonus issue (8 bonus shares + 12 capitalisation shares per 10).",
+    "Cash-flow line for dividends also contains interest payments; no cash dividend cover is computed.",
+    "Dividend per share is a board proposal pending AGM approval."
+  ],
+  "warning": "Machine-extracted values with page/line provenance and arithmetic checks. They are not an audited dataset; see manual_review for human verification status.",
+  "second_engine": {
+    "engine": "pdfplumber",
+    "status": "ok",
+    "summary": {
+      "row_confirmed": 21,
+      "token_on_page": 2,
+      "not_found": 0
+    },
+    "results": [
+      {
+        "field": "revenue",
+        "pdf_page": 126,
+        "token": "803,964,958",
+        "status": "row_confirmed"
+      },
+      {
+        "field": "operating_profit",
+        "pdf_page": 126,
+        "token": "40,184,709",
+        "status": "row_confirmed"
+      },
+      {
+        "field": "profit_before_tax",
+        "pdf_page": 126,
+        "token": "39,753,049",
+        "status": "row_confirmed"
+      },
+      {
+        "field": "net_profit",
+        "pdf_page": 126,
+        "token": "33,760,758",
+        "status": "row_confirmed"
+      },
+      {
+        "field": "net_income_attributable",
+        "pdf_page": 126,
+        "token": "32,619,022",
+        "status": "row_confirmed"
+      },
+      {
+        "field": "nci_profit",
+        "pdf_page": 126,
+        "token": "1,141,736",
+        "status": "row_confirmed"
+      },
+      {
+        "field": "eps_basic",
+        "pdf_page": 126,
+        "token": "3.58",
+        "status": "row_confirmed"
+      },
+      {
+        "field": "cash",
+        "pdf_page": 123,
+        "token": "75,424,747",
+        "status": "row_confirmed"
+      },
+      {
+        "field": "current_assets",
+        "pdf_page": 123,
+        "token": "371,467,558",
+        "status": "row_confirmed"
+      },
+      {
+        "field": "non_current_assets",
+        "pdf_page": 123,
+        "token": "512,262,325",
+        "status": "row_confirmed"
+      },
+      {
+        "field": "total_assets",
+        "pdf_page": 123,
+        "token": "883,729,883",
+        "status": "row_confirmed"
+      },
+      {
+        "field": "current_liabilities",
+        "pdf_page": 124,
+        "token": "468,451,357",
+        "status": "row_confirmed"
+      },
+      {
+        "field": "non_current_liabilities",
+        "pdf_page": 124,
+        "token": "156,739,341",
+        "status": "row_confirmed"
+      },
+      {
+        "field": "total_liabilities",
+        "pdf_page": 124,
+        "token": "625,190,698",
+        "status": "row_confirmed"
+      },
+      {
+        "field": "equity_attributable",
+        "pdf_page": 125,
+        "token": "246,274,606",
+        "status": "row_confirmed"
+      },
+      {
+        "field": "total_equity",
+        "pdf_page": 125,
+        "token": "258,539,185",
+        "status": "row_confirmed"
+      },
+      {
+        "field": "liabilities_and_equity",
+        "pdf_page": 125,
+        "token": "883,729,883",
+        "status": "row_confirmed"
+      },
+      {
+        "field": "operating_cash_flow",
+        "pdf_page": 130,
+        "token": "59,135,544",
+        "status": "row_confirmed"
+      },
+      {
+        "field": "capex",
+        "pdf_page": 130,
+        "token": "156,807,853",
+        "status": "row_confirmed"
+      },
+      {
+        "field": "dividends_and_interest_paid",
+        "pdf_page": 131,
+        "token": "14,125,279",
+        "status": "row_confirmed"
+      },
+      {
+        "field": "cash_end_cf",
+        "pdf_page": 131,
+        "token": "68,395,197",
+        "status": "row_confirmed"
+      },
+      {
+        "field": "dividend_per_share",
+        "pdf_page": 249,
+        "token": "0.358",
+        "status": "token_on_page"
+      },
+      {
+        "field": "dividend_per_10_shares",
+        "pdf_page": 5,
+        "token": "3.58",
+        "status": "token_on_page"
+      }
+    ]
+  },
+  "reference_comparison": [],
+  "extracted_at": "2026-11-18T12:25:31.866747+00:00"
+}

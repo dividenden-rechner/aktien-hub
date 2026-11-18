@@ -1,0 +1,66 @@
+name: Import and verify annual reports
+on:
+  workflow_dispatch:
+    inputs:
+      symbol:
+        description: 'Optional ticker (0001.HK, 0019.HK, 0142.HK, D05.SI, 002594.SZ); empty = all'
+        required: false
+        type: string
+  pull_request:
+    paths: ['app/**', 'tests/**', 'reports/**', '*.py', 'requirements.txt']
+jobs:
+  tests:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+          cache: pip
+      - run: pip install -r requirements.txt
+      - name: Offline test suite (live PDF test is skipped without cache)
+        run: python -m pytest -q -rs
+  import:
+    if: github.event_name == 'workflow_dispatch'
+    needs: tests
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+          cache: pip
+      - run: pip install -r requirements.txt
+      - name: Download official PDFs (SHA-256 pinned in reports/catalog.json)
+        shell: bash
+        env:
+          SYMBOL: ${{ inputs.symbol }}
+        run: |
+          ARGS=""; [ -n "$SYMBOL" ] && ARGS="--symbol $SYMBOL"
+          python process_reports.py --download $ARGS > import-result.json 2> import-warnings.log
+          python -c "import json,sys; s=json.load(open('import-result.json'))['summary']; print(s); sys.exit(1 if s['download_failed'] else 0)"
+      - name: Extract, check and cross-verify (fails if any report is inconsistent)
+        shell: bash
+        env:
+          SYMBOL: ${{ inputs.symbol }}
+        run: |
+          ARGS=""; [ -n "$SYMBOL" ] && ARGS="--symbol $SYMBOL"
+          python extract_reports.py $ARGS | tee extract-result.json
+      - name: Live regression test against the downloaded PDFs
+        run: python -m pytest -q tests/test_extracted_reports_2025.py
+      - name: Upload results
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: asia-reports-verification
+          path: |
+            import-result.json
+            extract-result.json
+            reports/extracted/
+            reports/review/*.review.json
+          if-no-files-found: warn
+          retention-days: 14

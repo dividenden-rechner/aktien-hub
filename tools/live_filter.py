@@ -17,7 +17,7 @@ HID = CFG.get("versteckt", [])
 TEST = (CFG.get("testkopie") or "").strip("/")
 ALT, NEU = CFG.get("domain_alt", ""), CFG.get("domain_neu", "")
 FMP_AUS = CFG.get("fmp_aus", False)
-SKIP = {".git", ".github", "_site", "tools", "docs", "worker", "content", "node_modules", "__pycache__"}
+SKIP = {".git", ".github", "_site", "tools", "docs", "worker", "content", "node_modules", "__pycache__", "asia-equity-hub"}
 SKIP_FILES = {"ANLEITUNG.txt", "README.md"}
 
 
