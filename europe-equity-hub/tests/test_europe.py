@@ -194,3 +194,22 @@ def test_committed_history_never_zero_fills():
     facts = json.loads((HIST / 'financials_esef.json').read_text(encoding='utf-8'))['facts']
     assert all(f['human_review'] == 'pending' and f['verification_status'] != 'verified' for f in facts)
     assert all(f['currency'] or f['unit'] == 'shares' for f in facts)
+
+
+def test_list_download_retries_transient_errors_then_gives_up():
+    # Regression: first GitHub run failed when one list (Xetra) returned a transient error.
+    import importlib.util
+    import httpx
+    spec = importlib.util.spec_from_file_location('bol', ROOT / 'scripts' / 'build_official_lists.py')
+    mod = importlib.util.module_from_spec(spec)
+    spec.loader.exec_module(mod)
+    calls = []
+
+    def flaky(req):
+        calls.append(1)
+        return httpx.Response(502 if len(calls) < 3 else 200, text='ok')
+    assert mod.RetryClient(httpx.Client(transport=httpx.MockTransport(flaky)), pause=0).get('https://x').status_code == 200
+    calls.clear()
+    with pytest.raises(httpx.HTTPError):
+        mod.RetryClient(httpx.Client(transport=httpx.MockTransport(lambda r: (calls.append(1), httpx.Response(502))[1])), pause=0).get('https://x')
+    assert len(calls) == 3
