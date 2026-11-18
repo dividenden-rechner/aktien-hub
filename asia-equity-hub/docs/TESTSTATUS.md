@@ -81,3 +81,7 @@
 - Zehnjahreswerte 2016–2023 wurden nicht gegen die damaligen Originalberichte geprüft (können restated sein; als `presentation_note` gekennzeichnet).
 - Menschliche Prüfung: weiterhin für alles ausstehend. Nichts ist als `verified` markiert.
 - GitHub-Workflows: Syntax geprüft, nicht auf GitHub ausgeführt.
+
+## Ergänzung v1.7 (2026-11-18)
+- **Getestet (offline, nachgebaute Antworten):** DART-Firmenliste, KOSPI/KOSDAQ-Endung, Berichtstitel `사업보고서 (JJJJ.MM)`, Korrekturen getrennt, EDINET-Tagesindex mit Wochenend-Überspringen, Fehlerzählung, Geschäftsjahr nach Periodenbeginn, Schlüssel nie in Fehlermeldungen. Testlauf: 148 bestanden, 1 übersprungen (ohne PDFs).
+- **Nicht ausgeführt:** echte DART- und EDINET-Abfragen. Sie laufen erst auf GitHub mit den Secrets. Bis dahin bleibt Korea „candidate_unverified“ und Japan ohne Dokumentliste.

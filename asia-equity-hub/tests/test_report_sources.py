@@ -17,8 +17,8 @@ def test_market_specific_source_status():
     for e in SRC['entries']:
         status[e['market']].add(e['source_status'])
     assert status['Singapur'] == {'manual_source_required'}
-    assert status['Südkorea'] == {'dart_api_key_required'}
-    assert status['Japan'] <= {'edinet_code_known_api_key_required', 'no_identity_no_source'}
+    assert status['Südkorea'] <= {'dart_api_key_required', 'dart_queried', 'no_identity_no_source'}
+    assert status['Japan'] <= {'edinet_code_known_api_key_required', 'edinet_queried', 'no_identity_no_source'}
 
 
 def test_candidates_are_official_hosts_and_unverified():
@@ -26,7 +26,9 @@ def test_candidates_are_official_hosts_and_unverified():
         assert e['verification_status'] == 'candidates_unverified'
         for docs in (e.get('documents_by_year') or {}).values():
             for d in docs:
-                assert d['url'].startswith(('https://www1.hkexnews.hk/', 'https://static.cninfo.com.cn/'))
+                assert d['url'].startswith(('https://www1.hkexnews.hk/', 'https://static.cninfo.com.cn/',
+                                            'https://dart.fss.or.kr/', 'https://api.edinet-fsa.go.jp/'))
+                assert 'crtfc_key' not in d['url'] and 'Subscription-Key' not in d['url']
 
 
 def test_registered_reports_are_found_by_discovery():

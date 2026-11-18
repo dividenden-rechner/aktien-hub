@@ -2,6 +2,7 @@ name: Asien - Unternehmensuniversum (Ticker, Kennungen, Berichtsquellen)
 
 # Laedt offizielle, kostenlose Wertpapierlisten (HKEX, SGX, CNINFO, JPX, EDINET) neu,
 # ordnet die 451 Eintraege zu und sucht Jahresberichts-Kandidaten 2016-2025 (HKEXnews, CNINFO).
+# Mit DART_API_KEY/EDINET_API_KEY: Korea-Ticker pruefen, Geschaeftsberichte KR/JP 2016-2025 auflisten.
 # Es werden keine Finanzzahlen erzeugt und nichts als "verified" markiert.
 
 on:
@@ -16,7 +17,7 @@ concurrency:
 jobs:
   aktualisieren:
     runs-on: ubuntu-latest
-    timeout-minutes: 40
+    timeout-minutes: 150
     defaults:
       run:
         working-directory: asia-equity-hub
@@ -27,11 +28,16 @@ jobs:
           python-version: "3.12"
           cache: pip
           cache-dependency-path: asia-equity-hub/requirements.txt
-      - run: pip install -r requirements.txt openpyxl
+      - run: pip install -r requirements.txt
       - name: Offizielle Listen laden und zuordnen
         run: python build_identity_map.py --download
       - name: Berichtsquellen suchen (HKEXnews, CNINFO)
         run: python build_report_sources.py
+      - name: Korea (OpenDART) und Japan (EDINET) - braucht die vorhandenen Secrets
+        env:
+          DART_API_KEY: ${{ secrets.DART_API_KEY }}
+          EDINET_API_KEY: ${{ secrets.EDINET_API_KEY }}
+        run: python build_regulator_sources.py
       - name: Tests
         run: python -m pytest -q
       - name: Ergebnis committen

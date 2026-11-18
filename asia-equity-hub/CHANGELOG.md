@@ -82,3 +82,11 @@
 
 ### Unverändert
 - Alle v1.1–v1.5-Module, Profile, Prüfsummen, Daten und Tests. Kein bestehender Test wurde geändert oder entfernt; die zwei Discovery-Testdateien wurden nur um neue Tests ergänzt.
+
+## v1.7 — Korea (OpenDART) und Japan (EDINET) auf GitHub (2026-11-18)
+- `app/regulator_sources.py`, `build_regulator_sources.py`: mit den vorhandenen Secrets `DART_API_KEY`/`EDINET_API_KEY`
+  - Korea: 73 Ticker-Kandidaten gegen die offizielle DART-Firmenliste (`corpCode.xml`) prüfen, Markt (KOSPI/KOSDAQ) und DART-Kennung ergänzen, 사업보고서 2016–2025 auflisten.
+  - Japan: 有価証券報告書 (docTypeCode 120, Korrekturen 130 getrennt) 2016–2025 der 234 bestätigten EDINET-Codes aus dem täglichen EDINET-Dokumentenindex.
+- Schritt im Workflow `asien-universum.yml` (Laufzeit-Limit 150 min).
+- API-Schlüssel erscheinen nie in Ausgaben oder Fehlermeldungen. Ohne Schlüssel bleiben die Dateien unverändert.
+- 6 neue Tests mit nachgebauten DART/EDINET-Antworten; drei v1.6-Tests um die neuen Status erweitert.

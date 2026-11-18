@@ -26,7 +26,7 @@ def test_confirmed_entries_carry_official_evidence():
     for e in IDMAP['entries']:
         if e['status'] != 'confirmed_official_list':
             continue
-        assert e['ticker'] and e['evidence'] in IDMAP['official_lists'] or e['evidence'] == 'jpx+edinet'
+        assert e['ticker'] and (e['evidence'] in IDMAP['official_lists'] or e['evidence'] in ('jpx+edinet', 'dart_corpcode+company'))
         if e['market'] == 'Hongkong':
             assert len(e['identifiers']['isin']) == 12
         if e['market'] == 'China':
@@ -56,7 +56,11 @@ def test_known_mappings_and_documented_exceptions():
     assert by[('Japan', 'Toshiba')]['status'] == 'not_in_current_official_list' and by[('Japan', 'Toshiba')]['ticker'] is None
     assert by[('Japan', 'Nikkei')]['status'] == 'not_listed'
     assert by[('Hongkong', 'Hang Seng Bank')]['status'] == 'not_in_current_official_list'
-    assert all(e['status'] == 'candidate_unverified' for e in IDMAP['entries'] if e['market'] == 'Südkorea')
+    for e in IDMAP['entries']:
+        if e['market'] == 'Südkorea':  # unverified until build_regulator_sources.py ran with DART_API_KEY
+            assert e['status'] in ('candidate_unverified', 'confirmed_official_list', 'not_in_current_official_list')
+            if e['status'] == 'confirmed_official_list':
+                assert e['identifiers']['dart_corp_code'] and e['evidence'] == 'dart_corpcode+company'
 
 
 def test_counts_match_entries():
