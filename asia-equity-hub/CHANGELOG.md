@@ -90,3 +90,7 @@
 - Schritt im Workflow `asien-universum.yml` (Laufzeit-Limit 150 min).
 - API-Schlüssel erscheinen nie in Ausgaben oder Fehlermeldungen. Ohne Schlüssel bleiben die Dateien unverändert.
 - 6 neue Tests mit nachgebauten DART/EDINET-Antworten; drei v1.6-Tests um die neuen Status erweitert.
+
+## v1.7.1 (2026-11-18)
+- Fehler im ersten GitHub-Lauf behoben: `build_regulator_sources.py` las nach dem Neuaufbau eines Korea-Eintrags (`e.clear()`) noch dessen `id` → `KeyError: 'id'`. Der DART-Abruf selbst lief erfolgreich; der Fehler trat erst beim Zurückschreiben auf, daher wurde nichts committet und Japan nicht mehr abgefragt.
+- Zusammenführung als `apply_korea()` ausgelagert und mit einem Regressionstest abgesichert.

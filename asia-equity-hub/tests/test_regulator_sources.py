@@ -103,3 +103,22 @@ def test_edinet_scan_skips_weekends_and_counts_failures():
 def test_dart_report_title_parsing():
     out = parse_dart_reports([{'report_nm': '사업보고서 (2019.03)', 'rcept_no': '1', 'rcept_dt': '20190615'}], [2019])
     assert out['2019'][0]['period_end'] == '2019-03'
+
+
+def test_apply_korea_merges_without_losing_ids():
+    # Regression for the first GitHub run (2026-11-18): KeyError 'id' after e.clear().
+    from build_regulator_sources import apply_korea
+    ident = {'entries': [
+        {'id': 'k1', 'requested_name': 'Samsung Electronics', 'market': 'Südkorea', 'exchange': 'KRX',
+         'human_review': 'pending', 'status': 'candidate_unverified', 'ticker': '005930.KS', 'exchange_code': '005930'},
+        {'id': 'j1', 'requested_name': 'Kao', 'market': 'Japan', 'exchange': 'TSE', 'human_review': 'pending'}]}
+    src = {'k1': {'id': 'k1', 'source_status': 'dart_api_key_required', 'note': 'x'}, 'j1': {'id': 'j1'}}
+    res = {'identities': {'k1': {'status': 'confirmed_official_list', 'ticker': '005930.KS', 'exchange': 'KOSPI',
+                                 'identifiers': {'dart_corp_code': '00126380'}}},
+           'sources': {'k1': {'source_status': 'dart_queried', 'documents_by_year': {}, 'years_with_candidates': []}}}
+    apply_korea(ident, src, res)
+    k = ident['entries'][0]
+    assert k['id'] == 'k1' and k['requested_name'] == 'Samsung Electronics' and k['exchange'] == 'KOSPI'
+    assert k['status'] == 'confirmed_official_list' and k['human_review'] == 'pending'
+    assert src['k1']['source_status'] == 'dart_queried' and 'note' not in src['k1']
+    assert ident['entries'][1] == {'id': 'j1', 'requested_name': 'Kao', 'market': 'Japan', 'exchange': 'TSE', 'human_review': 'pending'}
