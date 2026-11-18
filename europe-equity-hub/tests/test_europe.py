@@ -213,3 +213,22 @@ def test_list_download_retries_transient_errors_then_gives_up():
     with pytest.raises(httpx.HTTPError):
         mod.RetryClient(httpx.Client(transport=httpx.MockTransport(lambda r: (calls.append(1), httpx.Response(502))[1])), pause=0).get('https://x')
     assert len(calls) == 3
+
+
+def test_missing_supplementary_list_falls_back_to_previous_tickers(tmp_path, monkeypatch):
+    # Regression: GitHub runners cannot download the Xetra list; tickers must come from the last build, not vanish.
+    import importlib.util
+    spec = importlib.util.spec_from_file_location('bu', ROOT / 'scripts' / 'build_universe.py')
+    mod = importlib.util.module_from_spec(spec)
+    spec.loader.exec_module(mod)
+    (tmp_path / 'listings.json').write_text(json.dumps([
+        {'isin': 'DE0007164600', 'mic': 'XETA', 'ticker': 'SAP', 'wkn': '716460', 'ticker_source': 'xetra_all_tradable'},
+        {'isin': 'NL0010273215', 'mic': 'XAMS', 'ticker': 'ASML', 'ticker_source': 'euronext_equities'},
+        {'isin': 'GB00BP6MXD84', 'mic': 'XLON', 'ticker': None, 'ticker_source': None}]), encoding='utf-8')
+    monkeypatch.setattr(mod, 'OUT', tmp_path)
+    prev = mod.previous_tickers()
+    assert prev['xetra_all_tradable'] == {'DE0007164600': {'ticker': 'SAP', 'wkn': '716460'}}
+    assert prev['euronext_equities'][('NL0010273215', 'XAMS')]['ticker'] == 'ASML'
+    rows = [L('DE0007164600', 'XETA', 'SAP SE')]
+    enrich(rows, prev['xetra_all_tradable'], {}, {})
+    assert rows[0]['ticker'] == 'SAP' and rows[0]['ticker_source'] == 'xetra_all_tradable'
