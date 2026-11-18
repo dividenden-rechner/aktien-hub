@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-17 14:52 UTC",
+ "updated": "2026-11-18 03:51 UTC",
  "quelle": "Alpha Vantage",
  "items": [
   {
@@ -253,7 +253,7 @@
    "sym": "BHP",
    "datum": "2026-11-17",
    "name": "BHP GROUP LIMITED",
-   "fiscal": "2025-03-31",
+   "fiscal": "2026-09-30",
    "cur": "USD",
    "zeit": "",
    "eps_est": 0.0,
@@ -323,15 +323,16 @@
    "sym": "KLAR",
    "datum": "2026-11-17",
    "name": "KLARNA GROUP PUBLIC LIMITED COMPANY",
-   "fiscal": "2025-12-31",
+   "fiscal": "2026-09-30",
    "cur": "USD",
    "zeit": "vor",
-   "eps_est": null,
+   "eps_est": -0.16,
    "eps_n": 0,
    "rev_est": 1057021650.0,
    "rev_n": 13,
    "est_stand": "2026-11-17",
-   "act_try": "2026-11-17"
+   "act_try": "2026-11-17",
+   "eps_src": "kalender"
   },
   {
    "sym": "NVDA",
@@ -382,11 +383,11 @@
    "fiscal": "2026-09-30",
    "cur": "USD",
    "zeit": "vor",
-   "eps_est": 0.0793,
-   "eps_n": 9,
-   "rev_est": 80016160.0,
+   "eps_est": 0.0849,
+   "eps_n": 10,
+   "rev_est": 80961610.0,
    "rev_n": 11,
-   "est_stand": "2026-11-11"
+   "est_stand": "2026-11-18"
   },
   {
    "sym": "CPA",
@@ -399,7 +400,7 @@
    "eps_n": 5,
    "rev_est": 1175973750.0,
    "rev_n": 8,
-   "est_stand": "2026-11-11"
+   "est_stand": "2026-11-18"
   },
   {
    "sym": "GLBE",
@@ -408,11 +409,11 @@
    "fiscal": "2026-09-30",
    "cur": "USD",
    "zeit": "vor",
-   "eps_est": 0.3167,
-   "eps_n": 6,
+   "eps_est": 0.318,
+   "eps_n": 5,
    "rev_est": 312577490.0,
    "rev_n": 11,
-   "est_stand": "2026-11-11"
+   "est_stand": "2026-11-18"
   },
   {
    "sym": "LOW",
@@ -421,8 +422,11 @@
    "fiscal": "2026-10-31",
    "cur": "USD",
    "zeit": "vor",
-   "eps_est": 2.85,
-   "eps_src": "kalender"
+   "eps_est": 2.8806,
+   "eps_n": 28,
+   "rev_est": 22359573420.0,
+   "rev_n": 27,
+   "est_stand": "2026-11-18"
   },
   {
    "sym": "P",
@@ -431,8 +435,11 @@
    "fiscal": "2026-10-31",
    "cur": "USD",
    "zeit": "nach",
-   "eps_est": 0.27,
-   "eps_src": "kalender"
+   "eps_est": 0.7717,
+   "eps_n": 19,
+   "rev_est": 1331770670.0,
+   "rev_n": 17,
+   "est_stand": "2026-11-18"
   },
   {
    "sym": "PANW",
@@ -441,8 +448,11 @@
    "fiscal": "2026-10-31",
    "cur": "USD",
    "zeit": "nach",
-   "eps_est": 0.52,
-   "eps_src": "kalender"
+   "eps_est": 0.9706,
+   "eps_n": 44,
+   "rev_est": 3307502950.0,
+   "rev_n": 45,
+   "est_stand": "2026-11-18"
   },
   {
    "sym": "PONY",
@@ -450,7 +460,12 @@
    "name": "PONY AI INCORPORATED",
    "fiscal": "2026-09-30",
    "cur": "USD",
-   "zeit": "vor"
+   "zeit": "vor",
+   "eps_est": -0.1796,
+   "eps_n": 2,
+   "rev_est": 39119100.0,
+   "rev_n": 2,
+   "est_stand": "2026-11-18"
   },
   {
    "sym": "TECH",
@@ -469,8 +484,11 @@
    "fiscal": "2026-10-31",
    "cur": "USD",
    "zeit": "vor",
-   "eps_est": 2.03,
-   "eps_src": "kalender"
+   "eps_est": 2.0683,
+   "eps_n": 31,
+   "rev_est": 26515057420.0,
+   "rev_n": 29,
+   "est_stand": "2026-11-18"
   },
   {
    "sym": "TJX",
@@ -479,8 +497,11 @@
    "fiscal": "2026-10-31",
    "cur": "USD",
    "zeit": "vor",
-   "eps_est": 1.33,
-   "eps_src": "kalender"
+   "eps_est": 1.3321,
+   "eps_n": 18,
+   "rev_est": 15854598440.0,
+   "rev_n": 17,
+   "est_stand": "2026-11-18"
   },
   {
    "sym": "WSM",
@@ -489,8 +510,11 @@
    "fiscal": "2026-10-31",
    "cur": "USD",
    "zeit": "",
-   "eps_est": 2.17,
-   "eps_src": "kalender"
+   "eps_est": 2.2027,
+   "eps_n": 11,
+   "rev_est": 1997705000.0,
+   "rev_n": 19,
+   "est_stand": "2026-11-18"
   },
   {
    "sym": "BABA",
@@ -649,6 +673,16 @@
    "zeit": "vor",
    "eps_est": 0.64,
    "eps_src": "kalender"
+  },
+  {
+   "sym": "WSM",
+   "datum": "2026-11-19",
+   "eps_est": 2.17,
+   "eps_src": "kalender",
+   "name": "WILLIAMS-SONOMA INCORPORATED",
+   "fiscal": "2026-10-31",
+   "cur": "USD",
+   "zeit": "vor"
   },
   {
    "sym": "BJ",
@@ -824,6 +858,16 @@
    "eps_est": 2.13,
    "eps_src": "kalender",
    "name": "NETAPP INCORPORATED",
+   "fiscal": "2026-10-31",
+   "cur": "USD",
+   "zeit": "nach"
+  },
+  {
+   "sym": "CRM",
+   "datum": "2026-12-02",
+   "eps_est": 2.41,
+   "eps_src": "kalender",
+   "name": "SALESFORCE INCORPORATED",
    "fiscal": "2026-10-31",
    "cur": "USD",
    "zeit": "nach"
