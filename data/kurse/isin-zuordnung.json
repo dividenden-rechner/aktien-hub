@@ -618,7 +618,7 @@
 "CFR": {
 "isin": "US2298991090",
 "xetra": "CULLEN/FROST BANKE.DL-,01",
-"kuerzel": "CFZ",
+"kuerzel": "",
 "quelle": "openfigi"
 },
 "CHD": {
@@ -3677,5 +3677,5 @@
 "quelle": "openfigi",
 "bdc": true
 },
-"_stand": "2026-11-17"
+"_stand": "2026-11-18"
 }
