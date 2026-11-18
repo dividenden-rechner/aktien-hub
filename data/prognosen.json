@@ -8299,14 +8299,15 @@
 ]
 }
 },
-"stand": "2026-11-17",
+"stand": "2026-11-18",
 "hinweis": "Eigene Prognosen der Unternehmen aus ihren Ergebnis-Pressemitteilungen (SEC 8-K, Anlage EX-99), automatisch ausgelesen. Keine Analystenschaetzungen.",
 "letzter_lauf": {
-"zeit": "2026-11-17 16:31",
-"kandidaten": 57,
+"zeit": "2026-11-18 01:31",
+"kandidaten": 58,
 "ki_aufrufe": 0,
 "abbruch": "",
 "fehler": [
+"NVDA Meldung: HTTP Error 403: Forbidden",
 "DIS Meldung: HTTP Error 403: Forbidden",
 "HD Meldung: HTTP Error 403: Forbidden",
 "ARTNA Meldung: HTTP Error 403: Forbidden",
@@ -8315,8 +8316,7 @@
 "NWN Meldung: HTTP Error 403: Forbidden",
 "BKH Meldung: HTTP Error 403: Forbidden",
 "NC Meldung: HTTP Error 403: Forbidden",
-"AWR Meldung: HTTP Error 403: Forbidden",
-"UVV Meldung: HTTP Error 403: Forbidden"
+"AWR Meldung: HTTP Error 403: Forbidden"
 ]
 }
 }
