@@ -1,0 +1,36 @@
+name: Tagesschlusskurse archivieren und Asien-Kennzahlen
+
+# Einmal am Tag (werktags, nach dem Abendlauf von xetra-kurse.yml um 17:37 UTC):
+# speichert die Schlusskurse aller Hub-Firmen dauerhaft (data/kurse/tagesschluss/<JJJJ-MM>.json)
+# und berechnet Kurs, Rendite, KGV und Ausschuettungsquote der Asien-Firmen (data/asien/kennzahlen.json).
+
+on:
+  schedule:
+    - cron: "13 19 * * 1-5"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: kurse-tagesschluss
+
+jobs:
+  archivieren:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Schlusskurse archivieren, Asien-Kennzahlen berechnen
+        run: python3 tools/kurse_tagesschluss.py
+      - name: Ergebnis committen
+        run: |
+          git config user.name "kurse-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add data/kurse/tagesschluss data/asien/kennzahlen.json
+          if git diff --cached --quiet; then echo "Keine Aenderung"; exit 0; fi
+          git commit -m "Tagesschlusskurse archiviert"
+          for i in 1 2 3; do git pull --rebase --autostash -X theirs -q && git push && break; sleep 5; done

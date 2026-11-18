@@ -1,5 +1,5 @@
-"""Holt die taeglichen Referenzkurse der EZB (EUR gegen JPY, USD, KRW) und rechnet daraus
-USD/JPY und KRW/USD. Schreibt data/wechselkurse-ezb.json.
+"""Holt die taeglichen Referenzkurse der EZB (EUR gegen JPY, USD, KRW; zusaetzlich HKD, SGD, CNY, GBP, CHF fuer
+Asien- und Europa-Werte) und rechnet daraus USD/JPY und KRW/USD. Schreibt data/wechselkurse-ezb.json.
 """
 import json
 import os
@@ -28,7 +28,8 @@ def main():
         "stand": jetzt_text(),
         "datum_ezb": datum,
         "quelle": "EZB Referenzkurse (taeglich, ca. 16 Uhr CET)",
-        "je_eur": {"USD": kurse["USD"], "JPY": kurse["JPY"], "KRW": kurse["KRW"]},
+        "je_eur": {"USD": kurse["USD"], "JPY": kurse["JPY"], "KRW": kurse["KRW"],
+                   **{w: kurse[w] for w in ("HKD", "SGD", "CNY", "GBP", "CHF") if w in kurse}},
         "abgeleitet": {"JPY_je_USD": round(usd_jpy, 4), "USD_je_KRW": round(krw_usd, 8)},
     }
     os.makedirs("data", exist_ok=True)
