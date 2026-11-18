@@ -176,8 +176,9 @@ def main():
                 alle[t] = f
     except Exception:
         pass
-    try:   # ganzes Europa-Universum (tools/esef_universum.py): eine Datei je Firma; feste ESEF-Liste und SEC gehen vor
-        for pf in sorted(glob.glob("data/esef/firma/*.json")):
+    try:   # ganzes Europa-Universum (tools/esef_universum.py) und Japan/Korea (tools/asien_jpkr.py): eine Datei je Firma;
+        # SEC, feste ESEF-Liste und Asien-Geschäftsberichte gehen vor
+        for pf in sorted(glob.glob("data/esef/firma/*.json")) + sorted(glob.glob("data/asien/firma/*.json")):
             t = os.path.basename(pf)[:-5]
             if t.startswith("_") or t in alle:
                 continue

@@ -1,0 +1,40 @@
+name: Japan und Korea - Jahreszahlen 10 Jahre (EDINET, DART)
+on:
+  push:
+    branches: [main, feature/alle-firmen-kennzahlen]
+    paths:
+      - "tools/asien_jpkr.py"
+      - ".github/workflows/asien-jpkr.yml"
+  schedule:
+    - cron: "47 4 * * *"   # täglich; jede Firma höchstens einmal am Tag, Berichte nur einmal geladen
+  workflow_dispatch:
+concurrency:
+  group: asien-jpkr-${{ github.ref }}
+  cancel-in-progress: false
+permissions:
+  contents: write
+jobs:
+  laden:
+    runs-on: ubuntu-latest
+    timeout-minutes: 175
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: ISIN (GLEIF, nur neue Firmen)
+        run: python3 tools/asien_isin.py || echo "ISIN-Suche übersprungen"
+      - name: Jahresberichte lesen (EDINET Japan, DART Korea)
+        env:
+          EDINET_API_KEY: ${{ secrets.EDINET_API_KEY }}
+          DART_API_KEY: ${{ secrets.DART_API_KEY }}
+        run: python3 tools/asien_jpkr.py --max-minuten 155
+      - name: Ergebnis committen
+        if: always()
+        run: |
+          git config user.name "asien-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add data/asien/roh data/asien/firma data/asien/isin.json data/asien-jpkr-abdeckung.md
+          if git diff --cached --quiet; then echo "Keine Änderungen"; exit 0; fi
+          git commit -q -m "Japan und Korea: Jahreszahlen aus EDINET und DART"
+          ok=0; for i in 1 2 3; do git pull --rebase --autostash -X theirs -q && git push && ok=1 && break; sleep 5; done; [ "$ok" = 1 ] || { echo "Push fehlgeschlagen"; exit 1; }
