@@ -1,0 +1,43 @@
+{
+  "source": "europa_aktien_hub_v0_5_boersenabgleich.xlsx",
+  "sheets": {
+    "README": 14,
+    "Bestand_422": 422,
+    "Ergaenzung_IT_PL_GR": 110,
+    "Ergaenzung_ES_IE_CH_AT": 130,
+    "Indexkatalog": 89,
+    "Historie_2010_2025": 6752,
+    "Pruefliste": 9,
+    "Quellen": 25,
+    "Ergaenzung_FR_GB_Nordics": 340,
+    "Quellen_v04": 9,
+    "Historie_v04_Kandidaten": 5440,
+    "Boersen_Segmente_v05": 17,
+    "Dubletten_Preview_v05": 17,
+    "Kandidaten_Status_v05": 16,
+    "Import_Regeln_v05": 11
+  },
+  "candidate_rows": 580,
+  "existing_rows": 422,
+  "countries": {
+    "AT": 30,
+    "BE": 30,
+    "CH": 40,
+    "DK": 30,
+    "ES": 40,
+    "FI": 30,
+    "FR": 40,
+    "GB": 60,
+    "GR": 30,
+    "IE": 20,
+    "IS": 20,
+    "IT": 40,
+    "NL": 40,
+    "NO": 40,
+    "PL": 40,
+    "SE": 50
+  },
+  "missing_isin_candidates": 580,
+  "verified_candidates": 0,
+  "warning": "Counts are listing/candidate rows, not unique verified issuers."
+}

@@ -1,0 +1,215 @@
+{
+ "generated_at": "2026-11-18T15:14:56.849920+00:00",
+ "lists_generated_at": "2026-11-18T15:04:11.097262+00:00",
+ "counting_method": {
+  "listing": "ISIN+MIC row from an official list",
+  "security": "distinct ISIN",
+  "issuer": "distinct LEI (FIRDS); securities without LEI count as one provisional issuer each",
+  "european_issuer": "GLEIF legal address in a European country",
+  "active": "no termination date in the past at list retrieval time"
+ },
+ "listings": 11663,
+ "listings_active": 7361,
+ "listings_terminated": 4302,
+ "securities": 10683,
+ "securities_multi_listed": 490,
+ "issuers": 8876,
+ "issuers_without_lei": 161,
+ "issuers_multi_security": 991,
+ "invalid_isins": 0,
+ "duplicate_listing_rows": 0,
+ "index_memberships": 120,
+ "rejected_missing_or_invalid_isin": 0,
+ "duplicate_listing_rows_removed": 0,
+ "gleif_records": 8715,
+ "issuers_european_legal_address": 7416,
+ "active_listings_by_country": {
+  "AT": 58,
+  "BE": 115,
+  "CH": 241,
+  "CZ": 20,
+  "DE": 1682,
+  "DK": 119,
+  "EE": 19,
+  "ES": 125,
+  "FI": 151,
+  "FR": 576,
+  "GB": 1880,
+  "GR": 134,
+  "HR": 67,
+  "HU": 50,
+  "IE": 17,
+  "IS": 27,
+  "IT": 399,
+  "LT": 22,
+  "LV": 8,
+  "NL": 120,
+  "NO": 175,
+  "PL": 780,
+  "PT": 32,
+  "RO": 88,
+  "SE": 413,
+  "SI": 17,
+  "SK": 26
+ },
+ "active_listings_by_venue": {
+  "AIMX": 828,
+  "ALXP": 261,
+  "EXGM": 203,
+  "MABX": 1,
+  "MTAA": 196,
+  "WBAH": 58,
+  "XAMS": 120,
+  "XATH": 134,
+  "XBRA": 26,
+  "XBRU": 115,
+  "XBSE": 88,
+  "XBUD": 50,
+  "XCSE": 119,
+  "XETA": 303,
+  "XETB": 1379,
+  "XHEL": 151,
+  "XICE": 27,
+  "XLIS": 32,
+  "XLIT": 22,
+  "XLJU": 17,
+  "XLON": 1052,
+  "XMAD": 124,
+  "XMSM": 17,
+  "XNCO": 343,
+  "XNGM": 10,
+  "XOSL": 175,
+  "XPAR": 315,
+  "XPRA": 20,
+  "XRIS": 8,
+  "XSTO": 403,
+  "XSWX": 241,
+  "XTAL": 19,
+  "XWAR": 437,
+  "XZAG": 67
+ },
+ "listings_with_ticker": 4031,
+ "candidates": 1002,
+ "candidate_status": {
+  "non_european_listing": 43,
+  "matched_ticker_code": 257,
+  "review_multiple_securities": 5,
+  "matched_exact_name": 498,
+  "review_not_found": 114,
+  "review_fuzzy": 85
+ },
+ "candidate_status_by_country": {
+  "AT": {
+   "review_not_found": 9,
+   "matched_exact_name": 30,
+   "review_fuzzy": 1
+  },
+  "BE": {
+   "matched_ticker_code": 9,
+   "matched_exact_name": 23,
+   "review_not_found": 7,
+   "review_fuzzy": 2
+  },
+  "CH": {
+   "review_multiple_securities": 3,
+   "matched_ticker_code": 43,
+   "non_european_listing": 6,
+   "matched_exact_name": 32,
+   "review_not_found": 5,
+   "review_fuzzy": 2
+  },
+  "DE": {
+   "matched_ticker_code": 49,
+   "non_european_listing": 2,
+   "review_not_found": 2,
+   "matched_exact_name": 3
+  },
+  "DK": {
+   "matched_ticker_code": 14,
+   "non_european_listing": 1,
+   "review_fuzzy": 9,
+   "matched_exact_name": 20,
+   "review_not_found": 2
+  },
+  "ES": {
+   "review_not_found": 12,
+   "non_european_listing": 2,
+   "matched_exact_name": 46,
+   "review_fuzzy": 4
+  },
+  "FI": {
+   "matched_ticker_code": 15,
+   "non_european_listing": 1,
+   "matched_exact_name": 20,
+   "review_fuzzy": 8,
+   "review_not_found": 2
+  },
+  "FR": {
+   "matched_ticker_code": 29,
+   "matched_exact_name": 38,
+   "non_european_listing": 2,
+   "review_fuzzy": 5
+  },
+  "GB": {
+   "non_european_listing": 12,
+   "matched_exact_name": 121,
+   "review_not_found": 7,
+   "review_fuzzy": 2
+  },
+  "GR": {
+   "matched_exact_name": 18,
+   "review_not_found": 8,
+   "review_fuzzy": 4
+  },
+  "IE": {
+   "non_european_listing": 10,
+   "matched_ticker_code": 3,
+   "review_not_found": 7,
+   "matched_exact_name": 12,
+   "review_fuzzy": 2
+  },
+  "IS": {
+   "review_fuzzy": 6,
+   "review_not_found": 13,
+   "matched_exact_name": 1
+  },
+  "IT": {
+   "matched_ticker_code": 23,
+   "non_european_listing": 1,
+   "matched_exact_name": 38,
+   "review_fuzzy": 2
+  },
+  "NL": {
+   "non_european_listing": 5,
+   "matched_ticker_code": 20,
+   "matched_exact_name": 32,
+   "review_not_found": 9,
+   "review_fuzzy": 2,
+   "review_multiple_securities": 2
+  },
+  "NO": {
+   "matched_ticker_code": 16,
+   "matched_exact_name": 36,
+   "review_fuzzy": 1,
+   "review_not_found": 3
+  },
+  "PL": {
+   "review_not_found": 17,
+   "matched_exact_name": 14,
+   "review_fuzzy": 9
+  },
+  "PT": {
+   "matched_ticker_code": 8,
+   "review_not_found": 1
+  },
+  "SE": {
+   "matched_ticker_code": 28,
+   "non_european_listing": 1,
+   "review_fuzzy": 26,
+   "matched_exact_name": 14,
+   "review_not_found": 10
+  }
+ },
+ "resolved_duplicate_groups": 214,
+ "verified": 0
+}

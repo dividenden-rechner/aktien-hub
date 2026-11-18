@@ -1,0 +1,46 @@
+name: Europa - Aktienuniversum und Historie (offizielle Listen)
+
+# Laedt ESMA/FCA FIRDS, SIX, Xetra, Euronext und Nasdaq Nordic neu, baut Emittenten/Wertpapiere/Notierungen,
+# gleicht die Kandidaten ab und erzeugt die ESEF-Historie. Nichts wird als "verified" markiert.
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: europa-universum
+
+jobs:
+  aktualisieren:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    defaults:
+      run:
+        working-directory: europe-equity-hub
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+          cache-dependency-path: europe-equity-hub/requirements.txt
+      - run: pip install -r requirements.txt
+      - name: Offizielle Listen laden
+        run: python scripts/build_official_lists.py
+      - name: Universum und Kandidatenabgleich
+        run: python scripts/build_universe.py
+      - name: Historie (ESEF) und Coverage
+        run: python scripts/build_history.py
+      - name: Tests
+        run: python -m pytest -q
+      - name: Ergebnis committen
+        working-directory: .
+        run: |
+          git config user.name "kurse-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add europe-equity-hub/data/universe europe-equity-hub/data/history europe-equity-hub/data/official_lists/sources.json
+          if git diff --cached --quiet; then echo "Keine Aenderung"; exit 0; fi
+          git commit -m "Europa: Aktienuniversum und Historie aktualisiert"
+          for i in 1 2 3; do git pull --rebase --autostash -X theirs -q && git push && break; sleep 5; done
