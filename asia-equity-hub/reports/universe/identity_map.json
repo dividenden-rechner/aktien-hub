@@ -6,19 +6,19 @@
    "file": "hkex.xlsx",
    "url": "https://www.hkex.com.hk/eng/services/trading/securities/securitieslists/ListOfSecurities.xlsx",
    "publisher": "Hong Kong Exchanges and Clearing",
-   "sha256": "dd8b9a9149dbdebf96b92657ed3d778b91417ef3b621f5885dde865051691da6",
-   "bytes": 1361604,
-   "rows": 17342,
-   "retrieved_at": "2026-11-18T13:21:05.589519+00:00"
+   "sha256": "08ff25936432b97ad533f3733a830fe2ab68a6c2449a5c3c1177d1be48f67799",
+   "bytes": 1362398,
+   "rows": 17355,
+   "retrieved_at": "2026-11-18T14:07:51.385263+00:00"
   },
   "sgx": {
    "file": "sgx.json",
    "url": "https://api.sgx.com/securities/v1.1?excludetypes=bonds&params=nc,n,type,ls,m,sc",
    "publisher": "Singapore Exchange (data feed of sgx.com)",
-   "sha256": "2761017ec7da93a18c722b7f1e6280ff48e4c5c1b82d6978437884c80774f1f7",
+   "sha256": "395572bfdf9474d0b0ad87166d83e417c1b6b0f45ea8ab1d27a27387f1f83efe",
    "bytes": 157333,
    "rows": 616,
-   "retrieved_at": "2026-11-18T13:21:07.152979+00:00"
+   "retrieved_at": "2026-11-18T14:07:51.937770+00:00"
   },
   "cninfo": {
    "file": "cninfo_szse.json",
@@ -27,7 +27,7 @@
    "sha256": "7c99bd9b5bd2a7bbfeed9ab57a5dd13a2aeb1958238f49e5d3b3090e9ef1a317",
    "bytes": 593251,
    "rows": 6267,
-   "retrieved_at": "2026-11-18T13:21:12.956768+00:00"
+   "retrieved_at": "2026-11-18T14:07:55.104023+00:00"
   },
   "jpx": {
    "file": "jpx_e.xlsx",
@@ -36,16 +36,22 @@
    "sha256": "2285b7c995ec4b296571261ddec1ea4c365230356a6ff9e30f13d323ace20345",
    "bytes": 261183,
    "rows": 4444,
-   "retrieved_at": "2026-11-18T13:21:13.595187+00:00"
+   "retrieved_at": "2026-11-18T14:07:55.493518+00:00"
   },
   "edinet": {
    "file": "edinet.zip",
    "url": "https://disclosure2dl.edinet-fsa.go.jp/searchdocument/codelist/Edinetcode.zip",
    "publisher": "Financial Services Agency Japan (EDINET)",
-   "sha256": "c2b153fb0eb0c31df89ca913d157d48eaac99b2eb8bbeeb126bcb8e01ed4513d",
+   "sha256": "4c850163e0208f034d5b79be01c2ccee69f5eb7b8b36c1e5aadbe59ac68a24f9",
    "bytes": 575526,
    "rows": 11471,
-   "retrieved_at": "2026-11-18T13:21:15.409983+00:00"
+   "retrieved_at": "2026-11-18T14:07:56.932878+00:00"
+  },
+  "dart": {
+   "url": "https://opendart.fss.or.kr/api/corpCode.xml",
+   "publisher": "Financial Supervisory Service Korea (OpenDART)",
+   "rows": 4018,
+   "retrieved_at": "2026-11-18T14:14:18.169359+00:00"
   }
  },
  "counts": {
@@ -66,7 +72,7 @@
    "not_listed": 2
   },
   "Südkorea": {
-   "candidate_unverified": 73
+   "confirmed_official_list": 73
   }
  },
  "entries": [
@@ -7266,952 +7272,1318 @@
    "id": "suedkorea-0379",
    "requested_name": "Amorepacific",
    "market": "Südkorea",
-   "exchange": "KRX",
+   "exchange": "KOSPI",
    "human_review": "pending",
-   "status": "candidate_unverified",
+   "status": "confirmed_official_list",
    "ticker": "090430.KS",
    "exchange_code": "090430",
-   "evidence": null,
-   "match_method": "assistant_candidate_only",
-   "note": "KRX listing downloads (kind.krx.co.kr, data.krx.co.kr) returned 403 / require login and OpenDART corpCode.xml requires an API key; candidate not verified against an official list in this run."
+   "official_name_local": "아모레퍼시픽",
+   "official_name": "AMOREPACIFIC CORP.",
+   "identifiers": {
+    "dart_corp_code": "00583424",
+    "kr_jurir_no": "1101113471036"
+   },
+   "evidence": "dart_corpcode+company",
+   "match_method": "assistant_candidate_confirmed_by_code"
   },
   {
    "id": "suedkorea-0380",
    "requested_name": "BGF retail",
    "market": "Südkorea",
-   "exchange": "KRX",
+   "exchange": "KOSPI",
    "human_review": "pending",
-   "status": "candidate_unverified",
+   "status": "confirmed_official_list",
    "ticker": "282330.KS",
    "exchange_code": "282330",
-   "evidence": null,
-   "match_method": "assistant_candidate_only",
-   "note": "KRX listing downloads (kind.krx.co.kr, data.krx.co.kr) returned 403 / require login and OpenDART corpCode.xml requires an API key; candidate not verified against an official list in this run."
+   "official_name_local": "BGF리테일",
+   "official_name": "BGF retail CO., LTD.",
+   "identifiers": {
+    "dart_corp_code": "01263022",
+    "kr_jurir_no": "1101116555770"
+   },
+   "evidence": "dart_corpcode+company",
+   "match_method": "assistant_candidate_confirmed_by_code"
   },
   {
    "id": "suedkorea-0381",
    "requested_name": "BNK Financial Group",
    "market": "Südkorea",
-   "exchange": "KRX",
+   "exchange": "KOSPI",
    "human_review": "pending",
-   "status": "candidate_unverified",
+   "status": "confirmed_official_list",
    "ticker": "138930.KS",
    "exchange_code": "138930",
-   "evidence": null,
-   "match_method": "assistant_candidate_only",
-   "note": "KRX listing downloads (kind.krx.co.kr, data.krx.co.kr) returned 403 / require login and OpenDART corpCode.xml requires an API key; candidate not verified against an official list in this run."
+   "official_name_local": "BNK금융지주",
+   "official_name": "BNK Financial Group Inc.",
+   "identifiers": {
+    "dart_corp_code": "00858364",
+    "kr_jurir_no": "1801110750893"
+   },
+   "evidence": "dart_corpcode+company",
+   "match_method": "assistant_candidate_confirmed_by_code"
   },
   {
    "id": "suedkorea-0382",
    "requested_name": "Celltrion",
    "market": "Südkorea",
-   "exchange": "KRX",
+   "exchange": "KOSPI",
    "human_review": "pending",
-   "status": "candidate_unverified",
+   "status": "confirmed_official_list",
    "ticker": "068270.KS",
    "exchange_code": "068270",
-   "evidence": null,
-   "match_method": "assistant_candidate_only",
-   "note": "KRX listing downloads (kind.krx.co.kr, data.krx.co.kr) returned 403 / require login and OpenDART corpCode.xml requires an API key; candidate not verified against an official list in this run."
+   "official_name_local": "셀트리온",
+   "official_name": "Celltrion, Inc.",
+   "identifiers": {
+    "dart_corp_code": "00413046",
+    "kr_jurir_no": "1350110034038"
+   },
+   "evidence": "dart_corpcode+company",
+   "match_method": "assistant_candidate_confirmed_by_code"
   },
   {
    "id": "suedkorea-0383",
    "requested_name": "CJ CheilJedang",
    "market": "Südkorea",
-   "exchange": "KRX",
+   "exchange": "KOSPI",
    "human_review": "pending",
-   "status": "candidate_unverified",
+   "status": "confirmed_official_list",
    "ticker": "097950.KS",
    "exchange_code": "097950",
-   "evidence": null,
-   "match_method": "assistant_candidate_only",
-   "note": "KRX listing downloads (kind.krx.co.kr, data.krx.co.kr) returned 403 / require login and OpenDART corpCode.xml requires an API key; candidate not verified against an official list in this run."
+   "official_name_local": "CJ제일제당",
+   "official_name": "CJ CHEILJEDANG CORP.",
+   "identifiers": {
+    "dart_corp_code": "00635134",
+    "kr_jurir_no": "1101113748253"
+   },
+   "evidence": "dart_corpcode+company",
+   "match_method": "assistant_candidate_confirmed_by_code"
   },
   {
    "id": "suedkorea-0384",
    "requested_name": "CJ Logistics",
    "market": "Südkorea",
-   "exchange": "KRX",
+   "exchange": "KOSPI",
    "human_review": "pending",
-   "status": "candidate_unverified",
+   "status": "confirmed_official_list",
    "ticker": "000120.KS",
    "exchange_code": "000120",
-   "evidence": null,
-   "match_method": "assistant_candidate_only",
-   "note": "KRX listing downloads (kind.krx.co.kr, data.krx.co.kr) returned 403 / require login and OpenDART corpCode.xml requires an API key; candidate not verified against an official list in this run."
+   "official_name_local": "CJ대한통운",
+   "official_name": "CJ Logistics Corporation ",
+   "identifiers": {
+    "dart_corp_code": "00113410",
+    "kr_jurir_no": "1101110006167"
+   },
+   "evidence": "dart_corpcode+company",
+   "match_method": "assistant_candidate_confirmed_by_code"
   },
   {
    "id": "suedkorea-0385",
    "requested_name": "Coway",
    "market": "Südkorea",
-   "exchange": "KRX",
+   "exchange": "KOSPI",
    "human_review": "pending",
-   "status": "candidate_unverified",
+   "status": "confirmed_official_list",
    "ticker": "021240.KS",
    "exchange_code": "021240",
-   "evidence": null,
-   "match_method": "assistant_candidate_only",
-   "note": "KRX listing downloads (kind.krx.co.kr, data.krx.co.kr) returned 403 / require login and OpenDART corpCode.xml requires an API key; candidate not verified against an official list in this run."
+   "official_name_local": "코웨이",
+   "official_name": "COWAY Co., Ltd.",
+   "identifiers": {
+    "dart_corp_code": "00170558",
+    "kr_jurir_no": "1101110626501"
+   },
+   "evidence": "dart_corpcode+company",
+   "match_method": "assistant_candidate_confirmed_by_code"
   },
   {
    "id": "suedkorea-0386",
    "requested_name": "Daewoo Engineering & Construction",
    "market": "Südkorea",
-   "exchange": "KRX",
+   "exchange": "KOSPI",
    "human_review": "pending",
-   "status": "candidate_unverified",
+   "status": "confirmed_official_list",
    "ticker": "047040.KS",
    "exchange_code": "047040",
-   "evidence": null,
-   "match_method": "assistant_candidate_only",
-   "note": "KRX listing downloads (kind.krx.co.kr, data.krx.co.kr) returned 403 / require login and OpenDART corpCode.xml requires an API key; candidate not verified against an official list in this run."
+   "official_name_local": "대우건설",
+   "official_name": "DAEWOO ENGINEERING & CONSTRUCTION CO.,LTD",
+   "identifiers": {
+    "dart_corp_code": "00124540",
+    "kr_jurir_no": "1101112137895"
+   },
+   "evidence": "dart_corpcode+company",
+   "match_method": "assistant_candidate_confirmed_by_code"
   },
   {
    "id": "suedkorea-0387",
    "requested_name": "DGB Financial Group",
    "market": "Südkorea",
-   "exchange": "KRX",
+   "exchange": "KOSPI",
    "human_review": "pending",
-   "status": "candidate_unverified",
+   "status": "confirmed_official_list",
    "ticker": "139130.KS",
    "exchange_code": "139130",
-   "evidence": null,
-   "match_method": "assistant_candidate_only",
-   "note": "KRX listing downloads (kind.krx.co.kr, data.krx.co.kr) returned 403 / require login and OpenDART corpCode.xml requires an API key; candidate not verified against an official list in this run."
+   "official_name_local": "iM금융지주",
+   "official_name": "iM Financial Group Co., Ltd.",
+   "identifiers": {
+    "dart_corp_code": "00878915",
+    "kr_jurir_no": "1701110429523"
+   },
+   "evidence": "dart_corpcode+company",
+   "match_method": "assistant_candidate_confirmed_by_code"
   },
   {
    "id": "suedkorea-0388",
    "requested_name": "Doosan Enerbility",
    "market": "Südkorea",
-   "exchange": "KRX",
+   "exchange": "KOSPI",
    "human_review": "pending",
-   "status": "candidate_unverified",
+   "status": "confirmed_official_list",
    "ticker": "034020.KS",
    "exchange_code": "034020",
-   "evidence": null,
-   "match_method": "assistant_candidate_only",
-   "note": "KRX listing downloads (kind.krx.co.kr, data.krx.co.kr) returned 403 / require login and OpenDART corpCode.xml requires an API key; candidate not verified against an official list in this run."
+   "official_name_local": "두산에너빌리티",
+   "official_name": "DOOSAN ENERBILITY CO., LTD.",
+   "identifiers": {
+    "dart_corp_code": "00159616",
+    "kr_jurir_no": "1942110000943"
+   },
+   "evidence": "dart_corpcode+company",
+   "match_method": "assistant_candidate_confirmed_by_code"
   },
   {
    "id": "suedkorea-0389",
    "requested_name": "E-MART",
    "market": "Südkorea",
-   "exchange": "KRX",
+   "exchange": "KOSPI",
    "human_review": "pending",
-   "status": "candidate_unverified",
+   "status": "confirmed_official_list",
    "ticker": "139480.KS",
    "exchange_code": "139480",
-   "evidence": null,
-   "match_method": "assistant_candidate_only",
-   "note": "KRX listing downloads (kind.krx.co.kr, data.krx.co.kr) returned 403 / require login and OpenDART corpCode.xml requires an API key; candidate not verified against an official list in this run."
+   "official_name_local": "이마트",
+   "official_name": "E-MART Inc.",
+   "identifiers": {
+    "dart_corp_code": "00872984",
+    "kr_jurir_no": "1101114594952"
+   },
+   "evidence": "dart_corpcode+company",
+   "match_method": "assistant_candidate_confirmed_by_code"
   },
   {
    "id": "suedkorea-0390",
    "requested_name": "GS Engineering & Construction",
    "market": "Südkorea",
-   "exchange": "KRX",
+   "exchange": "KOSPI",
    "human_review": "pending",
-   "status": "candidate_unverified",
+   "status": "confirmed_official_list",
    "ticker": "006360.KS",
    "exchange_code": "006360",
-   "evidence": null,
-   "match_method": "assistant_candidate_only",
-   "note": "KRX listing downloads (kind.krx.co.kr, data.krx.co.kr) returned 403 / require login and OpenDART corpCode.xml requires an API key; candidate not verified against an official list in this run."
+   "official_name_local": "GS건설",
+   "official_name": "GS Engineering & Construction Corp",
+   "identifiers": {
+    "dart_corp_code": "00120030",
+    "kr_jurir_no": "1101110002694"
+   },
+   "evidence": "dart_corpcode+company",
+   "match_method": "assistant_candidate_confirmed_by_code"
   },
   {
    "id": "suedkorea-0391",
    "requested_name": "GS Holdings",
    "market": "Südkorea",
-   "exchange": "KRX",
+   "exchange": "KOSPI",
    "human_review": "pending",
-   "status": "candidate_unverified",
+   "status": "confirmed_official_list",
    "ticker": "078930.KS",
    "exchange_code": "078930",
-   "evidence": null,
-   "match_method": "assistant_candidate_only",
-   "note": "KRX listing downloads (kind.krx.co.kr, data.krx.co.kr) returned 403 / require login and OpenDART corpCode.xml requires an API key; candidate not verified against an official list in this run."
+   "official_name_local": "GS",
+   "official_name": "GS Holdings",
+   "identifiers": {
+    "dart_corp_code": "00500254",
+    "kr_jurir_no": "1101113045112"
+   },
+   "evidence": "dart_corpcode+company",
+   "match_method": "assistant_candidate_confirmed_by_code"
   },
   {
    "id": "suedkorea-0392",
    "requested_name": "Hana Financial Group",
    "market": "Südkorea",
-   "exchange": "KRX",
+   "exchange": "KOSPI",
    "human_review": "pending",
-   "status": "candidate_unverified",
+   "status": "confirmed_official_list",
    "ticker": "086790.KS",
    "exchange_code": "086790",
-   "evidence": null,
-   "match_method": "assistant_candidate_only",
-   "note": "KRX listing downloads (kind.krx.co.kr, data.krx.co.kr) returned 403 / require login and OpenDART corpCode.xml requires an API key; candidate not verified against an official list in this run."
+   "official_name_local": "하나금융지주",
+   "official_name": "Hana Financial Group Inc.",
+   "identifiers": {
+    "dart_corp_code": "00547583",
+    "kr_jurir_no": "1101113352004"
+   },
+   "evidence": "dart_corpcode+company",
+   "match_method": "assistant_candidate_confirmed_by_code"
   },
   {
    "id": "suedkorea-0393",
    "requested_name": "Hankook Tire & Technology",
    "market": "Südkorea",
-   "exchange": "KRX",
+   "exchange": "KOSPI",
    "human_review": "pending",
-   "status": "candidate_unverified",
+   "status": "confirmed_official_list",
    "ticker": "161390.KS",
    "exchange_code": "161390",
-   "evidence": null,
-   "match_method": "assistant_candidate_only",
-   "note": "KRX listing downloads (kind.krx.co.kr, data.krx.co.kr) returned 403 / require login and OpenDART corpCode.xml requires an API key; candidate not verified against an official list in this run."
+   "official_name_local": "한국타이어앤테크놀로지",
+   "official_name": "HANKOOK TIRE & TECHNOLOGY CO.,LTD",
+   "identifiers": {
+    "dart_corp_code": "00937324",
+    "kr_jurir_no": "1101114952093"
+   },
+   "evidence": "dart_corpcode+company",
+   "match_method": "assistant_candidate_confirmed_by_code"
   },
   {
    "id": "suedkorea-0394",
    "requested_name": "Hanmi Pharm",
    "market": "Südkorea",
-   "exchange": "KRX",
+   "exchange": "KOSPI",
    "human_review": "pending",
-   "status": "candidate_unverified",
+   "status": "confirmed_official_list",
    "ticker": "128940.KS",
    "exchange_code": "128940",
-   "evidence": null,
-   "match_method": "assistant_candidate_only",
-   "note": "KRX listing downloads (kind.krx.co.kr, data.krx.co.kr) returned 403 / require login and OpenDART corpCode.xml requires an API key; candidate not verified against an official list in this run."
+   "official_name_local": "한미약품",
+   "official_name": "Hanmi Pharm. Co., Ltd.",
+   "identifiers": {
+    "dart_corp_code": "00828497",
+    "kr_jurir_no": "1348110197550"
+   },
+   "evidence": "dart_corpcode+company",
+   "match_method": "assistant_candidate_confirmed_by_code"
   },
   {
    "id": "suedkorea-0395",
    "requested_name": "Hanwha Aerospace",
    "market": "Südkorea",
-   "exchange": "KRX",
+   "exchange": "KOSPI",
    "human_review": "pending",
-   "status": "candidate_unverified",
+   "status": "confirmed_official_list",
    "ticker": "012450.KS",
    "exchange_code": "012450",
-   "evidence": null,
-   "match_method": "assistant_candidate_only",
-   "note": "KRX listing downloads (kind.krx.co.kr, data.krx.co.kr) returned 403 / require login and OpenDART corpCode.xml requires an API key; candidate not verified against an official list in this run."
+   "official_name_local": "한화에어로스페이스",
+   "official_name": "HANWHA AEROSPACE CO., LTD.",
+   "identifiers": {
+    "dart_corp_code": "00126566",
+    "kr_jurir_no": "1942110000480"
+   },
+   "evidence": "dart_corpcode+company",
+   "match_method": "assistant_candidate_confirmed_by_code"
   },
   {
    "id": "suedkorea-0396",
    "requested_name": "Hanwha Solutions",
    "market": "Südkorea",
-   "exchange": "KRX",
+   "exchange": "KOSPI",
    "human_review": "pending",
-   "status": "candidate_unverified",
+   "status": "confirmed_official_list",
    "ticker": "009830.KS",
    "exchange_code": "009830",
-   "evidence": null,
-   "match_method": "assistant_candidate_only",
-   "note": "KRX listing downloads (kind.krx.co.kr, data.krx.co.kr) returned 403 / require login and OpenDART corpCode.xml requires an API key; candidate not verified against an official list in this run."
+   "official_name_local": "한화솔루션",
+   "official_name": "HANWHA SOLUTIONS CORPORATION",
+   "identifiers": {
+    "dart_corp_code": "00162461",
+    "kr_jurir_no": "1101110360935"
+   },
+   "evidence": "dart_corpcode+company",
+   "match_method": "assistant_candidate_confirmed_by_code"
   },
   {
    "id": "suedkorea-0397",
    "requested_name": "HD Hyundai",
    "market": "Südkorea",
-   "exchange": "KRX",
+   "exchange": "KOSPI",
    "human_review": "pending",
-   "status": "candidate_unverified",
+   "status": "confirmed_official_list",
    "ticker": "267250.KS",
    "exchange_code": "267250",
-   "evidence": null,
-   "match_method": "assistant_candidate_only",
-   "note": "KRX listing downloads (kind.krx.co.kr, data.krx.co.kr) returned 403 / require login and OpenDART corpCode.xml requires an API key; candidate not verified against an official list in this run."
+   "official_name_local": "HD현대",
+   "official_name": "HD HYUNDAI CO.,LTD.",
+   "identifiers": {
+    "dart_corp_code": "01205709",
+    "kr_jurir_no": "1701110638661"
+   },
+   "evidence": "dart_corpcode+company",
+   "match_method": "assistant_candidate_confirmed_by_code"
   },
   {
    "id": "suedkorea-0398",
    "requested_name": "HD Hyundai Heavy Industries",
    "market": "Südkorea",
-   "exchange": "KRX",
+   "exchange": "KOSPI",
    "human_review": "pending",
-   "status": "candidate_unverified",
+   "status": "confirmed_official_list",
    "ticker": "329180.KS",
    "exchange_code": "329180",
-   "evidence": null,
-   "match_method": "assistant_candidate_only",
-   "note": "KRX listing downloads (kind.krx.co.kr, data.krx.co.kr) returned 403 / require login and OpenDART corpCode.xml requires an API key; candidate not verified against an official list in this run."
+   "official_name_local": "HD현대중공업",
+   "official_name": "HD HYUNDAI HEAVY INDUSTRIES CO.,LTD.",
+   "identifiers": {
+    "dart_corp_code": "01390344",
+    "kr_jurir_no": "2301110312741"
+   },
+   "evidence": "dart_corpcode+company",
+   "match_method": "assistant_candidate_confirmed_by_code"
   },
   {
    "id": "suedkorea-0399",
    "requested_name": "Hotel Shilla",
    "market": "Südkorea",
-   "exchange": "KRX",
+   "exchange": "KOSPI",
    "human_review": "pending",
-   "status": "candidate_unverified",
+   "status": "confirmed_official_list",
    "ticker": "008770.KS",
    "exchange_code": "008770",
-   "evidence": null,
-   "match_method": "assistant_candidate_only",
-   "note": "KRX listing downloads (kind.krx.co.kr, data.krx.co.kr) returned 403 / require login and OpenDART corpCode.xml requires an API key; candidate not verified against an official list in this run."
+   "official_name_local": "호텔신라",
+   "official_name": "HOTEL SHILLA CO.,LTD",
+   "identifiers": {
+    "dart_corp_code": "00165680",
+    "kr_jurir_no": "1101110145519"
+   },
+   "evidence": "dart_corpcode+company",
+   "match_method": "assistant_candidate_confirmed_by_code"
   },
   {
    "id": "suedkorea-0400",
    "requested_name": "Hyosung",
    "market": "Südkorea",
-   "exchange": "KRX",
+   "exchange": "KOSPI",
    "human_review": "pending",
-   "status": "candidate_unverified",
+   "status": "confirmed_official_list",
    "ticker": "004800.KS",
    "exchange_code": "004800",
-   "evidence": null,
-   "match_method": "assistant_candidate_only",
-   "note": "KRX listing downloads (kind.krx.co.kr, data.krx.co.kr) returned 403 / require login and OpenDART corpCode.xml requires an API key; candidate not verified against an official list in this run."
+   "official_name_local": "효성",
+   "official_name": "HYOSUNG CORPORATION",
+   "identifiers": {
+    "dart_corp_code": "00117188",
+    "kr_jurir_no": "1101110030497"
+   },
+   "evidence": "dart_corpcode+company",
+   "match_method": "assistant_candidate_confirmed_by_code"
   },
   {
    "id": "suedkorea-0401",
    "requested_name": "Hyundai Engineering & Construction",
    "market": "Südkorea",
-   "exchange": "KRX",
+   "exchange": "KOSPI",
    "human_review": "pending",
-   "status": "candidate_unverified",
+   "status": "confirmed_official_list",
    "ticker": "000720.KS",
    "exchange_code": "000720",
-   "evidence": null,
-   "match_method": "assistant_candidate_only",
-   "note": "KRX listing downloads (kind.krx.co.kr, data.krx.co.kr) returned 403 / require login and OpenDART corpCode.xml requires an API key; candidate not verified against an official list in this run."
+   "official_name_local": "현대건설",
+   "official_name": "HYUNDAI ENGINEERING & CONSTRUCTION CO.,LTD",
+   "identifiers": {
+    "dart_corp_code": "00164478",
+    "kr_jurir_no": "1101110007909"
+   },
+   "evidence": "dart_corpcode+company",
+   "match_method": "assistant_candidate_confirmed_by_code"
   },
   {
    "id": "suedkorea-0402",
    "requested_name": "Hyundai Glovis",
    "market": "Südkorea",
-   "exchange": "KRX",
+   "exchange": "KOSPI",
    "human_review": "pending",
-   "status": "candidate_unverified",
+   "status": "confirmed_official_list",
    "ticker": "086280.KS",
    "exchange_code": "086280",
-   "evidence": null,
-   "match_method": "assistant_candidate_only",
-   "note": "KRX listing downloads (kind.krx.co.kr, data.krx.co.kr) returned 403 / require login and OpenDART corpCode.xml requires an API key; candidate not verified against an official list in this run."
+   "official_name_local": "현대글로비스",
+   "official_name": "HYUNDAI GLOVIS Co., LTD.",
+   "identifiers": {
+    "dart_corp_code": "00360595",
+    "kr_jurir_no": "1101112177388"
+   },
+   "evidence": "dart_corpcode+company",
+   "match_method": "assistant_candidate_confirmed_by_code"
   },
   {
    "id": "suedkorea-0403",
    "requested_name": "Hyundai Marine & Fire Insurance",
    "market": "Südkorea",
-   "exchange": "KRX",
+   "exchange": "KOSPI",
    "human_review": "pending",
-   "status": "candidate_unverified",
+   "status": "confirmed_official_list",
    "ticker": "001450.KS",
    "exchange_code": "001450",
-   "evidence": null,
-   "match_method": "assistant_candidate_only",
-   "note": "KRX listing downloads (kind.krx.co.kr, data.krx.co.kr) returned 403 / require login and OpenDART corpCode.xml requires an API key; candidate not verified against an official list in this run."
+   "official_name_local": "현대해상",
+   "official_name": "HYUNDAIMARINE&FIREINSURANCECO.,LTD.",
+   "identifiers": {
+    "dart_corp_code": "00164973",
+    "kr_jurir_no": "1101110035893"
+   },
+   "evidence": "dart_corpcode+company",
+   "match_method": "assistant_candidate_confirmed_by_code"
   },
   {
    "id": "suedkorea-0404",
    "requested_name": "Hyundai Mobis",
    "market": "Südkorea",
-   "exchange": "KRX",
+   "exchange": "KOSPI",
    "human_review": "pending",
-   "status": "candidate_unverified",
+   "status": "confirmed_official_list",
    "ticker": "012330.KS",
    "exchange_code": "012330",
-   "evidence": null,
-   "match_method": "assistant_candidate_only",
-   "note": "KRX listing downloads (kind.krx.co.kr, data.krx.co.kr) returned 403 / require login and OpenDART corpCode.xml requires an API key; candidate not verified against an official list in this run."
+   "official_name_local": "현대모비스",
+   "official_name": "HYUNDAI MOBIS CO.,LTD",
+   "identifiers": {
+    "dart_corp_code": "00164788",
+    "kr_jurir_no": "1101110215536"
+   },
+   "evidence": "dart_corpcode+company",
+   "match_method": "assistant_candidate_confirmed_by_code"
   },
   {
    "id": "suedkorea-0405",
    "requested_name": "Hyundai Motor",
    "market": "Südkorea",
-   "exchange": "KRX",
+   "exchange": "KOSPI",
    "human_review": "pending",
-   "status": "candidate_unverified",
+   "status": "confirmed_official_list",
    "ticker": "005380.KS",
    "exchange_code": "005380",
-   "evidence": null,
-   "match_method": "assistant_candidate_only",
-   "note": "KRX listing downloads (kind.krx.co.kr, data.krx.co.kr) returned 403 / require login and OpenDART corpCode.xml requires an API key; candidate not verified against an official list in this run."
+   "official_name_local": "현대자동차",
+   "official_name": "HYUNDAI MOTOR CO",
+   "identifiers": {
+    "dart_corp_code": "00164742",
+    "kr_jurir_no": "1101110085450"
+   },
+   "evidence": "dart_corpcode+company",
+   "match_method": "assistant_candidate_confirmed_by_code"
   },
   {
    "id": "suedkorea-0406",
    "requested_name": "Hyundai Steel",
    "market": "Südkorea",
-   "exchange": "KRX",
+   "exchange": "KOSPI",
    "human_review": "pending",
-   "status": "candidate_unverified",
+   "status": "confirmed_official_list",
    "ticker": "004020.KS",
    "exchange_code": "004020",
-   "evidence": null,
-   "match_method": "assistant_candidate_only",
-   "note": "KRX listing downloads (kind.krx.co.kr, data.krx.co.kr) returned 403 / require login and OpenDART corpCode.xml requires an API key; candidate not verified against an official list in this run."
+   "official_name_local": "현대제철",
+   "official_name": "HYUNDAI STEEL COMPANY",
+   "identifiers": {
+    "dart_corp_code": "00145880",
+    "kr_jurir_no": "1201110001743"
+   },
+   "evidence": "dart_corpcode+company",
+   "match_method": "assistant_candidate_confirmed_by_code"
   },
   {
    "id": "suedkorea-0407",
    "requested_name": "Industrial Bank of Korea",
    "market": "Südkorea",
-   "exchange": "KRX",
+   "exchange": "KOSPI",
    "human_review": "pending",
-   "status": "candidate_unverified",
+   "status": "confirmed_official_list",
    "ticker": "024110.KS",
    "exchange_code": "024110",
-   "evidence": null,
-   "match_method": "assistant_candidate_only",
-   "note": "KRX listing downloads (kind.krx.co.kr, data.krx.co.kr) returned 403 / require login and OpenDART corpCode.xml requires an API key; candidate not verified against an official list in this run."
+   "official_name_local": "기업은행",
+   "official_name": "INDUSTRIAL BANK OF KOREA",
+   "identifiers": {
+    "dart_corp_code": "00149646",
+    "kr_jurir_no": "1101350000903"
+   },
+   "evidence": "dart_corpcode+company",
+   "match_method": "assistant_candidate_confirmed_by_code"
   },
   {
    "id": "suedkorea-0408",
    "requested_name": "KB Financial Group",
    "market": "Südkorea",
-   "exchange": "KRX",
+   "exchange": "KOSPI",
    "human_review": "pending",
-   "status": "candidate_unverified",
+   "status": "confirmed_official_list",
    "ticker": "105560.KS",
    "exchange_code": "105560",
-   "evidence": null,
-   "match_method": "assistant_candidate_only",
-   "note": "KRX listing downloads (kind.krx.co.kr, data.krx.co.kr) returned 403 / require login and OpenDART corpCode.xml requires an API key; candidate not verified against an official list in this run."
+   "official_name_local": "KB금융",
+   "official_name": "KB Financial Group Inc.",
+   "identifiers": {
+    "dart_corp_code": "00688996",
+    "kr_jurir_no": "1101113975517"
+   },
+   "evidence": "dart_corpcode+company",
+   "match_method": "assistant_candidate_confirmed_by_code"
   },
   {
    "id": "suedkorea-0409",
    "requested_name": "Kia",
    "market": "Südkorea",
-   "exchange": "KRX",
+   "exchange": "KOSPI",
    "human_review": "pending",
-   "status": "candidate_unverified",
+   "status": "confirmed_official_list",
    "ticker": "000270.KS",
    "exchange_code": "000270",
-   "evidence": null,
-   "match_method": "assistant_candidate_only",
-   "note": "KRX listing downloads (kind.krx.co.kr, data.krx.co.kr) returned 403 / require login and OpenDART corpCode.xml requires an API key; candidate not verified against an official list in this run."
+   "official_name_local": "기아",
+   "official_name": "KIA CORPORATION",
+   "identifiers": {
+    "dart_corp_code": "00106641",
+    "kr_jurir_no": "1101110037998"
+   },
+   "evidence": "dart_corpcode+company",
+   "match_method": "assistant_candidate_confirmed_by_code"
   },
   {
    "id": "suedkorea-0410",
    "requested_name": "Korea Aerospace Industries",
    "market": "Südkorea",
-   "exchange": "KRX",
+   "exchange": "KOSPI",
    "human_review": "pending",
-   "status": "candidate_unverified",
+   "status": "confirmed_official_list",
    "ticker": "047810.KS",
    "exchange_code": "047810",
-   "evidence": null,
-   "match_method": "assistant_candidate_only",
-   "note": "KRX listing downloads (kind.krx.co.kr, data.krx.co.kr) returned 403 / require login and OpenDART corpCode.xml requires an API key; candidate not verified against an official list in this run."
+   "official_name_local": "한국항공우주",
+   "official_name": "KOREA AEROSPACE INDUSTRIES, LTD.",
+   "identifiers": {
+    "dart_corp_code": "00309503",
+    "kr_jurir_no": "1101111827570"
+   },
+   "evidence": "dart_corpcode+company",
+   "match_method": "assistant_candidate_confirmed_by_code"
   },
   {
    "id": "suedkorea-0411",
    "requested_name": "Korea Electric Power",
    "market": "Südkorea",
-   "exchange": "KRX",
+   "exchange": "KOSPI",
    "human_review": "pending",
-   "status": "candidate_unverified",
+   "status": "confirmed_official_list",
    "ticker": "015760.KS",
    "exchange_code": "015760",
-   "evidence": null,
-   "match_method": "assistant_candidate_only",
-   "note": "KRX listing downloads (kind.krx.co.kr, data.krx.co.kr) returned 403 / require login and OpenDART corpCode.xml requires an API key; candidate not verified against an official list in this run."
+   "official_name_local": "한국전력공사",
+   "official_name": "KOREA ELECTRIC POWER CORPORATION",
+   "identifiers": {
+    "dart_corp_code": "00159193",
+    "kr_jurir_no": "1146710001456"
+   },
+   "evidence": "dart_corpcode+company",
+   "match_method": "assistant_candidate_confirmed_by_code"
   },
   {
    "id": "suedkorea-0412",
    "requested_name": "Korea Gas Corporation",
    "market": "Südkorea",
-   "exchange": "KRX",
+   "exchange": "KOSPI",
    "human_review": "pending",
-   "status": "candidate_unverified",
+   "status": "confirmed_official_list",
    "ticker": "036460.KS",
    "exchange_code": "036460",
-   "evidence": null,
-   "match_method": "assistant_candidate_only",
-   "note": "KRX listing downloads (kind.krx.co.kr, data.krx.co.kr) returned 403 / require login and OpenDART corpCode.xml requires an API key; candidate not verified against an official list in this run."
+   "official_name_local": "한국가스공사",
+   "official_name": "KoreaGasCorporation",
+   "identifiers": {
+    "dart_corp_code": "00261285",
+    "kr_jurir_no": "1146710006125"
+   },
+   "evidence": "dart_corpcode+company",
+   "match_method": "assistant_candidate_confirmed_by_code"
   },
   {
    "id": "suedkorea-0413",
    "requested_name": "Korea Investment Holdings",
    "market": "Südkorea",
-   "exchange": "KRX",
+   "exchange": "KOSPI",
    "human_review": "pending",
-   "status": "candidate_unverified",
+   "status": "confirmed_official_list",
    "ticker": "071050.KS",
    "exchange_code": "071050",
-   "evidence": null,
-   "match_method": "assistant_candidate_only",
-   "note": "KRX listing downloads (kind.krx.co.kr, data.krx.co.kr) returned 403 / require login and OpenDART corpCode.xml requires an API key; candidate not verified against an official list in this run."
+   "official_name_local": "한국금융지주",
+   "official_name": "Korea Investment Holdings Co., Ltd",
+   "identifiers": {
+    "dart_corp_code": "00432102",
+    "kr_jurir_no": "1101112691651"
+   },
+   "evidence": "dart_corpcode+company",
+   "match_method": "assistant_candidate_confirmed_by_code"
   },
   {
    "id": "suedkorea-0414",
    "requested_name": "KT",
    "market": "Südkorea",
-   "exchange": "KRX",
+   "exchange": "KOSPI",
    "human_review": "pending",
-   "status": "candidate_unverified",
+   "status": "confirmed_official_list",
    "ticker": "030200.KS",
    "exchange_code": "030200",
-   "evidence": null,
-   "match_method": "assistant_candidate_only",
-   "note": "KRX listing downloads (kind.krx.co.kr, data.krx.co.kr) returned 403 / require login and OpenDART corpCode.xml requires an API key; candidate not verified against an official list in this run."
+   "official_name_local": "케이티",
+   "official_name": "KT CORPORATION",
+   "identifiers": {
+    "dart_corp_code": "00190321",
+    "kr_jurir_no": "1101111468754"
+   },
+   "evidence": "dart_corpcode+company",
+   "match_method": "assistant_candidate_confirmed_by_code"
   },
   {
    "id": "suedkorea-0415",
    "requested_name": "KT&G",
    "market": "Südkorea",
-   "exchange": "KRX",
+   "exchange": "KOSPI",
    "human_review": "pending",
-   "status": "candidate_unverified",
+   "status": "confirmed_official_list",
    "ticker": "033780.KS",
    "exchange_code": "033780",
-   "evidence": null,
-   "match_method": "assistant_candidate_only",
-   "note": "KRX listing downloads (kind.krx.co.kr, data.krx.co.kr) returned 403 / require login and OpenDART corpCode.xml requires an API key; candidate not verified against an official list in this run."
+   "official_name_local": "케이티앤지",
+   "official_name": "KT&G Corporation",
+   "identifiers": {
+    "dart_corp_code": "00244455",
+    "kr_jurir_no": "1601110067804"
+   },
+   "evidence": "dart_corpcode+company",
+   "match_method": "assistant_candidate_confirmed_by_code"
   },
   {
    "id": "suedkorea-0416",
    "requested_name": "LG Chem",
    "market": "Südkorea",
-   "exchange": "KRX",
+   "exchange": "KOSPI",
    "human_review": "pending",
-   "status": "candidate_unverified",
+   "status": "confirmed_official_list",
    "ticker": "051910.KS",
    "exchange_code": "051910",
-   "evidence": null,
-   "match_method": "assistant_candidate_only",
-   "note": "KRX listing downloads (kind.krx.co.kr, data.krx.co.kr) returned 403 / require login and OpenDART corpCode.xml requires an API key; candidate not verified against an official list in this run."
+   "official_name_local": "LG화학",
+   "official_name": "LG CHEM LTD",
+   "identifiers": {
+    "dart_corp_code": "00356361",
+    "kr_jurir_no": "1101112207995"
+   },
+   "evidence": "dart_corpcode+company",
+   "match_method": "assistant_candidate_confirmed_by_code"
   },
   {
    "id": "suedkorea-0417",
    "requested_name": "LG Display",
    "market": "Südkorea",
-   "exchange": "KRX",
+   "exchange": "KOSPI",
    "human_review": "pending",
-   "status": "candidate_unverified",
+   "status": "confirmed_official_list",
    "ticker": "034220.KS",
    "exchange_code": "034220",
-   "evidence": null,
-   "match_method": "assistant_candidate_only",
-   "note": "KRX listing downloads (kind.krx.co.kr, data.krx.co.kr) returned 403 / require login and OpenDART corpCode.xml requires an API key; candidate not verified against an official list in this run."
+   "official_name_local": "LG디스플레이",
+   "official_name": "LG Display Co., Ltd.",
+   "identifiers": {
+    "dart_corp_code": "00105873",
+    "kr_jurir_no": "1101110393134"
+   },
+   "evidence": "dart_corpcode+company",
+   "match_method": "assistant_candidate_confirmed_by_code"
   },
   {
    "id": "suedkorea-0418",
    "requested_name": "LG Energy Solution",
    "market": "Südkorea",
-   "exchange": "KRX",
+   "exchange": "KOSPI",
    "human_review": "pending",
-   "status": "candidate_unverified",
+   "status": "confirmed_official_list",
    "ticker": "373220.KS",
    "exchange_code": "373220",
-   "evidence": null,
-   "match_method": "assistant_candidate_only",
-   "note": "KRX listing downloads (kind.krx.co.kr, data.krx.co.kr) returned 403 / require login and OpenDART corpCode.xml requires an API key; candidate not verified against an official list in this run."
+   "official_name_local": "LG에너지솔루션",
+   "official_name": "LG ENERGY SOLUTION, LTD.",
+   "identifiers": {
+    "dart_corp_code": "01515323",
+    "kr_jurir_no": "1101117701356"
+   },
+   "evidence": "dart_corpcode+company",
+   "match_method": "assistant_candidate_confirmed_by_code"
   },
   {
    "id": "suedkorea-0419",
    "requested_name": "LG Electronics",
    "market": "Südkorea",
-   "exchange": "KRX",
+   "exchange": "KOSPI",
    "human_review": "pending",
-   "status": "candidate_unverified",
+   "status": "confirmed_official_list",
    "ticker": "066570.KS",
    "exchange_code": "066570",
-   "evidence": null,
-   "match_method": "assistant_candidate_only",
-   "note": "KRX listing downloads (kind.krx.co.kr, data.krx.co.kr) returned 403 / require login and OpenDART corpCode.xml requires an API key; candidate not verified against an official list in this run."
+   "official_name_local": "LG전자",
+   "official_name": "LG ELECTRONICS INC.",
+   "identifiers": {
+    "dart_corp_code": "00401731",
+    "kr_jurir_no": "1101112487050"
+   },
+   "evidence": "dart_corpcode+company",
+   "match_method": "assistant_candidate_confirmed_by_code"
   },
   {
    "id": "suedkorea-0420",
    "requested_name": "LG Household & Health Care",
    "market": "Südkorea",
-   "exchange": "KRX",
+   "exchange": "KOSPI",
    "human_review": "pending",
-   "status": "candidate_unverified",
+   "status": "confirmed_official_list",
    "ticker": "051900.KS",
    "exchange_code": "051900",
-   "evidence": null,
-   "match_method": "assistant_candidate_only",
-   "note": "KRX listing downloads (kind.krx.co.kr, data.krx.co.kr) returned 403 / require login and OpenDART corpCode.xml requires an API key; candidate not verified against an official list in this run."
+   "official_name_local": "LG생활건강",
+   "official_name": "LG H&H Co., Ltd.",
+   "identifiers": {
+    "dart_corp_code": "00356370",
+    "kr_jurir_no": "1101112208000"
+   },
+   "evidence": "dart_corpcode+company",
+   "match_method": "assistant_candidate_confirmed_by_code"
   },
   {
    "id": "suedkorea-0421",
    "requested_name": "LG Innotek",
    "market": "Südkorea",
-   "exchange": "KRX",
+   "exchange": "KOSPI",
    "human_review": "pending",
-   "status": "candidate_unverified",
+   "status": "confirmed_official_list",
    "ticker": "011070.KS",
    "exchange_code": "011070",
-   "evidence": null,
-   "match_method": "assistant_candidate_only",
-   "note": "KRX listing downloads (kind.krx.co.kr, data.krx.co.kr) returned 403 / require login and OpenDART corpCode.xml requires an API key; candidate not verified against an official list in this run."
+   "official_name_local": "LG이노텍",
+   "official_name": "LG INNOTEK CO., LTD.",
+   "identifiers": {
+    "dart_corp_code": "00105961",
+    "kr_jurir_no": "1101110192180"
+   },
+   "evidence": "dart_corpcode+company",
+   "match_method": "assistant_candidate_confirmed_by_code"
   },
   {
    "id": "suedkorea-0422",
    "requested_name": "LG Uplus",
    "market": "Südkorea",
-   "exchange": "KRX",
+   "exchange": "KOSPI",
    "human_review": "pending",
-   "status": "candidate_unverified",
+   "status": "confirmed_official_list",
    "ticker": "032640.KS",
    "exchange_code": "032640",
-   "evidence": null,
-   "match_method": "assistant_candidate_only",
-   "note": "KRX listing downloads (kind.krx.co.kr, data.krx.co.kr) returned 403 / require login and OpenDART corpCode.xml requires an API key; candidate not verified against an official list in this run."
+   "official_name_local": "LG유플러스",
+   "official_name": "LG Uplus Corp",
+   "identifiers": {
+    "dart_corp_code": "00231363",
+    "kr_jurir_no": "1101111296676"
+   },
+   "evidence": "dart_corpcode+company",
+   "match_method": "assistant_candidate_confirmed_by_code"
   },
   {
    "id": "suedkorea-0423",
    "requested_name": "Lotte Chemical",
    "market": "Südkorea",
-   "exchange": "KRX",
+   "exchange": "KOSPI",
    "human_review": "pending",
-   "status": "candidate_unverified",
+   "status": "confirmed_official_list",
    "ticker": "011170.KS",
    "exchange_code": "011170",
-   "evidence": null,
-   "match_method": "assistant_candidate_only",
-   "note": "KRX listing downloads (kind.krx.co.kr, data.krx.co.kr) returned 403 / require login and OpenDART corpCode.xml requires an API key; candidate not verified against an official list in this run."
+   "official_name_local": "롯데케미칼",
+   "official_name": "LOTTE CHEMICAL CORPORATION",
+   "identifiers": {
+    "dart_corp_code": "00165413",
+    "kr_jurir_no": "1101110193196"
+   },
+   "evidence": "dart_corpcode+company",
+   "match_method": "assistant_candidate_confirmed_by_code"
   },
   {
    "id": "suedkorea-0424",
    "requested_name": "Lotte Shopping",
    "market": "Südkorea",
-   "exchange": "KRX",
+   "exchange": "KOSPI",
    "human_review": "pending",
-   "status": "candidate_unverified",
+   "status": "confirmed_official_list",
    "ticker": "023530.KS",
    "exchange_code": "023530",
-   "evidence": null,
-   "match_method": "assistant_candidate_only",
-   "note": "KRX listing downloads (kind.krx.co.kr, data.krx.co.kr) returned 403 / require login and OpenDART corpCode.xml requires an API key; candidate not verified against an official list in this run."
+   "official_name_local": "롯데쇼핑",
+   "official_name": "LOTTE SHOPPING CO.,LTD.",
+   "identifiers": {
+    "dart_corp_code": "00120526",
+    "kr_jurir_no": "1101110000086"
+   },
+   "evidence": "dart_corpcode+company",
+   "match_method": "assistant_candidate_confirmed_by_code"
   },
   {
    "id": "suedkorea-0425",
    "requested_name": "Mirae Asset Securities",
    "market": "Südkorea",
-   "exchange": "KRX",
+   "exchange": "KOSPI",
    "human_review": "pending",
-   "status": "candidate_unverified",
+   "status": "confirmed_official_list",
    "ticker": "006800.KS",
    "exchange_code": "006800",
-   "evidence": null,
-   "match_method": "assistant_candidate_only",
-   "note": "KRX listing downloads (kind.krx.co.kr, data.krx.co.kr) returned 403 / require login and OpenDART corpCode.xml requires an API key; candidate not verified against an official list in this run."
+   "official_name_local": "미래에셋증권",
+   "official_name": "MIRAE ASSET SECURITIES CO.,LTD.",
+   "identifiers": {
+    "dart_corp_code": "00111722",
+    "kr_jurir_no": "1101110011679"
+   },
+   "evidence": "dart_corpcode+company",
+   "match_method": "assistant_candidate_confirmed_by_code"
   },
   {
    "id": "suedkorea-0426",
    "requested_name": "Naver",
    "market": "Südkorea",
-   "exchange": "KRX",
+   "exchange": "KOSPI",
    "human_review": "pending",
-   "status": "candidate_unverified",
+   "status": "confirmed_official_list",
    "ticker": "035420.KS",
    "exchange_code": "035420",
-   "evidence": null,
-   "match_method": "assistant_candidate_only",
-   "note": "KRX listing downloads (kind.krx.co.kr, data.krx.co.kr) returned 403 / require login and OpenDART corpCode.xml requires an API key; candidate not verified against an official list in this run."
+   "official_name_local": "NAVER",
+   "official_name": "NAVER Corporation",
+   "identifiers": {
+    "dart_corp_code": "00266961",
+    "kr_jurir_no": "1101111707178"
+   },
+   "evidence": "dart_corpcode+company",
+   "match_method": "assistant_candidate_confirmed_by_code"
   },
   {
    "id": "suedkorea-0427",
    "requested_name": "NCSoft",
    "market": "Südkorea",
-   "exchange": "KRX",
+   "exchange": "KOSPI",
    "human_review": "pending",
-   "status": "candidate_unverified",
+   "status": "confirmed_official_list",
    "ticker": "036570.KS",
    "exchange_code": "036570",
-   "evidence": null,
-   "match_method": "assistant_candidate_only",
-   "note": "KRX listing downloads (kind.krx.co.kr, data.krx.co.kr) returned 403 / require login and OpenDART corpCode.xml requires an API key; candidate not verified against an official list in this run."
+   "official_name_local": "NC",
+   "official_name": "NC Corporation",
+   "identifiers": {
+    "dart_corp_code": "00261443",
+    "kr_jurir_no": "1101111387748"
+   },
+   "evidence": "dart_corpcode+company",
+   "match_method": "assistant_candidate_confirmed_by_code"
   },
   {
    "id": "suedkorea-0428",
    "requested_name": "Netmarble",
    "market": "Südkorea",
-   "exchange": "KRX",
+   "exchange": "KOSPI",
    "human_review": "pending",
-   "status": "candidate_unverified",
+   "status": "confirmed_official_list",
    "ticker": "251270.KS",
    "exchange_code": "251270",
-   "evidence": null,
-   "match_method": "assistant_candidate_only",
-   "note": "KRX listing downloads (kind.krx.co.kr, data.krx.co.kr) returned 403 / require login and OpenDART corpCode.xml requires an API key; candidate not verified against an official list in this run."
+   "official_name_local": "넷마블",
+   "official_name": "Netmarble Corporation",
+   "identifiers": {
+    "dart_corp_code": "00904672",
+    "kr_jurir_no": "1101114731299"
+   },
+   "evidence": "dart_corpcode+company",
+   "match_method": "assistant_candidate_confirmed_by_code"
   },
   {
    "id": "suedkorea-0429",
    "requested_name": "NH Investment & Securities",
    "market": "Südkorea",
-   "exchange": "KRX",
+   "exchange": "KOSPI",
    "human_review": "pending",
-   "status": "candidate_unverified",
+   "status": "confirmed_official_list",
    "ticker": "005940.KS",
    "exchange_code": "005940",
-   "evidence": null,
-   "match_method": "assistant_candidate_only",
-   "note": "KRX listing downloads (kind.krx.co.kr, data.krx.co.kr) returned 403 / require login and OpenDART corpCode.xml requires an API key; candidate not verified against an official list in this run."
+   "official_name_local": "NH투자증권",
+   "official_name": "NH INVESTMENT & SECURITIES CO.,LTD. ",
+   "identifiers": {
+    "dart_corp_code": "00120182",
+    "kr_jurir_no": "1101110098130"
+   },
+   "evidence": "dart_corpcode+company",
+   "match_method": "assistant_candidate_confirmed_by_code"
   },
   {
    "id": "suedkorea-0430",
    "requested_name": "Orion",
    "market": "Südkorea",
-   "exchange": "KRX",
+   "exchange": "KOSPI",
    "human_review": "pending",
-   "status": "candidate_unverified",
+   "status": "confirmed_official_list",
    "ticker": "271560.KS",
    "exchange_code": "271560",
-   "evidence": null,
-   "match_method": "assistant_candidate_only",
-   "note": "KRX listing downloads (kind.krx.co.kr, data.krx.co.kr) returned 403 / require login and OpenDART corpCode.xml requires an API key; candidate not verified against an official list in this run."
+   "official_name_local": "오리온",
+   "official_name": "ORION CORP.",
+   "identifiers": {
+    "dart_corp_code": "01238169",
+    "kr_jurir_no": "1101116417805"
+   },
+   "evidence": "dart_corpcode+company",
+   "match_method": "assistant_candidate_confirmed_by_code"
   },
   {
    "id": "suedkorea-0431",
    "requested_name": "POSCO Holdings",
    "market": "Südkorea",
-   "exchange": "KRX",
+   "exchange": "KOSPI",
    "human_review": "pending",
-   "status": "candidate_unverified",
+   "status": "confirmed_official_list",
    "ticker": "005490.KS",
    "exchange_code": "005490",
-   "evidence": null,
-   "match_method": "assistant_candidate_only",
-   "note": "KRX listing downloads (kind.krx.co.kr, data.krx.co.kr) returned 403 / require login and OpenDART corpCode.xml requires an API key; candidate not verified against an official list in this run."
+   "official_name_local": "POSCO홀딩스",
+   "official_name": "POSCO Holdings Inc.",
+   "identifiers": {
+    "dart_corp_code": "00155319",
+    "kr_jurir_no": "1746110000741"
+   },
+   "evidence": "dart_corpcode+company",
+   "match_method": "assistant_candidate_confirmed_by_code"
   },
   {
    "id": "suedkorea-0432",
    "requested_name": "S-Oil",
    "market": "Südkorea",
-   "exchange": "KRX",
+   "exchange": "KOSPI",
    "human_review": "pending",
-   "status": "candidate_unverified",
+   "status": "confirmed_official_list",
    "ticker": "010950.KS",
    "exchange_code": "010950",
-   "evidence": null,
-   "match_method": "assistant_candidate_only",
-   "note": "KRX listing downloads (kind.krx.co.kr, data.krx.co.kr) returned 403 / require login and OpenDART corpCode.xml requires an API key; candidate not verified against an official list in this run."
+   "official_name_local": "S-Oil",
+   "official_name": "S-Oil Corporation",
+   "identifiers": {
+    "dart_corp_code": "00138279",
+    "kr_jurir_no": "1101110189955"
+   },
+   "evidence": "dart_corpcode+company",
+   "match_method": "assistant_candidate_confirmed_by_code"
   },
   {
    "id": "suedkorea-0433",
    "requested_name": "Samsung Biologics",
    "market": "Südkorea",
-   "exchange": "KRX",
+   "exchange": "KOSPI",
    "human_review": "pending",
-   "status": "candidate_unverified",
+   "status": "confirmed_official_list",
    "ticker": "207940.KS",
    "exchange_code": "207940",
-   "evidence": null,
-   "match_method": "assistant_candidate_only",
-   "note": "KRX listing downloads (kind.krx.co.kr, data.krx.co.kr) returned 403 / require login and OpenDART corpCode.xml requires an API key; candidate not verified against an official list in this run."
+   "official_name_local": "삼성바이오로직스",
+   "official_name": "SAMSUNG BIOLOGICS CO.,LTD.",
+   "identifiers": {
+    "dart_corp_code": "00877059",
+    "kr_jurir_no": "1201110566317"
+   },
+   "evidence": "dart_corpcode+company",
+   "match_method": "assistant_candidate_confirmed_by_code"
   },
   {
    "id": "suedkorea-0434",
    "requested_name": "Samsung C&T",
    "market": "Südkorea",
-   "exchange": "KRX",
+   "exchange": "KOSPI",
    "human_review": "pending",
-   "status": "candidate_unverified",
+   "status": "confirmed_official_list",
    "ticker": "028260.KS",
    "exchange_code": "028260",
-   "evidence": null,
-   "match_method": "assistant_candidate_only",
-   "note": "KRX listing downloads (kind.krx.co.kr, data.krx.co.kr) returned 403 / require login and OpenDART corpCode.xml requires an API key; candidate not verified against an official list in this run."
+   "official_name_local": "삼성물산",
+   "official_name": "SAMSUNG C&T CORPORATION",
+   "identifiers": {
+    "dart_corp_code": "00149655",
+    "kr_jurir_no": "1101110015762"
+   },
+   "evidence": "dart_corpcode+company",
+   "match_method": "assistant_candidate_confirmed_by_code"
   },
   {
    "id": "suedkorea-0435",
    "requested_name": "Samsung Electro-Mechanics",
    "market": "Südkorea",
-   "exchange": "KRX",
+   "exchange": "KOSPI",
    "human_review": "pending",
-   "status": "candidate_unverified",
+   "status": "confirmed_official_list",
    "ticker": "009150.KS",
    "exchange_code": "009150",
-   "evidence": null,
-   "match_method": "assistant_candidate_only",
-   "note": "KRX listing downloads (kind.krx.co.kr, data.krx.co.kr) returned 403 / require login and OpenDART corpCode.xml requires an API key; candidate not verified against an official list in this run."
+   "official_name_local": "삼성전기",
+   "official_name": "SAMSUNG ELECTRO-MECHANICS CO.,LTD",
+   "identifiers": {
+    "dart_corp_code": "00126371",
+    "kr_jurir_no": "1301110001626"
+   },
+   "evidence": "dart_corpcode+company",
+   "match_method": "assistant_candidate_confirmed_by_code"
   },
   {
    "id": "suedkorea-0436",
    "requested_name": "Samsung Electronics",
    "market": "Südkorea",
-   "exchange": "KRX",
+   "exchange": "KOSPI",
    "human_review": "pending",
-   "status": "candidate_unverified",
+   "status": "confirmed_official_list",
    "ticker": "005930.KS",
    "exchange_code": "005930",
-   "evidence": null,
-   "match_method": "assistant_candidate_only",
-   "note": "KRX listing downloads (kind.krx.co.kr, data.krx.co.kr) returned 403 / require login and OpenDART corpCode.xml requires an API key; candidate not verified against an official list in this run."
+   "official_name_local": "삼성전자",
+   "official_name": "SAMSUNG ELECTRONICS CO,.LTD",
+   "identifiers": {
+    "dart_corp_code": "00126380",
+    "kr_jurir_no": "1301110006246"
+   },
+   "evidence": "dart_corpcode+company",
+   "match_method": "assistant_candidate_confirmed_by_code"
   },
   {
    "id": "suedkorea-0437",
    "requested_name": "Samsung Fire & Marine Insurance",
    "market": "Südkorea",
-   "exchange": "KRX",
+   "exchange": "KOSPI",
    "human_review": "pending",
-   "status": "candidate_unverified",
+   "status": "confirmed_official_list",
    "ticker": "000810.KS",
    "exchange_code": "000810",
-   "evidence": null,
-   "match_method": "assistant_candidate_only",
-   "note": "KRX listing downloads (kind.krx.co.kr, data.krx.co.kr) returned 403 / require login and OpenDART corpCode.xml requires an API key; candidate not verified against an official list in this run."
+   "official_name_local": "삼성화재해상보험",
+   "official_name": "SAMSUNG FIRE & MARINE INSURANCE CO.,LTD",
+   "identifiers": {
+    "dart_corp_code": "00139214",
+    "kr_jurir_no": "1101110005078"
+   },
+   "evidence": "dart_corpcode+company",
+   "match_method": "assistant_candidate_confirmed_by_code"
   },
   {
    "id": "suedkorea-0438",
    "requested_name": "Samsung Heavy Industries",
    "market": "Südkorea",
-   "exchange": "KRX",
+   "exchange": "KOSPI",
    "human_review": "pending",
-   "status": "candidate_unverified",
+   "status": "confirmed_official_list",
    "ticker": "010140.KS",
    "exchange_code": "010140",
-   "evidence": null,
-   "match_method": "assistant_candidate_only",
-   "note": "KRX listing downloads (kind.krx.co.kr, data.krx.co.kr) returned 403 / require login and OpenDART corpCode.xml requires an API key; candidate not verified against an official list in this run."
+   "official_name_local": "삼성중공업",
+   "official_name": "SAMSUNG HEAVY INDUSTRIES CO.,LTD",
+   "identifiers": {
+    "dart_corp_code": "00126478",
+    "kr_jurir_no": "1101110168595"
+   },
+   "evidence": "dart_corpcode+company",
+   "match_method": "assistant_candidate_confirmed_by_code"
   },
   {
    "id": "suedkorea-0439",
    "requested_name": "Samsung Life Insurance",
    "market": "Südkorea",
-   "exchange": "KRX",
+   "exchange": "KOSPI",
    "human_review": "pending",
-   "status": "candidate_unverified",
+   "status": "confirmed_official_list",
    "ticker": "032830.KS",
    "exchange_code": "032830",
-   "evidence": null,
-   "match_method": "assistant_candidate_only",
-   "note": "KRX listing downloads (kind.krx.co.kr, data.krx.co.kr) returned 403 / require login and OpenDART corpCode.xml requires an API key; candidate not verified against an official list in this run."
+   "official_name_local": "삼성생명",
+   "official_name": "Samsung Life Insurance co., Ltd",
+   "identifiers": {
+    "dart_corp_code": "00126256",
+    "kr_jurir_no": "1101110005953"
+   },
+   "evidence": "dart_corpcode+company",
+   "match_method": "assistant_candidate_confirmed_by_code"
   },
   {
    "id": "suedkorea-0440",
    "requested_name": "Samsung SDI",
    "market": "Südkorea",
-   "exchange": "KRX",
+   "exchange": "KOSPI",
    "human_review": "pending",
-   "status": "candidate_unverified",
+   "status": "confirmed_official_list",
    "ticker": "006400.KS",
    "exchange_code": "006400",
-   "evidence": null,
-   "match_method": "assistant_candidate_only",
-   "note": "KRX listing downloads (kind.krx.co.kr, data.krx.co.kr) returned 403 / require login and OpenDART corpCode.xml requires an API key; candidate not verified against an official list in this run."
+   "official_name_local": "삼성SDI",
+   "official_name": "SAMSUNG SDI CO.,LTD",
+   "identifiers": {
+    "dart_corp_code": "00126362",
+    "kr_jurir_no": "1101110394174"
+   },
+   "evidence": "dart_corpcode+company",
+   "match_method": "assistant_candidate_confirmed_by_code"
   },
   {
    "id": "suedkorea-0441",
    "requested_name": "Samsung SDS",
    "market": "Südkorea",
-   "exchange": "KRX",
+   "exchange": "KOSPI",
    "human_review": "pending",
-   "status": "candidate_unverified",
+   "status": "confirmed_official_list",
    "ticker": "018260.KS",
    "exchange_code": "018260",
-   "evidence": null,
-   "match_method": "assistant_candidate_only",
-   "note": "KRX listing downloads (kind.krx.co.kr, data.krx.co.kr) returned 403 / require login and OpenDART corpCode.xml requires an API key; candidate not verified against an official list in this run."
+   "official_name_local": "삼성에스디에스",
+   "official_name": "SAMSUNG SDS CO., LTD.",
+   "identifiers": {
+    "dart_corp_code": "00126186",
+    "kr_jurir_no": "1101110398556"
+   },
+   "evidence": "dart_corpcode+company",
+   "match_method": "assistant_candidate_confirmed_by_code"
   },
   {
    "id": "suedkorea-0442",
    "requested_name": "Samsung Securities",
    "market": "Südkorea",
-   "exchange": "KRX",
+   "exchange": "KOSPI",
    "human_review": "pending",
-   "status": "candidate_unverified",
+   "status": "confirmed_official_list",
    "ticker": "016360.KS",
    "exchange_code": "016360",
-   "evidence": null,
-   "match_method": "assistant_candidate_only",
-   "note": "KRX listing downloads (kind.krx.co.kr, data.krx.co.kr) returned 403 / require login and OpenDART corpCode.xml requires an API key; candidate not verified against an official list in this run."
+   "official_name_local": "삼성증권",
+   "official_name": "SAMSUNG SECURITIES CO.,LTD",
+   "identifiers": {
+    "dart_corp_code": "00104856",
+    "kr_jurir_no": "1101110335649"
+   },
+   "evidence": "dart_corpcode+company",
+   "match_method": "assistant_candidate_confirmed_by_code"
   },
   {
    "id": "suedkorea-0443",
    "requested_name": "Shinhan Financial Group",
    "market": "Südkorea",
-   "exchange": "KRX",
+   "exchange": "KOSPI",
    "human_review": "pending",
-   "status": "candidate_unverified",
+   "status": "confirmed_official_list",
    "ticker": "055550.KS",
    "exchange_code": "055550",
-   "evidence": null,
-   "match_method": "assistant_candidate_only",
-   "note": "KRX listing downloads (kind.krx.co.kr, data.krx.co.kr) returned 403 / require login and OpenDART corpCode.xml requires an API key; candidate not verified against an official list in this run."
+   "official_name_local": "신한지주",
+   "official_name": "SHINHAN FINANCIAL GROUP CO.,LTD",
+   "identifiers": {
+    "dart_corp_code": "00382199",
+    "kr_jurir_no": "1101112322438"
+   },
+   "evidence": "dart_corpcode+company",
+   "match_method": "assistant_candidate_confirmed_by_code"
   },
   {
    "id": "suedkorea-0444",
    "requested_name": "SK",
    "market": "Südkorea",
-   "exchange": "KRX",
+   "exchange": "KOSPI",
    "human_review": "pending",
-   "status": "candidate_unverified",
+   "status": "confirmed_official_list",
    "ticker": "034730.KS",
    "exchange_code": "034730",
-   "evidence": null,
-   "match_method": "assistant_candidate_only",
-   "note": "KRX listing downloads (kind.krx.co.kr, data.krx.co.kr) returned 403 / require login and OpenDART corpCode.xml requires an API key; candidate not verified against an official list in this run."
+   "official_name_local": "SK",
+   "official_name": "SK Inc.",
+   "identifiers": {
+    "dart_corp_code": "00181712",
+    "kr_jurir_no": "1101110769583"
+   },
+   "evidence": "dart_corpcode+company",
+   "match_method": "assistant_candidate_confirmed_by_code"
   },
   {
    "id": "suedkorea-0445",
    "requested_name": "SK Bioscience",
    "market": "Südkorea",
-   "exchange": "KRX",
+   "exchange": "KOSPI",
    "human_review": "pending",
-   "status": "candidate_unverified",
+   "status": "confirmed_official_list",
    "ticker": "302440.KS",
    "exchange_code": "302440",
-   "evidence": null,
-   "match_method": "assistant_candidate_only",
-   "note": "KRX listing downloads (kind.krx.co.kr, data.krx.co.kr) returned 403 / require login and OpenDART corpCode.xml requires an API key; candidate not verified against an official list in this run."
+   "official_name_local": "SK바이오사이언스",
+   "official_name": "SK Bioscience Co.,Ltd",
+   "identifiers": {
+    "dart_corp_code": "01319899",
+    "kr_jurir_no": "1311110523736"
+   },
+   "evidence": "dart_corpcode+company",
+   "match_method": "assistant_candidate_confirmed_by_code"
   },
   {
    "id": "suedkorea-0446",
    "requested_name": "SK Hynix",
    "market": "Südkorea",
-   "exchange": "KRX",
+   "exchange": "KOSPI",
    "human_review": "pending",
-   "status": "candidate_unverified",
+   "status": "confirmed_official_list",
    "ticker": "000660.KS",
    "exchange_code": "000660",
-   "evidence": null,
-   "match_method": "assistant_candidate_only",
-   "note": "KRX listing downloads (kind.krx.co.kr, data.krx.co.kr) returned 403 / require login and OpenDART corpCode.xml requires an API key; candidate not verified against an official list in this run."
+   "official_name_local": "SK하이닉스",
+   "official_name": "SK hynix Inc.",
+   "identifiers": {
+    "dart_corp_code": "00164779",
+    "kr_jurir_no": "1344110001387"
+   },
+   "evidence": "dart_corpcode+company",
+   "match_method": "assistant_candidate_confirmed_by_code"
   },
   {
    "id": "suedkorea-0447",
    "requested_name": "SK Innovation",
    "market": "Südkorea",
-   "exchange": "KRX",
+   "exchange": "KOSPI",
    "human_review": "pending",
-   "status": "candidate_unverified",
+   "status": "confirmed_official_list",
    "ticker": "096770.KS",
    "exchange_code": "096770",
-   "evidence": null,
-   "match_method": "assistant_candidate_only",
-   "note": "KRX listing downloads (kind.krx.co.kr, data.krx.co.kr) returned 403 / require login and OpenDART corpCode.xml requires an API key; candidate not verified against an official list in this run."
+   "official_name_local": "SK이노베이션",
+   "official_name": "SK Innovation Co., Ltd.",
+   "identifiers": {
+    "dart_corp_code": "00631518",
+    "kr_jurir_no": "1101113710385"
+   },
+   "evidence": "dart_corpcode+company",
+   "match_method": "assistant_candidate_confirmed_by_code"
   },
   {
    "id": "suedkorea-0448",
    "requested_name": "SK Square",
    "market": "Südkorea",
-   "exchange": "KRX",
+   "exchange": "KOSPI",
    "human_review": "pending",
-   "status": "candidate_unverified",
+   "status": "confirmed_official_list",
    "ticker": "402340.KS",
    "exchange_code": "402340",
-   "evidence": null,
-   "match_method": "assistant_candidate_only",
-   "note": "KRX listing downloads (kind.krx.co.kr, data.krx.co.kr) returned 403 / require login and OpenDART corpCode.xml requires an API key; candidate not verified against an official list in this run."
+   "official_name_local": "SK스퀘어",
+   "official_name": "SK Square Co., Ltd.",
+   "identifiers": {
+    "dart_corp_code": "01596425",
+    "kr_jurir_no": "1101118077821"
+   },
+   "evidence": "dart_corpcode+company",
+   "match_method": "assistant_candidate_confirmed_by_code"
   },
   {
    "id": "suedkorea-0449",
    "requested_name": "SK Telecom",
    "market": "Südkorea",
-   "exchange": "KRX",
+   "exchange": "KOSPI",
    "human_review": "pending",
-   "status": "candidate_unverified",
+   "status": "confirmed_official_list",
    "ticker": "017670.KS",
    "exchange_code": "017670",
-   "evidence": null,
-   "match_method": "assistant_candidate_only",
-   "note": "KRX listing downloads (kind.krx.co.kr, data.krx.co.kr) returned 403 / require login and OpenDART corpCode.xml requires an API key; candidate not verified against an official list in this run."
+   "official_name_local": "SK텔레콤",
+   "official_name": "SK TELECOM CO.,LTD",
+   "identifiers": {
+    "dart_corp_code": "00159023",
+    "kr_jurir_no": "1101110371346"
+   },
+   "evidence": "dart_corpcode+company",
+   "match_method": "assistant_candidate_confirmed_by_code"
   },
   {
    "id": "suedkorea-0450",
    "requested_name": "S-1 Corporation",
    "market": "Südkorea",
-   "exchange": "KRX",
+   "exchange": "KOSPI",
    "human_review": "pending",
-   "status": "candidate_unverified",
+   "status": "confirmed_official_list",
    "ticker": "012750.KS",
    "exchange_code": "012750",
-   "evidence": null,
-   "match_method": "assistant_candidate_only",
-   "note": "KRX listing downloads (kind.krx.co.kr, data.krx.co.kr) returned 403 / require login and OpenDART corpCode.xml requires an API key; candidate not verified against an official list in this run."
+   "official_name_local": "에스원",
+   "official_name": "S-1 CORPORATION",
+   "identifiers": {
+    "dart_corp_code": "00158501",
+    "kr_jurir_no": "1101110221939"
+   },
+   "evidence": "dart_corpcode+company",
+   "match_method": "assistant_candidate_confirmed_by_code"
   },
   {
    "id": "suedkorea-0451",
    "requested_name": "Yuhan",
    "market": "Südkorea",
-   "exchange": "KRX",
+   "exchange": "KOSPI",
    "human_review": "pending",
-   "status": "candidate_unverified",
+   "status": "confirmed_official_list",
    "ticker": "000100.KS",
    "exchange_code": "000100",
-   "evidence": null,
-   "match_method": "assistant_candidate_only",
-   "note": "KRX listing downloads (kind.krx.co.kr, data.krx.co.kr) returned 403 / require login and OpenDART corpCode.xml requires an API key; candidate not verified against an official list in this run."
+   "official_name_local": "유한양행",
+   "official_name": "YUHAN CORPORATION",
+   "identifiers": {
+    "dart_corp_code": "00145109",
+    "kr_jurir_no": "1101110014409"
+   },
+   "evidence": "dart_corpcode+company",
+   "match_method": "assistant_candidate_confirmed_by_code"
   }
  ],
  "note": "Identity mapping only. No financial data. human_review pending for every entry.",
- "generated_at": "2026-11-18T13:21:17.344418+00:00"
+ "generated_at": "2026-11-18T14:07:59.121940+00:00",
+ "regulator_update_at": "2026-11-18T14:14:18.169359+00:00"
 }
