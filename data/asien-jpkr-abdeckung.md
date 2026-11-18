@@ -3,7 +3,7 @@
 Amtliche Offenlegungssysteme, maschinell ausgelesen, ungeprüft (human_review: pending).
 
 - Firmen (bestätigt in der offiziellen Liste): 307, mit Jahreszahlen: **307**
-- in diesem Lauf: 40 Abrufe, 0 Fehler
+- in diesem Lauf: 10 Abrufe, 0 Fehler
 
 | Ticker | Name | Jahre | Umfang | Kurs in DE |
 |---|---|---|---|---|
