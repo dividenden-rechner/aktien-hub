@@ -1,66 +1,66 @@
 {
  "hub": "NVDA",
  "name": "NVIDIA CORP",
- "stand": "2026-11-17",
+ "stand": "2026-11-18",
  "quelle": "Google News (Wirtschaftsmedien, deutsch und englisch)",
  "meldungen": [
   {
-   "titel": "NVIDIA Board of Directors Establishes National Security and Export Control Oversight Committee",
+   "titel": "Nvidia Stops Selling AI Chips to China Despite US Approval",
+   "quelle": "Bloomberg.com",
+   "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxQVk5ZV2dpR3EyVEtJcVdSZTBCVGl6UE1qZ1gzNWdiaHJ3WGR1S3NUd2VRcWVzUWhjanFicXVzNi1zRWZNel9EdlVOaC1uMUFCckRXMkRGWkRZeHdZUnE4VTdtUkZ2N0dITkRYa040X29HanoxODdGVXV3NzEyOGhnR1VOb2VwcFNIcHFJQlFrNXM3T1hqQlN5WnB0MHJTU0R2cTZOUnBNbV9Ubm81clFKM0x5cHRxdw?oc=5",
+   "datum": "2026-11-18",
+   "sprache": "en"
+  },
+  {
+   "titel": "Jensen Huang and Nvidia is not a honeypot story. It is a national security story",
+   "quelle": "Fortune",
+   "link": "https://news.google.com/rss/articles/CBMitwFBVV95cUxPemxvckVCVjc1Tm82ZVZDM20xRlR0Y1pMc19KXzNMYndUNUlSY0dUTnFVWVBHd2YyaHhqSzRCX1h1VktEaVdTYl9iN2pobXNNekpxRmFQdmdWdTBkSXJZVkJiMWJDZnVIdTFJeldSYlcwX2NYSTQzemNjZGpFS0lSZDl4U3hnTkpPelpxZnpzV1BRNGZlWkEwcGdoc00ySlduNUhXVW43VnFBZzJTMGdOQXYwVDN3eHM?oc=5",
+   "datum": "2026-11-18",
+   "sprache": "en"
+  },
+  {
+   "titel": "The Bank of Nvidia Under New Management",
+   "quelle": "Bloomberg.com",
+   "link": "https://news.google.com/rss/articles/CBMiygFBVV95cUxOLWhmRzZ2QTR3bTBCSTFFdXdDbVlmR3BwY2stQjg3bUJvdmVBVl9DTXA0YW9NOGtURHlkU1RRdUJDMEpHWnVTempvMldSLTdmRkZPWDhrVXowWXBTZ2RyblFTODE5cXJ1QTlwTnk4N3JkbHZSNkxBVzFQeF9RNjVBcFdscUVHaHdRVjdEV0h3VXBkcjRrQTdSZDZ5ZjZVT0JPRHhJRFJ5Tzhma0ZEMHhhN0laU09sLVhXM1d1SjlvdExxSS1xdnBoZjRB?oc=5",
+   "datum": "2026-11-18",
+   "sprache": "en"
+  },
+  {
+   "titel": "US Stock Futures Rally as Nvidia Results Ease AI Trade Worries",
+   "quelle": "Bloomberg.com",
+   "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxNRi1ZbVpsWDREeUZoOV8tRHkxLVZ2WnNtaFdXWENZbkVWVHRITUNZRmFFX1V1X2RCV1ctdWFBMk14emVFTEl0eDV0cERXU0ZmN3A5NnphRDZkU3FEdmpCSXpJRU5HMnFHbENrbmhoYkhsX2VIZUxrU0VlUTUycFo0a3l0UFoxaEVOS2ZxaGxwRmdRd3lJSktTZy14VUdRTVJCNlVTb3BmZW44ankzblhKWFZ6dw?oc=5",
+   "datum": "2026-11-18",
+   "sprache": "en"
+  },
+  {
+   "titel": "NVIDIA Expands Commitments With Supply Chain Partners to Support AI Infrastructure Buildout",
    "quelle": "Unternehmen",
-   "link": "https://nvidianews.nvidia.com/news/nvidia-board-of-directors-establishes-national-security-and-export-control-oversight-committee",
+   "link": "https://nvidianews.nvidia.com/news/nvidia-expands-commitments-with-supply-chain-partners-to-support-ai-infrastructure-buildout",
    "datum": "2026-11-17",
    "sprache": "en",
    "typ": "pm"
   },
   {
-   "titel": "Nvidia warns chip buyers of legal risks tied to China AI access, sources tell CNBC",
-   "quelle": "CNBC",
-   "link": "https://news.google.com/rss/articles/CBMiekFVX3lxTFBvLUltN01zNnhQWHVEUWlEbWJoUXcyVjFlRUF0SU90cXZwU2FoT1J2NnNZTGthUjZOX1ozbHBaUnB3QVc2bl9LNHFEMDRiUXZJVEktNjRBUG81M0dpSzRKbFl5cjdNaXhGeHVIVDNDV2dITFVhZlBpME1n0gF_QVVfeXFMT3ZEaUU4Z1VBUm44S2Y3MmwyRlpsUjYyejJRTFlyMnU5aklRa3pGQW41MkRHb3RqTzh5a0l0dE9MbzdSeFpTRWlBajFvRllpa0VnX3RXUDJIR0tjUE1NOGsyazJRbEc1RGcyZmt5cGdwUUxjZXFYb252N2dUU1VWRQ?oc=5",
+   "titel": "Quartalszahlen",
+   "quelle": "SEC-Meldung",
+   "link": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000088/nvda-20261117.htm",
    "datum": "2026-11-17",
-   "sprache": "en"
-  },
-  {
-   "titel": "Nasdaq 100 Futures Rise as Investors Prepare for Nvidia Results",
-   "quelle": "Bloomberg.com",
-   "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxQR0NTVVJlUDVlV1NVbU5BNllyV3VQT0J4UDh2aFo3Y0FUaVZwSno4ZVlRNVBkcFFVQmVHc1hOaER5WHc2c1VuUFdJMl9HM04teTV2ZkoxX3htM1VuUTcteE1PR1NYNlZZTE9aMFRqcENCVFZWdDQ5T2Z2TkxTN1BESXZPai1wbk04bWtwRTNCcDR0NlhNN3ZoOFAtRVVMTGFLWDB4RWxSYkhnUHFTVktZUno3SkU?oc=5",
-   "datum": "2026-11-17",
-   "sprache": "en"
-  },
-  {
-   "titel": "Emerging Stocks Drop As Nvidia Jitters Weigh on Asian Tech",
-   "quelle": "Bloomberg.com",
-   "link": "https://news.google.com/rss/articles/CBMirgFBVV95cUxOOUhUTFdrYUdBNWdCakZmSzJoQTVza3FxVjFGTTdMcDlzeThLQ2xmak5UU1doZjlacUFZb3JpVlNvQjhfR3VEaTZYMzVHQ25EWjFUUVk3SGVaTW9zcDdiR2NsRU9DQUtPdUg2SWN2TTVNcHVIS1hKdFhNREpraGVKWVZWOGRpQ09hdWE5QmZFcDJiY2dScHNoWGthSktSRFhQbEk0eUtWVHlwZ3I0OHc?oc=5",
-   "datum": "2026-11-17",
-   "sprache": "en"
-  },
-  {
-   "titel": "Goldman Traders See Stocks Grinding Higher Despite Nvidia Risk",
-   "quelle": "Bloomberg.com",
-   "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxNNzZFUl9zQURwaE5xeUJnRWZ1RFlGbEJkaldoMW11Mk9KU1hGSHhjVGlkT2t6RHJ5NmRQa2xBdVZ1cmZJR21wTGtUeXdMTTkxMlFvMHlUUlYwT3pPV3RxVzVuczFpZnY4cFE0dV9Xc3RtMXBEM1hncUk0cmVld1A1LW44VEdhSnZNSlRHMXpzZy14emMxTEUyQS1JalNFNFYxbHVCT3gzRGFFcjZHUmZXQzFSbw?oc=5",
-   "datum": "2026-11-17",
-   "sprache": "en"
-  },
-  {
-   "titel": "NVIDIA DGX Spark Developer Kit Turns a Desk Into a Supercomputing Lab",
-   "quelle": "Unternehmen",
-   "link": "https://blogs.nvidia.com/blog/dgx-spark-hpc-developer-kit-sc26/",
-   "datum": "2026-11-16",
    "sprache": "en",
    "typ": "pm"
   },
   {
-   "titel": "How the World’s Most Advanced AI Infrastructure Supply Chain Invents the Future",
+   "titel": "NVIDIA Announces Financial Results for Third Quarter Fiscal 2027",
    "quelle": "Unternehmen",
-   "link": "https://blogs.nvidia.com/blog/ai-infrastructure-supply-chain/",
-   "datum": "2026-11-16",
+   "link": "https://nvidianews.nvidia.com/news/nvidia-announces-financial-results-for-third-quarter-fiscal-2027",
+   "datum": "2026-11-17",
    "sprache": "en",
    "typ": "pm"
   },
   {
-   "titel": "Lambda Boosts AI Factory Resiliency and Efficiency With NVIDIA Photonics",
+   "titel": "Ian Buck Kicks Off NVIDIA’s Week at SC26 as Science Enters the Age of Agents",
    "quelle": "Unternehmen",
-   "link": "https://blogs.nvidia.com/blog/lambda-photonics/",
-   "datum": "2026-11-16",
+   "link": "https://blogs.nvidia.com/blog/ian-buck-sc26/",
+   "datum": "2026-11-17",
    "sprache": "en",
    "typ": "pm"
   }

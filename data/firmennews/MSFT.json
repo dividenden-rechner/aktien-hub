@@ -1,13 +1,37 @@
 {
  "hub": "MSFT",
  "name": "MICROSOFT CORP",
- "stand": "2026-11-17",
+ "stand": "2026-11-18",
  "quelle": "Google News (Wirtschaftsmedien, deutsch und englisch)",
  "meldungen": [
   {
-   "titel": "AI Agents in Bond Market Arrive With a Stealthy Microsoft Trade",
+   "titel": "Microsoft Ignite 2026: Empowering human ambition, intelligence and trust",
+   "quelle": "Unternehmen",
+   "link": "https://news.microsoft.com/source/2026/11/17/microsoft-ignite-2026-empowering-human-ambition-intelligence-and-trust/",
+   "datum": "2026-11-17",
+   "sprache": "en",
+   "typ": "pm"
+  },
+  {
+   "titel": "Microsoft and organizations across industries launch AI Transparency Initiative to strengthen enterprise trust in AI models and agents",
+   "quelle": "Unternehmen",
+   "link": "https://news.microsoft.com/source/2026/11/17/microsoft-and-organizations-across-industries-launch-ai-transparency-initiative-to-strengthen-enterprise-trust-in-ai-models-and-agents/",
+   "datum": "2026-11-17",
+   "sprache": "en",
+   "typ": "pm"
+  },
+  {
+   "titel": "Microsoft and Salesforce Announce Copilotforce, Bringing Trusted Customer Context and Action into Microsoft AI Experiences",
+   "quelle": "Unternehmen",
+   "link": "https://news.microsoft.com/source/2026/11/17/microsoft-and-salesforce-announce-copilotforce-bringing-trusted-customer-context-and-action-into-microsoft-ai-experiences/",
+   "datum": "2026-11-17",
+   "sprache": "en",
+   "typ": "pm"
+  },
+  {
+   "titel": "Microsoft Executive Says Nvidia Drama Could Boost Rival Chips",
    "quelle": "Bloomberg.com",
-   "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxQRDE1Y1FPaVcyOWNoSXNJZ2JCVmE2LXNVemhTaVhVNlctMVFFUG5YU2pDcTN2N3ZSZWNwVWcyOE5PVFlsMzRDZTMtMEFoZHE1cWJqaHp0Tm5oTDdHTDVLOHF0Tm8xc1RfaVFQSVlnSWdDMUNhZ3pLWGxHR3JNOXhWRDlkZDFwdnREVTlIbWx5TjRtMzlIUnU2ek9BQlpEUWE1dEVOMHlKci02ZDktbllDT3BIb3I?oc=5",
+   "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxPLWwzRzNXYmcyaDlBS192QWJBS0Rab2Fadm9ZTmJvQmJLVXAxbmJlX25vZ2VSVXJoNEh0Uk13WnUtY3RUajZJMU8wMERqcHUzZUVaaThhVjdSZ1E0VkE1Y2xock83TW9fdkF6X0lJb3lXSnpuSklFZ1hubmZTUzJVZWk1ckxWTkZuWWs2MVRJVWJTejR6dk1JRWpkMXJWUFNOaTJlLXZRb3NlZUx3dnhhTWx3?oc=5",
    "datum": "2026-11-17",
    "sprache": "en"
   },
@@ -19,9 +43,16 @@
    "sprache": "en"
   },
   {
-   "titel": "Join us today for live coverage and top news from Microsoft Ignite",
+   "titel": "AI Agents in Bond Market Arrive With a Stealthy Microsoft Trade",
+   "quelle": "Bloomberg.com",
+   "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxQRDE1Y1FPaVcyOWNoSXNJZ2JCVmE2LXNVemhTaVhVNlctMVFFUG5YU2pDcTN2N3ZSZWNwVWcyOE5PVFlsMzRDZTMtMEFoZHE1cWJqaHp0Tm5oTDdHTDVLOHF0Tm8xc1RfaVFQSVlnSWdDMUNhZ3pLWGxHR3JNOXhWRDlkZDFwdnREVTlIbWx5TjRtMzlIUnU2ek9BQlpEUWE1dEVOMHlKci02ZDktbllDT3BIb3I?oc=5",
+   "datum": "2026-11-17",
+   "sprache": "en"
+  },
+  {
+   "titel": "What drives the cost of AI at work",
    "quelle": "Unternehmen",
-   "link": "https://news.microsoft.com/events/ignite/2026/live-news/",
+   "link": "https://news.microsoft.com/source/2026/11/16/what-ai-at-work-really-costs/",
    "datum": "2026-11-16",
    "sprache": "en",
    "typ": "pm"
@@ -32,37 +63,6 @@
    "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxPYzVuWmo1ZEZLMzlpSkZTZnJwQk5uaHlLMGFYdWV6cGpySEVhdzZ1X09OZkp3VHh6LU5iTkd2emY5Um1UVkR5MWN6QTUzTUhVRnFIQkQ1MzN1SVBpQ3RtampsdV9BNklLeG4xNE1lUllkUHNaTTJPblMtc0UwZ2VBbldJc3ZESktOSnRZX1phN1J2SnQ5UW9fVmxnbWUzYmhPSnNlQWFrYnZ6bVpuU3YxbFdpUQ?oc=5",
    "datum": "2026-11-16",
    "sprache": "en"
-  },
-  {
-   "titel": "MIT sues Microsoft for patent infringement over data center technology",
-   "quelle": "Reuters",
-   "link": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxQcDlaeXZ2cmhNSC1IbzBMQnNUQWhNb3k4cEQ0Zk5zNktHRG9CZnhpOFowNTBKTHNLY2J2S3pKZmRxZVBvbjE1UE41b0wwYy1XSkI5OU1YbHotRFZwcDdSZHp4cXZfWEYzaWVHMU0tN1dIZXItNEFtOTd5MHJGY2tsT2xNbXBYNThfcjUyN2VkRmo1ZEZyVTBUM1c2R1h5ZDFCTzQ1Rms1X1BVNGJRbVVLM194dERiOG1RWUtV?oc=5",
-   "datum": "2026-11-16",
-   "sprache": "en"
-  },
-  {
-   "titel": "Why a new court ruling matters for press freedom and privacy",
-   "quelle": "Unternehmen",
-   "link": "https://blogs.microsoft.com/on-the-issues/2026/11/11/protecting-privacy-and-press-freedom-an-important-fourth-circuit-ruling/",
-   "datum": "2026-11-13",
-   "sprache": "en",
-   "typ": "pm"
-  },
-  {
-   "titel": "From the first console to the next chapter, XBOX celebrates 25 years",
-   "quelle": "Unternehmen",
-   "link": "https://news.xbox.com/en-us/2026/11/12/25-years-of-xbox/",
-   "datum": "2026-11-13",
-   "sprache": "en",
-   "typ": "pm"
-  },
-  {
-   "titel": "Nearly 500 AI projects, over 200 customers: Lessons on making AI work for business",
-   "quelle": "Unternehmen",
-   "link": "https://blogs.microsoft.com/blog/2026/11/12/from-ai-ambition-to-business-impact/",
-   "datum": "2026-11-12",
-   "sprache": "en",
-   "typ": "pm"
   }
  ]
 }

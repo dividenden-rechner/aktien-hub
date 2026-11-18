@@ -1,7 +1,7 @@
 {
  "hub": "SAP.DE",
  "name": "SAP",
- "stand": "2026-11-17",
+ "stand": "2026-11-18",
  "quelle": "Google News (Wirtschaftsmedien, deutsch und englisch)",
  "meldungen": [
   {
@@ -29,6 +29,13 @@
    "typ": "pm"
   },
   {
+   "titel": "SAP-Vorstand Saueressig wechselt zu Ionos",
+   "quelle": "Börsen-Zeitung",
+   "link": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxQZ2ZOcXBwUmRUMTlxamEzdGNQNHRfWENwZDZaZTY1eWU0QmczRVI4Yk05elRIRXU4a0dRUUd2cEZyTWdLLXB6bVN4TTdtZXg2bHBiYkRmYkZtUkdDQXAtX2IxeEZJc2FZQ3BOQk1peThrakZsUGRTYThPM0N6MTBlSXhwaWhha0hw?oc=5",
+   "datum": "2026-11-17",
+   "sprache": "de"
+  },
+  {
    "titel": "Vertrauter von CEO Christian Klein: SAP-Vorstand Thomas Saueressig wird Chef von Ionos",
    "quelle": "Manager Magazin",
    "link": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxQczlOSks2dEdUTHdES0ZUSDdvMHZQdUdYcFJBV3VXaDBKdW51dEotWjlrSTRJb2ZXQkdhYlVxMjEzdHhOSG5aMlpnaEl5NkpJNi1BRWJaRDVtTTQ5Q24wRFBNUDBka3o4ZkZXbVpDOTNuQkU4VDE3UGNNaC0wZ2p4VlI3VVY3S3F4d1F6ZWNmZ3JMeU1BamZsTDMxbkZDZFA3S1NodVZOQVduMVdvdzdwQllmcHBWTS1RNXJTSmkxakJJLTcxX01RampYa0wyanJzSVFn?oc=5",
@@ -52,16 +59,9 @@
   },
   {
    "titel": "AI Startup Dreamteam Raises Capital to Challenge Salesforce, SAP",
-   "quelle": "Bloomberg.com",
+   "quelle": "Bloomberg",
    "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxOQi10bmVBRE1LOElDMjBnNTh6MnRaZGZ5SU1TMG9HUEwyRlRiU3pUN0RJanRoM1lXMHVYMXJtSXc2c0tPa3h3c2xFREx6d2V2dTJiLTV1amtxV2pZTlF4T3VYMzVaWlBDMFJnaHduSnpJcG5UV3hadGpHaVE4UGRuVnJHTlpvcDE0WThkV3k4YVpMWWRPenkzcXVERlZ6bmh4bzJnRk5meFJuOVNwX0ZUa3lBNlQ?oc=5",
    "datum": "2026-11-16",
-   "sprache": "en"
-  },
-  {
-   "titel": "A way of life is disappearing on Cambodia’s Tonle Sap as El Niño pressures lake communities",
-   "quelle": "AP News",
-   "link": "https://news.google.com/rss/articles/CBMioAFBVV95cUxPSXFZM3hyVnp2TkhzNnB4N3ZsZUg1UGFlVFh0N0lPY3JCbm9nYWg2WnNjTGpnaEEzaWZ3UEF0OGNkNW0tVk9nVFZFMm5KVjZGWklkaVEwZU5tYlhkMkRKRE16aHpZbEZKc3ZyV29HSk5XTi1OSDItMHJOYWQwemVhbGxvVkdZMHk3cWJCR0tFQWJ4akMwNEoza1d0YWd2c0J4?oc=5",
-   "datum": "2026-11-12",
    "sprache": "en"
   }
  ]

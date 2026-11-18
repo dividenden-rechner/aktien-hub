@@ -1,7 +1,15 @@
 {
  "hub": "MRK",
  "name": "Merck & Co., Inc.",
- "stand": "2026-11-17",
+ "stand": "2026-11-18",
  "quelle": "Google News (Wirtschaftsmedien, deutsch und englisch)",
- "meldungen": []
+ "meldungen": [
+  {
+   "titel": "Merck stops trials of blood cancer drug after review of risks",
+   "quelle": "Reuters",
+   "link": "https://news.google.com/rss/articles/CBMiygFBVV95cUxOSFlGSl82UHl6NG5yQi1WRzFuQlhLMDNHTFEyYkpNcVUyQUJ2a1NUQkRpaDRqUGRBSVBMNk11VkkzYUdnR2ZJaGFUY2NoZmtOUHUxc1I4cU4ydW9XME1hMW96NHk3ckVtYlNPVnhiamRnVGhLZEJ4MGFYS2tXa2liWnBZd0NtUUc3YzVjdjczR2FEbmJLVUI3QlJkSWhKajlSU3VLWWhES2hQZDhLYThUZHdLVVAwM2JacWRuWk1JcHVSWkE1c0QxOUln?oc=5",
+   "datum": "2026-11-17",
+   "sprache": "en"
+  }
+ ]
 }

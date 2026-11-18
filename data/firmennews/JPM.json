@@ -1,9 +1,23 @@
 {
  "hub": "JPM",
  "name": "JPMORGAN CHASE & CO",
- "stand": "2026-11-17",
+ "stand": "2026-11-18",
  "quelle": "Google News (Wirtschaftsmedien, deutsch und englisch)",
  "meldungen": [
+  {
+   "titel": "JPMorgan’s Former Credit-Card Boss Jumps to Wells Fargo as COO",
+   "quelle": "Bloomberg.com",
+   "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxPRmNjT0FnSmtxdU1zcTVqYTI4eUp4aEpyRDloS0E0VTNDMU9seS1iWXhjekJTTXlQdnpwVEhUbVJEckhlZ3F2bXl2ZkxmY1JpWGh4ZzhWQTRsNHBHSEpMbmVyWkFneEJ0MmhoUGpUdnM4S0xfYTVIRFdNenRZUzgxd3I3QnM5Y3IxZjZvQk9DMWphRTEtVkRKQXJUb3BCYWx2YjUzc2dIanpKczJhVmtxZUxSOA?oc=5",
+   "datum": "2026-11-18",
+   "sprache": "en"
+  },
+  {
+   "titel": "JPMorgan Adds Dallas Hub for Private Bank Unit Catering to Funds",
+   "quelle": "Bloomberg.com",
+   "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxOOV9NYXoxWjJ5OWJoaF95YUl0YkVHWmFmaVQ4WEdLT1Y3MGdoWEhnak0zdnFuYmlmaE1BUmpWWUVWZWJ6eXZLamE0UFJZXzR3cWl4aml1QUNmYWJPbVFaa28yU1VWZm1ZYjFqd1YxdXp3RF9tZzJTNlpTTmRoZVVPSWgycUs0WGpPbjJfWjhha0dUTFdob2VRbHJzVC1vcUpPRUxiV3hORnI5TUxISUtYWEEyVGdkZw?oc=5",
+   "datum": "2026-11-18",
+   "sprache": "en"
+  },
   {
    "titel": "Führungswechsel",
    "quelle": "SEC-Meldung",
@@ -20,6 +34,20 @@
    "sprache": "en"
   },
   {
+   "titel": "JPMorgan is working on AI agent transactions that don’t involve humans",
+   "quelle": "CNBC",
+   "link": "https://news.google.com/rss/articles/CBMigwFBVV95cUxONVh4eHlLNlRjTEtRMFZKMF8wUHk1WFFNdHJhVXJVaGhIVFAweG9CUkttNG1Yakl4TExFektkSFNtcGxkazZjMGQ2ZUw1dm5meW9TME90YUlWamE4eEl3MjVianBhaVZpRFh2R1Y0Rko4bi1IWDZWRkRaeXQwazF4S1Zic9IBiAFBVV95cUxQMFZmbVZHeVo3X21XallydUV2Z1FoVGJMYWFfYVk4bXYwUFFwMEdnSG00RlNySHFqcUg1SzUwUFp4QWZPeHNzczItNHFpdUtYU2JKTXU5RWZ3TTNtaVI3dlFXVTViNHJsSGFyRWJCNGQzTmJCUU1JVnpyUUtkdkFsMTdUWTB6UzNj?oc=5",
+   "datum": "2026-11-17",
+   "sprache": "en"
+  },
+  {
+   "titel": "JPMorgan Works to Fix ‘Technical Issue’ Affecting Customers",
+   "quelle": "Bloomberg.com",
+   "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxNWGFoSHNvSVhKcVAzTlhNTWtnSzRfTHlIVzZqYkVIR21YdDFURUhoX1I0Zkw0NXdYYWJ3QThLaS1iLUtFQmVnQUFpcmdkN0lyTG9BTldRTXdPazI1dkY3X2tGTEdOOEFGb1RoQ09YenNaWDZiX0xLRmRSMlhLbVQyQmpJTWhiNGRURm94a1JGbWtGZkJ5SE41OEx3Z0ZjYkZwZFE2clMyamNuVFZJZ2JnZExjWQ?oc=5",
+   "datum": "2026-11-17",
+   "sprache": "en"
+  },
+  {
    "titel": "JPMorgan names Bregje de Best as next CFO, succeeding Barnum",
    "quelle": "Reuters",
    "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxOX0tJbXd0el94UVZKU2p6S21CdUVKUHRsWHlkajRucjlZZkt0SjRRdWFER3E1aWFNMFNQUTN5T3oxV2hKVmZuVFFuaVNUVFFUQnd6S0NCTUN0V0xweVRMT2VOYVoxeDR5aF9qem9hZ0RJamhPVDZhQ2tUREpucHBHWnZ6eGozRUxNUjJqSENtNTUyWDhramFOQWV1RldqNXczME5USE83cWYzMWQ5WXhqUnF0dw?oc=5",
@@ -27,38 +55,10 @@
    "sprache": "en"
   },
   {
-   "titel": "JPMorgan Chase elevates Bregje de Best to finance chief",
-   "quelle": "Financial Times",
-   "link": "https://news.google.com/rss/articles/CBMihAFBVV95cUxPOVRIdHlSbGtmVVFkaENQX3pOOXNUTmJVM1JVWkxoTy1tVWV2VHNqRDNMaTUyQ29WU3lBbl85RWNUczlBMVo1Zi0xOUtKQjIzQ1VQTzJIRUdoS19YWUE0TV9wMHNFejRGNV8xOGdHTDc5cWpPb1VlbWprU1hRd0lJWnFrQXg?oc=5",
+   "titel": "JPMorgan Warns Leveraged-Loan Defaults Set to Double in 2027",
+   "quelle": "Bloomberg.com",
+   "link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxQdjhWdjNjOUY5czBhQWRrU2JtTTllaDhDdk5qaWtocV85TkxwUlcxM0kzTDZNdmY0ak5hTkR2bEltMG5VT0VNeDBYNWFxLXlUVkdWVTRoZ29aX0JkeVcwOS1DZzFBc09pSXdwUG9jTlJqVE5hVWRLc25uUUdJcW95dmFRNnlibFNZbHVxWThfQ2JpWTlvVWtvdXJYb1ptVXhQVXJFWW4zNDBfWXJtN2pCbA?oc=5",
    "datum": "2026-11-17",
-   "sprache": "en"
-  },
-  {
-   "titel": "Seit 1987 unterstützt BÖRSE ONLINE jede Woche Anleger bei ihren Investment-Entscheidungen. Zentrale Themen der Berichterstattung sind fundamentale Markt- und Aktienanalysen, Charttechnik, Handelsstrategien sowie verschiedene Tradingmodelle.",
-   "quelle": "Börse Online",
-   "link": "https://news.google.com/rss/articles/CBMiiwJBVV95cUxNR3d0ODB0Um1JX05KaC1CX2JzeEs2YlJtNGwwVktlODAyR0Z2QmhSYk14U1d4cE0tNy1DN0h3Sko2MWZxaVF3NG1walRZUTFDRzE2OXRfRm9CMnY5Zmc1dnZYc2dta2lJcFBGN3hrOG1ROF9xcWhJVC1pUHlrWllySWc4TTNyeVNXRlBfOGstUnp3TVJIQWJjUmtKMnZzN1A1TkVoWk9URUtjNTJZLUQxY1MzY3RrNmFKU2RLZ0p1TkVSNHNmRklyZHJOTXlLRWFLd3FKS2E4OFJfNWE4cTJFZXlTYzQ3WnpVdmNoY1RQcS1obkVGdHdRNEhkN29IU1NlbWxMSUs1c2Y4d3c?oc=5",
-   "datum": "2026-11-16",
-   "sprache": "de"
-  },
-  {
-   "titel": "Outages reported at major US banks including Chase and Bank of America",
-   "quelle": "BBC",
-   "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE5HSDl0cmNSemNFb2ZBMFJsTGVwWktoc25MVzdsU3BvSzdUMW5tN19Qb1ItdE14VnNhV2hGSVRvNmRuSzRzUU9obFBueVFlTkVFS18tZ1pB?oc=5",
-   "datum": "2026-11-16",
-   "sprache": "en"
-  },
-  {
-   "titel": "Anthropic Holds the Key to the Future of the AI Trade",
-   "quelle": "Bloomberg.com",
-   "link": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxPU1FzNzR6RDRPLVdrcFBxeTlfLXBUNTNVSGFoQW1sWFRscnIzbXNyLUtIY1RXN29mVGI5WlhsZUp2T3VTdjRLTjNyVFJVdW9wdmpkNzNNVFFmTTNFWkJZNTdPWS1GcFZ0N0xUbUZ2RFF3V3QyUE1keE9PQS11MjBWVFV2RmZqZzdoZC1DeWc1WkdxT19ZeGplTTRmaFMxWEJzeDVSeUtjQTcwQkU?oc=5",
-   "datum": "2026-11-16",
-   "sprache": "en"
-  },
-  {
-   "titel": "JPMorgan Loses Card Chief Allison Beer to ‘External Opportunity’",
-   "quelle": "Bloomberg.com",
-   "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxPVFE4Y09ENDRNWFJJTGp4Y19ZaWw4WFBDcFpSVGhyamljQUJfWktBR1BUOExsZkZEWUd1eUlkZTJOM0g1THh6VHEzeGx6WlQxZFk0aUNnVjFPNVBpZmNCdFRRb0RwS2JKbnc4RmhVVndyWDRzek4wTzA2MnhnaG1UVVdYb1h1bThQa2NIVVM5VWl2NTROYVhrWkw2MlZ6VDRUZ3YzcHV4YkdkZ3EwdGpqbVRGTQ?oc=5",
-   "datum": "2026-11-14",
    "sprache": "en"
   }
  ]

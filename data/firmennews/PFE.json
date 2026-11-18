@@ -1,9 +1,16 @@
 {
  "hub": "PFE",
  "name": "PFIZER INC",
- "stand": "2026-11-17",
+ "stand": "2026-11-18",
  "quelle": "Google News (Wirtschaftsmedien, deutsch und englisch)",
  "meldungen": [
+  {
+   "titel": "Pfizer licenses CAR-T therapies from China's Starna in up to $2.6 billion deal",
+   "quelle": "Reuters",
+   "link": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxOY05wc0l2Zl9OTWZJNFpWUDQ4SzFicHNPRWdkOS1LVkQ4Q2hvQXQ0Rkx2cEQzZmk3VmpNbzQwcDdLNFlQRnlIVzFBbUNfMDVlMjliaEJFTGJWLUFIMkM0N0RjQ3Fwb1FJSmpsS2l6XzhmbUJrdXhfaVRmWVVRSWNfYkMxcEFET2E4VlRFU3BhUHJHdnBCUlgzYi1sTl84M19DNGRjcFkwd1luQkdUMkwxeFVPbTExVVhr?oc=5",
+   "datum": "2026-11-18",
+   "sprache": "en"
+  },
   {
    "titel": "Pfizer, Innovent GLP-1 drugs added to China national insurance for diabetes",
    "quelle": "Reuters",
@@ -17,21 +24,6 @@
    "link": "https://news.google.com/rss/articles/CBMimAFBVV95cUxQd3VpQ19DX1h6NHoxZnRTNC11cDhobG5UeHhFaVc0SGREaWdacE5IZlZHSlUzbXd2RkRaRjhqNjltTFVPVzljeWRsT2VOcnh3RzhQSEpqUTFMUDRTSDZza0VydW1raTkteDl5bFJpMnNaTEV3dEpuYUJlS09zTnJpYnRuekRaY183NVgzbkFmOTNJdlpCbEJEWg?oc=5",
    "datum": "2026-11-12",
    "sprache": "en"
-  },
-  {
-   "titel": "Blackstone Puts Up $1.5 Billion for Pfizer Obesity Drug Studies",
-   "quelle": "Bloomberg.com",
-   "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxPVFdDTmdILTVEUGFadUFUQnpaMzdzU1JQMzJ3d25pZzBzd01hUDRySHBVcmNobGE4SXdob3dmQ0Nwb1FzMnhDWjdEaW8xV3Y0b0dWTTQ4UllFdkdHS2I0eGdaOTJISHc0RzU5MTdzUkU0RmtVRThxOVBaMnV5SEsyNi00SzVwUkk1cUNiRE5SOXdjTUNmVlQ2eDBKYWpCU29oR20tZ1hMalIyaHBtWXZReHdJTQ?oc=5",
-   "datum": "2026-11-11",
-   "sprache": "en"
-  },
-  {
-   "titel": "Führungswechsel",
-   "quelle": "SEC-Meldung",
-   "link": "https://www.sec.gov/Archives/edgar/data/78003/000007800326000132/pfe-20261030.htm",
-   "datum": "2026-11-03",
-   "sprache": "en",
-   "typ": "pm"
   }
  ]
 }

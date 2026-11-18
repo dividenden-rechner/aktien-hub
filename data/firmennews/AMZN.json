@@ -1,9 +1,17 @@
 {
  "hub": "AMZN",
  "name": "AMAZON.COM, INC.",
- "stand": "2026-11-17",
+ "stand": "2026-11-18",
  "quelle": "Google News (Wirtschaftsmedien, deutsch und englisch)",
  "meldungen": [
+  {
+   "titel": "New Whole Foods Market in Westlake Village, California, to Open December 17",
+   "quelle": "Unternehmen",
+   "link": "https://press.aboutamazon.com/2026/11/new-whole-foods-market-in-westlake-village-california-to-open-december-17",
+   "datum": "2026-11-17",
+   "sprache": "en",
+   "typ": "pm"
+  },
   {
    "titel": "LSEG Risk Intelligence expands World-Check One cloud infrastructure in APAC with Singapore deployment",
    "quelle": "Unternehmen",
@@ -29,24 +37,9 @@
    "typ": "pm"
   },
   {
-   "titel": "Amazon Grocery Launches Its Own Line of Prepared Meals with Same-Day Delivery: Salads Starting Under $3, All Meals Under $8",
-   "quelle": "Unternehmen",
-   "link": "https://press.aboutamazon.com/2026/11/amazon-grocery-launches-its-own-line-of-prepared-meals-with-same-day-delivery-salads-starting-under-3-all-meals-under-8",
-   "datum": "2026-11-17",
-   "sprache": "en",
-   "typ": "pm"
-  },
-  {
-   "titel": "Amazon, Google to Have About 28% of Anthropic Stock After IPO",
+   "titel": "ULA Zeroes In on Cause of Rocket Failure During Amazon Launch",
    "quelle": "Bloomberg.com",
-   "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxPV2pZZmdyc0t4VzZKQ21zUWRjVENMam14ZG1qQ2ludXhhSmxGbUF5NVNmX1h0a1B2SlBMNEVZWmRZRDZSbFQyTWZKMHZuZzJrNk13Z21iaV9nbGxBaVlwTmJ4cVVMdnVYSUZrRHJNcF9ObGVyZ19MbzEzeElOcmtNTmRfSGtEOUlkNGRWZENESVliWUtfd3lyQ1ZmY0FYWTNiRzduZW02QjhyOWx6UUFN?oc=5",
-   "datum": "2026-11-17",
-   "sprache": "en"
-  },
-  {
-   "titel": "Robert Pattinson Is the New James Bond for MGM Reboot",
-   "quelle": "Bloomberg.com",
-   "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxQLXlXbHNwZ19EVEZDbWtiY05rWF9sWndHSUlCNHYwY1plYmRqOWxRdElnNHVPWVZvbzk5MmdlMmJCb0s0ZGtfUVN3eEtSRHBDSnkwcmNveFFGeXczTlp0VGFKcVBDT014Vm95YXZ1Vmd6bzdiTGYwWjBYbXFBSmlMVlhKLXZRaFZnR1NETTRuSGxFcl9TaS1ZQThKMnp6UGhLbjlrWkxfT0s2anhXQ19aOUFYOEM?oc=5",
+   "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxOMW5fajAyQndqNGNzVTJ1QlJJblhCSk5RMHdSM0VBS24wclktWjk3ZXpVTVRacG9GVk5HeVozWEJYMUZOeXROZjNRYzljcnBJajYwUFhqcUJuR0V6WUI5TDFWX1lvckJfZUtaRWRiOUNTQXNrc3ZfZnBYb1V1aVNfaldiZ3d6V3JBbi1rR0V5dVprN0J4ZnRST1Z4ZDhibktuN25pRjhhOWVBajdJd1BYZV9B?oc=5",
    "datum": "2026-11-17",
    "sprache": "en"
   },
@@ -54,13 +47,6 @@
    "titel": "Uber Starts Offering Amazon’s Driverless Zoox Rides in Las Vegas",
    "quelle": "Bloomberg.com",
    "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxOcXdqaVIzMmoxQXdXNG9EZWtCMnpSNTB4Z1duZEEzUGt2N2p1SUZpc1IzNTJKb2VwUVIxZVBDTFNfU1hSNVdFT0JuN25zOHdCc1J6YUgyUTV1LXV6ZjRpcnk2YVpQS0RmMTZsSk1hamVNbUp3cjVjWWQzQ041SG5OZnZuLUVubzFqa1Uyb2lqZEEtZTA2QmdQLVptNkt4UlRXRi1KS01sV1BIaFF4Vk15WE9WcU53Zw?oc=5",
-   "datum": "2026-11-16",
-   "sprache": "en"
-  },
-  {
-   "titel": "SpaceX Rival's Rocket Failure Destroys 40 Amazon Satellites",
-   "quelle": "Bloomberg.com",
-   "link": "https://news.google.com/rss/articles/CBMirgFBVV95cUxQYjFiUTduZWFLVmlUemd4SmlPYUpnSG9QLWpycTFfbmxpMEwtd1MxbnJpVU1vYnNoMlYtSG8xOEJjOThHQnI3NWQ0NVlybzAtbG5XbnJfR1o0d3M5ZjJaMTA4RVNrdVlmR2duc0ljd2VYTl80ajAyME1HMjU5VWRrb2hkSGdPdzNHc0JHRnktMG5tc29aTjAwN09OSUpSLU1KNTM3ZlllUFZJOHNrRkE?oc=5",
    "datum": "2026-11-16",
    "sprache": "en"
   }
