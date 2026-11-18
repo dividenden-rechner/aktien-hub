@@ -6,7 +6,6 @@ author: "Redaktions-Team Dividenden-Rechner.de"
 author_bio: "Das Redaktions-Team von Dividenden-Rechner.de schreibt über Dividendenaktien, Kennzahlen und Steuerthemen für Privatanleger. Die Rechner und Auswertungen auf der Seite entstehen im eigenen Haus."
 category: Recht
 slug: unitedhealth-cms-pruefvorschlag
-draft: true
 logo_name: "UnitedHealth"
 logo_symbol: UNH
 logo_domain: unitedhealthgroup.com
