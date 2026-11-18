@@ -1,0 +1,345 @@
+{
+ "description": "Ticker candidates proposed by the AI assistant (from general knowledge) for HK/SG/CN/KR, plus manual Japanese overrides. build_identity_map.py confirms or rejects each candidate against official exchange/regulator lists. A candidate alone is not evidence.",
+ "basis": "assistant_knowledge_2026-11-18",
+ "hongkong": {
+  "AIA Group": "1299",
+  "Alibaba Group": "9988",
+  "Alibaba Health Information Technology": "0241",
+  "ANTA Sports Products": "2020",
+  "Bank of China": "3988",
+  "Bank of Communications": "3328",
+  "Budweiser Brewing APAC": "1876",
+  "China Construction Bank": "0939",
+  "China Life Insurance": "2628",
+  "China Mengniu Dairy": "2319",
+  "China Overseas Land and Investment": "0688",
+  "China Petroleum and Chemical": "0386",
+  "China Resources Land": "1109",
+  "China Resources Mixc Lifestyle": "1209",
+  "China Resources Power": "0836",
+  "China Shenhua Energy": "1088",
+  "China Unicom": "0762",
+  "CITIC": "0267",
+  "CLP Holdings": "0002",
+  "Country Garden Services": "6098",
+  "CSPC Pharmaceutical": "1093",
+  "Galaxy Entertainment": "0027",
+  "Geely Automobile": "0175",
+  "Haier Smart Home": "6690",
+  "Hang Lung Properties": "0101",
+  "Hang Seng Bank": "0011",
+  "Henderson Land Development": "0012",
+  "HK & China Gas": "0003",
+  "Hong Kong Exchanges and Clearing": "0388",
+  "Industrial and Commercial Bank of China": "1398",
+  "JD.com": "9618",
+  "Lenovo Group": "0992",
+  "Li Ning": "2331",
+  "Meituan": "3690",
+  "MTR Corporation": "0066",
+  "NetEase": "9999",
+  "New World Development": "0017",
+  "PetroChina": "0857",
+  "Ping An Insurance": "2318",
+  "Power Assets Holdings": "0006",
+  "Sands China": "1928",
+  "Sino Land": "0083",
+  "SMIC": "0981",
+  "Sun Hung Kai Properties": "0016",
+  "Techtronic Industries": "0669",
+  "Tencent Holdings": "0700",
+  "Tingyi Cayman Islands Holding": "0322",
+  "WH Group": "0288",
+  "Wuxi Biologics": "2269",
+  "Xiaomi": "1810",
+  "Xinyi Solar": "0968"
+ },
+ "singapur": {
+  "CapitaLand Ascendas REIT": "A17U",
+  "CapitaLand Integrated Commercial Trust": "C38U",
+  "CapitaLand Investment": "9CI",
+  "City Developments": "C09",
+  "DBS Group Holdings": "D05",
+  "DFI Retail Group": "D01",
+  "Frasers Centrepoint Trust": "J69U",
+  "Frasers Logistics and Commercial Trust": "BUOU",
+  "Genting Singapore": "G13",
+  "Hongkong Land": "H78",
+  "Jardine Matheson Holdings": "J36",
+  "Keppel Corporation": "BN4",
+  "Keppel DC REIT": "AJBU",
+  "Mapletree Industrial Trust": "ME8U",
+  "Mapletree Logistics Trust": "M44U",
+  "Mapletree Pan Asia Commercial Trust": "N2IU",
+  "OCBC Bank": "O39",
+  "SATS": "S58",
+  "Seatrium": "5E2",
+  "Sembcorp Industries": "U96",
+  "Singapore Airlines": "C6L",
+  "Singapore Exchange": "S68",
+  "Singtel": "Z74",
+  "Singapore Technologies Engineering": "S63",
+  "Thai Beverage": "Y92",
+  "United Overseas Bank": "U11",
+  "UOL Group": "U14",
+  "Venture Corporation": "V03",
+  "Wilmar International": "F34",
+  "Yangzijiang Shipbuilding": "BS6"
+ },
+ "china": {
+  "Agricultural Bank of China": "601288",
+  "Anhui Conch Cement": "600585",
+  "Baoshan Iron and Steel": "600019",
+  "Bank of Beijing": "601169",
+  "Bank of China": "601988",
+  "Bank of Communications": "601328",
+  "BYD": "002594",
+  "China Communications Construction": "601800",
+  "China Everbright Bank": "601818",
+  "China Life Insurance": "601628",
+  "China Merchants Bank": "600036",
+  "China Minsheng Banking": "600016",
+  "China Pacific Insurance": "601601",
+  "China Petroleum and Chemical": "600028",
+  "China Railway Construction": "601186",
+  "China Railway Group": "601390",
+  "China Shenhua Energy": "601088",
+  "China State Construction Engineering": "601668",
+  "China Unicom": "600050",
+  "China Vanke": "000002",
+  "China Yangtze Power": "600900",
+  "CITIC Securities": "600030",
+  "Foshan Haitian Flavouring and Food": "603288",
+  "Foxconn Industrial Internet": "601138",
+  "Gree Electric Appliances": "000651",
+  "Guotai Junan Securities": "601211",
+  "Hikvision": "002415",
+  "Industrial Bank": "601166",
+  "Industrial and Commercial Bank of China": "601398",
+  "Inner Mongolia Yili Industrial Group": "600887",
+  "Jiangsu Hengrui Pharmaceuticals": "600276",
+  "Kweichow Moutai": "600519",
+  "Longi Green Energy Technology": "601012",
+  "Luxshare Precision Industry": "002475",
+  "Luzhou Laojiao": "000568",
+  "Midea Group": "000333",
+  "Muyuan Foods": "002714",
+  "New China Life Insurance": "601336",
+  "PetroChina": "601857",
+  "Ping An Bank": "000001",
+  "Ping An Insurance": "601318",
+  "Poly Developments and Holdings": "600048",
+  "S.F. Holding": "002352",
+  "SAIC Motor": "600104",
+  "Shanghai International Port Group": "600018",
+  "Shanghai Pudong Development Bank": "600000",
+  "Wanhua Chemical Group": "600309",
+  "Wuliangye Yibin": "000858",
+  "WuXi AppTec": "603259",
+  "Yihai Kerry Arawana Holdings": "300999"
+ },
+ "suedkorea": {
+  "Amorepacific": "090430",
+  "BGF retail": "282330",
+  "BNK Financial Group": "138930",
+  "Celltrion": "068270",
+  "CJ CheilJedang": "097950",
+  "CJ Logistics": "000120",
+  "Coway": "021240",
+  "Daewoo Engineering & Construction": "047040",
+  "DGB Financial Group": "139130",
+  "Doosan Enerbility": "034020",
+  "E-MART": "139480",
+  "GS Engineering & Construction": "006360",
+  "GS Holdings": "078930",
+  "Hana Financial Group": "086790",
+  "Hankook Tire & Technology": "161390",
+  "Hanmi Pharm": "128940",
+  "Hanwha Aerospace": "012450",
+  "Hanwha Solutions": "009830",
+  "HD Hyundai": "267250",
+  "HD Hyundai Heavy Industries": "329180",
+  "Hotel Shilla": "008770",
+  "Hyosung": "004800",
+  "Hyundai Engineering & Construction": "000720",
+  "Hyundai Glovis": "086280",
+  "Hyundai Marine & Fire Insurance": "001450",
+  "Hyundai Mobis": "012330",
+  "Hyundai Motor": "005380",
+  "Hyundai Steel": "004020",
+  "Industrial Bank of Korea": "024110",
+  "KB Financial Group": "105560",
+  "Kia": "000270",
+  "Korea Aerospace Industries": "047810",
+  "Korea Electric Power": "015760",
+  "Korea Gas Corporation": "036460",
+  "Korea Investment Holdings": "071050",
+  "KT": "030200",
+  "KT&G": "033780",
+  "LG Chem": "051910",
+  "LG Display": "034220",
+  "LG Energy Solution": "373220",
+  "LG Electronics": "066570",
+  "LG Household & Health Care": "051900",
+  "LG Innotek": "011070",
+  "LG Uplus": "032640",
+  "Lotte Chemical": "011170",
+  "Lotte Shopping": "023530",
+  "Mirae Asset Securities": "006800",
+  "Naver": "035420",
+  "NCSoft": "036570",
+  "Netmarble": "251270",
+  "NH Investment & Securities": "005940",
+  "Orion": "271560",
+  "POSCO Holdings": "005490",
+  "S-Oil": "010950",
+  "Samsung Biologics": "207940",
+  "Samsung C&T": "028260",
+  "Samsung Electro-Mechanics": "009150",
+  "Samsung Electronics": "005930",
+  "Samsung Fire & Marine Insurance": "000810",
+  "Samsung Heavy Industries": "010140",
+  "Samsung Life Insurance": "032830",
+  "Samsung SDI": "006400",
+  "Samsung SDS": "018260",
+  "Samsung Securities": "016360",
+  "Shinhan Financial Group": "055550",
+  "SK": "034730",
+  "SK Bioscience": "302440",
+  "SK Hynix": "000660",
+  "SK Innovation": "096770",
+  "SK Square": "402340",
+  "SK Telecom": "017670",
+  "S-1 Corporation": "012750",
+  "Yuhan": "000100"
+ },
+ "japan_overrides": {
+  "Toshiba": {
+   "status": "not_in_current_official_list",
+   "former_code": "6502",
+   "note": "EDINET E01738 TOSHIBA CORPORATION is marked 非上場 (unlisted); automatic name match to TOSHIBA TEC (6588) rejected: different company"
+  },
+  "Bank of Yokohama": {
+   "status": "not_in_current_official_list",
+   "note": "EDINET E03559 株式会社横浜銀行 has no securities code; bank is part of the group listed as 7186 (see Concordia Financial Group)"
+  },
+  "Concordia Financial Group": {
+   "code": "7186",
+   "note": "Official lists now name the company Yokohama Financial Group, Inc. (same code)"
+  },
+  "Dai-ichi Life Holdings": {
+   "code": "8750",
+   "note": "Official JPX name: Daiichi Life Group, Inc."
+  },
+  "Hino Motors": {
+   "status": "not_in_current_official_list",
+   "former_code": "7205",
+   "note": "EDINET E02146 日野自動車 marked 非上場; not in JPX list"
+  },
+  "Hitachi Zosen": {
+   "code": "7004",
+   "note": "Official name now Kanadevia Corporation (same code)"
+  },
+  "Kyushu Electric Power": {
+   "status": "not_in_current_official_list",
+   "former_code": "9508",
+   "note": "EDINET E04506 marked 非上場 and code 9508 absent from JPX list on retrieval date; reason not determined from official lists"
+  },
+  "Mitsui": {
+   "code": "8031",
+   "note": "Interpreted as MITSUI & CO., LTD. (trading house); requested name is ambiguous"
+  },
+  "Mitsui O.K. Lines": {
+   "code": "9104",
+   "note": "Requested name assumed to be Mitsui O.S.K. Lines (typo)"
+  },
+  "NGK Insulators": {
+   "code": "5333",
+   "note": "Official name now NGK Corporation (same code)"
+  },
+  "Nippon Sheet Glass": {
+   "status": "not_in_current_official_list",
+   "former_code": "5202",
+   "note": "EDINET E01121 marked 非上場; not in JPX list"
+  },
+  "Nippon Suisan Kaisha": {
+   "code": "1332",
+   "note": "Official name now Nissui Corporation"
+  },
+  "Nippon Telegraph and Telephone": {
+   "code": "9432",
+   "note": "Official name now NTT, Inc."
+  },
+  "NTT Data": {
+   "status": "not_in_current_official_list",
+   "former_code": "9613",
+   "note": "EDINET E04911 NTT DATA GROUP marked 非上場; not in JPX list"
+  },
+  "Sapporo Holdings": {
+   "code": "2501",
+   "note": "Official JPX/EDINET name for code 2501 on retrieval date: SAPPORO BREWERIES LIMITED; identity requires review"
+  },
+  "Sazaby League": {
+   "status": "not_in_current_official_list",
+   "former_code": "7553",
+   "note": "Not found in JPX or EDINET lists"
+  },
+  "Shinsei Bank": {
+   "code": "8303",
+   "note": "Official name: SBI Shinsei Bank, Limited"
+  },
+  "Subaru": {
+   "code": "7270",
+   "note": "SUBARU CORPORATION (automaker); 9778 SUBARU CO.,LTD. is a different company"
+  },
+  "Sumitomo Corporation": {
+   "code": "8053"
+  },
+  "Sumitomo Mitsui Trust Holdings": {
+   "code": "8309",
+   "note": "Official name now Sumitomo Mitsui Trust Group, Inc."
+  },
+  "TIS": {
+   "code": "3626",
+   "note": "Official name now TISI Inc. (same code)"
+  },
+  "Toho": {
+   "code": "9602",
+   "note": "Interpreted as TOHO CO., LTD. (film/entertainment, 9602); 8142 TOHO Co.,Ltd. is a different company"
+  },
+  "Tokyo Dome": {
+   "status": "not_in_current_official_list",
+   "former_code": "9681",
+   "note": "EDINET E04605 TOKYO DOME CORPORATION marked 非上場"
+  },
+  "UNY Group Holdings": {
+   "status": "not_in_current_official_list",
+   "former_code": "8270",
+   "note": "Not found in JPX or EDINET lists"
+  },
+  "Yamada Denki": {
+   "code": "9831",
+   "note": "Official name: YAMADA HOLDINGS CO.,LTD."
+  },
+  "Z Holdings": {
+   "code": "4689",
+   "note": "Official name now LY Corporation"
+  },
+  "Mitsubishi Shindoh": {
+   "status": "not_listed",
+   "note": "Not found in JPX or EDINET lists (no listed issuer of that name)"
+  },
+  "Nikkei": {
+   "status": "not_listed",
+   "note": "EDINET E00738 Nikkei Inc. is 非上場 (unlisted); Nikkei matches in JPX are index ETFs, not the company"
+  },
+  "Green Cross": {
+   "status": "ambiguous",
+   "note": "EDINET E03279 GREEN CROSS CO.,LTD. is 非上場; may also refer to Korea’s GC Biopharma. Needs user clarification"
+  },
+  "J Powders": {
+   "status": "ambiguous",
+   "note": "No issuer of that name in JPX/EDINET; possibly J-POWER (Electric Power Development, 9513). Needs user clarification"
+  }
+ }
+}

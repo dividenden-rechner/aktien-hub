@@ -1,0 +1,97 @@
+[
+  {
+    "symbol": "0001.HK",
+    "company": "CK Hutchison Holdings",
+    "fiscal_year": 2025,
+    "report_type": "annual",
+    "url": "https://doc.irasia.com/listco/hk/ckh/annual/2025/ar2025.pdf",
+    "source": "issuer IR / irasia",
+    "verification": "downloaded 2026-11-18 via sync_report (HTTP 200, application/pdf, no redirect); issuer, report type and fiscal year 2025 confirmed from PDF text; SHA-256 pinned",
+    "sha256": "e5fe1da8c7c39d04586814fa3e6b9ec13c4db2c79034a93a89d7dd533fa42440",
+    "bytes": 11749789,
+    "page_count": 352,
+    "download_verified_on": "2026-11-18",
+    "alternate_sources": [
+      {
+        "url": "https://www1.hkexnews.hk/listedco/listconews/sehk/2026/0417/2026041700411.pdf",
+        "source": "HKEXnews (found by discover_hkex, 2026-11-18)",
+        "sha256_relation": "different file (11,547,748 bytes vs 11,749,789), same 352 pages; all 25 profile fields extract to identical values"
+      }
+    ]
+  },
+  {
+    "symbol": "0019.HK",
+    "company": "Swire Pacific A",
+    "fiscal_year": 2025,
+    "report_type": "annual",
+    "url": "https://www1.hkexnews.hk/listedco/listconews/sehk/2026/0408/2026040800985.pdf",
+    "source": "HKEXnews",
+    "verification": "downloaded 2026-11-18 via sync_report (HTTP 200, application/pdf, no redirect); issuer, report type and fiscal year 2025 confirmed from PDF text; SHA-256 pinned",
+    "sha256": "2f4b1b4435e04184d4b5940f21b96c2ce34c91af9eb95eeb4d825a31313a60a2",
+    "bytes": 18393836,
+    "page_count": 260,
+    "download_verified_on": "2026-11-18",
+    "alternate_sources": [
+      {
+        "url": "https://www1.hkexnews.hk/listedco/listconews/sehk/2026/0408/2026040800985.pdf",
+        "source": "HKEXnews (found by discover_hkex, 2026-11-18)",
+        "sha256_relation": "same URL as registered source"
+      }
+    ]
+  },
+  {
+    "symbol": "0142.HK",
+    "company": "First Pacific",
+    "fiscal_year": 2025,
+    "report_type": "annual",
+    "url": "https://www.firstpacific.com/wp-content/uploads/2026/04/ew0142.pdf",
+    "source": "issuer IR",
+    "verification": "downloaded 2026-11-18 via sync_report (HTTP 200, application/pdf, no redirect); issuer, report type and fiscal year 2025 confirmed from PDF text; SHA-256 pinned",
+    "sha256": "4dca002f1a256863e5343968f47d6f669dfcdf7930509a445f6aad0585822fe0",
+    "bytes": 13226875,
+    "page_count": 222,
+    "download_verified_on": "2026-11-18",
+    "alternate_sources": [
+      {
+        "url": "https://www1.hkexnews.hk/listedco/listconews/sehk/2026/0428/2026042802399.pdf",
+        "source": "HKEXnews (found by discover_hkex, 2026-11-18)",
+        "sha256_relation": "byte-identical (same SHA-256)"
+      }
+    ]
+  },
+  {
+    "symbol": "D05.SI",
+    "company": "DBS Group Holdings",
+    "fiscal_year": 2025,
+    "report_type": "annual",
+    "url": "https://www.dbs.com/iwov-resources/images/investors/annual-report/dbs-annual-report-2025.pdf",
+    "source": "issuer investor relations",
+    "verification": "downloaded 2026-11-18 via sync_report (HTTP 200, application/pdf, no redirect); issuer, report type and fiscal year 2025 confirmed from PDF text; SHA-256 pinned",
+    "sha256": "e7952ba9dff9e339070334ec5d67a71c81a8c618be7f34abad6f3118189b38ce",
+    "bytes": 8299215,
+    "page_count": 107,
+    "download_verified_on": "2026-11-18",
+    "alternate_sources": [],
+    "alternate_sources_note": "SGXNet copy not checked: no stable free programmatic SGX search (manual_search_required)."
+  },
+  {
+    "symbol": "002594.SZ",
+    "company": "BYD Company Limited",
+    "fiscal_year": 2025,
+    "report_type": "annual",
+    "url": "https://disc.static.szse.cn/download/disc/disk03/finalpage/2026-03-28/f5cdbdbf-b138-4e83-8c6d-5a7eecb9e670.PDF",
+    "source": "Shenzhen Stock Exchange disclosure",
+    "verification": "downloaded 2026-11-18 via sync_report (HTTP 200, application/pdf, no redirect); issuer, report type and fiscal year 2025 confirmed from PDF text; SHA-256 pinned",
+    "sha256": "710d8b2e08e37ba521f1c4071d2c3e2369d3cadabc21a45073215d9f72138b0b",
+    "bytes": 7533972,
+    "page_count": 268,
+    "download_verified_on": "2026-11-18",
+    "alternate_sources": [
+      {
+        "url": "https://static.cninfo.com.cn/finalpage/2026-03-28/1225045351.PDF",
+        "source": "CNINFO (found by discover_cninfo, 2026-11-18)",
+        "sha256_relation": "byte-identical (same SHA-256)"
+      }
+    ]
+  }
+]

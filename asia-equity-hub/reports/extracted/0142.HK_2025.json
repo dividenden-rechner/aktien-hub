@@ -1,0 +1,877 @@
+{
+  "symbol": "0142.HK",
+  "company": "First Pacific Company Limited",
+  "fiscal_year": 2025,
+  "period_end": "2025-12-31",
+  "accounting_standard": "HKFRS Accounting Standards (HKICPA)",
+  "currency": "USD",
+  "unit": "million",
+  "source_url": "https://www.firstpacific.com/wp-content/uploads/2026/04/ew0142.pdf",
+  "pdf_sha256": "4dca002f1a256863e5343968f47d6f669dfcdf7930509a445f6aad0585822fe0",
+  "pdf_sha256_expected": "4dca002f1a256863e5343968f47d6f669dfcdf7930509a445f6aad0585822fe0",
+  "pdf_sha256_status": "match",
+  "page_count": 222,
+  "status": "extracted_consistent",
+  "facts": [
+    {
+      "field": "revenue",
+      "definition": null,
+      "statement": "income",
+      "fiscal_year": 2025,
+      "period_end": "2025-12-31",
+      "currency": "USD",
+      "unit": "million",
+      "kind": "amount",
+      "pdf_page": 103,
+      "printed_page": "101",
+      "source_url": "https://www.firstpacific.com/wp-content/uploads/2026/04/ew0142.pdf",
+      "method": "table_row",
+      "verification_status": "machine_extracted",
+      "value": "10232.5",
+      "value_in_units": "10232500000",
+      "raw_token": "10,232.5",
+      "row_values": [
+        "10,232.5",
+        "10,057.2"
+      ],
+      "column_index": 0,
+      "line": 7,
+      "evidence": "Turnover 4 10,232.5 10,057.2"
+    },
+    {
+      "field": "profit_before_tax",
+      "definition": null,
+      "statement": "income",
+      "fiscal_year": 2025,
+      "period_end": "2025-12-31",
+      "currency": "USD",
+      "unit": "million",
+      "kind": "amount",
+      "pdf_page": 103,
+      "printed_page": "101",
+      "source_url": "https://www.firstpacific.com/wp-content/uploads/2026/04/ew0142.pdf",
+      "method": "table_row",
+      "verification_status": "machine_extracted",
+      "value": "2252",
+      "value_in_units": "2252000000",
+      "raw_token": "2,252.0",
+      "row_values": [
+        "2,252.0",
+        "2,027.1"
+      ],
+      "column_index": 0,
+      "line": 16,
+      "evidence": "Profit before Taxation 5 2,252.0 2,027.1"
+    },
+    {
+      "field": "net_profit",
+      "definition": null,
+      "statement": "income",
+      "fiscal_year": 2025,
+      "period_end": "2025-12-31",
+      "currency": "USD",
+      "unit": "million",
+      "kind": "amount",
+      "pdf_page": 103,
+      "printed_page": "101",
+      "source_url": "https://www.firstpacific.com/wp-content/uploads/2026/04/ew0142.pdf",
+      "method": "table_row",
+      "verification_status": "machine_extracted",
+      "value": "1780.9",
+      "value_in_units": "1780900000",
+      "raw_token": "1,780.9",
+      "row_values": [
+        "1,780.9",
+        "1,603.3"
+      ],
+      "column_index": 0,
+      "line": 18,
+      "evidence": "Profit for the Year 1,780.9 1,603.3"
+    },
+    {
+      "field": "net_income_attributable",
+      "definition": null,
+      "statement": "income",
+      "fiscal_year": 2025,
+      "period_end": "2025-12-31",
+      "currency": "USD",
+      "unit": "million",
+      "kind": "amount",
+      "pdf_page": 103,
+      "printed_page": "101",
+      "source_url": "https://www.firstpacific.com/wp-content/uploads/2026/04/ew0142.pdf",
+      "method": "table_row",
+      "verification_status": "machine_extracted",
+      "value": "661",
+      "value_in_units": "661000000",
+      "raw_token": "661.0",
+      "row_values": [
+        "661.0",
+        "600.3"
+      ],
+      "column_index": 0,
+      "line": 20,
+      "evidence": "Owners of the Parent 7 661.0 600.3"
+    },
+    {
+      "field": "nci_profit",
+      "definition": null,
+      "statement": "income",
+      "fiscal_year": 2025,
+      "period_end": "2025-12-31",
+      "currency": "USD",
+      "unit": "million",
+      "kind": "amount",
+      "pdf_page": 103,
+      "printed_page": "101",
+      "source_url": "https://www.firstpacific.com/wp-content/uploads/2026/04/ew0142.pdf",
+      "method": "table_row",
+      "verification_status": "machine_extracted",
+      "value": "1119.9",
+      "value_in_units": "1119900000",
+      "raw_token": "1,119.9",
+      "row_values": [
+        "1,119.9",
+        "1,003.0"
+      ],
+      "column_index": 0,
+      "line": 21,
+      "evidence": "Non-controlling Interests 1,119.9 1,003.0"
+    },
+    {
+      "field": "eps_basic",
+      "definition": "Basic EPS in U.S. cents",
+      "statement": "income",
+      "fiscal_year": 2025,
+      "period_end": "2025-12-31",
+      "currency": "USD",
+      "unit": "cents",
+      "kind": "amount",
+      "pdf_page": 103,
+      "printed_page": "101",
+      "source_url": "https://www.firstpacific.com/wp-content/uploads/2026/04/ew0142.pdf",
+      "method": "table_row",
+      "verification_status": "machine_extracted",
+      "value": "15.53",
+      "value_in_units": "0.1553",
+      "raw_token": "15.53",
+      "row_values": [
+        "15.53",
+        "14.15"
+      ],
+      "column_index": 0,
+      "line": 24,
+      "evidence": "Basic 15.53 14.15"
+    },
+    {
+      "field": "non_current_assets",
+      "definition": null,
+      "statement": "balance",
+      "fiscal_year": 2025,
+      "period_end": "2025-12-31",
+      "currency": "USD",
+      "unit": "million",
+      "kind": "amount",
+      "pdf_page": 105,
+      "printed_page": "103",
+      "source_url": "https://www.firstpacific.com/wp-content/uploads/2026/04/ew0142.pdf",
+      "method": "table_row",
+      "verification_status": "machine_extracted",
+      "value": "22949.1",
+      "value_in_units": "22949100000",
+      "raw_token": "22,949.1",
+      "row_values": [
+        "22,949.1",
+        "21,941.9"
+      ],
+      "column_index": 0,
+      "line": 22,
+      "evidence": "22,949.1 21,941.9"
+    },
+    {
+      "field": "current_assets",
+      "definition": null,
+      "statement": "balance",
+      "fiscal_year": 2025,
+      "period_end": "2025-12-31",
+      "currency": "USD",
+      "unit": "million",
+      "kind": "amount",
+      "pdf_page": 105,
+      "printed_page": "103",
+      "source_url": "https://www.firstpacific.com/wp-content/uploads/2026/04/ew0142.pdf",
+      "method": "table_row",
+      "verification_status": "machine_extracted",
+      "value": "7698.5",
+      "value_in_units": "7698500000",
+      "raw_token": "7,698.5",
+      "row_values": [
+        "7,698.5",
+        "6,736.0"
+      ],
+      "column_index": 0,
+      "line": 32,
+      "evidence": "7,698.5 6,736.0"
+    },
+    {
+      "field": "cash",
+      "definition": null,
+      "statement": "balance",
+      "fiscal_year": 2025,
+      "period_end": "2025-12-31",
+      "currency": "USD",
+      "unit": "million",
+      "kind": "amount",
+      "pdf_page": 105,
+      "printed_page": "103",
+      "source_url": "https://www.firstpacific.com/wp-content/uploads/2026/04/ew0142.pdf",
+      "method": "table_row",
+      "verification_status": "machine_extracted",
+      "value": "4206.1",
+      "value_in_units": "4206100000",
+      "raw_token": "4,206.1",
+      "row_values": [
+        "4,206.1",
+        "3,324.2"
+      ],
+      "column_index": 0,
+      "line": 29,
+      "evidence": "Cash and cash equivalents and short-term deposits 22 4,206.1 3,324.2"
+    },
+    {
+      "field": "current_liabilities",
+      "definition": null,
+      "statement": "balance",
+      "fiscal_year": 2025,
+      "period_end": "2025-12-31",
+      "currency": "USD",
+      "unit": "million",
+      "kind": "amount",
+      "pdf_page": 105,
+      "printed_page": "103",
+      "source_url": "https://www.firstpacific.com/wp-content/uploads/2026/04/ew0142.pdf",
+      "method": "table_row",
+      "verification_status": "machine_extracted",
+      "value": "5338.3",
+      "value_in_units": "5338300000",
+      "raw_token": "5,338.3",
+      "row_values": [
+        "5,338.3",
+        "4,993.0"
+      ],
+      "column_index": 0,
+      "line": 38,
+      "evidence": "5,338.3 4,993.0"
+    },
+    {
+      "field": "non_current_liabilities",
+      "definition": null,
+      "statement": "balance",
+      "fiscal_year": 2025,
+      "period_end": "2025-12-31",
+      "currency": "USD",
+      "unit": "million",
+      "kind": "amount",
+      "pdf_page": 105,
+      "printed_page": "103",
+      "source_url": "https://www.firstpacific.com/wp-content/uploads/2026/04/ew0142.pdf",
+      "method": "table_row",
+      "verification_status": "machine_extracted",
+      "value": "12185.7",
+      "value_in_units": "12185700000",
+      "raw_token": "12,185.7",
+      "row_values": [
+        "12,185.7",
+        "11,754.7"
+      ],
+      "column_index": 0,
+      "line": 53,
+      "evidence": "12,185.7 11,754.7"
+    },
+    {
+      "field": "equity_attributable",
+      "definition": null,
+      "statement": "balance",
+      "fiscal_year": 2025,
+      "period_end": "2025-12-31",
+      "currency": "USD",
+      "unit": "million",
+      "kind": "amount",
+      "pdf_page": 105,
+      "printed_page": "103",
+      "source_url": "https://www.firstpacific.com/wp-content/uploads/2026/04/ew0142.pdf",
+      "method": "table_row",
+      "verification_status": "machine_extracted",
+      "value": "4388.8",
+      "value_in_units": "4388800000",
+      "raw_token": "4,388.8",
+      "row_values": [
+        "4,388.8",
+        "3,926.2"
+      ],
+      "column_index": 0,
+      "line": 46,
+      "evidence": "Equity attributable to owners of the parent 4,388.8 3,926.2"
+    },
+    {
+      "field": "total_equity",
+      "definition": null,
+      "statement": "balance",
+      "fiscal_year": 2025,
+      "period_end": "2025-12-31",
+      "currency": "USD",
+      "unit": "million",
+      "kind": "amount",
+      "pdf_page": 105,
+      "printed_page": "103",
+      "source_url": "https://www.firstpacific.com/wp-content/uploads/2026/04/ew0142.pdf",
+      "method": "table_row",
+      "verification_status": "machine_extracted",
+      "value": "13123.6",
+      "value_in_units": "13123600000",
+      "raw_token": "13,123.6",
+      "row_values": [
+        "13,123.6",
+        "11,930.2"
+      ],
+      "column_index": 0,
+      "line": 48,
+      "evidence": "Total Equity 13,123.6 11,930.2"
+    },
+    {
+      "field": "operating_cash_flow",
+      "definition": null,
+      "statement": "cash_flow",
+      "fiscal_year": 2025,
+      "period_end": "2025-12-31",
+      "currency": "USD",
+      "unit": "million",
+      "kind": "amount",
+      "pdf_page": 107,
+      "printed_page": "105",
+      "source_url": "https://www.firstpacific.com/wp-content/uploads/2026/04/ew0142.pdf",
+      "method": "table_row",
+      "verification_status": "machine_extracted",
+      "value": "1748.3",
+      "value_in_units": "1748300000",
+      "raw_token": "1,748.3",
+      "row_values": [
+        "1,748.3",
+        "1,746.5"
+      ],
+      "column_index": 0,
+      "line": 32,
+      "evidence": "Net Cash Flows From Operating Activities 1,748.3 1,746.5"
+    },
+    {
+      "field": "capex",
+      "definition": "PPE purchases only (excludes US$859.7m investments in other intangible/concession assets)",
+      "statement": "cash_flow",
+      "fiscal_year": 2025,
+      "period_end": "2025-12-31",
+      "currency": "USD",
+      "unit": "million",
+      "kind": "amount",
+      "pdf_page": 108,
+      "printed_page": "106",
+      "source_url": "https://www.firstpacific.com/wp-content/uploads/2026/04/ew0142.pdf",
+      "method": "table_row",
+      "verification_status": "machine_extracted",
+      "value": "528.8",
+      "value_in_units": "528800000",
+      "raw_token": "(528.8)",
+      "row_values": [
+        "(528.8)",
+        "(444.9)"
+      ],
+      "column_index": 0,
+      "line": 15,
+      "evidence": "Payments for purchases of property, plant and equipment (528.8) (444.9)"
+    },
+    {
+      "field": "dividends_paid_to_shareholders",
+      "definition": null,
+      "statement": "cash_flow",
+      "fiscal_year": 2025,
+      "period_end": "2025-12-31",
+      "currency": "USD",
+      "unit": "million",
+      "kind": "amount",
+      "pdf_page": 108,
+      "printed_page": "106",
+      "source_url": "https://www.firstpacific.com/wp-content/uploads/2026/04/ew0142.pdf",
+      "method": "table_row",
+      "verification_status": "machine_extracted",
+      "value": "144.6",
+      "value_in_units": "144600000",
+      "raw_token": "(144.6)",
+      "row_values": [
+        "(144.6)",
+        "(133.2)"
+      ],
+      "column_index": 0,
+      "line": 33,
+      "evidence": "Distributions paid to shareholders 33(I) (144.6) (133.2)"
+    },
+    {
+      "field": "cash_end_cf",
+      "definition": null,
+      "statement": "cash_flow",
+      "fiscal_year": 2025,
+      "period_end": "2025-12-31",
+      "currency": "USD",
+      "unit": "million",
+      "kind": "amount",
+      "pdf_page": 108,
+      "printed_page": "106",
+      "source_url": "https://www.firstpacific.com/wp-content/uploads/2026/04/ew0142.pdf",
+      "method": "table_row",
+      "verification_status": "machine_extracted",
+      "value": "4149.4",
+      "value_in_units": "4149400000",
+      "raw_token": "4,149.4",
+      "row_values": [
+        "4,149.4",
+        "3,287.0"
+      ],
+      "column_index": 0,
+      "line": 44,
+      "evidence": "Cash and Cash Equivalents at 31 December 4,149.4 3,287.0"
+    },
+    {
+      "field": "dividend_per_share",
+      "definition": "Total ordinary distribution per share, HK cents (excl. special distribution)",
+      "statement": null,
+      "fiscal_year": 2025,
+      "period_end": "2025-12-31",
+      "currency": "HKD",
+      "unit": "cents",
+      "kind": "amount",
+      "pdf_page": 14,
+      "printed_page": "12",
+      "source_url": "https://www.firstpacific.com/wp-content/uploads/2026/04/ew0142.pdf",
+      "method": "text_regex",
+      "verification_status": "machine_extracted",
+      "value": "27",
+      "value_in_units": "0.27",
+      "raw_token": "27.0",
+      "line": 6,
+      "evidence": "er share paid on 30 September 2025, the total distribution for 2025 rose 6% to a record high HK 27.0 cents (U.S. 3.46 cents) per share from HK 25."
+    },
+    {
+      "field": "dividend_per_share_usd_cents",
+      "definition": "Total ordinary distribution per share, U.S. cents",
+      "statement": null,
+      "fiscal_year": 2025,
+      "period_end": "2025-12-31",
+      "currency": "USD",
+      "unit": "cents",
+      "kind": "amount",
+      "pdf_page": 14,
+      "printed_page": "12",
+      "source_url": "https://www.firstpacific.com/wp-content/uploads/2026/04/ew0142.pdf",
+      "method": "text_regex",
+      "verification_status": "machine_extracted",
+      "value": "3.46",
+      "value_in_units": "0.0346",
+      "raw_token": "3.46",
+      "line": 6,
+      "evidence": "er share paid on 30 September 2025, the total distribution for 2025 rose 6% to a record high HK 27.0 cents (U.S. 3.46 cents) per share from HK 25.5 cents (U.S. 3.27"
+    },
+    {
+      "field": "dividend_interim_usd_cents",
+      "definition": null,
+      "statement": null,
+      "fiscal_year": 2025,
+      "period_end": "2025-12-31",
+      "currency": "USD",
+      "unit": "cents",
+      "kind": "amount",
+      "pdf_page": 14,
+      "printed_page": "12",
+      "source_url": "https://www.firstpacific.com/wp-content/uploads/2026/04/ew0142.pdf",
+      "method": "text_regex",
+      "verification_status": "machine_extracted",
+      "value": "1.67",
+      "value_in_units": "0.0167",
+      "raw_token": "1.67",
+      "line": 6,
+      "evidence": "per share. Together with an interim distribution of HK 13.0 cents (U.S. 1.67 cents) per share paid on 30 September 2025, th"
+    },
+    {
+      "field": "dividend_final_usd_cents",
+      "definition": null,
+      "statement": null,
+      "fiscal_year": 2025,
+      "period_end": "2025-12-31",
+      "currency": "USD",
+      "unit": "cents",
+      "kind": "amount",
+      "pdf_page": 14,
+      "printed_page": "12",
+      "source_url": "https://www.firstpacific.com/wp-content/uploads/2026/04/ew0142.pdf",
+      "method": "text_regex",
+      "verification_status": "machine_extracted",
+      "value": "1.79",
+      "value_in_units": "0.0179",
+      "raw_token": "1.79",
+      "line": 5,
+      "evidence": "Pacific’s Board of Directors declared a final distribution of HK 14.0 cents (U.S. 1.79 cents) (2024: HK 13.5 cents (U.S. 1.73 cents))"
+    }
+  ],
+  "derived": [
+    {
+      "field": "total_assets",
+      "definition": "Non-current + current assets",
+      "statement": "balance",
+      "fiscal_year": 2025,
+      "period_end": "2025-12-31",
+      "currency": "USD",
+      "unit": "million",
+      "kind": "amount",
+      "value": "30647.6",
+      "value_in_units": "30647600000",
+      "method": "derived",
+      "derived_from": [
+        "non_current_assets",
+        "current_assets"
+      ],
+      "pdf_page": [
+        105
+      ],
+      "source_url": "https://www.firstpacific.com/wp-content/uploads/2026/04/ew0142.pdf",
+      "verification_status": "derived_from_machine_extracted"
+    },
+    {
+      "field": "total_liabilities",
+      "definition": "Current + non-current liabilities",
+      "statement": "balance",
+      "fiscal_year": 2025,
+      "period_end": "2025-12-31",
+      "currency": "USD",
+      "unit": "million",
+      "kind": "amount",
+      "value": "17524",
+      "value_in_units": "17524000000",
+      "method": "derived",
+      "derived_from": [
+        "current_liabilities",
+        "non_current_liabilities"
+      ],
+      "pdf_page": [
+        105
+      ],
+      "source_url": "https://www.firstpacific.com/wp-content/uploads/2026/04/ew0142.pdf",
+      "verification_status": "derived_from_machine_extracted"
+    },
+    {
+      "field": "free_cash_flow",
+      "definition": "Operating cash flow minus capex as defined in this profile (simple FCF, not issuer-defined)",
+      "statement": "cash_flow",
+      "fiscal_year": 2025,
+      "period_end": "2025-12-31",
+      "currency": "USD",
+      "unit": "million",
+      "kind": "amount",
+      "value": "1219.5",
+      "value_in_units": "1219500000",
+      "method": "derived",
+      "derived_from": [
+        "operating_cash_flow",
+        "-capex"
+      ],
+      "pdf_page": [
+        107,
+        108
+      ],
+      "source_url": "https://www.firstpacific.com/wp-content/uploads/2026/04/ew0142.pdf",
+      "verification_status": "derived_from_machine_extracted"
+    }
+  ],
+  "errors": [],
+  "checks": [
+    {
+      "name": "balance_sheet_identity",
+      "left": [
+        "total_assets"
+      ],
+      "right": [
+        "total_liabilities",
+        "total_equity"
+      ],
+      "factor": null,
+      "left_value": "30647.6",
+      "right_value": "30647.6",
+      "difference": "0",
+      "tolerance": "1",
+      "status": "pass"
+    },
+    {
+      "name": "profit_split",
+      "left": [
+        "net_profit"
+      ],
+      "right": [
+        "net_income_attributable",
+        "nci_profit"
+      ],
+      "factor": null,
+      "left_value": "1780.9",
+      "right_value": "1780.9",
+      "difference": "0",
+      "tolerance": "1",
+      "status": "pass"
+    },
+    {
+      "name": "dps_interim_plus_final_usd",
+      "left": [
+        "dividend_per_share_usd_cents"
+      ],
+      "right": [
+        "dividend_interim_usd_cents",
+        "dividend_final_usd_cents"
+      ],
+      "factor": null,
+      "left_value": "3.46",
+      "right_value": "3.46",
+      "difference": "0",
+      "tolerance": "0.005",
+      "status": "pass"
+    }
+  ],
+  "ratios": {
+    "net_margin": {
+      "value": "0.0646",
+      "formula": "net_income_attributable / revenue",
+      "note": null
+    },
+    "operating_margin": {
+      "value": null,
+      "formula": "operating_profit / revenue",
+      "note": null
+    },
+    "return_on_equity_simple": {
+      "value": "0.1506",
+      "formula": "net_income_attributable / equity_attributable",
+      "note": null
+    },
+    "equity_ratio": {
+      "value": "0.4282",
+      "formula": "total_equity / total_assets",
+      "note": null
+    },
+    "liabilities_to_assets": {
+      "value": "0.5718",
+      "formula": "total_liabilities / total_assets",
+      "note": null
+    },
+    "cash_conversion": {
+      "value": "0.9817",
+      "formula": "operating_cash_flow / net_profit",
+      "note": null
+    },
+    "payout_ratio_per_share": {
+      "value": "0.2228",
+      "formula": "dividend_per_share_usd_cents / eps_basic",
+      "note": null
+    },
+    "cash_dividend_cover": {
+      "value": "8.4336",
+      "formula": "free_cash_flow / dividends_paid_to_shareholders",
+      "note": null
+    }
+  },
+  "manual_review": {
+    "human_review": "pending",
+    "assistant_visual_check": {
+      "date": "2026-11-18",
+      "by": "AI assistant (Claude), not a human reviewer",
+      "method": "statement pages rendered with pdftoppm and read visually; every extracted value on these pages compared with the rendered table",
+      "pdf_pages": [
+        108
+      ],
+      "result": "all values on the listed pages match the rendered original, incl. column (fiscal year 2025) and sign"
+    },
+    "note": "Set human_review to \"approved\" with name/date only after a person has checked the cited pages."
+  },
+  "caveats": [
+    "Reporting currency USD; distributions declared in HK cents with U.S. cent equivalents.",
+    "A 2025 special distribution (Maynilad shares + cash, ~U.S. 0.15 cent/share) is excluded from dividend_per_share.",
+    "Cash flow closing cash (US$4,149.4m) excludes deposits > 3 months contained in balance-sheet cash (US$4,206.1m)."
+  ],
+  "warning": "Machine-extracted values with page/line provenance and arithmetic checks. They are not an audited dataset; see manual_review for human verification status.",
+  "second_engine": {
+    "engine": "pdfplumber",
+    "status": "ok",
+    "summary": {
+      "row_confirmed": 13,
+      "token_on_page": 8,
+      "not_found": 0
+    },
+    "results": [
+      {
+        "field": "revenue",
+        "pdf_page": 103,
+        "token": "10,232.5",
+        "status": "row_confirmed"
+      },
+      {
+        "field": "profit_before_tax",
+        "pdf_page": 103,
+        "token": "2,252.0",
+        "status": "row_confirmed"
+      },
+      {
+        "field": "net_profit",
+        "pdf_page": 103,
+        "token": "1,780.9",
+        "status": "row_confirmed"
+      },
+      {
+        "field": "net_income_attributable",
+        "pdf_page": 103,
+        "token": "661.0",
+        "status": "row_confirmed"
+      },
+      {
+        "field": "nci_profit",
+        "pdf_page": 103,
+        "token": "1,119.9",
+        "status": "row_confirmed"
+      },
+      {
+        "field": "eps_basic",
+        "pdf_page": 103,
+        "token": "15.53",
+        "status": "row_confirmed"
+      },
+      {
+        "field": "non_current_assets",
+        "pdf_page": 105,
+        "token": "22,949.1",
+        "status": "token_on_page"
+      },
+      {
+        "field": "current_assets",
+        "pdf_page": 105,
+        "token": "7,698.5",
+        "status": "token_on_page"
+      },
+      {
+        "field": "cash",
+        "pdf_page": 105,
+        "token": "4,206.1",
+        "status": "row_confirmed"
+      },
+      {
+        "field": "current_liabilities",
+        "pdf_page": 105,
+        "token": "5,338.3",
+        "status": "token_on_page"
+      },
+      {
+        "field": "non_current_liabilities",
+        "pdf_page": 105,
+        "token": "12,185.7",
+        "status": "token_on_page"
+      },
+      {
+        "field": "equity_attributable",
+        "pdf_page": 105,
+        "token": "4,388.8",
+        "status": "row_confirmed"
+      },
+      {
+        "field": "total_equity",
+        "pdf_page": 105,
+        "token": "13,123.6",
+        "status": "row_confirmed"
+      },
+      {
+        "field": "operating_cash_flow",
+        "pdf_page": 107,
+        "token": "1,748.3",
+        "status": "row_confirmed"
+      },
+      {
+        "field": "capex",
+        "pdf_page": 108,
+        "token": "(528.8)",
+        "status": "row_confirmed"
+      },
+      {
+        "field": "dividends_paid_to_shareholders",
+        "pdf_page": 108,
+        "token": "(144.6)",
+        "status": "row_confirmed"
+      },
+      {
+        "field": "cash_end_cf",
+        "pdf_page": 108,
+        "token": "4,149.4",
+        "status": "row_confirmed"
+      },
+      {
+        "field": "dividend_per_share",
+        "pdf_page": 14,
+        "token": "27.0",
+        "status": "token_on_page"
+      },
+      {
+        "field": "dividend_per_share_usd_cents",
+        "pdf_page": 14,
+        "token": "3.46",
+        "status": "token_on_page"
+      },
+      {
+        "field": "dividend_interim_usd_cents",
+        "pdf_page": 14,
+        "token": "1.67",
+        "status": "token_on_page"
+      },
+      {
+        "field": "dividend_final_usd_cents",
+        "pdf_page": 14,
+        "token": "1.79",
+        "status": "token_on_page"
+      }
+    ]
+  },
+  "reference_comparison": [
+    {
+      "field": "revenue",
+      "reference_value": "10232.5",
+      "reference_unit": "million",
+      "reference_currency": "USD",
+      "reference_source": "https://www.firstpacific.com/financials/annual.php",
+      "reference_rechecked_on": null,
+      "extracted_value": "10232.5",
+      "difference": "0.0",
+      "result": "match",
+      "pdf_page": 103
+    },
+    {
+      "field": "net_income_attributable",
+      "reference_value": "661",
+      "reference_unit": "million",
+      "reference_currency": "USD",
+      "reference_source": "https://www.firstpacific.com/financials/annual.php",
+      "reference_rechecked_on": null,
+      "extracted_value": "661",
+      "difference": "0",
+      "result": "match",
+      "pdf_page": 103
+    },
+    {
+      "field": "recurring_profit",
+      "reference_value": "740",
+      "reference_unit": "million",
+      "reference_currency": "USD",
+      "reference_source": "https://www.firstpacific.com/financials/annual.php",
+      "reference_rechecked_on": null,
+      "result": "not_comparable",
+      "note": "Issuer non-GAAP recurring profit; no PDF profile field"
+    }
+  ],
+  "extracted_at": "2026-11-18T12:25:29.705286+00:00"
+}

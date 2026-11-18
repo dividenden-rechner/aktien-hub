@@ -1,0 +1,980 @@
+{
+  "symbol": "0001.HK",
+  "company": "CK Hutchison Holdings Limited",
+  "fiscal_year": 2025,
+  "period_end": "2025-12-31",
+  "accounting_standard": "IFRS Accounting Standards (first-time adoption in 2025, see note 2 / note 48)",
+  "currency": "HKD",
+  "unit": "million",
+  "source_url": "https://doc.irasia.com/listco/hk/ckh/annual/2025/ar2025.pdf",
+  "pdf_sha256": "e5fe1da8c7c39d04586814fa3e6b9ec13c4db2c79034a93a89d7dd533fa42440",
+  "pdf_sha256_expected": "e5fe1da8c7c39d04586814fa3e6b9ec13c4db2c79034a93a89d7dd533fa42440",
+  "pdf_sha256_status": "match",
+  "page_count": 352,
+  "status": "extracted_consistent",
+  "facts": [
+    {
+      "field": "revenue",
+      "definition": "Revenue (IFRS consolidated; excludes share of associates/JVs)",
+      "statement": "income",
+      "fiscal_year": 2025,
+      "period_end": "2025-12-31",
+      "currency": "HKD",
+      "unit": "million",
+      "kind": "amount",
+      "pdf_page": 134,
+      "printed_page": "132",
+      "source_url": "https://doc.irasia.com/listco/hk/ckh/annual/2025/ar2025.pdf",
+      "method": "table_row",
+      "verification_status": "machine_extracted",
+      "value": "280036",
+      "value_in_units": "280036000000",
+      "raw_token": "280,036",
+      "row_values": [
+        "280,036",
+        "281,351",
+        "275,575"
+      ],
+      "column_index": 0,
+      "line": 5,
+      "evidence": "35,902 Revenue 5  280,036  281,351  275,575"
+    },
+    {
+      "field": "profit_before_tax",
+      "definition": null,
+      "statement": "income",
+      "fiscal_year": 2025,
+      "period_end": "2025-12-31",
+      "currency": "HKD",
+      "unit": "million",
+      "kind": "amount",
+      "pdf_page": 134,
+      "printed_page": "132",
+      "source_url": "https://doc.irasia.com/listco/hk/ckh/annual/2025/ar2025.pdf",
+      "method": "table_row",
+      "verification_status": "machine_extracted",
+      "value": "26607",
+      "value_in_units": "26607000000",
+      "raw_token": "26,607",
+      "row_values": [
+        "26,607",
+        "28,570",
+        "33,554"
+      ],
+      "column_index": 0,
+      "line": 19,
+      "evidence": "3,412 Profit before tax  26,607  28,570  33,554"
+    },
+    {
+      "field": "net_profit",
+      "definition": "Profit after tax incl. non-controlling interests",
+      "statement": "income",
+      "fiscal_year": 2025,
+      "period_end": "2025-12-31",
+      "currency": "HKD",
+      "unit": "million",
+      "kind": "amount",
+      "pdf_page": 134,
+      "printed_page": "132",
+      "source_url": "https://doc.irasia.com/listco/hk/ckh/annual/2025/ar2025.pdf",
+      "method": "table_row",
+      "verification_status": "machine_extracted",
+      "value": "19370",
+      "value_in_units": "19370000000",
+      "raw_token": "19,370",
+      "row_values": [
+        "19,370",
+        "23,853",
+        "30,551"
+      ],
+      "column_index": 0,
+      "line": 23,
+      "evidence": "2,483 Profit after tax  19,370  23,853  30,551"
+    },
+    {
+      "field": "nci_profit",
+      "definition": null,
+      "statement": "income",
+      "fiscal_year": 2025,
+      "period_end": "2025-12-31",
+      "currency": "HKD",
+      "unit": "million",
+      "kind": "amount",
+      "pdf_page": 134,
+      "printed_page": "132",
+      "source_url": "https://doc.irasia.com/listco/hk/ckh/annual/2025/ar2025.pdf",
+      "method": "table_row",
+      "verification_status": "machine_extracted",
+      "value": "7529",
+      "value_in_units": "7529000000",
+      "raw_token": "(7,529)",
+      "row_values": [
+        "(7,529)",
+        "(6,765)",
+        "(6,712)"
+      ],
+      "column_index": 0,
+      "line": 27,
+      "evidence": "holders of perpetual capital securities  (7,529)  (6,765)  (6,712)"
+    },
+    {
+      "field": "net_income_attributable",
+      "definition": null,
+      "statement": "income",
+      "fiscal_year": 2025,
+      "period_end": "2025-12-31",
+      "currency": "HKD",
+      "unit": "million",
+      "kind": "amount",
+      "pdf_page": 134,
+      "printed_page": "132",
+      "source_url": "https://doc.irasia.com/listco/hk/ckh/annual/2025/ar2025.pdf",
+      "method": "table_row",
+      "verification_status": "machine_extracted",
+      "value": "11841",
+      "value_in_units": "11841000000",
+      "raw_token": "11,841",
+      "row_values": [
+        "11,841",
+        "17,088",
+        "23,839"
+      ],
+      "column_index": 0,
+      "line": 29,
+      "evidence": "1,518 Profit attributable to ordinary shareholders  11,841  17,088  23,839"
+    },
+    {
+      "field": "eps_basic",
+      "definition": null,
+      "statement": "income",
+      "fiscal_year": 2025,
+      "period_end": "2025-12-31",
+      "currency": "HKD",
+      "unit": "units",
+      "kind": "amount",
+      "pdf_page": 134,
+      "printed_page": "132",
+      "source_url": "https://doc.irasia.com/listco/hk/ckh/annual/2025/ar2025.pdf",
+      "method": "table_row",
+      "verification_status": "machine_extracted",
+      "value": "3.09",
+      "value_in_units": "3.09",
+      "raw_token": "3.09",
+      "row_values": [
+        "3.09",
+        "4.46",
+        "6.22"
+      ],
+      "column_index": 0,
+      "line": 33,
+      "evidence": "shareholders 11 HK$ 3.09 HK$ 4.46 HK$ 6.22"
+    },
+    {
+      "field": "non_current_assets",
+      "definition": null,
+      "statement": "balance",
+      "fiscal_year": 2025,
+      "period_end": "2025-12-31",
+      "currency": "HKD",
+      "unit": "million",
+      "kind": "amount",
+      "pdf_page": 136,
+      "printed_page": "134",
+      "source_url": "https://doc.irasia.com/listco/hk/ckh/annual/2025/ar2025.pdf",
+      "method": "table_row",
+      "verification_status": "machine_extracted",
+      "value": "942930",
+      "value_in_units": "942930000000",
+      "raw_token": "942,930",
+      "row_values": [
+        "942,930",
+        "920,349",
+        "956,517",
+        "924,162"
+      ],
+      "column_index": 0,
+      "line": 25,
+      "evidence": "120,889  942,930 920,349 956,517 924,162"
+    },
+    {
+      "field": "current_assets",
+      "definition": null,
+      "statement": "balance",
+      "fiscal_year": 2025,
+      "period_end": "2025-12-31",
+      "currency": "HKD",
+      "unit": "million",
+      "kind": "amount",
+      "pdf_page": 136,
+      "printed_page": "134",
+      "source_url": "https://doc.irasia.com/listco/hk/ckh/annual/2025/ar2025.pdf",
+      "method": "table_row",
+      "verification_status": "machine_extracted",
+      "value": "212743",
+      "value_in_units": "212743000000",
+      "raw_token": "212,743",
+      "row_values": [
+        "212,743",
+        "192,193",
+        "202,386",
+        "224,275"
+      ],
+      "column_index": 0,
+      "line": 35,
+      "evidence": "27,274  212,743 192,193 202,386 224,275"
+    },
+    {
+      "field": "cash",
+      "definition": null,
+      "statement": "balance",
+      "fiscal_year": 2025,
+      "period_end": "2025-12-31",
+      "currency": "HKD",
+      "unit": "million",
+      "kind": "amount",
+      "pdf_page": 136,
+      "printed_page": "134",
+      "source_url": "https://doc.irasia.com/listco/hk/ckh/annual/2025/ar2025.pdf",
+      "method": "table_row",
+      "verification_status": "machine_extracted",
+      "value": "143748",
+      "value_in_units": "143748000000",
+      "raw_token": "143,748",
+      "row_values": [
+        "143,748",
+        "121,303",
+        "127,323",
+        "138,085"
+      ],
+      "column_index": 0,
+      "line": 28,
+      "evidence": "18,429 Cash and cash equivalents 24  143,748 121,303 127,323 138,085"
+    },
+    {
+      "field": "current_liabilities",
+      "definition": null,
+      "statement": "balance",
+      "fiscal_year": 2025,
+      "period_end": "2025-12-31",
+      "currency": "HKD",
+      "unit": "million",
+      "kind": "amount",
+      "pdf_page": 136,
+      "printed_page": "134",
+      "source_url": "https://doc.irasia.com/listco/hk/ckh/annual/2025/ar2025.pdf",
+      "method": "table_row",
+      "verification_status": "machine_extracted",
+      "value": "135399",
+      "value_in_units": "135399000000",
+      "raw_token": "135,399",
+      "row_values": [
+        "135,399",
+        "130,985",
+        "162,525",
+        "176,515"
+      ],
+      "column_index": 0,
+      "line": 51,
+      "evidence": "17,359  135,399 130,985 162,525 176,515"
+    },
+    {
+      "field": "non_current_liabilities",
+      "definition": null,
+      "statement": "balance",
+      "fiscal_year": 2025,
+      "period_end": "2025-12-31",
+      "currency": "HKD",
+      "unit": "million",
+      "kind": "amount",
+      "pdf_page": 136,
+      "printed_page": "134",
+      "source_url": "https://doc.irasia.com/listco/hk/ckh/annual/2025/ar2025.pdf",
+      "method": "table_row",
+      "verification_status": "machine_extracted",
+      "value": "331882",
+      "value_in_units": "331882000000",
+      "raw_token": "331,882",
+      "row_values": [
+        "331,882",
+        "328,965",
+        "325,829",
+        "324,613"
+      ],
+      "column_index": 0,
+      "line": 67,
+      "evidence": "42,549 331,882 328,965 325,829 324,613"
+    },
+    {
+      "field": "net_assets",
+      "definition": null,
+      "statement": "balance",
+      "fiscal_year": 2025,
+      "period_end": "2025-12-31",
+      "currency": "HKD",
+      "unit": "million",
+      "kind": "amount",
+      "pdf_page": 136,
+      "printed_page": "134",
+      "source_url": "https://doc.irasia.com/listco/hk/ckh/annual/2025/ar2025.pdf",
+      "method": "table_row",
+      "verification_status": "machine_extracted",
+      "value": "688392",
+      "value_in_units": "688392000000",
+      "raw_token": "688,392",
+      "row_values": [
+        "688,392",
+        "652,592",
+        "670,549",
+        "647,309"
+      ],
+      "column_index": 0,
+      "line": 69,
+      "evidence": "88,255 Net assets  688,392 652,592 670,549 647,309"
+    },
+    {
+      "field": "equity_attributable",
+      "definition": null,
+      "statement": "balance",
+      "fiscal_year": 2025,
+      "period_end": "2025-12-31",
+      "currency": "HKD",
+      "unit": "million",
+      "kind": "amount",
+      "pdf_page": 137,
+      "printed_page": "135",
+      "source_url": "https://doc.irasia.com/listco/hk/ckh/annual/2025/ar2025.pdf",
+      "method": "table_row",
+      "verification_status": "machine_extracted",
+      "value": "562772",
+      "value_in_units": "562772000000",
+      "raw_token": "562,772",
+      "row_values": [
+        "562,772",
+        "534,715",
+        "544,035",
+        "523,513"
+      ],
+      "column_index": 0,
+      "line": 16,
+      "evidence": "72,150 Total ordinary shareholders’ funds  562,772 534,715 544,035 523,513"
+    },
+    {
+      "field": "total_equity",
+      "definition": null,
+      "statement": "balance",
+      "fiscal_year": 2025,
+      "period_end": "2025-12-31",
+      "currency": "HKD",
+      "unit": "million",
+      "kind": "amount",
+      "pdf_page": 137,
+      "printed_page": "135",
+      "source_url": "https://doc.irasia.com/listco/hk/ckh/annual/2025/ar2025.pdf",
+      "method": "table_row",
+      "verification_status": "machine_extracted",
+      "value": "688392",
+      "value_in_units": "688392000000",
+      "raw_token": "688,392",
+      "row_values": [
+        "688,392",
+        "652,592",
+        "670,549",
+        "647,309"
+      ],
+      "column_index": 0,
+      "line": 20,
+      "evidence": "88,255 Total equity  688,392 652,592 670,549 647,309"
+    },
+    {
+      "field": "operating_cash_flow",
+      "definition": null,
+      "statement": "cash_flow",
+      "fiscal_year": 2025,
+      "period_end": "2025-12-31",
+      "currency": "HKD",
+      "unit": "million",
+      "kind": "amount",
+      "pdf_page": 141,
+      "printed_page": "139",
+      "source_url": "https://doc.irasia.com/listco/hk/ckh/annual/2025/ar2025.pdf",
+      "method": "table_row",
+      "verification_status": "machine_extracted",
+      "value": "62567",
+      "value_in_units": "62567000000",
+      "raw_token": "62,567",
+      "row_values": [
+        "62,567",
+        "54,228",
+        "51,437"
+      ],
+      "column_index": 0,
+      "line": 18,
+      "evidence": "8,021 Net cash from operating activities 62,567 54,228 51,437"
+    },
+    {
+      "field": "capex",
+      "definition": "Purchase of fixed assets (excludes licences, brand names)",
+      "statement": "cash_flow",
+      "fiscal_year": 2025,
+      "period_end": "2025-12-31",
+      "currency": "HKD",
+      "unit": "million",
+      "kind": "amount",
+      "pdf_page": 141,
+      "printed_page": "139",
+      "source_url": "https://doc.irasia.com/listco/hk/ckh/annual/2025/ar2025.pdf",
+      "method": "table_row",
+      "verification_status": "machine_extracted",
+      "value": "18743",
+      "value_in_units": "18743000000",
+      "raw_token": "(18,743)",
+      "row_values": [
+        "(18,743)",
+        "(20,365)",
+        "(21,670)"
+      ],
+      "column_index": 0,
+      "line": 20,
+      "evidence": "(2,403) Purchase of fixed assets 13 (18,743) (20,365) (21,670)"
+    },
+    {
+      "field": "dividends_paid_to_shareholders",
+      "definition": null,
+      "statement": "cash_flow",
+      "fiscal_year": 2025,
+      "period_end": "2025-12-31",
+      "currency": "HKD",
+      "unit": "million",
+      "kind": "amount",
+      "pdf_page": 141,
+      "printed_page": "139",
+      "source_url": "https://doc.irasia.com/listco/hk/ckh/annual/2025/ar2025.pdf",
+      "method": "table_row",
+      "verification_status": "machine_extracted",
+      "value": "8518",
+      "value_in_units": "8518000000",
+      "raw_token": "(8,518)",
+      "row_values": [
+        "(8,518)",
+        "(9,433)",
+        "(10,885)"
+      ],
+      "column_index": 0,
+      "line": 62,
+      "evidence": "(1,093) Dividends paid to ordinary shareholders (8,518) (9,433) (10,885)"
+    },
+    {
+      "field": "cash_end_cf",
+      "definition": null,
+      "statement": "cash_flow",
+      "fiscal_year": 2025,
+      "period_end": "2025-12-31",
+      "currency": "HKD",
+      "unit": "million",
+      "kind": "amount",
+      "pdf_page": 141,
+      "printed_page": "139",
+      "source_url": "https://doc.irasia.com/listco/hk/ckh/annual/2025/ar2025.pdf",
+      "method": "table_row",
+      "verification_status": "machine_extracted",
+      "value": "143748",
+      "value_in_units": "143748000000",
+      "raw_token": "143,748",
+      "row_values": [
+        "143,748",
+        "121,303",
+        "127,323"
+      ],
+      "column_index": 0,
+      "line": 68,
+      "evidence": "18,429 Cash and cash equivalents at 31 December 143,748 121,303 127,323"
+    },
+    {
+      "field": "net_debt",
+      "definition": "Issuer-defined net debt incl. loans from NCI shareholders",
+      "statement": "cash_flow",
+      "fiscal_year": 2025,
+      "period_end": "2025-12-31",
+      "currency": "HKD",
+      "unit": "million",
+      "kind": "amount",
+      "pdf_page": 142,
+      "printed_page": "140",
+      "source_url": "https://doc.irasia.com/listco/hk/ckh/annual/2025/ar2025.pdf",
+      "method": "table_row",
+      "verification_status": "machine_extracted",
+      "value": "117885",
+      "value_in_units": "117885000000",
+      "raw_token": "117,885",
+      "row_values": [
+        "117,885",
+        "132,029",
+        "133,830"
+      ],
+      "column_index": 0,
+      "line": 15,
+      "evidence": "15,115 Net debt 117,885 132,029 133,830"
+    },
+    {
+      "field": "dividend_per_share",
+      "definition": "Full-year ordinary dividend per share (interim paid + final proposed)",
+      "statement": null,
+      "fiscal_year": 2025,
+      "period_end": "2025-12-31",
+      "currency": "HKD",
+      "unit": "units",
+      "kind": "amount",
+      "pdf_page": 17,
+      "printed_page": "15",
+      "source_url": "https://doc.irasia.com/listco/hk/ckh/annual/2025/ar2025.pdf",
+      "method": "text_regex",
+      "verification_status": "machine_extracted",
+      "value": "2.312",
+      "value_in_units": "2.312",
+      "raw_token": "2.312",
+      "line": 34,
+      "evidence": "Full year dividend per share 2.312 2.202 5% Pre-IFRS 16"
+    },
+    {
+      "field": "dividend_interim_per_share",
+      "definition": null,
+      "statement": null,
+      "fiscal_year": 2025,
+      "period_end": "2025-12-31",
+      "currency": "HKD",
+      "unit": "units",
+      "kind": "amount",
+      "pdf_page": 207,
+      "printed_page": "205",
+      "source_url": "https://doc.irasia.com/listco/hk/ckh/annual/2025/ar2025.pdf",
+      "method": "text_regex",
+      "verification_status": "machine_extracted",
+      "value": "0.71",
+      "value_in_units": "0.71",
+      "raw_token": "0.710",
+      "line": 18,
+      "evidence": "Interim dividend, paid of HK$0.710 per share (2024: HK$0.688 per share; 2023: HK$0.7"
+    },
+    {
+      "field": "dividend_final_per_share",
+      "definition": null,
+      "statement": null,
+      "fiscal_year": 2025,
+      "period_end": "2025-12-31",
+      "currency": "HKD",
+      "unit": "units",
+      "kind": "amount",
+      "pdf_page": 207,
+      "printed_page": "205",
+      "source_url": "https://doc.irasia.com/listco/hk/ckh/annual/2025/ar2025.pdf",
+      "method": "text_regex",
+      "verification_status": "machine_extracted",
+      "value": "1.602",
+      "value_in_units": "1.602",
+      "raw_token": "1.602",
+      "line": 20,
+      "evidence": "Final dividend, proposed of HK$1.602 per share (2024: HK$1.514 per share; 2023: HK$1.7"
+    }
+  ],
+  "derived": [
+    {
+      "field": "total_assets",
+      "definition": "Non-current + current assets (no printed total line)",
+      "statement": "balance",
+      "fiscal_year": 2025,
+      "period_end": "2025-12-31",
+      "currency": "HKD",
+      "unit": "million",
+      "kind": "amount",
+      "value": "1155673",
+      "value_in_units": "1155673000000",
+      "method": "derived",
+      "derived_from": [
+        "non_current_assets",
+        "current_assets"
+      ],
+      "pdf_page": [
+        136
+      ],
+      "source_url": "https://doc.irasia.com/listco/hk/ckh/annual/2025/ar2025.pdf",
+      "verification_status": "derived_from_machine_extracted"
+    },
+    {
+      "field": "total_liabilities",
+      "definition": "Current + non-current liabilities (no printed total line)",
+      "statement": "balance",
+      "fiscal_year": 2025,
+      "period_end": "2025-12-31",
+      "currency": "HKD",
+      "unit": "million",
+      "kind": "amount",
+      "value": "467281",
+      "value_in_units": "467281000000",
+      "method": "derived",
+      "derived_from": [
+        "current_liabilities",
+        "non_current_liabilities"
+      ],
+      "pdf_page": [
+        136
+      ],
+      "source_url": "https://doc.irasia.com/listco/hk/ckh/annual/2025/ar2025.pdf",
+      "verification_status": "derived_from_machine_extracted"
+    },
+    {
+      "field": "free_cash_flow",
+      "definition": "Operating cash flow minus capex as defined in this profile (simple FCF, not issuer-defined)",
+      "statement": "cash_flow",
+      "fiscal_year": 2025,
+      "period_end": "2025-12-31",
+      "currency": "HKD",
+      "unit": "million",
+      "kind": "amount",
+      "value": "43824",
+      "value_in_units": "43824000000",
+      "method": "derived",
+      "derived_from": [
+        "operating_cash_flow",
+        "-capex"
+      ],
+      "pdf_page": [
+        141
+      ],
+      "source_url": "https://doc.irasia.com/listco/hk/ckh/annual/2025/ar2025.pdf",
+      "verification_status": "derived_from_machine_extracted"
+    }
+  ],
+  "errors": [],
+  "checks": [
+    {
+      "name": "balance_sheet_identity",
+      "left": [
+        "total_assets"
+      ],
+      "right": [
+        "total_liabilities",
+        "total_equity"
+      ],
+      "factor": null,
+      "left_value": "1155673",
+      "right_value": "1155673",
+      "difference": "0",
+      "tolerance": "1",
+      "status": "pass"
+    },
+    {
+      "name": "profit_split",
+      "left": [
+        "net_profit"
+      ],
+      "right": [
+        "net_income_attributable",
+        "nci_profit"
+      ],
+      "factor": null,
+      "left_value": "19370",
+      "right_value": "19370",
+      "difference": "0",
+      "tolerance": "1",
+      "status": "pass"
+    },
+    {
+      "name": "net_assets_equals_total_equity",
+      "left": [
+        "net_assets"
+      ],
+      "right": [
+        "total_equity"
+      ],
+      "factor": null,
+      "left_value": "688392",
+      "right_value": "688392",
+      "difference": "0",
+      "tolerance": "0",
+      "status": "pass"
+    },
+    {
+      "name": "cash_flow_closing_cash_equals_balance_sheet",
+      "left": [
+        "cash_end_cf"
+      ],
+      "right": [
+        "cash"
+      ],
+      "factor": null,
+      "left_value": "143748",
+      "right_value": "143748",
+      "difference": "0",
+      "tolerance": "0",
+      "status": "pass"
+    },
+    {
+      "name": "dps_interim_plus_final",
+      "left": [
+        "dividend_per_share"
+      ],
+      "right": [
+        "dividend_interim_per_share",
+        "dividend_final_per_share"
+      ],
+      "factor": null,
+      "left_value": "2.312",
+      "right_value": "2.312",
+      "difference": "0",
+      "tolerance": "0.0005",
+      "status": "pass"
+    }
+  ],
+  "ratios": {
+    "net_margin": {
+      "value": "0.0423",
+      "formula": "net_income_attributable / revenue",
+      "note": null
+    },
+    "operating_margin": {
+      "value": null,
+      "formula": "operating_profit / revenue",
+      "note": null
+    },
+    "return_on_equity_simple": {
+      "value": "0.0210",
+      "formula": "net_income_attributable / equity_attributable",
+      "note": null
+    },
+    "equity_ratio": {
+      "value": "0.5957",
+      "formula": "total_equity / total_assets",
+      "note": null
+    },
+    "liabilities_to_assets": {
+      "value": "0.4043",
+      "formula": "total_liabilities / total_assets",
+      "note": null
+    },
+    "cash_conversion": {
+      "value": "3.2301",
+      "formula": "operating_cash_flow / net_profit",
+      "note": null
+    },
+    "payout_ratio_per_share": {
+      "value": "0.7482",
+      "formula": "dividend_per_share / eps_basic",
+      "note": null
+    },
+    "cash_dividend_cover": {
+      "value": "5.1449",
+      "formula": "free_cash_flow / dividends_paid_to_shareholders",
+      "note": null
+    }
+  },
+  "manual_review": {
+    "human_review": "pending",
+    "assistant_visual_check": {
+      "date": "2026-11-18",
+      "by": "AI assistant (Claude), not a human reviewer",
+      "method": "statement pages rendered with pdftoppm and read visually; every extracted value on these pages compared with the rendered table",
+      "pdf_pages": [
+        134
+      ],
+      "result": "all values on the listed pages match the rendered original, incl. column (fiscal year 2025) and sign"
+    },
+    "note": "Set human_review to \"approved\" with name/date only after a person has checked the cited pages."
+  },
+  "caveats": [
+    "A US$ convenience-translation column precedes the HK$ columns; it is ignored.",
+    "Financial-highlights \"total revenue\" (HK$507,297m) is on a proportionate basis incl. associates/JVs and is NOT comparable with IFRS revenue (HK$280,036m)."
+  ],
+  "warning": "Machine-extracted values with page/line provenance and arithmetic checks. They are not an audited dataset; see manual_review for human verification status.",
+  "second_engine": {
+    "engine": "pdfplumber",
+    "status": "ok",
+    "summary": {
+      "row_confirmed": 13,
+      "token_on_page": 9,
+      "not_found": 0
+    },
+    "results": [
+      {
+        "field": "revenue",
+        "pdf_page": 134,
+        "token": "280,036",
+        "status": "row_confirmed"
+      },
+      {
+        "field": "profit_before_tax",
+        "pdf_page": 134,
+        "token": "26,607",
+        "status": "row_confirmed"
+      },
+      {
+        "field": "net_profit",
+        "pdf_page": 134,
+        "token": "19,370",
+        "status": "row_confirmed"
+      },
+      {
+        "field": "nci_profit",
+        "pdf_page": 134,
+        "token": "(7,529)",
+        "status": "token_on_page"
+      },
+      {
+        "field": "net_income_attributable",
+        "pdf_page": 134,
+        "token": "11,841",
+        "status": "row_confirmed"
+      },
+      {
+        "field": "eps_basic",
+        "pdf_page": 134,
+        "token": "3.09",
+        "status": "token_on_page"
+      },
+      {
+        "field": "non_current_assets",
+        "pdf_page": 136,
+        "token": "942,930",
+        "status": "token_on_page"
+      },
+      {
+        "field": "current_assets",
+        "pdf_page": 136,
+        "token": "212,743",
+        "status": "token_on_page"
+      },
+      {
+        "field": "cash",
+        "pdf_page": 136,
+        "token": "143,748",
+        "status": "row_confirmed"
+      },
+      {
+        "field": "current_liabilities",
+        "pdf_page": 136,
+        "token": "135,399",
+        "status": "token_on_page"
+      },
+      {
+        "field": "non_current_liabilities",
+        "pdf_page": 136,
+        "token": "331,882",
+        "status": "token_on_page"
+      },
+      {
+        "field": "net_assets",
+        "pdf_page": 136,
+        "token": "688,392",
+        "status": "row_confirmed"
+      },
+      {
+        "field": "equity_attributable",
+        "pdf_page": 137,
+        "token": "562,772",
+        "status": "row_confirmed"
+      },
+      {
+        "field": "total_equity",
+        "pdf_page": 137,
+        "token": "688,392",
+        "status": "row_confirmed"
+      },
+      {
+        "field": "operating_cash_flow",
+        "pdf_page": 141,
+        "token": "62,567",
+        "status": "row_confirmed"
+      },
+      {
+        "field": "capex",
+        "pdf_page": 141,
+        "token": "(18,743)",
+        "status": "row_confirmed"
+      },
+      {
+        "field": "dividends_paid_to_shareholders",
+        "pdf_page": 141,
+        "token": "(8,518)",
+        "status": "row_confirmed"
+      },
+      {
+        "field": "cash_end_cf",
+        "pdf_page": 141,
+        "token": "143,748",
+        "status": "row_confirmed"
+      },
+      {
+        "field": "net_debt",
+        "pdf_page": 142,
+        "token": "117,885",
+        "status": "row_confirmed"
+      },
+      {
+        "field": "dividend_per_share",
+        "pdf_page": 17,
+        "token": "2.312",
+        "status": "token_on_page"
+      },
+      {
+        "field": "dividend_interim_per_share",
+        "pdf_page": 207,
+        "token": "0.710",
+        "status": "token_on_page"
+      },
+      {
+        "field": "dividend_final_per_share",
+        "pdf_page": 207,
+        "token": "1.602",
+        "status": "token_on_page"
+      }
+    ]
+  },
+  "reference_comparison": [
+    {
+      "field": "net_income_attributable",
+      "reference_value": "11841",
+      "reference_unit": "million",
+      "reference_currency": "HKD",
+      "reference_source": "https://www.ckh.com.hk/en/ir/finhigh.php",
+      "reference_rechecked_on": "2026-11-18",
+      "extracted_value": "11841",
+      "difference": "0",
+      "result": "match",
+      "pdf_page": 134
+    },
+    {
+      "field": "eps_basic",
+      "reference_value": "3.09",
+      "reference_unit": "units",
+      "reference_currency": "HKD",
+      "reference_source": "https://www.ckh.com.hk/en/ir/finhigh.php",
+      "reference_rechecked_on": "2026-11-18",
+      "extracted_value": "3.09",
+      "difference": "0.00",
+      "result": "match",
+      "pdf_page": 134
+    },
+    {
+      "field": "dividend_per_share",
+      "reference_value": "2.312",
+      "reference_unit": "units",
+      "reference_currency": "HKD",
+      "reference_source": "https://www.ckh.com.hk/en/ir/finhigh.php",
+      "reference_rechecked_on": "2026-11-18",
+      "extracted_value": "2.312",
+      "difference": "0.000",
+      "result": "match",
+      "pdf_page": 17
+    },
+    {
+      "field": "total_revenue_proportionate_basis",
+      "reference_value": "507297",
+      "reference_unit": "million",
+      "reference_currency": "HKD",
+      "reference_source": "https://www.ckh.com.hk/en/ir/finhigh.php",
+      "reference_rechecked_on": "2026-11-18",
+      "result": "not_comparable",
+      "note": "Proportionate basis incl. share of associates/JVs; NOT IFRS revenue"
+    }
+  ],
+  "extracted_at": "2026-11-18T12:25:27.965581+00:00"
+}

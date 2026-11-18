@@ -1,0 +1,972 @@
+{
+  "symbol": "D05.SI",
+  "company": "DBS Group Holdings Ltd",
+  "fiscal_year": 2025,
+  "period_end": "2025-12-31",
+  "accounting_standard": "SFRS(I) (Singapore Financial Reporting Standards (International))",
+  "currency": "SGD",
+  "unit": "million",
+  "source_url": "https://www.dbs.com/iwov-resources/images/investors/annual-report/dbs-annual-report-2025.pdf",
+  "pdf_sha256": "e7952ba9dff9e339070334ec5d67a71c81a8c618be7f34abad6f3118189b38ce",
+  "pdf_sha256_expected": "e7952ba9dff9e339070334ec5d67a71c81a8c618be7f34abad6f3118189b38ce",
+  "pdf_sha256_status": "match",
+  "page_count": 107,
+  "status": "extracted_consistent",
+  "facts": [
+    {
+      "field": "revenue",
+      "definition": "Bank: total income = net interest income + non-interest income",
+      "statement": "income",
+      "fiscal_year": 2025,
+      "period_end": "2025-12-31",
+      "currency": "SGD",
+      "unit": "million",
+      "kind": "amount",
+      "pdf_page": 58,
+      "printed_page": "112-113",
+      "source_url": "https://www.dbs.com/iwov-resources/images/investors/annual-report/dbs-annual-report-2025.pdf",
+      "method": "table_row",
+      "verification_status": "machine_extracted",
+      "value": "22900",
+      "value_in_units": "22900000000",
+      "raw_token": "22,900",
+      "row_values": [
+        "22,900",
+        "22,297"
+      ],
+      "column_index": 0,
+      "line": 18,
+      "evidence": "Total income 22,900 22,297"
+    },
+    {
+      "field": "net_interest_income",
+      "definition": null,
+      "statement": "income",
+      "fiscal_year": 2025,
+      "period_end": "2025-12-31",
+      "currency": "SGD",
+      "unit": "million",
+      "kind": "amount",
+      "pdf_page": 58,
+      "printed_page": "112-113",
+      "source_url": "https://www.dbs.com/iwov-resources/images/investors/annual-report/dbs-annual-report-2025.pdf",
+      "method": "table_row",
+      "verification_status": "machine_extracted",
+      "value": "14500",
+      "value_in_units": "14500000000",
+      "raw_token": "14,500",
+      "row_values": [
+        "14,500",
+        "14,424"
+      ],
+      "column_index": 0,
+      "line": 12,
+      "evidence": "Net interest income 4 14,500 14,424"
+    },
+    {
+      "field": "non_interest_income",
+      "definition": null,
+      "statement": "income",
+      "fiscal_year": 2025,
+      "period_end": "2025-12-31",
+      "currency": "SGD",
+      "unit": "million",
+      "kind": "amount",
+      "pdf_page": 58,
+      "printed_page": "112-113",
+      "source_url": "https://www.dbs.com/iwov-resources/images/investors/annual-report/dbs-annual-report-2025.pdf",
+      "method": "table_row",
+      "verification_status": "machine_extracted",
+      "value": "8400",
+      "value_in_units": "8400000000",
+      "raw_token": "8,400",
+      "row_values": [
+        "8,400",
+        "7,873"
+      ],
+      "column_index": 0,
+      "line": 17,
+      "evidence": "Non-interest income 8,400 7,873"
+    },
+    {
+      "field": "allowances",
+      "definition": null,
+      "statement": "income",
+      "fiscal_year": 2025,
+      "period_end": "2025-12-31",
+      "currency": "SGD",
+      "unit": "million",
+      "kind": "amount",
+      "pdf_page": 58,
+      "printed_page": "112-113",
+      "source_url": "https://www.dbs.com/iwov-resources/images/investors/annual-report/dbs-annual-report-2025.pdf",
+      "method": "table_row",
+      "verification_status": "machine_extracted",
+      "value": "791",
+      "value_in_units": "791000000",
+      "raw_token": "791",
+      "row_values": [
+        "791",
+        "622"
+      ],
+      "column_index": 0,
+      "line": 24,
+      "evidence": "Allowances for credit and other losses 11 791 622"
+    },
+    {
+      "field": "profit_before_tax",
+      "definition": null,
+      "statement": "income",
+      "fiscal_year": 2025,
+      "period_end": "2025-12-31",
+      "currency": "SGD",
+      "unit": "million",
+      "kind": "amount",
+      "pdf_page": 58,
+      "printed_page": "112-113",
+      "source_url": "https://www.dbs.com/iwov-resources/images/investors/annual-report/dbs-annual-report-2025.pdf",
+      "method": "table_row",
+      "verification_status": "machine_extracted",
+      "value": "12999",
+      "value_in_units": "12999000000",
+      "raw_token": "12,999",
+      "row_values": [
+        "12,999",
+        "12,884"
+      ],
+      "column_index": 0,
+      "line": 27,
+      "evidence": "Profit before tax 12,999 12,884"
+    },
+    {
+      "field": "net_profit",
+      "definition": null,
+      "statement": "income",
+      "fiscal_year": 2025,
+      "period_end": "2025-12-31",
+      "currency": "SGD",
+      "unit": "million",
+      "kind": "amount",
+      "pdf_page": 58,
+      "printed_page": "112-113",
+      "source_url": "https://www.dbs.com/iwov-resources/images/investors/annual-report/dbs-annual-report-2025.pdf",
+      "method": "table_row",
+      "verification_status": "machine_extracted",
+      "value": "10934",
+      "value_in_units": "10934000000",
+      "raw_token": "10,934",
+      "row_values": [
+        "10,934",
+        "11,290"
+      ],
+      "column_index": 0,
+      "line": 29,
+      "evidence": "Net profit 10,934 11,290"
+    },
+    {
+      "field": "net_income_attributable",
+      "definition": null,
+      "statement": "income",
+      "fiscal_year": 2025,
+      "period_end": "2025-12-31",
+      "currency": "SGD",
+      "unit": "million",
+      "kind": "amount",
+      "pdf_page": 58,
+      "printed_page": "112-113",
+      "source_url": "https://www.dbs.com/iwov-resources/images/investors/annual-report/dbs-annual-report-2025.pdf",
+      "method": "table_row",
+      "verification_status": "machine_extracted",
+      "value": "10933",
+      "value_in_units": "10933000000",
+      "raw_token": "10,933",
+      "row_values": [
+        "10,933",
+        "11,289"
+      ],
+      "column_index": 0,
+      "line": 31,
+      "evidence": "Shareholders of the parent 10,933 11,289"
+    },
+    {
+      "field": "nci_profit",
+      "definition": null,
+      "statement": "income",
+      "fiscal_year": 2025,
+      "period_end": "2025-12-31",
+      "currency": "SGD",
+      "unit": "million",
+      "kind": "amount",
+      "pdf_page": 58,
+      "printed_page": "112-113",
+      "source_url": "https://www.dbs.com/iwov-resources/images/investors/annual-report/dbs-annual-report-2025.pdf",
+      "method": "table_row",
+      "verification_status": "machine_extracted",
+      "value": "1",
+      "value_in_units": "1000000",
+      "raw_token": "1",
+      "row_values": [
+        "1",
+        "1"
+      ],
+      "column_index": 0,
+      "line": 32,
+      "evidence": "Non-controlling interests 1 1"
+    },
+    {
+      "field": "eps_basic",
+      "definition": null,
+      "statement": "income",
+      "fiscal_year": 2025,
+      "period_end": "2025-12-31",
+      "currency": "SGD",
+      "unit": "units",
+      "kind": "amount",
+      "pdf_page": 58,
+      "printed_page": "112-113",
+      "source_url": "https://www.dbs.com/iwov-resources/images/investors/annual-report/dbs-annual-report-2025.pdf",
+      "method": "table_row",
+      "verification_status": "machine_extracted",
+      "value": "3.84",
+      "value_in_units": "3.84",
+      "raw_token": "3.84",
+      "row_values": [
+        "3.84",
+        "3.94"
+      ],
+      "column_index": 0,
+      "line": 35,
+      "evidence": "Basic 13 3.84 3.94"
+    },
+    {
+      "field": "total_assets",
+      "definition": null,
+      "statement": "balance",
+      "fiscal_year": 2025,
+      "period_end": "2025-12-31",
+      "currency": "SGD",
+      "unit": "million",
+      "kind": "amount",
+      "pdf_page": 59,
+      "printed_page": "114-115",
+      "source_url": "https://www.dbs.com/iwov-resources/images/investors/annual-report/dbs-annual-report-2025.pdf",
+      "method": "table_row",
+      "verification_status": "machine_extracted",
+      "value": "897488",
+      "value_in_units": "897488000000",
+      "raw_token": "897,488",
+      "row_values": [
+        "897,488",
+        "827,219",
+        "24,010",
+        "25,999"
+      ],
+      "column_index": 0,
+      "line": 24,
+      "evidence": "Total assets 897,488 827,219 24,010 25,999"
+    },
+    {
+      "field": "total_liabilities",
+      "definition": null,
+      "statement": "balance",
+      "fiscal_year": 2025,
+      "period_end": "2025-12-31",
+      "currency": "SGD",
+      "unit": "million",
+      "kind": "amount",
+      "pdf_page": 59,
+      "printed_page": "114-115",
+      "source_url": "https://www.dbs.com/iwov-resources/images/investors/annual-report/dbs-annual-report-2025.pdf",
+      "method": "table_row",
+      "verification_status": "machine_extracted",
+      "value": "828572",
+      "value_in_units": "828572000000",
+      "raw_token": "828,572",
+      "row_values": [
+        "828,572",
+        "758,386",
+        "6,367",
+        "6,305"
+      ],
+      "column_index": 0,
+      "line": 33,
+      "evidence": "Total liabilities 828,572 758,386 6,367 6,305"
+    },
+    {
+      "field": "equity_attributable",
+      "definition": null,
+      "statement": "balance",
+      "fiscal_year": 2025,
+      "period_end": "2025-12-31",
+      "currency": "SGD",
+      "unit": "million",
+      "kind": "amount",
+      "pdf_page": 59,
+      "printed_page": "114-115",
+      "source_url": "https://www.dbs.com/iwov-resources/images/investors/annual-report/dbs-annual-report-2025.pdf",
+      "method": "table_row",
+      "verification_status": "machine_extracted",
+      "value": "68867",
+      "value_in_units": "68867000000",
+      "raw_token": "68,867",
+      "row_values": [
+        "68,867",
+        "68,786",
+        "17,643",
+        "19,694"
+      ],
+      "column_index": 0,
+      "line": 40,
+      "evidence": "Shareholders' funds 68,867 68,786 17,643 19,694"
+    },
+    {
+      "field": "total_equity",
+      "definition": null,
+      "statement": "balance",
+      "fiscal_year": 2025,
+      "period_end": "2025-12-31",
+      "currency": "SGD",
+      "unit": "million",
+      "kind": "amount",
+      "pdf_page": 59,
+      "printed_page": "114-115",
+      "source_url": "https://www.dbs.com/iwov-resources/images/investors/annual-report/dbs-annual-report-2025.pdf",
+      "method": "table_row",
+      "verification_status": "machine_extracted",
+      "value": "68916",
+      "value_in_units": "68916000000",
+      "raw_token": "68,916",
+      "row_values": [
+        "68,916",
+        "68,833",
+        "17,643",
+        "19,694"
+      ],
+      "column_index": 0,
+      "line": 42,
+      "evidence": "Total equity 68,916 68,833 17,643 19,694"
+    },
+    {
+      "field": "net_assets",
+      "definition": null,
+      "statement": "balance",
+      "fiscal_year": 2025,
+      "period_end": "2025-12-31",
+      "currency": "SGD",
+      "unit": "million",
+      "kind": "amount",
+      "pdf_page": 59,
+      "printed_page": "114-115",
+      "source_url": "https://www.dbs.com/iwov-resources/images/investors/annual-report/dbs-annual-report-2025.pdf",
+      "method": "table_row",
+      "verification_status": "machine_extracted",
+      "value": "68916",
+      "value_in_units": "68916000000",
+      "raw_token": "68,916",
+      "row_values": [
+        "68,916",
+        "68,833",
+        "17,643",
+        "19,694"
+      ],
+      "column_index": 0,
+      "line": 34,
+      "evidence": "Net assets 68,916 68,833 17,643 19,694"
+    },
+    {
+      "field": "cash",
+      "definition": "Cash and balances with central banks",
+      "statement": "balance",
+      "fiscal_year": 2025,
+      "period_end": "2025-12-31",
+      "currency": "SGD",
+      "unit": "million",
+      "kind": "amount",
+      "pdf_page": 59,
+      "printed_page": "114-115",
+      "source_url": "https://www.dbs.com/iwov-resources/images/investors/annual-report/dbs-annual-report-2025.pdf",
+      "method": "table_row",
+      "verification_status": "machine_extracted",
+      "value": "55844",
+      "value_in_units": "55844000000",
+      "raw_token": "55,844",
+      "row_values": [
+        "55,844",
+        "58,646",
+        "–",
+        "–"
+      ],
+      "column_index": 0,
+      "line": 12,
+      "evidence": "Cash and balances with central banks 15 55,844 58,646 – –"
+    },
+    {
+      "field": "customer_loans",
+      "definition": null,
+      "statement": "balance",
+      "fiscal_year": 2025,
+      "period_end": "2025-12-31",
+      "currency": "SGD",
+      "unit": "million",
+      "kind": "amount",
+      "pdf_page": 59,
+      "printed_page": "114-115",
+      "source_url": "https://www.dbs.com/iwov-resources/images/investors/annual-report/dbs-annual-report-2025.pdf",
+      "method": "table_row",
+      "verification_status": "machine_extracted",
+      "value": "445011",
+      "value_in_units": "445011000000",
+      "raw_token": "445,011",
+      "row_values": [
+        "445,011",
+        "430,594",
+        "–",
+        "–"
+      ],
+      "column_index": 0,
+      "line": 17,
+      "evidence": "Loans and advances to customers 18 445,011 430,594 – –"
+    },
+    {
+      "field": "customer_deposits",
+      "definition": null,
+      "statement": "balance",
+      "fiscal_year": 2025,
+      "period_end": "2025-12-31",
+      "currency": "SGD",
+      "unit": "million",
+      "kind": "amount",
+      "pdf_page": 59,
+      "printed_page": "114-115",
+      "source_url": "https://www.dbs.com/iwov-resources/images/investors/annual-report/dbs-annual-report-2025.pdf",
+      "method": "table_row",
+      "verification_status": "machine_extracted",
+      "value": "610023",
+      "value_in_units": "610023000000",
+      "raw_token": "610,023",
+      "row_values": [
+        "610,023",
+        "561,730",
+        "–",
+        "–"
+      ],
+      "column_index": 0,
+      "line": 27,
+      "evidence": "Deposits and balances from customers 28 610,023 561,730 – –"
+    },
+    {
+      "field": "operating_cash_flow",
+      "definition": "Bank operating cash flow is dominated by deposit/loan movements",
+      "statement": "cash_flow",
+      "fiscal_year": 2025,
+      "period_end": "2025-12-31",
+      "currency": "SGD",
+      "unit": "million",
+      "kind": "amount",
+      "pdf_page": 60,
+      "printed_page": "116-117",
+      "source_url": "https://www.dbs.com/iwov-resources/images/investors/annual-report/dbs-annual-report-2025.pdf",
+      "method": "table_row",
+      "verification_status": "machine_extracted",
+      "value": "11024",
+      "value_in_units": "11024000000",
+      "raw_token": "11,024",
+      "row_values": [
+        "11,024",
+        "15,341"
+      ],
+      "column_index": 0,
+      "line": 37,
+      "evidence": "Net cash generated from operating activities (1) 11,024 15,341"
+    },
+    {
+      "field": "capex",
+      "definition": null,
+      "statement": "cash_flow",
+      "fiscal_year": 2025,
+      "period_end": "2025-12-31",
+      "currency": "SGD",
+      "unit": "million",
+      "kind": "amount",
+      "pdf_page": 60,
+      "printed_page": "116-117",
+      "source_url": "https://www.dbs.com/iwov-resources/images/investors/annual-report/dbs-annual-report-2025.pdf",
+      "method": "table_row",
+      "verification_status": "machine_extracted",
+      "value": "525",
+      "value_in_units": "525000000",
+      "raw_token": "(525)",
+      "row_values": [
+        "(525)",
+        "(916)"
+      ],
+      "column_index": 0,
+      "line": 44,
+      "evidence": "Purchase of properties and other fixed assets (525) (916)"
+    },
+    {
+      "field": "dividends_paid_to_shareholders",
+      "definition": "Incl. capital-securities distributions and Capital Return dividends",
+      "statement": "cash_flow",
+      "fiscal_year": 2025,
+      "period_end": "2025-12-31",
+      "currency": "SGD",
+      "unit": "million",
+      "kind": "amount",
+      "pdf_page": 60,
+      "printed_page": "116-117",
+      "source_url": "https://www.dbs.com/iwov-resources/images/investors/annual-report/dbs-annual-report-2025.pdf",
+      "method": "table_row",
+      "verification_status": "machine_extracted",
+      "value": "8151",
+      "value_in_units": "8151000000",
+      "raw_token": "(8,151)",
+      "row_values": [
+        "(8,151)",
+        "(6,083)"
+      ],
+      "column_index": 0,
+      "line": 51,
+      "evidence": "Dividends paid to shareholders of the Company(a) (8,151) (6,083)"
+    },
+    {
+      "field": "dividend_per_share",
+      "definition": "Five-year summary; 2025 includes Capital Return dividends of $0.60",
+      "statement": null,
+      "fiscal_year": 2025,
+      "period_end": "2025-12-31",
+      "currency": "SGD",
+      "unit": "units",
+      "kind": "amount",
+      "pdf_page": 89,
+      "printed_page": "174-175",
+      "source_url": "https://www.dbs.com/iwov-resources/images/investors/annual-report/dbs-annual-report-2025.pdf",
+      "method": "table_row",
+      "verification_status": "machine_extracted",
+      "value": "3.06",
+      "value_in_units": "3.06",
+      "raw_token": "3.06",
+      "row_values": [
+        "3.06",
+        "2.22",
+        "1.75",
+        "1.82",
+        "1.09"
+      ],
+      "column_index": 0,
+      "line": 87,
+      "evidence": "Dividends per share(6)  3.06  2.22  1.75 1.82  1.09"
+    },
+    {
+      "field": "dividend_interim_ordinary",
+      "definition": null,
+      "statement": null,
+      "fiscal_year": 2025,
+      "period_end": "2025-12-31",
+      "currency": "SGD",
+      "unit": "units",
+      "kind": "amount",
+      "pdf_page": 75,
+      "printed_page": "146-147",
+      "source_url": "https://www.dbs.com/iwov-resources/images/investors/annual-report/dbs-annual-report-2025.pdf",
+      "method": "text_regex",
+      "verification_status": "machine_extracted",
+      "value": "1.8",
+      "value_in_units": "1.8",
+      "raw_token": "1.80",
+      "line": 119,
+      "evidence": "Interim one-tier tax-exempt dividends on ordinary shares of $1.80 paid for the current financial year (2024: $"
+    },
+    {
+      "field": "dividend_final_ordinary",
+      "definition": null,
+      "statement": null,
+      "fiscal_year": 2025,
+      "period_end": "2025-12-31",
+      "currency": "SGD",
+      "unit": "units",
+      "kind": "amount",
+      "pdf_page": 75,
+      "printed_page": "146-147",
+      "source_url": "https://www.dbs.com/iwov-resources/images/investors/annual-report/dbs-annual-report-2025.pdf",
+      "method": "text_regex",
+      "verification_status": "machine_extracted",
+      "value": "0.66",
+      "value_in_units": "0.66",
+      "raw_token": "0.66",
+      "line": 129,
+      "evidence": "Proposed final one-tier tax-exempt ordinary dividends of $0.66 per share and Capital Return dividends of $0.15 p"
+    },
+    {
+      "field": "capital_return_q1_q3",
+      "definition": null,
+      "statement": null,
+      "fiscal_year": 2025,
+      "period_end": "2025-12-31",
+      "currency": "SGD",
+      "unit": "units",
+      "kind": "amount",
+      "pdf_page": 75,
+      "printed_page": "146-147",
+      "source_url": "https://www.dbs.com/iwov-resources/images/investors/annual-report/dbs-annual-report-2025.pdf",
+      "method": "text_regex",
+      "verification_status": "machine_extracted",
+      "value": "0.45",
+      "value_in_units": "0.45",
+      "raw_token": "0.45",
+      "line": 118,
+      "evidence": "Capital Return dividends on ordinary shares of $0.45 for the first three quarters (2024: Nil) 1,277 – Interim one-tier ta"
+    },
+    {
+      "field": "capital_return_q4",
+      "definition": null,
+      "statement": null,
+      "fiscal_year": 2025,
+      "period_end": "2025-12-31",
+      "currency": "SGD",
+      "unit": "units",
+      "kind": "amount",
+      "pdf_page": 75,
+      "printed_page": "146-147",
+      "source_url": "https://www.dbs.com/iwov-resources/images/investors/annual-report/dbs-annual-report-2025.pdf",
+      "method": "text_regex",
+      "verification_status": "machine_extracted",
+      "value": "0.15",
+      "value_in_units": "0.15",
+      "raw_token": "0.15",
+      "line": 129,
+      "evidence": "dinary dividends of $0.66 per share and Capital Return dividends of $0.15 per share for the fourth quarter 2025 have not been accounted for in the"
+    }
+  ],
+  "derived": [
+    {
+      "field": "total_income_check",
+      "definition": "NII + non-interest income",
+      "statement": null,
+      "fiscal_year": 2025,
+      "period_end": "2025-12-31",
+      "currency": "SGD",
+      "unit": "million",
+      "kind": "amount",
+      "value": "22900",
+      "value_in_units": "22900000000",
+      "method": "derived",
+      "derived_from": [
+        "net_interest_income",
+        "non_interest_income"
+      ],
+      "pdf_page": [
+        58
+      ],
+      "source_url": "https://www.dbs.com/iwov-resources/images/investors/annual-report/dbs-annual-report-2025.pdf",
+      "verification_status": "derived_from_machine_extracted"
+    }
+  ],
+  "errors": [],
+  "checks": [
+    {
+      "name": "balance_sheet_identity",
+      "left": [
+        "total_assets"
+      ],
+      "right": [
+        "total_liabilities",
+        "total_equity"
+      ],
+      "factor": null,
+      "left_value": "897488",
+      "right_value": "897488",
+      "difference": "0",
+      "tolerance": "1",
+      "status": "pass"
+    },
+    {
+      "name": "profit_split",
+      "left": [
+        "net_profit"
+      ],
+      "right": [
+        "net_income_attributable",
+        "nci_profit"
+      ],
+      "factor": null,
+      "left_value": "10934",
+      "right_value": "10934",
+      "difference": "0",
+      "tolerance": "1",
+      "status": "pass"
+    },
+    {
+      "name": "net_assets_equals_total_equity",
+      "left": [
+        "net_assets"
+      ],
+      "right": [
+        "total_equity"
+      ],
+      "factor": null,
+      "left_value": "68916",
+      "right_value": "68916",
+      "difference": "0",
+      "tolerance": "0",
+      "status": "pass"
+    },
+    {
+      "name": "total_income_components",
+      "left": [
+        "revenue"
+      ],
+      "right": [
+        "total_income_check"
+      ],
+      "factor": null,
+      "left_value": "22900",
+      "right_value": "22900",
+      "difference": "0",
+      "tolerance": "0",
+      "status": "pass"
+    },
+    {
+      "name": "dps_components",
+      "left": [
+        "dividend_per_share"
+      ],
+      "right": [
+        "dividend_interim_ordinary",
+        "dividend_final_ordinary",
+        "capital_return_q1_q3",
+        "capital_return_q4"
+      ],
+      "factor": null,
+      "left_value": "3.06",
+      "right_value": "3.06",
+      "difference": "0",
+      "tolerance": "0.0005",
+      "status": "pass"
+    }
+  ],
+  "ratios": {
+    "net_margin": {
+      "value": "0.4774",
+      "formula": "net_income_attributable / revenue",
+      "note": null
+    },
+    "operating_margin": {
+      "value": null,
+      "formula": "operating_profit / revenue",
+      "note": "not meaningful for this issuer"
+    },
+    "return_on_equity_simple": {
+      "value": "0.1588",
+      "formula": "net_income_attributable / equity_attributable",
+      "note": null
+    },
+    "equity_ratio": {
+      "value": "0.0768",
+      "formula": "total_equity / total_assets",
+      "note": null
+    },
+    "liabilities_to_assets": {
+      "value": "0.9232",
+      "formula": "total_liabilities / total_assets",
+      "note": null
+    },
+    "cash_conversion": {
+      "value": null,
+      "formula": "operating_cash_flow / net_profit",
+      "note": "not meaningful for this issuer"
+    },
+    "payout_ratio_per_share": {
+      "value": "0.7969",
+      "formula": "dividend_per_share / eps_basic",
+      "note": null
+    },
+    "cash_dividend_cover": {
+      "value": null,
+      "formula": "free_cash_flow / dividends_paid_to_shareholders",
+      "note": "not meaningful for this issuer"
+    }
+  },
+  "manual_review": {
+    "human_review": "pending",
+    "assistant_visual_check": {
+      "date": "2026-11-18",
+      "by": "AI assistant (Claude), not a human reviewer",
+      "method": "statement pages rendered with pdftoppm and read visually; every extracted value on these pages compared with the rendered table",
+      "pdf_pages": [
+        59
+      ],
+      "result": "all values on the listed pages match the rendered original, incl. column (fiscal year 2025) and sign"
+    },
+    "note": "Set human_review to \"approved\" with name/date only after a person has checked the cited pages."
+  },
+  "caveats": [
+    "Bank: \"revenue\" is total income; FCF/operating-margin style ratios are not meaningful and are suppressed.",
+    "PDF pages are two-page spreads; printed pages are given as ranges (e.g. 112-113).",
+    "Balance sheet page shows Group and Company columns; Group 2025 column (index 0) is used."
+  ],
+  "warning": "Machine-extracted values with page/line provenance and arithmetic checks. They are not an audited dataset; see manual_review for human verification status.",
+  "second_engine": {
+    "engine": "pdfplumber",
+    "status": "ok",
+    "summary": {
+      "row_confirmed": 9,
+      "token_on_page": 16,
+      "not_found": 0
+    },
+    "results": [
+      {
+        "field": "revenue",
+        "pdf_page": 58,
+        "token": "22,900",
+        "status": "token_on_page"
+      },
+      {
+        "field": "net_interest_income",
+        "pdf_page": 58,
+        "token": "14,500",
+        "status": "token_on_page"
+      },
+      {
+        "field": "non_interest_income",
+        "pdf_page": 58,
+        "token": "8,400",
+        "status": "token_on_page"
+      },
+      {
+        "field": "allowances",
+        "pdf_page": 58,
+        "token": "791",
+        "status": "token_on_page"
+      },
+      {
+        "field": "profit_before_tax",
+        "pdf_page": 58,
+        "token": "12,999",
+        "status": "token_on_page"
+      },
+      {
+        "field": "net_profit",
+        "pdf_page": 58,
+        "token": "10,934",
+        "status": "token_on_page"
+      },
+      {
+        "field": "net_income_attributable",
+        "pdf_page": 58,
+        "token": "10,933",
+        "status": "token_on_page"
+      },
+      {
+        "field": "nci_profit",
+        "pdf_page": 58,
+        "token": "1",
+        "status": "token_on_page"
+      },
+      {
+        "field": "eps_basic",
+        "pdf_page": 58,
+        "token": "3.84",
+        "status": "row_confirmed"
+      },
+      {
+        "field": "total_assets",
+        "pdf_page": 59,
+        "token": "897,488",
+        "status": "row_confirmed"
+      },
+      {
+        "field": "total_liabilities",
+        "pdf_page": 59,
+        "token": "828,572",
+        "status": "token_on_page"
+      },
+      {
+        "field": "equity_attributable",
+        "pdf_page": 59,
+        "token": "68,867",
+        "status": "row_confirmed"
+      },
+      {
+        "field": "total_equity",
+        "pdf_page": 59,
+        "token": "68,916",
+        "status": "row_confirmed"
+      },
+      {
+        "field": "net_assets",
+        "pdf_page": 59,
+        "token": "68,916",
+        "status": "token_on_page"
+      },
+      {
+        "field": "cash",
+        "pdf_page": 59,
+        "token": "55,844",
+        "status": "row_confirmed"
+      },
+      {
+        "field": "customer_loans",
+        "pdf_page": 59,
+        "token": "445,011",
+        "status": "row_confirmed"
+      },
+      {
+        "field": "customer_deposits",
+        "pdf_page": 59,
+        "token": "610,023",
+        "status": "row_confirmed"
+      },
+      {
+        "field": "operating_cash_flow",
+        "pdf_page": 60,
+        "token": "11,024",
+        "status": "row_confirmed"
+      },
+      {
+        "field": "capex",
+        "pdf_page": 60,
+        "token": "(525)",
+        "status": "row_confirmed"
+      },
+      {
+        "field": "dividends_paid_to_shareholders",
+        "pdf_page": 60,
+        "token": "(8,151)",
+        "status": "token_on_page"
+      },
+      {
+        "field": "dividend_per_share",
+        "pdf_page": 89,
+        "token": "3.06",
+        "status": "token_on_page"
+      },
+      {
+        "field": "dividend_interim_ordinary",
+        "pdf_page": 75,
+        "token": "1.80",
+        "status": "token_on_page"
+      },
+      {
+        "field": "dividend_final_ordinary",
+        "pdf_page": 75,
+        "token": "0.66",
+        "status": "token_on_page"
+      },
+      {
+        "field": "capital_return_q1_q3",
+        "pdf_page": 75,
+        "token": "0.45",
+        "status": "token_on_page"
+      },
+      {
+        "field": "capital_return_q4",
+        "pdf_page": 75,
+        "token": "0.15",
+        "status": "token_on_page"
+      }
+    ]
+  },
+  "reference_comparison": [],
+  "extracted_at": "2026-11-18T12:25:30.674132+00:00"
+}

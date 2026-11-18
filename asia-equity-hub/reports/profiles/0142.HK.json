@@ -1,0 +1,289 @@
+{
+  "symbol": "0142.HK",
+  "company": "First Pacific Company Limited",
+  "fiscal_year": 2025,
+  "period_end": "2025-12-31",
+  "accounting_standard": "HKFRS Accounting Standards (HKICPA)",
+  "currency": "USD",
+  "unit": "million",
+  "source_url": "https://www.firstpacific.com/wp-content/uploads/2026/04/ew0142.pdf",
+  "source_type": "issuer IR website",
+  "printed_page_rule": {
+    "offset": -2
+  },
+  "statements": {
+    "income": {
+      "header_regex": "For the year ended 31 December 2025 2024 US\\$ millions"
+    },
+    "balance": {
+      "header_regex": "At 31 December 2025 At 31 December 2024"
+    },
+    "cash_flow": {
+      "header_regex": "For the year ended 31 December 2025 2024 US\\$ millions"
+    }
+  },
+  "ratio_overrides": {
+    "payout_ratio_per_share": [
+      "dividend_per_share_usd_cents",
+      "eps_basic"
+    ]
+  },
+  "caveats": [
+    "Reporting currency USD; distributions declared in HK cents with U.S. cent equivalents.",
+    "A 2025 special distribution (Maynilad shares + cash, ~U.S. 0.15 cent/share) is excluded from dividend_per_share.",
+    "Cash flow closing cash (US$4,149.4m) excludes deposits > 3 months contained in balance-sheet cash (US$4,206.1m)."
+  ],
+  "pdf_sha256": "4dca002f1a256863e5343968f47d6f669dfcdf7930509a445f6aad0585822fe0",
+  "pdf_page_count": 222,
+  "manual_review": {
+    "human_review": "pending",
+    "assistant_visual_check": {
+      "date": "2026-11-18",
+      "by": "AI assistant (Claude), not a human reviewer",
+      "method": "statement pages rendered with pdftoppm and read visually; every extracted value on these pages compared with the rendered table",
+      "pdf_pages": [
+        108
+      ],
+      "result": "all values on the listed pages match the rendered original, incl. column (fiscal year 2025) and sign"
+    },
+    "note": "Set human_review to \"approved\" with name/date only after a person has checked the cited pages."
+  },
+  "fields": [
+    {
+      "field": "revenue",
+      "page": 103,
+      "label": "^Turnover$",
+      "columns": 2,
+      "column": 0,
+      "statement": "income"
+    },
+    {
+      "field": "profit_before_tax",
+      "page": 103,
+      "label": "^Profit before Taxation$",
+      "columns": 2,
+      "column": 0,
+      "statement": "income"
+    },
+    {
+      "field": "net_profit",
+      "page": 103,
+      "label": "^Profit for the Year$",
+      "columns": 2,
+      "column": 0,
+      "statement": "income"
+    },
+    {
+      "field": "net_income_attributable",
+      "page": 103,
+      "label": "^Owners of the Parent$",
+      "columns": 2,
+      "column": 0,
+      "statement": "income"
+    },
+    {
+      "field": "nci_profit",
+      "page": 103,
+      "label": "^Non-controlling Interests$",
+      "columns": 2,
+      "column": 0,
+      "statement": "income"
+    },
+    {
+      "field": "eps_basic",
+      "page": 103,
+      "label": "^Basic$",
+      "columns": 2,
+      "column": 0,
+      "statement": "income",
+      "unit": "cents",
+      "definition": "Basic EPS in U.S. cents"
+    },
+    {
+      "field": "non_current_assets",
+      "page": 105,
+      "label": "^$",
+      "columns": 2,
+      "column": 0,
+      "statement": "balance",
+      "after": "Other non-current assets"
+    },
+    {
+      "field": "current_assets",
+      "page": 105,
+      "label": "^$",
+      "columns": 2,
+      "column": 0,
+      "statement": "balance",
+      "after": "Assets classified as held for sale"
+    },
+    {
+      "field": "cash",
+      "page": 105,
+      "label": "^Cash and cash equivalents and short-term deposits$",
+      "columns": 2,
+      "column": 0,
+      "statement": "balance"
+    },
+    {
+      "field": "current_liabilities",
+      "page": 105,
+      "label": "^$",
+      "columns": 2,
+      "column": 0,
+      "statement": "balance",
+      "after": "Current portion of deferred liabilities"
+    },
+    {
+      "field": "non_current_liabilities",
+      "page": 105,
+      "label": "^$",
+      "columns": 2,
+      "column": 0,
+      "statement": "balance",
+      "after": "^Deferred tax liabilities"
+    },
+    {
+      "field": "equity_attributable",
+      "page": 105,
+      "label": "^Equity attributable to owners of the parent$",
+      "columns": 2,
+      "column": 0,
+      "statement": "balance"
+    },
+    {
+      "field": "total_equity",
+      "page": 105,
+      "label": "^Total Equity$",
+      "columns": 2,
+      "column": 0,
+      "statement": "balance"
+    },
+    {
+      "field": "operating_cash_flow",
+      "page": 107,
+      "label": "^Net Cash Flows From Operating Activities$",
+      "columns": 2,
+      "column": 0,
+      "statement": "cash_flow"
+    },
+    {
+      "field": "capex",
+      "page": 108,
+      "label": "^Payments for purchases of property, plant and equipment$",
+      "columns": 2,
+      "column": 0,
+      "statement": "cash_flow",
+      "sign": "abs",
+      "definition": "PPE purchases only (excludes US$859.7m investments in other intangible/concession assets)"
+    },
+    {
+      "field": "dividends_paid_to_shareholders",
+      "page": 108,
+      "label": "^Distributions paid to shareholders$",
+      "columns": 2,
+      "column": 0,
+      "statement": "cash_flow",
+      "sign": "abs"
+    },
+    {
+      "field": "cash_end_cf",
+      "page": 108,
+      "label": "^Cash and Cash Equivalents at 31 December$",
+      "columns": 2,
+      "column": 0,
+      "statement": "cash_flow"
+    },
+    {
+      "field": "dividend_per_share",
+      "page": 14,
+      "pattern": "total distribution for 2025 rose .{0,40}?HK ([\\d.]+) cents",
+      "unit": "cents",
+      "currency": "HKD",
+      "definition": "Total ordinary distribution per share, HK cents (excl. special distribution)"
+    },
+    {
+      "field": "dividend_per_share_usd_cents",
+      "page": 14,
+      "pattern": "total distribution for 2025 rose .{0,40}?\\(U\\.S\\. ([\\d.]+) cents\\)",
+      "unit": "cents",
+      "definition": "Total ordinary distribution per share, U.S. cents"
+    },
+    {
+      "field": "dividend_interim_usd_cents",
+      "page": 14,
+      "pattern": "interim distribution of HK 13.0 cents \\(U\\.S\\. ([\\d.]+) cents\\)",
+      "unit": "cents"
+    },
+    {
+      "field": "dividend_final_usd_cents",
+      "page": 14,
+      "pattern": "final distribution of HK 14.0 cents \\(U\\.S\\. ([\\d.]+) cents\\)",
+      "unit": "cents"
+    }
+  ],
+  "derived": [
+    {
+      "field": "total_assets",
+      "sum": [
+        "non_current_assets",
+        "current_assets"
+      ],
+      "statement": "balance",
+      "definition": "Non-current + current assets"
+    },
+    {
+      "field": "total_liabilities",
+      "sum": [
+        "current_liabilities",
+        "non_current_liabilities"
+      ],
+      "statement": "balance",
+      "definition": "Current + non-current liabilities"
+    },
+    {
+      "field": "free_cash_flow",
+      "sum": [
+        "operating_cash_flow",
+        "-capex"
+      ],
+      "definition": "Operating cash flow minus capex as defined in this profile (simple FCF, not issuer-defined)",
+      "statement": "cash_flow"
+    }
+  ],
+  "checks": [
+    {
+      "name": "balance_sheet_identity",
+      "left": [
+        "total_assets"
+      ],
+      "right": [
+        "total_liabilities",
+        "total_equity"
+      ],
+      "tolerance": "1"
+    },
+    {
+      "name": "profit_split",
+      "left": [
+        "net_profit"
+      ],
+      "right": [
+        "net_income_attributable",
+        "nci_profit"
+      ],
+      "tolerance": "1"
+    },
+    {
+      "name": "dps_interim_plus_final_usd",
+      "left": [
+        "dividend_per_share_usd_cents"
+      ],
+      "right": [
+        "dividend_interim_usd_cents",
+        "dividend_final_usd_cents"
+      ],
+      "tolerance": "0.005"
+    }
+  ]
+}

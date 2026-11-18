@@ -1,0 +1,323 @@
+{
+  "symbol": "D05.SI",
+  "company": "DBS Group Holdings Ltd",
+  "fiscal_year": 2025,
+  "period_end": "2025-12-31",
+  "accounting_standard": "SFRS(I) (Singapore Financial Reporting Standards (International))",
+  "currency": "SGD",
+  "unit": "million",
+  "source_url": "https://www.dbs.com/iwov-resources/images/investors/annual-report/dbs-annual-report-2025.pdf",
+  "source_type": "issuer investor relations",
+  "printed_page_rule": {
+    "offset": -4,
+    "spread": true
+  },
+  "statements": {
+    "income": {
+      "header_regex": "In \\$ millions Note 2025 2024"
+    },
+    "balance": {
+      "header_regex": "The Group The Company In \\$ millions Note 2025 2024 2025 2024"
+    },
+    "cash_flow": {
+      "header_regex": "In \\$ millions 2025 2024"
+    }
+  },
+  "ratios_not_meaningful": [
+    "operating_margin",
+    "cash_conversion",
+    "cash_dividend_cover"
+  ],
+  "caveats": [
+    "Bank: \"revenue\" is total income; FCF/operating-margin style ratios are not meaningful and are suppressed.",
+    "PDF pages are two-page spreads; printed pages are given as ranges (e.g. 112-113).",
+    "Balance sheet page shows Group and Company columns; Group 2025 column (index 0) is used."
+  ],
+  "pdf_sha256": "e7952ba9dff9e339070334ec5d67a71c81a8c618be7f34abad6f3118189b38ce",
+  "pdf_page_count": 107,
+  "manual_review": {
+    "human_review": "pending",
+    "assistant_visual_check": {
+      "date": "2026-11-18",
+      "by": "AI assistant (Claude), not a human reviewer",
+      "method": "statement pages rendered with pdftoppm and read visually; every extracted value on these pages compared with the rendered table",
+      "pdf_pages": [
+        59
+      ],
+      "result": "all values on the listed pages match the rendered original, incl. column (fiscal year 2025) and sign"
+    },
+    "note": "Set human_review to \"approved\" with name/date only after a person has checked the cited pages."
+  },
+  "fields": [
+    {
+      "field": "revenue",
+      "page": 58,
+      "label": "^Total income$",
+      "columns": 2,
+      "column": 0,
+      "statement": "income",
+      "definition": "Bank: total income = net interest income + non-interest income"
+    },
+    {
+      "field": "net_interest_income",
+      "page": 58,
+      "label": "^Net interest income$",
+      "columns": 2,
+      "column": 0,
+      "statement": "income"
+    },
+    {
+      "field": "non_interest_income",
+      "page": 58,
+      "label": "^Non-interest income$",
+      "columns": 2,
+      "column": 0,
+      "statement": "income"
+    },
+    {
+      "field": "allowances",
+      "page": 58,
+      "label": "^Allowances for credit and other losses$",
+      "columns": 2,
+      "column": 0,
+      "statement": "income"
+    },
+    {
+      "field": "profit_before_tax",
+      "page": 58,
+      "label": "^Profit before tax$",
+      "columns": 2,
+      "column": 0,
+      "statement": "income"
+    },
+    {
+      "field": "net_profit",
+      "page": 58,
+      "label": "^Net profit$",
+      "columns": 2,
+      "column": 0,
+      "statement": "income"
+    },
+    {
+      "field": "net_income_attributable",
+      "page": 58,
+      "label": "^Shareholders of the parent$",
+      "columns": 2,
+      "column": 0,
+      "statement": "income",
+      "occurrence": 1
+    },
+    {
+      "field": "nci_profit",
+      "page": 58,
+      "label": "^Non-controlling interests$",
+      "columns": 2,
+      "column": 0,
+      "statement": "income",
+      "occurrence": 1
+    },
+    {
+      "field": "eps_basic",
+      "page": 58,
+      "label": "^Basic$",
+      "columns": 2,
+      "column": 0,
+      "statement": "income",
+      "unit": "units"
+    },
+    {
+      "field": "total_assets",
+      "page": 59,
+      "label": "^Total assets$",
+      "columns": 4,
+      "column": 0,
+      "statement": "balance"
+    },
+    {
+      "field": "total_liabilities",
+      "page": 59,
+      "label": "^Total liabilities$",
+      "columns": 4,
+      "column": 0,
+      "statement": "balance"
+    },
+    {
+      "field": "equity_attributable",
+      "page": 59,
+      "label": "^Shareholders.? funds$",
+      "columns": 4,
+      "column": 0,
+      "statement": "balance"
+    },
+    {
+      "field": "total_equity",
+      "page": 59,
+      "label": "^Total equity$",
+      "columns": 4,
+      "column": 0,
+      "statement": "balance"
+    },
+    {
+      "field": "net_assets",
+      "page": 59,
+      "label": "^Net assets$",
+      "columns": 4,
+      "column": 0,
+      "statement": "balance"
+    },
+    {
+      "field": "cash",
+      "page": 59,
+      "label": "^Cash and balances with central banks$",
+      "columns": 4,
+      "column": 0,
+      "statement": "balance",
+      "definition": "Cash and balances with central banks"
+    },
+    {
+      "field": "customer_loans",
+      "page": 59,
+      "label": "^Loans and advances to customers$",
+      "columns": 4,
+      "column": 0,
+      "statement": "balance"
+    },
+    {
+      "field": "customer_deposits",
+      "page": 59,
+      "label": "^Deposits and balances from customers$",
+      "columns": 4,
+      "column": 0,
+      "statement": "balance"
+    },
+    {
+      "field": "operating_cash_flow",
+      "page": 60,
+      "label": "^Net cash generated from operating activities$",
+      "columns": 2,
+      "column": 0,
+      "statement": "cash_flow",
+      "definition": "Bank operating cash flow is dominated by deposit/loan movements"
+    },
+    {
+      "field": "capex",
+      "page": 60,
+      "label": "^Purchase of properties and other fixed assets$",
+      "columns": 2,
+      "column": 0,
+      "statement": "cash_flow",
+      "sign": "abs"
+    },
+    {
+      "field": "dividends_paid_to_shareholders",
+      "page": 60,
+      "label": "^Dividends paid to shareholders of the Company",
+      "columns": 2,
+      "column": 0,
+      "statement": "cash_flow",
+      "sign": "abs",
+      "definition": "Incl. capital-securities distributions and Capital Return dividends"
+    },
+    {
+      "field": "dividend_per_share",
+      "page": 89,
+      "label": "^Dividends per share\\(6\\)$",
+      "columns": 5,
+      "column": 0,
+      "unit": "units",
+      "header_regex": "2025 2024 2023 2022 2021",
+      "definition": "Five-year summary; 2025 includes Capital Return dividends of $0.60"
+    },
+    {
+      "field": "dividend_interim_ordinary",
+      "page": 75,
+      "pattern": "Interim one-tier tax-exempt dividends on ordinary shares of \\$([\\d.]+) paid",
+      "unit": "units"
+    },
+    {
+      "field": "dividend_final_ordinary",
+      "page": 75,
+      "pattern": "Proposed final one-tier tax-exempt ordinary dividends of \\$([\\d.]+) per share",
+      "unit": "units"
+    },
+    {
+      "field": "capital_return_q1_q3",
+      "page": 75,
+      "pattern": "Capital Return dividends on ordinary shares of \\$([\\d.]+) for the first three quarters",
+      "unit": "units"
+    },
+    {
+      "field": "capital_return_q4",
+      "page": 75,
+      "pattern": "Capital Return dividends of \\$([\\d.]+) per share for the fourth quarter",
+      "unit": "units"
+    }
+  ],
+  "derived": [
+    {
+      "field": "total_income_check",
+      "sum": [
+        "net_interest_income",
+        "non_interest_income"
+      ],
+      "definition": "NII + non-interest income"
+    }
+  ],
+  "checks": [
+    {
+      "name": "balance_sheet_identity",
+      "left": [
+        "total_assets"
+      ],
+      "right": [
+        "total_liabilities",
+        "total_equity"
+      ],
+      "tolerance": "1"
+    },
+    {
+      "name": "profit_split",
+      "left": [
+        "net_profit"
+      ],
+      "right": [
+        "net_income_attributable",
+        "nci_profit"
+      ],
+      "tolerance": "1"
+    },
+    {
+      "name": "net_assets_equals_total_equity",
+      "left": [
+        "net_assets"
+      ],
+      "right": [
+        "total_equity"
+      ],
+      "tolerance": "0"
+    },
+    {
+      "name": "total_income_components",
+      "left": [
+        "revenue"
+      ],
+      "right": [
+        "total_income_check"
+      ],
+      "tolerance": "0"
+    },
+    {
+      "name": "dps_components",
+      "left": [
+        "dividend_per_share"
+      ],
+      "right": [
+        "dividend_interim_ordinary",
+        "dividend_final_ordinary",
+        "capital_return_q1_q3",
+        "capital_return_q4"
+      ],
+      "tolerance": "0.0005"
+    }
+  ]
+}

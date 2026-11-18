@@ -1,0 +1,12 @@
+.venv/
+__pycache__/
+.pytest_cache/
+.env
+*.pyc
+.DS_Store
+# Downloaded issuer PDFs and raw page text (third-party copyright; re-download via process_reports.py)
+reports/cache/
+reports/review/
+export/
+# Downloaded official securities lists (re-fetch with build_identity_map.py --download)
+reports/universe/official_lists/

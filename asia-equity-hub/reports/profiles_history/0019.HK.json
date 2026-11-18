@@ -1,0 +1,134 @@
+{
+  "symbol": "0019.HK",
+  "company": "Swire Pacific Limited",
+  "source_url": "https://www1.hkexnews.hk/listedco/listconews/sehk/2026/0408/2026040800985.pdf",
+  "pdf_sha256": "2f4b1b4435e04184d4b5940f21b96c2ce34c91af9eb95eeb4d825a31313a60a2",
+  "source_report_year": 2025,
+  "currency": "HKD",
+  "unit": "million",
+  "printed_page_rule": {
+    "offset": -2
+  },
+  "tables": [
+    {
+      "id": "ten_year",
+      "page": 242,
+      "years": [
+        2016,
+        2017,
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025
+      ],
+      "header_regex": "2016 HK\\$M 2017 HK\\$M 2018 HK\\$M 2019 HK\\$M 2020\\^ HK\\$M \\(Restated\\) 2021\\^ HK\\$M \\(Restated\\) 2022\\^ HK\\$M 2023 HK\\$M 2024 HK\\$M 2025",
+      "presentation_notes": {
+        "2020": "Restated (^)",
+        "2021": "Restated (^)",
+        "2022": "Marked ^ in source"
+      }
+    }
+  ],
+  "fields": [
+    {
+      "field": "revenue",
+      "table": "ten_year",
+      "label": "^$",
+      "after": "^Head Office, Healthcare and others",
+      "after_occurrence": 1,
+      "definition": "Segment revenue total"
+    },
+    {
+      "field": "net_income_attributable",
+      "table": "ten_year",
+      "label": "^$",
+      "after": "^Head Office, Healthcare and others",
+      "after_occurrence": 2,
+      "definition": "Profit/(loss) attributable to the Company’s shareholders (segment total)"
+    },
+    {
+      "field": "dividends_for_year",
+      "table": "ten_year",
+      "label": "^Dividends for the year$"
+    },
+    {
+      "field": "equity_attributable",
+      "table": "ten_year",
+      "label": "^Equity attributable to the Company.s shareholders$"
+    },
+    {
+      "field": "non_controlling_interests",
+      "table": "ten_year",
+      "label": "^Non-controlling interests$"
+    },
+    {
+      "field": "net_debt",
+      "table": "ten_year",
+      "label": "^Net debt$"
+    },
+    {
+      "field": "lease_liabilities",
+      "table": "ten_year",
+      "label": "^Lease liabilities$"
+    },
+    {
+      "field": "capital_employed",
+      "table": "ten_year",
+      "label": "^$",
+      "after": "^Lease liabilities"
+    },
+    {
+      "field": "eps_basic",
+      "table": "ten_year",
+      "label": "^Earnings/\\(loss\\) per share – basic$",
+      "occurrence": 1,
+      "unit": "units",
+      "definition": "per 'A' share"
+    },
+    {
+      "field": "dividend_per_share",
+      "table": "ten_year",
+      "label": "^Dividends per share$",
+      "occurrence": 1,
+      "unit": "units",
+      "definition": "per 'A' share"
+    },
+    {
+      "field": "underlying_profit_attributable",
+      "table": "ten_year",
+      "label": "^Profit/\\(loss\\) \\(HK\\$M\\)$",
+      "definition": "Issuer underlying profit (non-GAAP)"
+    }
+  ],
+  "checks": [
+    {
+      "name": "capital_employed_composition",
+      "left": [
+        "capital_employed"
+      ],
+      "right": [
+        "equity_attributable",
+        "non_controlling_interests",
+        "net_debt",
+        "lease_liabilities"
+      ]
+    }
+  ],
+  "cross_check_latest": {
+    "revenue": "revenue",
+    "net_income_attributable": "net_income_attributable",
+    "equity_attributable": "equity_attributable",
+    "net_debt": "net_debt",
+    "eps_basic": "eps_basic",
+    "dividend_per_share": "dividend_per_share",
+    "underlying_profit_attributable": "underlying_profit_attributable"
+  },
+  "caveats": [
+    "Per-share values refer to 'A' shares.",
+    "2020-2022 marked restated (^) in the source table."
+  ]
+}

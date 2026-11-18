@@ -1,0 +1,445 @@
+{
+  "schema_version": 1,
+  "target_years": [
+    2020,
+    2021,
+    2022,
+    2023,
+    2024,
+    2025
+  ],
+  "companies": [
+    {
+      "symbol": "0001.HK",
+      "company": "CK Hutchison Holdings Limited",
+      "onboarding_status": "has_extracted_data",
+      "years": {
+        "2020": {
+          "status": "missing",
+          "fact_count": 0,
+          "source_report_year": null,
+          "human_review": "pending"
+        },
+        "2021": {
+          "status": "missing",
+          "fact_count": 0,
+          "source_report_year": null,
+          "human_review": "pending"
+        },
+        "2022": {
+          "status": "missing",
+          "fact_count": 0,
+          "source_report_year": null,
+          "human_review": "pending"
+        },
+        "2023": {
+          "status": "missing",
+          "fact_count": 0,
+          "source_report_year": null,
+          "human_review": "pending"
+        },
+        "2024": {
+          "status": "machine_extracted_pending_human_review",
+          "fact_count": 19,
+          "source_report_year": 2025,
+          "human_review": "pending"
+        },
+        "2025": {
+          "status": "machine_extracted_pending_human_review",
+          "fact_count": 22,
+          "source_report_year": 2025,
+          "human_review": "pending"
+        }
+      }
+    },
+    {
+      "symbol": "0019.HK",
+      "company": "Swire Pacific Limited",
+      "onboarding_status": "has_extracted_data",
+      "years": {
+        "2020": {
+          "status": "missing",
+          "fact_count": 0,
+          "source_report_year": null,
+          "human_review": "pending"
+        },
+        "2021": {
+          "status": "missing",
+          "fact_count": 0,
+          "source_report_year": null,
+          "human_review": "pending"
+        },
+        "2022": {
+          "status": "missing",
+          "fact_count": 0,
+          "source_report_year": null,
+          "human_review": "pending"
+        },
+        "2023": {
+          "status": "missing",
+          "fact_count": 0,
+          "source_report_year": null,
+          "human_review": "pending"
+        },
+        "2024": {
+          "status": "machine_extracted_pending_human_review",
+          "fact_count": 23,
+          "source_report_year": 2025,
+          "human_review": "pending"
+        },
+        "2025": {
+          "status": "machine_extracted_pending_human_review",
+          "fact_count": 25,
+          "source_report_year": 2025,
+          "human_review": "pending"
+        }
+      }
+    },
+    {
+      "symbol": "002594.SZ",
+      "company": "BYD Company Limited (比亚迪股份有限公司)",
+      "onboarding_status": "has_extracted_data",
+      "years": {
+        "2020": {
+          "status": "missing",
+          "fact_count": 0,
+          "source_report_year": null,
+          "human_review": "pending"
+        },
+        "2021": {
+          "status": "missing",
+          "fact_count": 0,
+          "source_report_year": null,
+          "human_review": "pending"
+        },
+        "2022": {
+          "status": "missing",
+          "fact_count": 0,
+          "source_report_year": null,
+          "human_review": "pending"
+        },
+        "2023": {
+          "status": "missing",
+          "fact_count": 0,
+          "source_report_year": null,
+          "human_review": "pending"
+        },
+        "2024": {
+          "status": "machine_extracted_pending_human_review",
+          "fact_count": 21,
+          "source_report_year": 2025,
+          "human_review": "pending"
+        },
+        "2025": {
+          "status": "machine_extracted_pending_human_review",
+          "fact_count": 23,
+          "source_report_year": 2025,
+          "human_review": "pending"
+        }
+      }
+    },
+    {
+      "symbol": "0142.HK",
+      "company": "First Pacific Company Limited",
+      "onboarding_status": "has_extracted_data",
+      "years": {
+        "2020": {
+          "status": "missing",
+          "fact_count": 0,
+          "source_report_year": null,
+          "human_review": "pending"
+        },
+        "2021": {
+          "status": "missing",
+          "fact_count": 0,
+          "source_report_year": null,
+          "human_review": "pending"
+        },
+        "2022": {
+          "status": "missing",
+          "fact_count": 0,
+          "source_report_year": null,
+          "human_review": "pending"
+        },
+        "2023": {
+          "status": "missing",
+          "fact_count": 0,
+          "source_report_year": null,
+          "human_review": "pending"
+        },
+        "2024": {
+          "status": "machine_extracted_pending_human_review",
+          "fact_count": 17,
+          "source_report_year": 2025,
+          "human_review": "pending"
+        },
+        "2025": {
+          "status": "machine_extracted_pending_human_review",
+          "fact_count": 21,
+          "source_report_year": 2025,
+          "human_review": "pending"
+        }
+      }
+    },
+    {
+      "symbol": "600036.SS",
+      "company": "China Merchants Bank",
+      "onboarding_status": "candidate_source_not_registered",
+      "years": {
+        "2020": {
+          "status": "missing",
+          "fact_count": 0,
+          "source_report_year": null,
+          "human_review": "pending"
+        },
+        "2021": {
+          "status": "missing",
+          "fact_count": 0,
+          "source_report_year": null,
+          "human_review": "pending"
+        },
+        "2022": {
+          "status": "missing",
+          "fact_count": 0,
+          "source_report_year": null,
+          "human_review": "pending"
+        },
+        "2023": {
+          "status": "missing",
+          "fact_count": 0,
+          "source_report_year": null,
+          "human_review": "pending"
+        },
+        "2024": {
+          "status": "missing",
+          "fact_count": 0,
+          "source_report_year": null,
+          "human_review": "pending"
+        },
+        "2025": {
+          "status": "missing",
+          "fact_count": 0,
+          "source_report_year": null,
+          "human_review": "pending"
+        }
+      }
+    },
+    {
+      "symbol": "600519.SS",
+      "company": "Kweichow Moutai",
+      "onboarding_status": "candidate_source_not_registered",
+      "years": {
+        "2020": {
+          "status": "missing",
+          "fact_count": 0,
+          "source_report_year": null,
+          "human_review": "pending"
+        },
+        "2021": {
+          "status": "missing",
+          "fact_count": 0,
+          "source_report_year": null,
+          "human_review": "pending"
+        },
+        "2022": {
+          "status": "missing",
+          "fact_count": 0,
+          "source_report_year": null,
+          "human_review": "pending"
+        },
+        "2023": {
+          "status": "missing",
+          "fact_count": 0,
+          "source_report_year": null,
+          "human_review": "pending"
+        },
+        "2024": {
+          "status": "missing",
+          "fact_count": 0,
+          "source_report_year": null,
+          "human_review": "pending"
+        },
+        "2025": {
+          "status": "missing",
+          "fact_count": 0,
+          "source_report_year": null,
+          "human_review": "pending"
+        }
+      }
+    },
+    {
+      "symbol": "D05.SI",
+      "company": "DBS Group Holdings Ltd",
+      "onboarding_status": "has_extracted_data",
+      "years": {
+        "2020": {
+          "status": "missing",
+          "fact_count": 0,
+          "source_report_year": null,
+          "human_review": "pending"
+        },
+        "2021": {
+          "status": "missing",
+          "fact_count": 0,
+          "source_report_year": null,
+          "human_review": "pending"
+        },
+        "2022": {
+          "status": "missing",
+          "fact_count": 0,
+          "source_report_year": null,
+          "human_review": "pending"
+        },
+        "2023": {
+          "status": "missing",
+          "fact_count": 0,
+          "source_report_year": null,
+          "human_review": "pending"
+        },
+        "2024": {
+          "status": "machine_extracted_pending_human_review",
+          "fact_count": 21,
+          "source_report_year": 2025,
+          "human_review": "pending"
+        },
+        "2025": {
+          "status": "machine_extracted_pending_human_review",
+          "fact_count": 25,
+          "source_report_year": 2025,
+          "human_review": "pending"
+        }
+      }
+    },
+    {
+      "symbol": "J36.SI",
+      "company": "Jardine Matheson Holdings Limited",
+      "onboarding_status": "official_sources_located_not_downloaded",
+      "years": {
+        "2020": {
+          "status": "missing",
+          "fact_count": 0,
+          "source_report_year": null,
+          "human_review": "pending"
+        },
+        "2021": {
+          "status": "issuer_web_transcribed_pending_pdf_review",
+          "fact_count": 4,
+          "source_report_year": 2025,
+          "human_review": "pending"
+        },
+        "2022": {
+          "status": "issuer_web_transcribed_pending_pdf_review",
+          "fact_count": 4,
+          "source_report_year": 2025,
+          "human_review": "pending"
+        },
+        "2023": {
+          "status": "issuer_web_transcribed_pending_pdf_review",
+          "fact_count": 4,
+          "source_report_year": 2025,
+          "human_review": "pending"
+        },
+        "2024": {
+          "status": "issuer_web_transcribed_pending_pdf_review",
+          "fact_count": 7,
+          "source_report_year": 2025,
+          "human_review": "pending"
+        },
+        "2025": {
+          "status": "issuer_web_transcribed_pending_pdf_review",
+          "fact_count": 7,
+          "source_report_year": 2025,
+          "human_review": "pending"
+        }
+      }
+    },
+    {
+      "symbol": "O39.SI",
+      "company": "Oversea-Chinese Banking Corporation (OCBC)",
+      "onboarding_status": "candidate_source_not_registered",
+      "years": {
+        "2020": {
+          "status": "missing",
+          "fact_count": 0,
+          "source_report_year": null,
+          "human_review": "pending"
+        },
+        "2021": {
+          "status": "missing",
+          "fact_count": 0,
+          "source_report_year": null,
+          "human_review": "pending"
+        },
+        "2022": {
+          "status": "missing",
+          "fact_count": 0,
+          "source_report_year": null,
+          "human_review": "pending"
+        },
+        "2023": {
+          "status": "missing",
+          "fact_count": 0,
+          "source_report_year": null,
+          "human_review": "pending"
+        },
+        "2024": {
+          "status": "missing",
+          "fact_count": 0,
+          "source_report_year": null,
+          "human_review": "pending"
+        },
+        "2025": {
+          "status": "missing",
+          "fact_count": 0,
+          "source_report_year": null,
+          "human_review": "pending"
+        }
+      }
+    },
+    {
+      "symbol": "U11.SI",
+      "company": "United Overseas Bank (UOB)",
+      "onboarding_status": "candidate_source_not_registered",
+      "years": {
+        "2020": {
+          "status": "missing",
+          "fact_count": 0,
+          "source_report_year": null,
+          "human_review": "pending"
+        },
+        "2021": {
+          "status": "missing",
+          "fact_count": 0,
+          "source_report_year": null,
+          "human_review": "pending"
+        },
+        "2022": {
+          "status": "missing",
+          "fact_count": 0,
+          "source_report_year": null,
+          "human_review": "pending"
+        },
+        "2023": {
+          "status": "missing",
+          "fact_count": 0,
+          "source_report_year": null,
+          "human_review": "pending"
+        },
+        "2024": {
+          "status": "missing",
+          "fact_count": 0,
+          "source_report_year": null,
+          "human_review": "pending"
+        },
+        "2025": {
+          "status": "missing",
+          "fact_count": 0,
+          "source_report_year": null,
+          "human_review": "pending"
+        }
+      }
+    }
+  ],
+  "human_review": "pending",
+  "note": "Coverage is evidence-based. Missing is not zero. No year is human-verified."
+}

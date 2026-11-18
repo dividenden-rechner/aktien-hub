@@ -1,0 +1,182 @@
+{
+  "run_date": "2026-11-18",
+  "environment": "Linux container, Python 3.13, outbound HTTPS via proxy",
+  "v1_0_baseline": {
+    "command": "python process_reports.py --download (unchanged v1.0 code)",
+    "result": "5/5 download_failed: gaierror (local DNS check before download; host resolution is done by the proxy)",
+    "old_table_parser_on_real_pdfs": "0 facts for all 5 reports (parser requires two spaces between year columns; real PDFs use one)"
+  },
+  "downloads_v1_1": [
+    {
+      "symbol": "0001.HK",
+      "url": "https://doc.irasia.com/listco/hk/ckh/annual/2025/ar2025.pdf",
+      "http": "200 application/pdf, no redirect",
+      "bytes": 11749789,
+      "pages": 352,
+      "sha256": "e5fe1da8c7c39d04586814fa3e6b9ec13c4db2c79034a93a89d7dd533fa42440"
+    },
+    {
+      "symbol": "0019.HK",
+      "url": "https://www1.hkexnews.hk/listedco/listconews/sehk/2026/0408/2026040800985.pdf",
+      "http": "200 application/pdf, no redirect",
+      "bytes": 18393836,
+      "pages": 260,
+      "sha256": "2f4b1b4435e04184d4b5940f21b96c2ce34c91af9eb95eeb4d825a31313a60a2"
+    },
+    {
+      "symbol": "0142.HK",
+      "url": "https://www.firstpacific.com/wp-content/uploads/2026/04/ew0142.pdf",
+      "http": "200 application/pdf, no redirect",
+      "bytes": 13226875,
+      "pages": 222,
+      "sha256": "4dca002f1a256863e5343968f47d6f669dfcdf7930509a445f6aad0585822fe0"
+    },
+    {
+      "symbol": "D05.SI",
+      "url": "https://www.dbs.com/iwov-resources/images/investors/annual-report/dbs-annual-report-2025.pdf",
+      "http": "200 application/pdf, no redirect",
+      "bytes": 8299215,
+      "pages": 107,
+      "sha256": "e7952ba9dff9e339070334ec5d67a71c81a8c618be7f34abad6f3118189b38ce"
+    },
+    {
+      "symbol": "002594.SZ",
+      "url": "https://disc.static.szse.cn/download/disc/disk03/finalpage/2026-03-28/f5cdbdbf-b138-4e83-8c6d-5a7eecb9e670.PDF",
+      "http": "200 application/pdf, no redirect",
+      "bytes": 7533972,
+      "pages": 268,
+      "sha256": "710d8b2e08e37ba521f1c4071d2c3e2369d3cadabc21a45073215d9f72138b0b"
+    }
+  ],
+  "extraction_v1_1": [
+    {
+      "symbol": "0001.HK",
+      "status": "extracted_consistent",
+      "facts": 22,
+      "derived": 3,
+      "checks_passed": 5,
+      "checks_total": 5,
+      "second_engine": {
+        "row_confirmed": 13,
+        "token_on_page": 9,
+        "not_found": 0
+      },
+      "reference_matches": [
+        "net_income_attributable",
+        "eps_basic",
+        "dividend_per_share"
+      ]
+    },
+    {
+      "symbol": "0019.HK",
+      "status": "extracted_consistent",
+      "facts": 25,
+      "derived": 4,
+      "checks_passed": 5,
+      "checks_total": 5,
+      "second_engine": {
+        "row_confirmed": 19,
+        "token_on_page": 6,
+        "not_found": 0
+      },
+      "reference_matches": [
+        "revenue",
+        "operating_profit",
+        "net_income_attributable",
+        "net_debt",
+        "dividend_per_share"
+      ]
+    },
+    {
+      "symbol": "002594.SZ",
+      "status": "extracted_consistent",
+      "facts": 23,
+      "derived": 1,
+      "checks_passed": 6,
+      "checks_total": 6,
+      "second_engine": {
+        "row_confirmed": 21,
+        "token_on_page": 2,
+        "not_found": 0
+      },
+      "reference_matches": []
+    },
+    {
+      "symbol": "0142.HK",
+      "status": "extracted_consistent",
+      "facts": 21,
+      "derived": 3,
+      "checks_passed": 3,
+      "checks_total": 3,
+      "second_engine": {
+        "row_confirmed": 13,
+        "token_on_page": 8,
+        "not_found": 0
+      },
+      "reference_matches": [
+        "revenue",
+        "net_income_attributable"
+      ]
+    },
+    {
+      "symbol": "D05.SI",
+      "status": "extracted_consistent",
+      "facts": 25,
+      "derived": 1,
+      "checks_passed": 5,
+      "checks_total": 5,
+      "second_engine": {
+        "row_confirmed": 9,
+        "token_on_page": 16,
+        "not_found": 0
+      },
+      "reference_matches": []
+    }
+  ],
+  "visual_check_on_rendered_pages": {
+    "0001.HK": {
+      "pdf_pages": [
+        134
+      ],
+      "result": "match",
+      "by": "AI assistant, not a human"
+    },
+    "0019.HK": {
+      "pdf_pages": [
+        149
+      ],
+      "result": "match",
+      "by": "AI assistant, not a human"
+    },
+    "002594.SZ": {
+      "pdf_pages": [
+        126
+      ],
+      "result": "match",
+      "by": "AI assistant, not a human"
+    },
+    "0142.HK": {
+      "pdf_pages": [
+        108
+      ],
+      "result": "match",
+      "by": "AI assistant, not a human"
+    },
+    "D05.SI": {
+      "pdf_pages": [
+        59
+      ],
+      "result": "match",
+      "by": "AI assistant, not a human"
+    }
+  },
+  "discovery_live": {
+    "0001.HK": "discover_hkex: 1 candidate (HKEXnews 2026041700411.pdf) - different file than irasia copy, identical extracted values",
+    "0019.HK": "discover_hkex: 1 candidate = registered URL",
+    "0142.HK": "discover_hkex: 1 candidate (HKEXnews 2026042802399.pdf) - byte-identical to issuer PDF",
+    "002594.SZ": "discover_cninfo: 1 candidate (static.cninfo.com.cn 1225045351.PDF) - byte-identical to SZSE PDF",
+    "600519.SS": "discover_cninfo: 2 candidates (Chinese + English annual report) - not downloaded",
+    "D05.SI": "manual_search_required (no stable free SGX search API) - by design",
+    "before_fix": "HKEX: \"missing result array\" (wrong stockId; result is a JSON string). CNINFO: 0 candidates (no category filter, only newest 30 items)."
+  }
+}

@@ -1,0 +1,891 @@
+{
+ "stand": "2026-11-18 12:25 UTC",
+ "geschaeftsjahr": 2025,
+ "anzahl": 5,
+ "firmen": [
+  {
+   "ticker": "0001.HK",
+   "name": "CK Hutchison Holdings Limited",
+   "land": "Hongkong",
+   "quelle": "Geschäftsbericht (PDF)",
+   "quelle_url": "https://doc.irasia.com/listco/hk/ckh/annual/2025/ar2025.pdf",
+   "pdf_sha256": "e5fe1da8c7c39d04586814fa3e6b9ec13c4db2c79034a93a89d7dd533fa42440",
+   "geschaeftsjahr": 2025,
+   "stichtag": "2025-12-31",
+   "rechnungslegung": "IFRS Accounting Standards (first-time adoption in 2025, see note 2 / note 48)",
+   "waehrung": "HKD",
+   "einheit": "million",
+   "eps_jahr": 3.09,
+   "eps_einheit": "units",
+   "eps_waehrung": "HKD",
+   "dps_jahr": 2.312,
+   "dps_einheit": "units",
+   "dps_waehrung": "HKD",
+   "werte": {
+    "umsatz": {
+     "wert": 280036.0,
+     "einheit": "million",
+     "waehrung": "HKD",
+     "pdf_seite": 134,
+     "druckseite": "132",
+     "definition": "Revenue (IFRS consolidated; excludes share of associates/JVs)",
+     "methode": "table_row"
+    },
+    "gewinn_vor_steuern": {
+     "wert": 26607.0,
+     "einheit": "million",
+     "waehrung": "HKD",
+     "pdf_seite": 134,
+     "druckseite": "132",
+     "definition": null,
+     "methode": "table_row"
+    },
+    "jahresueberschuss": {
+     "wert": 19370.0,
+     "einheit": "million",
+     "waehrung": "HKD",
+     "pdf_seite": 134,
+     "druckseite": "132",
+     "definition": "Profit after tax incl. non-controlling interests",
+     "methode": "table_row"
+    },
+    "konzerngewinn_aktionaere": {
+     "wert": 11841.0,
+     "einheit": "million",
+     "waehrung": "HKD",
+     "pdf_seite": 134,
+     "druckseite": "132",
+     "definition": null,
+     "methode": "table_row"
+    },
+    "bilanzsumme": {
+     "wert": 1155673.0,
+     "einheit": "million",
+     "waehrung": "HKD",
+     "pdf_seite": [
+      136
+     ],
+     "druckseite": null,
+     "definition": "Non-current + current assets (no printed total line)",
+     "methode": "derived"
+    },
+    "verbindlichkeiten": {
+     "wert": 467281.0,
+     "einheit": "million",
+     "waehrung": "HKD",
+     "pdf_seite": [
+      136
+     ],
+     "druckseite": null,
+     "definition": "Current + non-current liabilities (no printed total line)",
+     "methode": "derived"
+    },
+    "eigenkapital": {
+     "wert": 688392.0,
+     "einheit": "million",
+     "waehrung": "HKD",
+     "pdf_seite": 137,
+     "druckseite": "135",
+     "definition": null,
+     "methode": "table_row"
+    },
+    "eigenkapital_aktionaere": {
+     "wert": 562772.0,
+     "einheit": "million",
+     "waehrung": "HKD",
+     "pdf_seite": 137,
+     "druckseite": "135",
+     "definition": null,
+     "methode": "table_row"
+    },
+    "liquide_mittel": {
+     "wert": 143748.0,
+     "einheit": "million",
+     "waehrung": "HKD",
+     "pdf_seite": 136,
+     "druckseite": "134",
+     "definition": null,
+     "methode": "table_row"
+    },
+    "operativer_cashflow": {
+     "wert": 62567.0,
+     "einheit": "million",
+     "waehrung": "HKD",
+     "pdf_seite": 141,
+     "druckseite": "139",
+     "definition": null,
+     "methode": "table_row"
+    },
+    "investitionen": {
+     "wert": 18743.0,
+     "einheit": "million",
+     "waehrung": "HKD",
+     "pdf_seite": 141,
+     "druckseite": "139",
+     "definition": "Purchase of fixed assets (excludes licences, brand names)",
+     "methode": "table_row"
+    },
+    "free_cashflow": {
+     "wert": 43824.0,
+     "einheit": "million",
+     "waehrung": "HKD",
+     "pdf_seite": [
+      141
+     ],
+     "druckseite": null,
+     "definition": "Operating cash flow minus capex as defined in this profile (simple FCF, not issuer-defined)",
+     "methode": "derived"
+    },
+    "gezahlte_dividenden": {
+     "wert": 8518.0,
+     "einheit": "million",
+     "waehrung": "HKD",
+     "pdf_seite": 141,
+     "druckseite": "139",
+     "definition": null,
+     "methode": "table_row"
+    },
+    "nettoverschuldung": {
+     "wert": 117885.0,
+     "einheit": "million",
+     "waehrung": "HKD",
+     "pdf_seite": 142,
+     "druckseite": "140",
+     "definition": "Issuer-defined net debt incl. loans from NCI shareholders",
+     "methode": "table_row"
+    }
+   },
+   "kennzahlen": {
+    "net_margin": 0.0423,
+    "operating_margin": null,
+    "return_on_equity_simple": 0.021,
+    "equity_ratio": 0.5957,
+    "liabilities_to_assets": 0.4043,
+    "cash_conversion": 3.2301,
+    "payout_ratio_per_share": 0.7482,
+    "cash_dividend_cover": 5.1449
+   },
+   "pruefungen": {
+    "balance_sheet_identity": "pass",
+    "profit_split": "pass",
+    "net_assets_equals_total_equity": "pass",
+    "cash_flow_closing_cash_equals_balance_sheet": "pass",
+    "dps_interim_plus_final": "pass"
+   },
+   "pruefstatus": {
+    "maschinell": "extracted_consistent",
+    "zweite_engine": {
+     "row_confirmed": 13,
+     "token_on_page": 9,
+     "not_found": 0
+    },
+    "mensch": "pending"
+   },
+   "hinweise": [
+    "A US$ convenience-translation column precedes the HK$ columns; it is ignored.",
+    "Financial-highlights \"total revenue\" (HK$507,297m) is on a proportionate basis incl. associates/JVs and is NOT comparable with IFRS revenue (HK$280,036m)."
+   ]
+  },
+  {
+   "ticker": "0019.HK",
+   "name": "Swire Pacific Limited",
+   "land": "Hongkong",
+   "quelle": "Geschäftsbericht (PDF)",
+   "quelle_url": "https://www1.hkexnews.hk/listedco/listconews/sehk/2026/0408/2026040800985.pdf",
+   "pdf_sha256": "2f4b1b4435e04184d4b5940f21b96c2ce34c91af9eb95eeb4d825a31313a60a2",
+   "geschaeftsjahr": 2025,
+   "stichtag": "2025-12-31",
+   "rechnungslegung": "HKFRS Accounting Standards (HKICPA)",
+   "waehrung": "HKD",
+   "einheit": "million",
+   "eps_jahr": 2.17,
+   "eps_einheit": "units",
+   "eps_waehrung": "HKD",
+   "dps_jahr": 3.8,
+   "dps_einheit": "units",
+   "dps_waehrung": "HKD",
+   "werte": {
+    "umsatz": {
+     "wert": 90467.0,
+     "einheit": "million",
+     "waehrung": "HKD",
+     "pdf_seite": 147,
+     "druckseite": "145",
+     "definition": null,
+     "methode": "table_row"
+    },
+    "operativer_gewinn": {
+     "wert": 4454.0,
+     "einheit": "million",
+     "waehrung": "HKD",
+     "pdf_seite": 147,
+     "druckseite": "145",
+     "definition": "Operating profit incl. investment-property fair-value changes",
+     "methode": "table_row"
+    },
+    "gewinn_vor_steuern": {
+     "wert": 5836.0,
+     "einheit": "million",
+     "waehrung": "HKD",
+     "pdf_seite": 147,
+     "druckseite": "145",
+     "definition": null,
+     "methode": "table_row"
+    },
+    "jahresueberschuss": {
+     "wert": 3495.0,
+     "einheit": "million",
+     "waehrung": "HKD",
+     "pdf_seite": 147,
+     "druckseite": "145",
+     "definition": null,
+     "methode": "table_row"
+    },
+    "konzerngewinn_aktionaere": {
+     "wert": 2938.0,
+     "einheit": "million",
+     "waehrung": "HKD",
+     "pdf_seite": 147,
+     "druckseite": "145",
+     "definition": null,
+     "methode": "table_row"
+    },
+    "bilanzsumme": {
+     "wert": 476413.0,
+     "einheit": "million",
+     "waehrung": "HKD",
+     "pdf_seite": [
+      149
+     ],
+     "druckseite": null,
+     "definition": "Non-current + current assets",
+     "methode": "derived"
+    },
+    "verbindlichkeiten": {
+     "wert": 160178.0,
+     "einheit": "million",
+     "waehrung": "HKD",
+     "pdf_seite": [
+      149
+     ],
+     "druckseite": null,
+     "definition": "Current + non-current liabilities",
+     "methode": "derived"
+    },
+    "eigenkapital": {
+     "wert": 316235.0,
+     "einheit": "million",
+     "waehrung": "HKD",
+     "pdf_seite": 149,
+     "druckseite": "147",
+     "definition": null,
+     "methode": "table_row"
+    },
+    "eigenkapital_aktionaere": {
+     "wert": 259577.0,
+     "einheit": "million",
+     "waehrung": "HKD",
+     "pdf_seite": 149,
+     "druckseite": "147",
+     "definition": null,
+     "methode": "table_row"
+    },
+    "liquide_mittel": {
+     "wert": 23172.0,
+     "einheit": "million",
+     "waehrung": "HKD",
+     "pdf_seite": 149,
+     "druckseite": "147",
+     "definition": "Bank balances and short-term deposits",
+     "methode": "table_row"
+    },
+    "operativer_cashflow": {
+     "wert": 14551.0,
+     "einheit": "million",
+     "waehrung": "HKD",
+     "pdf_seite": 150,
+     "druckseite": "148",
+     "definition": null,
+     "methode": "table_row"
+    },
+    "investitionen": {
+     "wert": 5595.0,
+     "einheit": "million",
+     "waehrung": "HKD",
+     "pdf_seite": 150,
+     "druckseite": "148",
+     "definition": "Purchase of PPE and right-of-use assets (excludes investment-property additions)",
+     "methode": "table_row"
+    },
+    "free_cashflow": {
+     "wert": 8956.0,
+     "einheit": "million",
+     "waehrung": "HKD",
+     "pdf_seite": [
+      150
+     ],
+     "druckseite": null,
+     "definition": "Operating cash flow minus capex as defined in this profile (simple FCF, not issuer-defined)",
+     "methode": "derived"
+    },
+    "gezahlte_dividenden": {
+     "wert": 4602.0,
+     "einheit": "million",
+     "waehrung": "HKD",
+     "pdf_seite": 150,
+     "druckseite": "148",
+     "definition": null,
+     "methode": "table_row"
+    },
+    "nettoverschuldung": {
+     "wert": 65264.0,
+     "einheit": "million",
+     "waehrung": "HKD",
+     "pdf_seite": 92,
+     "druckseite": "90",
+     "definition": "Issuer-defined: total borrowings less bank balances and short-term deposits",
+     "methode": "table_row"
+    }
+   },
+   "kennzahlen": {
+    "net_margin": 0.0325,
+    "operating_margin": 0.0492,
+    "return_on_equity_simple": 0.0113,
+    "equity_ratio": 0.6638,
+    "liabilities_to_assets": 0.3362,
+    "cash_conversion": 4.1634,
+    "payout_ratio_per_share": 1.7512,
+    "cash_dividend_cover": 1.9461
+   },
+   "pruefungen": {
+    "balance_sheet_identity": "pass",
+    "profit_split": "pass",
+    "net_assets_equals_total_equity": "pass",
+    "net_debt_definition": "pass",
+    "dps_matches_ten_year_summary": "pass"
+   },
+   "pruefstatus": {
+    "maschinell": "extracted_consistent",
+    "zweite_engine": {
+     "row_confirmed": 19,
+     "token_on_page": 6,
+     "not_found": 0
+    },
+    "mensch": "pending"
+   },
+   "hinweise": [
+    "Two share classes ('A' and 'B'); per-share figures refer to 'A' shares (0019.HK). 'B' shares (0087.HK) receive 1/5.",
+    "Cash flow closing cash (HK$20,966m) differs from balance-sheet bank balances (HK$23,172m) because deposits > 3 months are excluded.",
+    "Large non-cash investment-property revaluation losses depress IFRS profit; issuer also reports underlying profit."
+   ]
+  },
+  {
+   "ticker": "002594.SZ",
+   "name": "BYD Company Limited (比亚迪股份有限公司)",
+   "land": "China",
+   "quelle": "Geschäftsbericht (PDF)",
+   "quelle_url": "https://disc.static.szse.cn/download/disc/disk03/finalpage/2026-03-28/f5cdbdbf-b138-4e83-8c6d-5a7eecb9e670.PDF",
+   "pdf_sha256": "710d8b2e08e37ba521f1c4071d2c3e2369d3cadabc21a45073215d9f72138b0b",
+   "geschaeftsjahr": 2025,
+   "stichtag": "2025-12-31",
+   "rechnungslegung": "PRC Accounting Standards for Business Enterprises (企业会计准则)",
+   "waehrung": "CNY",
+   "einheit": "thousand",
+   "eps_jahr": 3.58,
+   "eps_einheit": "units",
+   "eps_waehrung": "CNY",
+   "dps_jahr": 0.358,
+   "dps_einheit": "units",
+   "dps_waehrung": "CNY",
+   "werte": {
+    "umsatz": {
+     "wert": 803964958.0,
+     "einheit": "thousand",
+     "waehrung": "CNY",
+     "pdf_seite": 126,
+     "druckseite": "126",
+     "definition": "营业收入 (operating revenue)",
+     "methode": "table_row"
+    },
+    "operativer_gewinn": {
+     "wert": 40184709.0,
+     "einheit": "thousand",
+     "waehrung": "CNY",
+     "pdf_seite": 126,
+     "druckseite": "126",
+     "definition": "营业利润 (PRC GAAP operating profit)",
+     "methode": "table_row"
+    },
+    "gewinn_vor_steuern": {
+     "wert": 39753049.0,
+     "einheit": "thousand",
+     "waehrung": "CNY",
+     "pdf_seite": 126,
+     "druckseite": "126",
+     "definition": null,
+     "methode": "table_row"
+    },
+    "jahresueberschuss": {
+     "wert": 33760758.0,
+     "einheit": "thousand",
+     "waehrung": "CNY",
+     "pdf_seite": 126,
+     "druckseite": "126",
+     "definition": null,
+     "methode": "table_row"
+    },
+    "konzerngewinn_aktionaere": {
+     "wert": 32619022.0,
+     "einheit": "thousand",
+     "waehrung": "CNY",
+     "pdf_seite": 126,
+     "druckseite": "126",
+     "definition": null,
+     "methode": "table_row"
+    },
+    "bilanzsumme": {
+     "wert": 883729883.0,
+     "einheit": "thousand",
+     "waehrung": "CNY",
+     "pdf_seite": 123,
+     "druckseite": "123",
+     "definition": null,
+     "methode": "table_row"
+    },
+    "verbindlichkeiten": {
+     "wert": 625190698.0,
+     "einheit": "thousand",
+     "waehrung": "CNY",
+     "pdf_seite": 124,
+     "druckseite": "124",
+     "definition": null,
+     "methode": "table_row"
+    },
+    "eigenkapital": {
+     "wert": 258539185.0,
+     "einheit": "thousand",
+     "waehrung": "CNY",
+     "pdf_seite": 125,
+     "druckseite": "125",
+     "definition": null,
+     "methode": "table_row"
+    },
+    "eigenkapital_aktionaere": {
+     "wert": 246274606.0,
+     "einheit": "thousand",
+     "waehrung": "CNY",
+     "pdf_seite": 125,
+     "druckseite": "125",
+     "definition": null,
+     "methode": "table_row"
+    },
+    "liquide_mittel": {
+     "wert": 75424747.0,
+     "einheit": "thousand",
+     "waehrung": "CNY",
+     "pdf_seite": 123,
+     "druckseite": "123",
+     "definition": "货币资金 (monetary funds, incl. restricted)",
+     "methode": "table_row"
+    },
+    "operativer_cashflow": {
+     "wert": 59135544.0,
+     "einheit": "thousand",
+     "waehrung": "CNY",
+     "pdf_seite": 130,
+     "druckseite": "130",
+     "definition": null,
+     "methode": "table_row"
+    },
+    "investitionen": {
+     "wert": 156807853.0,
+     "einheit": "thousand",
+     "waehrung": "CNY",
+     "pdf_seite": 130,
+     "druckseite": "130",
+     "definition": null,
+     "methode": "table_row"
+    },
+    "free_cashflow": {
+     "wert": -97672309.0,
+     "einheit": "thousand",
+     "waehrung": "CNY",
+     "pdf_seite": [
+      130
+     ],
+     "druckseite": null,
+     "definition": "Operating cash flow minus capex as defined in this profile (simple FCF, not issuer-defined)",
+     "methode": "derived"
+    }
+   },
+   "kennzahlen": {
+    "net_margin": 0.0406,
+    "operating_margin": 0.05,
+    "return_on_equity_simple": 0.1324,
+    "equity_ratio": 0.2926,
+    "liabilities_to_assets": 0.7074,
+    "cash_conversion": 1.7516,
+    "payout_ratio_per_share": 0.1,
+    "cash_dividend_cover": null
+   },
+   "pruefungen": {
+    "balance_sheet_identity": "pass",
+    "profit_split": "pass",
+    "liabilities_and_equity_total": "pass",
+    "assets_split": "pass",
+    "liabilities_split": "pass",
+    "dps_vs_per_10_shares": "pass"
+   },
+   "pruefstatus": {
+    "maschinell": "extracted_consistent",
+    "zweite_engine": {
+     "row_confirmed": 21,
+     "token_on_page": 2,
+     "not_found": 0
+    },
+    "mensch": "pending"
+   },
+   "hinweise": [
+    "Amounts in RMB thousand (千元), as stated on page 123 (财务附注中报表的单位为：千元).",
+    "2024 comparatives in the income statement are restated (经重述); 2024 EPS adjusted for the 2025 bonus issue (8 bonus shares + 12 capitalisation shares per 10).",
+    "Cash-flow line for dividends also contains interest payments; no cash dividend cover is computed.",
+    "Dividend per share is a board proposal pending AGM approval."
+   ]
+  },
+  {
+   "ticker": "0142.HK",
+   "name": "First Pacific Company Limited",
+   "land": "Hongkong",
+   "quelle": "Geschäftsbericht (PDF)",
+   "quelle_url": "https://www.firstpacific.com/wp-content/uploads/2026/04/ew0142.pdf",
+   "pdf_sha256": "4dca002f1a256863e5343968f47d6f669dfcdf7930509a445f6aad0585822fe0",
+   "geschaeftsjahr": 2025,
+   "stichtag": "2025-12-31",
+   "rechnungslegung": "HKFRS Accounting Standards (HKICPA)",
+   "waehrung": "USD",
+   "einheit": "million",
+   "eps_jahr": 15.53,
+   "eps_einheit": "cents",
+   "eps_waehrung": "USD",
+   "dps_jahr": 3.46,
+   "dps_einheit": "cents",
+   "dps_waehrung": "USD",
+   "werte": {
+    "umsatz": {
+     "wert": 10232.5,
+     "einheit": "million",
+     "waehrung": "USD",
+     "pdf_seite": 103,
+     "druckseite": "101",
+     "definition": null,
+     "methode": "table_row"
+    },
+    "gewinn_vor_steuern": {
+     "wert": 2252.0,
+     "einheit": "million",
+     "waehrung": "USD",
+     "pdf_seite": 103,
+     "druckseite": "101",
+     "definition": null,
+     "methode": "table_row"
+    },
+    "jahresueberschuss": {
+     "wert": 1780.9,
+     "einheit": "million",
+     "waehrung": "USD",
+     "pdf_seite": 103,
+     "druckseite": "101",
+     "definition": null,
+     "methode": "table_row"
+    },
+    "konzerngewinn_aktionaere": {
+     "wert": 661.0,
+     "einheit": "million",
+     "waehrung": "USD",
+     "pdf_seite": 103,
+     "druckseite": "101",
+     "definition": null,
+     "methode": "table_row"
+    },
+    "bilanzsumme": {
+     "wert": 30647.6,
+     "einheit": "million",
+     "waehrung": "USD",
+     "pdf_seite": [
+      105
+     ],
+     "druckseite": null,
+     "definition": "Non-current + current assets",
+     "methode": "derived"
+    },
+    "verbindlichkeiten": {
+     "wert": 17524.0,
+     "einheit": "million",
+     "waehrung": "USD",
+     "pdf_seite": [
+      105
+     ],
+     "druckseite": null,
+     "definition": "Current + non-current liabilities",
+     "methode": "derived"
+    },
+    "eigenkapital": {
+     "wert": 13123.6,
+     "einheit": "million",
+     "waehrung": "USD",
+     "pdf_seite": 105,
+     "druckseite": "103",
+     "definition": null,
+     "methode": "table_row"
+    },
+    "eigenkapital_aktionaere": {
+     "wert": 4388.8,
+     "einheit": "million",
+     "waehrung": "USD",
+     "pdf_seite": 105,
+     "druckseite": "103",
+     "definition": null,
+     "methode": "table_row"
+    },
+    "liquide_mittel": {
+     "wert": 4206.1,
+     "einheit": "million",
+     "waehrung": "USD",
+     "pdf_seite": 105,
+     "druckseite": "103",
+     "definition": null,
+     "methode": "table_row"
+    },
+    "operativer_cashflow": {
+     "wert": 1748.3,
+     "einheit": "million",
+     "waehrung": "USD",
+     "pdf_seite": 107,
+     "druckseite": "105",
+     "definition": null,
+     "methode": "table_row"
+    },
+    "investitionen": {
+     "wert": 528.8,
+     "einheit": "million",
+     "waehrung": "USD",
+     "pdf_seite": 108,
+     "druckseite": "106",
+     "definition": "PPE purchases only (excludes US$859.7m investments in other intangible/concession assets)",
+     "methode": "table_row"
+    },
+    "free_cashflow": {
+     "wert": 1219.5,
+     "einheit": "million",
+     "waehrung": "USD",
+     "pdf_seite": [
+      107,
+      108
+     ],
+     "druckseite": null,
+     "definition": "Operating cash flow minus capex as defined in this profile (simple FCF, not issuer-defined)",
+     "methode": "derived"
+    },
+    "gezahlte_dividenden": {
+     "wert": 144.6,
+     "einheit": "million",
+     "waehrung": "USD",
+     "pdf_seite": 108,
+     "druckseite": "106",
+     "definition": null,
+     "methode": "table_row"
+    }
+   },
+   "kennzahlen": {
+    "net_margin": 0.0646,
+    "operating_margin": null,
+    "return_on_equity_simple": 0.1506,
+    "equity_ratio": 0.4282,
+    "liabilities_to_assets": 0.5718,
+    "cash_conversion": 0.9817,
+    "payout_ratio_per_share": 0.2228,
+    "cash_dividend_cover": 8.4336
+   },
+   "pruefungen": {
+    "balance_sheet_identity": "pass",
+    "profit_split": "pass",
+    "dps_interim_plus_final_usd": "pass"
+   },
+   "pruefstatus": {
+    "maschinell": "extracted_consistent",
+    "zweite_engine": {
+     "row_confirmed": 13,
+     "token_on_page": 8,
+     "not_found": 0
+    },
+    "mensch": "pending"
+   },
+   "hinweise": [
+    "Reporting currency USD; distributions declared in HK cents with U.S. cent equivalents.",
+    "A 2025 special distribution (Maynilad shares + cash, ~U.S. 0.15 cent/share) is excluded from dividend_per_share.",
+    "Cash flow closing cash (US$4,149.4m) excludes deposits > 3 months contained in balance-sheet cash (US$4,206.1m)."
+   ]
+  },
+  {
+   "ticker": "D05.SI",
+   "name": "DBS Group Holdings Ltd",
+   "land": "Singapur",
+   "quelle": "Geschäftsbericht (PDF)",
+   "quelle_url": "https://www.dbs.com/iwov-resources/images/investors/annual-report/dbs-annual-report-2025.pdf",
+   "pdf_sha256": "e7952ba9dff9e339070334ec5d67a71c81a8c618be7f34abad6f3118189b38ce",
+   "geschaeftsjahr": 2025,
+   "stichtag": "2025-12-31",
+   "rechnungslegung": "SFRS(I) (Singapore Financial Reporting Standards (International))",
+   "waehrung": "SGD",
+   "einheit": "million",
+   "eps_jahr": 3.84,
+   "eps_einheit": "units",
+   "eps_waehrung": "SGD",
+   "dps_jahr": 3.06,
+   "dps_einheit": "units",
+   "dps_waehrung": "SGD",
+   "werte": {
+    "umsatz": {
+     "wert": 22900.0,
+     "einheit": "million",
+     "waehrung": "SGD",
+     "pdf_seite": 58,
+     "druckseite": "112-113",
+     "definition": "Bank: total income = net interest income + non-interest income",
+     "methode": "table_row"
+    },
+    "gewinn_vor_steuern": {
+     "wert": 12999.0,
+     "einheit": "million",
+     "waehrung": "SGD",
+     "pdf_seite": 58,
+     "druckseite": "112-113",
+     "definition": null,
+     "methode": "table_row"
+    },
+    "jahresueberschuss": {
+     "wert": 10934.0,
+     "einheit": "million",
+     "waehrung": "SGD",
+     "pdf_seite": 58,
+     "druckseite": "112-113",
+     "definition": null,
+     "methode": "table_row"
+    },
+    "konzerngewinn_aktionaere": {
+     "wert": 10933.0,
+     "einheit": "million",
+     "waehrung": "SGD",
+     "pdf_seite": 58,
+     "druckseite": "112-113",
+     "definition": null,
+     "methode": "table_row"
+    },
+    "bilanzsumme": {
+     "wert": 897488.0,
+     "einheit": "million",
+     "waehrung": "SGD",
+     "pdf_seite": 59,
+     "druckseite": "114-115",
+     "definition": null,
+     "methode": "table_row"
+    },
+    "verbindlichkeiten": {
+     "wert": 828572.0,
+     "einheit": "million",
+     "waehrung": "SGD",
+     "pdf_seite": 59,
+     "druckseite": "114-115",
+     "definition": null,
+     "methode": "table_row"
+    },
+    "eigenkapital": {
+     "wert": 68916.0,
+     "einheit": "million",
+     "waehrung": "SGD",
+     "pdf_seite": 59,
+     "druckseite": "114-115",
+     "definition": null,
+     "methode": "table_row"
+    },
+    "eigenkapital_aktionaere": {
+     "wert": 68867.0,
+     "einheit": "million",
+     "waehrung": "SGD",
+     "pdf_seite": 59,
+     "druckseite": "114-115",
+     "definition": null,
+     "methode": "table_row"
+    },
+    "liquide_mittel": {
+     "wert": 55844.0,
+     "einheit": "million",
+     "waehrung": "SGD",
+     "pdf_seite": 59,
+     "druckseite": "114-115",
+     "definition": "Cash and balances with central banks",
+     "methode": "table_row"
+    },
+    "operativer_cashflow": {
+     "wert": 11024.0,
+     "einheit": "million",
+     "waehrung": "SGD",
+     "pdf_seite": 60,
+     "druckseite": "116-117",
+     "definition": "Bank operating cash flow is dominated by deposit/loan movements",
+     "methode": "table_row"
+    },
+    "investitionen": {
+     "wert": 525.0,
+     "einheit": "million",
+     "waehrung": "SGD",
+     "pdf_seite": 60,
+     "druckseite": "116-117",
+     "definition": null,
+     "methode": "table_row"
+    },
+    "gezahlte_dividenden": {
+     "wert": 8151.0,
+     "einheit": "million",
+     "waehrung": "SGD",
+     "pdf_seite": 60,
+     "druckseite": "116-117",
+     "definition": "Incl. capital-securities distributions and Capital Return dividends",
+     "methode": "table_row"
+    }
+   },
+   "kennzahlen": {
+    "net_margin": 0.4774,
+    "operating_margin": null,
+    "return_on_equity_simple": 0.1588,
+    "equity_ratio": 0.0768,
+    "liabilities_to_assets": 0.9232,
+    "cash_conversion": null,
+    "payout_ratio_per_share": 0.7969,
+    "cash_dividend_cover": null
+   },
+   "pruefungen": {
+    "balance_sheet_identity": "pass",
+    "profit_split": "pass",
+    "net_assets_equals_total_equity": "pass",
+    "total_income_components": "pass",
+    "dps_components": "pass"
+   },
+   "pruefstatus": {
+    "maschinell": "extracted_consistent",
+    "zweite_engine": {
+     "row_confirmed": 9,
+     "token_on_page": 16,
+     "not_found": 0
+    },
+    "mensch": "pending"
+   },
+   "hinweise": [
+    "Bank: \"revenue\" is total income; FCF/operating-margin style ratios are not meaningful and are suppressed.",
+    "PDF pages are two-page spreads; printed pages are given as ranges (e.g. 112-113).",
+    "Balance sheet page shows Group and Company columns; Group 2025 column (index 0) is used."
+   ]
+  }
+ ],
+ "hinweis": "Maschinell aus offiziellen Geschäftsberichten extrahiert und rechnerisch geprüft; keine Anlageberatung."
+}
