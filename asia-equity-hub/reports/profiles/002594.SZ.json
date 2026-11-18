@@ -235,6 +235,55 @@
       "page": 5,
       "pattern": "每\\s*10\\s*股派发现金红利\\s*([\\d.]+)\\s*元",
       "unit": "units"
+    },
+    {
+      "field": "cost_of_sales",
+      "page": 126,
+      "label": "营业成本$",
+      "columns": 2,
+      "column": 0,
+      "statement": "income"
+    },
+    {
+      "field": "finance_costs",
+      "page": 126,
+      "label": "利息费用$",
+      "columns": 2,
+      "column": 0,
+      "statement": "income",
+      "definition": "利息费用 (interest expense, part of 财务费用)"
+    },
+    {
+      "field": "current_borrowings",
+      "page": 124,
+      "label": "^短期借款$",
+      "columns": 2,
+      "column": 0,
+      "statement": "balance"
+    },
+    {
+      "field": "non_current_borrowings",
+      "page": 124,
+      "label": "^长期借款$",
+      "columns": 2,
+      "column": 0,
+      "statement": "balance"
+    },
+    {
+      "field": "bonds_payable",
+      "page": 124,
+      "label": "^应付债券$",
+      "columns": 2,
+      "column": 0,
+      "statement": "balance"
+    },
+    {
+      "field": "shares_outstanding",
+      "page": 249,
+      "pattern": "日总\\s*股本\\s*([\\d,]+)\\s*股为基数",
+      "unit": "units",
+      "currency": null,
+      "definition": "Total shares at 31 Dec 2025 (dividend base)"
     }
   ],
   "derived": [

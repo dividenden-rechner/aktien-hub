@@ -254,6 +254,40 @@
       "unit": "units",
       "header_regex": "2024 HK\\$M 2025 HK\\$M",
       "definition": "Ten-year summary, 'A' share row, 2025 column"
+    },
+    {
+      "field": "gross_profit",
+      "page": 147,
+      "label": "^Gross profit$",
+      "columns": 2,
+      "column": 0,
+      "statement": "income"
+    },
+    {
+      "field": "finance_costs",
+      "page": 147,
+      "label": "^Finance charges$",
+      "columns": 2,
+      "column": 0,
+      "statement": "income",
+      "sign": "abs"
+    },
+    {
+      "field": "current_borrowings",
+      "page": 149,
+      "label": "^Long-term loans and bonds due within one year$",
+      "columns": 2,
+      "column": 0,
+      "statement": "balance",
+      "definition": "Loans and bonds due within one year (short-term loans: nil in 2025)"
+    },
+    {
+      "field": "non_current_borrowings",
+      "page": 149,
+      "label": "^Long-term loans and bonds$",
+      "columns": 2,
+      "column": 0,
+      "statement": "balance"
     }
   ],
   "derived": [

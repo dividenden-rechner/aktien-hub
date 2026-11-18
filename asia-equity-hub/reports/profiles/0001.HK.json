@@ -227,6 +227,44 @@
       "page": 207,
       "pattern": "Final dividend, proposed of HK\\$([\\d.]+) per share",
       "unit": "units"
+    },
+    {
+      "field": "finance_costs",
+      "page": 134,
+      "label": "^Interest expenses and other finance costs$",
+      "columns": 3,
+      "column": 0,
+      "statement": "income",
+      "sign": "abs"
+    },
+    {
+      "field": "depreciation_amortisation",
+      "page": 134,
+      "label": "^Depreciation and amortisation$",
+      "columns": 3,
+      "column": 0,
+      "statement": "income",
+      "sign": "abs"
+    },
+    {
+      "field": "current_borrowings",
+      "page": 136,
+      "label": "^Bank and other debts$",
+      "columns": 4,
+      "column": 0,
+      "statement": "balance",
+      "occurrence": 1,
+      "definition": "Bank and other debts (current)"
+    },
+    {
+      "field": "non_current_borrowings",
+      "page": 136,
+      "label": "^Bank and other debts$",
+      "columns": 4,
+      "column": 0,
+      "statement": "balance",
+      "occurrence": 2,
+      "definition": "Bank and other debts (non-current)"
     }
   ],
   "derived": [

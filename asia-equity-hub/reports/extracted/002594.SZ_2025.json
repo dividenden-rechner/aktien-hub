@@ -577,6 +577,151 @@
       "raw_token": "3.58",
       "line": 16,
       "evidence": "向全体股东每 10 股派发现金红利 3.58 元（含税），送红股 0 股（含税），不 以公积金转增股本。"
+    },
+    {
+      "field": "cost_of_sales",
+      "definition": null,
+      "statement": "income",
+      "fiscal_year": 2025,
+      "period_end": "2025-12-31",
+      "currency": "CNY",
+      "unit": "thousand",
+      "kind": "amount",
+      "pdf_page": 126,
+      "printed_page": "126",
+      "source_url": "https://disc.static.szse.cn/download/disc/disk03/finalpage/2026-03-28/f5cdbdbf-b138-4e83-8c6d-5a7eecb9e670.PDF",
+      "method": "table_row",
+      "verification_status": "machine_extracted",
+      "value": "661305161",
+      "value_in_units": "661305161000",
+      "raw_token": "661,305,161",
+      "row_values": [
+        "661,305,161",
+        "626,046,616"
+      ],
+      "column_index": 0,
+      "line": 8,
+      "evidence": "减：营业成本 45  661,305,161     626,046,616"
+    },
+    {
+      "field": "finance_costs",
+      "definition": "利息费用 (interest expense, part of 财务费用)",
+      "statement": "income",
+      "fiscal_year": 2025,
+      "period_end": "2025-12-31",
+      "currency": "CNY",
+      "unit": "thousand",
+      "kind": "amount",
+      "pdf_page": 126,
+      "printed_page": "126",
+      "source_url": "https://disc.static.szse.cn/download/disc/disk03/finalpage/2026-03-28/f5cdbdbf-b138-4e83-8c6d-5a7eecb9e670.PDF",
+      "method": "table_row",
+      "verification_status": "machine_extracted",
+      "value": "2551657",
+      "value_in_units": "2551657000",
+      "raw_token": "2,551,657",
+      "row_values": [
+        "2,551,657",
+        "2,093,781"
+      ],
+      "column_index": 0,
+      "line": 14,
+      "evidence": "其中：利息费用 50  2,551,657     2,093,781"
+    },
+    {
+      "field": "current_borrowings",
+      "definition": null,
+      "statement": "balance",
+      "fiscal_year": 2025,
+      "period_end": "2025-12-31",
+      "currency": "CNY",
+      "unit": "thousand",
+      "kind": "amount",
+      "pdf_page": 124,
+      "printed_page": "124",
+      "source_url": "https://disc.static.szse.cn/download/disc/disk03/finalpage/2026-03-28/f5cdbdbf-b138-4e83-8c6d-5a7eecb9e670.PDF",
+      "method": "table_row",
+      "verification_status": "machine_extracted",
+      "value": "38484710",
+      "value_in_units": "38484710000",
+      "raw_token": "38,484,710",
+      "row_values": [
+        "38,484,710",
+        "12,103,272"
+      ],
+      "column_index": 0,
+      "line": 8,
+      "evidence": "短期借款 24   38,484,710     12,103,272"
+    },
+    {
+      "field": "non_current_borrowings",
+      "definition": null,
+      "statement": "balance",
+      "fiscal_year": 2025,
+      "period_end": "2025-12-31",
+      "currency": "CNY",
+      "unit": "thousand",
+      "kind": "amount",
+      "pdf_page": 124,
+      "printed_page": "124",
+      "source_url": "https://disc.static.szse.cn/download/disc/disk03/finalpage/2026-03-28/f5cdbdbf-b138-4e83-8c6d-5a7eecb9e670.PDF",
+      "method": "table_row",
+      "verification_status": "machine_extracted",
+      "value": "60705569",
+      "value_in_units": "60705569000",
+      "raw_token": "60,705,569",
+      "row_values": [
+        "60,705,569",
+        "8,257,786"
+      ],
+      "column_index": 0,
+      "line": 23,
+      "evidence": "长期借款 34   60,705,569     8,257,786"
+    },
+    {
+      "field": "bonds_payable",
+      "definition": null,
+      "statement": "balance",
+      "fiscal_year": 2025,
+      "period_end": "2025-12-31",
+      "currency": "CNY",
+      "unit": "thousand",
+      "kind": "amount",
+      "pdf_page": 124,
+      "printed_page": "124",
+      "source_url": "https://disc.static.szse.cn/download/disc/disk03/finalpage/2026-03-28/f5cdbdbf-b138-4e83-8c6d-5a7eecb9e670.PDF",
+      "method": "table_row",
+      "verification_status": "machine_extracted",
+      "value": "4997910",
+      "value_in_units": "4997910000",
+      "raw_token": "4,997,910",
+      "row_values": [
+        "4,997,910",
+        "-"
+      ],
+      "column_index": 0,
+      "line": 24,
+      "evidence": "应付债券 35   4,997,910    -"
+    },
+    {
+      "field": "shares_outstanding",
+      "definition": "Total shares at 31 Dec 2025 (dividend base)",
+      "statement": null,
+      "fiscal_year": 2025,
+      "period_end": "2025-12-31",
+      "currency": null,
+      "unit": "units",
+      "kind": "amount",
+      "pdf_page": 249,
+      "printed_page": "249",
+      "source_url": "https://disc.static.szse.cn/download/disc/disk03/finalpage/2026-03-28/f5cdbdbf-b138-4e83-8c6d-5a7eecb9e670.PDF",
+      "method": "text_regex",
+      "verification_status": "machine_extracted",
+      "value": "9117197565",
+      "value_in_units": "9117197565",
+      "raw_token": "9,117,197,565",
+      "line": 22,
+      "evidence": "事会第二十二次会议批准2025 年度利润分配预案，以2025 年 12 月31 日总 股本 9,117,197,565 股为基数，分配现金股利人民币 3,263,957 千元（即每股现金股利人民币 0.358"
     }
   ],
   "derived": [
@@ -766,8 +911,8 @@
     "engine": "pdfplumber",
     "status": "ok",
     "summary": {
-      "row_confirmed": 21,
-      "token_on_page": 2,
+      "row_confirmed": 26,
+      "token_on_page": 3,
       "not_found": 0
     },
     "results": [
@@ -908,9 +1053,45 @@
         "pdf_page": 5,
         "token": "3.58",
         "status": "token_on_page"
+      },
+      {
+        "field": "cost_of_sales",
+        "pdf_page": 126,
+        "token": "661,305,161",
+        "status": "row_confirmed"
+      },
+      {
+        "field": "finance_costs",
+        "pdf_page": 126,
+        "token": "2,551,657",
+        "status": "row_confirmed"
+      },
+      {
+        "field": "current_borrowings",
+        "pdf_page": 124,
+        "token": "38,484,710",
+        "status": "row_confirmed"
+      },
+      {
+        "field": "non_current_borrowings",
+        "pdf_page": 124,
+        "token": "60,705,569",
+        "status": "row_confirmed"
+      },
+      {
+        "field": "bonds_payable",
+        "pdf_page": 124,
+        "token": "4,997,910",
+        "status": "row_confirmed"
+      },
+      {
+        "field": "shares_outstanding",
+        "pdf_page": 249,
+        "token": "9,117,197,565",
+        "status": "token_on_page"
       }
     ]
   },
   "reference_comparison": [],
-  "extracted_at": "2026-11-18T18:55:25.289194+00:00"
+  "extracted_at": "2026-11-18T20:02:25.814330+00:00"
 }

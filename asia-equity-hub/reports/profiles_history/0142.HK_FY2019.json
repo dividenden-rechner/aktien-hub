@@ -123,6 +123,14 @@
       "table": "b",
       "label": "^Capital expenditure$",
       "definition": "Issuer-defined capital expenditure"
+    },
+    {
+      "field": "shares_in_issue",
+      "table": "b",
+      "label": "^Number of shares in issue \\(millions\\)$",
+      "unit": "million",
+      "currency": null,
+      "definition": "Shares in issue at 31 December (millions)"
     }
   ],
   "checks": [

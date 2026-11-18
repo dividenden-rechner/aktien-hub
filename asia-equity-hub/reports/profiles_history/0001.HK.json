@@ -156,6 +156,12 @@
       "label": "^Number of shares outstanding \\(million\\)$",
       "unit": "million",
       "currency": null
+    },
+    {
+      "field": "non_current_borrowings",
+      "table": "ten_year_a",
+      "label": "^Bank and other debts$",
+      "definition": "Bank and other debts (non-current)"
     }
   ],
   "checks": [

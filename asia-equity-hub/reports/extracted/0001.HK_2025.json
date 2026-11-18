@@ -574,6 +574,112 @@
       "raw_token": "1.602",
       "line": 20,
       "evidence": "Final dividend, proposed of HK$1.602 per share (2024: HK$1.514 per share; 2023: HK$1.7"
+    },
+    {
+      "field": "finance_costs",
+      "definition": null,
+      "statement": "income",
+      "fiscal_year": 2025,
+      "period_end": "2025-12-31",
+      "currency": "HKD",
+      "unit": "million",
+      "kind": "amount",
+      "pdf_page": 134,
+      "printed_page": "132",
+      "source_url": "https://doc.irasia.com/listco/hk/ckh/annual/2025/ar2025.pdf",
+      "method": "table_row",
+      "verification_status": "machine_extracted",
+      "value": "12327",
+      "value_in_units": "12327000000",
+      "raw_token": "(12,327)",
+      "row_values": [
+        "(12,327)",
+        "(13,392)",
+        "(12,227)"
+      ],
+      "column_index": 0,
+      "line": 17,
+      "evidence": "(1,580) Interest expenses and other finance costs 9  (12,327)  (13,392)  (12,227)"
+    },
+    {
+      "field": "depreciation_amortisation",
+      "definition": null,
+      "statement": "income",
+      "fiscal_year": 2025,
+      "period_end": "2025-12-31",
+      "currency": "HKD",
+      "unit": "million",
+      "kind": "amount",
+      "pdf_page": 134,
+      "printed_page": "132",
+      "source_url": "https://doc.irasia.com/listco/hk/ckh/annual/2025/ar2025.pdf",
+      "method": "table_row",
+      "verification_status": "machine_extracted",
+      "value": "38391",
+      "value_in_units": "38391000000",
+      "raw_token": "(38,391)",
+      "row_values": [
+        "(38,391)",
+        "(40,460)",
+        "(40,083)"
+      ],
+      "column_index": 0,
+      "line": 9,
+      "evidence": "(4,922) Depreciation and amortisation 8  (38,391)  (40,460)  (40,083)"
+    },
+    {
+      "field": "current_borrowings",
+      "definition": "Bank and other debts (current)",
+      "statement": "balance",
+      "fiscal_year": 2025,
+      "period_end": "2025-12-31",
+      "currency": "HKD",
+      "unit": "million",
+      "kind": "amount",
+      "pdf_page": 136,
+      "printed_page": "134",
+      "source_url": "https://doc.irasia.com/listco/hk/ckh/annual/2025/ar2025.pdf",
+      "method": "table_row",
+      "verification_status": "machine_extracted",
+      "value": "38087",
+      "value_in_units": "38087000000",
+      "raw_token": "38,087",
+      "row_values": [
+        "38,087",
+        "30,956",
+        "58,324",
+        "70,130"
+      ],
+      "column_index": 0,
+      "line": 38,
+      "evidence": "4,883 Bank and other debts 26  38,087 30,956 58,324 70,130"
+    },
+    {
+      "field": "non_current_borrowings",
+      "definition": "Bank and other debts (non-current)",
+      "statement": "balance",
+      "fiscal_year": 2025,
+      "period_end": "2025-12-31",
+      "currency": "HKD",
+      "unit": "million",
+      "kind": "amount",
+      "pdf_page": 136,
+      "printed_page": "134",
+      "source_url": "https://doc.irasia.com/listco/hk/ckh/annual/2025/ar2025.pdf",
+      "method": "table_row",
+      "verification_status": "machine_extracted",
+      "value": "225506",
+      "value_in_units": "225506000000",
+      "raw_token": "225,506",
+      "row_values": [
+        "225,506",
+        "225,436",
+        "213,598",
+        "214,196"
+      ],
+      "column_index": 0,
+      "line": 58,
+      "evidence": "28,911 Bank and other debts 26 225,506 225,436 213,598 214,196"
     }
   ],
   "derived": [
@@ -789,7 +895,7 @@
     "engine": "pdfplumber",
     "status": "ok",
     "summary": {
-      "row_confirmed": 13,
+      "row_confirmed": 17,
       "token_on_page": 9,
       "not_found": 0
     },
@@ -925,6 +1031,30 @@
         "pdf_page": 207,
         "token": "1.602",
         "status": "token_on_page"
+      },
+      {
+        "field": "finance_costs",
+        "pdf_page": 134,
+        "token": "(12,327)",
+        "status": "row_confirmed"
+      },
+      {
+        "field": "depreciation_amortisation",
+        "pdf_page": 134,
+        "token": "(38,391)",
+        "status": "row_confirmed"
+      },
+      {
+        "field": "current_borrowings",
+        "pdf_page": 136,
+        "token": "38,087",
+        "status": "row_confirmed"
+      },
+      {
+        "field": "non_current_borrowings",
+        "pdf_page": 136,
+        "token": "225,506",
+        "status": "row_confirmed"
       }
     ]
   },
@@ -976,5 +1106,5 @@
       "note": "Proportionate basis incl. share of associates/JVs; NOT IFRS revenue"
     }
   ],
-  "extracted_at": "2026-11-18T18:55:22.337131+00:00"
+  "extracted_at": "2026-11-18T20:02:21.461348+00:00"
 }

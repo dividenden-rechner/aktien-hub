@@ -914,7 +914,7 @@ async function initFinance(sym,p,cur,inc,cf,SD){
     if(mode==="bar"){const bw=Math.min(22,iw/years.length/(act.length+.6));act.forEach((s,si)=>s.v.forEach((v,i)=>{if(v==null)return;const x0=Xc(i)-bw*act.length/2+si*bw,y0=Y(Math.max(v,0)),hh=Math.max(Math.abs(Y(v)-Y(0)),1);svg+=`<rect x="${x0}" y="${y0}" width="${bw-1}" height="${hh}" fill="${s.c}" rx="2"><title>${esc(s.l)} ${years[i]}: ${big(v)}</title></rect>`}))}
     else act.forEach(s=>{let d="";s.v.forEach((v,i)=>{if(v==null)return;d+=(d?"L":"M")+Xc(i)+","+Y(v)});svg+=`<path d="${d}" fill="none" stroke="${s.c}" stroke-width="2.4" stroke-linejoin="round"/>`;s.v.forEach((v,i)=>{if(v!=null)svg+=`<circle cx="${Xc(i)}" cy="${Y(v)}" r="3.4" fill="${s.c}"><title>${esc(s.l)} ${years[i]}: ${big(v)}</title></circle>`})});
     el.innerHTML=svg+"</svg>";
-    const miss=S.filter(s=>!have.includes(s)).map(s=>s.l);$("fmn").textContent=miss.length?"Nicht verfügbar: "+miss.join(", ")+(SD?" (in den SEC-Jahresberichten nicht einheitlich ausgewiesen).":" (im FMP-Tarif oder in den Daten nicht enthalten)."):"";
+    const miss=S.filter(s=>!have.includes(s)).map(s=>s.l);$("fmn").textContent=miss.length?"Nicht verfügbar: "+miss.join(", ")+(SD?" (in den "+quelleText(SD.q,true)+"-Angaben nicht einheitlich ausgewiesen).":" (im FMP-Tarif oder in den Daten nicht enthalten)."):"";
   }
   /* Capex-Tabelle */
   function capex(){

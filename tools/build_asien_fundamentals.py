@@ -22,7 +22,16 @@ MAP = {
     "operativer_cf": ["operating_cash_flow"], "capex": ["capex"], "operatives_ergebnis": ["operating_profit"],
     "dividenden_gezahlt": ["dividends_paid_to_shareholders"],
     "dividende_je_aktie": ["dividend_per_share_usd_cents", "dividend_per_share", "dividend_per_share_ten_year"],
+    "aktien_verw": ["shares_outstanding", "shares_in_issue", "diluted_weighted_shares"],
+    "zinsaufwand": ["finance_costs"], "abschreibungen": ["depreciation_amortisation"],
+    "schulden_kurz": ["current_borrowings"], "schulden_lang": ["non_current_borrowings"],
+    "bruttogewinn": ["gross_profit"],
+    "umlaufvermoegen": ["current_assets"], "kurzfr_verbindl": ["current_liabilities"],
+    "verbindlichkeiten": ["total_liabilities"],
 }
+# In Deutschland gehandelte ISIN je Asien-Firma (Kurs fuer tools/kennzahlen.py); BYD: H-Aktie (A-Aktie in DE nicht handelbar)
+ISIN = {"0001.HK": "KYG217651051", "0019.HK": "HK0019000162", "0142.HK": "BMG348041077",
+        "D05.SI": "SG1L01001701", "002594.SZ": "CNE100000296"}
 LAND = {"HK": "HK", "SI": "SG", "SZ": "CN", "SS": "CN"}
 
 
@@ -31,6 +40,22 @@ def wert(f):
     if v is None:
         return None
     return round(float(v) * SCALE.get(f.get("unit"), 1), 6)
+
+
+def abgeleitet(reihen, roh):
+    """Exakte Rechnungen aus Berichtswerten desselben Jahres (keine Schaetzung); nur wo das Ziel noch fehlt."""
+    for y, r in roh.items():
+        def setze(hub, v):
+            if v is not None and y not in reihen.get(hub, {}):
+                reihen.setdefault(hub, {})[y] = round(v, 6)
+        if "profit_before_tax" in r and "net_profit" in r:
+            setze("steuern", r["profit_before_tax"] - r["net_profit"])           # Steuern = Gewinn vor Steuern - Jahresueberschuss
+        if "depreciation_ppe" in r and "amortisation_intangibles" in r:
+            setze("abschreibungen", r["depreciation_ppe"] + r["amortisation_intangibles"])
+        if "revenue" in r and "cost_of_sales" in r:
+            setze("bruttogewinn", r["revenue"] - abs(r["cost_of_sales"]))
+        if "non_current_borrowings" in r and "bonds_payable" in r:
+            reihen.setdefault("schulden_lang", {})[y] = round(r["non_current_borrowings"] + r["bonds_payable"], 6)
 
 
 def bauen():
@@ -64,8 +89,17 @@ def bauen():
                     if f and f.get("value") is not None and (f.get("currency") in (cur, None) or s == "dividend_per_share_usd_cents"):
                         reihen.setdefault(hub, {})[int(y)] = wert(f)
                         break
+        roh = {}
+        for f in (ten.get(sym) or {}).get("facts", []):
+            if f.get("comparable") is not False and f.get("value") is not None:
+                roh.setdefault(f["fiscal_year"], {})[f["field"]] = wert(f)
+        for y, block in years.items():
+            for f in block["facts"]:
+                if f.get("value") is not None:
+                    roh.setdefault(int(y), {})[f["field"]] = wert(f)
+        abgeleitet(reihen, roh)
         k = {hub: [[f"{jahr}-12-31", v] for jahr, v in sorted(r.items()) if v is not None] for hub, r in reihen.items()}
-        firmen[sym] = {"n": c.get("company") or sym, "land": LAND.get(sym.rsplit(".", 1)[1]), "w": cur,
+        firmen[sym] = {"n": c.get("company") or sym, "isin": ISIN.get(sym), "land": LAND.get(sym.rsplit(".", 1)[1]), "w": cur,
                        "gj": f"{max(int(y) for y in years)}-12-31", "quelle": "Geschäftsbericht (PDF)",
                        "quelle_url": any_year.get("source_url"), "status": "maschinell extrahiert, menschliche Prüfung ausstehend",
                        "k": {kk: vv for kk, vv in k.items() if vv}}

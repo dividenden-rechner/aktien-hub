@@ -126,6 +126,14 @@
       "table": "ten_year_b",
       "label": "^Capital expenditure$",
       "definition": "Issuer-defined capital expenditure (incl. concession assets)"
+    },
+    {
+      "field": "shares_in_issue",
+      "table": "ten_year_b",
+      "label": "^Number of shares in issue \\(millions\\)$",
+      "unit": "million",
+      "currency": null,
+      "definition": "Shares in issue at 31 December (millions)"
     }
   ],
   "checks": [

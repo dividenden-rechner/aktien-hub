@@ -636,6 +636,31 @@
       "raw_token": "0.15",
       "line": 129,
       "evidence": "dinary dividends of $0.66 per share and Capital Return dividends of $0.15 per share for the fourth quarter 2025 have not been accounted for in the"
+    },
+    {
+      "field": "diluted_weighted_shares",
+      "definition": "Weighted average diluted ordinary shares (millions)",
+      "statement": null,
+      "fiscal_year": 2025,
+      "period_end": "2025-12-31",
+      "currency": null,
+      "unit": "million",
+      "kind": "amount",
+      "pdf_page": 68,
+      "printed_page": "132-133",
+      "source_url": "https://www.dbs.com/iwov-resources/images/investors/annual-report/dbs-annual-report-2025.pdf",
+      "method": "table_row",
+      "verification_status": "machine_extracted",
+      "value": "2850",
+      "value_in_units": "2850000000",
+      "raw_token": "2,850",
+      "row_values": [
+        "2,850",
+        "2,846"
+      ],
+      "column_index": 0,
+      "line": 37,
+      "evidence": "Weighted average number of ordinary shares in issue (diluted)(a) (b) 2,850 2,846"
     }
   ],
   "derived": [
@@ -810,7 +835,7 @@
     "engine": "pdfplumber",
     "status": "ok",
     "summary": {
-      "row_confirmed": 9,
+      "row_confirmed": 10,
       "token_on_page": 16,
       "not_found": 0
     },
@@ -964,9 +989,15 @@
         "pdf_page": 75,
         "token": "0.15",
         "status": "token_on_page"
+      },
+      {
+        "field": "diluted_weighted_shares",
+        "pdf_page": 68,
+        "token": "2,850",
+        "status": "row_confirmed"
       }
     ]
   },
   "reference_comparison": [],
-  "extracted_at": "2026-11-18T18:55:24.372144+00:00"
+  "extracted_at": "2026-11-18T20:02:24.446733+00:00"
 }

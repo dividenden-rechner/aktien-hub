@@ -635,6 +635,106 @@
       "column_index": 9,
       "line": 72,
       "evidence": "Dividends per share 2.10 2.10 3.00 3.00 1.70 2.60 3.00 11.32 3.35 3.80"
+    },
+    {
+      "field": "gross_profit",
+      "definition": null,
+      "statement": "income",
+      "fiscal_year": 2025,
+      "period_end": "2025-12-31",
+      "currency": "HKD",
+      "unit": "million",
+      "kind": "amount",
+      "pdf_page": 147,
+      "printed_page": "145",
+      "source_url": "https://www1.hkexnews.hk/listedco/listconews/sehk/2026/0408/2026040800985.pdf",
+      "method": "table_row",
+      "verification_status": "machine_extracted",
+      "value": "33739",
+      "value_in_units": "33739000000",
+      "raw_token": "33,739",
+      "row_values": [
+        "33,739",
+        "30,463"
+      ],
+      "column_index": 0,
+      "line": 13,
+      "evidence": "Gross profit 33,739 30,463"
+    },
+    {
+      "field": "finance_costs",
+      "definition": null,
+      "statement": "income",
+      "fiscal_year": 2025,
+      "period_end": "2025-12-31",
+      "currency": "HKD",
+      "unit": "million",
+      "kind": "amount",
+      "pdf_page": 147,
+      "printed_page": "145",
+      "source_url": "https://www1.hkexnews.hk/listedco/listconews/sehk/2026/0408/2026040800985.pdf",
+      "method": "table_row",
+      "verification_status": "machine_extracted",
+      "value": "3022",
+      "value_in_units": "3022000000",
+      "raw_token": "(3,022)",
+      "row_values": [
+        "(3,022)",
+        "(2,984)"
+      ],
+      "column_index": 0,
+      "line": 21,
+      "evidence": "Finance charges (3,022) (2,984)"
+    },
+    {
+      "field": "current_borrowings",
+      "definition": "Loans and bonds due within one year (short-term loans: nil in 2025)",
+      "statement": "balance",
+      "fiscal_year": 2025,
+      "period_end": "2025-12-31",
+      "currency": "HKD",
+      "unit": "million",
+      "kind": "amount",
+      "pdf_page": 149,
+      "printed_page": "147",
+      "source_url": "https://www1.hkexnews.hk/listedco/listconews/sehk/2026/0408/2026040800985.pdf",
+      "method": "table_row",
+      "verification_status": "machine_extracted",
+      "value": "17166",
+      "value_in_units": "17166000000",
+      "raw_token": "17,166",
+      "row_values": [
+        "17,166",
+        "15,466"
+      ],
+      "column_index": 0,
+      "line": 52,
+      "evidence": "Long-term loans and bonds due within one year 30 17,166 15,466"
+    },
+    {
+      "field": "non_current_borrowings",
+      "definition": null,
+      "statement": "balance",
+      "fiscal_year": 2025,
+      "period_end": "2025-12-31",
+      "currency": "HKD",
+      "unit": "million",
+      "kind": "amount",
+      "pdf_page": 149,
+      "printed_page": "147",
+      "source_url": "https://www1.hkexnews.hk/listedco/listconews/sehk/2026/0408/2026040800985.pdf",
+      "method": "table_row",
+      "verification_status": "machine_extracted",
+      "value": "71270",
+      "value_in_units": "71270000000",
+      "raw_token": "71,270",
+      "row_values": [
+        "71,270",
+        "75,825"
+      ],
+      "column_index": 0,
+      "line": 60,
+      "evidence": "Long-term loans and bonds 30 71,270 75,825"
     }
   ],
   "derived": [
@@ -873,7 +973,7 @@
     "engine": "pdfplumber",
     "status": "ok",
     "summary": {
-      "row_confirmed": 19,
+      "row_confirmed": 23,
       "token_on_page": 6,
       "not_found": 0
     },
@@ -1027,6 +1127,30 @@
         "pdf_page": 242,
         "token": "3.80",
         "status": "row_confirmed"
+      },
+      {
+        "field": "gross_profit",
+        "pdf_page": 147,
+        "token": "33,739",
+        "status": "row_confirmed"
+      },
+      {
+        "field": "finance_costs",
+        "pdf_page": 147,
+        "token": "(3,022)",
+        "status": "row_confirmed"
+      },
+      {
+        "field": "current_borrowings",
+        "pdf_page": 149,
+        "token": "17,166",
+        "status": "row_confirmed"
+      },
+      {
+        "field": "non_current_borrowings",
+        "pdf_page": 149,
+        "token": "71,270",
+        "status": "row_confirmed"
       }
     ]
   },
@@ -1094,5 +1218,5 @@
       ]
     }
   ],
-  "extracted_at": "2026-11-18T18:55:23.239381+00:00"
+  "extracted_at": "2026-11-18T20:02:22.652442+00:00"
 }

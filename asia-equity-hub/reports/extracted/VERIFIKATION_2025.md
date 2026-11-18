@@ -1,6 +1,6 @@
 # Verifikation Geschäftsberichte GJ 2025
 
-Erzeugt: 2026-11-18 18:55 UTC durch `python extract_reports.py`.
+Erzeugt: 2026-11-18 20:02 UTC durch `python extract_reports.py`.
 
 Legende Spalte „2. Engine“: `row_confirmed` = pdfplumber findet denselben Wert in einer Zeile mit passendem Label; `token_on_page` = Wert steht auf derselben Seite (Label nicht in derselben Zeile erkennbar); `not_found` = Abweichung, manuell prüfen. Spalte „Referenz“: Abgleich mit IR-Webseite des Emittenten.
 
@@ -13,7 +13,7 @@ Legende Spalte „2. Engine“: `row_confirmed` = pdfplumber findet denselben We
 - PDF: 352 Seiten, SHA-256 `e5fe1da8c7c39d04586814fa3e6b9ec13c4db2c79034a93a89d7dd533fa42440` (Profil: match)
 - Status: **extracted_consistent**; Prüfungen: balance_sheet_identity=pass, profit_split=pass, net_assets_equals_total_equity=pass, cash_flow_closing_cash_equals_balance_sheet=pass, dps_interim_plus_final=pass
 
-- 2. PDF-Engine (pdfplumber): 13 Zeile bestätigt, 9 Wert auf Seite, 0 nicht gefunden
+- 2. PDF-Engine (pdfplumber): 17 Zeile bestätigt, 9 Wert auf Seite, 0 nicht gefunden
 
 | Kennzahl | Wert | Einheit | PDF-S. | Druck-S. | 2. Engine | Referenz |
 |---|---:|---|---:|---:|---|---|
@@ -49,7 +49,7 @@ Hinweise:
 - PDF: 260 Seiten, SHA-256 `2f4b1b4435e04184d4b5940f21b96c2ce34c91af9eb95eeb4d825a31313a60a2` (Profil: match)
 - Status: **extracted_consistent**; Prüfungen: balance_sheet_identity=pass, profit_split=pass, net_assets_equals_total_equity=pass, net_debt_definition=pass, dps_matches_ten_year_summary=pass
 
-- 2. PDF-Engine (pdfplumber): 19 Zeile bestätigt, 6 Wert auf Seite, 0 nicht gefunden
+- 2. PDF-Engine (pdfplumber): 23 Zeile bestätigt, 6 Wert auf Seite, 0 nicht gefunden
 
 | Kennzahl | Wert | Einheit | PDF-S. | Druck-S. | 2. Engine | Referenz |
 |---|---:|---|---:|---:|---|---|
@@ -87,7 +87,7 @@ Hinweise:
 - PDF: 222 Seiten, SHA-256 `4dca002f1a256863e5343968f47d6f669dfcdf7930509a445f6aad0585822fe0` (Profil: match)
 - Status: **extracted_consistent**; Prüfungen: balance_sheet_identity=pass, profit_split=pass, dps_interim_plus_final_usd=pass
 
-- 2. PDF-Engine (pdfplumber): 13 Zeile bestätigt, 8 Wert auf Seite, 0 nicht gefunden
+- 2. PDF-Engine (pdfplumber): 19 Zeile bestätigt, 8 Wert auf Seite, 0 nicht gefunden
 
 | Kennzahl | Wert | Einheit | PDF-S. | Druck-S. | 2. Engine | Referenz |
 |---|---:|---|---:|---:|---|---|
@@ -123,7 +123,7 @@ Hinweise:
 - PDF: 107 Seiten, SHA-256 `e7952ba9dff9e339070334ec5d67a71c81a8c618be7f34abad6f3118189b38ce` (Profil: match)
 - Status: **extracted_consistent**; Prüfungen: balance_sheet_identity=pass, profit_split=pass, net_assets_equals_total_equity=pass, total_income_components=pass, dps_components=pass
 
-- 2. PDF-Engine (pdfplumber): 9 Zeile bestätigt, 16 Wert auf Seite, 0 nicht gefunden
+- 2. PDF-Engine (pdfplumber): 10 Zeile bestätigt, 16 Wert auf Seite, 0 nicht gefunden
 
 | Kennzahl | Wert | Einheit | PDF-S. | Druck-S. | 2. Engine | Referenz |
 |---|---:|---|---:|---:|---|---|
@@ -158,7 +158,7 @@ Hinweise:
 - PDF: 268 Seiten, SHA-256 `710d8b2e08e37ba521f1c4071d2c3e2369d3cadabc21a45073215d9f72138b0b` (Profil: match)
 - Status: **extracted_consistent**; Prüfungen: balance_sheet_identity=pass, profit_split=pass, liabilities_and_equity_total=pass, assets_split=pass, liabilities_split=pass, dps_vs_per_10_shares=pass
 
-- 2. PDF-Engine (pdfplumber): 21 Zeile bestätigt, 2 Wert auf Seite, 0 nicht gefunden
+- 2. PDF-Engine (pdfplumber): 26 Zeile bestätigt, 3 Wert auf Seite, 0 nicht gefunden
 
 | Kennzahl | Wert | Einheit | PDF-S. | Druck-S. | 2. Engine | Referenz |
 |---|---:|---|---:|---:|---|---|
