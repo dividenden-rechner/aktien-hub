@@ -460,6 +460,100 @@
               ],
               "method": "comparative_table_column",
               "verification_status": "machine_extracted"
+            },
+            {
+              "field": "finance_costs",
+              "value": "13392",
+              "value_in_units": "13392000000",
+              "currency": "HKD",
+              "unit": "million",
+              "fiscal_year": 2024,
+              "source_report_year": 2025,
+              "source_url": "https://doc.irasia.com/listco/hk/ckh/annual/2025/ar2025.pdf",
+              "pdf_sha256": "e5fe1da8c7c39d04586814fa3e6b9ec13c4db2c79034a93a89d7dd533fa42440",
+              "pdf_page": 134,
+              "printed_page": "132",
+              "evidence": "(1,580) Interest expenses and other finance costs 9  (12,327)  (13,392)  (12,227)",
+              "raw_token": "(13,392)",
+              "column_index": 1,
+              "row_values": [
+                "(12,327)",
+                "(13,392)",
+                "(12,227)"
+              ],
+              "method": "comparative_table_column",
+              "verification_status": "machine_extracted"
+            },
+            {
+              "field": "depreciation_amortisation",
+              "value": "40460",
+              "value_in_units": "40460000000",
+              "currency": "HKD",
+              "unit": "million",
+              "fiscal_year": 2024,
+              "source_report_year": 2025,
+              "source_url": "https://doc.irasia.com/listco/hk/ckh/annual/2025/ar2025.pdf",
+              "pdf_sha256": "e5fe1da8c7c39d04586814fa3e6b9ec13c4db2c79034a93a89d7dd533fa42440",
+              "pdf_page": 134,
+              "printed_page": "132",
+              "evidence": "(4,922) Depreciation and amortisation 8  (38,391)  (40,460)  (40,083)",
+              "raw_token": "(40,460)",
+              "column_index": 1,
+              "row_values": [
+                "(38,391)",
+                "(40,460)",
+                "(40,083)"
+              ],
+              "method": "comparative_table_column",
+              "verification_status": "machine_extracted"
+            },
+            {
+              "field": "current_borrowings",
+              "value": "30956",
+              "value_in_units": "30956000000",
+              "currency": "HKD",
+              "unit": "million",
+              "fiscal_year": 2024,
+              "source_report_year": 2025,
+              "source_url": "https://doc.irasia.com/listco/hk/ckh/annual/2025/ar2025.pdf",
+              "pdf_sha256": "e5fe1da8c7c39d04586814fa3e6b9ec13c4db2c79034a93a89d7dd533fa42440",
+              "pdf_page": 136,
+              "printed_page": "134",
+              "evidence": "4,883 Bank and other debts 26  38,087 30,956 58,324 70,130",
+              "raw_token": "30,956",
+              "column_index": 1,
+              "row_values": [
+                "38,087",
+                "30,956",
+                "58,324",
+                "70,130"
+              ],
+              "method": "comparative_table_column",
+              "verification_status": "machine_extracted"
+            },
+            {
+              "field": "non_current_borrowings",
+              "value": "225436",
+              "value_in_units": "225436000000",
+              "currency": "HKD",
+              "unit": "million",
+              "fiscal_year": 2024,
+              "source_report_year": 2025,
+              "source_url": "https://doc.irasia.com/listco/hk/ckh/annual/2025/ar2025.pdf",
+              "pdf_sha256": "e5fe1da8c7c39d04586814fa3e6b9ec13c4db2c79034a93a89d7dd533fa42440",
+              "pdf_page": 136,
+              "printed_page": "134",
+              "evidence": "28,911 Bank and other debts 26 225,506 225,436 213,598 214,196",
+              "raw_token": "225,436",
+              "column_index": 1,
+              "row_values": [
+                "225,506",
+                "225,436",
+                "213,598",
+                "214,196"
+              ],
+              "method": "comparative_table_column",
+              "verification_status": "machine_extracted"
             }
           ],
           "omitted": [
@@ -678,6 +772,42 @@
               "currency": "HKD",
               "unit": "units",
               "pdf_page": 207,
+              "source_url": "https://doc.irasia.com/listco/hk/ckh/annual/2025/ar2025.pdf",
+              "verification_status": "machine_extracted"
+            },
+            {
+              "field": "finance_costs",
+              "value": "12327",
+              "currency": "HKD",
+              "unit": "million",
+              "pdf_page": 134,
+              "source_url": "https://doc.irasia.com/listco/hk/ckh/annual/2025/ar2025.pdf",
+              "verification_status": "machine_extracted"
+            },
+            {
+              "field": "depreciation_amortisation",
+              "value": "38391",
+              "currency": "HKD",
+              "unit": "million",
+              "pdf_page": 134,
+              "source_url": "https://doc.irasia.com/listco/hk/ckh/annual/2025/ar2025.pdf",
+              "verification_status": "machine_extracted"
+            },
+            {
+              "field": "current_borrowings",
+              "value": "38087",
+              "currency": "HKD",
+              "unit": "million",
+              "pdf_page": 136,
+              "source_url": "https://doc.irasia.com/listco/hk/ckh/annual/2025/ar2025.pdf",
+              "verification_status": "machine_extracted"
+            },
+            {
+              "field": "non_current_borrowings",
+              "value": "225506",
+              "currency": "HKD",
+              "unit": "million",
+              "pdf_page": 136,
               "source_url": "https://doc.irasia.com/listco/hk/ckh/annual/2025/ar2025.pdf",
               "verification_status": "machine_extracted"
             }
@@ -1213,6 +1343,94 @@
               ],
               "method": "comparative_table_column",
               "verification_status": "machine_extracted"
+            },
+            {
+              "field": "gross_profit",
+              "value": "30463",
+              "value_in_units": "30463000000",
+              "currency": "HKD",
+              "unit": "million",
+              "fiscal_year": 2024,
+              "source_report_year": 2025,
+              "source_url": "https://www1.hkexnews.hk/listedco/listconews/sehk/2026/0408/2026040800985.pdf",
+              "pdf_sha256": "2f4b1b4435e04184d4b5940f21b96c2ce34c91af9eb95eeb4d825a31313a60a2",
+              "pdf_page": 147,
+              "printed_page": "145",
+              "evidence": "Gross profit 33,739 30,463",
+              "raw_token": "30,463",
+              "column_index": 1,
+              "row_values": [
+                "33,739",
+                "30,463"
+              ],
+              "method": "comparative_table_column",
+              "verification_status": "machine_extracted"
+            },
+            {
+              "field": "finance_costs",
+              "value": "2984",
+              "value_in_units": "2984000000",
+              "currency": "HKD",
+              "unit": "million",
+              "fiscal_year": 2024,
+              "source_report_year": 2025,
+              "source_url": "https://www1.hkexnews.hk/listedco/listconews/sehk/2026/0408/2026040800985.pdf",
+              "pdf_sha256": "2f4b1b4435e04184d4b5940f21b96c2ce34c91af9eb95eeb4d825a31313a60a2",
+              "pdf_page": 147,
+              "printed_page": "145",
+              "evidence": "Finance charges (3,022) (2,984)",
+              "raw_token": "(2,984)",
+              "column_index": 1,
+              "row_values": [
+                "(3,022)",
+                "(2,984)"
+              ],
+              "method": "comparative_table_column",
+              "verification_status": "machine_extracted"
+            },
+            {
+              "field": "current_borrowings",
+              "value": "15466",
+              "value_in_units": "15466000000",
+              "currency": "HKD",
+              "unit": "million",
+              "fiscal_year": 2024,
+              "source_report_year": 2025,
+              "source_url": "https://www1.hkexnews.hk/listedco/listconews/sehk/2026/0408/2026040800985.pdf",
+              "pdf_sha256": "2f4b1b4435e04184d4b5940f21b96c2ce34c91af9eb95eeb4d825a31313a60a2",
+              "pdf_page": 149,
+              "printed_page": "147",
+              "evidence": "Long-term loans and bonds due within one year 30 17,166 15,466",
+              "raw_token": "15,466",
+              "column_index": 1,
+              "row_values": [
+                "17,166",
+                "15,466"
+              ],
+              "method": "comparative_table_column",
+              "verification_status": "machine_extracted"
+            },
+            {
+              "field": "non_current_borrowings",
+              "value": "75825",
+              "value_in_units": "75825000000",
+              "currency": "HKD",
+              "unit": "million",
+              "fiscal_year": 2024,
+              "source_report_year": 2025,
+              "source_url": "https://www1.hkexnews.hk/listedco/listconews/sehk/2026/0408/2026040800985.pdf",
+              "pdf_sha256": "2f4b1b4435e04184d4b5940f21b96c2ce34c91af9eb95eeb4d825a31313a60a2",
+              "pdf_page": 149,
+              "printed_page": "147",
+              "evidence": "Long-term loans and bonds 30 71,270 75,825",
+              "raw_token": "75,825",
+              "column_index": 1,
+              "row_values": [
+                "71,270",
+                "75,825"
+              ],
+              "method": "comparative_table_column",
+              "verification_status": "machine_extracted"
             }
           ],
           "omitted": [
@@ -1454,6 +1672,42 @@
               "currency": "HKD",
               "unit": "units",
               "pdf_page": 242,
+              "source_url": "https://www1.hkexnews.hk/listedco/listconews/sehk/2026/0408/2026040800985.pdf",
+              "verification_status": "machine_extracted"
+            },
+            {
+              "field": "gross_profit",
+              "value": "33739",
+              "currency": "HKD",
+              "unit": "million",
+              "pdf_page": 147,
+              "source_url": "https://www1.hkexnews.hk/listedco/listconews/sehk/2026/0408/2026040800985.pdf",
+              "verification_status": "machine_extracted"
+            },
+            {
+              "field": "finance_costs",
+              "value": "3022",
+              "currency": "HKD",
+              "unit": "million",
+              "pdf_page": 147,
+              "source_url": "https://www1.hkexnews.hk/listedco/listconews/sehk/2026/0408/2026040800985.pdf",
+              "verification_status": "machine_extracted"
+            },
+            {
+              "field": "current_borrowings",
+              "value": "17166",
+              "currency": "HKD",
+              "unit": "million",
+              "pdf_page": 149,
+              "source_url": "https://www1.hkexnews.hk/listedco/listconews/sehk/2026/0408/2026040800985.pdf",
+              "verification_status": "machine_extracted"
+            },
+            {
+              "field": "non_current_borrowings",
+              "value": "71270",
+              "currency": "HKD",
+              "unit": "million",
+              "pdf_page": 149,
               "source_url": "https://www1.hkexnews.hk/listedco/listconews/sehk/2026/0408/2026040800985.pdf",
               "verification_status": "machine_extracted"
             }
@@ -1937,6 +2191,94 @@
               ],
               "method": "comparative_table_column",
               "verification_status": "machine_extracted"
+            },
+            {
+              "field": "cost_of_sales",
+              "value": "626046616",
+              "value_in_units": "626046616000",
+              "currency": "CNY",
+              "unit": "thousand",
+              "fiscal_year": 2024,
+              "source_report_year": 2025,
+              "source_url": "https://disc.static.szse.cn/download/disc/disk03/finalpage/2026-03-28/f5cdbdbf-b138-4e83-8c6d-5a7eecb9e670.PDF",
+              "pdf_sha256": "710d8b2e08e37ba521f1c4071d2c3e2369d3cadabc21a45073215d9f72138b0b",
+              "pdf_page": 126,
+              "printed_page": "126",
+              "evidence": "减：营业成本 45  661,305,161     626,046,616",
+              "raw_token": "626,046,616",
+              "column_index": 1,
+              "row_values": [
+                "661,305,161",
+                "626,046,616"
+              ],
+              "method": "comparative_table_column",
+              "verification_status": "machine_extracted"
+            },
+            {
+              "field": "finance_costs",
+              "value": "2093781",
+              "value_in_units": "2093781000",
+              "currency": "CNY",
+              "unit": "thousand",
+              "fiscal_year": 2024,
+              "source_report_year": 2025,
+              "source_url": "https://disc.static.szse.cn/download/disc/disk03/finalpage/2026-03-28/f5cdbdbf-b138-4e83-8c6d-5a7eecb9e670.PDF",
+              "pdf_sha256": "710d8b2e08e37ba521f1c4071d2c3e2369d3cadabc21a45073215d9f72138b0b",
+              "pdf_page": 126,
+              "printed_page": "126",
+              "evidence": "其中：利息费用 50  2,551,657     2,093,781",
+              "raw_token": "2,093,781",
+              "column_index": 1,
+              "row_values": [
+                "2,551,657",
+                "2,093,781"
+              ],
+              "method": "comparative_table_column",
+              "verification_status": "machine_extracted"
+            },
+            {
+              "field": "current_borrowings",
+              "value": "12103272",
+              "value_in_units": "12103272000",
+              "currency": "CNY",
+              "unit": "thousand",
+              "fiscal_year": 2024,
+              "source_report_year": 2025,
+              "source_url": "https://disc.static.szse.cn/download/disc/disk03/finalpage/2026-03-28/f5cdbdbf-b138-4e83-8c6d-5a7eecb9e670.PDF",
+              "pdf_sha256": "710d8b2e08e37ba521f1c4071d2c3e2369d3cadabc21a45073215d9f72138b0b",
+              "pdf_page": 124,
+              "printed_page": "124",
+              "evidence": "短期借款 24   38,484,710     12,103,272",
+              "raw_token": "12,103,272",
+              "column_index": 1,
+              "row_values": [
+                "38,484,710",
+                "12,103,272"
+              ],
+              "method": "comparative_table_column",
+              "verification_status": "machine_extracted"
+            },
+            {
+              "field": "non_current_borrowings",
+              "value": "8257786",
+              "value_in_units": "8257786000",
+              "currency": "CNY",
+              "unit": "thousand",
+              "fiscal_year": 2024,
+              "source_report_year": 2025,
+              "source_url": "https://disc.static.szse.cn/download/disc/disk03/finalpage/2026-03-28/f5cdbdbf-b138-4e83-8c6d-5a7eecb9e670.PDF",
+              "pdf_sha256": "710d8b2e08e37ba521f1c4071d2c3e2369d3cadabc21a45073215d9f72138b0b",
+              "pdf_page": 124,
+              "printed_page": "124",
+              "evidence": "长期借款 34   60,705,569     8,257,786",
+              "raw_token": "8,257,786",
+              "column_index": 1,
+              "row_values": [
+                "60,705,569",
+                "8,257,786"
+              ],
+              "method": "comparative_table_column",
+              "verification_status": "machine_extracted"
             }
           ],
           "omitted": [
@@ -1946,6 +2288,14 @@
             },
             {
               "field": "dividend_per_10_shares",
+              "reason": "no_comparative_table_row"
+            },
+            {
+              "field": "bonds_payable",
+              "reason": "blank_comparative_value"
+            },
+            {
+              "field": "shares_outstanding",
               "reason": "no_comparative_table_row"
             }
           ],
@@ -2160,6 +2510,60 @@
               "currency": "CNY",
               "unit": "units",
               "pdf_page": 5,
+              "source_url": "https://disc.static.szse.cn/download/disc/disk03/finalpage/2026-03-28/f5cdbdbf-b138-4e83-8c6d-5a7eecb9e670.PDF",
+              "verification_status": "machine_extracted"
+            },
+            {
+              "field": "cost_of_sales",
+              "value": "661305161",
+              "currency": "CNY",
+              "unit": "thousand",
+              "pdf_page": 126,
+              "source_url": "https://disc.static.szse.cn/download/disc/disk03/finalpage/2026-03-28/f5cdbdbf-b138-4e83-8c6d-5a7eecb9e670.PDF",
+              "verification_status": "machine_extracted"
+            },
+            {
+              "field": "finance_costs",
+              "value": "2551657",
+              "currency": "CNY",
+              "unit": "thousand",
+              "pdf_page": 126,
+              "source_url": "https://disc.static.szse.cn/download/disc/disk03/finalpage/2026-03-28/f5cdbdbf-b138-4e83-8c6d-5a7eecb9e670.PDF",
+              "verification_status": "machine_extracted"
+            },
+            {
+              "field": "current_borrowings",
+              "value": "38484710",
+              "currency": "CNY",
+              "unit": "thousand",
+              "pdf_page": 124,
+              "source_url": "https://disc.static.szse.cn/download/disc/disk03/finalpage/2026-03-28/f5cdbdbf-b138-4e83-8c6d-5a7eecb9e670.PDF",
+              "verification_status": "machine_extracted"
+            },
+            {
+              "field": "non_current_borrowings",
+              "value": "60705569",
+              "currency": "CNY",
+              "unit": "thousand",
+              "pdf_page": 124,
+              "source_url": "https://disc.static.szse.cn/download/disc/disk03/finalpage/2026-03-28/f5cdbdbf-b138-4e83-8c6d-5a7eecb9e670.PDF",
+              "verification_status": "machine_extracted"
+            },
+            {
+              "field": "bonds_payable",
+              "value": "4997910",
+              "currency": "CNY",
+              "unit": "thousand",
+              "pdf_page": 124,
+              "source_url": "https://disc.static.szse.cn/download/disc/disk03/finalpage/2026-03-28/f5cdbdbf-b138-4e83-8c6d-5a7eecb9e670.PDF",
+              "verification_status": "machine_extracted"
+            },
+            {
+              "field": "shares_outstanding",
+              "value": "9117197565",
+              "currency": null,
+              "unit": "units",
+              "pdf_page": 249,
               "source_url": "https://disc.static.szse.cn/download/disc/disk03/finalpage/2026-03-28/f5cdbdbf-b138-4e83-8c6d-5a7eecb9e670.PDF",
               "verification_status": "machine_extracted"
             }
@@ -2555,6 +2959,138 @@
               ],
               "method": "comparative_table_column",
               "verification_status": "machine_extracted"
+            },
+            {
+              "field": "gross_profit",
+              "value": "3654.3",
+              "value_in_units": "3654300000",
+              "currency": "USD",
+              "unit": "million",
+              "fiscal_year": 2024,
+              "source_report_year": 2025,
+              "source_url": "https://www.firstpacific.com/wp-content/uploads/2026/04/ew0142.pdf",
+              "pdf_sha256": "4dca002f1a256863e5343968f47d6f669dfcdf7930509a445f6aad0585822fe0",
+              "pdf_page": 103,
+              "printed_page": "101",
+              "evidence": "Gross Profit 3,729.9 3,654.3",
+              "raw_token": "3,654.3",
+              "column_index": 1,
+              "row_values": [
+                "3,729.9",
+                "3,654.3"
+              ],
+              "method": "comparative_table_column",
+              "verification_status": "machine_extracted"
+            },
+            {
+              "field": "finance_costs",
+              "value": "607.4",
+              "value_in_units": "607400000",
+              "currency": "USD",
+              "unit": "million",
+              "fiscal_year": 2024,
+              "source_report_year": 2025,
+              "source_url": "https://www.firstpacific.com/wp-content/uploads/2026/04/ew0142.pdf",
+              "pdf_sha256": "4dca002f1a256863e5343968f47d6f669dfcdf7930509a445f6aad0585822fe0",
+              "pdf_page": 103,
+              "printed_page": "101",
+              "evidence": "Finance costs 5(B) (713.2) (607.4)",
+              "raw_token": "(607.4)",
+              "column_index": 1,
+              "row_values": [
+                "(713.2)",
+                "(607.4)"
+              ],
+              "method": "comparative_table_column",
+              "verification_status": "machine_extracted"
+            },
+            {
+              "field": "current_borrowings",
+              "value": "2548.7",
+              "value_in_units": "2548700000",
+              "currency": "USD",
+              "unit": "million",
+              "fiscal_year": 2024,
+              "source_report_year": 2025,
+              "source_url": "https://www.firstpacific.com/wp-content/uploads/2026/04/ew0142.pdf",
+              "pdf_sha256": "4dca002f1a256863e5343968f47d6f669dfcdf7930509a445f6aad0585822fe0",
+              "pdf_page": 105,
+              "printed_page": "103",
+              "evidence": "Short-term borrowings 25 2,526.5 2,548.7",
+              "raw_token": "2,548.7",
+              "column_index": 1,
+              "row_values": [
+                "2,526.5",
+                "2,548.7"
+              ],
+              "method": "comparative_table_column",
+              "verification_status": "machine_extracted"
+            },
+            {
+              "field": "non_current_borrowings",
+              "value": "9987.6",
+              "value_in_units": "9987600000",
+              "currency": "USD",
+              "unit": "million",
+              "fiscal_year": 2024,
+              "source_report_year": 2025,
+              "source_url": "https://www.firstpacific.com/wp-content/uploads/2026/04/ew0142.pdf",
+              "pdf_sha256": "4dca002f1a256863e5343968f47d6f669dfcdf7930509a445f6aad0585822fe0",
+              "pdf_page": 105,
+              "printed_page": "103",
+              "evidence": "Long-term borrowings 25 10,487.6 9,987.6",
+              "raw_token": "9,987.6",
+              "column_index": 1,
+              "row_values": [
+                "10,487.6",
+                "9,987.6"
+              ],
+              "method": "comparative_table_column",
+              "verification_status": "machine_extracted"
+            },
+            {
+              "field": "depreciation_ppe",
+              "value": "316.6",
+              "value_in_units": "316600000",
+              "currency": "USD",
+              "unit": "million",
+              "fiscal_year": 2024,
+              "source_report_year": 2025,
+              "source_url": "https://www.firstpacific.com/wp-content/uploads/2026/04/ew0142.pdf",
+              "pdf_sha256": "4dca002f1a256863e5343968f47d6f669dfcdf7930509a445f6aad0585822fe0",
+              "pdf_page": 107,
+              "printed_page": "105",
+              "evidence": "Depreciation of property, plant and equipment 5(C) 318.7 316.6",
+              "raw_token": "316.6",
+              "column_index": 1,
+              "row_values": [
+                "318.7",
+                "316.6"
+              ],
+              "method": "comparative_table_column",
+              "verification_status": "machine_extracted"
+            },
+            {
+              "field": "amortisation_intangibles",
+              "value": "113.9",
+              "value_in_units": "113900000",
+              "currency": "USD",
+              "unit": "million",
+              "fiscal_year": 2024,
+              "source_report_year": 2025,
+              "source_url": "https://www.firstpacific.com/wp-content/uploads/2026/04/ew0142.pdf",
+              "pdf_sha256": "4dca002f1a256863e5343968f47d6f669dfcdf7930509a445f6aad0585822fe0",
+              "pdf_page": 107,
+              "printed_page": "105",
+              "evidence": "Amortization of other intangible assets 5(C) 135.9 113.9",
+              "raw_token": "113.9",
+              "column_index": 1,
+              "row_values": [
+                "135.9",
+                "113.9"
+              ],
+              "method": "comparative_table_column",
+              "verification_status": "machine_extracted"
             }
           ],
           "omitted": [
@@ -2768,6 +3304,60 @@
               "currency": "USD",
               "unit": "cents",
               "pdf_page": 14,
+              "source_url": "https://www.firstpacific.com/wp-content/uploads/2026/04/ew0142.pdf",
+              "verification_status": "machine_extracted"
+            },
+            {
+              "field": "gross_profit",
+              "value": "3729.9",
+              "currency": "USD",
+              "unit": "million",
+              "pdf_page": 103,
+              "source_url": "https://www.firstpacific.com/wp-content/uploads/2026/04/ew0142.pdf",
+              "verification_status": "machine_extracted"
+            },
+            {
+              "field": "finance_costs",
+              "value": "713.2",
+              "currency": "USD",
+              "unit": "million",
+              "pdf_page": 103,
+              "source_url": "https://www.firstpacific.com/wp-content/uploads/2026/04/ew0142.pdf",
+              "verification_status": "machine_extracted"
+            },
+            {
+              "field": "current_borrowings",
+              "value": "2526.5",
+              "currency": "USD",
+              "unit": "million",
+              "pdf_page": 105,
+              "source_url": "https://www.firstpacific.com/wp-content/uploads/2026/04/ew0142.pdf",
+              "verification_status": "machine_extracted"
+            },
+            {
+              "field": "non_current_borrowings",
+              "value": "10487.6",
+              "currency": "USD",
+              "unit": "million",
+              "pdf_page": 105,
+              "source_url": "https://www.firstpacific.com/wp-content/uploads/2026/04/ew0142.pdf",
+              "verification_status": "machine_extracted"
+            },
+            {
+              "field": "depreciation_ppe",
+              "value": "318.7",
+              "currency": "USD",
+              "unit": "million",
+              "pdf_page": 107,
+              "source_url": "https://www.firstpacific.com/wp-content/uploads/2026/04/ew0142.pdf",
+              "verification_status": "machine_extracted"
+            },
+            {
+              "field": "amortisation_intangibles",
+              "value": "135.9",
+              "currency": "USD",
+              "unit": "million",
+              "pdf_page": 107,
               "source_url": "https://www.firstpacific.com/wp-content/uploads/2026/04/ew0142.pdf",
               "verification_status": "machine_extracted"
             }
@@ -3270,6 +3860,28 @@
               ],
               "method": "comparative_table_column",
               "verification_status": "machine_extracted"
+            },
+            {
+              "field": "diluted_weighted_shares",
+              "value": "2846",
+              "value_in_units": "2846000000",
+              "currency": null,
+              "unit": "million",
+              "fiscal_year": 2024,
+              "source_report_year": 2025,
+              "source_url": "https://www.dbs.com/iwov-resources/images/investors/annual-report/dbs-annual-report-2025.pdf",
+              "pdf_sha256": "e7952ba9dff9e339070334ec5d67a71c81a8c618be7f34abad6f3118189b38ce",
+              "pdf_page": 68,
+              "printed_page": "132-133",
+              "evidence": "Weighted average number of ordinary shares in issue (diluted)(a) (b) 2,850 2,846",
+              "raw_token": "2,846",
+              "column_index": 1,
+              "row_values": [
+                "2,850",
+                "2,846"
+              ],
+              "method": "comparative_table_column",
+              "verification_status": "machine_extracted"
             }
           ],
           "omitted": [
@@ -3519,6 +4131,15 @@
               "currency": "SGD",
               "unit": "units",
               "pdf_page": 75,
+              "source_url": "https://www.dbs.com/iwov-resources/images/investors/annual-report/dbs-annual-report-2025.pdf",
+              "verification_status": "machine_extracted"
+            },
+            {
+              "field": "diluted_weighted_shares",
+              "value": "2850",
+              "currency": null,
+              "unit": "million",
+              "pdf_page": 68,
               "source_url": "https://www.dbs.com/iwov-resources/images/investors/annual-report/dbs-annual-report-2025.pdf",
               "verification_status": "machine_extracted"
             }

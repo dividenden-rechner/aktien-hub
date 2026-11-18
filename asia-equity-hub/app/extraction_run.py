@@ -58,6 +58,10 @@ def run_one(entry: dict, second_engine: bool = True, root: Path | None = None) -
     if pages is None or pdf is None:
         return {'symbol': entry['symbol'], 'status': 'not_ingested', 'source_url': entry['url']}
     if profile['source_url'] != entry['url']:
+        if entry.get('purpose') == 'ten_year_summary':
+            # v1.8: older reports registered only for their ten-year summary (build_ten_year_history.py)
+            return {'symbol': entry['symbol'], 'status': 'history_only_report', 'fiscal_year': entry['fiscal_year'],
+                    'source_url': entry['url']}
         return {'symbol': entry['symbol'], 'status': 'profile_url_mismatch',
                 'profile_url': profile['source_url'], 'catalog_url': entry['url']}
     result = extract_report(pages, profile, pdf_sha256=sha256_file(pdf))
@@ -110,6 +114,8 @@ def markdown_report(results: list[dict], fiscal_year: int) -> str:
              '`token_on_page` = Wert steht auf derselben Seite (Label nicht in derselben Zeile erkennbar); '
              '`not_found` = Abweichung, manuell prüfen. Spalte „Referenz“: Abgleich mit IR-Webseite des Emittenten.', '']
     for r in results:
+        if r.get('status') == 'history_only_report':
+            continue
         if r.get('status') in ('no_profile', 'not_ingested', 'profile_url_mismatch'):
             lines += [f'## {r["symbol"]}: {r["status"]}', '']
             continue
@@ -169,4 +175,4 @@ def run_extraction(symbols: list[str] | None = None, second_engine: bool = True,
     return {'results': results,
             'summary': {s: sum(1 for r in results if r.get('status') == s) for s in
                         ('extracted_consistent', 'extraction_incomplete', 'consistency_check_failed',
-                         'document_changed', 'not_ingested', 'no_profile')}}
+                         'document_changed', 'not_ingested', 'no_profile', 'history_only_report')}}

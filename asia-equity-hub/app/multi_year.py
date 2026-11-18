@@ -144,3 +144,47 @@ def load_multi_year_profile(path: Path) -> dict:
         if len(set(t['years'])) != len(t['years']):
             raise ValueError(f'{path.name}: duplicate years in table {t["id"]}')
     return profile
+
+
+def mark_comparability(result: dict, profile: dict) -> dict:
+    """Flag years the profile declares as not comparable (e.g. predecessor company before a reorganisation)."""
+    bad = {int(y): note for y, note in (profile.get('not_comparable_years') or {}).items()}
+    for f in result.get('facts', []):
+        f['comparable'] = f['fiscal_year'] not in bad
+        if not f['comparable']:
+            f['comparability_note'] = bad[f['fiscal_year']]
+    return result
+
+
+def merge_reports(symbol: str, results: list[dict]) -> dict:
+    """Merge ten-year summaries of several reports of one issuer (v1.8).
+
+    For each (field, fiscal year) the value from the most recent report wins (it reflects restatements).
+    Every differing value from an older report is kept in `restatements`, never silently dropped.
+    """
+    chosen: dict[tuple, dict] = {}
+    seen: dict[tuple, list] = {}
+    for res in sorted(results, key=lambda r: r['source_report_year']):
+        for f in res.get('facts', []):
+            k = (f['field'], f['fiscal_year'])
+            seen.setdefault(k, []).append(f)
+            chosen[k] = f  # later (newer) report overwrites
+    restatements = []
+    for k, facts in seen.items():
+        vals = {f['value'] for f in facts}
+        if len(vals) > 1:
+            restatements.append({'field': k[0], 'fiscal_year': k[1],
+                                 'values': [{'source_report_year': f['source_report_year'], 'value': f['value'],
+                                             'pdf_page': f['pdf_page'], 'source_url': f['source_url']} for f in facts],
+                                 'used': chosen[k]['source_report_year']})
+    statuses = {r['source_report_year']: r['status'] for r in results}
+    return {'symbol': symbol, 'company': results[-1].get('company'),
+            'reports': [{'source_report_year': r['source_report_year'], 'source_url': r['source_url'],
+                         'pdf_sha256': r['pdf_sha256'], 'status': r['status'],
+                         'second_engine': (r.get('second_engine') or {}).get('summary')} for r in results],
+            'status': 'extracted_consistent' if all(s == 'extracted_consistent' for s in statuses.values()) else 'review_needed',
+            'years': sorted({f['fiscal_year'] for f in chosen.values()}),
+            'facts': sorted(chosen.values(), key=lambda f: (f['field'], f['fiscal_year'])),
+            'restatements': sorted(restatements, key=lambda r: (r['field'], r['fiscal_year'])),
+            'human_review': 'pending',
+            'note': 'Newest report wins for overlapping years; older differing values are listed in restatements.'}

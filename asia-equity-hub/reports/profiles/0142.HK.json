@@ -220,6 +220,55 @@
       "page": 14,
       "pattern": "final distribution of HK 14.0 cents \\(U\\.S\\. ([\\d.]+) cents\\)",
       "unit": "cents"
+    },
+    {
+      "field": "gross_profit",
+      "page": 103,
+      "label": "^Gross Profit$",
+      "columns": 2,
+      "column": 0,
+      "statement": "income"
+    },
+    {
+      "field": "finance_costs",
+      "page": 103,
+      "label": "^Finance costs$",
+      "columns": 2,
+      "column": 0,
+      "statement": "income",
+      "sign": "abs"
+    },
+    {
+      "field": "current_borrowings",
+      "page": 105,
+      "label": "^Short-term borrowings$",
+      "columns": 2,
+      "column": 0,
+      "statement": "balance"
+    },
+    {
+      "field": "non_current_borrowings",
+      "page": 105,
+      "label": "^Long-term borrowings$",
+      "columns": 2,
+      "column": 0,
+      "statement": "balance"
+    },
+    {
+      "field": "depreciation_ppe",
+      "page": 107,
+      "label": "^Depreciation of property, plant and equipment$",
+      "columns": 2,
+      "column": 0,
+      "statement": "cash_flow"
+    },
+    {
+      "field": "amortisation_intangibles",
+      "page": 107,
+      "label": "^Amortization of other intangible assets$",
+      "columns": 2,
+      "column": 0,
+      "statement": "cash_flow"
     }
   ],
   "derived": [

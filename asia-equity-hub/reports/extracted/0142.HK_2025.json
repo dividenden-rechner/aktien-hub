@@ -517,6 +517,156 @@
       "raw_token": "1.79",
       "line": 5,
       "evidence": "Pacific’s Board of Directors declared a final distribution of HK 14.0 cents (U.S. 1.79 cents) (2024: HK 13.5 cents (U.S. 1.73 cents))"
+    },
+    {
+      "field": "gross_profit",
+      "definition": null,
+      "statement": "income",
+      "fiscal_year": 2025,
+      "period_end": "2025-12-31",
+      "currency": "USD",
+      "unit": "million",
+      "kind": "amount",
+      "pdf_page": 103,
+      "printed_page": "101",
+      "source_url": "https://www.firstpacific.com/wp-content/uploads/2026/04/ew0142.pdf",
+      "method": "table_row",
+      "verification_status": "machine_extracted",
+      "value": "3729.9",
+      "value_in_units": "3729900000",
+      "raw_token": "3,729.9",
+      "row_values": [
+        "3,729.9",
+        "3,654.3"
+      ],
+      "column_index": 0,
+      "line": 9,
+      "evidence": "Gross Profit 3,729.9 3,654.3"
+    },
+    {
+      "field": "finance_costs",
+      "definition": null,
+      "statement": "income",
+      "fiscal_year": 2025,
+      "period_end": "2025-12-31",
+      "currency": "USD",
+      "unit": "million",
+      "kind": "amount",
+      "pdf_page": 103,
+      "printed_page": "101",
+      "source_url": "https://www.firstpacific.com/wp-content/uploads/2026/04/ew0142.pdf",
+      "method": "table_row",
+      "verification_status": "machine_extracted",
+      "value": "713.2",
+      "value_in_units": "713200000",
+      "raw_token": "(713.2)",
+      "row_values": [
+        "(713.2)",
+        "(607.4)"
+      ],
+      "column_index": 0,
+      "line": 14,
+      "evidence": "Finance costs 5(B) (713.2) (607.4)"
+    },
+    {
+      "field": "current_borrowings",
+      "definition": null,
+      "statement": "balance",
+      "fiscal_year": 2025,
+      "period_end": "2025-12-31",
+      "currency": "USD",
+      "unit": "million",
+      "kind": "amount",
+      "pdf_page": 105,
+      "printed_page": "103",
+      "source_url": "https://www.firstpacific.com/wp-content/uploads/2026/04/ew0142.pdf",
+      "method": "table_row",
+      "verification_status": "machine_extracted",
+      "value": "2526.5",
+      "value_in_units": "2526500000",
+      "raw_token": "2,526.5",
+      "row_values": [
+        "2,526.5",
+        "2,548.7"
+      ],
+      "column_index": 0,
+      "line": 35,
+      "evidence": "Short-term borrowings 25 2,526.5 2,548.7"
+    },
+    {
+      "field": "non_current_borrowings",
+      "definition": null,
+      "statement": "balance",
+      "fiscal_year": 2025,
+      "period_end": "2025-12-31",
+      "currency": "USD",
+      "unit": "million",
+      "kind": "amount",
+      "pdf_page": 105,
+      "printed_page": "103",
+      "source_url": "https://www.firstpacific.com/wp-content/uploads/2026/04/ew0142.pdf",
+      "method": "table_row",
+      "verification_status": "machine_extracted",
+      "value": "10487.6",
+      "value_in_units": "10487600000",
+      "raw_token": "10,487.6",
+      "row_values": [
+        "10,487.6",
+        "9,987.6"
+      ],
+      "column_index": 0,
+      "line": 50,
+      "evidence": "Long-term borrowings 25 10,487.6 9,987.6"
+    },
+    {
+      "field": "depreciation_ppe",
+      "definition": null,
+      "statement": "cash_flow",
+      "fiscal_year": 2025,
+      "period_end": "2025-12-31",
+      "currency": "USD",
+      "unit": "million",
+      "kind": "amount",
+      "pdf_page": 107,
+      "printed_page": "105",
+      "source_url": "https://www.firstpacific.com/wp-content/uploads/2026/04/ew0142.pdf",
+      "method": "table_row",
+      "verification_status": "machine_extracted",
+      "value": "318.7",
+      "value_in_units": "318700000",
+      "raw_token": "318.7",
+      "row_values": [
+        "318.7",
+        "316.6"
+      ],
+      "column_index": 0,
+      "line": 10,
+      "evidence": "Depreciation of property, plant and equipment 5(C) 318.7 316.6"
+    },
+    {
+      "field": "amortisation_intangibles",
+      "definition": null,
+      "statement": "cash_flow",
+      "fiscal_year": 2025,
+      "period_end": "2025-12-31",
+      "currency": "USD",
+      "unit": "million",
+      "kind": "amount",
+      "pdf_page": 107,
+      "printed_page": "105",
+      "source_url": "https://www.firstpacific.com/wp-content/uploads/2026/04/ew0142.pdf",
+      "method": "table_row",
+      "verification_status": "machine_extracted",
+      "value": "135.9",
+      "value_in_units": "135900000",
+      "raw_token": "135.9",
+      "row_values": [
+        "135.9",
+        "113.9"
+      ],
+      "column_index": 0,
+      "line": 11,
+      "evidence": "Amortization of other intangible assets 5(C) 135.9 113.9"
     }
   ],
   "derived": [
@@ -704,7 +854,7 @@
     "engine": "pdfplumber",
     "status": "ok",
     "summary": {
-      "row_confirmed": 13,
+      "row_confirmed": 19,
       "token_on_page": 8,
       "not_found": 0
     },
@@ -834,6 +984,42 @@
         "pdf_page": 14,
         "token": "1.79",
         "status": "token_on_page"
+      },
+      {
+        "field": "gross_profit",
+        "pdf_page": 103,
+        "token": "3,729.9",
+        "status": "row_confirmed"
+      },
+      {
+        "field": "finance_costs",
+        "pdf_page": 103,
+        "token": "(713.2)",
+        "status": "row_confirmed"
+      },
+      {
+        "field": "current_borrowings",
+        "pdf_page": 105,
+        "token": "2,526.5",
+        "status": "row_confirmed"
+      },
+      {
+        "field": "non_current_borrowings",
+        "pdf_page": 105,
+        "token": "10,487.6",
+        "status": "row_confirmed"
+      },
+      {
+        "field": "depreciation_ppe",
+        "pdf_page": 107,
+        "token": "318.7",
+        "status": "row_confirmed"
+      },
+      {
+        "field": "amortisation_intangibles",
+        "pdf_page": 107,
+        "token": "135.9",
+        "status": "row_confirmed"
       }
     ]
   },
@@ -873,5 +1059,5 @@
       "note": "Issuer non-GAAP recurring profit; no PDF profile field"
     }
   ],
-  "extracted_at": "2026-11-18T18:55:23.638844+00:00"
+  "extracted_at": "2026-11-18T20:02:23.145727+00:00"
 }

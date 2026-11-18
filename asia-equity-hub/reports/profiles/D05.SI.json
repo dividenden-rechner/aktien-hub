@@ -251,6 +251,17 @@
       "page": 75,
       "pattern": "Capital Return dividends of \\$([\\d.]+) per share for the fourth quarter",
       "unit": "units"
+    },
+    {
+      "field": "diluted_weighted_shares",
+      "page": 68,
+      "label": "Weighted average number of ordinary shares in issue \\(diluted\\)",
+      "columns": 2,
+      "column": 0,
+      "unit": "million",
+      "currency": null,
+      "header_regex": "Number of shares \\(millions\\) 2025 2024",
+      "definition": "Weighted average diluted ordinary shares (millions)"
     }
   ],
   "derived": [

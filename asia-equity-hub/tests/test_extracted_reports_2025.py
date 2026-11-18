@@ -53,7 +53,7 @@ def _check_golden(result, symbol):
 
 
 def test_catalog_entries_are_pinned_and_downloaded():
-    catalog = {e['symbol']: e for e in load_catalog()}
+    catalog = {e['symbol']: e for e in load_catalog() if e['fiscal_year'] == 2025}  # v1.8: catalog also holds older reports
     assert set(SYMBOLS) <= set(catalog)
     for symbol in SYMBOLS:
         entry = catalog[symbol]
@@ -64,7 +64,7 @@ def test_catalog_entries_are_pinned_and_downloaded():
 
 @pytest.mark.parametrize('symbol', SYMBOLS)
 def test_profile_matches_catalog(symbol):
-    catalog = {e['symbol']: e for e in load_catalog()}
+    catalog = {e['symbol']: e for e in load_catalog() if e['fiscal_year'] == 2025}  # v1.8: catalog also holds older reports
     profile = load_profile(ROOT / 'profiles' / f'{symbol}.json')
     assert profile['source_url'] == catalog[symbol]['url']
     assert profile['pdf_sha256'] == catalog[symbol]['sha256']
@@ -90,14 +90,18 @@ def test_committed_extraction_outputs(symbol):
 
 
 def _cached():
-    return all(cached_pdf(e) for e in load_catalog() if e['symbol'] in SYMBOLS)
+    return all(cached_pdf(e) for e in load_catalog() if e['symbol'] in SYMBOLS and e['fiscal_year'] == 2025)
 
 
 @pytest.mark.skipif(not _cached(), reason='PDFs not cached; run `python process_reports.py --download` first')
 def test_live_reextraction_from_cached_pdfs():
     from app.extraction_run import run_extraction
     out = run_extraction(SYMBOLS, second_engine=False, write=False)
-    for result in out['results']:
+    statements = [r for r in out['results'] if r['status'] != 'history_only_report']   # v1.8: FY2019 reports = ten-year summary only
+    assert len(statements) == 5
+    assert {(r['symbol'], r['fiscal_year']) for r in out['results'] if r['status'] == 'history_only_report'} == \
+        {('0001.HK', 2019), ('0019.HK', 2019), ('0142.HK', 2019)}
+    for result in statements:
         assert result['status'] == 'extracted_consistent', (result['symbol'], result.get('errors'))
         _check_golden(result, result['symbol'])
 

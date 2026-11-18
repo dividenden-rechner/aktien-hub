@@ -176,6 +176,12 @@ def main():
                 alle[t] = f
     except Exception:
         pass
+    try:   # Asien aus Geschäftsberichten (asia-equity-hub, data/asien/fundamentals.json); Kurs über die deutsche ISIN
+        for t, f in json.load(open("data/asien/fundamentals.json", encoding="utf-8"))["firmen"].items():
+            if t not in alle and f.get("isin"):
+                alle[t] = f
+    except Exception:
+        pass
     try:   # DAX, CAC 40, FTSE 100 aus boerse.de (nur Jahresabschluss-Kernzahlen, ohne Cashflow); ESEF und SEC haben Vorrang
         for t, f in json.load(open("data/boerse-de/fundamentals.json", encoding="utf-8"))["firmen"].items():
             if t not in alle and f.get("isin"):
