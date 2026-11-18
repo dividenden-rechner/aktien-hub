@@ -1,0 +1,117 @@
+{
+  "symbol": "0019.HK",
+  "company": "Swire Pacific Limited",
+  "source_url": "https://www1.hkexnews.hk/listedco/listconews/sehk/2020/0407/2020040700386.pdf",
+  "pdf_sha256": "926bf1011ff40ecc4283d8305a3d2aefd3b9413a1ea23d5a0a7387c7c5d4b949",
+  "source_report_year": 2019,
+  "currency": "HKD",
+  "unit": "million",
+  "tables": [
+    {
+      "id": "t",
+      "page": 222,
+      "years": [
+        2010,
+        2011,
+        2012,
+        2013,
+        2014,
+        2015,
+        2016,
+        2017,
+        2018,
+        2019
+      ],
+      "header_regex": "2010 HK\\$M 2011 HK\\$M 2012 HK\\$M 2013 HK\\$M"
+    }
+  ],
+  "fields": [
+    {
+      "field": "revenue",
+      "table": "t",
+      "label": "^$",
+      "after": "^Head Office",
+      "after_occurrence": 1,
+      "definition": "Segment revenue total"
+    },
+    {
+      "field": "net_income_attributable",
+      "table": "t",
+      "label": "^$",
+      "after": "^Head Office",
+      "after_occurrence": 2,
+      "definition": "Profit attributable to the Company’s shareholders (segment total)"
+    },
+    {
+      "field": "dividends_for_year",
+      "table": "t",
+      "label": "^Dividends for the year$"
+    },
+    {
+      "field": "equity_attributable",
+      "table": "t",
+      "label": "^Equity attributable to the Company.s shareholders$"
+    },
+    {
+      "field": "non_controlling_interests",
+      "table": "t",
+      "label": "^Non-controlling interests$"
+    },
+    {
+      "field": "net_debt",
+      "table": "t",
+      "label": "^Net debt$"
+    },
+    {
+      "field": "lease_liabilities",
+      "table": "t",
+      "label": "^Lease liabilities$"
+    },
+    {
+      "field": "capital_employed",
+      "table": "t",
+      "label": "^$",
+      "after": "^Lease liabilities"
+    },
+    {
+      "field": "eps_basic",
+      "table": "t",
+      "label": "^Earnings per share$",
+      "occurrence": 1,
+      "unit": "units",
+      "definition": "per 'A' share"
+    },
+    {
+      "field": "dividend_per_share",
+      "table": "t",
+      "label": "^Dividends per share$",
+      "occurrence": 1,
+      "unit": "units",
+      "definition": "per 'A' share"
+    },
+    {
+      "field": "underlying_profit_attributable",
+      "table": "t",
+      "label": "^Profit \\(HK\\$M\\)$",
+      "definition": "Issuer underlying profit (non-GAAP)"
+    }
+  ],
+  "checks": [
+    {
+      "name": "capital_employed_composition",
+      "left": [
+        "capital_employed"
+      ],
+      "right": [
+        "equity_attributable",
+        "non_controlling_interests",
+        "net_debt",
+        "lease_liabilities"
+      ]
+    }
+  ],
+  "caveats": [
+    "Per-share values refer to 'A' shares.",
+    "PDF page 223 repeats page 222; page 222 is used."
+  ]
+}

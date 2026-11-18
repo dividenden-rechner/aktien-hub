@@ -3,7 +3,9 @@
 
 Quellen (nur bereits gepruefte, in asia-equity-hub/ abgelegte Werte):
   - asia-equity-hub/reports/history/history_2024_2025.json (GJ 2024/2025 aus den Konzernabschluessen 2025)
-  - asia-equity-hub/reports/history/ten_year_2016_2025.json (GJ 2016-2025 aus den Zehnjahresuebersichten)
+  - asia-equity-hub/reports/history/ten_year_merged.json (GJ 2010-2025 aus den Zehnjahresuebersichten mehrerer
+    Berichte; neuester Bericht gewinnt; als nicht vergleichbar markierte Jahre, z. B. CKH-Vorgaenger 2010-2015, werden
+    NICHT uebernommen)
 GJ 2024/2025 aus dem Abschluss haben Vorrang vor der Zehnjahresuebersicht. Werte werden auf ganze
 Waehrungseinheiten umgerechnet (Mio./Tsd. -> Einheiten, US-Cent -> USD), wie bei SEC- und ESEF-Daten.
 Alle Werte: maschinell extrahiert, menschliche Pruefung ausstehend.
@@ -33,7 +35,10 @@ def wert(f):
 
 def bauen():
     hist = json.load(open(os.path.join(AH, "history_2024_2025.json"), encoding="utf-8"))["companies"]
-    ten = {i["symbol"]: i for i in json.load(open(os.path.join(AH, "ten_year_2016_2025.json"), encoding="utf-8"))["issuers"]}
+    merged_path = os.path.join(AH, "ten_year_merged.json")
+    if not os.path.exists(merged_path):
+        merged_path = os.path.join(AH, "ten_year_2016_2025.json")
+    ten = {i["symbol"]: i for i in json.load(open(merged_path, encoding="utf-8"))["issuers"]}
     firmen = {}
     for c in hist:
         sym = c["symbol"]
@@ -43,6 +48,8 @@ def bauen():
         reihen = {}
         # 1) Zehnjahresuebersicht
         for f in (ten.get(sym) or {}).get("facts", []):
+            if f.get("comparable") is False:
+                continue  # z. B. Vorgaengergesellschaft vor einer Reorganisation
             for hub, src in MAP.items():
                 if f["field"] in src and f.get("currency") in (cur, None) and f.get("value") is not None:
                     if hub == "dividende_je_aktie" and sym == "0142.HK" and f["field"] != "dividend_per_share_usd_cents":

@@ -1,0 +1,186 @@
+{
+  "symbol": "0001.HK",
+  "company": "CK Hutchison Holdings Limited",
+  "source_url": "https://www1.hkexnews.hk/listedco/listconews/sehk/2020/0407/2020040700714.pdf",
+  "pdf_sha256": "1b39456a5f7ea5e4dbf01c299408596eaee7e5ae92ce14a201bb5b052527e0f7",
+  "source_report_year": 2019,
+  "currency": "HKD",
+  "unit": "million",
+  "printed_page_rule": {
+    "offset": -2
+  },
+  "tables": [
+    {
+      "id": "a",
+      "page": 265,
+      "years": [
+        2010,
+        2011,
+        2012,
+        2013,
+        2014,
+        2015,
+        2016,
+        2017,
+        2018,
+        2019
+      ],
+      "header_regex": "2010 2011 2012 2013 2014 2015 2016 2017 2018 2019"
+    },
+    {
+      "id": "b",
+      "page": 266,
+      "years": [
+        2010,
+        2011,
+        2012,
+        2013,
+        2014,
+        2015,
+        2016,
+        2017,
+        2018,
+        2019
+      ],
+      "header_regex": "2010 2011 2012 2013 2014 2015 2016 2017 2018 2019"
+    }
+  ],
+  "fields": [
+    {
+      "field": "revenue",
+      "table": "a",
+      "label": "^Revenue$"
+    },
+    {
+      "field": "net_income_attributable",
+      "table": "a",
+      "label": "shareholders of the Company$"
+    },
+    {
+      "field": "dividends_for_year",
+      "table": "a",
+      "label": "^Dividends$"
+    },
+    {
+      "field": "non_current_assets",
+      "table": "a",
+      "label": "^$",
+      "after": "^Other non-current assets"
+    },
+    {
+      "field": "current_assets",
+      "table": "a",
+      "label": "^Current assets$"
+    },
+    {
+      "field": "total_assets",
+      "table": "a",
+      "label": "^Total assets$"
+    },
+    {
+      "field": "current_liabilities",
+      "table": "a",
+      "label": "^liabilities$",
+      "occurrence": 1,
+      "definition": "Current liabilities (label wrapped in the PDF text)"
+    },
+    {
+      "field": "non_current_liabilities",
+      "table": "a",
+      "label": "^$",
+      "after": "^obligations"
+    },
+    {
+      "field": "net_assets",
+      "table": "a",
+      "label": "^Net assets$"
+    },
+    {
+      "field": "equity_attributable",
+      "table": "a",
+      "label": "^Total ordinary shareholders. funds$"
+    },
+    {
+      "field": "perpetual_capital_securities",
+      "table": "a",
+      "label": "^Perpetual capital securities$"
+    },
+    {
+      "field": "non_controlling_interests",
+      "table": "a",
+      "label": "^Non-controlling interests$"
+    },
+    {
+      "field": "total_equity",
+      "table": "a",
+      "label": "^Total equity$"
+    },
+    {
+      "field": "eps_basic",
+      "table": "b",
+      "label": "of the Company - \\(HK\\$\\)$",
+      "unit": "units"
+    },
+    {
+      "field": "dividend_per_share",
+      "table": "b",
+      "label": "^Dividends per share - \\(HK\\$\\)$",
+      "unit": "units"
+    }
+  ],
+  "checks": [
+    {
+      "name": "total_assets_split",
+      "left": [
+        "total_assets"
+      ],
+      "right": [
+        "non_current_assets",
+        "current_assets"
+      ]
+    },
+    {
+      "name": "balance_sheet_identity",
+      "left": [
+        "total_assets"
+      ],
+      "right": [
+        "current_liabilities",
+        "non_current_liabilities",
+        "net_assets"
+      ]
+    },
+    {
+      "name": "equity_composition",
+      "left": [
+        "total_equity"
+      ],
+      "right": [
+        "equity_attributable",
+        "perpetual_capital_securities",
+        "non_controlling_interests"
+      ]
+    },
+    {
+      "name": "net_assets_equals_total_equity",
+      "left": [
+        "net_assets"
+      ],
+      "right": [
+        "total_equity"
+      ],
+      "tolerance": "0"
+    }
+  ],
+  "not_comparable_years": {
+    "2010": "Vorgängergesellschaft Cheung Kong (Holdings) Limited vor der Reorganisation 2015; nicht mit CK Hutchison vergleichbar",
+    "2011": "Vorgängergesellschaft Cheung Kong (Holdings) Limited vor der Reorganisation 2015; nicht mit CK Hutchison vergleichbar",
+    "2012": "Vorgängergesellschaft Cheung Kong (Holdings) Limited vor der Reorganisation 2015; nicht mit CK Hutchison vergleichbar",
+    "2013": "Vorgängergesellschaft Cheung Kong (Holdings) Limited vor der Reorganisation 2015; nicht mit CK Hutchison vergleichbar",
+    "2014": "Vorgängergesellschaft Cheung Kong (Holdings) Limited vor der Reorganisation 2015; nicht mit CK Hutchison vergleichbar",
+    "2015": "Jahr der Reorganisation (Zusammenführung von Cheung Kong und Hutchison Whampoa 2015); nur eingeschränkt vergleichbar"
+  },
+  "caveats": [
+    "2010-2014 betreffen die Vorgängergesellschaft Cheung Kong (Holdings); 2015 ist das Reorganisationsjahr."
+  ]
+}

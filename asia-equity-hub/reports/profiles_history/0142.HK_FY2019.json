@@ -1,0 +1,145 @@
+{
+  "symbol": "0142.HK",
+  "company": "First Pacific Company Limited",
+  "source_url": "https://www1.hkexnews.hk/listedco/listconews/sehk/2020/0423/2020042300520.pdf",
+  "pdf_sha256": "e4ba879fd16fcf3b8444f30cbc9d48a2162fb07e8a22fc128a7cd037e8ec5420",
+  "source_report_year": 2019,
+  "currency": "USD",
+  "unit": "million",
+  "tables": [
+    {
+      "id": "a",
+      "page": 4,
+      "years": [
+        2019,
+        2018,
+        2017,
+        2016,
+        2015,
+        2014,
+        2013,
+        2012,
+        2011,
+        2010
+      ],
+      "header_regex": "2019 2018 2017 2016 2015 2014 2013 2012 2011 2010",
+      "presentation_notes": {
+        "2010": "EPS/DPS restated for the 2013 rights issue",
+        "2011": "EPS/DPS restated for the 2013 rights issue",
+        "2012": "EPS/DPS restated for the 2013 rights issue"
+      }
+    },
+    {
+      "id": "b",
+      "page": 5,
+      "years": [
+        2019,
+        2018,
+        2017,
+        2016,
+        2015,
+        2014,
+        2013,
+        2012,
+        2011,
+        2010
+      ],
+      "header_regex": "2019 2018 2017 2016 2015 2014 2013 2012 2011 2010"
+    }
+  ],
+  "fields": [
+    {
+      "field": "revenue",
+      "table": "a",
+      "label": "^Turnover$"
+    },
+    {
+      "field": "net_profit",
+      "table": "a",
+      "label": "^Profit for the year$"
+    },
+    {
+      "field": "net_income_attributable",
+      "table": "a",
+      "label": "attributable to owners of the parent$",
+      "occurrence": 1
+    },
+    {
+      "field": "recurring_profit",
+      "table": "a",
+      "label": "^Recurring profit$",
+      "definition": "Issuer non-GAAP recurring profit"
+    },
+    {
+      "field": "ordinary_share_distributions",
+      "table": "a",
+      "label": "^Ordinary share distributions/dividends$"
+    },
+    {
+      "field": "eps_basic",
+      "table": "a",
+      "label": "^Basic \\(loss\\)/earnings$",
+      "unit": "cents"
+    },
+    {
+      "field": "distributions_per_share_incl_special",
+      "table": "a",
+      "label": "^Distributions/dividends$",
+      "unit": "cents",
+      "definition": "U.S. cents per share"
+    },
+    {
+      "field": "total_assets",
+      "table": "b",
+      "label": "^Total assets$"
+    },
+    {
+      "field": "total_liabilities",
+      "table": "b",
+      "label": "^Total liabilities$"
+    },
+    {
+      "field": "total_equity",
+      "table": "b",
+      "label": "^Total equity$"
+    },
+    {
+      "field": "equity_attributable",
+      "table": "b",
+      "label": "Equity attributable to owners of the parent$"
+    },
+    {
+      "field": "net_debt",
+      "table": "b",
+      "label": "^Net debt$"
+    },
+    {
+      "field": "operating_cash_flow",
+      "table": "b",
+      "label": "^Net cash flows from operating activities$"
+    },
+    {
+      "field": "capex_issuer_defined",
+      "table": "b",
+      "label": "^Capital expenditure$",
+      "definition": "Issuer-defined capital expenditure"
+    }
+  ],
+  "checks": [
+    {
+      "name": "balance_sheet_identity",
+      "left": [
+        "total_assets"
+      ],
+      "right": [
+        "total_liabilities",
+        "total_equity"
+      ],
+      "tolerance": "0.1"
+    }
+  ],
+  "caveats": [
+    "Column order descending (2019 ... 2010).",
+    "PDF pages are two-page spreads; printed page numbers are not derived."
+  ]
+}

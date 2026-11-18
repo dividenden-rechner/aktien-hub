@@ -93,5 +93,47 @@
         "sha256_relation": "byte-identical (same SHA-256)"
       }
     ]
+  },
+  {
+    "symbol": "0001.HK",
+    "company": "CK Hutchison Holdings",
+    "fiscal_year": 2019,
+    "report_type": "annual",
+    "url": "https://www1.hkexnews.hk/listedco/listconews/sehk/2020/0407/2020040700714.pdf",
+    "source": "HKEXnews",
+    "verification": "downloaded 2026-11-18 (HTTP 200, application/pdf); found by discover_hkex_years; issuer and fiscal year 2019 confirmed from PDF text; used for the ten-year summary (FY2010-2019) only",
+    "sha256": "1b39456a5f7ea5e4dbf01c299408596eaee7e5ae92ce14a201bb5b052527e0f7",
+    "bytes": 11799357,
+    "page_count": 268,
+    "download_verified_on": "2026-11-18",
+    "purpose": "ten_year_summary"
+  },
+  {
+    "symbol": "0019.HK",
+    "company": "Swire Pacific A",
+    "fiscal_year": 2019,
+    "report_type": "annual",
+    "url": "https://www1.hkexnews.hk/listedco/listconews/sehk/2020/0407/2020040700386.pdf",
+    "source": "HKEXnews",
+    "verification": "downloaded 2026-11-18 (HTTP 200, application/pdf); found by discover_hkex_years; issuer and fiscal year 2019 confirmed from PDF text; used for the ten-year summary (FY2010-2019) only",
+    "sha256": "926bf1011ff40ecc4283d8305a3d2aefd3b9413a1ea23d5a0a7387c7c5d4b949",
+    "bytes": 8188037,
+    "page_count": 240,
+    "download_verified_on": "2026-11-18",
+    "purpose": "ten_year_summary"
+  },
+  {
+    "symbol": "0142.HK",
+    "company": "First Pacific",
+    "fiscal_year": 2019,
+    "report_type": "annual",
+    "url": "https://www1.hkexnews.hk/listedco/listconews/sehk/2020/0423/2020042300520.pdf",
+    "source": "HKEXnews",
+    "verification": "downloaded 2026-11-18 (HTTP 200, application/pdf); found by discover_hkex_years; issuer and fiscal year 2019 confirmed from PDF text; used for the ten-year summary (FY2010-2019) only",
+    "sha256": "e4ba879fd16fcf3b8444f30cbc9d48a2162fb07e8a22fc128a7cd037e8ec5420",
+    "bytes": 7722860,
+    "page_count": 248,
+    "download_verified_on": "2026-11-18",
+    "purpose": "ten_year_summary"
   }
 ]

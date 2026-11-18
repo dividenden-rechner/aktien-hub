@@ -85,3 +85,9 @@
 ## Ergänzung v1.7 (2026-11-18)
 - **Getestet (offline, nachgebaute Antworten):** DART-Firmenliste, KOSPI/KOSDAQ-Endung, Berichtstitel `사업보고서 (JJJJ.MM)`, Korrekturen getrennt, EDINET-Tagesindex mit Wochenend-Überspringen, Fehlerzählung, Geschäftsjahr nach Periodenbeginn, Schlüssel nie in Fehlermeldungen. Testlauf: 148 bestanden, 1 übersprungen (ohne PDFs).
 - **Nicht ausgeführt:** echte DART- und EDINET-Abfragen. Sie laufen erst auf GitHub mit den Secrets. Bis dahin bleibt Korea „candidate_unverified“ und Japan ohne Dokumentliste.
+
+## Ergänzung v1.8 (2026-11-18)
+- **Live ausgeführt:** HKEXnews-Suche nach den Jahresberichten 2015 und 2019 (je Firma gefunden); Download der drei Berichte 2019 über `sync_report` (Prüfsummen fixiert); Zehnjahresextraktion: 3 × konsistent, alle Jahresprüfungen bestanden, zweite PDF-Engine findet 400/400 Werte; Zusammenführung 2010–2025.
+- **Tests:** mit gecachten PDFs 164 bestanden; ohne PDFs 163 bestanden, 1 übersprungen. `extract_reports.py` endet mit Code 0 (5 Abschlüsse konsistent, 3 Berichte nur Historie).
+- **Browser:** Hub lädt ohne Fehler; die Diagramme zeigen weiterhin nur die letzten 10 Jahre (bestehende Gestaltungsgrenze des Hubs), die Daten ab 2010 liegen in `data/asien/fundamentals.json` bereit.
+- **Nicht ausgeführt:** Berichte 2015 (würden 2006–2015 liefern), ältere Berichte von DBS (Fünfjahresübersicht) und BYD (Dreijahresdaten), Prüfung durch einen Menschen.

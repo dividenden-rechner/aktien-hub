@@ -94,3 +94,12 @@
 ## v1.7.1 (2026-11-18)
 - Fehler im ersten GitHub-Lauf behoben: `build_regulator_sources.py` las nach dem Neuaufbau eines Korea-Eintrags (`e.clear()`) noch dessen `id` → `KeyError: 'id'`. Der DART-Abruf selbst lief erfolgreich; der Fehler trat erst beim Zurückschreiben auf, daher wurde nichts committet und Japan nicht mehr abgefragt.
 - Zusammenführung als `apply_korea()` ausgelagert und mit einem Regressionstest abgesichert.
+
+## v1.8 — Ältere Geschäftsberichte, Historie ab 2010 (2026-11-18)
+- Katalog um die Jahresberichte **GJ 2019** von CK Hutchison, Swire Pacific und First Pacific erweitert (HKEXnews, SHA-256 fixiert, `purpose: ten_year_summary`).
+- Zehnjahresprofile `reports/profiles_history/*_FY2019.json`; `build_ten_year_history.py` ordnet Berichte jetzt über die URL statt über den Ticker zu (mehrere Berichte pro Emittent möglich).
+- Neue Datei `reports/history/ten_year_merged.json`: GJ 2010–2025 je Emittent, neuester Bericht gewinnt bei Überschneidungen; abweichende ältere Werte stehen in `restatements`. `ten_year_2016_2025.json` bleibt unverändert im Format (nur Berichte 2025).
+- Überschneidung 2016–2019 als unabhängige Gegenprobe: CK Hutchison und Swire **identisch**; First Pacific: Umsatz 2017–2019 im Bericht 2025 angepasst (Verkauf GBPC), 2019-Ausschüttungssumme 75,0 → 75,2.
+- CK Hutchison 2010–2014 = Vorgängergesellschaft Cheung Kong (Holdings), 2015 = Reorganisationsjahr → `comparable: false` mit Hinweis; nicht in den Hub-Export übernommen.
+- Abschluss-Extraktion überspringt Berichte ohne Abschlussprofil (`history_only_report`) statt sie als Fehler zu werten.
+- Tests: 9 neue; drei bestehende Tests nur auf die Berichte 2025 eingegrenzt (Katalog enthält jetzt mehrere Berichte je Firma).

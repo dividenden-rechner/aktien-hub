@@ -3,7 +3,7 @@ from urllib.parse import urlparse
 
 
 def test_singapore_china_official_2025_reports_registered():
-    reports = {x['symbol']: x for x in load_catalog()}
+    reports = {x['symbol']: x for x in load_catalog() if x['fiscal_year'] == 2025}  # v1.8: older reports also registered
     for ticker in ('D05.SI', '002594.SZ'):
         entry = reports[ticker]
         assert entry['fiscal_year'] == 2025

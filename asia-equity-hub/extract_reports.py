@@ -28,4 +28,4 @@ if __name__ == '__main__':
                 'reference': [f"{x['field']}:{x['result']}" for x in r.get('reference_comparison', [])]}
                for r in out['results']]
     print(json.dumps({'summary': out['summary'], 'results': compact}, ensure_ascii=False, indent=2))
-    sys.exit(0 if all(r.get('status') == 'extracted_consistent' for r in out['results']) else 1)
+    sys.exit(0 if all(r.get('status') in ('extracted_consistent', 'history_only_report') for r in out['results']) else 1)
