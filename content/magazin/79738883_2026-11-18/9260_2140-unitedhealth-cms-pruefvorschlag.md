@@ -14,6 +14,7 @@ image_alt: "Arzt mit Stift und Klemmbrett bei einem Patientengespräch"
 image_credit: "Foto: Vitaly Gariev / Unsplash"
 image_source: "https://unsplash.com/@vitalygariev"
 image_lizenz: Unsplash
+logo_file: assets/logos/unh.png
 ---
 !!! kurz "Kurz gesagt"
     **Auslöser:** Ein Vorschlag der US-Gesundheitsbehörde CMS vom 16. November zu Prüfungen in Medicare und Medicaid.
