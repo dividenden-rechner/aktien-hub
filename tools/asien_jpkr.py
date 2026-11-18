@@ -73,6 +73,8 @@ POSTEN = {   # Abschlussposten (laufendes und Vorjahr), J-GAAP / IFRS / US-GAAP
     "BondsPayable", "LongTermLoansPayable", "BondsAndBorrowingsCLIFRS", "BondsAndBorrowingsNCLIFRS",
     "Assets", "AssetsIFRS", "CashAndCashEquivalents", "CashAndCashEquivalentsIFRS",
 }
+UMSATZ_POSTEN = re.compile(r"^(Revenue|Revenues|NetSales|OperatingRevenue|OperatingRevenues|SalesRevenues|TotalRevenue|TotalRevenues|"
+                           r"SalesAndFinancialServicesRevenue|OrdinaryIncome|OperatingIncomeINS)\w*$")
 POSTEN_RE = re.compile(r"^(PurchaseOfPropertyPlantAndEquipment\w*InvCF\w*|PurchaseOfNoncurrentAssets\w*InvCF\w*|"
                        r"(CashDividendsPaid|DividendsPaid|DividendsPaidToOwnersOfParent)\w*FinCF\w*|PurchaseOfTreasuryShares\w*FinCF\w*)$")
 
@@ -100,7 +102,8 @@ def edinet_auslesen(x):
             r'<([A-Za-z0-9_\-]+):([A-Za-z0-9_]+)\s([^>]*?)contextRef="([^"]+)"([^>]*)>([^<]*)</\1:\2>', x):
         if ctx not in ktx:
             continue
-        if not (lokal in POSTEN or POSTEN_RE.match(lokal) or lokal.endswith("SummaryOfBusinessResults")):
+        if not (lokal in POSTEN or POSTEN_RE.match(lokal) or lokal.endswith("SummaryOfBusinessResults") or
+                (UMSATZ_POSTEN.match(lokal) and not re.search(r"Cost|Other|PerShare|Ratio", lokal))):
             continue
         try:
             v = float(val.strip())
@@ -190,6 +193,13 @@ def jp_reihen(dok):
             n = _erst(w, muster)
             if n and werte(n, False):
                 r[feld] = werte(n, False)
+    # Übersicht ohne Umsatz (z. B. Toyota, Sony): Umsatzposten des Konzernabschlusses in fester Reihenfolge
+    if "umsatz" not in r:
+        for n in ("RevenueIFRS", "NetSalesIFRS", "OperatingRevenueIFRS", "SalesRevenuesIFRS", "TotalRevenuesIFRS", "TotalRevenueIFRS",
+                  "SalesAndFinancialServicesRevenueIFRS", "RevenuesUSGAAP", "NetSales", "OperatingRevenue1", "OrdinaryIncome", "OperatingIncomeINS"):
+            if werte(n, False):
+                r["umsatz"] = werte(n, False)
+                break
     for feld, muster in JP_POSTEN.items():
         n = _erst(w, muster)
         if n:
@@ -371,6 +381,14 @@ def firma(e, reihen, w, quelle, isin):
     return fa
 
 
+def _ohne_umsatz(roh):
+    """Neuester Bericht (v2) ohne Umsatz in der Übersicht -> mit Umsatzposten neu laden."""
+    if not roh or roh.get("v") != 2 or not roh.get("dok"):
+        return False
+    d = max(roh["dok"].values(), key=lambda x: x.get("ende") or "")
+    return "umsatz" not in jp_reihen(d)[0]
+
+
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--max-minuten", type=float, default=100)
@@ -402,7 +420,7 @@ def main():
     # Phase 1, solange einer Firma noch die beiden Kernberichte fehlen: nur diese laden; danach die uebrigen Jahre
     def _dok(t):
         r = lade(os.path.join(ROH, f"{t}.json")) or {}
-        return r.get("dok") or {} if r.get("v") == 2 else {}
+        return r.get("dok") or {} if r.get("v") in (2, 3) else {}
     phase1 = any(d["doc_id"] not in _dok(e["ticker"])
                  for e in firmen if e["market"] == "Japan" for d in kern(jp_docs(e)))
     if not a.nur_bauen:
@@ -413,14 +431,16 @@ def main():
             t = e["ticker"]
             p = os.path.join(ROH, f"{t}.json")
             roh = lade(p)
-            if status.get(t, [""])[0] == heute and (e["market"] != "Japan" or (roh or {}).get("v") == 2):
+            if status.get(t, [""])[0] == heute and (e["market"] != "Japan" or ((roh or {}).get("v") in (2, 3) and not _ohne_umsatz(roh))):
                 continue
             try:
                 if e["market"] == "Japan":
                     if not EDINET_KEY:
                         continue
-                    if not roh or roh.get("v") != 2:   # v2: alle Übersichtselemente gespeichert
+                    if not roh or roh.get("v") not in (2, 3):   # v2: alle Übersichtselemente gespeichert
                         roh = {"v": 2, "dok": {}}
+                    elif roh.get("v") == 2 and _ohne_umsatz(roh):   # v3: zusätzlich Umsatzposten des Abschlusses
+                        roh = {"v": 3, "dok": {}}
                     docs = kern(jp_docs(e)) if phase1 else jp_docs(e)
                     neu = 0
                     for d in docs:
