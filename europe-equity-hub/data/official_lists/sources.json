@@ -1,0 +1,492 @@
+{
+ "generated_at": "2026-11-18T15:04:11.097262+00:00",
+ "lists": [
+  {
+   "source": "esma_firds:XETA",
+   "url": "https://registers.esma.europa.eu/solr/esma_registers_firds/select?q=%2A%3A%2A&fq=mic%3AXETA&fq=gnr_cfi_code%3AES%2A&fq=latest_received_flag%3A1&fq=type_s%3Aparent&rows=20000&wt=json&fl=isin%2Cmic%2Cgnr_full_name%2Cgnr_short_name%2Cgnr_cfi_code%2Cgnr_notional_curr_code%2Clei%2Cmrkt_trdng_start_date%2Cmrkt_trdng_trmination_date%2Cstatus_label%2Cpublication_date",
+   "retrieved_at": "2026-11-18T15:03:42.765032+00:00",
+   "terms_note": "ESMA public register data (MiFIR Art. 27); see https://www.esma.europa.eu/legal-notice",
+   "http_status": 200,
+   "file": "data/official_lists/raw/firds_XETA.json",
+   "bytes": 348345,
+   "sha256": "b8525453322cd640355c98d8cfeaa7b50fdea867bad3d8246fca2963224264bc",
+   "rows": 735
+  },
+  {
+   "source": "esma_firds:XETB",
+   "url": "https://registers.esma.europa.eu/solr/esma_registers_firds/select?q=%2A%3A%2A&fq=mic%3AXETB&fq=gnr_cfi_code%3AES%2A&fq=latest_received_flag%3A1&fq=type_s%3Aparent&rows=20000&wt=json&fl=isin%2Cmic%2Cgnr_full_name%2Cgnr_short_name%2Cgnr_cfi_code%2Cgnr_notional_curr_code%2Clei%2Cmrkt_trdng_start_date%2Cmrkt_trdng_trmination_date%2Cstatus_label%2Cpublication_date",
+   "retrieved_at": "2026-11-18T15:03:43.556513+00:00",
+   "terms_note": "ESMA public register data (MiFIR Art. 27); see https://www.esma.europa.eu/legal-notice",
+   "http_status": 200,
+   "file": "data/official_lists/raw/firds_XETB.json",
+   "bytes": 909832,
+   "sha256": "ce0f8809c722de43d9b4b41ed9a306a8a086f119716bcbd96f64087ce5631939",
+   "rows": 1990
+  },
+  {
+   "source": "esma_firds:XPAR",
+   "url": "https://registers.esma.europa.eu/solr/esma_registers_firds/select?q=%2A%3A%2A&fq=mic%3AXPAR&fq=gnr_cfi_code%3AES%2A&fq=latest_received_flag%3A1&fq=type_s%3Aparent&rows=20000&wt=json&fl=isin%2Cmic%2Cgnr_full_name%2Cgnr_short_name%2Cgnr_cfi_code%2Cgnr_notional_curr_code%2Clei%2Cmrkt_trdng_start_date%2Cmrkt_trdng_trmination_date%2Cstatus_label%2Cpublication_date",
+   "retrieved_at": "2026-11-18T15:03:44.155027+00:00",
+   "terms_note": "ESMA public register data (MiFIR Art. 27); see https://www.esma.europa.eu/legal-notice",
+   "http_status": 200,
+   "file": "data/official_lists/raw/firds_XPAR.json",
+   "bytes": 349568,
+   "sha256": "766a115490a0459745352a37ed29332be8f3b6267ec40af0457bc99236dd9e55",
+   "rows": 790
+  },
+  {
+   "source": "esma_firds:ALXP",
+   "url": "https://registers.esma.europa.eu/solr/esma_registers_firds/select?q=%2A%3A%2A&fq=mic%3AALXP&fq=gnr_cfi_code%3AES%2A&fq=latest_received_flag%3A1&fq=type_s%3Aparent&rows=20000&wt=json&fl=isin%2Cmic%2Cgnr_full_name%2Cgnr_short_name%2Cgnr_cfi_code%2Cgnr_notional_curr_code%2Clei%2Cmrkt_trdng_start_date%2Cmrkt_trdng_trmination_date%2Cstatus_label%2Cpublication_date",
+   "retrieved_at": "2026-11-18T15:03:44.731684+00:00",
+   "terms_note": "ESMA public register data (MiFIR Art. 27); see https://www.esma.europa.eu/legal-notice",
+   "http_status": 200,
+   "file": "data/official_lists/raw/firds_ALXP.json",
+   "bytes": 201482,
+   "sha256": "cdb5ed6595b99678011ba0be90a600fff60c7db77bcc0c38cbb83c4e48aa1c45",
+   "rows": 465
+  },
+  {
+   "source": "esma_firds:XAMS",
+   "url": "https://registers.esma.europa.eu/solr/esma_registers_firds/select?q=%2A%3A%2A&fq=mic%3AXAMS&fq=gnr_cfi_code%3AES%2A&fq=latest_received_flag%3A1&fq=type_s%3Aparent&rows=20000&wt=json&fl=isin%2Cmic%2Cgnr_full_name%2Cgnr_short_name%2Cgnr_cfi_code%2Cgnr_notional_curr_code%2Clei%2Cmrkt_trdng_start_date%2Cmrkt_trdng_trmination_date%2Cstatus_label%2Cpublication_date",
+   "retrieved_at": "2026-11-18T15:03:45.272169+00:00",
+   "terms_note": "ESMA public register data (MiFIR Art. 27); see https://www.esma.europa.eu/legal-notice",
+   "http_status": 200,
+   "file": "data/official_lists/raw/firds_XAMS.json",
+   "bytes": 105209,
+   "sha256": "c2d391cdd1c9b65286c4c076d6f4e09a4b5a5dfe53648fb5b47274ccf5cb2f7b",
+   "rows": 235
+  },
+  {
+   "source": "esma_firds:XBRU",
+   "url": "https://registers.esma.europa.eu/solr/esma_registers_firds/select?q=%2A%3A%2A&fq=mic%3AXBRU&fq=gnr_cfi_code%3AES%2A&fq=latest_received_flag%3A1&fq=type_s%3Aparent&rows=20000&wt=json&fl=isin%2Cmic%2Cgnr_full_name%2Cgnr_short_name%2Cgnr_cfi_code%2Cgnr_notional_curr_code%2Clei%2Cmrkt_trdng_start_date%2Cmrkt_trdng_trmination_date%2Cstatus_label%2Cpublication_date",
+   "retrieved_at": "2026-11-18T15:03:45.817446+00:00",
+   "terms_note": "ESMA public register data (MiFIR Art. 27); see https://www.esma.europa.eu/legal-notice",
+   "http_status": 200,
+   "file": "data/official_lists/raw/firds_XBRU.json",
+   "bytes": 78418,
+   "sha256": "199240992ecde36a1565a6f5123385a951bcfeee7137ab264e35143a8f2b7687",
+   "rows": 182
+  },
+  {
+   "source": "esma_firds:XLIS",
+   "url": "https://registers.esma.europa.eu/solr/esma_registers_firds/select?q=%2A%3A%2A&fq=mic%3AXLIS&fq=gnr_cfi_code%3AES%2A&fq=latest_received_flag%3A1&fq=type_s%3Aparent&rows=20000&wt=json&fl=isin%2Cmic%2Cgnr_full_name%2Cgnr_short_name%2Cgnr_cfi_code%2Cgnr_notional_curr_code%2Clei%2Cmrkt_trdng_start_date%2Cmrkt_trdng_trmination_date%2Cstatus_label%2Cpublication_date",
+   "retrieved_at": "2026-11-18T15:03:46.338810+00:00",
+   "terms_note": "ESMA public register data (MiFIR Art. 27); see https://www.esma.europa.eu/legal-notice",
+   "http_status": 200,
+   "file": "data/official_lists/raw/firds_XLIS.json",
+   "bytes": 24954,
+   "sha256": "7e9f029b9f9b56229bf101ce60ed701ab554e8277fc8401565d9bb640534535d",
+   "rows": 56
+  },
+  {
+   "source": "esma_firds:XMSM",
+   "url": "https://registers.esma.europa.eu/solr/esma_registers_firds/select?q=%2A%3A%2A&fq=mic%3AXMSM&fq=gnr_cfi_code%3AES%2A&fq=latest_received_flag%3A1&fq=type_s%3Aparent&rows=20000&wt=json&fl=isin%2Cmic%2Cgnr_full_name%2Cgnr_short_name%2Cgnr_cfi_code%2Cgnr_notional_curr_code%2Clei%2Cmrkt_trdng_start_date%2Cmrkt_trdng_trmination_date%2Cstatus_label%2Cpublication_date",
+   "retrieved_at": "2026-11-18T15:03:46.866571+00:00",
+   "terms_note": "ESMA public register data (MiFIR Art. 27); see https://www.esma.europa.eu/legal-notice",
+   "http_status": 200,
+   "file": "data/official_lists/raw/firds_XMSM.json",
+   "bytes": 29365,
+   "sha256": "f7e9d1af2ee29b9668ce10502935938e9149b321f7fd6ddbab105616e82bc50b",
+   "rows": 59
+  },
+  {
+   "source": "esma_firds:MTAA",
+   "url": "https://registers.esma.europa.eu/solr/esma_registers_firds/select?q=%2A%3A%2A&fq=mic%3AMTAA&fq=gnr_cfi_code%3AES%2A&fq=latest_received_flag%3A1&fq=type_s%3Aparent&rows=20000&wt=json&fl=isin%2Cmic%2Cgnr_full_name%2Cgnr_short_name%2Cgnr_cfi_code%2Cgnr_notional_curr_code%2Clei%2Cmrkt_trdng_start_date%2Cmrkt_trdng_trmination_date%2Cstatus_label%2Cpublication_date",
+   "retrieved_at": "2026-11-18T15:03:47.520802+00:00",
+   "terms_note": "ESMA public register data (MiFIR Art. 27); see https://www.esma.europa.eu/legal-notice",
+   "http_status": 200,
+   "file": "data/official_lists/raw/firds_MTAA.json",
+   "bytes": 155656,
+   "sha256": "7c9120ca3871cb728d69fc124dfce372d243d137bf6a552870aa69dc412ee088",
+   "rows": 359
+  },
+  {
+   "source": "esma_firds:EXGM",
+   "url": "https://registers.esma.europa.eu/solr/esma_registers_firds/select?q=%2A%3A%2A&fq=mic%3AEXGM&fq=gnr_cfi_code%3AES%2A&fq=latest_received_flag%3A1&fq=type_s%3Aparent&rows=20000&wt=json&fl=isin%2Cmic%2Cgnr_full_name%2Cgnr_short_name%2Cgnr_cfi_code%2Cgnr_notional_curr_code%2Clei%2Cmrkt_trdng_start_date%2Cmrkt_trdng_trmination_date%2Cstatus_label%2Cpublication_date",
+   "retrieved_at": "2026-11-18T15:03:48.064384+00:00",
+   "terms_note": "ESMA public register data (MiFIR Art. 27); see https://www.esma.europa.eu/legal-notice",
+   "http_status": 200,
+   "file": "data/official_lists/raw/firds_EXGM.json",
+   "bytes": 129759,
+   "sha256": "2ab1e55ab1fe92c27c5f88763634b50f9b311a32cdec3ad04ac17cb6c488705e",
+   "rows": 304
+  },
+  {
+   "source": "esma_firds:XOSL",
+   "url": "https://registers.esma.europa.eu/solr/esma_registers_firds/select?q=%2A%3A%2A&fq=mic%3AXOSL&fq=gnr_cfi_code%3AES%2A&fq=latest_received_flag%3A1&fq=type_s%3Aparent&rows=20000&wt=json&fl=isin%2Cmic%2Cgnr_full_name%2Cgnr_short_name%2Cgnr_cfi_code%2Cgnr_notional_curr_code%2Clei%2Cmrkt_trdng_start_date%2Cmrkt_trdng_trmination_date%2Cstatus_label%2Cpublication_date",
+   "retrieved_at": "2026-11-18T15:03:48.743356+00:00",
+   "terms_note": "ESMA public register data (MiFIR Art. 27); see https://www.esma.europa.eu/legal-notice",
+   "http_status": 200,
+   "file": "data/official_lists/raw/firds_XOSL.json",
+   "bytes": 144551,
+   "sha256": "34a8208f6e5c0a81fea2f891e3ab0de7d33c8cde3156e897c25ef6af04d28343",
+   "rows": 326
+  },
+  {
+   "source": "esma_firds:XMAD",
+   "url": "https://registers.esma.europa.eu/solr/esma_registers_firds/select?q=%2A%3A%2A&fq=mic%3AXMAD&fq=gnr_cfi_code%3AES%2A&fq=latest_received_flag%3A1&fq=type_s%3Aparent&rows=20000&wt=json&fl=isin%2Cmic%2Cgnr_full_name%2Cgnr_short_name%2Cgnr_cfi_code%2Cgnr_notional_curr_code%2Clei%2Cmrkt_trdng_start_date%2Cmrkt_trdng_trmination_date%2Cstatus_label%2Cpublication_date",
+   "retrieved_at": "2026-11-18T15:03:49.278462+00:00",
+   "terms_note": "ESMA public register data (MiFIR Art. 27); see https://www.esma.europa.eu/legal-notice",
+   "http_status": 200,
+   "file": "data/official_lists/raw/firds_XMAD.json",
+   "bytes": 81473,
+   "sha256": "90bcee6dcbfe5bf3b72f811d657f4bded308ba368d1019cea4417c61d932b459",
+   "rows": 186
+  },
+  {
+   "source": "esma_firds:MABX",
+   "url": "https://registers.esma.europa.eu/solr/esma_registers_firds/select?q=%2A%3A%2A&fq=mic%3AMABX&fq=gnr_cfi_code%3AES%2A&fq=latest_received_flag%3A1&fq=type_s%3Aparent&rows=20000&wt=json&fl=isin%2Cmic%2Cgnr_full_name%2Cgnr_short_name%2Cgnr_cfi_code%2Cgnr_notional_curr_code%2Clei%2Cmrkt_trdng_start_date%2Cmrkt_trdng_trmination_date%2Cstatus_label%2Cpublication_date",
+   "retrieved_at": "2026-11-18T15:03:49.814372+00:00",
+   "terms_note": "ESMA public register data (MiFIR Art. 27); see https://www.esma.europa.eu/legal-notice",
+   "http_status": 200,
+   "file": "data/official_lists/raw/firds_MABX.json",
+   "bytes": 88297,
+   "sha256": "5d78c89c15f1acbd716d3e85d92dd9a7d328db3d71a90866ecec93e9226f09c6",
+   "rows": 180
+  },
+  {
+   "source": "esma_firds:WBAH",
+   "url": "https://registers.esma.europa.eu/solr/esma_registers_firds/select?q=%2A%3A%2A&fq=mic%3AWBAH&fq=gnr_cfi_code%3AES%2A&fq=latest_received_flag%3A1&fq=type_s%3Aparent&rows=20000&wt=json&fl=isin%2Cmic%2Cgnr_full_name%2Cgnr_short_name%2Cgnr_cfi_code%2Cgnr_notional_curr_code%2Clei%2Cmrkt_trdng_start_date%2Cmrkt_trdng_trmination_date%2Cstatus_label%2Cpublication_date",
+   "retrieved_at": "2026-11-18T15:03:50.338812+00:00",
+   "terms_note": "ESMA public register data (MiFIR Art. 27); see https://www.esma.europa.eu/legal-notice",
+   "http_status": 200,
+   "file": "data/official_lists/raw/firds_WBAH.json",
+   "bytes": 39455,
+   "sha256": "0382dd94630c5742924baf698c24e9aef467e14bb93f9bd37a60c8f118265c14",
+   "rows": 90
+  },
+  {
+   "source": "esma_firds:XSTO",
+   "url": "https://registers.esma.europa.eu/solr/esma_registers_firds/select?q=%2A%3A%2A&fq=mic%3AXSTO&fq=gnr_cfi_code%3AES%2A&fq=latest_received_flag%3A1&fq=type_s%3Aparent&rows=20000&wt=json&fl=isin%2Cmic%2Cgnr_full_name%2Cgnr_short_name%2Cgnr_cfi_code%2Cgnr_notional_curr_code%2Clei%2Cmrkt_trdng_start_date%2Cmrkt_trdng_trmination_date%2Cstatus_label%2Cpublication_date",
+   "retrieved_at": "2026-11-18T15:03:51.143637+00:00",
+   "terms_note": "ESMA public register data (MiFIR Art. 27); see https://www.esma.europa.eu/legal-notice",
+   "http_status": 200,
+   "file": "data/official_lists/raw/firds_XSTO.json",
+   "bytes": 450590,
+   "sha256": "1065ae9c10cc91d0d91b3057f245cfbeadca57d32bd59d61c37091418bfc59ae",
+   "rows": 1011
+  },
+  {
+   "source": "esma_firds:XNGM",
+   "url": "https://registers.esma.europa.eu/solr/esma_registers_firds/select?q=%2A%3A%2A&fq=mic%3AXNGM&fq=gnr_cfi_code%3AES%2A&fq=latest_received_flag%3A1&fq=type_s%3Aparent&rows=20000&wt=json&fl=isin%2Cmic%2Cgnr_full_name%2Cgnr_short_name%2Cgnr_cfi_code%2Cgnr_notional_curr_code%2Clei%2Cmrkt_trdng_start_date%2Cmrkt_trdng_trmination_date%2Cstatus_label%2Cpublication_date",
+   "retrieved_at": "2026-11-18T15:03:51.661923+00:00",
+   "terms_note": "ESMA public register data (MiFIR Art. 27); see https://www.esma.europa.eu/legal-notice",
+   "http_status": 200,
+   "file": "data/official_lists/raw/firds_XNGM.json",
+   "bytes": 16732,
+   "sha256": "18fe11fa50ccd359155e256a2c09ea66d5937bab905150029349d08b0f23ec63",
+   "rows": 36
+  },
+  {
+   "source": "esma_firds:XHEL",
+   "url": "https://registers.esma.europa.eu/solr/esma_registers_firds/select?q=%2A%3A%2A&fq=mic%3AXHEL&fq=gnr_cfi_code%3AES%2A&fq=latest_received_flag%3A1&fq=type_s%3Aparent&rows=20000&wt=json&fl=isin%2Cmic%2Cgnr_full_name%2Cgnr_short_name%2Cgnr_cfi_code%2Cgnr_notional_curr_code%2Clei%2Cmrkt_trdng_start_date%2Cmrkt_trdng_trmination_date%2Cstatus_label%2Cpublication_date",
+   "retrieved_at": "2026-11-18T15:03:52.205413+00:00",
+   "terms_note": "ESMA public register data (MiFIR Art. 27); see https://www.esma.europa.eu/legal-notice",
+   "http_status": 200,
+   "file": "data/official_lists/raw/firds_XHEL.json",
+   "bytes": 101323,
+   "sha256": "0b441e5941f4703285662cef073171f5cfeec1c6f14880c8c2e982dd6d57b5f5",
+   "rows": 233
+  },
+  {
+   "source": "esma_firds:XCSE",
+   "url": "https://registers.esma.europa.eu/solr/esma_registers_firds/select?q=%2A%3A%2A&fq=mic%3AXCSE&fq=gnr_cfi_code%3AES%2A&fq=latest_received_flag%3A1&fq=type_s%3Aparent&rows=20000&wt=json&fl=isin%2Cmic%2Cgnr_full_name%2Cgnr_short_name%2Cgnr_cfi_code%2Cgnr_notional_curr_code%2Clei%2Cmrkt_trdng_start_date%2Cmrkt_trdng_trmination_date%2Cstatus_label%2Cpublication_date",
+   "retrieved_at": "2026-11-18T15:03:52.768927+00:00",
+   "terms_note": "ESMA public register data (MiFIR Art. 27); see https://www.esma.europa.eu/legal-notice",
+   "http_status": 200,
+   "file": "data/official_lists/raw/firds_XCSE.json",
+   "bytes": 91866,
+   "sha256": "4209b3b0debe9e987868e6d451298be4e91b1b9c0ef0cc3fe7eda8c80ff2386d",
+   "rows": 210
+  },
+  {
+   "source": "esma_firds:XICE",
+   "url": "https://registers.esma.europa.eu/solr/esma_registers_firds/select?q=%2A%3A%2A&fq=mic%3AXICE&fq=gnr_cfi_code%3AES%2A&fq=latest_received_flag%3A1&fq=type_s%3Aparent&rows=20000&wt=json&fl=isin%2Cmic%2Cgnr_full_name%2Cgnr_short_name%2Cgnr_cfi_code%2Cgnr_notional_curr_code%2Clei%2Cmrkt_trdng_start_date%2Cmrkt_trdng_trmination_date%2Cstatus_label%2Cpublication_date",
+   "retrieved_at": "2026-11-18T15:03:53.292919+00:00",
+   "terms_note": "ESMA public register data (MiFIR Art. 27); see https://www.esma.europa.eu/legal-notice",
+   "http_status": 200,
+   "file": "data/official_lists/raw/firds_XICE.json",
+   "bytes": 15185,
+   "sha256": "a10f47d594c68bbf585960b3e7f24524a654e43940898b8c6c44141ced54905c",
+   "rows": 35
+  },
+  {
+   "source": "esma_firds:XWAR",
+   "url": "https://registers.esma.europa.eu/solr/esma_registers_firds/select?q=%2A%3A%2A&fq=mic%3AXWAR&fq=gnr_cfi_code%3AES%2A&fq=latest_received_flag%3A1&fq=type_s%3Aparent&rows=20000&wt=json&fl=isin%2Cmic%2Cgnr_full_name%2Cgnr_short_name%2Cgnr_cfi_code%2Cgnr_notional_curr_code%2Clei%2Cmrkt_trdng_start_date%2Cmrkt_trdng_trmination_date%2Cstatus_label%2Cpublication_date",
+   "retrieved_at": "2026-11-18T15:03:53.966542+00:00",
+   "terms_note": "ESMA public register data (MiFIR Art. 27); see https://www.esma.europa.eu/legal-notice",
+   "http_status": 200,
+   "file": "data/official_lists/raw/firds_XWAR.json",
+   "bytes": 246511,
+   "sha256": "ef73aaf635e83d4243447cae1e158a08fcb22eb441d06c880eeb933a9ce45f5b",
+   "rows": 580
+  },
+  {
+   "source": "esma_firds:XNCO",
+   "url": "https://registers.esma.europa.eu/solr/esma_registers_firds/select?q=%2A%3A%2A&fq=mic%3AXNCO&fq=gnr_cfi_code%3AES%2A&fq=latest_received_flag%3A1&fq=type_s%3Aparent&rows=20000&wt=json&fl=isin%2Cmic%2Cgnr_full_name%2Cgnr_short_name%2Cgnr_cfi_code%2Cgnr_notional_curr_code%2Clei%2Cmrkt_trdng_start_date%2Cmrkt_trdng_trmination_date%2Cstatus_label%2Cpublication_date",
+   "retrieved_at": "2026-11-18T15:03:54.630440+00:00",
+   "terms_note": "ESMA public register data (MiFIR Art. 27); see https://www.esma.europa.eu/legal-notice",
+   "http_status": 200,
+   "file": "data/official_lists/raw/firds_XNCO.json",
+   "bytes": 227884,
+   "sha256": "02bed2a8c791f0fa46d0370d324ebbcd9b21f97c55cb550057a1947a160b528d",
+   "rows": 525
+  },
+  {
+   "source": "esma_firds:XATH",
+   "url": "https://registers.esma.europa.eu/solr/esma_registers_firds/select?q=%2A%3A%2A&fq=mic%3AXATH&fq=gnr_cfi_code%3AES%2A&fq=latest_received_flag%3A1&fq=type_s%3Aparent&rows=20000&wt=json&fl=isin%2Cmic%2Cgnr_full_name%2Cgnr_short_name%2Cgnr_cfi_code%2Cgnr_notional_curr_code%2Clei%2Cmrkt_trdng_start_date%2Cmrkt_trdng_trmination_date%2Cstatus_label%2Cpublication_date",
+   "retrieved_at": "2026-11-18T15:03:55.178933+00:00",
+   "terms_note": "ESMA public register data (MiFIR Art. 27); see https://www.esma.europa.eu/legal-notice",
+   "http_status": 200,
+   "file": "data/official_lists/raw/firds_XATH.json",
+   "bytes": 112108,
+   "sha256": "d2cd71c7d62fcf842245b53623c1817c91406edbc972ae1dbd2bb7fc2231ef90",
+   "rows": 248
+  },
+  {
+   "source": "esma_firds:XTAL",
+   "url": "https://registers.esma.europa.eu/solr/esma_registers_firds/select?q=%2A%3A%2A&fq=mic%3AXTAL&fq=gnr_cfi_code%3AES%2A&fq=latest_received_flag%3A1&fq=type_s%3Aparent&rows=20000&wt=json&fl=isin%2Cmic%2Cgnr_full_name%2Cgnr_short_name%2Cgnr_cfi_code%2Cgnr_notional_curr_code%2Clei%2Cmrkt_trdng_start_date%2Cmrkt_trdng_trmination_date%2Cstatus_label%2Cpublication_date",
+   "retrieved_at": "2026-11-18T15:03:55.696540+00:00",
+   "terms_note": "ESMA public register data (MiFIR Art. 27); see https://www.esma.europa.eu/legal-notice",
+   "http_status": 200,
+   "file": "data/official_lists/raw/firds_XTAL.json",
+   "bytes": 11068,
+   "sha256": "846459650252554dbe003538eac27a5583c9db2b6ddee0613c4c2f055ed0a89e",
+   "rows": 25
+  },
+  {
+   "source": "esma_firds:XRIS",
+   "url": "https://registers.esma.europa.eu/solr/esma_registers_firds/select?q=%2A%3A%2A&fq=mic%3AXRIS&fq=gnr_cfi_code%3AES%2A&fq=latest_received_flag%3A1&fq=type_s%3Aparent&rows=20000&wt=json&fl=isin%2Cmic%2Cgnr_full_name%2Cgnr_short_name%2Cgnr_cfi_code%2Cgnr_notional_curr_code%2Clei%2Cmrkt_trdng_start_date%2Cmrkt_trdng_trmination_date%2Cstatus_label%2Cpublication_date",
+   "retrieved_at": "2026-11-18T15:03:56.214995+00:00",
+   "terms_note": "ESMA public register data (MiFIR Art. 27); see https://www.esma.europa.eu/legal-notice",
+   "http_status": 200,
+   "file": "data/official_lists/raw/firds_XRIS.json",
+   "bytes": 14260,
+   "sha256": "eb1e7195ae9a38c0aff00c81a4aa1d447a3260f6109607f5fe2f3ced49c4b057",
+   "rows": 30
+  },
+  {
+   "source": "esma_firds:XLIT",
+   "url": "https://registers.esma.europa.eu/solr/esma_registers_firds/select?q=%2A%3A%2A&fq=mic%3AXLIT&fq=gnr_cfi_code%3AES%2A&fq=latest_received_flag%3A1&fq=type_s%3Aparent&rows=20000&wt=json&fl=isin%2Cmic%2Cgnr_full_name%2Cgnr_short_name%2Cgnr_cfi_code%2Cgnr_notional_curr_code%2Clei%2Cmrkt_trdng_start_date%2Cmrkt_trdng_trmination_date%2Cstatus_label%2Cpublication_date",
+   "retrieved_at": "2026-11-18T15:03:56.742461+00:00",
+   "terms_note": "ESMA public register data (MiFIR Art. 27); see https://www.esma.europa.eu/legal-notice",
+   "http_status": 200,
+   "file": "data/official_lists/raw/firds_XLIT.json",
+   "bytes": 12819,
+   "sha256": "9612a2286db8fe33d11644281db9582aa5deef49c318042e158e7614c4c9bc15",
+   "rows": 29
+  },
+  {
+   "source": "esma_firds:XPRA",
+   "url": "https://registers.esma.europa.eu/solr/esma_registers_firds/select?q=%2A%3A%2A&fq=mic%3AXPRA&fq=gnr_cfi_code%3AES%2A&fq=latest_received_flag%3A1&fq=type_s%3Aparent&rows=20000&wt=json&fl=isin%2Cmic%2Cgnr_full_name%2Cgnr_short_name%2Cgnr_cfi_code%2Cgnr_notional_curr_code%2Clei%2Cmrkt_trdng_start_date%2Cmrkt_trdng_trmination_date%2Cstatus_label%2Cpublication_date",
+   "retrieved_at": "2026-11-18T15:03:57.264184+00:00",
+   "terms_note": "ESMA public register data (MiFIR Art. 27); see https://www.esma.europa.eu/legal-notice",
+   "http_status": 200,
+   "file": "data/official_lists/raw/firds_XPRA.json",
+   "bytes": 22395,
+   "sha256": "ec53a7c8693304e02503aec44934fd98c14705974cce42cb6b13bbc7599c6058",
+   "rows": 49
+  },
+  {
+   "source": "esma_firds:XBUD",
+   "url": "https://registers.esma.europa.eu/solr/esma_registers_firds/select?q=%2A%3A%2A&fq=mic%3AXBUD&fq=gnr_cfi_code%3AES%2A&fq=latest_received_flag%3A1&fq=type_s%3Aparent&rows=20000&wt=json&fl=isin%2Cmic%2Cgnr_full_name%2Cgnr_short_name%2Cgnr_cfi_code%2Cgnr_notional_curr_code%2Clei%2Cmrkt_trdng_start_date%2Cmrkt_trdng_trmination_date%2Cstatus_label%2Cpublication_date",
+   "retrieved_at": "2026-11-18T15:03:57.789296+00:00",
+   "terms_note": "ESMA public register data (MiFIR Art. 27); see https://www.esma.europa.eu/legal-notice",
+   "http_status": 200,
+   "file": "data/official_lists/raw/firds_XBUD.json",
+   "bytes": 40825,
+   "sha256": "29a0b955f78fbf2035521c53b9eeeb4746e604dfb3938ccf25c7f0f2365229f0",
+   "rows": 92
+  },
+  {
+   "source": "esma_firds:XBSE",
+   "url": "https://registers.esma.europa.eu/solr/esma_registers_firds/select?q=%2A%3A%2A&fq=mic%3AXBSE&fq=gnr_cfi_code%3AES%2A&fq=latest_received_flag%3A1&fq=type_s%3Aparent&rows=20000&wt=json&fl=isin%2Cmic%2Cgnr_full_name%2Cgnr_short_name%2Cgnr_cfi_code%2Cgnr_notional_curr_code%2Clei%2Cmrkt_trdng_start_date%2Cmrkt_trdng_trmination_date%2Cstatus_label%2Cpublication_date",
+   "retrieved_at": "2026-11-18T15:03:58.319258+00:00",
+   "terms_note": "ESMA public register data (MiFIR Art. 27); see https://www.esma.europa.eu/legal-notice",
+   "http_status": 200,
+   "file": "data/official_lists/raw/firds_XBSE.json",
+   "bytes": 45092,
+   "sha256": "ec0b4726632b760854089f351bcdc6ac5cac625739023683bd2f3954a10af557",
+   "rows": 104
+  },
+  {
+   "source": "esma_firds:XZAG",
+   "url": "https://registers.esma.europa.eu/solr/esma_registers_firds/select?q=%2A%3A%2A&fq=mic%3AXZAG&fq=gnr_cfi_code%3AES%2A&fq=latest_received_flag%3A1&fq=type_s%3Aparent&rows=20000&wt=json&fl=isin%2Cmic%2Cgnr_full_name%2Cgnr_short_name%2Cgnr_cfi_code%2Cgnr_notional_curr_code%2Clei%2Cmrkt_trdng_start_date%2Cmrkt_trdng_trmination_date%2Cstatus_label%2Cpublication_date",
+   "retrieved_at": "2026-11-18T15:03:58.848509+00:00",
+   "terms_note": "ESMA public register data (MiFIR Art. 27); see https://www.esma.europa.eu/legal-notice",
+   "http_status": 200,
+   "file": "data/official_lists/raw/firds_XZAG.json",
+   "bytes": 69211,
+   "sha256": "a60a4861ecd6c78e62e7eedeb8b64da40db0788488e12d5a57578f2b18b4fa92",
+   "rows": 149
+  },
+  {
+   "source": "esma_firds:XLJU",
+   "url": "https://registers.esma.europa.eu/solr/esma_registers_firds/select?q=%2A%3A%2A&fq=mic%3AXLJU&fq=gnr_cfi_code%3AES%2A&fq=latest_received_flag%3A1&fq=type_s%3Aparent&rows=20000&wt=json&fl=isin%2Cmic%2Cgnr_full_name%2Cgnr_short_name%2Cgnr_cfi_code%2Cgnr_notional_curr_code%2Clei%2Cmrkt_trdng_start_date%2Cmrkt_trdng_trmination_date%2Cstatus_label%2Cpublication_date",
+   "retrieved_at": "2026-11-18T15:03:59.369508+00:00",
+   "terms_note": "ESMA public register data (MiFIR Art. 27); see https://www.esma.europa.eu/legal-notice",
+   "http_status": 200,
+   "file": "data/official_lists/raw/firds_XLJU.json",
+   "bytes": 20119,
+   "sha256": "04baf586914707493f6fd4661f91db18dbe4ee39c45cf7878d81998138302608",
+   "rows": 44
+  },
+  {
+   "source": "esma_firds:XBRA",
+   "url": "https://registers.esma.europa.eu/solr/esma_registers_firds/select?q=%2A%3A%2A&fq=mic%3AXBRA&fq=gnr_cfi_code%3AES%2A&fq=latest_received_flag%3A1&fq=type_s%3Aparent&rows=20000&wt=json&fl=isin%2Cmic%2Cgnr_full_name%2Cgnr_short_name%2Cgnr_cfi_code%2Cgnr_notional_curr_code%2Clei%2Cmrkt_trdng_start_date%2Cmrkt_trdng_trmination_date%2Cstatus_label%2Cpublication_date",
+   "retrieved_at": "2026-11-18T15:03:59.891027+00:00",
+   "terms_note": "ESMA public register data (MiFIR Art. 27); see https://www.esma.europa.eu/legal-notice",
+   "http_status": 200,
+   "file": "data/official_lists/raw/firds_XBRA.json",
+   "bytes": 32304,
+   "sha256": "80512ca30f95052afd3689315782d5dfd37a480e6244b47cf2409b2aab9f56ad",
+   "rows": 69
+  },
+  {
+   "source": "esma_firds:XBUL",
+   "url": "https://registers.esma.europa.eu/solr/esma_registers_firds/select?q=%2A%3A%2A&fq=mic%3AXBUL&fq=gnr_cfi_code%3AES%2A&fq=latest_received_flag%3A1&fq=type_s%3Aparent&rows=20000&wt=json&fl=isin%2Cmic%2Cgnr_full_name%2Cgnr_short_name%2Cgnr_cfi_code%2Cgnr_notional_curr_code%2Clei%2Cmrkt_trdng_start_date%2Cmrkt_trdng_trmination_date%2Cstatus_label%2Cpublication_date",
+   "retrieved_at": "2026-11-18T15:04:00.421041+00:00",
+   "terms_note": "ESMA public register data (MiFIR Art. 27); see https://www.esma.europa.eu/legal-notice",
+   "http_status": 200,
+   "file": "data/official_lists/raw/firds_XBUL.json",
+   "bytes": 57080,
+   "sha256": "fec3f5aaa0d1ea553d4a342174fcf23900f4fd2e017a7e1b8999e004a4f01e5e",
+   "rows": 116
+  },
+  {
+   "source": "fca_firds:FULINS_E",
+   "url": "https://data.fca.org.uk/artefacts/FIRDS/FULINS_E_20221126_01of01.zip",
+   "retrieved_at": "2026-11-18T15:04:03.967153+00:00",
+   "terms_note": "FCA FIRDS public data; see https://www.fca.org.uk/legal",
+   "http_status": 200,
+   "file": "data/official_lists/raw/FULINS_E_20221126_01of01.zip",
+   "bytes": 31345449,
+   "sha256": "4c3980e758911e3f6e997ceefa53863a3d1ae0caab9355fe48f06b0120bcd750",
+   "publication_date": "2022-11-26"
+  },
+  {
+   "source": "six_equity_issuers",
+   "url": "https://www.six-group.com/sheldon/equity_issuers/v1/equity_issuers.csv",
+   "retrieved_at": "2026-11-18T15:04:04.920392+00:00",
+   "terms_note": "SIX Swiss Exchange public website data; see https://www.six-group.com/en/legal.html",
+   "http_status": 200,
+   "file": "data/official_lists/raw/six.csv",
+   "bytes": 45087,
+   "sha256": "725999e28deefe5df4e632f091783c88271c3cfd79e5c525317733279ba0b0f1"
+  },
+  {
+   "source": "xetra_all_tradable",
+   "url": "https://www.xetra.com/resource/blob/1528/e11f4fba6ebb5100d3a682612882a6bd/data/t7-xetr-allTradableInstruments.csv",
+   "retrieved_at": "2026-11-18T15:04:07.627035+00:00",
+   "terms_note": "Deutsche Börse public instrument list; see https://www.deutsche-boerse.com/dbg-en/meta/imprint",
+   "http_status": 200,
+   "file": "data/official_lists/raw/xetra.csv",
+   "bytes": 4897852,
+   "sha256": "c3f9f7e63dd9b551338c29bda00aaade3e48ec71e035d0ce19348423402dc1ee"
+  },
+  {
+   "source": "euronext_equities",
+   "url": "https://live.euronext.com/en/pd_es/data/stocks/download?mics=dm_all_stock",
+   "retrieved_at": "2026-11-18T15:04:09.293049+00:00",
+   "terms_note": "Euronext public market data download; see https://www.euronext.com/en/terms-use",
+   "http_status": 200,
+   "file": "data/official_lists/raw/euronext.csv",
+   "bytes": 515262,
+   "sha256": "8fe152d9e12e84e435fcb42ac7c8d259de1102f1d1f399e87d614ff69540c8f2"
+  },
+  {
+   "source": "nasdaq_nordic_screener:MAIN_MARKET:STO",
+   "url": "https://api.nasdaq.com/api/nordic/screener/shares?category=MAIN_MARKET&tableonly=false&market=STO",
+   "retrieved_at": "2026-11-18T15:04:10.001978+00:00",
+   "terms_note": "Nasdaq public website data; see https://www.nasdaq.com/terms-of-use",
+   "http_status": 200,
+   "file": "data/official_lists/raw/nasdaq_MAIN_MARKET_STO.json",
+   "bytes": 331450,
+   "sha256": "eaa47b6eff10ab01d8a2e64d875a1d475ea111f2db0aa4bee0ed2b2c1309d7c0"
+  },
+  {
+   "source": "nasdaq_nordic_screener:MAIN_MARKET:HEL",
+   "url": "https://api.nasdaq.com/api/nordic/screener/shares?category=MAIN_MARKET&tableonly=false&market=HEL",
+   "retrieved_at": "2026-11-18T15:04:10.154421+00:00",
+   "terms_note": "Nasdaq public website data; see https://www.nasdaq.com/terms-of-use",
+   "http_status": 200,
+   "file": "data/official_lists/raw/nasdaq_MAIN_MARKET_HEL.json",
+   "bytes": 123220,
+   "sha256": "d4cfacc0f5cb18e80847a1006ba6a7679762de7e75b173175771a29547d6b25b"
+  },
+  {
+   "source": "nasdaq_nordic_screener:MAIN_MARKET:CPH",
+   "url": "https://api.nasdaq.com/api/nordic/screener/shares?category=MAIN_MARKET&tableonly=false&market=CPH",
+   "retrieved_at": "2026-11-18T15:04:10.329566+00:00",
+   "terms_note": "Nasdaq public website data; see https://www.nasdaq.com/terms-of-use",
+   "http_status": 200,
+   "file": "data/official_lists/raw/nasdaq_MAIN_MARKET_CPH.json",
+   "bytes": 96783,
+   "sha256": "034c72d3b4a7d0c4518553ef990dda39e2c9eef958b45712852551d28ea481eb"
+  },
+  {
+   "source": "nasdaq_nordic_screener:MAIN_MARKET:ICE",
+   "url": "https://api.nasdaq.com/api/nordic/screener/shares?category=MAIN_MARKET&tableonly=false&market=ICE",
+   "retrieved_at": "2026-11-18T15:04:10.540688+00:00",
+   "terms_note": "Nasdaq public website data; see https://www.nasdaq.com/terms-of-use",
+   "http_status": 200,
+   "file": "data/official_lists/raw/nasdaq_MAIN_MARKET_ICE.json",
+   "bytes": 24368,
+   "sha256": "a076e6d3d15891b749b4a8a9713d238627c81ecd334a9e0026ccfb64f2d9eaf7"
+  },
+  {
+   "source": "nasdaq_nordic_screener:FIRST_NORTH:STO",
+   "url": "https://api.nasdaq.com/api/nordic/screener/shares?category=FIRST_NORTH&tableonly=false&market=STO",
+   "retrieved_at": "2026-11-18T15:04:10.777430+00:00",
+   "terms_note": "Nasdaq public website data; see https://www.nasdaq.com/terms-of-use",
+   "http_status": 200,
+   "file": "data/official_lists/raw/nasdaq_FIRST_NORTH_STO.json",
+   "bytes": 266951,
+   "sha256": "e1ee7362d99058b7f07659c2313e36b2993d142cbd0e590f580e1249ca3b363d"
+  },
+  {
+   "source": "nasdaq_nordic_screener:FIRST_NORTH:HEL",
+   "url": "https://api.nasdaq.com/api/nordic/screener/shares?category=FIRST_NORTH&tableonly=false&market=HEL",
+   "retrieved_at": "2026-11-18T15:04:10.900775+00:00",
+   "terms_note": "Nasdaq public website data; see https://www.nasdaq.com/terms-of-use",
+   "http_status": 200,
+   "file": "data/official_lists/raw/nasdaq_FIRST_NORTH_HEL.json",
+   "bytes": 40966,
+   "sha256": "8470470536017162087d75230e0b518a91301bc2c5ed9c3fa45d12a61cb59526"
+  },
+  {
+   "source": "nasdaq_nordic_screener:FIRST_NORTH:CPH",
+   "url": "https://api.nasdaq.com/api/nordic/screener/shares?category=FIRST_NORTH&tableonly=false&market=CPH",
+   "retrieved_at": "2026-11-18T15:04:10.986143+00:00",
+   "terms_note": "Nasdaq public website data; see https://www.nasdaq.com/terms-of-use",
+   "http_status": 200,
+   "file": "data/official_lists/raw/nasdaq_FIRST_NORTH_CPH.json",
+   "bytes": 24041,
+   "sha256": "bc5056bdd59f005875edce631796cdd6fc201d5e9a81a4e96089e4612263df06"
+  },
+  {
+   "source": "nasdaq_nordic_screener:FIRST_NORTH:ICE",
+   "url": "https://api.nasdaq.com/api/nordic/screener/shares?category=FIRST_NORTH&tableonly=false&market=ICE",
+   "retrieved_at": "2026-11-18T15:04:11.097093+00:00",
+   "terms_note": "Nasdaq public website data; see https://www.nasdaq.com/terms-of-use",
+   "http_status": 200,
+   "file": "data/official_lists/raw/nasdaq_FIRST_NORTH_ICE.json",
+   "bytes": 6403,
+   "sha256": "f533ed2389341d9b0b6f72d2e9712c6e01fe1f0a0967b0a1f864fd4b3925de58"
+  }
+ ],
+ "known_gaps": [
+  {
+   "venue": "LSE tickers (TIDM)",
+   "reason": "FCA FIRDS has no local ticker; LSE instrument list is JavaScript-rendered"
+  },
+  {
+   "venue": "Wiener Börse, BME, GPW, Athens, CEE tickers",
+   "reason": "covered by ESMA FIRDS (ISIN/MIC) but no free machine-readable ticker list retrieved"
+  },
+  {
+   "venue": "Index constituents (except MDAX/SDAX already in repo)",
+   "reason": "not retrieved; index membership left empty"
+  }
+ ]
+}

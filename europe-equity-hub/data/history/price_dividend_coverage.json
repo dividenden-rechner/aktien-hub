@@ -1,0 +1,64 @@
+{
+ "prices": {
+  "official_free_series_2010_2025": "missing",
+  "note": "No free, redistributable official end-of-day history 2010-2025 was retrieved for European venues. Existing repo series are listed below as third-party data; no adjusted/unadjusted mixing.",
+  "existing_repo_series": [
+   {
+    "symbol": "BRBY.L",
+    "source": "Alpha Vantage TIME_SERIES_WEEKLY (Wochenschlusskurse, ungeteilt)",
+    "as_of": "2026-11-17",
+    "adjustment": "unadjusted weekly closes (per source description)",
+    "licence_note": "Alpha Vantage free tier; check terms before republication"
+   },
+   {
+    "symbol": "KER.PA",
+    "source": "Alpha Vantage TIME_SERIES_WEEKLY (Wochenschlusskurse, ungeteilt)",
+    "as_of": "2026-11-16",
+    "adjustment": "unadjusted weekly closes (per source description)",
+    "licence_note": "Alpha Vantage free tier; check terms before republication"
+   },
+   {
+    "symbol": "MC.PA",
+    "source": "Alpha Vantage TIME_SERIES_WEEKLY (Wochenschlusskurse, ungeteilt)",
+    "as_of": "2026-11-15",
+    "adjustment": "unadjusted weekly closes (per source description)",
+    "licence_note": "Alpha Vantage free tier; check terms before republication"
+   },
+   {
+    "symbol": "RMS.PA",
+    "source": "Alpha Vantage TIME_SERIES_WEEKLY (Wochenschlusskurse, ungeteilt)",
+    "as_of": "2026-11-13",
+    "adjustment": "unadjusted weekly closes (per source description)",
+    "licence_note": "Alpha Vantage free tier; check terms before republication"
+   }
+  ],
+  "xetra_daily_repo": "aktien-hub data/kurse/xetra (recent daily snapshots from Deutsche Börse, not a 2010-2025 history)"
+ },
+ "dividends": {
+  "source": "ESEF per-share dividend facts (recognised in year / proposed for year)",
+  "issuers_with_any_dps_fact": 100,
+  "per_year": {
+   "2010": 0,
+   "2011": 0,
+   "2012": 0,
+   "2013": 0,
+   "2014": 0,
+   "2015": 0,
+   "2016": 0,
+   "2017": 0,
+   "2018": 0,
+   "2019": 1,
+   "2020": 8,
+   "2021": 34,
+   "2022": 79,
+   "2023": 88,
+   "2024": 89,
+   "2025": 80
+  },
+  "not_available": "ex-date, payment date, gross/net and special/ordinary split are not in these facts"
+ },
+ "corporate_actions": {
+  "status": "missing",
+  "note": "splits/capital measures not imported"
+ }
+}

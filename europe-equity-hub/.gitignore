@@ -1,0 +1,4 @@
+__pycache__/
+.pytest_cache/
+# Rohdateien der offiziellen Listen (~35 MB) und GLEIF-Cache: mit scripts/build_official_lists.py neu laden
+data/official_lists/raw/

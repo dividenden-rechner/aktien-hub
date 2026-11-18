@@ -1,0 +1,30 @@
+{
+ "issues": [
+  {
+   "issuer_lei": "529900NN7SOJ5QG82X67",
+   "fiscal_year": 2020,
+   "issue": "mixed_currencies:['DKK', 'EUR']"
+  },
+  {
+   "issuer_lei": "529900NN7SOJ5QG82X67",
+   "fiscal_year": 2022,
+   "issue": "mixed_currencies:['DKK', 'EUR']"
+  },
+  {
+   "issuer_lei": "549300X5UKJVE386ZB61",
+   "fiscal_year": 2022,
+   "issue": "eps_sign_differs_from_net_income"
+  },
+  {
+   "issuer_lei": "TL2N6M87CW970S5SV098",
+   "fiscal_year": 2019,
+   "issue": "equity_exceeds_assets"
+  }
+ ],
+ "count": 4,
+ "by_issue": {
+  "mixed_currencies": 2,
+  "eps_sign_differs_from_net_income": 1,
+  "equity_exceeds_assets": 1
+ }
+}
