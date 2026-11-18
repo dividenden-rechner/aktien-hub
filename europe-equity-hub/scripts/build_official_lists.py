@@ -42,10 +42,36 @@ def record(meta, key, url, resp=None, path=None, error=None, **extra):
     meta.append(entry)
 
 
+class RetryClient:
+    """httpx client that retries transient failures (5xx, proxy errors, timeouts) up to 3 times."""
+
+    def __init__(self, client, attempts=3, pause=15):
+        self.c, self.attempts, self.pause = client, attempts, pause
+
+    def _call(self, fn, *a, **kw):
+        last = None
+        for i in range(self.attempts):
+            try:
+                r = fn(*a, **kw)
+                if r.status_code < 500:
+                    return r
+                last = httpx.HTTPStatusError(f'{r.status_code}', request=r.request, response=r)
+            except httpx.HTTPError as e:
+                last = e
+            time.sleep(self.pause * (i + 1))
+        raise last
+
+    def get(self, *a, **kw):
+        return self._call(self.c.get, *a, **kw)
+
+    def post(self, *a, **kw):
+        return self._call(self.c.post, *a, **kw)
+
+
 def main():
     RAW.mkdir(parents=True, exist_ok=True)
     meta = []
-    c = httpx.Client(timeout=300, follow_redirects=True, headers={'User-Agent': UA})
+    c = RetryClient(httpx.Client(timeout=300, follow_redirects=True, headers={'User-Agent': UA}))
     firds_mics = [m for m in VENUES if m not in ('XLON', 'AIMX', 'XSWX')]
     for mic in firds_mics:
         url = FIRDS_URL
@@ -114,6 +140,11 @@ def main():
     (ROOT / 'data' / 'official_lists' / 'sources.json').write_text(json.dumps(out, ensure_ascii=False, indent=1) + '\n', encoding='utf-8')
     ok = sum('error' not in m for m in meta)
     print(f'{ok}/{len(meta)} lists retrieved')
+    failed = [m['source'] for m in meta if 'error' in m]
+    if failed:
+        # Do not build or commit a silently incomplete universe.
+        print('FEHLGESCHLAGEN (nach 3 Versuchen):', ', '.join(failed))
+        sys.exit(1)
 
 
 if __name__ == '__main__':
