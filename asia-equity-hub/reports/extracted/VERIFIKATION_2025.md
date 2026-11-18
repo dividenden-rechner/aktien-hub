@@ -1,6 +1,6 @@
 # Verifikation Geschäftsberichte GJ 2025
 
-Erzeugt: 2026-11-18 12:25 UTC durch `python extract_reports.py`.
+Erzeugt: 2026-11-18 18:55 UTC durch `python extract_reports.py`.
 
 Legende Spalte „2. Engine“: `row_confirmed` = pdfplumber findet denselben Wert in einer Zeile mit passendem Label; `token_on_page` = Wert steht auf derselben Seite (Label nicht in derselben Zeile erkennbar); `not_found` = Abweichung, manuell prüfen. Spalte „Referenz“: Abgleich mit IR-Webseite des Emittenten.
 
