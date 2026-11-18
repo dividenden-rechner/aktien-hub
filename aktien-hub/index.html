@@ -1382,7 +1382,7 @@ function story(S){
   /* Story: Dividendenrendite oben als Hauptzeile (eine Zeile), Dividende je Aktie klein und grau darunter */
   const rzLine=typeof KZs.rendite==="number"?`<div class="rz"><small>Dividendenrendite</small>${num(KZs.rendite,2)} %</div>`:"";
   const dvCard=only(bars("Dividende je Aktie",dn,divs,"var(--c-gold)",v=>num(v),"")).replace("<h3>Dividende je Aktie</h3>",rzLine+'<h3 class="dps">Dividende je Aktie</h3>');
-  const cards=[[kzCard?"":"full",dvCard],["",kzCard],["",only(combo(inc,cur))],["",only(margins(inc,190))],["",only(fcfChart(cf,cur))],["",only(epsChart(inc,cur,205))]].filter(c=>c[1]);
+  const cards=[[kzCard?"":"full",dvCard],["",kzCard],["",only(combo(inc,cur))],["",only(margins(inc,190)).replace(/<div class="kzl">(?:<div>[^<]*<\/div>)*<\/div>/,"").replace(/<p>Anteil vom Umsatz<\/p>/,"")],["",only(fcfChart(cf,cur))],["",only(epsChart(inc,cur,205))]].filter(c=>c[1]);
   ov.innerHTML=`<div class="ctl"><button id="cl">✕ Schließen</button></div><div class="hint">Tippen blendet die Buttons aus, dann Screenshot</div>
   <div class="story"><div class="top"></div><div class="sh">Aktuelle Meldung</div><div class="bd">
    <div class="tt">${img(sym)}<div><b>${esc(p.companyName||sym)}</b><span>${esc(sym)}${p.sector?" · "+esc(p.sector):""}</span></div></div>
