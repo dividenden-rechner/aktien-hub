@@ -282,7 +282,10 @@ function secLoad(){const v=Math.floor(Date.now()/864e5),j=u=>fetch(u+"?v="+v).th
       o.k=o.k||{};for(const k in bf.k){const have=new Set((o.k[k]||[]).map(([d])=>secJahr(d)));const add=bf.k[k].filter(([d])=>!have.has(secJahr(d)));if(add.length)o.k[k]=(o.k[k]||[]).concat(add).sort((x,y)=>x[0]<y[0]?-1:1)}}
     return s}))}
 let KZP=null;
-function kzLoad(){return KZP||(KZP=fetch("../data/kennzahlen.json?v="+Math.floor(Date.now()/36e5)).then(r=>r.ok?r.json():null).catch(()=>null))}
+function kzLoad(){const v=Math.floor(Date.now()/36e5),j=u=>fetch(u+"?v="+v).then(r=>r.ok?r.json():null).catch(()=>null);
+  /* Asien-Kennzahlen (Kurs Deutsche Börse + Geschäftsbericht) ergänzen nur fehlende Firmen */
+  return KZP||(KZP=Promise.all([j("../data/kennzahlen.json"),j("../data/asien/kennzahlen.json")]).then(([a,b])=>{
+    if(!a&&!b)return null;a=a||{werte:{}};if(b&&b.werte)for(const t in b.werte)if(!a.werte[t])a.werte[t]=b.werte[t];return a}))}
 /* Eigene Kennzahlen: Schlusskurs (Deutsche Börse, verzögert) + SEC-Jahreszahlen + EZB-Kurse; Tabelle im Stil des Steckbriefs */
 function kzTabelle(K){
   if(!K)return "";
@@ -343,7 +346,7 @@ function kzTabelle(K){
     g+=`<path d="${pth}" fill="none" stroke="#2563eb" stroke-width="2.5"/>`+V.map((v,i)=>v[1]?`<circle cx="${X(i)}" cy="${YN(v[1])}" r="3.5" fill="#2563eb"><title>${v[0]} NAV ${num(v[1],2)}</title></circle>`:"").join("");
     g+=`<text x="${l-6}" y="${t+10}" text-anchor="end" font-size="11" fill="#2563eb">${num(nmax,0)}</text><text x="${l-6}" y="${t+ih}" text-anchor="end" font-size="11" fill="#2563eb">${num(nmin,0)}</text><text x="${W-r+6}" y="${t+10}" font-size="11" fill="#5d6b78">${num(bmax,2)}</text></svg>`;
     chart=`<div class="fcard"><div class="fctl"><b>NAV, NII und Dividende je Quartal</b></div><div class="kleg"><span><i style="background:#2563eb"></i>NAV je Aktie (linke Achse)</span><span><i style="background:#15803d"></i>NII je Aktie</span><span><i style="background:#8cc63f"></i>Dividende je Aktie</span></div><div class="fscroll fit">${g}</div><p class="fnote">Liegen die dunkelgrünen Balken unter den lindgrünen, verdient die BDC ihre Dividende nicht vollständig. Ein fallender NAV kann auf Kreditausfälle hindeuten.</p></div>`}
-  return chart+`<div class="stk kz"><table style="margin-top:0"><tbody>${zeilen}</tbody></table><p class="sn">Kurs: Schluss des letzten Handelstags (${esc(K.boerse||"Xetra")}, ${new Date(K.datum).toLocaleDateString("de-DE")}), Deutsche Börse, 15 Minuten verzögert. Kennzahlen aus dem Jahresbericht ${esc(K.gj)} ${K.land?"(europäisches Einheitsformat ESEF)":"bei der US-Börsenaufsicht SEC"}, Kurs mit dem EZB-Referenzkurs umgerechnet. Keine Anlageberatung.</p></div>`;
+  return chart+`<div class="stk kz"><table style="margin-top:0"><tbody>${zeilen}</tbody></table><p class="sn">Kurs: Schluss des letzten Handelstags (${esc(K.boerse||"Xetra")}, ${new Date(K.datum).toLocaleDateString("de-DE")}), Deutsche Börse, 15 Minuten verzögert. Kennzahlen aus dem Jahresbericht ${esc(K.gj)} ${K.bericht?"(Geschäftsbericht, maschinell übernommen, ungeprüft)":K.land&&K.land!=="US"?"(europäisches Einheitsformat ESEF)":"bei der US-Börsenaufsicht SEC"}, Kurs mit dem EZB-Referenzkurs umgerechnet.${K.hinweis?" "+esc(K.hinweis)+".":""} Keine Anlageberatung.</p></div>`;
 }
 /* Herkunft der Jahreswerte für Beschriftungen */
 function quelleText(q,kurz){return q==="boerse.de"?"boerse.de (Jahresabschlüsse)":q==="ESEF"?(kurz?"ESEF-Jahresberichte":"ESEF-Jahresberichte (europäisches Einheitsformat)"):q&&/Geschäftsbericht/.test(q)?(kurz?"Geschäftsbericht":"Geschäftsberichte (PDF), maschinell übernommen, ungeprüft"):(kurz?"SEC":"Jahresberichte bei der SEC")}
