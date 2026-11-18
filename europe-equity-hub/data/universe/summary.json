@@ -1,6 +1,6 @@
 {
- "generated_at": "2026-11-18T15:14:56.849920+00:00",
- "lists_generated_at": "2026-11-18T15:04:11.097262+00:00",
+ "generated_at": "2026-11-18T20:11:47.844999+00:00",
+ "lists_generated_at": "2026-11-18T20:09:38.148392+00:00",
  "counting_method": {
   "listing": "ISIN+MIC row from an official list",
   "security": "distinct ISIN",
@@ -211,5 +211,10 @@
   }
  },
  "resolved_duplicate_groups": 214,
+ "supplementary_lists": {
+  "xetra_all_tradable": "fallback_previous_build",
+  "euronext_equities": "fresh",
+  "nasdaq_nordic_screener": "fresh"
+ },
  "verified": 0
 }

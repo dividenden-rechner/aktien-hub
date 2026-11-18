@@ -30,6 +30,13 @@
     "as_of": "2026-11-13",
     "adjustment": "unadjusted weekly closes (per source description)",
     "licence_note": "Alpha Vantage free tier; check terms before republication"
+   },
+   {
+    "symbol": "SBUX",
+    "source": "Alpha Vantage TIME_SERIES_WEEKLY (Wochenschlusskurse, ungeteilt)",
+    "as_of": "2026-11-18",
+    "adjustment": "unadjusted weekly closes (per source description)",
+    "licence_note": "Alpha Vantage free tier; check terms before republication"
    }
   ],
   "xetra_daily_repo": "aktien-hub data/kurse/xetra (recent daily snapshots from Deutsche Börse, not a 2010-2025 history)"
