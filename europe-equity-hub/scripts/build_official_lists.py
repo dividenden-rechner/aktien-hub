@@ -18,6 +18,7 @@ sys.path.insert(0, str(ROOT))
 from app.official_lists import FIRDS_FIELDS, FIRDS_URL, VENUES  # noqa: E402
 
 RAW = ROOT / 'data' / 'official_lists' / 'raw'
+REQUIRED = {'esma_firds', 'fca_firds', 'six_equity_issuers'}
 UA = 'Mozilla/5.0 (compatible; EuropeEquityHub/0.7; official-list research)'
 TERMS = {
     'esma_firds': 'ESMA public register data (MiFIR Art. 27); see https://www.esma.europa.eu/legal-notice',
@@ -140,11 +141,17 @@ def main():
     (ROOT / 'data' / 'official_lists' / 'sources.json').write_text(json.dumps(out, ensure_ascii=False, indent=1) + '\n', encoding='utf-8')
     ok = sum('error' not in m for m in meta)
     print(f'{ok}/{len(meta)} lists retrieved')
-    failed = [m['source'] for m in meta if 'error' in m]
-    if failed:
-        # Do not build or commit a silently incomplete universe.
-        print('FEHLGESCHLAGEN (nach 3 Versuchen):', ', '.join(failed))
+    failed = [m for m in meta if 'error' in m]
+    for m in failed:
+        print(f"FEHLGESCHLAGEN (nach 3 Versuchen): {m['source']} - {m['error']}")
+    # Primary sources (identity: ISIN, MIC, status, issuer) are mandatory; supplementary lists only add tickers
+    # and fall back to the previous build in build_universe.py.
+    required_failed = [m['source'] for m in failed if m['source'].split(':')[0] in REQUIRED]
+    if required_failed:
+        print('Pflichtquelle fehlt - Abbruch ohne Teilstand:', ', '.join(required_failed))
         sys.exit(1)
+    if failed:
+        print('Zusatzquelle(n) fehlen - Kuerzel werden aus dem letzten Stand übernommen.')
 
 
 if __name__ == '__main__':

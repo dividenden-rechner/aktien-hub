@@ -29,6 +29,26 @@ RAW = ROOT / 'data' / 'official_lists' / 'raw'
 OUT = ROOT / 'data' / 'universe'
 
 
+SUPPLEMENTARY_STATUS = {}
+
+
+def previous_tickers():
+    """Tickers/WKN from the last committed build, used only if a supplementary list could not be downloaded."""
+    out = {'xetra_all_tradable': {}, 'euronext_equities': {}, 'nasdaq_nordic_screener': {}}
+    p = OUT / 'listings.json'
+    if not p.exists():
+        return out
+    for l in json.loads(p.read_text(encoding='utf-8')):
+        src, t = l.get('ticker_source'), l.get('ticker')
+        if not t:
+            continue
+        if src == 'xetra_all_tradable':
+            out[src][l['isin']] = {'ticker': t, 'wkn': l.get('wkn')}
+        elif src in ('euronext_equities', 'nasdaq_nordic_screener'):
+            out[src][(l['isin'], l['mic'])] = {'ticker': t, 'sector': l.get('sector')}
+    return out
+
+
 def load_listings():
     meta = json.loads((ROOT / 'data' / 'official_lists' / 'sources.json').read_text(encoding='utf-8'))
     asof = datetime.fromisoformat(meta['generated_at'])
@@ -38,12 +58,23 @@ def load_listings():
     for f in sorted(RAW.glob('FULINS_E_*.zip')):
         listings += parse_fca_fulins(f, {'XLON', 'AIMX'}, asof)
     listings += parse_six((RAW / 'six.csv').read_bytes().decode('latin-1'), asof)
-    xetra = parse_xetra((RAW / 'xetra.csv').read_text(encoding='utf-8-sig'))
-    euronext = parse_euronext((RAW / 'euronext.csv').read_text(encoding='utf-8-sig'))
+    previous = previous_tickers()
+    status = {}
+    if (RAW / 'xetra.csv').exists():
+        xetra, status['xetra_all_tradable'] = parse_xetra((RAW / 'xetra.csv').read_text(encoding='utf-8-sig')), 'fresh'
+    else:
+        xetra, status['xetra_all_tradable'] = previous['xetra_all_tradable'], 'fallback_previous_build'
+    if (RAW / 'euronext.csv').exists():
+        euronext, status['euronext_equities'] = parse_euronext((RAW / 'euronext.csv').read_text(encoding='utf-8-sig')), 'fresh'
+    else:
+        euronext, status['euronext_equities'] = previous['euronext_equities'], 'fallback_previous_build'
     nordic = {}
     for f in RAW.glob('nasdaq_*_*.json'):
         nordic.update(parse_nasdaq_nordic(json.loads(f.read_text(encoding='utf-8')), f.stem.rsplit('_', 1)[1]))
+    status['nasdaq_nordic_screener'] = 'fresh' if nordic else 'fallback_previous_build'
+    nordic = nordic or previous['nasdaq_nordic_screener']
     listings = enrich(listings, xetra, euronext, nordic)
+    SUPPLEMENTARY_STATUS.update(status)
     # de-duplicate identical rows (same ISIN+MIC reported twice); keep the active / latest one
     best = {}
     for l in listings:
@@ -171,6 +202,7 @@ def main():
                'candidate_status_by_country': {c: dict(Counter(m['match_status'] for m in matched if m['country'] == c))
                                                for c in sorted({m['country'] for m in matched if m['country']})},
                'resolved_duplicate_groups': dups['resolved_duplicate_groups'],
+               'supplementary_lists': dict(SUPPLEMENTARY_STATUS),
                'verified': 0}
     (OUT / 'summary.json').write_text(json.dumps(summary, ensure_ascii=False, indent=1) + '\n', encoding='utf-8')
     print(json.dumps({k: summary[k] for k in ('listings', 'listings_active', 'securities', 'issuers', 'issuers_without_lei',
