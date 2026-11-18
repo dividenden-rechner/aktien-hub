@@ -130,7 +130,7 @@ JP_ZUSAMMENFASSUNG = {   # Feld -> (Muster, nicht konsolidiert?)
     "umsatz": ([r"^(Revenue|Revenues|NetSales|OperatingRevenue|TotalRevenue|GrossOperatingRevenue)\w*(IFRS|USGAAP|JMIS)SummaryOfBusinessResults$",
                 r"^(Revenue|Revenues|NetSales|OperatingRevenue\d*|TotalRevenue|GrossOperatingRevenue|NetSalesOfCompletedConstructionContracts)SummaryOfBusinessResults$",
                 "OrdinaryIncomeSummaryOfBusinessResults", r"^OperatingIncomeINS\w*SummaryOfBusinessResults$",
-                r"^(?!.*(Cost|PerShare|Ratio|Growth))\w*(Revenue|Sales)\w*SummaryOfBusinessResults$"], False),
+                r"^(?!.*(Cost|PerShare|Ratio|Growth|NumberOf|Employee|Staff|Worker))\w*(Revenue|Sales)\w*SummaryOfBusinessResults$"], False),
     "gewinn": ([r"^(ProfitLoss|NetIncomeLoss)AttributableToOwnersOfParent\w*SummaryOfBusinessResults$",
                 "NetIncomeLossSummaryOfBusinessResults", "ProfitLossSummaryOfBusinessResults"], False),
     "_eps_verw": ([r"^DilutedEarnings\w*PerShare\w*SummaryOfBusinessResults$"], False),
@@ -196,7 +196,7 @@ def jp_reihen(dok):
     # Übersicht ohne Umsatz (z. B. Toyota, Sony): Umsatzposten des Konzernabschlusses in fester Reihenfolge
     if "umsatz" not in r:
         for n in ("RevenueIFRS", "NetSalesIFRS", "OperatingRevenueIFRS", "SalesRevenuesIFRS", "TotalRevenuesIFRS", "TotalRevenueIFRS",
-                  "SalesAndFinancialServicesRevenueIFRS", "RevenuesUSGAAP", "NetSales", "OperatingRevenue1", "OrdinaryIncome", "OperatingIncomeINS"):
+                  "SalesAndFinancialServicesRevenueIFRS", "RevenuesUSGAAP", "NetSales", "Revenue", "OperatingRevenue1", "OperatingIncomeINS"):
             if werte(n, False):
                 r["umsatz"] = werte(n, False)
                 break
