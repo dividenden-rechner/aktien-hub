@@ -7,8 +7,8 @@ author_bio: "Das Redaktions-Team von Dividenden-Rechner.de schreibt über Divide
 category: Grundlagen
 slug: altersvorsorgedepot-erklaert
 draft: true
+logo_file: assets/logos/altersvorsorgedepot.mono.png
 ---
-
 !!! kurz "Kurz gesagt"
     **Was:** Ein staatlich gefördertes Anlagedepot für die private Altersvorsorge, das ab dem 1. Januar 2027 neue Verträge ermöglicht.
     **Förderung:** 50 Cent je Euro Eigenbeitrag bis 360 Euro, darüber 25 Cent je Euro bis 1.800 Euro. Das ergibt höchstens 540 Euro Zulage im Jahr, dazu bis zu 300 Euro Kinderzulage je Kind.
