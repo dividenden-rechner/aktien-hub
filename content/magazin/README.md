@@ -21,10 +21,12 @@ Datei anklicken, dann Stift-Symbol: Zeile `draft: true` löschen und speichern, 
 | 29.10.2026 22:42 | Amazon steigert Umsatz im dritten Quartal auf 201,9 Milliarden Dollar | [79738970_2026-10-29/7757_2242-amazon-q3-2026-zahlen.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/79738970_2026-10-29/7757_2242-amazon-q3-2026-zahlen.md) |
 | 29.10.2026 10:12 | Shell erzielt im dritten Quartal 10,8 Milliarden Dollar Gewinn | [79738970_2026-10-29/8987_1012-shell-q3-2026-ergebnisse.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/79738970_2026-10-29/8987_1012-shell-q3-2026-ergebnisse.md) |
 
-### Online (418)
+### Online (420)
 
 | Datum | Titel | Datei |
 |---|---|---|
+| 18.11.2026 12:58 | Pfizer sichert sich In-vivo-CAR-T-Programme von Starna: 330 Mio. $ vorab, bis zu 2,3 Mrd. $ Meilensteine | [79738883_2026-11-18/9230_1258-pfizer-starna-car-t-lizenz.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/79738883_2026-11-18/9230_1258-pfizer-starna-car-t-lizenz.md) |
+| 18.11.2026 12:55 | Merck: Thomas Glocer verlässt den Verwaltungsrat, Douglas Baker wird Lead Director | [79738883_2026-11-18/9220_1255-merck-glocer-verlaesst-verwaltungsrat.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/79738883_2026-11-18/9220_1255-merck-glocer-verlaesst-verwaltungsrat.md) |
 | 18.11.2026 08:00 | Imperial Brands 2026: Gewinn je Aktie plus 8,8 %, aber der Berichtsgewinn fällt | [79738883_2026-11-17/9110_0830-imperial-brands-jahreszahlen-2026.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/79738883_2026-11-17/9110_0830-imperial-brands-jahreszahlen-2026.md) |
 | 17.11.2026 23:52 | Viatris schließt Pacira-Übernahme ab und erwartet Umsatzbeitrag bis 100 Mio. USD | [79738882_2026-11-17/7647_2352-viartis-vollzieht-pacira-uebernahme.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/79738882_2026-11-17/7647_2352-viartis-vollzieht-pacira-uebernahme.md) |
 | 17.11.2026 23:52 | Nike peilt bis 2031 bereinigten Gewinn je Aktie von 3,00 bis 3,50 US-Dollar an | [79738882_2026-11-17/7647_2352-nike-investor-day-2031-finanzrahmen-dividenden.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/79738882_2026-11-17/7647_2352-nike-investor-day-2031-finanzrahmen-dividenden.md) |
