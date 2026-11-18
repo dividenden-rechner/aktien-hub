@@ -17,13 +17,13 @@ image_lizenz: Unsplash
 logo_file: assets/logos/unh.png
 ---
 !!! kurz "Kurz gesagt"
-    **Auslöser:** Ein Vorschlag der US-Gesundheitsbehörde CMS vom 16. November zu Prüfungen in Medicare und Medicaid.
+    **Auslöser:** Ein Regelungsvorschlag der US-Gesundheitsbehörde CMS zu Betrugsbekämpfung und Prüfungen in Medicare und Medicaid.
     **Kurs:** Minus 5,4 % am Dienstag, am Mittwoch zur Mittagszeit minus 8 % auf 356,89 $.
     **Einordnung:** Der Vorschlag ist nicht final. Am Dienstag gab es keine eigene Meldung des Unternehmens.
 
 ## Ein Vorschlag, der das Kerngeschäft trifft
 
-Am 16. November hat die Centers for Medicare & Medicaid Services einen Vorschlag zur „Program Integrity“ veröffentlicht. Gemeint sind Maßnahmen gegen Fehlabrechnungen in Medicare, Medicaid, dem Kinderkrankenversicherungsprogramm CHIP und den Krankenversicherungsmärkten. Für UnitedHealth ist vor allem ein Punkt wichtig: Der Vorschlag ändert die bestehenden Datenprüfungen beim Risikoausgleich in Medicare Advantage.
+Die Centers for Medicare & Medicaid Services haben einen Regelungsvorschlag mit dem Namen CRUSH vorgelegt (Comprehensive Regulations to Uncover Suspicious Healthcare). Er soll Betrug und Fehlabrechnungen in Medicare, Medicaid, dem Kinderkrankenversicherungsprogramm CHIP und den Krankenversicherungsmärkten bekämpfen. CMS rechnet mit Einsparungen von knapp 90 Mrd. $ über zehn Jahre. Die Kommentierungsfrist läuft bis zum 19. Januar 2027. Bis dahin ist der Vorschlag nicht final. Für UnitedHealth ist vor allem ein Punkt wichtig: Der Vorschlag ändert die bestehenden Datenprüfungen beim Risikoausgleich in Medicare Advantage.
 
 Medicare Advantage ist das private Versicherungsmodell innerhalb von Medicare. Die Versicherer bekommen dafür von der Behörde Zahlungen pro Versichertem, die sich nach dem Gesundheitszustand richten. Werden Diagnosen zu großzügig erfasst, fließen zu hohe Zahlungen. Strengere Prüfungen können deshalb dazu führen, dass Einnahmen zurückgefordert oder künftig niedriger ausfallen. Das Geschäft von UnitedHealth ist in diesem Bereich besonders groß.
 
@@ -35,7 +35,7 @@ Dass UnitedHealth stärker fällt als die Branche, hat zwei Gründe. Das Unterne
 
 ## Was für die Aktie spricht
 
-Der Vorschlag ist nicht final. CMS kann ihn noch ändern, und bisher nennt niemand eine konkrete Summe. Außerdem hat das Unternehmen im Oktober erklärt, dass 2026 der Tiefpunkt bei den Margen im Medicaid-Geschäft sein soll. Wer diesen Plan für realistisch hält, sieht in den aktuellen Kursen eine Überreaktion.
+Der Vorschlag ist nicht final. CMS kann ihn noch ändern. Die Behörde schätzt, dass die geänderten Risikoprüfungen im Schnitt rund 9 Mrd. $ an zu hohen Zahlungen pro Zahlungsjahr zurückholen könnten. Das ist eine Schätzung für die Branche insgesamt, kein bereits fälliger Betrag, und wie viel davon auf UnitedHealth entfällt, ist offen. Außerdem hat das Unternehmen im Oktober erklärt, dass 2026 der Tiefpunkt bei den Margen im Medicaid-Geschäft sein soll. Wer diesen Plan für realistisch hält, sieht in den aktuellen Kursen eine Überreaktion.
 
 ## Was dagegen spricht
 
