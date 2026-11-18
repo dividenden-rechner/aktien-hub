@@ -117,6 +117,7 @@ svg text{fill:var(--mut);font-size:11px;font-family:inherit}
 .story .old svg text{font-size:10px;fill:#14202b;font-family:inherit}
 .story .old svg .ax{fill:#6a7783}
 .story .sg{display:grid;grid-template-columns:1fr 1fr;gap:3cqw 4cqw;align-content:start}.story .bd .tt .logo{width:9cqw;height:9cqw}.story .bd .tt b{font-size:4.6cqw}.story .bd{gap:2cqw;justify-content:flex-start;padding-top:2cqw}.story .bd .pr b{font-size:7cqw}.story .bd .pr small{font-size:2.6cqw}.story .sg .full{grid-column:1/-1}.story .sg .card{border:0;border-top:.5cqw solid #14202b;border-radius:0;padding:1.6cqw 0 0;background:none;min-width:0}.story .sg h3{font-size:3cqw;margin:0 0 .4cqw}.story .sg .kern{font-size:4cqw;margin:0;line-height:1.2}.story .sg .kern small{font-size:2.6cqw;margin-left:1.2cqw;display:inline-block;white-space:nowrap}.story .sg .full svg{max-height:24cqw;width:auto;max-width:100%;margin:0 auto}.story .sg .card>p{display:none}.story .sg .card{display:flex;flex-direction:column}.story .sg .card>svg{margin-top:auto}.story .kzt table{width:100%;border-collapse:collapse;margin-top:.4cqw}.story .kzt td{font-size:3cqw;padding:.55cqw 0;border-bottom:.2cqw solid #dfe5ea}.story .kzt td+td{text-align:right;font-weight:700}.story .kzt tr:last-child td{border-bottom:0}.story .sg svg{height:auto}.story .sg .kleg{display:none}.story .sg .card p{font-size:2.8cqw}.story .sg svg text{font-size:10px}
+.story .sg .rz{white-space:nowrap;font-size:4.2cqw;font-weight:800;line-height:1.1;margin:0 0 .6cqw;color:#14202b}.story .sg .rz small{font-size:2.4cqw;font-weight:500;color:#8a96a1;margin-right:1cqw}.story .sg h3.dps{font-size:2.3cqw;font-weight:500;color:#8a96a1;margin:0 0 .3cqw}.story .sg .card:not(.full) svg{max-height:22cqw;width:auto;max-width:100%;margin:0 auto}
 .story .ch{display:flex;gap:2cqw;margin-top:1cqw}
 .story .ch span{flex:1;background:#eaf9f0;border-radius:2cqw;padding:.8cqw 1cqw;font-size:3cqw;text-align:center;color:#6a7783}
 .story .ch b{display:block;color:#14202b;font-size:3.8cqw}
@@ -1378,7 +1379,10 @@ function story(S){
   const KZs=S.KZ||{},kzr=[["KGV",KZs.kgv,0],["KBV",KZs.kbv,0],["PEG",KZs.peg,0],["Schulden/EK",KZs.schulden_ek,0],["Ausschüttung / FCF",KZs.fcf_ausschuettung,1]].filter(r=>typeof r[1]==="number"&&isFinite(r[1])&&!(r[0]==="KGV"&&r[1]<=0));
   const kzCard=kzr.length?`<div class="card kzt"><h3>Kennzahlen</h3><table>${kzr.map(r=>`<tr><td>${r[0]}</td><td>${num(r[1],r[2]?0:2).replace(/,00$/,"")}${r[2]?" %":""}</td></tr>`).join("")}</table></div>`:"";
   const kopfDiv=typeof KZs.rendite==="number"?`<div class="kzl">Dividendenrendite: ${num(KZs.rendite,2)} %</div>`:"";
-  const cards=[[kzCard?"":"full",only(bars("Dividende je Aktie",dn,divs,"var(--c-gold)",v=>num(v),kopfDiv))],["",kzCard],["",only(combo(inc,cur))],["",only(margins(inc,190))],["",only(fcfChart(cf,cur))],["",only(epsChart(inc,cur,205))]].filter(c=>c[1]);
+  /* Story: Dividendenrendite oben als Hauptzeile (eine Zeile), Dividende je Aktie klein und grau darunter */
+  const rzLine=typeof KZs.rendite==="number"?`<div class="rz"><small>Dividendenrendite</small>${num(KZs.rendite,2)} %</div>`:"";
+  const dvCard=only(bars("Dividende je Aktie",dn,divs,"var(--c-gold)",v=>num(v),"")).replace("<h3>Dividende je Aktie</h3>",rzLine+'<h3 class="dps">Dividende je Aktie</h3>');
+  const cards=[[kzCard?"":"full",dvCard],["",kzCard],["",only(combo(inc,cur))],["",only(margins(inc,190))],["",only(fcfChart(cf,cur))],["",only(epsChart(inc,cur,205))]].filter(c=>c[1]);
   ov.innerHTML=`<div class="ctl"><button id="cl">✕ Schließen</button></div><div class="hint">Tippen blendet die Buttons aus, dann Screenshot</div>
   <div class="story"><div class="top"></div><div class="sh">Aktuelle Meldung</div><div class="bd">
    <div class="tt">${img(sym)}<div><b>${esc(p.companyName||sym)}</b><span>${esc(sym)}${p.sector?" · "+esc(p.sector):""}</span></div></div>
