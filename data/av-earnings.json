@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-18 03:51 UTC",
+ "updated": "2026-11-18 14:31 UTC",
  "quelle": "Alpha Vantage",
  "items": [
   {
@@ -387,7 +387,8 @@
    "eps_n": 10,
    "rev_est": 80961610.0,
    "rev_n": 11,
-   "est_stand": "2026-11-18"
+   "est_stand": "2026-11-18",
+   "act_try": "2026-11-18"
   },
   {
    "sym": "CPA",
@@ -400,7 +401,8 @@
    "eps_n": 5,
    "rev_est": 1175973750.0,
    "rev_n": 8,
-   "est_stand": "2026-11-18"
+   "est_stand": "2026-11-18",
+   "act_try": "2026-11-18"
   },
   {
    "sym": "GLBE",
@@ -413,7 +415,8 @@
    "eps_n": 5,
    "rev_est": 312577490.0,
    "rev_n": 11,
-   "est_stand": "2026-11-18"
+   "est_stand": "2026-11-18",
+   "act_try": "2026-11-18"
   },
   {
    "sym": "LOW",
@@ -426,7 +429,8 @@
    "eps_n": 28,
    "rev_est": 22359573420.0,
    "rev_n": 27,
-   "est_stand": "2026-11-18"
+   "est_stand": "2026-11-18",
+   "act_try": "2026-11-18"
   },
   {
    "sym": "P",
@@ -439,7 +443,8 @@
    "eps_n": 19,
    "rev_est": 1331770670.0,
    "rev_n": 17,
-   "est_stand": "2026-11-18"
+   "est_stand": "2026-11-18",
+   "act_try": "2026-11-18"
   },
   {
    "sym": "PANW",
@@ -452,7 +457,8 @@
    "eps_n": 44,
    "rev_est": 3307502950.0,
    "rev_n": 45,
-   "est_stand": "2026-11-18"
+   "est_stand": "2026-11-18",
+   "act_try": "2026-11-18"
   },
   {
    "sym": "PONY",
@@ -465,7 +471,8 @@
    "eps_n": 2,
    "rev_est": 39119100.0,
    "rev_n": 2,
-   "est_stand": "2026-11-18"
+   "est_stand": "2026-11-18",
+   "act_try": "2026-11-18"
   },
   {
    "sym": "TECH",
@@ -475,7 +482,12 @@
    "name": "BIO-TECHNE CORPORATION",
    "fiscal": "2026-09-30",
    "cur": "USD",
-   "zeit": ""
+   "zeit": "",
+   "act_try": "2026-11-18",
+   "eps_act": 0.36,
+   "eps_act_basis": "GAAP laut AV",
+   "rep_date": "2026-11-03",
+   "rev_act": 299712000.0
   },
   {
    "sym": "TGT",
@@ -488,7 +500,8 @@
    "eps_n": 31,
    "rev_est": 26515057420.0,
    "rev_n": 29,
-   "est_stand": "2026-11-18"
+   "est_stand": "2026-11-18",
+   "act_try": "2026-11-18"
   },
   {
    "sym": "TJX",
@@ -501,7 +514,8 @@
    "eps_n": 18,
    "rev_est": 15854598440.0,
    "rev_n": 17,
-   "est_stand": "2026-11-18"
+   "est_stand": "2026-11-18",
+   "act_try": "2026-11-18"
   },
   {
    "sym": "WSM",
