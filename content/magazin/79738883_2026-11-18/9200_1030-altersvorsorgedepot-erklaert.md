@@ -5,6 +5,11 @@ date: 2026-11-18 10:30
 author: "Redaktions-Team Dividenden-Rechner.de"
 author_bio: "Das Redaktions-Team von Dividenden-Rechner.de schreibt über Dividendenaktien, Kennzahlen und Steuerthemen für Privatanleger. Die Rechner und Auswertungen auf der Seite entstehen im eigenen Haus."
 category: Grundlagen
+image: assets/magazin/altersvorsorgedepot-erklaert-aufmacher.jpg
+image_alt: "Familie mit einem Kind geht Hand in Hand ins flache Wasser eines Strandes"
+image_credit: "Foto: goodmood77 / Unsplash"
+image_source: "https://unsplash.com/de/@goodmood77"
+image_lizenz: Unsplash
 slug: altersvorsorgedepot-erklaert
 draft: true
 logo_file: assets/logos/altersvorsorgedepot.mono.png
