@@ -21,10 +21,11 @@ Datei anklicken, dann Stift-Symbol: Zeile `draft: true` löschen und speichern, 
 | 29.10.2026 22:42 | Amazon steigert Umsatz im dritten Quartal auf 201,9 Milliarden Dollar | [79738970_2026-10-29/7757_2242-amazon-q3-2026-zahlen.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/79738970_2026-10-29/7757_2242-amazon-q3-2026-zahlen.md) |
 | 29.10.2026 10:12 | Shell erzielt im dritten Quartal 10,8 Milliarden Dollar Gewinn | [79738970_2026-10-29/8987_1012-shell-q3-2026-ergebnisse.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/79738970_2026-10-29/8987_1012-shell-q3-2026-ergebnisse.md) |
 
-### Online (429)
+### Online (430)
 
 | Datum | Titel | Datei |
 |---|---|---|
+| 18.11.2026 21:40 | UnitedHealth: Prüfvorschlag der US-Behörde CMS lässt die Aktie um 8 % fallen | [79738883_2026-11-18/9260_2140-unitedhealth-cms-pruefvorschlag.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/79738883_2026-11-18/9260_2140-unitedhealth-cms-pruefvorschlag.md) |
 | 18.11.2026 14:53 | Lloyds Banking Group tilgt Anleihen im Volumen von 1,8 Mrd. US-Dollar vorzeitig | [79738881_2026-11-18/8546_1453-lloyds-banking-group-anleihetilgung-januar-2027.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/79738881_2026-11-18/8546_1453-lloyds-banking-group-anleihetilgung-januar-2027.md) |
 | 18.11.2026 14:53 | Legal & General: Non-Executive Director Nilufer Kheraj verlässt das Board | [79738881_2026-11-18/8546_1453-legal-and-general-board-wechsel-nilufer-kheraj.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/79738881_2026-11-18/8546_1453-legal-and-general-board-wechsel-nilufer-kheraj.md) |
 | 18.11.2026 14:51 | Lloyds Banking Group tilgt Anleihen im Volumen von 1,8 Mrd. US-Dollar vorzeitig | [79738881_2026-11-18/8548_1451-lloyds-banking-group-anleiherueckzahlung-januar-2027.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/79738881_2026-11-18/8548_1451-lloyds-banking-group-anleiherueckzahlung-januar-2027.md) |
