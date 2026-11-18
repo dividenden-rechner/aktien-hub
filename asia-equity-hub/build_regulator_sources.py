@@ -29,6 +29,21 @@ def _recount(entries, key):
     return counts
 
 
+def apply_korea(ident: dict, src_by_id: dict, res: dict) -> None:
+    """Merge DART results into identity/source records (v1.7.1: id read before the record is rebuilt)."""
+    for e in ident['entries']:
+        entry_id = e['id']
+        if entry_id not in res['identities']:
+            continue
+        keep = {k: e[k] for k in ('id', 'requested_name', 'market', 'exchange', 'human_review') if k in e}
+        e.clear()
+        e.update({**keep, **res['identities'][entry_id], 'human_review': 'pending'})
+        s = src_by_id[entry_id]
+        s['ticker'] = e.get('ticker')
+        s.update(res['sources'].get(entry_id, {'source_status': 'no_identity_no_source', 'documents_by_year': None}))
+        s.pop('note', None)
+
+
 if __name__ == '__main__':
     p = argparse.ArgumentParser()
     p.add_argument('--edinet-from', default='2017-01-01')
@@ -47,15 +62,7 @@ if __name__ == '__main__':
         if dart_key and not a.skip_korea:
             kr = [e for e in ident['entries'] if e['market'] == 'Südkorea']
             res = korea_sources(kr, dart_key, client, YEARS)
-            for e in ident['entries']:
-                if e['id'] in res['identities']:
-                    keep = {k: e[k] for k in ('id', 'requested_name', 'market', 'exchange', 'human_review')}
-                    e.clear()
-                    e.update({**keep, **res['identities'][e['id']], 'human_review': 'pending'})
-                    s = src_by_id[e['id']]
-                    s['ticker'] = e.get('ticker')
-                    s.update(res['sources'].get(e['id'], {'source_status': 'no_identity_no_source', 'documents_by_year': None}))
-                    s.pop('note', None)
+            apply_korea(ident, src_by_id, res)
             ident.setdefault('official_lists', {})['dart'] = {'url': 'https://opendart.fss.or.kr/api/corpCode.xml',
                                                               'publisher': 'Financial Supervisory Service Korea (OpenDART)',
                                                               'rows': res['corp_list_rows'], 'retrieved_at': now}
