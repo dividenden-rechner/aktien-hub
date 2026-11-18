@@ -3,7 +3,7 @@
 Amtliche Offenlegungssysteme, maschinell ausgelesen, ungeprüft (human_review: pending).
 
 - Firmen (bestätigt in der offiziellen Liste): 307, mit Jahreszahlen: **307**
-- in diesem Lauf: 541 Abrufe, 0 Fehler
+- in diesem Lauf: 468 Abrufe, 0 Fehler
 
 | Ticker | Name | Jahre | Umfang | Kurs in DE |
 |---|---|---|---|---|
@@ -31,7 +31,7 @@ Amtliche Offenlegungssysteme, maschinell ausgelesen, ungeprüft (human_review: p
 | 4751.T | CyberAgent,Inc. | 2016–2025 (10) | 23 Reihen | ja |
 | 7912.T | Dai Nippon Printing Co.,Ltd. | 2017–2026 (10) | 22 Reihen | ja |
 | 4202.T | Daicel Corporation | 2017–2026 (10) | 23 Reihen | nein |
-| 8750.T | Daiichi Life Group,Inc. | 2017–2026 (10) | 17 Reihen | ja |
+| 8750.T | Daiichi Life Group,Inc. | 2017–2026 (10) | 16 Reihen | ja |
 | 4568.T | DAIICHI SANKYO COMPANY,LIMITED | 2017–2026 (10) | 23 Reihen | ja |
 | 6367.T | DAIKIN INDUSTRIES,LTD. | 2017–2026 (10) | 22 Reihen | ja |
 | 1925.T | DAIWA HOUSE INDUSTRY CO.,LTD. | 2017–2026 (10) | 22 Reihen | nein |
@@ -61,7 +61,7 @@ Amtliche Offenlegungssysteme, maschinell ausgelesen, ungeprüft (human_review: p
 | 7004.T | Kanadevia Corporation | 2017–2026 (10) | 22 Reihen | ja |
 | 8377.T | Hokuhoku Financial Group, Inc. | 2017–2026 (10) | 15 Reihen | nein |
 | 7267.T | HONDA MOTOR CO.,LTD. | 2017–2026 (10) | 18 Reihen | ja |
-| 7741.T | HOYA CORPORATION | 2017–2026 (10) | 19 Reihen | ja |
+| 7741.T | HOYA CORPORATION | 2017–2026 (10) | 17 Reihen | ja |
 | 7013.T | IHI Corporation | 2020–2026 (7) | 22 Reihen | ja |
 | 1605.T | INPEX CORPORATION | 2017–2025 (8) | 23 Reihen | ja |
 | 3099.T | Isetan Mitsukoshi Holdings Ltd. | 2017–2026 (10) | 22 Reihen | ja |
@@ -102,7 +102,7 @@ Amtliche Offenlegungssysteme, maschinell ausgelesen, ungeprüft (human_review: p
 | 2413.T | M3,Inc. | 2017–2026 (10) | 20 Reihen | ja |
 | 6592.T | MABUCHI MOTOR CO.,LTD. | 2016–2025 (10) | 20 Reihen | nein |
 | 8002.T | Marubeni Corporation | 2017–2026 (10) | 20 Reihen | ja |
-| 8252.T | MARUI GROUP CO.,LTD. | 2017–2026 (10) | 22 Reihen | ja |
+| 8252.T | MARUI GROUP CO.,LTD. | 2017–2026 (10) | 21 Reihen | ja |
 | 7456.T | MATSUDA SANGYO Co.,Ltd. | 2017–2026 (10) | 22 Reihen | nein |
 | 7261.T | Mazda Motor Corporation | 2017–2026 (10) | 23 Reihen | ja |
 | 2269.T | Meiji Holdings Co.,Ltd. | 2017–2026 (10) | 22 Reihen | ja |
