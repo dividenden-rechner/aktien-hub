@@ -100,7 +100,7 @@ def edinet_auslesen(x):
             r'<([A-Za-z0-9_\-]+):([A-Za-z0-9_]+)\s([^>]*?)contextRef="([^"]+)"([^>]*)>([^<]*)</\1:\2>', x):
         if ctx not in ktx:
             continue
-        if not (lokal in POSTEN or POSTEN_RE.match(lokal) or (lokal.endswith("SummaryOfBusinessResults") and _relevant(lokal))):
+        if not (lokal in POSTEN or POSTEN_RE.match(lokal) or lokal.endswith("SummaryOfBusinessResults")):
             continue
         try:
             v = float(val.strip())
@@ -126,7 +126,8 @@ def _erst(w, muster):
 JP_ZUSAMMENFASSUNG = {   # Feld -> (Muster, nicht konsolidiert?)
     "umsatz": ([r"^(Revenue|Revenues|NetSales|OperatingRevenue|TotalRevenue|GrossOperatingRevenue)\w*(IFRS|USGAAP|JMIS)SummaryOfBusinessResults$",
                 r"^(Revenue|Revenues|NetSales|OperatingRevenue\d*|TotalRevenue|GrossOperatingRevenue|NetSalesOfCompletedConstructionContracts)SummaryOfBusinessResults$",
-                "OrdinaryIncomeSummaryOfBusinessResults", r"^OperatingIncomeINS\w*SummaryOfBusinessResults$"], False),
+                "OrdinaryIncomeSummaryOfBusinessResults", r"^OperatingIncomeINS\w*SummaryOfBusinessResults$",
+                r"^(?!.*(Cost|PerShare|Ratio|Growth))\w*(Revenue|Sales)\w*SummaryOfBusinessResults$"], False),
     "gewinn": ([r"^(ProfitLoss|NetIncomeLoss)AttributableToOwnersOfParent\w*SummaryOfBusinessResults$",
                 "NetIncomeLossSummaryOfBusinessResults", "ProfitLossSummaryOfBusinessResults"], False),
     "_eps_verw": ([r"^DilutedEarnings\w*PerShare\w*SummaryOfBusinessResults$"], False),
@@ -175,10 +176,20 @@ def jp_reihen(dok):
                 waehr[m.group(1)] = waehr.get(m.group(1), 0) + 1
         return out
 
+    # Konzern: Konzernwerte; nur Firmen ganz ohne Konzernabschluss bekommen Werte aus dem Einzelabschluss
+    konzern = any(not c.endswith("_NonConsolidatedMember") for n, v in w.items() if n.endswith("SummaryOfBusinessResults") for c in v)
     for feld, (muster, nk) in JP_ZUSAMMENFASSUNG.items():
-        n = _erst(w, muster)
-        if n:   # Firmen ohne Konzern melden nur den Einzelabschluss (und umgekehrt): dann den anderen Kontext nehmen
-            r[feld] = werte(n, nk) or werte(n, not nk)
+        nk_hier = nk or not konzern
+        for m in muster:
+            namen = [n for n in sorted(w) if re.match(m, n)] if m.startswith("^") else ([m] if m in w else [])
+            treffer = next((werte(n, nk_hier) for n in namen if werte(n, nk_hier)), None)
+            if treffer:
+                r[feld] = treffer
+                break
+        if feld == "dividende_je_aktie" and feld not in r:   # selten im Konzernkontext gemeldet
+            n = _erst(w, muster)
+            if n and werte(n, False):
+                r[feld] = werte(n, False)
     for feld, muster in JP_POSTEN.items():
         n = _erst(w, muster)
         if n:
@@ -389,7 +400,10 @@ def main():
         return docs[:1] + docs[5:6] if len(docs) > 5 else docs[:1] + docs[-1:]
 
     # Phase 1, solange einer Firma noch die beiden Kernberichte fehlen: nur diese laden; danach die uebrigen Jahre
-    phase1 = any(d["doc_id"] not in ((lade(os.path.join(ROH, f"{e['ticker']}.json")) or {}).get("dok") or {})
+    def _dok(t):
+        r = lade(os.path.join(ROH, f"{t}.json")) or {}
+        return r.get("dok") or {} if r.get("v") == 2 else {}
+    phase1 = any(d["doc_id"] not in _dok(e["ticker"])
                  for e in firmen if e["market"] == "Japan" for d in kern(jp_docs(e)))
     if not a.nur_bauen:
         bearbeitet = 0
@@ -397,15 +411,16 @@ def main():
             if time.time() - start > a.max_minuten * 60 or (a.limit and bearbeitet >= a.limit):
                 break
             t = e["ticker"]
-            if status.get(t, [""])[0] == heute:
-                continue
             p = os.path.join(ROH, f"{t}.json")
             roh = lade(p)
+            if status.get(t, [""])[0] == heute and (e["market"] != "Japan" or (roh or {}).get("v") == 2):
+                continue
             try:
                 if e["market"] == "Japan":
                     if not EDINET_KEY:
                         continue
-                    roh = roh or {"dok": {}}
+                    if not roh or roh.get("v") != 2:   # v2: alle Übersichtselemente gespeichert
+                        roh = {"v": 2, "dok": {}}
                     docs = kern(jp_docs(e)) if phase1 else jp_docs(e)
                     neu = 0
                     for d in docs:
