@@ -1749,6 +1749,16 @@
    "revenue": null,
    "waehrung": "USD",
    "quelle": "https://www.sec.gov/Archives/edgar/data/1744489/000174448926000065/fy2026_q4xerxex991.htm"
+  },
+  {
+   "sym": "TGT",
+   "name": "Target Corporation",
+   "datum": "2026-11-18",
+   "eps": 2.65,
+   "eps_basis": "bereinigt",
+   "revenue": null,
+   "waehrung": "USD",
+   "quelle": "https://www.sec.gov/Archives/edgar/data/27419/000002741926000051/a2026q3ex-99.htm"
   }
  ]
 }

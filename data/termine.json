@@ -1,87 +1,6 @@
 {
  "termine": [
   {
-   "sym": "ADM",
-   "name": "Archer Daniels Midland",
-   "art": "ergebnis",
-   "datum": "2026-11-03",
-   "betrag": "",
-   "waehrung": "",
-   "quelle": "https://www.sec.gov/Archives/edgar/data/7084/000000708426000054/adm-ex991_20260930xq3.htm"
-  },
-  {
-   "sym": "AME",
-   "name": "Ametek",
-   "art": "ergebnis",
-   "datum": "2026-11-03",
-   "betrag": "",
-   "waehrung": "",
-   "quelle": "https://www.sec.gov/Archives/edgar/data/1037868/000103786826000194/ametek8kexhibit99111032026.htm"
-  },
-  {
-   "sym": "ANET",
-   "name": "Arista Networks",
-   "art": "ergebnis",
-   "datum": "2026-11-03",
-   "betrag": "",
-   "waehrung": "",
-   "quelle": "https://www.sec.gov/Archives/edgar/data/1596532/000159653226000252/ex991q326-earningsrelease.htm"
-  },
-  {
-   "sym": "BR",
-   "name": "Broadridge Financial Solutions",
-   "art": "ergebnis",
-   "datum": "2026-11-03",
-   "betrag": "",
-   "waehrung": "",
-   "quelle": "https://www.sec.gov/Archives/edgar/data/1383312/000138331226000030/ex991earningsrelease1q2027.htm"
-  },
-  {
-   "sym": "IT",
-   "name": "Gartner",
-   "art": "ergebnis",
-   "datum": "2026-11-03",
-   "betrag": "",
-   "waehrung": "",
-   "quelle": "https://www.sec.gov/Archives/edgar/data/749251/000074925126000305/it-09302026xex991.htm"
-  },
-  {
-   "sym": "PNW",
-   "name": "Pinnacle West Capital",
-   "art": "ergebnis",
-   "datum": "2026-11-03",
-   "betrag": "",
-   "waehrung": "",
-   "quelle": "https://www.sec.gov/Archives/edgar/data/764622/000076462226000051/a8-kpnw093026exhibit991.htm"
-  },
-  {
-   "sym": "SMCI",
-   "name": "Supermicro",
-   "art": "ergebnis",
-   "datum": "2026-11-03",
-   "betrag": "",
-   "waehrung": "",
-   "quelle": "https://www.sec.gov/Archives/edgar/data/1375365/000137536526000026/exhibit991_20260930.htm"
-  },
-  {
-   "sym": "WAT",
-   "name": "Waters Corporation",
-   "art": "ergebnis",
-   "datum": "2026-11-03",
-   "betrag": "",
-   "waehrung": "",
-   "quelle": "https://www.sec.gov/Archives/edgar/data/1000697/000119312526444400/d22941dex991.htm"
-  },
-  {
-   "sym": "YUM",
-   "name": "Yum! Brands",
-   "art": "ergebnis",
-   "datum": "2026-11-03",
-   "betrag": "",
-   "waehrung": "",
-   "quelle": "https://www.sec.gov/Archives/edgar/data/1041061/000104106126000195/a8kex9919302026.htm"
-  },
-  {
    "sym": "9432.T",
    "name": "NTT",
    "art": "ergebnis",
@@ -892,6 +811,15 @@
    "quelle": "https://www.sec.gov/Archives/edgar/data/765880/000162828026068878/ex99109302026.htm"
   },
   {
+   "sym": "LSEG.L",
+   "name": "London Stock Exchange Group",
+   "art": "ergebnis",
+   "datum": "2026-11-25",
+   "betrag": "",
+   "waehrung": "",
+   "quelle": "https://data.fca.org.uk/artefacts/NSM/RNS/c28698bc-4934-4ee8-a96c-4e593ecbe1fc.html"
+  },
+  {
    "sym": "APO",
    "name": "Apollo Global Management",
    "art": "dividende_zahltag",
@@ -926,6 +854,15 @@
    "betrag": "",
    "waehrung": "",
    "quelle": "https://www.sec.gov/Archives/edgar/data/1001250/000100125026000057/fy2027q1exhibit991.htm"
+  },
+  {
+   "sym": "LSEG.L",
+   "name": "London Stock Exchange Group",
+   "art": "ergebnis",
+   "datum": "2026-11-30",
+   "betrag": "",
+   "waehrung": "",
+   "quelle": "https://data.fca.org.uk/artefacts/NSM/RNS/c28698bc-4934-4ee8-a96c-4e593ecbe1fc.html"
   },
   {
    "sym": "UDR",
@@ -991,6 +928,15 @@
    "quelle": "https://www.sec.gov/Archives/edgar/data/707549/000070754926000057/lrcx_exx991xsharexrepurcha.htm"
   },
   {
+   "sym": "OXY",
+   "name": "Occidental Petroleum",
+   "art": "ergebnis",
+   "datum": "2026-12-02",
+   "betrag": "",
+   "waehrung": "",
+   "quelle": "https://www.sec.gov/Archives/edgar/data/797468/000095015726001273/ex99-1.htm"
+  },
+  {
    "sym": "SMFG",
    "name": "Sumitomo Mitsui Financial Group, Inc.",
    "art": "dividende_zahltag",
@@ -998,6 +944,15 @@
    "betrag": "100",
    "waehrung": "JPY",
    "quelle": "https://www.sec.gov/Archives/edgar/data/1022837/000119312526459171/d388220d6k.htm"
+  },
+  {
+   "sym": "OXY",
+   "name": "Occidental Petroleum",
+   "art": "ergebnis",
+   "datum": "2026-12-03",
+   "betrag": "",
+   "waehrung": "",
+   "quelle": "https://www.sec.gov/Archives/edgar/data/797468/000095015726001273/ex99-1.htm"
   },
   {
    "sym": "REGN",
@@ -1025,6 +980,15 @@
    "betrag": "17.50",
    "waehrung": "JPY",
    "quelle": "https://www.sec.gov/Archives/edgar/data/313838/000110465926122935/tm2628525d4_6k.htm"
+  },
+  {
+   "sym": "AES",
+   "name": "AES Corporation",
+   "art": "dividende_zahltag",
+   "datum": "2026-12-07",
+   "betrag": "0.06369",
+   "waehrung": "USD",
+   "quelle": "https://www.sec.gov/Archives/edgar/data/874761/000114036126044617/ny20085743x2_ex99-1.htm"
   },
   {
    "sym": "GLEN.L",
@@ -1225,6 +1189,15 @@
    "quelle": "https://www.sec.gov/Archives/edgar/data/1748790/000174879026000029/exhibit991q12026transition.htm"
   },
   {
+   "sym": "OXY",
+   "name": "Occidental Petroleum",
+   "art": "ergebnis",
+   "datum": "2026-12-17",
+   "betrag": "",
+   "waehrung": "",
+   "quelle": "https://www.sec.gov/Archives/edgar/data/797468/000095015726001273/ex99-1.htm"
+  },
+  {
    "sym": "RMD",
    "name": "ResMed",
    "art": "dividende_zahltag",
@@ -1358,6 +1331,24 @@
    "betrag": "",
    "waehrung": "",
    "quelle": "https://www.sec.gov/Archives/edgar/data/1060391/000106039126000326/exhibit991q32026.htm"
+  },
+  {
+   "sym": "LLOY.L",
+   "name": "Lloyds Banking Group",
+   "art": "ergebnis",
+   "datum": "2027-01-05",
+   "betrag": "",
+   "waehrung": "",
+   "quelle": "https://data.fca.org.uk/artefacts/NSM/RNS/d743a985-0edb-4810-9835-224b658575fb.html"
+  },
+  {
+   "sym": "LYG",
+   "name": "Lloyds Banking Group plc",
+   "art": "ergebnis",
+   "datum": "2027-01-05",
+   "betrag": "",
+   "waehrung": "",
+   "quelle": "https://www.sec.gov/Archives/edgar/data/1160106/000095010326017727/dp257109_ex9901.htm"
   },
   {
    "sym": "REG",
