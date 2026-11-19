@@ -517,7 +517,37 @@
 },
 "HTGC": {
 "name": "Hercules Capital, Inc.",
-"quartale": [],
+"quartale": [
+{
+"periode_ende": "2025-12-31",
+"nav_je_aktie": 12.13,
+"nii_je_aktie": 0.48,
+"beleg_nav": "net asset value (“NAV”) per share of our common stock as of December 31, 2025 is in the range of $12.10 to $12.16",
+"dividende_quartal": "0",
+"dividende_regulaer": 0,
+"dividende_zusatz": 0,
+"nii_bereinigt_je_aktie": 0,
+"non_accrual_fv_proz": 0.5,
+"portfolio_mio": 0,
+"verschuldung_netto": 0,
+"meldung": "2026-02-03",
+"quelle": "https://www.sec.gov/Archives/edgar/data/1280784/000119312526034539/d31638d8k.htm"
+},
+{
+"periode_ende": "2026-06-30",
+"nav_je_aktie": 12.15,
+"nii_je_aktie": 0.5,
+"beleg_nav": "preliminary estimate of our net asset value (“NAV”) per share of our common stock as of June 30, 2026 is in the range of $12.10 to $12.20",
+"dividende_regulaer": 0,
+"dividende_zusatz": 0,
+"nii_bereinigt_je_aktie": 0,
+"non_accrual_fv_proz": 0,
+"portfolio_mio": 4550,
+"verschuldung_netto": 0,
+"meldung": "2026-07-21",
+"quelle": "https://www.sec.gov/Archives/edgar/data/1280784/000128078426000032/htgc-20260721.htm"
+}
+],
 "aktien": 189548796,
 "aktien_stand": "2026-10-22"
 },
@@ -4594,9 +4624,9 @@
 "stand": "2026-11-19",
 "hinweis": "Quartalszahlen der BDCs aus ihren Ergebnis-Pressemitteilungen (SEC 8-K, EX-99), automatisch ausgelesen.",
 "letzter_lauf": {
-"zeit": "2026-11-19 08:26",
+"zeit": "2026-11-19 08:36",
 "offen": 8,
-"ki_aufrufe": 0,
+"ki_aufrufe": 2,
 "ohne_sec": [
 "SSSS",
 "MRCC"
