@@ -37,6 +37,7 @@ jobs:
           SEC_AUSGABE: americas-equity-hub/data/fundamentals/canada_sec.json
           SEC_ABDECKUNG: americas-equity-hub/docs/SEC_ABDECKUNG_KANADA.md
           SEC_JAHRE: "16"
+          SEC_FORMEN_EXTRA: "6-K"   # z. B. CN Rail meldet Jahreszahlen nur per 6-K; 40-F hat Vorrang
         run: python3 tools/sec_fundamentals.py
       - name: Hub-Dateien und Abdeckung
         run: |

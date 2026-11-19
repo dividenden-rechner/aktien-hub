@@ -84,7 +84,8 @@ K_IFRS = {
                  "BasicAndDilutedEarningsPerShare"],
     "dividende_je_aktie": [],
     "dividenden_gezahlt": ["DividendsPaidToEquityHoldersOfParentClassifiedAsFinancingActivities",
-                           "DividendsPaidClassifiedAsFinancingActivities", "DividendsPaid"],
+                           "DividendsPaidClassifiedAsFinancingActivities", "DividendsPaid",
+                           "DividendsPaidOrdinaryShares"],   # nur fuer fehlende Jahre (z. B. RBC ab 2023)
     "operativer_cf": ["CashFlowsFromUsedInOperatingActivities"],
     "capex": ["PurchaseOfPropertyPlantAndEquipmentClassifiedAsInvestingActivities",
               "PurchaseOfPropertyPlantAndEquipmentIntangibleAssetsOtherThanGoodwillInvestmentPropertyAndOtherNoncurrentAssets"],
@@ -108,6 +109,9 @@ K_IFRS = {
     "schulden_kurz": ["CurrentBorrowings", "CurrentPortionOfNoncurrentBorrowings", "ShorttermBorrowings"],
 }
 FORMEN = ("10-K", "20-F", "40-F")
+# Zusaetzliche Formulare nur auf Wunsch (Kanada: einige Emittenten wie CN Rail melden Jahreszahlen nur per 6-K);
+# Werte aus Jahresberichten (10-K/20-F/40-F) haben fuer dasselbe Jahr immer Vorrang.
+FORMEN_EXTRA = tuple(f for f in (os.environ.get("SEC_FORMEN_EXTRA") or "").split(",") if f)
 KERN = ["umsatz", "gewinn", "eps_verw", "dividende_je_aktie", "operativer_cf"]
 
 
@@ -144,15 +148,20 @@ def einheit_waehlen(units, einheit, waehrung):
 def werte_eines_namens(gaap, tag, art, einheit, waehrung=None):
     cand = {}
     for x in einheit_waehlen((gaap.get(tag) or {}).get("units", {}), einheit, waehrung):
-        if not str(x.get("form", "")).startswith(FORMEN):
+        form = str(x.get("form", ""))
+        if not form.startswith(FORMEN + FORMEN_EXTRA):
             continue
         if art == "f":
             d = dauer(x)
             if d is None or not (350 <= d <= 380):
                 continue
         end = x["end"]
-        if end not in cand or x.get("filed", "") > cand[end][2]:
-            cand[end] = (x["val"], tag, x.get("filed", ""))
+        prio, filed = (0 if form.startswith(FORMEN) else 1), x.get("filed", "")
+        if end in cand:   # Jahresbericht vor Zusatzformular; bei gleichem Rang die neueste Einreichung
+            alt_prio, alt_filed = cand[end][3]
+            if prio > alt_prio or (prio == alt_prio and filed <= alt_filed):
+                continue
+        cand[end] = (x["val"], tag, filed, (prio, filed))
     return {e: v[:2] for e, v in cand.items()}
 
 
