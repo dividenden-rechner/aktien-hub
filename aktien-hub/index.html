@@ -690,6 +690,34 @@ function alignCharts(){
     hs.forEach(h=>h.style.minHeight="");
     const max=Math.max(0,...hs.map(h=>h.offsetHeight));
     hs.forEach(h=>h.style.minHeight=max+"px");
+    /* Beschriftungen gleich groß: Schrift je Diagramm gegen dessen Skalierung rechnen */
+    cs.forEach(c=>{
+      const s=c.querySelector("svg"),vw=s.viewBox&&s.viewBox.baseVal&&s.viewBox.baseVal.width;
+      if(!vw)return;
+      const scale=s.getBoundingClientRect().width/vw;
+      s.querySelectorAll("text").forEach(t=>{
+        if(t.dataset.fs==null)t.dataset.fs=parseFloat(getComputedStyle(t).fontSize)||11;
+        t.style.fontSize=(t.dataset.fs/scale)+"px";
+      });
+    });
+    /* Jahresbeschriftung unten: gleicher Abstand zur Unterkante wie das knappste Diagramm der Reihe */
+    const info=cs.map(c=>{
+      const s=c.querySelector("svg"),sr=s.getBoundingClientRect(),vw=s.viewBox.baseVal.width,scale=sr.width/vw;
+      const ts=[...s.querySelectorAll("text")].filter(t=>t.hasAttribute("y"));
+      if(!ts.length)return null;
+      const bots=ts.map(t=>t.getBoundingClientRect().bottom),low=Math.max(...bots);
+      const low_=ts.filter((t,i)=>bots[i]>=low-0.5);
+      return {s,scale,ts,lowT:low_,off:sr.bottom-low};
+    }).filter(Boolean);
+    if(info.length>1){
+      info.forEach(i=>{i.ts.forEach(t=>{if(t.dataset.y0==null)t.dataset.y0=t.getAttribute("y")})});
+      info.forEach(i=>{i.ts.forEach(t=>t.setAttribute("y",t.dataset.y0))});
+      const target=Math.min(...info.map(i=>i.off));
+      info.forEach(i=>{
+        const shift=(i.off-target)/i.scale;
+        i.ts.forEach(t=>{const y=parseFloat(t.dataset.y0);if(y>0.85*parseFloat(i.s.viewBox.baseVal.height))t.setAttribute("y",y+shift)});
+      });
+    }
   });
 }
 let alignT;addEventListener("resize",()=>{clearTimeout(alignT);alignT=setTimeout(alignCharts,150)});
