@@ -4,6 +4,8 @@ name: Europa - Aktienuniversum und Historie (offizielle Listen)
 # gleicht die Kandidaten ab und erzeugt die ESEF-Historie. Nichts wird als "verified" markiert.
 
 on:
+  schedule:
+    - cron: "11 4 * * 6"   # wöchentlich: neue und beendete Notierungen aus den offiziellen Listen
   workflow_dispatch:
 
 permissions:

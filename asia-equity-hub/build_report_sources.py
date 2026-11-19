@@ -8,6 +8,7 @@ SG  : SGXNet has no stable free search API - manual source required
 Candidates are unverified documents (no download, no hash). Writes reports/sources/annual_report_sources.json.
 """
 import argparse
+from datetime import date as _date
 import json
 import time
 from datetime import datetime, timezone
@@ -18,7 +19,8 @@ from app.asia_discovery import discover_cninfo_years
 from app.hkex import discover_hkex_years
 from app.reports import ROOT
 
-YEARS = list(range(2016, 2026))
+# die letzten 10 abgeschlossenen Geschaeftsjahre (2026: 2016-2025, 2027: 2017-2026 ...)
+YEARS = list(range(_date.today().year - 10, _date.today().year))
 UA = 'Mozilla/5.0 (compatible; AsiaEquityHub/1.6; annual-report research)'
 PORTALS = {
     'Hongkong': 'https://www.hkexnews.hk/', 'China': 'https://www.cninfo.com.cn/',

@@ -7,6 +7,7 @@ Usage: python build_regulator_sources.py [--edinet-from 2017-01-01] [--edinet-to
 Without keys the corresponding market is skipped and the files stay unchanged for it.
 """
 import argparse
+from datetime import date as _date
 import datetime as dt
 import json
 import os
@@ -17,7 +18,8 @@ import httpx
 from app.regulator_sources import japan_sources, korea_sources
 from app.reports import ROOT
 
-YEARS = list(range(2016, 2026))
+# die letzten 10 abgeschlossenen Geschaeftsjahre (2026: 2016-2025, 2027: 2017-2026 ...)
+YEARS = list(range(_date.today().year - 10, _date.today().year))
 UA = 'Mozilla/5.0 (compatible; AsiaEquityHub/1.7; regulator filings research)'
 
 
@@ -46,7 +48,7 @@ def apply_korea(ident: dict, src_by_id: dict, res: dict) -> None:
 
 if __name__ == '__main__':
     p = argparse.ArgumentParser()
-    p.add_argument('--edinet-from', default='2017-01-01')
+    p.add_argument('--edinet-from', default=f'{_date.today().year - 9}-01-01')
     p.add_argument('--edinet-to', default=dt.date.today().isoformat())
     p.add_argument('--skip-japan', action='store_true')
     p.add_argument('--skip-korea', action='store_true')
