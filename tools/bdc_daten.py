@@ -59,6 +59,16 @@ def aktien_sec(cik):
         return None, None
 
 
+NAV_RE = r"net asset value|\bNAV\b"
+
+
+def haupt_text(c):
+    """Hauptdokument der 8-K: Bei manchen BDCs steht die Quartalsmeldung im Hauptdokument, nicht in EX-99."""
+    nodash = c["acc"].replace("-", "")
+    url = f"https://www.sec.gov/Archives/edgar/data/{c['cik']}/{nodash}/{c['primary']}"
+    return ia.html_to_text(ia.http(url, ua=km.UA_HDR)), url
+
+
 def main():
     seed = [r["sec_ticker"].upper() for r in csv.DictReader(open("data/bdc-seed.csv"))]
     tick = json.loads(ia.http("https://www.sec.gov/files/company_tickers.json", ua=km.UA_HDR))
@@ -81,14 +91,12 @@ def main():
         if a_:
             daten["firmen"][t]["aktien"], daten["firmen"][t]["aktien_stand"] = a_, a_end
         for j, form in enumerate(rec.get("form", [])[:120]):
-            if t == "HTGC" and form == "8-K": print("DEBUG8K", rec["accessionNumber"][j], rec["items"][j] if rec.get("items") else "", rec["acceptanceDateTime"][j][:10] if rec.get("acceptanceDateTime") else "")
             if form != "8-K" or "2.02" not in (rec.get("items", [""] * 999)[j] or ""):
                 continue
             dt = km._parse_dt(rec["acceptanceDateTime"][j]) if rec.get("acceptanceDateTime") else None
             if dt and dt < grenze:
                 break
             acc = rec["accessionNumber"][j]
-            if t == "HTGC": print("DEBUG HTGC", acc, dt.isoformat() if dt else "", state["erledigt"].get(acc, "NEU"), rec.get("primaryDocument", [""]*999)[j])
             if acc not in state["erledigt"]:
                 kand.append({"sym": t, "name": v["title"], "cik": int(v["cik_str"]), "acc": acc, "when": dt.isoformat() if dt else "",
                              "primary": (rec.get("primaryDocument") or [""] * 999)[j], "fpi": False})
@@ -112,13 +120,19 @@ def main():
                     raise
         except Exception as e:
             fehler.append(f"{c['sym']}: {str(e)[:80]}"); continue
+        if (not r or not re.search(NAV_RE, r[0], re.I)) and c.get("primary"):
+            try:
+                t2 = haupt_text(c)
+                if re.search(NAV_RE, t2[0], re.I):
+                    r = t2
+            except Exception:
+                pass
         if not r:
             print(c["sym"], c["acc"], "ohne Anlage"); state["erledigt"][c["acc"]] = "ohne Anlage"; continue
         text, url = r
-        if c["sym"] == "HTGC": print("DEBUG TEXT", c["acc"], len(text), url, repr(text[:160]))
-        if not re.search(r"net asset value|\bNAV\b", text, re.I):
+        if not re.search(NAV_RE, text, re.I):
             state["erledigt"][c["acc"]] = "kein NAV"; continue
-        i = re.search(r"net asset value|\bNAV\b", text, re.I).start()
+        i = re.search(NAV_RE, text, re.I).start()
         teil = text[max(0, i - 3000): i + 9000]
         ki += 1
         try:
