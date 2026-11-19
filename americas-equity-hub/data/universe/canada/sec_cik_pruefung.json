@@ -1,25 +1,5 @@
 [
  {
-  "hub_kuerzel": "TD.TO",
-  "name": "TORONTO DOMINION",
-  "kandidaten": []
- },
- {
-  "hub_kuerzel": "BMO.TO",
-  "name": "BANK OF MONTREAL",
-  "kandidaten": []
- },
- {
-  "hub_kuerzel": "CM.TO",
-  "name": "CANADIAN IMPERIAL BANK OF COMMERCE",
-  "kandidaten": []
- },
- {
-  "hub_kuerzel": "CP.TO",
-  "name": "CANADIAN PACIFIC KANSAS CITY",
-  "kandidaten": []
- },
- {
   "hub_kuerzel": "NA.TO",
   "name": "NATIONAL BANK OF CANADA",
   "kandidaten": []
@@ -32,11 +12,6 @@
  {
   "hub_kuerzel": "ATD.TO",
   "name": "ALIMENTATION COUCHE TARD INC",
-  "kandidaten": []
- },
- {
-  "hub_kuerzel": "DOL.TO",
-  "name": "DOLLARAMA",
   "kandidaten": []
  },
  {
@@ -70,16 +45,6 @@
   "kandidaten": []
  },
  {
-  "hub_kuerzel": "TOU.TO",
-  "name": "TOURMALINE OIL CORP",
-  "kandidaten": []
- },
- {
-  "hub_kuerzel": "MRU.TO",
-  "name": "METRO",
-  "kandidaten": []
- },
- {
   "hub_kuerzel": "GFL.TO",
   "name": "GFL ENVIRONMENTAL SUBORDINATE VOTI",
   "kandidaten": []
@@ -92,11 +57,6 @@
  {
   "hub_kuerzel": "IAG.TO",
   "name": "IA FINANCIAL INC",
-  "kandidaten": []
- },
- {
-  "hub_kuerzel": "TRI.TO",
-  "name": "THOMSON REUTERS CORP",
   "kandidaten": []
  },
  {
@@ -120,11 +80,6 @@
   "kandidaten": []
  },
  {
-  "hub_kuerzel": "TIH.TO",
-  "name": "TOROMONT INDUSTRIES LTD",
-  "kandidaten": []
- },
- {
   "hub_kuerzel": "KEY.TO",
   "name": "KEYERA",
   "kandidaten": []
@@ -135,38 +90,13 @@
   "kandidaten": []
  },
  {
-  "hub_kuerzel": "ATZ.TO",
-  "name": "ARITZIA SUBORDINATE VOTING",
-  "kandidaten": []
- },
- {
   "hub_kuerzel": "ATRL.TO",
   "name": "ATKINSREALIS GROUP INC",
   "kandidaten": []
  },
  {
-  "hub_kuerzel": "FTT.TO",
-  "name": "FINNING INTERNATIONAL INC",
-  "kandidaten": []
- },
- {
   "hub_kuerzel": "CTC-A.TO",
   "name": "CANADIAN TIRE LTD CLASS A",
-  "kandidaten": []
- },
- {
-  "hub_kuerzel": "ELD.TO",
-  "name": "ELDORADO GOLD",
-  "kandidaten": []
- },
- {
-  "hub_kuerzel": "SAP.TO",
-  "name": "SAPUTO",
-  "kandidaten": []
- },
- {
-  "hub_kuerzel": "CPX.TO",
-  "name": "CAPITAL POWER CORP",
   "kandidaten": []
  },
  {
@@ -187,16 +117,6 @@
  {
   "hub_kuerzel": "QBR-B.TO",
   "name": "QUEBECOR CLASS B",
-  "kandidaten": []
- },
- {
-  "hub_kuerzel": "PSK.TO",
-  "name": "PRAIRIESKY ROYALTY",
-  "kandidaten": []
- },
- {
-  "hub_kuerzel": "EFN.TO",
-  "name": "ELEMENT FLEET MANAGEMENT",
   "kandidaten": []
  },
  {
@@ -240,11 +160,6 @@
   "kandidaten": []
  },
  {
-  "hub_kuerzel": "NPI.TO",
-  "name": "NORTHLAND POWER INC",
-  "kandidaten": []
- },
- {
   "hub_kuerzel": "REI-UN.TO",
   "name": "RIOCAN REAL ESTATE INVESTMENT TRUS",
   "kandidaten": []
@@ -257,11 +172,6 @@
  {
   "hub_kuerzel": "DSV.TO",
   "name": "DISCOVERY MINING LTD",
-  "kandidaten": []
- },
- {
-  "hub_kuerzel": "CS.TO",
-  "name": "CAPSTONE COPPER CORP",
   "kandidaten": []
  },
  {
@@ -287,16 +197,6 @@
  {
   "hub_kuerzel": "GRT-UN.TO",
   "name": "GRANITE REAL ESTATE INVESTMENT STA",
-  "kandidaten": []
- },
- {
-  "hub_kuerzel": "GEI.TO",
-  "name": "GIBSON ENERGY",
-  "kandidaten": []
- },
- {
-  "hub_kuerzel": "TVE.TO",
-  "name": "TAMARACK VALLEY ENERGY LTD",
   "kandidaten": []
  },
  {
@@ -345,18 +245,8 @@
   "kandidaten": []
  },
  {
-  "hub_kuerzel": "TPZ.TO",
-  "name": "TOPAZ ENERGY",
-  "kandidaten": []
- },
- {
   "hub_kuerzel": "WDO.TO",
   "name": "WESDOME GOLD MINES LTD",
-  "kandidaten": []
- },
- {
-  "hub_kuerzel": "SJ.TO",
-  "name": "STELLA JONES",
   "kandidaten": []
  },
  {
@@ -377,11 +267,6 @@
  {
   "hub_kuerzel": "VNP.TO",
   "name": "5N PLUS",
-  "kandidaten": []
- },
- {
-  "hub_kuerzel": "NWC.TO",
-  "name": "NORTH WEST COMPANY INC",
   "kandidaten": []
  },
  {
@@ -432,11 +317,6 @@
  {
   "hub_kuerzel": "FRU.TO",
   "name": "FREEHOLD ROYALTIES",
-  "kandidaten": []
- },
- {
-  "hub_kuerzel": "SIA.TO",
-  "name": "SIENNA SENIOR LIVING INC",
   "kandidaten": []
  },
  {
@@ -492,16 +372,6 @@
  {
   "hub_kuerzel": "RCH.TO",
   "name": "RICHELIEU HARDWARE",
-  "kandidaten": []
- },
- {
-  "hub_kuerzel": "PXT.TO",
-  "name": "PAREX RESOURCES",
-  "kandidaten": []
- },
- {
-  "hub_kuerzel": "BIR.TO",
-  "name": "BIRCHCLIFF ENERGY",
   "kandidaten": []
  },
  {

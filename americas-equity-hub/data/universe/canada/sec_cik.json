@@ -3,9 +3,17 @@
   1000275,
   "ROYAL BANK OF CANADA"
  ],
+ "TD.TO": [
+  947263,
+  "TORONTO DOMINION BANK"
+ ],
  "SHOP.TO": [
   1594805,
   "SHOPIFY INC."
+ ],
+ "BMO.TO": [
+  927971,
+  "BANK OF MONTREAL /CAN/"
  ],
  "BNS.TO": [
   9631,
@@ -14,6 +22,10 @@
  "ENB.TO": [
   895728,
   "ENBRIDGE INC"
+ ],
+ "CM.TO": [
+  1045520,
+  "CANADIAN IMPERIAL BANK OF COMMERCE /CAN/"
  ],
  "CNQ.TO": [
   1017413,
@@ -26,6 +38,10 @@
  "AEM.TO": [
   2809,
   "AGNICO EAGLE MINES LTD"
+ ],
+ "CP.TO": [
+  16875,
+  "CANADIAN PACIFIC KANSAS CITY LTD/CN"
  ],
  "SU.TO": [
   311337,
@@ -58,6 +74,10 @@
  "FNV.TO": [
   1456346,
   "FRANCO NEVADA Corp"
+ ],
+ "DOL.TO": [
+  2073893,
+  "Dollarama Inc./ADR"
  ],
  "SLF.TO": [
   1097362,
@@ -123,6 +143,10 @@
   850918,
   "GREAT-WEST LIFECO INC."
  ],
+ "TOU.TO": [
+  2071881,
+  "Tourmaline Oil Corp/ADR"
+ ],
  "EMA.TO": [
   1127248,
   "EMERA INC"
@@ -139,6 +163,10 @@
   1061574,
   "CGI INC"
  ],
+ "MRU.TO": [
+  2073643,
+  "METRO INC./ADR"
+ ],
  "PAAS.TO": [
   771992,
   "PAN AMERICAN SILVER CORP"
@@ -151,6 +179,10 @@
   733099,
   "ROGERS COMMUNICATIONS INC"
  ],
+ "TRI.TO": [
+  1075124,
+  "THOMSON REUTERS CORP /CAN/"
+ ],
  "H.TO": [
   1712356,
   "Hydro One Ltd"
@@ -159,9 +191,17 @@
   1178819,
   "ALAMOS GOLD INC"
  ],
+ "TIH.TO": [
+  2072098,
+  "Toromont Industries Ltd./ADR"
+ ],
  "EQX.TO": [
   1756607,
   "Equinox Gold Corp."
+ ],
+ "ATZ.TO": [
+  2139627,
+  "Aritzia Inc./ADR"
  ],
  "STN.TO": [
   1131383,
@@ -183,9 +223,25 @@
   1050140,
   "DESCARTES SYSTEMS GROUP INC"
  ],
+ "FTT.TO": [
+  2073638,
+  "Finning International Inc./ADR"
+ ],
+ "ELD.TO": [
+  918608,
+  "ELDORADO GOLD CORP /FI"
+ ],
+ "SAP.TO": [
+  2072563,
+  "Saputo Inc./ADR"
+ ],
  "TFII.TO": [
   1588823,
   "TFI International Inc."
+ ],
+ "CPX.TO": [
+  2071911,
+  "Capital Power Corp/ADR"
  ],
  "BEP-UN.TO": [
   1533232,
@@ -219,6 +275,14 @@
   1002638,
   "OPEN TEXT CORP"
  ],
+ "PSK.TO": [
+  2071912,
+  "PrairieSky Royalty Ltd/ADR"
+ ],
+ "EFN.TO": [
+  2073615,
+  "Element Fleet Management Corp./ADR"
+ ],
  "OGC.TO": [
   1487326,
   "OceanaGold Corp"
@@ -243,17 +307,33 @@
   1857047,
   "MDA Space Ltd."
  ],
+ "NPI.TO": [
+  2072389,
+  "Northland Power Inc./ADR"
+ ],
  "TXR.TO": [
   1561540,
   "Torex Resources Inc."
+ ],
+ "CS.TO": [
+  2075918,
+  "Capstone Copper Corp./ADR"
  ],
  "AQN.TO": [
   1174169,
   "ALGONQUIN POWER & UTILITIES CORP."
  ],
+ "GEI.TO": [
+  2071913,
+  "Gibson Energy Inc/ADR"
+ ],
  "WFG.TO": [
   1402388,
   "WEST FRASER TIMBER CO., LTD"
+ ],
+ "TVE.TO": [
+  2073901,
+  "Tamarack Valley Energy Ltd./ADR"
  ],
  "CG.TO": [
   1854640,
@@ -275,6 +355,10 @@
   1964504,
   "Aris Mining Corp"
  ],
+ "TPZ.TO": [
+  2073655,
+  "Topaz Energy Corp./ADR"
+ ],
  "PBH.TO": [
   1503812,
   "PREMIUM BRANDS HOLDINGS Corp"
@@ -286,6 +370,10 @@
  "ARE.TO": [
   1309167,
   "Aecon Group Inc."
+ ],
+ "SJ.TO": [
+  2077242,
+  "Stella-Jones Inc./ADR"
  ],
  "ERO.TO": [
   1853860,
@@ -323,6 +411,10 @@
   1829726,
   "Triple Flag Precious Metals Corp."
  ],
+ "NWC.TO": [
+  2073913,
+  "North West Co Inc./ADR"
+ ],
  "SII.TO": [
   1512920,
   "SPROTT INC."
@@ -355,6 +447,10 @@
   2044153,
   "NGEx Minerals Ltd."
  ],
+ "SIA.TO": [
+  2073972,
+  "Sienna Senior Living Inc./ADR"
+ ],
  "VET.TO": [
   1293135,
   "VERMILION ENERGY INC."
@@ -374,6 +470,14 @@
  "PPTA.TO": [
   1526243,
   "PERPETUA RESOURCES CORP."
+ ],
+ "PXT.TO": [
+  2073620,
+  "Parex Resources Inc./ADR"
+ ],
+ "BIR.TO": [
+  2073268,
+  "Birchcliff Energy Ltd./ADR"
  ],
  "LSPD.TO": [
   1823306,
