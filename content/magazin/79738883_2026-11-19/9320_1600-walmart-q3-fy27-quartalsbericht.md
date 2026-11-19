@@ -14,8 +14,8 @@ logo_name: "Walmart Inc."
 logo_file: assets/logos/wmt.png
 image: assets/magazin/walmart-q3-fy27-aufmacher.jpg
 image_alt: "Straße mit Walmart-Schild über mehrspurigem Verkehr, im Vordergrund Motorräder und ein Pick-up"
-image_credit: "Foto: Daniel (Unsplash)"
-image_source: "https://unsplash.com/de/@unsplashbydan"
+image_credit: "Foto: Daniel (@unsplashbydan) / Unsplash"
+image_source: "https://unsplash.com/de/fotos/der-rege-strassenverkehr-fuhrt-an-einer-walmart-filiale-vorbei-fNV-AkJRPx0"
 image_lizenz: Unsplash
 ---
 !!! kurz "Kurz gesagt"
