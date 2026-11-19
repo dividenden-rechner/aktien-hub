@@ -34,6 +34,19 @@ css = """<style>
 .av-h{color:#8a6d1a;font-size:.78rem;margin-top:4px}
 .av-sum{margin:14px 0}.av-sum li{margin:4px 0}
 @media(max-width:900px){.av-scroll-hint{display:block}.av-table th:first-child{min-width:150px}}
+@media(max-width:700px){
+.av-scroll-hint{display:none!important}
+.av-tablewrap{overflow:visible;border:0;margin:6px 0 14px}
+.av-table{min-width:0;width:100%;font-size:.95rem;display:block;background:none}
+.av-table thead{display:none}
+.av-table tbody{display:block}
+.av-table tr.av-row{display:block;border:1px solid #d9e0e6;border-radius:10px;margin:0 0 14px;padding:4px 0;background:#fff;box-shadow:0 1px 2px rgba(0,0,0,.04)}
+.av-table th,.av-table td{display:block;width:100%;min-width:0!important;max-width:none!important;border:0!important;padding:8px 14px;height:auto!important;text-align:left!important;background:#fff!important;white-space:normal!important;position:static!important;box-shadow:none!important}
+.av-table th[scope=row]{background:#f7faf8!important;border-radius:10px 10px 0 0;padding:12px 14px;font-weight:600}
+.av-table td[data-label]::before{content:attr(data-label);display:block;font-size:.72rem;letter-spacing:.03em;text-transform:uppercase;color:#6b7782;margin-bottom:2px}
+.av-table td.num b{font-size:1.15rem;color:#065f46}
+.av-table td.av-q a{display:inline-block;margin:0 12px 6px 0;font-size:.9rem}
+}
 </style>
 """
 DOM = {"flatex / Degiro (Core)": "flatex.de", "Deka (Sparkassen)": "deka.de", "Scalable Capital": "scalable.capital", "ING": "ing.de", "Trade Republic": "traderepublic.com", "Smartbroker+": "smartbroker.de", "Traders Place": "traders-place.de", "Bitpanda": "bitpanda.com", "Deutsche Bank (DWS)": "deutsche-bank.de", "DWS (VorsorgeDepot)": "dws.com", "Union Investment": "union-investment.de", "quirion": "quirion.de", "comdirect": "comdirect.de", "Consorsbank": "consorsbank.de", "DKB": "dkb.de"}
@@ -51,10 +64,10 @@ for i, f in enumerate(D["firmen"]):
     rows.append(
         f'<tr class="av-row" data-i="{i}" data-n="{esc(f["name"])}" data-dau="{"" if f["kosten_dauer"] is None else f["kosten_dauer"]}" data-sta="{"" if f["kosten_start"] is None else f["kosten_start"]}">'
         f'<th scope="row"><div class="av-id">{logo(f["name"])}<span class="av-n">{esc(f["name"])}</span></div></th>'
-        f'<td class="num"><b>{fig(f["kosten_start"])}</b></td><td class="num"><b>{fig(f["kosten_dauer"])}</b></td>'
-        f'<td class="w">{esc(f["kosten"])}' + (f'<div class="av-h">{esc(f["hinweis"])}</div>' if f["hinweis"] else "") + '</td>'
-        f'<td class="w">{esc(f["depot"])}</td><td class="w">{esc(f["fonds"])}</td>'
-        f'<td>{esc(f["typ"])}</td><td>{esc(f["status"])}</td><td class="av-q">{q}</td></tr>')
+        f'<td class="num" data-label="Kosten zu Beginn"><b>{fig(f["kosten_start"])}</b></td><td class="num" data-label="Kosten langfristig"><b>{fig(f["kosten_dauer"])}</b></td>'
+        f'<td class="w" data-label="Kosten im Detail">{esc(f["kosten"])}' + (f'<div class="av-h">{esc(f["hinweis"])}</div>' if f["hinweis"] else "") + '</td>'
+        f'<td class="w" data-label="Depot und Orders">{esc(f["depot"])}</td><td class="w" data-label="Auswahl">{esc(f["fonds"])}</td>'
+        f'<td data-label="Typ">{esc(f["typ"])}</td><td data-label="Stand">{esc(f["status"])}</td><td class="av-q" data-label="Quellen">{q}</td></tr>')
 def dmy(s):
     return f"{s[8:10]}.{s[5:7]}.{s[:4]}"
 GEPR = (f" Zuletzt automatisch auf Änderungen geprüft am {dmy(D['geprueft'])}." if D.get("geprueft") else "")
