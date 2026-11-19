@@ -115,9 +115,10 @@ def main():
         if not r:
             print(c["sym"], c["acc"], "ohne Anlage"); state["erledigt"][c["acc"]] = "ohne Anlage"; continue
         text, url = r
-        if not re.search(r"net asset value", text, re.I):
+        if c["sym"] == "HTGC": print("DEBUG TEXT", c["acc"], len(text), url, repr(text[:160]))
+        if not re.search(r"net asset value|\bNAV\b", text, re.I):
             state["erledigt"][c["acc"]] = "kein NAV"; continue
-        i = re.search(r"net asset value", text, re.I).start()
+        i = re.search(r"net asset value|\bNAV\b", text, re.I).start()
         teil = text[max(0, i - 3000): i + 9000]
         ki += 1
         try:
