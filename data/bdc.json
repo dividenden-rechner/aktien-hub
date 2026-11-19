@@ -512,8 +512,8 @@
 "GBDC": {
 "name": "GOLUB CAPITAL BDC, Inc.",
 "quartale": [],
-"aktien": 259651589,
-"aktien_stand": "2026-08-03"
+"aktien": 258412389,
+"aktien_stand": "2026-11-17"
 },
 "HTGC": {
 "name": "Hercules Capital, Inc.",
@@ -929,10 +929,25 @@
 "verschuldung_netto": 1.02,
 "meldung": "2026-08-05",
 "quelle": "https://www.sec.gov/Archives/edgar/data/1414932/000119312526333737/d158058dex991.htm"
+},
+{
+"periode_ende": "2026-09-30",
+"nav_je_aktie": 15.63,
+"nii_je_aktie": 0.34,
+"beleg_nav": "Net asset value (“NAV”) per share was $15.63 as of September 30, 2026",
+"dividende_quartal": "Q1 2027",
+"dividende_regulaer": 0.3,
+"dividende_zusatz": 0.02,
+"nii_bereinigt_je_aktie": 0.34,
+"non_accrual_fv_proz": 0,
+"portfolio_mio": 0,
+"verschuldung_netto": 1.0,
+"meldung": "2026-11-17",
+"quelle": "https://www.sec.gov/Archives/edgar/data/1414932/000119312526464682/d163826dex991.htm"
 }
 ],
 "aktien": 88085523,
-"aktien_stand": "2026-08-04"
+"aktien_stand": "2026-11-13"
 },
 "CSWC": {
 "name": "CAPITAL SOUTHWEST CORP",
@@ -2838,10 +2853,25 @@
 "verschuldung_netto": 0,
 "meldung": "2026-08-04",
 "quelle": "https://www.sec.gov/Archives/edgar/data/1143513/000119312526332851/d115483dex991.htm"
+},
+{
+"periode_ende": "2026-09-30",
+"nav_je_aktie": 20.77,
+"nii_je_aktie": 0.49,
+"beleg_nav": "Net Asset Value: $20.77 per share",
+"dividende_quartal": "0",
+"dividende_regulaer": 0,
+"dividende_zusatz": 0,
+"nii_bereinigt_je_aktie": 0,
+"non_accrual_fv_proz": 2.8,
+"portfolio_mio": 955.8,
+"verschuldung_netto": 1.08,
+"meldung": "2026-11-17",
+"quelle": "https://www.sec.gov/Archives/edgar/data/1143513/000119312526465633/d175768dex991.htm"
 }
 ],
 "aktien": 22593069,
-"aktien_stand": "2026-08-03"
+"aktien_stand": "2026-11-16"
 },
 "PNNT": {
 "name": "PENNANTPARK INVESTMENT CORP",
@@ -4561,12 +4591,12 @@
 "aktien_stand": "2026-11-03"
 }
 },
-"stand": "2026-11-16",
+"stand": "2026-11-19",
 "hinweis": "Quartalszahlen der BDCs aus ihren Ergebnis-Pressemitteilungen (SEC 8-K, EX-99), automatisch ausgelesen.",
 "letzter_lauf": {
-"zeit": "2026-11-16 22:23",
-"offen": 0,
-"ki_aufrufe": 0,
+"zeit": "2026-11-19 08:17",
+"offen": 4,
+"ki_aufrufe": 2,
 "ohne_sec": [
 "SSSS",
 "MRCC"
