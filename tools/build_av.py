@@ -32,6 +32,7 @@ css = """<style>
 #anbieter-bereich{max-width:1100px!important}#anbieter-bereich>:not(.av-tablewrap){max-width:760px}
 .av-q{white-space:nowrap;min-width:150px}.av-q a{display:block;color:#5b6874;margin:0 0 3px;font-size:.78rem;text-decoration:underline;text-decoration-color:#cfd6dc}
 .av-h{color:#8a6d1a;font-size:.78rem;margin-top:4px}
+.av-fold{margin:0 0 10px}.av-fold-sum{font-size:1.35rem;font-weight:700;cursor:pointer;padding:10px 0;border-bottom:1px solid #dfe5ea;display:flex;justify-content:space-between;align-items:baseline;gap:12px;list-style:none}.av-fold-sum::-webkit-details-marker{display:none}.av-fold-sum:after{content:"+";font-size:1.4rem;color:#2f9e5b;line-height:1}.av-fold[open]>.av-fold-sum:after{content:"\2013"}.av-fold-hint{font-size:.8rem;font-weight:400;color:#6b7782}.av-fold>*:not(summary){margin-top:12px}
 .av-sum{margin:14px 0}.av-sum li{margin:4px 0}
 @media(max-width:900px){.av-scroll-hint{display:block}.av-table th:first-child{min-width:150px}}
 @media(max-width:700px){
@@ -72,7 +73,7 @@ AEND = ""
 if D.get("aenderungen"):
     li = "".join(f'<li>{dmy(a["datum"])}: <strong>{esc(a["anbieter"])}</strong>, {FELD.get(a["feld"], a["feld"])} von {"offen" if a["alt"] is None else fig(a["alt"]) if a["feld"] != "start_jahre" else str(a["alt"])} auf {fig(a["neu"]) if a["feld"] != "start_jahre" else str(a["neu"])} (<a href="{esc(a["quelle"])}" target="_blank" rel="noopener nofollow">Quelle</a>)</li>' for a in reversed(D["aenderungen"][-6:]))
     AEND = f'<h3 class="av-h3">Letzte Änderungen</h3><ul class="av-chg">{li}</ul>'
-body = f"""<h2 id="anbieter">Anbieter im Vergleich</h2>
+body = f"""<details class="av-fold"><summary class="av-fold-sum" id="anbieter"><span>Anbieter im Vergleich</span><span class="av-fold-hint">Alle Anbieter ein- oder ausklappen</span></summary>
 <p class="lead">Ab dem 1. Januar 2027 können Verträge für das neue geförderte Altersvorsorgedepot abgeschlossen werden. Hier siehst du, was Trade Republic, Scalable Capital, ING, Deka und weitere angekündigt haben. Stand der Angaben: {esc(D["stand"][8:10])}.{esc(D["stand"][5:7])}.{esc(D["stand"][:4])}.{GEPR}</p>
 <p class="note"><strong>Wichtig:</strong> {esc(D["hinweis"])} Verglichen werden die laufenden Kosten des Standarddepots, die ETF-Erstattungen sind meist befristet. Dein Ergebnis hängt zusätzlich von Förderung, Fondsauswahl und Beitrag ab. Das ist keine Anlageberatung.</p>
 <h2>Was ist am günstigsten?</h2>
@@ -109,6 +110,7 @@ body = f"""<h2 id="anbieter">Anbieter im Vergleich</h2>
 <li><a href="https://www.ing.de/wissen/altersvorsorgedepot/" target="_blank" rel="noopener nofollow">ING, Stand 14.07.2026</a></li>
 </ul>
 <p class="note"><strong>Hinweis:</strong> Keine Anlageberatung. Angaben ohne Gewähr, die Konditionen können sich bis zum Start ändern. Maßgeblich sind die Vertragsunterlagen der Anbieter.</p>
+</details>
 """
 js = """<script>
 (function(){var l=document.getElementById("avl"),t=document.getElementById("avt");
