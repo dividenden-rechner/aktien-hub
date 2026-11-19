@@ -520,7 +520,7 @@ function secCharts(SD,cur){
   return `<div class="grid">
    ${bars("Ausschüttungsquote",`Dividende je Aktie geteilt durch Gewinn je Aktie (GAAP, unbereinigt), je Geschäftsjahr.${quoteNotiz} Quelle: ${q}`,quote,"var(--c-gold)",v=>num(v,0)+" %")}
    ${paarBars("Eigenkapital und langfristige Schulden",`In ${esc(cur)}, je Geschäftsjahr. Quelle: ${q}`,eq,debt,"Eigenkapital","Langfristige Schulden")}
-   ${bars("Aktienrückkäufe",`Ausgaben je Geschäftsjahr, in ${esc(cur)}. Quelle: ${q}`,buy,"var(--c-cash-l)",big)}
+   ${bars("Aktienrückkäufe",`Ausgaben je Geschäftsjahr, in Mrd. ${esc(cur)}. Quelle: ${q}`,buy,"var(--c-cash-l)",v=>num(v/1e9,1))}
   </div>`;
 }
 /* Zwei Reihen nebeneinander je Jahr (z. B. Eigenkapital und Schulden) */
