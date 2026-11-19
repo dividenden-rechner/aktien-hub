@@ -74,6 +74,11 @@ svg text{fill:var(--mut);font-size:11px;font-family:inherit}
 @media(max-width:420px){.kc .ks{grid-template-columns:1fr}}
 @media(max-width:480px){.head .logo{width:48px;height:48px}.head p{font-size:12px}}
 .grid>.card:last-child:nth-child(odd){grid-column:1/-1}
+/* Nebeneinander stehende Diagramme: gleiche Höhe oben und unten (Überschrift, Erläuterung und Grafik) */
+.grid>.card{display:flex;flex-direction:column}
+.grid>.card>h3{min-height:1.3em}
+.grid>.card>p{min-height:4.4em;margin:0 0 4px}
+.grid>.card>svg{flex:1 1 auto;width:100%;height:auto}
 .kc .rubriken .rb{flex:none;font:inherit;font-size:13px;font-weight:500;padding:6px 0 8px;border:0;border-bottom:2px solid transparent;margin-bottom:-1px;background:none;color:#8a97a3;cursor:pointer;border-radius:0}
 .kc .rubriken .rb:hover{color:#5b6874}.kc .rubriken .rb.on{color:#33414d;font-weight:600;border-bottom-color:#8a97a3}
 .kc .rubriken{display:flex;gap:18px;border-bottom:1px solid var(--line);overflow-x:auto;white-space:nowrap;scrollbar-width:none}
@@ -517,7 +522,7 @@ function secCharts(SD,cur){
   const debt=SD.bs.filter(x=>x.longTermDebt!=null).map(x=>({y:x.y,v:x.longTermDebt}));
   const buy=SD.cf.filter(x=>x.commonStockRepurchased!=null).map(x=>({y:x.y,v:Math.abs(x.commonStockRepurchased)}));
   const q=SD.q?quelleText(SD.q,true):"";
-  return `<div class="grid">
+  return `<div class="grid sec">
    ${bars("Ausschüttungsquote",`Dividende je Aktie geteilt durch Gewinn je Aktie (GAAP, unbereinigt), je Geschäftsjahr.${quoteNotiz} Quelle: ${q}`,quote,"var(--c-gold)",v=>num(v,0)+" %")}
    ${paarBars("Eigenkapital und langfristige Schulden",`In ${esc(cur)}, je Geschäftsjahr. Quelle: ${q}`,eq,debt,"Eigenkapital","Langfristige Schulden")}
    ${bars("Aktienrückkäufe",`Ausgaben je Geschäftsjahr, in Mrd. ${esc(cur)}. Quelle: ${q}`,buy,"var(--c-cash-l)",v=>num(v/1e9,1))}
@@ -541,7 +546,8 @@ function paarBars(title,note,A,B,nameA,nameB){
     });
     s+=`<text x="${x0+grp/2}" y="${H-6}" text-anchor="middle">${String(j).slice(-n>8?-2:0)}</text>`;
   });
-  return `<div class="card"><h3>${title}</h3><p>${note}</p><div style="display:flex;gap:14px;font-size:12px;margin:2px 0 6px"><span><i style="display:inline-block;width:10px;height:10px;border-radius:2px;background:var(--c-cash);margin-right:4px"></i>${nameA}</span><span><i style="display:inline-block;width:10px;height:10px;border-radius:2px;background:var(--c-gewinn);margin-right:4px"></i>${nameB}</span></div>${s}</svg></div>`;
+  const legende=`<span style="display:flex;gap:14px;font-size:12px;margin-top:4px"><span><i style="display:inline-block;width:10px;height:10px;border-radius:2px;background:var(--c-cash);margin-right:4px"></i>${nameA}</span><span><i style="display:inline-block;width:10px;height:10px;border-radius:2px;background:var(--c-gewinn);margin-right:4px"></i>${nameB}</span></span>`;
+  return `<div class="card"><h3>${title}</h3><p>${note}${legende}</p>${s}</svg></div>`;
 }
 function line(title,pts){
   if(pts.length<2)return `<div class="card"><h3>${title}</h3><p>Keine Daten verfügbar.</p></div>`;
@@ -670,6 +676,23 @@ function steckbrief(sym,p,r,m,inc,cf,KZ,SD){
 }
 
 /* Hub laden */
+/* Diagramme in einer Reihe: Kopfzeilen (Überschrift, Erläuterung, Kennzahl) gleich hoch, damit Grafiken oben und unten fluchten */
+function alignCharts(){
+  document.querySelectorAll("#hub .grid").forEach(g=>{
+    const cs=[...g.children].filter(c=>c.classList.contains("card")&&c.querySelector("svg"));
+    cs.forEach(c=>{
+      if(c.querySelector(":scope>.chead"))return;
+      const h=document.createElement("div");h.className="chead";
+      [...c.childNodes].forEach(n=>{if(!(n.nodeName==="svg"||n.nodeName==="SVG"))h.appendChild(n)});
+      c.insertBefore(h,c.firstChild);
+    });
+    const hs=cs.map(c=>c.querySelector(":scope>.chead")).filter(Boolean);
+    hs.forEach(h=>h.style.minHeight="");
+    const max=Math.max(0,...hs.map(h=>h.offsetHeight));
+    hs.forEach(h=>h.style.minHeight=max+"px");
+  });
+}
+let alignT;addEventListener("resize",()=>{clearTimeout(alignT);alignT=setTimeout(alignCharts,150)});
 async function openStock(sym){
   const msg=$("msg"),hub=$("hub");
   msg.className="";msg.textContent=`Lade ${sym} …`;
@@ -737,6 +760,7 @@ async function openStock(sym){
   ${p.description?`<p class="desc">${esc(p.description)}</p>`:""}
   ${p.website?`<p class="desc"><a href="${esc(p.website)}" target="_blank" rel="noopener">${esc(p.website)}</a></p>`:""}`;
   $("start").hidden=true;hub.hidden=false;msg.textContent="";$("sb").onclick=()=>story(LAST);try{if(pr.length>1)KC.init()}catch(e){console.error(e)}
+  alignCharts();
   const mitFMP=/key/.test(location.hash);
   if(mitFMP)try{initExplorer(sym,p,cur)}catch(e){console.error(e)}
   if(mitFMP)try{initValuation(sym,{p,price,r,m,fair,pt,tgt,inc,pts,cur}).catch(e=>console.error(e))}catch(e){console.error(e)}
