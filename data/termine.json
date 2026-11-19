@@ -1,150 +1,6 @@
 {
  "termine": [
   {
-   "sym": "9432.T",
-   "name": "NTT",
-   "art": "ergebnis",
-   "datum": "2026-11-04",
-   "betrag": "",
-   "waehrung": "",
-   "quelle": "https://www.nttdata.com/global/en/news/press-release/2026/november/110400"
-  },
-  {
-   "sym": "AIZ",
-   "name": "Assurant",
-   "art": "ergebnis",
-   "datum": "2026-11-04",
-   "betrag": "",
-   "waehrung": "",
-   "quelle": "https://www.sec.gov/Archives/edgar/data/1267238/000126723826000043/aiz-20260930exx991pressrel.htm"
-  },
-  {
-   "sym": "AMCR",
-   "name": "Amcor",
-   "art": "ergebnis",
-   "datum": "2026-11-04",
-   "betrag": "",
-   "waehrung": "",
-   "quelle": "https://www.sec.gov/Archives/edgar/data/1748790/000174879026000029/exhibit991q12026transition.htm"
-  },
-  {
-   "sym": "COR",
-   "name": "Cencora",
-   "art": "ergebnis",
-   "datum": "2026-11-04",
-   "betrag": "",
-   "waehrung": "",
-   "quelle": "https://www.sec.gov/Archives/edgar/data/1140859/000114085926000038/exhibit991-q42026.htm"
-  },
-  {
-   "sym": "DDOG",
-   "name": "Datadog",
-   "art": "ergebnis",
-   "datum": "2026-11-04",
-   "betrag": "",
-   "waehrung": "",
-   "quelle": "https://www.sec.gov/Archives/edgar/data/1561550/000162828026069792/ex-991x20260930x8k.htm"
-  },
-  {
-   "sym": "EMR",
-   "name": "Emerson Electric",
-   "art": "ergebnis",
-   "datum": "2026-11-04",
-   "betrag": "",
-   "waehrung": "",
-   "quelle": "https://www.sec.gov/Archives/edgar/data/32604/000003260426000049/a2026q4release_ex991.htm"
-  },
-  {
-   "sym": "FICO",
-   "name": "Fair Isaac",
-   "art": "ergebnis",
-   "datum": "2026-11-04",
-   "betrag": "",
-   "waehrung": "",
-   "quelle": "https://www.sec.gov/Archives/edgar/data/814547/000081454726000037/exhibit991erq42026.htm"
-  },
-  {
-   "sym": "JKHY",
-   "name": "Jack Henry & Associates",
-   "art": "ergebnis",
-   "datum": "2026-11-04",
-   "betrag": "",
-   "waehrung": "",
-   "quelle": "https://www.sec.gov/Archives/edgar/data/779152/000077915226000095/jkhy-20260930xex99pressrel.htm"
-  },
-  {
-   "sym": "KMB",
-   "name": "Kimberly-Clark",
-   "art": "ergebnis",
-   "datum": "2026-11-04",
-   "betrag": "",
-   "waehrung": "",
-   "quelle": "https://www.sec.gov/Archives/edgar/data/55785/000110465926122765/tm2628875d1_ex99-1.htm"
-  },
-  {
-   "sym": "MCK",
-   "name": "McKesson",
-   "art": "ergebnis",
-   "datum": "2026-11-04",
-   "betrag": "",
-   "waehrung": "",
-   "quelle": "https://www.sec.gov/Archives/edgar/data/927653/000092765326000279/mck_exhibit991x9302026.htm"
-  },
-  {
-   "sym": "MLM",
-   "name": "Martin Marietta Materials",
-   "art": "ergebnis",
-   "datum": "2026-11-04",
-   "betrag": "",
-   "waehrung": "",
-   "quelle": "https://www.sec.gov/Archives/edgar/data/916076/000119312526446178/mlm-ex99_1.htm"
-  },
-  {
-   "sym": "PRU",
-   "name": "Prudential Financial",
-   "art": "ergebnis",
-   "datum": "2026-11-04",
-   "betrag": "",
-   "waehrung": "",
-   "quelle": "https://www.sec.gov/Archives/edgar/data/1137774/000113777426000219/exhibit991-3q26earningspre.htm"
-  },
-  {
-   "sym": "PTC",
-   "name": "PTC Inc.",
-   "art": "ergebnis",
-   "datum": "2026-11-04",
-   "betrag": "",
-   "waehrung": "",
-   "quelle": "https://www.sec.gov/Archives/edgar/data/857005/000119312526447186/ptc-ex99_1.htm"
-  },
-  {
-   "sym": "Q",
-   "name": "Qnity Electronics",
-   "art": "ergebnis",
-   "datum": "2026-11-04",
-   "betrag": "",
-   "waehrung": "",
-   "quelle": "https://www.sec.gov/Archives/edgar/data/2058873/000205887326000039/exhibit991supplementalsche.htm"
-  },
-  {
-   "sym": "TRMB",
-   "name": "Trimble Inc.",
-   "art": "ergebnis",
-   "datum": "2026-11-04",
-   "betrag": "",
-   "waehrung": "",
-   "quelle": "https://www.sec.gov/Archives/edgar/data/864749/000086474926000119/a2026q3-8kex991.htm"
-  },
-  {
-   "sym": "ZBH",
-   "name": "Zimmer Biomet",
-   "art": "ergebnis",
-   "datum": "2026-11-04",
-   "betrag": "",
-   "waehrung": "",
-   "quelle": "https://www.sec.gov/Archives/edgar/data/1136869/000119312526446145/zbh-ex99_1.htm"
-  },
-  {
    "sym": "ABNB",
    "name": "Airbnb",
    "art": "ergebnis",
@@ -649,6 +505,15 @@
    "quelle": "https://www.sec.gov/Archives/edgar/data/746515/000119312526444872/expd-ex99_1.htm"
   },
   {
+   "sym": "GSK",
+   "name": "GSK plc",
+   "art": "ergebnis",
+   "datum": "2026-11-18",
+   "betrag": "",
+   "waehrung": "",
+   "quelle": "https://www.sec.gov/Archives/edgar/data/1131399/000165495426009980/a7721d.htm"
+  },
+  {
    "sym": "PANW",
    "name": "Palo Alto Networks",
    "art": "ergebnis",
@@ -728,6 +593,15 @@
    "betrag": "",
    "waehrung": "",
    "quelle": "https://www.sec.gov/Archives/edgar/data/839923/000165495426009641/a4345c.htm"
+  },
+  {
+   "sym": "WSM",
+   "name": "Williams-Sonoma, Inc.",
+   "art": "ergebnis",
+   "datum": "2026-11-19",
+   "betrag": "",
+   "waehrung": "",
+   "quelle": "https://www.sec.gov/Archives/edgar/data/719955/000071995526000244/exhibit991fy2026q3earnings.htm"
   },
   {
    "sym": "EVRG",

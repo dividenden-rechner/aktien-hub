@@ -1809,6 +1809,16 @@
    "revenue": null,
    "waehrung": "EUR",
    "quelle": "https://www.sec.gov/Archives/edgar/data/839923/000119312526466568/d98993d6k.htm"
+  },
+  {
+   "sym": "WSM",
+   "name": "Williams-Sonoma, Inc.",
+   "datum": "2026-11-19",
+   "eps": 2.19,
+   "eps_basis": "bereinigt",
+   "revenue": 1990000000.0,
+   "waehrung": "USD",
+   "quelle": "https://www.sec.gov/Archives/edgar/data/719955/000071995526000244/exhibit991fy2026q3earnings.htm"
   }
  ]
 }
