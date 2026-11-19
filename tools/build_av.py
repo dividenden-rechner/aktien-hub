@@ -35,17 +35,13 @@ css = """<style>
 .av-sum{margin:14px 0}.av-sum li{margin:4px 0}
 @media(max-width:900px){.av-scroll-hint{display:block}.av-table th:first-child{min-width:150px}}
 @media(max-width:700px){
-.av-scroll-hint{display:none!important}
-.av-tablewrap{overflow:visible;border:0;margin:6px 0 14px}
-.av-table{min-width:0;width:100%;font-size:.95rem;display:block;background:none}
-.av-table thead{display:none}
-.av-table tbody{display:block}
-.av-table tr.av-row{display:block;border:1px solid #d9e0e6;border-radius:10px;margin:0 0 14px;padding:4px 0;background:#fff;box-shadow:0 1px 2px rgba(0,0,0,.04)}
-.av-table th,.av-table td{display:block;width:100%;min-width:0!important;max-width:none!important;border:0!important;padding:8px 14px;height:auto!important;text-align:left!important;background:#fff!important;white-space:normal!important;position:static!important;box-shadow:none!important}
-.av-table th[scope=row]{background:#f7faf8!important;border-radius:10px 10px 0 0;padding:12px 14px;font-weight:600}
-.av-table td[data-label]::before{content:attr(data-label);display:block;font-size:.72rem;letter-spacing:.03em;text-transform:uppercase;color:#6b7782;margin-bottom:2px}
-.av-table td.num b{font-size:1.15rem;color:#065f46}
-.av-table td.av-q a{display:inline-block;margin:0 12px 6px 0;font-size:.9rem}
+.av-table{min-width:720px;font-size:.8rem}
+.av-table th,.av-table td{padding:7px 9px}
+.av-table td.w{min-width:230px;max-width:260px;font-size:.78rem}
+.av-table td.num{min-width:78px}
+.av-table th:first-child{min-width:140px}
+.av-table .av-logo{width:20px;height:20px}
+}
 }
 </style>
 """
