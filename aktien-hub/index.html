@@ -510,8 +510,8 @@ function epsChart(inc,cur,H0){
   return `<div class="card">${kern(epsT,num(D[n-1].v)+" "+esc(cur),D[n-1].v<0?"var(--neg)":"var(--c-gewinn)",g!=null?pcs(g):"")}${s}</svg></div>`;
 }
 /* Zusätzliche SEC-Diagramme (Geschäftsjahre): Ausschüttungsquote, Eigenkapital und Schulden, Rückkäufe */
-function secCharts(SD,cur){
-  if(!SD)return "";
+function secCharts(SD,cur,eps=""){
+  if(!SD)return eps?`<div class="grid sec">${eps}</div>`:"";
   const epsM=Object.fromEntries(SD.inc.filter(x=>x.epsDiluted!=null).map(x=>[x.y,x.epsDiluted]));
   const quoteAlle=SD.dy.filter(x=>x.v!=null&&epsM[x.y]>0).map(x=>({y:x.y,v:x.v/epsM[x.y]*100}));
   /* Jahre über 200 % (Gewinn durch Einmaleffekte verzerrt) werden nicht gezeigt, weil bereinigte Gewinne nicht in den SEC-Daten stehen */
@@ -523,6 +523,7 @@ function secCharts(SD,cur){
   const buy=SD.cf.filter(x=>x.commonStockRepurchased!=null).map(x=>({y:x.y,v:Math.abs(x.commonStockRepurchased)}));
   const q=SD.q?quelleText(SD.q,true):"";
   return `<div class="grid sec">
+   ${eps}
    ${bars("Ausschüttungsquote",`Dividende je Aktie geteilt durch Gewinn je Aktie (GAAP, unbereinigt), je Geschäftsjahr.${quoteNotiz} Quelle: ${q}`,quote,"var(--c-gold)",v=>num(v,0)+" %")}
    ${paarBars("Eigenkapital und langfristige Schulden",`In ${esc(cur)}, je Geschäftsjahr. Quelle: ${q}`,eq,debt,"Eigenkapital","Langfristige Schulden")}
    ${bars("Aktienrückkäufe",`Ausgaben je Geschäftsjahr, in Mrd. ${esc(cur)}. Quelle: ${q}`,buy,"var(--c-cash-l)",v=>num(v/1e9,1))}
@@ -778,9 +779,8 @@ async function openStock(sym){
    ${combo(inc,cur)}
    ${margins(inc)}
    ${fcfChart(cf,cur)}
-   ${epsChart(inc,cur)}
   </div>
-  ${secCharts(SD,cur)}
+  ${secCharts(SD,cur,epsChart(inc,cur))}
   <div id="val"></div>
   <div id="fin"></div>
   <div id="nr"></div>
