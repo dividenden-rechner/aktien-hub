@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-18 14:31 UTC",
+ "updated": "2026-11-19 03:50 UTC",
  "quelle": "Alpha Vantage",
  "items": [
   {
@@ -547,8 +547,11 @@
    "fiscal": "2026-10-31",
    "cur": "USD",
    "zeit": "vor",
-   "eps_est": 0.11,
-   "eps_src": "kalender"
+   "eps_est": 0.1182,
+   "eps_n": 17,
+   "rev_est": 1549327210.0,
+   "rev_n": 15,
+   "est_stand": "2026-11-19"
   },
   {
    "sym": "BULL",
@@ -557,8 +560,11 @@
    "fiscal": "2026-09-30",
    "cur": "USD",
    "zeit": "nach",
-   "eps_est": 0.05,
-   "eps_src": "kalender"
+   "eps_est": 0.065,
+   "eps_n": 2,
+   "rev_est": 215588670.0,
+   "rev_n": 3,
+   "est_stand": "2026-11-19"
   },
   {
    "sym": "CPRT",
@@ -567,8 +573,11 @@
    "fiscal": "2026-10-31",
    "cur": "USD",
    "zeit": "",
-   "eps_est": 0.41,
-   "eps_src": "kalender"
+   "eps_est": 0.398,
+   "eps_n": 7,
+   "rev_est": 1188881000.0,
+   "rev_n": 7,
+   "est_stand": "2026-11-19"
   },
   {
    "sym": "ESTC",
@@ -577,8 +586,11 @@
    "fiscal": "2026-10-31",
    "cur": "USD",
    "zeit": "nach",
-   "eps_est": 0.14,
-   "eps_src": "kalender"
+   "eps_est": 0.8095,
+   "eps_n": 27,
+   "rev_est": 486786700.0,
+   "rev_n": 24,
+   "est_stand": "2026-11-19"
   },
   {
    "sym": "FUTU",
@@ -586,7 +598,12 @@
    "name": "FUTU HOLDINGS LIMITED",
    "fiscal": "2026-09-30",
    "cur": "USD",
-   "zeit": "vor"
+   "zeit": "vor",
+   "eps_est": 26.1455,
+   "eps_n": 2,
+   "rev_est": 6585844500.0,
+   "rev_n": 2,
+   "est_stand": "2026-11-19"
   },
   {
    "sym": "GAP",
@@ -595,8 +612,11 @@
    "fiscal": "2026-10-31",
    "cur": "USD",
    "zeit": "nach",
-   "eps_est": 0.73,
-   "eps_src": "kalender"
+   "eps_est": 0.7803,
+   "eps_n": 17,
+   "rev_est": 4013697400.0,
+   "rev_n": 16,
+   "est_stand": "2026-11-19"
   },
   {
    "sym": "INTU",
@@ -605,8 +625,11 @@
    "fiscal": "2026-10-31",
    "cur": "USD",
    "zeit": "nach",
-   "eps_est": 2.47,
-   "eps_src": "kalender"
+   "eps_est": 2.6398,
+   "eps_n": 26,
+   "rev_est": 4305869380.0,
+   "rev_n": 23,
+   "est_stand": "2026-11-19"
   },
   {
    "sym": "KEYS",
@@ -625,18 +648,24 @@
    "fiscal": "2026-09-30",
    "cur": "USD",
    "zeit": "vor",
-   "eps_est": 2.4,
-   "eps_src": "kalender"
+   "eps_est": 16.1313,
+   "eps_n": 11,
+   "rev_est": 30270401650.0,
+   "rev_n": 17,
+   "est_stand": "2026-11-19"
   },
   {
    "sym": "PDD",
    "datum": "2026-11-19",
-   "eps_est": 2.61,
-   "eps_src": "kalender",
+   "eps_est": 18.8414,
    "name": "PDD HOLDINGS INCORPORATED",
    "fiscal": "2026-09-30",
    "cur": "USD",
-   "zeit": "vor"
+   "zeit": "vor",
+   "eps_n": 11,
+   "rev_est": 115509319140.0,
+   "rev_n": 13,
+   "est_stand": "2026-11-19"
   },
   {
    "sym": "ROST",
@@ -645,8 +674,11 @@
    "fiscal": "2026-10-31",
    "cur": "USD",
    "zeit": "nach",
-   "eps_est": 1.82,
-   "eps_src": "kalender"
+   "eps_est": 1.8595,
+   "eps_n": 12,
+   "rev_est": 6244734920.0,
+   "rev_n": 16,
+   "est_stand": "2026-11-19"
   },
   {
    "sym": "VEEV",
@@ -827,6 +859,16 @@
    "eps_src": "kalender"
   },
   {
+   "sym": "VIPS",
+   "datum": "2026-11-24",
+   "eps_est": 0.31,
+   "eps_src": "kalender",
+   "name": "VIPSHOP HOLDINGS LIMITED",
+   "fiscal": "2026-09-30",
+   "cur": "USD",
+   "zeit": "vor"
+  },
+  {
    "sym": "WDAY",
    "datum": "2026-11-24",
    "name": "WORKDAY INCORPORATED",
@@ -882,6 +924,66 @@
    "eps_est": 2.41,
    "eps_src": "kalender",
    "name": "SALESFORCE INCORPORATED",
+   "fiscal": "2026-10-31",
+   "cur": "USD",
+   "zeit": "nach"
+  },
+  {
+   "sym": "COO",
+   "datum": "2026-12-03",
+   "eps_est": 1.07,
+   "eps_src": "kalender",
+   "name": "THE COOPER COMPANIES INCORPORATED",
+   "fiscal": "2026-10-31",
+   "cur": "USD",
+   "zeit": "nach"
+  },
+  {
+   "sym": "DG",
+   "datum": "2026-12-03",
+   "eps_est": 1.4,
+   "eps_src": "kalender",
+   "name": "DOLLAR GENERAL CORPORATION",
+   "fiscal": "2026-10-31",
+   "cur": "USD",
+   "zeit": "vor"
+  },
+  {
+   "sym": "HRL",
+   "datum": "2026-12-03",
+   "eps_est": 0.38,
+   "eps_src": "kalender",
+   "name": "HORMEL FOODS CORPORATION",
+   "fiscal": "2026-10-31",
+   "cur": "USD",
+   "zeit": "vor"
+  },
+  {
+   "sym": "KR",
+   "datum": "2026-12-03",
+   "eps_est": 1.16,
+   "eps_src": "kalender",
+   "name": "KROGER COMPANY (THE)",
+   "fiscal": "2026-10-31",
+   "cur": "USD",
+   "zeit": "vor"
+  },
+  {
+   "sym": "ULTA",
+   "datum": "2026-12-03",
+   "eps_est": 5.61,
+   "eps_src": "kalender",
+   "name": "ULTA BEAUTY INCORPORATED",
+   "fiscal": "2026-10-31",
+   "cur": "USD",
+   "zeit": "nach"
+  },
+  {
+   "sym": "VEEV",
+   "datum": "2026-12-03",
+   "eps_est": 1.68,
+   "eps_src": "kalender",
+   "name": "VEEVA SYSTEMS INCORPORATED",
    "fiscal": "2026-10-31",
    "cur": "USD",
    "zeit": "nach"
