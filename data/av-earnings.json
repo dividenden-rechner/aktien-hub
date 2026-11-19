@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-19 03:50 UTC",
+ "updated": "2026-11-19 14:40 UTC",
  "quelle": "Alpha Vantage",
  "items": [
   {
@@ -538,7 +538,8 @@
    "cur": "USD",
    "zeit": "vor",
    "eps_est": 1.31,
-   "eps_src": "kalender"
+   "eps_src": "kalender",
+   "act_try": "2026-11-19"
   },
   {
    "sym": "BBWI",
@@ -551,7 +552,8 @@
    "eps_n": 17,
    "rev_est": 1549327210.0,
    "rev_n": 15,
-   "est_stand": "2026-11-19"
+   "est_stand": "2026-11-19",
+   "act_try": "2026-11-19"
   },
   {
    "sym": "BULL",
@@ -564,7 +566,8 @@
    "eps_n": 2,
    "rev_est": 215588670.0,
    "rev_n": 3,
-   "est_stand": "2026-11-19"
+   "est_stand": "2026-11-19",
+   "act_try": "2026-11-19"
   },
   {
    "sym": "CPRT",
@@ -577,7 +580,8 @@
    "eps_n": 7,
    "rev_est": 1188881000.0,
    "rev_n": 7,
-   "est_stand": "2026-11-19"
+   "est_stand": "2026-11-19",
+   "act_try": "2026-11-19"
   },
   {
    "sym": "ESTC",
@@ -590,7 +594,8 @@
    "eps_n": 27,
    "rev_est": 486786700.0,
    "rev_n": 24,
-   "est_stand": "2026-11-19"
+   "est_stand": "2026-11-19",
+   "act_try": "2026-11-19"
   },
   {
    "sym": "FUTU",
@@ -603,7 +608,8 @@
    "eps_n": 2,
    "rev_est": 6585844500.0,
    "rev_n": 2,
-   "est_stand": "2026-11-19"
+   "est_stand": "2026-11-19",
+   "act_try": "2026-11-19"
   },
   {
    "sym": "GAP",
@@ -616,7 +622,8 @@
    "eps_n": 17,
    "rev_est": 4013697400.0,
    "rev_n": 16,
-   "est_stand": "2026-11-19"
+   "est_stand": "2026-11-19",
+   "act_try": "2026-11-19"
   },
   {
    "sym": "INTU",
@@ -629,7 +636,8 @@
    "eps_n": 26,
    "rev_est": 4305869380.0,
    "rev_n": 23,
-   "est_stand": "2026-11-19"
+   "est_stand": "2026-11-19",
+   "act_try": "2026-11-19"
   },
   {
    "sym": "KEYS",
@@ -639,7 +647,8 @@
    "cur": "USD",
    "zeit": "nach",
    "eps_est": 3.09,
-   "eps_src": "kalender"
+   "eps_src": "kalender",
+   "act_try": "2026-11-19"
   },
   {
    "sym": "NTES",
@@ -652,7 +661,8 @@
    "eps_n": 11,
    "rev_est": 30270401650.0,
    "rev_n": 17,
-   "est_stand": "2026-11-19"
+   "est_stand": "2026-11-19",
+   "act_try": "2026-11-19"
   },
   {
    "sym": "PDD",
