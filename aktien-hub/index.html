@@ -930,22 +930,20 @@ async function initFinance(sym,p,cur,inc,cf,SD){
   <div class="fcard"><div class="fctl"><b>Kennzahlen übereinander legen</b><button type="button" data-m="line" aria-pressed="true">Linien</button><button type="button" data-m="bar" aria-pressed="false">Balken</button></div><div class="fchips" id="fch"></div><div class="fscroll fit" id="fcm"></div><p class="fnote" id="fmn"></p></div>
   ${debtCard()}
   <div class="fcard"><div class="fctl"><b>Investitionen (Capex) und Dividendendeckung</b></div><div class="fscroll" id="fcx"></div><p class="fnote">Capex-Quote = Investitionen / Umsatz. Capex / Abschreibungen über 100 % heißt: Das Unternehmen investiert mehr, als sich Anlagen abnutzen. Deckung = freier Cashflow / gezahlte Dividenden; unter 100 % wird die Dividende nicht aus dem freien Cashflow bezahlt.</p></div>`;
-  /* Schulden, Cash, Zinsdeckung */
+  /* Cash und Zinsdeckung (Schulden stehen im Diagramm Eigenkapital und langfristige Schulden) */
   function debtCard(){
-    const D=years.map(y=>{const b=B[y]||{},i=I[y]||{};const debt=first(b,"totalDebt"),cash=first(b,"cashAndCashEquivalents","cashAndShortTermInvestments");const nd=first(b,"netDebt")??(debt!=null&&cash!=null?debt-cash:null);
-      const da=first(C[y]||{},"depreciationAndAmortization")??i.depreciationAndAmortization,ebitda=i.ebitda??(i.operatingIncome!=null&&da!=null?i.operatingIncome+da:null);
-      return {y,debt,cash,nd,ebitda,ic:i.interestExpense>0&&i.operatingIncome!=null?i.operatingIncome/i.interestExpense:null}}).filter(d=>d.debt!=null);
+    const D=years.map(y=>{const b=B[y]||{},i=I[y]||{};const cash=first(b,"cashAndCashEquivalents","cashAndShortTermInvestments");
+      return {y,cash,ic:i.interestExpense>0&&i.operatingIncome!=null?i.operatingIncome/i.interestExpense:null}}).filter(d=>d.cash!=null);
     if(D.length<1)return "";
-    const W=370,H=190,top=24,bot=H-22,n=D.length,mx=Math.max(...D.map(d=>d.debt),1),Y=v=>top+(mx-v)/mx*(bot-top),bw=Math.min(44,(W-12)/n*.78);
-    let sv=`<svg viewBox="0 0 ${W} ${H}" role="img" aria-label="Schulden und Cash"><line x1="0" x2="${W}" y1="${bot}" y2="${bot}" stroke="var(--line)"/>`;
-    D.forEach((d,i)=>{const cx=6+(W-6)*(i+.5)/n,last=i===n-1,h=Math.max(1,bot-Y(d.debt));
-      sv+=`<rect x="${cx-bw/2}" y="${bot-h}" width="${bw}" height="${h}" rx="3" fill="${last?"var(--c-kosten)":"#f9d2a8"}"><title>${d.y} Schulden: ${big(d.debt)}</title></rect>`;
-      if(d.cash!=null){const ch=Math.max(1,Math.min(bot-Y(d.cash),h)),gw=Math.min(18,bw*.42);sv+=`<rect x="${cx-gw/2}" y="${bot-ch}" width="${gw}" height="${ch}" rx="2" fill="${last?"var(--c-cash)":"#6cc4cc"}"><title>${d.y} Cash: ${big(d.cash)}</title></rect>`}
-      if(i===0||last)sv+=`<text x="${cx}" y="${bot-h-5}" text-anchor="middle" font-size="11" font-weight="700" style="fill:${last?"var(--c-kosten)":"var(--mut)"}">${short(d.debt)}</text>`;
+    const W=370,H=190,top=24,bot=H-22,n=D.length,mx=Math.max(...D.map(d=>d.cash),1),Y=v=>top+(mx-v)/mx*(bot-top),bw=Math.min(44,(W-12)/n*.78);
+    let sv=`<svg viewBox="0 0 ${W} ${H}" role="img" aria-label="Cash"><line x1="0" x2="${W}" y1="${bot}" y2="${bot}" stroke="var(--line)"/>`;
+    D.forEach((d,i)=>{const cx=6+(W-6)*(i+.5)/n,last=i===n-1,h=Math.max(1,bot-Y(d.cash));
+      sv+=`<rect x="${cx-bw/2}" y="${bot-h}" width="${bw}" height="${h}" rx="3" fill="${last?"var(--c-cash)":"#6cc4cc"}"><title>${d.y} Cash: ${big(d.cash)}</title></rect>`;
+      if(i===0||last)sv+=`<text x="${cx}" y="${bot-h-5}" text-anchor="middle" font-size="11" font-weight="700" style="fill:${last?"var(--c-cash)":"var(--mut)"}">${short(d.cash)}</text>`;
       sv+=`<text x="${cx}" y="${H-5}" text-anchor="middle" font-size="11" ${last?'font-weight="700" style="fill:var(--ink)"':""}>${D.length>7?"’"+String(d.y).slice(-2):d.y}</text>`});
-    const L=D[n-1],P=n>1?D[n-2]:null,chg=P&&P.nd!=null&&L.nd!=null?L.nd-P.nd:null,lev=L.nd!=null&&L.ebitda>0?L.nd/L.ebitda:null;
-    const sub=[chg!=null?(chg<=0?"Abbau ":"Aufbau ")+big(Math.abs(chg))+" zum Vorjahr":"",lev!=null?"Nettoschulden/EBITDA "+num(lev,1)+"×":"",L.ic!=null?"Zinsdeckung "+num(L.ic,1)+"×":""].filter(Boolean);
-    return `<div class="fcard"><div class="fctl"><b>Schulden, Cash und Zinsdeckung</b></div><div class="kern" style="color:${L.nd!=null&&L.nd<0?"var(--c-cash)":"var(--c-kosten)"}">${L.nd!=null?(L.nd<0?"Nettokasse "+big(-L.nd):"Nettoschulden "+big(L.nd)):big(L.debt)} ${esc(cur)}</div><div class="kleg"><span><i style="background:var(--c-kosten)"></i>Schulden gesamt</span><span><i style="background:var(--c-cash)"></i>Cash</span></div>${sv}</svg><p class="fnote">${sub.length?esc(sub.join(" · "))+". ":""}Nettoschulden = Schulden minus Cash. Zinsdeckung = Operatives Ergebnis / Zinsaufwand; je höher, desto sicherer lassen sich die Zinsen bezahlen.</p></div>`;
+    const L=D[n-1];
+    const sub=L.ic!=null?["Zinsdeckung "+num(L.ic,1)+"×"]:[];
+    return `<div class="fcard"><div class="fctl"><b>Cash und Zinsdeckung</b></div><div class="kern" style="color:var(--c-cash)">${big(L.cash)} ${esc(cur)}</div><div class="kleg"><span><i style="background:var(--c-cash)"></i>Cash</span></div>${sv}</svg><p class="fnote">${sub.length?esc(sub.join(" · "))+". ":""}Zinsdeckung = Operatives Ergebnis / Zinsaufwand; je höher, desto sicherer lassen sich die Zinsen bezahlen.</p></div>`;
   }
   /* Sankey */
   let flow="gw";
