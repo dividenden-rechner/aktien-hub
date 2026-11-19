@@ -165,3 +165,21 @@ article p,article li,article td{overflow-wrap:anywhere}
 .tl{width:24px;height:24px;border-radius:6px;object-fit:contain;vertical-align:middle;margin-right:8px;background:#fff}.tl-0{display:inline-block;background:#f1f5f9}.post td:first-child{white-space:nowrap}
 .tl[src*=".mono."]{background:#94a3b8;padding:2px}
 .firmlink{color:inherit;text-decoration:underline;text-decoration-color:var(--acc);text-decoration-thickness:2px;text-underline-offset:2px}
+
+/* Newsletter: Teaser-Box im Artikel und Link in der Kopfzeile */
+.nl-box{position:relative;background:var(--soft,#f0f8f3);border:1px solid var(--line,#dfe5ea);border-radius:12px;padding:18px 18px 16px;margin:20px 0}
+.nl-tag{display:inline-block;font-size:12px;font-weight:600;color:var(--accd,#1a7a45);background:var(--bg,#fff);border-radius:999px;padding:3px 10px;margin-bottom:10px}
+.nl-box h2{font-size:18px;line-height:1.3;margin:0 0 6px}
+.nl-box p{margin:0 0 12px}
+.nl-box ul{margin:0 0 14px;padding-left:18px;font-size:15px}
+.nl-box .nl-row{display:flex;gap:8px;flex-wrap:wrap}
+.nl-box input[type=email]{flex:1 1 220px;min-width:0;font:inherit;padding:10px 12px;border:1px solid var(--line,#dfe5ea);border-radius:8px;background:var(--bg,#fff);color:var(--ink,#14202b)}
+.nl-box button{font:inherit;font-weight:600;padding:10px 16px;border:0;border-radius:8px;background:var(--acc,#2f9e5b);color:#fff;cursor:pointer}
+.nl-box button:disabled{opacity:.6}
+.nl-box .nl-c{display:flex;gap:8px;align-items:flex-start;font-size:12px;color:var(--mut,#5d6b78);margin-top:10px;line-height:1.45}
+.nl-box .nl-msg{font-size:14px;margin:8px 0 0}
+.nl-box .nl-msg.ok{color:var(--accd,#1a7a45)}
+.nl-box .nl-msg.err{color:#b42318}
+.nl-box .hp{position:absolute;left:-9999px;width:1px;height:1px;opacity:0}
+#hub-global-header .hub-links a.hub-nl{background:var(--acc,#2f9e5b);color:#fff;font-weight:600}
+#hub-global-header .hub-links a.hub-nl:hover{background:var(--accd,#1a7a45);color:#fff}
