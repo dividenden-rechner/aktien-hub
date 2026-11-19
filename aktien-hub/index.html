@@ -540,14 +540,14 @@ function paarBars(title,note,A,B,nameA,nameB){
   let s=`<svg viewBox="0 0 ${W} ${H}" role="img" aria-label="${title}"><line x1="0" x2="${W}" y1="${z}" y2="${z}" stroke="var(--line)"/>`;
   jahre.forEach((j,i)=>{
     const x0=gap+i*(grp+gap);
-    [[va[j],"var(--c-cash)",nameA,0],[vb[j],"var(--c-gewinn)",nameB,1]].forEach(([v,col,nm,k])=>{
+    [[va[j],"var(--c-cash)",nameA,0],[vb[j],"var(--neg)",nameB,1]].forEach(([v,col,nm,k])=>{
       if(v==null)return;
       const bx=x0+2+k*bw,yy=y(v),h=Math.max(1,Math.abs(yy-z)),top=v>=0?yy:z;
       s+=`<rect x="${bx}" y="${top}" width="${bw}" height="${h}" rx="2" fill="${v<0?"var(--neg)":col}"><title>${j} ${nm}: ${big(v)}</title></rect>`;
     });
     s+=`<text x="${x0+grp/2}" y="${H-6}" text-anchor="middle">${String(j).slice(-n>8?-2:0)}</text>`;
   });
-  const legende=`<span style="display:flex;gap:14px;font-size:12px;margin-top:4px"><span><i style="display:inline-block;width:10px;height:10px;border-radius:2px;background:var(--c-cash);margin-right:4px"></i>${nameA}</span><span><i style="display:inline-block;width:10px;height:10px;border-radius:2px;background:var(--c-gewinn);margin-right:4px"></i>${nameB}</span></span>`;
+  const legende=`<span style="display:flex;gap:14px;font-size:12px;margin-top:4px"><span><i style="display:inline-block;width:10px;height:10px;border-radius:2px;background:var(--c-cash);margin-right:4px"></i>${nameA}</span><span><i style="display:inline-block;width:10px;height:10px;border-radius:2px;background:var(--neg);margin-right:4px"></i>${nameB}</span></span>`;
   return `<div class="card"><h3>${title}</h3><p>${note}${legende}</p>${s}</svg></div>`;
 }
 function line(title,pts){
