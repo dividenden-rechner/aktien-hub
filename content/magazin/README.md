@@ -22,7 +22,7 @@ Datei anklicken, dann Stift-Symbol: Zeile `draft: true` löschen und speichern, 
 | 29.10.2026 22:42 | Amazon steigert Umsatz im dritten Quartal auf 201,9 Milliarden Dollar | [79738970_2026-10-29/7757_2242-amazon-q3-2026-zahlen.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/79738970_2026-10-29/7757_2242-amazon-q3-2026-zahlen.md) |
 | 29.10.2026 10:12 | Shell erzielt im dritten Quartal 10,8 Milliarden Dollar Gewinn | [79738970_2026-10-29/8987_1012-shell-q3-2026-ergebnisse.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/79738970_2026-10-29/8987_1012-shell-q3-2026-ergebnisse.md) |
 
-### Online (442)
+### Online (443)
 
 | Datum | Titel | Datei |
 |---|---|---|
@@ -38,6 +38,7 @@ Datei anklicken, dann Stift-Symbol: Zeile `draft: true` löschen und speichern, 
 | 18.11.2026 23:36 | Align Technology ernennt Paul J. Clancy und Ian Bell in den Verwaltungsrat | [79738881_2026-11-18/7663_2336-align-technology-neue-mitglieder-verwaltungsrat-2026.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/79738881_2026-11-18/7663_2336-align-technology-neue-mitglieder-verwaltungsrat-2026.md) |
 | 18.11.2026 23:36 | Air Products: Carol Williams als neues Mitglied für das Board nominiert | [79738881_2026-11-18/7663_2336-air-products-nominiert-carol-williams-fuer-board.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/79738881_2026-11-18/7663_2336-air-products-nominiert-carol-williams-fuer-board.md) |
 | 18.11.2026 23:35 | Palo Alto Networks übertrifft Erwartungen im Q1 mit 3,4 Mrd. USD Umsatz | [79738881_2026-11-18/7664_2335-palo-alto-networks-q1-2027-zahlen.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/79738881_2026-11-18/7664_2335-palo-alto-networks-q1-2027-zahlen.md) |
+| 18.11.2026 23:35 | Lowe's hebt Umsatz dank Onlinegeschäft auf 22,8 Mrd. USD | [79738881_2026-11-18/7664_2335-lowes-q3-2026-zahlen.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/79738881_2026-11-18/7664_2335-lowes-q3-2026-zahlen.md) |
 | 18.11.2026 21:40 | UnitedHealth: Prüfvorschlag der US-Behörde CMS lässt die Aktie um 8 % fallen | [79738883_2026-11-18/9260_2140-unitedhealth-cms-pruefvorschlag.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/79738883_2026-11-18/9260_2140-unitedhealth-cms-pruefvorschlag.md) |
 | 18.11.2026 14:53 | Lloyds Banking Group tilgt Anleihen im Volumen von 1,8 Mrd. US-Dollar vorzeitig | [79738881_2026-11-18/8546_1453-lloyds-banking-group-anleihetilgung-januar-2027.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/79738881_2026-11-18/8546_1453-lloyds-banking-group-anleihetilgung-januar-2027.md) |
 | 18.11.2026 14:53 | Legal & General: Non-Executive Director Nilufer Kheraj verlässt das Board | [79738881_2026-11-18/8546_1453-legal-and-general-board-wechsel-nilufer-kheraj.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/79738881_2026-11-18/8546_1453-legal-and-general-board-wechsel-nilufer-kheraj.md) |
