@@ -15,12 +15,17 @@ from app.common import enthalten, get, norm_tokens, wort_passt  # noqa: E402
 UNI = os.path.join(os.path.dirname(HIER), "data", "universe", "canada")
 
 
-def passt(a, b):
-    ta, tb = norm_tokens(a), norm_tokens(b)
+def _ohne_zusatz(n):
+    import re
+    return re.sub(r"/[A-Z]{2,4}/?", " ", n or "")   # SEC-Zusaetze wie 'BANK OF MONTREAL /CAN/'
+
+
+def passt(a, b, erlaubt=0):
+    ta, tb = norm_tokens(_ohne_zusatz(a)), norm_tokens(_ohne_zusatz(b))
     if not ta or not tb:
         return False
     rest = [w for w in tb if not any(wort_passt(w, z) for z in ta)]
-    return enthalten(ta, tb) and not rest
+    return enthalten(ta, tb) and len(rest) <= erlaubt
 
 
 def zuordnen(listings, sec):
@@ -36,6 +41,9 @@ def zuordnen(listings, sec):
         if len(kand) > 1:
             gleich = [c for c in kand if basis in sec_by[c][1]]
             kand = gleich or kand
+        if not kand:   # zweiter Versuch: ein Zusatzwort bei der SEC ('TORONTO DOMINION' ~ 'TORONTO DOMINION BANK'),
+            # aber nur, wenn die SEC dasselbe Basiskuerzel fuehrt
+            kand = [cik for cik, (titel, ticks) in sec_by.items() if basis in ticks and passt(n, titel, erlaubt=1)]
         if len(kand) == 1:
             ergebnis[l["hub_kuerzel"]] = [kand[0], sec_by[kand[0]][0]]
         else:

@@ -157,3 +157,14 @@ def test_ohne_isin_im_review():
     for s in _lade("securities.json"):
         if not s["isin"]:
             assert s["security_id"].split(":", 1)[1] in rev
+
+
+def test_sec_zusatzwort_nur_mit_gleichem_kuerzel():
+    lst = [{"hub_kuerzel": "TD.TO", "ticker": "TD", "name": "TORONTO DOMINION"},
+           {"hub_kuerzel": "BMO.TO", "ticker": "BMO", "name": "BANK OF MONTREAL"},
+           {"hub_kuerzel": "X.TO", "ticker": "X", "name": "TMX GROUP LTD"}]
+    sec = [(947263, "TORONTO DOMINION BANK", "TD", "NYSE"), (927971, "BANK OF MONTREAL /CAN/", "BMO", "NYSE"),
+           (1163302, "UNITED STATES STEEL CORP", "X", "NYSE")]
+    erg, _ = sec_zuordnen(lst, sec)
+    assert erg["TD.TO"][0] == 947263 and erg["BMO.TO"][0] == 927971
+    assert "X.TO" not in erg   # gleiches Kuerzel, anderer Name: keine Zuordnung
