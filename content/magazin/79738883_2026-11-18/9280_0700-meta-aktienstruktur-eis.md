@@ -31,7 +31,7 @@ Der Anlass war eine Steuer in Kalifornien, die Milliardäre einmalig auf fünf P
 
 Mehrere Aktionäre haben vor einem Gericht im Bundesstaat Delaware geklagt. In Delaware hat Meta seinen formellen Sitz. Der Konzern hat sich nun in einem Gerichtsdokument bereit erklärt, die Ausgabe der Aktien für die Dauer des Verfahrens nicht vorzunehmen. Geplant war die Ausgabe Mitte Januar.
 
-Zuckerberg hatte nach Angaben des Verwaltungsrats mit einem Wegzug aus Kalifornien gedroht, falls der Plan scheitert. Das zeigt, wie wichtig ihm die Kontrolle über das Unternehmen ist. Es zeigt aber auch, dass ein Teil des Verwaltungsrats den Weg für den Plan geebnet hat, und genau das ist Gegenstand der Klage.
+Zuckerberg hatte nach Angaben des Verwaltungsrats mit einem Wegzug aus Kalifornien gedroht, falls der Plan scheitert. Das zeigt, wie wichtig ihm die Kontrolle über das Unternehmen ist. Die Aktionäre stellen sich genau gegen diese Machtverteilung.
 
 ## Einordnung für Anleger
 
