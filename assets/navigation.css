@@ -35,3 +35,6 @@ html{overflow-y:scroll;scrollbar-gutter:stable}
 #hub-global-header.hub-js .hub-links a{padding:12px 10px;font-size:16px}
 }
 @media(max-width:420px){#hub-global-header .hub-brand{font-size:14.5px;gap:8px}#hub-global-header .hub-logo{width:30px;height:30px}#hub-global-header .hub-nav-inner{gap:6px 10px}}
+/* Newsletter-Button in der Kopfzeile (auch auf der Startseite, die site.css nicht lädt) */
+#hub-global-header .hub-links a.hub-nl{background:#2f9e5b;color:#fff;font-weight:600}
+#hub-global-header .hub-links a.hub-nl:hover{background:#1a7a45;color:#fff}
