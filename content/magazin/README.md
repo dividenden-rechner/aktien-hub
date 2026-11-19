@@ -22,10 +22,11 @@ Datei anklicken, dann Stift-Symbol: Zeile `draft: true` löschen und speichern, 
 | 29.10.2026 22:42 | Amazon steigert Umsatz im dritten Quartal auf 201,9 Milliarden Dollar | [79738970_2026-10-29/7757_2242-amazon-q3-2026-zahlen.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/79738970_2026-10-29/7757_2242-amazon-q3-2026-zahlen.md) |
 | 29.10.2026 10:12 | Shell erzielt im dritten Quartal 10,8 Milliarden Dollar Gewinn | [79738970_2026-10-29/8987_1012-shell-q3-2026-ergebnisse.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/79738970_2026-10-29/8987_1012-shell-q3-2026-ergebnisse.md) |
 
-### Online (444)
+### Online (445)
 
 | Datum | Titel | Datei |
 |---|---|---|
+| 19.11.2026 18:20 | AMD: Leerverkäufer-Bericht zu China drückt die Aktie um fast 9 % | [79738883_2026-11-19/9330_1820-amd-hunterbrook-shortseller-china.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/79738883_2026-11-19/9330_1820-amd-hunterbrook-shortseller-china.md) |
 | 19.11.2026 16:00 | Walmart Q3 FY27: Umsatz plus 5,2 %, Prognose angehoben | [79738883_2026-11-19/9320_1600-walmart-q3-fy27-quartalsbericht.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/79738883_2026-11-19/9320_1600-walmart-q3-fy27-quartalsbericht.md) |
 | 19.11.2026 15:10 | Novartis: Prognoseerhöhung und 5 Prozent jährliches Umsatzwachstum bis 2031 | [79738880_2026-11-19/8489_1510-novartis-hebt-prognose-bis-2031-an.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/79738880_2026-11-19/8489_1510-novartis-hebt-prognose-bis-2031-an.md) |
 | 19.11.2026 15:06 | Williams-Sonoma: Bereinigter Gewinn je Aktie klettert im Q3 auf 2,19 US-Dollar | [79738880_2026-11-19/8493_1506-williams-sonoma-q3-2026-zahlen.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/79738880_2026-11-19/8493_1506-williams-sonoma-q3-2026-zahlen.md) |
