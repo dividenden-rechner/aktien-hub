@@ -22,8 +22,8 @@ def nl_nach_absatz(body, box):
     """Setzt die Newsletter-Box nach den ersten Absatz des Textes, nach einer Kurz-gesagt-Box davor."""
     m = re.compile(r'\s*<div class="admonition kurz">.*?</div>\n?', re.S).match(body)
     pos = m.end() if m else 0
-    if not re.compile(r'\s*<p[\s>]', re.S).match(body, pos): return box + body
-    e = body.find("</p>", pos)
+    p = re.compile(r'<p[\s>]').search(body, pos)
+    e = body.find("</p>", p.start()) if p else -1
     if e < 0: return box + body
     return body[:e + 4] + "\n" + box + body[e + 4:]
 
