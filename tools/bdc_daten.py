@@ -111,7 +111,7 @@ def main():
         except Exception as e:
             fehler.append(f"{c['sym']}: {str(e)[:80]}"); continue
         if not r:
-            state["erledigt"][c["acc"]] = "ohne Anlage"; continue
+            print(c["sym"], c["acc"], "ohne Anlage"); state["erledigt"][c["acc"]] = "ohne Anlage"; continue
         text, url = r
         if not re.search(r"net asset value", text, re.I):
             state["erledigt"][c["acc"]] = "kein NAV"; continue
