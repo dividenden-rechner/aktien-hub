@@ -355,7 +355,7 @@ function secFirma(S,sym){if(!S||!S.firmen)return null;const k=String(sym).toUppe
 function secJahr(end){const d=new Date(end),m=d.getUTCMonth();return String(d.getUTCFullYear()-((m===0||(m===1&&d.getUTCDate()<=7))?1:0))}
 function secReihe(f,k){const o={};(f.k[k]||[]).forEach(([e,v])=>o[secJahr(e)]=v);return o}
 function secDaten(f){
-  const R=k=>secReihe(f,k),gp=R("bruttogewinn"),opi=R("operatives_ergebnis"),zi=R("zinsaufwand"),stz=R("steuern"),abs_=R("abschreibungen"),skz=R("schulden_kurz"),rev=R("umsatz"),ni=R("gewinn"),eps=R("eps_verw"),epb=R("eps_ber"),sh=R("aktien_verw"),ocf=R("operativer_cf"),cx=R("capex"),dv=R("dividenden_gezahlt"),bb=R("aktienrueckkauf"),debt=R("schulden_lang"),cash=R("liquide_mittel"),eq=R("eigenkapital"),dps=R("dividende_je_aktie"),dpb=R("dividende_je_aktie_ber");
+  const R=k=>secReihe(f,k),gp=R("bruttogewinn"),opi=R("operatives_ergebnis"),zi=R("zinsaufwand"),stz=R("steuern"),abs_=R("abschreibungen"),skz=R("schulden_kurz"),rev=R("umsatz"),ni=R("gewinn"),eps=R("eps_verw"),epb=R("eps_ber"),sh=Object.fromEntries(Object.entries(R("aktien_verw")).map(([y,v])=>[y,v!=null&&v<1e6?v*1e6:v])),ocf=R("operativer_cf"),cx=R("capex"),dv=R("dividenden_gezahlt"),bb=R("aktienrueckkauf"),debt=R("schulden_lang"),cash=R("liquide_mittel"),eq=R("eigenkapital"),dps=R("dividende_je_aktie"),dpb=R("dividende_je_aktie_ber");
   const yrs=[...new Set([...Object.keys(rev),...Object.keys(ni),...Object.keys(ocf)])].sort();
   const neg=v=>v==null?undefined:-Math.abs(v),def=v=>v==null?undefined:v;
   /* Operatives Ergebnis: gemeldet oder näherungsweise Gewinn + Steuern + Zinsen */
@@ -503,6 +503,28 @@ function epsChart(inc,cur,H0){
     s+=`<text x="${q[0]}" y="${H-6}" text-anchor="middle" font-size="11" ${last?'font-weight="700" style="fill:var(--ink)"':""}>${yl(D[i].y,n)}</text>`});
   const g=n>1&&D[n-2].v>0?D[n-1].v/D[n-2].v-1:null;
   return `<div class="card">${kern(epsT,num(D[n-1].v)+" "+esc(cur),D[n-1].v<0?"var(--neg)":"var(--c-gewinn)",g!=null?pcs(g):"")}${s}</svg></div>`;
+}
+/* Zusätzliche SEC-Diagramme (Geschäftsjahre): Ausschüttung, Eigenkapital, Schulden, Rückkäufe, Aktienzahl */
+function secCharts(SD,cur){
+  if(!SD)return "";
+  const epsM=Object.fromEntries(SD.inc.filter(x=>x.epsDiluted!=null).map(x=>[x.y,x.epsDiluted]));
+  const quoteAlle=SD.dy.filter(x=>x.v!=null&&epsM[x.y]>0).map(x=>({y:x.y,v:x.v/epsM[x.y]*100}));
+  /* Jahre über 200 % (Gewinn durch Einmaleffekte verzerrt) werden nicht gezeigt, weil bereinigte Gewinne nicht in den SEC-Daten stehen */
+  const quote=quoteAlle.filter(x=>x.v<=200);
+  const ausgeblendet=quoteAlle.filter(x=>x.v>200).map(x=>x.y);
+  const quoteNotiz=ausgeblendet.length?` Ausgeblendet: ${ausgeblendet.join(", ")} (über 200 %, Gewinn durch Einmaleffekte verzerrt).`:"";
+  const eq=SD.bs.filter(x=>x.totalStockholdersEquity!=null).map(x=>({y:x.y,v:x.totalStockholdersEquity}));
+  const debt=SD.bs.filter(x=>x.longTermDebt!=null).map(x=>({y:x.y,v:x.longTermDebt}));
+  const buy=SD.cf.filter(x=>x.commonStockRepurchased!=null).map(x=>({y:x.y,v:Math.abs(x.commonStockRepurchased)}));
+  const sh=SD.inc.filter(x=>x.weightedAverageShsOutDil!=null).map(x=>({y:x.y,v:x.weightedAverageShsOutDil}));
+  const q=SD.q?quelleText(SD.q,true):"";
+  return `<div class="grid">
+   ${bars("Ausschüttungsquote",`Dividende je Aktie geteilt durch Gewinn je Aktie (GAAP, unbereinigt), je Geschäftsjahr.${quoteNotiz} Quelle: ${q}`,quote,"var(--c-gold)",v=>num(v,0)+" %")}
+   ${bars("Eigenkapital",`In ${esc(cur)}. Quelle: ${q}`,eq,"var(--c-cash-l)",big)}
+   ${bars("Langfristige Schulden",`In ${esc(cur)}, inkl. kurzfristiger Anteile langfristiger Schulden. Quelle: ${q}`,debt,"var(--c-cash-l)",big)}
+   ${bars("Aktienrückkäufe",`Ausgaben je Geschäftsjahr, in ${esc(cur)}. Quelle: ${q}`,buy,"var(--c-cash-l)",big)}
+   ${bars("Aktienzahl (verwässert)",`Gewichteter Durchschnitt je Geschäftsjahr. Quelle: ${q}`,sh,"var(--c-cash-l)",big)}
+  </div>`;
 }
 function line(title,pts){
   if(pts.length<2)return `<div class="card"><h3>${title}</h3><p>Keine Daten verfügbar.</p></div>`;
@@ -690,6 +712,7 @@ async function openStock(sym){
    ${fcfChart(cf,cur)}
    ${epsChart(inc,cur)}
   </div>
+  ${secCharts(SD,cur)}
   <div id="val"></div>
   <div id="fin"></div>
   <div id="nr"></div>
