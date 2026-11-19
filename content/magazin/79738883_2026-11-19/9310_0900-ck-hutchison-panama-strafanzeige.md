@@ -16,6 +16,7 @@ image_source: "https://unsplash.com/de/@brianjtromp"
 image_lizenz: Unsplash
 quelle_name: "Investing.com, Meldung vom 19.11.2026 (sinngemäß zusammengefasst); Kennzahlen aus dem Aktienhub, Stand 17.11.2026"
 draft: true
+logo_file: assets/logos/0001-hk.png
 ---
 !!! kurz "Kurz gesagt"
     **Kurs:** Minus 2,7 % auf 66,75 HK$ am Donnerstag in Hongkong, der Hang Seng verlor 1,6 %.
