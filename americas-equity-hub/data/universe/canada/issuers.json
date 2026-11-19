@@ -1,0 +1,2769 @@
+[
+ {
+  "issuer_id": "LEI:ES7IP3U3RHIGC71XBU11",
+  "name": "ROYAL BANK OF CANADA",
+  "lei": "ES7IP3U3RHIGC71XBU11",
+  "country_laut_etf": "Canada",
+  "sector_laut_etf": "Financials",
+  "verified": false,
+  "human_review": "pending",
+  "quellen": [
+   "XIC",
+   "ESMA FIRDS"
+  ]
+ },
+ {
+  "issuer_id": "NAME:CA:DOMINION-TORONTO",
+  "name": "TORONTO DOMINION",
+  "lei": null,
+  "country_laut_etf": "Canada",
+  "sector_laut_etf": "Financials",
+  "verified": false,
+  "human_review": "pending",
+  "quellen": [
+   "XIC"
+  ]
+ },
+ {
+  "issuer_id": "LEI:549300HGQ43STJLLP808",
+  "name": "SHOPIFY SUBORDINATE VOTING CLASS A",
+  "lei": "549300HGQ43STJLLP808",
+  "country_laut_etf": "Canada",
+  "sector_laut_etf": "Information Technology",
+  "verified": false,
+  "human_review": "pending",
+  "quellen": [
+   "XIC",
+   "ESMA FIRDS"
+  ]
+ },
+ {
+  "issuer_id": "LEI:NQQ6HPCNCCU6TUTQYE16",
+  "name": "BANK OF MONTREAL",
+  "lei": "NQQ6HPCNCCU6TUTQYE16",
+  "country_laut_etf": "Canada",
+  "sector_laut_etf": "Financials",
+  "verified": false,
+  "human_review": "pending",
+  "quellen": [
+   "XIC",
+   "ESMA FIRDS"
+  ]
+ },
+ {
+  "issuer_id": "LEI:L3I9ZG2KFGXZ61BMYR72",
+  "name": "BANK OF NOVA SCOTIA",
+  "lei": "L3I9ZG2KFGXZ61BMYR72",
+  "country_laut_etf": "Canada",
+  "sector_laut_etf": "Financials",
+  "verified": false,
+  "human_review": "pending",
+  "quellen": [
+   "XIC",
+   "ESMA FIRDS"
+  ]
+ },
+ {
+  "issuer_id": "LEI:98TPTUM4IVMFCZBCUR27",
+  "name": "ENBRIDGE",
+  "lei": "98TPTUM4IVMFCZBCUR27",
+  "country_laut_etf": "Canada",
+  "sector_laut_etf": "Energy",
+  "verified": false,
+  "human_review": "pending",
+  "quellen": [
+   "XIC",
+   "ESMA FIRDS"
+  ]
+ },
+ {
+  "issuer_id": "NAME:CA:BANK-CANADIAN-COMMERCE-IMPERIAL-OF",
+  "name": "CANADIAN IMPERIAL BANK OF COMMERCE",
+  "lei": null,
+  "country_laut_etf": "Canada",
+  "sector_laut_etf": "Financials",
+  "verified": false,
+  "human_review": "pending",
+  "quellen": [
+   "XIC"
+  ]
+ },
+ {
+  "issuer_id": "LEI:549300T15RIMIKZC5Q38",
+  "name": "CANADIAN NATURAL RESOURCES LTD",
+  "lei": "549300T15RIMIKZC5Q38",
+  "country_laut_etf": "Canada",
+  "sector_laut_etf": "Energy",
+  "verified": false,
+  "human_review": "pending",
+  "quellen": [
+   "XIC",
+   "ESMA FIRDS"
+  ]
+ },
+ {
+  "issuer_id": "LEI:C6J3FGIWG6MBDGTE8F80",
+  "name": "BROOKFIELD CLASS A",
+  "lei": "C6J3FGIWG6MBDGTE8F80",
+  "country_laut_etf": "Canada",
+  "sector_laut_etf": "Financials",
+  "verified": false,
+  "human_review": "pending",
+  "quellen": [
+   "XIC",
+   "ESMA FIRDS"
+  ]
+ },
+ {
+  "issuer_id": "LEI:254900BFJ2DOHPMEXN45",
+  "name": "AGNICO EAGLE MINES",
+  "lei": "254900BFJ2DOHPMEXN45",
+  "country_laut_etf": "Canada",
+  "sector_laut_etf": "Materials",
+  "verified": false,
+  "human_review": "pending",
+  "quellen": [
+   "XIC",
+   "ESMA FIRDS"
+  ]
+ },
+ {
+  "issuer_id": "LEI:54930036474DURYNB481",
+  "name": "CANADIAN PACIFIC KANSAS CITY",
+  "lei": "54930036474DURYNB481",
+  "country_laut_etf": "Canada",
+  "sector_laut_etf": "Industrials",
+  "verified": false,
+  "human_review": "pending",
+  "quellen": [
+   "XIC",
+   "ESMA FIRDS"
+  ]
+ },
+ {
+  "issuer_id": "LEI:894500XO86FKXQGPYV71",
+  "name": "SUNCOR ENERGY INC",
+  "lei": "894500XO86FKXQGPYV71",
+  "country_laut_etf": "Canada",
+  "sector_laut_etf": "Energy",
+  "verified": false,
+  "human_review": "pending",
+  "quellen": [
+   "XIC",
+   "ESMA FIRDS"
+  ]
+ },
+ {
+  "issuer_id": "LEI:5493007GBX87QOZACS27",
+  "name": "MANULIFE FINANCIAL",
+  "lei": "5493007GBX87QOZACS27",
+  "country_laut_etf": "Canada",
+  "sector_laut_etf": "Financials",
+  "verified": false,
+  "human_review": "pending",
+  "quellen": [
+   "XIC",
+   "ESMA FIRDS"
+  ]
+ },
+ {
+  "issuer_id": "LEI:3SU7BEP7TH9YEQOZCS77",
+  "name": "CANADIAN NATIONAL RAILWAY",
+  "lei": "3SU7BEP7TH9YEQOZCS77",
+  "country_laut_etf": "Canada",
+  "sector_laut_etf": "Industrials",
+  "verified": false,
+  "human_review": "pending",
+  "quellen": [
+   "XIC",
+   "ESMA FIRDS"
+  ]
+ },
+ {
+  "issuer_id": "LEI:549300UGKOFV2IWJJG27",
+  "name": "TC ENERGY",
+  "lei": "549300UGKOFV2IWJJG27",
+  "country_laut_etf": "Canada",
+  "sector_laut_etf": "Energy",
+  "verified": false,
+  "human_review": "pending",
+  "quellen": [
+   "XIC",
+   "ESMA FIRDS"
+  ]
+ },
+ {
+  "issuer_id": "LEI:0O4KBQCJZX82UKGCBV73",
+  "name": "BARRICK MINING",
+  "lei": "0O4KBQCJZX82UKGCBV73",
+  "country_laut_etf": "Canada",
+  "sector_laut_etf": "Materials",
+  "verified": false,
+  "human_review": "pending",
+  "quellen": [
+   "XIC",
+   "ESMA FIRDS"
+  ]
+ },
+ {
+  "issuer_id": "LEI:BSGEFEIOM18Y80CKCV46",
+  "name": "NATIONAL BANK OF CANADA",
+  "lei": "BSGEFEIOM18Y80CKCV46",
+  "country_laut_etf": "Canada",
+  "sector_laut_etf": "Financials",
+  "verified": false,
+  "human_review": "pending",
+  "quellen": [
+   "XIC",
+   "ESMA FIRDS"
+  ]
+ },
+ {
+  "issuer_id": "LEI:549300XSFG5ZCGVYD886",
+  "name": "WHEATON PRECIOUS METALS",
+  "lei": "549300XSFG5ZCGVYD886",
+  "country_laut_etf": "Canada",
+  "sector_laut_etf": "Materials",
+  "verified": false,
+  "human_review": "pending",
+  "quellen": [
+   "XIC",
+   "ESMA FIRDS"
+  ]
+ },
+ {
+  "issuer_id": "LEI:549300B6PYHMCTDWQV29",
+  "name": "CONSTELLATION SOFTWARE",
+  "lei": "549300B6PYHMCTDWQV29",
+  "country_laut_etf": "Canada",
+  "sector_laut_etf": "Information Technology",
+  "verified": false,
+  "human_review": "pending",
+  "quellen": [
+   "XIC",
+   "ESMA FIRDS"
+  ]
+ },
+ {
+  "issuer_id": "LEI:549300HDLRTPBQU69P29",
+  "name": "WASTE CONNECTIONS",
+  "lei": "549300HDLRTPBQU69P29",
+  "country_laut_etf": "United States",
+  "sector_laut_etf": "Industrials",
+  "verified": false,
+  "human_review": "pending",
+  "quellen": [
+   "XIC",
+   "ESMA FIRDS"
+  ]
+ },
+ {
+  "issuer_id": "LEI:98450064C1B5D3E94864",
+  "name": "FRANCO NEVADA",
+  "lei": "98450064C1B5D3E94864",
+  "country_laut_etf": "Canada",
+  "sector_laut_etf": "Materials",
+  "verified": false,
+  "human_review": "pending",
+  "quellen": [
+   "XIC",
+   "ESMA FIRDS"
+  ]
+ },
+ {
+  "issuer_id": "LEI:549300OSW32RVX8CCZ87",
+  "name": "ALIMENTATION COUCHE TARD INC",
+  "lei": "549300OSW32RVX8CCZ87",
+  "country_laut_etf": "Canada",
+  "sector_laut_etf": "Consumer Staples",
+  "verified": false,
+  "human_review": "pending",
+  "quellen": [
+   "XIC",
+   "ESMA FIRDS"
+  ]
+ },
+ {
+  "issuer_id": "LEI:5493002GJ0NJP1HI0C79",
+  "name": "DOLLARAMA",
+  "lei": "5493002GJ0NJP1HI0C79",
+  "country_laut_etf": "Canada",
+  "sector_laut_etf": "Consumer Discretionary",
+  "verified": false,
+  "human_review": "pending",
+  "quellen": [
+   "XIC",
+   "ESMA FIRDS"
+  ]
+ },
+ {
+  "issuer_id": "LEI:549300V040JZX5S66Z78",
+  "name": "SUN LIFE FINANCIAL INC",
+  "lei": "549300V040JZX5S66Z78",
+  "country_laut_etf": "Canada",
+  "sector_laut_etf": "Financials",
+  "verified": false,
+  "human_review": "pending",
+  "quellen": [
+   "XIC",
+   "ESMA FIRDS"
+  ]
+ },
+ {
+  "issuer_id": "LEI:GLS7OQD0WOEDI8YAP031",
+  "name": "FAIRFAX FINANCIAL HOLDINGS SUB VOT",
+  "lei": "GLS7OQD0WOEDI8YAP031",
+  "country_laut_etf": "Canada",
+  "sector_laut_etf": "Financials",
+  "verified": false,
+  "human_review": "pending",
+  "quellen": [
+   "XIC",
+   "ESMA FIRDS"
+  ]
+ },
+ {
+  "issuer_id": "LEI:254900LJGL2N2XEMD470",
+  "name": "CENOVUS ENERGY",
+  "lei": "254900LJGL2N2XEMD470",
+  "country_laut_etf": "Canada",
+  "sector_laut_etf": "Energy",
+  "verified": false,
+  "human_review": "pending",
+  "quellen": [
+   "XIC",
+   "ESMA FIRDS"
+  ]
+ },
+ {
+  "issuer_id": "LEI:5493009LXGE7Y4U9OY43",
+  "name": "INTACT FINANCIAL CORP",
+  "lei": "5493009LXGE7Y4U9OY43",
+  "country_laut_etf": "Canada",
+  "sector_laut_etf": "Financials",
+  "verified": false,
+  "human_review": "pending",
+  "quellen": [
+   "XIC",
+   "ESMA FIRDS"
+  ]
+ },
+ {
+  "issuer_id": "LEI:549300BE2CB8T87IJV50",
+  "name": "POWER CORPORATION OF CANADA",
+  "lei": "549300BE2CB8T87IJV50",
+  "country_laut_etf": "Canada",
+  "sector_laut_etf": "Financials",
+  "verified": false,
+  "human_review": "pending",
+  "quellen": [
+   "XIC",
+   "ESMA FIRDS"
+  ]
+ },
+ {
+  "issuer_id": "LEI:5493002QQ7GD21OWF963",
+  "name": "NUTRIEN LTD",
+  "lei": "5493002QQ7GD21OWF963",
+  "country_laut_etf": "Canada",
+  "sector_laut_etf": "Materials",
+  "verified": false,
+  "human_review": "pending",
+  "quellen": [
+   "XIC",
+   "ESMA FIRDS"
+  ]
+ },
+ {
+  "issuer_id": "LEI:549300J3CG5T6RZWLN53",
+  "name": "CELESTICA",
+  "lei": "549300J3CG5T6RZWLN53",
+  "country_laut_etf": "Canada",
+  "sector_laut_etf": "Information Technology",
+  "verified": false,
+  "human_review": "pending",
+  "quellen": [
+   "XIC",
+   "ESMA FIRDS"
+  ]
+ },
+ {
+  "issuer_id": "LEI:549300MQYQ9Y065XPR71",
+  "name": "FORTIS",
+  "lei": "549300MQYQ9Y065XPR71",
+  "country_laut_etf": "Canada",
+  "sector_laut_etf": "Utilities",
+  "verified": false,
+  "human_review": "pending",
+  "quellen": [
+   "XIC",
+   "ESMA FIRDS"
+  ]
+ },
+ {
+  "issuer_id": "LEI:5493002W3L9YICM6FU21",
+  "name": "PEMBINA PIPELINE",
+  "lei": "5493002W3L9YICM6FU21",
+  "country_laut_etf": "Canada",
+  "sector_laut_etf": "Energy",
+  "verified": false,
+  "human_review": "pending",
+  "quellen": [
+   "XIC",
+   "ESMA FIRDS"
+  ]
+ },
+ {
+  "issuer_id": "LEI:N4BHALMXL3GMZKCUON55",
+  "name": "CAMECO",
+  "lei": "N4BHALMXL3GMZKCUON55",
+  "country_laut_etf": "Canada",
+  "sector_laut_etf": "Energy",
+  "verified": false,
+  "human_review": "pending",
+  "quellen": [
+   "XIC",
+   "ESMA FIRDS"
+  ]
+ },
+ {
+  "issuer_id": "LEI:5493008LN3O1DIDTSH67",
+  "name": "LOBLAW COMPANIES LTD",
+  "lei": "5493008LN3O1DIDTSH67",
+  "country_laut_etf": "Canada",
+  "sector_laut_etf": "Consumer Staples",
+  "verified": false,
+  "human_review": "pending",
+  "quellen": [
+   "XIC",
+   "ESMA FIRDS"
+  ]
+ },
+ {
+  "issuer_id": "LEI:5299009RXTX9DN9AKJ98",
+  "name": "RESTAURANTS BRANDS INTERNATIONAL",
+  "lei": "5299009RXTX9DN9AKJ98",
+  "country_laut_etf": "Canada",
+  "sector_laut_etf": "Consumer Discretionary",
+  "verified": false,
+  "human_review": "pending",
+  "quellen": [
+   "XIC",
+   "ESMA FIRDS"
+  ]
+ },
+ {
+  "issuer_id": "LEI:T8KI5SQ2JRWHL7XY0E11",
+  "name": "TECK RESOURCES SUBORDINATE VOTING",
+  "lei": "T8KI5SQ2JRWHL7XY0E11",
+  "country_laut_etf": "Canada",
+  "sector_laut_etf": "Materials",
+  "verified": false,
+  "human_review": "pending",
+  "quellen": [
+   "XIC",
+   "ESMA FIRDS"
+  ]
+ },
+ {
+  "issuer_id": "NAME:CA:BROOKFIELD-INFRASTRUCTURE-PARTNERS",
+  "name": "BROOKFIELD INFRASTRUCTURE PARTNERS",
+  "lei": null,
+  "country_laut_etf": "Bermuda",
+  "sector_laut_etf": "Utilities",
+  "verified": false,
+  "human_review": "pending",
+  "quellen": [
+   "XIC"
+  ]
+ },
+ {
+  "issuer_id": "LEI:254900O9KHF2A1ZXPT47",
+  "name": "KINROSS GOLD",
+  "lei": "254900O9KHF2A1ZXPT47",
+  "country_laut_etf": "Canada",
+  "sector_laut_etf": "Materials",
+  "verified": false,
+  "human_review": "pending",
+  "quellen": [
+   "XIC",
+   "ESMA FIRDS"
+  ]
+ },
+ {
+  "issuer_id": "LEI:5493001I9203PRB5KR45",
+  "name": "BCE INC",
+  "lei": "5493001I9203PRB5KR45",
+  "country_laut_etf": "Canada",
+  "sector_laut_etf": "Communication",
+  "verified": false,
+  "human_review": "pending",
+  "quellen": [
+   "XIC",
+   "ESMA FIRDS"
+  ]
+ },
+ {
+  "issuer_id": "LEI:549300CZ84WPNJZKY093",
+  "name": "BROOKFIELD ASSET MANAGEMENT VOTING",
+  "lei": "549300CZ84WPNJZKY093",
+  "country_laut_etf": "Canada",
+  "sector_laut_etf": "Financials",
+  "verified": false,
+  "human_review": "pending",
+  "quellen": [
+   "XIC",
+   "ESMA FIRDS"
+  ]
+ },
+ {
+  "issuer_id": "LEI:W7L3VLU8EHQY34Z36697",
+  "name": "BOMBARDIER CLASS B",
+  "lei": "W7L3VLU8EHQY34Z36697",
+  "country_laut_etf": "Canada",
+  "sector_laut_etf": "Industrials",
+  "verified": false,
+  "human_review": "pending",
+  "quellen": [
+   "XIC",
+   "ESMA FIRDS"
+  ]
+ },
+ {
+  "issuer_id": "LEI:549300JZNB745JT5WY51",
+  "name": "IMPERIAL OIL LTD",
+  "lei": "549300JZNB745JT5WY51",
+  "country_laut_etf": "Canada",
+  "sector_laut_etf": "Energy",
+  "verified": false,
+  "human_review": "pending",
+  "quellen": [
+   "XIC",
+   "ESMA FIRDS"
+  ]
+ },
+ {
+  "issuer_id": "LEI:5493002H8U24DJXQ4886",
+  "name": "RB GLOBAL",
+  "lei": "5493002H8U24DJXQ4886",
+  "country_laut_etf": "Canada",
+  "sector_laut_etf": "Industrials",
+  "verified": false,
+  "human_review": "pending",
+  "quellen": [
+   "XIC",
+   "ESMA FIRDS"
+  ]
+ },
+ {
+  "issuer_id": "LEI:549300IQ87LU6X6ERQ78",
+  "name": "WSP GLOBAL",
+  "lei": "549300IQ87LU6X6ERQ78",
+  "country_laut_etf": "Canada",
+  "sector_laut_etf": "Industrials",
+  "verified": false,
+  "human_review": "pending",
+  "quellen": [
+   "XIC",
+   "ESMA FIRDS"
+  ]
+ },
+ {
+  "issuer_id": "LEI:549300X81X4VZEESFU46",
+  "name": "GREAT WEST LIFECO INC",
+  "lei": "549300X81X4VZEESFU46",
+  "country_laut_etf": "Canada",
+  "sector_laut_etf": "Financials",
+  "verified": false,
+  "human_review": "pending",
+  "quellen": [
+   "XIC",
+   "ESMA FIRDS"
+  ]
+ },
+ {
+  "issuer_id": "LEI:894500I7AXG91VB3PM28",
+  "name": "TOURMALINE OIL CORP",
+  "lei": "894500I7AXG91VB3PM28",
+  "country_laut_etf": "Canada",
+  "sector_laut_etf": "Energy",
+  "verified": false,
+  "human_review": "pending",
+  "quellen": [
+   "XIC",
+   "ESMA FIRDS"
+  ]
+ },
+ {
+  "issuer_id": "LEI:NQZVQT2P5IUF2PGA1Q48",
+  "name": "EMERA INC",
+  "lei": "NQZVQT2P5IUF2PGA1Q48",
+  "country_laut_etf": "Canada",
+  "sector_laut_etf": "Utilities",
+  "verified": false,
+  "human_review": "pending",
+  "quellen": [
+   "XIC",
+   "ESMA FIRDS"
+  ]
+ },
+ {
+  "issuer_id": "LEI:95RWVLFZX6VGDZNNTN43",
+  "name": "MAGNA INTERNATIONAL",
+  "lei": "95RWVLFZX6VGDZNNTN43",
+  "country_laut_etf": "Canada",
+  "sector_laut_etf": "Consumer Discretionary",
+  "verified": false,
+  "human_review": "pending",
+  "quellen": [
+   "XIC",
+   "ESMA FIRDS"
+  ]
+ },
+ {
+  "issuer_id": "LEI:894500TX134IMF6NW757",
+  "name": "TELUS",
+  "lei": "894500TX134IMF6NW757",
+  "country_laut_etf": "Canada",
+  "sector_laut_etf": "Communication",
+  "verified": false,
+  "human_review": "pending",
+  "quellen": [
+   "XIC",
+   "ESMA FIRDS"
+  ]
+ },
+ {
+  "issuer_id": "LEI:549300WSRCZY73ZG3090",
+  "name": "CGI INC CLASS A",
+  "lei": "549300WSRCZY73ZG3090",
+  "country_laut_etf": "Canada",
+  "sector_laut_etf": "Information Technology",
+  "verified": false,
+  "human_review": "pending",
+  "quellen": [
+   "XIC",
+   "ESMA FIRDS"
+  ]
+ },
+ {
+  "issuer_id": "LEI:549300KQ7DCG4IXSNW78",
+  "name": "METRO",
+  "lei": "549300KQ7DCG4IXSNW78",
+  "country_laut_etf": "Canada",
+  "sector_laut_etf": "Consumer Staples",
+  "verified": false,
+  "human_review": "pending",
+  "quellen": [
+   "XIC",
+   "ESMA FIRDS"
+  ]
+ },
+ {
+  "issuer_id": "LEI:549300MKTF5851TYIB83",
+  "name": "PAN AMERICAN SILVER",
+  "lei": "549300MKTF5851TYIB83",
+  "country_laut_etf": "Canada",
+  "sector_laut_etf": "Materials",
+  "verified": false,
+  "human_review": "pending",
+  "quellen": [
+   "XIC",
+   "ESMA FIRDS"
+  ]
+ },
+ {
+  "issuer_id": "LEI:894500UA4G4BTB67II45",
+  "name": "WHITECAP RESOURCES INC",
+  "lei": "894500UA4G4BTB67II45",
+  "country_laut_etf": "Canada",
+  "sector_laut_etf": "Energy",
+  "verified": false,
+  "human_review": "pending",
+  "quellen": [
+   "XIC",
+   "ESMA FIRDS"
+  ]
+ },
+ {
+  "issuer_id": "LEI:894500E7NLBY9VZRT696",
+  "name": "GFL ENVIRONMENTAL SUBORDINATE VOTI",
+  "lei": "894500E7NLBY9VZRT696",
+  "country_laut_etf": "Canada",
+  "sector_laut_etf": "Industrials",
+  "verified": false,
+  "human_review": "pending",
+  "quellen": [
+   "XIC",
+   "ESMA FIRDS"
+  ]
+ },
+ {
+  "issuer_id": "LEI:549300I7UVBGWRYMYZ18",
+  "name": "FIRST QUANTUM MINERALS",
+  "lei": "549300I7UVBGWRYMYZ18",
+  "country_laut_etf": "Canada",
+  "sector_laut_etf": "Materials",
+  "verified": false,
+  "human_review": "pending",
+  "quellen": [
+   "XIC",
+   "ESMA FIRDS"
+  ]
+ },
+ {
+  "issuer_id": "LEI:549300ZXLJVHQAIXV215",
+  "name": "IA FINANCIAL INC",
+  "lei": "549300ZXLJVHQAIXV215",
+  "country_laut_etf": "Canada",
+  "sector_laut_etf": "Financials",
+  "verified": false,
+  "human_review": "pending",
+  "quellen": [
+   "XIC",
+   "ESMA FIRDS"
+  ]
+ },
+ {
+  "issuer_id": "LEI:5493000M6Z4XFIP6PF03",
+  "name": "ROGERS COMMUNICATIONS NON-VOTING I",
+  "lei": "5493000M6Z4XFIP6PF03",
+  "country_laut_etf": "Canada",
+  "sector_laut_etf": "Communication",
+  "verified": false,
+  "human_review": "pending",
+  "quellen": [
+   "XIC",
+   "ESMA FIRDS"
+  ]
+ },
+ {
+  "issuer_id": "LEI:549300561UZND4C7B569",
+  "name": "THOMSON REUTERS CORP",
+  "lei": "549300561UZND4C7B569",
+  "country_laut_etf": "Canada",
+  "sector_laut_etf": "Industrials",
+  "verified": false,
+  "human_review": "pending",
+  "quellen": [
+   "XIC",
+   "ESMA FIRDS"
+  ]
+ },
+ {
+  "issuer_id": "LEI:5493007QZDXTP1W2VL44",
+  "name": "HYDRO ONE",
+  "lei": "5493007QZDXTP1W2VL44",
+  "country_laut_etf": "Canada",
+  "sector_laut_etf": "Utilities",
+  "verified": false,
+  "human_review": "pending",
+  "quellen": [
+   "XIC",
+   "ESMA FIRDS"
+  ]
+ },
+ {
+  "issuer_id": "LEI:549300FAHC3L1QKNT280",
+  "name": "GEORGE WESTON",
+  "lei": "549300FAHC3L1QKNT280",
+  "country_laut_etf": "Canada",
+  "sector_laut_etf": "Consumer Staples",
+  "verified": false,
+  "human_review": "pending",
+  "quellen": [
+   "XIC",
+   "ESMA FIRDS"
+  ]
+ },
+ {
+  "issuer_id": "LEI:2549008X5V70MOS4HM10",
+  "name": "ALTAGAS",
+  "lei": "2549008X5V70MOS4HM10",
+  "country_laut_etf": "Canada",
+  "sector_laut_etf": "Utilities",
+  "verified": false,
+  "human_review": "pending",
+  "quellen": [
+   "XIC",
+   "ESMA FIRDS"
+  ]
+ },
+ {
+  "issuer_id": "LEI:549300N65GFVKSHGJW59",
+  "name": "TMX GROUP LTD",
+  "lei": "549300N65GFVKSHGJW59",
+  "country_laut_etf": "Canada",
+  "sector_laut_etf": "Financials",
+  "verified": false,
+  "human_review": "pending",
+  "quellen": [
+   "XIC",
+   "ESMA FIRDS"
+  ]
+ },
+ {
+  "issuer_id": "LEI:549300FQDIM6C8HTN269",
+  "name": "LUNDIN MINING",
+  "lei": "549300FQDIM6C8HTN269",
+  "country_laut_etf": "Canada",
+  "sector_laut_etf": "Materials",
+  "verified": false,
+  "human_review": "pending",
+  "quellen": [
+   "XIC",
+   "ESMA FIRDS"
+  ]
+ },
+ {
+  "issuer_id": "LEI:894500GIHFJZW7YS9660",
+  "name": "ALAMOS GOLD CLASS A",
+  "lei": "894500GIHFJZW7YS9660",
+  "country_laut_etf": "Canada",
+  "sector_laut_etf": "Materials",
+  "verified": false,
+  "human_review": "pending",
+  "quellen": [
+   "XIC",
+   "ESMA FIRDS"
+  ]
+ },
+ {
+  "issuer_id": "LEI:5493008W5EPRSLQ0B737",
+  "name": "TOROMONT INDUSTRIES LTD",
+  "lei": "5493008W5EPRSLQ0B737",
+  "country_laut_etf": "Canada",
+  "sector_laut_etf": "Industrials",
+  "verified": false,
+  "human_review": "pending",
+  "quellen": [
+   "XIC",
+   "ESMA FIRDS"
+  ]
+ },
+ {
+  "issuer_id": "LEI:5493005IN4V1SNP9PN75",
+  "name": "EQUINOX GOLD",
+  "lei": "5493005IN4V1SNP9PN75",
+  "country_laut_etf": "Canada",
+  "sector_laut_etf": "Materials",
+  "verified": false,
+  "human_review": "pending",
+  "quellen": [
+   "XIC",
+   "ESMA FIRDS"
+  ]
+ },
+ {
+  "issuer_id": "LEI:254900LXI62FUHZGH122",
+  "name": "KEYERA",
+  "lei": "254900LXI62FUHZGH122",
+  "country_laut_etf": "Canada",
+  "sector_laut_etf": "Energy",
+  "verified": false,
+  "human_review": "pending",
+  "quellen": [
+   "XIC",
+   "ESMA FIRDS"
+  ]
+ },
+ {
+  "issuer_id": "LEI:549300TD3EMSRRC0YH75",
+  "name": "CCL INDUSTRIES CLASS B",
+  "lei": "549300TD3EMSRRC0YH75",
+  "country_laut_etf": "Canada",
+  "sector_laut_etf": "Materials",
+  "verified": false,
+  "human_review": "pending",
+  "quellen": [
+   "XIC",
+   "ESMA FIRDS"
+  ]
+ },
+ {
+  "issuer_id": "LEI:549300U83HKFRL1EX527",
+  "name": "ARITZIA SUBORDINATE VOTING",
+  "lei": "549300U83HKFRL1EX527",
+  "country_laut_etf": "Canada",
+  "sector_laut_etf": "Consumer Discretionary",
+  "verified": false,
+  "human_review": "pending",
+  "quellen": [
+   "XIC",
+   "ESMA FIRDS"
+  ]
+ },
+ {
+  "issuer_id": "LEI:UL01OYG5OMLM5G6CFM03",
+  "name": "ATKINSREALIS GROUP INC",
+  "lei": "UL01OYG5OMLM5G6CFM03",
+  "country_laut_etf": "Canada",
+  "sector_laut_etf": "Industrials",
+  "verified": false,
+  "human_review": "pending",
+  "quellen": [
+   "XIC",
+   "ESMA FIRDS"
+  ]
+ },
+ {
+  "issuer_id": "LEI:549300MZ7NGUZDCP2T16",
+  "name": "STANTEC",
+  "lei": "549300MZ7NGUZDCP2T16",
+  "country_laut_etf": "Canada",
+  "sector_laut_etf": "Industrials",
+  "verified": false,
+  "human_review": "pending",
+  "quellen": [
+   "XIC",
+   "ESMA FIRDS"
+  ]
+ },
+ {
+  "issuer_id": "LEI:254900E7II30XAB9LA72",
+  "name": "IAMGOLD CORP",
+  "lei": "254900E7II30XAB9LA72",
+  "country_laut_etf": "Canada",
+  "sector_laut_etf": "Materials",
+  "verified": false,
+  "human_review": "pending",
+  "quellen": [
+   "XIC",
+   "ESMA FIRDS"
+  ]
+ },
+ {
+  "issuer_id": "LEI:549300FFM2BEH2GF1E44",
+  "name": "CAE",
+  "lei": "549300FFM2BEH2GF1E44",
+  "country_laut_etf": "Canada",
+  "sector_laut_etf": "Industrials",
+  "verified": false,
+  "human_review": "pending",
+  "quellen": [
+   "XIC",
+   "ESMA FIRDS"
+  ]
+ },
+ {
+  "issuer_id": "LEI:894500LX3TMESP27BE29",
+  "name": "HUDBAY MINERALS",
+  "lei": "894500LX3TMESP27BE29",
+  "country_laut_etf": "Canada",
+  "sector_laut_etf": "Materials",
+  "verified": false,
+  "human_review": "pending",
+  "quellen": [
+   "XIC",
+   "ESMA FIRDS"
+  ]
+ },
+ {
+  "issuer_id": "NAME:CA:DESCARTES-SYSTEMS",
+  "name": "DESCARTES SYSTEMS GROUP",
+  "lei": null,
+  "country_laut_etf": "Canada",
+  "sector_laut_etf": "Information Technology",
+  "verified": false,
+  "human_review": "pending",
+  "quellen": [
+   "XIC"
+  ]
+ },
+ {
+  "issuer_id": "LEI:549300QLDCP11KB6XW55",
+  "name": "FINNING INTERNATIONAL INC",
+  "lei": "549300QLDCP11KB6XW55",
+  "country_laut_etf": "Canada",
+  "sector_laut_etf": "Industrials",
+  "verified": false,
+  "human_review": "pending",
+  "quellen": [
+   "XIC",
+   "ESMA FIRDS"
+  ]
+ },
+ {
+  "issuer_id": "LEI:549300RLHDA7VQYMUB14",
+  "name": "CANADIAN TIRE LTD CLASS A",
+  "lei": "549300RLHDA7VQYMUB14",
+  "country_laut_etf": "Canada",
+  "sector_laut_etf": "Consumer Discretionary",
+  "verified": false,
+  "human_review": "pending",
+  "quellen": [
+   "XIC",
+   "ESMA FIRDS"
+  ]
+ },
+ {
+  "issuer_id": "LEI:5493004PWQ01YDD1IH62",
+  "name": "ELDORADO GOLD",
+  "lei": "5493004PWQ01YDD1IH62",
+  "country_laut_etf": "Canada",
+  "sector_laut_etf": "Materials",
+  "verified": false,
+  "human_review": "pending",
+  "quellen": [
+   "XIC",
+   "ESMA FIRDS"
+  ]
+ },
+ {
+  "issuer_id": "LEI:549300HH4U1DPY0TBT90",
+  "name": "SAPUTO",
+  "lei": "549300HH4U1DPY0TBT90",
+  "country_laut_etf": "Canada",
+  "sector_laut_etf": "Consumer Staples",
+  "verified": false,
+  "human_review": "pending",
+  "quellen": [
+   "XIC",
+   "ESMA FIRDS"
+  ]
+ },
+ {
+  "issuer_id": "LEI:5493007R9W7KO7SJN678",
+  "name": "TFI INTERNATIONAL",
+  "lei": "5493007R9W7KO7SJN678",
+  "country_laut_etf": "Canada",
+  "sector_laut_etf": "Industrials",
+  "verified": false,
+  "human_review": "pending",
+  "quellen": [
+   "XIC",
+   "ESMA FIRDS"
+  ]
+ },
+ {
+  "issuer_id": "LEI:549300QRKTEXGXYVPO80",
+  "name": "CAPITAL POWER CORP",
+  "lei": "549300QRKTEXGXYVPO80",
+  "country_laut_etf": "Canada",
+  "sector_laut_etf": "Utilities",
+  "verified": false,
+  "human_review": "pending",
+  "quellen": [
+   "XIC",
+   "ESMA FIRDS"
+  ]
+ },
+ {
+  "issuer_id": "NAME:CA:BROOKFIELD-PARTNERS-RENEWABLE",
+  "name": "BROOKFIELD RENEWABLE PARTNERS NON",
+  "lei": null,
+  "country_laut_etf": "Bermuda",
+  "sector_laut_etf": "Utilities",
+  "verified": false,
+  "human_review": "pending",
+  "quellen": [
+   "XIC"
+  ]
+ },
+ {
+  "issuer_id": "LEI:894500N5AZEQU0BLOT06",
+  "name": "G MINING VENTURES CORP",
+  "lei": "894500N5AZEQU0BLOT06",
+  "country_laut_etf": "Canada",
+  "sector_laut_etf": "Materials",
+  "verified": false,
+  "human_review": "pending",
+  "quellen": [
+   "XIC",
+   "ESMA FIRDS"
+  ]
+ },
+ {
+  "issuer_id": "LEI:2549000XS5TAFA3YF943",
+  "name": "SOUTH BOW",
+  "lei": "2549000XS5TAFA3YF943",
+  "country_laut_etf": "Canada",
+  "sector_laut_etf": "Energy",
+  "verified": false,
+  "human_review": "pending",
+  "quellen": [
+   "XIC",
+   "ESMA FIRDS"
+  ]
+ },
+ {
+  "issuer_id": "LEI:549300LATVTU0EIUMD45",
+  "name": "DPM METALS",
+  "lei": "549300LATVTU0EIUMD45",
+  "country_laut_etf": "Canada",
+  "sector_laut_etf": "Materials",
+  "verified": false,
+  "human_review": "pending",
+  "quellen": [
+   "XIC",
+   "ESMA FIRDS"
+  ]
+ },
+ {
+  "issuer_id": "LEI:5493000XUDIV75BCF118",
+  "name": "FIRSTSERVICE SUBORDINATE VOTING",
+  "lei": "5493000XUDIV75BCF118",
+  "country_laut_etf": "Canada",
+  "sector_laut_etf": "Real Estate",
+  "verified": false,
+  "human_review": "pending",
+  "quellen": [
+   "XIC",
+   "ESMA FIRDS"
+  ]
+ },
+ {
+  "issuer_id": "LEI:549300ZOV16K515FC525",
+  "name": "LUNDIN GOLD",
+  "lei": "549300ZOV16K515FC525",
+  "country_laut_etf": "Canada",
+  "sector_laut_etf": "Materials",
+  "verified": false,
+  "human_review": "pending",
+  "quellen": [
+   "XIC",
+   "ESMA FIRDS"
+  ]
+ },
+ {
+  "issuer_id": "LEI:549300SB3IBI34M00Z45",
+  "name": "GILDAN ACTIVEWEAR",
+  "lei": "549300SB3IBI34M00Z45",
+  "country_laut_etf": "Canada",
+  "sector_laut_etf": "Consumer Discretionary",
+  "verified": false,
+  "human_review": "pending",
+  "quellen": [
+   "XIC",
+   "ESMA FIRDS"
+  ]
+ },
+ {
+  "issuer_id": "LEI:549300TJZTXZMPQ6K004",
+  "name": "OR ROYALTIES INC",
+  "lei": "549300TJZTXZMPQ6K004",
+  "country_laut_etf": "Canada",
+  "sector_laut_etf": "Materials",
+  "verified": false,
+  "human_review": "pending",
+  "quellen": [
+   "XIC",
+   "ESMA FIRDS"
+  ]
+ },
+ {
+  "issuer_id": "LEI:529900PWCU5DUH1DYR51",
+  "name": "FIRST MAJESTIC SILVER",
+  "lei": "529900PWCU5DUH1DYR51",
+  "country_laut_etf": "Canada",
+  "sector_laut_etf": "Materials",
+  "verified": false,
+  "human_review": "pending",
+  "quellen": [
+   "XIC",
+   "ESMA FIRDS"
+  ]
+ },
+ {
+  "issuer_id": "LEI:5493006O1E1TBNKPQW25",
+  "name": "QUEBECOR CLASS B",
+  "lei": "5493006O1E1TBNKPQW25",
+  "country_laut_etf": "Canada",
+  "sector_laut_etf": "Communication",
+  "verified": false,
+  "human_review": "pending",
+  "quellen": [
+   "XIC",
+   "ESMA FIRDS"
+  ]
+ },
+ {
+  "issuer_id": "LEI:549300F7OK456M5NLM05",
+  "name": "B2GOLD",
+  "lei": "549300F7OK456M5NLM05",
+  "country_laut_etf": "Canada",
+  "sector_laut_etf": "Materials",
+  "verified": false,
+  "human_review": "pending",
+  "quellen": [
+   "XIC",
+   "ESMA FIRDS"
+  ]
+ },
+ {
+  "issuer_id": "LEI:549300HP7ONDQODZJV16",
+  "name": "OPEN TEXT",
+  "lei": "549300HP7ONDQODZJV16",
+  "country_laut_etf": "Canada",
+  "sector_laut_etf": "Information Technology",
+  "verified": false,
+  "human_review": "pending",
+  "quellen": [
+   "XIC",
+   "ESMA FIRDS"
+  ]
+ },
+ {
+  "issuer_id": "LEI:529900AXG582AP7CV733",
+  "name": "PRAIRIESKY ROYALTY",
+  "lei": "529900AXG582AP7CV733",
+  "country_laut_etf": "Canada",
+  "sector_laut_etf": "Energy",
+  "verified": false,
+  "human_review": "pending",
+  "quellen": [
+   "XIC",
+   "ESMA FIRDS"
+  ]
+ },
+ {
+  "issuer_id": "LEI:5493000PGBS1C22ELQ16",
+  "name": "ELEMENT FLEET MANAGEMENT",
+  "lei": "5493000PGBS1C22ELQ16",
+  "country_laut_etf": "Canada",
+  "sector_laut_etf": "Industrials",
+  "verified": false,
+  "human_review": "pending",
+  "quellen": [
+   "XIC",
+   "ESMA FIRDS"
+  ]
+ },
+ {
+  "issuer_id": "LEI:549300CBMSE8I9N3E232",
+  "name": "OCEANAGOLD CORPORATION CORP",
+  "lei": "549300CBMSE8I9N3E232",
+  "country_laut_etf": "Canada",
+  "sector_laut_etf": "Materials",
+  "verified": false,
+  "human_review": "pending",
+  "quellen": [
+   "XIC",
+   "ESMA FIRDS"
+  ]
+ },
+ {
+  "issuer_id": "LEI:549300HJD8NEGT71RF07",
+  "name": "BLACKBERRY",
+  "lei": "549300HJD8NEGT71RF07",
+  "country_laut_etf": "Canada",
+  "sector_laut_etf": "Information Technology",
+  "verified": false,
+  "human_review": "pending",
+  "quellen": [
+   "XIC",
+   "ESMA FIRDS"
+  ]
+ },
+ {
+  "issuer_id": "LEI:549300TSJHRXT9QXRD13",
+  "name": "METHANEX",
+  "lei": "549300TSJHRXT9QXRD13",
+  "country_laut_etf": "Canada",
+  "sector_laut_etf": "Materials",
+  "verified": false,
+  "human_review": "pending",
+  "quellen": [
+   "XIC",
+   "ESMA FIRDS"
+  ]
+ },
+ {
+  "issuer_id": "LEI:549300JD2KR7AB9DYJ38",
+  "name": "SSR MINING",
+  "lei": "549300JD2KR7AB9DYJ38",
+  "country_laut_etf": "Canada",
+  "sector_laut_etf": "Materials",
+  "verified": false,
+  "human_review": "pending",
+  "quellen": [
+   "XIC",
+   "ESMA FIRDS"
+  ]
+ },
+ {
+  "issuer_id": "LEI:254900RYHLVJNTUFDA95",
+  "name": "IGM FINANCIAL INC",
+  "lei": "254900RYHLVJNTUFDA95",
+  "country_laut_etf": "Canada",
+  "sector_laut_etf": "Financials",
+  "verified": false,
+  "human_review": "pending",
+  "quellen": [
+   "XIC",
+   "ESMA FIRDS"
+  ]
+ },
+ {
+  "issuer_id": "LEI:LWV4QIQODEH3VBHUFX07",
+  "name": "CANADIAN UTILITIES LTD CLASS A",
+  "lei": "LWV4QIQODEH3VBHUFX07",
+  "country_laut_etf": "Canada",
+  "sector_laut_etf": "Utilities",
+  "verified": false,
+  "human_review": "pending",
+  "quellen": [
+   "XIC",
+   "ESMA FIRDS"
+  ]
+ },
+ {
+  "issuer_id": "NAME:CA:CHARTWELL-RE-RESIDENCES-RETIREMENT",
+  "name": "CHARTWELL RETIREMENT RESIDENCES RE",
+  "lei": null,
+  "country_laut_etf": "Canada",
+  "sector_laut_etf": "Health Care",
+  "verified": false,
+  "human_review": "pending",
+  "quellen": [
+   "XIC"
+  ]
+ },
+ {
+  "issuer_id": "LEI:529900N0IXNXB3IP7F06",
+  "name": "NEXGEN ENERGY",
+  "lei": "529900N0IXNXB3IP7F06",
+  "country_laut_etf": "Canada",
+  "sector_laut_etf": "Energy",
+  "verified": false,
+  "human_review": "pending",
+  "quellen": [
+   "XIC",
+   "ESMA FIRDS"
+  ]
+ },
+ {
+  "issuer_id": "LEI:984500D5F3FC49D00C44",
+  "name": "DEFINITY FINANCIAL",
+  "lei": "984500D5F3FC49D00C44",
+  "country_laut_etf": "Canada",
+  "sector_laut_etf": "Financials",
+  "verified": false,
+  "human_review": "pending",
+  "quellen": [
+   "XIC",
+   "ESMA FIRDS"
+  ]
+ },
+ {
+  "issuer_id": "LEI:894500LB8PNE5C7CEN88",
+  "name": "ONEX",
+  "lei": "894500LB8PNE5C7CEN88",
+  "country_laut_etf": "Canada",
+  "sector_laut_etf": "Financials",
+  "verified": false,
+  "human_review": "pending",
+  "quellen": [
+   "XIC",
+   "ESMA FIRDS"
+  ]
+ },
+ {
+  "issuer_id": "NAME:CA:ATCO",
+  "name": "ATCO CLASS I",
+  "lei": null,
+  "country_laut_etf": "Canada",
+  "sector_laut_etf": "Utilities",
+  "verified": false,
+  "human_review": "pending",
+  "quellen": [
+   "XIC"
+  ]
+ },
+ {
+  "issuer_id": "LEI:549300TX0ZUSTEF7C719",
+  "name": "EMPIRE CLASS A",
+  "lei": "549300TX0ZUSTEF7C719",
+  "country_laut_etf": "Canada",
+  "sector_laut_etf": "Consumer Staples",
+  "verified": false,
+  "human_review": "pending",
+  "quellen": [
+   "XIC",
+   "ESMA FIRDS"
+  ]
+ },
+ {
+  "issuer_id": "LEI:549300G7SUZKHS2N8C38",
+  "name": "EXCHANGE INCOME CORP",
+  "lei": "549300G7SUZKHS2N8C38",
+  "country_laut_etf": "Canada",
+  "sector_laut_etf": "Industrials",
+  "verified": false,
+  "human_review": "pending",
+  "quellen": [
+   "XIC",
+   "ESMA FIRDS"
+  ]
+ },
+ {
+  "issuer_id": "LEI:213800R54EFFINMY1P02",
+  "name": "MDA SPACE",
+  "lei": "213800R54EFFINMY1P02",
+  "country_laut_etf": "Canada",
+  "sector_laut_etf": "Industrials",
+  "verified": false,
+  "human_review": "pending",
+  "quellen": [
+   "XIC",
+   "ESMA FIRDS"
+  ]
+ },
+ {
+  "issuer_id": "LEI:8945002IJ77NEBK48M81",
+  "name": "NORTHLAND POWER INC",
+  "lei": "8945002IJ77NEBK48M81",
+  "country_laut_etf": "Canada",
+  "sector_laut_etf": "Utilities",
+  "verified": false,
+  "human_review": "pending",
+  "quellen": [
+   "XIC",
+   "ESMA FIRDS"
+  ]
+ },
+ {
+  "issuer_id": "NAME:CA:ESTATE-INVESTMENT-REAL-RIOCAN-TRUS",
+  "name": "RIOCAN REAL ESTATE INVESTMENT TRUS",
+  "lei": null,
+  "country_laut_etf": "Canada",
+  "sector_laut_etf": "Real Estate",
+  "verified": false,
+  "human_review": "pending",
+  "quellen": [
+   "XIC"
+  ]
+ },
+ {
+  "issuer_id": "LEI:5299009VAZ14K7PFUQ15",
+  "name": "KINAXIS INC",
+  "lei": "5299009VAZ14K7PFUQ15",
+  "country_laut_etf": "Canada",
+  "sector_laut_etf": "Information Technology",
+  "verified": false,
+  "human_review": "pending",
+  "quellen": [
+   "XIC",
+   "ESMA FIRDS"
+  ]
+ },
+ {
+  "issuer_id": "LEI:549300QL07027186GQ85",
+  "name": "TOREX RESOURCES",
+  "lei": "549300QL07027186GQ85",
+  "country_laut_etf": "Canada",
+  "sector_laut_etf": "Materials",
+  "verified": false,
+  "human_review": "pending",
+  "quellen": [
+   "XIC",
+   "ESMA FIRDS"
+  ]
+ },
+ {
+  "issuer_id": "LEI:98450041CCB3E8QD3F53",
+  "name": "DISCOVERY MINING LTD",
+  "lei": "98450041CCB3E8QD3F53",
+  "country_laut_etf": "Canada",
+  "sector_laut_etf": "Materials",
+  "verified": false,
+  "human_review": "pending",
+  "quellen": [
+   "XIC",
+   "ESMA FIRDS"
+  ]
+ },
+ {
+  "issuer_id": "LEI:549300III6KGKKC42W63",
+  "name": "CAPSTONE COPPER CORP",
+  "lei": "549300III6KGKKC42W63",
+  "country_laut_etf": "Canada",
+  "sector_laut_etf": "Materials",
+  "verified": false,
+  "human_review": "pending",
+  "quellen": [
+   "XIC",
+   "ESMA FIRDS"
+  ]
+ },
+ {
+  "issuer_id": "LEI:D3O8K13PHLEXXD1DT480",
+  "name": "COLLIERS INTERNATIONAL GROUP SUBOR",
+  "lei": "D3O8K13PHLEXXD1DT480",
+  "country_laut_etf": "Canada",
+  "sector_laut_etf": "Real Estate",
+  "verified": false,
+  "human_review": "pending",
+  "quellen": [
+   "XIC",
+   "ESMA FIRDS"
+  ]
+ },
+ {
+  "issuer_id": "LEI:549300K5VIUTJXQL7X75",
+  "name": "ALGONQUIN POWER UTILITIES",
+  "lei": "549300K5VIUTJXQL7X75",
+  "country_laut_etf": "Canada",
+  "sector_laut_etf": "Utilities",
+  "verified": false,
+  "human_review": "pending",
+  "quellen": [
+   "XIC",
+   "ESMA FIRDS"
+  ]
+ },
+ {
+  "issuer_id": "LEI:4B4HI3CGXMBDC0G6BM51",
+  "name": "AIR CANADA VOTING AND VARIABLE VOT",
+  "lei": "4B4HI3CGXMBDC0G6BM51",
+  "country_laut_etf": "Canada",
+  "sector_laut_etf": "Industrials",
+  "verified": false,
+  "human_review": "pending",
+  "quellen": [
+   "XIC",
+   "ESMA FIRDS"
+  ]
+ },
+ {
+  "issuer_id": "LEI:254900EA8H0X9FEVZU11",
+  "name": "K92 MINING",
+  "lei": "254900EA8H0X9FEVZU11",
+  "country_laut_etf": "Canada",
+  "sector_laut_etf": "Materials",
+  "verified": false,
+  "human_review": "pending",
+  "quellen": [
+   "XIC",
+   "ESMA FIRDS"
+  ]
+ },
+ {
+  "issuer_id": "LEI:549300STK2KBVO6WED71",
+  "name": "ATHABASCA OIL",
+  "lei": "549300STK2KBVO6WED71",
+  "country_laut_etf": "Canada",
+  "sector_laut_etf": "Energy",
+  "verified": false,
+  "human_review": "pending",
+  "quellen": [
+   "XIC",
+   "ESMA FIRDS"
+  ]
+ },
+ {
+  "issuer_id": "NAME:CA:ESTATE-GRANITE-INVESTMENT-REAL-STA",
+  "name": "GRANITE REAL ESTATE INVESTMENT STA",
+  "lei": null,
+  "country_laut_etf": "Canada",
+  "sector_laut_etf": "Real Estate",
+  "verified": false,
+  "human_review": "pending",
+  "quellen": [
+   "XIC"
+  ]
+ },
+ {
+  "issuer_id": "LEI:549300WYW5D9I3FR0643",
+  "name": "GIBSON ENERGY",
+  "lei": "549300WYW5D9I3FR0643",
+  "country_laut_etf": "Canada",
+  "sector_laut_etf": "Energy",
+  "verified": false,
+  "human_review": "pending",
+  "quellen": [
+   "XIC",
+   "ESMA FIRDS"
+  ]
+ },
+ {
+  "issuer_id": "LEI:5493005WD1ZK6WBVR988",
+  "name": "WEST FRASER TIMBER",
+  "lei": "5493005WD1ZK6WBVR988",
+  "country_laut_etf": "Canada",
+  "sector_laut_etf": "Materials",
+  "verified": false,
+  "human_review": "pending",
+  "quellen": [
+   "XIC",
+   "ESMA FIRDS"
+  ]
+ },
+ {
+  "issuer_id": "LEI:549300TLKPX8BE14MH06",
+  "name": "TAMARACK VALLEY ENERGY LTD",
+  "lei": "549300TLKPX8BE14MH06",
+  "country_laut_etf": "Canada",
+  "sector_laut_etf": "Energy",
+  "verified": false,
+  "human_review": "pending",
+  "quellen": [
+   "XIC",
+   "ESMA FIRDS"
+  ]
+ },
+ {
+  "issuer_id": "LEI:5299006XZISURYIA4G32",
+  "name": "IVANHOE MINES CLASS A",
+  "lei": "5299006XZISURYIA4G32",
+  "country_laut_etf": "Canada",
+  "sector_laut_etf": "Materials",
+  "verified": false,
+  "human_review": "pending",
+  "quellen": [
+   "XIC",
+   "ESMA FIRDS"
+  ]
+ },
+ {
+  "issuer_id": "LEI:549300K0HXTMP5JJ0E62",
+  "name": "CENTERRA GOLD",
+  "lei": "549300K0HXTMP5JJ0E62",
+  "country_laut_etf": "Canada",
+  "sector_laut_etf": "Materials",
+  "verified": false,
+  "human_review": "pending",
+  "quellen": [
+   "XIC",
+   "ESMA FIRDS"
+  ]
+ },
+ {
+  "issuer_id": "LEI:254900PRZO6A4IZ69Q60",
+  "name": "TRANSALTA",
+  "lei": "254900PRZO6A4IZ69Q60",
+  "country_laut_etf": "Canada",
+  "sector_laut_etf": "Utilities",
+  "verified": false,
+  "human_review": "pending",
+  "quellen": [
+   "XIC",
+   "ESMA FIRDS"
+  ]
+ },
+ {
+  "issuer_id": "LEI:98450004AE67F646C503",
+  "name": "PEYTO EXPLORATION & DEVELOPMENT",
+  "lei": "98450004AE67F646C503",
+  "country_laut_etf": "Canada",
+  "sector_laut_etf": "Energy",
+  "verified": false,
+  "human_review": "pending",
+  "quellen": [
+   "XIC",
+   "ESMA FIRDS"
+  ]
+ },
+ {
+  "issuer_id": "NAME:CA:CAPITAL-ESTATE-FIRST-REAL-REALTY",
+  "name": "FIRST CAPITAL REALTY REAL ESTATE I",
+  "lei": null,
+  "country_laut_etf": "Canada",
+  "sector_laut_etf": "Real Estate",
+  "verified": false,
+  "human_review": "pending",
+  "quellen": [
+   "XIC"
+  ]
+ },
+ {
+  "issuer_id": "LEI:549300DCWSQFVVZ21289",
+  "name": "SKEENA RESOURCES",
+  "lei": "549300DCWSQFVVZ21289",
+  "country_laut_etf": "Canada",
+  "sector_laut_etf": "Materials",
+  "verified": false,
+  "human_review": "pending",
+  "quellen": [
+   "XIC",
+   "ESMA FIRDS"
+  ]
+ },
+ {
+  "issuer_id": "LEI:9845004C6BCE77ACA795",
+  "name": "MONTAGE GOLD",
+  "lei": "9845004C6BCE77ACA795",
+  "country_laut_etf": "Canada",
+  "sector_laut_etf": "Materials",
+  "verified": false,
+  "human_review": "pending",
+  "quellen": [
+   "XIC",
+   "ESMA FIRDS"
+  ]
+ },
+ {
+  "issuer_id": "NAME:CA:APARTMENT-CANADIAN-PROPERTIES-REAL",
+  "name": "CANADIAN APARTMENT PROPERTIES REAL",
+  "lei": null,
+  "country_laut_etf": "Canada",
+  "sector_laut_etf": "Real Estate",
+  "verified": false,
+  "human_review": "pending",
+  "quellen": [
+   "XIC"
+  ]
+ },
+ {
+  "issuer_id": "NAME:CA:CHOICE-ESTATE-INVE-PROPERTIES-REAL",
+  "name": "CHOICE PROPERTIES REAL ESTATE INVE",
+  "lei": null,
+  "country_laut_etf": "Canada",
+  "sector_laut_etf": "Real Estate",
+  "verified": false,
+  "human_review": "pending",
+  "quellen": [
+   "XIC"
+  ]
+ },
+ {
+  "issuer_id": "LEI:549300BWX8KJOTUL4M51",
+  "name": "AYA GOLD & SILVER INC",
+  "lei": "549300BWX8KJOTUL4M51",
+  "country_laut_etf": "Canada",
+  "sector_laut_etf": "Materials",
+  "verified": false,
+  "human_review": "pending",
+  "quellen": [
+   "XIC",
+   "ESMA FIRDS"
+  ]
+ },
+ {
+  "issuer_id": "LEI:984500NF54914EB1B646",
+  "name": "CES ENERGY SOLUTIONS CORP",
+  "lei": "984500NF54914EB1B646",
+  "country_laut_etf": "Canada",
+  "sector_laut_etf": "Energy",
+  "verified": false,
+  "human_review": "pending",
+  "quellen": [
+   "XIC",
+   "ESMA FIRDS"
+  ]
+ },
+ {
+  "issuer_id": "LEI:5493005F9VPHFO17OV54",
+  "name": "RUSSEL METALS",
+  "lei": "5493005F9VPHFO17OV54",
+  "country_laut_etf": "Canada",
+  "sector_laut_etf": "Industrials",
+  "verified": false,
+  "human_review": "pending",
+  "quellen": [
+   "XIC",
+   "ESMA FIRDS"
+  ]
+ },
+ {
+  "issuer_id": "LEI:549300P1WGG3QPKID017",
+  "name": "BIRD CONSTRUCTION",
+  "lei": "549300P1WGG3QPKID017",
+  "country_laut_etf": "Canada",
+  "sector_laut_etf": "Industrials",
+  "verified": false,
+  "human_review": "pending",
+  "quellen": [
+   "XIC",
+   "ESMA FIRDS"
+  ]
+ },
+ {
+  "issuer_id": "LEI:5493001GJ5TILX6L1F82",
+  "name": "ARIS MINING",
+  "lei": "5493001GJ5TILX6L1F82",
+  "country_laut_etf": "Canada",
+  "sector_laut_etf": "Materials",
+  "verified": false,
+  "human_review": "pending",
+  "quellen": [
+   "XIC",
+   "ESMA FIRDS"
+  ]
+ },
+ {
+  "issuer_id": "LEI:5493008M0TDGJOBY9122",
+  "name": "TOPAZ ENERGY",
+  "lei": "5493008M0TDGJOBY9122",
+  "country_laut_etf": "Canada",
+  "sector_laut_etf": "Energy",
+  "verified": false,
+  "human_review": "pending",
+  "quellen": [
+   "XIC",
+   "ESMA FIRDS"
+  ]
+ },
+ {
+  "issuer_id": "LEI:529900F5EXPGUY8WV366",
+  "name": "PREMIUM BRANDS HOLDINGS",
+  "lei": "529900F5EXPGUY8WV366",
+  "country_laut_etf": "Canada",
+  "sector_laut_etf": "Consumer Staples",
+  "verified": false,
+  "human_review": "pending",
+  "quellen": [
+   "XIC",
+   "ESMA FIRDS"
+  ]
+ },
+ {
+  "issuer_id": "LEI:254900D63U62QS84H719",
+  "name": "WESDOME GOLD MINES LTD",
+  "lei": "254900D63U62QS84H719",
+  "country_laut_etf": "Canada",
+  "sector_laut_etf": "Materials",
+  "verified": false,
+  "human_review": "pending",
+  "quellen": [
+   "XIC",
+   "ESMA FIRDS"
+  ]
+ },
+ {
+  "issuer_id": "LEI:549300R5LTV2H7I1I079",
+  "name": "BAYTEX ENERGY",
+  "lei": "549300R5LTV2H7I1I079",
+  "country_laut_etf": "Canada",
+  "sector_laut_etf": "Energy",
+  "verified": false,
+  "human_review": "pending",
+  "quellen": [
+   "XIC",
+   "ESMA FIRDS"
+  ]
+ },
+ {
+  "issuer_id": "LEI:549300VROCXVWXFR8B83",
+  "name": "AECON GROUP",
+  "lei": "549300VROCXVWXFR8B83",
+  "country_laut_etf": "Canada",
+  "sector_laut_etf": "Industrials",
+  "verified": false,
+  "human_review": "pending",
+  "quellen": [
+   "XIC",
+   "ESMA FIRDS"
+  ]
+ },
+ {
+  "issuer_id": "LEI:5493007LOVNNLYJ6KZ35",
+  "name": "STELLA JONES",
+  "lei": "5493007LOVNNLYJ6KZ35",
+  "country_laut_etf": "Canada",
+  "sector_laut_etf": "Materials",
+  "verified": false,
+  "human_review": "pending",
+  "quellen": [
+   "XIC",
+   "ESMA FIRDS"
+  ]
+ },
+ {
+  "issuer_id": "NAME:CA:ESTATE-INVESTMENT-REAL-SMARTCENTRES",
+  "name": "SMARTCENTRES RL ESTATE INVESTMENT",
+  "lei": null,
+  "country_laut_etf": "Canada",
+  "sector_laut_etf": "Real Estate",
+  "verified": false,
+  "human_review": "pending",
+  "quellen": [
+   "XIC"
+  ]
+ },
+ {
+  "issuer_id": "NAME:CA:DREAM-ESTATE-INDUSTRIAL-INVES-REAL",
+  "name": "DREAM INDUSTRIAL REAL ESTATE INVES",
+  "lei": null,
+  "country_laut_etf": "Canada",
+  "sector_laut_etf": "Real Estate",
+  "verified": false,
+  "human_review": "pending",
+  "quellen": [
+   "XIC"
+  ]
+ },
+ {
+  "issuer_id": "LEI:549300KL8A21SEIO8I47",
+  "name": "ERO COPPER",
+  "lei": "549300KL8A21SEIO8I47",
+  "country_laut_etf": "Canada",
+  "sector_laut_etf": "Materials",
+  "verified": false,
+  "human_review": "pending",
+  "quellen": [
+   "XIC",
+   "ESMA FIRDS"
+  ]
+ },
+ {
+  "issuer_id": "LEI:529900EPQGESIRCPY551",
+  "name": "BRP SUBORDINATE VOTING",
+  "lei": "529900EPQGESIRCPY551",
+  "country_laut_etf": "Canada",
+  "sector_laut_etf": "Consumer Discretionary",
+  "verified": false,
+  "human_review": "pending",
+  "quellen": [
+   "XIC",
+   "ESMA FIRDS"
+  ]
+ },
+ {
+  "issuer_id": "LEI:5493003Q88RVK7CW4735",
+  "name": "FORTUNA MINING CORP",
+  "lei": "5493003Q88RVK7CW4735",
+  "country_laut_etf": "Canada",
+  "sector_laut_etf": "Materials",
+  "verified": false,
+  "human_review": "pending",
+  "quellen": [
+   "XIC",
+   "ESMA FIRDS"
+  ]
+ },
+ {
+  "issuer_id": "LEI:54930014N7872VUS3F89",
+  "name": "ENERFLEX",
+  "lei": "54930014N7872VUS3F89",
+  "country_laut_etf": "Canada",
+  "sector_laut_etf": "Energy",
+  "verified": false,
+  "human_review": "pending",
+  "quellen": [
+   "XIC",
+   "ESMA FIRDS"
+  ]
+ },
+ {
+  "issuer_id": "LEI:9845003FEO1A66376A92",
+  "name": "SEABRIDGE GOLD",
+  "lei": "9845003FEO1A66376A92",
+  "country_laut_etf": "Canada",
+  "sector_laut_etf": "Materials",
+  "verified": false,
+  "human_review": "pending",
+  "quellen": [
+   "XIC",
+   "ESMA FIRDS"
+  ]
+ },
+ {
+  "issuer_id": "LEI:B3BS7ACMDUWISF18KY76",
+  "name": "BAUSCH HEALTH COMPANIES",
+  "lei": "B3BS7ACMDUWISF18KY76",
+  "country_laut_etf": "Canada",
+  "sector_laut_etf": "Health Care",
+  "verified": false,
+  "human_review": "pending",
+  "quellen": [
+   "XIC",
+   "ESMA FIRDS"
+  ]
+ },
+ {
+  "issuer_id": "LEI:549300LW6VIYFRMFBU20",
+  "name": "LINAMAR",
+  "lei": "549300LW6VIYFRMFBU20",
+  "country_laut_etf": "Canada",
+  "sector_laut_etf": "Consumer Discretionary",
+  "verified": false,
+  "human_review": "pending",
+  "quellen": [
+   "XIC",
+   "ESMA FIRDS"
+  ]
+ },
+ {
+  "issuer_id": "LEI:894500S5G4JFSRGK8L37",
+  "name": "ALLIED GOLD",
+  "lei": "894500S5G4JFSRGK8L37",
+  "country_laut_etf": "Canada",
+  "sector_laut_etf": "Materials",
+  "verified": false,
+  "human_review": "pending",
+  "quellen": [
+   "XIC",
+   "ESMA FIRDS"
+  ]
+ },
+ {
+  "issuer_id": "LEI:529900HTWYRE4BD0GQ69",
+  "name": "TREKOR METALS",
+  "lei": "529900HTWYRE4BD0GQ69",
+  "country_laut_etf": "Canada",
+  "sector_laut_etf": "Materials",
+  "verified": false,
+  "human_review": "pending",
+  "quellen": [
+   "XIC",
+   "ESMA FIRDS"
+  ]
+ },
+ {
+  "issuer_id": "LEI:5493005GU1NFX4YB2S73",
+  "name": "5N PLUS",
+  "lei": "5493005GU1NFX4YB2S73",
+  "country_laut_etf": "Canada",
+  "sector_laut_etf": "Materials",
+  "verified": false,
+  "human_review": "pending",
+  "quellen": [
+   "XIC",
+   "ESMA FIRDS"
+  ]
+ },
+ {
+  "issuer_id": "LEI:254900R7NJ1TEYIM4E61",
+  "name": "TRIPLE FLAG PRECIOUS METALS",
+  "lei": "254900R7NJ1TEYIM4E61",
+  "country_laut_etf": "Canada",
+  "sector_laut_etf": "Materials",
+  "verified": false,
+  "human_review": "pending",
+  "quellen": [
+   "XIC",
+   "ESMA FIRDS"
+  ]
+ },
+ {
+  "issuer_id": "NAME:CA:NORTH-WEST",
+  "name": "NORTH WEST COMPANY INC",
+  "lei": null,
+  "country_laut_etf": "Canada",
+  "sector_laut_etf": "Consumer Staples",
+  "verified": false,
+  "human_review": "pending",
+  "quellen": [
+   "XIC"
+  ]
+ },
+ {
+  "issuer_id": "LEI:254900QHJAD5TP2JNM15",
+  "name": "SPROTT INC",
+  "lei": "254900QHJAD5TP2JNM15",
+  "country_laut_etf": "Canada",
+  "sector_laut_etf": "Financials",
+  "verified": false,
+  "human_review": "pending",
+  "quellen": [
+   "XIC",
+   "ESMA FIRDS"
+  ]
+ },
+ {
+  "issuer_id": "LEI:549300QAXPCRULOPD247",
+  "name": "EQB",
+  "lei": "549300QAXPCRULOPD247",
+  "country_laut_etf": "Canada",
+  "sector_laut_etf": "Financials",
+  "verified": false,
+  "human_review": "pending",
+  "quellen": [
+   "XIC",
+   "ESMA FIRDS"
+  ]
+ },
+ {
+  "issuer_id": "LEI:549300IF2E29780PPV02",
+  "name": "ENDEAVOUR SILVER CORP",
+  "lei": "549300IF2E29780PPV02",
+  "country_laut_etf": "Canada",
+  "sector_laut_etf": "Materials",
+  "verified": false,
+  "human_review": "pending",
+  "quellen": [
+   "XIC",
+   "ESMA FIRDS"
+  ]
+ },
+ {
+  "issuer_id": "LEI:549300FVHMLW88VSTP09",
+  "name": "BOYD GROUP SERVICES INC",
+  "lei": "549300FVHMLW88VSTP09",
+  "country_laut_etf": "Canada",
+  "sector_laut_etf": "Industrials",
+  "verified": false,
+  "human_review": "pending",
+  "quellen": [
+   "XIC",
+   "ESMA FIRDS"
+  ]
+ },
+ {
+  "issuer_id": "NAME:CA:ESTATE-INVESTMENT-PRIMARIS-REAL-UN",
+  "name": "PRIMARIS REAL ESTATE INVESTMENT UN",
+  "lei": null,
+  "country_laut_etf": "Canada",
+  "sector_laut_etf": "Real Estate",
+  "verified": false,
+  "human_review": "pending",
+  "quellen": [
+   "XIC"
+  ]
+ },
+ {
+  "issuer_id": "LEI:8945002R5I3793F4AZ38",
+  "name": "STRATHCONA RESOURCES LTD",
+  "lei": "8945002R5I3793F4AZ38",
+  "country_laut_etf": "Canada",
+  "sector_laut_etf": "Energy",
+  "verified": false,
+  "human_review": "pending",
+  "quellen": [
+   "XIC",
+   "ESMA FIRDS"
+  ]
+ },
+ {
+  "issuer_id": "LEI:549300KLU7H5NA3I5P62",
+  "name": "MULLEN GROUP",
+  "lei": "549300KLU7H5NA3I5P62",
+  "country_laut_etf": "Canada",
+  "sector_laut_etf": "Industrials",
+  "verified": false,
+  "human_review": "pending",
+  "quellen": [
+   "XIC",
+   "ESMA FIRDS"
+  ]
+ },
+ {
+  "issuer_id": "LEI:2549005XWAHF5YCLN502",
+  "name": "BROOKFIELD BUSINESS CORP CLASS A",
+  "lei": "2549005XWAHF5YCLN502",
+  "country_laut_etf": "Canada",
+  "sector_laut_etf": "Industrials",
+  "verified": false,
+  "human_review": "pending",
+  "quellen": [
+   "XIC",
+   "ESMA FIRDS"
+  ]
+ },
+ {
+  "issuer_id": "NAME:CA:ESTATE-HANDR-INVESTMENT-REAL",
+  "name": "HANDR REAL ESTATE INVESTMENT TRUST",
+  "lei": null,
+  "country_laut_etf": "Canada",
+  "sector_laut_etf": "Real Estate",
+  "verified": false,
+  "human_review": "pending",
+  "quellen": [
+   "XIC"
+  ]
+ },
+ {
+  "issuer_id": "NAME:CA:BADGER-INFRASTRUCTURE-LT-SOLUTIONS",
+  "name": "BADGER INFRASTRUCTURE SOLUTIONS LT",
+  "lei": null,
+  "country_laut_etf": "Canada",
+  "sector_laut_etf": "Industrials",
+  "verified": false,
+  "human_review": "pending",
+  "quellen": [
+   "XIC"
+  ]
+ },
+ {
+  "issuer_id": "LEI:549300XIU4JQ0GKLRG88",
+  "name": "HEADWATER EXPLORATION INC",
+  "lei": "549300XIU4JQ0GKLRG88",
+  "country_laut_etf": "Canada",
+  "sector_laut_etf": "Energy",
+  "verified": false,
+  "human_review": "pending",
+  "quellen": [
+   "XIC",
+   "ESMA FIRDS"
+  ]
+ },
+ {
+  "issuer_id": "LEI:5493001DQ0G74DE4CY39",
+  "name": "EXTENDICARE",
+  "lei": "5493001DQ0G74DE4CY39",
+  "country_laut_etf": "Canada",
+  "sector_laut_etf": "Health Care",
+  "verified": false,
+  "human_review": "pending",
+  "quellen": [
+   "XIC",
+   "ESMA FIRDS"
+  ]
+ },
+ {
+  "issuer_id": "LEI:52990092RT3UCQ7G3177",
+  "name": "SILVERCORP METALS INC",
+  "lei": "52990092RT3UCQ7G3177",
+  "country_laut_etf": "Canada",
+  "sector_laut_etf": "Materials",
+  "verified": false,
+  "human_review": "pending",
+  "quellen": [
+   "XIC",
+   "ESMA FIRDS"
+  ]
+ },
+ {
+  "issuer_id": "LEI:549300L82S8COFYB0K37",
+  "name": "PARAMOUNT RESOURCE CLASS A",
+  "lei": "549300L82S8COFYB0K37",
+  "country_laut_etf": "Canada",
+  "sector_laut_etf": "Energy",
+  "verified": false,
+  "human_review": "pending",
+  "quellen": [
+   "XIC",
+   "ESMA FIRDS"
+  ]
+ },
+ {
+  "issuer_id": "NAME:CA:INTERNATIONAL-PETROLEUM",
+  "name": "INTERNATIONAL PETROLEUM",
+  "lei": null,
+  "country_laut_etf": "Canada",
+  "sector_laut_etf": "Energy",
+  "verified": false,
+  "human_review": "pending",
+  "quellen": [
+   "XIC"
+  ]
+ },
+ {
+  "issuer_id": "LEI:529900587LVZTJ2BHS60",
+  "name": "NOVAGOLD RESOURCES INC",
+  "lei": "529900587LVZTJ2BHS60",
+  "country_laut_etf": "Canada",
+  "sector_laut_etf": "Materials",
+  "verified": false,
+  "human_review": "pending",
+  "quellen": [
+   "XIC",
+   "ESMA FIRDS"
+  ]
+ },
+ {
+  "issuer_id": "NAME:CA:MINERALS-NGEX",
+  "name": "NGEX MINERALS",
+  "lei": null,
+  "country_laut_etf": "Canada",
+  "sector_laut_etf": "Materials",
+  "verified": false,
+  "human_review": "pending",
+  "quellen": [
+   "XIC"
+  ]
+ },
+ {
+  "issuer_id": "LEI:529900KRYLKJ2WW87P48",
+  "name": "FREEHOLD ROYALTIES",
+  "lei": "529900KRYLKJ2WW87P48",
+  "country_laut_etf": "Canada",
+  "sector_laut_etf": "Energy",
+  "verified": false,
+  "human_review": "pending",
+  "quellen": [
+   "XIC",
+   "ESMA FIRDS"
+  ]
+ },
+ {
+  "issuer_id": "LEI:549300K3HNLZV4V5LL42",
+  "name": "SIENNA SENIOR LIVING INC",
+  "lei": "549300K3HNLZV4V5LL42",
+  "country_laut_etf": "Canada",
+  "sector_laut_etf": "Health Care",
+  "verified": false,
+  "human_review": "pending",
+  "quellen": [
+   "XIC",
+   "ESMA FIRDS"
+  ]
+ },
+ {
+  "issuer_id": "LEI:8945009D1HGCJC8M8A68",
+  "name": "VERMILION ENERGY",
+  "lei": "8945009D1HGCJC8M8A68",
+  "country_laut_etf": "Canada",
+  "sector_laut_etf": "Energy",
+  "verified": false,
+  "human_review": "pending",
+  "quellen": [
+   "XIC",
+   "ESMA FIRDS"
+  ]
+ },
+ {
+  "issuer_id": "NAME:CA:BOARDWALK-ESTATE-INVESTMENT-REAL",
+  "name": "BOARDWALK REAL ESTATE INVESTMENT T",
+  "lei": null,
+  "country_laut_etf": "Canada",
+  "sector_laut_etf": "Real Estate",
+  "verified": false,
+  "human_review": "pending",
+  "quellen": [
+   "XIC"
+  ]
+ },
+ {
+  "issuer_id": "LEI:54930083UJGDUCMJMU61",
+  "name": "ALTIUS MINERALS CORP",
+  "lei": "54930083UJGDUCMJMU61",
+  "country_laut_etf": "Canada",
+  "sector_laut_etf": "Materials",
+  "verified": false,
+  "human_review": "pending",
+  "quellen": [
+   "XIC",
+   "ESMA FIRDS"
+  ]
+ },
+ {
+  "issuer_id": "LEI:549300WK5YRPOB2DTT64",
+  "name": "ADVANTAGE ENERGY",
+  "lei": "549300WK5YRPOB2DTT64",
+  "country_laut_etf": "Canada",
+  "sector_laut_etf": "Energy",
+  "verified": false,
+  "human_review": "pending",
+  "quellen": [
+   "XIC",
+   "ESMA FIRDS"
+  ]
+ },
+ {
+  "issuer_id": "LEI:549300VX6QRAVXOXZW59",
+  "name": "NFI GROUP",
+  "lei": "549300VX6QRAVXOXZW59",
+  "country_laut_etf": "Canada",
+  "sector_laut_etf": "Industrials",
+  "verified": false,
+  "human_review": "pending",
+  "quellen": [
+   "XIC",
+   "ESMA FIRDS"
+  ]
+ },
+ {
+  "issuer_id": "LEI:529900JWGSW17LJK6586",
+  "name": "DENISON MINES CORP",
+  "lei": "529900JWGSW17LJK6586",
+  "country_laut_etf": "Canada",
+  "sector_laut_etf": "Energy",
+  "verified": false,
+  "human_review": "pending",
+  "quellen": [
+   "XIC",
+   "ESMA FIRDS"
+  ]
+ },
+ {
+  "issuer_id": "LEI:529900P0GCATXMGK8I62",
+  "name": "ENERGY FUELS",
+  "lei": "529900P0GCATXMGK8I62",
+  "country_laut_etf": "Canada",
+  "sector_laut_etf": "Energy",
+  "verified": false,
+  "human_review": "pending",
+  "quellen": [
+   "XIC",
+   "ESMA FIRDS"
+  ]
+ },
+ {
+  "issuer_id": "NAME:CA:APARTMENT-KILLAM-REIT",
+  "name": "KILLAM APARTMENT REIT UNITS CLASS",
+  "lei": null,
+  "country_laut_etf": "Canada",
+  "sector_laut_etf": "Real Estate",
+  "verified": false,
+  "human_review": "pending",
+  "quellen": [
+   "XIC"
+  ]
+ },
+ {
+  "issuer_id": "LEI:549300LX07S5J8F76F37",
+  "name": "MAPLE LEAF FOODS",
+  "lei": "549300LX07S5J8F76F37",
+  "country_laut_etf": "Canada",
+  "sector_laut_etf": "Consumer Staples",
+  "verified": false,
+  "human_review": "pending",
+  "quellen": [
+   "XIC",
+   "ESMA FIRDS"
+  ]
+ },
+ {
+  "issuer_id": "LEI:5493005KP4RP3IU7HQ41",
+  "name": "ATS",
+  "lei": "5493005KP4RP3IU7HQ41",
+  "country_laut_etf": "Canada",
+  "sector_laut_etf": "Industrials",
+  "verified": false,
+  "human_review": "pending",
+  "quellen": [
+   "XIC",
+   "ESMA FIRDS"
+  ]
+ },
+ {
+  "issuer_id": "LEI:549300OBXGWYN1VOFC24",
+  "name": "KELT EXPLORATION",
+  "lei": "549300OBXGWYN1VOFC24",
+  "country_laut_etf": "Canada",
+  "sector_laut_etf": "Energy",
+  "verified": false,
+  "human_review": "pending",
+  "quellen": [
+   "XIC",
+   "ESMA FIRDS"
+  ]
+ },
+ {
+  "issuer_id": "LEI:894500P97DX8Q6G1OU04",
+  "name": "SPARTAN DELTA",
+  "lei": "894500P97DX8Q6G1OU04",
+  "country_laut_etf": "Canada",
+  "sector_laut_etf": "Energy",
+  "verified": false,
+  "human_review": "pending",
+  "quellen": [
+   "XIC",
+   "ESMA FIRDS"
+  ]
+ },
+ {
+  "issuer_id": "LEI:529900BQBMS383SEPY05",
+  "name": "PERPETUA RESOURCES",
+  "lei": "529900BQBMS383SEPY05",
+  "country_laut_etf": "United States",
+  "sector_laut_etf": "Materials",
+  "verified": false,
+  "human_review": "pending",
+  "quellen": [
+   "XIC",
+   "ESMA FIRDS"
+  ]
+ },
+ {
+  "issuer_id": "NAME:CA:CURALEAF-HOLDINGS",
+  "name": "CURALEAF HLDGS",
+  "lei": null,
+  "country_laut_etf": "Canada",
+  "sector_laut_etf": "Health Care",
+  "verified": false,
+  "human_review": "pending",
+  "quellen": [
+   "XIC"
+  ]
+ },
+ {
+  "issuer_id": "LEI:254900EIXJ4NHQFFRO95",
+  "name": "JAMIESON WELLNESS",
+  "lei": "254900EIXJ4NHQFFRO95",
+  "country_laut_etf": "Canada",
+  "sector_laut_etf": "Consumer Staples",
+  "verified": false,
+  "human_review": "pending",
+  "quellen": [
+   "XIC",
+   "ESMA FIRDS"
+  ]
+ },
+ {
+  "issuer_id": "LEI:5493007VPNETW465DN04",
+  "name": "RICHELIEU HARDWARE",
+  "lei": "5493007VPNETW465DN04",
+  "country_laut_etf": "Canada",
+  "sector_laut_etf": "Industrials",
+  "verified": false,
+  "human_review": "pending",
+  "quellen": [
+   "XIC",
+   "ESMA FIRDS"
+  ]
+ },
+ {
+  "issuer_id": "LEI:549300U7LWRGTY6XWK67",
+  "name": "PAREX RESOURCES",
+  "lei": "549300U7LWRGTY6XWK67",
+  "country_laut_etf": "Canada",
+  "sector_laut_etf": "Energy",
+  "verified": false,
+  "human_review": "pending",
+  "quellen": [
+   "XIC",
+   "ESMA FIRDS"
+  ]
+ },
+ {
+  "issuer_id": "LEI:5493000BBN3EF2L0XW29",
+  "name": "BIRCHCLIFF ENERGY",
+  "lei": "5493000BBN3EF2L0XW29",
+  "country_laut_etf": "Canada",
+  "sector_laut_etf": "Energy",
+  "verified": false,
+  "human_review": "pending",
+  "quellen": [
+   "XIC",
+   "ESMA FIRDS"
+  ]
+ },
+ {
+  "issuer_id": "NAME:CA:CROMBIE-ESTATE-INVESTMENT-REAL-TRU",
+  "name": "CROMBIE REAL ESTATE INVESTMENT TRU",
+  "lei": null,
+  "country_laut_etf": "Canada",
+  "sector_laut_etf": "Real Estate",
+  "verified": false,
+  "human_review": "pending",
+  "quellen": [
+   "XIC"
+  ]
+ },
+ {
+  "issuer_id": "LEI:529900VVFSE66NAIST38",
+  "name": "SNOWLINE GOLD",
+  "lei": "529900VVFSE66NAIST38",
+  "country_laut_etf": "Canada",
+  "sector_laut_etf": "Materials",
+  "verified": false,
+  "human_review": "pending",
+  "quellen": [
+   "XIC",
+   "ESMA FIRDS"
+  ]
+ },
+ {
+  "issuer_id": "LEI:254900H4S2STHU44PM25",
+  "name": "TERRAVEST INDUSTRIES INC",
+  "lei": "254900H4S2STHU44PM25",
+  "country_laut_etf": "Canada",
+  "sector_laut_etf": "Energy",
+  "verified": false,
+  "human_review": "pending",
+  "quellen": [
+   "XIC",
+   "ESMA FIRDS"
+  ]
+ },
+ {
+  "issuer_id": "LEI:254900T8MDWRTGMFZ257",
+  "name": "LIGHTSPEED COMMERCE",
+  "lei": "254900T8MDWRTGMFZ257",
+  "country_laut_etf": "Canada",
+  "sector_laut_etf": "Financials",
+  "verified": false,
+  "human_review": "pending",
+  "quellen": [
+   "XIC",
+   "ESMA FIRDS"
+  ]
+ },
+ {
+  "issuer_id": "NAME:CA:HAMMOND-POWER-SOLUTIONS",
+  "name": "HAMMOND POWER SOLUTIONS CLASS A",
+  "lei": null,
+  "country_laut_etf": "Canada",
+  "sector_laut_etf": "Industrials",
+  "verified": false,
+  "human_review": "pending",
+  "quellen": [
+   "XIC"
+  ]
+ },
+ {
+  "issuer_id": "LEI:254900WR30BQ8MPSYU80",
+  "name": "ABRASILVER RESOURCE CORP",
+  "lei": "254900WR30BQ8MPSYU80",
+  "country_laut_etf": "Canada",
+  "sector_laut_etf": "Materials",
+  "verified": false,
+  "human_review": "pending",
+  "quellen": [
+   "XIC",
+   "ESMA FIRDS"
+  ]
+ },
+ {
+  "issuer_id": "LEI:549300XHH6LJM6IAXV57",
+  "name": "COGECO COMMUNICATIONS SUBORDINATE",
+  "lei": "549300XHH6LJM6IAXV57",
+  "country_laut_etf": "Canada",
+  "sector_laut_etf": "Communication",
+  "verified": false,
+  "human_review": "pending",
+  "quellen": [
+   "XIC",
+   "ESMA FIRDS"
+  ]
+ },
+ {
+  "issuer_id": "LEI:549300C4GBBANCBT3K72",
+  "name": "CARGOJET",
+  "lei": "549300C4GBBANCBT3K72",
+  "country_laut_etf": "Canada",
+  "sector_laut_etf": "Industrials",
+  "verified": false,
+  "human_review": "pending",
+  "quellen": [
+   "XIC",
+   "ESMA FIRDS"
+  ]
+ },
+ {
+  "issuer_id": "LEI:54930041VO1EIY4IV355",
+  "name": "ALTUS GROUP",
+  "lei": "54930041VO1EIY4IV355",
+  "country_laut_etf": "Canada",
+  "sector_laut_etf": "Real Estate",
+  "verified": false,
+  "human_review": "pending",
+  "quellen": [
+   "XIC",
+   "ESMA FIRDS"
+  ]
+ },
+ {
+  "issuer_id": "LEI:2549004SP30Z0UWKH476",
+  "name": "SOUTHERN CROSS GOLD CONSOLIDATED L",
+  "lei": "2549004SP30Z0UWKH476",
+  "country_laut_etf": "Canada",
+  "sector_laut_etf": "Materials",
+  "verified": false,
+  "human_review": "pending",
+  "quellen": [
+   "XIC",
+   "ESMA FIRDS"
+  ]
+ },
+ {
+  "issuer_id": "LEI:549300ADJF7HWIEDL366",
+  "name": "VIZSLA SILVER",
+  "lei": "549300ADJF7HWIEDL366",
+  "country_laut_etf": "Canada",
+  "sector_laut_etf": "Materials",
+  "verified": false,
+  "human_review": "pending",
+  "quellen": [
+   "XIC",
+   "ESMA FIRDS"
+  ]
+ },
+ {
+  "issuer_id": "LEI:549300S7H452RZFP8305",
+  "name": "TRISURA GROUP",
+  "lei": "549300S7H452RZFP8305",
+  "country_laut_etf": "Canada",
+  "sector_laut_etf": "Financials",
+  "verified": false,
+  "human_review": "pending",
+  "quellen": [
+   "XIC",
+   "ESMA FIRDS"
+  ]
+ },
+ {
+  "issuer_id": "NAME:CA:CT-REIT",
+  "name": "CT REIT UNITS TRUST",
+  "lei": null,
+  "country_laut_etf": "Canada",
+  "sector_laut_etf": "Real Estate",
+  "verified": false,
+  "human_review": "pending",
+  "quellen": [
+   "XIC"
+  ]
+ },
+ {
+  "issuer_id": "LEI:391200OUOEWDQSEJ0Y74",
+  "name": "LABRADOR IRON ORE ROYALTY",
+  "lei": "391200OUOEWDQSEJ0Y74",
+  "country_laut_etf": "Canada",
+  "sector_laut_etf": "Materials",
+  "verified": false,
+  "human_review": "pending",
+  "quellen": [
+   "XIC",
+   "ESMA FIRDS"
+  ]
+ },
+ {
+  "issuer_id": "NAME:CA:GOLD",
+  "name": "I GOLD CORP",
+  "lei": null,
+  "country_laut_etf": "Canada",
+  "sector_laut_etf": "Materials",
+  "verified": false,
+  "human_review": "pending",
+  "quellen": [
+   "XIC"
+  ]
+ },
+ {
+  "issuer_id": "LEI:52990059VEQM9RBM0045",
+  "name": "SUPERIOR PLUS",
+  "lei": "52990059VEQM9RBM0045",
+  "country_laut_etf": "Canada",
+  "sector_laut_etf": "Utilities",
+  "verified": false,
+  "human_review": "pending",
+  "quellen": [
+   "XIC",
+   "ESMA FIRDS"
+  ]
+ },
+ {
+  "issuer_id": "LEI:549300DZZNDMPML1VJ37",
+  "name": "AVINO SILVER AND GOLD MINES LTD",
+  "lei": "549300DZZNDMPML1VJ37",
+  "country_laut_etf": "Canada",
+  "sector_laut_etf": "Materials",
+  "verified": false,
+  "human_review": "pending",
+  "quellen": [
+   "XIC",
+   "ESMA FIRDS"
+  ]
+ },
+ {
+  "issuer_id": "LEI:5493005AKGOT669Z4P51",
+  "name": "AMERICAS GOLD AND SILVER",
+  "lei": "5493005AKGOT669Z4P51",
+  "country_laut_etf": "Canada",
+  "sector_laut_etf": "Materials",
+  "verified": false,
+  "human_review": "pending",
+  "quellen": [
+   "XIC",
+   "ESMA FIRDS"
+  ]
+ },
+ {
+  "issuer_id": "NAME:CA:ALLIED-ESTATE-INVESTMENT-PROPERTIES-REAL",
+  "name": "ALLIED PROPERTIES REAL ESTATE INVT",
+  "lei": null,
+  "country_laut_etf": "Canada",
+  "sector_laut_etf": "Real Estate",
+  "verified": false,
+  "human_review": "pending",
+  "quellen": [
+   "XIC"
+  ]
+ },
+ {
+  "issuer_id": "LEI:529900Q9ENG7EHHZ5R75",
+  "name": "LITHIUM AMERICAS",
+  "lei": "529900Q9ENG7EHHZ5R75",
+  "country_laut_etf": "Canada",
+  "sector_laut_etf": "Materials",
+  "verified": false,
+  "human_review": "pending",
+  "quellen": [
+   "XIC",
+   "ESMA FIRDS"
+  ]
+ }
+]

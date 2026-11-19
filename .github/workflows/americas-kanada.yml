@@ -1,0 +1,55 @@
+name: Americas - Kanada (S&P/TSX Composite, SEC-Jahreszahlen)
+on:
+  push:
+    branches: [main, feature/americas-hub]
+    paths:
+      - "americas-equity-hub/app/**"
+      - "americas-equity-hub/scripts/**"
+      - ".github/workflows/americas-kanada.yml"
+  schedule:
+    - cron: "19 6 * * 0"   # wöchentlich: Indexbestand (Stichtag), ISIN, SEC-Jahreszahlen
+  workflow_dispatch:
+concurrency:
+  group: americas-kanada-${{ github.ref }}
+  cancel-in-progress: false
+permissions:
+  contents: write
+jobs:
+  laden:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install -q pytest
+      - name: Universum (XIC-Bestand, ESMA FIRDS)
+        run: python3 americas-equity-hub/scripts/build_canada.py
+      - name: SEC-CIK zuordnen
+        env:
+          SEC_UA: ${{ secrets.SEC_UA }}
+        run: python3 americas-equity-hub/scripts/sec_cik.py
+      - name: SEC-Jahreszahlen 2010-2025
+        env:
+          SEC_UA: ${{ secrets.SEC_UA }}
+          SEC_LISTE: americas-equity-hub/data/universe/canada/sec_cik.json
+          SEC_AUSGABE: americas-equity-hub/data/fundamentals/canada_sec.json
+          SEC_ABDECKUNG: americas-equity-hub/docs/SEC_ABDECKUNG_KANADA.md
+          SEC_JAHRE: "16"
+        run: python3 tools/sec_fundamentals.py
+      - name: Hub-Dateien und Abdeckung
+        run: |
+          python3 americas-equity-hub/scripts/export_hub.py
+          python3 americas-equity-hub/scripts/abdeckung.py
+      - name: Tests
+        run: cd americas-equity-hub && python3 -m pytest -q tests
+      - name: Ergebnis committen
+        if: always()
+        run: |
+          git config user.name "americas-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add americas-equity-hub/data americas-equity-hub/docs data/americas
+          if git diff --cached --quiet; then echo "Keine Änderungen"; exit 0; fi
+          git commit -q -m "Americas Kanada: Universum und SEC-Jahreszahlen aktualisiert"
+          ok=0; for i in 1 2 3; do git pull --rebase --autostash -X theirs -q && git push && ok=1 && break; sleep 5; done; [ "$ok" = 1 ] || { echo "Push fehlgeschlagen"; exit 1; }

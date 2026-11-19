@@ -8,7 +8,12 @@ import json, os, re, time, datetime, urllib.request
 
 # Die SEC verlangt einen Absender mit Kontakt. Er kommt aus dem GitHub-Secret SEC_UA, damit keine Adresse im öffentlichen Repo steht.
 UA = os.environ.get("SEC_UA", "").strip() or "dividenden-rechner.de Datenabruf"
-JAHRE = 10
+JAHRE = int(os.environ.get("SEC_JAHRE") or 10)
+# Andere Firmenliste (z. B. Kanada, americas-equity-hub): SEC_LISTE = JSON {kuerzel: [cik, name]}; Ausgabe dann nach
+# SEC_AUSGABE / SEC_ABDECKUNG. Ohne diese Variablen unveraendert S&P 500 + Zusatzliste nach data/sec/.
+SEC_LISTE = os.environ.get("SEC_LISTE")
+SEC_AUSGABE = os.environ.get("SEC_AUSGABE") or "data/sec/fundamentals.json"
+SEC_ABDECKUNG = os.environ.get("SEC_ABDECKUNG") or "data/sec-abdeckung.md"
 # Zusaetzliche US-Werte ausserhalb des S&P 500 (Ticker -> CIK leer = aus SEC-Tickerliste)
 ZUSATZ = {"VICI": None, "MAIN": None, "ARCC": None, "ADC": None, "STAG": None, "EPD": None, "ET": None}
 # Dividenden-Aristokraten ausserhalb des S&P 500 (ab 17.11.2026, fuer die Dividendenseiten /dividende/)
@@ -188,13 +193,17 @@ def ersatz_suchen(gaap, art, einheit, muster, schon, ziel_ende, waehrung="USD"):
 
 def main():
     heute = datetime.date.today()
-    uni = json.load(open("data/universe.json"))["firmen"]
-    liste = {f["sym"].upper(): (f.get("cik"), f.get("name")) for f in uni}
-    tick = get("https://www.sec.gov/files/company_tickers.json")
-    cikmap = {v["ticker"].upper(): (v["cik_str"], v["title"]) for v in tick.values()} if "_fehler" not in tick else {}
-    for t in ZUSATZ:
+    if SEC_LISTE:
+        liste = {k: (v[0], v[1]) for k, v in json.load(open(SEC_LISTE, encoding="utf-8")).items() if v and v[0]}
+        cikmap = {}
+    else:
+        uni = json.load(open("data/universe.json"))["firmen"]
+        liste = {f["sym"].upper(): (f.get("cik"), f.get("name")) for f in uni}
+        tick = get("https://www.sec.gov/files/company_tickers.json")
+        cikmap = {v["ticker"].upper(): (v["cik_str"], v["title"]) for v in tick.values()} if "_fehler" not in tick else {}
+    for t in ([] if SEC_LISTE else ZUSATZ):
         liste.setdefault(t, (cikmap.get(t, (None, t))[0], cikmap.get(t, (None, t))[1]))
-    for t, c in CIK_FEST.items():
+    for t, c in ({} if SEC_LISTE else CIK_FEST).items():
         if t in liste:
             liste[t] = (c, liste[t][1])
 
@@ -301,10 +310,10 @@ def main():
         if i % 50 == 0:
             print(i, t, flush=True)
 
-    os.makedirs("data/sec", exist_ok=True)
+    os.makedirs(os.path.dirname(SEC_AUSGABE) or ".", exist_ok=True)
     json.dump({"stand": heute.isoformat(), "quelle": "SEC EDGAR companyfacts (XBRL), US-Behördendaten",
                "einheiten": {k: v[1] for k, v in K.items()}, "firmen": firmen},
-              open("data/sec/fundamentals.json", "w"), ensure_ascii=False, separators=(",", ":"))
+              open(SEC_AUSGABE, "w"), ensure_ascii=False, separators=(",", ":"))
 
     n = len(firmen)
     def hat(f, k):
@@ -336,7 +345,7 @@ def main():
     md += ["", f"## Ersatz-Namen und Split-Bereinigungen ({len(ersatz_log)})", ""] + [f"- {x}" for x in ersatz_log]
     if notizen:
         md += ["", "## Hinweise", ""] + [f"- {x}" for x in notizen]
-    open("data/sec-abdeckung.md", "w").write("\n".join(md) + "\n")
+    open(SEC_ABDECKUNG, "w").write("\n".join(md) + "\n")
     print("\n".join(md[:20]))
 
 

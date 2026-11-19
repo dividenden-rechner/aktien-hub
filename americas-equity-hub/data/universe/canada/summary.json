@@ -1,0 +1,36 @@
+{
+ "erstellt": "2026-11-19T11:03:52+00:00",
+ "index": {
+  "quelle": "iShares S&P/TSX Capped Composite Index ETF (XIC), veröffentlichte Bestandsliste",
+  "url": "https://www.blackrock.com/ca/investors/en/products/239837/ishares-sptsx-capped-composite-index-etf/1464253357814.ajax?fileType=csv&fileName=XIC_holdings&dataType=fund",
+  "art": "Proxy für die lizenzpflichtige S&P-Mitgliederliste",
+  "stichtag": "2026-11-18",
+  "abgerufen": "2026-11-19T11:03:52+00:00"
+ },
+ "mitglieder": 215,
+ "emittenten": 215,
+ "wertpapiere": 215,
+ "notierungen": 215,
+ "mit_isin": 187,
+ "ohne_isin": 28,
+ "mit_lei": 187,
+ "verworfen": [
+  {
+   "ticker": "VALX",
+   "name": "VALIENTE RESOURCES",
+   "grund": "nicht TSX (TSX Venture Exchange), Restbestand des ETF"
+  },
+  {
+   "ticker": "2299955D",
+   "name": "CONSTELLATION SOFTWARE INC",
+   "grund": "kein_gueltiges_kuerzel (Platzhalter)"
+  }
+ ],
+ "arten": {
+  "share": 190,
+  "share_non_voting": 1,
+  "share_subordinate_voting": 7,
+  "unit_reit": 12,
+  "unit_trust_or_partnership": 5
+ }
+}

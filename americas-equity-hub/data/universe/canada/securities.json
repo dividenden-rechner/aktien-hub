@@ -1,0 +1,3180 @@
+[
+ {
+  "security_id": "CA7800871021",
+  "isin": "CA7800871021",
+  "issuer_id": "LEI:ES7IP3U3RHIGC71XBU11",
+  "name": "ROYAL BANK OF CANADA",
+  "klasse": null,
+  "art": "share",
+  "isin_methode": "esma_firds_name_eindeutig",
+  "isin_kandidaten": [
+   "CA7800871021"
+  ],
+  "firds_name": "ROYAL BANK OF CANADA ORD SHS",
+  "verified": false,
+  "human_review": "pending"
+ },
+ {
+  "security_id": "OHNE_ISIN:TD@XTSE",
+  "isin": null,
+  "issuer_id": "NAME:CA:DOMINION-TORONTO",
+  "name": "TORONTO DOMINION",
+  "klasse": null,
+  "art": "share",
+  "isin_methode": "nicht_gefunden",
+  "isin_kandidaten": null,
+  "firds_name": null,
+  "verified": false,
+  "human_review": "pending"
+ },
+ {
+  "security_id": "CA82509L1076",
+  "isin": "CA82509L1076",
+  "issuer_id": "LEI:549300HGQ43STJLLP808",
+  "name": "SHOPIFY SUBORDINATE VOTING CLASS A",
+  "klasse": "A",
+  "art": "share_subordinate_voting",
+  "isin_methode": "esma_firds_name_eindeutig",
+  "isin_kandidaten": [
+   "CA82509L1076"
+  ],
+  "firds_name": "Shopify Inc.                  Reg. Shares A (Sub Voting) oN",
+  "verified": false,
+  "human_review": "pending"
+ },
+ {
+  "security_id": "CA0636711016",
+  "isin": "CA0636711016",
+  "issuer_id": "LEI:NQQ6HPCNCCU6TUTQYE16",
+  "name": "BANK OF MONTREAL",
+  "klasse": null,
+  "art": "share",
+  "isin_methode": "esma_firds_name_eindeutig",
+  "isin_kandidaten": [
+   "CA0636711016"
+  ],
+  "firds_name": "BANK OF MONTREAL              Registered Shares CD 2",
+  "verified": false,
+  "human_review": "pending"
+ },
+ {
+  "security_id": "CA0641491075",
+  "isin": "CA0641491075",
+  "issuer_id": "LEI:L3I9ZG2KFGXZ61BMYR72",
+  "name": "BANK OF NOVA SCOTIA",
+  "klasse": null,
+  "art": "share",
+  "isin_methode": "esma_firds_name_eindeutig",
+  "isin_kandidaten": [
+   "CA0641491075"
+  ],
+  "firds_name": "BANK OF NOVA SCOTIA, THE      Registered Shares o.N.",
+  "verified": false,
+  "human_review": "pending"
+ },
+ {
+  "security_id": "CA29250N1050",
+  "isin": "CA29250N1050",
+  "issuer_id": "LEI:98TPTUM4IVMFCZBCUR27",
+  "name": "ENBRIDGE",
+  "klasse": null,
+  "art": "share",
+  "isin_methode": "esma_firds_name_eindeutig",
+  "isin_kandidaten": [
+   "CA29250N1050"
+  ],
+  "firds_name": "ENBRIDGE INC.                 Registered Shares o.N.",
+  "verified": false,
+  "human_review": "pending"
+ },
+ {
+  "security_id": "OHNE_ISIN:CM@XTSE",
+  "isin": null,
+  "issuer_id": "NAME:CA:BANK-CANADIAN-COMMERCE-IMPERIAL-OF",
+  "name": "CANADIAN IMPERIAL BANK OF COMMERCE",
+  "klasse": null,
+  "art": "share",
+  "isin_methode": "nicht_gefunden",
+  "isin_kandidaten": null,
+  "firds_name": null,
+  "verified": false,
+  "human_review": "pending"
+ },
+ {
+  "security_id": "CA1363851017",
+  "isin": "CA1363851017",
+  "issuer_id": "LEI:549300T15RIMIKZC5Q38",
+  "name": "CANADIAN NATURAL RESOURCES LTD",
+  "klasse": null,
+  "art": "share",
+  "isin_methode": "esma_firds_name_eindeutig",
+  "isin_kandidaten": [
+   "CA1363851017"
+  ],
+  "firds_name": "Canadian Natural Resources Ltd Registered Shares o.N.",
+  "verified": false,
+  "human_review": "pending"
+ },
+ {
+  "security_id": "CA11271J1075",
+  "isin": "CA11271J1075",
+  "issuer_id": "LEI:C6J3FGIWG6MBDGTE8F80",
+  "name": "BROOKFIELD CLASS A",
+  "klasse": "A",
+  "art": "share",
+  "isin_methode": "esma_firds_name_eindeutig",
+  "isin_kandidaten": [
+   "CA11271J1075"
+  ],
+  "firds_name": "Brookfield Corp. Registered Shares Cl.A  o.N.",
+  "verified": false,
+  "human_review": "pending"
+ },
+ {
+  "security_id": "CA0084741085",
+  "isin": "CA0084741085",
+  "issuer_id": "LEI:254900BFJ2DOHPMEXN45",
+  "name": "AGNICO EAGLE MINES",
+  "klasse": null,
+  "art": "share",
+  "isin_methode": "esma_firds_name_eindeutig",
+  "isin_kandidaten": [
+   "CA0084741085"
+  ],
+  "firds_name": "Agnico Eagle Mines Ltd.       Registered Shares o.N.",
+  "verified": false,
+  "human_review": "pending"
+ },
+ {
+  "security_id": "CA13646K1084",
+  "isin": "CA13646K1084",
+  "issuer_id": "LEI:54930036474DURYNB481",
+  "name": "CANADIAN PACIFIC KANSAS CITY",
+  "klasse": null,
+  "art": "share",
+  "isin_methode": "esma_firds_name_eindeutig",
+  "isin_kandidaten": [
+   "CA13646K1084"
+  ],
+  "firds_name": "Canadian Paci.Kansas City Ltd. Registered Shares o.N.",
+  "verified": false,
+  "human_review": "pending"
+ },
+ {
+  "security_id": "CA8672241079",
+  "isin": "CA8672241079",
+  "issuer_id": "LEI:894500XO86FKXQGPYV71",
+  "name": "SUNCOR ENERGY INC",
+  "klasse": null,
+  "art": "share",
+  "isin_methode": "esma_firds_name_eindeutig",
+  "isin_kandidaten": [
+   "CA8672241079"
+  ],
+  "firds_name": "Suncor Energy Inc.            Registered Shares o.N.",
+  "verified": false,
+  "human_review": "pending"
+ },
+ {
+  "security_id": "CA56501R1064",
+  "isin": "CA56501R1064",
+  "issuer_id": "LEI:5493007GBX87QOZACS27",
+  "name": "MANULIFE FINANCIAL",
+  "klasse": null,
+  "art": "share",
+  "isin_methode": "esma_firds_name_eindeutig",
+  "isin_kandidaten": [
+   "CA56501R1064"
+  ],
+  "firds_name": "MANULIFE FINANCIAL CORP.      Registered Shares o.N.",
+  "verified": false,
+  "human_review": "pending"
+ },
+ {
+  "security_id": "CA1363751027",
+  "isin": "CA1363751027",
+  "issuer_id": "LEI:3SU7BEP7TH9YEQOZCS77",
+  "name": "CANADIAN NATIONAL RAILWAY",
+  "klasse": null,
+  "art": "share",
+  "isin_methode": "esma_firds_name_eindeutig",
+  "isin_kandidaten": [
+   "CA1363751027"
+  ],
+  "firds_name": "Canadian National Railway Co. Registered Shares o.N.",
+  "verified": false,
+  "human_review": "pending"
+ },
+ {
+  "security_id": "CA87807B1076",
+  "isin": "CA87807B1076",
+  "issuer_id": "LEI:549300UGKOFV2IWJJG27",
+  "name": "TC ENERGY",
+  "klasse": null,
+  "art": "share",
+  "isin_methode": "esma_firds_name_eindeutig",
+  "isin_kandidaten": [
+   "CA87807B1076"
+  ],
+  "firds_name": "TC Energy Corp. Registered Shares o.N.",
+  "verified": false,
+  "human_review": "pending"
+ },
+ {
+  "security_id": "CA06849F1080",
+  "isin": "CA06849F1080",
+  "issuer_id": "LEI:0O4KBQCJZX82UKGCBV73",
+  "name": "BARRICK MINING",
+  "klasse": null,
+  "art": "share",
+  "isin_methode": "esma_firds_name_eindeutig",
+  "isin_kandidaten": [
+   "CA06849F1080"
+  ],
+  "firds_name": "Barrick Mining Corp.",
+  "verified": false,
+  "human_review": "pending"
+ },
+ {
+  "security_id": "CA6330671034",
+  "isin": "CA6330671034",
+  "issuer_id": "LEI:BSGEFEIOM18Y80CKCV46",
+  "name": "NATIONAL BANK OF CANADA",
+  "klasse": null,
+  "art": "share",
+  "isin_methode": "esma_firds_name_eindeutig",
+  "isin_kandidaten": [
+   "CA6330671034"
+  ],
+  "firds_name": "National Bank of Canada Registered Shares o.N.",
+  "verified": false,
+  "human_review": "pending"
+ },
+ {
+  "security_id": "CA9628791027",
+  "isin": "CA9628791027",
+  "issuer_id": "LEI:549300XSFG5ZCGVYD886",
+  "name": "WHEATON PRECIOUS METALS",
+  "klasse": null,
+  "art": "share",
+  "isin_methode": "esma_firds_name_eindeutig",
+  "isin_kandidaten": [
+   "CA9628791027"
+  ],
+  "firds_name": "Wheaton Precious Metals Corp. Registered Shares o.N.",
+  "verified": false,
+  "human_review": "pending"
+ },
+ {
+  "security_id": "CA21037X1006",
+  "isin": "CA21037X1006",
+  "issuer_id": "LEI:549300B6PYHMCTDWQV29",
+  "name": "CONSTELLATION SOFTWARE",
+  "klasse": null,
+  "art": "share",
+  "isin_methode": "esma_firds_name_eindeutig",
+  "isin_kandidaten": [
+   "CA21037X1006"
+  ],
+  "firds_name": "Constellation Software Inc.   Registered Shares o.N.",
+  "verified": false,
+  "human_review": "pending"
+ },
+ {
+  "security_id": "CA94106B1013",
+  "isin": "CA94106B1013",
+  "issuer_id": "LEI:549300HDLRTPBQU69P29",
+  "name": "WASTE CONNECTIONS",
+  "klasse": null,
+  "art": "share",
+  "isin_methode": "esma_firds_name_eindeutig",
+  "isin_kandidaten": [
+   "CA94106B1013"
+  ],
+  "firds_name": "Waste Connections Inc. Registered Shares o.N.",
+  "verified": false,
+  "human_review": "pending"
+ },
+ {
+  "security_id": "CA3518581051",
+  "isin": "CA3518581051",
+  "issuer_id": "LEI:98450064C1B5D3E94864",
+  "name": "FRANCO NEVADA",
+  "klasse": null,
+  "art": "share",
+  "isin_methode": "esma_firds_name_eindeutig",
+  "isin_kandidaten": [
+   "CA3518581051"
+  ],
+  "firds_name": "Franco-Nevada Corp.           Registered Shares o.N.",
+  "verified": false,
+  "human_review": "pending"
+ },
+ {
+  "security_id": "CA01626P1484",
+  "isin": "CA01626P1484",
+  "issuer_id": "LEI:549300OSW32RVX8CCZ87",
+  "name": "ALIMENTATION COUCHE TARD INC",
+  "klasse": null,
+  "art": "share",
+  "isin_methode": "esma_firds_name_eindeutig",
+  "isin_kandidaten": [
+   "CA01626P1484"
+  ],
+  "firds_name": "Alimentation Couche-Tard Inc. Registered Shares o.N.",
+  "verified": false,
+  "human_review": "pending"
+ },
+ {
+  "security_id": "CA25675T1075",
+  "isin": "CA25675T1075",
+  "issuer_id": "LEI:5493002GJ0NJP1HI0C79",
+  "name": "DOLLARAMA",
+  "klasse": null,
+  "art": "share",
+  "isin_methode": "esma_firds_name_eindeutig",
+  "isin_kandidaten": [
+   "CA25675T1075"
+  ],
+  "firds_name": "Dollarama Inc.                Registered Shares o.N.",
+  "verified": false,
+  "human_review": "pending"
+ },
+ {
+  "security_id": "CA8667961053",
+  "isin": "CA8667961053",
+  "issuer_id": "LEI:549300V040JZX5S66Z78",
+  "name": "SUN LIFE FINANCIAL INC",
+  "klasse": null,
+  "art": "share",
+  "isin_methode": "esma_firds_name_eindeutig",
+  "isin_kandidaten": [
+   "CA8667961053"
+  ],
+  "firds_name": "Sun Life Financial Inc.       Registered Shares o.N.",
+  "verified": false,
+  "human_review": "pending"
+ },
+ {
+  "security_id": "CA3039011026",
+  "isin": "CA3039011026",
+  "issuer_id": "LEI:GLS7OQD0WOEDI8YAP031",
+  "name": "FAIRFAX FINANCIAL HOLDINGS SUB VOT",
+  "klasse": null,
+  "art": "share",
+  "isin_methode": "esma_firds_name_eindeutig",
+  "isin_kandidaten": [
+   "CA3039011026"
+  ],
+  "firds_name": "Fairfax Finl Holdings Ltd. Reg. Shares (Sub. Vtg) o.N.",
+  "verified": false,
+  "human_review": "pending"
+ },
+ {
+  "security_id": "CA15135U1093",
+  "isin": "CA15135U1093",
+  "issuer_id": "LEI:254900LJGL2N2XEMD470",
+  "name": "CENOVUS ENERGY",
+  "klasse": null,
+  "art": "share",
+  "isin_methode": "esma_firds_name_eindeutig",
+  "isin_kandidaten": [
+   "CA15135U1093"
+  ],
+  "firds_name": "Cenovus Energy Inc.           Registered Shares o.N.",
+  "verified": false,
+  "human_review": "pending"
+ },
+ {
+  "security_id": "CA45823T1066",
+  "isin": "CA45823T1066",
+  "issuer_id": "LEI:5493009LXGE7Y4U9OY43",
+  "name": "INTACT FINANCIAL CORP",
+  "klasse": null,
+  "art": "share",
+  "isin_methode": "esma_firds_name_eindeutig",
+  "isin_kandidaten": [
+   "CA45823T1066"
+  ],
+  "firds_name": "Intact Financial Corp.        Registered Shares o.N.",
+  "verified": false,
+  "human_review": "pending"
+ },
+ {
+  "security_id": "CA7392391016",
+  "isin": "CA7392391016",
+  "issuer_id": "LEI:549300BE2CB8T87IJV50",
+  "name": "POWER CORPORATION OF CANADA",
+  "klasse": null,
+  "art": "share",
+  "isin_methode": "esma_firds_name_eindeutig",
+  "isin_kandidaten": [
+   "CA7392391016"
+  ],
+  "firds_name": "Power Corporation of Canada   Reg. Shares (Sub. Vtg) o.N.",
+  "verified": false,
+  "human_review": "pending"
+ },
+ {
+  "security_id": "CA67077M1086",
+  "isin": "CA67077M1086",
+  "issuer_id": "LEI:5493002QQ7GD21OWF963",
+  "name": "NUTRIEN LTD",
+  "klasse": null,
+  "art": "share",
+  "isin_methode": "esma_firds_name_eindeutig",
+  "isin_kandidaten": [
+   "CA67077M1086"
+  ],
+  "firds_name": "Nutrien Ltd                   Registered Shares o.N.",
+  "verified": false,
+  "human_review": "pending"
+ },
+ {
+  "security_id": "CA15101Q2071",
+  "isin": "CA15101Q2071",
+  "issuer_id": "LEI:549300J3CG5T6RZWLN53",
+  "name": "CELESTICA",
+  "klasse": "S",
+  "art": "share",
+  "isin_methode": "esma_firds_name_eindeutig",
+  "isin_kandidaten": [
+   "CA15101Q2071"
+  ],
+  "firds_name": "Celestica Inc. Registered Shares o.N.",
+  "verified": false,
+  "human_review": "pending"
+ },
+ {
+  "security_id": "CA3495531079",
+  "isin": "CA3495531079",
+  "issuer_id": "LEI:549300MQYQ9Y065XPR71",
+  "name": "FORTIS",
+  "klasse": null,
+  "art": "share",
+  "isin_methode": "esma_firds_name_eindeutig",
+  "isin_kandidaten": [
+   "CA3495531079"
+  ],
+  "firds_name": "FORTIS INC.                   Registered Shares o.N.",
+  "verified": false,
+  "human_review": "pending"
+ },
+ {
+  "security_id": "CA7063271034",
+  "isin": "CA7063271034",
+  "issuer_id": "LEI:5493002W3L9YICM6FU21",
+  "name": "PEMBINA PIPELINE",
+  "klasse": null,
+  "art": "share",
+  "isin_methode": "esma_firds_name_eindeutig",
+  "isin_kandidaten": [
+   "CA7063271034"
+  ],
+  "firds_name": "Pembina Pipeline Corp. Registered Shares o.N.",
+  "verified": false,
+  "human_review": "pending"
+ },
+ {
+  "security_id": "CA13321L1085",
+  "isin": "CA13321L1085",
+  "issuer_id": "LEI:N4BHALMXL3GMZKCUON55",
+  "name": "CAMECO",
+  "klasse": null,
+  "art": "share",
+  "isin_methode": "esma_firds_name_eindeutig",
+  "isin_kandidaten": [
+   "CA13321L1085"
+  ],
+  "firds_name": "CAMECO CORP.                  Registered Shares o.N.",
+  "verified": false,
+  "human_review": "pending"
+ },
+ {
+  "security_id": "CA5394811015",
+  "isin": "CA5394811015",
+  "issuer_id": "LEI:5493008LN3O1DIDTSH67",
+  "name": "LOBLAW COMPANIES LTD",
+  "klasse": null,
+  "art": "share",
+  "isin_methode": "esma_firds_name_eindeutig",
+  "isin_kandidaten": [
+   "CA5394811015"
+  ],
+  "firds_name": "LOBLAW COMPANIES LTD.         Registered Shares o.N.",
+  "verified": false,
+  "human_review": "pending"
+ },
+ {
+  "security_id": "CA76131D1033",
+  "isin": "CA76131D1033",
+  "issuer_id": "LEI:5299009RXTX9DN9AKJ98",
+  "name": "RESTAURANTS BRANDS INTERNATIONAL",
+  "klasse": null,
+  "art": "share",
+  "isin_methode": "esma_firds_name_eindeutig",
+  "isin_kandidaten": [
+   "CA76131D1033"
+  ],
+  "firds_name": "Restaurant Brands Intl Inc.   Registered Shares o.N.",
+  "verified": false,
+  "human_review": "pending"
+ },
+ {
+  "security_id": "CA8787422044",
+  "isin": "CA8787422044",
+  "issuer_id": "LEI:T8KI5SQ2JRWHL7XY0E11",
+  "name": "TECK RESOURCES SUBORDINATE VOTING",
+  "klasse": "B",
+  "art": "share_subordinate_voting",
+  "isin_methode": "esma_firds_name_eindeutig",
+  "isin_kandidaten": [
+   "CA8787422044"
+  ],
+  "firds_name": "Teck Resources Ltd. Reg. Shares(Sub Vtg) Cl.B o.N.",
+  "verified": false,
+  "human_review": "pending"
+ },
+ {
+  "security_id": "OHNE_ISIN:BIP.UN@XTSE",
+  "isin": null,
+  "issuer_id": "NAME:CA:BROOKFIELD-INFRASTRUCTURE-PARTNERS",
+  "name": "BROOKFIELD INFRASTRUCTURE PARTNERS",
+  "klasse": null,
+  "art": "unit_trust_or_partnership",
+  "isin_methode": "nicht_gefunden",
+  "isin_kandidaten": null,
+  "firds_name": null,
+  "verified": false,
+  "human_review": "pending"
+ },
+ {
+  "security_id": "CA4969024047",
+  "isin": "CA4969024047",
+  "issuer_id": "LEI:254900O9KHF2A1ZXPT47",
+  "name": "KINROSS GOLD",
+  "klasse": null,
+  "art": "share",
+  "isin_methode": "esma_firds_name_eindeutig",
+  "isin_kandidaten": [
+   "CA4969024047"
+  ],
+  "firds_name": "Kinross Gold Corp. Registered Shares o.N.",
+  "verified": false,
+  "human_review": "pending"
+ },
+ {
+  "security_id": "CA05534B7604",
+  "isin": "CA05534B7604",
+  "issuer_id": "LEI:5493001I9203PRB5KR45",
+  "name": "BCE INC",
+  "klasse": null,
+  "art": "share",
+  "isin_methode": "esma_firds_name_eindeutig",
+  "isin_kandidaten": [
+   "CA05534B7604"
+  ],
+  "firds_name": "BCE Inc.                      Registered Shares new o.N.",
+  "verified": false,
+  "human_review": "pending"
+ },
+ {
+  "security_id": "CA1130041058",
+  "isin": "CA1130041058",
+  "issuer_id": "LEI:549300CZ84WPNJZKY093",
+  "name": "BROOKFIELD ASSET MANAGEMENT VOTING",
+  "klasse": null,
+  "art": "share",
+  "isin_methode": "esma_firds_name_eindeutig",
+  "isin_kandidaten": [
+   "CA1130041058"
+  ],
+  "firds_name": "Brookfield Asset Management Lt Reg.Shares Cl.A Vtg. o.N.",
+  "verified": false,
+  "human_review": "pending"
+ },
+ {
+  "security_id": "CA0977518616",
+  "isin": "CA0977518616",
+  "issuer_id": "LEI:W7L3VLU8EHQY34Z36697",
+  "name": "BOMBARDIER CLASS B",
+  "klasse": "B",
+  "art": "share",
+  "isin_methode": "esma_firds_name_eindeutig",
+  "isin_kandidaten": [
+   "CA0977518616"
+  ],
+  "firds_name": "Bombardier Inc. Registered Shares Class B o.N.",
+  "verified": false,
+  "human_review": "pending"
+ },
+ {
+  "security_id": "CA4530384086",
+  "isin": "CA4530384086",
+  "issuer_id": "LEI:549300JZNB745JT5WY51",
+  "name": "IMPERIAL OIL LTD",
+  "klasse": null,
+  "art": "share",
+  "isin_methode": "esma_firds_name_eindeutig",
+  "isin_kandidaten": [
+   "CA4530384086"
+  ],
+  "firds_name": "IMPERIAL OIL LTD.             Registered Shares o.N.",
+  "verified": false,
+  "human_review": "pending"
+ },
+ {
+  "security_id": "CA74935Q1072",
+  "isin": "CA74935Q1072",
+  "issuer_id": "LEI:5493002H8U24DJXQ4886",
+  "name": "RB GLOBAL",
+  "klasse": null,
+  "art": "share",
+  "isin_methode": "esma_firds_name_eindeutig",
+  "isin_kandidaten": [
+   "CA74935Q1072"
+  ],
+  "firds_name": "RB Global Inc. Registered Shares o.N.",
+  "verified": false,
+  "human_review": "pending"
+ },
+ {
+  "security_id": "CA92938W2022",
+  "isin": "CA92938W2022",
+  "issuer_id": "LEI:549300IQ87LU6X6ERQ78",
+  "name": "WSP GLOBAL",
+  "klasse": null,
+  "art": "share",
+  "isin_methode": "esma_firds_name_eindeutig",
+  "isin_kandidaten": [
+   "CA92938W2022"
+  ],
+  "firds_name": "WSP Global Inc. Registered Shares o.N.",
+  "verified": false,
+  "human_review": "pending"
+ },
+ {
+  "security_id": "CA39138C1068",
+  "isin": "CA39138C1068",
+  "issuer_id": "LEI:549300X81X4VZEESFU46",
+  "name": "GREAT WEST LIFECO INC",
+  "klasse": null,
+  "art": "share",
+  "isin_methode": "esma_firds_name_eindeutig",
+  "isin_kandidaten": [
+   "CA39138C1068"
+  ],
+  "firds_name": "Great-West Lifeco Inc. Registered Shares o.N.",
+  "verified": false,
+  "human_review": "pending"
+ },
+ {
+  "security_id": "CA89156V1067",
+  "isin": "CA89156V1067",
+  "issuer_id": "LEI:894500I7AXG91VB3PM28",
+  "name": "TOURMALINE OIL CORP",
+  "klasse": null,
+  "art": "share",
+  "isin_methode": "esma_firds_name_eindeutig",
+  "isin_kandidaten": [
+   "CA89156V1067"
+  ],
+  "firds_name": "Tourmaline Oil Corp.          Registered Shares o.N.",
+  "verified": false,
+  "human_review": "pending"
+ },
+ {
+  "security_id": "CA2908761018",
+  "isin": "CA2908761018",
+  "issuer_id": "LEI:NQZVQT2P5IUF2PGA1Q48",
+  "name": "EMERA INC",
+  "klasse": null,
+  "art": "share",
+  "isin_methode": "esma_firds_name_eindeutig",
+  "isin_kandidaten": [
+   "CA2908761018"
+  ],
+  "firds_name": "Emera Inc. Registered Shares o.N.",
+  "verified": false,
+  "human_review": "pending"
+ },
+ {
+  "security_id": "CA5592224011",
+  "isin": "CA5592224011",
+  "issuer_id": "LEI:95RWVLFZX6VGDZNNTN43",
+  "name": "MAGNA INTERNATIONAL",
+  "klasse": null,
+  "art": "share",
+  "isin_methode": "esma_firds_name_eindeutig",
+  "isin_kandidaten": [
+   "CA5592224011"
+  ],
+  "firds_name": "MAGNA INTERNATIONAL INC.      Registered Shares o.N.",
+  "verified": false,
+  "human_review": "pending"
+ },
+ {
+  "security_id": "CA87971M1032",
+  "isin": "CA87971M1032",
+  "issuer_id": "LEI:894500TX134IMF6NW757",
+  "name": "TELUS",
+  "klasse": null,
+  "art": "share",
+  "isin_methode": "esma_firds_name_eindeutig",
+  "isin_kandidaten": [
+   "CA87971M1032"
+  ],
+  "firds_name": "TELUS CORP.                   Registered Shares o.N.",
+  "verified": false,
+  "human_review": "pending"
+ },
+ {
+  "security_id": "CA12532H1047",
+  "isin": "CA12532H1047",
+  "issuer_id": "LEI:549300WSRCZY73ZG3090",
+  "name": "CGI INC CLASS A",
+  "klasse": "A",
+  "art": "share",
+  "isin_methode": "esma_firds_name_eindeutig",
+  "isin_kandidaten": [
+   "CA12532H1047"
+  ],
+  "firds_name": "CGI Inc. Reg.Shs Class A (Sub.Vtg) o.N.",
+  "verified": false,
+  "human_review": "pending"
+ },
+ {
+  "security_id": "CA59162N1096",
+  "isin": "CA59162N1096",
+  "issuer_id": "LEI:549300KQ7DCG4IXSNW78",
+  "name": "METRO",
+  "klasse": null,
+  "art": "share",
+  "isin_methode": "esma_firds_name_eindeutig",
+  "isin_kandidaten": [
+   "CA59162N1096"
+  ],
+  "firds_name": "METRO INC.                    Registered Shares o.N.",
+  "verified": false,
+  "human_review": "pending"
+ },
+ {
+  "security_id": "CA6979001089",
+  "isin": "CA6979001089",
+  "issuer_id": "LEI:549300MKTF5851TYIB83",
+  "name": "PAN AMERICAN SILVER",
+  "klasse": null,
+  "art": "share",
+  "isin_methode": "esma_firds_name_eindeutig",
+  "isin_kandidaten": [
+   "CA6979001089"
+  ],
+  "firds_name": "Pan American Silver Corp. Registered Shares o.N.",
+  "verified": false,
+  "human_review": "pending"
+ },
+ {
+  "security_id": "CA96467A2002",
+  "isin": "CA96467A2002",
+  "issuer_id": "LEI:894500UA4G4BTB67II45",
+  "name": "WHITECAP RESOURCES INC",
+  "klasse": null,
+  "art": "share",
+  "isin_methode": "esma_firds_name_eindeutig",
+  "isin_kandidaten": [
+   "CA96467A2002"
+  ],
+  "firds_name": "Whitecap Resources Inc. Registered Shares o.N.",
+  "verified": false,
+  "human_review": "pending"
+ },
+ {
+  "security_id": "CA36168Q1046",
+  "isin": "CA36168Q1046",
+  "issuer_id": "LEI:894500E7NLBY9VZRT696",
+  "name": "GFL ENVIRONMENTAL SUBORDINATE VOTI",
+  "klasse": null,
+  "art": "share_subordinate_voting",
+  "isin_methode": "esma_firds_name_eindeutig",
+  "isin_kandidaten": [
+   "CA36168Q1046"
+  ],
+  "firds_name": "GFL Environmental Inc. Registered Shs (Sub.Vtg) o.N.",
+  "verified": false,
+  "human_review": "pending"
+ },
+ {
+  "security_id": "CA3359341052",
+  "isin": "CA3359341052",
+  "issuer_id": "LEI:549300I7UVBGWRYMYZ18",
+  "name": "FIRST QUANTUM MINERALS",
+  "klasse": null,
+  "art": "share",
+  "isin_methode": "esma_firds_name_eindeutig",
+  "isin_kandidaten": [
+   "CA3359341052"
+  ],
+  "firds_name": "FIRST QUANTUM MINERALS LTD.   Registered Shares o.N.",
+  "verified": false,
+  "human_review": "pending"
+ },
+ {
+  "security_id": "CA45075E1043",
+  "isin": "CA45075E1043",
+  "issuer_id": "LEI:549300ZXLJVHQAIXV215",
+  "name": "IA FINANCIAL INC",
+  "klasse": null,
+  "art": "share",
+  "isin_methode": "esma_firds_name_eindeutig",
+  "isin_kandidaten": [
+   "CA45075E1043"
+  ],
+  "firds_name": "IA Financial Corporation Inc. Registered Shares o.N.",
+  "verified": false,
+  "human_review": "pending"
+ },
+ {
+  "security_id": "CA7751092007",
+  "isin": "CA7751092007",
+  "issuer_id": "LEI:5493000M6Z4XFIP6PF03",
+  "name": "ROGERS COMMUNICATIONS NON-VOTING I",
+  "klasse": "B",
+  "art": "share_non_voting",
+  "isin_methode": "esma_firds_name_eindeutig",
+  "isin_kandidaten": [
+   "CA7751092007"
+  ],
+  "firds_name": "ROGERS COMMUNICATIONS INC.    Reg. Shares Class B CD 1,62478",
+  "verified": false,
+  "human_review": "pending"
+ },
+ {
+  "security_id": "CA8849038812",
+  "isin": "CA8849038812",
+  "issuer_id": "LEI:549300561UZND4C7B569",
+  "name": "THOMSON REUTERS CORP",
+  "klasse": null,
+  "art": "share",
+  "isin_methode": "esma_firds_name_eindeutig",
+  "isin_kandidaten": [
+   "CA8849038812"
+  ],
+  "firds_name": "Thomson Reuters Corp. Registered Shares New o.N.",
+  "verified": false,
+  "human_review": "pending"
+ },
+ {
+  "security_id": "CA4488112083",
+  "isin": "CA4488112083",
+  "issuer_id": "LEI:5493007QZDXTP1W2VL44",
+  "name": "HYDRO ONE",
+  "klasse": null,
+  "art": "share",
+  "isin_methode": "esma_firds_name_eindeutig",
+  "isin_kandidaten": [
+   "CA4488112083"
+  ],
+  "firds_name": "Hydro One Ltd.                Registered Shares o.N.",
+  "verified": false,
+  "human_review": "pending"
+ },
+ {
+  "security_id": "CA9611485090",
+  "isin": "CA9611485090",
+  "issuer_id": "LEI:549300FAHC3L1QKNT280",
+  "name": "GEORGE WESTON",
+  "klasse": null,
+  "art": "share",
+  "isin_methode": "esma_firds_name_eindeutig",
+  "isin_kandidaten": [
+   "CA9611485090"
+  ],
+  "firds_name": "Weston Ltd., George Registered Shares o.N.",
+  "verified": false,
+  "human_review": "pending"
+ },
+ {
+  "security_id": "CA0213611001",
+  "isin": "CA0213611001",
+  "issuer_id": "LEI:2549008X5V70MOS4HM10",
+  "name": "ALTAGAS",
+  "klasse": null,
+  "art": "share",
+  "isin_methode": "esma_firds_name_eindeutig",
+  "isin_kandidaten": [
+   "CA0213611001"
+  ],
+  "firds_name": "AltaGas Ltd. Registered Shares o.N.",
+  "verified": false,
+  "human_review": "pending"
+ },
+ {
+  "security_id": "CA87262K1057",
+  "isin": "CA87262K1057",
+  "issuer_id": "LEI:549300N65GFVKSHGJW59",
+  "name": "TMX GROUP LTD",
+  "klasse": null,
+  "art": "share",
+  "isin_methode": "esma_firds_name_eindeutig",
+  "isin_kandidaten": [
+   "CA87262K1057"
+  ],
+  "firds_name": "TMX Group Ltd. Registered Shares o.N.",
+  "verified": false,
+  "human_review": "pending"
+ },
+ {
+  "security_id": "CA5503721063",
+  "isin": "CA5503721063",
+  "issuer_id": "LEI:549300FQDIM6C8HTN269",
+  "name": "LUNDIN MINING",
+  "klasse": null,
+  "art": "share",
+  "isin_methode": "esma_firds_name_eindeutig",
+  "isin_kandidaten": [
+   "CA5503721063"
+  ],
+  "firds_name": "LUNDIN MINING CORP",
+  "verified": false,
+  "human_review": "pending"
+ },
+ {
+  "security_id": "CA0115321089",
+  "isin": "CA0115321089",
+  "issuer_id": "LEI:894500GIHFJZW7YS9660",
+  "name": "ALAMOS GOLD CLASS A",
+  "klasse": "A",
+  "art": "share",
+  "isin_methode": "esma_firds_name_eindeutig",
+  "isin_kandidaten": [
+   "CA0115321089"
+  ],
+  "firds_name": "Alamos Gold Inc. (new)        Registered Shares o.N.",
+  "verified": false,
+  "human_review": "pending"
+ },
+ {
+  "security_id": "CA8911021050",
+  "isin": "CA8911021050",
+  "issuer_id": "LEI:5493008W5EPRSLQ0B737",
+  "name": "TOROMONT INDUSTRIES LTD",
+  "klasse": null,
+  "art": "share",
+  "isin_methode": "esma_firds_name_eindeutig",
+  "isin_kandidaten": [
+   "CA8911021050"
+  ],
+  "firds_name": "Toromont Industries Ltd. Registered Shares o.N.",
+  "verified": false,
+  "human_review": "pending"
+ },
+ {
+  "security_id": "CA29446Y5020",
+  "isin": "CA29446Y5020",
+  "issuer_id": "LEI:5493005IN4V1SNP9PN75",
+  "name": "EQUINOX GOLD",
+  "klasse": null,
+  "art": "share",
+  "isin_methode": "esma_firds_name_eindeutig",
+  "isin_kandidaten": [
+   "CA29446Y5020"
+  ],
+  "firds_name": "Equinox Gold Corp. Registered Shares new o.N.",
+  "verified": false,
+  "human_review": "pending"
+ },
+ {
+  "security_id": "CA4932711001",
+  "isin": "CA4932711001",
+  "issuer_id": "LEI:254900LXI62FUHZGH122",
+  "name": "KEYERA",
+  "klasse": null,
+  "art": "share",
+  "isin_methode": "esma_firds_name_eindeutig",
+  "isin_kandidaten": [
+   "CA4932711001"
+  ],
+  "firds_name": "KEYERA ORD",
+  "verified": false,
+  "human_review": "pending"
+ },
+ {
+  "security_id": "CA1249003098",
+  "isin": "CA1249003098",
+  "issuer_id": "LEI:549300TD3EMSRRC0YH75",
+  "name": "CCL INDUSTRIES CLASS B",
+  "klasse": "B",
+  "art": "share",
+  "isin_methode": "esma_firds_name_eindeutig",
+  "isin_kandidaten": [
+   "CA1249003098"
+  ],
+  "firds_name": "CCL Industries Inc. Registered Shares Class B o.N.",
+  "verified": false,
+  "human_review": "pending"
+ },
+ {
+  "security_id": "CA04045U1021",
+  "isin": "CA04045U1021",
+  "issuer_id": "LEI:549300U83HKFRL1EX527",
+  "name": "ARITZIA SUBORDINATE VOTING",
+  "klasse": null,
+  "art": "share_subordinate_voting",
+  "isin_methode": "esma_firds_name_eindeutig",
+  "isin_kandidaten": [
+   "CA04045U1021"
+  ],
+  "firds_name": "Aritzia Inc. Subord. Voting Shares  o.N.",
+  "verified": false,
+  "human_review": "pending"
+ },
+ {
+  "security_id": "CA04764T1049",
+  "isin": "CA04764T1049",
+  "issuer_id": "LEI:UL01OYG5OMLM5G6CFM03",
+  "name": "ATKINSREALIS GROUP INC",
+  "klasse": null,
+  "art": "share",
+  "isin_methode": "esma_firds_name_eindeutig",
+  "isin_kandidaten": [
+   "CA04764T1049"
+  ],
+  "firds_name": "AtkinsRealis Group Inc. Registered Shares o.N.",
+  "verified": false,
+  "human_review": "pending"
+ },
+ {
+  "security_id": "CA85472N1096",
+  "isin": "CA85472N1096",
+  "issuer_id": "LEI:549300MZ7NGUZDCP2T16",
+  "name": "STANTEC",
+  "klasse": null,
+  "art": "share",
+  "isin_methode": "esma_firds_name_eindeutig",
+  "isin_kandidaten": [
+   "CA85472N1096"
+  ],
+  "firds_name": "Stantec Inc. Registered Shares o.N.",
+  "verified": false,
+  "human_review": "pending"
+ },
+ {
+  "security_id": "CA4509131088",
+  "isin": "CA4509131088",
+  "issuer_id": "LEI:254900E7II30XAB9LA72",
+  "name": "IAMGOLD CORP",
+  "klasse": null,
+  "art": "share",
+  "isin_methode": "esma_firds_name_eindeutig",
+  "isin_kandidaten": [
+   "CA4509131088"
+  ],
+  "firds_name": "IAMGOLD CORP.                 Registered Shares o.N.",
+  "verified": false,
+  "human_review": "pending"
+ },
+ {
+  "security_id": "CA1247651088",
+  "isin": "CA1247651088",
+  "issuer_id": "LEI:549300FFM2BEH2GF1E44",
+  "name": "CAE",
+  "klasse": null,
+  "art": "share",
+  "isin_methode": "esma_firds_name_eindeutig",
+  "isin_kandidaten": [
+   "CA1247651088"
+  ],
+  "firds_name": "CAE Inc. Registered Shares o.N.",
+  "verified": false,
+  "human_review": "pending"
+ },
+ {
+  "security_id": "CA4436281022",
+  "isin": "CA4436281022",
+  "issuer_id": "LEI:894500LX3TMESP27BE29",
+  "name": "HUDBAY MINERALS",
+  "klasse": null,
+  "art": "share",
+  "isin_methode": "esma_firds_name_eindeutig",
+  "isin_kandidaten": [
+   "CA4436281022"
+  ],
+  "firds_name": "Hudbay Minerals Inc. Registered Shares o.N.",
+  "verified": false,
+  "human_review": "pending"
+ },
+ {
+  "security_id": "OHNE_ISIN:DSG@XTSE",
+  "isin": null,
+  "issuer_id": "NAME:CA:DESCARTES-SYSTEMS",
+  "name": "DESCARTES SYSTEMS GROUP",
+  "klasse": null,
+  "art": "share",
+  "isin_methode": "nicht_gefunden",
+  "isin_kandidaten": null,
+  "firds_name": null,
+  "verified": false,
+  "human_review": "pending"
+ },
+ {
+  "security_id": "CA3180714048",
+  "isin": "CA3180714048",
+  "issuer_id": "LEI:549300QLDCP11KB6XW55",
+  "name": "FINNING INTERNATIONAL INC",
+  "klasse": null,
+  "art": "share",
+  "isin_methode": "esma_firds_name_eindeutig",
+  "isin_kandidaten": [
+   "CA3180714048"
+  ],
+  "firds_name": "Finning International Inc. Registered Shares o.N.",
+  "verified": false,
+  "human_review": "pending"
+ },
+ {
+  "security_id": "CA1366812024",
+  "isin": "CA1366812024",
+  "issuer_id": "LEI:549300RLHDA7VQYMUB14",
+  "name": "CANADIAN TIRE LTD CLASS A",
+  "klasse": "A",
+  "art": "share",
+  "isin_methode": "esma_firds_name_eindeutig",
+  "isin_kandidaten": [
+   "CA1366812024"
+  ],
+  "firds_name": "Canadian Tire Corp. Ltd.      Registered Shares Class A o.N.",
+  "verified": false,
+  "human_review": "pending"
+ },
+ {
+  "security_id": "CA2849025093",
+  "isin": "CA2849025093",
+  "issuer_id": "LEI:5493004PWQ01YDD1IH62",
+  "name": "ELDORADO GOLD",
+  "klasse": null,
+  "art": "share",
+  "isin_methode": "esma_firds_name_eindeutig",
+  "isin_kandidaten": [
+   "CA2849025093"
+  ],
+  "firds_name": "Eldorado Gold Corp. Ltd. Registered Shares o.N.",
+  "verified": false,
+  "human_review": "pending"
+ },
+ {
+  "security_id": "CA8029121057",
+  "isin": "CA8029121057",
+  "issuer_id": "LEI:549300HH4U1DPY0TBT90",
+  "name": "SAPUTO",
+  "klasse": null,
+  "art": "share",
+  "isin_methode": "esma_firds_name_eindeutig",
+  "isin_kandidaten": [
+   "CA8029121057"
+  ],
+  "firds_name": "SAPUTO INC.                   Registered Shares o.N.",
+  "verified": false,
+  "human_review": "pending"
+ },
+ {
+  "security_id": "CA87241L1094",
+  "isin": "CA87241L1094",
+  "issuer_id": "LEI:5493007R9W7KO7SJN678",
+  "name": "TFI INTERNATIONAL",
+  "klasse": null,
+  "art": "share",
+  "isin_methode": "esma_firds_name_eindeutig",
+  "isin_kandidaten": [
+   "CA87241L1094"
+  ],
+  "firds_name": "TFI International Inc.        Registered Shares o.N.",
+  "verified": false,
+  "human_review": "pending"
+ },
+ {
+  "security_id": "CA14042M1023",
+  "isin": "CA14042M1023",
+  "issuer_id": "LEI:549300QRKTEXGXYVPO80",
+  "name": "CAPITAL POWER CORP",
+  "klasse": null,
+  "art": "share",
+  "isin_methode": "esma_firds_name_eindeutig",
+  "isin_kandidaten": [
+   "CA14042M1023"
+  ],
+  "firds_name": "Capital Power Corp.           Registered Shares o.N.",
+  "verified": false,
+  "human_review": "pending"
+ },
+ {
+  "security_id": "OHNE_ISIN:BEP.UN@XTSE",
+  "isin": null,
+  "issuer_id": "NAME:CA:BROOKFIELD-PARTNERS-RENEWABLE",
+  "name": "BROOKFIELD RENEWABLE PARTNERS NON",
+  "klasse": null,
+  "art": "unit_trust_or_partnership",
+  "isin_methode": "nicht_gefunden",
+  "isin_kandidaten": null,
+  "firds_name": null,
+  "verified": false,
+  "human_review": "pending"
+ },
+ {
+  "security_id": "CA36270K1021",
+  "isin": "CA36270K1021",
+  "issuer_id": "LEI:894500N5AZEQU0BLOT06",
+  "name": "G MINING VENTURES CORP",
+  "klasse": null,
+  "art": "share",
+  "isin_methode": "esma_firds_name_eindeutig",
+  "isin_kandidaten": [
+   "CA36270K1021"
+  ],
+  "firds_name": "G Mining Ventures Corp. Registered Shares New o.N.",
+  "verified": false,
+  "human_review": "pending"
+ },
+ {
+  "security_id": "CA83671M1059",
+  "isin": "CA83671M1059",
+  "issuer_id": "LEI:2549000XS5TAFA3YF943",
+  "name": "SOUTH BOW",
+  "klasse": null,
+  "art": "share",
+  "isin_methode": "esma_firds_name_eindeutig",
+  "isin_kandidaten": [
+   "CA83671M1059"
+  ],
+  "firds_name": "South Bow Corp. Registered Shares o.N.",
+  "verified": false,
+  "human_review": "pending"
+ },
+ {
+  "security_id": "CA26139R1091",
+  "isin": "CA26139R1091",
+  "issuer_id": "LEI:549300LATVTU0EIUMD45",
+  "name": "DPM METALS",
+  "klasse": null,
+  "art": "share",
+  "isin_methode": "esma_firds_name_eindeutig",
+  "isin_kandidaten": [
+   "CA26139R1091"
+  ],
+  "firds_name": "DPM METALS INC. O.N.",
+  "verified": false,
+  "human_review": "pending"
+ },
+ {
+  "security_id": "CA33767E2024",
+  "isin": "CA33767E2024",
+  "issuer_id": "LEI:5493000XUDIV75BCF118",
+  "name": "FIRSTSERVICE SUBORDINATE VOTING",
+  "klasse": null,
+  "art": "share_subordinate_voting",
+  "isin_methode": "esma_firds_name_eindeutig",
+  "isin_kandidaten": [
+   "CA33767E2024"
+  ],
+  "firds_name": "FirstService Corp. Registered Shares o.N.",
+  "verified": false,
+  "human_review": "pending"
+ },
+ {
+  "security_id": "CA5503711080",
+  "isin": "CA5503711080",
+  "issuer_id": "LEI:549300ZOV16K515FC525",
+  "name": "LUNDIN GOLD",
+  "klasse": null,
+  "art": "share",
+  "isin_methode": "esma_firds_name_eindeutig",
+  "isin_kandidaten": [
+   "CA5503711080"
+  ],
+  "firds_name": "Lundin Gold Inc. Registered Shares o.N.",
+  "verified": false,
+  "human_review": "pending"
+ },
+ {
+  "security_id": "CA3759161035",
+  "isin": "CA3759161035",
+  "issuer_id": "LEI:549300SB3IBI34M00Z45",
+  "name": "GILDAN ACTIVEWEAR",
+  "klasse": null,
+  "art": "share",
+  "isin_methode": "esma_firds_name_eindeutig",
+  "isin_kandidaten": [
+   "CA3759161035"
+  ],
+  "firds_name": "Gildan Activewear Inc.        Reg. Shs (Sub.Vtg)o.N.",
+  "verified": false,
+  "human_review": "pending"
+ },
+ {
+  "security_id": "CA68390D1069",
+  "isin": "CA68390D1069",
+  "issuer_id": "LEI:549300TJZTXZMPQ6K004",
+  "name": "OR ROYALTIES INC",
+  "klasse": null,
+  "art": "share",
+  "isin_methode": "esma_firds_name_eindeutig",
+  "isin_kandidaten": [
+   "CA68390D1069"
+  ],
+  "firds_name": "OR Royalties Inc. Registered Shares o.N.",
+  "verified": false,
+  "human_review": "pending"
+ },
+ {
+  "security_id": "CA32076V1031",
+  "isin": "CA32076V1031",
+  "issuer_id": "LEI:529900PWCU5DUH1DYR51",
+  "name": "FIRST MAJESTIC SILVER",
+  "klasse": null,
+  "art": "share",
+  "isin_methode": "esma_firds_name_eindeutig",
+  "isin_kandidaten": [
+   "CA32076V1031"
+  ],
+  "firds_name": "First Majestic Silver Corp.   Registered Shares o.N.",
+  "verified": false,
+  "human_review": "pending"
+ },
+ {
+  "security_id": "CA7481932084",
+  "isin": "CA7481932084",
+  "issuer_id": "LEI:5493006O1E1TBNKPQW25",
+  "name": "QUEBECOR CLASS B",
+  "klasse": "B",
+  "art": "share",
+  "isin_methode": "esma_firds_name_eindeutig",
+  "isin_kandidaten": [
+   "CA7481932084"
+  ],
+  "firds_name": "QUEBECOR SUB VOTING CL B ORD",
+  "verified": false,
+  "human_review": "pending"
+ },
+ {
+  "security_id": "CA11777Q2099",
+  "isin": "CA11777Q2099",
+  "issuer_id": "LEI:549300F7OK456M5NLM05",
+  "name": "B2GOLD",
+  "klasse": null,
+  "art": "share",
+  "isin_methode": "esma_firds_name_eindeutig",
+  "isin_kandidaten": [
+   "CA11777Q2099"
+  ],
+  "firds_name": "B2Gold Corp.                  Registered Shares o.N.",
+  "verified": false,
+  "human_review": "pending"
+ },
+ {
+  "security_id": "CA6837151068",
+  "isin": "CA6837151068",
+  "issuer_id": "LEI:549300HP7ONDQODZJV16",
+  "name": "OPEN TEXT",
+  "klasse": null,
+  "art": "share",
+  "isin_methode": "esma_firds_name_eindeutig",
+  "isin_kandidaten": [
+   "CA6837151068"
+  ],
+  "firds_name": "Open Text Corp. Registered Shares o.N.",
+  "verified": false,
+  "human_review": "pending"
+ },
+ {
+  "security_id": "CA7397211086",
+  "isin": "CA7397211086",
+  "issuer_id": "LEI:529900AXG582AP7CV733",
+  "name": "PRAIRIESKY ROYALTY",
+  "klasse": null,
+  "art": "share",
+  "isin_methode": "esma_firds_name_eindeutig",
+  "isin_kandidaten": [
+   "CA7397211086"
+  ],
+  "firds_name": "PrairieSky Royalty Ltd.       Registered Shares o.N.",
+  "verified": false,
+  "human_review": "pending"
+ },
+ {
+  "security_id": "CA2861812014",
+  "isin": "CA2861812014",
+  "issuer_id": "LEI:5493000PGBS1C22ELQ16",
+  "name": "ELEMENT FLEET MANAGEMENT",
+  "klasse": null,
+  "art": "share",
+  "isin_methode": "esma_firds_name_eindeutig",
+  "isin_kandidaten": [
+   "CA2861812014"
+  ],
+  "firds_name": "Element Fleet Management Corp. Registered Shares o.N.",
+  "verified": false,
+  "human_review": "pending"
+ },
+ {
+  "security_id": "CA6752224007",
+  "isin": "CA6752224007",
+  "issuer_id": "LEI:549300CBMSE8I9N3E232",
+  "name": "OCEANAGOLD CORPORATION CORP",
+  "klasse": null,
+  "art": "share",
+  "isin_methode": "esma_firds_name_eindeutig",
+  "isin_kandidaten": [
+   "CA6752224007"
+  ],
+  "firds_name": "OceanaGold Corp. Registered Shares o.N.",
+  "verified": false,
+  "human_review": "pending"
+ },
+ {
+  "security_id": "CA09228F1036",
+  "isin": "CA09228F1036",
+  "issuer_id": "LEI:549300HJD8NEGT71RF07",
+  "name": "BLACKBERRY",
+  "klasse": null,
+  "art": "share",
+  "isin_methode": "esma_firds_name_eindeutig",
+  "isin_kandidaten": [
+   "CA09228F1036"
+  ],
+  "firds_name": "BlackBerry Ltd. Registered Shares o.N.",
+  "verified": false,
+  "human_review": "pending"
+ },
+ {
+  "security_id": "CA59151K1084",
+  "isin": "CA59151K1084",
+  "issuer_id": "LEI:549300TSJHRXT9QXRD13",
+  "name": "METHANEX",
+  "klasse": null,
+  "art": "share",
+  "isin_methode": "esma_firds_name_eindeutig",
+  "isin_kandidaten": [
+   "CA59151K1084"
+  ],
+  "firds_name": "Methanex Corp. Registered Shares o.N.",
+  "verified": false,
+  "human_review": "pending"
+ },
+ {
+  "security_id": "CA7847301032",
+  "isin": "CA7847301032",
+  "issuer_id": "LEI:549300JD2KR7AB9DYJ38",
+  "name": "SSR MINING",
+  "klasse": null,
+  "art": "share",
+  "isin_methode": "esma_firds_name_eindeutig",
+  "isin_kandidaten": [
+   "CA7847301032"
+  ],
+  "firds_name": "SSR Mining Inc. Registered Shares o.N.",
+  "verified": false,
+  "human_review": "pending"
+ },
+ {
+  "security_id": "CA4495861060",
+  "isin": "CA4495861060",
+  "issuer_id": "LEI:254900RYHLVJNTUFDA95",
+  "name": "IGM FINANCIAL INC",
+  "klasse": null,
+  "art": "share",
+  "isin_methode": "esma_firds_name_eindeutig",
+  "isin_kandidaten": [
+   "CA4495861060"
+  ],
+  "firds_name": "IGM Financial Inc. Registered Shares o.N.",
+  "verified": false,
+  "human_review": "pending"
+ },
+ {
+  "security_id": "CA1367178326",
+  "isin": "CA1367178326",
+  "issuer_id": "LEI:LWV4QIQODEH3VBHUFX07",
+  "name": "CANADIAN UTILITIES LTD CLASS A",
+  "klasse": "A",
+  "art": "share",
+  "isin_methode": "esma_firds_name_eindeutig",
+  "isin_kandidaten": [
+   "CA1367178326"
+  ],
+  "firds_name": "Canadian Utilities Ltd. Reg.Shs Cl.A (Non Voting) o.N.",
+  "verified": false,
+  "human_review": "pending"
+ },
+ {
+  "security_id": "OHNE_ISIN:CSH.UN@XTSE",
+  "isin": null,
+  "issuer_id": "NAME:CA:CHARTWELL-RE-RESIDENCES-RETIREMENT",
+  "name": "CHARTWELL RETIREMENT RESIDENCES RE",
+  "klasse": null,
+  "art": "unit_trust_or_partnership",
+  "isin_methode": "nicht_gefunden",
+  "isin_kandidaten": null,
+  "firds_name": null,
+  "verified": false,
+  "human_review": "pending"
+ },
+ {
+  "security_id": "CA65340P1062",
+  "isin": "CA65340P1062",
+  "issuer_id": "LEI:529900N0IXNXB3IP7F06",
+  "name": "NEXGEN ENERGY",
+  "klasse": null,
+  "art": "share",
+  "isin_methode": "esma_firds_name_eindeutig",
+  "isin_kandidaten": [
+   "CA65340P1062"
+  ],
+  "firds_name": "NexGen Energy Ltd. Registered Shares o.N.",
+  "verified": false,
+  "human_review": "pending"
+ },
+ {
+  "security_id": "CA24477T1003",
+  "isin": "CA24477T1003",
+  "issuer_id": "LEI:984500D5F3FC49D00C44",
+  "name": "DEFINITY FINANCIAL",
+  "klasse": null,
+  "art": "share",
+  "isin_methode": "esma_firds_name_eindeutig",
+  "isin_kandidaten": [
+   "CA24477T1003"
+  ],
+  "firds_name": "Definity Financial Corp.. Registered Shares o.N.",
+  "verified": false,
+  "human_review": "pending"
+ },
+ {
+  "security_id": "CA68272K1030",
+  "isin": "CA68272K1030",
+  "issuer_id": "LEI:894500LB8PNE5C7CEN88",
+  "name": "ONEX",
+  "klasse": null,
+  "art": "share",
+  "isin_methode": "esma_firds_name_eindeutig",
+  "isin_kandidaten": [
+   "CA68272K1030"
+  ],
+  "firds_name": "Onex Corp. Reg.Shs (Subordinate Vtg) o.N.",
+  "verified": false,
+  "human_review": "pending"
+ },
+ {
+  "security_id": "OHNE_ISIN:ACO.X@XTSE",
+  "isin": null,
+  "issuer_id": "NAME:CA:ATCO",
+  "name": "ATCO CLASS I",
+  "klasse": "X",
+  "art": "share",
+  "isin_methode": "nicht_gefunden",
+  "isin_kandidaten": null,
+  "firds_name": null,
+  "verified": false,
+  "human_review": "pending"
+ },
+ {
+  "security_id": "CA2918434077",
+  "isin": "CA2918434077",
+  "issuer_id": "LEI:549300TX0ZUSTEF7C719",
+  "name": "EMPIRE CLASS A",
+  "klasse": "A",
+  "art": "share",
+  "isin_methode": "esma_firds_name_eindeutig",
+  "isin_kandidaten": [
+   "CA2918434077"
+  ],
+  "firds_name": "Empire Co. Ltd. Registered Shares Class A o.N.",
+  "verified": false,
+  "human_review": "pending"
+ },
+ {
+  "security_id": "CA3012831077",
+  "isin": "CA3012831077",
+  "issuer_id": "LEI:549300G7SUZKHS2N8C38",
+  "name": "EXCHANGE INCOME CORP",
+  "klasse": null,
+  "art": "share",
+  "isin_methode": "esma_firds_name_eindeutig",
+  "isin_kandidaten": [
+   "CA3012831077"
+  ],
+  "firds_name": "Exchange Income Corp. Registered Shares o.N.",
+  "verified": false,
+  "human_review": "pending"
+ },
+ {
+  "security_id": "CA55293N1096",
+  "isin": "CA55293N1096",
+  "issuer_id": "LEI:213800R54EFFINMY1P02",
+  "name": "MDA SPACE",
+  "klasse": null,
+  "art": "share",
+  "isin_methode": "esma_firds_name_eindeutig",
+  "isin_kandidaten": [
+   "CA55293N1096"
+  ],
+  "firds_name": "MDA Space Ord Shs",
+  "verified": false,
+  "human_review": "pending"
+ },
+ {
+  "security_id": "CA6665111002",
+  "isin": "CA6665111002",
+  "issuer_id": "LEI:8945002IJ77NEBK48M81",
+  "name": "NORTHLAND POWER INC",
+  "klasse": null,
+  "art": "share",
+  "isin_methode": "esma_firds_name_eindeutig",
+  "isin_kandidaten": [
+   "CA6665111002"
+  ],
+  "firds_name": "Northland Power Inc.          Registered Shares o.N.",
+  "verified": false,
+  "human_review": "pending"
+ },
+ {
+  "security_id": "OHNE_ISIN:REI.UN@XTSE",
+  "isin": null,
+  "issuer_id": "NAME:CA:ESTATE-INVESTMENT-REAL-RIOCAN-TRUS",
+  "name": "RIOCAN REAL ESTATE INVESTMENT TRUS",
+  "klasse": null,
+  "art": "unit_reit",
+  "isin_methode": "nicht_gefunden",
+  "isin_kandidaten": null,
+  "firds_name": null,
+  "verified": false,
+  "human_review": "pending"
+ },
+ {
+  "security_id": "CA49448Q1090",
+  "isin": "CA49448Q1090",
+  "issuer_id": "LEI:5299009VAZ14K7PFUQ15",
+  "name": "KINAXIS INC",
+  "klasse": null,
+  "art": "share",
+  "isin_methode": "esma_firds_name_eindeutig",
+  "isin_kandidaten": [
+   "CA49448Q1090"
+  ],
+  "firds_name": "Kinaxis Inc. Registered Shares o.N.",
+  "verified": false,
+  "human_review": "pending"
+ },
+ {
+  "security_id": "CA89105F1036",
+  "isin": "CA89105F1036",
+  "issuer_id": "LEI:549300QL07027186GQ85",
+  "name": "TOREX RESOURCES",
+  "klasse": null,
+  "art": "share",
+  "isin_methode": "esma_firds_name_eindeutig",
+  "isin_kandidaten": [
+   "CA89105F1036"
+  ],
+  "firds_name": "Torex Resources Inc. Registered Shares o.N.",
+  "verified": false,
+  "human_review": "pending"
+ },
+ {
+  "security_id": "CA25466C1077",
+  "isin": "CA25466C1077",
+  "issuer_id": "LEI:98450041CCB3E8QD3F53",
+  "name": "DISCOVERY MINING LTD",
+  "klasse": null,
+  "art": "share",
+  "isin_methode": "esma_firds_name_eindeutig",
+  "isin_kandidaten": [
+   "CA25466C1077"
+  ],
+  "firds_name": "Discovery Mining Ltd.",
+  "verified": false,
+  "human_review": "pending"
+ },
+ {
+  "security_id": "CA14071L1085",
+  "isin": "CA14071L1085",
+  "issuer_id": "LEI:549300III6KGKKC42W63",
+  "name": "CAPSTONE COPPER CORP",
+  "klasse": null,
+  "art": "share",
+  "isin_methode": "esma_firds_name_eindeutig",
+  "isin_kandidaten": [
+   "CA14071L1085"
+  ],
+  "firds_name": "Capstone Copper Corp. Registered Shares o.N.",
+  "verified": false,
+  "human_review": "pending"
+ },
+ {
+  "security_id": "CA1946931070",
+  "isin": "CA1946931070",
+  "issuer_id": "LEI:D3O8K13PHLEXXD1DT480",
+  "name": "COLLIERS INTERNATIONAL GROUP SUBOR",
+  "klasse": null,
+  "art": "share",
+  "isin_methode": "esma_firds_name_eindeutig",
+  "isin_kandidaten": [
+   "CA1946931070"
+  ],
+  "firds_name": "Colliers International Grp Inc Reg. Shares (Sub. Vtg) o.N.",
+  "verified": false,
+  "human_review": "pending"
+ },
+ {
+  "security_id": "CA0158571053",
+  "isin": "CA0158571053",
+  "issuer_id": "LEI:549300K5VIUTJXQL7X75",
+  "name": "ALGONQUIN POWER UTILITIES",
+  "klasse": null,
+  "art": "share",
+  "isin_methode": "esma_firds_name_eindeutig",
+  "isin_kandidaten": [
+   "CA0158571053"
+  ],
+  "firds_name": "Algonquin Power&Utilities Corp Registered Shares o.N.",
+  "verified": false,
+  "human_review": "pending"
+ },
+ {
+  "security_id": "CA0089118776",
+  "isin": "CA0089118776",
+  "issuer_id": "LEI:4B4HI3CGXMBDC0G6BM51",
+  "name": "AIR CANADA VOTING AND VARIABLE VOT",
+  "klasse": null,
+  "art": "share",
+  "isin_methode": "esma_firds_name_eindeutig",
+  "isin_kandidaten": [
+   "CA0089118776"
+  ],
+  "firds_name": "Air Canada Inc.               Reg.Shares (Variable Vtg) o.N.",
+  "verified": false,
+  "human_review": "pending"
+ },
+ {
+  "security_id": "CA4991131083",
+  "isin": "CA4991131083",
+  "issuer_id": "LEI:254900EA8H0X9FEVZU11",
+  "name": "K92 MINING",
+  "klasse": null,
+  "art": "share",
+  "isin_methode": "esma_firds_name_eindeutig",
+  "isin_kandidaten": [
+   "CA4991131083"
+  ],
+  "firds_name": "K92 Mining Inc. Registered Shares o.N.",
+  "verified": false,
+  "human_review": "pending"
+ },
+ {
+  "security_id": "CA04682R1073",
+  "isin": "CA04682R1073",
+  "issuer_id": "LEI:549300STK2KBVO6WED71",
+  "name": "ATHABASCA OIL",
+  "klasse": null,
+  "art": "share",
+  "isin_methode": "esma_firds_name_eindeutig",
+  "isin_kandidaten": [
+   "CA04682R1073"
+  ],
+  "firds_name": "Athabasca Oil Corp. Registered Shares o.N.",
+  "verified": false,
+  "human_review": "pending"
+ },
+ {
+  "security_id": "OHNE_ISIN:GRT.UN@XTSE",
+  "isin": null,
+  "issuer_id": "NAME:CA:ESTATE-GRANITE-INVESTMENT-REAL-STA",
+  "name": "GRANITE REAL ESTATE INVESTMENT STA",
+  "klasse": null,
+  "art": "unit_reit",
+  "isin_methode": "nicht_gefunden",
+  "isin_kandidaten": null,
+  "firds_name": null,
+  "verified": false,
+  "human_review": "pending"
+ },
+ {
+  "security_id": "CA3748252069",
+  "isin": "CA3748252069",
+  "issuer_id": "LEI:549300WYW5D9I3FR0643",
+  "name": "GIBSON ENERGY",
+  "klasse": null,
+  "art": "share",
+  "isin_methode": "esma_firds_name_eindeutig",
+  "isin_kandidaten": [
+   "CA3748252069"
+  ],
+  "firds_name": "Gibson Energy Inc. Registered Shares o.N.",
+  "verified": false,
+  "human_review": "pending"
+ },
+ {
+  "security_id": "CA9528451052",
+  "isin": "CA9528451052",
+  "issuer_id": "LEI:5493005WD1ZK6WBVR988",
+  "name": "WEST FRASER TIMBER",
+  "klasse": null,
+  "art": "share",
+  "isin_methode": "esma_firds_name_eindeutig",
+  "isin_kandidaten": [
+   "CA9528451052"
+  ],
+  "firds_name": "West Fraser Timber Co. Ltd. Registered Shares o.N.",
+  "verified": false,
+  "human_review": "pending"
+ },
+ {
+  "security_id": "CA87505Y4094",
+  "isin": "CA87505Y4094",
+  "issuer_id": "LEI:549300TLKPX8BE14MH06",
+  "name": "TAMARACK VALLEY ENERGY LTD",
+  "klasse": null,
+  "art": "share",
+  "isin_methode": "esma_firds_name_eindeutig",
+  "isin_kandidaten": [
+   "CA87505Y4094"
+  ],
+  "firds_name": "Tamarack Valley Energy Ltd. Registered Shares o.N.",
+  "verified": false,
+  "human_review": "pending"
+ },
+ {
+  "security_id": "CA46579R1047",
+  "isin": "CA46579R1047",
+  "issuer_id": "LEI:5299006XZISURYIA4G32",
+  "name": "IVANHOE MINES CLASS A",
+  "klasse": "A",
+  "art": "share",
+  "isin_methode": "esma_firds_name_eindeutig",
+  "isin_kandidaten": [
+   "CA46579R1047"
+  ],
+  "firds_name": "Ivanhoe Mines Ltd.            Reg. Shares Class A o.N.",
+  "verified": false,
+  "human_review": "pending"
+ },
+ {
+  "security_id": "CA1520061021",
+  "isin": "CA1520061021",
+  "issuer_id": "LEI:549300K0HXTMP5JJ0E62",
+  "name": "CENTERRA GOLD",
+  "klasse": null,
+  "art": "share",
+  "isin_methode": "esma_firds_name_eindeutig",
+  "isin_kandidaten": [
+   "CA1520061021"
+  ],
+  "firds_name": "Centerra Gold Inc.            Registered Shares o.N.",
+  "verified": false,
+  "human_review": "pending"
+ },
+ {
+  "security_id": "CA89346D1078",
+  "isin": "CA89346D1078",
+  "issuer_id": "LEI:254900PRZO6A4IZ69Q60",
+  "name": "TRANSALTA",
+  "klasse": null,
+  "art": "share",
+  "isin_methode": "esma_firds_name_eindeutig",
+  "isin_kandidaten": [
+   "CA89346D1078"
+  ],
+  "firds_name": "TransAlta Corp. Registered Shares o.N.",
+  "verified": false,
+  "human_review": "pending"
+ },
+ {
+  "security_id": "CA7170461064",
+  "isin": "CA7170461064",
+  "issuer_id": "LEI:98450004AE67F646C503",
+  "name": "PEYTO EXPLORATION & DEVELOPMENT",
+  "klasse": null,
+  "art": "share",
+  "isin_methode": "esma_firds_name_eindeutig",
+  "isin_kandidaten": [
+   "CA7170461064"
+  ],
+  "firds_name": "Peyto Explorat.&Devel.Corp. Registered Shares o.N.",
+  "verified": false,
+  "human_review": "pending"
+ },
+ {
+  "security_id": "OHNE_ISIN:FCR.UN@XTSE",
+  "isin": null,
+  "issuer_id": "NAME:CA:CAPITAL-ESTATE-FIRST-REAL-REALTY",
+  "name": "FIRST CAPITAL REALTY REAL ESTATE I",
+  "klasse": null,
+  "art": "unit_reit",
+  "isin_methode": "nicht_gefunden",
+  "isin_kandidaten": null,
+  "firds_name": null,
+  "verified": false,
+  "human_review": "pending"
+ },
+ {
+  "security_id": "CA83056P7157",
+  "isin": "CA83056P7157",
+  "issuer_id": "LEI:549300DCWSQFVVZ21289",
+  "name": "SKEENA RESOURCES",
+  "klasse": null,
+  "art": "share",
+  "isin_methode": "esma_firds_name_eindeutig",
+  "isin_kandidaten": [
+   "CA83056P7157"
+  ],
+  "firds_name": "Skeena Resources Ltd. Registered Shares New o.N.",
+  "verified": false,
+  "human_review": "pending"
+ },
+ {
+  "security_id": "CA61178L1013",
+  "isin": "CA61178L1013",
+  "issuer_id": "LEI:9845004C6BCE77ACA795",
+  "name": "MONTAGE GOLD",
+  "klasse": null,
+  "art": "share",
+  "isin_methode": "esma_firds_name_eindeutig",
+  "isin_kandidaten": [
+   "CA61178L1013"
+  ],
+  "firds_name": "Montage Gold Corp. Registered Shares o.N.",
+  "verified": false,
+  "human_review": "pending"
+ },
+ {
+  "security_id": "OHNE_ISIN:CAR.UN@XTSE",
+  "isin": null,
+  "issuer_id": "NAME:CA:APARTMENT-CANADIAN-PROPERTIES-REAL",
+  "name": "CANADIAN APARTMENT PROPERTIES REAL",
+  "klasse": null,
+  "art": "unit_trust_or_partnership",
+  "isin_methode": "nicht_gefunden",
+  "isin_kandidaten": null,
+  "firds_name": null,
+  "verified": false,
+  "human_review": "pending"
+ },
+ {
+  "security_id": "OHNE_ISIN:CHP.UN@XTSE",
+  "isin": null,
+  "issuer_id": "NAME:CA:CHOICE-ESTATE-INVE-PROPERTIES-REAL",
+  "name": "CHOICE PROPERTIES REAL ESTATE INVE",
+  "klasse": null,
+  "art": "unit_reit",
+  "isin_methode": "nicht_gefunden",
+  "isin_kandidaten": null,
+  "firds_name": null,
+  "verified": false,
+  "human_review": "pending"
+ },
+ {
+  "security_id": "CA05466C1095",
+  "isin": "CA05466C1095",
+  "issuer_id": "LEI:549300BWX8KJOTUL4M51",
+  "name": "AYA GOLD & SILVER INC",
+  "klasse": null,
+  "art": "share",
+  "isin_methode": "esma_firds_name_eindeutig",
+  "isin_kandidaten": [
+   "CA05466C1095"
+  ],
+  "firds_name": "Aya Gold & Silver Inc. Registered Shares o.N.",
+  "verified": false,
+  "human_review": "pending"
+ },
+ {
+  "security_id": "CA15713J1049",
+  "isin": "CA15713J1049",
+  "issuer_id": "LEI:984500NF54914EB1B646",
+  "name": "CES ENERGY SOLUTIONS CORP",
+  "klasse": null,
+  "art": "share",
+  "isin_methode": "esma_firds_name_eindeutig",
+  "isin_kandidaten": [
+   "CA15713J1049"
+  ],
+  "firds_name": "CES Energy Solutions Corp. Registered Shares o.N.",
+  "verified": false,
+  "human_review": "pending"
+ },
+ {
+  "security_id": "CA7819036046",
+  "isin": "CA7819036046",
+  "issuer_id": "LEI:5493005F9VPHFO17OV54",
+  "name": "RUSSEL METALS",
+  "klasse": null,
+  "art": "share",
+  "isin_methode": "esma_firds_name_eindeutig",
+  "isin_kandidaten": [
+   "CA7819036046"
+  ],
+  "firds_name": "Russel Metals Inc. Registered Shares o.N.",
+  "verified": false,
+  "human_review": "pending"
+ },
+ {
+  "security_id": "CA09076P1045",
+  "isin": "CA09076P1045",
+  "issuer_id": "LEI:549300P1WGG3QPKID017",
+  "name": "BIRD CONSTRUCTION",
+  "klasse": null,
+  "art": "share",
+  "isin_methode": "esma_firds_name_eindeutig",
+  "isin_kandidaten": [
+   "CA09076P1045"
+  ],
+  "firds_name": "Bird Construction Inc. Registered Shares o.N.",
+  "verified": false,
+  "human_review": "pending"
+ },
+ {
+  "security_id": "CA04040Y1097",
+  "isin": "CA04040Y1097",
+  "issuer_id": "LEI:5493001GJ5TILX6L1F82",
+  "name": "ARIS MINING",
+  "klasse": null,
+  "art": "share",
+  "isin_methode": "esma_firds_name_eindeutig",
+  "isin_kandidaten": [
+   "CA04040Y1097"
+  ],
+  "firds_name": "Aris Mining Corp. Registered Shares o.N.",
+  "verified": false,
+  "human_review": "pending"
+ },
+ {
+  "security_id": "CA89055A2039",
+  "isin": "CA89055A2039",
+  "issuer_id": "LEI:5493008M0TDGJOBY9122",
+  "name": "TOPAZ ENERGY",
+  "klasse": null,
+  "art": "share",
+  "isin_methode": "esma_firds_name_eindeutig",
+  "isin_kandidaten": [
+   "CA89055A2039"
+  ],
+  "firds_name": "Topaz Energy Corp. Registered Shares o.N.",
+  "verified": false,
+  "human_review": "pending"
+ },
+ {
+  "security_id": "CA74061A1084",
+  "isin": "CA74061A1084",
+  "issuer_id": "LEI:529900F5EXPGUY8WV366",
+  "name": "PREMIUM BRANDS HOLDINGS",
+  "klasse": null,
+  "art": "share",
+  "isin_methode": "esma_firds_name_eindeutig",
+  "isin_kandidaten": [
+   "CA74061A1084"
+  ],
+  "firds_name": "Premium Brands Holdings Corp. Registered Shares o.N.",
+  "verified": false,
+  "human_review": "pending"
+ },
+ {
+  "security_id": "CA95083R1001",
+  "isin": "CA95083R1001",
+  "issuer_id": "LEI:254900D63U62QS84H719",
+  "name": "WESDOME GOLD MINES LTD",
+  "klasse": null,
+  "art": "share",
+  "isin_methode": "esma_firds_name_eindeutig",
+  "isin_kandidaten": [
+   "CA95083R1001"
+  ],
+  "firds_name": "Wesdome Gold Mines Ltd.       Registered Shares o.N.",
+  "verified": false,
+  "human_review": "pending"
+ },
+ {
+  "security_id": "CA07317Q1054",
+  "isin": "CA07317Q1054",
+  "issuer_id": "LEI:549300R5LTV2H7I1I079",
+  "name": "BAYTEX ENERGY",
+  "klasse": null,
+  "art": "share",
+  "isin_methode": "esma_firds_name_eindeutig",
+  "isin_kandidaten": [
+   "CA07317Q1054"
+  ],
+  "firds_name": "Baytex Energy Corp.           Registered Shares o.N.",
+  "verified": false,
+  "human_review": "pending"
+ },
+ {
+  "security_id": "CA00762V1094",
+  "isin": "CA00762V1094",
+  "issuer_id": "LEI:549300VROCXVWXFR8B83",
+  "name": "AECON GROUP",
+  "klasse": null,
+  "art": "share",
+  "isin_methode": "esma_firds_name_eindeutig",
+  "isin_kandidaten": [
+   "CA00762V1094"
+  ],
+  "firds_name": "Aecon Group Inc. Registered Shares o.N.",
+  "verified": false,
+  "human_review": "pending"
+ },
+ {
+  "security_id": "CA85853F1053",
+  "isin": "CA85853F1053",
+  "issuer_id": "LEI:5493007LOVNNLYJ6KZ35",
+  "name": "STELLA JONES",
+  "klasse": null,
+  "art": "share",
+  "isin_methode": "esma_firds_name_eindeutig",
+  "isin_kandidaten": [
+   "CA85853F1053"
+  ],
+  "firds_name": "Stella-Jones Inc. Registered Shares o.N.",
+  "verified": false,
+  "human_review": "pending"
+ },
+ {
+  "security_id": "OHNE_ISIN:SRU.UN@XTSE",
+  "isin": null,
+  "issuer_id": "NAME:CA:ESTATE-INVESTMENT-REAL-SMARTCENTRES",
+  "name": "SMARTCENTRES RL ESTATE INVESTMENT",
+  "klasse": null,
+  "art": "unit_trust_or_partnership",
+  "isin_methode": "nicht_gefunden",
+  "isin_kandidaten": null,
+  "firds_name": null,
+  "verified": false,
+  "human_review": "pending"
+ },
+ {
+  "security_id": "OHNE_ISIN:DIR.UN@XTSE",
+  "isin": null,
+  "issuer_id": "NAME:CA:DREAM-ESTATE-INDUSTRIAL-INVES-REAL",
+  "name": "DREAM INDUSTRIAL REAL ESTATE INVES",
+  "klasse": null,
+  "art": "unit_reit",
+  "isin_methode": "nicht_gefunden",
+  "isin_kandidaten": null,
+  "firds_name": null,
+  "verified": false,
+  "human_review": "pending"
+ },
+ {
+  "security_id": "CA2960061091",
+  "isin": "CA2960061091",
+  "issuer_id": "LEI:549300KL8A21SEIO8I47",
+  "name": "ERO COPPER",
+  "klasse": null,
+  "art": "share",
+  "isin_methode": "esma_firds_name_eindeutig",
+  "isin_kandidaten": [
+   "CA2960061091"
+  ],
+  "firds_name": "Ero Copper Corp. Registered Shares o.N.",
+  "verified": false,
+  "human_review": "pending"
+ },
+ {
+  "security_id": "CA05577W2004",
+  "isin": "CA05577W2004",
+  "issuer_id": "LEI:529900EPQGESIRCPY551",
+  "name": "BRP SUBORDINATE VOTING",
+  "klasse": null,
+  "art": "share_subordinate_voting",
+  "isin_methode": "esma_firds_name_eindeutig",
+  "isin_kandidaten": [
+   "CA05577W2004"
+  ],
+  "firds_name": "BRP Inc. Reg.Subordinate Voting Shs oN",
+  "verified": false,
+  "human_review": "pending"
+ },
+ {
+  "security_id": "CA3499421020",
+  "isin": "CA3499421020",
+  "issuer_id": "LEI:5493003Q88RVK7CW4735",
+  "name": "FORTUNA MINING CORP",
+  "klasse": null,
+  "art": "share",
+  "isin_methode": "esma_firds_name_eindeutig",
+  "isin_kandidaten": [
+   "CA3499421020"
+  ],
+  "firds_name": "Fortuna Mining Corp. Registered Shares o.N.",
+  "verified": false,
+  "human_review": "pending"
+ },
+ {
+  "security_id": "CA29269R1055",
+  "isin": "CA29269R1055",
+  "issuer_id": "LEI:54930014N7872VUS3F89",
+  "name": "ENERFLEX",
+  "klasse": null,
+  "art": "share",
+  "isin_methode": "esma_firds_name_eindeutig",
+  "isin_kandidaten": [
+   "CA29269R1055"
+  ],
+  "firds_name": "Enerflex Ltd. Registered Shares o.N.",
+  "verified": false,
+  "human_review": "pending"
+ },
+ {
+  "security_id": "CA8119271028",
+  "isin": "CA8119271028",
+  "issuer_id": "LEI:9845003FEO1A66376A92",
+  "name": "SEABRIDGE GOLD",
+  "klasse": null,
+  "art": "share",
+  "isin_methode": "esma_firds_name_eindeutig",
+  "isin_kandidaten": [
+   "CA8119271028"
+  ],
+  "firds_name": "Seabridge Gold Inc. Registered Shares New o.N.",
+  "verified": false,
+  "human_review": "pending"
+ },
+ {
+  "security_id": "CA0717341071",
+  "isin": "CA0717341071",
+  "issuer_id": "LEI:B3BS7ACMDUWISF18KY76",
+  "name": "BAUSCH HEALTH COMPANIES",
+  "klasse": null,
+  "art": "share",
+  "isin_methode": "esma_firds_name_eindeutig",
+  "isin_kandidaten": [
+   "CA0717341071"
+  ],
+  "firds_name": "Bausch Health Companies Inc. Registered Shares o.N.",
+  "verified": false,
+  "human_review": "pending"
+ },
+ {
+  "security_id": "CA53278L1076",
+  "isin": "CA53278L1076",
+  "issuer_id": "LEI:549300LW6VIYFRMFBU20",
+  "name": "LINAMAR",
+  "klasse": null,
+  "art": "share",
+  "isin_methode": "esma_firds_name_eindeutig",
+  "isin_kandidaten": [
+   "CA53278L1076"
+  ],
+  "firds_name": "LINAMAR CORP.                 Registered Shares o.N.",
+  "verified": false,
+  "human_review": "pending"
+ },
+ {
+  "security_id": "CA01921D2041",
+  "isin": "CA01921D2041",
+  "issuer_id": "LEI:894500S5G4JFSRGK8L37",
+  "name": "ALLIED GOLD",
+  "klasse": null,
+  "art": "share",
+  "isin_methode": "esma_firds_name_eindeutig",
+  "isin_kandidaten": [
+   "CA01921D2041"
+  ],
+  "firds_name": "Allied Gold Corp.             Registered Shares New o.N.",
+  "verified": false,
+  "human_review": "pending"
+ },
+ {
+  "security_id": "CA89472Y1079",
+  "isin": "CA89472Y1079",
+  "issuer_id": "LEI:529900HTWYRE4BD0GQ69",
+  "name": "TREKOR METALS",
+  "klasse": null,
+  "art": "share",
+  "isin_methode": "esma_firds_name_eindeutig",
+  "isin_kandidaten": [
+   "CA89472Y1079"
+  ],
+  "firds_name": "Trekor Metals Ltd.",
+  "verified": false,
+  "human_review": "pending"
+ },
+ {
+  "security_id": "CA33833X1015",
+  "isin": "CA33833X1015",
+  "issuer_id": "LEI:5493005GU1NFX4YB2S73",
+  "name": "5N PLUS",
+  "klasse": null,
+  "art": "share",
+  "isin_methode": "esma_firds_name_eindeutig",
+  "isin_kandidaten": [
+   "CA33833X1015"
+  ],
+  "firds_name": "5N Plus Inc. Registered Shares o.N.",
+  "verified": false,
+  "human_review": "pending"
+ },
+ {
+  "security_id": "CA89679M1041",
+  "isin": "CA89679M1041",
+  "issuer_id": "LEI:254900R7NJ1TEYIM4E61",
+  "name": "TRIPLE FLAG PRECIOUS METALS",
+  "klasse": null,
+  "art": "share",
+  "isin_methode": "esma_firds_name_eindeutig",
+  "isin_kandidaten": [
+   "CA89679M1041"
+  ],
+  "firds_name": "Triple Flag Prec. Metals Corp. Registered Shares o.N.",
+  "verified": false,
+  "human_review": "pending"
+ },
+ {
+  "security_id": "OHNE_ISIN:NWC@XTSE",
+  "isin": null,
+  "issuer_id": "NAME:CA:NORTH-WEST",
+  "name": "NORTH WEST COMPANY INC",
+  "klasse": null,
+  "art": "share",
+  "isin_methode": "nicht_gefunden",
+  "isin_kandidaten": null,
+  "firds_name": null,
+  "verified": false,
+  "human_review": "pending"
+ },
+ {
+  "security_id": "CA8520662088",
+  "isin": "CA8520662088",
+  "issuer_id": "LEI:254900QHJAD5TP2JNM15",
+  "name": "SPROTT INC",
+  "klasse": null,
+  "art": "share",
+  "isin_methode": "esma_firds_name_eindeutig",
+  "isin_kandidaten": [
+   "CA8520662088"
+  ],
+  "firds_name": "Sprott Inc. Registered Shares o.N.",
+  "verified": false,
+  "human_review": "pending"
+ },
+ {
+  "security_id": "CA26886R1047",
+  "isin": "CA26886R1047",
+  "issuer_id": "LEI:549300QAXPCRULOPD247",
+  "name": "EQB",
+  "klasse": null,
+  "art": "share",
+  "isin_methode": "esma_firds_name_eindeutig",
+  "isin_kandidaten": [
+   "CA26886R1047"
+  ],
+  "firds_name": "EQB Inc. Registered Shares o.N.",
+  "verified": false,
+  "human_review": "pending"
+ },
+ {
+  "security_id": "CA29258Y1034",
+  "isin": "CA29258Y1034",
+  "issuer_id": "LEI:549300IF2E29780PPV02",
+  "name": "ENDEAVOUR SILVER CORP",
+  "klasse": null,
+  "art": "share",
+  "isin_methode": "esma_firds_name_eindeutig",
+  "isin_kandidaten": [
+   "CA29258Y1034"
+  ],
+  "firds_name": "Endeavour Silver Corp.        Registered Shares o.N.",
+  "verified": false,
+  "human_review": "pending"
+ },
+ {
+  "security_id": "CA1033101082",
+  "isin": "CA1033101082",
+  "issuer_id": "LEI:549300FVHMLW88VSTP09",
+  "name": "BOYD GROUP SERVICES INC",
+  "klasse": null,
+  "art": "share",
+  "isin_methode": "esma_firds_name_eindeutig",
+  "isin_kandidaten": [
+   "CA1033101082"
+  ],
+  "firds_name": "Boyd Group Services Inc. Registered Shares o.N.",
+  "verified": false,
+  "human_review": "pending"
+ },
+ {
+  "security_id": "OHNE_ISIN:PMZ.UN@XTSE",
+  "isin": null,
+  "issuer_id": "NAME:CA:ESTATE-INVESTMENT-PRIMARIS-REAL-UN",
+  "name": "PRIMARIS REAL ESTATE INVESTMENT UN",
+  "klasse": null,
+  "art": "unit_reit",
+  "isin_methode": "nicht_gefunden",
+  "isin_kandidaten": null,
+  "firds_name": null,
+  "verified": false,
+  "human_review": "pending"
+ },
+ {
+  "security_id": "CA8629522076",
+  "isin": "CA8629522076",
+  "issuer_id": "LEI:8945002R5I3793F4AZ38",
+  "name": "STRATHCONA RESOURCES LTD",
+  "klasse": null,
+  "art": "share",
+  "isin_methode": "esma_firds_name_eindeutig",
+  "isin_kandidaten": [
+   "CA8629522076"
+  ],
+  "firds_name": "STRATHCONA RES. LTD. NEW",
+  "verified": false,
+  "human_review": "pending"
+ },
+ {
+  "security_id": "CA6252841045",
+  "isin": "CA6252841045",
+  "issuer_id": "LEI:549300KLU7H5NA3I5P62",
+  "name": "MULLEN GROUP",
+  "klasse": null,
+  "art": "share",
+  "isin_methode": "esma_firds_name_eindeutig",
+  "isin_kandidaten": [
+   "CA6252841045"
+  ],
+  "firds_name": "Mullen Group Ltd.             Registered Shares o.N.",
+  "verified": false,
+  "human_review": "pending"
+ },
+ {
+  "security_id": "CA1130061007",
+  "isin": "CA1130061007",
+  "issuer_id": "LEI:2549005XWAHF5YCLN502",
+  "name": "BROOKFIELD BUSINESS CORP CLASS A",
+  "klasse": "A",
+  "art": "share",
+  "isin_methode": "esma_firds_name_eindeutig",
+  "isin_kandidaten": [
+   "CA1130061007"
+  ],
+  "firds_name": "Brookfield Business Corp. Registered Shares New o.N.",
+  "verified": false,
+  "human_review": "pending"
+ },
+ {
+  "security_id": "OHNE_ISIN:HR.UN@XTSE",
+  "isin": null,
+  "issuer_id": "NAME:CA:ESTATE-HANDR-INVESTMENT-REAL",
+  "name": "HANDR REAL ESTATE INVESTMENT TRUST",
+  "klasse": null,
+  "art": "unit_reit",
+  "isin_methode": "nicht_gefunden",
+  "isin_kandidaten": null,
+  "firds_name": null,
+  "verified": false,
+  "human_review": "pending"
+ },
+ {
+  "security_id": "OHNE_ISIN:BDGI@XTSE",
+  "isin": null,
+  "issuer_id": "NAME:CA:BADGER-INFRASTRUCTURE-LT-SOLUTIONS",
+  "name": "BADGER INFRASTRUCTURE SOLUTIONS LT",
+  "klasse": null,
+  "art": "share",
+  "isin_methode": "nicht_gefunden",
+  "isin_kandidaten": null,
+  "firds_name": null,
+  "verified": false,
+  "human_review": "pending"
+ },
+ {
+  "security_id": "CA4220961078",
+  "isin": "CA4220961078",
+  "issuer_id": "LEI:549300XIU4JQ0GKLRG88",
+  "name": "HEADWATER EXPLORATION INC",
+  "klasse": null,
+  "art": "share",
+  "isin_methode": "esma_firds_name_eindeutig",
+  "isin_kandidaten": [
+   "CA4220961078"
+  ],
+  "firds_name": "Headwater Exploration Inc. Registered Shares o.N.",
+  "verified": false,
+  "human_review": "pending"
+ },
+ {
+  "security_id": "CA30224T8639",
+  "isin": "CA30224T8639",
+  "issuer_id": "LEI:5493001DQ0G74DE4CY39",
+  "name": "EXTENDICARE",
+  "klasse": null,
+  "art": "share",
+  "isin_methode": "esma_firds_name_eindeutig",
+  "isin_kandidaten": [
+   "CA30224T8639"
+  ],
+  "firds_name": "Extendicare Inc. Registered Shares o.N.",
+  "verified": false,
+  "human_review": "pending"
+ },
+ {
+  "security_id": "CA82835P1036",
+  "isin": "CA82835P1036",
+  "issuer_id": "LEI:52990092RT3UCQ7G3177",
+  "name": "SILVERCORP METALS INC",
+  "klasse": null,
+  "art": "share",
+  "isin_methode": "esma_firds_name_eindeutig",
+  "isin_kandidaten": [
+   "CA82835P1036"
+  ],
+  "firds_name": "Silvercorp Metals Inc.        Registered Shares o.N.",
+  "verified": false,
+  "human_review": "pending"
+ },
+ {
+  "security_id": "CA6993202069",
+  "isin": "CA6993202069",
+  "issuer_id": "LEI:549300L82S8COFYB0K37",
+  "name": "PARAMOUNT RESOURCE CLASS A",
+  "klasse": "A",
+  "art": "share",
+  "isin_methode": "esma_firds_name_eindeutig",
+  "isin_kandidaten": [
+   "CA6993202069"
+  ],
+  "firds_name": "Paramount Resources Ltd.      Registered Shares Class A o.N.",
+  "verified": false,
+  "human_review": "pending"
+ },
+ {
+  "security_id": "OHNE_ISIN:IPCO@XTSE",
+  "isin": null,
+  "issuer_id": "NAME:CA:INTERNATIONAL-PETROLEUM",
+  "name": "INTERNATIONAL PETROLEUM",
+  "klasse": null,
+  "art": "share",
+  "isin_methode": "nicht_gefunden",
+  "isin_kandidaten": null,
+  "firds_name": null,
+  "verified": false,
+  "human_review": "pending"
+ },
+ {
+  "security_id": "CA66987E2069",
+  "isin": "CA66987E2069",
+  "issuer_id": "LEI:529900587LVZTJ2BHS60",
+  "name": "NOVAGOLD RESOURCES INC",
+  "klasse": null,
+  "art": "share",
+  "isin_methode": "esma_firds_name_eindeutig",
+  "isin_kandidaten": [
+   "CA66987E2069"
+  ],
+  "firds_name": "NOVAGOLD RESOURCES INC.       Registered Shares o.N.",
+  "verified": false,
+  "human_review": "pending"
+ },
+ {
+  "security_id": "OHNE_ISIN:NGEX@XTSE",
+  "isin": null,
+  "issuer_id": "NAME:CA:MINERALS-NGEX",
+  "name": "NGEX MINERALS",
+  "klasse": null,
+  "art": "share",
+  "isin_methode": "mehrdeutig",
+  "isin_kandidaten": [
+   "CA62930A1021",
+   "CA62930A2011"
+  ],
+  "firds_name": null,
+  "verified": false,
+  "human_review": "pending"
+ },
+ {
+  "security_id": "CA3565001086",
+  "isin": "CA3565001086",
+  "issuer_id": "LEI:529900KRYLKJ2WW87P48",
+  "name": "FREEHOLD ROYALTIES",
+  "klasse": null,
+  "art": "share",
+  "isin_methode": "esma_firds_name_eindeutig",
+  "isin_kandidaten": [
+   "CA3565001086"
+  ],
+  "firds_name": "Freehold Royalties Ltd. Registered Shares o.N.",
+  "verified": false,
+  "human_review": "pending"
+ },
+ {
+  "security_id": "CA82621K1021",
+  "isin": "CA82621K1021",
+  "issuer_id": "LEI:549300K3HNLZV4V5LL42",
+  "name": "SIENNA SENIOR LIVING INC",
+  "klasse": null,
+  "art": "share",
+  "isin_methode": "esma_firds_name_eindeutig",
+  "isin_kandidaten": [
+   "CA82621K1021"
+  ],
+  "firds_name": "Sienna Senior Living Inc. Registered Shares o.N.",
+  "verified": false,
+  "human_review": "pending"
+ },
+ {
+  "security_id": "CA9237251058",
+  "isin": "CA9237251058",
+  "issuer_id": "LEI:8945009D1HGCJC8M8A68",
+  "name": "VERMILION ENERGY",
+  "klasse": null,
+  "art": "share",
+  "isin_methode": "esma_firds_name_eindeutig",
+  "isin_kandidaten": [
+   "CA9237251058"
+  ],
+  "firds_name": "Vermilion Energy Inc. Registered Shares o.N.",
+  "verified": false,
+  "human_review": "pending"
+ },
+ {
+  "security_id": "OHNE_ISIN:BEI.UN@XTSE",
+  "isin": null,
+  "issuer_id": "NAME:CA:BOARDWALK-ESTATE-INVESTMENT-REAL",
+  "name": "BOARDWALK REAL ESTATE INVESTMENT T",
+  "klasse": null,
+  "art": "unit_reit",
+  "isin_methode": "nicht_gefunden",
+  "isin_kandidaten": null,
+  "firds_name": null,
+  "verified": false,
+  "human_review": "pending"
+ },
+ {
+  "security_id": "CA0209361009",
+  "isin": "CA0209361009",
+  "issuer_id": "LEI:54930083UJGDUCMJMU61",
+  "name": "ALTIUS MINERALS CORP",
+  "klasse": null,
+  "art": "share",
+  "isin_methode": "esma_firds_name_eindeutig",
+  "isin_kandidaten": [
+   "CA0209361009"
+  ],
+  "firds_name": "Altius Minerals Corp.         Registered Shares o.N.",
+  "verified": false,
+  "human_review": "pending"
+ },
+ {
+  "security_id": "CA00791P1071",
+  "isin": "CA00791P1071",
+  "issuer_id": "LEI:549300WK5YRPOB2DTT64",
+  "name": "ADVANTAGE ENERGY",
+  "klasse": null,
+  "art": "share",
+  "isin_methode": "esma_firds_name_eindeutig",
+  "isin_kandidaten": [
+   "CA00791P1071"
+  ],
+  "firds_name": "Advantage Energy Ltd. Registered Shares o.N.",
+  "verified": false,
+  "human_review": "pending"
+ },
+ {
+  "security_id": "CA62910L1022",
+  "isin": "CA62910L1022",
+  "issuer_id": "LEI:549300VX6QRAVXOXZW59",
+  "name": "NFI GROUP",
+  "klasse": null,
+  "art": "share",
+  "isin_methode": "esma_firds_name_eindeutig",
+  "isin_kandidaten": [
+   "CA62910L1022"
+  ],
+  "firds_name": "NFI Group Inc.                Registered Shares o.N.",
+  "verified": false,
+  "human_review": "pending"
+ },
+ {
+  "security_id": "CA2483561072",
+  "isin": "CA2483561072",
+  "issuer_id": "LEI:529900JWGSW17LJK6586",
+  "name": "DENISON MINES CORP",
+  "klasse": null,
+  "art": "share",
+  "isin_methode": "esma_firds_name_eindeutig",
+  "isin_kandidaten": [
+   "CA2483561072"
+  ],
+  "firds_name": "Denison Mines Corp. Registered Shares o.N.",
+  "verified": false,
+  "human_review": "pending"
+ },
+ {
+  "security_id": "CA2926717083",
+  "isin": "CA2926717083",
+  "issuer_id": "LEI:529900P0GCATXMGK8I62",
+  "name": "ENERGY FUELS",
+  "klasse": null,
+  "art": "share",
+  "isin_methode": "esma_firds_name_eindeutig",
+  "isin_kandidaten": [
+   "CA2926717083"
+  ],
+  "firds_name": "Energy Fuels Inc. Registered Shares o.N.",
+  "verified": false,
+  "human_review": "pending"
+ },
+ {
+  "security_id": "OHNE_ISIN:KMP.UN@XTSE",
+  "isin": null,
+  "issuer_id": "NAME:CA:APARTMENT-KILLAM-REIT",
+  "name": "KILLAM APARTMENT REIT UNITS CLASS",
+  "klasse": null,
+  "art": "unit_reit",
+  "isin_methode": "nicht_gefunden",
+  "isin_kandidaten": null,
+  "firds_name": null,
+  "verified": false,
+  "human_review": "pending"
+ },
+ {
+  "security_id": "CA5649051078",
+  "isin": "CA5649051078",
+  "issuer_id": "LEI:549300LX07S5J8F76F37",
+  "name": "MAPLE LEAF FOODS",
+  "klasse": null,
+  "art": "share",
+  "isin_methode": "esma_firds_name_eindeutig",
+  "isin_kandidaten": [
+   "CA5649051078"
+  ],
+  "firds_name": "Maple Leaf Foods Inc. Registered Shares o.N.",
+  "verified": false,
+  "human_review": "pending"
+ },
+ {
+  "security_id": "CA00217Y1043",
+  "isin": "CA00217Y1043",
+  "issuer_id": "LEI:5493005KP4RP3IU7HQ41",
+  "name": "ATS",
+  "klasse": null,
+  "art": "share",
+  "isin_methode": "esma_firds_name_eindeutig",
+  "isin_kandidaten": [
+   "CA00217Y1043"
+  ],
+  "firds_name": "ATS Corp. Registered Shares o.N.",
+  "verified": false,
+  "human_review": "pending"
+ },
+ {
+  "security_id": "CA4882951060",
+  "isin": "CA4882951060",
+  "issuer_id": "LEI:549300OBXGWYN1VOFC24",
+  "name": "KELT EXPLORATION",
+  "klasse": null,
+  "art": "share",
+  "isin_methode": "esma_firds_name_eindeutig",
+  "isin_kandidaten": [
+   "CA4882951060"
+  ],
+  "firds_name": "Kelt Exploration Ltd. Registered Shares o.N.",
+  "verified": false,
+  "human_review": "pending"
+ },
+ {
+  "security_id": "CA84678A5089",
+  "isin": "CA84678A5089",
+  "issuer_id": "LEI:894500P97DX8Q6G1OU04",
+  "name": "SPARTAN DELTA",
+  "klasse": null,
+  "art": "share",
+  "isin_methode": "esma_firds_name_eindeutig",
+  "isin_kandidaten": [
+   "CA84678A5089"
+  ],
+  "firds_name": "Spartan Delta Corp. Registered Shares New o.N.",
+  "verified": false,
+  "human_review": "pending"
+ },
+ {
+  "security_id": "CA7142661031",
+  "isin": "CA7142661031",
+  "issuer_id": "LEI:529900BQBMS383SEPY05",
+  "name": "PERPETUA RESOURCES",
+  "klasse": null,
+  "art": "share",
+  "isin_methode": "esma_firds_name_eindeutig",
+  "isin_kandidaten": [
+   "CA7142661031"
+  ],
+  "firds_name": "Perpetua Resources Corp. Registered Shares o.N.",
+  "verified": false,
+  "human_review": "pending"
+ },
+ {
+  "security_id": "OHNE_ISIN:CURA@XTSE",
+  "isin": null,
+  "issuer_id": "NAME:CA:CURALEAF-HOLDINGS",
+  "name": "CURALEAF HLDGS",
+  "klasse": null,
+  "art": "share",
+  "isin_methode": "nicht_gefunden",
+  "isin_kandidaten": null,
+  "firds_name": null,
+  "verified": false,
+  "human_review": "pending"
+ },
+ {
+  "security_id": "CA4707481046",
+  "isin": "CA4707481046",
+  "issuer_id": "LEI:254900EIXJ4NHQFFRO95",
+  "name": "JAMIESON WELLNESS",
+  "klasse": null,
+  "art": "share",
+  "isin_methode": "esma_firds_name_eindeutig",
+  "isin_kandidaten": [
+   "CA4707481046"
+  ],
+  "firds_name": "Jamieson Wellness Inc. Registered Shares o.N.",
+  "verified": false,
+  "human_review": "pending"
+ },
+ {
+  "security_id": "CA76329W1032",
+  "isin": "CA76329W1032",
+  "issuer_id": "LEI:5493007VPNETW465DN04",
+  "name": "RICHELIEU HARDWARE",
+  "klasse": null,
+  "art": "share",
+  "isin_methode": "esma_firds_name_eindeutig",
+  "isin_kandidaten": [
+   "CA76329W1032"
+  ],
+  "firds_name": "RICHELIEU HARDWARE LTD. Registered Shares o.N.",
+  "verified": false,
+  "human_review": "pending"
+ },
+ {
+  "security_id": "CA69946Q1046",
+  "isin": "CA69946Q1046",
+  "issuer_id": "LEI:549300U7LWRGTY6XWK67",
+  "name": "PAREX RESOURCES",
+  "klasse": null,
+  "art": "share",
+  "isin_methode": "esma_firds_name_eindeutig",
+  "isin_kandidaten": [
+   "CA69946Q1046"
+  ],
+  "firds_name": "Parex Resources Inc. Registered Shares o.N.",
+  "verified": false,
+  "human_review": "pending"
+ },
+ {
+  "security_id": "CA0906971035",
+  "isin": "CA0906971035",
+  "issuer_id": "LEI:5493000BBN3EF2L0XW29",
+  "name": "BIRCHCLIFF ENERGY",
+  "klasse": null,
+  "art": "share",
+  "isin_methode": "esma_firds_name_eindeutig",
+  "isin_kandidaten": [
+   "CA0906971035"
+  ],
+  "firds_name": "Birchcliff Energy Ltd.        Registered Shares o.N.",
+  "verified": false,
+  "human_review": "pending"
+ },
+ {
+  "security_id": "OHNE_ISIN:CRR.UN@XTSE",
+  "isin": null,
+  "issuer_id": "NAME:CA:CROMBIE-ESTATE-INVESTMENT-REAL-TRU",
+  "name": "CROMBIE REAL ESTATE INVESTMENT TRU",
+  "klasse": null,
+  "art": "unit_reit",
+  "isin_methode": "nicht_gefunden",
+  "isin_kandidaten": null,
+  "firds_name": null,
+  "verified": false,
+  "human_review": "pending"
+ },
+ {
+  "security_id": "CA83342V1040",
+  "isin": "CA83342V1040",
+  "issuer_id": "LEI:529900VVFSE66NAIST38",
+  "name": "SNOWLINE GOLD",
+  "klasse": null,
+  "art": "share",
+  "isin_methode": "esma_firds_name_eindeutig",
+  "isin_kandidaten": [
+   "CA83342V1040"
+  ],
+  "firds_name": "Snowline Gold Corp. Registered Shares o.N.",
+  "verified": false,
+  "human_review": "pending"
+ },
+ {
+  "security_id": "CA88105G1037",
+  "isin": "CA88105G1037",
+  "issuer_id": "LEI:254900H4S2STHU44PM25",
+  "name": "TERRAVEST INDUSTRIES INC",
+  "klasse": null,
+  "art": "share",
+  "isin_methode": "esma_firds_name_eindeutig",
+  "isin_kandidaten": [
+   "CA88105G1037"
+  ],
+  "firds_name": "TerraVest Industries Inc. Registered Shares o.N.",
+  "verified": false,
+  "human_review": "pending"
+ },
+ {
+  "security_id": "CA53229C1077",
+  "isin": "CA53229C1077",
+  "issuer_id": "LEI:254900T8MDWRTGMFZ257",
+  "name": "LIGHTSPEED COMMERCE",
+  "klasse": null,
+  "art": "share",
+  "isin_methode": "esma_firds_name_eindeutig",
+  "isin_kandidaten": [
+   "CA53229C1077"
+  ],
+  "firds_name": "Lightspeed Commerce Inc. Registered Shares o.N.",
+  "verified": false,
+  "human_review": "pending"
+ },
+ {
+  "security_id": "OHNE_ISIN:HPS.A@XTSE",
+  "isin": null,
+  "issuer_id": "NAME:CA:HAMMOND-POWER-SOLUTIONS",
+  "name": "HAMMOND POWER SOLUTIONS CLASS A",
+  "klasse": "A",
+  "art": "share",
+  "isin_methode": "nicht_gefunden",
+  "isin_kandidaten": null,
+  "firds_name": null,
+  "verified": false,
+  "human_review": "pending"
+ },
+ {
+  "security_id": "CA00379L3048",
+  "isin": "CA00379L3048",
+  "issuer_id": "LEI:254900WR30BQ8MPSYU80",
+  "name": "ABRASILVER RESOURCE CORP",
+  "klasse": null,
+  "art": "share",
+  "isin_methode": "esma_firds_name_eindeutig",
+  "isin_kandidaten": [
+   "CA00379L3048"
+  ],
+  "firds_name": "AbraSilver Resource Corp. Registered Shares o.N.",
+  "verified": false,
+  "human_review": "pending"
+ },
+ {
+  "security_id": "CA19239C1068",
+  "isin": "CA19239C1068",
+  "issuer_id": "LEI:549300XHH6LJM6IAXV57",
+  "name": "COGECO COMMUNICATIONS SUBORDINATE",
+  "klasse": null,
+  "art": "share_subordinate_voting",
+  "isin_methode": "esma_firds_name_eindeutig",
+  "isin_kandidaten": [
+   "CA19239C1068"
+  ],
+  "firds_name": "Cogeco Communications Inc.    Reg. Shares (Sub. Vtg.) o.N.",
+  "verified": false,
+  "human_review": "pending"
+ },
+ {
+  "security_id": "CA14179V5036",
+  "isin": "CA14179V5036",
+  "issuer_id": "LEI:549300C4GBBANCBT3K72",
+  "name": "CARGOJET",
+  "klasse": null,
+  "art": "share",
+  "isin_methode": "esma_firds_name_eindeutig",
+  "isin_kandidaten": [
+   "CA14179V5036"
+  ],
+  "firds_name": "Cargojet Inc. Reg.Shs Variable Voting o.N.",
+  "verified": false,
+  "human_review": "pending"
+ },
+ {
+  "security_id": "CA02215R1073",
+  "isin": "CA02215R1073",
+  "issuer_id": "LEI:54930041VO1EIY4IV355",
+  "name": "ALTUS GROUP",
+  "klasse": null,
+  "art": "share",
+  "isin_methode": "esma_firds_name_eindeutig",
+  "isin_kandidaten": [
+   "CA02215R1073"
+  ],
+  "firds_name": "Altus Group Ltd. Registered Shares o.N.",
+  "verified": false,
+  "human_review": "pending"
+ },
+ {
+  "security_id": "CA8426851090",
+  "isin": "CA8426851090",
+  "issuer_id": "LEI:2549004SP30Z0UWKH476",
+  "name": "SOUTHERN CROSS GOLD CONSOLIDATED L",
+  "klasse": null,
+  "art": "share",
+  "isin_methode": "esma_firds_name_eindeutig",
+  "isin_kandidaten": [
+   "CA8426851090"
+  ],
+  "firds_name": "Southern Cross Gold Consolid. Registered Shares o.N.",
+  "verified": false,
+  "human_review": "pending"
+ },
+ {
+  "security_id": "CA92859G6085",
+  "isin": "CA92859G6085",
+  "issuer_id": "LEI:549300ADJF7HWIEDL366",
+  "name": "VIZSLA SILVER",
+  "klasse": null,
+  "art": "share",
+  "isin_methode": "esma_firds_name_eindeutig",
+  "isin_kandidaten": [
+   "CA92859G6085"
+  ],
+  "firds_name": "Vizsla Silver Corp. Registered Shares o.N.",
+  "verified": false,
+  "human_review": "pending"
+ },
+ {
+  "security_id": "CA89679A2092",
+  "isin": "CA89679A2092",
+  "issuer_id": "LEI:549300S7H452RZFP8305",
+  "name": "TRISURA GROUP",
+  "klasse": null,
+  "art": "share",
+  "isin_methode": "esma_firds_name_eindeutig",
+  "isin_kandidaten": [
+   "CA89679A2092"
+  ],
+  "firds_name": "Trisura Group Ltd. Registered Shares o.N.",
+  "verified": false,
+  "human_review": "pending"
+ },
+ {
+  "security_id": "OHNE_ISIN:CRT.UN@XTSE",
+  "isin": null,
+  "issuer_id": "NAME:CA:CT-REIT",
+  "name": "CT REIT UNITS TRUST",
+  "klasse": null,
+  "art": "unit_reit",
+  "isin_methode": "nicht_gefunden",
+  "isin_kandidaten": null,
+  "firds_name": null,
+  "verified": false,
+  "human_review": "pending"
+ },
+ {
+  "security_id": "CA5054401073",
+  "isin": "CA5054401073",
+  "issuer_id": "LEI:391200OUOEWDQSEJ0Y74",
+  "name": "LABRADOR IRON ORE ROYALTY",
+  "klasse": null,
+  "art": "share",
+  "isin_methode": "esma_firds_name_eindeutig",
+  "isin_kandidaten": [
+   "CA5054401073"
+  ],
+  "firds_name": "LABRADOR IRON ORE ROYALTY ORD",
+  "verified": false,
+  "human_review": "pending"
+ },
+ {
+  "security_id": "OHNE_ISIN:IAU@XTSE",
+  "isin": null,
+  "issuer_id": "NAME:CA:GOLD",
+  "name": "I GOLD CORP",
+  "klasse": null,
+  "art": "share",
+  "isin_methode": "mehrdeutig",
+  "isin_kandidaten": [
+   "CA38149E1016",
+   "CA38150G1028",
+   "CA44955L1067",
+   "CA65442J1075",
+   "CA67090W3075"
+  ],
+  "firds_name": null,
+  "verified": false,
+  "human_review": "pending"
+ },
+ {
+  "security_id": "CA86828P1036",
+  "isin": "CA86828P1036",
+  "issuer_id": "LEI:52990059VEQM9RBM0045",
+  "name": "SUPERIOR PLUS",
+  "klasse": null,
+  "art": "share",
+  "isin_methode": "esma_firds_name_eindeutig",
+  "isin_kandidaten": [
+   "CA86828P1036"
+  ],
+  "firds_name": "Superior Plus Corp.           Registered Shares o.N.",
+  "verified": false,
+  "human_review": "pending"
+ },
+ {
+  "security_id": "CA0539061030",
+  "isin": "CA0539061030",
+  "issuer_id": "LEI:549300DZZNDMPML1VJ37",
+  "name": "AVINO SILVER AND GOLD MINES LTD",
+  "klasse": null,
+  "art": "share",
+  "isin_methode": "esma_firds_name_eindeutig",
+  "isin_kandidaten": [
+   "CA0539061030"
+  ],
+  "firds_name": "AVINO SILVER & GOLD MINES LTD.Registered Shares o.N.",
+  "verified": false,
+  "human_review": "pending"
+ },
+ {
+  "security_id": "CA03062D8035",
+  "isin": "CA03062D8035",
+  "issuer_id": "LEI:5493005AKGOT669Z4P51",
+  "name": "AMERICAS GOLD AND SILVER",
+  "klasse": null,
+  "art": "share",
+  "isin_methode": "esma_firds_name_eindeutig",
+  "isin_kandidaten": [
+   "CA03062D8035"
+  ],
+  "firds_name": "AMERICAS GOLD+SILVER O.N.",
+  "verified": false,
+  "human_review": "pending"
+ },
+ {
+  "security_id": "OHNE_ISIN:AP.UN@XTSE",
+  "isin": null,
+  "issuer_id": "NAME:CA:ALLIED-ESTATE-INVESTMENT-PROPERTIES-REAL",
+  "name": "ALLIED PROPERTIES REAL ESTATE INVT",
+  "klasse": null,
+  "art": "unit_reit",
+  "isin_methode": "nicht_gefunden",
+  "isin_kandidaten": null,
+  "firds_name": null,
+  "verified": false,
+  "human_review": "pending"
+ },
+ {
+  "security_id": "CA53681J1030",
+  "isin": "CA53681J1030",
+  "issuer_id": "LEI:529900Q9ENG7EHHZ5R75",
+  "name": "LITHIUM AMERICAS",
+  "klasse": null,
+  "art": "share",
+  "isin_methode": "esma_firds_name_eindeutig",
+  "isin_kandidaten": [
+   "CA53681J1030"
+  ],
+  "firds_name": "Lithium Americas Corp. Registered Shares o.N.",
+  "verified": false,
+  "human_review": "pending"
+ }
+]
