@@ -1,9 +1,33 @@
 {
  "hub": "T",
  "name": "AT&T INC.",
- "stand": "2026-11-18",
+ "stand": "2026-11-19",
  "quelle": "Google News (Wirtschaftsmedien, deutsch und englisch)",
  "meldungen": [
+  {
+   "titel": "AT&T and Tackle Tomorrow Launch Early Literacy Resources for K–3 Learners Nationwide",
+   "quelle": "Unternehmen",
+   "link": "https://about.att.com/story/2026/early-literacy-resources.html",
+   "datum": "2026-11-18",
+   "sprache": "en",
+   "typ": "pm"
+  },
+  {
+   "titel": "AT&T Business Awards $50,000 Grand Prize to Mission Valley Track & Field Club to Expand Opportunities for Bay Area Youth and Families",
+   "quelle": "Unternehmen",
+   "link": "https://about.att.com/story/2026/small-business-winner-2026.html",
+   "datum": "2026-11-18",
+   "sprache": "en",
+   "typ": "pm"
+  },
+  {
+   "titel": "Business Productivity Boost: AT&T Business Expands Collaboration with Microsoft to Simplify the Safe and Secure Adoption of AI for Small Business Customers",
+   "quelle": "Unternehmen",
+   "link": "https://about.att.com/story/2026/att-business-microsoft365-bundle.html",
+   "datum": "2026-11-18",
+   "sprache": "en",
+   "typ": "pm"
+  },
   {
    "titel": "AT&T launches Flexible SIM with GSMA SGP.32",
    "quelle": "Unternehmen",
@@ -13,35 +37,11 @@
    "typ": "pm"
   },
   {
-   "titel": "AT&T Business Survey: Holiday Shoppers Want Small Business Charm with Big Retailer Convenience",
-   "quelle": "Unternehmen",
-   "link": "https://about.att.com/story/2026/holiday-small-business.html",
-   "datum": "2026-11-17",
-   "sprache": "en",
-   "typ": "pm"
-  },
-  {
-   "titel": "AT&T Makes Holiday Shopping Easy with Gifts for Everyone and Every Budget",
-   "quelle": "Unternehmen",
-   "link": "https://about.att.com/story/2026/apple-holiday.html",
-   "datum": "2026-11-13",
-   "sprache": "en",
-   "typ": "pm"
-  },
-  {
    "titel": "AT&T sues Comcast over 'fiber-powered' internet advertising",
    "quelle": "Reuters",
    "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxPbmZOanVUTE1QN3BzNDJkUEhzTV9hRl9TQ0l0b2szSGpXaEQ3YTB0MTNvcFhtRmF2STNPbDVtczBldkctb1Q1WW5MVkxoN2Y4NWk5dGMyOHpDUUliWl80YUlXQ1drdzZoOU9hMFM5eDlZRGY0WTluLS1pcDUyWGdYc0gzNzJzelA4NGhwZk1QUE8xVFVQSWxUQXFrUkVhS2wyWkthd2Z6UmdXX3VFNVU2TS1R?oc=5",
    "datum": "2026-11-13",
    "sprache": "en"
-  },
-  {
-   "titel": "AT&T Breaks Ground on New Global Headquarters",
-   "quelle": "Unternehmen",
-   "link": "https://about.att.com/story/2026/americas-most-connected-corporate-campus.html",
-   "datum": "2026-11-12",
-   "sprache": "en",
-   "typ": "pm"
   }
  ]
 }

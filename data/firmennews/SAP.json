@@ -1,7 +1,7 @@
 {
  "hub": "SAP",
  "name": "SAP SE",
- "stand": "2026-11-18",
+ "stand": "2026-11-19",
  "quelle": "Google News (Wirtschaftsmedien, deutsch und englisch)",
  "meldungen": [
   {
@@ -9,6 +9,13 @@
    "quelle": "Bloomberg.com",
    "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxQY3pnUGhrakczaVVjTXI3SFpCZE9VazEwenp2LW93MVJSUFI2ZHJja0l6MXNfYzlBU1ZTSklJVlNHYjNleHhMRWg2dklneVBTcEFPVEpOY2F5cXNkT1p4UVpmbUtVUks5S2NDbE9PU05uM2d5cEE1am0xVVFmcDhMUXlLbklOc0pmTjMxRkJObXROdkllUDVfRGZlMG8ySFVfZVNTZ0tQam5tWmExajk0eUI1M2k?oc=5",
    "datum": "2026-11-17",
+   "sprache": "en"
+  },
+  {
+   "titel": "SAP Modernizes 100,000+ endpoints with Windows 11 and Microsoft Intune",
+   "quelle": "Microsoft",
+   "link": "https://news.google.com/rss/articles/CBMid0FVX3lxTE5NZEtCTlk5YkxnbThZbkFsaWpJalZNclF3MDhsVHEwTFJsc2tSNS1JdXh2NWRfbW5VemtEVG9uc3VxLVh0SFp3Y2x6ZlJ6NnNwdHFrOS1aNmJzUmsxZURrS3BDenZYaDJJRi1XYWNzdEl1dlhrVGNz?oc=5",
+   "datum": "2026-11-16",
    "sprache": "en"
   },
   {

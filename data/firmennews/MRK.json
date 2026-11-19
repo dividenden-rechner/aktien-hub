@@ -1,9 +1,17 @@
 {
  "hub": "MRK",
  "name": "Merck & Co., Inc.",
- "stand": "2026-11-18",
+ "stand": "2026-11-19",
  "quelle": "Google News (Wirtschaftsmedien, deutsch und englisch)",
  "meldungen": [
+  {
+   "titel": "____________________________________________________________________________",
+   "quelle": "SEC-Meldung",
+   "link": "https://www.sec.gov/Archives/edgar/data/310158/000031015826000255/mrk-20261116.htm",
+   "datum": "2026-11-18",
+   "sprache": "en",
+   "typ": "pm"
+  },
   {
    "titel": "Merck stops trials of blood cancer drug after review of risks",
    "quelle": "Reuters",

@@ -1,7 +1,22 @@
 {
  "hub": "NFLX",
  "name": "Netflix, Inc.",
- "stand": "2026-11-18",
+ "stand": "2026-11-19",
  "quelle": "Google News (Wirtschaftsmedien, deutsch und englisch)",
- "meldungen": []
+ "meldungen": [
+  {
+   "titel": "Netflix’s Sarandos Says the Streaming TV Wars Are Just Beginning",
+   "quelle": "Bloomberg.com",
+   "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxPVGJIMTctVzNLbWhwc01iWlpuZmpZYnljVm9jT3R5cXRZbGxzWWxobjA2RDVmeHdfOFRwbVM1ZE54dkNfTFdFbWdVUzAtTUVfX2NDbUt5eGtySkxYODdwcTlrVHVPQkFsbWkzcVktbXdlaGptSEw5T1VxSEszVkdBb1Z3ajhpVDBCTmpoT0hBNTRCaXZDY3RBczJYR1lWQ0J5OUVGaFZhWTVmbDlIVDZheGNJMXdwdw?oc=5",
+   "datum": "2026-11-18",
+   "sprache": "en"
+  },
+  {
+   "titel": "Skydance Opts Out of Bidding for Costly FIFA World Cup Rights",
+   "quelle": "Bloomberg.com",
+   "link": "https://news.google.com/rss/articles/CBMiugFBVV95cUxQZkFZZzk0NGV4ZlJOQ19jS3hhaUtnVHhjeEpzdFVhaHlzSDZMRjVhWDlxSTN3NTlGUGJ4V1ZyemY3V3hHZWRUdmQ4LXVqUVJwdGVuVm1HTlpJS3BMYVl4MGZSZVJwNXQ1a3pxa1ZUX1ZBZ0wtSk5EN0xMcWh6Z3kyNE5oWk1tVVdmZGpBNk9abnUwajFmSHFQeUd3em9xQk9TTk5tdlNSTmJCMzVBd1V6Wk50blpTT3ZNUHc?oc=5",
+   "datum": "2026-11-18",
+   "sprache": "en"
+  }
+ ]
 }

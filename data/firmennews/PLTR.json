@@ -1,9 +1,30 @@
 {
  "hub": "PLTR",
  "name": "Palantir Technologies Inc.",
- "stand": "2026-11-18",
+ "stand": "2026-11-19",
  "quelle": "Google News (Wirtschaftsmedien, deutsch und englisch)",
  "meldungen": [
+  {
+   "titel": "US Charges Russian as Foreign Agent Targeting Palantir Workers",
+   "quelle": "Bloomberg.com",
+   "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxNa2ZKTHBmT2hqNzM5UW5ITFlMcXZodnNhbTFXOWNyZmZCMmphNGJQcnVhTzNhNGNuY09OWW55NE5ySVVIbTEzei00R3hpSkV0MDhLZUo0Y3pKZFBlYjZEYUpKMVBKY0diQmFFM2NXVU4wdUQzYUIyamtaWHlrX1h5UTAxVG1jb2lDS0FzMjdsZGpjb0ZudmQ0MkF1QV9XSGVUR3ZBLVJmTWRUM0F5RTBiZW1aNA?oc=5",
+   "datum": "2026-11-19",
+   "sprache": "en"
+  },
+  {
+   "titel": "US Department of Justice charges Russian for targeting Palantir as foreign agent",
+   "quelle": "Reuters",
+   "link": "https://news.google.com/rss/articles/CBMixAFBVV95cUxONGdHSkFlZGJKSElDLTZOc3R5NVByOU9zYUxvV1MxZEpla3VwbmFJdVRUb2YwZjJfVmIzZWFXNkoxSVM3N24tY2g4YU5tbXR0N2xDcjJ2UFg3SFYyWW1wZWphS3FJQmlSYUFjQ284Nk5SdzZvakdzQmNwN1hibFVBUEpCSDMxMXpNOUM0ZlYwQ3BlbG9tcVlaRl94bUxEajlRUTV0SGRia0dlaFJwbUdCVjl5SG1OREtTeHBWdFdFTEt5TjZR?oc=5",
+   "datum": "2026-11-18",
+   "sprache": "en"
+  },
+  {
+   "titel": "NHS data contract to stay with Palantir until 2029",
+   "quelle": "BBC",
+   "link": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE1URHpPeDZWUnBkYWxVLTZuSTg0cVJwakdMdm5KQnlNcWw5MUVGQ1dJc240RFpFVTlXRzVVUGt1WjVqLWJRY2djT08yOUZ0TEtaeFJHbWxzeGF5YzQ?oc=5",
+   "datum": "2026-11-17",
+   "sprache": "en"
+  },
   {
    "titel": "UK companies line up to replace Palantir in NHS",
    "quelle": "Financial Times",

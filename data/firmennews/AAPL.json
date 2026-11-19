@@ -1,9 +1,38 @@
 {
  "hub": "AAPL",
  "name": "Apple Inc.",
- "stand": "2026-11-18",
+ "stand": "2026-11-19",
  "quelle": "Google News (Wirtschaftsmedien, deutsch und englisch)",
  "meldungen": [
+  {
+   "titel": "UK tribunal confirms government order demanding access to Apple data",
+   "quelle": "Reuters",
+   "link": "https://news.google.com/rss/articles/CBMixAFBVV95cUxQenZpeUVpaFZLYklnRUUyX1M2WUFiLUE1VFNSQmZLWHdmaDB2a2Q1WXBOeDliUExJbzZ0eVFPLVJ2ekNKRVhBSFVSRXo4d2RxRG1XMjAzTkI3SjNmRGFGMVptQXQ4UFI3VklnanpvaEpXQnlYN0RxMHJXVGpXNWJMZnZDRWFRX0ZGQWNJT2xIdl9OUlpMci1FVUdMYnRORktIQjR4WmdGWWpUTnFBclBqbkdCYTZvMnNIY3FpN1RSdEFiQ2Rm?oc=5",
+   "datum": "2026-11-19",
+   "sprache": "en"
+  },
+  {
+   "titel": "UK Court Rules for Apple in User Data Fight with Government",
+   "quelle": "Bloomberg.com",
+   "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxPdjkxMENVbWNKc0tQZWluMnpDdl9zeDJvblllcFpkcENYaVNENm14OW41YzA3REU3NHgxb1M1QjdUQjhzbWxVTmNKQ0EtbGNDUk4wclMzM2xfampGRUdCUk1qdF95anVfN01BcGZjeGFiV2dZaXJsTDlSYzJUeHB1RXBIQWdzbWRpZVJ3ekZ1MThRSEVHaWk5aHNrN3hRRFdQRFVVS2FBX3lteHhGbGQ4?oc=5",
+   "datum": "2026-11-19",
+   "sprache": "en"
+  },
+  {
+   "titel": "Meet the 2026 App Store Award finalists",
+   "quelle": "Unternehmen",
+   "link": "https://www.apple.com/newsroom/2026/11/meet-the-2026-app-store-award-finalists/",
+   "datum": "2026-11-18",
+   "sprache": "en",
+   "typ": "pm"
+  },
+  {
+   "titel": "Apple’s Haven Status Makes It One of Priciest Stocks in Market",
+   "quelle": "Bloomberg.com",
+   "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxOWFdXODZmaFdpSjdGdFF5Mm5IQVRyZTJUczJ5R08zSGttalFxSFgtdTQxVENCajRVYlJWOG1hUmcwRHpmcHBENVBDNU1NMDgzbDdDZEtLbE5uT0N6bHdnNGdaOUZxbV9ad3FXSVUyVUt1Mld2S0NYaHpDNG1EaUlfSDFJZFZ0R1hmSDl3dmczRkc2RW4xM1VKdHZCY3FWWUJpUkswM2hsRGtCR1VmdWRuMFRaQQ?oc=5",
+   "datum": "2026-11-18",
+   "sprache": "en"
+  },
   {
    "titel": "Formula 1® Las Vegas Grand Prix™ streams live on Apple TV this weekend",
    "quelle": "Unternehmen",
@@ -20,27 +49,6 @@
    "sprache": "en"
   },
   {
-   "titel": "Popular websites compromised in bid to steal crypto, target iPhone users",
-   "quelle": "Reuters",
-   "link": "https://news.google.com/rss/articles/CBMitwFBVV95cUxPTS1sYjJVSFJKSWN4SHY1S3g4aDJwdmd1SXp0YTY5aDJUNF9PS08zR29LWkVzVXk2d2tXZFh0dm9QRVNxc2xXYzczdWpXYmYwTmgwUDZfSFhBRE1XT3JHQnpNZERDdU5yMy16dDdVa1hYTVBqa0xGbTVPNkJBZTlIWmc4cldZaTI2QnpoaWo3NUxOb3FXQmZQck0yQzYzMVJ5MTROcFdTUGU4b0pmLUZ2Y3V3LVVJaEU?oc=5",
-   "datum": "2026-11-17",
-   "sprache": "en"
-  },
-  {
-   "titel": "Apple Works to Fix Systems After Update Caused Internal, Retail and iCloud Outages",
-   "quelle": "Bloomberg.com",
-   "link": "https://news.google.com/rss/articles/CBMirAFBVV95cUxNX3NQTl9iV3NGVTJLVmZEeDNrQmQ5MDJKZTBPUkgwc1p2MFNqSDNScDJzUXJlZXhJVVV4LXNKaFk0QUFLNl9uZWNhZ3U0ZDBLcHYyNWlIb0w2TGJ3dlY4dGpMdnB4ZlE0ZGpCNnZyRFhkNXh2Tk83LWtpQzh2THRhUmxCekFPdTB1dUlRcEVmN1JHaGJBRDhFbGhMWDFmeHlGZ2t6eUFteE1QaUo2?oc=5",
-   "datum": "2026-11-17",
-   "sprache": "en"
-  },
-  {
-   "titel": "Apple Watch’s New AI Features Hear Your Conversations But Miss the Point",
-   "quelle": "Bloomberg.com",
-   "link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxPNDJkb0JWekFjWDVtUFBXZDJsdGY5OTYwb1JhdzRZQ2RNb2tWMV9UdXQ3cEE0dWN5SEhNckU0aV9mSUNpeWtpR0wydjJRSHpUcHdzUnh4c28xMTQxU0U2Q3hnWmg5dTU3elVtcHh6aU5XbnNUYzFvWE44YzhTWnlpVjZxTk5FSzl0bDFjcklpclBpWDVCXzhKQ2Q2X1pGQ3hWYlpwbFZSdUxqckRncTEwZg?oc=5",
-   "datum": "2026-11-17",
-   "sprache": "en"
-  },
-  {
    "titel": "Apple launches research study to explore the use of AI for health",
    "quelle": "Unternehmen",
    "link": "https://www.apple.com/newsroom/2026/11/apple-launches-research-study-to-explore-the-use-of-ai-for-health/",
@@ -53,14 +61,6 @@
    "quelle": "Unternehmen",
    "link": "https://www.apple.com/newsroom/2026/11/apple-homeview-available-today/",
    "datum": "2026-11-13",
-   "sprache": "en",
-   "typ": "pm"
-  },
-  {
-   "titel": "Apple TV introduces new Sign Language interpretation feature",
-   "quelle": "Unternehmen",
-   "link": "https://www.apple.com/newsroom/2026/11/apple-tv-introduces-new-sign-language-interpretation-feature/",
-   "datum": "2026-11-10",
    "sprache": "en",
    "typ": "pm"
   }
