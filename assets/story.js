@@ -86,6 +86,8 @@
           var hx = logo ? 60 + lw + 32 : 60, hf = S.para ? 50 : 38, hh = Math.round(hf * 1.3), hy = y + (sz - hl.length * hh) / 2 + 2;
           /* Schrift verkleinern, bis die laengste Zeile neben das Logo passt */
           hl.forEach(function (t) { var i = t.indexOf(":"), k = i > 0 ? t.slice(0, i + 1) : ""; while (hf > 26) { c.font = "700 " + hf + "px " + F; var kw0 = k ? c.measureText(k + " ").width : 0; c.font = (S.para ? "700 " : "400 ") + hf + "px " + F; if (hx + kw0 + c.measureText(i > 0 ? t.slice(i + 1).trim() : t).width <= 1020) break; hf -= 1; } });
+          /* Passt eine Zeile auch in kleinster Schrift nicht neben das Logo, wird sie weggelassen (nie ins Logo laufen lassen) */
+          hl = hl.filter(function (t) { c.font = "700 " + hf + "px " + F; return (logo ? 60 + lw + 32 : 60) + c.measureText(t).width <= 1020; });
           hh = Math.round(hf * 1.3); hy = y + (sz - hl.length * hh) / 2 + 2;
           hl.forEach(function (t, n) {
             var i = t.indexOf(":"), k = i > 0 ? t.slice(0, i + 1) : "", v = i > 0 ? t.slice(i + 1).trim() : t;

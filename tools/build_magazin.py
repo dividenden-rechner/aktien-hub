@@ -652,6 +652,8 @@ def share_html(p, url, img):
             p = dict(p, story_image=m_f.group(1))
     if lf and os.path.basename(lf).startswith("combo-"): story["combo"] = True
     if p.get("story_logo_bg"): story["logo_bg"] = str(p["story_logo_bg"])
+    # Kopfzeilen neben dem Logo selbst setzen (kurz, z. B. "Kurs: −8,8 %"), sonst kommen sie aus dem Kasten "Kurz gesagt"
+    if p.get("story_kopf"): story["lines"] = [x.strip() for x in str(p["story_kopf"]).replace("\\n", "\n").split("\n") if x.strip()][:2]
     if p.get("story_image"):
         # In der Story steht das Logo schon da: den Firmennamen vor dem Doppelpunkt in der Ueberschrift nicht wiederholen
         mt = re.match(r"^([^:]{2,40}):\s+(\S.*)$", p["title"])

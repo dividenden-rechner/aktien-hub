@@ -15,8 +15,9 @@ image_alt: "Leuchtendes AMD-Logo über einem Messestand mit chinesischen Werbepl
 image_credit: "Foto: Lisk Obe / Unsplash"
 image_source: "https://unsplash.com/de/@summerobelisk"
 image_lizenz: Unsplash
-story_chart: assets/magazin/amd-hunterbrook-kurs.png
-story_image: assets/magazin/amd-hunterbrook-regionen.png
+story_kopf: "Kurs: −8,8 %\nTagestief: unter −10 %"
+story_chart: assets/magazin/amd-hunterbrook-kurs-story.png
+story_image: assets/magazin/amd-hunterbrook-regionen-story.png
 story_portrait: assets/magazin/lisa-su-amd.png
 story_quote_by: "Lisa Su | CEO AMD"
 story_text: "Der Leerverkäufer Hunterbrook hat offengelegt, dass er auf fallende Kurse bei AMD setzt. Seine Recherche zeigt, dass der chinesische Serverhersteller IEIT auch nach seiner Sperre durch die USA im März 2025 neue Versionen von AMDs Startsoftware für Serverprozessoren eingebaut hat, zuletzt im Oktober.\nEinen Verstoß gegen Exportregeln belegt das nicht. Wie IEIT an die Software kam und ob es eine Lizenz gab, ist offen, das räumt Hunterbrook selbst ein. AMD hat sich bisher nicht geäußert.\nDer Zeitpunkt macht den Vorwurf heikel: Seit Donnerstag gelten schärfere Lizenzregeln für KI-Chips nach Singapur und vier weitere Länder. Singapur stand 2025 für 12 % von AMDs Umsatz, China und Hongkong für 22 %."
