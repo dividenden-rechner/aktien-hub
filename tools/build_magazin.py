@@ -18,6 +18,15 @@ BASE = CFG["base"] if CFG["base"].endswith("/") else CFG["base"] + "/"
 SITE = CFG["name"]
 esc = lambda s: html.escape(str(s), quote=True)
 NL_BOX = '''<aside class="nl-box" aria-labelledby="nlb-h"><span class="nl-tag">Newsletter · am Wochenende</span><h2 id="nlb-h">Die Wochenanalyse</h2><p>Am Wochenende ordnen wir die wichtigsten Themen der Woche ein, mit Zahlen, Daten und Fakten.</p><ul><li>Blick auf die Quartalszahlen</li><li>Blick auf die Dividenden</li><li>Blick auf die Termine</li></ul><form class="nl-form" data-nl novalidate><div class="nl-row"><input type="email" name="email" placeholder="Deine E-Mail-Adresse" autocomplete="email" required aria-label="E-Mail-Adresse"><button type="submit">Newsletter abonnieren</button></div><input class="hp" type="text" name="website" tabindex="-1" autocomplete="off" aria-hidden="true"><label class="nl-c"><input type="checkbox" name="einwilligung" required><span>Ich möchte den Newsletter erhalten und stimme der Verarbeitung meiner E-Mail-Adresse durch Brevo zu. Abmeldung jederzeit per Link in jeder Mail. Mehr in der <a href="@P@datenschutz/">Datenschutzerklärung</a>.</span></label><p class="nl-msg" role="status" aria-live="polite"></p></form></aside>'''
+def nl_nach_absatz(body, box):
+    """Setzt die Newsletter-Box nach den ersten Absatz des Textes, nach einer Kurz-gesagt-Box davor."""
+    m = re.compile(r'\s*<div class="admonition kurz">.*?</div>\n?', re.S).match(body)
+    pos = m.end() if m else 0
+    if not re.compile(r'\s*<p[\s>]', re.S).match(body, pos): return box + body
+    e = body.find("</p>", pos)
+    if e < 0: return box + body
+    return body[:e + 4] + "\n" + box + body[e + 4:]
+
 NAV = [("rechner", "", "Rechner"), ("aktien", "aktien-hub/", "Aktien"), ("depot", "depot/", "Depot"), ("news", "news/", "News"),
        ("earnings", "earnings/", "Earnings"), ("screener", "screener/", "Screener"),
        ("einfuehrung", "einfuehrung/", "Einführung"), ("grundlagen", "grundlagen/", "Grundlagen"),
@@ -761,8 +770,7 @@ def build_post(p, posts):
     if not kurz or p.get("image"):
         o += (f'<figure class="cover kurzcover"><img src="{src(pre, img)}" alt="{esc(alt)}" loading="lazy">{cap}</figure>\n' if kurz else
               f'<figure class="cover"><img src="{src(pre, img)}" alt="{esc(alt)}" width="1200" height="675" fetchpriority="high">{cap}</figure>\n')
-    o += NL_BOX.replace('@P@', pre) + "\n"
-    o += body + "\n"
+    o += nl_nach_absatz(body, NL_BOX.replace("@P@", pre)) + "\n"
     if kurz and p.get("quelle_url", "").startswith("http"):
         o += (f'<p class="kurzquelle">Quelle: <a href="{esc(p["quelle_url"])}" rel="noopener nofollow" target="_blank">{esc(p.get("quelle_name") or "Originalmeldung des Unternehmens")}</a></p>\n')
     o += glossar.box(hits, pre)
