@@ -4,13 +4,13 @@ Alle Datensätze `verified=false`, `human_review=pending`. Leere Felder = nicht 
 
 ## Kanada (S&P/TSX Composite)
 
-- Mitgliederliste: iShares S&P/TSX Capped Composite Index ETF (XIC), veröffentlichte Bestandsliste – Stichtag **2026-11-18**, abgerufen 2026-11-19T11:12:49+00:00 (Proxy für die lizenzpflichtige S&P-Mitgliederliste)
+- Mitgliederliste: iShares S&P/TSX Capped Composite Index ETF (XIC), veröffentlichte Bestandsliste – Stichtag **2026-11-18**, abgerufen 2026-11-19T11:22:13+00:00 (Proxy für die lizenzpflichtige S&P-Mitgliederliste)
 - Indexmitglieder: **215**, Emittenten 215, Wertpapiere 215, Notierungen (TSX) 215
 - ISIN + LEI aus ESMA FIRDS (eindeutig): **187**; ohne ISIN (mehrdeutig/nicht gefunden, siehe review.json): **28**
 - Wertpapierarten: {'share': 190, 'share_non_voting': 1, 'share_subordinate_voting': 7, 'unit_reit': 12, 'unit_trust_or_partnership': 5}
 - Mit deutschem Börsenkurs (Deutsche Börse, EUR): **187**
 - SEC-CIK eindeutig zugeordnet (meldet bei der SEC, meist 40-F): **126**
-- Mit SEC-Jahreszahlen (XBRL): **94**; Verteilung Anzahl Jahre 2010–2025 je Firma: 16 J.: 9, 15 J.: 3, 14 J.: 1, 13 J.: 4, 12 J.: 1, 11 J.: 6, 10 J.: 34, 9 J.: 5, 8 J.: 4, 7 J.: 4, 6 J.: 5, 5 J.: 5, 4 J.: 4, 3 J.: 5, 2 J.: 2, 1 J.: 2
+- Mit SEC-Jahreszahlen (XBRL): **95**; Verteilung Anzahl Jahre 2010–2025 je Firma: 16 J.: 9, 15 J.: 4, 14 J.: 1, 13 J.: 4, 12 J.: 1, 11 J.: 6, 10 J.: 37, 9 J.: 4, 8 J.: 4, 7 J.: 3, 6 J.: 5, 5 J.: 5, 4 J.: 4, 3 J.: 4, 2 J.: 2, 1 J.: 2
 
 ### Fehlt (Kanada)
 

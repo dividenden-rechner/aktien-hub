@@ -1,37 +1,37 @@
 # SEC-Fundamentaldaten: Abdeckung (Stand 2026-11-19)
 
-Firmen mit Daten: **94** von 126. Kernkennzahlen (Umsatz, Gewinn, EPS, Dividende je Aktie, operativer Cashflow) vollständig und aktuell: **75**.
+Firmen mit Daten: **95** von 126. Kernkennzahlen (Umsatz, Gewinn, EPS, Dividende je Aktie, operativer Cashflow) vollständig und aktuell: **76**.
 
 „Aktuell“ heißt: Wert für das letzte Geschäftsjahr der Firma vorhanden. Firmen ohne Dividende zählen bei der Dividende nicht als Lücke.
 
-Nach IFRS (Auslandsfirmen, Beträge in Berichtswährung): 63. Dividende je Aktie nur nachgerechnet (gezahlte Dividenden / Aktien): 51.
+Nach IFRS (Auslandsfirmen, Beträge in Berichtswährung): 63. Dividende je Aktie nur nachgerechnet (gezahlte Dividenden / Aktien): 52.
 
 | Kennzahl | mit Daten | davon aktuell |
 |---|---:|---:|
-| umsatz | 85 (90%) | 83 (88%) |
-| gewinn | 94 (100%) | 94 (100%) |
-| eps_verw | 89 (95%) | 87 (93%) |
-| dividende_je_aktie | 16 (17%) | 14 (15%) |
-| dividenden_gezahlt | 70 (74%) | 62 (66%) |
-| operativer_cf | 90 (96%) | 87 (93%) |
-| capex | 78 (83%) | 71 (76%) |
-| aktienrueckkauf | 59 (63%) | 44 (47%) |
-| aktien_verw | 89 (95%) | 86 (91%) |
-| schulden_lang | 71 (76%) | 65 (69%) |
-| liquide_mittel | 91 (97%) | 89 (95%) |
-| eigenkapital | 91 (97%) | 91 (97%) |
+| umsatz | 86 (91%) | 84 (88%) |
+| gewinn | 95 (100%) | 95 (100%) |
+| eps_verw | 91 (96%) | 88 (93%) |
+| dividende_je_aktie | 17 (18%) | 15 (16%) |
+| dividenden_gezahlt | 72 (76%) | 66 (69%) |
+| operativer_cf | 91 (96%) | 88 (93%) |
+| capex | 79 (83%) | 72 (76%) |
+| aktienrueckkauf | 60 (63%) | 45 (47%) |
+| aktien_verw | 90 (95%) | 87 (92%) |
+| schulden_lang | 72 (76%) | 66 (69%) |
+| liquide_mittel | 92 (97%) | 90 (95%) |
+| eigenkapital | 92 (97%) | 92 (97%) |
 | bruttogewinn | 36 (38%) | 32 (34%) |
-| operatives_ergebnis | 63 (67%) | 62 (66%) |
-| abschreibungen | 63 (67%) | 59 (63%) |
-| zinsaufwand | 84 (89%) | 75 (80%) |
-| steuern | 91 (97%) | 91 (97%) |
-| bilanzsumme | 91 (97%) | 90 (96%) |
-| umlaufvermoegen | 83 (88%) | 80 (85%) |
-| kurzfr_verbindl | 83 (88%) | 81 (86%) |
-| verbindlichkeiten | 82 (87%) | 79 (84%) |
-| vorraete | 63 (67%) | 60 (64%) |
-| gewinnruecklagen | 80 (85%) | 77 (82%) |
-| schulden_kurz | 37 (39%) | 27 (29%) |
+| operatives_ergebnis | 64 (67%) | 63 (66%) |
+| abschreibungen | 64 (67%) | 60 (63%) |
+| zinsaufwand | 85 (89%) | 76 (80%) |
+| steuern | 92 (97%) | 92 (97%) |
+| bilanzsumme | 92 (97%) | 91 (96%) |
+| umlaufvermoegen | 84 (88%) | 81 (85%) |
+| kurzfr_verbindl | 84 (88%) | 82 (86%) |
+| verbindlichkeiten | 83 (87%) | 80 (84%) |
+| vorraete | 63 (66%) | 60 (63%) |
+| gewinnruecklagen | 81 (85%) | 78 (82%) |
+| schulden_kurz | 38 (40%) | 27 (28%) |
 
 ## Lücken bei Kernkennzahlen (19)
 
@@ -55,12 +55,13 @@ Nach IFRS (Auslandsfirmen, Beträge in Berichtswährung): 63. Dividende je Aktie
 - VET.TO (VERMILION ENERGY INC., GJ 2025): operativer_cf
 - VZLA.TO (Vizsla Silver Corp., GJ 2025): umsatz
 
-## Ersatz-Namen und Split-Bereinigungen (15)
+## Ersatz-Namen und Split-Bereinigungen (16)
 
 - BAM.TO capex: PaymentsToAcquireOtherPropertyPlantAndEquipment
 - BAM.TO aktienrueckkauf: PaymentsForRepurchaseOfEquity
 - CM.TO: Split 1:2 zwischen 2020 und 2021 bereinigt
 - CNQ.TO: Split 1:2 zwischen 2021 und 2022 bereinigt
+- CNR.TO: Split 1:2 zwischen 2010 und 2011 bereinigt
 - CP.TO: Split 1:5 zwischen 2018 und 2019 bereinigt
 - LAC.TO schulden_lang: DebtInstrumentCarryingAmount
 - MG.TO: Split 1:2 zwischen 2013 und 2014 bereinigt
@@ -79,7 +80,6 @@ Nach IFRS (Auslandsfirmen, Beträge in Berichtswährung): 63. Dividende je Aktie
 - ATZ.TO: Abruf fehlgeschlagen (HTTP Error 404: Not Found)
 - AYA.TO: Abruf fehlgeschlagen (HTTP Error 404: Not Found)
 - BIR.TO: Abruf fehlgeschlagen (HTTP Error 404: Not Found)
-- CNR.TO: keine Jahreswerte
 - CPX.TO: Abruf fehlgeschlagen (HTTP Error 404: Not Found)
 - CS.TO: Abruf fehlgeschlagen (HTTP Error 404: Not Found)
 - DOL.TO: Abruf fehlgeschlagen (HTTP Error 404: Not Found)
