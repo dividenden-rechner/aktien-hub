@@ -15,6 +15,7 @@ image_alt: "Bürogebäude von Meta in Menlo Park bei Nacht, mit beleuchteter Gla
 image_credit: "Foto: Meta"
 image_source: "https://about.meta.com"
 image_lizenz: Pressebild
+logo_file: assets/logos/meta.png
 ---
 !!! kurz "Kurz gesagt"
     **Entscheidung:** Meta setzt die Ausgabe der neuen Aktien ohne Stimmrechte vorerst aus.

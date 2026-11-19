@@ -3,13 +3,14 @@
 <!-- uebersicht-start -->
 ## Übersicht (wird automatisch erstellt, neueste zuerst)
 
-### Zur Freigabe: Entwürfe (11)
+### Zur Freigabe: Entwürfe (12)
 
 Datei anklicken, dann Stift-Symbol: Zeile `draft: true` löschen und speichern, dann geht der Artikel online.
 
 | Datum | Titel | Datei |
 |---|---|---|
 | 21.11.2026 08:00 | Chinas KI-Firmen lernen von US-Modellen: Wie Destillation die Chip-Sperren unterläuft | [79738883_2026-11-17/9100_0657-china-destillation-us-ki-modelle.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/79738883_2026-11-17/9100_0657-china-destillation-us-ki-modelle.md) |
+| 19.11.2026 07:00 | Meta legt neue Aktienstruktur auf Eis: Zuckerbergs Stimmrechte bleiben vorerst gesichert | [79738883_2026-11-18/9280_0700-meta-aktienstruktur-eis.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/79738883_2026-11-18/9280_0700-meta-aktienstruktur-eis.md) |
 | 18.11.2026 22:00 | UnitedHealth und die Peers: Warum die ganze Managed-Care-Branche gemeinsam fällt | [79738883_2026-11-18/9270_2200-unitedhealth-peers-branche.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/79738883_2026-11-18/9270_2200-unitedhealth-peers-branche.md) |
 | 18.11.2026 10:30 | Altersvorsorgedepot: Was sich ab 2027 ändert und was mit dem Riester-Vertrag passiert | [79738883_2026-11-18/9200_1030-altersvorsorgedepot-erklaert.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/79738883_2026-11-18/9200_1030-altersvorsorgedepot-erklaert.md) |
 | 18.11.2026 09:00 | Imperial, BAT und Philip Morris: Wer kommt bei neuen Produkten voran? | [79738883_2026-11-17/9120_0900-imperial-bat-pmi-vergleich.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/79738883_2026-11-17/9120_0900-imperial-bat-pmi-vergleich.md) |
