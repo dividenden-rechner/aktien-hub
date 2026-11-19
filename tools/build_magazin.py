@@ -17,7 +17,7 @@ CFG = json.load(open("tools/site.json", encoding="utf-8"))
 BASE = CFG["base"] if CFG["base"].endswith("/") else CFG["base"] + "/"
 SITE = CFG["name"]
 esc = lambda s: html.escape(str(s), quote=True)
-NL_BOX = '''<aside class="nl-box" aria-labelledby="nlb-h"><span class="nl-tag">Wochen-Newsletter · kommt am Wochenende</span><h2 id="nlb-h">Die Woche in drei Analysen</h2><p>Am Wochenende die wichtigsten Themen der Woche, nochmals eingeordnet, mit den Zahlen dahinter.</p><ul><li>Was die Quartalszahlen wirklich bedeuten</li><li>Welche Dividenden gedeckt sind und welche nicht</li><li>Ein Blick auf die Termine der kommenden Woche</li></ul><form class="nl-form" data-nl novalidate><div class="nl-row"><input type="email" name="email" placeholder="Deine E-Mail-Adresse" autocomplete="email" required aria-label="E-Mail-Adresse"><button type="submit">Newsletter abonnieren</button></div><input class="hp" type="text" name="website" tabindex="-1" autocomplete="off" aria-hidden="true"><label class="nl-c"><input type="checkbox" name="einwilligung" required><span>Ich möchte den Newsletter erhalten und stimme der Verarbeitung meiner E-Mail-Adresse durch Brevo zu. Abmeldung jederzeit per Link in jeder Mail. Mehr in der <a href="@P@datenschutz/">Datenschutzerklärung</a>.</span></label><p class="nl-msg" role="status" aria-live="polite"></p></form></aside>'''
+NL_BOX = '''<aside class="nl-box" aria-labelledby="nlb-h"><span class="nl-tag">Newsletter · am Wochenende</span><h2 id="nlb-h">Die Wochenanalyse</h2><p>Am Wochenende ordnen wir die wichtigsten Themen der Woche ein, mit Zahlen, Daten und Fakten.</p><ul><li>Blick auf die Quartalszahlen</li><li>Blick auf die Dividenden</li><li>Blick auf die Termine</li></ul><form class="nl-form" data-nl novalidate><div class="nl-row"><input type="email" name="email" placeholder="Deine E-Mail-Adresse" autocomplete="email" required aria-label="E-Mail-Adresse"><button type="submit">Newsletter abonnieren</button></div><input class="hp" type="text" name="website" tabindex="-1" autocomplete="off" aria-hidden="true"><label class="nl-c"><input type="checkbox" name="einwilligung" required><span>Ich möchte den Newsletter erhalten und stimme der Verarbeitung meiner E-Mail-Adresse durch Brevo zu. Abmeldung jederzeit per Link in jeder Mail. Mehr in der <a href="@P@datenschutz/">Datenschutzerklärung</a>.</span></label><p class="nl-msg" role="status" aria-live="polite"></p></form></aside>'''
 NAV = [("rechner", "", "Rechner"), ("aktien", "aktien-hub/", "Aktien"), ("depot", "depot/", "Depot"), ("news", "news/", "News"),
        ("earnings", "earnings/", "Earnings"), ("screener", "screener/", "Screener"),
        ("einfuehrung", "einfuehrung/", "Einführung"), ("grundlagen", "grundlagen/", "Grundlagen"),
@@ -750,7 +750,7 @@ def build_post(p, posts):
     o = head(depth, p["title"], p["description"], url, "article", absu(make_share_card(p, slug, (p.get("share_image") or "").lstrip("/") or img)).replace("&", "&amp;"), extra) + nav_html(depth, "news") + "</nav></div></header>\n"
     o += f'<script src="{pre}assets/navigation.js"></script>\n<script src="{pre}assets/logos.js"></script>\n<script src="{pre}assets/fkearn.js"></script>\n<main class="wrap"><article class="post">\n'
     o += f'<nav class="crumbs" aria-label="Brotkrumen"><a href="{pre}">Start</a> › <a href="{pre}news/">News</a> › <span aria-current="page">{esc(p["title"])}</span></nav>\n'
-    o += f'<p class="kicker">{esc(p["category"])}</p>\n{logo_html(p)}{kurs_chip(p)}<p class="lead">{esc(p["description"])}</p>\n' + NL_BOX.replace('@P@', pre)
+    o += f'<p class="kicker">{esc(p["category"])}</p>\n{logo_html(p)}{kurs_chip(p)}<p class="lead">{esc(p["description"])}</p>\n'
     upd = f' · Aktualisiert: <time datetime="{iso(p["upd"])}">{de_date(p["upd"])}</time>' if p["upd"].date() > p["dt"].date() else ""
     o += f'<p class="byline">{('<strong><a href="' + pre + 'ueber-uns/">Aus der Redaktion</a></strong>') if 'redaktion' in author.lower() else 'Von <strong>' + esc(author) + '</strong>'} · <time datetime="{iso(p["dt"])}">{de_dt(p["dt"])}</time>{upd} · {mins} Min. Lesezeit</p>\n'
     o += share_html(p, url, img if ext(img) else pre + img)
@@ -761,6 +761,7 @@ def build_post(p, posts):
     if not kurz or p.get("image"):
         o += (f'<figure class="cover kurzcover"><img src="{src(pre, img)}" alt="{esc(alt)}" loading="lazy">{cap}</figure>\n' if kurz else
               f'<figure class="cover"><img src="{src(pre, img)}" alt="{esc(alt)}" width="1200" height="675" fetchpriority="high">{cap}</figure>\n')
+    o += NL_BOX.replace('@P@', pre) + "\n"
     o += body + "\n"
     if kurz and p.get("quelle_url", "").startswith("http"):
         o += (f'<p class="kurzquelle">Quelle: <a href="{esc(p["quelle_url"])}" rel="noopener nofollow" target="_blank">{esc(p.get("quelle_name") or "Originalmeldung des Unternehmens")}</a></p>\n')
