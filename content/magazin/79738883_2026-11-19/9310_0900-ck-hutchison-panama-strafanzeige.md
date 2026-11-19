@@ -15,7 +15,6 @@ image_credit: "Foto: Brian J. Tromp / Unsplash"
 image_source: "https://unsplash.com/de/@brianjtromp"
 image_lizenz: Unsplash
 quelle_name: "Investing.com-Meldung (sinngemäß zusammengefasst); Kennzahlen aus dem Aktienhub, Stand 17.11.2026"
-draft: true
 logo_file: assets/logos/0001-hk.png
 ---
 !!! kurz "Kurz gesagt"
