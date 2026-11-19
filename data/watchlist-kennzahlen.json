@@ -1,0 +1,180 @@
+{
+ "stand": "2026-11-19",
+ "quelle": "SEC-Jahreszahlen (companyfacts), Stand Datenbasis 2026-11-17",
+ "hinweis": "Nur Werte aus den Berichten. Kurse, Bewertung und Schaetzungen fehlen bewusst.",
+ "firmen": {
+  "KO": {
+   "geschaeftsjahr": "2025",
+   "waehrung": "USD",
+   "umsatz_mrd": 47.94,
+   "eps": 3.04,
+   "dividende_je_aktie": 2.04,
+   "ausschuettungsquote_pct": 67.1,
+   "fcf_mrd": 5.3,
+   "fcf_je_aktie": 1.23,
+   "schulden_zu_eigenkapital": 1.31,
+   "eigenkapitalrendite_pct": 40.7,
+   "zinsdeckung_x": 8.3,
+   "eps_wachstum_5j_pct": 11.2,
+   "dividende_wachstum_5j_pct": 4.5,
+   "eps_wachstum_10j_pct": null,
+   "dividende_wachstum_10j_pct": null,
+   "datenjahre": [
+    "2016",
+    "2025"
+   ],
+   "name": "COCA COLA CO"
+  },
+  "PEP": {
+   "geschaeftsjahr": "2025",
+   "waehrung": "USD",
+   "umsatz_mrd": 93.92,
+   "eps": 6,
+   "dividende_je_aktie": 5.6225,
+   "ausschuettungsquote_pct": 93.7,
+   "fcf_mrd": 7.67,
+   "fcf_je_aktie": 5.59,
+   "schulden_zu_eigenkapital": 2.07,
+   "eigenkapitalrendite_pct": 40.4,
+   "zinsdeckung_x": 10.3,
+   "eps_wachstum_5j_pct": 3.2,
+   "dividende_wachstum_5j_pct": 6.9,
+   "eps_wachstum_10j_pct": null,
+   "dividende_wachstum_10j_pct": null,
+   "datenjahre": [
+    "2016",
+    "2025"
+   ],
+   "name": "PEPSICO INC"
+  },
+  "JNJ": {
+   "geschaeftsjahr": "2025",
+   "waehrung": "USD",
+   "umsatz_mrd": 94.19,
+   "eps": 11.03,
+   "dividende_je_aktie": 5.14,
+   "ausschuettungsquote_pct": 46.6,
+   "fcf_mrd": 19.7,
+   "fcf_je_aktie": 8.11,
+   "schulden_zu_eigenkapital": 0.48,
+   "eigenkapitalrendite_pct": 32.9,
+   "eps_wachstum_5j_pct": null,
+   "dividende_wachstum_5j_pct": null,
+   "eps_wachstum_10j_pct": null,
+   "dividende_wachstum_10j_pct": null,
+   "datenjahre": [
+    "2017",
+    "2025"
+   ],
+   "name": "Johnson & Johnson"
+  },
+  "PG": {
+   "geschaeftsjahr": "2026",
+   "waehrung": "USD",
+   "umsatz_mrd": 87.03,
+   "eps": 6.62,
+   "dividende_je_aktie": 4.2589,
+   "ausschuettungsquote_pct": 64.3,
+   "fcf_mrd": 15.15,
+   "fcf_je_aktie": 6.25,
+   "schulden_zu_eigenkapital": 0.42,
+   "eigenkapitalrendite_pct": 29.5,
+   "zinsdeckung_x": 22.5,
+   "eps_wachstum_5j_pct": 3.8,
+   "dividende_wachstum_5j_pct": 5.6,
+   "eps_wachstum_10j_pct": null,
+   "dividende_wachstum_10j_pct": null,
+   "datenjahre": [
+    "2017",
+    "2026"
+   ],
+   "name": "PROCTER & GAMBLE Co"
+  },
+  "MCD": {
+   "geschaeftsjahr": "2025",
+   "waehrung": "USD",
+   "umsatz_mrd": 26.89,
+   "eps": 11.95,
+   "dividende_je_aktie": 7.17,
+   "ausschuettungsquote_pct": 60.0,
+   "fcf_mrd": 7.19,
+   "fcf_je_aktie": 10.03,
+   "eigenkapital_negativ": true,
+   "zinsdeckung_x": 7.8,
+   "eps_wachstum_5j_pct": 13.6,
+   "dividende_wachstum_5j_pct": 7.3,
+   "eps_wachstum_10j_pct": null,
+   "dividende_wachstum_10j_pct": null,
+   "datenjahre": [
+    "2016",
+    "2025"
+   ],
+   "name": "MCDONALDS CORP"
+  },
+  "O": {
+   "geschaeftsjahr": "2025",
+   "waehrung": "USD",
+   "umsatz_mrd": 5.75,
+   "eps": 1.17,
+   "dividende_je_aktie": 3.217,
+   "ausschuettungsquote_pct": 275.0,
+   "fcf_mrd": 3.86,
+   "fcf_je_aktie": 4.25,
+   "schulden_zu_eigenkapital": 0.63,
+   "eigenkapitalrendite_pct": 2.7,
+   "eps_wachstum_5j_pct": 0.5,
+   "dividende_wachstum_5j_pct": 2.9,
+   "eps_wachstum_10j_pct": null,
+   "dividende_wachstum_10j_pct": null,
+   "datenjahre": [
+    "2016",
+    "2025"
+   ],
+   "name": "REALTY INCOME CORPORATION"
+  },
+  "MSFT": {
+   "geschaeftsjahr": "2026",
+   "waehrung": "USD",
+   "umsatz_mrd": 331.84,
+   "eps": 17.95,
+   "dividende_je_aktie": 3.64,
+   "ausschuettungsquote_pct": 20.3,
+   "fcf_mrd": 66.99,
+   "fcf_je_aktie": 8.99,
+   "schulden_zu_eigenkapital": 0.07,
+   "eigenkapitalrendite_pct": 30.2,
+   "zinsdeckung_x": 50.9,
+   "eps_wachstum_5j_pct": 17.4,
+   "dividende_wachstum_5j_pct": 10.2,
+   "eps_wachstum_10j_pct": null,
+   "dividende_wachstum_10j_pct": null,
+   "datenjahre": [
+    "2017",
+    "2026"
+   ],
+   "name": "MICROSOFT CORP"
+  },
+  "AAPL": {
+   "geschaeftsjahr": "2026",
+   "waehrung": "USD",
+   "umsatz_mrd": 478.83,
+   "eps": 8.98,
+   "dividende_je_aktie": 1.06,
+   "ausschuettungsquote_pct": 11.8,
+   "fcf_mrd": 136.06,
+   "fcf_je_aktie": 9.24,
+   "schulden_zu_eigenkapital": 0.61,
+   "eigenkapitalrendite_pct": 117.9,
+   "eps_wachstum_5j_pct": 9.9,
+   "dividende_wachstum_5j_pct": 4.5,
+   "eps_wachstum_10j_pct": null,
+   "dividende_wachstum_10j_pct": null,
+   "datenjahre": [
+    "2017",
+    "2026"
+   ],
+   "name": "Apple Inc."
+  }
+ },
+ "ohne_daten": []
+}
