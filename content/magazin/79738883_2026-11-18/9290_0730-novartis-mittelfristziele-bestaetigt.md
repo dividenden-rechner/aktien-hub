@@ -11,8 +11,12 @@ logo_name: "Novartis"
 logo_symbol: NOVN
 logo_domain: novartis.com
 logo_file: assets/logos/nvs.png
+image: assets/magazin/novartis-mittelfristziele-aufmacher.jpg
+image_alt: "Gebäude des Novartis-Standorts Gitterwerk mit Logo auf dem Dach"
+image_credit: "Foto: Novartis"
+image_source: "https://www.novartis.com"
+image_lizenz: Pressebild
 quelle_name: "Novartis, Präsentation „Meet Novartis Management 2026 Part 1“ (Quartr), Stand November 2026"
-draft: true
 ---
 !!! kurz "Kurz gesagt"
     **Umsatz 2026:** Niedriges einstelliges Wachstum erwartet. Im dritten Quartal stiegen die Verkäufe um 4 % (währungsbereinigt) nach minus 5 % im ersten Quartal.
