@@ -6,7 +6,6 @@ author: "Redaktions-Team Dividenden-Rechner.de"
 author_bio: "Das Redaktions-Team von Dividenden-Rechner.de schreibt über Dividendenaktien, Kennzahlen und Steuerthemen für Privatanleger. Die Rechner und Auswertungen auf der Seite entstehen im eigenen Haus."
 category: Management
 slug: meta-aktienstruktur-eis
-draft: true
 logo_name: "Meta"
 logo_symbol: META
 logo_domain: meta.com
