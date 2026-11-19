@@ -504,7 +504,7 @@ function epsChart(inc,cur,H0){
   const g=n>1&&D[n-2].v>0?D[n-1].v/D[n-2].v-1:null;
   return `<div class="card">${kern(epsT,num(D[n-1].v)+" "+esc(cur),D[n-1].v<0?"var(--neg)":"var(--c-gewinn)",g!=null?pcs(g):"")}${s}</svg></div>`;
 }
-/* Zusätzliche SEC-Diagramme (Geschäftsjahre): Ausschüttung, Eigenkapital, Schulden, Rückkäufe, Aktienzahl */
+/* Zusätzliche SEC-Diagramme (Geschäftsjahre): Ausschüttungsquote, Eigenkapital und Schulden, Rückkäufe */
 function secCharts(SD,cur){
   if(!SD)return "";
   const epsM=Object.fromEntries(SD.inc.filter(x=>x.epsDiluted!=null).map(x=>[x.y,x.epsDiluted]));
@@ -516,15 +516,32 @@ function secCharts(SD,cur){
   const eq=SD.bs.filter(x=>x.totalStockholdersEquity!=null).map(x=>({y:x.y,v:x.totalStockholdersEquity}));
   const debt=SD.bs.filter(x=>x.longTermDebt!=null).map(x=>({y:x.y,v:x.longTermDebt}));
   const buy=SD.cf.filter(x=>x.commonStockRepurchased!=null).map(x=>({y:x.y,v:Math.abs(x.commonStockRepurchased)}));
-  const sh=SD.inc.filter(x=>x.weightedAverageShsOutDil!=null).map(x=>({y:x.y,v:x.weightedAverageShsOutDil}));
   const q=SD.q?quelleText(SD.q,true):"";
   return `<div class="grid">
    ${bars("Ausschüttungsquote",`Dividende je Aktie geteilt durch Gewinn je Aktie (GAAP, unbereinigt), je Geschäftsjahr.${quoteNotiz} Quelle: ${q}`,quote,"var(--c-gold)",v=>num(v,0)+" %")}
-   ${bars("Eigenkapital",`In ${esc(cur)}. Quelle: ${q}`,eq,"var(--c-cash-l)",big)}
-   ${bars("Langfristige Schulden",`In ${esc(cur)}, inkl. kurzfristiger Anteile langfristiger Schulden. Quelle: ${q}`,debt,"var(--c-cash-l)",big)}
+   ${paarBars("Eigenkapital und langfristige Schulden",`In ${esc(cur)}, je Geschäftsjahr. Quelle: ${q}`,eq,debt,"Eigenkapital","Langfristige Schulden")}
    ${bars("Aktienrückkäufe",`Ausgaben je Geschäftsjahr, in ${esc(cur)}. Quelle: ${q}`,buy,"var(--c-cash-l)",big)}
-   ${bars("Aktienzahl (verwässert)",`Gewichteter Durchschnitt je Geschäftsjahr. Quelle: ${q}`,sh,"var(--c-cash-l)",big)}
   </div>`;
+}
+/* Zwei Reihen nebeneinander je Jahr (z. B. Eigenkapital und Schulden) */
+function paarBars(title,note,A,B,nameA,nameB){
+  const jahre=[...new Set([...A,...B].map(x=>x.y))].sort();
+  if(!jahre.length)return `<div class="card"><h3>${title}</h3><p>Keine Daten verfügbar.</p></div>`;
+  const va=Object.fromEntries(A.map(x=>[x.y,x.v])),vb=Object.fromEntries(B.map(x=>[x.y,x.v]));
+  const W=480,H=210,pt=22,pb=24,n=jahre.length,gap=8,grp=(W-gap*(n+1))/n,bw=(grp-4)/2;
+  const all=[...A,...B].map(x=>x.v),mx=Math.max(0,...all),mn=Math.min(0,...all),rng=(mx-mn)||1,ch=H-pt-pb;
+  const y=v=>pt+(mx-v)/rng*ch,z=y(0);
+  let s=`<svg viewBox="0 0 ${W} ${H}" role="img" aria-label="${title}"><line x1="0" x2="${W}" y1="${z}" y2="${z}" stroke="var(--line)"/>`;
+  jahre.forEach((j,i)=>{
+    const x0=gap+i*(grp+gap);
+    [[va[j],"var(--c-cash)",nameA,0],[vb[j],"var(--c-gewinn)",nameB,1]].forEach(([v,col,nm,k])=>{
+      if(v==null)return;
+      const bx=x0+2+k*bw,yy=y(v),h=Math.max(1,Math.abs(yy-z)),top=v>=0?yy:z;
+      s+=`<rect x="${bx}" y="${top}" width="${bw}" height="${h}" rx="2" fill="${v<0?"var(--neg)":col}"><title>${j} ${nm}: ${big(v)}</title></rect>`;
+    });
+    s+=`<text x="${x0+grp/2}" y="${H-6}" text-anchor="middle">${String(j).slice(-n>8?-2:0)}</text>`;
+  });
+  return `<div class="card"><h3>${title}</h3><p>${note}</p><div style="display:flex;gap:14px;font-size:12px;margin:2px 0 6px"><span><i style="display:inline-block;width:10px;height:10px;border-radius:2px;background:var(--c-cash);margin-right:4px"></i>${nameA}</span><span><i style="display:inline-block;width:10px;height:10px;border-radius:2px;background:var(--c-gewinn);margin-right:4px"></i>${nameB}</span></div>${s}</svg></div>`;
 }
 function line(title,pts){
   if(pts.length<2)return `<div class="card"><h3>${title}</h3><p>Keine Daten verfügbar.</p></div>`;
