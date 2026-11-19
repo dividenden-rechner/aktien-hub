@@ -29,7 +29,8 @@ LAENDER = set("AT BE BG HR CY CZ DK EE FI FR DE GR HU IE IT LV LT LU MT NL PL PT
 SUFFIX = {"XPAR": ".PA", "ALXP": ".PA", "XAMS": ".AS", "XBRU": ".BR", "XLIS": ".LS", "XMSM": ".IR", "MTAA": ".MI", "EXGM": ".MI",
           "XMAD": ".MC", "MABX": ".MC", "XSTO": ".ST", "XNGM": ".ST", "XHEL": ".HE", "XCSE": ".CO", "XOSL": ".OL", "XICE": ".IC",
           "XETA": ".DE", "XETB": ".DE", "XLON": ".L", "AIMX": ".L", "XWAR": ".WA", "XNCO": ".WA", "WBAH": ".VI", "XATH": ".AT"}
-ERNEUT_MIT, ERNEUT_OHNE = 7, 30
+ERNEUT_MIT, ERNEUT_OHNE, ERNEUT_KLEIN = 7, 30, 90
+MIN_BOERSENWERT = 1e9   # EUR; kleinere Firmen werden nach dem ersten Auslesen nicht angezeigt und nur alle 90 Tage neu geprueft
 
 
 def lade(p, leer=None):
@@ -105,6 +106,8 @@ def faellig(status, lei, heute):
     if not s:
         return True
     tage = (datetime.date.fromisoformat(heute) - datetime.date.fromisoformat(s[0])).days
+    if len(s) > 2 and s[2] in ("klein", "ohne_aktienzahl"):
+        return tage >= ERNEUT_KLEIN
     return tage >= (ERNEUT_MIT if s[1] else ERNEUT_OHNE)
 
 
@@ -157,8 +160,19 @@ def plausibel(fa):
     return fa
 
 
-def bauen(firmen):
-    """Alle gespeicherten Berichte -> eine Datei je Firma und Index (ohne Netzwerk)."""
+def boersenwert(fa, kurse):
+    """Börsenwert in EUR = deutscher Schlusskurs (EUR) x letzte Aktienzahl laut Bericht; None, wenn eins fehlt."""
+    z = kurse.get(fa.get("isin") or "")
+    av = (fa["k"].get("aktien_verw") or [[None, None]])[-1][1]
+    if not z or z[0] is None or not av or len(z) < 3 or z[2] != "EUR":
+        return None
+    return float(z[0]) * float(av)
+
+
+def bauen(firmen, kurse, min_bw):
+    """Alle gespeicherten Berichte -> eine Datei je Firma und Index (ohne Netzwerk). Firmen unter min_bw EUR Börsenwert
+    (oder ohne Aktienzahl) bekommen keine Datei; ihre Rohdaten bleiben, damit sie bei steigendem Kurs wieder erscheinen."""
+    groesse = {}
     os.makedirs(OUT, exist_ok=True)
     index, zeilen, alt = {}, [], {os.path.basename(p)[:-5] for p in glob.glob(os.path.join(OUT, "*.json"))} - {"_index"}
     for f in firmen:
@@ -171,6 +185,12 @@ def bauen(firmen):
             zeilen.append((f, None, info))
             continue
         fa = plausibel(fa)
+        bw = boersenwert(fa, kurse)
+        if bw is None or bw < min_bw:
+            groesse[f["lei"]] = "ohne_aktienzahl" if bw is None else "klein"
+            zeilen.append((f, None, groesse[f["lei"]]))
+            continue
+        fa["boersenwert_eur_bei_aufnahme"] = round(bw)
         fa["quelle"] = "ESEF"
         fa["universum"] = True
         fa["human_review"] = "pending"
@@ -183,7 +203,7 @@ def bauen(firmen):
     for t in alt:   # Kuerzel geaendert oder Firma nicht mehr im Universum
         os.remove(os.path.join(OUT, f"{t}.json"))
     schreibe(os.path.join(OUT, "_index.json"), dict(sorted(index.items())))
-    return index, zeilen
+    return index, zeilen, groesse
 
 
 def main():
@@ -192,10 +212,12 @@ def main():
     ap.add_argument("--limit", type=int, default=0, help="hoechstens so viele Emittenten abrufen (0 = ohne Grenze)")
     ap.add_argument("--nur-bauen", action="store_true", help="nichts abrufen, nur aus dem Speicher bauen")
     ap.add_argument("--threads", type=int, default=3)
+    ap.add_argument("--min-boersenwert", type=float, default=MIN_BOERSENWERT, help="EUR; 0 = alle")
     a = ap.parse_args()
     start, heute = time.time(), datetime.date.today().isoformat()
     kurse = (lade(os.path.join(ROOT, "data/kurse/xetra-letzter.json"), {}) or {}).get("k", {})
-    firmen = auswahl(kurse)
+    # Ohne deutschen Kurs ist kein Börsenwert (und kein KGV) rechenbar: diese Firmen gar nicht erst abrufen
+    firmen = [f for f in auswahl(kurse) if f["kurs"] or not a.min_boersenwert]
     status = lade(os.path.join(SP, "_status.json"), {}) or {}
     offen = [f for f in firmen if faellig(status, f["lei"], heute)]
     offen.sort(key=lambda f: (f["lei"] in status, not f["kurs"], (status.get(f["lei"]) or [""])[0]))
@@ -230,21 +252,26 @@ def main():
                         print(f"  {geladen} Emittenten geprüft, {neu_ges} neue Berichte, {int(time.time() - start)} s", flush=True)
                 nachschub()
         schreibe(os.path.join(SP, "_status.json"), dict(sorted(status.items())))
-    index, zeilen = bauen(firmen)
+    index, zeilen, groesse = bauen(firmen, kurse, a.min_boersenwert)
+    for f in firmen:   # Größe im Status merken (kleine Firmen nur alle 90 Tage neu prüfen)
+        st = status.get(f["lei"])
+        if st:
+            status[f["lei"]] = st[:2] + ([groesse[f["lei"]]] if f["lei"] in groesse else [])
+    schreibe(os.path.join(SP, "_status.json"), dict(sorted(status.items())))
     # Abdeckung
     geprueft = sum(1 for f in firmen if f["lei"] in status)
     mit_ber = sum(1 for f in firmen if (status.get(f["lei"]) or [0, 0])[1])
-    mit_kurs = sum(1 for f in firmen if f["kuerzel"] in index and f["kurs"])
     jahre = {}
     for f, fa, info in zeilen:
         if fa:
             jahre[info["jahre"]] = jahre.get(info["jahre"], 0) + 1
     md = [f"# ESEF-Jahreszahlen: ganzes Europa-Universum (Stand {heute})", "",
           "Quelle: filings.xbrl.org (eingereichte ESEF-Jahresfinanzberichte). Maschinell ausgelesen, ungeprüft (human_review: pending).", "",
-          f"- Emittenten in der Auswahl (LEI, Sitz EU/EWR/GB, aktive Notierung, nicht schon über SEC/feste Liste): **{len(firmen)}**",
+          f"- Emittenten in der Auswahl (LEI, Sitz EU/EWR/GB, aktive Notierung, deutscher Kurs, nicht schon über SEC/feste Liste): **{len(firmen)}**",
           f"- davon geprüft: **{geprueft}**, offen: **{len(firmen) - geprueft}**",
           f"- mit ESEF-Berichten: **{mit_ber}**",
-          f"- mit Jahreszahlen im Hub: **{len(index)}**, davon mit deutschem Börsenkurs (KGV, Rendite usw. rechenbar): **{mit_kurs}**",
+          f"- im Hub (Börsenwert ab {a.min_boersenwert / 1e9:g} Mrd. EUR): **{len(index)}**; "
+          f"darunter: **{sum(1 for v in groesse.values() if v == 'klein')}**, ohne Aktienzahl: **{sum(1 for v in groesse.values() if v == 'ohne_aktienzahl')}** (nicht angezeigt, Nachprüfung alle 90 Tage)",
           f"- in diesem Lauf: {geladen} Emittenten abgerufen, {neu_ges} neue Berichte, {len(fehler)} Fehler", "",
           "ESEF gibt es erst ab Geschäftsjahr 2020 (teils 2021); ältere Jahre stehen nur in PDF-Berichten.", "",
           "| Zeitraum | Firmen |", "|---|---|"] + [f"| {k} | {v} |" for k, v in sorted(jahre.items(), key=lambda x: -x[1])[:15]]
