@@ -522,15 +522,23 @@ function secCharts(SD,cur,eps=""){
   const debt=SD.bs.filter(x=>x.longTermDebt!=null).map(x=>({y:x.y,v:x.longTermDebt}));
   const buy=SD.cf.filter(x=>x.commonStockRepurchased!=null).map(x=>({y:x.y,v:Math.abs(x.commonStockRepurchased)}));
   const q=SD.q?quelleText(SD.q,true):"";
+  const letzt=a=>a[a.length-1],vor=a=>a[a.length-2];
+  const kopf=(main,sub,col)=>`<div class="kern" style="color:${col}">${main}${sub?`<small>${sub}</small>`:""}</div>`;
+  const qL=letzt(quote),qV=vor(quote);
+  const kQ=kopf(qL?num(qL.v,0)+" %":"–",qV?"Vorjahr "+num(qV.v,0)+" %":"","var(--c-gold)");
+  const eL=letzt(eq),dL=letzt(debt);
+  const kE=kopf(eL?big(eL.v)+" "+esc(cur):"–",dL?"Schulden "+big(dL.v)+" "+esc(cur):"","var(--c-cash)");
+  const bL=letzt(buy),bV=vor(buy);
+  const kB=kopf(bL?big(bL.v)+" "+esc(cur):"–",bL&&bV?pcs(bL.v/bV.v-1)+" zum Vorjahr":"","var(--c-cash)");
   return `<div class="grid sec">
    ${eps}
-   ${bars("Ausschüttungsquote",`Dividende je Aktie geteilt durch Gewinn je Aktie (GAAP, unbereinigt), je Geschäftsjahr.${quoteNotiz} Quelle: ${q}`,quote,"var(--c-gold)",v=>num(v,0)+" %")}
-   ${paarBars("Eigenkapital und langfristige Schulden",`In ${esc(cur)}, je Geschäftsjahr. Quelle: ${q}`,eq,debt,"Eigenkapital","Langfristige Schulden")}
-   ${bars("Aktienrückkäufe",`Ausgaben je Geschäftsjahr, in Mrd. ${esc(cur)}. Quelle: ${q}`,buy,"var(--c-cash-l)",v=>num(v/1e9,1))}
+   ${bars("Ausschüttungsquote",`Dividende je Aktie geteilt durch Gewinn je Aktie (GAAP, unbereinigt), je Geschäftsjahr.${quoteNotiz} Quelle: ${q}`,quote,"var(--c-gold)",v=>num(v,0)+" %",kQ)}
+   ${paarBars("Eigenkapital und langfristige Schulden",`In ${esc(cur)}, je Geschäftsjahr. Quelle: ${q}`,eq,debt,"Eigenkapital","Langfristige Schulden",kE)}
+   ${bars("Aktienrückkäufe",`Ausgaben je Geschäftsjahr, in Mrd. ${esc(cur)}. Quelle: ${q}`,buy,"var(--c-cash-l)",v=>num(v/1e9,1),kB)}
   </div>`;
 }
 /* Zwei Reihen nebeneinander je Jahr (z. B. Eigenkapital und Schulden) */
-function paarBars(title,note,A,B,nameA,nameB){
+function paarBars(title,note,A,B,nameA,nameB,kopf=""){
   const jahre=[...new Set([...A,...B].map(x=>x.y))].sort();
   if(!jahre.length)return `<div class="card"><h3>${title}</h3><p>Keine Daten verfügbar.</p></div>`;
   const va=Object.fromEntries(A.map(x=>[x.y,x.v])),vb=Object.fromEntries(B.map(x=>[x.y,x.v]));
@@ -548,7 +556,7 @@ function paarBars(title,note,A,B,nameA,nameB){
     s+=`<text x="${x0+grp/2}" y="${H-6}" text-anchor="middle">${String(j).slice(-n>8?-2:0)}</text>`;
   });
   const legende=`<span style="display:flex;gap:14px;font-size:12px;margin-top:4px"><span><i style="display:inline-block;width:10px;height:10px;border-radius:2px;background:var(--c-cash);margin-right:4px"></i>${nameA}</span><span><i style="display:inline-block;width:10px;height:10px;border-radius:2px;background:var(--neg);margin-right:4px"></i>${nameB}</span></span>`;
-  return `<div class="card"><h3>${title}</h3><p>${note}${legende}</p>${s}</svg></div>`;
+  return `<div class="card"><h3>${title}</h3>${kopf}<p>${note}${legende}</p>${s}</svg></div>`;
 }
 function line(title,pts){
   if(pts.length<2)return `<div class="card"><h3>${title}</h3><p>Keine Daten verfügbar.</p></div>`;
