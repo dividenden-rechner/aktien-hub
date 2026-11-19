@@ -2,7 +2,6 @@
 title: "Walmart Q3 FY27: Umsatz plus 5,2 %, Prognose angehoben"
 description: "Walmart wächst im dritten Quartal solide, hebt die Jahresprognose an und verweist auf Sondereffekte im Gewinn nach GAAP."
 date: 2026-11-19 16:00
-draft: true
 author: "Redaktions-Team Dividenden-Rechner.de"
 author_bio: "Das Redaktions-Team von Dividenden-Rechner.de schreibt über Dividendenaktien, Kennzahlen und Steuerthemen für Privatanleger. Die Rechner und Auswertungen auf der Seite entstehen im eigenen Haus."
 category: Quartalszahlen
