@@ -69,7 +69,7 @@ Das zeigt sich auch beim Tempo der Erhöhungen. Target hebt die Dividende seit m
 
 Die Tabelle fasst das Dilemma zusammen. Target kostet weniger, rund das 17-Fache des Gewinns, und bietet die doppelte Rendite. Dafür kauft man eine Erholung, die erst ein Quartal alt ist, einen Gewinn, der zu einem guten Teil aus einmaligen Erstattungen besteht, und eine Dividende, die in den kommenden Jahren kaum schneller wachsen dürfte als bisher.
 
-TJX ist teurer, die Rendite liegt bei 1,3 %. Dafür wächst das Geschäft verlässlich, die Ausschüttung ist großzügig gedeckt, und die Erhöhungen gleichen die niedrige Startrendite über die Jahre aus. Wer heute kauft und die Wachstumsrate der vergangenen zehn Jahre fortschreibt, läge nach gut sieben Jahren auf seinen Einstand gerechnet bei gut 3 %.
+TJX ist teurer, die Rendite liegt bei 1,3 %. Dafür wächst das Geschäft verlässlich, die Ausschüttung ist großzügig gedeckt, und die Erhöhungen gleichen die niedrige Startrendite über die Jahre aus. Ein Rechenbeispiel: Wer heute zu 140,70 Dollar kauft, erhält 1,3 % Dividendenrendite. Steigt die Dividende weiter so stark wie im Schnitt der vergangenen zehn Jahre, also um 14 % pro Jahr, hat sie sich nach gut fünf Jahren verdoppelt. Nach sieben Jahren läge die jährliche Ausschüttung dann bei gut 3 % des heutigen Kaufpreises.
 
 Entscheidend für beide ist das Weihnachtsgeschäft. Target meldet, der November laufe im Rahmen der Erwartungen. TJX rechnet für das Schlussquartal mit 2 bis 3 % mehr vergleichbaren Verkäufen und klagt über ungewöhnlich warmes Wetter, das den Verkauf von Wintermode bremst.
 

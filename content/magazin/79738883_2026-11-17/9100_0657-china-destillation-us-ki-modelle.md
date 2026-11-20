@@ -51,17 +51,16 @@ Das Ziel ist klar: kleinere, billigere KI-Systeme, die sich in der Fertigung bre
 
 ## Was das für Anleger heißt
 
-Für Investoren hat die Debatte zwei Seiten. Die Chip-Sperren sind ein wichtiger Hebel der US-Politik gegen China. Wenn Destillation einen Teil des Rückstands ausgleicht, verliert der Hebel an Wirkung. Das betrifft vor allem Halbleiterhersteller mit starkem China-Geschäft. Wie stark die Sperren bislang gewirkt haben, ist allerdings umstritten. Reuters berichtet, dass Washington am Montag weitere Einschränkungen für den Zugang zu fortschrittlichen Chips angekündigt hat.
+Für Investoren hat die Debatte zwei Seiten. Die Chip-Sperren sind ein wichtiger Hebel der US-Politik gegen China. Wenn Destillation einen Teil des Rückstands ausgleicht, verliert der Hebel an Wirkung. Das betrifft vor allem Halbleiterhersteller mit starkem China-Geschäft. Wie stark die Sperren bislang gewirkt haben, ist allerdings umstritten. Am 16. November hat Washington weitere Einschränkungen für den Zugang zu fortschrittlichen Chips angekündigt.
 
 Die US-Modellanbieter stehen anders da. Wenn günstige chinesische Modelle die Preise drücken, sinkt der Spielraum für Gewinne in der Cloud und bei Schnittstellen. Gleichzeitig zeigt der Streit, dass die Anbieter ihre Ausgaben nicht frei verteilen können, ohne die eigene Wertschöpfung zu gefährden.
 
 Ein Gegenargument ist wichtig: Die großen amerikanischen Konzerne verdienen weiter stark. Die Nachfrage nach Rechenleistung wächst, und die Abhängigkeit von Spitzenchips bleibt bestehen. Ein kleiner Anteil günstiger Nachahmer ändert daran kurzfristig wenig. Die Kurse bewegen sich deshalb auch wegen Zinsen, Quartalszahlen und Investitionsplänen der Rechenzentren, nicht allein wegen dieser Meldung.
 
-Für Dividendenanleger ist das Thema indirekt. Die meisten Ausschüttungen kommen von Firmen, die mit KI kaum direkt verdienen. Entscheidend ist eher, ob Chip- und Cloud-Konzerne ihre hohen Investitionen mittelfristig in Gewinne übersetzen können.
 
 ## Was als Nächstes wichtig ist
 
-Am 18. und 19. November findet in Shenzhen der Gipfel der Asiatisch-Pazifischen Wirtschaftskooperation statt. US-Präsident Donald Trump und Chinas Präsident Xi Jinping wollen sich dort treffen. Ob Destillation und Chip-Exporte auf der Agenda stehen, ist offen. Die Gespräche können sowohl Spannungen abbauen als auch neue Konflikte auslösen.
+Seit dem 19. November gelten in den USA verschärfte Exportregeln. Sie verlangen Lizenzen für KI-Chips in mehreren südostasiatischen Ländern und sperren den Fernzugriff chinesischer Firmen auf Rechenzentren, mehr dazu in unserem Überblick über [die KI-Woche](/news/ki-woche-anthropic-nvidia-amd-chipregeln/). Gegen Destillation helfen diese Regeln nur bedingt, denn dafür reichen Zugänge zu den Modellen selbst. Ob Washington auch hier nachlegt, etwa über Nutzungsbedingungen der Anbieter oder neue Gesetze, ist offen.
 
 Ein Fazit ist unter diesen Bedingungen schwer zu ziehen. Destillation ist eine wirksame Abkürzung, aber keine Garantie für Spitzenleistung. Ob sie als Diebstahl gilt oder als übliche Methode, entscheiden am Ende Gerichte, Verträge und Politik. Für die Märkte zählt bis dahin vor allem, wie stark die Chip-Sperren tatsächlich wirken.
 

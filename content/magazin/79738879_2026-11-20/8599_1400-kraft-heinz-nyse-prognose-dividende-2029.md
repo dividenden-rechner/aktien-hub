@@ -76,7 +76,7 @@ Im Plan-Szenario sind beide Bedingungen 2029 erfüllt: Die Quote sinkt auf zwei 
 
 Die Rendite ist der eigentliche Grund, warum Anleger die Wartezeit in Kauf nehmen. Bei einem Kurs von knapp 25 Dollar liegt sie bei 6,4 %, der freie Cashflow entspricht fast 12 % des Börsenwerts. Das Management verspricht eine dauerhafte Aktionärsrendite von rund 10 % im Jahr. Bei 6,4 % Dividende müssten dafür Gewinn und Kurs nur um gut 3 % pro Jahr zulegen.
 
-Dagegen steht die Geschichte. Der Umsatz liegt heute niedriger als 2016, die Dividende ist im Zehnjahresschnitt um 4 % pro Jahr geschrumpft, und die Wende hängt an einer zweiten Jahreshälfte 2027, die noch weit entfernt ist. Wer einsteigt, kauft eine hohe, gut gedeckte Ausschüttung, aber keine Dividendenwachstumsaktie. Ob sich das ändert, zeigt die formale Prognose für 2027, die Kraft Heinz mit den Zahlen zum vierten Quartal im Februar vorlegt.
+Dagegen steht die Geschichte. Der Umsatz liegt heute niedriger als 2016. Die Dividende hat Kraft Heinz 2019 auf einen Schlag um gut ein Drittel gekürzt, von 2,50 auf 1,60 Dollar, seitdem ist sie nicht mehr gestiegen. Und die Wende hängt an einer zweiten Jahreshälfte 2027, die noch weit entfernt ist. Wer einsteigt, kauft eine hohe, gut gedeckte Ausschüttung, aber keine Dividendenwachstumsaktie. Ob sich das ändert, zeigt die formale Prognose für 2027, die Kraft Heinz mit den Zahlen zum vierten Quartal im Februar vorlegt.
 
 ## Quellen
 

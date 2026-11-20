@@ -1,19 +1,17 @@
 ---
 title: "Rekord-Börsengang, Chef weg, neue Chipregeln: Die KI-Branche in einer Woche"
 description: "Anthropic sammelt so viel Geld ein wie kein Börsenneuling zuvor, Nvidia schließt die Rückkehr von Jensen Huang aus, AMD gerät unter Beschuss, und Washington zieht die Exportregeln für Chips deutlich an. Was die Woche für Anleger bedeutet."
-date: 2026-11-21 07:30
+date: 2026-11-20 13:30
 author: "Redaktions-Team Dividenden-Rechner.de"
 author_bio: "Das Redaktions-Team von Dividenden-Rechner.de schreibt über Dividendenaktien, Kennzahlen und Steuerthemen für Privatanleger. Die Rechner und Auswertungen auf der Seite entstehen im eigenen Haus."
 category: Analyse
 kein_logo: ja
-draft: true
 image: https://images.unsplash.com/photo-1506399558188-acca6f8cbf41?ixid=M3wxMTE3OTgzfDB8MXxzZWFyY2h8NHx8ZGF0YSUyMGNlbnRlciUyMHNlcnZlciUyMHJhY2tzfGVufDF8MHx8fDE3OTUxNzMzNzR8MA&ixlib=rb-4.1.0&w=1600&h=900&fit=crop&crop=entropy&q=80&fm=jpg
-image_alt: "Foto zu Rekord-Börsengang,: Data Servers"
+image_alt: "Serverschränke in einem Rechenzentrum"
 image_credit: "Foto: imgix auf Unsplash"
 image_source: https://unsplash.com/photos/server-racks-in-data-center-klWUhr-wPJ8?utm_source=dividenden-rechner&utm_medium=referral
 image_artist_url: https://unsplash.com/@imgix?utm_source=dividenden-rechner&utm_medium=referral
 ---
-<!-- PRÜFEN: Aufmacherfoto über die Unsplash-Anfrage in tools/asset.request (Rechenzentrum oder Chipfertigung); Divi wählt aus. -->
 <!-- PRÜFEN: Anthropic: Ausgabepreis 83 $, 980 Mio. Aktien, rund 81 Mrd. $ Erlös, größter Börsengang der Geschichte, Eröffnung 111,50 $, am Nachmittag 95,69 $, Nvidia-Beteiligungen von zusammen 20 Mrd. $: Al Jazeera/Reuters vom 19.11.2026. Bewertung zum Ausgabepreis rund 1,5 Bio. $: Fortune vom 18.11.2026. Schlusskurs des ersten Handelstags vor Veröffentlichung nachtragen. Umsatz neun Monate 33,2 Mrd. $ aus dem Prospekt laut docs/newsletter-notizen.md. -->
 <!-- PRÜFEN: Nvidia: Rücktritt Huang am 12.11., Begründung Verhaltenskodex, Interimschefin Colette Kress, Zitat Harvey Jones, Huangs Beitrag auf X: TechCrunch vom 17.11.2026. Lieferstopp Hopper/H200 nach China und neuer Ausschuss für nationale Sicherheit: SCMP. Quartalszahlen aus unserem Nvidia-Artikel vom 17.11. Vorwürfe gegen Alice Huang nur als Berichte, umstritten (Fortune). -->
 <!-- PRÜFEN: Exportregel: Interim Final Rule des Handelsministeriums vom 16.11., gültig mit Veröffentlichung im Federal Register am 19.11.; Lizenzpflicht für Indonesien, Malaysia, Singapur, Thailand, Brasilien; Fernzugriff für Firmen mit Sitz in China; 90 Tage Übergang; Ausnahme für US-Firmen bei der Exportlizenz: Fortune vom 16.11. und techi.com vom 17.11. (höchstens 1,3 % des Nvidia-Umsatzes nach Kundensitz, Quartal bis 26.07.2026). Ausweitung auf Fertigungstechnik ab 14/16 Nanometer, TSMC hält Lieferungen zurück, Xiaomi betroffen: Nikkei Asia vom 20.11.2026 (Cheng Ting-Fang), von Divi als Archivkopie geschickt; FT berichtete zuerst über TSMC und Samsung. -->
@@ -54,7 +52,7 @@ Für Nvidia selbst ist der direkte Effekt überschaubar. Kunden mit Sitz außerh
 
 Deutlich breiter treffen die Regeln die Auftragsfertiger. Wie Nikkei Asia am Freitag berichtete, müssen Chipfabriken nun davon ausgehen, dass alle Chips aus Fertigungstechnik ab 14 oder 16 Nanometer der Exportkontrolle unterliegen, es sei denn, der Entwickler steht auf einer Liste der US-Regierung. Das betrifft neben Prozessoren für Rechenzentren auch Chips für Smartphones, autonomes Fahren und Unterhaltungselektronik. TSMC hat Lieferungen an mehrere chinesische und nichtchinesische Kunden vorerst gestoppt, um sie zu prüfen. Betroffen ist unter anderem Xiaomi, das eigene Smartphone-Prozessoren entwickelt. Auch aufstrebende Chipdesign-Standorte wie Vietnam und Malaysia geraten unter Druck.
 
-Warum Washington so weit geht, zeigt ein zweites Thema der Woche: Chinesische Labore nutzen die Antworten amerikanischer KI-Modelle, um eigene Systeme zu trainieren, und holen so trotz fehlender Spitzenchips auf. Wie diese Destillation funktioniert, erklären wir in einer [eigenen Analyse](/news/china-destillation-us-ki-modelle/).
+Warum Washington so weit geht, zeigt ein zweites Thema der Woche: Chinesische Labore nutzen die Antworten amerikanischer KI-Modelle, um eigene Systeme zu trainieren, und holen so trotz fehlender Spitzenchips auf. Wie diese Destillation funktioniert, erklären wir am Wochenende in einer eigenen Analyse.
 
 ## AMD: Vom sicheren Hafen zur Zielscheibe
 
@@ -64,11 +62,7 @@ Nach Huangs Rücktritt hatten viele Anleger in AMD umgeschichtet. Am Donnerstag 
 
 Die Woche lässt zwei Lesarten zu. Für die optimistische spricht, dass die Nachfrage alle Störungen überdeckt. Nvidia wächst trotz Führungskrise mit dreistelligen Raten, und Anleger haben Anthropic mehr Geld anvertraut als jedem Börsenneuling zuvor. Die direkten Umsatzeinbußen durch die neuen Regeln sind für die großen US-Konzerne bisher klein.
 
-Die vorsichtige Lesart verweist auf das, was sich nicht in Quartalszahlen messen lässt. Nvidia sucht einen Nachfolger für einen Gründer, der den Konzern drei Jahrzehnte geprägt hat. Die Exportregeln betreffen inzwischen große Teile der Chipindustrie und können Lieferketten in ganz Asien verzögern. Wer in KI-Werte investiert, trägt damit zunehmend politisches Risiko. Für Dividendenanleger bleibt die Branche ohnehin ein Randthema: Nvidia zahlt nur eine symbolische Dividende, Anthropic und AMD gar keine.
-
-## Was als Nächstes ansteht
-
-In den kommenden Wochen zählt, wie schnell TSMC und andere Fertiger ihre Kunden prüfen und die Lieferungen wieder aufnehmen. Bei Nvidia richtet sich der Blick auf die Suche nach einem neuen Chef und auf die Ergebnisse der internen Untersuchung. Und bei Anthropic zeigt sich nach dem Börsenstart, ob die hohe Bewertung auch dann trägt, wenn die erste Begeisterung verflogen ist.
+Die vorsichtige Lesart verweist auf das, was sich nicht in Quartalszahlen messen lässt. Nvidia sucht einen Nachfolger für einen Gründer, der den Konzern drei Jahrzehnte geprägt hat. Die Exportregeln betreffen inzwischen große Teile der Chipindustrie und können Lieferketten in ganz Asien verzögern. Wer in KI-Werte investiert, trägt damit zunehmend politisches Risiko.
 
 ## Quellen
 

@@ -29,7 +29,8 @@ def main():
     m = re.match(r"^---\s*\n(.*?)\n---\s*\n(.*)$", raw, re.S)
     head, body = m.group(1), m.group(2)
     vorhanden = re.search(r"^image:\s*(\S.*?)\s*$", head, re.M)
-    if vorhanden and os.path.exists(vorhanden.group(1)) and not a.force:
+    # Bild vorhanden: eigene Datei oder eingetragene Adresse (z. B. Unsplash). Dann nie neu suchen, ausser mit --force.
+    if vorhanden and (vorhanden.group(1).strip('"').startswith("http") or os.path.exists(vorhanden.group(1))) and not a.force:
         print(f"Bild vorhanden ({vorhanden.group(1)}), keine neue Suche. Mit --force erzwingen.")
         return
     name = (re.search(r'^logo_name:\s*"?(.*?)"?\s*$', head, re.M) or re.search(r'^title:\s*"?(\S+)', head, re.M)).group(1)
