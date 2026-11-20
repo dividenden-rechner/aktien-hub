@@ -1,0 +1,1382 @@
+{
+ "beschreibung": "Freigabe kostenloser Daten: nur aktuelle Dividende, Ausschüttungsquote (Payout Ratio) und KGV, nur für diese Firmen. Alles andere ist Bezahlbereich.",
+ "felder_frei": [
+  "dividende",
+  "ausschuettung",
+  "kgv"
+ ],
+ "auswahlregeln": {
+  "dividend_king_50_jahre": "serie.jahre >= 50 in data/dividendenseiten.json (Beleg: Unternehmensquelle je Firma)",
+  "sp500_dividend_aristocrat": "Mitgliedschaft laut Text/Beleg in data/dividendenseiten.json",
+  "top_us_boersenwert": "20 größte US-Dividendenzahler mit US-ISIN nach boersenwert_eur in data/kennzahlen.json (nicht schon enthalten); je Unternehmen nur eine Aktiengattung (GOOGL statt GOOG)",
+  "europa_top50_*": "je Land die größten Dividendenzahler nach boersenwert_eur (DE 17, FR 17, GB 16)"
+ },
+ "stand": "2026-11-18",
+ "firmen": [
+  {
+   "sym": "AAPL",
+   "name": "Apple Inc.",
+   "gruende": [
+    "top_us_boersenwert"
+   ],
+   "beleg": null,
+   "serie_jahre": null
+  },
+  {
+   "sym": "ABBV",
+   "name": "AbbVie",
+   "gruende": [
+    "dividend_king_50_jahre",
+    "sp500_dividend_aristocrat"
+   ],
+   "beleg": "https://www.kiplinger.com/slideshow/investing/T018-S003-best-dividend-stocks-for-bear-markets/index.html",
+   "serie_jahre": 54
+  },
+  {
+   "sym": "ABT",
+   "name": "Abbott",
+   "gruende": [
+    "dividend_king_50_jahre",
+    "sp500_dividend_aristocrat"
+   ],
+   "beleg": "https://www.kiplinger.com/slideshow/investing/T018-S003-best-dividend-stocks-for-bear-markets/index.html",
+   "serie_jahre": 54
+  },
+  {
+   "sym": "ACA.PA",
+   "name": "Crédit Agricole",
+   "gruende": [
+    "europa_top50_fr"
+   ],
+   "beleg": null,
+   "serie_jahre": null
+  },
+  {
+   "sym": "ADM",
+   "name": "Archer-Daniels-Midland",
+   "gruende": [
+    "dividend_king_50_jahre",
+    "sp500_dividend_aristocrat"
+   ],
+   "beleg": "https://www.kiplinger.com/slideshow/investing/T018-S003-best-dividend-stocks-for-bear-markets/index.html",
+   "serie_jahre": 53
+  },
+  {
+   "sym": "ADP",
+   "name": "Automatic Data Processing",
+   "gruende": [
+    "dividend_king_50_jahre",
+    "sp500_dividend_aristocrat"
+   ],
+   "beleg": "https://www.kiplinger.com/slideshow/investing/T018-S003-best-dividend-stocks-for-bear-markets/index.html",
+   "serie_jahre": 51
+  },
+  {
+   "sym": "AFL",
+   "name": "Aflac",
+   "gruende": [
+    "sp500_dividend_aristocrat"
+   ],
+   "beleg": "https://www.kiplinger.com/slideshow/investing/T018-S003-best-dividend-stocks-for-bear-markets/index.html",
+   "serie_jahre": 43
+  },
+  {
+   "sym": "AI.PA",
+   "name": "Air Liquide",
+   "gruende": [
+    "europa_top50_fr"
+   ],
+   "beleg": null,
+   "serie_jahre": null
+  },
+  {
+   "sym": "AIR.PA",
+   "name": "Airbus",
+   "gruende": [
+    "europa_top50_fr"
+   ],
+   "beleg": null,
+   "serie_jahre": null
+  },
+  {
+   "sym": "ALB",
+   "name": "Albemarle",
+   "gruende": [
+    "sp500_dividend_aristocrat"
+   ],
+   "beleg": "https://www.kiplinger.com/slideshow/investing/T018-S003-best-dividend-stocks-for-bear-markets/index.html",
+   "serie_jahre": 30
+  },
+  {
+   "sym": "ALV.DE",
+   "name": "Allianz",
+   "gruende": [
+    "europa_top50_de"
+   ],
+   "beleg": null,
+   "serie_jahre": null
+  },
+  {
+   "sym": "AOS",
+   "name": "A.O. Smith",
+   "gruende": [
+    "sp500_dividend_aristocrat"
+   ],
+   "beleg": "https://www.kiplinger.com/slideshow/investing/T018-S003-best-dividend-stocks-for-bear-markets/index.html",
+   "serie_jahre": 32
+  },
+  {
+   "sym": "APD",
+   "name": "Air Products",
+   "gruende": [
+    "sp500_dividend_aristocrat"
+   ],
+   "beleg": "https://www.kiplinger.com/slideshow/investing/T018-S003-best-dividend-stocks-for-bear-markets/index.html",
+   "serie_jahre": 44
+  },
+  {
+   "sym": "ATO",
+   "name": "Atmos Energy",
+   "gruende": [
+    "sp500_dividend_aristocrat"
+   ],
+   "beleg": "https://www.kiplinger.com/slideshow/investing/T018-S003-best-dividend-stocks-for-bear-markets/index.html",
+   "serie_jahre": 42
+  },
+  {
+   "sym": "AVGO",
+   "name": "Broadcom Inc.",
+   "gruende": [
+    "top_us_boersenwert"
+   ],
+   "beleg": null,
+   "serie_jahre": null
+  },
+  {
+   "sym": "AWR",
+   "name": "American States Water",
+   "gruende": [
+    "dividend_king_50_jahre"
+   ],
+   "beleg": null,
+   "serie_jahre": 71
+  },
+  {
+   "sym": "AZN.L",
+   "name": "AstraZeneca",
+   "gruende": [
+    "europa_top50_gb"
+   ],
+   "beleg": null,
+   "serie_jahre": null
+  },
+  {
+   "sym": "BA.L",
+   "name": "BAE Systems",
+   "gruende": [
+    "europa_top50_gb"
+   ],
+   "beleg": null,
+   "serie_jahre": null
+  },
+  {
+   "sym": "BAC",
+   "name": "BofA Finance LLC",
+   "gruende": [
+    "top_us_boersenwert"
+   ],
+   "beleg": null,
+   "serie_jahre": null
+  },
+  {
+   "sym": "BAS.DE",
+   "name": "BASF",
+   "gruende": [
+    "europa_top50_de"
+   ],
+   "beleg": null,
+   "serie_jahre": null
+  },
+  {
+   "sym": "BATS.L",
+   "name": "British American Tobacco",
+   "gruende": [
+    "europa_top50_gb"
+   ],
+   "beleg": null,
+   "serie_jahre": null
+  },
+  {
+   "sym": "BAYN.DE",
+   "name": "Bayer",
+   "gruende": [
+    "europa_top50_de"
+   ],
+   "beleg": null,
+   "serie_jahre": null
+  },
+  {
+   "sym": "BDX",
+   "name": "Becton Dickinson",
+   "gruende": [
+    "dividend_king_50_jahre",
+    "sp500_dividend_aristocrat"
+   ],
+   "beleg": "https://www.kiplinger.com/slideshow/investing/T018-S003-best-dividend-stocks-for-bear-markets/index.html",
+   "serie_jahre": 54
+  },
+  {
+   "sym": "BEN",
+   "name": "Franklin Resources",
+   "gruende": [
+    "sp500_dividend_aristocrat"
+   ],
+   "beleg": "https://www.kiplinger.com/slideshow/investing/T018-S003-best-dividend-stocks-for-bear-markets/index.html",
+   "serie_jahre": 45
+  },
+  {
+   "sym": "BF-B",
+   "name": "Brown-Forman",
+   "gruende": [
+    "sp500_dividend_aristocrat"
+   ],
+   "beleg": "https://www.kiplinger.com/slideshow/investing/T018-S003-best-dividend-stocks-for-bear-markets/index.html",
+   "serie_jahre": 42
+  },
+  {
+   "sym": "BKH",
+   "name": "Black Hills",
+   "gruende": [
+    "dividend_king_50_jahre"
+   ],
+   "beleg": null,
+   "serie_jahre": 56
+  },
+  {
+   "sym": "BN.PA",
+   "name": "Danone",
+   "gruende": [
+    "europa_top50_fr"
+   ],
+   "beleg": null,
+   "serie_jahre": null
+  },
+  {
+   "sym": "BNP.PA",
+   "name": "BNP Paribas",
+   "gruende": [
+    "europa_top50_fr"
+   ],
+   "beleg": null,
+   "serie_jahre": null
+  },
+  {
+   "sym": "BP.L",
+   "name": "BP",
+   "gruende": [
+    "europa_top50_gb"
+   ],
+   "beleg": null,
+   "serie_jahre": null
+  },
+  {
+   "sym": "BRO",
+   "name": "Brown & Brown",
+   "gruende": [
+    "sp500_dividend_aristocrat"
+   ],
+   "beleg": "https://www.kiplinger.com/slideshow/investing/T018-S003-best-dividend-stocks-for-bear-markets/index.html",
+   "serie_jahre": 32
+  },
+  {
+   "sym": "CAH",
+   "name": "Cardinal Health",
+   "gruende": [
+    "sp500_dividend_aristocrat"
+   ],
+   "beleg": "https://www.kiplinger.com/slideshow/investing/T018-S003-best-dividend-stocks-for-bear-markets/index.html",
+   "serie_jahre": 30
+  },
+  {
+   "sym": "CAT",
+   "name": "Caterpillar",
+   "gruende": [
+    "sp500_dividend_aristocrat"
+   ],
+   "beleg": "https://www.kiplinger.com/slideshow/investing/T018-S003-best-dividend-stocks-for-bear-markets/index.html",
+   "serie_jahre": 32
+  },
+  {
+   "sym": "CB",
+   "name": "Chubb",
+   "gruende": [
+    "sp500_dividend_aristocrat"
+   ],
+   "beleg": "https://www.kiplinger.com/slideshow/investing/T018-S003-best-dividend-stocks-for-bear-markets/index.html",
+   "serie_jahre": 33
+  },
+  {
+   "sym": "CBK.DE",
+   "name": "Commerzbank",
+   "gruende": [
+    "europa_top50_de"
+   ],
+   "beleg": null,
+   "serie_jahre": null
+  },
+  {
+   "sym": "CBSH",
+   "name": "Commerce Bancshares",
+   "gruende": [
+    "dividend_king_50_jahre"
+   ],
+   "beleg": null,
+   "serie_jahre": 58
+  },
+  {
+   "sym": "CHD",
+   "name": "Church & Dwight",
+   "gruende": [
+    "sp500_dividend_aristocrat"
+   ],
+   "beleg": "https://www.kiplinger.com/slideshow/investing/T018-S003-best-dividend-stocks-for-bear-markets/index.html",
+   "serie_jahre": 30
+  },
+  {
+   "sym": "CHRW",
+   "name": "C.H. Robinson",
+   "gruende": [
+    "sp500_dividend_aristocrat"
+   ],
+   "beleg": "https://www.kiplinger.com/slideshow/investing/T018-S003-best-dividend-stocks-for-bear-markets/index.html",
+   "serie_jahre": 28
+  },
+  {
+   "sym": "CINF",
+   "name": "Cincinnati Financial",
+   "gruende": [
+    "dividend_king_50_jahre",
+    "sp500_dividend_aristocrat"
+   ],
+   "beleg": "https://www.kiplinger.com/slideshow/investing/T018-S003-best-dividend-stocks-for-bear-markets/index.html",
+   "serie_jahre": 66
+  },
+  {
+   "sym": "CL",
+   "name": "Colgate-Palmolive",
+   "gruende": [
+    "dividend_king_50_jahre",
+    "sp500_dividend_aristocrat"
+   ],
+   "beleg": "https://www.kiplinger.com/slideshow/investing/T018-S003-best-dividend-stocks-for-bear-markets/index.html",
+   "serie_jahre": 64
+  },
+  {
+   "sym": "CLX",
+   "name": "Clorox",
+   "gruende": [
+    "sp500_dividend_aristocrat"
+   ],
+   "beleg": "https://www.kiplinger.com/slideshow/investing/T018-S003-best-dividend-stocks-for-bear-markets/index.html",
+   "serie_jahre": 49
+  },
+  {
+   "sym": "COST",
+   "name": "COSTCO WHOLESALE CORP /NEW",
+   "gruende": [
+    "top_us_boersenwert"
+   ],
+   "beleg": null,
+   "serie_jahre": null
+  },
+  {
+   "sym": "CPG.L",
+   "name": "Compass Group",
+   "gruende": [
+    "europa_top50_gb"
+   ],
+   "beleg": null,
+   "serie_jahre": null
+  },
+  {
+   "sym": "CS.PA",
+   "name": "AXA",
+   "gruende": [
+    "europa_top50_fr"
+   ],
+   "beleg": null,
+   "serie_jahre": null
+  },
+  {
+   "sym": "CSCO",
+   "name": "CISCO SYSTEMS, INC.",
+   "gruende": [
+    "top_us_boersenwert"
+   ],
+   "beleg": null,
+   "serie_jahre": null
+  },
+  {
+   "sym": "CTAS",
+   "name": "Cintas",
+   "gruende": [
+    "sp500_dividend_aristocrat"
+   ],
+   "beleg": "https://www.kiplinger.com/slideshow/investing/T018-S003-best-dividend-stocks-for-bear-markets/index.html",
+   "serie_jahre": 44
+  },
+  {
+   "sym": "CVX",
+   "name": "Chevron Corp",
+   "gruende": [
+    "top_us_boersenwert"
+   ],
+   "beleg": null,
+   "serie_jahre": null
+  },
+  {
+   "sym": "CWT",
+   "name": "California Water Service",
+   "gruende": [
+    "dividend_king_50_jahre"
+   ],
+   "beleg": null,
+   "serie_jahre": 59
+  },
+  {
+   "sym": "DB1.DE",
+   "name": "Deutsche Börse",
+   "gruende": [
+    "europa_top50_de"
+   ],
+   "beleg": null,
+   "serie_jahre": null
+  },
+  {
+   "sym": "DBK.DE",
+   "name": "Deutsche Bank",
+   "gruende": [
+    "europa_top50_de"
+   ],
+   "beleg": null,
+   "serie_jahre": null
+  },
+  {
+   "sym": "DG.PA",
+   "name": "Vinci",
+   "gruende": [
+    "europa_top50_fr"
+   ],
+   "beleg": null,
+   "serie_jahre": null
+  },
+  {
+   "sym": "DHL.DE",
+   "name": "DHL Group",
+   "gruende": [
+    "europa_top50_de"
+   ],
+   "beleg": null,
+   "serie_jahre": null
+  },
+  {
+   "sym": "DOV",
+   "name": "Dover",
+   "gruende": [
+    "dividend_king_50_jahre",
+    "sp500_dividend_aristocrat"
+   ],
+   "beleg": "https://www.kiplinger.com/slideshow/investing/T018-S003-best-dividend-stocks-for-bear-markets/index.html",
+   "serie_jahre": 71
+  },
+  {
+   "sym": "DTE.DE",
+   "name": "Deutsche Telekom",
+   "gruende": [
+    "europa_top50_de"
+   ],
+   "beleg": null,
+   "serie_jahre": null
+  },
+  {
+   "sym": "ECL",
+   "name": "Ecolab",
+   "gruende": [
+    "sp500_dividend_aristocrat"
+   ],
+   "beleg": "https://www.kiplinger.com/slideshow/investing/T018-S003-best-dividend-stocks-for-bear-markets/index.html",
+   "serie_jahre": 34
+  },
+  {
+   "sym": "ED",
+   "name": "Consolidated Edison",
+   "gruende": [
+    "dividend_king_50_jahre"
+   ],
+   "beleg": "https://investor.conedison.com/news-releases/news-release-details/con-edison-declares-common-stock-dividend-70",
+   "serie_jahre": 52
+  },
+  {
+   "sym": "EL.PA",
+   "name": "EssilorLuxottica",
+   "gruende": [
+    "europa_top50_fr"
+   ],
+   "beleg": null,
+   "serie_jahre": null
+  },
+  {
+   "sym": "EMR",
+   "name": "Emerson Electric",
+   "gruende": [
+    "dividend_king_50_jahre",
+    "sp500_dividend_aristocrat"
+   ],
+   "beleg": "https://www.kiplinger.com/slideshow/investing/T018-S003-best-dividend-stocks-for-bear-markets/index.html",
+   "serie_jahre": 70
+  },
+  {
+   "sym": "ENGI.PA",
+   "name": "Engie",
+   "gruende": [
+    "europa_top50_fr"
+   ],
+   "beleg": null,
+   "serie_jahre": null
+  },
+  {
+   "sym": "ENR.DE",
+   "name": "Siemens Energy",
+   "gruende": [
+    "europa_top50_de"
+   ],
+   "beleg": null,
+   "serie_jahre": null
+  },
+  {
+   "sym": "EOAN.DE",
+   "name": "E.ON",
+   "gruende": [
+    "europa_top50_de"
+   ],
+   "beleg": null,
+   "serie_jahre": null
+  },
+  {
+   "sym": "ES",
+   "name": "Eversource Energy",
+   "gruende": [
+    "sp500_dividend_aristocrat"
+   ],
+   "beleg": "https://www.kiplinger.com/slideshow/investing/T018-S003-best-dividend-stocks-for-bear-markets/index.html",
+   "serie_jahre": 27
+  },
+  {
+   "sym": "ESS",
+   "name": "Essex Property Trust",
+   "gruende": [
+    "sp500_dividend_aristocrat"
+   ],
+   "beleg": "https://www.kiplinger.com/slideshow/investing/T018-S003-best-dividend-stocks-for-bear-markets/index.html",
+   "serie_jahre": 32
+  },
+  {
+   "sym": "EXPD",
+   "name": "Expeditors International",
+   "gruende": [
+    "sp500_dividend_aristocrat"
+   ],
+   "beleg": "https://www.kiplinger.com/slideshow/investing/T018-S003-best-dividend-stocks-for-bear-markets/index.html",
+   "serie_jahre": 32
+  },
+  {
+   "sym": "FAST",
+   "name": "Fastenal",
+   "gruende": [
+    "sp500_dividend_aristocrat"
+   ],
+   "beleg": "https://www.kiplinger.com/slideshow/investing/T018-S003-best-dividend-stocks-for-bear-markets/index.html",
+   "serie_jahre": 27
+  },
+  {
+   "sym": "FRT",
+   "name": "Federal Realty",
+   "gruende": [
+    "dividend_king_50_jahre",
+    "sp500_dividend_aristocrat"
+   ],
+   "beleg": "https://www.kiplinger.com/slideshow/investing/T018-S003-best-dividend-stocks-for-bear-markets/index.html",
+   "serie_jahre": 59
+  },
+  {
+   "sym": "FUL",
+   "name": "H.B. Fuller",
+   "gruende": [
+    "dividend_king_50_jahre"
+   ],
+   "beleg": null,
+   "serie_jahre": 57
+  },
+  {
+   "sym": "GE",
+   "name": "GENERAL ELECTRIC COMPANY",
+   "gruende": [
+    "top_us_boersenwert"
+   ],
+   "beleg": null,
+   "serie_jahre": null
+  },
+  {
+   "sym": "GLE.PA",
+   "name": "Société Générale",
+   "gruende": [
+    "europa_top50_fr"
+   ],
+   "beleg": null,
+   "serie_jahre": null
+  },
+  {
+   "sym": "GLEN.L",
+   "name": "Glencore",
+   "gruende": [
+    "europa_top50_gb"
+   ],
+   "beleg": null,
+   "serie_jahre": null
+  },
+  {
+   "sym": "GOOGL",
+   "name": "Alphabet Inc.",
+   "gruende": [
+    "top_us_boersenwert"
+   ],
+   "beleg": null,
+   "serie_jahre": null
+  },
+  {
+   "sym": "GPC",
+   "name": "Genuine Parts",
+   "gruende": [
+    "dividend_king_50_jahre",
+    "sp500_dividend_aristocrat"
+   ],
+   "beleg": "https://www.kiplinger.com/slideshow/investing/T018-S003-best-dividend-stocks-for-bear-markets/index.html",
+   "serie_jahre": 70
+  },
+  {
+   "sym": "GSK.L",
+   "name": "GSK",
+   "gruende": [
+    "europa_top50_gb"
+   ],
+   "beleg": null,
+   "serie_jahre": null
+  },
+  {
+   "sym": "GWW",
+   "name": "W.W. Grainger",
+   "gruende": [
+    "dividend_king_50_jahre",
+    "sp500_dividend_aristocrat"
+   ],
+   "beleg": "https://www.kiplinger.com/slideshow/investing/T018-S003-best-dividend-stocks-for-bear-markets/index.html",
+   "serie_jahre": 55
+  },
+  {
+   "sym": "HD",
+   "name": "The Home Depot, Inc.",
+   "gruende": [
+    "top_us_boersenwert"
+   ],
+   "beleg": null,
+   "serie_jahre": null
+  },
+  {
+   "sym": "HO.PA",
+   "name": "Thales",
+   "gruende": [
+    "europa_top50_fr"
+   ],
+   "beleg": null,
+   "serie_jahre": null
+  },
+  {
+   "sym": "HRL",
+   "name": "Hormel Foods",
+   "gruende": [
+    "dividend_king_50_jahre",
+    "sp500_dividend_aristocrat"
+   ],
+   "beleg": "https://www.kiplinger.com/slideshow/investing/T018-S003-best-dividend-stocks-for-bear-markets/index.html",
+   "serie_jahre": 60
+  },
+  {
+   "sym": "HTO",
+   "name": "H2O America",
+   "gruende": [
+    "dividend_king_50_jahre"
+   ],
+   "beleg": null,
+   "serie_jahre": 59
+  },
+  {
+   "sym": "IBM",
+   "name": "IBM",
+   "gruende": [
+    "sp500_dividend_aristocrat"
+   ],
+   "beleg": "https://www.kiplinger.com/slideshow/investing/T018-S003-best-dividend-stocks-for-bear-markets/index.html",
+   "serie_jahre": 31
+  },
+  {
+   "sym": "IFX.DE",
+   "name": "Infineon",
+   "gruende": [
+    "europa_top50_de"
+   ],
+   "beleg": null,
+   "serie_jahre": null
+  },
+  {
+   "sym": "ITW",
+   "name": "Illinois Tool Works",
+   "gruende": [
+    "dividend_king_50_jahre",
+    "sp500_dividend_aristocrat"
+   ],
+   "beleg": "https://www.kiplinger.com/slideshow/investing/T018-S003-best-dividend-stocks-for-bear-markets/index.html",
+   "serie_jahre": 55
+  },
+  {
+   "sym": "JNJ",
+   "name": "Johnson & Johnson",
+   "gruende": [
+    "dividend_king_50_jahre"
+   ],
+   "beleg": "https://www.jnj.com/media-center/press-releases/johnson-johnson-announces-64th-consecutive-year-of-dividend-increase-raises-quarterly-dividend-by-3-1",
+   "serie_jahre": 64
+  },
+  {
+   "sym": "JPM",
+   "name": "JPMORGAN CHASE & CO",
+   "gruende": [
+    "top_us_boersenwert"
+   ],
+   "beleg": null,
+   "serie_jahre": null
+  },
+  {
+   "sym": "KMB",
+   "name": "Kimberly-Clark",
+   "gruende": [
+    "dividend_king_50_jahre",
+    "sp500_dividend_aristocrat"
+   ],
+   "beleg": "https://www.kiplinger.com/slideshow/investing/T018-S003-best-dividend-stocks-for-bear-markets/index.html",
+   "serie_jahre": 54
+  },
+  {
+   "sym": "KO",
+   "name": "Coca-Cola",
+   "gruende": [
+    "dividend_king_50_jahre"
+   ],
+   "beleg": "https://in.marketscreener.com/news/the-coca-cola-company-increases-the-quarterly-dividend-payable-on-april-1-2026-ce7e5ddcde89f421",
+   "serie_jahre": 64
+  },
+  {
+   "sym": "LIN",
+   "name": "Linde",
+   "gruende": [
+    "sp500_dividend_aristocrat"
+   ],
+   "beleg": "https://www.kiplinger.com/slideshow/investing/T018-S003-best-dividend-stocks-for-bear-markets/index.html",
+   "serie_jahre": 33
+  },
+  {
+   "sym": "LLOY.L",
+   "name": "Lloyds Banking Group",
+   "gruende": [
+    "europa_top50_gb"
+   ],
+   "beleg": null,
+   "serie_jahre": null
+  },
+  {
+   "sym": "LLY",
+   "name": "ELI LILLY AND COMPANY",
+   "gruende": [
+    "top_us_boersenwert"
+   ],
+   "beleg": null,
+   "serie_jahre": null
+  },
+  {
+   "sym": "LOW",
+   "name": "Lowe's",
+   "gruende": [
+    "dividend_king_50_jahre",
+    "sp500_dividend_aristocrat"
+   ],
+   "beleg": "https://www.kiplinger.com/slideshow/investing/T018-S003-best-dividend-stocks-for-bear-markets/index.html",
+   "serie_jahre": 52
+  },
+  {
+   "sym": "LSEG.L",
+   "name": "London Stock Exchange Group",
+   "gruende": [
+    "europa_top50_gb"
+   ],
+   "beleg": null,
+   "serie_jahre": null
+  },
+  {
+   "sym": "MA",
+   "name": "Mastercard Incorporated",
+   "gruende": [
+    "top_us_boersenwert"
+   ],
+   "beleg": null,
+   "serie_jahre": null
+  },
+  {
+   "sym": "MC.PA",
+   "name": "LVMH",
+   "gruende": [
+    "europa_top50_fr"
+   ],
+   "beleg": null,
+   "serie_jahre": null
+  },
+  {
+   "sym": "MCD",
+   "name": "McDonald's",
+   "gruende": [
+    "dividend_king_50_jahre"
+   ],
+   "beleg": "https://finviz.com/news/393398/mcdonalds-marks-50-consecutive-years-of-dividend-increases-joining-the-ranks-of-dividend-kings",
+   "serie_jahre": 50
+  },
+  {
+   "sym": "MDT",
+   "name": "Medtronic",
+   "gruende": [
+    "sp500_dividend_aristocrat"
+   ],
+   "beleg": "https://www.kiplinger.com/slideshow/investing/T018-S003-best-dividend-stocks-for-bear-markets/index.html",
+   "serie_jahre": 49
+  },
+  {
+   "sym": "META",
+   "name": "Meta Platforms, Inc.",
+   "gruende": [
+    "top_us_boersenwert"
+   ],
+   "beleg": null,
+   "serie_jahre": null
+  },
+  {
+   "sym": "MGEE",
+   "name": "MGE Energy",
+   "gruende": [
+    "dividend_king_50_jahre"
+   ],
+   "beleg": null,
+   "serie_jahre": 50
+  },
+  {
+   "sym": "MKC",
+   "name": "McCormick",
+   "gruende": [
+    "sp500_dividend_aristocrat"
+   ],
+   "beleg": "https://www.kiplinger.com/slideshow/investing/T018-S003-best-dividend-stocks-for-bear-markets/index.html",
+   "serie_jahre": 40
+  },
+  {
+   "sym": "MO",
+   "name": "Altria",
+   "gruende": [
+    "dividend_king_50_jahre"
+   ],
+   "beleg": "https://kalkine.com/news/dividend-stocks/altria-dividend-rises-47-to-111-yielding-644",
+   "serie_jahre": 57
+  },
+  {
+   "sym": "MRK",
+   "name": "Merck & Co., Inc.",
+   "gruende": [
+    "top_us_boersenwert"
+   ],
+   "beleg": null,
+   "serie_jahre": null
+  },
+  {
+   "sym": "MRK.DE",
+   "name": "Merck KGaA",
+   "gruende": [
+    "europa_top50_de"
+   ],
+   "beleg": null,
+   "serie_jahre": null
+  },
+  {
+   "sym": "MSA",
+   "name": "MSA Safety",
+   "gruende": [
+    "dividend_king_50_jahre"
+   ],
+   "beleg": null,
+   "serie_jahre": 55
+  },
+  {
+   "sym": "MSFT",
+   "name": "MICROSOFT CORP",
+   "gruende": [
+    "top_us_boersenwert"
+   ],
+   "beleg": null,
+   "serie_jahre": null
+  },
+  {
+   "sym": "MU",
+   "name": "Micron Technology, Inc.",
+   "gruende": [
+    "top_us_boersenwert"
+   ],
+   "beleg": null,
+   "serie_jahre": null
+  },
+  {
+   "sym": "MUV2.DE",
+   "name": "Munich Re",
+   "gruende": [
+    "europa_top50_de"
+   ],
+   "beleg": null,
+   "serie_jahre": null
+  },
+  {
+   "sym": "MZTI",
+   "name": "Marzetti",
+   "gruende": [
+    "dividend_king_50_jahre"
+   ],
+   "beleg": null,
+   "serie_jahre": 63
+  },
+  {
+   "sym": "NDSN",
+   "name": "Nordson",
+   "gruende": [
+    "dividend_king_50_jahre",
+    "sp500_dividend_aristocrat"
+   ],
+   "beleg": "https://www.kiplinger.com/slideshow/investing/T018-S003-best-dividend-stocks-for-bear-markets/index.html",
+   "serie_jahre": 63
+  },
+  {
+   "sym": "NEE",
+   "name": "NextEra Energy",
+   "gruende": [
+    "sp500_dividend_aristocrat"
+   ],
+   "beleg": "https://www.kiplinger.com/slideshow/investing/T018-S003-best-dividend-stocks-for-bear-markets/index.html",
+   "serie_jahre": 32
+  },
+  {
+   "sym": "NFG",
+   "name": "National Fuel Gas",
+   "gruende": [
+    "dividend_king_50_jahre"
+   ],
+   "beleg": null,
+   "serie_jahre": 56
+  },
+  {
+   "sym": "NG.L",
+   "name": "National Grid",
+   "gruende": [
+    "europa_top50_gb"
+   ],
+   "beleg": null,
+   "serie_jahre": null
+  },
+  {
+   "sym": "NUE",
+   "name": "Nucor",
+   "gruende": [
+    "dividend_king_50_jahre",
+    "sp500_dividend_aristocrat"
+   ],
+   "beleg": "https://www.kiplinger.com/slideshow/investing/T018-S003-best-dividend-stocks-for-bear-markets/index.html",
+   "serie_jahre": 53
+  },
+  {
+   "sym": "NVDA",
+   "name": "NVIDIA CORP",
+   "gruende": [
+    "top_us_boersenwert"
+   ],
+   "beleg": null,
+   "serie_jahre": null
+  },
+  {
+   "sym": "NWG.L",
+   "name": "NatWest",
+   "gruende": [
+    "europa_top50_gb"
+   ],
+   "beleg": null,
+   "serie_jahre": null
+  },
+  {
+   "sym": "NWN",
+   "name": "Northwest Natural Holdings",
+   "gruende": [
+    "dividend_king_50_jahre"
+   ],
+   "beleg": null,
+   "serie_jahre": 70
+  },
+  {
+   "sym": "O",
+   "name": "Realty Income",
+   "gruende": [
+    "sp500_dividend_aristocrat"
+   ],
+   "beleg": "https://www.realtyincome.com/investors/press-releases/136th-common-stock-monthly-dividend-increase-declared-realty-income",
+   "serie_jahre": 32
+  },
+  {
+   "sym": "OR.PA",
+   "name": "L'Oréal",
+   "gruende": [
+    "europa_top50_fr"
+   ],
+   "beleg": null,
+   "serie_jahre": null
+  },
+  {
+   "sym": "ORCL",
+   "name": "ORACLE CORP",
+   "gruende": [
+    "top_us_boersenwert"
+   ],
+   "beleg": null,
+   "serie_jahre": null
+  },
+  {
+   "sym": "P911.DE",
+   "name": "Porsche AG Vz",
+   "gruende": [
+    "europa_top50_de"
+   ],
+   "beleg": null,
+   "serie_jahre": null
+  },
+  {
+   "sym": "PEP",
+   "name": "PepsiCo",
+   "gruende": [
+    "dividend_king_50_jahre"
+   ],
+   "beleg": "https://www.pepsico.com/newsroom/press-releases/2026/pepsico-declares-quarterly-dividend",
+   "serie_jahre": 54
+  },
+  {
+   "sym": "PG",
+   "name": "Procter & Gamble",
+   "gruende": [
+    "dividend_king_50_jahre"
+   ],
+   "beleg": "https://www.sec.gov/Archives/edgar/data/80424/000008042426000048/pgdividendreleaseapril2026.htm",
+   "serie_jahre": 70
+  },
+  {
+   "sym": "PH",
+   "name": "Parker-Hannifin",
+   "gruende": [
+    "dividend_king_50_jahre"
+   ],
+   "beleg": null,
+   "serie_jahre": 70
+  },
+  {
+   "sym": "PM",
+   "name": "Philip Morris International Inc.",
+   "gruende": [
+    "top_us_boersenwert"
+   ],
+   "beleg": null,
+   "serie_jahre": null
+  },
+  {
+   "sym": "PPG",
+   "name": "PPG Industries",
+   "gruende": [
+    "dividend_king_50_jahre",
+    "sp500_dividend_aristocrat"
+   ],
+   "beleg": "https://www.kiplinger.com/slideshow/investing/T018-S003-best-dividend-stocks-for-bear-markets/index.html",
+   "serie_jahre": 56
+  },
+  {
+   "sym": "REL.L",
+   "name": "RELX",
+   "gruende": [
+    "europa_top50_gb"
+   ],
+   "beleg": null,
+   "serie_jahre": null
+  },
+  {
+   "sym": "RIO.L",
+   "name": "Rio Tinto",
+   "gruende": [
+    "europa_top50_gb"
+   ],
+   "beleg": null,
+   "serie_jahre": null
+  },
+  {
+   "sym": "RMS.PA",
+   "name": "Hermès",
+   "gruende": [
+    "europa_top50_fr"
+   ],
+   "beleg": null,
+   "serie_jahre": null
+  },
+  {
+   "sym": "ROP",
+   "name": "Roper Technologies",
+   "gruende": [
+    "sp500_dividend_aristocrat"
+   ],
+   "beleg": "https://www.kiplinger.com/slideshow/investing/T018-S003-best-dividend-stocks-for-bear-markets/index.html",
+   "serie_jahre": 33
+  },
+  {
+   "sym": "RR.L",
+   "name": "Rolls-Royce Holdings",
+   "gruende": [
+    "europa_top50_gb"
+   ],
+   "beleg": null,
+   "serie_jahre": null
+  },
+  {
+   "sym": "RWE.DE",
+   "name": "RWE",
+   "gruende": [
+    "europa_top50_de"
+   ],
+   "beleg": null,
+   "serie_jahre": null
+  },
+  {
+   "sym": "SAF.PA",
+   "name": "Safran",
+   "gruende": [
+    "europa_top50_fr"
+   ],
+   "beleg": null,
+   "serie_jahre": null
+  },
+  {
+   "sym": "SAP.DE",
+   "name": "SAP",
+   "gruende": [
+    "europa_top50_de"
+   ],
+   "beleg": null,
+   "serie_jahre": null
+  },
+  {
+   "sym": "SCL",
+   "name": "Stepan",
+   "gruende": [
+    "dividend_king_50_jahre"
+   ],
+   "beleg": null,
+   "serie_jahre": 58
+  },
+  {
+   "sym": "SHEL.L",
+   "name": "Shell",
+   "gruende": [
+    "europa_top50_gb"
+   ],
+   "beleg": null,
+   "serie_jahre": null
+  },
+  {
+   "sym": "SHW",
+   "name": "Sherwin-Williams",
+   "gruende": [
+    "sp500_dividend_aristocrat"
+   ],
+   "beleg": "https://www.kiplinger.com/slideshow/investing/T018-S003-best-dividend-stocks-for-bear-markets/index.html",
+   "serie_jahre": 48
+  },
+  {
+   "sym": "SIE.DE",
+   "name": "Siemens",
+   "gruende": [
+    "europa_top50_de"
+   ],
+   "beleg": null,
+   "serie_jahre": null
+  },
+  {
+   "sym": "SJM",
+   "name": "J.M. Smucker",
+   "gruende": [
+    "sp500_dividend_aristocrat"
+   ],
+   "beleg": "https://www.kiplinger.com/slideshow/investing/T018-S003-best-dividend-stocks-for-bear-markets/index.html",
+   "serie_jahre": 29
+  },
+  {
+   "sym": "SPGI",
+   "name": "S&P Global",
+   "gruende": [
+    "dividend_king_50_jahre",
+    "sp500_dividend_aristocrat"
+   ],
+   "beleg": "https://www.kiplinger.com/slideshow/investing/T018-S003-best-dividend-stocks-for-bear-markets/index.html",
+   "serie_jahre": 53
+  },
+  {
+   "sym": "SU.PA",
+   "name": "Schneider Electric",
+   "gruende": [
+    "europa_top50_fr"
+   ],
+   "beleg": null,
+   "serie_jahre": null
+  },
+  {
+   "sym": "SWK",
+   "name": "Stanley Black & Decker",
+   "gruende": [
+    "dividend_king_50_jahre",
+    "sp500_dividend_aristocrat"
+   ],
+   "beleg": "https://www.kiplinger.com/slideshow/investing/T018-S003-best-dividend-stocks-for-bear-markets/index.html",
+   "serie_jahre": 59
+  },
+  {
+   "sym": "SYY",
+   "name": "Sysco",
+   "gruende": [
+    "dividend_king_50_jahre",
+    "sp500_dividend_aristocrat"
+   ],
+   "beleg": "https://www.kiplinger.com/slideshow/investing/T018-S003-best-dividend-stocks-for-bear-markets/index.html",
+   "serie_jahre": 58
+  },
+  {
+   "sym": "TGT",
+   "name": "Target",
+   "gruende": [
+    "dividend_king_50_jahre",
+    "sp500_dividend_aristocrat"
+   ],
+   "beleg": "https://www.kiplinger.com/slideshow/investing/T018-S003-best-dividend-stocks-for-bear-markets/index.html",
+   "serie_jahre": 56
+  },
+  {
+   "sym": "TNC",
+   "name": "Tennant",
+   "gruende": [
+    "dividend_king_50_jahre"
+   ],
+   "beleg": null,
+   "serie_jahre": 54
+  },
+  {
+   "sym": "TROW",
+   "name": "T. Rowe Price",
+   "gruende": [
+    "sp500_dividend_aristocrat"
+   ],
+   "beleg": "https://www.kiplinger.com/slideshow/investing/T018-S003-best-dividend-stocks-for-bear-markets/index.html",
+   "serie_jahre": 40
+  },
+  {
+   "sym": "TTE.PA",
+   "name": "TotalEnergies",
+   "gruende": [
+    "europa_top50_fr"
+   ],
+   "beleg": null,
+   "serie_jahre": null
+  },
+  {
+   "sym": "UBSI",
+   "name": "United Bankshares",
+   "gruende": [
+    "dividend_king_50_jahre"
+   ],
+   "beleg": null,
+   "serie_jahre": 51
+  },
+  {
+   "sym": "ULVR.L",
+   "name": "Unilever",
+   "gruende": [
+    "europa_top50_gb"
+   ],
+   "beleg": null,
+   "serie_jahre": null
+  },
+  {
+   "sym": "UNH",
+   "name": "UnitedHealth Group Incorporated",
+   "gruende": [
+    "top_us_boersenwert"
+   ],
+   "beleg": null,
+   "serie_jahre": null
+  },
+  {
+   "sym": "UVV",
+   "name": "Universal Corp.",
+   "gruende": [
+    "dividend_king_50_jahre"
+   ],
+   "beleg": null,
+   "serie_jahre": 55
+  },
+  {
+   "sym": "WMT",
+   "name": "Walmart",
+   "gruende": [
+    "dividend_king_50_jahre",
+    "sp500_dividend_aristocrat"
+   ],
+   "beleg": "https://www.kiplinger.com/slideshow/investing/T018-S003-best-dividend-stocks-for-bear-markets/index.html",
+   "serie_jahre": 53
+  },
+  {
+   "sym": "WST",
+   "name": "West Pharmaceutical Services",
+   "gruende": [
+    "sp500_dividend_aristocrat"
+   ],
+   "beleg": "https://www.kiplinger.com/slideshow/investing/T018-S003-best-dividend-stocks-for-bear-markets/index.html",
+   "serie_jahre": 33
+  },
+  {
+   "sym": "XOM",
+   "name": "Exxon Mobil",
+   "gruende": [
+    "sp500_dividend_aristocrat"
+   ],
+   "beleg": "https://www.kiplinger.com/slideshow/investing/T018-S003-best-dividend-stocks-for-bear-markets/index.html",
+   "serie_jahre": 43
+  }
+ ]
+}

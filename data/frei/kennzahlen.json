@@ -1,0 +1,1347 @@
+{
+ "stand": "2026-11-17",
+ "felder": [
+  "dividende",
+  "ausschuettung",
+  "kgv"
+ ],
+ "anzahl": 148,
+ "werte": {
+  "AAPL": {
+   "name": "Apple Inc.",
+   "dividende": 1.08,
+   "ausschuettung": 12.0,
+   "kgv": 39.0,
+   "waehrung": "USD",
+   "datum": "2026-11-17",
+   "gj": "2026"
+  },
+  "ABBV": {
+   "name": "AbbVie",
+   "dividende": 6.92,
+   "ausschuettung": 119.0,
+   "kgv": 50.4,
+   "waehrung": "USD",
+   "datum": "2026-11-17",
+   "gj": "2025"
+  },
+  "ABT": {
+   "name": "Abbott",
+   "dividende": 2.52,
+   "ausschuettung": 94.0,
+   "kgv": 39.5,
+   "waehrung": "USD",
+   "datum": "2026-11-17",
+   "gj": "2025"
+  },
+  "ACA.PA": {
+   "name": "Crédit Agricole",
+   "dividende": 1.13,
+   "ausschuettung": 52.0,
+   "kgv": 7.2,
+   "waehrung": "EUR",
+   "datum": "2026-11-17",
+   "gj": "2025"
+  },
+  "ADM": {
+   "name": "Archer-Daniels-Midland",
+   "dividende": 2.06,
+   "ausschuettung": 40.0,
+   "kgv": 13.7,
+   "waehrung": "USD",
+   "datum": "2026-11-17",
+   "gj": "2025"
+  },
+  "ADP": {
+   "name": "Automatic Data Processing",
+   "dividende": 6.8,
+   "ausschuettung": 60.0,
+   "kgv": 27.4,
+   "waehrung": "USD",
+   "datum": "2026-11-17",
+   "gj": "2026"
+  },
+  "AFL": {
+   "name": "Aflac",
+   "dividende": 2.44,
+   "ausschuettung": 36.0,
+   "kgv": 18.9,
+   "waehrung": "USD",
+   "datum": "2026-11-17",
+   "gj": "2025"
+  },
+  "AI.PA": {
+   "name": "Air Liquide",
+   "dividende": 3.3,
+   "ausschuettung": 58.0,
+   "kgv": 33.4,
+   "waehrung": "EUR",
+   "datum": "2026-11-17",
+   "gj": "2024"
+  },
+  "AIR.PA": {
+   "name": "Airbus",
+   "dividende": 3.2,
+   "ausschuettung": 48.0,
+   "kgv": 30.5,
+   "waehrung": "EUR",
+   "datum": "2026-11-17",
+   "gj": "2025"
+  },
+  "ALB": {
+   "name": "Albemarle",
+   "dividende": 1.625,
+   "ausschuettung": 39.0,
+   "kgv": 21.4,
+   "waehrung": "USD",
+   "datum": "2026-11-17",
+   "gj": "2025"
+  },
+  "ALV.DE": {
+   "name": "Allianz",
+   "dividende": 17.1,
+   "ausschuettung": 60.0,
+   "kgv": 16.5,
+   "waehrung": "EUR",
+   "datum": "2026-11-17",
+   "gj": "2025"
+  },
+  "AOS": {
+   "name": "A.O. Smith",
+   "dividende": 1.44,
+   "ausschuettung": 40.0,
+   "kgv": 17.9,
+   "waehrung": "USD",
+   "datum": "2026-11-17",
+   "gj": "2025"
+  },
+  "APD": {
+   "name": "Air Products",
+   "dividende": 7.2,
+   "ausschuettung": null,
+   "kgv": null,
+   "waehrung": "USD",
+   "datum": "2026-11-17",
+   "gj": "2025"
+  },
+  "ATO": {
+   "name": "Atmos Energy",
+   "dividende": 4,
+   "ausschuettung": 47.0,
+   "kgv": 20.5,
+   "waehrung": "USD",
+   "datum": "2026-11-17",
+   "gj": "2026"
+  },
+  "AVGO": {
+   "name": "Broadcom Inc.",
+   "dividende": 2.36,
+   "ausschuettung": 30.0,
+   "kgv": 42.9,
+   "waehrung": "USD",
+   "datum": "2026-11-17",
+   "gj": "2025"
+  },
+  "AWR": {
+   "name": "American States Water",
+   "dividende": 1.939,
+   "ausschuettung": 53.0,
+   "kgv": 23.8,
+   "waehrung": "USD",
+   "datum": "2026-11-17",
+   "gj": "2025"
+  },
+  "AZN.L": {
+   "name": "AstraZeneca",
+   "dividende": 3.2,
+   "ausschuettung": 49.0,
+   "kgv": 27.7,
+   "waehrung": "USD",
+   "datum": "2026-11-17",
+   "gj": "2025"
+  },
+  "BA.L": {
+   "name": "BAE Systems",
+   "dividende": 0.3387,
+   "ausschuettung": 50.0,
+   "kgv": 27.3,
+   "waehrung": "GBP",
+   "datum": "2026-11-17",
+   "gj": "2025"
+  },
+  "BAC": {
+   "name": "BofA Finance LLC",
+   "dividende": 1.16,
+   "ausschuettung": 28.0,
+   "kgv": 11.7,
+   "waehrung": "USD",
+   "datum": "2026-11-17",
+   "gj": "2025"
+  },
+  "BAS.DE": {
+   "name": "BASF",
+   "dividende": 2.25,
+   "ausschuettung": 124.0,
+   "kgv": 28.8,
+   "waehrung": "EUR",
+   "datum": "2026-11-17",
+   "gj": "2025"
+  },
+  "BATS.L": {
+   "name": "British American Tobacco",
+   "dividende": 2.45,
+   "ausschuettung": 73.0,
+   "kgv": 13.4,
+   "waehrung": "GBP",
+   "datum": "2026-11-17",
+   "gj": "2025"
+  },
+  "BAYN.DE": {
+   "name": "Bayer",
+   "dividende": 0.11,
+   "ausschuettung": null,
+   "kgv": null,
+   "waehrung": "EUR",
+   "datum": "2026-11-17",
+   "gj": "2025"
+  },
+  "BDX": {
+   "name": "Becton Dickinson",
+   "dividende": 4.19,
+   "ausschuettung": 127.0,
+   "kgv": 65.0,
+   "waehrung": "USD",
+   "datum": "2026-11-17",
+   "gj": "2025"
+  },
+  "BEN": {
+   "name": "Franklin Resources",
+   "dividende": 1.32,
+   "ausschuettung": 67.0,
+   "kgv": 17.8,
+   "waehrung": "USD",
+   "datum": "2026-11-17",
+   "gj": "2026"
+  },
+  "BF-B": {
+   "name": "Brown-Forman",
+   "dividende": 0.915,
+   "ausschuettung": 59.0,
+   "kgv": 19.6,
+   "waehrung": "USD",
+   "datum": "2026-11-17",
+   "gj": "2026"
+  },
+  "BN.PA": {
+   "name": "Danone",
+   "dividende": 2.1,
+   "ausschuettung": 67.0,
+   "kgv": 22.3,
+   "waehrung": "EUR",
+   "datum": "2026-11-17",
+   "gj": "2024"
+  },
+  "BNP.PA": {
+   "name": "BNP Paribas",
+   "dividende": 5.16,
+   "ausschuettung": 50.0,
+   "kgv": 9.1,
+   "waehrung": "EUR",
+   "datum": "2026-11-17",
+   "gj": "2025"
+  },
+  "BP.L": {
+   "name": "BP",
+   "dividende": 0.33,
+   "ausschuettung": null,
+   "kgv": null,
+   "waehrung": "USD",
+   "datum": "2026-11-17",
+   "gj": "2025"
+  },
+  "BRO": {
+   "name": "Brown & Brown",
+   "dividende": 0.62,
+   "ausschuettung": 20.0,
+   "kgv": 23.3,
+   "waehrung": "USD",
+   "datum": "2026-11-17",
+   "gj": "2025"
+  },
+  "CAH": {
+   "name": "Cardinal Health",
+   "dividende": 2.0632,
+   "ausschuettung": 29.0,
+   "kgv": 39.1,
+   "waehrung": "USD",
+   "datum": "2026-11-17",
+   "gj": "2026"
+  },
+  "CAT": {
+   "name": "Caterpillar",
+   "dividende": 5.94,
+   "ausschuettung": 23.0,
+   "kgv": 22.2,
+   "waehrung": "USD",
+   "datum": "2026-11-17",
+   "gj": "2025"
+  },
+  "CB": {
+   "name": "Chubb",
+   "dividende": 3.98,
+   "ausschuettung": 14.0,
+   "kgv": 13.2,
+   "waehrung": "USD",
+   "datum": "2026-11-17",
+   "gj": "2025"
+  },
+  "CBK.DE": {
+   "name": "Commerzbank",
+   "dividende": 1.1,
+   "ausschuettung": 47.0,
+   "kgv": 16.7,
+   "waehrung": "EUR",
+   "datum": "2026-11-17",
+   "gj": "2025"
+  },
+  "CBSH": {
+   "name": "Commerce Bancshares",
+   "dividende": 1.087,
+   "ausschuettung": 26.0,
+   "kgv": 13.2,
+   "waehrung": "USD",
+   "datum": "2026-11-17",
+   "gj": "2025"
+  },
+  "CHD": {
+   "name": "Church & Dwight",
+   "dividende": 1.22,
+   "ausschuettung": 38.0,
+   "kgv": 34.8,
+   "waehrung": "USD",
+   "datum": "2026-11-17",
+   "gj": "2025"
+  },
+  "CHRW": {
+   "name": "C.H. Robinson",
+   "dividende": 2.52,
+   "ausschuettung": 45.0,
+   "kgv": 24.4,
+   "waehrung": "USD",
+   "datum": "2026-11-17",
+   "gj": "2025"
+  },
+  "CINF": {
+   "name": "Cincinnati Financial",
+   "dividende": 3.76,
+   "ausschuettung": 22.0,
+   "kgv": 11.1,
+   "waehrung": "USD",
+   "datum": "2026-11-17",
+   "gj": "2025"
+  },
+  "CL": {
+   "name": "Colgate-Palmolive",
+   "dividende": 2.11,
+   "ausschuettung": 82.0,
+   "kgv": 39.2,
+   "waehrung": "USD",
+   "datum": "2026-11-17",
+   "gj": "2025"
+  },
+  "CLX": {
+   "name": "Clorox",
+   "dividende": 4.88,
+   "ausschuettung": 75.0,
+   "kgv": 16.7,
+   "waehrung": "USD",
+   "datum": "2026-11-17",
+   "gj": "2025"
+  },
+  "COST": {
+   "name": "COSTCO WHOLESALE CORP /NEW",
+   "dividende": 5.54,
+   "ausschuettung": 27.0,
+   "kgv": 53.6,
+   "waehrung": "USD",
+   "datum": "2026-11-17",
+   "gj": "2026"
+  },
+  "CPG.L": {
+   "name": "Compass Group",
+   "dividende": 0.66,
+   "ausschuettung": 63.0,
+   "kgv": 32.0,
+   "waehrung": "USD",
+   "datum": "2026-11-17",
+   "gj": "2025"
+  },
+  "CS.PA": {
+   "name": "AXA",
+   "dividende": 2.15,
+   "ausschuettung": 47.0,
+   "kgv": 10.2,
+   "waehrung": "EUR",
+   "datum": "2026-11-17",
+   "gj": "2025"
+  },
+  "CSCO": {
+   "name": "CISCO SYSTEMS, INC.",
+   "dividende": 1.68,
+   "ausschuettung": 50.0,
+   "kgv": 28.3,
+   "waehrung": "USD",
+   "datum": "2026-11-17",
+   "gj": "2026"
+  },
+  "CTAS": {
+   "name": "Cintas",
+   "dividende": 1.87,
+   "ausschuettung": 37.0,
+   "kgv": 44.1,
+   "waehrung": "USD",
+   "datum": "2026-11-17",
+   "gj": "2026"
+  },
+  "CVX": {
+   "name": "Chevron Corp",
+   "dividende": 7.12,
+   "ausschuettung": 52.0,
+   "kgv": 15.8,
+   "waehrung": "USD",
+   "datum": "2026-11-17",
+   "gj": "2025"
+  },
+  "CWT": {
+   "name": "California Water Service",
+   "dividende": 1.24,
+   "ausschuettung": 55.0,
+   "kgv": 21.8,
+   "waehrung": "USD",
+   "datum": "2026-11-17",
+   "gj": "2025"
+  },
+  "DB1.DE": {
+   "name": "Deutsche Börse",
+   "dividende": 4.2,
+   "ausschuettung": 40.0,
+   "kgv": 30.5,
+   "waehrung": "EUR",
+   "datum": "2026-11-17",
+   "gj": "2025"
+  },
+  "DBK.DE": {
+   "name": "Deutsche Bank",
+   "dividende": 1.0,
+   "ausschuettung": 28.0,
+   "kgv": 8.5,
+   "waehrung": "EUR",
+   "datum": "2026-11-17",
+   "gj": "2025"
+  },
+  "DG.PA": {
+   "name": "Vinci",
+   "dividende": 3.95,
+   "ausschuettung": 46.0,
+   "kgv": 13.2,
+   "waehrung": "EUR",
+   "datum": "2026-11-17",
+   "gj": "2025"
+  },
+  "DHL.DE": {
+   "name": "DHL Group",
+   "dividende": 1.9,
+   "ausschuettung": 62.0,
+   "kgv": 19.8,
+   "waehrung": "EUR",
+   "datum": "2026-11-17",
+   "gj": "2025"
+  },
+  "DOV": {
+   "name": "Dover",
+   "dividende": 2.085,
+   "ausschuettung": 24.0,
+   "kgv": 23.7,
+   "waehrung": "USD",
+   "datum": "2026-11-17",
+   "gj": "2025"
+  },
+  "DTE.DE": {
+   "name": "Deutsche Telekom",
+   "dividende": 1.0,
+   "ausschuettung": 51.0,
+   "kgv": 13.8,
+   "waehrung": "EUR",
+   "datum": "2026-11-17",
+   "gj": "2025"
+  },
+  "ECL": {
+   "name": "Ecolab",
+   "dividende": 2.92,
+   "ausschuettung": 40.0,
+   "kgv": 41.9,
+   "waehrung": "USD",
+   "datum": "2026-11-17",
+   "gj": "2025"
+  },
+  "ED": {
+   "name": "Consolidated Edison",
+   "dividende": 3.55,
+   "ausschuettung": 63.0,
+   "kgv": 21.3,
+   "waehrung": "USD",
+   "datum": "2026-11-17",
+   "gj": "2025"
+  },
+  "EL.PA": {
+   "name": "EssilorLuxottica",
+   "dividende": 3.95,
+   "ausschuettung": 77.0,
+   "kgv": 34.8,
+   "waehrung": "EUR",
+   "datum": "2026-11-17",
+   "gj": "2024"
+  },
+  "EMR": {
+   "name": "Emerson Electric",
+   "dividende": 2.38,
+   "ausschuettung": 50.0,
+   "kgv": 33.3,
+   "waehrung": "USD",
+   "datum": "2026-11-17",
+   "gj": "2026"
+  },
+  "ENGI.PA": {
+   "name": "Engie",
+   "dividende": 1.35,
+   "ausschuettung": 89.0,
+   "kgv": 16.5,
+   "waehrung": "EUR",
+   "datum": "2026-11-17",
+   "gj": "2025"
+  },
+  "ENR.DE": {
+   "name": "Siemens Energy",
+   "dividende": 0.7,
+   "ausschuettung": 43.0,
+   "kgv": 76.6,
+   "waehrung": "EUR",
+   "datum": "2026-11-17",
+   "gj": "2025"
+  },
+  "EOAN.DE": {
+   "name": "E.ON",
+   "dividende": 0.57,
+   "ausschuettung": 86.0,
+   "kgv": 28.7,
+   "waehrung": "EUR",
+   "datum": "2026-11-17",
+   "gj": "2025"
+  },
+  "ES": {
+   "name": "Eversource Energy",
+   "dividende": 3.01,
+   "ausschuettung": 78.0,
+   "kgv": 18.8,
+   "waehrung": "USD",
+   "datum": "2026-11-17",
+   "gj": "2025"
+  },
+  "ESS": {
+   "name": "Essex Property Trust",
+   "dividende": 10.28,
+   "ausschuettung": 160.0,
+   "kgv": 42.1,
+   "waehrung": "USD",
+   "datum": "2026-11-17",
+   "gj": "2025"
+  },
+  "EXPD": {
+   "name": "Expeditors International",
+   "dividende": 1.62,
+   "ausschuettung": 21.0,
+   "kgv": 24.3,
+   "waehrung": "USD",
+   "datum": "2026-11-17",
+   "gj": "2025"
+  },
+  "FAST": {
+   "name": "Fastenal",
+   "dividende": 0.875,
+   "ausschuettung": 71.0,
+   "kgv": 44.3,
+   "waehrung": "USD",
+   "datum": "2026-11-17",
+   "gj": "2025"
+  },
+  "FRT": {
+   "name": "Federal Realty",
+   "dividende": 4.64,
+   "ausschuettung": 99.0,
+   "kgv": 24.0,
+   "waehrung": "USD",
+   "datum": "2026-11-17",
+   "gj": "2025"
+  },
+  "FUL": {
+   "name": "H.B. Fuller",
+   "dividende": 0.928,
+   "ausschuettung": 26.0,
+   "kgv": 13.5,
+   "waehrung": "USD",
+   "datum": "2026-11-17",
+   "gj": "2025"
+  },
+  "GE": {
+   "name": "GENERAL ELECTRIC COMPANY",
+   "dividende": 1.77,
+   "ausschuettung": 20.0,
+   "kgv": 37.4,
+   "waehrung": "USD",
+   "datum": "2026-11-17",
+   "gj": "2025"
+  },
+  "GLE.PA": {
+   "name": "Société Générale",
+   "dividende": 1.61,
+   "ausschuettung": 24.0,
+   "kgv": 9.7,
+   "waehrung": "EUR",
+   "datum": "2026-11-17",
+   "gj": "2025"
+  },
+  "GLEN.L": {
+   "name": "Glencore",
+   "dividende": 0.17,
+   "ausschuettung": 567.0,
+   "kgv": 216.1,
+   "waehrung": "USD",
+   "datum": "2026-11-17",
+   "gj": "2025"
+  },
+  "GOOGL": {
+   "name": "Alphabet Inc.",
+   "dividende": 0.88,
+   "ausschuettung": 5.0,
+   "kgv": 14.6,
+   "waehrung": "USD",
+   "datum": "2026-11-17",
+   "gj": "2025"
+  },
+  "GPC": {
+   "name": "Genuine Parts",
+   "dividende": 4.2175,
+   "ausschuettung": 1622.0,
+   "kgv": 475.5,
+   "waehrung": "USD",
+   "datum": "2026-11-17",
+   "gj": "2025"
+  },
+  "GSK.L": {
+   "name": "GSK",
+   "dividende": 0.7,
+   "ausschuettung": 53.0,
+   "kgv": 14.2,
+   "waehrung": "GBP",
+   "datum": "2026-11-17",
+   "gj": "2025"
+  },
+  "GWW": {
+   "name": "W.W. Grainger",
+   "dividende": 9.5,
+   "ausschuettung": 21.0,
+   "kgv": 32.7,
+   "waehrung": "USD",
+   "datum": "2026-11-17",
+   "gj": "2025"
+  },
+  "HD": {
+   "name": "The Home Depot, Inc.",
+   "dividende": 9.2,
+   "ausschuettung": 64.0,
+   "kgv": 23.7,
+   "waehrung": "USD",
+   "datum": "2026-11-17",
+   "gj": "2026"
+  },
+  "HO.PA": {
+   "name": "Thales",
+   "dividende": 3.9,
+   "ausschuettung": 48.0,
+   "kgv": 27.8,
+   "waehrung": "EUR",
+   "datum": "2026-11-17",
+   "gj": "2025"
+  },
+  "HRL": {
+   "name": "Hormel Foods",
+   "dividende": 1.1675,
+   "ausschuettung": 185.0,
+   "kgv": 36.2,
+   "waehrung": "USD",
+   "datum": "2026-11-17",
+   "gj": "2025"
+  },
+  "HTO": {
+   "name": "H2O America",
+   "dividende": 1.68,
+   "ausschuettung": 66.0,
+   "kgv": 23.1,
+   "waehrung": "USD",
+   "datum": "2026-11-17",
+   "gj": "2025"
+  },
+  "IBM": {
+   "name": "IBM",
+   "dividende": 6.76,
+   "ausschuettung": 58.0,
+   "kgv": 19.8,
+   "waehrung": "USD",
+   "datum": "2026-11-17",
+   "gj": "2025"
+  },
+  "IFX.DE": {
+   "name": "Infineon",
+   "dividende": 0.35,
+   "ausschuettung": 45.0,
+   "kgv": 62.5,
+   "waehrung": "EUR",
+   "datum": "2026-11-17",
+   "gj": "2025"
+  },
+  "ITW": {
+   "name": "Illinois Tool Works",
+   "dividende": 6.55,
+   "ausschuettung": 58.0,
+   "kgv": 25.1,
+   "waehrung": "USD",
+   "datum": "2026-11-17",
+   "gj": "2025"
+  },
+  "JNJ": {
+   "name": "Johnson & Johnson",
+   "dividende": 5.36,
+   "ausschuettung": 81.0,
+   "kgv": 42.3,
+   "waehrung": "USD",
+   "datum": "2026-11-17",
+   "gj": "2025"
+  },
+  "JPM": {
+   "name": "JPMORGAN CHASE & CO",
+   "dividende": 6.15,
+   "ausschuettung": 26.0,
+   "kgv": 13.8,
+   "waehrung": "USD",
+   "datum": "2026-11-17",
+   "gj": "2025"
+  },
+  "KMB": {
+   "name": "Kimberly-Clark",
+   "dividende": 5.1,
+   "ausschuettung": 51.0,
+   "kgv": 11.0,
+   "waehrung": "USD",
+   "datum": "2026-11-17",
+   "gj": "2025"
+  },
+  "KO": {
+   "name": "Coca-Cola",
+   "dividende": 2.12,
+   "ausschuettung": 62.0,
+   "kgv": 29.1,
+   "waehrung": "USD",
+   "datum": "2026-11-17",
+   "gj": "2025"
+  },
+  "LIN": {
+   "name": "Linde",
+   "dividende": 6.3,
+   "ausschuettung": 42.0,
+   "kgv": 34.1,
+   "waehrung": "USD",
+   "datum": "2026-11-17",
+   "gj": "2025"
+  },
+  "LLOY.L": {
+   "name": "Lloyds Banking Group",
+   "dividende": 0.04,
+   "ausschuettung": 50.0,
+   "kgv": 12.0,
+   "waehrung": "GBP",
+   "datum": "2026-11-17",
+   "gj": "2025"
+  },
+  "LLY": {
+   "name": "ELI LILLY AND COMPANY",
+   "dividende": 6.23,
+   "ausschuettung": 20.0,
+   "kgv": 45.5,
+   "waehrung": "USD",
+   "datum": "2026-11-17",
+   "gj": "2025"
+  },
+  "LOW": {
+   "name": "Lowe's",
+   "dividende": 4.85,
+   "ausschuettung": 41.0,
+   "kgv": 18.8,
+   "waehrung": "USD",
+   "datum": "2026-11-17",
+   "gj": "2026"
+  },
+  "LSEG.L": {
+   "name": "London Stock Exchange Group",
+   "dividende": 1.5,
+   "ausschuettung": 64.0,
+   "kgv": 40.6,
+   "waehrung": "GBP",
+   "datum": "2026-11-17",
+   "gj": "2025"
+  },
+  "MA": {
+   "name": "Mastercard Incorporated",
+   "dividende": 3.48,
+   "ausschuettung": 18.0,
+   "kgv": 33.8,
+   "waehrung": "USD",
+   "datum": "2026-11-17",
+   "gj": "2025"
+  },
+  "MC.PA": {
+   "name": "LVMH",
+   "dividende": 13.0,
+   "ausschuettung": 52.0,
+   "kgv": 15.6,
+   "waehrung": "EUR",
+   "datum": "2026-11-17",
+   "gj": "2024"
+  },
+  "MCD": {
+   "name": "McDonald's",
+   "dividende": 7.72,
+   "ausschuettung": 61.0,
+   "kgv": 21.8,
+   "waehrung": "USD",
+   "datum": "2026-11-17",
+   "gj": "2025"
+  },
+  "MDT": {
+   "name": "Medtronic",
+   "dividende": 2.85,
+   "ausschuettung": 70.0,
+   "kgv": 25.3,
+   "waehrung": "USD",
+   "datum": "2026-11-17",
+   "gj": "2026"
+  },
+  "META": {
+   "name": "Meta Platforms, Inc.",
+   "dividende": 2.1,
+   "ausschuettung": 7.0,
+   "kgv": 21.1,
+   "waehrung": "USD",
+   "datum": "2026-11-17",
+   "gj": "2025"
+  },
+  "MGEE": {
+   "name": "MGE Energy",
+   "dividende": 1.85,
+   "ausschuettung": 50.0,
+   "kgv": 20.8,
+   "waehrung": "USD",
+   "datum": "2026-11-17",
+   "gj": "2025"
+  },
+  "MKC": {
+   "name": "McCormick",
+   "dividende": 1.83,
+   "ausschuettung": 33.0,
+   "kgv": 8.1,
+   "waehrung": "USD",
+   "datum": "2026-11-17",
+   "gj": "2025"
+  },
+  "MO": {
+   "name": "Altria",
+   "dividende": 4.44,
+   "ausschuettung": 92.0,
+   "kgv": 16.1,
+   "waehrung": "USD",
+   "datum": "2026-11-17",
+   "gj": "2025"
+  },
+  "MRK": {
+   "name": "Merck & Co., Inc.",
+   "dividende": 3.4,
+   "ausschuettung": 351.0,
+   "kgv": 147.7,
+   "waehrung": "USD",
+   "datum": "2026-11-17",
+   "gj": "2025"
+  },
+  "MRK.DE": {
+   "name": "Merck KGaA",
+   "dividende": 2.2,
+   "ausschuettung": 37.0,
+   "kgv": 25.1,
+   "waehrung": "EUR",
+   "datum": "2026-11-17",
+   "gj": "2025"
+  },
+  "MSA": {
+   "name": "MSA Safety",
+   "dividende": 2.14,
+   "ausschuettung": 27.0,
+   "kgv": 21.6,
+   "waehrung": "USD",
+   "datum": "2026-11-17",
+   "gj": "2025"
+  },
+  "MSFT": {
+   "name": "MICROSOFT CORP",
+   "dividende": 3.92,
+   "ausschuettung": 20.0,
+   "kgv": 26.4,
+   "waehrung": "USD",
+   "datum": "2026-11-17",
+   "gj": "2026"
+  },
+  "MU": {
+   "name": "Micron Technology, Inc.",
+   "dividende": 0.53,
+   "ausschuettung": 1.0,
+   "kgv": 9.4,
+   "waehrung": "USD",
+   "datum": "2026-11-17",
+   "gj": "2026"
+  },
+  "MUV2.DE": {
+   "name": "Munich Re",
+   "dividende": 24.0,
+   "ausschuettung": 51.0,
+   "kgv": 12.5,
+   "waehrung": "EUR",
+   "datum": "2026-11-17",
+   "gj": "2025"
+  },
+  "MZTI": {
+   "name": "Marzetti",
+   "dividende": 4.0,
+   "ausschuettung": 63.0,
+   "kgv": 17.3,
+   "waehrung": "USD",
+   "datum": "2026-11-17",
+   "gj": "2026"
+  },
+  "NDSN": {
+   "name": "Nordson",
+   "dividende": 3.28,
+   "ausschuettung": 33.0,
+   "kgv": 32.4,
+   "waehrung": "USD",
+   "datum": "2026-11-17",
+   "gj": "2025"
+  },
+  "NEE": {
+   "name": "NextEra Energy",
+   "dividende": 2.27,
+   "ausschuettung": 69.0,
+   "kgv": 25.6,
+   "waehrung": "USD",
+   "datum": "2026-11-17",
+   "gj": "2025"
+  },
+  "NFG": {
+   "name": "National Fuel Gas",
+   "dividende": 2.16,
+   "ausschuettung": 30.0,
+   "kgv": 10.5,
+   "waehrung": "USD",
+   "datum": "2026-11-17",
+   "gj": "2025"
+  },
+  "NG.L": {
+   "name": "National Grid",
+   "dividende": 0.4723,
+   "ausschuettung": 72.0,
+   "kgv": 19.3,
+   "waehrung": "GBP",
+   "datum": "2026-11-17",
+   "gj": "2026"
+  },
+  "NUE": {
+   "name": "Nucor",
+   "dividende": 2.24,
+   "ausschuettung": 14.0,
+   "kgv": 16.2,
+   "waehrung": "USD",
+   "datum": "2026-11-17",
+   "gj": "2025"
+  },
+  "NVDA": {
+   "name": "NVIDIA CORP",
+   "dividende": 1.0,
+   "ausschuettung": 13.0,
+   "kgv": 19.6,
+   "waehrung": "USD",
+   "datum": "2026-11-17",
+   "gj": "2026"
+  },
+  "NWG.L": {
+   "name": "NatWest",
+   "dividende": 0.2745,
+   "ausschuettung": 41.0,
+   "kgv": 8.7,
+   "waehrung": "GBP",
+   "datum": "2026-11-17",
+   "gj": "2025"
+  },
+  "NWN": {
+   "name": "Northwest Natural Holdings",
+   "dividende": 1.965,
+   "ausschuettung": 66.0,
+   "kgv": 17.4,
+   "waehrung": "USD",
+   "datum": "2026-11-17",
+   "gj": "2025"
+  },
+  "O": {
+   "name": "Realty Income",
+   "dividende": 3.217,
+   "ausschuettung": 222.0,
+   "kgv": 39.9,
+   "waehrung": "USD",
+   "datum": "2026-11-17",
+   "gj": "2025"
+  },
+  "OR.PA": {
+   "name": "L'Oréal",
+   "dividende": 7.2,
+   "ausschuettung": 63.0,
+   "kgv": 39.0,
+   "waehrung": "EUR",
+   "datum": "2026-11-17",
+   "gj": "2025"
+  },
+  "ORCL": {
+   "name": "ORACLE CORP",
+   "dividende": 2,
+   "ausschuettung": 31.0,
+   "kgv": 17.9,
+   "waehrung": "USD",
+   "datum": "2026-11-17",
+   "gj": "2026"
+  },
+  "P911.DE": {
+   "name": "Porsche AG Vz",
+   "dividende": 1.01,
+   "ausschuettung": 215.0,
+   "kgv": 92.4,
+   "waehrung": "EUR",
+   "datum": "2026-11-17",
+   "gj": "2025"
+  },
+  "PEP": {
+   "name": "PepsiCo",
+   "dividende": 5.92,
+   "ausschuettung": 74.0,
+   "kgv": 17.8,
+   "waehrung": "USD",
+   "datum": "2026-11-17",
+   "gj": "2025"
+  },
+  "PG": {
+   "name": "Procter & Gamble",
+   "dividende": 4.354,
+   "ausschuettung": 66.0,
+   "kgv": 26.0,
+   "waehrung": "USD",
+   "datum": "2026-11-17",
+   "gj": "2026"
+  },
+  "PH": {
+   "name": "Parker-Hannifin",
+   "dividende": 7.4,
+   "ausschuettung": 25.0,
+   "kgv": 32.0,
+   "waehrung": "USD",
+   "datum": "2026-11-17",
+   "gj": "2026"
+  },
+  "PM": {
+   "name": "Philip Morris International Inc.",
+   "dividende": 6.01,
+   "ausschuettung": 88.0,
+   "kgv": 28.9,
+   "waehrung": "USD",
+   "datum": "2026-11-17",
+   "gj": "2025"
+  },
+  "PPG": {
+   "name": "PPG Industries",
+   "dividende": 2.87,
+   "ausschuettung": 41.0,
+   "kgv": 17.4,
+   "waehrung": "USD",
+   "datum": "2026-11-17",
+   "gj": "2025"
+  },
+  "REL.L": {
+   "name": "RELX",
+   "dividende": 0.6405,
+   "ausschuettung": 57.0,
+   "kgv": 26.7,
+   "waehrung": "GBP",
+   "datum": "2026-11-17",
+   "gj": "2025"
+  },
+  "RIO.L": {
+   "name": "Rio Tinto",
+   "dividende": 4.02,
+   "ausschuettung": 66.0,
+   "kgv": 13.0,
+   "waehrung": "USD",
+   "datum": "2026-11-17",
+   "gj": "2025"
+  },
+  "RMS.PA": {
+   "name": "Hermès",
+   "dividende": 16.0,
+   "ausschuettung": 37.0,
+   "kgv": 29.9,
+   "waehrung": "EUR",
+   "datum": "2026-11-17",
+   "gj": "2025"
+  },
+  "ROP": {
+   "name": "Roper Technologies",
+   "dividende": 3.645,
+   "ausschuettung": 14.0,
+   "kgv": 18.7,
+   "waehrung": "USD",
+   "datum": "2026-11-17",
+   "gj": "2025"
+  },
+  "RR.L": {
+   "name": "Rolls-Royce Holdings",
+   "dividende": 0.05,
+   "ausschuettung": 7.0,
+   "kgv": 19.2,
+   "waehrung": "GBP",
+   "datum": "2026-11-17",
+   "gj": "2025"
+  },
+  "RWE.DE": {
+   "name": "RWE",
+   "dividende": 1.2,
+   "ausschuettung": 29.0,
+   "kgv": 13.7,
+   "waehrung": "EUR",
+   "datum": "2026-11-17",
+   "gj": "2025"
+  },
+  "SAF.PA": {
+   "name": "Safran",
+   "dividende": 3.35,
+   "ausschuettung": 20.0,
+   "kgv": 17.8,
+   "waehrung": "EUR",
+   "datum": "2026-11-17",
+   "gj": "2025"
+  },
+  "SAP.DE": {
+   "name": "SAP",
+   "dividende": 2.5,
+   "ausschuettung": 43.0,
+   "kgv": 34.6,
+   "waehrung": "EUR",
+   "datum": "2026-11-17",
+   "gj": "2025"
+  },
+  "SCL": {
+   "name": "Stepan",
+   "dividende": 1.55,
+   "ausschuettung": 816.0,
+   "kgv": 349.9,
+   "waehrung": "USD",
+   "datum": "2026-11-17",
+   "gj": "2025"
+  },
+  "SHEL.L": {
+   "name": "Shell",
+   "dividende": 1.45,
+   "ausschuettung": 46.0,
+   "kgv": 15.6,
+   "waehrung": "USD",
+   "datum": "2026-11-17",
+   "gj": "2025"
+  },
+  "SHW": {
+   "name": "Sherwin-Williams",
+   "dividende": 3.19,
+   "ausschuettung": 29.0,
+   "kgv": 32.0,
+   "waehrung": "USD",
+   "datum": "2026-11-17",
+   "gj": "2025"
+  },
+  "SIE.DE": {
+   "name": "Siemens",
+   "dividende": 5.35,
+   "ausschuettung": 45.0,
+   "kgv": 22.5,
+   "waehrung": "EUR",
+   "datum": "2026-11-17",
+   "gj": "2025"
+  },
+  "SJM": {
+   "name": "J.M. Smucker",
+   "dividende": 4.42,
+   "ausschuettung": 207.0,
+   "kgv": 62.8,
+   "waehrung": "USD",
+   "datum": "2026-11-17",
+   "gj": "2026"
+  },
+  "SPGI": {
+   "name": "S&P Global",
+   "dividende": 3.87,
+   "ausschuettung": 23.0,
+   "kgv": 27.1,
+   "waehrung": "USD",
+   "datum": "2026-11-17",
+   "gj": "2025"
+  },
+  "SU.PA": {
+   "name": "Schneider Electric",
+   "dividende": 3.8578,
+   "ausschuettung": 53.0,
+   "kgv": 32.5,
+   "waehrung": "EUR",
+   "datum": "2026-11-17",
+   "gj": "2025"
+  },
+  "SWK": {
+   "name": "Stanley Black & Decker",
+   "dividende": 3.33,
+   "ausschuettung": 60.0,
+   "kgv": 19.4,
+   "waehrung": "USD",
+   "datum": "2026-11-17",
+   "gj": "2026"
+  },
+  "SYY": {
+   "name": "Sysco",
+   "dividende": 2.18,
+   "ausschuettung": 58.0,
+   "kgv": 20.8,
+   "waehrung": "USD",
+   "datum": "2026-11-17",
+   "gj": "2026"
+  },
+  "TGT": {
+   "name": "Target",
+   "dividende": 4.54,
+   "ausschuettung": 47.0,
+   "kgv": 16.2,
+   "waehrung": "USD",
+   "datum": "2026-11-17",
+   "gj": "2026"
+  },
+  "TNC": {
+   "name": "Tennant",
+   "dividende": 1.195,
+   "ausschuettung": 88.0,
+   "kgv": 53.8,
+   "waehrung": "USD",
+   "datum": "2026-11-17",
+   "gj": "2025"
+  },
+  "TROW": {
+   "name": "T. Rowe Price",
+   "dividende": 5.17,
+   "ausschuettung": 52.0,
+   "kgv": 10.8,
+   "waehrung": "USD",
+   "datum": "2026-11-17",
+   "gj": "2025"
+  },
+  "TTE.PA": {
+   "name": "TotalEnergies",
+   "dividende": 3.4,
+   "ausschuettung": 57.0,
+   "kgv": 15.1,
+   "waehrung": "USD",
+   "datum": "2026-11-17",
+   "gj": "2025"
+  },
+  "UBSI": {
+   "name": "United Bankshares",
+   "dividende": 1.49,
+   "ausschuettung": 40.0,
+   "kgv": 12.9,
+   "waehrung": "USD",
+   "datum": "2026-11-17",
+   "gj": "2025"
+  },
+  "ULVR.L": {
+   "name": "Unilever",
+   "dividende": 1.82,
+   "ausschuettung": 42.0,
+   "kgv": 13.8,
+   "waehrung": "EUR",
+   "datum": "2026-11-17",
+   "gj": "2025"
+  },
+  "UNH": {
+   "name": "UnitedHealth Group Incorporated",
+   "dividende": 8.73,
+   "ausschuettung": 50.0,
+   "kgv": 22.6,
+   "waehrung": "USD",
+   "datum": "2026-11-17",
+   "gj": "2025"
+  },
+  "UVV": {
+   "name": "Universal Corp.",
+   "dividende": 3.3,
+   "ausschuettung": 254.0,
+   "kgv": 28.3,
+   "waehrung": "USD",
+   "datum": "2026-11-17",
+   "gj": "2026"
+  },
+  "WMT": {
+   "name": "Walmart",
+   "dividende": 0.94,
+   "ausschuettung": 34.0,
+   "kgv": 46.1,
+   "waehrung": "USD",
+   "datum": "2026-11-17",
+   "gj": "2026"
+  },
+  "WST": {
+   "name": "West Pharmaceutical Services",
+   "dividende": 0.86,
+   "ausschuettung": 10.0,
+   "kgv": 46.4,
+   "waehrung": "USD",
+   "datum": "2026-11-17",
+   "gj": "2025"
+  },
+  "XOM": {
+   "name": "Exxon Mobil",
+   "dividende": 4,
+   "ausschuettung": 60.0,
+   "kgv": 25.0,
+   "waehrung": "USD",
+   "datum": "2026-11-17",
+   "gj": "2025"
+  }
+ },
+ "ohne_daten": [
+  "BKH"
+ ],
+ "hinweis": "Kostenlose Auswahl. Weitere Kennzahlen und Firmen im Abo."
+}
