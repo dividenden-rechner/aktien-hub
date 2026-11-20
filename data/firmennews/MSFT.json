@@ -1,32 +1,54 @@
 {
  "hub": "MSFT",
  "name": "MICROSOFT CORP",
- "stand": "2026-11-18",
+ "stand": "2026-11-20",
  "quelle": "Google News (Wirtschaftsmedien, deutsch und englisch)",
  "meldungen": [
   {
-   "titel": "Microsoft Ignite 2026: Empowering human ambition, intelligence and trust",
+   "titel": "The future of medicine: Could AI help predict and prevent disease?",
    "quelle": "Unternehmen",
-   "link": "https://news.microsoft.com/source/2026/11/17/microsoft-ignite-2026-empowering-human-ambition-intelligence-and-trust/",
-   "datum": "2026-11-17",
+   "link": "https://www.microsoft.com/en-us/research/podcast/can-ai-help-build-a-healthier-future/",
+   "datum": "2026-11-19",
    "sprache": "en",
    "typ": "pm"
   },
   {
-   "titel": "Microsoft and organizations across industries launch AI Transparency Initiative to strengthen enterprise trust in AI models and agents",
+   "titel": "Why Microsoft is investing in recycling the rare earth metals behind modern tech",
    "quelle": "Unternehmen",
-   "link": "https://news.microsoft.com/source/2026/11/17/microsoft-and-organizations-across-industries-launch-ai-transparency-initiative-to-strengthen-enterprise-trust-in-ai-models-and-agents/",
-   "datum": "2026-11-17",
+   "link": "https://blogs.microsoft.com/on-the-issues/2026/11/17/how-investment-in-rare-earth-recycling-is-helping-advance-circular-supply-chains-and-creating-opportunities-for-local-communities/",
+   "datum": "2026-11-18",
    "sprache": "en",
    "typ": "pm"
   },
   {
-   "titel": "Microsoft and Salesforce Announce Copilotforce, Bringing Trusted Customer Context and Action into Microsoft AI Experiences",
+   "titel": "Microsoft unveils 7 AI models for coding, image editing, voice and more",
    "quelle": "Unternehmen",
-   "link": "https://news.microsoft.com/source/2026/11/17/microsoft-and-salesforce-announce-copilotforce-bringing-trusted-customer-context-and-action-into-microsoft-ai-experiences/",
-   "datum": "2026-11-17",
+   "link": "https://microsoft.ai/news/microsoft-ignite-2026/",
+   "datum": "2026-11-18",
    "sprache": "en",
    "typ": "pm"
+  },
+  {
+   "titel": "Cyberattacks are getting faster. Here’s how Microsoft is fighting back",
+   "quelle": "Unternehmen",
+   "link": "https://www.microsoft.com/en-us/security/blog/2026/11/17/security-for-the-agentic-era-powered-by-microsoft-perception/",
+   "datum": "2026-11-18",
+   "sprache": "en",
+   "typ": "pm"
+  },
+  {
+   "titel": "Microsoft Says Copilot Is Beating Anthropic, OpenAI on Price",
+   "quelle": "Bloomberg.com",
+   "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxNNXV4cTU5RmZrd3lGNGRVS2RXYUZFU1prYmhYQzhrSnNWdkRHWmF6N2RjT3RkTkVTb0ZpQWhnZ3hXc3c4S1RzUXdsWGRJMFlVQkloZmlhSWhQcjkwNVFfWGxqR3NtbHNmLWdzRTBMb1dCdFVhUlV2SnhYSUYwZTlZZ2dMRjJadm1McGtYS29PcHhNdG9XSGlOVDFHY1FacGRDOWFuamRFdnEyLTVaWl9F?oc=5",
+   "datum": "2026-11-18",
+   "sprache": "en"
+  },
+  {
+   "titel": "AI Agents in Bond Market Arrive With a Stealthy Microsoft Trade",
+   "quelle": "Bloomberg.com",
+   "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxQRDE1Y1FPaVcyOWNoSXNJZ2JCVmE2LXNVemhTaVhVNlctMVFFUG5YU2pDcTN2N3ZSZWNwVWcyOE5PVFlsMzRDZTMtMEFoZHE1cWJqaHp0Tm5oTDdHTDVLOHF0Tm8xc1RfaVFQSVlnSWdDMUNhZ3pLWGxHR3JNOXhWRDlkZDFwdnREVTlIbWx5TjRtMzlIUnU2ek9BQlpEUWE1dEVOMHlKci02ZDktbllDT3BIb3I?oc=5",
+   "datum": "2026-11-17",
+   "sprache": "en"
   },
   {
    "titel": "Microsoft Executive Says Nvidia Drama Could Boost Rival Chips",
@@ -40,28 +62,6 @@
    "quelle": "Bloomberg.com",
    "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxQQTA4cTRma25CQXkzaGNfV3psSC01R2RpMklQOHctcjdLcjFqRGtkdWlyaFltbTBKZjhtVWFvcTRjS1FUU3RZclJRamY4VmJ3NzN2UUg1Tlpncjl0Vk5xWXpOSF8xM1hVa2tJU3NtUHFjQW51RVBSZ3l2TVJUZG5PZWtpeGhva0Z3U0NGaktIS1BoeUE3SjJod05qMWVQeUxJYVVYdzRXS05LMkQzSmRn?oc=5",
    "datum": "2026-11-17",
-   "sprache": "en"
-  },
-  {
-   "titel": "AI Agents in Bond Market Arrive With a Stealthy Microsoft Trade",
-   "quelle": "Bloomberg.com",
-   "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxQRDE1Y1FPaVcyOWNoSXNJZ2JCVmE2LXNVemhTaVhVNlctMVFFUG5YU2pDcTN2N3ZSZWNwVWcyOE5PVFlsMzRDZTMtMEFoZHE1cWJqaHp0Tm5oTDdHTDVLOHF0Tm8xc1RfaVFQSVlnSWdDMUNhZ3pLWGxHR3JNOXhWRDlkZDFwdnREVTlIbWx5TjRtMzlIUnU2ek9BQlpEUWE1dEVOMHlKci02ZDktbllDT3BIb3I?oc=5",
-   "datum": "2026-11-17",
-   "sprache": "en"
-  },
-  {
-   "titel": "What drives the cost of AI at work",
-   "quelle": "Unternehmen",
-   "link": "https://news.microsoft.com/source/2026/11/16/what-ai-at-work-really-costs/",
-   "datum": "2026-11-16",
-   "sprache": "en",
-   "typ": "pm"
-  },
-  {
-   "titel": "Microsoft Bug Undetected Since July Triggered Worldwide Outage",
-   "quelle": "Bloomberg.com",
-   "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxPYzVuWmo1ZEZLMzlpSkZTZnJwQk5uaHlLMGFYdWV6cGpySEVhdzZ1X09OZkp3VHh6LU5iTkd2emY5Um1UVkR5MWN6QTUzTUhVRnFIQkQ1MzN1SVBpQ3RtampsdV9BNklLeG4xNE1lUllkUHNaTTJPblMtc0UwZ2VBbldJc3ZESktOSnRZX1phN1J2SnQ5UW9fVmxnbWUzYmhPSnNlQWFrYnZ6bVpuU3YxbFdpUQ?oc=5",
-   "datum": "2026-11-16",
    "sprache": "en"
   }
  ]

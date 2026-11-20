@@ -1,9 +1,31 @@
 {
  "hub": "AAPL",
  "name": "Apple Inc.",
- "stand": "2026-11-19",
+ "stand": "2026-11-20",
  "quelle": "Google News (Wirtschaftsmedien, deutsch und englisch)",
  "meldungen": [
+  {
+   "titel": "An Apple Agent Is Something to Fear for AI Rivals",
+   "quelle": "Bloomberg.com",
+   "link": "https://news.google.com/rss/articles/CBMipgFBVV95cUxPcUJtbUhFMEZPLTE3R2ZadFlwR3l2QndSUEYwN0FGSy1NNnJSNW9YalBDSTlRMW03UHBkNUdsNVJJekZxeGF2R1B2dEJrVUZVNGpQSXQ5clp2TVlEWXlNQ2gtcmJ5UjVQaHFuOWxOMk95ZHFoUjhLTkRQdGlCTS1GVGN4c192YnBubFpVVkhTaWEtNmpxVWZaSUxubWJmSlctMDdzYlp3?oc=5",
+   "datum": "2026-11-20",
+   "sprache": "en"
+  },
+  {
+   "titel": "Apple TV becomes the new U.S. home of F1 ACADEMY™, the all-female racing series",
+   "quelle": "Unternehmen",
+   "link": "https://www.apple.com/newsroom/2026/11/apple-tv-becomes-the-new-us-home-of-f1-academy-the-all-female-racing-series/",
+   "datum": "2026-11-19",
+   "sprache": "en",
+   "typ": "pm"
+  },
+  {
+   "titel": "Apple Working on Own AI Agent to Rival OpenAI and Anthropic",
+   "quelle": "Bloomberg.com",
+   "link": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxOQzRPX3FrZlMybjdvY2FJVWhVOHU5M2lTTGNPazZYUW0zVlA3ZkVRcWxERk9XM2FvXzgzVDVUaTYwTzVzOXg0TGQtN25fOE9aeTRtUXhqTGE2Q01zQ21iTUg1dmFTNGZQRV9hTDVBV3BjWW4tUzYxXzBVTzA1UzkyOEtySVhfbWZlbmRXSFd1bVZLZElzSThUMmlQVnAyOHJIWUs0YTBNVTBIM29HV2ZieUtzQ1d0SDVIVTA2VTRTYk4?oc=5",
+   "datum": "2026-11-19",
+   "sprache": "en"
+  },
   {
    "titel": "UK tribunal confirms government order demanding access to Apple data",
    "quelle": "Reuters",
@@ -27,13 +49,6 @@
    "typ": "pm"
   },
   {
-   "titel": "Apple’s Haven Status Makes It One of Priciest Stocks in Market",
-   "quelle": "Bloomberg.com",
-   "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxOWFdXODZmaFdpSjdGdFF5Mm5IQVRyZTJUczJ5R08zSGttalFxSFgtdTQxVENCajRVYlJWOG1hUmcwRHpmcHBENVBDNU1NMDgzbDdDZEtLbE5uT0N6bHdnNGdaOUZxbV9ad3FXSVUyVUt1Mld2S0NYaHpDNG1EaUlfSDFJZFZ0R1hmSDl3dmczRkc2RW4xM1VKdHZCY3FWWUJpUkswM2hsRGtCR1VmdWRuMFRaQQ?oc=5",
-   "datum": "2026-11-18",
-   "sprache": "en"
-  },
-  {
    "titel": "Formula 1® Las Vegas Grand Prix™ streams live on Apple TV this weekend",
    "quelle": "Unternehmen",
    "link": "https://www.apple.com/newsroom/2026/11/formula-1-las-vegas-grand-prix-streams-live-on-apple-tv-this-weekend/",
@@ -42,25 +57,10 @@
    "typ": "pm"
   },
   {
-   "titel": "Apple works to restore services after outage caused by internal update",
-   "quelle": "Reuters",
-   "link": "https://news.google.com/rss/articles/CBMixwFBVV95cUxOYVJuYnNwMGtjY1NfY01rbXdSVTVnOFdaak1sd1ZkbXpPZzFuWjlOcTJNVUplNDJZLUVxeGZtaXlGZlg1UjFkY2Z5Um5Td19tS2pUZmZKNFlEb0QxVUwyekt2UnRPRlJUT3hRM3FhQWp2MDJRVGI4U1hfeWlpeGlBdFJyTG1rei1yNXJqbnF5LV9vQ3FwYVloZjVhZ1hfVWUzV0RlQVpRc3I3emJwU1lFZEduaUZSS1k5anRlN2lDQkQ0SFI0QkVz?oc=5",
-   "datum": "2026-11-17",
-   "sprache": "en"
-  },
-  {
    "titel": "Apple launches research study to explore the use of AI for health",
    "quelle": "Unternehmen",
    "link": "https://www.apple.com/newsroom/2026/11/apple-launches-research-study-to-explore-the-use-of-ai-for-health/",
    "datum": "2026-11-16",
-   "sprache": "en",
-   "typ": "pm"
-  },
-  {
-   "titel": "Apple HomeView available today",
-   "quelle": "Unternehmen",
-   "link": "https://www.apple.com/newsroom/2026/11/apple-homeview-available-today/",
-   "datum": "2026-11-13",
    "sprache": "en",
    "typ": "pm"
   }

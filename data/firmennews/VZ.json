@@ -1,9 +1,25 @@
 {
  "hub": "VZ",
  "name": "Verizon Communications Inc.",
- "stand": "2026-11-19",
+ "stand": "2026-11-20",
  "quelle": "Google News (Wirtschaftsmedien, deutsch und englisch)",
  "meldungen": [
+  {
+   "titel": "The holiday rush comes at a cost for small business owners. Technology can help",
+   "quelle": "Unternehmen",
+   "link": "https://www.verizon.com/about/news/holiday-rush-small-business-technology-help",
+   "datum": "2026-11-19",
+   "sprache": "en",
+   "typ": "pm"
+  },
+  {
+   "titel": "Verizon survey: Small businesses turn to social media & AI for holidays",
+   "quelle": "Unternehmen",
+   "link": "https://www.verizon.com/about/news/verizon-survey-small-businesses-social-media-ai-holidays",
+   "datum": "2026-11-19",
+   "sprache": "en",
+   "typ": "pm"
+  },
   {
    "titel": "Verizon Business inks technology deal with Bosch Motorsport for global race-day intelligence and connectivity",
    "quelle": "Unternehmen",
@@ -26,22 +42,6 @@
    "link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxQTkE4bldaUTEwWS1JeHhyS1pSeGNtWUppLTFxdC13bUNvNW9LNTJqc25QSE13enhHX096WHlyeXRfQ01VeGtRdnF6ZkVIQ2ZkZ2Z1anhQdkhLYnVyaURuWU1aQTVzcHY0TGtJMjJ6QXJqTUxZTGl5QXRmbjYzQnAwYUNtWVdSdHU2eUIzYmV4NkM5M04zUkh1RzU2SmpwUDV4VjQ1czUxS3J4RUgydzRFbQ?oc=5",
    "datum": "2026-11-18",
    "sprache": "en"
-  },
-  {
-   "titel": "Your holiday guide to tech gifts for kids",
-   "quelle": "Unternehmen",
-   "link": "https://www.verizon.com/about/parenting/tech-gifts-for-kids",
-   "datum": "2026-11-17",
-   "sprache": "en",
-   "typ": "pm"
-  },
-  {
-   "titel": "Cool tech gifts for kids and teens",
-   "quelle": "Unternehmen",
-   "link": "https://www.verizon.com/about/parenting/cool-tech-gifts-kids-and-teens",
-   "datum": "2026-11-16",
-   "sprache": "en",
-   "typ": "pm"
   }
  ]
 }

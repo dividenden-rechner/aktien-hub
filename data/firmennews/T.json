@@ -1,9 +1,25 @@
 {
  "hub": "T",
  "name": "AT&T INC.",
- "stand": "2026-11-19",
+ "stand": "2026-11-20",
  "quelle": "Google News (Wirtschaftsmedien, deutsch und englisch)",
  "meldungen": [
+  {
+   "titel": "AT&T to Webcast Fireside Chat with John Stankey at the UBS Global Media and Communications Conference on Dec. 8",
+   "quelle": "Unternehmen",
+   "link": "https://about.att.com/story/2026/john-stankey-ubs-global-fireside-chat.html",
+   "datum": "2026-11-19",
+   "sprache": "en",
+   "typ": "pm"
+  },
+  {
+   "titel": "AT&T and U.S. Soccer Extend Longstanding Relationship",
+   "quelle": "Unternehmen",
+   "link": "https://about.att.com/story/2026/att-us-soccer-extend-relationship.html",
+   "datum": "2026-11-19",
+   "sprache": "en",
+   "typ": "pm"
+  },
   {
    "titel": "AT&T and Tackle Tomorrow Launch Early Literacy Resources for K–3 Learners Nationwide",
    "quelle": "Unternehmen",
@@ -19,29 +35,6 @@
    "datum": "2026-11-18",
    "sprache": "en",
    "typ": "pm"
-  },
-  {
-   "titel": "Business Productivity Boost: AT&T Business Expands Collaboration with Microsoft to Simplify the Safe and Secure Adoption of AI for Small Business Customers",
-   "quelle": "Unternehmen",
-   "link": "https://about.att.com/story/2026/att-business-microsoft365-bundle.html",
-   "datum": "2026-11-18",
-   "sprache": "en",
-   "typ": "pm"
-  },
-  {
-   "titel": "AT&T launches Flexible SIM with GSMA SGP.32",
-   "quelle": "Unternehmen",
-   "link": "https://about.att.com/story/2026/flexible-sim.html",
-   "datum": "2026-11-17",
-   "sprache": "en",
-   "typ": "pm"
-  },
-  {
-   "titel": "AT&T sues Comcast over 'fiber-powered' internet advertising",
-   "quelle": "Reuters",
-   "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxPbmZOanVUTE1QN3BzNDJkUEhzTV9hRl9TQ0l0b2szSGpXaEQ3YTB0MTNvcFhtRmF2STNPbDVtczBldkctb1Q1WW5MVkxoN2Y4NWk5dGMyOHpDUUliWl80YUlXQ1drdzZoOU9hMFM5eDlZRGY0WTluLS1pcDUyWGdYc0gzNzJzelA4NGhwZk1QUE8xVFVQSWxUQXFrUkVhS2wyWkthd2Z6UmdXX3VFNVU2TS1R?oc=5",
-   "datum": "2026-11-13",
-   "sprache": "en"
   }
  ]
 }

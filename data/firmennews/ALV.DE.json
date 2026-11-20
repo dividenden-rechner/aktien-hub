@@ -1,7 +1,22 @@
 {
  "hub": "ALV.DE",
  "name": "Allianz",
- "stand": "2026-11-19",
+ "stand": "2026-11-20",
  "quelle": "Google News (Wirtschaftsmedien, deutsch und englisch)",
- "meldungen": []
+ "meldungen": [
+  {
+   "titel": "Neue Prognose: Allianz-Aktie vor großem Versicherungsboom?",
+   "quelle": "Börse Online",
+   "link": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxPb2FSa3FfQ09qRHhlY2lLbHBBQjRRa3dDVW5kWUFJS1FBTEhuVk9uUnhPTF9kbC1jdk5NRmV5QWJlWm1raHMtdUM3N3BDbjZuaXhfTktnZURTY1NHdlBRbzg0bFlKRXMxVGJjUy1Lam1LeDlJSVhtN0FSazBoUGxDRHhZR2gxVmpLYUJlVWFFdk54OW1WMllzQTdTQ2RzVnZvazg2ZjlMQ3JHcjM2dGRvblhrUFJOVlpQZ0ZZ?oc=5",
+   "datum": "2026-11-20",
+   "sprache": "de"
+  },
+  {
+   "titel": "KI-Schäden wachsen rasant: Allianz und Hiscox schlagen Alarm",
+   "quelle": "FAZ",
+   "link": "https://news.google.com/rss/articles/CBMixAFBVV95cUxOdFN0QmExT1piTHdIbnNiS3lCYkE2VnppOW1BRTZ3YlM1N2NjLTVmTjFzaVp3X0ZmOHdnY09iZUdvbm9YdFB0TDk1NEtXQmVzOFFRZnBfLTFpVFVqcW01QU14S0NieVp1M1gzblBVeDhISGlyRzFiSU5qZ05fN2ZqVEFub2s4enVzS0tTTzFJTXczd1FRZmhHUFRFU1h4U3hfNjRCSVFDMjNubElZNzI2cnIwNnZrWWZOWGJYWWZxTDk2clli?oc=5",
+   "datum": "2026-11-19",
+   "sprache": "de"
+  }
+ ]
 }

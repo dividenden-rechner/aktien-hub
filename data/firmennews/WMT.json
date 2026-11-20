@@ -1,9 +1,17 @@
 {
  "hub": "WMT",
  "name": "Walmart Inc.",
- "stand": "2026-11-19",
+ "stand": "2026-11-20",
  "quelle": "Google News (Wirtschaftsmedien, deutsch und englisch)",
  "meldungen": [
+  {
+   "titel": "Quartalszahlen",
+   "quelle": "SEC-Meldung",
+   "link": "https://www.sec.gov/Archives/edgar/data/104169/000010416926000168/wmt-20261119.htm",
+   "datum": "2026-11-19",
+   "sprache": "en",
+   "typ": "pm"
+  },
   {
    "titel": "Walmart Raises Outlook as Wealthier Shoppers Hunt for Deals",
    "quelle": "Bloomberg.com",
@@ -19,9 +27,9 @@
    "sprache": "en"
   },
   {
-   "titel": "Walmart Shoppers Bought More Propane, Water as Outages Spread",
+   "titel": "Panicked Shoppers Stock Up on Canned Goods, Water as ‘Doomsday Prepping’ Spikes",
    "quelle": "Bloomberg.com",
-   "link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxQSGRTMzhwRF9IUjJwaklDY3RPMzR1YXZEX1lDdnlRM09hN0QzTTEwc29xdzY3Z1RYOFp5eDg3RWNCNDl3ZlRMWHV6UHlHWFRRZ2JyNGVSX3F2LTBja1R0U3pvaU1OQkREbllDck5TbUhMNHBYVWhTWTRtNEo2ZGJwYU1fdjJFMTNobVZTWFZHa3A4ZzRLQlJHeVhVYVdvbHhOUVoyZEdtQzV4dkJfNUZVdg?oc=5",
+   "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxNSUtOSTZnS3NZWG5OUnhOWjVhWkpuRjRTNlNFRWUwYUREYnlRaXVIbjY5Qy03U0pfZWZ0RURRd2lLX1MxLW5jN1lRRjhZYXBaczVwYWhQa2o3ZnBJNFUzZjlnbTlNQXgyY2ZEMThjRXVjMHVTT1pINnNydHdqbXVJWTlaSm1ESExJNFhOWWdwUDVxUVpTR2FHaXh0ZjhqeUgzamVHcUg1SkZTblBOSkRGZm9HQllfUQ?oc=5",
    "datum": "2026-11-19",
    "sprache": "en"
   },

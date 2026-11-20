@@ -1,9 +1,16 @@
 {
  "hub": "APP",
  "name": "AppLovin Corporation",
- "stand": "2026-11-19",
+ "stand": "2026-11-20",
  "quelle": "Google News (Wirtschaftsmedien, deutsch und englisch)",
  "meldungen": [
+  {
+   "titel": "This tech stock has been nearly cut in half this year. I think Wall Street is getting it wrong",
+   "quelle": "CNBC",
+   "link": "https://news.google.com/rss/articles/CBMidkFVX3lxTE1WQzhOUzF6a2lzU2c0OVM5cjRzNWt6QzlFbm8zRDFTcGhicTZwTUhYWFBUd01URXpKLUpwT1dCeW5vQmFQck5uRzZQWXBUaUpOT3RzZ1Z5blNIMGtjY1NLb0R4S1ltWHNsWTZycm9raXpvUzJZRWc?oc=5",
+   "datum": "2026-11-19",
+   "sprache": "en"
+  },
   {
    "titel": "AppLovin among firms in talks to acquire Criteo, sources say",
    "quelle": "Reuters",

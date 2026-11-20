@@ -1,54 +1,61 @@
 {
  "hub": "AMZN",
  "name": "AMAZON.COM, INC.",
- "stand": "2026-11-18",
+ "stand": "2026-11-20",
  "quelle": "Google News (Wirtschaftsmedien, deutsch und englisch)",
  "meldungen": [
   {
-   "titel": "New Whole Foods Market in Westlake Village, California, to Open December 17",
-   "quelle": "Unternehmen",
-   "link": "https://press.aboutamazon.com/2026/11/new-whole-foods-market-in-westlake-village-california-to-open-december-17",
-   "datum": "2026-11-17",
-   "sprache": "en",
-   "typ": "pm"
-  },
-  {
-   "titel": "LSEG Risk Intelligence expands World-Check One cloud infrastructure in APAC with Singapore deployment",
-   "quelle": "Unternehmen",
-   "link": "https://press.aboutamazon.com/aws/2026/11/lseg-risk-intelligence-expands-world-check-one-cloud-infrastructure-in-apac-with-singapore-deployment",
-   "datum": "2026-11-17",
-   "sprache": "en",
-   "typ": "pm"
-  },
-  {
-   "titel": "ANZ completes major cloud data transformation, strengthening data foundations to improve customer experiences",
-   "quelle": "Unternehmen",
-   "link": "https://press.aboutamazon.com/aws/2026/11/anz-completes-major-cloud-data-transformation-strengthening-data-foundations-to-improve-customer-experiences",
-   "datum": "2026-11-17",
-   "sprache": "en",
-   "typ": "pm"
-  },
-  {
-   "titel": "Transamerica Expands Strategic Relationship with AWS to Scale Responsible AI Capabilities",
-   "quelle": "Unternehmen",
-   "link": "https://press.aboutamazon.com/aws/2026/11/transamerica-expands-strategic-relationship-with-aws-to-scale-responsible-ai-capabilities",
-   "datum": "2026-11-17",
-   "sprache": "en",
-   "typ": "pm"
-  },
-  {
-   "titel": "ULA Zeroes In on Cause of Rocket Failure During Amazon Launch",
+   "titel": "Amazon’s Standard-Bearer Act on Climate Is Wearing Thin",
    "quelle": "Bloomberg.com",
-   "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxOMW5fajAyQndqNGNzVTJ1QlJJblhCSk5RMHdSM0VBS24wclktWjk3ZXpVTVRacG9GVk5HeVozWEJYMUZOeXROZjNRYzljcnBJajYwUFhqcUJuR0V6WUI5TDFWX1lvckJfZUtaRWRiOUNTQXNrc3ZfZnBYb1V1aVNfaldiZ3d6V3JBbi1rR0V5dVprN0J4ZnRST1Z4ZDhibktuN25pRjhhOWVBajdJd1BYZV9B?oc=5",
-   "datum": "2026-11-17",
+   "link": "https://news.google.com/rss/articles/CBMirgFBVV95cUxOM3h1aE9MaVNzNktBME9WVlhCZTFHN2RaYVBrMjYzVTRTQzdDTWEyNmVWcnUzOFVOQjJHc3FhUG1tTGJybnBaNHljWGZaLWpleVBGMXNGMkZDaHUyeUdkcDJKRXd2bnRrQVdXLUlUSVlIZnZJS0htVXMydW4zTW9teU5iRFQ3VGJhLWNQM1lxUHhUcTZRb2oycGU1Q0E3cWM1UUR3MEltck9qOXVqdXc?oc=5",
+   "datum": "2026-11-20",
    "sprache": "en"
   },
   {
-   "titel": "Uber Starts Offering Amazon’s Driverless Zoox Rides in Las Vegas",
+   "titel": "Amazon Ups Pressure on NYC Delivery Bill With Threat to Move Out",
    "quelle": "Bloomberg.com",
-   "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxOcXdqaVIzMmoxQXdXNG9EZWtCMnpSNTB4Z1duZEEzUGt2N2p1SUZpc1IzNTJKb2VwUVIxZVBDTFNfU1hSNVdFT0JuN25zOHdCc1J6YUgyUTV1LXV6ZjRpcnk2YVpQS0RmMTZsSk1hamVNbUp3cjVjWWQzQ041SG5OZnZuLUVubzFqa1Uyb2lqZEEtZTA2QmdQLVptNkt4UlRXRi1KS01sV1BIaFF4Vk15WE9WcU53Zw?oc=5",
-   "datum": "2026-11-16",
+   "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxNdVBRbVlJeWNzSU9zRE1jUlFNT3lpMy1CSTJraEpmVjNmZHBUNjhIZlA1eTUyLXpXTVVQOWsyQlRZWGNnamVyaHFLRWQwZU5CWkdCWm8xQVhGdDlaMXlyNDlzTnlMOU5jaVhSb0oxNkxXdkpnYkFLclpOLUJ0THBQeFpqTnJPSGRCb0lDYjZzWHhzcVFQVGJ6cVJtSDJkcExfdGpjRFo2NHJKeWQ5UnNrWG1Dek1ZZw?oc=5",
+   "datum": "2026-11-19",
    "sprache": "en"
+  },
+  {
+   "titel": "Blue Owl Plans $513 Million CMBS for Amazon-Leased Data Center",
+   "quelle": "Bloomberg.com",
+   "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxPVUVaaktqamVpSXJCWjhzSEJrUkRaVUpKNUpEamI3VWpUMW43WlVraDRuY25BV19GUHNId04wNnZnTTVNc1EwNGtSMzcxdVliVXlHOHl1bzd0Wm41T19fa1c5MEI3c2lxMU1FRWlaWXllZmtqUGN3ZW1aQ0s3YjU4OE1vVkJnWlBVTHlhaURjQ0hfeW9KSW51SW9EWEZIX0ppUmtwVXZFM2NNLUJBMERhOU1R?oc=5",
+   "datum": "2026-11-19",
+   "sprache": "en"
+  },
+  {
+   "titel": "Meet the Anzellans: Inside Imagineering R&D’s Newest Robotic Characters",
+   "quelle": "Unternehmen",
+   "link": "https://press.aboutamazon.com/2026/11/meet-the-anzellans-inside-imagineering-r-ds-newest-robotic-characters",
+   "datum": "2026-11-18",
+   "sprache": "en",
+   "typ": "pm"
+  },
+  {
+   "titel": "Bodø/Glimt Selects AWS to Enhance Fan Experiences and Team Performance Analytics",
+   "quelle": "Unternehmen",
+   "link": "https://press.aboutamazon.com/aws/2026/11/bodø-glimt-selects-aws-to-enhance-fan-experiences-and-team-performance-analytics",
+   "datum": "2026-11-18",
+   "sprache": "en",
+   "typ": "pm"
+  },
+  {
+   "titel": "First Whole Foods Market Daily Shop to Open in Queens, New York, on December 18",
+   "quelle": "Unternehmen",
+   "link": "https://press.aboutamazon.com/2026/11/first-whole-foods-market-daily-shop-to-open-in-queens-new-york-on-december-18",
+   "datum": "2026-11-18",
+   "sprache": "en",
+   "typ": "pm"
+  },
+  {
+   "titel": "Amazon Ads Holiday Sponsorship Program Returns for Year Two with Charitable Giving, Creator Events, and Celebrity-Hosted Content",
+   "quelle": "Unternehmen",
+   "link": "https://press.aboutamazon.com/2026/11/amazon-ads-holiday-sponsorship-program-returns-for-year-two-with-charitable-giving-creator-events-and-celebrity-hosted-content",
+   "datum": "2026-11-18",
+   "sprache": "en",
+   "typ": "pm"
   }
  ]
 }

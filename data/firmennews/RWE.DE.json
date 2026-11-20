@@ -1,9 +1,16 @@
 {
  "hub": "RWE.DE",
  "name": "RWE",
- "stand": "2026-11-19",
+ "stand": "2026-11-20",
  "quelle": "Google News (Wirtschaftsmedien, deutsch und englisch)",
  "meldungen": [
+  {
+   "titel": "RWE-Aktie: Unternehmen schwächelt",
+   "quelle": "WELT",
+   "link": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxOeG53TGttcDJVR1pGX1pUenduRUEwZ0J0OG51S2hyQnZZQ2VIUEM0VW9tWmlZZUYtS3Qzak5uNXh1SGpjQTdJSjVDQnBlTWlyMzFyQ21aRHdhSVFXSElqZ1BBV2hoc2RJVVJpZFRCM2JHQnJsdzZXSkxGWHY2Y3kxTHpsVEhqdV9xNGUxaTAyNWgtVDV6dWh3em8yTms5V0ZEX25ZS0VEWUh6UQ?oc=5",
+   "datum": "2026-11-20",
+   "sprache": "de"
+  },
   {
    "titel": "RWE-Aktie: Unternehmen erholt sich",
    "quelle": "WELT",
@@ -26,16 +33,16 @@
    "sprache": "en"
   },
   {
-   "titel": "KKR, Germany’s RWE Invest $16 Billion in U.K. Wind-Power Projects",
-   "quelle": "WSJ",
-   "link": "https://news.google.com/rss/articles/CBMipwFBVV95cUxOaldxMGtXXzBtUjFRLXdaU0pIanMzXzJEM19WOVpJSDRzXy1yQm1rRkZ3YlZfeEpOd05XUGNRTXhZNXNJUFdMN0Jyek1MMktpVElTREJ4a2JOU2tkRVBldUNsWmpBbjV4WTl5NXB2NlhSd0p6c1NpV0NZTmZJYjVlR216bGczLWhOVllhaXAyN1lmTUV4QmxJWS1zb1ZpM2RlbHR3VGh0Yw?oc=5",
+   "titel": "RWE, KKR finalise $16 billion investment in UK renewables",
+   "quelle": "Reuters",
+   "link": "https://news.google.com/rss/articles/CBMipwFBVV95cUxPMWZqWUJrNUF3VmVHaFNVY2FzczhHRm1hLTN1b3BBNTRQc2xzOS1XLTgyMTkxVFNON29LQnNiV1NFYjRNZXFrSnJnV2pvaC1nTklFR2JHZlRSMklwQUxmbThGdWdCakRvVlNCX2pYN3pwTFVNSW43MVBTblN4UHhKWFhHS21WdnNsSFRXQXBQTldUR1dDZzJXTXEtZlpPaEZ5VUJUUGludw?oc=5",
    "datum": "2026-11-11",
    "sprache": "en"
   },
   {
-   "titel": "RWE, KKR finalise $16 billion investment in UK renewables",
-   "quelle": "Reuters",
-   "link": "https://news.google.com/rss/articles/CBMipwFBVV95cUxPMWZqWUJrNUF3VmVHaFNVY2FzczhHRm1hLTN1b3BBNTRQc2xzOS1XLTgyMTkxVFNON29LQnNiV1NFYjRNZXFrSnJnV2pvaC1nTklFR2JHZlRSMklwQUxmbThGdWdCakRvVlNCX2pYN3pwTFVNSW43MVBTblN4UHhKWFhHS21WdnNsSFRXQXBQTldUR1dDZzJXTXEtZlpPaEZ5VUJUUGludw?oc=5",
+   "titel": "KKR, Germany’s RWE Invest $16 Billion in U.K. Wind-Power Projects",
+   "quelle": "WSJ",
+   "link": "https://news.google.com/rss/articles/CBMipwFBVV95cUxOaldxMGtXXzBtUjFRLXdaU0pIanMzXzJEM19WOVpJSDRzXy1yQm1rRkZ3YlZfeEpOd05XUGNRTXhZNXNJUFdMN0Jyek1MMktpVElTREJ4a2JOU2tkRVBldUNsWmpBbjV4WTl5NXB2NlhSd0p6c1NpV0NZTmZJYjVlR216bGczLWhOVllhaXAyN1lmTUV4QmxJWS1zb1ZpM2RlbHR3VGh0Yw?oc=5",
    "datum": "2026-11-11",
    "sprache": "en"
   },

@@ -1,7 +1,22 @@
 {
  "hub": "DB1.DE",
  "name": "Deutsche Börse",
- "stand": "2026-11-19",
+ "stand": "2026-11-20",
  "quelle": "Google News (Wirtschaftsmedien, deutsch und englisch)",
- "meldungen": []
+ "meldungen": [
+  {
+   "titel": "Deutsche Börse-Aktie: Unternehmen schwächelt",
+   "quelle": "WELT",
+   "link": "https://news.google.com/rss/articles/CBMiugFBVV95cUxPWTNzTFR3TUc3Q19BYWstYkY2M0FwYzhBR1ltdTc4bnNWWTIzUWhmajNGdkliWDNXakM2QTY5SFpxLUZyTGhHUzBxT01SLWVEWWk0bVN0dnNVVll3dGZ5QlFJV21HcnZuZmFocXh1N2RYNmZzRzFQYm1YOE9CRDRpVE9DQTRKc2Y5ZEIzMEhuN0swYUhVMHVybmh4ZHNqYmZrZUgybnlXX0hBTkpJNnpNSXlxNGFmU2Q4ZHc?oc=5",
+   "datum": "2026-11-20",
+   "sprache": "de"
+  },
+  {
+   "titel": "Deutsche Börse-Aktie: Unternehmen gibt nach",
+   "quelle": "WELT",
+   "link": "https://news.google.com/rss/articles/CBMitwFBVV95cUxQUmVQMHpaNmRHNlZwWFJTLUZvZnR5cDBwZkJTZzdqbndLb3JmNFRURmFMVHVoTi1CTmx1N2ozZE14YTVZbzNQYnNReXBHMUN3V0JZTUtJaFRBUzVSa3lKNjJlYWZYbWllbVltS0hPd0JEYVFYR1JxeW5VQV9rQ3lOaTl2UEROSHIyV1c2LVFkcDJ3YlgzNzhYaWJDYWV6dzA2SGxMcVI1VDZPZ1AxN1dMYmhLakhHbUk?oc=5",
+   "datum": "2026-11-17",
+   "sprache": "de"
+  }
+ ]
 }

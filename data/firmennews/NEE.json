@@ -1,7 +1,15 @@
 {
  "hub": "NEE",
  "name": "NEXTERA ENERGY INC",
- "stand": "2026-11-19",
+ "stand": "2026-11-20",
  "quelle": "Google News (Wirtschaftsmedien, deutsch und englisch)",
- "meldungen": []
+ "meldungen": [
+  {
+   "titel": "US DOJ antitrust division closes probe of NextEra Energy's acquisition of Dominion Energy",
+   "quelle": "Reuters",
+   "link": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxPNjRNSGtBUmZzOEREQ3RfT2FxNXZ6Nk45VV8tUDEwRjg1RkxuY19qZW55R0xNVW1tcERwT3V1V09ySDdkVm4zS3lxZmQwZGZqZHVzSnpicHdqWmVVaVpHeTZKcV9IYkFXWEY3RndiTE1FM096RjFKZ3RxNF92M0pxaGFPSHM0NmJRVS1rYW1YM1BIUGN3Y0dmbTlOYnFNaVdDSl9TRmNTUDBtdnUxcGg1VUFRdW10THpP?oc=5",
+   "datum": "2026-11-20",
+   "sprache": "en"
+  }
+ ]
 }

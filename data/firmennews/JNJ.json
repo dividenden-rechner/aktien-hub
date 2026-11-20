@@ -1,9 +1,32 @@
 {
  "hub": "JNJ",
  "name": "Johnson & Johnson",
- "stand": "2026-11-19",
+ "stand": "2026-11-20",
  "quelle": "Google News (Wirtschaftsmedien, deutsch und englisch)",
  "meldungen": [
+  {
+   "titel": "Johnson & Johnson Announces First Commercial Installation of the OTTAVA™ Robotic Surgical System at Memorial Hermann Health System",
+   "quelle": "Unternehmen",
+   "link": "https://www.investor.jnj.com/investor-news/news-details/2026/Johnson--Johnson-Announces-First-Commercial-Installation-of-the-OTTAVA-Robotic-Surgical-System-at-Memorial-Hermann-Health-System/default.aspx",
+   "datum": "2026-11-19",
+   "sprache": "en",
+   "typ": "pm"
+  },
+  {
+   "titel": "Johnson & Johnson Seeks U.S. FDA Approval for CAPLYTA in Bipolar Mania, Marking Fifth Potential Indication",
+   "quelle": "Unternehmen",
+   "link": "https://www.investor.jnj.com/investor-news/news-details/2026/Johnson--Johnson-Seeks-U-S--FDA-Approval-for-CAPLYTA-in-Bipolar-Mania-Marking-Fifth-Potential-Indication/default.aspx",
+   "datum": "2026-11-19",
+   "sprache": "en",
+   "typ": "pm"
+  },
+  {
+   "titel": "S&P 500 heads for 6th straight decline. Plus, J&J advances two key products",
+   "quelle": "CNBC",
+   "link": "https://news.google.com/rss/articles/CBMivwFBVV95cUxQZ2lNa0t1LXc0Mi1HdHlxNTRQcTdqdTZtMnhDcmJsZkw5X1dMRVVQaG80aW1pdWdRb0xCMmpnNnhsbXhjaWc0T1NBZlIwZTU4VjhhTXo1YmJBUURVWW85WXFiZ0Vldy16Rk5qQWFmQm9yZnM2X09JNVM5TThPS2lON2ZpMk1mTngydzV1dG5PQ09mT3ZxWUZNMms3ZDRSSE8zMlgwQUhUWXBhX2k0NUNTRFktb1dHYjE2c1ZIU0tnTQ?oc=5",
+   "datum": "2026-11-19",
+   "sprache": "en"
+  },
   {
    "titel": "Ken Griffin Sells NYC Duplex to Jets Owner for $58 Million",
    "quelle": "Bloomberg.com",
@@ -34,33 +57,10 @@
    "sprache": "en"
   },
   {
-   "titel": "Johnson & Johnson buys eye disease biotech for up to $3.3bn",
-   "quelle": "Financial Times",
-   "link": "https://news.google.com/rss/articles/CBMihAFBVV95cUxOWDRqWENmN2tjMWhudjdBR1NRdVVpOE5RWExub25YdTZya052VFRUWjF1UWk4cFQtcF9aakhVRVhnQVkyQjR4TUJvSEVnNk5DdERNXzFQUERZa1c1VlNiYkNHOHJ1elgxUzAxNEVvbjcya2hxYjZZeXM3REhya0JKWGtLWXg?oc=5",
-   "datum": "2026-11-16",
-   "sprache": "en"
-  },
-  {
    "titel": "Johnson & Johnson Announces CAPLYTA (lumateperone) Shows Significant and Rapid Improvement in Bipolar Mania in Second Pivotal Phase 3 Study",
    "quelle": "Unternehmen",
    "link": "https://www.investor.jnj.com/investor-news/news-details/2026/Johnson--Johnson-Announces-CAPLYTA-lumateperone-Shows-Significant-and-Rapid-Improvement-in-Bipolar-Mania-in-Second-Pivotal-Phase-3-Study/default.aspx",
    "datum": "2026-11-10",
-   "sprache": "en",
-   "typ": "pm"
-  },
-  {
-   "titel": "Johnson & Johnson reports 73% PSA response rate with investigational pasritamig-based immunotherapy combination in advanced prostate cancer",
-   "quelle": "Unternehmen",
-   "link": "https://www.investor.jnj.com/investor-news/news-details/2026/Johnson--Johnson-reports-73-PSA-response-rate-with-investigational-pasritamig-based-immunotherapy-combination-in-advanced-prostate-cancer/default.aspx",
-   "datum": "2026-11-08",
-   "sprache": "en",
-   "typ": "pm"
-  },
-  {
-   "titel": "Johnson & Johnson announces ICOTYDE® (icotrokinra) delivers significant improvement in psoriatic arthritis disease activity among biologic-naive patients with once-daily targeted oral peptide",
-   "quelle": "Unternehmen",
-   "link": "https://www.investor.jnj.com/investor-news/news-details/2026/Johnson--Johnson-announces-ICOTYDE-icotrokinra-delivers-significant-improvement-in-psoriatic-arthritis-disease-activity-among-biologic-naive-patients-with-once-daily-targeted-oral-peptide/default.aspx",
-   "datum": "2026-11-07",
    "sprache": "en",
    "typ": "pm"
   }
