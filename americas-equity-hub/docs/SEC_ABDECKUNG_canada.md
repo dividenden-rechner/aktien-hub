@@ -1,0 +1,542 @@
+# SEC-Fundamentaldaten: Abdeckung (Stand 2026-11-20)
+
+Firmen mit Daten: **265** von 609. Kernkennzahlen (Umsatz, Gewinn, EPS, Dividende je Aktie, operativer Cashflow) vollständig und aktuell: **163**.
+
+„Aktuell“ heißt: Wert für das letzte Geschäftsjahr der Firma vorhanden. Firmen ohne Dividende zählen bei der Dividende nicht als Lücke.
+
+Nach IFRS (Auslandsfirmen, Beträge in Berichtswährung): 148. Dividende je Aktie nur nachgerechnet (gezahlte Dividenden / Aktien): 55.
+
+| Kennzahl | mit Daten | davon aktuell |
+|---|---:|---:|
+| umsatz | 193 (73%) | 180 (68%) |
+| gewinn | 264 (100%) | 264 (100%) |
+| eps_verw | 241 (91%) | 218 (82%) |
+| dividende_je_aktie | 22 (8%) | 16 (6%) |
+| dividenden_gezahlt | 81 (31%) | 68 (26%) |
+| operativer_cf | 255 (96%) | 251 (95%) |
+| capex | 217 (82%) | 186 (70%) |
+| aktienrueckkauf | 84 (32%) | 55 (21%) |
+| aktien_verw | 245 (92%) | 235 (89%) |
+| schulden_lang | 150 (57%) | 118 (45%) |
+| liquide_mittel | 259 (98%) | 255 (96%) |
+| eigenkapital | 259 (98%) | 259 (98%) |
+| bruttogewinn | 120 (45%) | 106 (40%) |
+| operatives_ergebnis | 186 (70%) | 176 (66%) |
+| abschreibungen | 173 (65%) | 148 (56%) |
+| zinsaufwand | 205 (77%) | 165 (62%) |
+| steuern | 227 (86%) | 206 (78%) |
+| bilanzsumme | 257 (97%) | 255 (96%) |
+| umlaufvermoegen | 246 (93%) | 243 (92%) |
+| kurzfr_verbindl | 243 (92%) | 238 (90%) |
+| verbindlichkeiten | 240 (91%) | 232 (88%) |
+| vorraete | 136 (51%) | 123 (46%) |
+| gewinnruecklagen | 246 (93%) | 243 (92%) |
+| schulden_kurz | 100 (38%) | 61 (23%) |
+
+## Lücken bei Kernkennzahlen (102)
+
+- AEC (Anfield Energy Inc., GJ 2025): umsatz
+- AEM (AGNICO EAGLE MINES LIMITED, GJ 2013): umsatz
+- AUST (Austin Gold Corp., GJ 2025): umsatz
+- BAM (BROOKFIELD ASSET MANAGEMENT LTD., GJ 2025): eps_verw, dividende_je_aktie
+- BCTX (BRIACELL THERAPEUTICS CORP., GJ 2026): umsatz
+- BEPC (BROOKFIELD RENEWABLE CORPORATION, GJ 2025): eps_verw, dividende_je_aktie
+- BHST (BIOHARVEST SCIENCES INC., GJ 2025): eps_verw
+- BIPC (BROOKFIELD INFRASTRUCTURE CORPORATION, GJ 2025): eps_verw, dividende_je_aktie
+- BTG (B2GOLD CORP, GJ 2025): umsatz
+- CEF (SPROTT PHYSICAL GOLD AND SILVER TRUST, GJ 2025): umsatz
+- CHAI (CORE AI HOLDINGS, INC., GJ 2025): eps_verw
+- CIK1168981 (CORDOVACANN CORP., GJ 2025): eps_verw, dividende_je_aktie
+- CIK1175596 (AMARC RESOURCES LTD., GJ 2025): umsatz
+- CIK1199392 (EMGOLD MINING CORP, GJ 2017): umsatz
+- CIK1271554 (ENTREE RESOURCES LTD., GJ 2017): umsatz, eps_verw
+- CIK1304409 (ATHENA GOLD CORPORATION, GJ 2024): umsatz
+- CIK1319150 (Pacific Booker Minerals Inc., GJ 2025): umsatz, eps_verw
+- CIK1336364 (Giga Metals Corp, GJ 2020): umsatz
+- CIK1346917 (GENTOR RESOURCES INC., GJ 2025): umsatz
+- CIK1355736 (AVRICORE HEALTH INC., GJ 2020): umsatz, eps_verw, operativer_cf
+- CIK1408146 (SCANDIUM INTERNATIONAL MINING CORP., GJ 2023): umsatz, eps_verw
+- CIK1409036 (Silver North Resources Ltd., GJ 2025): umsatz, eps_verw
+- CIK1445467 (Avrupa Minerals Ltd., GJ 2024): umsatz
+- CIK1464165 (BETTERLIFE PHARMA INC., GJ 2018): umsatz
+- CIK1545224 (SILVER ELEPHANT MINING CORP., GJ 2021): umsatz
+- CIK1570843 (GREENBRIAR SUSTAINABLE LIVING INC., GJ 2024): umsatz
+- CIK1618755 (RESTAURANT BRANDS INTERNATIONAL LIMITED PARTNERSHIP, GJ 2025): eps_verw, dividende_je_aktie
+- CIK1641229 (FIRST MINING GOLD CORP., GJ 2025): umsatz
+- CIK1648636 (TRILLION ENERGY INTERNATIONAL INC., GJ 2021): eps_verw
+- CIK1699880 (American Lithium Corp., GJ 2024): umsatz
+- CIK1786318 (INTERNATIONAL BATTERY METALS LTD., GJ 2026): umsatz
+- CIK1807983 (Medicenna Therapeutics Corp., GJ 2023): umsatz, operativer_cf
+- CIK1855743 (Arras Minerals Corp., GJ 2022): umsatz, eps_verw, operativer_cf
+- CIK1871130 (Brookfield Business Holdings Corporation, GJ 2025): eps_verw, dividende_je_aktie
+- CIK1888151 (FEMTO TECHNOLOGIES INC., GJ 2024): operativer_cf
+- CIK1893899 (ALASKA SILVER CORP., GJ 2025): umsatz
+- CIK1904501 (Zentek Ltd., GJ 2025): umsatz
+- CIK811522 (QUARTZ MOUNTAIN RESOURCES LTD., GJ 2025): umsatz
+- CIK849997 (FEC RESOURCES INC., GJ 2024): umsatz
+- CIK868822 (CANAGOLD RESOURCES LTD., GJ 2024): umsatz
+- CIK915191 (FAIRFAX FINANCIAL HOLDINGS LTD/ CAN, GJ 2025): umsatz
+- CMND (Clearmind Medicine Inc., GJ 2025): umsatz
+- CNL (Collective Mining Ltd., GJ 2025): umsatz
+- CRDL (Cardiol Therapeutics Inc., GJ 2025): umsatz
+- DFTX (Definium Therapeutics, Inc., GJ 2025): umsatz
+- DMAC (DIAMEDICA THERAPEUTICS INC., GJ 2025): umsatz, eps_verw
+- DRUG (BRIGHT MINDS BIOSCIENCES INC., GJ 2024): umsatz
+- EDSA (EDESA BIOTECH, INC., GJ 2025): umsatz, eps_verw
+- EGO (ELDORADO GOLD CORP /FI, GJ 2025): operativer_cf
+- ELBM (Electra Battery Materials Corp, GJ 2025): umsatz
+- ENGN (enGene Therapeutics Inc., GJ 2025): umsatz
+- FMST (Foremost Clean Energy Ltd., GJ 2025): umsatz
+- FNUC (Frontier Nuclear and Minerals Inc., GJ 2025): umsatz
+- FSM (FORTUNA MINING CORP., GJ 2025): operativer_cf
+- FURY (FURY GOLD MINES LTD, GJ 2025): umsatz
+- GLDG (GoldMining Inc., GJ 2025): umsatz, operativer_cf
+- GRO (Brazil Potash Corp., GJ 2025): umsatz
+- HELP (CYBIN INC., GJ 2025): umsatz
+- HOVR (NEW HORIZON AIRCRAFT LTD., GJ 2026): umsatz
+- HSLV (Highlander Silver Corp., GJ 2024): umsatz
+- IMCC (IM Cannabis Corp., GJ 2025): eps_verw
+- ISOU (IsoEnergy Ltd., GJ 2025): umsatz
+- JAGU (JAGUAR URANIUM CORP., GJ 2025): umsatz
+- LAC (LITHIUM AMERICAS CORP., GJ 2025): umsatz
+- LCU (LION COPPER CORP., GJ 2025): umsatz
+- MDCX (MEDICUS PHARMA LTD., GJ 2025): umsatz
+- MIST (Milestone Pharmaceuticals Inc., GJ 2025): umsatz
+- MSLE (Satellos Bioscience Inc., GJ 2025): umsatz
+- MTRI (INMED PHARMACEUTICALS INC., GJ 2026): umsatz
+- NAK (NORTHERN DYNASTY MINERALS LTD, GJ 2025): umsatz
+- NB (NioCorp Developments Ltd., GJ 2026): umsatz
+- NEWP (New Pacific Metals Corp., GJ 2025): umsatz
+- NEXM (NEXMETALS MINING CORP., GJ 2025): umsatz
+- NG (NOVAGOLD RESOURCES INC., GJ 2025): eps_verw
+- NMG (Nouveau Monde Graphite Inc., GJ 2025): umsatz
+- NXE (NexGen Energy Ltd., GJ 2025): umsatz
+- ORIO (MOGO INC., GJ 2020): gewinn, eps_verw, operativer_cf
+- PBM (PSYENCE BIOMEDICAL LTD, GJ 2025): umsatz
+- PDS (PRECISION DRILLING CORPORATION, GJ 2019): umsatz, eps_verw, operativer_cf
+- PHOS (First Phosphate Corp., GJ 2024): umsatz
+- PLG (PLATINUM GROUP METALS LTD., GJ 2025): umsatz
+- PMN (PROMIS NEUROSCIENCES INC., GJ 2025): umsatz
+- PPTA (Perpetua Resources Corp., GJ 2025): umsatz
+- PSLV (SPROTT PHYSICAL SILVER TRUST, GJ 2025): umsatz
+- QNC (Quantum eMotion Corp, GJ 2025): umsatz
+- QNTM (Quantum BioPharma Ltd., GJ 2022): umsatz
+- SA (Seabridge Gold Inc., GJ 2025): umsatz
+- SKE (Skeena Resources Limited, GJ 2025): umsatz
+- SLI (Standard Lithium Ltd., GJ 2024): umsatz, operativer_cf
+- SPPP (SPROTT PHYSICAL PLATINUM AND PALLADIUM TRUST, GJ 2025): umsatz
+- SU (SUNCOR ENERGY INC, GJ 2025): operativer_cf
+- SVM (SILVERCORP METALS INC., GJ 2021): umsatz, eps_verw, operativer_cf
+- TMC (TMC THE METALS COMPANY INC., GJ 2025): umsatz
+- TMQ (Trilogy Metals Inc., GJ 2025): umsatz
+- TREO (Tactical Resources Corp., GJ 2026): umsatz
+- USAS (AMERICAS GOLD AND SILVER CORPORATION, GJ 2021): umsatz, eps_verw, operativer_cf
+- VET (VERMILION ENERGY INC., GJ 2025): operativer_cf
+- VZLA (Vizsla Silver Corp., GJ 2025): umsatz
+- WRN (WESTERN COPPER AND GOLD CORPORATION, GJ 2025): umsatz
+- XBIT (XBIOTECH INC., GJ 2025): umsatz
+- XRTX (XORTX Therapeutics Inc., GJ 2021): umsatz, eps_verw
+- ZENA (ZenaTech, Inc., GJ 2025): umsatz
+
+## Ersatz-Namen und Split-Bereinigungen (53)
+
+- ABUS: Split 1:2 zwischen 2014 und 2015 bereinigt
+- ACOG: Split 1:2 zwischen 2023 und 2024 bereinigt
+- AVX: Split 1:183 zwischen 2024 und 2025 bereinigt
+- AVX: Split 1:8 zwischen 2023 und 2024 bereinigt
+- BAM capex: PaymentsToAcquireOtherPropertyPlantAndEquipment
+- BAM aktienrueckkauf: PaymentsForRepurchaseOfEquity
+- BCTX: Split 1:12 zwischen 2025 und 2026 bereinigt
+- CGC: Split 1:3 zwischen 2025 und 2026 bereinigt
+- CIK1304409: Split 1:2 zwischen 2021 und 2022 bereinigt
+- CIK1346917: Split 1:3 zwischen 2015 und 2019 bereinigt
+- CIK1464165 schulden_lang: NotesPayable
+- CIK1648636 capex: PaymentsToAcquireOilAndGasProperty
+- CIK1653606: Split 1:4 zwischen 2024 und 2025 bereinigt
+- CIK1653606: Split 1:29 zwischen 2018 und 2019 bereinigt
+- CIK1684144: Split 1:3 zwischen 2019 und 2020 bereinigt
+- CIK1711141 schulden_lang: NotesPayable
+- CIK1893899 schulden_lang: NotesPayable
+- CIK811522: Split 1:3 zwischen 2017 und 2018 bereinigt
+- CMND: Split 1:15 zwischen 2023 und 2024 bereinigt
+- CNI: Split 1:2 zwischen 2010 und 2011 bereinigt
+- CNQ: Split 1:2 zwischen 2021 und 2022 bereinigt
+- CP: Split 1:5 zwischen 2018 und 2019 bereinigt
+- CRON dividenden_gezahlt: DividendsCommonStockCash
+- CSIQ aktienrueckkauf: PaymentsForRepurchaseOfEquity
+- DFSC: Split 1:2 zwischen 2023 und 2024 bereinigt
+- DFSC: Split 1:6 zwischen 2022 und 2023 bereinigt
+- DFTX: Split 1:2 zwischen 2023 und 2024 bereinigt
+- DPRO: Split 1:5 zwischen 2024 und 2025 bereinigt
+- DPRO: Split 1:2 zwischen 2023 und 2024 bereinigt
+- ENGN schulden_lang: LongTermNotesPayable
+- ENGN: Split 1:55 zwischen 2023 und 2024 bereinigt
+- EPSN schulden_lang: DebtInstrumentCarryingAmount
+- HIVE capex: PaymentsToAcquireOtherPropertyPlantAndEquipment
+- IAUX: Split 1:2 zwischen 2024 und 2025 bereinigt
+- ITRG: Split 1:2 zwischen 2022 und 2023 bereinigt
+- LAC schulden_lang: DebtInstrumentCarryingAmount
+- MTRI: Split 1:4 zwischen 2025 und 2026 bereinigt
+- MTRI: Split 1:3 zwischen 2024 und 2025 bereinigt
+- MTRI: Split 1:2 zwischen 2021 und 2022 bereinigt
+- NEXM schulden_lang: DebtInstrumentCarryingAmount
+- NG schulden_lang: LongTermNotesPayable
+- NMG: Split 1:2 zwischen 2023 und 2024 bereinigt
+- OTEX: Split 1:2 zwischen 2014 und 2015 bereinigt
+- OTEX: Split 1:2 zwischen 2011 und 2012 bereinigt
+- PLG: Split 1:2 zwischen 2018 und 2019 bereinigt
+- PTIV: Split 1:2 zwischen 2024 und 2025 bereinigt
+- SOBO capex: PaymentsToAcquireOilAndGasPropertyAndEquipment
+- SOBO schulden_lang: DebtInstrumentCarryingAmount
+- TRP capex: PaymentsToAcquireOilAndGasPropertyAndEquipment
+- TRP schulden_lang: DebtInstrumentCarryingAmount
+- TU: Split 1:2 zwischen 2018 und 2019 bereinigt
+- VMAR: Split 1:486 zwischen 2025 und 2026 bereinigt
+- XENE: Split 1:2 zwischen 2018 und 2020 bereinigt
+
+## Hinweise
+
+- AIBZ: keine Finanzdaten (CIK 2100457)
+- APXC: keine Finanzdaten (CIK 2093856)
+- AUXX: Abruf fehlgeschlagen (HTTP Error 404: Not Found)
+- AYA: Abruf fehlgeschlagen (HTTP Error 404: Not Found)
+- BMM: Abruf fehlgeschlagen (HTTP Error 404: Not Found)
+- BMMX: Abruf fehlgeschlagen (HTTP Error 404: Not Found)
+- BSRT: Abruf fehlgeschlagen (HTTP Error 404: Not Found)
+- BTQ: Abruf fehlgeschlagen (HTTP Error 404: Not Found)
+- CIK1001500: Abruf fehlgeschlagen (HTTP Error 404: Not Found)
+- CIK1002366: Abruf fehlgeschlagen (HTTP Error 404: Not Found)
+- CIK1019742: Abruf fehlgeschlagen (HTTP Error 404: Not Found)
+- CIK1023109: Abruf fehlgeschlagen (HTTP Error 404: Not Found)
+- CIK1028357: Abruf fehlgeschlagen (HTTP Error 404: Not Found)
+- CIK1061612: Abruf fehlgeschlagen (HTTP Error 404: Not Found)
+- CIK1064052: Abruf fehlgeschlagen (HTTP Error 404: Not Found)
+- CIK1075822: Abruf fehlgeschlagen (HTTP Error 404: Not Found)
+- CIK1077640: Abruf fehlgeschlagen (HTTP Error 404: Not Found)
+- CIK1085921: keine Jahreswerte
+- CIK1113152: Abruf fehlgeschlagen (HTTP Error 404: Not Found)
+- CIK1113260: Abruf fehlgeschlagen (HTTP Error 404: Not Found)
+- CIK1123267: Abruf fehlgeschlagen (HTTP Error 404: Not Found)
+- CIK1178526: Abruf fehlgeschlagen (HTTP Error 404: Not Found)
+- CIK1191832: Abruf fehlgeschlagen (HTTP Error 404: Not Found)
+- CIK1254435: Abruf fehlgeschlagen (HTTP Error 404: Not Found)
+- CIK1284237: Abruf fehlgeschlagen (HTTP Error 404: Not Found)
+- CIK1288268: Abruf fehlgeschlagen (HTTP Error 404: Not Found)
+- CIK1301854: Abruf fehlgeschlagen (HTTP Error 404: Not Found)
+- CIK1307926: Abruf fehlgeschlagen (HTTP Error 404: Not Found)
+- CIK1309167: Abruf fehlgeschlagen (HTTP Error 404: Not Found)
+- CIK1318596: Abruf fehlgeschlagen (HTTP Error 404: Not Found)
+- CIK1337090: Abruf fehlgeschlagen (HTTP Error 404: Not Found)
+- CIK1342325: Abruf fehlgeschlagen (HTTP Error 404: Not Found)
+- CIK1364252: Abruf fehlgeschlagen (HTTP Error 404: Not Found)
+- CIK1368845: Abruf fehlgeschlagen (HTTP Error 404: Not Found)
+- CIK1384831: Abruf fehlgeschlagen (HTTP Error 404: Not Found)
+- CIK1387473: Abruf fehlgeschlagen (HTTP Error 404: Not Found)
+- CIK1390352: Abruf fehlgeschlagen (HTTP Error 404: Not Found)
+- CIK1394039: Abruf fehlgeschlagen (HTTP Error 404: Not Found)
+- CIK1394189: Abruf fehlgeschlagen (HTTP Error 404: Not Found)
+- CIK1397616: Abruf fehlgeschlagen (HTTP Error 404: Not Found)
+- CIK1398713: Abruf fehlgeschlagen (HTTP Error 404: Not Found)
+- CIK1403870: Abruf fehlgeschlagen (HTTP Error 404: Not Found)
+- CIK1404353: Abruf fehlgeschlagen (HTTP Error 404: Not Found)
+- CIK1406944: Abruf fehlgeschlagen (HTTP Error 404: Not Found)
+- CIK1407582: Abruf fehlgeschlagen (HTTP Error 404: Not Found)
+- CIK1415758: Abruf fehlgeschlagen (HTTP Error 404: Not Found)
+- CIK1418149: Abruf fehlgeschlagen (HTTP Error 404: Not Found)
+- CIK1419336: Abruf fehlgeschlagen (HTTP Error 404: Not Found)
+- CIK1420049: Abruf fehlgeschlagen (HTTP Error 404: Not Found)
+- CIK1422532: Abruf fehlgeschlagen (HTTP Error 404: Not Found)
+- CIK1423867: Abruf fehlgeschlagen (HTTP Error 404: Not Found)
+- CIK1425061: Abruf fehlgeschlagen (HTTP Error 404: Not Found)
+- CIK1427728: Abruf fehlgeschlagen (HTTP Error 404: Not Found)
+- CIK1427901: Abruf fehlgeschlagen (HTTP Error 404: Not Found)
+- CIK1432588: Abruf fehlgeschlagen (HTTP Error 404: Not Found)
+- CIK1450894: Abruf fehlgeschlagen (HTTP Error 404: Not Found)
+- CIK1463978: Abruf fehlgeschlagen (HTTP Error 404: Not Found)
+- CIK1472466: Abruf fehlgeschlagen (HTTP Error 404: Not Found)
+- CIK1472879: Abruf fehlgeschlagen (HTTP Error 404: Not Found)
+- CIK1477201: Abruf fehlgeschlagen (HTTP Error 404: Not Found)
+- CIK1479480: Abruf fehlgeschlagen (HTTP Error 404: Not Found)
+- CIK1481857: Abruf fehlgeschlagen (HTTP Error 404: Not Found)
+- CIK1482436: Abruf fehlgeschlagen (HTTP Error 404: Not Found)
+- CIK1487615: Abruf fehlgeschlagen (HTTP Error 404: Not Found)
+- CIK1493130: Abruf fehlgeschlagen (HTTP Error 404: Not Found)
+- CIK1495651: Abruf fehlgeschlagen (HTTP Error 404: Not Found)
+- CIK1495730: Abruf fehlgeschlagen (HTTP Error 404: Not Found)
+- CIK1500620: Abruf fehlgeschlagen (HTTP Error 404: Not Found)
+- CIK1503812: Abruf fehlgeschlagen (HTTP Error 404: Not Found)
+- CIK1509397: Abruf fehlgeschlagen (HTTP Error 404: Not Found)
+- CIK1509705: Abruf fehlgeschlagen (HTTP Error 404: Not Found)
+- CIK1520556: Abruf fehlgeschlagen (HTTP Error 404: Not Found)
+- CIK1524326: Abruf fehlgeschlagen (HTTP Error 404: Not Found)
+- CIK1527038: Abruf fehlgeschlagen (HTTP Error 404: Not Found)
+- CIK1536811: Abruf fehlgeschlagen (HTTP Error 404: Not Found)
+- CIK1538189: Abruf fehlgeschlagen (HTTP Error 404: Not Found)
+- CIK1541190: Abruf fehlgeschlagen (HTTP Error 404: Not Found)
+- CIK1544770: Abruf fehlgeschlagen (HTTP Error 404: Not Found)
+- CIK1544883: Abruf fehlgeschlagen (HTTP Error 404: Not Found)
+- CIK1547452: Abruf fehlgeschlagen (HTTP Error 404: Not Found)
+- CIK1548958: Abruf fehlgeschlagen (HTTP Error 404: Not Found)
+- CIK1555980: Abruf fehlgeschlagen (HTTP Error 404: Not Found)
+- CIK1557440: Abruf fehlgeschlagen (HTTP Error 404: Not Found)
+- CIK1566073: Abruf fehlgeschlagen (HTTP Error 404: Not Found)
+- CIK1567663: Abruf fehlgeschlagen (HTTP Error 404: Not Found)
+- CIK1570505: Abruf fehlgeschlagen (HTTP Error 404: Not Found)
+- CIK1576159: Abruf fehlgeschlagen (HTTP Error 404: Not Found)
+- CIK1577783: Abruf fehlgeschlagen (HTTP Error 404: Not Found)
+- CIK1580110: Abruf fehlgeschlagen (HTTP Error 404: Not Found)
+- CIK1583962: Abruf fehlgeschlagen (HTTP Error 404: Not Found)
+- CIK1594856: Abruf fehlgeschlagen (HTTP Error 404: Not Found)
+- CIK1607807: Abruf fehlgeschlagen (HTTP Error 404: Not Found)
+- CIK1609436: Abruf fehlgeschlagen (HTTP Error 404: Not Found)
+- CIK1613979: Abruf fehlgeschlagen (HTTP Error 404: Not Found)
+- CIK1616885: Abruf fehlgeschlagen (HTTP Error 404: Not Found)
+- CIK1622629: Abruf fehlgeschlagen (HTTP Error 404: Not Found)
+- CIK1628935: Abruf fehlgeschlagen (HTTP Error 404: Not Found)
+- CIK1629632: Abruf fehlgeschlagen (HTTP Error 404: Not Found)
+- CIK1635729: Abruf fehlgeschlagen (HTTP Error 404: Not Found)
+- CIK1642178: Abruf fehlgeschlagen (HTTP Error 404: Not Found)
+- CIK1644540: Abruf fehlgeschlagen (HTTP Error 404: Not Found)
+- CIK1650196: Abruf fehlgeschlagen (HTTP Error 404: Not Found)
+- CIK1657800: Abruf fehlgeschlagen (HTTP Error 404: Not Found)
+- CIK1666782: Abruf fehlgeschlagen (HTTP Error 404: Not Found)
+- CIK1678748: Abruf fehlgeschlagen (HTTP Error 404: Not Found)
+- CIK1682056: Abruf fehlgeschlagen (HTTP Error 404: Not Found)
+- CIK1683274: Abruf fehlgeschlagen (HTTP Error 404: Not Found)
+- CIK1683408: Abruf fehlgeschlagen (HTTP Error 404: Not Found)
+- CIK1684505: Abruf fehlgeschlagen (HTTP Error 404: Not Found)
+- CIK1684662: Abruf fehlgeschlagen (HTTP Error 404: Not Found)
+- CIK1686000: Abruf fehlgeschlagen (HTTP Error 404: Not Found)
+- CIK1689448: Abruf fehlgeschlagen (HTTP Error 404: Not Found)
+- CIK1691710: Abruf fehlgeschlagen (HTTP Error 404: Not Found)
+- CIK1703118: Abruf fehlgeschlagen (HTTP Error 404: Not Found)
+- CIK1703292: Abruf fehlgeschlagen (HTTP Error 404: Not Found)
+- CIK1706404: Abruf fehlgeschlagen (HTTP Error 404: Not Found)
+- CIK1712294: Abruf fehlgeschlagen (HTTP Error 404: Not Found)
+- CIK1713979: Abruf fehlgeschlagen (HTTP Error 404: Not Found)
+- CIK1715272: Abruf fehlgeschlagen (HTTP Error 404: Not Found)
+- CIK1716410: Abruf fehlgeschlagen (HTTP Error 404: Not Found)
+- CIK1717695: Abruf fehlgeschlagen (HTTP Error 404: Not Found)
+- CIK1720553: Abruf fehlgeschlagen (HTTP Error 404: Not Found)
+- CIK1723047: Abruf fehlgeschlagen (HTTP Error 404: Not Found)
+- CIK1723455: Abruf fehlgeschlagen (HTTP Error 404: Not Found)
+- CIK1725569: Abruf fehlgeschlagen (HTTP Error 404: Not Found)
+- CIK1725603: Abruf fehlgeschlagen (HTTP Error 404: Not Found)
+- CIK1726159: Abruf fehlgeschlagen (HTTP Error 404: Not Found)
+- CIK1727254: Abruf fehlgeschlagen (HTTP Error 404: Not Found)
+- CIK1727370: Abruf fehlgeschlagen (HTTP Error 404: Not Found)
+- CIK1729653: Abruf fehlgeschlagen (HTTP Error 404: Not Found)
+- CIK1731854: Abruf fehlgeschlagen (HTTP Error 404: Not Found)
+- CIK1733968: Abruf fehlgeschlagen (HTTP Error 404: Not Found)
+- CIK1734427: Abruf fehlgeschlagen (HTTP Error 404: Not Found)
+- CIK1735514: Abruf fehlgeschlagen (HTTP Error 404: Not Found)
+- CIK1736289: Abruf fehlgeschlagen (HTTP Error 404: Not Found)
+- CIK1737270: Abruf fehlgeschlagen (HTTP Error 404: Not Found)
+- CIK1737319: Abruf fehlgeschlagen (HTTP Error 404: Not Found)
+- CIK1742195: Abruf fehlgeschlagen (HTTP Error 404: Not Found)
+- CIK1743235: Abruf fehlgeschlagen (HTTP Error 404: Not Found)
+- CIK1754180: Abruf fehlgeschlagen (HTTP Error 404: Not Found)
+- CIK1771039: Abruf fehlgeschlagen (HTTP Error 404: Not Found)
+- CIK1771755: Abruf fehlgeschlagen (HTTP Error 404: Not Found)
+- CIK1778940: Abruf fehlgeschlagen (HTTP Error 404: Not Found)
+- CIK1783432: Abruf fehlgeschlagen (HTTP Error 404: Not Found)
+- CIK1785476: Abruf fehlgeschlagen (HTTP Error 404: Not Found)
+- CIK1790538: Abruf fehlgeschlagen (HTTP Error 404: Not Found)
+- CIK1790607: Abruf fehlgeschlagen (HTTP Error 404: Not Found)
+- CIK1790693: Abruf fehlgeschlagen (HTTP Error 404: Not Found)
+- CIK1800890: Abruf fehlgeschlagen (HTTP Error 404: Not Found)
+- CIK1803800: Abruf fehlgeschlagen (HTTP Error 404: Not Found)
+- CIK1804792: keine Finanzdaten (CIK 1804792)
+- CIK1807936: Abruf fehlgeschlagen (HTTP Error 404: Not Found)
+- CIK1809267: Abruf fehlgeschlagen (HTTP Error 404: Not Found)
+- CIK1811931: Abruf fehlgeschlagen (HTTP Error 404: Not Found)
+- CIK1813241: Abruf fehlgeschlagen (HTTP Error 404: Not Found)
+- CIK1813419: Abruf fehlgeschlagen (HTTP Error 404: Not Found)
+- CIK1816133: Abruf fehlgeschlagen (HTTP Error 404: Not Found)
+- CIK1817083: Abruf fehlgeschlagen (HTTP Error 404: Not Found)
+- CIK1817161: Abruf fehlgeschlagen (HTTP Error 404: Not Found)
+- CIK1819258: Abruf fehlgeschlagen (HTTP Error 404: Not Found)
+- CIK1820025: Abruf fehlgeschlagen (HTTP Error 404: Not Found)
+- CIK1823126: Abruf fehlgeschlagen (HTTP Error 404: Not Found)
+- CIK1829809: Abruf fehlgeschlagen (HTTP Error 404: Not Found)
+- CIK1832803: Abruf fehlgeschlagen (HTTP Error 404: Not Found)
+- CIK1836503: Abruf fehlgeschlagen (HTTP Error 404: Not Found)
+- CIK1836747: Abruf fehlgeschlagen (HTTP Error 404: Not Found)
+- CIK1836775: Abruf fehlgeschlagen (HTTP Error 404: Not Found)
+- CIK1839154: Abruf fehlgeschlagen (HTTP Error 404: Not Found)
+- CIK1839290: Abruf fehlgeschlagen (HTTP Error 404: Not Found)
+- CIK1839586: Abruf fehlgeschlagen (HTTP Error 404: Not Found)
+- CIK1847706: Abruf fehlgeschlagen (HTTP Error 404: Not Found)
+- CIK1848782: Abruf fehlgeschlagen (HTTP Error 404: Not Found)
+- CIK1850269: Abruf fehlgeschlagen (HTTP Error 404: Not Found)
+- CIK1851535: keine Finanzdaten (CIK 1851535)
+- CIK1852354: Abruf fehlgeschlagen (HTTP Error 404: Not Found)
+- CIK1852753: Abruf fehlgeschlagen (HTTP Error 404: Not Found)
+- CIK1853599: Abruf fehlgeschlagen (HTTP Error 404: Not Found)
+- CIK1853889: Abruf fehlgeschlagen (HTTP Error 404: Not Found)
+- CIK1854257: Abruf fehlgeschlagen (HTTP Error 404: Not Found)
+- CIK1856082: Abruf fehlgeschlagen (HTTP Error 404: Not Found)
+- CIK1858994: Abruf fehlgeschlagen (HTTP Error 404: Not Found)
+- CIK1859022: Abruf fehlgeschlagen (HTTP Error 404: Not Found)
+- CIK1861479: Abruf fehlgeschlagen (HTTP Error 404: Not Found)
+- CIK1864597: Abruf fehlgeschlagen (HTTP Error 404: Not Found)
+- CIK1866034: Abruf fehlgeschlagen (HTTP Error 404: Not Found)
+- CIK1866146: Abruf fehlgeschlagen (HTTP Error 404: Not Found)
+- CIK1866460: Abruf fehlgeschlagen (HTTP Error 404: Not Found)
+- CIK1868050: Abruf fehlgeschlagen (HTTP Error 404: Not Found)
+- CIK1868866: Abruf fehlgeschlagen (HTTP Error 404: Not Found)
+- CIK1869137: Abruf fehlgeschlagen (HTTP Error 404: Not Found)
+- CIK1872061: Abruf fehlgeschlagen (HTTP Error 404: Not Found)
+- CIK1877778: Abruf fehlgeschlagen (HTTP Error 404: Not Found)
+- CIK1884122: Abruf fehlgeschlagen (HTTP Error 404: Not Found)
+- CIK1889352: Abruf fehlgeschlagen (HTTP Error 404: Not Found)
+- CIK1889791: Abruf fehlgeschlagen (HTTP Error 404: Not Found)
+- CIK1894942: Abruf fehlgeschlagen (HTTP Error 404: Not Found)
+- CIK1896752: Abruf fehlgeschlagen (HTTP Error 404: Not Found)
+- CIK1901931: Abruf fehlgeschlagen (HTTP Error 404: Not Found)
+- CIK1902276: Abruf fehlgeschlagen (HTTP Error 404: Not Found)
+- CIK1905688: Abruf fehlgeschlagen (HTTP Error 404: Not Found)
+- CIK1910903: Abruf fehlgeschlagen (HTTP Error 404: Not Found)
+- CIK1913288: Abruf fehlgeschlagen (HTTP Error 404: Not Found)
+- CIK1917817: Abruf fehlgeschlagen (HTTP Error 404: Not Found)
+- CIK1918151: Abruf fehlgeschlagen (HTTP Error 404: Not Found)
+- CIK1920576: Abruf fehlgeschlagen (HTTP Error 404: Not Found)
+- CIK1921050: Abruf fehlgeschlagen (HTTP Error 404: Not Found)
+- CIK1921582: Abruf fehlgeschlagen (HTTP Error 404: Not Found)
+- CIK1925511: Abruf fehlgeschlagen (HTTP Error 404: Not Found)
+- CIK1927026: Abruf fehlgeschlagen (HTTP Error 404: Not Found)
+- CIK1928722: Abruf fehlgeschlagen (HTTP Error 404: Not Found)
+- CIK1930459: Abruf fehlgeschlagen (HTTP Error 404: Not Found)
+- CIK1937453: Abruf fehlgeschlagen (HTTP Error 404: Not Found)
+- CIK1939801: Abruf fehlgeschlagen (HTTP Error 404: Not Found)
+- CIK1944955: Abruf fehlgeschlagen (HTTP Error 404: Not Found)
+- CIK1945166: Abruf fehlgeschlagen (HTTP Error 404: Not Found)
+- CIK1951593: Abruf fehlgeschlagen (HTTP Error 404: Not Found)
+- CIK1958389: Abruf fehlgeschlagen (HTTP Error 404: Not Found)
+- CIK1965615: Abruf fehlgeschlagen (HTTP Error 404: Not Found)
+- CIK1969766: Abruf fehlgeschlagen (HTTP Error 404: Not Found)
+- CIK1970125: Abruf fehlgeschlagen (HTTP Error 404: Not Found)
+- CIK1971260: Abruf fehlgeschlagen (HTTP Error 404: Not Found)
+- CIK1971975: Abruf fehlgeschlagen (HTTP Error 404: Not Found)
+- CIK1972589: Abruf fehlgeschlagen (HTTP Error 404: Not Found)
+- CIK1977971: Abruf fehlgeschlagen (HTTP Error 404: Not Found)
+- CIK1978151: Abruf fehlgeschlagen (HTTP Error 404: Not Found)
+- CIK1978165: Abruf fehlgeschlagen (HTTP Error 404: Not Found)
+- CIK1979408: Abruf fehlgeschlagen (HTTP Error 404: Not Found)
+- CIK1979484: Abruf fehlgeschlagen (HTTP Error 404: Not Found)
+- CIK1981775: Abruf fehlgeschlagen (HTTP Error 404: Not Found)
+- CIK1989815: Abruf fehlgeschlagen (HTTP Error 404: Not Found)
+- CIK1991413: Abruf fehlgeschlagen (HTTP Error 404: Not Found)
+- CIK1992500: Abruf fehlgeschlagen (HTTP Error 404: Not Found)
+- CIK1992604: Abruf fehlgeschlagen (HTTP Error 404: Not Found)
+- CIK1996586: Abruf fehlgeschlagen (HTTP Error 404: Not Found)
+- CIK1999111: Abruf fehlgeschlagen (HTTP Error 404: Not Found)
+- CIK1999124: Abruf fehlgeschlagen (HTTP Error 404: Not Found)
+- CIK2000684: keine Finanzdaten (CIK 2000684)
+- CIK2001201: Abruf fehlgeschlagen (HTTP Error 404: Not Found)
+- CIK2002326: Abruf fehlgeschlagen (HTTP Error 404: Not Found)
+- CIK2003813: Abruf fehlgeschlagen (HTTP Error 404: Not Found)
+- CIK2006413: Abruf fehlgeschlagen (HTTP Error 404: Not Found)
+- CIK2008257: Abruf fehlgeschlagen (HTTP Error 404: Not Found)
+- CIK2011589: Abruf fehlgeschlagen (HTTP Error 404: Not Found)
+- CIK2021989: Abruf fehlgeschlagen (HTTP Error 404: Not Found)
+- CIK2022059: Abruf fehlgeschlagen (HTTP Error 404: Not Found)
+- CIK2025947: Abruf fehlgeschlagen (HTTP Error 404: Not Found)
+- CIK2027037: Abruf fehlgeschlagen (HTTP Error 404: Not Found)
+- CIK2037786: Abruf fehlgeschlagen (HTTP Error 404: Not Found)
+- CIK2044153: Abruf fehlgeschlagen (HTTP Error 404: Not Found)
+- CIK2045300: Abruf fehlgeschlagen (HTTP Error 404: Not Found)
+- CIK2045434: Abruf fehlgeschlagen (HTTP Error 404: Not Found)
+- CIK2046223: Abruf fehlgeschlagen (HTTP Error 404: Not Found)
+- CIK2048847: Abruf fehlgeschlagen (HTTP Error 404: Not Found)
+- CIK2048958: Abruf fehlgeschlagen (HTTP Error 404: Not Found)
+- CIK2049560: Abruf fehlgeschlagen (HTTP Error 404: Not Found)
+- CIK2055938: Abruf fehlgeschlagen (HTTP Error 404: Not Found)
+- CIK2056030: Abruf fehlgeschlagen (HTTP Error 404: Not Found)
+- CIK2056751: Abruf fehlgeschlagen (HTTP Error 404: Not Found)
+- CIK2065282: Abruf fehlgeschlagen (HTTP Error 404: Not Found)
+- CIK2067171: Abruf fehlgeschlagen (HTTP Error 404: Not Found)
+- CIK2068441: Abruf fehlgeschlagen (HTTP Error 404: Not Found)
+- CIK2071881: Abruf fehlgeschlagen (HTTP Error 404: Not Found)
+- CIK2071911: Abruf fehlgeschlagen (HTTP Error 404: Not Found)
+- CIK2071912: Abruf fehlgeschlagen (HTTP Error 404: Not Found)
+- CIK2071913: Abruf fehlgeschlagen (HTTP Error 404: Not Found)
+- CIK2072098: Abruf fehlgeschlagen (HTTP Error 404: Not Found)
+- CIK2072389: Abruf fehlgeschlagen (HTTP Error 404: Not Found)
+- CIK2072563: Abruf fehlgeschlagen (HTTP Error 404: Not Found)
+- CIK2073268: Abruf fehlgeschlagen (HTTP Error 404: Not Found)
+- CIK2073615: Abruf fehlgeschlagen (HTTP Error 404: Not Found)
+- CIK2073620: Abruf fehlgeschlagen (HTTP Error 404: Not Found)
+- CIK2073638: Abruf fehlgeschlagen (HTTP Error 404: Not Found)
+- CIK2073643: Abruf fehlgeschlagen (HTTP Error 404: Not Found)
+- CIK2073655: Abruf fehlgeschlagen (HTTP Error 404: Not Found)
+- CIK2073893: Abruf fehlgeschlagen (HTTP Error 404: Not Found)
+- CIK2073901: Abruf fehlgeschlagen (HTTP Error 404: Not Found)
+- CIK2073913: Abruf fehlgeschlagen (HTTP Error 404: Not Found)
+- CIK2073972: Abruf fehlgeschlagen (HTTP Error 404: Not Found)
+- CIK2074059: Abruf fehlgeschlagen (HTTP Error 404: Not Found)
+- CIK2074157: Abruf fehlgeschlagen (HTTP Error 404: Not Found)
+- CIK2074745: Abruf fehlgeschlagen (HTTP Error 404: Not Found)
+- CIK2075918: Abruf fehlgeschlagen (HTTP Error 404: Not Found)
+- CIK2076631: Abruf fehlgeschlagen (HTTP Error 404: Not Found)
+- CIK2077242: Abruf fehlgeschlagen (HTTP Error 404: Not Found)
+- CIK2081438: Abruf fehlgeschlagen (HTTP Error 404: Not Found)
+- CIK2088688: Abruf fehlgeschlagen (HTTP Error 404: Not Found)
+- CIK2090651: Abruf fehlgeschlagen (HTTP Error 404: Not Found)
+- CIK2092243: Abruf fehlgeschlagen (HTTP Error 404: Not Found)
+- CIK2094900: Abruf fehlgeschlagen (HTTP Error 404: Not Found)
+- CIK2096533: Abruf fehlgeschlagen (HTTP Error 404: Not Found)
+- CIK2099727: Abruf fehlgeschlagen (HTTP Error 404: Not Found)
+- CIK2099818: Abruf fehlgeschlagen (HTTP Error 404: Not Found)
+- CIK2102593: Abruf fehlgeschlagen (HTTP Error 404: Not Found)
+- CIK2103596: Abruf fehlgeschlagen (HTTP Error 404: Not Found)
+- CIK2105038: keine Finanzdaten (CIK 2105038)
+- CIK2111453: keine Finanzdaten (CIK 2111453)
+- CIK2113853: Abruf fehlgeschlagen (HTTP Error 404: Not Found)
+- CIK2117702: Abruf fehlgeschlagen (HTTP Error 404: Not Found)
+- CIK2123553: Abruf fehlgeschlagen (HTTP Error 404: Not Found)
+- CIK2125750: Abruf fehlgeschlagen (HTTP Error 404: Not Found)
+- CIK2129284: keine Finanzdaten (CIK 2129284)
+- CIK2130027: Abruf fehlgeschlagen (HTTP Error 404: Not Found)
+- CIK2132461: Abruf fehlgeschlagen (HTTP Error 404: Not Found)
+- CIK2139482: Abruf fehlgeschlagen (HTTP Error 404: Not Found)
+- CIK2139627: Abruf fehlgeschlagen (HTTP Error 404: Not Found)
+- CIK2141493: Abruf fehlgeschlagen (HTTP Error 404: Not Found)
+- CIK2144401: Abruf fehlgeschlagen (HTTP Error 404: Not Found)
+- CIK2145424: Abruf fehlgeschlagen (HTTP Error 404: Not Found)
+- CIK800523: Abruf fehlgeschlagen (HTTP Error 404: Not Found)
+- CIK842622: Abruf fehlgeschlagen (HTTP Error 404: Not Found)
+- CIK850918: Abruf fehlgeschlagen (HTTP Error 404: Not Found)
+- CIK855950: Abruf fehlgeschlagen (HTTP Error 404: Not Found)
+- CIK861972: Abruf fehlgeschlagen (HTTP Error 404: Not Found)
+- CIK865400: Abruf fehlgeschlagen (HTTP Error 404: Not Found)
+- CIK872699: Abruf fehlgeschlagen (HTTP Error 404: Not Found)
+- CIK877019: Abruf fehlgeschlagen (HTTP Error 404: Not Found)
+- CIK877028: Abruf fehlgeschlagen (HTTP Error 404: Not Found)
+- CIK921968: Abruf fehlgeschlagen (HTTP Error 404: Not Found)
+- CIK923883: Abruf fehlgeschlagen (HTTP Error 404: Not Found)
+- CIK936801: Abruf fehlgeschlagen (HTTP Error 404: Not Found)
+- CIK942149: Abruf fehlgeschlagen (HTTP Error 404: Not Found)
+- DETX: keine Finanzdaten (CIK 1919776)
+- FRTT: keine Finanzdaten (CIK 2092967)
+- GFUZ: keine Jahreswerte
+- GORO: keine Finanzdaten (CIK 1515964)
+- GUNN: keine Finanzdaten (CIK 1514860)
+- MAKO: Abruf fehlgeschlagen (HTTP Error 404: Not Found)
+- MDA: keine Finanzdaten (CIK 1857047)
+- MDRN: Abruf fehlgeschlagen (HTTP Error 404: Not Found)
+- MINE: keine Finanzdaten (CIK 1823255)
+- NICM: Abruf fehlgeschlagen (HTTP Error 404: Not Found)
+- NSTR: keine Jahreswerte
+- NUR: keine Finanzdaten (CIK 1680637)
+- OGC: keine Finanzdaten (CIK 1487326)
+- OPTH: keine Finanzdaten (CIK 2027329)
+- RZAI: keine Finanzdaten (CIK 2075335)
+- SBMT: keine Jahreswerte
+- SCOP: keine Finanzdaten (CIK 2108383)
+- SCZM: Abruf fehlgeschlagen (HTTP Error 404: Not Found)
+- SGLD: keine Finanzdaten (CIK 1467093)
+- TMCR: keine Finanzdaten (CIK 2087398)
+- TXR: Abruf fehlgeschlagen (HTTP Error 404: Not Found)
+- VMET: keine Finanzdaten (CIK 2080073)
+- XNDU: keine Jahreswerte
