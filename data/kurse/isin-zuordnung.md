@@ -2,7 +2,7 @@
 
 Spalten der Liste: 153
 Instrumente nach Filter: 2345
-Zugeordnet: **605** von 601. Unsicher (zum Prüfen): 34. Ohne Treffer: 34.
+Zugeordnet: **599** von 601. Unsicher (zum Prüfen): 34. Ohne Treffer: 37.
 
 Korrekturen als {"TICKER": "ISIN"} in data/kurse/isin-fest.json eintragen.
 
@@ -50,7 +50,7 @@ Korrekturen als {"TICKER": "ISIN"} in data/kurse/isin-fest.json eintragen.
 - APTV (APTIV PLC): bester Kandidat AVIVA PLC          LS-,33 GB00BPQY8M80 (0.63)
 - ARTNA (ARTESIAN RESOURCES CORPORATION): bester Kandidat VULCAN ENERGY RESOURCES AU0000066086 (0.62)
 - BABA (Alibaba Group Holding Ltd): bester Kandidat CAIXABANK S.A. EO ES0140609019 (0.66)
-- BKH (Black Hills Corporation): bester Kandidat HORNBACH HOLD.ST O.N. DE0006083405 (0.55)
+- BKH (Bright Horizon Energy Corp): bester Kandidat PHOTON ENERGY NV   EO-,01 NL0010391108 (0.68)
 - CCL (Carnival Corp Ltd.): bester Kandidat AVIVA PLC          LS-,33 GB00BPQY8M80 (0.65)
 - CFR (Cullen/Frost Bankers, Inc.): bester Kandidat ABN AMRO BANK EO1 NL0011540547 (0.58)
 - CRH (CRH PUBLIC LTD CO): bester Kandidat PUBLICIS GRP INH. EO 0,40 FR0000130577 (0.58)
@@ -60,6 +60,7 @@ Korrekturen als {"TICKER": "ISIN"} in data/kurse/isin-fest.json eintragen.
 - EPD (ENTERPRISE PRODUCTS PARTNERS L.P.): bester Kandidat NXP SEMICONDUCTORS EO-,20 NL0009538784 (0.51)
 - ET (Energy Transfer LP): bester Kandidat ENERGEAN PLC      LS -,01 GB00BG12Y042 (0.64)
 - FLEX (FLEX LTD.): bester Kandidat VOLEX PLC         LS -,25 GB0009390070 (0.70)
+- HSIC (HENRY SCHEIN, INC.): bester Kandidat HUBER+SUHNER NA    SF-,25 CH0030380734 (0.62)
 - IVZ (Invesco Ltd.): bester Kandidat IVECO GROUP N.V.  EO 1 NL0015000LU4 (0.86)
 - KVUE (Kenvue Inc.): bester Kandidat ENEL S.P.A.          EO 1 IT0003128367 (0.63)
 - LARK (LANDMARK BANCORP, INC.): bester Kandidat SCAND.TOBACCO GROUP DK 1 DK0060696300 (0.58)
@@ -79,3 +80,5 @@ Korrekturen als {"TICKER": "ISIN"} in data/kurse/isin-fest.json eintragen.
 - TKO (TKO GROUP HOLDINGS, INC.): bester Kandidat KION GROUP AG DE000KGX8881 (0.60)
 - TSM (Taiwan Semiconductor Manufacturing Company Limited): bester Kandidat NXP SEMICONDUCTORS EO-,20 NL0009538784 (0.61)
 - TT (TRANE TECHNOLOGIES PLC): bester Kandidat BERTRANDT AG O.N. DE0005232805 (0.60)
+- VICI (VICI Properties Inc.): bester Kandidat CPI PROPERTY GRP   EO-,01 LU0251710041 (0.77)
+- VTR (Ventas, Inc.): bester Kandidat DEMANT AS A        DK 0,2 DK0060738599 (0.70)
