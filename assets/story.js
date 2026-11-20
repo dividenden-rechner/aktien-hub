@@ -299,21 +299,64 @@
     if (!bl) { try { bl = await draw(S, false); } catch (e) {} }
     return bl;
   };
-  window.StoryShare = async function (S, msgEl) {
-    var m = msgEl, copied = false;
-    if (S && S.para && S.text) {
-      var txt = String(S.text).split(/\n+/).join("\n\n");
-      try { await navigator.clipboard.writeText(txt); copied = true; } catch (e) {
-        try { var ta = document.createElement("textarea"); ta.value = txt; ta.style.position = "fixed"; ta.style.opacity = "0"; document.body.appendChild(ta); ta.select(); copied = document.execCommand("copy"); ta.remove(); } catch (e2) {}
-      }
-      S = Object.assign({}, S, { text: "" });
+  /* Teilen: Android/iOS oeffnen das Teilen-Menue (Instagram, Story) nur direkt nach dem Antippen.
+     Darum wird das Bild vorab im Hintergrund gebaut (StoryPrepare) und beim Tippen sofort geteilt. */
+  var CACHE = {};
+  function prep(S) {
+    var txt = "";
+    if (S && S.para && S.text) { txt = String(S.text).split(/\n+/).join("\n\n"); S = Object.assign({}, S, { text: "" }); }
+    var key = JSON.stringify(S || {});
+    return { S: S, txt: txt, key: key };
+  }
+  function bauen(P) {
+    if (!CACHE[P.key]) {
+      var e = CACHE[P.key] = { file: null };
+      e.p = window.StoryRender(P.S).then(function (bl) { if (bl) e.file = new File([bl], "story.png", { type: "image/png" }); return e.file; }).catch(function () { return null; });
     }
-    var note = copied ? "Text ist in der Zwischenablage – in Instagram einfach einfügen." : "";
-    if (m) m.textContent = "Story-Bild wird erstellt …";
-    var bl = await window.StoryRender(S); if (!bl) { if (m) m.textContent = "Das Story-Bild konnte nicht erstellt werden."; return; }
-    var f = new File([bl], "story.png", { type: "image/png" }); if (m) m.textContent = note;
-    try { if (navigator.canShare && navigator.canShare({ files: [f] })) { await navigator.share({ files: [f] }); return; } } catch (e) { if (e && e.name === "AbortError") return; }
-    var a = document.createElement("a"); a.href = URL.createObjectURL(bl); a.download = "story.png"; document.body.appendChild(a); a.click(); a.remove();
+    return CACHE[P.key];
+  }
+  window.StoryPrepare = function (S) { try { bauen(prep(S)); } catch (e) {} };
+  function kopieren(txt) {
+    if (!txt) return Promise.resolve(false);
+    try {
+      return navigator.clipboard.writeText(txt).then(function () { return true; }, function () { return alt(); });
+    } catch (e) { return Promise.resolve(alt()); }
+    function alt() {
+      try { var ta = document.createElement("textarea"); ta.value = txt; ta.style.position = "fixed"; ta.style.opacity = "0"; document.body.appendChild(ta); ta.select(); var ok = document.execCommand("copy"); ta.remove(); return ok; } catch (e2) { return false; }
+    }
+  }
+  function kannTeilen(f) { try { return !!(navigator.canShare && navigator.canShare({ files: [f] })); } catch (e) { return false; } }
+  function speichern(f, m, note) {
+    var a = document.createElement("a"); a.href = URL.createObjectURL(f); a.download = "story.png"; document.body.appendChild(a); a.click(); a.remove();
     if (m) m.textContent = "Bild gespeichert. In Instagram: Story → Bild aus der Galerie wählen. " + note;
+  }
+  window.StoryShare = function (S, msgEl) {
+    var m = msgEl, P = prep(S), e = bauen(P);
+    var kopiert = kopieren(P.txt);   /* sofort starten, nicht abwarten: das Antippen bleibt fuer das Teilen gueltig */
+    var note = P.txt ? "Text ist in der Zwischenablage – in Instagram einfach einfügen." : "";
+    function teilen(f) {
+      return navigator.share({ files: [f] }).then(function () { if (m) m.textContent = note; }, function (err) {
+        if (err && err.name === "AbortError") { if (m) m.textContent = note; return; }
+        if (err && err.name === "NotAllowedError") return knopf(f);
+        speichern(f, m, note);
+      });
+    }
+    function knopf(f) {      /* Bild war noch nicht fertig: ein zweites Antippen oeffnet das Teilen-Menue */
+      if (!m) return speichern(f, m, note);
+      m.textContent = "";
+      var b = document.createElement("button"); b.type = "button"; b.className = "sharebtn"; b.style.width = "auto"; b.style.padding = "0 12px";
+      b.textContent = "Jetzt in Instagram teilen"; b.onclick = function () { b.remove(); teilen(f); };
+      m.appendChild(b); if (note) m.appendChild(document.createTextNode(" " + note));
+    }
+    if (e.file) {           /* vorbereitet: sofort teilen */
+      if (kannTeilen(e.file)) return teilen(e.file);
+      return speichern(e.file, m, note);
+    }
+    if (m) m.textContent = "Story-Bild wird erstellt …";
+    return e.p.then(function (f) {
+      if (!f) { if (m) m.textContent = "Das Story-Bild konnte nicht erstellt werden."; return; }
+      if (!kannTeilen(f)) return speichern(f, m, note);
+      return teilen(f);
+    });
   };
 })();
