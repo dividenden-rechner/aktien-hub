@@ -111,7 +111,7 @@ def gleif_isins(lei):
 
 def aktien_isin(isins, land):
     if land == "CA":
-        k = [i for i in isins if i.startswith("CA") and isin_gueltig(i) and i[9:11].isdigit()]
+        k = [i for i in isins if i.startswith("CA") and isin_gueltig(i) and i[8:10].isdigit()]   # CUSIP-Emissionsnummer (Stellen 9-10): numerisch = Aktie
     else:
         k = [i for i in isins if (i.startswith("MX01") or i.startswith("MXP")) and isin_gueltig(i)]
     k = sorted(set(k))
