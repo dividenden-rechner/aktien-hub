@@ -1,6 +1,60 @@
 {
- "updated": "2026-11-20T11:39:27.982348+00:00",
+ "updated": "2026-11-20T20:19:19.404198+00:00",
  "items": [
+  {
+   "sym": "MMM",
+   "name": "3M",
+   "title": "3M Announces Upcoming Investor Event",
+   "link": "https://news.3m.com/2026-11-20-3M-Announces-Upcoming-Investor-Event",
+   "date": "2026-11-20T15:15:00+00:00",
+   "text": "",
+   "quelle": "RSS"
+  },
+  {
+   "sym": "SAP.DE",
+   "name": "SAP",
+   "title": "How SAP and Microsoft Innovate Together to Deliver AI Value for the Enterprise",
+   "link": "https://news.sap.com/2026/11/how-sap-microsoft-innovate-deliver-ai-value-enterprise/",
+   "date": "2026-11-20T14:15:00+00:00",
+   "text": "Together, SAP and Microsoft solve challenges and unlock exponential AI value.",
+   "quelle": "RSS"
+  },
+  {
+   "sym": "SAP.DE",
+   "name": "SAP",
+   "title": "From Melbourne to Mexico: How SAP Concur and AI Help the San Francisco 49ers Take Their Game Global",
+   "link": "https://news.sap.com/2026/11/how-sap-concur-helps-san-francisco-49ers-take-game-global/",
+   "date": "2026-11-20T13:15:00+00:00",
+   "text": "Traveling across continents during the 2026 NFL International Series, SAP software keeps the team moving seamlessly.",
+   "quelle": "RSS"
+  },
+  {
+   "sym": "JNJ",
+   "name": "Johnson & Johnson",
+   "title": "Johnson & Johnson data in psoriatic arthritis (PsA) shows TREMFYA (guselkumab) is the only advanced therapy to demonstrate MRI-confirmed improvements in spinal pain and stiffness",
+   "link": "https://www.investor.jnj.com/investor-news/news-details/2026/Johnson--Johnson-data-in-psoriatic-arthritis-PsA-shows-TREMFYA-guselkumab-is-the-only-advanced-therapy-to-demonstrate-MRI-confirmed-improvements-in-spinal-pain-and-stiffness/default.aspx",
+   "date": "2026-11-20T13:00:00+00:00",
+   "text": "",
+   "quelle": "RSS"
+  },
+  {
+   "sym": "SAP.DE",
+   "name": "SAP",
+   "title": "Takeda Turns to SAP S/4HANA to Support Digital Transformation",
+   "link": "https://news.sap.com/2026/11/takeda-turns-to-sap-erp-digital-transformation/",
+   "date": "2026-11-20T12:15:00+00:00",
+   "text": "The biotech company’s move to SAP S/4HANA supports process simplification, AI adoption, and a more connected way of working.",
+   "quelle": "RSS"
+  },
+  {
+   "sym": "AMZN",
+   "name": "Amazon",
+   "title": "Oregon Has an Opportunity to Lead on Data Center Policy",
+   "link": "https://press.aboutamazon.com/2026/11/oregon-has-an-opportunity-to-lead-on-data-center-policy",
+   "date": "2026-11-20T11:36:31+00:00",
+   "text": "Amazon Web Services's VP of Public Policy outlines how Oregon can lead on data center policy with smart rules around clean energy, water use, ratepayer protection, and community investment.",
+   "quelle": "RSS"
+  },
   {
    "sym": "SAP.DE",
    "name": "SAP",
@@ -727,28 +781,19 @@
   {
    "sym": "AMZN",
    "name": "Amazon",
-   "title": "Amazon Grocery Launches Its Own Line of Prepared Meals with Same-Day Delivery: Salads Starting Under $3, All Meals Under $8",
-   "link": "https://press.aboutamazon.com/2026/11/amazon-grocery-launches-its-own-line-of-prepared-meals-with-same-day-delivery-salads-starting-under-3-all-meals-under-8",
-   "date": "2026-11-17T14:00:00+00:00",
-   "text": "Prepared meals are now available alongside millions of other items with Amazon Grocery Same-Day Delivery in 2,300+ cities and towns, and a curated selection available with Amazon Now 30-minute delivery, giving customers more delicious, affordable alternatives to cooking or takeout",
-   "quelle": "RSS"
-  },
-  {
-   "sym": "AMZN",
-   "name": "Amazon",
-   "title": "Transamerica Expands Strategic Relationship with AWS to Scale Responsible AI Capabilities",
-   "link": "https://press.aboutamazon.com/aws/2026/11/transamerica-expands-strategic-relationship-with-aws-to-scale-responsible-ai-capabilities",
-   "date": "2026-11-17T14:00:00+00:00",
-   "text": "[MEDIA ALERT]Enterprise AI platform delivers faster service, clearer decisions and improved customer experiences",
-   "quelle": "RSS"
-  },
-  {
-   "sym": "AMZN",
-   "name": "Amazon",
    "title": "LSEG Risk Intelligence expands World-Check One cloud infrastructure in APAC with Singapore deployment",
    "link": "https://press.aboutamazon.com/aws/2026/11/lseg-risk-intelligence-expands-world-check-one-cloud-infrastructure-in-apac-with-singapore-deployment",
    "date": "2026-11-17T14:00:00+00:00",
    "text": "[MEDIA ALERT]New Singapore deployment provides customers with additional regional hosting and data processing optionsBrings World-Check One infrastructure closer to Asia Pacific (APAC) customers, supporting lower-latency screening and improved user experienceExpansion reflects continued investment in meeting the evolving data governance and operational needs of customers across APAC",
+   "quelle": "RSS"
+  },
+  {
+   "sym": "AMZN",
+   "name": "Amazon",
+   "title": "ANZ completes major cloud data transformation, strengthening data foundations to improve customer experiences",
+   "link": "https://press.aboutamazon.com/aws/2026/11/anz-completes-major-cloud-data-transformation-strengthening-data-foundations-to-improve-customer-experiences",
+   "date": "2026-11-17T14:00:00+00:00",
+   "text": "[MEDIA ALERT]",
    "quelle": "RSS"
   },
   {
@@ -1252,15 +1297,6 @@
    "form": "8-K"
   },
   {
-   "sym": "SAP.DE",
-   "name": "SAP",
-   "title": "SAP Puts Product-Level Cloud Emissions and Energy Data in Customers’ Hands",
-   "link": "https://news.sap.com/2026/11/sap-product-level-cloud-emissions-energy-data-customers/",
-   "date": "2026-11-12T13:15:00+00:00",
-   "text": "SAP is making the carbon footprint of cloud software visible product by product, customer by customer.",
-   "quelle": "RSS"
-  },
-  {
    "sym": "TSM",
    "name": "Taiwan Semiconductor",
    "title": "Meldung (6-K)",
@@ -1281,15 +1317,6 @@
    "quelle": "RSS"
   },
   {
-   "sym": "SAP.DE",
-   "name": "SAP",
-   "title": "A Smooth Ride Through Peak Season with Trek Bikes",
-   "link": "https://news.sap.com/2026/11/a-smooth-ride-through-peak-season-with-trek-bikes/",
-   "date": "2026-11-12T12:15:00+00:00",
-   "text": "When demand accelerates, businesses need to keep pace. For Trek Bikes, that means speed across all aspects of the customer journey.",
-   "quelle": "RSS"
-  },
-  {
    "sym": "VZ",
    "name": "Verizon",
    "title": "Your family tech agreement can be a sticky note on the fridge",
@@ -1305,15 +1332,6 @@
    "link": "https://news.bms.com/news/details/2026/Bristol-Myers-Squibb-Announces-Evolution-of-Research--Development-Organization/default.aspx",
    "date": "2026-11-12T11:59:00+00:00",
    "text": "",
-   "quelle": "RSS"
-  },
-  {
-   "sym": "SAP.DE",
-   "name": "SAP",
-   "title": "Meet the Hybrid AI Buyer: The Customer Journey Is Fractured, and That’s Progress",
-   "link": "https://news.sap.com/2026/11/hybrid-ai-buyer-customer-experience-research-data-journey-progress/",
-   "date": "2026-11-12T11:15:00+00:00",
-   "text": "New research reveals there’s a structural shift changing how businesses get chosen.",
    "quelle": "RSS"
   },
   {
@@ -3059,15 +3077,6 @@
    "quelle": "RSS"
   },
   {
-   "sym": "JNJ",
-   "name": "Johnson & Johnson",
-   "title": "RYBREVANT FASPRO™ (amivantamab and hyaluronidase-lpuj) combination demonstrates 77% overall response rate in first-line treatment of patients with advanced head and neck cancer",
-   "link": "https://www.investor.jnj.com/investor-news/news-details/2026/RYBREVANT-FASPRO-amivantamab-and-hyaluronidase-lpuj-combination-demonstrates-77-overall-response-rate-in-first-line-treatment-of-patients-with-advanced-head-and-neck-cancer/default.aspx",
-   "date": "2026-10-25T13:45:00+00:00",
-   "text": "",
-   "quelle": "RSS"
-  },
-  {
    "sym": "BMY",
    "name": "Bristol-Myers Squibb",
    "title": "BioNTech and Bristol Myers Squibb Report Encouraging Global Phase 2 data for Pumitamig in Advanced NSCLC After Progression on Immunotherapy Plus Chemotherapy",
@@ -3372,15 +3381,6 @@
    "quelle": "SEC",
    "kat": "Quartalszahlen",
    "form": "8-K"
-  },
-  {
-   "sym": "MMM",
-   "name": "3M",
-   "title": "3M Reports Third-Quarter 2026 Results; Raises Full-Year EPS Guidance",
-   "link": "https://news.3m.com/2026-10-20-3M-Reports-Third-Quarter-2026-Results-Raises-Full-Year-EPS-Guidance",
-   "date": "2026-10-20T10:30:00+00:00",
-   "text": "",
-   "quelle": "RSS"
   },
   {
    "sym": "SY1.DE",
@@ -4374,25 +4374,16 @@
    "date": "2026-09-22T08:44:00+00:00",
    "text": "New brand campaign highlights BT Broadband’s leadership in advanced threat protection, helping British households stay safer from scams and other online threats",
    "quelle": "RSS"
-  },
-  {
-   "sym": "2454.TW",
-   "name": "MediaTek",
-   "title": "MediaTek Dimensity CX C10 Max Offers Flagship Performance to a New Era of AI-First Laptops",
-   "link": "https://www.mediatek.com/press-room/mediatek-dimensity-cx-c10-max-offers-flagship-performance-to-a-new-era-of-ai-first-laptops",
-   "date": "2026-09-21T13:00:00+00:00",
-   "text": "HSINCHU, Taiwan – Sept. 21, 2026 – MediaTek, a global leader in computing and mobile technologies, today introduced the MediaTek Dimensity CX C10 Max, the inaugural SoC for the company’s new Dimensity Compute Experiences (CX) family. As the flagship of the lineup, Dimensity CX C10 Max combines exceptional performance, advanced functionality, and impressive power efficiency to enable an upcoming premium, ultra-portable Googlebook device.\nBuilt on TSMC’s advanced 3nm process, Dimensity CX C10 Max utilizes an All Big Core design with octa-core CPU, 11-core GPU, and MediaTek’s 8th-generation NPU in a highly efficient platform engineered to deliver stellar performance across multitasking, productivity, entertainment, intelligent assistance, and more. Its power-efficient architecture enables manufacturers to design thinner, lighter, and fanless devices with all-day1 battery life.\nThe MediaTek NPU 890 delivers up to 55 TOPS of performance, helping enable upcoming Googlebook devices to better deliver an experience that’s a step ahead. Further expanding MediaTek’s AI leadership spanning from the Edge to the cloud, MediaTek NPU 890 is designed to power Gemini Intelligence features, delivering faster responses and offering additional privacy benefits.\n“Dimensity CX C10 Max is designed for the next wave of intelligent computing, combining flagship performance and power-efficient processing to ensure an incredible user experience paired with amazing battery life,” said Vince Hu, Senior Vice President & General Manager of Data Center & Computing Business at MediaTek. “Bringing these capabilities to Googlebook builds on our leadership in Android computing and continues our long history of collaboration with Google.”\nThe MediaTek Imagiq 1090 ISP integrated into the Dimensity CX C10 Max delivers best-in-class professional camera quality. Supporting camera sensors of up to 32MP, the AI-ISP enables high-quality HDR video capture, smooth video zoom, cinematic video, and sustained focus; resulting in clearer, more immersive video calls, livestreams and content creation.\nThe platform also supports Wi-Fi 7 connectivity with speeds of up to 7.3Gbps, providing fast, reliable connections for streaming, downloads, and video conferencing in busy wireless environments. Dual-engine Bluetooth 6.0 support provides efficient connectivity for wireless peripherals and audio devices2.\nBy bringing together All Big Core CPU, powerful GPU and MediaTek’s industry-leading NPU with accelerated agentic AI, Dimensity CX C10 Max is designed to crunch through the most demanding tasks and deliver ultra-fast multitasking to achieve maximum productivity.",
-   "quelle": "RSS"
   }
  ],
  "errors": [
   {
    "sym": "PEP",
-   "fehler": "HTTP Error 429: Too Many Requests"
+   "fehler": "HTTP Error 402: Payment Required"
   },
   {
    "sym": "PG",
-   "fehler": "HTTP Error 429: Too Many Requests"
+   "fehler": "HTTP Error 402: Payment Required"
   },
   {
    "sym": "LLY",
@@ -4404,15 +4395,15 @@
   },
   {
    "sym": "PFE",
-   "fehler": "HTTP Error 429: Too Many Requests"
+   "fehler": "HTTP Error 402: Payment Required"
   },
   {
    "sym": "MRK",
-   "fehler": "HTTP Error 429: Too Many Requests"
+   "fehler": "HTTP Error 402: Payment Required"
   },
   {
    "sym": "O",
-   "fehler": "HTTP Error 429: Too Many Requests"
+   "fehler": "HTTP Error 402: Payment Required"
   },
   {
    "sym": "V",
@@ -4420,23 +4411,23 @@
   },
   {
    "sym": "JPM",
-   "fehler": "HTTP Error 429: Too Many Requests"
+   "fehler": "HTTP Error 402: Payment Required"
   },
   {
    "sym": "CVX",
-   "fehler": "HTTP Error 429: Too Many Requests"
+   "fehler": "HTTP Error 402: Payment Required"
   },
   {
    "sym": "MCD",
-   "fehler": "HTTP Error 429: Too Many Requests"
+   "fehler": "HTTP Error 402: Payment Required"
   },
   {
    "sym": "HD",
-   "fehler": "HTTP Error 429: Too Many Requests"
+   "fehler": "HTTP Error 402: Payment Required"
   },
   {
    "sym": "TXN",
-   "fehler": "HTTP Error 429: Too Many Requests"
+   "fehler": "HTTP Error 402: Payment Required"
   },
   {
    "sym": "AVGO",
@@ -4444,7 +4435,7 @@
   },
   {
    "sym": "CSCO",
-   "fehler": "HTTP Error 429: Too Many Requests"
+   "fehler": "HTTP Error 402: Payment Required"
   },
   {
    "sym": "MDLZ",
@@ -4456,163 +4447,163 @@
   },
   {
    "sym": "GOOGL",
-   "fehler": "HTTP Error 429: Too Many Requests"
+   "fehler": "HTTP Error 402: Payment Required"
   },
   {
    "sym": "SIE.DE",
-   "fehler": "HTTP Error 429: Too Many Requests"
+   "fehler": "HTTP Error 402: Payment Required"
   },
   {
    "sym": "ALV.DE",
-   "fehler": "HTTP Error 429: Too Many Requests"
+   "fehler": "HTTP Error 402: Payment Required"
   },
   {
    "sym": "MBG.DE",
-   "fehler": "HTTP Error 429: Too Many Requests"
+   "fehler": "HTTP Error 402: Payment Required"
   },
   {
    "sym": "BMW.DE",
-   "fehler": "HTTP Error 429: Too Many Requests"
+   "fehler": "HTTP Error 402: Payment Required"
   },
   {
    "sym": "BAS.DE",
-   "fehler": "HTTP Error 429: Too Many Requests"
+   "fehler": "HTTP Error 402: Payment Required"
   },
   {
    "sym": "MUV2.DE",
-   "fehler": "HTTP Error 429: Too Many Requests"
+   "fehler": "HTTP Error 402: Payment Required"
   },
   {
    "sym": "DHL.DE",
-   "fehler": "HTTP Error 429: Too Many Requests"
+   "fehler": "HTTP Error 402: Payment Required"
   },
   {
    "sym": "ADS.DE",
-   "fehler": "HTTP Error 429: Too Many Requests"
+   "fehler": "HTTP Error 402: Payment Required"
   },
   {
    "sym": "RWE.DE",
-   "fehler": "HTTP Error 429: Too Many Requests"
+   "fehler": "HTTP Error 402: Payment Required"
   },
   {
    "sym": "EOAN.DE",
-   "fehler": "HTTP Error 429: Too Many Requests"
+   "fehler": "HTTP Error 402: Payment Required"
   },
   {
    "sym": "DBK.DE",
-   "fehler": "HTTP Error 429: Too Many Requests"
+   "fehler": "HTTP Error 402: Payment Required"
   },
   {
    "sym": "ASML.AS",
-   "fehler": "HTTP Error 429: Too Many Requests"
+   "fehler": "HTTP Error 402: Payment Required"
   },
   {
    "sym": "MC.PA",
-   "fehler": "HTTP Error 429: Too Many Requests"
+   "fehler": "HTTP Error 402: Payment Required"
   },
   {
    "sym": "OR.PA",
-   "fehler": "HTTP Error 429: Too Many Requests"
+   "fehler": "HTTP Error 402: Payment Required"
   },
   {
    "sym": "TTE.PA",
-   "fehler": "HTTP Error 429: Too Many Requests"
+   "fehler": "HTTP Error 402: Payment Required"
   },
   {
    "sym": "SAN.PA",
-   "fehler": "HTTP Error 429: Too Many Requests"
+   "fehler": "HTTP Error 402: Payment Required"
   },
   {
    "sym": "SU.PA",
-   "fehler": "HTTP Error 429: Too Many Requests"
+   "fehler": "HTTP Error 402: Payment Required"
   },
   {
    "sym": "NESN.SW",
-   "fehler": "HTTP Error 429: Too Many Requests"
+   "fehler": "HTTP Error 402: Payment Required"
   },
   {
    "sym": "NOVN.SW",
-   "fehler": "HTTP Error 429: Too Many Requests"
+   "fehler": "HTTP Error 402: Payment Required"
   },
   {
    "sym": "ROG.SW",
-   "fehler": "HTTP Error 429: Too Many Requests"
+   "fehler": "HTTP Error 402: Payment Required"
   },
   {
    "sym": "UBSG.SW",
-   "fehler": "HTTP Error 429: Too Many Requests"
+   "fehler": "HTTP Error 402: Payment Required"
   },
   {
    "sym": "NOVO-B.CO",
-   "fehler": "HTTP Error 429: Too Many Requests"
+   "fehler": "HTTP Error 402: Payment Required"
   },
   {
    "sym": "ULVR.L",
-   "fehler": "HTTP Error 429: Too Many Requests"
+   "fehler": "HTTP Error 402: Payment Required"
   },
   {
    "sym": "SHEL.L",
-   "fehler": "HTTP Error 429: Too Many Requests"
+   "fehler": "HTTP Error 402: Payment Required"
   },
   {
    "sym": "AZN.L",
-   "fehler": "HTTP Error 429: Too Many Requests"
+   "fehler": "HTTP Error 402: Payment Required"
   },
   {
    "sym": "BP.L",
-   "fehler": "HTTP Error 429: Too Many Requests"
+   "fehler": "HTTP Error 402: Payment Required"
   },
   {
    "sym": "ENEL.MI",
-   "fehler": "HTTP Error 429: Too Many Requests"
+   "fehler": "HTTP Error 402: Payment Required"
   },
   {
    "sym": "ISP.MI",
-   "fehler": "HTTP Error 429: Too Many Requests"
+   "fehler": "HTTP Error 402: Payment Required"
   },
   {
    "sym": "IBE.MC",
-   "fehler": "HTTP Error 429: Too Many Requests"
+   "fehler": "HTTP Error 402: Payment Required"
   },
   {
    "sym": "TSM",
-   "fehler": "HTTP Error 429: Too Many Requests"
+   "fehler": "HTTP Error 402: Payment Required"
   },
   {
    "sym": "9988.HK",
-   "fehler": "HTTP Error 429: Too Many Requests"
+   "fehler": "HTTP Error 402: Payment Required"
   },
   {
    "sym": "0700.HK",
-   "fehler": "HTTP Error 429: Too Many Requests"
+   "fehler": "HTTP Error 402: Payment Required"
   },
   {
    "sym": "7203.T",
-   "fehler": "HTTP Error 429: Too Many Requests"
+   "fehler": "HTTP Error 402: Payment Required"
   },
   {
    "sym": "6758.T",
-   "fehler": "HTTP Error 429: Too Many Requests"
+   "fehler": "HTTP Error 402: Payment Required"
   },
   {
    "sym": "BHP.AX",
-   "fehler": "HTTP Error 429: Too Many Requests"
+   "fehler": "HTTP Error 402: Payment Required"
   },
   {
    "sym": "0027.HK",
-   "fehler": "HTTP Error 429: Too Many Requests"
+   "fehler": "HTTP Error 402: Payment Required"
   },
   {
    "sym": "RELIANCE.NS",
-   "fehler": "HTTP Error 429: Too Many Requests"
+   "fehler": "HTTP Error 402: Payment Required"
   },
   {
    "sym": "TATAMOTORS.NS",
-   "fehler": "HTTP Error 429: Too Many Requests"
+   "fehler": "HTTP Error 402: Payment Required"
   },
   {
    "sym": "HEI.DE",
-   "fehler": "HTTP Error 429: Too Many Requests"
+   "fehler": "HTTP Error 402: Payment Required"
   },
   {
    "sym": "FRE.DE",
@@ -4628,15 +4619,15 @@
   },
   {
    "sym": "HOLN.SW",
-   "fehler": "HTTP Error 429: Too Many Requests"
+   "fehler": "HTTP Error 402: Payment Required"
   },
   {
    "sym": "DGE.L",
-   "fehler": "HTTP Error 429: Too Many Requests"
+   "fehler": "HTTP Error 402: Payment Required"
   },
   {
    "sym": "REL.L",
-   "fehler": "HTTP Error 429: Too Many Requests"
+   "fehler": "HTTP Error 402: Payment Required"
   },
   {
    "sym": "AAL.L",
@@ -4644,7 +4635,7 @@
   },
   {
    "sym": "NOKIA.HE",
-   "fehler": "HTTP Error 429: Too Many Requests"
+   "fehler": "HTTP Error 402: Payment Required"
   },
   {
    "sym": "FRE.DE",
