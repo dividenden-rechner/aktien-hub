@@ -1,6 +1,6 @@
 ---
 title: "Target und TJX: Das Zollgeld wiegt bei Target zehnmal so schwer"
-description: "Beide Händler haben am selben Tag berichtet, beide bekommen Zölle zurück. Bei Target macht das Geld fast ein Viertel des Gewinns aus, bei TJX kaum etwas. Der Vergleich zeigt, welches Geschäft aus eigener Kraft wächst und wie sicher die Dividenden sind."
+description: "Beide Händler haben am selben Tag berichtet, beide bekommen Zölle zurück. Bei Target macht das Geld knapp ein Fünftel des Gewinns aus, bei TJX kaum etwas. Der Vergleich zeigt, welches Geschäft aus eigener Kraft wächst und wie sicher die Dividenden sind."
 date: 2026-11-21 10:00
 author: "Redaktions-Team Dividenden-Rechner.de"
 author_bio: "Das Redaktions-Team von Dividenden-Rechner.de schreibt über Dividendenaktien, Kennzahlen und Steuerthemen für Privatanleger. Die Rechner und Auswertungen auf der Seite entstehen im eigenen Haus."
