@@ -3,7 +3,7 @@
 <!-- uebersicht-start -->
 ## Übersicht (wird automatisch erstellt, neueste zuerst)
 
-### Vorschau auf der Testseite (5)
+### Vorschau auf der Testseite (6)
 
 Nur auf der GitHub-Testseite unter vorschau/ sichtbar. Freigeben: Datei anklicken, Stift-Symbol, Zeile `vorschau: ja` löschen und speichern.
 
@@ -14,6 +14,7 @@ Nur auf der GitHub-Testseite unter vorschau/ sichtbar. Freigeben: Datei anklicke
 | 21.11.2026 10:00 | Target und TJX: Das Zollgeld wiegt bei Target zehnmal so schwer | [79738879_2026-11-20/8669_1330-target-tjx-zollrueckerstattung-dividende-vergleich.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/79738879_2026-11-20/8669_1330-target-tjx-zollrueckerstattung-dividende-vergleich.md) |
 | 21.11.2026 09:00 | Kraft Heinz an der NYSE: Der Cashflow sinkt 2027 um ein Drittel, die Dividende bleibt | [79738879_2026-11-20/8599_1400-kraft-heinz-nyse-prognose-dividende-2029.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/79738879_2026-11-20/8599_1400-kraft-heinz-nyse-prognose-dividende-2029.md) |
 | 21.11.2026 07:30 | Rekord-Börsengang, Chef weg, neue Chipregeln: Die KI-Woche drückt Nvidia um 10 % | [79738878_2026-11-21/9269_0730-ki-woche-anthropic-nvidia-amd-chipregeln.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/79738878_2026-11-21/9269_0730-ki-woche-anthropic-nvidia-amd-chipregeln.md) |
+| 21.11.2026 06:30 | SEC prüft Nvidias Buchführung: Die Aktie hat sich seit Oktober fast halbiert | [79738878_2026-11-21/9369_0630-nvidia-sec-buchhaltung-tech-ausverkauf.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/79738878_2026-11-21/9369_0630-nvidia-sec-buchhaltung-tech-ausverkauf.md) |
 
 ### Zur Freigabe: Entwürfe (10)
 
