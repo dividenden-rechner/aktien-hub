@@ -13,7 +13,7 @@ Nur auf der GitHub-Testseite unter vorschau/ sichtbar. Freigeben: Datei anklicke
 | 21.11.2026 11:00 | Agree Realty im Vergleich: Dividende rund 4,7 %, AFFO-Prognose angehoben, Verschuldung niedriger als bei NNN und Realty Income | [79738883_2026-11-16/9050_2340-agree-realty-vergleich-nnn-realty-income.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/79738883_2026-11-16/9050_2340-agree-realty-vergleich-nnn-realty-income.md) |
 | 21.11.2026 10:00 | Target und TJX: Das Zollgeld wiegt bei Target zehnmal so schwer | [79738879_2026-11-20/8669_1330-target-tjx-zollrueckerstattung-dividende-vergleich.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/79738879_2026-11-20/8669_1330-target-tjx-zollrueckerstattung-dividende-vergleich.md) |
 | 21.11.2026 09:00 | Kraft Heinz an der NYSE: Der Cashflow sinkt 2027 um ein Drittel, die Dividende bleibt | [79738879_2026-11-20/8599_1400-kraft-heinz-nyse-prognose-dividende-2029.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/79738879_2026-11-20/8599_1400-kraft-heinz-nyse-prognose-dividende-2029.md) |
-| 21.11.2026 08:00 | Chinas KI-Firmen lernen von US-Modellen: Wie Destillation die Chip-Sperren unterläuft | [79738883_2026-11-17/9100_0657-china-destillation-us-ki-modelle.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/79738883_2026-11-17/9100_0657-china-destillation-us-ki-modelle.md) |
+| 21.11.2026 07:30 | Rekord-Börsengang, Chef weg, neue Chipregeln: Die KI-Woche drückt Nvidia um 10 % | [79738878_2026-11-21/9269_0730-ki-woche-anthropic-nvidia-amd-chipregeln.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/79738878_2026-11-21/9269_0730-ki-woche-anthropic-nvidia-amd-chipregeln.md) |
 
 ### Zur Freigabe: Entwürfe (10)
 
@@ -36,7 +36,7 @@ Datei anklicken, dann Stift-Symbol: Zeile `draft: true` löschen und speichern, 
 
 | Datum | Titel | Datei |
 |---|---|---|
-| 20.11.2026 13:30 | Rekord-Börsengang, Chef weg, neue Chipregeln: Die KI-Branche in einer Woche | [79738878_2026-11-21/9269_0730-ki-woche-anthropic-nvidia-amd-chipregeln.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/79738878_2026-11-21/9269_0730-ki-woche-anthropic-nvidia-amd-chipregeln.md) |
+| 20.11.2026 13:30 | Chinas KI-Firmen lernen von US-Modellen: Wie Destillation die Chip-Sperren unterläuft | [79738883_2026-11-17/9100_0657-china-destillation-us-ki-modelle.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/79738883_2026-11-17/9100_0657-china-destillation-us-ki-modelle.md) |
 | 20.11.2026 10:30 | Intuit: Gewinn plus 56 %, doch der Ausblick drückt die Aktie um 10 % | [79738879_2026-11-20/8969_1030-intuit-q1-2027-ausblick-aktie-bricht-ein.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/79738879_2026-11-20/8969_1030-intuit-q1-2027-ausblick-aktie-bricht-ein.md) |
 | 19.11.2026 18:20 | AMD: Leerverkäufer-Bericht zu China drückt die Aktie um fast 9 % | [79738883_2026-11-19/9330_1820-amd-hunterbrook-shortseller-china.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/79738883_2026-11-19/9330_1820-amd-hunterbrook-shortseller-china.md) |
 | 19.11.2026 16:00 | Walmart Q3 FY27: Umsatz plus 5,2 %, Prognose angehoben | [79738883_2026-11-19/9320_1600-walmart-q3-fy27-quartalsbericht.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/79738883_2026-11-19/9320_1600-walmart-q3-fy27-quartalsbericht.md) |
