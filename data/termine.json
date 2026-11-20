@@ -1,195 +1,6 @@
 {
  "termine": [
   {
-   "sym": "ABNB",
-   "name": "Airbnb",
-   "art": "ergebnis",
-   "datum": "2026-11-05",
-   "betrag": "",
-   "waehrung": "",
-   "quelle": "https://www.sec.gov/Archives/edgar/data/1559720/000119312526449727/d437988dex991.htm"
-  },
-  {
-   "sym": "AFL",
-   "name": "Aflac",
-   "art": "ergebnis",
-   "datum": "2026-11-05",
-   "betrag": "",
-   "waehrung": "",
-   "quelle": "https://www.sec.gov/Archives/edgar/data/4977/000162828026070181/aflex991-q32026new.htm"
-  },
-  {
-   "sym": "ALB",
-   "name": "Albemarle Corporation",
-   "art": "ergebnis",
-   "datum": "2026-11-05",
-   "betrag": "",
-   "waehrung": "",
-   "quelle": "https://www.sec.gov/Archives/edgar/data/915913/000091591326000128/a3q26earningsreleaseex991.htm"
-  },
-  {
-   "sym": "APA",
-   "name": "APA Corporation",
-   "art": "ergebnis",
-   "datum": "2026-11-05",
-   "betrag": "",
-   "waehrung": "",
-   "quelle": "https://www.sec.gov/Archives/edgar/data/1841666/000184166626000063/exhibit9913q26earningsrele.htm"
-  },
-  {
-   "sym": "APD",
-   "name": "Air Products",
-   "art": "ergebnis",
-   "datum": "2026-11-05",
-   "betrag": "",
-   "waehrung": "",
-   "quelle": "https://www.sec.gov/Archives/edgar/data/2969/000000296926000043/exhibit99130sep26.htm"
-  },
-  {
-   "sym": "ATO",
-   "name": "Atmos Energy",
-   "art": "ergebnis",
-   "datum": "2026-11-05",
-   "betrag": "",
-   "waehrung": "",
-   "quelle": "https://www.sec.gov/Archives/edgar/data/731802/000073180226000129/ato20261104exhibit991.htm"
-  },
-  {
-   "sym": "CMI",
-   "name": "Cummins",
-   "art": "ergebnis",
-   "datum": "2026-11-05",
-   "betrag": "",
-   "waehrung": "",
-   "quelle": "https://www.sec.gov/Archives/edgar/data/26172/000002617226000035/cmi2026q38-kex99.htm"
-  },
-  {
-   "sym": "DEO",
-   "name": "Diageo Plc",
-   "art": "ergebnis",
-   "datum": "2026-11-05",
-   "betrag": "",
-   "waehrung": "",
-   "quelle": "https://www.sec.gov/Archives/edgar/data/835403/000165495426009530/a8687b.htm"
-  },
-  {
-   "sym": "ES",
-   "name": "Eversource Energy",
-   "art": "ergebnis",
-   "datum": "2026-11-05",
-   "betrag": "",
-   "waehrung": "",
-   "quelle": "https://www.sec.gov/Archives/edgar/data/72741/000110465926122703/tm2628949d1_ex99-1.htm"
-  },
-  {
-   "sym": "GPN",
-   "name": "Global Payments",
-   "art": "ergebnis",
-   "datum": "2026-11-05",
-   "betrag": "",
-   "waehrung": "",
-   "quelle": "https://www.sec.gov/Archives/edgar/data/1123360/000112336026000091/exhibit99120260930.htm"
-  },
-  {
-   "sym": "HSBC",
-   "name": "Hsbc Holdings Plc",
-   "art": "ergebnis",
-   "datum": "2026-11-05",
-   "betrag": "",
-   "waehrung": "",
-   "quelle": "https://www.sec.gov/Archives/edgar/data/1089113/000165495426009540/a9491b.htm"
-  },
-  {
-   "sym": "KMB",
-   "name": "Kimberly-Clark",
-   "art": "ergebnis",
-   "datum": "2026-11-05",
-   "betrag": "",
-   "waehrung": "",
-   "quelle": "https://www.sec.gov/Archives/edgar/data/55785/000162828026070514/kmbq32026ex-991.htm"
-  },
-  {
-   "sym": "MCHP",
-   "name": "Microchip Technology",
-   "art": "ergebnis",
-   "datum": "2026-11-05",
-   "betrag": "",
-   "waehrung": "",
-   "quelle": "https://www.sec.gov/Archives/edgar/data/827054/000082705426000061/exhibit991q2fy27.htm"
-  },
-  {
-   "sym": "MET",
-   "name": "MetLife",
-   "art": "ergebnis",
-   "datum": "2026-11-05",
-   "betrag": "",
-   "waehrung": "",
-   "quelle": "https://www.sec.gov/Archives/edgar/data/1099219/000109921926000058/ex991earningsreleasetables.htm"
-  },
-  {
-   "sym": "MNST",
-   "name": "Monster Beverage",
-   "art": "ergebnis",
-   "datum": "2026-11-05",
-   "betrag": "",
-   "waehrung": "",
-   "quelle": "https://www.sec.gov/Archives/edgar/data/865752/000110465926123387/tm2629095d1_ex99-1.htm"
-  },
-  {
-   "sym": "NWSA",
-   "name": "News Corp (Class A)",
-   "art": "ergebnis",
-   "datum": "2026-11-05",
-   "betrag": "",
-   "waehrung": "",
-   "quelle": "https://www.sec.gov/Archives/edgar/data/1564708/000156470826000254/exhibit991combined110526.htm"
-  },
-  {
-   "sym": "ROK",
-   "name": "Rockwell Automation",
-   "art": "ergebnis",
-   "datum": "2026-11-05",
-   "betrag": "",
-   "waehrung": "",
-   "quelle": "https://www.sec.gov/Archives/edgar/data/1024478/000102447826000045/fy2026ex99.htm"
-  },
-  {
-   "sym": "SONY",
-   "name": "Sony Group Corp",
-   "art": "ergebnis",
-   "datum": "2026-11-05",
-   "betrag": "",
-   "waehrung": "",
-   "quelle": "https://www.sec.gov/Archives/edgar/data/313838/000110465926122935/tm2628525d4_6k.htm"
-  },
-  {
-   "sym": "STE",
-   "name": "Steris",
-   "art": "ergebnis",
-   "datum": "2026-11-05",
-   "betrag": "",
-   "waehrung": "",
-   "quelle": "https://www.sec.gov/Archives/edgar/data/1757898/000162828026070220/ste9302026ex991.htm"
-  },
-  {
-   "sym": "TPL",
-   "name": "Texas Pacific Land Corporation",
-   "art": "ergebnis",
-   "datum": "2026-11-05",
-   "betrag": "",
-   "waehrung": "",
-   "quelle": "https://www.sec.gov/Archives/edgar/data/1811074/000181107426000075/exhibit991q32026earningsre.htm"
-  },
-  {
-   "sym": "XEL",
-   "name": "Xcel Energy",
-   "art": "ergebnis",
-   "datum": "2026-11-05",
-   "betrag": "",
-   "waehrung": "",
-   "quelle": "https://www.sec.gov/Archives/edgar/data/72903/000119312526444394/d205441dex9901.htm"
-  },
-  {
    "sym": "AEE",
    "name": "Ameren",
    "art": "ergebnis",
@@ -532,6 +343,15 @@
    "quelle": "https://www.sec.gov/Archives/edgar/data/1577552/000110465926123545/tm2629189d1_ex99-1.htm"
   },
   {
+   "sym": "CPAY",
+   "name": "Corpay",
+   "art": "ergebnis",
+   "datum": "2026-11-19",
+   "betrag": "",
+   "waehrung": "",
+   "quelle": "https://www.sec.gov/Archives/edgar/data/1175454/000117545426000066/ex991billacquisitionnovemb.htm"
+  },
+  {
    "sym": "DHI",
    "name": "D. R. Horton",
    "art": "dividende_zahltag",
@@ -604,6 +424,15 @@
    "quelle": "https://www.sec.gov/Archives/edgar/data/719955/000071995526000244/exhibit991fy2026q3earnings.htm"
   },
   {
+   "sym": "9432.T",
+   "name": "NTT",
+   "art": "ergebnis",
+   "datum": "2026-11-20",
+   "betrag": "",
+   "waehrung": "",
+   "quelle": "https://www.nttdata-strategy.com/en/newsrelease/261120-en/"
+  },
+  {
    "sym": "EVRG",
    "name": "Evergy",
    "art": "dividende_exdatum",
@@ -611,6 +440,15 @@
    "betrag": "",
    "waehrung": "",
    "quelle": "https://www.sec.gov/Archives/edgar/data/1711269/000119312526448521/d193466dex991.htm"
+  },
+  {
+   "sym": "PYPL",
+   "name": "PayPal",
+   "art": "ergebnis",
+   "datum": "2026-11-20",
+   "betrag": "",
+   "waehrung": "",
+   "quelle": "https://www.sec.gov/Archives/edgar/data/1633917/000119312526469335/d196713dex991.htm"
   },
   {
    "sym": "REGN",
@@ -665,6 +503,15 @@
    "betrag": "",
    "waehrung": "",
    "quelle": "https://data.fca.org.uk/artefacts/NSM/RNS/1d1010cb-a6c5-4191-b641-9a0a1ad7fbb4.html"
+  },
+  {
+   "sym": "HSBC",
+   "name": "Hsbc Holdings Plc",
+   "art": "dividende_zahltag",
+   "datum": "2026-11-24",
+   "betrag": "",
+   "waehrung": "USD",
+   "quelle": "https://www.sec.gov/Archives/edgar/data/1089113/000165495426010019/a0814e.htm"
   },
   {
    "sym": "VRT",

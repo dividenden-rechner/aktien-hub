@@ -32,10 +32,14 @@ Datei anklicken, dann Stift-Symbol: Zeile `draft: true` löschen und speichern, 
 | 29.10.2026 22:42 | Amazon steigert Umsatz im dritten Quartal auf 201,9 Milliarden Dollar | [79738970_2026-10-29/7757_2242-amazon-q3-2026-zahlen.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/79738970_2026-10-29/7757_2242-amazon-q3-2026-zahlen.md) |
 | 29.10.2026 10:12 | Shell erzielt im dritten Quartal 10,8 Milliarden Dollar Gewinn | [79738970_2026-10-29/8987_1012-shell-q3-2026-ergebnisse.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/79738970_2026-10-29/8987_1012-shell-q3-2026-ergebnisse.md) |
 
-### Online (446)
+### Online (450)
 
 | Datum | Titel | Datei |
 |---|---|---|
+| 20.11.2026 14:38 | Corpay investiert 1,1 Milliarden US-Dollar in BILL-Übernahme | [79738879_2026-11-20/8561_1438-corpay-beteiligung-bill-uebernahme-2026.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/79738879_2026-11-20/8561_1438-corpay-beteiligung-bill-uebernahme-2026.md) |
+| 20.11.2026 14:37 | SSE plant 8,7 Mrd. Pfund Investitionen für Stromnetze bis 2033 | [79738879_2026-11-20/8562_1437-sse-praesentiert-investitionsplan-von-8-7-mrd-pfund.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/79738879_2026-11-20/8562_1437-sse-praesentiert-investitionsplan-von-8-7-mrd-pfund.md) |
+| 20.11.2026 14:37 | FirstEnergy hebt Gewinnprognose an und erhöht Investitionsplan auf 38 Mrd. USD | [79738879_2026-11-20/8562_1437-firstenergy-erhoeht-investitionen-und-hebt-gewinnprognose-bis-2030.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/79738879_2026-11-20/8562_1437-firstenergy-erhoeht-investitionen-und-hebt-gewinnprognose-bis-2030.md) |
+| 20.11.2026 14:36 | PayPal ernennt Claire Bramley zur neuen Finanzchefin und ordnet Führungsteam neu | [79738879_2026-11-20/8563_1436-paypal-fuehrungswechsel-cfo-claire-bramley.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/79738879_2026-11-20/8563_1436-paypal-fuehrungswechsel-cfo-claire-bramley.md) |
 | 20.11.2026 13:30 | Chinas KI-Firmen lernen von US-Modellen: Wie Destillation die Chip-Sperren unterläuft | [79738883_2026-11-17/9100_0657-china-destillation-us-ki-modelle.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/79738883_2026-11-17/9100_0657-china-destillation-us-ki-modelle.md) |
 | 20.11.2026 10:30 | Intuit: Gewinn plus 56 %, doch der Ausblick drückt die Aktie um 10 % | [79738879_2026-11-20/8969_1030-intuit-q1-2027-ausblick-aktie-bricht-ein.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/79738879_2026-11-20/8969_1030-intuit-q1-2027-ausblick-aktie-bricht-ein.md) |
 | 19.11.2026 18:20 | AMD: Leerverkäufer-Bericht zu China drückt die Aktie um fast 9 % | [79738883_2026-11-19/9330_1820-amd-hunterbrook-shortseller-china.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/79738883_2026-11-19/9330_1820-amd-hunterbrook-shortseller-china.md) |
