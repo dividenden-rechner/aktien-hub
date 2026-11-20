@@ -8299,24 +8299,24 @@
 ]
 }
 },
-"stand": "2026-11-19",
+"stand": "2026-11-20",
 "hinweis": "Eigene Prognosen der Unternehmen aus ihren Ergebnis-Pressemitteilungen (SEC 8-K, Anlage EX-99), automatisch ausgelesen. Keine Analystenschaetzungen.",
 "letzter_lauf": {
-"zeit": "2026-11-19 21:04",
-"kandidaten": 66,
+"zeit": "2026-11-20 02:52",
+"kandidaten": 69,
 "ki_aufrufe": 0,
 "abbruch": "",
 "fehler": [
+"KEYS Meldung: HTTP Error 403: Forbidden",
+"INTU Meldung: HTTP Error 403: Forbidden",
+"ROST Meldung: HTTP Error 403: Forbidden",
 "WSM Meldung: HTTP Error 403: Forbidden",
 "WMT Meldung: HTTP Error 403: Forbidden",
 "NJR Meldung: HTTP Error 403: Forbidden",
 "PANW Meldung: HTTP Error 403: Forbidden",
 "P Meldung: HTTP Error 403: Forbidden",
 "TJX Meldung: HTTP Error 403: Forbidden",
-"EXPD Meldung: HTTP Error 403: Forbidden",
-"LOW Meldung: HTTP Error 403: Forbidden",
-"TGT Meldung: HTTP Error 403: Forbidden",
-"NVDA Meldung: HTTP Error 403: Forbidden"
+"EXPD Meldung: HTTP Error 403: Forbidden"
 ]
 }
 }
