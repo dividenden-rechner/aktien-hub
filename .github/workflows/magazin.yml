@@ -15,6 +15,7 @@ on:
       - "assets/magazin/**"
   schedule:
     - cron: "17 5 * * *"   # täglich: Artikel mit Datum in der Zukunft werden automatisch freigeschaltet
+    - cron: "7 23 * * 6"   # Samstag 23:07 UTC = Sonntag 00:07 deutsche Zeit (Winter): Newsletter-Artikel mit freigabe gehen online
   workflow_dispatch:
 permissions:
   contents: write

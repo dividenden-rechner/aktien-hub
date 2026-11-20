@@ -7,6 +7,7 @@ author_bio: "Das Redaktions-Team von Dividenden-Rechner.de schreibt über Divide
 category: Analyse
 kein_logo: ja
 vorschau: ja
+freigabe: 2026-11-22 00:00
 image: https://images.unsplash.com/photo-1741992556911-f04553890e36?ixid=M3wxMTE3OTgzfDB8MXxzZWFyY2h8Mnx8ZGVwYXJ0bWVudCUyMHN0b3JlJTIwaW50ZXJpb3J8ZW58MXwwfHx8MTc5NTE3Njc3MXww&ixlib=rb-4.1.0&w=1600&h=900&fit=crop&crop=entropy&q=80&fm=jpg
 image_alt: "Foto zu Target: The interior of a Target store. Customers are seen walking through the aisles, browsing merchandise."
 image_credit: "Foto: Zoshua Colah auf Unsplash"

@@ -7,6 +7,7 @@ author_bio: "Das Redaktions-Team von Dividenden-Rechner.de schreibt über Divide
 category: Analyse
 kein_logo: ja
 vorschau: ja
+freigabe: 2026-11-22 00:00
 image: https://images.unsplash.com/photo-1598647739008-ce58845e644b?ixid=M3wxMTE3OTgzfDB8MXxzZWFyY2h8Mnx8Ymlub2N1bGFycyUyMGNpdHklMjB2aWV3fGVufDF8MHx8fDE3OTUxNzcxMTN8MA&ixlib=rb-4.1.0&w=1600&h=900&fit=crop&crop=entropy&q=80&fm=jpg
 image_alt: "Foto zu Wochenausblick:: A binocular in a skyscraper looking at the blurred Moscow city from the height"
 image_credit: "Foto: Ansia Lasa auf Unsplash"

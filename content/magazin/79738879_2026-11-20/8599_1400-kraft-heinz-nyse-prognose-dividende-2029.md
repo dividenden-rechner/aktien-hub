@@ -14,6 +14,7 @@ image_credit: "Foto: Kraft Heinz / NYSE (Pressebild)"
 image_source: "https://www.kraftheinzcompany.com"
 image_lizenz: Pressebild
 vorschau: ja
+freigabe: 2026-11-22 00:00
 ---
 <!-- PRÜFEN: Folien und Ziele aus der Investor-Day-Präsentation (Kraft_Heinz_Investor_Day_Combined_FINAL2.pdf, von Divi geliefert): Fahrplan 2026 bis 2029 (S. 25), Ausblick 2027 organisch etwa flach inkl. 50 Basispunkte Belastung aus Ausstiegen und Kaffeeverkauf, bereinigter Betriebsgewinn niedrig einstellig rückläufig, Cash-Umwandlung ~100 % (S. 158/159), Verschuldung 3,0x (2025), 3,2–3,3x (2026e), Ziel ~3,0x, Schulden 29,2 → 21,2 → 18,0 Mrd. $, freier Cashflow nach Dividende ~0,5 Mrd. $ 2027e (S. 160), Kapitalverwendung (S. 161), Portfolio Win Big 56 %, Win 21 %, Hold 23 %, 700 Mio. $ Investitionen 2026, Innovationsanteil 2 % → ~5 %, Produktivität mind. 4 % der Herstellkosten 2027, ~10 % Aktionärsrendite. -->
 <!-- PRÜFEN: Zehnjahreszahlen aus data/sec/fundamentals.json, Kurs und Rendite aus data/kennzahlen.json (Xetra 19.11.2026, 24,94 $). 2026-Werte (bereinigter Gewinn je Aktie 2,07–2,13 $, Cash-Umwandlung ~110 %, freier Cashflow neun Monate 2,4 Mrd. $, Zinsen ~890 Mio. $, Kaffeeverkauf 650 Mio. $) aus unserem Investor-Day-Artikel vom 12.11.2026. NYSE-Wechsel: Glocke am 12.11.2026, angekündigt per 8-K vom 25.08.2026. -->

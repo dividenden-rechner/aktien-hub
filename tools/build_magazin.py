@@ -114,6 +114,11 @@ def read_post(path):
     meta["draft"] = meta.get("draft", "").lower() in ("true", "ja", "1", "yes")
     # vorschau: ja -> nur auf der Testseite (GitHub) unter vorschau/<slug>/, nicht in News, Startseite, Feed, Sitemap oder auf Strato
     meta["vorschau"] = meta.get("vorschau", "").lower() in ("true", "ja", "1", "yes")
+    # freigabe: 2026-11-22 00:00 -> Vorschau-Artikel geht ab diesem Zeitpunkt (deutsche Zeit) automatisch online
+    if meta["vorschau"] and meta.get("freigabe"):
+        try:
+            if parse_date(meta["freigabe"]).replace(tzinfo=None) <= datetime.datetime.now(ZoneInfo("Europe/Berlin")).replace(tzinfo=None): meta["vorschau"] = False
+        except Exception as ex: print("freigabe unlesbar:", meta.get("freigabe"), ex)
     try:
         import medien; medien.fill(meta)   # fehlendes Logo/CEO-Portrait aus der Medien-Ablage
     except Exception as ex: print("Medien-Ablage:", ex)

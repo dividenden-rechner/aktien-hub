@@ -7,6 +7,7 @@ author_bio: "Das Redaktions-Team von Dividenden-Rechner.de schreibt über Divide
 category: Analyse
 kein_logo: ja
 vorschau: ja
+freigabe: 2026-11-22 00:00
 image: assets/magazin/agree-realty-vergleich-nnn-realty-income-foto.jpg
 image_alt: "Symbolbild: Einkaufszentrum mit Supermarkt und Café"
 image_credit: "Symbolbild: Einkaufszentrum mit Supermarkt und Café. Agree Realty investiert in Einzelhandelsimmobilien. Foto: KI-generiert"
