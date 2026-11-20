@@ -7,6 +7,11 @@ author_bio: "Das Redaktions-Team von Dividenden-Rechner.de schreibt über Divide
 category: Analyse
 kein_logo: ja
 vorschau: ja
+image: https://images.unsplash.com/photo-1741992556911-f04553890e36?ixid=M3wxMTE3OTgzfDB8MXxzZWFyY2h8Mnx8ZGVwYXJ0bWVudCUyMHN0b3JlJTIwaW50ZXJpb3J8ZW58MXwwfHx8MTc5NTE3Njc3MXww&ixlib=rb-4.1.0&w=1600&h=900&fit=crop&crop=entropy&q=80&fm=jpg
+image_alt: "Foto zu Target: The interior of a Target store. Customers are seen walking through the aisles, browsing merchandise."
+image_credit: "Foto: Zoshua Colah auf Unsplash"
+image_source: https://unsplash.com/photos/people-shop-in-a-target-store-aisle-CtZQ2gOSxrQ?utm_source=dividenden-rechner&utm_medium=referral
+image_artist_url: https://unsplash.com/@zoshuacolah?utm_source=dividenden-rechner&utm_medium=referral
 ---
 <!-- PRÜFEN: Quartalszahlen aus unseren Artikeln zu Target (target-q3-2026) und TJX (tjx-q3-fy27) vom 18.11.2026, beide auf Basis der Pressemitteilungen. Zehnjahreszahlen (Umsatz, Dividende je Aktie, operativer Cashflow, Investitionen, gezahlte Dividenden) aus data/sec/fundamentals.json, Kennzahlen-Tabelle aus data/kennzahlen.json (Xetra-Kurse vom 19.11.2026, Umrechnung in USD). Diagramme selbst gebaut. -->
 <!-- PRÜFEN: Selbst gerechnet: Zollerstattung je Aktie Target 0,50 $ zu TJX 0,05 $ = zehnfach; Anteil am Gewinn je Aktie Target 0,50/2,65 = 19 % (Quartal), Jahresprognose 2,14 / 11,03 (Mitte) = 19 %, also knapp ein Fünftel; TJX 0,05/1,39 = 4 %. Freier Cashflow GJ 2025: Target 6,56 − 3,73 = 2,83 Mrd. $ gegen 2,05 Mrd. $ Dividenden = 72 %; TJX 6,87 − 1,96 = 4,91 gegen 1,84 = 37 %. Umsatz GJ 2021 bis 2025: Target 106,0 → 104,8 Mrd. $ (−1 %); TJX 48,5 → 60,4 Mrd. $ (+24 %). Rechnerischer Blick auf 2027: operativer Cashflow in der Größenordnung der Vorjahre (6,5 bis 8,7 Mrd. $) minus Investitionen 5 bis 6 Mrd. $ gegen rund 2,1 Mrd. $ Dividende. -->

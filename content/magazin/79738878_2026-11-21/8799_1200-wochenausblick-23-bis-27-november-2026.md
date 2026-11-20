@@ -7,6 +7,11 @@ author_bio: "Das Redaktions-Team von Dividenden-Rechner.de schreibt über Divide
 category: Analyse
 kein_logo: ja
 vorschau: ja
+image: https://images.unsplash.com/photo-1598647739008-ce58845e644b?ixid=M3wxMTE3OTgzfDB8MXxzZWFyY2h8Mnx8Ymlub2N1bGFycyUyMGNpdHklMjB2aWV3fGVufDF8MHx8fDE3OTUxNzcxMTN8MA&ixlib=rb-4.1.0&w=1600&h=900&fit=crop&crop=entropy&q=80&fm=jpg
+image_alt: "Foto zu Wochenausblick:: A binocular in a skyscraper looking at the blurred Moscow city from the height"
+image_credit: "Foto: Ansia Lasa auf Unsplash"
+image_source: https://unsplash.com/photos/black-and-white-glass-window-b3UB4atub6U?utm_source=dividenden-rechner&utm_medium=referral
+image_artist_url: https://unsplash.com/@ansia_lasa?utm_source=dividenden-rechner&utm_medium=referral
 ---
 <!-- PRÜFEN: Unternehmenstermine aus unseren Kalenderdaten (data/av-earnings.json, data/quartr-termine.json, data/termine.json, Stand 20.11.2026); Zoom am Montag aus news.ifyouspent.com. US-Konjunktur (BIP zweite Schätzung, PCE, Erstanträge vorgezogen, Beige Book am 25.11.; Thanksgiving geschlossen, Freitag Handelsende 19 Uhr MEZ): simianx.ai. ifo am 24.11., EU-Sondergipfel zur EZB-Nachfolge 26./27.11., S&P-Ratingprüfung Frankreich 27.11.: LBBW-Terminkalender November 2026. Termine können sich kurzfristig verschieben, vor Veröffentlichung am Samstag kurz gegenprüfen. -->
 <!-- PRÜFEN: Aufmacher: Fernglas-Motiv über die Unsplash-Anfrage (Vorgabe für die Wochenvorschau). -->

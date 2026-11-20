@@ -3,12 +3,13 @@
 <!-- uebersicht-start -->
 ## Übersicht (wird automatisch erstellt, neueste zuerst)
 
-### Vorschau auf der Testseite (4)
+### Vorschau auf der Testseite (5)
 
 Nur auf der GitHub-Testseite unter vorschau/ sichtbar. Freigeben: Datei anklicken, Stift-Symbol, Zeile `vorschau: ja` löschen und speichern.
 
 | Datum | Titel | Datei |
 |---|---|---|
+| 21.11.2026 12:00 | Wochenausblick: Thanksgiving-Woche mit Deere, Dell und dem Ringen um die EZB-Spitze | [79738878_2026-11-21/8799_1200-wochenausblick-23-bis-27-november-2026.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/79738878_2026-11-21/8799_1200-wochenausblick-23-bis-27-november-2026.md) |
 | 21.11.2026 11:00 | Agree Realty im Vergleich: Dividende rund 4,7 %, AFFO-Prognose angehoben, Verschuldung niedriger als bei NNN und Realty Income | [79738883_2026-11-16/9050_2340-agree-realty-vergleich-nnn-realty-income.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/79738883_2026-11-16/9050_2340-agree-realty-vergleich-nnn-realty-income.md) |
 | 21.11.2026 10:00 | Target und TJX: Das Zollgeld wiegt bei Target zehnmal so schwer | [79738879_2026-11-20/8669_1330-target-tjx-zollrueckerstattung-dividende-vergleich.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/79738879_2026-11-20/8669_1330-target-tjx-zollrueckerstattung-dividende-vergleich.md) |
 | 21.11.2026 09:00 | Kraft Heinz an der NYSE: Der Cashflow sinkt 2027 um ein Drittel, die Dividende bleibt | [79738879_2026-11-20/8599_1400-kraft-heinz-nyse-prognose-dividende-2029.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/79738879_2026-11-20/8599_1400-kraft-heinz-nyse-prognose-dividende-2029.md) |
