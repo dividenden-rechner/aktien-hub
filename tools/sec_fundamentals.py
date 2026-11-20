@@ -8,7 +8,12 @@ import json, os, re, time, datetime, urllib.request
 
 # Die SEC verlangt einen Absender mit Kontakt. Er kommt aus dem GitHub-Secret SEC_UA, damit keine Adresse im öffentlichen Repo steht.
 UA = os.environ.get("SEC_UA", "").strip() or "dividenden-rechner.de Datenabruf"
-JAHRE = 10
+JAHRE = int(os.environ.get("SEC_JAHRE") or 10)
+# Andere Firmenliste (z. B. Kanada, americas-equity-hub): SEC_LISTE = JSON {kuerzel: [cik, name]}; Ausgabe dann nach
+# SEC_AUSGABE / SEC_ABDECKUNG. Ohne diese Variablen unveraendert S&P 500 + Zusatzliste nach data/sec/.
+SEC_LISTE = os.environ.get("SEC_LISTE")
+SEC_AUSGABE = os.environ.get("SEC_AUSGABE") or "data/sec/fundamentals.json"
+SEC_ABDECKUNG = os.environ.get("SEC_ABDECKUNG") or "data/sec-abdeckung.md"
 # Zusaetzliche US-Werte ausserhalb des S&P 500 (Ticker -> CIK leer = aus SEC-Tickerliste)
 ZUSATZ = {"VICI": None, "MAIN": None, "ARCC": None, "ADC": None, "STAG": None, "EPD": None, "ET": None}
 # Dividenden-Aristokraten ausserhalb des S&P 500 (ab 17.11.2026, fuer die Dividendenseiten /dividende/)
@@ -79,7 +84,8 @@ K_IFRS = {
                  "BasicAndDilutedEarningsPerShare"],
     "dividende_je_aktie": [],
     "dividenden_gezahlt": ["DividendsPaidToEquityHoldersOfParentClassifiedAsFinancingActivities",
-                           "DividendsPaidClassifiedAsFinancingActivities", "DividendsPaid"],
+                           "DividendsPaidClassifiedAsFinancingActivities", "DividendsPaid",
+                           "DividendsPaidOrdinaryShares"],   # nur fuer fehlende Jahre (z. B. RBC ab 2023)
     "operativer_cf": ["CashFlowsFromUsedInOperatingActivities"],
     "capex": ["PurchaseOfPropertyPlantAndEquipmentClassifiedAsInvestingActivities",
               "PurchaseOfPropertyPlantAndEquipmentIntangibleAssetsOtherThanGoodwillInvestmentPropertyAndOtherNoncurrentAssets"],
@@ -103,6 +109,9 @@ K_IFRS = {
     "schulden_kurz": ["CurrentBorrowings", "CurrentPortionOfNoncurrentBorrowings", "ShorttermBorrowings"],
 }
 FORMEN = ("10-K", "20-F", "40-F")
+# Zusaetzliche Formulare nur auf Wunsch (Kanada: einige Emittenten wie CN Rail melden Jahreszahlen nur per 6-K);
+# Werte aus Jahresberichten (10-K/20-F/40-F) haben fuer dasselbe Jahr immer Vorrang.
+FORMEN_EXTRA = tuple(f for f in (os.environ.get("SEC_FORMEN_EXTRA") or "").split(",") if f)
 KERN = ["umsatz", "gewinn", "eps_verw", "dividende_je_aktie", "operativer_cf"]
 
 
@@ -139,15 +148,20 @@ def einheit_waehlen(units, einheit, waehrung):
 def werte_eines_namens(gaap, tag, art, einheit, waehrung=None):
     cand = {}
     for x in einheit_waehlen((gaap.get(tag) or {}).get("units", {}), einheit, waehrung):
-        if not str(x.get("form", "")).startswith(FORMEN):
+        form = str(x.get("form", ""))
+        if not form.startswith(FORMEN + FORMEN_EXTRA):
             continue
         if art == "f":
             d = dauer(x)
             if d is None or not (350 <= d <= 380):
                 continue
         end = x["end"]
-        if end not in cand or x.get("filed", "") > cand[end][2]:
-            cand[end] = (x["val"], tag, x.get("filed", ""))
+        prio, filed = (0 if form.startswith(FORMEN) else 1), x.get("filed", "")
+        if end in cand:   # Jahresbericht vor Zusatzformular; bei gleichem Rang die neueste Einreichung
+            alt_prio, alt_filed = cand[end][3]
+            if prio > alt_prio or (prio == alt_prio and filed <= alt_filed):
+                continue
+        cand[end] = (x["val"], tag, filed, (prio, filed))
     return {e: v[:2] for e, v in cand.items()}
 
 
@@ -188,13 +202,17 @@ def ersatz_suchen(gaap, art, einheit, muster, schon, ziel_ende, waehrung="USD"):
 
 def main():
     heute = datetime.date.today()
-    uni = json.load(open("data/universe.json"))["firmen"]
-    liste = {f["sym"].upper(): (f.get("cik"), f.get("name")) for f in uni}
-    tick = get("https://www.sec.gov/files/company_tickers.json")
-    cikmap = {v["ticker"].upper(): (v["cik_str"], v["title"]) for v in tick.values()} if "_fehler" not in tick else {}
-    for t in ZUSATZ:
+    if SEC_LISTE:
+        liste = {k: (v[0], v[1]) for k, v in json.load(open(SEC_LISTE, encoding="utf-8")).items() if v and v[0]}
+        cikmap = {}
+    else:
+        uni = json.load(open("data/universe.json"))["firmen"]
+        liste = {f["sym"].upper(): (f.get("cik"), f.get("name")) for f in uni}
+        tick = get("https://www.sec.gov/files/company_tickers.json")
+        cikmap = {v["ticker"].upper(): (v["cik_str"], v["title"]) for v in tick.values()} if "_fehler" not in tick else {}
+    for t in ([] if SEC_LISTE else ZUSATZ):
         liste.setdefault(t, (cikmap.get(t, (None, t))[0], cikmap.get(t, (None, t))[1]))
-    for t, c in CIK_FEST.items():
+    for t, c in ({} if SEC_LISTE else CIK_FEST).items():
         if t in liste:
             liste[t] = (c, liste[t][1])
 
@@ -301,10 +319,10 @@ def main():
         if i % 50 == 0:
             print(i, t, flush=True)
 
-    os.makedirs("data/sec", exist_ok=True)
+    os.makedirs(os.path.dirname(SEC_AUSGABE) or ".", exist_ok=True)
     json.dump({"stand": heute.isoformat(), "quelle": "SEC EDGAR companyfacts (XBRL), US-Behördendaten",
                "einheiten": {k: v[1] for k, v in K.items()}, "firmen": firmen},
-              open("data/sec/fundamentals.json", "w"), ensure_ascii=False, separators=(",", ":"))
+              open(SEC_AUSGABE, "w"), ensure_ascii=False, separators=(",", ":"))
 
     n = len(firmen)
     def hat(f, k):
@@ -336,7 +354,7 @@ def main():
     md += ["", f"## Ersatz-Namen und Split-Bereinigungen ({len(ersatz_log)})", ""] + [f"- {x}" for x in ersatz_log]
     if notizen:
         md += ["", "## Hinweise", ""] + [f"- {x}" for x in notizen]
-    open("data/sec-abdeckung.md", "w").write("\n".join(md) + "\n")
+    open(SEC_ABDECKUNG, "w").write("\n".join(md) + "\n")
     print("\n".join(md[:20]))
 
 

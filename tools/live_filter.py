@@ -17,7 +17,7 @@ HID = CFG.get("versteckt", [])
 TEST = (CFG.get("testkopie") or "").strip("/")
 ALT, NEU = CFG.get("domain_alt", ""), CFG.get("domain_neu", "")
 FMP_AUS = CFG.get("fmp_aus", False)
-SKIP = {".git", ".github", "_site", "tools", "docs", "worker", "content", "node_modules", "__pycache__", "asia-equity-hub", "europe-equity-hub"}
+SKIP = {".git", ".github", "_site", "tools", "docs", "worker", "content", "node_modules", "__pycache__", "asia-equity-hub", "europe-equity-hub", "americas-equity-hub"}
 SKIP_FILES = {"ANLEITUNG.txt", "README.md"}
 # Rohdaten-Speicher, die nur die Werkzeuge brauchen (die Seite liest die fertigen Dateien in data/esef/firma usw.)
 SKIP_PFADE = {"data/esef/universum", "data/asien/roh"}
