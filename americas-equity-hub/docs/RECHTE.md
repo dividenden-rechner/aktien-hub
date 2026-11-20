@@ -16,6 +16,9 @@ Keine Rechtsberatung. `unknown` ist nicht `allowed`. Export nur bei `allowed` f�
 | U.S. Securities and Exchange Commission (sec_edgar) | US | allowed | allowed | allowed | allowed | allowed | allowed | allowed | ja |
 | GLEIF (gleif) | global | allowed | allowed | allowed | allowed | allowed | allowed | allowed | ja |
 | ESMA (esma_firds) | EU | allowed | allowed | allowed | unknown | allowed | unknown | unknown | nein |
+| Deutsche Börse AG (Market Data + Services) (deutsche_boerse_delayed) | DE | allowed | allowed | allowed | unknown | allowed | restricted | restricted | nein |
+| Deutsche Börse AG / Börse Frankfurt (deutsche_boerse_instrumente) | DE | allowed | unknown | unknown | unknown | unknown | unknown | unknown | nein |
+| Tradegate Exchange (Tradegate BSX) (tradegate_delayed) | DE | allowed | unknown | unknown | unknown | unknown | unknown | unknown | nein |
 
 ## Belege
 
@@ -90,4 +93,23 @@ Keine Rechtsberatung. `unknown` ist nicht `allowed`. Export nur bei `allowed` f�
 - Bedingungen: https://www.esma.europa.eu/about-esma/legal-notice-and-data-protection (abgerufen 2026-11-20)
 - Beleg: "Reproduction of all information on this site (ESMA Library) is authorised except as otherwise stated, provided the source is acknowledged" – bezieht sich ausdrücklich auf die ESMA Library; ob das Register erfasst ist, ist nicht belegt.
 - **Offene Frage zur rechtlichen Prüfung:** Gilt der Legal Notice (Reproduktion mit Quellenangabe) auch für die FIRDS-Registerdaten? Bis dahin ISINs nur über GLEIF (CC0) veröffentlichen.
+
+### Deutsche Börse AG (Market Data + Services)
+- Datensatz: Verzögerte MiFIR-Post-Trade-Dateien Xetra und Börse Frankfurt (mfs.deutsche-boerse.com) – Grundlage aller Kurse der Website
+- Bedingungen: https://www.mds.deutsche-boerse.com/resource/blob/5322802/8a82ea41893249520d1b5fb4878c8dad/data/Market%20Data%20Policy%20Guidelines%20and%20FAQ_V3_0.pdf (abgerufen 2026-11-20)
+- Beleg: Market Data Policy Guidelines and FAQ V3.0, S. 17: "The access to and use of the Delayed Data is subject to a license ... A free of charge usage right is only granted if the User who is accessing and using Delayed Data (“Delayed Data User”) does not commercialize the Delayed Data. A commercialization of Delayed Data which is subject to license for a fee and applies in the following events (non-exhaustive list): • Delayed Data User onward disseminates Delayed Data to third parties for a fee (including a general fee for accessing its services); • Delayed Data User creates and offers value-added services using Delayed Data which are then sold for a fee ..." Preisliste MDDA 16.3, S. 5 (Distribution License, Delayed, je Monat): Xetra Post-Trade 743 €, Börse Frankfurt Post-Trade 372 €, Xetra Core (inkl. beider) 1.820 €.
+- Auflagen: kostenlos nur ohne Kommerzialisierung; Gebühr/Bezahlzugang auf die Dienste oder verkaufte Mehrwertdienste mit diesen Daten = lizenzpflichtig (Distribution License)
+- **Offene Frage zur rechtlichen Prüfung:** Gilt die heutige kostenlose, werbe-/abofreie Anzeige als nicht kommerziell? Spätestens mit Bezahlbereich (Freemium) ist eine Distribution License nötig (Preisliste: Delayed Xetra Post-Trade 743 €/Monat + Börse Frankfurt Post-Trade 372 €/Monat oder Xetra Core 1.820 €/Monat). Speicherung einer eigenen Kurshistorie: im Vertrag (MDDA) zu klären.
+
+### Deutsche Börse AG / Börse Frankfurt
+- Datensatz: Liste aller handelbaren Instrumente Xetra (t7-xetr-allTradableInstruments.csv) – ISIN und Name
+- Bedingungen: https://www.cashmarket.deutsche-boerse.com/cash-en/disclaimer (abgerufen 2026-11-20)
+- Beleg: Auf der Seite und im Disclaimer keine Nutzungsbedingungen für die Liste; der Disclaimer regelt nur Haftung und Marken ("They may not be used or exploited without the prior express consent of the respective owner" bezieht sich auf die Marken).
+- **Offene Frage zur rechtlichen Prüfung:** Darf die Instrumentenliste (ISIN-Zuordnung) gespeichert und für eine öffentliche/kommerzielle Website genutzt werden? Anfrage an data.services@deutsche-boerse.com.
+
+### Tradegate Exchange (Tradegate BSX)
+- Datensatz: Verzögerte Post-Trade-Dateien über mfs.deutsche-boerse.com
+- Bedingungen: None (abgerufen 2026-11-20)
+- Beleg: Die Datei wird über den Dienst der Deutschen Börse angeboten; Tradegate steht nicht in der Preisliste der Deutschen Börse; eigene Bedingungen von Tradegate nicht geprüft.
+- **Offene Frage zur rechtlichen Prüfung:** Bedingungen der Tradegate Exchange für verzögerte Daten.
 
