@@ -19,6 +19,13 @@ ALT, NEU = CFG.get("domain_alt", ""), CFG.get("domain_neu", "")
 FMP_AUS = CFG.get("fmp_aus", False)
 SKIP = {".git", ".github", "_site", "tools", "docs", "worker", "content", "node_modules", "__pycache__", "asia-equity-hub", "europe-equity-hub"}
 SKIP_FILES = {"ANLEITUNG.txt", "README.md"}
+# Rohdaten-Speicher, die nur die Werkzeuge brauchen (die Seite liest die fertigen Dateien in data/esef/firma usw.)
+SKIP_PFADE = {"data/esef/universum", "data/asien/roh"}
+
+
+def ignorieren(d, namen):
+    rel = os.path.relpath(d, ".").replace(os.sep, "/")
+    return [n for n in namen if f"{rel}/{n}" in SKIP_PFADE]
 
 
 def neu(s):
@@ -30,7 +37,10 @@ def neu(s):
 def kopie(ziel):
     for n in os.listdir("."):
         if n in SKIP or n in SKIP_FILES or n.startswith("."): continue
-        (shutil.copytree if os.path.isdir(n) else shutil.copy2)(n, os.path.join(ziel, n))
+        if os.path.isdir(n):
+            shutil.copytree(n, os.path.join(ziel, n), ignore=ignorieren)
+        else:
+            shutil.copy2(n, os.path.join(ziel, n))
 
 
 def hid_alt():

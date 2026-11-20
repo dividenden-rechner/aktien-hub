@@ -347,6 +347,78 @@ def isin_per_name(name, rname, land, kurse):
     return best if bw >= 0.8 else None
 
 
+def firma_bauen(name, rname, lei, isin, land, sektor, bs):
+    """Alle Berichte eines Rechtstraegers (aelteste zuerst) -> Firmeneintrag im fundamentals-Format, oder (None, Grund)."""
+    bs = sorted(bs, key=lambda b: b["ende"])
+    if not bs:
+        return None, "keine Berichte"
+    ausw = [auswerten(b["roh"]) for b in bs]
+    waehr = [x[1] for x in ausw if x[1]]
+    w = waehr[-1] if waehr else "EUR"
+    reihen = {}
+    for aus, bw in ausw:
+        if bw and bw != w:
+            continue   # Waehrungswechsel: aeltere Berichte in anderer Waehrung auslassen
+        for k, r in aus.items():
+            for e, v in r.items():
+                if v is not None:
+                    reihen.setdefault(k, {})[e] = v
+    enden = set(reihen.get("umsatz", {})) | set(reihen.get("gewinn", {}))
+    if not enden:
+        return None, "keine Jahreswerte"
+    gj = max(enden)
+    # Dividende je Aktie: UK im Jahr gezahlt, sonst die vorgeschlagene fuer das Geschaeftsjahr
+    # UK: die "vorgeschlagene" Dividende ist nur die Schluss- oder letzte Quartalsrate, deshalb dort nur gezahlte Werte
+    reih = ("_dps_gez",) if land in ("GB", "JE") else ("_dps_vor", "_dps_gez", "_dps_frei")
+    dps = {}
+    for k in reversed(reih):
+        dps.update(reihen.get(k, {}))
+    dps = {e: v for e, v in dps.items() if e in enden}
+    dwae = reihen.get("_dps_wae", {})
+    dps_w = dwae.get(max(dps)) if dps else None
+    if dps:   # nur Jahre in derselben Waehrung wie der letzte Wert
+        dps = {e: v for e, v in dps.items() if dwae.get(e) == dps_w}
+    # Gewinn je Aktie in Pence statt Pfund (oder umgekehrt) erkennen: Gewinn / EPS muss zur Aktienzahl passen
+    eps, av, gw = reihen.get("eps_verw", {}), reihen.get("aktien_verw", {}), reihen.get("gewinn", {})
+    for e in list(eps):
+        if e in av and e in gw and av[e] and eps[e]:
+            q = (gw[e] / eps[e]) / av[e]
+            if 60 < q < 160:
+                eps[e] /= 100   # Gewinn je Aktie als Pence-Zahl in Pfund getaggt
+            elif 0.006 < q < 0.016:
+                eps[e] *= 100
+    for e in gw:   # Aktienzahl aus Gewinn / Gewinn je Aktie, wo sie nicht getaggt ist
+        if e not in av and eps.get(e) and gw[e] and gw[e] / eps[e] > 0:
+            av[e] = round(gw[e] / eps[e])
+    reihen["aktien_verw"] = av
+    fa = {"n": name, "rechtstraeger": rname, "lei": lei, "isin": isin, "land": land, "sektor": sektor,
+          "gj": gj, "w": w, "std": "IFRS", "quelle": "ESEF", "k": {}}
+    if dps_w:
+        fa["dps_w"] = dps_w   # Dividende je Aktie steht in dieser Waehrung, nicht in der Berichtswaehrung
+    if dps:
+        fa["k"]["dividende_je_aktie"] = [[e, round(dps[e], 4)] for e in sorted(dps)[-JAHRE:]]
+    dg = reihen.get("dividenden_gezahlt", {})
+    ber = {} if dps_w else {e: round(dg[e] / av[e], 4) for e in dg if e in av and av[e] and dg[e] and e not in dps}
+    if ber:
+        fa["k"]["dividende_je_aktie_ber"] = [[e, ber[e]] for e in sorted(ber)[-JAHRE:]]
+    eb = {e: round(gw[e] / av[e], 4) for e in gw if e in av and av[e] and e not in eps}
+    if eb:
+        fa["k"]["eps_ber"] = [[e, eb[e]] for e in sorted(eb)[-JAHRE:]]
+    for k, r in reihen.items():
+        if k.startswith("_") or not r:
+            continue
+        if k in DAUER or k in K_IFRS:
+            r = {e: v for e, v in r.items() if e in enden} if k in DAUER else r
+            ends = sorted(r)[-JAHRE:]
+            if ends:
+                fa["k"][k] = [[e, r[e]] for e in ends]
+    kern = ["umsatz", "gewinn", "eps_verw", "dividende_je_aktie", "operativer_cf", "capex", "eigenkapital"]
+    da = [k for k in kern if k in fa["k"] and fa["k"][k][-1][0] >= gj or
+          (k == "eps_verw" and "eps_ber" in fa["k"]) or (k == "dividende_je_aktie" and "dividende_je_aktie_ber" in fa["k"])]
+    jahre = sorted({e[:4] for e in enden})
+    return fa, {"jahre": f"{jahre[0]}–{jahre[-1]}", "w": w, "da": da, "fehlt": [k for k in kern if k not in da]}
+
+
 def main():
     start = time.time()
     os.makedirs("data/esef", exist_ok=True)
@@ -404,75 +476,12 @@ def main():
             zeilen.append(f"| {t} | {name} | – | {'nicht gefunden' if t in sp['lei'] else 'noch nicht geprüft'} | | | |"); continue
         lei, rname = info
         bs = sorted((b for b in sp["berichte"].values() if b["lei"] == lei), key=lambda b: b["ende"])
-        if not bs:
-            zeilen.append(f"| {t} | {name} | {rname} | keine Berichte | | | |"); continue
-        ausw = [auswerten(b["roh"]) for b in bs]
-        waehr = [x[1] for x in ausw if x[1]]
-        w = waehr[-1] if waehr else "EUR"
-        reihen = {}
-        for aus, bw in ausw:
-            if bw and bw != w:
-                continue   # Waehrungswechsel: aeltere Berichte in anderer Waehrung auslassen
-            for k, r in aus.items():
-                for e, v in r.items():
-                    if v is not None:
-                        reihen.setdefault(k, {})[e] = v
-        enden = set(reihen.get("umsatz", {})) | set(reihen.get("gewinn", {}))
-        if not enden:
-            zeilen.append(f"| {t} | {name} | {rname} | keine Jahreswerte | | | |"); continue
-        gj = max(enden)
-        # Dividende je Aktie: UK im Jahr gezahlt, sonst die vorgeschlagene fuer das Geschaeftsjahr
-        # UK: die "vorgeschlagene" Dividende ist nur die Schluss- oder letzte Quartalsrate, deshalb dort nur gezahlte Werte
-        reih = ("_dps_gez",) if land in ("GB", "JE") else ("_dps_vor", "_dps_gez", "_dps_frei")
-        dps = {}
-        for k in reversed(reih):
-            dps.update(reihen.get(k, {}))
-        dps = {e: v for e, v in dps.items() if e in enden}
-        dwae = reihen.get("_dps_wae", {})
-        dps_w = dwae.get(max(dps)) if dps else None
-        if dps:   # nur Jahre in derselben Waehrung wie der letzte Wert
-            dps = {e: v for e, v in dps.items() if dwae.get(e) == dps_w}
-        # Gewinn je Aktie in Pence statt Pfund (oder umgekehrt) erkennen: Gewinn / EPS muss zur Aktienzahl passen
-        eps, av, gw = reihen.get("eps_verw", {}), reihen.get("aktien_verw", {}), reihen.get("gewinn", {})
-        for e in list(eps):
-            if e in av and e in gw and av[e] and eps[e]:
-                q = (gw[e] / eps[e]) / av[e]
-                if 60 < q < 160:
-                    eps[e] /= 100   # Gewinn je Aktie als Pence-Zahl in Pfund getaggt
-                elif 0.006 < q < 0.016:
-                    eps[e] *= 100
-        for e in gw:   # Aktienzahl aus Gewinn / Gewinn je Aktie, wo sie nicht getaggt ist
-            if e not in av and eps.get(e) and gw[e] and gw[e] / eps[e] > 0:
-                av[e] = round(gw[e] / eps[e])
-        reihen["aktien_verw"] = av
-        fa = {"n": name, "rechtstraeger": rname, "lei": lei, "isin": sp["isin"].get(t), "land": land, "sektor": sektor,
-              "gj": gj, "w": w, "std": "IFRS", "quelle": "ESEF", "k": {}}
-        if dps_w:
-            fa["dps_w"] = dps_w   # Dividende je Aktie steht in dieser Waehrung, nicht in der Berichtswaehrung
-        if dps:
-            fa["k"]["dividende_je_aktie"] = [[e, round(dps[e], 4)] for e in sorted(dps)[-JAHRE:]]
-        dg = reihen.get("dividenden_gezahlt", {})
-        ber = {} if dps_w else {e: round(dg[e] / av[e], 4) for e in dg if e in av and av[e] and dg[e] and e not in dps}
-        if ber:
-            fa["k"]["dividende_je_aktie_ber"] = [[e, ber[e]] for e in sorted(ber)[-JAHRE:]]
-        eb = {e: round(gw[e] / av[e], 4) for e in gw if e in av and av[e] and e not in eps}
-        if eb:
-            fa["k"]["eps_ber"] = [[e, eb[e]] for e in sorted(eb)[-JAHRE:]]
-        for k, r in reihen.items():
-            if k.startswith("_") or not r:
-                continue
-            if k in DAUER or k in K_IFRS:
-                r = {e: v for e, v in r.items() if e in enden} if k in DAUER else r
-                ends = sorted(r)[-JAHRE:]
-                if ends:
-                    fa["k"][k] = [[e, r[e]] for e in ends]
+        fa, info = firma_bauen(name, rname, lei, sp["isin"].get(t), land, sektor, bs)
+        if not fa:
+            zeilen.append(f"| {t} | {name} | {rname} | {info} | | | |"); continue
         firmen[t] = fa
-        kern = ["umsatz", "gewinn", "eps_verw", "dividende_je_aktie", "operativer_cf", "capex", "eigenkapital"]
-        da = [k for k in kern if k in fa["k"] and fa["k"][k][-1][0] >= gj or
-              (k == "eps_verw" and "eps_ber" in fa["k"]) or (k == "dividende_je_aktie" and "dividende_je_aktie_ber" in fa["k"])]
-        jahre = sorted({e[:4] for e in enden})
-        zeilen.append(f"| {t} | {name} | {rname} | {jahre[0]}–{jahre[-1]} ({w}) | {len(da)}/7 | "
-                      f"{'ja' if fa['isin'] else 'fehlt'} | {', '.join(k for k in kern if k not in da) or '–'} |")
+        zeilen.append(f"| {t} | {name} | {rname} | {info['jahre']} ({info['w']}) | {len(info['da'])}/7 | "
+                      f"{'ja' if fa['isin'] else 'fehlt'} | {', '.join(info['fehlt']) or '–'} |")
 
     json.dump({"stand": heute, "quelle": "ESEF-Jahresberichte (filings.xbrl.org), IFRS", "firmen": firmen},
               open("data/esef/fundamentals.json", "w", encoding="utf-8"), ensure_ascii=False, separators=(",", ":"))

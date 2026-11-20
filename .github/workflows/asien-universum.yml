@@ -6,6 +6,8 @@ name: Asien - Unternehmensuniversum (Ticker, Kennungen, Berichtsquellen)
 # Es werden keine Finanzzahlen erzeugt und nichts als "verified" markiert.
 
 on:
+  schedule:
+    - cron: "29 3 3 * *"   # monatlich: neue Jahresberichte (Japan Ende Juni, Korea März, HK/CN/SG Frühjahr) finden
   workflow_dispatch:
 
 permissions:
