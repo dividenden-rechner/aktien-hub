@@ -1,12 +1,11 @@
 ---
 title: "Chinas KI-Firmen lernen von US-Modellen: Wie Destillation die Chip-Sperren unterläuft"
 description: "Chinesische Entwickler nutzen Antworten amerikanischer KI-Modelle, um eigene, günstigere Systeme zu trainieren. Washington sieht darin Diebstahl geistigen Eigentums, Peking verteidigt die Methode als Standardtechnik. Was dahintersteckt und was es für Anleger heißt."
-date: 2026-11-21 08:00
+date: 2026-11-20 13:30
 author: "Redaktions-Team Dividenden-Rechner.de"
 author_bio: "Das Redaktions-Team von Dividenden-Rechner.de schreibt über Dividendenaktien, Kennzahlen und Steuerthemen für Privatanleger. Die Rechner und Auswertungen auf der Seite entstehen im eigenen Haus."
 category: Analyse
 kein_logo: ja
-vorschau: ja
 ---
 <!-- PRÜFEN: Aufmacherfoto fehlt. Über die Unsplash-Anfrage ein Foto zu KI-Chips oder Rechenzentren suchen lassen und image, image_alt, image_credit, image_source, image_lizenz ergänzen. -->
 <!-- PRÜFEN: Grundlage ist der Reuters-Exklusivbericht vom 17.11.2026 (Eduardo Baptista und Laurie Chen). Link zum Originalbericht ergänzen. Inhalte sind paraphrasiert, keine Übernahme von Passagen. -->
@@ -60,7 +59,7 @@ Ein Gegenargument ist wichtig: Die großen amerikanischen Konzerne verdienen wei
 
 ## Was als Nächstes wichtig ist
 
-Seit dem 19. November gelten in den USA verschärfte Exportregeln. Sie verlangen Lizenzen für KI-Chips in mehreren südostasiatischen Ländern und sperren den Fernzugriff chinesischer Firmen auf Rechenzentren, mehr dazu in unserem Überblick über [die KI-Woche](/news/ki-woche-anthropic-nvidia-amd-chipregeln/). Gegen Destillation helfen diese Regeln nur bedingt, denn dafür reichen Zugänge zu den Modellen selbst. Ob Washington auch hier nachlegt, etwa über Nutzungsbedingungen der Anbieter oder neue Gesetze, ist offen.
+Seit dem 19. November gelten in den USA verschärfte Exportregeln. Sie verlangen Lizenzen für KI-Chips in mehreren südostasiatischen Ländern und sperren den Fernzugriff chinesischer Firmen auf Rechenzentren. Gegen Destillation helfen diese Regeln nur bedingt, denn dafür reichen Zugänge zu den Modellen selbst. Ob Washington auch hier nachlegt, etwa über Nutzungsbedingungen der Anbieter oder neue Gesetze, ist offen.
 
 Ein Fazit ist unter diesen Bedingungen schwer zu ziehen. Destillation ist eine wirksame Abkürzung, aber keine Garantie für Spitzenleistung. Ob sie als Diebstahl gilt oder als übliche Methode, entscheiden am Ende Gerichte, Verträge und Politik. Für die Märkte zählt bis dahin vor allem, wie stark die Chip-Sperren tatsächlich wirken.
 
