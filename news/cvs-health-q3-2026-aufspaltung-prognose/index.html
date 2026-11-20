@@ -122,6 +122,6 @@
 <script src="../../assets/kurse.js"></script>
 <script>(function(){document.querySelectorAll(".sharebar").forEach(function(bar){var m=bar.querySelector(".sharemsg"),pg=bar.getAttribute("data-url"),S=JSON.parse(bar.getAttribute("data-story")||"{}"),cp=bar.querySelector(".js-cp"),ig=bar.querySelector(".js-ig");
 if(cp)cp.onclick=async function(){try{await navigator.clipboard.writeText(pg);m.textContent="Link kopiert."}catch(e){m.textContent=pg}};
-if(ig)ig.onclick=function(){window.StoryShare(S,m)}})})();</script>
+if(ig){ig.onclick=function(){window.StoryShare(S,m)};if(window.StoryPrepare)setTimeout(function(){window.StoryPrepare(S)},600)}})})();</script>
 </body>
 </html>
