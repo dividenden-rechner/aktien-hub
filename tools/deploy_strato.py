@@ -7,7 +7,7 @@ import argparse, hashlib, io, json, os, posixpath, sys, threading, time
 from concurrent.futures import ThreadPoolExecutor
 import paramiko
 
-SKIP_DIRS = {"intern-t7q4m9", ".git"}   # Testkopie der GitHub-Pages-Seite gehoert nicht auf Strato
+SKIP_DIRS = {"intern-t7q4m9", ".git", "vorschau"}   # Testkopie der GitHub-Pages-Seite gehoert nicht auf Strato
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 MANIFEST = ".deploy-manifest.json"
 

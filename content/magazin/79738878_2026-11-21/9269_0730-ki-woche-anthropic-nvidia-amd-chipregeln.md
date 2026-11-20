@@ -6,7 +6,7 @@ author: "Redaktions-Team Dividenden-Rechner.de"
 author_bio: "Das Redaktions-Team von Dividenden-Rechner.de schreibt über Dividendenaktien, Kennzahlen und Steuerthemen für Privatanleger. Die Rechner und Auswertungen auf der Seite entstehen im eigenen Haus."
 category: Analyse
 kein_logo: ja
-draft: true
+vorschau: ja
 ---
 <!-- PRÜFEN: Aufmacherfoto über die Unsplash-Anfrage in tools/asset.request (Rechenzentrum oder Chipfertigung); Divi wählt aus. -->
 <!-- PRÜFEN: Anthropic: Ausgabepreis 83 $, 980 Mio. Aktien, rund 81 Mrd. $ Erlös, größter Börsengang der Geschichte, Eröffnung 111,50 $, am Nachmittag 95,69 $, Nvidia-Beteiligungen von zusammen 20 Mrd. $: Al Jazeera/Reuters vom 19.11.2026. Bewertung zum Ausgabepreis rund 1,5 Bio. $: Fortune vom 18.11.2026. Schlusskurs des ersten Handelstags vor Veröffentlichung nachtragen. Umsatz neun Monate 33,2 Mrd. $ aus dem Prospekt laut docs/newsletter-notizen.md. -->

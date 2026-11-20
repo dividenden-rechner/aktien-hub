@@ -1,11 +1,12 @@
 ---
 title: "Target und TJX: Das Zollgeld wiegt bei Target zehnmal so schwer"
 description: "Beide Händler haben am selben Tag berichtet, beide bekommen Zölle zurück. Bei Target macht das Geld fast ein Viertel des Gewinns aus, bei TJX kaum etwas. Der Vergleich zeigt, welches Geschäft aus eigener Kraft wächst und wie sicher die Dividenden sind."
-date: 2026-11-20 13:30
+date: 2026-11-21 10:00
 author: "Redaktions-Team Dividenden-Rechner.de"
 author_bio: "Das Redaktions-Team von Dividenden-Rechner.de schreibt über Dividendenaktien, Kennzahlen und Steuerthemen für Privatanleger. Die Rechner und Auswertungen auf der Seite entstehen im eigenen Haus."
 category: Analyse
 kein_logo: ja
+vorschau: ja
 ---
 <!-- PRÜFEN: Quartalszahlen aus unseren Artikeln zu Target (target-q3-2026) und TJX (tjx-q3-fy27) vom 18.11.2026, beide auf Basis der Pressemitteilungen. Zehnjahreszahlen (Umsatz, Dividende je Aktie, operativer Cashflow, Investitionen, gezahlte Dividenden) aus data/sec/fundamentals.json, Kennzahlen-Tabelle aus data/kennzahlen.json (Xetra-Kurse vom 19.11.2026, Umrechnung in USD). Diagramme selbst gebaut. -->
 <!-- PRÜFEN: Selbst gerechnet: Zollerstattung je Aktie Target 0,50 $ zu TJX 0,05 $ = zehnfach; Anteil am Gewinn je Aktie Target 0,50/2,65 = 19 % (Quartal), Jahresprognose 2,14 / 11,03 (Mitte) = 19 %, also knapp ein Fünftel; TJX 0,05/1,39 = 4 %. Freier Cashflow GJ 2025: Target 6,56 − 3,73 = 2,83 Mrd. $ gegen 2,05 Mrd. $ Dividenden = 72 %; TJX 6,87 − 1,96 = 4,91 gegen 1,84 = 37 %. Umsatz GJ 2021 bis 2025: Target 106,0 → 104,8 Mrd. $ (−1 %); TJX 48,5 → 60,4 Mrd. $ (+24 %). Rechnerischer Blick auf 2027: operativer Cashflow in der Größenordnung der Vorjahre (6,5 bis 8,7 Mrd. $) minus Investitionen 5 bis 6 Mrd. $ gegen rund 2,1 Mrd. $ Dividende. -->

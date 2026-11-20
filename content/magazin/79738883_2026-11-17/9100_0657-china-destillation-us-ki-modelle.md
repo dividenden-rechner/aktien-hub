@@ -6,7 +6,7 @@ author: "Redaktions-Team Dividenden-Rechner.de"
 author_bio: "Das Redaktions-Team von Dividenden-Rechner.de schreibt über Dividendenaktien, Kennzahlen und Steuerthemen für Privatanleger. Die Rechner und Auswertungen auf der Seite entstehen im eigenen Haus."
 category: Analyse
 kein_logo: ja
-draft: true
+vorschau: ja
 ---
 <!-- PRÜFEN: Aufmacherfoto fehlt. Über die Unsplash-Anfrage ein Foto zu KI-Chips oder Rechenzentren suchen lassen und image, image_alt, image_credit, image_source, image_lizenz ergänzen. -->
 <!-- PRÜFEN: Grundlage ist der Reuters-Exklusivbericht vom 17.11.2026 (Eduardo Baptista und Laurie Chen). Link zum Originalbericht ergänzen. Inhalte sind paraphrasiert, keine Übernahme von Passagen. -->

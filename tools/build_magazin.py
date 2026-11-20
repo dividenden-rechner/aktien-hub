@@ -112,6 +112,8 @@ def read_post(path):
     if meta.get("kein_logo", "").lower() in ("ja", "true", "1", "yes"):   # Artikel ohne Firmenlogo (zum Beispiel Marktueberblick)
         meta["logo_file"] = meta["logo_symbol"] = meta["logo_domain"] = ""; meta["kein_logo"] = True
     meta["draft"] = meta.get("draft", "").lower() in ("true", "ja", "1", "yes")
+    # vorschau: ja -> nur auf der Testseite (GitHub) unter vorschau/<slug>/, nicht in News, Startseite, Feed, Sitemap oder auf Strato
+    meta["vorschau"] = meta.get("vorschau", "").lower() in ("true", "ja", "1", "yes")
     try:
         import medien; medien.fill(meta)   # fehlendes Logo/CEO-Portrait aus der Medien-Ablage
     except Exception as ex: print("Medien-Ablage:", ex)
@@ -722,9 +724,9 @@ if(cp)cp.onclick=async function(){try{await navigator.clipboard.writeText(pg);m.
 if(ig)ig.onclick=function(){window.StoryShare(S,m)}})})();</script>"""
 
 
-def build_post(p, posts):
+def build_post(p, posts, ordner="news"):
     slug = p["slug"]; depth = 2; pre = "../" * depth
-    url = f"news/{slug}/"
+    url = f"{ordner}/{slug}/"
     img = p.get("image")
     if not img:
         img = f"assets/magazin/{slug}.png"
@@ -789,8 +791,11 @@ def build_post(p, posts):
     o += (f'<aside class="note" style="background:#f0fdf4;border-left-color:#10b981"><strong>Passende Werkzeuge:</strong> Prüfe Aktien im <a href="{pre}aktien-hub/">Aktien-Hub</a>, '
           f'filtere mit dem <a href="{pre}screener/">Screener</a> oder rechne mit den <a href="{pre}">Rechnern</a>.</aside>\n')
     o += HINT + "\n</article></main>\n" + footer_html(depth) + "\n" + SHARE_JS + "\n</body>\n</html>\n"
-    os.makedirs(f"news/{slug}", exist_ok=True)
-    open(f"news/{slug}/index.html", "w", encoding="utf-8").write(o)
+    if ordner == "vorschau":
+        o = re.sub(r'<meta name="robots" content="[^"]*">', '<meta name="robots" content="noindex,nofollow">', o, count=1)
+        o = o.replace('<main class="wrap"><article class="post">', '<main class="wrap"><p class="note" style="background:#fff7e6;border-left-color:#f59e0b"><strong>Vorschau:</strong> Dieser Artikel ist noch nicht veröffentlicht und nur auf der Testseite sichtbar. <a href="../">Alle Vorschau-Artikel</a></p><article class="post">', 1)
+    os.makedirs(f"{ordner}/{slug}", exist_ok=True)
+    open(f"{ordner}/{slug}/index.html", "w", encoding="utf-8").write(o)
     p["img"] = img; p["html"] = body; p["mins"] = mins; p["glossar_hits"] = [{k: h[k] for k in ("id", "url", "title")} for h in hits]
     return p
 
@@ -1110,7 +1115,7 @@ def patch_news(posts):
 def patch_nav_everywhere(has_posts):
     """Magazin-Link in Kopf- und Fußzeile aller Seiten ein- bzw. austragen."""
     for f in glob.glob("**/*.html", recursive=True):
-        if f.startswith(("news/", "magazin/", "node_modules/")) or f == "404.html": continue
+        if f.startswith(("news/", "magazin/", "node_modules/", "vorschau/")) or f == "404.html": continue
         s = open(f, encoding="utf-8").read(); o = s
         m = re.search(r'<a href="((?:\.\./)*)screener/"[^>]*>Screener</a>', s)
         if not m: continue
@@ -1136,9 +1141,11 @@ def write_overview(allp):
             link = f"https://github.com/{REPO}/edit/main/content/magazin/{x['file']}"
             out.append(f"| {x['dt'].strftime('%d.%m.%Y %H:%M')} | {x['title'].replace('|', '/')} | [{x['file']}]({link}) |")
         return "\n".join(out)
+    vor = sorted([x for x in allp if x.get("vorschau") and not x["draft"]], key=lambda x: (x["dt"], x["slug"]), reverse=True)
     drafts = sorted([x for x in allp if x["draft"]], key=lambda x: (x["dt"], x["slug"]), reverse=True)
-    live = sorted([x for x in allp if not x["draft"]], key=lambda x: (x["dt"], x["slug"]), reverse=True)
+    live = sorted([x for x in allp if not x["draft"] and not x.get("vorschau")], key=lambda x: (x["dt"], x["slug"]), reverse=True)
     blk = "<!-- uebersicht-start -->\n## Übersicht (wird automatisch erstellt, neueste zuerst)\n\n"
+    blk += f"### Vorschau auf der Testseite ({len(vor)})\n\nNur auf der GitHub-Testseite unter vorschau/ sichtbar. Freigeben: Datei anklicken, Stift-Symbol, Zeile `vorschau: ja` löschen und speichern.\n\n" + (rows(vor) if vor else "_Keine Vorschau-Artikel._") + "\n\n"
     blk += f"### Zur Freigabe: Entwürfe ({len(drafts)})\n\nDatei anklicken, dann Stift-Symbol: Zeile `draft: true` löschen und speichern, dann geht der Artikel online.\n\n" + (rows(drafts) if drafts else "_Keine Entwürfe._") + "\n\n"
     blk += f"### Online ({len(live)})\n\n" + (rows(live) if live else "_Noch nichts online._") + "\n<!-- uebersicht-ende -->"
     s = open(path, encoding="utf-8").read()
@@ -1180,13 +1187,30 @@ def pruefe_bildrechte(allp):
         if not (p.get("image_credit") and src.startswith("http") and any(h in src for h in FREIE_BILDQUELLEN)):
             print(f"BILDRECHTE pruefen: {p.get('slug')} (Quelle/Lizenz fehlt oder nicht auf der Freiliste)")
 
+def build_vorschau(vs, posts):
+    """Vorschau-Artikel fuer den Newsletter: nur auf der Testseite unter vorschau/, nicht verlinkt, noindex, nicht auf Strato."""
+    import shutil
+    vs = sorted(vs, key=lambda x: (x["dt"], x["slug"]), reverse=True)
+    for x in glob.glob("vorschau/*/"):
+        if os.path.basename(os.path.normpath(x)) not in [p["slug"] for p in vs]: shutil.rmtree(x)
+    if not vs:
+        if os.path.isdir("vorschau"): shutil.rmtree("vorschau")
+        return
+    for p in vs: build_post(p, posts, "vorschau")
+    li = "".join(f'<li><a href="{p["slug"]}/">{esc(p["title"])}</a> <span class="meta">· geplant für {de_dt(p["dt"])} · {esc(p["category"])}</span></li>\n' for p in vs)
+    o = ('<!doctype html><html lang="de"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">'
+         '<meta name="robots" content="noindex,nofollow"><title>Vorschau: Artikel für den Newsletter</title><link rel="stylesheet" href="../assets/site.css"></head>'
+         f'<body><main class="wrap"><h1>Vorschau: Artikel für den Newsletter</h1><p class="note">Diese Artikel sind noch nicht veröffentlicht und nur hier auf der Testseite sichtbar. Freigabe: im Artikel die Zeile <code>vorschau: ja</code> löschen.</p><ul>\n{li}</ul></main></body></html>\n')
+    os.makedirs("vorschau", exist_ok=True); open("vorschau/index.html", "w", encoding="utf-8").write(o)
+
 def main():
     build_wissen.run(sys.modules[__name__])        # Wissensartikel zuerst: Magazin-Verlinkung und Rueck-Links brauchen die fertigen Seiten
-    posts, allp = [], []
+    posts, allp, vorschau = [], [], []
     import artikel; artikel.sortiere()
     for f in sorted(artikel.all_md()):
         p = read_post(f); allp.append(p)
         if p["draft"]: print("Entwurf übersprungen:", f); continue
+        if p["vorschau"]: vorschau.append(p); print("Vorschau (nur Testseite):", f); continue
         if p["dt"] > datetime.datetime.now() + datetime.timedelta(days=1): print("Zukunftsdatum übersprungen:", f); continue
         posts.append(p)
     posts.sort(key=lambda x: (x["dt"], x["upd"], x["slug"]), reverse=True)
@@ -1194,6 +1218,7 @@ def main():
         if os.path.basename(os.path.normpath(x)) not in [p["slug"] for p in posts]:
             import shutil; shutil.rmtree(x)
     posts = [build_post(p, posts) for p in posts]
+    build_vorschau(vorschau, posts)
     if posts:
         build_index(posts); build_feed(posts)
     else:

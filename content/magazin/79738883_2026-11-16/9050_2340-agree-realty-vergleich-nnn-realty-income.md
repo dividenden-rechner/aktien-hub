@@ -1,12 +1,12 @@
 ---
 title: "Agree Realty im Vergleich: Dividende rund 4,7 %, AFFO-Prognose angehoben, Verschuldung niedriger als bei NNN und Realty Income"
 description: "Agree Realty erhöht die AFFO-Prognose für 2026 auf 4,58 bis 4,59 Dollar. Ein Vergleich mit NNN REIT und Realty Income zu Dividende, Ausschüttungsquote, Vermietung, Verschuldung und Wachstum."
-date: 2026-11-16 23:40
+date: 2026-11-21 11:00
 author: "Redaktions-Team Dividenden-Rechner.de"
 author_bio: "Das Redaktions-Team von Dividenden-Rechner.de schreibt über Dividendenaktien, Kennzahlen und Steuerthemen für Privatanleger. Die Rechner und Auswertungen auf der Seite entstehen im eigenen Haus."
 category: Analyse
 kein_logo: ja
-draft: true
+vorschau: ja
 ---
 <!-- PRÜFEN: Aufmacherfoto fehlt. Über die Unsplash-Anfrage ein Foto zu US-Einzelhandelsimmobilien suchen lassen und image, image_alt, image_credit, image_source, image_lizenz ergänzen. -->
 <!-- PRÜFEN: Realty Income 9M-Werte und Investitionsvolumen stammen aus dem Abruf der 8-K-Mitteilung über last10k.com. Vor Veröffentlichung gegen die SEC-Datei prüfen. -->
