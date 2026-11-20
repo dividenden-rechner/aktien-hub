@@ -7,7 +7,12 @@ author_bio: "Das Redaktions-Team von Dividenden-Rechner.de schreibt über Divide
 category: Analyse
 kein_logo: ja
 vorschau: ja
+image: assets/magazin/agree-realty-vergleich-nnn-realty-income-foto.jpg
+image_alt: "Symbolbild: Einkaufszentrum mit Supermarkt und Café"
+image_credit: "Symbolbild: Einkaufszentrum mit Supermarkt und Café. Agree Realty investiert in Einzelhandelsimmobilien. Foto: KI-generiert"
+image_lizenz: KI-generiert
 ---
+<!-- PRÜFEN: Aufmacher ist ein KI-generiertes Symbolbild (Gemini, von Divi geliefert, abgelegt unter medien/aufmacher/adc/); das Schild "Agree Realty" im Bild ist erfunden, Bild ist im Nachweis als KI-generiert gekennzeichnet. -->
 <!-- PRÜFEN: Aufmacherfoto fehlt. Über die Unsplash-Anfrage ein Foto zu US-Einzelhandelsimmobilien suchen lassen und image, image_alt, image_credit, image_source, image_lizenz ergänzen. -->
 <!-- PRÜFEN: Realty Income 9M-Werte und Investitionsvolumen stammen aus dem Abruf der 8-K-Mitteilung über last10k.com. Vor Veröffentlichung gegen die SEC-Datei prüfen. -->
 <!-- PRÜFEN: Hub-Kennzahlen für Agree: Dividende 3,174 USD (gj 2025) gegenüber 3,25 USD annualisiert (0,271 USD/Monat); FFO je Aktie 3,99 USD im Hub gegenüber 3,95 USD in der Präsentation; Börsenwert 7,7 Mrd. USD im Hub gegenüber 8,7 Mrd. USD in der Präsentation (Stand unterschiedlich). -->
