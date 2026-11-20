@@ -1,10 +1,10 @@
-# Americas Aktien-Hub – tatsächliche Abdeckung (Stand 2026-11-19)
+# Americas Aktien-Hub – tatsächliche Abdeckung (Stand 2026-11-20)
 
 Alle Datensätze `verified=false`, `human_review=pending`. Leere Felder = nicht aus amtlicher/nachvollziehbarer Quelle belegt.
 
 ## Kanada (S&P/TSX Composite)
 
-- Mitgliederliste: iShares S&P/TSX Capped Composite Index ETF (XIC), veröffentlichte Bestandsliste – Stichtag **2026-11-18**, abgerufen 2026-11-19T11:22:13+00:00 (Proxy für die lizenzpflichtige S&P-Mitgliederliste)
+- Mitgliederliste: iShares S&P/TSX Capped Composite Index ETF (XIC), veröffentlichte Bestandsliste – Stichtag **2026-11-18**, abgerufen 2026-11-20T06:25:08+00:00 (Proxy für die lizenzpflichtige S&P-Mitgliederliste)
 - Indexmitglieder: **215**, Emittenten 215, Wertpapiere 215, Notierungen (TSX) 215
 - ISIN + LEI aus ESMA FIRDS (eindeutig): **187**; ohne ISIN (mehrdeutig/nicht gefunden, siehe review.json): **28**
 - Wertpapierarten: {'share': 190, 'share_non_voting': 1, 'share_subordinate_voting': 7, 'unit_reit': 12, 'unit_trust_or_partnership': 5}
