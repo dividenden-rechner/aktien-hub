@@ -7,6 +7,11 @@ category: Analyse
 kein_logo: ja
 vorschau: ja
 freigabe: 2026-11-22 00:00
+image: https://images.unsplash.com/photo-1560221328-12fe60f83ab8?ixid=M3wxMTE3OTgzfDB8MXxzZWFyY2h8NHx8ZmFsbGluZyUyMHN0b2NrJTIwY2hhcnQlMjBtb25pdG9yfGVufDF8MHx8fDE3OTUyMDk2MjF8MA&ixlib=rb-4.1.0&w=1600&h=900&fit=crop&crop=entropy&q=80&fm=jpg
+image_alt: "Foto zu SEC: Stock Charts during a live trading session"
+image_credit: "Foto: Nicholas Cappello auf Unsplash"
+image_source: https://unsplash.com/photos/close-up-photo-of-monitor-displaying-graph-Wb63zqJ5gnE?utm_source=dividenden-rechner&utm_medium=referral
+image_artist_url: https://unsplash.com/@bash__profile?utm_source=dividenden-rechner&utm_medium=referral
 ---
 <!-- PRÜFEN: SEC-Ermittlungen zum Rechnungswesen: Reuters (zwei mit der Sache vertraute Personen) vom 20.11.2026, zuerst WSJ am Dienstag (Grund damals unbekannt); weder SEC noch Nvidia äußerten sich. Kurs −12 % auf 128 $, tiefster Stand seit Mai 2025, Rekord rund 243 $ Anfang Oktober; Fragenkatalog von Generalstaatsanwalt Rob Bonta (Kalifornien); Senatsanhörung Huang laut Mitarbeiter von Senator Tim Scott; Petition 190.000; Anthropic −14,5 %, rund 10 Cent über dem Ausgabepreis von 83 $ (Mittag Ortszeit): SPIEGEL/Reuters/dpa vom 20.11.2026, 21:34 Uhr, von Divi als Text geschickt. -->
 <!-- PRÜFEN: Marktdaten 15:51 Uhr New York (Nasdaq −5,1 %, S&P 500 −3,6 %, Dow −1,9 %, Russell 2000 −2,6 %, VIX 37,5 und Jahreshoch, Gold −4,8 %, Bitcoin −5,9 %, zehnjährige US-Rendite 4,93 %), Nasdaq mehr als 17 % unter dem Oktober-Hoch, fast −10 % in der Woche, Basiskonsumgüter +1 %, S&P 500 und Dow in der Korrektur: WSJ-Liveblog vom 20.11.2026. Schlusskurse vor Veröffentlichung nachtragen. -->
