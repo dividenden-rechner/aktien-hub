@@ -1,25 +1,27 @@
 # Americas Aktien-Hub – tatsächliche Abdeckung (Stand 2026-11-20)
 
-Alle Datensätze `verified=false`, `human_review=pending`. Leere Felder = nicht aus amtlicher/nachvollziehbarer Quelle belegt.
+Nur Quellen, deren Nutzungsbedingungen Speicherung, öffentliche Ausgabe und kommerzielle Nutzung ausdrücklich erlauben (siehe RECHTE.md). Alle Datensätze `verified=false`, `human_review=pending`. Leere Felder = keine freigegebene Quelle.
 
-## Kanada (S&P/TSX Composite)
+## Brasilien (CVM Dados Abertos, ODbL)
 
-- Mitgliederliste: iShares S&P/TSX Capped Composite Index ETF (XIC), veröffentlichte Bestandsliste – Stichtag **2026-11-18**, abgerufen 2026-11-20T06:25:08+00:00 (Proxy für die lizenzpflichtige S&P-Mitgliederliste)
-- Indexmitglieder: **215**, Emittenten 215, Wertpapiere 215, Notierungen (TSX) 215
-- ISIN + LEI aus ESMA FIRDS (eindeutig): **187**; ohne ISIN (mehrdeutig/nicht gefunden, siehe review.json): **28**
-- Wertpapierarten: {'share': 190, 'share_non_voting': 1, 'share_subordinate_voting': 7, 'unit_reit': 12, 'unit_trust_or_partnership': 5}
-- Mit deutschem Börsenkurs (Deutsche Börse, EUR): **187**
-- SEC-CIK eindeutig zugeordnet (meldet bei der SEC, meist 40-F): **126**
-- Mit SEC-Jahreszahlen (XBRL): **95**; Verteilung Anzahl Jahre 2010–2025 je Firma: 16 J.: 9, 15 J.: 4, 14 J.: 1, 13 J.: 4, 12 J.: 1, 11 J.: 6, 10 J.: 37, 9 J.: 4, 8 J.: 4, 7 J.: 3, 6 J.: 5, 5 J.: 5, 4 J.: 4, 3 J.: 4, 2 J.: 2, 1 J.: 2
+- Emittenten mit Aktien an der B3 (laut CVM-FCA 2010–2026, inkl. beendeter): **430**, davon aktiv 315
+- Wertpapiere: **601** – Gattungen {'ON': 415, 'PN': 118, 'PNA': 25, 'PNB': 23, 'PNC': 3, 'PND': 1, 'UNIT': 16}; Notierungen: **657** (aktiv 422)
+- LEI (GLEIF über CNPJ): **120**; ISIN: **0** (CVM ohne ISIN, B3 = Vergabestelle mit Verbot kommerzieller Nutzung)
+- Mit Jahresabschlüssen (DFP): **430**; Jahre mit Gewinn je Emittent: 16 J.: 239, 15 J.: 18, 14 J.: 16, 13 J.: 5, 12 J.: 12, 11 J.: 7, 10 J.: 16, 9 J.: 17, 8 J.: 13, 7 J.: 36, 6 J.: 25, 5 J.: 12, 4 J.: 2, 3 J.: 8, 2 J.: 4
+- Mit JCP-Zahlungen (getrennt von Dividenden): **208**; Hub-Dateien: **315**
+- Kurse, Dividende je Aktie, Ex-Tage, Indexmitglieder (IBOV, IBrX, SMLL, IDIV …): **nicht erfasst** (B3: kommerzielle Nutzung untersagt)
 
-### Fehlt (Kanada)
+## Kanada (SEC EDGAR + GLEIF)
 
-- Amtliche S&P-Mitgliederlisten und historische Indexmitgliedschaften (lizenzpflichtig).
-- Finanzhistorie für Firmen ohne SEC-Meldung (nur SEDAR+, kein maschineller Zugriff) und vor Beginn der XBRL-Pflicht.
-- Kurshistorie in CAD von der TSX (Nutzungsbedingungen: nur nicht-kommerziell); Dividendenhistorie je Aktie.
-- TSXV/Venture-Werte: bewusst nicht im Umfang (nur Composite).
+- noch kein Lauf (Workflow americas-sec.yml)
 
-## Brasilien, Mexiko
+## Mexiko (SEC EDGAR + GLEIF)
 
-- Noch nicht importiert: Quellen geprüft (docs/QUELLENPRUEFUNG.md), Umfang und Nutzung der B3-/BIVA-Daten offen.
+- noch kein Lauf (Workflow americas-sec.yml)
+
+## Bewusst nicht erfasst
+
+- S&P/TSX- und S&P/BMV-Indexmitglieder (S&P DJI: lizenzpflichtig, Seiten 403), TSX/TSXV-Listen (TMX: nur nicht-kommerziell),
+  BlackRock-ETF-Bestände (öffentliche/kommerzielle Nutzung untersagt), BMV (Reproduktion und Parsing untersagt),
+  BIVA und CNBV (Bedingungen nicht lesbar bzw. nicht erreichbar), SEDAR+ (Bot-Schutz, kein maschineller Abruf).
 
