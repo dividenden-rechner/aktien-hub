@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-19 14:40 UTC",
+ "updated": "2026-11-20 03:43 UTC",
  "quelle": "Alpha Vantage",
  "items": [
   {
@@ -747,8 +747,11 @@
    "fiscal": "2026-10-31",
    "cur": "USD",
    "zeit": "vor",
-   "eps_est": 1.22,
-   "eps_src": "kalender"
+   "eps_est": 1.2471,
+   "eps_n": 19,
+   "rev_est": 5948167290.0,
+   "rev_n": 18,
+   "est_stand": "2026-11-20"
   },
   {
    "sym": "BKE",
@@ -756,7 +759,12 @@
    "name": "BUCKLE INCORPORATED (THE)",
    "fiscal": "2026-10-31",
    "cur": "USD",
-   "zeit": "vor"
+   "zeit": "vor",
+   "eps_est": 0.8391,
+   "eps_n": 1,
+   "rev_est": 337148030.0,
+   "rev_n": 1,
+   "est_stand": "2026-11-20"
   },
   {
    "sym": "A",
@@ -765,8 +773,11 @@
    "fiscal": "2026-10-31",
    "cur": "USD",
    "zeit": "nach",
-   "eps_est": 1.72,
-   "eps_src": "kalender"
+   "eps_est": 1.7269,
+   "eps_n": 17,
+   "rev_est": 1988948880.0,
+   "rev_n": 17,
+   "est_stand": "2026-11-20"
   },
   {
    "sym": "HPE",
@@ -775,8 +786,11 @@
    "fiscal": "2026-10-31",
    "cur": "USD",
    "zeit": "nach",
-   "eps_est": 1.17,
-   "eps_src": "kalender"
+   "eps_est": 1.2772,
+   "eps_n": 19,
+   "rev_est": 14406617280.0,
+   "rev_n": 18,
+   "est_stand": "2026-11-20"
   },
   {
    "sym": "J",
@@ -785,8 +799,11 @@
    "fiscal": "2026-09-30",
    "cur": "USD",
    "zeit": "nach",
-   "eps_est": 2.14,
-   "eps_src": "kalender"
+   "eps_est": 2.1242,
+   "eps_n": 12,
+   "rev_est": 3893501990.0,
+   "rev_n": 5,
+   "est_stand": "2026-11-20"
   },
   {
    "sym": "ADI",
@@ -795,8 +812,11 @@
    "fiscal": "2026-10-31",
    "cur": "USD",
    "zeit": "vor",
-   "eps_est": 3.89,
-   "eps_src": "kalender"
+   "eps_est": 3.8831,
+   "eps_n": 27,
+   "rev_est": 4319542480.0,
+   "rev_n": 26,
+   "est_stand": "2026-11-20"
   },
   {
    "sym": "ADSK",
@@ -805,8 +825,11 @@
    "fiscal": "2026-10-31",
    "cur": "USD",
    "zeit": "nach",
-   "eps_est": 2.27,
-   "eps_src": "kalender"
+   "eps_est": 3.0679,
+   "eps_n": 28,
+   "rev_est": 2132410570.0,
+   "rev_n": 27,
+   "est_stand": "2026-11-20"
   },
   {
    "sym": "BBY",
@@ -815,8 +838,11 @@
    "fiscal": "2026-10-31",
    "cur": "USD",
    "zeit": "vor",
-   "eps_est": 1.48,
-   "eps_src": "kalender"
+   "eps_est": 1.493,
+   "eps_n": 21,
+   "rev_est": 9902877560.0,
+   "rev_n": 19,
+   "est_stand": "2026-11-20"
   },
   {
    "sym": "DELL",
@@ -825,8 +851,11 @@
    "fiscal": "2026-10-31",
    "cur": "USD",
    "zeit": "nach",
-   "eps_est": 6.41,
-   "eps_src": "kalender"
+   "eps_est": 6.5536,
+   "eps_n": 25,
+   "rev_est": 49169949940.0,
+   "rev_n": 22,
+   "est_stand": "2026-11-20"
   },
   {
    "sym": "DLTR",
@@ -871,12 +900,15 @@
   {
    "sym": "VIPS",
    "datum": "2026-11-24",
-   "eps_est": 0.31,
-   "eps_src": "kalender",
+   "eps_est": 2.7204,
    "name": "VIPSHOP HOLDINGS LIMITED",
    "fiscal": "2026-09-30",
    "cur": "USD",
-   "zeit": "vor"
+   "zeit": "vor",
+   "eps_n": 7,
+   "rev_est": 20398604780.0,
+   "rev_n": 9,
+   "est_stand": "2026-11-20"
   },
   {
    "sym": "WDAY",
@@ -897,6 +929,16 @@
    "zeit": "vor",
    "eps_est": 4.07,
    "eps_src": "kalender"
+  },
+  {
+   "sym": "CPRT",
+   "datum": "2026-12-01",
+   "eps_est": 0.41,
+   "eps_src": "kalender",
+   "name": "COPART INCORPORATED",
+   "fiscal": "2026-10-31",
+   "cur": "USD",
+   "zeit": "vor"
   },
   {
    "sym": "CRWD",
