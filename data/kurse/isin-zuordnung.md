@@ -1,8 +1,8 @@
 # ISIN-Zuordnung (Xetra-Instrumentenliste)
 
 Spalten der Liste: 153
-Instrumente nach Filter: 2348
-Zugeordnet: **606** von 601. Unsicher (zum Prüfen): 34. Ohne Treffer: 33.
+Instrumente nach Filter: 2345
+Zugeordnet: **605** von 601. Unsicher (zum Prüfen): 34. Ohne Treffer: 34.
 
 Korrekturen als {"TICKER": "ISIN"} in data/kurse/isin-fest.json eintragen.
 
@@ -52,6 +52,7 @@ Korrekturen als {"TICKER": "ISIN"} in data/kurse/isin-fest.json eintragen.
 - BABA (Alibaba Group Holding Ltd): bester Kandidat CAIXABANK S.A. EO ES0140609019 (0.66)
 - BKH (Black Hills Corporation): bester Kandidat HORNBACH HOLD.ST O.N. DE0006083405 (0.55)
 - CCL (Carnival Corp Ltd.): bester Kandidat AVIVA PLC          LS-,33 GB00BPQY8M80 (0.65)
+- CFR (Cullen/Frost Bankers, Inc.): bester Kandidat ABN AMRO BANK EO1 NL0011540547 (0.58)
 - CRH (CRH PUBLIC LTD CO): bester Kandidat PUBLICIS GRP INH. EO 0,40 FR0000130577 (0.58)
 - CTBI (COMMUNITY TRUST BANCORP, INC.): bester Kandidat COMMERZBANK AG DE000CBK1001 (0.53)
 - DGICA (Donegal Group Inc.): bester Kandidat DANONE S.A. EO -,25 FR0000120644 (0.65)

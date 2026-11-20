@@ -615,12 +615,6 @@
 "kuerzel": "1C5",
 "quelle": "openfigi"
 },
-"CFR": {
-"isin": "US2298991090",
-"xetra": "CULLEN/FROST BANKE.DL-,01",
-"kuerzel": "",
-"quelle": "openfigi"
-},
 "CHD": {
 "isin": "US1713401024",
 "xetra": "CHURCH + DWIGHT CO. DL 1",
@@ -3677,5 +3671,5 @@
 "quelle": "openfigi",
 "bdc": true
 },
-"_stand": "2026-11-18"
+"_stand": "2026-11-20"
 }
