@@ -1,6 +1,71 @@
 {
- "updated": "2026-11-19T20:37:22.250299+00:00",
+ "updated": "2026-11-20T02:19:29.563488+00:00",
  "items": [
+  {
+   "sym": "005930.KS",
+   "name": "Samsung Electronics",
+   "title": "Samsung Electronics Announces New Leadership",
+   "link": "https://news.samsung.com/global/samsung-electronics-announces-new-leadership-5",
+   "date": "2026-11-20T09:01:00+00:00",
+   "text": "",
+   "quelle": "RSS"
+  },
+  {
+   "sym": "2269.HK",
+   "name": "WuXi Biologics",
+   "title": "WuXi Biologics Receives PSS Procurement Success Awards 2026",
+   "link": "https://www.wuxibiologics.com/press-release/wuxi-biologics-receives-pss-procurement-success-awards-2026/",
+   "date": "2026-11-20T01:43:53+00:00",
+   "text": "SHANGHAI, China, November 20, 2026 – WuXi Biologics (2269.HK), a leading global Contract Research, Development and Manufacturing Organization (CRDMO), today announced that it has received the Category Strategy Award at the Procurement Success Awards 2026, organized by Procurement Success Summit (PSS). The award recognizes WuXi Biologics’ innovative approach to embedding procurement within its corporate digital […]",
+   "quelle": "RSS"
+  },
+  {
+   "sym": "000660.KS",
+   "name": "SK Hynix",
+   "title": "“Building the Future AI Ecosystem Around Memory”: SK hynix Presents Its Technology Vision at Supercomputing 2026",
+   "link": "https://news.skhynix.com/en/sc26-ai-hpc-exhibition/",
+   "date": "2026-11-19T23:57:22+00:00",
+   "text": "As the volume of data handled by AI continues to grow, memory technology for storing and processing that data efficiently is evolving ever faster. Going beyond simply storing data and retrieving it when needed, a range of ideas is taking",
+   "quelle": "RSS"
+  },
+  {
+   "sym": "MSFT",
+   "name": "Microsoft",
+   "title": "The future of medicine: Could AI help predict and prevent disease?",
+   "link": "https://www.microsoft.com/en-us/research/podcast/can-ai-help-build-a-healthier-future/",
+   "date": "2026-11-19T22:14:18+00:00",
+   "text": "The post The future of medicine: Could AI help predict and prevent disease? appeared first on Source.",
+   "quelle": "RSS"
+  },
+  {
+   "sym": "NVDA",
+   "name": "Nvidia",
+   "title": "NVIDIA Announces Upcoming Event for Financial Community",
+   "link": "https://nvidianews.nvidia.com/news/nvidia-announces-upcoming-event-for-financial-community-6929322",
+   "date": "2026-11-19T22:00:00+00:00",
+   "text": "",
+   "quelle": "RSS"
+  },
+  {
+   "sym": "IBM",
+   "name": "IBM",
+   "title": "Meldung (8-K)",
+   "link": "https://www.sec.gov/Archives/edgar/data/51143/000110465926130189/tm2630132d1_8k.htm",
+   "date": "2026-11-19T21:46:26+00:00",
+   "text": "",
+   "quelle": "SEC",
+   "kat": "Meldung (8-K)",
+   "form": "8-K"
+  },
+  {
+   "sym": "T",
+   "name": "AT&T",
+   "title": "AT&T to Webcast Fireside Chat with John Stankey at the UBS Global Media and Communications Conference on Dec. 8",
+   "link": "https://about.att.com/story/2026/john-stankey-ubs-global-fireside-chat.html",
+   "date": "2026-11-19T21:30:00+00:00",
+   "text": "Fireside chat begins at 8:15 a.m. ET and will be available live and for replay on the AT&T Investor Relations website",
+   "quelle": "RSS"
+  },
   {
    "sym": "NVDA",
    "name": "Nvidia",
@@ -507,15 +572,6 @@
    "quelle": "RSS"
   },
   {
-   "sym": "MSFT",
-   "name": "Microsoft",
-   "title": "Looking forward to Ignite, kicking off today at 10am PST! Hope you’ll join us live.",
-   "link": "https://www.linkedin.com/feed/update/urn:li:activity:7528474651702972416/",
-   "date": "2026-11-17T15:30:59+00:00",
-   "text": "The post Looking forward to Ignite, kicking off today at 10am PST! Hope you’ll join us live. appeared first on Source.",
-   "quelle": "RSS"
-  },
-  {
    "sym": "IBM",
    "name": "IBM",
    "title": "We Build Software Together. Why Do We Secure It Alone?",
@@ -554,19 +610,10 @@
   {
    "sym": "AMZN",
    "name": "Amazon",
-   "title": "LSEG Risk Intelligence expands World-Check One cloud infrastructure in APAC with Singapore deployment",
-   "link": "https://press.aboutamazon.com/aws/2026/11/lseg-risk-intelligence-expands-world-check-one-cloud-infrastructure-in-apac-with-singapore-deployment",
+   "title": "Amazon Grocery Launches Its Own Line of Prepared Meals with Same-Day Delivery: Salads Starting Under $3, All Meals Under $8",
+   "link": "https://press.aboutamazon.com/2026/11/amazon-grocery-launches-its-own-line-of-prepared-meals-with-same-day-delivery-salads-starting-under-3-all-meals-under-8",
    "date": "2026-11-17T14:00:00+00:00",
-   "text": "[MEDIA ALERT]New Singapore deployment provides customers with additional regional hosting and data processing optionsBrings World-Check One infrastructure closer to Asia Pacific (APAC) customers, supporting lower-latency screening and improved user experienceExpansion reflects continued investment in meeting the evolving data governance and operational needs of customers across APAC",
-   "quelle": "RSS"
-  },
-  {
-   "sym": "AMZN",
-   "name": "Amazon",
-   "title": "ANZ completes major cloud data transformation, strengthening data foundations to improve customer experiences",
-   "link": "https://press.aboutamazon.com/aws/2026/11/anz-completes-major-cloud-data-transformation-strengthening-data-foundations-to-improve-customer-experiences",
-   "date": "2026-11-17T14:00:00+00:00",
-   "text": "[MEDIA ALERT]",
+   "text": "Prepared meals are now available alongside millions of other items with Amazon Grocery Same-Day Delivery in 2,300+ cities and towns, and a curated selection available with Amazon Now 30-minute delivery, giving customers more delicious, affordable alternatives to cooking or takeout",
    "quelle": "RSS"
   },
   {
@@ -576,6 +623,15 @@
    "link": "https://press.aboutamazon.com/aws/2026/11/transamerica-expands-strategic-relationship-with-aws-to-scale-responsible-ai-capabilities",
    "date": "2026-11-17T14:00:00+00:00",
    "text": "[MEDIA ALERT]Enterprise AI platform delivers faster service, clearer decisions and improved customer experiences",
+   "quelle": "RSS"
+  },
+  {
+   "sym": "AMZN",
+   "name": "Amazon",
+   "title": "LSEG Risk Intelligence expands World-Check One cloud infrastructure in APAC with Singapore deployment",
+   "link": "https://press.aboutamazon.com/aws/2026/11/lseg-risk-intelligence-expands-world-check-one-cloud-infrastructure-in-apac-with-singapore-deployment",
+   "date": "2026-11-17T14:00:00+00:00",
+   "text": "[MEDIA ALERT]New Singapore deployment provides customers with additional regional hosting and data processing optionsBrings World-Check One infrastructure closer to Asia Pacific (APAC) customers, supporting lower-latency screening and improved user experienceExpansion reflects continued investment in meeting the evolving data governance and operational needs of customers across APAC",
    "quelle": "RSS"
   },
   {
@@ -797,15 +853,6 @@
    "title": "CUDA at 20: How the Platform Transformed Scientific Computing",
    "link": "https://blogs.nvidia.com/blog/20-years-cuda/",
    "date": "2026-11-16T16:00:11+00:00",
-   "text": "",
-   "quelle": "RSS"
-  },
-  {
-   "sym": "NVDA",
-   "name": "Nvidia",
-   "title": "NVIDIA Announces Rubin HPC — A New GPU to Accelerate Agents for Science, Engineering and Analytics",
-   "link": "https://blogs.nvidia.com/blog/rubin-hpc/",
-   "date": "2026-11-16T16:00:01+00:00",
    "text": "",
    "quelle": "RSS"
   },
@@ -2196,15 +2243,6 @@
    "quelle": "RSS"
   },
   {
-   "sym": "005930.KS",
-   "name": "Samsung Electronics",
-   "title": "[Video] Inside the Tech: Samsung Micro RGB TV",
-   "link": "https://news.samsung.com/global/video-inside-the-tech-samsung-micro-rgb-tv",
-   "date": "2026-11-03T08:00:00+00:00",
-   "text": "",
-   "quelle": "RSS"
-  },
-  {
    "sym": "DTE.DE",
    "name": "Deutsche Telekom",
    "title": "T-Systems and Sparxity strengthen Europe’s sovereign AI infrastructure with energy-efficient computing technology",
@@ -2482,15 +2520,6 @@
    "quelle": "RSS"
   },
   {
-   "sym": "000660.KS",
-   "name": "SK Hynix",
-   "title": "SK hynix Hosts First Partners Day in Japan, Sharing Business Direction with Key Local Partners",
-   "link": "https://news.skhynix.com/en/2026-partners-day-japan-1/",
-   "date": "2026-10-30T08:10:27+00:00",
-   "text": "▲ The Partners Day held in Japan",
-   "quelle": "RSS"
-  },
-  {
    "sym": "005380.KS",
    "name": "Hyundai Motor",
    "title": "Hyundai IONIQ 3 Named European Car of the Year 2027 Finalist",
@@ -2732,15 +2761,6 @@
    "quelle": "RSS"
   },
   {
-   "sym": "T",
-   "name": "AT&T",
-   "title": "Beyond the Network: Supporting Those Who Answer the Call",
-   "link": "https://about.att.com/blogs/2026/beyond-the-network.html",
-   "date": "2026-10-28T14:00:00+00:00",
-   "text": "On National First Responders Day, we reaffirm our responsibility to support the people behind the mission—not only with the technology they rely on, but in meaningful ways beyond the network.",
-   "quelle": "RSS"
-  },
-  {
    "sym": "GEV",
    "name": "GE Vernova",
    "title": "Quartalszahlen",
@@ -2784,15 +2804,6 @@
    "title": "SAP and NTT to Cooperate on Delivering Trusted Sovereign Cloud and SAP Business AI Capabilities",
    "link": "https://group.ntt/en/newsrelease/2026/10/28/261028a.html",
    "date": "2026-10-28T08:00:00+00:00",
-   "text": "",
-   "quelle": "RSS"
-  },
-  {
-   "sym": "2269.HK",
-   "name": "WuXi Biologics",
-   "title": "High-Dose Biologics Delivery",
-   "link": "https://www.wuxibiologics.com/service-overview/dpd/service-sheet-high-dose-biologics-delivery/",
-   "date": "2026-10-28T07:35:33+00:00",
    "text": "",
    "quelle": "RSS"
   },
