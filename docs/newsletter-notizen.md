@@ -56,3 +56,10 @@ Bild: Aufmacher des Artikels (Unsplash-Anfrage läuft).
 - Diagramm aus Hub-Daten: assets/magazin/kraft-heinz-cashflow-dividende.png (freier Cashflow 2025 3,7 Mrd. $ gegen 1,9 Mrd. $ Dividende, gut 50 %).
 - Hub-Kennzahlen 19.11.: Kurs 24,94 $, Rendite 6,4 %, FCF-Rendite 11,9 %, Dividende seit 2019 bei 1,60 $ eingefroren, Umsatz 2025 24,9 Mrd. $ (2016: 26,5).
 - Artikel offen: Investor-Day-Ziele bis 2029, Segmente, Stand der Aufspaltung (im Februar 2026 pausiert) noch recherchieren.
+
+### Aufstellung Stand 20.11., 14 Uhr
+1. KI-Woche (Entwurf ki-woche-anthropic-nvidia-amd-chipregeln)
+2. Kraft Heinz an der NYSE: Prognose bis 2029, wann steigt die Dividende? (online, kraft-heinz-nyse-prognose-dividende-2029), Bild: Mac-&-Cheese-Foto
+3. Target und TJX: Das Zollgeld wiegt bei Target zehnmal so schwer (online, target-tjx-zollrueckerstattung-dividende-vergleich), Bild: Unsplash-Anfrage
+4. Realty Income: Agree Realty im Vergleich (Entwurf, Freigabe nötig)
+5. Ausblick: Wochenvorschau
