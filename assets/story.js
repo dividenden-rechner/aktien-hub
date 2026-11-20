@@ -254,7 +254,8 @@
     /* Optional: Chart unter dem Bild, bis knapp vor den unteren Bereich */
     if (S.chart) {
       var ch = await load(S.chart);
-      if (ch) { var cy = top + mh + 20, bot = 1240, r2 = Math.min(960 / ch.width, (bot - cy) / ch.height), cw = ch.width * r2, chh = ch.height * r2; c.drawImage(ch, 60 + (960 - cw) / 2, cy, cw, chh); }
+      /* Mit CEO darf das Kursbild tiefer reichen und steht links bündig: links neben dem Kopf ist bis knapp unter den Schultern frei */
+      if (ch) { var cy = top + mh + 20, bot = S.portrait ? 1360 : 1240, r2 = Math.min(960 / ch.width, (bot - cy) / ch.height), cw = ch.width * r2, chh = ch.height * r2; c.drawImage(ch, S.portrait ? 60 : 60 + (960 - cw) / 2, cy, cw, chh); }
     }
     /* Unten rechts: CEO, unten bündig auf der Balkenlinie; Name klein links neben der Person */
     if (S.portrait) {
