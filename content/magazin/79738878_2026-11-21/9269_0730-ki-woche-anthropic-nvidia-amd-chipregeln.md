@@ -6,7 +6,12 @@ author: "Redaktions-Team Dividenden-Rechner.de"
 author_bio: "Das Redaktions-Team von Dividenden-Rechner.de schreibt über Dividendenaktien, Kennzahlen und Steuerthemen für Privatanleger. Die Rechner und Auswertungen auf der Seite entstehen im eigenen Haus."
 category: Analyse
 kein_logo: ja
-vorschau: ja
+draft: true
+image: https://images.unsplash.com/photo-1506399558188-acca6f8cbf41?ixid=M3wxMTE3OTgzfDB8MXxzZWFyY2h8NHx8ZGF0YSUyMGNlbnRlciUyMHNlcnZlciUyMHJhY2tzfGVufDF8MHx8fDE3OTUxNzMzNzR8MA&ixlib=rb-4.1.0&w=1600&h=900&fit=crop&crop=entropy&q=80&fm=jpg
+image_alt: "Foto zu Rekord-Börsengang,: Data Servers"
+image_credit: "Foto: imgix auf Unsplash"
+image_source: https://unsplash.com/photos/server-racks-in-data-center-klWUhr-wPJ8?utm_source=dividenden-rechner&utm_medium=referral
+image_artist_url: https://unsplash.com/@imgix?utm_source=dividenden-rechner&utm_medium=referral
 ---
 <!-- PRÜFEN: Aufmacherfoto über die Unsplash-Anfrage in tools/asset.request (Rechenzentrum oder Chipfertigung); Divi wählt aus. -->
 <!-- PRÜFEN: Anthropic: Ausgabepreis 83 $, 980 Mio. Aktien, rund 81 Mrd. $ Erlös, größter Börsengang der Geschichte, Eröffnung 111,50 $, am Nachmittag 95,69 $, Nvidia-Beteiligungen von zusammen 20 Mrd. $: Al Jazeera/Reuters vom 19.11.2026. Bewertung zum Ausgabepreis rund 1,5 Bio. $: Fortune vom 18.11.2026. Schlusskurs des ersten Handelstags vor Veröffentlichung nachtragen. Umsatz neun Monate 33,2 Mrd. $ aus dem Prospekt laut docs/newsletter-notizen.md. -->

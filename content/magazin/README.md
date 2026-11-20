@@ -3,28 +3,19 @@
 <!-- uebersicht-start -->
 ## Übersicht (wird automatisch erstellt, neueste zuerst)
 
-### Vorschau auf der Testseite (5)
-
-Nur auf der GitHub-Testseite unter vorschau/ sichtbar. Freigeben: Datei anklicken, Stift-Symbol, Zeile `vorschau: ja` löschen und speichern.
-
-| Datum | Titel | Datei |
-|---|---|---|
-| 21.11.2026 11:00 | Agree Realty im Vergleich: Dividende rund 4,7 %, AFFO-Prognose angehoben, Verschuldung niedriger als bei NNN und Realty Income | [79738883_2026-11-16/9050_2340-agree-realty-vergleich-nnn-realty-income.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/79738883_2026-11-16/9050_2340-agree-realty-vergleich-nnn-realty-income.md) |
-| 21.11.2026 10:00 | Target und TJX: Das Zollgeld wiegt bei Target zehnmal so schwer | [79738879_2026-11-20/8669_1330-target-tjx-zollrueckerstattung-dividende-vergleich.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/79738879_2026-11-20/8669_1330-target-tjx-zollrueckerstattung-dividende-vergleich.md) |
-| 21.11.2026 09:00 | Kraft Heinz an der NYSE: Der Cashflow sinkt 2027 um ein Drittel, die Dividende bleibt | [79738879_2026-11-20/8599_1400-kraft-heinz-nyse-prognose-dividende-2029.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/79738879_2026-11-20/8599_1400-kraft-heinz-nyse-prognose-dividende-2029.md) |
-| 21.11.2026 08:00 | Chinas KI-Firmen lernen von US-Modellen: Wie Destillation die Chip-Sperren unterläuft | [79738883_2026-11-17/9100_0657-china-destillation-us-ki-modelle.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/79738883_2026-11-17/9100_0657-china-destillation-us-ki-modelle.md) |
-| 21.11.2026 07:30 | Rekord-Börsengang, Chef weg, neue Chipregeln: Die KI-Branche in einer Woche | [79738878_2026-11-21/9269_0730-ki-woche-anthropic-nvidia-amd-chipregeln.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/79738878_2026-11-21/9269_0730-ki-woche-anthropic-nvidia-amd-chipregeln.md) |
-
-### Zur Freigabe: Entwürfe (10)
+### Zur Freigabe: Entwürfe (13)
 
 Datei anklicken, dann Stift-Symbol: Zeile `draft: true` löschen und speichern, dann geht der Artikel online.
 
 | Datum | Titel | Datei |
 |---|---|---|
+| 21.11.2026 08:00 | Chinas KI-Firmen lernen von US-Modellen: Wie Destillation die Chip-Sperren unterläuft | [79738883_2026-11-17/9100_0657-china-destillation-us-ki-modelle.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/79738883_2026-11-17/9100_0657-china-destillation-us-ki-modelle.md) |
+| 21.11.2026 07:30 | Rekord-Börsengang, Chef weg, neue Chipregeln: Die KI-Branche in einer Woche | [79738878_2026-11-21/9269_0730-ki-woche-anthropic-nvidia-amd-chipregeln.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/79738878_2026-11-21/9269_0730-ki-woche-anthropic-nvidia-amd-chipregeln.md) |
 | 19.11.2026 08:00 | Novartis vor dem größten Patentverlust: Trägt die Pipeline das Wachstum bis 2031? | [79738883_2026-11-18/9300_0800-novartis-analyse-bis-2031.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/79738883_2026-11-18/9300_0800-novartis-analyse-bis-2031.md) |
 | 18.11.2026 22:00 | UnitedHealth und die Peers: Warum die ganze Managed-Care-Branche gemeinsam fällt | [79738883_2026-11-18/9270_2200-unitedhealth-peers-branche.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/79738883_2026-11-18/9270_2200-unitedhealth-peers-branche.md) |
 | 18.11.2026 10:30 | Altersvorsorgedepot: Was sich ab 2027 ändert und was mit dem Riester-Vertrag passiert | [79738883_2026-11-18/9200_1030-altersvorsorgedepot-erklaert.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/79738883_2026-11-18/9200_1030-altersvorsorgedepot-erklaert.md) |
 | 18.11.2026 09:00 | Imperial, BAT und Philip Morris: Wer kommt bei neuen Produkten voran? | [79738883_2026-11-17/9120_0900-imperial-bat-pmi-vergleich.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/79738883_2026-11-17/9120_0900-imperial-bat-pmi-vergleich.md) |
+| 16.11.2026 23:40 | Agree Realty im Vergleich: Dividende rund 4,7 %, AFFO-Prognose angehoben, Verschuldung niedriger als bei NNN und Realty Income | [79738883_2026-11-16/9050_2340-agree-realty-vergleich-nnn-realty-income.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/79738883_2026-11-16/9050_2340-agree-realty-vergleich-nnn-realty-income.md) |
 | 05.11.2026 23:05 | Wahlsieg der Demokraten löscht den Börsenrausch: Chipwerte brechen ein, Nasdaq rutscht in die Korrektur | [79738894_2026-11-05/7694_2305-marktueberblick-wahlsieg-demokraten-chipwerte-nasdaq-korrektur.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/79738894_2026-11-05/7694_2305-marktueberblick-wahlsieg-demokraten-chipwerte-nasdaq-korrektur.md) |
 | 29.10.2026 23:27 | Comfort Systems USA: Umsatz steigt im Q3 2026 auf 3,8 Milliarden US-Dollar | [79738970_2026-10-29/7672_2327-comfort-systems-usa-q3-2026-zahlen.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/79738970_2026-10-29/7672_2327-comfort-systems-usa-q3-2026-zahlen.md) |
 | 29.10.2026 23:26 | Oracle Corporation: Langfristiger Ausblick und Finanzziele bis FY30 | [79738970_2026-10-29/7673_2326-oracle-ausblick-investor-day-2026.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/79738970_2026-10-29/7673_2326-oracle-ausblick-investor-day-2026.md) |
