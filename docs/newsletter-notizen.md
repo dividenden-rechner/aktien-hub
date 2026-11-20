@@ -50,3 +50,9 @@ Divi: "schöner Text für den Newsletter als Ergänzung", der Einstieg gefällt 
 Überschrift: Eine Woche, die die KI-Branche neu sortiert
 Am Donnerstag ging Anthropic an die Nasdaq, und noch nie hat ein Unternehmen bei einem Börsengang mehr Geld eingesammelt. Zwei Tage zuvor hatte Nvidia Zahlen vorgelegt, glänzend wie immer, aber zum ersten Mal ohne Jensen Huang. Der Verwaltungsrat ließ wissen: Er kommt nicht zurück. Während die Börse feierte, zog Washington die Exportregeln an, so streng, dass TSMC Lieferungen anhält und selbst Smartphone-Chips betroffen sind. Dazu nimmt ein Leerverkäufer ausgerechnet AMD ins Visier. Wir ordnen die Woche ein: was für die Nachfrage spricht und wo das politische Risiko wächst.
 Bild: Aufmacher des Artikels (Unsplash-Anfrage läuft).
+
+### Kraft Heinz (20.11.): Investor Update und Wechsel an die NYSE (Opening Bell am 12.11.2026)
+- Fotos von Divi (Pressebilder Kraft Heinz/NYSE): Newsletter-Aufmacher = Mac-&-Cheese-Foto (assets/newsletter/kraft-heinz-mac-and-cheese.jpg), Artikel-Aufmacher = Glocken-Foto (assets/magazin/kraft-heinz-nyse-investor-update-foto.jpg); beide dauerhaft unter medien/aufmacher/khc/.
+- Diagramm aus Hub-Daten: assets/magazin/kraft-heinz-cashflow-dividende.png (freier Cashflow 2025 3,7 Mrd. $ gegen 1,9 Mrd. $ Dividende, gut 50 %).
+- Hub-Kennzahlen 19.11.: Kurs 24,94 $, Rendite 6,4 %, FCF-Rendite 11,9 %, Dividende seit 2019 bei 1,60 $ eingefroren, Umsatz 2025 24,9 Mrd. $ (2016: 26,5).
+- Artikel offen: Investor-Day-Ziele bis 2029, Segmente, Stand der Aufspaltung (im Februar 2026 pausiert) noch recherchieren.
