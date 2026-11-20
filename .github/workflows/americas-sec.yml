@@ -1,0 +1,58 @@
+name: Americas - Kanada und Mexiko (SEC + GLEIF)
+on:
+  push:
+    branches: [main, feature/americas-rechte]
+    paths:
+      - "americas-equity-hub/scripts/build_sec_universe.py"
+      - "americas-equity-hub/scripts/export_hub.py"
+      - "americas-equity-hub/data/rights/**"
+      - ".github/workflows/americas-sec.yml"
+  schedule:
+    - cron: "19 6 * * 0"   # wöchentlich
+  workflow_dispatch:
+concurrency:
+  group: americas-sec-${{ github.ref }}
+  cancel-in-progress: false
+permissions:
+  contents: write
+jobs:
+  laden:
+    runs-on: ubuntu-latest
+    timeout-minutes: 120
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install -q pytest
+      - name: Universum Kanada und Mexiko (SEC-Stammdaten, GLEIF)
+        env:
+          SEC_UA: ${{ secrets.SEC_UA }}
+        run: python3 americas-equity-hub/scripts/build_sec_universe.py --land CA,MX --max-neu 12000
+      - name: SEC-Jahreszahlen 2010-2025
+        env:
+          SEC_UA: ${{ secrets.SEC_UA }}
+          SEC_JAHRE: "16"
+          SEC_FORMEN_EXTRA: "6-K"
+        run: |
+          for l in canada mexico; do
+            SEC_LISTE=americas-equity-hub/data/universe/$l/sec_liste.json \
+            SEC_AUSGABE=americas-equity-hub/data/fundamentals/${l}_sec.json \
+            SEC_ABDECKUNG=americas-equity-hub/docs/SEC_ABDECKUNG_${l}.md \
+            python3 tools/sec_fundamentals.py
+          done
+      - name: Hub-Dateien (Rechte-Gate) und Abdeckung
+        run: |
+          python3 americas-equity-hub/scripts/export_hub.py --land CA,MX
+          python3 americas-equity-hub/scripts/abdeckung.py
+      - name: Tests
+        run: cd americas-equity-hub && python3 -m pytest -q tests
+      - name: Ergebnis committen
+        if: always()
+        run: |
+          git config user.name "americas-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add americas-equity-hub/data americas-equity-hub/docs data/americas
+          if git diff --cached --quiet; then echo "Keine Änderungen"; exit 0; fi
+          git commit -q -m "Americas Kanada/Mexiko: Universum und SEC-Jahreszahlen aktualisiert"
+          ok=0; for i in 1 2 3; do git pull --rebase --autostash -X theirs -q && git push && ok=1 && break; sleep 5; done; [ "$ok" = 1 ] || { echo "Push fehlgeschlagen"; exit 1; }

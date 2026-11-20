@@ -1,0 +1,40 @@
+{
+ "erstellt": "2026-11-20T07:42:00+00:00",
+ "quelle": "CVM Dados Abertos (ODbL)",
+ "emittenten": 430,
+ "emittenten_aktiv": 315,
+ "wertpapiere": 601,
+ "notierungen": 657,
+ "notierungen_aktiv": 422,
+ "gattungen": {
+  "ON": 415,
+  "PN": 118,
+  "PNA": 25,
+  "PNB": 23,
+  "PNC": 3,
+  "PND": 1,
+  "UNIT": 16
+ },
+ "mit_lei": 120,
+ "mit_isin": 0,
+ "mit_finanzdaten": 430,
+ "jahre_mit_gewinn_verteilung": {
+  "16": 239,
+  "15": 18,
+  "14": 16,
+  "13": 5,
+  "12": 12,
+  "11": 7,
+  "10": 16,
+  "9": 17,
+  "8": 13,
+  "7": 36,
+  "6": 25,
+  "5": 12,
+  "4": 2,
+  "3": 8,
+  "2": 4
+ },
+ "mit_jcp": 208,
+ "hub_dateien": 315
+}

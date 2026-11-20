@@ -480,6 +480,7 @@ def main():
     asien_werte(out, rate, tag)
     dividenden_korrektur(out)
     modellwerte(out)
+    ohne_kurs(out, rate)
     json.dump({"stand": tag, "hinweis": "Vergleich der Investor-Relations-Cashflow-Werte mit den SEC-Daten, sobald beide denselben Zeitraum haben. Bei Abweichung gilt der IR-Wert.", "firmen": IRPRUEF},
               open("data/ir-pruefung.json", "w", encoding="utf-8"), ensure_ascii=False, indent=1)
     json.dump({"stand": tag, "ezb_kurs_vom": fx_tag,
@@ -488,6 +489,64 @@ def main():
     print(len(out), "Aktien mit Kennzahlen, Stand", tag)
     for t in ("KO", "MSFT", "O", "SAP", "JNJ", "ASML"):
         print(t, out.get(t))
+
+
+def ohne_kurs(out, rate):
+    """Firmen mit Jahreszahlen, aber ohne deutschen Boersenkurs (Brasilien/CVM, Kanada/Mexiko/SEC, Korea/DART ...):
+    nur kursunabhaengige Kennzahlen aus dem letzten Geschaeftsjahr; Kurs, Boersenwert, KGV, Rendite bleiben leer.
+    USD-Betraege mit EZB-Referenzkurs umgerechnet (fx_quelle). Markiert mit ohne_kurs=True."""
+    def w(f, k, e):
+        return wert_am(f, k, e)
+    for pf in sorted(glob.glob("data/americas/firma/*.json")) + sorted(glob.glob("data/asien/firma/*.json")) + sorted(glob.glob("data/esef/firma/*.json")):
+        t = os.path.basename(pf)[:-5]
+        if t.startswith("_") or t in out:
+            continue
+        try:
+            f = json.load(open(pf, encoding="utf-8"))
+        except Exception:
+            continue
+        gj = f.get("gj")
+        if not gj or not f.get("k"):
+            continue
+        wae = f.get("w") or "USD"
+        usd = 1.0 if wae == "USD" else ((rate["USD"] / rate[wae]) if wae in rate else (rate.get("USD") if wae == "EUR" else None))
+        U = lambda v: None if v is None or usd is None else round(v * usd)
+        ums, gew, ek = w(f, "umsatz", gj), w(f, "gewinn", gj), w(f, "eigenkapital", gj)
+        ocf, cx, bs = w(f, "operativer_cf", gj), w(f, "capex", gj), w(f, "bilanzsumme", gj)
+        op, dg = w(f, "operatives_ergebnis", gj), w(f, "dividenden_gezahlt", gj)
+        sk, sl = w(f, "schulden_kurz", gj), w(f, "schulden_lang", gj)
+        uv, kv = w(f, "umlaufvermoegen", gj), w(f, "kurzfr_verbindl", gj)
+        eps = w(f, "eps_verw", gj) or w(f, "eps_ber", gj)
+        dps = w(f, "dividende_je_aktie", gj) or w(f, "dividende_je_aktie_ber", gj)
+        fcf = ocf - abs(cx) if ocf is not None and cx is not None else None
+        schulden = (sk or 0) + (sl or 0) if sk is not None or sl is not None else None
+        r = f["k"].get("umsatz") or []
+        def wachs(reihe, n):
+            if len(reihe) > n and reihe[-1][0] == gj and reihe[-1 - n][1] and reihe[-1][1] and reihe[-1 - n][1] > 0 and reihe[-1][1] > 0:
+                return round(((reihe[-1][1] / reihe[-1 - n][1]) ** (1 / n) - 1) * 100, 1)
+            return None
+        g = f["k"].get("gewinn") or []
+        e_r = f["k"].get("eps_verw") or []
+        o = {"isin": f.get("isin"), "kurs_eur": None, "boerse": None, "datum": None, "waehrung": wae, "gj": gj[:4],
+             "name": f.get("n") or t, "sektor": f.get("sektor") or None, "land": f.get("land"), "ohne_kurs": True,
+             "quelle_jahreszahlen": f.get("quelle"), "fx_quelle": "EZB-Referenzkurs" if wae != "USD" else None,
+             "eps": r2(eps, 4), "dividende": r2(dps, 4),
+             "ausschuettung": r2(dps / eps * 100, 0) if dps and eps and eps > 0 else (r2(abs(dg) / gew * 100, 0) if dg and gew and gew > 0 else None),
+             "nettomarge": r2(gew / ums * 100, 1) if gew is not None and ums else None,
+             "operative_marge": r2(op / ums * 100, 1) if op is not None and ums else None,
+             "roe": r2(gew / ek * 100, 1) if gew is not None and ek and ek > 0 else None,
+             "roa": r2(gew / bs * 100, 1) if gew is not None and bs else None,
+             "schulden_ek": r2(schulden / ek, 2) if schulden is not None and ek and ek > 0 else None,
+             "current_ratio": r2(uv / kv, 2) if uv and kv else None,
+             "capex_umsatz": r2(abs(cx) / ums * 100, 1) if cx is not None and ums else None,
+             "fcf_ausschuettung": r2(abs(dg) / fcf * 100, 0) if dg and fcf and fcf > 0 else None,
+             "umsatz_wachstum": wachs(r, 1), "umsatz_wachstum_3j": wachs(r, 3), "umsatz_wachstum_5j": wachs(r, 5),
+             "gewinn_wachstum": wachs(g, 1), "gewinn_wachstum_5j": wachs(g, 5), "eps_wachstum": wachs(e_r, 1),
+             "umsatz_usd": U(ums), "gewinn_usd": U(gew), "ocf_usd": U(ocf), "fcf_usd": U(fcf), "capex_usd": U(abs(cx) if cx is not None else None),
+             "ek_usd": U(ek), "dividenden_usd": U(abs(dg) if dg is not None else None), "schulden_ges_usd": U(schulden)}
+        if f.get("land") == "BR" and f["k"].get("jcp_gezahlt"):
+            o["jcp_usd"] = U(w(f, "jcp_gezahlt", gj))
+        out[t] = o
 
 
 def dividenden_korrektur(out):

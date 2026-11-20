@@ -1,0 +1,325 @@
+{
+ "hinweis": "Keine Rechtsberatung. Status je Zweck: allowed | restricted | unknown | prohibited. unknown ist NICHT allowed. Öffentlicher Export nur, wenn oeffentliche_api, kommerzielle_weiterverwendung und dauerhafte_speicherung allowed sind.",
+ "zwecke": [
+  "oeffentlich_einsehbar",
+  "automatischer_download",
+  "strukturierte_extraktion",
+  "dauerhafte_speicherung",
+  "interne_verarbeitung",
+  "oeffentliche_api",
+  "kommerzielle_weiterverwendung"
+ ],
+ "quellen": [
+  {
+   "source_id": "cvm_dados_abertos",
+   "land": "BR",
+   "anbieter": "CVM (Comissão de Valores Mobiliários)",
+   "datensatz": "cia_aberta CAD, FCA, DFP (CSV)",
+   "url": "https://dados.cvm.gov.br/dataset/cia_aberta-doc-dfp",
+   "agb_url": "https://opendatacommons.org/licenses/odbl/1-0/",
+   "abgerufen": "2026-11-20",
+   "beleg": "Datensatzseite: \"Licença: Licença Aberta para Bases de Dados (ODbL) do Open Data Commons\"; robots.txt: Disallow /api/, Crawl-Delay: 10",
+   "rechte": {
+    "oeffentlich_einsehbar": "allowed",
+    "automatischer_download": "allowed",
+    "strukturierte_extraktion": "allowed",
+    "dauerhafte_speicherung": "allowed",
+    "interne_verarbeitung": "allowed",
+    "oeffentliche_api": "allowed",
+    "kommerzielle_weiterverwendung": "allowed"
+   },
+   "bedingungen": [
+    "Namensnennung CVM/ODbL",
+    "Share-Alike: öffentlich genutzte abgeleitete Datenbanken unter ODbL anbieten",
+    "Crawl-Delay 10 s, /api/ nicht abrufen"
+   ],
+   "rechtsfrage": "Reichweite der ODbL-Share-Alike-Pflicht für den Hub (abgeleitete Datenbank vs. Produced Work) – zur Prüfung."
+  },
+  {
+   "source_id": "b3_website",
+   "land": "BR",
+   "anbieter": "B3 S.A.",
+   "datensatz": "COTAHIST, Indexportfolio, Emittenten-/Ausschüttungsdaten der Website",
+   "url": "https://www.b3.com.br/",
+   "agb_url": "https://www.b3.com.br/pt_br/termos-de-uso-e-protecao-de-dados/termos-de-uso/",
+   "abgerufen": "2026-11-19",
+   "beleg": "\"É vedada a utilização dos dados contidos neste website para fins comerciais salvo mediante autorização prévia e por escrito da B3.\" / \"É vedada a distribuição, redistribuição ... publicação ... exceto mediante prévio e expresso consentimento da B3.\" (Abruf 20.11.2026: HTTP 403)",
+   "rechte": {
+    "oeffentlich_einsehbar": "allowed",
+    "automatischer_download": "unknown",
+    "strukturierte_extraktion": "unknown",
+    "dauerhafte_speicherung": "unknown",
+    "interne_verarbeitung": "restricted",
+    "oeffentliche_api": "prohibited",
+    "kommerzielle_weiterverwendung": "prohibited"
+   },
+   "rechtsfrage": "Schriftliche Erlaubnis/Lizenz der B3 für Kurse, Indexportfolios, Ausschüttungen (JCP) und ISIN-Daten."
+  },
+  {
+   "source_id": "tmx_website",
+   "land": "CA",
+   "anbieter": "TMX Group (TSX, TSXV)",
+   "datensatz": "Firmenverzeichnis, Interlisted-Liste, MiG-Report",
+   "url": "https://www.tsx.com/",
+   "agb_url": "https://www.tsx.com/en/terms-of-use",
+   "abgerufen": "2026-11-20",
+   "beleg": "\"TMX grants to you a limited non-exclusive, non-transferable license to view and print the material on the Websites for your non-commercial or personal use only.\"",
+   "rechte": {
+    "oeffentlich_einsehbar": "allowed",
+    "automatischer_download": "unknown",
+    "strukturierte_extraktion": "unknown",
+    "dauerhafte_speicherung": "restricted",
+    "interne_verarbeitung": "restricted",
+    "oeffentliche_api": "prohibited",
+    "kommerzielle_weiterverwendung": "prohibited"
+   },
+   "rechtsfrage": "Lizenz der TMX (TMX Datalinx) für Listings, Kurse, Venture-Daten."
+  },
+  {
+   "source_id": "blackrock_ishares_holdings",
+   "land": "CA",
+   "anbieter": "BlackRock Asset Management Canada",
+   "datensatz": "Bestandsliste iShares XIC/XIU (Proxy für S&P/TSX-Mitglieder)",
+   "url": "https://www.blackrock.com/ca/investors/en/products/239837/",
+   "agb_url": "https://www.blackrock.com/ca/investors/en/terms-and-conditions",
+   "abgerufen": "2026-11-20",
+   "beleg": "\"Such content is solely for your personal, non-commercial use.\" / \"You may not distribute, modify, transmit, reuse, repost, or use the content of this Website for public or commercial purposes ... without BlackRock's written permission.\"",
+   "rechte": {
+    "oeffentlich_einsehbar": "allowed",
+    "automatischer_download": "unknown",
+    "strukturierte_extraktion": "unknown",
+    "dauerhafte_speicherung": "restricted",
+    "interne_verarbeitung": "restricted",
+    "oeffentliche_api": "prohibited",
+    "kommerzielle_weiterverwendung": "prohibited"
+   },
+   "rechtsfrage": "Wurde in PR #130 als Indexproxy verwendet und veröffentlicht; mit diesem Stand entfernt. Git-Historie enthält die Datei weiterhin (Entfernung = Umschreiben von main, nur nach Entscheidung des Eigentümers)."
+  },
+  {
+   "source_id": "spdji",
+   "land": "CA/MX",
+   "anbieter": "S&P Dow Jones Indices",
+   "datensatz": "S&P/TSX- und S&P/BMV-Indexmitglieder",
+   "url": "https://www.spglobal.com/spdji/",
+   "agb_url": "https://www.spglobal.com/en/terms-of-use",
+   "abgerufen": "2026-11-20",
+   "beleg": "Nutzungsbedingungen und Indexseiten: HTTP 403 (nicht abrufbar); Mitgliederlisten werden als Lizenzprodukt vertrieben.",
+   "rechte": {
+    "oeffentlich_einsehbar": "unknown",
+    "automatischer_download": "unknown",
+    "strukturierte_extraktion": "unknown",
+    "dauerhafte_speicherung": "unknown",
+    "interne_verarbeitung": "unknown",
+    "oeffentliche_api": "unknown",
+    "kommerzielle_weiterverwendung": "unknown"
+   },
+   "rechtsfrage": "Indexlizenz S&P DJI für Mitglieder und Historie."
+  },
+  {
+   "source_id": "sedar_plus",
+   "land": "CA",
+   "anbieter": "CSA – SEDAR+",
+   "datensatz": "Pflichtveröffentlichungen kanadischer Emittenten",
+   "url": "https://www.sedarplus.ca/",
+   "agb_url": "https://www.sedarplus.ca/onlinehelp/terms-of-use/",
+   "abgerufen": "2026-11-20",
+   "beleg": "Weiterleitung auf Bot-Schutz (validate.perfdrive.com); Nutzungsbedingungen nicht abrufbar. Technischer Schutz wird nicht umgangen.",
+   "rechte": {
+    "oeffentlich_einsehbar": "allowed",
+    "automatischer_download": "prohibited",
+    "strukturierte_extraktion": "unknown",
+    "dauerhafte_speicherung": "unknown",
+    "interne_verarbeitung": "unknown",
+    "oeffentliche_api": "unknown",
+    "kommerzielle_weiterverwendung": "unknown"
+   },
+   "rechtsfrage": "Bedingungen von SEDAR+ für Speicherung/Weitergabe von Berichtsdaten; manueller Abruf je Bericht."
+  },
+  {
+   "source_id": "bmv_website",
+   "land": "MX",
+   "anbieter": "Bolsa Mexicana de Valores",
+   "datensatz": "Emittenten, Berichte, Kurse, Indizes der Website",
+   "url": "https://www.bmv.com.mx/",
+   "agb_url": "https://www.bmv.com.mx/es/Grupo_BMV/Aviso_legal",
+   "abgerufen": "2026-11-20",
+   "beleg": "\"El contenido del presente Sitio no podrá ser reproducido con o sin fines de lucro, a menos que se cuente con la previa autorización por escrito de la BMV\" / \"queda expresamente prohibida ... parsing (uso de algoritmos para extraer del código HTML ...)\"",
+   "rechte": {
+    "oeffentlich_einsehbar": "allowed",
+    "automatischer_download": "prohibited",
+    "strukturierte_extraktion": "prohibited",
+    "dauerhafte_speicherung": "prohibited",
+    "interne_verarbeitung": "restricted",
+    "oeffentliche_api": "prohibited",
+    "kommerzielle_weiterverwendung": "prohibited"
+   },
+   "rechtsfrage": "Schriftliche Erlaubnis der BMV."
+  },
+  {
+   "source_id": "biva_website",
+   "land": "MX",
+   "anbieter": "Bolsa Institucional de Valores",
+   "datensatz": "Emittenten, Serien/ISIN, FIBRAs, SIC, CNBV-XBRL-Berichte",
+   "url": "https://www.biva.mx/",
+   "agb_url": "https://www.biva.mx/terminos-y-condiciones",
+   "abgerufen": "2026-11-20",
+   "beleg": "Bedingungen werden nur per JavaScript geladen und konnten nicht gelesen werden; robots.txt: nur /es/web/ gesperrt.",
+   "rechte": {
+    "oeffentlich_einsehbar": "allowed",
+    "automatischer_download": "unknown",
+    "strukturierte_extraktion": "unknown",
+    "dauerhafte_speicherung": "unknown",
+    "interne_verarbeitung": "unknown",
+    "oeffentliche_api": "unknown",
+    "kommerzielle_weiterverwendung": "unknown"
+   },
+   "rechtsfrage": "Nutzungsbedingungen der BIVA für Emittentendaten und die gespiegelten CNBV-Berichte (XBRL)."
+  },
+  {
+   "source_id": "cnbv",
+   "land": "MX",
+   "anbieter": "Comisión Nacional Bancaria y de Valores",
+   "datensatz": "Emittentenberichte",
+   "url": "https://www.gob.mx/cnbv",
+   "agb_url": null,
+   "abgerufen": "2026-11-20",
+   "beleg": "www.cnbv.gob.mx: TLS-Zertifikat nicht prüfbar (keine Verbindung ohne Abschalten der Prüfung, wird nicht gemacht).",
+   "rechte": {
+    "oeffentlich_einsehbar": "unknown",
+    "automatischer_download": "unknown",
+    "strukturierte_extraktion": "unknown",
+    "dauerhafte_speicherung": "unknown",
+    "interne_verarbeitung": "unknown",
+    "oeffentliche_api": "unknown",
+    "kommerzielle_weiterverwendung": "unknown"
+   },
+   "rechtsfrage": "Offizieller Abrufweg und Bedingungen der CNBV."
+  },
+  {
+   "source_id": "sec_edgar",
+   "land": "US",
+   "anbieter": "U.S. Securities and Exchange Commission",
+   "datensatz": "EDGAR-Formularverzeichnis, submissions, companyfacts (XBRL), company_tickers_exchange",
+   "url": "https://www.sec.gov/edgar",
+   "agb_url": "https://www.sec.gov/privacy",
+   "abgerufen": "2026-11-20",
+   "beleg": "\"Information presented on www.sec.gov is considered public information and may be copied or further distributed by users of the web site without the SEC's permission.\" (Abruf mit Absenderkennung, Rate-Limit beachten)",
+   "rechte": {
+    "oeffentlich_einsehbar": "allowed",
+    "automatischer_download": "allowed",
+    "strukturierte_extraktion": "allowed",
+    "dauerhafte_speicherung": "allowed",
+    "interne_verarbeitung": "allowed",
+    "oeffentliche_api": "allowed",
+    "kommerzielle_weiterverwendung": "allowed"
+   },
+   "bedingungen": [
+    "User-Agent mit Kontakt (Secret SEC_UA)",
+    "höchstens 10 Anfragen je Sekunde"
+   ]
+  },
+  {
+   "source_id": "gleif",
+   "land": "global",
+   "anbieter": "GLEIF",
+   "datensatz": "LEI-Register, LEI-ISIN-Zuordnung",
+   "url": "https://api.gleif.org/",
+   "agb_url": "https://www.gleif.org/en/meta/lei-data-terms-of-use",
+   "abgerufen": "2026-11-20",
+   "beleg": "\"The data available through the Access Service are provided under the CC0 licence\"",
+   "rechte": {
+    "oeffentlich_einsehbar": "allowed",
+    "automatischer_download": "allowed",
+    "strukturierte_extraktion": "allowed",
+    "dauerhafte_speicherung": "allowed",
+    "interne_verarbeitung": "allowed",
+    "oeffentliche_api": "allowed",
+    "kommerzielle_weiterverwendung": "allowed"
+   }
+  },
+  {
+   "source_id": "esma_firds",
+   "land": "EU",
+   "anbieter": "ESMA",
+   "datensatz": "FIRDS (registers.esma.europa.eu)",
+   "url": "https://registers.esma.europa.eu/",
+   "agb_url": "https://www.esma.europa.eu/about-esma/legal-notice-and-data-protection",
+   "abgerufen": "2026-11-20",
+   "beleg": "\"Reproduction of all information on this site (ESMA Library) is authorised except as otherwise stated, provided the source is acknowledged\" – bezieht sich ausdrücklich auf die ESMA Library; ob das Register erfasst ist, ist nicht belegt.",
+   "rechte": {
+    "oeffentlich_einsehbar": "allowed",
+    "automatischer_download": "allowed",
+    "strukturierte_extraktion": "allowed",
+    "dauerhafte_speicherung": "unknown",
+    "interne_verarbeitung": "allowed",
+    "oeffentliche_api": "unknown",
+    "kommerzielle_weiterverwendung": "unknown"
+   },
+   "rechtsfrage": "Gilt der Legal Notice (Reproduktion mit Quellenangabe) auch für die FIRDS-Registerdaten? Bis dahin ISINs nur über GLEIF (CC0) veröffentlichen."
+  },
+  {
+   "source_id": "deutsche_boerse_delayed",
+   "land": "DE",
+   "anbieter": "Deutsche Börse AG (Market Data + Services)",
+   "datensatz": "Verzögerte MiFIR-Post-Trade-Dateien Xetra und Börse Frankfurt (mfs.deutsche-boerse.com) – Grundlage aller Kurse der Website",
+   "url": "https://www.mds.deutsche-boerse.com/mds-en/real-time-data/Delayed-data",
+   "agb_url": "https://www.mds.deutsche-boerse.com/resource/blob/5322802/8a82ea41893249520d1b5fb4878c8dad/data/Market%20Data%20Policy%20Guidelines%20and%20FAQ_V3_0.pdf",
+   "abgerufen": "2026-11-20",
+   "beleg": "Market Data Policy Guidelines and FAQ V3.0, S. 17: \"The access to and use of the Delayed Data is subject to a license ... A free of charge usage right is only granted if the User who is accessing and using Delayed Data (“Delayed Data User”) does not commercialize the Delayed Data. A commercialization of Delayed Data which is subject to license for a fee and applies in the following events (non-exhaustive list): • Delayed Data User onward disseminates Delayed Data to third parties for a fee (including a general fee for accessing its services); • Delayed Data User creates and offers value-added services using Delayed Data which are then sold for a fee ...\" Preisliste MDDA 16.3, S. 5 (Distribution License, Delayed, je Monat): Xetra Post-Trade 743 €, Börse Frankfurt Post-Trade 372 €, Xetra Core (inkl. beider) 1.820 €.",
+   "rechte": {
+    "oeffentlich_einsehbar": "allowed",
+    "automatischer_download": "allowed",
+    "strukturierte_extraktion": "allowed",
+    "dauerhafte_speicherung": "unknown",
+    "interne_verarbeitung": "allowed",
+    "oeffentliche_api": "restricted",
+    "kommerzielle_weiterverwendung": "restricted"
+   },
+   "bedingungen": [
+    "kostenlos nur ohne Kommerzialisierung",
+    "Gebühr/Bezahlzugang auf die Dienste oder verkaufte Mehrwertdienste mit diesen Daten = lizenzpflichtig (Distribution License)"
+   ],
+   "rechtsfrage": "Gilt die heutige kostenlose, werbe-/abofreie Anzeige als nicht kommerziell? Spätestens mit Bezahlbereich (Freemium) ist eine Distribution License nötig (Preisliste: Delayed Xetra Post-Trade 743 €/Monat + Börse Frankfurt Post-Trade 372 €/Monat oder Xetra Core 1.820 €/Monat). Speicherung einer eigenen Kurshistorie: im Vertrag (MDDA) zu klären."
+  },
+  {
+   "source_id": "deutsche_boerse_instrumente",
+   "land": "DE",
+   "anbieter": "Deutsche Börse AG / Börse Frankfurt",
+   "datensatz": "Liste aller handelbaren Instrumente Xetra (t7-xetr-allTradableInstruments.csv) – ISIN und Name",
+   "url": "https://www.cashmarket.deutsche-boerse.com/cash-en/trading/Tradable-Instruments-Xetra",
+   "agb_url": "https://www.cashmarket.deutsche-boerse.com/cash-en/disclaimer",
+   "abgerufen": "2026-11-20",
+   "beleg": "Auf der Seite und im Disclaimer keine Nutzungsbedingungen für die Liste; der Disclaimer regelt nur Haftung und Marken (\"They may not be used or exploited without the prior express consent of the respective owner\" bezieht sich auf die Marken).",
+   "rechte": {
+    "oeffentlich_einsehbar": "allowed",
+    "automatischer_download": "unknown",
+    "strukturierte_extraktion": "unknown",
+    "dauerhafte_speicherung": "unknown",
+    "interne_verarbeitung": "unknown",
+    "oeffentliche_api": "unknown",
+    "kommerzielle_weiterverwendung": "unknown"
+   },
+   "rechtsfrage": "Darf die Instrumentenliste (ISIN-Zuordnung) gespeichert und für eine öffentliche/kommerzielle Website genutzt werden? Anfrage an data.services@deutsche-boerse.com."
+  },
+  {
+   "source_id": "tradegate_delayed",
+   "land": "DE",
+   "anbieter": "Tradegate Exchange (Tradegate BSX)",
+   "datensatz": "Verzögerte Post-Trade-Dateien über mfs.deutsche-boerse.com",
+   "url": "https://www.mds.deutsche-boerse.com/mds-en/real-time-data/Delayed-data",
+   "agb_url": null,
+   "abgerufen": "2026-11-20",
+   "beleg": "Die Datei wird über den Dienst der Deutschen Börse angeboten; Tradegate steht nicht in der Preisliste der Deutschen Börse; eigene Bedingungen von Tradegate nicht geprüft.",
+   "rechte": {
+    "oeffentlich_einsehbar": "allowed",
+    "automatischer_download": "unknown",
+    "strukturierte_extraktion": "unknown",
+    "dauerhafte_speicherung": "unknown",
+    "interne_verarbeitung": "unknown",
+    "oeffentliche_api": "unknown",
+    "kommerzielle_weiterverwendung": "unknown"
+   },
+   "rechtsfrage": "Bedingungen der Tradegate Exchange für verzögerte Daten."
+  }
+ ]
+}

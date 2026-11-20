@@ -1,0 +1,157 @@
+[
+ {
+  "issuer_id": "SEC:CIK:932782",
+  "cik": 932782,
+  "name": "MEXICAN PETROLEUM",
+  "lei": null,
+  "sitz_sec_code": "O5",
+  "sitzland": "MX",
+  "sic": "1311",
+  "quellen": [
+   "sec_edgar"
+  ],
+  "verified": false,
+  "human_review": "pending"
+ },
+ {
+  "issuer_id": "SEC:CIK:1061736",
+  "cik": 1061736,
+  "name": "MEXICAN ECONOMIC DEVELOPMENT INC",
+  "lei": null,
+  "sitz_sec_code": "O5",
+  "sitzland": "MX",
+  "sic": "2086",
+  "quellen": [
+   "sec_edgar"
+  ],
+  "verified": false,
+  "human_review": "pending"
+ },
+ {
+  "issuer_id": "SEC:CIK:1076378",
+  "cik": 1076378,
+  "name": "CEMEX SAB DE CV",
+  "lei": null,
+  "sitz_sec_code": "O5",
+  "sitzland": "MX",
+  "sic": "3241",
+  "quellen": [
+   "sec_edgar"
+  ],
+  "verified": false,
+  "human_review": "pending"
+ },
+ {
+  "issuer_id": "SEC:CIK:1129137",
+  "cik": 1129137,
+  "name": "AMERICA MOVIL SAB DE CV/",
+  "lei": null,
+  "sitz_sec_code": "O5",
+  "sitzland": "MX",
+  "sic": "4813",
+  "quellen": [
+   "sec_edgar"
+  ],
+  "verified": false,
+  "human_review": "pending"
+ },
+ {
+  "issuer_id": "SEC:CIK:1163560",
+  "cik": 1163560,
+  "name": "GRUPO TMM SAB",
+  "lei": null,
+  "sitz_sec_code": "O5",
+  "sitzland": "MX",
+  "sic": "4412",
+  "quellen": [
+   "sec_edgar"
+  ],
+  "verified": false,
+  "human_review": "pending"
+ },
+ {
+  "issuer_id": "SEC:CIK:1347557",
+  "cik": 1347557,
+  "name": "Pacific Airport Group",
+  "lei": null,
+  "sitz_sec_code": "O5",
+  "sitzland": "MX",
+  "sic": "4581",
+  "quellen": [
+   "sec_edgar"
+  ],
+  "verified": false,
+  "human_review": "pending"
+ },
+ {
+  "issuer_id": "SEC:CIK:1378239",
+  "cik": 1378239,
+  "name": "Central North Airport Group",
+  "lei": null,
+  "sitz_sec_code": "O5",
+  "sitzland": "MX",
+  "sic": "4581",
+  "quellen": [
+   "sec_edgar"
+  ],
+  "verified": false,
+  "human_review": "pending"
+ },
+ {
+  "issuer_id": "SEC:CIK:1561861",
+  "cik": 1561861,
+  "name": "Grupo Aeromexico, S.A.B. de C.V.",
+  "lei": "529900BECKHBL62WD126",
+  "sitz_sec_code": "O5",
+  "sitzland": "MX",
+  "sic": "4512",
+  "quellen": [
+   "sec_edgar",
+   "gleif"
+  ],
+  "verified": false,
+  "human_review": "pending"
+ },
+ {
+  "issuer_id": "SEC:CIK:1762506",
+  "cik": 1762506,
+  "name": "Vista Energy, S.A.B. de C.V.",
+  "lei": null,
+  "sitz_sec_code": "O5",
+  "sitzland": "MX",
+  "sic": "1311",
+  "quellen": [
+   "sec_edgar"
+  ],
+  "verified": false,
+  "human_review": "pending"
+ },
+ {
+  "issuer_id": "SEC:CIK:1788257",
+  "cik": 1788257,
+  "name": "BETTERWARE DE MEXICO, S.A.P.I. DE C.V",
+  "lei": null,
+  "sitz_sec_code": "O5",
+  "sitzland": "MX",
+  "sic": "5961",
+  "quellen": [
+   "sec_edgar"
+  ],
+  "verified": false,
+  "human_review": "pending"
+ },
+ {
+  "issuer_id": "SEC:CIK:1969373",
+  "cik": 1969373,
+  "name": "Vesta Real Estate Corporation, S.A.B. de C.V.",
+  "lei": null,
+  "sitz_sec_code": "O5",
+  "sitzland": "MX",
+  "sic": "6500",
+  "quellen": [
+   "sec_edgar"
+  ],
+  "verified": false,
+  "human_review": "pending"
+ }
+]

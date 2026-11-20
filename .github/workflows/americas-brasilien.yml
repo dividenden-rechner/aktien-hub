@@ -1,0 +1,41 @@
+name: Americas - Brasilien (CVM Dados Abertos)
+on:
+  push:
+    branches: [main, feature/americas-rechte]
+    paths:
+      - "americas-equity-hub/scripts/build_brazil.py"
+      - "americas-equity-hub/app/brazil.py"
+      - ".github/workflows/americas-brasilien.yml"
+  schedule:
+    - cron: "37 5 9 * *"   # monatlich; DFP-Daten der CVM ändern sich selten
+  workflow_dispatch:
+concurrency:
+  group: americas-brasilien-${{ github.ref }}
+  cancel-in-progress: false
+permissions:
+  contents: write
+jobs:
+  laden:
+    runs-on: ubuntu-latest
+    timeout-minutes: 90
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install -q pytest
+      - name: CVM laden (Crawl-Delay 10 s) und auswerten
+        run: python3 americas-equity-hub/scripts/build_brazil.py --jahre 2010-2025
+      - name: Abdeckung und Tests
+        run: |
+          python3 americas-equity-hub/scripts/abdeckung.py
+          cd americas-equity-hub && python3 -m pytest -q tests
+      - name: Ergebnis committen
+        if: always()
+        run: |
+          git config user.name "americas-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add americas-equity-hub/data/universe/brazil americas-equity-hub/data/financials americas-equity-hub/docs data/americas
+          if git diff --cached --quiet; then echo "Keine Änderungen"; exit 0; fi
+          git commit -q -m "Americas Brasilien: CVM-Daten aktualisiert"
+          ok=0; for i in 1 2 3; do git pull --rebase --autostash -X theirs -q && git push && ok=1 && break; sleep 5; done; [ "$ok" = 1 ] || { echo "Push fehlgeschlagen"; exit 1; }

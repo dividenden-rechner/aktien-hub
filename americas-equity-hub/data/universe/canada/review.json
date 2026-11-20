@@ -1,219 +1,3686 @@
 [
  {
-  "listing_id": "TD@XTSE",
-  "name": "TORONTO DOMINION",
-  "grund": "nicht_gefunden",
-  "kandidaten": null,
-  "aktion": "ISIN aus amtlicher Quelle bestätigen"
+  "issuer_id": "SEC:CIK:2809",
+  "name": "AGNICO EAGLE MINES LTD",
+  "grund": "ISIN offen (kein_lei)",
+  "kandidaten": null
  },
  {
-  "listing_id": "CM@XTSE",
-  "name": "CANADIAN IMPERIAL BANK OF COMMERCE",
-  "grund": "nicht_gefunden",
-  "kandidaten": null,
-  "aktion": "ISIN aus amtlicher Quelle bestätigen"
+  "issuer_id": "SEC:CIK:9631",
+  "name": "BANK OF NOVA SCOTIA",
+  "grund": "ISIN offen (keine_aktien_isin_bei_gleif)",
+  "kandidaten": null
  },
  {
-  "listing_id": "BIP.UN@XTSE",
-  "name": "BROOKFIELD INFRASTRUCTURE PARTNERS",
-  "grund": "nicht_gefunden",
-  "kandidaten": null,
-  "aktion": "ISIN aus amtlicher Quelle bestätigen"
+  "issuer_id": "SEC:CIK:16868",
+  "name": "CANADIAN NATIONAL RAILWAY CO",
+  "grund": "ISIN offen (kein_lei)",
+  "kandidaten": null
  },
  {
-  "listing_id": "DSG@XTSE",
-  "name": "DESCARTES SYSTEMS GROUP",
-  "grund": "nicht_gefunden",
-  "kandidaten": null,
-  "aktion": "ISIN aus amtlicher Quelle bestätigen"
+  "issuer_id": "SEC:CIK:16875",
+  "name": "CANADIAN PACIFIC KANSAS CITY LTD/CN",
+  "grund": "ISIN offen (kein_lei)",
+  "kandidaten": null
  },
  {
-  "listing_id": "BEP.UN@XTSE",
-  "name": "BROOKFIELD RENEWABLE PARTNERS NON",
-  "grund": "nicht_gefunden",
-  "kandidaten": null,
-  "aktion": "ISIN aus amtlicher Quelle bestätigen"
+  "issuer_id": "SEC:CIK:311337",
+  "name": "SUNCOR ENERGY INC",
+  "grund": "ISIN offen (keine_aktien_isin_bei_gleif)",
+  "kandidaten": null
  },
  {
-  "listing_id": "CSH.UN@XTSE",
-  "name": "CHARTWELL RETIREMENT RESIDENCES RE",
-  "grund": "nicht_gefunden",
-  "kandidaten": null,
-  "aktion": "ISIN aus amtlicher Quelle bestätigen"
+  "issuer_id": "SEC:CIK:756894",
+  "name": "BARRICK MINING CORP",
+  "grund": "ISIN offen (kein_lei)",
+  "kandidaten": null
  },
  {
-  "listing_id": "ACO.X@XTSE",
-  "name": "ATCO CLASS I",
-  "grund": "nicht_gefunden",
-  "kandidaten": null,
-  "aktion": "ISIN aus amtlicher Quelle bestätigen"
+  "issuer_id": "SEC:CIK:795800",
+  "name": "NexMetals Mining Corp.",
+  "grund": "ISIN offen (keine_aktien_isin_bei_gleif)",
+  "kandidaten": null
  },
  {
-  "listing_id": "REI.UN@XTSE",
-  "name": "RIOCAN REAL ESTATE INVESTMENT TRUS",
-  "grund": "nicht_gefunden",
-  "kandidaten": null,
-  "aktion": "ISIN aus amtlicher Quelle bestätigen"
+  "issuer_id": "SEC:CIK:800523",
+  "name": "GGL RESOURCES CORP.",
+  "grund": "ISIN offen (kein_lei)",
+  "kandidaten": null
  },
  {
-  "listing_id": "GRT.UN@XTSE",
-  "name": "GRANITE REAL ESTATE INVESTMENT STA",
-  "grund": "nicht_gefunden",
-  "kandidaten": null,
-  "aktion": "ISIN aus amtlicher Quelle bestätigen"
+  "issuer_id": "SEC:CIK:811522",
+  "name": "QUARTZ MOUNTAIN RESOURCES LTD",
+  "grund": "ISIN offen (kein_lei)",
+  "kandidaten": null
  },
  {
-  "listing_id": "FCR.UN@XTSE",
-  "name": "FIRST CAPITAL REALTY REAL ESTATE I",
-  "grund": "nicht_gefunden",
-  "kandidaten": null,
-  "aktion": "ISIN aus amtlicher Quelle bestätigen"
+  "issuer_id": "SEC:CIK:831609",
+  "name": "C21 Investments Inc.",
+  "grund": "ISIN offen (kein_lei)",
+  "kandidaten": null
  },
  {
-  "listing_id": "CAR.UN@XTSE",
-  "name": "CANADIAN APARTMENT PROPERTIES REAL",
-  "grund": "nicht_gefunden",
-  "kandidaten": null,
-  "aktion": "ISIN aus amtlicher Quelle bestätigen"
+  "issuer_id": "SEC:CIK:842622",
+  "name": "WESTERN EXPLORATION INC.",
+  "grund": "ISIN offen (kein_lei)",
+  "kandidaten": null
  },
  {
-  "listing_id": "CHP.UN@XTSE",
-  "name": "CHOICE PROPERTIES REAL ESTATE INVE",
-  "grund": "nicht_gefunden",
-  "kandidaten": null,
-  "aktion": "ISIN aus amtlicher Quelle bestätigen"
+  "issuer_id": "SEC:CIK:849997",
+  "name": "FEC Resources Inc.",
+  "grund": "ISIN offen (kein_lei)",
+  "kandidaten": null
  },
  {
-  "listing_id": "SRU.UN@XTSE",
-  "name": "SMARTCENTRES RL ESTATE INVESTMENT",
-  "grund": "nicht_gefunden",
-  "kandidaten": null,
-  "aktion": "ISIN aus amtlicher Quelle bestätigen"
+  "issuer_id": "SEC:CIK:850918",
+  "name": "GREAT-WEST LIFECO INC.",
+  "grund": "ISIN offen (keine_aktien_isin_bei_gleif)",
+  "kandidaten": null
  },
  {
-  "listing_id": "DIR.UN@XTSE",
-  "name": "DREAM INDUSTRIAL REAL ESTATE INVES",
-  "grund": "nicht_gefunden",
-  "kandidaten": null,
-  "aktion": "ISIN aus amtlicher Quelle bestätigen"
+  "issuer_id": "SEC:CIK:855950",
+  "name": "POWER METALLIC MINES INC.",
+  "grund": "ISIN offen (kein_lei)",
+  "kandidaten": null
  },
  {
-  "listing_id": "NWC@XTSE",
-  "name": "NORTH WEST COMPANY INC",
-  "grund": "nicht_gefunden",
-  "kandidaten": null,
-  "aktion": "ISIN aus amtlicher Quelle bestätigen"
+  "issuer_id": "SEC:CIK:861972",
+  "name": "Salazar Resources Ltd",
+  "grund": "ISIN offen (kein_lei)",
+  "kandidaten": null
  },
  {
-  "listing_id": "PMZ.UN@XTSE",
-  "name": "PRIMARIS REAL ESTATE INVESTMENT UN",
-  "grund": "nicht_gefunden",
-  "kandidaten": null,
-  "aktion": "ISIN aus amtlicher Quelle bestätigen"
+  "issuer_id": "SEC:CIK:865400",
+  "name": "GUANAJUATO SILVER CO LTD",
+  "grund": "ISIN offen (kein_lei)",
+  "kandidaten": null
  },
  {
-  "listing_id": "HR.UN@XTSE",
-  "name": "HANDR REAL ESTATE INVESTMENT TRUST",
-  "grund": "nicht_gefunden",
-  "kandidaten": null,
-  "aktion": "ISIN aus amtlicher Quelle bestätigen"
+  "issuer_id": "SEC:CIK:868675",
+  "name": "TELUS CORP",
+  "grund": "ISIN offen (kein_lei)",
+  "kandidaten": null
  },
  {
-  "listing_id": "BDGI@XTSE",
-  "name": "BADGER INFRASTRUCTURE SOLUTIONS LT",
-  "grund": "nicht_gefunden",
-  "kandidaten": null,
-  "aktion": "ISIN aus amtlicher Quelle bestätigen"
+  "issuer_id": "SEC:CIK:868822",
+  "name": "Canagold Resources Ltd.",
+  "grund": "ISIN offen (kein_lei)",
+  "kandidaten": null
  },
  {
-  "listing_id": "IPCO@XTSE",
-  "name": "INTERNATIONAL PETROLEUM",
-  "grund": "nicht_gefunden",
-  "kandidaten": null,
-  "aktion": "ISIN aus amtlicher Quelle bestätigen"
+  "issuer_id": "SEC:CIK:872699",
+  "name": "KLONDIKE GOLD CORP /FI",
+  "grund": "ISIN offen (kein_lei)",
+  "kandidaten": null
  },
  {
-  "listing_id": "NGEX@XTSE",
-  "name": "NGEX MINERALS",
-  "grund": "mehrdeutig",
-  "kandidaten": [
-   "CA62930A1021",
-   "CA62930A2011"
-  ],
-  "aktion": "ISIN aus amtlicher Quelle bestätigen"
+  "issuer_id": "SEC:CIK:877019",
+  "name": "Galleon Gold Corp.",
+  "grund": "ISIN offen (keine_aktien_isin_bei_gleif)",
+  "kandidaten": null
  },
  {
-  "listing_id": "BEI.UN@XTSE",
-  "name": "BOARDWALK REAL ESTATE INVESTMENT T",
-  "grund": "nicht_gefunden",
-  "kandidaten": null,
-  "aktion": "ISIN aus amtlicher Quelle bestätigen"
+  "issuer_id": "SEC:CIK:877028",
+  "name": "T2 Metals Corp.",
+  "grund": "ISIN offen (keine_aktien_isin_bei_gleif)",
+  "kandidaten": null
  },
  {
-  "listing_id": "KMP.UN@XTSE",
-  "name": "KILLAM APARTMENT REIT UNITS CLASS",
-  "grund": "nicht_gefunden",
-  "kandidaten": null,
-  "aktion": "ISIN aus amtlicher Quelle bestätigen"
+  "issuer_id": "SEC:CIK:878518",
+  "name": "Trekor Metals Ltd",
+  "grund": "ISIN offen (kein_lei)",
+  "kandidaten": null
  },
  {
-  "listing_id": "CURA@XTSE",
-  "name": "CURALEAF HLDGS",
-  "grund": "nicht_gefunden",
-  "kandidaten": null,
-  "aktion": "ISIN aus amtlicher Quelle bestätigen"
+  "issuer_id": "SEC:CIK:886977",
+  "name": "METHANEX CORP",
+  "grund": "ISIN offen (kein_lei)",
+  "kandidaten": null
  },
  {
-  "listing_id": "CRR.UN@XTSE",
-  "name": "CROMBIE REAL ESTATE INVESTMENT TRU",
-  "grund": "nicht_gefunden",
-  "kandidaten": null,
-  "aktion": "ISIN aus amtlicher Quelle bestätigen"
+  "issuer_id": "SEC:CIK:886986",
+  "name": "TECK RESOURCES LTD",
+  "grund": "ISIN offen (kein_lei)",
+  "kandidaten": null
  },
  {
-  "listing_id": "HPS.A@XTSE",
-  "name": "HAMMOND POWER SOLUTIONS CLASS A",
-  "grund": "nicht_gefunden",
-  "kandidaten": null,
-  "aktion": "ISIN aus amtlicher Quelle bestätigen"
+  "issuer_id": "SEC:CIK:895728",
+  "name": "ENBRIDGE INC",
+  "grund": "ISIN offen (kein_lei)",
+  "kandidaten": null
  },
  {
-  "listing_id": "CRT.UN@XTSE",
-  "name": "CT REIT UNITS TRUST",
-  "grund": "nicht_gefunden",
-  "kandidaten": null,
-  "aktion": "ISIN aus amtlicher Quelle bestätigen"
+  "issuer_id": "SEC:CIK:913353",
+  "name": "Colliers International Group Inc.",
+  "grund": "ISIN offen (keine_aktien_isin_bei_gleif)",
+  "kandidaten": null
  },
  {
-  "listing_id": "IAU@XTSE",
-  "name": "I GOLD CORP",
-  "grund": "mehrdeutig",
-  "kandidaten": [
-   "CA38149E1016",
-   "CA38150G1028",
-   "CA44955L1067",
-   "CA65442J1075",
-   "CA67090W3075"
-  ],
-  "aktion": "ISIN aus amtlicher Quelle bestätigen"
+  "issuer_id": "SEC:CIK:915191",
+  "name": "FAIRFAX FINANCIAL HOLDINGS LTD/ CAN",
+  "grund": "ISIN offen (kein_lei)",
+  "kandidaten": null
  },
  {
-  "listing_id": "AP.UN@XTSE",
-  "name": "ALLIED PROPERTIES REAL ESTATE INVT",
-  "grund": "nicht_gefunden",
-  "kandidaten": null,
-  "aktion": "ISIN aus amtlicher Quelle bestätigen"
+  "issuer_id": "SEC:CIK:918608",
+  "name": "ELDORADO GOLD CORP /FI",
+  "grund": "ISIN offen (kein_lei)",
+  "kandidaten": null
  },
  {
-  "listing_id": "VALX",
-  "name": "VALIENTE RESOURCES",
-  "grund": "nicht TSX (TSX Venture Exchange), Restbestand des ETF",
-  "aktion": "nicht als Indexmitglied gezählt"
+  "issuer_id": "SEC:CIK:921582",
+  "name": "IMAX CORP",
+  "grund": "ISIN offen (kein_lei)",
+  "kandidaten": null
  },
  {
-  "listing_id": "2299955D",
-  "name": "CONSTELLATION SOFTWARE INC",
-  "grund": "kein_gueltiges_kuerzel (Platzhalter)",
-  "aktion": "nicht als Indexmitglied gezählt"
+  "issuer_id": "SEC:CIK:921638",
+  "name": "SSR MINING INC.",
+  "grund": "ISIN offen (keine_aktien_isin_bei_gleif)",
+  "kandidaten": null
+ },
+ {
+  "issuer_id": "SEC:CIK:921968",
+  "name": "HARVEST GOLD CORP",
+  "grund": "ISIN offen (kein_lei)",
+  "kandidaten": null
+ },
+ {
+  "issuer_id": "SEC:CIK:923883",
+  "name": "THERALASE TECHNOLOGIES INC /FI",
+  "grund": "ISIN offen (kein_lei)",
+  "kandidaten": null
+ },
+ {
+  "issuer_id": "SEC:CIK:927971",
+  "name": "BANK OF MONTREAL /CAN/",
+  "grund": "ISIN offen (kein_lei)",
+  "kandidaten": null
+ },
+ {
+  "issuer_id": "SEC:CIK:929351",
+  "name": "STARZ ENTERTAINMENT CORP /CN/",
+  "grund": "ISIN offen (kein_lei)",
+  "kandidaten": null
+ },
+ {
+  "issuer_id": "SEC:CIK:936801",
+  "name": "OCEANIC IRON ORE CORP",
+  "grund": "ISIN offen (kein_lei)",
+  "kandidaten": null
+ },
+ {
+  "issuer_id": "SEC:CIK:942149",
+  "name": "Outcrop Silver & Gold Corp",
+  "grund": "ISIN offen (keine_aktien_isin_bei_gleif)",
+  "kandidaten": null
+ },
+ {
+  "issuer_id": "SEC:CIK:947263",
+  "name": "TORONTO DOMINION BANK",
+  "grund": "ISIN offen (kein_lei)",
+  "kandidaten": null
+ },
+ {
+  "issuer_id": "SEC:CIK:1000275",
+  "name": "ROYAL BANK OF CANADA",
+  "grund": "ISIN offen (keine_aktien_isin_bei_gleif)",
+  "kandidaten": null
+ },
+ {
+  "issuer_id": "SEC:CIK:1001085",
+  "name": "BROOKFIELD Corp /ON/",
+  "grund": "ISIN offen (kein_lei)",
+  "kandidaten": null
+ },
+ {
+  "issuer_id": "SEC:CIK:1001500",
+  "name": "LARAMIDE RESOURCES LTD",
+  "grund": "ISIN offen (keine_aktien_isin_bei_gleif)",
+  "kandidaten": null
+ },
+ {
+  "issuer_id": "SEC:CIK:1002366",
+  "name": "Gitennes Exploration Inc.",
+  "grund": "ISIN offen (kein_lei)",
+  "kandidaten": null
+ },
+ {
+  "issuer_id": "SEC:CIK:1002638",
+  "name": "OPEN TEXT CORP",
+  "grund": "ISIN offen (kein_lei)",
+  "kandidaten": null
+ },
+ {
+  "issuer_id": "SEC:CIK:1009922",
+  "name": "NXT Energy Solutions Inc.",
+  "grund": "ISIN offen (keine_aktien_isin_bei_gleif)",
+  "kandidaten": null
+ },
+ {
+  "issuer_id": "SEC:CIK:1013605",
+  "name": "PRECISION DRILLING Corp",
+  "grund": "ISIN offen (kein_lei)",
+  "kandidaten": null
+ },
+ {
+  "issuer_id": "SEC:CIK:1017413",
+  "name": "CANADIAN NATURAL RESOURCES Ltd",
+  "grund": "ISIN offen (kein_lei)",
+  "kandidaten": null
+ },
+ {
+  "issuer_id": "SEC:CIK:1019742",
+  "name": "BARKSDALE RESOURCES CORP.",
+  "grund": "ISIN offen (keine_aktien_isin_bei_gleif)",
+  "kandidaten": null
+ },
+ {
+  "issuer_id": "SEC:CIK:1023109",
+  "name": "CANALASKA URANIUM LTD",
+  "grund": "ISIN offen (keine_aktien_isin_bei_gleif)",
+  "kandidaten": null
+ },
+ {
+  "issuer_id": "SEC:CIK:1028357",
+  "name": "BITTERROOT RESOURCES LTD",
+  "grund": "ISIN offen (keine_aktien_isin_bei_gleif)",
+  "kandidaten": null
+ },
+ {
+  "issuer_id": "SEC:CIK:1030894",
+  "name": "CELESTICA INC",
+  "grund": "ISIN offen (keine_aktien_isin_bei_gleif)",
+  "kandidaten": null
+ },
+ {
+  "issuer_id": "SEC:CIK:1046102",
+  "name": "RB GLOBAL INC.",
+  "grund": "ISIN offen (keine_aktien_isin_bei_gleif)",
+  "kandidaten": null
+ },
+ {
+  "issuer_id": "SEC:CIK:1050140",
+  "name": "DESCARTES SYSTEMS GROUP INC",
+  "grund": "ISIN offen (keine_aktien_isin_bei_gleif)",
+  "kandidaten": null
+ },
+ {
+  "issuer_id": "SEC:CIK:1061612",
+  "name": "Jackpot Digital Inc.",
+  "grund": "ISIN offen (keine_aktien_isin_bei_gleif)",
+  "kandidaten": null
+ },
+ {
+  "issuer_id": "SEC:CIK:1061894",
+  "name": "Gildan Activewear Inc.",
+  "grund": "ISIN offen (keine_aktien_isin_bei_gleif)",
+  "kandidaten": null
+ },
+ {
+  "issuer_id": "SEC:CIK:1063259",
+  "name": "DENISON MINES CORP.",
+  "grund": "ISIN offen (keine_aktien_isin_bei_gleif)",
+  "kandidaten": null
+ },
+ {
+  "issuer_id": "SEC:CIK:1064052",
+  "name": "FREEGOLD VENTURES LTD",
+  "grund": "ISIN offen (kein_lei)",
+  "kandidaten": null
+ },
+ {
+  "issuer_id": "SEC:CIK:1075124",
+  "name": "THOMSON REUTERS CORP /CAN/",
+  "grund": "ISIN offen (kein_lei)",
+  "kandidaten": null
+ },
+ {
+  "issuer_id": "SEC:CIK:1075822",
+  "name": "NORTHFIELD CAPITAL CORP",
+  "grund": "ISIN offen (kein_lei)",
+  "kandidaten": null
+ },
+ {
+  "issuer_id": "SEC:CIK:1076930",
+  "name": "NOVANTA INC",
+  "grund": "ISIN offen (kein_lei)",
+  "kandidaten": null
+ },
+ {
+  "issuer_id": "SEC:CIK:1077640",
+  "name": "Wealth Minerals Ltd.",
+  "grund": "ISIN offen (keine_aktien_isin_bei_gleif)",
+  "kandidaten": null
+ },
+ {
+  "issuer_id": "SEC:CIK:1085921",
+  "name": "MICROMEM TECHNOLOGIES INC",
+  "grund": "ISIN offen (kein_lei)",
+  "kandidaten": null
+ },
+ {
+  "issuer_id": "SEC:CIK:1095052",
+  "name": "PLATINUM GROUP METALS LTD",
+  "grund": "ISIN offen (keine_aktien_isin_bei_gleif)",
+  "kandidaten": null
+ },
+ {
+  "issuer_id": "SEC:CIK:1097362",
+  "name": "SUN LIFE FINANCIAL INC",
+  "grund": "ISIN offen (kein_lei)",
+  "kandidaten": null
+ },
+ {
+  "issuer_id": "SEC:CIK:1113152",
+  "name": "BEWHERE HOLDINGS INC",
+  "grund": "ISIN offen (keine_aktien_isin_bei_gleif)",
+  "kandidaten": null
+ },
+ {
+  "issuer_id": "SEC:CIK:1113260",
+  "name": "RADIUS GOLD INC.",
+  "grund": "ISIN offen (keine_aktien_isin_bei_gleif)",
+  "kandidaten": null
+ },
+ {
+  "issuer_id": "SEC:CIK:1113423",
+  "name": "COSCIENS Biopharma Inc.",
+  "grund": "ISIN offen (kein_lei)",
+  "kandidaten": null
+ },
+ {
+  "issuer_id": "SEC:CIK:1123267",
+  "name": "Hannan Metals Ltd.",
+  "grund": "ISIN offen (keine_aktien_isin_bei_gleif)",
+  "kandidaten": null
+ },
+ {
+  "issuer_id": "SEC:CIK:1133519",
+  "name": "MEDICURE INC",
+  "grund": "ISIN offen (keine_aktien_isin_bei_gleif)",
+  "kandidaten": null
+ },
+ {
+  "issuer_id": "SEC:CIK:1134115",
+  "name": "INTERNATIONAL TOWER HILL MINES LTD",
+  "grund": "ISIN offen (keine_aktien_isin_bei_gleif)",
+  "kandidaten": null
+ },
+ {
+  "issuer_id": "SEC:CIK:1158399",
+  "name": "Burcon NutraScience Corp",
+  "grund": "ISIN offen (kein_lei)",
+  "kandidaten": null
+ },
+ {
+  "issuer_id": "SEC:CIK:1161814",
+  "name": "KELSO TECHNOLOGIES INC",
+  "grund": "ISIN offen (keine_aktien_isin_bei_gleif)",
+  "kandidaten": null
+ },
+ {
+  "issuer_id": "SEC:CIK:1164771",
+  "name": "NORTHERN DYNASTY MINERALS LTD",
+  "grund": "ISIN offen (keine_aktien_isin_bei_gleif)",
+  "kandidaten": null
+ },
+ {
+  "issuer_id": "SEC:CIK:1168981",
+  "name": "CordovaCann Corp.",
+  "grund": "ISIN offen (kein_lei)",
+  "kandidaten": null
+ },
+ {
+  "issuer_id": "SEC:CIK:1168981",
+  "name": "CordovaCann Corp.",
+  "grund": "kein Börsenkürzel laut SEC (nur Formular)"
+ },
+ {
+  "issuer_id": "SEC:CIK:1173420",
+  "name": "NOVAGOLD RESOURCES INC",
+  "grund": "ISIN offen (keine_aktien_isin_bei_gleif)",
+  "kandidaten": null
+ },
+ {
+  "issuer_id": "SEC:CIK:1173643",
+  "name": "TRX GOLD Corp",
+  "grund": "ISIN offen (kein_lei)",
+  "kandidaten": null
+ },
+ {
+  "issuer_id": "SEC:CIK:1174169",
+  "name": "ALGONQUIN POWER & UTILITIES CORP.",
+  "grund": "ISIN offen (keine_aktien_isin_bei_gleif)",
+  "kandidaten": null
+ },
+ {
+  "issuer_id": "SEC:CIK:1175596",
+  "name": "AMARC RESOURCES LTD",
+  "grund": "ISIN offen (keine_aktien_isin_bei_gleif)",
+  "kandidaten": null
+ },
+ {
+  "issuer_id": "SEC:CIK:1178526",
+  "name": "Vertiqal Studios Corp.",
+  "grund": "ISIN offen (keine_aktien_isin_bei_gleif)",
+  "kandidaten": null
+ },
+ {
+  "issuer_id": "SEC:CIK:1178819",
+  "name": "ALAMOS GOLD INC",
+  "grund": "ISIN offen (keine_aktien_isin_bei_gleif)",
+  "kandidaten": null
+ },
+ {
+  "issuer_id": "SEC:CIK:1191832",
+  "name": "Kingsmen Resources Ltd.",
+  "grund": "ISIN offen (keine_aktien_isin_bei_gleif)",
+  "kandidaten": null
+ },
+ {
+  "issuer_id": "SEC:CIK:1199392",
+  "name": "EMERGENT METALS CORP.",
+  "grund": "ISIN offen (kein_lei)",
+  "kandidaten": null
+ },
+ {
+  "issuer_id": "SEC:CIK:1203464",
+  "name": "IAMGOLD CORP",
+  "grund": "ISIN offen (kein_lei)",
+  "kandidaten": null
+ },
+ {
+  "issuer_id": "SEC:CIK:1211583",
+  "name": "FENNEC PHARMACEUTICALS INC.",
+  "grund": "ISIN offen (keine_aktien_isin_bei_gleif)",
+  "kandidaten": null
+ },
+ {
+  "issuer_id": "SEC:CIK:1227282",
+  "name": "Strata Power Corp",
+  "grund": "ISIN offen (kein_lei)",
+  "kandidaten": null
+ },
+ {
+  "issuer_id": "SEC:CIK:1231346",
+  "name": "SEABRIDGE GOLD INC",
+  "grund": "ISIN offen (keine_aktien_isin_bei_gleif)",
+  "kandidaten": null
+ },
+ {
+  "issuer_id": "SEC:CIK:1232384",
+  "name": "TC ENERGY CORP",
+  "grund": "ISIN offen (kein_lei)",
+  "kandidaten": null
+ },
+ {
+  "issuer_id": "SEC:CIK:1254435",
+  "name": "PACIFIC RIDGE EXPLORATION LTD",
+  "grund": "ISIN offen (keine_aktien_isin_bei_gleif)",
+  "kandidaten": null
+ },
+ {
+  "issuer_id": "SEC:CIK:1271554",
+  "name": "Entree Resources Ltd.",
+  "grund": "ISIN offen (keine_aktien_isin_bei_gleif)",
+  "kandidaten": null
+ },
+ {
+  "issuer_id": "SEC:CIK:1277866",
+  "name": "ENDEAVOUR SILVER CORP",
+  "grund": "ISIN offen (keine_aktien_isin_bei_gleif)",
+  "kandidaten": null
+ },
+ {
+  "issuer_id": "SEC:CIK:1284237",
+  "name": "ABACUS MINING & EXPLORATION CORP",
+  "grund": "ISIN offen (kein_lei)",
+  "kandidaten": null
+ },
+ {
+  "issuer_id": "SEC:CIK:1285170",
+  "name": "INTERMAP TECHNOLOGIES CORP",
+  "grund": "ISIN offen (kein_lei)",
+  "kandidaten": null
+ },
+ {
+  "issuer_id": "SEC:CIK:1286973",
+  "name": "Americas Gold & Silver Corp",
+  "grund": "ISIN offen (kein_lei)",
+  "kandidaten": null
+ },
+ {
+  "issuer_id": "SEC:CIK:1288268",
+  "name": "Intrepid Metals Corp.",
+  "grund": "ISIN offen (keine_aktien_isin_bei_gleif)",
+  "kandidaten": null
+ },
+ {
+  "issuer_id": "SEC:CIK:1293135",
+  "name": "VERMILION ENERGY INC.",
+  "grund": "ISIN offen (keine_aktien_isin_bei_gleif)",
+  "kandidaten": null
+ },
+ {
+  "issuer_id": "SEC:CIK:1301854",
+  "name": "Mirasol Resources Ltd",
+  "grund": "ISIN offen (keine_aktien_isin_bei_gleif)",
+  "kandidaten": null
+ },
+ {
+  "issuer_id": "SEC:CIK:1304409",
+  "name": "ATHENA GOLD CORP",
+  "grund": "ISIN offen (keine_aktien_isin_bei_gleif)",
+  "kandidaten": null
+ },
+ {
+  "issuer_id": "SEC:CIK:1307926",
+  "name": "South Star Battery Metals Corp.",
+  "grund": "ISIN offen (kein_lei)",
+  "kandidaten": null
+ },
+ {
+  "issuer_id": "SEC:CIK:1308648",
+  "name": "FIRST MAJESTIC SILVER CORP",
+  "grund": "ISIN offen (keine_aktien_isin_bei_gleif)",
+  "kandidaten": null
+ },
+ {
+  "issuer_id": "SEC:CIK:1309167",
+  "name": "Aecon Group Inc.",
+  "grund": "ISIN offen (keine_aktien_isin_bei_gleif)",
+  "kandidaten": null
+ },
+ {
+  "issuer_id": "SEC:CIK:1318220",
+  "name": "Waste Connections, Inc.",
+  "grund": "ISIN offen (keine_aktien_isin_bei_gleif)",
+  "kandidaten": null
+ },
+ {
+  "issuer_id": "SEC:CIK:1318482",
+  "name": "KIDOZ INC.",
+  "grund": "ISIN offen (kein_lei)",
+  "kandidaten": null
+ },
+ {
+  "issuer_id": "SEC:CIK:1318596",
+  "name": "KORYX COPPER INC.",
+  "grund": "ISIN offen (kein_lei)",
+  "kandidaten": null
+ },
+ {
+  "issuer_id": "SEC:CIK:1319150",
+  "name": "Pacific Booker Minerals Inc.",
+  "grund": "ISIN offen (keine_aktien_isin_bei_gleif)",
+  "kandidaten": null
+ },
+ {
+  "issuer_id": "SEC:CIK:1323404",
+  "name": "Wheaton Precious Metals Corp.",
+  "grund": "ISIN offen (keine_aktien_isin_bei_gleif)",
+  "kandidaten": null
+ },
+ {
+  "issuer_id": "SEC:CIK:1334388",
+  "name": "OBSIDIAN ENERGY LTD.",
+  "grund": "ISIN offen (keine_aktien_isin_bei_gleif)",
+  "kandidaten": null
+ },
+ {
+  "issuer_id": "SEC:CIK:1336364",
+  "name": "Giga Metals Corp",
+  "grund": "ISIN offen (kein_lei)",
+  "kandidaten": null
+ },
+ {
+  "issuer_id": "SEC:CIK:1337090",
+  "name": "SPANISH MOUNTAIN GOLD LTD.",
+  "grund": "ISIN offen (keine_aktien_isin_bei_gleif)",
+  "kandidaten": null
+ },
+ {
+  "issuer_id": "SEC:CIK:1339688",
+  "name": "Lion Copper Corp.",
+  "grund": "ISIN offen (kein_lei)",
+  "kandidaten": null
+ },
+ {
+  "issuer_id": "SEC:CIK:1340476",
+  "name": "DIRTT ENVIRONMENTAL SOLUTIONS LTD",
+  "grund": "ISIN offen (keine_aktien_isin_bei_gleif)",
+  "kandidaten": null
+ },
+ {
+  "issuer_id": "SEC:CIK:1340677",
+  "name": "SILVERCORP METALS INC",
+  "grund": "ISIN offen (keine_aktien_isin_bei_gleif)",
+  "kandidaten": null
+ },
+ {
+  "issuer_id": "SEC:CIK:1341335",
+  "name": "FORTUNA MINING CORP.",
+  "grund": "ISIN offen (keine_aktien_isin_bei_gleif)",
+  "kandidaten": null
+ },
+ {
+  "issuer_id": "SEC:CIK:1342325",
+  "name": "Carlin Gold Corp",
+  "grund": "ISIN offen (kein_lei)",
+  "kandidaten": null
+ },
+ {
+  "issuer_id": "SEC:CIK:1346917",
+  "name": "GENTOR RESOURCES INC.",
+  "grund": "ISIN offen (kein_lei)",
+  "kandidaten": null
+ },
+ {
+  "issuer_id": "SEC:CIK:1355736",
+  "name": "Avricore Health Inc.",
+  "grund": "ISIN offen (kein_lei)",
+  "kandidaten": null
+ },
+ {
+  "issuer_id": "SEC:CIK:1362898",
+  "name": "Avalon Advanced Materials Inc.",
+  "grund": "ISIN offen (keine_aktien_isin_bei_gleif)",
+  "kandidaten": null
+ },
+ {
+  "issuer_id": "SEC:CIK:1364125",
+  "name": "Western Copper & Gold Corp",
+  "grund": "ISIN offen (kein_lei)",
+  "kandidaten": null
+ },
+ {
+  "issuer_id": "SEC:CIK:1364252",
+  "name": "InZinc Mining Ltd.",
+  "grund": "ISIN offen (keine_aktien_isin_bei_gleif)",
+  "kandidaten": null
+ },
+ {
+  "issuer_id": "SEC:CIK:1368519",
+  "name": "North American Construction Group Ltd.",
+  "grund": "ISIN offen (keine_aktien_isin_bei_gleif)",
+  "kandidaten": null
+ },
+ {
+  "issuer_id": "SEC:CIK:1368845",
+  "name": "TINKA RESOURCES Ltd",
+  "grund": "ISIN offen (kein_lei)",
+  "kandidaten": null
+ },
+ {
+  "issuer_id": "SEC:CIK:1369085",
+  "name": "NEW PACIFIC METALS CORP",
+  "grund": "ISIN offen (keine_aktien_isin_bei_gleif)",
+  "kandidaten": null
+ },
+ {
+  "issuer_id": "SEC:CIK:1370416",
+  "name": "AETHERION TECHNOLOGIES INC.",
+  "grund": "ISIN offen (kein_lei)",
+  "kandidaten": null
+ },
+ {
+  "issuer_id": "SEC:CIK:1374339",
+  "name": "ProMIS Neurosciences Inc.",
+  "grund": "ISIN offen (keine_aktien_isin_bei_gleif)",
+  "kandidaten": null
+ },
+ {
+  "issuer_id": "SEC:CIK:1375205",
+  "name": "UR-ENERGY INC",
+  "grund": "ISIN offen (keine_aktien_isin_bei_gleif)",
+  "kandidaten": null
+ },
+ {
+  "issuer_id": "SEC:CIK:1375877",
+  "name": "Canadian Solar Inc.",
+  "grund": "ISIN offen (keine_aktien_isin_bei_gleif)",
+  "kandidaten": null
+ },
+ {
+  "issuer_id": "SEC:CIK:1377757",
+  "name": "Galiano Gold Inc.",
+  "grund": "ISIN offen (kein_lei)",
+  "kandidaten": null
+ },
+ {
+  "issuer_id": "SEC:CIK:1384831",
+  "name": "PPX Mining Corp.",
+  "grund": "ISIN offen (kein_lei)",
+  "kandidaten": null
+ },
+ {
+  "issuer_id": "SEC:CIK:1385849",
+  "name": "ENERGY FUELS INC",
+  "grund": "ISIN offen (keine_aktien_isin_bei_gleif)",
+  "kandidaten": null
+ },
+ {
+  "issuer_id": "SEC:CIK:1387473",
+  "name": "Triumph Gold Corp.",
+  "grund": "ISIN offen (keine_aktien_isin_bei_gleif)",
+  "kandidaten": null
+ },
+ {
+  "issuer_id": "SEC:CIK:1390352",
+  "name": "OROCO RESOURCE CORP",
+  "grund": "ISIN offen (keine_aktien_isin_bei_gleif)",
+  "kandidaten": null
+ },
+ {
+  "issuer_id": "SEC:CIK:1394039",
+  "name": "Century Lithium Corp.",
+  "grund": "ISIN offen (keine_aktien_isin_bei_gleif)",
+  "kandidaten": null
+ },
+ {
+  "issuer_id": "SEC:CIK:1394189",
+  "name": "Chesapeake Gold Corp",
+  "grund": "ISIN offen (keine_aktien_isin_bei_gleif)",
+  "kandidaten": null
+ },
+ {
+  "issuer_id": "SEC:CIK:1394832",
+  "name": "ATS Corp /ATS",
+  "grund": "ISIN offen (kein_lei)",
+  "kandidaten": null
+ },
+ {
+  "issuer_id": "SEC:CIK:1397616",
+  "name": "SOUTHERN SILVER EXPLORATION CORP",
+  "grund": "ISIN offen (keine_aktien_isin_bei_gleif)",
+  "kandidaten": null
+ },
+ {
+  "issuer_id": "SEC:CIK:1398713",
+  "name": "URZ3 ENERGY CORP.",
+  "grund": "ISIN offen (keine_aktien_isin_bei_gleif)",
+  "kandidaten": null
+ },
+ {
+  "issuer_id": "SEC:CIK:1400438",
+  "name": "Largo Inc.",
+  "grund": "ISIN offen (keine_aktien_isin_bei_gleif)",
+  "kandidaten": null
+ },
+ {
+  "issuer_id": "SEC:CIK:1401040",
+  "name": "DiaMedica Therapeutics Inc.",
+  "grund": "ISIN offen (kein_lei)",
+  "kandidaten": null
+ },
+ {
+  "issuer_id": "SEC:CIK:1402388",
+  "name": "WEST FRASER TIMBER CO., LTD",
+  "grund": "ISIN offen (keine_aktien_isin_bei_gleif)",
+  "kandidaten": null
+ },
+ {
+  "issuer_id": "SEC:CIK:1403870",
+  "name": "Golden Arrow Resources Corp",
+  "grund": "ISIN offen (keine_aktien_isin_bei_gleif)",
+  "kandidaten": null
+ },
+ {
+  "issuer_id": "SEC:CIK:1404353",
+  "name": "West Point Gold Corp.",
+  "grund": "ISIN offen (keine_aktien_isin_bei_gleif)",
+  "kandidaten": null
+ },
+ {
+  "issuer_id": "SEC:CIK:1406944",
+  "name": "TORQ RESOURCES INC.",
+  "grund": "ISIN offen (keine_aktien_isin_bei_gleif)",
+  "kandidaten": null
+ },
+ {
+  "issuer_id": "SEC:CIK:1407582",
+  "name": "Cambria Gold Mines Inc.",
+  "grund": "ISIN offen (keine_aktien_isin_bei_gleif)",
+  "kandidaten": null
+ },
+ {
+  "issuer_id": "SEC:CIK:1408146",
+  "name": "SCANDIUM INTERNATIONAL MINING CORP.",
+  "grund": "ISIN offen (keine_aktien_isin_bei_gleif)",
+  "kandidaten": null
+ },
+ {
+  "issuer_id": "SEC:CIK:1408443",
+  "name": "Milestone Pharmaceuticals Inc.",
+  "grund": "ISIN offen (kein_lei)",
+  "kandidaten": null
+ },
+ {
+  "issuer_id": "SEC:CIK:1409036",
+  "name": "Silver North Resources Ltd.",
+  "grund": "ISIN offen (keine_aktien_isin_bei_gleif)",
+  "kandidaten": null
+ },
+ {
+  "issuer_id": "SEC:CIK:1415758",
+  "name": "Nevada Sunrise Metals Corp.",
+  "grund": "ISIN offen (kein_lei)",
+  "kandidaten": null
+ },
+ {
+  "issuer_id": "SEC:CIK:1418149",
+  "name": "Hillcrest Energy Technologies Ltd.",
+  "grund": "ISIN offen (keine_aktien_isin_bei_gleif)",
+  "kandidaten": null
+ },
+ {
+  "issuer_id": "SEC:CIK:1419336",
+  "name": "Appia Rare Earths & Uranium Corp.",
+  "grund": "ISIN offen (keine_aktien_isin_bei_gleif)",
+  "kandidaten": null
+ },
+ {
+  "issuer_id": "SEC:CIK:1419806",
+  "name": "RARE ELEMENT RESOURCES LTD",
+  "grund": "ISIN offen (keine_aktien_isin_bei_gleif)",
+  "kandidaten": null
+ },
+ {
+  "issuer_id": "SEC:CIK:1420049",
+  "name": "COPAUR MINERALS INC.",
+  "grund": "ISIN offen (keine_aktien_isin_bei_gleif)",
+  "kandidaten": null
+ },
+ {
+  "issuer_id": "SEC:CIK:1421642",
+  "name": "Satellos Bioscience Inc.",
+  "grund": "ISIN offen (kein_lei)",
+  "kandidaten": null
+ },
+ {
+  "issuer_id": "SEC:CIK:1422532",
+  "name": "ROCKHAVEN RESOURCES LTD",
+  "grund": "ISIN offen (keine_aktien_isin_bei_gleif)",
+  "kandidaten": null
+ },
+ {
+  "issuer_id": "SEC:CIK:1423867",
+  "name": "White Gold Corp.",
+  "grund": "ISIN offen (keine_aktien_isin_bei_gleif)",
+  "kandidaten": null
+ },
+ {
+  "issuer_id": "SEC:CIK:1425061",
+  "name": "Golden Cross Resources Inc.",
+  "grund": "ISIN offen (keine_aktien_isin_bei_gleif)",
+  "kandidaten": null
+ },
+ {
+  "issuer_id": "SEC:CIK:1427728",
+  "name": "YNVISIBLE INTERACTIVE INC.",
+  "grund": "ISIN offen (keine_aktien_isin_bei_gleif)",
+  "kandidaten": null
+ },
+ {
+  "issuer_id": "SEC:CIK:1427901",
+  "name": "Gold Strike Resources Corp.",
+  "grund": "ISIN offen (kein_lei)",
+  "kandidaten": null
+ },
+ {
+  "issuer_id": "SEC:CIK:1429937",
+  "name": "B2GOLD CORP",
+  "grund": "ISIN offen (keine_aktien_isin_bei_gleif)",
+  "kandidaten": null
+ },
+ {
+  "issuer_id": "SEC:CIK:1431852",
+  "name": "Osisko Gold Group Inc.",
+  "grund": "ISIN offen (keine_aktien_isin_bei_gleif)",
+  "kandidaten": null
+ },
+ {
+  "issuer_id": "SEC:CIK:1432588",
+  "name": "BAYHORSE SILVER INC.",
+  "grund": "ISIN offen (keine_aktien_isin_bei_gleif)",
+  "kandidaten": null
+ },
+ {
+  "issuer_id": "SEC:CIK:1437424",
+  "name": "POET TECHNOLOGIES INC.",
+  "grund": "ISIN offen (keine_aktien_isin_bei_gleif)",
+  "kandidaten": null
+ },
+ {
+  "issuer_id": "SEC:CIK:1445467",
+  "name": "AVRUPA MINERALS LTD.",
+  "grund": "ISIN offen (keine_aktien_isin_bei_gleif)",
+  "kandidaten": null
+ },
+ {
+  "issuer_id": "SEC:CIK:1447028",
+  "name": "Arbutus Biopharma Corp",
+  "grund": "ISIN offen (kein_lei)",
+  "kandidaten": null
+ },
+ {
+  "issuer_id": "SEC:CIK:1450894",
+  "name": "IBC Advanced Alloys Corp.",
+  "grund": "ISIN offen (kein_lei)",
+  "kandidaten": null
+ },
+ {
+  "issuer_id": "SEC:CIK:1456346",
+  "name": "FRANCO NEVADA Corp",
+  "grund": "ISIN offen (kein_lei)",
+  "kandidaten": null
+ },
+ {
+  "issuer_id": "SEC:CIK:1463000",
+  "name": "Grown Rogue International Inc.",
+  "grund": "ISIN offen (kein_lei)",
+  "kandidaten": null
+ },
+ {
+  "issuer_id": "SEC:CIK:1463978",
+  "name": "BLUE SKY URANIUM CORP.",
+  "grund": "ISIN offen (keine_aktien_isin_bei_gleif)",
+  "kandidaten": null
+ },
+ {
+  "issuer_id": "SEC:CIK:1464165",
+  "name": "BetterLife Pharma Inc.",
+  "grund": "ISIN offen (kein_lei)",
+  "kandidaten": null
+ },
+ {
+  "issuer_id": "SEC:CIK:1467093",
+  "name": "Scorpio Gold Corp",
+  "grund": "ISIN offen (kein_lei)",
+  "kandidaten": null
+ },
+ {
+  "issuer_id": "SEC:CIK:1472326",
+  "name": "Brazil Potash Corp.",
+  "grund": "ISIN offen (keine_aktien_isin_bei_gleif)",
+  "kandidaten": null
+ },
+ {
+  "issuer_id": "SEC:CIK:1472466",
+  "name": "LEGEND POWER SYSTEMS INC.",
+  "grund": "ISIN offen (keine_aktien_isin_bei_gleif)",
+  "kandidaten": null
+ },
+ {
+  "issuer_id": "SEC:CIK:1472879",
+  "name": "WHITECAP RESOURCES INC.",
+  "grund": "ISIN offen (keine_aktien_isin_bei_gleif)",
+  "kandidaten": null
+ },
+ {
+  "issuer_id": "SEC:CIK:1477201",
+  "name": "Bell Copper Corp",
+  "grund": "ISIN offen (kein_lei)",
+  "kandidaten": null
+ },
+ {
+  "issuer_id": "SEC:CIK:1479480",
+  "name": "XALI GOLD CORP.",
+  "grund": "ISIN offen (keine_aktien_isin_bei_gleif)",
+  "kandidaten": null
+ },
+ {
+  "issuer_id": "SEC:CIK:1481857",
+  "name": "Orestone Mining Corp.",
+  "grund": "ISIN offen (keine_aktien_isin_bei_gleif)",
+  "kandidaten": null
+ },
+ {
+  "issuer_id": "SEC:CIK:1482436",
+  "name": "SILVER X MINING CORP.",
+  "grund": "ISIN offen (keine_aktien_isin_bei_gleif)",
+  "kandidaten": null
+ },
+ {
+  "issuer_id": "SEC:CIK:1487326",
+  "name": "OceanaGold Corp",
+  "grund": "ISIN offen (kein_lei)",
+  "kandidaten": null
+ },
+ {
+  "issuer_id": "SEC:CIK:1487615",
+  "name": "Nexera Energy Inc.",
+  "grund": "ISIN offen (kein_lei)",
+  "kandidaten": null
+ },
+ {
+  "issuer_id": "SEC:CIK:1490078",
+  "name": "First Phosphate Corp.",
+  "grund": "ISIN offen (keine_aktien_isin_bei_gleif)",
+  "kandidaten": null
+ },
+ {
+  "issuer_id": "SEC:CIK:1493130",
+  "name": "PROSTAR HOLDINGS INC. /BC",
+  "grund": "ISIN offen (kein_lei)",
+  "kandidaten": null
+ },
+ {
+  "issuer_id": "SEC:CIK:1494728",
+  "name": "Sprott Physical Silver Trust",
+  "grund": "ISIN offen (keine_aktien_isin_bei_gleif)",
+  "kandidaten": null
+ },
+ {
+  "issuer_id": "SEC:CIK:1495651",
+  "name": "Ucore Rare Metals Inc.",
+  "grund": "ISIN offen (keine_aktien_isin_bei_gleif)",
+  "kandidaten": null
+ },
+ {
+  "issuer_id": "SEC:CIK:1495730",
+  "name": "GMV Minerals Inc.",
+  "grund": "ISIN offen (keine_aktien_isin_bei_gleif)",
+  "kandidaten": null
+ },
+ {
+  "issuer_id": "SEC:CIK:1500620",
+  "name": "Bravada Gold Corp",
+  "grund": "ISIN offen (kein_lei)",
+  "kandidaten": null
+ },
+ {
+  "issuer_id": "SEC:CIK:1500881",
+  "name": "enCore Energy Corp.",
+  "grund": "ISIN offen (keine_aktien_isin_bei_gleif)",
+  "kandidaten": null
+ },
+ {
+  "issuer_id": "SEC:CIK:1503812",
+  "name": "PREMIUM BRANDS HOLDINGS Corp",
+  "grund": "ISIN offen (kein_lei)",
+  "kandidaten": null
+ },
+ {
+  "issuer_id": "SEC:CIK:1509397",
+  "name": "Lion One Metals Ltd.",
+  "grund": "ISIN offen (kein_lei)",
+  "kandidaten": null
+ },
+ {
+  "issuer_id": "SEC:CIK:1509705",
+  "name": "New Zealand Energy Corp.",
+  "grund": "ISIN offen (keine_aktien_isin_bei_gleif)",
+  "kandidaten": null
+ },
+ {
+  "issuer_id": "SEC:CIK:1512228",
+  "name": "NIOCORP DEVELOPMENTS LTD",
+  "grund": "ISIN offen (keine_aktien_isin_bei_gleif)",
+  "kandidaten": null
+ },
+ {
+  "issuer_id": "SEC:CIK:1512920",
+  "name": "SPROTT INC.",
+  "grund": "ISIN offen (kein_lei)",
+  "kandidaten": null
+ },
+ {
+  "issuer_id": "SEC:CIK:1514597",
+  "name": "FURY GOLD MINES LTD",
+  "grund": "ISIN offen (kein_lei)",
+  "kandidaten": null
+ },
+ {
+  "issuer_id": "SEC:CIK:1514860",
+  "name": "Gunnison Copper Corp.",
+  "grund": "ISIN offen (keine_aktien_isin_bei_gleif)",
+  "kandidaten": null
+ },
+ {
+  "issuer_id": "SEC:CIK:1515964",
+  "name": "Goldgroup Mining Inc.",
+  "grund": "ISIN offen (keine_aktien_isin_bei_gleif)",
+  "kandidaten": null
+ },
+ {
+  "issuer_id": "SEC:CIK:1518419",
+  "name": "Quarterhill Inc.",
+  "grund": "ISIN offen (keine_aktien_isin_bei_gleif)",
+  "kandidaten": null
+ },
+ {
+  "issuer_id": "SEC:CIK:1519469",
+  "name": "ANFIELD ENERGY INC.",
+  "grund": "ISIN offen (keine_aktien_isin_bei_gleif)",
+  "kandidaten": null
+ },
+ {
+  "issuer_id": "SEC:CIK:1520556",
+  "name": "TRENCHANT TECHNOLOGIES CAPITAL CORP.",
+  "grund": "ISIN offen (keine_aktien_isin_bei_gleif)",
+  "kandidaten": null
+ },
+ {
+  "issuer_id": "SEC:CIK:1524326",
+  "name": "Enduro Metals Corp.",
+  "grund": "ISIN offen (kein_lei)",
+  "kandidaten": null
+ },
+ {
+  "issuer_id": "SEC:CIK:1526243",
+  "name": "PERPETUA RESOURCES CORP.",
+  "grund": "ISIN offen (kein_lei)",
+  "kandidaten": null
+ },
+ {
+  "issuer_id": "SEC:CIK:1526475",
+  "name": "NICOLA MINING INC.",
+  "grund": "ISIN offen (keine_aktien_isin_bei_gleif)",
+  "kandidaten": null
+ },
+ {
+  "issuer_id": "SEC:CIK:1527038",
+  "name": "KINCORA COPPER LTD",
+  "grund": "ISIN offen (keine_aktien_isin_bei_gleif)",
+  "kandidaten": null
+ },
+ {
+  "issuer_id": "SEC:CIK:1536811",
+  "name": "Thunderstruck Resources Ltd.",
+  "grund": "ISIN offen (kein_lei)",
+  "kandidaten": null
+ },
+ {
+  "issuer_id": "SEC:CIK:1537137",
+  "name": "STANDARD LITHIUM LTD.",
+  "grund": "ISIN offen (keine_aktien_isin_bei_gleif)",
+  "kandidaten": null
+ },
+ {
+  "issuer_id": "SEC:CIK:1538189",
+  "name": "Sonoro Gold Corp.",
+  "grund": "ISIN offen (keine_aktien_isin_bei_gleif)",
+  "kandidaten": null
+ },
+ {
+  "issuer_id": "SEC:CIK:1538847",
+  "name": "GoldMining Inc.",
+  "grund": "ISIN offen (keine_aktien_isin_bei_gleif)",
+  "kandidaten": null
+ },
+ {
+  "issuer_id": "SEC:CIK:1539190",
+  "name": "SPROTT PHYSICAL PLATINUM & PALLADIUM TRUST",
+  "grund": "ISIN offen (keine_aktien_isin_bei_gleif)",
+  "kandidaten": null
+ },
+ {
+  "issuer_id": "SEC:CIK:1540159",
+  "name": "Edesa Biotech, Inc.",
+  "grund": "ISIN offen (kein_lei)",
+  "kandidaten": null
+ },
+ {
+  "issuer_id": "SEC:CIK:1541190",
+  "name": "SKYHARBOUR RESOURCES LTD",
+  "grund": "ISIN offen (keine_aktien_isin_bei_gleif)",
+  "kandidaten": null
+ },
+ {
+  "issuer_id": "SEC:CIK:1543418",
+  "name": "Trilogy Metals Inc.",
+  "grund": "ISIN offen (keine_aktien_isin_bei_gleif)",
+  "kandidaten": null
+ },
+ {
+  "issuer_id": "SEC:CIK:1544770",
+  "name": "BONTERRA RESOURCES INC.",
+  "grund": "ISIN offen (keine_aktien_isin_bei_gleif)",
+  "kandidaten": null
+ },
+ {
+  "issuer_id": "SEC:CIK:1544883",
+  "name": "Wolfden Resources Corp",
+  "grund": "ISIN offen (kein_lei)",
+  "kandidaten": null
+ },
+ {
+  "issuer_id": "SEC:CIK:1545224",
+  "name": "Silver Elephant Mining Corp.",
+  "grund": "ISIN offen (keine_aktien_isin_bei_gleif)",
+  "kandidaten": null
+ },
+ {
+  "issuer_id": "SEC:CIK:1546066",
+  "name": "PEMBINA PIPELINE CORP",
+  "grund": "ISIN offen (kein_lei)",
+  "kandidaten": null
+ },
+ {
+  "issuer_id": "SEC:CIK:1547452",
+  "name": "Volatus Aerospace Inc.",
+  "grund": "ISIN offen (kein_lei)",
+  "kandidaten": null
+ },
+ {
+  "issuer_id": "SEC:CIK:1548536",
+  "name": "Santacruz Silver Mining Ltd.",
+  "grund": "ISIN offen (keine_aktien_isin_bei_gleif)",
+  "kandidaten": null
+ },
+ {
+  "issuer_id": "SEC:CIK:1548958",
+  "name": "Brixton Metals Corp",
+  "grund": "ISIN offen (kein_lei)",
+  "kandidaten": null
+ },
+ {
+  "issuer_id": "SEC:CIK:1555980",
+  "name": "Falco Resources Ltd.",
+  "grund": "ISIN offen (keine_aktien_isin_bei_gleif)",
+  "kandidaten": null
+ },
+ {
+  "issuer_id": "SEC:CIK:1557440",
+  "name": "Compass Gold Corp",
+  "grund": "ISIN offen (kein_lei)",
+  "kandidaten": null
+ },
+ {
+  "issuer_id": "SEC:CIK:1561540",
+  "name": "Torex Resources Inc.",
+  "grund": "ISIN offen (kein_lei)",
+  "kandidaten": null
+ },
+ {
+  "issuer_id": "SEC:CIK:1564538",
+  "name": "GRANITE REAL ESTATE INVESTMENT TRUST",
+  "grund": "ISIN offen (keine_aktien_isin_bei_gleif)",
+  "kandidaten": null
+ },
+ {
+  "issuer_id": "SEC:CIK:1566073",
+  "name": "Pan Global Resources Inc.",
+  "grund": "ISIN offen (keine_aktien_isin_bei_gleif)",
+  "kandidaten": null
+ },
+ {
+  "issuer_id": "SEC:CIK:1567663",
+  "name": "ATICO MINING Corp",
+  "grund": "ISIN offen (kein_lei)",
+  "kandidaten": null
+ },
+ {
+  "issuer_id": "SEC:CIK:1570505",
+  "name": "EDGE COPPER Corp",
+  "grund": "ISIN offen (kein_lei)",
+  "kandidaten": null
+ },
+ {
+  "issuer_id": "SEC:CIK:1570843",
+  "name": "Greenbriar Sustainable Living Inc.",
+  "grund": "ISIN offen (kein_lei)",
+  "kandidaten": null
+ },
+ {
+  "issuer_id": "SEC:CIK:1576159",
+  "name": "BuildDirect.com Technologies Inc.",
+  "grund": "ISIN offen (kein_lei)",
+  "kandidaten": null
+ },
+ {
+  "issuer_id": "SEC:CIK:1577783",
+  "name": "Sirios Resources Inc.",
+  "grund": "ISIN offen (keine_aktien_isin_bei_gleif)",
+  "kandidaten": null
+ },
+ {
+  "issuer_id": "SEC:CIK:1580110",
+  "name": "Copper Giant Resources Corp.",
+  "grund": "ISIN offen (keine_aktien_isin_bei_gleif)",
+  "kandidaten": null
+ },
+ {
+  "issuer_id": "SEC:CIK:1581178",
+  "name": "EUPRAXIA PHARMACEUTICALS INC.",
+  "grund": "ISIN offen (keine_aktien_isin_bei_gleif)",
+  "kandidaten": null
+ },
+ {
+  "issuer_id": "SEC:CIK:1582313",
+  "name": "Xenon Pharmaceuticals Inc.",
+  "grund": "ISIN offen (keine_aktien_isin_bei_gleif)",
+  "kandidaten": null
+ },
+ {
+  "issuer_id": "SEC:CIK:1583962",
+  "name": "K2 Gold Corp",
+  "grund": "ISIN offen (kein_lei)",
+  "kandidaten": null
+ },
+ {
+  "issuer_id": "SEC:CIK:1584547",
+  "name": "GREENPOWER MOTOR Co INC.",
+  "grund": "ISIN offen (kein_lei)",
+  "kandidaten": null
+ },
+ {
+  "issuer_id": "SEC:CIK:1584549",
+  "name": "Village Farms International, Inc.",
+  "grund": "ISIN offen (keine_aktien_isin_bei_gleif)",
+  "kandidaten": null
+ },
+ {
+  "issuer_id": "SEC:CIK:1588823",
+  "name": "TFI International Inc.",
+  "grund": "ISIN offen (keine_aktien_isin_bei_gleif)",
+  "kandidaten": null
+ },
+ {
+  "issuer_id": "SEC:CIK:1590584",
+  "name": "Civeo Corp",
+  "grund": "ISIN offen (kein_lei)",
+  "kandidaten": null
+ },
+ {
+  "issuer_id": "SEC:CIK:1591956",
+  "name": "DarkHorse Technologies Inc.",
+  "grund": "ISIN offen (keine_aktien_isin_bei_gleif)",
+  "kandidaten": null
+ },
+ {
+  "issuer_id": "SEC:CIK:1594805",
+  "name": "SHOPIFY INC.",
+  "grund": "ISIN offen (keine_aktien_isin_bei_gleif)",
+  "kandidaten": null
+ },
+ {
+  "issuer_id": "SEC:CIK:1594856",
+  "name": "VALHALLA METALS INC.",
+  "grund": "ISIN offen (keine_aktien_isin_bei_gleif)",
+  "kandidaten": null
+ },
+ {
+  "issuer_id": "SEC:CIK:1602842",
+  "name": "Orion Digital Corp.",
+  "grund": "ISIN offen (kein_lei)",
+  "kandidaten": null
+ },
+ {
+  "issuer_id": "SEC:CIK:1607807",
+  "name": "NV Gold Corp",
+  "grund": "ISIN offen (keine_aktien_isin_bei_gleif)",
+  "kandidaten": null
+ },
+ {
+  "issuer_id": "SEC:CIK:1609436",
+  "name": "Platauro Metals Corp.",
+  "grund": "ISIN offen (kein_lei)",
+  "kandidaten": null
+ },
+ {
+  "issuer_id": "SEC:CIK:1610820",
+  "name": "BriaCell Therapeutics Corp.",
+  "grund": "ISIN offen (keine_aktien_isin_bei_gleif)",
+  "kandidaten": null
+ },
+ {
+  "issuer_id": "SEC:CIK:1613979",
+  "name": "ZEPHYR MINERALS LTD.",
+  "grund": "ISIN offen (kein_lei)",
+  "kandidaten": null
+ },
+ {
+  "issuer_id": "SEC:CIK:1616885",
+  "name": "Revival Gold Inc.",
+  "grund": "ISIN offen (keine_aktien_isin_bei_gleif)",
+  "kandidaten": null
+ },
+ {
+  "issuer_id": "SEC:CIK:1618755",
+  "name": "Restaurant Brands International Limited Partnership",
+  "grund": "ISIN offen (keine_aktien_isin_bei_gleif)",
+  "kandidaten": null
+ },
+ {
+  "issuer_id": "SEC:CIK:1618756",
+  "name": "Restaurant Brands International Inc.",
+  "grund": "ISIN offen (keine_aktien_isin_bei_gleif)",
+  "kandidaten": null
+ },
+ {
+  "issuer_id": "SEC:CIK:1620737",
+  "name": "ORGANIGRAM GLOBAL INC.",
+  "grund": "ISIN offen (keine_aktien_isin_bei_gleif)",
+  "kandidaten": null
+ },
+ {
+  "issuer_id": "SEC:CIK:1621906",
+  "name": "Western Uranium & Vanadium Corp.",
+  "grund": "ISIN offen (keine_aktien_isin_bei_gleif)",
+  "kandidaten": null
+ },
+ {
+  "issuer_id": "SEC:CIK:1622629",
+  "name": "Southern Cross Gold Consolidated Ltd.",
+  "grund": "ISIN offen (keine_aktien_isin_bei_gleif)",
+  "kandidaten": null
+ },
+ {
+  "issuer_id": "SEC:CIK:1626878",
+  "name": "XBiotech Inc.",
+  "grund": "ISIN offen (kein_lei)",
+  "kandidaten": null
+ },
+ {
+  "issuer_id": "SEC:CIK:1627272",
+  "name": "OR Royalties Inc.",
+  "grund": "ISIN offen (kein_lei)",
+  "kandidaten": null
+ },
+ {
+  "issuer_id": "SEC:CIK:1628808",
+  "name": "Profound Medical Corp.",
+  "grund": "ISIN offen (kein_lei)",
+  "kandidaten": null
+ },
+ {
+  "issuer_id": "SEC:CIK:1628935",
+  "name": "MORIEN RESOURCES CORP.",
+  "grund": "ISIN offen (keine_aktien_isin_bei_gleif)",
+  "kandidaten": null
+ },
+ {
+  "issuer_id": "SEC:CIK:1629632",
+  "name": "Eguana Technologies Inc.",
+  "grund": "ISIN offen (keine_aktien_isin_bei_gleif)",
+  "kandidaten": null
+ },
+ {
+  "issuer_id": "SEC:CIK:1635729",
+  "name": "Altamira Gold Corp.",
+  "grund": "ISIN offen (keine_aktien_isin_bei_gleif)",
+  "kandidaten": null
+ },
+ {
+  "issuer_id": "SEC:CIK:1637810",
+  "name": "FirstService Corp",
+  "grund": "ISIN offen (kein_lei)",
+  "kandidaten": null
+ },
+ {
+  "issuer_id": "SEC:CIK:1641229",
+  "name": "First Mining Gold Corp.",
+  "grund": "ISIN offen (keine_aktien_isin_bei_gleif)",
+  "kandidaten": null
+ },
+ {
+  "issuer_id": "SEC:CIK:1642178",
+  "name": "Grey Matters Health Inc.",
+  "grund": "ISIN offen (kein_lei)",
+  "kandidaten": null
+ },
+ {
+  "issuer_id": "SEC:CIK:1643154",
+  "name": "iANTHUS CAPITAL HOLDINGS, INC.",
+  "grund": "ISIN offen (keine_aktien_isin_bei_gleif)",
+  "kandidaten": null
+ },
+ {
+  "issuer_id": "SEC:CIK:1644540",
+  "name": "Surge Copper Corp",
+  "grund": "ISIN offen (keine_aktien_isin_bei_gleif)",
+  "kandidaten": null
+ },
+ {
+  "issuer_id": "SEC:CIK:1648636",
+  "name": "Dune Oil Corp.",
+  "grund": "ISIN offen (kein_lei)",
+  "kandidaten": null
+ },
+ {
+  "issuer_id": "SEC:CIK:1649009",
+  "name": "Core AI Holdings, Inc.",
+  "grund": "ISIN offen (kein_lei)",
+  "kandidaten": null
+ },
+ {
+  "issuer_id": "SEC:CIK:1649752",
+  "name": "Nouveau Monde Graphite Inc.",
+  "grund": "ISIN offen (keine_aktien_isin_bei_gleif)",
+  "kandidaten": null
+ },
+ {
+  "issuer_id": "SEC:CIK:1650196",
+  "name": "Visionary Copper & Gold Mines Inc.",
+  "grund": "ISIN offen (kein_lei)",
+  "kandidaten": null
+ },
+ {
+  "issuer_id": "SEC:CIK:1653606",
+  "name": "Ehave, Inc.",
+  "grund": "ISIN offen (kein_lei)",
+  "kandidaten": null
+ },
+ {
+  "issuer_id": "SEC:CIK:1654795",
+  "name": "Brookfield Business Corp",
+  "grund": "ISIN offen (kein_lei)",
+  "kandidaten": null
+ },
+ {
+  "issuer_id": "SEC:CIK:1655923",
+  "name": "Alpha Cognition Inc.",
+  "grund": "ISIN offen (keine_aktien_isin_bei_gleif)",
+  "kandidaten": null
+ },
+ {
+  "issuer_id": "SEC:CIK:1656472",
+  "name": "Cronos Group Inc.",
+  "grund": "ISIN offen (keine_aktien_isin_bei_gleif)",
+  "kandidaten": null
+ },
+ {
+  "issuer_id": "SEC:CIK:1657800",
+  "name": "ESGold Corp.",
+  "grund": "ISIN offen (keine_aktien_isin_bei_gleif)",
+  "kandidaten": null
+ },
+ {
+  "issuer_id": "SEC:CIK:1666175",
+  "name": "Fortis Inc.",
+  "grund": "ISIN offen (keine_aktien_isin_bei_gleif)",
+  "kandidaten": null
+ },
+ {
+  "issuer_id": "SEC:CIK:1666782",
+  "name": "Irving Resources Inc.",
+  "grund": "ISIN offen (keine_aktien_isin_bei_gleif)",
+  "kandidaten": null
+ },
+ {
+  "issuer_id": "SEC:CIK:1670061",
+  "name": "Almonty Industries Inc.",
+  "grund": "ISIN offen (keine_aktien_isin_bei_gleif)",
+  "kandidaten": null
+ },
+ {
+  "issuer_id": "SEC:CIK:1678748",
+  "name": "Intellistake Technologies Corp.",
+  "grund": "ISIN offen (kein_lei)",
+  "kandidaten": null
+ },
+ {
+  "issuer_id": "SEC:CIK:1680056",
+  "name": "Orla Mining Ltd.",
+  "grund": "ISIN offen (keine_aktien_isin_bei_gleif)",
+  "kandidaten": null
+ },
+ {
+  "issuer_id": "SEC:CIK:1680056",
+  "name": "Orla Mining Ltd.",
+  "grund": "kein Börsenkürzel laut SEC (nur Formular)"
+ },
+ {
+  "issuer_id": "SEC:CIK:1680637",
+  "name": "Nuran Wireless Inc.",
+  "grund": "ISIN offen (keine_aktien_isin_bei_gleif)",
+  "kandidaten": null
+ },
+ {
+  "issuer_id": "SEC:CIK:1682056",
+  "name": "Silver Storm Mining Ltd.",
+  "grund": "ISIN offen (keine_aktien_isin_bei_gleif)",
+  "kandidaten": null
+ },
+ {
+  "issuer_id": "SEC:CIK:1683274",
+  "name": "Rio Silver Inc.",
+  "grund": "ISIN offen (keine_aktien_isin_bei_gleif)",
+  "kandidaten": null
+ },
+ {
+  "issuer_id": "SEC:CIK:1683408",
+  "name": "Rocky Shore Gold Ltd.",
+  "grund": "ISIN offen (keine_aktien_isin_bei_gleif)",
+  "kandidaten": null
+ },
+ {
+  "issuer_id": "SEC:CIK:1683541",
+  "name": "AURORA CANNABIS INC",
+  "grund": "ISIN offen (keine_aktien_isin_bei_gleif)",
+  "kandidaten": null
+ },
+ {
+  "issuer_id": "SEC:CIK:1684144",
+  "name": "Zomedica Corp.",
+  "grund": "ISIN offen (kein_lei)",
+  "kandidaten": null
+ },
+ {
+  "issuer_id": "SEC:CIK:1684505",
+  "name": "Xtract One Technologies Inc.",
+  "grund": "ISIN offen (kein_lei)",
+  "kandidaten": null
+ },
+ {
+  "issuer_id": "SEC:CIK:1684662",
+  "name": "SILVER VIPER MINERALS CORP.",
+  "grund": "ISIN offen (keine_aktien_isin_bei_gleif)",
+  "kandidaten": null
+ },
+ {
+  "issuer_id": "SEC:CIK:1686000",
+  "name": "Japan Gold Corp.",
+  "grund": "ISIN offen (keine_aktien_isin_bei_gleif)",
+  "kandidaten": null
+ },
+ {
+  "issuer_id": "SEC:CIK:1689448",
+  "name": "Argentina Lithium & Energy Corp.",
+  "grund": "ISIN offen (keine_aktien_isin_bei_gleif)",
+  "kandidaten": null
+ },
+ {
+  "issuer_id": "SEC:CIK:1690511",
+  "name": "Canada Goose Holdings Inc.",
+  "grund": "ISIN offen (keine_aktien_isin_bei_gleif)",
+  "kandidaten": null
+ },
+ {
+  "issuer_id": "SEC:CIK:1690639",
+  "name": "VersaBank",
+  "grund": "ISIN offen (keine_aktien_isin_bei_gleif)",
+  "kandidaten": null
+ },
+ {
+  "issuer_id": "SEC:CIK:1691710",
+  "name": "Faraday Copper Corp.",
+  "grund": "ISIN offen (kein_lei)",
+  "kandidaten": null
+ },
+ {
+  "issuer_id": "SEC:CIK:1698535",
+  "name": "NexGen Energy Ltd.",
+  "grund": "ISIN offen (keine_aktien_isin_bei_gleif)",
+  "kandidaten": null
+ },
+ {
+  "issuer_id": "SEC:CIK:1699880",
+  "name": "American Lithium Corp.",
+  "grund": "ISIN offen (keine_aktien_isin_bei_gleif)",
+  "kandidaten": null
+ },
+ {
+  "issuer_id": "SEC:CIK:1701963",
+  "name": "Versus Systems Inc.",
+  "grund": "ISIN offen (keine_aktien_isin_bei_gleif)",
+  "kandidaten": null
+ },
+ {
+  "issuer_id": "SEC:CIK:1702123",
+  "name": "Cardiol Therapeutics Inc.",
+  "grund": "ISIN offen (keine_aktien_isin_bei_gleif)",
+  "kandidaten": null
+ },
+ {
+  "issuer_id": "SEC:CIK:1703057",
+  "name": "AbCellera Biologics Inc.",
+  "grund": "ISIN offen (keine_aktien_isin_bei_gleif)",
+  "kandidaten": null
+ },
+ {
+  "issuer_id": "SEC:CIK:1703118",
+  "name": "F3 Uranium Corp.",
+  "grund": "ISIN offen (keine_aktien_isin_bei_gleif)",
+  "kandidaten": null
+ },
+ {
+  "issuer_id": "SEC:CIK:1703292",
+  "name": "KENADYR METALS CORP",
+  "grund": "ISIN offen (keine_aktien_isin_bei_gleif)",
+  "kandidaten": null
+ },
+ {
+  "issuer_id": "SEC:CIK:1706404",
+  "name": "Aztec Minerals Corp.",
+  "grund": "ISIN offen (keine_aktien_isin_bei_gleif)",
+  "kandidaten": null
+ },
+ {
+  "issuer_id": "SEC:CIK:1711141",
+  "name": "Leef Brands Inc.",
+  "grund": "ISIN offen (keine_aktien_isin_bei_gleif)",
+  "kandidaten": null
+ },
+ {
+  "issuer_id": "SEC:CIK:1712294",
+  "name": "CAPTIVA VERDE WELLNESS CORP.",
+  "grund": "ISIN offen (kein_lei)",
+  "kandidaten": null
+ },
+ {
+  "issuer_id": "SEC:CIK:1712356",
+  "name": "Hydro One Ltd",
+  "grund": "ISIN offen (kein_lei)",
+  "kandidaten": null
+ },
+ {
+  "issuer_id": "SEC:CIK:1713748",
+  "name": "Skeena Resources Ltd",
+  "grund": "ISIN offen (kein_lei)",
+  "kandidaten": null
+ },
+ {
+  "issuer_id": "SEC:CIK:1713979",
+  "name": "TRIFECTA GOLD LTD",
+  "grund": "ISIN offen (keine_aktien_isin_bei_gleif)",
+  "kandidaten": null
+ },
+ {
+  "issuer_id": "SEC:CIK:1715272",
+  "name": "First Canadian Graphite Inc.",
+  "grund": "ISIN offen (keine_aktien_isin_bei_gleif)",
+  "kandidaten": null
+ },
+ {
+  "issuer_id": "SEC:CIK:1715925",
+  "name": "MindWalk Holdings Corp.",
+  "grund": "ISIN offen (kein_lei)",
+  "kandidaten": null
+ },
+ {
+  "issuer_id": "SEC:CIK:1716410",
+  "name": "Global Atomic Corp",
+  "grund": "ISIN offen (kein_lei)",
+  "kandidaten": null
+ },
+ {
+  "issuer_id": "SEC:CIK:1717695",
+  "name": "VR Resources Ltd.",
+  "grund": "ISIN offen (keine_aktien_isin_bei_gleif)",
+  "kandidaten": null
+ },
+ {
+  "issuer_id": "SEC:CIK:1720424",
+  "name": "HIVE Digital Technologies Ltd.",
+  "grund": "ISIN offen (keine_aktien_isin_bei_gleif)",
+  "kandidaten": null
+ },
+ {
+  "issuer_id": "SEC:CIK:1720553",
+  "name": "Phenom Resources Corp.",
+  "grund": "ISIN offen (keine_aktien_isin_bei_gleif)",
+  "kandidaten": null
+ },
+ {
+  "issuer_id": "SEC:CIK:1722387",
+  "name": "Integra Resources Corp.",
+  "grund": "ISIN offen (keine_aktien_isin_bei_gleif)",
+  "kandidaten": null
+ },
+ {
+  "issuer_id": "SEC:CIK:1722606",
+  "name": "Metalla Royalty & Streaming Ltd.",
+  "grund": "ISIN offen (keine_aktien_isin_bei_gleif)",
+  "kandidaten": null
+ },
+ {
+  "issuer_id": "SEC:CIK:1723047",
+  "name": "Viva Gold Corp.",
+  "grund": "ISIN offen (kein_lei)",
+  "kandidaten": null
+ },
+ {
+  "issuer_id": "SEC:CIK:1723455",
+  "name": "SKY GOLD CORP.",
+  "grund": "ISIN offen (kein_lei)",
+  "kandidaten": null
+ },
+ {
+  "issuer_id": "SEC:CIK:1723464",
+  "name": "BIOHARVEST SCIENCES INC.",
+  "grund": "ISIN offen (keine_aktien_isin_bei_gleif)",
+  "kandidaten": null
+ },
+ {
+  "issuer_id": "SEC:CIK:1725569",
+  "name": "Roxmore Resources Inc.",
+  "grund": "ISIN offen (kein_lei)",
+  "kandidaten": null
+ },
+ {
+  "issuer_id": "SEC:CIK:1725603",
+  "name": "A2 Gold Corp.",
+  "grund": "ISIN offen (keine_aktien_isin_bei_gleif)",
+  "kandidaten": null
+ },
+ {
+  "issuer_id": "SEC:CIK:1725964",
+  "name": "Nutrien Ltd.",
+  "grund": "ISIN offen (keine_aktien_isin_bei_gleif)",
+  "kandidaten": null
+ },
+ {
+  "issuer_id": "SEC:CIK:1726122",
+  "name": "Sprott Physical Gold & Silver Trust",
+  "grund": "ISIN offen (keine_aktien_isin_bei_gleif)",
+  "kandidaten": null
+ },
+ {
+  "issuer_id": "SEC:CIK:1726126",
+  "name": "Epsilon Energy Ltd.",
+  "grund": "ISIN offen (kein_lei)",
+  "kandidaten": null
+ },
+ {
+  "issuer_id": "SEC:CIK:1726159",
+  "name": "AMERICAN PACIFIC MINING CORP",
+  "grund": "ISIN offen (keine_aktien_isin_bei_gleif)",
+  "kandidaten": null
+ },
+ {
+  "issuer_id": "SEC:CIK:1727254",
+  "name": "Awale Resources Ltd",
+  "grund": "ISIN offen (kein_lei)",
+  "kandidaten": null
+ },
+ {
+  "issuer_id": "SEC:CIK:1727370",
+  "name": "Sterling Metals Corp.",
+  "grund": "ISIN offen (kein_lei)",
+  "kandidaten": null
+ },
+ {
+  "issuer_id": "SEC:CIK:1728328",
+  "name": "InMed Pharmaceuticals Inc.",
+  "grund": "ISIN offen (keine_aktien_isin_bei_gleif)",
+  "kandidaten": null
+ },
+ {
+  "issuer_id": "SEC:CIK:1729149",
+  "name": "VIEMED HEALTHCARE, INC.",
+  "grund": "ISIN offen (kein_lei)",
+  "kandidaten": null
+ },
+ {
+  "issuer_id": "SEC:CIK:1729214",
+  "name": "XORTX Therapeutics Inc.",
+  "grund": "ISIN offen (keine_aktien_isin_bei_gleif)",
+  "kandidaten": null
+ },
+ {
+  "issuer_id": "SEC:CIK:1729653",
+  "name": "Stallion Uranium Corp.",
+  "grund": "ISIN offen (kein_lei)",
+  "kandidaten": null
+ },
+ {
+  "issuer_id": "SEC:CIK:1731854",
+  "name": "First Andes Silver Ltd.",
+  "grund": "ISIN offen (kein_lei)",
+  "kandidaten": null
+ },
+ {
+  "issuer_id": "SEC:CIK:1732379",
+  "name": "Blue Moon Metals Inc.",
+  "grund": "ISIN offen (keine_aktien_isin_bei_gleif)",
+  "kandidaten": null
+ },
+ {
+  "issuer_id": "SEC:CIK:1733968",
+  "name": "West Red Lake Gold Mines Ltd.",
+  "grund": "ISIN offen (keine_aktien_isin_bei_gleif)",
+  "kandidaten": null
+ },
+ {
+  "issuer_id": "SEC:CIK:1734427",
+  "name": "Colibri Resource Corp",
+  "grund": "ISIN offen (kein_lei)",
+  "kandidaten": null
+ },
+ {
+  "issuer_id": "SEC:CIK:1734520",
+  "name": "Alithya Group inc",
+  "grund": "ISIN offen (keine_aktien_isin_bei_gleif)",
+  "kandidaten": null
+ },
+ {
+  "issuer_id": "SEC:CIK:1735514",
+  "name": "Light AI Inc.",
+  "grund": "ISIN offen (keine_aktien_isin_bei_gleif)",
+  "kandidaten": null
+ },
+ {
+  "issuer_id": "SEC:CIK:1736289",
+  "name": "Route1 Inc.",
+  "grund": "ISIN offen (keine_aktien_isin_bei_gleif)",
+  "kandidaten": null
+ },
+ {
+  "issuer_id": "SEC:CIK:1737270",
+  "name": "Nextech3D.AI Corp.",
+  "grund": "ISIN offen (kein_lei)",
+  "kandidaten": null
+ },
+ {
+  "issuer_id": "SEC:CIK:1737319",
+  "name": "C3 Metals Inc.",
+  "grund": "ISIN offen (keine_aktien_isin_bei_gleif)",
+  "kandidaten": null
+ },
+ {
+  "issuer_id": "SEC:CIK:1737927",
+  "name": "Canopy Growth Corp",
+  "grund": "ISIN offen (kein_lei)",
+  "kandidaten": null
+ },
+ {
+  "issuer_id": "SEC:CIK:1742195",
+  "name": "Rubicon Organics Inc.",
+  "grund": "ISIN offen (keine_aktien_isin_bei_gleif)",
+  "kandidaten": null
+ },
+ {
+  "issuer_id": "SEC:CIK:1743235",
+  "name": "Rio2 Ltd",
+  "grund": "ISIN offen (kein_lei)",
+  "kandidaten": null
+ },
+ {
+  "issuer_id": "SEC:CIK:1748797",
+  "name": "BRP Inc.",
+  "grund": "ISIN offen (keine_aktien_isin_bei_gleif)",
+  "kandidaten": null
+ },
+ {
+  "issuer_id": "SEC:CIK:1750155",
+  "name": "Charlotte's Web Holdings, Inc.",
+  "grund": "ISIN offen (kein_lei)",
+  "kandidaten": null
+ },
+ {
+  "issuer_id": "SEC:CIK:1753368",
+  "name": "Sangoma Technologies Corp",
+  "grund": "ISIN offen (kein_lei)",
+  "kandidaten": null
+ },
+ {
+  "issuer_id": "SEC:CIK:1754180",
+  "name": "VANTA HOLDINGS INC.",
+  "grund": "ISIN offen (kein_lei)",
+  "kandidaten": null
+ },
+ {
+  "issuer_id": "SEC:CIK:1754195",
+  "name": "Trulieve Cannabis Corp.",
+  "grund": "ISIN offen (keine_aktien_isin_bei_gleif)",
+  "kandidaten": null
+ },
+ {
+  "issuer_id": "SEC:CIK:1756607",
+  "name": "Equinox Gold Corp.",
+  "grund": "ISIN offen (keine_aktien_isin_bei_gleif)",
+  "kandidaten": null
+ },
+ {
+  "issuer_id": "SEC:CIK:1756770",
+  "name": "Curaleaf Holdings, Inc.",
+  "grund": "ISIN offen (keine_aktien_isin_bei_gleif)",
+  "kandidaten": null
+ },
+ {
+  "issuer_id": "SEC:CIK:1766600",
+  "name": "SNDL Inc.",
+  "grund": "ISIN offen (kein_lei)",
+  "kandidaten": null
+ },
+ {
+  "issuer_id": "SEC:CIK:1769697",
+  "name": "Frontier Nuclear & Minerals Inc.",
+  "grund": "ISIN offen (kein_lei)",
+  "kandidaten": null
+ },
+ {
+  "issuer_id": "SEC:CIK:1771039",
+  "name": "SILVER SPRUCE RESOURCES INC.",
+  "grund": "ISIN offen (keine_aktien_isin_bei_gleif)",
+  "kandidaten": null
+ },
+ {
+  "issuer_id": "SEC:CIK:1771706",
+  "name": "Vireo Growth Inc.",
+  "grund": "ISIN offen (kein_lei)",
+  "kandidaten": null
+ },
+ {
+  "issuer_id": "SEC:CIK:1771755",
+  "name": "Sekur Private Data Ltd.",
+  "grund": "ISIN offen (kein_lei)",
+  "kandidaten": null
+ },
+ {
+  "issuer_id": "SEC:CIK:1771885",
+  "name": "Quantum Biopharma Ltd.",
+  "grund": "ISIN offen (keine_aktien_isin_bei_gleif)",
+  "kandidaten": null
+ },
+ {
+  "issuer_id": "SEC:CIK:1777765",
+  "name": "VIQ Solutions Inc.",
+  "grund": "ISIN offen (kein_lei)",
+  "kandidaten": null
+ },
+ {
+  "issuer_id": "SEC:CIK:1777917",
+  "name": "BSR Real Estate Investment Trust",
+  "grund": "ISIN offen (keine_aktien_isin_bei_gleif)",
+  "kandidaten": null
+ },
+ {
+  "issuer_id": "SEC:CIK:1778129",
+  "name": "TerrAscend Corp.",
+  "grund": "ISIN offen (keine_aktien_isin_bei_gleif)",
+  "kandidaten": null
+ },
+ {
+  "issuer_id": "SEC:CIK:1778940",
+  "name": "Norsemont Mining Inc.",
+  "grund": "ISIN offen (keine_aktien_isin_bei_gleif)",
+  "kandidaten": null
+ },
+ {
+  "issuer_id": "SEC:CIK:1780232",
+  "name": "GFL Environmental Inc.",
+  "grund": "ISIN offen (keine_aktien_isin_bei_gleif)",
+  "kandidaten": null
+ },
+ {
+  "issuer_id": "SEC:CIK:1783432",
+  "name": "Tectonic Metals Inc.",
+  "grund": "ISIN offen (keine_aktien_isin_bei_gleif)",
+  "kandidaten": null
+ },
+ {
+  "issuer_id": "SEC:CIK:1784930",
+  "name": "Mako Mining Corp.",
+  "grund": "ISIN offen (keine_aktien_isin_bei_gleif)",
+  "kandidaten": null
+ },
+ {
+  "issuer_id": "SEC:CIK:1785476",
+  "name": "King Copper Discovery Corp.",
+  "grund": "ISIN offen (keine_aktien_isin_bei_gleif)",
+  "kandidaten": null
+ },
+ {
+  "issuer_id": "SEC:CIK:1786286",
+  "name": "Draganfly Inc.",
+  "grund": "ISIN offen (keine_aktien_isin_bei_gleif)",
+  "kandidaten": null
+ },
+ {
+  "issuer_id": "SEC:CIK:1786318",
+  "name": "INTERNATIONAL BATTERY METALS LTD.",
+  "grund": "ISIN offen (keine_aktien_isin_bei_gleif)",
+  "kandidaten": null
+ },
+ {
+  "issuer_id": "SEC:CIK:1788348",
+  "name": "Brookfield Infrastructure Corp",
+  "grund": "ISIN offen (kein_lei)",
+  "kandidaten": null
+ },
+ {
+  "issuer_id": "SEC:CIK:1790538",
+  "name": "Scottie Resources Corp.",
+  "grund": "ISIN offen (keine_aktien_isin_bei_gleif)",
+  "kandidaten": null
+ },
+ {
+  "issuer_id": "SEC:CIK:1790607",
+  "name": "Eminent Gold Corp.",
+  "grund": "ISIN offen (keine_aktien_isin_bei_gleif)",
+  "kandidaten": null
+ },
+ {
+  "issuer_id": "SEC:CIK:1790693",
+  "name": "Diagnos Inc.",
+  "grund": "ISIN offen (keine_aktien_isin_bei_gleif)",
+  "kandidaten": null
+ },
+ {
+  "issuer_id": "SEC:CIK:1791703",
+  "name": "Titan Mining Corp",
+  "grund": "ISIN offen (kein_lei)",
+  "kandidaten": null
+ },
+ {
+  "issuer_id": "SEC:CIK:1791863",
+  "name": "Brookfield Renewable Corp",
+  "grund": "ISIN offen (kein_lei)",
+  "kandidaten": null
+ },
+ {
+  "issuer_id": "SEC:CIK:1792030",
+  "name": "IM Cannabis Corp.",
+  "grund": "ISIN offen (kein_lei)",
+  "kandidaten": null
+ },
+ {
+  "issuer_id": "SEC:CIK:1796073",
+  "name": "Vizsla Silver Corp.",
+  "grund": "ISIN offen (keine_aktien_isin_bei_gleif)",
+  "kandidaten": null
+ },
+ {
+  "issuer_id": "SEC:CIK:1798562",
+  "name": "TMC the metals Co Inc.",
+  "grund": "ISIN offen (kein_lei)",
+  "kandidaten": null
+ },
+ {
+  "issuer_id": "SEC:CIK:1800890",
+  "name": "LaFleur Minerals Inc..",
+  "grund": "ISIN offen (kein_lei)",
+  "kandidaten": null
+ },
+ {
+  "issuer_id": "SEC:CIK:1803800",
+  "name": "Talisker Resources Ltd.",
+  "grund": "ISIN offen (keine_aktien_isin_bei_gleif)",
+  "kandidaten": null
+ },
+ {
+  "issuer_id": "SEC:CIK:1804792",
+  "name": "ARES STRATEGIC MINING INC.",
+  "grund": "ISIN offen (keine_aktien_isin_bei_gleif)",
+  "kandidaten": null
+ },
+ {
+  "issuer_id": "SEC:CIK:1807936",
+  "name": "Else Nutrition Holdings Inc.",
+  "grund": "ISIN offen (keine_aktien_isin_bei_gleif)",
+  "kandidaten": null
+ },
+ {
+  "issuer_id": "SEC:CIK:1807983",
+  "name": "Medicenna Therapeutics Corp.",
+  "grund": "ISIN offen (kein_lei)",
+  "kandidaten": null
+ },
+ {
+  "issuer_id": "SEC:CIK:1809267",
+  "name": "Daura Gold Corp.",
+  "grund": "ISIN offen (kein_lei)",
+  "kandidaten": null
+ },
+ {
+  "issuer_id": "SEC:CIK:1811931",
+  "name": "Apollo Silver Corp",
+  "grund": "ISIN offen (keine_aktien_isin_bei_gleif)",
+  "kandidaten": null
+ },
+ {
+  "issuer_id": "SEC:CIK:1813241",
+  "name": "Great Pacific Gold Corp.",
+  "grund": "ISIN offen (keine_aktien_isin_bei_gleif)",
+  "kandidaten": null
+ },
+ {
+  "issuer_id": "SEC:CIK:1813419",
+  "name": "Noble Plains Uranium Corp.",
+  "grund": "ISIN offen (keine_aktien_isin_bei_gleif)",
+  "kandidaten": null
+ },
+ {
+  "issuer_id": "SEC:CIK:1813783",
+  "name": "Vision Marine Technologies Inc.",
+  "grund": "ISIN offen (keine_aktien_isin_bei_gleif)",
+  "kandidaten": null
+ },
+ {
+  "issuer_id": "SEC:CIK:1813814",
+  "name": "Definium Therapeutics, Inc.",
+  "grund": "ISIN offen (kein_lei)",
+  "kandidaten": null
+ },
+ {
+  "issuer_id": "SEC:CIK:1816133",
+  "name": "Frequency Exchange Corp.",
+  "grund": "ISIN offen (keine_aktien_isin_bei_gleif)",
+  "kandidaten": null
+ },
+ {
+  "issuer_id": "SEC:CIK:1817083",
+  "name": "Electric Royalties Ltd.",
+  "grund": "ISIN offen (keine_aktien_isin_bei_gleif)",
+  "kandidaten": null
+ },
+ {
+  "issuer_id": "SEC:CIK:1817161",
+  "name": "Headwater Gold Inc.",
+  "grund": "ISIN offen (keine_aktien_isin_bei_gleif)",
+  "kandidaten": null
+ },
+ {
+  "issuer_id": "SEC:CIK:1817740",
+  "name": "Austin Gold Corp.",
+  "grund": "ISIN offen (keine_aktien_isin_bei_gleif)",
+  "kandidaten": null
+ },
+ {
+  "issuer_id": "SEC:CIK:1819258",
+  "name": "Fitzroy Minerals Inc.",
+  "grund": "ISIN offen (keine_aktien_isin_bei_gleif)",
+  "kandidaten": null
+ },
+ {
+  "issuer_id": "SEC:CIK:1820025",
+  "name": "Ridgeline Minerals Corp",
+  "grund": "ISIN offen (keine_aktien_isin_bei_gleif)",
+  "kandidaten": null
+ },
+ {
+  "issuer_id": "SEC:CIK:1821866",
+  "name": "BTQ Technologies Corp.",
+  "grund": "ISIN offen (keine_aktien_isin_bei_gleif)",
+  "kandidaten": null
+ },
+ {
+  "issuer_id": "SEC:CIK:1823126",
+  "name": "Critical Reagent Processing Corp.",
+  "grund": "ISIN offen (kein_lei)",
+  "kandidaten": null
+ },
+ {
+  "issuer_id": "SEC:CIK:1823255",
+  "name": "MAYFAIR GOLD CORP.",
+  "grund": "ISIN offen (keine_aktien_isin_bei_gleif)",
+  "kandidaten": null
+ },
+ {
+  "issuer_id": "SEC:CIK:1823306",
+  "name": "Lightspeed Commerce Inc.",
+  "grund": "ISIN offen (keine_aktien_isin_bei_gleif)",
+  "kandidaten": null
+ },
+ {
+  "issuer_id": "SEC:CIK:1826397",
+  "name": "AVAX ONE TECHNOLOGY LTD.",
+  "grund": "ISIN offen (kein_lei)",
+  "kandidaten": null
+ },
+ {
+  "issuer_id": "SEC:CIK:1826836",
+  "name": "Aya Gold & Silver Inc.",
+  "grund": "ISIN offen (keine_aktien_isin_bei_gleif)",
+  "kandidaten": null
+ },
+ {
+  "issuer_id": "SEC:CIK:1827401",
+  "name": "BRIGHT MINDS BIOSCIENCES INC.",
+  "grund": "ISIN offen (kein_lei)",
+  "kandidaten": null
+ },
+ {
+  "issuer_id": "SEC:CIK:1829726",
+  "name": "Triple Flag Precious Metals Corp.",
+  "grund": "ISIN offen (keine_aktien_isin_bei_gleif)",
+  "kandidaten": null
+ },
+ {
+  "issuer_id": "SEC:CIK:1829809",
+  "name": "Lux Metals Corp.",
+  "grund": "ISIN offen (keine_aktien_isin_bei_gleif)",
+  "kandidaten": null
+ },
+ {
+  "issuer_id": "SEC:CIK:1829959",
+  "name": "Docebo Inc.",
+  "grund": "ISIN offen (keine_aktien_isin_bei_gleif)",
+  "kandidaten": null
+ },
+ {
+  "issuer_id": "SEC:CIK:1832803",
+  "name": "THESIS GOLD INC.",
+  "grund": "ISIN offen (keine_aktien_isin_bei_gleif)",
+  "kandidaten": null
+ },
+ {
+  "issuer_id": "SEC:CIK:1832928",
+  "name": "Cresco Labs Inc.",
+  "grund": "ISIN offen (keine_aktien_isin_bei_gleif)",
+  "kandidaten": null
+ },
+ {
+  "issuer_id": "SEC:CIK:1833141",
+  "name": "Helus Pharma Inc.",
+  "grund": "ISIN offen (kein_lei)",
+  "kandidaten": null
+ },
+ {
+  "issuer_id": "SEC:CIK:1834026",
+  "name": "Gold Royalty Corp.",
+  "grund": "ISIN offen (keine_aktien_isin_bei_gleif)",
+  "kandidaten": null
+ },
+ {
+  "issuer_id": "SEC:CIK:1836503",
+  "name": "GIANT MINING CORP.",
+  "grund": "ISIN offen (keine_aktien_isin_bei_gleif)",
+  "kandidaten": null
+ },
+ {
+  "issuer_id": "SEC:CIK:1836747",
+  "name": "Red Light Holland Corp.",
+  "grund": "ISIN offen (keine_aktien_isin_bei_gleif)",
+  "kandidaten": null
+ },
+ {
+  "issuer_id": "SEC:CIK:1836775",
+  "name": "Tiny Ltd.",
+  "grund": "ISIN offen (kein_lei)",
+  "kandidaten": null
+ },
+ {
+  "issuer_id": "SEC:CIK:1839154",
+  "name": "Nevada King Gold Corp.",
+  "grund": "ISIN offen (keine_aktien_isin_bei_gleif)",
+  "kandidaten": null
+ },
+ {
+  "issuer_id": "SEC:CIK:1839290",
+  "name": "AU Gold Corp.",
+  "grund": "ISIN offen (kein_lei)",
+  "kandidaten": null
+ },
+ {
+  "issuer_id": "SEC:CIK:1839586",
+  "name": "District Metals Corp.",
+  "grund": "ISIN offen (keine_aktien_isin_bei_gleif)",
+  "kandidaten": null
+ },
+ {
+  "issuer_id": "SEC:CIK:1840616",
+  "name": "New Found Gold Corp.",
+  "grund": "ISIN offen (keine_aktien_isin_bei_gleif)",
+  "kandidaten": null
+ },
+ {
+  "issuer_id": "SEC:CIK:1844450",
+  "name": "Electrovaya Inc.",
+  "grund": "ISIN offen (keine_aktien_isin_bei_gleif)",
+  "kandidaten": null
+ },
+ {
+  "issuer_id": "SEC:CIK:1845840",
+  "name": "Telesat Corp",
+  "grund": "ISIN offen (kein_lei)",
+  "kandidaten": null
+ },
+ {
+  "issuer_id": "SEC:CIK:1846839",
+  "name": "SOL Strategies Inc.",
+  "grund": "ISIN offen (keine_aktien_isin_bei_gleif)",
+  "kandidaten": null
+ },
+ {
+  "issuer_id": "SEC:CIK:1847409",
+  "name": "High Tide Inc.",
+  "grund": "ISIN offen (keine_aktien_isin_bei_gleif)",
+  "kandidaten": null
+ },
+ {
+  "issuer_id": "SEC:CIK:1847706",
+  "name": "Psyched Wellness Ltd.",
+  "grund": "ISIN offen (keine_aktien_isin_bei_gleif)",
+  "kandidaten": null
+ },
+ {
+  "issuer_id": "SEC:CIK:1848309",
+  "name": "Sigma Lithium Corp",
+  "grund": "ISIN offen (keine_aktien_isin_bei_gleif)",
+  "kandidaten": null
+ },
+ {
+  "issuer_id": "SEC:CIK:1848731",
+  "name": "Glass House Brands Inc.",
+  "grund": "ISIN offen (kein_lei)",
+  "kandidaten": null
+ },
+ {
+  "issuer_id": "SEC:CIK:1848782",
+  "name": "Plurilock Security Inc.",
+  "grund": "ISIN offen (keine_aktien_isin_bei_gleif)",
+  "kandidaten": null
+ },
+ {
+  "issuer_id": "SEC:CIK:1850269",
+  "name": "NordX Metals Corp.",
+  "grund": "ISIN offen (kein_lei)",
+  "kandidaten": null
+ },
+ {
+  "issuer_id": "SEC:CIK:1851535",
+  "name": "Lannister Mining Corp.",
+  "grund": "ISIN offen (kein_lei)",
+  "kandidaten": null
+ },
+ {
+  "issuer_id": "SEC:CIK:1852354",
+  "name": "ARGO GRAPHENE SOLUTIONS CORP.",
+  "grund": "ISIN offen (keine_aktien_isin_bei_gleif)",
+  "kandidaten": null
+ },
+ {
+  "issuer_id": "SEC:CIK:1852753",
+  "name": "TIER ONE SILVER INC.",
+  "grund": "ISIN offen (keine_aktien_isin_bei_gleif)",
+  "kandidaten": null
+ },
+ {
+  "issuer_id": "SEC:CIK:1853599",
+  "name": "CORE SILVER CORP.",
+  "grund": "ISIN offen (keine_aktien_isin_bei_gleif)",
+  "kandidaten": null
+ },
+ {
+  "issuer_id": "SEC:CIK:1853860",
+  "name": "Ero Copper Corp.",
+  "grund": "ISIN offen (keine_aktien_isin_bei_gleif)",
+  "kandidaten": null
+ },
+ {
+  "issuer_id": "SEC:CIK:1853889",
+  "name": "Kingfisher Metals Corp.",
+  "grund": "ISIN offen (keine_aktien_isin_bei_gleif)",
+  "kandidaten": null
+ },
+ {
+  "issuer_id": "SEC:CIK:1853962",
+  "name": "i-80 Gold Corp.",
+  "grund": "ISIN offen (keine_aktien_isin_bei_gleif)",
+  "kandidaten": null
+ },
+ {
+  "issuer_id": "SEC:CIK:1854233",
+  "name": "Enthusiast Gaming Holdings Inc. / Canada",
+  "grund": "ISIN offen (kein_lei)",
+  "kandidaten": null
+ },
+ {
+  "issuer_id": "SEC:CIK:1854257",
+  "name": "Tombill Mines Ltd",
+  "grund": "ISIN offen (kein_lei)",
+  "kandidaten": null
+ },
+ {
+  "issuer_id": "SEC:CIK:1854368",
+  "name": "Digi Power X Inc.",
+  "grund": "ISIN offen (kein_lei)",
+  "kandidaten": null
+ },
+ {
+  "issuer_id": "SEC:CIK:1854640",
+  "name": "Centerra Gold Inc.",
+  "grund": "ISIN offen (keine_aktien_isin_bei_gleif)",
+  "kandidaten": null
+ },
+ {
+  "issuer_id": "SEC:CIK:1855743",
+  "name": "ARRAS MINERALS CORP.",
+  "grund": "ISIN offen (keine_aktien_isin_bei_gleif)",
+  "kandidaten": null
+ },
+ {
+  "issuer_id": "SEC:CIK:1856082",
+  "name": "RPX Gold Inc.",
+  "grund": "ISIN offen (kein_lei)",
+  "kandidaten": null
+ },
+ {
+  "issuer_id": "SEC:CIK:1857047",
+  "name": "MDA Space Ltd.",
+  "grund": "ISIN offen (keine_aktien_isin_bei_gleif)",
+  "kandidaten": null
+ },
+ {
+  "issuer_id": "SEC:CIK:1858994",
+  "name": "Regency Silver Corp.",
+  "grund": "ISIN offen (keine_aktien_isin_bei_gleif)",
+  "kandidaten": null
+ },
+ {
+  "issuer_id": "SEC:CIK:1859022",
+  "name": "Nepra Foods Inc.",
+  "grund": "ISIN offen (keine_aktien_isin_bei_gleif)",
+  "kandidaten": null
+ },
+ {
+  "issuer_id": "SEC:CIK:1860805",
+  "name": "Algoma Steel Group Inc.",
+  "grund": "ISIN offen (keine_aktien_isin_bei_gleif)",
+  "kandidaten": null
+ },
+ {
+  "issuer_id": "SEC:CIK:1861233",
+  "name": "illumin Holdings Inc.",
+  "grund": "ISIN offen (kein_lei)",
+  "kandidaten": null
+ },
+ {
+  "issuer_id": "SEC:CIK:1861479",
+  "name": "Terra Rossa Gold Ltd.",
+  "grund": "ISIN offen (keine_aktien_isin_bei_gleif)",
+  "kandidaten": null
+ },
+ {
+  "issuer_id": "SEC:CIK:1862461",
+  "name": "REAL BROKERAGE INC",
+  "grund": "ISIN offen (keine_aktien_isin_bei_gleif)",
+  "kandidaten": null
+ },
+ {
+  "issuer_id": "SEC:CIK:1862461",
+  "name": "REAL BROKERAGE INC",
+  "grund": "kein Börsenkürzel laut SEC (nur Formular)"
+ },
+ {
+  "issuer_id": "SEC:CIK:1863934",
+  "name": "ADURO CLEAN TECHNOLOGIES INC.",
+  "grund": "ISIN offen (keine_aktien_isin_bei_gleif)",
+  "kandidaten": null
+ },
+ {
+  "issuer_id": "SEC:CIK:1864597",
+  "name": "Tincorp Metals Inc.",
+  "grund": "ISIN offen (keine_aktien_isin_bei_gleif)",
+  "kandidaten": null
+ },
+ {
+  "issuer_id": "SEC:CIK:1866030",
+  "name": "A2Z CUST2MATE SOLUTIONS CORP.",
+  "grund": "ISIN offen (kein_lei)",
+  "kandidaten": null
+ },
+ {
+  "issuer_id": "SEC:CIK:1866034",
+  "name": "Ameriwest Critical Metals Inc.",
+  "grund": "ISIN offen (keine_aktien_isin_bei_gleif)",
+  "kandidaten": null
+ },
+ {
+  "issuer_id": "SEC:CIK:1866146",
+  "name": "Interra Copper Corp.",
+  "grund": "ISIN offen (keine_aktien_isin_bei_gleif)",
+  "kandidaten": null
+ },
+ {
+  "issuer_id": "SEC:CIK:1866460",
+  "name": "Military Metals Corp.",
+  "grund": "ISIN offen (keine_aktien_isin_bei_gleif)",
+  "kandidaten": null
+ },
+ {
+  "issuer_id": "SEC:CIK:1867834",
+  "name": "Bragg Gaming Group Inc.",
+  "grund": "ISIN offen (keine_aktien_isin_bei_gleif)",
+  "kandidaten": null
+ },
+ {
+  "issuer_id": "SEC:CIK:1868050",
+  "name": "CopperCorp Resources Inc.",
+  "grund": "ISIN offen (kein_lei)",
+  "kandidaten": null
+ },
+ {
+  "issuer_id": "SEC:CIK:1868866",
+  "name": "SILVER HAMMER MINING CORP",
+  "grund": "ISIN offen (keine_aktien_isin_bei_gleif)",
+  "kandidaten": null
+ },
+ {
+  "issuer_id": "SEC:CIK:1869137",
+  "name": "MineHub Technologies Inc.",
+  "grund": "ISIN offen (keine_aktien_isin_bei_gleif)",
+  "kandidaten": null
+ },
+ {
+  "issuer_id": "SEC:CIK:1871130",
+  "name": "Brookfield Business Holdings Corp",
+  "grund": "ISIN offen (kein_lei)",
+  "kandidaten": null
+ },
+ {
+  "issuer_id": "SEC:CIK:1871130",
+  "name": "Brookfield Business Holdings Corp",
+  "grund": "kein Börsenkürzel laut SEC (nur Formular)"
+ },
+ {
+  "issuer_id": "SEC:CIK:1872061",
+  "name": "Volt Lithium Corp.",
+  "grund": "ISIN offen (kein_lei)",
+  "kandidaten": null
+ },
+ {
+  "issuer_id": "SEC:CIK:1877778",
+  "name": "Thiogenesis Therapeutics, Corp.",
+  "grund": "ISIN offen (keine_aktien_isin_bei_gleif)",
+  "kandidaten": null
+ },
+ {
+  "issuer_id": "SEC:CIK:1884122",
+  "name": "Vizsla Copper Corp.",
+  "grund": "ISIN offen (keine_aktien_isin_bei_gleif)",
+  "kandidaten": null
+ },
+ {
+  "issuer_id": "SEC:CIK:1888014",
+  "name": "AKANDA CORP.",
+  "grund": "ISIN offen (keine_aktien_isin_bei_gleif)",
+  "kandidaten": null
+ },
+ {
+  "issuer_id": "SEC:CIK:1888151",
+  "name": "Femto Technologies Inc.",
+  "grund": "ISIN offen (kein_lei)",
+  "kandidaten": null
+ },
+ {
+  "issuer_id": "SEC:CIK:1889352",
+  "name": "COMPREHENSIVE HEALTHCARE SYSTEMS INC. (CANADA)",
+  "grund": "ISIN offen (kein_lei)",
+  "kandidaten": null
+ },
+ {
+  "issuer_id": "SEC:CIK:1889791",
+  "name": "INNOCAN PHARMA Corp",
+  "grund": "ISIN offen (kein_lei)",
+  "kandidaten": null
+ },
+ {
+  "issuer_id": "SEC:CIK:1889823",
+  "name": "DEFSEC Technologies Inc.",
+  "grund": "ISIN offen (kein_lei)",
+  "kandidaten": null
+ },
+ {
+  "issuer_id": "SEC:CIK:1891512",
+  "name": "Adastra Holdings Ltd.",
+  "grund": "ISIN offen (kein_lei)",
+  "kandidaten": null
+ },
+ {
+  "issuer_id": "SEC:CIK:1892274",
+  "name": "Visionary Holdings Inc.",
+  "grund": "ISIN offen (kein_lei)",
+  "kandidaten": null
+ },
+ {
+  "issuer_id": "SEC:CIK:1892274",
+  "name": "Visionary Holdings Inc.",
+  "grund": "kein Börsenkürzel laut SEC (nur Formular)"
+ },
+ {
+  "issuer_id": "SEC:CIK:1892500",
+  "name": "Clearmind Medicine Inc.",
+  "grund": "ISIN offen (keine_aktien_isin_bei_gleif)",
+  "kandidaten": null
+ },
+ {
+  "issuer_id": "SEC:CIK:1893899",
+  "name": "Alaska Silver Corp.",
+  "grund": "ISIN offen (keine_aktien_isin_bei_gleif)",
+  "kandidaten": null
+ },
+ {
+  "issuer_id": "SEC:CIK:1894942",
+  "name": "Fresh Factory B.C. Ltd.",
+  "grund": "ISIN offen (kein_lei)",
+  "kandidaten": null
+ },
+ {
+  "issuer_id": "SEC:CIK:1896752",
+  "name": "Sabio Holdings Inc.",
+  "grund": "ISIN offen (keine_aktien_isin_bei_gleif)",
+  "kandidaten": null
+ },
+ {
+  "issuer_id": "SEC:CIK:1898722",
+  "name": "Modern Mining Technology Corp.",
+  "grund": "ISIN offen (kein_lei)",
+  "kandidaten": null
+ },
+ {
+  "issuer_id": "SEC:CIK:1901931",
+  "name": "Kalo Gold Corp.",
+  "grund": "ISIN offen (keine_aktien_isin_bei_gleif)",
+  "kandidaten": null
+ },
+ {
+  "issuer_id": "SEC:CIK:1902276",
+  "name": "World Copper Ltd.",
+  "grund": "ISIN offen (keine_aktien_isin_bei_gleif)",
+  "kandidaten": null
+ },
+ {
+  "issuer_id": "SEC:CIK:1904501",
+  "name": "Zentek Ltd.",
+  "grund": "ISIN offen (kein_lei)",
+  "kandidaten": null
+ },
+ {
+  "issuer_id": "SEC:CIK:1904856",
+  "name": "Enerflex Ltd.",
+  "grund": "ISIN offen (keine_aktien_isin_bei_gleif)",
+  "kandidaten": null
+ },
+ {
+  "issuer_id": "SEC:CIK:1905688",
+  "name": "AERO ENERGY Ltd",
+  "grund": "ISIN offen (keine_aktien_isin_bei_gleif)",
+  "kandidaten": null
+ },
+ {
+  "issuer_id": "SEC:CIK:1907184",
+  "name": "Electra Battery Materials Corp",
+  "grund": "ISIN offen (keine_aktien_isin_bei_gleif)",
+  "kandidaten": null
+ },
+ {
+  "issuer_id": "SEC:CIK:1907909",
+  "name": "VOX ROYALTY CORP.",
+  "grund": "ISIN offen (kein_lei)",
+  "kandidaten": null
+ },
+ {
+  "issuer_id": "SEC:CIK:1909747",
+  "name": "Jushi Holdings Inc.",
+  "grund": "ISIN offen (kein_lei)",
+  "kandidaten": null
+ },
+ {
+  "issuer_id": "SEC:CIK:1910903",
+  "name": "Scotia Metals Corp.",
+  "grund": "ISIN offen (kein_lei)",
+  "kandidaten": null
+ },
+ {
+  "issuer_id": "SEC:CIK:1913288",
+  "name": "Bravo Mining Corp.",
+  "grund": "ISIN offen (kein_lei)",
+  "kandidaten": null
+ },
+ {
+  "issuer_id": "SEC:CIK:1917817",
+  "name": "Sylla Gold Corp.",
+  "grund": "ISIN offen (kein_lei)",
+  "kandidaten": null
+ },
+ {
+  "issuer_id": "SEC:CIK:1918151",
+  "name": "Relevant Gold Corp.",
+  "grund": "ISIN offen (kein_lei)",
+  "kandidaten": null
+ },
+ {
+  "issuer_id": "SEC:CIK:1919776",
+  "name": "LIBERTY DEFENSE HOLDINGS, LTD.",
+  "grund": "ISIN offen (keine_aktien_isin_bei_gleif)",
+  "kandidaten": null
+ },
+ {
+  "issuer_id": "SEC:CIK:1920576",
+  "name": "MiMedia Holdings Inc.",
+  "grund": "ISIN offen (kein_lei)",
+  "kandidaten": null
+ },
+ {
+  "issuer_id": "SEC:CIK:1921050",
+  "name": "Tudor Gold Corp.",
+  "grund": "ISIN offen (keine_aktien_isin_bei_gleif)",
+  "kandidaten": null
+ },
+ {
+  "issuer_id": "SEC:CIK:1921582",
+  "name": "Lahontan Gold Corp.",
+  "grund": "ISIN offen (keine_aktien_isin_bei_gleif)",
+  "kandidaten": null
+ },
+ {
+  "issuer_id": "SEC:CIK:1925511",
+  "name": "Rua Gold Inc.",
+  "grund": "ISIN offen (kein_lei)",
+  "kandidaten": null
+ },
+ {
+  "issuer_id": "SEC:CIK:1927026",
+  "name": "One Bullion Ltd",
+  "grund": "ISIN offen (kein_lei)",
+  "kandidaten": null
+ },
+ {
+  "issuer_id": "SEC:CIK:1928722",
+  "name": "PopReach Corp",
+  "grund": "ISIN offen (keine_aktien_isin_bei_gleif)",
+  "kandidaten": null
+ },
+ {
+  "issuer_id": "SEC:CIK:1929908",
+  "name": "Black Mammoth Metals Corp",
+  "grund": "ISIN offen (kein_lei)",
+  "kandidaten": null
+ },
+ {
+  "issuer_id": "SEC:CIK:1930021",
+  "name": "New Horizon Aircraft Ltd.",
+  "grund": "ISIN offen (kein_lei)",
+  "kandidaten": null
+ },
+ {
+  "issuer_id": "SEC:CIK:1930459",
+  "name": "Pampa Metals Corp",
+  "grund": "ISIN offen (kein_lei)",
+  "kandidaten": null
+ },
+ {
+  "issuer_id": "SEC:CIK:1935418",
+  "name": "Foremost Clean Energy Ltd.",
+  "grund": "ISIN offen (kein_lei)",
+  "kandidaten": null
+ },
+ {
+  "issuer_id": "SEC:CIK:1937453",
+  "name": "First American Uranium Inc.",
+  "grund": "ISIN offen (keine_aktien_isin_bei_gleif)",
+  "kandidaten": null
+ },
+ {
+  "issuer_id": "SEC:CIK:1937926",
+  "name": "Brookfield Asset Management Ltd.",
+  "grund": "ISIN offen (kein_lei)",
+  "kandidaten": null
+ },
+ {
+  "issuer_id": "SEC:CIK:1938109",
+  "name": "Pineapple Financial Inc.",
+  "grund": "ISIN offen (keine_aktien_isin_bei_gleif)",
+  "kandidaten": null
+ },
+ {
+  "issuer_id": "SEC:CIK:1939801",
+  "name": "SIERRA MADRE GOLD & SILVER LTD.",
+  "grund": "ISIN offen (keine_aktien_isin_bei_gleif)",
+  "kandidaten": null
+ },
+ {
+  "issuer_id": "SEC:CIK:1944955",
+  "name": "FIRST NORDIC METALS CORP.",
+  "grund": "ISIN offen (keine_aktien_isin_bei_gleif)",
+  "kandidaten": null
+ },
+ {
+  "issuer_id": "SEC:CIK:1945166",
+  "name": "MUSTANG ENERGY CORP.",
+  "grund": "ISIN offen (keine_aktien_isin_bei_gleif)",
+  "kandidaten": null
+ },
+ {
+  "issuer_id": "SEC:CIK:1951593",
+  "name": "Ninepoint Energy Fund",
+  "grund": "ISIN offen (keine_aktien_isin_bei_gleif)",
+  "kandidaten": null
+ },
+ {
+  "issuer_id": "SEC:CIK:1953575",
+  "name": "Collective Mining Ltd.",
+  "grund": "ISIN offen (keine_aktien_isin_bei_gleif)",
+  "kandidaten": null
+ },
+ {
+  "issuer_id": "SEC:CIK:1958389",
+  "name": "Hydreight Technologies Inc.",
+  "grund": "ISIN offen (keine_aktien_isin_bei_gleif)",
+  "kandidaten": null
+ },
+ {
+  "issuer_id": "SEC:CIK:1961592",
+  "name": "Gold X2 Mining Inc.",
+  "grund": "ISIN offen (keine_aktien_isin_bei_gleif)",
+  "kandidaten": null
+ },
+ {
+  "issuer_id": "SEC:CIK:1964504",
+  "name": "Aris Mining Corp",
+  "grund": "ISIN offen (keine_aktien_isin_bei_gleif)",
+  "kandidaten": null
+ },
+ {
+  "issuer_id": "SEC:CIK:1965615",
+  "name": "MAGNA MINING INC.",
+  "grund": "ISIN offen (keine_aktien_isin_bei_gleif)",
+  "kandidaten": null
+ },
+ {
+  "issuer_id": "SEC:CIK:1966287",
+  "name": "Greenfire Resources Ltd.",
+  "grund": "ISIN offen (keine_aktien_isin_bei_gleif)",
+  "kandidaten": null
+ },
+ {
+  "issuer_id": "SEC:CIK:1966983",
+  "name": "LITHIUM AMERICAS CORP.",
+  "grund": "ISIN offen (keine_aktien_isin_bei_gleif)",
+  "kandidaten": null
+ },
+ {
+  "issuer_id": "SEC:CIK:1969766",
+  "name": "Asep Medical Holdings Inc.",
+  "grund": "ISIN offen (keine_aktien_isin_bei_gleif)",
+  "kandidaten": null
+ },
+ {
+  "issuer_id": "SEC:CIK:1970125",
+  "name": "FENDX TECHNOLOGIES INC.",
+  "grund": "ISIN offen (keine_aktien_isin_bei_gleif)",
+  "kandidaten": null
+ },
+ {
+  "issuer_id": "SEC:CIK:1971260",
+  "name": "Cloud3 Ventures Inc.",
+  "grund": "ISIN offen (keine_aktien_isin_bei_gleif)",
+  "kandidaten": null
+ },
+ {
+  "issuer_id": "SEC:CIK:1971975",
+  "name": "Abaxx Technologies Inc.",
+  "grund": "ISIN offen (keine_aktien_isin_bei_gleif)",
+  "kandidaten": null
+ },
+ {
+  "issuer_id": "SEC:CIK:1972589",
+  "name": "TDG Gold Corp.",
+  "grund": "ISIN offen (keine_aktien_isin_bei_gleif)",
+  "kandidaten": null
+ },
+ {
+  "issuer_id": "SEC:CIK:1977971",
+  "name": "Altura Energy Corp.",
+  "grund": "ISIN offen (kein_lei)",
+  "kandidaten": null
+ },
+ {
+  "issuer_id": "SEC:CIK:1978151",
+  "name": "Eat & Beyond Global Holdings Inc.",
+  "grund": "ISIN offen (keine_aktien_isin_bei_gleif)",
+  "kandidaten": null
+ },
+ {
+  "issuer_id": "SEC:CIK:1978165",
+  "name": "LITHOS GROUP LTD.",
+  "grund": "ISIN offen (keine_aktien_isin_bei_gleif)",
+  "kandidaten": null
+ },
+ {
+  "issuer_id": "SEC:CIK:1979408",
+  "name": "STLLR Gold Inc.",
+  "grund": "ISIN offen (kein_lei)",
+  "kandidaten": null
+ },
+ {
+  "issuer_id": "SEC:CIK:1979484",
+  "name": "Above Food Ingredients Inc.",
+  "grund": "ISIN offen (keine_aktien_isin_bei_gleif)",
+  "kandidaten": null
+ },
+ {
+  "issuer_id": "SEC:CIK:1980845",
+  "name": "enGene Therapeutics Inc.",
+  "grund": "ISIN offen (keine_aktien_isin_bei_gleif)",
+  "kandidaten": null
+ },
+ {
+  "issuer_id": "SEC:CIK:1981775",
+  "name": "V Ten Metals Corp.",
+  "grund": "ISIN offen (keine_aktien_isin_bei_gleif)",
+  "kandidaten": null
+ },
+ {
+  "issuer_id": "SEC:CIK:1985062",
+  "name": "PSYENCE BIOMEDICAL LTD.",
+  "grund": "ISIN offen (kein_lei)",
+  "kandidaten": null
+ },
+ {
+  "issuer_id": "SEC:CIK:1989815",
+  "name": "Targa Exploration Corp.",
+  "grund": "ISIN offen (keine_aktien_isin_bei_gleif)",
+  "kandidaten": null
+ },
+ {
+  "issuer_id": "SEC:CIK:1991413",
+  "name": "Pulsar Helium Inc.",
+  "grund": "ISIN offen (keine_aktien_isin_bei_gleif)",
+  "kandidaten": null
+ },
+ {
+  "issuer_id": "SEC:CIK:1992500",
+  "name": "Lion Rock Resources Inc.",
+  "grund": "ISIN offen (kein_lei)",
+  "kandidaten": null
+ },
+ {
+  "issuer_id": "SEC:CIK:1992604",
+  "name": "CanCambria Energy Corp.",
+  "grund": "ISIN offen (keine_aktien_isin_bei_gleif)",
+  "kandidaten": null
+ },
+ {
+  "issuer_id": "SEC:CIK:1993344",
+  "name": "Allied Gold Corp",
+  "grund": "ISIN offen (kein_lei)",
+  "kandidaten": null
+ },
+ {
+  "issuer_id": "SEC:CIK:1993727",
+  "name": "Senstar Technologies Corp",
+  "grund": "ISIN offen (kein_lei)",
+  "kandidaten": null
+ },
+ {
+  "issuer_id": "SEC:CIK:1996586",
+  "name": "Canter Resources Corp.",
+  "grund": "ISIN offen (keine_aktien_isin_bei_gleif)",
+  "kandidaten": null
+ },
+ {
+  "issuer_id": "SEC:CIK:1997296",
+  "name": "Medicus Pharma Ltd.",
+  "grund": "ISIN offen (keine_aktien_isin_bei_gleif)",
+  "kandidaten": null
+ },
+ {
+  "issuer_id": "SEC:CIK:1997377",
+  "name": "IsoEnergy Ltd.",
+  "grund": "ISIN offen (keine_aktien_isin_bei_gleif)",
+  "kandidaten": null
+ },
+ {
+  "issuer_id": "SEC:CIK:1997403",
+  "name": "ZenaTech, Inc.",
+  "grund": "ISIN offen (keine_aktien_isin_bei_gleif)",
+  "kandidaten": null
+ },
+ {
+  "issuer_id": "SEC:CIK:1999111",
+  "name": "Meta Critical Minerals Inc.",
+  "grund": "ISIN offen (kein_lei)",
+  "kandidaten": null
+ },
+ {
+  "issuer_id": "SEC:CIK:1999124",
+  "name": "Healwell AI Inc.",
+  "grund": "ISIN offen (keine_aktien_isin_bei_gleif)",
+  "kandidaten": null
+ },
+ {
+  "issuer_id": "SEC:CIK:2000684",
+  "name": "Devonian Health Group Inc.",
+  "grund": "ISIN offen (kein_lei)",
+  "kandidaten": null
+ },
+ {
+  "issuer_id": "SEC:CIK:2001201",
+  "name": "Fuerte Metals Corp",
+  "grund": "ISIN offen (keine_aktien_isin_bei_gleif)",
+  "kandidaten": null
+ },
+ {
+  "issuer_id": "SEC:CIK:2002326",
+  "name": "North Shore Uranium Ltd.",
+  "grund": "ISIN offen (kein_lei)",
+  "kandidaten": null
+ },
+ {
+  "issuer_id": "SEC:CIK:2003813",
+  "name": "Nuvau Minerals Corp",
+  "grund": "ISIN offen (kein_lei)",
+  "kandidaten": null
+ },
+ {
+  "issuer_id": "SEC:CIK:2006413",
+  "name": "Dryden Gold Corp.",
+  "grund": "ISIN offen (keine_aktien_isin_bei_gleif)",
+  "kandidaten": null
+ },
+ {
+  "issuer_id": "SEC:CIK:2008257",
+  "name": "KO Gold Inc.",
+  "grund": "ISIN offen (keine_aktien_isin_bei_gleif)",
+  "kandidaten": null
+ },
+ {
+  "issuer_id": "SEC:CIK:2011053",
+  "name": "POWERBANK Corp",
+  "grund": "ISIN offen (kein_lei)",
+  "kandidaten": null
+ },
+ {
+  "issuer_id": "SEC:CIK:2011589",
+  "name": "Mogotes Metals Inc.",
+  "grund": "ISIN offen (keine_aktien_isin_bei_gleif)",
+  "kandidaten": null
+ },
+ {
+  "issuer_id": "SEC:CIK:2013223",
+  "name": "Highlander Silver Corp.",
+  "grund": "ISIN offen (keine_aktien_isin_bei_gleif)",
+  "kandidaten": null
+ },
+ {
+  "issuer_id": "SEC:CIK:2019061",
+  "name": "South Bow Corp",
+  "grund": "ISIN offen (kein_lei)",
+  "kandidaten": null
+ },
+ {
+  "issuer_id": "SEC:CIK:2021989",
+  "name": "Super Copper Corp.",
+  "grund": "ISIN offen (keine_aktien_isin_bei_gleif)",
+  "kandidaten": null
+ },
+ {
+  "issuer_id": "SEC:CIK:2022059",
+  "name": "Silver Mountain Resources, Inc.",
+  "grund": "ISIN offen (keine_aktien_isin_bei_gleif)",
+  "kandidaten": null
+ },
+ {
+  "issuer_id": "SEC:CIK:2025947",
+  "name": "Tantalus Systems Holding Inc.",
+  "grund": "ISIN offen (kein_lei)",
+  "kandidaten": null
+ },
+ {
+  "issuer_id": "SEC:CIK:2027037",
+  "name": "Gemdale Gold, Inc",
+  "grund": "ISIN offen (kein_lei)",
+  "kandidaten": null
+ },
+ {
+  "issuer_id": "SEC:CIK:2027329",
+  "name": "Optimi Health Corp.",
+  "grund": "ISIN offen (keine_aktien_isin_bei_gleif)",
+  "kandidaten": null
+ },
+ {
+  "issuer_id": "SEC:CIK:2037786",
+  "name": "Tactical Resources Corp.",
+  "grund": "ISIN offen (keine_aktien_isin_bei_gleif)",
+  "kandidaten": null
+ },
+ {
+  "issuer_id": "SEC:CIK:2037786",
+  "name": "Tactical Resources Corp.",
+  "grund": "kein Börsenkürzel laut SEC (nur Formular)"
+ },
+ {
+  "issuer_id": "SEC:CIK:2039273",
+  "name": "Jaguar Uranium Corp.",
+  "grund": "ISIN offen (kein_lei)",
+  "kandidaten": null
+ },
+ {
+  "issuer_id": "SEC:CIK:2041208",
+  "name": "Tactical Resources Corp.",
+  "grund": "ISIN offen (keine_aktien_isin_bei_gleif)",
+  "kandidaten": null
+ },
+ {
+  "issuer_id": "SEC:CIK:2044153",
+  "name": "NGEx Minerals Ltd.",
+  "grund": "ISIN offen (keine_aktien_isin_bei_gleif)",
+  "kandidaten": null
+ },
+ {
+  "issuer_id": "SEC:CIK:2045300",
+  "name": "Prince Silver Corp.",
+  "grund": "ISIN offen (keine_aktien_isin_bei_gleif)",
+  "kandidaten": null
+ },
+ {
+  "issuer_id": "SEC:CIK:2045434",
+  "name": "Greenheart Gold Inc.",
+  "grund": "ISIN offen (kein_lei)",
+  "kandidaten": null
+ },
+ {
+  "issuer_id": "SEC:CIK:2046223",
+  "name": "Cerro de Pasco Resources Inc.",
+  "grund": "ISIN offen (keine_aktien_isin_bei_gleif)",
+  "kandidaten": null
+ },
+ {
+  "issuer_id": "SEC:CIK:2048847",
+  "name": "Fairchild Gold Corp.",
+  "grund": "ISIN offen (keine_aktien_isin_bei_gleif)",
+  "kandidaten": null
+ },
+ {
+  "issuer_id": "SEC:CIK:2048958",
+  "name": "Stardust Solar Energy Inc.",
+  "grund": "ISIN offen (keine_aktien_isin_bei_gleif)",
+  "kandidaten": null
+ },
+ {
+  "issuer_id": "SEC:CIK:2049560",
+  "name": "American Tungsten Corp.",
+  "grund": "ISIN offen (keine_aktien_isin_bei_gleif)",
+  "kandidaten": null
+ },
+ {
+  "issuer_id": "SEC:CIK:2055938",
+  "name": "GreenLight Metals Inc.",
+  "grund": "ISIN offen (keine_aktien_isin_bei_gleif)",
+  "kandidaten": null
+ },
+ {
+  "issuer_id": "SEC:CIK:2056030",
+  "name": "South Pacific Metals Corp.",
+  "grund": "ISIN offen (keine_aktien_isin_bei_gleif)",
+  "kandidaten": null
+ },
+ {
+  "issuer_id": "SEC:CIK:2056751",
+  "name": "Recharge Resources Ltd.",
+  "grund": "ISIN offen (keine_aktien_isin_bei_gleif)",
+  "kandidaten": null
+ },
+ {
+  "issuer_id": "SEC:CIK:2065282",
+  "name": "Allied Critical Metals Corp.",
+  "grund": "ISIN offen (kein_lei)",
+  "kandidaten": null
+ },
+ {
+  "issuer_id": "SEC:CIK:2067171",
+  "name": "IDEX METALS CORP.",
+  "grund": "ISIN offen (keine_aktien_isin_bei_gleif)",
+  "kandidaten": null
+ },
+ {
+  "issuer_id": "SEC:CIK:2067674",
+  "name": "SILVER BOW MINING CORP.",
+  "grund": "ISIN offen (keine_aktien_isin_bei_gleif)",
+  "kandidaten": null
+ },
+ {
+  "issuer_id": "SEC:CIK:2068441",
+  "name": "Strathcona Resources Ltd.",
+  "grund": "ISIN offen (keine_aktien_isin_bei_gleif)",
+  "kandidaten": null
+ },
+ {
+  "issuer_id": "SEC:CIK:2071881",
+  "name": "Tourmaline Oil Corp/ADR",
+  "grund": "ISIN offen (kein_lei)",
+  "kandidaten": null
+ },
+ {
+  "issuer_id": "SEC:CIK:2071911",
+  "name": "Capital Power Corp/ADR",
+  "grund": "ISIN offen (kein_lei)",
+  "kandidaten": null
+ },
+ {
+  "issuer_id": "SEC:CIK:2071912",
+  "name": "PrairieSky Royalty Ltd/ADR",
+  "grund": "ISIN offen (kein_lei)",
+  "kandidaten": null
+ },
+ {
+  "issuer_id": "SEC:CIK:2071913",
+  "name": "Gibson Energy Inc/ADR",
+  "grund": "ISIN offen (kein_lei)",
+  "kandidaten": null
+ },
+ {
+  "issuer_id": "SEC:CIK:2072098",
+  "name": "Toromont Industries Ltd./ADR",
+  "grund": "ISIN offen (kein_lei)",
+  "kandidaten": null
+ },
+ {
+  "issuer_id": "SEC:CIK:2072389",
+  "name": "Northland Power Inc./ADR",
+  "grund": "ISIN offen (kein_lei)",
+  "kandidaten": null
+ },
+ {
+  "issuer_id": "SEC:CIK:2072563",
+  "name": "Saputo Inc./ADR",
+  "grund": "ISIN offen (kein_lei)",
+  "kandidaten": null
+ },
+ {
+  "issuer_id": "SEC:CIK:2073268",
+  "name": "Birchcliff Energy Ltd./ADR",
+  "grund": "ISIN offen (kein_lei)",
+  "kandidaten": null
+ },
+ {
+  "issuer_id": "SEC:CIK:2073615",
+  "name": "Element Fleet Management Corp./ADR",
+  "grund": "ISIN offen (kein_lei)",
+  "kandidaten": null
+ },
+ {
+  "issuer_id": "SEC:CIK:2073620",
+  "name": "Parex Resources Inc./ADR",
+  "grund": "ISIN offen (kein_lei)",
+  "kandidaten": null
+ },
+ {
+  "issuer_id": "SEC:CIK:2073638",
+  "name": "Finning International Inc./ADR",
+  "grund": "ISIN offen (kein_lei)",
+  "kandidaten": null
+ },
+ {
+  "issuer_id": "SEC:CIK:2073643",
+  "name": "METRO INC./ADR",
+  "grund": "ISIN offen (kein_lei)",
+  "kandidaten": null
+ },
+ {
+  "issuer_id": "SEC:CIK:2073655",
+  "name": "Topaz Energy Corp./ADR",
+  "grund": "ISIN offen (kein_lei)",
+  "kandidaten": null
+ },
+ {
+  "issuer_id": "SEC:CIK:2073893",
+  "name": "Dollarama Inc./ADR",
+  "grund": "ISIN offen (kein_lei)",
+  "kandidaten": null
+ },
+ {
+  "issuer_id": "SEC:CIK:2073901",
+  "name": "Tamarack Valley Energy Ltd./ADR",
+  "grund": "ISIN offen (kein_lei)",
+  "kandidaten": null
+ },
+ {
+  "issuer_id": "SEC:CIK:2073913",
+  "name": "North West Co Inc./ADR",
+  "grund": "ISIN offen (kein_lei)",
+  "kandidaten": null
+ },
+ {
+  "issuer_id": "SEC:CIK:2073972",
+  "name": "Sienna Senior Living Inc./ADR",
+  "grund": "ISIN offen (kein_lei)",
+  "kandidaten": null
+ },
+ {
+  "issuer_id": "SEC:CIK:2074059",
+  "name": "Winpak Ltd./ADR",
+  "grund": "ISIN offen (kein_lei)",
+  "kandidaten": null
+ },
+ {
+  "issuer_id": "SEC:CIK:2074157",
+  "name": "StorageVault Canada Inc./ADR",
+  "grund": "ISIN offen (kein_lei)",
+  "kandidaten": null
+ },
+ {
+  "issuer_id": "SEC:CIK:2074745",
+  "name": "Viridian Metals Inc.",
+  "grund": "ISIN offen (keine_aktien_isin_bei_gleif)",
+  "kandidaten": null
+ },
+ {
+  "issuer_id": "SEC:CIK:2074850",
+  "name": "General Fusion Group Ltd.",
+  "grund": "ISIN offen (kein_lei)",
+  "kandidaten": null
+ },
+ {
+  "issuer_id": "SEC:CIK:2075335",
+  "name": "ROZE AI INC.",
+  "grund": "ISIN offen (kein_lei)",
+  "kandidaten": null
+ },
+ {
+  "issuer_id": "SEC:CIK:2075918",
+  "name": "Capstone Copper Corp./ADR",
+  "grund": "ISIN offen (kein_lei)",
+  "kandidaten": null
+ },
+ {
+  "issuer_id": "SEC:CIK:2076631",
+  "name": "AMAROQ LTD.",
+  "grund": "ISIN offen (keine_aktien_isin_bei_gleif)",
+  "kandidaten": null
+ },
+ {
+  "issuer_id": "SEC:CIK:2077242",
+  "name": "Stella-Jones Inc./ADR",
+  "grund": "ISIN offen (kein_lei)",
+  "kandidaten": null
+ },
+ {
+  "issuer_id": "SEC:CIK:2080023",
+  "name": "NorthStar Earth & Space Enterprises, Inc.",
+  "grund": "ISIN offen (kein_lei)",
+  "kandidaten": null
+ },
+ {
+  "issuer_id": "SEC:CIK:2080073",
+  "name": "Versamet Royalties Corp",
+  "grund": "ISIN offen (kein_lei)",
+  "kandidaten": null
+ },
+ {
+  "issuer_id": "SEC:CIK:2081438",
+  "name": "GO Residential Real Estate Investment Trust",
+  "grund": "ISIN offen (keine_aktien_isin_bei_gleif)",
+  "kandidaten": null
+ },
+ {
+  "issuer_id": "SEC:CIK:2086771",
+  "name": "Elemental Royalty Corp",
+  "grund": "ISIN offen (kein_lei)",
+  "kandidaten": null
+ },
+ {
+  "issuer_id": "SEC:CIK:2087398",
+  "name": "Metals Royalty Co Inc.",
+  "grund": "ISIN offen (kein_lei)",
+  "kandidaten": null
+ },
+ {
+  "issuer_id": "SEC:CIK:2088688",
+  "name": "Excalibur Metals Corp.",
+  "grund": "ISIN offen (kein_lei)",
+  "kandidaten": null
+ },
+ {
+  "issuer_id": "SEC:CIK:2090651",
+  "name": "Canary Gold Corp.",
+  "grund": "ISIN offen (keine_aktien_isin_bei_gleif)",
+  "kandidaten": null
+ },
+ {
+  "issuer_id": "SEC:CIK:2091467",
+  "name": "Boyd Group Services Inc.",
+  "grund": "ISIN offen (keine_aktien_isin_bei_gleif)",
+  "kandidaten": null
+ },
+ {
+  "issuer_id": "SEC:CIK:2092243",
+  "name": "Blue Jay Gold Corp.",
+  "grund": "ISIN offen (keine_aktien_isin_bei_gleif)",
+  "kandidaten": null
+ },
+ {
+  "issuer_id": "SEC:CIK:2092967",
+  "name": "Fort Technology Inc",
+  "grund": "ISIN offen (keine_aktien_isin_bei_gleif)",
+  "kandidaten": null
+ },
+ {
+  "issuer_id": "SEC:CIK:2093856",
+  "name": "APEX CRITICAL METALS CORP.",
+  "grund": "ISIN offen (keine_aktien_isin_bei_gleif)",
+  "kandidaten": null
+ },
+ {
+  "issuer_id": "SEC:CIK:2094900",
+  "name": "Tiger Gold Corp.",
+  "grund": "ISIN offen (keine_aktien_isin_bei_gleif)",
+  "kandidaten": null
+ },
+ {
+  "issuer_id": "SEC:CIK:2096533",
+  "name": "Nation Gold Corp.",
+  "grund": "ISIN offen (kein_lei)",
+  "kandidaten": null
+ },
+ {
+  "issuer_id": "SEC:CIK:2097163",
+  "name": "Xanadu Quantum Technologies Ltd",
+  "grund": "ISIN offen (kein_lei)",
+  "kandidaten": null
+ },
+ {
+  "issuer_id": "SEC:CIK:2099727",
+  "name": "INEO Tech Corp.",
+  "grund": "ISIN offen (keine_aktien_isin_bei_gleif)",
+  "kandidaten": null
+ },
+ {
+  "issuer_id": "SEC:CIK:2099818",
+  "name": "Pirate Gold Corp.",
+  "grund": "ISIN offen (kein_lei)",
+  "kandidaten": null
+ },
+ {
+  "issuer_id": "SEC:CIK:2100457",
+  "name": "Bitzero Holdings Inc.",
+  "grund": "ISIN offen (keine_aktien_isin_bei_gleif)",
+  "kandidaten": null
+ },
+ {
+  "issuer_id": "SEC:CIK:2102593",
+  "name": "AE Fuels Corp",
+  "grund": "ISIN offen (kein_lei)",
+  "kandidaten": null
+ },
+ {
+  "issuer_id": "SEC:CIK:2103596",
+  "name": "Grafton Resources Inc.",
+  "grund": "ISIN offen (keine_aktien_isin_bei_gleif)",
+  "kandidaten": null
+ },
+ {
+  "issuer_id": "SEC:CIK:2105038",
+  "name": "Cizzle Brands Corp",
+  "grund": "ISIN offen (kein_lei)",
+  "kandidaten": null
+ },
+ {
+  "issuer_id": "SEC:CIK:2106613",
+  "name": "Quantum eMotion Corp",
+  "grund": "ISIN offen (keine_aktien_isin_bei_gleif)",
+  "kandidaten": null
+ },
+ {
+  "issuer_id": "SEC:CIK:2108383",
+  "name": "Sprott Physical Copper Trust",
+  "grund": "ISIN offen (keine_aktien_isin_bei_gleif)",
+  "kandidaten": null
+ },
+ {
+  "issuer_id": "SEC:CIK:2111453",
+  "name": "Verdera Energy Corp.",
+  "grund": "ISIN offen (kein_lei)",
+  "kandidaten": null
+ },
+ {
+  "issuer_id": "SEC:CIK:2113853",
+  "name": "TELYRX HOLDINGS INC.",
+  "grund": "ISIN offen (kein_lei)",
+  "kandidaten": null
+ },
+ {
+  "issuer_id": "SEC:CIK:2117702",
+  "name": "Silverco Mining Ltd.",
+  "grund": "ISIN offen (keine_aktien_isin_bei_gleif)",
+  "kandidaten": null
+ },
+ {
+  "issuer_id": "SEC:CIK:2123553",
+  "name": "ICG Silver & Gold Ltd.",
+  "grund": "ISIN offen (keine_aktien_isin_bei_gleif)",
+  "kandidaten": null
+ },
+ {
+  "issuer_id": "SEC:CIK:2125750",
+  "name": "Clinch Resources Ltd.",
+  "grund": "ISIN offen (kein_lei)",
+  "kandidaten": null
+ },
+ {
+  "issuer_id": "SEC:CIK:2129284",
+  "name": "American Eagle Gold Corp.",
+  "grund": "ISIN offen (keine_aktien_isin_bei_gleif)",
+  "kandidaten": null
+ },
+ {
+  "issuer_id": "SEC:CIK:2130027",
+  "name": "Omai Gold Mines Corp./ADR",
+  "grund": "ISIN offen (kein_lei)",
+  "kandidaten": null
+ },
+ {
+  "issuer_id": "SEC:CIK:2132461",
+  "name": "Titiminas Silver Inc.",
+  "grund": "ISIN offen (kein_lei)",
+  "kandidaten": null
+ },
+ {
+  "issuer_id": "SEC:CIK:2139482",
+  "name": "G3 Goldfields Inc.",
+  "grund": "ISIN offen (kein_lei)",
+  "kandidaten": null
+ },
+ {
+  "issuer_id": "SEC:CIK:2139627",
+  "name": "Aritzia Inc./ADR",
+  "grund": "ISIN offen (kein_lei)",
+  "kandidaten": null
+ },
+ {
+  "issuer_id": "SEC:CIK:2141493",
+  "name": "Mogul Mountain Ventures Corp",
+  "grund": "ISIN offen (kein_lei)",
+  "kandidaten": null
+ },
+ {
+  "issuer_id": "SEC:CIK:2144401",
+  "name": "Alex Metals Corp.",
+  "grund": "ISIN offen (keine_aktien_isin_bei_gleif)",
+  "kandidaten": null
+ },
+ {
+  "issuer_id": "SEC:CIK:2145424",
+  "name": "Phoenix Metals Corp.",
+  "grund": "ISIN offen (keine_aktien_isin_bei_gleif)",
+  "kandidaten": null
  }
 ]
