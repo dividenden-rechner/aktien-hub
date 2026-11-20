@@ -8,7 +8,7 @@ kein_logo: ja
 vorschau: ja
 freigabe: 2026-11-22 00:00
 image: https://images.unsplash.com/photo-1560221328-12fe60f83ab8?ixid=M3wxMTE3OTgzfDB8MXxzZWFyY2h8NHx8ZmFsbGluZyUyMHN0b2NrJTIwY2hhcnQlMjBtb25pdG9yfGVufDF8MHx8fDE3OTUyMDk2MjF8MA&ixlib=rb-4.1.0&w=1600&h=900&fit=crop&crop=entropy&q=80&fm=jpg
-image_alt: "Foto zu SEC: Stock Charts during a live trading session"
+image_alt: "Kurscharts auf einem Bildschirm während des Handels"
 image_credit: "Foto: Nicholas Cappello auf Unsplash"
 image_source: https://unsplash.com/photos/close-up-photo-of-monitor-displaying-graph-Wb63zqJ5gnE?utm_source=dividenden-rechner&utm_medium=referral
 image_artist_url: https://unsplash.com/@bash__profile?utm_source=dividenden-rechner&utm_medium=referral
