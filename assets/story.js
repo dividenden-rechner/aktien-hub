@@ -225,45 +225,69 @@
       var lq = Math.min((sz - 36) / logo.width, (sz - 36) / logo.height);
       c.drawImage(logo, lx + (sz - logo.width * lq) / 2, ly + (sz - logo.height * lq) / 2, logo.width * lq, logo.height * lq);
     }
-    /* Rechts daneben: Gewinn, darunter Umsatz; Veraenderung in Klammern, gruen bei Plus, rot bei Minus */
-    var tx = 300;
-    [["Gewinn", q.gewinn], ["Umsatz", q.umsatz]].forEach(function (r, i) {
-      if (!r[1]) return;
-      var y = ly + 24 + i * 100, lab = (r[1].label || r[0]) + ": ", wert = String(r[1].wert || ""), pct = String(r[1].pct || "");
-      /* Zeile passt in die Breite: bei langen Werten wird die Schrift verkleinert */
-      var fs = 50; c.font = "700 " + fs + "px " + F; var tot = c.measureText(lab + wert + " (" + pct + ")").width;
-      if (tot > 760) fs = Math.max(30, Math.floor(50 * 760 / tot));
+    /* Rechts daneben: Gewinn, darunter Umsatz, eng untereinander und in einer gemeinsamen Schriftgroesse;
+       Veraenderung in Klammern, gruen bei Plus, rot bei Minus. Schrift wie in Instagram-Stories: schlichte Grotesk, Wert fett */
+    var tx = 300, rows = [["Gewinn", q.gewinn], ["Umsatz", q.umsatz]].filter(function (r) { return r[1]; });
+    var fs = 52;
+    rows.forEach(function (r) {
+      var t = (r[1].label || r[0]) + ": " + String(r[1].wert || "") + " (" + String(r[1].pct || "") + ")";
+      c.font = "700 52px " + F; var w = c.measureText(t).width; if (w > 740) fs = Math.min(fs, Math.max(30, Math.floor(52 * 740 / w)));
+    });
+    var gap = Math.round(fs * 1.3), y0 = ly + (sz - (fs + gap * (rows.length - 1))) / 2;
+    rows.forEach(function (r, i) {
+      var y = y0 + i * gap, lab = (r[1].label || r[0]) + ": ", wert = String(r[1].wert || ""), pct = String(r[1].pct || "");
       c.font = "400 " + fs + "px " + F; c.fillStyle = D; c.fillText(lab, tx, y); var w1 = c.measureText(lab).width;
       c.font = "700 " + fs + "px " + F; c.fillText(wert, tx + w1, y); var w2 = c.measureText(wert + " ").width;
-      c.fillStyle = /^\s*[-\u2212\u2013]/.test(pct) ? ROT : GRUEN; c.fillText("(" + pct + ")", tx + w1 + w2, y);
+      c.fillStyle = /^\s*[-−–]/.test(pct) ? ROT : GRUEN; c.fillText("(" + pct + ")", tx + w1 + w2, y);
     });
-    /* Mitte: Bild (Folie, Screenshot) oder, wenn keins da ist, die Kennzahlen als Tabelle */
-    var top = 520, mh = q.chart ? 420 : 740;
-    var photo = S.img ? await load(S.img) : null;
-    if (photo) {
-      var r0 = Math.min(960 / photo.width, mh / photo.height), iw = photo.width * r0, ih = photo.height * r0;
-      c.drawImage(photo, 60 + (960 - iw) / 2, top + (mh - ih) / 2, iw, ih);
-    } else if (q.tabelle && q.tabelle.length) {
+    /* Die Mitte bleibt frei: dort setzt Divi den Text in Instagram selbst ein.
+       Unten: Kursbild (oder, wenn keins da ist, die Folie) auf dem gruenen Balken, auf der einen Seite;
+       der CEO auf der anderen Seite, etwas hoeher und leicht ueber dem Bild, damit er davor sitzt. */
+    var BAR = 1866;
+    var grafik = S.chart ? await load(S.chart) : (S.img ? await load(S.img) : null);
+    var pt = S.portrait ? await load(S.portrait) : null;
+    var links = String(S.portrait_side || "rechts") !== "links"; /* CEO rechts, Grafik links (Standard) */
+    /* sichtbarer Bereich des Freistellers (ohne durchsichtigen Rand) */
+    function sichtbar(img) {
+      try {
+        var k = Math.min(1, 300 / Math.max(img.width, img.height)), w = Math.max(1, Math.round(img.width * k)), h = Math.max(1, Math.round(img.height * k));
+        var t = document.createElement("canvas"); t.width = w; t.height = h; var g = t.getContext("2d"); g.drawImage(img, 0, 0, w, h);
+        var d = g.getImageData(0, 0, w, h).data, x0 = w, x1 = -1;
+        for (var yy = 0; yy < h; yy++) for (var xx = 0; xx < w; xx++) if (d[(yy * w + xx) * 4 + 3] > 40) { if (xx < x0) x0 = xx; if (xx > x1) x1 = xx; }
+        if (x1 < 0) return [0, img.width];
+        return [x0 / k, (x1 + 1) / k];
+      } catch (e) { return [0, img.width]; }
+    }
+    var ceo = null;
+    if (pt) {
+      var ph = grafik ? 600 : 640, s = ph / pt.height, vb = sichtbar(pt), vis = (vb[1] - vb[0]) * s;
+      /* Person zum Rand hin, bei einer Grafik daneben darf die aeussere Schulter bis zu einem Fuenftel angeschnitten sein */
+      var cut = grafik ? Math.round(vis * 0.2) : 30, vx = links ? 1080 - vis + cut : -cut, px = vx - vb[0] * s;
+      ceo = { img: pt, x: px, y: BAR - ph, w: pt.width * s, h: ph, vl: vx, vr: vx + vis };
+    }
+    if (grafik) {
+      /* Grafik so gross wie moeglich, aber hoechstens 60 px vom CEO verdeckt (beim Kursbild nur die Achsenbeschriftung) */
+      var maxW = ceo ? (links ? ceo.vl + 60 - 40 : 1040 - (ceo.vr - 60)) : 1000, maxH = ceo ? 520 : 640;
+      var r2 = Math.min(maxW / grafik.width, maxH / grafik.height), gw = grafik.width * r2, gh = grafik.height * r2;
+      var gx = ceo ? (links ? 40 : 1040 - gw) : (1080 - gw) / 2, gy = BAR - gh;
+      c.fillStyle = "#fff"; c.fillRect(gx, gy, gw, gh); c.drawImage(grafik, gx, gy, gw, gh);
+      if (ceo) ceo.nameY = gy - 52;
+    } else if (!ceo && q.tabelle && q.tabelle.length) {
       q.tabelle.forEach(function (row, n) {
-        var y = top + 10 + n * 128;
+        var y = 1200 + n * 128;
         c.fillStyle = "#f3f6f8"; rr(c, 60, y, 960, 110, 16); c.fill();
         c.fillStyle = D; c.font = "400 36px " + F; c.fillText(row[0], 92, y + 36);
         c.font = "700 42px " + F; c.textAlign = "right"; c.fillText(row[1], 988, y + 34); c.textAlign = "left";
       });
     }
-    /* Optional: Chart unter dem Bild, bis knapp vor den unteren Bereich */
-    if (S.chart) {
-      var ch = await load(S.chart);
-      /* Mit CEO darf das Kursbild tiefer reichen und steht links bündig: links neben dem Kopf ist bis knapp unter den Schultern frei */
-      if (ch) { var cy = top + mh + 20, bot = S.portrait ? 1360 : 1240, r2 = Math.min(960 / ch.width, (bot - cy) / ch.height), cw = ch.width * r2, chh = ch.height * r2; c.drawImage(ch, S.portrait ? 60 : 60 + (960 - cw) / 2, cy, cw, chh); }
-    }
-    /* Unten rechts: CEO, unten bündig auf der Balkenlinie; Name klein links neben der Person */
-    if (S.portrait) {
-      var pt = await load(S.portrait);
-      if (pt) {
-        var ph = 560, pw = pt.width * ph / pt.height, px = 1020 - pw, py = 1866 - ph;
-        c.drawImage(pt, px, py, pw, ph);
-        if (S.quote_by) { var nm = String(S.quote_by).split("|")[0]; c.font = "700 28px " + F; c.fillStyle = D; c.textAlign = "right"; c.fillText(nm, px - 16, 1866 - 60); c.textAlign = "left"; }
+    if (ceo) {
+      c.drawImage(ceo.img, ceo.x, ceo.y, ceo.w, ceo.h);
+      /* Name klein neben der Person, ueber der Grafik */
+      if (S.quote_by) {
+        var nm = String(S.quote_by).split("|")[0].trim(); c.font = "700 30px " + F; c.fillStyle = D;
+        var ny = ceo.nameY || (BAR - 70);
+        if (links) { c.textAlign = "right"; c.fillText(nm, ceo.vl - 12, ny); } else { c.textAlign = "left"; c.fillText(nm, ceo.vr + 12, ny); }
+        c.textAlign = "left";
       }
     }
     return new Promise(function (res) { cv.toBlob(res, "image/png"); });
