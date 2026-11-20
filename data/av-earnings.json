@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-20 03:43 UTC",
+ "updated": "2026-11-20 14:20 UTC",
  "quelle": "Alpha Vantage",
  "items": [
   {
@@ -539,7 +539,10 @@
    "zeit": "vor",
    "eps_est": 1.31,
    "eps_src": "kalender",
-   "act_try": "2026-11-19"
+   "act_try": "2026-11-20",
+   "eps_act": 8.1,
+   "eps_act_basis": "GAAP laut AV",
+   "rep_date": "2026-11-19"
   },
   {
    "sym": "BBWI",
@@ -553,7 +556,10 @@
    "rev_est": 1549327210.0,
    "rev_n": 15,
    "est_stand": "2026-11-19",
-   "act_try": "2026-11-19"
+   "act_try": "2026-11-20",
+   "eps_act": 0.26,
+   "eps_act_basis": "GAAP laut AV",
+   "rep_date": "2026-11-19"
   },
   {
    "sym": "BULL",
@@ -567,7 +573,10 @@
    "rev_est": 215588670.0,
    "rev_n": 3,
    "est_stand": "2026-11-19",
-   "act_try": "2026-11-19"
+   "act_try": "2026-11-20",
+   "eps_act": 0.11,
+   "eps_act_basis": "GAAP laut AV",
+   "rep_date": "2026-11-19"
   },
   {
    "sym": "CPRT",
@@ -581,7 +590,7 @@
    "rev_est": 1188881000.0,
    "rev_n": 7,
    "est_stand": "2026-11-19",
-   "act_try": "2026-11-19"
+   "act_try": "2026-11-20"
   },
   {
    "sym": "ESTC",
@@ -595,7 +604,10 @@
    "rev_est": 486786700.0,
    "rev_n": 24,
    "est_stand": "2026-11-19",
-   "act_try": "2026-11-19"
+   "act_try": "2026-11-20",
+   "eps_act": 0.94,
+   "eps_act_basis": "GAAP laut AV",
+   "rep_date": "2026-11-19"
   },
   {
    "sym": "FUTU",
@@ -609,7 +621,10 @@
    "rev_est": 6585844500.0,
    "rev_n": 2,
    "est_stand": "2026-11-19",
-   "act_try": "2026-11-19"
+   "act_try": "2026-11-20",
+   "eps_act": 23.77,
+   "eps_act_basis": "GAAP laut AV",
+   "rep_date": "2026-11-19"
   },
   {
    "sym": "GAP",
@@ -623,7 +638,10 @@
    "rev_est": 4013697400.0,
    "rev_n": 16,
    "est_stand": "2026-11-19",
-   "act_try": "2026-11-19"
+   "act_try": "2026-11-20",
+   "eps_act": 0.82,
+   "eps_act_basis": "GAAP laut AV",
+   "rep_date": "2026-11-19"
   },
   {
    "sym": "INTU",
@@ -637,7 +655,10 @@
    "rev_est": 4305869380.0,
    "rev_n": 23,
    "est_stand": "2026-11-19",
-   "act_try": "2026-11-19"
+   "act_try": "2026-11-20",
+   "eps_act": 2.91,
+   "eps_act_basis": "GAAP laut AV",
+   "rep_date": "2026-11-19"
   },
   {
    "sym": "KEYS",
@@ -751,7 +772,8 @@
    "eps_n": 19,
    "rev_est": 5948167290.0,
    "rev_n": 18,
-   "est_stand": "2026-11-20"
+   "est_stand": "2026-11-20",
+   "act_try": "2026-11-20"
   },
   {
    "sym": "BKE",
@@ -764,7 +786,8 @@
    "eps_n": 1,
    "rev_est": 337148030.0,
    "rev_n": 1,
-   "est_stand": "2026-11-20"
+   "est_stand": "2026-11-20",
+   "act_try": "2026-11-20"
   },
   {
    "sym": "A",
