@@ -36,3 +36,17 @@ Divi: "schöner Text für den Newsletter als Ergänzung", der Einstieg gefällt 
 - China: "meiren ji" (List der schönen Person); MI6-Warnbroschüre 2018 an Unternehmen; FBI warnt Geschäftsreisende ausdrücklich.
 - Schluss des Artikels: Huang hätte es besser wissen können; die Affäre habe das Zeug zum großen Honigfallen-Märchen.
 - Beim Schreiben: Vorwürfe gegen Huang nur als Berichte/Vorwürfe darstellen (keine Bestätigung, FBI ermittelt laut SPIEGEL), nicht ausschmücken. SPIEGEL-Text nicht abschreiben, nur eigene Zusammenfassung mit Quellenangabe unten. Volltext liegt als Anhang der Session (nicht im Repo).
+
+## Wochenendnotizen 21./22.11.2026 (Vorbereitung vom 20.11.)
+
+### Aufstellung (Vorschlag, fünf Themen)
+1. KI-Woche: Anthropic-Börsengang, Nvidia ohne Huang, neue Chipregeln, AMD/Hunterbrook. Artikel: ki-woche-anthropic-nvidia-amd-chipregeln (Entwurf, 21.11. 07:30). Bündelt auch die Destillation (verlinkt), damit der Fokus nicht doppelt auftaucht.
+2. Realty Income: Agree Realty im Vergleich mit NNN und Realty Income (Entwurf vom 16.11., muss freigegeben werden).
+3. Offen, Kandidaten: Intuit (Ausblick, −10 %), Walmart (Prognose angehoben), Disney (Dividende +33 %), Target/TJX (Zollrückerstattungen), Altersvorsorgedepot ab 2027 (Entwurf), UnitedHealth und die Peers (Entwurf), Novartis bis 2031 (Entwurf), Imperial/BAT/PMI (Entwurf).
+4. Offen (siehe 3.).
+5. Ausblick: Wochenvorschau Tag für Tag (Fernglas-Foto).
+
+### Teaser 1 · KI (Entwurf)
+Überschrift: Eine Woche, die die KI-Branche neu sortiert
+Am Donnerstag ging Anthropic an die Nasdaq, und noch nie hat ein Unternehmen bei einem Börsengang mehr Geld eingesammelt. Zwei Tage zuvor hatte Nvidia Zahlen vorgelegt, glänzend wie immer, aber zum ersten Mal ohne Jensen Huang. Der Verwaltungsrat ließ wissen: Er kommt nicht zurück. Während die Börse feierte, zog Washington die Exportregeln an, so streng, dass TSMC Lieferungen anhält und selbst Smartphone-Chips betroffen sind. Dazu nimmt ein Leerverkäufer ausgerechnet AMD ins Visier. Wir ordnen die Woche ein: was für die Nachfrage spricht und wo das politische Risiko wächst.
+Bild: Aufmacher des Artikels (Unsplash-Anfrage läuft).
