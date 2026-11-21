@@ -229,7 +229,7 @@ def main():
                 f'<td>{esc(ART.get(p["art"], p["art"]))}</td>'
                 f'<td class="w">{esc(p["kosten_text"])}' + (f'<div class="av-h">{esc(hin)}</div>' if hin else "") + '</td>'
                 f'<td class="w">{esc(p["depot_text"])}</td><td>{esc(p["auswahl_text"])}</td>'
-                f'<td class="av-st">{zt}</td><td class="av-q">{qs}</td></tr>')
+                f'<td class="av-st">{zt}</td></tr>')
     n_prod = len(flat)
     n_anb_v = len({f["n"] for f in flat})
     # weitere Anbieter für den aufklappbaren Bereich, je Anbieter eine Zeile
@@ -263,11 +263,11 @@ def main():
 <div class="av-filter" role="group" aria-label="Filter"><label for="av-f-art">Depotart <select id="av-f-art"><option value="">Alle</option>{art_opts}</select></label><label><input type="checkbox" id="av-f-kosten"> Nur mit bekannten Kosten im 10. Jahr</label><span class="av-count" id="av-count" aria-live="polite"></span></div>
 <div class="av-tabs" id="avt" role="group" aria-label="Sortierung"><button type="button" class="av-tab" data-s="dau" aria-pressed="true">Kosten im 10. Jahr</button><button type="button" class="av-tab" data-s="sta" aria-pressed="false">Kosten zu Beginn</button><button type="button" class="av-tab" data-s="n" aria-pressed="false">A bis Z</button></div>
 <p class="av-scroll-hint">Tabelle seitlich scrollen für alle Spalten →</p>
-<div class="av-tablewrap" tabindex="0" role="region" aria-label="Anbietervergleich, seitlich scrollbar"><table class="av-table"><caption>Nur vom Bundeszentralamt für Steuern zertifizierte Altersvorsorgedepots. Laufende Kosten in Prozent pro Jahr bei Eröffnung im Januar 2027, ohne Order- und Sparplangebühren und Spreads. „max.“ = Obergrenze laut Anbieter, „ca.“ = ungefährer Wert, * = freiwillige Erstattung ohne Enddatum.</caption><thead><tr><th scope="col">Anbieter und Depotmodell</th><th scope="col" class="num">Kosten zu Beginn</th><th scope="col" class="num">Kosten im 10. Jahr</th><th scope="col">Art</th><th scope="col">Kosten im Detail</th><th scope="col">Depot und Orders</th><th scope="col">Anlage</th><th scope="col">BZSt-Zertifikat</th><th scope="col">Quellen</th></tr></thead>
+<div class="av-tablewrap" tabindex="0" role="region" aria-label="Anbietervergleich, seitlich scrollbar"><table class="av-table"><caption>Nur vom Bundeszentralamt für Steuern zertifizierte Altersvorsorgedepots. Laufende Kosten in Prozent pro Jahr bei Eröffnung im Januar 2027, ohne Order- und Sparplangebühren und Spreads. „max.“ = Obergrenze laut Anbieter, „ca.“ = ungefährer Wert, * = freiwillige Erstattung ohne Enddatum.</caption><thead><tr><th scope="col">Anbieter und Depotmodell</th><th scope="col" class="num">Kosten zu Beginn</th><th scope="col" class="num">Kosten im 10. Jahr</th><th scope="col">Art</th><th scope="col">Kosten im Detail</th><th scope="col">Depot und Orders</th><th scope="col">Anlage</th><th scope="col">BZSt-Zertifikat</th></tr></thead>
 <tbody id="avl">
 {chr(10).join(rows)}
 </tbody></table></div>
-<p class="av-sub">Sortierung nach Kosten ist keine Rangliste: Die Angaben umfassen meist nur Fonds- und Servicekosten, nicht die vollständigen Effektivkosten. Die Zertifikatsnummern stammen aus der <a href="{esc(Q["bzst"]["url"])}" target="_blank" rel="noopener nofollow">Liste aller erteilten Zertifikate des BZSt</a>, abgerufen am {dmy(Q["bzst"]["abgerufen"])}.</p>
+<p class="av-sub">Sortierung nach Kosten ist keine Rangliste: Die Angaben umfassen meist nur Fonds- und Servicekosten, nicht die vollständigen Effektivkosten. Alle Kosten und Konditionen stammen direkt von den Anbietern (Produktseiten, Preis- und Leistungsverzeichnisse), die Zertifikatsnummern aus der Liste des Bundeszentralamts für Steuern (Stand {dmy(Q["bzst"]["abgerufen"])}).</p>
 <p>Die meisten Banken haben ihr Altersvorsorgedepot angekündigt, viele auch schon mit Preisen, etwa N26, ING, die Consorsbank, flatex, die Deka oder die Hannoversche. Zertifiziert ist ihr Produkt aber noch nicht, oder es steht in der BZSt-Liste noch nicht. Ohne Zertifikat darf kein Vertrag mit Förderung abgeschlossen werden. Sobald ein Zertifikat erscheint, nehmen wir das Modell in die Tabelle auf.</p>
 <details class="av-more"><summary>Alle weiteren Banken und Anbieter ({len(wa)})</summary>
 <ul class="av-wl">{"".join(w_li)}</ul>
@@ -306,7 +306,7 @@ def main():
     assert page.count('id="anbieter-bereich"') == 1 and page.count('id="av-data"') == 1
     title = "Altersvorsorgedepot-Rechner und Anbieter im Vergleich 2027"
     desc = (f"Altersvorsorgedepot berechnen: Zulagen, Depotwert und Auszahlung, dazu die vom BZSt zertifizierten Depotmodelle im Vergleich "
-            "(Trade Republic, Scalable, Allianz, ERGO) und alle angekündigten Anbieter mit Kosten und Quellen.")
+            "(Trade Republic, Scalable, Allianz, ERGO) und alle angekündigten Anbieter mit Kosten.")
     page = re.sub(r"<title>.*?</title>", "<title>" + title + "</title>", page, count=1)
     page = re.sub(r'(<meta name="description" content=")[^"]*', lambda m: m.group(1) + desc, page, count=1)
     page = re.sub(r'(<meta property="og:title" content=")[^"]*', lambda m: m.group(1) + title, page, count=1)
