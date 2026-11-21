@@ -389,13 +389,21 @@ def main():
                         return min(c, key=lambda x: int(x["geschaeftsjahr"]))
                 return None
             pe_ = wahl("eps_bereinigt", "eps_gaap")
+            # Manche Firmen (z. B. ADP) nennen nur das erwartete Wachstum des Gewinns je Aktie in Prozent:
+            # dann den Gewinn je Aktie aus dem letzten Jahreswert hochrechnen, statt Prozent als Dollar zu lesen.
+            if pe_ and str(pe_.get("einheit", "")).lower().startswith("proz"):
+                if eps and eps > 0:
+                    pe_ = dict(pe_, von=r2(eps * (1 + pe_["von"] / 100), 2), bis=r2(eps * (1 + pe_["bis"] / 100), 2),
+                               kennzahl="eps_wachstum", wachstum=(pe_["von"], pe_["bis"]))
+                else:
+                    pe_ = None
             um_ = wahl("umsatz")
             uw_ = wahl("umsatzwachstum_proz", "organisches_wachstum_proz")
             dv_ = wahl("dividende_je_aktie")
             mid = lambda x: (x["von"] + x["bis"]) / 2
             fwd = {"datum": pr["datum"], "quelle": pr["quelle"]}
             if pe_ and mid(pe_) > 0:
-                fwd.update({"eps_jahr": pe_["geschaeftsjahr"], "eps_von": pe_["von"], "eps_bis": pe_["bis"], "eps_art": "bereinigt" if pe_["kennzahl"] == "eps_bereinigt" else "GAAP",
+                fwd.update({"eps_jahr": pe_["geschaeftsjahr"], "eps_von": pe_["von"], "eps_bis": pe_["bis"], "eps_art": ("hochgerechnet aus erwartetem Wachstum von %s bis %s %%" % pe_["wachstum"]) if pe_["kennzahl"] == "eps_wachstum" else ("bereinigt" if pe_["kennzahl"] == "eps_bereinigt" else "GAAP"),
                             "kgv_forward": r2(kurs / mid(pe_), 1), "eps_veraendert": pe_["veraendert"],
                             "eps_wachstum_erwartet": r2((mid(pe_) / eps - 1) * 100, 1) if eps and eps > 0 and pe_["kennzahl"] == "eps_gaap" else None})
             if um_ and ums:
