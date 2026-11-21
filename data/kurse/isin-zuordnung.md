@@ -2,7 +2,7 @@
 
 Spalten der Liste: 153
 Instrumente nach Filter: 2345
-Zugeordnet: **599** von 601. Unsicher (zum Prüfen): 34. Ohne Treffer: 37.
+Zugeordnet: **605** von 601. Unsicher (zum Prüfen): 34. Ohne Treffer: 34.
 
 Korrekturen als {"TICKER": "ISIN"} in data/kurse/isin-fest.json eintragen.
 
@@ -60,7 +60,6 @@ Korrekturen als {"TICKER": "ISIN"} in data/kurse/isin-fest.json eintragen.
 - EPD (ENTERPRISE PRODUCTS PARTNERS L.P.): bester Kandidat NXP SEMICONDUCTORS EO-,20 NL0009538784 (0.51)
 - ET (Energy Transfer LP): bester Kandidat ENERGEAN PLC      LS -,01 GB00BG12Y042 (0.64)
 - FLEX (FLEX LTD.): bester Kandidat VOLEX PLC         LS -,25 GB0009390070 (0.70)
-- HSIC (HENRY SCHEIN, INC.): bester Kandidat HUBER+SUHNER NA    SF-,25 CH0030380734 (0.62)
 - IVZ (Invesco Ltd.): bester Kandidat IVECO GROUP N.V.  EO 1 NL0015000LU4 (0.86)
 - KVUE (Kenvue Inc.): bester Kandidat ENEL S.P.A.          EO 1 IT0003128367 (0.63)
 - LARK (LANDMARK BANCORP, INC.): bester Kandidat SCAND.TOBACCO GROUP DK 1 DK0060696300 (0.58)
@@ -80,5 +79,3 @@ Korrekturen als {"TICKER": "ISIN"} in data/kurse/isin-fest.json eintragen.
 - TKO (TKO GROUP HOLDINGS, INC.): bester Kandidat KION GROUP AG DE000KGX8881 (0.60)
 - TSM (Taiwan Semiconductor Manufacturing Company Limited): bester Kandidat NXP SEMICONDUCTORS EO-,20 NL0009538784 (0.61)
 - TT (TRANE TECHNOLOGIES PLC): bester Kandidat BERTRANDT AG O.N. DE0005232805 (0.60)
-- VICI (VICI Properties Inc.): bester Kandidat CPI PROPERTY GRP   EO-,01 LU0251710041 (0.77)
-- VTR (Ventas, Inc.): bester Kandidat DEMANT AS A        DK 0,2 DK0060738599 (0.70)

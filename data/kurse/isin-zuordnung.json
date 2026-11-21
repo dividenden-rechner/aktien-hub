@@ -1527,6 +1527,12 @@
 "quelle": "name",
 "treffer": 1.03
 },
+"HSIC": {
+"isin": "US8064071025",
+"xetra": "",
+"kuerzel": "",
+"quelle": "openfigi"
+},
 "HST": {
 "isin": "US44107P1049",
 "xetra": "",
@@ -3148,6 +3154,12 @@
 "kuerzel": "VEE",
 "quelle": "openfigi"
 },
+"VICI": {
+"isin": "US9256521090",
+"xetra": "",
+"kuerzel": "",
+"quelle": "openfigi"
+},
 "VLO": {
 "isin": "US91913Y1001",
 "xetra": "VALERO ENERGY CORP.DL-,01",
@@ -3204,6 +3216,12 @@
 "isin": "US92840M1027",
 "xetra": "VISTRA CORP.       DL-,01",
 "kuerzel": "0V6",
+"quelle": "openfigi"
+},
+"VTR": {
+"isin": "US92276F1003",
+"xetra": "",
+"kuerzel": "",
 "quelle": "openfigi"
 },
 "VTRS": {
@@ -3492,6 +3510,13 @@
 "quelle": "openfigi",
 "bdc": true
 },
+"CGBD": {
+"isin": "US8722801029",
+"xetra": "",
+"kuerzel": "",
+"quelle": "openfigi",
+"bdc": true
+},
 "PFLT": {
 "isin": "US70806A1060",
 "xetra": "",
@@ -3569,6 +3594,13 @@
 "quelle": "openfigi",
 "bdc": true
 },
+"SAR": {
+"isin": "US80349A2087",
+"xetra": "",
+"kuerzel": "",
+"quelle": "openfigi",
+"bdc": true
+},
 "SCM": {
 "isin": "US8585681088",
 "xetra": "",
@@ -3632,5 +3664,12 @@
 "quelle": "openfigi",
 "bdc": true
 },
-"_stand": "2026-11-20"
+"NSLR": {
+"isin": "US86887Q1094",
+"xetra": "",
+"kuerzel": "",
+"quelle": "openfigi",
+"bdc": true
+},
+"_stand": "2026-11-21"
 }
