@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-20 14:20 UTC",
+ "updated": "2026-11-21 03:27 UTC",
  "quelle": "Alpha Vantage",
  "items": [
   {
@@ -800,7 +800,7 @@
    "eps_n": 17,
    "rev_est": 1988948880.0,
    "rev_n": 17,
-   "est_stand": "2026-11-20"
+   "est_stand": "2026-11-21"
   },
   {
    "sym": "HPE",
@@ -809,11 +809,11 @@
    "fiscal": "2026-10-31",
    "cur": "USD",
    "zeit": "nach",
-   "eps_est": 1.2772,
+   "eps_est": 1.285,
    "eps_n": 19,
-   "rev_est": 14406617280.0,
+   "rev_est": 14425411720.0,
    "rev_n": 18,
-   "est_stand": "2026-11-20"
+   "est_stand": "2026-11-21"
   },
   {
    "sym": "J",
@@ -826,7 +826,20 @@
    "eps_n": 12,
    "rev_est": 3893501990.0,
    "rev_n": 5,
-   "est_stand": "2026-11-20"
+   "est_stand": "2026-11-21"
+  },
+  {
+   "sym": "TCOM",
+   "datum": "2026-11-23",
+   "eps_est": 8.2186,
+   "name": "TRIP.COM GROUP LIMITED",
+   "fiscal": "2026-09-30",
+   "cur": "USD",
+   "zeit": "",
+   "eps_n": 15,
+   "rev_est": 18927296580.0,
+   "rev_n": 16,
+   "est_stand": "2026-11-21"
   },
   {
    "sym": "ADI",
@@ -839,7 +852,7 @@
    "eps_n": 27,
    "rev_est": 4319542480.0,
    "rev_n": 26,
-   "est_stand": "2026-11-20"
+   "est_stand": "2026-11-21"
   },
   {
    "sym": "ADSK",
@@ -848,11 +861,11 @@
    "fiscal": "2026-10-31",
    "cur": "USD",
    "zeit": "nach",
-   "eps_est": 3.0679,
+   "eps_est": 3.0684,
    "eps_n": 28,
-   "rev_est": 2132410570.0,
+   "rev_est": 2133704710.0,
    "rev_n": 27,
-   "est_stand": "2026-11-20"
+   "est_stand": "2026-11-21"
   },
   {
    "sym": "BBY",
@@ -861,11 +874,11 @@
    "fiscal": "2026-10-31",
    "cur": "USD",
    "zeit": "vor",
-   "eps_est": 1.493,
+   "eps_est": 1.4907,
    "eps_n": 21,
-   "rev_est": 9902877560.0,
-   "rev_n": 19,
-   "est_stand": "2026-11-20"
+   "rev_est": 9900703180.0,
+   "rev_n": 20,
+   "est_stand": "2026-11-21"
   },
   {
    "sym": "DELL",
@@ -874,11 +887,11 @@
    "fiscal": "2026-10-31",
    "cur": "USD",
    "zeit": "nach",
-   "eps_est": 6.5536,
-   "eps_n": 25,
-   "rev_est": 49169949940.0,
+   "eps_est": 6.5522,
+   "eps_n": 24,
+   "rev_est": 49273922220.0,
    "rev_n": 22,
-   "est_stand": "2026-11-20"
+   "est_stand": "2026-11-21"
   },
   {
    "sym": "DLTR",
@@ -887,8 +900,11 @@
    "fiscal": "2026-10-31",
    "cur": "USD",
    "zeit": "vor",
-   "eps_est": 0.88,
-   "eps_src": "kalender"
+   "eps_est": 0.9248,
+   "eps_n": 26,
+   "rev_est": 5040170730.0,
+   "rev_n": 20,
+   "est_stand": "2026-11-21"
   },
   {
    "sym": "HPQ",
@@ -931,7 +947,7 @@
    "eps_n": 7,
    "rev_est": 20398604780.0,
    "rev_n": 9,
-   "est_stand": "2026-11-20"
+   "est_stand": "2026-11-21"
   },
   {
    "sym": "WDAY",
