@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-21T11:00:32.504804+00:00",
+ "updated": "2026-11-21T19:15:24.946508+00:00",
  "items": [
   {
    "sym": "2269.HK",
@@ -799,10 +799,10 @@
   {
    "sym": "AMZN",
    "name": "Amazon",
-   "title": "LSEG Risk Intelligence expands World-Check One cloud infrastructure in APAC with Singapore deployment",
-   "link": "https://press.aboutamazon.com/aws/2026/11/lseg-risk-intelligence-expands-world-check-one-cloud-infrastructure-in-apac-with-singapore-deployment",
+   "title": "Transamerica Expands Strategic Relationship with AWS to Scale Responsible AI Capabilities",
+   "link": "https://press.aboutamazon.com/aws/2026/11/transamerica-expands-strategic-relationship-with-aws-to-scale-responsible-ai-capabilities",
    "date": "2026-11-17T14:00:00+00:00",
-   "text": "[MEDIA ALERT]New Singapore deployment provides customers with additional regional hosting and data processing optionsBrings World-Check One infrastructure closer to Asia Pacific (APAC) customers, supporting lower-latency screening and improved user experienceExpansion reflects continued investment in meeting the evolving data governance and operational needs of customers across APAC",
+   "text": "[MEDIA ALERT]Enterprise AI platform delivers faster service, clearer decisions and improved customer experiences",
    "quelle": "RSS"
   },
   {
@@ -3238,15 +3238,6 @@
    "quelle": "RSS"
   },
   {
-   "sym": "4519.T",
-   "name": "Chugai Pharma",
-   "title": "F. Hoffmann-La Roche Announces Third Quarter Sales 2026",
-   "link": "https://www.chugai-pharm.co.jp/english/news/detail/20261022143000_1293.html",
-   "date": "2026-10-22T05:30:00+00:00",
-   "text": "",
-   "quelle": "RSS"
-  },
-  {
    "sym": "9433.T",
    "name": "KDDI",
    "title": "KDDI Collaborates with Broadcom on Network Infrastructure Technology for the Social Implementation of AI",
@@ -4361,11 +4352,11 @@
  "errors": [
   {
    "sym": "PEP",
-   "fehler": "HTTP Error 402: Payment Required"
+   "fehler": "HTTP Error 429: Too Many Requests"
   },
   {
    "sym": "PG",
-   "fehler": "HTTP Error 402: Payment Required"
+   "fehler": "HTTP Error 429: Too Many Requests"
   },
   {
    "sym": "LLY",
@@ -4377,15 +4368,15 @@
   },
   {
    "sym": "PFE",
-   "fehler": "HTTP Error 402: Payment Required"
+   "fehler": "HTTP Error 429: Too Many Requests"
   },
   {
    "sym": "MRK",
-   "fehler": "HTTP Error 402: Payment Required"
+   "fehler": "HTTP Error 429: Too Many Requests"
   },
   {
    "sym": "O",
-   "fehler": "HTTP Error 402: Payment Required"
+   "fehler": "HTTP Error 429: Too Many Requests"
   },
   {
    "sym": "V",
@@ -4393,23 +4384,23 @@
   },
   {
    "sym": "JPM",
-   "fehler": "HTTP Error 402: Payment Required"
+   "fehler": "HTTP Error 429: Too Many Requests"
   },
   {
    "sym": "CVX",
-   "fehler": "HTTP Error 402: Payment Required"
+   "fehler": "HTTP Error 429: Too Many Requests"
   },
   {
    "sym": "MCD",
-   "fehler": "HTTP Error 402: Payment Required"
+   "fehler": "HTTP Error 429: Too Many Requests"
   },
   {
    "sym": "HD",
-   "fehler": "HTTP Error 402: Payment Required"
+   "fehler": "HTTP Error 429: Too Many Requests"
   },
   {
    "sym": "TXN",
-   "fehler": "HTTP Error 402: Payment Required"
+   "fehler": "HTTP Error 429: Too Many Requests"
   },
   {
    "sym": "AVGO",
@@ -4417,7 +4408,7 @@
   },
   {
    "sym": "CSCO",
-   "fehler": "HTTP Error 402: Payment Required"
+   "fehler": "HTTP Error 429: Too Many Requests"
   },
   {
    "sym": "MDLZ",
@@ -4429,135 +4420,135 @@
   },
   {
    "sym": "GOOGL",
-   "fehler": "HTTP Error 402: Payment Required"
+   "fehler": "HTTP Error 429: Too Many Requests"
   },
   {
    "sym": "SIE.DE",
-   "fehler": "HTTP Error 402: Payment Required"
+   "fehler": "HTTP Error 429: Too Many Requests"
   },
   {
    "sym": "ALV.DE",
-   "fehler": "HTTP Error 402: Payment Required"
+   "fehler": "HTTP Error 429: Too Many Requests"
   },
   {
    "sym": "MBG.DE",
-   "fehler": "HTTP Error 402: Payment Required"
+   "fehler": "HTTP Error 429: Too Many Requests"
   },
   {
    "sym": "BMW.DE",
-   "fehler": "HTTP Error 402: Payment Required"
+   "fehler": "HTTP Error 429: Too Many Requests"
   },
   {
    "sym": "BAS.DE",
-   "fehler": "HTTP Error 402: Payment Required"
+   "fehler": "HTTP Error 429: Too Many Requests"
   },
   {
    "sym": "MUV2.DE",
-   "fehler": "HTTP Error 402: Payment Required"
+   "fehler": "HTTP Error 429: Too Many Requests"
   },
   {
    "sym": "DHL.DE",
-   "fehler": "HTTP Error 402: Payment Required"
+   "fehler": "HTTP Error 429: Too Many Requests"
   },
   {
    "sym": "ADS.DE",
-   "fehler": "HTTP Error 402: Payment Required"
+   "fehler": "HTTP Error 429: Too Many Requests"
   },
   {
    "sym": "RWE.DE",
-   "fehler": "HTTP Error 402: Payment Required"
+   "fehler": "HTTP Error 429: Too Many Requests"
   },
   {
    "sym": "EOAN.DE",
-   "fehler": "HTTP Error 402: Payment Required"
+   "fehler": "HTTP Error 429: Too Many Requests"
   },
   {
    "sym": "DBK.DE",
-   "fehler": "HTTP Error 402: Payment Required"
+   "fehler": "HTTP Error 429: Too Many Requests"
   },
   {
    "sym": "ASML.AS",
-   "fehler": "HTTP Error 402: Payment Required"
+   "fehler": "HTTP Error 429: Too Many Requests"
   },
   {
    "sym": "MC.PA",
-   "fehler": "HTTP Error 402: Payment Required"
+   "fehler": "HTTP Error 429: Too Many Requests"
   },
   {
    "sym": "OR.PA",
-   "fehler": "HTTP Error 402: Payment Required"
+   "fehler": "HTTP Error 429: Too Many Requests"
   },
   {
    "sym": "TTE.PA",
-   "fehler": "HTTP Error 402: Payment Required"
+   "fehler": "HTTP Error 429: Too Many Requests"
   },
   {
    "sym": "SAN.PA",
-   "fehler": "HTTP Error 402: Payment Required"
+   "fehler": "HTTP Error 429: Too Many Requests"
   },
   {
    "sym": "SU.PA",
-   "fehler": "HTTP Error 402: Payment Required"
+   "fehler": "HTTP Error 429: Too Many Requests"
   },
   {
    "sym": "NESN.SW",
-   "fehler": "HTTP Error 402: Payment Required"
+   "fehler": "HTTP Error 429: Too Many Requests"
   },
   {
    "sym": "NOVN.SW",
-   "fehler": "HTTP Error 402: Payment Required"
+   "fehler": "HTTP Error 429: Too Many Requests"
   },
   {
    "sym": "ROG.SW",
-   "fehler": "HTTP Error 402: Payment Required"
+   "fehler": "HTTP Error 429: Too Many Requests"
   },
   {
    "sym": "UBSG.SW",
-   "fehler": "HTTP Error 402: Payment Required"
+   "fehler": "HTTP Error 429: Too Many Requests"
   },
   {
    "sym": "NOVO-B.CO",
-   "fehler": "HTTP Error 402: Payment Required"
+   "fehler": "HTTP Error 429: Too Many Requests"
   },
   {
    "sym": "ULVR.L",
-   "fehler": "HTTP Error 402: Payment Required"
+   "fehler": "HTTP Error 429: Too Many Requests"
   },
   {
    "sym": "SHEL.L",
-   "fehler": "HTTP Error 402: Payment Required"
+   "fehler": "HTTP Error 429: Too Many Requests"
   },
   {
    "sym": "AZN.L",
-   "fehler": "HTTP Error 402: Payment Required"
+   "fehler": "HTTP Error 429: Too Many Requests"
   },
   {
    "sym": "BP.L",
-   "fehler": "HTTP Error 402: Payment Required"
+   "fehler": "HTTP Error 429: Too Many Requests"
   },
   {
    "sym": "ENEL.MI",
-   "fehler": "HTTP Error 402: Payment Required"
+   "fehler": "HTTP Error 429: Too Many Requests"
   },
   {
    "sym": "ISP.MI",
-   "fehler": "HTTP Error 402: Payment Required"
+   "fehler": "HTTP Error 429: Too Many Requests"
   },
   {
    "sym": "IBE.MC",
-   "fehler": "HTTP Error 402: Payment Required"
+   "fehler": "HTTP Error 429: Too Many Requests"
   },
   {
    "sym": "TSM",
-   "fehler": "HTTP Error 402: Payment Required"
+   "fehler": "HTTP Error 429: Too Many Requests"
   },
   {
    "sym": "9988.HK",
-   "fehler": "HTTP Error 402: Payment Required"
+   "fehler": "HTTP Error 429: Too Many Requests"
   },
   {
    "sym": "0700.HK",
-   "fehler": "HTTP Error 402: Payment Required"
+   "fehler": "HTTP Error 429: Too Many Requests"
   },
   {
    "sym": "7203.T",
