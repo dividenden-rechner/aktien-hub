@@ -435,14 +435,24 @@
     var years = o.rentenalter - o.alter, N = o.endalter - o.rentenalter, C = o.beitrag * 12;
     if (!(years >= 1) || !(N >= 1)) return null;
     var kids = o.kinderAlter || [], bis = o.kindBis || 18;
-    var rm = monthly((o.rendite - o.kosten) / 100), rm1 = (o.startJahre > 0 && o.kostenStart != null) ? monthly((o.rendite - o.kostenStart) / 100) : rm, bal = 0, paid = 0, zg = 0, zk = 0, bonus = 0, rows = [];
+    var rm = monthly((o.rendite - o.kosten) / 100), rm1 = (o.startJahre > 0 && o.kostenStart != null) ? monthly((o.rendite - o.kostenStart) / 100) : rm, bal = 0, paid = 0, zg = 0, zk = 0, bonus = 0, rows = [], kostenJahr = [];
     for (var y = 1; y <= years; y++) {
-      var rmy = y <= (o.startJahre || 0) ? rm1 : rm;
-      for (var m = 0; m < 12; m++) bal = bal * (1 + rmy) + o.beitrag;
+      var rmy = y <= (o.startJahre || 0) ? rm1 : rm, kj = 0;
+      for (var m = 0; m < 12; m++) {
+        if (o.kostenFn) {
+          // Zeitabhängige Anbieterkosten: Prozent p. a. und feste Euro-Beträge je Monat, abhängig von Vertragsmonat und Depotwert
+          var c = o.kostenFn((y - 1) * 12 + m, bal);
+          if (!c || c.offen) return { offen: true, grund: c && c.grund ? c.grund : "Kosten noch offen", abJahr: y };
+          bal = bal * (1 + monthly((o.rendite - c.pct) / 100)) + o.beitrag - (c.eur || 0) / 12;
+          kj += c.pct / 12;
+        } else bal = bal * (1 + rmy) + o.beitrag;
+      }
+      kostenJahr.push(o.kostenFn ? kj : (y <= (o.startJahre || 0) && o.kostenStart != null ? o.kostenStart : o.kosten));
       paid += C;
       var nk = 0; for (var ki = 0; ki < kids.length; ki++) if (kids[ki] + (y - 1) < bis) nk++;
       var z = zulage(C, nk);
-      var b = (y === 1 && o.einsteiger) ? 200 : 0;
+      // Berufseinsteiger: einmalige Erhöhung der Grundzulage um 200 Euro (§ 84 Satz 2 EStG), daher nur mit Mindesteigenbeitrag
+      var b = (y === 1 && o.einsteiger && C >= 120) ? 200 : 0;
       bal += z.grund + z.kind + b; zg += z.grund; zk += z.kind; bonus += b;
       rows.push({ jahr: y, wert: bal, eingezahlt: paid, zulagen: zg + zk + bonus });
     }
@@ -452,7 +462,7 @@
     for (var y2 = 1; y2 <= years; y2++) { for (var m2 = 0; m2 < 12; m2++) be = be * (1 + rme) + o.beitrag; rowsE.push({ jahr: y2, wert: be }); }
     var gain = pos(be - paid), tax = pos(gain * (1 - 0.3) - 1000) * 0.26375, beNet = be - tax;
     var netE = pension(beNet, o.rAus / 100, N);
-    return { jahre: years, dauer: N, wert: bal, eingezahlt: paid, zulagen: zg + zk + bonus, grund: zg, kind: zk, bonus: bonus, ertrag: bal - paid - (zg + zk + bonus), brutto: gross, netto: net, rows: rows, etfWert: be, etfSteuer: tax, etfNetto: netE, etfRows: rowsE, zulageJahr: rows[0] ? zulage(C, kids.filter(function (a) { return a < bis; }).length) : zulage(C, 0), kinderJahre: kids.map(function (a) { return Math.max(0, Math.min(years, bis - a)); }) };
+    return { offen: false, kostenJahr: kostenJahr, jahre: years, dauer: N, wert: bal, eingezahlt: paid, zulagen: zg + zk + bonus, grund: zg, kind: zk, bonus: bonus, ertrag: bal - paid - (zg + zk + bonus), brutto: gross, netto: net, rows: rows, etfWert: be, etfSteuer: tax, etfNetto: netE, etfRows: rowsE, zulageJahr: rows[0] ? zulage(C, kids.filter(function (a) { return a < bis; }).length) : zulage(C, 0), kinderJahre: kids.map(function (a) { return Math.max(0, Math.min(years, bis - a)); }) };
   }
 
   /** Vorabpauschale (§ 18 InvStG). */
@@ -488,7 +498,64 @@
     return (a && b) ? { mit: a, ohne: b, vorteil: a.endwert - b.endwert } : null;
   }
 
-  var api = { compareCalc: compareCalc, livingCalc: livingCalc, grossForNet: grossForNet, gapCalc: gapCalc, strategyCalc: strategyCalc, avdCalc: avdCalc, zulage: zulage, vorabCalc: vorabCalc, etfCalc: etfCalc, reinvestCalc: reinvestCalc, growingAnnuityDue: growingAnnuityDue, pension: pension };
+
+  /* ---------- Altersvorsorgedepot: Kostenmodell je Depotmodell ----------
+     Jedes Angebot besteht aus Kostenbestandteilen (data/av-anbieter.json, Feld bestandteile) mit optionalen Zeiträumen:
+     ab_/bis_kalender (Datum), ab_/bis_vertragsjahr, eroeffnung_ab/_bis (Monat der Eröffnung), max_volumen (Erstattung nur bis zu diesem Depotwert).
+     fund_ter: Fondskosten, ter_erstattung (voll): erstattet die aktiven Fondskosten, freiwillig: ohne Enddatum, widerruflich.
+     Unbekannte Werte (pct null) werden nie geschätzt: das Ergebnis ist dann "offen". */
+  var AV_PCT = { fund_ter: 1, service_fee: 1, management_fee: 1, total_cost: 1, custody_fee: 1 };
+  function avMonat(eroeffnung, t) { // eroeffnung "JJJJ-MM", t = Vertragsmonat ab 0 -> {jahr, kalender, ym}
+    var p = String(eroeffnung || "2027-01").split("-"), y0 = +p[0], m0 = (+p[1] || 1) - 1, mm = m0 + t;
+    var ky = y0 + Math.floor(mm / 12), km = mm % 12 + 1;
+    return { jahr: Math.floor(t / 12) + 1, kalender: ky, ym: ky + "-" + (km < 10 ? "0" : "") + km };
+  }
+  function avAktiv(b, z, eroeffnung) {
+    var ym = z.ym, e = String(eroeffnung || "2027-01").slice(0, 7);
+    if (b.ab_kalender && ym < b.ab_kalender.slice(0, 7)) return false;
+    if (b.bis_kalender && ym > b.bis_kalender.slice(0, 7)) return false;
+    if (b.ab_vertragsjahr && z.jahr < b.ab_vertragsjahr) return false;
+    if (b.bis_vertragsjahr && z.jahr > b.bis_vertragsjahr) return false;
+    if (b.eroeffnung_ab && e < b.eroeffnung_ab.slice(0, 7)) return false;
+    if (b.eroeffnung_bis && e > b.eroeffnung_bis.slice(0, 7)) return false;
+    return true;
+  }
+  /** Kosten eines Angebots in einem Vertragsmonat: {pct, eur, offen, grund, flags}. opt: {eroeffnung, freiwillig} */
+  function avKostenAm(p, t, bal, opt) {
+    opt = opt || {};
+    var bs = (p && p.b) || [], z = avMonat(opt.eroeffnung, t);
+    if (!bs.length || p.k === "offen") return { offen: true, grund: "Konditionen noch nicht veröffentlicht" };
+    var ter = 0, terOffen = false, rest = 0, eur = 0, flags = {}, erst = [];
+    for (var i = 0; i < bs.length; i++) {
+      var b = bs[i];
+      if (!avAktiv(b, z, opt.eroeffnung)) continue;
+      if (b.art === "ter_erstattung") { if (!b.freiwillig || opt.freiwillig !== false) erst.push(b); continue; }
+      if (b.eur_jahr) eur += b.eur_jahr;
+      if (!AV_PCT[b.art]) continue;
+      if (b.pct == null) { if (b.eur_jahr) continue; if (b.art === "fund_ter") { terOffen = true; continue; } return { offen: true, grund: "Kostenbestandteil ohne veröffentlichten Wert" }; }
+      if (b.ca) flags.ca = true;
+      if (b.obergrenze) flags.max = true;
+      if (b.art === "fund_ter") ter += b.pct; else rest += b.pct;
+    }
+    var anteil = 0;
+    for (var j = 0; j < erst.length; j++) {
+      var cap = erst[j].max_volumen, a = cap && bal > cap ? cap / bal : 1;
+      if (erst[j].freiwillig) flags.freiwillig = true;
+      anteil = Math.max(anteil, a);
+    }
+    if (terOffen && anteil < 1) return { offen: true, grund: erst.length ? "Fondskosten oberhalb der Erstattungsgrenze nicht veröffentlicht" : "Fondskosten nach der Erstattung nicht veröffentlicht" };
+    var pct = (terOffen ? 0 : ter * (1 - anteil)) + rest;
+    if (anteil > 0 && ter * (1 - anteil) + rest === 0) { flags.max = false; flags.ca = false; }
+    return { offen: false, pct: Math.round(pct * 1e6) / 1e6, eur: eur, flags: flags };
+  }
+  /** Kostenfunktion für avdCalc. */
+  function avKostenFn(p, opt) { return function (t, bal) { return avKostenAm(p, t, bal, opt); }; }
+  /** Kennzahlen für Tabelle und Sortierung: Kosten im ersten Vertragsjahr und im 10. Vertragsjahr (Depotwert unter allen Volumengrenzen). */
+  function avKennzahlen(p, opt) {
+    var a = avKostenAm(p, 0, 0, opt), b = avKostenAm(p, 9 * 12, 0, opt);
+    return { start: a.offen ? null : a.pct, lang: b.offen ? null : b.pct, startFlags: a.flags || {}, langFlags: b.flags || {}, eur: a.offen ? 0 : a.eur };
+  }
+  var api = { compareCalc: compareCalc, livingCalc: livingCalc, grossForNet: grossForNet, gapCalc: gapCalc, strategyCalc: strategyCalc, avdCalc: avdCalc, zulage: zulage, vorabCalc: vorabCalc, etfCalc: etfCalc, reinvestCalc: reinvestCalc, growingAnnuityDue: growingAnnuityDue, pension: pension, avKostenAm: avKostenAm, avKostenFn: avKostenFn, avKennzahlen: avKennzahlen, avMonat: avMonat };
   if (typeof module !== "undefined" && module.exports) module.exports = api;
   root.RechnerMath = api;
   if (typeof document === "undefined") return;
@@ -641,7 +708,8 @@
     return true;
   };
 
-  /* Anbieter im Altersvorsorgedepot-Rechner: Kosten je Anbieter, Auswahl und Rangliste fuer die eigenen Eingaben */
+  /* Anbieter im Altersvorsorgedepot-Rechner: Depotmodelle mit zeitabhängigen Kosten (data/av-anbieter.json, gebaut von tools/build_av.py),
+     Auswahl A/B und Rangliste für die eigenen Eingaben. Angebote mit unbekannten Kosten bekommen keine Zahl, sondern "noch offen". */
   var AVSEL = null, AVSELB = null, AVD = null;
   function avData() {
     if (AVD) return AVD;
@@ -649,62 +717,79 @@
     try { if (el) AVD = JSON.parse(el.textContent); } catch (e) { }
     return AVD;
   }
-  function avKosten(a, manuell) {
-    var kd = a.kd, ks = a.ks, j = a.j || 0, offen = false;
-    if (kd == null && ks == null) return null;
-    if (kd == null) { kd = manuell; offen = true; }
-    if (ks == null) { ks = kd; j = 0; }
-    return { ks: ks, kd: kd, j: j, offen: offen };
+  function avOpt() {
+    var e = $("av-open"), f = $("av-frei"), v = e && /^\d{4}-\d{2}$/.test(e.value) ? e.value : "2027-01";
+    return { eroeffnung: v < "2027-01" ? "2027-01" : v, freiwillig: f ? f.checked : true };
   }
   function pct(v) { return String(Math.round(v * 100) / 100).replace(".", ",") + " %"; }
+  function avPctTxt(v, fl) { return v == null ? "noch offen" : (fl && fl.max ? "max. " : fl && fl.ca ? "ca. " : "") + pct(v) + (fl && fl.freiwillig ? "*" : ""); }
+  function avLabel(a) { return a.n + " – " + a.p; }
+  function avKurz(a, opt) {
+    var k = avKennzahlen(a, opt);
+    if (k.start == null && k.lang == null) return "Kosten noch offen";
+    var t = k.start === k.lang && JSON.stringify(k.startFlags) === JSON.stringify(k.langFlags) ? "laufend " + avPctTxt(k.lang, k.langFlags) : "zu Beginn " + avPctTxt(k.start, k.startFlags) + ", im 10. Jahr " + avPctTxt(k.lang, k.langFlags);
+    return t + (k.eur ? " plus " + money(k.eur, 0) + " im Jahr" : "");
+  }
+  function avProvCalc(o, i) {
+    var a = avData()[i]; if (!a) return null;
+    var opt = avOpt(), r = avdCalc(Object.assign({}, o, { kostenFn: avKostenFn(a, opt) }));
+    return r ? { r: r, a: a, name: avLabel(a) } : null;
+  }
   function avRank(o, cur) {
     var box = $("av-rank"); if (!box) return;
-    var list = avData(), rows = [];
+    var list = avData(), rows = [], opt = avOpt();
     list.forEach(function (a, i) {
-      var k = avKosten(a, o.kosten);
-      if (!k) { rows.push({ i: i, a: a, offen: true }); return; }
-      var r = avdCalc(Object.assign({}, o, { kosten: k.kd, kostenStart: k.ks, startJahre: k.j }));
-      if (r) rows.push({ i: i, a: a, k: k, r: r });
+      if (!a.r) return;
+      var r = avdCalc(Object.assign({}, o, { kostenFn: avKostenFn(a, opt) }));
+      if (r) rows.push({ i: i, a: a, r: r });
     });
-    rows.sort(function (x, y) { return (y.r ? y.r.netto : -1) - (x.r ? x.r.netto : -1); });
-    var sel = AVSEL ? AVSEL.i : -1, selNetto = null;
-    rows.forEach(function (x) { if (x.i === sel && x.r) selNetto = x.r.netto; });
-    var base = selNetto == null ? cur.netto : selNetto;
+    rows.sort(function (x, y) { return (x.r.offen ? 1 : 0) - (y.r.offen ? 1 : 0) || (y.r.offen ? 0 : y.r.netto - x.r.netto); });
+    var sel = AVSEL != null ? AVSEL : -1, selNetto = null;
+    rows.forEach(function (x) { if (x.i === sel && !x.r.offen) selNetto = x.r.netto; });
+    var base = selNetto == null ? cur.netto : selNetto, frei = false;
     var h = rows.map(function (x) {
       var logo = x.a.d ? '<img class="av-logo" src="https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https://' + x.a.d + '&size=64" alt="" width="22" height="22" loading="lazy" onerror="this.style.visibility=\'hidden\'">' : "";
-      var n = '<th scope="row"><span class="av-id">' + logo + '<span>' + x.a.n + '</span></span></th>';
-      if (x.offen) return '<tr class="off">' + n + '<td class="t">Konditionen noch offen</td><td class="num">–</td><td class="num">–</td><td class="num">–</td><td></td></tr>';
-      var kt = x.k.j > 0 && x.k.ks !== x.k.kd ? pct(x.k.ks) + " für " + x.k.j + " J., danach " + pct(x.k.kd) + (x.k.offen ? " (dein Wert)" : "") : pct(x.k.kd) + (x.k.offen ? " (dein Wert)" : "");
+      var n = '<th scope="row"><span class="av-id">' + logo + '<span>' + esc(x.a.n) + '<small>' + esc(x.a.p) + '</small></span></span></th>';
+      var btn = '<td class="num"><button type="button" class="av-pick" data-i="' + x.i + '">' + (x.i === sel ? "gewählt" : "als A") + '</button> <button type="button" class="av-pick" data-b="' + x.i + '">' + (x.i === AVSELB ? "B gewählt" : "als B") + '</button></td>';
+      if (x.r.offen) return '<tr class="off">' + n + '<td class="t">noch offen' + (x.r.abJahr > 1 ? " ab Jahr " + x.r.abJahr : "") + '</td><td class="num">–</td><td class="num">–</td><td class="num">–</td>' + btn + '</tr>';
+      var k = avKennzahlen(x.a, opt); if (k.startFlags.freiwillig || k.langFlags.freiwillig) frei = true;
       var diff = x.r.netto - base, ds = Math.abs(diff) < 0.5 ? "" : (diff > 0 ? "+" : "−") + money(Math.abs(diff), 0);
-      return '<tr' + (x.i === sel ? ' class="sel"' : "") + '>' + n + '<td class="t">' + kt + '</td><td class="num">' + money(x.r.wert) + '</td><td class="num"><b>' + money(x.r.netto) + '</b></td><td class="num dif ' + (diff < -0.5 ? "neg" : "pos") + '">' + ds + '</td><td class="num"><button type="button" class="av-pick" data-i="' + x.i + '">' + (x.i === sel ? "gewählt" : "als A") + '</button> <button type="button" class="av-pick" data-b="' + x.i + '">' + (x.i === AVSELB ? "B gewählt" : "als B") + '</button></td></tr>';
+      return '<tr' + (x.i === sel ? ' class="sel"' : "") + '>' + n + '<td class="t">' + esc(avKurz(x.a, opt)) + '</td><td class="num">' + money(x.r.wert) + '</td><td class="num"><b>' + money(x.r.netto) + '</b></td><td class="num dif ' + (diff < -0.5 ? "neg" : "pos") + '">' + ds + '</td>' + btn + '</tr>';
     }).join("");
-    var html = '<div class="av-tablewrap"><table class="av-table av-rank"><thead><tr><th scope="col">Anbieter</th><th scope="col">Kosten p. a.</th><th scope="col" class="num">Depotwert</th><th scope="col" class="num">Auszahlung netto / Monat</th><th scope="col" class="num">Abstand' + (selNetto == null ? " zu deiner Eingabe" : " zur Auswahl") + '</th><th scope="col"></th></tr></thead><tbody>' + h + '</tbody></table></div>';
+    var html = '<div class="av-tablewrap" tabindex="0" role="region" aria-label="Rangliste der Anbieter für deine Eingaben, seitlich scrollbar"><table class="av-table av-rank"><caption class="av-cap">Standarddepots und gesteuerte Depots mit veröffentlichten Kosten, Eröffnung ' + opt.eroeffnung.slice(5) + "/" + opt.eroeffnung.slice(0, 4) + '</caption><thead><tr><th scope="col">Anbieter</th><th scope="col">Kosten p. a.</th><th scope="col" class="num">Depotwert</th><th scope="col" class="num">Auszahlung netto / Monat</th><th scope="col" class="num">Abstand' + (selNetto == null ? " zu deiner Eingabe" : " zur Auswahl") + '</th><th scope="col"><span class="sr">Auswahl</span></th></tr></thead><tbody>' + h + '</tbody></table></div>'
+      + '<p class="av-sub">' + (frei ? "* Freiwillige Erstattung ohne Enddatum, kann der Anbieter ändern. " : "") + "„noch offen“: Der Anbieter hat einen Kostenbestandteil nicht veröffentlicht, deshalb rechnen wir hier nichts. Kosten nur aus Presseberichten fließen nicht ein. Order- und Sparplangebühren sowie Spreads sind nicht enthalten.</p>";
     if (box.dataset.h !== html) { box.dataset.h = html; box.innerHTML = html; }
   }
+  function esc(s) { return String(s).replace(/[&<>"]/g, function (c) { return { "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]; }); }
+  function avHint(a) {
+    if (!a) return "";
+    var opt = avOpt(), k = avKennzahlen(a, opt);
+    if (k.start == null) return "Für dieses Angebot sind die Kosten noch offen. Gerechnet wird mit deiner Annahme im Feld „Kosten“.";
+    return avKurz(a, opt) + (k.lang == null ? ". Danach sind die Kosten offen, der Vergleich zeigt deshalb keine Zahl." : ". Angaben des Anbieters, Quellen in der Tabelle.");
+  }
   function avSetProv(i) {
-    var list = avData(), sel = $("av-prov"), cost = $("av-cost"), hint = $("av-prov-hint");
+    var list = avData(), sel = $("av-prov"), hint = $("av-prov-hint");
     if (i == null || i < 0 || !list[i]) { AVSEL = null; if (sel) sel.value = ""; if (hint) hint.textContent = ""; return; }
-    var a = list[i], k = avKosten(a, num("av-cost"));
-    if (!k) { AVSEL = null; if (sel) sel.value = String(i); if (hint) hint.textContent = "Dieser Anbieter hat noch keine Konditionen veröffentlicht. Es gilt dein eigener Wert."; return; }
-    AVSEL = { i: i, ks: k.ks, j: k.j };
-    if (sel) sel.value = String(i);
-    if (!k.offen && cost) cost.value = String(k.kd).replace(".", ",");
-    if (hint) hint.textContent = (k.j > 0 && k.ks !== k.kd ? "Erste " + k.j + " Jahre " + pct(k.ks) + ", danach " + pct(k.kd) + ". " : "Laufende Kosten " + pct(k.kd) + ". ") + (k.offen ? "Die Kosten nach der Erstattung sind offen, es gilt dein Wert im Feld Kosten. " : "") + "Angaben laut Ankündigung, Quellen im Vergleich unten.";
+    AVSEL = i; if (sel) sel.value = String(i);
+    if (hint) hint.textContent = avHint(list[i]);
   }
   function avInit() {
     var sel = $("av-prov"); if (!sel || sel.dataset.ready) return; sel.dataset.ready = "1";
     var list = avData();
-    sel.innerHTML = '<option value="">Eigene Eingabe</option>' + list.map(function (a, i) { return '<option value="' + i + '">' + a.n + "</option>"; }).join("");
+    var opts = list.map(function (a, i) { return a.r ? '<option value="' + i + '">' + esc(avLabel(a)) + (avKennzahlen(a, avOpt()).start == null ? " (Kosten offen)" : "") + "</option>" : ""; }).join("");
+    sel.innerHTML = '<option value="">Eigene Eingabe</option>' + opts;
     sel.addEventListener("change", function () { avSetProv(sel.value === "" ? null : +sel.value); });
     var selB = $("av-prov2");
     if (selB) {
-      selB.innerHTML = '<option value="">Keiner (nur ein Anbieter)</option>' + list.map(function (a, i) { return '<option value="' + i + '">' + a.n + "</option>"; }).join("");
-      selB.addEventListener("change", function () { AVSELB = selB.value === "" ? null : +selB.value; var hb = $("av-prov2-hint"); if (hb) { var A = AVSELB == null ? null : list[AVSELB], k = A ? avKosten(A, num("av-cost")) : null; hb.textContent = !A ? "" : !k ? "Noch keine Konditionen veröffentlicht, es gilt dein Wert bei Kosten." : (k.j > 0 && k.ks !== k.kd ? "Erste " + k.j + " Jahre " + pct(k.ks) + ", danach " + pct(k.kd) + "." : "Laufende Kosten " + pct(k.kd) + "."); } });
+      selB.innerHTML = '<option value="">Keiner (nur ein Anbieter)</option>' + opts;
+      selB.addEventListener("change", function () { AVSELB = selB.value === "" ? null : +selB.value; var hb = $("av-prov2-hint"); if (hb) hb.textContent = AVSELB == null ? "" : avHint(list[AVSELB]); });
     }
-    var cost = $("av-cost"); if (cost) cost.addEventListener("input", function () { if (AVSEL) { AVSEL = null; sel.value = ""; var h = $("av-prov-hint"); if (h) h.textContent = ""; } });
+    var cost = $("av-cost"); if (cost) cost.addEventListener("input", function () { if (AVSEL != null) avSetProv(null); });
+    ["av-open", "av-frei"].forEach(function (id) { var el = $(id); if (el) el.addEventListener("change", function () { if (AVSEL != null) avSetProv(AVSEL); var hb = $("av-prov2-hint"); if (hb && AVSELB != null) hb.textContent = avHint(list[AVSELB]); }); });
     var box = $("av-rank");
     if (box) box.addEventListener("click", function (e) { var b = e.target.closest(".av-pick"); if (!b) return; if (b.dataset.b != null) { AVSELB = +b.dataset.b; var sb = $("av-prov2"); if (sb) { sb.value = String(AVSELB); sb.dispatchEvent(new Event("change")); } } else avSetProv(+b.dataset.i); T["altersvorsorgedepot"](); var f = $("av-prov"); if (f && f.scrollIntoView) f.scrollIntoView({ behavior: "smooth", block: "center" }); });
-    var m = /[#&?]anbieter=(\d+)/.exec(location.search + location.hash); if (m) avSetProv(+m[1]);
+    var m = /[#&?]anbieter=([\w-]+)/.exec(location.search + location.hash);
+    if (m) { var idx = /^\d+$/.test(m[1]) ? +m[1] : list.findIndex(function (a) { return a.id === m[1]; }); if (idx >= 0 && list[idx] && list[idx].r) avSetProv(idx); }
   }
 
   /* 6) Altersvorsorgedepot */
@@ -714,12 +799,6 @@
     var out = [], parts = raw.split(/[\s,;]+/);
     for (var i = 0; i < parts.length; i++) { if (parts[i] === "") continue; var v = parseFloat(parts[i].replace(",", ".")); if (!isFinite(v) || v < 0 || v > 24) return null; out.push(Math.floor(v)); }
     return out.length > 8 ? null : out;
-  }
-  function avProvCalc(o, i) {
-    var a = avData()[i]; if (!a) return null;
-    var k = avKosten(a, o.kosten); if (!k) return null;
-    var r = avdCalc(Object.assign({}, o, { kosten: k.kd, kostenStart: k.ks, startJahre: k.j }));
-    return r ? { r: r, k: k, name: a.n } : null;
   }
   T["altersvorsorgedepot"] = function () {
     avInit();
@@ -733,12 +812,15 @@
     var bonusOk = o.alter < 25, cb = $("av-start");
     if (cb) { cb.disabled = !bonusOk; if (!bonusOk) { cb.checked = false; o.einsteiger = false; } }
     set("av-start-hint", bonusOk ? "" : "Nur bei Abschluss vor dem 25. Geburtstag.");
-    o.kostenStart = AVSEL ? AVSEL.ks : null; o.startJahre = AVSEL ? AVSEL.j : 0;
-    var r = avdCalc(o);
+    var list = avData(), A = AVSEL != null ? list[AVSEL] : null, opt = avOpt(), aOffen = false;
+    var r = null;
+    if (A) { r = avdCalc(Object.assign({}, o, { kostenFn: avKostenFn(A, opt) })); if (r && r.offen) { aOffen = true; r = avdCalc(o); } }
+    else r = avdCalc(o);
     if (!r) return err("av-err", "Das Rentenalter muss nach dem heutigen Alter liegen und das Endalter nach dem Rentenalter.");
     var warn = [];
     if (o.beitrag * 12 > 1800) warn.push("Gefördert werden nur 1.800 € Eigenbeitrag im Jahr. Für den Teil darüber gelten andere steuerliche Regeln, der Rechner nimmt trotzdem deinen Steuersatz im Alter.");
-    if (o.beitrag * 12 < 120 && o.beitrag > 0) warn.push("Unter 120 € Eigenbeitrag im Jahr (10 € im Monat) gibt es keine Zulage.");
+    if (o.beitrag * 12 < 120 && o.beitrag > 0) warn.push("Unter 120 € Eigenbeitrag im Jahr (10 € im Monat) gibt es keine Zulage und keinen Berufseinsteiger-Bonus.");
+    if (aOffen) warn.push("Bei " + avLabel(A) + " sind die Kosten nicht vollständig veröffentlicht. Die Kennzahlen oben rechnen deshalb mit deiner Annahme im Feld „Kosten“ (" + pct(o.kosten) + "), nicht mit Anbieterangaben.");
     err("av-err", warn.join(" "));
     var kh = $("av-kid-hint");
     if (kh) {
@@ -747,21 +829,24 @@
     }
     set("av-k1", money(r.wert)); set("av-k2", money(r.eingezahlt)); set("av-k3", money(r.zulagen)); set("av-k4", money(r.ertrag));
     set("av-k5", money(r.zulageJahr.grund + r.zulageJahr.kind)); set("av-k6", money(r.netto) + " / Monat"); set("av-k7", money(r.etfNetto) + " / Monat"); set("av-k8", money(r.etfWert - r.etfSteuer));
+    set("av-basis", A && !aOffen ? "Gerechnet mit den Kosten von " + avLabel(A) + " (Anbieterangaben, Eröffnung " + opt.eroeffnung.slice(5) + "/" + opt.eroeffnung.slice(0, 4) + ")." : "Gerechnet mit deiner Annahme: " + pct(o.kosten) + " Kosten pro Jahr.");
     avRank(o, r);
     // Zweiter Anbieter
-    var nameA = AVSEL ? avData()[AVSEL.i].n : "Eigene Eingabe", B = AVSELB != null ? avProvCalc(o, AVSELB) : null;
+    var nameA = A && !aOffen ? avLabel(A) : "Deine Annahme", B = AVSELB != null ? avProvCalc(o, AVSELB) : null, bOffen = B && B.r.offen;
+    if (bOffen) B = null;
     var cmp = $("av-cmp"), yrs = $("av-years");
-    if (cmp) cmp.hidden = !B; if (yrs) yrs.hidden = !B; 
+    if (cmp) cmp.hidden = !B && !bOffen; if (yrs) yrs.hidden = !B;
     var labels = r.rows.map(function (x) { return "Alter " + (o.alter + x.jahr); });
     var ds = [{ label: "Balken: Eigenbeiträge", data: r.rows.map(function (x) { return x.eingezahlt; }), backgroundColor: GREY, stack: "d" }, { label: "Balken: Zulagen vom Staat", data: r.rows.map(function (x) { return x.zulagen; }), backgroundColor: GREEN, stack: "d" }, { label: "Balken: Erträge", data: r.rows.map(function (x) { return x.wert - x.eingezahlt - x.zulagen; }), backgroundColor: BLUE, stack: "d" }];
     if (B) ds.push({ label: "Linie: Depotwert " + B.name, type: "line", data: B.r.rows.map(function (x) { return x.wert; }), borderColor: "#7c3aed", borderWidth: 3, pointRadius: 0, tension: .2 });
     var cap = $("av-chartcap"); if (cap) cap.textContent = B ? "Die Balken zeigen das Depot von " + nameA + ": grau deine Beiträge, grün die Zulagen vom Staat, blau die Erträge. Die lila Linie ist der Depotwert von " + B.name + " bei gleichen Eingaben." : "Die Balken zeigen, woraus dein Depot besteht: grau deine Beiträge, grün die Zulagen vom Staat, blau die Erträge am Kapitalmarkt. Den Vergleich mit einem ETF-Sparplan nach Steuern findest du oben in den Kennzahlen.";
     draw("av-chart", { type: "bar", data: { labels: labels, datasets: ds }, options: { interaction: inter, scales: { x: { stacked: true }, y: Object.assign({ stacked: true }, ytitle("Euro")) }, plugins: { title: { display: true, text: B ? "Depotwert: " + nameA + " (Balken) gegen " + B.name + " (Linie)" : "Altersvorsorgedepot: Zusammensetzung des Depots" }, tooltip: { callbacks: { label: tip } } } } });
-    if (B) {
+    if (bOffen) set("av-cmp-text", "Für " + avLabel(list[AVSELB]) + " sind die Kosten noch offen, deshalb gibt es keinen Vergleich.");
+    else if (B) {
       var dm = r.netto - B.r.netto;
-      set("av-cmp-text", nameA + ": " + money(r.netto) + " netto im Monat. " + B.name + ": " + money(B.r.netto) + " netto im Monat. Abstand: " + (dm >= 0 ? "+" : "−") + money(Math.abs(dm)) + " im Monat zugunsten von " + (dm >= 0 ? nameA : B.name) + (B.k.offen ? ". Bei " + B.name + " sind die Kosten nach der Erstattung offen, es gilt dein Wert im Feld Kosten." : "."));
+      set("av-cmp-text", nameA + ": " + money(r.netto) + " netto im Monat. " + B.name + ": " + money(B.r.netto) + " netto im Monat. Abstand: " + (dm >= 0 ? "+" : "−") + money(Math.abs(dm)) + " im Monat zugunsten von " + (dm >= 0 ? nameA : B.name) + ".");
       var rowsH = r.rows.map(function (x, i) { var g = x.wert - B.r.rows[i].wert; return "<tr><td>" + (o.alter + x.jahr) + "</td><td class=\"num\">" + money(x.wert) + "</td><td class=\"num\">" + money(B.r.rows[i].wert) + "</td><td class=\"num " + (g < -0.5 ? "neg" : "pos") + "\">" + (g >= 0 ? "+" : "−") + money(Math.abs(g)) + "</td></tr>"; }).join("");
-      var html = "<table class=\"av-table av-yt\"><thead><tr><th>Alter</th><th class=\"num\">" + nameA + "</th><th class=\"num\">" + B.name + "</th><th class=\"num\">Abstand</th></tr></thead><tbody>" + rowsH + "</tbody></table>";
+      var html = "<table class=\"av-table av-yt\"><thead><tr><th>Alter</th><th class=\"num\">" + esc(nameA) + "</th><th class=\"num\">" + esc(B.name) + "</th><th class=\"num\">Abstand</th></tr></thead><tbody>" + rowsH + "</tbody></table>";
       var yb = $("av-years-body"); if (yb && yb.dataset.h !== html) { yb.dataset.h = html; yb.innerHTML = html; }
     }
     return true;

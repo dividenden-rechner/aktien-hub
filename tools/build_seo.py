@@ -225,8 +225,8 @@ C["dividenden-reinvestieren"] = dict(
 C["altersvorsorgedepot"] = dict(
     name="Altersvorsorge-Depot", crumb="Altersvorsorge-Depot",
     title="Altersvorsorgedepot-Rechner und Anbieter im Vergleich 2027 | Dividenden-Rechner",
-    desc="Altersvorsorgedepot berechnen: Zulagen, Depotwert und Auszahlung im Vergleich zum ETF-Sparplan, dazu die Anbieter 2027 mit Kosten (Trade Republic, Scalable, ING, Deka, comdirect).",
-    intro="Das Altersvorsorgedepot löst ab 2027 die Riester-Rente ab. Der Rechner zeigt Depotwert, Zulagen und Auszahlung und stellt einen ETF-Sparplan ohne Förderung daneben. Unten findest du die Anbieter mit Kosten und Quellen.",
+    desc="Altersvorsorgedepot berechnen: Zulagen, Depotwert und Auszahlung im Vergleich zum ETF-Sparplan, dazu die Anbieter 2027 mit zeitabhängigen Kosten (N26, Trade Republic, Scalable, ING, Deka, Consorsbank).",
+    intro="Das Altersvorsorgedepot löst ab 2027 die Riester-Rente ab. Der Rechner zeigt Depotwert, Zulagen und Auszahlung und stellt einen ETF-Sparplan ohne Förderung daneben. Darüber findest du die Anbieter mit ihren Depotmodellen, Kosten und Quellen.",
     sections=[
         ("Rechenbeispiel mit den Voreinstellungen", """<p>Du bist 30, zahlst 150 Euro im Monat ein, die Auszahlung beginnt mit 67 und läuft bis 85. Das Depot erzielt 6 Prozent vor Kosten, die Kosten liegen bei 1,0 Prozent im Jahr (gesetzliche Obergrenze für das Standarddepot), in der Auszahlphase sind es 3 Prozent, dein Steuersatz im Alter beträgt 20 Prozent.</p>
 <ul>
@@ -239,15 +239,15 @@ C["altersvorsorgedepot"] = dict(
         ("Für wen lohnt sich das Altersvorsorgedepot?", """<ul>
 <li><strong>Eltern:</strong> Die Kinderzulage von 100 Prozent je eingezahltem Euro bis 300 Euro im Jahr und Kind ist die stärkste Förderung. Sie läuft, solange Kindergeld gezahlt wird.</li>
 <li><strong>Berufseinsteiger:</strong> Bonus von 200 Euro bei Abschluss vor dem 25. Geburtstag und viel Zeit für den Zinseszins.</li>
-<li><strong>Bestehende Riester-Sparer:</strong> Bestehende Verträge laufen weiter, neue Riester-Verträge gibt es ab 2027 nicht mehr. Ein Wechsel ist möglich, kann aber Kosten verursachen.</li>
+<li><strong>Bestehende Riester-Sparer:</strong> Bestehende Verträge laufen weiter, neue Riester-Verträge gibt es ab 2027 nicht mehr. Ein Wechsel ist möglich: In den ersten fünf Jahren nach Abschluss darf der alte Anbieter bis zu 150 Euro verlangen, danach nichts, der neue Anbieter höchstens 150 Euro Verwaltungspauschale.</li>
 <li><strong>Weniger sinnvoll</strong> kann es sein, wenn du früh an das Geld willst. Die Auszahlung beginnt frühestens mit 65.</li>
 </ul>"""),
     ],
     faq=[
-        ("Wann startet das Altersvorsorgedepot?", "Neue Verträge sind ab dem 1. Januar 2027 möglich. Das Gesetz hat der Bundestag am 27. März 2026 beschlossen, der Bundesrat hat am 8. Mai 2026 zugestimmt. Anbieter brauchen vorher eine Zertifizierung durch das Bundeszentralamt für Steuern."),
-        ("Welcher Anbieter hat das günstigste Altersvorsorgedepot?", "Das lässt sich noch nicht verbindlich sagen. Anbieter wie flatex, Deka, Scalable Capital und ING nennen niedrige laufende Kosten, Trade Republic und weitere erstatten ETF-Kosten. Alle Angaben sind Ankündigungen. Der Vergleich unten zeigt den Stand mit Quellen."),
-        ("Wie hoch sind die Kosten beim Altersvorsorgedepot?", "Das Standarddepot ist auf höchstens 1,0 Prozent Effektivkosten pro Jahr gedeckelt. Beim frei gestalteten Depot gibt es keinen gesetzlichen Deckel. Der Anbieterwechsel ist nach fünf Jahren kostenfrei, der neue Anbieter darf höchstens 150 Euro berechnen."),
-        ("Kann ich im Rechner Anbieter vergleichen?", "Ja. Wähle oben einen Anbieter aus, dann übernimmt der Rechner dessen Kosten und die Dauer einer möglichen Erstattung. Unter dem Rechner siehst du alle Anbieter mit deinen Eingaben nebeneinander, sortiert nach der Auszahlung pro Monat. Die Angaben werden regelmäßig automatisch auf Änderungen geprüft."),
+        ("Wann startet das Altersvorsorgedepot?", "Neue Verträge sind ab dem 1. Januar 2027 möglich. Das Gesetz hat der Bundestag am 27. März 2026 beschlossen, der Bundesrat hat am 8. Mai 2026 zugestimmt, verkündet wurde es am 29. Mai 2026 (BGBl. 2026 I Nr. 156). Jeder Vertrag braucht eine Zertifizierung durch das Bundeszentralamt für Steuern."),
+        ("Welcher Anbieter hat das günstigste Altersvorsorgedepot?", "Das lässt sich noch nicht verbindlich sagen. Viele Anbieter erstatten die ETF-Kosten zum Start, oft nur bis zu einem Datum, für einige Jahre oder bis zu einem Depotwert, danach gelten die laufenden Kosten. Einige Erstattungen haben kein Enddatum, sind aber freiwillig. Vollständige Effektivkosten nennen die wenigsten. Der Vergleich zeigt je Depotmodell die Kosten zu Beginn und im zehnten Jahr mit Quellen, der Rechner rechnet die Zeiträume für deine Eingaben durch."),
+        ("Wie hoch sind die Kosten beim Altersvorsorgedepot?", "Das Standarddepot ist auf höchstens 1,0 Prozent Effektivkosten pro Jahr gedeckelt. Beim frei gestalteten Depot und bei Garantieprodukten gibt es keinen gesetzlichen Deckel. Ein Anbieterwechsel kostet in den ersten fünf Jahren nach Abschluss höchstens 150 Euro beim alten Anbieter, danach nichts; der neue Anbieter darf höchstens 150 Euro berechnen."),
+        ("Kann ich im Rechner Anbieter vergleichen?", "Ja. Wähle ein Depotmodell aus, dann rechnet der Rechner Monat für Monat mit dessen Kostenbestandteilen, also mit befristeten Erstattungen, Kosten ab einem bestimmten Datum, Gebühren je nach Eröffnungsmonat und festen Euro-Gebühren. Ist ein Kostenbestandteil nicht veröffentlicht, steht dort „noch offen“ statt einer Zahl. Die Rangliste zeigt alle Standard- und gesteuerten Depots mit deinen Eingaben, sortiert nach der Auszahlung pro Monat."),
         ("Wird das Altersvorsorgedepot in der Ansparphase besteuert?", "Nein. In der Ansparphase fallen keine Steuern an, auch keine Vorabpauschale, und Umschichten löst keine Abgeltungsteuer aus. Die Auszahlung wird nachgelagert mit deinem persönlichen Steuersatz versteuert."),
     ],
     related=["luecke", "etf", "vap", "start", "etfoder", "depot"],
