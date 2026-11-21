@@ -162,19 +162,23 @@ class Browser(unittest.TestCase):
 
     def test_rechner_mit_anbieter_und_eroeffnungsmonat(self):
         ctx, page, errors = self.open(1280, 900)
-        idx = page.evaluate("JSON.parse(document.getElementById('av-data').textContent).findIndex(p=>p.id==='n26-standard')")
+        idx = page.evaluate("JSON.parse(document.getElementById('av-data').textContent).findIndex(p=>p.id==='sc-standard')")
         page.select_option("#av-prov", str(idx))
         page.wait_for_timeout(300)
         n_jan = page.text_content("#av-k6")
-        self.assertIn("N26", page.text_content("#av-basis"))
+        self.assertIn("Scalable", page.text_content("#av-basis"))
+        # ohne die freiwillige Erstattung ab 2028 fallen bei Scalable 0,15 % an
+        page.uncheck("#av-frei")
+        page.dispatch_event("#av-frei", "change")
+        page.wait_for_timeout(300)
+        n_ohne = page.text_content("#av-k6")
+        self.assertNotEqual(n_jan, n_ohne, "Ohne freiwillige Erstattung ändert sich das Ergebnis bei Scalable")
         page.fill("#av-open", "2027-07")
         page.dispatch_event("#av-open", "change")
         page.wait_for_timeout(300)
-        n_jul = page.text_content("#av-k6")
-        self.assertNotEqual(n_jan, n_jul, "Eröffnung ab Juli 2027 ändert die N26-Kosten")
         self.assertIn("noch offen", page.text_content("#av-rank"))
         # Angebot mit offenen Kosten: Kennzahlen mit eigener Annahme, deutlich gekennzeichnet
-        sb = page.evaluate("JSON.parse(document.getElementById('av-data').textContent).findIndex(p=>p.id==='sb-standard')")
+        sb = page.evaluate("JSON.parse(document.getElementById('av-data').textContent).findIndex(p=>p.id==='allianz-standard')")
         page.select_option("#av-prov", str(sb))
         page.wait_for_timeout(300)
         self.assertIn("Annahme", page.text_content("#av-err"))

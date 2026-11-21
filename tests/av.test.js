@@ -11,7 +11,8 @@ const ROOT = path.join(__dirname, "..");
 const D = JSON.parse(fs.readFileSync(path.join(ROOT, "data", "av-anbieter.json"), "utf8"));
 const PAGE = fs.readFileSync(path.join(ROOT, "altersvorsorgedepot", "index.html"), "utf8");
 const FLAT = JSON.parse(PAGE.match(/<script type="application\/json" id="av-data">([\s\S]*?)<\/script>/)[1].replace(/<\\\//g, "</"));
-const P = Object.fromEntries(FLAT.map((p) => [p.id, p]));
+// Engine-Tests rechnen mit allen Depotmodellen aus den Daten, nicht nur mit denen in der Tabelle
+const P = Object.fromEntries(D.anbieter.flatMap((a) => a.produkte.map((p) => [p.id, { id: p.id, b: p.bestandteile, k: p.konditionen }])));
 
 // Vertragsmonat für ein Kalenderdatum bei gegebener Eröffnung
 const t = (eroeffnung, ym) => { const [y0, m0] = eroeffnung.split("-").map(Number), [y, m] = ym.split("-").map(Number); return (y - y0) * 12 + (m - m0); };
@@ -99,7 +100,19 @@ test("mehrere Depotmodelle je Anbieter werden getrennt erfasst", () => {
   for (const a of D.anbieter) for (const p of a.produkte) { assert.ok(!ids.has(p.id), "doppelte id " + p.id); ids.add(p.id); assert.ok(["standard", "gesteuert", "frei", "beratung", "garantie"].includes(p.art), p.id); }
   const anzahl = (id) => D.anbieter.find((a) => a.id === id).produkte.length;
   assert.equal(anzahl("n26"), 2); assert.equal(anzahl("consorsbank"), 3); assert.equal(anzahl("allianz"), 3);
-  assert.equal(FLAT.length, ids.size, "Seite und Daten haben gleich viele Depotmodelle");
+});
+
+test("Tabelle zeigt nur zertifizierte Altersvorsorgedepots mit Anbieterbeleg, alle anderen stehen im Aufklappbereich", () => {
+  const imVergleich = (p) => (p.zertifikate || []).length > 0 && p.pruefstatus === "primary_verified" && p.art !== "garantie";
+  const soll = D.anbieter.flatMap((a) => a.produkte.filter(imVergleich).map((p) => p.id)).sort();
+  assert.deepEqual(FLAT.map((p) => p.id).sort(), soll);
+  for (const p of FLAT) assert.notEqual(p.art, "garantie", p.id);
+  for (const id of ["sc-standard", "tr-standard", "allianz-standard"]) assert.ok(soll.includes(id), id);
+  for (const id of ["n26-standard", "allianz-investflex80", "tp-standard"]) assert.ok(!soll.includes(id), id);
+  for (const a of D.anbieter) for (const p of a.produkte) for (const z of p.zertifikate || []) { assert.match(z.nr, /^\d{6}$/, p.id); assert.ok(p.quellen.includes("bzst"), p.id); }
+  const more = PAGE.match(/<details class="av-more">([\s\S]*?)<\/details>/);
+  assert.ok(more, "Aufklappbereich fehlt");
+  for (const a of D.anbieter) if (!a.produkte.some(imVergleich)) assert.ok(more[1].includes(a.name.replace(/&/g, "&amp;")), a.name + " fehlt im Aufklappbereich");
 });
 
 test("Quellenzuordnung: jede Aussage hat eine Quelle mit URL und Abrufdatum", () => {
@@ -114,7 +127,8 @@ test("Quellenzuordnung: jede Aussage hat eine Quelle mit URL und Abrufdatum", ()
 
 test("nur mit Anbieterquellen belegte Angebote kommen in den Rechner", () => {
   for (const p of FLAT) if (p.r) assert.equal(p.pr, "primary_verified", p.id);
-  for (const id of ["tp-standard", "dws-vorsorgedepot", "union-basis", "deka-plus"]) assert.equal(P[id].r, false, id);
+  const ids = new Set(FLAT.filter((p) => p.r).map((p) => p.id));
+  for (const id of ["tp-standard", "dws-vorsorgedepot", "union-basis", "deka-plus", "n26-standard"]) assert.ok(!ids.has(id), id);
 });
 
 test("Python (build_av.py) und JavaScript rechnen gleich", () => {

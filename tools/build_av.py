@@ -147,6 +147,7 @@ CSS = """<style>
 .av-st{font-size:.78rem;white-space:nowrap}.av-st.s2{color:#8a6d1a}
 .av-h{color:#8a6d1a;font-size:.78rem;margin-top:4px}
 .av-sum{margin:14px 0}.av-sum li{margin:4px 0}
+.av-more{border-top:1px solid #e3e7ea;border-bottom:1px solid #e3e7ea;padding:8px 0;margin:14px 0}.av-more summary{cursor:pointer;font-weight:600;color:#1a7f4b}.av-wl{list-style:none;padding:0;margin:10px 0}.av-wl li{padding:6px 0;border-bottom:1px solid #f0f2f4;font-size:.9rem;line-height:1.45}.av-wl .av-id{display:inline-flex;gap:6px;align-items:center;margin-right:4px;vertical-align:middle}
 .sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)}
 @media(max-width:900px){.av-scroll-hint{display:block}.av-table th:first-child{min-width:140px;max-width:160px}.av-table thead th:first-child{white-space:normal}.av-table .num{min-width:84px}}
 </style>
@@ -181,6 +182,11 @@ def rechts_text(D):
 </ul>"""
 
 
+def im_vergleich(p):
+    """In die Tabelle kommt nur, was zertifiziert, vom Anbieter online belegt und ein Depot (keine Garantie) ist."""
+    return bool(p.get("zertifikate")) and p["pruefstatus"] == "primary_verified" and p["art"] != "garantie"
+
+
 def main():
     page = open(PAGE, encoding="utf-8").read()
     D = json.load(open(DATA, encoding="utf-8"))
@@ -188,8 +194,12 @@ def main():
     flat, rows = [], []
     gruppen = {"befristet": [], "freiwillig": [], "laufend": [], "offen": []}
     n_anb = len(D["anbieter"])
+    weitere = []
     for a in D["anbieter"]:
         for p in a["produkte"]:
+            if not im_vergleich(p):
+                weitere.append((a, p))
+                continue
             i = len(flat)
             ks, ksf, kd, kdf, eur = kennzahlen(p)
             flat.append({"i": i, "id": p["id"], "n": a["name"], "p": p["name"], "d": a.get("domain", ""), "art": p["art"], "pr": p["pruefstatus"],
@@ -207,7 +217,7 @@ def main():
                     gruppen["laufend"].append(label)
             qs = " ".join(f'<a href="{esc(Q[k]["url"])}" target="_blank" rel="noopener nofollow">{esc(Q[k]["titel"].split(":")[0])}{", " + dmy(Q[k]["datum"]) if Q[k].get("datum") else ""}</a>' for k in p["quellen"])
             hin = " ".join(x for x in [p.get("hinweis", ""), a.get("hinweis", "")] if x)
-            stl = PRUEF.get(p["pruefstatus"], p["pruefstatus"])
+            zt = "<br>".join(f'Nr. {esc(z["nr"])}' for z in p["zertifikate"])
             rows.append(
                 f'<tr class="av-row" data-i="{i}" data-n="{esc(a["name"] + " " + p["name"])}" data-art="{p["art"]}" data-dau="{"" if kd is None else kd}" data-sta="{"" if ks is None else ks}">'
                 f'<th scope="row"><div class="av-id">{logo(a.get("domain"))}<span><span class="av-n">{esc(a["name"])}</span><small>{esc(p["name"])}</small></span></div></th>'
@@ -215,8 +225,26 @@ def main():
                 f'<td>{esc(ART.get(p["art"], p["art"]))}</td>'
                 f'<td class="w">{esc(p["kosten_text"])}' + (f'<div class="av-h">{esc(hin)}</div>' if hin else "") + '</td>'
                 f'<td class="w">{esc(p["depot_text"])}</td><td>{esc(p["auswahl_text"])}</td>'
-                f'<td class="av-st{" s2" if p["pruefstatus"] != "primary_verified" else ""}">{esc(stl)}</td><td class="av-q">{qs}</td></tr>')
+                f'<td class="av-st">{zt}</td><td class="av-q">{qs}</td></tr>')
     n_prod = len(flat)
+    n_anb_v = len({f["n"] for f in flat})
+    # weitere Anbieter für den aufklappbaren Bereich, je Anbieter eine Zeile
+    wa = {}
+    for a, p in weitere:
+        wa.setdefault(a["name"], []).append((a, p))
+    def grund(p):
+        if p["art"] == "garantie":
+            return "Garantieprodukt, kein Altersvorsorgedepot"
+        if p["pruefstatus"] != "primary_verified":
+            return "nur aus Presseberichten bekannt"
+        if not p.get("zertifikate"):
+            return "noch kein BZSt-Zertifikat"
+        return "noch nicht im Vergleich"
+    w_li = []
+    for name in sorted(wa, key=str.lower):
+        teile = "; ".join(f'{esc(p["name"])}: {esc(p["kosten_text"])} ({grund(p)})' for _, p in wa[name])
+        w_li.append(f'<li><span class="av-id">{logo(wa[name][0][0].get("domain"), 20)}<strong>{esc(name)}</strong></span> {teile}</li>')
+    w_zert = "".join(f'<li><strong>{esc(x["name"])}:</strong> {esc(x["grund"])}</li>' for x in D.get("weitere_zertifikate", []))
     n_bek = sum(1 for f in flat if f["kd"] is not None)
     li_g = lambda t, k: f"<li><strong>{t}:</strong> {esc(', '.join(gruppen[k]))}.</li>" if gruppen[k] else ""
     aend = "".join(f'<li>{dmy(x["datum"])}: {esc(x["text"])}</li>' for x in D.get("aenderungen", [])[:8])
@@ -225,16 +253,24 @@ def main():
     bmq = Q.get(bm.get("quelle", ""), {})
     art_opts = "".join(f'<option value="{k}">{v}</option>' for k, v in ART.items())
     body = f"""<h2 id="anbieter">Altersvorsorgedepot Anbieter im Vergleich</h2>
-<p class="lead">Ab dem 1. Januar 2027 können Verträge für das geförderte Altersvorsorgedepot abgeschlossen werden. Wir haben {n_anb} Anbieter mit {n_prod} Depotmodellen bei den Anbietern selbst geprüft, für {n_bek} Modelle lassen sich die laufenden Kosten im zehnten Jahr aus Anbieterangaben bestimmen. Stand: {dmy(D["stand"])}.</p>
+<p class="lead">Ab dem 1. Januar 2027 können Verträge für das geförderte Altersvorsorgedepot abgeschlossen werden. In der Tabelle stehen nur Depotmodelle, die das Bundeszentralamt für Steuern bereits zertifiziert hat und die der Anbieter auf seiner Website als Altersvorsorgedepot anbietet: derzeit {n_prod} Modelle von {n_anb_v} Anbietern. Viele Banken haben ein Depot angekündigt, aber noch kein Zertifikat. Sie stehen unter der Tabelle zum Aufklappen. Stand: {dmy(D["stand"])}.</p>
 <p class="note"><strong>Wichtig:</strong> {esc(D["hinweis"])} {esc(D.get("zertifizierung", ""))} Das ist keine Anlageberatung.</p>
 <div class="av-filter" role="group" aria-label="Filter"><label for="av-f-art">Depotart <select id="av-f-art"><option value="">Alle</option>{art_opts}</select></label><label><input type="checkbox" id="av-f-kosten"> Nur mit bekannten Kosten im 10. Jahr</label><span class="av-count" id="av-count" aria-live="polite"></span></div>
 <div class="av-tabs" id="avt" role="group" aria-label="Sortierung"><button type="button" class="av-tab" data-s="dau" aria-pressed="true">Kosten im 10. Jahr</button><button type="button" class="av-tab" data-s="sta" aria-pressed="false">Kosten zu Beginn</button><button type="button" class="av-tab" data-s="n" aria-pressed="false">A bis Z</button></div>
 <p class="av-scroll-hint">Tabelle seitlich scrollen für alle Spalten →</p>
-<div class="av-tablewrap" tabindex="0" role="region" aria-label="Anbietervergleich, seitlich scrollbar"><table class="av-table"><caption>Laufende Kosten in Prozent pro Jahr bei Eröffnung im Januar 2027, ohne Order- und Sparplangebühren und Spreads. „max.“ = Obergrenze laut Anbieter, „ca.“ = ungefährer Wert, * = freiwillige Erstattung ohne Enddatum.</caption><thead><tr><th scope="col">Anbieter und Depotmodell</th><th scope="col" class="num">Kosten zu Beginn</th><th scope="col" class="num">Kosten im 10. Jahr</th><th scope="col">Art</th><th scope="col">Kosten im Detail</th><th scope="col">Depot und Orders</th><th scope="col">Anlage</th><th scope="col">Beleg</th><th scope="col">Quellen</th></tr></thead>
+<div class="av-tablewrap" tabindex="0" role="region" aria-label="Anbietervergleich, seitlich scrollbar"><table class="av-table"><caption>Laufende Kosten in Prozent pro Jahr bei Eröffnung im Januar 2027, ohne Order- und Sparplangebühren und Spreads. „max.“ = Obergrenze laut Anbieter, „ca.“ = ungefährer Wert, * = freiwillige Erstattung ohne Enddatum.</caption><thead><tr><th scope="col">Anbieter und Depotmodell</th><th scope="col" class="num">Kosten zu Beginn</th><th scope="col" class="num">Kosten im 10. Jahr</th><th scope="col">Art</th><th scope="col">Kosten im Detail</th><th scope="col">Depot und Orders</th><th scope="col">Anlage</th><th scope="col">BZSt-Zertifikat</th><th scope="col">Quellen</th></tr></thead>
 <tbody id="avl">
 {chr(10).join(rows)}
 </tbody></table></div>
-<p class="av-sub">Sortierung nach Kosten ist keine Rangliste: Die Angaben umfassen meist nur Fonds- und Servicekosten, nicht die vollständigen Effektivkosten. „nur Presse“: Zahlen aus Presseberichten, vom Anbieter online nicht bestätigt, deshalb nicht im Rechner.</p>
+<p class="av-sub">Sortierung nach Kosten ist keine Rangliste: Die Angaben umfassen meist nur Fonds- und Servicekosten, nicht die vollständigen Effektivkosten. Die Zertifikatsnummern stammen aus der <a href="{esc(Q["bzst"]["url"])}" target="_blank" rel="noopener nofollow">Liste aller erteilten Zertifikate des BZSt</a>, abgerufen am {dmy(Q["bzst"]["abgerufen"])}.</p>
+<p>Die meisten Banken haben ihr Altersvorsorgedepot angekündigt, viele auch schon mit Preisen, etwa N26, ING, die Consorsbank, flatex, die Deka oder die Hannoversche. Zertifiziert ist ihr Produkt aber noch nicht, oder es steht in der BZSt-Liste noch nicht. Ohne Zertifikat darf kein Vertrag mit Förderung abgeschlossen werden. Sobald ein Zertifikat erscheint, nehmen wir das Modell in die Tabelle auf.</p>
+<details class="av-more"><summary>Alle weiteren Banken und Anbieter ({len(wa)})</summary>
+<ul class="av-wl">{"".join(w_li)}</ul>
+<p class="av-sub">Weitere Einträge in der BZSt-Liste mit Wirksamkeit ab 1.1.2027, die nicht in der Tabelle stehen:</p>
+<ul>{w_zert}</ul>
+<p class="av-sub">Geprüft, aber vom Anbieter nicht bestätigt:</p>
+<ul>{nicht}</ul>
+</details>
 <h3 class="av-h3">Worauf es bei den Kosten ankommt</h3>
 <ul class="av-sum">
 {li_g("Erstattung zum Start, danach laufende Kosten", "befristet")}
@@ -242,9 +278,7 @@ def main():
 {li_g("Laufende Kosten ohne Erstattung", "laufend")}
 {li_g("Kosten noch nicht (vollständig) veröffentlicht", "offen")}
 </ul>
-<p>Im Rechner unten kannst du jedes Standarddepot mit deinen Eingaben durchrechnen, auch mit späterem Vertragsbeginn (wichtig etwa bei N26 und bei Erstattungen bis zu einem festen Datum).</p>
-<h3 class="av-h3">Geprüft, aber nicht bestätigt</h3>
-<ul>{nicht}</ul>
+<p>Im Rechner unten kannst du die zertifizierten Modelle mit deinen Eingaben durchrechnen, auch mit späterem Vertragsbeginn. Wo die Kosten noch nicht veröffentlicht sind, rechnet der Rechner mit deiner eigenen Annahme.</p>
 <p class="av-sub">{esc(bm.get("text", ""))} {f'<a href="{esc(bmq.get("url", ""))}" target="_blank" rel="noopener nofollow">Quelle</a>' if bmq else ""}</p>
 <h3 class="av-h3">Änderungsprotokoll</h3>
 <ul class="av-chg">{aend}</ul>
@@ -266,14 +300,14 @@ def main():
         raise SystemExit("Einfügestelle nicht gefunden")
     assert page.count('id="anbieter-bereich"') == 1 and page.count('id="av-data"') == 1
     title = "Altersvorsorgedepot-Rechner und Anbieter im Vergleich 2027"
-    desc = (f"Altersvorsorgedepot berechnen: Zulagen, Depotwert und Auszahlung, dazu {n_anb} Anbieter mit {n_prod} Depotmodellen im Vergleich "
-            "(N26, Trade Republic, Scalable, ING, Deka, Consorsbank) mit zeitabhängigen Kosten und Quellen.")
+    desc = (f"Altersvorsorgedepot berechnen: Zulagen, Depotwert und Auszahlung, dazu die vom BZSt zertifizierten Depotmodelle im Vergleich "
+            "(Trade Republic, Scalable, Allianz, ERGO) und alle angekündigten Anbieter mit Kosten und Quellen.")
     page = re.sub(r"<title>.*?</title>", "<title>" + title + "</title>", page, count=1)
     page = re.sub(r'(<meta name="description" content=")[^"]*', lambda m: m.group(1) + desc, page, count=1)
     page = re.sub(r'(<meta property="og:title" content=")[^"]*', lambda m: m.group(1) + title, page, count=1)
     page = re.sub(r'(<meta property="og:description" content=")[^"]*', lambda m: m.group(1) + desc, page, count=1)
     open(PAGE, "w", encoding="utf-8").write(page)
-    print("ok", n_anb, "Anbieter,", n_prod, "Depotmodelle,", n_bek, "mit bekannten Kosten im 10. Jahr")
+    print("ok", n_prod, "zertifizierte Modelle im Vergleich,", len(weitere), "weitere,", n_bek, "mit bekannten Kosten im 10. Jahr")
 
 
 if __name__ == "__main__":
