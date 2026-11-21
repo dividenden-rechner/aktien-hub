@@ -99,7 +99,20 @@ test("mehrere Depotmodelle je Anbieter werden getrennt erfasst", () => {
   for (const a of D.anbieter) for (const p of a.produkte) { assert.ok(!ids.has(p.id), "doppelte id " + p.id); ids.add(p.id); assert.ok(["standard", "gesteuert", "frei", "beratung", "garantie"].includes(p.art), p.id); }
   const anzahl = (id) => D.anbieter.find((a) => a.id === id).produkte.length;
   assert.equal(anzahl("n26"), 2); assert.equal(anzahl("consorsbank"), 3); assert.equal(anzahl("allianz"), 3);
-  assert.equal(FLAT.length, ids.size, "Seite und Daten haben gleich viele Depotmodelle");
+});
+
+test("Tabelle und Rechner zeigen nur Depotmodelle mit veröffentlichten Konditionen", () => {
+  assert.ok(FLAT.length > 0);
+  for (const p of FLAT) {
+    assert.notEqual(p.k, "offen", p.id);
+    assert.ok(p.ks !== null || p.kd !== null, p.id + " hat keine Kostenzahl");
+  }
+  for (const id of ["n26-standard", "sc-standard", "ing-relax"]) assert.ok(P[id], id + " fehlt");
+  for (const id of ["allianz-standard", "sc-frei"]) assert.ok(!P[id], id + " sollte ausgeblendet sein");
+  const offen = D.anbieter.filter((a) => a.produkte.every((p) => !P[p.id])).map((a) => a.name);
+  const satz = PAGE.match(/Noch ohne veröffentlichte Konditionen[^<]*/)[0];
+  for (const n of offen) assert.ok(satz.includes(n.replace(/&/g, "&amp;")), n + " fehlt im Hinweis");
+  assert.match(PAGE, /Verglichen werden alle \d+ Depotmodelle von \d+ Anbietern, für die es schon Konditionen gibt/);
 });
 
 test("Quellenzuordnung: jede Aussage hat eine Quelle mit URL und Abrufdatum", () => {
@@ -114,7 +127,7 @@ test("Quellenzuordnung: jede Aussage hat eine Quelle mit URL und Abrufdatum", ()
 
 test("nur mit Anbieterquellen belegte Angebote kommen in den Rechner", () => {
   for (const p of FLAT) if (p.r) assert.equal(p.pr, "primary_verified", p.id);
-  for (const id of ["tp-standard", "dws-vorsorgedepot", "union-basis", "deka-plus"]) assert.equal(P[id].r, false, id);
+  for (const id of ["tp-standard", "dws-vorsorgedepot", "union-basis", "deka-plus"]) assert.ok(!P[id] || P[id].r === false, id);
 });
 
 test("Python (build_av.py) und JavaScript rechnen gleich", () => {
