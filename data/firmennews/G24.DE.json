@@ -1,7 +1,15 @@
 {
  "hub": "G24.DE",
  "name": "Scout24",
- "stand": "2026-11-20",
+ "stand": "2026-11-21",
  "quelle": "Google News (Wirtschaftsmedien, deutsch und englisch)",
- "meldungen": []
+ "meldungen": [
+  {
+   "titel": "Scout24-Aktie: Unternehmen gibt nach",
+   "quelle": "WELT",
+   "link": "https://news.google.com/rss/articles/CBMirAFBVV95cUxQM3hVemdBR1h4VmxscVlxMzBKUV9xVEcwTTFHWXBvaEtqZ2dLdFlCemxLdW45ZmlmOHZ1S0hFVG5Va1EtYVJucnlpdWhDaGZfNDlKWXpXZTh2YmE5cDhaemNpeXlQWGJUaWw1ZFRNYl9tam4wdHFkeThyWXRQM2kydUlpbWZXdkZ5NDhQempVX2NvZ0FfRDBpR0lhME5VSjRaa1R6UWxkczhQNlJ4?oc=5",
+   "datum": "2026-11-20",
+   "sprache": "de"
+  }
+ ]
 }

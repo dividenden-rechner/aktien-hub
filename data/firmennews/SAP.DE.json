@@ -1,9 +1,33 @@
 {
  "hub": "SAP.DE",
  "name": "SAP",
- "stand": "2026-11-20",
+ "stand": "2026-11-21",
  "quelle": "Google News (Wirtschaftsmedien, deutsch und englisch)",
  "meldungen": [
+  {
+   "titel": "How SAP and Microsoft Innovate Together to Deliver AI Value for the Enterprise",
+   "quelle": "Unternehmen",
+   "link": "https://news.sap.com/2026/11/how-sap-microsoft-innovate-deliver-ai-value-enterprise/",
+   "datum": "2026-11-20",
+   "sprache": "en",
+   "typ": "pm"
+  },
+  {
+   "titel": "From Melbourne to Mexico: How SAP Concur and AI Help the San Francisco 49ers Take Their Game Global",
+   "quelle": "Unternehmen",
+   "link": "https://news.sap.com/2026/11/how-sap-concur-helps-san-francisco-49ers-take-game-global/",
+   "datum": "2026-11-20",
+   "sprache": "en",
+   "typ": "pm"
+  },
+  {
+   "titel": "Takeda Turns to SAP S/4HANA to Support Digital Transformation",
+   "quelle": "Unternehmen",
+   "link": "https://news.sap.com/2026/11/takeda-turns-to-sap-erp-digital-transformation/",
+   "datum": "2026-11-20",
+   "sprache": "en",
+   "typ": "pm"
+  },
   {
    "titel": "Why Enterprise Architecture Is Becoming Key to Successful AI",
    "quelle": "Unternehmen",
@@ -13,54 +37,30 @@
    "typ": "pm"
   },
   {
-   "titel": "(m+) SAP: Zentrale KI-Produkte verzögern sich",
+   "titel": "(m+) SAP hinkt bei zentralen KI-Produkten hinter her",
    "quelle": "Manager Magazin",
    "link": "https://news.google.com/rss/articles/CBMi8AFBVV95cUxPWnJqSjhiVm9SeGJHV3NqRG1rOGVKd2M1NHZGQjQ5UXptdlZvbmZzNVFYaFQxTU5lSFhHVDg4MXpSTGtvdUVFWEFQOUlMVUNYWmJuTmFaQVN5a1FDTDBIV0RIRVQwbDRKQTA3Umx0MUtCNGlDQkQ1TzRUSHExUUF6NnMwMzRqNlpaRzNGLWg3UTlQeGUxM0llMldISGdHb0VSQm9NbzN2NkVjQ2F1VGw5dXRWMU1FNm9pRjVPWXpvRVhkMUVZQ3RXVXUxMU9GNkphZkpfekZHcUVpYmdXbTRiaEhlRjZLNE9UTW95Z2kwRDY?oc=5",
    "datum": "2026-11-20",
    "sprache": "de"
   },
   {
-   "titel": "Dollar set for fourth weekly gain, supported by Fed tightening expectations, AI-driven haven bid",
+   "titel": "Dollar weaker as Fed-fueled rally stalls; lower US yields help yen",
    "quelle": "Reuters",
    "link": "https://news.google.com/rss/articles/CBMioAFBVV95cUxNSWwtcmZqemtkQmd4OWJQUHN1OXZLZTgxM1FtVk5JTlAtNndPYzRndHkxbEZ2MEdNZGtRdWUwMUxlblhtLThfQ0NoRHYtZ1lzd2VkSHc4N0U3UlFjUGFubjBkOFc4bDhpR3lELUoxalJBN1lkUUtUYk1NSk9sanNaeUZrZVVXTWlDV2Zja1FFQ3lPaXNUN2FXb3BST0dmZHd3?oc=5",
    "datum": "2026-11-20",
    "sprache": "en"
   },
   {
-   "titel": "Dollar near 19-month peak as AI jitters sap risk appetite",
-   "quelle": "CNBC",
-   "link": "https://news.google.com/rss/articles/CBMidkFVX3lxTFAxRk5jN1BWeDlzUUU4UzRXbUZObVRPckdhcHhrdFNER3VVckxfeDRkSzJaczVUU1E5VHJLZFNFc2UwMWtPUlQ4RFc1SGphcWlPclBUaVJNNUE3TFJkZHFJNWdYdDltS0FuTjg4OUJnajVaaHZTalHSAXtBVV95cUxOTTV2azN2LUMxOXY3eXhBOTNkZkVhaU1WNHhUV1VXZndRM1E3Z3hiX3lYV1lOTVdZZ19oSnppMWJBc2M1VHV2VHlzWHFNY1NuY0lGMHdmRmZRemx2cXEtTmVfYmFoalZpTG5EeWNpamNEblJkWWE5bXNsZEU?oc=5",
-   "datum": "2026-11-20",
-   "sprache": "en"
-  },
-  {
-   "titel": "Who Wins the Next Disruption: Five Rules for Creating Supply Chains that Can Take a Hit",
-   "quelle": "Unternehmen",
-   "link": "https://news.sap.com/2026/11/five-rules-creating-supply-chains-that-can-take-a-hit/",
-   "datum": "2026-11-19",
-   "sprache": "en",
-   "typ": "pm"
-  },
-  {
-   "titel": "How Bestseller Turned Fragmented Workforce Data into Trusted People Intelligence",
-   "quelle": "Unternehmen",
-   "link": "https://news.sap.com/2026/11/bestseller-turned-fragmented-workforce-data-into-trusted-people-intelligence/",
-   "datum": "2026-11-18",
-   "sprache": "en",
-   "typ": "pm"
-  },
-  {
-   "titel": "SAP Recognized as a Customers’ Choice in the 2026 Gartner Peer Insights™ Voice of the Customer for Talent Acquisition (Recruiting) Suites",
-   "quelle": "Unternehmen",
-   "link": "https://news.sap.com/2026/11/sap-recognized-gartner-peer-insights-talent-acquisition/",
-   "datum": "2026-11-18",
-   "sprache": "en",
-   "typ": "pm"
-  },
-  {
    "titel": "SAP-Vorstand Saueressig wechselt zu Ionos",
    "quelle": "Börsen-Zeitung",
    "link": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxQZ2ZOcXBwUmRUMTlxamEzdGNQNHRfWENwZDZaZTY1eWU0QmczRVI4Yk05elRIRXU4a0dRUUd2cEZyTWdLLXB6bVN4TTdtZXg2bHBiYkRmYkZtUkdDQXAtX2IxeEZJc2FZQ3BOQk1peThrakZsUGRTYThPM0N6MTBlSXhwaWhha0hw?oc=5",
+   "datum": "2026-11-17",
+   "sprache": "de"
+  },
+  {
+   "titel": "Vertrauter von CEO Christian Klein: SAP-Vorstand Thomas Saueressig wird Chef von Ionos",
+   "quelle": "Manager Magazin",
+   "link": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxQczlOSks2dEdUTHdES0ZUSDdvMHZQdUdYcFJBV3VXaDBKdW51dEotWjlrSTRJb2ZXQkdhYlVxMjEzdHhOSG5aMlpnaEl5NkpJNi1BRWJaRDVtTTQ5Q24wRFBNUDBka3o4ZkZXbVpDOTNuQkU4VDE3UGNNaC0wZ2p4VlI3VVY3S3F4d1F6ZWNmZ3JMeU1BamZsTDMxbkZDZFA3S1NodVZOQVduMVdvdzdwQllmcHBWTS1RNXJTSmkxakJJLTcxX01RampYa0wyanJzSVFn?oc=5",
    "datum": "2026-11-17",
    "sprache": "de"
   }

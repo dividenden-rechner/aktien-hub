@@ -1,9 +1,16 @@
 {
  "hub": "SY1.DE",
  "name": "Symrise",
- "stand": "2026-11-20",
+ "stand": "2026-11-21",
  "quelle": "Google News (Wirtschaftsmedien, deutsch und englisch)",
  "meldungen": [
+  {
+   "titel": "Symrise-Aktie: Unternehmen gibt nach",
+   "quelle": "WELT",
+   "link": "https://news.google.com/rss/articles/CBMirAFBVV95cUxNM1JTTlpuRkM4LUNlYXp3MzhiNzlpNUVtMU5PNXVqaEJiNVotME9kcmNxRy1aeGJuVnhwOFhMa1lHN0hKVWtVcW9WMG5xZUJkZDF6UzBNN28wMEtYRnc0cjRrd0dUcklFdVV3Q1I1eTQ1ZE5TcDI1aDN6SmlxWHRYSXZDWXAyV1FTbUNiWGF2VVExMmRhVzEwZWVDV0VCbDRRejR5MEZxUU5IWF90?oc=5",
+   "datum": "2026-11-20",
+   "sprache": "de"
+  },
   {
    "titel": "Symrise AG announces Chief Financial Officer transition and extension of Walter Ribeiro’s Executive Board appointment",
    "quelle": "Unternehmen",
@@ -11,13 +18,6 @@
    "datum": "2026-11-10",
    "sprache": "en",
    "typ": "pm"
-  },
-  {
-   "titel": "Symrise-Aktie: Unternehmen schwächelt",
-   "quelle": "WELT",
-   "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxNT3R5cWw0YjhoSk02Q3FYNTdfRm02STNlLTFHMGRvaUVuUDVpRkVtb2pwQ2dpWUJ5RGNKOHpyYnF1QnBpLTU2dEFfNnZsdWx4MjZUVGpDM1MyMUc4ZG8xVzlkOXc0RWJJRll1Sk1RZS1Qb0Z0cXhrS253SXB4VUxoZHpNZ2Y0VWwyN3FjQVN1NmtaVlJGSEVHTFJJR3U0TGpLdkNEQ2U5QllEX2trSzRF?oc=5",
-   "datum": "2026-11-09",
-   "sprache": "de"
   }
  ]
 }

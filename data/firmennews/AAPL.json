@@ -1,9 +1,16 @@
 {
  "hub": "AAPL",
  "name": "Apple Inc.",
- "stand": "2026-11-20",
+ "stand": "2026-11-21",
  "quelle": "Google News (Wirtschaftsmedien, deutsch und englisch)",
  "meldungen": [
+  {
+   "titel": "The New Apple TV 4K Is a Great Streaming Box at a Bad Price: Review",
+   "quelle": "Bloomberg.com",
+   "link": "https://news.google.com/rss/articles/CBMivwFBVV95cUxQc1pxMzZyVjJuYVJsQlhKd1lraE52dDZVVWVDY0dWNk1RUFRPQ2xLWUJVMFpENmIwczhqZU05X2lQVUw2UkRnVVdxSjB5ZDZGRTJ6elBVZkNVWDRZZ2VUVFhENmoyWUFlNnNfS0JqMEV4M1lMY3pYcWhKZE1sOEVWZkhHMGlNc05obHlJRDNvZmdBcHpSNGw1SEQyYjhjdEJIWlJGcEZnSGQ4QnFSNkxMeHpxdEVselVKNklFejJ1OA?oc=5",
+   "datum": "2026-11-21",
+   "sprache": "en"
+  },
   {
    "titel": "An Apple Agent Is Something to Fear for AI Rivals",
    "quelle": "Bloomberg.com",
@@ -20,13 +27,6 @@
    "typ": "pm"
   },
   {
-   "titel": "Apple Working on Own AI Agent to Rival OpenAI and Anthropic",
-   "quelle": "Bloomberg.com",
-   "link": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxOQzRPX3FrZlMybjdvY2FJVWhVOHU5M2lTTGNPazZYUW0zVlA3ZkVRcWxERk9XM2FvXzgzVDVUaTYwTzVzOXg0TGQtN25fOE9aeTRtUXhqTGE2Q01zQ21iTUg1dmFTNGZQRV9hTDVBV3BjWW4tUzYxXzBVTzA1UzkyOEtySVhfbWZlbmRXSFd1bVZLZElzSThUMmlQVnAyOHJIWUs0YTBNVTBIM29HV2ZieUtzQ1d0SDVIVTA2VTRTYk4?oc=5",
-   "datum": "2026-11-19",
-   "sprache": "en"
-  },
-  {
    "titel": "UK tribunal confirms government order demanding access to Apple data",
    "quelle": "Reuters",
    "link": "https://news.google.com/rss/articles/CBMixAFBVV95cUxQenZpeUVpaFZLYklnRUUyX1M2WUFiLUE1VFNSQmZLWHdmaDB2a2Q1WXBOeDliUExJbzZ0eVFPLVJ2ekNKRVhBSFVSRXo4d2RxRG1XMjAzTkI3SjNmRGFGMVptQXQ4UFI3VklnanpvaEpXQnlYN0RxMHJXVGpXNWJMZnZDRWFRX0ZGQWNJT2xIdl9OUlpMci1FVUdMYnRORktIQjR4WmdGWWpUTnFBclBqbkdCYTZvMnNIY3FpN1RSdEFiQ2Rm?oc=5",
@@ -34,9 +34,9 @@
    "sprache": "en"
   },
   {
-   "titel": "UK Court Rules for Apple in User Data Fight with Government",
+   "titel": "Apple Working on Own AI Agent to Rival OpenAI and Anthropic",
    "quelle": "Bloomberg.com",
-   "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxPdjkxMENVbWNKc0tQZWluMnpDdl9zeDJvblllcFpkcENYaVNENm14OW41YzA3REU3NHgxb1M1QjdUQjhzbWxVTmNKQ0EtbGNDUk4wclMzM2xfampGRUdCUk1qdF95anVfN01BcGZjeGFiV2dZaXJsTDlSYzJUeHB1RXBIQWdzbWRpZVJ3ekZ1MThRSEVHaWk5aHNrN3hRRFdQRFVVS2FBX3lteHhGbGQ4?oc=5",
+   "link": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxOQzRPX3FrZlMybjdvY2FJVWhVOHU5M2lTTGNPazZYUW0zVlA3ZkVRcWxERk9XM2FvXzgzVDVUaTYwTzVzOXg0TGQtN25fOE9aeTRtUXhqTGE2Q01zQ21iTUg1dmFTNGZQRV9hTDVBV3BjWW4tUzYxXzBVTzA1UzkyOEtySVhfbWZlbmRXSFd1bVZLZElzSThUMmlQVnAyOHJIWUs0YTBNVTBIM29HV2ZieUtzQ1d0SDVIVTA2VTRTYk4?oc=5",
    "datum": "2026-11-19",
    "sprache": "en"
   },
