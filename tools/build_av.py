@@ -137,7 +137,7 @@ CSS = """<style>
 .av-table .num{text-align:right;white-space:nowrap;min-width:96px}.av-table td.num b{font-weight:600;color:#065f46}.av-table td.num.offen b{color:#8a97a3;font-weight:500}
 .av-table td.w{min-width:260px;max-width:320px}
 .tool .av-table th,.tool .av-table td{border:0;border-bottom:1px solid #eef1f4}.tool .av-table tbody th{color:#33414d;background:#fff;text-align:left;font-weight:600}.tool .av-table thead th{color:#5b6874;background:#f6f8fa;text-align:left}.tool .av-table .num{text-align:right}.tool .av-table tbody tr:last-child th,.tool .av-table tbody tr:last-child td{border-bottom:0}.tool .av-rank tr.sel th,.tool .av-rank tr.sel td{background:#f1f9f4}.tool .av-rank tr.off th{color:#9aa5af}
-.av-jump{font-size:.88rem;margin:-4px 0 14px}.av-h3{font-size:1.05rem;margin:1.8rem 0 .2rem}.av-sub{font-size:.8rem;color:#6b7782;margin:4px 0 10px}
+.av-jump{font-size:.88rem;margin:4px 0 14px;line-height:1.7}.av-jump a{white-space:nowrap}#anbieter,#aenderungen,#rechner,#rechtsstand{scroll-margin-top:72px}.av-anchor{display:block}.av-h3{font-size:1.05rem;margin:1.8rem 0 .2rem}.av-sub{font-size:.8rem;color:#6b7782;margin:4px 0 10px}
 .av-rank{min-width:700px}.av-rank td.t{min-width:200px}.av-rank tr.sel td,.av-rank tr.sel th{background:#f1f9f4}.av-rank tr.off td,.av-rank tr.off th{color:#9aa5af}
 .av-rank th:first-child{min-width:220px}.av-rank .av-logo{width:22px;height:22px}.av-rank .dif.pos{color:#0f6b46}.av-rank .dif.neg{color:#b3372d}
 .tool .av-pick{padding:3px 10px;font-size:.78rem;font-weight:500;background:#fff;color:#33414d;border:1px solid #d5dce2;border-radius:6px}.tool .av-pick:hover{background:#f6f8fa}
@@ -167,7 +167,7 @@ if(fa)fa.addEventListener("change",filt);if(fk)fk.addEventListener("change",filt
 def rechts_text(D):
     q = D["quellen"]
     a = lambda k, t: f'<a href="{esc(q[k]["url"])}" target="_blank" rel="noopener nofollow">{esc(t)}</a>'
-    return f"""<h2>Das gilt für alle Anbieter</h2>
+    return f"""<h2 id="rechtsstand">Das gilt für alle Anbieter</h2>
 <ul>
 <li><strong>Start und Zertifizierung:</strong> Neue Verträge sind ab dem 1. Januar 2027 möglich. Das Altersvorsorgereformgesetz hat der Bundestag am 27. März 2026 beschlossen, der Bundesrat hat am 8. Mai 2026 zugestimmt, verkündet wurde es am 29. Mai 2026 ({a("bgbl", "BGBl. 2026 I Nr. 156")}). Jeder Vertrag braucht ein Zertifikat des Bundeszentralamts für Steuern.</li>
 <li><strong>Förderung:</strong> Grundzulage 50 % der Beiträge bis 360 Euro und 25 % der Beiträge von 360,01 bis 1.800 Euro, zusammen höchstens 540 Euro im Jahr. Kinderzulage 100 % der Beiträge, höchstens 300 Euro je Kind. Wer zu Beginn des Beitragsjahres jünger als 25 ist, bekommt die Grundzulage einmalig um 200 Euro erhöht. Alle Zulagen gibt es nur bei mindestens 120 Euro Eigenbeitrag im Jahr.</li>
@@ -252,13 +252,14 @@ def main():
     bm = D.get("marktbenchmark", {})
     bmq = Q.get(bm.get("quelle", ""), {})
     art_opts = "".join(f'<option value="{k}">{v}</option>' for k, v in ART.items())
-    body = f"""<h2 id="anbieter">Altersvorsorgedepot Anbieter im Vergleich</h2>
+    body = f"""<nav class="av-jump" aria-label="Sprungmarken">Direkt zu: <a href="#anbieter">Zertifizierte Anbieter</a> · <a href="#rechner">Rechner: selbst durchrechnen</a> · <a href="#aenderungen">Letzte Änderungen ({dmy(D.get("aenderungen", [{}])[0].get("datum", D["stand"]))})</a> · <a href="#rechtsstand">Was für alle gilt</a></nav>
+<h2 id="anbieter">Zertifizierte Altersvorsorgedepots im Vergleich</h2>
 <p class="lead">Ab dem 1. Januar 2027 können Verträge für das geförderte Altersvorsorgedepot abgeschlossen werden. In der Tabelle stehen nur Depotmodelle, die das Bundeszentralamt für Steuern bereits zertifiziert hat und die der Anbieter auf seiner Website als Altersvorsorgedepot anbietet: derzeit {n_prod} Modelle von {n_anb_v} Anbietern. Viele Banken haben ein Depot angekündigt, aber noch kein Zertifikat. Sie stehen unter der Tabelle zum Aufklappen. Stand: {dmy(D["stand"])}.</p>
 <p class="note"><strong>Wichtig:</strong> {esc(D["hinweis"])} {esc(D.get("zertifizierung", ""))} Das ist keine Anlageberatung.</p>
 <div class="av-filter" role="group" aria-label="Filter"><label for="av-f-art">Depotart <select id="av-f-art"><option value="">Alle</option>{art_opts}</select></label><label><input type="checkbox" id="av-f-kosten"> Nur mit bekannten Kosten im 10. Jahr</label><span class="av-count" id="av-count" aria-live="polite"></span></div>
 <div class="av-tabs" id="avt" role="group" aria-label="Sortierung"><button type="button" class="av-tab" data-s="dau" aria-pressed="true">Kosten im 10. Jahr</button><button type="button" class="av-tab" data-s="sta" aria-pressed="false">Kosten zu Beginn</button><button type="button" class="av-tab" data-s="n" aria-pressed="false">A bis Z</button></div>
 <p class="av-scroll-hint">Tabelle seitlich scrollen für alle Spalten →</p>
-<div class="av-tablewrap" tabindex="0" role="region" aria-label="Anbietervergleich, seitlich scrollbar"><table class="av-table"><caption>Laufende Kosten in Prozent pro Jahr bei Eröffnung im Januar 2027, ohne Order- und Sparplangebühren und Spreads. „max.“ = Obergrenze laut Anbieter, „ca.“ = ungefährer Wert, * = freiwillige Erstattung ohne Enddatum.</caption><thead><tr><th scope="col">Anbieter und Depotmodell</th><th scope="col" class="num">Kosten zu Beginn</th><th scope="col" class="num">Kosten im 10. Jahr</th><th scope="col">Art</th><th scope="col">Kosten im Detail</th><th scope="col">Depot und Orders</th><th scope="col">Anlage</th><th scope="col">BZSt-Zertifikat</th><th scope="col">Quellen</th></tr></thead>
+<div class="av-tablewrap" tabindex="0" role="region" aria-label="Anbietervergleich, seitlich scrollbar"><table class="av-table"><caption>Nur vom Bundeszentralamt für Steuern zertifizierte Altersvorsorgedepots. Laufende Kosten in Prozent pro Jahr bei Eröffnung im Januar 2027, ohne Order- und Sparplangebühren und Spreads. „max.“ = Obergrenze laut Anbieter, „ca.“ = ungefährer Wert, * = freiwillige Erstattung ohne Enddatum.</caption><thead><tr><th scope="col">Anbieter und Depotmodell</th><th scope="col" class="num">Kosten zu Beginn</th><th scope="col" class="num">Kosten im 10. Jahr</th><th scope="col">Art</th><th scope="col">Kosten im Detail</th><th scope="col">Depot und Orders</th><th scope="col">Anlage</th><th scope="col">BZSt-Zertifikat</th><th scope="col">Quellen</th></tr></thead>
 <tbody id="avl">
 {chr(10).join(rows)}
 </tbody></table></div>
@@ -278,16 +279,16 @@ def main():
 {li_g("Laufende Kosten ohne Erstattung", "laufend")}
 {li_g("Kosten noch nicht (vollständig) veröffentlicht", "offen")}
 </ul>
-<p>Im Rechner unten kannst du die zertifizierten Modelle mit deinen Eingaben durchrechnen, auch mit späterem Vertragsbeginn. Wo die Kosten noch nicht veröffentlicht sind, rechnet der Rechner mit deiner eigenen Annahme.</p>
+<p><a href="#rechner"><strong>Zum Rechner</strong></a>: Dort kannst du die zertifizierten Modelle mit deinen Eingaben durchrechnen, auch mit späterem Vertragsbeginn. Wo die Kosten noch nicht veröffentlicht sind, rechnet der Rechner mit deiner eigenen Annahme.</p>
 <p class="av-sub">{esc(bm.get("text", ""))} {f'<a href="{esc(bmq.get("url", ""))}" target="_blank" rel="noopener nofollow">Quelle</a>' if bmq else ""}</p>
-<h3 class="av-h3">Änderungsprotokoll</h3>
+<h3 class="av-h3" id="aenderungen">Letzte Änderungen</h3>
 <ul class="av-chg">{aend}</ul>
 {rechts_text(D)}
 <p class="note"><strong>Hinweis:</strong> Keine Anlageberatung. Angaben ohne Gewähr, die Konditionen können sich bis zum Start ändern. Maßgeblich sind die Vertragsunterlagen der Anbieter.</p>
 """
     data = json.dumps(flat, ensure_ascii=False, separators=(",", ":"))
     block = ("<!--av-start-->\n" + '<script type="application/json" id="av-data">' + data.replace("</", "<\\/") + "</script>\n" + CSS
-             + '<section id="anbieter-bereich">' + body + "</section>\n" + JS + "\n<!--av-end-->")
+             + '<section id="anbieter-bereich">' + body + "</section>\n" + '<span id="rechner" class="av-anchor"></span>\n' + JS + "\n<!--av-end-->")
     # alten Handblock oberhalb des Rechners entfernen (außerhalb der Markierung), Position merken
     m_old = re.search(r'<section id="anbieter-bereich">.*?</section>\s*(?=<!--calc-start-->)', page, flags=re.S)
     page = re.sub(r"<!--av-start-->.*?<!--av-end-->\n?", "", page, flags=re.S)

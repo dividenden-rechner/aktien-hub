@@ -162,3 +162,14 @@ test("Steuer und Auszahlung: nachgelagerte Besteuerung und ETF-Vergleich", () =>
   // Beispiel aus dem Ratgebertext der Seite (Voreinstellungen, 1,0 % Kosten)
   assert.equal(Math.round(r.wert), 241965);
 });
+
+test("Sprungmarken oben führen zu Vergleich, Rechner, letzten Änderungen und Rechtsstand", () => {
+  const nav = PAGE.match(/<nav class="av-jump"[\s\S]*?<\/nav>/);
+  assert.ok(nav, "Sprungmarken fehlen");
+  for (const id of ["anbieter", "rechner", "aenderungen", "rechtsstand"]) {
+    assert.ok(nav[0].includes(`href="#${id}"`), id);
+    assert.equal((PAGE.match(new RegExp(`id="${id}"`, "g")) || []).length, 1, "Ziel #" + id);
+  }
+  assert.ok(PAGE.indexOf('id="rechner"') < PAGE.indexOf("<!--calc-start-->"), "#rechner steht direkt vor dem Rechner");
+  assert.match(PAGE, /Nur vom Bundeszentralamt für Steuern zertifizierte/);
+});
