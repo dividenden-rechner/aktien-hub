@@ -11,8 +11,6 @@ image_alt: "Serverschränke in einem Rechenzentrum"
 image_credit: "Foto: imgix auf Unsplash"
 image_source: https://unsplash.com/photos/server-racks-in-data-center-klWUhr-wPJ8?utm_source=dividenden-rechner&utm_medium=referral
 image_artist_url: https://unsplash.com/@imgix?utm_source=dividenden-rechner&utm_medium=referral
-vorschau: ja
-freigabe: 2026-11-22 00:00
 ---
 <!-- PRÜFEN: Anthropic: Ausgabepreis 83 $, 980 Mio. Aktien, rund 81 Mrd. $ Erlös, größter Börsengang der Geschichte, Eröffnung 111,50 $, am Nachmittag 95,69 $, Nvidia-Beteiligungen von zusammen 20 Mrd. $: Al Jazeera/Reuters vom 19.11.2026. Bewertung zum Ausgabepreis rund 1,5 Bio. $: Fortune vom 18.11.2026. Schlusskurs des ersten Handelstags vor Veröffentlichung nachtragen. Umsatz neun Monate 33,2 Mrd. $ aus dem Prospekt laut docs/newsletter-notizen.md. -->
 <!-- PRÜFEN: Nvidia: Rücktritt Huang am 12.11., Begründung Verhaltenskodex, Interimschefin Colette Kress, Zitat Harvey Jones, Huangs Beitrag auf X: TechCrunch vom 17.11.2026. Lieferstopp Hopper/H200 nach China und neuer Ausschuss für nationale Sicherheit: SCMP. Quartalszahlen aus unserem Nvidia-Artikel vom 17.11. Vorwürfe gegen Alice Huang nur als Berichte, umstritten (Fortune). -->
