@@ -1,345 +1,2503 @@
 {
- "stand": "2026-11-05",
- "hinweis": "Alle Angaben sind Ankündigungen der Anbieter laut den genannten Quellen und noch nicht verbindlich. Effektivkosten inklusive Abschluss- und Vertriebskosten nennt bisher kein Anbieter.",
- "firmen": [
+ "schema": 2,
+ "stand": "2026-11-21",
+ "geprueft": "2026-11-21",
+ "hinweis": "Alle Angaben sind Ankündigungen der Anbieter und stehen unter dem Vorbehalt der Zertifizierung durch das Bundeszentralamt für Steuern. Effektivkosten inklusive Spreads, Transaktions-, Abschluss- und Vertriebskosten nennen die wenigsten Anbieter.",
+ "zertifizierung": "Im Vergleich stehen nur Depotmodelle, die das Bundeszentralamt für Steuern zertifiziert hat (Liste aller erteilten Zertifikate, Wirksamkeit ab 1.1.2027, abgerufen am 21.11.2026) und die der Anbieter auf seiner Website als Altersvorsorgedepot anbietet. Garantieprodukte sind nicht dabei.",
+ "marktbenchmark": {
+  "text": "Finanztip nennt mit Stand 11.11.2026 31 Anbieter und 63 Depotangebote. Das ist eine externe Übersicht, die Zahl wurde hier nicht nachgezählt.",
+  "quelle": "finanztip"
+ },
+ "quellen": {
+  "bgbl": {
+   "titel": "Altersvorsorgereformgesetz vom 26. Mai 2026, BGBl. 2026 I Nr. 156 (Textfassung)",
+   "url": "https://files.vogel.de/infodienste/smfiledata/6/4/9/8/7/1/254489.pdf",
+   "typ": "amtlich",
+   "datum": "2026-05-29",
+   "abgerufen": "2026-11-21"
+  },
+  "bt-beschluss": {
+   "titel": "Bundesrat Drucksache 206/26 (Gesetzesbeschluss des Bundestages vom 27.03.2026)",
+   "url": "https://dserver.bundestag.de/brd/2026/0206-26.pdf",
+   "typ": "amtlich",
+   "datum": "2026-03-27",
+   "abgerufen": "2026-11-21"
+  },
+  "br-zustimmung": {
+   "titel": "Bundesrat Drucksache 206/26 (Beschluss), 1065. Sitzung am 8. Mai 2026",
+   "url": "https://dserver.bundestag.de/brd/2026/0206-26B.pdf",
+   "typ": "amtlich",
+   "datum": "2026-05-08",
+   "abgerufen": "2026-11-21"
+  },
+  "fsr-bt": {
+   "titel": "Bundestag: Frühstartrente beschlossen (16.10.2026)",
+   "url": "https://www.bundestag.de/dokumente/textarchiv/2026/kw42-de-fruehstartrente-1223624",
+   "typ": "amtlich",
+   "datum": "2026-10-16",
+   "abgerufen": "2026-11-21"
+  },
+  "fsr-br": {
+   "titel": "Handelsblatt: Bundesrat billigt Frühstartrente (20.11.2026)",
+   "url": "https://www.handelsblatt.com/politik/deutschland/reformpaket-bundesrat-billigt-fruehstartrente-was-noch-beschlossen-wurde/100271573.html",
+   "typ": "sekundaer",
+   "datum": "2026-11-20",
+   "abgerufen": "2026-11-21"
+  },
+  "finanztip": {
+   "titel": "Finanztip: Altersvorsorgedepot-Vergleich (Stand 11.11.2026)",
+   "url": "https://www.finanztip.de/altersvorsorgedepot-vergleich/",
+   "typ": "sekundaer",
+   "datum": "2026-11-11",
+   "abgerufen": "2026-11-21"
+  },
+  "n26": {
+   "titel": "N26: Altersvorsorgedepot (Produktseite)",
+   "url": "https://n26.com/de-de/altersvorsorgedepot",
+   "typ": "primaer",
+   "datum": null,
+   "abgerufen": "2026-11-21"
+  },
+  "n26-presse": {
+   "titel": "N26: Pressemitteilung Altersvorsorgedepot mit Franklin Templeton (12.11.2026, laut Recherchepaket)",
+   "url": "https://n26.com/de-de/presse/pressemitteilung/n26-bringt-vollstaendig-digitales-altersvorsorgedepot-in-partnerschaft-mit-franklin-templeton-auf-den-markt",
+   "typ": "primaer",
+   "datum": "2026-11-12",
+   "abgerufen": "2026-11-21"
+  },
+  "sc-kosten": {
+   "titel": "Scalable Capital Hilfe: Welche Kosten fallen für das Altersvorsorgedepot an?",
+   "url": "https://help.scalable.capital/altersvorsorgedepot-bad26aed/welche-kosten-fallen-f%C3%BCr-das-altersvorsorgedepot-an-80b882a3",
+   "typ": "primaer",
+   "datum": null,
+   "abgerufen": "2026-11-21"
+  },
+  "sc-sonder": {
+   "titel": "Scalable Capital: Sonderkonditionen, Rentenbonus für Altersvorsorgedepots",
+   "url": "https://de.scalable.capital/sonderkonditionen",
+   "typ": "primaer",
+   "datum": null,
+   "abgerufen": "2026-11-21"
+  },
+  "sc-presse-1111": {
+   "titel": "Scalable Capital: Riester-Wechsel-Versprechen und Rentenbonus in allen AVDs (11.11.2026)",
+   "url": "https://de.scalable.capital/newsroom/riester-wechsel-kampagne",
+   "typ": "primaer",
+   "datum": "2026-11-11",
+   "abgerufen": "2026-11-21"
+  },
+  "sc-presse-ter": {
+   "titel": "Scalable Capital Newsroom: 0,15 % TER im Standarddepot",
+   "url": "https://de.scalable.capital/en/newsroom/fixed-term",
+   "typ": "primaer",
+   "datum": null,
+   "abgerufen": "2026-11-21"
+  },
+  "tr-presse": {
+   "titel": "Trade Republic: Pressemitteilung Altersvorsorgedepot (PDF)",
+   "url": "https://assets.traderepublic.com/assets/files/PressRelease_AVD_DE_DE.pdf",
+   "typ": "primaer",
+   "datum": null,
+   "abgerufen": "2026-11-21"
+  },
+  "tr-seite": {
+   "titel": "Trade Republic: Altersvorsorgedepot (FAQ, englische Seite)",
+   "url": "https://traderepublic.com/en-de/altersvorsorgedepot",
+   "typ": "primaer",
+   "datum": null,
+   "abgerufen": "2026-11-21"
+  },
+  "ing-kosten": {
+   "titel": "ING: Altersvorsorgedepot – Kosten und Gebühren",
+   "url": "https://www.ing.de/wissen/altersvorsorgedepot-kosten/",
+   "typ": "primaer",
+   "datum": null,
+   "abgerufen": "2026-11-21"
+  },
+  "ing-presse": {
+   "titel": "ING: Pressemitteilung Altersvorsorge-Depot (Konditionen)",
+   "url": "https://www.ing.de/ueber-uns/presse/pressemitteilungen/ing-altersvorsorge-depot-bietet-orientierung-und-flexibilitat-zu-attraktiven-preisen/",
+   "typ": "primaer",
+   "datum": null,
+   "abgerufen": "2026-11-21"
+  },
+  "flatex": {
+   "titel": "flatex: Altersvorsorgedepot (Produktseite)",
+   "url": "https://www.flatex.de/altersvorsorgedepot/",
+   "typ": "primaer",
+   "datum": null,
+   "abgerufen": "2026-11-21"
+  },
+  "deka-presse": {
+   "titel": "Deka: Medienmitteilung vom 09.09.2026",
+   "url": "https://www.deka.de/deka-gruppe/media--research/aktuelle-medienmitteilungen/pressearchiv/archiv2026/september/deka-startet-mit-attraktivem-produktangebot-fuer-altersvorsorge",
+   "typ": "primaer",
+   "datum": "2026-09-09",
+   "abgerufen": "2026-11-21"
+  },
+  "deka-seite": {
+   "titel": "Deka: Das neue Altersvorsorgedepot (Deka-Vorsorge, Deka-VorsorgePlus)",
+   "url": "https://www.deka.de/privatkunden/aktuelles-themen/informationen/altersvorsorge-reform",
+   "typ": "primaer",
+   "datum": null,
+   "abgerufen": "2026-11-21"
+  },
+  "biallo-deka": {
+   "titel": "Biallo: Deka nennt Kosten (09.09.2026)",
+   "url": "https://www.biallo.de/altersvorsorge/news/altersvorsorgedepot-deka-0-1-prozent-kosten-im-standard/",
+   "typ": "sekundaer",
+   "datum": "2026-09-09",
+   "abgerufen": "2026-11-21"
+  },
+  "sb": {
+   "titel": "SMARTBROKER+: Altersvorsorgedepot (Produktseite)",
+   "url": "https://www.smartbrokerplus.de/de-de/altersvorsorgedepot/",
+   "typ": "primaer",
+   "datum": null,
+   "abgerufen": "2026-11-21"
+  },
+  "sb-blog": {
+   "titel": "SMARTBROKER+: Konditionen Altersvorsorgedepot (Blog)",
+   "url": "https://www.smartbrokerplus.de/de-de/blog/altersvorsorgedepot-konditionen/",
+   "typ": "primaer",
+   "datum": null,
+   "abgerufen": "2026-11-21"
+  },
+  "tp-mobiflip": {
+   "titel": "mobiFlip: Traders Place plant Altersvorsorgedepot",
+   "url": "https://www.mobiflip.de/traders-place-plant-altersvorsorgedepot-mit-kostenvorteil/",
+   "typ": "sekundaer",
+   "datum": null,
+   "abgerufen": "2026-11-21"
+  },
+  "tp-reisetopia": {
+   "titel": "reisetopia: Traders Place Konditionen (E-Mail an Vertriebspartner)",
+   "url": "https://reisetopia.de/news/traders-place-konditionen-altersvorsorgedepot/",
+   "typ": "sekundaer",
+   "datum": null,
+   "abgerufen": "2026-11-21"
+  },
+  "bitpanda": {
+   "titel": "Bitpanda: Altersvorsorgedepot (Kostentabelle)",
+   "url": "https://www.bitpanda.com/en/altersvorsorgedepot",
+   "typ": "primaer",
+   "datum": null,
+   "abgerufen": "2026-11-21"
+  },
+  "db": {
+   "titel": "Deutsche Bank: Altersvorsorgedepot 2027",
+   "url": "https://www.deutsche-bank.de/pk/versichern-und-vorsorgen/versicherungen-optimieren/altersvorsorge-reform.html",
+   "typ": "primaer",
+   "datum": null,
+   "abgerufen": "2026-11-21"
+  },
+  "db-presse": {
+   "titel": "Deutsche Bank: Medieninformation 28.09.2026",
+   "url": "https://www.db.com/news/detail/20260928-deutsche-bank-startet-mit-breitem-vorsorgeangebot-zum-altersvorsorgedepot?language_id=3",
+   "typ": "primaer",
+   "datum": "2026-09-28",
+   "abgerufen": "2026-11-21"
+  },
+  "test-preiskampf": {
+   "titel": "Stiftung Warentest: Preiskampf ums Altersvorsorgedepot (13.10.2026)",
+   "url": "https://www.test.de/Altersvorsorgedepot-Preiskampf-der-Anbieter-ING-Trade-Republic-Smartbroker-6335719-0/",
+   "typ": "sekundaer",
+   "datum": "2026-10-13",
+   "abgerufen": "2026-11-21"
+  },
+  "union-presse": {
+   "titel": "Union Investment: Pressemitteilung UniVorsorge (11.05.2026)",
+   "url": "https://unternehmen.union-investment.de/presseservice/aktuelles/pressemitteilungenarchiv/alle-pressemitteilungen/2026/univorsorge",
+   "typ": "primaer",
+   "datum": "2026-05-11",
+   "abgerufen": "2026-11-21"
+  },
+  "union-seite": {
+   "titel": "Union Investment: Staatlich geförderte Altersvorsorge (UniVorsorgeDepot)",
+   "url": "https://www.union-investment.de/familien-und-altersvorsorge/fuers-alter-vorsorgen/staatlich-gefoerderte-altersvorsorge",
+   "typ": "primaer",
+   "datum": null,
+   "abgerufen": "2026-11-21"
+  },
+  "quirion": {
+   "titel": "quirion: Altersvorsorgedepot",
+   "url": "https://www.quirion.de/altersvorsorgedepot",
+   "typ": "primaer",
+   "datum": null,
+   "abgerufen": "2026-11-21"
+  },
+  "quirion-en": {
+   "titel": "quirion: Retirement account (englisch)",
+   "url": "https://www.quirion.de/en/retire",
+   "typ": "primaer",
+   "datum": null,
+   "abgerufen": "2026-11-21"
+  },
+  "comdirect": {
+   "titel": "comdirect: Riester-Rente und Altersvorsorgedepot (Varianten Standard und Flexibel)",
+   "url": "https://www.comdirect.de/altersvorsorge/riester-vertrag-wechseln.html?CIF_Check=true",
+   "typ": "primaer",
+   "datum": null,
+   "abgerufen": "2026-11-21"
+  },
+  "consors": {
+   "titel": "Consorsbank: Altersvorsorgedepot (Produktseite)",
+   "url": "https://www.consorsbank.de/web/Sparen-Anlegen/Anlegen/Altersvorsorgedepot",
+   "typ": "primaer",
+   "datum": null,
+   "abgerufen": "2026-11-21"
+  },
+  "dkb": {
+   "titel": "DKB: Altersvorsorgedepot 2027",
+   "url": "https://www.dkb.de/privatkunden/investieren/altersvorsorgedepot",
+   "typ": "primaer",
+   "datum": null,
+   "abgerufen": "2026-11-21"
+  },
+  "unitplus": {
+   "titel": "UnitPlus: Altersvorsorgedepot",
+   "url": "https://unitplus.eu/altersvorsorgedepot",
+   "typ": "primaer",
+   "datum": null,
+   "abgerufen": "2026-11-21"
+  },
+  "raisin": {
+   "titel": "Raisin: Altersvorsorgedepot (Stand 06.09.2026)",
+   "url": "https://www.raisin.com/de-de/altersvorsorgedepot/",
+   "typ": "primaer",
+   "datum": "2026-09-06",
+   "abgerufen": "2026-11-21"
+  },
+  "commerzbank": {
+   "titel": "Commerzbank: Altersvorsorgedepot",
+   "url": "https://www.commerzbank.de/privatkunden/investieren/depot/altersvorsorgedepot/",
+   "typ": "primaer",
+   "datum": null,
+   "abgerufen": "2026-11-21"
+  },
+  "allianz": {
+   "titel": "Allianz: Altersvorsorgedepot (drei Produktlösungen)",
+   "url": "https://www.allianz.de/vorsorge/altersvorsorgedepot/",
+   "typ": "primaer",
+   "datum": null,
+   "abgerufen": "2026-11-21"
+  },
+  "allianz-std": {
+   "titel": "Allianz: Altersvorsorge Standarddepot",
+   "url": "https://www.allianz.de/vorsorge/altersvorsorgedepot/standarddepot/",
+   "typ": "primaer",
+   "datum": null,
+   "abgerufen": "2026-11-21"
+  },
+  "sunrise": {
+   "titel": "Sunrise: Was ist das neue Altersvorsorgedepot (Blog)",
+   "url": "https://www.sunrise.app/de/blog-post/altersvorsorgedepot-was-bekomme-ich-vom-staat",
+   "typ": "primaer",
+   "datum": null,
+   "abgerufen": "2026-11-21"
+  },
+  "fidelity": {
+   "titel": "Fidelity: Fidelity VorsorgeDepot",
+   "url": "https://www.fidelity.de/produkte-services/anlageloesungen/fidelity-vorsorgedepot/",
+   "typ": "primaer",
+   "datum": null,
+   "abgerufen": "2026-11-21"
+  },
+  "hannoversche": {
+   "titel": "Hannoversche: AltersvorsorgeDepot Standard",
+   "url": "https://www.hannoversche.de/altersvorsorge/altersvorsorgedepot/standarddepot",
+   "typ": "primaer",
+   "datum": null,
+   "abgerufen": "2026-11-21"
+  },
+  "devk": {
+   "titel": "DEVK: Pressemitteilung neue Fördermodelle (06.07.2026)",
+   "url": "https://www.devk.de/unternehmen/presse/pressemitteilungen/altersvorsorgereform-06-07-2026",
+   "typ": "primaer",
+   "datum": "2026-07-06",
+   "abgerufen": "2026-11-21"
+  },
+  "devk-1610": {
+   "titel": "DEVK: Pressemitteilung Altersvorsorgedepot (16.10.2026)",
+   "url": "https://www.devk.de/unternehmen/presse/pressemitteilungen/altersvorsorgedepot-junge-menschen-16-10-2026",
+   "typ": "primaer",
+   "datum": "2026-10-16",
+   "abgerufen": "2026-11-21"
+  },
+  "cosmos": {
+   "titel": "CosmosDirekt: Standarddepot",
+   "url": "https://www.cosmosdirekt.de/standarddepot/",
+   "typ": "primaer",
+   "datum": null,
+   "abgerufen": "2026-11-21"
+  },
+  "debeka": {
+   "titel": "Debeka: Altersvorsorgedepot",
+   "url": "https://www.debeka.de/privatkunden/vorsorgensparen/zukunftalter/altersvorsorgedepot.html",
+   "typ": "primaer",
+   "datum": null,
+   "abgerufen": "2026-11-21"
+  },
+  "openbank": {
+   "titel": "Openbank: Altersvorsorgedepot 2027",
+   "url": "https://www.openbank.de/produkte/vorsorgen/altersvorsorgedepot/",
+   "typ": "primaer",
+   "datum": null,
+   "abgerufen": "2026-11-21"
+  },
+  "santander": {
+   "titel": "Santander: Altersvorsorgedepot mit Openbank, ERGO und Santander Asset Management",
+   "url": "https://www.santander.de/privatkunden/vorsorgen-und-versichern/vorsorge/altersvorsorgedepot/",
+   "typ": "primaer",
+   "datum": null,
+   "abgerufen": "2026-11-21"
+  },
+  "liqid": {
+   "titel": "LIQID: Startseite (Vormerkung Altersvorsorgedepot ab 2027)",
+   "url": "https://www.liqid.de/",
+   "typ": "primaer",
+   "datum": null,
+   "abgerufen": "2026-11-21"
+  },
+  "lvm": {
+   "titel": "LVM: Altersvorsorgedepot",
+   "url": "https://www.lvm.de/versicherungen-und-finanzen/vorsorge/altersvorsorgedepot",
+   "typ": "primaer",
+   "datum": null,
+   "abgerufen": "2026-11-21"
+  },
+  "provinzial": {
+   "titel": "Provinzial: Das Altersvorsorgedepot",
+   "url": "https://www.provinzial.de/west/versicherung/leben-und-rente/gefoerderte-rentenversicherung/av-depot.html",
+   "typ": "primaer",
+   "datum": null,
+   "abgerufen": "2026-11-21"
+  },
+  "wuertt": {
+   "titel": "Württembergische: Altersvorsorgedepot 2027 (drei Produkte, Zertifizierung ausstehend)",
+   "url": "https://www.wuerttembergische.de/vermoegen-vorsorge/altersvorsorgedepot/",
+   "typ": "primaer",
+   "datum": null,
+   "abgerufen": "2026-11-21"
+  },
+  "wuertt-std": {
+   "titel": "Württembergische: Standarddepot",
+   "url": "https://www.wuerttembergische.de/vermoegen-vorsorge/altersvorsorgedepot/standarddepot/",
+   "typ": "primaer",
+   "datum": null,
+   "abgerufen": "2026-11-21"
+  },
+  "zurich": {
+   "titel": "Zurich: Pressemitteilung drei Lösungen (06.11.2026)",
+   "url": "https://www.newsroom.zurich.de/pressreleases/neue-altersvorsorge-ab-2027-zurich-setzt-auf-drei-loesungen-3476528",
+   "typ": "primaer",
+   "datum": "2026-11-06",
+   "abgerufen": "2026-11-21"
+  },
+  "interrisk": {
+   "titel": "InterRisk: Altersvorsorgedepot",
+   "url": "https://www.interrisk.de/de/index.php",
+   "typ": "primaer",
+   "datum": null,
+   "abgerufen": "2026-11-21"
+  },
+  "oskar": {
+   "titel": "OSKAR: Altersvorsorgedepot 2027",
+   "url": "https://www.oskar.de/altersvorsorgedepot/",
+   "typ": "primaer",
+   "datum": null,
+   "abgerufen": "2026-11-21"
+  },
+  "oskar-std": {
+   "titel": "OSKAR: Standarddepot im Altersvorsorgedepot",
+   "url": "https://www.oskar.de/altersvorsorgedepot/standarddepot/",
+   "typ": "primaer",
+   "datum": null,
+   "abgerufen": "2026-11-21"
+  },
+  "whitebox": {
+   "titel": "Whitebox: Altersvorsorgedepot",
+   "url": "https://www.whitebox.eu/altersvorsorgedepot",
+   "typ": "primaer",
+   "datum": null,
+   "abgerufen": "2026-11-21"
+  },
+  "evergreen": {
+   "titel": "Evergreen: Altersvorsorgedepot",
+   "url": "https://www.evergreen.de/altersvorsorgedepot/",
+   "typ": "primaer",
+   "datum": null,
+   "abgerufen": "2026-11-21"
+  },
+  "growney": {
+   "titel": "growney: Presse (Kooperation mit Vanguard für das Altersvorsorgedepot)",
+   "url": "https://growney.de/presse/alle-themen",
+   "typ": "primaer",
+   "datum": null,
+   "abgerufen": "2026-11-21"
+  },
+  "finanzennet": {
+   "titel": "finanzen.net: Altersvorsorgedepot 2027 (Warteliste finanzen.net zero)",
+   "url": "https://finanzen.net/ratgeber/?p=18587",
+   "typ": "primaer",
+   "datum": null,
+   "abgerufen": "2026-11-21"
+  },
+  "bzst": {
+   "titel": "BZSt: Liste aller erteilten Zertifikate (CSV)",
+   "url": "https://www.bzst.de/SharedDocs/Downloads/DE/Zertifizierungsstelle/liste_aller_erteilten_zertifikate_CSV.csv?__blob=publicationFile&v=56",
+   "typ": "amtlich",
+   "datum": null,
+   "abgerufen": "2026-11-21"
+  },
+  "ergo": {
+   "titel": "ERGO: Altersvorsorgedepot (Standarddepot ab 2027)",
+   "url": "https://www.ergo.de/de/Produkte/Rentenversicherung/altersvorsorgedepot",
+   "typ": "primaer",
+   "datum": null,
+   "abgerufen": "2026-11-21"
+  },
+  "ergo-rv": {
+   "titel": "ERGO: Rentenlösungen im Vergleich (Standarddepot, Förderung ab 2027)",
+   "url": "https://www.ergo.de/de/Produkte/Rentenversicherung",
+   "typ": "primaer",
+   "datum": null,
+   "abgerufen": "2026-11-21"
+  },
+  "helvetia": {
+   "titel": "Helvetia: Altersvorsorgedepot (Best Invest Altersvorsorgedepot)",
+   "url": "https://www.helvetia.de/de/privatkunden/gefoerderte-altersvorsorge-2027.html",
+   "typ": "primaer",
+   "datum": null,
+   "abgerufen": "2026-11-21"
+  }
+ },
+ "anbieter": [
   {
-   "name": "flatex / Degiro (Core)",
-   "typ": "Broker",
-   "kosten_start": 0.0,
-   "kosten_dauer": 0.07,
-   "kosten": "0 % in den ersten 5 Jahren (Produktkosten werden erstattet), danach höchstens 0,07 % p. a.",
-   "depot": "Depot und Vertrag gebührenfrei, keine Ordergebühren für Sparpläne und Einmalanlagen",
-   "fonds": "Standarddepot Core; Plus und Flex mit mehr Auswahl, Preise noch offen",
-   "status": "Core konkret angekündigt",
+   "id": "n26",
+   "name": "N26",
+   "typ": "Neobank",
+   "domain": "n26.com",
+   "herkunft": "bisherige Liste",
    "hinweis": "",
-   "quellen": [
+   "produkte": [
     {
-     "titel": "Stiftung Warentest: Preiskampf ums Altersvorsorgedepot (13.10.2026)",
-     "url": "https://www.test.de/Altersvorsorgedepot-Preiskampf-der-Anbieter-ING-Trade-Republic-Smartbroker-6335719-0/"
+     "id": "n26-standard",
+     "name": "Standarddepot",
+     "art": "standard",
+     "pruefstatus": "primary_verified",
+     "konditionen": "veroeffentlicht",
+     "kosten_text": "ETF-Kosten bis 31.12.2028 erstattet, ab 2029 rund 0,09 % p. a. (netto nach Rabatten). N26-Servicegebühr: dauerhaft 0 % bei Eröffnung vom 1.1. bis 30.6.2027, bei Eröffnung ab 1.7.2027 zusätzlich 0,10 % p. a.",
+     "depot_text": "Sparpläne kostenlos. Startbonus bis 430 € bei Start vom 1.1. bis 31.3.2027 (Bedingungen beim Anbieter).",
+     "auswahl_text": "Zwei ETFs (Franklin Templeton), ein konservativer und ein wachstumsorientierter",
+     "hinweis": "Die 0,09 % sind nicht für alle Kunden die Gesamtkosten: Bei Eröffnung ab Juli 2027 kommt die Servicegebühr hinzu.",
+     "bestandteile": [
+      {
+       "art": "fund_ter",
+       "pct": 0.0,
+       "bis_kalender": "2028-12-31",
+       "bedingung": "ETF-Kosten bis Ende 2028 erstattet",
+       "quelle": "n26"
+      },
+      {
+       "art": "fund_ter",
+       "pct": 0.09,
+       "ab_kalender": "2029-01-01",
+       "ca": true,
+       "bedingung": "rund 0,09 % netto nach Rabatten",
+       "quelle": "n26"
+      },
+      {
+       "art": "service_fee",
+       "pct": 0.1,
+       "eroeffnung_ab": "2027-07-01",
+       "bedingung": "nur bei Eröffnung ab 1.7.2027; Berechnungsbasis nicht genannt",
+       "quelle": "n26"
+      }
+     ],
+     "quellen": [
+      "n26",
+      "n26-presse"
+     ],
+     "im_rechner": true,
+     "zertifikate": []
     },
     {
-     "titel": "finanzwissen.de: Anbieter im Vergleich (Stand 29.10.2026)",
-     "url": "https://finanzwissen.de/vergleich/depot/altersvorsorge/"
+     "id": "n26-frei",
+     "name": "Selbstentscheider",
+     "art": "frei",
+     "pruefstatus": "primary_verified",
+     "konditionen": "teilweise",
+     "kosten_text": "ETF-Kosten je nach ETF (über 300 ETFs der Positivliste), 0,90 € je Order, Sparpläne kostenlos",
+     "depot_text": "0,90 € je Order, Sparpläne kostenlos",
+     "auswahl_text": "Über 300 ETFs",
+     "hinweis": "",
+     "bestandteile": [
+      {
+       "art": "order_fee",
+       "pct": null,
+       "eur_order": 0.9,
+       "quelle": "n26"
+      },
+      {
+       "art": "saving_plan_fee",
+       "pct": 0.0,
+       "quelle": "n26"
+      },
+      {
+       "art": "fund_ter",
+       "pct": null,
+       "bedingung": "je nach ETF",
+       "quelle": "n26"
+      }
+     ],
+     "quellen": [
+      "n26"
+     ],
+     "im_rechner": false,
+     "zertifikate": []
     }
-   ],
-   "start_jahre": 5
+   ]
   },
   {
-   "name": "Deka (Sparkassen)",
-   "typ": "Sparkasse",
-   "kosten_start": 0.1,
-   "kosten_dauer": 0.1,
-   "kosten": "0,1 % p. a. Gesamtkosten im Standarddepot (nur ETF-Kosten). Individualdepot mit aktiven Fonds 1,0 bis 1,5 % p. a.",
-   "depot": "Depot und Zulagenverwaltung kostenlos",
-   "fonds": "Ein weltweiter Aktien-ETF und ein europäischer Renten-ETF",
-   "status": "Angekündigt",
-   "hinweis": "Vorbehalt der BaFin-Genehmigung, im November erwartet",
-   "quellen": [
-    {
-     "titel": "Stiftung Warentest: Preiskampf ums Altersvorsorgedepot (13.10.2026)",
-     "url": "https://www.test.de/Altersvorsorgedepot-Preiskampf-der-Anbieter-ING-Trade-Republic-Smartbroker-6335719-0/"
-    },
-    {
-     "titel": "finanzwissen.de: Anbieter im Vergleich (Stand 29.10.2026)",
-     "url": "https://finanzwissen.de/vergleich/depot/altersvorsorge/"
-    }
-   ],
-   "start_jahre": 0
-  },
-  {
+   "id": "scalable",
    "name": "Scalable Capital",
    "typ": "Broker",
-   "kosten_start": 0.0,
-   "kosten_dauer": 0.15,
-   "kosten": "0 % bei ausgewählten ETFs bis mindestens 31.12.2027, danach höchstens 0,15 % p. a. (Standarddepot)",
-   "depot": "Depot, Sparpläne, Ein- und Auszahlungen kostenlos. Freie ETF-Wahl: Orders 0 € mit PRIME+, 0,99 € im Free-Tarif",
-   "fonds": "Standarddepot mit vorgegebenen ETFs; zusätzlich freie ETF-Wahl",
-   "status": "Konditionen veröffentlicht, Voranmeldung möglich",
-   "hinweis": "Konditionen noch nicht verbindlich",
-   "quellen": [
+   "domain": "scalable.capital",
+   "herkunft": "bisherige Liste",
+   "hinweis": "",
+   "produkte": [
     {
-     "titel": "Capitalo: Altersvorsorgedepot (Stand 22.10.2026)",
-     "url": "https://www.capitalo.de/depot/altersvorsorgedepot"
+     "id": "sc-standard",
+     "name": "Standarddepot",
+     "art": "standard",
+     "pruefstatus": "primary_verified",
+     "konditionen": "veroeffentlicht",
+     "kosten_text": "ETF-Kosten (TER) laut Anbieter 0,15 % p. a. Im Jahr 2027 0 % (ausgewählte ETFs bis 31.12.2027). Danach erstattet der widerrufliche „Rentenbonus“ die TER, solange am Quartalsende ein Sparplan läuft und der Höchstbetrag nicht überschritten ist.",
+     "depot_text": "Depot, Sparpläne, Ein- und Auszahlungen 0 €. Wechselkosten des alten Riester-Anbieters werden erstattet (ab 1.1.2027).",
+     "auswahl_text": "Zwei ETFs, Renditebaustein Scalable MSCI AC World Xtrackers",
+     "hinweis": "",
+     "bestandteile": [
+      {
+       "art": "fund_ter",
+       "pct": 0.15,
+       "quelle": "sc-presse-ter"
+      },
+      {
+       "art": "ter_erstattung",
+       "pct": null,
+       "voll": true,
+       "bis_kalender": "2027-12-31",
+       "bedingung": "0 % TER für ausgewählte ETFs bis 31.12.2027",
+       "quelle": "sc-kosten"
+      },
+      {
+       "art": "ter_erstattung",
+       "pct": null,
+       "voll": true,
+       "ab_kalender": "2028-01-01",
+       "freiwillig": true,
+       "bedingung": "Rentenbonus: Sparplan am Quartalsende nötig, kann für die Zukunft geändert oder eingestellt werden",
+       "quelle": "sc-sonder"
+      }
+     ],
+     "quellen": [
+      "sc-kosten",
+      "sc-sonder",
+      "sc-presse-1111",
+      "sc-presse-ter",
+      "bzst"
+     ],
+     "im_rechner": true,
+     "zertifikate": [
+      {
+       "nr": "006644",
+       "name": "Altersvorsorgedepot - Standarddepot",
+       "wirksam": "2027-01-01"
+      }
+     ]
     },
     {
-     "titel": "Stiftung Warentest: Preiskampf ums Altersvorsorgedepot (13.10.2026)",
-     "url": "https://www.test.de/Altersvorsorgedepot-Preiskampf-der-Anbieter-ING-Trade-Republic-Smartbroker-6335719-0/"
-    },
-    {
-     "titel": "finanzwissen.de: Anbieter im Vergleich (Stand 29.10.2026)",
-     "url": "https://finanzwissen.de/vergleich/depot/altersvorsorge/"
+     "id": "sc-frei",
+     "name": "Selbst entscheiden",
+     "art": "frei",
+     "pruefstatus": "primary_verified",
+     "konditionen": "teilweise",
+     "kosten_text": "ETF-Kosten ab 0 % p. a.; Rentenbonus erstattet die TER ausgewählter ETFs (Sparplan auf den ETF nötig)",
+     "depot_text": "Depot und Sparpläne 0 €, Orders 0 € mit PRIME+, 0,99 € im FREE-Tarif",
+     "auswahl_text": "ETFs, Fonds, ELTIF",
+     "hinweis": "",
+     "bestandteile": [
+      {
+       "art": "order_fee",
+       "pct": null,
+       "eur_order": 0.99,
+       "bedingung": "FREE-Tarif; 0 € mit PRIME+",
+       "quelle": "sc-kosten"
+      },
+      {
+       "art": "fund_ter",
+       "pct": null,
+       "quelle": "sc-kosten"
+      }
+     ],
+     "quellen": [
+      "sc-kosten",
+      "sc-sonder",
+      "bzst"
+     ],
+     "im_rechner": false,
+     "zertifikate": [
+      {
+       "nr": "006645",
+       "name": "Altersvorsorgedepot - Selbst entscheiden",
+       "wirksam": "2027-01-01"
+      }
+     ]
     }
-   ],
-   "start_jahre": 1
+   ]
   },
   {
-   "name": "ING",
-   "typ": "Direktbank",
-   "kosten_start": 0.2,
-   "kosten_dauer": 0.2,
-   "kosten": "Standarddepot (Relax): 0,20 % p. a. Gesamtkosten. Aktiv (freie Wahl): ab 0,03 % p. a.",
-   "depot": "Keine Depot- und Wechselgebühren, Umschichtungen und Einmalzahlungen 0 €. Sparen ab 10 € im Monat",
-   "fonds": "Relax: zwei vorausgewählte ETFs. Aktiv: über 1.000 ETFs und Fonds",
-   "status": "Konditionen veröffentlicht",
-   "hinweis": "Angaben zu Transaktionskosten unterscheiden sich je Quelle",
-   "quellen": [
-    {
-     "titel": "Cash.: ING bringt Altersvorsorgedepot 2027 (26.10.2026)",
-     "url": "https://www.cash-online.de/a/ing-bringt-altersvorsorgedepot-2027-ohne-order-und-depotgebuehren-728576/"
-    },
-    {
-     "titel": "finanzwissen.de: Anbieter im Vergleich (Stand 29.10.2026)",
-     "url": "https://finanzwissen.de/vergleich/depot/altersvorsorge/"
-    },
-    {
-     "titel": "ING: Altersvorsorgedepot erklärt (14.07.2026)",
-     "url": "https://www.ing.de/wissen/altersvorsorgedepot/"
-    }
-   ],
-   "start_jahre": 0
-  },
-  {
+   "id": "traderepublic",
    "name": "Trade Republic",
    "typ": "Neobroker",
-   "kosten_start": 0.0,
-   "kosten_dauer": 0.0,
-   "kosten": "ETF-Produktkosten werden bei mehreren Dutzend ausgewählten ETFs erstattet, ohne Enddatum",
-   "depot": "Depot und Ausführung 0 €, im Standard- und im frei gestaltbaren Depot",
-   "fonds": "Ausgewählte ETFs von BlackRock, DWS und Vanguard",
-   "status": "Konditionen veröffentlicht",
-   "hinweis": "Erstattung ist nicht vertraglich garantiert",
-   "quellen": [
-    {
-     "titel": "Cash.: Trade Republic verschärft Preiskampf (13.10.2026)",
-     "url": "https://www.cash-online.de/a/neobroker-trade-republic-verschaerft-preiskampf-um-altersvorsorgedepots-727533/"
-    },
-    {
-     "titel": "Stiftung Warentest: Preiskampf ums Altersvorsorgedepot (13.10.2026)",
-     "url": "https://www.test.de/Altersvorsorgedepot-Preiskampf-der-Anbieter-ING-Trade-Republic-Smartbroker-6335719-0/"
-    },
-    {
-     "titel": "finanzwissen.de: Anbieter im Vergleich (Stand 29.10.2026)",
-     "url": "https://finanzwissen.de/vergleich/depot/altersvorsorge/"
-    }
-   ],
-   "start_jahre": 0
-  },
-  {
-   "name": "Smartbroker+",
-   "typ": "Neobroker",
-   "kosten_start": 0.0,
-   "kosten_dauer": null,
-   "kosten": "ETF-Kosten werden in den ersten 3 Jahren erstattet, danach zahlst du die Kosten der gewählten ETFs (nicht genannt)",
-   "depot": "Depot, Sparpläne und Orders gebührenfrei",
-   "fonds": "Standarddepot mit drei ETFs: MSCI World, MSCI ACWI oder FTSE All-World",
-   "status": "Standarddepot veröffentlicht",
+   "domain": "traderepublic.com",
+   "herkunft": "bisherige Liste",
    "hinweis": "",
-   "quellen": [
+   "produkte": [
     {
-     "titel": "Stiftung Warentest: Preiskampf ums Altersvorsorgedepot (13.10.2026)",
-     "url": "https://www.test.de/Altersvorsorgedepot-Preiskampf-der-Anbieter-ING-Trade-Republic-Smartbroker-6335719-0/"
+     "id": "tr-standard",
+     "name": "Standarddepot",
+     "art": "standard",
+     "pruefstatus": "primary_verified",
+     "konditionen": "veroeffentlicht",
+     "kosten_text": "Laut Anbieter komplett kostenlos: keine Depotgebühr, keine Sparplankosten, keine Produktkosten bei mehreren Dutzend ETFs (BlackRock, DWS, Vanguard). Ein Enddatum oder eine vertragliche Zusicherung nennt der Anbieter nicht.",
+     "depot_text": "Depot und Sparpläne kostenlos",
+     "auswahl_text": "ETFs von BlackRock, DWS, Vanguard",
+     "hinweis": "",
+     "bestandteile": [
+      {
+       "art": "fund_ter",
+       "pct": null,
+       "quelle": "tr-seite"
+      },
+      {
+       "art": "ter_erstattung",
+       "pct": null,
+       "voll": true,
+       "freiwillig": true,
+       "bedingung": "„langfristig ohne Produktkosten“, kein Enddatum genannt",
+       "quelle": "tr-presse"
+      }
+     ],
+     "quellen": [
+      "tr-presse",
+      "tr-seite",
+      "bzst"
+     ],
+     "im_rechner": true,
+     "zertifikate": [
+      {
+       "nr": "006624",
+       "name": "TRB_StDV_BLK_N_2701",
+       "wirksam": "2027-01-01"
+      },
+      {
+       "nr": "006625",
+       "name": "TRB_StDV_BLK_R_2701",
+       "wirksam": "2027-01-01"
+      },
+      {
+       "nr": "006626",
+       "name": "TRB_StDV_DWS_N_2701",
+       "wirksam": "2027-01-01"
+      },
+      {
+       "nr": "006627",
+       "name": "TRB_StDV_DWS_R_2701",
+       "wirksam": "2027-01-01"
+      },
+      {
+       "nr": "006628",
+       "name": "TRB_StDV_VNG_N_2701",
+       "wirksam": "2027-01-01"
+      },
+      {
+       "nr": "006629",
+       "name": "TRB_StDV_VNG_R_2701",
+       "wirksam": "2027-01-01"
+      }
+     ]
     },
     {
-     "titel": "finanzwissen.de: Anbieter im Vergleich (Stand 29.10.2026)",
-     "url": "https://finanzwissen.de/vergleich/depot/altersvorsorge/"
+     "id": "tr-frei",
+     "name": "Freies Depot",
+     "art": "frei",
+     "pruefstatus": "primary_verified",
+     "konditionen": "teilweise",
+     "kosten_text": "Mehrere Dutzend ETFs ohne Produktkosten, sonst Kosten je nach Produkt",
+     "depot_text": "Depot und Sparpläne kostenlos; Einzelorder-Kosten nicht genannt",
+     "auswahl_text": "ETFs, Staatsanleihen, aktive Fonds",
+     "hinweis": "",
+     "bestandteile": [
+      {
+       "art": "fund_ter",
+       "pct": null,
+       "quelle": "tr-seite"
+      }
+     ],
+     "quellen": [
+      "tr-presse",
+      "tr-seite",
+      "bzst"
+     ],
+     "im_rechner": false,
+     "zertifikate": [
+      {
+       "nr": "006622",
+       "name": "TRB_AVD_SE_2701",
+       "wirksam": "2027-01-01"
+      }
+     ]
     }
-   ],
-   "start_jahre": 3
+   ]
   },
   {
+   "id": "ing",
+   "name": "ING",
+   "typ": "Direktbank",
+   "domain": "ing.de",
+   "herkunft": "bisherige Liste",
+   "hinweis": "",
+   "produkte": [
+    {
+     "id": "ing-relax",
+     "name": "Altersvorsorge-Depot Relax (Standarddepot)",
+     "art": "standard",
+     "pruefstatus": "primary_verified",
+     "konditionen": "veroeffentlicht",
+     "kosten_text": "Laufende ETF-Kosten 0,20 % p. a. (zzgl. Transaktionskosten)",
+     "depot_text": "Depotführung, Sparpläne, Einmalanlagen, Umschichtungen und Anbieterwechsel 0 €",
+     "auswahl_text": "Zwei aktive ING-ETFs",
+     "hinweis": "",
+     "bestandteile": [
+      {
+       "art": "fund_ter",
+       "pct": 0.2,
+       "quelle": "ing-kosten"
+      }
+     ],
+     "quellen": [
+      "ing-kosten",
+      "ing-presse"
+     ],
+     "im_rechner": true,
+     "zertifikate": []
+    },
+    {
+     "id": "ing-aktiv",
+     "name": "Altersvorsorge-Depot Aktiv",
+     "art": "frei",
+     "pruefstatus": "primary_verified",
+     "konditionen": "teilweise",
+     "kosten_text": "Produktkosten je nach Auswahl ab 0,03 % p. a.",
+     "depot_text": "Depot, Orders und Wechsel 0 €",
+     "auswahl_text": "Über 1.000 ETFs und Fonds",
+     "hinweis": "",
+     "bestandteile": [
+      {
+       "art": "fund_ter",
+       "pct": null,
+       "bedingung": "ab 0,03 %",
+       "quelle": "ing-kosten"
+      }
+     ],
+     "quellen": [
+      "ing-kosten",
+      "ing-presse"
+     ],
+     "im_rechner": false,
+     "zertifikate": []
+    }
+   ]
+  },
+  {
+   "id": "flatex",
+   "name": "flatex / Degiro",
+   "typ": "Broker",
+   "domain": "flatex.de",
+   "herkunft": "bisherige Liste",
+   "hinweis": "",
+   "produkte": [
+    {
+     "id": "flatex-core",
+     "name": "Standarddepot Core",
+     "art": "standard",
+     "pruefstatus": "primary_verified",
+     "konditionen": "veroeffentlicht",
+     "kosten_text": "Produktkosten in den ersten fünf Jahren erstattet, ab dem sechsten Jahr höchstens 0,07 % p. a. (TER)",
+     "depot_text": "0 € Depotgebühr, 0 € Orderprovision für Sparpläne und Einmalanlagen (zzgl. Spreads)",
+     "auswahl_text": "Aktien- und Anleihen-Baustein",
+     "hinweis": "",
+     "bestandteile": [
+      {
+       "art": "fund_ter",
+       "pct": 0.07,
+       "obergrenze": true,
+       "quelle": "flatex"
+      },
+      {
+       "art": "ter_erstattung",
+       "pct": null,
+       "voll": true,
+       "bis_vertragsjahr": 5,
+       "bedingung": "Erstattung in den ersten fünf Jahren",
+       "quelle": "flatex"
+      }
+     ],
+     "quellen": [
+      "flatex"
+     ],
+     "im_rechner": true,
+     "zertifikate": []
+    },
+    {
+     "id": "flatex-plus",
+     "name": "Standarddepot Plus",
+     "art": "standard",
+     "pruefstatus": "primary_verified",
+     "konditionen": "offen",
+     "kosten_text": "Konditionen laut Anbieter „rechtzeitig vor dem Start“",
+     "depot_text": "noch offen",
+     "auswahl_text": "Aktien-Baustein, Anleihen plus Goldanteil",
+     "hinweis": "",
+     "bestandteile": [],
+     "quellen": [
+      "flatex"
+     ],
+     "im_rechner": true,
+     "zertifikate": []
+    },
+    {
+     "id": "flatex-flex",
+     "name": "Altersvorsorgedepot Flex",
+     "art": "frei",
+     "pruefstatus": "primary_verified",
+     "konditionen": "offen",
+     "kosten_text": "Konditionen laut Anbieter „rechtzeitig vor dem Start“, dazu Kosten der gewählten Fonds",
+     "depot_text": "noch offen",
+     "auswahl_text": "Bis 25 Positionen aus ETFs und Fonds",
+     "hinweis": "",
+     "bestandteile": [],
+     "quellen": [
+      "flatex"
+     ],
+     "im_rechner": false,
+     "zertifikate": []
+    }
+   ]
+  },
+  {
+   "id": "deka",
+   "name": "Deka (Sparkassen)",
+   "typ": "Sparkasse",
+   "domain": "deka.de",
+   "herkunft": "bisherige Liste",
+   "hinweis": "",
+   "produkte": [
+    {
+     "id": "deka-vorsorge",
+     "name": "Deka-Vorsorge (Standarddepot)",
+     "art": "standard",
+     "pruefstatus": "primary_verified",
+     "konditionen": "veroeffentlicht",
+     "kosten_text": "0,1 % p. a. Effektivkosten (nur ETF-Kosten)",
+     "depot_text": "Depot und Zulagenverwaltung kostenlos; Wechsel zwischen klassischer und individueller Variante kostenlos",
+     "auswahl_text": "Deka Aktien-ETF und Renten-ETF",
+     "hinweis": "",
+     "bestandteile": [
+      {
+       "art": "total_cost",
+       "pct": 0.1,
+       "quelle": "deka-presse"
+      }
+     ],
+     "quellen": [
+      "deka-presse",
+      "deka-seite"
+     ],
+     "im_rechner": true,
+     "zertifikate": []
+    },
+    {
+     "id": "deka-plus",
+     "name": "Deka-VorsorgePlus (aktiv gemanagt)",
+     "art": "beratung",
+     "pruefstatus": "secondary_lead",
+     "konditionen": "teilweise",
+     "kosten_text": "Laut Presseberichten 1,0 bis 1,5 % p. a. je nach Laufzeit; auf den Anbieterseiten ohne Zahl",
+     "depot_text": "Depot und Zulagenverwaltung kostenlos",
+     "auswahl_text": "Bis zu drei Fondsbausteine, mit Beratung",
+     "hinweis": "",
+     "bestandteile": [
+      {
+       "art": "total_cost",
+       "pct": null,
+       "quelle": "biallo-deka"
+      }
+     ],
+     "quellen": [
+      "deka-seite",
+      "biallo-deka"
+     ],
+     "im_rechner": false,
+     "zertifikate": []
+    }
+   ]
+  },
+  {
+   "id": "smartbroker",
+   "name": "SMARTBROKER+",
+   "typ": "Neobroker",
+   "domain": "smartbrokerplus.de",
+   "herkunft": "bisherige Liste",
+   "hinweis": "",
+   "produkte": [
+    {
+     "id": "sb-standard",
+     "name": "Standarddepot",
+     "art": "standard",
+     "pruefstatus": "primary_verified",
+     "konditionen": "teilweise",
+     "kosten_text": "Laufende ETF-Kosten in den ersten drei Jahren zu 100 % erstattet, bis 25.000 € Anlagevolumen. Danach zahlst du die TER der ETFs, deren Höhe der Anbieter nicht nennt. Erstattung läuft weiter, wenn du im Hauptdepot mindestens 15 Trades im Jahr machst.",
+     "depot_text": "0 € Depotgebühr, Sparpläne und Orders 0 € (zzgl. Spreads und Zuwendungen)",
+     "auswahl_text": "Zwei ETFs",
+     "hinweis": "",
+     "bestandteile": [
+      {
+       "art": "fund_ter",
+       "pct": null,
+       "quelle": "sb"
+      },
+      {
+       "art": "ter_erstattung",
+       "pct": null,
+       "voll": true,
+       "bis_vertragsjahr": 3,
+       "max_volumen": 25000,
+       "bedingung": "bis 25.000 € Anlagevolumen",
+       "quelle": "sb"
+      }
+     ],
+     "quellen": [
+      "sb",
+      "sb-blog"
+     ],
+     "im_rechner": true,
+     "zertifikate": []
+    },
+    {
+     "id": "sb-frei",
+     "name": "Freies Altersvorsorgedepot",
+     "art": "frei",
+     "pruefstatus": "primary_verified",
+     "konditionen": "teilweise",
+     "kosten_text": "Keine Erstattung der ETF-Kosten",
+     "depot_text": "0 € Depotgebühr, Orders 0 € (zzgl. Spreads)",
+     "auswahl_text": "Freie ETF-Auswahl",
+     "hinweis": "",
+     "bestandteile": [
+      {
+       "art": "fund_ter",
+       "pct": null,
+       "quelle": "sb-blog"
+      }
+     ],
+     "quellen": [
+      "sb-blog"
+     ],
+     "im_rechner": false,
+     "zertifikate": []
+    }
+   ]
+  },
+  {
+   "id": "traders-place",
    "name": "Traders Place",
    "typ": "Broker",
-   "kosten_start": 0.0,
-   "kosten_dauer": null,
-   "kosten": "ETF-Kosten werden bis mindestens Ende 2028 erstattet (bis 20.000 €), danach je ETF 0,08 bis 0,20 % p. a.",
-   "depot": "Depot 0 €. Orders im flexiblen Depot ab 500 € 0 €, darunter 0,95 €",
-   "fonds": "Standard: drei Varianten mit je zwei ETFs. Flexibel: mehrere hundert ETFs und Fonds",
-   "status": "Konditionen veröffentlicht",
+   "domain": "traders-place.de",
+   "herkunft": "bisherige Liste",
    "hinweis": "",
-   "quellen": [
+   "produkte": [
     {
-     "titel": "finanzwissen.de: Anbieter im Vergleich (Stand 29.10.2026)",
-     "url": "https://finanzwissen.de/vergleich/depot/altersvorsorge/"
+     "id": "tp-standard",
+     "name": "Standarddepot (drei Modelle)",
+     "art": "standard",
+     "pruefstatus": "secondary_lead",
+     "konditionen": "teilweise",
+     "kosten_text": "Laut Presseberichten: ETF-Kosten bis mindestens Ende 2028 erstattet (bis 20.000 €), danach 0,08 bis 0,20 % TER. Vom Anbieter online nicht bestätigt gefunden.",
+     "depot_text": "Laut Presse 0 € Depot und Sparpläne, 0,95 € je Einzelorder unter 500 €",
+     "auswahl_text": "Drei Modelle (z. B. FTSE All-World)",
+     "hinweis": "",
+     "bestandteile": [],
+     "quellen": [
+      "tp-mobiflip",
+      "tp-reisetopia"
+     ],
+     "im_rechner": false,
+     "zertifikate": []
     }
-   ],
-   "start_jahre": 2
+   ]
   },
   {
+   "id": "bitpanda",
    "name": "Bitpanda",
    "typ": "Broker",
-   "kosten_start": 0.0,
-   "kosten_dauer": null,
-   "kosten": "ETF-Kosten 0 % in den Jahren 2027 bis 2029, danach je nach Produkt (offen)",
-   "depot": "Depot 0 €. Orders über Partner 0 €, sonst 1 €",
-   "fonds": "Standard: zwei ETFs. Flex: frei zusammenstellbar",
-   "status": "Konditionen veröffentlicht, Kosten ab 2030 offen",
+   "domain": "bitpanda.com",
+   "herkunft": "bisherige Liste",
    "hinweis": "",
-   "quellen": [
+   "produkte": [
     {
-     "titel": "finanzwissen.de: Anbieter im Vergleich (Stand 29.10.2026)",
-     "url": "https://finanzwissen.de/vergleich/depot/altersvorsorge/"
+     "id": "bp-standard",
+     "name": "Bitpanda Vorsorge Standard",
+     "art": "standard",
+     "pruefstatus": "primary_verified",
+     "konditionen": "teilweise",
+     "kosten_text": "ETF-Kosten 0 % in den Jahren 2027 bis 2029, danach je nach Produkt (nicht genannt)",
+     "depot_text": "0 € Depot, Sparpläne und Orders",
+     "auswahl_text": "Standarddepot",
+     "hinweis": "",
+     "bestandteile": [
+      {
+       "art": "fund_ter",
+       "pct": null,
+       "quelle": "bitpanda"
+      },
+      {
+       "art": "ter_erstattung",
+       "pct": null,
+       "voll": true,
+       "bis_kalender": "2029-12-31",
+       "quelle": "bitpanda"
+      }
+     ],
+     "quellen": [
+      "bitpanda"
+     ],
+     "im_rechner": true,
+     "zertifikate": []
+    },
+    {
+     "id": "bp-flex",
+     "name": "Bitpanda Vorsorge Flex",
+     "art": "frei",
+     "pruefstatus": "primary_verified",
+     "konditionen": "teilweise",
+     "kosten_text": "ETF-Kosten je nach Produkt",
+     "depot_text": "0 € Depot und Sparpläne, Orders 0 € bei Select-Partnern, sonst 1 €",
+     "auswahl_text": "Freie Auswahl",
+     "hinweis": "",
+     "bestandteile": [
+      {
+       "art": "order_fee",
+       "pct": null,
+       "eur_order": 1.0,
+       "bedingung": "0 € bei Select-Partnern",
+       "quelle": "bitpanda"
+      },
+      {
+       "art": "fund_ter",
+       "pct": null,
+       "quelle": "bitpanda"
+      }
+     ],
+     "quellen": [
+      "bitpanda"
+     ],
+     "im_rechner": false,
+     "zertifikate": []
     }
-   ],
-   "start_jahre": 3
+   ]
   },
   {
-   "name": "Deutsche Bank (DWS)",
+   "id": "deutsche-bank",
+   "name": "Deutsche Bank",
    "typ": "Filialbank",
-   "kosten_start": 0.1,
-   "kosten_dauer": 0.28,
-   "kosten": "Die Deutsche Bank etwa setzt auf ein Standarddepot, das die Fondstochter DWS entwickelt hat. Es kostet in den ersten zwei Jahren 0,1 Prozent, danach 0,28 Prozent.",
-   "depot": "Digitales Standarddepot",
-   "fonds": "Digitales Standarddepot, erweiterte Variante mit Beratung",
-   "status": "Laut Bank veröffentlicht",
-   "hinweis": "Angaben zu den ersten zwei Jahren unterscheiden sich je Quelle",
-   "quellen": [
+   "domain": "deutsche-bank.de",
+   "herkunft": "bisherige Liste",
+   "hinweis": "Versicherungsbasierte Angebote vermittelt die Deutsche Bank über Zurich (siehe Zurich).",
+   "produkte": [
     {
-     "titel": "Cash.: Trade Republic verschärft Preiskampf (13.10.2026)",
-     "url": "https://www.cash-online.de/a/neobroker-trade-republic-verschaerft-preiskampf-um-altersvorsorgedepots-727533/"
+     "id": "db-dws-standard",
+     "name": "DWS Standarddepot (über die Deutsche Bank)",
+     "art": "standard",
+     "pruefstatus": "primary_verified",
+     "konditionen": "veroeffentlicht",
+     "kosten_text": "0,10 % p. a. in den ersten zwei Jahren nach Abschluss, danach 0,28 % p. a.",
+     "depot_text": "Nur digital",
+     "auswahl_text": "Zwei Wertpapiere mit unterschiedlichem Risikoprofil (DWS)",
+     "hinweis": "",
+     "bestandteile": [
+      {
+       "art": "total_cost",
+       "pct": 0.1,
+       "bis_vertragsjahr": 2,
+       "quelle": "db"
+      },
+      {
+       "art": "total_cost",
+       "pct": 0.28,
+       "ab_vertragsjahr": 3,
+       "quelle": "db"
+      }
+     ],
+     "quellen": [
+      "db",
+      "db-presse"
+     ],
+     "im_rechner": true,
+     "zertifikate": []
     },
     {
-     "titel": "finanzwissen.de: Anbieter im Vergleich (Stand 29.10.2026)",
-     "url": "https://finanzwissen.de/vergleich/depot/altersvorsorge/"
-    },
-    {
-     "titel": "www.cash-online.de",
-     "url": "https://www.cash-online.de/a/ing-bringt-altersvorsorgedepot-2027-ohne-order-und-depotgebuehren-728576/"
+     "id": "db-dws-beratung",
+     "name": "DWS Altersvorsorgedepot (mit Beratung)",
+     "art": "beratung",
+     "pruefstatus": "primary_verified",
+     "konditionen": "veroeffentlicht",
+     "kosten_text": "0,99 % p. a.; Angebot laut Anbieter im Laufe des Jahres 2027 geplant",
+     "depot_text": "Beratung in der Filiale",
+     "auswahl_text": "Verschiedene Wertpapiere, Teilauszahlung bis 30 %",
+     "hinweis": "",
+     "bestandteile": [
+      {
+       "art": "total_cost",
+       "pct": 0.99,
+       "quelle": "db"
+      }
+     ],
+     "quellen": [
+      "db"
+     ],
+     "im_rechner": false,
+     "zertifikate": []
     }
-   ],
-   "start_jahre": 2
+   ]
   },
   {
-   "name": "DWS (VorsorgeDepot)",
+   "id": "dws",
+   "name": "DWS (Direktvertrieb)",
    "typ": "Fondsgesellschaft",
-   "kosten_start": null,
-   "kosten_dauer": 0.42,
-   "kosten": "VorsorgeDepot ETF voraussichtlich 0,42 % p. a., aktive ETFs 0,60 %, Fonds 0,65 %, Comfort 1,13 %",
-   "depot": "nicht genannt",
-   "fonds": "Welt-Aktien-ETF plus europäischer Renten-Baustein",
-   "status": "Angekündigt",
-   "hinweis": "Kosten teils \"voraussichtlich\"",
-   "quellen": [
-    {
-     "titel": "Stiftung Warentest: Preiskampf ums Altersvorsorgedepot (13.10.2026)",
-     "url": "https://www.test.de/Altersvorsorgedepot-Preiskampf-der-Anbieter-ING-Trade-Republic-Smartbroker-6335719-0/"
-    }
-   ],
-   "start_jahre": 0
-  },
-  {
-   "name": "Union Investment",
-   "typ": "Fondsgesellschaft",
-   "kosten_start": null,
-   "kosten_dauer": 0.55,
-   "kosten": "UniVorsorge Basis 0,55 % p. a. Verwaltungsvergütung, Pro 1,0 % p. a. Garantie-Variante: Kosten je nach Fonds",
-   "depot": "nicht genannt",
-   "fonds": "Basis: aktiver Welt-Aktien-ETF und aktiver Renten-ETF. Garantie: 100 % der Beiträge und Zulagen",
-   "status": "Angekündigt",
+   "domain": "dws.com",
+   "herkunft": "bisherige Liste",
    "hinweis": "",
-   "quellen": [
+   "produkte": [
     {
-     "titel": "Stiftung Warentest: Preiskampf ums Altersvorsorgedepot (13.10.2026)",
-     "url": "https://www.test.de/Altersvorsorgedepot-Preiskampf-der-Anbieter-ING-Trade-Republic-Smartbroker-6335719-0/"
+     "id": "dws-vorsorgedepot",
+     "name": "DWS VorsorgeDepot (ETF, aktive ETFs, Fonds, Comfort)",
+     "art": "frei",
+     "pruefstatus": "secondary_lead",
+     "konditionen": "teilweise",
+     "kosten_text": "Laut Stiftung Warentest voraussichtlich rund 0,42 % (ETF) bis 1,13 % (Comfort), Variante Fonds 0,65 %. Auf DWS-Seiten in dieser Prüfung nicht bestätigt gefunden.",
+     "depot_text": "noch offen",
+     "auswahl_text": "Vier Varianten",
+     "hinweis": "",
+     "bestandteile": [],
+     "quellen": [
+      "test-preiskampf"
+     ],
+     "im_rechner": false,
+     "zertifikate": []
     }
-   ],
-   "start_jahre": 0
+   ]
   },
   {
+   "id": "union",
+   "name": "Union Investment (Volks- und Raiffeisenbanken)",
+   "typ": "Fondsgesellschaft",
+   "domain": "union-investment.de",
+   "herkunft": "bisherige Liste",
+   "hinweis": "",
+   "produkte": [
+    {
+     "id": "union-basis",
+     "name": "UniVorsorge Basis (Standardprodukt mit aktiven ETFs)",
+     "art": "standard",
+     "pruefstatus": "secondary_lead",
+     "konditionen": "teilweise",
+     "kosten_text": "Laut Stiftung Warentest 0,55 % p. a. Verwaltungsvergütung; kein Ausgabeaufschlag (Anbieter)",
+     "depot_text": "Nur über Volks- und Raiffeisenbanken",
+     "auswahl_text": "Aktive ETFs",
+     "hinweis": "",
+     "bestandteile": [],
+     "quellen": [
+      "union-presse",
+      "union-seite",
+      "test-preiskampf"
+     ],
+     "im_rechner": false,
+     "zertifikate": []
+    },
+    {
+     "id": "union-pro",
+     "name": "UniVorsorge Pro (aktiv gemanagt)",
+     "art": "gesteuert",
+     "pruefstatus": "secondary_lead",
+     "konditionen": "teilweise",
+     "kosten_text": "Laut Stiftung Warentest 1,0 % p. a.; kein Ausgabeaufschlag (Anbieter)",
+     "depot_text": "Nur über Volks- und Raiffeisenbanken",
+     "auswahl_text": "Aktiv gemanagte Aktienfonds",
+     "hinweis": "",
+     "bestandteile": [],
+     "quellen": [
+      "union-presse",
+      "test-preiskampf"
+     ],
+     "im_rechner": false,
+     "zertifikate": []
+    },
+    {
+     "id": "union-garantie",
+     "name": "UniVorsorge Garantie",
+     "art": "garantie",
+     "pruefstatus": "primary_verified",
+     "konditionen": "offen",
+     "kosten_text": "Garantieprodukt (100 % der Beiträge und Zulagen zum Ende der Ansparphase), kein Altersvorsorgedepot ohne Garantie; Kosten noch offen",
+     "depot_text": "Nur über Volks- und Raiffeisenbanken",
+     "auswahl_text": "Aktiv gemanagte Fonds mit Garantie",
+     "hinweis": "",
+     "bestandteile": [],
+     "quellen": [
+      "union-presse"
+     ],
+     "im_rechner": false,
+     "zertifikate": []
+    }
+   ]
+  },
+  {
+   "id": "quirion",
    "name": "quirion",
    "typ": "Robo-Advisor",
-   "kosten_start": null,
-   "kosten_dauer": null,
-   "kosten": "Keine Abschlussgebühren und keine Provisionen, vollständige Konditionen noch offen",
-   "depot": "Standarddepot 0 €",
-   "fonds": "Zwei Vanguard-ETFs: FTSE Global All Cap und Global Aggregate Bond (EUR-hedged)",
-   "status": "Standarddepot vorgestellt",
-   "hinweis": "Konditionen unvollständig",
-   "quellen": [
+   "domain": "quirion.de",
+   "herkunft": "bisherige Liste",
+   "hinweis": "",
+   "produkte": [
     {
-     "titel": "Stiftung Warentest: Preiskampf ums Altersvorsorgedepot (13.10.2026)",
-     "url": "https://www.test.de/Altersvorsorgedepot-Preiskampf-der-Anbieter-ING-Trade-Republic-Smartbroker-6335719-0/"
+     "id": "quirion-standard",
+     "name": "Standard-Depotvertrag",
+     "art": "standard",
+     "pruefstatus": "primary_verified",
+     "konditionen": "veroeffentlicht",
+     "kosten_text": "Depot & Service 0 €. Die TER der beiden Vanguard-ETFs (0,07 % und 0,08 %) wird erstattet, laut englischer Seite mindestens im ersten Jahr; danach höchstens 0,08 % p. a.",
+     "depot_text": "Depot, Orders, Sparpläne und Anbieterwechsel 0 €",
+     "auswahl_text": "Zwei Vanguard-ETFs",
+     "hinweis": "",
+     "bestandteile": [
+      {
+       "art": "fund_ter",
+       "pct": 0.08,
+       "obergrenze": true,
+       "bedingung": "0,07 % Aktien-ETF, 0,08 % Anleihen-ETF",
+       "quelle": "quirion"
+      },
+      {
+       "art": "ter_erstattung",
+       "pct": null,
+       "voll": true,
+       "bis_vertragsjahr": 1,
+       "bedingung": "mindestens im ersten Jahr",
+       "quelle": "quirion-en"
+      }
+     ],
+     "quellen": [
+      "quirion",
+      "quirion-en"
+     ],
+     "im_rechner": true,
+     "zertifikate": []
     },
     {
-     "titel": "finanzwissen.de: Anbieter im Vergleich (Stand 29.10.2026)",
-     "url": "https://finanzwissen.de/vergleich/depot/altersvorsorge/"
+     "id": "quirion-pro",
+     "name": "Individuelles Depot (Pro)",
+     "art": "gesteuert",
+     "pruefstatus": "primary_verified",
+     "konditionen": "veroeffentlicht",
+     "kosten_text": "0,48 % p. a. Depot & Service zzgl. 0,13 bis 0,20 % ETF-Kosten",
+     "depot_text": "Orders und Sparpläne inklusive; Riester-Wechsel mit 1 % Bonus",
+     "auswahl_text": "Gesteuertes ETF-Portfolio",
+     "hinweis": "",
+     "bestandteile": [
+      {
+       "art": "management_fee",
+       "pct": 0.48,
+       "quelle": "quirion"
+      },
+      {
+       "art": "fund_ter",
+       "pct": 0.2,
+       "obergrenze": true,
+       "bedingung": "0,13–0,20 % je nach Auswahl",
+       "quelle": "quirion"
+      }
+     ],
+     "quellen": [
+      "quirion"
+     ],
+     "im_rechner": true,
+     "zertifikate": []
     }
-   ],
-   "start_jahre": 0
+   ]
   },
   {
+   "id": "comdirect",
    "name": "comdirect",
    "typ": "Direktbank",
-   "kosten_start": null,
-   "kosten_dauer": null,
-   "kosten": "Noch keine Konditionen veröffentlicht",
-   "depot": "nicht genannt",
-   "fonds": "Standard, Selbstentscheider und Frühstartrente angekündigt",
-   "status": "Angekündigt",
+   "domain": "comdirect.de",
+   "herkunft": "bisherige Liste",
    "hinweis": "",
-   "quellen": [
+   "produkte": [
     {
-     "titel": "finanzwissen.de: Anbieter im Vergleich (Stand 29.10.2026)",
-     "url": "https://finanzwissen.de/vergleich/depot/altersvorsorge/"
+     "id": "comdirect-standard",
+     "name": "Altersvorsorgedepot Standard",
+     "art": "standard",
+     "pruefstatus": "primary_verified",
+     "konditionen": "offen",
+     "kosten_text": "Konditionen noch nicht veröffentlicht",
+     "depot_text": "noch offen",
+     "auswahl_text": "Vorgegebene Anlagelösung",
+     "hinweis": "",
+     "bestandteile": [],
+     "quellen": [
+      "comdirect"
+     ],
+     "im_rechner": true,
+     "zertifikate": []
+    },
+    {
+     "id": "comdirect-flex",
+     "name": "Altersvorsorgedepot Flexibel",
+     "art": "frei",
+     "pruefstatus": "primary_verified",
+     "konditionen": "offen",
+     "kosten_text": "Konditionen noch nicht veröffentlicht",
+     "depot_text": "noch offen",
+     "auswahl_text": "Mehr eigene Auswahl",
+     "hinweis": "",
+     "bestandteile": [],
+     "quellen": [
+      "comdirect"
+     ],
+     "im_rechner": false,
+     "zertifikate": []
     }
-   ],
-   "start_jahre": 0
+   ]
   },
   {
+   "id": "consorsbank",
    "name": "Consorsbank",
    "typ": "Direktbank",
-   "kosten_start": null,
-   "kosten_dauer": null,
-   "kosten": "Noch keine Konditionen veröffentlicht",
-   "depot": "nicht genannt",
-   "fonds": "Freies Depot und Standarddepot angekündigt",
-   "status": "Angekündigt",
+   "domain": "consorsbank.de",
+   "herkunft": "bisherige Liste",
    "hinweis": "",
-   "quellen": [
+   "produkte": [
     {
-     "titel": "finanzwissen.de: Anbieter im Vergleich (Stand 29.10.2026)",
-     "url": "https://finanzwissen.de/vergleich/depot/altersvorsorge/"
+     "id": "consors-standard",
+     "name": "Standarddepot",
+     "art": "standard",
+     "pruefstatus": "primary_verified",
+     "konditionen": "veroeffentlicht",
+     "kosten_text": "ETF-Kosten 0,12 % (Aktien-ETF) und 0,10 % (Anleihen-ETF); der ETF-Bonus erstattet sie in den Kalenderjahren 2027 bis 2030. Danach höchstens 0,12 % p. a.",
+     "depot_text": "0 € Depot- und Servicepauschale, keine Gebühr für Sparpläne und Einmalzahlungen (zzgl. Spreads und Zuwendungen)",
+     "auswahl_text": "Aktien-ETF und Anleihen-ETF",
+     "hinweis": "",
+     "bestandteile": [
+      {
+       "art": "fund_ter",
+       "pct": 0.12,
+       "obergrenze": true,
+       "quelle": "consors"
+      },
+      {
+       "art": "ter_erstattung",
+       "pct": null,
+       "voll": true,
+       "bis_kalender": "2030-12-31",
+       "bedingung": "Depot muss bei Gutschrift bestehen, Höchstbetrag nicht überschritten",
+       "quelle": "consors"
+      }
+     ],
+     "quellen": [
+      "consors"
+     ],
+     "im_rechner": true,
+     "zertifikate": []
+    },
+    {
+     "id": "consors-fokus",
+     "name": "Standarddepot Fokus",
+     "art": "standard",
+     "pruefstatus": "primary_verified",
+     "konditionen": "veroeffentlicht",
+     "kosten_text": "ETF-Kosten 0,20 % (Aktien-ETF) und 0,10 % (Anleihen-ETF); ETF-Bonus erstattet sie 2027 bis 2030. Danach höchstens 0,20 % p. a.",
+     "depot_text": "0 € Depot- und Servicepauschale",
+     "auswahl_text": "Aktien-ETF und Anleihen-ETF",
+     "hinweis": "",
+     "bestandteile": [
+      {
+       "art": "fund_ter",
+       "pct": 0.2,
+       "obergrenze": true,
+       "quelle": "consors"
+      },
+      {
+       "art": "ter_erstattung",
+       "pct": null,
+       "voll": true,
+       "bis_kalender": "2030-12-31",
+       "quelle": "consors"
+      }
+     ],
+     "quellen": [
+      "consors"
+     ],
+     "im_rechner": true,
+     "zertifikate": []
+    },
+    {
+     "id": "consors-frei",
+     "name": "Altersvorsorgedepot (flexibel)",
+     "art": "frei",
+     "pruefstatus": "primary_verified",
+     "konditionen": "teilweise",
+     "kosten_text": "Produktkosten je nach Wertpapier, kein ETF-Bonus",
+     "depot_text": "0 € Depot- und Servicepauschale; optionaler kostenloser Beitragsairbag (Cardif)",
+     "auswahl_text": "Mehrere hundert Wertpapiere",
+     "hinweis": "",
+     "bestandteile": [
+      {
+       "art": "fund_ter",
+       "pct": null,
+       "quelle": "consors"
+      }
+     ],
+     "quellen": [
+      "consors"
+     ],
+     "im_rechner": false,
+     "zertifikate": []
     }
-   ],
-   "start_jahre": 0
+   ]
   },
   {
+   "id": "dkb",
    "name": "DKB",
    "typ": "Direktbank",
-   "kosten_start": null,
-   "kosten_dauer": null,
-   "kosten": "Noch keine Konditionen veröffentlicht",
-   "depot": "nicht genannt",
-   "fonds": "Angebot bestätigt, Details offen",
-   "status": "Angekündigt",
+   "domain": "dkb.de",
+   "herkunft": "bisherige Liste",
    "hinweis": "",
-   "quellen": [
+   "produkte": [
     {
-     "titel": "finanzwissen.de: Anbieter im Vergleich (Stand 29.10.2026)",
-     "url": "https://finanzwissen.de/vergleich/depot/altersvorsorge/"
+     "id": "dkb-avd",
+     "name": "Altersvorsorgedepot",
+     "art": "standard",
+     "pruefstatus": "primary_verified",
+     "konditionen": "offen",
+     "kosten_text": "Konditionen noch nicht veröffentlicht",
+     "depot_text": "noch offen",
+     "auswahl_text": "ETFs",
+     "hinweis": "",
+     "bestandteile": [],
+     "quellen": [
+      "dkb"
+     ],
+     "im_rechner": true,
+     "zertifikate": []
     }
-   ],
-   "start_jahre": 0
+   ]
+  },
+  {
+   "id": "raisin",
+   "name": "Raisin (WeltSparen)",
+   "typ": "Vermögensverwalter",
+   "domain": "raisin.com",
+   "herkunft": "neu geprüft",
+   "hinweis": "",
+   "produkte": [
+    {
+     "id": "raisin-standard",
+     "name": "Standarddepot",
+     "art": "standard",
+     "pruefstatus": "primary_verified",
+     "konditionen": "teilweise",
+     "kosten_text": "Verwaltungsgebühr 0,15 % p. a. zzgl. Kosten der ETFs (TER nicht genannt)",
+     "depot_text": "Keine eigene Depotgebühr genannt",
+     "auswahl_text": "1 Aktien-ETF und 1 Anleihen-ETF",
+     "hinweis": "",
+     "bestandteile": [
+      {
+       "art": "management_fee",
+       "pct": 0.15,
+       "quelle": "raisin"
+      },
+      {
+       "art": "fund_ter",
+       "pct": null,
+       "quelle": "raisin"
+      }
+     ],
+     "quellen": [
+      "raisin"
+     ],
+     "im_rechner": true,
+     "zertifikate": []
+    },
+    {
+     "id": "raisin-vv",
+     "name": "Vermögensverwaltung",
+     "art": "gesteuert",
+     "pruefstatus": "primary_verified",
+     "konditionen": "teilweise",
+     "kosten_text": "Verwaltungsgebühr 0,25 bis 0,46 % p. a. zzgl. ETF-Kosten",
+     "depot_text": "Keine eigene Depotgebühr genannt",
+     "auswahl_text": "Bis zu 6 Aktien-ETFs und 1 Anleihen-ETF",
+     "hinweis": "",
+     "bestandteile": [
+      {
+       "art": "management_fee",
+       "pct": null,
+       "bedingung": "0,25–0,46 %",
+       "quelle": "raisin"
+      },
+      {
+       "art": "fund_ter",
+       "pct": null,
+       "quelle": "raisin"
+      }
+     ],
+     "quellen": [
+      "raisin"
+     ],
+     "im_rechner": false,
+     "zertifikate": []
+    }
+   ]
+  },
+  {
+   "id": "fidelity",
+   "name": "Fidelity",
+   "typ": "Fondsplattform",
+   "domain": "fidelity.de",
+   "herkunft": "neu geprüft",
+   "hinweis": "",
+   "produkte": [
+    {
+     "id": "fidelity-vorsorgedepot",
+     "name": "Fidelity VorsorgeDepot (Standarddepot)",
+     "art": "standard",
+     "pruefstatus": "primary_verified",
+     "konditionen": "veroeffentlicht",
+     "kosten_text": "Ca. 0,35 % Produktkosten vom durchschnittlichen Depotwert p. a. plus 1 € Depotgebühr im Monat",
+     "depot_text": "1 € Depotgebühr pro Monat",
+     "auswahl_text": "Fidelity Aktien-ETF und Anleihen-ETF, Lebenszyklus",
+     "hinweis": "",
+     "bestandteile": [
+      {
+       "art": "fund_ter",
+       "pct": 0.35,
+       "ca": true,
+       "quelle": "fidelity"
+      },
+      {
+       "art": "custody_fee",
+       "pct": null,
+       "eur_jahr": 12.0,
+       "quelle": "fidelity"
+      }
+     ],
+     "quellen": [
+      "fidelity"
+     ],
+     "im_rechner": true,
+     "zertifikate": []
+    }
+   ]
+  },
+  {
+   "id": "hannoversche",
+   "name": "Hannoversche",
+   "typ": "Versicherer",
+   "domain": "hannoversche.de",
+   "herkunft": "neu geprüft",
+   "hinweis": "",
+   "produkte": [
+    {
+     "id": "hannoversche-standard",
+     "name": "AltersvorsorgeDepot Standard",
+     "art": "standard",
+     "pruefstatus": "primary_verified",
+     "konditionen": "veroeffentlicht",
+     "kosten_text": "Jährliche Gesamtkosten höchstens 0,5 %, laut Anbieter garantiert",
+     "depot_text": "Digital, auf Wunsch mit Beratung; lebenslange Rente wählbar",
+     "auswahl_text": "Zwei Fonds/ETFs",
+     "hinweis": "",
+     "bestandteile": [
+      {
+       "art": "total_cost",
+       "pct": 0.5,
+       "obergrenze": true,
+       "quelle": "hannoversche"
+      }
+     ],
+     "quellen": [
+      "hannoversche"
+     ],
+     "im_rechner": true,
+     "zertifikate": []
+    }
+   ]
+  },
+  {
+   "id": "oskar",
+   "name": "OSKAR",
+   "typ": "Robo-Advisor",
+   "domain": "oskar.de",
+   "herkunft": "neu geprüft",
+   "hinweis": "",
+   "produkte": [
+    {
+     "id": "oskar-standard",
+     "name": "Standarddepot",
+     "art": "standard",
+     "pruefstatus": "primary_verified",
+     "konditionen": "veroeffentlicht",
+     "kosten_text": "Angestrebte Gesamtkosten rund 0,5 % p. a. inklusive Produkt- und Transaktionskosten und Spreads",
+     "depot_text": "Ab 25 € im Monat; kein freies Depot",
+     "auswahl_text": "ETF-Portfolio mit automatischer Umschichtung",
+     "hinweis": "",
+     "bestandteile": [
+      {
+       "art": "total_cost",
+       "pct": 0.5,
+       "ca": true,
+       "bedingung": "angestrebter Wert",
+       "quelle": "oskar"
+      }
+     ],
+     "quellen": [
+      "oskar",
+      "oskar-std"
+     ],
+     "im_rechner": true,
+     "zertifikate": []
+    }
+   ]
+  },
+  {
+   "id": "allianz",
+   "name": "Allianz",
+   "typ": "Versicherer",
+   "domain": "allianz.de",
+   "herkunft": "neu geprüft",
+   "hinweis": "Zertifikatsangaben von Drittseiten wurden nicht übernommen.",
+   "produkte": [
+    {
+     "id": "allianz-standard",
+     "name": "Altersvorsorge Standarddepot",
+     "art": "standard",
+     "pruefstatus": "primary_verified",
+     "konditionen": "offen",
+     "kosten_text": "Konditionen noch nicht veröffentlicht; drei zertifizierte Varianten (A, B, E2000)",
+     "depot_text": "noch offen",
+     "auswahl_text": "Zwei fest vorgegebene ETFs",
+     "hinweis": "",
+     "bestandteile": [],
+     "quellen": [
+      "allianz-std",
+      "bzst"
+     ],
+     "im_rechner": true,
+     "zertifikate": [
+      {
+       "nr": "006630",
+       "name": "Altersvorsorge Standarddepot (A)",
+       "wirksam": "2027-01-01"
+      },
+      {
+       "nr": "006631",
+       "name": "Altersvorsorge Standarddepot (B)",
+       "wirksam": "2027-01-01"
+      },
+      {
+       "nr": "006639",
+       "name": "Altersvorsorge Standarddepot E2000",
+       "wirksam": "2027-01-01"
+      }
+     ]
+    },
+    {
+     "id": "allianz-investflex",
+     "name": "AltersvorsorgeDepot InvestFlex",
+     "art": "frei",
+     "pruefstatus": "primary_verified",
+     "konditionen": "offen",
+     "kosten_text": "Konditionen noch nicht veröffentlicht",
+     "depot_text": "noch offen",
+     "auswahl_text": "Bis zu 10 Fonds/ETFs",
+     "hinweis": "",
+     "bestandteile": [],
+     "quellen": [
+      "allianz",
+      "bzst"
+     ],
+     "im_rechner": false,
+     "zertifikate": [
+      {
+       "nr": "006632",
+       "name": "AltersvorsorgeDepot InvestFlex",
+       "wirksam": "2027-01-01"
+      }
+     ]
+    },
+    {
+     "id": "allianz-investflex80",
+     "name": "AltersvorsorgeVertrag InvestFlex80",
+     "art": "garantie",
+     "pruefstatus": "primary_verified",
+     "konditionen": "offen",
+     "kosten_text": "Garantieprodukt mit 80 % Beitragsgarantie, Konditionen offen",
+     "depot_text": "noch offen",
+     "auswahl_text": "Fonds mit Garantie",
+     "hinweis": "",
+     "bestandteile": [],
+     "quellen": [
+      "allianz",
+      "bzst"
+     ],
+     "im_rechner": false,
+     "zertifikate": [
+      {
+       "nr": "006633",
+       "name": "AltersvorsorgeVertrag InvestFlex80",
+       "wirksam": "2027-01-01"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "wuerttembergische",
+   "name": "Württembergische",
+   "typ": "Versicherer",
+   "domain": "wuerttembergische.de",
+   "herkunft": "neu geprüft",
+   "hinweis": "",
+   "produkte": [
+    {
+     "id": "wuertt-standard",
+     "name": "Standarddepot",
+     "art": "standard",
+     "pruefstatus": "primary_verified",
+     "konditionen": "offen",
+     "kosten_text": "Konditionen noch nicht veröffentlicht; laut Anbieter steht die Zertifizierung noch aus",
+     "depot_text": "Ab 10 € im Monat",
+     "auswahl_text": "Zwei ETFs",
+     "hinweis": "",
+     "bestandteile": [],
+     "quellen": [
+      "wuertt-std",
+      "wuertt"
+     ],
+     "im_rechner": true,
+     "zertifikate": []
+    },
+    {
+     "id": "wuertt-zukunftsdepot",
+     "name": "ZukunftsDepot",
+     "art": "frei",
+     "pruefstatus": "primary_verified",
+     "konditionen": "offen",
+     "kosten_text": "Konditionen noch nicht veröffentlicht",
+     "depot_text": "noch offen",
+     "auswahl_text": "Fonds",
+     "hinweis": "",
+     "bestandteile": [],
+     "quellen": [
+      "wuertt"
+     ],
+     "im_rechner": false,
+     "zertifikate": []
+    },
+    {
+     "id": "wuertt-zukunftsgarant",
+     "name": "ZukunftsGarant",
+     "art": "garantie",
+     "pruefstatus": "primary_verified",
+     "konditionen": "offen",
+     "kosten_text": "Garantieprodukt mit 80 oder 100 % Beitragsgarantie, Konditionen offen",
+     "depot_text": "noch offen",
+     "auswahl_text": "Wertsicherungsfonds",
+     "hinweis": "",
+     "bestandteile": [],
+     "quellen": [
+      "wuertt"
+     ],
+     "im_rechner": false,
+     "zertifikate": []
+    }
+   ]
+  },
+  {
+   "id": "zurich",
+   "name": "Zurich",
+   "typ": "Versicherer",
+   "domain": "zurich.de",
+   "herkunft": "neu geprüft",
+   "hinweis": "",
+   "produkte": [
+    {
+     "id": "zurich-standard",
+     "name": "Standarddepot (eines Kooperationspartners)",
+     "art": "standard",
+     "pruefstatus": "primary_verified",
+     "konditionen": "offen",
+     "kosten_text": "Ausgestaltung laut Anbieter noch nicht final",
+     "depot_text": "noch offen",
+     "auswahl_text": "noch offen",
+     "hinweis": "",
+     "bestandteile": [],
+     "quellen": [
+      "zurich"
+     ],
+     "im_rechner": true,
+     "zertifikate": []
+    },
+    {
+     "id": "zurich-avd",
+     "name": "Altersvorsorgedepot ohne Garantie",
+     "art": "frei",
+     "pruefstatus": "primary_verified",
+     "konditionen": "offen",
+     "kosten_text": "Ausgestaltung noch nicht final",
+     "depot_text": "noch offen",
+     "auswahl_text": "noch offen",
+     "hinweis": "",
+     "bestandteile": [],
+     "quellen": [
+      "zurich"
+     ],
+     "im_rechner": false,
+     "zertifikate": []
+    },
+    {
+     "id": "zurich-garantie",
+     "name": "Versicherungslösung mit 80 % Garantie",
+     "art": "garantie",
+     "pruefstatus": "primary_verified",
+     "konditionen": "offen",
+     "kosten_text": "Ausgestaltung noch nicht final",
+     "depot_text": "noch offen",
+     "auswahl_text": "noch offen",
+     "hinweis": "",
+     "bestandteile": [],
+     "quellen": [
+      "zurich"
+     ],
+     "im_rechner": false,
+     "zertifikate": []
+    }
+   ]
+  },
+  {
+   "id": "devk",
+   "name": "DEVK",
+   "typ": "Versicherer",
+   "domain": "devk.de",
+   "herkunft": "neu geprüft",
+   "hinweis": "",
+   "produkte": [
+    {
+     "id": "devk-standard",
+     "name": "DEVK-DepotRente Standarddepot",
+     "art": "standard",
+     "pruefstatus": "primary_verified",
+     "konditionen": "offen",
+     "kosten_text": "ETF-basiertes Standarddepot ab 1.1.2027, Kosten noch nicht veröffentlicht",
+     "depot_text": "Online oder mit Beratung",
+     "auswahl_text": "ETFs",
+     "hinweis": "",
+     "bestandteile": [],
+     "quellen": [
+      "devk",
+      "devk-1610"
+     ],
+     "im_rechner": true,
+     "zertifikate": []
+    },
+    {
+     "id": "devk-garantie",
+     "name": "DEVK-DepotRente Garantie (später)",
+     "art": "garantie",
+     "pruefstatus": "primary_verified",
+     "konditionen": "offen",
+     "kosten_text": "Flexibles Garantiekonzept, später geplant",
+     "depot_text": "noch offen",
+     "auswahl_text": "noch offen",
+     "hinweis": "",
+     "bestandteile": [],
+     "quellen": [
+      "devk"
+     ],
+     "im_rechner": false,
+     "zertifikate": []
+    }
+   ]
+  },
+  {
+   "id": "cosmos",
+   "name": "CosmosDirekt",
+   "typ": "Versicherer",
+   "domain": "cosmosdirekt.de",
+   "herkunft": "neu geprüft",
+   "hinweis": "",
+   "produkte": [
+    {
+     "id": "cosmos-standard",
+     "name": "Standarddepot",
+     "art": "standard",
+     "pruefstatus": "primary_verified",
+     "konditionen": "offen",
+     "kosten_text": "„Fairer All-In-Preis“, Höhe noch nicht veröffentlicht",
+     "depot_text": "noch offen",
+     "auswahl_text": "Sicherheits- und renditeorientierter Fonds",
+     "hinweis": "",
+     "bestandteile": [],
+     "quellen": [
+      "cosmos"
+     ],
+     "im_rechner": true,
+     "zertifikate": []
+    }
+   ]
+  },
+  {
+   "id": "commerzbank",
+   "name": "Commerzbank",
+   "typ": "Filialbank",
+   "domain": "commerzbank.de",
+   "herkunft": "neu geprüft",
+   "hinweis": "",
+   "produkte": [
+    {
+     "id": "coba-avd",
+     "name": "Altersvorsorgedepot",
+     "art": "standard",
+     "pruefstatus": "primary_verified",
+     "konditionen": "offen",
+     "kosten_text": "Konditionen noch nicht veröffentlicht",
+     "depot_text": "Online oder mit Beratung",
+     "auswahl_text": "noch offen",
+     "hinweis": "",
+     "bestandteile": [],
+     "quellen": [
+      "commerzbank"
+     ],
+     "im_rechner": true,
+     "zertifikate": []
+    }
+   ]
+  },
+  {
+   "id": "unitplus",
+   "name": "UnitPlus",
+   "typ": "Fintech",
+   "domain": "unitplus.eu",
+   "herkunft": "neu geprüft",
+   "hinweis": "",
+   "produkte": [
+    {
+     "id": "unitplus-avd",
+     "name": "Altersvorsorgedepot",
+     "art": "gesteuert",
+     "pruefstatus": "primary_verified",
+     "konditionen": "offen",
+     "kosten_text": "Konditionen für das Altersvorsorgedepot nicht veröffentlicht",
+     "depot_text": "noch offen",
+     "auswahl_text": "Aktiv gemanagte ETF-Portfolios (mit J.P. Morgan AM)",
+     "hinweis": "",
+     "bestandteile": [],
+     "quellen": [
+      "unitplus"
+     ],
+     "im_rechner": false,
+     "zertifikate": []
+    }
+   ]
+  },
+  {
+   "id": "sunrise",
+   "name": "Sunrise",
+   "typ": "Fintech",
+   "domain": "sunrise.app",
+   "herkunft": "neu geprüft",
+   "hinweis": "",
+   "produkte": [
+    {
+     "id": "sunrise-avd",
+     "name": "Altersvorsorgedepot",
+     "art": "frei",
+     "pruefstatus": "primary_verified",
+     "konditionen": "offen",
+     "kosten_text": "Depot laut Anbieter kostenlos; Fondskosten für das Altersvorsorgedepot nicht genannt",
+     "depot_text": "Kostenloses Depot",
+     "auswahl_text": "Eigene Fonds",
+     "hinweis": "",
+     "bestandteile": [],
+     "quellen": [
+      "sunrise"
+     ],
+     "im_rechner": false,
+     "zertifikate": []
+    }
+   ]
+  },
+  {
+   "id": "openbank",
+   "name": "Openbank / Santander",
+   "typ": "Direktbank",
+   "domain": "openbank.de",
+   "herkunft": "neu geprüft",
+   "hinweis": "",
+   "produkte": [
+    {
+     "id": "openbank-avd",
+     "name": "Altersvorsorgedepot",
+     "art": "standard",
+     "pruefstatus": "primary_verified",
+     "konditionen": "offen",
+     "kosten_text": "Konditionen noch nicht veröffentlicht",
+     "depot_text": "noch offen",
+     "auswahl_text": "Fonds und ETFs (mit Santander AM und ERGO)",
+     "hinweis": "",
+     "bestandteile": [],
+     "quellen": [
+      "openbank",
+      "santander"
+     ],
+     "im_rechner": true,
+     "zertifikate": []
+    }
+   ]
+  },
+  {
+   "id": "debeka",
+   "name": "Debeka",
+   "typ": "Versicherer",
+   "domain": "debeka.de",
+   "herkunft": "neu geprüft",
+   "hinweis": "",
+   "produkte": [
+    {
+     "id": "debeka-avd",
+     "name": "Altersvorsorgedepot",
+     "art": "standard",
+     "pruefstatus": "primary_verified",
+     "konditionen": "offen",
+     "kosten_text": "Angekündigt (Info-Service), Konditionen offen",
+     "depot_text": "noch offen",
+     "auswahl_text": "ETFs",
+     "hinweis": "",
+     "bestandteile": [],
+     "quellen": [
+      "debeka"
+     ],
+     "im_rechner": true,
+     "zertifikate": []
+    }
+   ]
+  },
+  {
+   "id": "liqid",
+   "name": "LIQID",
+   "typ": "Vermögensverwalter",
+   "domain": "liqid.de",
+   "herkunft": "neu geprüft",
+   "hinweis": "",
+   "produkte": [
+    {
+     "id": "liqid-avd",
+     "name": "Altersvorsorgedepot",
+     "art": "gesteuert",
+     "pruefstatus": "primary_verified",
+     "konditionen": "offen",
+     "kosten_text": "Vormerkung möglich, Konditionen offen",
+     "depot_text": "noch offen",
+     "auswahl_text": "noch offen",
+     "hinweis": "",
+     "bestandteile": [],
+     "quellen": [
+      "liqid"
+     ],
+     "im_rechner": false,
+     "zertifikate": []
+    }
+   ]
+  },
+  {
+   "id": "lvm",
+   "name": "LVM",
+   "typ": "Versicherer",
+   "domain": "lvm.de",
+   "herkunft": "neu geprüft",
+   "hinweis": "",
+   "produkte": [
+    {
+     "id": "lvm-avd",
+     "name": "Altersvorsorgedepot (ETF-Standarddepot)",
+     "art": "standard",
+     "pruefstatus": "primary_verified",
+     "konditionen": "offen",
+     "kosten_text": "Produkt in Arbeit, Warteliste; Konditionen offen",
+     "depot_text": "noch offen",
+     "auswahl_text": "ETFs",
+     "hinweis": "",
+     "bestandteile": [],
+     "quellen": [
+      "lvm"
+     ],
+     "im_rechner": true,
+     "zertifikate": []
+    }
+   ]
+  },
+  {
+   "id": "provinzial",
+   "name": "Provinzial",
+   "typ": "Versicherer",
+   "domain": "provinzial.de",
+   "herkunft": "neu geprüft",
+   "hinweis": "",
+   "produkte": [
+    {
+     "id": "provinzial-avd",
+     "name": "Altersvorsorgedepot",
+     "art": "standard",
+     "pruefstatus": "primary_verified",
+     "konditionen": "offen",
+     "kosten_text": "Start zum 1.1.2027 geplant, Konditionen offen",
+     "depot_text": "Beratungstermin möglich",
+     "auswahl_text": "ETFs",
+     "hinweis": "",
+     "bestandteile": [],
+     "quellen": [
+      "provinzial"
+     ],
+     "im_rechner": true,
+     "zertifikate": []
+    }
+   ]
+  },
+  {
+   "id": "interrisk",
+   "name": "InterRisk",
+   "typ": "Versicherer",
+   "domain": "interrisk.de",
+   "herkunft": "neu geprüft",
+   "hinweis": "",
+   "produkte": [
+    {
+     "id": "interrisk-avd",
+     "name": "Altersvorsorgedepot",
+     "art": "frei",
+     "pruefstatus": "primary_verified",
+     "konditionen": "offen",
+     "kosten_text": "Start ab Januar 2027 angekündigt, Konditionen offen",
+     "depot_text": "noch offen",
+     "auswahl_text": "noch offen",
+     "hinweis": "",
+     "bestandteile": [],
+     "quellen": [
+      "interrisk"
+     ],
+     "im_rechner": false,
+     "zertifikate": []
+    }
+   ]
+  },
+  {
+   "id": "whitebox",
+   "name": "Whitebox",
+   "typ": "Vermögensverwalter",
+   "domain": "whitebox.eu",
+   "herkunft": "neu geprüft",
+   "hinweis": "",
+   "produkte": [
+    {
+     "id": "whitebox-avd",
+     "name": "Altersvorsorgedepot",
+     "art": "gesteuert",
+     "pruefstatus": "primary_verified",
+     "konditionen": "offen",
+     "kosten_text": "Warteliste, Konditionen offen",
+     "depot_text": "noch offen",
+     "auswahl_text": "ETFs mit Rebalancing",
+     "hinweis": "",
+     "bestandteile": [],
+     "quellen": [
+      "whitebox"
+     ],
+     "im_rechner": false,
+     "zertifikate": []
+    }
+   ]
+  },
+  {
+   "id": "evergreen",
+   "name": "Evergreen",
+   "typ": "Fondsgesellschaft",
+   "domain": "evergreen.de",
+   "herkunft": "neu geprüft",
+   "hinweis": "",
+   "produkte": [
+    {
+     "id": "evergreen-avd",
+     "name": "Altersvorsorgedepot",
+     "art": "gesteuert",
+     "pruefstatus": "primary_verified",
+     "konditionen": "offen",
+     "kosten_text": "Laut Anbieter zahlst du nur die Fondskosten; Höhe für das Altersvorsorgedepot nicht genannt",
+     "depot_text": "Riester-Umzug kostenlos",
+     "auswahl_text": "Eigene Fonds",
+     "hinweis": "",
+     "bestandteile": [],
+     "quellen": [
+      "evergreen"
+     ],
+     "im_rechner": false,
+     "zertifikate": []
+    }
+   ]
+  },
+  {
+   "id": "growney",
+   "name": "growney",
+   "typ": "Robo-Advisor",
+   "domain": "growney.de",
+   "herkunft": "neu geprüft",
+   "hinweis": "",
+   "produkte": [
+    {
+     "id": "growney-avd",
+     "name": "Altersvorsorgedepot (mit Vanguard)",
+     "art": "gesteuert",
+     "pruefstatus": "primary_verified",
+     "konditionen": "offen",
+     "kosten_text": "ETF-Lösung ab 2027 geplant, Konditionen offen",
+     "depot_text": "noch offen",
+     "auswahl_text": "Vanguard-ETFs",
+     "hinweis": "",
+     "bestandteile": [],
+     "quellen": [
+      "growney"
+     ],
+     "im_rechner": false,
+     "zertifikate": []
+    }
+   ]
+  },
+  {
+   "id": "finanzennet",
+   "name": "finanzen.net zero",
+   "typ": "Neobroker",
+   "domain": "finanzen.net",
+   "herkunft": "neu geprüft",
+   "hinweis": "",
+   "produkte": [
+    {
+     "id": "fnz-avd",
+     "name": "Altersvorsorgedepot",
+     "art": "frei",
+     "pruefstatus": "primary_verified",
+     "konditionen": "offen",
+     "kosten_text": "Warteliste, Konditionen offen",
+     "depot_text": "noch offen",
+     "auswahl_text": "noch offen",
+     "hinweis": "",
+     "bestandteile": [],
+     "quellen": [
+      "finanzennet"
+     ],
+     "im_rechner": false,
+     "zertifikate": []
+    }
+   ]
+  },
+  {
+   "id": "ergo",
+   "name": "ERGO",
+   "typ": "Versicherer",
+   "domain": "ergo.de",
+   "herkunft": "neu geprüft",
+   "hinweis": "",
+   "produkte": [
+    {
+     "id": "ergo-standard",
+     "name": "ERGO Förder-Depot Standard",
+     "art": "standard",
+     "pruefstatus": "primary_verified",
+     "konditionen": "offen",
+     "kosten_text": "Konditionen noch nicht veröffentlicht; Umsetzung als Fondspolice",
+     "depot_text": "noch offen",
+     "auswahl_text": "Zwei Fonds",
+     "hinweis": "",
+     "bestandteile": [],
+     "quellen": [
+      "ergo",
+      "ergo-rv",
+      "bzst"
+     ],
+     "im_rechner": true,
+     "zertifikate": [
+      {
+       "nr": "006642",
+       "name": "ERGO Förder-Depot Standard",
+       "wirksam": "2027-01-01"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "helvetia",
+   "name": "Helvetia (Baloise)",
+   "typ": "Versicherer",
+   "domain": "helvetia.de",
+   "herkunft": "neu geprüft",
+   "hinweis": "",
+   "produkte": [
+    {
+     "id": "helvetia-bestinvest",
+     "name": "Best Invest Altersvorsorgedepot",
+     "art": "frei",
+     "pruefstatus": "primary_verified",
+     "konditionen": "offen",
+     "kosten_text": "Fondsgebundene Rentenversicherung als Altersvorsorgedepot, Konditionen noch nicht veröffentlicht",
+     "depot_text": "Über die Helvetia Altersvorsorgeplattform, mit Beratung",
+     "auswahl_text": "Fonds und ETFs",
+     "hinweis": "",
+     "bestandteile": [],
+     "quellen": [
+      "helvetia",
+      "bzst"
+     ],
+     "im_rechner": false,
+     "zertifikate": [
+      {
+       "nr": "006640",
+       "name": "Helvetia Best Invest Altersvorsorgedepot",
+       "wirksam": "2027-01-01"
+      }
+     ]
+    }
+   ]
+  }
+ ],
+ "nicht_bestaetigt": [
+  {
+   "name": "Finanzen invest",
+   "grund": "Kein Angebot unter diesem Namen gefunden. Gefunden wurde nur die Warteliste von finanzen.net zero (oben aufgenommen)."
+  },
+  {
+   "name": "Alte Leipziger",
+   "grund": "Nur Informationsseite zum Altersvorsorgedepot, ein eigenes Angebot mit Produktangaben wurde nicht gefunden."
+  },
+  {
+   "name": "SV SparkassenVersicherung",
+   "grund": "Nur Informationsseiten zur Reform, kein eigenes Angebot bestätigt."
+  },
+  {
+   "name": "XTB",
+   "grund": "Nur Ratgeberartikel, kein Angebot bestätigt."
+  },
+  {
+   "name": "FondsSuperMarkt",
+   "grund": "Keine Angaben gefunden."
+  },
+  {
+   "name": "HypoVereinsbank",
+   "grund": "Nur Erklärseite zum Altersvorsorgedepot, eigenes Angebot nicht bestätigt."
   }
  ],
  "aenderungen": [
   {
-   "datum": "2026-11-05",
-   "anbieter": "Deutsche Bank (DWS)",
-   "feld": "kosten_start",
-   "alt": null,
-   "neu": 0.1,
-   "quelle": "https://www.cash-online.de/a/ing-bringt-altersvorsorgedepot-2027-ohne-order-und-depotgebuehren-728576/",
-   "beleg": "Die Deutsche Bank etwa setzt auf ein Standarddepot, das die Fondstochter DWS entwickelt hat. Es kostet in den ersten zwei Jahren 0,1 Prozent, danach 0,28 Prozent."
+   "datum": "2026-11-21",
+   "text": "Rechtsstand ergänzt: wer gefördert wird (Selbstständige, mittelbare Förderung bis 175 Euro), zulässige Anlagen, Zeitpunkt der Zulagen, Anlage AV, vorzeitige Entnahme und Wege für Riester-Sparer."
+  },
+  {
+   "datum": "2026-11-21",
+   "text": "Vergleich zeigt nur noch zertifizierte Altersvorsorgedepots (BZSt-Liste) mit Angebot auf der Anbieter-Website: Trade Republic, Scalable Capital, Allianz, ERGO, Helvetia. Alle anderen Anbieter stehen im aufklappbaren Bereich."
+  },
+  {
+   "datum": "2026-11-21",
+   "text": "Anbieterliste vollständig neu geprüft, jedes Depotmodell einzeln erfasst, Kosten nach Bestandteilen und Zeiträumen getrennt."
+  },
+  {
+   "datum": "2026-11-21",
+   "text": "N26 korrigiert: ETF-Kosten bis Ende 2028 erstattet, danach rund 0,09 %; bei Eröffnung ab 1.7.2027 zusätzlich 0,10 % Servicegebühr. N26 ist jetzt auch im Rechner."
+  },
+  {
+   "datum": "2026-11-21",
+   "text": "Scalable Capital: Rentenbonus in allen Altersvorsorgedepots (seit 11.11.2026) ergänzt; die 0,15 % TER gelten ohne Rentenbonus."
+  },
+  {
+   "datum": "2026-11-21",
+   "text": "Consorsbank: Konditionen veröffentlicht (Standarddepot und Standarddepot Fokus, ETF-Bonus 2027 bis 2030)."
+  },
+  {
+   "datum": "2026-11-21",
+   "text": "Neu aufgenommen: Raisin, Fidelity, Hannoversche, OSKAR, Allianz, Württembergische, Zurich, DEVK, CosmosDirekt, Commerzbank, UnitPlus, Sunrise, Openbank/Santander, Debeka, LIQID, LVM, Provinzial, InterRisk, Whitebox, Evergreen, growney, finanzen.net zero."
+  },
+  {
+   "datum": "2026-11-21",
+   "text": "Traders Place, DWS-Direktvertrieb, Union Investment und Deka-VorsorgePlus: Kosten nur aus Presseberichten, deshalb nicht im Rechner."
   },
   {
    "datum": "2026-11-05",
-   "anbieter": "Deutsche Bank (DWS)",
-   "feld": "start_jahre",
-   "alt": 0,
-   "neu": 2,
-   "quelle": "https://www.cash-online.de/a/ing-bringt-altersvorsorgedepot-2027-ohne-order-und-depotgebuehren-728576/",
-   "beleg": "Die Deutsche Bank etwa setzt auf ein Standarddepot, das die Fondstochter DWS entwickelt hat. Es kostet in den ersten zwei Jahren 0,1 Prozent, danach 0,28 Prozent."
+   "text": "Deutsche Bank (DWS): Kosten zu Beginn 0,10 % für zwei Jahre ergänzt."
   }
  ],
- "geprueft": "2026-11-19"
+ "pruefungen": [],
+ "weitere_zertifikate": [
+  {
+   "name": "Trade Republic – TRB_AVD_VV_2701 (006623)",
+   "grund": "Zertifiziert, das Modell beschreibt Trade Republic auf seiner Website bisher nicht."
+  },
+  {
+   "name": "ERGO – Förder-Depot Dynamik (006643) und Förder-Depot Chance (006649)",
+   "grund": "Zertifiziert, Ausgestaltung auf der ERGO-Website noch nicht beschrieben."
+  },
+  {
+   "name": "Allianz – AltersvorsorgeVertrag InvestFlex80 (006633)",
+   "grund": "Zertifiziert, aber Garantieprodukt (80 %), kein Altersvorsorgedepot."
+  },
+  {
+   "name": "Justinian Versicherungs AG – TRA_AVV_80_2701 (006638)",
+   "grund": "Zertifiziertes 80-%-Garantieprodukt, kein Altersvorsorgedepot."
+  },
+  {
+   "name": "MetallRente – AltersvorsorgeDepot CHANCE (006641) und AltersvorsorgeVertrag CHANCE (006651)",
+   "grund": "Zertifiziert, Versorgungswerk für bestimmte Branchen (Konsortium unter Führung der Allianz)."
+  },
+  {
+   "name": "Presse-Versorgung – AltersvorsorgeDepot InvestFlex (006636) und AltersvorsorgeVertrag InvestFlex80 (006637)",
+   "grund": "Zertifiziert, Versorgungswerk der Presse (Konsortium unter Führung der Allianz)."
+  },
+  {
+   "name": "Generali – Altersvorsorge-Konzept (006654, 006655)",
+   "grund": "Zertifiziert, Produktname in der Liste unvollständig, Angebot nicht geprüft."
+  },
+  {
+   "name": "Verband der Privaten Bausparkassen – Musterbedingungen A bis C (006650, 006652, 006653)",
+   "grund": "Zertifizierte Musterbedingungen für Bausparkassen, kein Altersvorsorgedepot."
+  }
+ ]
 }

@@ -1,0 +1,191 @@
+#!/usr/bin/env python3
+"""Tests für den Altersvorsorgedepot-Vergleich: Seitenbau, Prüf-Bot und Darstellung im Browser (Handy und Desktop).
+
+Aufruf: python3 -m unittest tests/test_av_seite.py
+Die Browser-Tests laufen mit Playwright und Chrome und werden übersprungen, wenn beides fehlt.
+"""
+import functools, hashlib, http.server, json, os, shutil, socketserver, subprocess, sys, tempfile, threading, unittest
+
+ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+PAGE = os.path.join(ROOT, "altersvorsorgedepot", "index.html")
+DATA = os.path.join(ROOT, "data", "av-anbieter.json")
+LOG = os.path.join(ROOT, "data", "av-pruefung.json")
+sys.path.insert(0, os.path.join(ROOT, "tools"))
+
+
+def md5(p):
+    with open(p, "rb") as f:
+        return hashlib.md5(f.read()).hexdigest()
+
+
+class Seitenbau(unittest.TestCase):
+    def test_build_ist_idempotent_und_ohne_doppelten_datenstand(self):
+        subprocess.run([sys.executable, os.path.join(ROOT, "tools", "build_av.py")], check=True, capture_output=True)
+        h1 = md5(PAGE)
+        subprocess.run([sys.executable, os.path.join(ROOT, "tools", "build_av.py")], check=True, capture_output=True)
+        self.assertEqual(h1, md5(PAGE))
+        s = open(PAGE, encoding="utf-8").read()
+        self.assertEqual(s.count('id="anbieter-bereich"'), 1)
+        self.assertEqual(s.count('id="av-data"'), 1)
+        self.assertEqual(s.count("<!--av-start-->"), 1)
+        self.assertLess(s.index("<!--av-start-->"), s.index("<!--calc-start-->"), "Vergleich steht wie bisher über dem Rechner")
+
+    def test_kennzahlen_der_tabelle(self):
+        import build_av as b
+        D = json.load(open(DATA, encoding="utf-8"))
+        P = {p["id"]: p for a in D["anbieter"] for p in a["produkte"]}
+        self.assertEqual(b.kennzahlen(P["n26-standard"])[0], 0.0)
+        self.assertEqual(b.kennzahlen(P["n26-standard"])[2], 0.09)
+        self.assertIsNone(b.kennzahlen(P["sb-standard"])[2])
+        self.assertEqual(b.fig(0.07, {"max": True}), "max. 0,07 %")
+        self.assertEqual(b.fig(None), "noch offen")
+
+    def test_rechtsstand_ohne_veraltete_aussagen(self):
+        s = open(PAGE, encoding="utf-8").read()
+        self.assertNotIn("verkündet am 26. Mai 2026", s)
+        self.assertNotIn("Bundestag und Bundesrat haben noch nicht entschieden", s)
+        self.assertIn("29. Mai 2026", s)
+        self.assertIn("20. November 2026", s)
+        self.assertNotIn("Was ist am günstigsten?", s, "keine Rangaussage ohne Effektivkosten")
+
+
+class PruefBot(unittest.TestCase):
+    def setUp(self):
+        self.tmp = tempfile.mkdtemp()
+        shutil.copy(DATA, os.path.join(self.tmp, "d.json"))
+        self.had_log = os.path.exists(LOG)
+        if self.had_log:
+            shutil.copy(LOG, os.path.join(self.tmp, "l.json"))
+
+    def tearDown(self):
+        shutil.copy(os.path.join(self.tmp, "d.json"), DATA)
+        if self.had_log:
+            shutil.copy(os.path.join(self.tmp, "l.json"), LOG)
+        shutil.rmtree(self.tmp)
+
+    def test_funde_werden_protokolliert_aber_nicht_uebernommen(self):
+        url = "https://n26.com/de-de/altersvorsorgedepot"
+        text = ("N26 Altersvorsorgedepot. " * 30) + "Bei N26 betragen die Fondskosten ab 2029 rund 0,09 % pro Jahr. Bei N26 kostet das Depot künftig 0,25 % im Jahr."
+        mock = {"seiten": {url: text}, "funde": [
+            {"url": url, "anbieter": "N26 – Standarddepot", "kosten_dauer": 0.09, "beleg": "Bei N26 betragen die Fondskosten ab 2029 rund 0,09 % pro Jahr."},
+            {"url": url, "anbieter": "N26 – Standarddepot", "kosten_dauer": 0.25, "beleg": "Bei N26 kostet das Depot künftig 0,25 % im Jahr."},
+            {"url": url, "anbieter": "N26 – Standarddepot", "kosten_dauer": 0.5, "beleg": "Dieser Satz steht nicht auf der Seite, N26 0,5 %"}]}
+        mp = os.path.join(self.tmp, "mock.json")
+        json.dump(mock, open(mp, "w", encoding="utf-8"))
+        vorher = json.load(open(DATA, encoding="utf-8"))
+        env = dict(os.environ, AV_CHECK_MOCK=mp)
+        subprocess.run([sys.executable, os.path.join(ROOT, "tools", "av_check.py")], check=True, capture_output=True, env=env, cwd=ROOT)
+        nachher = json.load(open(DATA, encoding="utf-8"))
+        log = json.load(open(LOG, encoding="utf-8"))
+        self.assertEqual(vorher["anbieter"], nachher["anbieter"], "Daten dürfen nicht automatisch geändert werden")
+        self.assertEqual(len(log["bestaetigt"]), 1)
+        self.assertEqual(len(log["abweichungen"]), 1)
+        self.assertEqual(log["abweichungen"][0]["gefunden"], 0.25)
+        self.assertTrue(any("wortgetreu" in v["grund"] for v in log["verworfen"]))
+
+
+def _chrome():
+    try:
+        from playwright.sync_api import sync_playwright  # noqa: F401
+    except Exception:
+        return None
+    for p in ("/usr/bin/google-chrome", "/usr/bin/chromium", "/usr/bin/chromium-browser"):
+        if os.path.exists(p):
+            return p
+    return None
+
+
+@unittest.skipUnless(_chrome(), "Playwright/Chrome nicht verfügbar")
+class Browser(unittest.TestCase):
+    @classmethod
+    def setUpClass(cls):
+        class Leise(http.server.SimpleHTTPRequestHandler):
+            def log_message(self, *a):
+                pass
+        handler = functools.partial(Leise, directory=ROOT)
+        cls.httpd = socketserver.TCPServer(("127.0.0.1", 0), handler)
+        cls.port = cls.httpd.server_address[1]
+        threading.Thread(target=cls.httpd.serve_forever, daemon=True).start()
+        from playwright.sync_api import sync_playwright
+        cls.pw = sync_playwright().start()
+        cls.browser = cls.pw.chromium.launch(executable_path=_chrome(), args=["--no-sandbox"])
+
+    @classmethod
+    def tearDownClass(cls):
+        cls.browser.close()
+        cls.pw.stop()
+        cls.httpd.shutdown()
+
+    def open(self, w, h):
+        ctx = self.browser.new_context(viewport={"width": w, "height": h})
+        page = ctx.new_page()
+        errors = []
+        page.on("pageerror", lambda e: errors.append(str(e)))
+        # externe Logos/Analytics blockieren, Test bleibt offline
+        page.route("**/*", lambda r: r.abort() if not r.request.url.startswith(f"http://127.0.0.1:{self.port}") else r.continue_())
+        page.goto(f"http://127.0.0.1:{self.port}/altersvorsorgedepot/?intro=0")
+        page.evaluate("try{sessionStorage.setItem('introSeen','1')}catch(e){}; var i=document.getElementById('intro'); if(i) i.remove();")
+        page.wait_for_function("document.getElementById('av-k6') && document.getElementById('av-k6').textContent.trim() !== '–'")
+        return ctx, page, errors
+
+    def test_handy_ohne_seitliches_ueberlaufen_und_tabelle_scrollbar(self):
+        ctx, page, errors = self.open(390, 844)
+        sw = page.evaluate("document.documentElement.scrollWidth")
+        self.assertLessEqual(sw, 391, "Seite darf auf dem Handy nicht seitlich überlaufen")
+        sc = page.evaluate("(()=>{var w=document.querySelector('#anbieter-bereich .av-tablewrap');return [w.scrollWidth,w.clientWidth]})()")
+        self.assertGreater(sc[0], sc[1], "Tabelle ist innerhalb ihres Rahmens seitlich scrollbar")
+        self.assertTrue(page.is_visible(".av-scroll-hint"))
+        self.assertEqual(errors, [])
+        ctx.close()
+
+    def test_filter_und_sortierung(self):
+        ctx, page, errors = self.open(1280, 900)
+        total = page.evaluate("document.querySelectorAll('#avl tr').length")
+        page.select_option("#av-f-art", "standard")
+        arts = page.evaluate("Array.from(document.querySelectorAll('#avl tr')).filter(r=>!r.hidden).map(r=>r.dataset.art)")
+        self.assertTrue(arts and all(a == "standard" for a in arts))
+        self.assertIn(f"{len(arts)} von {total}", page.text_content("#av-count"))
+        page.check("#av-f-kosten")
+        dau = page.evaluate("Array.from(document.querySelectorAll('#avl tr')).filter(r=>!r.hidden).map(r=>r.dataset.dau)")
+        self.assertTrue(dau and all(d != "" for d in dau))
+        page.uncheck("#av-f-kosten")
+        page.select_option("#av-f-art", "")
+        page.click("#avt .av-tab[data-s='sta']")
+        page.click("#avt .av-tab[data-s='dau']")
+        vals = page.evaluate("Array.from(document.querySelectorAll('#avl tr')).map(r=>r.dataset.dau)")
+        nums = [float(v) for v in vals if v != ""]
+        self.assertEqual(nums, sorted(nums))
+        self.assertTrue(all(v == "" for v in vals[len(nums):]), "offene Kosten stehen am Ende")
+        self.assertEqual(page.get_attribute("#avt .av-tab[data-s='dau']", "aria-pressed"), "true")
+        self.assertEqual(errors, [])
+        ctx.close()
+
+    def test_rechner_mit_anbieter_und_eroeffnungsmonat(self):
+        ctx, page, errors = self.open(1280, 900)
+        idx = page.evaluate("JSON.parse(document.getElementById('av-data').textContent).findIndex(p=>p.id==='sc-standard')")
+        page.select_option("#av-prov", str(idx))
+        page.wait_for_timeout(300)
+        n_jan = page.text_content("#av-k6")
+        self.assertIn("Scalable", page.text_content("#av-basis"))
+        # ohne die freiwillige Erstattung ab 2028 fallen bei Scalable 0,15 % an
+        page.uncheck("#av-frei")
+        page.dispatch_event("#av-frei", "change")
+        page.wait_for_timeout(300)
+        n_ohne = page.text_content("#av-k6")
+        self.assertNotEqual(n_jan, n_ohne, "Ohne freiwillige Erstattung ändert sich das Ergebnis bei Scalable")
+        page.fill("#av-open", "2027-07")
+        page.dispatch_event("#av-open", "change")
+        page.wait_for_timeout(300)
+        self.assertIn("noch offen", page.text_content("#av-rank"))
+        # Angebot mit offenen Kosten: Kennzahlen mit eigener Annahme, deutlich gekennzeichnet
+        sb = page.evaluate("JSON.parse(document.getElementById('av-data').textContent).findIndex(p=>p.id==='allianz-standard')")
+        page.select_option("#av-prov", str(sb))
+        page.wait_for_timeout(300)
+        self.assertIn("Annahme", page.text_content("#av-err"))
+        self.assertIn("deiner Annahme", page.text_content("#av-basis"))
+        self.assertEqual(errors, [])
+        ctx.close()
+
+
+if __name__ == "__main__":
+    unittest.main()
