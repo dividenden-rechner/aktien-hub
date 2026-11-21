@@ -837,10 +837,27 @@
     var cmp = $("av-cmp"), yrs = $("av-years");
     if (cmp) cmp.hidden = !B && !bOffen; if (yrs) yrs.hidden = !B;
     var labels = r.rows.map(function (x) { return "Alter " + (o.alter + x.jahr); });
-    var ds = [{ label: "Balken: Eigenbeiträge", data: r.rows.map(function (x) { return x.eingezahlt; }), backgroundColor: GREY, stack: "d" }, { label: "Balken: Zulagen vom Staat", data: r.rows.map(function (x) { return x.zulagen; }), backgroundColor: GREEN, stack: "d" }, { label: "Balken: Erträge", data: r.rows.map(function (x) { return x.wert - x.eingezahlt - x.zulagen; }), backgroundColor: BLUE, stack: "d" }];
-    if (B) ds.push({ label: "Linie: Depotwert " + B.name, type: "line", data: B.r.rows.map(function (x) { return x.wert; }), borderColor: "#7c3aed", borderWidth: 3, pointRadius: 0, tension: .2 });
-    var cap = $("av-chartcap"); if (cap) cap.textContent = B ? "Die Balken zeigen das Depot von " + nameA + ": grau deine Beiträge, grün die Zulagen vom Staat, blau die Erträge. Die lila Linie ist der Depotwert von " + B.name + " bei gleichen Eingaben." : "Die Balken zeigen, woraus dein Depot besteht: grau deine Beiträge, grün die Zulagen vom Staat, blau die Erträge am Kapitalmarkt. Den Vergleich mit einem ETF-Sparplan nach Steuern findest du oben in den Kennzahlen.";
-    draw("av-chart", { type: "bar", data: { labels: labels, datasets: ds }, options: { interaction: inter, scales: { x: { stacked: true }, y: Object.assign({ stacked: true }, ytitle("Euro")) }, plugins: { title: { display: true, text: B ? "Depotwert: " + nameA + " (Balken) gegen " + B.name + " (Linie)" : "Altersvorsorgedepot: Zusammensetzung des Depots" }, tooltip: { callbacks: { label: tip } } } } });
+    var einz = r.rows.map(function (x) { return x.eingezahlt; });
+    if (B) {
+      // Zwei Linien (je Anbieter ein Depotwert) und der Abstand als kleine Balken auf eigener Achse
+      var wA = r.rows.map(function (x) { return x.wert; }), wB = B.r.rows.map(function (x) { return x.wert; });
+      var gap = wA.map(function (v, i) { return v - wB[i]; });
+      var ds = [
+        { label: nameA, type: "line", data: wA, borderColor: GREEN, backgroundColor: GREEN, borderWidth: 3, pointRadius: 0, pointHoverRadius: 5, tension: .2, yAxisID: "y", order: 1 },
+        { label: B.name, type: "line", data: wB, borderColor: "#7c3aed", backgroundColor: "#7c3aed", borderWidth: 3, borderDash: [7, 4], pointRadius: 0, pointHoverRadius: 5, tension: .2, yAxisID: "y", order: 2 },
+        { label: "Deine Beiträge", type: "line", data: einz, borderColor: GREY, backgroundColor: GREY, borderWidth: 1.5, borderDash: [2, 3], pointRadius: 0, pointHoverRadius: 3, tension: 0, yAxisID: "y", order: 3 },
+        { label: "Abstand " + nameA + " zu " + B.name, type: "bar", data: gap, backgroundColor: gap.map(function (g) { return g >= 0 ? "rgba(16,185,129,.35)" : "rgba(124,58,237,.35)"; }), yAxisID: "y2", order: 4 }
+      ];
+      var cap = $("av-chartcap"); if (cap) cap.textContent = "Grüne Linie: Depotwert bei " + nameA + ". Lila gestrichelt: Depotwert bei " + B.name + ". Grau gepunktet: deine eingezahlten Beiträge. Die hellen Balken unten (rechte Achse) zeigen, wie weit die beiden Depots auseinanderliegen. Tippe auf ein Jahr für die genauen Werte.";
+      draw("av-chart", { type: "line", data: { labels: labels, datasets: ds }, options: { interaction: inter, scales: { x: {}, y: Object.assign({ beginAtZero: true }, ytitle("Depotwert in Euro")), y2: { position: "right", grid: { drawOnChartArea: false }, title: { display: true, text: "Abstand in Euro" }, ticks: { callback: axis } } }, plugins: { title: { display: true, text: "Depotwert: " + nameA + " gegen " + B.name }, legend: { labels: { usePointStyle: true } }, tooltip: { callbacks: {
+        label: function (c) { if (c.dataset.yAxisID === "y2") return null; return " " + c.dataset.label + ": " + money(c.parsed.y, 0); },
+        footer: function (items) { if (!items.length) return ""; var i = items[0].dataIndex, g = gap[i]; if (Math.abs(g) < 0.5) return "Beide gleichauf"; return "Abstand: " + money(Math.abs(g), 0) + " mehr bei " + (g > 0 ? nameA : B.name); }
+      } } } } });
+    } else {
+      var ds = [{ label: "Eigenbeiträge", data: einz, backgroundColor: GREY, stack: "d" }, { label: "Zulagen vom Staat", data: r.rows.map(function (x) { return x.zulagen; }), backgroundColor: GREEN, stack: "d" }, { label: "Erträge", data: r.rows.map(function (x) { return x.wert - x.eingezahlt - x.zulagen; }), backgroundColor: BLUE, stack: "d" }];
+      var cap = $("av-chartcap"); if (cap) cap.textContent = "Die Balken zeigen, woraus dein Depot bei " + nameA + " besteht: grau deine Beiträge, grün die Zulagen vom Staat, blau die Erträge. Wähle oben einen Anbieter B, dann siehst du beide Depots als Linien im Vergleich.";
+      draw("av-chart", { type: "bar", data: { labels: labels, datasets: ds }, options: { interaction: inter, scales: { x: { stacked: true }, y: Object.assign({ stacked: true }, ytitle("Euro")) }, plugins: { title: { display: true, text: "Dein Depot bei " + nameA + ": woraus es besteht" }, tooltip: { callbacks: { label: tip, footer: function (items) { return items.length ? "Depotwert: " + money(r.rows[items[0].dataIndex].wert, 0) : ""; } } } } } });
+    }
     if (bOffen) set("av-cmp-text", "Für " + avLabel(list[AVSELB]) + " sind die Kosten noch offen, deshalb gibt es keinen Vergleich.");
     else if (B) {
       var dm = r.netto - B.r.netto;

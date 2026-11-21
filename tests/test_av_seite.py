@@ -161,6 +161,27 @@ class Browser(unittest.TestCase):
         self.assertEqual(errors, [])
         ctx.close()
 
+    def test_chart_zwei_anbieter_als_linien_mit_tooltip(self):
+        ctx, page, errors = self.open(390, 844)
+        ia, ib = page.evaluate("""() => { const l = JSON.parse(document.getElementById('av-data').textContent);
+            return [l.findIndex(p => p.id === 'sc-standard'), l.findIndex(p => p.id === 'ing-relax')]; }""")
+        page.select_option("#av-prov", str(ia))
+        page.select_option("#av-prov2", str(ib))
+        page.wait_for_timeout(400)
+        info = page.evaluate("""() => { const c = Chart.getChart(document.getElementById('av-chart'));
+            const lines = c.data.datasets.filter(d => d.type === 'line');
+            const f = c.options.plugins.tooltip.callbacks.footer([{ dataIndex: c.data.labels.length - 1 }]);
+            const lab = c.options.plugins.tooltip.callbacks.label({ dataset: lines[0], parsed: { y: lines[0].data.at(-1) } });
+            return { n: lines.length, names: lines.map(d => d.label), last: lines.slice(0, 2).map(d => d.data.at(-1)), f, lab, cap: document.getElementById('av-chartcap').textContent }; }""")
+        self.assertEqual(info["n"], 3, "zwei Anbieterlinien plus Beiträge")
+        self.assertIn("Scalable", info["names"][0]); self.assertIn("ING", info["names"][1])
+        self.assertNotEqual(info["last"][0], info["last"][1], "Linien unterscheiden sich")
+        self.assertRegex(info["f"], r"Abstand: .* mehr bei (Scalable|ING)")
+        self.assertIn("Scalable", info["lab"])
+        self.assertIn("Grüne Linie", info["cap"])
+        self.assertEqual(errors, [])
+        ctx.close()
+
     def test_filter_und_sortierung(self):
         ctx, page, errors = self.open(1280, 900)
         total = page.evaluate("document.querySelectorAll('#avl tr').length")
