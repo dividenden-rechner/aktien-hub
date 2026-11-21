@@ -46,6 +46,8 @@ jobs:
       - if: steps.cfg.outputs.an == 'true'
         run: python3 tools/live_filter.py _site
       - if: steps.cfg.outputs.an == 'true'
+        run: python3 tools/analytics_einbauen.py _site
+      - if: steps.cfg.outputs.an == 'true'
         env:
           STRATO_SFTP_HOST: ${{ secrets.STRATO_SFTP_HOST }}
           STRATO_SFTP_USER: ${{ secrets.STRATO_SFTP_USER }}
