@@ -138,6 +138,29 @@ class Browser(unittest.TestCase):
         self.assertEqual(errors, [])
         ctx.close()
 
+    def test_aufbau_kopf_uebersicht_rechner_hinweise(self):
+        ctx, page, errors = self.open(390, 844)
+        reihenfolge = page.evaluate("""() => ['h1.av-title', 'nav.av-kurz', '#anbieter', '#h-altersvorsorgedepot', '#gut-zu-wissen', '#ratgeber']
+            .map(s => { const e = document.querySelector(s); return e ? e.getBoundingClientRect().top + scrollY : -1 })""")
+        self.assertNotIn(-1, reihenfolge)
+        self.assertEqual(reihenfolge, sorted(reihenfolge), "Kopf, Inhalt, Übersicht, Rechner, Hinweise, Fragen in dieser Reihenfolge")
+        self.assertEqual(page.evaluate("document.querySelectorAll('h1').length"), 1)
+        # Inhaltsbox verlinkt auf vorhandene Ziele
+        for href in page.evaluate("Array.from(document.querySelectorAll('nav.av-kurz a')).map(a => a.getAttribute('href'))"):
+            self.assertTrue(page.evaluate(f"!!document.querySelector('{href}')"), href)
+        # Übersicht zeigt zuerst 8 Modelle, aufklappbar auf alle
+        sichtbar = "Array.from(document.querySelectorAll('#avl tr')).filter(r => r.offsetParent !== null).length"
+        total = page.evaluate("document.querySelectorAll('#avl tr').length")
+        self.assertEqual(page.evaluate(sichtbar), 8)
+        page.click("#av-mehr")
+        self.assertEqual(page.evaluate(sichtbar), total)
+        self.assertEqual(page.get_attribute("#av-mehr", "aria-expanded"), "true")
+        # Hinweise stecken in Akkordeons und sind zu
+        self.assertGreaterEqual(page.evaluate("document.querySelectorAll('#gut-zu-wissen details.av-acc').length"), 6)
+        self.assertEqual(page.evaluate("document.querySelectorAll('#gut-zu-wissen details[open], #ratgeber details[open]').length"), 0)
+        self.assertEqual(errors, [])
+        ctx.close()
+
     def test_filter_und_sortierung(self):
         ctx, page, errors = self.open(1280, 900)
         total = page.evaluate("document.querySelectorAll('#avl tr').length")

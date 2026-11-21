@@ -116,6 +116,15 @@ def logo(domain, size=28):
 
 
 CSS = """<style>
+.av-title{font-size:clamp(1.55rem,4.6vw,2.1rem);line-height:1.2;margin:18px 0 10px}
+.av-teaser{font-size:1.06rem;line-height:1.6;color:#33414d;margin:0 0 16px}
+.av-kurz{background:#f0f8f3;border:1px solid #bfe0cd;border-left:5px solid #1a7f4b;border-radius:0 12px 12px 0;padding:14px 18px;margin:0 0 26px}
+.av-kurz-t{font-size:13px;letter-spacing:.06em;text-transform:uppercase;font-weight:700;color:#1a7f4b;margin-bottom:6px}
+.av-kurz ol{margin:0;padding-left:20px}.av-kurz li{margin:6px 0;line-height:1.4}.av-kurz li a{font-weight:600;color:#14202b}
+.av-kurz li span{display:block;font-size:.88rem;color:#5b6874}.av-kurz-s{font-size:.8rem;color:#5b6874;margin-top:8px}
+.tool h2#h-altersvorsorgedepot{font-size:1.45rem;margin-top:6px}.av-x{display:none}.av-mehr{display:block;width:100%;margin:10px 0 4px;padding:10px;border:1px solid #bfe0cd;background:#f0f8f3;color:#1a7f4b;font-weight:600;border-radius:10px;cursor:pointer;font-size:.95rem}
+.av-acc>div{padding:0 0 12px}.av-acc>div p{line-height:1.6;margin:8px 0}.av-unten{margin-top:28px}.av-links{font-size:.92rem;margin-top:16px}
+
 [hidden]{display:none!important}
 .av-tabs{display:flex;gap:18px;overflow-x:auto;margin:10px 0 6px;border-bottom:1px solid #dfe5ea;white-space:nowrap;scrollbar-width:none}.av-tabs::-webkit-scrollbar{display:none}
 .av-tab{flex:0 0 auto;border:0;border-bottom:2px solid transparent;margin-bottom:-1px;background:none;border-radius:0;padding:6px 0 8px;cursor:pointer;font:inherit;font-size:13px;font-weight:500;color:#8a97a3}.av-tab:hover{color:#5b6874}.av-tab[aria-pressed=true]{color:#33414d;font-weight:600;border-bottom-color:#8a97a3}
@@ -158,6 +167,10 @@ function key(r,s){if(s==="n")return r.dataset.n.toLowerCase();var v=r.dataset[s]
 function filt(){var a=fa?fa.value:"",k=fk&&fk.checked,n=0;Array.prototype.forEach.call(l.children,function(r){var ok=(!a||r.dataset.art===a)&&(!k||r.dataset.dau!=="");r.hidden=!ok;if(ok)n++});if(cnt)cnt.textContent=n+" von "+l.children.length+" Depotmodellen"}
 t.addEventListener("click",function(e){var b=e.target.closest(".av-tab");if(!b)return;var s=b.dataset.s;Array.prototype.forEach.call(t.children,function(x){x.setAttribute("aria-pressed",x===b?"true":"false")});
 var rows=Array.prototype.slice.call(l.children);rows.sort(function(a,b){var x=key(a,s),y=key(b,s);return x<y?-1:x>y?1:(+a.dataset.i)-(+b.dataset.i)});rows.forEach(function(r){l.appendChild(r)})});
+var mb=document.getElementById("av-mehr"),zu=true,N=8;
+function kurz(){var n=0,tot=0;Array.prototype.forEach.call(l.children,function(r){if(r.hidden){r.classList.remove("av-x");return}tot++;n++;r.classList.toggle("av-x",zu&&n>N)});if(mb){mb.hidden=tot<=N;mb.setAttribute("aria-expanded",zu?"false":"true");mb.textContent=zu?"Alle "+tot+" Depotmodelle anzeigen":"Weniger anzeigen"}}
+if(mb)mb.addEventListener("click",function(){zu=!zu;kurz();if(zu)document.getElementById("anbieter").scrollIntoView({block:"start"})});
+var f0=filt;filt=function(){f0();kurz()};t.addEventListener("click",function(){setTimeout(kurz,0)});
 if(fa)fa.addEventListener("change",filt);if(fk)fk.addEventListener("change",filt);filt();
 })();
 </script>"""
@@ -166,19 +179,55 @@ if(fa)fa.addEventListener("change",filt);if(fk)fk.addEventListener("change",filt
 def rechts_text(D):
     q = D["quellen"]
     a = lambda k, t: f'<a href="{esc(q[k]["url"])}" target="_blank" rel="noopener nofollow">{esc(t)}</a>'
-    return f"""<h2>Das gilt für alle Anbieter</h2>
-<ul>
-<li><strong>Start und Zertifizierung:</strong> Neue Verträge sind ab dem 1. Januar 2027 möglich. Das Altersvorsorgereformgesetz hat der Bundestag am 27. März 2026 beschlossen, der Bundesrat hat am 8. Mai 2026 zugestimmt, verkündet wurde es am 29. Mai 2026 ({a("bgbl", "BGBl. 2026 I Nr. 156")}). Jeder Vertrag braucht ein Zertifikat des Bundeszentralamts für Steuern.</li>
-<li><strong>Förderung:</strong> Grundzulage 50 % der Beiträge bis 360 Euro und 25 % der Beiträge von 360,01 bis 1.800 Euro, zusammen höchstens 540 Euro im Jahr. Kinderzulage 100 % der Beiträge, höchstens 300 Euro je Kind. Wer zu Beginn des Beitragsjahres jünger als 25 ist, bekommt die Grundzulage einmalig um 200 Euro erhöht. Alle Zulagen gibt es nur bei mindestens 120 Euro Eigenbeitrag im Jahr.</li>
-<li><strong>Beiträge:</strong> höchstens 6.840 Euro im Jahr je Vertrag, gefördert und als Sonderausgabe absetzbar sind bis zu 1.800 Euro plus Zulagen. Gefördert werden höchstens zwei Verträge nach neuem Recht, ab dem dritten zählen Beiträge nicht mehr als Altersvorsorgebeiträge.</li>
-<li><strong>Kosten:</strong> Das Standarddepot darf höchstens 1,0 % Effektivkosten im Jahr haben. Für frei gestaltete Depots und Garantieprodukte (80 oder 100 % der Beiträge und Zulagen) gibt es keinen Deckel.</li>
-<li><strong>Anbieterwechsel:</strong> In den ersten fünf Jahren nach Vertragsabschluss darf der bisherige Anbieter höchstens 150 Euro verlangen, danach ist die Übertragung kostenfrei. Der neue Anbieter darf eine einmalige Verwaltungspauschale von höchstens 150 Euro berechnen.</li>
-<li><strong>Standarddepot:</strong> zwei Fonds, einer der Risikoklasse 1 oder 2 und einer der Klassen 3 bis 5. Fünf Jahre vor Auszahlungsbeginn höchstens 50 %, zwei Jahre vorher höchstens 30 % im risikoreicheren Fonds, außer du verlangst eine andere Aufteilung.</li>
-<li><strong>Steuer:</strong> In der Ansparphase fallen keine Steuern auf Erträge an. Die Auszahlungen werden nachgelagert mit deinem persönlichen Steuersatz versteuert.</li>
-<li><strong>Auszahlung:</strong> frühestens ab 65, spätestens ab 70 (ohne Vereinbarung ab 65). Bis zu 30 % des Kapitals sind zu Beginn auf einmal möglich, der Rest als lebenslange Rente oder Auszahlungsplan mindestens bis 85.</li>
-<li><strong>Riester:</strong> Verträge, die bis 31.12.2026 abgeschlossen werden, laufen mit Bestandsschutz weiter. Neue Riester-Verträge gibt es ab 2027 nicht mehr.</li>
-<li><strong>Frühstartrente:</strong> 10 Euro im Monat vom Staat für Kinder von 6 bis 18 Jahren, angelegt in einem Standarddepot-Vertrag. Der Bundestag hat das Gesetz am 16. Oktober 2026 beschlossen ({a("fsr-bt", "Bundestag")}), der Bundesrat hat am 20. November 2026 zugestimmt ({a("fsr-br", "Handelsblatt")}). Die Verkündung im Bundesgesetzblatt stand bei dieser Prüfung noch aus.</li>
-</ul>"""
+    acc = lambda t, x: f'<details class="av-acc"><summary>{t}</summary><div>{x}</div></details>'
+    return "\n".join([
+        acc("Förderung und Beiträge", f"""<p>Neue Verträge gibt es ab dem 1. Januar 2027, jeder braucht ein Zertifikat des Bundeszentralamts für Steuern. Grundlage ist das Altersvorsorgereformgesetz, verkündet am 29. Mai 2026 ({a("bgbl", "BGBl. 2026 I Nr. 156")}).</p>
+<p>Auf die ersten 360 Euro Eigenbeitrag im Jahr legt der Staat 50 Prozent drauf, auf alles darüber bis 1.800 Euro noch 25 Prozent, zusammen höchstens 540 Euro. Für jedes Kind kommen bis zu 300 Euro dazu, wer zu Beginn des Jahres jünger als 25 ist, bekommt einmalig 200 Euro extra. Voraussetzung sind mindestens 120 Euro Eigenbeitrag im Jahr. Einzahlen kannst du bis zu 6.840 Euro, gefördert und als Sonderausgabe absetzbar sind 1.800 Euro plus Zulagen, und das für höchstens zwei Verträge.</p>"""),
+        acc("Kosten, Standarddepot und Anbieterwechsel", """<p>Im Standarddepot dürfen die Effektivkosten höchstens 1,0 Prozent im Jahr betragen. Für frei gestaltete Depots und Garantieprodukte gibt es keinen Deckel.</p>
+<p>Das Standarddepot besteht aus zwei Fonds: einem sicheren der Risikoklasse 1 oder 2 und einem chancenreicheren der Klassen 3 bis 5. Fünf Jahre vor der Auszahlung liegen höchstens 50 Prozent im chancenreicheren Fonds, zwei Jahre vorher höchstens 30 Prozent, wenn du nichts anderes verlangst.</p>
+<p>Wer in den ersten fünf Jahren den Anbieter wechselt, zahlt dem alten höchstens 150 Euro, danach ist der Wechsel kostenlos. Der neue Anbieter darf einmalig bis zu 150 Euro berechnen.</p>"""),
+        acc("Steuer und Auszahlung", """<p>In der Ansparphase fallen auf Erträge keine Steuern an, versteuert wird erst die Auszahlung mit deinem persönlichen Steuersatz. Ausgezahlt wird frühestens ab 65 und spätestens ab 70. Bis zu 30 Prozent kannst du zu Beginn auf einmal nehmen, den Rest als lebenslange Rente oder als Auszahlplan bis mindestens 85.</p>"""),
+        acc("Riester und Frühstartrente", f"""<p>Riester-Verträge, die bis Ende 2026 abgeschlossen werden, laufen weiter, neue gibt es ab 2027 nicht mehr.</p>
+<p>Für Kinder von 6 bis 18 Jahren kommt die Frühstartrente: 10 Euro im Monat vom Staat, angelegt in einem Standarddepot. Der Bundestag hat am 16. Oktober 2026 zugestimmt ({a("fsr-bt", "Bundestag")}), der Bundesrat am 20. November 2026 ({a("fsr-br", "Handelsblatt")}). Die Verkündung im Bundesgesetzblatt stand bei dieser Prüfung noch aus.</p>"""),
+    ])
+
+
+ERKL = os.path.join(ROOT, "data", "av-rechner-erklaerung.html")
+
+
+def ohne_kommentar(t):
+    return re.sub(r"^<!--.*?-->\n", "", t, flags=re.S).strip()
+
+
+def umbau_rechner(page):
+    """Rechner bekommt eine h2 (die h1 steht jetzt oben), Intro neu, Erklärkasten wandert nach unten."""
+    page = re.sub(r'<h[12] id="h-altersvorsorgedepot">.*?</h[12]>',
+                  '<h2 id="h-altersvorsorgedepot">Dein Rechner: Zulagen, Depotwert und zwei Anbieter im Vergleich</h2>', page, count=1, flags=re.S)
+    page = re.sub(r'(<h2 id="h-altersvorsorgedepot">.*?</h2>\n)<p class="intro">.*?</p>\n(?:<p class="av-jump">.*?</p>\n)?',
+                  lambda m: m.group(1) + '<p class="intro">Wähle einen oder zwei Anbieter und gib Beitrag, Alter und Rentenbeginn ein. Der Rechner nimmt die heutigen Kosten der Anbieter und zeigt, was bis zur Rente übrig bleibt, mit Zulagen und Steuer.</p>\n',
+                  page, count=1, flags=re.S)
+    page = re.sub(r'<div class="explain">\n.*?</div>\n(</div>\n<!--calc-end-->)', r"\1", page, count=1, flags=re.S)
+    return page
+
+
+def umbau_ratgeber(page):
+    """Ratgeber-Abschnitte (von build_seo.py) als Akkordeons. Läuft nach build_seo.py."""
+    m = re.search(r'<section class="seo" id="ratgeber">\n(.*?)</section>', page, flags=re.S)
+    if not m or 'data-acc="1"' in m.group(0):
+        return page
+    teile = re.split(r"<h2>(.*?)</h2>\n", m.group(1))
+    out, links = [], ""
+    for i in range(1, len(teile), 2):
+        titel, inhalt = teile[i], teile[i + 1].strip()
+        if titel.startswith("Passende"):
+            links = f'<p class="av-links"><strong>Passend dazu:</strong> ' + " · ".join(re.findall(r"<a [^>]+>.*?</a>", inhalt)) + "</p>"
+            continue
+        if "faq-extra" in inhalt:
+            titel = "Häufige Fragen"
+        inhalt = re.sub(r"<ul>\n(.*?)</ul>", lambda u: re.sub(r"<li>(.*?)</li>", r"<p>\1</p>", u.group(1)), inhalt, flags=re.S)
+        out.append(f'<details class="av-acc"><summary>{titel}</summary><div>{inhalt}</div></details>')
+    neu = '<section class="seo" id="ratgeber" data-acc="1">\n<h2>Beispiele und Fragen</h2>\n' + "\n".join(out) + "\n" + links + "\n</section>"
+    return page[:m.start()] + neu + page[m.end():]
 
 
 def main():
@@ -218,15 +267,24 @@ def main():
                 f'<td class="av-st{" s2" if p["pruefstatus"] != "primary_verified" else ""}">{esc(stl)}</td><td class="av-q">{qs}</td></tr>')
     n_prod = len(flat)
     n_bek = sum(1 for f in flat if f["kd"] is not None)
-    li_g = lambda t, k: f"<li><strong>{t}:</strong> {esc(', '.join(gruppen[k]))}.</li>" if gruppen[k] else ""
     aend = "".join(f'<li>{dmy(x["datum"])}: {esc(x["text"])}</li>' for x in D.get("aenderungen", [])[:8])
     nicht = "".join(f'<li><strong>{esc(x["name"])}:</strong> {esc(x["grund"])}</li>' for x in D.get("nicht_bestaetigt", []))
     bm = D.get("marktbenchmark", {})
     bmq = Q.get(bm.get("quelle", ""), {})
     art_opts = "".join(f'<option value="{k}">{v}</option>' for k, v in ART.items())
-    body = f"""<h2 id="anbieter">Altersvorsorgedepot Anbieter im Vergleich</h2>
-<p class="lead">Ab dem 1. Januar 2027 können Verträge für das geförderte Altersvorsorgedepot abgeschlossen werden. Wir haben {n_anb} Anbieter mit {n_prod} Depotmodellen bei den Anbietern selbst geprüft, für {n_bek} Modelle lassen sich die laufenden Kosten im zehnten Jahr aus Anbieterangaben bestimmen. Stand: {dmy(D["stand"])}.</p>
-<p class="note"><strong>Wichtig:</strong> {esc(D["hinweis"])} {esc(D.get("zertifizierung", ""))} Das ist keine Anlageberatung.</p>
+    stand = dmy(D["stand"])
+    li_g = lambda t, k: f"<p><strong>{t}:</strong> {esc(', '.join(gruppen[k]))}.</p>" if gruppen[k] else ""
+    kopf = f"""<h1 class="av-title">Altersvorsorgedepot 2027: {n_anb} Anbieter im Vergleich</h1>
+<p class="av-teaser">Ab Januar legt der Staat bis zu 540 Euro im Jahr auf deine Altersvorsorge, für jedes Kind 300 Euro mehr. Wie viel davon bis zur Rente übrig bleibt, entscheiden die Kosten des Anbieters. Hier siehst du, was Banken, Broker und Versicherer verlangen, und rechnest zwei Angebote direkt gegeneinander.</p>
+<nav class="av-kurz" aria-label="Inhalt"><div class="av-kurz-t">Auf dieser Seite</div><ol>
+<li><a href="#anbieter">Alle Anbieter im Überblick</a><span>{n_prod} Depotmodelle mit Kosten heute und im zehnten Jahr</span></li>
+<li><a href="#h-altersvorsorgedepot">Dein Rechner</a><span>Zulagen, Depotwert und Auszahlung, zwei Anbieter im direkten Vergleich</span></li>
+<li><a href="#gut-zu-wissen">Gut zu wissen</a><span>Förderung, Kosten, Steuer und Auszahlung kurz erklärt</span></li>
+<li><a href="#ratgeber">Beispiele und Fragen</a><span>Rechenbeispiele und häufige Fragen</span></li>
+</ol><div class="av-kurz-s">Stand: {stand} · keine Anlageberatung</div></nav>
+"""
+    body = f"""<h2 id="anbieter">Alle Anbieter im Überblick</h2>
+<p>{n_prod} Depotmodelle von {n_anb} Anbietern, direkt bei den Anbietern geprüft. Sortiere nach den Kosten heute oder im zehnten Jahr.</p>
 <div class="av-filter" role="group" aria-label="Filter"><label for="av-f-art">Depotart <select id="av-f-art"><option value="">Alle</option>{art_opts}</select></label><label><input type="checkbox" id="av-f-kosten"> Nur mit bekannten Kosten im 10. Jahr</label><span class="av-count" id="av-count" aria-live="polite"></span></div>
 <div class="av-tabs" id="avt" role="group" aria-label="Sortierung"><button type="button" class="av-tab" data-s="dau" aria-pressed="true">Kosten im 10. Jahr</button><button type="button" class="av-tab" data-s="sta" aria-pressed="false">Kosten zu Beginn</button><button type="button" class="av-tab" data-s="n" aria-pressed="false">A bis Z</button></div>
 <p class="av-scroll-hint">Tabelle seitlich scrollen für alle Spalten →</p>
@@ -234,26 +292,27 @@ def main():
 <tbody id="avl">
 {chr(10).join(rows)}
 </tbody></table></div>
-<p class="av-sub">Sortierung nach Kosten ist keine Rangliste: Die Angaben umfassen meist nur Fonds- und Servicekosten, nicht die vollständigen Effektivkosten. „nur Presse“: Zahlen aus Presseberichten, vom Anbieter online nicht bestätigt, deshalb nicht im Rechner.</p>
-<h3 class="av-h3">Worauf es bei den Kosten ankommt</h3>
-<ul class="av-sum">
+<button type="button" class="av-mehr" id="av-mehr" aria-expanded="false">Alle {n_prod} Depotmodelle anzeigen</button>
+<p class="av-sub">Die Sortierung ist keine Rangliste: Die Angaben umfassen meist nur Fonds- und Servicekosten. „nur Presse“: Zahlen aus Presseberichten, vom Anbieter online nicht bestätigt, deshalb nicht im Rechner. {esc(D["hinweis"])}</p>
+"""
+    unten = f"""<section id="gut-zu-wissen" class="av-unten">
+<h2>Gut zu wissen</h2>
+{rechts_text(D)}
+<details class="av-acc"><summary>So rechnet der Rechner</summary><div>{ohne_kommentar(open(ERKL, encoding="utf-8").read())}</div></details>
+<details class="av-acc"><summary>Worauf es bei den Kosten der Anbieter ankommt</summary><div>
 {li_g("Erstattung zum Start, danach laufende Kosten", "befristet")}
 {li_g("Erstattung ohne Enddatum, aber freiwillig und widerruflich", "freiwillig")}
 {li_g("Laufende Kosten ohne Erstattung", "laufend")}
-{li_g("Kosten noch nicht (vollständig) veröffentlicht", "offen")}
-</ul>
-<p>Im Rechner unten kannst du jedes Standarddepot mit deinen Eingaben durchrechnen, auch mit späterem Vertragsbeginn (wichtig etwa bei N26 und bei Erstattungen bis zu einem festen Datum).</p>
-<h3 class="av-h3">Geprüft, aber nicht bestätigt</h3>
-<ul>{nicht}</ul>
-<p class="av-sub">{esc(bm.get("text", ""))} {f'<a href="{esc(bmq.get("url", ""))}" target="_blank" rel="noopener nofollow">Quelle</a>' if bmq else ""}</p>
-<h3 class="av-h3">Änderungsprotokoll</h3>
-<ul class="av-chg">{aend}</ul>
-{rechts_text(D)}
-<p class="note"><strong>Hinweis:</strong> Keine Anlageberatung. Angaben ohne Gewähr, die Konditionen können sich bis zum Start ändern. Maßgeblich sind die Vertragsunterlagen der Anbieter.</p>
-"""
+{li_g("Kosten noch nicht vollständig veröffentlicht", "offen")}
+<p class="av-sub">{esc(bm.get("text", ""))} {f'<a href="{esc(bmq.get("url", ""))}" target="_blank" rel="noopener nofollow">Quelle</a>' if bmq else ""}</p></div></details>
+<details class="av-acc"><summary>Geprüft, aber nicht bestätigt</summary><div><ul>{nicht}</ul></div></details>
+<details class="av-acc"><summary>Änderungsprotokoll</summary><div><ul class="av-chg">{aend}</ul></div></details>
+<p class="av-sub">Keine Anlageberatung. Angaben ohne Gewähr, die Konditionen können sich bis zum Start ändern. Maßgeblich sind die Vertragsunterlagen der Anbieter.</p>
+</section>"""
     data = json.dumps(flat, ensure_ascii=False, separators=(",", ":"))
     block = ("<!--av-start-->\n" + '<script type="application/json" id="av-data">' + data.replace("</", "<\\/") + "</script>\n" + CSS
-             + '<section id="anbieter-bereich">' + body + "</section>\n" + JS + "\n<!--av-end-->")
+             + kopf + '<section id="anbieter-bereich">' + body + "</section>\n" + JS + "\n<!--av-end-->")
+    block2 = "<!--av2-start-->\n" + unten + "\n<!--av2-end-->"
     # alten Handblock oberhalb des Rechners entfernen (außerhalb der Markierung), Position merken
     m_old = re.search(r'<section id="anbieter-bereich">.*?</section>\s*(?=<!--calc-start-->)', page, flags=re.S)
     page = re.sub(r"<!--av-start-->.*?<!--av-end-->\n?", "", page, flags=re.S)
@@ -264,7 +323,12 @@ def main():
         page = page.replace("<!--calc-start-->", block + "\n<!--calc-start-->", 1)
     else:
         raise SystemExit("Einfügestelle nicht gefunden")
-    assert page.count('id="anbieter-bereich"') == 1 and page.count('id="av-data"') == 1
+    page = re.sub(r"<!--av2-start-->.*?<!--av2-end-->\n?", "", page, flags=re.S)
+    page = page.replace("<!--calc-end-->\n", "<!--calc-end-->\n" + block2 + "\n", 1)
+    page = umbau_rechner(page)
+    page = umbau_ratgeber(page)
+    assert page.count('id="anbieter-bereich"') == 1 and page.count('id="av-data"') == 1 and page.count('id="gut-zu-wissen"') == 1
+    assert page.count("<h1") == 1, "genau eine h1"
     title = "Altersvorsorgedepot-Rechner und Anbieter im Vergleich 2027"
     desc = (f"Altersvorsorgedepot berechnen: Zulagen, Depotwert und Auszahlung, dazu {n_anb} Anbieter mit {n_prod} Depotmodellen im Vergleich "
             "(N26, Trade Republic, Scalable, ING, Deka, Consorsbank) mit zeitabhängigen Kosten und Quellen.")
