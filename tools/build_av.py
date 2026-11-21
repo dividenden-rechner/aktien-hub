@@ -237,10 +237,14 @@ def main():
     flat, rows = [], []
     gruppen = {"befristet": [], "freiwillig": [], "laufend": [], "offen": []}
     n_anb = len(D["anbieter"])
+    ohne = {}  # Anbieter -> Modelle ohne veröffentlichte Konditionen (nicht in Tabelle und Rechner)
     for a in D["anbieter"]:
         for p in a["produkte"]:
-            i = len(flat)
             ks, ksf, kd, kdf, eur = kennzahlen(p)
+            if p["konditionen"] == "offen" or (ks is None and kd is None):
+                ohne.setdefault(a["name"], []).append(p["name"])
+                continue
+            i = len(flat)
             flat.append({"i": i, "id": p["id"], "n": a["name"], "p": p["name"], "d": a.get("domain", ""), "art": p["art"], "pr": p["pruefstatus"],
                          "k": p["konditionen"], "r": bool(p.get("im_rechner")) and p["pruefstatus"] == "primary_verified",
                          "b": p["bestandteile"], "ks": ks, "kd": kd})
@@ -266,6 +270,9 @@ def main():
                 f'<td class="w">{esc(p["depot_text"])}</td><td>{esc(p["auswahl_text"])}</td>'
                 f'<td class="av-st{" s2" if p["pruefstatus"] != "primary_verified" else ""}">{esc(stl)}</td><td class="av-q">{qs}</td></tr>')
     n_prod = len(flat)
+    n_anb_t = len({f["n"] for f in flat})
+    ohne_txt = ", ".join(sorted((n for n in ohne if n not in {f["n"] for f in flat}), key=str.lower))
+    n_ohne = sum(len(v) for v in ohne.values())
     n_bek = sum(1 for f in flat if f["kd"] is not None)
     aend = "".join(f'<li>{dmy(x["datum"])}: {esc(x["text"])}</li>' for x in D.get("aenderungen", [])[:8])
     nicht = "".join(f'<li><strong>{esc(x["name"])}:</strong> {esc(x["grund"])}</li>' for x in D.get("nicht_bestaetigt", []))
@@ -274,17 +281,17 @@ def main():
     art_opts = "".join(f'<option value="{k}">{v}</option>' for k, v in ART.items())
     stand = dmy(D["stand"])
     li_g = lambda t, k: f"<p><strong>{t}:</strong> {esc(', '.join(gruppen[k]))}.</p>" if gruppen[k] else ""
-    kopf = f"""<h1 class="av-title">Altersvorsorgedepot 2027: {n_anb} Anbieter im Vergleich</h1>
+    kopf = f"""<h1 class="av-title">Altersvorsorgedepot 2027: {n_anb_t} Anbieter im Vergleich</h1>
 <p class="av-teaser">Ab Januar legt der Staat bis zu 540 Euro im Jahr auf deine Altersvorsorge, für jedes Kind 300 Euro mehr. Wie viel davon bis zur Rente übrig bleibt, entscheiden die Kosten des Anbieters. Hier siehst du, was Banken, Broker und Versicherer verlangen, und rechnest zwei Angebote direkt gegeneinander.</p>
 <nav class="av-kurz" aria-label="Inhalt"><div class="av-kurz-t">Auf dieser Seite</div><ol>
-<li><a href="#anbieter">Alle Anbieter im Überblick</a><span>{n_prod} Depotmodelle mit Kosten heute und im zehnten Jahr</span></li>
+<li><a href="#anbieter">Alle Anbieter im Überblick</a><span>{n_prod} Depotmodelle mit bekannten Konditionen, Kosten heute und im zehnten Jahr</span></li>
 <li><a href="#h-altersvorsorgedepot">Dein Rechner</a><span>Zulagen, Depotwert und Auszahlung, zwei Anbieter im direkten Vergleich</span></li>
 <li><a href="#gut-zu-wissen">Gut zu wissen</a><span>Förderung, Kosten, Steuer und Auszahlung kurz erklärt</span></li>
 <li><a href="#ratgeber">Beispiele und Fragen</a><span>Rechenbeispiele und häufige Fragen</span></li>
 </ol><div class="av-kurz-s">Stand: {stand} · keine Anlageberatung</div></nav>
 """
     body = f"""<h2 id="anbieter">Alle Anbieter im Überblick</h2>
-<p>{n_prod} Depotmodelle von {n_anb} Anbietern, direkt bei den Anbietern geprüft. Sortiere nach den Kosten heute oder im zehnten Jahr.</p>
+<p>Verglichen werden alle {n_prod} Depotmodelle von {n_anb_t} Anbietern, für die es schon Konditionen gibt, direkt bei den Anbietern geprüft. Sortiere nach den Kosten heute oder im zehnten Jahr.</p>
 <div class="av-filter" role="group" aria-label="Filter"><label for="av-f-art">Depotart <select id="av-f-art"><option value="">Alle</option>{art_opts}</select></label><label><input type="checkbox" id="av-f-kosten"> Nur mit bekannten Kosten im 10. Jahr</label><span class="av-count" id="av-count" aria-live="polite"></span></div>
 <div class="av-tabs" id="avt" role="group" aria-label="Sortierung"><button type="button" class="av-tab" data-s="dau" aria-pressed="true">Kosten im 10. Jahr</button><button type="button" class="av-tab" data-s="sta" aria-pressed="false">Kosten zu Beginn</button><button type="button" class="av-tab" data-s="n" aria-pressed="false">A bis Z</button></div>
 <p class="av-scroll-hint">Tabelle seitlich scrollen für alle Spalten →</p>
@@ -293,6 +300,7 @@ def main():
 {chr(10).join(rows)}
 </tbody></table></div>
 <button type="button" class="av-mehr" id="av-mehr" aria-expanded="false">Alle {n_prod} Depotmodelle anzeigen</button>
+<p class="av-sub">Noch ohne veröffentlichte Konditionen und deshalb nicht in der Tabelle: {esc(ohne_txt)}. Ebenfalls nicht dabei sind frei gestaltete Depots, deren Kosten erst von den gewählten Fonds abhängen. Sobald Preise feststehen, nehmen wir die Modelle auf.</p>
 <p class="av-sub">Die Sortierung ist keine Rangliste: Die Angaben umfassen meist nur Fonds- und Servicekosten. „nur Presse“: Zahlen aus Presseberichten, vom Anbieter online nicht bestätigt, deshalb nicht im Rechner. {esc(D["hinweis"])}</p>
 """
     unten = f"""<section id="gut-zu-wissen" class="av-unten">
@@ -330,14 +338,14 @@ def main():
     assert page.count('id="anbieter-bereich"') == 1 and page.count('id="av-data"') == 1 and page.count('id="gut-zu-wissen"') == 1
     assert page.count("<h1") == 1, "genau eine h1"
     title = "Altersvorsorgedepot-Rechner und Anbieter im Vergleich 2027"
-    desc = (f"Altersvorsorgedepot berechnen: Zulagen, Depotwert und Auszahlung, dazu {n_anb} Anbieter mit {n_prod} Depotmodellen im Vergleich "
+    desc = (f"Altersvorsorgedepot berechnen: Zulagen, Depotwert und Auszahlung, dazu {n_anb_t} Anbieter mit {n_prod} Depotmodellen im Vergleich "
             "(N26, Trade Republic, Scalable, ING, Deka, Consorsbank) mit zeitabhängigen Kosten und Quellen.")
     page = re.sub(r"<title>.*?</title>", "<title>" + title + "</title>", page, count=1)
     page = re.sub(r'(<meta name="description" content=")[^"]*', lambda m: m.group(1) + desc, page, count=1)
     page = re.sub(r'(<meta property="og:title" content=")[^"]*', lambda m: m.group(1) + title, page, count=1)
     page = re.sub(r'(<meta property="og:description" content=")[^"]*', lambda m: m.group(1) + desc, page, count=1)
     open(PAGE, "w", encoding="utf-8").write(page)
-    print("ok", n_anb, "Anbieter,", n_prod, "Depotmodelle,", n_bek, "mit bekannten Kosten im 10. Jahr")
+    print("ok", n_anb_t, "Anbieter,", n_prod, "Depotmodelle in der Tabelle,", n_ohne, "ohne Konditionen ausgeblendet,", n_bek, "mit bekannten Kosten im 10. Jahr")
 
 
 if __name__ == "__main__":
