@@ -4,6 +4,13 @@
   "note": "No free, redistributable official end-of-day history 2010-2025 was retrieved for European venues. Existing repo series are listed below as third-party data; no adjusted/unadjusted mixing.",
   "existing_repo_series": [
    {
+    "symbol": "A",
+    "source": "Alpha Vantage TIME_SERIES_WEEKLY (Wochenschlusskurse, ungeteilt)",
+    "as_of": "2026-11-20",
+    "adjustment": "unadjusted weekly closes (per source description)",
+    "licence_note": "Alpha Vantage free tier; check terms before republication"
+   },
+   {
     "symbol": "BRBY.L",
     "source": "Alpha Vantage TIME_SERIES_WEEKLY (Wochenschlusskurse, ungeteilt)",
     "as_of": "2026-11-17",
@@ -21,6 +28,13 @@
     "symbol": "MC.PA",
     "source": "Alpha Vantage TIME_SERIES_WEEKLY (Wochenschlusskurse, ungeteilt)",
     "as_of": "2026-11-15",
+    "adjustment": "unadjusted weekly closes (per source description)",
+    "licence_note": "Alpha Vantage free tier; check terms before republication"
+   },
+   {
+    "symbol": "NVDA",
+    "source": "Alpha Vantage TIME_SERIES_WEEKLY (Wochenschlusskurse, ungeteilt)",
+    "as_of": "2026-11-19",
     "adjustment": "unadjusted weekly closes (per source description)",
     "licence_note": "Alpha Vantage free tier; check terms before republication"
    },
