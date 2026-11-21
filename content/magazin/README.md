@@ -3,7 +3,7 @@
 <!-- uebersicht-start -->
 ## Übersicht (wird automatisch erstellt, neueste zuerst)
 
-### Vorschau auf der Testseite (6)
+### Vorschau auf der Testseite (5)
 
 Nur auf der GitHub-Testseite unter vorschau/ sichtbar. Freigeben: Datei anklicken, Stift-Symbol, Zeile `vorschau: ja` löschen und speichern.
 
@@ -13,7 +13,6 @@ Nur auf der GitHub-Testseite unter vorschau/ sichtbar. Freigeben: Datei anklicke
 | 21.11.2026 11:00 | Agree Realty im Vergleich: Dividende rund 4,7 %, AFFO-Prognose angehoben, Verschuldung niedriger als bei NNN und Realty Income | [79738883_2026-11-16/9050_2340-agree-realty-vergleich-nnn-realty-income.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/79738883_2026-11-16/9050_2340-agree-realty-vergleich-nnn-realty-income.md) |
 | 21.11.2026 10:00 | Target und TJX: Das Zollgeld wiegt bei Target zehnmal so schwer | [79738879_2026-11-20/8669_1330-target-tjx-zollrueckerstattung-dividende-vergleich.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/79738879_2026-11-20/8669_1330-target-tjx-zollrueckerstattung-dividende-vergleich.md) |
 | 21.11.2026 09:00 | Kraft Heinz an der NYSE: Der Cashflow sinkt 2027 um ein Drittel, die Dividende bleibt | [79738879_2026-11-20/8599_1400-kraft-heinz-nyse-prognose-dividende-2029.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/79738879_2026-11-20/8599_1400-kraft-heinz-nyse-prognose-dividende-2029.md) |
-| 21.11.2026 07:30 | Rekord-Börsengang, Chef weg, neue Chipregeln: Die KI-Woche drückt Nvidia um 10 % | [79738878_2026-11-21/9269_0730-ki-woche-anthropic-nvidia-amd-chipregeln.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/79738878_2026-11-21/9269_0730-ki-woche-anthropic-nvidia-amd-chipregeln.md) |
 | 21.11.2026 06:30 | SEC prüft Nvidias Buchführung: Die Aktie hat sich seit Oktober fast halbiert | [79738878_2026-11-21/9369_0630-nvidia-sec-buchhaltung-tech-ausverkauf.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/79738878_2026-11-21/9369_0630-nvidia-sec-buchhaltung-tech-ausverkauf.md) |
 
 ### Zur Freigabe: Entwürfe (10)
@@ -33,11 +32,12 @@ Datei anklicken, dann Stift-Symbol: Zeile `draft: true` löschen und speichern, 
 | 29.10.2026 22:42 | Amazon steigert Umsatz im dritten Quartal auf 201,9 Milliarden Dollar | [79738970_2026-10-29/7757_2242-amazon-q3-2026-zahlen.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/79738970_2026-10-29/7757_2242-amazon-q3-2026-zahlen.md) |
 | 29.10.2026 10:12 | Shell erzielt im dritten Quartal 10,8 Milliarden Dollar Gewinn | [79738970_2026-10-29/8987_1012-shell-q3-2026-ergebnisse.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/79738970_2026-10-29/8987_1012-shell-q3-2026-ergebnisse.md) |
 
-### Online (452)
+### Online (453)
 
 | Datum | Titel | Datei |
 |---|---|---|
 | 21.11.2026 17:30 | ADP erhöht die Dividende um 12 %: Was die Investorenfolien über die nächsten Jahre verraten | [79738878_2026-11-21/8269_1730-adp-dividende-12-prozent-investor-folien.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/79738878_2026-11-21/8269_1730-adp-dividende-12-prozent-investor-folien.md) |
+| 21.11.2026 07:30 | Rekord-Börsengang, Chef weg, neue Chipregeln: Die KI-Woche drückt Nvidia um 10 % | [79738878_2026-11-21/9269_0730-ki-woche-anthropic-nvidia-amd-chipregeln.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/79738878_2026-11-21/9269_0730-ki-woche-anthropic-nvidia-amd-chipregeln.md) |
 | 20.11.2026 14:38 | Corpay investiert 1,1 Milliarden US-Dollar in BILL-Übernahme | [79738879_2026-11-20/8561_1438-corpay-beteiligung-bill-uebernahme-2026.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/79738879_2026-11-20/8561_1438-corpay-beteiligung-bill-uebernahme-2026.md) |
 | 20.11.2026 14:37 | SSE plant 8,7 Mrd. Pfund Investitionen für Stromnetze bis 2033 | [79738879_2026-11-20/8562_1437-sse-praesentiert-investitionsplan-von-8-7-mrd-pfund.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/79738879_2026-11-20/8562_1437-sse-praesentiert-investitionsplan-von-8-7-mrd-pfund.md) |
 | 20.11.2026 14:37 | HSBC schliesst Rueckkaufangebot ueber 1,5 Mrd. US-Dollar ab | [79738879_2026-11-20/8562_1437-hsbc-ergebnisse-wertpapier-rueckkauf-november-2026.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/79738879_2026-11-20/8562_1437-hsbc-ergebnisse-wertpapier-rueckkauf-november-2026.md) |
