@@ -1,0 +1,52 @@
+{
+ "stand": "2026-11-20",
+ "aktien": [
+  {
+   "ticker": "ADP",
+   "name": "ADP",
+   "datum": "2026-11-21",
+   "seite": "dividende/automatic-data-processing/",
+   "video": null,
+   "summe": 17,
+   "kriterien": {
+    "umsatz": {
+     "wert": 7.9,
+     "punkte": 2,
+     "feld": "umsatz_wachstum_5j"
+    },
+    "gewinn": {
+     "wert": 11.2,
+     "punkte": 3,
+     "feld": "gewinn_wachstum_5j"
+    },
+    "rendite": {
+     "wert": 2.21,
+     "punkte": 1,
+     "feld": "rendite"
+    },
+    "divwachstum": {
+     "wert": 12.4,
+     "punkte": 3,
+     "feld": "div_wachstum_5j"
+    },
+    "deckung": {
+     "wert": 50.0,
+     "punkte": 3,
+     "feld": "fcf_ausschuettung"
+    },
+    "schulden": {
+     "wert": 0.11,
+     "punkte": 3,
+     "feld": "nettoschulden_ebitda"
+    },
+    "bewertung": {
+     "wert": 4.23,
+     "punkte": 2,
+     "feld": "fcf_rendite"
+    }
+   },
+   "kurs_eur": 279.7,
+   "stand": "2026-11-20"
+  }
+ ]
+}

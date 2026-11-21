@@ -1,0 +1,6 @@
+{
+ "hinweis": "Aktien aus dem Sieben-Punkte-Check (Video). Neue Aktie hier eintragen; tools/sieben_punkte.py rechnet die Punkte täglich aus data/kennzahlen.json.",
+ "aktien": [
+  {"ticker": "ADP", "name": "ADP", "datum": "2026-11-21", "seite": "dividende/automatic-data-processing/", "video": null}
+ ]
+}

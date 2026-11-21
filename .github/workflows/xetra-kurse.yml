@@ -7,6 +7,8 @@ on:
       - ".github/workflows/xetra-kurse.yml"
       - "tools/isin_zuordnung.py"
       - "tools/kennzahlen.py"
+      - "tools/sieben_punkte.py"
+      - "data/sieben-punkte-liste.json"
       - "data/dividenden-korrekturen.json"
       - "data/kurse/isin-fest.json"
   schedule:
@@ -32,11 +34,13 @@ jobs:
           ZUORDNUNG_NEU: ${{ github.event_name == 'push' && '1' || '' }}
       - name: Kennzahlen (Kurs + SEC + EZB)
         run: python3 tools/kennzahlen.py
+      - name: Sieben-Punkte-Check (Rangliste)
+        run: python3 tools/sieben_punkte.py
       - name: Ergebnis committen
         run: |
           git config user.name "kurse-bot"
           git config user.email "actions@users.noreply.github.com"
-          git add data/kurse data/kennzahlen.json data/ir-pruefung.json
+          git add data/kurse data/kennzahlen.json data/ir-pruefung.json data/sieben-punkte.json fortgeschrittene/aktien-checkliste
           if git diff --cached --quiet; then echo "Keine neuen Tage"; exit 0; fi
           git commit -m "Xetra-Tageskurse"
           ok=0; for i in 1 2 3; do git pull --rebase --autostash -X theirs -q && git push && ok=1 && break; sleep 5; done; [ "$ok" = 1 ] || { echo "Push fehlgeschlagen"; git status --short | head -20; exit 1; }
