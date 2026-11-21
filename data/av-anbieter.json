@@ -3,7 +3,7 @@
  "stand": "2026-11-21",
  "geprueft": "2026-11-21",
  "hinweis": "Alle Angaben sind Ankündigungen der Anbieter und stehen unter dem Vorbehalt der Zertifizierung durch das Bundeszentralamt für Steuern. Effektivkosten inklusive Spreads, Transaktions-, Abschluss- und Vertriebskosten nennen die wenigsten Anbieter.",
- "zertifizierung": "Im Vergleich stehen nur Depotmodelle, die das Bundeszentralamt für Steuern zertifiziert hat (Liste aller erteilten Zertifikate, Wirksamkeit ab 1.1.2027, abgerufen am 21.11.2026) und die der Anbieter auf seiner Website als Altersvorsorgedepot anbietet. Garantieprodukte sind nicht dabei.",
+ "zertifizierung": "Die Liste der erteilten Zertifikate des Bundeszentralamts für Steuern konnte bei dieser Prüfung nicht abgerufen werden. Deshalb steht hier bei keinem Angebot ein Zertifizierungsstand. Angaben von Drittseiten wurden nicht übernommen.",
  "marktbenchmark": {
   "text": "Finanztip nennt mit Stand 11.11.2026 31 Anbieter und 63 Depotangebote. Das ist eine externe Übersicht, die Zahl wurde hier nicht nachgezählt.",
   "quelle": "finanztip"
@@ -442,34 +442,6 @@
    "typ": "primaer",
    "datum": null,
    "abgerufen": "2026-11-21"
-  },
-  "bzst": {
-   "titel": "BZSt: Liste aller erteilten Zertifikate (CSV)",
-   "url": "https://www.bzst.de/SharedDocs/Downloads/DE/Zertifizierungsstelle/liste_aller_erteilten_zertifikate_CSV.csv?__blob=publicationFile&v=56",
-   "typ": "amtlich",
-   "datum": null,
-   "abgerufen": "2026-11-21"
-  },
-  "ergo": {
-   "titel": "ERGO: Altersvorsorgedepot (Standarddepot ab 2027)",
-   "url": "https://www.ergo.de/de/Produkte/Rentenversicherung/altersvorsorgedepot",
-   "typ": "primaer",
-   "datum": null,
-   "abgerufen": "2026-11-21"
-  },
-  "ergo-rv": {
-   "titel": "ERGO: Rentenlösungen im Vergleich (Standarddepot, Förderung ab 2027)",
-   "url": "https://www.ergo.de/de/Produkte/Rentenversicherung",
-   "typ": "primaer",
-   "datum": null,
-   "abgerufen": "2026-11-21"
-  },
-  "helvetia": {
-   "titel": "Helvetia: Altersvorsorgedepot (Best Invest Altersvorsorgedepot)",
-   "url": "https://www.helvetia.de/de/privatkunden/gefoerderte-altersvorsorge-2027.html",
-   "typ": "primaer",
-   "datum": null,
-   "abgerufen": "2026-11-21"
   }
  },
  "anbieter": [
@@ -519,8 +491,7 @@
       "n26",
       "n26-presse"
      ],
-     "im_rechner": true,
-     "zertifikate": []
+     "im_rechner": true
     },
     {
      "id": "n26-frei",
@@ -554,8 +525,7 @@
      "quellen": [
       "n26"
      ],
-     "im_rechner": false,
-     "zertifikate": []
+     "im_rechner": false
     }
    ]
   },
@@ -605,17 +575,9 @@
       "sc-kosten",
       "sc-sonder",
       "sc-presse-1111",
-      "sc-presse-ter",
-      "bzst"
+      "sc-presse-ter"
      ],
-     "im_rechner": true,
-     "zertifikate": [
-      {
-       "nr": "006644",
-       "name": "Altersvorsorgedepot - Standarddepot",
-       "wirksam": "2027-01-01"
-      }
-     ]
+     "im_rechner": true
     },
     {
      "id": "sc-frei",
@@ -643,17 +605,9 @@
      ],
      "quellen": [
       "sc-kosten",
-      "sc-sonder",
-      "bzst"
+      "sc-sonder"
      ],
-     "im_rechner": false,
-     "zertifikate": [
-      {
-       "nr": "006645",
-       "name": "Altersvorsorgedepot - Selbst entscheiden",
-       "wirksam": "2027-01-01"
-      }
-     ]
+     "im_rechner": false
     }
    ]
   },
@@ -692,42 +646,9 @@
      ],
      "quellen": [
       "tr-presse",
-      "tr-seite",
-      "bzst"
+      "tr-seite"
      ],
-     "im_rechner": true,
-     "zertifikate": [
-      {
-       "nr": "006624",
-       "name": "TRB_StDV_BLK_N_2701",
-       "wirksam": "2027-01-01"
-      },
-      {
-       "nr": "006625",
-       "name": "TRB_StDV_BLK_R_2701",
-       "wirksam": "2027-01-01"
-      },
-      {
-       "nr": "006626",
-       "name": "TRB_StDV_DWS_N_2701",
-       "wirksam": "2027-01-01"
-      },
-      {
-       "nr": "006627",
-       "name": "TRB_StDV_DWS_R_2701",
-       "wirksam": "2027-01-01"
-      },
-      {
-       "nr": "006628",
-       "name": "TRB_StDV_VNG_N_2701",
-       "wirksam": "2027-01-01"
-      },
-      {
-       "nr": "006629",
-       "name": "TRB_StDV_VNG_R_2701",
-       "wirksam": "2027-01-01"
-      }
-     ]
+     "im_rechner": true
     },
     {
      "id": "tr-frei",
@@ -748,17 +669,9 @@
      ],
      "quellen": [
       "tr-presse",
-      "tr-seite",
-      "bzst"
+      "tr-seite"
      ],
-     "im_rechner": false,
-     "zertifikate": [
-      {
-       "nr": "006622",
-       "name": "TRB_AVD_SE_2701",
-       "wirksam": "2027-01-01"
-      }
-     ]
+     "im_rechner": false
     }
    ]
   },
@@ -791,8 +704,7 @@
       "ing-kosten",
       "ing-presse"
      ],
-     "im_rechner": true,
-     "zertifikate": []
+     "im_rechner": true
     },
     {
      "id": "ing-aktiv",
@@ -816,8 +728,7 @@
       "ing-kosten",
       "ing-presse"
      ],
-     "im_rechner": false,
-     "zertifikate": []
+     "im_rechner": false
     }
    ]
   },
@@ -858,8 +769,7 @@
      "quellen": [
       "flatex"
      ],
-     "im_rechner": true,
-     "zertifikate": []
+     "im_rechner": true
     },
     {
      "id": "flatex-plus",
@@ -875,8 +785,7 @@
      "quellen": [
       "flatex"
      ],
-     "im_rechner": true,
-     "zertifikate": []
+     "im_rechner": true
     },
     {
      "id": "flatex-flex",
@@ -892,8 +801,7 @@
      "quellen": [
       "flatex"
      ],
-     "im_rechner": false,
-     "zertifikate": []
+     "im_rechner": false
     }
    ]
   },
@@ -926,8 +834,7 @@
       "deka-presse",
       "deka-seite"
      ],
-     "im_rechner": true,
-     "zertifikate": []
+     "im_rechner": true
     },
     {
      "id": "deka-plus",
@@ -950,8 +857,7 @@
       "deka-seite",
       "biallo-deka"
      ],
-     "im_rechner": false,
-     "zertifikate": []
+     "im_rechner": false
     }
    ]
   },
@@ -993,8 +899,7 @@
       "sb",
       "sb-blog"
      ],
-     "im_rechner": true,
-     "zertifikate": []
+     "im_rechner": true
     },
     {
      "id": "sb-frei",
@@ -1016,8 +921,7 @@
      "quellen": [
       "sb-blog"
      ],
-     "im_rechner": false,
-     "zertifikate": []
+     "im_rechner": false
     }
    ]
   },
@@ -1044,8 +948,7 @@
       "tp-mobiflip",
       "tp-reisetopia"
      ],
-     "im_rechner": false,
-     "zertifikate": []
+     "im_rechner": false
     }
    ]
   },
@@ -1084,8 +987,7 @@
      "quellen": [
       "bitpanda"
      ],
-     "im_rechner": true,
-     "zertifikate": []
+     "im_rechner": true
     },
     {
      "id": "bp-flex",
@@ -1114,8 +1016,7 @@
      "quellen": [
       "bitpanda"
      ],
-     "im_rechner": false,
-     "zertifikate": []
+     "im_rechner": false
     }
    ]
   },
@@ -1155,8 +1056,7 @@
       "db",
       "db-presse"
      ],
-     "im_rechner": true,
-     "zertifikate": []
+     "im_rechner": true
     },
     {
      "id": "db-dws-beratung",
@@ -1178,8 +1078,7 @@
      "quellen": [
       "db"
      ],
-     "im_rechner": false,
-     "zertifikate": []
+     "im_rechner": false
     }
    ]
   },
@@ -1205,8 +1104,7 @@
      "quellen": [
       "test-preiskampf"
      ],
-     "im_rechner": false,
-     "zertifikate": []
+     "im_rechner": false
     }
    ]
   },
@@ -1234,8 +1132,7 @@
       "union-seite",
       "test-preiskampf"
      ],
-     "im_rechner": false,
-     "zertifikate": []
+     "im_rechner": false
     },
     {
      "id": "union-pro",
@@ -1252,8 +1149,7 @@
       "union-presse",
       "test-preiskampf"
      ],
-     "im_rechner": false,
-     "zertifikate": []
+     "im_rechner": false
     },
     {
      "id": "union-garantie",
@@ -1269,8 +1165,7 @@
      "quellen": [
       "union-presse"
      ],
-     "im_rechner": false,
-     "zertifikate": []
+     "im_rechner": false
     }
    ]
   },
@@ -1313,8 +1208,7 @@
       "quirion",
       "quirion-en"
      ],
-     "im_rechner": true,
-     "zertifikate": []
+     "im_rechner": true
     },
     {
      "id": "quirion-pro",
@@ -1343,8 +1237,7 @@
      "quellen": [
       "quirion"
      ],
-     "im_rechner": true,
-     "zertifikate": []
+     "im_rechner": true
     }
    ]
   },
@@ -1370,8 +1263,7 @@
      "quellen": [
       "comdirect"
      ],
-     "im_rechner": true,
-     "zertifikate": []
+     "im_rechner": true
     },
     {
      "id": "comdirect-flex",
@@ -1387,8 +1279,7 @@
      "quellen": [
       "comdirect"
      ],
-     "im_rechner": false,
-     "zertifikate": []
+     "im_rechner": false
     }
    ]
   },
@@ -1429,8 +1320,7 @@
      "quellen": [
       "consors"
      ],
-     "im_rechner": true,
-     "zertifikate": []
+     "im_rechner": true
     },
     {
      "id": "consors-fokus",
@@ -1460,8 +1350,7 @@
      "quellen": [
       "consors"
      ],
-     "im_rechner": true,
-     "zertifikate": []
+     "im_rechner": true
     },
     {
      "id": "consors-frei",
@@ -1483,8 +1372,7 @@
      "quellen": [
       "consors"
      ],
-     "im_rechner": false,
-     "zertifikate": []
+     "im_rechner": false
     }
    ]
   },
@@ -1510,8 +1398,7 @@
      "quellen": [
       "dkb"
      ],
-     "im_rechner": true,
-     "zertifikate": []
+     "im_rechner": true
     }
    ]
   },
@@ -1548,8 +1435,7 @@
      "quellen": [
       "raisin"
      ],
-     "im_rechner": true,
-     "zertifikate": []
+     "im_rechner": true
     },
     {
      "id": "raisin-vv",
@@ -1577,8 +1463,7 @@
      "quellen": [
       "raisin"
      ],
-     "im_rechner": false,
-     "zertifikate": []
+     "im_rechner": false
     }
    ]
   },
@@ -1617,8 +1502,7 @@
      "quellen": [
       "fidelity"
      ],
-     "im_rechner": true,
-     "zertifikate": []
+     "im_rechner": true
     }
    ]
   },
@@ -1651,8 +1535,7 @@
      "quellen": [
       "hannoversche"
      ],
-     "im_rechner": true,
-     "zertifikate": []
+     "im_rechner": true
     }
    ]
   },
@@ -1687,8 +1570,7 @@
       "oskar",
       "oskar-std"
      ],
-     "im_rechner": true,
-     "zertifikate": []
+     "im_rechner": true
     }
    ]
   },
@@ -1706,33 +1588,15 @@
      "art": "standard",
      "pruefstatus": "primary_verified",
      "konditionen": "offen",
-     "kosten_text": "Konditionen noch nicht veröffentlicht; drei zertifizierte Varianten (A, B, E2000)",
+     "kosten_text": "Konditionen noch nicht veröffentlicht",
      "depot_text": "noch offen",
      "auswahl_text": "Zwei fest vorgegebene ETFs",
      "hinweis": "",
      "bestandteile": [],
      "quellen": [
-      "allianz-std",
-      "bzst"
+      "allianz-std"
      ],
-     "im_rechner": true,
-     "zertifikate": [
-      {
-       "nr": "006630",
-       "name": "Altersvorsorge Standarddepot (A)",
-       "wirksam": "2027-01-01"
-      },
-      {
-       "nr": "006631",
-       "name": "Altersvorsorge Standarddepot (B)",
-       "wirksam": "2027-01-01"
-      },
-      {
-       "nr": "006639",
-       "name": "Altersvorsorge Standarddepot E2000",
-       "wirksam": "2027-01-01"
-      }
-     ]
+     "im_rechner": true
     },
     {
      "id": "allianz-investflex",
@@ -1746,17 +1610,9 @@
      "hinweis": "",
      "bestandteile": [],
      "quellen": [
-      "allianz",
-      "bzst"
+      "allianz"
      ],
-     "im_rechner": false,
-     "zertifikate": [
-      {
-       "nr": "006632",
-       "name": "AltersvorsorgeDepot InvestFlex",
-       "wirksam": "2027-01-01"
-      }
-     ]
+     "im_rechner": false
     },
     {
      "id": "allianz-investflex80",
@@ -1770,17 +1626,9 @@
      "hinweis": "",
      "bestandteile": [],
      "quellen": [
-      "allianz",
-      "bzst"
+      "allianz"
      ],
-     "im_rechner": false,
-     "zertifikate": [
-      {
-       "nr": "006633",
-       "name": "AltersvorsorgeVertrag InvestFlex80",
-       "wirksam": "2027-01-01"
-      }
-     ]
+     "im_rechner": false
     }
    ]
   },
@@ -1807,8 +1655,7 @@
       "wuertt-std",
       "wuertt"
      ],
-     "im_rechner": true,
-     "zertifikate": []
+     "im_rechner": true
     },
     {
      "id": "wuertt-zukunftsdepot",
@@ -1824,8 +1671,7 @@
      "quellen": [
       "wuertt"
      ],
-     "im_rechner": false,
-     "zertifikate": []
+     "im_rechner": false
     },
     {
      "id": "wuertt-zukunftsgarant",
@@ -1841,8 +1687,7 @@
      "quellen": [
       "wuertt"
      ],
-     "im_rechner": false,
-     "zertifikate": []
+     "im_rechner": false
     }
    ]
   },
@@ -1868,8 +1713,7 @@
      "quellen": [
       "zurich"
      ],
-     "im_rechner": true,
-     "zertifikate": []
+     "im_rechner": true
     },
     {
      "id": "zurich-avd",
@@ -1885,8 +1729,7 @@
      "quellen": [
       "zurich"
      ],
-     "im_rechner": false,
-     "zertifikate": []
+     "im_rechner": false
     },
     {
      "id": "zurich-garantie",
@@ -1902,8 +1745,7 @@
      "quellen": [
       "zurich"
      ],
-     "im_rechner": false,
-     "zertifikate": []
+     "im_rechner": false
     }
    ]
   },
@@ -1930,8 +1772,7 @@
       "devk",
       "devk-1610"
      ],
-     "im_rechner": true,
-     "zertifikate": []
+     "im_rechner": true
     },
     {
      "id": "devk-garantie",
@@ -1947,8 +1788,7 @@
      "quellen": [
       "devk"
      ],
-     "im_rechner": false,
-     "zertifikate": []
+     "im_rechner": false
     }
    ]
   },
@@ -1974,8 +1814,7 @@
      "quellen": [
       "cosmos"
      ],
-     "im_rechner": true,
-     "zertifikate": []
+     "im_rechner": true
     }
    ]
   },
@@ -2001,8 +1840,7 @@
      "quellen": [
       "commerzbank"
      ],
-     "im_rechner": true,
-     "zertifikate": []
+     "im_rechner": true
     }
    ]
   },
@@ -2028,8 +1866,7 @@
      "quellen": [
       "unitplus"
      ],
-     "im_rechner": false,
-     "zertifikate": []
+     "im_rechner": false
     }
    ]
   },
@@ -2055,8 +1892,7 @@
      "quellen": [
       "sunrise"
      ],
-     "im_rechner": false,
-     "zertifikate": []
+     "im_rechner": false
     }
    ]
   },
@@ -2083,8 +1919,7 @@
       "openbank",
       "santander"
      ],
-     "im_rechner": true,
-     "zertifikate": []
+     "im_rechner": true
     }
    ]
   },
@@ -2110,8 +1945,7 @@
      "quellen": [
       "debeka"
      ],
-     "im_rechner": true,
-     "zertifikate": []
+     "im_rechner": true
     }
    ]
   },
@@ -2137,8 +1971,7 @@
      "quellen": [
       "liqid"
      ],
-     "im_rechner": false,
-     "zertifikate": []
+     "im_rechner": false
     }
    ]
   },
@@ -2164,8 +1997,7 @@
      "quellen": [
       "lvm"
      ],
-     "im_rechner": true,
-     "zertifikate": []
+     "im_rechner": true
     }
    ]
   },
@@ -2191,8 +2023,7 @@
      "quellen": [
       "provinzial"
      ],
-     "im_rechner": true,
-     "zertifikate": []
+     "im_rechner": true
     }
    ]
   },
@@ -2218,8 +2049,7 @@
      "quellen": [
       "interrisk"
      ],
-     "im_rechner": false,
-     "zertifikate": []
+     "im_rechner": false
     }
    ]
   },
@@ -2245,8 +2075,7 @@
      "quellen": [
       "whitebox"
      ],
-     "im_rechner": false,
-     "zertifikate": []
+     "im_rechner": false
     }
    ]
   },
@@ -2272,8 +2101,7 @@
      "quellen": [
       "evergreen"
      ],
-     "im_rechner": false,
-     "zertifikate": []
+     "im_rechner": false
     }
    ]
   },
@@ -2299,8 +2127,7 @@
      "quellen": [
       "growney"
      ],
-     "im_rechner": false,
-     "zertifikate": []
+     "im_rechner": false
     }
    ]
   },
@@ -2326,77 +2153,7 @@
      "quellen": [
       "finanzennet"
      ],
-     "im_rechner": false,
-     "zertifikate": []
-    }
-   ]
-  },
-  {
-   "id": "ergo",
-   "name": "ERGO",
-   "typ": "Versicherer",
-   "domain": "ergo.de",
-   "herkunft": "neu geprüft",
-   "hinweis": "",
-   "produkte": [
-    {
-     "id": "ergo-standard",
-     "name": "ERGO Förder-Depot Standard",
-     "art": "standard",
-     "pruefstatus": "primary_verified",
-     "konditionen": "offen",
-     "kosten_text": "Konditionen noch nicht veröffentlicht; Umsetzung als Fondspolice",
-     "depot_text": "noch offen",
-     "auswahl_text": "Zwei Fonds",
-     "hinweis": "",
-     "bestandteile": [],
-     "quellen": [
-      "ergo",
-      "ergo-rv",
-      "bzst"
-     ],
-     "im_rechner": true,
-     "zertifikate": [
-      {
-       "nr": "006642",
-       "name": "ERGO Förder-Depot Standard",
-       "wirksam": "2027-01-01"
-      }
-     ]
-    }
-   ]
-  },
-  {
-   "id": "helvetia",
-   "name": "Helvetia (Baloise)",
-   "typ": "Versicherer",
-   "domain": "helvetia.de",
-   "herkunft": "neu geprüft",
-   "hinweis": "",
-   "produkte": [
-    {
-     "id": "helvetia-bestinvest",
-     "name": "Best Invest Altersvorsorgedepot",
-     "art": "frei",
-     "pruefstatus": "primary_verified",
-     "konditionen": "offen",
-     "kosten_text": "Fondsgebundene Rentenversicherung als Altersvorsorgedepot, Konditionen noch nicht veröffentlicht",
-     "depot_text": "Über die Helvetia Altersvorsorgeplattform, mit Beratung",
-     "auswahl_text": "Fonds und ETFs",
-     "hinweis": "",
-     "bestandteile": [],
-     "quellen": [
-      "helvetia",
-      "bzst"
-     ],
-     "im_rechner": false,
-     "zertifikate": [
-      {
-       "nr": "006640",
-       "name": "Helvetia Best Invest Altersvorsorgedepot",
-       "wirksam": "2027-01-01"
-      }
-     ]
+     "im_rechner": false
     }
    ]
   }
@@ -2430,14 +2187,6 @@
  "aenderungen": [
   {
    "datum": "2026-11-21",
-   "text": "Rechtsstand ergänzt: wer gefördert wird (Selbstständige, mittelbare Förderung bis 175 Euro), zulässige Anlagen, Zeitpunkt der Zulagen, Anlage AV, vorzeitige Entnahme und Wege für Riester-Sparer."
-  },
-  {
-   "datum": "2026-11-21",
-   "text": "Vergleich zeigt nur noch zertifizierte Altersvorsorgedepots (BZSt-Liste) mit Angebot auf der Anbieter-Website: Trade Republic, Scalable Capital, Allianz, ERGO, Helvetia. Alle anderen Anbieter stehen im aufklappbaren Bereich."
-  },
-  {
-   "datum": "2026-11-21",
    "text": "Anbieterliste vollständig neu geprüft, jedes Depotmodell einzeln erfasst, Kosten nach Bestandteilen und Zeiträumen getrennt."
   },
   {
@@ -2465,39 +2214,5 @@
    "text": "Deutsche Bank (DWS): Kosten zu Beginn 0,10 % für zwei Jahre ergänzt."
   }
  ],
- "pruefungen": [],
- "weitere_zertifikate": [
-  {
-   "name": "Trade Republic – TRB_AVD_VV_2701 (006623)",
-   "grund": "Zertifiziert, das Modell beschreibt Trade Republic auf seiner Website bisher nicht."
-  },
-  {
-   "name": "ERGO – Förder-Depot Dynamik (006643) und Förder-Depot Chance (006649)",
-   "grund": "Zertifiziert, Ausgestaltung auf der ERGO-Website noch nicht beschrieben."
-  },
-  {
-   "name": "Allianz – AltersvorsorgeVertrag InvestFlex80 (006633)",
-   "grund": "Zertifiziert, aber Garantieprodukt (80 %), kein Altersvorsorgedepot."
-  },
-  {
-   "name": "Justinian Versicherungs AG – TRA_AVV_80_2701 (006638)",
-   "grund": "Zertifiziertes 80-%-Garantieprodukt, kein Altersvorsorgedepot."
-  },
-  {
-   "name": "MetallRente – AltersvorsorgeDepot CHANCE (006641) und AltersvorsorgeVertrag CHANCE (006651)",
-   "grund": "Zertifiziert, Versorgungswerk für bestimmte Branchen (Konsortium unter Führung der Allianz)."
-  },
-  {
-   "name": "Presse-Versorgung – AltersvorsorgeDepot InvestFlex (006636) und AltersvorsorgeVertrag InvestFlex80 (006637)",
-   "grund": "Zertifiziert, Versorgungswerk der Presse (Konsortium unter Führung der Allianz)."
-  },
-  {
-   "name": "Generali – Altersvorsorge-Konzept (006654, 006655)",
-   "grund": "Zertifiziert, Produktname in der Liste unvollständig, Angebot nicht geprüft."
-  },
-  {
-   "name": "Verband der Privaten Bausparkassen – Musterbedingungen A bis C (006650, 006652, 006653)",
-   "grund": "Zertifizierte Musterbedingungen für Bausparkassen, kein Altersvorsorgedepot."
-  }
- ]
+ "pruefungen": []
 }

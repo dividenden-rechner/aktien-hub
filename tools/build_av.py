@@ -137,7 +137,7 @@ CSS = """<style>
 .av-table .num{text-align:right;white-space:nowrap;min-width:96px}.av-table td.num b{font-weight:600;color:#065f46}.av-table td.num.offen b{color:#8a97a3;font-weight:500}
 .av-table td.w{min-width:260px;max-width:320px}
 .tool .av-table th,.tool .av-table td{border:0;border-bottom:1px solid #eef1f4}.tool .av-table tbody th{color:#33414d;background:#fff;text-align:left;font-weight:600}.tool .av-table thead th{color:#5b6874;background:#f6f8fa;text-align:left}.tool .av-table .num{text-align:right}.tool .av-table tbody tr:last-child th,.tool .av-table tbody tr:last-child td{border-bottom:0}.tool .av-rank tr.sel th,.tool .av-rank tr.sel td{background:#f1f9f4}.tool .av-rank tr.off th{color:#9aa5af}
-.av-jump{font-size:.88rem;margin:4px 0 14px;line-height:1.7}.av-jump a{white-space:nowrap}#anbieter,#aenderungen,#rechner,#rechtsstand{scroll-margin-top:72px}.av-anchor{display:block}.av-h3{font-size:1.05rem;margin:1.8rem 0 .2rem}.av-sub{font-size:.8rem;color:#6b7782;margin:4px 0 10px}
+.av-jump{font-size:.88rem;margin:-4px 0 14px}.av-h3{font-size:1.05rem;margin:1.8rem 0 .2rem}.av-sub{font-size:.8rem;color:#6b7782;margin:4px 0 10px}
 .av-rank{min-width:700px}.av-rank td.t{min-width:200px}.av-rank tr.sel td,.av-rank tr.sel th{background:#f1f9f4}.av-rank tr.off td,.av-rank tr.off th{color:#9aa5af}
 .av-rank th:first-child{min-width:220px}.av-rank .av-logo{width:22px;height:22px}.av-rank .dif.pos{color:#0f6b46}.av-rank .dif.neg{color:#b3372d}
 .tool .av-pick{padding:3px 10px;font-size:.78rem;font-weight:500;background:#fff;color:#33414d;border:1px solid #d5dce2;border-radius:6px}.tool .av-pick:hover{background:#f6f8fa}
@@ -147,7 +147,6 @@ CSS = """<style>
 .av-st{font-size:.78rem;white-space:nowrap}.av-st.s2{color:#8a6d1a}
 .av-h{color:#8a6d1a;font-size:.78rem;margin-top:4px}
 .av-sum{margin:14px 0}.av-sum li{margin:4px 0}
-.av-more{border-top:1px solid #e3e7ea;border-bottom:1px solid #e3e7ea;padding:8px 0;margin:14px 0}.av-more summary{cursor:pointer;font-weight:600;color:#1a7f4b}.av-wl{list-style:none;padding:0;margin:10px 0}.av-wl li{padding:6px 0;border-bottom:1px solid #f0f2f4;font-size:.9rem;line-height:1.45}.av-wl .av-id{display:inline-flex;gap:6px;align-items:center;margin-right:4px;vertical-align:middle}
 .sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)}
 @media(max-width:900px){.av-scroll-hint{display:block}.av-table th:first-child{min-width:140px;max-width:160px}.av-table thead th:first-child{white-space:normal}.av-table .num{min-width:84px}}
 </style>
@@ -167,28 +166,19 @@ if(fa)fa.addEventListener("change",filt);if(fk)fk.addEventListener("change",filt
 def rechts_text(D):
     q = D["quellen"]
     a = lambda k, t: f'<a href="{esc(q[k]["url"])}" target="_blank" rel="noopener nofollow">{esc(t)}</a>'
-    return f"""<h2 id="rechtsstand">Das gilt für alle Anbieter</h2>
+    return f"""<h2>Das gilt für alle Anbieter</h2>
 <ul>
 <li><strong>Start und Zertifizierung:</strong> Neue Verträge sind ab dem 1. Januar 2027 möglich. Das Altersvorsorgereformgesetz hat der Bundestag am 27. März 2026 beschlossen, der Bundesrat hat am 8. Mai 2026 zugestimmt, verkündet wurde es am 29. Mai 2026 ({a("bgbl", "BGBl. 2026 I Nr. 156")}). Jeder Vertrag braucht ein Zertifikat des Bundeszentralamts für Steuern.</li>
-<li><strong>Kein Zeitdruck:</strong> Für die Zulagen zählen die Beiträge eines Kalenderjahres. Wer erst im Laufe von 2027 abschließt und bis zum 31. Dezember 2027 einzahlt, bekommt die Förderung für 2027 trotzdem. Die Zulagen beantragt der Anbieter bei der Zentralen Zulagenstelle, gutgeschrieben werden sie im Folgejahr.</li>
-<li><strong>Wer gefördert wird:</strong> alle, die schon bei Riester förderberechtigt waren, vor allem rentenversicherungspflichtige Arbeitnehmer, Auszubildende und Beamte. Neu dazu kommen Selbstständige und Freiberufler, wenn sie für das Vorjahr eine Steuererklärung abgegeben haben, außerdem Pflichtmitglieder berufsständischer Versorgungswerke. Minijobber, die sich von der Rentenversicherungspflicht befreien lassen, sind nicht selbst förderberechtigt. Ehe- oder Lebenspartner ohne eigene Berechtigung werden mittelbar gefördert, wenn sie einen eigenen Vertrag mit mindestens 120 Euro Eigenbeitrag im Jahr haben; ihre Grundzulage ist auf 175 Euro begrenzt, der Berufseinsteiger-Bonus entfällt.</li>
-<li><strong>Förderung:</strong> Grundzulage 50 % der Beiträge bis 360 Euro und 25 % der Beiträge von 360,01 bis 1.800 Euro, zusammen höchstens 540 Euro im Jahr. Kinderzulage 100 % der Beiträge, höchstens 300 Euro je Kind. Wer zu Beginn des Beitragsjahres jünger als 25 ist, bekommt die Grundzulage einmalig um 200 Euro erhöht. Alle Zulagen gibt es nur bei mindestens 120 Euro Eigenbeitrag im Jahr. Für die volle Kinderzulage reichen 25 Euro im Monat.</li>
+<li><strong>Förderung:</strong> Grundzulage 50 % der Beiträge bis 360 Euro und 25 % der Beiträge von 360,01 bis 1.800 Euro, zusammen höchstens 540 Euro im Jahr. Kinderzulage 100 % der Beiträge, höchstens 300 Euro je Kind. Wer zu Beginn des Beitragsjahres jünger als 25 ist, bekommt die Grundzulage einmalig um 200 Euro erhöht. Alle Zulagen gibt es nur bei mindestens 120 Euro Eigenbeitrag im Jahr.</li>
 <li><strong>Beiträge:</strong> höchstens 6.840 Euro im Jahr je Vertrag, gefördert und als Sonderausgabe absetzbar sind bis zu 1.800 Euro plus Zulagen. Gefördert werden höchstens zwei Verträge nach neuem Recht, ab dem dritten zählen Beiträge nicht mehr als Altersvorsorgebeiträge.</li>
-<li><strong>Was ins Depot darf:</strong> ETFs und aktiv verwaltete Publikumsfonds bis zur Risikoklasse 5 von 7 beim Kauf, bestimmte offene Publikums-AIF und ELTIFs sowie Anleihen von Euro-Staaten, der EU und der Europäischen Investitionsbank. Breite Welt-Aktien-ETFs liegen meist in Klasse 4. Einzelaktien, Unternehmensanleihen, Kryptowährungen, Zertifikate und ETCs (etwa auf Gold) sind ausgeschlossen. Welche Fonds es konkret gibt, legt jeder Anbieter selbst fest.</li>
 <li><strong>Kosten:</strong> Das Standarddepot darf höchstens 1,0 % Effektivkosten im Jahr haben. Für frei gestaltete Depots und Garantieprodukte (80 oder 100 % der Beiträge und Zulagen) gibt es keinen Deckel.</li>
 <li><strong>Anbieterwechsel:</strong> In den ersten fünf Jahren nach Vertragsabschluss darf der bisherige Anbieter höchstens 150 Euro verlangen, danach ist die Übertragung kostenfrei. Der neue Anbieter darf eine einmalige Verwaltungspauschale von höchstens 150 Euro berechnen.</li>
 <li><strong>Standarddepot:</strong> zwei Fonds, einer der Risikoklasse 1 oder 2 und einer der Klassen 3 bis 5. Fünf Jahre vor Auszahlungsbeginn höchstens 50 %, zwei Jahre vorher höchstens 30 % im risikoreicheren Fonds, außer du verlangst eine andere Aufteilung.</li>
-<li><strong>Steuer:</strong> Beiträge bis 1.800 Euro plus Zulagen kannst du über die Anlage AV als Sonderausgaben angeben. Das Finanzamt prüft, ob das mehr bringt als die Zulagen, und erstattet nur den Unterschied. In der Ansparphase fallen keine Steuern auf Erträge und Umschichtungen an. Die Auszahlungen werden nachgelagert mit deinem persönlichen Steuersatz versteuert.</li>
-<li><strong>Vorzeitig ans Geld:</strong> Wer gefördertes Kapital vor dem Ruhestand für andere Zwecke entnimmt, muss Zulagen und Steuervorteile grundsätzlich zurückzahlen. Ausnahme ist selbst genutztes Wohneigentum, wenn der Vertrag das vorsieht.</li>
+<li><strong>Steuer:</strong> In der Ansparphase fallen keine Steuern auf Erträge an. Die Auszahlungen werden nachgelagert mit deinem persönlichen Steuersatz versteuert.</li>
 <li><strong>Auszahlung:</strong> frühestens ab 65, spätestens ab 70 (ohne Vereinbarung ab 65). Bis zu 30 % des Kapitals sind zu Beginn auf einmal möglich, der Rest als lebenslange Rente oder Auszahlungsplan mindestens bis 85.</li>
-<li><strong>Riester:</strong> Verträge, die bis 31.12.2026 abgeschlossen werden, laufen mit Bestandsschutz weiter. Neue Riester-Verträge gibt es ab 2027 nicht mehr. Bestehende Verträge kannst du mit alter Förderung weiterführen, zu gleichen Konditionen in die neue Förderung wechseln, beitragsfrei stellen und einen neuen Vertrag abschließen oder das Guthaben in einen neuen Vertrag übertragen; die bisherige Förderung musst du dabei nicht zurückzahlen, Kosten können aber anfallen. Alte und neue Förderung gehen nicht gleichzeitig, und der Wechsel in die neue Förderung gilt für alle Riester-Verträge und lässt sich nicht rückgängig machen.</li>
+<li><strong>Riester:</strong> Verträge, die bis 31.12.2026 abgeschlossen werden, laufen mit Bestandsschutz weiter. Neue Riester-Verträge gibt es ab 2027 nicht mehr.</li>
 <li><strong>Frühstartrente:</strong> 10 Euro im Monat vom Staat für Kinder von 6 bis 18 Jahren, angelegt in einem Standarddepot-Vertrag. Der Bundestag hat das Gesetz am 16. Oktober 2026 beschlossen ({a("fsr-bt", "Bundestag")}), der Bundesrat hat am 20. November 2026 zugestimmt ({a("fsr-br", "Handelsblatt")}). Die Verkündung im Bundesgesetzblatt stand bei dieser Prüfung noch aus.</li>
 </ul>"""
-
-
-def im_vergleich(p):
-    """In die Tabelle kommt nur, was zertifiziert, vom Anbieter online belegt und ein Depot (keine Garantie) ist."""
-    return bool(p.get("zertifikate")) and p["pruefstatus"] == "primary_verified" and p["art"] != "garantie"
 
 
 def main():
@@ -198,12 +188,8 @@ def main():
     flat, rows = [], []
     gruppen = {"befristet": [], "freiwillig": [], "laufend": [], "offen": []}
     n_anb = len(D["anbieter"])
-    weitere = []
     for a in D["anbieter"]:
         for p in a["produkte"]:
-            if not im_vergleich(p):
-                weitere.append((a, p))
-                continue
             i = len(flat)
             ks, ksf, kd, kdf, eur = kennzahlen(p)
             flat.append({"i": i, "id": p["id"], "n": a["name"], "p": p["name"], "d": a.get("domain", ""), "art": p["art"], "pr": p["pruefstatus"],
@@ -221,7 +207,7 @@ def main():
                     gruppen["laufend"].append(label)
             qs = " ".join(f'<a href="{esc(Q[k]["url"])}" target="_blank" rel="noopener nofollow">{esc(Q[k]["titel"].split(":")[0])}{", " + dmy(Q[k]["datum"]) if Q[k].get("datum") else ""}</a>' for k in p["quellen"])
             hin = " ".join(x for x in [p.get("hinweis", ""), a.get("hinweis", "")] if x)
-            zt = "<br>".join(f'Nr. {esc(z["nr"])}' for z in p["zertifikate"])
+            stl = PRUEF.get(p["pruefstatus"], p["pruefstatus"])
             rows.append(
                 f'<tr class="av-row" data-i="{i}" data-n="{esc(a["name"] + " " + p["name"])}" data-art="{p["art"]}" data-dau="{"" if kd is None else kd}" data-sta="{"" if ks is None else ks}">'
                 f'<th scope="row"><div class="av-id">{logo(a.get("domain"))}<span><span class="av-n">{esc(a["name"])}</span><small>{esc(p["name"])}</small></span></div></th>'
@@ -229,26 +215,8 @@ def main():
                 f'<td>{esc(ART.get(p["art"], p["art"]))}</td>'
                 f'<td class="w">{esc(p["kosten_text"])}' + (f'<div class="av-h">{esc(hin)}</div>' if hin else "") + '</td>'
                 f'<td class="w">{esc(p["depot_text"])}</td><td>{esc(p["auswahl_text"])}</td>'
-                f'<td class="av-st">{zt}</td></tr>')
+                f'<td class="av-st{" s2" if p["pruefstatus"] != "primary_verified" else ""}">{esc(stl)}</td><td class="av-q">{qs}</td></tr>')
     n_prod = len(flat)
-    n_anb_v = len({f["n"] for f in flat})
-    # weitere Anbieter für den aufklappbaren Bereich, je Anbieter eine Zeile
-    wa = {}
-    for a, p in weitere:
-        wa.setdefault(a["name"], []).append((a, p))
-    def grund(p):
-        if p["art"] == "garantie":
-            return "Garantieprodukt, kein Altersvorsorgedepot"
-        if p["pruefstatus"] != "primary_verified":
-            return "nur aus Presseberichten bekannt"
-        if not p.get("zertifikate"):
-            return "noch kein BZSt-Zertifikat"
-        return "noch nicht im Vergleich"
-    w_li = []
-    for name in sorted(wa, key=str.lower):
-        teile = "; ".join(f'{esc(p["name"])}: {esc(p["kosten_text"])} ({grund(p)})' for _, p in wa[name])
-        w_li.append(f'<li><span class="av-id">{logo(wa[name][0][0].get("domain"), 20)}<strong>{esc(name)}</strong></span> {teile}</li>')
-    w_zert = "".join(f'<li><strong>{esc(x["name"])}:</strong> {esc(x["grund"])}</li>' for x in D.get("weitere_zertifikate", []))
     n_bek = sum(1 for f in flat if f["kd"] is not None)
     li_g = lambda t, k: f"<li><strong>{t}:</strong> {esc(', '.join(gruppen[k]))}.</li>" if gruppen[k] else ""
     aend = "".join(f'<li>{dmy(x["datum"])}: {esc(x["text"])}</li>' for x in D.get("aenderungen", [])[:8])
@@ -256,26 +224,17 @@ def main():
     bm = D.get("marktbenchmark", {})
     bmq = Q.get(bm.get("quelle", ""), {})
     art_opts = "".join(f'<option value="{k}">{v}</option>' for k, v in ART.items())
-    body = f"""<nav class="av-jump" aria-label="Sprungmarken">Direkt zu: <a href="#anbieter">Zertifizierte Anbieter</a> · <a href="#rechner">Rechner: selbst durchrechnen</a> · <a href="#aenderungen">Letzte Änderungen ({dmy(D.get("aenderungen", [{}])[0].get("datum", D["stand"]))})</a> · <a href="#rechtsstand">Was für alle gilt</a></nav>
-<h2 id="anbieter">Zertifizierte Altersvorsorgedepots im Vergleich</h2>
-<p class="lead">Ab dem 1. Januar 2027 können Verträge für das geförderte Altersvorsorgedepot abgeschlossen werden. In der Tabelle stehen nur Depotmodelle, die das Bundeszentralamt für Steuern bereits zertifiziert hat und die der Anbieter auf seiner Website als Altersvorsorgedepot anbietet: derzeit {n_prod} Modelle von {n_anb_v} Anbietern. Viele Banken haben ein Depot angekündigt, aber noch kein Zertifikat. Sie stehen unter der Tabelle zum Aufklappen. Stand: {dmy(D["stand"])}.</p>
+    body = f"""<h2 id="anbieter">Altersvorsorgedepot Anbieter im Vergleich</h2>
+<p class="lead">Ab dem 1. Januar 2027 können Verträge für das geförderte Altersvorsorgedepot abgeschlossen werden. Wir haben {n_anb} Anbieter mit {n_prod} Depotmodellen bei den Anbietern selbst geprüft, für {n_bek} Modelle lassen sich die laufenden Kosten im zehnten Jahr aus Anbieterangaben bestimmen. Stand: {dmy(D["stand"])}.</p>
 <p class="note"><strong>Wichtig:</strong> {esc(D["hinweis"])} {esc(D.get("zertifizierung", ""))} Das ist keine Anlageberatung.</p>
 <div class="av-filter" role="group" aria-label="Filter"><label for="av-f-art">Depotart <select id="av-f-art"><option value="">Alle</option>{art_opts}</select></label><label><input type="checkbox" id="av-f-kosten"> Nur mit bekannten Kosten im 10. Jahr</label><span class="av-count" id="av-count" aria-live="polite"></span></div>
 <div class="av-tabs" id="avt" role="group" aria-label="Sortierung"><button type="button" class="av-tab" data-s="dau" aria-pressed="true">Kosten im 10. Jahr</button><button type="button" class="av-tab" data-s="sta" aria-pressed="false">Kosten zu Beginn</button><button type="button" class="av-tab" data-s="n" aria-pressed="false">A bis Z</button></div>
 <p class="av-scroll-hint">Tabelle seitlich scrollen für alle Spalten →</p>
-<div class="av-tablewrap" tabindex="0" role="region" aria-label="Anbietervergleich, seitlich scrollbar"><table class="av-table"><caption>Nur vom Bundeszentralamt für Steuern zertifizierte Altersvorsorgedepots. Laufende Kosten in Prozent pro Jahr bei Eröffnung im Januar 2027, ohne Order- und Sparplangebühren und Spreads. „max.“ = Obergrenze laut Anbieter, „ca.“ = ungefährer Wert, * = freiwillige Erstattung ohne Enddatum.</caption><thead><tr><th scope="col">Anbieter und Depotmodell</th><th scope="col" class="num">Kosten zu Beginn</th><th scope="col" class="num">Kosten im 10. Jahr</th><th scope="col">Art</th><th scope="col">Kosten im Detail</th><th scope="col">Depot und Orders</th><th scope="col">Anlage</th><th scope="col">BZSt-Zertifikat</th></tr></thead>
+<div class="av-tablewrap" tabindex="0" role="region" aria-label="Anbietervergleich, seitlich scrollbar"><table class="av-table"><caption>Laufende Kosten in Prozent pro Jahr bei Eröffnung im Januar 2027, ohne Order- und Sparplangebühren und Spreads. „max.“ = Obergrenze laut Anbieter, „ca.“ = ungefährer Wert, * = freiwillige Erstattung ohne Enddatum.</caption><thead><tr><th scope="col">Anbieter und Depotmodell</th><th scope="col" class="num">Kosten zu Beginn</th><th scope="col" class="num">Kosten im 10. Jahr</th><th scope="col">Art</th><th scope="col">Kosten im Detail</th><th scope="col">Depot und Orders</th><th scope="col">Anlage</th><th scope="col">Beleg</th><th scope="col">Quellen</th></tr></thead>
 <tbody id="avl">
 {chr(10).join(rows)}
 </tbody></table></div>
-<p class="av-sub">Sortierung nach Kosten ist keine Rangliste: Die Angaben umfassen meist nur Fonds- und Servicekosten, nicht die vollständigen Effektivkosten. Alle Kosten und Konditionen stammen direkt von den Anbietern (Produktseiten, Preis- und Leistungsverzeichnisse), die Zertifikatsnummern aus der Liste des Bundeszentralamts für Steuern (Stand {dmy(Q["bzst"]["abgerufen"])}).</p>
-<p>Die meisten Banken haben ihr Altersvorsorgedepot angekündigt, viele auch schon mit Preisen, etwa N26, ING, die Consorsbank, flatex, die Deka oder die Hannoversche. Zertifiziert ist ihr Produkt aber noch nicht, oder es steht in der BZSt-Liste noch nicht. Ohne Zertifikat darf kein Vertrag mit Förderung abgeschlossen werden. Sobald ein Zertifikat erscheint, nehmen wir das Modell in die Tabelle auf.</p>
-<details class="av-more"><summary>Alle weiteren Banken und Anbieter ({len(wa)})</summary>
-<ul class="av-wl">{"".join(w_li)}</ul>
-<p class="av-sub">Weitere Einträge in der BZSt-Liste mit Wirksamkeit ab 1.1.2027, die nicht in der Tabelle stehen:</p>
-<ul>{w_zert}</ul>
-<p class="av-sub">Geprüft, aber vom Anbieter nicht bestätigt:</p>
-<ul>{nicht}</ul>
-</details>
+<p class="av-sub">Sortierung nach Kosten ist keine Rangliste: Die Angaben umfassen meist nur Fonds- und Servicekosten, nicht die vollständigen Effektivkosten. „nur Presse“: Zahlen aus Presseberichten, vom Anbieter online nicht bestätigt, deshalb nicht im Rechner.</p>
 <h3 class="av-h3">Worauf es bei den Kosten ankommt</h3>
 <ul class="av-sum">
 {li_g("Erstattung zum Start, danach laufende Kosten", "befristet")}
@@ -283,16 +242,18 @@ def main():
 {li_g("Laufende Kosten ohne Erstattung", "laufend")}
 {li_g("Kosten noch nicht (vollständig) veröffentlicht", "offen")}
 </ul>
-<p><a href="#rechner"><strong>Zum Rechner</strong></a>: Dort kannst du die zertifizierten Modelle mit deinen Eingaben durchrechnen, auch mit späterem Vertragsbeginn. Wo die Kosten noch nicht veröffentlicht sind, rechnet der Rechner mit deiner eigenen Annahme.</p>
+<p>Im Rechner unten kannst du jedes Standarddepot mit deinen Eingaben durchrechnen, auch mit späterem Vertragsbeginn (wichtig etwa bei N26 und bei Erstattungen bis zu einem festen Datum).</p>
+<h3 class="av-h3">Geprüft, aber nicht bestätigt</h3>
+<ul>{nicht}</ul>
 <p class="av-sub">{esc(bm.get("text", ""))} {f'<a href="{esc(bmq.get("url", ""))}" target="_blank" rel="noopener nofollow">Quelle</a>' if bmq else ""}</p>
-<h3 class="av-h3" id="aenderungen">Letzte Änderungen</h3>
+<h3 class="av-h3">Änderungsprotokoll</h3>
 <ul class="av-chg">{aend}</ul>
 {rechts_text(D)}
 <p class="note"><strong>Hinweis:</strong> Keine Anlageberatung. Angaben ohne Gewähr, die Konditionen können sich bis zum Start ändern. Maßgeblich sind die Vertragsunterlagen der Anbieter.</p>
 """
     data = json.dumps(flat, ensure_ascii=False, separators=(",", ":"))
     block = ("<!--av-start-->\n" + '<script type="application/json" id="av-data">' + data.replace("</", "<\\/") + "</script>\n" + CSS
-             + '<section id="anbieter-bereich">' + body + "</section>\n" + '<span id="rechner" class="av-anchor"></span>\n' + JS + "\n<!--av-end-->")
+             + '<section id="anbieter-bereich">' + body + "</section>\n" + JS + "\n<!--av-end-->")
     # alten Handblock oberhalb des Rechners entfernen (außerhalb der Markierung), Position merken
     m_old = re.search(r'<section id="anbieter-bereich">.*?</section>\s*(?=<!--calc-start-->)', page, flags=re.S)
     page = re.sub(r"<!--av-start-->.*?<!--av-end-->\n?", "", page, flags=re.S)
@@ -305,14 +266,14 @@ def main():
         raise SystemExit("Einfügestelle nicht gefunden")
     assert page.count('id="anbieter-bereich"') == 1 and page.count('id="av-data"') == 1
     title = "Altersvorsorgedepot-Rechner und Anbieter im Vergleich 2027"
-    desc = (f"Altersvorsorgedepot berechnen: Zulagen, Depotwert und Auszahlung, dazu die vom BZSt zertifizierten Depotmodelle im Vergleich "
-            "(Trade Republic, Scalable, Allianz, ERGO) und alle angekündigten Anbieter mit Kosten.")
+    desc = (f"Altersvorsorgedepot berechnen: Zulagen, Depotwert und Auszahlung, dazu {n_anb} Anbieter mit {n_prod} Depotmodellen im Vergleich "
+            "(N26, Trade Republic, Scalable, ING, Deka, Consorsbank) mit zeitabhängigen Kosten und Quellen.")
     page = re.sub(r"<title>.*?</title>", "<title>" + title + "</title>", page, count=1)
     page = re.sub(r'(<meta name="description" content=")[^"]*', lambda m: m.group(1) + desc, page, count=1)
     page = re.sub(r'(<meta property="og:title" content=")[^"]*', lambda m: m.group(1) + title, page, count=1)
     page = re.sub(r'(<meta property="og:description" content=")[^"]*', lambda m: m.group(1) + desc, page, count=1)
     open(PAGE, "w", encoding="utf-8").write(page)
-    print("ok", n_prod, "zertifizierte Modelle im Vergleich,", len(weitere), "weitere,", n_bek, "mit bekannten Kosten im 10. Jahr")
+    print("ok", n_anb, "Anbieter,", n_prod, "Depotmodelle,", n_bek, "mit bekannten Kosten im 10. Jahr")
 
 
 if __name__ == "__main__":

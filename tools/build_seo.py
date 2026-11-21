@@ -225,7 +225,7 @@ C["dividenden-reinvestieren"] = dict(
 C["altersvorsorgedepot"] = dict(
     name="Altersvorsorge-Depot", crumb="Altersvorsorge-Depot",
     title="Altersvorsorgedepot-Rechner und Anbieter im Vergleich 2027 | Dividenden-Rechner",
-    desc="Altersvorsorgedepot berechnen: Zulagen, Depotwert und Auszahlung im Vergleich zum ETF-Sparplan, dazu die vom BZSt zertifizierten Depotmodelle (Trade Republic, Scalable, Allianz, ERGO) und alle angekündigten Anbieter.",
+    desc="Altersvorsorgedepot berechnen: Zulagen, Depotwert und Auszahlung im Vergleich zum ETF-Sparplan, dazu die Anbieter 2027 mit zeitabhängigen Kosten (N26, Trade Republic, Scalable, ING, Deka, Consorsbank).",
     intro="Das Altersvorsorgedepot löst ab 2027 die Riester-Rente ab. Der Rechner zeigt Depotwert, Zulagen und Auszahlung und stellt einen ETF-Sparplan ohne Förderung daneben. Darüber findest du die Anbieter mit ihren Depotmodellen, Kosten und Quellen.",
     sections=[
         ("Rechenbeispiel mit den Voreinstellungen", """<p>Du bist 30, zahlst 150 Euro im Monat ein, die Auszahlung beginnt mit 67 und läuft bis 85. Das Depot erzielt 6 Prozent vor Kosten, die Kosten liegen bei 1,0 Prozent im Jahr (gesetzliche Obergrenze für das Standarddepot), in der Auszahlphase sind es 3 Prozent, dein Steuersatz im Alter beträgt 20 Prozent.</p>
