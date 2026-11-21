@@ -5,7 +5,7 @@ date: 2026-11-21 17:30
 author: "Kilian Treß"
 category: Analyse
 image: https://images.unsplash.com/photo-1763872867598-b1b5f769d7e3?ixid=M3wxMTE3OTgzfDB8MXxzZWFyY2h8Mnx8cGF5Y2hlY2slMjBkb2N1bWVudHN8ZW58MXwwfHx8MTc5NTI3NjkwOHww&ixlib=rb-4.1.0&w=1600&h=900&fit=crop&crop=entropy&q=80&fm=jpg
-image_alt: "Foto zu ADP: A close-up, high-resolution image of a blank check with a security pattern, showing the dollar sign box and part of the “DOLLARS” line. A metallic ballpoint pen rests near the writing area."
+image_alt: "Blanko-Scheck mit Kugelschreiber"
 image_credit: "Foto: Money Knack auf Unsplash"
 image_source: https://unsplash.com/photos/pen-poised-over-a-check-ready-to-write-E0sZxhBH8Ck?utm_source=dividenden-rechner&utm_medium=referral
 image_artist_url: https://unsplash.com/@moneyknack?utm_source=dividenden-rechner&utm_medium=referral
