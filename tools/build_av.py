@@ -116,6 +116,12 @@ def logo(domain, size=28):
 
 
 CSS = """<style>
+.sharebar{display:flex;flex-wrap:wrap;align-items:center;gap:6px;margin:0 0 18px}.sharelab{display:none}
+.sharebtn{display:inline-flex;align-items:center;justify-content:center;width:38px;height:38px;color:#1a7f4b;background:#fff;border:1px solid #bfe0cd;border-radius:50%;padding:0;cursor:pointer;text-decoration:none}
+.sharebtn svg{width:18px;height:18px;fill:currentColor}.sharebtn:hover{background:#f0f8f3}.sharemsg{font-size:.85rem;color:#1a7f4b}
+
+.av-cover{margin:0 0 18px}.av-cover img{display:block;width:100%;height:auto;aspect-ratio:16/9;object-fit:cover;border-radius:12px}.av-cover figcaption{font-size:.75rem;color:#8a96a0;margin-top:5px}.av-cover figcaption a{color:inherit}
+
 .tool .form-container.av-top{align-items:start}.tool .form-container.av-top .form-group{justify-content:flex-start}
 .tool .form-container.av-top .form-group>label{min-height:1.5em}.tool .form-container.av-top .hint[id$="-hint"]{line-height:1.45;min-height:2.9em;margin-top:4px}
 
@@ -196,7 +202,33 @@ def rechts_text(D):
 
 
 ERKL = os.path.join(ROOT, "data", "av-rechner-erklaerung.html")
-RJS_V = "20261121c"  # bei Änderungen an assets/rechner.js hochzählen
+RJS_V = "20261121c"
+BASE = "https://dividenden-rechner.github.io/aktien-hub/"
+BILD = "assets/share/altersvorsorgedepot-2027.jpg"  # Aufmacher und Teilen-Bild, 1200x675
+BILD_ALT = "Familie hält sich bei Sonnenuntergang an den Händen, Silhouetten vor dem Meer"
+BILD_CREDIT = ("Mike Scheid", "https://unsplash.com/@mscheid")
+ICONS = os.path.join(ROOT, "data", "share-icons.json")
+
+
+def sharebar(url, titel, text):
+    """Teilen-Leiste wie in den Artikeln (ohne Instagram-Story)."""
+    from urllib.parse import quote
+    ic = json.load(open(ICONS, encoding="utf-8"))
+    u, t = quote(url, safe=":/"), quote(titel)
+    ziele = [("threads", f"https://www.threads.com/intent/post?text={t}%20{u}", "Auf Threads teilen"),
+             ("x", f"https://twitter.com/intent/tweet?text={t}%0A%0A%23Altersvorsorgedepot%20%23Altersvorsorge&amp;url={u}", "Auf X teilen"),
+             ("facebook", f"https://www.facebook.com/sharer/sharer.php?u={u}", "Auf Facebook teilen"),
+             ("linkedin", f"https://www.linkedin.com/sharing/share-offsite/?url={u}", "Auf LinkedIn teilen"),
+             ("whatsapp", f"https://wa.me/?text={t}%20{u}", "Per WhatsApp senden"),
+             ("telegram", f"https://t.me/share/url?url={u}&amp;text={t}", "Per Telegram senden"),
+             ("mail", f"mailto:?subject={t}&amp;body={quote(text)}%0A%0A{u}", "Per E-Mail senden")]
+    a = "".join(f'<a class="sharebtn {k}" href="{h}" target="_blank" rel="noopener nofollow" title="{l}" aria-label="{l}">{ic[k]}</a>' for k, h, l in ziele)
+    cp = f'<button type="button" class="sharebtn" id="av-cp" title="Link kopieren" aria-label="Link kopieren">{ic["copy"]}</button><span class="sharemsg" id="av-cpmsg" role="status"></span>'
+    js = ('<script>(function(){var b=document.getElementById("av-cp"),m=document.getElementById("av-cpmsg");if(!b)return;b.addEventListener("click",function(){var u=location.href.split("#")[0];'
+          'function ok(){if(m){m.textContent="Link kopiert";setTimeout(function(){m.textContent=""},2500)}}'
+          'if(navigator.clipboard&&navigator.clipboard.writeText)navigator.clipboard.writeText(u).then(ok,function(){prompt("Link kopieren:",u)});else prompt("Link kopieren:",u)})})();</script>')
+    return f'<div class="sharebar" id="teilen" data-url="{esc(url)}"><span class="sharelab">Teilen</span>{a}{cp}</div>{js}'
+  # bei Änderungen an assets/rechner.js hochzählen
 
 
 def ohne_kommentar(t):
@@ -287,6 +319,8 @@ def main():
     li_g = lambda t, k: f"<p><strong>{t}:</strong> {esc(', '.join(gruppen[k]))}.</p>" if gruppen[k] else ""
     kopf = f"""<h1 class="av-title">Altersvorsorgedepot 2027: {n_anb_t} Anbieter im Vergleich</h1>
 <p class="av-teaser">Ab Januar legt der Staat bis zu 540 Euro im Jahr auf deine Altersvorsorge, für jedes Kind 300 Euro mehr. Wie viel davon bis zur Rente übrig bleibt, entscheiden die Kosten des Anbieters. Hier siehst du, was Banken, Broker und Versicherer verlangen, und rechnest zwei Angebote direkt gegeneinander.</p>
+<figure class="av-cover"><img src="../{BILD}" alt="{esc(BILD_ALT)}" width="1200" height="675" fetchpriority="high"><figcaption>Foto: <a href="{BILD_CREDIT[1]}?utm_source=dividenden-rechner&amp;utm_medium=referral" rel="noopener nofollow" target="_blank">{esc(BILD_CREDIT[0])}</a> auf <a href="https://unsplash.com/?utm_source=dividenden-rechner&amp;utm_medium=referral" rel="noopener nofollow" target="_blank">Unsplash</a></figcaption></figure>
+{sharebar(BASE + "altersvorsorgedepot/", f"Altersvorsorgedepot 2027: {n_anb_t} Anbieter im Vergleich", "Kosten der Anbieter im Vergleich, mit Rechner für Zulagen, Depotwert und Auszahlung.")}
 <nav class="av-kurz" aria-label="Inhalt"><div class="av-kurz-t">Auf dieser Seite</div><ol>
 <li><a href="#anbieter">Alle Anbieter im Überblick</a><span>{n_prod} Depotmodelle mit bekannten Konditionen, Kosten heute und im zehnten Jahr</span></li>
 <li><a href="#h-altersvorsorgedepot">Dein Rechner</a><span>Zulagen, Depotwert und Auszahlung, zwei Anbieter im direkten Vergleich</span></li>
@@ -344,13 +378,30 @@ def main():
     page = umbau_ratgeber(page)
     assert page.count('id="anbieter-bereich"') == 1 and page.count('id="av-data"') == 1 and page.count('id="gut-zu-wissen"') == 1
     assert page.count("<h1") == 1, "genau eine h1"
-    title = "Altersvorsorgedepot-Rechner und Anbieter im Vergleich 2027"
-    desc = (f"Altersvorsorgedepot berechnen: Zulagen, Depotwert und Auszahlung, dazu {n_anb_t} Anbieter mit {n_prod} Depotmodellen im Vergleich "
-            "(N26, Trade Republic, Scalable, ING, Deka, Consorsbank) mit zeitabhängigen Kosten und Quellen.")
+    title = f"Altersvorsorgedepot 2027: {n_anb_t} Anbieter im Vergleich mit Rechner"
+    desc = (f"Was kostet das Altersvorsorgedepot? {n_prod} Depotmodelle von N26, Trade Republic, Scalable, ING, Deka und weiteren im Vergleich. "
+            "Mit Rechner für Zulagen, Depotwert und Auszahlung, zwei Anbieter direkt gegenübergestellt.")
     page = re.sub(r"<title>.*?</title>", "<title>" + title + "</title>", page, count=1)
     page = re.sub(r'(<meta name="description" content=")[^"]*', lambda m: m.group(1) + desc, page, count=1)
     page = re.sub(r'(<meta property="og:title" content=")[^"]*', lambda m: m.group(1) + title, page, count=1)
     page = re.sub(r'(<meta property="og:description" content=")[^"]*', lambda m: m.group(1) + desc, page, count=1)
+    # Teilen-Bild (Open Graph, Twitter, strukturierte Daten)
+    img = BASE + BILD
+    page = re.sub(r'(<meta property="og:image" content=")[^"]*', lambda m: m.group(1) + img, page, count=1)
+    page = re.sub(r'(<meta name="twitter:image" content=")[^"]*', lambda m: m.group(1) + img, page, count=1)
+    page = re.sub(r'\n<meta property="og:image:alt" content="[^"]*">', "", page)
+    page = page.replace('<meta property="og:image:height" content="675">', '<meta property="og:image:height" content="675">\n<meta property="og:image:alt" content="' + esc(BILD_ALT) + '">', 1)
+    for k, v in (("twitter:title", title), ("twitter:description", desc)):
+        page = re.sub(r'\n<meta name="' + k + '" content="[^"]*">', "", page)
+        page = page.replace('<meta name="twitter:card" content="summary_large_image">', '<meta name="twitter:card" content="summary_large_image">\n<meta name="' + k + '" content="' + esc(v) + '">', 1)
+    m = re.search(r'(<script type="application/ld\+json" id="seo-ld">)(.*?)(</script>)', page, flags=re.S)
+    if m:
+        ld = json.loads(m.group(2))
+        for g in ld.get("@graph", []):
+            if g.get("@type") == "WebApplication":
+                g["image"] = {"@type": "ImageObject", "url": img, "width": 1200, "height": 675, "creditText": BILD_CREDIT[0] + " / Unsplash"}
+                g["name"] = title
+        page = page[:m.start()] + m.group(1) + json.dumps(ld, ensure_ascii=False) + m.group(3) + page[m.end():]
     open(PAGE, "w", encoding="utf-8").write(page)
     print("ok", n_anb_t, "Anbieter,", n_prod, "Depotmodelle in der Tabelle,", n_ohne, "ohne Konditionen ausgeblendet,", n_bek, "mit bekannten Kosten im 10. Jahr")
 

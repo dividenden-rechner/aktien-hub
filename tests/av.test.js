@@ -161,3 +161,18 @@ test("Steuer und Auszahlung: nachgelagerte Besteuerung und ETF-Vergleich", () =>
   // Beispiel aus dem Ratgebertext der Seite (Voreinstellungen, 1,0 % Kosten)
   assert.equal(Math.round(r.wert), 241965);
 });
+
+test("Aufmacher, Teilen-Leiste und Open-Graph-Daten", () => {
+  const img = "assets/share/altersvorsorgedepot-2027.jpg";
+  assert.ok(fs.existsSync(path.join(ROOT, img)), "Bilddatei fehlt");
+  assert.match(PAGE, new RegExp('<figure class="av-cover"><img src="\\.\\./' + img.replace(/\./g, "\\.") + '"'));
+  assert.match(PAGE, /Foto: <a href="https:\/\/unsplash\.com\/@mscheid[^"]*"[^>]*>Mike Scheid<\/a> auf <a[^>]*>Unsplash<\/a>/);
+  for (const k of ['property="og:image"', 'name="twitter:image"']) assert.ok(PAGE.includes(`<meta ${k} content="https://dividenden-rechner.github.io/aktien-hub/${img}">`), k);
+  assert.match(PAGE, /<meta property="og:image:alt" content="[^"]+">/);
+  assert.match(PAGE, /<meta name="twitter:title" content="Altersvorsorgedepot 2027/);
+  const ld = JSON.parse(PAGE.match(/id="seo-ld">([\s\S]*?)<\/script>/)[1]);
+  assert.ok(ld["@graph"].some((g) => g.image && g.image.url.endsWith(img)));
+  const bar = PAGE.match(/<div class="sharebar" id="teilen"[\s\S]*?<\/div>/)[0];
+  for (const k of ["threads", "x", "facebook", "linkedin", "whatsapp", "telegram", "mail"]) assert.ok(bar.includes(`class="sharebtn ${k}"`), k);
+  assert.ok(bar.includes("altersvorsorgedepot%2F") || bar.includes("altersvorsorgedepot/"), "Seiten-URL im Teilen-Link");
+});
