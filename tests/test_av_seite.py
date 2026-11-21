@@ -173,13 +173,37 @@ class Browser(unittest.TestCase):
             const f = c.options.plugins.tooltip.callbacks.footer([{ dataIndex: c.data.labels.length - 1 }]);
             const lab = c.options.plugins.tooltip.callbacks.label({ dataset: lines[0], parsed: { y: lines[0].data.at(-1) } });
             return { n: lines.length, names: lines.map(d => d.label), last: lines.slice(0, 2).map(d => d.data.at(-1)), f, lab, cap: document.getElementById('av-chartcap').textContent }; }""")
-        self.assertEqual(info["n"], 3, "zwei Anbieterlinien plus Beiträge")
+        self.assertEqual(info["n"], 2, "je Anbieter eine Linie")
         self.assertIn("Scalable", info["names"][0]); self.assertIn("ING", info["names"][1])
         self.assertNotEqual(info["last"][0], info["last"][1], "Linien unterscheiden sich")
-        self.assertRegex(info["f"], r"Abstand: .* mehr bei (Scalable|ING)")
+        self.assertRegex(" ".join(info["f"]), r"Abstand: .* mehr bei (Scalable|ING)")
+        self.assertIn("Eingezahlt plus Zulagen", " ".join(info["f"]))
         self.assertIn("Scalable", info["lab"])
-        self.assertIn("Grüne Linie", info["cap"])
+        self.assertIn("Graue Balken", info["cap"])
+        bars = page.evaluate("Chart.getChart(document.getElementById('av-chart')).data.datasets.filter(d => d.type === 'bar').map(d => d.label)")
+        self.assertEqual(bars, ["Deine Einzahlungen", "Zulagen vom Staat"])
+        # Linien liegen über den Balken: Depotwert ist am Ende größer als Einzahlungen plus Zulagen
+        top = page.evaluate("(() => { const d = Chart.getChart(document.getElementById('av-chart')).data.datasets; return [d[0].data.at(-1) + d[1].data.at(-1), d[2].data.at(-1)] })()")
+        self.assertGreater(top[1], top[0])
+        # Anbieterwahl verschiebt die Auswahlfelder nicht
+        ya = page.evaluate("document.getElementById('av-prov').getBoundingClientRect().top")
+        yb = page.evaluate("document.getElementById('av-prov2').getBoundingClientRect().top")
+        page.select_option("#av-prov", "")
+        page.wait_for_timeout(200)
+        self.assertAlmostEqual(page.evaluate("document.getElementById('av-prov2').getBoundingClientRect().top"), yb, delta=1)
+        self.assertAlmostEqual(page.evaluate("document.getElementById('av-prov').getBoundingClientRect().top"), ya, delta=1)
         self.assertEqual(errors, [])
+        ctx.close()
+
+    def test_anbieterfelder_auf_gleicher_hoehe_desktop(self):
+        ctx, page, errors = self.open(1280, 900)
+        l = page.evaluate("JSON.parse(document.getElementById('av-data').textContent).map(p => p.id)")
+        page.select_option("#av-prov", str(l.index("quirion-standard") if "quirion-standard" in l else 0))
+        page.select_option("#av-prov2", str(l.index("oskar-standard") if "oskar-standard" in l else 1))
+        page.wait_for_timeout(200)
+        ya = page.evaluate("document.getElementById('av-prov').getBoundingClientRect().top")
+        yb = page.evaluate("document.getElementById('av-prov2').getBoundingClientRect().top")
+        self.assertAlmostEqual(ya, yb, delta=1)
         ctx.close()
 
     def test_filter_und_sortierung(self):

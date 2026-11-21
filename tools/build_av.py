@@ -116,6 +116,9 @@ def logo(domain, size=28):
 
 
 CSS = """<style>
+.tool .form-container.av-top{align-items:start}.tool .form-container.av-top .form-group{justify-content:flex-start}
+.tool .form-container.av-top .form-group>label{min-height:1.5em}.tool .form-container.av-top .hint[id$="-hint"]{line-height:1.45;min-height:2.9em;margin-top:4px}
+
 .av-title{font-size:clamp(1.55rem,4.6vw,2.1rem);line-height:1.2;margin:18px 0 10px}
 .av-teaser{font-size:1.06rem;line-height:1.6;color:#33414d;margin:0 0 16px}
 .av-kurz{background:#f0f8f3;border:1px solid #bfe0cd;border-left:5px solid #1a7f4b;border-radius:0 12px 12px 0;padding:14px 18px;margin:0 0 26px}
@@ -193,7 +196,7 @@ def rechts_text(D):
 
 
 ERKL = os.path.join(ROOT, "data", "av-rechner-erklaerung.html")
-RJS_V = "20261121b"  # bei Änderungen an assets/rechner.js hochzählen
+RJS_V = "20261121c"  # bei Änderungen an assets/rechner.js hochzählen
 
 
 def ohne_kommentar(t):
