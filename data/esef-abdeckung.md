@@ -1,4 +1,4 @@
-# ESEF-Jahreszahlen Europa: Abdeckung (Stand 2026-11-20)
+# ESEF-Jahreszahlen Europa: Abdeckung (Stand 2026-11-21)
 
 118 Firmen in der Liste, mit Jahreszahlen: **114**, davon mit Börsenkurs (ISIN): **110**.
 
