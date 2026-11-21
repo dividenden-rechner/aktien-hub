@@ -193,6 +193,7 @@ def rechts_text(D):
 
 
 ERKL = os.path.join(ROOT, "data", "av-rechner-erklaerung.html")
+RJS_V = "20261121b"  # bei Änderungen an assets/rechner.js hochzählen
 
 
 def ohne_kommentar(t):
@@ -334,6 +335,9 @@ def main():
     page = re.sub(r"<!--av2-start-->.*?<!--av2-end-->\n?", "", page, flags=re.S)
     page = page.replace("<!--calc-end-->\n", "<!--calc-end-->\n" + block2 + "\n", 1)
     page = umbau_rechner(page)
+    # Cache-Busting für die Rechenlogik dieser Seite
+    page = re.sub(r'src="\.\./assets/rechner\.js(?:\?v=[^"]*)?"', 'src="../assets/rechner.js?v=' + RJS_V + '"', page, count=1)
+    page = page.replace('aria-label="Zusammensetzung des Altersvorsorgedepots und ETF-Vergleich"', 'aria-label="Depotwert im Zeitverlauf, bei zwei Anbietern als Linien im Vergleich"')
     page = umbau_ratgeber(page)
     assert page.count('id="anbieter-bereich"') == 1 and page.count('id="av-data"') == 1 and page.count('id="gut-zu-wissen"') == 1
     assert page.count("<h1") == 1, "genau eine h1"
