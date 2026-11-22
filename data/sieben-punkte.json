@@ -47,6 +47,53 @@
    },
    "kurs_eur": 279.7,
    "stand": "2026-11-20"
+  },
+  {
+   "ticker": "TJX",
+   "name": "TJX Companies",
+   "datum": "2026-11-22",
+   "seite": "aktien-hub/?s=TJX",
+   "video": null,
+   "summe": 17,
+   "kriterien": {
+    "umsatz": {
+     "wert": 13.4,
+     "punkte": 3,
+     "feld": "umsatz_wachstum_5j"
+    },
+    "gewinn": {
+     "wert": 127.6,
+     "punkte": 3,
+     "feld": "gewinn_wachstum_5j"
+    },
+    "rendite": {
+     "wert": 1.29,
+     "punkte": 1,
+     "feld": "rendite"
+    },
+    "divwachstum": {
+     "wert": 45.6,
+     "punkte": 3,
+     "feld": "div_wachstum_5j"
+    },
+    "deckung": {
+     "wert": 33.0,
+     "punkte": 3,
+     "feld": "fcf_ausschuettung"
+    },
+    "schulden": {
+     "wert": -0.39,
+     "punkte": 3,
+     "feld": "nettoschulden_ebitda"
+    },
+    "bewertung": {
+     "wert": 3.72,
+     "punkte": 1,
+     "feld": "fcf_rendite"
+    }
+   },
+   "kurs_eur": 127.5,
+   "stand": "2026-11-20"
   }
  ]
 }
