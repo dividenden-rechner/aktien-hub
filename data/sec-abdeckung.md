@@ -1,4 +1,4 @@
-# SEC-Fundamentaldaten: Abdeckung (Stand 2026-11-20)
+# SEC-Fundamentaldaten: Abdeckung (Stand 2026-11-22)
 
 Firmen mit Daten: **601** von 604. Kernkennzahlen (Umsatz, Gewinn, EPS, Dividende je Aktie, operativer Cashflow) vollständig und aktuell: **552**.
 
