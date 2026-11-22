@@ -2781,6 +2781,20 @@
   "human_review": "pending"
  },
  {
+  "issuer_id": "SEC:CIK:1518561",
+  "cik": 1518561,
+  "name": "Agrion International Ltd",
+  "lei": null,
+  "sitz_sec_code": "A1",
+  "sitzland": "CA",
+  "sic": null,
+  "quellen": [
+   "sec_edgar"
+  ],
+  "verified": false,
+  "human_review": "pending"
+ },
+ {
   "issuer_id": "SEC:CIK:1519469",
   "cik": 1519469,
   "name": "ANFIELD ENERGY INC.",
@@ -4042,21 +4056,6 @@
   "cik": 1686000,
   "name": "Japan Gold Corp.",
   "lei": "52990032OJ8JW8RMRZ97",
-  "sitz_sec_code": "A1",
-  "sitzland": "CA",
-  "sic": null,
-  "quellen": [
-   "sec_edgar",
-   "gleif"
-  ],
-  "verified": false,
-  "human_review": "pending"
- },
- {
-  "issuer_id": "SEC:CIK:1689448",
-  "cik": 1689448,
-  "name": "Argentina Lithium & Energy Corp.",
-  "lei": "5299001CM8QY7E3RH446",
   "sitz_sec_code": "A1",
   "sitzland": "CA",
   "sic": null,
@@ -8877,6 +8876,20 @@
   "quellen": [
    "sec_edgar",
    "gleif"
+  ],
+  "verified": false,
+  "human_review": "pending"
+ },
+ {
+  "issuer_id": "SEC:CIK:2155396",
+  "cik": 2155396,
+  "name": "Brookfield Infrastructure Partners Inc.",
+  "lei": null,
+  "sitz_sec_code": "A1",
+  "sitzland": "CA",
+  "sic": "4923",
+  "quellen": [
+   "sec_edgar"
   ],
   "verified": false,
   "human_review": "pending"

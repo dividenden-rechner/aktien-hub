@@ -2101,6 +2101,17 @@
   "human_review": "pending"
  },
  {
+  "security_id": "SEC:CIK:1518561:STAMM",
+  "issuer_id": "SEC:CIK:1518561",
+  "isin": null,
+  "isin_methode": "kein_lei",
+  "isin_kandidaten": null,
+  "gattung": null,
+  "quellen": [],
+  "verified": false,
+  "human_review": "pending"
+ },
+ {
   "security_id": "SEC:CIK:1519469:STAMM",
   "issuer_id": "SEC:CIK:1519469",
   "isin": null,
@@ -3049,17 +3060,6 @@
  {
   "security_id": "SEC:CIK:1686000:STAMM",
   "issuer_id": "SEC:CIK:1686000",
-  "isin": null,
-  "isin_methode": "keine_aktien_isin_bei_gleif",
-  "isin_kandidaten": null,
-  "gattung": null,
-  "quellen": [],
-  "verified": false,
-  "human_review": "pending"
- },
- {
-  "security_id": "SEC:CIK:1689448:STAMM",
-  "issuer_id": "SEC:CIK:1689448",
   "isin": null,
   "isin_methode": "keine_aktien_isin_bei_gleif",
   "isin_kandidaten": null,
@@ -6692,6 +6692,17 @@
   "issuer_id": "SEC:CIK:2145424",
   "isin": null,
   "isin_methode": "keine_aktien_isin_bei_gleif",
+  "isin_kandidaten": null,
+  "gattung": null,
+  "quellen": [],
+  "verified": false,
+  "human_review": "pending"
+ },
+ {
+  "security_id": "SEC:CIK:2155396:STAMM",
+  "issuer_id": "SEC:CIK:2155396",
+  "isin": null,
+  "isin_methode": "kein_lei",
   "isin_kandidaten": null,
   "gattung": null,
   "quellen": [],

@@ -48137,6 +48137,30 @@
    "Mizrahi Tefahot Bank Ltd/ADR",
    "",
    ""
+  ],
+  "1518561": [
+   "A1",
+   "Agrion International Ltd",
+   "",
+   ""
+  ],
+  "2045873": [
+   "E9",
+   "BOUNDLESS GROUP",
+   "3827",
+   ""
+  ],
+  "2152975": [
+   "DE",
+   "Bitwise Zcash ETF",
+   "6221",
+   "CA"
+  ],
+  "2155396": [
+   "A1",
+   "Brookfield Infrastructure Partners Inc.",
+   "4923",
+   "NY"
   ]
  },
  "gleif": {
@@ -59727,6 +59751,14 @@
    "isins": []
   },
   "MX:1969373": {
+   "lei": null,
+   "isins": []
+  },
+  "CA:1518561": {
+   "lei": null,
+   "isins": []
+  },
+  "CA:2155396": {
    "lei": null,
    "isins": []
   }

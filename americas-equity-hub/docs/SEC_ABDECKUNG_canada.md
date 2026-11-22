@@ -1,6 +1,6 @@
-# SEC-Fundamentaldaten: Abdeckung (Stand 2026-11-20)
+# SEC-Fundamentaldaten: Abdeckung (Stand 2026-11-22)
 
-Firmen mit Daten: **265** von 609. Kernkennzahlen (Umsatz, Gewinn, EPS, Dividende je Aktie, operativer Cashflow) vollständig und aktuell: **163**.
+Firmen mit Daten: **265** von 610. Kernkennzahlen (Umsatz, Gewinn, EPS, Dividende je Aktie, operativer Cashflow) vollständig und aktuell: **163**.
 
 „Aktuell“ heißt: Wert für das letzte Geschäftsjahr der Firma vorhanden. Firmen ohne Dividende zählen bei der Dividende nicht als Lücke.
 
@@ -200,6 +200,7 @@ Nach IFRS (Auslandsfirmen, Beträge in Berichtswährung): 148. Dividende je Akti
 - APXC: keine Finanzdaten (CIK 2093856)
 - AUXX: Abruf fehlgeschlagen (HTTP Error 404: Not Found)
 - AYA: Abruf fehlgeschlagen (HTTP Error 404: Not Found)
+- BIP: Abruf fehlgeschlagen (HTTP Error 404: Not Found)
 - BMM: Abruf fehlgeschlagen (HTTP Error 404: Not Found)
 - BMMX: Abruf fehlgeschlagen (HTTP Error 404: Not Found)
 - BSRT: Abruf fehlgeschlagen (HTTP Error 404: Not Found)
@@ -267,6 +268,7 @@ Nach IFRS (Auslandsfirmen, Beträge in Berichtswährung): 148. Dividende je Akti
 - CIK1503812: Abruf fehlgeschlagen (HTTP Error 404: Not Found)
 - CIK1509397: Abruf fehlgeschlagen (HTTP Error 404: Not Found)
 - CIK1509705: Abruf fehlgeschlagen (HTTP Error 404: Not Found)
+- CIK1518561: Abruf fehlgeschlagen (HTTP Error 404: Not Found)
 - CIK1520556: Abruf fehlgeschlagen (HTTP Error 404: Not Found)
 - CIK1524326: Abruf fehlgeschlagen (HTTP Error 404: Not Found)
 - CIK1527038: Abruf fehlgeschlagen (HTTP Error 404: Not Found)
@@ -307,7 +309,6 @@ Nach IFRS (Auslandsfirmen, Beträge in Berichtswährung): 148. Dividende je Akti
 - CIK1684505: Abruf fehlgeschlagen (HTTP Error 404: Not Found)
 - CIK1684662: Abruf fehlgeschlagen (HTTP Error 404: Not Found)
 - CIK1686000: Abruf fehlgeschlagen (HTTP Error 404: Not Found)
-- CIK1689448: Abruf fehlgeschlagen (HTTP Error 404: Not Found)
 - CIK1691710: Abruf fehlgeschlagen (HTTP Error 404: Not Found)
 - CIK1703118: Abruf fehlgeschlagen (HTTP Error 404: Not Found)
 - CIK1703292: Abruf fehlgeschlagen (HTTP Error 404: Not Found)
@@ -490,7 +491,6 @@ Nach IFRS (Auslandsfirmen, Beträge in Berichtswährung): 148. Dividende je Akti
 - CIK2099818: Abruf fehlgeschlagen (HTTP Error 404: Not Found)
 - CIK2102593: Abruf fehlgeschlagen (HTTP Error 404: Not Found)
 - CIK2103596: Abruf fehlgeschlagen (HTTP Error 404: Not Found)
-- CIK2105038: keine Finanzdaten (CIK 2105038)
 - CIK2111453: keine Finanzdaten (CIK 2111453)
 - CIK2113853: Abruf fehlgeschlagen (HTTP Error 404: Not Found)
 - CIK2117702: Abruf fehlgeschlagen (HTTP Error 404: Not Found)
@@ -517,6 +517,7 @@ Nach IFRS (Auslandsfirmen, Beträge in Berichtswährung): 148. Dividende je Akti
 - CIK923883: Abruf fehlgeschlagen (HTTP Error 404: Not Found)
 - CIK936801: Abruf fehlgeschlagen (HTTP Error 404: Not Found)
 - CIK942149: Abruf fehlgeschlagen (HTTP Error 404: Not Found)
+- CZZL: keine Finanzdaten (CIK 2105038)
 - DETX: keine Finanzdaten (CIK 1919776)
 - FRTT: keine Finanzdaten (CIK 2092967)
 - GFUZ: keine Jahreswerte

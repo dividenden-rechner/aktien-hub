@@ -763,6 +763,10 @@
   1518419,
   "Quarterhill Inc."
  ],
+ "CIK1518561": [
+  1518561,
+  "Agrion International Ltd"
+ ],
  "AEC": [
   1519469,
   "ANFIELD ENERGY INC."
@@ -1110,10 +1114,6 @@
  "CIK1686000": [
   1686000,
   "Japan Gold Corp."
- ],
- "CIK1689448": [
-  1689448,
-  "Argentina Lithium & Energy Corp."
  ],
  "GOOS": [
   1690511,
@@ -2371,7 +2371,7 @@
   2103596,
   "Grafton Resources Inc."
  ],
- "CIK2105038": [
+ "CZZL": [
   2105038,
   "Cizzle Brands Corp"
  ],
@@ -2434,5 +2434,9 @@
  "CIK2145424": [
   2145424,
   "Phoenix Metals Corp."
+ ],
+ "BIP": [
+  2155396,
+  "Brookfield Infrastructure Partners Inc."
  ]
 }

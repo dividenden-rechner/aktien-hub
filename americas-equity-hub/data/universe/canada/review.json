@@ -1151,6 +1151,12 @@
   "kandidaten": null
  },
  {
+  "issuer_id": "SEC:CIK:1518561",
+  "name": "Agrion International Ltd",
+  "grund": "ISIN offen (kein_lei)",
+  "kandidaten": null
+ },
+ {
   "issuer_id": "SEC:CIK:1519469",
   "name": "ANFIELD ENERGY INC.",
   "grund": "ISIN offen (keine_aktien_isin_bei_gleif)",
@@ -1674,12 +1680,6 @@
  {
   "issuer_id": "SEC:CIK:1686000",
   "name": "Japan Gold Corp.",
-  "grund": "ISIN offen (keine_aktien_isin_bei_gleif)",
-  "kandidaten": null
- },
- {
-  "issuer_id": "SEC:CIK:1689448",
-  "name": "Argentina Lithium & Energy Corp.",
   "grund": "ISIN offen (keine_aktien_isin_bei_gleif)",
   "kandidaten": null
  },
@@ -3681,6 +3681,12 @@
   "issuer_id": "SEC:CIK:2145424",
   "name": "Phoenix Metals Corp.",
   "grund": "ISIN offen (keine_aktien_isin_bei_gleif)",
+  "kandidaten": null
+ },
+ {
+  "issuer_id": "SEC:CIK:2155396",
+  "name": "Brookfield Infrastructure Partners Inc.",
+  "grund": "ISIN offen (kein_lei)",
   "kandidaten": null
  }
 ]

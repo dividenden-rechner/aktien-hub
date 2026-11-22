@@ -1,4 +1,4 @@
-# Quellen und Nutzungsrechte (Stand 2026-11-20)
+# Quellen und Nutzungsrechte (Stand 2026-11-22)
 
 Keine Rechtsberatung. `unknown` ist nicht `allowed`. Export nur bei `allowed` für Speichern, öffentliche API und kommerzielle Nutzung.
 

@@ -1,4 +1,4 @@
-# Americas Aktien-Hub – tatsächliche Abdeckung (Stand 2026-11-20)
+# Americas Aktien-Hub – tatsächliche Abdeckung (Stand 2026-11-22)
 
 Nur Quellen, deren Nutzungsbedingungen Speicherung, öffentliche Ausgabe und kommerzielle Nutzung ausdrücklich erlauben (siehe RECHTE.md). Alle Datensätze `verified=false`, `human_review=pending`. Leere Felder = keine freigegebene Quelle.
 
@@ -13,8 +13,8 @@ Nur Quellen, deren Nutzungsbedingungen Speicherung, öffentliche Ausgabe und kom
 
 ## Kanada (SEC EDGAR + GLEIF)
 
-- Emittenten (Sitz CA laut SEC, mit SEC-Meldung): **609**, Wertpapiere 609, US-Notierungen 774
-- LEI (GLEIF, exakter Namensabgleich): **356**; ISIN (GLEIF, eindeutig): **0**; davon mit deutschem Börsenkurs: **0**
+- Emittenten (Sitz CA laut SEC, mit SEC-Meldung): **610**, Wertpapiere 610, US-Notierungen 775
+- LEI (GLEIF, exakter Namensabgleich): **355**; ISIN (GLEIF, eindeutig): **0**; davon mit deutschem Börsenkurs: **0**
 - Mit SEC-Jahreszahlen: **265**; Jahre 2010–2025 je Firma (Gewinn): 16 J.: 13, 15 J.: 8, 14 J.: 9, 13 J.: 4, 12 J.: 2, 11 J.: 8, 10 J.: 45, 9 J.: 11, 8 J.: 14, 7 J.: 18, 6 J.: 30, 5 J.: 24, 4 J.: 17, 3 J.: 30, 2 J.: 21, 1 J.: 10, 0 J.: 1
 - Heimatbörse (TSX/TSXV bzw. BMV/BIVA), Indexmitglieder, Kurs- und Dividendenhistorie: **nicht erfasst** (keine Quelle mit Freigabe)
 
