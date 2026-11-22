@@ -1,6 +1,15 @@
 {
- "updated": "2026-11-21T19:15:24.946508+00:00",
+ "updated": "2026-11-22T01:19:03.779248+00:00",
  "items": [
+  {
+   "sym": "005380.KS",
+   "name": "Hyundai Motor",
+   "title": "Hyundai Motor Group Shares Inside Look at Luc Donckerwolke’s Design Archive Exhibition in Seoul",
+   "link": "https://www.hyundai.com/worldwide/en/newsroom/detail/0000001307",
+   "date": "2026-11-22T23:30:00+00:00",
+   "text": "Held in Seoul from Nov. 24 to Dec. 11, Dreams that Resonate exhibition presents the creative journey of the Group’s Chief Design Officer and Chief Creative Officer Luc Donckerwolke\nFeatures rare archive material, including sketches, scale models, personal collections, photographs and original comics\nSpread across four floors at Sinsa House in Gangnam, the exhibition will be open to the public with free admission",
+   "quelle": "RSS"
+  },
   {
    "sym": "2269.HK",
    "name": "WuXi Biologics",
@@ -4338,25 +4347,16 @@
    "date": "2026-09-23T07:00:00+00:00",
    "text": "Once stripped of vegetation and scarred by some of the world’s most severe soil erosion, China’s Loess Plateau has undergone a remarkable ecological transformation. Professor Bojie Fu, one of the scientists who helped make that recovery possible, is the recipient of the 2026 Volvo Environment Prize.",
    "quelle": "RSS"
-  },
-  {
-   "sym": "FME.DE",
-   "name": "Fresenius Medical Care",
-   "title": "Statement Regarding Cybersecurity Incident",
-   "link": "https://freseniusmedicalcare.com/en/media/newsroom/statement-regarding-cybersecurity-incident/",
-   "date": "2026-09-23T00:33:00+00:00",
-   "text": "",
-   "quelle": "RSS"
   }
  ],
  "errors": [
   {
    "sym": "PEP",
-   "fehler": "HTTP Error 429: Too Many Requests"
+   "fehler": "HTTP Error 402: Payment Required"
   },
   {
    "sym": "PG",
-   "fehler": "HTTP Error 429: Too Many Requests"
+   "fehler": "HTTP Error 402: Payment Required"
   },
   {
    "sym": "LLY",
@@ -4368,15 +4368,15 @@
   },
   {
    "sym": "PFE",
-   "fehler": "HTTP Error 429: Too Many Requests"
+   "fehler": "HTTP Error 402: Payment Required"
   },
   {
    "sym": "MRK",
-   "fehler": "HTTP Error 429: Too Many Requests"
+   "fehler": "HTTP Error 402: Payment Required"
   },
   {
    "sym": "O",
-   "fehler": "HTTP Error 429: Too Many Requests"
+   "fehler": "HTTP Error 402: Payment Required"
   },
   {
    "sym": "V",
@@ -4384,23 +4384,23 @@
   },
   {
    "sym": "JPM",
-   "fehler": "HTTP Error 429: Too Many Requests"
+   "fehler": "HTTP Error 402: Payment Required"
   },
   {
    "sym": "CVX",
-   "fehler": "HTTP Error 429: Too Many Requests"
+   "fehler": "HTTP Error 402: Payment Required"
   },
   {
    "sym": "MCD",
-   "fehler": "HTTP Error 429: Too Many Requests"
+   "fehler": "HTTP Error 402: Payment Required"
   },
   {
    "sym": "HD",
-   "fehler": "HTTP Error 429: Too Many Requests"
+   "fehler": "HTTP Error 402: Payment Required"
   },
   {
    "sym": "TXN",
-   "fehler": "HTTP Error 429: Too Many Requests"
+   "fehler": "HTTP Error 402: Payment Required"
   },
   {
    "sym": "AVGO",
@@ -4408,7 +4408,7 @@
   },
   {
    "sym": "CSCO",
-   "fehler": "HTTP Error 429: Too Many Requests"
+   "fehler": "HTTP Error 402: Payment Required"
   },
   {
    "sym": "MDLZ",
@@ -4420,163 +4420,163 @@
   },
   {
    "sym": "GOOGL",
-   "fehler": "HTTP Error 429: Too Many Requests"
+   "fehler": "HTTP Error 402: Payment Required"
   },
   {
    "sym": "SIE.DE",
-   "fehler": "HTTP Error 429: Too Many Requests"
+   "fehler": "HTTP Error 402: Payment Required"
   },
   {
    "sym": "ALV.DE",
-   "fehler": "HTTP Error 429: Too Many Requests"
+   "fehler": "HTTP Error 402: Payment Required"
   },
   {
    "sym": "MBG.DE",
-   "fehler": "HTTP Error 429: Too Many Requests"
+   "fehler": "HTTP Error 402: Payment Required"
   },
   {
    "sym": "BMW.DE",
-   "fehler": "HTTP Error 429: Too Many Requests"
+   "fehler": "HTTP Error 402: Payment Required"
   },
   {
    "sym": "BAS.DE",
-   "fehler": "HTTP Error 429: Too Many Requests"
+   "fehler": "HTTP Error 402: Payment Required"
   },
   {
    "sym": "MUV2.DE",
-   "fehler": "HTTP Error 429: Too Many Requests"
+   "fehler": "HTTP Error 402: Payment Required"
   },
   {
    "sym": "DHL.DE",
-   "fehler": "HTTP Error 429: Too Many Requests"
+   "fehler": "HTTP Error 402: Payment Required"
   },
   {
    "sym": "ADS.DE",
-   "fehler": "HTTP Error 429: Too Many Requests"
+   "fehler": "HTTP Error 402: Payment Required"
   },
   {
    "sym": "RWE.DE",
-   "fehler": "HTTP Error 429: Too Many Requests"
+   "fehler": "HTTP Error 402: Payment Required"
   },
   {
    "sym": "EOAN.DE",
-   "fehler": "HTTP Error 429: Too Many Requests"
+   "fehler": "HTTP Error 402: Payment Required"
   },
   {
    "sym": "DBK.DE",
-   "fehler": "HTTP Error 429: Too Many Requests"
+   "fehler": "HTTP Error 402: Payment Required"
   },
   {
    "sym": "ASML.AS",
-   "fehler": "HTTP Error 429: Too Many Requests"
+   "fehler": "HTTP Error 402: Payment Required"
   },
   {
    "sym": "MC.PA",
-   "fehler": "HTTP Error 429: Too Many Requests"
+   "fehler": "HTTP Error 402: Payment Required"
   },
   {
    "sym": "OR.PA",
-   "fehler": "HTTP Error 429: Too Many Requests"
+   "fehler": "HTTP Error 402: Payment Required"
   },
   {
    "sym": "TTE.PA",
-   "fehler": "HTTP Error 429: Too Many Requests"
+   "fehler": "HTTP Error 402: Payment Required"
   },
   {
    "sym": "SAN.PA",
-   "fehler": "HTTP Error 429: Too Many Requests"
+   "fehler": "HTTP Error 402: Payment Required"
   },
   {
    "sym": "SU.PA",
-   "fehler": "HTTP Error 429: Too Many Requests"
+   "fehler": "HTTP Error 402: Payment Required"
   },
   {
    "sym": "NESN.SW",
-   "fehler": "HTTP Error 429: Too Many Requests"
+   "fehler": "HTTP Error 402: Payment Required"
   },
   {
    "sym": "NOVN.SW",
-   "fehler": "HTTP Error 429: Too Many Requests"
+   "fehler": "HTTP Error 402: Payment Required"
   },
   {
    "sym": "ROG.SW",
-   "fehler": "HTTP Error 429: Too Many Requests"
+   "fehler": "HTTP Error 402: Payment Required"
   },
   {
    "sym": "UBSG.SW",
-   "fehler": "HTTP Error 429: Too Many Requests"
+   "fehler": "HTTP Error 402: Payment Required"
   },
   {
    "sym": "NOVO-B.CO",
-   "fehler": "HTTP Error 429: Too Many Requests"
+   "fehler": "HTTP Error 402: Payment Required"
   },
   {
    "sym": "ULVR.L",
-   "fehler": "HTTP Error 429: Too Many Requests"
+   "fehler": "HTTP Error 402: Payment Required"
   },
   {
    "sym": "SHEL.L",
-   "fehler": "HTTP Error 429: Too Many Requests"
+   "fehler": "HTTP Error 402: Payment Required"
   },
   {
    "sym": "AZN.L",
-   "fehler": "HTTP Error 429: Too Many Requests"
+   "fehler": "HTTP Error 402: Payment Required"
   },
   {
    "sym": "BP.L",
-   "fehler": "HTTP Error 429: Too Many Requests"
+   "fehler": "HTTP Error 402: Payment Required"
   },
   {
    "sym": "ENEL.MI",
-   "fehler": "HTTP Error 429: Too Many Requests"
+   "fehler": "HTTP Error 402: Payment Required"
   },
   {
    "sym": "ISP.MI",
-   "fehler": "HTTP Error 429: Too Many Requests"
+   "fehler": "HTTP Error 402: Payment Required"
   },
   {
    "sym": "IBE.MC",
-   "fehler": "HTTP Error 429: Too Many Requests"
+   "fehler": "HTTP Error 402: Payment Required"
   },
   {
    "sym": "TSM",
-   "fehler": "HTTP Error 429: Too Many Requests"
+   "fehler": "HTTP Error 402: Payment Required"
   },
   {
    "sym": "9988.HK",
-   "fehler": "HTTP Error 429: Too Many Requests"
+   "fehler": "HTTP Error 402: Payment Required"
   },
   {
    "sym": "0700.HK",
-   "fehler": "HTTP Error 429: Too Many Requests"
+   "fehler": "HTTP Error 402: Payment Required"
   },
   {
    "sym": "7203.T",
-   "fehler": "HTTP Error 429: Too Many Requests"
+   "fehler": "HTTP Error 402: Payment Required"
   },
   {
    "sym": "6758.T",
-   "fehler": "HTTP Error 429: Too Many Requests"
+   "fehler": "HTTP Error 402: Payment Required"
   },
   {
    "sym": "BHP.AX",
-   "fehler": "HTTP Error 429: Too Many Requests"
+   "fehler": "HTTP Error 402: Payment Required"
   },
   {
    "sym": "0027.HK",
-   "fehler": "HTTP Error 429: Too Many Requests"
+   "fehler": "HTTP Error 402: Payment Required"
   },
   {
    "sym": "RELIANCE.NS",
-   "fehler": "HTTP Error 429: Too Many Requests"
+   "fehler": "HTTP Error 402: Payment Required"
   },
   {
    "sym": "TATAMOTORS.NS",
-   "fehler": "HTTP Error 429: Too Many Requests"
+   "fehler": "HTTP Error 402: Payment Required"
   },
   {
    "sym": "HEI.DE",
-   "fehler": "HTTP Error 429: Too Many Requests"
+   "fehler": "HTTP Error 402: Payment Required"
   },
   {
    "sym": "FRE.DE",
@@ -4592,15 +4592,15 @@
   },
   {
    "sym": "HOLN.SW",
-   "fehler": "HTTP Error 429: Too Many Requests"
+   "fehler": "HTTP Error 402: Payment Required"
   },
   {
    "sym": "DGE.L",
-   "fehler": "HTTP Error 429: Too Many Requests"
+   "fehler": "HTTP Error 402: Payment Required"
   },
   {
    "sym": "REL.L",
-   "fehler": "HTTP Error 429: Too Many Requests"
+   "fehler": "HTTP Error 402: Payment Required"
   },
   {
    "sym": "AAL.L",
@@ -4608,7 +4608,7 @@
   },
   {
    "sym": "NOKIA.HE",
-   "fehler": "HTTP Error 429: Too Many Requests"
+   "fehler": "HTTP Error 402: Payment Required"
   },
   {
    "sym": "FRE.DE",
