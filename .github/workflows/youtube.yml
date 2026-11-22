@@ -1,0 +1,39 @@
+name: YouTube-Videos zuordnen
+on:
+  schedule:
+    - cron: "17 */2 * * *"
+  workflow_dispatch:
+permissions:
+  contents: write
+  actions: write
+concurrency:
+  group: youtube
+  cancel-in-progress: false
+jobs:
+  youtube:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install markdown
+      - name: Neue Videos holen und zuordnen
+        run: python3 tools/youtube_videos.py
+      - name: Rangliste neu bauen
+        run: python3 tools/sieben_punkte.py
+      - name: Speichern
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/youtube.json data/sieben-punkte-liste.json data/sieben-punkte.json fortgeschrittene/aktien-checkliste content/magazin
+          if git diff --cached --quiet; then echo "Keine neuen Videos"; exit 0; fi
+          git commit -m "YouTube: neue Videos zugeordnet"
+          for i in 1 2 3; do git pull --rebase -q origin main && git push -q origin HEAD:main && break; sleep 5; done
+          echo "neu=1" >> "$GITHUB_OUTPUT"
+        id: speichern
+      - name: Artikel neu bauen
+        if: steps.speichern.outputs.neu == '1'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh workflow run magazin.yml --ref main

@@ -740,6 +740,17 @@ def build_post(p, posts, ordner="news"):
     img_url = absu(img)
     body = md_to_html(p["body_md"], depth)
     body = re.sub(r'<h2 id="quellen">Quellen</h2>\s*(<ul>.*?</ul>)', r'<details class="quellen"><summary>Quellen</summary>\1</details>', body, count=1, flags=re.S)
+    if p.get("youtube"):                               # Video vom eigenen YouTube-Kanal, lädt erst nach Klick (Datenschutz)
+        vid = html.escape(p["youtube"].strip())
+        yt = ('<figure class="yt-video" style="margin:1.4rem 0"><div data-yt="' + vid + '" style="position:relative;aspect-ratio:16/9;max-width:100%;'
+              'background:#0f1a14;border-radius:10px;display:flex;align-items:center;justify-content:center;flex-direction:column;gap:.6rem;color:#fff;text-align:center;padding:1rem">'
+              '<button type="button" onclick="var d=this.parentNode;d.innerHTML=\'<iframe src=&quot;https://www.youtube-nocookie.com/embed/\'+d.dataset.yt+\'?autoplay=1&quot; '
+              'title=&quot;Video&quot; allow=&quot;autoplay; encrypted-media; picture-in-picture&quot; allowfullscreen style=&quot;position:absolute;inset:0;width:100%;height:100%;border:0;border-radius:10px&quot;></iframe>\'" '
+              'style="font:600 1rem/1 inherit;background:#2f9e5b;color:#fff;border:0;border-radius:999px;padding:.9rem 1.4rem;cursor:pointer">▶ Video abspielen</button>'
+              '<small style="opacity:.75;max-width:34rem">Beim Abspielen wird das Video von YouTube geladen. Dabei werden Daten an YouTube übertragen.</small></div>'
+              '<figcaption style="font-size:.85rem;color:#5d6b78;margin-top:.4rem">Das Video zum Artikel auf unserem YouTube-Kanal · '
+              '<a href="https://www.youtube.com/watch?v=' + vid + '" rel="noopener" target="_blank">Auf YouTube ansehen</a></figcaption></figure>')
+        body = re.sub(r"(<h2[ >])", yt + r"\1", body, count=1) if "<h2" in body else body + yt
     hits = glossar.analyse(p, body)                    # Stichworte -> Erklaerartikel
     body = glossar.verlinke(body, hits, pre)
     n_words = words(body); mins = max(1, round(n_words / 200))
