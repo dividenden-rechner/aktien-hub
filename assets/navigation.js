@@ -1,25 +1,27 @@
-/* Startanimation auf jeder Seite (einmal je Browser-Sitzung): Logo ploppt auf, dann zieht es in einer Bewegung nach links, waehrend der Schriftzug gleichzeitig nach rechts herausfaehrt. ?intro=1 erzwingt sie. */
+/* Startanimation nur auf der Startseite (einmal je Browser-Sitzung; auf Unterseiten aus, damit Rechner und Artikel sofort sichtbar sind): Logo ploppt auf, dann zieht es in einer Bewegung nach links, waehrend der Schriftzug gleichzeitig nach rechts herausfaehrt. ?intro=1 erzwingt sie. */
 (function () {
   try {
-    if (/[?&]intro=1/.test(location.search)) sessionStorage.removeItem("introSeen");
-    if (sessionStorage.getItem("introSeen") || document.getElementById("intro")) return;
+    var force = /[?&]intro=1/.test(location.search);
+    if (force) sessionStorage.removeItem("introSeen");
     var s = document.querySelector('script[src*="assets/navigation.js"]'); if (!s) return;
     var root = new URL(s.getAttribute("src").split("assets/navigation.js")[0] || "./", location.href).href;
+    var start = location.pathname.replace(/index\.html$/, "") === new URL(root).pathname;
+    if (!(force || start) || sessionStorage.getItem("introSeen") || document.getElementById("intro")) { var p0 = document.getElementById("intro-pre"); if (p0) p0.remove(); return; }
     var st = document.createElement("style");
-    st.textContent = "#intro{position:fixed;inset:0;z-index:99999;background:#fff;display:flex;align-items:center;justify-content:center;animation:intro-out .45s ease 2.6s forwards;cursor:pointer;font-family:Inter,system-ui,-apple-system,'Segoe UI',Roboto,sans-serif}#intro .in{display:flex;align-items:center}#intro img{width:92px;height:92px;display:block;flex:none;transform:scale(0);animation:intro-pop .7s cubic-bezier(.2,1.5,.4,1) .15s forwards;position:relative;z-index:2;background:#fff;border-radius:50%}#intro .nm{display:block;overflow:hidden;white-space:nowrap;width:0;animation:intro-grow 1s cubic-bezier(.45,0,.2,1) .8s forwards}#intro .nm b{display:inline-block;font-size:34px;font-weight:700;color:#14202b;padding-left:18px;line-height:1.3;transform:translateX(-100%);animation:intro-slide 1s cubic-bezier(.45,0,.2,1) .8s forwards}#intro .nm b i{font-style:normal;color:#2f9e5b;font-weight:600}@keyframes intro-pop{to{transform:scale(1)}}@keyframes intro-grow{to{width:var(--w,420px)}}@keyframes intro-slide{to{transform:translateX(0)}}@keyframes intro-out{to{opacity:0;visibility:hidden}}@media(max-width:420px){#intro img{width:64px;height:64px}#intro .nm b{font-size:17px;padding-left:9px}}";
+    st.textContent = "#intro{position:fixed;inset:0;z-index:99999;background:#fff;display:flex;align-items:center;justify-content:center;animation:intro-out .35s ease 2s forwards;cursor:pointer;font-family:Inter,system-ui,-apple-system,'Segoe UI',Roboto,sans-serif}#intro .in{display:flex;align-items:center;transform:translateX(var(--h,180px));animation:intro-move .85s cubic-bezier(.45,0,.2,1) .55s forwards;will-change:transform}#intro img{width:92px;height:92px;display:block;flex:none;transform:scale(0);animation:intro-pop .55s cubic-bezier(.2,1.5,.4,1) .1s forwards;position:relative;z-index:2;background:#fff;border-radius:50%}#intro .nm{display:block;overflow:hidden;white-space:nowrap}#intro .nm b{display:inline-block;font-size:34px;font-weight:700;color:#14202b;padding-left:18px;line-height:1.3;transform:translateX(-100%);animation:intro-slide .85s cubic-bezier(.45,0,.2,1) .55s forwards;will-change:transform}#intro .nm b i{font-style:normal;color:#2f9e5b;font-weight:600}@keyframes intro-pop{to{transform:scale(1)}}@keyframes intro-move{to{transform:translateX(0)}}@keyframes intro-slide{to{transform:translateX(0)}}@keyframes intro-out{to{opacity:0;visibility:hidden}}@media(max-width:420px){#intro img{width:64px;height:64px}#intro .nm b{font-size:17px;padding-left:9px}}";
     document.head.appendChild(st);
     var el = document.createElement("div"); el.id = "intro"; el.setAttribute("aria-hidden", "true");
     el.innerHTML = '<div class="in"><img src="' + root + 'assets/logo-intro-v3.png" alt="" width="92" height="92"><span class="nm"><b>Dividenden-Rechner <i>Aktien-Hub</i></b></span></div>';
     document.body.insertBefore(el, document.body.firstChild);
-    // Zielbreite = tatsaechliche Breite des Schriftzugs, damit Wachsen und Herausfahren gleichzeitig enden (kein Nachruckeln)
-    var nm = el.querySelector(".nm"), nb = nm.querySelector("b");
-    function mess() { nm.style.setProperty("--w", Math.ceil(nb.offsetWidth) + 1 + "px"); }
+    // Logo startet in der Mitte: die ganze Zeile ist um die halbe Schriftbreite nach rechts versetzt und faehrt per transform zurueck
+    var inn = el.querySelector(".in"), nm = el.querySelector(".nm");
+    function mess() { inn.style.setProperty("--h", Math.round(nm.offsetWidth / 2) + "px"); }
     mess(); if (document.fonts && document.fonts.ready) document.fonts.ready.then(mess);
     var pre = document.getElementById("intro-pre"); if (pre) pre.remove();
     function fin() { var q = document.getElementById("intro-pre"); if (q) q.remove(); try { sessionStorage.setItem("introSeen", "1"); } catch (e) {} if (el.parentNode) el.parentNode.removeChild(el); if (st.parentNode) st.parentNode.removeChild(st); }
     el.addEventListener("click", fin);
     el.addEventListener("animationend", function (e) { if (e.animationName === "intro-out") fin(); });
-    setTimeout(fin, 4000);
+    setTimeout(fin, 3200);
   } catch (e) {}
 })();
 

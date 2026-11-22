@@ -394,7 +394,7 @@ def head(depth, title, desc, url, og_type, image_url, extra=""):
 <link rel="manifest" href="{p}manifest.webmanifest">
 </head>
 <body>
-<header id="hub-global-header"><div class="hub-nav-inner"><a class="hub-brand" href="{p}"><img class="hub-logo" src="{p}assets/logo.png" alt="" width="36" height="36"> <span class="hub-brand-name">Dividenden-Rechner <span>Aktien-Hub</span></span></a><nav class="hub-links" aria-label="Hauptmenü">'''
+<header id="hub-global-header"><div class="hub-nav-inner"><a class="hub-brand" href="{p}"><img class="hub-logo" src="{p}assets/logo-72.png" alt="" width="36" height="36"> <span class="hub-brand-name">Dividenden-Rechner <span>Aktien-Hub</span></span></a><nav class="hub-links" aria-label="Hauptmenü">'''
 
 def font(size, bold=True):
     for f in ("assets/fonts/Inter-Bold.otf" if bold else "assets/fonts/Inter-Regular.otf","/usr/share/fonts/opentype/inter/Inter-Bold.otf" if bold else "/usr/share/fonts/opentype/inter/Inter-Regular.otf",

@@ -1,5 +1,27 @@
 /* Rechner für dividenden-rechner / Aktien-Hub. Reines JavaScript, keine Datenabfragen, keine Cookies.
    Diagramme: Chart.js (lokal eingebunden, kein Aufruf an Drittserver). */
+/* Chart.js wird erst geladen, wenn ein Diagramm in die Nähe des sichtbaren Bereichs kommt (spart ~200 KB beim Seitenaufbau). */
+(function (w) {
+  if (typeof document === "undefined" || w.ladeChart) return;
+  var st = 0, wart = [], me = document.currentScript || document.querySelector('script[src*="assets/rechner.js"]');
+  var src = me ? me.src.replace(/rechner\.js(\?.*)?$/, "chart.umd.js") : "assets/chart.umd.js";
+  function laden() {
+    if (st) return; st = 1;
+    var sc = document.createElement("script"); sc.src = src; sc.async = true;
+    sc.onload = function () { st = 2; var q = wart; wart = []; q.forEach(function (f) { try { f(); } catch (e) {} }); };
+    document.head.appendChild(sc);
+  }
+  w.ladeChart = function (el, f) {
+    if (typeof w.Chart !== "undefined") { f(); return; }
+    wart.push(f);
+    if (st) return;
+    if (!("IntersectionObserver" in w)) { laden(); return; }
+    var io = new IntersectionObserver(function (es) { if (es.some(function (e) { return e.isIntersecting; })) { io.disconnect(); laden(); } }, { rootMargin: "800px 0px" });
+    io.observe(el);
+    // spätestens nach dem Laden der Seite im Leerlauf nachladen
+    w.addEventListener("load", function () { setTimeout(laden, 2500); });
+  };
+})(typeof window !== "undefined" ? window : this);
 (function (root) {
   "use strict";
 
@@ -109,9 +131,11 @@
   var charts = {};
   var GREEN = "#10b981", BLUE = "#2563eb", RED = "#ef4444", GREY = "#6b7280";
 
+  var offen1 = {};
   function draw(id, cfg) {
     var el = $(id);
-    if (!el || typeof Chart === "undefined") return;
+    if (!el) return;
+    if (typeof Chart === "undefined") { var neu = !offen1[id]; offen1[id] = cfg; if (neu && window.ladeChart) window.ladeChart(el, function () { var c = offen1[id]; delete offen1[id]; draw(id, c); }); return; }
     if (charts[id]) charts[id].destroy();
     cfg.options = cfg.options || {};
     cfg.options.responsive = true;
@@ -574,8 +598,10 @@
   var set = function (id, t) { var e = $(id); if (e) e.textContent = t; };
   var GREEN = "#10b981", BLUE = "#2563eb", RED = "#ef4444", GREY = "#6b7280", AMBER = "#f59e0b";
   var charts = {};
+  var offen2 = {};
   function draw(id, cfg) {
-    var el = $(id); if (!el || typeof Chart === "undefined") return;
+    var el = $(id); if (!el) return;
+    if (typeof Chart === "undefined") { var neu = !offen2[id]; offen2[id] = cfg; if (neu && window.ladeChart) window.ladeChart(el, function () { var c = offen2[id]; delete offen2[id]; draw(id, c); }); return; }
     if (charts[id]) charts[id].destroy();
     cfg.options = cfg.options || {}; cfg.options.responsive = true; cfg.options.maintainAspectRatio = false;
     charts[id] = new Chart(el.getContext("2d"), cfg);
