@@ -1,7 +1,15 @@
 {
  "hub": "HAG.DE",
  "name": "Hensoldt AG",
- "stand": "2026-11-21",
+ "stand": "2026-11-22",
  "quelle": "Google News (Wirtschaftsmedien, deutsch und englisch)",
- "meldungen": []
+ "meldungen": [
+  {
+   "titel": "Hensoldt targets €10 billion annual revenue by 2035",
+   "quelle": "Reuters",
+   "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxOYjR3c3IzOXdzRFY2aDFaUHpUWkd1SmNtVkMtUldLTXNZR2NvQ0RiSFdjQ3FldXBtbWI4Ri1QdW1ybEpzUU85cWwteHpNamM5dmVYbDJjYzRxYnkzMm1JSGdreC1KUzJyVkpGLUlPaUR2VDVLRE54ZEZLSGZSSjM4X2NyTnZsUWxaVmVyUWRsRWJIRFRSeTdwZFdEZHhIQV90a3BmcVlCMXhnUlJvOXhJU1FEZw?oc=5",
+   "datum": "2026-11-09",
+   "sprache": "en"
+  }
+ ]
 }

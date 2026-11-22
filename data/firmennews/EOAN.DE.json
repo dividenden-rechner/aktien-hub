@@ -1,9 +1,16 @@
 {
  "hub": "EOAN.DE",
  "name": "E.ON",
- "stand": "2026-11-21",
+ "stand": "2026-11-22",
  "quelle": "Google News (Wirtschaftsmedien, deutsch und englisch)",
  "meldungen": [
+  {
+   "titel": "Aktie von E.On: Höhere Dividende und Sparprogramm als Kurstreiber",
+   "quelle": "WirtschaftsWoche",
+   "link": "https://news.google.com/rss/articles/CBMitwFBVV95cUxPUTMwU01kZGdabi12RWlWVldsMWFBMEUyQ1NaSGRMdmFRM2tJM0JTLU1CdWdVeXU2aTRod3RLNEd4OXl0UEh4b2JSMnhGdjRRMldqdUdHSF82bmFmMU8wMmdnbTY1SjdQckJsVk9SNjdmZ3FxTW4yeG5Pbl9HYU5sY2R2SjlPVktJc2ZHcGFiQVpJaFI0QUtjUWpWWFpQSV8tMmhjS3dEWlNsYTRIaEpONEo4NkEyT2M?oc=5",
+   "datum": "2026-11-20",
+   "sprache": "de"
+  },
   {
    "titel": "E.ON-Aktie: Unternehmen schwächelt",
    "quelle": "WELT",
@@ -17,13 +24,6 @@
    "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxOTzhTSnUxMHBwN3A4NkdsYl9jN2ZYYVFxZm9ReVEybmJvWGZENUQ4UFpoWkZtd0NpSS1maHJKLWdJVmg2a1lGNTdoSWhqMzFxVHc5bGlPQW9nVzlVdkk2NjJTQTRRbUhIRnhrUXJhdTM1OTVHZzk2R2tNVnVBeXlJT1hZZkxhOUlEMEo3SHU2dThUbWNVQ055eWN2Qy0xVmZRekgzdFFmZ0paMFl5RTRZd2l2aGNldw?oc=5",
    "datum": "2026-11-13",
    "sprache": "en"
-  },
-  {
-   "titel": "E.ON-Aktie: Unternehmen gibt nach",
-   "quelle": "WELT",
-   "link": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxONElfTjhuS2Z3R250SkFYNm1DVkc2aGZiN2RqbVZ3bmIwY2lEVmZEaE1Fb1VTbkE3OWJMc0E5MnFHTG9Lb3ZrWkthWWg3amQtRXNackRmT3VIZnI4Z2ZKelphNkZoTG1DekVEQ042U0J2ZFY2WkpQcldKb0dkQjZ1cjdMY0dQZVlXNUp4SHBiaGRVNDBVMVJlQmxraXlmc0l5Tzh0UjNMa2I?oc=5",
-   "datum": "2026-11-11",
-   "sprache": "de"
   }
  ]
 }
