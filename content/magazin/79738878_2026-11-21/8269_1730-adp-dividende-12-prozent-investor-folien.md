@@ -10,6 +10,7 @@ image_credit: "Foto: Money Knack auf Unsplash"
 image_source: https://unsplash.com/photos/pen-poised-over-a-check-ready-to-write-E0sZxhBH8Ck?utm_source=dividenden-rechner&utm_medium=referral
 image_artist_url: https://unsplash.com/@moneyknack?utm_source=dividenden-rechner&utm_medium=referral
 logo_file: assets/logos/adp.png
+youtube: wR6y9UupS0E
 ---
 <!-- PRÜFEN: Dividende 1,70 → 1,90 $ je Quartal (+12 %), 52. Erhöhung in Folge, Stichtag 11.12.2026, Zahlung 01.01.2027, Zitat Maria Black: ADP-Mitteilung vom 11.11.2026 (finviz). Q1 FY27 und Prognose: 8-K Exhibit 99.1 vom 28.10.2026 (SEC). Folien 17, 19, 21, 23: ADP Investor Overview November 2026, von Divi geschickt. -->
 <!-- PRÜFEN: Hub-Daten (Screenshots von Divi, dividenden-rechner.de Aktien-Hub): Dividende je Aktie GJ 2017 bis 2026 2,24 → 6,64 $, Ausschüttungsquote 61 %, freier Cashflow 5,24 Mrd. $ (+10 %), vom freien Cashflow 50 % ausgeschüttet, Umsatz 21,95 Mrd. $ (+7 %), Nettogewinn 4,41 Mrd. $, Gewinn je Aktie 10,94 $ (+10 %), operative Marge 28 %, KGV 27,3, Nettoschulden 0,1× EBITDA, Rückkäufe 2,08 Mrd. $ (+63 %), Kurs Xetra 279,70 € am 20.11.2026 (+2,25 %). Selbst gerechnet: Dividendenwachstum 2017–2026 (9 Jahre) 12,8 % p. a.; Rendite mit neuer Jahresdividende 7,60 $ bei 279,70 € × 1,0968 (EZB 18.11.) = 306,77 $ → 2,5 %; Nasdaq −5 % am 20.11. aus unserem Nvidia-Artikel. -->
