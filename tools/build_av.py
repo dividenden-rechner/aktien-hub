@@ -202,7 +202,7 @@ def rechts_text(D):
 
 
 ERKL = os.path.join(ROOT, "data", "av-rechner-erklaerung.html")
-RJS_V = "20261121c"
+RJS_V = "20261122a"
 BASE = "https://dividenden-rechner.github.io/aktien-hub/"
 BILD = "assets/share/altersvorsorgedepot-2027.jpg"  # Aufmacher und Teilen-Bild, 1200x675
 BILD_ALT = "Familie hält sich bei Sonnenuntergang an den Händen, Silhouetten vor dem Meer"

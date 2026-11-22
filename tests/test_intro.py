@@ -24,8 +24,8 @@ MESSUNG = """() => new Promise(res => {
     (function tick() {
         const t = performance.now() - t0;
         out.push([t, img.getBoundingClientRect().left, b.getBoundingClientRect().right, nm.getBoundingClientRect().width]);
-        if (t < 2100) requestAnimationFrame(tick);
-        else res({out, w: b.offsetWidth, ziel: getComputedStyle(nm).getPropertyValue('--w'), aus: getComputedStyle(document.getElementById('intro')).animationDelay});
+        if (t < 1700) requestAnimationFrame(tick);
+        else res({out, w: b.offsetWidth, nmw: nm.getBoundingClientRect().width, aus: getComputedStyle(document.getElementById('intro')).animationDelay});
     })();
 })"""
 
@@ -67,11 +67,26 @@ class Startanimation(unittest.TestCase):
                 self.assertTrue(all(b <= a + 0.6 for a, b in zip(logo, logo[1:])), "Logo springt zurück nach rechts")
                 self.assertTrue(all(b >= a - 0.6 for a, b in zip(schrift, schrift[1:])), "Schriftzug fährt zwischendurch nach links")
                 self.assertLess(logo[-1], logo[0] - 20, "Logo zieht nach links")
-                # am Ende ist der Schriftzug ganz sichtbar und der Rahmen genau so breit
-                self.assertAlmostEqual(pts[-1][3], float(werte["ziel"].strip().rstrip("px")), delta=1.5)
-                self.assertGreaterEqual(pts[-1][3], werte["w"])
-                self.assertEqual(werte["aus"], "2.6s", "Ausblenden eine halbe Sekunde früher als vorher (3,1 s)")
+                # am Ende ist der Schriftzug ganz sichtbar
+                self.assertGreaterEqual(pts[-1][3] + 1, werte["w"])
+                self.assertEqual(werte["aus"], "2s", "Ausblenden nach 2 s")
                 ctx.close()
+
+    def test_nur_auf_der_startseite(self):
+        ctx = self.browser.new_context(viewport={"width": 390, "height": 844})
+        page = ctx.new_page()
+        page.goto(f"http://127.0.0.1:{self.port}/altersvorsorgedepot/")
+        page.wait_for_timeout(300)
+        self.assertEqual(page.evaluate("!!document.getElementById('intro') || !!document.getElementById('intro-pre')"), False, "keine Animation auf Unterseiten")
+        page.goto(f"http://127.0.0.1:{self.port}/")
+        page.wait_for_timeout(300)
+        self.assertTrue(page.evaluate("!!document.getElementById('intro')"), "Animation auf der Startseite")
+        ctx.close()
+
+    def test_animation_ohne_layout_animation(self):
+        js = open(os.path.join(ROOT, "assets", "navigation.js"), encoding="utf-8").read()
+        self.assertNotIn("intro-grow", js, "keine Breiten-Animation (Layout je Frame)")
+        self.assertIn("intro-move", js)
 
 
 if __name__ == "__main__":

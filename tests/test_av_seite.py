@@ -167,6 +167,8 @@ class Browser(unittest.TestCase):
             return [l.findIndex(p => p.id === 'sc-standard'), l.findIndex(p => p.id === 'ing-relax')]; }""")
         page.select_option("#av-prov", str(ia))
         page.select_option("#av-prov2", str(ib))
+        page.evaluate("document.getElementById('av-chart').scrollIntoView()")
+        page.wait_for_function("window.Chart && Chart.getChart(document.getElementById('av-chart'))", timeout=8000)
         page.wait_for_timeout(400)
         info = page.evaluate("""() => { const c = Chart.getChart(document.getElementById('av-chart'));
             const lines = c.data.datasets.filter(d => d.type === 'line');
@@ -186,12 +188,12 @@ class Browser(unittest.TestCase):
         top = page.evaluate("(() => { const d = Chart.getChart(document.getElementById('av-chart')).data.datasets; return [d[0].data.at(-1) + d[1].data.at(-1), d[2].data.at(-1)] })()")
         self.assertGreater(top[1], top[0])
         # Anbieterwahl verschiebt die Auswahlfelder nicht
-        ya = page.evaluate("document.getElementById('av-prov').getBoundingClientRect().top")
-        yb = page.evaluate("document.getElementById('av-prov2').getBoundingClientRect().top")
+        ya = page.evaluate("document.getElementById('av-prov').getBoundingClientRect().top + scrollY")
+        yb = page.evaluate("document.getElementById('av-prov2').getBoundingClientRect().top + scrollY")
         page.select_option("#av-prov", "")
         page.wait_for_timeout(200)
-        self.assertAlmostEqual(page.evaluate("document.getElementById('av-prov2').getBoundingClientRect().top"), yb, delta=1)
-        self.assertAlmostEqual(page.evaluate("document.getElementById('av-prov').getBoundingClientRect().top"), ya, delta=1)
+        self.assertAlmostEqual(page.evaluate("document.getElementById('av-prov2').getBoundingClientRect().top + scrollY"), yb, delta=1)
+        self.assertAlmostEqual(page.evaluate("document.getElementById('av-prov').getBoundingClientRect().top + scrollY"), ya, delta=1)
         self.assertEqual(errors, [])
         ctx.close()
 
@@ -201,8 +203,8 @@ class Browser(unittest.TestCase):
         page.select_option("#av-prov", str(l.index("quirion-standard") if "quirion-standard" in l else 0))
         page.select_option("#av-prov2", str(l.index("oskar-standard") if "oskar-standard" in l else 1))
         page.wait_for_timeout(200)
-        ya = page.evaluate("document.getElementById('av-prov').getBoundingClientRect().top")
-        yb = page.evaluate("document.getElementById('av-prov2').getBoundingClientRect().top")
+        ya = page.evaluate("document.getElementById('av-prov').getBoundingClientRect().top + scrollY")
+        yb = page.evaluate("document.getElementById('av-prov2').getBoundingClientRect().top + scrollY")
         self.assertAlmostEqual(ya, yb, delta=1)
         ctx.close()
 
