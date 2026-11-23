@@ -1,6 +1,6 @@
 ---
 title: "BHP und das Kupfer-Dilemma: Das Erz wird ärmer, die Minen teurer"
-description: "Weltweit sinkt der Kupfergehalt im Erz, neue Minen kosten dreimal so viel wie vor 20 Jahren. Die Investorenfolien der BHP-Standortbesichtigung zeigen, wie der Konzern in Südaustralien gegensteuert und was das für die Dividende heißt."
+description: "Weltweit sinkt der Kupfergehalt im Erz, neue Minen kosten dreimal so viel wie vor 20 Jahren. Wie BHP in Südaustralien mit Block Caving gegensteuert und was das für die Dividende heißt."
 date: 2026-11-23 07:25
 author: "Aus der Redaktion"
 category: Analyse
@@ -10,6 +10,7 @@ image_credit: "Foto: BHP"
 logo_file: assets/logos/bhp.png
 ---
 <!-- PRÜFEN: Foto von Divi geliefert (jimblebar_2020_108_lowres.jpg), Herkunft BHP-Pressematerial. Pressefoto, Nutzungsrechte vor Veröffentlichung bestätigen. Das Bild zeigt den Eisenerzbetrieb Jimblebar in Westaustralien, KEINE Kupfermine. Bildunterschrift ist entsprechend formuliert. -->
+<!-- PRÜFEN: Grafik Block Caving (Schema "Inside the Cave") von Divi geschickt, Herkunft: GroundHog, LinkedIn-Newsletter "Mine Digitization & Automation", Ausgabe "Week 1: Inside the Cave - How Block Caving Really Works" vom 08.07.2025. Fremde Grafik, Nutzungsrecht nicht geklärt, von Divi ausdrücklich gewünscht, Quelle in Bildunterschrift und Quellenliste genannt. Bei Bedarf Genehmigung bei GroundHog einholen. -->
 <!-- PRÜFEN: Alle Folienzahlen: BHP-Präsentation "Copper South Australia: Unlocking a world-class copper province", Standortbesichtigung, November 2026 (Datum 23.11.2026, 84 Seiten). Folie 9 (Nachfrage), 10 (Erzgehalt, Kapitalintensität, Investitionen), 40 (Block Caving), weitere Angaben zu Smelter, Nebenprodukten, Break-even und Free Cashflow aus den Folien 13 bis 41, bitte stichprobenartig gegen das PDF prüfen. -->
 <!-- PRÜFEN: Hub-Daten (Aktien-Hub, Stand 20.11.2026, Geschäftsjahr bis 30.06.2025): Umsatz 51,3 Mrd. $ (-7,9 %), Nettogewinn 9,0 Mrd. $ (+14,2 %), freier Cashflow 9,3 Mrd. $, Dividenden 6,4 Mrd. $, Dividende je Aktie 1,26 $ (-16,7 %), Ausschüttungsquote 71 %, 69 % des freien Cashflows ausgeschüttet, Rendite 3,75 %, KGV 18,9, Kurs 30,55 € (Tradegate). Geschäftsjahr 2026 (bis 30.06.2026): bereinigter Gewinn +30 % auf 13 Mrd. $ laut BHP-Meldung, siehe Artikel vom 12.11.2026 zum Finanzchef. Mindestausschüttung 50 % des bereinigten Gewinns: Folie 30. -->
 <!-- PRÜFEN: Aufgrund der Websuche kein neuer Pressebericht zur Standortbesichtigung gefunden, Einordnung beruht auf den Folien. Kupferpreis ca. 5,5 bis 5,6 $/lb im GJ26 (Folie 28). -->
@@ -39,7 +40,12 @@ Die Rechnung dazu liefert die blaue Säule: Für 2001 bis 2005 setzt BHP rund 9.
 
 BHP sitzt auf einem solchen Vorkommen. Olympic Dam in Südaustralien enthält nach Unternehmensangaben 88,1 Mio. Tonnen Kupfer (+2 %) und soll rund 80 Jahre produzieren. Auch hier sinkt der Gehalt: Beim Übergang auf Block Caving fällt er im Olympic-Dam-Erz von 2,0 auf 1,6 %. Bei Carrapateena geht er von 1,2 auf 1,1 % zurück.
 
-Beim Block Caving wird der Erzkörper von unten unterhöhlt und bricht kontrolliert in sich zusammen. Das braucht weniger Personal, die Fixkosten verteilen sich auf mehr Tonnen und Maschinen lassen sich leichter automatisieren.
+Block Caving ist ein Abbauverfahren für große, vergleichsweise arme Erzkörper. Statt jede Tonne einzeln herauszusprengen, schneidet der Betrieb den Erzkörper am unteren Ende an und unterhöhlt ihn. Das Gestein darüber bricht unter seinem eigenen Gewicht in Brocken. Sie rutschen in trichterförmige Entnahmepunkte am Boden des Berges und werden dort von Radladern abtransportiert. Nach oben setzt sich das Gebirge nach, an der Oberfläche entsteht eine Senke.
+
+![Schema eines Block Caves: Erzkörper, gebrochenes Erz, nachgebrochenes Deckgebirge und Senke an der Oberfläche](/assets/magazin/block-caving-schema-groundhog.jpg)
+*So funktioniert ein Block Cave: Der Erzkörper (orange) wird unterhöhlt, bricht und läuft in die Entnahmepunkte am Boden. Darüber sackt das Gebirge ab. Grafik: GroundHog, aus dem LinkedIn-Newsletter „Mine Digitization & Automation“ vom 8. Juli 2025.*
+
+Der Reiz liegt in den Kosten: Das Verfahren erlaubt große Mengen bei niedrigen Stückkosten, weil die Schwerkraft einen Teil der Arbeit übernimmt. Es braucht weniger Personal als der gezielte Abbau im Untergrund, die Fixkosten verteilen sich auf mehr Tonnen und Maschinen lassen sich leichter automatisieren. Der Preis dafür ist hohe Betriebsdisziplin. Wie das Gestein bricht und wo es abfließt, lässt sich nur begrenzt steuern, und genau deshalb gilt die Kontrolle des laufenden Betriebs als die Schwachstelle des Verfahrens.
 
 ![BHP-Folie: Block Caving senkt die Förderkosten](/assets/magazin/bhp-folie-block-caving-kosten.jpg)
 *Folie 40 der BHP-Präsentation: Betriebskosten der Förderung in Dollar je Pfund Kupfer (links) und geplante Produktion nach Abbauverfahren in Kilotonnen (rechts).*
@@ -80,6 +86,7 @@ Offene Punkte bleiben: Die Größe des geplanten Block Caves ist noch in der Stu
 <li><a href="https://www.bhp.com/what-we-do/global-locations/australia/south-australia/olympic-dam">BHP: Olympic Dam, South Australia</a></li>
 <li><a href="https://www.miningweekly.com/article/olympic-dam-growth-projects-australia-update-2026-09-11">Mining Weekly: Olympic Dam growth projects, Update vom 11.09.2026</a></li>
 <li><a href="https://www.indailysa.com.au/news/business/2026/10/20/truly-enormous-australias-biggest-copper-mine-even-bigger">InDaily: Australia's biggest copper mine even bigger, 20.10.2026</a></li>
+<li>GroundHog: „Week 1: Inside the Cave - How Block Caving Really Works“, LinkedIn-Newsletter Mine Digitization &amp; Automation, 08.07.2025</li>
 <li>BHP-Präsentation "Copper South Australia: Unlocking a world-class copper province", Standortbesichtigung, November 2026</li>
 <li>Aktien-Hub von dividenden-rechner.de, Daten der SEC, Stand 20.11.2026</li>
 </ul>
