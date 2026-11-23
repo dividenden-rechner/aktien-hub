@@ -1,6 +1,15 @@
 {
- "updated": "2026-11-22T19:39:50.367104+00:00",
+ "updated": "2026-11-23T01:43:33.480861+00:00",
  "items": [
+  {
+   "sym": "005930.KS",
+   "name": "Samsung Electronics",
+   "title": "The Technology Behind More Precise Finding With Galaxy SmartTag3 and SmartThings",
+   "link": "https://news.samsung.com/global/the-technology-behind-more-precise-finding-with-galaxy-smarttag3-and-smartthings",
+   "date": "2026-11-23T08:00:00+00:00",
+   "text": "",
+   "quelle": "RSS"
+  },
   {
    "sym": "005380.KS",
    "name": "Hyundai Motor",
@@ -808,10 +817,10 @@
   {
    "sym": "AMZN",
    "name": "Amazon",
-   "title": "LSEG Risk Intelligence expands World-Check One cloud infrastructure in APAC with Singapore deployment",
-   "link": "https://press.aboutamazon.com/aws/2026/11/lseg-risk-intelligence-expands-world-check-one-cloud-infrastructure-in-apac-with-singapore-deployment",
+   "title": "Transamerica Expands Strategic Relationship with AWS to Scale Responsible AI Capabilities",
+   "link": "https://press.aboutamazon.com/aws/2026/11/transamerica-expands-strategic-relationship-with-aws-to-scale-responsible-ai-capabilities",
    "date": "2026-11-17T14:00:00+00:00",
-   "text": "[MEDIA ALERT]New Singapore deployment provides customers with additional regional hosting and data processing optionsBrings World-Check One infrastructure closer to Asia Pacific (APAC) customers, supporting lower-latency screening and improved user experienceExpansion reflects continued investment in meeting the evolving data governance and operational needs of customers across APAC",
+   "text": "[MEDIA ALERT]Enterprise AI platform delivers faster service, clearer decisions and improved customer experiences",
    "quelle": "RSS"
   },
   {
@@ -2312,15 +2321,6 @@
    "link": "https://www.wuxibiologics.com/webinars-podcasts/cro/mass-spectrometry-across-the-drug-discovery-funnel/",
    "date": "2026-11-03T08:38:36+00:00",
    "text": "Webinar title: Mass Spectrometry Across the Drug Discovery Funnel: From Structure and Function to In Vivo Insights Abstract: Biologic therapeutics are increasingly complex, with variations in sequence, PTMs, assembly, conjugation, and molecular transformation in vivo. These features can influence candidate quality, function, developability, and the interpretation of exposure. Mass spectrometry (MS) provides the molecular […]",
-   "quelle": "RSS"
-  },
-  {
-   "sym": "005930.KS",
-   "name": "Samsung Electronics",
-   "title": "Samsung Partners With Englesson To Integrate TV Technology Into Swedish Furniture Design",
-   "link": "https://news.samsung.com/global/samsung-partners-with-englesson-to-integrate-tv-technology-into-swedish-furniture-design",
-   "date": "2026-11-03T08:00:00+00:00",
-   "text": "",
    "quelle": "RSS"
   },
   {
@@ -4298,35 +4298,6 @@
    "quelle": "SEC",
    "kat": "Meldung (6-K)",
    "form": "6-K"
-  },
-  {
-   "sym": "HSBA.L",
-   "name": "HSBC",
-   "title": "Digital trade needs a shipping container moment",
-   "link": "https://www.hsbc.com/news-and-views/views/hsbc-views/digital-trade-needs-a-shipping-container-moment",
-   "date": "2026-09-24T00:00:00+00:00",
-   "text": "For trade to become paperless, and unlock the next wave of productivity gains, the industry needs to apply the lessons of history to data, says Vivek Ramachandran.\nDigital innovation",
-   "quelle": "RSS"
-  },
-  {
-   "sym": "0005.HK",
-   "name": "HSBC Holdings Asia",
-   "title": "Digital trade needs a shipping container moment",
-   "link": "https://www.hsbc.com/news-and-views/views/hsbc-views/digital-trade-needs-a-shipping-container-moment",
-   "date": "2026-09-24T00:00:00+00:00",
-   "text": "For trade to become paperless, and unlock the next wave of productivity gains, the industry needs to apply the lessons of history to data, says Vivek Ramachandran.\nDigital innovation",
-   "quelle": "RSS"
-  },
-  {
-   "sym": "V",
-   "name": "Visa",
-   "title": "Sonstige Ereignisse",
-   "link": "https://www.sec.gov/Archives/edgar/data/1403161/000140316126000121/v-20260918.htm",
-   "date": "2026-09-23T20:06:31+00:00",
-   "text": "",
-   "quelle": "SEC",
-   "kat": "Sonstige Ereignisse",
-   "form": "8-K"
   }
  ],
  "errors": [
