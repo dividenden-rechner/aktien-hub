@@ -41,7 +41,7 @@ Eine Aufgabe liegt im Hub offen auf dem Tisch: Coca-Colas Dividende ist durch de
 | 2024 | 4,7 Mrd. $ | 8,4 Mrd. $ |
 | 2025 | 5,3 Mrd. $ | 8,8 Mrd. $ |
 
-Im Geschäftsjahr 2025 lag der freie Cashflow bei 5,3 Mrd. Dollar, die Dividenden kosteten 8,8 Mrd. Dollar. Der Nettogewinn von 13,1 Mrd. Dollar deckt die Ausschüttung zu 67 %. Für einen der bekanntesten Dividendenzahler der Welt ist das ein Thema, das der neue Finanzchef früher oder später beantworten muss. Der Einbruch von 2024 hat Gründe, die im Geschäftsbericht stehen. Ob sie einmalig waren, entscheidet über die Bewertung.
+Im Geschäftsjahr 2025 lag der freie Cashflow bei 5,3 Mrd. Dollar, die Dividenden kosteten 8,8 Mrd. Dollar. Der Nettogewinn von 13,1 Mrd. Dollar deckt die Ausschüttung zu 67 %.
 
 Elkins bringt Erfahrung aus der Celgene-Übernahme und aus Konzernen mit hohem Kapitalbedarf mit. Das passt zu einem Konzern, der laufend Marken und Abfüllbetriebe zukauft.
 
