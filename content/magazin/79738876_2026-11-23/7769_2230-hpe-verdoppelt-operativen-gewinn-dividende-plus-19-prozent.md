@@ -4,7 +4,6 @@ description: "Hewlett Packard Enterprise meldet ein Rekordjahr, KI-Server treibe
 date: 2026-11-23 22:30
 author: "Aus der Redaktion"
 category: Analyse
-draft: true
 image: assets/magazin/hpe-ki-server-cray-aufmacher.jpg
 image_alt: "Schwarze HPE-Serverschränke mit Flüssigkeitskühlung für KI-Rechenzentren"
 image_credit: "Foto: HPE"
