@@ -8302,11 +8302,12 @@
 "stand": "2026-11-23",
 "hinweis": "Eigene Prognosen der Unternehmen aus ihren Ergebnis-Pressemitteilungen (SEC 8-K, Anlage EX-99), automatisch ausgelesen. Keine Analystenschaetzungen.",
 "letzter_lauf": {
-"zeit": "2026-11-23 02:13",
-"kandidaten": 69,
+"zeit": "2026-11-23 12:58",
+"kandidaten": 70,
 "ki_aufrufe": 0,
 "abbruch": "",
 "fehler": [
+"CRWD Meldung: HTTP Error 403: Forbidden",
 "MATW Meldung: HTTP Error 403: Forbidden",
 "KEYS Meldung: HTTP Error 403: Forbidden",
 "INTU Meldung: HTTP Error 403: Forbidden",
@@ -8315,8 +8316,7 @@
 "WMT Meldung: HTTP Error 403: Forbidden",
 "NJR Meldung: HTTP Error 403: Forbidden",
 "PANW Meldung: HTTP Error 403: Forbidden",
-"P Meldung: HTTP Error 403: Forbidden",
-"TJX Meldung: HTTP Error 403: Forbidden"
+"P Meldung: HTTP Error 403: Forbidden"
 ]
 }
 }
