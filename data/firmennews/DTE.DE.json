@@ -1,7 +1,7 @@
 {
  "hub": "DTE.DE",
  "name": "Deutsche Telekom",
- "stand": "2026-11-22",
+ "stand": "2026-11-23",
  "quelle": "Google News (Wirtschaftsmedien, deutsch und englisch)",
  "meldungen": [
   {
@@ -35,9 +35,9 @@
    "sprache": "de"
   },
   {
-   "titel": "Telekom steigt mit 100 Millionen Euro bei KI-Firma Mistral ein",
-   "quelle": "FAZ",
-   "link": "https://news.google.com/rss/articles/CBMizgFBVV95cUxPd28xaDI1UnZxUkxaV05Ma0pERnNBcXV4ZFo3cnRqZHp5cEpGamRON1pEM3ZBZm9IMmNLbVlYT3ViTU5adkwxTEZ3T2U2eXotd0JpZ1I5Q3VHSHZHZmY2ZGtmbDVyYUIxeWlvdkN4N3ZuTWR3cmluV2hVVzV3NFZaRTlyVjZYZmdaWlZNTmtvSU9SanlabUZZamU3aHNTVnYxWkJMekU3Q2U3ZzV0cUd3MVRiU2xUSG82ZkRicjY3Z2dSa01IbXh3RGpPeExUdw?oc=5",
+   "titel": "(S+) Deutsche Telekom steigt bei Europas KI-Hoffnung Mistral ein",
+   "quelle": "Spiegel",
+   "link": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxOQWJfb0dmUDQzUkdfMW1FYnQxS0RnRDk2cmxFaTV2WURrdTNaUFlQakpoX2owSU9QYmhsd2otYWhMaTNIWm9yZ3FJN2FZdXBpdjlxWGJHa2RXOFphdXJiM21BckNQM2NqUXhvTzdOTWRqaVJENk9yOVdNd1ZGSFlCVFNNUzJFcS04Tmtvb1lLdzZBWTFKYUh5R3JJR1FGeGpoTEFXcWxDUHhEdTkyRlRBSTBwb1k4bnNGa1h4cjA3LVM1aW5oSC1yUFJOeG5fZ0dVYnRaMlBuWDdORFVk?oc=5",
    "datum": "2026-11-19",
    "sprache": "de"
   },
@@ -49,18 +49,17 @@
    "sprache": "de"
   },
   {
+   "titel": "Mistral: Deutsche Telekom investiert 100 Millionen Euro in KI-Start-up",
+   "quelle": "Manager Magazin",
+   "link": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxPMEV3SW1xRFJnbHNZQkJDTi11UE9XdTgyeDFzcm5HQnVyam5lczJZNWFZbWRFVmtkVXFldjAzYXJpcU9GZ0ZnZkpNa0tOX0ZOTnNSQzdqTVRDZUN6dFAyd0QxY09memVNZmszM1ZJMHpBc2phRndPcm5PRG5kbms4dF9oQUdjaHJkTVJqNXZPV1VlcHNxdjVJR3kzWGxEVEdGSGtuMkhheUFzQWVsbkdlR2RQV3FCYzdoTTlMWnFUNjA0WkhZMjBnMUZUY2VBSko4YmVQRm5icXpHVUEyczlV?oc=5",
+   "datum": "2026-11-19",
+   "sprache": "de"
+  },
+  {
    "titel": "microagi trains AI robots at IAIC",
    "quelle": "Unternehmen",
    "link": "https://www.telekom.com/en/newsroom/latest-updates/media-information/2026/11/microagi-trains-ai-robots-at-iaic",
    "datum": "2026-11-18",
-   "sprache": "en",
-   "typ": "pm"
-  },
-  {
-   "titel": "Telekom expands AI factory in Munich",
-   "quelle": "Unternehmen",
-   "link": "https://www.telekom.com/en/newsroom/latest-updates/media-information/2026/11/ai-demand-rises-deutsche-telekom-expands-ai-factory-in-munich",
-   "datum": "2026-11-09",
    "sprache": "en",
    "typ": "pm"
   }

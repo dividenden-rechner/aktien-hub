@@ -1,9 +1,16 @@
 {
  "hub": "ORCL",
  "name": "ORACLE CORP",
- "stand": "2026-11-22",
+ "stand": "2026-11-23",
  "quelle": "Google News (Wirtschaftsmedien, deutsch und englisch)",
  "meldungen": [
+  {
+   "titel": "Larry Ellison lost $10.9 billion and fell from the top 10 richest billionaires after stock tanks",
+   "quelle": "Fortune",
+   "link": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxOUVdkN2RKR1JseGdKaTJlMFRZcmUyS2R3VzRtQnlxZC1EZkxEdU5WRkdwSEpmSEtaaTU1QXAtcUx2NjR6b3hXMm1sSjFqQjV3LTRpLXBiT3dOVlRPQndaa3VxUnNvQzRDN2xVR3BkazJXRWRXc184dXpNZ3NnTXhPU1I1QTFOckdPc2U4dDdwQWxFV29vaDFWanBxMHFmRHAtSGlqUGxKWGZVZWVnbzBSaHA1d2lLUWp2MktzbWJhdXMxczdXZ0ZqbWlCNzdWUjJBTG9lbU1DWThyb2NtZmFB?oc=5",
+   "datum": "2026-11-23",
+   "sprache": "en"
+  },
   {
    "titel": "Oracle $17 Billion VA Contract Bump Negotiated Quickly (Correct)",
    "quelle": "Bloomberg Government News",

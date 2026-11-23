@@ -1,9 +1,32 @@
 {
  "hub": "SAP.DE",
  "name": "SAP",
- "stand": "2026-11-22",
+ "stand": "2026-11-23",
  "quelle": "Google News (Wirtschaftsmedien, deutsch und englisch)",
  "meldungen": [
+  {
+   "titel": "How SAP Store Certification Turns into Customer Trust for Vertex",
+   "quelle": "Unternehmen",
+   "link": "https://news.sap.com/2026/11/how-sap-store-certification-turns-into-customer-trust-for-vertex/",
+   "datum": "2026-11-23",
+   "sprache": "en",
+   "typ": "pm"
+  },
+  {
+   "titel": "Interview with Sindhu Gangadharan: “I Want People to Say ‘That Idea Started in India'”",
+   "quelle": "Unternehmen",
+   "link": "https://news.sap.com/2026/11/interview-sindhu-gangadharan-sap-labs-india/",
+   "datum": "2026-11-23",
+   "sprache": "en",
+   "typ": "pm"
+  },
+  {
+   "titel": "SAP-Aktie: Unternehmen erholt sich",
+   "quelle": "WELT",
+   "link": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxQZ00zX09vRTNYaHBpMk9zXzd5QWhycTBCcXhwVUNrVjM5WHNzblFCbmVUcjJXT00wdG5QeEJTUHJkdTVjeU9EeVJKVlpsVW1pMHc4NmlXa29zZy1OYm5rRC02d0dUakE1eHhqbVUyRV9mc1o0LVZ1dWk1NUd3NnNReUJRLUJKamQ2VTFKb2daSDB1aDNtUDlUYjJoeFhKbTQtUWNnTlJ3cWZpQQ?oc=5",
+   "datum": "2026-11-23",
+   "sprache": "de"
+  },
   {
    "titel": "How SAP and Microsoft Innovate Together to Deliver AI Value for the Enterprise",
    "quelle": "Unternehmen",
@@ -16,22 +39,6 @@
    "titel": "From Melbourne to Mexico: How SAP Concur and AI Help the San Francisco 49ers Take Their Game Global",
    "quelle": "Unternehmen",
    "link": "https://news.sap.com/2026/11/how-sap-concur-helps-san-francisco-49ers-take-game-global/",
-   "datum": "2026-11-20",
-   "sprache": "en",
-   "typ": "pm"
-  },
-  {
-   "titel": "Takeda Turns to SAP S/4HANA to Support Digital Transformation",
-   "quelle": "Unternehmen",
-   "link": "https://news.sap.com/2026/11/takeda-turns-to-sap-erp-digital-transformation/",
-   "datum": "2026-11-20",
-   "sprache": "en",
-   "typ": "pm"
-  },
-  {
-   "titel": "Why Enterprise Architecture Is Becoming Key to Successful AI",
-   "quelle": "Unternehmen",
-   "link": "https://news.sap.com/2026/11/why-enterprise-architecture-is-becoming-key-to-successful-ai/",
    "datum": "2026-11-20",
    "sprache": "en",
    "typ": "pm"
@@ -51,17 +58,10 @@
    "sprache": "en"
   },
   {
-   "titel": "Vertrauter von CEO Christian Klein: SAP-Vorstand Thomas Saueressig wird Chef von Ionos",
-   "quelle": "Manager Magazin",
-   "link": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxQczlOSks2dEdUTHdES0ZUSDdvMHZQdUdYcFJBV3VXaDBKdW51dEotWjlrSTRJb2ZXQkdhYlVxMjEzdHhOSG5aMlpnaEl5NkpJNi1BRWJaRDVtTTQ5Q24wRFBNUDBka3o4ZkZXbVpDOTNuQkU4VDE3UGNNaC0wZ2p4VlI3VVY3S3F4d1F6ZWNmZ3JMeU1BamZsTDMxbkZDZFA3S1NodVZOQVduMVdvdzdwQllmcHBWTS1RNXJTSmkxakJJLTcxX01RampYa0wyanJzSVFn?oc=5",
-   "datum": "2026-11-17",
-   "sprache": "de"
-  },
-  {
-   "titel": "SAP Executive Saueressig Quits to Become Ionos CEO",
+   "titel": "AI Startup Dreamteam Raises Capital to Challenge Salesforce, SAP",
    "quelle": "Bloomberg.com",
-   "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxQY3pnUGhrakczaVVjTXI3SFpCZE9VazEwenp2LW93MVJSUFI2ZHJja0l6MXNfYzlBU1ZTSklJVlNHYjNleHhMRWg2dklneVBTcEFPVEpOY2F5cXNkT1p4UVpmbUtVUks5S2NDbE9PU05uM2d5cEE1am0xVVFmcDhMUXlLbklOc0pmTjMxRkJObXROdkllUDVfRGZlMG8ySFVfZVNTZ0tQam5tWmExajk0eUI1M2k?oc=5",
-   "datum": "2026-11-17",
+   "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxOQi10bmVBRE1LOElDMjBnNTh6MnRaZGZ5SU1TMG9HUEwyRlRiU3pUN0RJanRoM1lXMHVYMXJtSXc2c0tPa3h3c2xFREx6d2V2dTJiLTV1amtxV2pZTlF4T3VYMzVaWlBDMFJnaHduSnpJcG5UV3hadGpHaVE4UGRuVnJHTlpvcDE0WThkV3k4YVpMWWRPenkzcXVERlZ6bmh4bzJnRk5meFJuOVNwX0ZUa3lBNlQ?oc=5",
+   "datum": "2026-11-16",
    "sprache": "en"
   }
  ]

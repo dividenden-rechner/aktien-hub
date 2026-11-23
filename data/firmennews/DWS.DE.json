@@ -1,7 +1,15 @@
 {
  "hub": "DWS.DE",
  "name": "DWS Group GmbH & Co. KGaA",
- "stand": "2026-11-22",
+ "stand": "2026-11-23",
  "quelle": "Google News (Wirtschaftsmedien, deutsch und englisch)",
- "meldungen": []
+ "meldungen": [
+  {
+   "titel": "Deutsche Bank launches digital asset custody service",
+   "quelle": "Reuters",
+   "link": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxOekJ3UUJRSV9faUNLd2kzS3VXUDAwN0VHbnlqbXRRY1g3MFg3aXBtaGZRN3pXZW5TamlDWUVoanZFSXI5dmRjZXZRVmJaRlZScE1va0Nsc05wZVFsR0ZPTTh2NzQwajZlREtiRUVmcEpTT0IxdHBiY0pKdWZiUmM2ZjdoSGIxY0dJSTRzX0tvbU4tSUJURnhvUnJkNDNpMmRfMHNOWThDeTA?oc=5",
+   "datum": "2026-11-11",
+   "sprache": "en"
+  }
+ ]
 }
