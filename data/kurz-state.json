@@ -1039,11 +1039,12 @@
 "sec:0001654954-26-010032": "2026-11-20",
 "sec:0001654954-26-010027": "2026-11-20",
 "nsm:661785ab-6805-4201-9aa6-3d934993e500": "2026-11-20",
-"sec:0000100493-26-000085": "2026-11-21"
+"sec:0000100493-26-000085": "2026-11-21",
+"feed:https://news.samsung.com/global/the-technology-behind-more-precise-finding-with-galaxy-smarttag3-and-smartthings": "2026-11-23"
 },
 "budget": {
 "day": "2026-11-22",
-"n": 0
+"n": 1
 },
 "fails": {
 "ir:0000804328-26-000127": 1
