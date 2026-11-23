@@ -1,10 +1,9 @@
 ---
 title: "BHP und das Kupfer-Dilemma: Das Erz wird ärmer, die Minen teurer"
 description: "Weltweit sinkt der Kupfergehalt im Erz, neue Minen kosten dreimal so viel wie vor 20 Jahren. Die Investorenfolien der BHP-Standortbesichtigung zeigen, wie der Konzern in Südaustralien gegensteuert und was das für die Dividende heißt."
-date: 2026-11-23 08:00
+date: 2026-11-23 07:25
 author: "Aus der Redaktion"
 category: Analyse
-draft: true
 image: assets/magazin/bhp-jimblebar-eisenerz-foerderanlage.jpg
 image_alt: "Schaufelradbagger der BHP auf einer Eisenerzhalde in Jimblebar, Westaustralien"
 image_credit: "Foto: BHP"
