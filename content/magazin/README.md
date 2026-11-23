@@ -26,10 +26,11 @@ Datei anklicken, dann Stift-Symbol: Zeile `draft: true` löschen und speichern, 
 | 29.10.2026 22:42 | Amazon steigert Umsatz im dritten Quartal auf 201,9 Milliarden Dollar | [79738970_2026-10-29/7757_2242-amazon-q3-2026-zahlen.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/79738970_2026-10-29/7757_2242-amazon-q3-2026-zahlen.md) |
 | 29.10.2026 10:12 | Shell erzielt im dritten Quartal 10,8 Milliarden Dollar Gewinn | [79738970_2026-10-29/8987_1012-shell-q3-2026-ergebnisse.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/79738970_2026-10-29/8987_1012-shell-q3-2026-ergebnisse.md) |
 
-### Online (459)
+### Online (460)
 
 | Datum | Titel | Datei |
 |---|---|---|
+| 23.11.2026 22:30 | HPE verdoppelt den operativen Gewinn und hebt die Dividende um 19 % | [79738876_2026-11-23/7769_2230-hpe-verdoppelt-operativen-gewinn-dividende-plus-19-prozent.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/79738876_2026-11-23/7769_2230-hpe-verdoppelt-operativen-gewinn-dividende-plus-19-prozent.md) |
 | 23.11.2026 07:25 | BHP und das Kupfer-Dilemma: Das Erz wird ärmer, die Minen teurer | [79738876_2026-11-23/9199_0725-bhp-erzgehalt-sinkt-kupfer-olympic-dam-block-caving.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/79738876_2026-11-23/9199_0725-bhp-erzgehalt-sinkt-kupfer-olympic-dam-block-caving.md) |
 | 21.11.2026 17:30 | ADP erhöht die Dividende um 12 %: Was die Investorenfolien über die nächsten Jahre verraten | [79738878_2026-11-21/8269_1730-adp-dividende-12-prozent-investor-folien.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/79738878_2026-11-21/8269_1730-adp-dividende-12-prozent-investor-folien.md) |
 | 21.11.2026 12:00 | Wochenausblick: Thanksgiving-Woche mit Deere, Dell und dem Ringen um die EZB-Spitze | [79738878_2026-11-21/8799_1200-wochenausblick-23-bis-27-november-2026.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/79738878_2026-11-21/8799_1200-wochenausblick-23-bis-27-november-2026.md) |

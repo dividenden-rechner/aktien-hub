@@ -7,6 +7,7 @@ category: Analyse
 image: assets/magazin/hpe-ki-server-cray-aufmacher.jpg
 image_alt: "Schwarze HPE-Serverschränke mit Flüssigkeitskühlung für KI-Rechenzentren"
 image_credit: "Foto: HPE"
+logo_file: assets/logos/hpe.mono.png
 ---
 <!-- PRÜFEN: Aufmacherfoto von Divi geliefert (portfolio-super-compute.jpg, HPE-Produktbild, flüssiggekühlter Supercomputer-Schrank). Pressebild von HPE, Nutzungsrechte als markierte Ausnahme bestätigen. -->
 <!-- PRÜFEN: Quartalszahlen aus den Quartr-Screenshots der HPE-Präsentation Q4 FY26 (Folien 4, 8, 9, 11 bis 16): Umsatz 46,7 Mrd. $ (+36 %, normalisiert +23 %), bereinigter operativer Gewinn 7,0 Mrd. $ (+110 %), bereinigtes EPS 3,97 $ (+105 %), GAAP-EPS 3,07 $, freier Cashflow 4,5 Mrd. $ (+356 %), Aufträge 57,2 Mrd. $ (+72 %). Q4: Umsatz 14,5 Mrd. $ (+50 %), operativer Gewinn 2,5 Mrd. $ (+108 %). Cloud & AI Q4: Umsatz 11,3 Mrd. $ (+69 %), Marge 18,4 %; Server 8,8 Mrd. $ (+95 %). Netzwerk GJ: 11,3 Mrd. $ (+74 %, normalisiert +10 %). KI-Backlog 10,5 Mrd. $, KI-Aufträge Q4 5,7 Mrd. $. Nettoverschuldungsquote 1,4x (Vorjahr 2,7x normalisiert). Prognose GJ27: Umsatz 59,4 bis 63,1 Mrd. $, op. Gewinn 8,7 bis 9,2 Mrd. $, bereinigtes EPS 5,05 bis 5,35 $, FCF mindestens 5,5 Mrd. $. Ausschüttungen GJ26: 757 Mio. $ Dividende, 1.237 Mio. $ Rückkäufe; GJ27: Quartalsdividende +19 % auf 0,17 $, Rückkäufe rund 3 Mrd. $. -->
