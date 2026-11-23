@@ -26,10 +26,11 @@ Datei anklicken, dann Stift-Symbol: Zeile `draft: true` löschen und speichern, 
 | 29.10.2026 22:42 | Amazon steigert Umsatz im dritten Quartal auf 201,9 Milliarden Dollar | [79738970_2026-10-29/7757_2242-amazon-q3-2026-zahlen.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/79738970_2026-10-29/7757_2242-amazon-q3-2026-zahlen.md) |
 | 29.10.2026 10:12 | Shell erzielt im dritten Quartal 10,8 Milliarden Dollar Gewinn | [79738970_2026-10-29/8987_1012-shell-q3-2026-ergebnisse.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/79738970_2026-10-29/8987_1012-shell-q3-2026-ergebnisse.md) |
 
-### Online (458)
+### Online (459)
 
 | Datum | Titel | Datei |
 |---|---|---|
+| 23.11.2026 07:25 | BHP und das Kupfer-Dilemma: Das Erz wird ärmer, die Minen teurer | [79738876_2026-11-23/9199_0725-bhp-erzgehalt-sinkt-kupfer-olympic-dam-block-caving.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/79738876_2026-11-23/9199_0725-bhp-erzgehalt-sinkt-kupfer-olympic-dam-block-caving.md) |
 | 21.11.2026 17:30 | ADP erhöht die Dividende um 12 %: Was die Investorenfolien über die nächsten Jahre verraten | [79738878_2026-11-21/8269_1730-adp-dividende-12-prozent-investor-folien.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/79738878_2026-11-21/8269_1730-adp-dividende-12-prozent-investor-folien.md) |
 | 21.11.2026 12:00 | Wochenausblick: Thanksgiving-Woche mit Deere, Dell und dem Ringen um die EZB-Spitze | [79738878_2026-11-21/8799_1200-wochenausblick-23-bis-27-november-2026.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/79738878_2026-11-21/8799_1200-wochenausblick-23-bis-27-november-2026.md) |
 | 21.11.2026 11:00 | Agree Realty im Vergleich: Dividende rund 4,7 %, AFFO-Prognose angehoben, Verschuldung niedriger als bei NNN und Realty Income | [79738883_2026-11-16/9050_2340-agree-realty-vergleich-nnn-realty-income.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/79738883_2026-11-16/9050_2340-agree-realty-vergleich-nnn-realty-income.md) |
