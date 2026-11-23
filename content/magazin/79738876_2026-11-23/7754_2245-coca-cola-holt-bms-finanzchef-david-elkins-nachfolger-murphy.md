@@ -4,18 +4,21 @@ description: "Coca-Cola ernennt David Elkins von Bristol Myers Squibb zum Finanz
 date: 2026-11-23 22:45
 author: "Aus der Redaktion"
 category: Management
-image: assets/magazin/coca-cola-david-elkins-cfo-aufmacher.jpg
-image_alt: "David Elkins, künftiger Finanzchef von Coca-Cola"
+image: assets/magazin/coca-cola-zentrale-logo-aufmacher.jpg
+image_alt: "Eingang eines Coca-Cola-Gebäudes mit rundem Logo"
 image_credit: "Foto: The Coca-Cola Company"
 logo_symbol: KO
 logo_name: "The Coca-Cola Company"
 logo_file: assets/logos/ko.png
 ---
-<!-- PRÜFEN: Aufmacher: Freisteller von Divi, Ausgangsbild aus der Coca-Cola-Pressemitteilung vom 23.11.2026 (Bildunterschrift dort: "David Elkins, incoming EVP and CFO at The Coca-Cola Company"). Pressebild, markierte Ausnahme, auf neutralen Grauverlauf gesetzt. -->
+<!-- PRÜFEN: Aufmacher (Gebäude mit Coca-Cola-Logo, header-picture-2.jpg) und Porträt von David Elkins (aus der Coca-Cola-Pressemitteilung vom 23.11.2026, Bildunterschrift dort: "David Elkins, incoming EVP and CFO at The Coca-Cola Company") sind von Divi gelieferte Pressebilder, markierte Ausnahme, Rechte bestätigen. Standort des Gebäudes nicht geprüft, daher nicht im Alt-Text. Porträt liegt nur in 371x480 px vor. -->
 <!-- PRÜFEN: Fakten aus beiden Pressemitteilungen vom 23.11.2026 (Coca-Cola 16:30 Uhr EST, BMS 16:15 Uhr EST, Screenshots von Divi). Keine weitere Berichterstattung zum Wechsel gefunden, die Websuche lieferte nur ältere Meldungen. -->
 <!-- PRÜFEN: Hub-Daten (SEC, Geschäftsjahr 2025): Coca-Cola operativer Cashflow 7,41 Mrd. $, Investitionen 2,11 Mrd. $, freier Cashflow 5,30 Mrd. $, gezahlte Dividenden 8,78 Mrd. $, Nettogewinn 13,11 Mrd. $. 2024: 4,74 Mrd. $ FCF, 8,36 Mrd. $ Dividenden. 2023: 9,75 und 7,95. 2022: 9,54 und 7,62. BMS 2025: operativer Cashflow 14,16 Mrd. $, Investitionen 1,31 Mrd. $, FCF 12,85 Mrd. $, Dividenden 5,04 Mrd. $. Ursache für den Cashflow-Einbruch von Coca-Cola 2024 nicht geprüft, daher nicht im Text. -->
 
 Zwei Pressemitteilungen binnen einer Viertelstunde, ein abgestimmter Wechsel: Coca-Cola holt David Elkins, Finanzchef von Bristol Myers Squibb (BMS), als neuen Finanzchef. Er übernimmt am 2. April 2027 von John Murphy, der seit 2019 im Amt ist. Für Coca-Cola ist es die Ablösung eines Konzernveteranen, für BMS der Verlust des Finanzchefs, der seit dem Zukauf von Celgene für die Zahlen verantwortlich war.
+
+![David Elkins, künftiger Finanzchef von Coca-Cola](/assets/magazin/coca-cola-david-elkins-portrait.jpg)
+*David Elkins wird am 2. April 2027 Finanzchef von Coca-Cola. Foto: The Coca-Cola Company*
 
 ## Murphy bleibt Präsident, Elkins übernimmt auch die Strategie
 
