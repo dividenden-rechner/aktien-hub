@@ -23,9 +23,9 @@ logo_file: assets/logos/bhp.png
 
 ## Ein Rohstoff, der schneller knapp wird als gedacht
 
-Kupfer ist der Rohstoff hinter Stromnetzen, Elektroautos und Rechenzentren. BHP rechnet in der neuen Präsentation vor, dass die weltweite Nachfrage von rund 35 Millionen Tonnen in diesem Jahr auf etwa 47 Millionen Tonnen im Jahr 2040 steigt. Gleichzeitig schrumpft die Förderung der bestehenden Minen. Bis Ende der 2030er Jahre fehlen demnach bis zu 10 Millionen Tonnen neues Primärkupfer im Jahr.
+Kupfer ist der Rohstoff hinter Stromnetzen, Elektroautos und Rechenzentren. Die weltweite Nachfrage dürfte von rund 35 Millionen Tonnen in diesem Jahr auf etwa 47 Millionen Tonnen im Jahr 2040 steigen. Gleichzeitig schrumpft die Förderung der bestehenden Minen. Bis Ende der 2030er Jahre fehlen demnach bis zu 10 Millionen Tonnen neues Primärkupfer im Jahr.
 
-Das ist die eine Hälfte der Geschichte. Die andere steht auf Folie 10 und trägt den Titel dieses Artikels.
+Das ist die eine Hälfte der Geschichte. Die andere ist der sinkende Erzgehalt, und er verändert die Kosten jeder neuen Mine.
 
 ## Erzgehalt auf Talfahrt, Kosten im Aufwind
 
@@ -50,7 +50,7 @@ Der Reiz liegt in den Kosten: Das Verfahren erlaubt große Mengen bei niedrigen 
 ![BHP-Folie: Block Caving senkt die Förderkosten](/assets/magazin/bhp-folie-block-caving-kosten.jpg)
 *Folie 40 der BHP-Präsentation: Betriebskosten der Förderung in Dollar je Pfund Kupfer (links) und geplante Produktion nach Abbauverfahren in Kilotonnen (rechts).*
 
-Das Ergebnis auf der Folie überzeugt: In Olympic Dam fallen die Förderkosten von 1,6 auf 1,0 Dollar je Pfund (-35 %), in Carrapateena von 1,7 auf 0,7 Dollar (-55 %). Der geringere Gehalt kostet also weniger, als die neue Methode spart. Die Produktion soll damit von 321.000 Tonnen im Geschäftsjahr 2026 auf rund 500.000 Tonnen 2035 und bis zu 650.000 Tonnen 2040 steigen. Den Zuwachs liefert fast vollständig das Block Caving: 220.000 Tonnen 2035, 370.000 Tonnen 2040.
+Das Ergebnis überzeugt: In Olympic Dam fallen die Förderkosten von 1,6 auf 1,0 Dollar je Pfund (-35 %), in Carrapateena von 1,7 auf 0,7 Dollar (-55 %). Der geringere Gehalt kostet also weniger, als die neue Methode spart. Die Produktion soll damit von 321.000 Tonnen im Geschäftsjahr 2026 auf rund 500.000 Tonnen 2035 und bis zu 650.000 Tonnen 2040 steigen. Den Zuwachs liefert fast vollständig das Block Caving: 220.000 Tonnen 2035, 370.000 Tonnen 2040.
 
 ## Die Schmelze und die Nebenprodukte
 
@@ -76,7 +76,7 @@ Wie teuer das Kupferwachstum wird, zeigt die Phase 1 der Planung: Die Minen kost
 
 ## Einordnung
 
-BHP macht aus einem Branchenproblem ein Argument. Sinkende Gehalte treiben die Preise, und wer die Kosten pro Pfund in dieser Lage senkt, verdient doppelt. Die Folien zeigen für Olympic Dam und Carrapateena glaubwürdige Zahlen. Für Dividendenanleger ist wichtig, dass der Konzern Kupfer aus eigener Kraft finanzieren will und die Ausschüttung nicht dafür kürzen muss.
+BHP macht aus einem Branchenproblem ein Argument. Sinkende Gehalte treiben die Preise, und wer die Kosten pro Pfund in dieser Lage senkt, verdient doppelt. Für Olympic Dam und Carrapateena sind die Zahlen glaubwürdig. Für Dividendenanleger ist wichtig, dass der Konzern Kupfer aus eigener Kraft finanzieren will und die Ausschüttung nicht dafür kürzen muss.
 
 Offene Punkte bleiben: Die Größe des geplanten Block Caves ist noch in der Studie, die Schmelzen-Entscheidung fällt erst 2027, die Wasser- und Stromversorgung muss mitwachsen. Und BHP hat mit dem Kaliprojekt Jansen gerade gezeigt, dass Großprojekte teurer werden können als geplant. Nach eigener Angabe liefen seit 2016 immerhin 80 % der Projekte im Zeit- und Kostenrahmen. Die Dividende bleibt von den Rohstoffpreisen abhängig, das gilt für Kupfer wie für Eisenerz. Der Kupferanteil im Konzern wächst dabei weiter.
 
