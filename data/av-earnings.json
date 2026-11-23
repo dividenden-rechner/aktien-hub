@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-22 13:35 UTC",
+ "updated": "2026-11-23 16:27 UTC",
  "quelle": "Alpha Vantage",
  "items": [
   {
@@ -388,7 +388,11 @@
    "rev_est": 80961610.0,
    "rev_n": 11,
    "est_stand": "2026-11-18",
-   "act_try": "2026-11-18"
+   "act_try": "2026-11-23",
+   "eps_act": 0.12,
+   "eps_act_basis": "GAAP laut AV",
+   "rep_date": "2026-11-18",
+   "rev_act": 83668000.0
   },
   {
    "sym": "CPA",
@@ -593,7 +597,7 @@
    "rev_est": 1188881000.0,
    "rev_n": 7,
    "est_stand": "2026-11-19",
-   "act_try": "2026-11-22"
+   "act_try": "2026-11-23"
   },
   {
    "sym": "ESTC",
@@ -643,10 +647,11 @@
    "rev_est": 4013697400.0,
    "rev_n": 16,
    "est_stand": "2026-11-19",
-   "act_try": "2026-11-22",
+   "act_try": "2026-11-23",
    "eps_act": 0.82,
    "eps_act_basis": "GAAP laut AV",
-   "rep_date": "2026-11-19"
+   "rep_date": "2026-11-19",
+   "rev_act": 4011000000.0
   },
   {
    "sym": "INTU",
@@ -744,7 +749,7 @@
    "zeit": "",
    "eps_est": 1.68,
    "eps_src": "kalender",
-   "act_try": "2026-11-22"
+   "act_try": "2026-11-23"
   },
   {
    "sym": "VIPS",
@@ -755,7 +760,7 @@
    "zeit": "",
    "eps_est": 0.31,
    "eps_src": "kalender",
-   "act_try": "2026-11-22"
+   "act_try": "2026-11-23"
   },
   {
    "sym": "WMG",
@@ -795,7 +800,12 @@
    "name": "WILLIAMS-SONOMA INCORPORATED",
    "fiscal": "2026-10-31",
    "cur": "USD",
-   "zeit": "vor"
+   "zeit": "vor",
+   "act_try": "2026-11-23",
+   "eps_act": 2.19,
+   "eps_act_basis": "GAAP laut AV",
+   "rep_date": "2026-11-19",
+   "rev_act": 1991175000.0
   },
   {
    "sym": "BJ",
@@ -844,7 +854,8 @@
    "eps_n": 17,
    "rev_est": 1988948880.0,
    "rev_n": 17,
-   "est_stand": "2026-11-21"
+   "est_stand": "2026-11-21",
+   "act_try": "2026-11-23"
   },
   {
    "sym": "HPE",
@@ -857,7 +868,8 @@
    "eps_n": 19,
    "rev_est": 14425411720.0,
    "rev_n": 18,
-   "est_stand": "2026-11-21"
+   "est_stand": "2026-11-21",
+   "act_try": "2026-11-23"
   },
   {
    "sym": "J",
@@ -870,7 +882,8 @@
    "eps_n": 12,
    "rev_est": 3893501990.0,
    "rev_n": 5,
-   "est_stand": "2026-11-21"
+   "est_stand": "2026-11-21",
+   "act_try": "2026-11-23"
   },
   {
    "sym": "TCOM",
@@ -883,7 +896,8 @@
    "eps_n": 15,
    "rev_est": 18927296580.0,
    "rev_n": 16,
-   "est_stand": "2026-11-21"
+   "est_stand": "2026-11-21",
+   "act_try": "2026-11-23"
   },
   {
    "sym": "ADI",
