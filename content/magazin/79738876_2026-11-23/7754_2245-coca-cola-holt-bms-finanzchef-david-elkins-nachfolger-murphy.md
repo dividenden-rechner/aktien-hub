@@ -12,6 +12,7 @@ logo_name: "The Coca-Cola Company"
 logo_file: assets/logos/ko.png
 ---
 <!-- PRÜFEN: Aufmacher (Gebäude mit Coca-Cola-Logo, header-picture-2.jpg) und Porträt von David Elkins (aus der Coca-Cola-Pressemitteilung vom 23.11.2026, Bildunterschrift dort: "David Elkins, incoming EVP and CFO at The Coca-Cola Company") sind von Divi gelieferte Pressebilder, markierte Ausnahme, Rechte bestätigen. Standort des Gebäudes nicht geprüft, daher nicht im Alt-Text. Porträt liegt nur in 371x480 px vor. -->
+<!-- PRÜFEN: Porträt John Murphy (john-murphy.jpg) von Divi geliefert, Herkunft Coca-Cola, Pressebild, markierte Ausnahme, Rechte bestätigen. -->
 <!-- PRÜFEN: Fakten aus beiden Pressemitteilungen vom 23.11.2026 (Coca-Cola 16:30 Uhr EST, BMS 16:15 Uhr EST, Screenshots von Divi). Keine weitere Berichterstattung zum Wechsel gefunden, die Websuche lieferte nur ältere Meldungen. -->
 <!-- PRÜFEN: Hub-Daten (SEC, Geschäftsjahr 2025): Coca-Cola operativer Cashflow 7,41 Mrd. $, Investitionen 2,11 Mrd. $, freier Cashflow 5,30 Mrd. $, gezahlte Dividenden 8,78 Mrd. $, Nettogewinn 13,11 Mrd. $. 2024: 4,74 Mrd. $ FCF, 8,36 Mrd. $ Dividenden. 2023: 9,75 und 7,95. 2022: 9,54 und 7,62. BMS 2025: operativer Cashflow 14,16 Mrd. $, Investitionen 1,31 Mrd. $, FCF 12,85 Mrd. $, Dividenden 5,04 Mrd. $. Ursache für den Cashflow-Einbruch von Coca-Cola 2024 nicht geprüft, daher nicht im Text. -->
 
@@ -23,6 +24,9 @@ Zwei Pressemitteilungen binnen einer Viertelstunde, ein abgestimmter Wechsel: Co
 ## Murphy bleibt Präsident, Elkins übernimmt auch die Strategie
 
 Murphy ist 64 Jahre alt und will 2027 in den Ruhestand gehen, den Zeitpunkt legt Coca-Cola später fest. Bis dahin bleibt er Präsident des Konzerns, kümmert sich um zentrale Vorhaben und begleitet den Übergang im Finanzressort. Elkins und Murphy berichten beide an Vorstandschef Henrique Braun. Murphy arbeitet seit 1988 bei Coca-Cola und war zuvor Asien-Chef.
+
+![John Murphy, Präsident und Finanzchef von Coca-Cola](/assets/magazin/coca-cola-john-murphy-portrait.jpg)
+*John Murphy ist seit 2019 Finanzchef und seit 2022 Präsident von Coca-Cola. Foto: The Coca-Cola Company*
 
 Elkins verantwortet neben den Finanzen auch die globale Strategie und die Konzerndienste. Er kommt von außen und aus einer anderen Branche: Elkins, 58, war zuvor Finanzchef der Verbrauchs- und Medizintechniksparte von Johnson & Johnson, arbeitete bei Becton Dickinson und AstraZeneca und begann seine Laufbahn bei Boeing. Bei BMS führte er neben den Finanzen auch Unternehmensentwicklung, Beschaffung und Investor Relations.
 
