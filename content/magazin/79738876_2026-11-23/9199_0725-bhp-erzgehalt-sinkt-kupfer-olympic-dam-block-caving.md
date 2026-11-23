@@ -54,7 +54,17 @@ Ein Teil der Kosten holt BHP über Nebenprodukte herein. Im Geschäftsjahr 2026 
 
 ## Ist die Dividende gedeckt?
 
-BHP schüttet nach der Dividendenpolitik mindestens 50 % des bereinigten Gewinns aus. Im Geschäftsjahr 2025 zahlte der Konzern 6,4 Mrd. Dollar (1,26 Dollar je Aktie) und deckte damit 69 % des freien Cashflows von 9,3 Mrd. Dollar. Die Ausschüttungsquote auf den Gewinn lag bei 71 %. Die Dividende je Aktie fiel im Jahresvergleich um 16,7 %, die Rendite liegt beim Kurs von 30,55 Euro bei 3,75 %. Für das Geschäftsjahr 2026 meldete BHP einen um 30 % höheren bereinigten Gewinn von 13 Mrd. Dollar.
+BHP schüttet nach der Dividendenpolitik mindestens 50 % des bereinigten Gewinns aus. Die Dividende folgt damit dem Rohstoffzyklus.
+
+![Dividende je Aktie von BHP, Geschäftsjahre 2016 bis 2025](/assets/magazin/bhp-hub-dividende-je-aktie.jpg)
+*Dividende je Aktie nach Geschäftsjahr (endet jeweils am 30. Juni). Aktien-Hub von dividenden-rechner.de, Daten aus den Jahresberichten bei der SEC.*
+
+Auf den Spitzenwert von 3,52 Dollar im Geschäftsjahr 2022 folgten drei Rückgänge auf zuletzt 1,26 Dollar (-16,7 % zum Vorjahr). Wer BHP wegen der Dividende hält, kauft einen Wert mit schwankender Ausschüttung. Die Rendite liegt beim Kurs von 30,55 Euro bei 3,75 %.
+
+![Freier Cashflow von BHP, Geschäftsjahre 2016 bis 2025](/assets/magazin/bhp-hub-free-cashflow.jpg)
+*Freier Cashflow nach Geschäftsjahr. Aktien-Hub von dividenden-rechner.de.*
+
+Gedeckt ist die Zahlung klar: Im Geschäftsjahr 2025 flossen 6,4 Mrd. Dollar an die Aktionäre, das sind 69 % des freien Cashflows von 9,3 Mrd. Dollar. Die Ausschüttungsquote auf den Gewinn lag bei 71 %. Für das Geschäftsjahr 2026 meldete BHP einen um 30 % höheren bereinigten Gewinn von 13 Mrd. Dollar. Das spricht für eine höhere Dividende im nächsten Zyklus, auch wenn der freie Cashflow seit dem Rekord von 26,3 Mrd. Dollar 2022 gesunken ist.
 
 Wie teuer das Kupferwachstum wird, zeigt die Phase 1 der Planung: Die Minen kosten 5,8 bis 7,5 Mrd. Dollar, die Spitze liegt bei rund 3 Mrd. Dollar im Jahr. Dagegen stehen rund 35 Mrd. Dollar freier Cashflow aus Kupfer bis 2035. BHP kalkuliert mit einer Rendite von 14 bis 17 % je Projekt und einem Break-even von 1,70 Dollar je Pfund. Bei Wettbewerbern sind es im Schnitt 3,10 Dollar. Der Kupferpreis lag im Geschäftsjahr 2026 bei rund 5,5 bis 5,6 Dollar.
 
