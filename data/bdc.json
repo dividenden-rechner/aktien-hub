@@ -1905,6 +1905,17 @@
 "verschuldung_netto": 1.56,
 "meldung": "2026-08-10",
 "quelle": "https://www.sec.gov/Archives/edgar/data/1504619/000117184326005387/exh_991.htm"
+},
+{
+"periode_ende": "2026-09-30",
+"nav_je_aktie": 10.15,
+"nii_je_aktie": 0.25,
+"nii_bereinigt_je_aktie": 0.25,
+"non_accrual_fv_proz": 0.7,
+"portfolio_mio": 2424.4,
+"verschuldung_netto": 1.52,
+"meldung": "2026-11-23",
+"quelle": "https://www.sec.gov/Archives/edgar/data/1504619/000117184326007651/exh_991.htm"
 }
 ],
 "aktien": 99217896,
@@ -3025,6 +3036,21 @@
 "verschuldung_netto": 1.29,
 "meldung": "2026-08-10",
 "quelle": "https://www.sec.gov/Archives/edgar/data/1383414/000117184326005386/exh_991.htm"
+},
+{
+"periode_ende": "2026-09-30",
+"nav_je_aktie": 6.35,
+"nii_je_aktie": 0.11,
+"beleg_nav": "Net asset value per share $ 6.35",
+"dividende_quartal": "Q4 2026",
+"dividende_regulaer": 0.12,
+"dividende_zusatz": 0.12,
+"nii_bereinigt_je_aktie": 0.13,
+"non_accrual_fv_proz": 0.6,
+"portfolio_mio": 1223.9,
+"verschuldung_netto": 1.34,
+"meldung": "2026-11-23",
+"quelle": "https://www.sec.gov/Archives/edgar/data/1383414/000117184326007650/exh_991.htm"
 }
 ],
 "aktien": 65296094,
@@ -4624,16 +4650,13 @@
 "stand": "2026-11-24",
 "hinweis": "Quartalszahlen der BDCs aus ihren Ergebnis-Pressemitteilungen (SEC 8-K, EX-99), automatisch ausgelesen.",
 "letzter_lauf": {
-"zeit": "2026-11-24 10:09",
+"zeit": "2026-11-24 22:45",
 "offen": 2,
-"ki_aufrufe": 0,
+"ki_aufrufe": 2,
 "ohne_sec": [
 "SSSS",
 "MRCC"
 ],
-"fehler": [
-"PFLT: HTTP Error 404: Not Found",
-"PNNT: HTTP Error 404: Not Found"
-]
+"fehler": []
 }
 }
