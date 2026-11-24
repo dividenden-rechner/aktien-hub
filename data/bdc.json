@@ -1908,7 +1908,7 @@
 }
 ],
 "aktien": 99217896,
-"aktien_stand": "2026-08-10"
+"aktien_stand": "2026-11-23"
 },
 "SLRC": {
 "name": "SLR Investment Corp.",
@@ -3028,7 +3028,7 @@
 }
 ],
 "aktien": 65296094,
-"aktien_stand": "2026-08-10"
+"aktien_stand": "2026-11-23"
 },
 "PSBD": {
 "name": "Palmer Square Capital BDC Inc.",
@@ -4621,16 +4621,19 @@
 "aktien_stand": "2026-11-03"
 }
 },
-"stand": "2026-11-23",
+"stand": "2026-11-24",
 "hinweis": "Quartalszahlen der BDCs aus ihren Ergebnis-Pressemitteilungen (SEC 8-K, EX-99), automatisch ausgelesen.",
 "letzter_lauf": {
-"zeit": "2026-11-23 07:55",
-"offen": 0,
+"zeit": "2026-11-24 00:07",
+"offen": 2,
 "ki_aufrufe": 0,
 "ohne_sec": [
 "SSSS",
 "MRCC"
 ],
-"fehler": []
+"fehler": [
+"PFLT: HTTP Error 404: Not Found",
+"PNNT: HTTP Error 404: Not Found"
+]
 }
 }
