@@ -1,4 +1,19 @@
 {
  "hinweis": "Vorab-Zahlen aus Ergebnismeldungen zum Geschäftsjahresende (nur volle Geschäftsjahre, nicht Quartale). Die Werte stehen in den Hub-Charts, bis der SEC-Jahresbericht (data/sec/fundamentals.json) das Jahr liefert; dann gilt die SEC-Zahl. Felder wie in fundamentals.json: umsatz, gewinn, eps_verw, operativer_cf, capex, dividende_je_aktie, dividenden_gezahlt, aktienrueckkauf, in Berichtswährung (volle Einheiten, nicht Millionen).",
- "firmen": {}
+ "firmen": {
+  "ADI": {
+   "w": "USD",
+   "gj": "2026-10-31",
+   "meldung": "2026-11-24",
+   "k": {
+    "umsatz": 15180000000,
+    "gewinn": 4997425000,
+    "eps_verw": 10.21,
+    "operativer_cf": 6190000000,
+    "capex": 733000000,
+    "dividenden_gezahlt": 2088000000,
+    "aktienrueckkauf": 3324000000
+   }
+  }
+ }
 }
