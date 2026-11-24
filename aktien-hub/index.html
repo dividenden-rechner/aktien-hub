@@ -293,13 +293,17 @@ const one = a => Array.isArray(a)?(a[0]||{}):(a||{});
    (z. B. Bruttogewinn, operatives Ergebnis). Bilanz: FMP zuerst, weil „Schulden gesamt“ dort auch kurzfristige Schulden enthält. */
 let SECP=null;
 function secLoad(){const v=Math.floor(Date.now()/864e5),j=u=>fetch(u+"?v="+v).then(r=>r.ok?r.json():null).catch(()=>null);
-  return SECP||(SECP=Promise.all([j("../data/sec/fundamentals.json"),j("../data/esef/fundamentals.json"),j("../data/boerse-de/fundamentals.json"),j("../data/asien/fundamentals.json")]).then(([s,e,b,a])=>{
+  return SECP||(SECP=Promise.all([j("../data/sec/fundamentals.json"),j("../data/esef/fundamentals.json"),j("../data/boerse-de/fundamentals.json"),j("../data/asien/fundamentals.json"),j("../data/sec/vorab.json")]).then(([s,e,b,a,vb])=>{
     if(!s&&!e&&!b&&!a)return null;s=s||{firmen:{}};if(e&&e.firmen)for(const t in e.firmen)if(!s.firmen[t])s.firmen[t]=e.firmen[t];
     /* Asien (Geschäftsberichte HK/SG/CN, asia-equity-hub): nur Firmen, die noch nicht vorhanden sind */
     if(a&&a.firmen)for(const t in a.firmen)if(!s.firmen[t])s.firmen[t]=a.firmen[t];
     /* boerse.de (2019 bis 2025): neue Firmen komplett, vorhandene nur um fehlende Reihen und Jahre ergänzt */
     if(b&&b.firmen)for(const t in b.firmen){const bf=b.firmen[t],o=s.firmen[t];if(!o){s.firmen[t]=bf;continue}
       o.k=o.k||{};for(const k in bf.k){const have=new Set((o.k[k]||[]).map(([d])=>secJahr(d)));const add=bf.k[k].filter(([d])=>!have.has(secJahr(d)));if(add.length)o.k[k]=(o.k[k]||[]).concat(add).sort((x,y)=>x[0]<y[0]?-1:1)}}
+    /* Vorab-Zahlen aus Ergebnismeldungen (data/sec/vorab.json): neues Geschäftsjahr, bis der SEC-Jahresbericht da ist; vorhandene Jahre bleiben unberührt */
+    if(vb&&vb.firmen)for(const t in vb.firmen){const v=vb.firmen[t],o=s.firmen[t];if(!o||!v.gj||!v.k||(v.w&&o.w&&v.w!==o.w))continue;const y=secJahr(v.gj);let n=0;o.k=o.k||{};
+      for(const k in v.k){if(v.k[k]==null||(o.k[k]||[]).some(([d])=>secJahr(d)===y))continue;o.k[k]=(o.k[k]||[]).concat([[v.gj,v.k[k]]]).sort((x,z)=>x[0]<z[0]?-1:1);n++}
+      if(n&&!o.quelle)o.quelle="SEC+vorab:"+y+"|"+new Date(v.meldung).toLocaleDateString("de-DE")}
     return s}))}
 let KZP=null;
 function kzLoad(){const v=Math.floor(Date.now()/36e5),j=u=>fetch(u+"?v="+v).then(r=>r.ok?r.json():null).catch(()=>null);
@@ -369,7 +373,7 @@ function kzTabelle(K){
   return chart+`<div class="stk kz"><table style="margin-top:0"><tbody>${zeilen}</tbody></table><p class="sn">Kurs: Schluss des letzten Handelstags (${esc(K.boerse||"Xetra")}, ${new Date(K.datum).toLocaleDateString("de-DE")}), Deutsche Börse, 15 Minuten verzögert. Kennzahlen aus dem Jahresbericht ${esc(K.gj)} ${K.bericht?"(Geschäftsbericht, maschinell übernommen, ungeprüft)":K.land&&K.land!=="US"?"(europäisches Einheitsformat ESEF)":"bei der US-Börsenaufsicht SEC"}, Kurs mit dem EZB-Referenzkurs umgerechnet.${K.hinweis?" "+esc(K.hinweis)+".":""} Keine Anlageberatung.</p></div>`;
 }
 /* Herkunft der Jahreswerte für Beschriftungen */
-function quelleText(q,kurz){return q==="CVM"?(kurz?"CVM":"Jahresabschlüsse bei der CVM (Brasilien), Open Data ODbL"):q==="EDINET"?(kurz?"EDINET":"Jahresberichte bei EDINET (Japan)"):q==="DART"?(kurz?"DART":"Jahresberichte bei DART (Korea)"):q==="boerse.de"?"boerse.de (Jahresabschlüsse)":q==="ESEF"?(kurz?"ESEF-Jahresberichte":"ESEF-Jahresberichte (europäisches Einheitsformat)"):q&&/Geschäftsbericht/.test(q)?(kurz?"Geschäftsbericht":"Geschäftsberichte (PDF), maschinell übernommen, ungeprüft"):(kurz?"SEC":"Jahresberichte bei der SEC")}
+function quelleText(q,kurz){return q&&String(q).startsWith("SEC+vorab:")?(kurz?"SEC":"Jahresberichte bei der SEC")+"; "+String(q).slice(10).split("|")[0]+" vorläufig aus der Ergebnismeldung vom "+String(q).split("|")[1]+", Jahresbericht folgt":q==="CVM"?(kurz?"CVM":"Jahresabschlüsse bei der CVM (Brasilien), Open Data ODbL"):q==="EDINET"?(kurz?"EDINET":"Jahresberichte bei EDINET (Japan)"):q==="DART"?(kurz?"DART":"Jahresberichte bei DART (Korea)"):q==="boerse.de"?"boerse.de (Jahresabschlüsse)":q==="ESEF"?(kurz?"ESEF-Jahresberichte":"ESEF-Jahresberichte (europäisches Einheitsformat)"):q&&/Geschäftsbericht/.test(q)?(kurz?"Geschäftsbericht":"Geschäftsberichte (PDF), maschinell übernommen, ungeprüft"):(kurz?"SEC":"Jahresberichte bei der SEC")}
 /* Ganzes Europa-Universum (data/esef/firma/<Kürzel>.json) und weitere Asien-Firmen (data/asien/firma/): erst beim Aufruf laden.
    Bei boerse.de-Firmen geht ESEF vor, boerse.de füllt nur fehlende Jahre. */
 const FIRMA={};let FIDX=null;
