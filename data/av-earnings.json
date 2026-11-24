@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-23 16:27 UTC",
+ "updated": "2026-11-24 06:22 UTC",
  "quelle": "Alpha Vantage",
  "items": [
   {
@@ -910,7 +910,7 @@
    "eps_n": 27,
    "rev_est": 4319542480.0,
    "rev_n": 26,
-   "est_stand": "2026-11-21"
+   "est_stand": "2026-11-24"
   },
   {
    "sym": "ADSK",
@@ -923,7 +923,7 @@
    "eps_n": 28,
    "rev_est": 2133704710.0,
    "rev_n": 27,
-   "est_stand": "2026-11-21"
+   "est_stand": "2026-11-24"
   },
   {
    "sym": "BBY",
@@ -932,11 +932,24 @@
    "fiscal": "2026-10-31",
    "cur": "USD",
    "zeit": "vor",
-   "eps_est": 1.4907,
+   "eps_est": 1.4911,
    "eps_n": 21,
-   "rev_est": 9900703180.0,
+   "rev_est": 9905439010.0,
    "rev_n": 20,
-   "est_stand": "2026-11-21"
+   "est_stand": "2026-11-24"
+  },
+  {
+   "sym": "BHP",
+   "datum": "2026-11-24",
+   "name": "BHP GROUP LIMITED",
+   "fiscal": "2025-03-31",
+   "cur": "USD",
+   "zeit": "",
+   "eps_est": 0.0,
+   "eps_n": 0,
+   "rev_est": 0.0,
+   "rev_n": 0,
+   "est_stand": "2026-11-24"
   },
   {
    "sym": "DELL",
@@ -949,7 +962,7 @@
    "eps_n": 24,
    "rev_est": 49273922220.0,
    "rev_n": 22,
-   "est_stand": "2026-11-21"
+   "est_stand": "2026-11-24"
   },
   {
    "sym": "DLTR",
@@ -960,9 +973,9 @@
    "zeit": "vor",
    "eps_est": 0.9248,
    "eps_n": 26,
-   "rev_est": 5040170730.0,
-   "rev_n": 20,
-   "est_stand": "2026-11-21"
+   "rev_est": 5040619740.0,
+   "rev_n": 21,
+   "est_stand": "2026-11-24"
   },
   {
    "sym": "HPQ",
@@ -971,8 +984,11 @@
    "fiscal": "2026-10-31",
    "cur": "USD",
    "zeit": "nach",
-   "eps_est": 0.75,
-   "eps_src": "kalender"
+   "eps_est": 0.7408,
+   "eps_n": 13,
+   "rev_est": 15296789750.0,
+   "rev_n": 12,
+   "est_stand": "2026-11-24"
   },
   {
    "sym": "MDT",
@@ -981,8 +997,11 @@
    "fiscal": "2026-10-31",
    "cur": "USD",
    "zeit": "vor",
-   "eps_est": 1.34,
-   "eps_src": "kalender"
+   "eps_est": 1.332,
+   "eps_n": 25,
+   "rev_est": 9479251480.0,
+   "rev_n": 24,
+   "est_stand": "2026-11-24"
   },
   {
    "sym": "SJM",
@@ -991,8 +1010,11 @@
    "fiscal": "2026-10-31",
    "cur": "USD",
    "zeit": "vor",
-   "eps_est": 2.5,
-   "eps_src": "kalender"
+   "eps_est": 2.5644,
+   "eps_n": 15,
+   "rev_est": 2272021920.0,
+   "rev_n": 12,
+   "est_stand": "2026-11-24"
   },
   {
    "sym": "VIPS",
@@ -1005,7 +1027,7 @@
    "eps_n": 7,
    "rev_est": 20398604780.0,
    "rev_n": 9,
-   "est_stand": "2026-11-21"
+   "est_stand": "2026-11-24"
   },
   {
    "sym": "WDAY",
@@ -1133,6 +1155,36 @@
    "eps_est": 1.68,
    "eps_src": "kalender",
    "name": "VEEVA SYSTEMS INCORPORATED",
+   "fiscal": "2026-10-31",
+   "cur": "USD",
+   "zeit": "nach"
+  },
+  {
+   "sym": "AZO",
+   "datum": "2026-12-08",
+   "eps_est": 35.98,
+   "eps_src": "kalender",
+   "name": "AUTOZONE INCORPORATED",
+   "fiscal": "2026-11-30",
+   "cur": "USD",
+   "zeit": "vor"
+  },
+  {
+   "sym": "CASY",
+   "datum": "2026-12-08",
+   "eps_est": 6.01,
+   "eps_src": "kalender",
+   "name": "CASEYS GENERAL STORES INCORPORATED",
+   "fiscal": "2026-10-31",
+   "cur": "USD",
+   "zeit": "nach"
+  },
+  {
+   "sym": "SNPS",
+   "datum": "2026-12-08",
+   "eps_est": 3.09,
+   "eps_src": "kalender",
+   "name": "SYNOPSYS INCORPORATED",
    "fiscal": "2026-10-31",
    "cur": "USD",
    "zeit": "nach"
