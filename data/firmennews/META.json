@@ -1,7 +1,15 @@
 {
  "hub": "META",
  "name": "Meta Platforms, Inc.",
- "stand": "2026-11-23",
+ "stand": "2026-11-24",
  "quelle": "Google News (Wirtschaftsmedien, deutsch und englisch)",
- "meldungen": []
+ "meldungen": [
+  {
+   "titel": "Meta pauses Class C share issuance amid shareholder lawsuit",
+   "quelle": "Reuters",
+   "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxNN2g3TFJ5emdHN3NnLVJ6TTFuUThTVW42UmthQXkzLWtkaUUxN3hyOWRtZWttRGdaOVFZMjZoOFJwYmJfa1ZtX0RfZ0hEai14NXFBX0s5ei1EMDhiQmhDaTQ4WHNNNEJsLVNaS25fQVh5eGpnektkOG9xSTJncXVNRjI3U3ZRLVBFTUJuOVR4TGdSbllaZ29MRUxxcU1ZbUxYcDc3MHdEV2l0Q3ZzdlpBZV9kZFcwZw?oc=5",
+   "datum": "2026-11-23",
+   "sprache": "en"
+  }
+ ]
 }

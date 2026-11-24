@@ -1,9 +1,32 @@
 {
  "hub": "BMY",
  "name": "BRISTOL-MYERS SQUIBB COMPANY",
- "stand": "2026-11-23",
+ "stand": "2026-11-24",
  "quelle": "Google News (Wirtschaftsmedien, deutsch und englisch)",
  "meldungen": [
+  {
+   "titel": "Führungswechsel",
+   "quelle": "SEC-Meldung",
+   "link": "https://www.sec.gov/Archives/edgar/data/14272/000114036126045300/ef20086209_8k.htm",
+   "datum": "2026-11-23",
+   "sprache": "en",
+   "typ": "pm"
+  },
+  {
+   "titel": "Bristol Myers Squibb Announces Planned Chief Financial Officer Transition",
+   "quelle": "Unternehmen",
+   "link": "https://news.bms.com/news/details/2026/Bristol-Myers-Squibb-Announces-Planned-Chief-Financial-Officer-Transition/default.aspx",
+   "datum": "2026-11-23",
+   "sprache": "en",
+   "typ": "pm"
+  },
+  {
+   "titel": "Coca-Cola appoints Bristol Myers executive as finance chief",
+   "quelle": "Reuters",
+   "link": "https://news.google.com/rss/articles/CBMiigFBVV95cUxNS1VhWUc2T1hiQVdVb29mLXF6dEpMYV9RbThPRkUzM1VfN18tdmVfMlRGQVB4aERmX0Y3OXYyc1NmNmZhQUJTTkJLMW13NUcwaVJHV2l6RTlweV9xNVA5aHNOaFZ3dTJtT29QeDQzMlYyM1FuLTQ4MHRVTmFYOHVpWGZiNUVaNjFlV0E?oc=5",
+   "datum": "2026-11-23",
+   "sprache": "en"
+  },
   {
    "titel": "Bristol Myers Squibb Demonstrates Breadth and Clinical Momentum Across Blood Cancers and Rare Hematologic Disorders at ASH 2026",
    "quelle": "Unternehmen",
@@ -21,12 +44,11 @@
    "typ": "pm"
   },
   {
-   "titel": "Bristol Myers Squibb Announces Evolution of Research & Development Organization",
-   "quelle": "Unternehmen",
-   "link": "https://news.bms.com/news/details/2026/Bristol-Myers-Squibb-Announces-Evolution-of-Research--Development-Organization/default.aspx",
+   "titel": "Bristol Myers to merge scientific, clinical teams under new R&D structure",
+   "quelle": "Reuters",
+   "link": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxOTlVkRnRyQnBWQzcxbWVvOXgxMWt4SGhLVWhodC00aU5QUE5LT1ZSbHhRRG5iSzZTUW5ZSkV2T1dyUk5FTGpPWWxYMmE1QkYyRmt6bFo4a2dzcG45RzJyUUVTME1NRjRBUkdEb1ZXUjJhVmxHV1pqbG40VjljOFJvVEVsejc2cUhLa2loZFhHWVl0TGpWWWpNbGZCWHotRGVMdU1tTXQ3NkN2UFJKajZsUkFpS3JyQzY4SlZ1TUQtZlNFZU5makJjZGFXdjdzcldmSFFIUlctYw?oc=5",
    "datum": "2026-11-12",
-   "sprache": "en",
-   "typ": "pm"
+   "sprache": "en"
   }
  ]
 }

@@ -1,7 +1,7 @@
 {
  "hub": "FME.DE",
  "name": "Fresenius Medical Care",
- "stand": "2026-11-23",
+ "stand": "2026-11-24",
  "quelle": "Google News (Wirtschaftsmedien, deutsch und englisch)",
  "meldungen": [
   {
@@ -33,12 +33,25 @@
    "sprache": "de"
   },
   {
-   "titel": "Fresenius Medical Care places bond with a volume of 500 million Euros",
-   "quelle": "Unternehmen",
-   "link": "https://freseniusmedicalcare.com/en/media/newsroom/bond-with-a-volume-of-500-million-euros-2026/",
-   "datum": "2026-11-09",
-   "sprache": "en",
-   "typ": "pm"
+   "titel": "Fresenius Medical Care: FMC-Anleihen bieten vier Prozent Rendite",
+   "quelle": "WirtschaftsWoche",
+   "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxOZktPRGxUZ0VMc3JlaExMUDBULWdoa3RYbGdEUzRGUm5IVFV5bV9SM1FtMUZfRVZyeS1XczFrcUFlc3lqM0wwelNoUTRFYWlwb01OZkRyWEhUTWRvZUc1Nklmejh5aWRHTkhsVFhJWVA5ZTZrY29jeThvUXdzdTNBMkdRNmplZ2VQZ2hhMjh4UnBld2ZtTEJINENLakREWXgzV0Zxa1pYZkJHVHdnamN6ek5kUmw?oc=5",
+   "datum": "2026-11-12",
+   "sprache": "de"
+  },
+  {
+   "titel": "Fresenius entkoppelt sich weiter von FMC",
+   "quelle": "Börsen-Zeitung",
+   "link": "https://news.google.com/rss/articles/CBMivAFBVV95cUxNXzFBcFE4UVVVT1VSTURyZ2JRa2FKUEJRYmZuN3VycnBiZV9tVnQyY0FCT1djVUVYVFkyWVNkU3NvZWlibmZXbDRlelV2U3FmT0dPWjhSeVRDaTIxaDhrU3BDMXFaTlliaVg3b1BJbV9LWDRWakRxMGZGd180cFpQb0RwQmtlS1N0X1NKRXRGQXRtMEdqZ3oyaEhNd1NIekotRGpseTBPWlBwUjFoejJUS2JzbEx3el9ySVpnNQ?oc=5",
+   "datum": "2026-11-12",
+   "sprache": "de"
+  },
+  {
+   "titel": "Fresenius platziert ein Fünftel der FMC-Beteiligung",
+   "quelle": "Börsen-Zeitung",
+   "link": "https://news.google.com/rss/articles/CBMipgFBVV95cUxNYXNpSjVIdG56Q3E1TXhKSUlaa2luYXcxT09GXy0wcmVKalF3Q0FkNDNwQWota29Oc1NBNUlwUTEydVQxTHp2RDFybWFOYm5qRWVMV01Qal9yeGFHZHdMTVVTU1dobmNIeVpFbDNHYXRyMmJHSGZpUm1jVEl1bzd6SlJ4cHhmVC1BMHpReXRid0t2ekdGNC1LM0NVYkNsYkNtTEQ3UU9n?oc=5",
+   "datum": "2026-11-11",
+   "sprache": "de"
   }
  ]
 }

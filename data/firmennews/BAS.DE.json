@@ -1,9 +1,23 @@
 {
  "hub": "BAS.DE",
  "name": "BASF",
- "stand": "2026-11-23",
+ "stand": "2026-11-24",
  "quelle": "Google News (Wirtschaftsmedien, deutsch und englisch)",
  "meldungen": [
+  {
+   "titel": "BASF sucht nach Evonik-Scheitern weiter nach Übernahmezielen",
+   "quelle": "FAZ",
+   "link": "https://news.google.com/rss/articles/CBMixgFBVV95cUxOb29KTXZfZlFNUTlFaklSNFpOMFNsdmZ4cm9iYmlhUTZYdGwzRUNxOWNJRjFuU1FUeDdOZG1vYUVOcktlVEhhWlVLazJqVkpmS0x2ZTlZVW8zRjZDQkI2dTA1TF90XzhIY3l1akN3TzFHU2cwcGV0NDVKWXlYMUhPTVFoU0RETXJ3T0JRYW1vZ3pyOVRVOFpQUEN3YVFYbjMwWTFySXY1Wmlpczdqb2RqNWtOUllNX0p5Tm13cGNCSDF4YnV6T2c?oc=5",
+   "datum": "2026-11-24",
+   "sprache": "de"
+  },
+  {
+   "titel": "BASF wirbt mit erhofftem Umsatzsprung für IPO der Agrarsparte",
+   "quelle": "Börsen-Zeitung",
+   "link": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxNSlVlOGdVWGtES1FvT2xSLWYxZHVhc1AyYVYxWnlobzBDMlNBZTVWX29yZFo0TmN6QUgyclRrM2xrellkQ0FwUXVqV3Y3M2I3RUx0ZkdVa21nTUE3TjZnLUVEN05EVHV5NzdyLVlfd2VjU0FkV3VUUUhpTVJsWXpld1FWWjFEUkVsTnpXR3NGdHFUWUlXeG9GYjFlSjZ0aS1YRUI0VUVOdUtFcVYxb3NQTHJ4STJKVXg3WmlKS0VnOEUtMU0?oc=5",
+   "datum": "2026-11-24",
+   "sprache": "de"
+  },
   {
    "titel": "BASF: Chemieriese verkauft Batterierecycling an Aachener Firma Cylib",
    "quelle": "WirtschaftsWoche",
@@ -12,18 +26,18 @@
    "sprache": "de"
   },
   {
+   "titel": "BASF plant mit Übernahmen – aber nicht zu jedem Preis",
+   "quelle": "Börsen-Zeitung",
+   "link": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxNRnJxMDF0V19iNFBjM3ltZ2wtTEdJUkZlQnhtNUVua3Z3RDBIYTFxS0I3OVFYNkdoS3Z6N0FUM3B0N0JqVXpwTFRlZ1B0SWlWYm1pRlpub0wtOXVRWlZRRzJIYjBfOEZONjBNMnFZQW9odE5FMFVhLWxQQ05sQVRsdjZjcE5GM1FGajFKUW1hRXBUdFRXSGpNdUF6bk8zMmxtRkpQRjdRbGl3QQ?oc=5",
+   "datum": "2026-11-23",
+   "sprache": "de"
+  },
+  {
    "titel": "BASF Scales Back Battery Ambitions With Recycling Business Sale",
-   "quelle": "Bloomberg.com",
+   "quelle": "Bloomberg",
    "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxQamcxaHQzZGw5Ymlpem5ob1VTdnlwYmprVzBFZ19vRGc5bFo4ZDNSZ0ZoRE9sT0JpYWVuaTVheTlfX2pmZVlZOTVzSTY2YVBBSC1qUTZKM01FYVJlSWJUbFktSDJvRFFOQXdHVjF0dUtnRlp2eDZnTTNXY0U0Q2VUYjVxWmljQkdrUTktRHBrUDMtckoteE55QXNuYkdZTG5ObXE3QXdDUG9penZtQzRTQmtFd0Q?oc=5",
    "datum": "2026-11-23",
    "sprache": "en"
-  },
-  {
-   "titel": "Übernahme von Evonik abgesagt – die Pommes-Pleite der BASF",
-   "quelle": "FAZ",
-   "link": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxOckNleHNKOXI2SElVWUZjSUdvOWlLMnFGZ1hGZVRvVElSanZMRTdYdENERGY5WGVMLVhWZXFxRy1GdHcya1RZLUVpLTgtMnZtNkR4dmJTc29oR2s0TVNWT2tmcEwxNHN1akYxaDR6WHRCOWRDQkszeU1teHQ5cUlIS3BsS19kTzZQcEVTdDlvRk9YS3pOakJQOVhJUTk5MzZKenpQdHYzYUFIR3htdHhHYWtvMTkxUkQtTzN5QnY2UUI?oc=5",
-   "datum": "2026-11-20",
-   "sprache": "de"
   },
   {
    "titel": "Wie der BASF-Chef am NRW-Landesfürsten abprallte",
@@ -33,31 +47,17 @@
    "sprache": "de"
   },
   {
+   "titel": "Übernahme von Evonik abgesagt – die Pommes-Pleite der BASF",
+   "quelle": "FAZ",
+   "link": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxOckNleHNKOXI2SElVWUZjSUdvOWlLMnFGZ1hGZVRvVElSanZMRTdYdENERGY5WGVMLVhWZXFxRy1GdHcya1RZLUVpLTgtMnZtNkR4dmJTc29oR2s0TVNWT2tmcEwxNHN1akYxaDR6WHRCOWRDQkszeU1teHQ5cUlIS3BsS19kTzZQcEVTdDlvRk9YS3pOakJQOVhJUTk5MzZKenpQdHYzYUFIR3htdHhHYWtvMTkxUkQtTzN5QnY2UUI?oc=5",
+   "datum": "2026-11-20",
+   "sprache": "de"
+  },
+  {
    "titel": "Streit zwischen Evonik und RAG-Stiftung nach BASF-Rückzug",
    "quelle": "Börsen-Zeitung",
    "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxNelBZNnVnZExmUmh5aC1hWTdZSXBPTVpCWEp1OTlnbGlnUF96Uy1RcEtGYnNzeVRmUjJvLUsyRk1ETlVjakdac2xlVU1RZU1tc1pvdzcyQl9VcFd0NDFYYUU2bGJaS2ZXZGtRdXBXU1RHNmhHWFBXQUJxZG44NERaOHBsY2p4S3JoQUpLQ0VreUkwSHNCbE9kNmxMMHVvLUxDVHJLZHlvV3VuZGh6Sktz?oc=5",
    "datum": "2026-11-20",
-   "sprache": "de"
-  },
-  {
-   "titel": "RAG foundation still aims to cut Evonik stake after BASF exit",
-   "quelle": "Reuters",
-   "link": "https://news.google.com/rss/articles/CBMiogFBVV95cUxQTHZ3NjVvUDFhVWIzMzNnUHFKYXBvTzRVa1VoRV9panZCQ2tTRkF2cVNRUkc2UTFRNDFaZkdzZGZ3WmV5NFVGSDFCWnZYdlN0d2pfeHlJRmRyWk9uQVNCcnVXZWRENmxEMGhiSVlnRDczVEwyX2tRNWgyZVVGZVBKNGlCN3lNX2pKa3B4U0MwNk9ucTlGb1lnMElXbnRlWnJoYVE?oc=5",
-   "datum": "2026-11-20",
-   "sprache": "en"
-  },
-  {
-   "titel": "BASF und Evonik: Wieso es nicht zu der Riesenfusion kommt - Wirtschaft - SZ.de",
-   "quelle": "SZ.de",
-   "link": "https://news.google.com/rss/articles/CBMikwFBVV95cUxNNHBFMUx3Y3ltbHFLS2VsZ2lLZHhVSS1iR1RsNGNubGNGTEhjanNPY0Q2eVFnWUF5b2M4dFRTaGcxSnR3SldqZEZvb1duVXpSNi1Hbm1UeG01VUpWSVRzVkxNVlRzcTBHNk0ydGJ4Z3YweVhCWjVwclFZdUNicm1fb1NOMWVYZ3M1TXU0YXl4MUdXSVE?oc=5",
-   "datum": "2026-11-19",
-   "sprache": "de"
-  },
-  {
-   "titel": "Gespräche gescheitert: BASF sagt Evonik-Übernahme ab",
-   "quelle": "FAZ",
-   "link": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxONmpyQ0dOODJfLTlnZTZob1I4ZXhLcW4zdVRfRjF5cmxWUTNDQmhYaGlCTGlLeFJiVW5CMVM5Y3huQTI5dHZFM09FbWRyem5CeWZvV1VzaFNLM2NvSVdmelJDUk80eldURWowWlBlcHJQYlNGTFBOdUw2TzE3RDdxdDBtTHBnNFQ0T2MwR3VWV1Btckw5SjRIOTFKUmFSMEhDUDlUQjZnSEFvSDM1M3VobDNvUkdUQnY0RmVV?oc=5",
-   "datum": "2026-11-19",
    "sprache": "de"
   }
  ]

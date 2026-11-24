@@ -1,16 +1,7 @@
 {
  "hub": "TXN",
  "name": "TEXAS INSTRUMENTS INC",
- "stand": "2026-11-23",
+ "stand": "2026-11-24",
  "quelle": "Google News (Wirtschaftsmedien, deutsch und englisch)",
- "meldungen": [
-  {
-   "titel": "Sonstige Ereignisse",
-   "quelle": "SEC-Meldung",
-   "link": "https://www.sec.gov/Archives/edgar/data/97476/000119312526453606/d180182d8k.htm",
-   "datum": "2026-11-09",
-   "sprache": "en",
-   "typ": "pm"
-  }
- ]
+ "meldungen": []
 }

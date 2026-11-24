@@ -1,7 +1,22 @@
 {
  "hub": "DTG.DE",
  "name": "Daimler Truck",
- "stand": "2026-11-23",
+ "stand": "2026-11-24",
  "quelle": "Google News (Wirtschaftsmedien, deutsch und englisch)",
- "meldungen": []
+ "meldungen": [
+  {
+   "titel": "Daimler-Truck-Chefin ärgert sich wegen CO₂-Regulierung über EU-Politik",
+   "quelle": "Spiegel",
+   "link": "https://news.google.com/rss/articles/CBMi7AFBVV95cUxQdHE0R2Z2T3BaRlFyVTVxNF8xTFNpY05mU2JvSlhocHF0NE1yVlF6ZlFKR0t6R3VhSHpScU1pTnRrTlZoclF3UDVGUU82Rkd4ZWxiU3prVXVvSFhRNENnUl9hYkY0U3hLakp0WEtrZ3BUZ1RUQVRlYlZNX0xJUzg0eXRGYlI2LW8wMzdaMHV2MEhIdEl6S211b1BrRjRMU21TbFZlRmdyaFNsQWphS1hXcFFiSTdQdkJFaDJqQmg1Rm1kR29wYmp4dFZBUmJzNklIX3VwUWs1VDJVWUhtYjRNNXdvcDNTRUREVXpEWg?oc=5",
+   "datum": "2026-11-19",
+   "sprache": "de"
+  },
+  {
+   "titel": "Daimler Truck-Aktie: Unternehmen erholt sich",
+   "quelle": "WELT",
+   "link": "https://news.google.com/rss/articles/CBMitwFBVV95cUxQM2lpeW43WDZ4dmJDVGVGWTFFQThGejNzYnVtVHF5eEtWZjhuS1FNU2xyeWVmdDJfRThRR2oxVE1rVWx0Uml3dUlUZXRJNnlHNVZoRUQ1X2RkWE1zWW91Tl9OLVFDNzBYbG53RlppeERHVnczb0s5eHcxOVNpUzBoWHlHYl9qOFZUQlV2UlZ6X2FGUmRlM2YzNW5ZYlN4dVRMRU5Qa0k2MV84Y0NQczZuOUs0RUN5Y2M?oc=5",
+   "datum": "2026-11-16",
+   "sprache": "de"
+  }
+ ]
 }

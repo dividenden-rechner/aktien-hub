@@ -1,9 +1,31 @@
 {
  "hub": "MSFT",
  "name": "MICROSOFT CORP",
- "stand": "2026-11-23",
+ "stand": "2026-11-24",
  "quelle": "Google News (Wirtschaftsmedien, deutsch und englisch)",
  "meldungen": [
+  {
+   "titel": "Microsoft Corp. Research & Ratings | MSFTUS",
+   "quelle": "Barron's",
+   "link": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxQTnp0Snc4VXZVOHhUWHlRUF9UdUhRald0YlVXUDdzQnJNYmozNXVFeVNKX0Q5NjNYaEFLMVhuT1IwSzktWThyY3VScHNBdTBsako2cWdMRFhibWdsZHo2VXFVTWNkV3R4V3JISzR6UVNaV0hJMzFON1N2cm1ZaHltU0xMa1gtTEhV?oc=5",
+   "datum": "2026-11-23",
+   "sprache": "en"
+  },
+  {
+   "titel": "Marlowe Raises $277 Million to Bolster Alternatives to Nvidia Chips",
+   "quelle": "Bloomberg",
+   "link": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxPWElrT0d0TWI3UG1KQjQ2WERLM3pkeG5GbzdvcTktVGNkRkNLSmFZX2JnYkJ2RnZKSE5pak5saXJNR18yTVhqUGlMeGhfX1l2b0VqNGpGd0Z5d3hCNEFaUkJEOW5vaEFlNV9JdXNyVVRMRkZEM1laUmpfTWxqVUVjSlN5UkRQdHlGMVVPTHdpeTJnbUtRdzBGVDcxUUQta0pBbmliVjQ4aVRrT1RCaV9kOE9ncjBXaXlk?oc=5",
+   "datum": "2026-11-23",
+   "sprache": "en"
+  },
+  {
+   "titel": "4 cybersecurity steps every organization should take in the age of AI",
+   "quelle": "Unternehmen",
+   "link": "https://blogs.microsoft.com/on-the-issues/2026/11/19/security-fundamentals-to-enable-the-frontier/",
+   "datum": "2026-11-20",
+   "sprache": "en",
+   "typ": "pm"
+  },
   {
    "titel": "As AI agents take on more work, Microsoft makes Windows more secure",
    "quelle": "Unternehmen",
@@ -36,32 +58,10 @@
    "typ": "pm"
   },
   {
-   "titel": "Microsoft unveils 7 AI models for coding, image editing, voice and more",
-   "quelle": "Unternehmen",
-   "link": "https://microsoft.ai/news/microsoft-ignite-2026/",
-   "datum": "2026-11-18",
-   "sprache": "en",
-   "typ": "pm"
-  },
-  {
    "titel": "Microsoft Says Copilot Is Beating Anthropic, OpenAI on Price",
    "quelle": "Bloomberg.com",
    "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxNNXV4cTU5RmZrd3lGNGRVS2RXYUZFU1prYmhYQzhrSnNWdkRHWmF6N2RjT3RkTkVTb0ZpQWhnZ3hXc3c4S1RzUXdsWGRJMFlVQkloZmlhSWhQcjkwNVFfWGxqR3NtbHNmLWdzRTBMb1dCdFVhUlV2SnhYSUYwZTlZZ2dMRjJadm1McGtYS29PcHhNdG9XSGlOVDFHY1FacGRDOWFuamRFdnEyLTVaWl9F?oc=5",
    "datum": "2026-11-18",
-   "sprache": "en"
-  },
-  {
-   "titel": "Microsoft and Salesforce Announce Copilotforce, Bringing Trusted Customer Context and Action into Microsoft AI Experiences",
-   "quelle": "Microsoft Source",
-   "link": "https://news.google.com/rss/articles/CBMi-wFBVV95cUxORkZHWDR3ZUhncjV1akxHdlZHdTJwQkVTN19NODZGd3liaHlXZ2J1ejJVS1V5TGN6ejF3NElLUjVmR2FJa082Z2U4U3BoZnpuZUJ0czZRU0tfWHdMMmtwQ1luXzE4dUI5UzR0ckMzZTVrd2Eyc1RCX2N6cWF2TkgxVEQzajJtanhYYXhNODBpNXNrX25wX1hjeThhVEdodng5Wk9ydURmQ1k5aFh2ako0X005Y1NkcENsRXVwdy1rX29CWjVlOHp3RGV4NE9iRHpraDgxUk91RlZVLUNfcm1xbGNfdkVqSGRFVEUxZ1dqeDRqTmdVeEI3aXA1Zw?oc=5",
-   "datum": "2026-11-17",
-   "sprache": "en"
-  },
-  {
-   "titel": "Microsoft Executive Says Nvidia Drama Could Boost Rival Chips",
-   "quelle": "Bloomberg.com",
-   "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxPLWwzRzNXYmcyaDlBS192QWJBS0Rab2Fadm9ZTmJvQmJLVXAxbmJlX25vZ2VSVXJoNEh0Uk13WnUtY3RUajZJMU8wMERqcHUzZUVaaThhVjdSZ1E0VkE1Y2xock83TW9fdkF6X0lJb3lXSnpuSklFZ1hubmZTUzJVZWk1ckxWTkZuWWs2MVRJVWJTejR6dk1JRWpkMXJWUFNOaTJlLXZRb3NlZUx3dnhhTWx3?oc=5",
-   "datum": "2026-11-17",
    "sprache": "en"
   }
  ]

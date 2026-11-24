@@ -1,9 +1,32 @@
 {
  "hub": "KO",
  "name": "COCA COLA CO",
- "stand": "2026-11-23",
+ "stand": "2026-11-24",
  "quelle": "Google News (Wirtschaftsmedien, deutsch und englisch)",
  "meldungen": [
+  {
+   "titel": "Führungswechsel",
+   "quelle": "SEC-Meldung",
+   "link": "https://www.sec.gov/Archives/edgar/data/21344/000155278126000567/e26458_ko-8k.htm",
+   "datum": "2026-11-23",
+   "sprache": "en",
+   "typ": "pm"
+  },
+  {
+   "titel": "The Coca-Cola Company Names David Elkins as Incoming Chief Financial Officer",
+   "quelle": "Unternehmen",
+   "link": "https://investors.coca-colacompany.com/news-events/press-releases/detail/1178/the-coca-cola-company-names-david-elkins-as-incoming-chief-financial-officer",
+   "datum": "2026-11-23",
+   "sprache": "en",
+   "typ": "pm"
+  },
+  {
+   "titel": "Coca-Cola HBC Gets JSE Listing Nod Ahead of $2.6 Billion Deal",
+   "quelle": "Bloomberg",
+   "link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxPMy1XOWdiWW5TZmppa2R5X3FSSUR5YkI2WUNTcm9YWHdyTGZDWDMwSDBvUHkyX3B5emNyT2xMX1VKOTEwN1RMSmdQVkJWSnBKbjVjam14aklFaFFPekU3M2FFUlhQM3V2QUgyOEw2RUozSTNHWVhQS3JHem9XYkVHdXJLdXR6dkZQTDg0TlhBSkR0ZmtRRFVmc2lXNGpJOVgyQUxmX2pRREVxdlBEbjZ3dg?oc=5",
+   "datum": "2026-11-15",
+   "sprache": "en"
+  },
   {
    "titel": "The Coca-Cola Company Announces Participation in Morgan Stanley Global Consumer & Retail Conference",
    "quelle": "Unternehmen",

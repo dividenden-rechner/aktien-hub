@@ -1,7 +1,15 @@
 {
  "hub": "NA9.DE",
  "name": "Aurubis AG",
- "stand": "2026-11-23",
+ "stand": "2026-11-24",
  "quelle": "Google News (Wirtschaftsmedien, deutsch und englisch)",
- "meldungen": []
+ "meldungen": [
+  {
+   "titel": "Börsennachrichten & Aktienanalysen",
+   "quelle": "Börse Online",
+   "link": "https://news.google.com/rss/articles/CBMiwAJBVV95cUxPR1IwdFF4U0wtNlN0MDNLYjlHcUl0VjlvdE81VlhNVTEzbm5GdE5EdVJUc3VSVF9BQ3BhTVM0TlQxR01ESENjQzJBOXY2dWtHWG45WTk4M1hWcVoyNExlaTREaENYUzhIV2MxSTdicGY5N09BVjRPZFp3dkt5OTNRY20tUWl4bGFGMy0zZkFyaVp0by12V2VvelNXNzgxYXVmdlJfVDJIdHlLVjN0bXFVZ2ZjbUk1Q3VoRDBsRWJOaVBzeFI0Yzl4cFFZcDFGUklqd1lDV2ZtQkJGaTRzRnR5NzlQcTdVUnAySEFyb01LVGdqaUxTaTZzb2JkbjJXVVAzeEx5OWk5WEhRYzlvS2FDWGpVcXBzQVMxNVA0QUt2Skt2cktuVF9RMkpVQnJHaUlMUWEtc1FsRGtMWmtORExWMA?oc=5",
+   "datum": "2026-11-24",
+   "sprache": "de"
+  }
+ ]
 }
