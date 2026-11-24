@@ -8,3 +8,8 @@ So spielst du es ein:
 Neu:    news/index.html, favicon.ico, assets/favicon-32.png, assets/favicon-192.png, assets/apple-touch-icon.png
 Neu gebaut: screener/index.html (Kriterien-Baukasten)
 Geändert: assets/navigation.css (Header-Fix), alle anderen HTML-Seiten (Favicon, Menüpunkt News, Footer), aktien/index.html (Watchlist), datenschutz/index.html, sitemap.xml
+
+DIVIDENDENERHOEHUNGEN (24.11.2026)
+Wird irgendwo eine Dividendenerhoehung gemeldet (Artikel, Kurzmeldung, Pressemitteilung), kommt sie sofort als Eintrag in data/dividenden-termine.json
+(art "regulaer", betrag je Zahlung, zahltag, stichtag, meldung, quelle). tools/kennzahlen.py leitet daraus Jahresrate und Rendite ab (dividende_basis "aktuell"),
+das Dividenden-Chart im Aktien-Hub zeigt die Jahresrate als blassen Balken fuer das Jahr nach dem letzten SEC-Jahr. Der SEC-Lauf (dividenden_termine.py) ergaenzt das automatisch.
