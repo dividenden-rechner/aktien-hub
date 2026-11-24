@@ -6,7 +6,7 @@ Quelle: filings.xbrl.org (eingereichte ESEF-Jahresfinanzberichte). Maschinell au
 - davon geprüft: **3220**, offen: **0**
 - mit ESEF-Berichten: **1922**
 - im Hub (Börsenwert ab 1 Mrd. EUR): **724**; darunter: **1073**, ohne Aktienzahl: **123** (nicht angezeigt, Nachprüfung alle 90 Tage)
-- in diesem Lauf: 4 Emittenten abgerufen, 4 neue Berichte, 0 Fehler
+- in diesem Lauf: 0 Emittenten abgerufen, 0 neue Berichte, 0 Fehler
 
 ESEF gibt es erst ab Geschäftsjahr 2020 (teils 2021); ältere Jahre stehen nur in PDF-Berichten.
 
