@@ -30,7 +30,7 @@ h2{font-size:15px;margin:26px 0 10px;color:var(--mut);font-weight:600}
 .wlhead{display:flex;flex-wrap:wrap;align-items:baseline;gap:4px 14px;margin:26px 0 10px}.wlhead h2{margin:0;font-size:18px;color:var(--ink)}
 .wlsub{color:var(--mut);font-size:14px}.wlnews{display:inline-flex;align-items:center;gap:6px;font-size:13px;font-weight:600;color:#33414d;text-decoration:underline}.wlsub{flex-basis:100%}
 .wlfoot{display:flex;flex-wrap:wrap;gap:4px 22px;margin:14px 0 0}.wlfoot .sbtn{flex:none;margin:0;font-size:13px}
-.subnav{display:flex;flex-wrap:wrap;gap:4px 18px;margin:18px 0 0;border-bottom:1px solid var(--line)}.subnav a{padding:8px 2px;font-size:15px;font-weight:600;color:#33414d;text-decoration:none;border-bottom:2px solid transparent;margin-bottom:-1px}.subnav a:hover{color:#1a7a45}.subnav a[aria-current=page]{color:#1a7a45;border-bottom-color:#2f9e5b}
+.subnav{display:flex;flex-wrap:wrap;gap:2px 16px;margin:16px 0 0;border-bottom:1px solid var(--line)}.subnav a,.subnav button{padding:7px 0;font:inherit;font-size:13px;font-weight:500;color:var(--mut);text-decoration:none;border:0;border-bottom:2px solid transparent;margin-bottom:-1px;background:none;cursor:pointer}.subnav a:hover,.subnav button:hover{color:#1a7a45}.subnav button[aria-pressed=true]{color:#1a7a45;font-weight:700;border-bottom-color:#2f9e5b}.subnav .sep{flex:1}
 .chips{display:flex;flex-wrap:wrap;gap:8px;margin:0 0 10px}.chip{border:1px solid var(--line);border-radius:999px;background:#fff;padding:7px 14px;font:inherit;font-size:14px;color:#14202b;cursor:pointer}.chip:hover{background:#f0f8f3}.chip[aria-pressed=true]{background:#2f9e5b;border-color:#2f9e5b;color:#fff}
 .scrnote{color:var(--mut);font-size:13px;margin:0 0 8px;line-height:1.5}
 .scrh,.sr .it.scr{gap:8px}.scrh{display:flex;align-items:center;padding:6px 48px 6px 14px;border-bottom:1px solid var(--line);font-size:12px;color:var(--mut)}.scrh .nm{flex:1;min-width:0;padding-left:40px}.scrh button{border:0;background:none;font:inherit;color:inherit;cursor:pointer;padding:2px 0}.scrh button[aria-sort]{color:#14202b;font-weight:700}
@@ -238,14 +238,16 @@ svg text{fill:var(--mut);font-size:11px;font-family:inherit}
 <script>if(/key/.test(location.hash))document.getElementById("keyp").hidden=false</script>
 <p class="wlback" id="wlback" hidden><button class="sbtn" id="wlbackb" style="margin:0">← Zurück zur Watchlist</button></p>
 <section id="start">
-  <nav class="subnav" aria-label="Aktien"><a href="./" aria-current="page">Watchlist</a><a href="../dividende/">Dividenden</a><a href="../dividende/aristokraten/">Aristokraten &amp; Kings</a><a href="vergleich/">Vergleichen</a></nav>
+  <nav class="subnav" id="scrchips" aria-label="Auswahl"></nav>
+  <div id="wlsec">
   <div class="wlhead"><h2>Watchlist</h2></div>
   <div class="tiles" id="tiles"></div>
   <p class="wlfoot"><button class="sbtn" id="wlreset">Standardliste wiederherstellen</button><button class="sbtn" id="xmk">Indizes, Krypto &amp; Forex</button><a class="sbtn" href="vergleich/" style="display:inline-block">Aktien vergleichen</a></p>
-  <div class="wlhead" style="margin-top:34px"><h2>Aktien vorsortieren</h2><span class="wlsub">Vorauswahl aus den Hub-Daten, keine Empfehlung.</span></div>
-  <div class="chips" id="scrchips" role="group" aria-label="Vorauswahl"></div>
-  <p class="scrnote" id="scrnote">Wähle eine Auswahl, um passende Aktien nach Dividendenrendite sortiert zu sehen.</p>
-  <div id="scrtab"></div>
+  </div>
+  <div id="scrsec" hidden>
+    <p class="scrnote" id="scrnote"></p>
+    <div id="scrtab"></div>
+  </div>
 </section>
 <section id="hub" hidden></section>
 </main>
@@ -1535,11 +1537,14 @@ function story(S){
 /* Vorauswahl unter der Watchlist: nur vorhandene Hub-Daten (kennzahlen.json, universe.json, dividendenseiten.json) */
 const EUL=new Set("GB FR DE NL CH ES IT SE NO DK BE FI PL IE AT LU PT GR".split(" ")),ASL=new Set("KR HK SG CN TW IN TH MY ID".split(" "));
 const SCR={
+ wl:{t:"Watchlist"},
  typ:{t:"Typische Dividendenaktien",n:"Rendite 2–10 %, Ausschüttungsquote bis 75 %, Dividendenwachstum (5 J.) nicht negativ, Börsenwert ab 10 Mrd. €. Weltweit, sortiert nach Rendite."},
  sp:{t:"S&P 500",n:"Nicht der ganze Index: die 50 Dividendenzahler mit der höchsten Rendite (ab 1 %, Ausschüttungsquote bis 80 %)."},
  ar:{t:"Aristokraten",n:"Mindestens 25 Jahre in Folge erhöhte Dividende (Kings: 50+). Sortiert nach Jahren.",sort:"j"},
  eu:{t:"Europa",n:"Börsenwert ab 5 Mrd. €, Ausschüttungsquote bis 100 %. Sortiert nach Rendite."},
  jp:{t:"Japan",n:"Börsenwert ab 5 Mrd. €, Ausschüttungsquote bis 100 %. Sortiert nach Rendite."},
+ na:{t:"Nordamerika",n:"USA und Kanada, Börsenwert ab 10 Mrd. €, Rendite 1–15 %, Ausschüttungsquote bis 100 %. Sortiert nach Rendite."},
+ la:{t:"Lateinamerika",n:"Brasilien und Mexiko: Jahreszahlen liegen vor, Kurse bisher nicht, daher keine Rendite. Gelistet sind Firmen mit bekannter Ausschüttungsquote, sortiert danach.",sort:"aus"},
  as:{t:"Asien",n:"Südkorea, Hongkong, Singapur, China u. a. Bisher nur wenige Firmen mit Dividendendaten im Hub, die Liste ist entsprechend kurz."}
 };
 let SCRD=null,scrKey=null,scrSort="rendite",scrN=25;
@@ -1551,19 +1556,23 @@ function scrRows(key,D){
   for(const [s,v] of Object.entries(D.K)){
     const r=v.rendite,a=v.ausschuettung,m=v.boersenwert_eur||0,w=v.div_wachstum_5j;let ok=false;
     if(key==="ar")ok=!!D.ar[s];
+    else if(key==="la")ok=(v.land==="BR"||v.land==="MX")&&a!=null&&a>0&&a<=100;
     else if(r==null||!(r>0)||r>15)continue;
     else if(key==="typ")ok=r>=2&&r<=10&&a!=null&&a>0&&a<=75&&m>=10e9&&w!=null&&w>=0;
     else if(key==="sp")ok=D.sp.has(s)&&r>=1&&a!=null&&a>0&&a<=80;
     else if(key==="eu")ok=EUL.has(v.land)&&m>=5e9&&(a==null||a<=100);
     else if(key==="jp")ok=v.land==="JP"&&m>=5e9&&(a==null||a<=100);
+    else if(key==="na")ok=(v.land==="US"||v.land==="CA")&&m>=10e9&&r>=1&&(a==null||a<=100);
     else if(key==="as")ok=ASL.has(v.land)&&(a==null||a<=100);
     if(ok)out.push({s,n:scrName(D.ar[s]?D.ar[s].n:v.name)||s,land:v.land||"",rendite:r,aus:a,w5:w,kgv:v.kgv,j:D.ar[s]?D.ar[s].j:null})}
   if(key==="sp")out=out.sort((x,y)=>y.rendite-x.rendite).slice(0,50);
   return out}
 async function scrShow(key,more){
+  if(key==="wl"){scrKey="wl";$("wlsec").hidden=false;$("scrsec").hidden=true;document.querySelectorAll("#scrchips button").forEach(b=>b.setAttribute("aria-pressed",String(b.dataset.k==="wl")));return}
+  $("wlsec").hidden=true;$("scrsec").hidden=false;
   if(key!==scrKey){scrKey=key;scrSort=SCR[key].sort||"rendite";scrN=25}
   if(more)scrN+=25;
-  document.querySelectorAll("#scrchips .chip").forEach(b=>b.setAttribute("aria-pressed",String(b.dataset.k===key)));
+  document.querySelectorAll("#scrchips button").forEach(b=>b.setAttribute("aria-pressed",String(b.dataset.k===key)));
   $("scrnote").textContent=SCR[key].n;const box=$("scrtab");box.innerHTML='<p class="scrnote">Lade …</p>';
   const D=await scrLoad(),rows=scrRows(key,D);
   if(scrKey!==key)return;
@@ -1571,13 +1580,13 @@ async function scrShow(key,more){
   rows.sort((x,y)=>{const a=x[sk],b=y[sk];if(a==null&&b==null)return 0;if(a==null)return 1;if(b==null)return -1;return dir*(a-b)});
   if(!rows.length){box.innerHTML='<div class="wlempty">Für diese Auswahl liegen noch keine Daten vor.</div>';return}
   const isAr=key==="ar",cols=[["rendite","Rendite"],["aus","Quote"],["w5","Wachst."],isAr?["j","Jahre"]:["kgv","KGV"]];
-  const hd=`<div class="scrh"><span class="nm">${rows.length} Aktien</span>${cols.map(([k,t],i)=>`<span class="v${i===1||(i===3&&!isAr)?" k":""}"><button data-ss="${k}"${k===sk?` aria-sort="${dir<0?"descending":"ascending"}"`:""}>${t}${k===sk?(dir<0?" ↓":" ↑"):""}</button></span>`).join("")}</div>`;
+  const hd=`<div class="scrh"><span class="nm">${rows.length} Aktien</span>${cols.map(([k,t],i)=>`<span class="v${(i===1&&key!=="la")||(i===3&&!isAr)?" k":""}"><button data-ss="${k}"${k===sk?` aria-sort="${dir<0?"descending":"ascending"}"`:""}>${t}${k===sk?(dir<0?" ↓":" ↑"):""}</button></span>`).join("")}</div>`;
   const pc=v=>v==null?"–":num(v,1)+" %";
-  const body=rows.slice(0,scrN).map(r=>`<div class="sr"><button class="it scr" data-s="${esc(r.s)}">${img(r.s)}<span class="nm"><b>${esc(r.n)}</b><small>${esc(r.s)}${r.land?" · "+esc(r.land):""}</small></span><span class="v">${pc(r.rendite)}</span><span class="v k">${r.aus==null?"–":num(r.aus,0)+" %"}</span><span class="v">${pc(r.w5)}</span><span class="v${isAr?"":" k"}">${isAr?(r.j==null?"–":r.j):(r.kgv==null?"–":num(r.kgv,1))}</span></button><button class="wlp" data-wl="${esc(r.s)}" data-n="${esc(r.n)}" aria-label="Watchlist umschalten"></button></div>`).join("");
+  const body=rows.slice(0,scrN).map(r=>`<div class="sr"><button class="it scr" data-s="${esc(r.s)}">${img(r.s)}<span class="nm"><b>${esc(r.n)}</b><small>${esc(r.s)}${r.land?" · "+esc(r.land):""}</small></span><span class="v">${pc(r.rendite)}</span><span class="v${key==="la"?"":" k"}">${r.aus==null?"–":num(r.aus,0)+" %"}</span><span class="v">${pc(r.w5)}</span><span class="v${isAr?"":" k"}">${isAr?(r.j==null?"–":r.j):(r.kgv==null?"–":num(r.kgv,1))}</span></button><button class="wlp" data-wl="${esc(r.s)}" data-n="${esc(r.n)}" aria-label="Watchlist umschalten"></button></div>`).join("");
   box.innerHTML=hd+body+(rows.length>scrN?`<p class="wlfoot"><button class="sbtn scrmore" id="scrmore">Mehr anzeigen (${rows.length-scrN} weitere)</button></p>`:"");
   renderWL()}
-$("scrchips").innerHTML=Object.entries(SCR).map(([k,o])=>`<button class="chip" data-k="${k}" aria-pressed="false">${o.t}</button>`).join("");
-$("scrchips").addEventListener("click",e=>{const b=e.target.closest(".chip");if(b)scrShow(b.dataset.k)});
+$("scrchips").innerHTML=Object.entries(SCR).map(([k,o])=>`<button data-k="${k}" aria-pressed="${k==="wl"}">${o.t}</button>`).join("")+'<span class="sep"></span><a href="../dividende/">Dividenden</a><a href="vergleich/">Vergleichen</a>';
+$("scrchips").addEventListener("click",e=>{const b=e.target.closest("button[data-k]");if(b)scrShow(b.dataset.k)});
 $("scrtab").addEventListener("click",e=>{
   const h=e.target.closest("[data-ss]");if(h){scrSort=h.dataset.ss;scrN=25;scrShow(scrKey);return}
   if(e.target.closest("#scrmore"))scrShow(scrKey,true)});
