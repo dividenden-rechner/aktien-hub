@@ -26,10 +26,11 @@ Datei anklicken, dann Stift-Symbol: Zeile `draft: true` löschen und speichern, 
 | 29.10.2026 22:42 | Amazon steigert Umsatz im dritten Quartal auf 201,9 Milliarden Dollar | [79738970_2026-10-29/7757_2242-amazon-q3-2026-zahlen.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/79738970_2026-10-29/7757_2242-amazon-q3-2026-zahlen.md) |
 | 29.10.2026 10:12 | Shell erzielt im dritten Quartal 10,8 Milliarden Dollar Gewinn | [79738970_2026-10-29/8987_1012-shell-q3-2026-ergebnisse.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/79738970_2026-10-29/8987_1012-shell-q3-2026-ergebnisse.md) |
 
-### Online (473)
+### Online (474)
 
 | Datum | Titel | Datei |
 |---|---|---|
+| 24.11.2026 22:40 | Dell verdoppelt den Umsatz auf 54,9 Milliarden Dollar und hebt die Prognose um 10 Milliarden an | [79738875_2026-11-24/7719_2240-dell-quartalszahlen-umsatz-verdoppelt-prognose-plus-10-milliarden.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/79738875_2026-11-24/7719_2240-dell-quartalszahlen-umsatz-verdoppelt-prognose-plus-10-milliarden.md) |
 | 24.11.2026 16:57 | Sanofi kauft Insmed für 41,0 Milliarden US-Dollar in bar | [79738875_2026-11-24/8342_1657-sanofi-uebernahme-insmed-41-milliarden-usd.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/79738875_2026-11-24/8342_1657-sanofi-uebernahme-insmed-41-milliarden-usd.md) |
 | 24.11.2026 16:52 | Mosaic verkauft Ammoniakwerk für 600 Millionen US-Dollar an CF Industries | [79738875_2026-11-24/8347_1652-mosaic-verkauft-ammoniakwerk-an-cf-industries.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/79738875_2026-11-24/8347_1652-mosaic-verkauft-ammoniakwerk-an-cf-industries.md) |
 | 24.11.2026 16:39 | Bristol Myers Squibb benennt Kevin Dillon zum neuen CFO ab März 2027 | [79738875_2026-11-24/8360_1639-bristol-myers-squibb-neuer-cfo-2027.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/79738875_2026-11-24/8360_1639-bristol-myers-squibb-neuer-cfo-2027.md) |

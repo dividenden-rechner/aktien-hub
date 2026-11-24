@@ -13,6 +13,7 @@ image_credit: "Foto: Wikimedia Commons"
 logo_name: "Dell Technologies"
 logo_symbol: DELL
 logo_domain: dell.com
+logo_file: assets/logos/dell.png
 ---
 Dell hat am Dienstagabend die Erwartungen weit übertroffen. Im dritten Quartal des Geschäftsjahres 2027 (bis Ende Oktober) stieg der Umsatz um 103 % auf 54,9 Milliarden US-Dollar, Analysten hatten mit rund 49 Milliarden gerechnet. Der bereinigte Gewinn je Aktie lag bei 9,45 US-Dollar nach 2,59 vor einem Jahr, erwartet worden waren etwa 6,60. Für das Gesamtjahr stellt der Konzern jetzt 202 Milliarden US-Dollar Umsatz in Aussicht, 10 Milliarden mehr als zuletzt, und einen bereinigten Gewinn je Aktie von 29,68 US-Dollar.
 
