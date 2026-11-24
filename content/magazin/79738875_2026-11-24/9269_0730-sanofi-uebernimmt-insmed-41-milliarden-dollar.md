@@ -27,6 +27,12 @@ Insmed bringt zwei zugelassene Medikamente für Lungenerkrankungen mit. Brinsupr
 
 Sanofi zahlt mit Schulden und Barmitteln und hat die Finanzierung zugesagt bekommen. Der Konzern will rasch Schulden abbauen, sich ein starkes Kreditrating erhalten und die progressive Dividende fortführen. Der Zukauf soll bis Ende 2028 den bereinigten Gewinn je Aktie steigern, das operative Ergebnis soll ab 2027 positiv beitragen. Sanofi rechnet mit jährlichen Kostensynergien von über 500 Millionen US-Dollar, die Prognose für 2026 bleibt unverändert. Nach den Hub-Daten liegt die Dividendenrendite bei 4,5 % bei einer Ausschüttungsquote von 61 %, die Dividende ist in den vergangenen fünf Jahren im Schnitt um 4,5 % pro Jahr gewachsen.
 
+## Die Börse reagiert mit einem Kurssprung
+
+Die Sanofi-Aktie legte schon zur Eröffnung zu und zog am Nachmittag weiter an. Gegen 15:30 Uhr stand sie bei 92,13 Euro, 8,1 % über dem Vortagesschluss. Den Anlegern gefällt offenbar, dass Sanofi die Dividendenpolitik beibehält und den Zukauf mit einem klaren Plan zum Schuldenabbau verbindet.
+
+![Kurs der Sanofi-Aktie am 24. November 2026, Euronext Paris](/assets/magazin/sanofi-hub-kurs-tag.jpg)
+
 ## Der Hintergrund
 
 Sanofi muss das Wachstum nach dem absehbaren Patentablauf bei Dupixent absichern. Bloomberg hatte am 19. November über die Gespräche berichtet, die Insmed-Aktie sprang damals um rund 18 %. Analysten hatten zuvor bezweifelt, ob Sanofi mit rund 12 Milliarden Euro Nettoschulden einen Zukauf in dieser Größe tragen kann. Weitere Details zur Strategie will Sanofi am 9. Dezember 2026 vorstellen. Konzernchefin Belén Garijo spricht von einem „großen strategischen Schritt“, der die Wachstumskurve für die mittlere und lange Frist anhebe.
