@@ -1,69 +1,6 @@
 {
  "termine": [
   {
-   "sym": "AEE",
-   "name": "Ameren",
-   "art": "ergebnis",
-   "datum": "2026-11-06",
-   "betrag": "",
-   "waehrung": "",
-   "quelle": "https://www.sec.gov/Archives/edgar/data/1002910/000100291026000030/q32026ex991earningsrelease.htm"
-  },
-  {
-   "sym": "CPT",
-   "name": "Camden Property Trust",
-   "art": "ergebnis",
-   "datum": "2026-11-06",
-   "betrag": "",
-   "waehrung": "",
-   "quelle": "https://www.sec.gov/Archives/edgar/data/906345/000162828026071117/exhibit991earningsrelease3.htm"
-  },
-  {
-   "sym": "MTD",
-   "name": "Mettler Toledo",
-   "art": "ergebnis",
-   "datum": "2026-11-06",
-   "betrag": "",
-   "waehrung": "",
-   "quelle": "https://www.sec.gov/Archives/edgar/data/1037646/000103764626000072/ex-991mtd8xkq32026.htm"
-  },
-  {
-   "sym": "PPL",
-   "name": "PPL Corporation",
-   "art": "ergebnis",
-   "datum": "2026-11-06",
-   "betrag": "",
-   "waehrung": "",
-   "quelle": "https://www.sec.gov/Archives/edgar/data/922224/000092222426000050/ppl-9302026exhibit991.htm"
-  },
-  {
-   "sym": "REG",
-   "name": "Regency Centers",
-   "art": "ergebnis",
-   "datum": "2026-11-06",
-   "betrag": "",
-   "waehrung": "",
-   "quelle": "https://www.sec.gov/Archives/edgar/data/910606/000119312526450159/reg-ex99_1.htm"
-  },
-  {
-   "sym": "HSBC",
-   "name": "Hsbc Holdings Plc",
-   "art": "ergebnis",
-   "datum": "2026-11-09",
-   "betrag": "",
-   "waehrung": "",
-   "quelle": "https://www.sec.gov/Archives/edgar/data/1089113/000165495426009538/a8718b.htm"
-  },
-  {
-   "sym": "SNDK",
-   "name": "Sandisk",
-   "art": "dividende_exdatum",
-   "datum": "2026-11-09",
-   "betrag": "",
-   "waehrung": "",
-   "quelle": "https://www.sec.gov/Archives/edgar/data/2023554/000162828026068243/sndkq1-27ex991xpressrelease.htm"
-  },
-  {
    "sym": "HEN3.DE",
    "name": "Henkel",
    "art": "ergebnis",
@@ -469,6 +406,15 @@
    "quelle": "https://www.sec.gov/Archives/edgar/data/313807/000119312526464801/d188579dex991.htm"
   },
   {
+   "sym": "CRWD",
+   "name": "CrowdStrike",
+   "art": "ergebnis",
+   "datum": "2026-11-23",
+   "betrag": "",
+   "waehrung": "",
+   "quelle": "https://www.sec.gov/Archives/edgar/data/1535527/000110465926130785/tm2630454d1_ex99-1.htm"
+  },
+  {
    "sym": "MCHP",
    "name": "Microchip Technology",
    "art": "dividende_exdatum",
@@ -728,6 +674,15 @@
    "betrag": "",
    "waehrung": "",
    "quelle": "https://data.fca.org.uk/artefacts/NSM/RNS/48aa0308-1df7-41ca-bc4b-36d29cc7e68a.html"
+  },
+  {
+   "sym": "IP",
+   "name": "International Paper",
+   "art": "dividende_zahltag",
+   "datum": "2026-12-07",
+   "betrag": "",
+   "waehrung": "",
+   "quelle": "https://www.sec.gov/Archives/edgar/data/51434/000162828026075360/exhibit991-8xk.htm"
   },
   {
    "sym": "MUFG",

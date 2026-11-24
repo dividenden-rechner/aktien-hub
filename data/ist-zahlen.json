@@ -1,16 +1,6 @@
 {
  "items": [
   {
-   "sym": "SAP.DE",
-   "name": "SAP",
-   "datum": "2026-10-21",
-   "eps": 1.89,
-   "eps_basis": "bereinigt",
-   "revenue": 10270000000.0,
-   "waehrung": "EUR",
-   "quelle": "https://finviz.com/news/405805/sap-quarterly-statement-q3-2026"
-  },
-  {
    "sym": "BAS.DE",
    "name": "BASF",
    "datum": "2026-10-28",
@@ -1819,6 +1809,16 @@
    "revenue": 1990000000.0,
    "waehrung": "USD",
    "quelle": "https://www.sec.gov/Archives/edgar/data/719955/000071995526000244/exhibit991fy2026q3earnings.htm"
+  },
+  {
+   "sym": "CRWD",
+   "name": "CrowdStrike",
+   "datum": "2026-11-23",
+   "eps": 0.34,
+   "eps_basis": "bereinigt",
+   "revenue": 1580000000.0,
+   "waehrung": "USD",
+   "quelle": "https://www.sec.gov/Archives/edgar/data/1535527/000153552726000035/crwd-20261123xex991.htm"
   }
  ]
 }
