@@ -13,3 +13,7 @@ VORAB-ZAHLEN (24.11.2026)
 Kommen Jahreszahlen (Geschaeftsjahresende) per Ergebnismeldung, bevor der SEC-Jahresbericht in data/sec/fundamentals.json steht, werden Umsatz, Gewinn, EPS, operativer Cashflow, Capex
 (und was sonst berichtet wird) in data/sec/vorab.json eingetragen (firmen.<Kuerzel>: w, gj, meldung, k{...} in vollen Einheiten). Die Hub-Charts zeigen das Jahr sofort,
 mit dem Hinweis "vorlaeufig aus der Ergebnismeldung"; sobald die SEC das Jahr liefert, gilt deren Zahl. Nur volle Geschaeftsjahre, keine Quartale.
+DIVIDENDENERHOEHUNGEN (24.11.2026)
+Wird irgendwo eine Dividendenerhoehung gemeldet (Artikel, Kurzmeldung, Pressemitteilung), kommt sie sofort als Eintrag in data/dividenden-termine.json
+(art "regulaer", betrag je Zahlung, zahltag, stichtag, meldung, quelle). tools/kennzahlen.py leitet daraus Jahresrate und Rendite ab (dividende_basis "aktuell"),
+das Dividenden-Chart im Aktien-Hub zeigt die Jahresrate als blassen Balken fuer das Jahr nach dem letzten SEC-Jahr. Der SEC-Lauf (dividenden_termine.py) ergaenzt das automatisch.
