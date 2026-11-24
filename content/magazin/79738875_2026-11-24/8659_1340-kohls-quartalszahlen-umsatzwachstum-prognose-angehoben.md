@@ -10,6 +10,7 @@ quelle_name: "Pressemitteilung Kohl's vom 24. November 2026"
 logo_name: "Kohl's"
 logo_symbol: KSS
 logo_domain: kohls.com
+logo_file: assets/logos/kss.png
 ---
 Kohl's hat im dritten Quartal (bis 31. Oktober) 3,45 Milliarden US-Dollar umgesetzt, 1,3 % mehr als im Vorjahr. Die vergleichbaren Umsätze stiegen um 1,2 %. Der bereinigte Gewinn je Aktie lag bei 1,76 US-Dollar nach 0,10 vor einem Jahr, nach US-Rechnungslegung bei 2,15 US-Dollar. Dabei halfen Einmaleffekte: Zollerstattungen von rund 45 Millionen US-Dollar (0,28 US-Dollar je Aktie), ein Immobilienverkauf mit 0,39 und ein Steuervorteil mit 1,16 US-Dollar je Aktie.
 

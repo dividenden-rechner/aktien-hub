@@ -10,6 +10,7 @@ quelle_name: "Pressemitteilung Analog Devices vom 24. November 2026"
 logo_name: "Analog Devices"
 logo_symbol: ADI
 logo_domain: analog.com
+logo_file: assets/logos/adi.png
 ---
 Analog Devices hat das Geschäftsjahr 2026 (bis 31. Oktober) mit Rekordwerten beendet. Der Umsatz stieg im vierten Quartal um 42 % auf 4,4 Milliarden US-Dollar, im Gesamtjahr um 38 % auf 15,2 Milliarden. Der bereinigte Gewinn je Aktie lag im Quartal bei 4,06 US-Dollar nach 2,26 im Vorjahr, im Gesamtjahr bei 13,05 US-Dollar (plus 68 %). Nach US-Rechnungslegung verdiente der Konzern 10,21 US-Dollar je Aktie, mehr als doppelt so viel wie im Vorjahr.
 

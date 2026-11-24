@@ -26,10 +26,13 @@ Datei anklicken, dann Stift-Symbol: Zeile `draft: true` löschen und speichern, 
 | 29.10.2026 22:42 | Amazon steigert Umsatz im dritten Quartal auf 201,9 Milliarden Dollar | [79738970_2026-10-29/7757_2242-amazon-q3-2026-zahlen.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/79738970_2026-10-29/7757_2242-amazon-q3-2026-zahlen.md) |
 | 29.10.2026 10:12 | Shell erzielt im dritten Quartal 10,8 Milliarden Dollar Gewinn | [79738970_2026-10-29/8987_1012-shell-q3-2026-ergebnisse.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/79738970_2026-10-29/8987_1012-shell-q3-2026-ergebnisse.md) |
 
-### Online (467)
+### Online (470)
 
 | Datum | Titel | Datei |
 |---|---|---|
+| 24.11.2026 13:40 | Kohl's kehrt zum Umsatzwachstum zurück und hebt die Gewinnprognose an | [79738875_2026-11-24/8659_1340-kohls-quartalszahlen-umsatzwachstum-prognose-angehoben.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/79738875_2026-11-24/8659_1340-kohls-quartalszahlen-umsatzwachstum-prognose-angehoben.md) |
+| 24.11.2026 13:35 | Smucker hebt Gewinnprognose an, der Umsatz sinkt im zweiten Quartal um 2 Prozent | [79738875_2026-11-24/8664_1335-smucker-hebt-prognose-zollerstattungen-umsatz-minus-2-prozent.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/79738875_2026-11-24/8664_1335-smucker-hebt-prognose-zollerstattungen-umsatz-minus-2-prozent.md) |
+| 24.11.2026 13:30 | Analog Devices wächst im Geschäftsjahr 2026 um 38 Prozent und peilt weiter 4,4 Milliarden Dollar Quartalsumsatz an | [79738875_2026-11-24/8669_1330-analog-devices-geschaeftsjahr-2026-umsatz-plus-38-prozent.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/79738875_2026-11-24/8669_1330-analog-devices-geschaeftsjahr-2026-umsatz-plus-38-prozent.md) |
 | 24.11.2026 10:20 | Hormel erhöht die Dividende zum 61. Mal, aber nur noch um 1 Prozent | [79738875_2026-11-24/8979_1020-hormel-61-dividendenerhoehung-nur-ein-prozent.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/79738875_2026-11-24/8979_1020-hormel-61-dividendenerhoehung-nur-ein-prozent.md) |
 | 24.11.2026 07:30 | Sanofi kauft Insmed für 41 Milliarden Dollar: rund ein Drittel des eigenen Börsenwerts | [79738875_2026-11-24/9269_0730-sanofi-uebernimmt-insmed-41-milliarden-dollar.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/79738875_2026-11-24/9269_0730-sanofi-uebernimmt-insmed-41-milliarden-dollar.md) |
 | 24.11.2026 04:11 | CrowdStrike übernimmt Zscaler in einem 43,9-Milliarden-US-Dollar-Aktientausch | [79738875_2026-11-24/9588_0411-crowdstrike-uebernahme-zscaler-43-milliarden-us-dollar.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/79738875_2026-11-24/9588_0411-crowdstrike-uebernahme-zscaler-43-milliarden-us-dollar.md) |
