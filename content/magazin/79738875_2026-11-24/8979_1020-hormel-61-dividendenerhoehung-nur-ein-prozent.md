@@ -18,9 +18,9 @@ Stichtag ist der 11. Januar 2027, ausgezahlt wird am 16. Februar. Es ist die 394
 
 ## Die Dividende wächst langsamer
 
-Seit 2016 hat sich die Dividende je Aktie von 0,58 auf 1,16 US-Dollar verdoppelt. Der Anstieg verflacht sich allerdings: Seit 2023 legt sie nur noch um jeweils etwa drei Cent pro Jahr zu. Bei einem Kurs von gut 21 Euro liegt die Dividendenrendite bei 5,1 %.
+Seit 2016 hat sich die Dividende je Aktie von 0,58 auf 1,16 US-Dollar verdoppelt. Der Anstieg verflacht sich allerdings: Seit 2023 legt sie nur noch um jeweils etwa drei Cent pro Jahr zu. Der blasse Balken für 2026 zeigt die neue Jahresrate von 1,18 US-Dollar. Bei einem Kurs von gut 21 Euro liegt die Dividendenrendite bei 5,1 %.
 
-![Dividende je Aktie von Hormel Foods, Geschäftsjahre 2016 bis 2025](/assets/magazin/hormel-hub-dividende-je-aktie.jpg)
+![Dividende je Aktie von Hormel Foods, Geschäftsjahre 2017 bis 2025, 2026 mit der neuen Jahresrate (blass)](/assets/magazin/hormel-hub-dividende-je-aktie.jpg)
 
 ## Ist die Dividende gedeckt?
 

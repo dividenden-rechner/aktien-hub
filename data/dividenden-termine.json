@@ -1379,6 +1379,20 @@
 "meldung": "2026-11-04",
 "quelle": "https://www.sec.gov/Archives/edgar/data/751364/000075136426000002/nnn-ex99_1.htm"
 }
+],
+"HRL": [
+{
+"betrag": 0.295,
+"waehrung": "USD",
+"zahltag": "2027-02-16",
+"stichtag": "2027-01-11",
+"art": "regulaer",
+"beleg": "Hormel Foods Corporation announces increase to quarterly dividend to $0.295 per share, marking 61st consecutive year with a quarterly increase (annual rate $1.18).",
+"ex_tag": "2027-01-11",
+"meldung": "2026-11-23",
+"quelle": "https://finance.yahoo.com/markets/stocks/articles/hormel-foods-corporation-announces-increase-020000997.html",
+"eintrag": "manuell"
+}
 ]
 },
 "stand": "2026-11-24",

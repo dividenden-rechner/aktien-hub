@@ -789,8 +789,12 @@ async function openStock(sym){
   const thisY=String(new Date().getFullYear());
   const divsF=Object.keys(dy).sort().slice(-10).map(y=>({y,v:dy[y],part:y===thisY}));
   /* Dividende je Aktie: bevorzugt SEC (je Geschäftsjahr, beschlossen bzw. aus gezahlten Dividenden nachgerechnet) */
-  const divs=SD&&SD.dy.length?SD.dy.map(x=>({y:x.y,v:x.v,part:false})):divsF;
-  const divNote=SD&&SD.dy.length?"je Geschäftsjahr, "+esc(SD.cur)+(SD.dy.some(x=>x.ber)?"; teils nachgerechnet aus gezahlten Dividenden und Aktienzahl":"")+". Quelle: "+quelleText(SD.q,true):"Summe pro Jahr, "+esc(p.currency||"")+(divs.some(x=>x.part)?"; laufendes Jahr blass (unvollständig)":"");
+  let divs=SD&&SD.dy.length?SD.dy.map(x=>({y:x.y,v:x.v,part:false})):divsF;
+  let divNote=SD&&SD.dy.length?"je Geschäftsjahr, "+esc(SD.cur)+(SD.dy.some(x=>x.ber)?"; teils nachgerechnet aus gezahlten Dividenden und Aktienzahl":"")+". Quelle: "+quelleText(SD.q,true):"Summe pro Jahr, "+esc(p.currency||"")+(divs.some(x=>x.part)?"; laufendes Jahr blass (unvollständig)":"");
+  /* Beschlossene Dividende (Termine/Korrekturen, steht in KZ.dividende als Jahresrate): blasser Balken für das Jahr nach dem letzten SEC-Jahr, damit Erhöhungen sofort im Chart stehen */
+  if(SD&&SD.dy.length&&KZ&&KZ.dividende_basis==="aktuell"&&KZ.dividende>0&&(!KZ.waehrung||KZ.waehrung===SD.cur)){
+    const ny=+divs[divs.length-1].y+1;
+    if(ny<=+thisY){divs=divs.concat([{y:String(ny),v:KZ.dividende,part:true}]).slice(-10);divNote+="; "+ny+" blass: aktuelle Jahresrate aus dem jüngsten Dividendenbeschluss"}}
   /* Kurs */
   const pr=(Array.isArray(d.price)?d.price:[]).slice().reverse();
   const step=Math.max(1,Math.floor(pr.length/120));
