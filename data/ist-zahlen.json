@@ -1819,6 +1819,16 @@
    "revenue": 1580000000.0,
    "waehrung": "USD",
    "quelle": "https://www.sec.gov/Archives/edgar/data/1535527/000153552726000035/crwd-20261123xex991.htm"
+  },
+  {
+   "sym": "SJM",
+   "name": "J.M. Smucker Company (The)",
+   "datum": "2026-11-24",
+   "eps": 3.2,
+   "eps_basis": "bereinigt",
+   "revenue": null,
+   "waehrung": "US-D",
+   "quelle": "https://www.sec.gov/Archives/edgar/data/91419/000009141926000110/sjm20261124exhibit991.htm"
   }
  ]
 }

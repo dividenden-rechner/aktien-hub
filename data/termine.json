@@ -1279,6 +1279,15 @@
    "quelle": "https://www.sec.gov/Archives/edgar/data/1086222/000119312526452631/d137487dex991.htm"
   },
   {
+   "sym": "SNY",
+   "name": "Sanofi",
+   "art": "ergebnis",
+   "datum": "2027-06-30",
+   "betrag": "",
+   "waehrung": "",
+   "quelle": "https://www.sec.gov/Archives/edgar/data/1121404/000119312526473314/d130092dex991.htm"
+  },
+  {
    "sym": "DIS",
    "name": "Walt Disney Company (The)",
    "art": "dividende_zahltag",
