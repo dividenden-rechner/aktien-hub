@@ -26,10 +26,11 @@ Datei anklicken, dann Stift-Symbol: Zeile `draft: true` löschen und speichern, 
 | 29.10.2026 22:42 | Amazon steigert Umsatz im dritten Quartal auf 201,9 Milliarden Dollar | [79738970_2026-10-29/7757_2242-amazon-q3-2026-zahlen.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/79738970_2026-10-29/7757_2242-amazon-q3-2026-zahlen.md) |
 | 29.10.2026 10:12 | Shell erzielt im dritten Quartal 10,8 Milliarden Dollar Gewinn | [79738970_2026-10-29/8987_1012-shell-q3-2026-ergebnisse.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/79738970_2026-10-29/8987_1012-shell-q3-2026-ergebnisse.md) |
 
-### Online (465)
+### Online (466)
 
 | Datum | Titel | Datei |
 |---|---|---|
+| 24.11.2026 07:30 | Sanofi kauft Insmed für 41 Milliarden Dollar: rund ein Drittel des eigenen Börsenwerts | [79738875_2026-11-24/9269_0730-sanofi-uebernimmt-insmed-41-milliarden-dollar.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/79738875_2026-11-24/9269_0730-sanofi-uebernimmt-insmed-41-milliarden-dollar.md) |
 | 24.11.2026 04:11 | CrowdStrike übernimmt Zscaler in einem 43,9-Milliarden-US-Dollar-Aktientausch | [79738875_2026-11-24/9588_0411-crowdstrike-uebernahme-zscaler-43-milliarden-us-dollar.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/79738875_2026-11-24/9588_0411-crowdstrike-uebernahme-zscaler-43-milliarden-us-dollar.md) |
 | 24.11.2026 04:11 | CrowdStrike: Bereinigter Gewinn je Aktie steigt im Q3 auf 0,34 US-Dollar | [79738875_2026-11-24/9588_0411-crowdstrike-q3-geschaeftsjahr-2027-zahlen-zscaler-uebernahme.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/79738875_2026-11-24/9588_0411-crowdstrike-q3-geschaeftsjahr-2027-zahlen-zscaler-uebernahme.md) |
 | 24.11.2026 04:10 | International Paper spaltet DS Smith ab und zieht sich aus London zurück | [79738875_2026-11-24/9589_0410-international-paper-abspaltung-ds-smith-dezember-2026.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/79738875_2026-11-24/9589_0410-international-paper-abspaltung-ds-smith-dezember-2026.md) |
