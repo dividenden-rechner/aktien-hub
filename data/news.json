@@ -1,6 +1,53 @@
 {
- "updated": "2026-11-24T13:43:11.179436+00:00",
+ "updated": "2026-11-24T23:54:18.717581+00:00",
  "items": [
+  {
+   "sym": "GOOGL",
+   "name": "Alphabet",
+   "title": "Sonstige Ereignisse",
+   "link": "https://www.sec.gov/Archives/edgar/data/1652044/000119312526475973/d91615d8k.htm",
+   "date": "2026-11-24T21:49:44+00:00",
+   "text": "",
+   "quelle": "SEC",
+   "kat": "Sonstige Ereignisse",
+   "form": "8-K"
+  },
+  {
+   "sym": "AMZN",
+   "name": "Amazon",
+   "title": "Great Ormond Street Hospital announces first-of-its-kind agentic AI programme in an NHS hospital, in collaboration with Hyland and Amazon Web Services",
+   "link": "https://press.aboutamazon.com/2026/11/great-ormond-street-hospital-announces-first-of-its-kind-agentic-ai-programme-in-an-nhs-hospital-in-collaboration-with-hyland-and-amazon-web-services",
+   "date": "2026-11-24T16:55:50+00:00",
+   "text": "Great Ormond Street Hospital (GOSH) is collaborating with Hyland and Amazon Web Services (AWS) on a first-of-its-kind programme exploring how agentic AI could be safely developed and deployed in healthcare. The programme will establish governance frameworks and evaluate the technology's ability to automate repetitive tasks while maintaining accuracy and human oversight.",
+   "quelle": "RSS"
+  },
+  {
+   "sym": "AMZN",
+   "name": "Amazon",
+   "title": "Mirae Asset Securities Makes Accessing Product Information Faster and More Trustworthy with AWS",
+   "link": "https://press.aboutamazon.com/aws/2026/11/mirae-asset-securities-makes-accessing-product-information-faster-and-more-trustworthy-with-aws",
+   "date": "2026-11-24T14:40:40+00:00",
+   "text": "[MEDIA ALERT]– Ontology-based knowledge graph links financial product data with some 13,000 disclosure and research documents; AI agents built on Amazon Bedrock answer a single question with the source and as-of date– Mirae Asset Securities’ Innovative Financial Service, launched to employees in August after passing the Financial Security Institute’s AI security assessment; more than 450 employees ran over 2,000 complex queries in two months",
+   "quelle": "RSS"
+  },
+  {
+   "sym": "SY1.DE",
+   "name": "Symrise",
+   "title": "Working at Symrise. Do what inspires you. New employer brand connects personal inspiration with career opportunities",
+   "link": "/newsroom/article/working-at-symrise-do-what-inspires-you-new-employer-brand-connects-personal-inspiration-with-career-opportunities/",
+   "date": "2026-11-24T14:35:54+00:00",
+   "text": "– Highlights how individual strengths, experiences and passions connect with opportunities at Symrise\n– Redesigned Careers pages make professional fields and opportunities across different experience levels easier to explore\n– Individual strengths and ambitions at the heart of the new employer brand",
+   "quelle": "RSS"
+  },
+  {
+   "sym": "VZ",
+   "name": "Verizon",
+   "title": "Verizon offers two months of free home internet plus holiday deals",
+   "link": "https://www.verizon.com/about/news/home-internet-two-months-free-holidays",
+   "date": "2026-11-24T12:27:30+00:00",
+   "text": "New Verizon Fios, Frontier Fiber and 5G Home internet customers get two months of home internet on us.Through Nov. 30, add additional offers including a Samsung TV bundle or a Meta Glasses credit.",
+   "quelle": "RSS"
+  },
   {
    "sym": "SAP.DE",
    "name": "SAP",
@@ -8,6 +55,15 @@
    "link": "https://news.sap.com/2026/11/how-atlas-copco-group-makes-skills-visible-throughout-organization/",
    "date": "2026-11-24T12:15:00+00:00",
    "text": "Becoming a skills-enabled organization starts with the way you think about talent.",
+   "quelle": "RSS"
+  },
+  {
+   "sym": "VZ",
+   "name": "Verizon",
+   "title": "5 ways to improve family holiday activities this year",
+   "link": "https://www.verizon.com/about/parenting/streaming-holidays-family-playlists",
+   "date": "2026-11-24T11:30:11+00:00",
+   "text": "See how you can use tech for family holiday activities from kid-friendly movie nights and AI music playlists to sharing holiday photos and making memories together.",
    "quelle": "RSS"
   },
   {
@@ -29,12 +85,30 @@
    "quelle": "RSS"
   },
   {
+   "sym": "VZ",
+   "name": "Verizon",
+   "title": "2026 holiday iPhone 18 Pro deals: Simplicity Plan & loyalty perks for Black Friday",
+   "link": "https://www.verizon.com/about/news/best-iphone-deals-trade-in-simplicity-loyalty",
+   "date": "2026-11-24T04:05:00+00:00",
+   "text": "iPhone 18 Pro holiday deals at Verizon: Apple Watch Series 12 and iPad (A16) on us with new lines on connected device plans this Black Friday, the $30 Simplicity Plan, no activation or upgrade fees with Loyalty.",
+   "quelle": "RSS"
+  },
+  {
    "sym": "2269.HK",
    "name": "WuXi Biologics",
    "title": "WuXi Biologics Again Honored with Frost & Sullivan’s Global Customer Value Leadership Recognition",
    "link": "https://www.wuxibiologics.com/press-release/wuxi-biologics-again-honored-with-frost-sullivans-global-customer-value-leadership-recognition/",
    "date": "2026-11-24T00:30:22+00:00",
    "text": "Shanghai, Nov 24, 2026 – WuXi Biologics (2269.HK), a leading global Contract Research, Development, and Manufacturing Organization (CRDMO), today announced that it has received Frost & Sullivan’s 2026 Global Customer Value Leadership Recognition for the second consecutive year. Frost & Sullivan’s recognition highlights WuXi Biologics’ comprehensive capabilities in helping biopharmaceutical companies navigate critical challenges […]",
+   "quelle": "RSS"
+  },
+  {
+   "sym": "VOW3.DE",
+   "name": "Volkswagen",
+   "title": "Start of negotiations in Emden: Volkswagen AG reaffirms its demands and the need for action",
+   "link": "https://www.volkswagen-group.com/en/press-releases/start-of-negotiations-in-emden-volkswagen-ag-reaffirms-its-demands-and-the-need-for-action-20888",
+   "date": "2026-11-24T00:00:00+00:00",
+   "text": "Today, the negotiating committees of Volkswagen AG and IG Metall met in Emden for the first session of the 2026 collective bargaining talks. The discussion focused on the demands that the company submitted to the union last Thursday. These include a pay freeze for 2027 and 2028, the elimination of special payments and pay components negotiated by the company and IG Metall in economically stronger times, as well as safeguard and pay compensation mechanisms.\nRead on",
    "quelle": "RSS"
   },
   {
@@ -114,6 +188,24 @@
    "quelle": "SEC",
    "kat": "Führungswechsel",
    "form": "8-K"
+  },
+  {
+   "sym": "MSFT",
+   "name": "Microsoft",
+   "title": "3 questions that can help universities turn AI experiments into results",
+   "link": "https://www.microsoft.com/en-us/education/blog/2026/11/how-higher-education-leaders-can-turn-institutional-intelligence-into-impact/",
+   "date": "2026-11-23T19:37:01+00:00",
+   "text": "The post 3 questions that can help universities turn AI experiments into results appeared first on Source.",
+   "quelle": "RSS"
+  },
+  {
+   "sym": "MSFT",
+   "name": "Microsoft",
+   "title": "How Microsoft Discovery helps scientists learn from failure and find new possibilities",
+   "link": "https://techcommunity.microsoft.com/blog/microsoft-discovery-blog/three-things-you-should-know-about-microsoft-discovery/4574970",
+   "date": "2026-11-23T19:32:13+00:00",
+   "text": "The post How Microsoft Discovery helps scientists learn from failure and find new possibilities appeared first on Source.",
+   "quelle": "RSS"
   },
   {
    "sym": "NVDA",
@@ -210,7 +302,7 @@
   {
    "sym": "SAP.DE",
    "name": "SAP",
-   "title": "Interview with Sindhu Gangadharan: “I Want People to Say ‘That Idea Started in India'”",
+   "title": "Interview with Sindhu Gangadharan: “I Want People to Say ‘That Idea Started in India’”",
    "link": "https://news.sap.com/2026/11/interview-sindhu-gangadharan-sap-labs-india/",
    "date": "2026-11-23T05:15:00+00:00",
    "text": "As SAP's biggest R&D base outside Walldorf, SAP Labs India sits at the center of the company's AI ambitions. Managing Director Sindhu Gangadharan explains why the location matters.",
@@ -871,15 +963,6 @@
    "quelle": "RSS"
   },
   {
-   "sym": "MSFT",
-   "name": "Microsoft",
-   "title": "Our ambition with everything we are announcing at Ignite today is to parlay technological advances into real outcomes and new points of leverage for people, organizations, and society at large. [Read more]",
-   "link": "https://www.linkedin.com/feed/update/urn:li:activity:7528555595000545281/",
-   "date": "2026-11-18T00:33:00+00:00",
-   "text": "The post Our ambition with everything we are announcing at Ignite today is to parlay technological advances into real outcomes and new points of leverage for people, organizations, and society at large. [Read more] appeared first on Source.",
-   "quelle": "RSS"
-  },
-  {
    "sym": "2269.HK",
    "name": "WuXi Biologics",
    "title": "Early-Stage Developability Assessment | Webinars | WuXi Biologics",
@@ -967,15 +1050,6 @@
    "form": "8-K"
   },
   {
-   "sym": "MSFT",
-   "name": "Microsoft",
-   "title": "Microsoft Ignite 2026: Empowering human ambition, intelligence and trust",
-   "link": "https://news.microsoft.com/source/2026/11/17/microsoft-ignite-2026-empowering-human-ambition-intelligence-and-trust/",
-   "date": "2026-11-17T18:36:03+00:00",
-   "text": "The post Microsoft Ignite 2026: Empowering human ambition, intelligence and trust appeared first on Source.",
-   "quelle": "RSS"
-  },
-  {
    "sym": "AMZN",
    "name": "Amazon",
    "title": "New Whole Foods Market in Westlake Village, California, to Open December 17",
@@ -1027,24 +1101,6 @@
    "link": "https://blogs.nvidia.com/blog/ian-buck-sc26/",
    "date": "2026-11-17T14:00:10+00:00",
    "text": "",
-   "quelle": "RSS"
-  },
-  {
-   "sym": "AMZN",
-   "name": "Amazon",
-   "title": "LSEG Risk Intelligence expands World-Check One cloud infrastructure in APAC with Singapore deployment",
-   "link": "https://press.aboutamazon.com/aws/2026/11/lseg-risk-intelligence-expands-world-check-one-cloud-infrastructure-in-apac-with-singapore-deployment",
-   "date": "2026-11-17T14:00:00+00:00",
-   "text": "[MEDIA ALERT]New Singapore deployment provides customers with additional regional hosting and data processing optionsBrings World-Check One infrastructure closer to Asia Pacific (APAC) customers, supporting lower-latency screening and improved user experienceExpansion reflects continued investment in meeting the evolving data governance and operational needs of customers across APAC",
-   "quelle": "RSS"
-  },
-  {
-   "sym": "AMZN",
-   "name": "Amazon",
-   "title": "ANZ completes major cloud data transformation, strengthening data foundations to improve customer experiences",
-   "link": "https://press.aboutamazon.com/aws/2026/11/anz-completes-major-cloud-data-transformation-strengthening-data-foundations-to-improve-customer-experiences",
-   "date": "2026-11-17T14:00:00+00:00",
-   "text": "[MEDIA ALERT]",
    "quelle": "RSS"
   },
   {
@@ -1101,15 +1157,6 @@
    "link": "https://news.sap.com/2026/11/gxp-compliance-life-sciences-sap-raising-standard/",
    "date": "2026-11-17T12:15:00+00:00",
    "text": "Supporting good practice across enterprise systems is more critical than ever.",
-   "quelle": "RSS"
-  },
-  {
-   "sym": "VZ",
-   "name": "Verizon",
-   "title": "Your holiday guide to tech gifts for kids",
-   "link": "https://www.verizon.com/about/parenting/tech-gifts-for-kids",
-   "date": "2026-11-17T11:29:01+00:00",
-   "text": "Looking for tech gifts for kids this holiday season? Explore what parents should know about gaming consoles, smartphones and other technology for kids.",
    "quelle": "RSS"
   },
   {
@@ -1315,24 +1362,6 @@
    "quelle": "SEC",
    "kat": "Führungswechsel",
    "form": "8-K"
-  },
-  {
-   "sym": "VZ",
-   "name": "Verizon",
-   "title": "Cool tech gifts for kids and teens",
-   "link": "https://www.verizon.com/about/parenting/cool-tech-gifts-kids-and-teens",
-   "date": "2026-11-16T11:31:24+00:00",
-   "text": "Tech gifts for kids and teens by age, plus how to get the Gizmo Watch 4 on us with a new line on an Unlimited watch plan.",
-   "quelle": "RSS"
-  },
-  {
-   "sym": "VZ",
-   "name": "Verizon",
-   "title": "Ready for Cyber Five? Quick tips to avoid online shopping scams",
-   "link": "https://www.verizon.com/about/parenting/online-shopping-scams",
-   "date": "2026-11-16T11:31:24+00:00",
-   "text": "Cyber Five brings lots of deals and plenty of opportunities for online shopping scams. Learn online shopping safety tips to help your family shop safely this holiday season.",
-   "quelle": "RSS"
   },
   {
    "sym": "6981.T",
@@ -4338,26 +4367,6 @@
    "date": "2026-09-28T00:00:00+00:00",
    "text": "Volkswagen Group, PowerCo SE and Gotion High-tech have agreed to deepen their strategic partnership and jointly accelerate the development of a regional battery supply chain for Europe. Building on their cooperation since 2020, the partners agreed on establishing three joint ventures at the Valencia (Spain), Šurany (Slovak Republic) and Kenitra (Morocco) sites for the industrial production of LFP battery cells and cathode material. The agreement also covers joint procurement and sales activities in Europe. Separately, Volkswagen Group has announced that it has entered into definitive agreements to sell 5.3 % equity stake in Gotion to optimize equity structures and support long-term strategic synergies. Upon completion of the transaction, Volkswagen will continue to hold a significant stake in Gotion.\nRead on",
    "quelle": "RSS"
-  },
-  {
-   "sym": "XOM",
-   "name": "Exxon Mobil",
-   "title": "Sonstige Ereignisse",
-   "link": "https://www.sec.gov/Archives/edgar/data/2115436/000119312526402986/d15072d8k.htm",
-   "date": "2026-09-25T21:20:49+00:00",
-   "text": "",
-   "quelle": "SEC",
-   "kat": "Sonstige Ereignisse",
-   "form": "8-K"
-  },
-  {
-   "sym": "KO",
-   "name": "Coca-Cola",
-   "title": "The Coca-Cola Company Names Rob Gehring President of North America Operating Unit",
-   "link": "https://investors.coca-colacompany.com/news-events/press-releases/detail/1172/the-coca-cola-company-names-rob-gehring-president-of-north-america-operating-unit",
-   "date": "2026-09-25T20:15:00+00:00",
-   "text": "",
-   "quelle": "RSS"
   }
  ],
  "errors": [
@@ -4383,11 +4392,11 @@
   },
   {
    "sym": "MRK",
-   "fehler": "HTTP Error 429: Too Many Requests"
+   "fehler": "HTTP Error 402: Payment Required"
   },
   {
    "sym": "O",
-   "fehler": "HTTP Error 429: Too Many Requests"
+   "fehler": "HTTP Error 402: Payment Required"
   },
   {
    "sym": "V",
@@ -4395,23 +4404,23 @@
   },
   {
    "sym": "JPM",
-   "fehler": "HTTP Error 429: Too Many Requests"
+   "fehler": "HTTP Error 402: Payment Required"
   },
   {
    "sym": "CVX",
-   "fehler": "HTTP Error 429: Too Many Requests"
+   "fehler": "HTTP Error 402: Payment Required"
   },
   {
    "sym": "MCD",
-   "fehler": "HTTP Error 429: Too Many Requests"
+   "fehler": "HTTP Error 402: Payment Required"
   },
   {
    "sym": "HD",
-   "fehler": "HTTP Error 429: Too Many Requests"
+   "fehler": "HTTP Error 402: Payment Required"
   },
   {
    "sym": "TXN",
-   "fehler": "HTTP Error 429: Too Many Requests"
+   "fehler": "HTTP Error 402: Payment Required"
   },
   {
    "sym": "AVGO",
@@ -4419,7 +4428,7 @@
   },
   {
    "sym": "CSCO",
-   "fehler": "HTTP Error 429: Too Many Requests"
+   "fehler": "HTTP Error 402: Payment Required"
   },
   {
    "sym": "MDLZ",
@@ -4431,163 +4440,163 @@
   },
   {
    "sym": "GOOGL",
-   "fehler": "HTTP Error 429: Too Many Requests"
+   "fehler": "HTTP Error 402: Payment Required"
   },
   {
    "sym": "SIE.DE",
-   "fehler": "HTTP Error 429: Too Many Requests"
+   "fehler": "HTTP Error 402: Payment Required"
   },
   {
    "sym": "ALV.DE",
-   "fehler": "HTTP Error 429: Too Many Requests"
+   "fehler": "HTTP Error 402: Payment Required"
   },
   {
    "sym": "MBG.DE",
-   "fehler": "HTTP Error 429: Too Many Requests"
+   "fehler": "HTTP Error 402: Payment Required"
   },
   {
    "sym": "BMW.DE",
-   "fehler": "HTTP Error 429: Too Many Requests"
+   "fehler": "HTTP Error 402: Payment Required"
   },
   {
    "sym": "BAS.DE",
-   "fehler": "HTTP Error 429: Too Many Requests"
+   "fehler": "HTTP Error 402: Payment Required"
   },
   {
    "sym": "MUV2.DE",
-   "fehler": "HTTP Error 429: Too Many Requests"
+   "fehler": "HTTP Error 402: Payment Required"
   },
   {
    "sym": "DHL.DE",
-   "fehler": "HTTP Error 429: Too Many Requests"
+   "fehler": "HTTP Error 402: Payment Required"
   },
   {
    "sym": "ADS.DE",
-   "fehler": "HTTP Error 429: Too Many Requests"
+   "fehler": "HTTP Error 402: Payment Required"
   },
   {
    "sym": "RWE.DE",
-   "fehler": "HTTP Error 429: Too Many Requests"
+   "fehler": "HTTP Error 402: Payment Required"
   },
   {
    "sym": "EOAN.DE",
-   "fehler": "HTTP Error 429: Too Many Requests"
+   "fehler": "HTTP Error 402: Payment Required"
   },
   {
    "sym": "DBK.DE",
-   "fehler": "HTTP Error 429: Too Many Requests"
+   "fehler": "HTTP Error 402: Payment Required"
   },
   {
    "sym": "ASML.AS",
-   "fehler": "HTTP Error 429: Too Many Requests"
+   "fehler": "HTTP Error 402: Payment Required"
   },
   {
    "sym": "MC.PA",
-   "fehler": "HTTP Error 429: Too Many Requests"
+   "fehler": "HTTP Error 402: Payment Required"
   },
   {
    "sym": "OR.PA",
-   "fehler": "HTTP Error 429: Too Many Requests"
+   "fehler": "HTTP Error 402: Payment Required"
   },
   {
    "sym": "TTE.PA",
-   "fehler": "HTTP Error 429: Too Many Requests"
+   "fehler": "HTTP Error 402: Payment Required"
   },
   {
    "sym": "SAN.PA",
-   "fehler": "HTTP Error 429: Too Many Requests"
+   "fehler": "HTTP Error 402: Payment Required"
   },
   {
    "sym": "SU.PA",
-   "fehler": "HTTP Error 429: Too Many Requests"
+   "fehler": "HTTP Error 402: Payment Required"
   },
   {
    "sym": "NESN.SW",
-   "fehler": "HTTP Error 429: Too Many Requests"
+   "fehler": "HTTP Error 402: Payment Required"
   },
   {
    "sym": "NOVN.SW",
-   "fehler": "HTTP Error 429: Too Many Requests"
+   "fehler": "HTTP Error 402: Payment Required"
   },
   {
    "sym": "ROG.SW",
-   "fehler": "HTTP Error 429: Too Many Requests"
+   "fehler": "HTTP Error 402: Payment Required"
   },
   {
    "sym": "UBSG.SW",
-   "fehler": "HTTP Error 429: Too Many Requests"
+   "fehler": "HTTP Error 402: Payment Required"
   },
   {
    "sym": "NOVO-B.CO",
-   "fehler": "HTTP Error 429: Too Many Requests"
+   "fehler": "HTTP Error 402: Payment Required"
   },
   {
    "sym": "ULVR.L",
-   "fehler": "HTTP Error 429: Too Many Requests"
+   "fehler": "HTTP Error 402: Payment Required"
   },
   {
    "sym": "SHEL.L",
-   "fehler": "HTTP Error 429: Too Many Requests"
+   "fehler": "HTTP Error 402: Payment Required"
   },
   {
    "sym": "AZN.L",
-   "fehler": "HTTP Error 429: Too Many Requests"
+   "fehler": "HTTP Error 402: Payment Required"
   },
   {
    "sym": "BP.L",
-   "fehler": "HTTP Error 429: Too Many Requests"
+   "fehler": "HTTP Error 402: Payment Required"
   },
   {
    "sym": "ENEL.MI",
-   "fehler": "HTTP Error 429: Too Many Requests"
+   "fehler": "HTTP Error 402: Payment Required"
   },
   {
    "sym": "ISP.MI",
-   "fehler": "HTTP Error 429: Too Many Requests"
+   "fehler": "HTTP Error 402: Payment Required"
   },
   {
    "sym": "IBE.MC",
-   "fehler": "HTTP Error 429: Too Many Requests"
+   "fehler": "HTTP Error 402: Payment Required"
   },
   {
    "sym": "TSM",
-   "fehler": "HTTP Error 429: Too Many Requests"
+   "fehler": "HTTP Error 402: Payment Required"
   },
   {
    "sym": "9988.HK",
-   "fehler": "HTTP Error 429: Too Many Requests"
+   "fehler": "HTTP Error 402: Payment Required"
   },
   {
    "sym": "0700.HK",
-   "fehler": "HTTP Error 429: Too Many Requests"
+   "fehler": "HTTP Error 402: Payment Required"
   },
   {
    "sym": "7203.T",
-   "fehler": "HTTP Error 429: Too Many Requests"
+   "fehler": "HTTP Error 402: Payment Required"
   },
   {
    "sym": "6758.T",
-   "fehler": "HTTP Error 429: Too Many Requests"
+   "fehler": "HTTP Error 402: Payment Required"
   },
   {
    "sym": "BHP.AX",
-   "fehler": "HTTP Error 429: Too Many Requests"
+   "fehler": "HTTP Error 402: Payment Required"
   },
   {
    "sym": "0027.HK",
-   "fehler": "HTTP Error 429: Too Many Requests"
+   "fehler": "HTTP Error 402: Payment Required"
   },
   {
    "sym": "RELIANCE.NS",
-   "fehler": "HTTP Error 429: Too Many Requests"
+   "fehler": "HTTP Error 402: Payment Required"
   },
   {
    "sym": "TATAMOTORS.NS",
-   "fehler": "HTTP Error 429: Too Many Requests"
+   "fehler": "HTTP Error 402: Payment Required"
   },
   {
    "sym": "HEI.DE",
-   "fehler": "HTTP Error 429: Too Many Requests"
+   "fehler": "HTTP Error 402: Payment Required"
   },
   {
    "sym": "FRE.DE",
@@ -4603,15 +4612,15 @@
   },
   {
    "sym": "HOLN.SW",
-   "fehler": "HTTP Error 429: Too Many Requests"
+   "fehler": "HTTP Error 402: Payment Required"
   },
   {
    "sym": "DGE.L",
-   "fehler": "HTTP Error 429: Too Many Requests"
+   "fehler": "HTTP Error 402: Payment Required"
   },
   {
    "sym": "REL.L",
-   "fehler": "HTTP Error 429: Too Many Requests"
+   "fehler": "HTTP Error 402: Payment Required"
   },
   {
    "sym": "AAL.L",
@@ -4619,7 +4628,7 @@
   },
   {
    "sym": "NOKIA.HE",
-   "fehler": "HTTP Error 429: Too Many Requests"
+   "fehler": "HTTP Error 402: Payment Required"
   },
   {
    "sym": "FRE.DE",
