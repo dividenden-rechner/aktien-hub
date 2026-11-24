@@ -8,3 +8,8 @@ So spielst du es ein:
 Neu:    news/index.html, favicon.ico, assets/favicon-32.png, assets/favicon-192.png, assets/apple-touch-icon.png
 Neu gebaut: screener/index.html (Kriterien-Baukasten)
 Geändert: assets/navigation.css (Header-Fix), alle anderen HTML-Seiten (Favicon, Menüpunkt News, Footer), aktien/index.html (Watchlist), datenschutz/index.html, sitemap.xml
+
+VORAB-ZAHLEN (24.11.2026)
+Kommen Jahreszahlen (Geschaeftsjahresende) per Ergebnismeldung, bevor der SEC-Jahresbericht in data/sec/fundamentals.json steht, werden Umsatz, Gewinn, EPS, operativer Cashflow, Capex
+(und was sonst berichtet wird) in data/sec/vorab.json eingetragen (firmen.<Kuerzel>: w, gj, meldung, k{...} in vollen Einheiten). Die Hub-Charts zeigen das Jahr sofort,
+mit dem Hinweis "vorlaeufig aus der Ergebnismeldung"; sobald die SEC das Jahr liefert, gilt deren Zahl. Nur volle Geschaeftsjahre, keine Quartale.
