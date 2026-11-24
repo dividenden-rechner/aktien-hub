@@ -150,7 +150,6 @@ article.wide>:not(.tool):not(.cards){max-width:760px}
 .keybar{display:flex;flex-wrap:wrap;gap:10px;align-items:center;margin:0 0 1rem;font-size:.9rem;color:#4b5563}
 .tool .keybar button{padding:.4rem .85rem;font-size:.85rem}
 .tool h3.sec{margin:1.5rem 0 .6rem;font-size:1.05rem;color:#111827}
-.addrow select#addcrit{width:100%;font:inherit;font-size:1rem;padding:.8rem .9rem;border:1px solid var(--border);border-radius:6px;background:#fff;color:var(--ink);cursor:pointer}
 .crithint{margin:.7rem 0;padding:.9rem 1rem;border:1px dashed var(--border);border-radius:8px;color:#4b5563;font-size:.93rem}
 #crits{margin:.7rem 0 0}
 .crit{display:flex;flex-wrap:wrap;align-items:center;gap:8px 10px;padding:10px 12px;border:1px solid var(--border);border-radius:8px;margin:0 0 8px;background:#fff}
@@ -189,6 +188,61 @@ article.wide>:not(.tool):not(.cards){max-width:760px}
 .tool .xw td.l{max-width:260px;overflow:hidden;text-overflow:ellipsis}
 .tool .xw tbody tr:hover td{background:#f7fbf9}
 .legend-x{font-size:.8rem;color:#6b7280;margin:8px 0 0}
+/* Kriterien-Auswahl: Suche, Reiter, Liste, Kriterien-Box */
+.tool .rt,.tool .kztabs{display:flex;gap:2px 22px;overflow-x:auto;white-space:nowrap;scrollbar-width:none;border-bottom:1px solid var(--border)}
+.tool .rt::-webkit-scrollbar,.tool .kztabs::-webkit-scrollbar,.tool .rt2::-webkit-scrollbar{display:none}
+.tool .rt{margin:0 0 .2rem}
+.tool .rt button,.tool .kztabs button{all:unset;box-sizing:border-box;cursor:pointer;display:inline-flex;align-items:center;flex:none;min-height:44px;font-size:14px;color:#5b6573;border-bottom:3px solid transparent}
+.tool .rt button[aria-pressed=true],.tool .kztabs button[aria-selected=true]{color:var(--ink);font-weight:700;border-bottom-color:var(--primary)}
+.tool .rt2{display:flex;gap:2px 18px;overflow-x:auto;white-space:nowrap;scrollbar-width:none;margin:0 0 .6rem;min-height:36px}
+.tool .rt2 button{all:unset;box-sizing:border-box;cursor:pointer;display:inline-flex;align-items:center;flex:none;min-height:36px;font-size:13px;color:#5b6573;border-bottom:2px solid transparent}
+.tool .rt2 button[aria-pressed=true]{color:var(--ink);font-weight:700;border-bottom-color:var(--primary)}
+.tool .rt button:focus-visible,.tool .rt2 button:focus-visible,.tool .kztabs button:focus-visible,.tool .kzi:focus-visible,.tool .kzfav button:focus-visible{outline:2px solid var(--primary);outline-offset:-2px}
+.kz{display:grid;grid-template-columns:minmax(0,1fr) 360px;gap:24px;align-items:start;margin-top:.4rem}
+.kzpick{border:1px solid var(--border);border-radius:8px;overflow:hidden;min-width:0}
+.tool #kzsearch{display:block;width:calc(100% - 24px);margin:12px;font:inherit;font-size:16px;min-height:44px;padding:0 12px;border:1px solid #c7cdd4;border-radius:6px;background:#fff;color:var(--ink)}
+.kzfav{display:flex;flex-wrap:wrap;gap:0 18px;align-items:center;padding:0 16px 6px;font-size:14px}
+.kzfav .lbl{font-size:12px;font-weight:600;color:#5b6573;letter-spacing:.04em;flex:1 1 100%}
+.tool .kzfav button{all:unset;cursor:pointer;display:inline-flex;align-items:center;min-height:30px;color:var(--primary-d);font-weight:600;font-size:14px}
+.tool .kztabs{padding:0 16px;border-top:1px solid var(--border)}
+.kzlist{display:grid;grid-template-columns:repeat(2,minmax(0,1fr))}
+.tool .kzi{all:unset;box-sizing:border-box;cursor:pointer;display:flex;justify-content:space-between;align-items:center;gap:10px;min-height:44px;padding:0 16px;border-bottom:1px solid #eef0f2;font-size:14px;line-height:1.3}
+.tool .kzi:hover{background:#f7fbf9}
+.tool .kzi[aria-pressed=true]{background:#f1f8e6}
+.tool .kzi .kzm{flex:none;color:var(--primary-d);font-weight:600;font-size:13px}
+.tool .kzi:not([aria-pressed=true]) .kzm{font-size:20px}
+.kzempty{grid-column:1/-1;padding:16px;color:#5b6573;font-size:14px}
+.kzbox{border:1px solid var(--border);border-radius:8px;background:#fff;position:sticky;top:12px;min-width:0}
+.tool .kzhead{all:unset;box-sizing:border-box;display:flex;justify-content:space-between;align-items:center;width:100%;min-height:46px;padding:0 16px;border-bottom:1px solid var(--border);font-size:12px;letter-spacing:.04em;font-weight:600;color:#5b6573;text-transform:uppercase;cursor:default}
+.kzhead #kztoggle{display:none;text-transform:none;letter-spacing:0;font-size:13px;color:var(--primary-d);cursor:pointer}
+.kzbody{padding:0 16px}
+.kzbox .crithint{margin:12px 0;border:0;padding:0;font-size:.9rem}
+.kzbox #crits{margin:0}
+.kzbox .crit{position:relative;border:0;border-bottom:1px solid #eef0f2;border-radius:0;margin:0;padding:12px 0}
+.kzbox .crit .cname{flex:1 1 100%;padding-right:28px}
+.kzbox .crit .crm{position:absolute;top:8px;right:-6px}
+.kzbox .btnrow{margin:0;padding:12px 16px 14px;border-top:1px solid var(--border)}
+.kzbox .btnrow .main-action-btn{flex:1 1 100%;min-height:46px}
+@media(max-width:759px){
+.kz{grid-template-columns:1fr;gap:0}
+.kzlist{grid-template-columns:1fr}
+.tool .kzi{min-height:48px;font-size:15px}
+.kzfav{display:none}
+.kzbox{position:sticky;top:auto;bottom:0;z-index:20;border-radius:0;border-width:1px 0 0;margin:0 -16px;box-shadow:0 -4px 12px rgba(20,24,31,.1)}
+.tool .kzhead{cursor:pointer;text-transform:none;letter-spacing:0;font-size:14px;color:var(--ink)}
+.tool .kzhead #kztoggle{display:inline}
+.kzbody{max-height:42vh;overflow-y:auto}
+.kzbox.closed .kzbody{display:none}
+.kzbox .crit{padding:8px 0;gap:6px 8px}
+.kzbox .crit .cname{flex:1 1 0;min-width:70px;padding-right:0}
+.kzbox .crit .cname small{display:none}
+.kzbox .crit .crm{position:static;margin-left:-4px}
+.kzbox .crit input{width:56px;min-height:40px;padding:0 8px}
+.kzbox .crit select{min-height:40px;max-width:112px;padding:0 2px}
+.kzbox .crit .cname{font-size:.85rem}
+.kzbox .crit .cname b{font-size:.85rem}
+.kzbox .btnrow{padding:10px 16px 12px}
+}
 @media(max-width:560px){.crit input{width:78px}.mode{grid-template-columns:1fr}}
 
 </style>
@@ -219,11 +273,23 @@ article.wide>:not(.tool):not(.cards){max-width:760px}
 <p class="note-small">Pro Symbol wird zuerst das Profil geladen, danach nur noch für Aktien, die bisher alle Kriterien erfüllen.</p></div>
 <div class="chips" aria-label="Vorlagen"><span class="lbl">Vorlagen:</span><span id="tpls" class="chips" style="margin:0"></span></div>
 <div class="chips"><span class="lbl" id="savedlbl" hidden>Gespeichert:</span><span id="savedchips" class="chips" style="margin:0" hidden></span></div>
-<div class="form-container basisfilter"><div class="form-group"><label for="f-country">Land oder Region</label><select id="f-country"><option value="">Alle Länder und Regionen</option><optgroup label="Europa"><option value="R:EU">Europa gesamt</option><option value="DE">Deutschland</option><option value="AT">Österreich</option><option value="CH">Schweiz</option><option value="FR">Frankreich</option><option value="NL">Niederlande</option><option value="BE">Belgien</option><option value="LU">Luxemburg</option><option value="IT">Italien</option><option value="ES">Spanien</option><option value="PT">Portugal</option><option value="IE">Irland</option><option value="GB">Großbritannien</option><option value="JE">Jersey</option><option value="DK">Dänemark</option><option value="SE">Schweden</option><option value="NO">Norwegen</option><option value="FI">Finnland</option></optgroup><optgroup label="Nordamerika"><option value="R:NA">Nordamerika gesamt</option><option value="US">USA</option><option value="CA">Kanada</option><option value="BM">Bermuda</option></optgroup><optgroup label="Asien und Pazifik"><option value="R:AP">Asien und Pazifik gesamt</option><option value="JP">Japan</option><option value="AU">Australien</option><option value="HK">Hongkong</option><option value="SG">Singapur</option><option value="KR">Südkorea</option><option value="TW">Taiwan</option><option value="CN">China</option><option value="IN">Indien</option></optgroup><optgroup label="Lateinamerika und Rest"><option value="R:RW">Lateinamerika und Rest gesamt</option><option value="BR">Brasilien</option><option value="MX">Mexiko</option><option value="ZA">Südafrika</option><option value="IL">Israel</option></optgroup></select></div><div class="form-group"><label for="f-sector">Sektor</label><select id="f-sector"><option value="">Alle Sektoren</option><option value="Technology">Technologie</option><option value="Healthcare">Gesundheit</option><option value="Financial Services">Finanzdienstleistungen</option><option value="Consumer Defensive">Basiskonsumgüter</option><option value="Consumer Cyclical">Zyklischer Konsum</option><option value="Industrials">Industrie</option><option value="Energy">Energie</option><option value="Utilities">Versorger</option><option value="Real Estate">Immobilien</option><option value="Basic Materials">Grundstoffe</option><option value="Communication Services">Kommunikation</option></select></div></div>
+<div class="rt" id="rtabs" role="group" aria-label="Region"></div><div class="rt2" id="rtabs2" role="group" aria-label="Land"></div>
+<div class="form-container basisfilter"><div class="form-group" style="display:none"><label for="f-country">Land oder Region</label><select id="f-country"><option value="">Alle Länder und Regionen</option><optgroup label="Europa"><option value="R:EU">Europa gesamt</option><option value="DE">Deutschland</option><option value="AT">Österreich</option><option value="CH">Schweiz</option><option value="FR">Frankreich</option><option value="NL">Niederlande</option><option value="BE">Belgien</option><option value="LU">Luxemburg</option><option value="IT">Italien</option><option value="ES">Spanien</option><option value="PT">Portugal</option><option value="IE">Irland</option><option value="GB">Großbritannien</option><option value="JE">Jersey</option><option value="DK">Dänemark</option><option value="SE">Schweden</option><option value="NO">Norwegen</option><option value="FI">Finnland</option></optgroup><optgroup label="Nordamerika"><option value="R:NA">Nordamerika gesamt</option><option value="US">USA</option><option value="CA">Kanada</option><option value="BM">Bermuda</option></optgroup><optgroup label="Asien und Pazifik"><option value="R:AP">Asien und Pazifik gesamt</option><option value="JP">Japan</option><option value="AU">Australien</option><option value="HK">Hongkong</option><option value="SG">Singapur</option><option value="KR">Südkorea</option><option value="TW">Taiwan</option><option value="CN">China</option><option value="IN">Indien</option></optgroup><optgroup label="Lateinamerika und Rest"><option value="R:RW">Lateinamerika und Rest gesamt</option><option value="BR">Brasilien</option><option value="MX">Mexiko</option><option value="ZA">Südafrika</option><option value="IL">Israel</option></optgroup></select></div><div class="form-group"><label for="f-sector">Sektor</label><select id="f-sector"><option value="">Alle Sektoren</option><option value="Technology">Technologie</option><option value="Healthcare">Gesundheit</option><option value="Financial Services">Finanzdienstleistungen</option><option value="Consumer Defensive">Basiskonsumgüter</option><option value="Consumer Cyclical">Zyklischer Konsum</option><option value="Industrials">Industrie</option><option value="Energy">Energie</option><option value="Utilities">Versorger</option><option value="Real Estate">Immobilien</option><option value="Basic Materials">Grundstoffe</option><option value="Communication Services">Kommunikation</option></select></div></div>
 <h3 class="sec">Kriterien</h3>
-<div class="addrow"><select id="addcrit" aria-label="Kennzahl als Kriterium hinzufügen"></select></div>
-<div class="crithint" id="crithint">Noch keine Kriterien. Wähle oben eine Kennzahl, zum Beispiel „Dividendenrendite“ oder „Ausschüttungsquote“, stelle „größer als“ oder „kleiner als“ ein und gib einen Wert ein. Du kannst beliebig viele Kriterien kombinieren, oder eine Vorlage laden.</div>
-<div id="crits"></div>
+<div class="kz">
+<div class="kzpick">
+<input id="kzsearch" type="search" placeholder="Kennzahl suchen, z. B. Rendite, KGV, Schulden" aria-label="Kennzahl suchen" autocomplete="off">
+<div class="kzfav" id="kzfav"></div>
+<div class="kztabs" id="kztabs" role="tablist" aria-label="Bereich"></div>
+<div class="kzlist" id="kzlist"></div>
+</div>
+<div class="kzbox" id="kzbox">
+<button type="button" class="kzhead" id="kzhead" aria-expanded="true"><b id="kzcount">Meine Kriterien (0)</b><span id="kztoggle">Zuklappen</span></button>
+<div class="kzbody"><div class="crithint" id="crithint">Noch keine Kriterien. Wähle eine Kennzahl aus der Liste, zum Beispiel „Dividendenrendite“ oder „Ausschüttungsquote“, stelle „größer als“ oder „kleiner als“ ein und gib einen Wert ein. Du kannst beliebig viele Kriterien kombinieren, oder eine Vorlage laden.</div>
+<div id="crits"></div></div>
+<div class="btnrow"><button type="button" class="main-action-btn" id="go">Screener starten</button><button type="button" class="ghost" id="stop">Abbrechen</button><button type="button" class="ghost" id="clear">Kriterien leeren</button></div>
+</div>
+</div>
 <details class="moreopt"><summary>Weitere Optionen</summary>
 <div class="form-container">
 <div class="form-group"><label for="f-exchange">Börse</label><select id="f-exchange"><option value="">Alle Börsen</option><option value="NASDAQ">NASDAQ</option><option value="NYSE">NYSE</option><option value="AMEX">AMEX</option><option value="XETRA">XETRA</option><option value="LSE">London (LSE)</option></select></div>
@@ -233,7 +299,6 @@ article.wide>:not(.tool):not(.cards){max-width:760px}
 <div class="form-group" style="justify-content:flex-end"><label style="display:flex;gap:8px;align-items:center;margin:0 0 .6rem"><input type="checkbox" id="f-etf" checked style="width:auto"> ETFs und Fonds ausschließen</label></div>
 </div></details>
 <div class="saverow"><input id="savename" placeholder="Name für diese Kriterien" aria-label="Name der Vorlage" maxlength="40"><button type="button" class="ghost" id="save">Als Vorlage speichern</button></div>
-<div class="btnrow"><button type="button" class="main-action-btn" id="go">Screener starten</button><button type="button" class="ghost" id="stop">Abbrechen</button><button type="button" class="ghost" id="clear">Kriterien leeren</button></div>
 <p class="status" id="status" role="status" aria-live="polite"></p>
 <div class="xhead2" id="actions" hidden><b id="count"></b><div class="sp"><button type="button" class="ghost" id="towl">In Watchlist übernehmen</button><button type="button" class="ghost" id="copy">Symbole kopieren</button><button type="button" class="ghost" id="tolist">In eigene Liste</button><button type="button" class="ghost" id="csv">CSV speichern</button></div></div>
 <div id="res"></div>
@@ -511,10 +576,41 @@ article.wide>:not(.tool):not(.cards){max-width:760px}
     var m = CAT[id]; if (!m) return;
     var d = document.createElement("div"); d.innerHTML = rowHTML(m, c); var el = d.firstChild; $("crits").appendChild(el);
     el.querySelector(".crm").onclick = function () { el.remove(); emptyHint(); };
+    $("kzbox").classList.remove("closed"); $("kztoggle").textContent = "Zuklappen"; $("kzhead").setAttribute("aria-expanded", "true");
     el.querySelector(".cop").onchange = function (e) { var b = e.target.value === "btw"; el.querySelector(".cand").hidden = !b; el.querySelector(".cv2").hidden = !b; };
     emptyHint();
   }
-  function emptyHint() { $("crithint").hidden = $("crits").children.length > 0; }
+  function emptyHint() {
+    var n = $("crits").children.length; $("crithint").hidden = n > 0; $("kzcount").textContent = "Meine Kriterien (" + n + ")";
+    if (PK.ready) renderPicker();
+  }
+  var PK = { ready: false, tab: "Dividende", groups: [] };
+  var PREF = ["Dividende", "Bewertung", "Wachstum", "Profit", "Bilanz", "Cashflow", "Größe", "Qualität", "REITs"];
+  var FAV = ["yield", "payout", "pe", "divstreak", "mcap"];
+  function gShort(n) { return n.indexOf("Größe") === 0 ? "Größe" : n.indexOf("Profitab") === 0 ? "Profit" : n.indexOf("Bilanz") === 0 ? "Bilanz" : n.indexOf("Cashflow") === 0 ? "Cashflow" : n.indexOf("Qualität") === 0 ? "Qualität" : n.indexOf("REITs") === 0 ? "REITs" : n; }
+  function isSel(id) { return !!$("crits").querySelector('.crit[data-id="' + id + '"]'); }
+  function renderPicker() {
+    var q = $("kzsearch").value.trim().toLowerCase(), ms;
+    if (q) { ms = []; PK.groups.forEach(function (g) { g.ms.forEach(function (m) { if (m.l.toLowerCase().indexOf(q) > -1) ms.push(m); }); }); }
+    else { var g0 = PK.groups.filter(function (g) { return g.s === PK.tab; })[0]; ms = g0 ? g0.ms : []; }
+    $("kztabs").innerHTML = PK.groups.map(function (g) { return '<button type="button" role="tab" data-tab="' + esc(g.s) + '" aria-selected="' + (!q && g.s === PK.tab) + '">' + esc(g.s) + "</button>"; }).join("");
+    $("kzlist").innerHTML = ms.length ? ms.map(function (m) { var on = isSel(m.id); return '<button type="button" class="kzi" data-id="' + m.id + '" aria-pressed="' + on + '"' + (m.d ? ' title="' + esc(m.d) + '"' : "") + "><span>" + esc(m.l) + '</span><span class="kzm">' + (on ? "gewählt" : "+") + "</span></button>"; }).join("") : '<div class="kzempty">Keine Kennzahl gefunden.</div>';
+    $("kzfav").innerHTML = '<span class="lbl">HÄUFIG GENUTZT</span>' + FAV.filter(function (id) { return CAT[id] && PK.groups.some(function (g) { return g.ms.indexOf(CAT[id]) > -1; }); }).map(function (id) { return '<button type="button" data-id="' + id + '" aria-pressed="' + isSel(id) + '">' + esc(CAT[id].l.replace(/ \(.*\)$/, "")) + "</button>"; }).join("");
+  }
+  function toggleCrit(id) { var el = $("crits").querySelector('.crit[data-id="' + id + '"]'); if (el) { el.remove(); emptyHint(); } else addCrit(id); }
+  function buildRegion() {
+    var s = $("f-country"), og = [].slice.call(s.querySelectorAll("optgroup"));
+    function act() { var v = s.value; if (!v) return null; for (var i = 0; i < og.length; i++) if ([].some.call(og[i].querySelectorAll("option"), function (o) { return o.value === v; })) return og[i]; return null; }
+    function draw() {
+      var a = act(), v = s.value;
+      $("rtabs").innerHTML = '<button type="button" data-v="" aria-pressed="' + (!v) + '">Alle</button>' + og.map(function (g, i) { return '<button type="button" data-g="' + i + '" aria-pressed="' + (g === a) + '">' + esc(g.label) + "</button>"; }).join("");
+      $("rtabs2").hidden = !a; $("rtabs2").style.display = a ? "" : "none";
+      $("rtabs2").innerHTML = a ? [].map.call(a.querySelectorAll("option"), function (o, k) { return '<button type="button" data-v="' + o.value + '" aria-pressed="' + (o.value === v) + '">' + (k === 0 ? "Alle Länder" : esc(o.textContent)) + "</button>"; }).join("") : "";
+    }
+    $("rtabs").onclick = function (e) { var b = e.target.closest("button"); if (!b) return; s.value = b.dataset.g !== undefined ? og[+b.dataset.g].querySelector("option").value : ""; draw(); };
+    $("rtabs2").onclick = function (e) { var b = e.target.closest("button"); if (!b) return; s.value = b.dataset.v; draw(); };
+    draw();
+  }
   function readCrit() {
     var out = [], bad = null;
     $("crits").querySelectorAll(".crit").forEach(function (el) {
@@ -715,15 +811,21 @@ var REGION = {"DE":"R:EU","AT":"R:EU","CH":"R:EU","FR":"R:EU","NL":"R:EU","BE":"
   function init() {
     if (!$("go")) return;
     showKey(); $("keybtn").onclick = askKey;
-    var sel = $("addcrit");
     var mitFMP = /key/.test(location.hash);
-    sel.innerHTML = '<option value="">+ Kriterium hinzufügen …</option>' + cat.map(function (g) { var ms = g[1].filter(function (m) { return mitFMP || OWN[m.id]; }); return ms.length ? '<optgroup label="' + esc(g[0]) + '">' + ms.map(function (m) { return '<option value="' + m.id + '">' + esc(m.l) + "</option>"; }).join("") + "</optgroup>" : ""; }).join("");
+    PK.groups = cat.map(function (g) { return { s: gShort(g[0]), ms: g[1].filter(function (m) { return mitFMP || OWN[m.id]; }) }; }).filter(function (g) { return g.ms.length; });
+    PK.groups.sort(function (x, y) { var a = PREF.indexOf(x.s), b = PREF.indexOf(y.s); return (a < 0 ? 99 : a) - (b < 0 ? 99 : b); });
+    if (!PK.groups.some(function (g) { return g.s === PK.tab; })) PK.tab = PK.groups[0].s;
+    buildRegion(); PK.ready = true;
+    $("kztabs").onclick = function (e) { var b = e.target.closest("button"); if (!b) return; PK.tab = b.dataset.tab; $("kzsearch").value = ""; renderPicker(); };
+    $("kzlist").onclick = function (e) { var b = e.target.closest(".kzi"); if (b) toggleCrit(b.dataset.id); };
+    $("kzfav").onclick = function (e) { var b = e.target.closest("button"); if (b) toggleCrit(b.dataset.id); };
+    $("kzsearch").oninput = renderPicker;
+    $("kzhead").onclick = function () { if (!window.matchMedia("(max-width:759px)").matches) return; var c = $("kzbox").classList.toggle("closed"); $("kztoggle").textContent = c ? "Aufklappen" : "Zuklappen"; $("kzhead").setAttribute("aria-expanded", String(!c)); };
     if (!mitFMP) { $("m-markt").hidden = true; $("m-liste").hidden = true; var mg = document.querySelector(".mode"); if (mg) mg.hidden = true; var lim = $("f-max"); if (lim && lim.closest(".form-group")) lim.closest(".form-group").hidden = true; }
-    sel.onchange = function () { if (sel.value) addCrit(sel.value); sel.value = ""; };
     $("tpls").innerHTML = Object.keys(T).map(function (n) { return '<button type="button" data-t="' + esc(n) + '">' + esc(n) + "</button>"; }).join("");
     $("tpls").querySelectorAll("[data-t]").forEach(function (b) { b.onclick = function () { var t = T[b.dataset.t]; loadSet(t.c, t.ind); }; });
     $("m-eigen").onclick = function () { setMode("eigen"); }; $("m-markt").onclick = function () { setMode("markt"); }; $("m-liste").onclick = function () { setMode("liste"); };
-    $("go").onclick = run; $("stop").onclick = function () { RUN.abort = true; };
+    $("go").onclick = function () { if (window.matchMedia("(max-width:759px)").matches) { $("kzbox").classList.add("closed"); $("kztoggle").textContent = "Aufklappen"; $("kzhead").setAttribute("aria-expanded", "false"); setTimeout(function () { $("status").scrollIntoView({ block: "center" }); }, 50); } run(); }; $("stop").onclick = function () { RUN.abort = true; };
     $("clear").onclick = function () { $("crits").innerHTML = ""; emptyHint(); $("f-ind").value = ""; };
     $("save").onclick = function () {
       var rc = readCrit(); if (rc.bad || !rc.crit.length) { status("Zum Speichern bitte mindestens ein vollständiges Kriterium eintragen.", "err"); return; }
