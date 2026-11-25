@@ -1,37 +1,37 @@
-# SEC-Fundamentaldaten: Abdeckung (Stand 2026-11-22)
+# SEC-Fundamentaldaten: Abdeckung (Stand 2026-11-25)
 
-Firmen mit Daten: **601** von 604. Kernkennzahlen (Umsatz, Gewinn, EPS, Dividende je Aktie, operativer Cashflow) vollständig und aktuell: **552**.
+Firmen mit Daten: **602** von 605. Kernkennzahlen (Umsatz, Gewinn, EPS, Dividende je Aktie, operativer Cashflow) vollständig und aktuell: **553**.
 
 „Aktuell“ heißt: Wert für das letzte Geschäftsjahr der Firma vorhanden. Firmen ohne Dividende zählen bei der Dividende nicht als Lücke.
 
-Nach IFRS (Auslandsfirmen, Beträge in Berichtswährung): 29. Dividende je Aktie nur nachgerechnet (gezahlte Dividenden / Aktien): 56.
+Nach IFRS (Auslandsfirmen, Beträge in Berichtswährung): 30. Dividende je Aktie nur nachgerechnet (gezahlte Dividenden / Aktien): 57.
 
 | Kennzahl | mit Daten | davon aktuell |
 |---|---:|---:|
-| umsatz | 582 (97%) | 571 (95%) |
-| gewinn | 601 (100%) | 600 (100%) |
-| eps_verw | 583 (97%) | 572 (95%) |
+| umsatz | 583 (97%) | 572 (95%) |
+| gewinn | 602 (100%) | 601 (100%) |
+| eps_verw | 584 (97%) | 573 (95%) |
 | dividende_je_aktie | 456 (76%) | 413 (69%) |
-| dividenden_gezahlt | 519 (86%) | 501 (83%) |
-| operativer_cf | 599 (100%) | 598 (100%) |
-| capex | 573 (95%) | 541 (90%) |
-| aktienrueckkauf | 558 (93%) | 476 (79%) |
-| aktien_verw | 586 (98%) | 577 (96%) |
+| dividenden_gezahlt | 520 (86%) | 502 (83%) |
+| operativer_cf | 600 (100%) | 599 (100%) |
+| capex | 574 (95%) | 542 (90%) |
+| aktienrueckkauf | 559 (93%) | 477 (79%) |
+| aktien_verw | 587 (98%) | 578 (96%) |
 | schulden_lang | 547 (91%) | 518 (86%) |
-| liquide_mittel | 600 (100%) | 599 (100%) |
-| eigenkapital | 600 (100%) | 600 (100%) |
+| liquide_mittel | 601 (100%) | 600 (100%) |
+| eigenkapital | 601 (100%) | 601 (100%) |
 | bruttogewinn | 267 (44%) | 222 (37%) |
 | operatives_ergebnis | 487 (81%) | 451 (75%) |
-| abschreibungen | 578 (96%) | 571 (95%) |
-| zinsaufwand | 551 (92%) | 441 (73%) |
-| steuern | 594 (99%) | 588 (98%) |
-| bilanzsumme | 600 (100%) | 599 (100%) |
+| abschreibungen | 579 (96%) | 572 (95%) |
+| zinsaufwand | 552 (92%) | 442 (73%) |
+| steuern | 595 (99%) | 589 (98%) |
+| bilanzsumme | 601 (100%) | 600 (100%) |
 | umlaufvermoegen | 486 (81%) | 483 (80%) |
 | kurzfr_verbindl | 486 (81%) | 483 (80%) |
-| verbindlichkeiten | 440 (73%) | 428 (71%) |
-| vorraete | 364 (61%) | 339 (56%) |
-| gewinnruecklagen | 579 (96%) | 573 (95%) |
-| schulden_kurz | 481 (80%) | 395 (66%) |
+| verbindlichkeiten | 441 (73%) | 429 (71%) |
+| vorraete | 365 (61%) | 340 (56%) |
+| gewinnruecklagen | 580 (96%) | 574 (95%) |
+| schulden_kurz | 481 (80%) | 394 (65%) |
 
 ## Lücken bei Kernkennzahlen (49)
 
