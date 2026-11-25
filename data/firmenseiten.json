@@ -506,6 +506,11 @@
 "slug": "bristol-myers-squibb"
 },
 {
+"sym": "VOLV-A.ST",
+"name": "Aktiebolaget Volvo",
+"slug": "aktiebolaget-volvo"
+},
+{
 "sym": "VOLV-B.ST",
 "name": "AB Volvo (Volvo Group)",
 "slug": "volvo-volvo-group"
@@ -656,6 +661,11 @@
 "slug": "heineken"
 },
 {
+"sym": "HEIO.AS",
+"name": "Heineken Holding N.V.",
+"slug": "heineken-holding-n-v"
+},
+{
 "sym": "HON",
 "name": "Honeywell International Inc",
 "slug": "honeywell-international"
@@ -704,6 +714,11 @@
 "sym": "SAF.PA",
 "name": "Safran",
 "slug": "safran"
+},
+{
+"sym": "AFR0.DE",
+"name": "AIR FRANCE - KLM",
+"slug": "air-france-klm"
 },
 {
 "sym": "HPE",
@@ -881,6 +896,11 @@
 "slug": "omv"
 },
 {
+"sym": "SW.PA",
+"name": "SODEXO",
+"slug": "sodexo"
+},
+{
 "sym": "MAR",
 "name": "Marriott International Inc",
 "slug": "marriott-international"
@@ -1011,6 +1031,11 @@
 "slug": "ericsson-lm-telephone"
 },
 {
+"sym": "ERIC-A.ST",
+"name": "Telefonaktiebolaget LM Ericsson",
+"slug": "telefonaktiebolaget-lm-ericsson"
+},
+{
 "sym": "PNC",
 "name": "PNC Financial Services Group, Inc.",
 "slug": "pnc-financial-services-group"
@@ -1024,6 +1049,11 @@
 "sym": "ELE.MC",
 "name": "Endesa",
 "slug": "endesa"
+},
+{
+"sym": "FR.PA",
+"name": "VALEO",
+"slug": "valeo"
 },
 {
 "sym": "ROST",
@@ -1059,6 +1089,11 @@
 "sym": "HM-B.ST",
 "name": "H&M",
 "slug": "h-und-m"
+},
+{
+"sym": "ES0125220311",
+"name": "Acciona SA",
+"slug": "acciona"
 },
 {
 "sym": "HAL",
@@ -1121,6 +1156,11 @@
 "slug": "cognizant-technology-solutions"
 },
 {
+"sym": "ALO.PA",
+"name": "ALSTOM",
+"slug": "alstom"
+},
+{
 "sym": "NESTE.HE",
 "name": "Neste",
 "slug": "neste"
@@ -1129,6 +1169,11 @@
 "sym": "GEHC",
 "name": "Ge Healthcare Technologies Inc.",
 "slug": "ge-healthcare-technologies"
+},
+{
+"sym": "XD4.DE",
+"name": "STRABAG SE",
+"slug": "strabag"
 },
 {
 "sym": "DCC.L",
@@ -1261,6 +1306,11 @@
 "slug": "herms"
 },
 {
+"sym": "RJF",
+"name": "Raymond James Financial, Inc.",
+"slug": "raymond-james-financial"
+},
+{
 "sym": "UHS",
 "name": "Universal Health Services, Inc.",
 "slug": "universal-health-services"
@@ -1376,9 +1426,9 @@
 "slug": "infineon"
 },
 {
-"sym": "RJF",
-"name": "Raymond James Financial, Inc.",
-"slug": "raymond-james-financial"
+"sym": "J",
+"name": "Jacobs Solutions Inc.",
+"slug": "jacobs-solutions"
 },
 {
 "sym": "GLW",
@@ -1409,6 +1459,21 @@
 "sym": "A2A.MI",
 "name": "A2A",
 "slug": "a2a"
+},
+{
+"sym": "ADI",
+"name": "Analog Devices, Inc.",
+"slug": "analog-devices"
+},
+{
+"sym": "5CI.DE",
+"name": "LOGISTA INTEGRAL SA",
+"slug": "logista-integral"
+},
+{
+"sym": "SECU-B.ST",
+"name": "Securitas AB",
+"slug": "securitas"
 },
 {
 "sym": "FE",
@@ -1506,6 +1571,16 @@
 "slug": "arthur-j-gallagher-und"
 },
 {
+"sym": "WBD.MI",
+"name": "WEBUILD S.P.A.",
+"slug": "webuild-s-p-a"
+},
+{
+"sym": "HAL.AS",
+"name": "HAL Trust",
+"slug": "hal-trust"
+},
+{
 "sym": "UMG.AS",
 "name": "Universal Music Group N.V.",
 "slug": "universal-music-group-n-v"
@@ -1586,6 +1661,11 @@
 "slug": "assurant"
 },
 {
+"sym": "GRS298343005",
+"name": "HELLENIQ ENERGY ΑΝΩΝΥΜΗ ΕΤΑΙΡΕΙΑ ΣΥΜΜΕΤΟΧΩΝ",
+"slug": "helleniq-energy"
+},
+{
 "sym": "CCH.L",
 "name": "Coca-Cola HBC",
 "slug": "coca-cola-hbc"
@@ -1606,9 +1686,19 @@
 "slug": "relx"
 },
 {
+"sym": "TEN.MI",
+"name": "TENARIS S.A.",
+"slug": "tenaris-s-a"
+},
+{
 "sym": "HII",
 "name": "Huntington Ingalls Industries, Inc.",
 "slug": "huntington-ingalls-industries"
+},
+{
+"sym": "ES0105223004",
+"name": "GESTAMP AUTOMOCION SA",
+"slug": "gestamp-automocion"
 },
 {
 "sym": "ISS.CO",
@@ -1661,11 +1751,6 @@
 "slug": "hilton-worldwide-holdings"
 },
 {
-"sym": "J",
-"name": "Jacobs Solutions Inc.",
-"slug": "jacobs-solutions"
-},
-{
 "sym": "RI.PA",
 "name": "Pernod Ricard",
 "slug": "pernod-ricard"
@@ -1696,14 +1781,34 @@
 "slug": "motorola-solutions"
 },
 {
+"sym": "COLR.BR",
+"name": "Colruyt Group",
+"slug": "colruyt-group"
+},
+{
 "sym": "0019.HK",
 "name": "Swire Pacific Limited",
 "slug": "swire-pacific"
 },
 {
+"sym": "SPIE.PA",
+"name": "SPIE SA",
+"slug": "spie"
+},
+{
+"sym": "FNAC.PA",
+"name": "FNAC DARTY",
+"slug": "fnac-darty"
+},
+{
 "sym": "BAX",
 "name": "Baxter International Inc.",
 "slug": "baxter-international"
+},
+{
+"sym": "TEP.PA",
+"name": "TELEPERFORMANCE SE",
+"slug": "teleperformance"
 },
 {
 "sym": "WAB",
@@ -1729,11 +1834,6 @@
 "sym": "DGX",
 "name": "Quest Diagnostics Inc",
 "slug": "quest-diagnostics"
-},
-{
-"sym": "ADI",
-"name": "Analog Devices Inc",
-"slug": "analog-devices"
 },
 {
 "sym": "RHM.DE",
@@ -1771,6 +1871,16 @@
 "slug": "american-tower"
 },
 {
+"sym": "GRS434003000",
+"name": "ΔΗΜΌΣΙΑ ΕΠΙΧΕΊΡΗΣΗ ΗΛΕΚΤΡΙΣΜΟΎ ΑΝΏΝΥΜΗ ΕΤΑΙΡΕΊΑ",
+"slug": "grs434003000"
+},
+{
+"sym": "ES0122060314",
+"name": "FOMENTO DE CONSTRUCCIONES Y CONTRATAS S.A.",
+"slug": "fomento-de-construcciones-y-contratas-s-a"
+},
+{
 "sym": "UPM.HE",
 "name": "UPM-Kymmene",
 "slug": "upm-kymmene"
@@ -1806,9 +1916,19 @@
 "slug": "stora-enso"
 },
 {
+"sym": "AKE.PA",
+"name": "ARKEMA",
+"slug": "arkema"
+},
+{
 "sym": "DSFIR.SW",
 "name": "DSM-Firmenich",
 "slug": "dsm-firmenich"
+},
+{
+"sym": "MMB.PA",
+"name": "LAGARDERE SA",
+"slug": "lagardere"
 },
 {
 "sym": "WEC",
@@ -1829,6 +1949,11 @@
 "sym": "ZTS",
 "name": "Zoetis Inc.",
 "slug": "zoetis"
+},
+{
+"sym": "SSAB-B.ST",
+"name": "SSAB AB",
+"slug": "ssab"
 },
 {
 "sym": "CNP",
@@ -1886,6 +2011,11 @@
 "slug": "rockwell-automation"
 },
 {
+"sym": "SK.PA",
+"name": "SEB SA",
+"slug": "seb"
+},
+{
 "sym": "SKF-B.ST",
 "name": "SKF",
 "slug": "skf"
@@ -1899,6 +2029,11 @@
 "sym": "AVY",
 "name": "Avery Dennison Corporation",
 "slug": "avery-dennison"
+},
+{
+"sym": "DIE.BR",
+"name": "D'Ieteren Group",
+"slug": "d-ieteren-group"
 },
 {
 "sym": "AEE",
@@ -1919,6 +2054,11 @@
 "sym": "VER.VI",
 "name": "Verbund",
 "slug": "verbund"
+},
+{
+"sym": "MICC.AS",
+"name": "the Magnum Ice Cream Company N.V.",
+"slug": "magnum-ice-cream-n-v"
 },
 {
 "sym": "EQT",
@@ -1946,9 +2086,19 @@
 "slug": "knorr-bremse"
 },
 {
+"sym": "NEX.PA",
+"name": "NEXANS",
+"slug": "nexans"
+},
+{
 "sym": "CMS",
 "name": "Cms Energy Corp",
 "slug": "cms-energy"
+},
+{
+"sym": "MF.PA",
+"name": "WENDEL",
+"slug": "wendel"
 },
 {
 "sym": "EXPN.L",
@@ -2011,9 +2161,19 @@
 "slug": "vulcan-materials"
 },
 {
+"sym": "VIO.BR",
+"name": "VIOHALCO",
+"slug": "viohalco"
+},
+{
 "sym": "TELIA.ST",
 "name": "Telia",
 "slug": "telia"
+},
+{
+"sym": "TE.PA",
+"name": "Technip Energies N.V.",
+"slug": "technip-energies-n-v"
 },
 {
 "sym": "RPM",
@@ -2061,6 +2221,11 @@
 "slug": "ingersoll-rand"
 },
 {
+"sym": "ERF.PA",
+"name": "EUROFINS SCIENTIFIC SE",
+"slug": "eurofins-scientific"
+},
+{
 "sym": "KYG.IR",
 "name": "Kerry Group Public Limited Company",
 "slug": "kerry-group-public"
@@ -2074,6 +2239,11 @@
 "sym": "KEY",
 "name": "KeyCorp",
 "slug": "keycorp"
+},
+{
+"sym": "SYENS.BR",
+"name": "SYENSQO",
+"slug": "syensqo"
 },
 {
 "sym": "UHR.SW",
@@ -2121,6 +2291,11 @@
 "slug": "deutsche-boerse"
 },
 {
+"sym": "RUI.PA",
+"name": "RUBIS",
+"slug": "rubis"
+},
+{
 "sym": "AMS.MC",
 "name": "Amadeus It Group Sociedad Anonima",
 "slug": "amadeus-it-group-sociedad-anonima"
@@ -2136,9 +2311,24 @@
 "slug": "bureau-veritas"
 },
 {
+"sym": "ES0178165017",
+"name": "TECNICAS REUNIDAS SA",
+"slug": "tecnicas-reunidas"
+},
+{
+"sym": "SUBC.OL",
+"name": "SUBSEA 7 S.A.",
+"slug": "subsea-7-s-a"
+},
+{
 "sym": "CF",
 "name": "Cf Industries Holdings, Inc.",
 "slug": "cf-industries-holdings"
+},
+{
+"sym": "BAMNB.AS",
+"name": "Koninklijke BAM Groep N.V.",
+"slug": "koninklijke-bam-groep-n-v"
 },
 {
 "sym": "WRT1V.HE",
@@ -2169,6 +2359,11 @@
 "sym": "WY",
 "name": "Weyerhaeuser Company",
 "slug": "weyerhaeuser"
+},
+{
+"sym": "ABS2.DE",
+"name": "PORR AG",
+"slug": "porr"
 },
 {
 "sym": "IRM",
@@ -2211,6 +2406,16 @@
 "slug": "babcock-international-group"
 },
 {
+"sym": "ADP.PA",
+"name": "AEROPORTS DE PARIS",
+"slug": "aeroports-de-paris"
+},
+{
+"sym": "SI0031102153",
+"name": "PETROL, Slovenska energetska družba, d.d., Ljubljana",
+"slug": "petrol-slovenska-energetska-druba-d-d-ljubljana"
+},
+{
 "sym": "WKL.AS",
 "name": "Wolters Kluwer",
 "slug": "wolters-kluwer"
@@ -2251,6 +2456,21 @@
 "slug": "kpn"
 },
 {
+"sym": "AKSO.OL",
+"name": "AKER SOLUTIONS ASA",
+"slug": "aker-solutions"
+},
+{
+"sym": "ACE1.DE",
+"name": "ACERINOX SA",
+"slug": "acerinox"
+},
+{
+"sym": "LIGHT.AS",
+"name": "SIGNIFY N.V.",
+"slug": "signify-n-v"
+},
+{
 "sym": "MOWI.OL",
 "name": "Mowi",
 "slug": "mowi"
@@ -2276,6 +2496,11 @@
 "slug": "martin-marietta-materials"
 },
 {
+"sym": "TA1.DE",
+"name": "Telekom Austria Aktiengesellschaft",
+"slug": "telekom-austria-aktiengesellschaft"
+},
+{
 "sym": "HST",
 "name": "Host Hotels & Resorts, Inc.",
 "slug": "host-hotels-und-resorts"
@@ -2291,6 +2516,11 @@
 "slug": "equifax"
 },
 {
+"sym": "EPI-A.ST",
+"name": "Epiroc Aktiebolag",
+"slug": "epiroc-aktiebolag"
+},
+{
 "sym": "OUT1V.HE",
 "name": "Outokumpu Oyj",
 "slug": "outokumpu"
@@ -2299,6 +2529,11 @@
 "sym": "GL",
 "name": "Globe Life Inc.",
 "slug": "globe-life"
+},
+{
+"sym": "IDA.DE",
+"name": "INDRA SISTEMAS, S.A.",
+"slug": "indra-sistemas-s-a"
 },
 {
 "sym": "EVRG",
@@ -2326,6 +2561,31 @@
 "slug": "ventas"
 },
 {
+"sym": "CLARI.PA",
+"name": "CLARIANE",
+"slug": "clariane"
+},
+{
+"sym": "EGL.LS",
+"name": "MOTA - ENGIL, SGPS S.A.",
+"slug": "mota-engil-sgps-s-a"
+},
+{
+"sym": "M4M1.DE",
+"name": "Millicom International Cellular S.A.",
+"slug": "millicom-international-cellular-s-a"
+},
+{
+"sym": "METSO.HE",
+"name": "METSO OYJ",
+"slug": "metso"
+},
+{
+"sym": "PEAB-B.ST",
+"name": "Peab AB",
+"slug": "peab"
+},
+{
 "sym": "VALMT.HE",
 "name": "VALMET OYJ",
 "slug": "valmet"
@@ -2334,6 +2594,11 @@
 "sym": "RMD",
 "name": "ResMed Inc.",
 "slug": "resmed"
+},
+{
+"sym": "ES0105777017",
+"name": "PUIG BRANDS S.A.",
+"slug": "puig-brands-s-a"
 },
 {
 "sym": "VLTO",
@@ -2366,14 +2631,29 @@
 "slug": "hasbro"
 },
 {
+"sym": "ARCAD.AS",
+"name": "ARCADIS N.V.",
+"slug": "arcadis-n-v"
+},
+{
 "sym": "PNW",
 "name": "Pinnacle West Capital Corporation",
 "slug": "pinnacle-west-capital"
 },
 {
+"sym": "ELIS.PA",
+"name": "ELIS",
+"slug": "elis"
+},
+{
 "sym": "GALD.SW",
 "name": "Galderma",
 "slug": "galderma"
+},
+{
+"sym": "WAWI.OL",
+"name": "WALLENIUS WILHELMSEN ASA",
+"slug": "wallenius-wilhelmsen"
 },
 {
 "sym": "SOLB.BR",
@@ -2404,6 +2684,11 @@
 "sym": "AWK",
 "name": "American Water Works Company, Inc.",
 "slug": "american-water-works"
+},
+{
+"sym": "VHM.DE",
+"name": "SACYR SA",
+"slug": "sacyr"
 },
 {
 "sym": "TW.L",
@@ -2451,6 +2736,11 @@
 "slug": "public-storage"
 },
 {
+"sym": "ES0129743318",
+"name": "ELECNOR SA",
+"slug": "elecnor"
+},
+{
 "sym": "PNDORA.CO",
 "name": "Pandora A/S",
 "slug": "pandora"
@@ -2481,6 +2771,11 @@
 "slug": "clariant"
 },
 {
+"sym": "AZE.BR",
+"name": "Azelis Group",
+"slug": "azelis-group"
+},
+{
 "sym": "KCR.HE",
 "name": "Konecranes Oyj",
 "slug": "konecranes"
@@ -2501,14 +2796,54 @@
 "slug": "logitech"
 },
 {
+"sym": "DEME.BR",
+"name": "Deme Group",
+"slug": "deme-group"
+},
+{
+"sym": "HUSQ-A.ST",
+"name": "Husqvarna AB",
+"slug": "husqvarna"
+},
+{
 "sym": "ITRK.L",
 "name": "Intertek Group Plc",
 "slug": "intertek-group"
 },
 {
+"sym": "ATE.PA",
+"name": "ALTEN",
+"slug": "alten"
+},
+{
+"sym": "VK.PA",
+"name": "VALLOUREC",
+"slug": "vallourec"
+},
+{
+"sym": "WLN.PA",
+"name": "WORLDLINE",
+"slug": "worldline"
+},
+{
+"sym": "VEI.OL",
+"name": "Veidekke ASA",
+"slug": "veidekke"
+},
+{
+"sym": "MFEA.MI",
+"name": "MFE-MEDIAFOREUROPE N.V.",
+"slug": "mfe-mediaforeurope-n-v"
+},
+{
 "sym": "LNT",
 "name": "Alliant Energy Corporation",
 "slug": "alliant-energy"
+},
+{
+"sym": "HUH1V.HE",
+"name": "Huhtamäki Oyj",
+"slug": "huhtamaeki"
 },
 {
 "sym": "SOON.SW",
@@ -2521,9 +2856,24 @@
 "slug": "crown-castle"
 },
 {
+"sym": "MYM.DE",
+"name": "Mayr-Melnhof Karton Aktiengesellschaft",
+"slug": "mayr-melnhof-karton-aktiengesellschaft"
+},
+{
 "sym": "SUN.SW",
 "name": "Sulzer",
 "slug": "sulzer"
+},
+{
+"sym": "GRS145003000",
+"name": "ΓΕΚ ΤΕΡΝΑ Α.Ε.",
+"slug": "grs145003000"
+},
+{
+"sym": "VCT.PA",
+"name": "VICAT",
+"slug": "vicat"
 },
 {
 "sym": "FTV",
@@ -2536,6 +2886,16 @@
 "slug": "elia-group"
 },
 {
+"sym": "DLG.MI",
+"name": "DE' LONGHI S.P.A.",
+"slug": "de-longhi-s-p-a"
+},
+{
+"sym": "IDL.PA",
+"name": "Id Logistics Group",
+"slug": "id-logistics-group"
+},
+{
 "sym": "COLO-B.CO",
 "name": "Coloplast",
 "slug": "coloplast"
@@ -2544,6 +2904,26 @@
 "sym": "ALLE",
 "name": "Allegion plc",
 "slug": "allegion"
+},
+{
+"sym": "BEKB.BR",
+"name": "NV BEKAERT SA",
+"slug": "bekaert"
+},
+{
+"sym": "BRE.MI",
+"name": "BREMBO N.V.",
+"slug": "brembo-n-v"
+},
+{
+"sym": "FDJU.PA",
+"name": "LA FRANCAISE DES JEUX",
+"slug": "la-francaise-des-jeux"
+},
+{
+"sym": "AUSS.OL",
+"name": "AUSTEVOLL SEAFOOD ASA",
+"slug": "austevoll-seafood"
 },
 {
 "sym": "VICI",
@@ -2561,9 +2941,19 @@
 "slug": "terna"
 },
 {
+"sym": "ROCK-A.CO",
+"name": "ROCKWOOL A/S",
+"slug": "rockwool"
+},
+{
 "sym": "SWKS",
 "name": "Skyworks Solutions, Inc.",
 "slug": "skyworks-solutions"
+},
+{
+"sym": "BILI-A.ST",
+"name": "BILIA AB",
+"slug": "bilia"
 },
 {
 "sym": "GL9.IR",
@@ -3183,7 +3573,7 @@
 {
 "sym": "SEB-A.ST",
 "name": "SEB",
-"slug": "seb"
+"slug": "seb-seb-a-st"
 },
 {
 "sym": "SHB-A.ST",
