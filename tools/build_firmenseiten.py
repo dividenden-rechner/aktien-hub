@@ -66,6 +66,10 @@ def mrd(usd_eur):
     return B.de(usd_eur / 1e6, 0) + " Mio."
 
 
+_BR = json.load(open(os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), "data/firmen-branchen.json"), encoding="utf-8"))
+FB, BMETA = _BR["firmen"], _BR["branchen"]
+
+
 def lade_firmen(vorhanden_sym):
     w = B.lade("data/kennzahlen.json")["werte"]
     try:
@@ -89,7 +93,10 @@ def lade_firmen(vorhanden_sym):
             continue
         namen[nm.lower()] = 1
         sek = SEKTOR.get(v.get("sektor") or "", "") or SEKTOR.get(bran.get(t, ""), "") or (bran.get(t) if isinstance(bran.get(t), str) else "")
-        firmen.append({"sym": t, "name": nm, "v": v, "sektor": sek, "land": v.get("land") or ""})
+        br = FB.get(t, "")
+        if br and not sek:
+            sek = BMETA[br]["sektor"]
+        firmen.append({"sym": t, "name": nm, "v": v, "sektor": sek, "land": v.get("land") or "", "branche": br})
     return firmen
 
 
@@ -104,20 +111,35 @@ def vergeben(firmen, reserviert):
         benutzt.add(s); f["slug"] = s
 
 
-def peers_fuer(f, alle, nach_sektor, nach_land):
+def _gleich(a, b):
+    """Zweite Boersennotierung oder Aktiengattung derselben Firma."""
+    x, y = re.sub(r"[^a-z]", "", a["name"].lower())[:7], re.sub(r"[^a-z]", "", b["name"].lower())[:7]
+    return bool(x) and x == y
+
+
+def peers_fuer(f, alle, nach_branche, nach_sektor):
+    """Vergleichsfirmen mit gleichem Geschaeftsmodell (Branche), egal aus welchem Land.
+    Reicht die Branche nicht, kommen verwandte Gruppen dazu (Elterngruppe, Untergruppen)."""
+    br = f.get("branche")
+    if not br: return [], ""
     mc = f["v"].get("umsatz_usd") or 0
-    pool = [g for g in nach_sektor.get((f["sektor"], f["land"]), []) if g is not f] if f["sektor"] else []
-    art = f"{f['sektor']} aus {LAND.get(f['land'], f['land'])}" if pool else ""
-    if len(pool) < 3 and f["sektor"]:
-        pool = [g for g in nach_sektor.get((f["sektor"], None), []) if g is not f]
-        art = f"{f['sektor']} (weltweit)"
-    if len(pool) < 3:
-        pool = [g for g in nach_land.get(f["land"], []) if g is not f]
-        art = f"ähnlich große Dividendenwerte aus {LAND.get(f['land'], f['land'])}"
-    if not pool: return [], ""
-    if mc:
-        pool = sorted(pool, key=lambda g: abs(math.log((g["v"].get("umsatz_usd") or mc) / mc)))
-    return pool[:5], art
+    def holen(namen):
+        out = []
+        for n in namen:
+            out += [g for g in nach_branche.get(n, []) if g is not f and not _gleich(f, g) and g not in out]
+        if mc:
+            out.sort(key=lambda g: abs(math.log(g["v"]["umsatz_usd"] / mc)) if (g["v"].get("umsatz_usd") or 0) > 0 else 99)
+        return out
+    pool = holen([br])
+    if len(pool) < 5:
+        fam = []
+        e = BMETA[br].get("eltern")
+        if e: fam.append(e)
+        fam += [n for n, m in BMETA.items() if m.get("eltern") == br]
+        if e: fam += [n for n, m in BMETA.items() if m.get("eltern") == e and n != br]
+        pool += [g for g in holen(fam) if g not in pool]
+    if len(pool) < 2: return [], ""
+    return pool[:5], br
 
 
 def zeile(f, prefix, wert=True):
@@ -215,8 +237,8 @@ def firmenseite(f, peers, art, news, kl, k, fu, stand):
     peer_html = ""
     if peers:
         zeilen = [zeile(f, "")] + [zeile(g, "") for g in peers]
-        peer_html = (f'<h2>Vergleich mit ähnlichen Aktien</h2><p>Gegenübergestellt sind {len(peers)} Dividendenwerte aus der Gruppe „{esc(art)}“ mit ähnlichem Umsatz. '
-                     f'Die Auswahl entsteht automatisch aus Sektor, Land und Größe.</p>' + kopf_tabelle(zeilen))
+        peer_html = (f'<h2>Vergleich mit ähnlichen Aktien</h2><p>Gegenübergestellt sind {len(peers)} Dividendenwerte mit ähnlichem Geschäftsmodell aus der Branche „{esc(art)}“, unabhängig vom Land. '
+                     f'Die Auswahl richtet sich nach Branche und Größe.</p>' + kopf_tabelle(zeilen))
     news_html = ""
     if news:
         news_html = "<h2>Aktuelle Artikel</h2><ul>" + "".join(f'<li><a href="../../news/{esc(m["slug"])}/">{esc(m["title"])}</a> <span class="meta">({B.datum(m["date"])})</span></li>' for m in news[:6]) + "</ul>"
@@ -262,16 +284,17 @@ def bauen(vorhanden, reserviert_slugs, news_by_sym, kl2, k2, f2, stand):
     vergeben(firmen, reserviert_slugs)
     firmen = [f for f in firmen if not f.get("skip")]
     kl3, k3, f3 = kl2, k2, f2
-    nach_sektor, nach_land = {}, {}
+    nach_sektor, nach_land, nach_branche = {}, {}, {}
     for f in firmen:
         nach_sektor.setdefault((f["sektor"], f["land"]), []).append(f)
         nach_sektor.setdefault((f["sektor"], None), []).append(f)
         nach_land.setdefault(f["land"], []).append(f)
+        if f.get("branche"): nach_branche.setdefault(f["branche"], []).append(f)
     SEKTOR_SLUG = {s: B_slug(s) for s in {f["sektor"] for f in firmen if f["sektor"]}}
     LAND_MIT_SEITE = {c for c, l in nach_land.items() if len(l) >= 5 and c}
     eintraege = []
     for f in firmen:
-        peers, art = peers_fuer(f, firmen, nach_sektor, nach_land)
+        peers, art = peers_fuer(f, firmen, nach_branche, nach_sektor)
         sym_n = re.sub(r"\.NE$", "", f["sym"])
         h, t, d, u = firmenseite(f, peers, art, news_by_sym.get(sym_n, []), kl2, k2, f2, stand)
         os.makedirs(os.path.join(ROOT, u), exist_ok=True)

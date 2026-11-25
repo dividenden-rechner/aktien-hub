@@ -4596,6 +4596,11 @@
 "slug": "spire-healthcare-group"
 },
 {
+"sym": "GRS495003006",
+"name": "ΑΕΡΟΠΟΡΙΑ ΑΙΓΑΙΟΥ ΑΝΩΝΥΜΗ ΑΕΡΟΠΟΡΙΚΗ ΕΤΑΙΡΕΙΑ",
+"slug": "grs495003006"
+},
+{
 "sym": "TIETO.HE",
 "name": "Tieto Oyj",
 "slug": "tieto"
@@ -5174,11 +5179,6 @@
 "sym": "GTT.PA",
 "name": "GAZTRANSPORT ET TECHNIGAZ",
 "slug": "gaztransport-et-technigaz"
-},
-{
-"sym": "INWI.ST",
-"name": "Inwido AB (publ)",
-"slug": "inwido-publ"
 },
 {
 "sym": "GB0002074580",
