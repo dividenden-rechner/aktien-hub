@@ -3,7 +3,8 @@
 Quelle: FMP-Symbolbild, sonst Google-Favicon der Firmen-Domain (aus assets/logos.js). Bereits vorhandene Logos bleiben.
 Fehlt beides, entsteht keine Datei; die Seite zeigt dann den Buchstaben.
 Laeuft im GitHub-Workflow (dort ist das Netz offen)."""
-import os, re, json, time, urllib.request, urllib.parse
+import os, re, sys, json, time, urllib.request, urllib.parse
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 OUT = os.path.join(ROOT, "assets", "logos", "hub")
 UA = "Mozilla/5.0 (compatible; DividendenRechnerLogoBot/1.0; +https://www.dividenden-rechner.de)"
@@ -25,7 +26,9 @@ def domains():
 def laden(url):
     try:
         b = urllib.request.urlopen(urllib.request.Request(url, headers={"User-Agent": UA}), timeout=20).read()
-        return b if len(b) > 200 and any(b.startswith(s) for s in SIG) else None
+        if not (len(b) > 200 and any(b.startswith(s) for s in SIG)): return None
+        from logo_check import ist_foto
+        return None if ist_foto(b) else b
     except Exception:
         return None
 

@@ -111,6 +111,20 @@ def read_post(path):
     meta["body_md"] = nbsp_units(meta["body_md"])
     if meta.get("kein_logo", "").lower() in ("ja", "true", "1", "yes"):   # Artikel ohne Firmenlogo (zum Beispiel Marktueberblick)
         meta["logo_file"] = meta["logo_symbol"] = meta["logo_domain"] = ""; meta["kein_logo"] = True
+    # Logo-Waechter: ein Foto (z. B. Firmengebaeude) darf nie als Logo erscheinen; dann Buchstaben-Logo statt Foto
+    if meta.get("logo_file") and os.path.exists(meta["logo_file"]) and not os.path.basename(meta["logo_file"]).startswith("combo-"):
+        import logo_check
+        if logo_check.ist_foto(meta["logo_file"]):
+            print("LOGO ist ein Foto, wird nicht verwendet:", meta["logo_file"], "(Artikel", meta["slug"] + ")")
+            meta["logo_file"] = meta["logo_symbol"] = meta["logo_domain"] = ""
+    # Aufmacher darf nicht das Logo sein und nicht winzig
+    if meta.get("image") and meta.get("logo_file") and os.path.basename(str(meta["image"])) == os.path.basename(meta["logo_file"]):
+        print("AUFMACHER pruefen: Aufmacher und Logo sind dieselbe Datei:", meta["slug"])
+    if meta.get("image") and os.path.exists(str(meta["image"]).lstrip("/")):
+        try:
+            from PIL import Image as _I
+            if min(_I.open(str(meta["image"]).lstrip("/")).size) < 400: print("AUFMACHER pruefen: Bild sehr klein:", meta["slug"])
+        except Exception: pass
     meta["draft"] = meta.get("draft", "").lower() in ("true", "ja", "1", "yes")
     # vorschau: ja -> nur auf der Testseite (GitHub) unter vorschau/<slug>/, nicht in News, Startseite, Feed, Sitemap oder auf Strato
     meta["vorschau"] = meta.get("vorschau", "").lower() in ("true", "ja", "1", "yes")
