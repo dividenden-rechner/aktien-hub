@@ -344,6 +344,11 @@ def seite(r, kopf_links, kopf, fuss, mag, kurs_datum, sec_stand, usd_je_eur, jah
         if sj == 0: wert = "keine"
         st = status(sj)
         zeilen.append(("Dividendenerhöhungen in Folge" + (f" ({st})" if st else ""), wert, esc(se.get("text", ""))))
+    if r.get("kgv") is not None:
+        zeilen.append(("KGV", de(r["kgv"], 1), "Kurs im Verhältnis zum Gewinn je Aktie der letzten zwölf Monate"))
+    if r.get("kgv_fwd") is not None:
+        zeilen.append(("Forward KGV", de(r["kgv_fwd"], 1),
+                       f"Kurs im Verhältnis zum erwarteten Gewinn je Aktie {r['eps_fwd_jahr']} (Mitte der Prognose, {r['eps_fwd_art']})"))
     if f["typ"] == "reit" and r.get("quote_ffo"):
         zeilen.append(("Ausschüttungsquote (auf FFO)", proz(r["quote_ffo"], 0), "FFO genähert: Gewinn plus Abschreibungen je Aktie"))
     elif f["typ"] == "bdc" and r["quote_gewinn"]:
@@ -772,9 +777,16 @@ def main():
     PEER_BLOCKS.clear()
     for f in cfg:
         PEER_BLOCKS[f["sym"]] = peer_block(f["sym"], cfg_by_sym, gruppen)
+    kz_werte = lade("data/kennzahlen.json").get("werte", {})
     for f in cfg:
         r = kennzahlen(f, sec, kurse, iz, usd_je_eur, termine)
         if r:
+            kz = kz_werte.get(f["sym"], {})
+            r["kgv"] = kz.get("kgv")
+            pr = kz.get("prognose") or {}
+            r["kgv_fwd"] = pr.get("kgv_forward")
+            r["eps_fwd_jahr"] = pr.get("eps_jahr")
+            r["eps_fwd_art"] = pr.get("eps_art", "")
             r["wkn"] = f.get("wkn") or WKN.get(r.get("isin") or "")
             og_bild(r)
         if not r:
