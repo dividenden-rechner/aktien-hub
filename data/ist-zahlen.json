@@ -1821,6 +1821,56 @@
    "quelle": "https://www.sec.gov/Archives/edgar/data/1535527/000153552726000035/crwd-20261123xex991.htm"
   },
   {
+   "sym": "HPE",
+   "name": "Hewlett Packard Enterprise",
+   "datum": "2026-11-23",
+   "eps": 1.43,
+   "eps_basis": "bereinigt",
+   "revenue": 14500000000.0,
+   "waehrung": "USD",
+   "quelle": "https://www.sec.gov/Archives/edgar/data/1645590/000164559026000097/ex-991x11232026x8k.htm"
+  },
+  {
+   "sym": "ADI",
+   "name": "Analog Devices",
+   "datum": "2026-11-24",
+   "eps": 4.06,
+   "eps_basis": "bereinigt",
+   "revenue": 4370000000.0,
+   "waehrung": "USD",
+   "quelle": "https://www.sec.gov/Archives/edgar/data/6281/000000628126000087/adiq426exhibit991.htm"
+  },
+  {
+   "sym": "BBY",
+   "name": "Best Buy",
+   "datum": "2026-11-24",
+   "eps": 1.62,
+   "eps_basis": "bereinigt",
+   "revenue": 10236000000.0,
+   "waehrung": "USD",
+   "quelle": "https://www.sec.gov/Archives/edgar/data/764478/000076447826000045/bby-fy27q3xexx99.htm"
+  },
+  {
+   "sym": "DLTR",
+   "name": "Dollar Tree",
+   "datum": "2026-11-24",
+   "eps": 1.24,
+   "eps_basis": "berichtet",
+   "revenue": 5100000000.0,
+   "waehrung": "USD",
+   "quelle": "https://www.sec.gov/Archives/edgar/data/935703/000093570326000136/ex991q3-26earningspressrel.htm"
+  },
+  {
+   "sym": "MDT",
+   "name": "Medtronic",
+   "datum": "2026-11-24",
+   "eps": 1.34,
+   "eps_basis": "bereinigt",
+   "revenue": 9400000000.0,
+   "waehrung": "USD",
+   "quelle": "https://www.sec.gov/Archives/edgar/data/1613103/000162828026075604/exhibit991-fy27q2earningsr.htm"
+  },
+  {
    "sym": "SJM",
    "name": "J.M. Smucker Company (The)",
    "datum": "2026-11-24",
@@ -1829,6 +1879,16 @@
    "revenue": null,
    "waehrung": "US-D",
    "quelle": "https://www.sec.gov/Archives/edgar/data/91419/000009141926000110/sjm20261124exhibit991.htm"
+  },
+  {
+   "sym": "WDAY",
+   "name": "Workday, Inc.",
+   "datum": "2026-11-24",
+   "eps": 2.82,
+   "eps_basis": "bereinigt",
+   "revenue": 2705000000.0,
+   "waehrung": "USD",
+   "quelle": "https://www.sec.gov/Archives/edgar/data/1327811/000132781126000057/wday-10312026x991.htm"
   }
  ]
 }

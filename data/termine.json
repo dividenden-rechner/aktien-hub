@@ -1,33 +1,6 @@
 {
  "termine": [
   {
-   "sym": "HEN3.DE",
-   "name": "Henkel",
-   "art": "ergebnis",
-   "datum": "2026-11-10",
-   "betrag": "",
-   "waehrung": "",
-   "quelle": "https://www.henkel.com/press-and-media/press-releases-and-kits/2026-10-29-henkel-achieves-very-strong-organic-sales-growth-in-the-third-quarter-and-updates-outlook-for-2026-2272164"
-  },
-  {
-   "sym": "HMC",
-   "name": "Honda Motor Co Ltd",
-   "art": "ergebnis",
-   "datum": "2026-11-10",
-   "betrag": "",
-   "waehrung": "",
-   "quelle": "https://www.sec.gov/Archives/edgar/data/715153/000119312526454310/d164844d6k.htm"
-  },
-  {
-   "sym": "SONY",
-   "name": "Sony Group Corp",
-   "art": "ergebnis",
-   "datum": "2026-11-10",
-   "betrag": "",
-   "waehrung": "",
-   "quelle": "https://www.sec.gov/Archives/edgar/data/313838/000119312526454312/d148641d6k.htm"
-  },
-  {
    "sym": "HSBC",
    "name": "Hsbc Holdings Plc",
    "art": "ergebnis",
@@ -433,6 +406,15 @@
    "quelle": "https://www.sec.gov/Archives/edgar/data/842023/000110465926122283/tech-ex99d1.htm"
   },
   {
+   "sym": "BBY",
+   "name": "Best Buy",
+   "art": "ergebnis",
+   "datum": "2026-11-24",
+   "betrag": "",
+   "waehrung": "",
+   "quelle": "https://www.sec.gov/Archives/edgar/data/764478/000076447826000045/bby-fy27q3xexx99.htm"
+  },
+  {
    "sym": "DLTR",
    "name": "Dollar Tree",
    "art": "ergebnis",
@@ -658,6 +640,15 @@
    "quelle": "https://www.sec.gov/Archives/edgar/data/313838/000110465926122935/tm2628525d4_6k.htm"
   },
   {
+   "sym": "ADI",
+   "name": "Analog Devices",
+   "art": "dividende_exdatum",
+   "datum": "2026-12-07",
+   "betrag": "",
+   "waehrung": "",
+   "quelle": "https://www.sec.gov/Archives/edgar/data/6281/000000628126000087/adiq426exhibit991.htm"
+  },
+  {
    "sym": "AES",
    "name": "AES Corporation",
    "art": "dividende_zahltag",
@@ -719,6 +710,15 @@
    "betrag": "0.24",
    "waehrung": "USD",
    "quelle": "https://www.sec.gov/Archives/edgar/data/916365/000091636526000076/a1152026tsco-ex991.htm"
+  },
+  {
+   "sym": "HPE",
+   "name": "Hewlett Packard Enterprise",
+   "art": "dividende_exdatum",
+   "datum": "2026-12-09",
+   "betrag": "0.17",
+   "waehrung": "USD",
+   "quelle": "https://www.sec.gov/Archives/edgar/data/1645590/000164559026000097/ex-991x11232026x8k.htm"
   },
   {
    "sym": "BDX",
@@ -928,6 +928,15 @@
    "quelle": "https://www.sec.gov/Archives/edgar/data/1711269/000119312526448521/d193466dex991.htm"
   },
   {
+   "sym": "ADI",
+   "name": "Analog Devices",
+   "art": "dividende_zahltag",
+   "datum": "2026-12-21",
+   "betrag": "1.10",
+   "waehrung": "USD",
+   "quelle": "https://www.sec.gov/Archives/edgar/data/6281/000000628126000087/adiq426exhibit991.htm"
+  },
+  {
    "sym": "TPR",
    "name": "Tapestry, Inc.",
    "art": "dividende_zahltag",
@@ -1027,6 +1036,15 @@
    "quelle": "https://www.sec.gov/Archives/edgar/data/1060391/000106039126000326/exhibit991q32026.htm"
   },
   {
+   "sym": "BBY",
+   "name": "Best Buy",
+   "art": "dividende_zahltag",
+   "datum": "2027-01-05",
+   "betrag": "0.96",
+   "waehrung": "USD",
+   "quelle": "https://www.sec.gov/Archives/edgar/data/764478/000076447826000045/bby-fy27q3xexx99.htm"
+  },
+  {
    "sym": "LLOY.L",
    "name": "Lloyds Banking Group",
    "art": "ergebnis",
@@ -1061,6 +1079,15 @@
    "betrag": "0.33",
    "waehrung": "USD",
    "quelle": "https://www.sec.gov/Archives/edgar/data/707549/000070754926000057/lrcx_exx991xsharexrepurcha.htm"
+  },
+  {
+   "sym": "HPE",
+   "name": "Hewlett Packard Enterprise",
+   "art": "dividende_zahltag",
+   "datum": "2027-01-08",
+   "betrag": "0.17",
+   "waehrung": "USD",
+   "quelle": "https://www.sec.gov/Archives/edgar/data/1645590/000164559026000097/ex-991x11232026x8k.htm"
   },
   {
    "sym": "BR",
