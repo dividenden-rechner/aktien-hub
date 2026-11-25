@@ -57,6 +57,9 @@ def filtern(html):
     html = re.sub(r'<a\b[^>]*' + ziel + r'[^>]*>(.*?)</a>', r'\1', html, flags=re.S)
     if FMP_AUS:
         html = re.sub(r'<script[^>]*assets/(?:kurse|fkearn|firma-fmp)\.js[^>]*></script>\n?', '', html)
+        # Seiten mit FMP-Abfragen (Aktien-Hub, Vergleich): Abfragen an FMP und den FMP-Zwischenserver im Browser sperren, die Seite zeigt dann nur eigene Daten
+        if "financialmodelingprep.com/stable" in html and "<head>" in html:
+            html = html.replace("<head>", '<head><script>(function(){var f=window.fetch;window.fetch=function(u){var s=String(u&&u.url||u);if(/financialmodelingprep\\.com\\/stable|fmp-proxy/.test(s))return Promise.reject(new Error("FMP aus"));return f.apply(this,arguments)}})()</script>', 1)
         # Bloecke nur fuer die Testseite (FMP-Daten, Hub-Verweis): oeffentlich ganz entfernen
         html = re.sub(r'<(p|div)\b[^>]*data-nur-test[^>]*>.*?</\1>\n?', '', html, flags=re.S)
     return html
