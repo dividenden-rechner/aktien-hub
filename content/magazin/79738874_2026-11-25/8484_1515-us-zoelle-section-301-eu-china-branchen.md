@@ -47,27 +47,17 @@ Die Untersuchung nennt Batterien, Chemie, Maschinen, Elektronik, Kunststoffe, Pa
 
 Für die deutsche Wirtschaft ist die Verteilung der Exporte entscheidend. In den ersten drei Quartalen 2025 gingen 19,9 Prozent der Ausfuhren in die USA auf Autos und Autoteile zurück, 19,1 Prozent auf Pharma und 17,5 Prozent auf Maschinen. Chemie kam auf 6,2 Prozent. Maschinen und Chemie liegen mit je 9,5 Prozent im Minus gegenüber dem Vorjahr, Autos mit 13,9 Prozent, Pharma wuchs um 1,2 Prozent. Maschinen und Chemie stehen auf der Zollliste, Autos fallen unter die bestehenden Zölle. Pharma taucht in den Berichten zur Branchenliste nicht auf, ob einzelne Arzneimittel doch erfasst werden, zeigt erst die Produktliste.
 
-## Was das für Dividendenwerte heißt
+## Was das für die Geschäfte der Firmen heißt
 
-Die Zahlen aus dem Aktien-Hub zeigen, wo die Dividende ein Polster hat und wo nicht. Chemie und Elektrotechnik stehen auf der Zollliste, Autos tragen eigene Zölle, Logistik und Reedereien spüren Zölle nur über die Warenmengen.
+Zölle treffen Waren, die über die Grenze kommen. Entscheidend ist deshalb, wie viel ein Unternehmen in den USA selbst herstellt. Die jüngsten Angaben der Konzerne stammen aus dem Jahr 2025 und zeigen, wie unterschiedlich das ausfällt.
 
-| Unternehmen | Rendite | KGV | Quote |
-|---|---|---|---|
-| [BASF](/dividende/basf/) (Chemie) | 4,6 % | 27,3 | 124 % |
-| [Siemens](/dividende/siemens/) (Elektro) | 2,1 % | 21,4 | 45 % |
-| [Mercedes](/dividende/mercedes-benz-group/) (Autos) | 9,3 % | 7,0 | 66 % |
-| [BMW](/dividende/bmw/) (Autos) | 8,2 % | 4,5 | 37 % |
-| [VW](/dividende/volkswagen-vz/) (Autos) | 8,4 % | 4,7 | 40 % |
-| [DHL](/dividende/dhl-group/) (Logistik) | 3,4 % | 18,6 | 62 % |
-| [Maersk](/dividende/a-p-mller-mrsk/) (Reederei) | 2,5 % | 15,7 | 40 % |
+**Chemie und Elektrotechnik.** [BASF](/dividende/basf/) steht mit der Chemie auf der Liste, hat sich aber früh gegen Zölle aufgestellt. Mehr als 80 Prozent seines US-Umsatzes erzielt der Konzern mit Produkten, die er dort herstellt, sagte Vorstandschef Markus Kamieth im Mai 2025. Betroffen wären damit vor allem die Lieferungen aus Europa und Asien, also weniger als ein Fünftel des US-Geschäfts. Bei [Siemens](/dividende/siemens/) fallen rund 80 Prozent der Kosten in den Sparten Digital Industries, Smart Infrastructure und Mobility in den USA in Nordamerika an, die meisten davon in den USA. Der Konzern rechnete schon damals nur mit begrenzten Nettoeffekten durch Zölle.
 
-*Stand der Hub-Daten: 24.11.2026, Geschäftsjahr 2025. Quote ist die Ausschüttungsquote, bezogen auf den Gewinn.*
+**Autos.** Die neuen Sätze kommen nicht auf die bestehenden Autozölle. Für [Mercedes-Benz](/dividende/mercedes-benz-group/), [BMW](/dividende/bmw/) und [Volkswagen](/dividende/volkswagen-vz/) ändert der Vorschlag damit zunächst wenig, ihre Last bleibt der Autozoll selbst. Die Unterschiede liegen in der Fertigung: BMW baut in Spartanburg in South Carolina, Mercedes in Tuscaloosa in Alabama, wo rund zwei Drittel der Produktion in den Export gehen, während Modelle wie die E-Klasse aus Deutschland kommen. Volkswagen fertigt SUVs in Mexiko, das von den neuen Vorschlägen vorerst ausgenommen ist, und einzelne Modelle in Tennessee. Bei Teilen hängen alle drei an europäischen und asiatischen Zulieferern.
 
-Bei BASF fällt die Kombination auf. Der Konzern zahlt rechnerisch mehr als den ganzen Gewinn aus, und ausgerechnet seine Branche steht auf der Liste. Ein zusätzlicher Zoll träfe damit ein Unternehmen, dessen Dividende schon jetzt nicht aus dem Gewinn gedeckt ist. Siemens liegt mit 45 Prozent Ausschüttung weit komfortabler. Mercedes-Benz, BMW und Volkswagen werden mit einstelligen Kursgewinnverhältnissen gehandelt und bieten Renditen über 8 Prozent. Für sie ist entscheidend, dass die neuen Sätze nicht auf die bestehenden Autozölle aufgeschlagen werden.
+**Logistik.** Reedereien und Spediteure zahlen keine Zölle, sie spüren sie über die Frachtmengen. [Maersk](/dividende/a-p-mller-mrsk/)-Chef Vincent Clerc verwies im August 2025 darauf, dass 85 Prozent des weltweiten Containerverkehrs nichts mit den USA zu tun haben. Die schwachen US-Mengen glich damals Chinas Export nach Europa, Lateinamerika und Asien mehr als aus. Bei Spediteuren wie [DHL Group](/dividende/dhl-group/) steigt mit neuen Zöllen der Bedarf an Zollabwicklung und Herkunftsnachweisen, während Bestellungen vorgezogen oder verschoben werden können.
 
-Reedereien und Terminalbetreiber spüren Zölle über die Mengen. Denkbar sind Vorzieheffekte vor dem Inkrafttreten und danach weniger Fracht auf der Route über den Atlantik. Die Zölle fallen auf importierte Waren, Spediteure und Reedereien tragen sie nur indirekt.
-
-Für Japan und Südkorea gilt wie für die EU die 15-Prozent-Grenze. Toyota gehört zu den Autobauern, die die Begründung benennt, Samsung Electronics zu den Halbleiterherstellern auf der Branchenliste.
+**Asien.** Für Japan und Südkorea gilt wie für die EU die 15-Prozent-Grenze. [Toyota](/dividende/toyota/) verkauft über ein Fünftel seiner Fahrzeuge in den USA, hat dort zehn Werke und führte 2024 noch 1,2 Millionen Fahrzeuge ein. Bei 25 Prozent Autozoll kostete das den Konzern im Frühjahr 2025 rund 90 Milliarden Yen im Monat. Die Begründung des Handelsbeauftragten nennt japanische Autobauer ausdrücklich, aufgeschlagen werden die neuen Zölle auf Autos aber nicht. Samsung Electronics steht mit den Halbleitern auf der Branchenliste. Der Konzern baut in Taylor in Texas eigene Chipfabriken auf, die erste nimmt 2026 den Betrieb auf, eine zweite soll noch in diesem Jahr beginnen.
 
 ## Wie die Märkte reagierten
 
@@ -91,4 +81,9 @@ Dies ist eine Einordnung und keine Anlageberatung.
 - [trans.info: US-Zölle auf EU-Waren – Was Exporteure wissen müssen](https://trans.info/de/usa-planen-neue-zoelle-auf-eu-waren-und-erhoehen-den-druck-auf-exporteure-516597)
 - [Institut der deutschen Wirtschaft: Branchenexporte in die USA, IW-Report 2025](https://www.iwkoeln.de/fileadmin/user_upload/Studien/Report/PDF/2025/IW-Report_2025-Branchenexporte-USA.pdf)
 - [onvista](https://www.onvista.de/news/2026/11-25-zollsorgen-treiben-dax-anleger-um-0-20-26580406), [ad-hoc-news](https://www.ad-hoc-news.de/boerse/news/marktberichte/dax-gibt-am-mittwoch-0-87-prozent-nach-zollsorgen-bremsen/70553330) und [finanzen.ch](https://www.finanzen.ch/nachrichten/aktien/boerse-aktuell-25-11-2026-1036798588): Marktberichte vom 25.11.2026
-- Aktien-Hub von Dividenden-Rechner.de, Kennzahlen (Stand 24.11.2026)
+- [dpa über die BASF-Hauptversammlung](https://www.t-online.de/finanzen/aktuelles/id_100703152/basf-sieht-sich-fuer-us-zoelle-gewappnet-und-blickt-nach-asien.html), 2.5.2025
+- [dpa über die Siemens-Quartalszahlen](https://www.cio.de/article/3986543/siemens-sieht-nur-begrenzte-auswirkungen-durch-zoelle.html), 15.5.2025
+- [motor1: Welche Autobauer verlieren durch die US-Strafzölle](https://de.motor1.com/news/754872/auto-strafzoelle-usa-auswirkungen-hersteller/), 27.3.2025
+- [alleaktien: Maersk erhöht Prognose trotz US-Zöllen](https://www.alleaktien.com/news/maersk-erhoht-prognose-trotz-us-zollen-chinas-exporte-treiben-wachstum), 9.8.2025
+- Börsen-Zeitung: Trumps Zoll trifft Toyotas Gewinn und Marge hart, 8.5.2025
+- Korea Times: Berichte zu Samsungs Chipwerk in Taylor, 2026
