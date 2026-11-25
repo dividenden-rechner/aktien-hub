@@ -30,7 +30,7 @@ Datei anklicken, dann Stift-Symbol: Zeile `draft: true` löschen und speichern, 
 
 | Datum | Titel | Datei |
 |---|---|---|
-| 25.11.2026 13:30 | Deere: Die Dividende ist gedeckt, das Wachstum 2027 kommt aus den USA | [79738874_2026-11-25/8669_1330-deere-q4-2026-dividende-wachstum.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/79738874_2026-11-25/8669_1330-deere-q4-2026-dividende-wachstum.md) |
+| 25.11.2026 13:30 | Deere: Ausschüttung gedeckt, Wachstum 2027 vor allem in den USA | [79738874_2026-11-25/8669_1330-deere-q4-2026-dividende-wachstum.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/79738874_2026-11-25/8669_1330-deere-q4-2026-dividende-wachstum.md) |
 | 25.11.2026 12:56 | Deere klettert beim Umsatz um 4 %: Baumaschinen fangen Flaute in der Landtechnik ab | [79738874_2026-11-25/8743_1256-deere-geschaeftsjahr-2026-ergebnis.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/79738874_2026-11-25/8743_1256-deere-geschaeftsjahr-2026-ergebnis.md) |
 | 25.11.2026 08:30 | Hannover Rück peilt für 2027 mindestens 2,9 Milliarden Euro Gewinn an, rund 7 % mehr als 2026 | [79738874_2026-11-25/9169_0830-hannover-rueck-ausblick-2027-gewinn-2-9-milliarden-strategie-2029.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/79738874_2026-11-25/9169_0830-hannover-rueck-ausblick-2027-gewinn-2-9-milliarden-strategie-2029.md) |
 | 25.11.2026 02:15 | Medtronic übertrifft im zweiten Quartal die Gewinnerwartung und bestätigt Jahresprognose | [79738874_2026-11-25/9784_0215-medtronic-quartalszahlen-q2-2027.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/79738874_2026-11-25/9784_0215-medtronic-quartalszahlen-q2-2027.md) |
