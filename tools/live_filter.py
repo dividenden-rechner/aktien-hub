@@ -56,7 +56,9 @@ def filtern(html):
     # uebrige Verweise im Text: nur der Text bleibt
     html = re.sub(r'<a\b[^>]*' + ziel + r'[^>]*>(.*?)</a>', r'\1', html, flags=re.S)
     if FMP_AUS:
-        html = re.sub(r'<script[^>]*assets/(?:kurse|fkearn)\.js[^>]*></script>\n?', '', html)
+        html = re.sub(r'<script[^>]*assets/(?:kurse|fkearn|firma-fmp)\.js[^>]*></script>\n?', '', html)
+        # Bloecke nur fuer die Testseite (FMP-Daten, Hub-Verweis): oeffentlich ganz entfernen
+        html = re.sub(r'<(p|div)\b[^>]*data-nur-test[^>]*>.*?</\1>\n?', '', html, flags=re.S)
     return html
 
 
