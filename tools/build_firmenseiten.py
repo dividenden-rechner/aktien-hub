@@ -446,6 +446,10 @@ def bauen(vorhanden, reserviert_slugs, news_by_sym, kl2, k2, f2, stand):
         os.makedirs(os.path.join(ROOT, u), exist_ok=True)
         open(os.path.join(ROOT, u, "index.html"), "w", encoding="utf-8").write(h)
         eintraege.append((u, t, d))
+    # Zuordnung Börsenkürzel -> Firmenseite, damit der Aktien-Hub auf die Seite verlinken kann
+    slugs = {f["sym"].upper(): f["slug"] for f in firmen}
+    slugs.update({k.replace(".", "-"): v for k, v in list(slugs.items())})
+    json.dump(slugs, open(os.path.join(ROOT, "data", "firmen-slugs.json"), "w", encoding="utf-8"), ensure_ascii=False, sort_keys=True)
     # Listen
     def schreibe(url, titel, desc, h1, intro, liste, tiefe, crumb):
         body, _, _, _ = listenseite(titel, desc, url, h1, intro, liste, kl2, k2, f2, tiefe)
