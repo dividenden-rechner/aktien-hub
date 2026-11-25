@@ -9,7 +9,7 @@ def get(u):
 
 d = json.loads(get(API.format(j=2025, k="BBCA")))
 anh = d["Results"][0]["Attachments"]
-zipdatei = next(a for a in anh if a["File_Name"] in ("instance.zip", "inlineXBRL.zip"))
+zipdatei = next(a for a in anh if a["File_Name"] == "instance.zip")
 import urllib.parse
 pfad = "https://www.idx.id" + urllib.parse.quote(zipdatei["File_Path"], safe="/:")
 print("Datei:", zipdatei["File_Name"], pfad[:140])
@@ -17,11 +17,16 @@ import subprocess
 print(subprocess.run(["curl","-s","-L","-m","60","-A",UA["User-Agent"],"-H","Referer: https://www.idx.id/","-o","/tmp/x.zip","-w","HTTP %{http_code} %{size_download}\n",pfad],capture_output=True,text=True).stdout)
 z = zipfile.ZipFile("/tmp/x.zip")
 print("Inhalt:", z.namelist()[:20])
-inst = next((n for n in z.namelist() if n.endswith((".xbrl", ".xml", ".html", ".xhtml"))), z.namelist()[0])
-txt = z.read(inst).decode("utf-8", "replace")
-print("Instanz:", inst, len(txt))
-namen = collections.Counter(re.findall(r"<([a-zA-Z][\w.-]*:[\w.-]+)[\s>]", txt))
-print("Anzahl verschiedener Konzepte:", len(namen))
-for n, c in namen.most_common(400):
-    if not n.startswith(("xbrli:", "link:", "xlink:", "xbrldi:", "iso4217:")):
-        print(c, n)
+import re as _re
+for n in z.namelist():
+    if n.lower().endswith((".xbrl", ".xml")):
+        t = z.read(n).decode("utf-8", "replace")
+        print("Datei in ZIP:", n, len(t))
+        konz = collections.Counter(_re.findall(r"<([a-zA-Z][\w.-]*:[\w.-]+)[\s>]", t))
+        print("Konzepte gesamt:", len(konz))
+        for k2, c in konz.most_common(260):
+            if not k2.startswith(("xbrli:", "link:", "xlink:", "xbrldi:", "iso4217:", "xsi:")):
+                print(c, k2)
+        break
+else:
+    print("Keine XBRL-Datei im ZIP:", z.namelist()[:30])
