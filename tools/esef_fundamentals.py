@@ -91,6 +91,14 @@ FIRMEN = [
     ("ROG.SW", "Roche", "roche holding", "CH", "Healthcare"),
 ]
 
+# Erweiterung: weitere EU/EEA-Firmen aus data/esef/firmen-erweitert.json (ohne Doppelungen)
+try:
+    _erw = json.load(open(os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "data", "esef", "firmen-erweitert.json"), encoding="utf-8"))
+    _bekannt = {f[0] for f in FIRMEN}
+    FIRMEN += [tuple(x) for x in _erw if x[0] not in _bekannt]
+except Exception:
+    pass
+
 # Dividende je Aktie: vorgeschlagene Dividende fuer das Geschaeftsjahr (Kontinentaleuropa), im Jahr gezahlte (UK: Zwischen- plus Schlussdividende)
 DPS_VORSCHLAG = ["DividendsProposedOrDeclaredBeforeFinancialStatementsAuthorisedForIssueButNotRecognisedAsDistributionToOwnersPerShare"]
 DPS_GEZAHLT = ["DividendsRecognisedAsDistributionsToOwnersPerShare"]
