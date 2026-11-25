@@ -1,0 +1,14 @@
+name: IDX Probe neu
+on:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  probe:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: Anhaenge BBCA 2025 pruefen
+        run: |
+          curl -s -L -m 40 -H "Accept: application/json" -o fr.json "https://www.idx.id/primary/ListedCompany/GetFinancialReport?indexFrom=0&pageSize=12&year=2025&reportType=rdf&periode=audit&kodeEmiten=BBCA&SortColumn=KodeEmiten&SortOrder=asc"
+          python3 -c "import json; d=json.load(open('fr.json')); r=d['Results'][0]; print({k:v for k,v in r.items() if k!='Attachments'}); [print(a) for a in r['Attachments']]"
