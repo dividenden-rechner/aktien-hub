@@ -36,8 +36,10 @@ KONZEPTE = {
 ABS = {"capex", "dividenden_gezahlt"}
 
 
-def get(u, bin_=False):
-    return urllib.request.urlopen(urllib.request.Request(u, headers=UA), timeout=90).read()
+def get(u):
+    # Datei-Downloads ohne Accept: application/json (sonst 406)
+    kopf = {"User-Agent": UA["User-Agent"], "Accept": "*/*"}
+    return urllib.request.urlopen(urllib.request.Request(u, headers=kopf), timeout=90).read()
 
 
 def kontexte(t):
@@ -105,7 +107,7 @@ def jahreswerte(w):
 
 
 def bericht(kode, jahr):
-    d = json.loads(get(API.format(j=jahr, k=kode)))
+    d = json.loads(urllib.request.urlopen(urllib.request.Request(API.format(j=jahr, k=kode), headers=UA), timeout=90).read())
     if not d.get("Results"):
         return None, None
     r = d["Results"][0]
