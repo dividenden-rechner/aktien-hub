@@ -12,6 +12,7 @@ image_source: https://unsplash.com/photos/green-tractor-with-farm-machinery-in-a
 image_artist_url: https://unsplash.com/@rstar50?utm_source=dividenden-rechner&utm_medium=referral
 logo_name: "Deere & Company"
 logo_symbol: DE
+logo_file: assets/logos/de.png
 ---
 <!-- PRÜFEN: Aufmacherfoto ist automatisch von Unsplash gewaehlt: bitte pruefen, ob es zum Artikel passt (sonst image-Zeilen entfernen, dann entsteht ein Titelbild automatisch). -->
 <!-- PRÜFEN: Diese Werte wurden im Berichtstext nicht gefunden: Grafik Großlandtechnik & Präzisionslandwirtschaft: 15682; Grafik Kompaktlandtechnik & Rasenpflege: 11739; Grafik Bau- & Forstmaschinen: 13871; Grafik Finanzdienstleistungen: 5502 -->

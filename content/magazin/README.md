@@ -26,10 +26,11 @@ Datei anklicken, dann Stift-Symbol: Zeile `draft: true` löschen und speichern, 
 | 29.10.2026 22:42 | Amazon steigert Umsatz im dritten Quartal auf 201,9 Milliarden Dollar | [79738970_2026-10-29/7757_2242-amazon-q3-2026-zahlen.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/79738970_2026-10-29/7757_2242-amazon-q3-2026-zahlen.md) |
 | 29.10.2026 10:12 | Shell erzielt im dritten Quartal 10,8 Milliarden Dollar Gewinn | [79738970_2026-10-29/8987_1012-shell-q3-2026-ergebnisse.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/79738970_2026-10-29/8987_1012-shell-q3-2026-ergebnisse.md) |
 
-### Online (480)
+### Online (481)
 
 | Datum | Titel | Datei |
 |---|---|---|
+| 25.11.2026 12:56 | Deere klettert beim Umsatz um 4 %: Baumaschinen fangen Flaute in der Landtechnik ab | [79738874_2026-11-25/8743_1256-deere-geschaeftsjahr-2026-ergebnis.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/79738874_2026-11-25/8743_1256-deere-geschaeftsjahr-2026-ergebnis.md) |
 | 25.11.2026 08:30 | Hannover Rück peilt für 2027 mindestens 2,9 Milliarden Euro Gewinn an, rund 7 % mehr als 2026 | [79738874_2026-11-25/9169_0830-hannover-rueck-ausblick-2027-gewinn-2-9-milliarden-strategie-2029.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/79738874_2026-11-25/9169_0830-hannover-rueck-ausblick-2027-gewinn-2-9-milliarden-strategie-2029.md) |
 | 25.11.2026 02:15 | Medtronic übertrifft im zweiten Quartal die Gewinnerwartung und bestätigt Jahresprognose | [79738874_2026-11-25/9784_0215-medtronic-quartalszahlen-q2-2027.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/79738874_2026-11-25/9784_0215-medtronic-quartalszahlen-q2-2027.md) |
 | 25.11.2026 02:15 | Dollar Tree hebt Jahresprognose nach Gewinn von 1,24 US-Dollar im dritten Quartal an | [79738874_2026-11-25/9784_0215-dollar-tree-q3-zahlen-2026-prognose.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/79738874_2026-11-25/9784_0215-dollar-tree-q3-zahlen-2026-prognose.md) |
