@@ -1,6 +1,100 @@
 {
- "updated": "2026-11-25T08:33:10.969165+00:00",
+ "updated": "2026-11-25T19:15:41.589115+00:00",
  "items": [
+  {
+   "sym": "005930.KS",
+   "name": "Samsung Electronics",
+   "title": "[Video] [Voices of Galaxy] Meet the Physician From Mexico Whose Galaxy Watch Helped Him Care for His Mother — and Himself",
+   "link": "https://news.samsung.com/global/video-voices-of-galaxy-meet-the-physician-from-mexico-whose-galaxy-watch-helped-him-care-for-his-mother-and-himself",
+   "date": "2026-11-25T19:00:00+00:00",
+   "text": "",
+   "quelle": "RSS"
+  },
+  {
+   "sym": "AMZN",
+   "name": "Amazon",
+   "title": "Manufacturers can scale Industrial Intelligence faster with Schneider Electric Open Software Defined Automation on AWS",
+   "link": "https://press.aboutamazon.com/aws/2026/11/manufacturers-can-scale-industrial-intelligence-faster-with-schneider-electric-open-software-defined-automation-on-aws",
+   "date": "2026-11-25T17:19:30+00:00",
+   "text": "Schneider Electric Open Software-Defined Automation now integrates with AWS Cloud, edge, security and AI capabilities to help manufacturers connect operational technology directly to cloud intelligenceEnables manufacturers to simplify engineering, deploy AI and analytics faster, and scale proven applications across machines and sitesCombines cloud-scale computing with real-time factory-floor control, keeping time-critical workloads local while extending Industrial Intelligence across operations",
+   "quelle": "RSS"
+  },
+  {
+   "sym": "AMZN",
+   "name": "Amazon",
+   "title": "Prime Video Enhances Beloved Older Films and Series With AI-Assisted Technology",
+   "link": "https://press.aboutamazon.com/prime-video/2026/11/prime-video-enhances-beloved-older-films-and-series-with-ai-assisted-technology",
+   "date": "2026-11-25T15:01:30+00:00",
+   "text": "Just in time for the holidays, technology that combines human expertise with AI gives older favorites a sharper, clearer picture.",
+   "quelle": "RSS"
+  },
+  {
+   "sym": "SAND.ST",
+   "name": "Sandvik",
+   "title": "Sandvik to acquire Brazilian mining wear and spare parts manufacturer Del Rey Minerals",
+   "link": "https://www.home.sandvik/en/news-and-media/news/2026/11/sandvik-to-acquire-brazilian-mining-wear-and-spare-parts-manufacturer-del-rey-minerals/",
+   "date": "2026-11-25T12:00:00+00:00",
+   "text": "",
+   "quelle": "RSS"
+  },
+  {
+   "sym": "BMY",
+   "name": "Bristol-Myers Squibb",
+   "title": "Bristol Myers Squibb Announces Results from Phase 3 POETYK SLE-1 and POETYK SLE-2 Trials Evaluating Sotyktu (deucravacitinib) in Systemic Lupus Erythematosus",
+   "link": "https://news.bms.com/news/details/2026/Bristol-Myers-Squibb-Announces-Results-from-Phase-3-POETYK-SLE-1-and-POETYK-SLE-2-Trials-Evaluating-Sotyktu-deucravacitinib-in-Systemic-Lupus-Erythematosus/default.aspx",
+   "date": "2026-11-25T11:59:00+00:00",
+   "text": "",
+   "quelle": "RSS"
+  },
+  {
+   "sym": "SAP.DE",
+   "name": "SAP",
+   "title": "AI Is Changing the First Job: Why Youth Employment Belongs on Every Business Agenda",
+   "link": "https://news.sap.com/2026/11/ai-changing-first-job-youth-employment-business-agenda/",
+   "date": "2026-11-25T11:15:00+00:00",
+   "text": "The future of work cannot be built without young people.",
+   "quelle": "RSS"
+  },
+  {
+   "sym": "TSM",
+   "name": "Taiwan Semiconductor",
+   "title": "Meldung (6-K)",
+   "link": "https://www.sec.gov/Archives/edgar/data/1046179/000104617926000807/tsm-dividendadjustmentx202.htm",
+   "date": "2026-11-25T11:11:07+00:00",
+   "text": "",
+   "quelle": "SEC",
+   "kat": "Meldung (6-K)",
+   "form": "6-K"
+  },
+  {
+   "sym": "TSM",
+   "name": "Taiwan Semiconductor",
+   "title": "Meldung (6-K)",
+   "link": "https://www.sec.gov/Archives/edgar/data/1046179/000104617926000805/tsm-monthend6kx20261125.htm",
+   "date": "2026-11-25T11:02:34+00:00",
+   "text": "",
+   "quelle": "SEC",
+   "kat": "Meldung (6-K)",
+   "form": "6-K"
+  },
+  {
+   "sym": "005380.KS",
+   "name": "Hyundai Motor",
+   "title": "Hyundai IONIQ 3 Crowned Small Car of the Year at the TopGear.com Awards 2027",
+   "link": "https://www.hyundai.com/worldwide/en/newsroom/detail/0000001308",
+   "date": "2026-11-25T09:00:00+00:00",
+   "text": "IONIQ 3 receives recognition from one of the UK’s leading automotive publications shortly after its market launch\nTop Gear’s editorial team praises IONIQ 3 for its value for money, clever packaging, distinctive design, boot space and driving manners\nThe award follows INSTER’s Supermini of the Year title at the 2026 TopGear.com Awards and IONIQ 3’s recent selection as a finalist for European Car of the Year 2027",
+   "quelle": "RSS"
+  },
+  {
+   "sym": "CS.PA",
+   "name": "AXA",
+   "title": "AXA creates a free, expert-led training program that helps organizations and employees build safer and more supportive workplaces for people affected by domestic and sexual violence.",
+   "link": "https://www.axa.com/en/news/safe-spaces-supporting-victims-of-domestic-and-sexual-violence",
+   "date": "2026-11-25T09:00:00+00:00",
+   "text": "",
+   "quelle": "RSS"
+  },
   {
    "sym": "005930.KS",
    "name": "Samsung Electronics",
@@ -17,6 +111,15 @@
    "link": "https://www.chugai-pharm.co.jp/english/news/detail/20261125170000_1303.html",
    "date": "2026-11-25T08:00:00+00:00",
    "text": "",
+   "quelle": "RSS"
+  },
+  {
+   "sym": "AMZN",
+   "name": "Amazon",
+   "title": "Minfy and AWS Extend their Strategic Collaboration Agreement Globally to 2031 targeting Enterprise Transformation through AI & Cloud led Industry Platforms",
+   "link": "https://press.aboutamazon.com/aws/2026/11/minfy-and-aws-extend-their-strategic-collaboration-agreement-globally-to-2031-targeting-enterprise-transformation-through-ai-cloud-led-industry-platforms",
+   "date": "2026-11-25T05:30:00+00:00",
+   "text": "The new agreement is 3x of the past SCA signed in 2024While the previous agreement included India and US only, this agreement expands worldwide in scope as the demand of AI led services continues to grow globallyMinfy will lead with its AI Agentic industry platforms built on Amazon Bedrock across industries - Manufacturing & Industrials, Aerospace & Satellite, Media & Entertainment, FSI, Logistics and Public Sector",
    "quelle": "RSS"
   },
   {
@@ -37,6 +140,15 @@
    "link": "https://press.aboutamazon.com/2026/11/great-ormond-street-hospital-announces-first-of-its-kind-agentic-ai-programme-in-an-nhs-hospital-in-collaboration-with-hyland-and-amazon-web-services",
    "date": "2026-11-24T16:55:50+00:00",
    "text": "Great Ormond Street Hospital (GOSH) is collaborating with Hyland and Amazon Web Services (AWS) on a first-of-its-kind programme exploring how agentic AI could be safely developed and deployed in healthcare. The programme will establish governance frameworks and evaluate the technology's ability to automate repetitive tasks while maintaining accuracy and human oversight.",
+   "quelle": "RSS"
+  },
+  {
+   "sym": "MSFT",
+   "name": "Microsoft",
+   "title": "Outcome per dollar is the frontier. We’re advancing it at every layer: FLOPs-efficient pretraining (MAI Base 2), long RL climbs (Rocket), and token-efficient models (7 new MAI models announced last week) [Read more]",
+   "link": "https://www.linkedin.com/feed/update/urn:li:activity:7530839822152708096/",
+   "date": "2026-11-24T16:41:15+00:00",
+   "text": "The post Outcome per dollar is the frontier. We’re advancing it at every layer: FLOPs-efficient pretraining (MAI Base 2), long RL climbs (Rocket), and token-efficient models (7 new MAI models announced last week) [Read more] appeared first on Source.",
    "quelle": "RSS"
   },
   {
@@ -626,6 +738,15 @@
    "quelle": "RSS"
   },
   {
+   "sym": "MSFT",
+   "name": "Microsoft",
+   "title": "Bringing Salesforce to Copilot as we build Copilot as the OS for work!",
+   "link": "https://www.linkedin.com/feed/update/urn:li:activity:7528885100705402880/",
+   "date": "2026-11-19T16:38:35+00:00",
+   "text": "The post Bringing Salesforce to Copilot as we build Copilot as the OS for work! appeared first on Source.",
+   "quelle": "RSS"
+  },
+  {
    "sym": "AAPL",
    "name": "Apple",
    "title": "Apple TV becomes the new U.S. home of F1 ACADEMY™, the all-female racing series",
@@ -837,15 +958,6 @@
    "quelle": "RSS"
   },
   {
-   "sym": "MSFT",
-   "name": "Microsoft",
-   "title": "Microsoft and Intel deepen collaboration to deliver differentiated Azure infrastructure",
-   "link": "https://news.microsoft.com/source/2026/11/18/microsoft-and-intel-deepen-collaboration-to-deliver-differentiated-azure-infrastructure/",
-   "date": "2026-11-18T16:06:59+00:00",
-   "text": "The post Microsoft and Intel deepen collaboration to deliver differentiated Azure infrastructure appeared first on Source.",
-   "quelle": "RSS"
-  },
-  {
    "sym": "T",
    "name": "AT&T",
    "title": "AT&T and Tackle Tomorrow Launch Early Literacy Resources for K–3 Learners Nationwide",
@@ -873,15 +985,6 @@
    "quelle": "RSS"
   },
   {
-   "sym": "AMZN",
-   "name": "Amazon",
-   "title": "First Whole Foods Market Daily Shop to Open in Queens, New York, on December 18",
-   "link": "https://press.aboutamazon.com/2026/11/first-whole-foods-market-daily-shop-to-open-in-queens-new-york-on-december-18",
-   "date": "2026-11-18T15:00:00+00:00",
-   "text": "Smaller format store features more than 350 local items from 115+ Northeast suppliers",
-   "quelle": "RSS"
-  },
-  {
    "sym": "8766.T",
    "name": "Tokio Marine",
    "title": "261119 Uploaded materials of \"FY2026 2Q Results\"",
@@ -906,15 +1009,6 @@
    "link": "https://blogs.nvidia.com/blog/rtx-spark-desktop-local-ai-available-now/",
    "date": "2026-11-18T14:00:31+00:00",
    "text": "",
-   "quelle": "RSS"
-  },
-  {
-   "sym": "AMZN",
-   "name": "Amazon",
-   "title": "Amazon Ads Holiday Sponsorship Program Returns for Year Two with Charitable Giving, Creator Events, and Celebrity-Hosted Content",
-   "link": "https://press.aboutamazon.com/2026/11/amazon-ads-holiday-sponsorship-program-returns-for-year-two-with-charitable-giving-creator-events-and-celebrity-hosted-content",
-   "date": "2026-11-18T14:00:00+00:00",
-   "text": "Google, SharkNinja, The LEGO Group, and Unilever return as official partners, with new formats spanning Fire TV, Wondery, and Amazon Live, plus an exclusive creator event in NYC",
    "quelle": "RSS"
   },
   {
@@ -969,15 +1063,6 @@
    "link": "https://www.verizon.com/about/news/small-business-repeat-customers",
    "date": "2026-11-18T08:26:13+00:00",
    "text": "Learn how to get repeat customers this holiday season with a simple four-sticky-note exercise that helps small businesses attract shoppers and encourage repeat purchases.",
-   "quelle": "RSS"
-  },
-  {
-   "sym": "MSFT",
-   "name": "Microsoft",
-   "title": "Highlights from my opening of the Ignite keynote this morning on how we’re building a frontier ecosystem to turn advances in AI into real-world impact.",
-   "link": "https://www.linkedin.com/feed/update/urn:li:activity:7528647007431720960/",
-   "date": "2026-11-18T03:39:00+00:00",
-   "text": "The post Highlights from my opening of the Ignite keynote this morning on how we’re building a frontier ecosystem to turn advances in AI into real-world impact. appeared first on Source.",
    "quelle": "RSS"
   },
   {
@@ -1066,15 +1151,6 @@
    "quelle": "SEC",
    "kat": "Sonstige Ereignisse",
    "form": "8-K"
-  },
-  {
-   "sym": "AMZN",
-   "name": "Amazon",
-   "title": "New Whole Foods Market in Westlake Village, California, to Open December 17",
-   "link": "https://press.aboutamazon.com/2026/11/new-whole-foods-market-in-westlake-village-california-to-open-december-17",
-   "date": "2026-11-17T17:00:00+00:00",
-   "text": "Retailer’s newest location to feature more than 1,500 products from 350+ California-based suppliers",
-   "quelle": "RSS"
   },
   {
    "sym": "AAPL",
@@ -1323,15 +1399,6 @@
    "link": "https://investor.exxonmobil.com/company-information/press-releases/detail/1216/exxonmobil-starts-production-at-uaru-raising-guyanas",
    "date": "2026-11-16T15:19:00+00:00",
    "text": "",
-   "quelle": "RSS"
-  },
-  {
-   "sym": "SAP.DE",
-   "name": "SAP",
-   "title": "SAP Completes Acquisition of TechWolf",
-   "link": "https://news.sap.com/2026/11/sap-completes-acquisition-of-techwolf/",
-   "date": "2026-11-16T15:00:00+00:00",
-   "text": "WALLDORF — SAP has completed the acquisition of the AI work intelligence platform provider.",
    "quelle": "RSS"
   },
   {
@@ -2147,15 +2214,6 @@
    "title": "Announcement and Notices - [Announcement of Payment of Final Dividend for Year Ended 31 August 2026］",
    "link": "/eng/ir/news/pdf/202611051900_FinalDividend_eng.pdf",
    "date": "2026-11-05T10:00:00+00:00",
-   "text": "",
-   "quelle": "RSS"
-  },
-  {
-   "sym": "005930.KS",
-   "name": "Samsung Electronics",
-   "title": "Beyond the Medal: Samsung Helps Young Athletes Explore What Comes Next at Dakar 2026",
-   "link": "https://news.samsung.com/global/beyond-the-medal-samsung-helps-young-athletes-explore-what-comes-next-at-dakar-2026",
-   "date": "2026-11-05T08:00:00+00:00",
    "text": "",
    "quelle": "RSS"
   },
@@ -3177,29 +3235,11 @@
    "quelle": "RSS"
   },
   {
-   "sym": "4519.T",
-   "name": "Chugai Pharma",
-   "title": "Roche’s Announcement Regarding Sefaxersen (Detailed Interim Analysis Data from the Phase III IMAgINATION Study)",
-   "link": "https://www.chugai-pharm.co.jp/english/news/detail/20261026163000_1296.html",
-   "date": "2026-10-26T07:30:00+00:00",
-   "text": "",
-   "quelle": "RSS"
-  },
-  {
    "sym": "9983.T",
    "name": "Fast Retailing",
    "title": "Announcements and Notices - [Other - Miscellaneous] [PDF:178KB]",
    "link": "/eng/ir/news/pdf/2610261300_hdr_eng.pdf",
    "date": "2026-10-26T04:00:00+00:00",
-   "text": "",
-   "quelle": "RSS"
-  },
-  {
-   "sym": "4519.T",
-   "name": "Chugai Pharma",
-   "title": "Roche's Announcement Regarding divarasib (Presentation of Latest Data in KRAS G12C-Positive Non-Small Cell Lung Cancer at ESMO)",
-   "link": "https://www.chugai-pharm.co.jp/english/news/detail/20261026120000_1295.html",
-   "date": "2026-10-26T03:00:00+00:00",
    "text": "",
    "quelle": "RSS"
   },
@@ -3468,15 +3508,6 @@
    "quelle": "SEC",
    "kat": "Quartalszahlen",
    "form": "8-K"
-  },
-  {
-   "sym": "005380.KS",
-   "name": "Hyundai Motor",
-   "title": "Hyundai Motor Launches Hyundai Universal Solution Project to Expand Educational Access in Indonesia",
-   "link": "https://www.hyundai.com/worldwide/en/newsroom/detail/0000001293",
-   "date": "2026-10-21T07:30:00+00:00",
-   "text": "Hyundai Universal Solution project will support STEM education across 13 schools in East and North Jakarta, Indonesia\nEV bus-based mobile education project will provide learning opportunities for approximately 1,300 students and 130 teachers\nEV-focused educational content includes Minecraft quests, animated videos, learning kits and teacher guidance\nHyundai Motor, the Indonesian Ministry of Primary and Secondary Education (Kemendikdasmen) and Save the Children will collaborate with participating schools to deliver the project",
-   "quelle": "RSS"
   },
   {
    "sym": "9433.T",
@@ -4196,15 +4227,6 @@
    "quelle": "RSS"
   },
   {
-   "sym": "BMY",
-   "name": "Bristol-Myers Squibb",
-   "title": "Bristol Myers Squibb Deepens Commitment to Healthcare Professionals Through Champions in Care Movement",
-   "link": "https://news.bms.com/news/details/2026/Bristol-Myers-Squibb-Deepens-Commitment-to-Healthcare-Professionals-Through-Champions-in-Care-Movement/default.aspx",
-   "date": "2026-10-01T10:59:00+00:00",
-   "text": "",
-   "quelle": "RSS"
-  },
-  {
    "sym": "8053.T",
    "name": "Sumitomo Corp",
    "title": "Construction Begins on Grid-Scale Battery Energy Storage Facility in Namie, Fukushima",
@@ -4381,11 +4403,11 @@
  "errors": [
   {
    "sym": "PEP",
-   "fehler": "HTTP Error 402: Payment Required"
+   "fehler": "HTTP Error 429: Too Many Requests"
   },
   {
    "sym": "PG",
-   "fehler": "HTTP Error 402: Payment Required"
+   "fehler": "HTTP Error 429: Too Many Requests"
   },
   {
    "sym": "LLY",
@@ -4397,15 +4419,15 @@
   },
   {
    "sym": "PFE",
-   "fehler": "HTTP Error 402: Payment Required"
+   "fehler": "HTTP Error 429: Too Many Requests"
   },
   {
    "sym": "MRK",
-   "fehler": "HTTP Error 402: Payment Required"
+   "fehler": "HTTP Error 429: Too Many Requests"
   },
   {
    "sym": "O",
-   "fehler": "HTTP Error 402: Payment Required"
+   "fehler": "HTTP Error 429: Too Many Requests"
   },
   {
    "sym": "V",
@@ -4413,23 +4435,23 @@
   },
   {
    "sym": "JPM",
-   "fehler": "HTTP Error 402: Payment Required"
+   "fehler": "HTTP Error 429: Too Many Requests"
   },
   {
    "sym": "CVX",
-   "fehler": "HTTP Error 402: Payment Required"
+   "fehler": "HTTP Error 429: Too Many Requests"
   },
   {
    "sym": "MCD",
-   "fehler": "HTTP Error 402: Payment Required"
+   "fehler": "HTTP Error 429: Too Many Requests"
   },
   {
    "sym": "HD",
-   "fehler": "HTTP Error 402: Payment Required"
+   "fehler": "HTTP Error 429: Too Many Requests"
   },
   {
    "sym": "TXN",
-   "fehler": "HTTP Error 402: Payment Required"
+   "fehler": "HTTP Error 429: Too Many Requests"
   },
   {
    "sym": "AVGO",
@@ -4437,7 +4459,7 @@
   },
   {
    "sym": "CSCO",
-   "fehler": "HTTP Error 402: Payment Required"
+   "fehler": "HTTP Error 429: Too Many Requests"
   },
   {
    "sym": "MDLZ",
@@ -4449,163 +4471,163 @@
   },
   {
    "sym": "GOOGL",
-   "fehler": "HTTP Error 402: Payment Required"
+   "fehler": "HTTP Error 429: Too Many Requests"
   },
   {
    "sym": "SIE.DE",
-   "fehler": "HTTP Error 402: Payment Required"
+   "fehler": "HTTP Error 429: Too Many Requests"
   },
   {
    "sym": "ALV.DE",
-   "fehler": "HTTP Error 402: Payment Required"
+   "fehler": "HTTP Error 429: Too Many Requests"
   },
   {
    "sym": "MBG.DE",
-   "fehler": "HTTP Error 402: Payment Required"
+   "fehler": "HTTP Error 429: Too Many Requests"
   },
   {
    "sym": "BMW.DE",
-   "fehler": "HTTP Error 402: Payment Required"
+   "fehler": "HTTP Error 429: Too Many Requests"
   },
   {
    "sym": "BAS.DE",
-   "fehler": "HTTP Error 402: Payment Required"
+   "fehler": "HTTP Error 429: Too Many Requests"
   },
   {
    "sym": "MUV2.DE",
-   "fehler": "HTTP Error 402: Payment Required"
+   "fehler": "HTTP Error 429: Too Many Requests"
   },
   {
    "sym": "DHL.DE",
-   "fehler": "HTTP Error 402: Payment Required"
+   "fehler": "HTTP Error 429: Too Many Requests"
   },
   {
    "sym": "ADS.DE",
-   "fehler": "HTTP Error 402: Payment Required"
+   "fehler": "HTTP Error 429: Too Many Requests"
   },
   {
    "sym": "RWE.DE",
-   "fehler": "HTTP Error 402: Payment Required"
+   "fehler": "HTTP Error 429: Too Many Requests"
   },
   {
    "sym": "EOAN.DE",
-   "fehler": "HTTP Error 402: Payment Required"
+   "fehler": "HTTP Error 429: Too Many Requests"
   },
   {
    "sym": "DBK.DE",
-   "fehler": "HTTP Error 402: Payment Required"
+   "fehler": "HTTP Error 429: Too Many Requests"
   },
   {
    "sym": "ASML.AS",
-   "fehler": "HTTP Error 402: Payment Required"
+   "fehler": "HTTP Error 429: Too Many Requests"
   },
   {
    "sym": "MC.PA",
-   "fehler": "HTTP Error 402: Payment Required"
+   "fehler": "HTTP Error 429: Too Many Requests"
   },
   {
    "sym": "OR.PA",
-   "fehler": "HTTP Error 402: Payment Required"
+   "fehler": "HTTP Error 429: Too Many Requests"
   },
   {
    "sym": "TTE.PA",
-   "fehler": "HTTP Error 402: Payment Required"
+   "fehler": "HTTP Error 429: Too Many Requests"
   },
   {
    "sym": "SAN.PA",
-   "fehler": "HTTP Error 402: Payment Required"
+   "fehler": "HTTP Error 429: Too Many Requests"
   },
   {
    "sym": "SU.PA",
-   "fehler": "HTTP Error 402: Payment Required"
+   "fehler": "HTTP Error 429: Too Many Requests"
   },
   {
    "sym": "NESN.SW",
-   "fehler": "HTTP Error 402: Payment Required"
+   "fehler": "HTTP Error 429: Too Many Requests"
   },
   {
    "sym": "NOVN.SW",
-   "fehler": "HTTP Error 402: Payment Required"
+   "fehler": "HTTP Error 429: Too Many Requests"
   },
   {
    "sym": "ROG.SW",
-   "fehler": "HTTP Error 402: Payment Required"
+   "fehler": "HTTP Error 429: Too Many Requests"
   },
   {
    "sym": "UBSG.SW",
-   "fehler": "HTTP Error 402: Payment Required"
+   "fehler": "HTTP Error 429: Too Many Requests"
   },
   {
    "sym": "NOVO-B.CO",
-   "fehler": "HTTP Error 402: Payment Required"
+   "fehler": "HTTP Error 429: Too Many Requests"
   },
   {
    "sym": "ULVR.L",
-   "fehler": "HTTP Error 402: Payment Required"
+   "fehler": "HTTP Error 429: Too Many Requests"
   },
   {
    "sym": "SHEL.L",
-   "fehler": "HTTP Error 402: Payment Required"
+   "fehler": "HTTP Error 429: Too Many Requests"
   },
   {
    "sym": "AZN.L",
-   "fehler": "HTTP Error 402: Payment Required"
+   "fehler": "HTTP Error 429: Too Many Requests"
   },
   {
    "sym": "BP.L",
-   "fehler": "HTTP Error 402: Payment Required"
+   "fehler": "HTTP Error 429: Too Many Requests"
   },
   {
    "sym": "ENEL.MI",
-   "fehler": "HTTP Error 402: Payment Required"
+   "fehler": "HTTP Error 429: Too Many Requests"
   },
   {
    "sym": "ISP.MI",
-   "fehler": "HTTP Error 402: Payment Required"
+   "fehler": "HTTP Error 429: Too Many Requests"
   },
   {
    "sym": "IBE.MC",
-   "fehler": "HTTP Error 402: Payment Required"
+   "fehler": "HTTP Error 429: Too Many Requests"
   },
   {
    "sym": "TSM",
-   "fehler": "HTTP Error 402: Payment Required"
+   "fehler": "HTTP Error 429: Too Many Requests"
   },
   {
    "sym": "9988.HK",
-   "fehler": "HTTP Error 402: Payment Required"
+   "fehler": "HTTP Error 429: Too Many Requests"
   },
   {
    "sym": "0700.HK",
-   "fehler": "HTTP Error 402: Payment Required"
+   "fehler": "HTTP Error 429: Too Many Requests"
   },
   {
    "sym": "7203.T",
-   "fehler": "HTTP Error 402: Payment Required"
+   "fehler": "HTTP Error 429: Too Many Requests"
   },
   {
    "sym": "6758.T",
-   "fehler": "HTTP Error 402: Payment Required"
+   "fehler": "HTTP Error 429: Too Many Requests"
   },
   {
    "sym": "BHP.AX",
-   "fehler": "HTTP Error 402: Payment Required"
+   "fehler": "HTTP Error 429: Too Many Requests"
   },
   {
    "sym": "0027.HK",
-   "fehler": "HTTP Error 402: Payment Required"
+   "fehler": "HTTP Error 429: Too Many Requests"
   },
   {
    "sym": "RELIANCE.NS",
-   "fehler": "HTTP Error 402: Payment Required"
+   "fehler": "HTTP Error 429: Too Many Requests"
   },
   {
    "sym": "TATAMOTORS.NS",
-   "fehler": "HTTP Error 402: Payment Required"
+   "fehler": "HTTP Error 429: Too Many Requests"
   },
   {
    "sym": "HEI.DE",
-   "fehler": "HTTP Error 402: Payment Required"
+   "fehler": "HTTP Error 429: Too Many Requests"
   },
   {
    "sym": "FRE.DE",
@@ -4621,15 +4643,15 @@
   },
   {
    "sym": "HOLN.SW",
-   "fehler": "HTTP Error 402: Payment Required"
+   "fehler": "HTTP Error 429: Too Many Requests"
   },
   {
    "sym": "DGE.L",
-   "fehler": "HTTP Error 402: Payment Required"
+   "fehler": "HTTP Error 429: Too Many Requests"
   },
   {
    "sym": "REL.L",
-   "fehler": "HTTP Error 402: Payment Required"
+   "fehler": "HTTP Error 429: Too Many Requests"
   },
   {
    "sym": "AAL.L",
@@ -4637,7 +4659,7 @@
   },
   {
    "sym": "NOKIA.HE",
-   "fehler": "HTTP Error 402: Payment Required"
+   "fehler": "HTTP Error 429: Too Many Requests"
   },
   {
    "sym": "FRE.DE",
