@@ -7,7 +7,9 @@ API = "https://www.idx.id/primary/ListedCompany/GetFinancialReport?indexFrom=0&p
 def get(u):
     return urllib.request.urlopen(urllib.request.Request(u, headers=UA), timeout=60).read()
 
-d = json.loads(get(API.format(j=2025, k="BBCA")))
+import os
+KODE = os.environ.get("KODE", "TLKM")
+d = json.loads(get(API.format(j=2025, k=KODE)))
 anh = d["Results"][0]["Attachments"]
 zipdatei = next(a for a in anh if a["File_Name"] == "instance.zip")
 import urllib.parse
@@ -21,10 +23,10 @@ import re as _re
 for n in z.namelist():
     if n.lower().endswith((".xbrl", ".xml")):
         t = z.read(n).decode("utf-8", "replace")
-        print("Datei in ZIP:", n, len(t))
+        print("Datei in ZIP:", n, len(t), KODE)
         konz = collections.Counter(_re.findall(r"<([a-zA-Z][\w.-]*:[\w.-]+)[\s>]", t))
         print("Konzepte gesamt:", len(konz))
-        for k2, c in konz.most_common(260):
+        for k2, c in konz.most_common(2000):
             if not k2.startswith(("xbrli:", "link:", "xlink:", "xbrldi:", "iso4217:", "xsi:")):
                 print(c, k2)
         break

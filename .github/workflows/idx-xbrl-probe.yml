@@ -13,3 +13,5 @@ jobs:
         with:
           python-version: "3.12"
       - run: python3 tools/idx_xbrl_probe.py
+        env:
+          KODE: TLKM
