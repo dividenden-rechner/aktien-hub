@@ -195,10 +195,17 @@
    ]
   },
   {
+   "id": "landwirtschaft",
+   "name": "Landwirtschaft & Agrar",
+   "members": [
+    "DE", "ADM", "CAT", "EMR"
+   ]
+  },
+  {
    "id": "maschinen",
    "name": "Maschinen und Werkzeuge",
    "members": [
-    "CAT", "DE",
+    "CAT",
     "AOS",
     "ITW",
     "DOV",

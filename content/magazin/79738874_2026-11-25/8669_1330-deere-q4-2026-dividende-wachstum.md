@@ -49,7 +49,7 @@ Der Cashflow aus dem Geschäft soll zwischen 4,5 und 5,5 Milliarden Dollar liege
 
 ## Dividende: gedeckt, aber nah am oberen Rand
 
-Deere nennt als Ziel für die Dividende eine Ausschüttungsquote von 25 bis 35 Prozent des Gewinns im Mittelzyklus. Im [Aktien-Hub zu Deere](/dividende/deere-und/) liegt die Quote bei 36 Prozent, gerechnet auf den Gewinn der letzten zwölf Monate. Vergleichbare Maschinenbauer im Aktien-Hub sind [Caterpillar](/dividende/caterpillar/) und [Emerson Electric](/dividende/emerson-electric/). Die Dividende beträgt 6,48 Dollar je Aktie, die Rendite 1,06 Prozent. Eine eigene Dividendenzahl für das Geschäftsjahr 2026 ist in den Daten noch nicht erfasst, deshalb steht im Hub der Wert von 2025.
+Deere nennt als Ziel für die Dividende eine Ausschüttungsquote von 25 bis 35 Prozent des Gewinns im Mittelzyklus. Im [Aktien-Hub zu Deere](/dividende/deere-und/) liegt die Quote bei 36 Prozent, gerechnet auf den Gewinn der letzten zwölf Monate. Im Aktien-Hub stehen neben Deere der Agrarhändler [Archer-Daniels-Midland](/dividende/archer-daniels-midland/) sowie die Maschinenbauer [Caterpillar](/dividende/caterpillar/) und [Emerson Electric](/dividende/emerson-electric/). Die Dividende beträgt 6,48 Dollar je Aktie, die Rendite 1,06 Prozent. Eine eigene Dividendenzahl für das Geschäftsjahr 2026 ist in den Daten noch nicht erfasst, deshalb steht im Hub der Wert von 2025.
 
 ![Gewinn und Dividende je Aktie 2020 bis 2025](/assets/magazin/deere-q4-2026-chart-gewinn-dividende.png)
 *Eigene Grafik nach SEC-Jahreszahlen über den Aktien-Hub. Quote = Dividende je Aktie geteilt durch Gewinn je Aktie.*
