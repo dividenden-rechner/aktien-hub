@@ -15,7 +15,7 @@ SEC_LISTE = os.environ.get("SEC_LISTE")
 SEC_AUSGABE = os.environ.get("SEC_AUSGABE") or "data/sec/fundamentals.json"
 SEC_ABDECKUNG = os.environ.get("SEC_ABDECKUNG") or "data/sec-abdeckung.md"
 # Zusaetzliche US-Werte ausserhalb des S&P 500 (Ticker -> CIK leer = aus SEC-Tickerliste)
-ZUSATZ = {"VICI": None, "MAIN": None, "ARCC": None, "ADC": None, "STAG": None, "EPD": None, "ET": None}
+ZUSATZ = {"VICI": None, "MAIN": None, "ARCC": None, "ADC": None, "STAG": None, "EPD": None, "ET": None, "KSPI": None}
 # Dividenden-Aristokraten ausserhalb des S&P 500 (ab 17.11.2026, fuer die Dividendenseiten /dividende/)
 ZUSATZ.update({t: None for t in (
     "AWR NWN MZTI CWT HTO CBSH SCL FUL BKH NFG MSA UVV TNC MSEX RPM RLI UBSI MGEE CSL CTBI ORI DCI BRC UHT SRCE NC "
