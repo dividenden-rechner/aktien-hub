@@ -50,10 +50,10 @@ def slugify(n):
 
 
 def bw(v):
-    """Boersenwert in Euro nur, wo die Daten sicher in USD/EUR vorliegen (bei Yen, Won usw. liegt der Wert in Landeswaehrung)."""
-    if v.get("waehrung") in ("USD", "EUR"):
-        return v.get("boersenwert_eur")
-    return None
+    """Boersenwert in Euro. Bei Yen, Won, Taiwan-Dollar usw. (Wechselkurs ueber 20 je Euro) liegt der Wert in den Daten in Landeswaehrung und wird durch den Kurs geteilt."""
+    x, fx = v.get("boersenwert_eur"), v.get("fx") or 1
+    if not x: return None
+    return x / fx if fx > 20 else x
 
 
 def zahl(x, n=1):
