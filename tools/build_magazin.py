@@ -306,6 +306,15 @@ def _firmen():
             liste += [(f["name"], "dividende/" + f["slug"] + "/") for f in c.get("firmen", []) if len(f.get("name", "")) >= 4]
         except Exception:
             pass
+        try:
+            # Firmen mit automatisch erzeugter Seite (tools/build_firmenseiten.py): nur eindeutige Namen, damit keine Alltagsworte verlinkt werden
+            STOP = {"target", "visa", "shell", "total", "energy", "general", "new york", "royal", "united", "global", "first", "american", "national"}
+            for f in json.load(open("data/firmenseiten.json", encoding="utf-8")).get("firmen", []):
+                n = f["name"].strip()
+                if len(n) >= 6 and n.lower() not in STOP and (" " in n or len(n) >= 7):
+                    liste.append((n, "dividende/" + f["slug"] + "/"))
+        except Exception:
+            pass
         if HUB_VERLINKEN:
             try:
                 w = json.load(open("data/kennzahlen.json", encoding="utf-8"))["werte"]
@@ -320,6 +329,17 @@ def _firmen():
         _FIRMEN = out
     return _FIRMEN
 
+_RX = None
+def _firmen_rx():
+    """Ein einziger Suchausdruck fuer alle Firmennamen (laengste zuerst), einmal gebaut."""
+    global _RX
+    if _RX is None:
+        mp = {}
+        for n, z in _firmen(): mp.setdefault(n, z)
+        names = sorted(mp, key=lambda x: -len(x))
+        _RX = (re.compile(r"(?<![\w\-])(" + "|".join(re.escape(n) for n in names) + r")(?![\w\-])") if names else None, mp)
+    return _RX
+
 def firmen_links(h, depth):
     """Erste Nennung jeder Firma im Fliesstext wird zum Link (nicht in Links, Ueberschriften, Code)."""
     pre = "../" * depth
@@ -333,12 +353,15 @@ def firmen_links(h, depth):
                 skip = max(0, skip + (-1 if m.group(1) else 1))
             continue
         if skip: continue
-        for name, ziel in _firmen():
+        rx, mp = _firmen_rx()
+        if not rx: continue
+        out, pos = [], 0
+        for m in rx.finditer(t):
+            name = m.group(1)
             if name in gesetzt: continue
-            pat = re.compile(r"(?<![\w\-])" + re.escape(name) + r"(?![\w\-])")
-            if pat.search(t):
-                t = pat.sub(f'<a class="firmlink" href="{pre}{ziel}">{name}</a>', t, count=1)
-                gesetzt.add(name)
+            gesetzt.add(name)
+            out.append(t[pos:m.start()]); out.append(f'<a class="firmlink" href="{pre}{mp[name]}">{name}</a>'); pos = m.end()
+        out.append(t[pos:]); t = "".join(out)
         teile[i] = t
     return "".join(teile)
 
