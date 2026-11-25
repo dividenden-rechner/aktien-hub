@@ -8299,24 +8299,24 @@
 ]
 }
 },
-"stand": "2026-11-24",
+"stand": "2026-11-25",
 "hinweis": "Eigene Prognosen der Unternehmen aus ihren Ergebnis-Pressemitteilungen (SEC 8-K, Anlage EX-99), automatisch ausgelesen. Keine Analystenschaetzungen.",
 "letzter_lauf": {
-"zeit": "2026-11-24 14:10",
-"kandidaten": 78,
+"zeit": "2026-11-25 00:28",
+"kandidaten": 82,
 "ki_aufrufe": 0,
 "abbruch": "",
 "fehler": [
+"HPQ Meldung: HTTP Error 403: Forbidden",
+"DELL Meldung: HTTP Error 403: Forbidden",
+"ADSK Meldung: HTTP Error 403: Forbidden",
+"WDAY Meldung: HTTP Error 403: Forbidden",
 "SJM Meldung: HTTP Error 403: Forbidden",
 "ADI Meldung: HTTP Error 403: Forbidden",
 "BBY Meldung: HTTP Error 403: Forbidden",
 "MDT Meldung: HTTP Error 403: Forbidden",
 "DLTR Meldung: HTTP Error 403: Forbidden",
-"HPE Meldung: HTTP Error 403: Forbidden",
-"J Meldung: HTTP Error 403: Forbidden",
-"A Meldung: HTTP Error 403: Forbidden",
-"CRWD Meldung: HTTP Error 403: Forbidden",
-"MATW Meldung: HTTP Error 403: Forbidden"
+"HPE Meldung: HTTP Error 403: Forbidden"
 ]
 }
 }
