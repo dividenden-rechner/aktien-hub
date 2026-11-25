@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:dc="http://purl.org/dc/elements/1.1/">
-<channel><title>Dividenden-Rechner Aktien-Hub: News</title><link>https://dividenden-rechner.github.io/aktien-hub/news/</link><description>Dividenden, Kennzahlen und Steuern erklärt</description><language>de-DE</language><lastBuildDate>Wed, 25 Nov 2026 14:12:04 +0000</lastBuildDate><atom:link href="https://dividenden-rechner.github.io/aktien-hub/news/feed.xml" rel="self" type="application/rss+xml"/>
+<channel><title>Dividenden-Rechner Aktien-Hub: News</title><link>https://dividenden-rechner.github.io/aktien-hub/news/</link><description>Dividenden, Kennzahlen und Steuern erklärt</description><language>de-DE</language><lastBuildDate>Wed, 25 Nov 2026 14:30:44 +0000</lastBuildDate><atom:link href="https://dividenden-rechner.github.io/aktien-hub/news/feed.xml" rel="self" type="application/rss+xml"/>
 <item><title>Neue US-Zölle: Für Europa gilt die 15-Prozent-Grenze, China zahlt 20 Prozent obendrauf</title><link>https://dividenden-rechner.github.io/aktien-hub/news/us-zoelle-section-301-eu-china-branchen/</link><guid isPermaLink="true">https://dividenden-rechner.github.io/aktien-hub/news/us-zoelle-section-301-eu-china-branchen/</guid><pubDate>Wed, 25 Nov 2026 15:15:00 +0100</pubDate><category>Analyse</category><dc:creator>Aus der Redaktion</dc:creator><description>Washington schlägt Zölle auf 14 Handelspartner vor. Für die EU soll die Obergrenze aus dem Abkommen bleiben, Maschinenbau und Chemie stehen auf der Liste, Autos nicht. Wen es trifft und was bis Januar passiert.</description><enclosure url="https://dividenden-rechner.github.io/aktien-hub/assets/magazin/us-zoelle-containerterminal.jpg" type="image/jpeg" length="0"/><content:encoded><![CDATA[<div class="admonition kurz">
 <p class="admonition-title">Kurz gesagt</p>
 <p><strong>Vorschlag:</strong> Zölle auf 14 Handelspartner nach einer achtmonatigen Untersuchung zu Überkapazitäten, Inkrafttreten frühestens im Januar
@@ -54,66 +54,12 @@
 <h2 id="wen-es-in-europa-trifft">Wen es in Europa trifft</h2>
 <p>Die Untersuchung nennt Batterien, Chemie, Maschinen, Elektronik, Kunststoffe, Papier, Halbleiter und Baustoffe als Felder mit Überkapazitäten, dazu Zement und verarbeitete Lebensmittel. Für Deutschland und Irland führt die Begründung große Warenüberschüsse im Handel mit den USA an. Autobauer nennt sie ausdrücklich in China und Japan.</p>
 <p>Für die deutsche Wirtschaft ist die Verteilung der Exporte entscheidend. In den ersten drei Quartalen 2025 gingen 19,9 Prozent der Ausfuhren in die USA auf Autos und Autoteile zurück, 19,1 Prozent auf Pharma und 17,5 Prozent auf Maschinen. Chemie kam auf 6,2 Prozent. Maschinen und Chemie liegen mit je 9,5 Prozent im Minus gegenüber dem Vorjahr, Autos mit 13,9 Prozent, Pharma wuchs um 1,2 Prozent. Maschinen und Chemie stehen auf der Zollliste, Autos fallen unter die bestehenden Zölle. Pharma taucht in den Berichten zur Branchenliste nicht auf, ob einzelne Arzneimittel doch erfasst werden, zeigt erst die Produktliste.</p>
-<h2 id="was-das-fur-dividendenwerte-heit">Was das für Dividendenwerte heißt</h2>
-<p>Die Zahlen aus dem Aktien-Hub zeigen, wo die Dividende ein Polster hat und wo nicht. Chemie und Elektrotechnik stehen auf der Zollliste, Autos tragen eigene Zölle, Logistik und Reedereien spüren Zölle nur über die Warenmengen.</p>
-<div class="tablewrap"><table>
-<thead>
-<tr>
-<th>Unternehmen</th>
-<th>Rendite</th>
-<th>KGV</th>
-<th>Quote</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><a href="https://dividenden-rechner.github.io/aktien-hub/dividende/basf/">BASF</a> (Chemie)</td>
-<td>4,6 %</td>
-<td>27,3</td>
-<td>124 %</td>
-</tr>
-<tr>
-<td><a href="https://dividenden-rechner.github.io/aktien-hub/dividende/siemens/">Siemens</a> (Elektro)</td>
-<td>2,1 %</td>
-<td>21,4</td>
-<td>45 %</td>
-</tr>
-<tr>
-<td><a href="https://dividenden-rechner.github.io/aktien-hub/dividende/mercedes-benz-group/">Mercedes</a> (Autos)</td>
-<td>9,3 %</td>
-<td>7,0</td>
-<td>66 %</td>
-</tr>
-<tr>
-<td><a href="https://dividenden-rechner.github.io/aktien-hub/dividende/bmw/">BMW</a> (Autos)</td>
-<td>8,2 %</td>
-<td>4,5</td>
-<td>37 %</td>
-</tr>
-<tr>
-<td><a href="https://dividenden-rechner.github.io/aktien-hub/dividende/volkswagen-vz/">VW</a> (Autos)</td>
-<td>8,4 %</td>
-<td>4,7</td>
-<td>40 %</td>
-</tr>
-<tr>
-<td><a href="https://dividenden-rechner.github.io/aktien-hub/dividende/dhl-group/">DHL</a> (Logistik)</td>
-<td>3,4 %</td>
-<td>18,6</td>
-<td>62 %</td>
-</tr>
-<tr>
-<td><a href="https://dividenden-rechner.github.io/aktien-hub/dividende/a-p-mller-mrsk/">Maersk</a> (Reederei)</td>
-<td>2,5 %</td>
-<td>15,7</td>
-<td>40 %</td>
-</tr>
-</tbody>
-</table></div>
-<p><em>Stand der Hub-Daten: 24.11.2026, Geschäftsjahr 2025. Quote ist die Ausschüttungsquote, bezogen auf den Gewinn.</em></p>
-<p>Bei BASF fällt die Kombination auf. Der Konzern zahlt rechnerisch mehr als den ganzen Gewinn aus, und ausgerechnet seine Branche steht auf der Liste. Ein zusätzlicher Zoll träfe damit ein Unternehmen, dessen Dividende schon jetzt nicht aus dem Gewinn gedeckt ist. <a class="firmlink" href="https://dividenden-rechner.github.io/aktien-hub/dividende/siemens/">Siemens</a> liegt mit 45 Prozent Ausschüttung weit komfortabler. Mercedes-Benz, BMW und Volkswagen werden mit einstelligen Kursgewinnverhältnissen gehandelt und bieten Renditen über 8 Prozent. Für sie ist entscheidend, dass die neuen Sätze nicht auf die bestehenden Autozölle aufgeschlagen werden.</p>
-<p>Reedereien und Terminalbetreiber spüren Zölle über die Mengen. Denkbar sind Vorzieheffekte vor dem Inkrafttreten und danach weniger Fracht auf der Route über den Atlantik. Die Zölle fallen auf importierte Waren, Spediteure und Reedereien tragen sie nur indirekt.</p>
-<p>Für Japan und Südkorea gilt wie für die EU die 15-Prozent-Grenze. Toyota gehört zu den Autobauern, die die Begründung benennt, <a class="firmlink" href="https://dividenden-rechner.github.io/aktien-hub/dividende/samsung-electronics/">Samsung Electronics</a> zu den Halbleiterherstellern auf der Branchenliste.</p>
+<h2 id="was-das-fur-die-geschafte-der-firmen-heit">Was das für die Geschäfte der Firmen heißt</h2>
+<p>Zölle treffen Waren, die über die Grenze kommen. Entscheidend ist deshalb, wie viel ein Unternehmen in den USA selbst herstellt. Die jüngsten Angaben der Konzerne stammen aus dem Jahr 2025 und zeigen, wie unterschiedlich das ausfällt.</p>
+<p><strong>Chemie und Elektrotechnik.</strong> <a href="https://dividenden-rechner.github.io/aktien-hub/dividende/basf/">BASF</a> steht mit der Chemie auf der Liste, hat sich aber früh gegen Zölle aufgestellt. Mehr als 80 Prozent seines US-Umsatzes erzielt der Konzern mit Produkten, die er dort herstellt, sagte Vorstandschef Markus Kamieth im Mai 2025. Betroffen wären damit vor allem die Lieferungen aus Europa und Asien, also weniger als ein Fünftel des US-Geschäfts. Bei <a href="https://dividenden-rechner.github.io/aktien-hub/dividende/siemens/">Siemens</a> fallen rund 80 Prozent der Kosten in den Sparten Digital Industries, Smart Infrastructure und Mobility in den USA in Nordamerika an, die meisten davon in den USA. Der Konzern rechnete schon damals nur mit begrenzten Nettoeffekten durch Zölle.</p>
+<p><strong>Autos.</strong> Die neuen Sätze kommen nicht auf die bestehenden Autozölle. Für <a href="https://dividenden-rechner.github.io/aktien-hub/dividende/mercedes-benz-group/">Mercedes-Benz</a>, <a href="https://dividenden-rechner.github.io/aktien-hub/dividende/bmw/">BMW</a> und <a href="https://dividenden-rechner.github.io/aktien-hub/dividende/volkswagen-vz/">Volkswagen</a> ändert der Vorschlag damit zunächst wenig, ihre Last bleibt der Autozoll selbst. Die Unterschiede liegen in der Fertigung: BMW baut in Spartanburg in South Carolina, Mercedes in Tuscaloosa in Alabama, wo rund zwei Drittel der Produktion in den Export gehen, während Modelle wie die E-Klasse aus Deutschland kommen. Volkswagen fertigt SUVs in Mexiko, das von den neuen Vorschlägen vorerst ausgenommen ist, und einzelne Modelle in Tennessee. Bei Teilen hängen alle drei an europäischen und asiatischen Zulieferern.</p>
+<p><strong>Logistik.</strong> Reedereien und Spediteure zahlen keine Zölle, sie spüren sie über die Frachtmengen. <a href="https://dividenden-rechner.github.io/aktien-hub/dividende/a-p-mller-mrsk/">Maersk</a>-Chef Vincent Clerc verwies im August 2025 darauf, dass 85 Prozent des weltweiten Containerverkehrs nichts mit den USA zu tun haben. Die schwachen US-Mengen glich damals Chinas Export nach Europa, Lateinamerika und Asien mehr als aus. Bei Spediteuren wie <a href="https://dividenden-rechner.github.io/aktien-hub/dividende/dhl-group/">DHL Group</a> steigt mit neuen Zöllen der Bedarf an Zollabwicklung und Herkunftsnachweisen, während Bestellungen vorgezogen oder verschoben werden können.</p>
+<p><strong>Asien.</strong> Für Japan und Südkorea gilt wie für die EU die 15-Prozent-Grenze. <a href="https://dividenden-rechner.github.io/aktien-hub/dividende/toyota/">Toyota</a> verkauft über ein Fünftel seiner Fahrzeuge in den USA, hat dort zehn Werke und führte 2024 noch 1,2 Millionen Fahrzeuge ein. Bei 25 Prozent Autozoll kostete das den Konzern im Frühjahr 2025 rund 90 Milliarden Yen im Monat. Die Begründung des Handelsbeauftragten nennt japanische Autobauer ausdrücklich, aufgeschlagen werden die neuen Zölle auf Autos aber nicht. <a class="firmlink" href="https://dividenden-rechner.github.io/aktien-hub/dividende/samsung-electronics/">Samsung Electronics</a> steht mit den Halbleitern auf der Branchenliste. Der Konzern baut in Taylor in Texas eigene Chipfabriken auf, die erste nimmt 2026 den Betrieb auf, eine zweite soll noch in diesem Jahr beginnen.</p>
 <h2 id="wie-die-markte-reagierten">Wie die Märkte reagierten</h2>
 <p>Der DAX gab am Mittwochmittag 0,87 Prozent nach und stand bei 24.961 Punkten (Indikation von 13:02 Uhr). In Asien verlor der Nikkei bis zu 2,85 Prozent, der Shanghai Composite 1,64 Prozent. Die Zölle waren dabei einer von mehreren Gründen: Technologiewerte standen nach der Rally der Vortage unter Druck, <a class="firmlink" href="https://dividenden-rechner.github.io/aktien-hub/dividende/nvidia/">Nvidia</a> verlor in den USA 5,9 Prozent, und in Deutschland belasteten auch Konjunkturdaten. Für Europa spricht, dass der Vorschlag die 15-Prozent-Marke aus dem Abkommen nicht antastet. Börsianer lesen ihn zunächst als Ersatz für die Zölle, die das Oberste Gericht gekippt hat. Alles, was darüber hinausginge, wäre ein neuer Belastungsfaktor.</p>
 <h2 id="zeitplan-und-risiken">Zeitplan und Risiken</h2>
@@ -128,7 +74,12 @@
 <li><a href="https://trans.info/de/usa-planen-neue-zoelle-auf-eu-waren-und-erhoehen-den-druck-auf-exporteure-516597" rel="noopener">trans.info: US-Zölle auf EU-Waren – Was Exporteure wissen müssen</a></li>
 <li><a href="https://www.iwkoeln.de/fileadmin/user_upload/Studien/Report/PDF/2025/IW-Report_2025-Branchenexporte-USA.pdf" rel="noopener">Institut der deutschen Wirtschaft: Branchenexporte in die USA, IW-Report 2025</a></li>
 <li><a href="https://www.onvista.de/news/2026/11-25-zollsorgen-treiben-dax-anleger-um-0-20-26580406" rel="noopener">onvista</a>, <a href="https://www.ad-hoc-news.de/boerse/news/marktberichte/dax-gibt-am-mittwoch-0-87-prozent-nach-zollsorgen-bremsen/70553330" rel="noopener">ad-hoc-news</a> und <a href="https://www.finanzen.ch/nachrichten/aktien/boerse-aktuell-25-11-2026-1036798588" rel="noopener">finanzen.ch</a>: Marktberichte vom 25.11.2026</li>
-<li>Aktien-Hub von Dividenden-Rechner.de, Kennzahlen (Stand 24.11.2026)</li>
+<li><a href="https://www.t-online.de/finanzen/aktuelles/id_100703152/basf-sieht-sich-fuer-us-zoelle-gewappnet-und-blickt-nach-asien.html" rel="noopener">dpa über die BASF-Hauptversammlung</a>, 2.5.2025</li>
+<li><a href="https://www.cio.de/article/3986543/siemens-sieht-nur-begrenzte-auswirkungen-durch-zoelle.html" rel="noopener">dpa über die Siemens-Quartalszahlen</a>, 15.5.2025</li>
+<li><a href="https://de.motor1.com/news/754872/auto-strafzoelle-usa-auswirkungen-hersteller/" rel="noopener">motor1: Welche Autobauer verlieren durch die US-Strafzölle</a>, 27.3.2025</li>
+<li><a href="https://www.alleaktien.com/news/maersk-erhoht-prognose-trotz-us-zollen-chinas-exporte-treiben-wachstum" rel="noopener">alleaktien: Maersk erhöht Prognose trotz US-Zöllen</a>, 9.8.2025</li>
+<li>Börsen-Zeitung: Trumps Zoll trifft Toyotas Gewinn und Marge hart, 8.5.2025</li>
+<li>Korea Times: Berichte zu Samsungs Chipwerk in Taylor, 2026</li>
 </ul></details>]]></content:encoded></item>
 <item><title>Deere: Ausschüttung gedeckt, Wachstum 2027 vor allem in den USA</title><link>https://dividenden-rechner.github.io/aktien-hub/news/deere-q4-2026-dividende-wachstum/</link><guid isPermaLink="true">https://dividenden-rechner.github.io/aktien-hub/news/deere-q4-2026-dividende-wachstum/</guid><pubDate>Wed, 25 Nov 2026 13:30:00 +0100</pubDate><category>Analyse</category><dc:creator>Aus der Redaktion</dc:creator><description>Deere verdient im Schlussquartal 1 Prozent weniger. Für 2027 erwartet der Konzern einen Nettogewinn von 4,5 bis 5,3 Milliarden Dollar, die Dividende bleibt gedeckt.</description><enclosure url="https://dividenden-rechner.github.io/aktien-hub/assets/magazin/deere-q4-2026-aufmacher.jpg" type="image/jpeg" length="0"/><content:encoded><![CDATA[<div class="admonition kurz">
 <p class="admonition-title">Kurz gesagt</p>
