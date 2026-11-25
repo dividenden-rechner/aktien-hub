@@ -329,6 +329,20 @@ def _firmen():
         _FIRMEN = out
     return _FIRMEN
 
+_SYMSLUG = None
+def _sym_slug():
+    """Kuerzel -> (Name, Seitenname) fuer alle Firmen mit Dividendenseite."""
+    global _SYMSLUG
+    if _SYMSLUG is None:
+        _SYMSLUG = {}
+        for datei in ("data/dividendenseiten.json", "data/firmenseiten.json"):
+            try:
+                for f in json.load(open(datei, encoding="utf-8")).get("firmen", []):
+                    _SYMSLUG.setdefault(f["sym"], (f["name"], f["slug"]))
+            except Exception:
+                pass
+    return _SYMSLUG
+
 _RX = None
 def _firmen_rx():
     """Ein einziger Suchausdruck fuer alle Firmennamen (laengste zuerst), einmal gebaut."""
@@ -838,6 +852,9 @@ def build_post(p, posts, ordner="news"):
         bar = share_html(p, url, img if ext(img) else pre + img)
         bar = re.sub(r' id="(teilen|igshare|cpshare|igmsg)"', "", bar).replace('class="sharebar"', 'class="sharebar sharebar-unten"', 1)
         o += bar
+    fs = _sym_slug().get(re.sub(r"\.NE$", "", sym_norm(p)))
+    if fs:
+        o += (f'<aside class="related"><h2>Zur Firma</h2><ul><li><a href="{pre}dividende/{fs[1]}/">{esc(fs[0])}: Dividende, Kennzahlen und Vergleich mit ähnlichen Aktien</a></li></ul></aside>\n')
     others = [x for x in posts if x["slug"] != slug and x.get("typ") != "kurz"][:3]
     if others:
         o += '<aside class="related"><h2>Weitere Artikel</h2><ul>\n' + "\n".join(f'<li><a href="{pre}news/{x["slug"]}/">{esc(x["title"])}</a></li>' for x in others) + "\n</ul></aside>\n"
