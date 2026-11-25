@@ -819,6 +819,11 @@ def main():
     eintraege.insert(1, ("dividende/aristokraten/", t, d))
     import build_firmenseiten
     neu = build_firmenseiten.bauen({r["f"]["sym"] for r in rs}, {r["f"]["slug"] for r in rs}, news_by_sym(mag), kl1, k1, f1, datetime.date.today().isoformat())
+    # Auch die handkuratierten Seiten bekommen einen Eintrag für den Link aus dem Aktien-Hub
+    zuordnung = json.load(open(os.path.join(ROOT, "data", "firmen-slugs.json"), encoding="utf-8"))
+    for r in rs:
+        zuordnung[r["f"]["sym"].upper()] = r["f"]["slug"]
+    json.dump(zuordnung, open(os.path.join(ROOT, "data", "firmen-slugs.json"), "w", encoding="utf-8"), ensure_ascii=False, sort_keys=True)
     sitemap_llms(eintraege, neu)
     weiterleitungen(rs)
     stub_schreiben([u for u, _, _ in eintraege] + [u for u, _, _ in neu])
