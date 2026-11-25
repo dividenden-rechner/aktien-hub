@@ -10,7 +10,7 @@ quelle_name: "Hannover Rück SE, Pressemitteilung und Präsentation zum Investor
 logo_name: "Hannover Rück"
 logo_symbol: HNR1.DE
 logo_domain: hannover-re.com
-logo_file: assets/logos/combo-hnr1.png
+logo_file: assets/logos/hnr1-de.png
 story_kopf: "Ziel 2027: 2,9 Mrd. Euro\nPlus zu 2026: rund 7 %"
 story_image: assets/magazin/hannover-rueck-folie-ausblick-2027.jpg
 story_portrait: medien/ceo/hnr1.png
