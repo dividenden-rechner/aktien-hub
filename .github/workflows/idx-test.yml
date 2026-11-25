@@ -8,17 +8,17 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 10
     steps:
-      - name: Seiten und Berichtslinks für BBCA prüfen
+      - name: Berichtsquellen auf BBCA-Seite finden
         run: |
           UA="Mozilla/5.0 (dividenden-rechner.de Datensammlung)"
-          for u in \
-            "https://www.idx.id/en/listed-companies/company-profiles/" \
-            "https://www.idx.id/en/listed-companies/company-profiles/BBCA" \
-            "https://www.idx.id/en/listed-companies/xbrl/" \
-            "https://idxnet.idx.id/" \
-            "https://www.idx.co.id/" \
-            "https://www.idx.id/en/listed-companies/financial-statements/" ; do
-            echo "== $u"
-            curl -s -L -A "$UA" -m 40 -o /tmp/p.html -w "HTTP %{http_code} Bytes %{size_download}\n" "$u" || echo "fehlgeschlagen"
-            grep -oi 'href="[^"]*\(xbrl\|financial\|laporan\|report\|bbca\)[^"]*"' /tmp/p.html 2>/dev/null | sort -u | head -15
+          curl -s -L -A "$UA" -m 40 -o /tmp/bbca.html "https://www.idx.id/en/listed-companies/company-profiles/BBCA"
+          echo "== Links mit pdf/xlsx/zip/xbrl/api/report/financial"
+          grep -oi 'href="[^"]*\(\.pdf\|\.xlsx\|\.zip\|xbrl\|/api\|report\|financial\)[^"]*"' /tmp/bbca.html | sort -u | head -40
+          echo "== Skript-Endpunkte"
+          grep -oi '"[^"]*\(api\|xbrl\|financial\|report\)[^"]*"' /tmp/bbca.html | sort -u | head -40
+          echo "== Tabellen/Keywords"
+          grep -oi 'laporan[^<"]\{0,60\}\|financial statement[^<"]\{0,60\}' /tmp/bbca.html | sort -u | head -20
+          echo "== Versuche Berichtsseiten"
+          for u in "https://www.idx.id/api/v1/company/BBCA/financial-report" "https://www.idx.id/en/listed-companies/financial-report/" "https://www.idx.co.id/Portals/0/StaticData/ListedCompanies/Corporate_Actions/" ; do
+            echo "-- $u"; curl -s -L -A "$UA" -m 40 -o /tmp/x.bin -w "HTTP %{http_code} %{size_download}\n" "$u"; head -c 300 /tmp/x.bin | tr -d '\r' | head -5; echo
           done
