@@ -10,7 +10,7 @@ quelle_name: "Hannover Rück SE, Ergebnis der ersten neun Monate 2026 und Confer
 logo_name: "Hannover Rück"
 logo_symbol: HNR1.DE
 logo_domain: hannover-re.com
-logo_file: assets/logos/hnr1-de.png
+logo_file: assets/logos/hnr1-icon.png
 story_image: assets/magazin/hannover-rueck-q3-2026-ergebnis.png
 story_portrait: medien/ceo/hnr1.png
 story_quote_by: "Clemens Jungsthöfel | CEO Hannover Rück"
