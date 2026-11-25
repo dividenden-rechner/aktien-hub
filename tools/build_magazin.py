@@ -138,7 +138,7 @@ def read_post(path):
     except Exception as ex: print("Medien-Ablage:", ex)
     meta["author"] = meta.get("author") or CFG["default_author"]
     # Grosse Artikel vom Wochenende (Samstag/Sonntag, keine Kurzmeldung) erscheinen unter dem Namen des Redakteurs.
-    if "redaktion" in meta["author"].lower() and meta["dt"].weekday() >= 5 and meta["dt"].strftime("%Y-%m-%d") >= "2026-11-07" and meta.get("typ") != "kurz":
+    if "redaktion" in meta["author"].lower():      # Autor ist immer Kilian Treß (Google Discover will eine Person als Autor)
         meta["author"] = "Kilian Treß"
     if meta["author"] in AUTOREN:
         a = AUTOREN[meta["author"]]
@@ -1144,6 +1144,9 @@ def patch_home(posts):
             block += (f'<a class="card" href="news/{x["slug"]}/"><div class="mcwrap" style="position:relative;margin:0"><img class="mcover" src="{src("", x["img"])}" alt="{esc(x.get("image_alt") or x["title"])}" width="1200" height="675" loading="lazy">{card_logo(x, "")}</div>'
                       f'<p class="kicker">{esc(x["category"])} · {de_dt_kurz(x["dt"])}</p><h3>{esc(x["title"])}</h3></a>\n')
         block += '</div>\n<p class="more"><a href="news/">Alle Artikel in den News →</a></p></section>\n'
+    feed = '<link rel="alternate" type="application/rss+xml" title="Dividenden-Rechner: News" href="news/feed.xml">'
+    if 'type="application/rss+xml"' not in s:
+        s = s.replace('<link rel="canonical"', feed + '\n<link rel="canonical"', 1)
     mk = "<!-- magazin-neu -->"
     if mk not in s:
         s = s.replace('<section class="home-more">', mk + "\n" + mk.replace("neu", "ende") + '\n<section class="home-more">', 1)
