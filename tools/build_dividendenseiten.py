@@ -12,7 +12,7 @@ Daten (nur vorhandene, nichts geschätzt):
 Danach: Sitemap und llms.txt ergänzen, 301-Weiterleitungen in tools/umzug/redirects-entwurf.csv auf die neuen Seiten setzen.
 Aufruf:  python3 tools/build_dividendenseiten.py
 """
-import csv, datetime, html, json, os, re
+import csv, datetime, html, json, math, os, re
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 BASE = "https://dividenden-rechner.github.io/aktien-hub/"   # wird beim Live-Bau durch die echte Domain ersetzt
@@ -272,12 +272,34 @@ COLS6 = '<colgroup><col class="c1"><col class="c2"><col class="c3"><col class="c
 
 PEER_BLOCKS = {}
 
-def peer_block(sym, cfg_by_sym, gruppen):
-    """Querverlinkung je Aktie: Aristokratenliste plus bis zu drei Aktien aus derselben Peer-Gruppe."""
-    gr = next((g for g in gruppen if sym in g["members"]), None)
-    peers = [m for m in (gr["members"] if gr else []) if m != sym and m in cfg_by_sym][:3]
-    items = "".join(f'<li><a href="../{cfg_by_sym[m]["slug"]}/" style="display:flex;align-items:center;gap:10px">{logo_span(m, cfg_by_sym[m]["name"], "../../")}{esc(cfg_by_sym[m]["name"])}</a></li>' for m in peers)
-    peer_teil = (f'<p>Aus der Gruppe „{esc(gr["name"])}“ lohnt der Blick auf:</p><ul>{items}</ul>' if peers else "")
+def peer_block(sym, cfg_by_sym, gruppen, alle=None):
+    """Querverlinkung je Aktie: Aristokratenliste plus bis zu vier Aktien mit gleichem Geschaeftsmodell (Branche, weltweit)."""
+    alle = alle or {}
+    br = alle.get(sym, {}).get("branche")
+    peers, name = [], ""
+    if br:
+        from build_firmenseiten import BMETA
+        def mitglieder(n):
+            return [g for g in alle.values() if g.get("branche") == n and g["sym"] != sym
+                    and re.sub(r"[^a-z]", "", g["name"].lower())[:7] != re.sub(r"[^a-z]", "", alle[sym]["name"].lower())[:7]]
+        pool = mitglieder(br)
+        if len(pool) < 4:
+            e = BMETA[br].get("eltern")
+            fam = ([e] if e else []) + [n for n, m in BMETA.items() if m.get("eltern") == br] + ([n for n, m in BMETA.items() if m.get("eltern") == e and n != br] if e else [])
+            for n in fam:
+                pool += [g for g in mitglieder(n) if g not in pool]
+        mc = alle[sym].get("umsatz") or 0
+        if mc:
+            n0 = len(mitglieder(br))
+            eigene = sorted(pool[:n0], key=lambda g: abs(math.log(g["umsatz"] / mc)) if (g.get("umsatz") or 0) > 0 else 99)
+            pool = eigene + pool[n0:]
+        gesehen, uniq = set(), []
+        for g in pool:
+            k = re.sub(r"[^a-z]", "", g["name"].lower())[:7]
+            if k not in gesehen: gesehen.add(k); uniq.append(g)
+        peers, name = uniq[:4], br
+    items = "".join(f'<li><a href="../{g["slug"]}/" style="display:flex;align-items:center;gap:10px">{logo_span(g["sym"], g["name"], "../../")}{esc(g["name"])}</a></li>' for g in peers)
+    peer_teil = (f'<p>Mit ähnlichem Geschäftsmodell aus der Branche „{esc(name)}“ lohnt der Blick auf:</p><ul>{items}</ul>' if peers else "")
     return (f'<h2>Vergleich und Einordnung</h2>{peer_teil}'
             f'<p><a href="../aristokraten/">Alle Dividendenaristokraten und Dividend Kings im Vergleich</a></p>')
 
@@ -770,8 +792,18 @@ def main():
     cfg_by_sym = {f["sym"]: f for f in cfg}
     gruppen = lade("data/dividende-peers.json")["gruppen"]
     PEER_BLOCKS.clear()
+    import build_firmenseiten as FS
+    kz = lade("data/kennzahlen.json")["werte"]
+    alle = {}
     for f in cfg:
-        PEER_BLOCKS[f["sym"]] = peer_block(f["sym"], cfg_by_sym, gruppen)
+        alle[f["sym"]] = {"sym": f["sym"], "name": f["name"], "slug": f["slug"], "branche": FS.FB.get(f["sym"]), "umsatz": (kz.get(f["sym"]) or {}).get("umsatz_usd")}
+    gen = FS.lade_firmen(set(cfg_by_sym))
+    FS.vergeben(gen, {f["slug"] for f in cfg})
+    for g in gen:
+        if g.get("skip") or not g.get("branche"): continue
+        alle[g["sym"]] = {"sym": g["sym"], "name": g["name"], "slug": g["slug"], "branche": g["branche"], "umsatz": g["v"].get("umsatz_usd")}
+    for f in cfg:
+        PEER_BLOCKS[f["sym"]] = peer_block(f["sym"], cfg_by_sym, gruppen, alle)
     for f in cfg:
         r = kennzahlen(f, sec, kurse, iz, usd_je_eur, termine)
         if r:

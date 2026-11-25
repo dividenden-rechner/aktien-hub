@@ -138,8 +138,12 @@ def peers_fuer(f, alle, nach_branche, nach_sektor):
         fam += [n for n, m in BMETA.items() if m.get("eltern") == br]
         if e: fam += [n for n, m in BMETA.items() if m.get("eltern") == e and n != br]
         pool += [g for g in holen(fam) if g not in pool]
-    if len(pool) < 2: return [], ""
-    return pool[:5], br
+    gesehen, uniq = set(), []
+    for g in pool:
+        k = re.sub(r"[^a-z]", "", g["name"].lower())[:7]
+        if k not in gesehen: gesehen.add(k); uniq.append(g)
+    if len(uniq) < 2: return [], ""
+    return uniq[:5], br
 
 
 def zeile(f, prefix, wert=True):
