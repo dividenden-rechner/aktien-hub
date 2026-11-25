@@ -1,9 +1,23 @@
 {
  "hub": "SAP",
  "name": "SAP SE",
- "stand": "2026-11-24",
+ "stand": "2026-11-25",
  "quelle": "Google News (Wirtschaftsmedien, deutsch und englisch)",
  "meldungen": [
+  {
+   "titel": "SAP-Aktie: Unternehmen schwächelt",
+   "quelle": "WELT",
+   "link": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxNd0VSY0FMMU1yNnlJd3Y1RDdyN3R1VFZZSTVmVFE1NjgyUEtPeXVzLTR5SW5DdUl0NFJGX1dULU9WejE5LU1TdW4zbXk0a21CNERoNXN4UzNxUmhDNldESnk5blNtUXNoYUM2S2lmTlNuWVlBV0ZrS25rcE5rdm43YjZZTlpKWERTVThwbUxvMFF3OHB4dlJ0QUNOVTlsNzNhaXFRZnZxUjJrZw?oc=5",
+   "datum": "2026-11-25",
+   "sprache": "de"
+  },
+  {
+   "titel": "SAP Corporate Espionage Complaint Exposes Gaps in Disclosure",
+   "quelle": "Bloomberg.com",
+   "link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxOUXhncFJEcFBvVEtZMnFKTWQ2U0Q5Tkg0dmJJNTRlTjItMmxDeXBsUGxyVlNQSnRPeXBPQXdqaW5LTENYblBwTDdfRVRPRlV1cEMyU0NkeExfN0diRHZFWjNtcEN6OUxTNDhrbzJqc2JweDhNLXVmLW8xYVRydjJHUkRVSGtGMHdMOWZEdXhFNjhvMHNjZ0JGNWZXU0dfX0lsRTMyN1Bia0lDdFViM1dRMQ?oc=5",
+   "datum": "2026-11-25",
+   "sprache": "en"
+  },
   {
    "titel": "SAP Executive Saueressig Quits to Become Ionos CEO",
    "quelle": "Bloomberg.com",

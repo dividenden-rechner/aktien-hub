@@ -1,9 +1,25 @@
 {
  "hub": "MSFT",
  "name": "MICROSOFT CORP",
- "stand": "2026-11-24",
+ "stand": "2026-11-25",
  "quelle": "Google News (Wirtschaftsmedien, deutsch und englisch)",
  "meldungen": [
+  {
+   "titel": "3 questions that can help universities turn AI experiments into results",
+   "quelle": "Unternehmen",
+   "link": "https://www.microsoft.com/en-us/education/blog/2026/11/how-higher-education-leaders-can-turn-institutional-intelligence-into-impact/",
+   "datum": "2026-11-23",
+   "sprache": "en",
+   "typ": "pm"
+  },
+  {
+   "titel": "How Microsoft Discovery helps scientists learn from failure and find new possibilities",
+   "quelle": "Unternehmen",
+   "link": "https://techcommunity.microsoft.com/blog/microsoft-discovery-blog/three-things-you-should-know-about-microsoft-discovery/4574970",
+   "datum": "2026-11-23",
+   "sprache": "en",
+   "typ": "pm"
+  },
   {
    "titel": "Microsoft Corp. Research & Ratings | MSFTUS",
    "quelle": "Barron's",
@@ -40,22 +56,6 @@
    "link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxPM3hLaXdod0Myc1NGcVJDbHZlMEEyaS1FdzJpVmZKeEVLN3BRQzIzVDJXd1g3RXdzVHVlaXJuOWpmQ1ZwZ0IyVGJPMHVMLWhKZHluYjRmYXhQZkZWOXY3Z0ItS0NHREE0a05KUUVuUUM5MDdpb3drSzhzb2hHdjlvTHNOY2lnOXViSkdKUXI4cndxMjZocEx5LTM5TnFYRzlLY1NBdHY4VFZTdm53MHl0Rw?oc=5",
    "datum": "2026-11-20",
    "sprache": "en"
-  },
-  {
-   "titel": "The future of medicine: Could AI help predict and prevent disease?",
-   "quelle": "Unternehmen",
-   "link": "https://www.microsoft.com/en-us/research/podcast/can-ai-help-build-a-healthier-future/",
-   "datum": "2026-11-19",
-   "sprache": "en",
-   "typ": "pm"
-  },
-  {
-   "titel": "Why Microsoft is investing in recycling the rare earth metals behind modern tech",
-   "quelle": "Unternehmen",
-   "link": "https://blogs.microsoft.com/on-the-issues/2026/11/17/how-investment-in-rare-earth-recycling-is-helping-advance-circular-supply-chains-and-creating-opportunities-for-local-communities/",
-   "datum": "2026-11-18",
-   "sprache": "en",
-   "typ": "pm"
   },
   {
    "titel": "Microsoft Says Copilot Is Beating Anthropic, OpenAI on Price",

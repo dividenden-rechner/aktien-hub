@@ -1,9 +1,23 @@
 {
  "hub": "SAP.DE",
  "name": "SAP",
- "stand": "2026-11-24",
+ "stand": "2026-11-25",
  "quelle": "Google News (Wirtschaftsmedien, deutsch und englisch)",
  "meldungen": [
+  {
+   "titel": "SAP-Aktie: Unternehmen schwächelt",
+   "quelle": "WELT",
+   "link": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxNd0VSY0FMMU1yNnlJd3Y1RDdyN3R1VFZZSTVmVFE1NjgyUEtPeXVzLTR5SW5DdUl0NFJGX1dULU9WejE5LU1TdW4zbXk0a21CNERoNXN4UzNxUmhDNldESnk5blNtUXNoYUM2S2lmTlNuWVlBV0ZrS25rcE5rdm43YjZZTlpKWERTVThwbUxvMFF3OHB4dlJ0QUNOVTlsNzNhaXFRZnZxUjJrZw?oc=5",
+   "datum": "2026-11-25",
+   "sprache": "de"
+  },
+  {
+   "titel": "SAP Corporate Espionage Complaint Exposes Gaps in Disclosure",
+   "quelle": "Bloomberg.com",
+   "link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxOUXhncFJEcFBvVEtZMnFKTWQ2U0Q5Tkg0dmJJNTRlTjItMmxDeXBsUGxyVlNQSnRPeXBPQXdqaW5LTENYblBwTDdfRVRPRlV1cEMyU0NkeExfN0diRHZFWjNtcEN6OUxTNDhrbzJqc2JweDhNLXVmLW8xYVRydjJHUkRVSGtGMHdMOWZEdXhFNjhvMHNjZ0JGNWZXU0dfX0lsRTMyN1Bia0lDdFViM1dRMQ?oc=5",
+   "datum": "2026-11-25",
+   "sprache": "en"
+  },
   {
    "titel": "How the Atlas Copco Group Makes Skills Visible Throughout the Organization",
    "quelle": "Unternehmen",
@@ -36,7 +50,7 @@
    "typ": "pm"
   },
   {
-   "titel": "Interview with Sindhu Gangadharan: “I Want People to Say ‘That Idea Started in India'”",
+   "titel": "Interview with Sindhu Gangadharan: “I Want People to Say ‘That Idea Started in India’”",
    "quelle": "Unternehmen",
    "link": "https://news.sap.com/2026/11/interview-sindhu-gangadharan-sap-labs-india/",
    "datum": "2026-11-23",
@@ -44,17 +58,10 @@
    "typ": "pm"
   },
   {
-   "titel": "(m+) SAP hinkt bei zentralen KI-Produkten hinter her",
-   "quelle": "Manager Magazin",
-   "link": "https://news.google.com/rss/articles/CBMi8AFBVV95cUxPWnJqSjhiVm9SeGJHV3NqRG1rOGVKd2M1NHZGQjQ5UXptdlZvbmZzNVFYaFQxTU5lSFhHVDg4MXpSTGtvdUVFWEFQOUlMVUNYWmJuTmFaQVN5a1FDTDBIV0RIRVQwbDRKQTA3Umx0MUtCNGlDQkQ1TzRUSHExUUF6NnMwMzRqNlpaRzNGLWg3UTlQeGUxM0llMldISGdHb0VSQm9NbzN2NkVjQ2F1VGw5dXRWMU1FNm9pRjVPWXpvRVhkMUVZQ3RXVXUxMU9GNkphZkpfekZHcUVpYmdXbTRiaEhlRjZLNE9UTW95Z2kwRDY?oc=5",
-   "datum": "2026-11-20",
-   "sprache": "de"
-  },
-  {
-   "titel": "Dollar weaker as Fed-fueled rally stalls; lower US yields help yen",
-   "quelle": "Reuters",
-   "link": "https://news.google.com/rss/articles/CBMioAFBVV95cUxNSWwtcmZqemtkQmd4OWJQUHN1OXZLZTgxM1FtVk5JTlAtNndPYzRndHkxbEZ2MEdNZGtRdWUwMUxlblhtLThfQ0NoRHYtZ1lzd2VkSHc4N0U3UlFjUGFubjBkOFc4bDhpR3lELUoxalJBN1lkUUtUYk1NSk9sanNaeUZrZVVXTWlDV2Zja1FFQ3lPaXNUN2FXb3BST0dmZHd3?oc=5",
-   "datum": "2026-11-20",
+   "titel": "SAP Modernizes 100,000+ endpoints with Windows 11 and Microsoft Intune",
+   "quelle": "Microsoft",
+   "link": "https://news.google.com/rss/articles/CBMid0FVX3lxTE5NZEtCTlk5YkxnbThZbkFsaWpJalZNclF3MDhsVHEwTFJsc2tSNS1JdXh2NWRfbW5VemtEVG9uc3VxLVh0SFp3Y2x6ZlJ6NnNwdHFrOS1aNmJzUmsxZURrS3BDenZYaDJJRi1XYWNzdEl1dlhrVGNz?oc=5",
+   "datum": "2026-11-16",
    "sprache": "en"
   }
  ]

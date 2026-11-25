@@ -1,7 +1,22 @@
 {
  "hub": "ADI",
  "name": "ANALOG DEVICES INC",
- "stand": "2026-11-23",
+ "stand": "2026-11-25",
  "quelle": "Google News (Wirtschaftsmedien, deutsch und englisch)",
- "meldungen": []
+ "meldungen": [
+  {
+   "titel": "Analog Devices Profit, Revenue Rise but Forecast Is Mixed",
+   "quelle": "WSJ",
+   "link": "https://news.google.com/rss/articles/CBMivgFBVV95cUxOVjlva2FBQkhmaDZVSTNfQTcyOFhwS1lVZ2t3cDd6RkJHZkZCR3l4a0VZWVBQbkdGWmZyV2tJWkdsWTc5TjdKUlZiRmk1d3psT3pONTNvSU01NWl3SW9WRTdhNG1Xc1RNR0lrT19yWjFWY0M4VlRNRWJiMjhWdFcyenh6cEV4Mk5pemhYcktqRThmTk5mZ2pGb3J5MzdnOW5DY3d6Q3NTUXQ5M3Z3eVF6S3lCem9qS2pVWUkydlBR?oc=5",
+   "datum": "2026-11-24",
+   "sprache": "en"
+  },
+  {
+   "titel": "U.S. Markets Ended Tuesday Mixed As Kymera Therapeutics Led, Analog Devices Lagged",
+   "quelle": "Barron's",
+   "link": "https://news.google.com/rss/articles/CBMivwFBVV95cUxOeWJmQjBpTGtnSGk5MWJBWWJBSVY0NmN2al9pVG1UY0tiWDJ1ckJ6bzlUeEtmblRfdEM3Wnl4eGZBcDJlQ0p4MWNDVjVNVk1XOHp0T2l3aklJZUxoZldrZDNqaHZlZzJvQ1pidmVKSGFUUFRjc2k2YjBYRmp1NUxwS0FhUGU0OTVIT2tib1RRVjY1aUxNcU5ZY0t5YUhRTXRPODAwLS1PNVVMeDh4emJLWkF6OFdma18wT2FBVC12dw?oc=5",
+   "datum": "2026-11-24",
+   "sprache": "en"
+  }
+ ]
 }

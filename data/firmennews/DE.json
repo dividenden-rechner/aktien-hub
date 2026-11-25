@@ -1,7 +1,15 @@
 {
  "hub": "DE",
  "name": "DEERE & CO",
- "stand": "2026-11-24",
+ "stand": "2026-11-25",
  "quelle": "Google News (Wirtschaftsmedien, deutsch und englisch)",
- "meldungen": []
+ "meldungen": [
+  {
+   "titel": "Deere forecasts 2027 profit below estimates as farm equipment recovery remains muted",
+   "quelle": "Reuters",
+   "link": "https://news.google.com/rss/articles/CBMioAFBVV95cUxQUGttdVJxRzZYOTlVQkU2OFY3NjRsZTltRGpRMll3RkV1RlBUWURpMHNJWDd0Q3NuRTdGWmlZb3M4eVRPdEtPYkVSaFRHR0UwZWRRTFJHZk1fcWhTTENPUllweE01d0Zsb19EX1lBdU9zWlM0RExENHU0VHB2cVA1dlNNR1Izay03MThOSkdfNWhCQmNXellqTFdzeE1LYkxf?oc=5",
+   "datum": "2026-11-25",
+   "sprache": "en"
+  }
+ ]
 }

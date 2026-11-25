@@ -1,7 +1,7 @@
 {
  "hub": "T",
  "name": "AT&T INC.",
- "stand": "2026-11-24",
+ "stand": "2026-11-25",
  "quelle": "Google News (Wirtschaftsmedien, deutsch und englisch)",
  "meldungen": [
   {
@@ -35,6 +35,13 @@
    "datum": "2026-11-18",
    "sprache": "en",
    "typ": "pm"
+  },
+  {
+   "titel": "AT&T sues Comcast over 'fiber-powered' internet advertising",
+   "quelle": "Reuters",
+   "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxPbmZOanVUTE1QN3BzNDJkUEhzTV9hRl9TQ0l0b2szSGpXaEQ3YTB0MTNvcFhtRmF2STNPbDVtczBldkctb1Q1WW5MVkxoN2Y4NWk5dGMyOHpDUUliWl80YUlXQ1drdzZoOU9hMFM5eDlZRGY0WTluLS1pcDUyWGdYc0gzNzJzelA4NGhwZk1QUE8xVFVQSWxUQXFrUkVhS2wyWkthd2Z6UmdXX3VFNVU2TS1R?oc=5",
+   "datum": "2026-11-13",
+   "sprache": "en"
   }
  ]
 }

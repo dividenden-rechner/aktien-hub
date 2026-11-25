@@ -1,28 +1,51 @@
 {
  "hub": "AMZN",
  "name": "AMAZON.COM, INC.",
- "stand": "2026-11-24",
+ "stand": "2026-11-25",
  "quelle": "Google News (Wirtschaftsmedien, deutsch und englisch)",
  "meldungen": [
   {
-   "titel": "Amazon Launches Satellites for Network to Rival Starlink",
+   "titel": "Amazon to launch Amazon Autos in UK in early 2027 in first expansion beyond US",
+   "quelle": "Reuters",
+   "link": "https://news.google.com/rss/articles/CBMizAFBVV95cUxPWEtzNzh2NUdSdE41Yi1FYUY2Unk4Q3Z6bGlrb1UxVkxScVV5cmJzRmNZaUp4VFhCSEUwcWNOVHM2aUU3LVByVG81UEhHSFBnWWlmbnFqbC10QzhmVW5JMk84Y0RiVXpvZ3dUWElUNWVnWFBYZEN6Nk8xMVFHWlVPOUxPYi1MdHFSa3NXeVJ0ck9RdHVWYTdXSVJHZzBTZ3lNdFdzUU03MzFjaThMREZxaDUwdm8wQ2JjM25UNlR1ODlOb2c0Vk9DRHRKR3Y?oc=5",
+   "datum": "2026-11-25",
+   "sprache": "en"
+  },
+  {
+   "titel": "Amazon Targets UK Car Buyers Being Reeled In by Chinese Brands",
+   "quelle": "Bloomberg.com",
+   "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxQaHZqNGJKbm03MGllbE5mdktQWFF2WVcyb0ppS0hlVUZkaHozblVHRXJNLTFfZmRIdWxWQWJiNDV6Mk03cFNxbWNIX3ExSVhSUnpTSDJ0eEVMSmVUU1g0MGFuNGs2UVhiNWZ6UHdoZHRTdHc2UVphRnBRbmJ1OG02M2t4WGRhdW0wODEyWEh2NEpTZ205RGlieUhxT1Q4c3ZLRGs4aVc3SEZ5c3RWLWU4T2NIaw?oc=5",
+   "datum": "2026-11-25",
+   "sprache": "en"
+  },
+  {
+   "titel": "Shoppers Are Using AI Agents to Save Them from the ‘Annoyance Economy’",
    "quelle": "Bloomberg",
+   "link": "https://news.google.com/rss/articles/CBMivAFBVV95cUxOTXBaMll6MXRzWFRFV2trcXF6VGtXaFk2cjVSTzFqQU9oNlJCWlNlTElVdnU2Wk9wUFVRY0c0a0R0TWF2RUctTkZrOFVMbHpEbno1SmVRSG1wdnkyZ1ByVHhFbU03ckRVZDlDTzlqRlRDWTJDY0pseUJQQjFHekhCTjhhSW4wUXdwbnY4T3ZFMjUxNlFxcVZqUmI0LTA0MHhnaVg5aW1LVGhlMXV6cWNncXVZdTVmVFBya3RlYQ?oc=5",
+   "datum": "2026-11-25",
+   "sprache": "en"
+  },
+  {
+   "titel": "Great Ormond Street Hospital announces first-of-its-kind agentic AI programme in an NHS hospital, in collaboration with Hyland and Amazon Web Services",
+   "quelle": "Unternehmen",
+   "link": "https://press.aboutamazon.com/2026/11/great-ormond-street-hospital-announces-first-of-its-kind-agentic-ai-programme-in-an-nhs-hospital-in-collaboration-with-hyland-and-amazon-web-services",
+   "datum": "2026-11-24",
+   "sprache": "en",
+   "typ": "pm"
+  },
+  {
+   "titel": "Mirae Asset Securities Makes Accessing Product Information Faster and More Trustworthy with AWS",
+   "quelle": "Unternehmen",
+   "link": "https://press.aboutamazon.com/aws/2026/11/mirae-asset-securities-makes-accessing-product-information-faster-and-more-trustworthy-with-aws",
+   "datum": "2026-11-24",
+   "sprache": "en",
+   "typ": "pm"
+  },
+  {
+   "titel": "Amazon Launches Satellites for Network to Rival Starlink",
+   "quelle": "Bloomberg.com",
    "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxNTW5qcGFvdUp6QWVubFp3RTZHNjM4T3FyUWdrci1MRmFUSFZxeVpkcDc1NTBsN1ZCU1pTZjZLSmZKXzZjckc3b3N6bml0RzM1NHlGenJ0aDdLT2hQS2h0SFdfb1lfOVJoNWoxc0hOWnEyNXBGcVNUeE1zVE5UYTBVTDEtdXdIUU5Ja0gyMnQzbl84MGU3SUZXdUtieG1nZk1ISjJoc0FaRkVRQ3dNMUxCdDRjSHQ?oc=5",
    "datum": "2026-11-24",
-   "sprache": "en"
-  },
-  {
-   "titel": "Amazon to acquire AI startup Decart's chip software, hire founders",
-   "quelle": "CNBC",
-   "link": "https://news.google.com/rss/articles/CBMidEFVX3lxTE9hSmFaemUzUldRaWhTb3diNE4wU2dQb29ab2FXLS16UzcwdFU1a2tjUVh5Y2t0WEJweGREQ1JIMVczYXhmZGRQT3pXa0FUU0xFZWEzVGpnT2Q4MUdhWEVFMWhmRkNyZXVNbkdqa2xpdW03QWFT0gF6QVVfeXFMTjg2VVVOYlVHWHJaNUhWUHZMNjFQQ2Q5MmptU1JiektEbXNWMUN4SzR6OWxRSjVUTFZuakcwSEtHUjU4MUluQi1QUXQtc2xvWnhSY0NXNm9SUXZraElHZ290VTlUMlloSXhBSVRGbEhBcmVRYXZreFdjc2c?oc=5",
-   "datum": "2026-11-23",
-   "sprache": "en"
-  },
-  {
-   "titel": "Amazon Is Said to Pay $7.5 Billion For AI Startup Decart’s Tech",
-   "quelle": "Bloomberg.com",
-   "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxNTEtGbThuSmc5SGd2SmJVQjZDSTFPNVVpMjJ5TG10OTA5dWlTNUFnRUtSbTBxOW1WYUtOdGZoWGxySDNHb1BYVjQ0SVhxQlBfYTB4aFhCWFRHSVBnS21XQ1FpS1dYb2p4cGxzb2k4VjJzU1JmVnB1MzktempwZXRyYWw0VFpyR3gtOFFVaVhPdWszS3A1THNRV2RPS3hFNXJ3ZXlkMEY4Um1CZjQ1VmxUNDN3RQ?oc=5",
-   "datum": "2026-11-23",
    "sprache": "en"
   },
   {
@@ -37,22 +60,6 @@
    "titel": "Meet the Anzellans: Inside Imagineering R&D’s Newest Robotic Characters",
    "quelle": "Unternehmen",
    "link": "https://press.aboutamazon.com/2026/11/meet-the-anzellans-inside-imagineering-r-ds-newest-robotic-characters",
-   "datum": "2026-11-18",
-   "sprache": "en",
-   "typ": "pm"
-  },
-  {
-   "titel": "Bodø/Glimt Selects AWS to Enhance Fan Experiences and Team Performance Analytics",
-   "quelle": "Unternehmen",
-   "link": "https://press.aboutamazon.com/aws/2026/11/bodø-glimt-selects-aws-to-enhance-fan-experiences-and-team-performance-analytics",
-   "datum": "2026-11-18",
-   "sprache": "en",
-   "typ": "pm"
-  },
-  {
-   "titel": "First Whole Foods Market Daily Shop to Open in Queens, New York, on December 18",
-   "quelle": "Unternehmen",
-   "link": "https://press.aboutamazon.com/2026/11/first-whole-foods-market-daily-shop-to-open-in-queens-new-york-on-december-18",
    "datum": "2026-11-18",
    "sprache": "en",
    "typ": "pm"

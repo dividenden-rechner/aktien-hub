@@ -1,9 +1,17 @@
 {
  "hub": "VOW3.DE",
  "name": "Volkswagen Vz",
- "stand": "2026-11-24",
+ "stand": "2026-11-25",
  "quelle": "Google News (Wirtschaftsmedien, deutsch und englisch)",
  "meldungen": [
+  {
+   "titel": "Start of negotiations in Emden: Volkswagen AG reaffirms its demands and the need for action",
+   "quelle": "Unternehmen",
+   "link": "https://www.volkswagen-group.com/en/press-releases/start-of-negotiations-in-emden-volkswagen-ag-reaffirms-its-demands-and-the-need-for-action-20888",
+   "datum": "2026-11-24",
+   "sprache": "en",
+   "typ": "pm"
+  },
   {
    "titel": "Launch of the first Vehicle-to-Grid charging solution for the mass market",
    "quelle": "Unternehmen",
@@ -17,14 +25,6 @@
    "quelle": "Unternehmen",
    "link": "https://www.volkswagen-group.com/en/press-releases/2026-collective-bargaining-negotiations-volkswagen-ag-calls-for-significant-relief-in-labor-costs-20874",
    "datum": "2026-11-19",
-   "sprache": "en",
-   "typ": "pm"
-  },
-  {
-   "titel": "Successful product offensive: Volkswagen Group wins six “Das Goldene Lenkrad” awards and numerous other accolades",
-   "quelle": "Unternehmen",
-   "link": "https://www.volkswagen-group.com/en/press-releases/successful-product-offensive-volkswagen-group-wins-six-das-goldene-lenkrad-awards-and-numerous-other-accolades-20852",
-   "datum": "2026-11-11",
    "sprache": "en",
    "typ": "pm"
   }

@@ -1,9 +1,16 @@
 {
  "hub": "PLTR",
  "name": "Palantir Technologies Inc.",
- "stand": "2026-11-24",
+ "stand": "2026-11-25",
  "quelle": "Google News (Wirtschaftsmedien, deutsch und englisch)",
  "meldungen": [
+  {
+   "titel": "Russian Pleads Not Guilty in Snooping Case Targeting Palantir",
+   "quelle": "Bloomberg.com",
+   "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxQdmFMcUV6VjhYakJtR0UwRy0wTUVvTEtDOG43S1NsYTY0WEZHTEJVREVSV2xmWVpRaHotVUxLVy1hdWt2NnhCNUQ1ZVVPS0h2dmYzOGF2WUtMVTh1NzVCUWFkYnV4eERYOUdfMGpMOFJKYzROdmphbDVlZy12NW14TkhhMDZNY3dXaXNGN29qSEZOV3NWdXFkWWgzb0E4ckpCdGpkWlFPX1JOa3V6UGlkeGpn?oc=5",
+   "datum": "2026-11-24",
+   "sprache": "en"
+  },
   {
    "titel": "US Department of Justice charges Russian for targeting Palantir as foreign agent",
    "quelle": "Reuters",
@@ -16,13 +23,6 @@
    "quelle": "Bloomberg",
    "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxNa2ZKTHBmT2hqNzM5UW5ITFlMcXZodnNhbTFXOWNyZmZCMmphNGJQcnVhTzNhNGNuY09OWW55NE5ySVVIbTEzei00R3hpSkV0MDhLZUo0Y3pKZFBlYjZEYUpKMVBKY0diQmFFM2NXVU4wdUQzYUIyamtaWHlrX1h5UTAxVG1jb2lDS0FzMjdsZGpjb0ZudmQ0MkF1QV9XSGVUR3ZBLVJmTWRUM0F5RTBiZW1aNA?oc=5",
    "datum": "2026-11-19",
-   "sprache": "en"
-  },
-  {
-   "titel": "UK companies line up to replace Palantir in NHS",
-   "quelle": "Financial Times",
-   "link": "https://news.google.com/rss/articles/CBMihAFBVV95cUxPS0FWQjVlTHhoX0xUaEo2a2k2WEVYdlIwSjgwN25rNkRaM3RPZ0x3M3ZYQVRQUk5iUVNNVTJvTUxMTHhKLWt2Q0pxM2JNYUxlMUxrWGE1V1U0c21oWXVVdW91dkxhTjdMMDJDSGV6U25HZ3FOTWRCOXFhWGJ3SVFuQ0d4WmQ?oc=5",
-   "datum": "2026-11-16",
    "sprache": "en"
   }
  ]

@@ -1,7 +1,15 @@
 {
  "hub": "HNR1.DE",
  "name": "Hannover Rück",
- "stand": "2026-11-24",
+ "stand": "2026-11-25",
  "quelle": "Google News (Wirtschaftsmedien, deutsch und englisch)",
- "meldungen": []
+ "meldungen": [
+  {
+   "titel": "Hannover Rück-Aktie: Unternehmen gibt nach",
+   "quelle": "WELT",
+   "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxOSGFhb2xCWnlKMDZScVBjekVUaEhMMzBsZHlJbWx6QUpKYXVTVllwa09VQm8ybG1WY0hVY2VSeUhTSzhGeFAxZHpUbUtGbHhLVlVJaV9NUjdTNElHc1pPdjlpR1RZbE5QNkdWbVVWdEg3TzZkMUNSUTJzb0NyUjFSd1RMOUtreUZTR3YycHFmQjBDVXFEamZfZWh5MlYybE54QlFGcjdSbkRCRncySUh6S3N3N0pqQQ?oc=5",
+   "datum": "2026-11-25",
+   "sprache": "de"
+  }
+ ]
 }
