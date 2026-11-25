@@ -8,18 +8,13 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 10
     steps:
-      - name: API-Endpunkte in den Skripten finden
+      - name: GetFinancialReport für BBCA abfragen
         run: |
           UA="Mozilla/5.0 (dividenden-rechner.de Datensammlung)"
-          curl -s -L -A "$UA" -m 40 -o /tmp/fs.html "https://www.idx.id/en/listed-companies/financial-statements-and-annual-report/"
-          mkdir -p /tmp/js && cd /tmp/js
-          for s in $(grep -oi '/_nuxt/[^"]*\.js' /tmp/fs.html | sort -u); do
-            curl -s -L -A "$UA" -m 40 -o "$(basename $s)" "https://www.idx.id$s"
+          for base in "https://www.idx.co.id/primary/ListedCompany/GetFinancialReport" "https://www.idx.id/primary/ListedCompany/GetFinancialReport"; do
+            for q in "indexFrom=0&pageSize=12&year=2025&reportType=rdf&periode=audit&kodeEmiten=BBCA&SortColumn=KodeEmiten&SortOrder=asc" "indexFrom=0&pageSize=12&year=2025&reportType=rdf&periode=tahunan&kodeEmiten=BBCA&SortColumn=KodeEmiten&SortOrder=asc"; do
+              echo "== $base?$q"
+              curl -s -L -A "$UA" -H "Accept: application/json" -m 40 -o /tmp/fr.json -w "HTTP %{http_code} %{size_download}\n" "$base?$q"
+              head -c 900 /tmp/fr.json; echo
+            done
           done
-          echo "Skripte: $(ls | wc -l)"
-          echo "== API-Adressen"
-          grep -oh 'https\?://[a-zA-Z0-9./_-]*' *.js | grep -i "idx\|api" | sort | uniq -c | sort -rn | head -20
-          echo "== Pfade mit api/primary/financial"
-          grep -oh '"/\(api\|primary\|financ\|report\|xbrl\)[^"]\{0,120\}"' *.js | sort -u | head -40
-          echo "== Umfeld 'financial-statement' in Skripten"
-          grep -oh '.\{0,120\}financial-statement.\{0,120\}' *.js | head -10
