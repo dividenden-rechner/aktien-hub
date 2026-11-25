@@ -12,7 +12,10 @@ anh = d["Results"][0]["Attachments"]
 zipdatei = next(a for a in anh if a["File_Name"] in ("instance.zip", "inlineXBRL.zip"))
 pfad = "https://www.idx.id" + zipdatei["File_Path"]
 print("Datei:", zipdatei["File_Name"], pfad[:140])
-z = zipfile.ZipFile(io.BytesIO(get(pfad)))
+import subprocess
+print(subprocess.run(["curl","-s","-L","-m","60","-A",UA["User-Agent"],"-H","Referer: https://www.idx.id/","-o","/tmp/x.zip","-w","HTTP %{http_code} %{size_download}\n",pfad],capture_output=True,text=True).stdout)
+print(subprocess.run(["head","-c","200","/tmp/x.zip"],capture_output=True,text=True).stdout)
+z = zipfile.ZipFile("/tmp/x.zip")
 print("Inhalt:", z.namelist()[:20])
 inst = next((n for n in z.namelist() if n.endswith((".xbrl", ".xml", ".html", ".xhtml"))), z.namelist()[0])
 txt = z.read(inst).decode("utf-8", "replace")
