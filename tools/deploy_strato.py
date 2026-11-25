@@ -142,6 +142,9 @@ def main():
     mkdirs(c, base, made)
     with ThreadPoolExecutor(4) as ex:
         list(ex.map(up, todo))
+    try: c.close()
+    except Exception: pass
+    c = connect()      # die erste Verbindung stand waehrend des langen Hochladens still und wird vom Server getrennt
     for k in gone:
         try: c.remove(rp(k))
         except IOError: pass
