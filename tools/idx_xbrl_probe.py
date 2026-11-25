@@ -15,7 +15,6 @@ pfad = "https://www.idx.id" + urllib.parse.quote(zipdatei["File_Path"], safe="/:
 print("Datei:", zipdatei["File_Name"], pfad[:140])
 import subprocess
 print(subprocess.run(["curl","-s","-L","-m","60","-A",UA["User-Agent"],"-H","Referer: https://www.idx.id/","-o","/tmp/x.zip","-w","HTTP %{http_code} %{size_download}\n",pfad],capture_output=True,text=True).stdout)
-print(subprocess.run(["head","-c","200","/tmp/x.zip"],capture_output=True,text=True).stdout)
 z = zipfile.ZipFile("/tmp/x.zip")
 print("Inhalt:", z.namelist()[:20])
 inst = next((n for n in z.namelist() if n.endswith((".xbrl", ".xml", ".html", ".xhtml"))), z.namelist()[0])
