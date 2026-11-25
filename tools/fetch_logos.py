@@ -8,6 +8,7 @@ Der Pfad steht danach im Artikel als `logo_file:`. Eigene Datei? Einfach `logo_f
 Aufruf: python3 tools/fetch_logos.py   (laeuft im Workflow vor dem Bauen des Magazins)"""
 import re, os, io, glob, sys, json, urllib.request, urllib.parse
 from PIL import Image, ImageDraw, ImageFont
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 
 UA = "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0 Safari/537.36"
 OUT = "assets/logos"
@@ -41,6 +42,9 @@ def to_logo(raw, min_side=48):
     except Exception:
         return None
     if min(im.size) < min_side:
+        return None
+    from logo_check import ist_foto_bild
+    if ist_foto_bild(im):       # Foto (z. B. Gebaeude) ist kein Logo
         return None
     # leere Raender abschneiden (Transparenz oder reines Weiss)
     px = im.getdata()

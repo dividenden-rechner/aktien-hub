@@ -25,8 +25,10 @@
   var LP = "https://fmp-proxy.dividenden-rechner.workers.dev/logo/";
   /* Eigene Logos im Repo (assets/logos/hub/<KUERZEL>.png), relativ zu dieser Datei */
   var LOCAL = (function () { var s = document.currentScript && document.currentScript.src; return s ? s.replace(/logos\.js.*$/, "") + "logos/hub/" : "../assets/logos/hub/"; })();
+  /*FOTO*/var FOTO = {"000720.KS":1,"010950.KS":1,"018260.KS":1,"2002.T":1,"2503.T":1,"3407.T":1,"5411.T":1,"6326.T":1,"6367.T":1,"6965.T":1,"7013.T":1,"8267.T":1,"8591.T":1,"9021.T":1,"9104.T":1,"9601.T":1,"AZ":1,"BC.MI":1,"CATE.ST":1,"GOOS":1,"IR5B.IR":1,"MAERSK-B.CO":1,"NSC":1,"SCATC.OL":1,"SEER3.SA":1};/*/FOTO*/ /* Kuerzel, deren Bild bei FMP ein Foto statt Logo ist: dort nur Favicon oder Buchstabe (gepflegt von tools/logo_check.py) */
   function img(cls, sym, d, name) {
     sym = String(sym || ""); d = d || dom(sym);
+    if (FOTO[sym.toUpperCase()]) sym = "";
     var ph = String(name || sym || "?").charAt(0).toUpperCase(), esc = function (s) { return String(s).replace(/[&<>"']/g, function (c) { return { "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]; }); };
     var src = sym ? LOCAL + encodeURIComponent(sym.toUpperCase()) + ".png" : (d ? fav(d) : "");
     if (!src) return '<span class="' + esc(cls) + ' lgph">' + esc(ph) + "</span>";
