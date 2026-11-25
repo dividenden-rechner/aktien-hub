@@ -38,7 +38,10 @@ def proz(x, n=1, vz=False):
 
 
 def datum(iso):
-    d = datetime.date.fromisoformat(iso[:10])
+    try:
+        d = datetime.date.fromisoformat(iso[:10])
+    except (TypeError, ValueError):
+        return "–"
     return f"{d.day}. {MONATE[d.month - 1]} {d.year}"
 
 
@@ -771,6 +774,46 @@ def stub_schreiben(urls):
             f'<link rel="canonical" href="{BASE}{u}"><meta name="robots" content="noindex">'
             f'<meta http-equiv="refresh" content="0; url={neu}"></head>'
             f'<body><p><a href="{neu}">Weiter zur Aktienseite</a></p></body></html>')
+
+
+def dividende_teile(r, name, usd_je_eur):
+    """Nächste Dividende, Historie und Rechner für eine Firmenseite (gleicher Aufbau wie auf den handkuratierten Seiten)."""
+    f = r["f"]
+    t = r["termin"]
+    if t:
+        termin_html = ('<div class="tablewrap"><table><thead><tr><th>Beschlossen am</th><th class="n">Betrag</th><th>Ex-Tag</th><th>Zahltag</th></tr></thead><tbody>'
+                       f'<tr><td>{datum(t["meldung"]) if t.get("meldung") else "–"}</td><td class="n">{betrag(t["betrag"])} USD</td>'
+                       f'<td>{datum(t["ex_tag"]) if t.get("ex_tag") else "–"}</td><td>{datum(t["zahltag"]) if t.get("zahltag") else "–"}</td></tr></tbody></table></div>'
+                       '<p class="meta">Wer die Aktie spätestens am Handelstag vor dem Ex-Tag kauft, erhält die Dividende. In den USA sind Ex-Tag und Stichtag seit Mai 2024 identisch.</p>')
+    else:
+        termin_html = (f'<p>{esc(name)} hat noch keine nächste Dividende mit Ex-Tag und Zahltag beschlossen. Sobald das Unternehmen sie veröffentlicht, steht sie hier.</p>')
+    hist_zeilen = []
+    for i in range(len(r["dps"]) - 1, -1, -1):
+        d, v = r["dps"][i]
+        vor = r["dps"][i - 1][1] if i > 0 else None
+        hist_zeilen.append(f'<tr><td>{esc(gj_label(d))}</td><td class="n">{betrag(v)}</td>'
+                           f'<td class="n">{proz(v / vor - 1, vz=True) if vor else "–"}</td></tr>')
+    hist = "".join(hist_zeilen)
+    rechner = f'''<h2>Was bringt die {esc(name)}-Aktie im Jahr?</h2>
+<div class="calc" id="divcalc" data-dps="{r['dps_basis']}" data-fx="{usd_je_eur}" data-kurs="{r['kurs_eur'] or ''}" data-steuer="{STEUER_US}">
+<div class="grid"><div><label for="anz">Anzahl Aktien</label><input id="anz" type="number" min="0" step="1" value="100" inputmode="numeric"></div>
+<div><label for="betr">oder Anlagebetrag in Euro <span class="hint">(zum letzten Kurs)</span></label><input id="betr" type="number" min="0" step="100" inputmode="decimal" placeholder="z. B. 5000"></div></div>
+<div class="tablewrap"><table><tbody>
+<tr><td>Dividende brutto pro Jahr</td><td class="n"><strong id="r-brutto">–</strong></td></tr>
+<tr><td>nach Steuern (ca.)</td><td class="n"><strong id="r-netto">–</strong></td></tr>
+<tr><td>pro {RATE.get(f["rhythmus"], "Zahlung")} (brutto)</td><td class="n"><strong id="r-rate">–</strong></td></tr>
+</tbody></table></div>
+<p class="meta">Grundlage: {"aktuelle reguläre Dividende aufs Jahr gerechnet" if r["dps_jahr"] else "Dividende des Geschäftsjahres " + r["gj_letzt"]} ({de(r['dps_basis'], 2)} USD je Aktie).</p>
+</div>
+<script>(function(){{var c=document.getElementById("divcalc");if(!c)return;var dps=+c.dataset.dps,fx=+c.dataset.fx,k=+c.dataset.kurs,st=+c.dataset.steuer,per={f["rhythmus"]};
+var a=document.getElementById("anz"),b=document.getElementById("betr");function e(x){{return x.toLocaleString("de-DE",{{minimumFractionDigits:2,maximumFractionDigits:2}})+"\\u00a0€"}}
+function r(){{var n=+a.value||0,g=n*dps/fx;document.getElementById("r-brutto").textContent=e(g);document.getElementById("r-netto").textContent=e(g*(1-st));document.getElementById("r-rate").textContent=e(g/per)}}
+a.addEventListener("input",function(){{b.value="";r()}});b.addEventListener("input",function(){{if(k>0){{a.value=Math.floor((+b.value||0)/k)}}r()}});r()}})();</script>'''
+    return (f'<h2>Nächste Dividende</h2>{termin_html}'
+            f'<h2>Dividendenhistorie</h2><p>Dividende je Aktie in US-Dollar pro Geschäftsjahr, wie im Geschäftsbericht ausgewiesen.</p>'
+            f'{balken(r["dps"], r["dez"])}'
+            f'<div class="tablewrap"><table><thead><tr><th>Geschäftsjahr</th><th class="n">Dividende je Aktie (USD)</th><th class="n">Veränderung</th></tr></thead><tbody>{hist}</tbody></table></div>'
+            f'{rechner}')
 
 
 def main():

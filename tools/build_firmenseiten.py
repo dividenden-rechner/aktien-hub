@@ -258,6 +258,30 @@ def diagramm_daten(k, prog=None):
     return out
 
 
+_DIV = None
+
+
+def dividende_fuer(f):
+    """Dividendenteil wie auf den handkuratierten Seiten: nächste Dividende, Historie und Rechner. Nur für Firmen mit SEC-Dividendenhistorie."""
+    global _DIV
+    if _DIV is None:
+        _DIV = (B.lade("data/kurse/xetra-letzter.json"), B.lade("data/kurse/isin-zuordnung.json"),
+                B.lade("data/wechselkurse-ezb.json")["je_eur"]["USD"], B.lade("data/dividenden-termine.json").get("firmen", {}))
+    (kurse, iz, usd, termine) = _DIV
+    sym = f["sym"]
+    if sym not in datenquellen()[0]:
+        return ""
+    reg = [t for t in termine.get(sym, []) if t.get("art") == "regulaer"]
+    n = len(reg)
+    rhythmus = 12 if n >= 10 else 4 if n >= 3 else 2 if n == 2 else 1 if n == 1 else 4
+    cfg = {"sym": sym, "name": f["name"], "slug": f["slug"], "typ": "normal", "rhythmus": rhythmus,
+           "satz": "", "alt": [], "serie": {}, "weglassen": []}
+    r = B.kennzahlen(cfg, datenquellen()[0], kurse, iz, usd, termine)
+    if not r or not r.get("dps"):
+        return ""
+    return B.dividende_teile(r, f["name"], usd)
+
+
 def diagramme_html(sym, k, prog=None):
     daten = diagramm_daten(k, prog)
     if not daten:
@@ -372,6 +396,7 @@ def firmenseite(f, peers, art, news, kl, k, fu, stand):
 
     peer_html = ""
     fin_html = diagramme_html(sym, reihen_fuer(sym)[0], prognose_fuer(sym, v, reihen_fuer(sym)[0]))
+    div_html = dividende_fuer(f)
     if v.get("ausschuettung") is not None:
         q = v["ausschuettung"]
         satz = (f"Die Dividende ist mit {B.de(q, 0)} % des Gewinns gedeckt." if q < 100
@@ -409,7 +434,7 @@ def firmenseite(f, peers, art, news, kl, k, fu, stand):
                 f'<p data-nur-test="1">Nur Testseite: <a href="../../aktien-hub/?s={esc(sym)}">{esc(name)} im Aktien-Hub</a> (DCF, Analysten, Live-Kurs)</p>'
                 '<script src="../../assets/firma-fmp.js" defer></script>')
     body = (f'<p class="meta">Stand: {B.datum(stand)} · Kürzel {esc(sym)}{(" · " + esc(kennung)) if kennung else ""}</p><p class="lead">{lead}</p>{tab}'
-            f'{fin_html}{nur_test}{peer_html}{news_html}<h2>Häufige Fragen</h2>{faq_html}{teil_html}{weiter}'
+            f'{fin_html}{div_html}{nur_test}{peer_html}{news_html}<h2>Häufige Fragen</h2>{faq_html}{teil_html}{weiter}'
             f'<p class="meta">Quellen: Börsenkurse deutscher Handelsplätze, Geschäftsberichte der Unternehmen und Behörden (SEC, ESEF, Börsenaufsichten), Wechselkurse der EZB. Alle Werte stehen so in den Daten; fehlende Werte sind weggelassen.</p>')
     h1 = f'<div class="titlerow" style="gap:12px">{B.logo_span(sym, name, "../../")}<h1>{esc(name)} Aktie</h1></div>'
     crumbs = f'<a href="../../">Start</a> › <a href="/dividende/">Dividenden</a> › <span aria-current="page">{esc(name)}</span>'
