@@ -165,7 +165,46 @@ def reihen_fuer(sym):
     return {}, 0
 
 
-def diagramm_daten(k):
+_PROG = None
+PROG_REIHEN = {"Umsatz": "umsatz", "Free Cashflow": "fcf", "Dividende je Aktie": "dividende_je_aktie",
+               "Gewinn je Aktie": "eps", "Operative Marge": "operative_marge"}
+
+
+def prognose_fuer(sym, v, k):
+    """Unternehmensprognosen fürs Folgejahr (Mitte der Spanne), nur in der Berichtswährung und nur für das Jahr direkt nach dem letzten Istwert."""
+    global _PROG
+    if _PROG is None:
+        try:
+            _PROG = json.load(open(os.path.join(B.ROOT, "data", "prognosen.json"), encoding="utf-8")).get("firmen", {})
+        except Exception:
+            _PROG = {}
+    jahre = [int(j) for n in ("umsatz", "gewinn", "eps_verw") for j in k.get(n, {})]
+    if not jahre or sym not in _PROG:
+        return None
+    jahr = max(jahre) + 1
+    waehr = v.get("waehrung") or ""
+    out = {}
+    for x in _PROG[sym].get("prognosen", []):
+        if str(x.get("geschaeftsjahr")) != str(jahr) or x.get("von") is None or x.get("bis") is None:
+            continue
+        mitte = (x["von"] + x["bis"]) / 2
+        kz = x["kennzahl"]
+        if kz == "umsatz" and x.get("einheit") == waehr:
+            out["umsatz"] = mitte / 1e9
+        elif kz == "fcf" and x.get("einheit") == waehr:
+            out["fcf"] = mitte / 1e9
+        elif kz == "dividende_je_aktie" and x.get("einheit") == waehr:
+            out["dividende_je_aktie"] = round(mitte, 3)
+        elif kz in ("eps_bereinigt", "eps_gaap") and x.get("einheit") == waehr and "eps" not in out:
+            out["eps"] = round(mitte, 3)
+        elif kz == "operative_marge_proz":
+            out["operative_marge"] = round(mitte, 1)
+    if not out:
+        return None
+    return {"jahr": jahr, "werte": out}
+
+
+def diagramm_daten(k, prog=None):
     """Die Diagramm-Reihen für eine Firma (nur Reihen mit mindestens drei Jahren)."""
     def r(n):
         return k.get(n, {})
@@ -176,31 +215,57 @@ def diagramm_daten(k):
     quote = {j: round(r("dividende_je_aktie")[j] / r("eps_verw")[j] * 100, 1) for j in jahre
              if j in r("dividende_je_aktie") and j in r("eps_verw") and r("eps_verw")[j]}
     quote = {j: v for j, v in quote.items() if 0 < v < 200}
+    def quotient(a, b, skal=1.0):
+        return [round(r(a)[j] / r(b)[j] * skal, 2) if r(a).get(j) is not None and r(b).get(j) else None for j in jahre]
+    zinsdeckung = quotient("operatives_ergebnis", "zinsaufwand")
+    op_marge = quotient("operatives_ergebnis", "umsatz", 100)
+    netto_marge = quotient("gewinn", "umsatz", 100)
     charts = [
-        ("Umsatz und Nettogewinn", "bar", "Mrd.", [("Umsatz", reihe(r("umsatz")), "#9fd3b2"), ("Nettogewinn", reihe(r("gewinn")), "#2f7d4f")]),
-        ("Operativer Cashflow, Investitionen und Dividende", "bar", "Mrd.", [("Operativer Cashflow", reihe(r("operativer_cf")), "#4a9aa6"), ("Investitionen (Capex)", reihe(r("capex")), "#c0392b"), ("Dividendensumme", reihe(r("dividenden_gezahlt")), "#2f7d4f")]),
-        ("Free Cashflow", "bar", "Mrd.", [("Free Cashflow", reihe(fcf), "#4a9aa6")]),
+        ("Gewinnfluss: vom Umsatz zum Gewinn", "bar", "Mrd.", [("Umsatz", reihe(r("umsatz")), "#9fd3b2"), ("Bruttogewinn", reihe(r("bruttogewinn")), "#4a9aa6"), ("Operatives Ergebnis", reihe(r("operatives_ergebnis")), "#2f7d4f"), ("Nettogewinn", reihe(r("gewinn")), "#1d4d33")]),
+        ("Operativer Cashflow und Free Cashflow", "bar", "Mrd.", [("Operativer Cashflow", reihe(r("operativer_cf")), "#4a9aa6"), ("Free Cashflow", reihe(fcf), "#2f7d4f")]),
+        ("Mittelverwendung: Investitionen, Dividende, Rückkäufe", "bar", "Mrd.", [("Investitionen (Capex)", reihe(r("capex")), "#c0392b"), ("Dividendensumme", reihe(r("dividenden_gezahlt")), "#2f7d4f"), ("Aktienrückkäufe", reihe(r("aktienrueckkauf")), "#9fd3b2")]),
         ("Dividende je Aktie", "bar", "", [("Dividende je Aktie", [round(x, 3) if x is not None else None for x in [r("dividende_je_aktie").get(j) for j in jahre]], "#2f7d4f")]),
         ("Gewinn je Aktie (verwässert)", "line", "", [("Gewinn je Aktie", [r("eps_verw").get(j) for j in jahre], "#2f7d4f")]),
         ("Ausschüttungsquote", "bar", "%", [("Ausschüttungsquote", [quote.get(j) for j in jahre], "#9fd3b2")]),
-        ("Aktienrückkäufe", "bar", "Mrd.", [("Aktienrückkäufe", reihe(r("aktienrueckkauf")), "#9fd3b2")]),
-        ("Eigenkapital und langfristige Schulden", "bar", "Mrd.", [("Eigenkapital", reihe(r("eigenkapital")), "#4a9aa6"), ("Langfristige Schulden", reihe(r("schulden_lang")), "#c0392b")]),
+        ("Margen: operativ und netto", "line", "%", [("Operative Marge", op_marge, "#4a9aa6"), ("Nettomarge", netto_marge, "#2f7d4f")]),
+        ("Zinslast: Zinsaufwand", "bar", "Mrd.", [("Zinsaufwand", reihe(r("zinsaufwand")), "#c0392b")]),
+        ("Zinsdeckung (operatives Ergebnis durch Zinsaufwand)", "line", "x", [("Zinsdeckung", zinsdeckung, "#2f7d4f")]),
+        ("Eigenkapital, Liquidität und langfristige Schulden", "bar", "Mrd.", [("Eigenkapital", reihe(r("eigenkapital")), "#4a9aa6"), ("Liquide Mittel", reihe(r("liquide_mittel")), "#9fd3b2"), ("Langfristige Schulden", reihe(r("schulden_lang")), "#c0392b")]),
     ]
     out = []
     for titel, typ, einheit, reihen in charts:
         if any(sum(1 for x in vals if x is not None) >= 3 for _, vals, _ in reihen):
-            out.append({"titel": titel, "typ": typ, "einheit": einheit, "jahre": jahre,
-                        "reihen": [{"name": n, "werte": v, "farbe": c} for n, v, c in reihen]})
+            cj, cr, hat = list(jahre), [], False
+            for n, vals, c in reihen:
+                wert = None
+                if prog and PROG_REIHEN.get(n) in prog["werte"]:
+                    wert = prog["werte"][PROG_REIHEN[n]]
+                if wert is not None:
+                    hat = True
+                cr.append({"name": n, "werte": list(vals) + [None], "farbe": c, "prog": wert})
+            if hat:
+                cj = jahre + [str(prog["jahr"])]
+                for r_ in cr:
+                    if r_["prog"] is not None:
+                        r_["werte"][-1] = r_.pop("prog")
+                    else:
+                        r_.pop("prog")
+            else:
+                cr = [{"name": r_["name"], "werte": r_["werte"][:-1], "farbe": r_["farbe"]} for r_ in cr]
+                cj = jahre
+            out.append({"titel": titel, "typ": typ, "einheit": einheit, "jahre": cj, "prognose": hat,
+                        "reihen": cr})
     return out
 
 
-def diagramme_html(sym, k):
-    daten = diagramm_daten(k)
+def diagramme_html(sym, k, prog=None):
+    daten = diagramm_daten(k, prog)
     if not daten:
         return ""
     cfg = json.dumps(daten, ensure_ascii=False).replace("</", "<\\/")
     kacheln = "".join(f'<div class="fbox"><h3>{esc(c["titel"])}</h3><canvas id="fc{i}" height="180" aria-label="{esc(c["titel"])}"></canvas></div>' for i, c in enumerate(daten))
-    return (f'<h2>Finanzen im Überblick</h2><p class="meta">Jahreswerte in USD bzw. Landeswährung. Quelle: Jahresberichte.</p>{kacheln}'
+    hinweis = " Graue Balken und gestrichelte Linien zeigen die Prognose des Unternehmens fürs Folgejahr (Mitte der Spanne)." if any(c.get("prognose") for c in daten) else ""
+    return (f'<h2>Finanzen im Überblick</h2><p class="meta">Jahreswerte in USD bzw. Landeswährung. Quelle: Jahresberichte.{hinweis}</p>{kacheln}'
             f'<script type="application/json" id="fin-daten">{cfg}</script>'
             '<script src="../../assets/chart.umd.js" defer></script><script src="../../assets/firma-diagramme.js" defer></script>')
 
@@ -292,6 +357,12 @@ def firmenseite(f, peers, art, news, kl, k, fu, stand):
     z("KGV", n_(v.get("kgv"))); fw = (v.get("prognose") or {})
     z("Forward KGV", n_((fw or {}).get("kgv_forward")), (f"auf Basis des erwarteten Gewinns {esc(str(fw.get('eps_jahr') or ''))}" if fw.get("kgv_forward") else ""))
     z("KBV", n_(v.get("kbv"))); z("KUV", n_(v.get("kuv")))
+    z("KCV", n_(v.get("kcv"))); z("KFCF", n_(v.get("kfcf")))
+    z("EV/EBITDA", n_(v.get("ev_ebitda"))); z("PEG", n_(v.get("peg"), 2))
+    z("ROIC", p(v.get("roic"))); z("Operative Marge", p(v.get("operative_marge")))
+    z("Zinsdeckung", (B.de(v["zinsdeckung"], 1) + " x") if v.get("zinsdeckung") is not None else None)
+    z("Nettoschulden zu EBITDA", n_(v.get("nettoschulden_ebitda"), 1))
+    z("Umsatzwachstum 5 Jahre p. a.", p(v.get("umsatz_wachstum_5j"))); z("Gewinnwachstum 5 Jahre p. a.", p(v.get("gewinn_wachstum_5j")))
     z("Free-Cashflow-Rendite", p(v.get("fcf_rendite")))
     z("Nettomarge", p(v.get("nettomarge"))); z("Eigenkapitalrendite", p(v.get("roe")))
     z("Umsatz", (mrd(v.get("umsatz_usd")) + " USD") if v.get("umsatz_usd") else None, "in US-Dollar umgerechnet")
@@ -300,7 +371,12 @@ def firmenseite(f, peers, art, news, kl, k, fu, stand):
     tab = f'<div class="tablewrap"><table><thead><tr><th>Kennzahl</th><th class="n">Wert</th></tr></thead><tbody>{"".join(zl)}</tbody></table></div>'
 
     peer_html = ""
-    fin_html = diagramme_html(sym, reihen_fuer(sym)[0])
+    fin_html = diagramme_html(sym, reihen_fuer(sym)[0], prognose_fuer(sym, v, reihen_fuer(sym)[0]))
+    if v.get("ausschuettung") is not None:
+        q = v["ausschuettung"]
+        satz = (f"Die Dividende ist mit {B.de(q, 0)} % des Gewinns gedeckt." if q < 100
+                else f"Die Dividende übersteigt mit {B.de(q, 0)} % den Gewinn und ist damit nicht aus dem Gewinn gedeckt.")
+        fin_html = f'<p>{satz}</p>' + fin_html
     teil_html = ('<p class="note" style="font-size:13px">Daten unvollständig, noch auf der Suche.</p>' if f.get("teil") else "")
     if peers:
         zeilen = [zeile(f, "")] + [zeile(g, "") for g in peers]
