@@ -1,19 +1,19 @@
-# ESEF-Jahreszahlen: ganzes Europa-Universum (Stand 2026-11-24)
+# ESEF-Jahreszahlen: ganzes Europa-Universum (Stand 2026-11-25)
 
 Quelle: filings.xbrl.org (eingereichte ESEF-Jahresfinanzberichte). Maschinell ausgelesen, ungeprüft (human_review: pending).
 
-- Emittenten in der Auswahl (LEI, Sitz EU/EWR/GB, aktive Notierung, deutscher Kurs, nicht schon über SEC/feste Liste): **3220**
-- davon geprüft: **3220**, offen: **0**
+- Emittenten in der Auswahl (LEI, Sitz EU/EWR/GB, aktive Notierung, deutscher Kurs, nicht schon über SEC/feste Liste): **3218**
+- davon geprüft: **3218**, offen: **0**
 - mit ESEF-Berichten: **1922**
-- im Hub (Börsenwert ab 1 Mrd. EUR): **724**; darunter: **1073**, ohne Aktienzahl: **123** (nicht angezeigt, Nachprüfung alle 90 Tage)
-- in diesem Lauf: 0 Emittenten abgerufen, 0 neue Berichte, 0 Fehler
+- im Hub (Börsenwert ab 1 Mrd. EUR): **725**; darunter: **1072**, ohne Aktienzahl: **123** (nicht angezeigt, Nachprüfung alle 90 Tage)
+- in diesem Lauf: 3 Emittenten abgerufen, 0 neue Berichte, 0 Fehler
 
 ESEF gibt es erst ab Geschäftsjahr 2020 (teils 2021); ältere Jahre stehen nur in PDF-Berichten.
 
 | Zeitraum | Firmen |
 |---|---|
 | 2020–2025 | 285 |
-| 2019–2025 | 104 |
+| 2019–2025 | 105 |
 | 2021–2026 | 63 |
 | 2021–2025 | 53 |
 | 2020–2024 | 40 |
