@@ -10,6 +10,7 @@ logo_name: "Deere & Company"
 image: assets/magazin/deere-q4-2026-aufmacher.jpg
 image_alt: "Traktor mit Sämaschine auf einem Feld, Luftaufnahme"
 image_credit: "John Deere, Pressebild (Ausnahme)"
+logo_file: assets/logos/de.png
 ---
 Deere hat das Geschäftsjahr 2026 mit einem Umsatz von 47,7 Milliarden Dollar abgeschlossen, 4 Prozent mehr als im Vorjahr. Der Nettogewinn fiel dagegen um 3 Prozent auf 4,86 Milliarden Dollar, der Gewinn je Aktie auf 17,95 Dollar. Für das laufende Jahr 2027 rechnet der Konzern mit einem Nettogewinn zwischen 4,5 und 5,25 Milliarden Dollar. Die Dividende ist gedeckt, aber die Quote liegt am oberen Ende dessen, was Deere als Ziel nennt.
 
