@@ -1,0 +1,24 @@
+name: IDX Test (Jakarta)
+on:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  probe:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: Seiten und Berichtslinks für BBCA prüfen
+        run: |
+          UA="Mozilla/5.0 (dividenden-rechner.de Datensammlung)"
+          for u in \
+            "https://www.idx.id/en/listed-companies/company-profiles/" \
+            "https://www.idx.id/en/listed-companies/company-profiles/BBCA" \
+            "https://www.idx.id/en/listed-companies/xbrl/" \
+            "https://idxnet.idx.id/" \
+            "https://www.idx.co.id/" \
+            "https://www.idx.id/en/listed-companies/financial-statements/" ; do
+            echo "== $u"
+            curl -s -L -A "$UA" -m 40 -o /tmp/p.html -w "HTTP %{http_code} Bytes %{size_download}\n" "$u" || echo "fehlgeschlagen"
+            grep -oi 'href="[^"]*\(xbrl\|financial\|laporan\|report\|bbca\)[^"]*"' /tmp/p.html 2>/dev/null | sort -u | head -15
+          done
