@@ -472,6 +472,9 @@ a.addEventListener("input",function(){{b.value="";r()}});b.addEventListener("inp
     heute = datetime.date.today().isoformat()
     og_img = BASE + url + "og.png" if r.get("og_bild") else BASE + "assets/og-default.png"
     logo = logo_span(f["sym"], name, "../../")
+    nur_test = (f'<div data-nur-test="1" id="fmp-box" data-sym="{esc(f["sym"])}"></div>'
+                f'<p data-nur-test="1">Nur Testseite: <a href="../../aktien-hub/?s={esc(f["sym"])}">{esc(name)} im Aktien-Hub</a> (DCF, Analysten, Live-Kurs)</p>'
+                '<script src="../../assets/firma-fmp.js" defer></script>')
 
     return f'''<!DOCTYPE html>
 <html lang="de">
@@ -519,12 +522,14 @@ a.addEventListener("input",function(){{b.value="";r()}});b.addEventListener("inp
 <div class="tablewrap"><table><thead><tr><th>Geschäftsjahr</th><th class="n">Dividende je Aktie (USD)</th><th class="n">Veränderung</th></tr></thead><tbody>{hist}</tbody></table></div>
 {typ_hinweis}
 {rechner}
+{nur_test}
 {news_html}
 <h2>Häufige Fragen</h2>
 {faq_html}
 {PEER_BLOCKS.get(f["sym"], "")}
 <aside class="related"><h2>Weiterlesen</h2><ul>
 <li><a href="../">Weitere US-Dividendenaktien im Überblick</a></li>
+<li><a href="../firmen/">Alle Firmen von A bis Z</a></li>
 <li><a href="../aristokraten/">Liste: Dividend Kings und Dividendenaristokraten</a></li>
 <li><a href="../../grundlagen/dividendenaristokraten/">Was Dividendenaristokraten und Dividend Kings sind</a></li>
 <li><a href="../../fortgeschrittene/quellensteuer/usa/">USA: Quellensteuer und W-8BEN</a></li>
@@ -661,11 +666,12 @@ def aristokraten(rs, kopf_links, kopf, fuss, jahr):
 ''', title, desc
 
 
-def sitemap_llms(eintraege):
+def sitemap_llms(eintraege, extra=()):
     f = os.path.join(ROOT, "sitemap.xml"); s = open(f, encoding="utf-8").read()
     s = re.sub(r"<url><loc>" + re.escape(BASE) + r"dividende/[^<]*</loc>.*?</url>\n?", "", s)
     heute = datetime.date.today().isoformat()
     add = "".join(f"<url><loc>{BASE}{u}</loc><lastmod>{heute}</lastmod><priority>{'0.8' if u == 'dividende/' else '0.7'}</priority></url>\n" for u, _, _ in eintraege)
+    add += "".join(f"<url><loc>{BASE}{u}</loc><lastmod>{heute}</lastmod><priority>0.5</priority></url>\n" for u, _, _ in extra)
     open(f, "w", encoding="utf-8").write(s.replace("</urlset>", add + "</urlset>"))
     f = os.path.join(ROOT, "llms.txt"); s = open(f, encoding="utf-8").read()
     s = re.sub(r"- \[[^\]]*\]\(" + re.escape(BASE) + r"dividende/[^)]*\)[^\n]*\n", "", s)
@@ -739,6 +745,14 @@ def og_bild(r):
     r["og_bild"] = True
 
 
+def news_by_sym(mag):
+    d = {}
+    for m in mag:
+        sy = re.sub(r"\.NE$", "", (m.get("sym") or "").upper())
+        if sy: d.setdefault(sy, []).append(m)
+    return d
+
+
 def main():
     cfg = lade("data/dividendenseiten.json")["firmen"]
     secj = lade("data/sec/fundamentals.json"); sec = secj["firmen"]
@@ -776,7 +790,9 @@ def main():
     os.makedirs(os.path.join(ROOT, "dividende", "aristokraten"), exist_ok=True)
     open(os.path.join(ROOT, "dividende", "aristokraten", "index.html"), "w", encoding="utf-8").write(h)
     eintraege.insert(1, ("dividende/aristokraten/", t, d))
-    sitemap_llms(eintraege)
+    import build_firmenseiten
+    neu = build_firmenseiten.bauen({r["f"]["sym"] for r in rs}, {r["f"]["slug"] for r in rs}, news_by_sym(mag), kl1, k1, f1, datetime.date.today().isoformat())
+    sitemap_llms(eintraege, neu)
     weiterleitungen(rs)
     json.dump(OG_MERK, open(OG_MERK_PFAD, "w", encoding="utf-8"), ensure_ascii=False, indent=0, sort_keys=True)
     print(f"{len(rs)} Dividendenseiten gebaut")
