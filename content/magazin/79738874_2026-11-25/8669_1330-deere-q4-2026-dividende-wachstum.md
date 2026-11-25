@@ -5,11 +5,9 @@ date: 2026-11-25 13:30
 author: "Redaktions-Team Dividenden-Rechner.de"
 author_bio: "Das Redaktions-Team von Dividenden-Rechner.de schreibt über Dividendenaktien, Kennzahlen und Steuerthemen für Privatanleger. Die Rechner und Auswertungen auf der Seite entstehen im eigenen Haus."
 category: Analyse
-image: https://images.unsplash.com/photo-1781797269665-3aa6cd93d9a9?ixid=M3wxMTE3OTgzfDB8MXxzZWFyY2h8M3x8Z3JlZW4lMjB0cmFjdG9yJTIwcGxvd2luZyUyMGFncmljdWx0dXJhbCUyMGZpZWxkfGVufDF8MHx8fDE3OTU2MDc4MTF8MA&ixlib=rb-4.1.0&w=1600&h=900&fit=crop&crop=entropy&q=80&fm=jpg
-image_alt: "Grüner Traktor mit Anbaugerät auf einem sonnigen Feld"
-image_credit: "Foto: Roger Starnes Sr auf Unsplash"
-image_source: https://unsplash.com/photos/green-tractor-with-farm-machinery-in-a-sunny-field-bLbj0YDmmus?utm_source=dividenden-rechner&utm_medium=referral
-image_artist_url: https://unsplash.com/@rstar50?utm_source=dividenden-rechner&utm_medium=referral
+image: assets/magazin/deere-q4-2026-aufmacher.jpg
+image_alt: "Grüner Traktor mit Sämaschine, Luftaufnahme eines Ackers"
+image_credit: "John Deere, Pressebild (Ausnahme)"
 logo_symbol: DE
 logo_name: "Deere & Company"
 logo_file: assets/logos/de.png
