@@ -66,10 +66,6 @@ def mrd(usd_eur):
     return B.de(usd_eur / 1e6, 0) + " Mio."
 
 
-_BR = json.load(open(os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), "data/firmen-branchen.json"), encoding="utf-8"))
-FB, BMETA = _BR["firmen"], _BR["branchen"]
-
-
 def lade_firmen(vorhanden_sym):
     w = B.lade("data/kennzahlen.json")["werte"]
     try:
@@ -93,10 +89,10 @@ def lade_firmen(vorhanden_sym):
             continue
         namen[nm.lower()] = 1
         sek = SEKTOR.get(v.get("sektor") or "", "") or SEKTOR.get(bran.get(t, ""), "") or (bran.get(t) if isinstance(bran.get(t), str) else "")
-        br = FB.get(t, "")
-        if br and not sek:
-            sek = BMETA[br]["sektor"]
-        firmen.append({"sym": t, "name": nm, "v": v, "sektor": sek, "land": v.get("land") or "", "branche": br})
+        _, anzahl = reihen_fuer(t)
+        if anzahl == 0:
+            continue            # keine Jahreszahlen: vorerst außen vor
+        firmen.append({"sym": t, "name": nm, "v": v, "sektor": sek, "land": v.get("land") or "", "teil": anzahl < 8})
     return firmen
 
 
@@ -111,46 +107,109 @@ def vergeben(firmen, reserviert):
         benutzt.add(s); f["slug"] = s
 
 
-def _gleich(a, b):
-    """Zweite Boersennotierung oder Aktiengattung derselben Firma."""
-    x, y = re.sub(r"[^a-z]", "", a["name"].lower())[:7], re.sub(r"[^a-z]", "", b["name"].lower())[:7]
-    return bool(x) and x == y
+_GRUPPEN = None
+
+def gruppe_fuer(sym):
+    """Erste Peer-Gruppe aus data/dividende-peers.json, in der der Ticker steht (sonst None)."""
+    global _GRUPPEN
+    if _GRUPPEN is None:
+        try:
+            _GRUPPEN = json.load(open(os.path.join(B.ROOT, "data", "dividende-peers.json"), encoding="utf-8"))["gruppen"]
+        except Exception:
+            _GRUPPEN = []
+    return next((g for g in _GRUPPEN if sym in g["members"]), None)
 
 
-def peers_fuer(f, alle, nach_branche, nach_sektor):
-    """Vergleichsfirmen mit gleichem Geschaeftsmodell (Branche), egal aus welchem Land.
-    Reicht die Branche nicht, kommen verwandte Gruppen dazu (Elterngruppe, Untergruppen)."""
-    br = f.get("branche")
-    if not br: return [], ""
+def peers_fuer(f, alle, nach_sektor, nach_land):
+    gr = gruppe_fuer(f["sym"])
+    if gr:
+        mit = [g for g in alle if g["sym"] in gr["members"] and g["sym"] != f["sym"]]
+        if mit:
+            return mit[:5], "GRUPPE:" + gr["name"]
     mc = f["v"].get("umsatz_usd") or 0
-    def holen(namen):
-        out = []
-        for n in namen:
-            out += [g for g in nach_branche.get(n, []) if g is not f and not _gleich(f, g) and g not in out]
-        if mc:
-            out.sort(key=lambda g: abs(math.log(g["v"]["umsatz_usd"] / mc)) if (g["v"].get("umsatz_usd") or 0) > 0 else 99)
-        return out
-    pool = holen([br])
-    if len(pool) < 5:
-        fam = []
-        e = BMETA[br].get("eltern")
-        if e: fam.append(e)
-        fam += [n for n, m in BMETA.items() if m.get("eltern") == br]
-        if e: fam += [n for n, m in BMETA.items() if m.get("eltern") == e and n != br]
-        pool += [g for g in holen(fam) if g not in pool]
-    gesehen, uniq = set(), []
-    for g in pool:
-        k = re.sub(r"[^a-z]", "", g["name"].lower())[:7]
-        if k not in gesehen: gesehen.add(k); uniq.append(g)
-    if len(uniq) < 2: return [], ""
-    return uniq[:5], br
+    pool = [g for g in nach_sektor.get((f["sektor"], f["land"]), []) if g is not f] if f["sektor"] else []
+    art = f"{f['sektor']} aus {LAND.get(f['land'], f['land'])}" if pool else ""
+    if len(pool) < 3 and f["sektor"]:
+        pool = [g for g in nach_sektor.get((f["sektor"], None), []) if g is not f]
+        art = f"{f['sektor']} (weltweit)"
+    if len(pool) < 3:
+        pool = [g for g in nach_land.get(f["land"], []) if g is not f]
+        art = f"ähnlich große Dividendenwerte aus {LAND.get(f['land'], f['land'])}"
+    if not pool: return [], ""
+    if mc:
+        pool = sorted(pool, key=lambda g: abs(math.log((g["v"].get("umsatz_usd") or mc) / mc)))
+    return pool[:5], art
+
+
+_QUELLEN = None
+
+def datenquellen():
+    """Jahreszahlen je Firma: SEC zuerst, dann ESEF, Börse Deutschland, Asien (gleicher Aufbau: firmen[sym]['k'])."""
+    global _QUELLEN
+    if _QUELLEN is None:
+        _QUELLEN = []
+        for pfad in ["sec/fundamentals.json", "esef/fundamentals.json", "boerse-de/fundamentals.json", "asien/fundamentals.json"]:
+            try:
+                _QUELLEN.append(json.load(open(os.path.join(B.ROOT, "data", pfad), encoding="utf-8")).get("firmen", {}))
+            except Exception:
+                _QUELLEN.append({})
+    return _QUELLEN
+
+
+def reihen_fuer(sym):
+    """Jahreswerte der Firma aus der ersten Quelle, die sie hat. Gibt (k, Anzahl Kennzahlen) zurück."""
+    for q in datenquellen():
+        if sym in q and (q[sym].get("k") or {}):
+            k = {name: {d[:4]: val for d, val in reihe if val is not None} for name, reihe in q[sym]["k"].items()}
+            return k, len([x for x in k.values() if x])
+    return {}, 0
+
+
+def diagramm_daten(k):
+    """Die Diagramm-Reihen für eine Firma (nur Reihen mit mindestens drei Jahren)."""
+    def r(n):
+        return k.get(n, {})
+    jahre = sorted({j for n in ["umsatz", "gewinn", "operativer_cf", "capex", "dividende_je_aktie", "eps_verw", "dividenden_gezahlt", "aktienrueckkauf", "eigenkapital", "schulden_lang"] for j in r(n)})[-10:]
+    def reihe(d, teiler=1e9):
+        return [round(d[j] / teiler, 3) if d.get(j) is not None else None for j in jahre]
+    fcf = {j: r("operativer_cf")[j] - r("capex")[j] for j in jahre if j in r("operativer_cf") and j in r("capex")}
+    quote = {j: round(r("dividende_je_aktie")[j] / r("eps_verw")[j] * 100, 1) for j in jahre
+             if j in r("dividende_je_aktie") and j in r("eps_verw") and r("eps_verw")[j]}
+    quote = {j: v for j, v in quote.items() if 0 < v < 200}
+    charts = [
+        ("Umsatz und Nettogewinn", "bar", "Mrd.", [("Umsatz", reihe(r("umsatz")), "#9fd3b2"), ("Nettogewinn", reihe(r("gewinn")), "#2f7d4f")]),
+        ("Operativer Cashflow, Investitionen und Dividende", "bar", "Mrd.", [("Operativer Cashflow", reihe(r("operativer_cf")), "#4a9aa6"), ("Investitionen (Capex)", reihe(r("capex")), "#c0392b"), ("Dividendensumme", reihe(r("dividenden_gezahlt")), "#2f7d4f")]),
+        ("Free Cashflow", "bar", "Mrd.", [("Free Cashflow", reihe(fcf), "#4a9aa6")]),
+        ("Dividende je Aktie", "bar", "", [("Dividende je Aktie", [round(x, 3) if x is not None else None for x in [r("dividende_je_aktie").get(j) for j in jahre]], "#2f7d4f")]),
+        ("Gewinn je Aktie (verwässert)", "line", "", [("Gewinn je Aktie", [r("eps_verw").get(j) for j in jahre], "#2f7d4f")]),
+        ("Ausschüttungsquote", "bar", "%", [("Ausschüttungsquote", [quote.get(j) for j in jahre], "#9fd3b2")]),
+        ("Aktienrückkäufe", "bar", "Mrd.", [("Aktienrückkäufe", reihe(r("aktienrueckkauf")), "#9fd3b2")]),
+        ("Eigenkapital und langfristige Schulden", "bar", "Mrd.", [("Eigenkapital", reihe(r("eigenkapital")), "#4a9aa6"), ("Langfristige Schulden", reihe(r("schulden_lang")), "#c0392b")]),
+    ]
+    out = []
+    for titel, typ, einheit, reihen in charts:
+        if any(sum(1 for x in vals if x is not None) >= 3 for _, vals, _ in reihen):
+            out.append({"titel": titel, "typ": typ, "einheit": einheit, "jahre": jahre,
+                        "reihen": [{"name": n, "werte": v, "farbe": c} for n, v, c in reihen]})
+    return out
+
+
+def diagramme_html(sym, k):
+    daten = diagramm_daten(k)
+    if not daten:
+        return ""
+    cfg = json.dumps(daten, ensure_ascii=False).replace("</", "<\\/")
+    kacheln = "".join(f'<div class="fbox"><h3>{esc(c["titel"])}</h3><canvas id="fc{i}" height="180" aria-label="{esc(c["titel"])}"></canvas></div>' for i, c in enumerate(daten))
+    return (f'<h2>Finanzen im Überblick</h2><p class="meta">Jahreswerte in USD bzw. Landeswährung. Quelle: Jahresberichte.</p>{kacheln}'
+            f'<script type="application/json" id="fin-daten">{cfg}</script>'
+            '<script src="../../assets/chart.umd.js" defer></script><script src="../../assets/firma-diagramme.js" defer></script>')
 
 
 def zeile(f, prefix, wert=True):
     v = f["v"]
     def c(x, fmt, vz=False):
         return f'<td class="n" data-v="{x if x is not None else ""}">{fmt(x) if x is not None else "–"}</td>'
-    return (f'<tr><td class="fi" data-v="{esc(f["name"])}"><a href="{prefix}{f["slug"]}/">{B.logo_span(f["sym"], f["name"], prefix + "../../")}<span class="nm">{esc(f["name"])}</span></a></td>'
+    return (f'<tr><td class="fi" data-v="{esc(f["name"])}"><a href="/aktienhub/{f["slug"]}/">{B.logo_span(f["sym"], f["name"], prefix + "../../")}<span class="nm">{esc(f["name"])}</span></a></td>'
             + c(v.get("rendite"), lambda x: B.de(x, 2) + " %") + c(v.get("kgv"), lambda x: B.de(x, 1))
             + c(v.get("ausschuettung"), lambda x: B.de(x, 0) + " %") + "</tr>")
 
@@ -201,7 +260,7 @@ def seitenrahmen(title, desc, url, h1, crumbs, body, kl, k, fu, tiefe, ld=""):
 
 def firmenseite(f, peers, art, news, kl, k, fu, stand):
     v, name, sym = f["v"], f["name"], f["sym"]
-    url = f"dividende/{f['slug']}/"
+    url = f"aktienhub/{f['slug']}/"
     wkn = B.WKN.get(v.get("isin") or "")
     land = LAND.get(f["land"], f["land"])
     wae = v.get("waehrung") or ""
@@ -230,7 +289,9 @@ def firmenseite(f, peers, art, news, kl, k, fu, stand):
     z("Ausschüttungsquote (Gewinn)", p(v.get("ausschuettung"), 0))
     z("Dividendenwachstum 5 Jahre p. a.", p(v.get("div_wachstum_5j")))
     z("Dividendenwachstum 10 Jahre p. a.", p(v.get("div_wachstum_10j")))
-    z("KGV", n_(v.get("kgv"))); z("KBV", n_(v.get("kbv"))); z("KUV", n_(v.get("kuv")))
+    z("KGV", n_(v.get("kgv"))); fw = (v.get("prognose") or {})
+    z("Forward KGV", n_((fw or {}).get("kgv_forward")), (f"auf Basis des erwarteten Gewinns {esc(str(fw.get('eps_jahr') or ''))}" if fw.get("kgv_forward") else ""))
+    z("KBV", n_(v.get("kbv"))); z("KUV", n_(v.get("kuv")))
     z("Free-Cashflow-Rendite", p(v.get("fcf_rendite")))
     z("Nettomarge", p(v.get("nettomarge"))); z("Eigenkapitalrendite", p(v.get("roe")))
     z("Umsatz", (mrd(v.get("umsatz_usd")) + " USD") if v.get("umsatz_usd") else None, "in US-Dollar umgerechnet")
@@ -239,10 +300,16 @@ def firmenseite(f, peers, art, news, kl, k, fu, stand):
     tab = f'<div class="tablewrap"><table><thead><tr><th>Kennzahl</th><th class="n">Wert</th></tr></thead><tbody>{"".join(zl)}</tbody></table></div>'
 
     peer_html = ""
+    fin_html = diagramme_html(sym, reihen_fuer(sym)[0])
+    teil_html = ('<p class="note" style="font-size:13px">Daten unvollständig, noch auf der Suche.</p>' if f.get("teil") else "")
     if peers:
         zeilen = [zeile(f, "")] + [zeile(g, "") for g in peers]
-        peer_html = (f'<h2>Vergleich mit ähnlichen Aktien</h2><p>Gegenübergestellt sind {len(peers)} Dividendenwerte mit ähnlichem Geschäftsmodell aus der Branche „{esc(art)}“, unabhängig vom Land. '
-                     f'Die Auswahl richtet sich nach Branche und Größe.</p>' + kopf_tabelle(zeilen))
+        if art.startswith("GRUPPE:"):
+            peer_html = (f'<h2>Vergleich mit ähnlichen Aktien</h2><p>Vergleichbare Werte aus der Gruppe „{esc(art[7:])}“.</p>' + kopf_tabelle(zeilen))
+        else:
+            peer_html = (f'<h2>Vergleich mit ähnlichen Aktien</h2><p>Gegenübergestellt sind {len(peers)} Dividendenwerte aus der Gruppe „{esc(art)}“ mit ähnlichem Umsatz. '
+                         f'Die Auswahl entsteht automatisch aus Sektor, Land und Größe.</p>' + kopf_tabelle(zeilen))
+        peer_html += '<p><a href="../../aktien-hub/vergleich/">Kennzahlen aller Firmen im Vergleich</a></p>'
     news_html = ""
     if news:
         news_html = "<h2>Aktuelle Artikel</h2><ul>" + "".join(f'<li><a href="../../news/{esc(m["slug"])}/">{esc(m["title"])}</a> <span class="meta">({B.datum(m["date"])})</span></li>' for m in news[:6]) + "</ul>"
@@ -257,19 +324,19 @@ def firmenseite(f, peers, art, news, kl, k, fu, stand):
               {"@type": "ListItem", "position": 3, "name": f"{name} Aktie", "item": BASE + url}]},
           {"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": q, "acceptedAnswer": {"@type": "Answer", "text": a}} for q, a in faq]}]
     ld_html = "".join(f'<script type="application/ld+json">{json.dumps(x, ensure_ascii=False)}</script>\n' for x in ld)
-    sk = (f'<a href="../sektor/{SEKTOR_SLUG[f["sektor"]]}/">{esc(f["sektor"])}</a>' if f["sektor"] in SEKTOR_SLUG else "")
-    weiter = (f'<aside class="related"><h2>Weiterlesen</h2><ul><li><a href="../firmen/">Alle Firmen von A bis Z</a></li>'
-              + (f'<li><a href="../land/{f["land"].lower()}/">Dividendenaktien aus {esc(land)}</a></li>' if f["land"] in LAND_MIT_SEITE else "")
+    sk = (f'<a href="/dividende/sektor/{SEKTOR_SLUG[f["sektor"]]}/">{esc(f["sektor"])}</a>' if f["sektor"] in SEKTOR_SLUG else "")
+    weiter = (f'<aside class="related"><h2>Weiterlesen</h2><ul><li><a href="/dividende/firmen/">Alle Firmen von A bis Z</a></li>'
+              + (f'<li><a href="/dividende/land/{f["land"].lower()}/">Dividendenaktien aus {esc(land)}</a></li>' if f["land"] in LAND_MIT_SEITE else "")
               + (f"<li>Sektor: {sk}</li>" if sk else "")
-              + '<li><a href="../aristokraten/">Dividend Kings und Dividendenaristokraten</a></li><li><a href="../../">Dividendenrechner</a></li></ul></aside>')
+              + '<li><a href="/dividende/aristokraten/">Dividend Kings und Dividendenaristokraten</a></li><li><a href="../../">Dividendenrechner</a></li></ul></aside>')
     nur_test = (f'<div data-nur-test="1" id="fmp-box" data-sym="{esc(sym)}"></div>'
                 f'<p data-nur-test="1">Nur Testseite: <a href="../../aktien-hub/?s={esc(sym)}">{esc(name)} im Aktien-Hub</a> (DCF, Analysten, Live-Kurs)</p>'
                 '<script src="../../assets/firma-fmp.js" defer></script>')
     body = (f'<p class="meta">Stand: {B.datum(stand)} · Kürzel {esc(sym)}{(" · " + esc(kennung)) if kennung else ""}</p><p class="lead">{lead}</p>{tab}'
-            f'{nur_test}{peer_html}{news_html}<h2>Häufige Fragen</h2>{faq_html}{weiter}'
+            f'{fin_html}{nur_test}{peer_html}{news_html}<h2>Häufige Fragen</h2>{faq_html}{teil_html}{weiter}'
             f'<p class="meta">Quellen: Börsenkurse deutscher Handelsplätze, Geschäftsberichte der Unternehmen und Behörden (SEC, ESEF, Börsenaufsichten), Wechselkurse der EZB. Alle Werte stehen so in den Daten; fehlende Werte sind weggelassen.</p>')
     h1 = f'<div class="titlerow" style="gap:12px">{B.logo_span(sym, name, "../../")}<h1>{esc(name)} Aktie</h1></div>'
-    crumbs = f'<a href="../../">Start</a> › <a href="../">Dividenden</a> › <span aria-current="page">{esc(name)}</span>'
+    crumbs = f'<a href="../../">Start</a> › <a href="/dividende/">Dividenden</a> › <span aria-current="page">{esc(name)}</span>'
     return seitenrahmen(title, desc, url, h1, crumbs, body, kl, k, fu, 2, ld_html), title, desc, url
 
 
@@ -288,17 +355,16 @@ def bauen(vorhanden, reserviert_slugs, news_by_sym, kl2, k2, f2, stand):
     vergeben(firmen, reserviert_slugs)
     firmen = [f for f in firmen if not f.get("skip")]
     kl3, k3, f3 = kl2, k2, f2
-    nach_sektor, nach_land, nach_branche = {}, {}, {}
+    nach_sektor, nach_land = {}, {}
     for f in firmen:
         nach_sektor.setdefault((f["sektor"], f["land"]), []).append(f)
         nach_sektor.setdefault((f["sektor"], None), []).append(f)
         nach_land.setdefault(f["land"], []).append(f)
-        if f.get("branche"): nach_branche.setdefault(f["branche"], []).append(f)
     SEKTOR_SLUG = {s: B_slug(s) for s in {f["sektor"] for f in firmen if f["sektor"]}}
     LAND_MIT_SEITE = {c for c, l in nach_land.items() if len(l) >= 5 and c}
     eintraege = []
     for f in firmen:
-        peers, art = peers_fuer(f, firmen, nach_branche, nach_sektor)
+        peers, art = peers_fuer(f, firmen, nach_sektor, nach_land)
         sym_n = re.sub(r"\.NE$", "", f["sym"])
         h, t, d, u = firmenseite(f, peers, art, news_by_sym.get(sym_n, []), kl2, k2, f2, stand)
         os.makedirs(os.path.join(ROOT, u), exist_ok=True)
@@ -320,8 +386,8 @@ def bauen(vorhanden, reserviert_slugs, news_by_sym, kl2, k2, f2, stand):
         buchst.setdefault(b, []).append(f)
     # A-Z Uebersicht
     nav = "".join(f'<a href="{("0-9" if b == "0" else b.lower())}/" style="padding:6px 10px;border:1px solid #dfe3e8;border-radius:6px;margin:0 6px 6px 0;display:inline-block">{"0–9" if b == "0" else b}</a>' for b in sorted(buchst))
-    sek = "".join(f'<li><a href="../sektor/{s}/">{esc(n)}</a></li>' for n, s in sorted(SEKTOR_SLUG.items()))
-    lan = "".join(f'<li><a href="../land/{c.lower()}/">{esc(LAND[c] if c in LAND else c)}</a> ({len(nach_land[c])})</li>' for c in sorted(LAND_MIT_SEITE, key=lambda c: -len(nach_land[c])))
+    sek = "".join(f'<li><a href="/dividende/sektor/{s}/">{esc(n)}</a></li>' for n, s in sorted(SEKTOR_SLUG.items()))
+    lan = "".join(f'<li><a href="/dividende/land/{c.lower()}/">{esc(LAND[c] if c in LAND else c)}</a> ({len(nach_land[c])})</li>' for c in sorted(LAND_MIT_SEITE, key=lambda c: -len(nach_land[c])))
     body = (f'<p class="lead">{len(firmen)} weitere Dividendenaktien mit Kennzahlen: Rendite, KGV, Ausschüttungsquote und Vergleich mit ähnlichen Werten.</p>'
             f'<p>{nav}</p><h2>Nach Sektor</h2><ul>{sek}</ul><h2>Nach Land</h2><ul>{lan}</ul>')
     kl, k, fu = B.rahmen(3)
