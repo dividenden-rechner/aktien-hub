@@ -8,17 +8,15 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 10
     steps:
-      - name: Berichtsquellen auf BBCA-Seite finden
+      - name: Jahresabschluss-Seite und Datenquelle finden
         run: |
           UA="Mozilla/5.0 (dividenden-rechner.de Datensammlung)"
-          curl -s -L -A "$UA" -m 40 -o /tmp/bbca.html "https://www.idx.id/en/listed-companies/company-profiles/BBCA"
-          echo "== Links mit pdf/xlsx/zip/xbrl/api/report/financial"
-          grep -oi 'href="[^"]*\(\.pdf\|\.xlsx\|\.zip\|xbrl\|/api\|report\|financial\)[^"]*"' /tmp/bbca.html | sort -u | head -40
-          echo "== Skript-Endpunkte"
-          grep -oi '"[^"]*\(api\|xbrl\|financial\|report\)[^"]*"' /tmp/bbca.html | sort -u | head -40
-          echo "== Tabellen/Keywords"
-          grep -oi 'laporan[^<"]\{0,60\}\|financial statement[^<"]\{0,60\}' /tmp/bbca.html | sort -u | head -20
-          echo "== Versuche Berichtsseiten"
-          for u in "https://www.idx.id/api/v1/company/BBCA/financial-report" "https://www.idx.id/en/listed-companies/financial-report/" "https://www.idx.co.id/Portals/0/StaticData/ListedCompanies/Corporate_Actions/" ; do
-            echo "-- $u"; curl -s -L -A "$UA" -m 40 -o /tmp/x.bin -w "HTTP %{http_code} %{size_download}\n" "$u"; head -c 300 /tmp/x.bin | tr -d '\r' | head -5; echo
-          done
+          curl -s -L -A "$UA" -m 40 -o /tmp/fs.html -w "HTTP %{http_code} %{size_download}\n" "https://www.idx.id/en/listed-companies/financial-statements-and-annual-report/"
+          echo "== Links auf der Seite (Auszug)"
+          grep -oi 'href="[^"]*"' /tmp/fs.html | grep -i "financ\|report\|xbrl\|api\|\.pdf\|\.zip\|\.xlsx\|laporan" | sort -u | head -40
+          echo "== API-Adressen in Skripten"
+          grep -oi 'https\?://[^"'"'"' )]*\(api\|json\|xbrl\|financ\|report\)[^"'"'"' )]*' /tmp/fs.html | sort -u | head -40
+          echo "== Relative API-Pfade"
+          grep -oi '"/\(api\|primary\|_nuxt\)[^"]*"' /tmp/fs.html | sort -u | head -20
+          echo "== Nuxt-Daten (Ausschnitt)"
+          grep -o '__NUXT__[^<]\{0,300\}' /tmp/fs.html | head -c 800; echo
