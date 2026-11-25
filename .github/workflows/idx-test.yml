@@ -8,13 +8,17 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 10
     steps:
-      - name: GetFinancialReport für BBCA abfragen
+      - name: Anhänge von BBCA prüfen
         run: |
           UA="Mozilla/5.0 (dividenden-rechner.de Datensammlung)"
-          for base in "https://www.idx.co.id/primary/ListedCompany/GetFinancialReport" "https://www.idx.id/primary/ListedCompany/GetFinancialReport"; do
-            for q in "indexFrom=0&pageSize=12&year=2025&reportType=rdf&periode=audit&kodeEmiten=BBCA&SortColumn=KodeEmiten&SortOrder=asc" "indexFrom=0&pageSize=12&year=2025&reportType=rdf&periode=tahunan&kodeEmiten=BBCA&SortColumn=KodeEmiten&SortOrder=asc"; do
-              echo "== $base?$q"
-              curl -s -L -A "$UA" -H "Accept: application/json" -m 40 -o /tmp/fr.json -w "HTTP %{http_code} %{size_download}\n" "$base?$q"
-              head -c 900 /tmp/fr.json; echo
-            done
-          done
+          curl -s -L -A "$UA" -H "Accept: application/json" -m 40 -o /tmp/fr.json "https://www.idx.id/primary/ListedCompany/GetFinancialReport?indexFrom=0&pageSize=12&year=2025&reportType=rdf&periode=audit&kodeEmiten=BBCA&SortColumn=KodeEmiten&SortOrder=asc"
+          python3 -c "
+import json
+d=json.load(open('/tmp/fr.json'))
+for r in d['Results'][:1]:
+    print({k:v for k,v in r.items() if k!='Attachments'})
+    for a in r['Attachments']:
+        print({k:(str(v)[:120]) for k,v in a.items()})
+"
+          for y in 2024 2023; do curl -s -L -A "$UA" -H "Accept: application/json" -m 40 -o /tmp/f$y.json "https://www.idx.id/primary/ListedCompany/GetFinancialReport?indexFrom=0&pageSize=12&year=$y&reportType=rdf&periode=audit&kodeEmiten=BBCA&SortColumn=KodeEmiten&SortOrder=asc"; python3 -c "
+import json;d=json.load(open('/tmp/f$y.json'));print('Jahr $y Treffer', d['ResultCount'], [a.get('FileName') or a.get('File_Name') for r in d['Results'] for a in r['Attachments']][:6])"; done
