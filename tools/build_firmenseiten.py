@@ -209,7 +209,7 @@ def zeile(f, prefix, wert=True):
     v = f["v"]
     def c(x, fmt, vz=False):
         return f'<td class="n" data-v="{x if x is not None else ""}">{fmt(x) if x is not None else "–"}</td>'
-    return (f'<tr><td class="fi" data-v="{esc(f["name"])}"><a href="{prefix}{f["slug"]}/">{B.logo_span(f["sym"], f["name"], prefix + "../../")}<span class="nm">{esc(f["name"])}</span></a></td>'
+    return (f'<tr><td class="fi" data-v="{esc(f["name"])}"><a href="/aktienhub/{f["slug"]}/">{B.logo_span(f["sym"], f["name"], prefix + "../../")}<span class="nm">{esc(f["name"])}</span></a></td>'
             + c(v.get("rendite"), lambda x: B.de(x, 2) + " %") + c(v.get("kgv"), lambda x: B.de(x, 1))
             + c(v.get("ausschuettung"), lambda x: B.de(x, 0) + " %") + "</tr>")
 
@@ -260,7 +260,7 @@ def seitenrahmen(title, desc, url, h1, crumbs, body, kl, k, fu, tiefe, ld=""):
 
 def firmenseite(f, peers, art, news, kl, k, fu, stand):
     v, name, sym = f["v"], f["name"], f["sym"]
-    url = f"dividende/{f['slug']}/"
+    url = f"aktienhub/{f['slug']}/"
     wkn = B.WKN.get(v.get("isin") or "")
     land = LAND.get(f["land"], f["land"])
     wae = v.get("waehrung") or ""
@@ -324,11 +324,11 @@ def firmenseite(f, peers, art, news, kl, k, fu, stand):
               {"@type": "ListItem", "position": 3, "name": f"{name} Aktie", "item": BASE + url}]},
           {"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": q, "acceptedAnswer": {"@type": "Answer", "text": a}} for q, a in faq]}]
     ld_html = "".join(f'<script type="application/ld+json">{json.dumps(x, ensure_ascii=False)}</script>\n' for x in ld)
-    sk = (f'<a href="../sektor/{SEKTOR_SLUG[f["sektor"]]}/">{esc(f["sektor"])}</a>' if f["sektor"] in SEKTOR_SLUG else "")
-    weiter = (f'<aside class="related"><h2>Weiterlesen</h2><ul><li><a href="../firmen/">Alle Firmen von A bis Z</a></li>'
-              + (f'<li><a href="../land/{f["land"].lower()}/">Dividendenaktien aus {esc(land)}</a></li>' if f["land"] in LAND_MIT_SEITE else "")
+    sk = (f'<a href="/dividende/sektor/{SEKTOR_SLUG[f["sektor"]]}/">{esc(f["sektor"])}</a>' if f["sektor"] in SEKTOR_SLUG else "")
+    weiter = (f'<aside class="related"><h2>Weiterlesen</h2><ul><li><a href="/dividende/firmen/">Alle Firmen von A bis Z</a></li>'
+              + (f'<li><a href="/dividende/land/{f["land"].lower()}/">Dividendenaktien aus {esc(land)}</a></li>' if f["land"] in LAND_MIT_SEITE else "")
               + (f"<li>Sektor: {sk}</li>" if sk else "")
-              + '<li><a href="../aristokraten/">Dividend Kings und Dividendenaristokraten</a></li><li><a href="../../">Dividendenrechner</a></li></ul></aside>')
+              + '<li><a href="/dividende/aristokraten/">Dividend Kings und Dividendenaristokraten</a></li><li><a href="../../">Dividendenrechner</a></li></ul></aside>')
     nur_test = (f'<div data-nur-test="1" id="fmp-box" data-sym="{esc(sym)}"></div>'
                 f'<p data-nur-test="1">Nur Testseite: <a href="../../aktien-hub/?s={esc(sym)}">{esc(name)} im Aktien-Hub</a> (DCF, Analysten, Live-Kurs)</p>'
                 '<script src="../../assets/firma-fmp.js" defer></script>')
@@ -336,7 +336,7 @@ def firmenseite(f, peers, art, news, kl, k, fu, stand):
             f'{fin_html}{nur_test}{peer_html}{news_html}<h2>Häufige Fragen</h2>{faq_html}{teil_html}{weiter}'
             f'<p class="meta">Quellen: Börsenkurse deutscher Handelsplätze, Geschäftsberichte der Unternehmen und Behörden (SEC, ESEF, Börsenaufsichten), Wechselkurse der EZB. Alle Werte stehen so in den Daten; fehlende Werte sind weggelassen.</p>')
     h1 = f'<div class="titlerow" style="gap:12px">{B.logo_span(sym, name, "../../")}<h1>{esc(name)} Aktie</h1></div>'
-    crumbs = f'<a href="../../">Start</a> › <a href="../">Dividenden</a> › <span aria-current="page">{esc(name)}</span>'
+    crumbs = f'<a href="../../">Start</a> › <a href="/dividende/">Dividenden</a> › <span aria-current="page">{esc(name)}</span>'
     return seitenrahmen(title, desc, url, h1, crumbs, body, kl, k, fu, 2, ld_html), title, desc, url
 
 
@@ -386,8 +386,8 @@ def bauen(vorhanden, reserviert_slugs, news_by_sym, kl2, k2, f2, stand):
         buchst.setdefault(b, []).append(f)
     # A-Z Uebersicht
     nav = "".join(f'<a href="{("0-9" if b == "0" else b.lower())}/" style="padding:6px 10px;border:1px solid #dfe3e8;border-radius:6px;margin:0 6px 6px 0;display:inline-block">{"0–9" if b == "0" else b}</a>' for b in sorted(buchst))
-    sek = "".join(f'<li><a href="../sektor/{s}/">{esc(n)}</a></li>' for n, s in sorted(SEKTOR_SLUG.items()))
-    lan = "".join(f'<li><a href="../land/{c.lower()}/">{esc(LAND[c] if c in LAND else c)}</a> ({len(nach_land[c])})</li>' for c in sorted(LAND_MIT_SEITE, key=lambda c: -len(nach_land[c])))
+    sek = "".join(f'<li><a href="/dividende/sektor/{s}/">{esc(n)}</a></li>' for n, s in sorted(SEKTOR_SLUG.items()))
+    lan = "".join(f'<li><a href="/dividende/land/{c.lower()}/">{esc(LAND[c] if c in LAND else c)}</a> ({len(nach_land[c])})</li>' for c in sorted(LAND_MIT_SEITE, key=lambda c: -len(nach_land[c])))
     body = (f'<p class="lead">{len(firmen)} weitere Dividendenaktien mit Kennzahlen: Rendite, KGV, Ausschüttungsquote und Vergleich mit ähnlichen Werten.</p>'
             f'<p>{nav}</p><h2>Nach Sektor</h2><ul>{sek}</ul><h2>Nach Land</h2><ul>{lan}</ul>')
     kl, k, fu = B.rahmen(3)

@@ -276,13 +276,13 @@ def peer_block(sym, cfg_by_sym, gruppen):
     """Querverlinkung je Aktie: Aristokratenliste plus bis zu drei Aktien aus derselben Peer-Gruppe."""
     gr = next((g for g in gruppen if sym in g["members"]), None)
     peers = [m for m in (gr["members"] if gr else []) if m != sym and m in cfg_by_sym][:3]
-    items = "".join(f'<li><a href="../{cfg_by_sym[m]["slug"]}/" style="display:flex;align-items:center;gap:10px">{logo_span(m, cfg_by_sym[m]["name"], "../../")}{esc(cfg_by_sym[m]["name"])}</a></li>' for m in peers)
+    items = "".join(f'<li><a href="/aktienhub/{cfg_by_sym[m]["slug"]}/" style="display:flex;align-items:center;gap:10px">{logo_span(m, cfg_by_sym[m]["name"], "../../")}{esc(cfg_by_sym[m]["name"])}</a></li>' for m in peers)
     peer_teil = (f'<p>Aus der Gruppe „{esc(gr["name"])}“ lohnt der Blick auf:</p><ul>{items}</ul>' if peers else "")
     return (f'<h2>Vergleich und Einordnung</h2>{peer_teil}'
-            f'<p><a href="../aristokraten/">Alle Dividendenaristokraten und Dividend Kings im Vergleich</a></p>')
+            f'<p><a href="/dividende/aristokraten/">Alle Dividendenaristokraten und Dividend Kings im Vergleich</a></p>')
 
 def seite(r, kopf_links, kopf, fuss, mag, kurs_datum, sec_stand, usd_je_eur, jahr):
-    f = r["f"]; name = f["name"]; url = f"dividende/{f['slug']}/"
+    f = r["f"]; name = f["name"]; url = f"aktienhub/{f['slug']}/"
     rend = proz(r["rendite"]) if r["rendite"] else None
     title = f"{name} Dividende {jahr}: Rendite, Termine und Historie"
     kennung = ", ".join(x for x in (f"ISIN {r['isin']}" if r.get("isin") else "", f"WKN {r['wkn']}" if r.get("wkn") else "") if x)
@@ -513,7 +513,7 @@ a.addEventListener("input",function(){{b.value="";r()}});b.addEventListener("inp
 <body>
 {kopf}
 <main class="wrap"><article>
-<nav class="crumbs" aria-label="Brotkrumen"><a href="../../">Start</a> › <a href="../">Dividenden</a> › <span aria-current="page">{esc(name)}</span></nav>
+<nav class="crumbs" aria-label="Brotkrumen"><a href="../../">Start</a> › <a href="/dividende/">Dividenden</a> › <span aria-current="page">{esc(name)}</span></nav>
 <div class="titlerow" style="gap:12px">{logo}<h1>{esc(name)} Dividende</h1></div>
 <p class="meta">Stand: {datum(heute)} · Kurs vom {kurs_d} · Kürzel {esc(f["sym"])}{" · ISIN " + esc(r["isin"]) if r.get("isin") else ""}{" · WKN " + esc(r["wkn"]) if r.get("wkn") else ""}</p>
 <p class="lead">{lead}</p>
@@ -533,9 +533,9 @@ a.addEventListener("input",function(){{b.value="";r()}});b.addEventListener("inp
 {faq_html}
 {PEER_BLOCKS.get(f["sym"], "")}
 <aside class="related"><h2>Weiterlesen</h2><ul>
-<li><a href="../">Weitere US-Dividendenaktien im Überblick</a></li>
-<li><a href="../firmen/">Alle Firmen von A bis Z</a></li>
-<li><a href="../aristokraten/">Liste: Dividend Kings und Dividendenaristokraten</a></li>
+<li><a href="/dividende/">Weitere US-Dividendenaktien im Überblick</a></li>
+<li><a href="/dividende/firmen/">Alle Firmen von A bis Z</a></li>
+<li><a href="/dividende/aristokraten/">Liste: Dividend Kings und Dividendenaristokraten</a></li>
 <li><a href="../../grundlagen/dividendenaristokraten/">Was Dividendenaristokraten und Dividend Kings sind</a></li>
 <li><a href="../../fortgeschrittene/quellensteuer/usa/">USA: Quellensteuer und W-8BEN</a></li>
 <li><a href="../../">Dividendenrechner: Wie wächst dein Depot?</a></li>
@@ -616,7 +616,7 @@ def aristokraten(rs, kopf_links, kopf, fuss, jahr):
     for titel, lo, hi in gruppen:
         g = sorted([r for r in rs if r["serie_jahre"] is not None and lo <= r["serie_jahre"] <= hi], key=lambda r: -r["serie_jahre"])
         if not g: continue
-        z = "".join(f'<tr><td class="fi" data-v="{esc(r["f"]["name"])}"><a href="../{r["f"]["slug"]}/">{logo_span(r["f"]["sym"], r["f"]["name"], "../../")}<span class="nm">{esc(r["f"]["name"])}</span></a></td>'
+        z = "".join(f'<tr><td class="fi" data-v="{esc(r["f"]["name"])}"><a href="/aktienhub/{r["f"]["slug"]}/">{logo_span(r["f"]["sym"], r["f"]["name"], "../../")}<span class="nm">{esc(r["f"]["name"])}</span></a></td>'
                     f'<td class="n" data-v="{r["serie_jahre"]}"><strong>{r["serie_jahre"]}</strong></td>'
                     f'<td class="n" data-v="{r["rendite"] or ""}">{proz(r["rendite"]) if r["rendite"] else "–"}</td>'
                     f'<td class="n" data-v="{r["cagr5"] if r["cagr5"] is not None else ""}">{proz(r["cagr5"], vz=True) if r["cagr5"] is not None else "–"}</td></tr>'
@@ -628,7 +628,7 @@ def aristokraten(rs, kopf_links, kopf, fuss, jahr):
     ohne_html = ""
     if ohne:
         ohne_html = ('<h2>Ohne lange Erhöhungsserie</h2><p>Diese Werte zahlen Dividende, haben sie aber nur kurz oder zuletzt gar nicht erhöht: '
-                     + ", ".join(f'<a href="../{r["f"]["slug"]}/">{esc(r["f"]["name"])}</a>' for r in ohne) + ".</p>")
+                     + ", ".join(f'<a href="/aktienhub/{r["f"]["slug"]}/">{esc(r["f"]["name"])}</a>' for r in ohne) + ".</p>")
     title = f"Dividend Kings und Dividendenaristokraten {jahr}: Liste mit Rendite"
     desc = "Dividend Kings und Dividendenaristokraten: US-Aktien mit 25 oder 50 Jahren Dividendenerhöhung in Folge, mit Rendite und Wachstum. Täglich aktualisiert."
     return f'''<!DOCTYPE html>
@@ -654,7 +654,7 @@ def aristokraten(rs, kopf_links, kopf, fuss, jahr):
 <body>
 {kopf}
 <main class="wrap"><article>
-<nav class="crumbs" aria-label="Brotkrumen"><a href="../../">Start</a> › <a href="../">Dividenden</a> › <span aria-current="page">Dividend Kings und Aristokraten</span></nav>
+<nav class="crumbs" aria-label="Brotkrumen"><a href="../../">Start</a> › <a href="/dividende/">Dividenden</a> › <span aria-current="page">Dividend Kings und Aristokraten</span></nav>
 <h1>Dividend Kings und Dividendenaristokraten</h1>
 <p class="lead">Wer seine Dividende über Jahrzehnte jedes Jahr erhöht, hat Rezessionen, Zinswenden und Krisen überstanden, ohne die Ausschüttung anzutasten. Unter den Werten, zu denen wir eigene Dividendenseiten führen, sind derzeit {n_king} Dividend Kings mit mindestens 50 Erhöhungen in Folge und {n_ari} weitere mit mindestens 25 Jahren.</p>
 {TAB_CSS}<p class="ari-hint">Eine Auswahl der beliebtesten Dividendenwerte, keine vollständige Liste aller Dividendenaristokraten. Ein Klick auf eine Spalte sortiert die Tabelle.</p>
@@ -691,7 +691,7 @@ def weiterleitungen(rs):
     p = os.path.join(ROOT, "tools", "umzug", "redirects-entwurf.csv")
     rows = list(csv.DictReader(open(p, encoding="utf-8")))
     felder = list(rows[0].keys())
-    ziel = {a.lower(): f"/dividende/{r['f']['slug']}/" for r in rs for a in r["f"].get("alt", [])}
+    ziel = {a.lower(): f"/aktienhub/{r['f']['slug']}/" for r in rs for a in r["f"].get("alt", [])}
     for row in rows:
         z = ziel.get(row["alter_pfad"].strip().rstrip("/").lower())
         if z:
@@ -758,6 +758,21 @@ def news_by_sym(mag):
     return d
 
 
+def stub_schreiben(urls):
+    """Alte Adresse dividende/<slug>/ leitet auf aktienhub/<slug>/ um (Weiterleitung per Meta-Refresh, bis 301 eingerichtet ist)."""
+    for u in urls:
+        if not u.startswith("aktienhub/"):
+            continue
+        neu = "/" + u
+        alt = os.path.join(ROOT, "dividende", u[len("aktienhub/"):], "index.html")
+        os.makedirs(os.path.dirname(alt), exist_ok=True)
+        open(alt, "w", encoding="utf-8").write(
+            '<!doctype html><html lang="de"><head><meta charset="utf-8"><title>Weiterleitung</title>'
+            f'<link rel="canonical" href="{BASE}{u}"><meta name="robots" content="noindex">'
+            f'<meta http-equiv="refresh" content="0; url={neu}"></head>'
+            f'<body><p><a href="{neu}">Weiter zur Aktienseite</a></p></body></html>')
+
+
 def main():
     cfg = lade("data/dividendenseiten.json")["firmen"]
     secj = lade("data/sec/fundamentals.json"); sec = secj["firmen"]
@@ -806,6 +821,7 @@ def main():
     neu = build_firmenseiten.bauen({r["f"]["sym"] for r in rs}, {r["f"]["slug"] for r in rs}, news_by_sym(mag), kl1, k1, f1, datetime.date.today().isoformat())
     sitemap_llms(eintraege, neu)
     weiterleitungen(rs)
+    stub_schreiben([u for u, _, _ in eintraege] + [u for u, _, _ in neu])
     json.dump(OG_MERK, open(OG_MERK_PFAD, "w", encoding="utf-8"), ensure_ascii=False, indent=0, sort_keys=True)
     print(f"{len(rs)} Dividendenseiten gebaut")
 
