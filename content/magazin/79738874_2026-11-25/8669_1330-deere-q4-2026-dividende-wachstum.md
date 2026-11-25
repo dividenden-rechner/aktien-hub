@@ -1,5 +1,5 @@
 ---
-title: "Deere: Die Dividende ist gedeckt, das Wachstum 2027 kommt aus den USA"
+title: "Deere: Ausschüttung gedeckt, Wachstum 2027 vor allem in den USA"
 description: "Deere verdient im Schlussquartal 1 Prozent weniger. Für 2027 erwartet der Konzern einen Nettogewinn von 4,5 bis 5,25 Milliarden Dollar, die Dividende bleibt gedeckt."
 date: 2026-11-25 13:30
 author: "Redaktions-Team Dividenden-Rechner.de"
@@ -7,12 +7,9 @@ author_bio: "Das Redaktions-Team von Dividenden-Rechner.de schreibt über Divide
 category: Analyse
 logo_symbol: DE
 logo_name: "Deere & Company"
-image: assets/magazin/deere-q4-2026-aufmacher.jpg
-image_alt: "Traktor mit Sämaschine auf einem Feld, Luftaufnahme"
-image_credit: "John Deere, Pressebild (Ausnahme)"
 logo_file: assets/logos/de.png
 ---
-Deere hat das Geschäftsjahr 2026 mit einem Umsatz von 47,7 Milliarden Dollar abgeschlossen, 4 Prozent mehr als im Vorjahr. Der Nettogewinn fiel dagegen um 3 Prozent auf 4,86 Milliarden Dollar, der Gewinn je Aktie auf 17,95 Dollar. Für das laufende Jahr 2027 rechnet der Konzern mit einem Nettogewinn zwischen 4,5 und 5,25 Milliarden Dollar. Die Dividende ist gedeckt, aber die Quote liegt am oberen Ende dessen, was Deere als Ziel nennt.
+Deere hat das Geschäftsjahr 2026 mit einem Umsatz von 47,7 Milliarden Dollar abgeschlossen, 4 Prozent mehr als im Vorjahr. Der Nettogewinn fiel dagegen um 3 Prozent auf 4,86 Milliarden Dollar, der Gewinn je Aktie auf 17,95 Dollar. Für das laufende Jahr 2027 rechnet der Konzern mit einem Nettogewinn zwischen 4,5 und 5,25 Milliarden Dollar. Die Dividende ist gedeckt, die Ausschüttungsquote liegt aber am oberen Ende dessen, was Deere als Ziel nennt.
 
 ## Schlussquartal: Große Landmaschinen schwächeln, Kleingeräte ziehen an
 
@@ -32,18 +29,18 @@ Der Cashflow aus dem Geschäft soll zwischen 4,5 und 5,5 Milliarden Dollar liege
 
 ## Dividende: gedeckt, aber nah am oberen Rand
 
-Deere nennt als Ziel für die Dividende eine Ausschüttungsquote von 25 bis 35 Prozent des Gewinns im Mittelzyklus. Die SEC-Zahlen aus dem Aktien-Hub reichen bis zum Geschäftsjahr 2025. Dort lag die Dividende bei 6,48 Dollar je Aktie und der Gewinn je Aktie bei 18,50 Dollar, die Quote also bei 35 Prozent. Der Gewinn je Aktie 2026 lag bei 17,95 Dollar. Die Dividende für 2026 liegt in unseren Daten nicht vor. Auf Basis des letzten verfügbaren Wertes ergibt sich eine Quote von 36 Prozent.
+Deere nennt als Ziel für die Dividende eine Ausschüttungsquote von 25 bis 35 Prozent des Gewinns im Mittelzyklus. Im [Aktien-Hub zu Deere](/dividende/deere-und/) liegt die Quote bei 36 Prozent, gerechnet auf den Gewinn der letzten zwölf Monate. Die Dividende beträgt 6,48 Dollar je Aktie, die Rendite 1,06 Prozent. Eine eigene Dividendenzahl für das Geschäftsjahr 2026 ist in den Daten noch nicht erfasst, deshalb steht im Hub der Wert von 2025.
 
-Gemessen am Cashflow ist die Ausschüttung gut gedeckt. Im Geschäftsjahr 2025 lag der operative Cashflow bei 7,5 Milliarden Dollar, nach Abzug der Investitionen von 1,4 Milliarden Dollar blieben rund 6,1 Milliarden. Die Dividendensumme betrug rund 1,8 Milliarden Dollar, bei 271,7 Millionen Aktien. Für 2027 ergibt sich mit dem Ausblick von 3 bis 4 Milliarden Dollar freiem Cashflow eine rund zweifache Deckung. Deeres eigene Cashflow-Definition für den Bereich Equipment Operations weicht von dieser Rechnung etwas ab.
+Gemessen am Cashflow ist die Ausschüttung gut gedeckt. Der freie Cashflow der letzten zwölf Monate liegt im Hub bei 6,0 Milliarden Dollar, die Dividendensumme bei 1,75 Milliarden Dollar. Die Ausschüttung beansprucht damit 29 Prozent des freien Cashflows. Für 2027 ergibt der Ausblick von 4,5 bis 5,5 Milliarden Dollar operativem Cashflow abzüglich rund 1,5 Milliarden Investitionen einen freien Cashflow von 3 bis 4 Milliarden Dollar, also grob das Doppelte der Dividendensumme. Deeres eigene Cashflow-Definition für den Bereich Equipment Operations weicht von dieser Rechnung etwas ab.
 
-Die Quote steigt, weil der Gewinn seit drei Jahren sinkt: Der Gewinn je Aktie lag 2023 bei 34,63 Dollar, 2024 bei 25,62 Dollar und 2025 bei 18,50 Dollar. Die Ausschüttung soll sich am Mittelzyklus orientieren und einzelne schwache Jahre glätten. Die Reihenfolge der Kapitalverwendung ist klar: Zuerst kommt die Dividende, Aktienrückkäufe folgen aus dem übrig bleibenden Cashflow.
+Die Bilanz trägt die Ausschüttung ebenfalls. Der Hub weist Nettoschulden von minus 1,7 Milliarden Dollar aus, also mehr Cash als Schulden. Die Zinsdeckung liegt bei 3,0.
 
-Die Aktie reagierte am Mittwochmorgen vorbörslich mit einem Minus von knapp 2 Prozent auf 602 Dollar, nach einem Schlusskurs von 613,76 Dollar am Vortag.
+Die Quote steigt, weil der Gewinn seit drei Jahren sinkt: Der Gewinn je Aktie lag 2023 bei 34,63 Dollar, 2024 bei 25,62 Dollar und 2025 bei 18,50 Dollar. Die Dividende wuchs trotzdem. Im Hub steht ein durchschnittliches jährliches Plus von 11,7 Prozent über zehn Jahre und von 16,3 Prozent über fünf Jahre. Die Ausschüttung soll sich am Mittelzyklus orientieren und einzelne schwache Jahre glätten. Die Reihenfolge der Kapitalverwendung ist klar: Zuerst kommt die Dividende, Aktienrückkäufe folgen aus dem übrig bleibenden Cashflow.
 
 Dies ist eine Einordnung und keine Anlageberatung.
 
 ## Quellen
 
 - John Deere: 4Q 2026 Earnings Call, Präsentation vom 25.11.2026
-- SEC-Jahreszahlen (companyfacts) für Deere & Company, über den Aktien-Hub, Geschäftsjahre bis 2025
-- Kursangaben: Yahoo Finance, Stand 25.11.2026, vorbörslich
+- Aktien-Hub von Dividenden-Rechner.de, Kennzahlen Deere & Co (Stand 24.11.2026), [Seite zu Deere](/dividende/deere-und/)
+- SEC-Jahreszahlen (companyfacts) für Deere & Company, über den Aktien-Hub
