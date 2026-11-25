@@ -2,8 +2,6 @@
   "aktiv": false,
   "hinweis": "aktiv erst auf true setzen, wenn in GitHub unter Settings > Pages die Quelle auf 'GitHub Actions' gestellt ist.",
   "versteckt": [
-    "aktien-hub",
-    "aktien",
     "depot",
     "earnings",
     "screener",

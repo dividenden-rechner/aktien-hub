@@ -27,7 +27,7 @@ def nl_nach_absatz(body, box):
     if e < 0: return box + body
     return body[:e + 4] + "\n" + box + body[e + 4:]
 
-NAV = [("rechner", "", "Rechner"), ("aktien", "aktien-hub/", "Aktien"), ("depot", "depot/", "Depot"), ("news", "news/", "News"),
+NAV = [("rechner", "", "Rechner"), ("aktien", "aktien-hub/", "Aktien-Hub"), ("depot", "depot/", "Depot"), ("news", "news/", "News"),
        ("earnings", "earnings/", "Earnings"), ("screener", "screener/", "Screener"),
        ("einfuehrung", "einfuehrung/", "Einführung"), ("grundlagen", "grundlagen/", "Grundlagen"),
        ("fortgeschrittene", "fortgeschrittene/", "Fortgeschrittene")]
