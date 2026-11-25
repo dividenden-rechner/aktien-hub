@@ -834,7 +834,7 @@ async function openStock(sym){
   <div id="nw"></div>
   ${p.description?`<p class="desc">${esc(p.description)}</p>`:""}
   ${p.website?`<p class="desc"><a href="${esc(p.website)}" target="_blank" rel="noopener">${esc(p.website)}</a></p>`:""}`;
-  $("start").hidden=true;hub.hidden=false;msg.textContent="";$("sb").onclick=()=>story(LAST);try{if(pr.length>1)KC.init()}catch(e){console.error(e)}
+  $("start").hidden=true;hub.hidden=false;msg.textContent="";fetch("../data/firmen-slugs.json?v="+Math.floor(Date.now()/36e5)).then(r=>r.ok?r.json():null).then(m=>{const s=m&&m[String(sym).toUpperCase()];if(!s)return;const a=document.createElement("a");a.href="/aktienhub/"+s+"/";a.textContent="Firmenseite im Aktien-Hub →";a.style.cssText="display:inline-block;margin:8px 0;font-weight:600";hub.prepend(a)}).catch(()=>{});$("sb").onclick=()=>story(LAST);try{if(pr.length>1)KC.init()}catch(e){console.error(e)}
   alignCharts();
   const mitFMP=/key/.test(location.hash);
   if(mitFMP)try{initExplorer(sym,p,cur)}catch(e){console.error(e)}
