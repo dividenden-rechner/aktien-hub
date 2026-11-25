@@ -1398,22 +1398,22 @@
 "stand": "2026-11-25",
 "hinweis": "Beschlossene Dividenden aus Pressemitteilungen der Unternehmen (SEC 8-K, EX-99). Ex-Tag = Stichtag (USA, seit Mai 2024).",
 "letzter_lauf": {
-"zeit": "2026-11-25 04:22",
-"kandidaten": 233,
+"zeit": "2026-11-25 15:35",
+"kandidaten": 238,
 "abgerufen": 0,
 "mit_dividende": 0,
 "ki_aufrufe": 0,
 "fehler": [
+"RJF: HTTP Error 403: Forbidden",
+"SW: HTTP Error 403: Forbidden",
+"DE: HTTP Error 403: Forbidden",
+"NWS: HTTP Error 403: Forbidden",
+"NWSA: HTTP Error 403: Forbidden",
+"NWN: HTTP Error 403: Forbidden",
 "GOOG: HTTP Error 403: Forbidden",
 "GOOGL: HTTP Error 403: Forbidden",
 "AMGN: HTTP Error 403: Forbidden",
-"HPQ: HTTP Error 403: Forbidden",
-"UHS: HTTP Error 403: Forbidden",
-"APH: HTTP Error 403: Forbidden",
-"UHT: HTTP Error 403: Forbidden",
-"ZBRA: HTTP Error 403: Forbidden",
-"DELL: HTTP Error 403: Forbidden",
-"STE: HTTP Error 403: Forbidden"
+"HPQ: HTTP Error 403: Forbidden"
 ]
 }
 }

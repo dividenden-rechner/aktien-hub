@@ -1,4 +1,4 @@
-# Japan (EDINET) und Korea (DART): Abdeckung (Stand 2026-11-24)
+# Japan (EDINET) und Korea (DART): Abdeckung (Stand 2026-11-25)
 
 Amtliche Offenlegungssysteme, maschinell ausgelesen, ungeprüft (human_review: pending).
 
