@@ -43,14 +43,14 @@ def get(u):
 
 
 def kontexte(t):
-    """context-id -> (Datum des Stichtags, Zeitraumstart oder None, hat Dimensionen)"""
+    """context-id -> (Stichtag, Zeitraumstart oder None, hat Dimensionen). Präfix (xbrli:) optional."""
     out = {}
-    for m in re.finditer(r"<xbrli:context id=\"([^\"]+)\">(.*?)</xbrli:context>", t, re.S):
+    for m in re.finditer(r"<(?:\w+:)?context\b[^>]*\bid=\"([^\"]+)\"[^>]*>(.*?)</(?:\w+:)?context>", t, re.S):
         cid, body = m.group(1), m.group(2)
-        dim = "<xbrli:segment" in body or "xbrldi:" in body
-        inst = re.search(r"<xbrli:instant>([\d-]+)</xbrli:instant>", body)
-        end = re.search(r"<xbrli:endDate>([\d-]+)</xbrli:endDate>", body)
-        start = re.search(r"<xbrli:startDate>([\d-]+)</xbrli:startDate>", body)
+        dim = bool(re.search(r"<(?:\w+:)?(segment|scenario|explicitMember|typedMember)\b", body))
+        inst = re.search(r"<(?:\w+:)?instant>\s*([\d-]+)\s*<", body)
+        end = re.search(r"<(?:\w+:)?endDate>\s*([\d-]+)\s*<", body)
+        start = re.search(r"<(?:\w+:)?startDate>\s*([\d-]+)\s*<", body)
         if inst:
             out[cid] = (inst.group(1), None, dim)
         elif end:
@@ -62,7 +62,7 @@ def werte(t):
     """(konzeptname, datum, startdatum) -> wert, nur Kontexte ohne Dimensionen"""
     ktx = kontexte(t)
     out = {}
-    for m in re.finditer(r"<idx-cor:([A-Za-z0-9_]+)\s([^>]*?)>([^<]*)</idx-cor:\1>", t):
+    for m in re.finditer(r"<(?:idx-cor:)?([A-Za-z0-9_]+)\s([^>]*?contextRef=[^>]*?)>([^<]*)</(?:idx-cor:)?\1>", t):
         name, attrs, val = m.group(1), m.group(2), m.group(3)
         c = re.search(r'contextRef="([^"]+)"', attrs)
         if not c or c.group(1) not in ktx:
