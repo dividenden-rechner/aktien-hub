@@ -58,6 +58,8 @@ def main():
         try:
             daten = hole(s)
         except urllib.error.HTTPError as e:
+            if e.code == 429:          # Tageslimit oder Minutenlimit erreicht: Lauf beenden, nichts merken
+                print("Abrufgrenze (429) erreicht, Lauf endet"); break
             status[s] = {"stand": heute.isoformat(), "fehler": e.code}; fehl += 1
         except Exception as e:
             status[s] = {"stand": heute.isoformat(), "fehler": str(e)[:80]}; fehl += 1
@@ -68,7 +70,7 @@ def main():
                           open(os.path.join(ORD, s + ".json"), "w", encoding="utf-8"), ensure_ascii=False, separators=(",", ":"))
                 ok += 1
                 status.pop(s, None)
-        time.sleep(0.2)
+        time.sleep(1.2)   # unter dem Minutenlimit bleiben
     json.dump(status, open(status_p, "w", encoding="utf-8"), ensure_ascii=False, indent=0, sort_keys=True)
     print(f"geholt: {ok}, abgelehnt/fehlerhaft: {fehl}")
 
