@@ -31,6 +31,11 @@
 "slug": "costco-wholesale"
 },
 {
+"sym": "7203.T",
+"name": "Toyota",
+"slug": "toyota"
+},
+{
 "sym": "CI",
 "name": "The Cigna Group",
 "slug": "cigna-group"
@@ -99,6 +104,11 @@
 "sym": "MBG.DE",
 "name": "Mercedes-Benz Group",
 "slug": "mercedes-benz-group"
+},
+{
+"sym": "7267.T",
+"name": "Honda",
+"slug": "honda"
 },
 {
 "sym": "MU",
@@ -236,6 +246,16 @@
 "slug": "progressive"
 },
 {
+"sym": "8001.T",
+"name": "Itochu",
+"slug": "itochu"
+},
+{
+"sym": "5020.T",
+"name": "ENEOS",
+"slug": "eneos"
+},
+{
 "sym": "SIE.DE",
 "name": "Siemens",
 "slug": "siemens"
@@ -246,9 +266,19 @@
 "slug": "e-on"
 },
 {
+"sym": "8306.T",
+"name": "Mitsubishi UFJ Financial",
+"slug": "mitsubishi-ufj-financial"
+},
+{
 "sym": "C",
 "name": "Citigroup Inc",
 "slug": "citigroup"
+},
+{
+"sym": "9432.T",
+"name": "NTT",
+"slug": "ntt"
 },
 {
 "sym": "WFC",
@@ -256,9 +286,19 @@
 "slug": "wells-fargo-und"
 },
 {
+"sym": "8031.T",
+"name": "Mitsui & Co",
+"slug": "mitsui-und"
+},
+{
 "sym": "DG.PA",
 "name": "Vinci",
 "slug": "vinci"
+},
+{
+"sym": "6758.T",
+"name": "Sony Group",
+"slug": "sony-group"
 },
 {
 "sym": "ENEL.MI",
@@ -306,9 +346,24 @@
 "slug": "accenture"
 },
 {
+"sym": "8015.T",
+"name": "Toyota Tsusho Corporation",
+"slug": "toyota-tsusho"
+},
+{
 "sym": "AXP",
 "name": "American Express Co",
 "slug": "american-express"
+},
+{
+"sym": "6178.T",
+"name": "JAPAN POST HOLDINGS Co.,Ltd.",
+"slug": "japan-post-holdings"
+},
+{
+"sym": "8750.T",
+"name": "Daiichi Life Group,Inc.",
+"slug": "daiichi-life-group"
 },
 {
 "sym": "MS",
@@ -334,6 +389,16 @@
 "sym": "ORCL",
 "name": "Oracle Corp",
 "slug": "oracle"
+},
+{
+"sym": "8267.T",
+"name": "Aeon Co.,Ltd.",
+"slug": "aeon"
+},
+{
+"sym": "3382.T",
+"name": "Seven & i Holdings Co.,Ltd.",
+"slug": "seven-und-i-holdings"
 },
 {
 "sym": "BAS.DE",
@@ -381,6 +446,11 @@
 "slug": "bouygues"
 },
 {
+"sym": "6501.T",
+"name": "Hitachi",
+"slug": "hitachi"
+},
+{
 "sym": "PRU",
 "name": "Prudential Financial Inc",
 "slug": "prudential-financial"
@@ -414,6 +484,16 @@
 "sym": "RIO",
 "name": "Rio Tinto Plc",
 "slug": "rio-tinto"
+},
+{
+"sym": "8316.T",
+"name": "Sumitomo Mitsui Financial",
+"slug": "sumitomo-mitsui-financial"
+},
+{
+"sym": "8411.T",
+"name": "Mizuho Financial",
+"slug": "mizuho-financial"
 },
 {
 "sym": "NOVN.SW",
@@ -471,6 +551,16 @@
 "slug": "saint-gobain"
 },
 {
+"sym": "6752.T",
+"name": "Panasonic Holdings Corporation",
+"slug": "panasonic-holdings"
+},
+{
+"sym": "8002.T",
+"name": "Marubeni",
+"slug": "marubeni"
+},
+{
 "sym": "BAYN.DE",
 "name": "Bayer",
 "slug": "bayer"
@@ -516,6 +606,11 @@
 "slug": "volvo-volvo-group"
 },
 {
+"sym": "8766.T",
+"name": "Tokio Marine",
+"slug": "tokio-marine"
+},
+{
 "sym": "CPG.L",
 "name": "Compass Group Plc",
 "slug": "compass-group"
@@ -539,6 +634,11 @@
 "sym": "NVO",
 "name": "NOVO NORDISK A/S",
 "slug": "novo-nordisk"
+},
+{
+"sym": "6902.T",
+"name": "Denso",
+"slug": "denso"
 },
 {
 "sym": "TMO",
@@ -566,6 +666,11 @@
 "slug": "inditex"
 },
 {
+"sym": "8053.T",
+"name": "Sumitomo Corp",
+"slug": "sumitomo"
+},
+{
 "sym": "LHA.DE",
 "name": "Deutsche Lufthansa AG",
 "slug": "deutsche-lufthansa"
@@ -591,6 +696,11 @@
 "slug": "gsk"
 },
 {
+"sym": "9984.T",
+"name": "SoftBank Group",
+"slug": "softbank-group"
+},
+{
 "sym": "IMB.L",
 "name": "Imperial Brands",
 "slug": "imperial-brands"
@@ -609,6 +719,11 @@
 "sym": "CRM",
 "name": "Salesforce, Inc.",
 "slug": "salesforce"
+},
+{
+"sym": "8725.T",
+"name": "MS&AD Insurance",
+"slug": "ms-und-ad-insurance"
 },
 {
 "sym": "PM",
@@ -631,6 +746,11 @@
 "slug": "porsche-vz"
 },
 {
+"sym": "7269.T",
+"name": "Suzuki Motor Corporation",
+"slug": "suzuki-motor"
+},
+{
 "sym": "JMT.LS",
 "name": "Jerónimo Martins",
 "slug": "jernimo-martins"
@@ -644,6 +764,11 @@
 "sym": "TEF.MC",
 "name": "Telefónica",
 "slug": "telefnica"
+},
+{
+"sym": "9434.T",
+"name": "SoftBank Corp",
+"slug": "softbank"
 },
 {
 "sym": "GEV",
@@ -671,9 +796,19 @@
 "slug": "bae-systems"
 },
 {
+"sym": "6503.T",
+"name": "Mitsubishi Electric Corporation",
+"slug": "mitsubishi-electric"
+},
+{
 "sym": "AMGN",
 "name": "Amgen Inc.",
 "slug": "amgen"
+},
+{
+"sym": "9433.T",
+"name": "KDDI",
+"slug": "kddi"
 },
 {
 "sym": "IAG.MC",
@@ -736,6 +871,11 @@
 "slug": "british-american-tobacco-p-l-c"
 },
 {
+"sym": "8630.T",
+"name": "Sompo Holdings",
+"slug": "sompo-holdings"
+},
+{
 "sym": "ABBN.SW",
 "name": "ABB",
 "slug": "abb"
@@ -771,9 +911,24 @@
 "slug": "duke-energy"
 },
 {
+"sym": "6367.T",
+"name": "Daikin",
+"slug": "daikin"
+},
+{
+"sym": "7011.T",
+"name": "Mitsubishi Heavy Industries,Ltd.",
+"slug": "mitsubishi-heavy-industries"
+},
+{
 "sym": "SW",
 "name": "Smurfit Westrock plc",
 "slug": "smurfit-westrock"
+},
+{
+"sym": "7261.T",
+"name": "Mazda Motor Corporation",
+"slug": "mazda-motor"
 },
 {
 "sym": "FERG",
@@ -786,9 +941,19 @@
 "slug": "nrg-energy"
 },
 {
+"sym": "7270.T",
+"name": "Subaru Corporation",
+"slug": "subaru"
+},
+{
 "sym": "BN.PA",
 "name": "Danone",
 "slug": "danone"
+},
+{
+"sym": "8604.T",
+"name": "Nomura Holdings, Inc.",
+"slug": "nomura-holdings"
 },
 {
 "sym": "AI.PA",
@@ -846,6 +1011,11 @@
 "slug": "hartford-insurance-group"
 },
 {
+"sym": "4502.T",
+"name": "Takeda",
+"slug": "takeda"
+},
+{
 "sym": "ING",
 "name": "ING GROEP NV",
 "slug": "ing-groep"
@@ -854,6 +1024,11 @@
 "sym": "LUV",
 "name": "Southwest Airlines Co",
 "slug": "southwest-airlines"
+},
+{
+"sym": "5108.T",
+"name": "Bridgestone Corporation",
+"slug": "bridgestone"
 },
 {
 "sym": "RR.L",
@@ -889,6 +1064,11 @@
 "sym": "OMV.VI",
 "name": "OMV",
 "slug": "omv"
+},
+{
+"sym": "1928.T",
+"name": "Sekisui House,Ltd.",
+"slug": "sekisui-house"
 },
 {
 "sym": "SW.PA",
@@ -931,6 +1111,11 @@
 "slug": "constellation-energy"
 },
 {
+"sym": "9503.T",
+"name": "The Kansai Electric Power Company,Incorporated",
+"slug": "kansai-electric-power"
+},
+{
 "sym": "LYG",
 "name": "Lloyds Banking Group plc",
 "slug": "lloyds-banking-group"
@@ -964,6 +1149,11 @@
 "sym": "UNP",
 "name": "Union Pacific Corp",
 "slug": "union-pacific"
+},
+{
+"sym": "6301.T",
+"name": "Komatsu",
+"slug": "komatsu"
 },
 {
 "sym": "EXC",
@@ -1004,6 +1194,11 @@
 "sym": "CFR.SW",
 "name": "Richemont",
 "slug": "richemont"
+},
+{
+"sym": "4188.T",
+"name": "Mitsubishi Chemical Group Corporation",
+"slug": "mitsubishi-chemical-group"
 },
 {
 "sym": "LRCX",
@@ -1071,6 +1266,11 @@
 "slug": "marks-and-spencer-group-p-l-c"
 },
 {
+"sym": "6701.T",
+"name": "NEC Corporation",
+"slug": "nec"
+},
+{
 "sym": "CDW",
 "name": "Cdw Corp",
 "slug": "cdw"
@@ -1079,6 +1279,11 @@
 "sym": "HEN3.DE",
 "name": "Henkel Vz",
 "slug": "henkel-vz"
+},
+{
+"sym": "9502.T",
+"name": "Chubu Electric Power Company,Incorporated",
+"slug": "chubu-electric-power"
 },
 {
 "sym": "HM-B.ST",
@@ -1096,9 +1301,24 @@
 "slug": "acciona"
 },
 {
+"sym": "6702.T",
+"name": "Fujitsu Limited",
+"slug": "fujitsu"
+},
+{
 "sym": "AEP",
 "name": "American Electric Power Company, Inc.",
 "slug": "american-electric-power"
+},
+{
+"sym": "8795.T",
+"name": "T&D Holdings, Inc.",
+"slug": "t-und-d-holdings"
+},
+{
+"sym": "7202.T",
+"name": "ISUZU MOTORS LIMITED",
+"slug": "isuzu-motors"
 },
 {
 "sym": "NOK",
@@ -1149,6 +1369,11 @@
 "sym": "NHY.OL",
 "name": "Norsk Hydro",
 "slug": "norsk-hydro"
+},
+{
+"sym": "4901.T",
+"name": "FUJIFILM Holdings Corporation",
+"slug": "fujifilm-holdings"
 },
 {
 "sym": "ALO.PA",
@@ -1211,14 +1436,29 @@
 "slug": "leonardo-societa-per-azioni"
 },
 {
+"sym": "9020.T",
+"name": "East Japan Railway Company",
+"slug": "east-japan-railway"
+},
+{
 "sym": "EIX",
 "name": "EDISON INTERNATIONAL",
 "slug": "edison-international"
 },
 {
+"sym": "3407.T",
+"name": "Asahi Kasei Corporation",
+"slug": "asahi-kasei"
+},
+{
 "sym": "RSG",
 "name": "Republic Services, Inc.",
 "slug": "republic-services"
+},
+{
+"sym": "6326.T",
+"name": "Kubota Corporation",
+"slug": "kubota"
 },
 {
 "sym": "HOLN.SW",
@@ -1251,9 +1491,19 @@
 "slug": "loews"
 },
 {
+"sym": "7211.T",
+"name": "Mitsubishi Motors Corporation",
+"slug": "mitsubishi-motors"
+},
+{
 "sym": "STLD",
 "name": "Steel Dynamics, Inc.",
 "slug": "steel-dynamics"
+},
+{
+"sym": "2502.T",
+"name": "Asahi Group Holdings,Ltd.",
+"slug": "asahi-group-holdings"
 },
 {
 "sym": "SCMN.SW",
@@ -1264,6 +1514,11 @@
 "sym": "BARN.SW",
 "name": "Barry Callebaut",
 "slug": "barry-callebaut"
+},
+{
+"sym": "9531.T",
+"name": "Tokyo Gas Co.,Ltd.",
+"slug": "tokyo-gas"
 },
 {
 "sym": "VST",
@@ -1319,6 +1574,11 @@
 "sym": "PHM",
 "name": "Pultegroup, Inc.",
 "slug": "pultegroup"
+},
+{
+"sym": "2768.T",
+"name": "Sojitz Corporation",
+"slug": "sojitz"
 },
 {
 "sym": "OMC",
@@ -1411,6 +1671,21 @@
 "slug": "atlas-copco"
 },
 {
+"sym": "7752.T",
+"name": "Ricoh Company,Ltd.",
+"slug": "ricoh"
+},
+{
+"sym": "1802.T",
+"name": "Obayashi Corporation",
+"slug": "obayashi"
+},
+{
+"sym": "3402.T",
+"name": "Toray Industries,Inc.",
+"slug": "toray-industries"
+},
+{
 "sym": "URI",
 "name": "United Rentals, Inc.",
 "slug": "united-rentals"
@@ -1426,9 +1701,19 @@
 "slug": "infineon"
 },
 {
+"sym": "7272.T",
+"name": "Yamaha Motor Co.,Ltd.",
+"slug": "yamaha-motor"
+},
+{
 "sym": "J",
 "name": "Jacobs Solutions Inc.",
 "slug": "jacobs-solutions"
+},
+{
+"sym": "6762.T",
+"name": "TDK Corporation",
+"slug": "tdk"
 },
 {
 "sym": "GLW",
@@ -1461,9 +1746,34 @@
 "slug": "a2a"
 },
 {
+"sym": "7532.T",
+"name": "Pan Pacific International Holdings Corporation",
+"slug": "pan-pacific-international-holdings"
+},
+{
+"sym": "8035.T",
+"name": "Tokyo Electron Limited",
+"slug": "tokyo-electron"
+},
+{
+"sym": "5406.T",
+"name": "Kobe Steel,Ltd.",
+"slug": "kobe-steel"
+},
+{
+"sym": "2503.T",
+"name": "Kirin Holdings Company,Limited",
+"slug": "kirin-holdings"
+},
+{
 "sym": "ADI",
 "name": "Analog Devices, Inc.",
 "slug": "analog-devices"
+},
+{
+"sym": "4063.T",
+"name": "Shin-Etsu Chemical",
+"slug": "shin-etsu-chemical"
 },
 {
 "sym": "5CI.DE",
@@ -1481,6 +1791,11 @@
 "slug": "firstenergy"
 },
 {
+"sym": "8801.T",
+"name": "Mitsui Fudosan",
+"slug": "mitsui-fudosan"
+},
+{
 "sym": "EL",
 "name": "Estee Lauder Companies Inc",
 "slug": "estee-lauder-companies"
@@ -1491,9 +1806,19 @@
 "slug": "diamondback-energy"
 },
 {
+"sym": "9101.T",
+"name": "NYK Line",
+"slug": "nyk-line"
+},
+{
 "sym": "WMB",
 "name": "Williams Companies, Inc.",
 "slug": "williams-companies"
+},
+{
+"sym": "9506.T",
+"name": "Tohoku Electric Power Company,Incorporated",
+"slug": "tohoku-electric-power"
 },
 {
 "sym": "ASSA-B.ST",
@@ -1514,6 +1839,11 @@
 "sym": "WRB",
 "name": "Berkley W R Corp",
 "slug": "berkley-w-r"
+},
+{
+"sym": "4005.T",
+"name": "Sumitomo Chemical Company,Limited",
+"slug": "sumitomo-chemical"
 },
 {
 "sym": "BCS",
@@ -1611,6 +1941,11 @@
 "slug": "essity"
 },
 {
+"sym": "4503.T",
+"name": "Astellas Pharma Inc.",
+"slug": "astellas-pharma"
+},
+{
 "sym": "KBC.BR",
 "name": "KBC",
 "slug": "kbc"
@@ -1651,14 +1986,34 @@
 "slug": "entergy"
 },
 {
+"sym": "5201.T",
+"name": "AGC Inc.",
+"slug": "agc"
+},
+{
 "sym": "WDC",
 "name": "Western Digital Corporation",
 "slug": "western-digital"
 },
 {
+"sym": "1803.T",
+"name": "Shimizu Corporation",
+"slug": "shimizu"
+},
+{
 "sym": "AIZ",
 "name": "Assurant, Inc.",
 "slug": "assurant"
+},
+{
+"sym": "4689.T",
+"name": "LY Corporation",
+"slug": "ly"
+},
+{
+"sym": "9532.T",
+"name": "Osaka Gas Co.,Ltd.",
+"slug": "osaka-gas"
 },
 {
 "sym": "GRS298343005",
@@ -1674,6 +2029,21 @@
 "sym": "ICE",
 "name": "Intercontinental Exchange, Inc.",
 "slug": "intercontinental-exchange"
+},
+{
+"sym": "9201.T",
+"name": "Japan Airlines Co.,Ltd.",
+"slug": "japan-airlines"
+},
+{
+"sym": "1605.T",
+"name": "Inpex Corporation",
+"slug": "inpex"
+},
+{
+"sym": "9022.T",
+"name": "Central Japan Railway Company",
+"slug": "central-japan-railway"
 },
 {
 "sym": "CBK.DE",
@@ -1776,9 +2146,24 @@
 "slug": "sandvik"
 },
 {
+"sym": "3861.T",
+"name": "Oji Holdings Corporation",
+"slug": "oji-holdings"
+},
+{
 "sym": "MSI",
 "name": "Motorola Solutions, Inc.",
 "slug": "motorola-solutions"
+},
+{
+"sym": "9021.T",
+"name": "West Japan Railway Company",
+"slug": "west-japan-railway"
+},
+{
+"sym": "5711.T",
+"name": "Mitsubishi Materials Corporation",
+"slug": "mitsubishi-materials"
 },
 {
 "sym": "COLR.BR",
@@ -1791,9 +2176,19 @@
 "slug": "swire-pacific"
 },
 {
+"sym": "4568.T",
+"name": "Daiichi Sankyo",
+"slug": "daiichi-sankyo"
+},
+{
 "sym": "SPIE.PA",
 "name": "SPIE SA",
 "slug": "spie"
+},
+{
+"sym": "7911.T",
+"name": "TOPPAN Holdings Inc.",
+"slug": "toppan-holdings"
 },
 {
 "sym": "FNAC.PA",
@@ -1836,6 +2231,16 @@
 "slug": "quest-diagnostics"
 },
 {
+"sym": "8802.T",
+"name": "Mitsubishi Estate Company,Limited",
+"slug": "mitsubishi-estate"
+},
+{
+"sym": "5713.T",
+"name": "Sumitomo Metal Mining Co.,Ltd.",
+"slug": "sumitomo-metal-mining"
+},
+{
 "sym": "IFF",
 "name": "International Flavors & Fragrances Inc",
 "slug": "international-flavors-und-fragrances"
@@ -1856,6 +2261,11 @@
 "slug": "beiersdorf"
 },
 {
+"sym": "2587.T",
+"name": "Suntory Beverage & Food Limited",
+"slug": "suntory-beverage-und-food"
+},
+{
 "sym": "ORSTED.CO",
 "name": "ØRSTED A/S",
 "slug": "rsted"
@@ -1871,6 +2281,11 @@
 "slug": "american-tower"
 },
 {
+"sym": "9831.T",
+"name": "Yamada Holdings Co.,Ltd.",
+"slug": "yamada-holdings"
+},
+{
 "sym": "GRS434003000",
 "name": "ΔΗΜΌΣΙΑ ΕΠΙΧΕΊΡΗΣΗ ΗΛΕΚΤΡΙΣΜΟΎ ΑΝΏΝΥΜΗ ΕΤΑΙΡΕΊΑ",
 "slug": "grs434003000"
@@ -1879,6 +2294,11 @@
 "sym": "ES0122060314",
 "name": "FOMENTO DE CONSTRUCCIONES Y CONTRATAS S.A.",
 "slug": "fomento-de-construcciones-y-contratas-s-a"
+},
+{
+"sym": "4452.T",
+"name": "Kao Corporation",
+"slug": "kao"
 },
 {
 "sym": "UPM.HE",
@@ -1891,6 +2311,16 @@
 "slug": "transdigm-group"
 },
 {
+"sym": "7974.T",
+"name": "Nintendo",
+"slug": "nintendo"
+},
+{
+"sym": "6479.T",
+"name": "MINEBEA MITSUMI Inc.",
+"slug": "minebea-mitsumi"
+},
+{
 "sym": "ALC.SW",
 "name": "Alcon",
 "slug": "alcon"
@@ -1899,6 +2329,16 @@
 "sym": "LR.PA",
 "name": "Legrand",
 "slug": "legrand"
+},
+{
+"sym": "7013.T",
+"name": "IHI Corporation",
+"slug": "ihi"
+},
+{
+"sym": "6981.T",
+"name": "Murata",
+"slug": "murata"
 },
 {
 "sym": "0142.HK",
@@ -1914,6 +2354,16 @@
 "sym": "STERV.HE",
 "name": "Stora Enso Oyj",
 "slug": "stora-enso"
+},
+{
+"sym": "9104.T",
+"name": "Mitsui OSK Lines",
+"slug": "mitsui-osk-lines"
+},
+{
+"sym": "2802.T",
+"name": "Ajinomoto Co.,Inc.",
+"slug": "ajinomoto"
 },
 {
 "sym": "AKE.PA",
@@ -1946,6 +2396,11 @@
 "slug": "mtu-aero-engines"
 },
 {
+"sym": "7912.T",
+"name": "Dai Nippon Printing Co.,Ltd.",
+"slug": "dai-nippon-printing"
+},
+{
 "sym": "ZTS",
 "name": "Zoetis Inc.",
 "slug": "zoetis"
@@ -1964,6 +2419,11 @@
 "sym": "EQIX",
 "name": "Equinix Inc",
 "slug": "equinix"
+},
+{
+"sym": "8601.T",
+"name": "Daiwa Securities Group Inc.",
+"slug": "daiwa-securities-group"
 },
 {
 "sym": "PPL",
@@ -2024,6 +2484,11 @@
 "sym": "SKF-B.ST",
 "name": "SKF",
 "slug": "skf"
+},
+{
+"sym": "6724.T",
+"name": "Seiko Epson Corporation",
+"slug": "seiko-epson"
 },
 {
 "sym": "AVY",
@@ -2096,6 +2561,11 @@
 "slug": "cms-energy"
 },
 {
+"sym": "8308.T",
+"name": "Resona Holdings, Inc.",
+"slug": "resona-holdings"
+},
+{
 "sym": "MF.PA",
 "name": "WENDEL",
 "slug": "wendel"
@@ -2156,6 +2626,11 @@
 "slug": "tapestry"
 },
 {
+"sym": "1808.T",
+"name": "HASEKO Corporation",
+"slug": "haseko"
+},
+{
 "sym": "VMC",
 "name": "Vulcan Materials Company",
 "slug": "vulcan-materials"
@@ -2164,6 +2639,11 @@
 "sym": "VIO.BR",
 "name": "VIOHALCO",
 "slug": "viohalco"
+},
+{
+"sym": "9735.T",
+"name": "Secom Co.,Ltd.",
+"slug": "secom"
 },
 {
 "sym": "TELIA.ST",
@@ -2201,6 +2681,11 @@
 "slug": "telenor"
 },
 {
+"sym": "5101.T",
+"name": "The Yokohama Rubber Company,Limited",
+"slug": "yokohama-rubber"
+},
+{
 "sym": "MCO",
 "name": "Moodys Corp",
 "slug": "moodys"
@@ -2209,6 +2694,11 @@
 "sym": "GPN",
 "name": "Global Payments Inc.",
 "slug": "global-payments"
+},
+{
+"sym": "6504.T",
+"name": "Fuji Electric Co.,Ltd.",
+"slug": "fuji-electric"
 },
 {
 "sym": "SAAB-B.ST",
@@ -2251,6 +2741,11 @@
 "slug": "syensqo"
 },
 {
+"sym": "3863.T",
+"name": "Nippon Paper Industries Co.,Ltd.",
+"slug": "nippon-paper-industries"
+},
+{
 "sym": "BR",
 "name": "Broadridge Financial Solutions, Inc.",
 "slug": "broadridge-financial-solutions"
@@ -2259,6 +2754,11 @@
 "sym": "AME",
 "name": "Ametek Inc/",
 "slug": "ametek"
+},
+{
+"sym": "2269.T",
+"name": "Meiji Holdings Co.,Ltd.",
+"slug": "meiji-holdings"
 },
 {
 "sym": "VNA.DE",
@@ -2311,9 +2811,19 @@
 "slug": "amadeus-it-group-sociedad-anonima"
 },
 {
+"sym": "4543.T",
+"name": "Terumo Corporation",
+"slug": "terumo"
+},
+{
 "sym": "CF",
 "name": "Cf Industries Holdings, Inc.",
 "slug": "cf-industries-holdings"
+},
+{
+"sym": "6857.T",
+"name": "Advantest Corporation",
+"slug": "advantest"
 },
 {
 "sym": "BVI.PA",
@@ -2391,9 +2901,19 @@
 "slug": "dupont-de-nemours"
 },
 {
+"sym": "4902.T",
+"name": "Konica Minolta,Inc.",
+"slug": "konica-minolta"
+},
+{
 "sym": "DSY.PA",
 "name": "DASSAULT SYSTEMES",
 "slug": "dassault-systemes"
+},
+{
+"sym": "9005.T",
+"name": "Tokyu Corporation",
+"slug": "tokyu"
 },
 {
 "sym": "ALFA.ST",
@@ -2451,14 +2971,34 @@
 "slug": "paychex"
 },
 {
+"sym": "6988.T",
+"name": "Nitto Denko Corporation",
+"slug": "nitto-denko"
+},
+{
 "sym": "AAF.L",
 "name": "Airtel Africa Plc",
 "slug": "airtel-africa"
 },
 {
+"sym": "4042.T",
+"name": "Tosoh Corporation",
+"slug": "tosoh"
+},
+{
+"sym": "6770.T",
+"name": "Alps Alpine Co.,Ltd.",
+"slug": "alps-alpine"
+},
+{
 "sym": "SPG",
 "name": "Simon Property Group, Inc.",
 "slug": "simon-property-group"
+},
+{
+"sym": "7733.T",
+"name": "Olympus Corporation",
+"slug": "olympus"
 },
 {
 "sym": "KPN.AS",
@@ -2521,9 +3061,24 @@
 "slug": "telekom-austria-aktiengesellschaft"
 },
 {
+"sym": "4911.T",
+"name": "Shiseido Company,Limited",
+"slug": "shiseido"
+},
+{
 "sym": "EFX",
 "name": "Equifax Inc",
 "slug": "equifax"
+},
+{
+"sym": "6861.T",
+"name": "Keyence",
+"slug": "keyence"
+},
+{
+"sym": "5901.T",
+"name": "Toyo Seikan Group Holdings,Ltd.",
+"slug": "toyo-seikan-group-holdings"
 },
 {
 "sym": "EPI-A.ST",
@@ -2561,6 +3116,11 @@
 "slug": "sbm-offshore-n-v"
 },
 {
+"sym": "1332.T",
+"name": "Nissui Corporation",
+"slug": "nissui"
+},
+{
 "sym": "HUBB",
 "name": "Hubbell Inc",
 "slug": "hubbell"
@@ -2584,6 +3144,11 @@
 "sym": "METSO.HE",
 "name": "METSO OYJ",
 "slug": "metso"
+},
+{
+"sym": "6471.T",
+"name": "NSK Ltd.",
+"slug": "nsk"
 },
 {
 "sym": "PEAB-B.ST",
@@ -2616,6 +3181,16 @@
 "slug": "old-dominion-freight-line"
 },
 {
+"sym": "4751.T",
+"name": "CyberAgent,Inc.",
+"slug": "cyberagent"
+},
+{
+"sym": "3401.T",
+"name": "TEIJIN LIMITED",
+"slug": "teijin"
+},
+{
 "sym": "PRX.AS",
 "name": "Prosus",
 "slug": "prosus"
@@ -2626,9 +3201,19 @@
 "slug": "fortum"
 },
 {
+"sym": "2002.T",
+"name": "Nisshin Seifun Group Inc.",
+"slug": "nisshin-seifun-group"
+},
+{
 "sym": "SY1.DE",
 "name": "Symrise",
 "slug": "symrise"
+},
+{
+"sym": "6954.T",
+"name": "Fanuc Corporation",
+"slug": "fanuc"
 },
 {
 "sym": "HAS",
@@ -2644,6 +3229,11 @@
 "sym": "ARCAD.AS",
 "name": "ARCADIS N.V.",
 "slug": "arcadis-n-v"
+},
+{
+"sym": "6273.T",
+"name": "Smc Corporation",
+"slug": "smc"
 },
 {
 "sym": "ELIS.PA",
@@ -2691,9 +3281,29 @@
 "slug": "american-water-works"
 },
 {
+"sym": "4307.T",
+"name": "Nomura Research Institute,Ltd.",
+"slug": "nomura-research-institute"
+},
+{
+"sym": "9076.T",
+"name": "Seino Holdings Co.,Ltd.",
+"slug": "seino-holdings"
+},
+{
 "sym": "VHM.DE",
 "name": "SACYR SA",
 "slug": "sacyr"
+},
+{
+"sym": "4118.T",
+"name": "Kaneka Corporation",
+"slug": "kaneka"
+},
+{
+"sym": "3405.T",
+"name": "Kuraray Co.,Ltd.",
+"slug": "kuraray"
 },
 {
 "sym": "TW.L",
@@ -2716,6 +3326,11 @@
 "slug": "galenica"
 },
 {
+"sym": "7741.T",
+"name": "HOYA",
+"slug": "hoya"
+},
+{
 "sym": "BZU.MI",
 "name": "Buzzi",
 "slug": "buzzi"
@@ -2724,6 +3339,11 @@
 "sym": "DPZ",
 "name": "Domino’s Pizza, Inc.",
 "slug": "dominos-pizza"
+},
+{
+"sym": "7453.T",
+"name": "Ryohin Keikaku Co.,Ltd.",
+"slug": "ryohin-keikaku"
 },
 {
 "sym": "PSN.L",
@@ -2736,6 +3356,11 @@
 "slug": "gudang-garam-tbk"
 },
 {
+"sym": "8303.T",
+"name": "SBI Shinsei Bank,Limited",
+"slug": "sbi-shinsei-bank"
+},
+{
 "sym": "FRA.DE",
 "name": "Fraport AG",
 "slug": "fraport"
@@ -2744,6 +3369,11 @@
 "sym": "PSA",
 "name": "Public Storage",
 "slug": "public-storage"
+},
+{
+"sym": "6645.T",
+"name": "OMRON Corporation",
+"slug": "omron"
 },
 {
 "sym": "ES0129743318",
@@ -2774,6 +3404,21 @@
 "sym": "CLN.SW",
 "name": "Clariant",
 "slug": "clariant"
+},
+{
+"sym": "2801.T",
+"name": "Kikkoman Corporation",
+"slug": "kikkoman"
+},
+{
+"sym": "5714.T",
+"name": "Dowa Holdings Co.,Ltd.",
+"slug": "dowa-holdings"
+},
+{
+"sym": "1963.T",
+"name": "Jgc Holdings Corporation",
+"slug": "jgc-holdings"
 },
 {
 "sym": "PSON.L",
@@ -2816,6 +3461,11 @@
 "slug": "husqvarna"
 },
 {
+"sym": "2871.T",
+"name": "Nichirei Corporation",
+"slug": "nichirei"
+},
+{
 "sym": "ATE.PA",
 "name": "ALTEN",
 "slug": "alten"
@@ -2856,14 +3506,29 @@
 "slug": "sonova"
 },
 {
+"sym": "7456.T",
+"name": "MATSUDA SANGYO Co.,Ltd.",
+"slug": "matsuda-sangyo"
+},
+{
 "sym": "SUN.SW",
 "name": "Sulzer",
 "slug": "sulzer"
 },
 {
+"sym": "4661.T",
+"name": "Oriental Land",
+"slug": "oriental-land"
+},
+{
 "sym": "CCI",
 "name": "Crown Castle Inc.",
 "slug": "crown-castle"
+},
+{
+"sym": "7731.T",
+"name": "Nikon Corporation",
+"slug": "nikon"
 },
 {
 "sym": "MYM.DE",
@@ -2879,6 +3544,11 @@
 "sym": "VCT.PA",
 "name": "VICAT",
 "slug": "vicat"
+},
+{
+"sym": "5333.T",
+"name": "NGK Corporation",
+"slug": "ngk"
 },
 {
 "sym": "FTV",
@@ -2914,6 +3584,11 @@
 "sym": "BEKB.BR",
 "name": "NV BEKAERT SA",
 "slug": "bekaert"
+},
+{
+"sym": "7004.T",
+"name": "Kanadevia Corporation",
+"slug": "kanadevia"
 },
 {
 "sym": "BRE.MI",
@@ -2966,6 +3641,11 @@
 "slug": "bilia"
 },
 {
+"sym": "IPN.PA",
+"name": "IPSEN",
+"slug": "ipsen"
+},
+{
 "sym": "SRG.MI",
 "name": "Snam",
 "slug": "snam"
@@ -2981,6 +3661,11 @@
 "slug": "charoen-pokphand-indonesia-tbk"
 },
 {
+"sym": "NAS.OL",
+"name": "NORWEGIAN AIR SHUTTLE ASA",
+"slug": "norwegian-air-shuttle"
+},
+{
 "sym": "WTB.L",
 "name": "Whitbread Plc",
 "slug": "whitbread"
@@ -2991,9 +3676,44 @@
 "slug": "geberit"
 },
 {
+"sym": "7735.T",
+"name": "SCREEN Holdings Co.,Ltd.",
+"slug": "screen-holdings"
+},
+{
+"sym": "6841.T",
+"name": "Yokogawa Electric Corporation",
+"slug": "yokogawa-electric"
+},
+{
+"sym": "ATEA.OL",
+"name": "ATEA ASA",
+"slug": "atea"
+},
+{
+"sym": "VRLA.PA",
+"name": "VERALLIA",
+"slug": "verallia"
+},
+{
 "sym": "ROL",
 "name": "Rollins, Inc.",
 "slug": "rollins"
+},
+{
+"sym": "GRS829003003",
+"name": "ΤΡΑΠΕΖΑ EUROBANK ΑΝΩΝΥΜΗ EΤΑΙΡΕΙΑ",
+"slug": "eurobank-e"
+},
+{
+"sym": "5105.T",
+"name": "Toyo Tire Corporation",
+"slug": "toyo-tire"
+},
+{
+"sym": "NK.PA",
+"name": "IMERYS",
+"slug": "imerys"
 },
 {
 "sym": "SVT.L",
@@ -3001,9 +3721,34 @@
 "slug": "severn-trent"
 },
 {
+"sym": "NL0012650360",
+"name": "RHI Magnesita N.V.",
+"slug": "rhi-magnesita-n-v"
+},
+{
+"sym": "DBG.PA",
+"name": "DERICHEBOURG",
+"slug": "derichebourg"
+},
+{
+"sym": "HLUN-A.CO",
+"name": "H. LUNDBECK A/S",
+"slug": "h-lundbeck"
+},
+{
+"sym": "LSG.OL",
+"name": "Lerøy Seafood Group ASA",
+"slug": "lery-seafood-group"
+},
+{
 "sym": "BXP",
 "name": "Bxp, Inc.",
 "slug": "bxp"
+},
+{
+"sym": "2602.T",
+"name": "The Nisshin OilliO Group,Ltd.",
+"slug": "nisshin-oillio-group"
 },
 {
 "sym": "ASM.AS",
@@ -3026,6 +3771,11 @@
 "slug": "moncler-s-p-a"
 },
 {
+"sym": "3099.T",
+"name": "Isetan Mitsukoshi Holdings Ltd.",
+"slug": "isetan-mitsukoshi-holdings"
+},
+{
 "sym": "UU.L",
 "name": "United Utilities",
 "slug": "united-utilities"
@@ -3034,6 +3784,11 @@
 "sym": "GETI-B.ST",
 "name": "Getinge AB (publ)",
 "slug": "getinge-publ"
+},
+{
+"sym": "FIA1S.HE",
+"name": "FINNAIR OYJ",
+"slug": "finnair"
 },
 {
 "sym": "EXR",
@@ -3071,14 +3826,59 @@
 "slug": "evn"
 },
 {
+"sym": "AFG.OL",
+"name": "AF GRUPPEN ASA",
+"slug": "af-gruppen"
+},
+{
+"sym": "DIM.PA",
+"name": "Sartorius Stedim Biotech",
+"slug": "sartorius-stedim-biotech"
+},
+{
+"sym": "EDEN.PA",
+"name": "EDENRED",
+"slug": "edenred"
+},
+{
+"sym": "KOG.OL",
+"name": "KONGSBERG GRUPPEN ASA",
+"slug": "kongsberg-gruppen"
+},
+{
+"sym": "BOL.PA",
+"name": "BOLLORE SE",
+"slug": "bollore"
+},
+{
 "sym": "TER",
 "name": "Teradyne, Inc.",
 "slug": "teradyne"
 },
 {
+"sym": "HAVAS.AS",
+"name": "Havas N.V.",
+"slug": "havas-n-v"
+},
+{
+"sym": "ACE.MI",
+"name": "ACEA S.P.A.",
+"slug": "acea-s-p-a"
+},
+{
 "sym": "HWDN.L",
 "name": "Howden Joinery",
 "slug": "howden-joinery"
+},
+{
+"sym": "4507.T",
+"name": "Shionogi & Co.,Ltd.",
+"slug": "shionogi-und"
+},
+{
+"sym": "INDT.ST",
+"name": "Indutrade Aktiebolag",
+"slug": "indutrade-aktiebolag"
 },
 {
 "sym": "STMN.SW",
@@ -3091,6 +3891,21 @@
 "slug": "msci"
 },
 {
+"sym": "DNORD.CO",
+"name": "DAMPSKIBSSELSKABET NORDEN A/S",
+"slug": "dampskibsselskabet-norden"
+},
+{
+"sym": "4151.T",
+"name": "Kyowa Kirin Co.,Ltd.",
+"slug": "kyowa-kirin"
+},
+{
+"sym": "9766.T",
+"name": "Konami Group Corporation",
+"slug": "konami-group"
+},
+{
 "sym": "PGHN.SW",
 "name": "Partners Group",
 "slug": "partners-group"
@@ -3101,14 +3916,69 @@
 "slug": "verisk-analytics"
 },
 {
+"sym": "HEIJM.AS",
+"name": "Koninklijke Heijmans N.V.",
+"slug": "koninklijke-heijmans-n-v"
+},
+{
 "sym": "ARE",
 "name": "Alexandria Real Estate Equities, Inc.",
 "slug": "alexandria-real-estate-equities"
 },
 {
+"sym": "6963.T",
+"name": "Rohm Company Limited",
+"slug": "rohm"
+},
+{
+"sym": "KEMIRA.HE",
+"name": "Kemira Oyj",
+"slug": "kemira"
+},
+{
+"sym": "3659.T",
+"name": "NEXON Co.,Ltd.",
+"slug": "nexon"
+},
+{
+"sym": "8253.T",
+"name": "Credit Saison Co.,Ltd.",
+"slug": "credit-saison"
+},
+{
+"sym": "LOOMIS.ST",
+"name": "LOOMIS AB",
+"slug": "loomis"
+},
+{
+"sym": "7951.T",
+"name": "Yamaha Corporation",
+"slug": "yamaha"
+},
+{
+"sym": "BE0974338700",
+"name": "Titan",
+"slug": "titan"
+},
+{
+"sym": "TEL2-A.ST",
+"name": "TELE2 AB",
+"slug": "tele2"
+},
+{
 "sym": "TEL2-B.ST",
 "name": "Tele2",
-"slug": "tele2"
+"slug": "tele2-tel2-b-st"
+},
+{
+"sym": "HU0000073507",
+"name": "Magyar Telekom Távközlési Nyilvánosan Működő Részvénytársaság",
+"slug": "magyar-telekom-tvkoezlsi-nyilvnosan-mkoed-rszvnytrsasg"
+},
+{
+"sym": "EQT.ST",
+"name": "EQT AB",
+"slug": "eqt-eqt-st"
 },
 {
 "sym": "RVTY",
@@ -3131,6 +4001,16 @@
 "slug": "sba-communications"
 },
 {
+"sym": "LUND-B.ST",
+"name": "L E Lundbergföretagen Aktiebolag (publ)",
+"slug": "l-e-lundbergfoeretagen-aktiebolag-publ"
+},
+{
+"sym": "8331.T",
+"name": "The Chiba Bank,Ltd.",
+"slug": "chiba-bank"
+},
+{
 "sym": "MPWR",
 "name": "Monolithic Power Systems, Inc.",
 "slug": "monolithic-power-systems"
@@ -3141,9 +4021,24 @@
 "slug": "salmar"
 },
 {
+"sym": "GRNG.ST",
+"name": "Gränges AB",
+"slug": "graenges"
+},
+{
 "sym": "LIFCO-B.ST",
 "name": "Lifco AB (publ)",
 "slug": "lifco-publ"
+},
+{
+"sym": "BRAV.ST",
+"name": "Bravida Holding AB",
+"slug": "bravida-holding"
+},
+{
+"sym": "LATO-B.ST",
+"name": "Investmentaktiebolaget Latour",
+"slug": "investmentaktiebolaget-latour"
 },
 {
 "sym": "INVH",
@@ -3151,14 +4046,34 @@
 "slug": "invitation-homes"
 },
 {
+"sym": "LT0000115768",
+"name": "AB \"IGNITIS GRUPĖ\"",
+"slug": "ignitis-grup"
+},
+{
 "sym": "HAG.DE",
 "name": "Hensoldt AG",
 "slug": "hensoldt"
 },
 {
+"sym": "REY.MI",
+"name": "REPLY S.P.A.",
+"slug": "reply-s-p-a"
+},
+{
 "sym": "EDV.L",
 "name": "Endeavour Mining Plc",
 "slug": "endeavour-mining"
+},
+{
+"sym": "4912.T",
+"name": "Lion Corporation",
+"slug": "lion"
+},
+{
+"sym": "9007.T",
+"name": "Odakyu Electric Railway Co.,Ltd.",
+"slug": "odakyu-electric-railway"
 },
 {
 "sym": "AMP.MI",
@@ -3174,6 +4089,11 @@
 "sym": "AKRA.JK",
 "name": "PT AKR Corporindo Tbk.",
 "slug": "pt-akr-corporindo-tbk"
+},
+{
+"sym": "AFRY.ST",
+"name": "AFRY AB",
+"slug": "afry"
 },
 {
 "sym": "EDPR.LS",
@@ -3201,9 +4121,24 @@
 "slug": "elisa"
 },
 {
+"sym": "4F1.DE",
+"name": "FLUIDRA S.A.",
+"slug": "fluidra-s-a"
+},
+{
 "sym": "CTEC.L",
 "name": "Convatec Group Plc",
 "slug": "convatec-group"
+},
+{
+"sym": "NL0012294474",
+"name": "Digi Communications N.V.",
+"slug": "digi-communications-n-v"
+},
+{
+"sym": "4061.T",
+"name": "Denka Company Limited",
+"slug": "denka"
 },
 {
 "sym": "EMSN.SW",
@@ -3214,6 +4149,36 @@
 "sym": "PTBA.JK",
 "name": "PT Bukit Asam (Persero) Tbk",
 "slug": "pt-bukit-asam-persero-tbk"
+},
+{
+"sym": "SEM.LS",
+"name": "SEMAPA - SOCIEDADE DE INVESTIMENTO E GESTÃO, SGPS, S.A.",
+"slug": "semapa-sociedade-de-investimento-e-gesto-sgps-s-a"
+},
+{
+"sym": "RBREW.CO",
+"name": "ROYAL UNIBREW A/S",
+"slug": "royal-unibrew"
+},
+{
+"sym": "BB.PA",
+"name": "SOCIETE BIC",
+"slug": "societe-bic"
+},
+{
+"sym": "9602.T",
+"name": "Toho Co.,Ltd",
+"slug": "toho"
+},
+{
+"sym": "CENER.BR",
+"name": "Cenergy Holdings",
+"slug": "cenergy-holdings"
+},
+{
+"sym": "6976.T",
+"name": "Taiyo Yuden Co.,Ltd.",
+"slug": "taiyo-yuden"
 },
 {
 "sym": "SPX.L",
@@ -3231,6 +4196,36 @@
 "slug": "mid-america-apartment-communities"
 },
 {
+"sym": "ADDT-B.ST",
+"name": "Addtech AB",
+"slug": "addtech"
+},
+{
+"sym": "2413.T",
+"name": "M3,Inc.",
+"slug": "m3"
+},
+{
+"sym": "4043.T",
+"name": "Tokuyama Corporation",
+"slug": "tokuyama"
+},
+{
+"sym": "SHOT.ST",
+"name": "Scandic Hotels Group AB",
+"slug": "scandic-hotels-group"
+},
+{
+"sym": "NVG.LS",
+"name": "the Navigator Company, S.A.",
+"slug": "navigator-s-a"
+},
+{
+"sym": "HOLM-A.ST",
+"name": "Holmen Aktiebolag",
+"slug": "holmen-aktiebolag"
+},
+{
 "sym": "KIM",
 "name": "Kimco Realty Corporation",
 "slug": "kimco-realty"
@@ -3246,14 +4241,74 @@
 "slug": "franklin-electric"
 },
 {
+"sym": "QIA.DE",
+"name": "QIAGEN N.V.",
+"slug": "qiagen-n-v"
+},
+{
+"sym": "SI0031102120",
+"name": "KRKA, tovarna zdravil, d.d., Novo mesto",
+"slug": "krka-tovarna-zdravil-d-d-novo-mesto"
+},
+{
+"sym": "9009.T",
+"name": "Keisei Electric Railway Co.,Ltd.",
+"slug": "keisei-electric-railway"
+},
+{
 "sym": "ORNBV.HE",
 "name": "Orion",
 "slug": "orion"
 },
 {
+"sym": "ORNAV.HE",
+"name": "Orion Oyj",
+"slug": "orion-ornav-he"
+},
+{
+"sym": "GRS495003006",
+"name": "ΑΕΡΟΠΟΡΙΑ ΑΙΓΑΙΟΥ ΑΝΩΝΥΜΗ ΑΕΡΟΠΟΡΙΚΗ ΕΤΑΙΡΕΙΑ",
+"slug": "grs495003006"
+},
+{
+"sym": "5301.T",
+"name": "Tokai Carbon Co.,Ltd.",
+"slug": "tokai-carbon"
+},
+{
+"sym": "TIETO.HE",
+"name": "Tieto Oyj",
+"slug": "tieto"
+},
+{
+"sym": "OVS.MI",
+"name": "OVS SPA",
+"slug": "ovs"
+},
+{
+"sym": "ACAD.ST",
+"name": "AcadeMedia AB",
+"slug": "academedia"
+},
+{
 "sym": "FRO.OL",
 "name": "Frontline Plc",
 "slug": "frontline"
+},
+{
+"sym": "ENXP.LS",
+"name": "Euronext N.V.",
+"slug": "euronext-n-v"
+},
+{
+"sym": "FII.PA",
+"name": "LISI",
+"slug": "lisi"
+},
+{
+"sym": "KALMAR.HE",
+"name": "Kalmar Oyj",
+"slug": "kalmar"
 },
 {
 "sym": "REE.MC",
@@ -3266,9 +4321,59 @@
 "slug": "rli"
 },
 {
+"sym": "HPOL-B.ST",
+"name": "HEXPOL AB",
+"slug": "hexpol"
+},
+{
 "sym": "AKER.OL",
 "name": "AKER ASA",
 "slug": "aker"
+},
+{
+"sym": "RATO-B.ST",
+"name": "Ratos AB",
+"slug": "ratos"
+},
+{
+"sym": "ALLEI.ST",
+"name": "Alleima AB",
+"slug": "alleima"
+},
+{
+"sym": "O5G.DE",
+"name": "Cpi Property Group",
+"slug": "cpi-property-group"
+},
+{
+"sym": "GET.PA",
+"name": "GETLINK S.E.",
+"slug": "getlink-s-e"
+},
+{
+"sym": "8252.T",
+"name": "Marui Group Co.,Ltd.",
+"slug": "marui-group"
+},
+{
+"sym": "6952.T",
+"name": "Casio Computer Co.,Ltd.",
+"slug": "casio-computer"
+},
+{
+"sym": "4704.T",
+"name": "Trend Micro Incorporated",
+"slug": "trend-micro"
+},
+{
+"sym": "5631.T",
+"name": "The Japan Steel Works,Ltd.",
+"slug": "japan-steel-works"
+},
+{
+"sym": "9301.T",
+"name": "Mitsubishi Logistics Corporation",
+"slug": "mitsubishi-logistics"
 },
 {
 "sym": "UDR",
@@ -3296,6 +4401,21 @@
 "slug": "verisign"
 },
 {
+"sym": "ASKER.ST",
+"name": "Asker Healthcare Group AB",
+"slug": "asker-healthcare-group"
+},
+{
+"sym": "AT00000AMAG3",
+"name": "AMAG Austria Metall AG",
+"slug": "amag-austria-metall"
+},
+{
+"sym": "VU.PA",
+"name": "VUSIONGROUP",
+"slug": "vusiongroup"
+},
+{
 "sym": "HBAN",
 "name": "Huntington Bancshares Incorporated",
 "slug": "huntington-bancshares"
@@ -3311,9 +4431,44 @@
 "slug": "brunello-cucinelli"
 },
 {
+"sym": "TGS.OL",
+"name": "TGS ASA",
+"slug": "tgs"
+},
+{
+"sym": "GRS432003028",
+"name": "ΑΚTOR ΑΝΏΝΥΜΗ ΕΤΑΙΡΕΊΑ ΣΥΜΜΕΤΟΧΏΝ, ΤΕΧΝΙΚΏΝ ΚΑΙ ΕΝΕΡΓΕΙΑΚΏΝ ΈΡΓΩΝ",
+"slug": "tor"
+},
+{
+"sym": "8304.T",
+"name": "Aozora Bank,Ltd.",
+"slug": "aozora-bank"
+},
+{
+"sym": "TYRES.HE",
+"name": "Nokian Renkaat Oyj",
+"slug": "nokian-renkaat"
+},
+{
+"sym": "EPR.OL",
+"name": "EUROPRIS ASA",
+"slug": "europris"
+},
+{
+"sym": "LOTB.BR",
+"name": "LOTUS BAKERIES",
+"slug": "lotus-bakeries"
+},
+{
 "sym": "STB.OL",
 "name": "STOREBRAND ASA",
 "slug": "storebrand"
+},
+{
+"sym": "DNO.OL",
+"name": "DNO ASA",
+"slug": "dno"
 },
 {
 "sym": "CTT.LS",
@@ -3326,9 +4481,44 @@
 "slug": "tomra-systems"
 },
 {
+"sym": "MMT.PA",
+"name": "METROPOLE TELEVISION",
+"slug": "metropole-television"
+},
+{
+"sym": "MTRS.ST",
+"name": "Munters Group AB",
+"slug": "munters-group"
+},
+{
+"sym": "HAUTO.OL",
+"name": "HÖEGH AUTOLINERS ASA",
+"slug": "hoeegh-autoliners"
+},
+{
+"sym": "SANOMA.HE",
+"name": "Sanoma Oyj",
+"slug": "sanoma"
+},
+{
+"sym": "PLX.PA",
+"name": "PLUXEE N.V.",
+"slug": "pluxee-n-v"
+},
+{
 "sym": "VPK.AS",
 "name": "Koninklijke Vopak N.V.",
 "slug": "koninklijke-vopak-n-v"
+},
+{
+"sym": "CRBN.AS",
+"name": "Corbion N.V.",
+"slug": "corbion-n-v"
+},
+{
+"sym": "GN.CO",
+"name": "GN STORE NORD A/S",
+"slug": "gn-store-nord"
 },
 {
 "sym": "RAA.DE",
@@ -3349,6 +4539,11 @@
 "sym": "VACN.SW",
 "name": "VAT Group",
 "slug": "vat-group"
+},
+{
+"sym": "8697.T",
+"name": "Japan Exchange Group,Inc.",
+"slug": "japan-exchange-group"
 },
 {
 "sym": "TECH",
@@ -3384,6 +4579,11 @@
 "sym": "SGRO.L",
 "name": "Segro",
 "slug": "segro"
+},
+{
+"sym": "2432.T",
+"name": "DeNA Co.,Ltd.",
+"slug": "dena"
 },
 {
 "sym": "STAG",
@@ -3454,6 +4654,16 @@
 "sym": "TMP",
 "name": "Tompkins Financial Corp",
 "slug": "tompkins-financial"
+},
+{
+"sym": "3293.T",
+"name": "AZUMA HOUSE Co.,Ltd.",
+"slug": "azuma-house"
+},
+{
+"sym": "5541.T",
+"name": "Pacific Metals Co.,Ltd.",
+"slug": "pacific-metals"
 },
 {
 "sym": "CPT",

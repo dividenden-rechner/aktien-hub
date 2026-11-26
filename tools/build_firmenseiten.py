@@ -1,3 +1,4 @@
+import glob
 #!/usr/bin/env python3
 """Firmenseiten fuer alle Dividendenzahler aus data/kennzahlen.json (nur vorhandene Werte, nichts geschaetzt).
 Wird am Ende von build_dividendenseiten.main() aufgerufen. Die 117 handgepflegten Seiten bleiben unveraendert.
@@ -157,6 +158,14 @@ def datenquellen():
                 _QUELLEN.append(fir)
             except Exception:
                 _QUELLEN.append({})
+        # Japan (EDINET): je Firma eine Datei in data/asien/firma/<TICKER>.json (amtliche Daten, Prüfung noch offen)
+        jp = {}
+        for f in glob.glob(os.path.join(B.ROOT, "data", "asien", "firma", "*.T.json")):
+            try:
+                jp[os.path.basename(f)[:-5]] = json.load(open(f, encoding="utf-8"))
+            except Exception:
+                pass
+        _QUELLEN.append(jp)
     return _QUELLEN
 
 
