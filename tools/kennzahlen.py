@@ -190,6 +190,7 @@ def land_aus_isin(isin, f):
 
 
 def main():
+    CFG = {f["sym"]: f for f in (json.load(open("data/dividendenseiten.json", encoding="utf-8")).get("firmen") or [])}
     try:
         for x in json.load(open("data/universe.json"))["firmen"]:
             SEKTOR[x["sym"].upper()] = GICS.get(x.get("sektor"), x.get("sektor"))
@@ -388,7 +389,11 @@ def main():
             "eps_wachstum": wachs(eps, eps_a), "fcf_wachstum": wachs(fcf, fcf_a) if cf_basis != "ttm" else None,
             "div_wachstum_1j": wachs(dps_r[-1][1], dps_r[-2][1]) if len(dps_r) > 1 else None,
             # Ganze Datenreihe (bis 10 Jahre) durchgehend erhoeht: die echte Serie ist vermutlich laenger -> 99 = "9+"
-            "dividendenserie": (99 if dps_r and streak >= len(dps_r) - 1 and streak >= 9 else streak) if dps_r else None,
+            # Recherchierte Serie aus der Aristokraten-/Dividend-Kings-Liste (dividendenseiten.json) hat Vorrang vor der Zählung aus SEC-Daten
+            "dividendenserie": ((CFG.get(t) or {}).get("serie") or {}).get("jahre") if ((CFG.get(t) or {}).get("serie") or {}).get("jahre") is not None else ((99 if dps_r and streak >= len(dps_r) - 1 and streak >= 9 else streak) if dps_r else None),
+            # Zahlweise: Zahlungen pro Jahr und die Monate, in denen gezahlt wird (Monate noch zu recherchieren, siehe zahlmonate)
+            "zahlweise": {4: "vierteljährlich", 12: "monatlich", 2: "halbjährlich", 1: "jährlich"}.get((CFG.get(t) or {}).get("rhythmus")),
+            "zahlmonate": (CFG.get(t) or {}).get("zahlmonate"),
             "nav_je_aktie": r2(ek / aktien, 2) if ek and aktien else None,
         })
         # Margen, EBITDA, Unternehmenswert, Bilanz, Altman-Z und Piotroski (SEC-Bilanz und GuV)

@@ -274,18 +274,36 @@ COLS4 = '<colgroup><col class="c1"><col class="c2"><col class="c3"><col class="c
 COLS6 = '<colgroup><col class="c1"><col class="c2"><col class="c3"><col class="c4"><col class="c5"></colgroup>'
 
 PEER_BLOCKS = {}
+FCF_HINWEIS = {}  # firmenspezifische Erklärung zur Ausschüttungsquote auf den Free Cashflow, aus data/dividenden-korrekturen.json (fcf_hinweis)
 
-def peer_block(sym, cfg_by_sym, gruppen):
-    """Querverlinkung je Aktie: Aristokratenliste plus bis zu drei Aktien aus derselben Peer-Gruppe."""
+def peer_block(sym, recs, gruppen):
+    """Vergleich in der Peer-Gruppe (wie beim Aktienvergleich): Tabelle mit Rendite, KGV, Ausschüttung der Gruppenmitglieder,
+    dazu Querverlinkung und Link auf die Aristokratenliste."""
     gr = next((g for g in gruppen if sym in g["members"]), None)
-    peers = [m for m in (gr["members"] if gr else []) if m != sym and m in cfg_by_sym][:3]
-    items = "".join(f'<li><a href="/aktien-hub/{cfg_by_sym[m]["slug"]}/" style="display:flex;align-items:center;gap:10px">{logo_span(m, cfg_by_sym[m]["name"], "../../")}{esc(cfg_by_sym[m]["name"])}</a></li>' for m in peers)
-    peer_teil = (f'<p>Aus der Gruppe „{esc(gr["name"])}“ lohnt der Blick auf:</p><ul>{items}</ul>' if peers else "")
-    return (f'<h2>Vergleich und Einordnung</h2>{peer_teil}'
+    peers = [m for m in (gr["members"] if gr else []) if m != sym and m in recs][:4]
+    def zelle(v, fmt):
+        return fmt(v) if v is not None else "–"
+    def zeile(m, fett=False):
+        r = recs[m]; name = esc(r["f"]["name"]); slug = r["f"]["slug"]
+        n = f'<a href="/aktien-hub/{slug}/">{name}</a>' if not fett else f"<strong>{name}</strong>"
+        return (f'<tr><td>{logo_span(m, r["f"]["name"], "../../")}{n}</td>'
+                f'<td class="n">{zelle(r.get("rendite"), lambda v: proz(v))}</td>'
+                f'<td class="n">{zelle(r.get("kgv"), lambda v: de(v, 1))}</td>'
+                f'<td class="n">{zelle(r.get("quote_gewinn"), lambda v: proz(v, 0))}</td>'
+                f'<td class="n">{zelle(r.get("dps_jahr") or r.get("dps_basis"), lambda v: de(v, 2))}</td></tr>')
+    if not peers:
+        return (f'<h2>Vergleich und Einordnung</h2>'
+                f'<p><a href="/dividende/aristokraten/">Alle Dividendenaristokraten und Dividend Kings im Vergleich</a></p>')
+    kopf = ('<div class="tablewrap"><table><thead><tr><th>Firma</th><th class="n">Rendite</th><th class="n">KGV</th>'
+            '<th class="n">Ausschüttung am Gewinn</th><th class="n">Dividende je Aktie</th></tr></thead><tbody>')
+    tabelle = kopf + zeile(sym, fett=True) + "".join(zeile(m) for m in peers) + "</tbody></table></div>"
+    return (f'<h2>Vergleich und Einordnung</h2>'
+            f'<p>Vergleich in der Gruppe „{esc(gr["name"])}“: Rendite, Bewertung und Ausschüttung im Verhältnis zum Gewinn.</p>'
+            f'{tabelle}'
             f'<p><a href="/dividende/aristokraten/">Alle Dividendenaristokraten und Dividend Kings im Vergleich</a></p>')
 
 def seite(r, kopf_links, kopf, fuss, mag, kurs_datum, sec_stand, usd_je_eur, jahr):
-    f = r["f"]; name = f["name"]; url = f"aktien-hub/{f['slug']}/dividende/"
+    f = r["f"]; name = f["name"]; url = f"aktien-hub/{f['slug']}/"
     rend = proz(r["rendite"]) if r["rendite"] else None
     title = f"{name} Dividende {jahr}: Rendite, Termine und Historie"
     kennung = ", ".join(x for x in (f"ISIN {r['isin']}" if r.get("isin") else "", f"WKN {r['wkn']}" if r.get("wkn") else "") if x)
@@ -364,9 +382,11 @@ def seite(r, kopf_links, kopf, fuss, mag, kurs_datum, sec_stand, usd_je_eur, jah
         if r["quote_fcf"] > 1:
             # Über 100 %: meist verzerrt durch Firmenkäufe, Steuer- oder andere Einmalzahlungen, die den Free Cashflow drücken
             wert = "über 300&nbsp;%*" if r["quote_fcf"] > 3 else proz(r["quote_fcf"], 0) + "*"
+            hw = FCF_HINWEIS.get(f["sym"])
             zeilen.append(("Ausschüttungsquote (auf Free Cashflow)", wert,
-                           "Durchschnitt der letzten drei Geschäftsjahre<br>* Über 100&nbsp;% deutet oft auf Sondereffekte hin: Zahlungen für zugekaufte Firmen, "
-                           "Steuernachzahlungen oder andere Einmalzahlungen drücken den Free Cashflow einzelner Jahre. Die laufende Deckung ist dann meist besser, als die Quote zeigt."))
+                           "Durchschnitt der letzten drei Geschäftsjahre<br>* " + (esc(hw) if hw else
+                           "Über 100&nbsp;% deutet oft auf Sondereffekte hin: Zahlungen für zugekaufte Firmen, "
+                           "Steuernachzahlungen oder andere Einmalzahlungen drücken den Free Cashflow einzelner Jahre. Die laufende Deckung ist dann meist besser, als die Quote zeigt.")))
         else:
             zeilen.append(("Ausschüttungsquote (auf Free Cashflow)", proz(r["quote_fcf"], 0), "Durchschnitt der letzten drei Geschäftsjahre"))
     zeilen.append(("Zahlweise", rhythmus, ""))
@@ -462,7 +482,7 @@ a.addEventListener("input",function(){{b.value="";r()}});b.addEventListener("inp
             {"@type": "ListItem", "position": 3, "name": f"{name} Dividende", "item": BASE + url}]},
         {"@context": "https://schema.org", "@type": "WebPage", "name": title, "description": desc, "url": BASE + url, "inLanguage": "de-DE",
          "dateModified": datetime.date.today().isoformat(), "isPartOf": {"@type": "WebSite", "name": "Dividenden-Rechner", "url": BASE},
-         "primaryImageOfPage": BASE + f"dividende/{f['slug']}/og.png" if r.get("og_bild") else BASE + "assets/og-default.png",
+         "primaryImageOfPage": BASE + url + "og.png" if r.get("og_bild") else BASE + "assets/og-default.png",
          "about": {"@type": "Corporation", "name": name, "legalName": r.get("sec_name") or name, "tickerSymbol": f["sym"],
                    **({"identifier": [{"@type": "PropertyValue", "propertyID": p, "value": v} for p, v in (("ISIN", r.get("isin")), ("WKN", r.get("wkn"))) if v]}
                       if r.get("isin") or r.get("wkn") else {})}},
@@ -478,11 +498,9 @@ a.addEventListener("input",function(){{b.value="";r()}});b.addEventListener("inp
         serie_quelle_html = (f'<li>Dividendenerhöhungen in Folge: <a href="{esc(se["quelle"])}" rel="nofollow noopener" target="_blank">{esc(dom)}</a>'
                              f' (Stand {datum(se["stand"]) if se.get("stand") else "–"})</li>')
     heute = datetime.date.today().isoformat()
-    og_img = BASE + f"dividende/{f['slug']}/og.png" if r.get("og_bild") else BASE + "assets/og-default.png"
+    og_img = BASE + url + "og.png" if r.get("og_bild") else BASE + "assets/og-default.png"
     logo = logo_span(f["sym"], name, "../../")
-    nur_test = (f'<div data-nur-test="1" id="fmp-box" data-sym="{esc(f["sym"])}"></div>'
-                f'<p data-nur-test="1">Nur Testseite: <a href="../../aktien-hub/?s={esc(f["sym"])}">{esc(name)} im Aktien-Hub</a> (DCF, Analysten, Live-Kurs)</p>'
-                '<script src="../../assets/firma-fmp.js" defer></script>')
+    nur_test = ""   # Testblock (Live-Daten) entfällt: die Firmenansicht liegt auf der Firmenseite
 
     return f'''<!DOCTYPE html>
 <html lang="de">
@@ -516,8 +534,7 @@ a.addEventListener("input",function(){{b.value="";r()}});b.addEventListener("inp
 <body>
 {kopf}
 <main class="wrap"><article>
-<nav class="crumbs" aria-label="Brotkrumen"><a href="../../">Start</a> › <a href="/dividende/">Dividenden</a> › <a href="../">{esc(name)}</a> › <span aria-current="page">Dividende</span></nav>
-<nav class="firmtabs" aria-label="Bereiche der Firmenseite"><a href="../">Übersicht</a><a href="./" aria-current="page">Dividende</a></nav>
+<nav class="crumbs" aria-label="Brotkrumen"><a href="../../">Start</a> › <a href="/dividende/">Dividenden</a> › <span aria-current="page">{esc(name)}</span></nav>
 <div class="titlerow" style="gap:12px">{logo}<h1>{esc(name)} Dividende</h1></div>
 <p class="meta">Stand: {datum(heute)} · Kurs vom {kurs_d} · Kürzel {esc(f["sym"])}{" · ISIN " + esc(r["isin"]) if r.get("isin") else ""}{" · WKN " + esc(r["wkn"]) if r.get("wkn") else ""}</p>
 <p class="lead">{lead}</p>
@@ -835,13 +852,13 @@ def main():
     mag = sorted(lade("data/magazin.json").get("items", []), key=lambda m: m.get("date", ""), reverse=True)
     jahr = datetime.date.today().year
     kl1, k1, f1 = rahmen(2); kl0, k0, f0 = rahmen(1)
-    rs, eintraege = [], []
-    cfg_by_sym = {f["sym"]: f for f in cfg}
+    rs, eintraege, hand = [], [], []
     gruppen = lade("data/dividende-peers.json")["gruppen"]
+    FCF_HINWEIS.clear()
+    FCF_HINWEIS.update({k: v["fcf_hinweis"] for k, v in lade("data/dividenden-korrekturen.json").get("firmen", {}).items() if isinstance(v, dict) and v.get("fcf_hinweis")})
     PEER_BLOCKS.clear()
-    for f in cfg:
-        PEER_BLOCKS[f["sym"]] = peer_block(f["sym"], cfg_by_sym, gruppen)
     kz_werte = lade("data/kennzahlen.json").get("werte", {})
+    recs = {}
     for f in cfg:
         r = kennzahlen(f, sec, kurse, iz, usd_je_eur, termine)
         if r:
@@ -853,13 +870,20 @@ def main():
             r["eps_fwd_art"] = pr.get("eps_art", "")
             r["wkn"] = f.get("wkn") or WKN.get(r.get("isin") or "")
             og_bild(r)
+            recs[f["sym"]] = r
+    for f in cfg:
+        PEER_BLOCKS[f["sym"]] = peer_block(f["sym"], recs, gruppen)
+    for f in cfg:
+        r = recs.get(f["sym"])
         if not r:
             print("übersprungen (keine Daten):", f["sym"]); continue
         h, t, d, u = *seite(r, kl1, k1, f1, mag, kurse.get("datum"), secj.get("stand", ""), usd_je_eur, jahr),
-        h = re.sub(r'((?:href|src)=")((?:\.\./)+)', lambda m: m.group(1) + "../" + m.group(2), h)   # eine Ebene tiefer (.../dividende/)
-        os.makedirs(os.path.join(ROOT, u), exist_ok=True)
-        open(os.path.join(ROOT, u, "index.html"), "w", encoding="utf-8").write(h)
-        rs.append(r); eintraege.append((u, t, d))
+        # Dividendenteil wandert eine Ebene tiefer nach dividende/ (Firmenansicht kommt auf die Firmenseite)
+        h_div = h.replace('href="../', 'href="../../').replace('src="../', 'src="../../').replace(BASE + u + '"', BASE + u + 'dividende/"')
+        os.makedirs(os.path.join(ROOT, u, "dividende"), exist_ok=True)
+        open(os.path.join(ROOT, u, "dividende", "index.html"), "w", encoding="utf-8").write(h_div)
+        rs.append(r); eintraege.append((u + "dividende/", t, d))
+        hand.append((r, u, t, d))
     h, t, d = uebersicht(rs, kl0, k0, f0, jahr)
     open(os.path.join(ROOT, "dividende", "index.html"), "w", encoding="utf-8").write(h)
     eintraege.insert(0, ("dividende/", t, d))
@@ -868,8 +892,21 @@ def main():
     open(os.path.join(ROOT, "dividende", "aristokraten", "index.html"), "w", encoding="utf-8").write(h)
     eintraege.insert(1, ("dividende/aristokraten/", t, d))
     import build_firmenseiten
-    neu = build_firmenseiten.bauen({r["f"]["sym"] for r in rs}, {r["f"]["slug"] for r in rs}, news_by_sym(mag), kl1, k1, f1, datetime.date.today().isoformat(),
-                                   hand=[{"sym": r["f"]["sym"], "name": r["f"]["name"], "slug": r["f"]["slug"]} for r in rs])
+    import build_firma_ansicht
+    for r, u, t, d in hand:
+        f = r["f"]; name = f["name"]; sym = f["sym"]
+        titel = f"{name} Aktie: Kennzahlen, Charts und Bewertung | Aktien-Hub"
+        beschr = f"{name}: Steckbrief, Bewertung und Diagramme aus den Geschäftsberichten und Börsenkursen. Dividendenprofil mit Terminen und Historie."
+        view = build_firma_ansicht.ansicht_html(sym, datetime.date.today().isoformat(), 2)
+        h1 = f'<div class="titlerow" style="gap:12px">{logo_span(sym, name, "../../")}<h1>{esc(name)} Aktie</h1></div>'
+        crumbs = f'<a href="../../">Start</a> › <a href="/aktien-hub/">Aktien-Hub</a> › <span aria-current="page">{esc(name)}</span>'
+        body = (view
+                + PEER_BLOCKS.get(sym, "") + '<p class="note"><strong>Hinweis:</strong> Diese Seite dient der allgemeinen Information und ist keine Anlageberatung.</p>')
+        seite_f = build_firmenseiten.seitenrahmen(titel, beschr, u, h1, crumbs, body, kl1, k1, f1, 2, "")
+        open(os.path.join(ROOT, u, "index.html"), "w", encoding="utf-8").write(seite_f)
+        eintraege.append((u, titel, beschr))
+    build_firma_ansicht.schreiben([r["f"] for r, *_ in hand], os.path.join(ROOT, "data", "firma-ansicht"))
+    neu = build_firmenseiten.bauen({r["f"]["sym"] for r in rs}, {r["f"]["slug"] for r in rs}, news_by_sym(mag), kl1, k1, f1, datetime.date.today().isoformat())
     # Auch die handkuratierten Seiten bekommen einen Eintrag für den Link aus dem Aktien-Hub
     zuordnung = json.load(open(os.path.join(ROOT, "data", "firmen-slugs.json"), encoding="utf-8"))
     for r in rs:
