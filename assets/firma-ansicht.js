@@ -675,7 +675,7 @@ async function firmaAnsicht(sym,ceo){
   const KC=kursChart(sym,p.currency||cur,pr,{},price);
   const img2=ceo?`<figure class="fa-ceo"><img src="${esc(FA_ROOT+ceo.datei)}" alt="${esc(ceo.name)}" loading="lazy"><figcaption><b>${esc(ceo.name)}</b><br>${esc(ceo.rolle||"")}</figcaption></figure>`:"";
   hub.innerHTML=`
-  <div class="head"><div><small class="sub">${esc(["Stand: "+new Date().toLocaleDateString("de-DE",{day:"numeric",month:"long",year:"numeric"}),"Kürzel "+sym,p.sector].filter(Boolean).join(" · "))}</small></div>
+  <div class="head"><div><small class="sub">${esc(["Stand: "+new Date().toLocaleDateString("de-DE",{day:"numeric",month:"long",year:"numeric"}),"Kürzel "+sym.replace(/\.T$/,""),p.sector].filter(Boolean).join(" · "))}</small></div>
   </div>
   <div class="kurszeile"><span class="price">${num(price)} ${esc(p.currency||"")}<small class="${sg(chg)}">${chg==null?"":(chg>0?"+":"")+num(chg)+" % heute"}</small></span></div>
   ${steckbrief(sym,p,r,m,inc,cf,KZ,SD)}
