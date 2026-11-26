@@ -99,9 +99,32 @@ def tabelle(zeilen, kopfzeile):
     return out
 
 
-def beste(W):
+EUROPA = {"DE", "FR", "NL", "GB", "CH", "IT", "ES", "SE", "NO", "DK", "BE", "FI", "IE", "AT", "LU", "PT"}
+
+
+def firmenblock(platz, s, r, text):
+    """Ein Abschnitt je Firma im Stil eines Ratgeber-Rankings: Überschrift, Kennzahlen, Text aus den Daten."""
+    kz = [f"**Rendite {de(r['rendite'])} %**"]
+    if r.get("div_wachstum_5j") is not None:
+        kz.append(f"Dividendenwachstum 5 J. {de(r['div_wachstum_5j'])} % pro Jahr")
+    if r.get("ausschuettung") is not None:
+        kz.append(f"Ausschüttung {de(r['ausschuettung'], 0)} % des Gewinns")
+    if r.get("fcf_ausschuettung") is not None:
+        kz.append(f"{de(r['fcf_ausschuettung'], 0)} % des freien Cashflows")
+    if r.get("dividendenserie"):
+        kz.append(f"{r['dividendenserie']} Jahre Erhöhungen in Folge")
+    return (f"## {platz}. {link_name(s, r['name'])}\n\n" + " · ".join(kz) + "\n\n" + text + "\n\n")
+
+
+def satz_beste(r):
+    """Kennzahlen stehen in der Zeile darüber; der Text verweist nur auf die Detailseite."""
+    return "Die Dividendenhistorie, Bilanzkennzahlen und Charts stehen auf der Firmenseite."
+
+
+def beste(W, europa=False):
     kand = {s: r for s, r in W.items() if ok(r, ausmax=80) and r.get("div_wachstum_5j") is not None and 0 <= r["div_wachstum_5j"] <= 25
-            and r.get("fcf_ausschuettung") is not None and 0 < r["fcf_ausschuettung"] <= 100 and (r.get("dividendenserie") or 0) >= 5}
+            and r.get("fcf_ausschuettung") is not None and 0 < r["fcf_ausschuettung"] <= 100 and (r.get("dividendenserie") or 0) >= 5
+            and (not europa or r.get("land") in EUROPA)}
     kand = {s: kand[s] for s in einmalig(W, kand)}
     if len(kand) < 10:
         return None
@@ -111,21 +134,18 @@ def beste(W):
     dek = rang({s: -(r.get("fcf_ausschuettung") if r.get("fcf_ausschuettung") is not None else 100) for s, r in kand.items()})
     score = {s: 0.3 * rend[s] + 0.3 * wach[s] + 0.2 * ser[s] + 0.2 * dek[s] for s in kand}
     top = sorted(kand, key=lambda s: -score[s])[:10]
-    zeilen = []
-    for i, s in enumerate(top, 1):
-        r = kand[s]
-        zeilen.append([i, link_name(s, r["name"]), de(r["rendite"]) + " %", de(r["div_wachstum_5j"]) + " %",
-                       (de(r["ausschuettung"], 0) + " %") if r.get("ausschuettung") is not None else "–",
-                       (de(r["fcf_ausschuettung"], 0) + " %") if r.get("fcf_ausschuettung") is not None else "–",
-                       f'{r["dividendenserie"]} Jahre' if r.get("dividendenserie") else "–"])
-    body = (
+    kopf_text = (
         f"Die Liste aktualisiert sich bei jedem Lauf aus den Daten des Aktien-Hubs. Stand: {DATUM}.\n\n"
-        "Wir haben alle Dividendenaktien mit einem Börsenwert ab 2 Mrd. Euro betrachtet, die mindestens fünf Jahre in Folge ihre Dividende erhöht haben und deren Rendite über 0 und höchstens 15 Prozent liegt. "
-        "Jede Firma bekommt eine Punktzahl aus vier Kennzahlen: Dividendenrendite (30 %), Dividendenwachstum über fünf Jahre (30 %), Länge der Erhöhungsserie (20 %) und Deckung durch den freien Cashflow (20 %). Je höher die Deckung, desto besser.\n\n"
-        + tabelle(zeilen, ["Platz", "Firma", "Rendite", "Dividendenwachstum 5 J.", "Ausschüttungsquote", "Anteil am FCF", "Erhöhungen in Folge"]) +
-        "\nEine hohe Rendite allein ist kein Qualitätsmerkmal. Deshalb zählen Wachstum und Deckung genauso. Eine Firma, die ihre Dividende aus Schulden zahlt, fällt in der Punktzahl zurück, auch wenn die Rendite hoch ist.\n\n"
-        "Diese Liste ist eine Auswertung nach festen Regeln und keine Kaufempfehlung. Vor einer Entscheidung lohnt der Blick auf das Geschäftsmodell, die Verschuldung und die Branche der Firma.\n"
-    )
+        + ("Betrachtet werden europäische Dividendenaktien" if europa else "Betrachtet werden Dividendenaktien weltweit")
+        + " mit einem Börsenwert ab 2 Mrd. Euro, die mindestens fünf Jahre in Folge ihre Dividende erhöht haben und deren Rendite über 0 und höchstens 15 Prozent liegt. "
+        "Jede Firma bekommt eine Punktzahl aus vier Kennzahlen: Rendite (30 %), Dividendenwachstum über fünf Jahre (30 %), Länge der Erhöhungsserie (20 %) und Deckung durch den freien Cashflow (20 %).\n\n")
+    body = kopf_text + "".join(firmenblock(i, s, kand[s], satz_beste(kand[s])) for i, s in enumerate(top, 1))
+    body += ("## Wie die Liste entsteht\n\n"
+             "Eine hohe Rendite allein ist kein Qualitätsmerkmal. Deshalb zählen Wachstum und Deckung genauso. Eine Firma, die ihre Dividende aus Schulden zahlt, fällt in der Punktzahl zurück, auch wenn die Rendite hoch ist.\n\n"
+             "Diese Liste ist eine Auswertung nach festen Regeln und keine Kaufempfehlung. Vor einer Entscheidung lohnt der Blick auf das Geschäftsmodell, die Verschuldung und die Branche der Firma.\n")
+    if europa:
+        return "die-10-besten-dividendenaktien-europa", "Die 10 besten Dividendenaktien Europas", \
+               "Die zehn europäischen Dividendenaktien mit der besten Mischung aus Rendite, Wachstum, Erhöhungsserie und Deckung. Die Liste wird regelmäßig aus den Daten neu berechnet.", body
     return "die-10-besten-dividendenaktien", "Die 10 besten Dividendenaktien", \
            "Die zehn Dividendenaktien mit der besten Mischung aus Rendite, Wachstum, Erhöhungsserie und Deckung. Die Liste wird regelmäßig aus den Daten neu berechnet.", body
 
@@ -148,31 +168,19 @@ def wachstum(W):
            "Welche Dividendenaktien ihre Ausschüttung in den vergangenen fünf Jahren am stärksten erhöht haben. Die Liste wird aus den Daten neu berechnet.", body
 
 
-HY_EUROPA = {"DE", "FR", "NL", "GB", "CH", "IT", "ES", "SE", "NO", "DK", "BE", "FI", "IE", "AT", "LU", "PT"}
-HY_ASIEN = {"JP", "KR"}
-
-
 def high_yield(W):
-    """Topfirmen: 7 USA, 2 Europa, 1 Asien (Japan/Korea). Keine Indonesien-Werte."""
-    basis = {s: r for s, r in W.items() if ok(r, rmax=15, ausmax=80) and r["rendite"] >= 5
-             and (r.get("fcf_ausschuettung") is None or r["fcf_ausschuettung"] <= 100)
-             and (r.get("boersenwert_eur") or 0) >= 5e9 and r.get("land") != "ID"}
-    basis = {s: basis[s] for s in einmalig(W, basis)}
-    def waehle(laender, n):
-        pool = [s for s in basis if basis[s].get("land") in laender]
-        return sorted(pool, key=lambda s: -basis[s]["rendite"])[:n]
-    top = waehle({"US"}, 7) + waehle(HY_EUROPA, 2) + waehle(HY_ASIEN, 1)
+    kand = {s: r for s, r in W.items() if ok(r, rmax=15, ausmax=80) and r["rendite"] >= 5 and (r.get("fcf_ausschuettung") is None or r["fcf_ausschuettung"] <= 100)}
+    kand = {s: kand[s] for s in einmalig(W, kand)}
+    top = sorted(kand, key=lambda s: -kand[s]["rendite"])[:10]
     if len(top) < 10:
         return None
-    top = sorted(top, key=lambda s: -basis[s]["rendite"])
-    kand = basis
     zeilen = [[i, link_name(s, kand[s]["name"]), de(kand[s]["rendite"]) + " %",
                (de(kand[s]["ausschuettung"], 0) + " %") if kand[s].get("ausschuettung") is not None else "–",
                (de(kand[s]["fcf_ausschuettung"], 0) + " %") if kand[s].get("fcf_ausschuettung") is not None else "–",
                (de(kand[s]["div_wachstum_5j"]) + " %") if kand[s].get("div_wachstum_5j") is not None else "–"]
               for i, s in enumerate(top, 1)]
-    body = (f"Hohe Dividendenrenditen locken, sind aber oft ein Warnsignal. Diese Liste zeigt zehn Großfirmen mit hoher Rendite, deren Ausschüttung unter 80 Prozent des Gewinns und höchstens 100 Prozent des freien Cashflows liegt: sieben aus den USA, zwei aus Europa und eine aus Asien. Stand: {DATUM}.\n\n"
-            "Berücksichtigt werden Firmen mit einem Börsenwert ab 5 Mrd. Euro und einer Rendite zwischen 5 und 15 Prozent.\n\n"
+    body = (f"Hohe Dividendenrenditen locken, sind aber oft ein Warnsignal. Diese Liste zeigt die zehn Firmen mit der höchsten Rendite, die zugleich eine Ausschüttung unter 80 Prozent des Gewinns und höchstens 100 Prozent des freien Cashflows aufweisen. Stand: {DATUM}.\n\n"
+            "Berücksichtigt werden Firmen mit einem Börsenwert ab 2 Mrd. Euro und einer Rendite zwischen 5 und 15 Prozent.\n\n"
             + tabelle(zeilen, ["Platz", "Firma", "Rendite", "Ausschüttungsquote", "Anteil am FCF", "Dividendenwachstum 5 J."]) +
             "\nWer eine hohe Rendite sieht, sollte drei Fragen stellen: Ist die Dividende aus dem Cashflow gedeckt? Wächst das Geschäft? Ist die Rendite hoch, weil der Kurs gefallen ist? Die Spalten helfen bei den ersten beiden Antworten.\n\n"
             "Die Liste ist eine Auswertung nach festen Regeln und keine Kaufempfehlung.\n")
@@ -180,10 +188,13 @@ def high_yield(W):
            "Die zehn Dividendenaktien mit der höchsten Rendite, die ihre Ausschüttung trotzdem aus Gewinn und Cashflow zahlen. Die Liste wird regelmäßig neu berechnet.", body
 
 
+ZM = (json.load(open("data/zahlmonate.json", encoding="utf-8")).get("firmen") or {})
+
+
 def monatlich(W):
     res = []
     for s, r in W.items():
-        zm = (r.get("zahlmonate") or "").strip()
+        zm = (r.get("zahlmonate") or ZM.get(s) or "").strip()
         if not zm:
             continue
         if zm.lower().startswith("jeden"):
@@ -197,7 +208,7 @@ def monatlich(W):
     top = res[:10]
     if len(top) < 5:
         return None
-    zeilen = [[i, link_name(s, W[s]["name"]), W[s]["zahlmonate"], n, de(W[s]["rendite"]) + " %"] for i, (n, s) in enumerate(top, 1)]
+    zeilen = [[i, link_name(s, W[s]["name"]), (W[s].get("zahlmonate") or ZM.get(s)), n, de(W[s]["rendite"]) + " %"] for i, (n, s) in enumerate(top, 1)]
     body = (f"Manche Firmen zahlen ihre Dividende nicht einmal im Jahr, sondern öfter. Diese Liste zeigt Dividendenaktien mit den meisten Zahlmonaten, die wir für sie belegt haben. Stand: {DATUM}.\n\n"
             "Berücksichtigt werden Firmen mit mindestens vier belegten Zahlmonaten und einer Rendite zwischen 0 und 15 Prozent. Monate, die nicht belegt sind, fehlen in der Liste.\n\n"
             + tabelle(zeilen, ["Platz", "Firma", "Zahlmonate", "Anzahl Monate", "Rendite"]) +
@@ -210,19 +221,19 @@ def monatlich(W):
 def main():
     W = lade()
     erzeugt = []
-    for i, fn in enumerate([beste, wachstum, high_yield, monatlich]):
+    plan = [("1", beste), ("2", wachstum), ("3", high_yield), ("4", monatlich), ("5", lambda w: beste(w, europa=True))]
+    for nummer, fn in plan:
         ergebnis = fn(W)
         if not ergebnis:
             print("übersprungen (zu wenig Daten):", fn.__name__)
             continue
         slug, titel, beschr, body = ergebnis
-        ordner = os.path.join(MAGAZIN, f"910{i+1}_{HEUTE.isoformat()}")
+        ordner = os.path.join(MAGAZIN, f"910{nummer}_{HEUTE.isoformat()}")
         os.makedirs(ordner, exist_ok=True)
-        datei = os.path.join(ordner, f"910{i+1}_{HEUTE.strftime('%m%d')}-{slug}.md")
-        ziel = os.path.join(ordner, os.path.basename(datei))
+        datei = os.path.join(ordner, f"910{nummer}_{HEUTE.strftime('%m%d')}-{slug}.md")
         zeit = datetime.datetime.now().strftime("%Y-%m-%d %H:%M")
-        open(ziel, "w", encoding="utf-8").write(kopf(titel, beschr, slug, zeit) + "\n" + body)
-        erzeugt.append(ziel)
+        open(datei, "w", encoding="utf-8").write(kopf(titel, beschr, slug, zeit) + "\n" + body)
+        erzeugt.append(datei)
     print("\n".join(erzeugt))
 
 

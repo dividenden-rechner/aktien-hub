@@ -1,7 +1,7 @@
 ---
 title: "Dividendenwachstum: Die 10 Firmen mit den stärksten Steigerungen"
 description: "Welche Dividendenaktien ihre Ausschüttung in den vergangenen fünf Jahren am stärksten erhöht haben. Die Liste wird aus den Daten neu berechnet."
-date: 2026-11-26 22:54
+date: 2026-11-26 22:56
 updated: 2026-11-26
 author: "Kilian Treß"
 category: Ratgeber
