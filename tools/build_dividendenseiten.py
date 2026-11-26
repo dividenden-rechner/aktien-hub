@@ -309,8 +309,15 @@ def faq_dynamisch(r, name):
     def z(v, n=1):
         return de(v, n) + " %"
     if r.get("zahlmonate"):
-        out.append((f"In welchen Monaten zahlt {name} Dividende?",
-                    f"{name} zahlt die Dividende {r.get('zahlweise') or 'regelmäßig'}, und zwar in den Monaten {r['zahlmonate']}."))
+        if r["zahlmonate"] == "jeden Monat":
+            antwort = f"{name} zahlt die Dividende jeden Monat."
+        else:
+            lang = {"Jan": "Januar", "Feb": "Februar", "Mär": "März", "Apr": "April", "Jun": "Juni", "Jul": "Juli",
+                    "Aug": "August", "Sep": "September", "Okt": "Oktober", "Nov": "November", "Dez": "Dezember"}
+            teile = [lang.get(m.strip(), m.strip()) for m in r["zahlmonate"].split(",")]
+            monate = ", ".join(teile[:-1]) + " und " + teile[-1] if len(teile) > 1 else teile[0]
+            antwort = f"{name} zahlt die Dividende {r.get('zahlweise') or 'regelmäßig'}, und zwar {'im Monat' if len(teile) == 1 else 'in den Monaten'} {monate}."
+        out.append((f"In welchen Monaten zahlt {name} Dividende?", antwort))
     if r.get("div_wachstum_5j") is not None or r.get("div_wachstum_10j") is not None:
         teile = []
         if r.get("div_wachstum_5j") is not None:
