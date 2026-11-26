@@ -1,0 +1,1348 @@
+{
+ "firmen": {
+  "BE": {
+   "text": "Bloom Energy stellt Brennstoffzellen-Systeme her, die Strom aus Erdgas oder Wasserstoff erzeugen. Kunden sind vor allem Rechenzentren, Industriebetriebe und Versorger, die eine unabhängige Stromversorgung suchen.",
+   "pruefen": false
+  },
+  "GNRC": {
+   "text": "Generac ist ein US-Hersteller von Notstromaggregaten für Wohnhäuser und Gewerbe sowie von Batteriespeichern. Das Geschäft umfasst Produkte für den Heimbereich, gewerbliche Anwendungen und Energiemanagement.",
+   "pruefen": false
+  },
+  "VOD": {
+   "text": "Vodafone betreibt Mobilfunk- und Festnetznetze in Europa und Afrika. Das Geschäftsmodell basiert auf Abonnements für Telefonie und Datenverkehr sowie auf dem Verkauf von Netzanschlüssen an Privat- und Firmenkunden.",
+   "pruefen": false
+  },
+  "1YE.DE": {
+   "text": "Energean fördert Öl und Gas im östlichen Mittelmeer, unter anderem in Israel, Ägypten und Kroatien. Der Konzern verkauft seine Förderung an Abnehmer in der Region und in Europa.",
+   "pruefen": false
+  },
+  "27M.DE": {
+   "text": "Melrose Industries ist ein britischer Industriekonzern, dessen wichtigste Tochter GKN Aerospace Strukturteile und Triebwerkskomponenten für die Luftfahrt liefert. Der Konzern kauft Industriebetriebe, verbessert sie und verkauft sie später wieder.",
+   "pruefen": false
+  },
+  "41L.DE": {
+   "text": "Rovi ist ein spanisches Pharmaunternehmen, das Wirkstoffe und Arzneimittel herstellt, vor allem niedermolekulare Heparine und die Auftragsfertigung für andere Pharmafirmen. Der Umsatz stammt aus Verkäufen an Pharmakunden weltweit.",
+   "pruefen": false
+  },
+  "AAK.ST": {
+   "text": "AAK stellt Pflanzenöle und Spezialfette für Lebensmittelhersteller her, etwa für Schokolade, Backwaren und Margarine. Das Geschäft lebt von langfristigen Lieferverträgen mit großen Lebensmittelkonzernen.",
+   "pruefen": false
+  },
+  "ALIF-B.ST": {
+   "text": "AddLife ist ein schwedischer Konzern für Medizintechnik und Laborbedarf, mit Schwerpunkt auf Diagnostik und Lebenswissenschaften. Das Geschäft umfasst Verbrauchsmaterial, Geräte und Dienstleistungen für Labore und Kliniken.",
+   "pruefen": false
+  },
+  "ALIG.ST": {
+   "text": "Alimak stellt Personen- und Lastenaufzüge sowie Zahnstangen-Systeme für Baustellen und Industrieanlagen her. Der Umsatz kommt aus Verkauf und Wartung der Anlagen.",
+   "pruefen": false
+  },
+  "ALLFG.AS": {
+   "text": "Allfunds betreibt eine digitale Plattform, über die Fondsgesellschaften und Vermögensverwalter in Europa Investmentfonds vertreiben und verwalten. Die Erlöse stammen aus Gebühren pro Transaktion und pro verwaltetem Vermögen.",
+   "pruefen": false
+  },
+  "ALMA.HE": {
+   "text": "Alma Media ist ein finnisches Medienhaus mit Zeitungen, Online-Portalen und Fachmedien. Die Erlöse kommen aus Werbung, Abonnements und digitalen Angeboten.",
+   "pruefen": false
+  },
+  "ALMB.CO": {
+   "text": "ALM. Brand ist eine dänische Bank mit Privat- und Firmenkundengeschäft sowie einer Versicherungssparte. Das Geschäft umfasst Kredite, Einlagen, Vermögensverwaltung und Versicherungen.",
+   "pruefen": false
+  },
+  "ALSYDB.CO": {
+   "text": "Sydbank ist eine dänische Regionalbank mit Schwerpunkt Süd- und Mitteljütland. Sie betreut Privat- und Firmenkunden mit Krediten, Einlagen und Vermögensberatung.",
+   "pruefen": false
+  },
+  "ALTA.PA": {
+   "text": "Altarea ist ein französischer Immobilienkonzern, der Einkaufszentren und Gewerbeimmobilien entwickelt und vermietet. Das Geschäft umfasst Bau, Vermietung und Verwaltung von Immobilien in Frankreich.",
+   "pruefen": false
+  },
+  "ALTRA.ST": {
+   "text": "Altra Fastigheter ist eine schwedische Immobiliengesellschaft, die Wohn- und Gewerbeimmobilien besitzt und vermietet. Die Einnahmen stammen aus Mieten.",
+   "pruefen": false
+  },
+  "AMBEA.ST": {
+   "text": "Ambea betreibt Pflegeheime und Betreuungsangebote für ältere Menschen und Menschen mit Behinderung in Skandinavien. Der Umsatz kommt aus Betreuungsleistungen, die überwiegend von öffentlichen Auftraggebern bezahlt werden.",
+   "pruefen": false
+  },
+  "AMBU-B.CO": {
+   "text": "Ambu ist ein dänischer Hersteller von Einweg-Produkten für Endoskopie und Anästhesie. Zu den wichtigsten Produkten zählen Einweg-Endoskope und Beatmungsmasken für Kliniken.",
+   "pruefen": false
+  },
+  "ANIM.MI": {
+   "text": "Anima Holding ist ein italienischer Vermögensverwalter, der Investmentfonds und Vermögensverwaltungsmandate anbietet. Die Erlöse entstehen vor allem aus Verwaltungsgebühren auf das verwaltete Vermögen.",
+   "pruefen": false
+  },
+  "ANTIN.PA": {
+   "text": "Antin Infrastructure Partners ist eine französische Beteiligungsgesellschaft, die in Infrastruktur- und Digitalunternehmen investiert. Sie verdient an Wertsteigerungen und Gebühren aus ihren Fonds.",
+   "pruefen": false
+  },
+  "AQ.ST": {
+   "text": "AQ Group ist ein schwedischer Hersteller von Komponenten und Industrieprodukten, die in Fahrzeug-, Maschinen- und Elektronikindustrie verbaut werden. Kunden sind Industrie-Großkunden mit langfristigen Verträgen.",
+   "pruefen": false
+  },
+  "ARG.PA": {
+   "text": "Argan ist ein französischer Immobilienentwickler mit Schwerpunkt auf Gewerbe- und Logistikimmobilien. Das Geschäft umfasst Entwicklung, Bau und Vermietung der Objekte.",
+   "pruefen": false
+  },
+  "ARIS.MI": {
+   "text": "Ariston ist ein italienischer Hersteller von Heizungs- und Warmwassersystemen für Privathaushalte und Gewerbe. Zum Angebot gehören Gasheizungen, Wärmepumpen und Warmwasserboiler.",
+   "pruefen": false
+  },
+  "AT0000641352": {
+   "text": "CA Immobilien ist ein österreichischer Immobilienkonzern mit Büro- und Gewerbeimmobilien vor allem in Berlin und Wien. Die Erlöse stammen aus Vermietung und Verkauf von Objekten.",
+   "pruefen": false
+  },
+  "AT0000A21KS2": {
+   "text": "CPI Europe ist ein Immobilienunternehmen in Wien, das Wohn- und Gewerbeobjekte in Mittel- und Osteuropa besitzt. Die Erlöse stammen aus Mieten.",
+   "pruefen": false
+  },
+  "ATT.ST": {
+   "text": "Attendo betreibt Pflegeheime und betreute Wohnangebote in Schweden, Finnland, Dänemark und Norwegen. Das Geschäft lebt von Betreuungsverträgen mit öffentlichen Auftraggebern und Privatzahlern.",
+   "pruefen": false
+  },
+  "AVIO.MI": {
+   "text": "Avio entwickelt und baut Raketenantriebe und Trägerraketen, unter anderem für die europäische Vega-Rakete. Kunden sind Raumfahrtagenturen und Industriepartner.",
+   "pruefen": false
+  },
+  "AXFO.ST": {
+   "text": "Axfood ist ein schwedischer Lebensmittelhändler, der Supermärkte und Großhandel betreibt. Die Erlöse stammen aus dem Verkauf von Lebensmitteln an Privatkunden.",
+   "pruefen": false
+  },
+  "AYV.PA": {
+   "text": "Ayvens ist ein europäischer Leasinganbieter, der Firmen- und Privatfahrzeuge langfristig vermietet. Das Geschäft umfasst Leasing, Fuhrparkmanagement und Mobilitätsdienstleistungen.",
+   "pruefen": false
+  },
+  "AZA.ST": {
+   "text": "Avanza ist eine schwedische Online-Bank und Plattform für Aktien, Fonds und Sparpläne. Die Erlöse stammen aus Handelsgebühren und Verwaltungsgebühren.",
+   "pruefen": false
+  },
+  "AZM.MI": {
+   "text": "Azimut ist ein italienischer Vermögensverwalter, der Investmentfonds und Beratung für Privatkunden anbietet. Die Erlöse stammen aus Gebühren auf verwaltete Vermögen.",
+   "pruefen": false
+  },
+  "BE0003853703": {
+   "text": "Montea ist ein belgischer Immobilieninvestor mit Logistik- und Produktionsimmobilien, die an Industrie- und Handelsunternehmen vermietet werden. Die Erlöse stammen aus langfristigen Mietverträgen.",
+   "pruefen": false
+  },
+  "BE0003874915": {
+   "text": "Fagron ist ein belgischer Spezialist für Pharmazie-Zubereitungen und Wirkstoffe, die Apotheken und Kliniken beziehen. Das Geschäft umfasst Rohstoffe, individuelle Rezepturen und Medizinprodukte.",
+   "pruefen": false
+  },
+  "BEIJ-B.ST": {
+   "text": "Beijer Ref ist ein schwedischer Großhändler für Kälte- und Klimatechnik, mit Lagern und Vertriebsstandorten in Europa und Nordamerika. Die Erlöse stammen aus dem Verkauf von Komponenten an Installateure.",
+   "pruefen": false
+  },
+  "BETS-B.ST": {
+   "text": "Betsson ist ein Online-Anbieter für Glücksspiel und Sportwetten mit Sitz in Schweden und Malta. Die Erlöse stammen aus Wetten und Casinospielen der Kunden.",
+   "pruefen": false
+  },
+  "BFSA.DE": {
+   "text": "Befesa ist ein Recyclingkonzern aus Luxemburg, der Stahlstaub und Aluminiumsalzschlacke aufbereitet. Das Geschäft lebt von Entgelten der Stahl- und Aluminiumindustrie für die Verwertung.",
+   "pruefen": false
+  },
+  "BILL.ST": {
+   "text": "Billerud stellt Verpackungsmaterialien aus Frischfasern her, etwa Karton und Wellpappe für Lebensmittel und Industrie. Kunden sind Verpackungsproduzenten und Lebensmittelkonzerne.",
+   "pruefen": false
+  },
+  "BIOMAR.CO": {
+   "text": "Biomar ist ein dänischer Hersteller von Futtermitteln für Zuchtfische und Garnelen. Die Erlöse kommen aus dem Verkauf von Futter an Aquakultur-Betriebe.",
+   "pruefen": false
+  },
+  "BITTI.HE": {
+   "text": "Bittium ist ein finnischer Hersteller von Kommunikations- und Sicherheitstechnik für Behörden und Streitkräfte. Das Angebot umfasst Funkgeräte, Sicherheitssoftware und Systeme für den Einsatz im Feld.",
+   "pruefen": false
+  },
+  "BNJ.AS": {
+   "text": "Banijay ist ein europäischer Produktionskonzern für Fernsehformate und Unterhaltung, zu dem auch bekannte Reality-Formate gehören. Die Erlöse stammen aus Lizenzen der Formate und Auftragsproduktionen für Sender.",
+   "pruefen": false
+  },
+  "BONHR.OL": {
+   "text": "Bonheur ist eine norwegische Beteiligungsgesellschaft mit Investments in Energie, Schifffahrt und erneuerbare Energien. Die Erlöse stammen aus den Beteiligungen.",
+   "pruefen": false
+  },
+  "BRG.OL": {
+   "text": "Borregaard ist ein norwegischer Spezialchemiekonzern, der Produkte aus Holz herstellt, etwa Lignin, Cellulose und Vanillin. Kunden sind Hersteller von Baustoffen, Kosmetik und Lebensmitteln.",
+   "pruefen": false
+  },
+  "BURE.ST": {
+   "text": "Bure Equity ist eine schwedische Beteiligungsgesellschaft, die in mittelständische Unternehmen investiert. Die Erlöse stammen aus Gewinnen bei Verkäufen und Beteiligungserträgen.",
+   "pruefen": false
+  },
+  "C5H.IR": {
+   "text": "Cairn Homes ist ein irischer Wohnungsbauer, der Eigenheime und Wohnungen in Irland errichtet. Die Erlöse stammen aus dem Verkauf der Wohnungen.",
+   "pruefen": false
+  },
+  "CARM.PA": {
+   "text": "Carmila ist ein französischer Investor in Einkaufszentren in Frankreich, Italien und Spanien. Die Erlöse stammen aus Mieten der Ladenflächen.",
+   "pruefen": false
+  },
+  "CAST.ST": {
+   "text": "Castellum ist ein schwedischer Immobilienkonzern mit Büro-, Logistik- und Gewerbeimmobilien in Schweden und Finnland. Die Einnahmen kommen aus der Vermietung.",
+   "pruefen": false
+  },
+  "CATE.ST": {
+   "text": "Catena ist ein schwedischer Immobilieninvestor mit Wohnungen, vor allem in Göteborg und Umgebung. Die Erlöse stammen aus Mieten.",
+   "pruefen": false
+  },
+  "CCEP.AS": {
+   "text": "Coca-Cola Europacific Partners füllt und vertreibt Coca-Cola-Getränke in Westeuropa, Australien und Teilen Asiens. Das Geschäft umfasst Abfüllung, Logistik und Verkauf an Handel und Gastronomie.",
+   "pruefen": false
+  },
+  "CDA.PA": {
+   "text": "Compagnie des Alpes betreibt Freizeitparks und Skigebiete in Frankreich. Die Erlöse stammen aus Eintrittskarten, Skipässen und Gastronomie.",
+   "pruefen": false
+  },
+  "CE.MI": {
+   "text": "Credem ist eine italienische Regionalbank in der Emilia-Romagna mit Privat- und Firmenkundengeschäft. Das Geschäft umfasst Kredite, Einlagen und Vermögensverwaltung.",
+   "pruefen": false
+  },
+  "CEM.MI": {
+   "text": "Cementir Holding stellt Zement und Baustoffe her, mit Produktionsstandorten in Italien, Dänemark und der Türkei. Kunden sind Bauunternehmen und Betonwerke.",
+   "pruefen": false
+  },
+  "CLA-B.ST": {
+   "text": "Cloetta ist ein schwedischer Süßwarenhersteller, bekannt für Lakritz, Schokolade und Kaugummi. Die Produkte werden in Europa und Nordamerika über den Handel verkauft.",
+   "pruefen": false
+  },
+  "CLAS-B.ST": {
+   "text": "Clas Ohlson ist ein schwedischer Einzelhändler für Haushaltswaren, Werkzeuge und Elektronik. Die Erlöse kommen aus Filialen und dem Onlinehandel.",
+   "pruefen": false
+  },
+  "CMB.MI": {
+   "text": "Cembre ist ein italienischer Hersteller von Werkzeugen für die Elektroinstallation, etwa Crimpzangen und Kabelschuhe. Kunden sind Elektriker und Installationsbetriebe.",
+   "pruefen": false
+  },
+  "CMBT.BR": {
+   "text": "CMB.TECH ist ein belgischer Reeder, der Tanker und Bulkschiffe betreibt und an Industrie- und Energieunternehmen verchartert. Die Erlöse stammen aus Charterraten.",
+   "pruefen": false
+  },
+  "COFA.PA": {
+   "text": "Coface ist ein französischer Kreditversicherer, der Unternehmen gegen Zahlungsausfälle ihrer Kunden absichert. Die Erlöse stammen aus Versicherungsprämien.",
+   "pruefen": false
+  },
+  "COM.MI": {
+   "text": "Comer Industries stellt Getriebe und Antriebskomponenten für Landmaschinen und Industriefahrzeuge her. Kunden sind Hersteller von Traktoren und Baumaschinen.",
+   "pruefen": false
+  },
+  "COUD.DE": {
+   "text": "Computacenter ist ein britischer IT-Dienstleister, der Hardware, Software und IT-Infrastruktur an Unternehmen und Behörden verkauft und betreut.",
+   "pruefen": false
+  },
+  "COV.PA": {
+   "text": "Covivio ist ein französischer Immobilienkonzern mit Büro-, Hotel- und Wohnimmobilien in Frankreich und Europa. Die Erlöse stammen aus Mieten.",
+   "pruefen": false
+  },
+  "COVH.PA": {
+   "text": "Covivio Hotels besitzt Hotelimmobilien in Europa, die an Hotelbetreiber verpachtet werden. Die Erlöse stammen aus den Pachten.",
+   "pruefen": false
+  },
+  "CRL.MI": {
+   "text": "Carel Industries stellt Steuerungen und Komponenten für Klima- und Kältetechnik her, etwa für Kühlanlagen und Wärmepumpen. Kunden sind Hersteller und Installateure.",
+   "pruefen": false
+  },
+  "CVC.AS": {
+   "text": "CVC Capital Partners ist eine börsennotierte Beteiligungsgesellschaft für Private Equity. Sie legt Fonds auf, investiert in mittelgroße Unternehmen in Europa und Asien und verdient an Verwaltungsgebühren und Erfolgsbeteiligungen.",
+   "pruefen": false
+  },
+  "CY0106002112": {
+   "text": "Atalaya Mining fördert Kupfer und Gold, unter anderem in Spanien (Riotinto) und Mexiko. Die Erlöse stammen aus dem Verkauf der Metallkonzentrate an Schmelzereien.",
+   "pruefen": false
+  },
+  "DIA.MI": {
+   "text": "Diasorin entwickelt und verkauft Diagnostik-Tests für Laborgeräte, vor allem in den Bereichen Infektionen, Knochenstoffwechsel und Immunologie. Kunden sind Kliniken und Labore weltweit.",
+   "pruefen": false
+  },
+  "DNR.MI": {
+   "text": "De Nora stellt Elektroden und Elektrolyseanlagen her, etwa für Chlor- und Wasserstoffproduktion sowie für Wasseraufbereitung. Kunden sind Chemie-, Wasser- und Energieunternehmen.",
+   "pruefen": false
+  },
+  "DOFG.OL": {
+   "text": "DOF Group betreibt Versorgungsschiffe und Offshore-Spezialschiffe, die Öl- und Gasplattformen und Windparks bedienen. Die Erlöse stammen aus Charterverträgen.",
+   "pruefen": false
+  },
+  "DOQ.DE": {
+   "text": "DO & CO betreibt Catering und Restaurants, unter anderem in Flugzeugen und an Flughäfen sowie Hotels und Veranstaltungen. Die Erlöse stammen aus Gastronomie- und Cateringverträgen.",
+   "pruefen": false
+  },
+  "ECMPM.MI": {
+   "text": "Eurocommercial Properties besitzt und betreibt Einkaufszentren in mehreren europäischen Ländern, vor allem in Italien, Frankreich und Schweden. Die Erlöse stammen aus Mieten.",
+   "pruefen": false
+  },
+  "EJT1.DE": {
+   "text": "easyJet ist eine britisch-europäische Billigfluggesellschaft mit Flugverbindungen vor allem innerhalb Europas. Die Erlöse stammen aus Ticketverkäufen und Zusatzleistungen wie Gepäck und Sitzplatzwahl.",
+   "pruefen": false
+  },
+  "EKTA-B.ST": {
+   "text": "Elekta entwickelt Systeme für die Strahlentherapie und Neurochirurgie, etwa Linearbeschleuniger für die Krebsbehandlung. Kunden sind Kliniken weltweit, Umsätze entstehen durch Geräte und Service.",
+   "pruefen": false
+  },
+  "ELN.MI": {
+   "text": "EL.EN. stellt Laser-Systeme für Medizin und Industrie her, etwa für Hautbehandlungen und Materialbearbeitung. Die Erlöse stammen aus Geräteverkäufen und Service.",
+   "pruefen": false
+  },
+  "ENAV.MI": {
+   "text": "ENAV ist der italienische Flugsicherungsdienstleister. Das Unternehmen steuert den Luftverkehr in Italien und erhält dafür Gebühren von Fluggesellschaften.",
+   "pruefen": false
+  },
+  "ENTRA.OL": {
+   "text": "Entra ist ein norwegischer Immobilienkonzern mit Büro- und Gewerbeimmobilien vor allem in Oslo und anderen norwegischen Städten. Die Einnahmen kommen aus Mieten.",
+   "pruefen": false
+  },
+  "ES0105122024": {
+   "text": "Metrovacesa ist ein spanischer Immobilienentwickler für Wohnungen und Gewerbeflächen, vor allem in Madrid und an der Küste. Die Erlöse stammen aus dem Verkauf entwickelter Objekte.",
+   "pruefen": false
+  },
+  "ES0105251005": {
+   "text": "Neinor Homes ist ein spanischer Wohnungsentwickler, der Neubauwohnungen in den großen Städten Spaniens errichtet und verkauft.",
+   "pruefen": false
+  },
+  "ES0105287009": {
+   "text": "Aedas Homes ist ein spanischer Wohnungsbauer, der Neubauprojekte in Spanien und Portugal entwickelt. Die Erlöse stammen aus dem Verkauf der Wohnungen.",
+   "pruefen": false
+  },
+  "ES0105546008": {
+   "text": "Línea Directa ist ein spanischer Versicherer für Kfz-, Haus- und Lebensversicherungen. Die Erlöse stammen aus Prämien und Kapitalerträgen.",
+   "pruefen": false
+  },
+  "ES0105836003": {
+   "text": "Inmocemento ist ein spanischer Hersteller von Zement und Baustoffen, der hauptsächlich auf dem spanischen Markt aktiv ist.",
+   "pruefen": true
+  },
+  "ES0134950F36": {
+   "text": "Faes Farma ist ein spanischer Pharmakonzern, der Generika, rezeptfreie Präparate und Allergiemittel herstellt. Die Erlöse stammen aus dem Verkauf von Arzneimitteln in Europa und Lateinamerika.",
+   "pruefen": false
+  },
+  "ES0139140174": {
+   "text": "Colonial ist eine spanische Immobiliengesellschaft (SOCIMI) mit Büros und Wohnungen in Madrid und Barcelona. Die Einnahmen stammen aus Mieten.",
+   "pruefen": false
+  },
+  "ES0157097017": {
+   "text": "Almirall ist ein spanisches Pharmaunternehmen mit Schwerpunkt auf Dermatologie. Die Erlöse stammen aus Medikamenten gegen Hauterkrankungen.",
+   "pruefen": false
+  },
+  "ES0169501022": {
+   "text": "PharmaMar ist ein spanisches Biotech- und Pharmaunternehmen, das Krebsmedikamente aus Meeresorganismen entwickelt und vermarktet. Erlöse entstehen durch Medikamentenverkäufe und Lizenzen.",
+   "pruefen": false
+  },
+  "ES01717430J3": {
+   "text": "Prisa ist ein spanischer Medienkonzern mit Zeitungen, Radio und Bildungsangeboten in Spanien und Lateinamerika. Die Erlöse stammen aus Werbung, Abos und Bildungsdienstleistungen.",
+   "pruefen": true
+  },
+  "ES0173908015": {
+   "text": "Realia Business ist eine spanische Immobiliengesellschaft mit Büros und Gewerbeflächen, vor allem in Madrid. Die Einnahmen stammen aus Mieten.",
+   "pruefen": false
+  },
+  "ES0176252718": {
+   "text": "Meliá Hotels International betreibt Hotels in Spanien, Europa, Amerika und Asien. Die Erlöse stammen aus Übernachtungen und Gastronomie.",
+   "pruefen": false
+  },
+  "ES0180907000": {
+   "text": "Unicaja ist eine spanische Regionalbank mit Schwerpunkt Andalusien. Das Geschäft umfasst Privat- und Firmenkredite, Einlagen und Vermögensverwaltung.",
+   "pruefen": false
+  },
+  "EVO.ST": {
+   "text": "Evolution ist ein schwedischer Anbieter von Live-Casino-Software, die Online-Casinos weltweit mit Spielen und Dealern versorgt. Die Erlöse stammen aus Lizenzgebühren pro gespieltem Umsatz.",
+   "pruefen": false
+  },
+  "EXA.PA": {
+   "text": "Exail Technologies entwickelt Navigations- und Robotiksysteme für Marine, Verteidigung und Forschung. Kunden sind Marineverbände und Forschungsinstitute.",
+   "pruefen": false
+  },
+  "EXENS.PA": {
+   "text": "Exosens stellt Nachtsicht- und Infrarot-Sensorik her, die im Militär, in der Industrie und für Sicherheitsanwendungen eingesetzt wird.",
+   "pruefen": false
+  },
+  "FABG.ST": {
+   "text": "Fabege ist ein schwedischer Immobilienkonzern mit Büro- und Gewerbeflächen in Stockholm. Die Erlöse stammen aus Mieten.",
+   "pruefen": false
+  },
+  "FLUX.BR": {
+   "text": "Fluxys Belgium betreibt Erdgas-Fernleitungen und Terminals für Flüssigerdgas in Belgien. Die Erlöse stammen aus regulierten Netzentgelten.",
+   "pruefen": false
+  },
+  "FREY.PA": {
+   "text": "Frey ist ein französischer Immobilieninvestor mit Einkaufszentren und Gewerbeimmobilien. Die Erlöse stammen aus Mieten.",
+   "pruefen": false
+  },
+  "FSKRS.HE": {
+   "text": "Fiskars ist ein finnischer Konsumgüterkonzern mit Marken für Haushalt, Garten und Outdoor. Die Erlöse stammen aus dem Verkauf der Produkte über Handel und Onlinekanäle.",
+   "pruefen": false
+  },
+  "GB0000904986": {
+   "text": "Bellway ist ein britischer Wohnungsbauer, der Einfamilienhäuser und Wohnungen in England und Schottland errichtet. Die Erlöse stammen aus dem Verkauf der Häuser.",
+   "pruefen": false
+  },
+  "GB0000961622": {
+   "text": "Balfour Beatty ist ein britischer Baukonzern für Infrastruktur, Verkehrswege und Gebäude. Die Erlöse stammen aus Bauaufträgen öffentlicher und privater Auftraggeber.",
+   "pruefen": false
+  },
+  "GB0001367019": {
+   "text": "British Land ist ein britischer Immobilienkonzern mit Einzelhandels-, Büro- und Logistikimmobilien. Die Einnahmen stammen aus Mieten.",
+   "pruefen": false
+  },
+  "GB0001826634": {
+   "text": "Diploma stellt Dichtungen, Ventile und Verbindungstechnik für Industrie und Gesundheitsbereich her und vertreibt sie über Lager. Der Umsatz kommt aus Verkäufen an Industriekunden.",
+   "pruefen": false
+  },
+  "GB0002018363": {
+   "text": "Clarkson ist ein britischer Schiffsmakler, der Schiffsfrachten und Charterverträge vermittelt. Die Erlöse stammen aus Vermittlungsgebühren.",
+   "pruefen": false
+  },
+  "GB0002074580": {
+   "text": "Genus ist ein britischer Tierzuchtkonzern, der genetisch verbesserte Zuchttiere und Spermien für Schweine- und Rinderhaltung verkauft.",
+   "pruefen": true
+  },
+  "GB0002148343": {
+   "text": "Rathbones ist ein britischer Vermögensverwalter für Privatkunden und Stiftungen. Die Erlöse stammen aus Verwaltungsgebühren auf das betreute Vermögen.",
+   "pruefen": false
+  },
+  "GB0002318888": {
+   "text": "Cranswick ist ein britischer Lebensmittelhersteller, der Fleisch- und Fertigprodukte für Supermarktketten herstellt, vor allem Geflügel und Schweinefleisch.",
+   "pruefen": false
+  },
+  "GB0002418548": {
+   "text": "Elementis stellt Spezialchemikalien her, etwa Verdicker und Additive für Farben, Kosmetik und Haushaltsprodukte.",
+   "pruefen": false
+  },
+  "GB0002652740": {
+   "text": "Derwent London besitzt und vermietet Büroimmobilien im Zentrum Londons. Die Einnahmen stammen aus Mieten.",
+   "pruefen": false
+  },
+  "GB0003096442": {
+   "text": "RS Group ist ein britischer Industrievertrieb, der technische Komponenten und Werkzeuge über Katalog und Online-Shop an Industriekunden verkauft.",
+   "pruefen": false
+  },
+  "GB0003452173": {
+   "text": "FirstGroup betreibt Bus- und Bahnverkehr in Großbritannien und den USA. Die Erlöse stammen aus Fahrgeldern und öffentlichen Verkehrsverträgen.",
+   "pruefen": false
+  },
+  "GB0003781050": {
+   "text": "Goodwin stellt Gussteile und Schmiedeteile für Industrie und Energiewirtschaft her. Kunden sind Hersteller aus Maschinenbau und Energie.",
+   "pruefen": false
+  },
+  "GB0004161021": {
+   "text": "Hays ist ein britischer Personaldienstleister, der Fach- und Führungskräfte vermittelt. Die Erlöse stammen aus Vermittlungsgebühren und Zeitarbeit.",
+   "pruefen": false
+  },
+  "GB0004270301": {
+   "text": "Hill & Smith stellt Infrastrukturprodukte wie Schutzplanken, Beleuchtungsmasten und Gitterroste her. Kunden sind Straßenbauer und Versorger.",
+   "pruefen": false
+  },
+  "GB0004657408": {
+   "text": "Mitie ist ein britischer Facility-Management-Dienstleister, der Gebäude reinigt, wartet und Sicherheitsdienste erbringt. Die Erlöse stammen aus langfristigen Dienstleistungsverträgen.",
+   "pruefen": false
+  },
+  "GB0004866223": {
+   "text": "Keller ist ein britischer Spezialtiefbauer, der Fundamente, Bodenverbesserungen und Spezialgründungen für Bauprojekte ausführt.",
+   "pruefen": false
+  },
+  "GB0004915632": {
+   "text": "Kier ist ein britischer Bau- und Dienstleistungskonzern mit Schwerpunkt auf öffentlichen Auftraggebern. Die Erlöse stammen aus Bauaufträgen und Wartungsverträgen.",
+   "pruefen": false
+  },
+  "GB0005774855": {
+   "text": "BlackRock World Mining Trust ist ein britischer Investmentfonds, der in Minen- und Rohstoffunternehmen weltweit investiert. Die Erträge hängen von den Kursen der Beteiligungen ab.",
+   "pruefen": false
+  },
+  "GB0006640972": {
+   "text": "4imprint ist ein britischer Anbieter von bedrucktem Werbematerial wie Kugelschreibern, Taschen und Textilien. Die Kunden sind Unternehmen, die Werbegeschenke bestellen.",
+   "pruefen": false
+  },
+  "GB0006650450": {
+   "text": "Oxford Instruments stellt Analysegeräte und Messtechnik her, etwa für Materialforschung, Halbleiter und Medizin. Kunden sind Forschungseinrichtungen und Industrieunternehmen.",
+   "pruefen": false
+  },
+  "GB0006928617": {
+   "text": "Unite Group ist ein britischer Immobilienkonzern, der Studentenwohnheime in Großbritannien besitzt und betreibt. Die Erlöse stammen aus Mieten.",
+   "pruefen": false
+  },
+  "GB0007323586": {
+   "text": "Renishaw entwickelt Messtechnik und 3D-Drucker für die Fertigungsindustrie sowie medizinische Geräte. Die Erlöse stammen aus Geräteverkäufen und Service.",
+   "pruefen": false
+  },
+  "GB0007366395": {
+   "text": "RIT Capital Partners ist ein britischer Investmentfonds, der in Aktien, Anleihen und Beteiligungen weltweit investiert. Die Erträge hängen von der Wertentwicklung des Portfolios ab.",
+   "pruefen": false
+  },
+  "GB0007669376": {
+   "text": "St. James's Place ist ein britischer Vermögensverwalter, der über selbständige Berater Anlagelösungen an Privatkunden vermittelt. Die Erlöse stammen aus Gebühren auf das verwaltete Vermögen.",
+   "pruefen": false
+  },
+  "GB0007973794": {
+   "text": "Serco ist ein britischer Dienstleister für öffentliche Verwaltung, Verkehr und Verteidigung. Die Erlöse stammen aus langfristigen Verträgen mit Regierungen.",
+   "pruefen": true
+  },
+  "GB0008085614": {
+   "text": "Morgan Sindall ist ein britischer Bau- und Immobilienkonzern mit Projekten für öffentliche und private Auftraggeber. Die Erlöse stammen aus Bauaufträgen und Immobilienentwicklung.",
+   "pruefen": false
+  },
+  "GB0009465807": {
+   "text": "Weir stellt Pumpen und Mahlanlagen für Bergbau und Öl- und Gasindustrie her. Kunden sind Bergbaukonzerne und Förderunternehmen.",
+   "pruefen": false
+  },
+  "GB0031429219": {
+   "text": "Law Debenture ist ein britischer Dienstleister für Treuhand- und Unternehmensberatung, unter anderem für Pensionsfonds und Unternehmensstrukturen.",
+   "pruefen": false
+  },
+  "GB0033986497": {
+   "text": "ITV ist ein britischer Fernsehsender mit Programmen und Streaming-Angeboten. Die Erlöse stammen aus Werbung und Lizenzen.",
+   "pruefen": false
+  },
+  "GB00B04V1276": {
+   "text": "Grainger ist ein britischer Immobilienkonzern, der Wohnungen zur Miete in Großbritannien besitzt und verwaltet. Die Einnahmen stammen aus Mieten.",
+   "pruefen": false
+  },
+  "GB00B0LCW083": {
+   "text": "Hikma ist ein britisch-jordanischer Pharmakonzern, der Generika und Markenmedikamente herstellt, vor allem für die USA und Nordafrika.",
+   "pruefen": false
+  },
+  "GB00B0WMWD03": {
+   "text": "QinetiQ ist ein britischer Verteidigungs- und Technologiekonzern, der Testdienste, Sensorik und Sicherheitssysteme für Militär und Behörden anbietet.",
+   "pruefen": false
+  },
+  "GB00B132NW22": {
+   "text": "Ashmore ist ein britischer Vermögensverwalter, der auf Anleihen und Anlagen in Schwellenländern spezialisiert ist. Die Erlöse stammen aus Verwaltungsgebühren.",
+   "pruefen": false
+  },
+  "GB00B135BJ46": {
+   "text": "Savills ist ein britischer Immobiliendienstleister mit Vermittlung, Verwaltung und Beratung für Gewerbe- und Wohnimmobilien weltweit.",
+   "pruefen": false
+  },
+  "GB00B14SKR37": {
+   "text": "CMC Markets ist ein britischer Online-Broker für CFDs, Devisen und Trading-Plattformen. Die Erlöse stammen aus Spreads und Handelsgebühren der Kunden.",
+   "pruefen": false
+  },
+  "GB00B1CKQ739": {
+   "text": "Dunelm ist ein britischer Einzelhändler für Heimtextilien, Möbel und Küchenzubehör mit Filialen und Onlinehandel.",
+   "pruefen": false
+  },
+  "GB00B1N7Z094": {
+   "text": "Safestore ist ein britischer Anbieter von Selbstlagerräumen mit Standorten in Großbritannien, Frankreich und den Niederlanden. Die Erlöse stammen aus Lagermieten.",
+   "pruefen": false
+  },
+  "GB00B1VNSX38": {
+   "text": "Drax betreibt das Kraftwerk Drax in Nordengland, das inzwischen überwiegend mit Biomasse arbeitet, und vermarktet Strom. Die Erlöse stammen aus Stromverkauf und Subventionen.",
+   "pruefen": false
+  },
+  "GB00B1ZBKY84": {
+   "text": "MONY Group ist ein britischer Anbieter von Lebensversicherungen und Vermögensverwaltung für Privatkunden. Die Erlöse stammen aus Prämien und Verwaltungsgebühren.",
+   "pruefen": true
+  },
+  "GB00B2NGPM57": {
+   "text": "Paragon Banking ist eine britische Spezialbank für Immobilienfinanzierung und Vermietungskredite. Die Erlöse stammen aus Zinsen auf Kredite.",
+   "pruefen": false
+  },
+  "GB00B3FLWH99": {
+   "text": "Bodycote ist ein britischer Dienstleister für Wärmebehandlung von Metallen, etwa Härten und Glühen für Automobil- und Luftfahrtindustrie.",
+   "pruefen": false
+  },
+  "GB00B41H7391": {
+   "text": "Zigup ist ein britischer Dienstleister für Vermietung und Wartung von Fahrzeugen und Arbeitsgeräten. Kunden sind Unternehmen und Behörden.",
+   "pruefen": true
+  },
+  "GB00B45C9X44": {
+   "text": "Chemring stellt Verteidigungstechnik her, etwa Täuschkörper gegen Raketen, Sensoren und Sprengstoffdetektoren. Kunden sind Streitkräfte und Regierungen.",
+   "pruefen": false
+  },
+  "GB00B4WFW713": {
+   "text": "LondonMetric ist ein britischer Immobilienkonzern mit Logistik- und Einzelhandelsimmobilien. Die Einnahmen stammen aus langfristigen Mietverträgen.",
+   "pruefen": false
+  },
+  "GB00B4Y7R145": {
+   "text": "Currys ist ein britischer Elektronikhändler mit Filialen und Onlinehandel für Haushaltsgeräte, Computer und Unterhaltungselektronik.",
+   "pruefen": false
+  },
+  "GB00B4YZN328": {
+   "text": "Coats ist ein britischer Hersteller von Nähgarnen und Industriefäden, der Textil- und Schuhindustrie beliefert.",
+   "pruefen": false
+  },
+  "GB00B53P2009": {
+   "text": "Jupiter ist ein britischer Vermögensverwalter, der aktiv gemanagte Fonds für Privat- und Institutionelle Kunden anbietet. Die Erlöse stammen aus Verwaltungsgebühren.",
+   "pruefen": false
+  },
+  "GB00B61TVQ02": {
+   "text": "Inchcape ist ein britischer Automobilhändler und Dienstleister, der Fahrzeugmarken in mehreren Ländern vertreibt und wartet.",
+   "pruefen": false
+  },
+  "GB00B62G9D36": {
+   "text": "Shaftesbury Capital ist ein britischer Immobilienkonzern mit Einzelhandels- und Gastronomieflächen im Londoner West End. Die Einnahmen stammen aus Mieten.",
+   "pruefen": false
+  },
+  "GB00B63QSB39": {
+   "text": "Greggs ist eine britische Bäckerei-Kette mit Filialen und Lieferangeboten für Backwaren, Sandwiches und Kaffee.",
+   "pruefen": false
+  },
+  "GB00B7N0K053": {
+   "text": "Premier Foods ist ein britischer Lebensmittelhersteller, bekannt für Marken wie Mr Kipling und Batchelors. Die Erlöse stammen aus dem Verkauf an Supermärkte.",
+   "pruefen": false
+  },
+  "GB00B82YXW83": {
+   "text": "Vesuvius stellt feuerfeste Materialien und Gießtechnik für die Stahlindustrie her. Kunden sind Stahlwerke weltweit.",
+   "pruefen": false
+  },
+  "GB00B8SC6K54": {
+   "text": "Greencoat UK Wind besitzt Anteile an Offshore-Windparks in Großbritannien. Die Einnahmen stammen aus dem Stromverkauf und Förderzahlungen.",
+   "pruefen": false
+  },
+  "GB00BD45SH49": {
+   "text": "Integrafin ist ein britischer Plattformanbieter für Finanzberater, der Fonds- und Depotverwaltung für Anlageberater bereitstellt. Die Erlöse stammen aus Plattformgebühren.",
+   "pruefen": false
+  },
+  "GB00BF345X11": {
+   "text": "Supermarket Income REIT besitzt Supermärkte, die langfristig an Lebensmittelhändler vermietet sind. Die Einnahmen stammen aus Mieten.",
+   "pruefen": false
+  },
+  "GB00BF5H9P87": {
+   "text": "Great Portland Estates besitzt Büroimmobilien im Londoner Zentrum. Die Einnahmen stammen aus Mieten.",
+   "pruefen": false
+  },
+  "GB00BF8Q6K64": {
+   "text": "Aberdeen Group ist ein britischer Vermögensverwalter mit Fonds für institutionelle und private Anleger. Die Erlöse stammen aus Verwaltungsgebühren.",
+   "pruefen": false
+  },
+  "GB00BFZNLB60": {
+   "text": "AJ Bell ist ein britischer Online-Broker und Anbieter von Pensions- und Anlageplattformen für Privatkunden. Die Erlöse stammen aus Kontogebühren und Handelsprovisionen.",
+   "pruefen": false
+  },
+  "GB00BG49KP99": {
+   "text": "Tritax Big Box ist ein britischer Immobilieninvestor für große Logistikhallen, die an Handels- und Logistikunternehmen vermietet werden.",
+   "pruefen": false
+  },
+  "GB00BGBN7C04": {
+   "text": "SSP Group betreibt Restaurants und Imbisse an Flughäfen, Bahnhöfen und Autobahnen. Die Erlöse stammen aus Gastronomie an Verkehrsknotenpunkten.",
+   "pruefen": false
+  },
+  "GB00BGDT3G23": {
+   "text": "Rightmove betreibt das größte Immobilienportal Großbritanniens. Die Erlöse stammen aus Inserategebühren von Maklern und Immobilienbüros.",
+   "pruefen": false
+  },
+  "GB00BGLP8L22": {
+   "text": "IMI ist ein britischer Industriekonzern, der Ventile und Steuerungssysteme für Automobil, Industrie und Energie herstellt.",
+   "pruefen": false
+  },
+  "GB00BJ0LT190": {
+   "text": "HgCapital Trust ist ein britischer Investmentfonds, der in Private-Equity-Beteiligungen an Software- und Dienstleistungsunternehmen investiert.",
+   "pruefen": false
+  },
+  "GB00BJ62K685": {
+   "text": "Pets at Home ist eine britische Handelskette für Tierbedarf mit Filialen, Tierkliniken und Hundeschulen.",
+   "pruefen": false
+  },
+  "GB00BJHPLV88": {
+   "text": "Ninety One ist ein britischer Vermögensverwalter, der Fonds in Aktien, Anleihen und Rohstoffen anbietet, mit Schwerpunkt auf Schwellenländern. Die Erlöse stammen aus Verwaltungsgebühren.",
+   "pruefen": false
+  },
+  "GB00BK9RKT01": {
+   "text": "Travis Perkins ist ein britischer Händler für Baustoffe und Heimwerkerbedarf mit Filialen und Onlinehandel für Bauunternehmen und Privatkunden.",
+   "pruefen": false
+  },
+  "GB00BLDRH360": {
+   "text": "OSB Group ist eine britische Bank mit Spezialfinanzierungen für Immobilien und Kredite für Privatkunden und Kleinunternehmen.",
+   "pruefen": false
+  },
+  "GB00BMH18Q19": {
+   "text": "Bytes Technology ist ein britischer Softwarehändler, der Lizenzen und IT-Dienstleistungen an Unternehmen und Behörden verkauft.",
+   "pruefen": false
+  },
+  "GB00BMJ6DW54": {
+   "text": "Informa ist ein britischer Konzern für Fachmessen, Verlagswesen und Forschungsdaten. Die Erlöse stammen aus Messeteilnahmen, Abonnements und Veranstaltungen.",
+   "pruefen": false
+  },
+  "GB00BMT9K014": {
+   "text": "Moonpig ist ein britischer Online-Händler für Grußkarten, Geschenke und Blumen, der Bestellungen direkt an Kunden versendet.",
+   "pruefen": false
+  },
+  "GB00BN3ZZ526": {
+   "text": "Volution stellt Lüftungssysteme für Gebäude her, etwa Ventilatoren und Wärmerückgewinnung. Kunden sind Installateure und Bauunternehmen.",
+   "pruefen": true
+  },
+  "GB00BN44P254": {
+   "text": "Baltic Classifieds betreibt Kleinanzeigenportale für Autos und Immobilien im Baltikum. Die Erlöse stammen aus Inserategebühren.",
+   "pruefen": false
+  },
+  "GB00BND88V85": {
+   "text": "Bridgepoint ist ein britischer Private-Equity-Investor, der in mittelständische Unternehmen in Europa investiert. Die Erlöse stammen aus Fondsmanagement und Erfolgsbeteiligungen.",
+   "pruefen": false
+  },
+  "GB00BNHSJN34": {
+   "text": "Quilter ist ein britischer Vermögensverwalter, der Anlagelösungen und Pensionspläne für Privatkunden und Berater anbietet. Die Erlöse stammen aus Gebühren auf das verwaltete Vermögen.",
+   "pruefen": false
+  },
+  "GB00BNLPYF73": {
+   "text": "Spire Healthcare betreibt Privatkliniken in Großbritannien für Operationen und Diagnostik. Die Erlöse stammen aus Behandlungen von Privatpatienten und Versicherern.",
+   "pruefen": false
+  },
+  "GB00BNNTLN49": {
+   "text": "Pennon ist ein britischer Wasserversorger in Südwestengland mit Trinkwasser und Abwasserentsorgung. Die Erlöse stammen aus regulierten Tarifen der Kunden.",
+   "pruefen": false
+  },
+  "GB00BP92CJ43": {
+   "text": "Tate & Lyle stellt Zutaten wie Zuckeraustauschstoffe und Stärke für Lebensmittel- und Getränkehersteller her.",
+   "pruefen": false
+  },
+  "GB00BQS10J50": {
+   "text": "Gamma Communications ist ein britischer Anbieter von Cloud-Telefonie und Kommunikationsdiensten für Unternehmen. Die Erlöse stammen aus monatlichen Abonnements.",
+   "pruefen": false
+  },
+  "GB00BVFNZH21": {
+   "text": "Rotork stellt Stellantriebe und Regelventile für Öl- und Gasindustrie, Wasser und Energie her. Kunden sind Anlagenbauer und Betreiber von Industrieanlagen.",
+   "pruefen": false
+  },
+  "GB00BYN59130": {
+   "text": "Domino's Pizza Group betreibt die Domino's-Pizzerien in Großbritannien und Irland. Die Erlöse stammen aus Pizzaverkäufen über Filialen und Lieferung.",
+   "pruefen": false
+  },
+  "GB00BYRJ5J14": {
+   "text": "Primary Health Properties besitzt Arztpraxen und Gesundheitszentren in Großbritannien, die an Ärzte und NHS-Betreiber vermietet sind. Die Einnahmen stammen aus Mieten.",
+   "pruefen": false
+  },
+  "GB00BYW0PQ60": {
+   "text": "Land Securities ist einer der größten britischen Immobilienkonzerne mit Büros, Einkaufszentren und Wohnungen, vor allem in London.",
+   "pruefen": false
+  },
+  "GB00BYZDVK82": {
+   "text": "Softcat ist ein britischer IT-Händler, der Software, Hardware und Cloud-Lizenzen an Unternehmen und öffentliche Auftraggeber verkauft.",
+   "pruefen": false
+  },
+  "GB00BZ0D6727": {
+   "text": "Kainos ist ein britischer Softwareentwickler und IT-Dienstleister, der digitale Lösungen für Verwaltung, Gesundheit und Unternehmen entwickelt.",
+   "pruefen": false
+  },
+  "GFC.PA": {
+   "text": "Gecina ist ein französischer Immobilienkonzern mit Büros und Wohnungen in Paris. Die Einnahmen stammen aus Mieten.",
+   "pruefen": false
+  },
+  "GG00BMC7TM77": {
+   "text": "Cordiant Digital Infrastructure investiert in digitale Infrastruktur wie Mobilfunkmasten und Glasfasernetze. Die Einnahmen stammen aus Mietzahlungen der Netzbetreiber.",
+   "pruefen": false
+  },
+  "GIMB.BR": {
+   "text": "Gimv ist eine belgische Beteiligungsgesellschaft, die in mittelständische Unternehmen investiert. Die Erlöse stammen aus Beteiligungserträgen und Wertsteigerungen.",
+   "pruefen": false
+  },
+  "GRS003003035": {
+   "text": "Nationalbank Griechenland (National Bank of Greece) ist eine der größten Banken Griechenlands mit Privat- und Firmenkundengeschäft sowie Auslandsstandorten in Südosteuropa.",
+   "pruefen": false
+  },
+  "GRS120003009": {
+   "text": "Kapnoviomichania Karelia ist ein griechischer Hersteller von Zigarettenpapier und Verpackungen für die Tabakindustrie.",
+   "pruefen": true
+  },
+  "GRS260333000": {
+   "text": "OTE ist der größte Telekommunikationskonzern Griechenlands und bietet Festnetz, Mobilfunk, Internet und Fernsehen an.",
+   "pruefen": false
+  },
+  "GRS281003004": {
+   "text": "Elvalhalcor stellt Kupfer- und Aluminiumprodukte her, etwa Bänder, Rohre und Drähte für Bau, Industrie und Elektrotechnik.",
+   "pruefen": false
+  },
+  "GRS282183003": {
+   "text": "Jumbo ist eine griechische Handelskette für Spielwaren, Bürobedarf und Haushaltswaren mit Filialen in Griechenland und Zypern.",
+   "pruefen": false
+  },
+  "GRS359353000": {
+   "text": "EYDAP ist der griechische Wasserversorger für Athen und Umgebung. Die Erlöse stammen aus Wasser- und Abwassergebühren.",
+   "pruefen": false
+  },
+  "GRS426003000": {
+   "text": "Motor Oil Hellas betreibt Raffinerien in Korinth und ein Tankstellennetz in Griechenland. Die Erlöse stammen aus Kraftstoffverkäufen und Schmierstoffen.",
+   "pruefen": false
+  },
+  "GRS533003000": {
+   "text": "Optima Bank ist eine griechische Bank mit Schwerpunkt auf Privatkunden und digitalen Bankdienstleistungen.",
+   "pruefen": false
+  },
+  "GRS830003000": {
+   "text": "Alpha Bank ist eine griechische Großbank mit Privat- und Firmenkundengeschäft und Standorten in Südosteuropa und Zypern.",
+   "pruefen": false
+  },
+  "GRS831003009": {
+   "text": "Piraeus Bank ist eine der großen griechischen Banken mit Privat- und Firmenkundengeschäft in Griechenland und Zypern.",
+   "pruefen": false
+  },
+  "GTT.PA": {
+   "text": "Gaztransport & Technigaz entwickelt Membransysteme für Flüssigerdgas-Tanker und Lagertanks. Die Erlöse stammen aus Lizenzgebühren und Ingenieurdienstleistungen.",
+   "pruefen": false
+  },
+  "GUI.DE": {
+   "text": "Diageo ist der weltgrößte Spirituosenkonzern mit Marken wie Johnnie Walker, Guinness und Smirnoff. Die Erlöse stammen aus dem Verkauf von Alkoholika weltweit.",
+   "pruefen": false
+  },
+  "HACK.ST": {
+   "text": "Hacksaw ist ein schwedischer Entwickler von Online-Casino-Spielen, der Spiele an Glücksspielanbieter lizenziert.",
+   "pruefen": false
+  },
+  "HMS.ST": {
+   "text": "HMS Networks entwickelt Industrie-Netzwerkprodukte, mit denen Maschinen und Anlagen miteinander vernetzt werden. Die Erlöse stammen aus Hardware und Software.",
+   "pruefen": false
+  },
+  "HMSO.IR": {
+   "text": "Hammerson ist ein britischer Immobilienkonzern mit Einkaufszentren und Gewerbeflächen in Großbritannien und Frankreich. Die Einnahmen stammen aus Mieten.",
+   "pruefen": false
+  },
+  "HOFI.ST": {
+   "text": "Hoist Finance ist eine schwedische Gesellschaft, die notleidende Kreditforderungen aufkauft und einzieht.",
+   "pruefen": false
+  },
+  "HRPODRRA0004": {
+   "text": "Podravka ist ein kroatischer Lebensmittelkonzern mit Marken für Brühen, Gewürze, Fertiggerichte und Süßwaren, der vor allem in Südosteuropa verkauft.",
+   "pruefen": false
+  },
+  "HU0000061726": {
+   "text": "OTP Bank ist die größte Bank Ungarns mit Filialen in mehreren mittel- und osteuropäischen Ländern. Das Geschäft umfasst Privat- und Firmenkredite und Einlagen.",
+   "pruefen": false
+  },
+  "HUFV-A.ST": {
+   "text": "Hufvudstaden ist ein schwedischer Immobilienkonzern mit Büro- und Geschäftsimmobilien im Zentrum Stockholms. Die Einnahmen stammen aus Mieten.",
+   "pruefen": false
+  },
+  "IE0003864109": {
+   "text": "Greencore ist ein irischer Hersteller von Fertiggerichten und Sandwiches, die an Supermärkte in Großbritannien und den USA geliefert werden.",
+   "pruefen": false
+  },
+  "IE00BD5B1Y92": {
+   "text": "Bank of Cyprus ist die größte Bank Zyperns mit Privat- und Firmenkundengeschäft auf der Insel und in Griechenland.",
+   "pruefen": false
+  },
+  "IG.MI": {
+   "text": "Italgas ist der größte Gasnetzbetreiber Italiens. Die Erlöse stammen aus regulierten Netzentgelten für Gasverteilung.",
+   "pruefen": false
+  },
+  "INTEA-B.ST": {
+   "text": "Intea Fastigheter ist ein schwedischer Immobilienkonzern mit Büro- und Gewerbeimmobilien in Stockholm und anderen Städten. Die Einnahmen stammen aus Mieten.",
+   "pruefen": false
+  },
+  "IP.MI": {
+   "text": "Interpump Group stellt Hochdruckpumpen und Hydrauliksysteme her, die in Maschinen, Fahrzeugen und Reinigungsgeräten eingesetzt werden.",
+   "pruefen": false
+  },
+  "ITM.MI": {
+   "text": "Italmobiliare ist eine italienische Holding mit Beteiligungen an Industrie-, Finanz- und Immobilienunternehmen. Die Erlöse stammen aus Beteiligungserträgen.",
+   "pruefen": true
+  },
+  "ITP.PA": {
+   "text": "Interparfums ist ein französischer Parfümhersteller, der Lizenzmarken wie Montblanc und Lanvin vertreibt.",
+   "pruefen": false
+  },
+  "IVG.MI": {
+   "text": "Iveco ist ein Hersteller von Lkw, Bussen und Spezialfahrzeugen für Transport, Bau und Feuerwehr.",
+   "pruefen": false
+  },
+  "JDAN.CO": {
+   "text": "Jeudan ist eine dänische Immobiliengesellschaft mit Büros, Lagern und Gewerbeflächen in Dänemark. Die Einnahmen stammen aus Mieten.",
+   "pruefen": false
+  },
+  "JE00BJ1DLW90": {
+   "text": "Man Group ist ein britischer Vermögensverwalter, der systematische und aktive Investmentfonds anbietet. Die Erlöse stammen aus Verwaltungs- und Performancegebühren.",
+   "pruefen": false
+  },
+  "JE00BMDZN391": {
+   "text": "TP ICAP ist ein britischer Makler für Finanzmärkte, der Handelsplattformen und Vermittlung für Banken und Investoren anbietet.",
+   "pruefen": false
+  },
+  "KBHL.CO": {
+   "text": "Københavns Lufthavne betreibt den Flughafen Kopenhagen. Die Erlöse stammen aus Landegebühren, Passagiergebühren, Einzelhandel und Parkplätzen.",
+   "pruefen": false
+  },
+  "KIN.BR": {
+   "text": "Kinepolis betreibt Kinos in Europa und den USA. Die Erlöse stammen aus Eintrittskarten, Snacks und Werbung.",
+   "pruefen": false
+  },
+  "KIT.OL": {
+   "text": "Kitron stellt elektronische Baugruppen für Industrie, Medizin und Verteidigung im Auftrag anderer Firmen her.",
+   "pruefen": false
+  },
+  "LAGR-B.ST": {
+   "text": "Lagercrantz ist ein schwedischer Industriekonzern, der Mess- und Elektroniklösungen für Industrie und Energie anbietet.",
+   "pruefen": false
+  },
+  "LI.PA": {
+   "text": "Klépierre ist ein französischer Immobilienkonzern mit Einkaufszentren in Europa. Die Einnahmen stammen aus Mieten der Ladenflächen.",
+   "pruefen": false
+  },
+  "LUMO.HE": {
+   "text": "Lumo Kodit stellt Komponenten für Kunststoffverpackungen und Bodenbeläge her, überwiegend für den Bau- und Lebensmittelbereich.",
+   "pruefen": false
+  },
+  "MAU.PA": {
+   "text": "Maurel & Prom ist ein französisch-britischer Öl- und Gasproduzent mit Förderfeldern in Afrika und Südostasien.",
+   "pruefen": false
+  },
+  "MCOV-B.ST": {
+   "text": "Medicover betreibt Gesundheitszentren, Kliniken und Diagnostik in Osteuropa, Schwellenländern und Skandinavien. Die Erlöse stammen aus Behandlungen und Versicherungsverträgen.",
+   "pruefen": false
+  },
+  "MELE.BR": {
+   "text": "Melexis entwickelt Mikrochips und Sensoren für die Autoindustrie, etwa für Lenkung, Bremsen und Elektromotoren.",
+   "pruefen": false
+  },
+  "METSB.HE": {
+   "text": "Metsä Board ist ein finnischer Hersteller von Karton und Faltschachteln aus Frischfasern, vor allem für Lebensmittel- und Konsumgüterverpackungen.",
+   "pruefen": false
+  },
+  "MILDEF.ST": {
+   "text": "MilDef Group entwickelt und baut Rechner und Kommunikationssysteme für Militär und Verteidigung, etwa robuste Computer für Fahrzeuge.",
+   "pruefen": false
+  },
+  "MIPS.ST": {
+   "text": "MIPS entwickelt Schutzsysteme für Fahrradhelme und Sportausrüstung, die Gehirnerschütterungen bei Stürzen verringern sollen. Die Erlöse stammen aus Lizenzgebühren der Helmhersteller.",
+   "pruefen": false
+  },
+  "MOL.MI": {
+   "text": "Moltiply Group ist eine italienische Holding für Beteiligungen an Unternehmen im Mittelstand, etwa in Digital- und Dienstleistungsbranchen.",
+   "pruefen": true
+  },
+  "MYCR.ST": {
+   "text": "Mycronic stellt Maschinen für die Herstellung von Displays und Leiterplatten sowie Schreibgeräte für die Halbleiterindustrie her.",
+   "pruefen": false
+  },
+  "NCAB.ST": {
+   "text": "NCAB ist ein schwedischer Elektronik-Distributor, der Bauteile von Herstellern an Industriekunden verkauft.",
+   "pruefen": false
+  },
+  "NCC-B.ST": {
+   "text": "NCC ist ein schwedischer Bau- und Immobilienkonzern mit Infrastrukturprojekten und Wohnungsbau in den nordischen Ländern.",
+   "pruefen": false
+  },
+  "NEWA-B.ST": {
+   "text": "New Wave Group stellt Schneidwerkzeuge und Industriebedarf her und vertreibt sie an Industriekunden.",
+   "pruefen": false
+  },
+  "NEXI.MI": {
+   "text": "Nexi ist ein europäischer Zahlungsdienstleister. Die Erlöse stammen aus Gebühren für Kartenzahlungen und Kassensysteme im Handel.",
+   "pruefen": false
+  },
+  "NL0000008977": {
+   "text": "Heineken Holding ist die Holding des Brauereikonzerns Heineken und hält dessen Anteile. Die Erlöse stammen aus Dividenden der Tochtergesellschaft.",
+   "pruefen": false
+  },
+  "NOLA-B.ST": {
+   "text": "Nolato stellt Kunststoffteile und Komponenten für Medizintechnik, Haushaltsgeräte und Automobile her.",
+   "pruefen": false
+  },
+  "NOS.LS": {
+   "text": "NOS ist der größte Medien- und Telekommunikationskonzern Portugals mit Fernsehen, Mobilfunk und Festnetz. Die Erlöse stammen aus Abos und Werbung.",
+   "pruefen": false
+  },
+  "NP3.ST": {
+   "text": "NP3 Fastigheter ist ein schwedischer Immobilienkonzern mit Wohnungen und Gewerbeflächen in Mittelschweden. Die Einnahmen stammen aus Mieten.",
+   "pruefen": false
+  },
+  "NRP.AS": {
+   "text": "NEPI Rockcastle ist ein Immobilieninvestor mit Einkaufszentren in Osteuropa, vor allem in Rumänien, Polen und Russland. Die Einnahmen stammen aus Mieten.",
+   "pruefen": false
+  },
+  "OEM-B.ST": {
+   "text": "OEM International ist ein schwedischer Händler für Haushaltsgeräte und Elektronik, der Produkte über Handelsketten verkauft.",
+   "pruefen": false
+  },
+  "PAAL-B.CO": {
+   "text": "Per Aarsleff ist ein dänischer Bau- und Infrastrukturkonzern für Kanal-, Straßen- und Wasserbau.",
+   "pruefen": false
+  },
+  "PEUG.PA": {
+   "text": "Peugeot Invest ist eine französische Beteiligungsgesellschaft, die Anteile an Industrie- und Dienstleistungsunternehmen hält.",
+   "pruefen": false
+  },
+  "PLNW.PA": {
+   "text": "Planisware ist ein französischer Softwareanbieter für Projektmanagement und Produktentwicklung. Die Erlöse stammen aus Software-Abos.",
+   "pruefen": false
+  },
+  "PNDX-B.ST": {
+   "text": "Pandox ist ein schwedischer Hotelimmobilienbesitzer, der Hotels an Betreiber verpachtet. Die Einnahmen stammen aus Pachten.",
+   "pruefen": false
+  },
+  "PUUILO.HE": {
+   "text": "Puuilo ist eine finnische Handelskette für Haushaltswaren, Werkzeuge und Freizeitartikel mit Filialen und Onlinehandel.",
+   "pruefen": false
+  },
+  "RCO.PA": {
+   "text": "Rémy Cointreau stellt Cognac und Likör her, etwa Rémy Martin und Cointreau. Die Erlöse stammen aus dem weltweiten Verkauf der Marken.",
+   "pruefen": false
+  },
+  "REINA.AS": {
+   "text": "Reinet Investments ist eine luxemburgische Beteiligungsgesellschaft mit Anteilen an Unternehmen aus Konsumgütern und Finanzen.",
+   "pruefen": false
+  },
+  "RF.PA": {
+   "text": "Eurazeo ist eine französische Beteiligungsgesellschaft für Private Equity und Immobilien. Die Erlöse stammen aus Fondsmanagement und Beteiligungen.",
+   "pruefen": false
+  },
+  "RRTL.DE": {
+   "text": "RTL Group ist ein europäischer Medienkonzern mit Fernsehsendern, Streaming und Produktionsfirmen. Die Erlöse stammen aus Werbung und Abos.",
+   "pruefen": false
+  },
+  "RUSTA.ST": {
+   "text": "Rusta ist eine schwedische Handelskette für Haus, Garten und Freizeit mit Filialen in Skandinavien und Polen.",
+   "pruefen": false
+  },
+  "SAGA-A.ST": {
+   "text": "Sagax ist ein schwedischer Immobilienkonzern mit Gewerbe- und Logistikimmobilien. Die Einnahmen stammen aus Mieten.",
+   "pruefen": false
+  },
+  "SAVE.ST": {
+   "text": "Nordnet ist eine skandinavische Online-Bank und Broker-Plattform für Aktien, Fonds und Sparkonten. Die Erlöse stammen aus Handelsgebühren und Kontoeinlagen.",
+   "pruefen": false
+  },
+  "SCATC.OL": {
+   "text": "Scatec entwickelt und betreibt Solar- und Wasserstoffprojekte weltweit. Die Erlöse stammen aus langfristigen Stromabnahmeverträgen.",
+   "pruefen": false
+  },
+  "SCR.PA": {
+   "text": "SCOR ist ein französischer Rückversicherer, der Versicherer und Unternehmen gegen große Risiken absichert.",
+   "pruefen": false
+  },
+  "SCST.ST": {
+   "text": "Scandi Standard ist ein schwedischer Fleischverarbeiter, der Geflügel- und Schweinefleisch für Supermärkte und Gastronomie herstellt.",
+   "pruefen": false
+  },
+  "SECT-B.ST": {
+   "text": "Sectra entwickelt IT-Systeme für Krankenhäuser, vor allem Bildverarbeitung und Software für Radiologie. Die Erlöse stammen aus Lizenzen und Wartungsverträgen.",
+   "pruefen": false
+  },
+  "SI0021111651": {
+   "text": "Triglav ist die größte Versicherung Sloweniens mit Kfz-, Lebens- und Sachversicherungen. Die Erlöse stammen aus Prämien.",
+   "pruefen": false
+  },
+  "SI0021117344": {
+   "text": "Nova Ljubljanska banka ist die größte Bank Sloweniens mit Privat- und Firmenkundengeschäft.",
+   "pruefen": false
+  },
+  "SI0031101346": {
+   "text": "Luka Koper betreibt den Hafen von Koper in Slowenien und wickelt Container- und Schüttgutverkehr ab. Die Erlöse stammen aus Umschlag- und Lagergebühren.",
+   "pruefen": false
+  },
+  "SIP.BR": {
+   "text": "Sipef ist ein belgischer Agrarkonzern, der Palmöl, Kautschuk und Tee in Asien und Afrika produziert.",
+   "pruefen": false
+  },
+  "SJF.CO": {
+   "text": "SJF Bank ist eine dänische Bank mit Schwerpunkt auf Finanzierungen für Immobilien und Unternehmen.",
+   "pruefen": true
+  },
+  "SKIS-B.ST": {
+   "text": "SkiStar betreibt Skigebiete in Schweden und Norwegen sowie Ferienanlagen. Die Erlöse stammen aus Skipässen, Unterkünften und Gastronomie.",
+   "pruefen": false
+  },
+  "SOF.BR": {
+   "text": "Sofina ist eine belgische Beteiligungsgesellschaft mit Anteilen an internationalen Technologie- und Konsumunternehmen.",
+   "pruefen": false
+  },
+  "SOMA.OL": {
+   "text": "Solstad Maritime betreibt Offshore-Spezialschiffe, die Öl- und Gasunternehmen und Windparks bedienen. Die Erlöse stammen aus Charterverträgen.",
+   "pruefen": false
+  },
+  "SPA.BR": {
+   "text": "Société de Services, de Participations, de Direction et d'Élaboration (SPA) ist eine belgische Holding mit Beteiligungen an Industrie- und Dienstleistungsunternehmen.",
+   "pruefen": false
+  },
+  "STD.DE": {
+   "text": "Standard Chartered ist eine britische Bank mit Schwerpunkt auf Asien, Afrika und Nahost. Das Geschäft umfasst Firmenkunden, Handel und Privatkunden.",
+   "pruefen": false
+  },
+  "STOR-B.ST": {
+   "text": "Storskogen ist ein schwedischer Konzern mit Beteiligungen an Unternehmen aus Industrie, Immobilien und Dienstleistungen.",
+   "pruefen": false
+  },
+  "SWEC-A.ST": {
+   "text": "Sweco ist ein schwedischer Planungs- und Ingenieurdienstleister für Gebäude, Verkehr und Energie.",
+   "pruefen": false
+  },
+  "SYSR.ST": {
+   "text": "Systemair stellt Lüftungs- und Klimageräte für Gebäude her, etwa Ventilatoren und Wärmerückgewinnungsanlagen.",
+   "pruefen": false
+  },
+  "TFG.AS": {
+   "text": "Tetragon Financial ist eine Holding mit Beteiligungen an Finanz- und Immobilienunternehmen und Investments in Versicherungsgesellschaften.",
+   "pruefen": false
+  },
+  "TGYM.MI": {
+   "text": "Technogym stellt Fitnessgeräte für Studios, Hotels und Privatnutzer her, etwa Laufbänder und Kraftstationen.",
+   "pruefen": false
+  },
+  "THULE.ST": {
+   "text": "Thule stellt Dachboxen, Fahrradträger und Outdoor-Ausrüstung her und verkauft sie weltweit über den Fachhandel.",
+   "pruefen": false
+  },
+  "TIP.MI": {
+   "text": "Tamburi Investment Partners ist eine italienische Beteiligungsgesellschaft mit Anteilen an Unternehmen aus Technologie, Energie und Medizin.",
+   "pruefen": false
+  },
+  "TIT.MI": {
+   "text": "Telecom Italia (TIM) ist einer der großen Telekommunikationskonzerne Italiens mit Mobilfunk, Festnetz und Glasfasernetzen.",
+   "pruefen": false
+  },
+  "TKO.PA": {
+   "text": "Tikehau Capital ist ein französischer Vermögensverwalter mit Private-Debt-, Immobilien- und Private-Equity-Fonds. Die Erlöse stammen aus Verwaltungs- und Erfolgsgebühren.",
+   "pruefen": false
+  },
+  "TRMD-A.CO": {
+   "text": "Torm betreibt Produkt- und Chemikalientanker, die Öl- und Chemieprodukte weltweit transportieren. Die Erlöse stammen aus Charterraten.",
+   "pruefen": false
+  },
+  "UN9.DE": {
+   "text": "Uniqa ist ein österreichischer Versicherungskonzern mit Kfz-, Lebens- und Sachversicherungen in Österreich und Osteuropa.",
+   "pruefen": false
+  },
+  "VAIAS.HE": {
+   "text": "Vaisala stellt Messgeräte für Wetter, Klima und Industrie her, etwa Wetterstationen, Radiosonden und Sensoren.",
+   "pruefen": false
+  },
+  "VAR.OL": {
+   "text": "Vår Energi ist ein norwegischer Öl- und Gasproduzent mit Förderfeldern in der Nordsee und Norwegen.",
+   "pruefen": false
+  },
+  "VEND.OL": {
+   "text": "Vend Marketplaces betreibt Online-Marktplätze für Gebrauchtwagen und Kleinanzeigen in Norwegen und Europa. Die Erlöse stammen aus Inseraten.",
+   "pruefen": false
+  },
+  "VETO.PA": {
+   "text": "Vetoquinol entwickelt und verkauft Medikamente und Diagnostik für Haus- und Nutztiere.",
+   "pruefen": false
+  },
+  "VIS.DE": {
+   "text": "Viscofan stellt Wursthüllen aus Kollagen und Zellulose für die Fleischindustrie her.",
+   "pruefen": false
+  },
+  "VIT-B.ST": {
+   "text": "Vitec Software Group entwickelt Software für Vermietung, Videoproduktion und Immobilienverwaltung. Die Erlöse stammen aus Lizenzen und Abos.",
+   "pruefen": false
+  },
+  "VITR.ST": {
+   "text": "Vitrolife stellt Kulturmedien und Instrumente für die künstliche Befruchtung her und verkauft sie an Kinderwunschkliniken.",
+   "pruefen": false
+  },
+  "VIV.PA": {
+   "text": "Vivendi ist ein französischer Medienkonzern mit Beteiligungen an Musik, Fernsehen und Telekommunikation.",
+   "pruefen": false
+  },
+  "VODI.DE": {
+   "text": "Vodafone ist einer der großen Telekommunikationskonzerne Europas mit Mobilfunk, Festnetz und Glasfaser in mehreren Ländern.",
+   "pruefen": false
+  },
+  "WALL-B.ST": {
+   "text": "Wallenstam ist ein schwedischer Immobilienkonzern mit Wohnungen und Gewerbeflächen in Göteborg und anderen Städten. Die Einnahmen stammen aus Mieten.",
+   "pruefen": false
+  },
+  "WIHL.ST": {
+   "text": "Wihlborgs Fastigheter ist ein schwedischer Immobilienkonzern mit Büros und Gewerbeflächen in Malmö und Göteborg. Die Einnahmen stammen aus Mieten.",
+   "pruefen": false
+  },
+  "WWI.OL": {
+   "text": "Wilh. Wilhelmsen ist ein norwegischer Schifffahrtskonzern mit Tankern, Autotransportern und Dienstleistungen für die Schifffahrt.",
+   "pruefen": false
+  },
+  "X4Z.DE": {
+   "text": "Metlen Energy & Metals ist ein griechischer Konzern für Bauxit, Aluminium und Energieprojekte in Griechenland und Europa.",
+   "pruefen": false
+  },
+  "XE3.DE": {
+   "text": "Ithaca Energy fördert Öl und Gas in der Nordsee und ist an Projekten in Großbritannien und Australien beteiligt.",
+   "pruefen": false
+  },
+  "XIOR.BR": {
+   "text": "Xior Student Housing besitzt und betreibt Studentenwohnheime in Belgien, den Niederlanden, Deutschland und Portugal. Die Einnahmen stammen aus Mieten.",
+   "pruefen": false
+  },
+  "000100.KS": {
+   "text": "Yuhan ist ein südkoreanischer Pharmakonzern, der Medikamente herstellt, unter anderem Antibiotika und Medikamente gegen Krebs.",
+   "pruefen": false
+  },
+  "000120.KS": {
+   "text": "CJ Logistics ist ein südkoreanischer Logistikdienstleister für Transport, Lagerung und Paketzustellung.",
+   "pruefen": false
+  },
+  "000720.KS": {
+   "text": "Hyundai Engineering & Construction ist ein südkoreanischer Bau- und Anlagenbauer für Gebäude, Infrastruktur und Energieprojekte.",
+   "pruefen": false
+  },
+  "000810.KS": {
+   "text": "Samsung Fire & Marine Insurance ist eine südkoreanische Versicherung für Kfz, Sach- und Firmenversicherungen.",
+   "pruefen": false
+  },
+  "004020.KS": {
+   "text": "Hyundai Steel ist ein südkoreanischer Stahlhersteller, der Stahl für Bau und Automobilindustrie produziert.",
+   "pruefen": false
+  },
+  "004800.KS": {
+   "text": "Hyosung ist ein südkoreanischer Mischkonzern mit Chemie, Textilien, Industrieanlagen und Energieinfrastruktur.",
+   "pruefen": false
+  },
+  "005940.KS": {
+   "text": "NH Investment & Securities ist ein südkoreanisches Brokerhaus mit Wertpapierhandel, Vermögensverwaltung und Investmentbanking.",
+   "pruefen": false
+  },
+  "006360.KS": {
+   "text": "GS Engineering & Construction ist ein südkoreanischer Bau- und Anlagenbauer für Wohnungsbau, Industrieanlagen und Infrastruktur.",
+   "pruefen": false
+  },
+  "006800.KS": {
+   "text": "Mirae Asset Securities ist ein südkoreanisches Brokerhaus mit Wertpapierhandel und Vermögensverwaltung.",
+   "pruefen": false
+  },
+  "009150.KS": {
+   "text": "Samsung Electro-Mechanics stellt Leiterplatten, Kondensatoren und Kamera-Module für Smartphones und Autos her.",
+   "pruefen": false
+  },
+  "010950.KS": {
+   "text": "S-Oil ist ein südkoreanischer Raffineriebetreiber, der Benzin, Diesel und Petrochemikalien herstellt.",
+   "pruefen": false
+  },
+  "011070.KS": {
+   "text": "LG Innotek stellt Kamera-Module und Bauteile für Smartphones und Fahrzeuge her.",
+   "pruefen": false
+  },
+  "011170.KS": {
+   "text": "Lotte Chemical ist ein südkoreanischer Petrochemie-Konzern, der Kunststoffe und Chemikalien herstellt.",
+   "pruefen": false
+  },
+  "012330.KS": {
+   "text": "Hyundai Mobis stellt Komponenten und Module für Fahrzeuge her, etwa Airbags, Bremsen und Elektronik.",
+   "pruefen": false
+  },
+  "012450.KS": {
+   "text": "Hanwha Aerospace stellt Rüstungsgüter, Panzer, Artillerie und Raketensysteme her.",
+   "pruefen": false
+  },
+  "015760.KS": {
+   "text": "Korea Electric Power ist der größte Stromversorger Südkoreas mit Kraftwerken und Stromnetz.",
+   "pruefen": false
+  },
+  "016360.KS": {
+   "text": "Samsung Securities ist ein südkoreanisches Brokerhaus mit Wertpapierhandel und Vermögensverwaltung.",
+   "pruefen": false
+  },
+  "017670.KS": {
+   "text": "SK Telecom ist der größte Mobilfunkanbieter Südkoreas mit Mobilfunk, Internet und Cloud-Diensten.",
+   "pruefen": false
+  },
+  "018260.KS": {
+   "text": "Samsung SDS ist ein südkoreanischer IT-Dienstleister für Cloud, Rechenzentren und Unternehmenssoftware.",
+   "pruefen": false
+  },
+  "023530.KS": {
+   "text": "Lotte Shopping betreibt Kaufhäuser und Supermärkte in Südkorea sowie Einkaufszentren.",
+   "pruefen": false
+  },
+  "024110.KS": {
+   "text": "Industrial Bank of Korea ist eine südkoreanische Bank mit Schwerpunkt auf Firmenkunden und Mittelstand.",
+   "pruefen": false
+  },
+  "028260.KS": {
+   "text": "Samsung C&T ist ein südkoreanischer Mischkonzern mit Bau-, Handels- und Beteiligungsgeschäft.",
+   "pruefen": false
+  },
+  "030200.KS": {
+   "text": "KT ist einer der großen Telekommunikationskonzerne Südkoreas mit Festnetz, Mobilfunk und Internet.",
+   "pruefen": false
+  },
+  "033780.KS": {
+   "text": "KT&G stellt Tabakprodukte und Ginseng-Produkte her und vertreibt sie in Südkorea und weltweit.",
+   "pruefen": false
+  },
+  "034730.KS": {
+   "text": "SK Inc. ist eine Holding des SK-Konzerns mit Beteiligungen an Energie, Chemie und Telekommunikation.",
+   "pruefen": false
+  },
+  "036460.KS": {
+   "text": "Korea Gas betreibt das nationale Erdgasnetz Südkoreas und importiert Flüssigerdgas.",
+   "pruefen": false
+  },
+  "036570.KS": {
+   "text": "NC Corporation (bis 2025 als NCSoft bekannt) ist ein südkoreanischer Spielehersteller, der Online-Spiele entwickelt und betreibt.",
+   "pruefen": false
+  },
+  "047810.KS": {
+   "text": "Korea Aerospace Industries stellt Kampfjets, Hubschrauber und Satelliten für Militär und Export her.",
+   "pruefen": false
+  },
+  "051900.KS": {
+   "text": "LG H&H stellt Kosmetik, Haushaltsprodukte und Zahnpflege her.",
+   "pruefen": false
+  },
+  "051910.KS": {
+   "text": "LG Chem stellt Batterien, Kunststoffe und Chemikalien her, unter anderem Batteriezellen für Elektroautos.",
+   "pruefen": false
+  },
+  "066570.KS": {
+   "text": "LG Electronics stellt Fernseher, Haushaltsgeräte und Autoelektronik her.",
+   "pruefen": false
+  },
+  "071050.KS": {
+   "text": "Korea Investment Holdings ist eine südkoreanische Holding mit Beteiligungen an Finanzdienstleistern und Wertpapierhandel.",
+   "pruefen": false
+  },
+  "078930.KS": {
+   "text": "GS Holdings ist eine südkoreanische Holding mit Beteiligungen an Energie, Handel und Bau.",
+   "pruefen": false
+  },
+  "086280.KS": {
+   "text": "Hyundai Glovis ist ein südkoreanischer Logistikdienstleister für Autotransporte und Seefracht.",
+   "pruefen": false
+  },
+  "086790.KS": {
+   "text": "Hana Financial Group ist eine südkoreanische Finanzgruppe mit Banken, Versicherungen und Wertpapierhandel.",
+   "pruefen": false
+  },
+  "090430.KS": {
+   "text": "Amorepacific stellt Kosmetik und Hautpflege her, bekannt für Marken wie Laneige und Sulwhasoo.",
+   "pruefen": false
+  },
+  "097950.KS": {
+   "text": "CJ CheilJedang stellt Lebensmittel, Zucker und Mehl her, bekannt für Fertigsuppen und Gewürze.",
+   "pruefen": false
+  },
+  "128940.KS": {
+   "text": "Hanmi Pharm ist ein südkoreanisches Pharmaunternehmen, das Generika und eigene Medikamente herstellt.",
+   "pruefen": false
+  },
+  "138930.KS": {
+   "text": "BNK Financial Group ist eine südkoreanische Finanzgruppe mit Schwerpunkt auf der Region Busan.",
+   "pruefen": false
+  },
+  "139130.KS": {
+   "text": "iM Financial Group ist eine südkoreanische Finanzgruppe mit Regionalbanken und Wertpapiergeschäft.",
+   "pruefen": false
+  },
+  "139480.KS": {
+   "text": "E-Mart betreibt Supermärkte und Einkaufszentren in Südkorea.",
+   "pruefen": false
+  },
+  "161390.KS": {
+   "text": "Hankook Tire & Technology stellt Reifen für Pkw, Lkw und Industriefahrzeuge her.",
+   "pruefen": false
+  },
+  "251270.KS": {
+   "text": "Netmarble entwickelt und betreibt Online- und Mobilspiele.",
+   "pruefen": false
+  },
+  "267250.KS": {
+   "text": "HD Hyundai ist eine südkoreanische Holding mit Schiffbau, Maschinen und Energiehandel.",
+   "pruefen": false
+  },
+  "271560.KS": {
+   "text": "Orion stellt Süßwaren, Snacks und Getränke her, bekannt für Choco Pie.",
+   "pruefen": false
+  },
+  "282330.KS": {
+   "text": "BGF Retail betreibt Convenience-Stores der Marke CU in Südkorea und Südostasien.",
+   "pruefen": false
+  },
+  "329180.KS": {
+   "text": "HD Hyundai Heavy Industries baut Schiffe, Offshore-Anlagen und Industriemaschinen.",
+   "pruefen": false
+  },
+  "GB00BF4HYT85": {
+   "text": "Lion Finance Group ist eine britische Holding für Bankbeteiligungen, vor allem in Osteuropa und Mittelasien.",
+   "pruefen": true
+  },
+  "HRINA0RA0007": {
+   "text": "INA ist der größte kroatische Öl- und Gaskonzern mit Förderung, Raffinerie und Tankstellennetz in Südosteuropa.",
+   "pruefen": false
+  },
+  "HRKODTRA0007": {
+   "text": "Končar Distributivni i specijalni transformatori stellt Transformatoren für Energieversorgung und Industrie her.",
+   "pruefen": false
+  }
+ }
+}

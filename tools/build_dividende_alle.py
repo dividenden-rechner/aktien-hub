@@ -144,6 +144,7 @@ def main():
     except Exception:
         pass
     kuratiert = {f["sym"] for f in lade("data/dividendenseiten.json")["firmen"]}
+    lean_namen = {f["sym"]: f["name"] for f in lade("data/firmen-lean.json")["firmen"]} if os.path.exists(os.path.join(ROOT, "data", "firmen-lean.json")) else {}
     head, kopf, fuss = vorlage_teile()
     n = 0
     gebaut = []
@@ -153,8 +154,12 @@ def main():
         slug = slugs.get(sym)
         if not slug or not os.path.isdir(os.path.join(ROOT, "aktien-hub", slug)):
             continue
+        if not (r.get("rendite") or 0) > 0 and not os.path.exists(os.path.join(ROOT, "aktien-hub", slug, "dividende", "index.html")):
+            continue  # neue Seiten nur mit Rendite > 0 (sonst keine sinnvolle Dividendenseite)
         r = dict(r)
         r["wkn"] = wkn.get(r.get("isin") or "")
+        if sym in lean_namen:
+            r["name"] = lean_namen[sym]  # Schreibweise aus der Firmenliste (in kennzahlen teils GROSSGESCHRIEBEN)
         if not r.get("zahlmonate"):
             pass
         html_ = seite(sym, r, slug, r["name"], [], head, kopf, fuss)
