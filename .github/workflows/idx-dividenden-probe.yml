@@ -21,8 +21,13 @@ jobs:
           grep -oh '.\{0,200\}dividendData.\{0,200\}' /tmp/alles.txt | head -4
           cd ..
           REF="https://www.idx.id/en/listed-companies/company-profiles/BBCA"
-          for p in "/primary/ListedCompany/GetDividenTunai?KodeEmiten=BBCA&Year=2025" "/primary/ListedCompany/GetDividenSaham?KodeEmiten=BBCA&Year=2025" "/primary/ListedCompany/GetDividenTunai?KodeEmiten=BBCA&Year=2024" "/primary/ListedCompany/GetDividenTunai?KodeEmiten=BBRI&Year=2025"; do
-            echo "-- $p"
-            curl -s -A "$UA" -e "$REF" -H "Accept: application/json, text/plain, */*" -m 40 -o r.json -w "HTTP %{http_code} %{size_download}\n" "https://www.idx.id$p"
-            head -c 900 r.json; echo
+          for y in 2019 2020 2021 2022 2023 2024 2025 2026; do
+            for k in BBCA BBRI TLKM; do
+              curl -s -A "$UA" -e "$REF" -H "Accept: application/json, text/plain, */*" -m 40 -o r.json "https://www.idx.id/primary/ListedCompany/GetDividenTunai?KodeEmiten=$k&Year=$y"
+              echo "$k $y $(head -c 200 r.json)"
+            done
           done
+          echo "-- ohne Jahr"
+          curl -s -A "$UA" -e "$REF" -H "Accept: application/json" -m 40 -o r.json "https://www.idx.id/primary/ListedCompany/GetDividenTunai?KodeEmiten=BBCA"; head -c 400 r.json; echo
+          echo "-- Saham ohne Jahr"
+          curl -s -A "$UA" -e "$REF" -H "Accept: application/json" -m 40 -o r.json "https://www.idx.id/primary/ListedCompany/GetDividenSaham?KodeEmiten=BBCA"; head -c 400 r.json; echo
