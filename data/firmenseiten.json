@@ -1236,11 +1236,6 @@
 "slug": "prysmian-s-p-a"
 },
 {
-"sym": "ASII.JK",
-"name": "Astra International Tbk",
-"slug": "astra-international-tbk"
-},
-{
 "sym": "RKT.L",
 "name": "Reckitt",
 "slug": "reckitt"
@@ -1289,6 +1284,11 @@
 "sym": "TXN",
 "name": "Texas Instruments Inc",
 "slug": "texas-instruments"
+},
+{
+"sym": "ASII.JK",
+"name": "Astra International Tbk",
+"slug": "astra-international-tbk"
 },
 {
 "sym": "CASY",
@@ -2066,11 +2066,6 @@
 "slug": "eqt"
 },
 {
-"sym": "TLKM.JK",
-"name": "PT Telkom Indonesia (Persero) Tbk",
-"slug": "pt-telkom-indonesia-persero-tbk"
-},
-{
 "sym": "ANTO.L",
 "name": "Antofagasta Plc",
 "slug": "antofagasta"
@@ -2231,11 +2226,6 @@
 "slug": "eurofins-scientific"
 },
 {
-"sym": "UNTR.JK",
-"name": "United Tractors Tbk",
-"slug": "united-tractors-tbk"
-},
-{
 "sym": "KYG.IR",
 "name": "Kerry Group Public Limited Company",
 "slug": "kerry-group-public"
@@ -2271,11 +2261,6 @@
 "slug": "ametek"
 },
 {
-"sym": "AMRT.JK",
-"name": "PT Sumber Alfaria Trijaya Tbk.",
-"slug": "pt-sumber-alfaria-trijaya-tbk"
-},
-{
 "sym": "VNA.DE",
 "name": "Vonovia",
 "slug": "vonovia"
@@ -2301,6 +2286,11 @@
 "slug": "3i-group"
 },
 {
+"sym": "UNTR.JK",
+"name": "United Tractors Tbk",
+"slug": "united-tractors-tbk"
+},
+{
 "sym": "DB1.DE",
 "name": "Deutsche Börse",
 "slug": "deutsche-boerse"
@@ -2309,11 +2299,6 @@
 "sym": "RUI.PA",
 "name": "RUBIS",
 "slug": "rubis"
-},
-{
-"sym": "INDF.JK",
-"name": "Indofood Sukses Makmur Tbk",
-"slug": "indofood-sukses-makmur-tbk"
 },
 {
 "sym": "WYNN",
@@ -2364,6 +2349,11 @@
 "sym": "NTAP",
 "name": "NetApp, Inc.",
 "slug": "netapp"
+},
+{
+"sym": "AMRT.JK",
+"name": "PT Sumber Alfaria Trijaya Tbk.",
+"slug": "pt-sumber-alfaria-trijaya-tbk"
 },
 {
 "sym": "RTO.L",
@@ -2424,6 +2414,11 @@
 "sym": "ADP.PA",
 "name": "AEROPORTS DE PARIS",
 "slug": "aeroports-de-paris"
+},
+{
+"sym": "INDF.JK",
+"name": "Indofood Sukses Makmur Tbk",
+"slug": "indofood-sukses-makmur-tbk"
 },
 {
 "sym": "SI0031102153",
@@ -2686,11 +2681,6 @@
 "slug": "imcd-n-v"
 },
 {
-"sym": "GGRM.JK",
-"name": "Gudang Garam Tbk",
-"slug": "gudang-garam-tbk"
-},
-{
 "sym": "SNA",
 "name": "Snap-on Inc",
 "slug": "snap-on"
@@ -2739,6 +2729,11 @@
 "sym": "PSN.L",
 "name": "Persimmon",
 "slug": "persimmon"
+},
+{
+"sym": "GGRM.JK",
+"name": "Gudang Garam Tbk",
+"slug": "gudang-garam-tbk"
 },
 {
 "sym": "FRA.DE",
@@ -2901,11 +2896,6 @@
 "slug": "de-longhi-s-p-a"
 },
 {
-"sym": "CPIN.JK",
-"name": "Charoen Pokphand Indonesia Tbk",
-"slug": "charoen-pokphand-indonesia-tbk"
-},
-{
 "sym": "IDL.PA",
 "name": "Id Logistics Group",
 "slug": "id-logistics-group"
@@ -2984,6 +2974,11 @@
 "sym": "SRT3.DE",
 "name": "Sartorius AG",
 "slug": "sartorius"
+},
+{
+"sym": "CPIN.JK",
+"name": "Charoen Pokphand Indonesia Tbk",
+"slug": "charoen-pokphand-indonesia-tbk"
 },
 {
 "sym": "WTB.L",
@@ -3111,11 +3106,6 @@
 "slug": "alexandria-real-estate-equities"
 },
 {
-"sym": "JPFA.JK",
-"name": "JAPFA Comfeed Indonesia Tbk",
-"slug": "japfa-comfeed-indonesia-tbk"
-},
-{
 "sym": "TEL2-B.ST",
 "name": "Tele2",
 "slug": "tele2"
@@ -3171,11 +3161,6 @@
 "slug": "endeavour-mining"
 },
 {
-"sym": "AKRA.JK",
-"name": "PT AKR Corporindo Tbk.",
-"slug": "pt-akr-corporindo-tbk"
-},
-{
 "sym": "AMP.MI",
 "name": "AMPLIFON S.P.A.",
 "slug": "amplifon-s-p-a"
@@ -3184,6 +3169,11 @@
 "sym": "SMIN.L",
 "name": "Smiths Group Plc",
 "slug": "smiths-group"
+},
+{
+"sym": "AKRA.JK",
+"name": "PT AKR Corporindo Tbk.",
+"slug": "pt-akr-corporindo-tbk"
 },
 {
 "sym": "EDPR.LS",
@@ -3211,11 +3201,6 @@
 "slug": "elisa"
 },
 {
-"sym": "PTBA.JK",
-"name": "PT Bukit Asam (Persero) Tbk",
-"slug": "pt-bukit-asam-persero-tbk"
-},
-{
 "sym": "CTEC.L",
 "name": "Convatec Group Plc",
 "slug": "convatec-group"
@@ -3224,6 +3209,11 @@
 "sym": "EMSN.SW",
 "name": "EMS-Chemie",
 "slug": "ems-chemie"
+},
+{
+"sym": "PTBA.JK",
+"name": "PT Bukit Asam (Persero) Tbk",
+"slug": "pt-bukit-asam-persero-tbk"
 },
 {
 "sym": "SPX.L",
@@ -3281,19 +3271,9 @@
 "slug": "aker"
 },
 {
-"sym": "KLBF.JK",
-"name": "Kalbe Farma Tbk",
-"slug": "kalbe-farma-tbk"
-},
-{
 "sym": "UDR",
 "name": "UDR, Inc.",
 "slug": "udr"
-},
-{
-"sym": "EXCL.JK",
-"name": "PT XLSMART Telecom Sejahtera Tbk",
-"slug": "pt-xlsmart-telecom-sejahtera-tbk"
 },
 {
 "sym": "WLY",
@@ -3381,11 +3361,6 @@
 "slug": "landis-gyr"
 },
 {
-"sym": "MAPA.JK",
-"name": "PT Map Aktif Adiperkasa Tbk",
-"slug": "pt-map-aktif-adiperkasa-tbk"
-},
-{
 "sym": "TEMN.SW",
 "name": "Temenos",
 "slug": "temenos"
@@ -3394,6 +3369,11 @@
 "sym": "TECN.SW",
 "name": "Tecan",
 "slug": "tecan"
+},
+{
+"sym": "MAPA.JK",
+"name": "PT Map Aktif Adiperkasa Tbk",
+"slug": "pt-map-aktif-adiperkasa-tbk"
 },
 {
 "sym": "BAKKA.OL",
@@ -3431,14 +3411,14 @@
 "slug": "texas-pacific-land"
 },
 {
-"sym": "TOWR.JK",
-"name": "Sarana Menara Nusantara Tbk",
-"slug": "sarana-menara-nusantara-tbk"
-},
-{
 "sym": "ALTR.LS",
 "name": "Altri",
 "slug": "altri"
+},
+{
+"sym": "TOWR.JK",
+"name": "Sarana Menara Nusantara Tbk",
+"slug": "sarana-menara-nusantara-tbk"
 },
 {
 "sym": "ADC",
