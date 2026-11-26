@@ -1,5 +1,5 @@
 {
- "stand": "2026-11-24",
+ "stand": "2026-11-25",
  "aktien": [
   {
    "ticker": "ADP",
@@ -20,7 +20,7 @@
      "feld": "gewinn_wachstum_5j"
     },
     "rendite": {
-     "wert": 2.19,
+     "wert": 2.17,
      "punkte": 1,
      "feld": "rendite"
     },
@@ -40,13 +40,13 @@
      "feld": "nettoschulden_ebitda"
     },
     "bewertung": {
-     "wert": 4.19,
+     "wert": 4.14,
      "punkte": 2,
      "feld": "fcf_rendite"
     }
    },
-   "kurs_eur": 282.8,
-   "stand": "2026-11-24"
+   "kurs_eur": 287,
+   "stand": "2026-11-25"
   },
   {
    "ticker": "TJX",
@@ -67,7 +67,7 @@
      "feld": "gewinn_wachstum_5j"
     },
     "rendite": {
-     "wert": 1.26,
+     "wert": 1.24,
      "punkte": 1,
      "feld": "rendite"
     },
@@ -87,13 +87,13 @@
      "feld": "nettoschulden_ebitda"
     },
     "bewertung": {
-     "wert": 3.63,
+     "wert": 3.58,
      "punkte": 1,
      "feld": "fcf_rendite"
     }
    },
-   "kurs_eur": 131,
-   "stand": "2026-11-24"
+   "kurs_eur": 133,
+   "stand": "2026-11-25"
   }
  ]
 }
