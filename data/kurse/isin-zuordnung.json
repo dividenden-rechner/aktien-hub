@@ -1480,6 +1480,12 @@
 "kuerzel": "",
 "quelle": "openfigi"
 },
+"HIMS": {
+"isin": "US4330001060",
+"xetra": "HIMS+HERS HERS A DL-,0001",
+"kuerzel": "82W",
+"quelle": "openfigi"
+},
 "HLT": {
 "isin": "US43300A2033",
 "xetra": "HILTON WORLD.HDGS DL -,01",
@@ -3671,5 +3677,5 @@
 "quelle": "openfigi",
 "bdc": true
 },
-"_stand": "2026-11-25"
+"_stand": "2026-11-26"
 }

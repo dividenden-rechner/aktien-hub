@@ -2,7 +2,7 @@
 
 Spalten der Liste: 153
 Instrumente nach Filter: 2345
-Zugeordnet: **605** von 601. Unsicher (zum Prüfen): 34. Ohne Treffer: 34.
+Zugeordnet: **606** von 603. Unsicher (zum Prüfen): 34. Ohne Treffer: 35.
 
 Korrekturen als {"TICKER": "ISIN"} in data/kurse/isin-fest.json eintragen.
 
@@ -61,6 +61,7 @@ Korrekturen als {"TICKER": "ISIN"} in data/kurse/isin-fest.json eintragen.
 - ET (Energy Transfer LP): bester Kandidat ENERGEAN PLC      LS -,01 GB00BG12Y042 (0.64)
 - FLEX (FLEX LTD.): bester Kandidat VOLEX PLC         LS -,25 GB0009390070 (0.70)
 - IVZ (Invesco Ltd.): bester Kandidat IVECO GROUP N.V.  EO 1 NL0015000LU4 (0.86)
+- KSPI (Joint Stock Company Kaspi.kz): bester Kandidat OTTOBOCK SE+CO.KGAA  O.N. DE000BCK2223 (0.58)
 - KVUE (Kenvue Inc.): bester Kandidat ENEL S.P.A.          EO 1 IT0003128367 (0.63)
 - LARK (LANDMARK BANCORP, INC.): bester Kandidat SCAND.TOBACCO GROUP DK 1 DK0060696300 (0.58)
 - LYB (LYONDELLBASELL INDUSTRIES N.V.): bester Kandidat LYONDELLBAS.IND.A EO -,04 NL0009434992 (0.78)
