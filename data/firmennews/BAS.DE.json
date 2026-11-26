@@ -1,9 +1,16 @@
 {
  "hub": "BAS.DE",
  "name": "BASF",
- "stand": "2026-11-25",
+ "stand": "2026-11-26",
  "quelle": "Google News (Wirtschaftsmedien, deutsch und englisch)",
  "meldungen": [
+  {
+   "titel": "BASF-Aktie: Unternehmen erholt sich",
+   "quelle": "WELT",
+   "link": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxPTTF5U0FMd3dxYmNjbzdjQTlMeFp3VV8xUW45Wi1pR3Jna1BLOTBRdkNlcGU0NHltbVJ2Tl9SelZXWGN5SFpqajZuN3dtRFJrcWZkVFdYb2d5R2RSUUItNnllQk9zLWpTOU1yMDBUa05rejVmMDc1Ymo0bFVwZGhJc2tacjhBX3BDb3B3Rm8xT0VST1JYRHl6OVRlT1hWbkw4RXhlSTg1VHZ4NGM?oc=5",
+   "datum": "2026-11-26",
+   "sprache": "de"
+  },
   {
    "titel": "BASF sucht nach Evonik-Scheitern weiter nach Übernahmezielen",
    "quelle": "FAZ",
@@ -26,6 +33,13 @@
    "sprache": "de"
   },
   {
+   "titel": "BASF: Batterierecycling geht an Aachener Recyclingfirma Cylib",
+   "quelle": "Manager Magazin",
+   "link": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxNUzE2WV9DWXppR3VXNWZ0ODF1RmQ4aTNYLWxiSHlocHlXR2dNcEQtNXJ3RXQyWFNXcUJqOV9zWTlISHJ3N0lwTk4xQ0NxX3V0LTNBNlZ3LV83TndzY1hURDdrOHJ6SnhLR0VZWURCcDQxSUlQWWdobk5HSDd6ZzFEdV84ekRBOERnVDZwQ056bDhaUTVnT2YyWWN6cTBXV0ZrdmJ4STg2QjdfNnk0NXl1Rk01cGZfMU5vZGYtc1FNdXR3VE95aUhnQjgtanlPUWwzaTEzT2FmQmNqQy12MnBncmdiWG5SbGM?oc=5",
+   "datum": "2026-11-23",
+   "sprache": "de"
+  },
+  {
    "titel": "BASF: Chemieriese verkauft Batterierecycling an Aachener Firma Cylib",
    "quelle": "WirtschaftsWoche",
    "link": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxOYmJPVjljY1NBcXhUZ05JbnBUQmFOT29NR3l2QzFQY1NDNTdnQ0xsd1FHcjBycE1vX0RRLS0zM2pudFRQeGdsazYzdWt4WkRLQmhMc1U1M3lsRmdCRXNGYlRpUWhHTE5TRWRkazhaSWFueXJzZm1URVJWV1RrMUdCbnJLaGVrTllHWkdKeGpiaHpINjBHMUV5RnhfZU1yTjliQzhlOE84emdTbnZsanRtS2t5ODdpQy0yMDdmUkNlam5TQQ?oc=5",
@@ -44,20 +58,6 @@
    "quelle": "Bloomberg.com",
    "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxQamcxaHQzZGw5Ymlpem5ob1VTdnlwYmprVzBFZ19vRGc5bFo4ZDNSZ0ZoRE9sT0JpYWVuaTVheTlfX2pmZVlZOTVzSTY2YVBBSC1qUTZKM01FYVJlSWJUbFktSDJvRFFOQXdHVjF0dUtnRlp2eDZnTTNXY0U0Q2VUYjVxWmljQkdrUTktRHBrUDMtckoteE55QXNuYkdZTG5ObXE3QXdDUG9penZtQzRTQmtFd0Q?oc=5",
    "datum": "2026-11-23",
-   "sprache": "en"
-  },
-  {
-   "titel": "RAG foundation still aims to cut Evonik stake after BASF exit",
-   "quelle": "Reuters",
-   "link": "https://news.google.com/rss/articles/CBMiogFBVV95cUxQTHZ3NjVvUDFhVWIzMzNnUHFKYXBvTzRVa1VoRV9panZCQ2tTRkF2cVNRUkc2UTFRNDFaZkdzZGZ3WmV5NFVGSDFCWnZYdlN0d2pfeHlJRmRyWk9uQVNCcnVXZWRENmxEMGhiSVlnRDczVEwyX2tRNWgyZVVGZVBKNGlCN3lNX2pKa3B4U0MwNk9ucTlGb1lnMElXbnRlWnJoYVE?oc=5",
-   "datum": "2026-11-20",
-   "sprache": "en"
-  },
-  {
-   "titel": "BASF ends pursuit of Evonik after $12 billion bid rejected",
-   "quelle": "Reuters",
-   "link": "https://news.google.com/rss/articles/CBMipAFBVV95cUxOME02R0hYOGRuam9CSXVJU3hJcVMwckRIZFl0OHRuMUdhaGZ6dXdFcUVNVDJOU29pNlMxSERFakwtM2dIaHlwaG16VDVJWWVDZFAxbVZLenBSbE1SVkRRS1U2b242SVZjYWh4OWxsVGZaX01STHU4Nkx0Y0x0Y0pja2w2U2hpYW9rLU9Ec0F0anFRREQ1OHY1ZFZmVmRwZWZibS1EdQ?oc=5",
-   "datum": "2026-11-19",
    "sprache": "en"
   }
  ]

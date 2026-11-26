@@ -1,9 +1,16 @@
 {
  "hub": "DTE.DE",
  "name": "Deutsche Telekom",
- "stand": "2026-11-25",
+ "stand": "2026-11-26",
  "quelle": "Google News (Wirtschaftsmedien, deutsch und englisch)",
  "meldungen": [
+  {
+   "titel": "Rheinmetall und Telekom planen deutsche Palantir-Alternative",
+   "quelle": "WirtschaftsWoche",
+   "link": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxQZkVpbDByekxuTktJcklmMTVHcG0zaHpSS1BQdEpYUmktMUZZM3ROb2ZIT19pSTY4SXB1UHpnLVk5T3J2UkJGZFBhMFNkczN4Wmw3ODFtSXBydUVzX2JQZEd3ZGgzY25XVFZ6TENxcWRKbDhjVkREeVB6ZXllVnNMZDBzUVVibURxR2t5dGVwUEJ4eU5oRGVNWDk3aDNqc0s4NG1FMVp0cVREM1hjNVVUYU9jM2MyOW1F?oc=5",
+   "datum": "2026-11-26",
+   "sprache": "de"
+  },
   {
    "titel": "Kreis Bergstraße brings AI into the field",
    "quelle": "Unternehmen",
@@ -28,13 +35,6 @@
    "sprache": "de"
   },
   {
-   "titel": "Deutsche Telekom-Aktie: Unternehmen gibt nach",
-   "quelle": "WELT",
-   "link": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxOTDlSX0YtTnF6YU9WRzhBelBYdGRCOE9fVlIwRjc3REZOemxLdHYtdmJXeWxId3Y3V3o5dlFLTVNxXy00ZENvRnNURGh6MDBFcVpybHlkQkVqTXR0Zll3T19nenRJV2h3RldEWllRXzZXczc1RHVjbXRpR3MzRnZjY3JMYTRvZTVSVTYzZ25ESklOYVdIVko1dGZ6aUUxSGJsNWNHOEw0RmhzQ3FRTG1uUzRlWnhTTVc4?oc=5",
-   "datum": "2026-11-19",
-   "sprache": "de"
-  },
-  {
    "titel": "Deutsche Telekom steigt bei Europas KI-Hoffnung Mistral ein",
    "quelle": "Spiegel",
    "link": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxOQWJfb0dmUDQzUkdfMW1FYnQxS0RnRDk2cmxFaTV2WURrdTNaUFlQakpoX2owSU9QYmhsd2otYWhMaTNIWm9yZ3FJN2FZdXBpdjlxWGJHa2RXOFphdXJiM21BckNQM2NqUXhvTzdOTWRqaVJENk9yOVdNd1ZGSFlCVFNNUzJFcS04Tmtvb1lLdzZBWTFKYUh5R3JJR1FGeGpoTEFXcWxDUHhEdTkyRlRBSTBwb1k4bnNGa1h4cjA3LVM1aW5oSC1yUFJOeG5fZ0dVYnRaMlBuWDdORFVk?oc=5",
@@ -42,9 +42,9 @@
    "sprache": "de"
   },
   {
-   "titel": "Mistral AI: Deutsche Telekom beteiligt sich an europäischem KI-Unternehmen",
-   "quelle": "WirtschaftsWoche",
-   "link": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxQYk1FUkh2RUN6dFNZaUs3VFZ3TXM1LXpzQzJ0U0pUMFZFc0NjS0ljZmNsVEdyNzc2aEtiVkIzb1o1TVVNUXhqMUVyV1FUdExqWG5JZlJuX3Rrdzg2OWlfSENpbTJwaHJtT1hranRzc05zcWF5X3h3Ql9IUDBEOXlzQTJYbVh4ZnQwWXlGbnNmZVB3MTUxSjNpVjNhQXp2SkZndW0yVWFqTVhCOUdBeDdibjFZUi1WV0lBNDhiYTd1YzJpQQ?oc=5",
+   "titel": "Deutsche Telekom-Aktie: Unternehmen gibt nach",
+   "quelle": "WELT",
+   "link": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxOTDlSX0YtTnF6YU9WRzhBelBYdGRCOE9fVlIwRjc3REZOemxLdHYtdmJXeWxId3Y3V3o5dlFLTVNxXy00ZENvRnNURGh6MDBFcVpybHlkQkVqTXR0Zll3T19nenRJV2h3RldEWllRXzZXczc1RHVjbXRpR3MzRnZjY3JMYTRvZTVSVTYzZ25ESklOYVdIVko1dGZ6aUUxSGJsNWNHOEw0RmhzQ3FRTG1uUzRlWnhTTVc4?oc=5",
    "datum": "2026-11-19",
    "sprache": "de"
   },

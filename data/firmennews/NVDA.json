@@ -1,34 +1,42 @@
 {
  "hub": "NVDA",
  "name": "NVIDIA CORP",
- "stand": "2026-11-25",
+ "stand": "2026-11-26",
  "quelle": "Google News (Wirtschaftsmedien, deutsch und englisch)",
  "meldungen": [
   {
-   "titel": "CoreWeave, Nvidia Credit Risk Hit Fresh Highs as AI Fears Mount",
-   "quelle": "Bloomberg.com",
+   "titel": "Come for the Games, Stay for the Community With GeForce NOW",
+   "quelle": "Unternehmen",
+   "link": "https://blogs.nvidia.com/blog/geforce-now-thursday-community-war-thunder-reward/",
+   "datum": "2026-11-26",
+   "sprache": "en",
+   "typ": "pm"
+  },
+  {
+   "titel": "This Is When AI’s Circular Deals Bite Back",
+   "quelle": "Bloomberg",
+   "link": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxPazBUcktOb0ZhZW9nOGpPM2FVdEFreHJpWjFCS2JSU1c3WWFxZ2t0VXVOcDV1Z3BzNlJlY2R5a0c5SHBKMHg5cWw3M3k1UGJBcEg0SS16SGdXUWEzLWFjQTBhS2JFSTFnQkJJa2c2UjB6OUVaSjVVWTJiRGhaQjM4dTh5ZHZSemNSZ0R4VklyNUpnNTlhb1hBa0hXT1ZNQm1mOTgtRDIwQy11Y0pzRTkyMktRZnNjbXdjOWE4?oc=5",
+   "datum": "2026-11-26",
+   "sprache": "en"
+  },
+  {
+   "titel": "CoreWeave, Nvidia Credit Risk Hit Fresh Highs as AI Woes Mount",
+   "quelle": "Bloomberg",
    "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxORGVYTmpUeWhmYUNmYzBaWjlES0t0b3N0dTFoNEsxVlk5TklPNXVYZ1BaU05HSnJxTDdOOHNPOU1DWVpnY3oxbUtxLXBISjlOYWs4V1VWZnNub3lkaEkybWo0czRNdzFJc2pGT2NERDFUSkJ1a3lOY2JJM2pEaUZ3VnpJaHNqeE95SkRDYUg5RmVwRDlyTlBnNzZXQXhnd24yYnl6ajlMWGIxNHp6bHhZbmk2dw?oc=5",
    "datum": "2026-11-25",
    "sprache": "en"
   },
   {
-   "titel": "Sleeping With a Subordinate Gets CEOs Fired. Except for Jensen Huang.",
-   "quelle": "Bloomberg.com",
-   "link": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxQRlRIanR1LUE4SVFReHRrUFVxUGd3bk5Kd2dyNkNWd3lNTmphMW1vZmd5ZXVCcS11eDFlMHljaHNYOVRwdWREaXF1enY1RGVaYms5Sl94OXAyQ3BCLUJSaXpyOXVUaFhJNEs2cFJSMEVtRlRraUpGZGU4dmNFbXdJWFJpcVpLejZoN2U0dkxMbDRnRHdlcTd4dlhyYUdRNFJiUndvU1pJcWV3dlY3ei1FRXZDaHRBZExkNXBoUEJrX2Q4MjBrSURUZw?oc=5",
+   "titel": "Moody's says Nvidia's Huang reinstatement eases uncertainty, ratings unchanged",
+   "quelle": "Reuters",
+   "link": "https://news.google.com/rss/articles/CBMivAFBVV95cUxNUS1rM3pwcGFXMVd1NGhiVUhHaDBya083NEptQnh0a1VObDlwSnRsbkQtamU1UHhLQzg1eW1lTlh4LUVoRDBHZDh5T0NyMTl6THBpNWtwVFZhX2c4cXdlbEFTS1BjMnR2aHc2dElrNF9VZTFSY3Y2V3hKU29qZ2ItRGtMXzkzNzc4bXhMYm1FSS1GM0xpMDd2LWVJckN4R1M3SkEtbWxyV0V3ay1ZeHVLVzJHS0pXZG9EVzVVTw?oc=5",
    "datum": "2026-11-25",
    "sprache": "en"
   },
   {
-   "titel": "Nvidia Still Faces Issues That Cost $2 Trillion in Market Value",
-   "quelle": "Bloomberg.com",
-   "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxNT2s0ak5QRUUzVDBKTzB4angtVVVGbHZXWERKeXFiaXZYTHA5ZGdYa09ZbkdrT1dBN1pJejkyaGdINE94Q3VRTHp5bk8wTWw3cmM3bnNWZVJwZS1QTU9BVVVYU2xwTW1XNmVRcWpMT2lVZEF6dll1RHFOUEJ2czMyX1dUd2NoLUcyME1rX2pmX0Y4ZXFnN0xEazVrRVlPYnBFSVBteWZ6a3lDUjJ3M29vNi1lcw?oc=5",
-   "datum": "2026-11-25",
-   "sprache": "en"
-  },
-  {
-   "titel": "Trump to Lead TSMC Groundbreaking in Arizona After Nvidia Gambit",
-   "quelle": "Bloomberg.com",
-   "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxQbDNXQmZYQ3VSX1plNFl4Y1pPbVR5elFiNUprUGx6aDRTdkxSS3V3d1NETjM0eEtVZFRaeDU4TnNyME1lY0ViYTk2MmVUWWxvOTg5elk4ajRtTDljczR5TGlNT1otaXVWYzJtR3hWaXhBVFRFVnJCRGVJQXRHN0xpVVVGMzF5eGVUYVZjTl9zb0V1RnA5UEZyaEJlUVZzMWRNaWotTHN6Z2ZGa2xEaVh0YmV0N1phQQ?oc=5",
+   "titel": "Nvidia at Risk of Rating Cut by S&P Over Governance Concerns",
+   "quelle": "Bloomberg",
+   "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxOODhZc1ZaTjRJWFV2emVDd3pSLXljRGVsRXRaSGVTalU5TzFGRVNKdkYweHI5WkdnRGlRZ1c2Z2RuaHZrX1h4dlZzTXFxbkVRdnR4VUp6eFI4YWxmQ21FZUdwMWhlUHI0Q21TSGpxc2trdjFKd1Y0UW9SRTUxdVhFRkt1RVh2R0JuZDFRZG9JTDJRYzlHN1lSVHoxQUJUVU04V1JFSG1rM1pUZjFvQW00em1VWXQ4UQ?oc=5",
    "datum": "2026-11-25",
    "sprache": "en"
   },
@@ -53,14 +61,6 @@
    "quelle": "Unternehmen",
    "link": "https://nvidianews.nvidia.com/news/nvidia-board-reinstates-jensen-huang-as-president-ceo-and-board-director",
    "datum": "2026-11-23",
-   "sprache": "en",
-   "typ": "pm"
-  },
-  {
-   "titel": "NVIDIA Announces Upcoming Event for Financial Community",
-   "quelle": "Unternehmen",
-   "link": "https://nvidianews.nvidia.com/news/nvidia-announces-upcoming-event-for-financial-community-6929322",
-   "datum": "2026-11-19",
    "sprache": "en",
    "typ": "pm"
   }

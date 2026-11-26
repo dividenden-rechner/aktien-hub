@@ -1,9 +1,17 @@
 {
  "hub": "BMY",
  "name": "BRISTOL-MYERS SQUIBB COMPANY",
- "stand": "2026-11-25",
+ "stand": "2026-11-26",
  "quelle": "Google News (Wirtschaftsmedien, deutsch und englisch)",
  "meldungen": [
+  {
+   "titel": "Bristol Myers Squibb Announces Results from Phase 3 POETYK SLE-1 and POETYK SLE-2 Trials Evaluating Sotyktu (deucravacitinib) in Systemic Lupus Erythematosus",
+   "quelle": "Unternehmen",
+   "link": "https://news.bms.com/news/details/2026/Bristol-Myers-Squibb-Announces-Results-from-Phase-3-POETYK-SLE-1-and-POETYK-SLE-2-Trials-Evaluating-Sotyktu-deucravacitinib-in-Systemic-Lupus-Erythematosus/default.aspx",
+   "datum": "2026-11-25",
+   "sprache": "en",
+   "typ": "pm"
+  },
   {
    "titel": "Bristol Myers reports mixed results for Sotyktu in lupus trials",
    "quelle": "Reuters",
@@ -39,14 +47,6 @@
    "quelle": "Unternehmen",
    "link": "https://news.bms.com/news/details/2026/Bristol-Myers-Squibb-Demonstrates-Breadth-and-Clinical-Momentum-Across-Blood-Cancers-and-Rare-Hematologic-Disorders-at-ASH-2026/default.aspx",
    "datum": "2026-11-19",
-   "sprache": "en",
-   "typ": "pm"
-  },
-  {
-   "titel": "Bristol Myers Squibb Presents First Clinical Data from Two Phase 3 Studies in the ADEPT Program Evaluating KarXT for Psychosis Associated with Alzheimer’s Disease",
-   "quelle": "Unternehmen",
-   "link": "https://news.bms.com/news/details/2026/Bristol-Myers-Squibb-Presents-First-Clinical-Data-from-Two-Phase-3-Studies-in-the-ADEPT-Program-Evaluating-KarXT-for-Psychosis-Associated-with-Alzheimers-Disease/default.aspx",
-   "datum": "2026-11-18",
    "sprache": "en",
    "typ": "pm"
   }

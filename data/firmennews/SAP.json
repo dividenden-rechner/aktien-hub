@@ -1,9 +1,16 @@
 {
  "hub": "SAP",
  "name": "SAP SE",
- "stand": "2026-11-25",
+ "stand": "2026-11-26",
  "quelle": "Google News (Wirtschaftsmedien, deutsch und englisch)",
  "meldungen": [
+  {
+   "titel": "SAP Weighs Cutting at Least 10,000 Positions in AI Restructuring",
+   "quelle": "Bloomberg",
+   "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxQdEkwcUVNZU5SbHN4QWpxRU81d3p0eWFzcDY5VVd2dnBCeU8wMDlxVTM1NzhEM0NZMnNTNGZRVnA1WU1OUWM1N21tV29IZlJ6WUZLQ0xuWmd5cS1wU2dtaHpuRGRjZFA4V2I0VXRPYjhlN1ZQamVzMFBKQk1yRExURUFCX3B0MVdDRFd4djY2cEpmaERpbENDalRtcjFwd0trT3JHU3haMWRQdlBsRFNYNFhSTUt1QQ?oc=5",
+   "datum": "2026-11-26",
+   "sprache": "en"
+  },
   {
    "titel": "SAP-Aktie: Unternehmen schwächelt",
    "quelle": "WELT",
@@ -13,7 +20,7 @@
   },
   {
    "titel": "SAP Corporate Espionage Complaint Exposes Gaps in Disclosure",
-   "quelle": "Bloomberg.com",
+   "quelle": "Bloomberg",
    "link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxOUXhncFJEcFBvVEtZMnFKTWQ2U0Q5Tkg0dmJJNTRlTjItMmxDeXBsUGxyVlNQSnRPeXBPQXdqaW5LTENYblBwTDdfRVRPRlV1cEMyU0NkeExfN0diRHZFWjNtcEN6OUxTNDhrbzJqc2JweDhNLXVmLW8xYVRydjJHUkRVSGtGMHdMOWZEdXhFNjhvMHNjZ0JGNWZXU0dfX0lsRTMyN1Bia0lDdFViM1dRMQ?oc=5",
    "datum": "2026-11-25",
    "sprache": "en"
@@ -23,6 +30,13 @@
    "quelle": "Bloomberg.com",
    "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxQY3pnUGhrakczaVVjTXI3SFpCZE9VazEwenp2LW93MVJSUFI2ZHJja0l6MXNfYzlBU1ZTSklJVlNHYjNleHhMRWg2dklneVBTcEFPVEpOY2F5cXNkT1p4UVpmbUtVUks5S2NDbE9PU05uM2d5cEE1am0xVVFmcDhMUXlLbklOc0pmTjMxRkJObXROdkllUDVfRGZlMG8ySFVfZVNTZ0tQam5tWmExajk0eUI1M2k?oc=5",
    "datum": "2026-11-17",
+   "sprache": "en"
+  },
+  {
+   "titel": "SAP Modernizes 100,000+ endpoints with Windows 11 and Microsoft Intune",
+   "quelle": "Microsoft",
+   "link": "https://news.google.com/rss/articles/CBMid0FVX3lxTE5NZEtCTlk5YkxnbThZbkFsaWpJalZNclF3MDhsVHEwTFJsc2tSNS1JdXh2NWRfbW5VemtEVG9uc3VxLVh0SFp3Y2x6ZlJ6NnNwdHFrOS1aNmJzUmsxZURrS3BDenZYaDJJRi1XYWNzdEl1dlhrVGNz?oc=5",
+   "datum": "2026-11-16",
    "sprache": "en"
   }
  ]

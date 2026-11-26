@@ -1,7 +1,15 @@
 {
  "hub": "CME",
  "name": "CME GROUP INC.",
- "stand": "2026-11-25",
+ "stand": "2026-11-26",
  "quelle": "Google News (Wirtschaftsmedien, deutsch und englisch)",
- "meldungen": []
+ "meldungen": [
+  {
+   "titel": "CME E-Mini Options Briefly Paused During Chaotic Opening Session",
+   "quelle": "Bloomberg",
+   "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxQbUpXR0k2MVhMX2pHSGphdjk0ZkYxYnF0QlUxNW9QMS1MMG5CbWp3bVo2SUtxTFFQT09kcFpRaDBEOVpOb2N2OUt3U2tRMGRmRUVpRWpseFBsZW5LR3g0ZGxLWFJidTJjWEFHcjY5dkJUN3NMRjE4WTJ0blJmVkx1WjJIZ3FzNHdNWm1acnI1MGFMbGxOTjdoeUlEMGZQSUc3OUpOMklvX2lyRV9xOXZWZUxsVXVKZw?oc=5",
+   "datum": "2026-11-25",
+   "sprache": "en"
+  }
+ ]
 }

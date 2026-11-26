@@ -1,19 +1,49 @@
 {
  "hub": "SAP.DE",
  "name": "SAP",
- "stand": "2026-11-25",
+ "stand": "2026-11-26",
  "quelle": "Google News (Wirtschaftsmedien, deutsch und englisch)",
  "meldungen": [
   {
-   "titel": "SAP-Aktie: Unternehmen schwächelt",
-   "quelle": "WELT",
-   "link": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxNd0VSY0FMMU1yNnlJd3Y1RDdyN3R1VFZZSTVmVFE1NjgyUEtPeXVzLTR5SW5DdUl0NFJGX1dULU9WejE5LU1TdW4zbXk0a21CNERoNXN4UzNxUmhDNldESnk5blNtUXNoYUM2S2lmTlNuWVlBV0ZrS25rcE5rdm43YjZZTlpKWERTVThwbUxvMFF3OHB4dlJ0QUNOVTlsNzNhaXFRZnZxUjJrZw?oc=5",
+   "titel": "SAP and planqc Bring Quantum Computing into Business Processes",
+   "quelle": "Unternehmen",
+   "link": "https://news.sap.com/2026/11/sap-planqc-bring-quantum-computing-business-processes/",
+   "datum": "2026-11-26",
+   "sprache": "en",
+   "typ": "pm"
+  },
+  {
+   "titel": "SAP Weighs Cutting at Least 10,000 Positions in AI Restructuring",
+   "quelle": "Bloomberg",
+   "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxQdEkwcUVNZU5SbHN4QWpxRU81d3p0eWFzcDY5VVd2dnBCeU8wMDlxVTM1NzhEM0NZMnNTNGZRVnA1WU1OUWM1N21tV29IZlJ6WUZLQ0xuWmd5cS1wU2dtaHpuRGRjZFA4V2I0VXRPYjhlN1ZQamVzMFBKQk1yRExURUFCX3B0MVdDRFd4djY2cEpmaERpbENDalRtcjFwd0trT3JHU3haMWRQdlBsRFNYNFhSTUt1QQ?oc=5",
+   "datum": "2026-11-26",
+   "sprache": "en"
+  },
+  {
+   "titel": "SAP considers at least 10,000 job cuts in AI restructuring, Bloomberg reports",
+   "quelle": "Reuters",
+   "link": "https://news.google.com/rss/articles/CBMitwFBVV95cUxNUUhZaXItb2lOYVhHRHBoUkpGZFM2Y0ZpQ1dSN3QwUnEyQlBKdmlRVG9fdFM5WS1UNm41dGZnRVhyY1FIbjBvOUNFWEREN1F4S1l1amVSUGFheGl4N1NNbk1ieF9HU3N0azQ1djN1bjA2RWhIc1VhVWVWb0RVbG1HMVlPbFQyb0N5N1ZLTUVZeXlxMDk4d3d0UHh1ajdZeWd3ekx5TU52Z3BDaXdhOU9uN3dtd1lLMXM?oc=5",
+   "datum": "2026-11-26",
+   "sprache": "en"
+  },
+  {
+   "titel": "SAP Reportedly Plans at Least 10,000 Job Cuts to Remake Itself for AI",
+   "quelle": "Startup Fortune",
+   "link": "https://news.google.com/rss/articles/CBMinAFBVV95cUxQbkE4c1ROWnRaNWNvRVVTeEo2dDFtWURtWmNRVnZPc0ZYTVdtWVVDUnJQZkRQckV3M3JFa2pSbUZXMHZHRFVzZ3VweTl3RWROS1ZzTFhCVUFpVGVOUWo1YmJoNFpGTlltWWIxUGlkbFNXR2twTnhIeEdETE5fN1hlUTNjVVpnUFBkZHRkMVpnM0o5dVZjWGJneTZFams?oc=5",
+   "datum": "2026-11-26",
+   "sprache": "en"
+  },
+  {
+   "titel": "AI Is Changing the First Job: Why Youth Employment Belongs on Every Business Agenda",
+   "quelle": "Unternehmen",
+   "link": "https://news.sap.com/2026/11/ai-changing-first-job-youth-employment-business-agenda/",
    "datum": "2026-11-25",
-   "sprache": "de"
+   "sprache": "en",
+   "typ": "pm"
   },
   {
    "titel": "SAP Corporate Espionage Complaint Exposes Gaps in Disclosure",
-   "quelle": "Bloomberg.com",
+   "quelle": "Bloomberg",
    "link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxOUXhncFJEcFBvVEtZMnFKTWQ2U0Q5Tkg0dmJJNTRlTjItMmxDeXBsUGxyVlNQSnRPeXBPQXdqaW5LTENYblBwTDdfRVRPRlV1cEMyU0NkeExfN0diRHZFWjNtcEN6OUxTNDhrbzJqc2JweDhNLXVmLW8xYVRydjJHUkRVSGtGMHdMOWZEdXhFNjhvMHNjZ0JGNWZXU0dfX0lsRTMyN1Bia0lDdFViM1dRMQ?oc=5",
    "datum": "2026-11-25",
    "sprache": "en"
@@ -33,36 +63,6 @@
    "datum": "2026-11-24",
    "sprache": "en",
    "typ": "pm"
-  },
-  {
-   "titel": "SAP-Aktie: Unternehmen erholt sich",
-   "quelle": "WELT",
-   "link": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxNbEllM2RzWHJ1WGxfcHJycHlUaVZHS1Q2S242MGRnWi1kVHhmSXVLNXo4TU1IakxLOThWclNnUktLZDBLUWlxcEZoaGFsUERVWWpiQmNmeTdWZnM1b1ZfV09ROU04NmZCZ0JVWjBGZFQ4V0g4RnZPdUo0T2w2YTdKU0RrR0U3cHRIbXFMNGROeU44ZVA3VWlkbTR2d3o0R3JvRjltXzBwR2U5Zw?oc=5",
-   "datum": "2026-11-24",
-   "sprache": "de"
-  },
-  {
-   "titel": "How SAP Store Certification Turns into Customer Trust for Vertex",
-   "quelle": "Unternehmen",
-   "link": "https://news.sap.com/2026/11/how-sap-store-certification-turns-into-customer-trust-for-vertex/",
-   "datum": "2026-11-23",
-   "sprache": "en",
-   "typ": "pm"
-  },
-  {
-   "titel": "Interview with Sindhu Gangadharan: “I Want People to Say ‘That Idea Started in India’”",
-   "quelle": "Unternehmen",
-   "link": "https://news.sap.com/2026/11/interview-sindhu-gangadharan-sap-labs-india/",
-   "datum": "2026-11-23",
-   "sprache": "en",
-   "typ": "pm"
-  },
-  {
-   "titel": "SAP Modernizes 100,000+ endpoints with Windows 11 and Microsoft Intune",
-   "quelle": "Microsoft",
-   "link": "https://news.google.com/rss/articles/CBMid0FVX3lxTE5NZEtCTlk5YkxnbThZbkFsaWpJalZNclF3MDhsVHEwTFJsc2tSNS1JdXh2NWRfbW5VemtEVG9uc3VxLVh0SFp3Y2x6ZlJ6NnNwdHFrOS1aNmJzUmsxZURrS3BDenZYaDJJRi1XYWNzdEl1dlhrVGNz?oc=5",
-   "datum": "2026-11-16",
-   "sprache": "en"
   }
  ]
 }

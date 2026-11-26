@@ -1,9 +1,17 @@
 {
  "hub": "MSFT",
  "name": "MICROSOFT CORP",
- "stand": "2026-11-25",
+ "stand": "2026-11-26",
  "quelle": "Google News (Wirtschaftsmedien, deutsch und englisch)",
  "meldungen": [
+  {
+   "titel": "Outcome per dollar is the frontier. We’re advancing it at every layer: FLOPs-efficient pretraining (MAI Base 2), long RL climbs (Rocket), and token-efficient models (7 new MAI models announced last week) [Read more]",
+   "quelle": "Unternehmen",
+   "link": "https://www.linkedin.com/feed/update/urn:li:activity:7530839822152708096/",
+   "datum": "2026-11-24",
+   "sprache": "en",
+   "typ": "pm"
+  },
   {
    "titel": "3 questions that can help universities turn AI experiments into results",
    "quelle": "Unternehmen",
@@ -28,13 +36,6 @@
    "sprache": "en"
   },
   {
-   "titel": "Marlowe Raises $277 Million to Bolster Alternatives to Nvidia Chips",
-   "quelle": "Bloomberg",
-   "link": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxPWElrT0d0TWI3UG1KQjQ2WERLM3pkeG5GbzdvcTktVGNkRkNLSmFZX2JnYkJ2RnZKSE5pak5saXJNR18yTVhqUGlMeGhfX1l2b0VqNGpGd0Z5d3hCNEFaUkJEOW5vaEFlNV9JdXNyVVRMRkZEM1laUmpfTWxqVUVjSlN5UkRQdHlGMVVPTHdpeTJnbUtRdzBGVDcxUUQta0pBbmliVjQ4aVRrT1RCaV9kOE9ncjBXaXlk?oc=5",
-   "datum": "2026-11-23",
-   "sprache": "en"
-  },
-  {
    "titel": "4 cybersecurity steps every organization should take in the age of AI",
    "quelle": "Unternehmen",
    "link": "https://blogs.microsoft.com/on-the-issues/2026/11/19/security-fundamentals-to-enable-the-frontier/",
@@ -43,16 +44,8 @@
    "typ": "pm"
   },
   {
-   "titel": "As AI agents take on more work, Microsoft makes Windows more secure",
-   "quelle": "Unternehmen",
-   "link": "https://blogs.windows.com/windowsexperience/2026/11/17/microsoft-ignite-2026-building-windows-for-the-next-era-of-work/",
-   "datum": "2026-11-20",
-   "sprache": "en",
-   "typ": "pm"
-  },
-  {
    "titel": "Microsoft to Pay Top Cloud Workers More, Crack Down on Others",
-   "quelle": "Bloomberg.com",
+   "quelle": "Bloomberg",
    "link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxPM3hLaXdod0Myc1NGcVJDbHZlMEEyaS1FdzJpVmZKeEVLN3BRQzIzVDJXd1g3RXdzVHVlaXJuOWpmQ1ZwZ0IyVGJPMHVMLWhKZHluYjRmYXhQZkZWOXY3Z0ItS0NHREE0a05KUUVuUUM5MDdpb3drSzhzb2hHdjlvTHNOY2lnOXViSkdKUXI4cndxMjZocEx5LTM5TnFYRzlLY1NBdHY4VFZTdm53MHl0Rw?oc=5",
    "datum": "2026-11-20",
    "sprache": "en"
@@ -62,6 +55,13 @@
    "quelle": "Bloomberg.com",
    "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxNNXV4cTU5RmZrd3lGNGRVS2RXYUZFU1prYmhYQzhrSnNWdkRHWmF6N2RjT3RkTkVTb0ZpQWhnZ3hXc3c4S1RzUXdsWGRJMFlVQkloZmlhSWhQcjkwNVFfWGxqR3NtbHNmLWdzRTBMb1dCdFVhUlV2SnhYSUYwZTlZZ2dMRjJadm1McGtYS29PcHhNdG9XSGlOVDFHY1FacGRDOWFuamRFdnEyLTVaWl9F?oc=5",
    "datum": "2026-11-18",
+   "sprache": "en"
+  },
+  {
+   "titel": "Microsoft and Salesforce Announce Copilotforce, Bringing Trusted Customer Context and Action into Microsoft AI Experiences",
+   "quelle": "Microsoft Source",
+   "link": "https://news.google.com/rss/articles/CBMi-wFBVV95cUxORkZHWDR3ZUhncjV1akxHdlZHdTJwQkVTN19NODZGd3liaHlXZ2J1ejJVS1V5TGN6ejF3NElLUjVmR2FJa082Z2U4U3BoZnpuZUJ0czZRU0tfWHdMMmtwQ1luXzE4dUI5UzR0ckMzZTVrd2Eyc1RCX2N6cWF2TkgxVEQzajJtanhYYXhNODBpNXNrX25wX1hjeThhVEdodng5Wk9ydURmQ1k5aFh2ako0X005Y1NkcENsRXVwdy1rX29CWjVlOHp3RGV4NE9iRHpraDgxUk91RlZVLUNfcm1xbGNfdkVqSGRFVEUxZ1dqeDRqTmdVeEI3aXA1Zw?oc=5",
+   "datum": "2026-11-17",
    "sprache": "en"
   }
  ]
