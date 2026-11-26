@@ -894,9 +894,8 @@ def main():
         beschr = f"{name}: Steckbrief, Bewertung und Diagramme aus den Geschäftsberichten und Börsenkursen. Dividendenprofil mit Terminen und Historie."
         view = build_firma_ansicht.ansicht_html(sym, datetime.date.today().isoformat(), 2)
         h1 = f'<div class="titlerow" style="gap:12px">{logo_span(sym, name, "../../")}<h1>{esc(name)} Aktie</h1></div>'
-        crumbs = f'<a href="../../">Start</a> › <a href="../../dividende/">Dividenden</a> › <span aria-current="page">{esc(name)}</span>'
-        body = (f'<p class="meta">Stand: {datum(datetime.date.today().isoformat())} · Kürzel {esc(sym)}</p>' + view
-                + '<p><a href="dividende/">Dividenden-Profil: Termine, Historie und Rechner →</a></p>'
+        crumbs = f'<a href="../../">Start</a> › <a href="/aktien-hub/">Aktien-Hub</a> › <span aria-current="page">{esc(name)}</span>'
+        body = ('<p><a href="dividende/">Dividenden-Profil: Termine, Historie und Rechner →</a></p>' + view
                 + PEER_BLOCKS.get(sym, "") + '<p class="note"><strong>Hinweis:</strong> Diese Seite dient der allgemeinen Information und ist keine Anlageberatung.</p>')
         seite_f = build_firmenseiten.seitenrahmen(titel, beschr, u, h1, crumbs, body, kl1, k1, f1, 2, "")
         open(os.path.join(ROOT, u, "index.html"), "w", encoding="utf-8").write(seite_f)
