@@ -3839,6 +3839,581 @@
 "sym": "BBTN.JK",
 "name": "PT Bank Tabungan Negara (Persero) Tbk",
 "slug": "pt-bank-tabungan-negara-persero-tbk"
+},
+{
+"sym": "O",
+"name": "Realty Income",
+"slug": "realty-income"
+},
+{
+"sym": "KO",
+"name": "Coca-Cola",
+"slug": "coca-cola"
+},
+{
+"sym": "MAIN",
+"name": "Main Street Capital",
+"slug": "main-street-capital"
+},
+{
+"sym": "PEP",
+"name": "PepsiCo",
+"slug": "pepsico"
+},
+{
+"sym": "PFE",
+"name": "Pfizer",
+"slug": "pfizer"
+},
+{
+"sym": "MO",
+"name": "Altria",
+"slug": "altria"
+},
+{
+"sym": "ARCC",
+"name": "Ares Capital",
+"slug": "ares-capital"
+},
+{
+"sym": "GIS",
+"name": "General Mills",
+"slug": "general-mills"
+},
+{
+"sym": "NKE",
+"name": "Nike",
+"slug": "nike"
+},
+{
+"sym": "KHC",
+"name": "Kraft Heinz",
+"slug": "kraft-heinz"
+},
+{
+"sym": "MSFT",
+"name": "Microsoft",
+"slug": "microsoft"
+},
+{
+"sym": "NVDA",
+"name": "Nvidia",
+"slug": "nvidia"
+},
+{
+"sym": "VZ",
+"name": "Verizon",
+"slug": "verizon"
+},
+{
+"sym": "AAPL",
+"name": "Apple",
+"slug": "apple"
+},
+{
+"sym": "CVX",
+"name": "Chevron",
+"slug": "chevron"
+},
+{
+"sym": "MCD",
+"name": "McDonald's",
+"slug": "mcdonalds"
+},
+{
+"sym": "GOOGL",
+"name": "Alphabet",
+"slug": "alphabet"
+},
+{
+"sym": "PG",
+"name": "Procter & Gamble",
+"slug": "procter-gamble"
+},
+{
+"sym": "JNJ",
+"name": "Johnson & Johnson",
+"slug": "johnson-johnson"
+},
+{
+"sym": "ABBV",
+"name": "AbbVie",
+"slug": "abbvie"
+},
+{
+"sym": "ABT",
+"name": "Abbott",
+"slug": "abbott"
+},
+{
+"sym": "ADM",
+"name": "Archer-Daniels-Midland",
+"slug": "archer-daniels-midland"
+},
+{
+"sym": "ADP",
+"name": "Automatic Data Processing",
+"slug": "automatic-data-processing"
+},
+{
+"sym": "AFL",
+"name": "Aflac",
+"slug": "aflac"
+},
+{
+"sym": "ALB",
+"name": "Albemarle",
+"slug": "albemarle"
+},
+{
+"sym": "AOS",
+"name": "A.O. Smith",
+"slug": "a-o-smith"
+},
+{
+"sym": "APD",
+"name": "Air Products",
+"slug": "air-products"
+},
+{
+"sym": "ATO",
+"name": "Atmos Energy",
+"slug": "atmos-energy"
+},
+{
+"sym": "BDX",
+"name": "Becton Dickinson",
+"slug": "becton-dickinson"
+},
+{
+"sym": "BEN",
+"name": "Franklin Resources",
+"slug": "franklin-resources"
+},
+{
+"sym": "BF-B",
+"name": "Brown-Forman",
+"slug": "brown-forman"
+},
+{
+"sym": "BRO",
+"name": "Brown & Brown",
+"slug": "brown-brown"
+},
+{
+"sym": "CAH",
+"name": "Cardinal Health",
+"slug": "cardinal-health"
+},
+{
+"sym": "CAT",
+"name": "Caterpillar",
+"slug": "caterpillar"
+},
+{
+"sym": "CB",
+"name": "Chubb",
+"slug": "chubb"
+},
+{
+"sym": "CHD",
+"name": "Church & Dwight",
+"slug": "church-dwight"
+},
+{
+"sym": "CHRW",
+"name": "C.H. Robinson",
+"slug": "c-h-robinson"
+},
+{
+"sym": "CINF",
+"name": "Cincinnati Financial",
+"slug": "cincinnati-financial"
+},
+{
+"sym": "CL",
+"name": "Colgate-Palmolive",
+"slug": "colgate-palmolive"
+},
+{
+"sym": "CLX",
+"name": "Clorox",
+"slug": "clorox"
+},
+{
+"sym": "CTAS",
+"name": "Cintas",
+"slug": "cintas"
+},
+{
+"sym": "DOV",
+"name": "Dover",
+"slug": "dover"
+},
+{
+"sym": "ECL",
+"name": "Ecolab",
+"slug": "ecolab"
+},
+{
+"sym": "ED",
+"name": "Consolidated Edison",
+"slug": "consolidated-edison"
+},
+{
+"sym": "EMR",
+"name": "Emerson Electric",
+"slug": "emerson-electric"
+},
+{
+"sym": "ES",
+"name": "Eversource Energy",
+"slug": "eversource-energy"
+},
+{
+"sym": "ESS",
+"name": "Essex Property Trust",
+"slug": "essex-property-trust"
+},
+{
+"sym": "EXPD",
+"name": "Expeditors International",
+"slug": "expeditors-international"
+},
+{
+"sym": "FAST",
+"name": "Fastenal",
+"slug": "fastenal"
+},
+{
+"sym": "FRT",
+"name": "Federal Realty",
+"slug": "federal-realty"
+},
+{
+"sym": "GPC",
+"name": "Genuine Parts",
+"slug": "genuine-parts"
+},
+{
+"sym": "GWW",
+"name": "W.W. Grainger",
+"slug": "w-w-grainger"
+},
+{
+"sym": "HRL",
+"name": "Hormel Foods",
+"slug": "hormel-foods"
+},
+{
+"sym": "IBM",
+"name": "IBM",
+"slug": "ibm"
+},
+{
+"sym": "ITW",
+"name": "Illinois Tool Works",
+"slug": "illinois-tool-works"
+},
+{
+"sym": "JKHY",
+"name": "Jack Henry",
+"slug": "jack-henry"
+},
+{
+"sym": "KMB",
+"name": "Kimberly-Clark",
+"slug": "kimberly-clark"
+},
+{
+"sym": "LHX",
+"name": "L3Harris Technologies",
+"slug": "l3harris-technologies"
+},
+{
+"sym": "LIN",
+"name": "Linde",
+"slug": "linde"
+},
+{
+"sym": "LOW",
+"name": "Lowe's",
+"slug": "lowes"
+},
+{
+"sym": "MDT",
+"name": "Medtronic",
+"slug": "medtronic"
+},
+{
+"sym": "MKC",
+"name": "McCormick",
+"slug": "mccormick"
+},
+{
+"sym": "NDSN",
+"name": "Nordson",
+"slug": "nordson"
+},
+{
+"sym": "NEE",
+"name": "NextEra Energy",
+"slug": "nextera-energy"
+},
+{
+"sym": "NNN",
+"name": "NNN REIT",
+"slug": "nnn-reit"
+},
+{
+"sym": "NUE",
+"name": "Nucor",
+"slug": "nucor"
+},
+{
+"sym": "PH",
+"name": "Parker-Hannifin",
+"slug": "parker-hannifin"
+},
+{
+"sym": "PPG",
+"name": "PPG Industries",
+"slug": "ppg-industries"
+},
+{
+"sym": "ROP",
+"name": "Roper Technologies",
+"slug": "roper-technologies"
+},
+{
+"sym": "SHW",
+"name": "Sherwin-Williams",
+"slug": "sherwin-williams"
+},
+{
+"sym": "SJM",
+"name": "J.M. Smucker",
+"slug": "j-m-smucker"
+},
+{
+"sym": "SO",
+"name": "Southern Company",
+"slug": "southern-company"
+},
+{
+"sym": "SPGI",
+"name": "S&P Global",
+"slug": "s-p-global"
+},
+{
+"sym": "SWK",
+"name": "Stanley Black & Decker",
+"slug": "stanley-black-decker"
+},
+{
+"sym": "SYY",
+"name": "Sysco",
+"slug": "sysco"
+},
+{
+"sym": "TGT",
+"name": "Target",
+"slug": "target"
+},
+{
+"sym": "TROW",
+"name": "T. Rowe Price",
+"slug": "t-rowe-price"
+},
+{
+"sym": "WMT",
+"name": "Walmart",
+"slug": "walmart"
+},
+{
+"sym": "WST",
+"name": "West Pharmaceutical Services",
+"slug": "west-pharmaceutical-services"
+},
+{
+"sym": "XOM",
+"name": "Exxon Mobil",
+"slug": "exxon-mobil"
+},
+{
+"sym": "AWR",
+"name": "American States Water",
+"slug": "american-states-water"
+},
+{
+"sym": "NWN",
+"name": "Northwest Natural Holdings",
+"slug": "northwest-natural-holdings"
+},
+{
+"sym": "MZTI",
+"name": "Marzetti",
+"slug": "marzetti"
+},
+{
+"sym": "CWT",
+"name": "California Water Service",
+"slug": "california-water-service"
+},
+{
+"sym": "HTO",
+"name": "H2O America",
+"slug": "h2o-america"
+},
+{
+"sym": "CBSH",
+"name": "Commerce Bancshares",
+"slug": "commerce-bancshares"
+},
+{
+"sym": "SCL",
+"name": "Stepan",
+"slug": "stepan"
+},
+{
+"sym": "FUL",
+"name": "H.B. Fuller",
+"slug": "h-b-fuller"
+},
+{
+"sym": "NFG",
+"name": "National Fuel Gas",
+"slug": "national-fuel-gas"
+},
+{
+"sym": "MSA",
+"name": "MSA Safety",
+"slug": "msa-safety"
+},
+{
+"sym": "UVV",
+"name": "Universal Corp.",
+"slug": "universal-corp"
+},
+{
+"sym": "TNC",
+"name": "Tennant",
+"slug": "tennant"
+},
+{
+"sym": "UBSI",
+"name": "United Bankshares",
+"slug": "united-bankshares"
+},
+{
+"sym": "MGEE",
+"name": "MGE Energy",
+"slug": "mge-energy"
+},
+{
+"sym": "CSL",
+"name": "Carlisle",
+"slug": "carlisle"
+},
+{
+"sym": "DCI",
+"name": "Donaldson",
+"slug": "donaldson"
+},
+{
+"sym": "UHT",
+"name": "Universal Health Realty Income Trust",
+"slug": "universal-health-realty-income-trust"
+},
+{
+"sym": "WABC",
+"name": "Westamerica",
+"slug": "westamerica"
+},
+{
+"sym": "GGG",
+"name": "Graco",
+"slug": "graco"
+},
+{
+"sym": "SON",
+"name": "Sonoco Products",
+"slug": "sonoco-products"
+},
+{
+"sym": "MGRC",
+"name": "McGrath Rentcorp",
+"slug": "mcgrath-rentcorp"
+},
+{
+"sym": "CBU",
+"name": "Community Bank System",
+"slug": "community-bank-system"
+},
+{
+"sym": "SEIC",
+"name": "SEI Investments",
+"slug": "sei-investments"
+},
+{
+"sym": "ABM",
+"name": "ABM Industries",
+"slug": "abm-industries"
+},
+{
+"sym": "ATR",
+"name": "Aptar",
+"slug": "aptar"
+},
+{
+"sym": "BMI",
+"name": "Badger Meter",
+"slug": "badger-meter"
+},
+{
+"sym": "UMBF",
+"name": "UMB Financial",
+"slug": "umb-financial"
+},
+{
+"sym": "AROW",
+"name": "Arrow Financial",
+"slug": "arrow-financial"
+},
+{
+"sym": "BANF",
+"name": "BancFirst",
+"slug": "bancfirst"
+},
+{
+"sym": "NJR",
+"name": "New Jersey Resources",
+"slug": "new-jersey-resources"
+},
+{
+"sym": "LECO",
+"name": "Lincoln Electric",
+"slug": "lincoln-electric"
+},
+{
+"sym": "PII",
+"name": "Polaris",
+"slug": "polaris"
+},
+{
+"sym": "YORW",
+"name": "York Water",
+"slug": "york-water"
+},
+{
+"sym": "MATW",
+"name": "Matthews International",
+"slug": "matthews-international"
+},
+{
+"sym": "CASS",
+"name": "Cass Information Systems",
+"slug": "cass-information-systems"
 }
 ]
 }

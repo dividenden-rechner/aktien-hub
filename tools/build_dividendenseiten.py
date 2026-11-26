@@ -285,7 +285,7 @@ def peer_block(sym, cfg_by_sym, gruppen):
             f'<p><a href="/dividende/aristokraten/">Alle Dividendenaristokraten und Dividend Kings im Vergleich</a></p>')
 
 def seite(r, kopf_links, kopf, fuss, mag, kurs_datum, sec_stand, usd_je_eur, jahr):
-    f = r["f"]; name = f["name"]; url = f"aktien-hub/{f['slug']}/"
+    f = r["f"]; name = f["name"]; url = f"aktien-hub/{f['slug']}/dividende/"
     rend = proz(r["rendite"]) if r["rendite"] else None
     title = f"{name} Dividende {jahr}: Rendite, Termine und Historie"
     kennung = ", ".join(x for x in (f"ISIN {r['isin']}" if r.get("isin") else "", f"WKN {r['wkn']}" if r.get("wkn") else "") if x)
@@ -462,7 +462,7 @@ a.addEventListener("input",function(){{b.value="";r()}});b.addEventListener("inp
             {"@type": "ListItem", "position": 3, "name": f"{name} Dividende", "item": BASE + url}]},
         {"@context": "https://schema.org", "@type": "WebPage", "name": title, "description": desc, "url": BASE + url, "inLanguage": "de-DE",
          "dateModified": datetime.date.today().isoformat(), "isPartOf": {"@type": "WebSite", "name": "Dividenden-Rechner", "url": BASE},
-         "primaryImageOfPage": BASE + url + "og.png" if r.get("og_bild") else BASE + "assets/og-default.png",
+         "primaryImageOfPage": BASE + f"dividende/{f['slug']}/og.png" if r.get("og_bild") else BASE + "assets/og-default.png",
          "about": {"@type": "Corporation", "name": name, "legalName": r.get("sec_name") or name, "tickerSymbol": f["sym"],
                    **({"identifier": [{"@type": "PropertyValue", "propertyID": p, "value": v} for p, v in (("ISIN", r.get("isin")), ("WKN", r.get("wkn"))) if v]}
                       if r.get("isin") or r.get("wkn") else {})}},
@@ -478,7 +478,7 @@ a.addEventListener("input",function(){{b.value="";r()}});b.addEventListener("inp
         serie_quelle_html = (f'<li>Dividendenerhöhungen in Folge: <a href="{esc(se["quelle"])}" rel="nofollow noopener" target="_blank">{esc(dom)}</a>'
                              f' (Stand {datum(se["stand"]) if se.get("stand") else "–"})</li>')
     heute = datetime.date.today().isoformat()
-    og_img = BASE + url + "og.png" if r.get("og_bild") else BASE + "assets/og-default.png"
+    og_img = BASE + f"dividende/{f['slug']}/og.png" if r.get("og_bild") else BASE + "assets/og-default.png"
     logo = logo_span(f["sym"], name, "../../")
     nur_test = (f'<div data-nur-test="1" id="fmp-box" data-sym="{esc(f["sym"])}"></div>'
                 f'<p data-nur-test="1">Nur Testseite: <a href="../../aktien-hub/?s={esc(f["sym"])}">{esc(name)} im Aktien-Hub</a> (DCF, Analysten, Live-Kurs)</p>'
@@ -516,7 +516,8 @@ a.addEventListener("input",function(){{b.value="";r()}});b.addEventListener("inp
 <body>
 {kopf}
 <main class="wrap"><article>
-<nav class="crumbs" aria-label="Brotkrumen"><a href="../../">Start</a> › <a href="/dividende/">Dividenden</a> › <span aria-current="page">{esc(name)}</span></nav>
+<nav class="crumbs" aria-label="Brotkrumen"><a href="../../">Start</a> › <a href="/dividende/">Dividenden</a> › <a href="../">{esc(name)}</a> › <span aria-current="page">Dividende</span></nav>
+<nav class="firmtabs" aria-label="Bereiche der Firmenseite"><a href="../">Übersicht</a><a href="./" aria-current="page">Dividende</a></nav>
 <div class="titlerow" style="gap:12px">{logo}<h1>{esc(name)} Dividende</h1></div>
 <p class="meta">Stand: {datum(heute)} · Kurs vom {kurs_d} · Kürzel {esc(f["sym"])}{" · ISIN " + esc(r["isin"]) if r.get("isin") else ""}{" · WKN " + esc(r["wkn"]) if r.get("wkn") else ""}</p>
 <p class="lead">{lead}</p>
@@ -855,6 +856,7 @@ def main():
         if not r:
             print("übersprungen (keine Daten):", f["sym"]); continue
         h, t, d, u = *seite(r, kl1, k1, f1, mag, kurse.get("datum"), secj.get("stand", ""), usd_je_eur, jahr),
+        h = re.sub(r'((?:href|src)=")((?:\.\./)+)', lambda m: m.group(1) + "../" + m.group(2), h)   # eine Ebene tiefer (.../dividende/)
         os.makedirs(os.path.join(ROOT, u), exist_ok=True)
         open(os.path.join(ROOT, u, "index.html"), "w", encoding="utf-8").write(h)
         rs.append(r); eintraege.append((u, t, d))
@@ -866,7 +868,8 @@ def main():
     open(os.path.join(ROOT, "dividende", "aristokraten", "index.html"), "w", encoding="utf-8").write(h)
     eintraege.insert(1, ("dividende/aristokraten/", t, d))
     import build_firmenseiten
-    neu = build_firmenseiten.bauen({r["f"]["sym"] for r in rs}, {r["f"]["slug"] for r in rs}, news_by_sym(mag), kl1, k1, f1, datetime.date.today().isoformat())
+    neu = build_firmenseiten.bauen({r["f"]["sym"] for r in rs}, {r["f"]["slug"] for r in rs}, news_by_sym(mag), kl1, k1, f1, datetime.date.today().isoformat(),
+                                   hand=[{"sym": r["f"]["sym"], "name": r["f"]["name"], "slug": r["f"]["slug"]} for r in rs])
     # Auch die handkuratierten Seiten bekommen einen Eintrag für den Link aus dem Aktien-Hub
     zuordnung = json.load(open(os.path.join(ROOT, "data", "firmen-slugs.json"), encoding="utf-8"))
     for r in rs:
