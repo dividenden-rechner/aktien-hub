@@ -15,6 +15,7 @@ image_alt: "Firmenzentrale der technotrans SE in Sassenberg"
 image_credit: "Foto: technotrans SE (Pressefoto)"
 image_source: "https://www.technotrans.de"
 image_lizenz: Pressebild
+logo_file: assets/logos/ttr1-de.png
 ---
 !!! kurz "Kurz gesagt"
     **Auftrag:** größte Serienbestellung für High-End-Laserkühlungen, Volumen im hohen einstelligen Millionenbereich, Umsatz überwiegend 2027
