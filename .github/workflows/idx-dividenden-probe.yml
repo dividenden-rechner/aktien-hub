@@ -1,0 +1,27 @@
+name: IDX Dividenden-Probe
+on:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  probe:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: Dividenden-Endpunkte finden und testen
+        run: |
+          UA="Mozilla/5.0 (dividenden-rechner.de Datensammlung)"
+          mkdir -p js && cd js
+          curl -s -L -A "$UA" -m 40 -o ../profil.html "https://www.idx.id/en/listed-companies/company-profiles/BBCA"
+          for s in $(grep -oi '/_nuxt/[^"]*\.js' ../profil.html | sort -u); do curl -s -L -A "$UA" -m 40 -o "$(basename $s)" "https://www.idx.id$s"; done
+          cat *.js ../profil.html > /tmp/alles.txt
+          echo "== Pfade mit Dividend"
+          grep -oh '/primary/[A-Za-z0-9/_-]*' /tmp/alles.txt | grep -i "divid\|corporate\|action\|announce" | sort | uniq -c | head -30
+          echo "== Stichworte"
+          grep -oh '.\{0,60\}[Dd]ividend.\{0,60\}' /tmp/alles.txt | head -15
+          cd ..
+          for p in "/primary/ListedCompany/GetDividend?kodeEmiten=BBCA" "/primary/ListedCompany/GetDividendAnnouncement?kodeEmiten=BBCA" "/primary/ListedCompany/GetCorporateAction?kodeEmiten=BBCA" "/primary/ListedCompany/GetDividendHistory?kodeEmiten=BBCA" "/primary/CorporateAction/GetDividend?code=BBCA&start=0&length=20" "/primary/ListedCompany/GetDividendSchedule?kodeEmiten=BBCA"; do
+            echo "-- $p"
+            curl -s -A "$UA" -H "Accept: application/json" -m 40 -o r.json -w "HTTP %{http_code} %{size_download}\n" "https://www.idx.id$p"
+            head -c 500 r.json; echo
+          done
