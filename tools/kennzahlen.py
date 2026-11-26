@@ -191,6 +191,7 @@ def land_aus_isin(isin, f):
 
 def main():
     CFG = {f["sym"]: f for f in (json.load(open("data/dividendenseiten.json", encoding="utf-8")).get("firmen") or [])}
+    ZM = (json.load(open("data/zahlmonate.json", encoding="utf-8")).get("firmen") or {}) if os.path.exists("data/zahlmonate.json") else {}
     try:
         for x in json.load(open("data/universe.json"))["firmen"]:
             SEKTOR[x["sym"].upper()] = GICS.get(x.get("sektor"), x.get("sektor"))
@@ -393,7 +394,7 @@ def main():
             "dividendenserie": ((CFG.get(t) or {}).get("serie") or {}).get("jahre") if ((CFG.get(t) or {}).get("serie") or {}).get("jahre") is not None else ((99 if dps_r and streak >= len(dps_r) - 1 and streak >= 9 else streak) if dps_r else None),
             # Zahlweise: Zahlungen pro Jahr und die Monate, in denen gezahlt wird (Monate noch zu recherchieren, siehe zahlmonate)
             "zahlweise": {4: "vierteljährlich", 12: "monatlich", 2: "halbjährlich", 1: "jährlich"}.get((CFG.get(t) or {}).get("rhythmus")),
-            "zahlmonate": (CFG.get(t) or {}).get("zahlmonate"),
+            "zahlmonate": (CFG.get(t) or {}).get("zahlmonate") or ZM.get(t),
             "nav_je_aktie": r2(ek / aktien, 2) if ek and aktien else None,
         })
         # Margen, EBITDA, Unternehmenswert, Bilanz, Altman-Z und Piotroski (SEC-Bilanz und GuV)
