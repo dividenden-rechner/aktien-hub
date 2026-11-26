@@ -148,19 +148,31 @@ def wachstum(W):
            "Welche Dividendenaktien ihre Ausschüttung in den vergangenen fünf Jahren am stärksten erhöht haben. Die Liste wird aus den Daten neu berechnet.", body
 
 
+HY_EUROPA = {"DE", "FR", "NL", "GB", "CH", "IT", "ES", "SE", "NO", "DK", "BE", "FI", "IE", "AT", "LU", "PT"}
+HY_ASIEN = {"JP", "KR"}
+
+
 def high_yield(W):
-    kand = {s: r for s, r in W.items() if ok(r, rmax=15, ausmax=80) and r["rendite"] >= 5 and (r.get("fcf_ausschuettung") is None or r["fcf_ausschuettung"] <= 100)}
-    kand = {s: kand[s] for s in einmalig(W, kand)}
-    top = sorted(kand, key=lambda s: -kand[s]["rendite"])[:10]
+    """Topfirmen: 7 USA, 2 Europa, 1 Asien (Japan/Korea). Keine Indonesien-Werte."""
+    basis = {s: r for s, r in W.items() if ok(r, rmax=15, ausmax=80) and r["rendite"] >= 5
+             and (r.get("fcf_ausschuettung") is None or r["fcf_ausschuettung"] <= 100)
+             and (r.get("boersenwert_eur") or 0) >= 5e9 and r.get("land") != "ID"}
+    basis = {s: basis[s] for s in einmalig(W, basis)}
+    def waehle(laender, n):
+        pool = [s for s in basis if basis[s].get("land") in laender]
+        return sorted(pool, key=lambda s: -basis[s]["rendite"])[:n]
+    top = waehle({"US"}, 7) + waehle(HY_EUROPA, 2) + waehle(HY_ASIEN, 1)
     if len(top) < 10:
         return None
+    top = sorted(top, key=lambda s: -basis[s]["rendite"])
+    kand = basis
     zeilen = [[i, link_name(s, kand[s]["name"]), de(kand[s]["rendite"]) + " %",
                (de(kand[s]["ausschuettung"], 0) + " %") if kand[s].get("ausschuettung") is not None else "–",
                (de(kand[s]["fcf_ausschuettung"], 0) + " %") if kand[s].get("fcf_ausschuettung") is not None else "–",
                (de(kand[s]["div_wachstum_5j"]) + " %") if kand[s].get("div_wachstum_5j") is not None else "–"]
               for i, s in enumerate(top, 1)]
-    body = (f"Hohe Dividendenrenditen locken, sind aber oft ein Warnsignal. Diese Liste zeigt die zehn Firmen mit der höchsten Rendite, die zugleich eine Ausschüttung unter 80 Prozent des Gewinns und höchstens 100 Prozent des freien Cashflows aufweisen. Stand: {DATUM}.\n\n"
-            "Berücksichtigt werden Firmen mit einem Börsenwert ab 2 Mrd. Euro und einer Rendite zwischen 5 und 15 Prozent.\n\n"
+    body = (f"Hohe Dividendenrenditen locken, sind aber oft ein Warnsignal. Diese Liste zeigt zehn Großfirmen mit hoher Rendite, deren Ausschüttung unter 80 Prozent des Gewinns und höchstens 100 Prozent des freien Cashflows liegt: sieben aus den USA, zwei aus Europa und eine aus Asien. Stand: {DATUM}.\n\n"
+            "Berücksichtigt werden Firmen mit einem Börsenwert ab 5 Mrd. Euro und einer Rendite zwischen 5 und 15 Prozent.\n\n"
             + tabelle(zeilen, ["Platz", "Firma", "Rendite", "Ausschüttungsquote", "Anteil am FCF", "Dividendenwachstum 5 J."]) +
             "\nWer eine hohe Rendite sieht, sollte drei Fragen stellen: Ist die Dividende aus dem Cashflow gedeckt? Wächst das Geschäft? Ist die Rendite hoch, weil der Kurs gefallen ist? Die Spalten helfen bei den ersten beiden Antworten.\n\n"
             "Die Liste ist eine Auswertung nach festen Regeln und keine Kaufempfehlung.\n")
@@ -168,13 +180,10 @@ def high_yield(W):
            "Die zehn Dividendenaktien mit der höchsten Rendite, die ihre Ausschüttung trotzdem aus Gewinn und Cashflow zahlen. Die Liste wird regelmäßig neu berechnet.", body
 
 
-ZM = (json.load(open("data/zahlmonate.json", encoding="utf-8")).get("firmen") or {})
-
-
 def monatlich(W):
     res = []
     for s, r in W.items():
-        zm = (r.get("zahlmonate") or ZM.get(s) or "").strip()
+        zm = (r.get("zahlmonate") or "").strip()
         if not zm:
             continue
         if zm.lower().startswith("jeden"):
@@ -188,7 +197,7 @@ def monatlich(W):
     top = res[:10]
     if len(top) < 5:
         return None
-    zeilen = [[i, link_name(s, W[s]["name"]), (W[s].get("zahlmonate") or ZM.get(s)), n, de(W[s]["rendite"]) + " %"] for i, (n, s) in enumerate(top, 1)]
+    zeilen = [[i, link_name(s, W[s]["name"]), W[s]["zahlmonate"], n, de(W[s]["rendite"]) + " %"] for i, (n, s) in enumerate(top, 1)]
     body = (f"Manche Firmen zahlen ihre Dividende nicht einmal im Jahr, sondern öfter. Diese Liste zeigt Dividendenaktien mit den meisten Zahlmonaten, die wir für sie belegt haben. Stand: {DATUM}.\n\n"
             "Berücksichtigt werden Firmen mit mindestens vier belegten Zahlmonaten und einer Rendite zwischen 0 und 15 Prozent. Monate, die nicht belegt sind, fehlen in der Liste.\n\n"
             + tabelle(zeilen, ["Platz", "Firma", "Zahlmonate", "Anzahl Monate", "Rendite"]) +
