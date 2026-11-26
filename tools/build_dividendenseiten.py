@@ -275,13 +275,30 @@ COLS6 = '<colgroup><col class="c1"><col class="c2"><col class="c3"><col class="c
 
 PEER_BLOCKS = {}
 
-def peer_block(sym, cfg_by_sym, gruppen):
-    """Querverlinkung je Aktie: Aristokratenliste plus bis zu drei Aktien aus derselben Peer-Gruppe."""
+def peer_block(sym, recs, gruppen):
+    """Vergleich in der Peer-Gruppe (wie beim Aktienvergleich): Tabelle mit Rendite, KGV, Ausschüttung der Gruppenmitglieder,
+    dazu Querverlinkung und Link auf die Aristokratenliste."""
     gr = next((g for g in gruppen if sym in g["members"]), None)
-    peers = [m for m in (gr["members"] if gr else []) if m != sym and m in cfg_by_sym][:3]
-    items = "".join(f'<li><a href="/aktien-hub/{cfg_by_sym[m]["slug"]}/" style="display:flex;align-items:center;gap:10px">{logo_span(m, cfg_by_sym[m]["name"], "../../")}{esc(cfg_by_sym[m]["name"])}</a></li>' for m in peers)
-    peer_teil = (f'<p>Aus der Gruppe „{esc(gr["name"])}“ lohnt der Blick auf:</p><ul>{items}</ul>' if peers else "")
-    return (f'<h2>Vergleich und Einordnung</h2>{peer_teil}'
+    peers = [m for m in (gr["members"] if gr else []) if m != sym and m in recs][:4]
+    def zelle(v, fmt):
+        return fmt(v) if v is not None else "–"
+    def zeile(m, fett=False):
+        r = recs[m]; name = esc(r["f"]["name"]); slug = r["f"]["slug"]
+        n = f'<a href="/aktien-hub/{slug}/">{name}</a>' if not fett else f"<strong>{name}</strong>"
+        return (f'<tr><td>{logo_span(m, r["f"]["name"], "../../")}{n}</td>'
+                f'<td class="n">{zelle(r.get("rendite"), lambda v: proz(v))}</td>'
+                f'<td class="n">{zelle(r.get("kgv"), lambda v: de(v, 1))}</td>'
+                f'<td class="n">{zelle(r.get("quote_gewinn"), lambda v: proz(v, 0))}</td>'
+                f'<td class="n">{zelle(r.get("dps_jahr") or r.get("dps_basis"), lambda v: de(v, 2))}</td></tr>')
+    if not peers:
+        return (f'<h2>Vergleich und Einordnung</h2>'
+                f'<p><a href="/dividende/aristokraten/">Alle Dividendenaristokraten und Dividend Kings im Vergleich</a></p>')
+    kopf = ('<div class="tablewrap"><table><thead><tr><th>Firma</th><th class="n">Rendite</th><th class="n">KGV</th>'
+            '<th class="n">Ausschüttung am Gewinn</th><th class="n">Dividende je Aktie</th></tr></thead><tbody>')
+    tabelle = kopf + zeile(sym, fett=True) + "".join(zeile(m) for m in peers) + "</tbody></table></div>"
+    return (f'<h2>Vergleich und Einordnung</h2>'
+            f'<p>Vergleich in der Gruppe „{esc(gr["name"])}“: Rendite, Bewertung und Ausschüttung im Verhältnis zum Gewinn.</p>'
+            f'{tabelle}'
             f'<p><a href="/dividende/aristokraten/">Alle Dividendenaristokraten und Dividend Kings im Vergleich</a></p>')
 
 def seite(r, kopf_links, kopf, fuss, mag, kurs_datum, sec_stand, usd_je_eur, jahr):
@@ -833,12 +850,10 @@ def main():
     jahr = datetime.date.today().year
     kl1, k1, f1 = rahmen(2); kl0, k0, f0 = rahmen(1)
     rs, eintraege, hand = [], [], []
-    cfg_by_sym = {f["sym"]: f for f in cfg}
     gruppen = lade("data/dividende-peers.json")["gruppen"]
     PEER_BLOCKS.clear()
-    for f in cfg:
-        PEER_BLOCKS[f["sym"]] = peer_block(f["sym"], cfg_by_sym, gruppen)
     kz_werte = lade("data/kennzahlen.json").get("werte", {})
+    recs = {}
     for f in cfg:
         r = kennzahlen(f, sec, kurse, iz, usd_je_eur, termine)
         if r:
@@ -850,6 +865,11 @@ def main():
             r["eps_fwd_art"] = pr.get("eps_art", "")
             r["wkn"] = f.get("wkn") or WKN.get(r.get("isin") or "")
             og_bild(r)
+            recs[f["sym"]] = r
+    for f in cfg:
+        PEER_BLOCKS[f["sym"]] = peer_block(f["sym"], recs, gruppen)
+    for f in cfg:
+        r = recs.get(f["sym"])
         if not r:
             print("übersprungen (keine Daten):", f["sym"]); continue
         h, t, d, u = *seite(r, kl1, k1, f1, mag, kurse.get("datum"), secj.get("stand", ""), usd_je_eur, jahr),
