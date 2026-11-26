@@ -22,7 +22,7 @@ image_lizenz: Pressebild
 
     **Gewinn:** 10,9 Milliarden Euro 2025 nach 2,1 Milliarden Euro im Jahr 2021
 
-    **Reichweite:** Banken in 13 Ländern, mit Commerzbank und mBank zusammen rund 250 Millionen Einwohner in den Märkten und mehr als 1.300 Milliarden Euro Bilanzsumme
+    **Reichweite:** Banken in 13 Ländern, mit Commerzbank und mBank zusammen rund 250 Millionen Einwohner in den Märkten und rund 1,5 Billionen Euro Bilanzsumme
 
     **Ziel:** 13 Milliarden Euro Nettogewinn 2028, bis 2030 rund 50 Milliarden Euro an die Aktionäre
 
@@ -52,7 +52,21 @@ Mit der Commerzbank kommt die mBank dazu, an der die Commerzbank 69 % hält. Sie
 
 ## Wie groß ist das Imperium?
 
-Zahlen helfen beim Einordnen. UniCredit hat eine Bilanzsumme von gut 900 Milliarden Euro, zusammen mit der Commerzbank sind es mehr als 1.300 Milliarden Euro. Das ist eine Billion und dreihundert Milliarden, keine Billiarde, und es ist die Summe aller Vermögenswerte in den Büchern, nicht das Geld der Kunden. Eine gemeinsame Zahl für die Kundeneinlagen liegt noch nicht vor. Zur Einordnung: Die Bilanzsumme entspricht grob einem Drittel der jährlichen Wirtschaftsleistung Deutschlands.
+Zahlen helfen beim Einordnen. Die Rangliste der Global Banker nach Bilanzsumme zum Jahresende 2025, in Milliarden US-Dollar:
+
+| Bank | Weltrang | Bilanzsumme |
+|---|---|---|
+| BNP Paribas | 7 | 3.282 |
+| HSBC | 8 | 3.233 |
+| Crédit Agricole | 9 | 3.151 |
+| Santander | 14 | 2.194 |
+| **UniCredit + Commerzbank** | | **1.716** |
+| Deutsche Bank | 23 | 1.686 |
+| UBS | 25 | 1.617 |
+| UniCredit allein | 39 | 1.023 |
+| Commerzbank allein | 59 | 693 |
+
+UniCredit allein steht auf Platz 39 und ist damit kleiner als Deutsche Bank und UBS. Zusammen mit der Commerzbank überholt die Gruppe beide knapp und läge weltweit etwa im Bereich der Plätze 15 bis 22. Das sind rund 1,5 Billionen Euro (UniCredit gut 900 Milliarden, Commerzbank umgerechnet knapp 600 Milliarden). Die drei großen Häuser BNP Paribas, HSBC und Crédit Agricole sind fast doppelt so groß, Santander ist gut ein Viertel größer. Zur Einordnung: Das ist eine Billion und fünfhundert Milliarden, keine Billiarde, und es ist die Summe aller Vermögenswerte in den Büchern, nicht das Geld der Kunden. Eine gemeinsame Zahl für die Kundeneinlagen liegt noch nicht vor. Die Bilanzsumme entspricht grob einem Drittel der jährlichen Wirtschaftsleistung Deutschlands.
 
 Der Börsenwert beider Banken liegt zusammen bei rund 165 Milliarden Euro, der Gewinn der ersten neun Monate bei 12,1 Milliarden Euro. UniCredit ist bisher in 13 Märkten aktiv, von Italien über Deutschland und Österreich bis nach Tschechien, Ungarn, Rumänien und auf den Balkan, mit der mBank kommt Polen dazu. In diesen Ländern leben grob gerechnet gut 250 Millionen Menschen. Das ist die Einwohnerzahl, keine Kundenzahl. Den Sitz behält die Gruppe in Mailand.
 
@@ -67,7 +81,7 @@ Für 2026 peilt die Bank 11 Milliarden Euro Nettogewinn an, für 2028 13 Milliar
 
 ## Was bedeutet das für Europa?
 
-Orcel spricht seit Jahren davon, dass Europas Bankenmarkt zersplittert ist und Konsolidierer braucht. Die europäischen Kapitalmärkte nannte er 2023 „nicht zweckmäßig“. Für Europa wäre die UniCredit nach der Übernahme eine Bank, die in zwei der größten Volkswirtschaften der Eurozone zu Hause ist und grenzüberschreitend mit einer Bilanz arbeitet. Zu den ganz Großen reicht es aber noch nicht, weltweit käme die Gruppe nach Einschätzung von Beobachtern vielleicht unter die ersten zwanzig. Außerdem hängt der Erfolg an der Umsetzung. Die Commerzbank soll Stellen abbauen, bei der Spitze beginnend, die HVB soll mit ihr verschmolzen werden, der Betriebsrat verweist auf geltende Tarifverträge, und viele Mittelständler fragen sich, ob sie Kunden bleiben.
+Orcel spricht seit Jahren davon, dass Europas Bankenmarkt zersplittert ist und Konsolidierer braucht. Die europäischen Kapitalmärkte nannte er 2023 „nicht zweckmäßig“. Für Europa wäre die UniCredit nach der Übernahme eine Bank, die in zwei der größten Volkswirtschaften der Eurozone zu Hause ist und grenzüberschreitend mit einer Bilanz arbeitet. Zu den ganz Großen reicht es aber noch nicht: BNP Paribas, HSBC und Crédit Agricole haben fast doppelt so viel Bilanzsumme. Außerdem hängt der Erfolg an der Umsetzung. Die Commerzbank soll Stellen abbauen, bei der Spitze beginnend, die HVB soll mit ihr verschmolzen werden, der Betriebsrat verweist auf geltende Tarifverträge, und viele Mittelständler fragen sich, ob sie Kunden bleiben.
 
 ## Was kommt als Nächstes?
 
@@ -77,6 +91,7 @@ Das Angebot für Banco BPM scheiterte im November 2024. Neue Versuche würden an
 
 ## Quellen
 
+- [The Global Banker: World's 100 largest banks 2026](https://www.theglobalbanker.com/rankings/)
 - [Wikipedia: Andrea Orcel](https://en.wikipedia.org/wiki/Andrea_Orcel)
 - [finews.ch: Andrea Orcel ist CEO – auch ohne UBS-Boni?, 28.1.2021](https://www.finews.ch/news/banken/44799-andrea-orcel-unicredit-ceo)
 - [Börsen-Zeitung: Orcel wirbelt UniCredit kräftig durcheinander, 2023](https://www.boersen-zeitung.de/personen/orcel-wirbelt-unicredit-kraeftig-durcheinander)
