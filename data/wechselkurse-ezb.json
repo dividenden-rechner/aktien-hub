@@ -1,5 +1,5 @@
 {
- "stand": "26.11.2026 03:41 (Berlin)",
+ "stand": "26.11.2026 05:25 (Berlin)",
  "datum_ezb": "2026-11-25",
  "quelle": "EZB Referenzkurse (taeglich, ca. 16 Uhr CET)",
  "je_eur": {
@@ -11,7 +11,10 @@
   "CNY": 7.2999,
   "GBP": 0.8373,
   "CHF": 0.9085,
-  "IDR": 20055.72
+  "IDR": 20055.72,
+  "SEK": 11.2385,
+  "DKK": 7.4743,
+  "NOK": 10.7778
  },
  "abgeleitet": {
   "JPY_je_USD": 159.3233,
