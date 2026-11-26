@@ -401,6 +401,13 @@ def firmenseite(f, peers, art, news, kl, k, fu, stand):
     peer_html = ""
     fin_html = diagramme_html(sym, reihen_fuer(sym)[0], prognose_fuer(sym, v, reihen_fuer(sym)[0]))
     div_html = dividende_fuer(f)
+    if div_html:
+        # Dividenden-Profil als eigene Seite: eine Ebene tiefer, daher Pfade um eine Ebene verlängern
+        d_html = div_html.replace('href="../', 'href="../../').replace('src="../', 'src="../../')
+        d_titel = f"{name} Dividende: Termine, Historie und Rechner | Aktien-Hub"
+        d_desc = f"Dividende der {name}-Aktie: Rendite, nächste Termine, Ausschüttungshistorie und Rechner."
+        DIVSEITEN.append((f"aktienhub/{f['slug']}/dividende/", d_titel, d_desc, f["name"], d_html, f["sym"]))
+        div_html = f'<p><a href="dividende/">Dividenden-Profil: Termine, Historie und Rechner →</a></p>'
     if v.get("ausschuettung") is not None:
         q = v["ausschuettung"]
         satz = (f"Die Dividende ist mit {B.de(q, 0)} % des Gewinns gedeckt." if q < 100
@@ -446,6 +453,7 @@ def firmenseite(f, peers, art, news, kl, k, fu, stand):
 
 
 SEKTOR_SLUG, LAND_MIT_SEITE = {}, set()
+DIVSEITEN = []   # (url, titel, beschreibung, html) je Firma mit Dividendenteil
 
 
 def listenseite(titel, desc, url, h1, intro, firmen_, kl, k, fu, tiefe):
@@ -456,6 +464,7 @@ def listenseite(titel, desc, url, h1, intro, firmen_, kl, k, fu, tiefe):
 def bauen(vorhanden, reserviert_slugs, news_by_sym, kl2, k2, f2, stand):
     """Rueckgabe: Liste (url, titel, beschreibung) aller neuen Seiten."""
     global SEKTOR_SLUG, LAND_MIT_SEITE
+    DIVSEITEN.clear()
     firmen = lade_firmen(vorhanden)
     vergeben(firmen, reserviert_slugs)
     firmen = [f for f in firmen if not f.get("skip")]
@@ -475,6 +484,16 @@ def bauen(vorhanden, reserviert_slugs, news_by_sym, kl2, k2, f2, stand):
         os.makedirs(os.path.join(ROOT, u), exist_ok=True)
         open(os.path.join(ROOT, u, "index.html"), "w", encoding="utf-8").write(h)
         eintraege.append((u, t, d))
+    for url_d, t_d, d_d, nm_d, html_d, sym_d in DIVSEITEN:
+        h1_d = f'<div class="titlerow" style="gap:12px">{B.logo_span(sym_d, nm_d, "../../../")}<h1>{esc(nm_d)}: Dividenden-Profil</h1></div>'
+        crumbs_d = f'<a href="../../../">Start</a> › <a href="../">{esc(nm_d)} Aktie</a> › <span aria-current="page">Dividende</span>'
+        body_d = f'<p class="meta">Stand: {B.datum(stand)} · Kürzel {esc(sym_d)}</p>{html_d}'
+        ld_d = ""
+        kl_d, k_d, f_d = B.rahmen(3)   # Kopf, Navigation und Fuß für die Tiefe drei
+        seite_d = seitenrahmen(t_d, d_d, url_d, h1_d, crumbs_d, body_d, kl_d, k_d, f_d, 3, ld_d)
+        os.makedirs(os.path.join(ROOT, url_d), exist_ok=True)
+        open(os.path.join(ROOT, url_d, "index.html"), "w", encoding="utf-8").write(seite_d)
+        eintraege.append((url_d, t_d, d_d))
     # Zuordnung Börsenkürzel -> Firmenseite, damit der Aktien-Hub auf die Seite verlinken kann
     slugs = {f["sym"].upper(): f["slug"] for f in firmen}
     slugs.update({k.replace(".", "-"): v for k, v in list(slugs.items())})
