@@ -94,6 +94,53 @@
    },
    "kurs_eur": 133,
    "stand": "2026-11-25"
+  },
+  {
+   "ticker": "MO",
+   "name": "Altria",
+   "datum": "2026-11-26",
+   "seite": "aktien-hub/?s=MO",
+   "video": null,
+   "summe": 11,
+   "kriterien": {
+    "umsatz": {
+     "wert": -2.3,
+     "punkte": 0,
+     "feld": "umsatz_wachstum_5j"
+    },
+    "gewinn": {
+     "wert": 9.2,
+     "punkte": 2,
+     "feld": "gewinn_wachstum_5j"
+    },
+    "rendite": {
+     "wert": 5.81,
+     "punkte": 3,
+     "feld": "rendite"
+    },
+    "divwachstum": {
+     "wert": 4.1,
+     "punkte": 1,
+     "feld": "div_wachstum_5j"
+    },
+    "deckung": {
+     "wert": 78.0,
+     "punkte": 1,
+     "feld": "fcf_ausschuettung"
+    },
+    "schulden": {
+     "wert": 2.09,
+     "punkte": 1,
+     "feld": "nettoschulden_ebitda"
+    },
+    "bewertung": {
+     "wert": 7.06,
+     "punkte": 3,
+     "feld": "fcf_rendite"
+    }
+   },
+   "kurs_eur": 69.86,
+   "stand": "2026-11-25"
   }
  ]
 }
