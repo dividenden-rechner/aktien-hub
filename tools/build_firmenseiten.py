@@ -423,7 +423,7 @@ def firmenseite(f, peers, art, news, kl, k, fu, stand):
 
     peer_html = ""
     fin_html = diagramme_html(sym, reihen_fuer(sym)[0], prognose_fuer(sym, v, reihen_fuer(sym)[0]))
-    div_html = dividende_fuer(f)
+    div_html = "" if f.get("hand") else dividende_fuer(f)
     if div_html:
         # Dividenden-Profil als eigene Seite: eine Ebene tiefer, daher Pfade um eine Ebene verlängern
         d_html = div_html.replace('href="../', 'href="../../').replace('src="../', 'src="../../')
@@ -467,12 +467,20 @@ def firmenseite(f, peers, art, news, kl, k, fu, stand):
     nur_test = (f'<div data-nur-test="1" id="fmp-box" data-sym="{esc(sym)}"></div>'
                 f'<p data-nur-test="1">Nur Testseite: <a href="../../aktien-hub/?s={esc(sym)}">{esc(name)} im Aktien-Hub</a> (DCF, Analysten, Live-Kurs)</p>'
                 '<script src="../../assets/firma-fmp.js" defer></script>')
-    body = (f'<p class="meta">Stand: {B.datum(stand)} · Kürzel {esc(sym)}{(" · " + esc(kennung)) if kennung else ""}</p><p class="lead">{lead}</p>{tab}'
-            f'{fin_html}{div_html}{nur_test}{peer_html}{news_html}<h2>Häufige Fragen</h2>{faq_html}{teil_html}{weiter}'
-            f'<p class="meta">Quellen: ' + ("Tagesübersicht der Börse Indonesien (IDX), Prüfberichte der Unternehmen (IDX-XBRL), Wechselkurse der EZB. Die Dividende je Aktie ist aus den gezahlten Dividenden und der Aktienzahl geschätzt." if f["sym"].endswith(".JK") else "Börsenkurse deutscher Handelsplätze, Geschäftsberichte der Unternehmen und Behörden (SEC, ESEF, Börsenaufsichten), Wechselkurse der EZB.") + " Alle Werte stehen so in den Daten; fehlende Werte sind weggelassen.</p>")
-    h1 = f'<div class="titlerow" style="gap:12px">{B.logo_span(sym, name, "../../")}<h1>{esc(name)} Aktie</h1></div>'
+    hat_div = bool(div_html) or f.get("hand")
+    tabs = ('<nav class="firmtabs" aria-label="Bereiche der Firmenseite"><a href="./" aria-current="page">Übersicht</a>'
+            + ('<a href="dividende/">Dividende</a>' if hat_div else "") + '</nav>')
+    statisch = (f'<div class="head"><div><h1>{esc(name)} Aktie</h1><p class="meta">Kürzel {esc(sym)}{(" · " + esc(kennung)) if kennung else ""}</p></div></div>'
+                f'<p class="lead">{lead}</p>{tab}{fin_html}')
+    seo = (f'{teil_html}{peer_html}{news_html}<h2>Häufige Fragen</h2>{faq_html}{weiter}'
+           f'<p class="meta">Stand: {B.datum(stand)}. Quellen: ' + ("Tagesübersicht der Börse Indonesien (IDX), Prüfberichte der Unternehmen (IDX-XBRL), Wechselkurse der EZB. Die Dividende je Aktie ist aus den gezahlten Dividenden und der Aktienzahl geschätzt." if f["sym"].endswith(".JK") else "Börsenkurse deutscher Handelsplätze, Geschäftsberichte der Unternehmen und Behörden (SEC, ESEF, Börsenaufsichten), Wechselkurse der EZB.") + " Alle Werte stehen so in den Daten; fehlende Werte sind weggelassen.</p>")
+    body = (f'{tabs}<div id="msg" role="status"></div><span id="start" hidden></span><p id="wlback" hidden></p>'
+            f'<section id="hub" data-sym="{esc(sym)}">{statisch}</section>{seo}'
+            f'<script src="../../assets/logos.js"></script><script src="../../assets/firma-ansicht.js"></script>'
+            f'<script>window.FIRMENSEITE=1;(function(){{try{{openStock({json.dumps(sym)})}}catch(e){{}}}})()</script>')
     crumbs = f'<a href="../../">Start</a> › <a href="/dividende/">Dividenden</a> › <span aria-current="page">{esc(name)}</span>'
-    return seitenrahmen(title, desc, url, h1, crumbs, body, kl, k, fu, 2, ld_html), title, desc, url
+    kl = kl.replace('</head>', '') + '<meta name="root" content="../../"><link rel="stylesheet" href="../../assets/firma-ansicht.css">'
+    return seitenrahmen(title, desc, url, "", crumbs, body, kl, k, fu, 2, ld_html), title, desc, url
 
 
 SEKTOR_SLUG, LAND_MIT_SEITE = {}, set()
@@ -484,13 +492,22 @@ def listenseite(titel, desc, url, h1, intro, firmen_, kl, k, fu, tiefe):
     return body, titel, desc, url
 
 
-def bauen(vorhanden, reserviert_slugs, news_by_sym, kl2, k2, f2, stand):
+def bauen(vorhanden, reserviert_slugs, news_by_sym, kl2, k2, f2, stand, hand=()):
     """Rueckgabe: Liste (url, titel, beschreibung) aller neuen Seiten."""
     global SEKTOR_SLUG, LAND_MIT_SEITE
     DIVSEITEN.clear()
     firmen = lade_firmen(vorhanden)
     vergeben(firmen, reserviert_slugs)
     firmen = [f for f in firmen if not f.get("skip")]
+    # Handgepflegte Firmen bekommen ebenfalls die Übersichtsseite; ihr Dividendenprofil liegt unter .../dividende/
+    kz_w = B.lade("data/kennzahlen.json")["werte"]
+    bran_h = B.lade("data/branchen.json").get("branchen", {})
+    for h in hand:
+        v = kz_w.get(h["sym"])
+        if not v:
+            continue
+        sek = SEKTOR.get(v.get("sektor") or "", "") or SEKTOR.get(bran_h.get(h["sym"], ""), "") or (bran_h.get(h["sym"]) if isinstance(bran_h.get(h["sym"]), str) else "")
+        firmen.append({"sym": h["sym"], "name": h["name"], "slug": h["slug"], "v": v, "sektor": sek, "land": v.get("land") or "", "teil": False, "hand": True})
     kl3, k3, f3 = kl2, k2, f2
     nach_sektor, nach_land = {}, {}
     for f in firmen:
@@ -510,7 +527,8 @@ def bauen(vorhanden, reserviert_slugs, news_by_sym, kl2, k2, f2, stand):
     for url_d, t_d, d_d, nm_d, html_d, sym_d in DIVSEITEN:
         h1_d = f'<div class="titlerow" style="gap:12px">{B.logo_span(sym_d, nm_d, "../../../")}<h1>{esc(nm_d)}: Dividenden-Profil</h1></div>'
         crumbs_d = f'<a href="../../../">Start</a> › <a href="../">{esc(nm_d)} Aktie</a> › <span aria-current="page">Dividende</span>'
-        body_d = f'<p class="meta">Stand: {B.datum(stand)} · Kürzel {esc(sym_d)}</p>{html_d}'
+        tabs_d = '<nav class="firmtabs" aria-label="Bereiche der Firmenseite"><a href="../">Übersicht</a><a href="./" aria-current="page">Dividende</a></nav>'
+        body_d = f'{tabs_d}<p class="meta">Stand: {B.datum(stand)} · Kürzel {esc(sym_d)}</p>{html_d}'
         ld_d = ""
         kl_d, k_d, f_d = B.rahmen(3)   # Kopf, Navigation und Fuß für die Tiefe drei
         seite_d = seitenrahmen(t_d, d_d, url_d, h1_d, crumbs_d, body_d, kl_d, k_d, f_d, 3, ld_d)

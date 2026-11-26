@@ -1607,7 +1607,13 @@ function hpush(v,x){const st=history.state;try{
   if(st&&st.hv)history.replaceState({hv:v,s:x,p:!!st.p},"");
   else{SCRY=window.scrollY;history.pushState({hv:v,s:x,p:true},"")}}catch(e){}}
 const _openStock=openStock,_openMarkets=openMarkets;
-openStock=function(sym){hpush("s",sym);$("wlback").hidden=false;return _openStock(sym)};
+/* Aktie antippen: öffnet die Firmenseite (Übersicht mit Charts, Bewertung, Finanzen); nur ohne Firmenseite bleibt die Ansicht hier */
+let SLUGP=null;
+const slugLoad=()=>SLUGP||(SLUGP=fetch("../data/firmen-slugs.json?v="+Math.floor(Date.now()/36e5)).then(r=>r.ok?r.json():{}).catch(()=>({})));
+openStock=async function(sym){
+  const m=await slugLoad(),t=String(sym).toUpperCase(),sl=m[t]||m[t.replace(/\./g,"-")];
+  if(sl){if(DL){DL=false;location.replace(sl+"/")}else location.href=sl+"/";return}
+  hpush("s",sym);$("wlback").hidden=false;return _openStock(sym)};
 openMarkets=function(){hpush("m");$("wlback").hidden=false;const r=_openMarkets();const xb=$("xback");if(xb)xb.onclick=()=>$("wlbackb").click();return r};
 $("wlbackb").onclick=()=>{const st=history.state;if(st&&st.hv&&st.p)history.back();else{showStart();try{history.replaceState({},"",location.pathname)}catch(e){}}};
 addEventListener("popstate",e=>{const st=e.state;if(st&&st.hv==="s"){$("wlback").hidden=false;_openStock(st.s)}else if(st&&st.hv==="m"){$("wlback").hidden=false;_openMarkets();const xb=$("xback");if(xb)xb.onclick=()=>$("wlbackb").click()}else showStart()});
