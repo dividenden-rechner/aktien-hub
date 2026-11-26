@@ -30,7 +30,7 @@ Der Nettogewinn stieg im dritten Quartal um 24 % auf 3,3 Mrd. Euro, deutlich st�
 
 ## Die HVB soll früher in die Commerzbank
 
-Im April hatte Orcel eine Fusion von Commerzbank und Hypo-Vereinsbank (HVB) erst für die Zeit nach 2028 in Aussicht gestellt, später sprach er von 2029 oder 2030. Im Juli sagte er, beide Banken sollten zwei bis drei Jahre parallel arbeiten, bevor überhaupt über eine Fusion nachgedacht wird. Jetzt heißt es, der Zusammenschluss könne früher kommen und „deutlich zusätzlichen Wert schaffen". UniCredit hält nach dem Übernahmeangebot im Sommer 49 % der Commerzbank. Bringt sie die HVB in die Commerzbank ein, könnte ihr Anteil nach Schätzung von Analysten auf rund 70 % steigen, ohne die eigenen Kapitalpuffer stark zu belasten.
+Im April hatte Orcel eine Fusion von Commerzbank und Hypo-Vereinsbank (HVB) erst für die Zeit nach 2028 in Aussicht gestellt, später sprach er von 2029 oder 2030. Im Juli sagte er, beide Banken sollten zwei bis drei Jahre parallel arbeiten, bevor überhaupt über eine Fusion nachgedacht wird. Jetzt heißt es, der Zusammenschluss könne früher kommen und „deutlich zusätzlichen Wert schaffen". UniCredit hält aktuell knapp 30 % der Commerzbank, nach Vollzug des Übernahmeangebots sollen es rund 46 % werden. Bringt sie die HVB in die Commerzbank ein, könnte ihr Anteil nach Schätzung von Analysten auf rund 70 % steigen, ohne die eigenen Kapitalpuffer stark zu belasten.
 
 ## Dividende: Die Rechnung der Commerzbank-Aktionäre
 
