@@ -32,6 +32,16 @@ Die Kühlung entscheidet beim Laser über die Qualität des Strahls. Bei Diodenl
 
 Ein Beispiel aus dem eigenen Programm ist die Baureihe PRO300, ein Kühler zum Einbau ins Gerätegestell mit 170 bis 4.200 Watt Kühlleistung. Er arbeitet mit dem natürlichen Kältemittel R290, alle Motoren sind drehzahlgeregelt. Die Geräte kommen in der Laserchirurgie, in Analysegeräten und in der Halbleiterfertigung zum Einsatz, dort etwa bei der Lithografie. Die Kühlung gehört zum Laser wie das Gehäuse, ein Hersteller kauft sie also gleich mit und wechselt den Lieferanten selten.
 
+## Die Geräte und die Konkurrenz
+
+Der PRO300 ist ein Einschub für das 19-Zoll-Gestell, wie man es aus Serverräumen kennt, in Baugrößen von 4 bis 12 Höheneinheiten. Je nach Modell wiegt er 32 bis 70 Kilogramm und kühlt mit 170 bis 4.200 Watt. Die Wassertemperatur bleibt auf etwa ein Zehntel Grad stabil. Der Behälter besteht aus einem Stück Kunststoff und lässt sich vollständig reinigen, Filter und Entionisierungspatronen sitzen vorn und lassen sich im laufenden Betrieb wechseln. Über Modbus und optional Ethernet, OPC UA und Webserver bindet ihn der Laserhersteller in die eigene Steuerung ein. Das Kältemittel R290 (Propan) hat ein sehr geringes Treibhauspotenzial und kommt damit den europäischen F-Gas-Regeln entgegen, die fluorierte Kältemittel schrittweise verteuern. Für Anwendungen, in denen jede Vibration stört, etwa in Messlaboren, gibt es kältemittelfreie Peltier-Kühler, dazu kleine Einheiten mit 24-Volt-Miniaturkompressor, die Hersteller direkt in ihre Geräte einbauen.
+
+Die Laserkühlung stammt aus der Tochter termotek in Baden-Baden, die technotrans 2011 übernahm. Damals erwirtschaftete sie rund 8 Millionen Euro Umsatz, 2016 waren es 19 Millionen Euro. Seitdem ist der Standort erweitert worden, die Entwicklung sitzt in Baden-Baden, in China wird in Serie gefertigt.
+
+Der Markt ist fragmentiert. In Deutschland gehört Hyfra mit kompakten Industriekühlern zu den bekannten Namen. International gibt es Laird Thermal Systems aus den USA, die Zulieferer von Lasersystemen beliefern, dazu große Industriekonzerne wie SMC und Daikin aus Japan und viele chinesische Anbieter, allen voran TEYU, die vor allem den Markt für Faserlaser zum Schneiden und Schweißen bedienen. Die Preisspanne ist groß, in Asien dominieren günstige Geräte.
+
+technotrans spielt in der oberen Klasse. Der Vorteil liegt im Zusammenspiel aus Temperaturstabilität, Wartungsfreundlichkeit, Serienfertigung in Reinraumqualität (ISO-Klasse 7) und globalem Service rund um die Uhr. Diese Punkte zählen vor allem bei Lasern für Medizintechnik und Halbleiterfertigung, wo ein Ausfall teuer ist. Offen bleibt, wie viel Marktanteil technotrans in diesem Segment hält, dazu veröffentlicht das Unternehmen keine Zahl. Für die Kundenbindung spricht, dass ein Laserhersteller das Kühlgerät einmal qualifiziert und dann über Jahre in Serie einbaut. Der jetzt gemeldete Auftrag ist ein Beispiel dafür.
+
 ## Ein Mittelständler mit vier Standbeinen
 
 technotrans entwickelt Thermomanagement für anspruchsvolle Anwendungen, beschäftigt rund 1.440 Menschen und produziert an sechs Standorten in Deutschland sowie je einem in China und den USA. Der Konzern ist im Prime Standard gelistet. Er gliedert sich in vier Fokusmärkte: Energy Management mit Elektromobilität, Ladestationen und Rechenzentren, dazu Healthcare & Analytics, Plastics und Print. Das Standard-Lasergeschäft ist seit 2026 dem Bereich Energy Management zugeordnet.
@@ -77,6 +87,11 @@ Wie stark kleine deutsche Technikwerte auf einen einzigen Großkunden reagieren 
 - [technotrans, Hauptversammlung 2026 (Dividende, Ziele 2030)](https://www.technotrans.de/fileadmin/user_upload/Investor_Relations/HV/2026/20260529_TEC_PM_HV_2026_DE.pdf)
 - [stock3: technotrans-Jahreszahlen 2025](https://stock3.com/news/technotrans-wachstumstreiber-bei-rechenzentren-und-halbleitern-16997161)
 - [technotrans, Kühler PRO300 für Laser](https://www.laserfocusworld.com/directory/other-sources-accessories-equipment/cooling-equipment/press-release/55354942/technotrans-se-premiere-in-shanghai-technotrans-presents-eco-efficient-precision-cooling-for-the-asian-laser-market)
+- [technotrans, PRO300 Datenblatt](https://www.technotrans.de/fileadmin/user_upload/Download/Download/Prospekte/Prospekte-neu/TEC_PRO300_Chiller_Digitalversion_DE.pdf)
+- [Reinraum.de: technotrans auf der Laser World 2025](https://www.reinraum.de/en/news/laser-world-2025-technotrans-showcases-future-proof-cooling-systems-with-r290-and-flexible-oem-solutions.html)
+- [MarketScreener: technotrans und termotek, 2017](https://ca.marketscreener.com/quote/stock/TECHNOTRANS-SE-4058825/news/technotrans-expands-liquid-cooling-systems-business-area-24766485/)
+- [Laird Thermal Systems: Umlaufkühler für Industrielaser](https://lairdthermal.com/sites/default/files/fields/media.file.field_media_file/2023-06/Aspekte-für-OEMs-Umlaufkühler-für-Industrielaser.pdf)
+- [TEYU: Überblick Industriekühler-Hersteller](https://www.teyuchiller.com/industrial-chiller-manufacturers-overview.html)
 - [RP Photonics: Laser cooling units](https://www.rp-photonics.com/laser_cooling_units.html)
 - [goldesel.de: Analysten zu technotrans, 11.11.2026](https://goldesel.de/aktien/news/technotrans-aktie-analysten-senken-kursziele-trotz-rekordauftragsbestand)
 - [Euronews: Singulus und SpaceX, 11.11.2026](https://de.euronews.com/2026/11/11/solarzellen-elon-musk-60-millionen-auftrag-deutsches-tech-unternehmen)
