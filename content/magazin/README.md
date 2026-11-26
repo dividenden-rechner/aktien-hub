@@ -3,11 +3,13 @@
 <!-- uebersicht-start -->
 ## Übersicht (wird automatisch erstellt, neueste zuerst)
 
-### Vorschau auf der Testseite (0)
+### Vorschau auf der Testseite (1)
 
 Nur auf der GitHub-Testseite unter vorschau/ sichtbar. Freigeben: Datei anklicken, Stift-Symbol, Zeile `vorschau: ja` löschen und speichern.
 
-_Keine Vorschau-Artikel._
+| Datum | Titel | Datei |
+|---|---|---|
+| 26.11.2026 14:00 | technotrans gewinnt Rekordauftrag für Laserkühlung, die Aktie steht trotzdem fast 30 % tiefer | [79738873_2026-11-26/9070_1400-technotrans-laserkuehlung-rekordauftrag.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/79738873_2026-11-26/9070_1400-technotrans-laserkuehlung-rekordauftrag.md) |
 
 ### Zur Freigabe: Entwürfe (10)
 
