@@ -1,7 +1,7 @@
 ---
 title: "Dividendenwachstum: Die 10 Firmen mit den stärksten Steigerungen"
 description: "Welche Dividendenaktien ihre Ausschüttung in den vergangenen fünf Jahren am stärksten erhöht haben. Die Liste wird aus den Daten neu berechnet."
-date: 2026-11-26 22:56
+date: 2026-11-26 22:59
 updated: 2026-11-26
 author: "Kilian Treß"
 category: Ratgeber
@@ -25,6 +25,15 @@ Berücksichtigt werden Dividendenaktien mit einer Rendite zwischen 0 und 50 Proz
 | 8 | [Mitsubishi UFJ Financial Group, Inc.](/aktien-hub/mitsubishi-ufj-financial-group/) | 24,2 % | 2,4 % | 17,0 % |
 | 9 | [Credit Saison Co.,Ltd.](/aktien-hub/credit-saison/) | 23,6 % | 2,8 % | 15,7 % |
 | 10 | [Toyo Tire Corporation](/aktien-hub/toyo-tire/) | 23,6 % | 3,4 % | 12,5 % |
+
+## Zuletzt bei uns
+
+Zu Firmen dieser Liste haben wir zuletzt berichtet:
+
+- [Mitsubishi UFJ Financial Group startet Aktienrückkauf im Wert von 200 Milliarden Yen](/news/mufg-aktienrueckkauf-november-2026/)
+- [Targa Resources steigert EBITDA auf 1,5 Mrd. US-Dollar und plant Dividendenerhöhung](/news/targa-resources-q3-2026-dividende/)
+- [Emcor Group steigert Q3-Umsatz 2026 auf 5,5 Milliarden US-Dollar](/news/emcor-group-q3-2026-zahlen-prognose/)
+
 
 Hohes Wachstum kommt oft von einem niedrigen Ausgangspunkt. Wer das Wachstum bewertet, sollte zusätzlich prüfen, ob die Dividende aus dem Gewinn oder dem freien Cashflow gedeckt ist.
 

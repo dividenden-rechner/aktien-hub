@@ -102,6 +102,59 @@ def tabelle(zeilen, kopfzeile):
 EUROPA = {"DE", "FR", "NL", "GB", "CH", "IT", "ES", "SE", "NO", "DK", "BE", "FI", "IE", "AT", "LU", "PT"}
 
 
+ARCHIV_PFAD = "data/magazin.json"
+EVERGREEN_SLUGS = {"die-10-besten-dividendenaktien", "die-10-besten-dividendenaktien-europa", "dividendenwachstum-die-staerksten-steigerungen",
+                   "high-yield-hohe-dividendenrenditen-mit-deckung", "dividende-aktien-mit-vielen-zahlmonaten"}
+
+
+def lade_archiv():
+    """Unser eigenes Meldungsarchiv je Firma (data/magazin.json, Feld sym). Evergreen-Artikel selbst zählen nicht."""
+    try:
+        items = json.load(open(ARCHIV_PFAD, encoding="utf-8")).get("items", [])
+    except (OSError, ValueError):
+        return {}
+    out = {}
+    for it in items:
+        sym = it.get("sym")
+        if not sym or it.get("slug") in EVERGREEN_SLUGS:
+            continue
+        out.setdefault(sym, []).append(it)
+    for sym in out:
+        out[sym].sort(key=lambda x: x.get("date", ""), reverse=True)
+    return out
+
+
+ARCHIV = lade_archiv()
+
+
+def archiv_zeilen(sym, n=2):
+    """Zuletzt veröffentlichte eigene Meldungen zur Firma als Markdown-Liste."""
+    zeilen = []
+    for it in ARCHIV.get(sym, [])[:n]:
+        datum = it.get("date", "")[:10]
+        try:
+            datum = datetime.date.fromisoformat(datum).strftime("%d.%m.%Y")
+        except ValueError:
+            datum = ""
+        zeilen.append(f"- {datum}: [{it.get('title', '')}](/news/{it.get('slug')}/)")
+    return zeilen
+
+
+def archiv_absatz(syms, n=5):
+    """Abschnitt unter einer Tabelle: die jüngsten Meldungen zu Firmen der Liste."""
+    eintraege = []
+    for s in syms:
+        for it in ARCHIV.get(s, [])[:1]:
+            eintraege.append((it.get("date", ""), s, it))
+    eintraege.sort(reverse=True)
+    if not eintraege:
+        return ""
+    zeilen = []
+    for _, s, it in eintraege[:n]:
+        zeilen.append(f"- [{it.get('title', '')}](/news/{it.get('slug')}/)")
+    return "\n## Zuletzt bei uns\n\nZu Firmen dieser Liste haben wir zuletzt berichtet:\n\n" + "\n".join(zeilen) + "\n\n"
+
+
 def firmenblock(platz, s, r, text):
     """Ein Abschnitt je Firma im Stil eines Ratgeber-Rankings: Überschrift, Kennzahlen, Text aus den Daten."""
     kz = [f"**Rendite {de(r['rendite'])} %**"]
@@ -113,7 +166,9 @@ def firmenblock(platz, s, r, text):
         kz.append(f"{de(r['fcf_ausschuettung'], 0)} % des freien Cashflows")
     if r.get("dividendenserie"):
         kz.append(f"{r['dividendenserie']} Jahre Erhöhungen in Folge")
-    return (f"## {platz}. {link_name(s, r['name'])}\n\n" + " · ".join(kz) + "\n\n" + text + "\n\n")
+    arch = archiv_zeilen(s)
+    rest = ("\n\n**Zuletzt bei uns:**\n\n" + "\n".join(arch)) if arch else ""
+    return (f"## {platz}. {link_name(s, r['name'])}\n\n" + " · ".join(kz) + "\n\n" + text + rest + "\n\n")
 
 
 def satz_beste(r):
@@ -162,7 +217,7 @@ def wachstum(W):
     body = (f"Diese Liste zeigt die Firmen, deren Dividende je Aktie in den letzten fünf Jahren am stärksten gewachsen ist. Stand: {DATUM}.\n\n"
             "Berücksichtigt werden Dividendenaktien mit einer Rendite zwischen 0 und 50 Prozent und mindestens drei Erhöhungen in Folge. Die Wachstumsrate ist der jährliche Durchschnitt.\n\n"
             + tabelle(zeilen, ["Platz", "Firma", "Dividendenwachstum 5 J. pro Jahr", "Rendite", "Dividendenwachstum 10 J. pro Jahr"]) +
-            "\nHohes Wachstum kommt oft von einem niedrigen Ausgangspunkt. Wer das Wachstum bewertet, sollte zusätzlich prüfen, ob die Dividende aus dem Gewinn oder dem freien Cashflow gedeckt ist.\n\n"
+            archiv_absatz(top) + "\nHohes Wachstum kommt oft von einem niedrigen Ausgangspunkt. Wer das Wachstum bewertet, sollte zusätzlich prüfen, ob die Dividende aus dem Gewinn oder dem freien Cashflow gedeckt ist.\n\n"
             "Die Liste ist eine Auswertung nach festen Regeln und keine Kaufempfehlung.\n")
     return "dividendenwachstum-die-staerksten-steigerungen", "Dividendenwachstum: Die 10 Firmen mit den stärksten Steigerungen", \
            "Welche Dividendenaktien ihre Ausschüttung in den vergangenen fünf Jahren am stärksten erhöht haben. Die Liste wird aus den Daten neu berechnet.", body
@@ -182,7 +237,7 @@ def high_yield(W):
     body = (f"Hohe Dividendenrenditen locken, sind aber oft ein Warnsignal. Diese Liste zeigt die zehn Firmen mit der höchsten Rendite, die zugleich eine Ausschüttung unter 80 Prozent des Gewinns und höchstens 100 Prozent des freien Cashflows aufweisen. Stand: {DATUM}.\n\n"
             "Berücksichtigt werden Firmen mit einem Börsenwert ab 2 Mrd. Euro und einer Rendite zwischen 5 und 15 Prozent.\n\n"
             + tabelle(zeilen, ["Platz", "Firma", "Rendite", "Ausschüttungsquote", "Anteil am FCF", "Dividendenwachstum 5 J."]) +
-            "\nWer eine hohe Rendite sieht, sollte drei Fragen stellen: Ist die Dividende aus dem Cashflow gedeckt? Wächst das Geschäft? Ist die Rendite hoch, weil der Kurs gefallen ist? Die Spalten helfen bei den ersten beiden Antworten.\n\n"
+            archiv_absatz(top) + "\nWer eine hohe Rendite sieht, sollte drei Fragen stellen: Ist die Dividende aus dem Cashflow gedeckt? Wächst das Geschäft? Ist die Rendite hoch, weil der Kurs gefallen ist? Die Spalten helfen bei den ersten beiden Antworten.\n\n"
             "Die Liste ist eine Auswertung nach festen Regeln und keine Kaufempfehlung.\n")
     return "high-yield-hohe-dividendenrenditen-mit-deckung", "High Yield: Hohe Dividendenrenditen mit solider Deckung", \
            "Die zehn Dividendenaktien mit der höchsten Rendite, die ihre Ausschüttung trotzdem aus Gewinn und Cashflow zahlen. Die Liste wird regelmäßig neu berechnet.", body
@@ -212,7 +267,7 @@ def monatlich(W):
     body = (f"Manche Firmen zahlen ihre Dividende nicht einmal im Jahr, sondern öfter. Diese Liste zeigt Dividendenaktien mit den meisten Zahlmonaten, die wir für sie belegt haben. Stand: {DATUM}.\n\n"
             "Berücksichtigt werden Firmen mit mindestens vier belegten Zahlmonaten und einer Rendite zwischen 0 und 15 Prozent. Monate, die nicht belegt sind, fehlen in der Liste.\n\n"
             + tabelle(zeilen, ["Platz", "Firma", "Zahlmonate", "Anzahl Monate", "Rendite"]) +
-            "\nMonatliche Zahlungen helfen beim Planen von Einnahmen, ändern aber nichts an der Qualität der Firma. Der Blick auf Deckung und Wachstum bleibt wichtig.\n\n"
+            archiv_absatz(top) + "\nMonatliche Zahlungen helfen beim Planen von Einnahmen, ändern aber nichts an der Qualität der Firma. Der Blick auf Deckung und Wachstum bleibt wichtig.\n\n"
             "Die Liste ist eine Auswertung nach festen Regeln und keine Kaufempfehlung. Die Monate stammen aus Zahlungsterminen der Unternehmen und können sich ändern.\n")
     return "dividende-aktien-mit-vielen-zahlmonaten", "Dividenden im Monatsrhythmus: Aktien mit den meisten Zahlmonaten", \
            "Welche Dividendenaktien über das Jahr verteilt zahlen und wie viele Monate belegt sind. Die Liste wird aus den Zahlterminen neu berechnet.", body

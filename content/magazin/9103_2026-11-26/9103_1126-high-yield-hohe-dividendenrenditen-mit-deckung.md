@@ -1,7 +1,7 @@
 ---
 title: "High Yield: Hohe Dividendenrenditen mit solider Deckung"
 description: "Die zehn Dividendenaktien mit der höchsten Rendite, die ihre Ausschüttung trotzdem aus Gewinn und Cashflow zahlen. Die Liste wird regelmäßig neu berechnet."
-date: 2026-11-26 22:56
+date: 2026-11-26 22:59
 updated: 2026-11-26
 author: "Kilian Treß"
 category: Ratgeber
@@ -25,6 +25,13 @@ Berücksichtigt werden Firmen mit einem Börsenwert ab 2 Mrd. Euro und einer Ren
 | 8 | [Astra International Tbk](/aktien-hub/astra-international-tbk/) | 8,9 % | 63 % | – | – |
 | 9 | [Konecranes Oyj](/aktien-hub/konecranes/) | 8,5 % | 45 % | 25 % | – |
 | 10 | [Renault](/aktien-hub/renault/) | 8,1 % | – | – | – |
+
+## Zuletzt bei uns
+
+Zu Firmen dieser Liste haben wir zuletzt berichtet:
+
+- [Mercedes friert Investitionen in Deutschland ein und prüft Werksschließungen](/news/mercedes-benz-investitionsstopp-deutsche-werke/)
+
 
 Wer eine hohe Rendite sieht, sollte drei Fragen stellen: Ist die Dividende aus dem Cashflow gedeckt? Wächst das Geschäft? Ist die Rendite hoch, weil der Kurs gefallen ist? Die Spalten helfen bei den ersten beiden Antworten.
 
