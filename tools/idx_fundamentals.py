@@ -22,14 +22,16 @@ FIRMEN = {
 }
 # Kennzahl -> XBRL-Konzepte (der erste gefundene gewinnt)
 KONZEPTE = {
-    "umsatz": ["SalesAndRevenue"],
+    "umsatz": ["SalesAndRevenue", "TotalInterestAndShariaIncome"],   # Banken: Zins- und Scharia-Erträge
     "gewinn": ["ProfitLossAttributableToParentEntity", "ProfitLoss"],
     "operativer_cf": ["NetCashFlowsReceivedFromUsedInOperatingActivities"],
-    "capex": ["PaymentsForAcquisitionOfPropertyAndEquipment"],
+    "capex": ["PaymentsForAcquisitionOfPropertyPlantAndEquipment", "ProceedsFromDisposalAcquisitionOfPropertyAndEquipment"],
     "dividenden_gezahlt": ["DividendsPaidFromFinancingActivities"],
     "eigenkapital": ["EquityAttributableToEquityOwnersOfParentEntity", "Equity"],
+    "liquide_mittel": ["CashAndCashEquivalents", "Cash"],
+    "schulden_lang": ["NonCurrentLiabilities"],
     "bilanzsumme": ["Assets"],
-    "zinsaufwand": ["InterestAndFinanceCosts"],
+    "zinsaufwand": ["InterestAndFinanceCosts", "TotalInterestAndShariaExpense"],
     "abschreibungen": ["DepreciationAndAmortisationExpenses"],
     "eps_verw": ["BasicEarningsLossPerShareFromContinuingOperations"],
 }
