@@ -1,6 +1,26 @@
 {
- "updated": "2026-11-25T19:15:41.589115+00:00",
+ "updated": "2026-11-26T03:34:23.452374+00:00",
  "items": [
+  {
+   "sym": "MDLZ",
+   "name": "Mondelez",
+   "title": "Führungswechsel",
+   "link": "https://www.sec.gov/Archives/edgar/data/1103982/000162828026075952/mdlz-20261120.htm",
+   "date": "2026-11-25T21:03:24+00:00",
+   "text": "",
+   "quelle": "SEC",
+   "kat": "Führungswechsel",
+   "form": "8-K"
+  },
+  {
+   "sym": "AMZN",
+   "name": "Amazon",
+   "title": "Amazon, the NFL, and the MPA celebrated American sports storytelling with a special screening of \"Madden\" in Washington, D.C.",
+   "link": "https://press.aboutamazon.com/prime-video/2026/11/amazon-the-nfl-and-the-mpa-celebrated-american-sports-storytelling-with-a-special-screening-of-madden-in-washington-d-c",
+   "date": "2026-11-25T20:16:48+00:00",
+   "text": "The evening brought together policymakers, sports diplomacy leaders, and entertainment executives to preview the film ahead of its November 18 release, streaming globally on Prime Video.",
+   "quelle": "RSS"
+  },
   {
    "sym": "005930.KS",
    "name": "Samsung Electronics",
@@ -289,6 +309,15 @@
    "quelle": "RSS"
   },
   {
+   "sym": "LLY",
+   "name": "Eli Lilly",
+   "title": "Lilly highlights strength of breast cancer portfolio with new data across validated drivers of hormone receptor-positive disease at the 2026 San Antonio Breast Cancer Symposium",
+   "link": "https://investor.lilly.com/news-releases/news-release-details/lilly-highlights-strength-breast-cancer-portfolio-new-data",
+   "date": "2026-11-23T21:30:00+00:00",
+   "text": "Phase 3 EMBER-3 data with longer follow-up, including final overall survival for Inluriyo versus standard endocrine therapy, to be featured in a late-breaking oral presentation New biomarker analysis from Phase 3 monarchE trial exploring the role of tumor subtypes in HR+, HER2 – high-risk early",
+   "quelle": "RSS"
+  },
+  {
    "sym": "BMY",
    "name": "Bristol-Myers Squibb",
    "title": "Führungswechsel",
@@ -344,6 +373,15 @@
    "link": "https://blogs.nvidia.com/blog/nvidia-technologies-holidays-2026/",
    "date": "2026-11-23T17:00:08+00:00",
    "text": "",
+   "quelle": "RSS"
+  },
+  {
+   "sym": "LLY",
+   "name": "Eli Lilly",
+   "title": "Lilly to host Innovation Day 2026",
+   "link": "https://investor.lilly.com/news-releases/news-release-details/lilly-host-innovation-day-2026",
+   "date": "2026-11-23T15:00:00+00:00",
+   "text": "INDIANAPOLIS, Nov. 23, 2026 /PRNewswire/ -- Eli Lilly and Company (NYSE: LLY) announced today that it will host Lilly Innovation Day, a meeting for the investment community on Monday, December 7, 2026 from 9 a.m. to 1 p.m., Eastern time. At the event, executive and scientific leaders will share",
    "quelle": "RSS"
   },
   {
@@ -517,6 +555,15 @@
    "link": "https://www.investor.jnj.com/investor-news/news-details/2026/Johnson--Johnson-data-in-psoriatic-arthritis-PsA-shows-TREMFYA-guselkumab-is-the-only-advanced-therapy-to-demonstrate-MRI-confirmed-improvements-in-spinal-pain-and-stiffness/default.aspx",
    "date": "2026-11-20T13:00:00+00:00",
    "text": "",
+   "quelle": "RSS"
+  },
+  {
+   "sym": "ABBV",
+   "name": "AbbVie",
+   "title": "AbbVie to Present at the Piper Sandler 38th Annual Healthcare Conference",
+   "link": "https://investors.abbvie.com/news-releases/news-release-details/abbvie-present-piper-sandler-38th-annual-healthcare-conference",
+   "date": "2026-11-20T13:00:00+00:00",
+   "text": "NORTH CHICAGO, Ill., Nov. 20, 2026 /PRNewswire/ -- AbbVie (NYSE: ABBV) will participate in the Piper Sandler 38th Annual Healthcare Conference on Wednesday, December 2, 2026. Management will participate in a fireside chat at 7:30 a.m. Central time. A live audio webcast of the presentation will be",
    "quelle": "RSS"
   },
   {
@@ -937,15 +984,6 @@
    "link": "https://press.aboutamazon.com/2026/11/meet-the-anzellans-inside-imagineering-r-ds-newest-robotic-characters",
    "date": "2026-11-18T18:09:40+00:00",
    "text": "They’re small, they’re bold, and they’ve definitely got personality, built with AWS.",
-   "quelle": "RSS"
-  },
-  {
-   "sym": "AMZN",
-   "name": "Amazon",
-   "title": "Bodø/Glimt Selects AWS to Enhance Fan Experiences and Team Performance Analytics",
-   "link": "https://press.aboutamazon.com/aws/2026/11/bodø-glimt-selects-aws-to-enhance-fan-experiences-and-team-performance-analytics",
-   "date": "2026-11-18T18:06:51+00:00",
-   "text": "Bodø/Glimt has selected Amazon Web Services (AWS) as its preferred cloud provider for its investment in data and artificial intelligence. AWS will deliver the technical foundation the club is now building.",
    "quelle": "RSS"
   },
   {
@@ -1494,6 +1532,15 @@
    "quelle": "RSS"
   },
   {
+   "sym": "LLY",
+   "name": "Eli Lilly",
+   "title": "Lilly to present new data across Zepbound, Foundayo, EloraTZP and retatrutide at ObesityWeek 2026, moving obesity care beyond the scale",
+   "link": "https://investor.lilly.com/news-releases/news-release-details/lilly-present-new-data-across-zepbound-foundayo-eloratzp-and",
+   "date": "2026-11-14T17:01:00+00:00",
+   "text": "Phase 2 results showed EloraTZP, an investigational combination of eloralintide and tirzepatide, delivered substantial weight loss and A1C improvements in participants with obesity and type 2 diabetes Results from TRIUMPH-1, TRIUMPH-2 and TRIUMPH-4 demonstrated retatrutide, an investigational",
+   "quelle": "RSS"
+  },
+  {
    "sym": "T",
    "name": "AT&T",
    "title": "AT&T Makes Holiday Shopping Easy with Gifts for Everyone and Every Budget",
@@ -1577,6 +1624,15 @@
    "quelle": "SEC",
    "kat": "Quartalszahlen",
    "form": "8-K"
+  },
+  {
+   "sym": "LLY",
+   "name": "Eli Lilly",
+   "title": "Lilly breaks ground in Pennsylvania's Lehigh Valley on a $3.5 billion site to make next-generation obesity medicines, the latest of 10 new U.S. sites since 2020",
+   "link": "https://investor.lilly.com/news-releases/news-release-details/lilly-breaks-ground-pennsylvanias-lehigh-valley-35-billion-site",
+   "date": "2026-11-12T20:30:00+00:00",
+   "text": "Facility will manufacture injectable medicines, including retatrutide Site will create 850 high-wage jobs and 2,000 construction jobs INDIANAPOLIS, Nov. 12, 2026 /PRNewswire/ -- Eli Lilly and Company (NYSE: LLY) today broke ground on a $3.5 billion manufacturing facility in Pennsylvania's Lehigh",
+   "quelle": "RSS"
   },
   {
    "sym": "T",
@@ -1718,6 +1774,15 @@
    "quelle": "RSS"
   },
   {
+   "sym": "LLY",
+   "name": "Eli Lilly",
+   "title": "New Phase 3b data on Lilly's Taltz (ixekizumab) and Zepbound (tirzepatide) used together showed improved and durable efficacy, patient-reported and metabolic outcomes at one year in adults with psoriatic arthritis and obesity",
+   "link": "https://investor.lilly.com/news-releases/news-release-details/new-phase-3b-data-lillys-taltz-ixekizumab-and-zepbound-1",
+   "date": "2026-11-11T14:45:00+00:00",
+   "text": "Nearly three times as many patients taking Taltz and Zepbound achieved ≥ 50% reduction in psoriatic arthritis disease activity (ACR50) at one year compared to Taltz alone in first-of-its-kind TOGETHER-PsA study Improvements in disease activity at one year follow statistically superior outcomes",
+   "quelle": "RSS"
+  },
+  {
    "sym": "005930.KS",
    "name": "Samsung Electronics",
    "title": "Samsung and IOC Back Young Innovators at Africa’s First Olympic Games",
@@ -1834,6 +1899,15 @@
    "link": "https://www.investor.jnj.com/investor-news/news-details/2026/Johnson--Johnson-Announces-CAPLYTA-lumateperone-Shows-Significant-and-Rapid-Improvement-in-Bipolar-Mania-in-Second-Pivotal-Phase-3-Study/default.aspx",
    "date": "2026-11-10T13:00:00+00:00",
    "text": "",
+   "quelle": "RSS"
+  },
+  {
+   "sym": "LLY",
+   "name": "Eli Lilly",
+   "title": "Life doesn't slow down, and Foundayo™ (orforglipron) patient Leanne Morgan is done waiting",
+   "link": "https://investor.lilly.com/news-releases/news-release-details/life-doesnt-slow-down-and-foundayotm-orforglipron-patient-leanne",
+   "date": "2026-11-10T13:00:00+00:00",
+   "text": "After years of thinking she should be able to manage her weight on her own, Leanne shares how a conversation with her doctor led her to Foundayo, and why she encourages others to talk with their healthcare providers INDIANAPOLIS, Nov. 10, 2026 /PRNewswire/ -- Eli Lilly and Company (NYSE: LLY) and",
    "quelle": "RSS"
   },
   {
@@ -1966,6 +2040,33 @@
    "link": "https://www.gevernova.com/news/press-releases/ge-vernova-spotlight-electrification-energy-security-local-collaboration-climate",
    "date": "2026-11-09T14:54:01+00:00",
    "text": "Antalya, Türkiye (November 9, 2026) – GE Vernova will participate in the 31st United Nations Climate Change Conference (COP31), taking place in Antalya, Türkiye, from 9–20 November 2026, as an official Climate Supporter. At COP31, the company will highlight the role of electrification,",
+   "quelle": "RSS"
+  },
+  {
+   "sym": "LLY",
+   "name": "Eli Lilly",
+   "title": "Lilly's Foundayo (orforglipron) significantly reduced obstructive sleep apnea severity, reinforcing its potential to improve health beyond weight loss",
+   "link": "https://investor.lilly.com/news-releases/news-release-details/lillys-foundayo-orforglipron-significantly-reduced-obstructive",
+   "date": "2026-11-09T14:30:00+00:00",
+   "text": "In adults with moderate-to-severe OSA and obesity or overweight, Foundayo reduced breathing interruptions during sleep by up to an average of 44%, with up to 32% of participants achieving remission or mild disease Foundayo also reduced sleep apnea-specific hypoxic burden by up to an average of",
+   "quelle": "RSS"
+  },
+  {
+   "sym": "AVGO",
+   "name": "Broadcom",
+   "title": "Broadcom Contributes VM API Open Source Project to Cloud Native Computing Foundation",
+   "link": "https://investors.broadcom.com/news-releases/news-release-details/broadcom-contributes-vm-api-open-source-project-cloud-native",
+   "date": "2026-11-09T14:00:08+00:00",
+   "text": "VM API Project Accepted into CNCF Sandbox to support Vendor-Neutral Kubernetes API for Virtual Machines New Validated Partner Solutions Help Accelerate AI and Modern App Delivery PALO ALTO, Calif., Nov. 09, 2026 (GLOBE NEWSWIRE) -- Today at KubeCon North America 2026, Broadcom Inc.",
+   "quelle": "RSS"
+  },
+  {
+   "sym": "AVGO",
+   "name": "Broadcom",
+   "title": "Broadcom Inc. to Announce Fourth Quarter and Fiscal Year 2026 Financial Results on Wednesday, December 9, 2026",
+   "link": "https://investors.broadcom.com/news-releases/news-release-details/broadcom-inc-announce-fourth-quarter-and-fiscal-year-2026",
+   "date": "2026-11-09T13:00:00+00:00",
+   "text": "PALO ALTO, Calif., Nov. 9, 2026 /PRNewswire/ -- Broadcom Inc. (NASDAQ: AVGO), a global technology leader that designs, develops and supplies semiconductor and infrastructure software solutions, today announced it will report its fourth quarter and fiscal year 2026 financial results and business",
    "quelle": "RSS"
   },
   {
@@ -2124,6 +2225,15 @@
    "quelle": "RSS"
   },
   {
+   "sym": "LLY",
+   "name": "Eli Lilly",
+   "title": "Lilly and Hims & Hers expand access to FDA-approved Lilly medicines",
+   "link": "https://investor.lilly.com/news-releases/news-release-details/lilly-and-hims-hers-expand-access-fda-approved-lilly-medicines",
+   "date": "2026-11-06T11:47:00+00:00",
+   "text": "Agreement gives patients a path to FDA-approved treatments at self-pay price through the Hims & Hers platform INDIANAPOLIS, Nov. 6, 2026 /PRNewswire/ -- Eli Lilly and Company (NYSE: LLY) and Hims & Hers Health, Inc. (NYSE: HIMS) today announced an agreement to help expand access to Zepbound",
+   "quelle": "RSS"
+  },
+  {
    "sym": "GEV",
    "name": "GE Vernova",
    "title": "GE Vernova to support India’s energy transition with 6 GW HVDC transmission project",
@@ -2196,6 +2306,15 @@
    "quelle": "SEC",
    "kat": "Sonstige Ereignisse",
    "form": "8-K"
+  },
+  {
+   "sym": "LLY",
+   "name": "Eli Lilly",
+   "title": "Lilly to showcase new retatrutide, Taltz (ixekizumab) and Zepbound (tirzepatide) data at ACR Convergence 2026, advancing science at the intersection of rheumatologic conditions and obesity",
+   "link": "https://investor.lilly.com/news-releases/news-release-details/lilly-showcase-new-retatrutide-taltz-ixekizumab-and-zepbound",
+   "date": "2026-11-05T11:45:00+00:00",
+   "text": "Pivotal results from the Phase 3 TRIUMPH-1 and TRIUMPH-4 trials showed retatrutide delivered substantial reductions in knee pain and weight in adults with knee osteoarthritis and obesity, with some experiencing no knee pain at the end of the trials Detailed Phase 3b TOGETHER-PsA data showed",
+   "quelle": "RSS"
   },
   {
    "sym": "MSFT",
@@ -2719,6 +2838,15 @@
    "form": "8-K"
   },
   {
+   "sym": "ABBV",
+   "name": "AbbVie",
+   "title": "AbbVie Reports Third-Quarter 2026 Financial Results",
+   "link": "https://investors.abbvie.com/news-releases/news-release-details/abbvie-reports-third-quarter-2026-financial-results",
+   "date": "2026-10-30T11:46:00+00:00",
+   "text": "Reports Third-Quarter Diluted EPS of $2.37 on a GAAP Basis, an Increase of Over 100.0 Percent; Adjusted Diluted EPS of $3.82, an Increase of Over 100.0 Percent; These Results Include an Unfavorable Impact of $0.11 Per Share Related to Acquired IPR&D and Milestones Expense Delivers Third-Quarter",
+   "quelle": "RSS"
+  },
+  {
    "sym": "XOM",
    "name": "Exxon Mobil",
    "title": "Quartalszahlen, Mitteilung (Reg FD)",
@@ -2815,6 +2943,15 @@
    "form": "8-K"
   },
   {
+   "sym": "MDLZ",
+   "name": "Mondelez",
+   "title": "Mondelēz International Reports Q3 2026 Results",
+   "link": "https://ir.mondelezinternational.com/news-releases/news-release-details/mondelez-international-reports-q3-2026-results",
+   "date": "2026-10-29T20:05:44+00:00",
+   "text": "Third Quarter Highlights1Net Revenues +2.3%, Organic Net Revenues +2.1%, Volume/Mix +1.8%Diluted EPS increased +78.9% to $1.02\nAdjusted EPS was $0.78 which increased +5.5% on a constant currency basisYear-to-date cash provided by operating activities was $2.6 billion\nand Free Cash Flow was $1.7 billionReturn of capital to shareholders was $2.8 billion through the third quarter of the year",
+   "quelle": "RSS"
+  },
+  {
    "sym": "AMZN",
    "name": "Amazon",
    "title": "AMAZON.COM ANNOUNCES THIRD QUARTER RESULTS",
@@ -2863,6 +3000,15 @@
    "link": "https://news.bms.com/news/details/2026/Bristol-Myers-Squibb-Reports-Third-Quarter-Financial-Results-for-2026/default.aspx",
    "date": "2026-10-29T10:59:00+00:00",
    "text": "",
+   "quelle": "RSS"
+  },
+  {
+   "sym": "LLY",
+   "name": "Eli Lilly",
+   "title": "Lilly reports third-quarter 2026 financial results, raises full-year guidance and highlights regulatory progress across the portfolio",
+   "link": "https://investor.lilly.com/news-releases/news-release-details/lilly-reports-third-quarter-2026-financial-results-raises-full",
+   "date": "2026-10-29T10:45:00+00:00",
+   "text": "Revenue in Q3 2026 increased 39% to $24.4 billion driven primarily by Mounjaro and Zepbound. Q3 revenue included approximately $900 million of benefits, primarily from $410 million of Jardiance milestones (no further milestones remain) and favorable adjustments to rebate and discount estimates.",
    "quelle": "RSS"
   },
   {
@@ -3123,6 +3269,15 @@
    "form": "8-K"
   },
   {
+   "sym": "AVGO",
+   "name": "Broadcom",
+   "title": "New Broadcom Enhancements to TrueSource Spring Enterprise with Hub and App Advisor Help Customers Assess their Open Source Security Posture, Prioritize Fixes, and Automate Patching",
+   "link": "https://investors.broadcom.com/news-releases/news-release-details/new-broadcom-enhancements-truesource-spring-enterprise-hub-and",
+   "date": "2026-10-27T13:00:57+00:00",
+   "text": "Broadcom Fixes 89 New Open Source Vulnerabilities in TrueSource Spring Enterprise, Reaching 408 Total in 2026 PALO ALTO, Calif., Oct. 27, 2026 (GLOBE NEWSWIRE) -- Broadcom Inc. (NASDAQ: AVGO), a global technology leader that designs, develops, and supplies semiconductor and infrastructure software",
+   "quelle": "RSS"
+  },
+  {
    "sym": "AAPL",
    "name": "Apple",
    "title": "Apple introduces the new 14-inch MacBook Pro with M6",
@@ -3203,6 +3358,15 @@
    "link": "https://www.gevernova.com/news/press-releases/ge-vernova-boston-celtics-announce-three-year-partnership-recognize-members-united",
    "date": "2026-10-26T22:20:19+00:00",
    "text": "CAMBRIDGE, Mass. (October 27, 2026) – GE Vernova Inc. (NYSE: GEV) and the Boston Celtics ignited a three-year partnership designed to recognize members of the United States Armed Forces at TD Garden during the team’s 20th Annual Seats for Soldiers Night. In addition to the partnership, GE",
+   "quelle": "RSS"
+  },
+  {
+   "sym": "AVGO",
+   "name": "Broadcom",
+   "title": "Bank of America, Blackstone, Citi and Morgan Stanley Announce Landmark $63 Billion Financing Structure to Enable AI Compute Capacity in Partnership with Broadcom",
+   "link": "https://investors.broadcom.com/news-releases/news-release-details/bank-america-blackstone-citi-and-morgan-stanley-announce",
+   "date": "2026-10-26T20:15:00+00:00",
+   "text": "NEW YORK and CHARLOTTE, N.C. and PALO ALTO, Calif., Oct. 26, 2026 /PRNewswire/ -- Bank of America (NYSE: BAC), Blackstone (NYSE: BX), Citi (NYSE: C) and Morgan Stanley (NYSE: MS) (the \" Lead Financial Partners \") today announced a $63 billion transaction to enable the deployment of AI compute",
    "quelle": "RSS"
   },
   {
@@ -3472,6 +3636,15 @@
    "quelle": "RSS"
   },
   {
+   "sym": "AVGO",
+   "name": "Broadcom",
+   "title": "Broadcom Launches Arcot Scam Defense to Block Social Engineering Fraud",
+   "link": "https://investors.broadcom.com/news-releases/news-release-details/broadcom-launches-arcot-scam-defense-block-social-engineering",
+   "date": "2026-10-21T13:00:23+00:00",
+   "text": "PALO ALTO, Calif., Oct. 21, 2026 (GLOBE NEWSWIRE) -- Broadcom Inc. (NASDAQ: AVGO), a global technology leader that designs, develops, and supplies semiconductors and infrastructure software, today announced the launch of Arcot Scam Defense, a groundbreaking new feature of Arcot by Broadcom,",
+   "quelle": "RSS"
+  },
+  {
    "sym": "005380.KS",
    "name": "Hyundai Motor",
    "title": "Hyundai Motor Group and Rhode Island School of Design Collaborate on Regenerative Biodesign Strategies and the Future of Mobility",
@@ -3530,6 +3703,15 @@
    "form": "8-K"
   },
   {
+   "sym": "AVGO",
+   "name": "Broadcom",
+   "title": "Broadcom Announces Continued Infrastructure Agreement with FedEx to Support Global Operations",
+   "link": "https://investors.broadcom.com/news-releases/news-release-details/broadcom-announces-continued-infrastructure-agreement-fedex",
+   "date": "2026-10-20T13:00:58+00:00",
+   "text": "Agreement Supports FedEx in Optimizing Infrastructure PALO ALTO, Calif., Oct. 20, 2026 (GLOBE NEWSWIRE) -- Broadcom Inc. (NASDAQ: AVGO), a global technology leader that designs, develops, and supplies semiconductor and infrastructure software solutions, today announced the continuation of its",
+   "quelle": "RSS"
+  },
+  {
    "sym": "SUNPHARMA.NS",
    "name": "Sun Pharma",
    "title": "Sun Pharma Announces UNLOXCYT® (cosibelimab-ipdl) Has Received a Category 2A Preferred Designation in the Updated NCCN Guidelines for Locally Advanced Cutaneous Squamous Cell Carcinoma",
@@ -3565,6 +3747,15 @@
    "link": "https://www.gevernova.com/news/press-releases/ge-vernova-secures-order-aimed-strengthen-regional-energy-capacity-cote-divoire",
    "date": "2026-10-20T06:52:44+00:00",
    "text": "ABIDJAN, Côte d’Ivoire (October 20, 2026) - GE Vernova announced today that it will provide the gas power technology for the new Songon combined-cycle power plant, located in the Songon region near Abidjan, Côte d’Ivoire. Following the signing of financing agreements last June, Songon",
+   "quelle": "RSS"
+  },
+  {
+   "sym": "AVGO",
+   "name": "Broadcom",
+   "title": "Broadcom to Advance NTT DOCOMO’s Private Cloud with VMware Cloud Foundation",
+   "link": "https://investors.broadcom.com/news-releases/news-release-details/broadcom-advance-ntt-docomos-private-cloud-vmware-cloud",
+   "date": "2026-10-20T01:00:27+00:00",
+   "text": "Company’s First 10-year VMware Software Agreement in Japan Strengthens Infrastructure Resilience and Lays the Foundation for Next-generation Services TOKYO, Oct. 19, 2026 (GLOBE NEWSWIRE) -- Broadcom Inc. (NASDAQ: AVGO), a global technology leader that designs, develops, and supplies semiconductor",
    "quelle": "RSS"
   },
   {
@@ -3733,6 +3924,15 @@
    "quelle": "RSS"
   },
   {
+   "sym": "MDLZ",
+   "name": "Mondelez",
+   "title": "Mondelēz International to Report Q3 2026 Financial Results on October 29, 2026",
+   "link": "https://ir.mondelezinternational.com/news-releases/news-release-details/mondelez-international-report-q3-2026-financial-results-october",
+   "date": "2026-10-15T13:05:29+00:00",
+   "text": "CHICAGO, Oct. 15, 2026 (GLOBE NEWSWIRE) -- Mondelēz International, Inc. (Nasdaq: MDLZ) will release its third quarter 2026 financial results on Thursday, October 29, 2026, at 4:05 p.m. ET and will host a conference call at 5:00 p.m. ET that day.",
+   "quelle": "RSS"
+  },
+  {
    "sym": "TSM",
    "name": "Taiwan Semiconductor",
    "title": "Meldung (6-K)",
@@ -3862,6 +4062,15 @@
    "quelle": "RSS"
   },
   {
+   "sym": "AVGO",
+   "name": "Broadcom",
+   "title": "Broadcom Introduces VMware HyperArmor, Expanding Hypervisor Security and Protections for VMware Cloud Foundation",
+   "link": "https://investors.broadcom.com/news-releases/news-release-details/broadcom-introduces-vmware-hyperarmor-expanding-hypervisor",
+   "date": "2026-10-13T07:00:29+00:00",
+   "text": "VMware HyperArmor offers unique, proactive zero day protection to VMware Cloud Foundation environments with no downtime, software upgrades, or in-guest agents PALO ALTO, Calif., Oct. 13, 2026 (GLOBE NEWSWIRE) -- Broadcom Inc. (NASDAQ: AVGO), a global technology leader that designs, develops, and",
+   "quelle": "RSS"
+  },
+  {
    "sym": "CS.PA",
    "name": "AXA",
    "title": "AXA Future Risks Report 2026: Artificial Intelligence Becomes Experts’ Top Concern, Ahead of Climate Change",
@@ -3960,6 +4169,15 @@
    "link": "https://www.volvogroup.com/en/news-and-media/news/2026/oct/invitation-to-press-and-analyst-conference-in-stockholm.html",
    "date": "2026-10-09T09:25:56+00:00",
    "text": "The Volvo Group report for the third quarter 2026 will be published on October 23, 2026 at 7:20 a.m. CEST.",
+   "quelle": "RSS"
+  },
+  {
+   "sym": "AVGO",
+   "name": "Broadcom",
+   "title": "Broadcom Redefines AI Infrastructure with Industry-Leading Networking Innovations at 2026 OCP Global Summit",
+   "link": "https://investors.broadcom.com/news-releases/news-release-details/broadcom-redefines-ai-infrastructure-industry-leading-networking",
+   "date": "2026-10-08T16:00:15+00:00",
+   "text": "Company to Highlight OCP Rack-Based Innovations Enabling Scale-Up, Scale-Out, and Scale-Across Networks Across AI Clusters PALO ALTO, Calif., Oct. 08, 2026 (GLOBE NEWSWIRE) -- Broadcom Inc. (NASDAQ: AVGO), a global technology leader that designs, develops, and supplies semiconductor and",
    "quelle": "RSS"
   },
   {
@@ -4227,6 +4445,15 @@
    "quelle": "RSS"
   },
   {
+   "sym": "ABBV",
+   "name": "AbbVie",
+   "title": "AbbVie to Host Third-Quarter 2026 Earnings Conference Call",
+   "link": "https://investors.abbvie.com/news-releases/news-release-details/abbvie-host-third-quarter-2026-earnings-conference-call",
+   "date": "2026-10-01T12:00:00+00:00",
+   "text": "NORTH CHICAGO, Ill., Oct. 1, 2026 /PRNewswire/ -- AbbVie (NYSE: ABBV) will announce its third-quarter 2026 financial results on Friday, October 30, 2026, before the market opens. AbbVie will host a live webcast of the earnings conference call at 8 a.m. Central time.",
+   "quelle": "RSS"
+  },
+  {
    "sym": "8053.T",
    "name": "Sumitomo Corp",
    "title": "Construction Begins on Grid-Scale Battery Energy Storage Facility in Namie, Fukushima",
@@ -4364,6 +4591,15 @@
    "quelle": "RSS"
   },
   {
+   "sym": "AVGO",
+   "name": "Broadcom",
+   "title": "AST Completes Singapore's First High-End FC-BGA Substrate Facility to Meet Growing AI Chip Demand",
+   "link": "https://investors.broadcom.com/news-releases/news-release-details/ast-completes-singapores-first-high-end-fc-bga-substrate",
+   "date": "2026-09-29T13:00:00+00:00",
+   "text": "First Flip Chip Ball Grid Array (FC-BGA) substrate production facility in Singapore Addresses one of the most critical supply chain capacity constraints of the semiconductor industry Diversifies Singapore’s semiconductor ecosystem beyond current wafer fab, IC design and assembly operations. 29",
+   "quelle": "RSS"
+  },
+  {
    "sym": "6981.T",
    "name": "Murata",
    "title": "Murata Showcases ‘Powering AI Scalability’ at the 2026 OCP Global Summit",
@@ -4403,31 +4639,23 @@
  "errors": [
   {
    "sym": "PEP",
-   "fehler": "HTTP Error 429: Too Many Requests"
+   "fehler": "HTTP Error 402: Payment Required"
   },
   {
    "sym": "PG",
-   "fehler": "HTTP Error 429: Too Many Requests"
-  },
-  {
-   "sym": "LLY",
-   "fehler": "HTTP Error 403: Forbidden"
-  },
-  {
-   "sym": "ABBV",
-   "fehler": "HTTP Error 403: Forbidden"
+   "fehler": "HTTP Error 402: Payment Required"
   },
   {
    "sym": "PFE",
-   "fehler": "HTTP Error 429: Too Many Requests"
+   "fehler": "HTTP Error 402: Payment Required"
   },
   {
    "sym": "MRK",
-   "fehler": "HTTP Error 429: Too Many Requests"
+   "fehler": "HTTP Error 402: Payment Required"
   },
   {
    "sym": "O",
-   "fehler": "HTTP Error 429: Too Many Requests"
+   "fehler": "HTTP Error 402: Payment Required"
   },
   {
    "sym": "V",
@@ -4435,35 +4663,27 @@
   },
   {
    "sym": "JPM",
-   "fehler": "HTTP Error 429: Too Many Requests"
+   "fehler": "HTTP Error 402: Payment Required"
   },
   {
    "sym": "CVX",
-   "fehler": "HTTP Error 429: Too Many Requests"
+   "fehler": "HTTP Error 402: Payment Required"
   },
   {
    "sym": "MCD",
-   "fehler": "HTTP Error 429: Too Many Requests"
+   "fehler": "HTTP Error 402: Payment Required"
   },
   {
    "sym": "HD",
-   "fehler": "HTTP Error 429: Too Many Requests"
+   "fehler": "HTTP Error 402: Payment Required"
   },
   {
    "sym": "TXN",
-   "fehler": "HTTP Error 429: Too Many Requests"
-  },
-  {
-   "sym": "AVGO",
-   "fehler": "HTTP Error 403: Forbidden"
+   "fehler": "HTTP Error 402: Payment Required"
   },
   {
    "sym": "CSCO",
-   "fehler": "HTTP Error 429: Too Many Requests"
-  },
-  {
-   "sym": "MDLZ",
-   "fehler": "HTTP Error 403: Forbidden"
+   "fehler": "HTTP Error 402: Payment Required"
   },
   {
    "sym": "WMT",
@@ -4471,163 +4691,163 @@
   },
   {
    "sym": "GOOGL",
-   "fehler": "HTTP Error 429: Too Many Requests"
+   "fehler": "HTTP Error 402: Payment Required"
   },
   {
    "sym": "SIE.DE",
-   "fehler": "HTTP Error 429: Too Many Requests"
+   "fehler": "HTTP Error 402: Payment Required"
   },
   {
    "sym": "ALV.DE",
-   "fehler": "HTTP Error 429: Too Many Requests"
+   "fehler": "HTTP Error 402: Payment Required"
   },
   {
    "sym": "MBG.DE",
-   "fehler": "HTTP Error 429: Too Many Requests"
+   "fehler": "HTTP Error 402: Payment Required"
   },
   {
    "sym": "BMW.DE",
-   "fehler": "HTTP Error 429: Too Many Requests"
+   "fehler": "HTTP Error 402: Payment Required"
   },
   {
    "sym": "BAS.DE",
-   "fehler": "HTTP Error 429: Too Many Requests"
+   "fehler": "HTTP Error 402: Payment Required"
   },
   {
    "sym": "MUV2.DE",
-   "fehler": "HTTP Error 429: Too Many Requests"
+   "fehler": "HTTP Error 402: Payment Required"
   },
   {
    "sym": "DHL.DE",
-   "fehler": "HTTP Error 429: Too Many Requests"
+   "fehler": "HTTP Error 402: Payment Required"
   },
   {
    "sym": "ADS.DE",
-   "fehler": "HTTP Error 429: Too Many Requests"
+   "fehler": "HTTP Error 402: Payment Required"
   },
   {
    "sym": "RWE.DE",
-   "fehler": "HTTP Error 429: Too Many Requests"
+   "fehler": "HTTP Error 402: Payment Required"
   },
   {
    "sym": "EOAN.DE",
-   "fehler": "HTTP Error 429: Too Many Requests"
+   "fehler": "HTTP Error 402: Payment Required"
   },
   {
    "sym": "DBK.DE",
-   "fehler": "HTTP Error 429: Too Many Requests"
+   "fehler": "HTTP Error 402: Payment Required"
   },
   {
    "sym": "ASML.AS",
-   "fehler": "HTTP Error 429: Too Many Requests"
+   "fehler": "HTTP Error 402: Payment Required"
   },
   {
    "sym": "MC.PA",
-   "fehler": "HTTP Error 429: Too Many Requests"
+   "fehler": "HTTP Error 402: Payment Required"
   },
   {
    "sym": "OR.PA",
-   "fehler": "HTTP Error 429: Too Many Requests"
+   "fehler": "HTTP Error 402: Payment Required"
   },
   {
    "sym": "TTE.PA",
-   "fehler": "HTTP Error 429: Too Many Requests"
+   "fehler": "HTTP Error 402: Payment Required"
   },
   {
    "sym": "SAN.PA",
-   "fehler": "HTTP Error 429: Too Many Requests"
+   "fehler": "HTTP Error 402: Payment Required"
   },
   {
    "sym": "SU.PA",
-   "fehler": "HTTP Error 429: Too Many Requests"
+   "fehler": "HTTP Error 402: Payment Required"
   },
   {
    "sym": "NESN.SW",
-   "fehler": "HTTP Error 429: Too Many Requests"
+   "fehler": "HTTP Error 402: Payment Required"
   },
   {
    "sym": "NOVN.SW",
-   "fehler": "HTTP Error 429: Too Many Requests"
+   "fehler": "HTTP Error 402: Payment Required"
   },
   {
    "sym": "ROG.SW",
-   "fehler": "HTTP Error 429: Too Many Requests"
+   "fehler": "HTTP Error 402: Payment Required"
   },
   {
    "sym": "UBSG.SW",
-   "fehler": "HTTP Error 429: Too Many Requests"
+   "fehler": "HTTP Error 402: Payment Required"
   },
   {
    "sym": "NOVO-B.CO",
-   "fehler": "HTTP Error 429: Too Many Requests"
+   "fehler": "HTTP Error 402: Payment Required"
   },
   {
    "sym": "ULVR.L",
-   "fehler": "HTTP Error 429: Too Many Requests"
+   "fehler": "HTTP Error 402: Payment Required"
   },
   {
    "sym": "SHEL.L",
-   "fehler": "HTTP Error 429: Too Many Requests"
+   "fehler": "HTTP Error 402: Payment Required"
   },
   {
    "sym": "AZN.L",
-   "fehler": "HTTP Error 429: Too Many Requests"
+   "fehler": "HTTP Error 402: Payment Required"
   },
   {
    "sym": "BP.L",
-   "fehler": "HTTP Error 429: Too Many Requests"
+   "fehler": "HTTP Error 402: Payment Required"
   },
   {
    "sym": "ENEL.MI",
-   "fehler": "HTTP Error 429: Too Many Requests"
+   "fehler": "HTTP Error 402: Payment Required"
   },
   {
    "sym": "ISP.MI",
-   "fehler": "HTTP Error 429: Too Many Requests"
+   "fehler": "HTTP Error 402: Payment Required"
   },
   {
    "sym": "IBE.MC",
-   "fehler": "HTTP Error 429: Too Many Requests"
+   "fehler": "HTTP Error 402: Payment Required"
   },
   {
    "sym": "TSM",
-   "fehler": "HTTP Error 429: Too Many Requests"
+   "fehler": "HTTP Error 402: Payment Required"
   },
   {
    "sym": "9988.HK",
-   "fehler": "HTTP Error 429: Too Many Requests"
+   "fehler": "HTTP Error 402: Payment Required"
   },
   {
    "sym": "0700.HK",
-   "fehler": "HTTP Error 429: Too Many Requests"
+   "fehler": "HTTP Error 402: Payment Required"
   },
   {
    "sym": "7203.T",
-   "fehler": "HTTP Error 429: Too Many Requests"
+   "fehler": "HTTP Error 402: Payment Required"
   },
   {
    "sym": "6758.T",
-   "fehler": "HTTP Error 429: Too Many Requests"
+   "fehler": "HTTP Error 402: Payment Required"
   },
   {
    "sym": "BHP.AX",
-   "fehler": "HTTP Error 429: Too Many Requests"
+   "fehler": "HTTP Error 402: Payment Required"
   },
   {
    "sym": "0027.HK",
-   "fehler": "HTTP Error 429: Too Many Requests"
+   "fehler": "HTTP Error 402: Payment Required"
   },
   {
    "sym": "RELIANCE.NS",
-   "fehler": "HTTP Error 429: Too Many Requests"
+   "fehler": "HTTP Error 402: Payment Required"
   },
   {
    "sym": "TATAMOTORS.NS",
-   "fehler": "HTTP Error 429: Too Many Requests"
+   "fehler": "HTTP Error 402: Payment Required"
   },
   {
    "sym": "HEI.DE",
-   "fehler": "HTTP Error 429: Too Many Requests"
+   "fehler": "HTTP Error 402: Payment Required"
   },
   {
    "sym": "FRE.DE",
@@ -4643,15 +4863,15 @@
   },
   {
    "sym": "HOLN.SW",
-   "fehler": "HTTP Error 429: Too Many Requests"
+   "fehler": "HTTP Error 402: Payment Required"
   },
   {
    "sym": "DGE.L",
-   "fehler": "HTTP Error 429: Too Many Requests"
+   "fehler": "HTTP Error 402: Payment Required"
   },
   {
    "sym": "REL.L",
-   "fehler": "HTTP Error 429: Too Many Requests"
+   "fehler": "HTTP Error 402: Payment Required"
   },
   {
    "sym": "AAL.L",
@@ -4659,7 +4879,7 @@
   },
   {
    "sym": "NOKIA.HE",
-   "fehler": "HTTP Error 429: Too Many Requests"
+   "fehler": "HTTP Error 402: Payment Required"
   },
   {
    "sym": "FRE.DE",
