@@ -440,7 +440,7 @@ def firmenseite(f, peers, art, news, kl, k, fu, stand):
         d_titel = f"{name} Dividende: Termine, Historie und Rechner | Aktien-Hub"
         d_desc = f"Dividende der {name}-Aktie: Rendite, nächste Termine, Ausschüttungshistorie und Rechner."
         DIVSEITEN.append((f"aktien-hub/{f['slug']}/dividende/", d_titel, d_desc, f["name"], d_html, f["sym"]))
-        div_html = f'<p><a href="dividende/">Dividenden-Profil: Termine, Historie und Rechner →</a></p>'
+        div_html = f'<p><a class="btn alt" href="dividende/">Zum Dividendenprofil →</a></p>'
     if v.get("ausschuettung") is not None:
         q = v["ausschuettung"]
         satz = (f"Die Dividende ist mit {B.de(q, 0)} % des Gewinns gedeckt." if q < 100
@@ -476,7 +476,7 @@ def firmenseite(f, peers, art, news, kl, k, fu, stand):
               + '<li><a href="/dividende/aristokraten/">Dividend Kings und Dividendenaristokraten</a></li><li><a href="../../">Dividendenrechner</a></li></ul></aside>')
     # Firmenansicht: Steckbrief, Bewertung, Diagramme und Meldungen kommen aus derselben Ansicht wie im Aktien-Hub (assets/firma-ansicht.js)
     view = build_firma_ansicht.ansicht_html(sym, stand, 2)
-    div_link = '<p><a href="dividende/">Dividenden-Profil: Termine, Historie und Rechner →</a></p>'
+    div_link = '<p><a class="btn alt" href="dividende/">Zum Dividendenprofil →</a></p>'
     body = (f'<p class="meta">Stand: {B.datum(stand)} · Kürzel {esc(sym)}{(" · " + esc(kennung)) if kennung else ""}</p><p class="lead">{lead}</p>'
             f'{view}{div_link}{peer_html}{news_html}<h2>Häufige Fragen</h2>{faq_html}{teil_html}{weiter}'
             f'<p class="meta">Quellen: ' + ("Tagesübersicht der Börse Indonesien (IDX), Prüfberichte der Unternehmen (IDX-XBRL), Wechselkurse der EZB. Die Dividende je Aktie ist aus den gezahlten Dividenden und der Aktienzahl geschätzt." if f["sym"].endswith(".JK") else "Börsenkurse deutscher Handelsplätze, Geschäftsberichte der Unternehmen und Behörden (SEC, ESEF, Börsenaufsichten), Wechselkurse der EZB.") + " Alle Werte stehen so in den Daten; fehlende Werte sind weggelassen.</p>")

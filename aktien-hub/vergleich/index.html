@@ -229,6 +229,35 @@ td.co .logo{width:28px;height:28px}
 <p class="desc" id="srcnote">Kurse: Schluss des letzten Handelstags an der Deutschen Börse (Xetra, Tradegate oder Frankfurt), verzögert. Jahreszahlen aus den Geschäftsberichten bei der US-Börsenaufsicht SEC und im europäischen Einheitsformat ESEF. Bewertung und Quoten beziehen sich auf das letzte abgeschlossene Geschäftsjahr. Umsatz, Gewinn und Cashflow im Verlauf stehen in der jeweiligen Berichtswährung, vergleiche deshalb besser Quoten und Wachstumsraten. Alle Angaben ohne Gewähr, keine Anlageberatung.</p>
 <p class="desc"><a href="../">← Zurück zum Aktien-Hub</a></p>
 </main>
+<section class="jv" id="jv" aria-labelledby="jvh">
+<h2 id="jvh">Zwei Firmen im Jahresvergleich</h2>
+<p class="desc">Wählen Sie zwei Firmen und eine Kennzahl. Die Werte stammen aus den Geschäftsberichten und brauchen keine Kurse. „Normiert“ setzt das erste gemeinsame Jahr auf 100, so lässt sich der Verlauf auch bei unterschiedlicher Größe vergleichen.</p>
+<div class="jv-form">
+<label>Firma A <input id="jvA" list="jvlist" autocomplete="off" placeholder="Name oder Ticker"></label>
+<label>Firma B <input id="jvB" list="jvlist" autocomplete="off" placeholder="Name oder Ticker"></label>
+<label>Kennzahl <select id="jvK"></select></label>
+<div class="jv-mode" role="group" aria-label="Darstellung">
+<button type="button" id="jvO" class="jv-b" aria-pressed="true">Originalwerte</button>
+<button type="button" id="jvN" class="jv-b" aria-pressed="false">Normiert (Start = 100)</button>
+</div></div>
+<datalist id="jvlist"></datalist>
+<div id="jvmsg" role="status"></div>
+<div class="card" id="jvchart"></div>
+<div class="tablewrap"><table id="jvtab"></table></div>
+</section>
+<style>
+.jv-form{display:flex;flex-wrap:wrap;gap:12px 16px;align-items:flex-end;margin:8px 0 12px}
+.jv-form label{display:flex;flex-direction:column;gap:4px;font-size:14px;color:#5d6b78;min-width:0;flex:1 1 200px}
+.jv-form input,.jv-form select{font:inherit;font-size:15px;padding:9px 10px;border:1px solid #cdd6dd;border-radius:8px;background:#fff;color:#14202b;max-width:100%}
+.jv-mode{display:flex;flex-wrap:wrap;gap:8px}
+.jv-b{font:inherit;font-size:14px;padding:8px 14px;border-radius:999px;border:1px solid #2f9e5b;background:#fff;color:#1a7a45;cursor:pointer}
+.jv-b[aria-pressed="true"]{background:#2f9e5b;color:#fff}
+#jvmsg{font-size:14px;color:#b3372d;min-height:1em;margin:4px 0}
+#jvchart svg{width:100%;height:auto;display:block}
+.jv-leg{display:flex;flex-wrap:wrap;gap:12px;font-size:14px;margin:6px 0}
+.jv-leg i{display:inline-block;width:14px;height:4px;border-radius:2px;vertical-align:middle;margin-right:6px}
+</style>
+
 <section style="max-width:1080px;margin:36px auto 0;padding:8px 16px 40px;border-top:1px solid #dfe5ea;color:#14202b">
 <p style="font-size:14px"><a href="../../impressum/" style="color:#5d6b78">Impressum</a> · <a href="../../datenschutz/" style="color:#5d6b78">Datenschutz</a></p>
 </section>
@@ -405,5 +434,61 @@ fetch("../../data/peers.json").then(r=>r.json()).then(j=>{
 }).catch(()=>{$("msg").className="err";$("msg").textContent="Die Peer-Gruppen konnten nicht geladen werden."});
 </script>
 
+<script>
+(function(){
+const LBL={umsatz:"Umsatz",gewinn:"Gewinn",operatives_ergebnis:"Operatives Ergebnis",operativer_cf:"Operativer Cashflow",capex:"Investitionen (Capex)",dividende_je_aktie:"Dividende je Aktie",dividenden_gezahlt:"Gezahlte Dividenden",aktienrueckkauf:"Aktienrückkäufe",eigenkapital:"Eigenkapital",bilanzsumme:"Bilanzsumme",liquide_mittel:"Liquide Mittel",abschreibungen:"Abschreibungen",bruttogewinn:"Bruttogewinn",eps_verw:"Gewinn je Aktie (verwässert)",aktien_verw:"Aktien (verwässert)",steuern:"Steuern",zinsaufwand:"Zinsaufwand",schulden_lang:"Langfristige Schulden",schulden_kurz:"Kurzfristige Schulden",verbindlichkeiten:"Verbindlichkeiten",umlaufvermoegen:"Umlaufvermögen",vorraete:"Vorräte",gewinnruecklagen:"Gewinnrücklagen",kurzfr_verbindl:"Kurzfristige Verbindlichkeiten"};
+const JE_AKTIE=new Set(["dividende_je_aktie","eps_verw","eps_ber"]);
+const $=i=>document.getElementById(i);
+let IDX=[],MODE="o",cache={},rennen=0;
+const nf=(v,n)=>v.toLocaleString("de-DE",{maximumFractionDigits:n==null?2:n});
+function find(q){q=(q||"").trim().toLowerCase();if(!q)return null;return IDX.find(f=>f.sym.toLowerCase()===q)||IDX.find(f=>f.n.toLowerCase()===q)||IDX.find(f=>f.n.toLowerCase().includes(q))||null}
+function fmt(v,w,key){if(v==null)return"–";if(JE_AKTIE.has(key))return nf(v)+" "+w;if(Math.abs(v)>=1e9)return nf(v/1e9)+" Mrd. "+w;if(Math.abs(v)>=1e6)return nf(v/1e6)+" Mio. "+w;return nf(v,0)+" "+w}
+async function lade(f){if(cache[f.sym])return cache[f.sym];const r=await fetch("../../data/firma-ansicht/"+encodeURIComponent(f.sym)+".json");if(!r.ok)throw new Error("Daten fehlen");return cache[f.sym]=await r.json()}
+function reihe(d,k){const m={};for(const p of ((d.sec&&d.sec.k&&d.sec.k[k])||[])){if(!p||p[1]==null)continue;m[String(p[0]).slice(0,4)]=p[1]}return m}
+function setMsg(t){$("jvmsg").textContent=t||""}
+function fuelleKennzahlen(){const a=find($("jvA").value),b=find($("jvB").value);let keys=(a&&b)?a.k.filter(k=>b.k.includes(k)):(IDX.length?[...new Set(IDX.flatMap(f=>f.k))]:[]);const alt=$("jvK").value;$("jvK").innerHTML=keys.filter(k=>LBL[k]).map(k=>`<option value="${k}">${LBL[k]}</option>`).join("");if(keys.includes(alt))$("jvK").value=alt}
+async function zeichne(){const my=++rennen;const a=find($("jvA").value),b=find($("jvB").value),k=$("jvK").value;
+  if(!a||!b){setMsg("Bitte zwei Firmen aus der Liste wählen.");$("jvchart").innerHTML="";$("jvtab").innerHTML="";return}
+  if(a.sym===b.sym){setMsg("Bitte zwei verschiedene Firmen wählen.");return}
+  if(!k){setMsg("Für diese Firmen gibt es keine gemeinsame Kennzahl.");return}
+  let da,db;try{[da,db]=await Promise.all([lade(a),lade(b)])}catch(e){setMsg("Die Daten einer Firma konnten nicht geladen werden.");return}
+  if(my!==rennen)return;
+  const ra=reihe(da,k),rb=reihe(db,k);
+  const jahre=Object.keys(ra).filter(y=>rb[y]!=null).sort();
+  if(jahre.length<2){setMsg("Für diese Kennzahl gibt es nicht genug gemeinsame Jahre.");$("jvchart").innerHTML="";$("jvtab").innerHTML="";return}
+  const wa=a.w||"",wb=b.w||"";
+  let sa,sb,einheit;
+  if(MODE==="n"){const j0=jahre.find(y=>ra[y]>0&&rb[y]>0);
+    if(!j0){setMsg("Normierung nicht möglich: im ersten gemeinsamen Jahr ist ein Wert null oder negativ.");$("jvchart").innerHTML="";$("jvtab").innerHTML="";return}
+    sa=jahre.map(y=>ra[y]/ra[j0]*100);sb=jahre.map(y=>rb[y]/rb[j0]*100);einheit="Index (Start "+j0+" = 100)"}
+  else{sa=jahre.map(y=>ra[y]);sb=jahre.map(y=>rb[y]);einheit=LBL[k]}
+  setMsg("");
+  const alle=[...sa,...sb].filter(v=>isFinite(v)),lo=Math.min(0,...alle),hi=Math.max(...alle),pad=(hi-lo)*0.08||1,ymin=lo<0?lo-pad:Math.min(0,lo),ymax=hi+pad;
+  const W=640,H=280,L=56,R=14,T=14,B=34,x=i=>L+(W-L-R)*(jahre.length===1?0.5:i/(jahre.length-1)),y=v=>T+(H-T-B)*(1-(v-ymin)/(ymax-ymin||1));
+  let g="";for(let i=0;i<=4;i++){const v=ymin+(ymax-ymin)*i/4;g+=`<line x1="${L}" x2="${W-R}" y1="${y(v)}" y2="${y(v)}" stroke="#e3e9ee"/><text x="${L-6}" y="${y(v)+4}" text-anchor="end" font-size="11" fill="#5d6b78">${MODE==="n"?nf(v,0):nf(v/(Math.abs(hi)>=1e9?1e9:Math.abs(hi)>=1e6?1e6:1),1)}</text>`}
+  const xl=jahre.map((j,i)=>(i%Math.ceil(jahre.length/8)===0||i===jahre.length-1)?`<text x="${x(i)}" y="${H-10}" text-anchor="middle" font-size="11" fill="#5d6b78">${j}</text>`:"").join("");
+  const pfad=s=>s.map((v,i)=>(i?"L":"M")+x(i).toFixed(1)+" "+y(v).toFixed(1)).join(" ");
+  const pkt=(s,c)=>s.map((v,i)=>`<circle cx="${x(i)}" cy="${y(v)}" r="3" fill="${c}"><title>${jahre[i]}: ${MODE==="n"?nf(v,1):fmt(v,c===ca?wa:wb,k)}</title></circle>`).join("");
+  const ca="#2f9e5b",cb="#3a6ea5";
+  $("jvchart").innerHTML=`<div class="jv-leg"><span><i style="background:${ca}"></i>${a.n}</span><span><i style="background:${cb}"></i>${b.n}</span><span>${einheit}</span></div><svg viewBox="0 0 ${W} ${H}" role="img" aria-label="Verlauf ${LBL[k]} von ${a.n} und ${b.n}">${g}${xl}<path d="${pfad(sa)}" fill="none" stroke="${ca}" stroke-width="2.5"/><path d="${pfad(sb)}" fill="none" stroke="${cb}" stroke-width="2.5"/>${pkt(sa,ca)}${pkt(sb,cb)}</svg>`;
+  const zeile=(j,i)=>`<tr><td>${j}</td><td class="n">${MODE==="n"?nf(sa[i],1):fmt(sa[i],wa,k)}</td><td class="n">${MODE==="n"?nf(sb[i],1):fmt(sb[i],wb,k)}</td></tr>`;
+  $("jvtab").innerHTML=`<thead><tr><th>Jahr</th><th class="n">${a.n}</th><th class="n">${b.n}</th></tr></thead><tbody>${jahre.map(zeile).join("")}</tbody>`;
+  if(wa&&wb&&wa!==wb&&MODE!=="n")setMsg("Hinweis: Die Firmen berichten in unterschiedlichen Währungen ("+wa+" und "+wb+"). Für einen direkten Vergleich den Modus „Normiert“ wählen.");
+}
+function setModus(m){MODE=m;$("jvO").setAttribute("aria-pressed",String(m==="o"));$("jvN").setAttribute("aria-pressed",String(m==="n"));zeichne()}
+async function start(){
+  try{IDX=(await (await fetch("../../data/vergleich-index.json")).json()).firmen}catch(e){setMsg("Die Firmenliste konnte nicht geladen werden.");return}
+  $("jvlist").innerHTML=IDX.map(f=>`<option value="${f.n.replace(/"/g,"&quot;")}"></option>`).join("");
+  const std=(q)=>find(q);
+  $("jvA").value=(std("MO")||IDX[0]).n;$("jvB").value=(std("KO")||IDX[1]).n;
+  fuelleKennzahlen();if([...$("jvK").options].some(o=>o.value==="umsatz"))$("jvK").value="umsatz";
+  ["jvA","jvB"].forEach(id=>{$(id).addEventListener("change",()=>{fuelleKennzahlen();zeichne()})});
+  $("jvK").addEventListener("change",zeichne);
+  $("jvO").addEventListener("click",()=>setModus("o"));$("jvN").addEventListener("click",()=>setModus("n"));
+  zeichne();
+}
+start();
+})();
+</script>
 </body>
 </html>
