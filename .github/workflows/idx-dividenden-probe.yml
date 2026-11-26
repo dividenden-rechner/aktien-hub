@@ -20,8 +20,9 @@ jobs:
           echo "== Kontext DividendTab"
           grep -oh '.\{0,200\}dividendData.\{0,200\}' /tmp/alles.txt | head -4
           cd ..
-          for p in "/primary/ListedCompany/GetDividenTunai?kodeEmiten=BBCA" "/primary/ListedCompany/GetDividenTunai?kodeEmiten=BBCA&start=0&length=20" "/primary/ListedCompany/GetDividenSaham?kodeEmiten=BBCA" "/primary/ListedCompany/GetDividenTunai?KodeEmiten=BBCA&start=0&length=20"; do
+          REF="https://www.idx.id/en/listed-companies/company-profiles/BBCA"
+          for p in "/primary/ListedCompany/GetDividenTunai?KodeEmiten=BBCA&Year=2025" "/primary/ListedCompany/GetDividenSaham?KodeEmiten=BBCA&Year=2025" "/primary/ListedCompany/GetDividenTunai?KodeEmiten=BBCA&Year=2024" "/primary/ListedCompany/GetDividenTunai?KodeEmiten=BBRI&Year=2025"; do
             echo "-- $p"
-            curl -s -A "$UA" -H "Accept: application/json, text/plain, */*" -m 40 -o r.json -w "HTTP %{http_code} %{size_download}\n" "https://www.idx.id$p"
-            head -c 700 r.json; echo
+            curl -s -A "$UA" -e "$REF" -H "Accept: application/json, text/plain, */*" -m 40 -o r.json -w "HTTP %{http_code} %{size_download}\n" "https://www.idx.id$p"
+            head -c 900 r.json; echo
           done
