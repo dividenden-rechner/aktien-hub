@@ -13,6 +13,7 @@ image: assets/magazin/hernandez-de-cos-ezb-praesident-foto.jpg
 image_alt: "Pablo Hernández de Cos (links) bei einer Buchpräsentation im spanischen Wirtschaftsministerium"
 image_credit: "Hernández de Cos (links) bei einer Buchpräsentation in Madrid. Foto: MINECO / Wikimedia Commons, Lizenz Attribution"
 image_source: "https://commons.wikimedia.org/wiki/File:Presentaci%C3%B3n_del_libro_%E2%80%98Una_visi%C3%B3n_macroecon%C3%B3mica_de_los_cuarenta_a%C3%B1os_de_Constituci%C3%B3n_Espa%C3%B1ola.jpg"
+logo_file: assets/logos/ezb.png
 ---
 !!! kurz "Kurz gesagt"
     **Präsident:** Pablo Hernández de Cos folgt ab Februar auf Christine Lagarde, die Amtszeit beträgt acht Jahre
