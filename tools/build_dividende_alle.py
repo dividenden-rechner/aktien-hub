@@ -127,7 +127,8 @@ def seite(sym, r, slug, name, faq_extra, head_vorlage, kopf, fuss):
 <p class="meta">{esc(" · ".join(kopfzeilen))}</p>
 <p class="lead">{esc(desc.split(". Zahlweise")[0])}.</p>
 {tabelle}
-<p><a href="../">Zur Aktienseite von {esc(name)}</a> · <a href="../../../dividende/">Alle Dividenden im Überblick</a> · <a href="../../../dividende/aristokraten/">Dividendenaristokraten</a></p>
+<p><a class="btn alt" href="../">← Zur Aktienseite</a></p>
+<p><a href="../../../dividende/">Alle Dividenden im Überblick</a> · <a href="../../../dividende/aristokraten/">Dividendenaristokraten</a></p>
 <h2>Fragen und Antworten</h2>
 <div class="faq">{faq_html}</div>
 </article></main>

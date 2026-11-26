@@ -106,7 +106,7 @@ def seite(f, profil, dividende_url, head, kopf, fuss):
 
     faq = fragen(f, name, profil, dividende_url)
     faq_html = "".join(f"<details><summary>{esc(q)}</summary><p>{esc(a)}</p></details>" for q, a in faq)
-    link_div = f'<p><a class="btn" href="dividende/">Dividendenseite von {esc(name)}</a></p>' if dividende_url else ""
+    link_div = f'<p><a class="btn alt" href="dividende/">Zum Dividendenprofil →</a></p>' if dividende_url else ""
 
     ld = [
         {"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [
