@@ -1,0 +1,27 @@
+name: IDX Kurse Probe
+on:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  probe:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: Kursendpunkte in den IDX-Skripten finden
+        run: |
+          UA="Mozilla/5.0 (dividenden-rechner.de Datensammlung)"
+          mkdir -p js && cd js
+          curl -s -L -A "$UA" -m 40 -o ../profil.html "https://www.idx.id/en/listed-companies/company-profiles/BBCA"
+          for s in $(grep -oi '/_nuxt/[^"]*\.js' ../profil.html | sort -u); do curl -s -L -A "$UA" -m 40 -o "$(basename $s)" "https://www.idx.id$s"; done
+          cat *.js ../profil.html > /tmp/alles.txt
+          echo "== Pfade /primary/ oder api"
+          grep -oh '/primary/[A-Za-z0-9/_-]*' /tmp/alles.txt | sort | uniq -c | sort -rn | head -40
+          echo "== Kurs-Stichworte"
+          grep -oh '.\{0,60\}\(TradingSummary\|StockSummary\|LastPrice\|ClosePrice\|Close\b\|StockPrice\|Trading\).\{0,60\}' /tmp/alles.txt | head -20
+      - name: Kandidaten testen
+        run: |
+          UA="Mozilla/5.0 (dividenden-rechner.de Datensammlung)"
+          for p in "/primary/TradingSummary/GetStockSummary?date=2025-11-20&start=0&length=5" "/primary/TradingSummary/GetStockSummary?code=BBCA&start=0&length=5" "/primary/ListedCompany/GetStockInfo?kodeEmiten=BBCA" "/primary/StockData/GetSecuritiesStock?code=BBCA&start=0&limit=5"; do
+            echo "-- $p"; curl -s -L -A "$UA" -H "Accept: application/json" -m 40 -o /tmp/k.json -w "HTTP %{http_code} %{size_download}\n" "https://www.idx.id$p"; head -c 300 /tmp/k.json; echo
+          done
