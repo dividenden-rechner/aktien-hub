@@ -129,7 +129,7 @@ def idx_werte(out, rate, tag):
                              "land": "ID", "waehrung": "IDR", "kurs_heimat": heimat, "kurs_eur": round(eur, 4),
                              "kurs_usd": round(eur * usd, 2) if usd else None, "boerse": "IDX (Jakarta)",
                              "veraenderung": None, "datum": k.get("datum") or tag, "fx": rate["IDR"],
-                             "gj": str(g[0])[:4], "boersenwert_eur": round(heimat * aktien / rate["IDR"]),
+                             "gj": str(g[0])[:4], "boersenwert_eur": round(heimat * aktien),   # Landeswährung (IDR); bw() rechnet um
                              "boersenwert_usd": round(heimat * aktien * usd_je) if usd_je else None,
                              "dividende": dps, "rendite": r2(dps / heimat * 100),
                              "kgv": r2(heimat / eps[1], 1), "ausschuettung": r2(div[1] / g[1] * 100, 0),
