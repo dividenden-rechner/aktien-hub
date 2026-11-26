@@ -1,6 +1,14 @@
 {
- "datum": "2026-11-23",
+ "datum": "2026-11-26",
  "abweichungen": [
+  {
+   "angebot": "N26 – Standarddepot",
+   "feld": "kosten_dauer",
+   "gespeichert": 0.09,
+   "gefunden": 0.1,
+   "url": "https://n26.com/de-de/altersvorsorgedepot",
+   "beleg": "Neueröffnungen zwischen 01.01. und 30.06.2027: lebenslang 0 % N26 Servicegebühr. Neueröffnungen ab 01.07.2027: 0,10 % p. a."
+  },
   {
    "angebot": "Scalable Capital – Standarddepot",
    "feld": "kosten_dauer",
@@ -10,15 +18,39 @@
    "beleg": "As part of the government's private pension reform, the company will offer Retirement accounts (Altersvorsorgedepot) in the future – as a standard account and for self-directed investors – completely without custody or savings plan fees. In"
   },
   {
-   "angebot": "SMARTBROKER+ – Standarddepot",
+   "angebot": "ING – Altersvorsorge-Depot Aktiv",
    "feld": "kosten_dauer",
    "gespeichert": null,
-   "gefunden": 0.15,
-   "url": "https://www.biallo.de/altersvorsorge/news/altersvorsorgedepot-deka-0-1-prozent-kosten-im-standard/",
-   "beleg": "Smartbroker+ wirbt beim Standarddepot in den ersten drei Jahren mit null Euro Depotgebühr, null Euro Sparplankosten und null Euro Orderprovisionen. Selbst die laufenden ETF-Kosten werden in dieser Zeit erstattet. Danach fallen nur noch die "
+   "gefunden": 0.03,
+   "url": "https://www.ing.de/wissen/altersvorsorgedepot-kosten/",
+   "beleg": "Beim „Altersvorsorge-Depot Aktiv“ der ING (Selbstentscheider-Depot) hängen die Produktkosten von Ihrer persönlichen Auswahl ab und starten je nach Produkt bei 0,03 % p.a. (zzgl. Transaktionskosten)."
+  },
+  {
+   "angebot": "ING – Altersvorsorge-Depot Aktiv",
+   "feld": "kosten_dauer",
+   "gespeichert": null,
+   "gefunden": 0.03,
+   "url": "https://www.test.de/Altersvorsorgedepot-Preiskampf-der-Anbieter-ING-Trade-Republic-Smartbroker-6335719-0/",
+   "beleg": "Im Selbst­entscheider-Depot „Aktiv Depot“ können Kundinnen und Kunden laut ING aus über 1 000 ETF und Fonds wählen. Auch hier müssen Spare­rinnen und Sparer nur die Fonds­kosten zahlen, die bei 0,03 Prozent pro Jahr starten."
+  },
+  {
+   "angebot": "DWS (Direktvertrieb) – DWS VorsorgeDepot (ETF, aktive ETFs, Fonds, Comfort)",
+   "feld": "kosten_dauer",
+   "gespeichert": null,
+   "gefunden": 0.42,
+   "url": "https://www.test.de/Altersvorsorgedepot-Preiskampf-der-Anbieter-ING-Trade-Republic-Smartbroker-6335719-0/",
+   "beleg": "Im „DWS VorsorgeDepot ETF“ können Kundinnen und Kunden einen welt­weit streuenden Aktien-ETF mit einem europäischen Renten­baustein kombinieren. Die voraus­sicht­lichen Gesamt­kosten sollen 0,42 Prozent pro Jahr betragen."
   }
  ],
  "bestaetigt": [
+  {
+   "angebot": "N26 – Standarddepot",
+   "feld": "kosten_start",
+   "gespeichert": 0.0,
+   "gefunden": 0,
+   "url": "https://n26.com/de-de/altersvorsorgedepot",
+   "beleg": "Neueröffnungen zwischen 01.01. und 30.06.2027: lebenslang 0 % N26 Servicegebühr. Neueröffnungen ab 01.07.2027: 0,10 % p. a."
+  },
   {
    "angebot": "Scalable Capital – Standarddepot",
    "feld": "kosten_start",
@@ -32,24 +64,8 @@
    "feld": "kosten_dauer",
    "gespeichert": 0.2,
    "gefunden": 0.2,
-   "url": "https://www.ing.de/ueber-uns/presse/pressemitteilungen/ing-altersvorsorge-depot-bietet-orientierung-und-flexibilitat-zu-attraktiven-preisen/",
-   "beleg": "Die Anlage erfolgt über zwei weltweit breit streuende, aktive ETFs. Die ING managt die Zusammensetzung der beiden Fonds aktiv und greift dabei auf die Expertise des ING Global Investment Centers zurück. Damit unterscheidet sich das Angebot "
-  },
-  {
-   "angebot": "flatex / Degiro – Standarddepot Core",
-   "feld": "kosten_start",
-   "gespeichert": 0.0,
-   "gefunden": 0,
-   "url": "https://www.flatex.de/altersvorsorgedepot/",
-   "beleg": "Produktkosten: maximal 0,07 % p. a. (TER) Dein flatex Vorteil: flatex erstattet dir die Produktkosten für die ersten fünf Jahre ab Produktstart"
-  },
-  {
-   "angebot": "flatex / Degiro – Standarddepot Core",
-   "feld": "kosten_dauer",
-   "gespeichert": 0.07,
-   "gefunden": 0.07,
-   "url": "https://www.flatex.de/altersvorsorgedepot/",
-   "beleg": "Produktkosten: maximal 0,07 % p. a. (TER) Dein flatex Vorteil: flatex erstattet dir die Produktkosten für die ersten fünf Jahre ab Produktstart"
+   "url": "https://www.ing.de/wissen/altersvorsorgedepot-kosten/",
+   "beleg": "Beim „Altersvorsorge-Depot Relax“ der ING (Standarddepot) liegen die laufenden ETF-Kosten bei 0,2 % p.a (zzgl. Transaktionskosten)."
   },
   {
    "angebot": "Deka (Sparkassen) – Deka-Vorsorge (Standarddepot)",
@@ -58,14 +74,6 @@
    "gefunden": 0.1,
    "url": "https://www.biallo.de/altersvorsorge/news/altersvorsorgedepot-deka-0-1-prozent-kosten-im-standard/",
    "beleg": "Das Standarddepot der Deka kostet 0,1 Prozent Effektivkosten pro Jahr, die ausschließlich auf die dahinterliegenden ETFs entfallen."
-  },
-  {
-   "angebot": "SMARTBROKER+ – Standarddepot",
-   "feld": "kosten_start",
-   "gespeichert": 0.0,
-   "gefunden": 0,
-   "url": "https://www.biallo.de/altersvorsorge/news/altersvorsorgedepot-deka-0-1-prozent-kosten-im-standard/",
-   "beleg": "Smartbroker+ wirbt beim Standarddepot in den ersten drei Jahren mit null Euro Depotgebühr, null Euro Sparplankosten und null Euro Orderprovisionen. Selbst die laufenden ETF-Kosten werden in dieser Zeit erstattet. Danach fallen nur noch die "
   },
   {
    "angebot": "Deutsche Bank – DWS Standarddepot (über die Deutsche Bank)",
@@ -92,12 +100,36 @@
    "beleg": "Zu einem späteren Zeitpunkt beabsichtigt die Deutsche Bank, das Angebot um ein von der DWS entwickeltes beratungsbasiertes Vorsorgeangebot mit erweiterter Produktauswahl zu ergänzen. Das Entgelt soll 0,99 Prozent p.a. betragen."
   },
   {
+   "angebot": "Fidelity – Fidelity VorsorgeDepot (Standarddepot)",
+   "feld": "kosten_dauer",
+   "gespeichert": 0.35,
+   "gefunden": 0.35,
+   "url": "https://www.test.de/Altersvorsorgedepot-Preiskampf-der-Anbieter-ING-Trade-Republic-Smartbroker-6335719-0/",
+   "beleg": "Das Stan­dard­depot Fidelity VorsorgeDepot setzt auf zwei haus­eigene ETF, beim Aktien-ETF Fidelity Global Equity Research handelt es sich um einen aktiv gemanagten ETF. Die Produkt­kosten sollen circa 0,35 Prozent betragen, zusätzlich wird"
+  },
+  {
+   "angebot": "ING – Altersvorsorge-Depot Relax (Standarddepot)",
+   "feld": "kosten_dauer",
+   "gespeichert": 0.2,
+   "gefunden": 0.2,
+   "url": "https://www.test.de/Altersvorsorgedepot-Preiskampf-der-Anbieter-ING-Trade-Republic-Smartbroker-6335719-0/",
+   "beleg": "Das Stan­dard­depot heißt bei ING „Relax-Depot“. Die Bank setzt dabei anders als andere Anbieter nicht auf „passive“ ETF, die einfach einen Index nach­zeichnen, sondern auf zwei eigene „welt­weit breit streuende, aktive ETFs“. Die Kosten de"
+  },
+  {
+   "angebot": "Deka (Sparkassen) – Deka-Vorsorge (Standarddepot)",
+   "feld": "kosten_dauer",
+   "gespeichert": 0.1,
+   "gefunden": 0.1,
+   "url": "https://www.test.de/Altersvorsorgedepot-Preiskampf-der-Anbieter-ING-Trade-Republic-Smartbroker-6335719-0/",
+   "beleg": "Die Kosten des Stan­dard­depots mit Deka-ETF sollen dabei nur 0,1 Prozent pro Jahr betragen."
+  },
+  {
    "angebot": "OSKAR – Standarddepot",
    "feld": "kosten_dauer",
    "gespeichert": 0.5,
    "gefunden": 0.5,
    "url": "https://www.oskar.de/altersvorsorgedepot/",
-   "beleg": "OSKAR strebt für das Altersvorsorgedepot jährliche Gesamtkosten von rund 0,5 Prozent des Depotvermögens an"
+   "beleg": "OSKAR strebt für das Altersvorsorgedepot jährliche Gesamtkosten von rund 0,5 Prozent des Depotvermögens an – etwa die Hälfte des gesetzlichen Kostendeckels von 1,0 Prozent für Standarddepots"
   },
   {
    "angebot": "OSKAR – Standarddepot",
@@ -109,11 +141,6 @@
   }
  ],
  "verworfen": [
-  {
-   "angebot": "N26 – Selbstentscheider",
-   "grund": "Beleg nicht wortgetreu oder ohne Anbietername",
-   "url": "https://n26.com/de-de/altersvorsorgedepot"
-  },
   {
    "angebot": "N26 – Standarddepot",
    "grund": "Beleg nicht wortgetreu oder ohne Anbietername",
@@ -130,14 +157,9 @@
    "url": "https://help.scalable.capital/altersvorsorgedepot-bad26aed/welche-kosten-fallen-f%C3%BCr-das-altersvorsorgedepot-an-80b882a3"
   },
   {
-   "angebot": "ING – Altersvorsorge-Depot Relax (Standarddepot)",
+   "angebot": "Scalable Capital – Selbst entscheiden",
    "grund": "Beleg nicht wortgetreu oder ohne Anbietername",
-   "url": "https://www.ing.de/wissen/altersvorsorgedepot-kosten/"
-  },
-  {
-   "angebot": "ING – Altersvorsorge-Depot Aktiv",
-   "grund": "Beleg nicht wortgetreu oder ohne Anbietername",
-   "url": "https://www.ing.de/wissen/altersvorsorgedepot-kosten/"
+   "url": "https://de.scalable.capital/en/newsroom/fixed-term"
   },
   {
    "angebot": "ING – Altersvorsorge-Depot Aktiv",
@@ -145,9 +167,29 @@
    "url": "https://www.ing.de/ueber-uns/presse/pressemitteilungen/ing-altersvorsorge-depot-bietet-orientierung-und-flexibilitat-zu-attraktiven-preisen/"
   },
   {
+   "angebot": "ING – Altersvorsorge-Depot Relax (Standarddepot)",
+   "grund": "Beleg nicht wortgetreu oder ohne Anbietername",
+   "url": "https://www.ing.de/ueber-uns/presse/pressemitteilungen/ing-altersvorsorge-depot-bietet-orientierung-und-flexibilitat-zu-attraktiven-preisen/"
+  },
+  {
+   "angebot": "flatex / Degiro – Standarddepot Core",
+   "grund": "Beleg nicht wortgetreu oder ohne Anbietername",
+   "url": "https://www.flatex.de/altersvorsorgedepot/"
+  },
+  {
    "angebot": "flatex / Degiro – Standarddepot Plus",
    "grund": "Beleg nicht wortgetreu oder ohne Anbietername",
    "url": "https://www.flatex.de/altersvorsorgedepot/"
+  },
+  {
+   "angebot": "Deka (Sparkassen) – Deka-Vorsorge (Standarddepot)",
+   "grund": "Beleg nicht wortgetreu oder ohne Anbietername",
+   "url": "https://www.deka.de/privatkunden/aktuelles-themen/informationen/altersvorsorge-reform"
+  },
+  {
+   "angebot": "Deka (Sparkassen) – Deka-VorsorgePlus (aktiv gemanagt)",
+   "grund": "Beleg nicht wortgetreu oder ohne Anbietername",
+   "url": "https://www.deka.de/privatkunden/aktuelles-themen/informationen/altersvorsorge-reform"
   },
   {
    "angebot": "Deka (Sparkassen) – Deka-VorsorgePlus (aktiv gemanagt)",
@@ -163,16 +205,33 @@
   },
   {
    "angebot": "SMARTBROKER+ – Standarddepot",
+   "feld": "kosten_dauer",
+   "wert": 0,
+   "grund": "Zahl nicht im Beleg oder unplausibel",
+   "url": "https://www.smartbrokerplus.de/de-de/altersvorsorgedepot/"
+  },
+  {
+   "angebot": "SMARTBROKER+ – Standarddepot",
    "grund": "Beleg nicht wortgetreu oder ohne Anbietername",
    "url": "https://www.smartbrokerplus.de/de-de/blog/altersvorsorgedepot-konditionen/"
   },
   {
-   "angebot": "Scalable Capital – Standarddepot",
+   "angebot": "Traders Place – Standarddepot (drei Modelle)",
+   "grund": "Beleg nicht wortgetreu oder ohne Anbietername",
+   "url": "https://www.mobiflip.de/traders-place-plant-altersvorsorgedepot-mit-kostenvorteil/"
+  },
+  {
+   "angebot": "Traders Place – Standarddepot (drei Modelle)",
    "grund": "Beleg nicht wortgetreu oder ohne Anbietername",
    "url": "https://reisetopia.de/news/traders-place-konditionen-altersvorsorgedepot/"
   },
   {
    "angebot": "Bitpanda – Bitpanda Vorsorge Standard",
+   "grund": "Beleg nicht wortgetreu oder ohne Anbietername",
+   "url": "https://www.bitpanda.com/en/altersvorsorgedepot"
+  },
+  {
+   "angebot": "Bitpanda – Bitpanda Vorsorge Flex",
    "grund": "Beleg nicht wortgetreu oder ohne Anbietername",
    "url": "https://www.bitpanda.com/en/altersvorsorgedepot"
   },
@@ -187,22 +246,41 @@
    "url": "https://www.test.de/Altersvorsorgedepot-Preiskampf-der-Anbieter-ING-Trade-Republic-Smartbroker-6335719-0/"
   },
   {
-   "angebot": "Fidelity – Fidelity VorsorgeDepot (Standarddepot)",
+   "angebot": "Traders Place – Standarddepot (drei Modelle)",
+   "feld": "kosten_start",
+   "wert": 0,
+   "grund": "Zahl nicht im Beleg oder unplausibel",
+   "url": "https://www.test.de/Altersvorsorgedepot-Preiskampf-der-Anbieter-ING-Trade-Republic-Smartbroker-6335719-0/"
+  },
+  {
+   "angebot": "Traders Place – Standarddepot (drei Modelle)",
+   "feld": "kosten_dauer",
+   "wert": 0,
+   "grund": "Zahl nicht im Beleg oder unplausibel",
+   "url": "https://www.test.de/Altersvorsorgedepot-Preiskampf-der-Anbieter-ING-Trade-Republic-Smartbroker-6335719-0/"
+  },
+  {
+   "angebot": "flatex / Degiro – Standarddepot Core",
    "grund": "Beleg nicht wortgetreu oder ohne Anbietername",
    "url": "https://www.test.de/Altersvorsorgedepot-Preiskampf-der-Anbieter-ING-Trade-Republic-Smartbroker-6335719-0/"
   },
   {
-   "angebot": "ING – Altersvorsorge-Depot Relax (Standarddepot)",
+   "angebot": "Union Investment (Volks- und Raiffeisenbanken) – UniVorsorge Basis (Standardprodukt mit aktiven ETFs)",
    "grund": "Beleg nicht wortgetreu oder ohne Anbietername",
    "url": "https://www.test.de/Altersvorsorgedepot-Preiskampf-der-Anbieter-ING-Trade-Republic-Smartbroker-6335719-0/"
   },
   {
-   "angebot": "Trade Republic – Standarddepot",
+   "angebot": "Union Investment (Volks- und Raiffeisenbanken) – UniVorsorge Pro (aktiv gemanagt)",
    "grund": "Beleg nicht wortgetreu oder ohne Anbietername",
    "url": "https://www.test.de/Altersvorsorgedepot-Preiskampf-der-Anbieter-ING-Trade-Republic-Smartbroker-6335719-0/"
   },
   {
-   "angebot": "Scalable Capital – Standarddepot",
+   "angebot": "Deka (Sparkassen) – Deka-VorsorgePlus (aktiv gemanagt)",
+   "grund": "Beleg nicht wortgetreu oder ohne Anbietername",
+   "url": "https://www.test.de/Altersvorsorgedepot-Preiskampf-der-Anbieter-ING-Trade-Republic-Smartbroker-6335719-0/"
+  },
+  {
+   "angebot": "SMARTBROKER+ – Standarddepot",
    "grund": "Beleg nicht wortgetreu oder ohne Anbietername",
    "url": "https://www.test.de/Altersvorsorgedepot-Preiskampf-der-Anbieter-ING-Trade-Republic-Smartbroker-6335719-0/"
   },
@@ -232,12 +310,32 @@
    "url": "https://www.consorsbank.de/web/Sparen-Anlegen/Anlegen/Altersvorsorgedepot"
   },
   {
+   "angebot": "Consorsbank – Standarddepot",
+   "grund": "Beleg nicht wortgetreu oder ohne Anbietername",
+   "url": "https://www.consorsbank.de/web/Sparen-Anlegen/Anlegen/Altersvorsorgedepot"
+  },
+  {
    "angebot": "Consorsbank – Standarddepot Fokus",
    "grund": "Beleg nicht wortgetreu oder ohne Anbietername",
    "url": "https://www.consorsbank.de/web/Sparen-Anlegen/Anlegen/Altersvorsorgedepot"
   },
   {
+   "angebot": "Consorsbank – Standarddepot Fokus",
+   "grund": "Beleg nicht wortgetreu oder ohne Anbietername",
+   "url": "https://www.consorsbank.de/web/Sparen-Anlegen/Anlegen/Altersvorsorgedepot"
+  },
+  {
+   "angebot": "DKB – Altersvorsorgedepot",
+   "grund": "Beleg nicht wortgetreu oder ohne Anbietername",
+   "url": "https://www.dkb.de/privatkunden/investieren/altersvorsorgedepot"
+  },
+  {
    "angebot": "Raisin (WeltSparen) – Standarddepot",
+   "grund": "Beleg nicht wortgetreu oder ohne Anbietername",
+   "url": "https://www.raisin.com/de-de/altersvorsorgedepot/"
+  },
+  {
+   "angebot": "Raisin (WeltSparen) – Vermögensverwaltung",
    "grund": "Beleg nicht wortgetreu oder ohne Anbietername",
    "url": "https://www.raisin.com/de-de/altersvorsorgedepot/"
   },
@@ -255,6 +353,11 @@
    "angebot": "Commerzbank – Altersvorsorgedepot",
    "grund": "Beleg nicht wortgetreu oder ohne Anbietername",
    "url": "https://www.commerzbank.de/privatkunden/investieren/depot/altersvorsorgedepot/"
+  },
+  {
+   "angebot": "UnitPlus – Altersvorsorgedepot",
+   "grund": "Beleg nicht wortgetreu oder ohne Anbietername",
+   "url": "https://unitplus.eu/altersvorsorgedepot"
   },
   {
    "angebot": "Sunrise – Altersvorsorgedepot",
