@@ -29,7 +29,7 @@ def main():
         "datum_ezb": datum,
         "quelle": "EZB Referenzkurse (taeglich, ca. 16 Uhr CET)",
         "je_eur": {"USD": kurse["USD"], "JPY": kurse["JPY"], "KRW": kurse["KRW"],
-                   **{w: kurse[w] for w in ("HKD", "SGD", "CNY", "GBP", "CHF", "IDR") if w in kurse}},
+                   **{w: kurse[w] for w in ("HKD", "SGD", "CNY", "GBP", "CHF", "IDR", "SEK", "DKK", "NOK") if w in kurse}},
         "abgeleitet": {"JPY_je_USD": round(usd_jpy, 4), "USD_je_KRW": round(krw_usd, 8)},
     }
     os.makedirs("data", exist_ok=True)

@@ -270,8 +270,9 @@ def dividende_fuer(f):
     global _DIV
     if _DIV is None:
         _DIV = (B.lade("data/kurse/xetra-letzter.json"), B.lade("data/kurse/isin-zuordnung.json"),
-                B.lade("data/wechselkurse-ezb.json")["je_eur"]["USD"], B.lade("data/dividenden-termine.json").get("firmen", {}))
-    (kurse, iz, usd, termine) = _DIV
+                B.lade("data/wechselkurse-ezb.json")["je_eur"]["USD"], B.lade("data/dividenden-termine.json").get("firmen", {}),
+                B.lade("data/wechselkurse-ezb.json")["je_eur"])
+    (kurse, iz, usd, termine, je_eur) = _DIV
     sym = f["sym"]
     for quelle in datenquellen():
         eintrag = quelle.get(sym)
@@ -281,8 +282,8 @@ def dividende_fuer(f):
         if "dividende_je_aktie" not in k_e and "dividende_je_aktie_ber" not in k_e:
             continue
         wae = eintrag.get("w") or "USD"
-        if wae not in ("USD", "EUR"):
-            return ""
+        if wae == "IDR" or (wae not in ("USD", "EUR") and wae not in je_eur):
+            return ""   # IDX: Dividende nur geschätzt, kein Profil; ohne EZB-Kurs keine Umrechnung
         kopie = dict(eintrag)
         kopie["k"] = dict(k_e)
         if "dividende_je_aktie" not in k_e:
@@ -292,8 +293,9 @@ def dividende_fuer(f):
         rhythmus = 12 if n >= 10 else 4 if n >= 3 else 2 if n == 2 else 1 if n == 1 else 4
         cfg = {"sym": sym, "name": f["name"], "slug": f["slug"], "typ": "normal", "rhythmus": rhythmus,
                "satz": "", "alt": [], "serie": {}, "weglassen": [], "isin": eintrag.get("isin")}
-        r = B.kennzahlen(cfg, {sym: kopie}, kurse, iz, usd, termine, wae=wae)
-        if not r or not r.get("dps"):
+        fx_w = 1.0 if wae == "EUR" else je_eur.get(wae, 1.0)
+        r = B.kennzahlen(cfg, {sym: kopie}, kurse, iz, usd, termine, wae=wae, fx_wae=fx_w)
+        if not r or not r.get("dps") or not r.get("kurs_eur"):
             return ""
         return B.dividende_teile(r, f["name"], usd)
     return ""
