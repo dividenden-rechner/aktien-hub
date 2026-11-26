@@ -130,11 +130,11 @@ def ansicht_html(sym, stand, tiefe=2):
     """Der Block mit Steckbrief, Bewertung, Diagrammen und Meldungen (gleich wie im Aktien-Hub). Wird auf jeder Firmenseite eingebaut."""
     wurzel = "../" * tiefe
     cache = re.sub(r"\D", "", str(stand)) or "1"
-    return ('<link rel="stylesheet" href="' + wurzel + 'assets/firma-ansicht.css">'
+    return ('<link rel="stylesheet" href="' + wurzel + 'assets/firma-ansicht.css?v=20261126b">'
             '<section id="hub" class="fa-view" aria-label="Aktienansicht"></section><p id="msg" role="status"></p>'
             '<script>window.FA_ROOT="' + wurzel + '";</script>'
             '<script src="' + wurzel + 'assets/logos.js"></script>'
-            '<script src="' + wurzel + 'assets/firma-ansicht.js"></script>'
+            '<script src="' + wurzel + 'assets/firma-ansicht.js?v=20261126b"></script>'
             '<script>fetch("' + wurzel + 'data/firma-ansicht/' + schluessel(sym) + '.json?v=' + cache + '")'
             '.then(r=>r.ok?r.json():{}).catch(()=>({})).then(d=>faStart(' + json.dumps(sym.upper()) + ',d))'
             '.catch(e=>{console.error(e);document.getElementById("msg").textContent="Die Daten konnten gerade nicht geladen werden."});</script>')
