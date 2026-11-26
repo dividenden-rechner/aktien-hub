@@ -150,7 +150,10 @@ def datenquellen():
         _QUELLEN = []
         for pfad in ["sec/fundamentals.json", "esef/fundamentals.json", "boerse-de/fundamentals.json", "asien/fundamentals.json", "idx/fundamentals.json"]:
             try:
-                _QUELLEN.append(json.load(open(os.path.join(B.ROOT, "data", pfad), encoding="utf-8")).get("firmen", {}))
+                fir = json.load(open(os.path.join(B.ROOT, "data", pfad), encoding="utf-8")).get("firmen", {})
+                if pfad.startswith("idx/"):   # IDX-Kürzel wie in kennzahlen.json (Kürzel.JK)
+                    fir = {f"{k}.JK": v for k, v in fir.items()}
+                _QUELLEN.append(fir)
             except Exception:
                 _QUELLEN.append({})
     return _QUELLEN
@@ -374,7 +377,8 @@ def firmenseite(f, peers, art, news, kl, k, fu, stand):
     z("Kurs", f"{B.de(v['kurs_eur'])} €", f"{esc(v.get('boerse') or '')}, {B.datum(v['datum'])}")
     z("Börsenwert", (mrd(bw(v)) + " €") if bw(v) else None)
     z("Dividendenrendite", p(rend, 2))
-    z("Dividende je Aktie", (B.betrag(v["dividende"]) + " " + wae) if v.get("dividende") else None, (f"Geschäftsjahr {esc(v['gj'])}" if v.get("gj") else ""))
+    z("Dividende je Aktie", (B.betrag(v["dividende"]) + " " + wae) if v.get("dividende") else None,
+      ((f"Geschäftsjahr {esc(v['gj'])}" if v.get("gj") else "") + (" · geschätzt aus gezahlten Dividenden" if v.get("dividende_berechnet") and f["sym"].endswith(".JK") else "")).lstrip(" ·"))
     z("Ausschüttungsquote (Gewinn)", p(v.get("ausschuettung"), 0))
     z("Dividendenwachstum 5 Jahre p. a.", p(v.get("div_wachstum_5j")))
     z("Dividendenwachstum 10 Jahre p. a.", p(v.get("div_wachstum_10j")))
@@ -435,7 +439,7 @@ def firmenseite(f, peers, art, news, kl, k, fu, stand):
                 '<script src="../../assets/firma-fmp.js" defer></script>')
     body = (f'<p class="meta">Stand: {B.datum(stand)} · Kürzel {esc(sym)}{(" · " + esc(kennung)) if kennung else ""}</p><p class="lead">{lead}</p>{tab}'
             f'{fin_html}{div_html}{nur_test}{peer_html}{news_html}<h2>Häufige Fragen</h2>{faq_html}{teil_html}{weiter}'
-            f'<p class="meta">Quellen: Börsenkurse deutscher Handelsplätze, Geschäftsberichte der Unternehmen und Behörden (SEC, ESEF, Börsenaufsichten), Wechselkurse der EZB. Alle Werte stehen so in den Daten; fehlende Werte sind weggelassen.</p>')
+            f'<p class="meta">Quellen: ' + ("Tagesübersicht der Börse Indonesien (IDX), Prüfberichte der Unternehmen (IDX-XBRL), Wechselkurse der EZB. Die Dividende je Aktie ist aus den gezahlten Dividenden und der Aktienzahl geschätzt." if f["sym"].endswith(".JK") else "Börsenkurse deutscher Handelsplätze, Geschäftsberichte der Unternehmen und Behörden (SEC, ESEF, Börsenaufsichten), Wechselkurse der EZB.") + " Alle Werte stehen so in den Daten; fehlende Werte sind weggelassen.</p>")
     h1 = f'<div class="titlerow" style="gap:12px">{B.logo_span(sym, name, "../../")}<h1>{esc(name)} Aktie</h1></div>'
     crumbs = f'<a href="../../">Start</a> › <a href="/dividende/">Dividenden</a> › <span aria-current="page">{esc(name)}</span>'
     return seitenrahmen(title, desc, url, h1, crumbs, body, kl, k, fu, 2, ld_html), title, desc, url
