@@ -29,10 +29,12 @@ Datei anklicken, dann Stift-Symbol: Zeile `draft: true` löschen und speichern, 
 | 29.10.2026 22:42 | Amazon steigert Umsatz im dritten Quartal auf 201,9 Milliarden Dollar | [79738970_2026-10-29/7757_2242-amazon-q3-2026-zahlen.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/79738970_2026-10-29/7757_2242-amazon-q3-2026-zahlen.md) |
 | 29.10.2026 10:12 | Shell erzielt im dritten Quartal 10,8 Milliarden Dollar Gewinn | [79738970_2026-10-29/8987_1012-shell-q3-2026-ergebnisse.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/79738970_2026-10-29/8987_1012-shell-q3-2026-ergebnisse.md) |
 
-### Online (485)
+### Online (487)
 
 | Datum | Titel | Datei |
 |---|---|---|
+| 26.11.2026 15:33 | GSK erhält wichtige Medikamentenzulassung in China für Hepatitis-B-Therapie | [79738873_2026-11-26/8466_1533-gsk-zulassung-hibsago-china-hepatitis-b.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/79738873_2026-11-26/8466_1533-gsk-zulassung-hibsago-china-hepatitis-b.md) |
+| 26.11.2026 15:32 | National Grid nennt Referenzpreis von 1.235,80 Pence für Aktiendividende | [79738873_2026-11-26/8467_1532-national-grid-referenzpreis-aktiendividende-2026-27.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/79738873_2026-11-26/8467_1532-national-grid-referenzpreis-aktiendividende-2026-27.md) |
 | 26.11.2026 15:10 | Hernández de Cos wird neuer EZB-Chef, Deutschland stellt den Chefvolkswirt | [79738873_2026-11-26/9075_1510-hernandez-de-cos-neuer-ezb-praesident.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/79738873_2026-11-26/9075_1510-hernandez-de-cos-neuer-ezb-praesident.md) |
 | 26.11.2026 14:30 | Altria prüft Barangebot für Imperial Brands, die Aktie springt in London um 15 % | [79738873_2026-11-26/9072_1430-altria-prueft-uebernahme-imperial-brands.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/79738873_2026-11-26/9072_1430-altria-prueft-uebernahme-imperial-brands.md) |
 | 26.11.2026 09:30 | Orcel will Aufsichtsratschef der Commerzbank werden: UniCredit hat alle Genehmigungen | [79738873_2026-11-26/9069_0930-unicredit-commerzbank-hauptversammlung-orcel-aufsichtsrat.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/79738873_2026-11-26/9069_0930-unicredit-commerzbank-hauptversammlung-orcel-aufsichtsrat.md) |

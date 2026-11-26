@@ -1,33 +1,6 @@
 {
  "termine": [
   {
-   "sym": "HSBC",
-   "name": "Hsbc Holdings Plc",
-   "art": "ergebnis",
-   "datum": "2026-11-11",
-   "betrag": "",
-   "waehrung": "",
-   "quelle": "https://www.sec.gov/Archives/edgar/data/1089113/000165495426009684/a8038c.htm"
-  },
-  {
-   "sym": "LYG",
-   "name": "Lloyds Banking Group plc",
-   "art": "ergebnis",
-   "datum": "2026-11-11",
-   "betrag": "",
-   "waehrung": "",
-   "quelle": "https://www.sec.gov/Archives/edgar/data/1160106/000165495426009682/a7882c.htm"
-  },
-  {
-   "sym": "RMD",
-   "name": "ResMed",
-   "art": "dividende_exdatum",
-   "datum": "2026-11-11",
-   "betrag": "0.66",
-   "waehrung": "USD",
-   "quelle": "https://www.sec.gov/Archives/edgar/data/943819/000119312526437783/d170451dex991.htm"
-  },
-  {
    "sym": "AKAM",
    "name": "Akamai Technologies",
    "art": "ergebnis",
@@ -307,6 +280,15 @@
    "quelle": "https://www.sec.gov/Archives/edgar/data/1601046/000160104626000038/exhibit991keystransitionpr.htm"
   },
   {
+   "sym": "NG.L",
+   "name": "National Grid",
+   "art": "dividende_exdatum",
+   "datum": "2026-11-19",
+   "betrag": "16.97",
+   "waehrung": "GBp",
+   "quelle": "https://data.fca.org.uk/artefacts/NSM/RNS/e60ad6e7-d845-493e-a636-2216ec855801.html"
+  },
+  {
    "sym": "SNDK",
    "name": "Sandisk",
    "art": "dividende_zahltag",
@@ -476,6 +458,15 @@
    "betrag": "",
    "waehrung": "",
    "quelle": "https://data.fca.org.uk/artefacts/NSM/RNS/c28698bc-4934-4ee8-a96c-4e593ecbe1fc.html"
+  },
+  {
+   "sym": "LSEG.L",
+   "name": "London Stock Exchange Group",
+   "art": "ergebnis",
+   "datum": "2026-11-26",
+   "betrag": "",
+   "waehrung": "",
+   "quelle": "https://data.fca.org.uk/artefacts/NSM/RNS/8ac153cc-7401-4d44-94b9-60c1171e3ba6.html"
   },
   {
    "sym": "APO",
@@ -1097,6 +1088,15 @@
    "betrag": "1.09",
    "waehrung": "USD",
    "quelle": "https://www.sec.gov/Archives/edgar/data/1383312/000138331226000035/ex991prredividend11-2026.htm"
+  },
+  {
+   "sym": "NG.L",
+   "name": "National Grid",
+   "art": "dividende_zahltag",
+   "datum": "2027-01-12",
+   "betrag": "",
+   "waehrung": "",
+   "quelle": "https://data.fca.org.uk/artefacts/NSM/RNS/e60ad6e7-d845-493e-a636-2216ec855801.html"
   },
   {
    "sym": "MU",
