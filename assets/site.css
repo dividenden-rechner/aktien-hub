@@ -183,3 +183,5 @@ article p,article li,article td{overflow-wrap:anywhere}
 .nl-box .hp{position:absolute;left:-9999px;width:1px;height:1px;opacity:0}
 #hub-global-header .hub-links a.hub-nl{background:var(--acc,#2f9e5b);color:#fff;font-weight:600}
 #hub-global-header .hub-links a.hub-nl:hover{background:var(--accd,#1a7a45);color:#fff}
+.post .google-quelle{margin:6px 0 18px;font-size:13px}.post .google-quelle a{color:var(--accd);font-weight:600}
+.firmtabs{display:flex;gap:22px;border-bottom:1px solid var(--line,#dfe5ea);margin:0 0 14px}.firmtabs a{padding:8px 0;font-size:15px;font-weight:600;color:#5d6b78;text-decoration:none;border-bottom:2px solid transparent;margin-bottom:-1px}.firmtabs a[aria-current=page]{color:#14202b;border-bottom-color:#2f9e5b}
