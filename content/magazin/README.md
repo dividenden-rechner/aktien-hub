@@ -29,10 +29,11 @@ Datei anklicken, dann Stift-Symbol: Zeile `draft: true` löschen und speichern, 
 | 29.10.2026 22:42 | Amazon steigert Umsatz im dritten Quartal auf 201,9 Milliarden Dollar | [79738970_2026-10-29/7757_2242-amazon-q3-2026-zahlen.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/79738970_2026-10-29/7757_2242-amazon-q3-2026-zahlen.md) |
 | 29.10.2026 10:12 | Shell erzielt im dritten Quartal 10,8 Milliarden Dollar Gewinn | [79738970_2026-10-29/8987_1012-shell-q3-2026-ergebnisse.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/79738970_2026-10-29/8987_1012-shell-q3-2026-ergebnisse.md) |
 
-### Online (483)
+### Online (484)
 
 | Datum | Titel | Datei |
 |---|---|---|
+| 26.11.2026 14:30 | Altria prüft Übernahme von Imperial Brands, die Aktie springt um 16 % | [79738873_2026-11-26/9072_1430-altria-prueft-uebernahme-imperial-brands.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/79738873_2026-11-26/9072_1430-altria-prueft-uebernahme-imperial-brands.md) |
 | 26.11.2026 09:30 | Orcel will Aufsichtsratschef der Commerzbank werden: UniCredit hat alle Genehmigungen | [79738873_2026-11-26/9069_0930-unicredit-commerzbank-hauptversammlung-orcel-aufsichtsrat.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/79738873_2026-11-26/9069_0930-unicredit-commerzbank-hauptversammlung-orcel-aufsichtsrat.md) |
 | 25.11.2026 15:15 | Neue US-Zölle: Für Europa gilt die 15-Prozent-Grenze, China zahlt 20 Prozent obendrauf | [79738874_2026-11-25/8484_1515-us-zoelle-section-301-eu-china-branchen.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/79738874_2026-11-25/8484_1515-us-zoelle-section-301-eu-china-branchen.md) |
 | 25.11.2026 13:30 | Deere: Ausschüttung gedeckt, Wachstum 2027 vor allem in den USA | [79738874_2026-11-25/8669_1330-deere-q4-2026-dividende-wachstum.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/79738874_2026-11-25/8669_1330-deere-q4-2026-dividende-wachstum.md) |
