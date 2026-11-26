@@ -1,6 +1,6 @@
 ---
-title: "Altria prüft Barangebot für Imperial Brands, auch Japan Tobacco prüft ein Gebot"
-description: "Altria bestätigt, dass der Konzern ein Barangebot für den britischen Zigarettenhersteller Imperial Brands erwägt. Auch Japan Tobacco soll ein Gebot prüfen. Frist für die Entscheidung ist der 24. Dezember."
+title: "Altria prüft Barangebot für Imperial Brands, die Aktie springt in London um 15 %"
+description: "Altria bestätigt, dass der Konzern ein Barangebot für den britischen Zigarettenhersteller Imperial Brands erwägt. Auch Japan Tobacco soll ein Gebot prüfen, die Imperial-Aktie legt in London um 15 % zu. Frist für die Entscheidung ist der 24. Dezember."
 aufmacher: ja
 date: 2026-11-26 14:30
 author: "Redaktions-Team Dividenden-Rechner.de"
@@ -24,7 +24,7 @@ image_lizenz: Pressebild
 
     **Frist:** Bis 24. Dezember, 17 Uhr Londoner Zeit, muss Altria ein festes Angebot vorlegen oder verzichten
 
-Altria Group, der Hersteller von Marlboro in den USA, prüft die Übernahme des britischen Tabakkonzerns Imperial Brands. Das hat Altria am Donnerstag in einer Pflichtmitteilung bestätigt, nachdem Presseberichte über ein mögliches Angebot aufgekommen waren. Bloomberg stuft das als eine der größten Übernahmen eines britischen Unternehmens seit zehn Jahren ein.
+Altria Group, der Hersteller von Marlboro in den USA, prüft die Übernahme des britischen Tabakkonzerns Imperial Brands. Das hat Altria am Donnerstag in einer Pflichtmitteilung bestätigt, nachdem Presseberichte über ein mögliches Angebot aufgekommen waren. Die Imperial-Aktie springt in London um 15 %. Bloomberg stuft das als eine der größten Übernahmen eines britischen Unternehmens seit zehn Jahren ein.
 
 ## Was bekannt ist
 
