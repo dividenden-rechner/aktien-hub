@@ -294,7 +294,14 @@ def dividende_fuer(f):
         cfg = {"sym": sym, "name": f["name"], "slug": f["slug"], "typ": "normal", "rhythmus": rhythmus,
                "satz": "", "alt": [], "serie": {}, "weglassen": [], "isin": eintrag.get("isin")}
         fx_w = 1.0 if wae == "EUR" else je_eur.get(wae, 1.0)
-        r = B.kennzahlen(cfg, {sym: kopie}, kurse, iz, usd, termine, wae=wae, fx_wae=fx_w)
+        # Kurs: Xetra-Kurs über die ISIN; ohne Xetra-Kurs (z. B. London) der Kurs der Kennzahlen-Seite
+        kurse_u = kurse
+        isin_u = eintrag.get("isin") or (f.get("v") or {}).get("isin")
+        cfg["isin"] = isin_u
+        if isin_u and isin_u not in kurse["k"] and (f.get("v") or {}).get("kurs_eur"):
+            kurse_u = {"k": dict(kurse["k"])}
+            kurse_u["k"][isin_u] = [f["v"]["kurs_eur"], None, "EUR"]
+        r = B.kennzahlen(cfg, {sym: kopie}, kurse_u, iz, usd, termine, wae=wae, fx_wae=fx_w)
         if not r or not r.get("dps") or not r.get("kurs_eur"):
             return ""
         return B.dividende_teile(r, f["name"], usd)
