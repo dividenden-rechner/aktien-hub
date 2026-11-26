@@ -1,0 +1,6030 @@
+{
+ "BBCA 2025": {
+  "Cash": {
+   "anzahl": 2,
+   "beispiel": "25305031000000",
+   "stichtag": "2025-12-31"
+  },
+  "RestrictedFunds": {
+   "anzahl": 2,
+   "beispiel": "0",
+   "stichtag": "2025-12-31"
+  },
+  "CurrentAccountsWithBankIndonesia": {
+   "anzahl": 2,
+   "beispiel": "47768278000000",
+   "stichtag": "2025-12-31"
+  },
+  "CurrentAccountsWithOtherBanksThirdParties": {
+   "anzahl": 2,
+   "beispiel": "5332406000000",
+   "stichtag": "2025-12-31"
+  },
+  "CurrentAccountsWithOtherBanksRelatedParties": {
+   "anzahl": 2,
+   "beispiel": "0",
+   "stichtag": "2025-12-31"
+  },
+  "AllowanceForImpairmentLossesForCurrentAccountsWithOtherBanks": {
+   "anzahl": 2,
+   "beispiel": "768000000",
+   "stichtag": "2025-12-31"
+  },
+  "PlacementsWithBankIndonesiaAndOtherBanksThirdParties": {
+   "anzahl": 2,
+   "beispiel": "9816051000000",
+   "stichtag": "2025-12-31"
+  },
+  "PlacementsWithBankIndonesiaAndOtherBanksRelatedParties": {
+   "anzahl": 2,
+   "beispiel": "0",
+   "stichtag": "2025-12-31"
+  },
+  "AllowanceForImpairmentLossesForPlacementsWithOtherBanks": {
+   "anzahl": 2,
+   "beispiel": "2510000000",
+   "stichtag": "2025-12-31"
+  },
+  "MarketableSecuritiesThirdParties": {
+   "anzahl": 2,
+   "beispiel": "35202891000000",
+   "stichtag": "2025-12-31"
+  },
+  "MarketableSecuritiesRelatedParties": {
+   "anzahl": 2,
+   "beispiel": "0",
+   "stichtag": "2025-12-31"
+  },
+  "AllowanceForImpairmentLossesForMarketableSecurities": {
+   "anzahl": 2,
+   "beispiel": "0",
+   "stichtag": "2025-12-31"
+  },
+  "InvestmentsOfPolicyholderInUnitLinkedContracts": {
+   "anzahl": 2,
+   "beispiel": "0",
+   "stichtag": "2025-12-31"
+  },
+  "SecuritiesPurchasedUnderAgreementToResale": {
+   "anzahl": 2,
+   "beispiel": "5285513000000",
+   "stichtag": "2025-12-31"
+  },
+  "BillsAndOtherReceivablesThirdParties": {
+   "anzahl": 2,
+   "beispiel": "11830476000000",
+   "stichtag": "2025-12-31"
+  },
+  "BillsAndOtherReceivablesRelatedParties": {
+   "anzahl": 2,
+   "beispiel": "0",
+   "stichtag": "2025-12-31"
+  },
+  "AllowanceForImpairmentLossesForBillsAndOtherReceivables": {
+   "anzahl": 2,
+   "beispiel": "5381000000",
+   "stichtag": "2025-12-31"
+  },
+  "AcceptanceReceivablesThirdParties": {
+   "anzahl": 2,
+   "beispiel": "9694943000000",
+   "stichtag": "2025-12-31"
+  },
+  "AcceptanceReceivablesRelatedParties": {
+   "anzahl": 2,
+   "beispiel": "0",
+   "stichtag": "2025-12-31"
+  },
+  "AllowanceForImpairmentLossesForAcceptanceReceivables": {
+   "anzahl": 2,
+   "beispiel": "200313000000",
+   "stichtag": "2025-12-31"
+  },
+  "DerivativeReceivablesThirdParties": {
+   "anzahl": 2,
+   "beispiel": "118068000000",
+   "stichtag": "2025-12-31"
+  },
+  "DerivativeReceivablesRelatedParties": {
+   "anzahl": 1,
+   "beispiel": "0",
+   "stichtag": "2024-12-31"
+  },
+  "LoansThirdParties": {
+   "anzahl": 2,
+   "beispiel": "970233234000000",
+   "stichtag": "2025-12-31"
+  },
+  "LoansRelatedParties": {
+   "anzahl": 2,
+   "beispiel": "0",
+   "stichtag": "2025-12-31"
+  },
+  "AllowanceForImpairmentLossesForLoans": {
+   "anzahl": 3,
+   "beispiel": "29752034000000",
+   "stichtag": "2025-12-31"
+  },
+  "ReceivablesFromClearingAndSettlementGuaranteeInstitution": {
+   "anzahl": 2,
+   "beispiel": "0",
+   "stichtag": "2025-12-31"
+  },
+  "ReceivablesFromCustomersThirdParties": {
+   "anzahl": 2,
+   "beispiel": "13190859000000",
+   "stichtag": "2025-12-31"
+  },
+  "ReceivablesFromCustomersRelatedParties": {
+   "anzahl": 2,
+   "beispiel": "0",
+   "stichtag": "2025-12-31"
+  },
+  "AllowanceForImpairmentLossesForReceivablesFromCustomers": {
+   "anzahl": 2,
+   "beispiel": "492699000000",
+   "stichtag": "2025-12-31"
+  },
+  "ConsumerFinancingReceivablesThirdParties": {
+   "anzahl": 2,
+   "beispiel": "9466498000000",
+   "stichtag": "2025-12-31"
+  },
+  "ConsumerFinancingReceivablesRelatedParties": {
+   "anzahl": 2,
+   "beispiel": "0",
+   "stichtag": "2025-12-31"
+  },
+  "AllowanceForImpairmentLossesForConsumerFinancingReceivables": {
+   "anzahl": 2,
+   "beispiel": "512511000000",
+   "stichtag": "2025-12-31"
+  },
+  "LeaseInvestmentsThirdParties": {
+   "anzahl": 2,
+   "beispiel": "10332000000",
+   "stichtag": "2025-12-31"
+  },
+  "LeaseInvestmentsRelatedParties": {
+   "anzahl": 2,
+   "beispiel": "0",
+   "stichtag": "2025-12-31"
+  },
+  "LeaseInvestmentsGuaranteedResidualValue": {
+   "anzahl": 2,
+   "beispiel": "0",
+   "stichtag": "2025-12-31"
+  },
+  "LeaseInvestmentsDeferredFinancingIncome": {
+   "anzahl": 2,
+   "beispiel": "0",
+   "stichtag": "2025-12-31"
+  },
+  "LeaseInvestmentsGuaranteeDeposits": {
+   "anzahl": 2,
+   "beispiel": "0",
+   "stichtag": "2025-12-31"
+  },
+  "AllowanceForImpairmentLossesForLeaseInvestments": {
+   "anzahl": 2,
+   "beispiel": "2327000000",
+   "stichtag": "2025-12-31"
+  },
+  "OtherReceivablesThirdParties": {
+   "anzahl": 2,
+   "beispiel": "0",
+   "stichtag": "2025-12-31"
+  },
+  "OtherReceivablesRelatedParties": {
+   "anzahl": 2,
+   "beispiel": "0",
+   "stichtag": "2025-12-31"
+  },
+  "AllowanceForImpairmentLossesForOtherReceivables": {
+   "anzahl": 2,
+   "beispiel": "0",
+   "stichtag": "2025-12-31"
+  },
+  "OtherFinancialAssets": {
+   "anzahl": 2,
+   "beispiel": "207665244000000",
+   "stichtag": "2025-12-31"
+  },
+  "GovernmentBonds": {
+   "anzahl": 2,
+   "beispiel": "201755756000000",
+   "stichtag": "2025-12-31"
+  },
+  "NonCurrentAssetsOrDisposalGroupsClassifiedAsHeldForSale": {
+   "anzahl": 2,
+   "beispiel": "0",
+   "stichtag": "2025-12-31"
+  },
+  "NonCurrentAssetsOrDisposalGroupsClassifiedAsHeldForDistributionToOwners": {
+   "anzahl": 2,
+   "beispiel": "0",
+   "stichtag": "2025-12-31"
+  },
+  "Advances": {
+   "anzahl": 2,
+   "beispiel": "0",
+   "stichtag": "2025-12-31"
+  },
+  "PrepaidExpenses": {
+   "anzahl": 2,
+   "beispiel": "1713699000000",
+   "stichtag": "2025-12-31"
+  },
+  "Guarantees": {
+   "anzahl": 2,
+   "beispiel": "0",
+   "stichtag": "2025-12-31"
+  },
+  "PrepaidTaxes": {
+   "anzahl": 2,
+   "beispiel": "77001000000",
+   "stichtag": "2025-12-31"
+  },
+  "ClaimsForTaxRefund": {
+   "anzahl": 2,
+   "beispiel": "0",
+   "stichtag": "2025-12-31"
+  },
+  "DeferredTaxAssets": {
+   "anzahl": 2,
+   "beispiel": "5852206000000",
+   "stichtag": "2025-12-31"
+  },
+  "InvestmentsAccountedForUsingEquityMethod": {
+   "anzahl": 2,
+   "beispiel": "0",
+   "stichtag": "2025-12-31"
+  },
+  "InvestmentsInJointVentures": {
+   "anzahl": 2,
+   "beispiel": "0",
+   "stichtag": "2025-12-31"
+  },
+  "InvestmentsInAssociates": {
+   "anzahl": 2,
+   "beispiel": "0",
+   "stichtag": "2025-12-31"
+  },
+  "ReinsuranceAssets": {
+   "anzahl": 2,
+   "beispiel": "0",
+   "stichtag": "2025-12-31"
+  },
+  "PostEmploymentBenefitAssets": {
+   "anzahl": 2,
+   "beispiel": "0",
+   "stichtag": "2025-12-31"
+  },
+  "Goodwill": {
+   "anzahl": 2,
+   "beispiel": "1158201000000",
+   "stichtag": "2025-12-31"
+  },
+  "IntangibleAssetsOtherThanGoodwill": {
+   "anzahl": 2,
+   "beispiel": "620571000000",
+   "stichtag": "2025-12-31"
+  },
+  "InvestmentProperties": {
+   "anzahl": 2,
+   "beispiel": "0",
+   "stichtag": "2025-12-31"
+  },
+  "IjarahAssets": {
+   "anzahl": 2,
+   "beispiel": "0",
+   "stichtag": "2025-12-31"
+  },
+  "PropertyPlantAndEquipment": {
+   "anzahl": 3,
+   "beispiel": "28473684000000",
+   "stichtag": "2025-12-31"
+  },
+  "RightOfUseAssets": {
+   "anzahl": 2,
+   "beispiel": "0",
+   "stichtag": "2025-12-31"
+  },
+  "TaxAmnestyAssets": {
+   "anzahl": 2,
+   "beispiel": "0",
+   "stichtag": "2025-12-31"
+  },
+  "ForeclosedAssets": {
+   "anzahl": 2,
+   "beispiel": "0",
+   "stichtag": "2025-12-31"
+  },
+  "OtherAssets": {
+   "anzahl": 2,
+   "beispiel": "27226137000000",
+   "stichtag": "2025-12-31"
+  },
+  "Assets": {
+   "anzahl": 2,
+   "beispiel": "1586828536000000",
+   "stichtag": "2025-12-31"
+  },
+  "ObligationsDueImmediately": {
+   "anzahl": 2,
+   "beispiel": "0",
+   "stichtag": "2025-12-31"
+  },
+  "UndistributedProfitSharing": {
+   "anzahl": 2,
+   "beispiel": "0",
+   "stichtag": "2025-12-31"
+  },
+  "ShariaDeposits": {
+   "anzahl": 2,
+   "beispiel": "4727157000000",
+   "stichtag": "2025-12-31"
+  },
+  "CurrentAccountsThirdParties": {
+   "anzahl": 2,
+   "beispiel": "431010515000000",
+   "stichtag": "2025-12-31"
+  },
+  "CurrentAccountsRelatedParties": {
+   "anzahl": 2,
+   "beispiel": "0",
+   "stichtag": "2025-12-31"
+  },
+  "SavingsThirdParties": {
+   "anzahl": 2,
+   "beispiel": "608119555000000",
+   "stichtag": "2025-12-31"
+  },
+  "SavingsRelatedParties": {
+   "anzahl": 2,
+   "beispiel": "0",
+   "stichtag": "2025-12-31"
+  },
+  "TimeDepositsThirdParties": {
+   "anzahl": 2,
+   "beispiel": "194669011000000",
+   "stichtag": "2025-12-31"
+  },
+  "TimeDepositsRelatedParties": {
+   "anzahl": 2,
+   "beispiel": "0",
+   "stichtag": "2025-12-31"
+  },
+  "OtherBankdsDepositsRelatedParties": {
+   "anzahl": 2,
+   "beispiel": "0",
+   "stichtag": "2025-12-31"
+  },
+  "OtherBanksDepositsThirdParties": {
+   "anzahl": 2,
+   "beispiel": "3966077000000",
+   "stichtag": "2025-12-31"
+  },
+  "SecuritiesSoldWithRepurchaseAgreement": {
+   "anzahl": 2,
+   "beispiel": "0",
+   "stichtag": "2025-12-31"
+  },
+  "DerivativePayablesThirdParties": {
+   "anzahl": 2,
+   "beispiel": "97406000000",
+   "stichtag": "2025-12-31"
+  },
+  "DerivativePayablesRelatedParties": {
+   "anzahl": 2,
+   "beispiel": "0",
+   "stichtag": "2025-12-31"
+  },
+  "InsurancePayables": {
+   "anzahl": 2,
+   "beispiel": "0",
+   "stichtag": "2025-12-31"
+  },
+  "CoinsuranceLiabilities": {
+   "anzahl": 2,
+   "beispiel": "0",
+   "stichtag": "2025-12-31"
+  },
+  "LiabilitiesToPolicyholderInUnitLinkedContracts": {
+   "anzahl": 2,
+   "beispiel": "0",
+   "stichtag": "2025-12-31"
+  },
+  "InterestPayables": {
+   "anzahl": 2,
+   "beispiel": "0",
+   "stichtag": "2025-12-31"
+  },
+  "AcceptanceLiabilitiesRelatedParties": {
+   "anzahl": 2,
+   "beispiel": "0",
+   "stichtag": "2025-12-31"
+  },
+  "AcceptanceLiabilitiesThirdParties": {
+   "anzahl": 2,
+   "beispiel": "4733862000000",
+   "stichtag": "2025-12-31"
+  },
+  "AccountsPayable": {
+   "anzahl": 2,
+   "beispiel": "0",
+   "stichtag": "2025-12-31"
+  },
+  "AdvancesAndInstallments": {
+   "anzahl": 2,
+   "beispiel": "0",
+   "stichtag": "2025-12-31"
+  },
+  "DividendsPayable": {
+   "anzahl": 2,
+   "beispiel": "0",
+   "stichtag": "2025-12-31"
+  },
+  "DealerPayables": {
+   "anzahl": 2,
+   "beispiel": "0",
+   "stichtag": "2025-12-31"
+  },
+  "BorrowingsThirdParties": {
+   "anzahl": 2,
+   "beispiel": "2047436000000",
+   "stichtag": "2025-12-31"
+  },
+  "BorrowingsRelatedParties": {
+   "anzahl": 2,
+   "beispiel": "0",
+   "stichtag": "2025-12-31"
+  },
+  "BorrowingsPayablesToClearingAndSettlementGuaranteeInstitution": {
+   "anzahl": 2,
+   "beispiel": "0",
+   "stichtag": "2025-12-31"
+  },
+  "BondsPayable": {
+   "anzahl": 2,
+   "beispiel": "0",
+   "stichtag": "2025-12-31"
+  },
+  "Sukuk": {
+   "anzahl": 2,
+   "beispiel": "0",
+   "stichtag": "2025-12-31"
+  },
+  "SubordinatedBonds": {
+   "anzahl": 2,
+   "beispiel": "0",
+   "stichtag": "2025-12-31"
+  },
+  "MediumTermNotes": {
+   "anzahl": 2,
+   "beispiel": "0",
+   "stichtag": "2025-12-31"
+  },
+  "OthersSecuritiesIssued": {
+   "anzahl": 2,
+   "beispiel": "65000000000",
+   "stichtag": "2025-12-31"
+  },
+  "InsuranceContractLiabilities": {
+   "anzahl": 2,
+   "beispiel": "0",
+   "stichtag": "2025-12-31"
+  },
+  "SecuritiesCompanyPayables": {
+   "anzahl": 2,
+   "beispiel": "0",
+   "stichtag": "2025-12-31"
+  },
+  "Provisions": {
+   "anzahl": 2,
+   "beispiel": "0",
+   "stichtag": "2025-12-31"
+  },
+  "ContractLiabilities": {
+   "anzahl": 2,
+   "beispiel": "0",
+   "stichtag": "2025-12-31"
+  },
+  "DeferredIncome": {
+   "anzahl": 2,
+   "beispiel": "0",
+   "stichtag": "2025-12-31"
+  },
+  "FinanceLeaseLiabilities": {
+   "anzahl": 2,
+   "beispiel": "0",
+   "stichtag": "2025-12-31"
+  },
+  "EstimatedLossesOnCommitmentsAndContingencies": {
+   "anzahl": 2,
+   "beispiel": "2866909000000",
+   "stichtag": "2025-12-31"
+  },
+  "AccruedExpenses": {
+   "anzahl": 2,
+   "beispiel": "0",
+   "stichtag": "2025-12-31"
+  },
+  "TaxesPayable": {
+   "anzahl": 2,
+   "beispiel": "2943190000000",
+   "stichtag": "2025-12-31"
+  },
+  "DeferredTaxLiabilities": {
+   "anzahl": 2,
+   "beispiel": "0",
+   "stichtag": "2025-12-31"
+  },
+  "TaxAmnestyLiabilities": {
+   "anzahl": 2,
+   "beispiel": "0",
+   "stichtag": "2025-12-31"
+  },
+  "OtherLiabilities": {
+   "anzahl": 2,
+   "beispiel": "29268935000000",
+   "stichtag": "2025-12-31"
+  },
+  "PostEmploymentBenefitObligations": {
+   "anzahl": 2,
+   "beispiel": "9993233000000",
+   "stichtag": "2025-12-31"
+  },
+  "SubordinatedLoansThirdParties": {
+   "anzahl": 2,
+   "beispiel": "0",
+   "stichtag": "2025-12-31"
+  },
+  "SubordinatedLoansRelatedParties": {
+   "anzahl": 2,
+   "beispiel": "0",
+   "stichtag": "2025-12-31"
+  },
+  "Liabilities": {
+   "anzahl": 2,
+   "beispiel": "1294508286000000",
+   "stichtag": "2025-12-31"
+  },
+  "MudharabahCurrentAccountThirdParties": {
+   "anzahl": 2,
+   "beispiel": "375121000000",
+   "stichtag": "2025-12-31"
+  },
+  "MudharabahSavingDepositsThirdParties": {
+   "anzahl": 2,
+   "beispiel": "1007317000000",
+   "stichtag": "2025-12-31"
+  },
+  "MudharabahSavingDepositsRelatedParties": {
+   "anzahl": 2,
+   "beispiel": "0",
+   "stichtag": "2025-12-31"
+  },
+  "MudharabahTimeDepositsThirdParties": {
+   "anzahl": 2,
+   "beispiel": "9150257000000",
+   "stichtag": "2025-12-31"
+  },
+  "MudharabahTimeDepositsRelatedParties": {
+   "anzahl": 2,
+   "beispiel": "0",
+   "stichtag": "2025-12-31"
+  },
+  "InterbankMudharabahInvestments": {
+   "anzahl": 2,
+   "beispiel": "100000000000",
+   "stichtag": "2025-12-31"
+  },
+  "MudharabahSukuk": {
+   "anzahl": 2,
+   "beispiel": "0",
+   "stichtag": "2025-12-31"
+  },
+  "SubordinatedMudharabahSukuk": {
+   "anzahl": 2,
+   "beispiel": "0",
+   "stichtag": "2025-12-31"
+  },
+  "TemporarySyirkahFunds": {
+   "anzahl": 2,
+   "beispiel": "10632695000000",
+   "stichtag": "2025-12-31"
+  },
+  "AccumulatedTabarrusFunds": {
+   "anzahl": 2,
+   "beispiel": "0",
+   "stichtag": "2025-12-31"
+  },
+  "CommonStocks": {
+   "anzahl": 2,
+   "beispiel": "1540938000000",
+   "stichtag": "2025-12-31"
+  },
+  "PreferredStocks": {
+   "anzahl": 2,
+   "beispiel": "0",
+   "stichtag": "2025-12-31"
+  },
+  "AdditionalPaidInCapital": {
+   "anzahl": 2,
+   "beispiel": "5492318000000",
+   "stichtag": "2025-12-31"
+  },
+  "TreasuryStocks": {
+   "anzahl": 2,
+   "beispiel": "2152514000000",
+   "stichtag": "2025-12-31"
+  },
+  "AdvancesInCapitalStock": {
+   "anzahl": 2,
+   "beispiel": "0",
+   "stichtag": "2025-12-31"
+  },
+  "StockOptions": {
+   "anzahl": 2,
+   "beispiel": "0",
+   "stichtag": "2025-12-31"
+  },
+  "TranslationAdjustment": {
+   "anzahl": 3,
+   "beispiel": "0",
+   "stichtag": "2025-12-31"
+  },
+  "RevaluationReserves": {
+   "anzahl": 2,
+   "beispiel": "11378973000000",
+   "stichtag": "2025-12-31"
+  },
+  "ReserveOfExchangeDifferencesOnTranslation": {
+   "anzahl": 2,
+   "beispiel": "0",
+   "stichtag": "2025-12-31"
+  },
+  "ReserveForChangesInFairValueOfFairValueThroughOtherComprehensiveIncomeFinancialAssets": {
+   "anzahl": 2,
+   "beispiel": "2108873000000",
+   "stichtag": "2025-12-31"
+  },
+  "ReserveOfGainsLossesFromInvestmentsInEquityInstruments": {
+   "anzahl": 2,
+   "beispiel": "0",
+   "stichtag": "2025-12-31"
+  },
+  "ReserveOfShareBasedPayments": {
+   "anzahl": 2,
+   "beispiel": "0",
+   "stichtag": "2025-12-31"
+  },
+  "ReserveOfCashFlowHedges": {
+   "anzahl": 2,
+   "beispiel": "0",
+   "stichtag": "2025-12-31"
+  },
+  "ReserveOfRemeasurementsOfDefinedBenefitPlans": {
+   "anzahl": 2,
+   "beispiel": "0",
+   "stichtag": "2025-12-31"
+  },
+  "OtherReserves": {
+   "anzahl": 2,
+   "beispiel": "0",
+   "stichtag": "2025-12-31"
+  },
+  "DifferenceDueToChangesOfEquityInSubsidiaryAssociates": {
+   "anzahl": 2,
+   "beispiel": "0",
+   "stichtag": "2025-12-31"
+  },
+  "OtherComponentsOfEquity": {
+   "anzahl": 2,
+   "beispiel": "-91070000000",
+   "stichtag": "2025-12-31"
+  },
+  "GeneralAndLegalReserves": {
+   "anzahl": 2,
+   "beispiel": "4268903000000",
+   "stichtag": "2025-12-31"
+  },
+  "SpecificReserves": {
+   "anzahl": 2,
+   "beispiel": "0",
+   "stichtag": "2025-12-31"
+  },
+  "UnappropriatedRetainedEarnings": {
+   "anzahl": 2,
+   "beispiel": "258920057000000",
+   "stichtag": "2025-12-31"
+  },
+  "EquityAttributableToEquityOwnersOfParentEntity": {
+   "anzahl": 2,
+   "beispiel": "281466478000000",
+   "stichtag": "2025-12-31"
+  },
+  "ProformaEquity": {
+   "anzahl": 2,
+   "beispiel": "0",
+   "stichtag": "2025-12-31"
+  },
+  "NonControllingInterests": {
+   "anzahl": 2,
+   "beispiel": "221077000000",
+   "stichtag": "2025-12-31"
+  },
+  "Equity": {
+   "anzahl": 2,
+   "beispiel": "281687555000000",
+   "stichtag": "2025-12-31"
+  },
+  "LiabilitiesTemporarySyirkahFundsAndEquity": {
+   "anzahl": 2,
+   "beispiel": "1586828536000000",
+   "stichtag": "2025-12-31"
+  },
+  "InterestIncome": {
+   "anzahl": 2,
+   "beispiel": "98912652000000",
+   "stichtag": "2025-12-31"
+  },
+  "InterestExpenses": {
+   "anzahl": 2,
+   "beispiel": "13364495000000",
+   "stichtag": "2025-12-31"
+  },
+  "RevenueFromFundManagementAsMudharib": {
+   "anzahl": 2,
+   "beispiel": "0",
+   "stichtag": "2025-12-31"
+  },
+  "ThirdPartiesShareOnReturnOfTemporarySyirkahFunds": {
+   "anzahl": 2,
+   "beispiel": "0",
+   "stichtag": "2025-12-31"
+  },
+  "RevenueFromInsurancePremiums": {
+   "anzahl": 2,
+   "beispiel": "2003240000000",
+   "stichtag": "2025-12-31"
+  },
+  "ReinsurancePremiums": {
+   "anzahl": 2,
+   "beispiel": "0",
+   "stichtag": "2025-12-31"
+  },
+  "RetrocessionPremiums": {
+   "anzahl": 2,
+   "beispiel": "0",
+   "stichtag": "2025-12-31"
+  },
+  "DecreaseIncreaseInUnearnedPremiums": {
+   "anzahl": 2,
+   "beispiel": "0",
+   "stichtag": "2025-12-31"
+  },
+  "DecreaseIncreaseInPremiumIncomeCededToReinsurancer": {
+   "anzahl": 2,
+   "beispiel": "0",
+   "stichtag": "2025-12-31"
+  },
+  "InsuranceCommissionIncome": {
+   "anzahl": 2,
+   "beispiel": "0",
+   "stichtag": "2025-12-31"
+  },
+  "NetInvestmentIncome": {
+   "anzahl": 2,
+   "beispiel": "0",
+   "stichtag": "2025-12-31"
+  },
+  "UjrahReceived": {
+   "anzahl": 2,
+   "beispiel": "0",
+   "stichtag": "2025-12-31"
+  },
+  "OtherInsuranceIncome": {
+   "anzahl": 2,
+   "beispiel": "0",
+   "stichtag": "2025-12-31"
+  },
+  "ClaimExpenses": {
+   "anzahl": 2,
+   "beispiel": "0",
+   "stichtag": "2025-12-31"
+  },
+  "ReinsuranceClaims": {
+   "anzahl": 2,
+   "beispiel": "0",
+   "stichtag": "2025-12-31"
+  },
+  "RetrocessionClaims": {
+   "anzahl": 2,
+   "beispiel": "0",
+   "stichtag": "2025-12-31"
+  },
+  "IncreaseDecreaseInEstimatedClaimsLiability": {
+   "anzahl": 2,
+   "beispiel": "0",
+   "stichtag": "2025-12-31"
+  },
+  "IncreaseDecreaseInLiabilityForFuturePolicyBenefit": {
+   "anzahl": 2,
+   "beispiel": "0",
+   "stichtag": "2025-12-31"
+  },
+  "IncreaseDecreaseInProvisionForLossesArisingFromLiabilityAdequacyTest": {
+   "anzahl": 2,
+   "beispiel": "0",
+   "stichtag": "2025-12-31"
+  },
+  "IncreaseDecreaseInInsuranceLiabilitiesCededToReinsurers": {
+   "anzahl": 2,
+   "beispiel": "0",
+   "stichtag": "2025-12-31"
+  },
+  "IncreaseDecreaseInLiabilitiesToPolicyholderInUnitLinkedContracts": {
+   "anzahl": 2,
+   "beispiel": "0",
+   "stichtag": "2025-12-31"
+  },
+  "InsuranceCommissionExpenses": {
+   "anzahl": 2,
+   "beispiel": "0",
+   "stichtag": "2025-12-31"
+  },
+  "UjrahPaid": {
+   "anzahl": 2,
+   "beispiel": "0",
+   "stichtag": "2025-12-31"
+  },
+  "AcquisitionCostsOfInsuranceContracts": {
+   "anzahl": 2,
+   "beispiel": "0",
+   "stichtag": "2025-12-31"
+  },
+  "OtherInsuranceExpenses": {
+   "anzahl": 2,
+   "beispiel": "1858302000000",
+   "stichtag": "2025-12-31"
+  },
+  "InvestmentsIncome": {
+   "anzahl": 2,
+   "beispiel": "0",
+   "stichtag": "2025-12-31"
+  },
+  "ProvisionsAndCommissionsIncomeFromTransactionsOtherThanLoan": {
+   "anzahl": 2,
+   "beispiel": "0",
+   "stichtag": "2025-12-31"
+  },
+  "RevenueFromTradingTransactions": {
+   "anzahl": 2,
+   "beispiel": "2769433000000",
+   "stichtag": "2025-12-31"
+  },
+  "DividendsIncome": {
+   "anzahl": 2,
+   "beispiel": "107764000000",
+   "stichtag": "2025-12-31"
+  },
+  "RealisedGainsLossesFromDerivativeInstruments": {
+   "anzahl": 2,
+   "beispiel": "1237711000000",
+   "stichtag": "2025-12-31"
+  },
+  "RevenueFromRecoveryOfWrittenOffAssets": {
+   "anzahl": 2,
+   "beispiel": "0",
+   "stichtag": "2025-12-31"
+  },
+  "GainsLossesOnChangesInForeignExchangeRates": {
+   "anzahl": 2,
+   "beispiel": "0",
+   "stichtag": "2025-12-31"
+  },
+  "GainsLossesOnDisposalOfPropertyAndEquipment": {
+   "anzahl": 2,
+   "beispiel": "0",
+   "stichtag": "2025-12-31"
+  },
+  "GainsLossesOnDisposalOfForeclosedAssets": {
+   "anzahl": 2,
+   "beispiel": "0",
+   "stichtag": "2025-12-31"
+  },
+  "OtherOperatingIncome": {
+   "anzahl": 2,
+   "beispiel": "22198323000000",
+   "stichtag": "2025-12-31"
+  },
+  "RecoveryOfImpairmentLossesOfFinancialAssets": {
+   "anzahl": 2,
+   "beispiel": "-4011047000000",
+   "stichtag": "2025-12-31"
+  },
+  "RecoveryOfImpairmentLossesOfFinancialAssetsFinanceLease": {
+   "anzahl": 2,
+   "beispiel": "0",
+   "stichtag": "2025-12-31"
+  },
+  "RecoveryOfImpairmentLossesOfFinancialAssetsConsumerFinancingReceivables": {
+   "anzahl": 2,
+   "beispiel": "0",
+   "stichtag": "2025-12-31"
+  },
+  "RecoveryOfImpairmentLossesOfNonfinancialAssets": {
+   "anzahl": 2,
+   "beispiel": "0",
+   "stichtag": "2025-12-31"
+  },
+  "RecoveryOfImpairmentLossesOfNonfinancialAssetsRepossessedCollaterals": {
+   "anzahl": 2,
+   "beispiel": "0",
+   "stichtag": "2025-12-31"
+  },
+  "RecoveryOfEstimatedLossesOfCommitmentsAndContingency": {
+   "anzahl": 2,
+   "beispiel": "0",
+   "stichtag": "2025-12-31"
+  },
+  "AllowancesForImpairmentLossesOnEarningsAssets": {
+   "anzahl": 1,
+   "beispiel": "0",
+   "stichtag": "2024-12-31"
+  },
+  "AllowancesForImpairmentLossesOnNonEarningsAssets": {
+   "anzahl": 1,
+   "beispiel": "0",
+   "stichtag": "2024-12-31"
+  },
+  "GeneralAndAdministrativeExpenses": {
+   "anzahl": 2,
+   "beispiel": "16780115000000",
+   "stichtag": "2025-12-31"
+  },
+  "SellingExpenses": {
+   "anzahl": 2,
+   "beispiel": "0",
+   "stichtag": "2025-12-31"
+  },
+  "RentMaintenanceAndImprovementExpenses": {
+   "anzahl": 2,
+   "beispiel": "0",
+   "stichtag": "2025-12-31"
+  },
+  "OtherFeesAndCommissionsExpenses": {
+   "anzahl": 2,
+   "beispiel": "0",
+   "stichtag": "2025-12-31"
+  },
+  "OtherOperatingExpenses": {
+   "anzahl": 2,
+   "beispiel": "19954288000000",
+   "stichtag": "2025-12-31"
+  },
+  "ProfitFromOperation": {
+   "anzahl": 2,
+   "beispiel": "71260876000000",
+   "stichtag": "2025-12-31"
+  },
+  "NonOperatingIncome": {
+   "anzahl": 2,
+   "beispiel": "0",
+   "stichtag": "2025-12-31"
+  },
+  "NonOperatingExpenses": {
+   "anzahl": 2,
+   "beispiel": "0",
+   "stichtag": "2025-12-31"
+  },
+  "ShareOfProfitLossOfAssociatesAccountedForUsingEquityMethod": {
+   "anzahl": 2,
+   "beispiel": "0",
+   "stichtag": "2025-12-31"
+  },
+  "ShareOfProfitLossOfJointVenturesAccountedForUsingEquityMethod": {
+   "anzahl": 2,
+   "beispiel": "0",
+   "stichtag": "2025-12-31"
+  },
+  "ProfitLossBeforeIncomeTax": {
+   "anzahl": 2,
+   "beispiel": "71260876000000",
+   "stichtag": "2025-12-31"
+  },
+  "TaxBenefitExpenses": {
+   "anzahl": 2,
+   "beispiel": "-13697783000000",
+   "stichtag": "2025-12-31"
+  },
+  "ProfitLossFromContinuingOperations": {
+   "anzahl": 2,
+   "beispiel": "57563093000000",
+   "stichtag": "2025-12-31"
+  },
+  "ProfitLossFromDiscontinuedOperations": {
+   "anzahl": 2,
+   "beispiel": "0",
+   "stichtag": "2025-12-31"
+  },
+  "ProfitLoss": {
+   "anzahl": 2,
+   "beispiel": "57563093000000",
+   "stichtag": "2025-12-31"
+  },
+  "OtherComprehensiveIncomeForGainsLossesOnRevaluationOfPropertyAndEquipmentBeforeTax": {
+   "anzahl": 2,
+   "beispiel": "252056000000",
+   "stichtag": "2025-12-31"
+  },
+  "OtherComprehensiveIncomeForRemeasurementOfDefinedBenefitObligationBeforeTax": {
+   "anzahl": 2,
+   "beispiel": "-804399000000",
+   "stichtag": "2025-12-31"
+  },
+  "OtherAdjustmentsToOtherComprehensiveIncomeThatWillNotBeReclassifiedToProfitOrLossBeforeTax": {
+   "anzahl": 2,
+   "beispiel": "0",
+   "stichtag": "2025-12-31"
+  },
+  "OtherComprehensiveIncomeThatWillNotBeReclassifiedToProfitOrLossBeforeTax": {
+   "anzahl": 2,
+   "beispiel": "-552343000000",
+   "stichtag": "2025-12-31"
+  },
+  "GainsLossesOnExchangeDifferencesOnTranslationBeforeTax": {
+   "anzahl": 2,
+   "beispiel": "0",
+   "stichtag": "2025-12-31"
+  },
+  "ReclassificationAdjustmentsOnExchangeDifferencesOnTranslationBeforeTax": {
+   "anzahl": 2,
+   "beispiel": "0",
+   "stichtag": "2025-12-31"
+  },
+  "UnrealisedGainsLossesOnChangesInFairValueThroughOtherComprehensiveIncomeFinancialAssetsBeforeTax": {
+   "anzahl": 2,
+   "beispiel": "2273789000000",
+   "stichtag": "2025-12-31"
+  },
+  "ReclassificationAdjustmentsOnFairValueThroughOtherComprehensiveIncomeFinancialAssetsBeforeTax": {
+   "anzahl": 2,
+   "beispiel": "0",
+   "stichtag": "2025-12-31"
+  },
+  "GainsLossesOnCashFlowHedgesBeforeTax": {
+   "anzahl": 2,
+   "beispiel": "0",
+   "stichtag": "2025-12-31"
+  },
+  "ReclassificationAdjustmentsOnCashFlowHedgesBeforeTax": {
+   "anzahl": 2,
+   "beispiel": "0",
+   "stichtag": "2025-12-31"
+  },
+  "CarryingAmountOfNonFinancialAssetLiabilityWhoseAcquisitionOrIncurrenceWasHedgedOnHighlyProbableForecastTransactionAdjustedFromEquityBeforeTax": {
+   "anzahl": 2,
+   "beispiel": "0",
+   "stichtag": "2025-12-31"
+  },
+  "GainsLossesOnHedgesOfNetInvestmentsInForeignOperationsBeforeTax": {
+   "anzahl": 2,
+   "beispiel": "0",
+   "stichtag": "2025-12-31"
+  },
+  "ReclassificationAdjustmentsOnHedgesOfNetInvestmentsInForeignOperationsBeforeTax": {
+   "anzahl": 2,
+   "beispiel": "0",
+   "stichtag": "2025-12-31"
+  },
+  "ShareOfOtherComprehensiveIncomeOfAssociatesAccountedForUsingEquityMethodBeforeTax": {
+   "anzahl": 2,
+   "beispiel": "0",
+   "stichtag": "2025-12-31"
+  },
+  "ShareOfOtherComprehensiveIncomeOfJointVenturesAccountedForUsingEquityMethodBeforeTax": {
+   "anzahl": 2,
+   "beispiel": "0",
+   "stichtag": "2025-12-31"
+  },
+  "OtherAdjustmentsToOtherComprehensiveIncomeThatMayBeReclassifiedToProfitOrLossBeforeTax": {
+   "anzahl": 2,
+   "beispiel": "-101189000000",
+   "stichtag": "2025-12-31"
+  },
+  "OtherComprehensiveIncomeThatMayBeReclassifiedToProfitOrLossBeforeTax": {
+   "anzahl": 2,
+   "beispiel": "2172600000000",
+   "stichtag": "2025-12-31"
+  },
+  "OtherComprehensiveIncomeBeforeTax": {
+   "anzahl": 2,
+   "beispiel": "1620257000000",
+   "stichtag": "2025-12-31"
+  },
+  "TaxOnOtherComprehensiveIncome": {
+   "anzahl": 2,
+   "beispiel": "274293000000",
+   "stichtag": "2025-12-31"
+  },
+  "OtherComprehensiveIncomeAfterTax": {
+   "anzahl": 2,
+   "beispiel": "1345964000000",
+   "stichtag": "2025-12-31"
+  },
+  "ComprehensiveIncome": {
+   "anzahl": 2,
+   "beispiel": "58909057000000",
+   "stichtag": "2025-12-31"
+  },
+  "ProfitLossAttributableToParentEntity": {
+   "anzahl": 2,
+   "beispiel": "57537287000000",
+   "stichtag": "2025-12-31"
+  },
+  "ProfitLossAttributableToNonControllingInterests": {
+   "anzahl": 2,
+   "beispiel": "25806000000",
+   "stichtag": "2025-12-31"
+  },
+  "ComprehensiveIncomeAttributableToParentEntity": {
+   "anzahl": 2,
+   "beispiel": "58882446000000",
+   "stichtag": "2025-12-31"
+  },
+  "ComprehensiveIncomeAttributableToNonControllingInterests": {
+   "anzahl": 2,
+   "beispiel": "26611000000",
+   "stichtag": "2025-12-31"
+  },
+  "BasicEarningsLossPerShareFromContinuingOperations": {
+   "anzahl": 2,
+   "beispiel": "467",
+   "stichtag": "2025-12-31"
+  },
+  "BasicEarningsLossPerShareFromDiscontinuedOperations": {
+   "anzahl": 2,
+   "beispiel": "0",
+   "stichtag": "2025-12-31"
+  },
+  "DilutedEarningsLossPerShareFromContinuingOperations": {
+   "anzahl": 2,
+   "beispiel": "467",
+   "stichtag": "2025-12-31"
+  },
+  "DilutedEarningsLossPerShareFromDiscontinuedOperations": {
+   "anzahl": 2,
+   "beispiel": "0",
+   "stichtag": "2025-12-31"
+  },
+  "BalanceBeforeRestatementAtBeginningOfPeriod": {
+   "anzahl": 2,
+   "beispiel": "262835087000000",
+   "stichtag": "2025-12-31"
+  },
+  "InitialAdoptionOfNewAndRevisedAccountingStandards": {
+   "anzahl": 2,
+   "beispiel": "0",
+   "stichtag": "2025-12-31"
+  },
+  "VoluntaryChangesInAccountingPolicies": {
+   "anzahl": 2,
+   "beispiel": "0",
+   "stichtag": "2025-12-31"
+  },
+  "CorrectionOfPriorPeriodErrors": {
+   "anzahl": 2,
+   "beispiel": "0",
+   "stichtag": "2025-12-31"
+  },
+  "OtherAdjustments": {
+   "anzahl": 2,
+   "beispiel": "0",
+   "stichtag": "2025-12-31"
+  },
+  "EquityPositionBeginningOfThePeriod": {
+   "anzahl": 2,
+   "beispiel": "262835087000000",
+   "stichtag": "2025-12-31"
+  },
+  "ProfitLossChangesInEquity": {
+   "anzahl": 2,
+   "beispiel": "57563093000000",
+   "stichtag": "2025-12-31"
+  },
+  "OtherComprehensiveIncome": {
+   "anzahl": 2,
+   "beispiel": "1345964000000",
+   "stichtag": "2025-12-31"
+  },
+  "AllocationForGeneralReserves": {
+   "anzahl": 2,
+   "beispiel": "0",
+   "stichtag": "2025-12-31"
+  },
+  "AllocationForSpecificReserves": {
+   "anzahl": 2,
+   "beispiel": "0",
+   "stichtag": "2025-12-31"
+  },
+  "DistributionsOfCashDividends": {
+   "anzahl": 2,
+   "beispiel": "37595047000000",
+   "stichtag": "2025-12-31"
+  },
+  "DistributionsOfStockDividends": {
+   "anzahl": 2,
+   "beispiel": "0",
+   "stichtag": "2025-12-31"
+  },
+  "IssuanceOfCommonStocks": {
+   "anzahl": 2,
+   "beispiel": "0",
+   "stichtag": "2025-12-31"
+  },
+  "IssuanceOfPreferredStocks": {
+   "anzahl": 2,
+   "beispiel": "0",
+   "stichtag": "2025-12-31"
+  },
+  "StockIssuanceCosts": {
+   "anzahl": 2,
+   "beispiel": "0",
+   "stichtag": "2025-12-31"
+  },
+  "IssuanceOfConvertibleInstruments": {
+   "anzahl": 2,
+   "beispiel": "0",
+   "stichtag": "2025-12-31"
+  },
+  "IncreaseDecreaseInEquityThroughTreasuryStockTransactions": {
+   "anzahl": 2,
+   "beispiel": "-2152514000000",
+   "stichtag": "2025-12-31"
+  },
+  "IncreaseDecreaseInEquityThroughShareBasedPaymentTransactions": {
+   "anzahl": 2,
+   "beispiel": "0",
+   "stichtag": "2025-12-31"
+  },
+  "ExerciseOfConvertibleInstruments": {
+   "anzahl": 2,
+   "beispiel": "0",
+   "stichtag": "2025-12-31"
+  },
+  "ExerciseOfWarrants": {
+   "anzahl": 2,
+   "beispiel": "0",
+   "stichtag": "2025-12-31"
+  },
+  "IncreaseDecreaseInEquityThroughTransactionsWithOwnersEquity": {
+   "anzahl": 2,
+   "beispiel": "0",
+   "stichtag": "2025-12-31"
+  },
+  "StockSubscriptionFromNonControllingInterests": {
+   "anzahl": 2,
+   "beispiel": "0",
+   "stichtag": "2025-12-31"
+  },
+  "ChangesInNonControllingInterestsDueToAcquisitionOfSubsidiaries": {
+   "anzahl": 2,
+   "beispiel": "0",
+   "stichtag": "2025-12-31"
+  },
+  "ChangesInNonControllingInterestsDueToEstablishmentOfSubsidiaries": {
+   "anzahl": 2,
+   "beispiel": "0",
+   "stichtag": "2025-12-31"
+  },
+  "ChangesInNonControllingInterestsDueToDisposalOfSubsidiaries": {
+   "anzahl": 2,
+   "beispiel": "0",
+   "stichtag": "2025-12-31"
+  },
+  "ChangesInNonControllingInterestsDueToDisposalOfADiscontinuedOperation": {
+   "anzahl": 2,
+   "beispiel": "0",
+   "stichtag": "2025-12-31"
+  },
+  "ChangesInNonControllingInterestsDueToPartialDisposalOfInterestsInSubsidiariesWithoutLossOfControl": {
+   "anzahl": 2,
+   "beispiel": "0",
+   "stichtag": "2025-12-31"
+  },
+  "ChangesInNonControllingInterestsDueToOtherTransactionsWithNonControllingInterests": {
+   "anzahl": 2,
+   "beispiel": "-56659000000",
+   "stichtag": "2025-12-31"
+  },
+  "EliminationOfDeficitInConnectionWithQuasiReorganisation": {
+   "anzahl": 2,
+   "beispiel": "0",
+   "stichtag": "2025-12-31"
+  },
+  "StockOptionsExercised": {
+   "anzahl": 2,
+   "beispiel": "0",
+   "stichtag": "2025-12-31"
+  },
+  "ImpactOnTaxAmnestyAssets": {
+   "anzahl": 2,
+   "beispiel": "0",
+   "stichtag": "2025-12-31"
+  },
+  "RetrospectiveAdjustmentOfPSAKImplementation": {
+   "anzahl": 2,
+   "beispiel": "0",
+   "stichtag": "2025-12-31"
+  },
+  "OtherEquityTransactions": {
+   "anzahl": 2,
+   "beispiel": "-252369000000",
+   "stichtag": "2025-12-31"
+  },
+  "EquityPositionEndOfThePeriod": {
+   "anzahl": 2,
+   "beispiel": "281687555000000",
+   "stichtag": "2025-12-31"
+  },
+  "InterestInvestmentIncomeFeesAndCommissionsReceived": {
+   "anzahl": 2,
+   "beispiel": "116653110000000",
+   "stichtag": "2025-12-31"
+  },
+  "PaymentsOfInterestAndBonusFeesAndCommissions": {
+   "anzahl": 2,
+   "beispiel": "13394155000000",
+   "stichtag": "2025-12-31"
+  },
+  "InterestFromBanksAndTimeDeposits": {
+   "anzahl": 2,
+   "beispiel": "0",
+   "stichtag": "2025-12-31"
+  },
+  "RevenueReceiptsFromFundManagementAsMudharib": {
+   "anzahl": 2,
+   "beispiel": "0",
+   "stichtag": "2025-12-31"
+  },
+  "PaymentsOfTemporarySyirkahFunds": {
+   "anzahl": 2,
+   "beispiel": "0",
+   "stichtag": "2025-12-31"
+  },
+  "ReceiptsFromInsurancePremiums": {
+   "anzahl": 2,
+   "beispiel": "0",
+   "stichtag": "2025-12-31"
+  },
+  "ReceiptsFromReinsuranceClaims": {
+   "anzahl": 2,
+   "beispiel": "0",
+   "stichtag": "2025-12-31"
+  },
+  "ReceiptsPaymentsOfCommission": {
+   "anzahl": 2,
+   "beispiel": "0",
+   "stichtag": "2025-12-31"
+  },
+  "ReceiptsFromRetrocessionClaims": {
+   "anzahl": 2,
+   "beispiel": "0",
+   "stichtag": "2025-12-31"
+  },
+  "ReceipsOfUjrah": {
+   "anzahl": 2,
+   "beispiel": "0",
+   "stichtag": "2025-12-31"
+  },
+  "ReceiptsFromPaymentsToClearingAndGuaranteeInstitution": {
+   "anzahl": 2,
+   "beispiel": "0",
+   "stichtag": "2025-12-31"
+  },
+  "ReceiptsFromPaymentsToCustomers": {
+   "anzahl": 2,
+   "beispiel": "0",
+   "stichtag": "2025-12-31"
+  },
+  "WithdrawalPlacementOfDepositsToClearingAndGuaranteeInstitution": {
+   "anzahl": 2,
+   "beispiel": "0",
+   "stichtag": "2025-12-31"
+  },
+  "IncomeFromOtherOperatingTransactions": {
+   "anzahl": 2,
+   "beispiel": "3155605000000",
+   "stichtag": "2025-12-31"
+  },
+  "RecoveriesOfWrittenOffAssets": {
+   "anzahl": 2,
+   "beispiel": "0",
+   "stichtag": "2025-12-31"
+  },
+  "PaymentsForDeferredAcquisitionCosts": {
+   "anzahl": 2,
+   "beispiel": "0",
+   "stichtag": "2025-12-31"
+  },
+  "PaymentsOfFinanceCostsAndBankAdministrationCharges": {
+   "anzahl": 2,
+   "beispiel": "0",
+   "stichtag": "2025-12-31"
+  },
+  "PaymentsForSalariesAndAllowances": {
+   "anzahl": 2,
+   "beispiel": "0",
+   "stichtag": "2025-12-31"
+  },
+  "PaymentsForCorporateIncomeTax": {
+   "anzahl": 2,
+   "beispiel": "0",
+   "stichtag": "2025-12-31"
+  },
+  "PaymentsForGeneralAndAdministrativeExpense": {
+   "anzahl": 2,
+   "beispiel": "0",
+   "stichtag": "2025-12-31"
+  },
+  "ForeignCurrencyGainsLosses": {
+   "anzahl": 2,
+   "beispiel": "0",
+   "stichtag": "2025-12-31"
+  },
+  "RefundsPaymentsOfIncomeTax": {
+   "anzahl": 2,
+   "beispiel": "-12512383000000",
+   "stichtag": "2025-12-31"
+  },
+  "PaymentsForOtherOperatingExpenses": {
+   "anzahl": 2,
+   "beispiel": "33351462000000",
+   "stichtag": "2025-12-31"
+  },
+  "ReceiptsFromNonOperatingIncome": {
+   "anzahl": 2,
+   "beispiel": "0",
+   "stichtag": "2025-12-31"
+  },
+  "RepaymentPlacementOfRefundableDeposits": {
+   "anzahl": 2,
+   "beispiel": "0",
+   "stichtag": "2025-12-31"
+  },
+  "OtherCashInflowsOutflowsFromOperatingActivities": {
+   "anzahl": 2,
+   "beispiel": "-2440106000000",
+   "stichtag": "2025-12-31"
+  },
+  "DecreaseIncreaseInPlacementsWithOtherBanksAndBankIndonesia": {
+   "anzahl": 2,
+   "beispiel": "-599435000000",
+   "stichtag": "2025-12-31"
+  },
+  "DecreaseIncreaseInMarketableSecurities": {
+   "anzahl": 2,
+   "beispiel": "-11008328000000",
+   "stichtag": "2025-12-31"
+  },
+  "DecreaseIncreaseInSecuritiesPurchasedUnderResaleAgreements": {
+   "anzahl": 2,
+   "beispiel": "-3835846000000",
+   "stichtag": "2025-12-31"
+  },
+  "DecreaseIncreaseInInvestmentOfPolicyholderInUnitLinkedContracts": {
+   "anzahl": 2,
+   "beispiel": "0",
+   "stichtag": "2025-12-31"
+  },
+  "DecreaseIncreaseInBillsAndOtherReceivables": {
+   "anzahl": 2,
+   "beispiel": "-2929891000000",
+   "stichtag": "2025-12-31"
+  },
+  "DecreaseIncreaseInAcceptanceReceivables": {
+   "anzahl": 2,
+   "beispiel": "366799000000",
+   "stichtag": "2025-12-31"
+  },
+  "DecreaseIncreaseInLoans": {
+   "anzahl": 2,
+   "beispiel": "-75158559000000",
+   "stichtag": "2025-12-31"
+  },
+  "DecreaseIncreaseInConsumerFinancingReceivables": {
+   "anzahl": 2,
+   "beispiel": "-163508000000",
+   "stichtag": "2025-12-31"
+  },
+  "DecreaseIncreaseInLeaseInvestments": {
+   "anzahl": 2,
+   "beispiel": "41223000000",
+   "stichtag": "2025-12-31"
+  },
+  "DecreaseIncreaseInFactoring": {
+   "anzahl": 2,
+   "beispiel": "0",
+   "stichtag": "2025-12-31"
+  },
+  "DecreaseIncreaseInMurabahahReceivables": {
+   "anzahl": 2,
+   "beispiel": "0",
+   "stichtag": "2025-12-31"
+  },
+  "DecreaseIncreaseInIstishnaReceivables": {
+   "anzahl": 2,
+   "beispiel": "0",
+   "stichtag": "2025-12-31"
+  },
+  "DecreaseIncreaseInIjarahReceivables": {
+   "anzahl": 2,
+   "beispiel": "0",
+   "stichtag": "2025-12-31"
+  },
+  "DecreaseIncreaseInQardhFunds": {
+   "anzahl": 2,
+   "beispiel": "0",
+   "stichtag": "2025-12-31"
+  },
+  "DecreaseIncreaseInMudharabahFinancing": {
+   "anzahl": 2,
+   "beispiel": "0",
+   "stichtag": "2025-12-31"
+  },
+  "DecreaseIncreaseInMusyarakahFinancing": {
+   "anzahl": 2,
+   "beispiel": "0",
+   "stichtag": "2025-12-31"
+  },
+  "DecreaseIncreaseInIjarahAssets": {
+   "anzahl": 2,
+   "beispiel": "0",
+   "stichtag": "2025-12-31"
+  },
+  "DecreaseIncreaseInOtherReceivables": {
+   "anzahl": 2,
+   "beispiel": "-2502671000000",
+   "stichtag": "2025-12-31"
+  },
+  "DecreaseIncreaseInForeclosedAssets": {
+   "anzahl": 2,
+   "beispiel": "0",
+   "stichtag": "2025-12-31"
+  },
+  "DecreaseIncreaseInDerivativeReceivables": {
+   "anzahl": 2,
+   "beispiel": "0",
+   "stichtag": "2025-12-31"
+  },
+  "DecreaseIncreaseInReinsuranceAssets": {
+   "anzahl": 2,
+   "beispiel": "0",
+   "stichtag": "2025-12-31"
+  },
+  "DecreaseIncreaseInOtherAssets": {
+   "anzahl": 2,
+   "beispiel": "-368424000000",
+   "stichtag": "2025-12-31"
+  },
+  "IncreaseDecreaseInObligationsDueImmediately": {
+   "anzahl": 2,
+   "beispiel": "0",
+   "stichtag": "2025-12-31"
+  },
+  "IncreaseDecreaseInCustomersCurrentAccountsAndSavings": {
+   "anzahl": 2,
+   "beispiel": "117824737000000",
+   "stichtag": "2025-12-31"
+  },
+  "IncreaseDecreaseInCustomersTimeDeposits": {
+   "anzahl": 2,
+   "beispiel": "-7414684000000",
+   "stichtag": "2025-12-31"
+  },
+  "IncreaseDecreaseInCustomersWadiahDemandDeposits": {
+   "anzahl": 2,
+   "beispiel": "0",
+   "stichtag": "2025-12-31"
+  },
+  "IncreaseDecreaseInCustomersWadiahSavingDeposits": {
+   "anzahl": 2,
+   "beispiel": "1215478000000",
+   "stichtag": "2025-12-31"
+  },
+  "IncreaseDecreaseInCustomersWakalahDeposits": {
+   "anzahl": 2,
+   "beispiel": "0",
+   "stichtag": "2025-12-31"
+  },
+  "IncreaseDecreaseInOtherBanksSavingDeposits": {
+   "anzahl": 2,
+   "beispiel": "255355000000",
+   "stichtag": "2025-12-31"
+  },
+  "IncreaseDecreaseInMudharabahCurrentAccount": {
+   "anzahl": 2,
+   "beispiel": "0",
+   "stichtag": "2025-12-31"
+  },
+  "IncreaseDecreaseInMudharabahSavingsDeposits": {
+   "anzahl": 2,
+   "beispiel": "0",
+   "stichtag": "2025-12-31"
+  },
+  "IncreaseDecreaseInSecuritiesSoldUnderRepurchaseAgreement": {
+   "anzahl": 2,
+   "beispiel": "0",
+   "stichtag": "2025-12-31"
+  },
+  "IncreaseDecreaseInAcceptancePayables": {
+   "anzahl": 2,
+   "beispiel": "81907000000",
+   "stichtag": "2025-12-31"
+  },
+  "IncreaseDecreaseInLiabilitiesToPolicyholderOnUnitLinkedContracts": {
+   "anzahl": 2,
+   "beispiel": "0",
+   "stichtag": "2025-12-31"
+  },
+  "IncreaseDecreaseInDerivativePayables": {
+   "anzahl": 2,
+   "beispiel": "0",
+   "stichtag": "2025-12-31"
+  },
+  "IncreaseDecreaseInTemporarySyirkahFunds": {
+   "anzahl": 2,
+   "beispiel": "1145878000000",
+   "stichtag": "2025-12-31"
+  },
+  "IncreaseDecreaseInOtherLiabilities": {
+   "anzahl": 2,
+   "beispiel": "2448145000000",
+   "stichtag": "2025-12-31"
+  },
+  "NetCashFlowsReceivedFromUsedInOperatingActivities": {
+   "anzahl": 2,
+   "beispiel": "77508785000000",
+   "stichtag": "2025-12-31"
+  },
+  "ProceedsFromEquityInvestmentsClassifiedAsAmortizedCostAndFairValueThroughOtherComprehensiveIncome": {
+   "anzahl": 2,
+   "beispiel": "0",
+   "stichtag": "2025-12-31"
+  },
+  "WithdrawalPlacementOfBondsAndOrSukuk": {
+   "anzahl": 2,
+   "beispiel": "0",
+   "stichtag": "2025-12-31"
+  },
+  "DividendsReceivedFromInvestingActivities": {
+   "anzahl": 2,
+   "beispiel": "107764000000",
+   "stichtag": "2025-12-31"
+  },
+  "ProceedsFromDisposalAcquisitionOfInvestmentProperties": {
+   "anzahl": 2,
+   "beispiel": "0",
+   "stichtag": "2025-12-31"
+  },
+  "ProceedsFromDisposalAcquisitionOfPropertyAndEquipment": {
+   "anzahl": 2,
+   "beispiel": "-2445295000000",
+   "stichtag": "2025-12-31"
+  },
+  "ProceedsFromDisposalAcquisitionOfIntangibleAssetsOtherThanGoodwill": {
+   "anzahl": 2,
+   "beispiel": "0",
+   "stichtag": "2025-12-31"
+  },
+  "WithdrawalPlacementOfFinancialAssetsFairValueThroughOtherComprehensiveIncome": {
+   "anzahl": 2,
+   "beispiel": "0",
+   "stichtag": "2025-12-31"
+  },
+  "PlacementOfFinancialAssetsAmortizedCostInvestments": {
+   "anzahl": 2,
+   "beispiel": "0",
+   "stichtag": "2025-12-31"
+  },
+  "WithdrawalOfFinancialAssetsAmortizedCostInvestments": {
+   "anzahl": 2,
+   "beispiel": "0",
+   "stichtag": "2025-12-31"
+  },
+  "ReceiptsFromPaymentsForPolicyLoans": {
+   "anzahl": 2,
+   "beispiel": "0",
+   "stichtag": "2025-12-31"
+  },
+  "PaymentsForAcquisitionOfSubsidiaries": {
+   "anzahl": 2,
+   "beispiel": "0",
+   "stichtag": "2025-12-31"
+  },
+  "ProceedsFromSalesOfSubsidiaries": {
+   "anzahl": 2,
+   "beispiel": "0",
+   "stichtag": "2025-12-31"
+  },
+  "PaymentsForAcquisitionOfAdditionalInterestsInSubsidiaries": {
+   "anzahl": 2,
+   "beispiel": "0",
+   "stichtag": "2025-12-31"
+  },
+  "WithdrawalPlacementOfMarketableSecurities": {
+   "anzahl": 2,
+   "beispiel": "0",
+   "stichtag": "2025-12-31"
+  },
+  "ProceedsFromSalesOfInterestsInSubsidiariesWithoutLossOfControlFromInvestingActivities": {
+   "anzahl": 2,
+   "beispiel": "0",
+   "stichtag": "2025-12-31"
+  },
+  "PaymentsForAcquisitionOfInterestsInAssociates": {
+   "anzahl": 2,
+   "beispiel": "0",
+   "stichtag": "2025-12-31"
+  },
+  "ProceedsFromSalesOfInterestsInAssociates": {
+   "anzahl": 2,
+   "beispiel": "0",
+   "stichtag": "2025-12-31"
+  },
+  "OtherCashInflowsOutflowsFromInvestingActivities": {
+   "anzahl": 2,
+   "beispiel": "-31353395000000",
+   "stichtag": "2025-12-31"
+  },
+  "NetCashFlowsReceivedFromUsedInInvestingActivities": {
+   "anzahl": 2,
+   "beispiel": "-33690926000000",
+   "stichtag": "2025-12-31"
+  },
+  "IncreaseDecreaseInSecuritiesIssued": {
+   "anzahl": 2,
+   "beispiel": "-435000000000",
+   "stichtag": "2025-12-31"
+  },
+  "IssuanceOfMudharabahSukuk": {
+   "anzahl": 2,
+   "beispiel": "0",
+   "stichtag": "2025-12-31"
+  },
+  "PlacementOfCertificateOfMudharabahInvestments": {
+   "anzahl": 2,
+   "beispiel": "0",
+   "stichtag": "2025-12-31"
+  },
+  "IssuanceCostOfMudharabahSukuk": {
+   "anzahl": 2,
+   "beispiel": "0",
+   "stichtag": "2025-12-31"
+  },
+  "ProceedsFromBorrowings": {
+   "anzahl": 2,
+   "beispiel": "60800000000000",
+   "stichtag": "2025-12-31"
+  },
+  "PaymentsForBorrowings": {
+   "anzahl": 2,
+   "beispiel": "60995080000000",
+   "stichtag": "2025-12-31"
+  },
+  "ProceedsFromSubordinatedLoans": {
+   "anzahl": 2,
+   "beispiel": "0",
+   "stichtag": "2025-12-31"
+  },
+  "PaymentsOfSubordinatedLoans": {
+   "anzahl": 2,
+   "beispiel": "0",
+   "stichtag": "2025-12-31"
+  },
+  "PaymentsOfInterestsFromBorrowings": {
+   "anzahl": 2,
+   "beispiel": "0",
+   "stichtag": "2025-12-31"
+  },
+  "ProceedsFromBondsIssuance": {
+   "anzahl": 2,
+   "beispiel": "0",
+   "stichtag": "2025-12-31"
+  },
+  "PaymentsOfBondsPayable": {
+   "anzahl": 2,
+   "beispiel": "0",
+   "stichtag": "2025-12-31"
+  },
+  "PaymentsOfBondsIssuanceCosts": {
+   "anzahl": 2,
+   "beispiel": "0",
+   "stichtag": "2025-12-31"
+  },
+  "SubordinatedBondsIssued": {
+   "anzahl": 2,
+   "beispiel": "0",
+   "stichtag": "2025-12-31"
+  },
+  "PaymentsOfSubordinatedBonds": {
+   "anzahl": 2,
+   "beispiel": "0",
+   "stichtag": "2025-12-31"
+  },
+  "SubordinatedBondsIssuanceCosts": {
+   "anzahl": 2,
+   "beispiel": "0",
+   "stichtag": "2025-12-31"
+  },
+  "ProceedsFromMediumTermNotes": {
+   "anzahl": 2,
+   "beispiel": "0",
+   "stichtag": "2025-12-31"
+  },
+  "PaymentsOfMediumTermNotes": {
+   "anzahl": 2,
+   "beispiel": "0",
+   "stichtag": "2025-12-31"
+  },
+  "ProceedsFromIssuanceOfNewStocks": {
+   "anzahl": 2,
+   "beispiel": "0",
+   "stichtag": "2025-12-31"
+  },
+  "PaymentsOfStockIssuanceCosts": {
+   "anzahl": 2,
+   "beispiel": "0",
+   "stichtag": "2025-12-31"
+  },
+  "ProceedsFromCapitalContributions": {
+   "anzahl": 2,
+   "beispiel": "0",
+   "stichtag": "2025-12-31"
+  },
+  "ProceedFromIncreaseOfNonControllingInterest": {
+   "anzahl": 2,
+   "beispiel": "0",
+   "stichtag": "2025-12-31"
+  },
+  "SalesPurchaseOfTreasuryStocks": {
+   "anzahl": 2,
+   "beispiel": "-2152514000000",
+   "stichtag": "2025-12-31"
+  },
+  "ProceedsFromEmployeeStockOptionsProgram": {
+   "anzahl": 2,
+   "beispiel": "0",
+   "stichtag": "2025-12-31"
+  },
+  "SettlementPlacementOfDerivativeTransactions": {
+   "anzahl": 2,
+   "beispiel": "0",
+   "stichtag": "2025-12-31"
+  },
+  "DividendsPaidFromFinancingActivities": {
+   "anzahl": 2,
+   "beispiel": "37595047000000",
+   "stichtag": "2025-12-31"
+  },
+  "OtherCashInflowsOutflowsFromFinancingActivities": {
+   "anzahl": 2,
+   "beispiel": "-1330996000000",
+   "stichtag": "2025-12-31"
+  },
+  "NetCashFlowsReceivedFromUsedInFinancingActivities": {
+   "anzahl": 2,
+   "beispiel": "-41708637000000",
+   "stichtag": "2025-12-31"
+  },
+  "NetIncreaseDecreaseInCashAndCashEquivalents": {
+   "anzahl": 2,
+   "beispiel": "2109222000000",
+   "stichtag": "2025-12-31"
+  },
+  "CashAndCashEquivalentsCashFlows": {
+   "anzahl": 4,
+   "beispiel": "85482530000000",
+   "stichtag": "2024-12-31"
+  },
+  "EffectOfExchangeRateChangesOnCashAndCashEquivalents": {
+   "anzahl": 2,
+   "beispiel": "-42424000000",
+   "stichtag": "2025-12-31"
+  },
+  "CashAndCashEquivalentOfDeconsolidatedSubsidiaries": {
+   "anzahl": 2,
+   "beispiel": "0",
+   "stichtag": "2025-12-31"
+  },
+  "OtherIncreaseDecreaseInCashAndCashEquivalents": {
+   "anzahl": 2,
+   "beispiel": "0",
+   "stichtag": "2025-12-31"
+  },
+  "BasisOfPreparationOfConsolidatedFinancialStatementsTextBlock": {
+   "anzahl": 1,
+   "beispiel": "Laporan keuangan konsolidasian",
+   "stichtag": "2025-12-31"
+  },
+  "PrinciplesOfConsolidationTextBlock": {
+   "anzahl": 1,
+   "beispiel": "Laporan keuangan konsolidasian",
+   "stichtag": "2025-12-31"
+  },
+  "FixedAssetsTextBlock": {
+   "anzahl": 1,
+   "beispiel": "Aset tetap pada awalnya dicata",
+   "stichtag": "2025-12-31"
+  },
+  "ForeignCurrencyTranslationTextBlock": {
+   "anzahl": 1,
+   "beispiel": "Item-item yang disertakan dala",
+   "stichtag": "2025-12-31"
+  },
+  "TransactionsWithRelatedPartiesTextBlock": {
+   "anzahl": 1,
+   "beispiel": "Grup melakukan transaksi denga",
+   "stichtag": "2025-12-31"
+  },
+  "IncomeTaxesTextBlock": {
+   "anzahl": 1,
+   "beispiel": "Beban pajak terdiri dari pajak",
+   "stichtag": "2025-12-31"
+  },
+  "ProvisionsTextBlock": {
+   "anzahl": 1,
+   "beispiel": "Provisi diakui jika, sebagai a",
+   "stichtag": "2025-12-31"
+  },
+  "EmployeeBenefitsTextBlock": {
+   "anzahl": 1,
+   "beispiel": "ag.1. Kewajiban jangka pendek\n",
+   "stichtag": "2025-12-31"
+  },
+  "EarningsPerShareTextBlock": {
+   "anzahl": 1,
+   "beispiel": "Laba per saham dasar dihitung ",
+   "stichtag": "2025-12-31"
+  },
+  "SegmentReportingTextBlock": {
+   "anzahl": 1,
+   "beispiel": "Segmen operasi adalah suatu ko",
+   "stichtag": "2025-12-31"
+  },
+  "DerivativeFinancialInstrumentsTextBlock": {
+   "anzahl": 1,
+   "beispiel": "Instrumen derivatif diakui per",
+   "stichtag": "2025-12-31"
+  },
+  "TheImplementationOfNewStatementsOfAccountingStandardsTextBlock": {
+   "anzahl": 1,
+   "beispiel": "Dewan Standar Akuntansi Keuang",
+   "stichtag": "2025-12-31"
+  },
+  "DeterminationOfFairValueTextBlock": {
+   "anzahl": 1,
+   "beispiel": "Nilai wajar adalah harga yang ",
+   "stichtag": "2025-12-31"
+  },
+  "CurrentAccountsWithBankIndonesiaAndOtherBanksTextBlock": {
+   "anzahl": 1,
+   "beispiel": "Giro pada Bank Indonesia dan b",
+   "stichtag": "2025-12-31"
+  },
+  "PlacementsWithBankIndonesiaAndOtherBanksTextBlock": {
+   "anzahl": 1,
+   "beispiel": "Penempatan pada Bank Indonesia",
+   "stichtag": "2025-12-31"
+  },
+  "SecuritiesTextBlock": {
+   "anzahl": 1,
+   "beispiel": "Efek-efek untuk tujuan investa",
+   "stichtag": "2025-12-31"
+  },
+  "RightOfUseAssetsTextBlock": {
+   "anzahl": 1,
+   "beispiel": "Pada tanggal permulaan kontrak",
+   "stichtag": "2025-12-31"
+  },
+  "GoodwillTextBlock": {
+   "anzahl": 1,
+   "beispiel": "Grup mencatat goodwill sebesar",
+   "stichtag": "2025-12-31"
+  },
+  "IntangibleAssetsTextBlock": {
+   "anzahl": 1,
+   "beispiel": "Aset takberwujud terdiri dari ",
+   "stichtag": "2025-12-31"
+  },
+  "ConsumerFinancingReceivablesTextBlock": {
+   "anzahl": 1,
+   "beispiel": "Piutang pembiayaan konsumen me",
+   "stichtag": "2025-12-31"
+  },
+  "DepositsFromCustomersAndDepositsFromOtherBanksTextBlock": {
+   "anzahl": 1,
+   "beispiel": "Simpanan dari nasabah adalah d",
+   "stichtag": "2025-12-31"
+  },
+  "SubordinatedBondsTextBlock": {
+   "anzahl": 1,
+   "beispiel": "Obligasi subordinasi diklasifi",
+   "stichtag": "2025-12-31"
+  },
+  "SecuritiesPurchasedUnderResellAgreementsTextBlock": {
+   "anzahl": 1,
+   "beispiel": "Efek-efek yang dibeli dengan j",
+   "stichtag": "2025-12-31"
+  },
+  "TreasuryStockTextBlock": {
+   "anzahl": 1,
+   "beispiel": "Ketika entitas Grup membeli mo",
+   "stichtag": "2025-12-31"
+  },
+  "ShareCapitalTextBlock": {
+   "anzahl": 1,
+   "beispiel": "Ketika entitas Grup membeli mo",
+   "stichtag": "2025-12-31"
+  },
+  "FinancialInstrumentsTextBlock": {
+   "anzahl": 1,
+   "beispiel": "g.1.  Aset keuangan \n\nSesuai d",
+   "stichtag": "2025-12-31"
+  },
+  "AccountingStandardsIssuedButNotYetEffectiveTextBlock": {
+   "anzahl": 1,
+   "beispiel": "Dewan Standar Akuntansi Keuang",
+   "stichtag": "2025-12-31"
+  },
+  "DisclosureofNotesforPropertyPlantandEquipmentTextBlock": {
+   "anzahl": 1,
+   "beispiel": "Pada tanggal 31 Desember 2025 ",
+   "stichtag": "2025-12-31"
+  },
+  "ProvisionDuringTheYearofAllowanceforImpairmentLossesonLoans": {
+   "anzahl": 2,
+   "beispiel": "4738261000000",
+   "stichtag": "2025-12-31"
+  },
+  "WritingOffofAllowanceforImpairmentLossesonLoans": {
+   "anzahl": 2,
+   "beispiel": "7734297000000",
+   "stichtag": "2025-12-31"
+  },
+  "RecoveriesOfWrittenOffofAllowanceforImpairmentLossesonLoans": {
+   "anzahl": 2,
+   "beispiel": "0",
+   "stichtag": "2025-12-31"
+  },
+  "OthersAllowanceforImpairmentLossesonLoans": {
+   "anzahl": 2,
+   "beispiel": "0",
+   "stichtag": "2025-12-31"
+  },
+  "ForeignExchangeTranslationImpactOnAllowanceForImpairmentLossesOnLoans": {
+   "anzahl": 2,
+   "beispiel": "123427000000",
+   "stichtag": "2025-12-31"
+  },
+  "NonPerformingFinancingGross": {
+   "anzahl": 2,
+   "beispiel": "0.01706",
+   "stichtag": "2025-12-31"
+  },
+  "NonPerformingFinancingNet": {
+   "anzahl": 2,
+   "beispiel": "0.00675",
+   "stichtag": "2025-12-31"
+  },
+  "AnnualYieldRateofRupiahLoans": {
+   "anzahl": 2,
+   "beispiel": "0.0743",
+   "stichtag": "2025-12-31"
+  },
+  "AnnualYieldRateofForeignCurrenciesLoans": {
+   "anzahl": 2,
+   "beispiel": "0.0526",
+   "stichtag": "2025-12-31"
+  },
+  "DisclosureofNotesforLoansandShariareceivablesfinancingTextBlock": {
+   "anzahl": 1,
+   "beispiel": "Bank mengadakan perjanjian pem",
+   "stichtag": "2025-12-31"
+  },
+  "CurrentAccounts": {
+   "anzahl": 2,
+   "beispiel": "431010515000000",
+   "stichtag": "2025-12-31"
+  },
+  "SavingsDeposits": {
+   "anzahl": 2,
+   "beispiel": "608119555000000",
+   "stichtag": "2025-12-31"
+  },
+  "TimeDeposits": {
+   "anzahl": 2,
+   "beispiel": "194669011000000",
+   "stichtag": "2025-12-31"
+  },
+  "DisclosureofNotesforThirdPartyFundsTextBlock": {
+   "anzahl": 1,
+   "beispiel": "Bank tidak memiliki saldo simp",
+   "stichtag": "2025-12-31"
+  },
+  "LoansInterestIncome": {
+   "anzahl": 2,
+   "beispiel": "67446394000000",
+   "stichtag": "2025-12-31"
+  },
+  "MarketableSecuritiesIncome": {
+   "anzahl": 2,
+   "beispiel": "25417176000000",
+   "stichtag": "2025-12-31"
+  },
+  "PlacementsWithBankIndonesiaAndOtherBanksIncome": {
+   "anzahl": 2,
+   "beispiel": "633824000000",
+   "stichtag": "2025-12-31"
+  },
+  "OtherInterestIncome": {
+   "anzahl": 2,
+   "beispiel": "841487000000",
+   "stichtag": "2025-12-31"
+  },
+  "SubtotalInterestIncome": {
+   "anzahl": 2,
+   "beispiel": "97964378000000",
+   "stichtag": "2025-12-31"
+  },
+  "MurabahahAndIstishnaIncome": {
+   "anzahl": 2,
+   "beispiel": "0",
+   "stichtag": "2025-12-31"
+  },
+  "MusyrakahProfitSharing": {
+   "anzahl": 2,
+   "beispiel": "0",
+   "stichtag": "2025-12-31"
+  },
+  "MudharabahProfitSharing": {
+   "anzahl": 2,
+   "beispiel": "0",
+   "stichtag": "2025-12-31"
+  },
+  "UjrahIncomeFromQardhFinancing": {
+   "anzahl": 2,
+   "beispiel": "0",
+   "stichtag": "2025-12-31"
+  },
+  "IjarahIncome": {
+   "anzahl": 2,
+   "beispiel": "0",
+   "stichtag": "2025-12-31"
+  },
+  "OtherShariaIncome": {
+   "anzahl": 2,
+   "beispiel": "948274000000",
+   "stichtag": "2025-12-31"
+  },
+  "SubtotalShariaIncome": {
+   "anzahl": 2,
+   "beispiel": "948274000000",
+   "stichtag": "2025-12-31"
+  },
+  "TotalInterestAndShariaIncome": {
+   "anzahl": 2,
+   "beispiel": "98912652000000",
+   "stichtag": "2025-12-31"
+  },
+  "DisclosureofInterestandShariaIncomeTextBlock": {
+   "anzahl": 1,
+   "beispiel": "Termasuk dalam pendapatan bung",
+   "stichtag": "2025-12-31"
+  },
+  "TimeDepositsInterestExpense": {
+   "anzahl": 2,
+   "beispiel": "5876759000000",
+   "stichtag": "2025-12-31"
+  },
+  "SavingDepositsInterestExpense": {
+   "anzahl": 2,
+   "beispiel": "583896000000",
+   "stichtag": "2025-12-31"
+  },
+  "BorrowingsInterestExpense": {
+   "anzahl": 2,
+   "beispiel": "82708000000",
+   "stichtag": "2025-12-31"
+  },
+  "PremiumOnThirdPartyFundGuarantees": {
+   "anzahl": 2,
+   "beispiel": "2386381000000",
+   "stichtag": "2025-12-31"
+  },
+  "CurrentAccountsInterestExpense": {
+   "anzahl": 2,
+   "beispiel": "3685331000000",
+   "stichtag": "2025-12-31"
+  },
+  "SecuritiesIssuedInterestExpense": {
+   "anzahl": 2,
+   "beispiel": "22431000000",
+   "stichtag": "2025-12-31"
+  },
+  "OthersInterestExpenseInterestExpense": {
+   "anzahl": 2,
+   "beispiel": "204336000000",
+   "stichtag": "2025-12-31"
+  },
+  "SubtotalInterestExpense": {
+   "anzahl": 2,
+   "beispiel": "12841842000000",
+   "stichtag": "2025-12-31"
+  },
+  "OtherShariaExpense": {
+   "anzahl": 2,
+   "beispiel": "522653000000",
+   "stichtag": "2025-12-31"
+  },
+  "SubtotalShariaExpense": {
+   "anzahl": 2,
+   "beispiel": "522653000000",
+   "stichtag": "2025-12-31"
+  },
+  "TotalInterestAndShariaExpense": {
+   "anzahl": 2,
+   "beispiel": "13364495000000",
+   "stichtag": "2025-12-31"
+  },
+  "DisclosureofNotesforInterestExpenseTextBlock": {
+   "anzahl": 1,
+   "beispiel": "Beban bunga dan syariah atas s",
+   "stichtag": "2025-12-31"
+  },
+  "Borrowings": {
+   "anzahl": 2,
+   "beispiel": "2047436000000",
+   "stichtag": "2025-12-31"
+  },
+  "DisclosureofNotesforBorrowingsTextBlock": {
+   "anzahl": 1,
+   "beispiel": "Grup tidak memiliki saldo pinj",
+   "stichtag": "2025-12-31"
+  }
+ },
+ "BBRI 2025": {
+  "Cash": {
+   "anzahl": 2,
+   "beispiel": "32044482000000",
+   "stichtag": "2025-12-31"
+  },
+  "CurrentAccountsWithBankIndonesia": {
+   "anzahl": 2,
+   "beispiel": "31929608000000",
+   "stichtag": "2025-12-31"
+  },
+  "CurrentAccountsWithOtherBanksThirdParties": {
+   "anzahl": 2,
+   "beispiel": "41954524000000",
+   "stichtag": "2025-12-31"
+  },
+  "CurrentAccountsWithOtherBanksRelatedParties": {
+   "anzahl": 2,
+   "beispiel": "490057000000",
+   "stichtag": "2025-12-31"
+  },
+  "AllowanceForImpairmentLossesForCurrentAccountsWithOtherBanks": {
+   "anzahl": 2,
+   "beispiel": "11273000000",
+   "stichtag": "2025-12-31"
+  },
+  "PlacementsWithBankIndonesiaAndOtherBanksThirdParties": {
+   "anzahl": 2,
+   "beispiel": "18285606000000",
+   "stichtag": "2025-12-31"
+  },
+  "PlacementsWithBankIndonesiaAndOtherBanksRelatedParties": {
+   "anzahl": 2,
+   "beispiel": "2771604000000",
+   "stichtag": "2025-12-31"
+  },
+  "AllowanceForImpairmentLossesForPlacementsWithOtherBanks": {
+   "anzahl": 2,
+   "beispiel": "2405000000",
+   "stichtag": "2025-12-31"
+  },
+  "MarketableSecuritiesThirdParties": {
+   "anzahl": 2,
+   "beispiel": "123728979000000",
+   "stichtag": "2025-12-31"
+  },
+  "MarketableSecuritiesRelatedParties": {
+   "anzahl": 2,
+   "beispiel": "249003823000000",
+   "stichtag": "2025-12-31"
+  },
+  "AllowanceForImpairmentLossesForMarketableSecurities": {
+   "anzahl": 2,
+   "beispiel": "89519000000",
+   "stichtag": "2025-12-31"
+  },
+  "SecuritiesPurchasedUnderAgreementToResale": {
+   "anzahl": 2,
+   "beispiel": "24452000000",
+   "stichtag": "2025-12-31"
+  },
+  "BillsAndOtherReceivablesThirdParties": {
+   "anzahl": 2,
+   "beispiel": "40664125000000",
+   "stichtag": "2025-12-31"
+  },
+  "BillsAndOtherReceivablesRelatedParties": {
+   "anzahl": 2,
+   "beispiel": "7587958000000",
+   "stichtag": "2025-12-31"
+  },
+  "AllowanceForImpairmentLossesForBillsAndOtherReceivables": {
+   "anzahl": 2,
+   "beispiel": "465498000000",
+   "stichtag": "2025-12-31"
+  },
+  "AcceptanceReceivablesThirdParties": {
+   "anzahl": 2,
+   "beispiel": "10956139000000",
+   "stichtag": "2025-12-31"
+  },
+  "AcceptanceReceivablesRelatedParties": {
+   "anzahl": 2,
+   "beispiel": "2122428000000",
+   "stichtag": "2025-12-31"
+  },
+  "AllowanceForImpairmentLossesForAcceptanceReceivables": {
+   "anzahl": 2,
+   "beispiel": "32226000000",
+   "stichtag": "2025-12-31"
+  },
+  "DerivativeReceivablesThirdParties": {
+   "anzahl": 2,
+   "beispiel": "1167029000000",
+   "stichtag": "2025-12-31"
+  },
+  "LoansThirdParties": {
+   "anzahl": 2,
+   "beispiel": "1305958960000000",
+   "stichtag": "2025-12-31"
+  },
+  "LoansRelatedParties": {
+   "anzahl": 2,
+   "beispiel": "154770458000000",
+   "stichtag": "2025-12-31"
+  },
+  "AllowanceForImpairmentLossesForLoans": {
+   "anzahl": 2,
+   "beispiel": "79328619000000",
+   "stichtag": "2025-12-31"
+  },
+  "OtherReceivablesThirdParties": {
+   "anzahl": 2,
+   "beispiel": "60724493000000",
+   "stichtag": "2025-12-31"
+  },
+  "OtherReceivablesRelatedParties": {
+   "anzahl": 2,
+   "beispiel": "31946000000",
+   "stichtag": "2025-12-31"
+  },
+  "AllowanceForImpairmentLossesForOtherReceivables": {
+   "anzahl": 2,
+   "beispiel": "3730037000000",
+   "stichtag": "2025-12-31"
+  },
+  "DeferredTaxAssets": {
+   "anzahl": 2,
+   "beispiel": "8129522000000",
+   "stichtag": "2025-12-31"
+  },
+  "InvestmentsInJointVentures": {
+   "anzahl": 2,
+   "beispiel": "1249588000000",
+   "stichtag": "2025-12-31"
+  },
+  "InvestmentsInAssociates": {
+   "anzahl": 2,
+   "beispiel": "7585280000000",
+   "stichtag": "2025-12-31"
+  },
+  "PropertyPlantAndEquipment": {
+   "anzahl": 3,
+   "beispiel": "63294240000000",
+   "stichtag": "2025-12-31"
+  },
+  "OtherAssets": {
+   "anzahl": 2,
+   "beispiel": "54555381000000",
+   "stichtag": "2025-12-31"
+  },
+  "Assets": {
+   "anzahl": 2,
+   "beispiel": "2135371105000000",
+   "stichtag": "2025-12-31"
+  },
+  "ObligationsDueImmediately": {
+   "anzahl": 2,
+   "beispiel": "39818745000000",
+   "stichtag": "2025-12-31"
+  },
+  "CurrentAccountsThirdParties": {
+   "anzahl": 2,
+   "beispiel": "199866427000000",
+   "stichtag": "2025-12-31"
+  },
+  "CurrentAccountsRelatedParties": {
+   "anzahl": 2,
+   "beispiel": "248337243000000",
+   "stichtag": "2025-12-31"
+  },
+  "SavingsThirdParties": {
+   "anzahl": 2,
+   "beispiel": "585559949000000",
+   "stichtag": "2025-12-31"
+  },
+  "SavingsRelatedParties": {
+   "anzahl": 2,
+   "beispiel": "2025913000000",
+   "stichtag": "2025-12-31"
+  },
+  "TimeDepositsThirdParties": {
+   "anzahl": 2,
+   "beispiel": "277168008000000",
+   "stichtag": "2025-12-31"
+  },
+  "TimeDepositsRelatedParties": {
+   "anzahl": 2,
+   "beispiel": "153886299000000",
+   "stichtag": "2025-12-31"
+  },
+  "OtherBankdsDepositsRelatedParties": {
+   "anzahl": 2,
+   "beispiel": "1375788000000",
+   "stichtag": "2025-12-31"
+  },
+  "OtherBanksDepositsThirdParties": {
+   "anzahl": 2,
+   "beispiel": "16225648000000",
+   "stichtag": "2025-12-31"
+  },
+  "SecuritiesSoldWithRepurchaseAgreement": {
+   "anzahl": 2,
+   "beispiel": "27932749000000",
+   "stichtag": "2025-12-31"
+  },
+  "DerivativePayablesThirdParties": {
+   "anzahl": 2,
+   "beispiel": "1101753000000",
+   "stichtag": "2025-12-31"
+  },
+  "AcceptanceLiabilitiesThirdParties": {
+   "anzahl": 2,
+   "beispiel": "13078567000000",
+   "stichtag": "2025-12-31"
+  },
+  "BorrowingsThirdParties": {
+   "anzahl": 2,
+   "beispiel": "92649347000000",
+   "stichtag": "2025-12-31"
+  },
+  "BorrowingsRelatedParties": {
+   "anzahl": 2,
+   "beispiel": "36536769000000",
+   "stichtag": "2025-12-31"
+  },
+  "BondsPayable": {
+   "anzahl": 2,
+   "beispiel": "40901648000000",
+   "stichtag": "2025-12-31"
+  },
+  "EstimatedLossesOnCommitmentsAndContingencies": {
+   "anzahl": 2,
+   "beispiel": "1946135000000",
+   "stichtag": "2025-12-31"
+  },
+  "TaxesPayable": {
+   "anzahl": 2,
+   "beispiel": "3299310000000",
+   "stichtag": "2025-12-31"
+  },
+  "OtherLiabilities": {
+   "anzahl": 2,
+   "beispiel": "34804195000000",
+   "stichtag": "2025-12-31"
+  },
+  "PostEmploymentBenefitObligations": {
+   "anzahl": 2,
+   "beispiel": "27428311000000",
+   "stichtag": "2025-12-31"
+  },
+  "SubordinatedLoansThirdParties": {
+   "anzahl": 2,
+   "beispiel": "257538000000",
+   "stichtag": "2025-12-31"
+  },
+  "SubordinatedLoansRelatedParties": {
+   "anzahl": 2,
+   "beispiel": "229329000000",
+   "stichtag": "2025-12-31"
+  },
+  "Liabilities": {
+   "anzahl": 2,
+   "beispiel": "1804429671000000",
+   "stichtag": "2025-12-31"
+  },
+  "CommonStocks": {
+   "anzahl": 2,
+   "beispiel": "7577950000000",
+   "stichtag": "2025-12-31"
+  },
+  "AdditionalPaidInCapital": {
+   "anzahl": 2,
+   "beispiel": "75946195000000",
+   "stichtag": "2025-12-31"
+  },
+  "TreasuryStocks": {
+   "anzahl": 2,
+   "beispiel": "4463270000000",
+   "stichtag": "2025-12-31"
+  },
+  "StockOptions": {
+   "anzahl": 2,
+   "beispiel": "575039000000",
+   "stichtag": "2025-12-31"
+  },
+  "RevaluationReserves": {
+   "anzahl": 2,
+   "beispiel": "20754251000000",
+   "stichtag": "2025-12-31"
+  },
+  "ReserveOfExchangeDifferencesOnTranslation": {
+   "anzahl": 2,
+   "beispiel": "227059000000",
+   "stichtag": "2025-12-31"
+  },
+  "ReserveForChangesInFairValueOfFairValueThroughOtherComprehensiveIncomeFinancialAssets": {
+   "anzahl": 2,
+   "beispiel": "60966000000",
+   "stichtag": "2025-12-31"
+  },
+  "ReserveOfRemeasurementsOfDefinedBenefitPlans": {
+   "anzahl": 2,
+   "beispiel": "-2198095000000",
+   "stichtag": "2025-12-31"
+  },
+  "OtherComponentsOfEquity": {
+   "anzahl": 2,
+   "beispiel": "2890385000000",
+   "stichtag": "2025-12-31"
+  },
+  "GeneralAndLegalReserves": {
+   "anzahl": 2,
+   "beispiel": "3022685000000",
+   "stichtag": "2025-12-31"
+  },
+  "UnappropriatedRetainedEarnings": {
+   "anzahl": 2,
+   "beispiel": "219640693000000",
+   "stichtag": "2025-12-31"
+  },
+  "EquityAttributableToEquityOwnersOfParentEntity": {
+   "anzahl": 2,
+   "beispiel": "324033858000000",
+   "stichtag": "2025-12-31"
+  },
+  "NonControllingInterests": {
+   "anzahl": 2,
+   "beispiel": "6907576000000",
+   "stichtag": "2025-12-31"
+  },
+  "Equity": {
+   "anzahl": 2,
+   "beispiel": "330941434000000",
+   "stichtag": "2025-12-31"
+  },
+  "LiabilitiesTemporarySyirkahFundsAndEquity": {
+   "anzahl": 2,
+   "beispiel": "2135371105000000",
+   "stichtag": "2025-12-31"
+  },
+  "InterestIncome": {
+   "anzahl": 2,
+   "beispiel": "207783368000000",
+   "stichtag": "2025-12-31"
+  },
+  "InterestExpenses": {
+   "anzahl": 2,
+   "beispiel": "57284939000000",
+   "stichtag": "2025-12-31"
+  },
+  "RevenueFromInsurancePremiums": {
+   "anzahl": 2,
+   "beispiel": "7662733000000",
+   "stichtag": "2025-12-31"
+  },
+  "ClaimExpenses": {
+   "anzahl": 2,
+   "beispiel": "6364550000000",
+   "stichtag": "2025-12-31"
+  },
+  "RealisedGainsLossesOnTradingOfMarketableSecurities": {
+   "anzahl": 2,
+   "beispiel": "3372396000000",
+   "stichtag": "2025-12-31"
+  },
+  "GainsLossesOnChangesInFairValueOfMarketableSecurities": {
+   "anzahl": 1,
+   "beispiel": "160659000000",
+   "stichtag": "2025-12-31"
+  },
+  "ProvisionsAndCommissionsIncomeFromTransactionsOtherThanLoan": {
+   "anzahl": 2,
+   "beispiel": "21447045000000",
+   "stichtag": "2025-12-31"
+  },
+  "RevenueFromRecoveryOfWrittenOffAssets": {
+   "anzahl": 2,
+   "beispiel": "20952308000000",
+   "stichtag": "2025-12-31"
+  },
+  "GainsLossesOnChangesInForeignExchangeRates": {
+   "anzahl": 2,
+   "beispiel": "2087065000000",
+   "stichtag": "2025-12-31"
+  },
+  "OtherOperatingIncome": {
+   "anzahl": 2,
+   "beispiel": "8060685000000",
+   "stichtag": "2025-12-31"
+  },
+  "RecoveryOfImpairmentLossesOfNonfinancialAssets": {
+   "anzahl": 2,
+   "beispiel": "-82414000000",
+   "stichtag": "2025-12-31"
+  },
+  "RecoveryOfEstimatedLossesOfCommitmentsAndContingency": {
+   "anzahl": 2,
+   "beispiel": "624058000000",
+   "stichtag": "2025-12-31"
+  },
+  "AllowancesForImpairmentLossesOnEarningsAssets": {
+   "anzahl": 2,
+   "beispiel": "46723647000000",
+   "stichtag": "2025-12-31"
+  },
+  "GeneralAndAdministrativeExpenses": {
+   "anzahl": 2,
+   "beispiel": "33776049000000",
+   "stichtag": "2025-12-31"
+  },
+  "OtherFeesAndCommissionsExpenses": {
+   "anzahl": 2,
+   "beispiel": "53113000000",
+   "stichtag": "2025-12-31"
+  },
+  "OtherOperatingExpenses": {
+   "anzahl": 2,
+   "beispiel": "54617724000000",
+   "stichtag": "2025-12-31"
+  },
+  "ProfitFromOperation": {
+   "anzahl": 2,
+   "beispiel": "73247881000000",
+   "stichtag": "2025-12-31"
+  },
+  "NonOperatingIncome": {
+   "anzahl": 2,
+   "beispiel": "-455062000000",
+   "stichtag": "2025-12-31"
+  },
+  "ProfitLossBeforeIncomeTax": {
+   "anzahl": 2,
+   "beispiel": "72792819000000",
+   "stichtag": "2025-12-31"
+  },
+  "TaxBenefitExpenses": {
+   "anzahl": 2,
+   "beispiel": "-15660454000000",
+   "stichtag": "2025-12-31"
+  },
+  "ProfitLossFromContinuingOperations": {
+   "anzahl": 2,
+   "beispiel": "57132365000000",
+   "stichtag": "2025-12-31"
+  },
+  "ProfitLoss": {
+   "anzahl": 2,
+   "beispiel": "57132365000000",
+   "stichtag": "2025-12-31"
+  },
+  "OtherComprehensiveIncomeAfterTax": {
+   "anzahl": 2,
+   "beispiel": "2909006000000",
+   "stichtag": "2025-12-31"
+  },
+  "ComprehensiveIncome": {
+   "anzahl": 2,
+   "beispiel": "60041371000000",
+   "stichtag": "2025-12-31"
+  },
+  "ProfitLossAttributableToParentEntity": {
+   "anzahl": 2,
+   "beispiel": "56652384000000",
+   "stichtag": "2025-12-31"
+  },
+  "ProfitLossAttributableToNonControllingInterests": {
+   "anzahl": 2,
+   "beispiel": "479981000000",
+   "stichtag": "2025-12-31"
+  },
+  "ComprehensiveIncomeAttributableToParentEntity": {
+   "anzahl": 2,
+   "beispiel": "59265589000000",
+   "stichtag": "2025-12-31"
+  },
+  "ComprehensiveIncomeAttributableToNonControllingInterests": {
+   "anzahl": 2,
+   "beispiel": "775782000000",
+   "stichtag": "2025-12-31"
+  },
+  "BasicEarningsLossPerShareFromContinuingOperations": {
+   "anzahl": 2,
+   "beispiel": "376",
+   "stichtag": "2025-12-31"
+  },
+  "BalanceBeforeRestatementAtBeginningOfPeriod": {
+   "anzahl": 2,
+   "beispiel": "323315016000000",
+   "stichtag": "2025-12-31"
+  },
+  "EquityPositionBeginningOfThePeriod": {
+   "anzahl": 2,
+   "beispiel": "323315016000000",
+   "stichtag": "2025-12-31"
+  },
+  "ProfitLossChangesInEquity": {
+   "anzahl": 2,
+   "beispiel": "57132365000000",
+   "stichtag": "2025-12-31"
+  },
+  "OtherComprehensiveIncome": {
+   "anzahl": 2,
+   "beispiel": "2909006000000",
+   "stichtag": "2025-12-31"
+  },
+  "DistributionsOfCashDividends": {
+   "anzahl": 2,
+   "beispiel": "52176266000000",
+   "stichtag": "2025-12-31"
+  },
+  "IssuanceOfCommonStocks": {
+   "anzahl": 1,
+   "beispiel": "-238687000000",
+   "stichtag": "2025-12-31"
+  },
+  "EquityPositionEndOfThePeriod": {
+   "anzahl": 2,
+   "beispiel": "330941434000000",
+   "stichtag": "2025-12-31"
+  },
+  "InitialAdoptionOfNewAndRevisedAccountingStandards": {
+   "anzahl": 1,
+   "beispiel": "386753000000",
+   "stichtag": "2024-12-31"
+  },
+  "ChangesInNonControllingInterestsDueToAcquisitionOfSubsidiaries": {
+   "anzahl": 1,
+   "beispiel": "-58514000000",
+   "stichtag": "2024-12-31"
+  },
+  "ChangesInNonControllingInterestsDueToOtherTransactionsWithNonControllingInterests": {
+   "anzahl": 1,
+   "beispiel": "13202000000",
+   "stichtag": "2024-12-31"
+  },
+  "StockOptionsExercised": {
+   "anzahl": 1,
+   "beispiel": "591352000000",
+   "stichtag": "2024-12-31"
+  },
+  "OtherEquityTransactions": {
+   "anzahl": 1,
+   "beispiel": "-105758000000",
+   "stichtag": "2024-12-31"
+  },
+  "InterestInvestmentIncomeFeesAndCommissionsReceived": {
+   "anzahl": 2,
+   "beispiel": "188133607000000",
+   "stichtag": "2025-12-31"
+  },
+  "PaymentsOfInterestAndBonusFeesAndCommissions": {
+   "anzahl": 2,
+   "beispiel": "56224677000000",
+   "stichtag": "2025-12-31"
+  },
+  "RevenueReceiptsFromFundManagementAsMudharib": {
+   "anzahl": 2,
+   "beispiel": "14733244000000",
+   "stichtag": "2025-12-31"
+  },
+  "PaymentsOfTemporarySyirkahFunds": {
+   "anzahl": 2,
+   "beispiel": "1252495000000",
+   "stichtag": "2025-12-31"
+  },
+  "ReceiptsFromInsurancePremiums": {
+   "anzahl": 2,
+   "beispiel": "60841000000",
+   "stichtag": "2025-12-31"
+  },
+  "IncomeFromOtherOperatingTransactions": {
+   "anzahl": 2,
+   "beispiel": "94130139000000",
+   "stichtag": "2025-12-31"
+  },
+  "RecoveriesOfWrittenOffAssets": {
+   "anzahl": 2,
+   "beispiel": "20952308000000",
+   "stichtag": "2025-12-31"
+  },
+  "RefundsPaymentsOfIncomeTax": {
+   "anzahl": 2,
+   "beispiel": "-10543662000000",
+   "stichtag": "2025-12-31"
+  },
+  "PaymentsForOtherOperatingExpenses": {
+   "anzahl": 2,
+   "beispiel": "140095897000000",
+   "stichtag": "2025-12-31"
+  },
+  "ReceiptsFromNonOperatingIncome": {
+   "anzahl": 2,
+   "beispiel": "-555267000000",
+   "stichtag": "2025-12-31"
+  },
+  "DecreaseIncreaseInPlacementsWithOtherBanksAndBankIndonesia": {
+   "anzahl": 2,
+   "beispiel": "-544175000000",
+   "stichtag": "2025-12-31"
+  },
+  "DecreaseIncreaseInMarketableSecurities": {
+   "anzahl": 2,
+   "beispiel": "-1594522000000",
+   "stichtag": "2025-12-31"
+  },
+  "DecreaseIncreaseInSecuritiesPurchasedUnderResaleAgreements": {
+   "anzahl": 2,
+   "beispiel": "16821238000000",
+   "stichtag": "2025-12-31"
+  },
+  "DecreaseIncreaseInBillsAndOtherReceivables": {
+   "anzahl": 2,
+   "beispiel": "-7595261000000",
+   "stichtag": "2025-12-31"
+  },
+  "DecreaseIncreaseInLoans": {
+   "anzahl": 2,
+   "beispiel": "-203205917000000",
+   "stichtag": "2025-12-31"
+  },
+  "DecreaseIncreaseInConsumerFinancingReceivables": {
+   "anzahl": 2,
+   "beispiel": "2027451000000",
+   "stichtag": "2025-12-31"
+  },
+  "DecreaseIncreaseInOtherReceivables": {
+   "anzahl": 2,
+   "beispiel": "-10658658000000",
+   "stichtag": "2025-12-31"
+  },
+  "DecreaseIncreaseInOtherAssets": {
+   "anzahl": 2,
+   "beispiel": "-1213587000000",
+   "stichtag": "2025-12-31"
+  },
+  "IncreaseDecreaseInObligationsDueImmediately": {
+   "anzahl": 2,
+   "beispiel": "2997084000000",
+   "stichtag": "2025-12-31"
+  },
+  "IncreaseDecreaseInCustomersCurrentAccountsAndSavings": {
+   "anzahl": 2,
+   "beispiel": "116808245000000",
+   "stichtag": "2025-12-31"
+  },
+  "IncreaseDecreaseInCustomersTimeDeposits": {
+   "anzahl": 2,
+   "beispiel": "-15414510000000",
+   "stichtag": "2025-12-31"
+  },
+  "IncreaseDecreaseInOtherBanksSavingDeposits": {
+   "anzahl": 2,
+   "beispiel": "2921954000000",
+   "stichtag": "2025-12-31"
+  },
+  "IncreaseDecreaseInSecuritiesSoldUnderRepurchaseAgreement": {
+   "anzahl": 2,
+   "beispiel": "2889032000000",
+   "stichtag": "2025-12-31"
+  },
+  "IncreaseDecreaseInOtherLiabilities": {
+   "anzahl": 2,
+   "beispiel": "1040508000000",
+   "stichtag": "2025-12-31"
+  },
+  "NetCashFlowsReceivedFromUsedInOperatingActivities": {
+   "anzahl": 2,
+   "beispiel": "14617023000000",
+   "stichtag": "2025-12-31"
+  },
+  "ProceedsFromEquityInvestmentsClassifiedAsAmortizedCostAndFairValueThroughOtherComprehensiveIncome": {
+   "anzahl": 1,
+   "beispiel": "-4912000000",
+   "stichtag": "2024-12-31"
+  },
+  "DividendsReceivedFromInvestingActivities": {
+   "anzahl": 2,
+   "beispiel": "166422000000",
+   "stichtag": "2025-12-31"
+  },
+  "ProceedsFromDisposalAcquisitionOfInvestmentProperties": {
+   "anzahl": 2,
+   "beispiel": "100205000000",
+   "stichtag": "2025-12-31"
+  },
+  "ProceedsFromDisposalAcquisitionOfPropertyAndEquipment": {
+   "anzahl": 2,
+   "beispiel": "-6344276000000",
+   "stichtag": "2025-12-31"
+  },
+  "WithdrawalPlacementOfMarketableSecurities": {
+   "anzahl": 2,
+   "beispiel": "-40012932000000",
+   "stichtag": "2025-12-31"
+  },
+  "NetCashFlowsReceivedFromUsedInInvestingActivities": {
+   "anzahl": 2,
+   "beispiel": "-46090581000000",
+   "stichtag": "2025-12-31"
+  },
+  "ProceedsFromBorrowings": {
+   "anzahl": 2,
+   "beispiel": "37570676000000",
+   "stichtag": "2025-12-31"
+  },
+  "PaymentsForBorrowings": {
+   "anzahl": 2,
+   "beispiel": "36492679000000",
+   "stichtag": "2025-12-31"
+  },
+  "ProceedsFromBondsIssuance": {
+   "anzahl": 2,
+   "beispiel": "28395963000000",
+   "stichtag": "2025-12-31"
+  },
+  "PaymentsOfSubordinatedBonds": {
+   "anzahl": 2,
+   "beispiel": "19724136000000",
+   "stichtag": "2025-12-31"
+  },
+  "SalesPurchaseOfTreasuryStocks": {
+   "anzahl": 2,
+   "beispiel": "-488373000000",
+   "stichtag": "2025-12-31"
+  },
+  "DividendsPaidFromFinancingActivities": {
+   "anzahl": 2,
+   "beispiel": "51881643000000",
+   "stichtag": "2025-12-31"
+  },
+  "NetCashFlowsReceivedFromUsedInFinancingActivities": {
+   "anzahl": 2,
+   "beispiel": "-42620192000000",
+   "stichtag": "2025-12-31"
+  },
+  "NetIncreaseDecreaseInCashAndCashEquivalents": {
+   "anzahl": 2,
+   "beispiel": "-74093750000000",
+   "stichtag": "2025-12-31"
+  },
+  "CashAndCashEquivalentsCashFlows": {
+   "anzahl": 4,
+   "beispiel": "205328380000000",
+   "stichtag": "2024-12-31"
+  },
+  "EffectOfExchangeRateChangesOnCashAndCashEquivalents": {
+   "anzahl": 2,
+   "beispiel": "1085000000",
+   "stichtag": "2025-12-31"
+  }
+ },
+ "ASII 2025": {
+  "CashAndCashEquivalents": {
+   "anzahl": 2,
+   "beispiel": "52621000000000",
+   "stichtag": "2025-12-31"
+  },
+  "NotesReceivable": {
+   "anzahl": 2,
+   "beispiel": "0",
+   "stichtag": "2025-12-31"
+  },
+  "ShortTermInvestments": {
+   "anzahl": 2,
+   "beispiel": "0",
+   "stichtag": "2025-12-31"
+  },
+  "CurrentRestrictedFunds": {
+   "anzahl": 2,
+   "beispiel": "0",
+   "stichtag": "2025-12-31"
+  },
+  "CurrentFinancialAssetsAtFairValueThroughProfitOrLoss": {
+   "anzahl": 2,
+   "beispiel": "0",
+   "stichtag": "2025-12-31"
+  },
+  "CurrentFinancialAssetsFairValueThroughOtherComprehensiveIncome": {
+   "anzahl": 2,
+   "beispiel": "1365000000000",
+   "stichtag": "2025-12-31"
+  },
+  "CurrentFinancialAssetsAmortizedCostInvestments": {
+   "anzahl": 2,
+   "beispiel": "0",
+   "stichtag": "2025-12-31"
+  },
+  "OtherCurrentFinancialAssets": {
+   "anzahl": 2,
+   "beispiel": "0",
+   "stichtag": "2025-12-31"
+  },
+  "CurrentDerivativeFinancialAssets": {
+   "anzahl": 2,
+   "beispiel": "128000000000",
+   "stichtag": "2025-12-31"
+  },
+  "TradeReceivablesThirdParties": {
+   "anzahl": 2,
+   "beispiel": "24526000000000",
+   "stichtag": "2025-12-31"
+  },
+  "TradeReceivablesRelatedParties": {
+   "anzahl": 2,
+   "beispiel": "3296000000000",
+   "stichtag": "2025-12-31"
+  },
+  "CurrentFinanceLeaseReceivables": {
+   "anzahl": 2,
+   "beispiel": "50952000000000",
+   "stichtag": "2025-12-31"
+  },
+  "OtherReceivablesThirdParties": {
+   "anzahl": 2,
+   "beispiel": "2318000000000",
+   "stichtag": "2025-12-31"
+  },
+  "OtherReceivablesRelatedParties": {
+   "anzahl": 2,
+   "beispiel": "838000000000",
+   "stichtag": "2025-12-31"
+  },
+  "CurrentLivestockInventories": {
+   "anzahl": 2,
+   "beispiel": "0",
+   "stichtag": "2025-12-31"
+  },
+  "CurrentRealEstateAssets": {
+   "anzahl": 2,
+   "beispiel": "2376000000000",
+   "stichtag": "2025-12-31"
+  },
+  "CurrentInventories": {
+   "anzahl": 2,
+   "beispiel": "33839000000000",
+   "stichtag": "2025-12-31"
+  },
+  "CurrentBiologicalAssets": {
+   "anzahl": 2,
+   "beispiel": "0",
+   "stichtag": "2025-12-31"
+  },
+  "CurrentPrepaidExpenses": {
+   "anzahl": 2,
+   "beispiel": "877000000000",
+   "stichtag": "2025-12-31"
+  },
+  "CurrentGuarantees": {
+   "anzahl": 2,
+   "beispiel": "0",
+   "stichtag": "2025-12-31"
+  },
+  "CurrentAdvancesOnInvestments": {
+   "anzahl": 2,
+   "beispiel": "0",
+   "stichtag": "2025-12-31"
+  },
+  "CurrentAdvancesOnPurchaseOfPropertyPlantAndEquipment": {
+   "anzahl": 2,
+   "beispiel": "0",
+   "stichtag": "2025-12-31"
+  },
+  "OtherCurrentAdvances": {
+   "anzahl": 2,
+   "beispiel": "2119000000000",
+   "stichtag": "2025-12-31"
+  },
+  "CurrentPrepaidTaxes": {
+   "anzahl": 2,
+   "beispiel": "2234000000000",
+   "stichtag": "2025-12-31"
+  },
+  "CurrentClaimsForTaxRefund": {
+   "anzahl": 2,
+   "beispiel": "5148000000000",
+   "stichtag": "2025-12-31"
+  },
+  "CurrentDeferredStrippingCosts": {
+   "anzahl": 2,
+   "beispiel": "0",
+   "stichtag": "2025-12-31"
+  },
+  "CurrentDeferredMobilisationCosts": {
+   "anzahl": 2,
+   "beispiel": "0",
+   "stichtag": "2025-12-31"
+  },
+  "CurrentTaxAmnestyAssets": {
+   "anzahl": 2,
+   "beispiel": "0",
+   "stichtag": "2025-12-31"
+  },
+  "OtherCurrentNonFinancialAssets": {
+   "anzahl": 2,
+   "beispiel": "5918000000000",
+   "stichtag": "2025-12-31"
+  },
+  "NonCurrentAssetsOrDisposalGroupsClassifiedAsHeldForSale": {
+   "anzahl": 2,
+   "beispiel": "0",
+   "stichtag": "2025-12-31"
+  },
+  "NonCurrentAssetsOrDisposalGroupsClassifiedAsHeldForDistributionToOwners": {
+   "anzahl": 2,
+   "beispiel": "0",
+   "stichtag": "2025-12-31"
+  },
+  "CurrentAssets": {
+   "anzahl": 2,
+   "beispiel": "188555000000000",
+   "stichtag": "2025-12-31"
+  },
+  "NonCurrentFinanceLeaseReceivables": {
+   "anzahl": 2,
+   "beispiel": "45746000000000",
+   "stichtag": "2025-12-31"
+  },
+  "NonCurrentRestrictedFunds": {
+   "anzahl": 2,
+   "beispiel": "971000000000",
+   "stichtag": "2025-12-31"
+  },
+  "AircraftMaintenanceReserveFunds": {
+   "anzahl": 2,
+   "beispiel": "0",
+   "stichtag": "2025-12-31"
+  },
+  "ReceivablesFromRelatedParties": {
+   "anzahl": 2,
+   "beispiel": "0",
+   "stichtag": "2025-12-31"
+  },
+  "ReceivablesFromStockholders": {
+   "anzahl": 2,
+   "beispiel": "0",
+   "stichtag": "2025-12-31"
+  },
+  "OtherNonCurrentReceivablesThirdParties": {
+   "anzahl": 2,
+   "beispiel": "512000000000",
+   "stichtag": "2025-12-31"
+  },
+  "OtherNonCurrentReceivablesRelatedParties": {
+   "anzahl": 2,
+   "beispiel": "2492000000000",
+   "stichtag": "2025-12-31"
+  },
+  "InvestmentsAccountedForUsingEquityMethod": {
+   "anzahl": 2,
+   "beispiel": "0",
+   "stichtag": "2025-12-31"
+  },
+  "InvestmentsInJointVentures": {
+   "anzahl": 2,
+   "beispiel": "40192000000000",
+   "stichtag": "2025-12-31"
+  },
+  "InvestmentsInAssociates": {
+   "anzahl": 2,
+   "beispiel": "33249000000000",
+   "stichtag": "2025-12-31"
+  },
+  "NonCurrentGuarantees": {
+   "anzahl": 2,
+   "beispiel": "0",
+   "stichtag": "2025-12-31"
+  },
+  "NonCurrentAdvancesOnInvestments": {
+   "anzahl": 2,
+   "beispiel": "0",
+   "stichtag": "2025-12-31"
+  },
+  "NonCurrentAdvancesOnPurchaseOfPropertyPlantAndEquipment": {
+   "anzahl": 2,
+   "beispiel": "774000000000",
+   "stichtag": "2025-12-31"
+  },
+  "OtherNonCurrentAdvances": {
+   "anzahl": 2,
+   "beispiel": "335000000000",
+   "stichtag": "2025-12-31"
+  },
+  "NonCurrentFinancialAssetsAtFairValueThroughProfitOrLoss": {
+   "anzahl": 2,
+   "beispiel": "4340000000000",
+   "stichtag": "2025-12-31"
+  },
+  "NonCurrentFinancialAssetsFairValueThroughOtherComprehensiveIncome": {
+   "anzahl": 2,
+   "beispiel": "20342000000000",
+   "stichtag": "2025-12-31"
+  },
+  "NonCurrentFinancialAssetsAmortizedCost": {
+   "anzahl": 2,
+   "beispiel": "0",
+   "stichtag": "2025-12-31"
+  },
+  "OtherNonCurrentFinancialAssets": {
+   "anzahl": 2,
+   "beispiel": "0",
+   "stichtag": "2025-12-31"
+  },
+  "NonCurrentDerivativeFinancialAssets": {
+   "anzahl": 2,
+   "beispiel": "177000000000",
+   "stichtag": "2025-12-31"
+  },
+  "NonCurrentPrepaidExpenses": {
+   "anzahl": 2,
+   "beispiel": "0",
+   "stichtag": "2025-12-31"
+  },
+  "NonCurrentPrepaidTaxes": {
+   "anzahl": 2,
+   "beispiel": "2846000000000",
+   "stichtag": "2025-12-31"
+  },
+  "DeferredTaxAssets": {
+   "anzahl": 2,
+   "beispiel": "7779000000000",
+   "stichtag": "2025-12-31"
+  },
+  "NonCurrentLivestockInventories": {
+   "anzahl": 2,
+   "beispiel": "0",
+   "stichtag": "2025-12-31"
+  },
+  "NonCurrentRealEstateAssets": {
+   "anzahl": 2,
+   "beispiel": "6185000000000",
+   "stichtag": "2025-12-31"
+  },
+  "NonCurrentInventories": {
+   "anzahl": 2,
+   "beispiel": "106000000000",
+   "stichtag": "2025-12-31"
+  },
+  "LivestockProduction": {
+   "anzahl": 2,
+   "beispiel": "0",
+   "stichtag": "2025-12-31"
+  },
+  "PlantationAssetsMature": {
+   "anzahl": 2,
+   "beispiel": "5995000000000",
+   "stichtag": "2025-12-31"
+  },
+  "PlantationAssetsImmature": {
+   "anzahl": 2,
+   "beispiel": "1390000000000",
+   "stichtag": "2025-12-31"
+  },
+  "PlasmaPlantations": {
+   "anzahl": 2,
+   "beispiel": "1191000000000",
+   "stichtag": "2025-12-31"
+  },
+  "ReinsuranceAssets": {
+   "anzahl": 2,
+   "beispiel": "0",
+   "stichtag": "2025-12-31"
+  },
+  "InvestmentProperties": {
+   "anzahl": 2,
+   "beispiel": "14680000000000",
+   "stichtag": "2025-12-31"
+  },
+  "UndevelopedLand": {
+   "anzahl": 2,
+   "beispiel": "0",
+   "stichtag": "2025-12-31"
+  },
+  "PropertyPlantAndEquipment": {
+   "anzahl": 3,
+   "beispiel": "83766000000000",
+   "stichtag": "2025-12-31"
+  },
+  "RightOfUseAssets": {
+   "anzahl": 2,
+   "beispiel": "0",
+   "stichtag": "2025-12-31"
+  },
+  "IjarahAssets": {
+   "anzahl": 2,
+   "beispiel": "0",
+   "stichtag": "2025-12-31"
+  },
+  "ForeclosedAssets": {
+   "anzahl": 2,
+   "beispiel": "0",
+   "stichtag": "2025-12-31"
+  },
+  "OilAndGasAssets": {
+   "anzahl": 2,
+   "beispiel": "0",
+   "stichtag": "2025-12-31"
+  },
+  "ExplorationAndEvaluationAssets": {
+   "anzahl": 2,
+   "beispiel": "3958000000000",
+   "stichtag": "2025-12-31"
+  },
+  "TollRoadConcessionRights": {
+   "anzahl": 2,
+   "beispiel": "9509000000000",
+   "stichtag": "2025-12-31"
+  },
+  "MiningProperties": {
+   "anzahl": 2,
+   "beispiel": "14809000000000",
+   "stichtag": "2025-12-31"
+  },
+  "NonCurrentDeferredStrippingCosts": {
+   "anzahl": 2,
+   "beispiel": "0",
+   "stichtag": "2025-12-31"
+  },
+  "NonCurrentDeferredMobilisationCosts": {
+   "anzahl": 2,
+   "beispiel": "0",
+   "stichtag": "2025-12-31"
+  },
+  "DeferredChargesOnLandrights": {
+   "anzahl": 2,
+   "beispiel": "0",
+   "stichtag": "2025-12-31"
+  },
+  "DeferredChargesOnExplorationAndDevelopmentExpenditures": {
+   "anzahl": 2,
+   "beispiel": "2769000000000",
+   "stichtag": "2025-12-31"
+  },
+  "DeferredChargesOnCostOnForest": {
+   "anzahl": 2,
+   "beispiel": "0",
+   "stichtag": "2025-12-31"
+  },
+  "DeferredChargesOnEnvironmentalAndReclamationExpenditures": {
+   "anzahl": 2,
+   "beispiel": "0",
+   "stichtag": "2025-12-31"
+  },
+  "OtherDeferredCharges": {
+   "anzahl": 2,
+   "beispiel": "1333000000000",
+   "stichtag": "2025-12-31"
+  },
+  "NonCurrentClaimsForTaxRefund": {
+   "anzahl": 2,
+   "beispiel": "1680000000000",
+   "stichtag": "2025-12-31"
+  },
+  "PostEmploymentBenefitAssets": {
+   "anzahl": 2,
+   "beispiel": "0",
+   "stichtag": "2025-12-31"
+  },
+  "Goodwill": {
+   "anzahl": 2,
+   "beispiel": "6427000000000",
+   "stichtag": "2025-12-31"
+  },
+  "IntangibleAssetsOtherThanGoodwill": {
+   "anzahl": 2,
+   "beispiel": "2374000000000",
+   "stichtag": "2025-12-31"
+  },
+  "NonCurrentTaxAmnestyAssets": {
+   "anzahl": 2,
+   "beispiel": "0",
+   "stichtag": "2025-12-31"
+  },
+  "OtherNonCurrentNonFinancialAssets": {
+   "anzahl": 2,
+   "beispiel": "2884000000000",
+   "stichtag": "2025-12-31"
+  },
+  "NonCurrentAssets": {
+   "anzahl": 2,
+   "beispiel": "318811000000000",
+   "stichtag": "2025-12-31"
+  },
+  "Assets": {
+   "anzahl": 2,
+   "beispiel": "507366000000000",
+   "stichtag": "2025-12-31"
+  },
+  "ShortTermBankLoans": {
+   "anzahl": 2,
+   "beispiel": "20851000000000",
+   "stichtag": "2025-12-31"
+  },
+  "TrustReceiptsPayables": {
+   "anzahl": 2,
+   "beispiel": "0",
+   "stichtag": "2025-12-31"
+  },
+  "TradePayablesThirdParties": {
+   "anzahl": 2,
+   "beispiel": "33651000000000",
+   "stichtag": "2025-12-31"
+  },
+  "TradePayablesRelatedParties": {
+   "anzahl": 2,
+   "beispiel": "5587000000000",
+   "stichtag": "2025-12-31"
+  },
+  "OtherPayablesThirdParties": {
+   "anzahl": 2,
+   "beispiel": "15644000000000",
+   "stichtag": "2025-12-31"
+  },
+  "OtherPayablesRelatedParties": {
+   "anzahl": 2,
+   "beispiel": "37000000000",
+   "stichtag": "2025-12-31"
+  },
+  "CurrentAdvancesFromCustomersThirdParties": {
+   "anzahl": 2,
+   "beispiel": "4014000000000",
+   "stichtag": "2025-12-31"
+  },
+  "CurrentAdvancesFromCustomersRelatedParties": {
+   "anzahl": 2,
+   "beispiel": "154000000000",
+   "stichtag": "2025-12-31"
+  },
+  "DividendsPayable": {
+   "anzahl": 2,
+   "beispiel": "117000000000",
+   "stichtag": "2025-12-31"
+  },
+  "OtherCurrentFinancialLiabilities": {
+   "anzahl": 2,
+   "beispiel": "150000000000",
+   "stichtag": "2025-12-31"
+  },
+  "CurrentAccruedExpenses": {
+   "anzahl": 2,
+   "beispiel": "16096000000000",
+   "stichtag": "2025-12-31"
+  },
+  "ShortTermPostEmploymentBenefitObligations": {
+   "anzahl": 2,
+   "beispiel": "1213000000000",
+   "stichtag": "2025-12-31"
+  },
+  "TaxesPayable": {
+   "anzahl": 2,
+   "beispiel": "3557000000000",
+   "stichtag": "2025-12-31"
+  },
+  "ExcisePayable": {
+   "anzahl": 2,
+   "beispiel": "0",
+   "stichtag": "2025-12-31"
+  },
+  "ProjectPayables": {
+   "anzahl": 2,
+   "beispiel": "0",
+   "stichtag": "2025-12-31"
+  },
+  "PayablesToClearingAndSettlementGuaranteeInstitution": {
+   "anzahl": 2,
+   "beispiel": "0",
+   "stichtag": "2025-12-31"
+  },
+  "CurrentDeposits": {
+   "anzahl": 2,
+   "beispiel": "34000000000",
+   "stichtag": "2025-12-31"
+  },
+  "DueToCustomersThirdParties": {
+   "anzahl": 2,
+   "beispiel": "0",
+   "stichtag": "2025-12-31"
+  },
+  "DueToCustomersRelatedParties": {
+   "anzahl": 2,
+   "beispiel": "0",
+   "stichtag": "2025-12-31"
+  },
+  "CurrentDeferredRevenue": {
+   "anzahl": 2,
+   "beispiel": "2349000000000",
+   "stichtag": "2025-12-31"
+  },
+  "CurrentProvisionsForOverlay": {
+   "anzahl": 2,
+   "beispiel": "180000000000",
+   "stichtag": "2025-12-31"
+  },
+  "CurrentProvisionsForAircraftReturnAndMaintenanceFunds": {
+   "anzahl": 2,
+   "beispiel": "0",
+   "stichtag": "2025-12-31"
+  },
+  "CurrentProvisionsForInfrastructureDevelopmentPublicAndSocialFacilities": {
+   "anzahl": 2,
+   "beispiel": "0",
+   "stichtag": "2025-12-31"
+  },
+  "CurrentProvisionsForAssetDismantlingCosts": {
+   "anzahl": 2,
+   "beispiel": "0",
+   "stichtag": "2025-12-31"
+  },
+  "CurrentProvisionsForRestorationAndRehabilitation": {
+   "anzahl": 2,
+   "beispiel": "0",
+   "stichtag": "2025-12-31"
+  },
+  "OtherCurrentProvisions": {
+   "anzahl": 2,
+   "beispiel": "105000000000",
+   "stichtag": "2025-12-31"
+  },
+  "ShareBasedPaymentLiabilities": {
+   "anzahl": 2,
+   "beispiel": "0",
+   "stichtag": "2025-12-31"
+  },
+  "CurrentContractLiabilities": {
+   "anzahl": 2,
+   "beispiel": "0",
+   "stichtag": "2025-12-31"
+  },
+  "LiabilitiesDirectlyAssociatedWithNonCurrentAssetsOrDisposalGroupsClassifiedAsHeldForSaleOrAsHeldForDistributionToOwners": {
+   "anzahl": 2,
+   "beispiel": "0",
+   "stichtag": "2025-12-31"
+  },
+  "CurrentMaturitiesOfBankLoans": {
+   "anzahl": 2,
+   "beispiel": "35325000000000",
+   "stichtag": "2025-12-31"
+  },
+  "CurrentMaturitiesOfSecuredLoans": {
+   "anzahl": 2,
+   "beispiel": "0",
+   "stichtag": "2025-12-31"
+  },
+  "CurrentMaturitiesOfUnsecuredLoans": {
+   "anzahl": 2,
+   "beispiel": "0",
+   "stichtag": "2025-12-31"
+  },
+  "CurrentMaturitiesOfStepLoans": {
+   "anzahl": 2,
+   "beispiel": "0",
+   "stichtag": "2025-12-31"
+  },
+  "CurrentMaturitiesOfLoansFromGovernmentOfTheRepublicOfIndonesia": {
+   "anzahl": 2,
+   "beispiel": "0",
+   "stichtag": "2025-12-31"
+  },
+  "CurrentMaturitiesOfSubordinatedLoans": {
+   "anzahl": 2,
+   "beispiel": "0",
+   "stichtag": "2025-12-31"
+  },
+  "CurrentMaturitiesOfJointOperationsLiabilities": {
+   "anzahl": 2,
+   "beispiel": "0",
+   "stichtag": "2025-12-31"
+  },
+  "CurrentMaturitiesOfLandAcquisitionLiabilities": {
+   "anzahl": 2,
+   "beispiel": "0",
+   "stichtag": "2025-12-31"
+  },
+  "CurrentMaturitiesOfConsumerFinancingPayables": {
+   "anzahl": 2,
+   "beispiel": "0",
+   "stichtag": "2025-12-31"
+  },
+  "CurrentMaturitiesOfFinanceLeaseLiabilities": {
+   "anzahl": 2,
+   "beispiel": "835000000000",
+   "stichtag": "2025-12-31"
+  },
+  "CurrentMaturitiesOfElectricityPurchasePayables": {
+   "anzahl": 2,
+   "beispiel": "0",
+   "stichtag": "2025-12-31"
+  },
+  "CurrentMaturitiesOfRetentionPayables": {
+   "anzahl": 2,
+   "beispiel": "0",
+   "stichtag": "2025-12-31"
+  },
+  "CurrentMaturitiesOfNotesPayable": {
+   "anzahl": 2,
+   "beispiel": "0",
+   "stichtag": "2025-12-31"
+  },
+  "CurrentMaturitiesOfMediumTermNotes": {
+   "anzahl": 2,
+   "beispiel": "0",
+   "stichtag": "2025-12-31"
+  },
+  "CurrentMaturitiesOfBondsPayable": {
+   "anzahl": 2,
+   "beispiel": "12103000000000",
+   "stichtag": "2025-12-31"
+  },
+  "CurrentMaturitiesOfSukuk": {
+   "anzahl": 2,
+   "beispiel": "0",
+   "stichtag": "2025-12-31"
+  },
+  "CurrentMaturitiesOfSubordinatedBonds": {
+   "anzahl": 2,
+   "beispiel": "0",
+   "stichtag": "2025-12-31"
+  },
+  "CurrentMaturitiesOfOtherBorrowings": {
+   "anzahl": 2,
+   "beispiel": "61000000000",
+   "stichtag": "2025-12-31"
+  },
+  "CurrentDueToRelatedParties": {
+   "anzahl": 2,
+   "beispiel": "0",
+   "stichtag": "2025-12-31"
+  },
+  "CurrentDueToStockholders": {
+   "anzahl": 2,
+   "beispiel": "0",
+   "stichtag": "2025-12-31"
+  },
+  "ShortTermDerivativeFinancialLiabilities": {
+   "anzahl": 2,
+   "beispiel": "15000000000",
+   "stichtag": "2025-12-31"
+  },
+  "CurrentTaxAmnestyLiabilities": {
+   "anzahl": 2,
+   "beispiel": "0",
+   "stichtag": "2025-12-31"
+  },
+  "OtherCurrentNonFinancialLiabilities": {
+   "anzahl": 2,
+   "beispiel": "0",
+   "stichtag": "2025-12-31"
+  },
+  "CurrentLiabilities": {
+   "anzahl": 2,
+   "beispiel": "152078000000000",
+   "stichtag": "2025-12-31"
+  },
+  "LongTermDerivativeFinancialLiabilities": {
+   "anzahl": 2,
+   "beispiel": "3591000000000",
+   "stichtag": "2025-12-31"
+  },
+  "DeferredTaxLiabilities": {
+   "anzahl": 2,
+   "beispiel": "5150000000000",
+   "stichtag": "2025-12-31"
+  },
+  "NonCurrentDueToRelatedParties": {
+   "anzahl": 2,
+   "beispiel": "0",
+   "stichtag": "2025-12-31"
+  },
+  "NonCurrentDueToStockholders": {
+   "anzahl": 2,
+   "beispiel": "0",
+   "stichtag": "2025-12-31"
+  },
+  "LongTermBankLoans": {
+   "anzahl": 2,
+   "beispiel": "28159000000000",
+   "stichtag": "2025-12-31"
+  },
+  "LongTermStepLoans": {
+   "anzahl": 2,
+   "beispiel": "0",
+   "stichtag": "2025-12-31"
+  },
+  "LongTermSecuredLoans": {
+   "anzahl": 2,
+   "beispiel": "0",
+   "stichtag": "2025-12-31"
+  },
+  "LongTermUnsecuredLoans": {
+   "anzahl": 2,
+   "beispiel": "0",
+   "stichtag": "2025-12-31"
+  },
+  "LongTermLoansFromGovernmentOfTheRepublicOfIndonesia": {
+   "anzahl": 2,
+   "beispiel": "0",
+   "stichtag": "2025-12-31"
+  },
+  "LongTermSubordinatedLoans": {
+   "anzahl": 2,
+   "beispiel": "0",
+   "stichtag": "2025-12-31"
+  },
+  "LongTermJointOperationsLiabilities": {
+   "anzahl": 2,
+   "beispiel": "0",
+   "stichtag": "2025-12-31"
+  },
+  "LongTermLandAcquisitionLiabilities": {
+   "anzahl": 2,
+   "beispiel": "0",
+   "stichtag": "2025-12-31"
+  },
+  "LongTermConsumerFinancingPayables": {
+   "anzahl": 2,
+   "beispiel": "0",
+   "stichtag": "2025-12-31"
+  },
+  "LongTermFinanceLeaseLiabilities": {
+   "anzahl": 2,
+   "beispiel": "1125000000000",
+   "stichtag": "2025-12-31"
+  },
+  "LongTermElectricityPurchasePayables": {
+   "anzahl": 2,
+   "beispiel": "0",
+   "stichtag": "2025-12-31"
+  },
+  "LongTermRetentionPayables": {
+   "anzahl": 2,
+   "beispiel": "0",
+   "stichtag": "2025-12-31"
+  },
+  "LongTermNotesPayable": {
+   "anzahl": 2,
+   "beispiel": "0",
+   "stichtag": "2025-12-31"
+  },
+  "LongTermMediumTermNotes": {
+   "anzahl": 2,
+   "beispiel": "0",
+   "stichtag": "2025-12-31"
+  },
+  "LongTermBondsPayable": {
+   "anzahl": 2,
+   "beispiel": "11410000000000",
+   "stichtag": "2025-12-31"
+  },
+  "LongTermSukuk": {
+   "anzahl": 2,
+   "beispiel": "0",
+   "stichtag": "2025-12-31"
+  },
+  "LongTermSubordinatedBonds": {
+   "anzahl": 2,
+   "beispiel": "0",
+   "stichtag": "2025-12-31"
+  },
+  "LongTermOtherBorrowings": {
+   "anzahl": 2,
+   "beispiel": "282000000000",
+   "stichtag": "2025-12-31"
+  },
+  "ConvertibleBonds": {
+   "anzahl": 2,
+   "beispiel": "0",
+   "stichtag": "2025-12-31"
+  },
+  "NonCurrentUnearnedRevenue": {
+   "anzahl": 2,
+   "beispiel": "0",
+   "stichtag": "2025-12-31"
+  },
+  "NonCurrentDeposits": {
+   "anzahl": 2,
+   "beispiel": "132000000000",
+   "stichtag": "2025-12-31"
+  },
+  "NonCurrentAdvancesFromCustomersThirdParties": {
+   "anzahl": 2,
+   "beispiel": "0",
+   "stichtag": "2025-12-31"
+  },
+  "NonCurrentAdvancesFromCustomersRelatedParties": {
+   "anzahl": 2,
+   "beispiel": "0",
+   "stichtag": "2025-12-31"
+  },
+  "NonCurrentDeferredRevenue": {
+   "anzahl": 2,
+   "beispiel": "342000000000",
+   "stichtag": "2025-12-31"
+  },
+  "InsuranceContractLiabilities": {
+   "anzahl": 2,
+   "beispiel": "0",
+   "stichtag": "2025-12-31"
+  },
+  "NonCurrentProvisionsForOverlay": {
+   "anzahl": 2,
+   "beispiel": "198000000000",
+   "stichtag": "2025-12-31"
+  },
+  "NonCurrentProvisionsForAircraftReturnAndMaintenanceFunds": {
+   "anzahl": 2,
+   "beispiel": "0",
+   "stichtag": "2025-12-31"
+  },
+  "NonCurrentProvisionsForInfrastructureDevelopmentPublicAndSocialFacilities": {
+   "anzahl": 2,
+   "beispiel": "0",
+   "stichtag": "2025-12-31"
+  },
+  "NonCurrentProvisionsForAssetDismantlingCosts": {
+   "anzahl": 2,
+   "beispiel": "0",
+   "stichtag": "2025-12-31"
+  },
+  "NonCurrentProvisionsForRestorationAndRehabilitation": {
+   "anzahl": 2,
+   "beispiel": "1155000000000",
+   "stichtag": "2025-12-31"
+  },
+  "OtherNonCurrentProvisions": {
+   "anzahl": 2,
+   "beispiel": "0",
+   "stichtag": "2025-12-31"
+  },
+  "AccruedStrippingCosts": {
+   "anzahl": 2,
+   "beispiel": "0",
+   "stichtag": "2025-12-31"
+  },
+  "LiabilitiesToPolicyholders": {
+   "anzahl": 2,
+   "beispiel": "0",
+   "stichtag": "2025-12-31"
+  },
+  "LongTermPostEmploymentBenefitObligations": {
+   "anzahl": 2,
+   "beispiel": "9954000000000",
+   "stichtag": "2025-12-31"
+  },
+  "NonCurrentTaxAmnestyLiabilities": {
+   "anzahl": 2,
+   "beispiel": "0",
+   "stichtag": "2025-12-31"
+  },
+  "OtherNonCurrentFinancialLiabilities": {
+   "anzahl": 2,
+   "beispiel": "2978000000000",
+   "stichtag": "2025-12-31"
+  },
+  "OtherNonCurrentNonFinancialLiabilities": {
+   "anzahl": 2,
+   "beispiel": "0",
+   "stichtag": "2025-12-31"
+  },
+  "NonCurrentLiabilities": {
+   "anzahl": 2,
+   "beispiel": "64476000000000",
+   "stichtag": "2025-12-31"
+  },
+  "Liabilities": {
+   "anzahl": 2,
+   "beispiel": "216554000000000",
+   "stichtag": "2025-12-31"
+  },
+  "CommonStocks": {
+   "anzahl": 2,
+   "beispiel": "2024000000000",
+   "stichtag": "2025-12-31"
+  },
+  "PreferredStocks": {
+   "anzahl": 2,
+   "beispiel": "0",
+   "stichtag": "2025-12-31"
+  },
+  "AdditionalPaidInCapital": {
+   "anzahl": 2,
+   "beispiel": "1139000000000",
+   "stichtag": "2025-12-31"
+  },
+  "TreasuryStocks": {
+   "anzahl": 2,
+   "beispiel": "1762000000000",
+   "stichtag": "2025-12-31"
+  },
+  "AdvancesInCapitalStock": {
+   "anzahl": 2,
+   "beispiel": "0",
+   "stichtag": "2025-12-31"
+  },
+  "StockOptions": {
+   "anzahl": 2,
+   "beispiel": "0",
+   "stichtag": "2025-12-31"
+  },
+  "RevaluationReserves": {
+   "anzahl": 2,
+   "beispiel": "2466000000000",
+   "stichtag": "2025-12-31"
+  },
+  "ReserveOfExchangeDifferencesOnTranslation": {
+   "anzahl": 2,
+   "beispiel": "5986000000000",
+   "stichtag": "2025-12-31"
+  },
+  "ReserveForChangesInFairValueOfFairValueThroughOtherComprehensiveIncomeFinancialAssets": {
+   "anzahl": 2,
+   "beispiel": "235000000000",
+   "stichtag": "2025-12-31"
+  },
+  "ReserveOfGainsLossesFromInvestmentsInEquityInstruments": {
+   "anzahl": 2,
+   "beispiel": "0",
+   "stichtag": "2025-12-31"
+  },
+  "ReserveOfShareBasedPayments": {
+   "anzahl": 2,
+   "beispiel": "0",
+   "stichtag": "2025-12-31"
+  },
+  "ReserveOfCashFlowHedges": {
+   "anzahl": 2,
+   "beispiel": "-1601000000000",
+   "stichtag": "2025-12-31"
+  },
+  "ReserveOfRemeasurementsOfDefinedBenefitPlans": {
+   "anzahl": 2,
+   "beispiel": "0",
+   "stichtag": "2025-12-31"
+  },
+  "OtherReserves": {
+   "anzahl": 2,
+   "beispiel": "0",
+   "stichtag": "2025-12-31"
+  },
+  "DifferenceDueToChangesOfEquityInSubsidiaryAssociates": {
+   "anzahl": 2,
+   "beispiel": "0",
+   "stichtag": "2025-12-31"
+  },
+  "OtherComponentsOfEquity": {
+   "anzahl": 2,
+   "beispiel": "1482000000000",
+   "stichtag": "2025-12-31"
+  },
+  "AppropriatedRetainedEarnings": {
+   "anzahl": 2,
+   "beispiel": "425000000000",
+   "stichtag": "2025-12-31"
+  },
+  "UnappropriatedRetainedEarnings": {
+   "anzahl": 2,
+   "beispiel": "218512000000000",
+   "stichtag": "2025-12-31"
+  },
+  "EquityAttributableToEquityOwnersOfParentEntity": {
+   "anzahl": 2,
+   "beispiel": "228906000000000",
+   "stichtag": "2025-12-31"
+  },
+  "ProformaEquity": {
+   "anzahl": 2,
+   "beispiel": "0",
+   "stichtag": "2025-12-31"
+  },
+  "NonControllingInterests": {
+   "anzahl": 2,
+   "beispiel": "61906000000000",
+   "stichtag": "2025-12-31"
+  },
+  "Equity": {
+   "anzahl": 2,
+   "beispiel": "290812000000000",
+   "stichtag": "2025-12-31"
+  },
+  "LiabilitiesAndEquity": {
+   "anzahl": 2,
+   "beispiel": "507366000000000",
+   "stichtag": "2025-12-31"
+  },
+  "SalesAndRevenue": {
+   "anzahl": 2,
+   "beispiel": "323392000000000",
+   "stichtag": "2025-12-31"
+  },
+  "CostOfSalesAndRevenue": {
+   "anzahl": 2,
+   "beispiel": "251948000000000",
+   "stichtag": "2025-12-31"
+  },
+  "GrossProfit": {
+   "anzahl": 2,
+   "beispiel": "71444000000000",
+   "stichtag": "2025-12-31"
+  },
+  "SellingExpenses": {
+   "anzahl": 2,
+   "beispiel": "11744000000000",
+   "stichtag": "2025-12-31"
+  },
+  "GeneralAndAdministrativeExpenses": {
+   "anzahl": 2,
+   "beispiel": "21035000000000",
+   "stichtag": "2025-12-31"
+  },
+  "DividendsIncome": {
+   "anzahl": 2,
+   "beispiel": "435000000000",
+   "stichtag": "2025-12-31"
+  },
+  "InterestIncome": {
+   "anzahl": 2,
+   "beispiel": "3655000000000",
+   "stichtag": "2025-12-31"
+  },
+  "InvestmentIncome": {
+   "anzahl": 2,
+   "beispiel": "0",
+   "stichtag": "2025-12-31"
+  },
+  "FinanceIncome": {
+   "anzahl": 2,
+   "beispiel": "0",
+   "stichtag": "2025-12-31"
+  },
+  "InterestAndFinanceCosts": {
+   "anzahl": 2,
+   "beispiel": "3734000000000",
+   "stichtag": "2025-12-31"
+  },
+  "GainsLossesOnChangesInForeignExchangeRates": {
+   "anzahl": 2,
+   "beispiel": "-70000000000",
+   "stichtag": "2025-12-31"
+  },
+  "ShareOfProfitLossOfAssociatesAccountedForUsingEquityMethod": {
+   "anzahl": 2,
+   "beispiel": "1208000000000",
+   "stichtag": "2025-12-31"
+  },
+  "ShareOfProfitLossOfJointVenturesAccountedForUsingEquityMethod": {
+   "anzahl": 2,
+   "beispiel": "8410000000000",
+   "stichtag": "2025-12-31"
+  },
+  "GainsLossesOnChangesInFairValueOfMarketableSecurities": {
+   "anzahl": 2,
+   "beispiel": "0",
+   "stichtag": "2025-12-31"
+  },
+  "RealisedGainsLossesOnTradingOfMarketableSecurities": {
+   "anzahl": 2,
+   "beispiel": "0",
+   "stichtag": "2025-12-31"
+  },
+  "GainsLossesOnDerivativeFinancialInstruments": {
+   "anzahl": 2,
+   "beispiel": "0",
+   "stichtag": "2025-12-31"
+  },
+  "FinalTaxExpenses": {
+   "anzahl": 2,
+   "beispiel": "0",
+   "stichtag": "2025-12-31"
+  },
+  "OtherIncome": {
+   "anzahl": 2,
+   "beispiel": "4598000000000",
+   "stichtag": "2025-12-31"
+  },
+  "OtherExpenses": {
+   "anzahl": 2,
+   "beispiel": "3879000000000",
+   "stichtag": "2025-12-31"
+  },
+  "OtherGainsLosses": {
+   "anzahl": 2,
+   "beispiel": "0",
+   "stichtag": "2025-12-31"
+  },
+  "ProfitLossBeforeIncomeTax": {
+   "anzahl": 2,
+   "beispiel": "49288000000000",
+   "stichtag": "2025-12-31"
+  },
+  "TaxBenefitExpenses": {
+   "anzahl": 2,
+   "beispiel": "-9083000000000",
+   "stichtag": "2025-12-31"
+  },
+  "ProfitLossFromContinuingOperations": {
+   "anzahl": 2,
+   "beispiel": "40205000000000",
+   "stichtag": "2025-12-31"
+  },
+  "ProfitLossFromDiscontinuedOperations": {
+   "anzahl": 2,
+   "beispiel": "0",
+   "stichtag": "2025-12-31"
+  },
+  "ProfitLoss": {
+   "anzahl": 2,
+   "beispiel": "40205000000000",
+   "stichtag": "2025-12-31"
+  },
+  "OtherComprehensiveIncomeForGainsLossesOnRevaluationOfPropertyPlantAndEquipmentBeforeTax": {
+   "anzahl": 2,
+   "beispiel": "2000000000",
+   "stichtag": "2025-12-31"
+  },
+  "OtherComprehensiveIncomeForRemeasurementOfDefinedBenefitObligationBeforeTax": {
+   "anzahl": 2,
+   "beispiel": "107000000000",
+   "stichtag": "2025-12-31"
+  },
+  "OtherAdjustmentsToOtherComprehensiveIncomeThatWillNotBeReclassifiedToProfitOrLossBeforeTax": {
+   "anzahl": 2,
+   "beispiel": "-22000000000",
+   "stichtag": "2025-12-31"
+  },
+  "OtherComprehensiveIncomeThatWillNotBeReclassifiedToProfitOrLossBeforeTax": {
+   "anzahl": 2,
+   "beispiel": "87000000000",
+   "stichtag": "2025-12-31"
+  },
+  "GainsLossesOnExchangeDifferencesOnTranslationBeforeTax": {
+   "anzahl": 2,
+   "beispiel": "1364000000000",
+   "stichtag": "2025-12-31"
+  },
+  "ReclassificationAdjustmentsOnExchangeDifferencesOnTranslationBeforeTax": {
+   "anzahl": 2,
+   "beispiel": "0",
+   "stichtag": "2025-12-31"
+  },
+  "UnrealisedGainsLossesOnChangesInFairValueThroughOtherComprehensiveIncomeFinancialAssetsBeforeTax": {
+   "anzahl": 2,
+   "beispiel": "663000000000",
+   "stichtag": "2025-12-31"
+  },
+  "ReclassificationAdjustmentsOnFairValueThroughOtherComprehensiveIncomeFinancialAssetsBeforeTax": {
+   "anzahl": 2,
+   "beispiel": "0",
+   "stichtag": "2025-12-31"
+  },
+  "GainsLossesOnCashFlowHedgesBeforeTax": {
+   "anzahl": 2,
+   "beispiel": "-3774000000000",
+   "stichtag": "2025-12-31"
+  },
+  "ReclassificationAdjustmentsOnCashFlowHedgesBeforeTax": {
+   "anzahl": 2,
+   "beispiel": "0",
+   "stichtag": "2025-12-31"
+  },
+  "CarryingAmountOfNonFinancialAssetLiabilityWhoseAcquisitionOrIncurrenceWasHedgedOnHighlyProbableForecastTransactionAdjustedFromEquityBeforeTax": {
+   "anzahl": 2,
+   "beispiel": "0",
+   "stichtag": "2025-12-31"
+  },
+  "GainsLossesOnHedgesOfNetInvestmentsInForeignOperationsBeforeTax": {
+   "anzahl": 2,
+   "beispiel": "0",
+   "stichtag": "2025-12-31"
+  },
+  "ReclassificationAdjustmentsOnHedgesOfNetInvestmentsInForeignOperationsBeforeTax": {
+   "anzahl": 2,
+   "beispiel": "0",
+   "stichtag": "2025-12-31"
+  },
+  "ShareOfOtherComprehensiveIncomeOfAssociatesAccountedForUsingEquityMethodBeforeTax": {
+   "anzahl": 2,
+   "beispiel": "448000000000",
+   "stichtag": "2025-12-31"
+  },
+  "ShareOfOtherComprehensiveIncomeOfJointVenturesAccountedForUsingEquityMethodBeforeTax": {
+   "anzahl": 2,
+   "beispiel": "-122000000000",
+   "stichtag": "2025-12-31"
+  },
+  "OtherAdjustmentsToOtherComprehensiveIncomeThatMayBeReclassifiedToProfitOrLossBeforeTax": {
+   "anzahl": 2,
+   "beispiel": "0",
+   "stichtag": "2025-12-31"
+  },
+  "OtherComprehensiveIncomeThatMayBeReclassifiedToProfitOrLossBeforeTax": {
+   "anzahl": 2,
+   "beispiel": "-1421000000000",
+   "stichtag": "2025-12-31"
+  },
+  "OtherComprehensiveIncomeBeforeTax": {
+   "anzahl": 2,
+   "beispiel": "-1334000000000",
+   "stichtag": "2025-12-31"
+  },
+  "TaxOnOtherComprehensiveIncome": {
+   "anzahl": 2,
+   "beispiel": "-794000000000",
+   "stichtag": "2025-12-31"
+  },
+  "OtherComprehensiveIncomeAfterTax": {
+   "anzahl": 2,
+   "beispiel": "-540000000000",
+   "stichtag": "2025-12-31"
+  },
+  "ComprehensiveIncome": {
+   "anzahl": 2,
+   "beispiel": "39665000000000",
+   "stichtag": "2025-12-31"
+  },
+  "ProfitLossAttributableToParentEntity": {
+   "anzahl": 2,
+   "beispiel": "32769000000000",
+   "stichtag": "2025-12-31"
+  },
+  "ProfitLossAttributableToNonControllingInterests": {
+   "anzahl": 2,
+   "beispiel": "7436000000000",
+   "stichtag": "2025-12-31"
+  },
+  "ComprehensiveIncomeAttributableToParentEntity": {
+   "anzahl": 2,
+   "beispiel": "32463000000000",
+   "stichtag": "2025-12-31"
+  },
+  "ComprehensiveIncomeAttributableToNonControllingInterests": {
+   "anzahl": 2,
+   "beispiel": "7202000000000",
+   "stichtag": "2025-12-31"
+  },
+  "BasicEarningsLossPerShareFromContinuingOperations": {
+   "anzahl": 2,
+   "beispiel": "810",
+   "stichtag": "2025-12-31"
+  },
+  "BasicEarningsLossPerShareFromDiscontinuedOperations": {
+   "anzahl": 2,
+   "beispiel": "0",
+   "stichtag": "2025-12-31"
+  },
+  "DilutedEarningsLossPerShareFromContinuingOperations": {
+   "anzahl": 2,
+   "beispiel": "810",
+   "stichtag": "2025-12-31"
+  },
+  "DilutedEarningsLossPerShareFromDiscontinuedOperations": {
+   "anzahl": 2,
+   "beispiel": "0",
+   "stichtag": "2025-12-31"
+  },
+  "BalanceBeforeRestatementAtBeginningOfPeriod": {
+   "anzahl": 2,
+   "beispiel": "271496000000000",
+   "stichtag": "2025-12-31"
+  },
+  "InitialAdoptionOfNewAndRevisedAccountingStandards": {
+   "anzahl": 2,
+   "beispiel": "508000000000",
+   "stichtag": "2025-12-31"
+  },
+  "VoluntaryChangesInAccountingPolicies": {
+   "anzahl": 2,
+   "beispiel": "0",
+   "stichtag": "2025-12-31"
+  },
+  "CorrectionOfPriorPeriodErrors": {
+   "anzahl": 2,
+   "beispiel": "0",
+   "stichtag": "2025-12-31"
+  },
+  "OtherAdjustments": {
+   "anzahl": 2,
+   "beispiel": "0",
+   "stichtag": "2025-12-31"
+  },
+  "EquityPositionBeginningOfThePeriod": {
+   "anzahl": 2,
+   "beispiel": "272004000000000",
+   "stichtag": "2025-12-31"
+  },
+  "ProfitLossChangesInEquity": {
+   "anzahl": 2,
+   "beispiel": "40205000000000",
+   "stichtag": "2025-12-31"
+  },
+  "OtherComprehensiveIncome": {
+   "anzahl": 2,
+   "beispiel": "-540000000000",
+   "stichtag": "2025-12-31"
+  },
+  "TranslationAdjustment": {
+   "anzahl": 2,
+   "beispiel": "0",
+   "stichtag": "2025-12-31"
+  },
+  "AllocationForGeneralReserves": {
+   "anzahl": 2,
+   "beispiel": "0",
+   "stichtag": "2025-12-31"
+  },
+  "DistributionsOfCashDividends": {
+   "anzahl": 2,
+   "beispiel": "20518000000000",
+   "stichtag": "2025-12-31"
+  },
+  "DistributionsOfStockDividends": {
+   "anzahl": 2,
+   "beispiel": "0",
+   "stichtag": "2025-12-31"
+  },
+  "IssuanceOfCommonStocks": {
+   "anzahl": 2,
+   "beispiel": "0",
+   "stichtag": "2025-12-31"
+  },
+  "IssuanceOfPreferredStocks": {
+   "anzahl": 2,
+   "beispiel": "0",
+   "stichtag": "2025-12-31"
+  },
+  "StockIssuanceCosts": {
+   "anzahl": 2,
+   "beispiel": "0",
+   "stichtag": "2025-12-31"
+  },
+  "IssuanceOfConvertibleInstruments": {
+   "anzahl": 2,
+   "beispiel": "0",
+   "stichtag": "2025-12-31"
+  },
+  "IncreaseDecreaseInEquityThroughTreasuryStockTransactions": {
+   "anzahl": 2,
+   "beispiel": "-1762000000000",
+   "stichtag": "2025-12-31"
+  },
+  "IncreaseDecreaseInEquityThroughShareBasedPaymentTransactions": {
+   "anzahl": 2,
+   "beispiel": "0",
+   "stichtag": "2025-12-31"
+  },
+  "ExerciseOfConvertibleInstruments": {
+   "anzahl": 2,
+   "beispiel": "0",
+   "stichtag": "2025-12-31"
+  },
+  "ExerciseOfWarrants": {
+   "anzahl": 2,
+   "beispiel": "0",
+   "stichtag": "2025-12-31"
+  },
+  "IncreaseDecreaseInEquityThroughTransactionsWithOwnersEquity": {
+   "anzahl": 2,
+   "beispiel": "0",
+   "stichtag": "2025-12-31"
+  },
+  "StockSubscriptionFromNonControllingInterests": {
+   "anzahl": 2,
+   "beispiel": "412000000000",
+   "stichtag": "2025-12-31"
+  },
+  "ChangesInNonControllingInterestsDueToAcquisitionOfSubsidiaries": {
+   "anzahl": 2,
+   "beispiel": "1061000000000",
+   "stichtag": "2025-12-31"
+  },
+  "ChangesInNonControllingInterestsDueToEstablishmentOfSubsidiaries": {
+   "anzahl": 2,
+   "beispiel": "0",
+   "stichtag": "2025-12-31"
+  },
+  "ChangesInNonControllingInterestsDueToDisposalOfSubsidiaries": {
+   "anzahl": 2,
+   "beispiel": "9000000000",
+   "stichtag": "2025-12-31"
+  },
+  "ChangesInNonControllingInterestsDueToDisposalOfADiscontinuedOperation": {
+   "anzahl": 2,
+   "beispiel": "0",
+   "stichtag": "2025-12-31"
+  },
+  "ChangesInNonControllingInterestsDueToPartialDisposalOfInterestsInSubsidiariesWithoutLossOfControl": {
+   "anzahl": 2,
+   "beispiel": "0",
+   "stichtag": "2025-12-31"
+  },
+  "ChangesInNonControllingInterestsDueToOtherTransactionsWithNonControllingInterests": {
+   "anzahl": 2,
+   "beispiel": "1664000000000",
+   "stichtag": "2025-12-31"
+  },
+  "EliminationOfDeficitInConnectionWithQuasiReorganisation": {
+   "anzahl": 2,
+   "beispiel": "0",
+   "stichtag": "2025-12-31"
+  },
+  "StockOptionsExercised": {
+   "anzahl": 2,
+   "beispiel": "0",
+   "stichtag": "2025-12-31"
+  },
+  "ImpactOnTaxAmnestyAssets": {
+   "anzahl": 2,
+   "beispiel": "0",
+   "stichtag": "2025-12-31"
+  },
+  "RetrospectiveAdjustmentOfPSAKImplementation": {
+   "anzahl": 2,
+   "beispiel": "0",
+   "stichtag": "2025-12-31"
+  },
+  "OtherEquityTransactions": {
+   "anzahl": 2,
+   "beispiel": "-1705000000000",
+   "stichtag": "2025-12-31"
+  },
+  "EquityPositionEndOfThePeriod": {
+   "anzahl": 2,
+   "beispiel": "290812000000000",
+   "stichtag": "2025-12-31"
+  },
+  "ReceiptsFromCustomers": {
+   "anzahl": 2,
+   "beispiel": "392613000000000",
+   "stichtag": "2025-12-31"
+  },
+  "OtherCashReceiptsFromOperatingActivities": {
+   "anzahl": 2,
+   "beispiel": "3698000000000",
+   "stichtag": "2025-12-31"
+  },
+  "PaymentsToSuppliersForGoodsAndServices": {
+   "anzahl": 2,
+   "beispiel": "304763000000000",
+   "stichtag": "2025-12-31"
+  },
+  "PaymentsForSalariesAndAllowances": {
+   "anzahl": 2,
+   "beispiel": "26287000000000",
+   "stichtag": "2025-12-31"
+  },
+  "OtherCashPaymentsForOperatingActivities": {
+   "anzahl": 2,
+   "beispiel": "14813000000000",
+   "stichtag": "2025-12-31"
+  },
+  "CashGeneratedFromUsedInOperations": {
+   "anzahl": 2,
+   "beispiel": "50448000000000",
+   "stichtag": "2025-12-31"
+  },
+  "InterestsReceivedFromOperatingActivities": {
+   "anzahl": 2,
+   "beispiel": "3182000000000",
+   "stichtag": "2025-12-31"
+  },
+  "IncomeTaxesRefundedPaidFromOperatingActivities": {
+   "anzahl": 2,
+   "beispiel": "1883000000000",
+   "stichtag": "2025-12-31"
+  },
+  "PaymentsForCorporateIncomeTax": {
+   "anzahl": 2,
+   "beispiel": "10819000000000",
+   "stichtag": "2025-12-31"
+  },
+  "NetCashFlowsReceivedFromUsedInOperatingActivities": {
+   "anzahl": 2,
+   "beispiel": "44694000000000",
+   "stichtag": "2025-12-31"
+  },
+  "PaymentsForDeferredCharges": {
+   "anzahl": 2,
+   "beispiel": "90000000000",
+   "stichtag": "2025-12-31"
+  },
+  "PaymentsForAdvancesForPurchaseOfPropertyPlantAndEquipment": {
+   "anzahl": 2,
+   "beispiel": "838000000000",
+   "stichtag": "2025-12-31"
+  },
+  "PaymentsForAcquisitionOfPlantationAssets": {
+   "anzahl": 2,
+   "beispiel": "483000000000",
+   "stichtag": "2025-12-31"
+  },
+  "ProceedsFromDisposalOfInvestmentProperties": {
+   "anzahl": 2,
+   "beispiel": "0",
+   "stichtag": "2025-12-31"
+  },
+  "PaymentsForAcquisitionOfInvestmentProperties": {
+   "anzahl": 2,
+   "beispiel": "37000000000",
+   "stichtag": "2025-12-31"
+  },
+  "ProceedsFromDisposalOfPropertyPlantAndEquipment": {
+   "anzahl": 2,
+   "beispiel": "556000000000",
+   "stichtag": "2025-12-31"
+  },
+  "PaymentsForAcquisitionOfPropertyPlantAndEquipment": {
+   "anzahl": 2,
+   "beispiel": "15973000000000",
+   "stichtag": "2025-12-31"
+  },
+  "PaymentsForAcquisitionOfExplorationAndEvaluationAssets": {
+   "anzahl": 2,
+   "beispiel": "573000000000",
+   "stichtag": "2025-12-31"
+  },
+  "ProceedsFromDisposalOfIntangibleAssets": {
+   "anzahl": 2,
+   "beispiel": "0",
+   "stichtag": "2025-12-31"
+  },
+  "PaymentsForAcquisitionOfIntangibleAssets": {
+   "anzahl": 2,
+   "beispiel": "470000000000",
+   "stichtag": "2025-12-31"
+  },
+  "PaymentsForAcquisitionOfOtherNonFinancialAssets": {
+   "anzahl": 2,
+   "beispiel": "0",
+   "stichtag": "2025-12-31"
+  },
+  "WithdrawalPlacementOfFinancialAssetsAtFairValueThroughProfitOrLoss": {
+   "anzahl": 2,
+   "beispiel": "-572000000000",
+   "stichtag": "2025-12-31"
+  },
+  "WithdrawalPlacementOfFinancialAssetsFairValueThroughOtherComprehensiveIncome": {
+   "anzahl": 2,
+   "beispiel": "-2101000000000",
+   "stichtag": "2025-12-31"
+  },
+  "WithdrawalPlacementOfRestrictedFundsFromInvestingActivities": {
+   "anzahl": 2,
+   "beispiel": "247000000000",
+   "stichtag": "2025-12-31"
+  },
+  "PlacementOfFinancialAssetsAmortizedCostInvestments": {
+   "anzahl": 1,
+   "beispiel": "3000000000000",
+   "stichtag": "2025-12-31"
+  },
+  "PaymentsForAdvancesOnInvestments": {
+   "anzahl": 2,
+   "beispiel": "0",
+   "stichtag": "2025-12-31"
+  },
+  "ReceiptsFromReceivablesFromRelatedParties": {
+   "anzahl": 2,
+   "beispiel": "1213000000000",
+   "stichtag": "2025-12-31"
+  },
+  "PaymentsOfReceivablesFromRelatedParties": {
+   "anzahl": 2,
+   "beispiel": "312000000000",
+   "stichtag": "2025-12-31"
+  },
+  "ProceedsFromDisposalOfSubsidiaries": {
+   "anzahl": 2,
+   "beispiel": "561000000000",
+   "stichtag": "2025-12-31"
+  },
+  "PaymentsForAcquisitionOfSubsidiaries": {
+   "anzahl": 2,
+   "beispiel": "4728000000000",
+   "stichtag": "2025-12-31"
+  },
+  "PaymentsForAcquisitionOfInterestsInJointVentures": {
+   "anzahl": 2,
+   "beispiel": "807000000000",
+   "stichtag": "2025-12-31"
+  },
+  "ProceedsFromSalesOfInterestsInAssociates": {
+   "anzahl": 2,
+   "beispiel": "0",
+   "stichtag": "2025-12-31"
+  },
+  "PaymentsForAcquisitionOfInterestsInAssociates": {
+   "anzahl": 2,
+   "beispiel": "3865000000000",
+   "stichtag": "2025-12-31"
+  },
+  "DividendsReceivedFromInvestingActivities": {
+   "anzahl": 2,
+   "beispiel": "10015000000000",
+   "stichtag": "2025-12-31"
+  },
+  "NetCashFlowsReceivedFromUsedInInvestingActivities": {
+   "anzahl": 2,
+   "beispiel": "-21257000000000",
+   "stichtag": "2025-12-31"
+  },
+  "ProceedsFromBankLoans": {
+   "anzahl": 2,
+   "beispiel": "333372000000000",
+   "stichtag": "2025-12-31"
+  },
+  "PaymentsOfBankLoans": {
+   "anzahl": 2,
+   "beispiel": "328813000000000",
+   "stichtag": "2025-12-31"
+  },
+  "PaymentsOfFinanceLeaseLiabilities": {
+   "anzahl": 2,
+   "beispiel": "1467000000000",
+   "stichtag": "2025-12-31"
+  },
+  "ProceedsFromBondsPayable": {
+   "anzahl": 2,
+   "beispiel": "11781000000000",
+   "stichtag": "2025-12-31"
+  },
+  "PaymentsOfBondsPayable": {
+   "anzahl": 2,
+   "beispiel": "8800000000000",
+   "stichtag": "2025-12-31"
+  },
+  "ProceedsFromOtherBorrowings": {
+   "anzahl": 2,
+   "beispiel": "0",
+   "stichtag": "2025-12-31"
+  },
+  "PaymentsOfOtherBorrowings": {
+   "anzahl": 2,
+   "beispiel": "246000000000",
+   "stichtag": "2025-12-31"
+  },
+  "ProceedsFromDueToRelatedParties": {
+   "anzahl": 2,
+   "beispiel": "0",
+   "stichtag": "2025-12-31"
+  },
+  "PaymentsOfDueToRelatedParties": {
+   "anzahl": 2,
+   "beispiel": "0",
+   "stichtag": "2025-12-31"
+  },
+  "ProceedsFromIssuanceOfCommonStocks": {
+   "anzahl": 2,
+   "beispiel": "413000000000",
+   "stichtag": "2025-12-31"
+  },
+  "ProceedFromIncreaseOfNonControllingInterest": {
+   "anzahl": 2,
+   "beispiel": "1676000000000",
+   "stichtag": "2025-12-31"
+  },
+  "PaymentsForAcquisitionOfNoncontrollingInterestsInSubsidiaries": {
+   "anzahl": 2,
+   "beispiel": "0",
+   "stichtag": "2025-12-31"
+  },
+  "DividendsPaidFromFinancingActivities": {
+   "anzahl": 2,
+   "beispiel": "20508000000000",
+   "stichtag": "2025-12-31"
+  },
+  "InterestsPaidFromFinancingActivities": {
+   "anzahl": 2,
+   "beispiel": "3656000000000",
+   "stichtag": "2025-12-31"
+  },
+  "OtherCashInflowsOutflowsFromFinancingActivities": {
+   "anzahl": 2,
+   "beispiel": "-3473000000000",
+   "stichtag": "2025-12-31"
+  },
+  "NetCashFlowsReceivedFromUsedInFinancingActivities": {
+   "anzahl": 2,
+   "beispiel": "-19721000000000",
+   "stichtag": "2025-12-31"
+  },
+  "NetIncreaseDecreaseInCashAndCashEquivalents": {
+   "anzahl": 2,
+   "beispiel": "3716000000000",
+   "stichtag": "2025-12-31"
+  },
+  "CashAndCashEquivalentsCashFlows": {
+   "anzahl": 4,
+   "beispiel": "48439000000000",
+   "stichtag": "2024-12-31"
+  },
+  "EffectOfExchangeRateChangesOnCashAndCashEquivalents": {
+   "anzahl": 2,
+   "beispiel": "466000000000",
+   "stichtag": "2025-12-31"
+  },
+  "BasisOfPreparationOfConsolidatedFinancialStatementsTextBlock": {
+   "anzahl": 1,
+   "beispiel": "Laporan keuangan konsolidasian",
+   "stichtag": "2025-12-31"
+  },
+  "PrinciplesOfConsolidationTextBlock": {
+   "anzahl": 1,
+   "beispiel": "Laporan keuangan konsolidasian",
+   "stichtag": "2025-12-31"
+  },
+  "CashAndCashEquivalentsTextBlock": {
+   "anzahl": 1,
+   "beispiel": "Kas dan setara kas mencakup ka",
+   "stichtag": "2025-12-31"
+  },
+  "TradeAndOtherReceivablesTextBlock": {
+   "anzahl": 1,
+   "beispiel": "Piutang usaha dan piutang lain",
+   "stichtag": "2025-12-31"
+  },
+  "InventoriesTextBlock": {
+   "anzahl": 1,
+   "beispiel": "Persediaan dinyatakan dengan n",
+   "stichtag": "2025-12-31"
+  },
+  "BearerPlantsTextBlock": {
+   "anzahl": 1,
+   "beispiel": "Tanaman produktif merupakan ta",
+   "stichtag": "2025-12-31"
+  },
+  "FixedAssetsTextBlock": {
+   "anzahl": 1,
+   "beispiel": "Aset tetap diakui sebesar harg",
+   "stichtag": "2025-12-31"
+  },
+  "TradePayablesAndOtherLiabilitiesTextBlock": {
+   "anzahl": 1,
+   "beispiel": "Utang usaha pada awalnya diaku",
+   "stichtag": "2025-12-31"
+  },
+  "RevenueAndExpenseRecognitionTextBlock": {
+   "anzahl": 1,
+   "beispiel": "Dalam menentukan pengakuan pen",
+   "stichtag": "2025-12-31"
+  },
+  "ForeignCurrencyTranslationTextBlock": {
+   "anzahl": 1,
+   "beispiel": "Pos-pos dalam laporan keuangan",
+   "stichtag": "2025-12-31"
+  },
+  "TransactionsWithRelatedPartiesTextBlock": {
+   "anzahl": 1,
+   "beispiel": "Grup melakukan transaksi denga",
+   "stichtag": "2025-12-31"
+  },
+  "IncomeTaxesTextBlock": {
+   "anzahl": 1,
+   "beispiel": "Beban pajak penghasilan terdir",
+   "stichtag": "2025-12-31"
+  },
+  "BorrowingsTextBlock": {
+   "anzahl": 1,
+   "beispiel": "Pada saat pengakuan awal, pinj",
+   "stichtag": "2025-12-31"
+  },
+  "ProvisionsTextBlock": {
+   "anzahl": 1,
+   "beispiel": "Provisi diakui apabila Grup me",
+   "stichtag": "2025-12-31"
+  },
+  "EmployeeBenefitsTextBlock": {
+   "anzahl": 1,
+   "beispiel": "Imbalan kerja jangka pendek&#1",
+   "stichtag": "2025-12-31"
+  },
+  "EarningsPerShareTextBlock": {
+   "anzahl": 1,
+   "beispiel": "Laba per saham dasar dihitung ",
+   "stichtag": "2025-12-31"
+  },
+  "DividendsTextBlock": {
+   "anzahl": 1,
+   "beispiel": "Pembagian dividen final diakui",
+   "stichtag": "2025-12-31"
+  },
+  "SegmentReportingTextBlock": {
+   "anzahl": 1,
+   "beispiel": "Segmen operasi dilaporkan deng",
+   "stichtag": "2025-12-31"
+  },
+  "DerivativeFinancialInstrumentsTextBlock": {
+   "anzahl": 1,
+   "beispiel": "Grup hanya melakukan kontrak i",
+   "stichtag": "2025-12-31"
+  },
+  "TheImplementationOfNewStatementsOfAccountingStandardsTextBlock": {
+   "anzahl": 1,
+   "beispiel": "Standar baru dan efektif pada ",
+   "stichtag": "2025-12-31"
+  },
+  "ForeignCurrencyTransactionsAndBalancesTextBlock": {
+   "anzahl": 1,
+   "beispiel": "Transaksi dalam mata uang asin",
+   "stichtag": "2025-12-31"
+  },
+  "InvestmentPropertiesTextBlock": {
+   "anzahl": 1,
+   "beispiel": "Properti investasi merupakan t",
+   "stichtag": "2025-12-31"
+  },
+  "GoodwillTextBlock": {
+   "anzahl": 1,
+   "beispiel": "Goodwill merupakan selisih leb",
+   "stichtag": "2025-12-31"
+  },
+  "InvestmentInAssociatesTextBlock": {
+   "anzahl": 1,
+   "beispiel": "Ventura bersama adalah suatu e",
+   "stichtag": "2025-12-31"
+  },
+  "ConsumerFinancingReceivablesTextBlock": {
+   "anzahl": 1,
+   "beispiel": "Piutang pembiayaan konsumen da",
+   "stichtag": "2025-12-31"
+  },
+  "ConcessionFinancialAssetsTextBlock": {
+   "anzahl": 1,
+   "beispiel": "Hak konsesi merupakan hak peng",
+   "stichtag": "2025-12-31"
+  },
+  "TreasuryStockTextBlock": {
+   "anzahl": 1,
+   "beispiel": "Imbalan yang dibayarkan, terma",
+   "stichtag": "2025-12-31"
+  },
+  "ShareCapitalTextBlock": {
+   "anzahl": 1,
+   "beispiel": "Saham biasa diklasifikasikan s",
+   "stichtag": "2025-12-31"
+  },
+  "AccountingStandardsIssuedButNotYetEffectiveTextBlock": {
+   "anzahl": 1,
+   "beispiel": "Standar baru, revisi dan efekt",
+   "stichtag": "2025-12-31"
+  },
+  "DisclosureofNotesforPropertyPlantandEquipmentTextBlock": {
+   "anzahl": 1,
+   "beispiel": "Tanah dimiliki berdasarkan Ser",
+   "stichtag": "2025-12-31"
+  },
+  "TradeReceivablesGross": {
+   "anzahl": 2,
+   "beispiel": "29177000000000",
+   "stichtag": "2025-12-31"
+  },
+  "AllowanceForImpairmentOfTradeReceivables": {
+   "anzahl": 3,
+   "beispiel": "1355000000000",
+   "stichtag": "2025-12-31"
+  },
+  "TradeReceivablesNet": {
+   "anzahl": 2,
+   "beispiel": "27822000000000",
+   "stichtag": "2025-12-31"
+  },
+  "AdditionOfAllowanceForImpairmentOfTradeReceivables": {
+   "anzahl": 2,
+   "beispiel": "598000000000",
+   "stichtag": "2025-12-31"
+  },
+  "WrittenOffOfMovementOfAllowanceForImpairmentOfTradeReceivables": {
+   "anzahl": 2,
+   "beispiel": "18000000000",
+   "stichtag": "2025-12-31"
+  },
+  "RealEstateAssets": {
+   "anzahl": 2,
+   "beispiel": "8561000000000",
+   "stichtag": "2025-12-31"
+  },
+  "FinishedGoods": {
+   "anzahl": 2,
+   "beispiel": "27178000000000",
+   "stichtag": "2025-12-31"
+  },
+  "WorkInProcess": {
+   "anzahl": 2,
+   "beispiel": "704000000000",
+   "stichtag": "2025-12-31"
+  },
+  "RawAndIndirectMaterial": {
+   "anzahl": 2,
+   "beispiel": "1839000000000",
+   "stichtag": "2025-12-31"
+  },
+  "Spareparts": {
+   "anzahl": 2,
+   "beispiel": "2246000000000",
+   "stichtag": "2025-12-31"
+  },
+  "OtherInventories": {
+   "anzahl": 2,
+   "beispiel": "3097000000000",
+   "stichtag": "2025-12-31"
+  },
+  "InventoriesGross": {
+   "anzahl": 2,
+   "beispiel": "35064000000000",
+   "stichtag": "2025-12-31"
+  },
+  "AllowanceForImpairmentOfInventories": {
+   "anzahl": 3,
+   "beispiel": "1119000000000",
+   "stichtag": "2025-12-31"
+  },
+  "Inventories": {
+   "anzahl": 2,
+   "beispiel": "33945000000000",
+   "stichtag": "2025-12-31"
+  },
+  "IncreaseDecreaseforAllowanceForImpairmentOfInventory": {
+   "anzahl": 2,
+   "beispiel": "93000000000",
+   "stichtag": "2025-12-31"
+  },
+  "DisclosureofNotesforInventoriesTextBlock": {
+   "anzahl": 1,
+   "beispiel": "Manajemen berkeyakinan bahwa p",
+   "stichtag": "2025-12-31"
+  },
+  "TotalBondsPayableGross": {
+   "anzahl": 2,
+   "beispiel": "23513000000000",
+   "stichtag": "2025-12-31"
+  },
+  "BondsPayable": {
+   "anzahl": 2,
+   "beispiel": "23513000000000",
+   "stichtag": "2025-12-31"
+  },
+  "MaterialUsage": {
+   "anzahl": 2,
+   "beispiel": "180487000000000",
+   "stichtag": "2025-12-31"
+  },
+  "ProductionCost": {
+   "anzahl": 2,
+   "beispiel": "180487000000000",
+   "stichtag": "2025-12-31"
+  },
+  "CostOfGoodsManufactured": {
+   "anzahl": 2,
+   "beispiel": "180487000000000",
+   "stichtag": "2025-12-31"
+  },
+  "OtherCostOfGoodSold": {
+   "anzahl": 2,
+   "beispiel": "71461000000000",
+   "stichtag": "2025-12-31"
+  },
+  "DisclosureofNotesforCostofGoodsSoldTextBlock": {
+   "anzahl": 1,
+   "beispiel": "Tidak ada pembelian dari pemas",
+   "stichtag": "2025-12-31"
+  },
+  "TotalBankLoanGross": {
+   "anzahl": 2,
+   "beispiel": "63484000000000",
+   "stichtag": "2025-12-31"
+  },
+  "BankLoans": {
+   "anzahl": 2,
+   "beispiel": "63484000000000",
+   "stichtag": "2025-12-31"
+  },
+  "DisclosureofNotesforLongTermBankLoansTextBlock": {
+   "anzahl": 1,
+   "beispiel": "Dana yang diperoleh dari pinja",
+   "stichtag": "2025-12-31"
+  },
+  "DisclosureofNotesforShortTermBankLoansTextBlock": {
+   "anzahl": 1,
+   "beispiel": "Dana yang diperoleh dari pinja",
+   "stichtag": "2025-12-31"
+  }
+ },
+ "TLKM 2025": {
+  "CashAndCashEquivalents": {
+   "anzahl": 2,
+   "beispiel": "34228000000000",
+   "stichtag": "2025-12-31"
+  },
+  "CurrentOtherFinancialAssets": {
+   "anzahl": 2,
+   "beispiel": "1420000000000",
+   "stichtag": "2025-12-31"
+  },
+  "TradeReceivablesThirdParties": {
+   "anzahl": 2,
+   "beispiel": "9183000000000",
+   "stichtag": "2025-12-31"
+  },
+  "TradeReceivablesRelatedParties": {
+   "anzahl": 2,
+   "beispiel": "2040000000000",
+   "stichtag": "2025-12-31"
+  },
+  "CurrentInventories": {
+   "anzahl": 2,
+   "beispiel": "901000000000",
+   "stichtag": "2025-12-31"
+  },
+  "CurrentPrepaidExpenses": {
+   "anzahl": 2,
+   "beispiel": "7491000000000",
+   "stichtag": "2025-12-31"
+  },
+  "CurrentAdvances": {
+   "anzahl": 2,
+   "beispiel": "551000000000",
+   "stichtag": "2025-12-31"
+  },
+  "CurrentPrepaidTaxes": {
+   "anzahl": 2,
+   "beispiel": "1979000000000",
+   "stichtag": "2025-12-31"
+  },
+  "OtherCurrentNonFinancialAssets": {
+   "anzahl": 2,
+   "beispiel": "3222000000000",
+   "stichtag": "2025-12-31"
+  },
+  "NonCurrentAssetsOrDisposalGroupsClassifiedAsHeldForSale": {
+   "anzahl": 1,
+   "beispiel": "751000000000",
+   "stichtag": "2025-12-31"
+  },
+  "CurrentAssets": {
+   "anzahl": 2,
+   "beispiel": "61766000000000",
+   "stichtag": "2025-12-31"
+  },
+  "InvestmentsInAssociates": {
+   "anzahl": 2,
+   "beispiel": "106000000000",
+   "stichtag": "2025-12-31"
+  },
+  "NonCurrentAdvances": {
+   "anzahl": 2,
+   "beispiel": "734000000000",
+   "stichtag": "2025-12-31"
+  },
+  "NonCurrentFinancialAssetsAtFairValueThroughProfitOrLoss": {
+   "anzahl": 2,
+   "beispiel": "7281000000000",
+   "stichtag": "2025-12-31"
+  },
+  "NonCurrentPrepaidExpenses": {
+   "anzahl": 2,
+   "beispiel": "7139000000000",
+   "stichtag": "2025-12-31"
+  },
+  "DeferredTaxAssets": {
+   "anzahl": 2,
+   "beispiel": "6603000000000",
+   "stichtag": "2025-12-31"
+  },
+  "PropertyPlantAndEquipment": {
+   "anzahl": 3,
+   "beispiel": "193414000000000",
+   "stichtag": "2025-12-31"
+  },
+  "Goodwill": {
+   "anzahl": 2,
+   "beispiel": "914000000000",
+   "stichtag": "2025-12-31"
+  },
+  "IntangibleAssetsOtherThanGoodwill": {
+   "anzahl": 2,
+   "beispiel": "8323000000000",
+   "stichtag": "2025-12-31"
+  },
+  "OtherNonCurrentNonFinancialAssets": {
+   "anzahl": 2,
+   "beispiel": "1479000000000",
+   "stichtag": "2025-12-31"
+  },
+  "NonCurrentAssets": {
+   "anzahl": 2,
+   "beispiel": "225993000000000",
+   "stichtag": "2025-12-31"
+  },
+  "Assets": {
+   "anzahl": 2,
+   "beispiel": "287759000000000",
+   "stichtag": "2025-12-31"
+  },
+  "ShortTermBankLoans": {
+   "anzahl": 2,
+   "beispiel": "6929000000000",
+   "stichtag": "2025-12-31"
+  },
+  "TradePayablesThirdParties": {
+   "anzahl": 2,
+   "beispiel": "15613000000000",
+   "stichtag": "2025-12-31"
+  },
+  "TradePayablesRelatedParties": {
+   "anzahl": 2,
+   "beispiel": "571000000000",
+   "stichtag": "2025-12-31"
+  },
+  "OtherPayablesThirdParties": {
+   "anzahl": 2,
+   "beispiel": "648000000000",
+   "stichtag": "2025-12-31"
+  },
+  "CurrentAdvancesFromCustomersThirdParties": {
+   "anzahl": 2,
+   "beispiel": "1523000000000",
+   "stichtag": "2025-12-31"
+  },
+  "CurrentAccruedExpenses": {
+   "anzahl": 2,
+   "beispiel": "14867000000000",
+   "stichtag": "2025-12-31"
+  },
+  "TaxesPayable": {
+   "anzahl": 2,
+   "beispiel": "2025000000000",
+   "stichtag": "2025-12-31"
+  },
+  "CurrentMaturitiesOfBankLoans": {
+   "anzahl": 2,
+   "beispiel": "17746000000000",
+   "stichtag": "2025-12-31"
+  },
+  "CurrentMaturitiesOfStepLoans": {
+   "anzahl": 1,
+   "beispiel": "0",
+   "stichtag": "2024-12-31"
+  },
+  "CurrentMaturitiesOfFinanceLeaseLiabilities": {
+   "anzahl": 2,
+   "beispiel": "5590000000000",
+   "stichtag": "2025-12-31"
+  },
+  "CurrentMaturitiesOfBondsPayable": {
+   "anzahl": 2,
+   "beispiel": "0",
+   "stichtag": "2025-12-31"
+  },
+  "CurrentMaturitiesOfOtherBorrowings": {
+   "anzahl": 1,
+   "beispiel": "0",
+   "stichtag": "2024-12-31"
+  },
+  "OtherCurrentNonFinancialLiabilities": {
+   "anzahl": 2,
+   "beispiel": "7970000000000",
+   "stichtag": "2025-12-31"
+  },
+  "LiabilitiesDirectlyAssociatedWithNonCurrentAssetsOrDisposalGroupsClassifiedAsHeldForSaleOrAsHeldForDistributionToOwners": {
+   "anzahl": 1,
+   "beispiel": "466000000000",
+   "stichtag": "2025-12-31"
+  },
+  "CurrentLiabilities": {
+   "anzahl": 2,
+   "beispiel": "73948000000000",
+   "stichtag": "2025-12-31"
+  },
+  "DeferredTaxLiabilities": {
+   "anzahl": 2,
+   "beispiel": "1233000000000",
+   "stichtag": "2025-12-31"
+  },
+  "LongTermBankLoans": {
+   "anzahl": 2,
+   "beispiel": "23403000000000",
+   "stichtag": "2025-12-31"
+  },
+  "LongTermFinanceLeaseLiabilities": {
+   "anzahl": 2,
+   "beispiel": "18547000000000",
+   "stichtag": "2025-12-31"
+  },
+  "LongTermBondsPayable": {
+   "anzahl": 2,
+   "beispiel": "2696000000000",
+   "stichtag": "2025-12-31"
+  },
+  "OtherNonCurrentProvisions": {
+   "anzahl": 2,
+   "beispiel": "1308000000000",
+   "stichtag": "2025-12-31"
+  },
+  "LongTermPostEmploymentBenefitObligations": {
+   "anzahl": 2,
+   "beispiel": "12996000000000",
+   "stichtag": "2025-12-31"
+  },
+  "OtherNonCurrentFinancialLiabilities": {
+   "anzahl": 2,
+   "beispiel": "240000000000",
+   "stichtag": "2025-12-31"
+  },
+  "OtherNonCurrentNonFinancialLiabilities": {
+   "anzahl": 2,
+   "beispiel": "2851000000000",
+   "stichtag": "2025-12-31"
+  },
+  "NonCurrentLiabilities": {
+   "anzahl": 2,
+   "beispiel": "63274000000000",
+   "stichtag": "2025-12-31"
+  },
+  "Liabilities": {
+   "anzahl": 2,
+   "beispiel": "137222000000000",
+   "stichtag": "2025-12-31"
+  },
+  "CommonStocks": {
+   "anzahl": 2,
+   "beispiel": "4953000000000",
+   "stichtag": "2025-12-31"
+  },
+  "AdditionalPaidInCapital": {
+   "anzahl": 2,
+   "beispiel": "2310000000000",
+   "stichtag": "2025-12-31"
+  },
+  "TreasuryStocks": {
+   "anzahl": 1,
+   "beispiel": "30000000000",
+   "stichtag": "2025-12-31"
+  },
+  "OtherComponentsOfEquity": {
+   "anzahl": 2,
+   "beispiel": "10259000000000",
+   "stichtag": "2025-12-31"
+  },
+  "AppropriatedRetainedEarnings": {
+   "anzahl": 2,
+   "beispiel": "15337000000000",
+   "stichtag": "2025-12-31"
+  },
+  "UnappropriatedRetainedEarnings": {
+   "anzahl": 2,
+   "beispiel": "97856000000000",
+   "stichtag": "2025-12-31"
+  },
+  "EquityAttributableToEquityOwnersOfParentEntity": {
+   "anzahl": 2,
+   "beispiel": "130685000000000",
+   "stichtag": "2025-12-31"
+  },
+  "NonControllingInterests": {
+   "anzahl": 2,
+   "beispiel": "19852000000000",
+   "stichtag": "2025-12-31"
+  },
+  "Equity": {
+   "anzahl": 2,
+   "beispiel": "150537000000000",
+   "stichtag": "2025-12-31"
+  },
+  "LiabilitiesAndEquity": {
+   "anzahl": 2,
+   "beispiel": "287759000000000",
+   "stichtag": "2025-12-31"
+  },
+  "SalesAndRevenue": {
+   "anzahl": 2,
+   "beispiel": "146742000000000",
+   "stichtag": "2025-12-31"
+  },
+  "OtherIncome": {
+   "anzahl": 2,
+   "beispiel": "119000000000",
+   "stichtag": "2025-12-31"
+  },
+  "InterconnectionExpenses": {
+   "anzahl": 2,
+   "beispiel": "7018000000000",
+   "stichtag": "2025-12-31"
+  },
+  "TicketingSalesAndPromotionExpenses": {
+   "anzahl": 2,
+   "beispiel": "3287000000000",
+   "stichtag": "2025-12-31"
+  },
+  "NetworkOperationExpenses": {
+   "anzahl": 2,
+   "beispiel": "41234000000000",
+   "stichtag": "2025-12-31"
+  },
+  "EmployeeBenefitsExpenses": {
+   "anzahl": 2,
+   "beispiel": "16362000000000",
+   "stichtag": "2025-12-31"
+  },
+  "DepreciationAndAmortisationExpenses": {
+   "anzahl": 2,
+   "beispiel": "37649000000000",
+   "stichtag": "2025-12-31"
+  },
+  "AdditionReversalOfImpairmentLossRecognisedInProfitOrLoss": {
+   "anzahl": 2,
+   "beispiel": "242000000000",
+   "stichtag": "2025-12-31"
+  },
+  "OtherExpenses": {
+   "anzahl": 2,
+   "beispiel": "6601000000000",
+   "stichtag": "2025-12-31"
+  },
+  "OtherGainsLosses": {
+   "anzahl": 2,
+   "beispiel": "180000000000",
+   "stichtag": "2025-12-31"
+  },
+  "FinanceIncome": {
+   "anzahl": 2,
+   "beispiel": "1661000000000",
+   "stichtag": "2025-12-31"
+  },
+  "InterestAndFinanceCosts": {
+   "anzahl": 2,
+   "beispiel": "5206000000000",
+   "stichtag": "2025-12-31"
+  },
+  "ShareOfProfitLossOfAssociatesAccountedForUsingEquityMethod": {
+   "anzahl": 2,
+   "beispiel": "-1000000000",
+   "stichtag": "2025-12-31"
+  },
+  "ProfitLossBeforeIncomeTax": {
+   "anzahl": 2,
+   "beispiel": "31102000000000",
+   "stichtag": "2025-12-31"
+  },
+  "TaxBenefitExpenses": {
+   "anzahl": 2,
+   "beispiel": "-6644000000000",
+   "stichtag": "2025-12-31"
+  },
+  "ProfitLossFromContinuingOperations": {
+   "anzahl": 2,
+   "beispiel": "24458000000000",
+   "stichtag": "2025-12-31"
+  },
+  "ProfitLoss": {
+   "anzahl": 2,
+   "beispiel": "24458000000000",
+   "stichtag": "2025-12-31"
+  },
+  "GainsLossesOnExchangeDifferencesOnTranslationAfterTax": {
+   "anzahl": 2,
+   "beispiel": "360000000000",
+   "stichtag": "2025-12-31"
+  },
+  "GainsLossesOnCashFlowHedgesAfterTax": {
+   "anzahl": 2,
+   "beispiel": "1000000000",
+   "stichtag": "2025-12-31"
+  },
+  "ShareOfOtherComprehensiveIncomeOfAssociatesAccountedForUsingEquityMethodAfterTax": {
+   "anzahl": 2,
+   "beispiel": "1000000000",
+   "stichtag": "2025-12-31"
+  },
+  "OtherAdjustmentsToOtherComprehensiveIncomeThatMayBeReclassifiedToProfitOrLossAfterTax": {
+   "anzahl": 2,
+   "beispiel": "-236000000000",
+   "stichtag": "2025-12-31"
+  },
+  "OtherComprehensiveIncomeThatMayBeReclassifiedToProfitOrLossAfterTax": {
+   "anzahl": 2,
+   "beispiel": "126000000000",
+   "stichtag": "2025-12-31"
+  },
+  "OtherComprehensiveIncomeAfterTax": {
+   "anzahl": 2,
+   "beispiel": "126000000000",
+   "stichtag": "2025-12-31"
+  },
+  "ComprehensiveIncome": {
+   "anzahl": 2,
+   "beispiel": "24584000000000",
+   "stichtag": "2025-12-31"
+  },
+  "ProfitLossAttributableToParentEntity": {
+   "anzahl": 2,
+   "beispiel": "17814000000000",
+   "stichtag": "2025-12-31"
+  },
+  "ProfitLossAttributableToNonControllingInterests": {
+   "anzahl": 2,
+   "beispiel": "6644000000000",
+   "stichtag": "2025-12-31"
+  },
+  "ComprehensiveIncomeAttributableToParentEntity": {
+   "anzahl": 2,
+   "beispiel": "17954000000000",
+   "stichtag": "2025-12-31"
+  },
+  "ComprehensiveIncomeAttributableToNonControllingInterests": {
+   "anzahl": 2,
+   "beispiel": "6630000000000",
+   "stichtag": "2025-12-31"
+  },
+  "BasicEarningsLossPerShareFromContinuingOperations": {
+   "anzahl": 2,
+   "beispiel": "0.00000017983",
+   "stichtag": "2025-12-31"
+  },
+  "BalanceBeforeRestatementAtBeginningOfPeriod": {
+   "anzahl": 2,
+   "beispiel": "154204000000000",
+   "stichtag": "2025-12-31"
+  },
+  "EquityPositionBeginningOfThePeriod": {
+   "anzahl": 2,
+   "beispiel": "154204000000000",
+   "stichtag": "2025-12-31"
+  },
+  "ProfitLossChangesInEquity": {
+   "anzahl": 2,
+   "beispiel": "24458000000000",
+   "stichtag": "2025-12-31"
+  },
+  "OtherComprehensiveIncome": {
+   "anzahl": 2,
+   "beispiel": "126000000000",
+   "stichtag": "2025-12-31"
+  },
+  "DistributionsOfCashDividends": {
+   "anzahl": 2,
+   "beispiel": "28406000000000",
+   "stichtag": "2025-12-31"
+  },
+  "IncreaseDecreaseInEquityThroughTreasuryStockTransactions": {
+   "anzahl": 2,
+   "beispiel": "-109000000000",
+   "stichtag": "2025-12-31"
+  },
+  "StockSubscriptionFromNonControllingInterests": {
+   "anzahl": 2,
+   "beispiel": "270000000000",
+   "stichtag": "2025-12-31"
+  },
+  "ChangesInNonControllingInterestsDueToOtherTransactionsWithNonControllingInterests": {
+   "anzahl": 2,
+   "beispiel": "-6000000000",
+   "stichtag": "2025-12-31"
+  },
+  "EquityPositionEndOfThePeriod": {
+   "anzahl": 2,
+   "beispiel": "150537000000000",
+   "stichtag": "2025-12-31"
+  },
+  "DistributionsOfStockDividends": {
+   "anzahl": 1,
+   "beispiel": "24782000000000",
+   "stichtag": "2024-12-31"
+  },
+  "OtherEquityTransactions": {
+   "anzahl": 1,
+   "beispiel": "-559000000000",
+   "stichtag": "2024-12-31"
+  },
+  "ReceiptsFromCustomers": {
+   "anzahl": 2,
+   "beispiel": "146002000000000",
+   "stichtag": "2025-12-31"
+  },
+  "PaymentsToSuppliersForGoodsAndServices": {
+   "anzahl": 2,
+   "beispiel": "51455000000000",
+   "stichtag": "2025-12-31"
+  },
+  "PaymentsForSalariesAndAllowances": {
+   "anzahl": 2,
+   "beispiel": "13319000000000",
+   "stichtag": "2025-12-31"
+  },
+  "OtherCashPaymentsForOperatingActivities": {
+   "anzahl": 2,
+   "beispiel": "4654000000000",
+   "stichtag": "2025-12-31"
+  },
+  "CashGeneratedFromUsedInOperations": {
+   "anzahl": 2,
+   "beispiel": "76574000000000",
+   "stichtag": "2025-12-31"
+  },
+  "InterestsReceivedFromOperatingActivities": {
+   "anzahl": 2,
+   "beispiel": "1670000000000",
+   "stichtag": "2025-12-31"
+  },
+  "InterestsPaidFromOperatingActivities": {
+   "anzahl": 2,
+   "beispiel": "5230000000000",
+   "stichtag": "2025-12-31"
+  },
+  "PaymentsForCorporateIncomeTax": {
+   "anzahl": 2,
+   "beispiel": "10438000000000",
+   "stichtag": "2025-12-31"
+  },
+  "IncomeTaxesRefundedPaidFromOperatingActivities": {
+   "anzahl": 2,
+   "beispiel": "246000000000",
+   "stichtag": "2025-12-31"
+  },
+  "OtherCashInflowsOutflowsFromOperatingActivities": {
+   "anzahl": 2,
+   "beispiel": "1020000000000",
+   "stichtag": "2025-12-31"
+  },
+  "NetCashFlowsReceivedFromUsedInOperatingActivities": {
+   "anzahl": 2,
+   "beispiel": "63842000000000",
+   "stichtag": "2025-12-31"
+  },
+  "PaymentsForAdvancesForPurchaseOfPropertyAndEquipment": {
+   "anzahl": 2,
+   "beispiel": "1117000000000",
+   "stichtag": "2025-12-31"
+  },
+  "ProceedsFromDisposalOfPropertyAndEquipment": {
+   "anzahl": 2,
+   "beispiel": "78000000000",
+   "stichtag": "2025-12-31"
+  },
+  "PaymentsForAcquisitionOfPropertyAndEquipment": {
+   "anzahl": 2,
+   "beispiel": "22871000000000",
+   "stichtag": "2025-12-31"
+  },
+  "PaymentsForAcquisitionOfIntangibleAssets": {
+   "anzahl": 2,
+   "beispiel": "2897000000000",
+   "stichtag": "2025-12-31"
+  },
+  "WithdrawalPlacementOfShortTermInvestments": {
+   "anzahl": 1,
+   "beispiel": "339000000000",
+   "stichtag": "2024-12-31"
+  },
+  "WithdrawalPlacementOfFinancialAssetsAtFairValueThroughProfitOrLoss": {
+   "anzahl": 1,
+   "beispiel": "-141000000000",
+   "stichtag": "2025-12-31"
+  },
+  "ProceedsOnSaleOfFinancialAssets": {
+   "anzahl": 2,
+   "beispiel": "728000000000",
+   "stichtag": "2025-12-31"
+  },
+  "PaymentsToAcquireFinancialAssets": {
+   "anzahl": 2,
+   "beispiel": "26000000000",
+   "stichtag": "2025-12-31"
+  },
+  "PaymentsForAcquisitionOfSubsidiaries": {
+   "anzahl": 1,
+   "beispiel": "635000000000",
+   "stichtag": "2024-12-31"
+  },
+  "DividendsReceivedFromInvestingActivities": {
+   "anzahl": 2,
+   "beispiel": "0",
+   "stichtag": "2025-12-31"
+  },
+  "OtherCashInflowsOutflowsFromInvestingActivities": {
+   "anzahl": 2,
+   "beispiel": "151000000000",
+   "stichtag": "2025-12-31"
+  },
+  "NetCashFlowsReceivedFromUsedInInvestingActivities": {
+   "anzahl": 2,
+   "beispiel": "-26095000000000",
+   "stichtag": "2025-12-31"
+  },
+  "ProceedsFromBankLoans": {
+   "anzahl": 2,
+   "beispiel": "69895000000000",
+   "stichtag": "2025-12-31"
+  },
+  "PaymentsOfBankLoans": {
+   "anzahl": 2,
+   "beispiel": "72037000000000",
+   "stichtag": "2025-12-31"
+  },
+  "PaymentsOfFinanceLeaseLiabilities": {
+   "anzahl": 2,
+   "beispiel": "7356000000000",
+   "stichtag": "2025-12-31"
+  },
+  "ProceedsFromSalesPurchasesOfTreasuryStocks": {
+   "anzahl": 2,
+   "beispiel": "-30000000000",
+   "stichtag": "2025-12-31"
+  },
+  "ProceedFromIncreaseOfNonControllingInterest": {
+   "anzahl": 2,
+   "beispiel": "270000000000",
+   "stichtag": "2025-12-31"
+  },
+  "PaymentsForAcquisitionOfNoncontrollingInterestsInSubsidiaries": {
+   "anzahl": 2,
+   "beispiel": "79000000000",
+   "stichtag": "2025-12-31"
+  },
+  "DividendsPaidFromFinancingActivities": {
+   "anzahl": 2,
+   "beispiel": "28406000000000",
+   "stichtag": "2025-12-31"
+  },
+  "NetCashFlowsReceivedFromUsedInFinancingActivities": {
+   "anzahl": 2,
+   "beispiel": "-37743000000000",
+   "stichtag": "2025-12-31"
+  },
+  "NetIncreaseDecreaseInCashAndCashEquivalents": {
+   "anzahl": 2,
+   "beispiel": "4000000000",
+   "stichtag": "2025-12-31"
+  },
+  "CashAndCashEquivalentsCashFlows": {
+   "anzahl": 4,
+   "beispiel": "33905000000000",
+   "stichtag": "2024-12-31"
+  },
+  "EffectOfExchangeRateChangesOnCashAndCashEquivalents": {
+   "anzahl": 2,
+   "beispiel": "320000000000",
+   "stichtag": "2025-12-31"
+  },
+  "OtherIncreaseDecreaseInCashAndCashEquivalents": {
+   "anzahl": 2,
+   "beispiel": "-1000000000",
+   "stichtag": "2025-12-31"
+  },
+  "BasisOfPreparationOfConsolidatedFinancialStatementsTextBlock": {
+   "anzahl": 1,
+   "beispiel": "Laporan keuangan konsolidasian",
+   "stichtag": "2025-12-31"
+  },
+  "PrinciplesOfConsolidationTextBlock": {
+   "anzahl": 1,
+   "beispiel": "Laporan keuangan konsolidasian",
+   "stichtag": "2025-12-31"
+  },
+  "CashAndCashEquivalentsTextBlock": {
+   "anzahl": 1,
+   "beispiel": "Kas dan setara kas di laporan ",
+   "stichtag": "2025-12-31"
+  },
+  "TradeAndOtherReceivablesTextBlock": {
+   "anzahl": 1,
+   "beispiel": "Grup menerapkan panduan prakti",
+   "stichtag": "2025-12-31"
+  },
+  "InventoriesTextBlock": {
+   "anzahl": 1,
+   "beispiel": "Persediaan terdiri dari kartu ",
+   "stichtag": "2025-12-31"
+  },
+  "InvestmentPropertyTextBlock": {
+   "anzahl": 1,
+   "beispiel": "tidak tersedia",
+   "stichtag": "2025-12-31"
+  },
+  "FixedAssetsTextBlock": {
+   "anzahl": 1,
+   "beispiel": "Aset tetap dinyatakan pada har",
+   "stichtag": "2025-12-31"
+  },
+  "UndevelopedLandTextBlock": {
+   "anzahl": 1,
+   "beispiel": "tidak tersedia",
+   "stichtag": "2025-12-31"
+  },
+  "DeferredChargesTextBlock": {
+   "anzahl": 1,
+   "beispiel": "Hak atas tanah termasuk biaya ",
+   "stichtag": "2025-12-31"
+  },
+  "TradePayablesAndOtherLiabilitiesTextBlock": {
+   "anzahl": 1,
+   "beispiel": "Liabilitas keuangan diklasifik",
+   "stichtag": "2025-12-31"
+  },
+  "RevenueAndExpenseRecognitionTextBlock": {
+   "anzahl": 1,
+   "beispiel": "PSAK 115 menetapkan kerangka k",
+   "stichtag": "2025-12-31"
+  },
+  "ForeignCurrencyTranslationTextBlock": {
+   "anzahl": 1,
+   "beispiel": "Transaksi-transaksi dalam valu",
+   "stichtag": "2025-12-31"
+  },
+  "TransactionsWithRelatedPartiesTextBlock": {
+   "anzahl": 1,
+   "beispiel": "dengan Peraturan Bapepam-LK No",
+   "stichtag": "2025-12-31"
+  },
+  "IncomeTaxesTextBlock": {
+   "anzahl": 1,
+   "beispiel": "Pajak Penghasilan ()&#13;\nPaja",
+   "stichtag": "2025-12-31"
+  },
+  "BorrowingsTextBlock": {
+   "anzahl": 1,
+   "beispiel": "Pada saat pengakuan awal, pinj",
+   "stichtag": "2025-12-31"
+  },
+  "ProvisionsTextBlock": {
+   "anzahl": 1,
+   "beispiel": "Provisi diakui ketika Grup mem",
+   "stichtag": "2025-12-31"
+  },
+  "EmployeeBenefitsTextBlock": {
+   "anzahl": 1,
+   "beispiel": "Imbalan kerja jangka pendek&#1",
+   "stichtag": "2025-12-31"
+  },
+  "EarningsPerShareTextBlock": {
+   "anzahl": 1,
+   "beispiel": "Laba per saham dasar dihitung ",
+   "stichtag": "2025-12-31"
+  },
+  "DividendsTextBlock": {
+   "anzahl": 1,
+   "beispiel": "Pembagian dividen kepada para ",
+   "stichtag": "2025-12-31"
+  },
+  "SegmentReportingTextBlock": {
+   "anzahl": 1,
+   "beispiel": "Informasi segmen Grup disajika",
+   "stichtag": "2025-12-31"
+  },
+  "DerivativeFinancialInstrumentsTextBlock": {
+   "anzahl": 1,
+   "beispiel": "Aset keuangan diukur pada biay",
+   "stichtag": "2025-12-31"
+  },
+  "TheImplementationOfNewStatementsOfAccountingStandardsTextBlock": {
+   "anzahl": 1,
+   "beispiel": "Standar akuntansi baru&#13;\nPa",
+   "stichtag": "2025-12-31"
+  },
+  "BusinessCombinationTextBlock": {
+   "anzahl": 1,
+   "beispiel": "Penerapan metode akuisisi dala",
+   "stichtag": "2025-12-31"
+  },
+  "DeterminationOfFairValueTextBlock": {
+   "anzahl": 1,
+   "beispiel": "Ketika nilai wajar atas aset k",
+   "stichtag": "2025-12-31"
+  },
+  "ForeignCurrencyTransactionsAndBalancesTextBlock": {
+   "anzahl": 1,
+   "beispiel": "Mata uang pelaporan yang digun",
+   "stichtag": "2025-12-31"
+  },
+  "SecuritiesTextBlock": {
+   "anzahl": 1,
+   "beispiel": "tidak tersedia",
+   "stichtag": "2025-12-31"
+  },
+  "ShorttermInvestmentTextBlock": {
+   "anzahl": 1,
+   "beispiel": "tidak tersedia",
+   "stichtag": "2025-12-31"
+  },
+  "RightOfUseAssetsTextBlock": {
+   "anzahl": 1,
+   "beispiel": "Grup menerapkan pendekatan pen",
+   "stichtag": "2025-12-31"
+  },
+  "InvestmentPropertiesTextBlock": {
+   "anzahl": 1,
+   "beispiel": "tidak tersedia",
+   "stichtag": "2025-12-31"
+  },
+  "GoodwillTextBlock": {
+   "anzahl": 1,
+   "beispiel": "Goodwill awalnya diukur pada h",
+   "stichtag": "2025-12-31"
+  },
+  "InvestmentInAssociatesTextBlock": {
+   "anzahl": 1,
+   "beispiel": "Bagian kumulatif rugi atas inv",
+   "stichtag": "2025-12-31"
+  },
+  "IntangibleAssetsTextBlock": {
+   "anzahl": 1,
+   "beispiel": "Aset takberwujud diakui jika k",
+   "stichtag": "2025-12-31"
+  },
+  "PrepaidExpensesTextBlock": {
+   "anzahl": 1,
+   "beispiel": "Beban dibayar di muka diamorti",
+   "stichtag": "2025-12-31"
+  },
+  "InsuranceReceivablesAndPayablesTextBlock": {
+   "anzahl": 1,
+   "beispiel": "tidak tersedia",
+   "stichtag": "2025-12-31"
+  },
+  "ConsumerFinancingReceivablesTextBlock": {
+   "anzahl": 1,
+   "beispiel": "tidak tersedia",
+   "stichtag": "2025-12-31"
+  },
+  "ConcessionFinancialAssetsTextBlock": {
+   "anzahl": 1,
+   "beispiel": "tidak tersedia",
+   "stichtag": "2025-12-31"
+  },
+  "ContractLiabilitiesTextBlock": {
+   "anzahl": 1,
+   "beispiel": "Liabilitas kontrak diakui jika",
+   "stichtag": "2025-12-31"
+  },
+  "DepositsFromCustomersAndDepositsFromOtherBanksTextBlock": {
+   "anzahl": 1,
+   "beispiel": "tidak tersedia",
+   "stichtag": "2025-12-31"
+  },
+  "SubordinatedBondsTextBlock": {
+   "anzahl": 1,
+   "beispiel": "tidak tersedia",
+   "stichtag": "2025-12-31"
+  },
+  "SecuritiesPurchasedUnderResellAgreementsTextBlock": {
+   "anzahl": 1,
+   "beispiel": "tidak tersedia",
+   "stichtag": "2025-12-31"
+  },
+  "TreasuryStockTextBlock": {
+   "anzahl": 1,
+   "beispiel": "Saham diperoleh kembali dicata",
+   "stichtag": "2025-12-31"
+  },
+  "ShareCapitalTextBlock": {
+   "anzahl": 1,
+   "beispiel": "Perusahaan hanya menerbitkan 1",
+   "stichtag": "2025-12-31"
+  },
+  "SharebasedPaymentArrangementTextBlock": {
+   "anzahl": 1,
+   "beispiel": "tidak tersedia",
+   "stichtag": "2025-12-31"
+  },
+  "StockIssuanceCostTextBlock": {
+   "anzahl": 1,
+   "beispiel": "tidak tersedia",
+   "stichtag": "2025-12-31"
+  },
+  "FinancialInstrumentsTextBlock": {
+   "anzahl": 1,
+   "beispiel": "Grup mengklasifikasikan instru",
+   "stichtag": "2025-12-31"
+  },
+  "NoncurrentAssetsClassifiedAsHeldForSaleTextBlock": {
+   "anzahl": 1,
+   "beispiel": "tidak tersedia",
+   "stichtag": "2025-12-31"
+  },
+  "EventsAfterReportingPeriodTextBlock": {
+   "anzahl": 1,
+   "beispiel": "a. Pada tanggal 20 Oktober 202",
+   "stichtag": "2025-12-31"
+  },
+  "AdoptionOfNewAccountingStandardsTextBlock": {
+   "anzahl": 1,
+   "beispiel": "Standar akuntansi baru&#13;\nPa",
+   "stichtag": "2025-12-31"
+  },
+  "AccountingStandardsIssuedButNotYetEffectiveTextBlock": {
+   "anzahl": 1,
+   "beispiel": "Standar akuntansi yang telah d",
+   "stichtag": "2025-12-31"
+  },
+  "ConsumerFinancingLiabilitiesTextBlock": {
+   "anzahl": 1,
+   "beispiel": "tidak tersedia",
+   "stichtag": "2025-12-31"
+  },
+  "DisclosureofNotesforPropertyPlantandEquipmentTextBlock": {
+   "anzahl": 1,
+   "beispiel": "(i) Selama tahun 2025 dan 2024",
+   "stichtag": "2025-12-31"
+  },
+  "MerchandiseInventory": {
+   "anzahl": 2,
+   "beispiel": "457000000000",
+   "stichtag": "2025-12-31"
+  },
+  "OtherInventories": {
+   "anzahl": 2,
+   "beispiel": "504000000000",
+   "stichtag": "2025-12-31"
+  },
+  "InventoriesGross": {
+   "anzahl": 2,
+   "beispiel": "961000000000",
+   "stichtag": "2025-12-31"
+  },
+  "AllowanceForImpairmentOfInventories": {
+   "anzahl": 3,
+   "beispiel": "60000000000",
+   "stichtag": "2025-12-31"
+  },
+  "IncreaseDecreaseforAllowanceForImpairmentOfInventory": {
+   "anzahl": 2,
+   "beispiel": "0",
+   "stichtag": "2025-12-31"
+  },
+  "DisclosureofNotesforInventoriesTextBlock": {
+   "anzahl": 1,
+   "beispiel": "Manajemen berpendapat saldo pr",
+   "stichtag": "2025-12-31"
+  },
+  "TotalBankLoanGross": {
+   "anzahl": 2,
+   "beispiel": "41258000000000",
+   "stichtag": "2025-12-31"
+  },
+  "UnamortizedBankLoanIssuanceCost": {
+   "anzahl": 2,
+   "beispiel": "109000000000",
+   "stichtag": "2025-12-31"
+  },
+  "BankLoans": {
+   "anzahl": 2,
+   "beispiel": "41149000000000",
+   "stichtag": "2025-12-31"
+  },
+  "DisclosureofNotesforLongTermBankLoansTextBlock": {
+   "anzahl": 1,
+   "beispiel": "Sebagaimana dinyatakan dalam p",
+   "stichtag": "2025-12-31"
+  },
+  "DisclosureofNotesforShortTermBankLoansTextBlock": {
+   "anzahl": 1,
+   "beispiel": "Sebagaimana dinyatakan dalam p",
+   "stichtag": "2025-12-31"
+  }
+ }
+}
