@@ -1,0 +1,42 @@
+name: Kurshistorie FMP (wöchentlich)
+
+# Sonntags: EZB-Referenzkurse als Zeitreihe, FMP-Schlusskurshistorie je Firma (höchstens FMP_MAX Firmen je Lauf,
+# älteste zuerst) und daraus der Kursverlauf in Euro je Firma (data/firma-kurse).
+
+on:
+  schedule:
+    - cron: "40 6 * * 0"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: fmp-historie
+
+jobs:
+  holen:
+    runs-on: ubuntu-latest
+    timeout-minutes: 90
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: EZB-Referenzkurse als Zeitreihe
+        run: python3 tools/ecb_historie.py
+      - name: FMP-Schlusskurshistorie je Firma
+        env:
+          FMP_API_KEY: ${{ secrets.FMP_API_KEY }}
+          FMP_MAX: "400"
+        run: python3 tools/fmp_historie.py
+      - name: Kursverlauf in Euro je Firma
+        run: python3 tools/firma_kurse.py
+      - name: Ergebnis committen
+        run: |
+          git config user.name "kurse-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add data/wechselkurse-historie.json data/kurse/fmp-historie data/firma-kurse
+          if git diff --cached --quiet; then echo "Keine Aenderung"; exit 0; fi
+          git commit -m "Kurshistorie FMP und EZB aktualisiert"
+          for i in 1 2 3; do git pull --rebase --autostash -X theirs -q && git push && break; sleep 5; done
