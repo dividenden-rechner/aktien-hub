@@ -69,6 +69,74 @@ def asien_werte(out, rate, tag):
                   "dividende_berechnet": False, "quelle": f.get("quelle"), **bilanz_werte}
 
 
+def idx_werte(out, rate, tag):
+    """Indonesien (IDX): Kurs aus der Tagesübersicht der Börse (data/idx/kurse.json), Jahreszahlen aus den
+    Prüfberichten (data/idx/fundamentals.json). Schlüssel: Kürzel + .JK. Die Dividende je Aktie ist nicht
+    gemeldet, sie wird aus den gezahlten Dividenden und der Aktienzahl (Gewinn / EPS) geschätzt
+    (dividende_berechnet = True)."""
+    try:
+        fund = json.load(open("data/idx/fundamentals.json", encoding="utf-8"))["firmen"]
+        kurse = json.load(open("data/idx/kurse.json", encoding="utf-8"))["kurse"]
+    except Exception:
+        return
+    if "IDR" not in rate:
+        return
+    for kode, f in fund.items():
+        k = kurse.get(kode) or {}
+        heimat = k.get("schluss")
+        if not heimat:
+            continue
+        def letzt(name):
+            reihe = f["k"].get(name) or []
+            return reihe[-1] if reihe else None
+        # jüngstes Geschäftsjahr mit plausiblem Gewinn je Aktie (>= 1 IDR) und Dividende; Einzeljahre mit
+        # Zuordnungsfehlern (EPS nahe null) werden übersprungen
+        jahre = [d for d, _ in (f["k"].get("eps_verw") or [])]
+        gj_ok = None
+        for d in reversed(jahre):
+            e = dict(f["k"].get("eps_verw") or []).get(d)
+            g_ = dict(f["k"].get("gewinn") or []).get(d)
+            dv = dict(f["k"].get("dividenden_gezahlt") or []).get(d)
+            if e and e >= 1 and g_ and g_ > 0 and dv and dv > 0:
+                gj_ok = (d, e, g_, dv)
+                break
+        if not gj_ok:
+            continue
+        g = [gj_ok[0], gj_ok[2]]
+        eps = [gj_ok[0], gj_ok[1]]
+        div = [gj_ok[0], gj_ok[3]]
+        ek, ums = letzt("eigenkapital"), letzt("umsatz")
+        if ek and ek[0] != g[0]:
+            ek = dict(f["k"].get("eigenkapital") or []).get(g[0]) and [g[0], dict(f["k"]["eigenkapital"])[g[0]]]
+        if ums and ums[0] != g[0]:
+            ums = dict(f["k"].get("umsatz") or []).get(g[0]) and [g[0], dict(f["k"]["umsatz"])[g[0]]]
+        aktien = g[1] / eps[1]
+        dps = round(div[1] / aktien, 2)
+        if dps < 1 or not (1 <= heimat * aktien / g[1] <= 200):   # KGV und Dividende müssen plausibel sein
+            continue
+        eur = heimat / rate["IDR"]
+        usd = rate.get("USD")
+        usd_je = usd / rate["IDR"] if usd else None   # USD je IDR
+        bilanz = {
+            "roe": r2(g[1] / ek[1] * 100, 1) if ek and ek[1] and ek[1] > 0 else None,
+            "nettomarge": r2(g[1] / ums[1] * 100, 1) if ums and ums[1] and ums[1] > 0 else None,
+            "kbv": r2(heimat * aktien / ek[1], 2) if ek and ek[1] and ek[1] > 0 else None,
+            "umsatz_usd": round(ums[1] * usd_je) if ums and usd_je else None,
+            "gewinn_usd": round(g[1] * usd_je) if usd_je else None,
+            "ek_usd": round(ek[1] * usd_je) if ek and usd_je else None,
+        }
+        out[f"{kode}.JK"] = {"isin": None, "name": f.get("n") or k.get("name"), "sektor": "Indonesien", "branche": None,
+                             "land": "ID", "waehrung": "IDR", "kurs_heimat": heimat, "kurs_eur": round(eur, 4),
+                             "kurs_usd": round(eur * usd, 2) if usd else None, "boerse": "IDX (Jakarta)",
+                             "veraenderung": None, "datum": k.get("datum") or tag, "fx": rate["IDR"],
+                             "gj": str(g[0])[:4], "boersenwert_eur": round(heimat * aktien / rate["IDR"]),
+                             "boersenwert_usd": round(heimat * aktien * usd_je) if usd_je else None,
+                             "dividende": dps, "rendite": r2(dps / heimat * 100),
+                             "kgv": r2(heimat / eps[1], 1), "ausschuettung": r2(div[1] / g[1] * 100, 0),
+                             "dividende_berechnet": True, "quelle": "IDX-Prüfberichte und Tagesübersicht",
+                             **{a: v for a, v in bilanz.items() if v is not None}}
+
+
 def ezb_kurse():
     x = ET.fromstring(urllib.request.urlopen(urllib.request.Request(EZB, headers={"User-Agent": "dividenden-rechner.de"}), timeout=60).read())
     tage = {}
@@ -486,6 +554,7 @@ def main():
         o["nav_je_aktie"] = nav
         o["schulden_ek"] = o["bdc"]["verschuldung"] or o.get("schulden_ek")
     asien_werte(out, rate, tag)
+    idx_werte(out, rate, tag)
     dividenden_korrektur(out)
     modellwerte(out)
     ohne_kurs(out, rate)

@@ -148,7 +148,7 @@ def datenquellen():
     global _QUELLEN
     if _QUELLEN is None:
         _QUELLEN = []
-        for pfad in ["sec/fundamentals.json", "esef/fundamentals.json", "boerse-de/fundamentals.json", "asien/fundamentals.json"]:
+        for pfad in ["sec/fundamentals.json", "esef/fundamentals.json", "boerse-de/fundamentals.json", "asien/fundamentals.json", "idx/fundamentals.json"]:
             try:
                 _QUELLEN.append(json.load(open(os.path.join(B.ROOT, "data", pfad), encoding="utf-8")).get("firmen", {}))
             except Exception:
