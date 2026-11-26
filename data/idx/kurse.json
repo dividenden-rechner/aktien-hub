@@ -1,0 +1,272 @@
+{
+ "quelle": "IDX, TradingSummary/GetStockSummary (Tagesübersicht)",
+ "waehrung": "IDR",
+ "stand": "2026-11-26 02:40 UTC",
+ "kurse": {
+  "BBCA": {
+   "datum": "2026-11-25",
+   "schluss": 5825.0,
+   "vorschluss": 5800.0,
+   "hoch": 5850.0,
+   "tief": 5750.0,
+   "volumen": 164649600.0
+  },
+  "BBRI": {
+   "datum": "2026-11-25",
+   "schluss": 3070.0,
+   "vorschluss": 3100.0,
+   "hoch": 3090.0,
+   "tief": 3030.0,
+   "volumen": 180023000.0
+  },
+  "BMRI": {
+   "datum": "2026-11-25",
+   "schluss": 4000.0,
+   "vorschluss": 3990.0,
+   "hoch": 4020.0,
+   "tief": 3950.0,
+   "volumen": 131504100.0
+  },
+  "ASII": {
+   "datum": "2026-11-25",
+   "schluss": 5550.0,
+   "vorschluss": 5450.0,
+   "hoch": 5550.0,
+   "tief": 5400.0,
+   "volumen": 24941400.0
+  },
+  "BBNI": {
+   "datum": "2026-11-25",
+   "schluss": 3580.0,
+   "vorschluss": 3570.0,
+   "hoch": 3600.0,
+   "tief": 3550.0,
+   "volumen": 15730900.0
+  },
+  "TLKM": {
+   "datum": "2026-11-25",
+   "schluss": 2010.0,
+   "vorschluss": 2080.0,
+   "hoch": 2060.0,
+   "tief": 2000.0,
+   "volumen": 189354200.0
+  },
+  "INDF": {
+   "datum": "2026-11-25",
+   "schluss": 7025.0,
+   "vorschluss": 7175.0,
+   "hoch": 7225.0,
+   "tief": 6975.0,
+   "volumen": 10774500.0
+  },
+  "ADRO": {
+   "datum": "2026-11-25",
+   "schluss": 2330.0,
+   "vorschluss": 2340.0,
+   "hoch": 2370.0,
+   "tief": 2320.0,
+   "volumen": 13285800.0
+  },
+  "PGAS": {
+   "datum": "2026-11-25",
+   "schluss": 1520.0,
+   "vorschluss": 1530.0,
+   "hoch": 1530.0,
+   "tief": 1510.0,
+   "volumen": 17000200.0
+  },
+  "AADI": {
+   "datum": "2026-11-25",
+   "schluss": 9900.0,
+   "vorschluss": 9900.0,
+   "hoch": 10150.0,
+   "tief": 9850.0,
+   "volumen": 7564900.0
+  },
+  "MDKA": {
+   "datum": "2026-11-25",
+   "schluss": 1750.0,
+   "vorschluss": 1795.0,
+   "hoch": 1810.0,
+   "tief": 1740.0,
+   "volumen": 20268200.0
+  },
+  "CPIN": {
+   "datum": "2026-11-25",
+   "schluss": 2310.0,
+   "vorschluss": 2380.0,
+   "hoch": 2380.0,
+   "tief": 2310.0,
+   "volumen": 10792800.0
+  },
+  "BRMS": {
+   "datum": "2026-11-25",
+   "schluss": 270.0,
+   "vorschluss": 290.0,
+   "hoch": 288.0,
+   "tief": 270.0,
+   "volumen": 666201600.0
+  },
+  "BRPT": {
+   "datum": "2026-11-25",
+   "schluss": 635.0,
+   "vorschluss": 680.0,
+   "hoch": 665.0,
+   "tief": 635.0,
+   "volumen": 278284800.0
+  },
+  "PTBA": {
+   "datum": "2026-11-25",
+   "schluss": 2950.0,
+   "vorschluss": 2920.0,
+   "hoch": 2970.0,
+   "tief": 2920.0,
+   "volumen": 11390900.0
+  },
+  "KLBF": {
+   "datum": "2026-11-25",
+   "schluss": 800.0,
+   "vorschluss": 795.0,
+   "hoch": 810.0,
+   "tief": 795.0,
+   "volumen": 41147600.0
+  },
+  "ENRG": {
+   "datum": "2026-11-25",
+   "schluss": 530.0,
+   "vorschluss": 555.0,
+   "hoch": 565.0,
+   "tief": 520.0,
+   "volumen": 59369200.0
+  },
+  "INKP": {
+   "datum": "2026-11-25",
+   "schluss": 6350.0,
+   "vorschluss": 6450.0,
+   "hoch": 6550.0,
+   "tief": 6350.0,
+   "volumen": 3391700.0
+  },
+  "AMRT": {
+   "datum": "2026-11-25",
+   "schluss": 1040.0,
+   "vorschluss": 1030.0,
+   "hoch": 1050.0,
+   "tief": 1025.0,
+   "volumen": 40261100.0
+  },
+  "BUMI": {
+   "datum": "2026-11-25",
+   "schluss": 127.0,
+   "vorschluss": 129.0,
+   "hoch": 130.0,
+   "tief": 123.0,
+   "volumen": 1998930800.0
+  },
+  "AKRA": {
+   "datum": "2026-11-25",
+   "schluss": 1245.0,
+   "vorschluss": 1280.0,
+   "hoch": 1290.0,
+   "tief": 1235.0,
+   "volumen": 18802000.0
+  },
+  "ITMG": {
+   "datum": "2026-11-25",
+   "schluss": 24650.0,
+   "vorschluss": 24450.0,
+   "hoch": 24775.0,
+   "tief": 24475.0,
+   "volumen": 412900.0
+  },
+  "INCO": {
+   "datum": "2026-11-25",
+   "schluss": 3400.0,
+   "vorschluss": 3380.0,
+   "hoch": 3430.0,
+   "tief": 3260.0,
+   "volumen": 13277400.0
+  },
+  "GGRM": {
+   "datum": "2026-11-25",
+   "schluss": 15775.0,
+   "vorschluss": 15850.0,
+   "hoch": 16050.0,
+   "tief": 15775.0,
+   "volumen": 488900.0
+  },
+  "CMRY": {
+   "datum": "2026-11-25",
+   "schluss": 4130.0,
+   "vorschluss": 4150.0,
+   "hoch": 4190.0,
+   "tief": 4100.0,
+   "volumen": 4826100.0
+  },
+  "MEDC": {
+   "datum": "2026-11-25",
+   "schluss": 1185.0,
+   "vorschluss": 1170.0,
+   "hoch": 1215.0,
+   "tief": 1180.0,
+   "volumen": 40997200.0
+  },
+  "INTP": {
+   "datum": "2026-11-25",
+   "schluss": 6225.0,
+   "vorschluss": 6075.0,
+   "hoch": 6325.0,
+   "tief": 6075.0,
+   "volumen": 3700600.0
+  },
+  "EXCL": {
+   "datum": "2026-11-25",
+   "schluss": 1690.0,
+   "vorschluss": 1710.0,
+   "hoch": 1715.0,
+   "tief": 1660.0,
+   "volumen": 14325700.0
+  },
+  "MAPA": {
+   "datum": "2026-11-25",
+   "schluss": 610.0,
+   "vorschluss": 620.0,
+   "hoch": 635.0,
+   "tief": 610.0,
+   "volumen": 17089300.0
+  },
+  "JPFA": {
+   "datum": "2026-11-25",
+   "schluss": 1430.0,
+   "vorschluss": 1440.0,
+   "hoch": 1465.0,
+   "tief": 1430.0,
+   "volumen": 26729700.0
+  },
+  "TOWR": {
+   "datum": "2026-11-25",
+   "schluss": 378.0,
+   "vorschluss": 380.0,
+   "hoch": 384.0,
+   "tief": 378.0,
+   "volumen": 5471900.0
+  },
+  "BBTN": {
+   "datum": "2026-11-25",
+   "schluss": 1005.0,
+   "vorschluss": 1020.0,
+   "hoch": 1030.0,
+   "tief": 1000.0,
+   "volumen": 10565800.0
+  },
+  "UNTR": {
+   "datum": "2026-11-25",
+   "schluss": 23775.0,
+   "vorschluss": 23300.0,
+   "hoch": 24000.0,
+   "tief": 23300.0,
+   "volumen": 2845300.0
+  }
+ },
+ "fehlend": []
+}
