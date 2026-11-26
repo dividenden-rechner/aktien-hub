@@ -1,6 +1,6 @@
-# ESEF-Jahreszahlen Europa: Abdeckung (Stand 2026-11-25)
+# ESEF-Jahreszahlen Europa: Abdeckung (Stand 2026-11-26)
 
-452 Firmen in der Liste, mit Jahreszahlen: **192**, davon mit Börsenkurs (ISIN): **186**.
+452 Firmen in der Liste, mit Jahreszahlen: **267**, davon mit Börsenkurs (ISIN): **252**.
 
 | Kürzel | Name | Rechtsträger laut Bericht | Jahre | Kern | Kurs | fehlt |
 |---|---|---|---|---|---|---|
@@ -209,97 +209,97 @@
 | ROCK-A.CO | ROCKWOOL A/S | ROCKWOOL A/S | 2019–2025 (EUR) | 7/7 | ja | – |
 | GRS281003004 | EΛΒΑΛΧΑΛΚΟΡ ΕΛΛΗΝΙΚΗ ΒΙΟΜΗΧΑΝΙΑ ΧΑΛΚΟΥ ΚΑΙ ΑΛΟΥΜΙΝΙΟΥ ΑΝΩΝΥΜΟΣ ΕΤΑΙΡΕΙΑ | – | nicht gefunden | | | |
 | BILI-A.ST | BILIA AB | BILIA AB | 2019–2025 (SEK) | 6/7 | ja | capex |
-| IPN.PA | IPSEN | – | noch nicht geprüft | | | |
-| NAS.OL | NORWEGIAN AIR SHUTTLE ASA | – | noch nicht geprüft | | | |
-| ATEA.OL | ATEA ASA | – | noch nicht geprüft | | | |
-| GRS260333000 | ΟΡΓΑΝΙΣΜΟΣ ΤΗΛΕΠΙΚΟΙΝΩΝΙΩΝ ΤΗΣ ΕΛΛΑΔΟΣ ΑΝΩΝΥΜΗ ΕΤΑΙΡΕΙΑ | – | noch nicht geprüft | | | |
-| VRLA.PA | VERALLIA | – | noch nicht geprüft | | | |
-| GRS829003003 | ΤΡΑΠΕΖΑ EUROBANK ΑΝΩΝΥΜΗ EΤΑΙΡΕΙΑ | – | noch nicht geprüft | | | |
-| NK.PA | IMERYS | – | noch nicht geprüft | | | |
-| NL0012650360 | RHI Magnesita N.V. | – | noch nicht geprüft | | | |
-| DBG.PA | DERICHEBOURG | – | noch nicht geprüft | | | |
-| BEIJ-B.ST | Beijer Ref AB (publ) | – | noch nicht geprüft | | | |
-| HLUN-A.CO | H. LUNDBECK A/S | – | noch nicht geprüft | | | |
-| LSG.OL | LERØY SEAFOOD GROUP ASA | – | noch nicht geprüft | | | |
-| FIA1S.HE | FINNAIR OYJ | – | noch nicht geprüft | | | |
-| PAAL-B.CO | Per Aarsleff Holding A/S | – | noch nicht geprüft | | | |
-| AFG.OL | AF GRUPPEN ASA | – | noch nicht geprüft | | | |
-| DIM.PA | Sartorius Stedim Biotech | – | noch nicht geprüft | | | |
-| EDEN.PA | EDENRED | – | noch nicht geprüft | | | |
-| STOR-B.ST | Storskogen Group AB (publ) | – | noch nicht geprüft | | | |
-| KOG.OL | KONGSBERG GRUPPEN ASA | – | noch nicht geprüft | | | |
-| BOL.PA | BOLLORE SE | – | noch nicht geprüft | | | |
-| HAVAS.AS | Havas N.V. | – | noch nicht geprüft | | | |
-| ACE.MI | ACEA S.P.A. | – | noch nicht geprüft | | | |
-| INDT.ST | Indutrade Aktiebolag | – | noch nicht geprüft | | | |
-| DNORD.CO | DAMPSKIBSSELSKABET NORDEN A/S | – | noch nicht geprüft | | | |
-| SWEC-A.ST | SWECO AB (publ) | – | noch nicht geprüft | | | |
-| HEIJM.AS | Koninklijke Heijmans N.V. | – | noch nicht geprüft | | | |
-| KEMIRA.HE | Kemira Oyj | – | noch nicht geprüft | | | |
-| GRS003003035 | ΕΘΝΙΚΗ ΤΡΑΠΕΖΑ ΤΗΣ ΕΛΛΑΔΟΣ Α.Ε. | – | noch nicht geprüft | | | |
-| LOOMIS.ST | LOOMIS AB | – | noch nicht geprüft | | | |
-| ARIS.MI | Ariston Holding N.V. | – | noch nicht geprüft | | | |
-| BE0974338700 | Titan | – | noch nicht geprüft | | | |
-| TEL2-A.ST | TELE2 AB | – | noch nicht geprüft | | | |
-| HU0000073507 | Magyar Telekom Távközlési Nyilvánosan Működő Részvénytársaság | – | noch nicht geprüft | | | |
-| EQT.ST | EQT AB | – | noch nicht geprüft | | | |
-| LUND-B.ST | L E Lundbergföretagen Aktiebolag (publ) | – | noch nicht geprüft | | | |
-| GRNG.ST | Gränges AB | – | noch nicht geprüft | | | |
-| BRAV.ST | Bravida Holding AB | – | noch nicht geprüft | | | |
-| LATO-B.ST | Investmentaktiebolaget Latour | – | noch nicht geprüft | | | |
-| LT0000115768 | AB "IGNITIS GRUPĖ" | – | noch nicht geprüft | | | |
-| DOQ.DE | DO & CO Aktiengesellschaft | – | noch nicht geprüft | | | |
-| REY.MI | REPLY S.P.A. | – | noch nicht geprüft | | | |
-| IE0003864109 | Greencore Group plc | – | noch nicht geprüft | | | |
-| AFRY.ST | AFRY AB | – | noch nicht geprüft | | | |
-| 4F1.DE | FLUIDRA S.A. | – | noch nicht geprüft | | | |
-| NL0012294474 | Digi Communications N.V. | – | noch nicht geprüft | | | |
-| BIOMAR.CO | BIOMAR GROUP A/S | – | noch nicht geprüft | | | |
-| SEM.LS | SEMAPA - SOCIEDADE DE INVESTIMENTO E GESTÃO, SGPS, S.A. | – | noch nicht geprüft | | | |
-| RBREW.CO | ROYAL UNIBREW A/S | – | noch nicht geprüft | | | |
-| BB.PA | SOCIETE BIC | – | noch nicht geprüft | | | |
-| IP.MI | "INTERPUMP GROUP S.P.A." | – | noch nicht geprüft | | | |
-| CENER.BR | CENERGY HOLDINGS | – | noch nicht geprüft | | | |
-| ADDT-B.ST | Addtech AB | – | noch nicht geprüft | | | |
-| SHOT.ST | Scandic Hotels Group AB | – | noch nicht geprüft | | | |
-| NVG.LS | THE NAVIGATOR COMPANY, S.A. | – | noch nicht geprüft | | | |
-| HOLM-A.ST | Holmen Aktiebolag | – | noch nicht geprüft | | | |
-| SI0031102120 | KRKA, tovarna zdravil, d.d., Novo mesto | – | noch nicht geprüft | | | |
-| QIA.DE | QIAGEN N.V. | – | noch nicht geprüft | | | |
-| ORNAV.HE | Orion Oyj | – | noch nicht geprüft | | | |
-| GRS495003006 | ΑΕΡΟΠΟΡΙΑ ΑΙΓΑΙΟΥ ΑΝΩΝΥΜΗ ΑΕΡΟΠΟΡΙΚΗ ΕΤΑΙΡΕΙΑ | – | noch nicht geprüft | | | |
-| TIETO.HE | Tieto Oyj | – | noch nicht geprüft | | | |
-| OVS.MI | OVS SPA | – | noch nicht geprüft | | | |
-| ACAD.ST | AcadeMedia AB | – | noch nicht geprüft | | | |
-| ENXP.LS | Euronext N.V. | – | noch nicht geprüft | | | |
-| FII.PA | LISI | – | noch nicht geprüft | | | |
-| KALMAR.HE | Kalmar Oyj | – | noch nicht geprüft | | | |
-| HPOL-B.ST | HEXPOL AB | – | noch nicht geprüft | | | |
-| DOFG.OL | DOF GROUP ASA | – | noch nicht geprüft | | | |
-| ATT.ST | Attendo AB (publ) | – | noch nicht geprüft | | | |
-| RATO-B.ST | Ratos AB | – | noch nicht geprüft | | | |
-| GRS120003009 | ΚΑΠΝΟΒΙΟΜΗΧΑΝΙΑ ΚΑΡΕΛΙΑ ΑΝΩΝΥΜΟΣ ΕΤΑΙΡΕΙΑ | – | noch nicht geprüft | | | |
-| ALLEI.ST | Alleima AB | – | noch nicht geprüft | | | |
-| CEM.MI | Cementir Holding N.V. | – | noch nicht geprüft | | | |
-| O5G.DE | CPI PROPERTY GROUP | – | noch nicht geprüft | | | |
-| GET.PA | GETLINK S.E. | – | noch nicht geprüft | | | |
-| ASKER.ST | Asker Healthcare Group AB | – | noch nicht geprüft | | | |
-| EKTA-B.ST | Elekta AB (publ) | – | noch nicht geprüft | | | |
-| AT00000AMAG3 | AMAG Austria Metall AG | – | noch nicht geprüft | | | |
-| VU.PA | VUSIONGROUP | – | noch nicht geprüft | | | |
-| GRS432003028 | ΑΚTOR ΑΝΏΝΥΜΗ ΕΤΑΙΡΕΊΑ ΣΥΜΜΕΤΟΧΏΝ, ΤΕΧΝΙΚΏΝ ΚΑΙ ΕΝΕΡΓΕΙΑΚΏΝ ΈΡΓΩΝ | – | noch nicht geprüft | | | |
-| TGS.OL | TGS ASA | – | noch nicht geprüft | | | |
-| TYRES.HE | Nokian Renkaat Oyj | – | noch nicht geprüft | | | |
-| EPR.OL | EUROPRIS ASA | – | noch nicht geprüft | | | |
-| LOTB.BR | LOTUS BAKERIES | – | noch nicht geprüft | | | |
-| DNO.OL | DNO ASA | – | noch nicht geprüft | | | |
-| MMT.PA | METROPOLE TELEVISION | – | noch nicht geprüft | | | |
-| MTRS.ST | Munters Group AB | – | noch nicht geprüft | | | |
-| SANOMA.HE | Sanoma Oyj | – | noch nicht geprüft | | | |
-| PLX.PA | PLUXEE N.V. | – | noch nicht geprüft | | | |
-| HAUTO.OL | HÖEGH AUTOLINERS ASA | – | noch nicht geprüft | | | |
-| CRBN.AS | Corbion N.V. | – | noch nicht geprüft | | | |
-| GN.CO | GN STORE NORD A/S | – | noch nicht geprüft | | | |
+| IPN.PA | IPSEN | IPSEN | 2020–2024 (EUR) | 6/7 | ja | capex |
+| NAS.OL | NORWEGIAN AIR SHUTTLE ASA | NORWEGIAN AIR SHUTTLE ASA | 2020–2025 (NOK) | 7/7 | ja | – |
+| ATEA.OL | ATEA ASA | ATEA ASA | 2020–2025 (NOK) | 7/7 | ja | – |
+| GRS260333000 | ΟΡΓΑΝΙΣΜΟΣ ΤΗΛΕΠΙΚΟΙΝΩΝΙΩΝ ΤΗΣ ΕΛΛΑΔΟΣ ΑΝΩΝΥΜΗ ΕΤΑΙΡΕΙΑ | – | nicht gefunden | | | |
+| VRLA.PA | VERALLIA | VERALLIA | 2019–2024 (EUR) | 7/7 | ja | – |
+| GRS829003003 | ΤΡΑΠΕΖΑ EUROBANK ΑΝΩΝΥΜΗ EΤΑΙΡΕΙΑ | ΤΡΑΠΕΖΑ EUROBANK ΑΝΩΝΥΜΗ EΤΑΙΡΕΙΑ | 2024–2025 (EUR) | 6/7 | ja | operativer_cf |
+| NK.PA | IMERYS | IMERYS | 2020–2025 (EUR) | 7/7 | ja | – |
+| NL0012650360 | RHI Magnesita N.V. | RHI Magnesita N.V. | 2020–2025 (EUR) | 7/7 | ja | – |
+| DBG.PA | DERICHEBOURG | DERICHEBOURG | 2021–2025 (EUR) | 7/7 | ja | – |
+| BEIJ-B.ST | Beijer Ref AB (publ) | – | nicht gefunden | | | |
+| HLUN-A.CO | H. LUNDBECK A/S | H. LUNDBECK A/S | 2019–2025 (DKK) | 7/7 | ja | – |
+| LSG.OL | LERØY SEAFOOD GROUP ASA | LERØY SEAFOOD GROUP ASA | 2020–2025 (NOK) | 7/7 | ja | – |
+| FIA1S.HE | FINNAIR OYJ | FINNAIR OYJ | 2020–2025 (EUR) | 7/7 | fehlt | – |
+| PAAL-B.CO | Per Aarsleff Holding A/S | – | nicht gefunden | | | |
+| AFG.OL | AF GRUPPEN ASA | AF GRUPPEN ASA | 2019–2025 (NOK) | 7/7 | ja | – |
+| DIM.PA | Sartorius Stedim Biotech | Sartorius Stedim Biotech | 2020–2024 (EUR) | 7/7 | fehlt | – |
+| EDEN.PA | EDENRED | EDENRED | 2019–2025 (EUR) | 7/7 | ja | – |
+| STOR-B.ST | Storskogen Group AB (publ) | – | nicht gefunden | | | |
+| KOG.OL | KONGSBERG GRUPPEN ASA | KONGSBERG GRUPPEN ASA | 2020–2025 (NOK) | 7/7 | ja | – |
+| BOL.PA | BOLLORE SE | BOLLORE SE | 2020–2025 (EUR) | 6/7 | ja | operativer_cf |
+| HAVAS.AS | Havas N.V. | Havas N.V. | 2023–2025 (EUR) | 7/7 | ja | – |
+| ACE.MI | ACEA S.P.A. | ACEA S.P.A. | 2021–2025 (EUR) | 6/7 | ja | capex |
+| INDT.ST | Indutrade Aktiebolag | Indutrade Aktiebolag | 2020–2025 (SEK) | 7/7 | ja | – |
+| DNORD.CO | DAMPSKIBSSELSKABET NORDEN A/S | DAMPSKIBSSELSKABET NORDEN A/S | 2020–2025 (USD) | 7/7 | ja | – |
+| SWEC-A.ST | SWECO AB (publ) | – | nicht gefunden | | | |
+| HEIJM.AS | Koninklijke Heijmans N.V. | Koninklijke Heijmans N.V. | 2020–2025 (EUR) | 7/7 | fehlt | – |
+| KEMIRA.HE | Kemira Oyj | Kemira Oyj | 2020–2025 (EUR) | 7/7 | fehlt | – |
+| GRS003003035 | ΕΘΝΙΚΗ ΤΡΑΠΕΖΑ ΤΗΣ ΕΛΛΑΔΟΣ Α.Ε. | – | nicht gefunden | | | |
+| LOOMIS.ST | LOOMIS AB | LOOMIS AB | 2020–2025 (SEK) | 7/7 | ja | – |
+| ARIS.MI | Ariston Holding N.V. | – | nicht gefunden | | | |
+| BE0974338700 | Titan | Titan | 2019–2025 (EUR) | 7/7 | ja | – |
+| TEL2-A.ST | TELE2 AB | TELE2 AB | 2020–2025 (SEK) | 7/7 | ja | – |
+| HU0000073507 | Magyar Telekom Távközlési Nyilvánosan Működő Részvénytársaság | Magyar Telekom Távközlési Nyilvánosan Működő Részvénytársaság | 2020–2025 (HUF) | 7/7 | fehlt | – |
+| EQT.ST | EQT AB | EQT AB | 2020–2025 (EUR) | 7/7 | ja | – |
+| LUND-B.ST | L E Lundbergföretagen Aktiebolag (publ) | L E Lundbergföretagen Aktiebolag (publ) | 2020–2025 (SEK) | 7/7 | ja | – |
+| GRNG.ST | Gränges AB | Gränges AB | 2022–2025 (SEK) | 7/7 | ja | – |
+| BRAV.ST | Bravida Holding AB | Bravida Holding AB | 2020–2025 (SEK) | 7/7 | ja | – |
+| LATO-B.ST | Investmentaktiebolaget Latour | Investmentaktiebolaget Latour | 2020–2025 (SEK) | 7/7 | ja | – |
+| LT0000115768 | AB "IGNITIS GRUPĖ" | AB "IGNITIS GRUPĖ" | 2020–2025 (EUR) | 7/7 | ja | – |
+| DOQ.DE | DO & CO Aktiengesellschaft | – | nicht gefunden | | | |
+| REY.MI | REPLY S.P.A. | REPLY S.P.A. | 2020–2025 (EUR) | 7/7 | ja | – |
+| IE0003864109 | Greencore Group plc | – | nicht gefunden | | | |
+| AFRY.ST | AFRY AB | AFRY AB | 2020–2025 (SEK) | 7/7 | ja | – |
+| 4F1.DE | FLUIDRA S.A. | FLUIDRA S.A. | 2020–2025 (EUR) | 7/7 | ja | – |
+| NL0012294474 | Digi Communications N.V. | Digi Communications N.V. | 2020–2025 (EUR) | 7/7 | ja | – |
+| BIOMAR.CO | BIOMAR GROUP A/S | – | nicht gefunden | | | |
+| SEM.LS | SEMAPA - SOCIEDADE DE INVESTIMENTO E GESTÃO, SGPS, S.A. | SEMAPA - SOCIEDADE DE INVESTIMENTO E GESTÃO, SGPS, S.A. | 2020–2025 (EUR) | 7/7 | ja | – |
+| RBREW.CO | ROYAL UNIBREW A/S | ROYAL UNIBREW A/S | 2019–2025 (DKK) | 7/7 | ja | – |
+| BB.PA | SOCIETE BIC | SOCIETE BIC | 2019–2025 (EUR) | 7/7 | ja | – |
+| IP.MI | "INTERPUMP GROUP S.P.A." | – | nicht gefunden | | | |
+| CENER.BR | CENERGY HOLDINGS | CENERGY HOLDINGS | 2019–2025 (EUR) | 7/7 | ja | – |
+| ADDT-B.ST | Addtech AB | Addtech AB | 2021–2026 (SEK) | 7/7 | ja | – |
+| SHOT.ST | Scandic Hotels Group AB | Scandic Hotels Group AB | 2020–2025 (SEK) | 7/7 | ja | – |
+| NVG.LS | THE NAVIGATOR COMPANY, S.A. | THE NAVIGATOR COMPANY, S.A. | 2020–2025 (EUR) | 7/7 | ja | – |
+| HOLM-A.ST | Holmen Aktiebolag | Holmen Aktiebolag | 2020–2025 (SEK) | 7/7 | ja | – |
+| SI0031102120 | KRKA, tovarna zdravil, d.d., Novo mesto | KRKA, tovarna zdravil, d.d., Novo mesto | 2019–2024 (EUR) | 7/7 | ja | – |
+| QIA.DE | QIAGEN N.V. | QIAGEN N.V. | 2019–2025 (USD) | 7/7 | ja | – |
+| ORNAV.HE | Orion Oyj | Orion Oyj | 2019–2025 (EUR) | 7/7 | fehlt | – |
+| GRS495003006 | ΑΕΡΟΠΟΡΙΑ ΑΙΓΑΙΟΥ ΑΝΩΝΥΜΗ ΑΕΡΟΠΟΡΙΚΗ ΕΤΑΙΡΕΙΑ | ΑΕΡΟΠΟΡΙΑ ΑΙΓΑΙΟΥ ΑΝΩΝΥΜΗ ΑΕΡΟΠΟΡΙΚΗ ΕΤΑΙΡΕΙΑ | 2020–2025 (EUR) | 7/7 | ja | – |
+| TIETO.HE | Tieto Oyj | Tieto Oyj | 2019–2025 (EUR) | 7/7 | fehlt | – |
+| OVS.MI | OVS SPA | OVS SPA | 2021–2026 (EUR) | 7/7 | ja | – |
+| ACAD.ST | AcadeMedia AB | AcadeMedia AB | 2021–2026 (SEK) | 7/7 | ja | – |
+| ENXP.LS | Euronext N.V. | Euronext N.V. | 2020–2025 (EUR) | 7/7 | ja | – |
+| FII.PA | LISI | LISI | 2020–2025 (EUR) | 7/7 | ja | – |
+| KALMAR.HE | Kalmar Oyj | Kalmar Oyj | 2023–2025 (EUR) | 7/7 | fehlt | – |
+| HPOL-B.ST | HEXPOL AB | HEXPOL AB | 2020–2025 (SEK) | 7/7 | ja | – |
+| DOFG.OL | DOF GROUP ASA | DOF GROUP ASA | keine Berichte | | | |
+| ATT.ST | Attendo AB (publ) | – | nicht gefunden | | | |
+| RATO-B.ST | Ratos AB | Ratos AB | 2020–2025 (SEK) | 7/7 | ja | – |
+| GRS120003009 | ΚΑΠΝΟΒΙΟΜΗΧΑΝΙΑ ΚΑΡΕΛΙΑ ΑΝΩΝΥΜΟΣ ΕΤΑΙΡΕΙΑ | – | nicht gefunden | | | |
+| ALLEI.ST | Alleima AB | Alleima AB | 2021–2025 (SEK) | 7/7 | ja | – |
+| CEM.MI | Cementir Holding N.V. | – | nicht gefunden | | | |
+| O5G.DE | CPI PROPERTY GROUP | CPI PROPERTY GROUP | 2020–2024 (EUR) | 7/7 | ja | – |
+| GET.PA | GETLINK S.E. | GETLINK S.E. | 2020–2024 (EUR) | 6/7 | ja | capex |
+| ASKER.ST | Asker Healthcare Group AB | Asker Healthcare Group AB | 2024–2025 (SEK) | 7/7 | ja | – |
+| EKTA-B.ST | Elekta AB (publ) | – | nicht gefunden | | | |
+| AT00000AMAG3 | AMAG Austria Metall AG | AMAG Austria Metall AG | 2019–2025 (EUR) | 7/7 | ja | – |
+| VU.PA | VUSIONGROUP | VUSIONGROUP | 2021–2025 (EUR) | 6/7 | ja | capex |
+| GRS432003028 | ΑΚTOR ΑΝΏΝΥΜΗ ΕΤΑΙΡΕΊΑ ΣΥΜΜΕΤΟΧΏΝ, ΤΕΧΝΙΚΏΝ ΚΑΙ ΕΝΕΡΓΕΙΑΚΏΝ ΈΡΓΩΝ | ΑΚTOR ΑΝΏΝΥΜΗ ΕΤΑΙΡΕΊΑ ΣΥΜΜΕΤΟΧΏΝ, ΤΕΧΝΙΚΏΝ ΚΑΙ ΕΝΕΡΓΕΙΑΚΏΝ ΈΡΓΩΝ | 2020–2025 (EUR) | 7/7 | ja | – |
+| TGS.OL | TGS ASA | TGS ASA | 2020–2025 (USD) | 7/7 | ja | – |
+| TYRES.HE | Nokian Renkaat Oyj | Nokian Renkaat Oyj | 2019–2025 (EUR) | 7/7 | ja | – |
+| EPR.OL | EUROPRIS ASA | EUROPRIS ASA | 2020–2025 (NOK) | 7/7 | ja | – |
+| LOTB.BR | LOTUS BAKERIES | LOTUS BAKERIES | 2020–2025 (EUR) | 7/7 | ja | – |
+| DNO.OL | DNO ASA | DNO ASA | 2020–2025 (USD) | 7/7 | ja | – |
+| MMT.PA | METROPOLE TELEVISION | METROPOLE TELEVISION | 2020–2024 (EUR) | 7/7 | ja | – |
+| MTRS.ST | Munters Group AB | Munters Group AB | 2020–2025 (SEK) | 7/7 | ja | – |
+| SANOMA.HE | Sanoma Oyj | Sanoma Oyj | 2019–2025 (EUR) | 7/7 | fehlt | – |
+| PLX.PA | PLUXEE N.V. | PLUXEE N.V. | 2023–2026 (EUR) | 7/7 | ja | – |
+| HAUTO.OL | HÖEGH AUTOLINERS ASA | HÖEGH AUTOLINERS ASA | 2021–2025 (USD) | 7/7 | ja | – |
+| CRBN.AS | Corbion N.V. | Corbion N.V. | 2019–2024 (EUR) | 6/7 | ja | capex |
+| GN.CO | GN STORE NORD A/S | GN STORE NORD A/S | 2019–2025 (DKK) | 7/7 | ja | – |
 | VIS.DE | VISCOFAN SA | – | noch nicht geprüft | | | |
 | BFSA.DE | BEFESA S.A. | – | noch nicht geprüft | | | |
 | GRS282183003 | JUMBO ΑΝΩΝΥΜΗ ΕΜΠΟΡΙΚΗ ΕΤΑΙΡΕΙΑ | – | noch nicht geprüft | | | |
@@ -461,4 +461,6 @@
 
 - HU0000153937: URL can't contain control characters. '/213800R83KX5FQFGXS67/2021-12-31/ESEF/HU/0/Mol Group 2021 Fin
 - SOP.PA: URL can't contain control characters. '/96950020QIOHAAK9V551/2020-12-31/ESEF/FR/0/SOPRA STERIA GROUP
+- DIM.PA: URL can't contain control characters. '/52990006IVXY7GCSSR39/2025-12-31/ESEF/FR/0/sartoriusstedimbio
+- DOFG.OL: URL can't contain control characters. '/213800GIV9N2A714T434/2023-12-31/ESEF/NO/0/DOF Group ASA-2023
 - Zeitbudget erreicht, Rest im nächsten Lauf
