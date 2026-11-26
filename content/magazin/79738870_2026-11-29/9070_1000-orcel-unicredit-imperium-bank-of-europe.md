@@ -52,23 +52,38 @@ Mit der Commerzbank kommt die mBank dazu, an der die Commerzbank 69 % hält. Sie
 
 ## Wie groß ist das Imperium?
 
-Zahlen helfen beim Einordnen. Die Rangliste der Global Banker nach Bilanzsumme zum Jahresende 2025, in Milliarden US-Dollar:
+Zahlen helfen beim Einordnen. Die größten Banken Europas nach Bilanzsumme zum Jahresende 2025, in Milliarden US-Dollar, mit dem Platz in der Weltrangliste der Global Banker (Reihenfolge = Platz in Europa):
 
-| Bank | Weltrang | Bilanzsumme |
+| Bank | Welt | Mrd. $ |
 |---|---|---|
-| BNP Paribas | 7 | 3.282 |
-| HSBC | 8 | 3.233 |
-| Crédit Agricole | 9 | 3.151 |
-| Santander | 14 | 2.194 |
-| **UniCredit + Commerzbank** | | **1.716** |
-| Deutsche Bank | 23 | 1.686 |
-| UBS | 25 | 1.617 |
-| UniCredit allein | 39 | 1.023 |
-| Commerzbank allein | 59 | 693 |
+| <img class="tlogo" src="https://images.financialmodelingprep.com/symbol/BNP.PA.png" width="20" height="20" alt="" onerror="this.onerror=null;this.src='https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https://group.bnpparibas&size=64'"> BNP Paribas | 7 | 3.282 |
+| <img class="tlogo" src="/assets/logos/hsba-l.png" width="20" height="20" alt="" onerror="this.onerror=null;this.src='https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https://hsbc.com&size=64'"> HSBC | 8 | 3.233 |
+| <img class="tlogo" src="https://images.financialmodelingprep.com/symbol/ACA.PA.png" width="20" height="20" alt="" onerror="this.onerror=null;this.src='https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https://credit-agricole.com&size=64'"> Crédit Agricole | 9 | 3.151 |
+| <img class="tlogo" src="/assets/logos/san.png" width="20" height="20" alt="" onerror="this.onerror=null;this.src='https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https://santander.com&size=64'"> Santander | 14 | 2.194 |
+| <img class="tlogo" src="/assets/logos/bcs.png" width="20" height="20" alt="" onerror="this.onerror=null;this.src='https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https://home.barclays&size=64'"> Barclays | 16 | 2.077 |
+| <img class="tlogo" src="https://images.financialmodelingprep.com/symbol/.png" width="20" height="20" alt="" onerror="this.onerror=null;this.src='https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https://groupebpce.com&size=64'"> Groupe BPCE | 18 | 1.934 |
+| <img class="tlogo" src="https://images.financialmodelingprep.com/symbol/GLE.PA.png" width="20" height="20" alt="" onerror="this.onerror=null;this.src='https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https://societegenerale.com&size=64'"> Société Générale | 21 | 1.817 |
+| <img class="tlogo" src="/assets/logos/ucg-mi.png" width="20" height="20" alt="" onerror="this.onerror=null;this.src='https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https://unicredit.eu&size=64'"> **UniCredit + Commerzbank** | **23** | **1.716** |
+| <img class="tlogo" src="https://images.financialmodelingprep.com/symbol/DBK.DE.png" width="20" height="20" alt="" onerror="this.onerror=null;this.src='https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https://db.com&size=64'"> Deutsche Bank | 23 | 1.686 |
+| <img class="tlogo" src="https://images.financialmodelingprep.com/symbol/UBSG.SW.png" width="20" height="20" alt="" onerror="this.onerror=null;this.src='https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https://ubs.com&size=64'"> UBS | 25 | 1.617 |
 
-UniCredit allein steht auf Platz 39 und ist damit kleiner als Deutsche Bank und UBS. Zusammen mit der Commerzbank überholt die Gruppe beide knapp und läge weltweit etwa im Bereich der Plätze 15 bis 22. Das sind rund 1,5 Billionen Euro (UniCredit gut 900 Milliarden, Commerzbank umgerechnet knapp 600 Milliarden). Die drei großen Häuser BNP Paribas, HSBC und Crédit Agricole sind fast doppelt so groß, Santander ist gut ein Viertel größer. Zur Einordnung: Das ist eine Billion und fünfhundert Milliarden, keine Billiarde, und es ist die Summe aller Vermögenswerte in den Büchern, nicht das Geld der Kunden. Eine gemeinsame Zahl für die Kundeneinlagen liegt noch nicht vor. Die Bilanzsumme entspricht grob einem Drittel der jährlichen Wirtschaftsleistung Deutschlands.
+Zum Vergleich liegen UniCredit allein auf Platz 39 (1.023) und die Commerzbank auf Platz 59 (693).
 
-Der Börsenwert beider Banken liegt zusammen bei rund 165 Milliarden Euro, der Gewinn der ersten neun Monate bei 12,1 Milliarden Euro. UniCredit ist bisher in 13 Märkten aktiv, von Italien über Deutschland und Österreich bis nach Tschechien, Ungarn, Rumänien und auf den Balkan, mit der mBank kommt Polen dazu. In diesen Ländern leben grob gerechnet gut 250 Millionen Menschen. Das ist die Einwohnerzahl, keine Kundenzahl. Den Sitz behält die Gruppe in Mailand.
+UniCredit allein ist damit kleiner als Deutsche Bank und UBS. Zusammen mit der Commerzbank überholt die Gruppe beide knapp, liegt weltweit auf Platz 23 und in Europa auf Platz acht, hinter BNP Paribas, HSBC, Crédit Agricole, Santander, Barclays, BPCE und Société Générale. Das sind rund 1,5 Billionen Euro (UniCredit gut 900 Milliarden, Commerzbank umgerechnet knapp 600 Milliarden). Die drei großen Häuser BNP Paribas, HSBC und Crédit Agricole sind fast doppelt so groß, Santander ist gut ein Viertel größer. Zur Einordnung: Das ist eine Billion und fünfhundert Milliarden, keine Billiarde, und es ist die Summe aller Vermögenswerte in den Büchern, nicht das Geld der Kunden. Eine gemeinsame Zahl für die Kundeneinlagen liegt noch nicht vor. Die Bilanzsumme entspricht grob einem Drittel der jährlichen Wirtschaftsleistung Deutschlands.
+
+Der Börsenwert beider Banken liegt zusammen bei rund 165 Milliarden Euro. Wie die beiden Häuser zueinander stehen, zeigt die Gegenüberstellung (Börsenwert vom 25.11., Erträge und Gewinn der ersten neun Monate 2026):
+
+| Mrd. € | <img class="tlogo" src="/assets/logos/ucg-mi.png" width="20" height="20" alt="" onerror="this.onerror=null;this.src='https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https://unicredit.eu&size=64'"> UniCredit | <img class="tlogo" src="https://images.financialmodelingprep.com/symbol/CBK.DE.png" width="20" height="20" alt="" onerror="this.onerror=null;this.src='https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https://commerzbank.de&size=64'"> Commerzbank | Summe |
+|---|---|---|---|
+| Börsenwert | 126 | 39 | 165 |
+| Erträge (9 Mon.) | 20,3 | 9,7 | 30,0 |
+| Gewinn (9 Mon.) | 9,4 | 2,7 | 12,1 |
+| Kosten je Ertrag | 33,8 % | 53 % | |
+| CET1-Quote | 15,0 % | 14,2 % | |
+
+Beide Banken verdienen gut. UniCredit gibt für jeden Euro Ertrag 34 Cent aus, die Commerzbank 53 Cent. Dazu kommt die Eigenkapitalrendite: Die Commerzbank erreichte in den ersten neun Monaten 12,4 %, UniCredit lag 2025 bei 19,2 %. Genau in diesem Abstand liegt das Versprechen der Übernahme.
+
+UniCredit ist bisher in 13 Märkten aktiv, von Italien über Deutschland und Österreich bis nach Tschechien, Ungarn, Rumänien und auf den Balkan, mit der mBank kommt Polen dazu. In diesen Ländern leben grob gerechnet gut 250 Millionen Menschen. Das ist die Einwohnerzahl, keine Kundenzahl. Den Sitz behält die Gruppe in Mailand.
 
 ## Ist die Dividende gedeckt, und woher kommt das Wachstum?
 
