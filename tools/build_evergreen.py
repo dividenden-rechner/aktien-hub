@@ -168,10 +168,13 @@ def high_yield(W):
            "Die zehn Dividendenaktien mit der höchsten Rendite, die ihre Ausschüttung trotzdem aus Gewinn und Cashflow zahlen. Die Liste wird regelmäßig neu berechnet.", body
 
 
+ZM = (json.load(open("data/zahlmonate.json", encoding="utf-8")).get("firmen") or {})
+
+
 def monatlich(W):
     res = []
     for s, r in W.items():
-        zm = (r.get("zahlmonate") or "").strip()
+        zm = (r.get("zahlmonate") or ZM.get(s) or "").strip()
         if not zm:
             continue
         if zm.lower().startswith("jeden"):
@@ -185,7 +188,7 @@ def monatlich(W):
     top = res[:10]
     if len(top) < 5:
         return None
-    zeilen = [[i, link_name(s, W[s]["name"]), W[s]["zahlmonate"], n, de(W[s]["rendite"]) + " %"] for i, (n, s) in enumerate(top, 1)]
+    zeilen = [[i, link_name(s, W[s]["name"]), (W[s].get("zahlmonate") or ZM.get(s)), n, de(W[s]["rendite"]) + " %"] for i, (n, s) in enumerate(top, 1)]
     body = (f"Manche Firmen zahlen ihre Dividende nicht einmal im Jahr, sondern öfter. Diese Liste zeigt Dividendenaktien mit den meisten Zahlmonaten, die wir für sie belegt haben. Stand: {DATUM}.\n\n"
             "Berücksichtigt werden Firmen mit mindestens vier belegten Zahlmonaten und einer Rendite zwischen 0 und 15 Prozent. Monate, die nicht belegt sind, fehlen in der Liste.\n\n"
             + tabelle(zeilen, ["Platz", "Firma", "Zahlmonate", "Anzahl Monate", "Rendite"]) +

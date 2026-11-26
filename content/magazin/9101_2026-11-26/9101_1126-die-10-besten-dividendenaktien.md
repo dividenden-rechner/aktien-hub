@@ -1,7 +1,7 @@
 ---
 title: "Die 10 besten Dividendenaktien"
 description: "Die zehn Dividendenaktien mit der besten Mischung aus Rendite, Wachstum, Erhöhungsserie und Deckung. Die Liste wird regelmäßig aus den Daten neu berechnet."
-date: 2026-11-26 22:43
+date: 2026-11-26 22:50
 updated: 2026-11-26
 author: "Kilian Treß"
 category: Ratgeber

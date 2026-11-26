@@ -1,7 +1,7 @@
 ---
 title: "High Yield: Hohe Dividendenrenditen mit solider Deckung"
 description: "Die zehn Dividendenaktien mit der höchsten Rendite, die ihre Ausschüttung trotzdem aus Gewinn und Cashflow zahlen. Die Liste wird regelmäßig neu berechnet."
-date: 2026-11-26 22:43
+date: 2026-11-26 22:50
 updated: 2026-11-26
 author: "Kilian Treß"
 category: Ratgeber
@@ -19,10 +19,10 @@ Berücksichtigt werden Firmen mit einem Börsenwert ab 2 Mrd. Euro und einer Ren
 | 2 | [PT Bank Negara Indonesia (Persero) Tbk](/aktien-hub/pt-bank-negara-indonesia-persero-tbk/) | 10,4 % | 70 % | – | – |
 | 3 | [Telefónica](/aktien-hub/telefnica/) | 10,4 % | – | – | 14,1 % |
 | 4 | [Ithaca Energy PLC](/aktien-hub/ithaca-energy/) | 9,9 % | – | 58 % | – |
-| 5 | [United Tractors Tbk](/aktien-hub/united-tractors-tbk/) | 9,3 % | 54 % | – | – |
+| 5 | [United Tractors Tbk](/aktien-hub/united-tractors-tbk/) | 9,2 % | 54 % | – | – |
 | 6 | [Mercedes-Benz Group](/aktien-hub/mercedes-benz-group/) | 9,2 % | 66 % | 33 % | 21,0 % |
-| 7 | [Astra International Tbk](/aktien-hub/astra-international-tbk/) | 9,1 % | 63 % | – | – |
-| 8 | [Greencoat UK Wind PLC](/aktien-hub/greencoat-uk-wind/) | 8,9 % | – | – | – |
+| 7 | [Greencoat UK Wind PLC](/aktien-hub/greencoat-uk-wind/) | 8,9 % | – | – | – |
+| 8 | [Astra International Tbk](/aktien-hub/astra-international-tbk/) | 8,9 % | 63 % | – | – |
 | 9 | [Konecranes Oyj](/aktien-hub/konecranes/) | 8,5 % | 45 % | 25 % | – |
 | 10 | [Renault](/aktien-hub/renault/) | 8,1 % | – | – | – |
 
