@@ -279,13 +279,13 @@ def peer_block(sym, cfg_by_sym, gruppen):
     """Querverlinkung je Aktie: Aristokratenliste plus bis zu drei Aktien aus derselben Peer-Gruppe."""
     gr = next((g for g in gruppen if sym in g["members"]), None)
     peers = [m for m in (gr["members"] if gr else []) if m != sym and m in cfg_by_sym][:3]
-    items = "".join(f'<li><a href="/aktienhub/{cfg_by_sym[m]["slug"]}/" style="display:flex;align-items:center;gap:10px">{logo_span(m, cfg_by_sym[m]["name"], "../../")}{esc(cfg_by_sym[m]["name"])}</a></li>' for m in peers)
+    items = "".join(f'<li><a href="/aktien-hub/{cfg_by_sym[m]["slug"]}/" style="display:flex;align-items:center;gap:10px">{logo_span(m, cfg_by_sym[m]["name"], "../../")}{esc(cfg_by_sym[m]["name"])}</a></li>' for m in peers)
     peer_teil = (f'<p>Aus der Gruppe „{esc(gr["name"])}“ lohnt der Blick auf:</p><ul>{items}</ul>' if peers else "")
     return (f'<h2>Vergleich und Einordnung</h2>{peer_teil}'
             f'<p><a href="/dividende/aristokraten/">Alle Dividendenaristokraten und Dividend Kings im Vergleich</a></p>')
 
 def seite(r, kopf_links, kopf, fuss, mag, kurs_datum, sec_stand, usd_je_eur, jahr):
-    f = r["f"]; name = f["name"]; url = f"aktienhub/{f['slug']}/"
+    f = r["f"]; name = f["name"]; url = f"aktien-hub/{f['slug']}/"
     rend = proz(r["rendite"]) if r["rendite"] else None
     title = f"{name} Dividende {jahr}: Rendite, Termine und Historie"
     kennung = ", ".join(x for x in (f"ISIN {r['isin']}" if r.get("isin") else "", f"WKN {r['wkn']}" if r.get("wkn") else "") if x)
@@ -619,7 +619,7 @@ def aristokraten(rs, kopf_links, kopf, fuss, jahr):
     for titel, lo, hi in gruppen:
         g = sorted([r for r in rs if r["serie_jahre"] is not None and lo <= r["serie_jahre"] <= hi], key=lambda r: -r["serie_jahre"])
         if not g: continue
-        z = "".join(f'<tr><td class="fi" data-v="{esc(r["f"]["name"])}"><a href="/aktienhub/{r["f"]["slug"]}/">{logo_span(r["f"]["sym"], r["f"]["name"], "../../")}<span class="nm">{esc(r["f"]["name"])}</span></a></td>'
+        z = "".join(f'<tr><td class="fi" data-v="{esc(r["f"]["name"])}"><a href="/aktien-hub/{r["f"]["slug"]}/">{logo_span(r["f"]["sym"], r["f"]["name"], "../../")}<span class="nm">{esc(r["f"]["name"])}</span></a></td>'
                     f'<td class="n" data-v="{r["serie_jahre"]}"><strong>{r["serie_jahre"]}</strong></td>'
                     f'<td class="n" data-v="{r["rendite"] or ""}">{proz(r["rendite"]) if r["rendite"] else "–"}</td>'
                     f'<td class="n" data-v="{r["cagr5"] if r["cagr5"] is not None else ""}">{proz(r["cagr5"], vz=True) if r["cagr5"] is not None else "–"}</td></tr>'
@@ -631,7 +631,7 @@ def aristokraten(rs, kopf_links, kopf, fuss, jahr):
     ohne_html = ""
     if ohne:
         ohne_html = ('<h2>Ohne lange Erhöhungsserie</h2><p>Diese Werte zahlen Dividende, haben sie aber nur kurz oder zuletzt gar nicht erhöht: '
-                     + ", ".join(f'<a href="/aktienhub/{r["f"]["slug"]}/">{esc(r["f"]["name"])}</a>' for r in ohne) + ".</p>")
+                     + ", ".join(f'<a href="/aktien-hub/{r["f"]["slug"]}/">{esc(r["f"]["name"])}</a>' for r in ohne) + ".</p>")
     title = f"Dividend Kings und Dividendenaristokraten {jahr}: Liste mit Rendite"
     desc = "Dividend Kings und Dividendenaristokraten: US-Aktien mit 25 oder 50 Jahren Dividendenerhöhung in Folge, mit Rendite und Wachstum. Täglich aktualisiert."
     return f'''<!DOCTYPE html>
@@ -694,7 +694,7 @@ def weiterleitungen(rs):
     p = os.path.join(ROOT, "tools", "umzug", "redirects-entwurf.csv")
     rows = list(csv.DictReader(open(p, encoding="utf-8")))
     felder = list(rows[0].keys())
-    ziel = {a.lower(): f"/aktienhub/{r['f']['slug']}/" for r in rs for a in r["f"].get("alt", [])}
+    ziel = {a.lower(): f"/aktien-hub/{r['f']['slug']}/" for r in rs for a in r["f"].get("alt", [])}
     for row in rows:
         z = ziel.get(row["alter_pfad"].strip().rstrip("/").lower())
         if z:
@@ -762,12 +762,12 @@ def news_by_sym(mag):
 
 
 def stub_schreiben(urls):
-    """Alte Adresse dividende/<slug>/ leitet auf aktienhub/<slug>/ um (Weiterleitung per Meta-Refresh, bis 301 eingerichtet ist)."""
+    """Alte Adresse dividende/<slug>/ leitet auf aktien-hub/<slug>/ um (Weiterleitung per Meta-Refresh, bis 301 eingerichtet ist)."""
     for u in urls:
-        if not u.startswith("aktienhub/"):
+        if not u.startswith("aktien-hub/"):
             continue
         neu = "/" + u
-        alt = os.path.join(ROOT, "dividende", u[len("aktienhub/"):], "index.html")
+        alt = os.path.join(ROOT, "dividende", u[len("aktien-hub/"):], "index.html")
         os.makedirs(os.path.dirname(alt), exist_ok=True)
         open(alt, "w", encoding="utf-8").write(
             '<!doctype html><html lang="de"><head><meta charset="utf-8"><title>Weiterleitung</title>'
