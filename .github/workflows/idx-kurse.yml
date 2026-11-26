@@ -1,5 +1,7 @@
 name: IDX Tageskurse Indonesien
 on:
+  schedule:
+    - cron: "15 9 * * 1-5"   # werktags nach Börsenschluss in Jakarta (ca. 08:00 UTC)
   workflow_dispatch:
 permissions:
   contents: write
