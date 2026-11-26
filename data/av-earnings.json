@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-26 04:21 UTC",
+ "updated": "2026-11-26 15:43 UTC",
  "quelle": "Alpha Vantage",
  "items": [
   {
@@ -911,10 +911,11 @@
    "rev_est": 4319542480.0,
    "rev_n": 26,
    "est_stand": "2026-11-24",
-   "act_try": "2026-11-25",
+   "act_try": "2026-11-26",
    "eps_act": 4.06,
    "eps_act_basis": "GAAP laut AV",
-   "rep_date": "2026-11-24"
+   "rep_date": "2026-11-24",
+   "rev_act": 4373420000.0
   },
   {
    "sym": "ADSK",
@@ -928,10 +929,11 @@
    "rev_est": 2133704710.0,
    "rev_n": 27,
    "est_stand": "2026-11-24",
-   "act_try": "2026-11-25",
+   "act_try": "2026-11-26",
    "eps_act": 3.2,
    "eps_act_basis": "GAAP laut AV",
-   "rep_date": "2026-11-24"
+   "rep_date": "2026-11-24",
+   "rev_act": 2160000000.0
   },
   {
    "sym": "BBY",
@@ -945,10 +947,11 @@
    "rev_est": 9905439010.0,
    "rev_n": 20,
    "est_stand": "2026-11-24",
-   "act_try": "2026-11-25",
+   "act_try": "2026-11-26",
    "eps_act": 1.62,
    "eps_act_basis": "GAAP laut AV",
-   "rep_date": "2026-11-24"
+   "rep_date": "2026-11-24",
+   "rev_act": 10236000000.0
   },
   {
    "sym": "BHP",
@@ -962,7 +965,7 @@
    "rev_est": 0.0,
    "rev_n": 0,
    "est_stand": "2026-11-24",
-   "act_try": "2026-11-25"
+   "act_try": "2026-11-26"
   },
   {
    "sym": "DELL",
@@ -976,10 +979,11 @@
    "rev_est": 49273922220.0,
    "rev_n": 22,
    "est_stand": "2026-11-24",
-   "act_try": "2026-11-25",
+   "act_try": "2026-11-26",
    "eps_act": 9.45,
    "eps_act_basis": "GAAP laut AV",
-   "rep_date": "2026-11-24"
+   "rep_date": "2026-11-24",
+   "rev_act": 54937000000.0
   },
   {
    "sym": "DLTR",
@@ -993,10 +997,11 @@
    "rev_est": 5040619740.0,
    "rev_n": 21,
    "est_stand": "2026-11-24",
-   "act_try": "2026-11-25",
+   "act_try": "2026-11-26",
    "eps_act": 1.16,
    "eps_act_basis": "GAAP laut AV",
-   "rep_date": "2026-11-24"
+   "rep_date": "2026-11-24",
+   "rev_act": 5078400000.0
   },
   {
    "sym": "HPQ",
@@ -1010,10 +1015,11 @@
    "rev_est": 15296789750.0,
    "rev_n": 12,
    "est_stand": "2026-11-24",
-   "act_try": "2026-11-25",
+   "act_try": "2026-11-26",
    "eps_act": 0.83,
    "eps_act_basis": "GAAP laut AV",
-   "rep_date": "2026-11-24"
+   "rep_date": "2026-11-24",
+   "rev_act": -28519000000.0
   },
   {
    "sym": "MDT",
@@ -1027,10 +1033,11 @@
    "rev_est": 9479251480.0,
    "rev_n": 24,
    "est_stand": "2026-11-24",
-   "act_try": "2026-11-25",
+   "act_try": "2026-11-26",
    "eps_act": 1.34,
    "eps_act_basis": "GAAP laut AV",
-   "rep_date": "2026-11-24"
+   "rep_date": "2026-11-24",
+   "rev_act": 9364000000.0
   },
   {
    "sym": "SJM",
@@ -1044,10 +1051,11 @@
    "rev_est": 2272021920.0,
    "rev_n": 12,
    "est_stand": "2026-11-24",
-   "act_try": "2026-11-25",
+   "act_try": "2026-11-26",
    "eps_act": 3.2,
    "eps_act_basis": "GAAP laut AV",
-   "rep_date": "2026-11-24"
+   "rep_date": "2026-11-24",
+   "rev_act": 2283200000.0
   },
   {
    "sym": "VIPS",
@@ -1085,7 +1093,10 @@
    "rev_est": 10344259380.0,
    "rev_n": 13,
    "est_stand": "2026-11-25",
-   "act_try": "2026-11-25"
+   "act_try": "2026-11-26",
+   "eps_act": 3.89,
+   "eps_act_basis": "GAAP laut AV",
+   "rep_date": "2026-11-25"
   },
   {
    "sym": "CPRT",
