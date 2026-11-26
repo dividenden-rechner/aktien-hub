@@ -3,12 +3,13 @@
 <!-- uebersicht-start -->
 ## Übersicht (wird automatisch erstellt, neueste zuerst)
 
-### Vorschau auf der Testseite (1)
+### Vorschau auf der Testseite (2)
 
 Nur auf der GitHub-Testseite unter vorschau/ sichtbar. Freigeben: Datei anklicken, Stift-Symbol, Zeile `vorschau: ja` löschen und speichern.
 
 | Datum | Titel | Datei |
 |---|---|---|
+| 29.11.2026 09:00 | UniCredit und Commerzbank: Die neue Großbank bringt rund 165 Milliarden Euro auf die Börsenwaage | [79738870_2026-11-29/9071_0900-unicredit-commerzbank-so-gross-wird-die-neue-bank.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/79738870_2026-11-29/9071_0900-unicredit-commerzbank-so-gross-wird-die-neue-bank.md) |
 | 26.11.2026 14:00 | technotrans gewinnt Rekordauftrag für Laserkühlung, die Aktie steht trotzdem fast 30 % tiefer | [79738873_2026-11-26/9070_1400-technotrans-laserkuehlung-rekordauftrag.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/79738873_2026-11-26/9070_1400-technotrans-laserkuehlung-rekordauftrag.md) |
 
 ### Zur Freigabe: Entwürfe (10)
