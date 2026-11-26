@@ -213,3 +213,15 @@ article:has(.fa-view){max-width:none}
 .fa-ceo{display:flex;gap:14px;align-items:center;margin:24px 0 0;padding:14px;border:1px solid #d7ece0;border-radius:10px;background:#fff}
 .fa-ceo img{width:88px;height:auto;max-width:100%}
 .fa-ceo figcaption{font-size:14px;line-height:1.4}
+
+/* Bewertungs-Kategorien: Karten in Hellgrün und Weiß, mit Abstand; auf dem Desktop nebeneinander */
+.kzgrid{display:grid;grid-template-columns:1fr;gap:16px;margin:18px 0}
+@media (min-width:860px){.kzgrid{grid-template-columns:1fr 1fr}}
+.kzk{border:1px solid #d7ece0;border-radius:12px;padding:12px 14px;background:#fff;min-width:0}
+.kzk-gruen{background:#eef8e8}
+.kzk h3{margin:4px 0 8px;font-size:13px;letter-spacing:.03em;text-transform:uppercase;color:#15803d}
+.kzk table{width:100%;border-collapse:collapse}
+.kzk td{padding:7px 4px;border-bottom:1px solid #e3eee0;vertical-align:top;font-size:14px}
+.kzk td.v{font-weight:600;white-space:nowrap;text-align:right;padding-left:10px}
+.kzk td.d{color:#5d6b78;font-size:13px}
+.kzk tr:last-child td{border-bottom:0}
