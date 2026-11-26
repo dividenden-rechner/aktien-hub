@@ -85,7 +85,7 @@ def wert_am(serie, d):
     return None
 
 
-def kennzahlen(f, sec, kurse, iz, usd_je_eur, termine, wae="USD"):
+def kennzahlen(f, sec, kurse, iz, usd_je_eur, termine, wae="USD", fx_wae=1.0):
     s = sec.get(f["sym"])
     if not s:
         return None
@@ -114,7 +114,7 @@ def kennzahlen(f, sec, kurse, iz, usd_je_eur, termine, wae="USD"):
             print(f"  {f['sym']}: Reihe passt nicht zur Erhöhungsserie, ungeglättet gelassen")
             dps = roh
     dez = s["gj"][5:7] == "12"
-    r = {"f": f, "sec_name": s["n"], "gj": s["gj"], "dez": dez, "dps": dps, "cik": s.get("cik", ""), "wae": wae}
+    r = {"f": f, "sec_name": s["n"], "gj": s["gj"], "dez": dez, "dps": dps, "cik": s.get("cik", ""), "wae": wae, "fx_wae": fx_wae}
     letzt_d, letzt = dps[-1]
     r["dps_letzt"], r["gj_letzt"] = letzt, gj_label(letzt_d, dez)
     # Kurs (Euro) und Rendite
@@ -195,7 +195,7 @@ def kennzahlen(f, sec, kurse, iz, usd_je_eur, termine, wae="USD"):
         r["sonder_jahr"], r["sonder_text"] = sk["betrag_jahr"], sk.get("text", "")
     else:
         r["sonder_jahr"], r["sonder_text"] = None, ""
-    k_usd = r["kurs_eur"] if wae == "EUR" else r["kurs_usd"]   # Kurs in der Währung der Dividende
+    k_usd = r["kurs_usd"] if wae == "USD" else (r["kurs_eur"] * fx_wae if r["kurs_eur"] else None)   # Kurs in der Währung der Dividende
     r["rendite_gj"] = letzt / k_usd if k_usd else None
     if r["dps_jahr"] and k_usd:
         r["rendite"], r["rendite_basis"] = r["dps_jahr"] / k_usd, "aktuell"
@@ -781,7 +781,7 @@ def dividende_teile(r, name, usd_je_eur):
     f = r["f"]
     t = r["termin"]
     w = r.get("wae", "USD")
-    fx = usd_je_eur if w == "USD" else 1.0   # Rechner: Dividende in Euro je Aktie = Betrag / fx
+    fx = usd_je_eur if w == "USD" else r.get("fx_wae", 1.0)   # Rechner: Dividende in Euro je Aktie = Betrag / fx
     if t:
         termin_html = ('<div class="tablewrap"><table><thead><tr><th>Beschlossen am</th><th class="n">Betrag</th><th>Ex-Tag</th><th>Zahltag</th></tr></thead><tbody>'
                        f'<tr><td>{datum(t["meldung"]) if t.get("meldung") else "–"}</td><td class="n">{betrag(t["betrag"])} USD</td>'
@@ -818,7 +818,7 @@ a.addEventListener("input",function(){{b.value="";r()}});b.addEventListener("inp
             f'{rechner}')
 
 
-WAEHR_NAME = {"USD": "US-Dollar", "EUR": "Euro"}
+WAEHR_NAME = {"USD": "US-Dollar", "EUR": "Euro", "GBP": "Pfund", "SEK": "Schwedische Kronen", "DKK": "Dänische Kronen", "NOK": "Norwegische Kronen", "CHF": "Schweizer Franken", "HKD": "HK-Dollar", "CNY": "Renminbi", "SGD": "Singapur-Dollar", "JPY": "Yen", "KRW": "Won"}
 
 
 def main():
