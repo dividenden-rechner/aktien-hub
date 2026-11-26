@@ -265,33 +265,38 @@ _DIV = None
 
 
 def dividende_fuer(f):
-    """Dividendenteil wie auf den handkuratierten Seiten: nächste Dividende, Historie und Rechner. Nur für Firmen mit SEC-Dividendenhistorie."""
+    """Dividenden-Profil für Firmen mit Dividendenreihe in USD oder EUR. Quelle: die erste Datenquelle mit einer
+    Dividendenreihe (berichtet oder berechnet). Andere Währungen folgen später."""
     global _DIV
     if _DIV is None:
         _DIV = (B.lade("data/kurse/xetra-letzter.json"), B.lade("data/kurse/isin-zuordnung.json"),
                 B.lade("data/wechselkurse-ezb.json")["je_eur"]["USD"], B.lade("data/dividenden-termine.json").get("firmen", {}))
     (kurse, iz, usd, termine) = _DIV
     sym = f["sym"]
-    if sym not in datenquellen()[0]:
-        return ""
-    reg = [t for t in termine.get(sym, []) if t.get("art") == "regulaer"]
-    n = len(reg)
-    rhythmus = 12 if n >= 10 else 4 if n >= 3 else 2 if n == 2 else 1 if n == 1 else 4
-    cfg = {"sym": sym, "name": f["name"], "slug": f["slug"], "typ": "normal", "rhythmus": rhythmus,
-           "satz": "", "alt": [], "serie": {}, "weglassen": []}
-    quelle = datenquellen()[0]
-    k_sym = quelle[sym].get("k") or {}
-    if "dividende_je_aktie" not in k_sym and "dividende_je_aktie_ber" in k_sym:
-        # Keine berichtete Dividende je Aktie, aber eine berechnete Reihe (Dividenden / Aktienzahl): die nehmen
-        quelle = dict(quelle)
-        eintrag = dict(quelle[sym])
-        eintrag["k"] = dict(k_sym)
-        eintrag["k"]["dividende_je_aktie"] = k_sym["dividende_je_aktie_ber"]
-        quelle[sym] = eintrag
-    r = B.kennzahlen(cfg, quelle, kurse, iz, usd, termine)
-    if not r or not r.get("dps"):
-        return ""
-    return B.dividende_teile(r, f["name"], usd)
+    for quelle in datenquellen():
+        eintrag = quelle.get(sym)
+        if not eintrag:
+            continue
+        k_e = eintrag.get("k") or {}
+        if "dividende_je_aktie" not in k_e and "dividende_je_aktie_ber" not in k_e:
+            continue
+        wae = eintrag.get("w") or "USD"
+        if wae not in ("USD", "EUR"):
+            return ""
+        kopie = dict(eintrag)
+        kopie["k"] = dict(k_e)
+        if "dividende_je_aktie" not in k_e:
+            kopie["k"]["dividende_je_aktie"] = k_e["dividende_je_aktie_ber"]
+        reg = [t for t in termine.get(sym, []) if t.get("art") == "regulaer" and t.get("waehrung", "USD") == wae]
+        n = len(reg)
+        rhythmus = 12 if n >= 10 else 4 if n >= 3 else 2 if n == 2 else 1 if n == 1 else 4
+        cfg = {"sym": sym, "name": f["name"], "slug": f["slug"], "typ": "normal", "rhythmus": rhythmus,
+               "satz": "", "alt": [], "serie": {}, "weglassen": [], "isin": eintrag.get("isin")}
+        r = B.kennzahlen(cfg, {sym: kopie}, kurse, iz, usd, termine, wae=wae)
+        if not r or not r.get("dps"):
+            return ""
+        return B.dividende_teile(r, f["name"], usd)
+    return ""
 
 
 def diagramme_html(sym, k, prog=None):

@@ -85,7 +85,7 @@ def wert_am(serie, d):
     return None
 
 
-def kennzahlen(f, sec, kurse, iz, usd_je_eur, termine):
+def kennzahlen(f, sec, kurse, iz, usd_je_eur, termine, wae="USD"):
     s = sec.get(f["sym"])
     if not s:
         return None
@@ -114,7 +114,7 @@ def kennzahlen(f, sec, kurse, iz, usd_je_eur, termine):
             print(f"  {f['sym']}: Reihe passt nicht zur Erhöhungsserie, ungeglättet gelassen")
             dps = roh
     dez = s["gj"][5:7] == "12"
-    r = {"f": f, "sec_name": s["n"], "gj": s["gj"], "dez": dez, "dps": dps, "cik": s.get("cik", "")}
+    r = {"f": f, "sec_name": s["n"], "gj": s["gj"], "dez": dez, "dps": dps, "cik": s.get("cik", ""), "wae": wae}
     letzt_d, letzt = dps[-1]
     r["dps_letzt"], r["gj_letzt"] = letzt, gj_label(letzt_d, dez)
     # Kurs (Euro) und Rendite
@@ -154,7 +154,7 @@ def kennzahlen(f, sec, kurse, iz, usd_je_eur, termine):
         r["ffo"] = ffo
         r["quote_ffo"] = letzt / ffo if ffo and ffo > 0 else None
     # zuletzt beschlossene Dividende
-    reg = [t for t in termine.get(f["sym"], []) if t.get("art") == "regulaer" and t.get("waehrung", "USD") == "USD"]
+    reg = [t for t in termine.get(f["sym"], []) if t.get("art") == "regulaer" and t.get("waehrung", "USD") == wae]
     reg.sort(key=lambda t: t.get("meldung") or t.get("ex_tag") or "")
     r["termin"] = reg[-1] if reg else None
     # Jahre mit Dividendenerhöhung in Folge (recherchiert), fortgeschrieben über neue Beschlüsse
@@ -195,7 +195,7 @@ def kennzahlen(f, sec, kurse, iz, usd_je_eur, termine):
         r["sonder_jahr"], r["sonder_text"] = sk["betrag_jahr"], sk.get("text", "")
     else:
         r["sonder_jahr"], r["sonder_text"] = None, ""
-    k_usd = r["kurs_usd"]
+    k_usd = r["kurs_eur"] if wae == "EUR" else r["kurs_usd"]   # Kurs in der Währung der Dividende
     r["rendite_gj"] = letzt / k_usd if k_usd else None
     if r["dps_jahr"] and k_usd:
         r["rendite"], r["rendite_basis"] = r["dps_jahr"] / k_usd, "aktuell"
@@ -780,6 +780,8 @@ def dividende_teile(r, name, usd_je_eur):
     """Nächste Dividende, Historie und Rechner für eine Firmenseite (gleicher Aufbau wie auf den handkuratierten Seiten)."""
     f = r["f"]
     t = r["termin"]
+    w = r.get("wae", "USD")
+    fx = usd_je_eur if w == "USD" else 1.0   # Rechner: Dividende in Euro je Aktie = Betrag / fx
     if t:
         termin_html = ('<div class="tablewrap"><table><thead><tr><th>Beschlossen am</th><th class="n">Betrag</th><th>Ex-Tag</th><th>Zahltag</th></tr></thead><tbody>'
                        f'<tr><td>{datum(t["meldung"]) if t.get("meldung") else "–"}</td><td class="n">{betrag(t["betrag"])} USD</td>'
@@ -795,7 +797,7 @@ def dividende_teile(r, name, usd_je_eur):
                            f'<td class="n">{proz(v / vor - 1, vz=True) if vor else "–"}</td></tr>')
     hist = "".join(hist_zeilen)
     rechner = f'''<h2>Was bringt die {esc(name)}-Aktie im Jahr?</h2>
-<div class="calc" id="divcalc" data-dps="{r['dps_basis']}" data-fx="{usd_je_eur}" data-kurs="{r['kurs_eur'] or ''}" data-steuer="{STEUER_US}">
+<div class="calc" id="divcalc" data-dps="{r['dps_basis']}" data-fx="{fx}" data-kurs="{r['kurs_eur'] or ''}" data-steuer="{STEUER_US}">
 <div class="grid"><div><label for="anz">Anzahl Aktien</label><input id="anz" type="number" min="0" step="1" value="100" inputmode="numeric"></div>
 <div><label for="betr">oder Anlagebetrag in Euro <span class="hint">(zum letzten Kurs)</span></label><input id="betr" type="number" min="0" step="100" inputmode="decimal" placeholder="z. B. 5000"></div></div>
 <div class="tablewrap"><table><tbody>
@@ -803,17 +805,20 @@ def dividende_teile(r, name, usd_je_eur):
 <tr><td>nach Steuern (ca.)</td><td class="n"><strong id="r-netto">–</strong></td></tr>
 <tr><td>pro {RATE.get(f["rhythmus"], "Zahlung")} (brutto)</td><td class="n"><strong id="r-rate">–</strong></td></tr>
 </tbody></table></div>
-<p class="meta">Grundlage: {"aktuelle reguläre Dividende aufs Jahr gerechnet" if r["dps_jahr"] else "Dividende des Geschäftsjahres " + r["gj_letzt"]} ({de(r['dps_basis'], 2)} USD je Aktie).</p>
+<p class="meta">Grundlage: {"aktuelle reguläre Dividende aufs Jahr gerechnet" if r["dps_jahr"] else "Dividende des Geschäftsjahres " + r["gj_letzt"]} ({de(r['dps_basis'], 2)} {w} je Aktie).</p>
 </div>
 <script>(function(){{var c=document.getElementById("divcalc");if(!c)return;var dps=+c.dataset.dps,fx=+c.dataset.fx,k=+c.dataset.kurs,st=+c.dataset.steuer,per={f["rhythmus"]};
 var a=document.getElementById("anz"),b=document.getElementById("betr");function e(x){{return x.toLocaleString("de-DE",{{minimumFractionDigits:2,maximumFractionDigits:2}})+"\\u00a0€"}}
 function r(){{var n=+a.value||0,g=n*dps/fx;document.getElementById("r-brutto").textContent=e(g);document.getElementById("r-netto").textContent=e(g*(1-st));document.getElementById("r-rate").textContent=e(g/per)}}
 a.addEventListener("input",function(){{b.value="";r()}});b.addEventListener("input",function(){{if(k>0){{a.value=Math.floor((+b.value||0)/k)}}r()}});r()}})();</script>'''
     return (f'<h2>Nächste Dividende</h2>{termin_html}'
-            f'<h2>Dividendenhistorie</h2><p>Dividende je Aktie in US-Dollar pro Geschäftsjahr, wie im Geschäftsbericht ausgewiesen.</p>'
+            f'<h2>Dividendenhistorie</h2><p>Dividende je Aktie in {WAEHR_NAME.get(w, w)} pro Geschäftsjahr, wie im Geschäftsbericht ausgewiesen.</p>'
             f'{balken(r["dps"], r["dez"])}'
-            f'<div class="tablewrap"><table><thead><tr><th>Geschäftsjahr</th><th class="n">Dividende je Aktie (USD)</th><th class="n">Veränderung</th></tr></thead><tbody>{hist}</tbody></table></div>'
+            f'<div class="tablewrap"><table><thead><tr><th>Geschäftsjahr</th><th class="n">Dividende je Aktie ({w})</th><th class="n">Veränderung</th></tr></thead><tbody>{hist}</tbody></table></div>'
             f'{rechner}')
+
+
+WAEHR_NAME = {"USD": "US-Dollar", "EUR": "Euro"}
 
 
 def main():
