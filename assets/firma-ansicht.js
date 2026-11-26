@@ -478,11 +478,11 @@ async function initFinance(sym,p,cur,inc,cf,SD){
   ];
   S.forEach((s,i)=>{s.c=FCOL[i%FCOL.length];s.v=years.map(y=>{const v=s.g(y);return v==null||isNaN(v)?null:+v})});
   const have=S.filter(s=>s.v.some(v=>v!=null));
-  let on=new Set(["ni","fcf","cash","debt"].filter(k=>have.some(s=>s.k===k)));let mode="line",sy=years[years.length-1];
+  let on=new Set(["ni","fcf","cash","debt"].filter(k=>have.some(s=>s.k===k)));let mode="bar",sy=years[years.length-1];
   box.className="fin";
   box.innerHTML=`<h3>Finanzen im Überblick</h3><p class="fsub">Jahreswerte in ${esc(cur||"Berichtswährung")}. Quelle: ${SD?quelleText(SD.q):"FMP"}.</p>
   <div class="fcard"><div class="fctl"><b id="fst">Gewinnfluss</b><span class="ftoggle"><button type="button" data-f="gw" aria-pressed="true">Gewinn</button><button type="button" data-f="cf" aria-pressed="false">Cashflow</button></span><select id="fsy" aria-label="Jahr">${years.slice().reverse().map(y=>`<option>${y}</option>`).join("")}</select></div><div class="fscroll" id="fsk"></div><p class="fnote" id="fsn">Vom Umsatz bis zum Nettogewinn. Die Breite der Bänder ist proportional zum Betrag.</p></div>
-  <div class="fcard"><div class="fctl"><b>Kennzahlen übereinander legen</b><button type="button" data-m="line" aria-pressed="true">Linien</button><button type="button" data-m="bar" aria-pressed="false">Balken</button></div><div class="fchips" id="fch"></div><div class="fscroll fit" id="fcm"></div><p class="fnote" id="fmn"></p></div>
+  <div class="fcard"><div class="fctl"><b>Kennzahlen übereinander legen</b><button type="button" data-m="bar" aria-pressed="true">Balken</button><button type="button" data-m="line" aria-pressed="false">Linien</button></div><div class="fchips" id="fch"></div><div class="fscroll fit" id="fcm"></div><p class="fnote" id="fmn"></p></div>
   <div class="fcard"><div class="fctl"><b>Investitionen (Capex) und Dividendendeckung</b></div><div class="fscroll" id="fcx"></div><p class="fnote">Capex-Quote = Investitionen / Umsatz. Capex / Abschreibungen über 100 % heißt: Das Unternehmen investiert mehr, als sich Anlagen abnutzen. Deckung = freier Cashflow / gezahlte Dividenden; unter 100 % wird die Dividende nicht aus dem freien Cashflow bezahlt.</p></div>`;
   /* Cash und Zinsdeckung (Schulden stehen im Diagramm Eigenkapital und langfristige Schulden) */
   function debtCard(){
@@ -677,8 +677,9 @@ async function firmaAnsicht(sym,ceo){
   hub.innerHTML=`
   <div class="head"><div><small class="sub">${esc(["Stand: "+new Date().toLocaleDateString("de-DE",{day:"numeric",month:"long",year:"numeric"}),"Kürzel "+sym,p.sector].filter(Boolean).join(" · "))}</small></div>
   </div>
+  <div class="kurszeile"><span class="price">${num(price)} ${esc(p.currency||"")}<small class="${sg(chg)}">${chg==null?"":(chg>0?"+":"")+num(chg)+" % heute"}</small></span></div>
   ${steckbrief(sym,p,r,m,inc,cf,KZ,SD)}
-  <p class="dlink"><a href="dividende/">Alles zur Dividende: Termine, Historie und Rechner →</a></p>
+  <p class="dlink"><a class="dbtn" href="dividende/">Dividenden-Profil: Termine, Historie und Rechner <span aria-hidden="true">→</span></a></p>
   ${pr.length>1?KC.html:""}
   <div class="grid">
    ${bars("Dividende je Aktie",divNote,divs,"var(--c-gold)",v=>num(v))}
@@ -692,7 +693,6 @@ async function firmaAnsicht(sym,ceo){
   <div id="nr"></div>
   <div id="nw"></div>
   ${img2}`;
-  const tr=document.querySelector(".titlerow");if(tr&&!tr.querySelector(".price")){tr.insertAdjacentHTML("beforeend",`<div class="price">${num(price)} ${esc(p.currency||"")}<small class="${sg(chg)}">${chg==null?"":(chg>0?"+":"")+num(chg)+" % heute"}</small></div>`)}
   const st=$("start");if(st)st.hidden=true;
   hub.hidden=false;msg.textContent="";
   alignCharts();
