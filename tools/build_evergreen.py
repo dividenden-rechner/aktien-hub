@@ -157,40 +157,65 @@ def archiv_absatz(syms, n=5):
     return "\n## Zuletzt bei uns\n\nZu Firmen dieser Liste haben wir zuletzt berichtet:\n\n" + "\n".join(zeilen) + "\n\n"
 
 
-def karte(platz, s, r, kz, warum):
-    """Eine Firma als Karte: Logo, Name, Kennzahlen, Kurs, Begründung und Archiv. Lesbar auf dem Handy, ohne Tabelle."""
-    kz_zeile = " · ".join(kz)
-    kurs = f"Kurs: {de(r['kurs_eur'], 2)} €" if r.get("kurs_eur") is not None else ""
-    teile = [f"## {platz}. {logo(s, r['name'])} {link_name(s, r['name'])}", kz_zeile]
-    if kurs:
-        teile.append(kurs)
-    if warum:
-        teile.append(warum)
-    arch = archiv_zeilen(s)
-    if arch:
-        teile.append("**Zuletzt bei uns:**\n\n" + "\n".join(arch))
-    return "\n\n".join(teile) + "\n\n"
-
-
-def tief(wert, text):
-    return f"{text} {de(wert)} %" if wert is not None else None
-
-
-def kz_basis(r):
-    kz = [f"**Rendite {de(r['rendite'])} %**"]
-    if r.get("div_wachstum_5j") is not None:
-        kz.append(f"Dividendenwachstum 5 J. {de(r['div_wachstum_5j'])} % pro Jahr")
-    if r.get("ausschuettung") is not None:
-        kz.append(f"Ausschüttung {de(r['ausschuettung'], 0)} % des Gewinns")
-    if r.get("fcf_ausschuettung") is not None:
-        kz.append(f"{de(r['fcf_ausschuettung'], 0)} % des freien Cashflows")
-    if r.get("dividendenserie"):
-        kz.append(f"{r['dividendenserie']} Jahre Erhöhungen in Folge")
-    return kz
-
-
 def kopfzeilen(titel_text):
     return f"Stand: {DATUM}.\n\n{titel_text}\n\n"
+
+
+def tabelle(zeilen, kopfzeile):
+    out = "| " + " | ".join(kopfzeile) + " |\n|" + "|".join(["---"] * len(kopfzeile)) + "|\n"
+    for z in zeilen:
+        out += "| " + " | ".join(str(c) for c in z) + " |\n"
+    return out + "\n"
+
+
+def firma_zelle(s, r, platz=None):
+    """Logo und Name in einer Tabellenzelle; Name verlinkt auf die Firmenseite. Platz steht davor, weil es keine eigene Spalte gibt."""
+    kopf = f"{platz}. " if platz is not None else ""
+    return f"{kopf}{logo(s, r['name'])} {link_name(s, r['name'])}"
+
+
+def mrd(wert):
+    return f"{de(wert / 1e9, 1)} Mrd. €"
+
+
+def satz_kurs(r):
+    return f"Der Kurs liegt bei {de(r['kurs_eur'], 2)} €." if r.get("kurs_eur") is not None else None
+
+
+def satz_mcap(r):
+    return f"Der Börsenwert liegt bei {mrd(r['boersenwert_eur'])}." if (r.get("boersenwert_eur") or 0) > 0 else None
+
+
+def satz_archiv(s):
+    arch = ARCHIV.get(s, [])[:1]
+    if not arch:
+        return None
+    it = arch[0]
+    try:
+        datum = datetime.date.fromisoformat(it.get("date", "")[:10]).strftime("%d.%m.%Y")
+    except ValueError:
+        datum = ""
+    return f"Zuletzt haben wir am {datum} über die Firma berichtet ({it.get('title', '')})."
+
+
+def absatz(*saetze):
+    """Drei bis vier Sätze; fehlende Angaben fallen weg, der Kurs und der Börsenwert füllen auf."""
+    ausw = [x for x in saetze if x]
+    if len(ausw) < 3:
+        return None
+    return " ".join(ausw[:4])
+
+
+def block(platz, s, r, saetze):
+    """Individueller Text je Firma (drei bis vier Sätze), aus den Daten der Firma."""
+    text = absatz(*saetze, satz_mcap(r), satz_kurs(r))
+    if text is None:
+        text = " ".join(x for x in saetze + [satz_mcap(r), satz_kurs(r)] if x)
+    return f"### {platz}. {anzeige_name(r['name'])}\n\n{text}\n\n"
+
+
+def top_faktoren(score_faktoren, s):
+    return sorted(score_faktoren, key=lambda f: -score_faktoren[f][s])[:2]
 
 
 def beste(W, europa=False):
@@ -209,18 +234,27 @@ def beste(W, europa=False):
     gewicht = {"Rendite": 0.3, "Wachstum": 0.3, "Erhöhungsserie": 0.2, "Deckung": 0.2}
     score = {s: sum(gewicht[f] * faktoren[f][s] for f in faktoren) for s in kand}
     top = sorted(kand, key=lambda s: -score[s])[:10]
-    karten = []
+    kopf_tab = ["Firma", "Rendite", "Deckung"]
+    zeilen = [[firma_zelle(s, kand[s], i), de(kand[s]["rendite"]) + " %",
+               de(kand[s]["fcf_ausschuettung"], 0) + " %"] for i, s in enumerate(top, 1)]
+    detail = ""
     for i, s in enumerate(top, 1):
         r = kand[s]
-        staerken = sorted(faktoren, key=lambda f: -faktoren[f][s])[:2]
-        warum = f"Stark bei {staerken[0].lower()} und {staerken[1].lower()} (Punktzahl {de(score[s] * 100, 0)} von 100)."
-        karten.append(karte(i, s, r, kz_basis(r), warum))
+        f1, f2 = top_faktoren(faktoren, s)
+        saetze = [
+            f"Mit {de(score[s] * 100, 0)} von 100 Punkten steht {anzeige_name(r['name'])} auf Platz {i}, vor allem wegen der Stärke bei {f1} und {f2}.",
+            f"Die Rendite liegt bei {de(r['rendite'])} %, und die Dividende ist in den vergangenen fünf Jahren im Schnitt um {de(r['div_wachstum_5j'])} % pro Jahr gestiegen.",
+            f"Die Ausschüttung wird zu {de(r['fcf_ausschuettung'], 0)} % aus dem freien Cashflow gedeckt und wurde {r['dividendenserie']} Jahre in Folge erhöht." if r.get("dividendenserie") else
+            f"Die Ausschüttung wird zu {de(r['fcf_ausschuettung'], 0)} % aus dem freien Cashflow gedeckt.",
+            satz_archiv(s),
+        ]
+        detail += block(i, s, r, saetze)
     body = (kopfzeilen(
         ("Betrachtet werden europäische Dividendenaktien" if europa else "Betrachtet werden Dividendenaktien weltweit")
         + " mit einem Börsenwert ab 2 Mrd. Euro, die mindestens fünf Jahre in Folge ihre Dividende erhöht haben und deren Rendite über 0 und höchstens 15 Prozent liegt. "
         "Jede Firma bekommt eine Punktzahl aus vier Kennzahlen: Rendite (30 %), Dividendenwachstum über fünf Jahre (30 %), Länge der Erhöhungsserie (20 %) und Deckung durch den freien Cashflow (20 %).")
-        + "".join(karten)
-        + archiv_absatz(top)
+        + "## Die Liste im Überblick\n\n" + tabelle(zeilen, kopf_tab) + "\n"
+        + "## Warum diese Firmen auf der Liste stehen\n\n" + detail
         + "## Wie die Liste entsteht\n\n"
           "Eine hohe Rendite allein ist kein Qualitätsmerkmal. Deshalb zählen Wachstum und Deckung genauso. Eine Firma, die ihre Dividende aus Schulden zahlt, fällt in der Punktzahl zurück, auch wenn die Rendite hoch ist.\n\n"
           "Diese Liste ist eine Auswertung nach festen Regeln und keine Kaufempfehlung. Vor einer Entscheidung lohnt der Blick auf das Geschäftsmodell, die Verschuldung und die Branche der Firma.\n")
@@ -237,18 +271,25 @@ def wachstum(W):
     top = sorted(kand, key=lambda s: -kand[s]["div_wachstum_5j"])[:10]
     if len(top) < 10:
         return None
-    karten = []
+    kopf_tab = ["Firma", "Wachstum 5 J.", "Rendite"]
+    zeilen = [[firma_zelle(s, kand[s], i), de(kand[s]["div_wachstum_5j"]) + " %",
+               de(kand[s]["rendite"]) + " %"] for i, s in enumerate(top, 1)]
+    detail = ""
     for i, s in enumerate(top, 1):
         r = kand[s]
-        kz = [f"**Dividendenwachstum 5 J. {de(r['div_wachstum_5j'])} % pro Jahr**", f"Rendite {de(r['rendite'])} %"]
-        if r.get("div_wachstum_10j") is not None:
-            kz.append(f"10 J. {de(r['div_wachstum_10j'])} % pro Jahr")
-        warum = f"Erhöhungen in Folge: {r['dividendenserie']} Jahre." if r.get("dividendenserie") else ""
-        karten.append(karte(i, s, r, kz, warum))
+        w10 = (f"Über zehn Jahre liegt das Wachstum bei {de(r['div_wachstum_10j'])} % pro Jahr." if r.get("div_wachstum_10j") is not None else None)
+        saetze = [
+            f"Die Dividende ist in den vergangenen fünf Jahren im Schnitt um {de(r['div_wachstum_5j'])} % pro Jahr gestiegen, und damit gehört {anzeige_name(r['name'])} zu den stärksten Steigerungen der Liste.",
+            f"Die Rendite liegt bei {de(r['rendite'])} %, sodass Wachstum und Ertrag zusammen betrachtet werden können.",
+            w10,
+            f"Die Dividende wurde {r['dividendenserie']} Jahre in Folge erhöht." if r.get("dividendenserie") else None,
+            satz_archiv(s),
+        ]
+        detail += block(i, s, r, saetze)
     body = (kopfzeilen("Diese Liste zeigt die Firmen, deren Dividende je Aktie in den letzten fünf Jahren am stärksten gewachsen ist. "
                        "Berücksichtigt werden Dividendenaktien mit einer Rendite zwischen 0 und 50 Prozent und mindestens drei Erhöhungen in Folge. Die Wachstumsrate ist der jährliche Durchschnitt.")
-            + "".join(karten)
-            + archiv_absatz(top)
+            + "## Die Liste im Überblick\n\n" + tabelle(zeilen, kopf_tab) + "\n"
+            + "## Warum diese Firmen auf der Liste stehen\n\n" + detail
             + "## Einordnung\n\nHohes Wachstum kommt oft von einem niedrigen Ausgangspunkt. Wer das Wachstum bewertet, sollte zusätzlich prüfen, ob die Dividende aus dem Gewinn oder dem freien Cashflow gedeckt ist.\n\n"
               "Die Liste ist eine Auswertung nach festen Regeln und keine Kaufempfehlung.\n")
     return "dividendenwachstum-die-staerksten-steigerungen", "Dividendenwachstum: Die 10 Firmen mit den stärksten Steigerungen", \
@@ -277,20 +318,28 @@ def high_yield(W):
     if len(top) < 10:
         return None
     top = sorted(top, key=lambda s: -basis[s]["rendite"])
-    karten = []
+    kopf_tab = ["Firma", "Rendite", "Deckung"]
+    zeilen = [[firma_zelle(s, basis[s], i), de(basis[s]["rendite"]) + " %",
+               (de(basis[s]["fcf_ausschuettung"], 0) + " %") if basis[s].get("fcf_ausschuettung") is not None else "–"]
+              for i, s in enumerate(top, 1)]
+    detail = ""
     for i, s in enumerate(top, 1):
         r = basis[s]
-        kz = [f"**Rendite {de(r['rendite'])} %**"]
         if r.get("fcf_ausschuettung") is not None:
-            kz.append(f"{de(r['fcf_ausschuettung'], 0)} % des freien Cashflows")
-        if r.get("div_wachstum_5j") is not None:
-            kz.append(f"Dividendenwachstum 5 J. {de(r['div_wachstum_5j'])} %")
-        warum = "Die Ausschüttung ist vom freien Cashflow gedeckt." if r.get("fcf_ausschuettung") is not None and r["fcf_ausschuettung"] < 100 else ""
-        karten.append(karte(i, s, r, kz, warum))
+            deck = f"Die Ausschüttung wird zu {de(r['fcf_ausschuettung'], 0)} % aus dem freien Cashflow gedeckt."
+        else:
+            deck = "Für die Cashflow-Deckung fehlen uns Angaben, daher zählt hier vor allem die Rendite."
+        saetze = [
+            f"Mit {de(r['rendite'])} % gehört {anzeige_name(r['name'])} zu den höchsten Renditen unter den Großfirmen dieser Liste.",
+            deck,
+            f"Die Dividende ist in fünf Jahren im Schnitt um {de(r['div_wachstum_5j'])} % pro Jahr gestiegen." if r.get("div_wachstum_5j") is not None else None,
+            satz_archiv(s),
+        ]
+        detail += block(i, s, r, saetze)
     body = (kopfzeilen("Hohe Dividendenrenditen locken, sind aber oft ein Warnsignal. Diese Liste zeigt zehn Großfirmen mit hoher Rendite, deren Ausschüttung aus dem freien Cashflow gedeckt ist: sieben aus den USA, zwei aus Europa und eine aus Asien. "
                        "Berücksichtigt werden Firmen mit einem Börsenwert ab 5 Mrd. Euro und einer Rendite zwischen 5 und 15 Prozent.")
-            + "".join(karten)
-            + archiv_absatz(top)
+            + "## Die Liste im Überblick\n\n" + tabelle(zeilen, kopf_tab) + "\n"
+            + "## Warum diese Firmen auf der Liste stehen\n\n" + detail
             + "## Drei Fragen vor dem Kauf\n\nWer eine hohe Rendite sieht, sollte drei Fragen stellen: Ist die Dividende aus dem Cashflow gedeckt? Wächst das Geschäft? Ist die Rendite hoch, weil der Kurs gefallen ist?\n\n"
               "Die Liste ist eine Auswertung nach festen Regeln und keine Kaufempfehlung.\n")
     return "high-yield-hohe-dividendenrenditen-mit-deckung", "High Yield: Hohe Dividendenrenditen mit solider Deckung", \
@@ -314,16 +363,23 @@ def monatlich(W):
     top = res[:10]
     if len(top) < 5:
         return None
-    karten = []
+    kopf_tab = ["Firma", "Zahlmonate", "Rendite"]
+    zeilen = [[firma_zelle(s, W[s], i), (W[s].get("zahlmonate") or ZM.get(s)), de(W[s]["rendite"]) + " %"]
+              for i, (n, s) in enumerate(top, 1)]
+    detail = ""
     for i, (n, s) in enumerate(top, 1):
         r = W[s]
         zm = r.get("zahlmonate") or ZM.get(s)
-        kz = [f"**{n} Zahlmonate**", f"Rendite {de(r['rendite'])} %"]
-        karten.append(karte(i, s, r, kz, f"Zahlmonate: {zm}."))
+        saetze = [
+            f"{anzeige_name(r['name'])} zahlt in {n} Monaten im Jahr, nämlich {zm.lower() if zm.lower().startswith('jeden') else zm}.",
+            f"Die Rendite liegt bei {de(r['rendite'])} %, und die Zahlungen verteilen sich über das ganze Jahr.",
+            satz_archiv(s),
+        ]
+        detail += block(i, s, r, saetze)
     body = (kopfzeilen("Manche Firmen zahlen ihre Dividende nicht einmal im Jahr, sondern öfter. Diese Liste zeigt Dividendenaktien mit den meisten Zahlmonaten, die wir für sie belegt haben. "
                        "Berücksichtigt werden Firmen mit mindestens vier belegten Zahlmonaten und einer Rendite zwischen 0 und 15 Prozent. Monate, die nicht belegt sind, fehlen in der Liste.")
-            + "".join(karten)
-            + archiv_absatz([s for _, s in top])
+            + "## Die Liste im Überblick\n\n" + tabelle(zeilen, kopf_tab) + "\n"
+            + "## Warum diese Firmen auf der Liste stehen\n\n" + detail
             + "## Einordnung\n\nMonatliche Zahlungen helfen beim Planen von Einnahmen, ändern aber nichts an der Qualität der Firma. Der Blick auf Deckung und Wachstum bleibt wichtig.\n\n"
               "Die Liste ist eine Auswertung nach festen Regeln und keine Kaufempfehlung. Die Monate stammen aus Zahlungsterminen der Unternehmen und können sich ändern.\n")
     return "dividende-aktien-mit-vielen-zahlmonaten", "Dividenden im Monatsrhythmus: Aktien mit den meisten Zahlmonaten", \

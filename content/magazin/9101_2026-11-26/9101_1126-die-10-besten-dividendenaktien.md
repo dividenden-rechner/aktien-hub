@@ -1,7 +1,7 @@
 ---
 title: "Die 10 besten Dividendenaktien"
 description: "Die zehn Dividendenaktien mit der besten Mischung aus Rendite, Wachstum, Erhöhungsserie und Deckung. Die Liste wird regelmäßig aus den Daten neu berechnet."
-date: 2026-11-26 23:12
+date: 2026-11-26 23:19
 updated: 2026-11-26
 author: "Kilian Treß"
 category: Ratgeber
@@ -13,111 +13,63 @@ Stand: 26.11.2026.
 
 Betrachtet werden Dividendenaktien weltweit mit einem Börsenwert ab 2 Mrd. Euro, die mindestens fünf Jahre in Folge ihre Dividende erhöht haben und deren Rendite über 0 und höchstens 15 Prozent liegt. Jede Firma bekommt eine Punktzahl aus vier Kennzahlen: Rendite (30 %), Dividendenwachstum über fünf Jahre (30 %), Länge der Erhöhungsserie (20 %) und Deckung durch den freien Cashflow (20 %).
 
-## 1. <span class="arlogo"><img src="../../assets/logos/hub/WBD.MI.png" alt="" width="30" height="30" loading="lazy" data-sym="WBD.MI" data-ph="W"></span> [Webuild S.p.a.](/aktien-hub/webuild-s-p-a/)
+## Die Liste im Überblick
 
-**Rendite 4,4 %** · Dividendenwachstum 5 J. 23,6 % pro Jahr · Ausschüttung 39 % des Gewinns · 31 % des freien Cashflows · 5 Jahre Erhöhungen in Folge
-
-Kurs: 2,12 €
-
-Stark bei wachstum und rendite (Punktzahl 75 von 100).
-
-## 2. <span class="arlogo"><img src="../../assets/logos/hub/5105.T.png" alt="" width="30" height="30" loading="lazy" data-sym="5105.T" data-ph="T"></span> [Toyo Tire Corporation](/aktien-hub/toyo-tire/)
-
-**Rendite 3,4 %** · Dividendenwachstum 5 J. 23,6 % pro Jahr · Ausschüttung 31 % des Gewinns · 29 % des freien Cashflows · 5 Jahre Erhöhungen in Folge
-
-Kurs: 22,00 €
-
-Stark bei wachstum und rendite (Punktzahl 73 von 100).
-
-## 3. <span class="arlogo"><img src="../../assets/logos/hub/7752.T.png" alt="" width="30" height="30" loading="lazy" data-sym="7752.T" data-ph="R"></span> [Ricoh Company,ltd.](/aktien-hub/ricoh/)
-
-**Rendite 2,5 %** · Dividendenwachstum 5 J. 21,7 % pro Jahr · Ausschüttung 41 % des Gewinns · 20 % des freien Cashflows · 5 Jahre Erhöhungen in Folge
-
-Kurs: 9,15 €
-
-Stark bei wachstum und deckung (Punktzahl 70 von 100).
-
-## 4. <span class="arlogo"><img src="../../assets/logos/low.png" alt="" width="30" height="30" loading="lazy" data-sym="LOW" data-ph="L"></span> [Lowe’s Companies, Inc.](/aktien-hub/lowes/)
-
-**Rendite 2,1 %** · Dividendenwachstum 5 J. 15,6 % pro Jahr · Ausschüttung 41 % des Gewinns · 38 % des freien Cashflows · 52 Jahre Erhöhungen in Folge
-
-Kurs: 215,10 €
-
-Stark bei erhöhungsserie und wachstum (Punktzahl 68 von 100).
-
-**Zuletzt bei uns:**
-
-- 18.11.2026: [Lowe's hebt Umsatz dank Onlinegeschäft auf 22,8 Mrd. USD](/news/lowes-q3-2026-zahlen/)
-
-## 5. <span class="arlogo"><img src="../../assets/logos/hub/LOOMIS.ST.png" alt="" width="30" height="30" loading="lazy" data-sym="LOOMIS.ST" data-ph="L"></span> [Loomis AB](/aktien-hub/loomis/)
-
-**Rendite 2,8 %** · Dividendenwachstum 5 J. 22,2 % pro Jahr · Ausschüttung 65 % des Gewinns · 30 % des freien Cashflows · 5 Jahre Erhöhungen in Folge
-
-Kurs: 47,50 €
-
-Stark bei wachstum und rendite (Punktzahl 68 von 100).
-
-## 6. <span class="arlogo"><img src="../../assets/logos/tgt.png" alt="" width="30" height="30" loading="lazy" data-sym="TGT" data-ph="T"></span> [Target Corporation](/aktien-hub/target/)
-
-**Rendite 2,6 %** · Dividendenwachstum 5 J. 11,0 % pro Jahr · Ausschüttung 47 % des Gewinns · 46 % des freien Cashflows · 56 Jahre Erhöhungen in Folge
-
-Kurs: 157,20 €
-
-Stark bei erhöhungsserie und rendite (Punktzahl 67 von 100).
-
-**Zuletzt bei uns:**
-
-- 18.11.2026: [Target Q3: Umsatz plus 7 %, Gewinn plus 76 % – ein Teil kommt aus Zollrückerstattungen](/news/target-q3-2026/)
-
-## 7. <span class="arlogo"><img src="../../assets/logos/hub/BBY.png" alt="" width="30" height="30" loading="lazy" data-sym="BBY" data-ph="B"></span> [Best Buy Co., Inc.](/aktien-hub/best-buy/)
-
-**Rendite 3,8 %** · Dividendenwachstum 5 J. 11,6 % pro Jahr · Ausschüttung 64 % des Gewinns · 45 % des freien Cashflows · 8 Jahre Erhöhungen in Folge
-
-Kurs: 91,44 €
-
-Stark bei rendite und wachstum (Punktzahl 65 von 100).
-
-## 8. <span class="arlogo"><img src="../../assets/logos/hub/ALV.DE.png" alt="" width="30" height="30" loading="lazy" data-sym="ALV.DE" data-ph="A"></span> [Allianz](/aktien-hub/allianz/)
-
-**Rendite 3,7 %** · Dividendenwachstum 5 J. 12,2 % pro Jahr · Ausschüttung 60 % des Gewinns · 19 % des freien Cashflows · 5 Jahre Erhöhungen in Folge
-
-Kurs: 458,40 €
-
-Stark bei rendite und deckung (Punktzahl 65 von 100).
-
-**Zuletzt bei uns:**
-
-- 12.11.2026: [Allianz übertrifft die Erwartungen um 10 % und hebt das Gewinnziel für 2026 an](/news/allianz-q3-2026-operatives-ergebnis-prognose-angehoben/)
-
-## 9. <span class="arlogo"><img src="../../assets/logos/hub/PB.png" alt="" width="30" height="30" loading="lazy" data-sym="PB" data-ph="P"></span> [Prosperity Bancshares, Inc.](/aktien-hub/prosperity-bancshares/)
-
-**Rendite 3,3 %** · Dividendenwachstum 5 J. 11,8 % pro Jahr · Ausschüttung 42 % des Gewinns · 35 % des freien Cashflows · 7 Jahre Erhöhungen in Folge
-
-Kurs: 65,00 €
-
-Stark bei rendite und wachstum (Punktzahl 64 von 100).
-
-## 10. <span class="arlogo"><img src="../../assets/logos/otis.png" alt="" width="30" height="30" loading="lazy" data-sym="OTIS" data-ph="O"></span> [Otis Worldwide Corporation](/aktien-hub/otis-worldwide/)
-
-**Rendite 2,2 %** · Dividendenwachstum 5 J. 22,4 % pro Jahr · Ausschüttung 43 % des Gewinns · 40 % des freien Cashflows · 6 Jahre Erhöhungen in Folge
-
-Kurs: 71,36 €
-
-Stark bei wachstum und rendite (Punktzahl 64 von 100).
-
-**Zuletzt bei uns:**
-
-- 29.10.2026: [Otis Worldwide: 800 Millionen US-Dollar fuer Aktienrueckkaeufe im bisherigen Jahr](/news/otis-worldwide-q3-2026-zahlen/)
+| Firma | Rendite | Deckung |
+|---|---|---|
+| 1. <span class="arlogo"><img src="../../assets/logos/hub/WBD.MI.png" alt="" width="30" height="30" loading="lazy" data-sym="WBD.MI" data-ph="W"></span> [Webuild S.p.a.](/aktien-hub/webuild-s-p-a/) | 4,4 % | 31 % |
+| 2. <span class="arlogo"><img src="../../assets/logos/hub/5105.T.png" alt="" width="30" height="30" loading="lazy" data-sym="5105.T" data-ph="T"></span> [Toyo Tire Corporation](/aktien-hub/toyo-tire/) | 3,4 % | 29 % |
+| 3. <span class="arlogo"><img src="../../assets/logos/hub/7752.T.png" alt="" width="30" height="30" loading="lazy" data-sym="7752.T" data-ph="R"></span> [Ricoh Company,ltd.](/aktien-hub/ricoh/) | 2,5 % | 20 % |
+| 4. <span class="arlogo"><img src="../../assets/logos/low.png" alt="" width="30" height="30" loading="lazy" data-sym="LOW" data-ph="L"></span> [Lowe’s Companies, Inc.](/aktien-hub/lowes/) | 2,1 % | 38 % |
+| 5. <span class="arlogo"><img src="../../assets/logos/hub/LOOMIS.ST.png" alt="" width="30" height="30" loading="lazy" data-sym="LOOMIS.ST" data-ph="L"></span> [Loomis AB](/aktien-hub/loomis/) | 2,8 % | 30 % |
+| 6. <span class="arlogo"><img src="../../assets/logos/tgt.png" alt="" width="30" height="30" loading="lazy" data-sym="TGT" data-ph="T"></span> [Target Corporation](/aktien-hub/target/) | 2,6 % | 46 % |
+| 7. <span class="arlogo"><img src="../../assets/logos/hub/BBY.png" alt="" width="30" height="30" loading="lazy" data-sym="BBY" data-ph="B"></span> [Best Buy Co., Inc.](/aktien-hub/best-buy/) | 3,8 % | 45 % |
+| 8. <span class="arlogo"><img src="../../assets/logos/hub/ALV.DE.png" alt="" width="30" height="30" loading="lazy" data-sym="ALV.DE" data-ph="A"></span> [Allianz](/aktien-hub/allianz/) | 3,7 % | 19 % |
+| 9. <span class="arlogo"><img src="../../assets/logos/hub/PB.png" alt="" width="30" height="30" loading="lazy" data-sym="PB" data-ph="P"></span> [Prosperity Bancshares, Inc.](/aktien-hub/prosperity-bancshares/) | 3,3 % | 35 % |
+| 10. <span class="arlogo"><img src="../../assets/logos/otis.png" alt="" width="30" height="30" loading="lazy" data-sym="OTIS" data-ph="O"></span> [Otis Worldwide Corporation](/aktien-hub/otis-worldwide/) | 2,2 % | 40 % |
 
 
-## Zuletzt bei uns
+## Warum diese Firmen auf der Liste stehen
 
-Zu Firmen dieser Liste haben wir zuletzt berichtet:
+### 1. Webuild S.p.a.
 
-- [Lowe's hebt Umsatz dank Onlinegeschäft auf 22,8 Mrd. USD](/news/lowes-q3-2026-zahlen/)
-- [Target Q3: Umsatz plus 7 %, Gewinn plus 76 % – ein Teil kommt aus Zollrückerstattungen](/news/target-q3-2026/)
-- [Allianz übertrifft die Erwartungen um 10 % und hebt das Gewinnziel für 2026 an](/news/allianz-q3-2026-operatives-ergebnis-prognose-angehoben/)
-- [Otis Worldwide: 800 Millionen US-Dollar fuer Aktienrueckkaeufe im bisherigen Jahr](/news/otis-worldwide-q3-2026-zahlen/)
+Mit 75 von 100 Punkten steht Webuild S.p.a. auf Platz 1, vor allem wegen der Stärke bei Wachstum und Rendite. Die Rendite liegt bei 4,4 %, und die Dividende ist in den vergangenen fünf Jahren im Schnitt um 23,6 % pro Jahr gestiegen. Die Ausschüttung wird zu 31 % aus dem freien Cashflow gedeckt und wurde 5 Jahre in Folge erhöht. Der Börsenwert liegt bei 2,1 Mrd. €.
+
+### 2. Toyo Tire Corporation
+
+Mit 73 von 100 Punkten steht Toyo Tire Corporation auf Platz 2, vor allem wegen der Stärke bei Wachstum und Rendite. Die Rendite liegt bei 3,4 %, und die Dividende ist in den vergangenen fünf Jahren im Schnitt um 23,6 % pro Jahr gestiegen. Die Ausschüttung wird zu 29 % aus dem freien Cashflow gedeckt und wurde 5 Jahre in Folge erhöht. Der Börsenwert liegt bei 3,4 Mrd. €.
+
+### 3. Ricoh Company,ltd.
+
+Mit 70 von 100 Punkten steht Ricoh Company,ltd. auf Platz 3, vor allem wegen der Stärke bei Wachstum und Deckung. Die Rendite liegt bei 2,5 %, und die Dividende ist in den vergangenen fünf Jahren im Schnitt um 21,7 % pro Jahr gestiegen. Die Ausschüttung wird zu 20 % aus dem freien Cashflow gedeckt und wurde 5 Jahre in Folge erhöht. Der Börsenwert liegt bei 5,2 Mrd. €.
+
+### 4. Lowe’s Companies, Inc.
+
+Mit 68 von 100 Punkten steht Lowe’s Companies, Inc. auf Platz 4, vor allem wegen der Stärke bei Erhöhungsserie und Wachstum. Die Rendite liegt bei 2,1 %, und die Dividende ist in den vergangenen fünf Jahren im Schnitt um 15,6 % pro Jahr gestiegen. Die Ausschüttung wird zu 38 % aus dem freien Cashflow gedeckt und wurde 52 Jahre in Folge erhöht. Zuletzt haben wir am 18.11.2026 über die Firma berichtet (Lowe's hebt Umsatz dank Onlinegeschäft auf 22,8 Mrd. USD).
+
+### 5. Loomis AB
+
+Mit 68 von 100 Punkten steht Loomis AB auf Platz 5, vor allem wegen der Stärke bei Wachstum und Rendite. Die Rendite liegt bei 2,8 %, und die Dividende ist in den vergangenen fünf Jahren im Schnitt um 22,2 % pro Jahr gestiegen. Die Ausschüttung wird zu 30 % aus dem freien Cashflow gedeckt und wurde 5 Jahre in Folge erhöht. Der Börsenwert liegt bei 3,2 Mrd. €.
+
+### 6. Target Corporation
+
+Mit 67 von 100 Punkten steht Target Corporation auf Platz 6, vor allem wegen der Stärke bei Erhöhungsserie und Rendite. Die Rendite liegt bei 2,6 %, und die Dividende ist in den vergangenen fünf Jahren im Schnitt um 11,0 % pro Jahr gestiegen. Die Ausschüttung wird zu 46 % aus dem freien Cashflow gedeckt und wurde 56 Jahre in Folge erhöht. Zuletzt haben wir am 18.11.2026 über die Firma berichtet (Target Q3: Umsatz plus 7 %, Gewinn plus 76 % – ein Teil kommt aus Zollrückerstattungen).
+
+### 7. Best Buy Co., Inc.
+
+Mit 65 von 100 Punkten steht Best Buy Co., Inc. auf Platz 7, vor allem wegen der Stärke bei Rendite und Wachstum. Die Rendite liegt bei 3,8 %, und die Dividende ist in den vergangenen fünf Jahren im Schnitt um 11,6 % pro Jahr gestiegen. Die Ausschüttung wird zu 45 % aus dem freien Cashflow gedeckt und wurde 8 Jahre in Folge erhöht. Der Börsenwert liegt bei 19,4 Mrd. €.
+
+### 8. Allianz
+
+Mit 65 von 100 Punkten steht Allianz auf Platz 8, vor allem wegen der Stärke bei Rendite und Deckung. Die Rendite liegt bei 3,7 %, und die Dividende ist in den vergangenen fünf Jahren im Schnitt um 12,2 % pro Jahr gestiegen. Die Ausschüttung wird zu 19 % aus dem freien Cashflow gedeckt und wurde 5 Jahre in Folge erhöht. Zuletzt haben wir am 12.11.2026 über die Firma berichtet (Allianz übertrifft die Erwartungen um 10 % und hebt das Gewinnziel für 2026 an).
+
+### 9. Prosperity Bancshares, Inc.
+
+Mit 64 von 100 Punkten steht Prosperity Bancshares, Inc. auf Platz 9, vor allem wegen der Stärke bei Rendite und Wachstum. Die Rendite liegt bei 3,3 %, und die Dividende ist in den vergangenen fünf Jahren im Schnitt um 11,8 % pro Jahr gestiegen. Die Ausschüttung wird zu 35 % aus dem freien Cashflow gedeckt und wurde 7 Jahre in Folge erhöht. Der Börsenwert liegt bei 6,2 Mrd. €.
+
+### 10. Otis Worldwide Corporation
+
+Mit 64 von 100 Punkten steht Otis Worldwide Corporation auf Platz 10, vor allem wegen der Stärke bei Wachstum und Rendite. Die Rendite liegt bei 2,2 %, und die Dividende ist in den vergangenen fünf Jahren im Schnitt um 22,4 % pro Jahr gestiegen. Die Ausschüttung wird zu 40 % aus dem freien Cashflow gedeckt und wurde 6 Jahre in Folge erhöht. Zuletzt haben wir am 29.10.2026 über die Firma berichtet (Otis Worldwide: 800 Millionen US-Dollar fuer Aktienrueckkaeufe im bisherigen Jahr).
 
 ## Wie die Liste entsteht
 

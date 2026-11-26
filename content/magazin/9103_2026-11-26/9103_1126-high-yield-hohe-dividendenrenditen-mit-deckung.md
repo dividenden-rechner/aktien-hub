@@ -1,7 +1,7 @@
 ---
 title: "High Yield: Hohe Dividendenrenditen mit solider Deckung"
 description: "Die zehn Großfirmen mit der höchsten Rendite, die ihre Ausschüttung aus dem freien Cashflow zahlen. Die Liste wird regelmäßig neu berechnet."
-date: 2026-11-26 23:12
+date: 2026-11-26 23:19
 updated: 2026-11-26
 author: "Kilian Treß"
 category: Ratgeber
@@ -13,110 +13,63 @@ Stand: 26.11.2026.
 
 Hohe Dividendenrenditen locken, sind aber oft ein Warnsignal. Diese Liste zeigt zehn Großfirmen mit hoher Rendite, deren Ausschüttung aus dem freien Cashflow gedeckt ist: sieben aus den USA, zwei aus Europa und eine aus Asien. Berücksichtigt werden Firmen mit einem Börsenwert ab 5 Mrd. Euro und einer Rendite zwischen 5 und 15 Prozent.
 
-## 1. <span class="arlogo"><img src="../../assets/logos/arcc.png" alt="" width="30" height="30" loading="lazy" data-sym="ARCC" data-ph="A"></span> [Ares Capital Corporation](/aktien-hub/ares-capital/)
+## Die Liste im Überblick
 
-**Rendite 10,2 %** · Dividendenwachstum 5 J. 3,7 %
-
-Kurs: 17,22 €
-
-## 2. <span class="arlogo"><img src="../../assets/logos/hub/MBG.DE.png" alt="" width="30" height="30" loading="lazy" data-sym="MBG.DE" data-ph="M"></span> [Mercedes-Benz Group](/aktien-hub/mercedes-benz-group/)
-
-**Rendite 9,2 %** · 33 % des freien Cashflows · Dividendenwachstum 5 J. 21,0 %
-
-Kurs: 38,21 €
-
-Die Ausschüttung ist vom freien Cashflow gedeckt.
-
-**Zuletzt bei uns:**
-
-- 12.11.2026: [Mercedes friert Investitionen in Deutschland ein und prüft Werksschließungen](/news/mercedes-benz-investitionsstopp-deutsche-werke/)
-- 27.10.2026: [Mercedes-Benz senkt Ausblick für 2026 wegen China und Kosten](/news/mercedes-benz-prognoseanpassung-2026/)
-
-## 3. <span class="arlogo"><img src="../../assets/logos/hub/ORI.png" alt="" width="30" height="30" loading="lazy" data-sym="ORI" data-ph="O"></span> [OLD Republic International Corp](/aktien-hub/old-republic-international/)
-
-**Rendite 9,0 %** · Dividendenwachstum 5 J. 14,7 %
-
-Kurs: 37,17 €
-
-## 4. <span class="arlogo"><img src="../../assets/logos/hub/LGEN.L.png" alt="" width="30" height="30" loading="lazy" data-sym="LGEN.L" data-ph="L"></span> [Legal & General](/aktien-hub/legal-und-general/)
-
-**Rendite 7,2 %** · 28 % des freien Cashflows
-
-Kurs: 3,54 €
-
-Die Ausschüttung ist vom freien Cashflow gedeckt.
-
-**Zuletzt bei uns:**
-
-- 18.11.2026: [Legal & General: Non-Executive Director Nilufer Kheraj verlässt das Board](/news/legal-and-general-board-wechsel-nilufer-kheraj/)
-- 16.11.2026: [Legal & General: Positives Q3-Momentum hält Konzern auf Kurs für Strategieziele](/news/legal-and-general-q3-2026/)
-
-## 5. <span class="arlogo"><img src="../../assets/logos/hub/VICI.png" alt="" width="30" height="30" loading="lazy" data-sym="VICI" data-ph="V"></span> [VICI Properties Inc.](/aktien-hub/vici-properties/)
-
-**Rendite 7,2 %** · 74 % des freien Cashflows · Dividendenwachstum 5 J. 7,1 %
-
-Kurs: 22,90 €
-
-Die Ausschüttung ist vom freien Cashflow gedeckt.
-
-## 6. <span class="arlogo"><img src="../../assets/logos/hub/ARE.png" alt="" width="30" height="30" loading="lazy" data-sym="ARE" data-ph="A"></span> [Alexandria Real Estate Equities, Inc.](/aktien-hub/alexandria-real-estate-equities/)
-
-**Rendite 6,7 %** · 64 % des freien Cashflows · Dividendenwachstum 5 J. 2,0 %
-
-Kurs: 39,09 €
-
-Die Ausschüttung ist vom freien Cashflow gedeckt.
-
-## 7. <span class="arlogo"><img src="../../assets/logos/hub/BXP.png" alt="" width="30" height="30" loading="lazy" data-sym="BXP" data-ph="B"></span> [Bxp, Inc.](/aktien-hub/bxp/)
-
-**Rendite 6,4 %** · 63 % des freien Cashflows
-
-Kurs: 58,14 €
-
-Die Ausschüttung ist vom freien Cashflow gedeckt.
-
-## 8. <span class="arlogo"><img src="../../assets/logos/fis.png" alt="" width="30" height="30" loading="lazy" data-sym="FIS" data-ph="F"></span> [Fidelity National Information Services, Inc.](/aktien-hub/fidelity-national-information-services/)
-
-**Rendite 6,3 %** · 32 % des freien Cashflows · Dividendenwachstum 5 J. 2,7 %
-
-Kurs: 24,94 €
-
-Die Ausschüttung ist vom freien Cashflow gedeckt.
-
-**Zuletzt bei uns:**
-
-- 04.11.2026: [Fidelity National Information Services erzielt im dritten Quartal 2026 bereinigten Gewinn von 1,61 US-Dollar je Aktie](/news/fidelity-national-information-services-q3-2026/)
-
-## 9. <span class="arlogo"><img src="../../assets/logos/khc.png" alt="" width="30" height="30" loading="lazy" data-sym="KHC" data-ph="K"></span> [Kraft Heinz Co](/aktien-hub/kraft-heinz/)
-
-**Rendite 6,1 %** · 54 % des freien Cashflows · Dividendenwachstum 5 J. 0,0 %
-
-Kurs: 24,00 €
-
-Die Ausschüttung ist vom freien Cashflow gedeckt.
-
-**Zuletzt bei uns:**
-
-- 21.11.2026: [Kraft Heinz an der NYSE: Der Cashflow sinkt 2027 um ein Drittel, die Dividende bleibt](/news/kraft-heinz-nyse-prognose-dividende-2029/)
-- 12.11.2026: [Kraft Heinz verspricht Wachstum ab 2027 und zahlt dafür mit sinkenden Gewinnen](/news/kraft-heinz-investor-day-2026-ziele-2029-dividende/)
-
-## 10. <span class="arlogo"><img src="../../assets/logos/hub/9602.T.png" alt="" width="30" height="30" loading="lazy" data-sym="9602.T" data-ph="T"></span> [Toho Co.,ltd](/aktien-hub/toho/)
-
-**Rendite 6,0 %** · 31 % des freien Cashflows · Dividendenwachstum 5 J. 25,7 %
-
-Kurs: 10,50 €
-
-Die Ausschüttung ist vom freien Cashflow gedeckt.
+| Firma | Rendite | Deckung |
+|---|---|---|
+| 1. <span class="arlogo"><img src="../../assets/logos/arcc.png" alt="" width="30" height="30" loading="lazy" data-sym="ARCC" data-ph="A"></span> [Ares Capital Corporation](/aktien-hub/ares-capital/) | 10,2 % | – |
+| 2. <span class="arlogo"><img src="../../assets/logos/hub/MBG.DE.png" alt="" width="30" height="30" loading="lazy" data-sym="MBG.DE" data-ph="M"></span> [Mercedes-Benz Group](/aktien-hub/mercedes-benz-group/) | 9,2 % | 33 % |
+| 3. <span class="arlogo"><img src="../../assets/logos/hub/ORI.png" alt="" width="30" height="30" loading="lazy" data-sym="ORI" data-ph="O"></span> [OLD Republic International Corp](/aktien-hub/old-republic-international/) | 9,0 % | – |
+| 4. <span class="arlogo"><img src="../../assets/logos/hub/LGEN.L.png" alt="" width="30" height="30" loading="lazy" data-sym="LGEN.L" data-ph="L"></span> [Legal & General](/aktien-hub/legal-und-general/) | 7,2 % | 28 % |
+| 5. <span class="arlogo"><img src="../../assets/logos/hub/VICI.png" alt="" width="30" height="30" loading="lazy" data-sym="VICI" data-ph="V"></span> [VICI Properties Inc.](/aktien-hub/vici-properties/) | 7,2 % | 74 % |
+| 6. <span class="arlogo"><img src="../../assets/logos/hub/ARE.png" alt="" width="30" height="30" loading="lazy" data-sym="ARE" data-ph="A"></span> [Alexandria Real Estate Equities, Inc.](/aktien-hub/alexandria-real-estate-equities/) | 6,7 % | 64 % |
+| 7. <span class="arlogo"><img src="../../assets/logos/hub/BXP.png" alt="" width="30" height="30" loading="lazy" data-sym="BXP" data-ph="B"></span> [Bxp, Inc.](/aktien-hub/bxp/) | 6,4 % | 63 % |
+| 8. <span class="arlogo"><img src="../../assets/logos/fis.png" alt="" width="30" height="30" loading="lazy" data-sym="FIS" data-ph="F"></span> [Fidelity National Information Services, Inc.](/aktien-hub/fidelity-national-information-services/) | 6,3 % | 32 % |
+| 9. <span class="arlogo"><img src="../../assets/logos/khc.png" alt="" width="30" height="30" loading="lazy" data-sym="KHC" data-ph="K"></span> [Kraft Heinz Co](/aktien-hub/kraft-heinz/) | 6,1 % | 54 % |
+| 10. <span class="arlogo"><img src="../../assets/logos/hub/9602.T.png" alt="" width="30" height="30" loading="lazy" data-sym="9602.T" data-ph="T"></span> [Toho Co.,ltd](/aktien-hub/toho/) | 6,0 % | 31 % |
 
 
-## Zuletzt bei uns
+## Warum diese Firmen auf der Liste stehen
 
-Zu Firmen dieser Liste haben wir zuletzt berichtet:
+### 1. Ares Capital Corporation
 
-- [Kraft Heinz an der NYSE: Der Cashflow sinkt 2027 um ein Drittel, die Dividende bleibt](/news/kraft-heinz-nyse-prognose-dividende-2029/)
-- [Legal & General: Non-Executive Director Nilufer Kheraj verlässt das Board](/news/legal-and-general-board-wechsel-nilufer-kheraj/)
-- [Mercedes friert Investitionen in Deutschland ein und prüft Werksschließungen](/news/mercedes-benz-investitionsstopp-deutsche-werke/)
-- [Fidelity National Information Services erzielt im dritten Quartal 2026 bereinigten Gewinn von 1,61 US-Dollar je Aktie](/news/fidelity-national-information-services-q3-2026/)
+Mit 10,2 % gehört Ares Capital Corporation zu den höchsten Renditen unter den Großfirmen dieser Liste. Für die Cashflow-Deckung fehlen uns Angaben, daher zählt hier vor allem die Rendite. Die Dividende ist in fünf Jahren im Schnitt um 3,7 % pro Jahr gestiegen. Der Börsenwert liegt bei 12,0 Mrd. €.
+
+### 2. Mercedes-Benz Group
+
+Mit 9,2 % gehört Mercedes-Benz Group zu den höchsten Renditen unter den Großfirmen dieser Liste. Die Ausschüttung wird zu 33 % aus dem freien Cashflow gedeckt. Die Dividende ist in fünf Jahren im Schnitt um 21,0 % pro Jahr gestiegen. Zuletzt haben wir am 12.11.2026 über die Firma berichtet (Mercedes friert Investitionen in Deutschland ein und prüft Werksschließungen).
+
+### 3. OLD Republic International Corp
+
+Mit 9,0 % gehört OLD Republic International Corp zu den höchsten Renditen unter den Großfirmen dieser Liste. Für die Cashflow-Deckung fehlen uns Angaben, daher zählt hier vor allem die Rendite. Die Dividende ist in fünf Jahren im Schnitt um 14,7 % pro Jahr gestiegen. Der Börsenwert liegt bei 9,3 Mrd. €.
+
+### 4. Legal & General
+
+Mit 7,2 % gehört Legal & General zu den höchsten Renditen unter den Großfirmen dieser Liste. Die Ausschüttung wird zu 28 % aus dem freien Cashflow gedeckt. Zuletzt haben wir am 18.11.2026 über die Firma berichtet (Legal & General: Non-Executive Director Nilufer Kheraj verlässt das Board). Der Börsenwert liegt bei 21,5 Mrd. €.
+
+### 5. VICI Properties Inc.
+
+Mit 7,2 % gehört VICI Properties Inc. zu den höchsten Renditen unter den Großfirmen dieser Liste. Die Ausschüttung wird zu 74 % aus dem freien Cashflow gedeckt. Die Dividende ist in fünf Jahren im Schnitt um 7,1 % pro Jahr gestiegen. Der Börsenwert liegt bei 24,3 Mrd. €.
+
+### 6. Alexandria Real Estate Equities, Inc.
+
+Mit 6,7 % gehört Alexandria Real Estate Equities, Inc. zu den höchsten Renditen unter den Großfirmen dieser Liste. Die Ausschüttung wird zu 64 % aus dem freien Cashflow gedeckt. Die Dividende ist in fünf Jahren im Schnitt um 2,0 % pro Jahr gestiegen. Der Börsenwert liegt bei 6,7 Mrd. €.
+
+### 7. Bxp, Inc.
+
+Mit 6,4 % gehört Bxp, Inc. zu den höchsten Renditen unter den Großfirmen dieser Liste. Die Ausschüttung wird zu 63 % aus dem freien Cashflow gedeckt. Der Börsenwert liegt bei 9,2 Mrd. €. Der Kurs liegt bei 58,14 €.
+
+### 8. Fidelity National Information Services, Inc.
+
+Mit 6,3 % gehört Fidelity National Information Services, Inc. zu den höchsten Renditen unter den Großfirmen dieser Liste. Die Ausschüttung wird zu 32 % aus dem freien Cashflow gedeckt. Die Dividende ist in fünf Jahren im Schnitt um 2,7 % pro Jahr gestiegen. Zuletzt haben wir am 04.11.2026 über die Firma berichtet (Fidelity National Information Services erzielt im dritten Quartal 2026 bereinigten Gewinn von 1,61 US-Dollar je Aktie).
+
+### 9. Kraft Heinz Co
+
+Mit 6,1 % gehört Kraft Heinz Co zu den höchsten Renditen unter den Großfirmen dieser Liste. Die Ausschüttung wird zu 54 % aus dem freien Cashflow gedeckt. Die Dividende ist in fünf Jahren im Schnitt um 0,0 % pro Jahr gestiegen. Zuletzt haben wir am 21.11.2026 über die Firma berichtet (Kraft Heinz an der NYSE: Der Cashflow sinkt 2027 um ein Drittel, die Dividende bleibt).
+
+### 10. Toho Co.,ltd
+
+Mit 6,0 % gehört Toho Co.,ltd zu den höchsten Renditen unter den Großfirmen dieser Liste. Die Ausschüttung wird zu 31 % aus dem freien Cashflow gedeckt. Die Dividende ist in fünf Jahren im Schnitt um 25,7 % pro Jahr gestiegen. Der Börsenwert liegt bei 8,9 Mrd. €.
 
 ## Drei Fragen vor dem Kauf
 
