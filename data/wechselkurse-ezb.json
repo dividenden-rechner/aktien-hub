@@ -1,19 +1,20 @@
 {
- "stand": "18.11.2026 20:06 (Berlin)",
- "datum_ezb": "2026-11-18",
+ "stand": "26.11.2026 03:41 (Berlin)",
+ "datum_ezb": "2026-11-25",
  "quelle": "EZB Referenzkurse (taeglich, ca. 16 Uhr CET)",
  "je_eur": {
-  "USD": 1.0968,
-  "JPY": 174.85,
-  "KRW": 1461.3,
-  "HKD": 8.6063,
-  "SGD": 1.4144,
-  "CNY": 7.3126,
-  "GBP": 0.8329,
-  "CHF": 0.9243
+  "USD": 1.0935,
+  "JPY": 174.22,
+  "KRW": 1471.19,
+  "HKD": 8.5709,
+  "SGD": 1.4129,
+  "CNY": 7.2999,
+  "GBP": 0.8373,
+  "CHF": 0.9085,
+  "IDR": 20055.72
  },
  "abgeleitet": {
-  "JPY_je_USD": 159.4183,
-  "USD_je_KRW": 0.00075056
+  "JPY_je_USD": 159.3233,
+  "USD_je_KRW": 0.00074328
  }
 }
