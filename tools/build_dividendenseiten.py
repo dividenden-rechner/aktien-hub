@@ -274,6 +274,7 @@ COLS4 = '<colgroup><col class="c1"><col class="c2"><col class="c3"><col class="c
 COLS6 = '<colgroup><col class="c1"><col class="c2"><col class="c3"><col class="c4"><col class="c5"></colgroup>'
 
 PEER_BLOCKS = {}
+FCF_HINWEIS = {}  # firmenspezifische Erklärung zur Ausschüttungsquote auf den Free Cashflow, aus data/dividenden-korrekturen.json (fcf_hinweis)
 
 def peer_block(sym, recs, gruppen):
     """Vergleich in der Peer-Gruppe (wie beim Aktienvergleich): Tabelle mit Rendite, KGV, Ausschüttung der Gruppenmitglieder,
@@ -381,9 +382,11 @@ def seite(r, kopf_links, kopf, fuss, mag, kurs_datum, sec_stand, usd_je_eur, jah
         if r["quote_fcf"] > 1:
             # Über 100 %: meist verzerrt durch Firmenkäufe, Steuer- oder andere Einmalzahlungen, die den Free Cashflow drücken
             wert = "über 300&nbsp;%*" if r["quote_fcf"] > 3 else proz(r["quote_fcf"], 0) + "*"
+            hw = FCF_HINWEIS.get(f["sym"])
             zeilen.append(("Ausschüttungsquote (auf Free Cashflow)", wert,
-                           "Durchschnitt der letzten drei Geschäftsjahre<br>* Über 100&nbsp;% deutet oft auf Sondereffekte hin: Zahlungen für zugekaufte Firmen, "
-                           "Steuernachzahlungen oder andere Einmalzahlungen drücken den Free Cashflow einzelner Jahre. Die laufende Deckung ist dann meist besser, als die Quote zeigt."))
+                           "Durchschnitt der letzten drei Geschäftsjahre<br>* " + (esc(hw) if hw else
+                           "Über 100&nbsp;% deutet oft auf Sondereffekte hin: Zahlungen für zugekaufte Firmen, "
+                           "Steuernachzahlungen oder andere Einmalzahlungen drücken den Free Cashflow einzelner Jahre. Die laufende Deckung ist dann meist besser, als die Quote zeigt.")))
         else:
             zeilen.append(("Ausschüttungsquote (auf Free Cashflow)", proz(r["quote_fcf"], 0), "Durchschnitt der letzten drei Geschäftsjahre"))
     zeilen.append(("Zahlweise", rhythmus, ""))
@@ -851,6 +854,8 @@ def main():
     kl1, k1, f1 = rahmen(2); kl0, k0, f0 = rahmen(1)
     rs, eintraege, hand = [], [], []
     gruppen = lade("data/dividende-peers.json")["gruppen"]
+    FCF_HINWEIS.clear()
+    FCF_HINWEIS.update({k: v["fcf_hinweis"] for k, v in lade("data/dividenden-korrekturen.json").get("firmen", {}).items() if isinstance(v, dict) and v.get("fcf_hinweis")})
     PEER_BLOCKS.clear()
     kz_werte = lade("data/kennzahlen.json").get("werte", {})
     recs = {}
