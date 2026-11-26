@@ -560,9 +560,9 @@ function story(S){
 const EUL=new Set("GB FR DE NL CH ES IT SE NO DK BE FI PL IE AT LU PT GR".split(" ")),ASL=new Set("JP KR HK SG CN TW IN TH MY ID PH VN".split(" "));
 const SCR={
  wl:{t:"Watchlist"},
- typ:{t:"Typische Dividendenaktien",n:"Rendite 2–10 %, Ausschüttungsquote bis 75 %, Dividendenwachstum (5 J.) nicht negativ, Börsenwert ab 10 Mrd. €. Weltweit, sortiert nach Rendite."},
- sp:{t:"S&P 500",n:"Nicht der ganze Index: die 50 Dividendenzahler mit der höchsten Rendite (ab 1 %, Ausschüttungsquote bis 80 %)."},
  ar:{t:"Aristokraten",n:"Mindestens 25 Jahre in Folge erhöhte Dividende (Kings: 50+). Sortiert nach Jahren.",sort:"j"},
+ reit:{t:"REITs",n:"Immobilieninvestmentgesellschaften aus der eigenen REIT-Liste. Sortiert nach Rendite."},
+ bdc:{t:"BDCs",n:"Business Development Companies, also börsennotierte Kreditgeber an den Mittelstand, mit Kennzahlen aus den SEC-Berichten. Sortiert nach Rendite."},
  eu:{t:"Europa",n:"Börsenwert ab 5 Mrd. €, Ausschüttungsquote bis 100 %. Sortiert nach Rendite."},
  na:{t:"Nordamerika",n:"USA und Kanada, Börsenwert ab 10 Mrd. €, Rendite 1–15 %, Ausschüttungsquote bis 100 %. Sortiert nach Rendite."},
  la:{t:"Lateinamerika",n:"Brasilien und Mexiko: Jahreszahlen liegen vor, Kurse bisher nicht, daher keine Rendite. Gelistet sind Firmen mit bekannter Ausschüttungsquote, sortiert danach.",sort:"aus"},
@@ -570,13 +570,15 @@ const SCR={
 };
 let SCRD=null,scrKey=null,scrSort="rendite",scrN=25;
 function scrLoad(){if(SCRD)return SCRD;const j=u=>fetch(u+"?v="+Math.floor(Date.now()/36e5)).then(r=>r.ok?r.json():null).catch(()=>null);
-  return SCRD=Promise.all([kzLoad(),j("../data/universe.json"),j("../data/dividendenseiten.json")]).then(([K,U,D])=>({K:(K&&K.werte)||{},sp:new Set(((U&&U.firmen)||[]).map(f=>f.sym)),ar:Object.fromEntries(((D&&D.firmen)||[]).filter(f=>f.serie&&f.serie.jahre>=25).map(f=>[f.sym,{n:f.name,j:f.serie.jahre}]))}))}
+  return SCRD=Promise.all([kzLoad(),j("../data/universe.json"),j("../data/dividendenseiten.json"),j("../data/reit-kurse-sheet.json")]).then(([K,U,D,R])=>({RE:new Set(Object.keys((R&&R.kurse)||{})),K:(K&&K.werte)||{},sp:new Set(((U&&U.firmen)||[]).map(f=>f.sym)),ar:Object.fromEntries(((D&&D.firmen)||[]).filter(f=>f.serie&&f.serie.jahre>=25).map(f=>[f.sym,{n:f.name,j:f.serie.jahre}]))}))}
 function scrName(n){return n&&n===n.toUpperCase()?n.toLowerCase().replace(/\b[a-zà-ÿ]+/g,w=>w.length<=2?w.toUpperCase():w[0].toUpperCase()+w.slice(1)):n}
 function scrRows(key,D){
   let out=[];
   for(const [s,v] of Object.entries(D.K)){
     const r=v.rendite,a=v.ausschuettung,m=v.boersenwert_eur||0,w=v.div_wachstum_5j;let ok=false;
     if(key==="ar")ok=!!D.ar[s];
+    else if(key==="reit")ok=D.RE.has(s)&&r!=null&&r>0;
+    else if(key==="bdc")ok=!!v.bdc&&r!=null&&r>0;
     else if(key==="la")ok=(v.land==="BR"||v.land==="MX")&&a!=null&&a>0&&a<=100;
     else if(r==null||!(r>0)||r>15)continue;
     else if(key==="typ")ok=r>=2&&r<=10&&a!=null&&a>0&&a<=75&&m>=10e9&&w!=null&&w>=0;
@@ -605,7 +607,7 @@ async function scrShow(key,more){
   const body=rows.slice(0,scrN).map(r=>`<div class="sr"><button class="it scr" data-s="${esc(r.s)}">${img(r.s)}<span class="nm"><b>${esc(r.n)}</b><small>${esc(r.s)}${r.land?" · "+esc(r.land):""}</small></span><span class="v">${pc(r.rendite)}</span><span class="v${key==="la"?"":" k"}">${r.aus==null?"–":num(r.aus,0)+" %"}</span><span class="v">${pc(r.w5)}</span><span class="v${isAr?"":" k"}">${isAr?(r.j==null?"–":r.j):(r.kgv==null?"–":num(r.kgv,1))}</span></button><button class="wlp" data-wl="${esc(r.s)}" data-n="${esc(r.n)}" aria-label="Watchlist umschalten"></button></div>`).join("");
   box.innerHTML=hd+body+(rows.length>scrN?`<p class="wlfoot"><button class="sbtn scrmore" id="scrmore">Mehr anzeigen (${rows.length-scrN} weitere)</button></p>`:"");
   renderWL()}
-$("scrchips").innerHTML=Object.entries(SCR).map(([k,o])=>`<button data-k="${k}" aria-pressed="${k==="wl"}">${o.t}</button>`).join("")+'<span class="sep"></span><a href="../dividende/">Dividenden</a><a href="vergleich/">Vergleichen</a>';
+$("scrchips").innerHTML=Object.entries(SCR).map(([k,o])=>`<button data-k="${k}" aria-pressed="${k==="wl"}">${o.t}</button>`).join("")+'<span class="sep"></span><a href="vergleich/">Vergleichen</a>';
 $("scrchips").addEventListener("click",e=>{const b=e.target.closest("button[data-k]");if(b)scrShow(b.dataset.k)});
 $("scrtab").addEventListener("click",e=>{
   const h=e.target.closest("[data-ss]");if(h){scrSort=h.dataset.ss;scrN=25;scrShow(scrKey);return}

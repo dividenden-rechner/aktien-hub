@@ -392,12 +392,12 @@ def seite(r, kopf_links, kopf, fuss, mag, kurs_datum, sec_stand, usd_je_eur, jah
     zeilen = []
     if rend:
         if r["rendite_basis"] == "aktuell":
-            basis = (f"aktuelle reguläre Dividende ({betrag(r['reg_betrag'])} USD × {f['rhythmus']}) zum Kurs von {de(r['kurs_eur'])} €"
-                     if f["rhythmus"] > 1 else f"aktuelle reguläre Dividende ({betrag(r['reg_betrag'])} USD) zum Kurs von {de(r['kurs_eur'])} €")
+            basis = (f"aktuelle reguläre Dividende ({betrag(r['reg_betrag'])} USD × {f['rhythmus']}) zum Kurs von {kurs_txt(r)}"
+                     if f["rhythmus"] > 1 else f"aktuelle reguläre Dividende ({betrag(r['reg_betrag'])} USD) zum Kurs von {kurs_txt(r)}")
         elif r["rendite_basis"] == "gj_ohne_sonder":
-            basis = f"Dividende des Geschäftsjahres {r['gj_letzt']} ohne Sonderzahlungen zum Kurs von {de(r['kurs_eur'])} €"
+            basis = f"Dividende des Geschäftsjahres {r['gj_letzt']} ohne Sonderzahlungen zum Kurs von {kurs_txt(r)}"
         else:
-            basis = f"Dividende des Geschäftsjahres {r['gj_letzt']} zum Kurs von {de(r['kurs_eur'])} €"
+            basis = f"Dividende des Geschäftsjahres {r['gj_letzt']} zum Kurs von {kurs_txt(r)}"
         zeilen.append(("Dividendenrendite", f"{rend}", basis))
     if r["rendite_sonder"]:
         zeilen.append(("Sonderdividenden (12 Monate)", f"{de(r['sonder_jahr'])} USD",
@@ -586,7 +586,7 @@ a.addEventListener("input",function(){{b.value="";r()}});b.addEventListener("inp
 <body>
 {kopf}
 <main class="wrap"><article>
-<nav class="crumbs" aria-label="Brotkrumen"><a href="../../">Start</a> › <a href="/dividende/">Dividenden</a> › <span aria-current="page">{esc(name)}</span></nav>
+<nav class="crumbs" aria-label="Brotkrumen"><a href="/">Start</a> › <a href="/aktien-hub/">Aktien-Hub</a> › <a href="/aktien-hub/{f['slug']}/">{esc(name)}</a> › <span aria-current="page">Dividende</span></nav>
 <div class="titlerow" style="gap:12px">{logo}<h1>{esc(name)} Dividende</h1></div>
 <p class="meta">Stand: {datum(heute)} · Kurs vom {kurs_d} · Kürzel {esc(f["sym"])}{" · ISIN " + esc(r["isin"]) if r.get("isin") else ""}{" · WKN " + esc(r["wkn"]) if r.get("wkn") else ""}</p>
 <p class="lead">{lead}</p>
