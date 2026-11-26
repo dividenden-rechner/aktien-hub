@@ -324,7 +324,7 @@ def zeile(f, prefix, wert=True):
     v = f["v"]
     def c(x, fmt, vz=False):
         return f'<td class="n" data-v="{x if x is not None else ""}">{fmt(x) if x is not None else "–"}</td>'
-    return (f'<tr><td class="fi" data-v="{esc(f["name"])}"><a href="/aktienhub/{f["slug"]}/">{B.logo_span(f["sym"], f["name"], prefix + "../../")}<span class="nm">{esc(f["name"])}</span></a></td>'
+    return (f'<tr><td class="fi" data-v="{esc(f["name"])}"><a href="/aktien-hub/{f["slug"]}/">{B.logo_span(f["sym"], f["name"], prefix + "../../")}<span class="nm">{esc(f["name"])}</span></a></td>'
             + c(v.get("rendite"), lambda x: B.de(x, 2) + " %") + c(v.get("kgv"), lambda x: B.de(x, 1))
             + c(v.get("ausschuettung"), lambda x: B.de(x, 0) + " %") + "</tr>")
 
@@ -375,7 +375,7 @@ def seitenrahmen(title, desc, url, h1, crumbs, body, kl, k, fu, tiefe, ld=""):
 
 def firmenseite(f, peers, art, news, kl, k, fu, stand):
     v, name, sym = f["v"], f["name"], f["sym"]
-    url = f"aktienhub/{f['slug']}/"
+    url = f"aktien-hub/{f['slug']}/"
     wkn = B.WKN.get(v.get("isin") or "")
     land = LAND.get(f["land"], f["land"])
     wae = v.get("waehrung") or ""
@@ -429,7 +429,7 @@ def firmenseite(f, peers, art, news, kl, k, fu, stand):
         d_html = div_html.replace('href="../', 'href="../../').replace('src="../', 'src="../../')
         d_titel = f"{name} Dividende: Termine, Historie und Rechner | Aktien-Hub"
         d_desc = f"Dividende der {name}-Aktie: Rendite, nächste Termine, Ausschüttungshistorie und Rechner."
-        DIVSEITEN.append((f"aktienhub/{f['slug']}/dividende/", d_titel, d_desc, f["name"], d_html, f["sym"]))
+        DIVSEITEN.append((f"aktien-hub/{f['slug']}/dividende/", d_titel, d_desc, f["name"], d_html, f["sym"]))
         div_html = f'<p><a href="dividende/">Dividenden-Profil: Termine, Historie und Rechner →</a></p>'
     if v.get("ausschuettung") is not None:
         q = v["ausschuettung"]
