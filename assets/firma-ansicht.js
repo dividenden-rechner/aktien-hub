@@ -39,27 +39,26 @@ function kzTabelle(K){
   const kgv=K.kgv!=null?x(K.kgv):verlust?'<span class="neg">negativ</span>':"–";
   const reit=K.sektor==="Real Estate";
   const B=[
-   ["Bewertung",[["KGV",kgv,verlust?"Verlust im letzten Geschäftsjahr, KGV nicht sinnvoll":"Kurs / Gewinn je Aktie"],["KBV",x(K.kbv,2),"Börsenwert / Eigenkapital"],["KUV",x(K.kuv,2),"Börsenwert / Umsatz"],
-     ["Kurs/Cashflow",x(K.kcv),"Börsenwert / operativer Cashflow"],["Kurs/freier Cashflow",x(K.kfcf),"Börsenwert / freier Cashflow"],["EV/EBITDA",x(K.ev_ebitda),"Unternehmenswert / EBITDA"],
-     ["EV/Umsatz",x(K.ev_umsatz,2),"Unternehmenswert / Umsatz"],["PEG",x(K.peg,2),"KGV / Gewinnwachstum je Aktie (5 J.)"],["FCF-Rendite",pc(K.fcf_rendite,2),"Freier Cashflow / Börsenwert"]]],
+   ["Bewertung",[["KGV",kgv,verlust?"Verlust im letzten Geschäftsjahr, KGV nicht sinnvoll":"Kurs / Gewinn je Aktie"],...(K.prognose&&K.prognose.kgv_forward!=null?[["Forward-KGV",x(K.prognose.kgv_forward),"Kurs / erwarteter Gewinn je Aktie für "+esc(K.prognose.eps_jahr)]]:[]),["KBV",x(K.kbv,2),"Börsenwert / Eigenkapital"],["KUV",x(K.kuv,2),"Börsenwert / Umsatz"],
+     ["Kurs / Cashflow",x(K.kcv),"Börsenwert / operativer Cashflow"],["Kurs / freier Cashflow",x(K.kfcf),"Börsenwert / freier Cashflow"],["EV / EBITDA",x(K.ev_ebitda),"Unternehmenswert / EBITDA"],
+     ["EV / Umsatz",x(K.ev_umsatz,2),"Unternehmenswert / Umsatz"],["PEG",x(K.peg,2),"KGV / Gewinnwachstum je Aktie (5 J.)"],["FCF-Rendite",pc(K.fcf_rendite,2),"Freier Cashflow / Börsenwert"]]],
    ["Dividende",[["Dividendenrendite",K.dividende_basis==="ausgesetzt"?"ausgesetzt":pc(K.rendite,2),K.dividende_basis==="ausgesetzt"?esc(K.dividende_hinweis||"keine laufende Dividende"):`${K.dividende_basis==="aktuell"?"Aktuelle reguläre Dividende aufs Jahr gerechnet: ":"Dividende "}${x(K.dividende,2)} ${esc(K.waehrung)} je Aktie${K.dividende_berechnet?" (nachgerechnet)":""}${K.dividende_hinweis?" · "+esc(K.dividende_hinweis):""}`],
      ...(K.dividende_sonder?[["Sonderdividenden (12 Monate)",x(K.dividende_sonder,2)+" "+esc(K.waehrung),`zusätzlich ${pc(K.rendite_sonder,2)} Rendite, in der Dividendenrendite nicht enthalten`]]:[]),
      ["Ausschüttungsquote",verlust&&K.dividende?'<span class="neg">über Gewinn</span>':pc(K.ausschuettung,0),"Dividende / Gewinn je Aktie"],["Ausschüttung / freier Cashflow",pc(K.fcf_ausschuettung,0)+(K.fcf_ausschuettung>100?"*":""),"Gezahlte Dividenden / freier Cashflow"+(K.fcf_ausschuettung>100?"<br>* Über 100 % deutet oft auf Sondereffekte hin, etwa Zahlungen für zugekaufte Firmen, Steuernachzahlungen oder andere Einmalzahlungen.":"")],
-     ["Dividendenwachstum",`${pc(K.div_wachstum_1j)} / ${pc(K.div_wachstum_5j)} / ${pc(K.div_wachstum_10j)}`,"pro Jahr über 1 / 5 / 10 Jahre"],
+     ["Dividendenwachstum",`1 Jahr: ${pc(K.div_wachstum_1j)}<br>5 Jahre: ${pc(K.div_wachstum_5j)}<br>10 Jahre: ${pc(K.div_wachstum_10j)}`,"pro Jahr"],
      ["Erhöhungen in Folge",K.dividendenserie==null?"–":K.dividendenserie>=99?"9+ Jahre":K.dividendenserie+" Jahre","innerhalb der letzten zehn Jahre"]]],
    ["Profitabilität",[["Bruttomarge",pc(K.bruttomarge),"Bruttogewinn / Umsatz"],["Operative Marge",pc(K.operative_marge),"Operatives Ergebnis / Umsatz"+(K.ebit_berechnet?" (nachgerechnet)":"")],
      ["EBITDA-Marge",pc(K.ebitda_marge),"EBITDA / Umsatz"],["Nettomarge",pc(K.nettomarge),"Nettogewinn / Umsatz"],["Eigenkapitalrendite (ROE)",pc(K.roe),"Nettogewinn / Eigenkapital"],
      ["ROCE",pc(K.roce),"Operatives Ergebnis / (Bilanzsumme − kurzfristige Verbindlichkeiten)"],["ROIC",pc(K.roic),"Operatives Ergebnis nach 21 % Steuern / (Schulden + Eigenkapital)"]]],
-   ["Bilanz",[["Nettoschulden/EBITDA",K.nettoschulden_ebitda!=null&&K.nettoschulden_ebitda<0?"Netto-Cash":xx(K.nettoschulden_ebitda),"In wie vielen Jahren das EBITDA die Nettoschulden tilgen würde"],
-     ["Zinsdeckung",xx(K.zinsdeckung),"Operatives Ergebnis / Zinsaufwand"],["Schulden/Eigenkapital",x(K.schulden_ek,2),"Langfristige Schulden / Eigenkapital"],
+   ["Bilanz",[["Nettoschulden / EBITDA",K.nettoschulden_ebitda!=null&&K.nettoschulden_ebitda<0?"Netto-Cash":xx(K.nettoschulden_ebitda),"In wie vielen Jahren das EBITDA die Nettoschulden tilgen würde"],
+     ["Zinsdeckung",xx(K.zinsdeckung),"Operatives Ergebnis / Zinsaufwand"],["Schulden / Eigenkapital",x(K.schulden_ek,2),"Langfristige Schulden / Eigenkapital"],
      ["Current Ratio",x(K.current_ratio,2),"Umlaufvermögen / kurzfristige Verbindlichkeiten"]]],
-   ["Wachstum",[["Umsatz",`${pc(K.umsatz_wachstum)} / ${pc(K.umsatz_wachstum_5j)}`,"letztes Jahr / pro Jahr über 5 Jahre"],["Gewinn",`${pc(K.gewinn_wachstum)} / ${pc(K.gewinn_wachstum_5j)}`,"letztes Jahr / pro Jahr über 5 Jahre"],
+   ["Wachstum",[["Umsatz",`letztes Jahr: ${pc(K.umsatz_wachstum)}<br>pro Jahr, 5 Jahre: ${pc(K.umsatz_wachstum_5j)}`,""],["Gewinn",`letztes Jahr: ${pc(K.gewinn_wachstum)}<br>pro Jahr, 5 Jahre: ${pc(K.gewinn_wachstum_5j)}`,""],
      ["Gewinn je Aktie",pc(K.eps_wachstum),"letztes Jahr"],["Freier Cashflow",pc(K.fcf_wachstum),"letztes Jahr"]]],
    ["Qualität",[["Piotroski-Score",K.piotroski==null?"–":K.piotroski+" von 9","Neun Prüfungen zu Gewinn, Cashflow, Schulden und Effizienz; ab 7 gilt als stark"],
      ["Altman-Z",x(K.altman_z,2),"Insolvenzrisiko-Kennzahl; über 3 gilt als sicher, unter 1,8 als gefährdet (nicht für Banken)"]]]];
   const F=K.prognose;
   if(F){const R=[];
-    if(F.kgv_forward!=null)R.push(["Forward-KGV",x(F.kgv_forward),`Kurs / ${F.eps_von===F.eps_bis?x(F.eps_von,2):x(F.eps_von,2)+" bis "+x(F.eps_bis,2)} ${esc(K.waehrung)} Gewinn je Aktie (${esc(F.eps_art)}) für ${esc(F.eps_jahr)}${F.eps_veraendert&&F.eps_veraendert!=="unklar"?", Prognose "+esc(F.eps_veraendert):""}`]);
     if(F.eps_wachstum_erwartet!=null)R.push(["Erwartetes Gewinnwachstum",pc(F.eps_wachstum_erwartet),"Mitte der Prognose gegenüber dem letzten Geschäftsjahr"]);
     if(F.umsatz_wachstum_erwartet!=null)R.push(["Erwartetes Umsatzwachstum",pc(F.umsatz_wachstum_erwartet),"Umsatzprognose für "+esc(F.umsatz_jahr)+" gegenüber dem letzten Geschäftsjahr"]);
     else if(F.umsatz_wachstum_von!=null)R.push(["Erwartetes Umsatzwachstum",F.umsatz_wachstum_von===F.umsatz_wachstum_bis?pc(F.umsatz_wachstum_von):`${num(F.umsatz_wachstum_von,1)} bis ${num(F.umsatz_wachstum_bis,1)} %`,"Prognose für "+esc(F.umsatz_jahr)]);
@@ -625,11 +624,12 @@ function faStart(sym, daten){
   return firmaAnsicht(key,d.ceo||null);
 }
 async function faHistorie(sym){
-  if(typeof FA_NUR_EIGEN!=="undefined"&&FA_NUR_EIGEN===false)return [];
+  /* Kursverlauf in Euro: eigenes Archiv der Deutschen Börse, davor Financial Modeling Prep (tools/firma_kurse.py) */
   try{
-    const j=await fetch(FA_ROOT+"data/kurse/historie/"+encodeURIComponent(String(sym).toUpperCase())+".json?v="+Math.floor(Date.now()/864e5)).then(r=>r.ok?r.json():null);
+    const k=String(sym).toUpperCase().replace(/\//g,"_");
+    const j=await fetch(FA_ROOT+"data/firma-kurse/"+encodeURIComponent(k)+".json?v="+Math.floor(Date.now()/36e5)).then(r=>r.ok?r.json():null);
     if(!j||!Array.isArray(j.kurse))return [];
-    return j.kurse.map(r=>({date:r[0],price:r[4]})).filter(x=>x.date&&isFinite(+x.price));
+    return j.kurse.map(r=>({date:r[0],price:r[1]})).filter(x=>x.date&&isFinite(+x.price));
   }catch(e){return []}
 }
 async function firmaAnsicht(sym,ceo){
@@ -667,13 +667,13 @@ async function firmaAnsicht(sym,ceo){
   <div class="price">${num(price)} ${esc(p.currency||"")}<small class="${sg(chg)}">${chg==null?"":(chg>0?"+":"")+num(chg)+" % heute"}</small></div></div>
   ${steckbrief(sym,p,r,m,inc,cf,KZ,SD)}
   ${pr.length>1?KC.html:""}
-  ${kzTabelle(KZ)}
   <div class="grid">
    ${bars("Dividende je Aktie",divNote,divs,"var(--c-gold)",v=>num(v))}
    ${combo(inc,cur)}
    ${margins(inc)}
    ${fcfChart(cf,cur)}
   </div>
+  ${kzTabelle(KZ)}
   ${secCharts(SD,cur,epsChart(inc,cur))}
   <div id="fin"></div>
   <div id="nr"></div>
