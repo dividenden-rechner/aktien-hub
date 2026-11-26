@@ -21,6 +21,8 @@ KRIT = [
     ("schulden", "Nettoschulden zum EBITDA", "nettoschulden_ebitda", "×", (1, 2, 3), False),
     ("bewertung", "Rendite des freien Cashflows", "fcf_rendite", "%", (6, 4, 2), True),
 ]
+HOCH_RENDITE = 4.0
+SCHW_DIV_HOCH = (6, 3, 0)  # 3 Punkte ab 6 %, 2 ab 3 %, 1 ab 0 %
 # REITs: FFO statt freiem Cashflow
 REIT_ERSATZ = {"deckung": "ffo_ausschuettung"}
 
@@ -62,6 +64,9 @@ def bewerte(t, k, reit=False):
     for key, titel, feld, einheit, schw, hoch in KRIT:
         f = REIT_ERSATZ.get(key, feld) if reit else feld
         w = k.get(f)
+        # Hohe Dividende (ab 4 % Rendite): niedrigere Schwellen beim Dividendenwachstum
+        if key == "divwachstum" and (k.get("rendite") or 0) >= HOCH_RENDITE:
+            schw = SCHW_DIV_HOCH
         out[key] = {"wert": w, "punkte": punkte(w, schw, hoch, key), "feld": f}
     return out
 
@@ -182,6 +187,7 @@ table.rg{{width:100%;border-collapse:collapse;font-size:.88rem;margin:1rem 0}} t
 <div class="rg-wrap"><table class="rg"><thead><tr><th>Kriterium</th><th>3 Punkte</th><th>2 Punkte</th><th>1 Punkt</th><th>0 Punkte</th></tr></thead><tbody>
 {"".join(regeln)}
 </tbody></table></div>
+<p>Ausnahme beim Dividendenwachstum: Liegt die Dividendenrendite bei mindestens 4 %, gibt es 3 Punkte schon ab 6 % Wachstum, 2 Punkte ab 3 % und 1 Punkt ab 0 %. Eine hohe Dividende muss nicht so schnell wachsen wie eine niedrige.</p>
 <p>Wachstumswerte sind jährliche Durchschnitte über fünf Geschäftsjahre. Die Dividendenrendite bezieht sich auf die aktuelle Jahresdividende und den letzten Xetra-Kurs. Mehr zu den einzelnen Kennzahlen steht in unserer <a href="../dividendenaktie-pruefen/">Checkliste für zehn Minuten</a> und bei den <a href="../kennzahlen-nach-branche/">Kennzahlen nach Branche</a>.</p>
 <p class="meta">Die Punkte ordnen Zahlen nach festen Regeln ein. Sie sind keine Kaufempfehlung und keine Anlageberatung.</p>
 </article></main>

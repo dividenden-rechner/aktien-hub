@@ -101,7 +101,7 @@
    "datum": "2026-11-26",
    "seite": "dividende/altria/",
    "video": null,
-   "summe": 11,
+   "summe": 12,
    "kriterien": {
     "umsatz": {
      "wert": -2.3,
@@ -120,7 +120,7 @@
     },
     "divwachstum": {
      "wert": 4.1,
-     "punkte": 1,
+     "punkte": 2,
      "feld": "div_wachstum_5j"
     },
     "deckung": {
