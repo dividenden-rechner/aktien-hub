@@ -36,6 +36,10 @@ function kzTabelle(K){
   if(!K)return "";
   const pc=(v,d=1)=>v==null?"–":num(v,d)+" %",x=(v,d=1)=>v==null?"–":num(v,d),xx=(v,d=1)=>v==null?"–":num(v,d)+"×";
   const verlust=K.eps!=null&&K.eps<=0;
+  const F0=K.prognose||{};
+  const quelleF=F0.quelle?`<a href="${esc(F0.quelle)}" target="_blank" rel="noopener">Ergebnismeldung</a> vom ${new Date(F0.datum).toLocaleDateString("de-DE")}, eigene Prognose des Unternehmens`:"";
+  const wUmsatz=`letztes Jahr: ${pc(K.umsatz_wachstum)}<br>pro Jahr, 5 Jahre: ${pc(K.umsatz_wachstum_5j)}`+(F0.umsatz_wachstum_erwartet!=null?`<br>${esc(F0.umsatz_jahr||"Prognose")} erwartet: ${pc(F0.umsatz_wachstum_erwartet)}`:"");
+  const wGewinn=`letztes Jahr: ${pc(K.gewinn_wachstum)}<br>pro Jahr, 5 Jahre: ${pc(K.gewinn_wachstum_5j)}`+(F0.eps_wachstum_erwartet!=null?`<br>${esc(F0.eps_jahr||"Prognose")} erwartet: ${pc(F0.eps_wachstum_erwartet)}`:"");
   const kgv=K.kgv!=null?x(K.kgv):verlust?'<span class="neg">negativ</span>':"–";
   const reit=K.sektor==="Real Estate";
   const B=[
@@ -55,17 +59,11 @@ function kzTabelle(K){
    ["Bilanz",[["Nettoschulden / EBITDA",K.nettoschulden_ebitda!=null&&K.nettoschulden_ebitda<0?"Netto-Cash":xx(K.nettoschulden_ebitda),"In wie vielen Jahren das EBITDA die Nettoschulden tilgen würde"],
      ["Zinsdeckung",xx(K.zinsdeckung),"Operatives Ergebnis / Zinsaufwand"],["Schulden / Eigenkapital",x(K.schulden_ek,2),"Langfristige Schulden / Eigenkapital"],
      ["Current Ratio",x(K.current_ratio,2),"Umlaufvermögen / kurzfristige Verbindlichkeiten"]]],
-   ["Wachstum",[["Umsatz",`letztes Jahr: ${pc(K.umsatz_wachstum)}<br>pro Jahr, 5 Jahre: ${pc(K.umsatz_wachstum_5j)}`,""],["Gewinn",`letztes Jahr: ${pc(K.gewinn_wachstum)}<br>pro Jahr, 5 Jahre: ${pc(K.gewinn_wachstum_5j)}`,""],
+   ["Wachstum",[["Umsatz",wUmsatz,quelleF],["Gewinn",wGewinn,""],
      ["Gewinn je Aktie",pc(K.eps_wachstum),"letztes Jahr"],["Freier Cashflow",pc(K.fcf_wachstum),"letztes Jahr"]]],
    ["Qualität",[["Piotroski-Score",K.piotroski==null?"–":K.piotroski+" von 9","Neun Prüfungen zu Gewinn, Cashflow, Schulden und Effizienz; ab 7 gilt als stark"+(K.piotroski==null?"":`<span class="zb"><span class="zbg segs"><i class="fill" style="width:${Math.min(100,Math.max(0,K.piotroski/9*100))}%"></i></span><small><span>0</span><span>9</span></small></span>`)],
      ["Altman-Z",x(K.altman_z,2),"Insolvenzrisiko-Kennzahl; über 3 gilt als sicher, unter 1,8 als gefährdet (nicht für Banken)"+(K.altman_z==null?"":`<span class="zb"><span class="zbg"><i class="mk" style="left:${Math.min(100,Math.max(0,K.altman_z/6*100))}%"></i></span><small><span>0</span><span>1,8</span><span>3</span><span>6+</span></small></span>`)]]]];
-  const F=K.prognose;
-  if(F){const R=[];
-    if(F.eps_wachstum_erwartet!=null)R.push(["Erwartetes Gewinnwachstum",pc(F.eps_wachstum_erwartet),"Mitte der Prognose gegenüber dem letzten Geschäftsjahr"]);
-    if(F.umsatz_wachstum_erwartet!=null)R.push(["Erwartetes Umsatzwachstum",pc(F.umsatz_wachstum_erwartet),"Umsatzprognose für "+esc(F.umsatz_jahr)+" gegenüber dem letzten Geschäftsjahr"]);
-    else if(F.umsatz_wachstum_von!=null)R.push(["Erwartetes Umsatzwachstum",F.umsatz_wachstum_von===F.umsatz_wachstum_bis?pc(F.umsatz_wachstum_von):`${num(F.umsatz_wachstum_von,1)} bis ${num(F.umsatz_wachstum_bis,1)} %`,"Prognose für "+esc(F.umsatz_jahr)]);
-    if(F.rendite_erwartet!=null)R.push(["Erwartete Dividendenrendite",pc(F.rendite_erwartet,2),`Angekündigte Dividende ${x(F.dividende_erwartet,2)} ${esc(K.waehrung)} für ${esc(F.dividende_jahr)}`]);
-    if(R.length)B.splice(1,0,[`Ausblick des Unternehmens`,R.concat([["Quelle",`<a href="${esc(F.quelle)}" target="_blank" rel="noopener">Ergebnismeldung</a>`,"vom "+new Date(F.datum).toLocaleDateString("de-DE")+"; eigene Prognose des Unternehmens, keine Analystenschätzung"]])]);}
+  if(F0.rendite_erwartet!=null){const di=B.findIndex(c=>c[0]==="Dividende");if(di>=0)B[di][1].splice(2,0,["Erwartete Dividendenrendite",pc(F0.rendite_erwartet,2),`Angekündigte Dividende ${x(F0.dividende_erwartet,2)} ${esc(K.waehrung)} für ${esc(F0.dividende_jahr)}`]);}
   const D=K.bdc;
   if(D){B.splice(0,B.length);B.push(["BDC (Quartal bis "+new Date(D.quartal).toLocaleDateString("de-DE")+")",[
     ["NAV je Aktie",x(D.nav,2)+" USD",D.nav_1j!=null?"Veränderung zum Vorjahresquartal "+(D.nav_1j>0?"+":"")+num(D.nav_1j,1)+" %":"Nettovermögenswert laut Quartalsmeldung"],
@@ -678,8 +676,9 @@ async function firmaAnsicht(sym,ceo){
   const img2=ceo?`<figure class="fa-ceo"><img src="${esc(FA_ROOT+ceo.datei)}" alt="${esc(ceo.name)}" loading="lazy"><figcaption><b>${esc(ceo.name)}</b><br>${esc(ceo.rolle||"")}</figcaption></figure>`:"";
   hub.innerHTML=`
   <div class="head"><div><small class="sub">${esc(["Stand: "+new Date().toLocaleDateString("de-DE",{day:"numeric",month:"long",year:"numeric"}),"Kürzel "+sym,p.sector].filter(Boolean).join(" · "))}</small></div>
-  <div class="price">${num(price)} ${esc(p.currency||"")}<small class="${sg(chg)}">${chg==null?"":(chg>0?"+":"")+num(chg)+" % heute"}</small></div></div>
+  </div>
   ${steckbrief(sym,p,r,m,inc,cf,KZ,SD)}
+  <p class="dlink"><a href="dividende/">Alles zur Dividende: Termine, Historie und Rechner →</a></p>
   ${pr.length>1?KC.html:""}
   <div class="grid">
    ${bars("Dividende je Aktie",divNote,divs,"var(--c-gold)",v=>num(v))}
@@ -693,6 +692,7 @@ async function firmaAnsicht(sym,ceo){
   <div id="nr"></div>
   <div id="nw"></div>
   ${img2}`;
+  const tr=document.querySelector(".titlerow");if(tr&&!tr.querySelector(".price")){tr.insertAdjacentHTML("beforeend",`<div class="price">${num(price)} ${esc(p.currency||"")}<small class="${sg(chg)}">${chg==null?"":(chg>0?"+":"")+num(chg)+" % heute"}</small></div>`)}
   const st=$("start");if(st)st.hidden=true;
   hub.hidden=false;msg.textContent="";
   alignCharts();

@@ -236,7 +236,10 @@ article:has(.fa-view){max-width:none}
 .zb small{display:flex;justify-content:space-between;font-size:11px;color:#5d6b78;margin-top:3px}
 .kzk tbody tr{display:grid;grid-template-columns:minmax(0,1fr) auto;column-gap:10px;align-items:baseline}
 .kzk td{border-bottom:0}
-.kzk td.k{overflow-wrap:break-word}
+.kzk td.k{overflow-wrap:normal;word-break:normal;font-size:13.5px}
 .kzk td.v{white-space:nowrap;text-align:right;font-size:14px;padding-left:0}
 .kzk td.d{grid-column:1 / -1;padding:0 0 9px;font-size:12px;line-height:1.4;color:#5d6b78;overflow-wrap:break-word}
 .kzk tr{border-bottom:1px solid #e3eee0;padding:6px 0}
+.titlerow{flex-wrap:nowrap;align-items:center}
+.titlerow .price{margin-left:14px;text-align:left;align-self:center}
+.dlink{margin:14px 0 0}.dlink a{font-weight:600}
