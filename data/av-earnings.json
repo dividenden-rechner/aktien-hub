@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-25 16:00 UTC",
+ "updated": "2026-11-26 04:21 UTC",
  "quelle": "Alpha Vantage",
  "items": [
   {
@@ -1098,7 +1098,7 @@
    "eps_n": 7,
    "rev_est": 1190866710.0,
    "rev_n": 7,
-   "est_stand": "2026-11-25"
+   "est_stand": "2026-11-26"
   },
   {
    "sym": "CRWD",
@@ -1111,7 +1111,7 @@
    "eps_n": 45,
    "rev_est": 1528559430.0,
    "rev_n": 43,
-   "est_stand": "2026-11-25"
+   "est_stand": "2026-11-26"
   },
   {
    "sym": "MRVL",
@@ -1124,7 +1124,7 @@
    "eps_n": 32,
    "rev_est": 3152214940.0,
    "rev_n": 31,
-   "est_stand": "2026-11-25"
+   "est_stand": "2026-11-26"
   },
   {
    "sym": "NTAP",
@@ -1137,7 +1137,20 @@
    "eps_n": 19,
    "rev_est": 2108285380.0,
    "rev_n": 17,
-   "est_stand": "2026-11-25"
+   "est_stand": "2026-11-26"
+  },
+  {
+   "sym": "TCOM",
+   "datum": "2026-12-01",
+   "eps_est": 8.2186,
+   "name": "TRIP.COM GROUP LIMITED",
+   "fiscal": "2026-09-30",
+   "cur": "USD",
+   "zeit": "nach",
+   "eps_n": 15,
+   "rev_est": 18927296580.0,
+   "rev_n": 16,
+   "est_stand": "2026-11-26"
   },
   {
    "sym": "CRM",
@@ -1150,7 +1163,7 @@
    "eps_n": 42,
    "rev_est": 11462305880.0,
    "rev_n": 40,
-   "est_stand": "2026-11-25"
+   "est_stand": "2026-11-26"
   },
   {
    "sym": "COO",
@@ -1163,7 +1176,7 @@
    "eps_n": 16,
    "rev_est": 1067935900.0,
    "rev_n": 15,
-   "est_stand": "2026-11-25"
+   "est_stand": "2026-11-26"
   },
   {
    "sym": "DG",
@@ -1176,7 +1189,7 @@
    "eps_n": 26,
    "rev_est": 11138118020.0,
    "rev_n": 24,
-   "est_stand": "2026-11-25"
+   "est_stand": "2026-11-26"
   },
   {
    "sym": "HRL",
@@ -1189,7 +1202,7 @@
    "eps_n": 8,
    "rev_est": 3141094950.0,
    "rev_n": 6,
-   "est_stand": "2026-11-25"
+   "est_stand": "2026-11-26"
   },
   {
    "sym": "KR",
@@ -1222,7 +1235,7 @@
    "eps_n": 25,
    "rev_est": 935160110.0,
    "rev_n": 24,
-   "est_stand": "2026-11-25"
+   "est_stand": "2026-11-26"
   },
   {
    "sym": "AZO",
@@ -1273,6 +1286,36 @@
    "fiscal": "2026-10-31",
    "cur": "USD",
    "zeit": "nach"
+  },
+  {
+   "sym": "CIEN",
+   "datum": "2026-12-10",
+   "eps_est": 1.77,
+   "eps_src": "kalender",
+   "name": "CIENA CORPORATION",
+   "fiscal": "2026-10-31",
+   "cur": "USD",
+   "zeit": "vor"
+  },
+  {
+   "sym": "COST",
+   "datum": "2026-12-10",
+   "eps_est": 4.89,
+   "eps_src": "kalender",
+   "name": "COSTCO WHOLESALE CORPORATION",
+   "fiscal": "2026-11-30",
+   "cur": "USD",
+   "zeit": "nach"
+  },
+  {
+   "sym": "LULU",
+   "datum": "2026-12-10",
+   "eps_est": 0.98,
+   "eps_src": "kalender",
+   "name": "LULULEMON ATHLETICA INCORPORATED",
+   "fiscal": "2026-10-31",
+   "cur": "USD",
+   "zeit": ""
   }
  ]
 }
