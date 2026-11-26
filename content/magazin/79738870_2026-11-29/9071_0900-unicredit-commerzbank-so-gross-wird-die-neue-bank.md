@@ -17,7 +17,7 @@ image_credit: "Gerda Arendt, CC0"
 image_source: "https://commons.wikimedia.org/wiki/File:Commerzbank_Tower,_Frankfurt.jpg"
 ---
 !!! kurz "Kurz gesagt"
-    **Größe:** Börsenwert zusammen rund 165 Milliarden Euro, Bilanzsumme von mehr als 1.300 Milliarden Euro
+    **Größe:** Börsenwert zusammen rund 165 Milliarden Euro, Bilanzsumme von rund 1,5 Billionen Euro, mehr als Deutsche Bank und UBS
 
     **Gewinn:** 12,1 Milliarden Euro in neun Monaten, davon 9,4 Milliarden bei UniCredit und 2,7 Milliarden bei der Commerzbank
 
@@ -25,11 +25,11 @@ image_source: "https://commons.wikimedia.org/wiki/File:Commerzbank_Tower,_Frankf
 
     **Dividende:** bei beiden Banken gedeckt, UniCredit plant rund 30 Milliarden Euro Ausschüttung für 2026 bis 2028
 
-Wenn UniCredit in der ersten Dezemberwoche die Commerzbank-Aktien aus dem Übernahmeangebot übernimmt, steigt die Beteiligung von 27,9 auf rund 46,3 % des Kapitals, mit Derivaten kommt Andrea Orcel auf knapp 50 %. Aus zwei Banken wird eine Gruppe, die in zwei der größten Volkswirtschaften der Eurozone sitzt und mehr als 1.300 Milliarden Euro Vermögenswerte bilanziert. Das reicht für eine bedeutende Rolle in Europa. Unter den größten Banken der Welt steht sie damit noch nicht an der Spitze, in einer Rangliste nach Bilanzsumme käme sie nach Einschätzung von Beobachtern vielleicht unter die ersten zwanzig.
+Wenn UniCredit in der ersten Dezemberwoche die Commerzbank-Aktien aus dem Übernahmeangebot übernimmt, steigt die Beteiligung von 27,9 auf rund 46,3 % des Kapitals, mit Derivaten kommt Andrea Orcel auf knapp 50 %. Aus zwei Banken wird eine Gruppe, die in zwei der größten Volkswirtschaften der Eurozone sitzt und rund 1,5 Billionen Euro Vermögenswerte bilanziert. Das ist mehr als bei der Deutschen Bank oder der UBS, an die Spitze Europas reicht es aber nicht.
 
 ## Die Größenordnung
 
-UniCredit kommt allein auf eine Bilanzsumme von gut 900 Milliarden Euro. Für die Commerzbank bleiben rechnerisch rund 400 Milliarden Euro. An der Börse zeigt sich das Gefälle deutlicher: UniCredit ist mit 126 Milliarden Euro gut dreimal so viel wert wie die Commerzbank mit 39 Milliarden Euro.
+UniCredit kommt allein auf eine Bilanzsumme von gut 900 Milliarden Euro. Die Commerzbank bringt zum Jahresende 2025 umgerechnet knapp 600 Milliarden Euro mit (693 Milliarden US-Dollar). Zusammen sind das rund 1,5 Billionen Euro, mehr als die Deutsche Bank (1.686 Milliarden US-Dollar) und die UBS (1.617 Milliarden US-Dollar) einzeln haben, aber nur gut halb so viel wie BNP Paribas, HSBC oder Crédit Agricole. An der Börse zeigt sich das Gefälle deutlicher: UniCredit ist mit 126 Milliarden Euro gut dreimal so viel wert wie die Commerzbank mit 39 Milliarden Euro.
 
 | Kennzahl | UniCredit | Commerzbank | Zusammen |
 |---|---|---|---|
@@ -78,6 +78,7 @@ Vorangegangene Berichte: [Die Genehmigungen und die Hauptversammlung](/news/unic
 - [Finimize: mBank im dritten Quartal](https://finimize.com/content/commerzbanks-mbank-gets-a-q3-profit-lift-from-loan-growth)
 - [Forsal: größte Banken in Polen (gesponserter Beitrag, Stand April 2026)](https://forsal.pl/finanse/artykuly/11233916,najwieksze-banki-w-polsce---jakie-sa.html)
 - [ZDFheute: Was eine Übernahme bedeuten würde](https://www.zdfheute.de/wirtschaft/unternehmen/unicredit-commerzbank-angebot-uebernahme-100.html)
+- [The Global Banker: World's 100 largest banks 2026](https://www.theglobalbanker.com/rankings/)
 - [Wikipedia: UniCredit](https://en.wikipedia.org/wiki/UniCredit)
 - Börsendaten: Xetra-Schlusskurse vom 25.11.2026 und Hub-Daten
 
