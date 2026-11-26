@@ -302,6 +302,50 @@ def peer_block(sym, recs, gruppen):
             f'{tabelle}'
             f'<p><a href="/dividende/aristokraten/">Alle Dividendenaristokraten und Dividend Kings im Vergleich</a></p>')
 
+
+def faq_dynamisch(r, name):
+    """Fragen und Antworten, die sich aus den Kennzahlen des Firmen-Hubs ergeben. Eine Frage erscheint nur, wenn die Daten dafuer vorliegen."""
+    out = []
+    def z(v, n=1):
+        return de(v, n) + " %"
+    if r.get("zahlmonate"):
+        out.append((f"In welchen Monaten zahlt {name} Dividende?",
+                    f"{name} zahlt die Dividende {r.get('zahlweise') or 'regelmäßig'}, und zwar in den Monaten {r['zahlmonate']}."))
+    if r.get("div_wachstum_5j") is not None or r.get("div_wachstum_10j") is not None:
+        teile = []
+        if r.get("div_wachstum_5j") is not None:
+            teile.append(f"in den vergangenen fünf Jahren im Schnitt um {z(r['div_wachstum_5j'])} pro Jahr")
+        if r.get("div_wachstum_10j") is not None:
+            teile.append(f"in den vergangenen zehn Jahren um {z(r['div_wachstum_10j'])} pro Jahr")
+        out.append((f"Wie ist die Dividende von {name} Jahr für Jahr gestiegen?",
+                    f"Die Dividende je Aktie wuchs " + " und ".join(teile) + "."))
+    if r.get("fcf_ausschuettung") is not None:
+        q = r["fcf_ausschuettung"]
+        if q < 60:
+            bewertung = "Das ist gut gedeckt, der Cashflow lässt noch viel Spielraum."
+        elif q <= 90:
+            bewertung = "Das ist solide, aber der Puffer ist überschaubar."
+        else:
+            bewertung = "Das ist eng, der Cashflow reicht für die Dividende kaum über."
+        out.append((f"Ist die Dividende von {name} sicher?",
+                    f"Gemessen am freien Cashflow flossen im letzten Geschäftsjahr rund {z(q, 0)} in die Dividende. {bewertung}"
+                    + (f" Der Gewinn je Aktie hat sich zuletzt um {z(r['gewinn_wachstum'])} verändert." if r.get("gewinn_wachstum") is not None else "")))
+    if r.get("umsatz_wachstum") is not None or r.get("gewinn_wachstum") is not None:
+        teile = []
+        if r.get("umsatz_wachstum") is not None:
+            teile.append(f"Der Umsatz veränderte sich zuletzt um {z(r['umsatz_wachstum'])}")
+        if r.get("gewinn_wachstum") is not None:
+            teile.append(f"der Gewinn um {z(r['gewinn_wachstum'])}")
+        out.append((f"Wächst das Geschäft von {name}?", ", ".join(teile[:1]) + (" und " + teile[1] if len(teile) > 1 else "") + ". Grundlage sind die Zahlen des letzten Geschäftsjahres gegenüber dem Vorjahr."))
+    if r.get("rendite") is not None and r.get("div_wachstum_5j") is not None:
+        out.append((f"Wie lukrativ ist die Dividende von {name}?",
+                    f"Die Dividendenrendite liegt beim aktuellen Kurs bei rund {proz(r['rendite'], 1)}. Kommt das durchschnittliche Dividendenwachstum der letzten fünf Jahre von {z(r['div_wachstum_5j'])} dazu, ergibt sich grob eine Erwartung von etwa {z(r['rendite'] * 100 + r['div_wachstum_5j'])} pro Jahr. Das ist eine Überschlagsrechnung ohne Kursentwicklung und ohne Gewähr."))
+    if r.get("kgv") is not None and r.get("peer_kgv_median") is not None:
+        vergl = "unter" if r["kgv"] < r["peer_kgv_median"] else "über" if r["kgv"] > r["peer_kgv_median"] else "auf"
+        out.append((f"Ist {name} im Vergleich zu anderen teuer?",
+                    f"Das KGV von {name} liegt bei {de(r['kgv'], 1)}. Im Median der Vergleichsgruppe „{r['peer_gruppe']}“ ({r['peer_anzahl']} Firmen mit Kennzahl) liegt es bei {de(r['peer_kgv_median'], 1)}, {name} also {vergl} dem Durchschnitt der Gruppe."))
+    return out
+
 def seite(r, kopf_links, kopf, fuss, mag, kurs_datum, sec_stand, usd_je_eur, jahr):
     f = r["f"]; name = f["name"]; url = f"aktien-hub/{f['slug']}/"
     rend = proz(r["rendite"]) if r["rendite"] else None
@@ -469,6 +513,7 @@ a.addEventListener("input",function(){{b.value="";r()}});b.addEventListener("inp
                        f"{name} hat die Dividende {jahre_text(sj)} in Folge erhöht" + (" und zählt damit zu den Dividend Kings." if sj >= 50 else " und zählt damit zu den Dividendenaristokraten." if sj >= 25 else ".")))
     elif se and sj == 0:
         faq.insert(1, (f"Erhöht {name} die Dividende jedes Jahr?", se.get("text", "")))
+    faq.extend(faq_dynamisch(r, name))
     if kennung:
         faq.append((f"Welche WKN und ISIN hat die {name}-Aktie?",
                     f"Die {name}-Aktie hat " + (f"die ISIN {r['isin']}" if r.get("isin") else "") + (" und " if r.get("isin") and r.get("wkn") else "")
@@ -869,8 +914,18 @@ def main():
             r["eps_fwd_jahr"] = pr.get("eps_jahr")
             r["eps_fwd_art"] = pr.get("eps_art", "")
             r["wkn"] = f.get("wkn") or WKN.get(r.get("isin") or "")
+            for feld in ("umsatz_wachstum", "gewinn_wachstum", "fcf_ausschuettung", "div_wachstum_5j", "div_wachstum_10j", "fcf_rendite", "zahlmonate", "zahlweise"):
+                r[feld] = kz.get(feld)
             og_bild(r)
             recs[f["sym"]] = r
+    for g in gruppen:
+        kgvs = sorted(recs[m]["kgv"] for m in g["members"] if m in recs and recs[m].get("kgv") is not None and recs[m]["kgv"] > 0)
+        med = kgvs[len(kgvs) // 2] if len(kgvs) % 2 else (kgvs[len(kgvs) // 2 - 1] + kgvs[len(kgvs) // 2]) / 2 if kgvs else None
+        for m in g["members"]:
+            if m in recs:
+                recs[m]["peer_kgv_median"] = med
+                recs[m]["peer_gruppe"] = g["name"]
+                recs[m]["peer_anzahl"] = len(kgvs)
     for f in cfg:
         PEER_BLOCKS[f["sym"]] = peer_block(f["sym"], recs, gruppen)
     for f in cfg:
