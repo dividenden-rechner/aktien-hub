@@ -20,7 +20,7 @@ image_lizenz: Pressebild
 !!! kurz "Kurz gesagt"
     **Angebot:** Altria prüft ein mögliches Gebot für Imperial Brands, das voraussichtlich ausschließlich in bar erfolgen würde
 
-    **Aktie:** Imperial Brands legt am Donnerstag um rund 4 % auf 35,66 Euro zu, Altria fällt um 1,9 % auf 68,22 Euro
+    **Aktie:** Imperial Brands steigt an der London Stock Exchange am Donnerstag um 15 % auf 34,37 Pfund, Altria fällt um 1,9 % auf 68,22 Euro
 
     **Frist:** Bis 24. Dezember, 17 Uhr Londoner Zeit, muss Altria ein festes Angebot vorlegen oder verzichten
 
@@ -32,7 +32,7 @@ Ein Gebot, falls es kommt, würde nach Altrias Angaben voraussichtlich ausschlie
 
 ## Die Börse reagiert
 
-Die Imperial-Aktie stand am Donnerstag um 14:25 Uhr bei 35,66 Euro, ein Plus von 4,1 % (Trade Republic). Altria gab um 1,9 % auf 68,22 Euro nach (Lang & Schwarz, 14:20 Uhr), Anleger sehen den möglichen Kauf offenbar kritisch.
+Die Imperial-Aktie steigt an der London Stock Exchange um 15 %: Gegen 14:42 Uhr deutscher Zeit kostet sie 34,37 Pfund, nach 29,88 Pfund zum Vortagesschluss. Im Tageshoch waren es 35,62 Pfund. Der Börsenwert liegt damit bei rund 26 Milliarden Pfund. Altria gab um 1,9 % auf 68,22 Euro nach (Lang & Schwarz, 14:20 Uhr), Anleger sehen den möglichen Kauf offenbar kritisch.
 
 ## Die Konzerne im Vergleich
 
@@ -69,7 +69,7 @@ Imperial hatte am 17. November Zahlen zum Geschäftsjahr bis September vorgelegt
 - [Altria, Mitteilung zu einem möglichen Angebot (RNS), 26.11.2026](https://6ix.com/news/statement-re-possible-offer-94)
 - [Bloomberg: Altria Studies Deal for Cigarette Maker Imperial Brands, 26.11.2026](https://www.bloomberg.com/news/articles/2026-11-26/altria-studies-deal-for-cigarette-maker-imperial-brands)
 - [Reuters via Global Banking & Finance: Altria Considers Possible Offer, 26.11.2026](https://www.globalbankingandfinance.com/altria-weighs-possible-offer-uks-imperial-brands/)
-- Kurse: Trade Republic und Lang & Schwarz, Stand 26.11.2026, 14:20 bis 14:25 Uhr
+- Kurse: London Stock Exchange (Google Finance, 14:42 Uhr) und Lang & Schwarz (14:20 Uhr), Stand 26.11.2026
 - Kennzahlen: Aktien-Hub von Dividenden-Rechner.de, Stand 25.11.2026
 
 *Dieser Beitrag fasst Unternehmensangaben und Berichterstattung der genannten Quellen in eigenen Worten zusammen. Keine Anlageberatung, alle Angaben ohne Gewähr.*
