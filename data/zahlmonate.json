@@ -1,5 +1,5 @@
 {
- "hinweis": "Zahlmonate aus Websuche und Zahlterminen (Quellen in den Recherche-Notizen). Nicht kuratierte Firmen. Wird in kennzahlen.py als Fallback gelesen.",
+ "hinweis": "Zahlmonate aus Websuche und Zahlterminen (Quellen in den Recherche-Notizen). Nicht kuratierte Firmen. Wird in kennzahlen.py als Fallback gelesen. Stand 26.11.2026: AAPL, NVDA, MSFT, GOOGL, WMT, MAIN gegen Zahlungsdaten bei stockanalysis.com geprüft.",
  "firmen": {
   "000270.KS": "Apr",
   "000660.KS": "Apr, Jun, Sep, Dez",
@@ -161,6 +161,12 @@
   "UPS": "Mär, Jun, Sep, Dez",
   "WDC": "Mär, Jun, Sep, Dez",
   "WM": "Mär, Jun, Sep, Dez",
-  "ZURN.SW": "Apr"
+  "ZURN.SW": "Apr",
+  "AAPL": "Feb, Mai, Aug, Nov",
+  "NVDA": "Apr, Jun, Okt, Dez",
+  "MSFT": "Mär, Jun, Sep, Dez",
+  "GOOGL": "Mär, Jun, Sep, Dez",
+  "WMT": "Jan, Apr, Mai, Sep",
+  "MAIN": "jeden Monat"
  }
 }
