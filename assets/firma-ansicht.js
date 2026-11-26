@@ -42,21 +42,23 @@ function kzTabelle(K){
    ["Bewertung",[["KGV",kgv,verlust?"Verlust im letzten Geschäftsjahr, KGV nicht sinnvoll":"Kurs / Gewinn je Aktie"],...(K.prognose&&K.prognose.kgv_forward!=null?[["Forward-KGV",x(K.prognose.kgv_forward),"Kurs / erwarteter Gewinn je Aktie für "+esc(K.prognose.eps_jahr)]]:[]),["KBV",x(K.kbv,2),"Börsenwert / Eigenkapital"],["KUV",x(K.kuv,2),"Börsenwert / Umsatz"],
      ["Kurs / Cashflow",x(K.kcv),"Börsenwert / operativer Cashflow"],["Kurs / freier Cashflow",x(K.kfcf),"Börsenwert / freier Cashflow"],["EV / EBITDA",x(K.ev_ebitda),"Unternehmenswert / EBITDA"],
      ["EV / Umsatz",x(K.ev_umsatz,2),"Unternehmenswert / Umsatz"],["PEG",x(K.peg,2),"KGV / Gewinnwachstum je Aktie (5 J.)"],["FCF-Rendite",pc(K.fcf_rendite,2),"Freier Cashflow / Börsenwert"]]],
-   ["Dividende",[["Dividendenrendite",K.dividende_basis==="ausgesetzt"?"ausgesetzt":pc(K.rendite,2),K.dividende_basis==="ausgesetzt"?esc(K.dividende_hinweis||"keine laufende Dividende"):`${K.dividende_basis==="aktuell"?"Aktuelle reguläre Dividende aufs Jahr gerechnet: ":"Dividende "}${x(K.dividende,2)} ${esc(K.waehrung)} je Aktie${K.dividende_berechnet?" (nachgerechnet)":""}${K.dividende_hinweis?" · "+esc(K.dividende_hinweis):""}`],
+   ["Dividende",[["Dividendenrendite",K.dividende_basis==="ausgesetzt"?"ausgesetzt":pc(K.rendite,2),K.dividende_basis==="ausgesetzt"?esc(K.dividende_hinweis||"keine laufende Dividende"):""],
+     ["Dividende je Aktie",K.dividende==null?"–":x(K.dividende,2)+" "+esc(K.waehrung),K.dividende_basis==="ausgesetzt"?"":(K.dividende_basis==="aktuell"?"pro Jahr, aufs Jahr gerechnet":"Geschäftsjahr")+(K.dividende_berechnet?" (nachgerechnet)":"")],
+     ["Zahlweise",K.zahlweise?esc(K.zahlweise):"–",K.zahlmonate&&K.zahlmonate.length?"Zahlmonate: "+esc(K.zahlmonate.join(", ")):"Monate offen"],
      ...(K.dividende_sonder?[["Sonderdividenden (12 Monate)",x(K.dividende_sonder,2)+" "+esc(K.waehrung),`zusätzlich ${pc(K.rendite_sonder,2)} Rendite, in der Dividendenrendite nicht enthalten`]]:[]),
      ["Ausschüttungsquote",verlust&&K.dividende?'<span class="neg">über Gewinn</span>':pc(K.ausschuettung,0),"Dividende / Gewinn je Aktie"],["Ausschüttung / freier Cashflow",pc(K.fcf_ausschuettung,0)+(K.fcf_ausschuettung>100?"*":""),"Gezahlte Dividenden / freier Cashflow"+(K.fcf_ausschuettung>100?"<br>* Über 100 % deutet oft auf Sondereffekte hin, etwa Zahlungen für zugekaufte Firmen, Steuernachzahlungen oder andere Einmalzahlungen.":"")],
      ["Dividendenwachstum",`1 Jahr: ${pc(K.div_wachstum_1j)}<br>5 Jahre: ${pc(K.div_wachstum_5j)}<br>10 Jahre: ${pc(K.div_wachstum_10j)}`,"pro Jahr"],
      ["Erhöhungen in Folge",K.dividendenserie==null?"–":K.dividendenserie>=99?"9+ Jahre":K.dividendenserie+" Jahre","innerhalb der letzten zehn Jahre"]]],
    ["Profitabilität",[["Bruttomarge",pc(K.bruttomarge),"Bruttogewinn / Umsatz"],["Operative Marge",pc(K.operative_marge),"Operatives Ergebnis / Umsatz"+(K.ebit_berechnet?" (nachgerechnet)":"")],
      ["EBITDA-Marge",pc(K.ebitda_marge),"EBITDA / Umsatz"],["Nettomarge",pc(K.nettomarge),"Nettogewinn / Umsatz"],["Eigenkapitalrendite (ROE)",pc(K.roe),"Nettogewinn / Eigenkapital"],
-     ["ROCE",pc(K.roce),"Operatives Ergebnis / (Bilanzsumme − kurzfristige Verbindlichkeiten)"],["ROIC",pc(K.roic),"Operatives Ergebnis nach 21 % Steuern / (Schulden + Eigenkapital)"]]],
+     ["ROCE",pc(K.roce),"Ergebnis / eingesetztes Kapital"],["ROIC",pc(K.roic),"Operatives Ergebnis nach 21 % Steuern / (Schulden + Eigenkapital)"]]],
    ["Bilanz",[["Nettoschulden / EBITDA",K.nettoschulden_ebitda!=null&&K.nettoschulden_ebitda<0?"Netto-Cash":xx(K.nettoschulden_ebitda),"In wie vielen Jahren das EBITDA die Nettoschulden tilgen würde"],
      ["Zinsdeckung",xx(K.zinsdeckung),"Operatives Ergebnis / Zinsaufwand"],["Schulden / Eigenkapital",x(K.schulden_ek,2),"Langfristige Schulden / Eigenkapital"],
      ["Current Ratio",x(K.current_ratio,2),"Umlaufvermögen / kurzfristige Verbindlichkeiten"]]],
    ["Wachstum",[["Umsatz",`letztes Jahr: ${pc(K.umsatz_wachstum)}<br>pro Jahr, 5 Jahre: ${pc(K.umsatz_wachstum_5j)}`,""],["Gewinn",`letztes Jahr: ${pc(K.gewinn_wachstum)}<br>pro Jahr, 5 Jahre: ${pc(K.gewinn_wachstum_5j)}`,""],
      ["Gewinn je Aktie",pc(K.eps_wachstum),"letztes Jahr"],["Freier Cashflow",pc(K.fcf_wachstum),"letztes Jahr"]]],
-   ["Qualität",[["Piotroski-Score",K.piotroski==null?"–":K.piotroski+" von 9","Neun Prüfungen zu Gewinn, Cashflow, Schulden und Effizienz; ab 7 gilt als stark"],
-     ["Altman-Z",x(K.altman_z,2),"Insolvenzrisiko-Kennzahl; über 3 gilt als sicher, unter 1,8 als gefährdet (nicht für Banken)"]]]];
+   ["Qualität",[["Piotroski-Score",K.piotroski==null?"–":K.piotroski+" von 9","Neun Prüfungen zu Gewinn, Cashflow, Schulden und Effizienz; ab 7 gilt als stark"+(K.piotroski==null?"":`<span class="zb"><span class="zbg segs"><i class="fill" style="width:${Math.min(100,Math.max(0,K.piotroski/9*100))}%"></i></span><small><span>0</span><span>9</span></small></span>`)],
+     ["Altman-Z",x(K.altman_z,2),"Insolvenzrisiko-Kennzahl; über 3 gilt als sicher, unter 1,8 als gefährdet (nicht für Banken)"+(K.altman_z==null?"":`<span class="zb"><span class="zbg"><i class="mk" style="left:${Math.min(100,Math.max(0,K.altman_z/6*100))}%"></i></span><small><span>0</span><span>1,8</span><span>3</span><span>6+</span></small></span>`)]]]];
   const F=K.prognose;
   if(F){const R=[];
     if(F.eps_wachstum_erwartet!=null)R.push(["Erwartetes Gewinnwachstum",pc(F.eps_wachstum_erwartet),"Mitte der Prognose gegenüber dem letzten Geschäftsjahr"]);
@@ -193,7 +195,20 @@ function margins(inc,H0){
   const zeile=(a,l)=>a&&a.v[a.v.length-1]!=null?`<div>${l} ${num(a.v[a.v.length-1],0)} %</div>`:"";
   return `<div class="card"><h3>Margen</h3><div class="kzl">${zeile(gl,"Brutto")}${zeile(ol,"operativ")}${zeile(nl,"netto")}</div><p>Anteil vom Umsatz</p>${s}</svg></div>`;
 }
-function fcfChart(cf,cur){
+/* Cash, Zinsaufwand und Zinsdeckung des letzten Jahres mit Zinsangabe (für die Karte Free Cashflow) */
+function zinsInfo(SD,cur){
+  if(!SD)return null;
+  const Z=(SD.inc||[]).filter(x=>x.interestExpense>0&&x.operatingIncome!=null).slice(-1)[0];
+  const C=(SD.bs||[]).filter(x=>x.cashAndCashEquivalents!=null).slice(-1)[0];
+  if(!Z&&!C)return null;
+  const cash=C&&C.cashAndCashEquivalents,zins=Z&&Z.interestExpense,dz=Z?Z.operatingIncome/Z.interestExpense:null,jahr=(Z&&Z.y)||(C&&C.y);
+  const parts=[];
+  if(cash!=null)parts.push("Cash "+big(cash)+" "+esc(cur));
+  if(zins!=null)parts.push("Zinsaufwand "+big(zins)+" "+esc(cur));
+  if(dz!=null)parts.push("Zinsdeckung "+num(dz,1)+"×");
+  return {jahr,parts,dz};
+}
+function fcfChart(cf,cur,zi){
   const D=cf.filter(x=>x.freeCashFlow!=null&&!isNaN(x.freeCashFlow));if(!D.length)return nodata("Free Cashflow");
   const W=370,H=205,top=22,bot=H-52,n=D.length,mx=Math.max(0,...D.map(x=>x.freeCashFlow)),mn=Math.min(0,...D.map(x=>x.freeCashFlow)),rg=(mx-mn)||1,Y=v=>top+(mx-v)/rg*(bot-top),z=Y(0),bw=Math.min(44,(W-12)/n*.78),mi=D.findIndex(x=>x.freeCashFlow===mx);
   let s=`<svg viewBox="0 0 ${W} ${H}" role="img" aria-label="Free Cashflow"><line x1="0" x2="${W}" y1="${z}" y2="${z}" stroke="var(--line)"/>`;
@@ -203,7 +218,7 @@ function fcfChart(cf,cur){
     else if(i===0||last||i===mi)s+=`<text x="${cx}" y="${z-h-5}" text-anchor="middle" font-size="11" font-weight="700" style="fill:${last?"var(--c-cash)":"var(--mut)"}">${short(v)}</text>`;
     s+=`<text x="${cx}" y="${H-6}" text-anchor="middle" font-size="11" ${last?'font-weight="700" style="fill:var(--ink)"':""}>${yl(d.y,n)}</text>`});
   const L=D[n-1],g=n>1&&D[n-2].freeCashFlow>0?L.freeCashFlow/D[n-2].freeCashFlow-1:null;
-  return `<div class="card">${kern("Free Cashflow",big(L.freeCashFlow)+" "+esc(cur),L.freeCashFlow<0?"var(--neg)":"var(--c-cash)",g!=null?pcs(g):"")}<p>Rot = negativer Cashflow</p>${s}</svg></div>`;
+  return `<div class="card">${kern("Free Cashflow",big(L.freeCashFlow)+" "+esc(cur),L.freeCashFlow<0?"var(--neg)":"var(--c-cash)",g!=null?pcs(g):"")}<p>Rot = negativer Cashflow</p>${s}</svg>${zi&&zi.parts.length?`<div class="fnote">${zi.jahr?"Stand "+esc(String(zi.jahr).slice(0,4))+": ":""}${zi.parts.join(" · ")}. Zinsdeckung = Operatives Ergebnis / Zinsaufwand.</div>`:""}</div>`;
 }
 function epsChart(inc,cur,H0){
   const D=inc.map(x=>({y:x.y,v:first(x,"epsDiluted","eps"),u:x.epsUnverw})).filter(x=>x.v!=null&&!isNaN(x.v));if(!D.length)return nodata("Gewinn je Aktie (verwässert)");const epsT=D.some(x=>x.u)?"Gewinn je Aktie (unverwässert)":"Gewinn je Aktie (verwässert)";
@@ -284,11 +299,11 @@ function kursChart(sym,cur,pr,q,price){
   const nowD=new Date().toISOString().slice(0,10);
   if(price!=null&&isFinite(price)&&S.length&&nowD>=S[S.length-1].d){if(S[S.length-1].d===nowD)S[S.length-1].v=+price;else S.push({d:nowD,v:+price})}
   const id="kc"+Math.random().toString(36).slice(2,7);
-  const R=[["1M","1 Monat"],["6M","6 Monate"],["YTD","seit Jahresbeginn"],["1Y","1 Jahr"],["5Y","5 Jahre"],["MAX","Maximum"]];
+  const R=[["1M","1 Monat"],["MAX","Maximum"]];
   const f=(o,...ks)=>{for(const k of ks)if(o&&o[k]!=null&&isFinite(o[k]))return +o[k]};
   const stats=[["Eröffnung",f(q,"open")],["Tageshoch",f(q,"dayHigh")],["Tagestief",f(q,"dayLow")],["Vortag",f(q,"previousClose")],["52-Wochen-Hoch",f(q,"yearHigh")],["52-Wochen-Tief",f(q,"yearLow")]].filter(x=>x[1]!=null);
   const vol=f(q,"volume");if(vol!=null)stats.push(["Handelsvolumen",big(vol)]);
-  const html=`<div class="kc" id="${id}"><div class="kt" aria-live="polite"></div><div class="rubriken" role="tablist" aria-label="Zeitraum">${R.map((r,i)=>`<button type="button" class="rb${r[0]==="1Y"?" on":""}" data-r="${r[0]}" role="tab" aria-selected="${r[0]==="1Y"}">${r[0]==="MAX"?"Max":r[0]}</button>`).join("")}</div><div class="kcs"></div>${stats.length?`<div class="ks">${stats.map(x=>`<div><span>${x[0]}</span><b>${typeof x[1]==="string"?x[1]:num(x[1])}</b></div>`).join("")}</div>`:""}</div>`;
+  const html=`<div class="kc" id="${id}"><div class="kt" aria-live="polite"></div><div class="rubriken" role="tablist" aria-label="Zeitraum">${R.map((r,i)=>`<button type="button" class="rb${r[0]==="1M"?" on":""}" data-r="${r[0]}" role="tab" aria-selected="${r[0]==="1M"}">${r[0]==="MAX"?"Max":r[0]}</button>`).join("")}</div><div class="kcs"></div><p class="fnote">* Die Kurshistorie baut sich seit dem 10. November 2026 täglich auf.</p>${stats.length?`<div class="ks">${stats.map(x=>`<div><span>${x[0]}</span><b>${typeof x[1]==="string"?x[1]:num(x[1])}</b></div>`).join("")}</div>`:""}</div>`;
   let full=null;
   function slice(r){
     const last=S[S.length-1];if(!last)return [];const t=new Date(last.d);let from;
@@ -330,7 +345,7 @@ function kursChart(sym,cur,pr,q,price){
   }
   function init(){
     const root=document.getElementById(id);if(!root)return;
-    let cur_r="1Y";draw(root,cur_r);let lw=root.querySelector(".kcs").clientWidth,tm;window.addEventListener("resize",()=>{clearTimeout(tm);tm=setTimeout(()=>{if(!document.body.contains(root))return;const w=root.querySelector(".kcs").clientWidth;if(Math.abs(w-lw)>20){lw=w;draw(root,cur_r)}},150)});
+    let cur_r="1M";draw(root,cur_r);let lw=root.querySelector(".kcs").clientWidth,tm;window.addEventListener("resize",()=>{clearTimeout(tm);tm=setTimeout(()=>{if(!document.body.contains(root))return;const w=root.querySelector(".kcs").clientWidth;if(Math.abs(w-lw)>20){lw=w;draw(root,cur_r)}},150)});
     root.querySelector(".rubriken").addEventListener("click",async e=>{const bt=e.target.closest(".rb");if(!bt)return;
       cur_r=bt.dataset.r;root.querySelectorAll(".rb").forEach(x=>{const on=x===bt;x.classList.toggle("on",on);x.setAttribute("aria-selected",on)});
       if(cur_r==="MAX"&&!full){root.querySelector(".kcs").innerHTML='<p class="desc">Lade Kursverlauf …</p>';
@@ -470,7 +485,6 @@ async function initFinance(sym,p,cur,inc,cf,SD){
   box.innerHTML=`<h3>Finanzen im Überblick</h3><p class="fsub">Jahreswerte in ${esc(cur||"Berichtswährung")}. Quelle: ${SD?quelleText(SD.q):"FMP"}.</p>
   <div class="fcard"><div class="fctl"><b id="fst">Gewinnfluss</b><span class="ftoggle"><button type="button" data-f="gw" aria-pressed="true">Gewinn</button><button type="button" data-f="cf" aria-pressed="false">Cashflow</button></span><select id="fsy" aria-label="Jahr">${years.slice().reverse().map(y=>`<option>${y}</option>`).join("")}</select></div><div class="fscroll" id="fsk"></div><p class="fnote" id="fsn">Vom Umsatz bis zum Nettogewinn. Die Breite der Bänder ist proportional zum Betrag.</p></div>
   <div class="fcard"><div class="fctl"><b>Kennzahlen übereinander legen</b><button type="button" data-m="line" aria-pressed="true">Linien</button><button type="button" data-m="bar" aria-pressed="false">Balken</button></div><div class="fchips" id="fch"></div><div class="fscroll fit" id="fcm"></div><p class="fnote" id="fmn"></p></div>
-  ${debtCard()}
   <div class="fcard"><div class="fctl"><b>Investitionen (Capex) und Dividendendeckung</b></div><div class="fscroll" id="fcx"></div><p class="fnote">Capex-Quote = Investitionen / Umsatz. Capex / Abschreibungen über 100 % heißt: Das Unternehmen investiert mehr, als sich Anlagen abnutzen. Deckung = freier Cashflow / gezahlte Dividenden; unter 100 % wird die Dividende nicht aus dem freien Cashflow bezahlt.</p></div>`;
   /* Cash und Zinsdeckung (Schulden stehen im Diagramm Eigenkapital und langfristige Schulden) */
   function debtCard(){
@@ -584,7 +598,7 @@ const NEWS_API="https://news-proxy.dividenden-rechner.workers.dev/";
 function initNews(sym,p){
   const box=$("nw");if(!box)return;
   const nm=String(p.companyName||sym).replace(/,?\s+(Inc\.?|Corp\.?|Corporation|Company|Co\.|Ltd\.?|plc|PLC|N\.V\.|S\.A\.|SE|AG|Holdings?)\b\.?/g,"").replace(/^The\s+/i,"").trim()||sym;
-  box.innerHTML=`<div class="xhead"><h3>${window.HubLogos?HubLogos.img("lg",sym,"",nm)+" ":""}Unternehmens-News</h3><small id="nwsub"></small><span class="sp"><button type="button" data-l="de" aria-pressed="true">Deutsch</button><button type="button" data-l="en" aria-pressed="false">Englisch</button></span></div><div id="nwl" class="nwl" role="status">Lade News …</div>`;
+  box.innerHTML=`<div class="xhead"><h3>Unternehmens-News</h3><small id="nwsub"></small><span class="sp"><button type="button" data-l="de" aria-pressed="true">Deutsch</button><button type="button" data-l="en" aria-pressed="false">Englisch</button></span></div><div id="nwl" class="nwl" role="status">Lade News …</div>`;
   const ago=d=>{if(!d)return"";const m=Math.round((Date.now()-new Date(d))/6e4);if(m<60)return`vor ${Math.max(m,1)} Min.`;const h=Math.round(m/60);if(h<24)return`vor ${h} Std.`;const t=Math.round(h/24);return t===1?"gestern":`vor ${t} Tagen`};
   async function load(l){
     const q=l==="de"?`"${nm}" Aktie`:`"${nm}" stock`,ck="news:"+l+":"+q,out=$("nwl");
@@ -663,7 +677,7 @@ async function firmaAnsicht(sym,ceo){
   const KC=kursChart(sym,p.currency||cur,pr,{},price);
   const img2=ceo?`<figure class="fa-ceo"><img src="${esc(FA_ROOT+ceo.datei)}" alt="${esc(ceo.name)}" loading="lazy"><figcaption><b>${esc(ceo.name)}</b><br>${esc(ceo.rolle||"")}</figcaption></figure>`:"";
   hub.innerHTML=`
-  <div class="head">${img(sym,"",p.companyName)}<div><div class="nm"><span class="fa-name">${esc(p.companyName)}</span></div><small class="sub">${esc([sym,p.exchange,p.sector].filter(Boolean).join(" · "))}</small></div>
+  <div class="head"><div><small class="sub">${esc(["Stand: "+new Date().toLocaleDateString("de-DE",{day:"numeric",month:"long",year:"numeric"}),"Kürzel "+sym,p.sector].filter(Boolean).join(" · "))}</small></div>
   <div class="price">${num(price)} ${esc(p.currency||"")}<small class="${sg(chg)}">${chg==null?"":(chg>0?"+":"")+num(chg)+" % heute"}</small></div></div>
   ${steckbrief(sym,p,r,m,inc,cf,KZ,SD)}
   ${pr.length>1?KC.html:""}
@@ -671,7 +685,7 @@ async function firmaAnsicht(sym,ceo){
    ${bars("Dividende je Aktie",divNote,divs,"var(--c-gold)",v=>num(v))}
    ${combo(inc,cur)}
    ${margins(inc)}
-   ${fcfChart(cf,cur)}
+   ${fcfChart(cf,cur,zinsInfo(SD,cur))}
   </div>
   ${kzTabelle(KZ)}
   ${secCharts(SD,cur,epsChart(inc,cur))}
