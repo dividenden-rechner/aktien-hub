@@ -791,6 +791,7 @@ def build_post(p, posts, ordner="news"):
     img_url = absu(img)
     body = md_to_html(p["body_md"], depth)
     body = re.sub(r'<h2 id="quellen">Quellen</h2>\s*(<ul>.*?</ul>)', r'<details class="quellen"><summary>Quellen</summary>\1</details>', body, count=1, flags=re.S)
+    body += '<p class="google-quelle"><a href="https://www.google.com/preferences/source?q=dividenden-rechner.de" rel="noopener" target="_blank">Bei Google als bevorzugte Quelle hinzufügen</a></p>'
     if p.get("youtube"):                               # Video vom eigenen YouTube-Kanal, lädt erst nach Klick (Datenschutz)
         vid = html.escape(p["youtube"].strip())
         yt = ('<figure class="yt-video" style="margin:1.4rem 0"><div data-yt="' + vid + '" style="position:relative;aspect-ratio:16/9;max-width:100%;'
