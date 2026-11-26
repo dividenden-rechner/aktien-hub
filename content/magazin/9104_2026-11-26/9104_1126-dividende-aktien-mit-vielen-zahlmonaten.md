@@ -1,7 +1,7 @@
 ---
 title: "Dividenden im Monatsrhythmus: Aktien mit den meisten Zahlmonaten"
 description: "Welche Dividendenaktien über das Jahr verteilt zahlen und wie viele Monate belegt sind. Die Liste wird aus den Zahlterminen neu berechnet."
-date: 2026-11-26 22:56
+date: 2026-11-26 22:59
 updated: 2026-11-26
 author: "Kilian Treß"
 category: Ratgeber
