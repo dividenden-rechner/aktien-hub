@@ -480,9 +480,7 @@ a.addEventListener("input",function(){{b.value="";r()}});b.addEventListener("inp
     heute = datetime.date.today().isoformat()
     og_img = BASE + url + "og.png" if r.get("og_bild") else BASE + "assets/og-default.png"
     logo = logo_span(f["sym"], name, "../../")
-    nur_test = (f'<div data-nur-test="1" id="fmp-box" data-sym="{esc(f["sym"])}"></div>'
-                f'<p data-nur-test="1">Nur Testseite: <a href="../../aktien-hub/?s={esc(f["sym"])}">{esc(name)} im Aktien-Hub</a> (DCF, Analysten, Live-Kurs)</p>'
-                '<script src="../../assets/firma-fmp.js" defer></script>')
+    nur_test = ""   # Testblock (Live-Daten) entfällt: die Firmenansicht liegt auf der Firmenseite
 
     return f'''<!DOCTYPE html>
 <html lang="de">
@@ -834,7 +832,7 @@ def main():
     mag = sorted(lade("data/magazin.json").get("items", []), key=lambda m: m.get("date", ""), reverse=True)
     jahr = datetime.date.today().year
     kl1, k1, f1 = rahmen(2); kl0, k0, f0 = rahmen(1)
-    rs, eintraege = [], []
+    rs, eintraege, hand = [], [], []
     cfg_by_sym = {f["sym"]: f for f in cfg}
     gruppen = lade("data/dividende-peers.json")["gruppen"]
     PEER_BLOCKS.clear()
@@ -855,9 +853,12 @@ def main():
         if not r:
             print("übersprungen (keine Daten):", f["sym"]); continue
         h, t, d, u = *seite(r, kl1, k1, f1, mag, kurse.get("datum"), secj.get("stand", ""), usd_je_eur, jahr),
-        os.makedirs(os.path.join(ROOT, u), exist_ok=True)
-        open(os.path.join(ROOT, u, "index.html"), "w", encoding="utf-8").write(h)
-        rs.append(r); eintraege.append((u, t, d))
+        # Dividendenteil wandert eine Ebene tiefer nach dividende/ (Firmenansicht kommt auf die Firmenseite)
+        h_div = h.replace('href="../', 'href="../../').replace('src="../', 'src="../../').replace(BASE + u + '"', BASE + u + 'dividende/"')
+        os.makedirs(os.path.join(ROOT, u, "dividende"), exist_ok=True)
+        open(os.path.join(ROOT, u, "dividende", "index.html"), "w", encoding="utf-8").write(h_div)
+        rs.append(r); eintraege.append((u + "dividende/", t, d))
+        hand.append((r, u, t, d))
     h, t, d = uebersicht(rs, kl0, k0, f0, jahr)
     open(os.path.join(ROOT, "dividende", "index.html"), "w", encoding="utf-8").write(h)
     eintraege.insert(0, ("dividende/", t, d))
@@ -866,6 +867,21 @@ def main():
     open(os.path.join(ROOT, "dividende", "aristokraten", "index.html"), "w", encoding="utf-8").write(h)
     eintraege.insert(1, ("dividende/aristokraten/", t, d))
     import build_firmenseiten
+    import build_firma_ansicht
+    for r, u, t, d in hand:
+        f = r["f"]; name = f["name"]; sym = f["sym"]
+        titel = f"{name} Aktie: Kennzahlen, Charts und Bewertung | Aktien-Hub"
+        beschr = f"{name}: Steckbrief, Bewertung und Diagramme aus den Geschäftsberichten und Börsenkursen. Dividendenprofil mit Terminen und Historie."
+        view = build_firma_ansicht.ansicht_html(sym, datetime.date.today().isoformat(), 2)
+        h1 = f'<div class="titlerow" style="gap:12px">{logo_span(sym, name, "../../")}<h1>{esc(name)} Aktie</h1></div>'
+        crumbs = f'<a href="../../">Start</a> › <a href="../../dividende/">Dividenden</a> › <span aria-current="page">{esc(name)}</span>'
+        body = (f'<p class="meta">Stand: {datum(datetime.date.today().isoformat())} · Kürzel {esc(sym)}</p>' + view
+                + '<p><a href="dividende/">Dividenden-Profil: Termine, Historie und Rechner →</a></p>'
+                + PEER_BLOCKS.get(sym, "") + '<p class="note"><strong>Hinweis:</strong> Diese Seite dient der allgemeinen Information und ist keine Anlageberatung.</p>')
+        seite_f = build_firmenseiten.seitenrahmen(titel, beschr, u, h1, crumbs, body, kl1, k1, f1, 2, "")
+        open(os.path.join(ROOT, u, "index.html"), "w", encoding="utf-8").write(seite_f)
+        eintraege.append((u, titel, beschr))
+    build_firma_ansicht.schreiben([r["f"] for r, *_ in hand], os.path.join(ROOT, "data", "firma-ansicht"))
     neu = build_firmenseiten.bauen({r["f"]["sym"] for r in rs}, {r["f"]["slug"] for r in rs}, news_by_sym(mag), kl1, k1, f1, datetime.date.today().isoformat())
     # Auch die handkuratierten Seiten bekommen einen Eintrag für den Link aus dem Aktien-Hub
     zuordnung = json.load(open(os.path.join(ROOT, "data", "firmen-slugs.json"), encoding="utf-8"))

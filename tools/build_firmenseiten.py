@@ -4,6 +4,7 @@ Wird am Ende von build_dividendenseiten.main() aufgerufen. Die 117 handgepflegte
 Erzeugt: dividende/<slug>/, dividende/firmen/ (A-Z), dividende/sektor/<s>/, dividende/land/<cc>/, data/firmenseiten.json (Sym -> Slug)."""
 import datetime, json, math, os, re, html as _h
 import build_dividendenseiten as B
+import build_firma_ansicht
 
 ROOT, BASE = B.ROOT, B.BASE
 esc = B.esc if hasattr(B, "esc") else (lambda s: _h.escape(str(s), quote=True))
@@ -464,11 +465,11 @@ def firmenseite(f, peers, art, news, kl, k, fu, stand):
               + (f'<li><a href="/dividende/land/{f["land"].lower()}/">Dividendenaktien aus {esc(land)}</a></li>' if f["land"] in LAND_MIT_SEITE else "")
               + (f"<li>Sektor: {sk}</li>" if sk else "")
               + '<li><a href="/dividende/aristokraten/">Dividend Kings und Dividendenaristokraten</a></li><li><a href="../../">Dividendenrechner</a></li></ul></aside>')
-    nur_test = (f'<div data-nur-test="1" id="fmp-box" data-sym="{esc(sym)}"></div>'
-                f'<p data-nur-test="1">Nur Testseite: <a href="../../aktien-hub/?s={esc(sym)}">{esc(name)} im Aktien-Hub</a> (DCF, Analysten, Live-Kurs)</p>'
-                '<script src="../../assets/firma-fmp.js" defer></script>')
-    body = (f'<p class="meta">Stand: {B.datum(stand)} · Kürzel {esc(sym)}{(" · " + esc(kennung)) if kennung else ""}</p><p class="lead">{lead}</p>{tab}'
-            f'{fin_html}{div_html}{nur_test}{peer_html}{news_html}<h2>Häufige Fragen</h2>{faq_html}{teil_html}{weiter}'
+    # Firmenansicht: Steckbrief, Bewertung, Diagramme und Meldungen kommen aus derselben Ansicht wie im Aktien-Hub (assets/firma-ansicht.js)
+    view = build_firma_ansicht.ansicht_html(sym, stand, 2)
+    div_link = '<p><a href="dividende/">Dividenden-Profil: Termine, Historie und Rechner →</a></p>'
+    body = (f'<p class="meta">Stand: {B.datum(stand)} · Kürzel {esc(sym)}{(" · " + esc(kennung)) if kennung else ""}</p><p class="lead">{lead}</p>'
+            f'{view}{div_link}{peer_html}{news_html}<h2>Häufige Fragen</h2>{faq_html}{teil_html}{weiter}'
             f'<p class="meta">Quellen: ' + ("Tagesübersicht der Börse Indonesien (IDX), Prüfberichte der Unternehmen (IDX-XBRL), Wechselkurse der EZB. Die Dividende je Aktie ist aus den gezahlten Dividenden und der Aktienzahl geschätzt." if f["sym"].endswith(".JK") else "Börsenkurse deutscher Handelsplätze, Geschäftsberichte der Unternehmen und Behörden (SEC, ESEF, Börsenaufsichten), Wechselkurse der EZB.") + " Alle Werte stehen so in den Daten; fehlende Werte sind weggelassen.</p>")
     h1 = f'<div class="titlerow" style="gap:12px">{B.logo_span(sym, name, "../../")}<h1>{esc(name)} Aktie</h1></div>'
     crumbs = f'<a href="../../">Start</a> › <a href="/dividende/">Dividenden</a> › <span aria-current="page">{esc(name)}</span>'
@@ -500,6 +501,7 @@ def bauen(vorhanden, reserviert_slugs, news_by_sym, kl2, k2, f2, stand):
     SEKTOR_SLUG = {s: B_slug(s) for s in {f["sektor"] for f in firmen if f["sektor"]}}
     LAND_MIT_SEITE = {c for c, l in nach_land.items() if len(l) >= 5 and c}
     eintraege = []
+    build_firma_ansicht.schreiben(firmen, os.path.join(ROOT, 'data', 'firma-ansicht'))
     for f in firmen:
         peers, art = peers_fuer(f, firmen, nach_sektor, nach_land)
         sym_n = re.sub(r"\.NE$", "", f["sym"])
