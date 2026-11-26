@@ -279,7 +279,16 @@ def dividende_fuer(f):
     rhythmus = 12 if n >= 10 else 4 if n >= 3 else 2 if n == 2 else 1 if n == 1 else 4
     cfg = {"sym": sym, "name": f["name"], "slug": f["slug"], "typ": "normal", "rhythmus": rhythmus,
            "satz": "", "alt": [], "serie": {}, "weglassen": []}
-    r = B.kennzahlen(cfg, datenquellen()[0], kurse, iz, usd, termine)
+    quelle = datenquellen()[0]
+    k_sym = quelle[sym].get("k") or {}
+    if "dividende_je_aktie" not in k_sym and "dividende_je_aktie_ber" in k_sym:
+        # Keine berichtete Dividende je Aktie, aber eine berechnete Reihe (Dividenden / Aktienzahl): die nehmen
+        quelle = dict(quelle)
+        eintrag = dict(quelle[sym])
+        eintrag["k"] = dict(k_sym)
+        eintrag["k"]["dividende_je_aktie"] = k_sym["dividende_je_aktie_ber"]
+        quelle[sym] = eintrag
+    r = B.kennzahlen(cfg, quelle, kurse, iz, usd, termine)
     if not r or not r.get("dps"):
         return ""
     return B.dividende_teile(r, f["name"], usd)
