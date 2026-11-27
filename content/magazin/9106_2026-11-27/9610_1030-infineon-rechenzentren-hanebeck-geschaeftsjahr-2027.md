@@ -2,6 +2,7 @@
 title: "Infineon: Rechenzentren fast verdoppelt, 2027 soll der Umsatz um mehr als 20 % wachsen"
 description: "Infineon hat das Geschäftsjahr 2026 mit einem Rekordquartal beendet. Konzernchef Jochen Hanebeck setzt auf die Stromversorgung für KI-Rechenzentren, die Aktie legt heute um knapp 5 % zu. Was die Zahlen zeigen und wo die Risiken liegen."
 date: 2026-11-27 10:30
+aufmacher: ja
 author: "Kilian Treß"
 category: Quartalszahlen
 quelle_url: https://www.infineon.com/de/about/investor/reports-presentations/financial-results
@@ -19,7 +20,7 @@ image_source: "https://commons.wikimedia.org/wiki/File%3ADresden%2C_K%C3%B6nigsb
 ---
 !!! kurz "Kurz gesagt"
     **Umsatz Geschäftsjahr 2026:** 16,4 Mrd. Euro (+12 %)
-    **Gewinn nach Steuern:** 1,5 Mrd. Euro (+49 %)
+    **Gewinn nach Steuern:** 1,5 Mrd. Euro (+49 %), je Aktie 1,15 Euro (+49 %)
     **Schlussquartal:** Umsatz 4,7 Mrd. Euro (+19 %), Segmentergebnis 1,1 Mrd. Euro (+56 %), Marge 23,8 %
     **Rechenzentren:** 2,2 Mrd. Euro Umsatz, fast doppelt so viel wie im Vorjahr
     **Ausblick 2027:** rund 20 Mrd. Euro Umsatz, mehr als 20 % Wachstum
@@ -42,6 +43,8 @@ Den Takt gibt das Segment Power Systems vor. Sein Umsatz wuchs im Quartal um 48 
 
     <span class="zitatquelle">Jochen Hanebeck, Infineon, Mitteilung vom 10. November 2026</span>
 
+Der Gewinn nach Steuern stieg im Gesamtjahr um 49 % auf 1,5 Mrd. Euro, je Aktie waren es 1,15 Euro nach 0,77 Euro. Der operative Cashflow wuchs um 30 % auf 4,1 Mrd. Euro, der freie Cashflow drehte von minus 1,1 Mrd. auf plus 1,0 Mrd. Euro.
+
 Automotive bleibt mit 2,1 Mrd. Euro (+10 %) das größte Segment und erreicht eine Marge von 22,0 %. Über das Jahr gerechnet wuchs der Bereich nur um 5 %. Edge Systems stagniert: Der Umsatz lag im Quartal mit 838 Mio. Euro auf Vorjahresniveau, im Gesamtjahr stieg er um 2 %, das Segmentergebnis fiel um 8 % auf 395 Mio. Euro. Für das erste Quartal erwartet Infineon dort einen moderaten Rückgang.
 
 ## Der Ausblick: ein Fünftel mehr Umsatz
@@ -62,7 +65,7 @@ Die Aktie ist kein Schnäppchen mehr. Die Kennzahlen aus dem Hub zeigen, dass de
 | <img class="tlogo" src="/assets/logos/adi.png" width="20" height="20" alt="" onerror="this.onerror=null;this.src='https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https://analog.com&size=64'"> Analog Devices | 150 Mrd € | 39,9 | 1,2 % |
 | <img class="tlogo" src="https://images.financialmodelingprep.com/symbol/TXN.png" width="20" height="20" alt="" onerror="this.onerror=null;this.src='https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https://ti.com&size=64'"> Texas Instruments | 224 Mrd € | 34,9 | 2,1 % |
 
-Die Hub-Werte beruhen auf dem Xetra-Schlusskurs vom 26. November und auf dem jeweils letzten berichteten Geschäftsjahr. Bei Infineon ist das noch 2025 mit einer Dividende von 0,35 Euro. Mit dem neuen Gewinn von 1,5 Mrd. Euro fällt das KGV deutlich niedriger aus.
+Die Hub-Werte beruhen auf dem Xetra-Schlusskurs vom 26. November und auf dem jeweils letzten berichteten Geschäftsjahr. Bei Infineon ist das noch 2025 mit einer Dividende von 0,35 Euro. Auf Basis des Gewinns je Aktie von 1,14 Euro (verwässert) für 2026 liegt das KGV beim aktuellen Kurs bei rund 39.
 
 ## Dividende
 
@@ -77,6 +80,7 @@ Die Zahlen sind stark, und die Prognose für 2027 legt nach. Dagegen stehen die 
 - Infineon Technologies AG, Presseinformation „Infineon schließt GJ 2026 mit Rekordquartal ab …" (10.11.2026)
 - Infineon Technologies AG, Investorenpräsentation zum vierten Quartal und Geschäftsjahr 2026 (10.11.2026)
 - Logistik Heute, „Bilanz: Infineon steigert Gewinn um 49 Prozent auf 1,1 Milliarden Euro" (Zitat Hanebeck)
+- Infineon Technologies AG, Geschäftsbericht 2026
 - Kennzahlen aus dem Hub von Dividenden-Rechner.de, Stand 26.11.2026
 - Kurs: Lang & Schwarz, 27.11.2026, 10:06 Uhr (TraderFox)
 
