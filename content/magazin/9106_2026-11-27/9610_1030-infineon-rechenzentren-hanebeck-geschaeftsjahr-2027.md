@@ -39,9 +39,9 @@ Den Takt gibt das Segment Power Systems vor. Sein Umsatz wuchs im Quartal um 48 
 !!! zitat "Jochen Hanebeck, Vorstandsvorsitzender der Infineon Technologies AG"
     ![Jochen Hanebeck](/assets/magazin/jochen-hanebeck-infineon.png){: .zitatfoto }
 
-    „Infineon hat das Geschäftsjahr 2026 mit einem weiteren Rekordquartal abgeschlossen. Wir gehen mit Rückenwind in das Geschäftsjahr 2027.“
+    „Unsere Stromversorgungslösungen für KI-Rechenzentren zeigten eine besonders starke Dynamik. [...] Profitables Wachstum ist der Schlüssel dafür, dass wir langfristig Wert für unsere Aktionäre schaffen.“
 
-    <span class="zitatquelle">Jochen Hanebeck, Infineon, Mitteilung vom 10. November 2026</span>
+    <span class="zitatquelle">Jochen Hanebeck, Brief an die Aktionäre im Geschäftsbericht 2026, aus dem Englischen übersetzt</span>
 
 Der Gewinn nach Steuern stieg im Gesamtjahr um 49 % auf 1,5 Mrd. Euro, je Aktie waren es 1,15 Euro nach 0,77 Euro. Der operative Cashflow wuchs um 30 % auf 4,1 Mrd. Euro, der freie Cashflow drehte von minus 1,1 Mrd. auf plus 1,0 Mrd. Euro.
 
@@ -59,13 +59,13 @@ Die Aktie ist kein Schnäppchen mehr. Die Kennzahlen aus dem Hub zeigen, dass de
 
 | Halbleiterkonzern | Börsenwert | KGV | Rendite |
 |---|---|---|---|
-| <img class="tlogo" src="/assets/logos/ifx-de.png" width="20" height="20" alt="" onerror="this.onerror=null;this.src='https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https://infineon.com&size=64'"> Infineon | 56 Mrd € | 54,7 | 0,8 % |
+| <img class="tlogo" src="/assets/logos/ifx-de.png" width="20" height="20" alt="" onerror="this.onerror=null;this.src='https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https://infineon.com&size=64'"> Infineon | 58 Mrd € | 39,2 | 0,8 % |
 | <img class="tlogo" src="https://images.financialmodelingprep.com/symbol/STM.png" width="20" height="20" alt="" onerror="this.onerror=null;this.src='https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https://st.com&size=64'"> STMicro | 33 Mrd € | 119,7 | 0,9 % |
 | <img class="tlogo" src="https://images.financialmodelingprep.com/symbol/NXPI.png" width="20" height="20" alt="" onerror="this.onerror=null;this.src='https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https://nxp.com&size=64'"> NXP | 57 Mrd € | 19,4 | 1,7 % |
 | <img class="tlogo" src="/assets/logos/adi.png" width="20" height="20" alt="" onerror="this.onerror=null;this.src='https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https://analog.com&size=64'"> Analog Devices | 150 Mrd € | 39,9 | 1,2 % |
 | <img class="tlogo" src="https://images.financialmodelingprep.com/symbol/TXN.png" width="20" height="20" alt="" onerror="this.onerror=null;this.src='https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https://ti.com&size=64'"> Texas Instruments | 224 Mrd € | 34,9 | 2,1 % |
 
-Die Hub-Werte beruhen auf dem Xetra-Schlusskurs vom 26. November und auf dem jeweils letzten berichteten Geschäftsjahr. Bei Infineon ist das noch 2025 mit einer Dividende von 0,35 Euro. Auf Basis des Gewinns je Aktie von 1,14 Euro (verwässert) für 2026 liegt das KGV beim aktuellen Kurs bei rund 39.
+Die Vergleichswerte beruhen auf dem Xetra-Schlusskurs vom 26. November und auf dem jeweils letzten berichteten Geschäftsjahr. Bei Infineon sind bereits die Zahlen für 2026 eingerechnet: Gewinn je Aktie von 1,14 Euro (verwässert), Dividende von 0,38 Euro und der Kurs von 44,72 Euro. Auf Basis des Vorjahres läge das KGV bei rund 55.
 
 ## Dividende
 
@@ -79,8 +79,7 @@ Die Zahlen sind stark, und die Prognose für 2027 legt nach. Dagegen stehen die 
 
 - Infineon Technologies AG, Presseinformation „Infineon schließt GJ 2026 mit Rekordquartal ab …" (10.11.2026)
 - Infineon Technologies AG, Investorenpräsentation zum vierten Quartal und Geschäftsjahr 2026 (10.11.2026)
-- Logistik Heute, „Bilanz: Infineon steigert Gewinn um 49 Prozent auf 1,1 Milliarden Euro" (Zitat Hanebeck)
-- Infineon Technologies AG, Geschäftsbericht 2026
+- Infineon Technologies AG, Geschäftsbericht 2026 (Brief an die Aktionäre, Konzernabschluss)
 - Kennzahlen aus dem Hub von Dividenden-Rechner.de, Stand 26.11.2026
 - Kurs: Lang & Schwarz, 27.11.2026, 10:06 Uhr (TraderFox)
 
