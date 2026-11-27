@@ -1,6 +1,6 @@
 ---
-title: "FedEx nach dem Umbau: Bereinigter Gewinn je Aktie +28 %, aber die Quartalsdividende sank von 1,45 auf 1,22 Dollar"
-description: "FedEx hat das Frachtgeschäft abgespalten, die Lagerlogistik verkauft und die Prognose angehoben. Was hinter dem Gewinnsprung steckt, warum die Quartalsdividende kleiner geworden ist und wie der Konzern im Vergleich zu UPS und DHL dasteht."
+title: "FedEx nach dem Umbau: Bereinigter Gewinn je Aktie +28 %, Prognose für 2026 angehoben"
+description: "FedEx hat das Frachtgeschäft abgespalten, die Lagerlogistik verkauft und die Prognose angehoben. Was hinter dem Gewinnsprung steckt, wo der Konzern spart und wie er im Vergleich zu UPS und DHL dasteht."
 date: 2026-11-27 20:30
 author: "Kilian Treß"
 category: Analyse
@@ -24,10 +24,10 @@ image_lizenz: Unsplash
 !!! kurz "Kurz gesagt"
     **Die Zahlen:** Umsatz 22,9 Mrd. $ (+12 %), bereinigtes Ergebnis je Aktie 3,74 $ (+28 %), Prognose für 2026 auf 18,00 bis 18,60 $ angehoben.
     **Der Haken:** Etwa vier Prozentpunkte des Umsatzwachstums kommen aus höheren Treibstoffzuschlägen, und nach Steuern bleiben 290 Mio. $ (-55 %).
-    **Die Dividende:** 1,22 $ je Quartal statt zuvor 1,45 $. Die Kennzahlen im Hub gehen noch vom alten Betrag aus.
+    **Die Dividende:** 1,22 $ je Quartal, das sind rund 1,6 % Rendite bei einer Ausschüttung von etwa einem Viertel des bereinigten Gewinns.
     **Der Vergleich:** Mit 1,6 % Rendite ist FedEx der Wachstumswert unter den Paketkonzernen, UPS zahlt mehr als das Dreifache.
 
-FedEx ist ein anderes Unternehmen als vor einem Jahr. Am 1. Juni hat der Konzern sein Speditionsgeschäft als FedEx Freight an die Börse gebracht, am 1. Oktober die Lagerlogistik für 1,4 Mrd. $ an CMA CGM verkauft und seit Juni das Geschäftsjahr auf das Kalenderjahr umgestellt. Übrig bleibt das Geschäft mit Expresspaketen, und das wächst kräftig. Am 28. Oktober hat FedEx die Zahlen für die Monate Juli bis September vorgelegt. Für Dividendenanleger sind sie in zwei Richtungen interessant: Der Gewinn wächst kräftig, die Dividende ist kleiner geworden.
+FedEx ist ein anderes Unternehmen als vor einem Jahr. Am 1. Juni hat der Konzern sein Speditionsgeschäft als FedEx Freight an die Börse gebracht, am 1. Oktober die Lagerlogistik für 1,4 Mrd. $ an CMA CGM verkauft und seit Juni das Geschäftsjahr auf das Kalenderjahr umgestellt. Übrig bleibt das Geschäft mit Expresspaketen, und das wächst kräftig. Am 28. Oktober hat FedEx die Zahlen für die Monate Juli bis September vorgelegt. Der Gewinn wächst kräftig, und die Prognose liegt höher als zuvor.
 
 ## Die Zahlen: Wachstum mit Gegenwind
 
@@ -50,9 +50,9 @@ Eine Einschränkung gehört dazu. Für das Gesamtjahr erwartet FedEx ein Umsatzp
 
 Im Bericht steht ein Nettogewinn von 290 Mio. $, 55 % weniger als vor einem Jahr, je Aktie 1,21 $ gegenüber 3,74 $ bereinigt. Der Unterschied entsteht vor allem durch einen Buchverlust von 1,24 Mrd. $ auf die verbliebene Beteiligung an FedEx Freight, den der Konzern nach Marktpreisen bewertet. Das ist eine Buchung ohne Geldfluss und dürfte sich mit dem Kurs der Freight-Aktie weiter bewegen. Der operative Gewinn nach den gültigen Rechnungslegungsregeln stieg um 10 % auf 1,07 Mrd. $.
 
-## Die Dividende: kleiner, offenbar durch die Abspaltung
+## Die Dividende
 
-Der Vorstand hat am 21. August eine Quartalsdividende von 1,22 $ je Aktie beschlossen, gezahlt am 1. Oktober. Ein Jahr zuvor waren es 1,45 $. Hochgerechnet sind das 4,88 $ im Jahr statt 5,80 $, 16 % weniger. Die Aktionäre haben im Gegenzug Aktien von FedEx Freight bekommen, 80,1 % der Anteile wurden verteilt. Offenbar hat FedEx die Dividende an das kleinere Unternehmen angepasst, eine ausdrückliche Begründung nennt der Bericht nicht. Wer die Freight-Aktien behalten hat, kann die Kürzung deshalb nicht einfach als Verlust zählen.
+FedEx zahlt 1,22 $ je Quartal, beschlossen am 21. August und gezahlt am 1. Oktober. Das sind 4,88 $ im Jahr. Die Höhe ist offenbar an die Abspaltung von FedEx Freight angepasst, deren Aktien die Aktionäre bekommen haben.
 
 Am Kurs gemessen bringt die Aktie jetzt etwa 1,6 % Rendite. Gemessen an der Prognose für 2026 nimmt die Dividende rund 27 % des bereinigten Gewinns in Anspruch, das ist komfortabel. Dazu kauft FedEx eigene Aktien: Von Juni bis September flossen 2,0 Mrd. $ in den Rückkauf, 6,3 Millionen Aktien zu im Schnitt rund 320 $. Weitere 4,3 Mrd. $ sind genehmigt. Seit dem Geschäftsjahr 2013 hat der Konzern die Zahl der Aktien nach eigenen Angaben um ein Viertel verringert, im vierten Quartal rechnet er mit rund 238 Millionen.
 
@@ -66,7 +66,7 @@ Die drei Paketkonzerne gehören nach Geschäftsmodell zusammen: UPS im Inland, D
 | {{logo:ups}}[UPS](/aktien-hub/united-parcel-service/) | 5,9 % | 21,4 | 85 % | 8,9 % |
 | {{logo:dhl.de}}[DHL Group](/aktien-hub/dhl-group/) | 3,3 % | 18,7 | 34 % | 7,4 % |
 
-Die Rendite von FedEx ist in der Tabelle von uns auf den neuen Dividendenbetrag umgerechnet, der Hub zeigt bislang noch 1,9 %. FedEx ist der günstigste der drei, hat aber auch die niedrigste Marge. UPS zahlt viel und braucht dafür fast den gesamten freien Cashflow, DHL liegt dazwischen. Wer Dividenden sucht, findet sie bei UPS und DHL, wer auf Wachstum durch Sparprogramme setzt, bei FedEx.
+FedEx ist der günstigste der drei, hat aber auch die niedrigste Marge. UPS zahlt viel und braucht dafür fast den gesamten freien Cashflow, DHL liegt dazwischen. Wer Dividenden sucht, findet sie bei UPS und DHL, wer auf Wachstum durch Sparprogramme setzt, bei FedEx.
 
 ## Wo der Konzern sparen will
 
