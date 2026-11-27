@@ -1,7 +1,22 @@
 {
  "hub": "UNP",
  "name": "UNION PACIFIC CORP",
- "stand": "2026-11-26",
+ "stand": "2026-11-27",
  "quelle": "Google News (Wirtschaftsmedien, deutsch und englisch)",
- "meldungen": []
+ "meldungen": [
+  {
+   "titel": "Union Pacific Corp. Financials | UNPCL",
+   "quelle": "Barron's",
+   "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTE5NaTdBcWZCR3RMUTR1WmJqTTk4Ylh4SjJ0UkZPWjhYMW4zY0RlQ0lTeFpkN1RnYWkzLUJqcGVObUtCVmZzclNIR3RBQThqVlV4VlNPX2FMRFhpelJPM0VvTzhiTTd4RTFvc19wR0RsRENEb3B5Y3lXV1BlNVNpQjg?oc=5",
+   "datum": "2026-11-24",
+   "sprache": "en"
+  },
+  {
+   "titel": "Trump Officials Met Privately With Hedge Funds on Mega Rail Deal",
+   "quelle": "Bloomberg.com",
+   "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxNSDNYRVVBT183bTlXd2FMSXltLWp2elpHdExYaFlLU2tLZUVyR1VBangzVWRNODE2U2pRUVphazBQczZtaElqeFpXeWcxQkhpSkxBdHA4d2pxTFJUbjQtMzVKZFIyZ1hMMFB1ZDRKb0VXNWN1ZnJldWxnazVBREpZQ3dqb21DM25RdUpwTDlhRmhOU3lrQ1VYTU5oMGF2MHBqMngzU00zYXFtWDFZVkJvS1dNY3prQQ?oc=5",
+   "datum": "2026-11-20",
+   "sprache": "en"
+  }
+ ]
 }

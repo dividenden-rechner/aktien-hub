@@ -1,9 +1,53 @@
 {
  "hub": "SAP.DE",
  "name": "SAP",
- "stand": "2026-11-26",
+ "stand": "2026-11-27",
  "quelle": "Google News (Wirtschaftsmedien, deutsch und englisch)",
  "meldungen": [
+  {
+   "titel": "Mastering CBAM Compliance: What SAP’s Latest Release Means for Declarants",
+   "quelle": "Unternehmen",
+   "link": "https://news.sap.com/2026/11/mastering-cbam-compliance-what-latest-sap-release-means-for-declarants/",
+   "datum": "2026-11-27",
+   "sprache": "en",
+   "typ": "pm"
+  },
+  {
+   "titel": "Building Your First Agentic Use Case: New Whitepaper Offers a Road Map for Enterprise AI",
+   "quelle": "Unternehmen",
+   "link": "https://news.sap.com/2026/11/build-first-agentic-use-case-new-whitepaper-road-map-enterprise-ai/",
+   "datum": "2026-11-27",
+   "sprache": "en",
+   "typ": "pm"
+  },
+  {
+   "titel": "SAP: Bis zu 15 000 Stellen könnten wegfallen – wie KI den Konzern verändert - Wirtschaft - SZ.de",
+   "quelle": "SZ.de",
+   "link": "https://news.google.com/rss/articles/CBMilgFBVV95cUxNZFpKR2VJMG4zZV9ydXRrT09ROHhkX1F6UUhXSEtQTmIzcEE0b3JWbmpXQl9xcGxmbGFDWURsUDlpY0dFRGZGYkl1NkJweTlvVndfa3FZWE5wWDhXdU15djZVb0xoMnphZFVKa1RseGdyb0E1M2FKZ0xxUDBSRGpWSDdkNnNmZlFidXYxYW5fak80NldpVEE?oc=5",
+   "datum": "2026-11-27",
+   "sprache": "de"
+  },
+  {
+   "titel": "10.000 Jobs in Gefahr: SAP plant Stellenabbau – und meldet Hackerangriff",
+   "quelle": "FAZ",
+   "link": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxNcXVsZjFjZjBoeHpOMEFuUHEySk9td2pKdnJvcWg5dk5SOWp3QlZQNGVLMXJ1WGNnUmhRRlgxWnZ2MkxoRzFIOUlwcmt4X1dRZXJVUFMwNnFpUzd3TWo0RFNtNV9RQmx5WF8xQ05yemJRcVdfaWdrSXRNUC1NbXZodmt1cUljUGxPWjVxZTg4aTVSMUJ4UVRVb3dSOFdHY3ZqNFV4MUd0R01wR0FBUm9KZ01ZTnFMX3dEbjB2Z3pOX2lneFFBMHdwcFJnMVc1TVJTb1BQaExnQQ?oc=5",
+   "datum": "2026-11-27",
+   "sprache": "de"
+  },
+  {
+   "titel": "SAP-Aktie und KI: Warum Analysten den Software-Konzern jetzt neu bewerten",
+   "quelle": "WiWo",
+   "link": "https://news.google.com/rss/articles/CBMivwFBVV95cUxNNVBmeTRvd2ZuRGVJQzRGSlE0QXNtd2lobHlJZWp6R3plMVBfN0FwWEtPMTlmUkVUYV84anBmSVVnalpYYTRXZTZReGhuX2NLaGdudm1wNUxRVVdZX2Y5UGdHdjFNUWtfdG1RWi1Vd0paYzEzWDIwZWlWcmlIYnpvNkcwTmstV2FrNUVYemJfYmVRdE94eTJaa3QtVUhPVndtVjlKaEk5bnpfMUxrMXpneFZ1YjJ5YUd0U2lrT2RRQQ?oc=5",
+   "datum": "2026-11-27",
+   "sprache": "de"
+  },
+  {
+   "titel": "Hackerangriff auf SAP: Warum der Vorfall auf GitHub alarmiert",
+   "quelle": "WirtschaftsWoche",
+   "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxPUVZJUDQzZEdmcE5Ib0RaVV9FaDIyLVR5TkJheWlHdk5oa0NxRENCM2xXOGdCbXJpYUo4R3o5TzlQWTluUDZyNC1VdXBRajRWYl9rTklPMmZlUVU0MEFMMk1CWnFONlhSbXhZaTlyS0R4Ymc3XzM4NWlLV0otNko2ZEI1czFhaE5MV0N2eU1fakRZUFVuN0xGU1pSVmpuWXQ4Rll0LUlVa01la3diTW9v?oc=5",
+   "datum": "2026-11-27",
+   "sprache": "de"
+  },
   {
    "titel": "SAP and planqc Bring Quantum Computing into Business Processes",
    "quelle": "Unternehmen",
@@ -13,54 +57,10 @@
    "typ": "pm"
   },
   {
-   "titel": "SAP Weighs Cutting at Least 10,000 Positions in AI Restructuring",
-   "quelle": "Bloomberg",
-   "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxQdEkwcUVNZU5SbHN4QWpxRU81d3p0eWFzcDY5VVd2dnBCeU8wMDlxVTM1NzhEM0NZMnNTNGZRVnA1WU1OUWM1N21tV29IZlJ6WUZLQ0xuWmd5cS1wU2dtaHpuRGRjZFA4V2I0VXRPYjhlN1ZQamVzMFBKQk1yRExURUFCX3B0MVdDRFd4djY2cEpmaERpbENDalRtcjFwd0trT3JHU3haMWRQdlBsRFNYNFhSTUt1QQ?oc=5",
-   "datum": "2026-11-26",
-   "sprache": "en"
-  },
-  {
-   "titel": "SAP considers at least 10,000 job cuts in AI restructuring, Bloomberg reports",
-   "quelle": "Reuters",
-   "link": "https://news.google.com/rss/articles/CBMitwFBVV95cUxNUUhZaXItb2lOYVhHRHBoUkpGZFM2Y0ZpQ1dSN3QwUnEyQlBKdmlRVG9fdFM5WS1UNm41dGZnRVhyY1FIbjBvOUNFWEREN1F4S1l1amVSUGFheGl4N1NNbk1ieF9HU3N0azQ1djN1bjA2RWhIc1VhVWVWb0RVbG1HMVlPbFQyb0N5N1ZLTUVZeXlxMDk4d3d0UHh1ajdZeWd3ekx5TU52Z3BDaXdhOU9uN3dtd1lLMXM?oc=5",
-   "datum": "2026-11-26",
-   "sprache": "en"
-  },
-  {
-   "titel": "SAP Reportedly Plans at Least 10,000 Job Cuts to Remake Itself for AI",
-   "quelle": "Startup Fortune",
-   "link": "https://news.google.com/rss/articles/CBMinAFBVV95cUxQbkE4c1ROWnRaNWNvRVVTeEo2dDFtWURtWmNRVnZPc0ZYTVdtWVVDUnJQZkRQckV3M3JFa2pSbUZXMHZHRFVzZ3VweTl3RWROS1ZzTFhCVUFpVGVOUWo1YmJoNFpGTlltWWIxUGlkbFNXR2twTnhIeEdETE5fN1hlUTNjVVpnUFBkZHRkMVpnM0o5dVZjWGJneTZFams?oc=5",
-   "datum": "2026-11-26",
-   "sprache": "en"
-  },
-  {
    "titel": "AI Is Changing the First Job: Why Youth Employment Belongs on Every Business Agenda",
    "quelle": "Unternehmen",
    "link": "https://news.sap.com/2026/11/ai-changing-first-job-youth-employment-business-agenda/",
    "datum": "2026-11-25",
-   "sprache": "en",
-   "typ": "pm"
-  },
-  {
-   "titel": "SAP Corporate Espionage Complaint Exposes Gaps in Disclosure",
-   "quelle": "Bloomberg",
-   "link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxOUXhncFJEcFBvVEtZMnFKTWQ2U0Q5Tkg0dmJJNTRlTjItMmxDeXBsUGxyVlNQSnRPeXBPQXdqaW5LTENYblBwTDdfRVRPRlV1cEMyU0NkeExfN0diRHZFWjNtcEN6OUxTNDhrbzJqc2JweDhNLXVmLW8xYVRydjJHUkRVSGtGMHdMOWZEdXhFNjhvMHNjZ0JGNWZXU0dfX0lsRTMyN1Bia0lDdFViM1dRMQ?oc=5",
-   "datum": "2026-11-25",
-   "sprache": "en"
-  },
-  {
-   "titel": "How the Atlas Copco Group Makes Skills Visible Throughout the Organization",
-   "quelle": "Unternehmen",
-   "link": "https://news.sap.com/2026/11/how-atlas-copco-group-makes-skills-visible-throughout-organization/",
-   "datum": "2026-11-24",
-   "sprache": "en",
-   "typ": "pm"
-  },
-  {
-   "titel": "Less Code, More Context: How AI Is Reshaping the Developer Role",
-   "quelle": "Unternehmen",
-   "link": "https://news.sap.com/2026/11/less-code-more-context-how-ai-is-reshaping-developer-role/",
-   "datum": "2026-11-24",
    "sprache": "en",
    "typ": "pm"
   }

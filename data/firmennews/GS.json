@@ -1,7 +1,15 @@
 {
  "hub": "GS",
  "name": "The Goldman Sachs Group, Inc.",
- "stand": "2026-11-26",
+ "stand": "2026-11-27",
  "quelle": "Google News (Wirtschaftsmedien, deutsch und englisch)",
- "meldungen": []
+ "meldungen": [
+  {
+   "titel": "Netflix Buys Seinfeld Studio Lot After Goldman Forecloses",
+   "quelle": "Bloomberg.com",
+   "link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxORGduSXhLR1MtRllQa1VHRU5SRV9fSVFKQzBwSEEtLXFwSGppaVNKckRROFBHT25fWFZWeXN2ZXRBUmJfMks5dGV5LWJTR3cxMTlEWmNzNEFZRUZ2aS1oZm9BX29QUk9TRkZRU0hNOHFPTU5BMkdYRjh5dmR1VGhrc3FYQmxCbTlpVFBjWEx6eF9xOVM5NVo3a1hCZ0NZUkVzRkRtR0NULTlfM0EzVUFsTQ?oc=5",
+   "datum": "2026-11-24",
+   "sprache": "en"
+  }
+ ]
 }

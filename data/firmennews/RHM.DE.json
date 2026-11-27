@@ -1,9 +1,51 @@
 {
  "hub": "RHM.DE",
  "name": "Rheinmetall",
- "stand": "2026-11-26",
+ "stand": "2026-11-27",
  "quelle": "Google News (Wirtschaftsmedien, deutsch und englisch)",
  "meldungen": [
+  {
+   "titel": "Palantir: Rheinmetall und Telekom planen deutsche Alternative",
+   "quelle": "WirtschaftsWoche",
+   "link": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxNd1htRTFxckhibEdmalVXMEdaWjFUNExjcldpMjNFam1iV3NsaW9BRUE4VFgtSjJ3c1U4UE04c3BRSWY5RzRKblA0QXI5RUVxSzlvRG5JYi1DOUp6TWk4YlNIblNtOGVTODNKV3llc2d3VW5HTTUyX0dxU3N1Vm9Za1FQQ1FkeUp6RlhWdzJUbnBRVGVka2F1czdjaHJ5XzVFbDZzdXRpQkYxYndqOTJBSEFPeDBhQTZH?oc=5",
+   "datum": "2026-11-27",
+   "sprache": "de"
+  },
+  {
+   "titel": "Rheinmetall biegt mit neuer Prognose für 2030 auf „glaubwürdigeren Pfad“ ab",
+   "quelle": "Börsen-Zeitung",
+   "link": "https://news.google.com/rss/articles/CBMixgFBVV95cUxQaHk4MjFOTTNSRFRBNXdRYlNBOG1ZbjB5VE1KT1RpZUNpZG5heTQtbC16djNCU2gzR21RREM4OWlYNnJmMmpMQkdqRW5LZG5yc2t1eFZ3M1dZUlk3dEtZQmlFWHNlazdyRzI5US1rWlY4SDBpQlJOeHc4cTFfakpjX3cxNnFWU3RMa0dMUzExRmVnVlZkZDF2Zm92a2ZjOEJ5ZWFpNXRMUXZqTm0ySl96dXdjTmwyQ3F1by1lLVBsSVQ4ZjM1ZHc?oc=5",
+   "datum": "2026-11-27",
+   "sprache": "de"
+  },
+  {
+   "titel": "Rheinmetall reins in growth ambitions as Europe's rearmament boom hits hurdles",
+   "quelle": "CNBC",
+   "link": "https://news.google.com/rss/articles/CBMifkFVX3lxTE5pMDZqOE8wTzEwZEFVYlNUMHZoNUpQUjFFYllDb0RqY2dPOF9RS01KNWZtUWRlcDBNRHRtQXA0ck10ZXRteGEtcExPVXhOZTUxZ1FBZmdtQk1CR0lISGs0LTUtNV9RUGs0cHAyVWxXNG5Da3dHWFpDdXZLbEZpZ9IBgwFBVV95cUxPRU1sUFhiLWQtejV0aXdXZmRuZ1ZYeHdoMlVCdjFKM1A3b3dGYkFWdnNXM1RpM01fWWZNNkVSTThHY1FVM01oRkM5eW5UMVJVbVhEMmZoSjljOV9rUWhuZ241bW91czdCQXlSOExnUkg2N3Qxa2dtdDJqWTJHWEdaZ3lLVQ?oc=5",
+   "datum": "2026-11-27",
+   "sprache": "en"
+  },
+  {
+   "titel": "Arms Maker Rheinmetall Slashes Midterm Forecasts After Order Setbacks",
+   "quelle": "WSJ",
+   "link": "https://news.google.com/rss/articles/CBMitwFBVV95cUxQdi1ZaGdYRUZoSlRpUEVMRkJaU19VMXVqMHkxTUwxeFhTZVd5VXpidHowd09hdDkydTlaMFR0MkVzeFNOUDRXcnZ2dWdhdHByUkRNSEVsMW91WjZwVm8zN19zY18xSVhEQWJiX19fUnZlUkRZZExCXzI4RHloSGZPaTFpM1dRMUNORXJxTTEydE1OMjI2akZoYUpVQ1B0dUt5NXlYLWFpOW1fclJIQ1M5Smd1SVliUVk?oc=5",
+   "datum": "2026-11-27",
+   "sprache": "en"
+  },
+  {
+   "titel": "Rheinmetall Cuts Back Mid-Term Goals in Conservative Turnabout",
+   "quelle": "Bloomberg.com",
+   "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxQY2NSVU8tX0pSaU9Eb2tJWXM5V2ZzNVo1M0U1S2RrVm5Jc1M0bnVxek9sY2pvWG9ETmFMa3M5UXd2QUZ3YjVyaE1LSTFRZW1sUEJZYThneFgtSEtrTkFoaXV0TlBzS01yenRfd3ZjN3RPQVRycGtTcmN1Y2hVUGREcURYZkxBNzNNWDIzWHJSeFBWUEpoOFhYTHJERFVIckhUM1VXa1B0aWRPSkhTZGxfOXM5cw?oc=5",
+   "datum": "2026-11-27",
+   "sprache": "en"
+  },
+  {
+   "titel": "Germany's Rheinmetall trims 2030 targets after project setbacks",
+   "quelle": "Reuters",
+   "link": "https://news.google.com/rss/articles/CBMixgFBVV95cUxPNHc4RHhHVWNUWWRCeU1VSlVQN25XRDVIMEJxRU5TWk8zaWxmQkFHMUdJNmg1Qm45Q2gxYjFDbHlhXzA3Y1dmS1VTanhMWENaOW5fN3RpMTlLQ2NOV3VHNWVxdXc5bC1PVmNpYXNZUUpndzNXSG5ObElRZmVvZXZUV1Q3MHNLblk1WVdVdlhiSlJhUjJibENISUluTEhOUFkyT3ZwNm9Na1pqOGl6UERYb1owblMwa3RiNlBVRmlWQUx3TUdOT1E?oc=5",
+   "datum": "2026-11-27",
+   "sprache": "en"
+  },
   {
    "titel": "Rheinmetall-Mitarbeiter in Kuwait durch Drohnenangriff getötet",
    "quelle": "Spiegel",
@@ -12,53 +54,11 @@
    "sprache": "de"
   },
   {
-   "titel": "Iran Attack on Kuwait Kills Two Italian Rheinmetall Workers",
-   "quelle": "Bloomberg",
-   "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxPVE9yWG9JenZCTFpSOFJUeGxZcDVXTXE1eXRUOTdkRW5nelVQcU9DU2RfNmQzTlBWWnZXdlFoWmpGNktHUnJBTjdaV0w0M2tZUlFjZzA2SEljMzlHVklrOU80R09oenRVRG9FT2puQWVhcjVFNjV6dDlvRmhta1NCMWF4c3ZUbFBSMzlaMU5Vd2syOHozTzNCQ0VMc1JCdjA5NW9kTjdkQ1F4Q0Q5cXRF?oc=5",
-   "datum": "2026-11-26",
-   "sprache": "en"
-  },
-  {
-   "titel": "Two Italian workers killed in Iranian strike in Kuwait, source says",
-   "quelle": "Reuters",
-   "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxPZ2hPQWhhdW9HTWxtRndjQkN3aFhQTzhyWV9sQ0NTbHNsRFpINkRjMHhKRGN4QTk1NTJYWU1yVHhmYVJSazJEVGtOdVIzZ2xsNFJFeHF0YXNEbXBqTF94bnBDOEFnMV9JdGRRbWVROFJGRmZISmZWUXhtYTlJTXFFMlBWa2IwdXBfUXY4OENRd2tVeWh0Q1M1OThsMl9kMkVEamJiTjMzdWxwZHRzdlVHYmtwTUI?oc=5",
-   "datum": "2026-11-26",
-   "sprache": "en"
-  },
-  {
-   "titel": "Italy says two citizens killed in Iranian strike in Kuwait",
+   "titel": "Two Italians killed in strike in Kuwait, as Iran denies responsibility",
    "quelle": "BBC",
-   "link": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE9ZM0s2UU5wMkdKN2hGc0FMU1lBM21wQjJzTlBCQ2tPbWNyZDhkTEdONXZqYjcwTXQ4dkEtZm9YUW9vUEppbXhUNlNST1J1LThKM3hlblcyd2NWVTR5R3c?oc=5",
+   "link": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE82VmIyOXM0dFF5ZVFScjVxU0IzbUV3cU53d1JybkZ3eEJxaUFCTXR4Y0dmS3FjREhrcVZ4QW5GN3AtMHJNdWFDT1JaeWppVkZrXzkteDgzZ0MzTFk?oc=5",
    "datum": "2026-11-26",
    "sprache": "en"
-  },
-  {
-   "titel": "Rheinmetall baut Satelliten: Was hinter dem Boom im All steckt",
-   "quelle": "WirtschaftsWoche",
-   "link": "https://news.google.com/rss/articles/CBMirAFBVV95cUxOTDRCSld1R1FJcDdoaFlaR29hMThjTGZnUERWTFhnanBaRllJamRtVXlKTUFtYk9CNEc1TU1Ib0d1d2JyejBWdUFUcWRyWk16SmE4Y1BKTEw4bW5vMzZqZm9KUWxrOVluM3JjNmhUbnZYNnhUVkVvVFkwXzBFakdidXJ0ZEppc2tlR1A5dVJBUmZlTUhHbDREYTRBbVExWDFjbm1qMl83NlN4ekt6?oc=5",
-   "datum": "2026-11-25",
-   "sprache": "de"
-  },
-  {
-   "titel": "Germany backs industry plan for raw materials trading house",
-   "quelle": "Reuters",
-   "link": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxOME02TlhHdjlNLVJiQnlNV05LYkU2SGc4SXl1Rmp1TnhwVTRLdzd3dGpxcV9aVVZfVFEzQ2tiYm9rVzdpMzNvTF9qUldwVkU5OHJIYjkwaGl3aEk4YXB6WEVxRzlPLTJSaTI1Q3M2NVJERzJhenFZVGg2OXVVWVJvdjc0cGI5T3pNdU84VnltcWliNWV6UmxhcklLWHhTd1V3YzgxNWVPXzhMV2VEb29PbVZyVkpTWGtYdTJSbjl1QWNsYURvZUhKX19RbHlha1FZRHpsT2doU2w?oc=5",
-   "datum": "2026-11-24",
-   "sprache": "en"
-  },
-  {
-   "titel": "Borussia Dortmund: BVB stellt Geschlossenheit über Sponsordeal mit Rheinmetall",
-   "quelle": "Manager Magazin",
-   "link": "https://news.google.com/rss/articles/CBMi6gFBVV95cUxQUHhwZi1feHUyZFh6Q082dzAzb3JWckFrQ0RKcmp1WDNneTdwc3ctNW1pQTFOUlBsZkFPQ1dMZURuM1YwNnBhVXdtblhaX3Z3LTh6T2xjTEpGcTVqb1lwTzVqTEVWTGdkNUc2WW1RZkxhUlVSVzhDQngybWR2MUNpRElXaTdiNnUtYzMzUldGMXYzS3dPdFBFR3I3UmpCUmFGdFNpeW9hNFNZZF9nYngwbGFDMnI2SVJzX1JtVERSQnVWUDluejFRT0tjSkxjcjQ0MEFXN0U0bGJCMmpBSVQxYThsRGFaYlpfbFE?oc=5",
-   "datum": "2026-11-23",
-   "sprache": "de"
-  },
-  {
-   "titel": "Treffen der Aktionäre: Rheinmetall-Deal dürfte bei BVB-Hauptversammlung Thema sein",
-   "quelle": "WirtschaftsWoche",
-   "link": "https://news.google.com/rss/articles/CBMiygFBVV95cUxNWktCaU5OWmluMTlNbHlyYm0wTUJUazVPazRScEFnLUVxRl9DUW02RTJPY1hqczZfdF9lTWxxQXJIcHo3YjF1aHFrbUpveDVCVm9FdDUwTWZQN1lrTWhuaG1EUjExdGVSclU5N1lZblN4TkJONDBZNUF1dXlZdFBYWkxHdks2WmxyUlZxMFB2eHJBU25MTjF6NWJVOVF5WTgwNkhDMjVENDJPUllNTHBXSG5ZNDdvckxyMWlGSEZVdk1GY3RsMDRfNzNR?oc=5",
-   "datum": "2026-11-22",
-   "sprache": "de"
   }
  ]
 }

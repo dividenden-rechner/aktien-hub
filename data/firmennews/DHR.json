@@ -1,7 +1,15 @@
 {
  "hub": "DHR",
  "name": "DANAHER CORPORATION",
- "stand": "2026-11-26",
+ "stand": "2026-11-27",
  "quelle": "Google News (Wirtschaftsmedien, deutsch und englisch)",
- "meldungen": []
+ "meldungen": [
+  {
+   "titel": "Danaher (DHR) Q1 2026 Earnings Call Transcript",
+   "quelle": "Fortune",
+   "link": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE01ZG5rRHNkNms4aUJ0Slc0LWxpMEVnMVRFR19tNVJEbVBkb21MZ29nYndwaWlmN0k5b0hzT25TYU5oaThULXhZcTdJX3BFWEZQMkxmVG1MYnlYa1lKQnd2dFNkRQ?oc=5",
+   "datum": "2026-11-26",
+   "sprache": "en"
+  }
+ ]
 }

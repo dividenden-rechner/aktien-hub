@@ -1,14 +1,21 @@
 {
  "hub": "SAP",
  "name": "SAP SE",
- "stand": "2026-11-26",
+ "stand": "2026-11-27",
  "quelle": "Google News (Wirtschaftsmedien, deutsch und englisch)",
  "meldungen": [
   {
    "titel": "SAP Weighs Cutting at Least 10,000 Positions in AI Restructuring",
-   "quelle": "Bloomberg",
+   "quelle": "Bloomberg.com",
    "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxQdEkwcUVNZU5SbHN4QWpxRU81d3p0eWFzcDY5VVd2dnBCeU8wMDlxVTM1NzhEM0NZMnNTNGZRVnA1WU1OUWM1N21tV29IZlJ6WUZLQ0xuWmd5cS1wU2dtaHpuRGRjZFA4V2I0VXRPYjhlN1ZQamVzMFBKQk1yRExURUFCX3B0MVdDRFd4djY2cEpmaERpbENDalRtcjFwd0trT3JHU3haMWRQdlBsRFNYNFhSTUt1QQ?oc=5",
-   "datum": "2026-11-26",
+   "datum": "2026-11-27",
+   "sprache": "en"
+  },
+  {
+   "titel": "SAP eyes at least 10,000 job cuts in AI-led restructuring: Report",
+   "quelle": "Fortune India",
+   "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxOMlZfS1ZQODhHMUdSR1kyNkJrNTIzV1VpdzlBWmFsUUVUdTZPcHdFcGRwZEticWVzSUlfSk5nNk1XZEExd0RZaHA1Y2JfUHhXaWItdE5qZFRreXFYeENVRFlZbm4zSldNMmk4V1NoVTEyS1dtMHBLWHgzclRVRzVQMkhzQVhheE81OENyM3FqbVlaZ21uWHY3a3Y3VmFMdkRuekh6QTNJX2JXLWF0ZFlnZHc2SdIBwAFBVV95cUxNZTAzSHgxQmxGanU2MzNtZVVBaWU0RnVKcmo3TW96bDR6QjVnbGczcmRMYXdvOU1hYzlySjQtN0t2cW56WksxaHBSQmt6NzRaZ1FhZTNSOXZUWEhGUXUtZTAzRF8zSnNia0JtekdFbVZ4N2xHb25DckNiSHpmbWFMVFk0WVRlOEVOXzIwbXNQMkJSamM5Zlo4YlFnRG1ZVUFmVl9ENHY4aVBqZlphQzFBbXVUV2VRN0M4MHBqcHZtYVU?oc=5",
+   "datum": "2026-11-27",
    "sprache": "en"
   },
   {
@@ -20,23 +27,9 @@
   },
   {
    "titel": "SAP Corporate Espionage Complaint Exposes Gaps in Disclosure",
-   "quelle": "Bloomberg",
+   "quelle": "Bloomberg.com",
    "link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxOUXhncFJEcFBvVEtZMnFKTWQ2U0Q5Tkg0dmJJNTRlTjItMmxDeXBsUGxyVlNQSnRPeXBPQXdqaW5LTENYblBwTDdfRVRPRlV1cEMyU0NkeExfN0diRHZFWjNtcEN6OUxTNDhrbzJqc2JweDhNLXVmLW8xYVRydjJHUkRVSGtGMHdMOWZEdXhFNjhvMHNjZ0JGNWZXU0dfX0lsRTMyN1Bia0lDdFViM1dRMQ?oc=5",
    "datum": "2026-11-25",
-   "sprache": "en"
-  },
-  {
-   "titel": "SAP Executive Saueressig Quits to Become Ionos CEO",
-   "quelle": "Bloomberg.com",
-   "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxQY3pnUGhrakczaVVjTXI3SFpCZE9VazEwenp2LW93MVJSUFI2ZHJja0l6MXNfYzlBU1ZTSklJVlNHYjNleHhMRWg2dklneVBTcEFPVEpOY2F5cXNkT1p4UVpmbUtVUks5S2NDbE9PU05uM2d5cEE1am0xVVFmcDhMUXlLbklOc0pmTjMxRkJObXROdkllUDVfRGZlMG8ySFVfZVNTZ0tQam5tWmExajk0eUI1M2k?oc=5",
-   "datum": "2026-11-17",
-   "sprache": "en"
-  },
-  {
-   "titel": "SAP Modernizes 100,000+ endpoints with Windows 11 and Microsoft Intune",
-   "quelle": "Microsoft",
-   "link": "https://news.google.com/rss/articles/CBMid0FVX3lxTE5NZEtCTlk5YkxnbThZbkFsaWpJalZNclF3MDhsVHEwTFJsc2tSNS1JdXh2NWRfbW5VemtEVG9uc3VxLVh0SFp3Y2x6ZlJ6NnNwdHFrOS1aNmJzUmsxZURrS3BDenZYaDJJRi1XYWNzdEl1dlhrVGNz?oc=5",
-   "datum": "2026-11-16",
    "sprache": "en"
   }
  ]

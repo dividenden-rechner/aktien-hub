@@ -1,9 +1,23 @@
 {
  "hub": "DBK.DE",
  "name": "Deutsche Bank",
- "stand": "2026-11-26",
+ "stand": "2026-11-27",
  "quelle": "Google News (Wirtschaftsmedien, deutsch und englisch)",
  "meldungen": [
+  {
+   "titel": "Deutsche Bank und Postbank erweitern Funktionen von Geldautomaten",
+   "quelle": "FAZ",
+   "link": "https://news.google.com/rss/articles/CBMivwFBVV95cUxNMWFqSWgwNmk3SE9XUmtfbXRtNV92VWUzUVB5NkNZUXhGdGttZDlZSXZ5MjNYNFl4R19LMDdzN2FrcGFMU3JWY1plMHZnSGZlV1VfRWZKS3RKZmtIdTZIRjRwVW84S2VselFyWWFmOVAtWjNGMkh6LU9BY1p4RWFRc3FUcm02SnRBYXNlbnBqWU9OWkhMeGw2SDd0eEZUSWZLQXlkakpIQjZUMjA0dWJ1d25iUUo0elFKalVHMmNBOA?oc=5",
+   "datum": "2026-11-27",
+   "sprache": "de"
+  },
+  {
+   "titel": "„Strom ist das neue Gold“: Ulrich Stephan von Deutscher Bank rät Anlegern",
+   "quelle": "FAZ",
+   "link": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxPbFY4VVNzb25ad1Y1Y0h2RFpfcl9Qd1A4RGJOTXFoNTJUNDBGbWpaRFBLOHZhcDVWM3ExZlRZVllfNE15MmRtUmg4NWR3cEFuT2p1cGtzWXF3UFp0UWxzMjlmM2xGa1Z4WHpGMG5QVEZSRlVRRmpKZFh3bi1RMDhIT2QxNU9fbjIxUm1heEJtT1RSMmFNb2hmUXBXNThRYkFXQXRBREdKS2twRm14cGFxanc2Ym5WblU0SzZzWVpsN2dnNXp0QTJYNFF4czZ6cWtWeUxra1l2VQ?oc=5",
+   "datum": "2026-11-27",
+   "sprache": "de"
+  },
   {
    "titel": "Börse: Deutsche Bank sieht 2027 Dax-Rekorde und Erholung bei Gold",
    "quelle": "WirtschaftsWoche",
@@ -12,9 +26,9 @@
    "sprache": "de"
   },
   {
-   "titel": "Deutsche Bank sieht Kurschancen bei Aktien",
-   "quelle": "Börsen-Zeitung",
-   "link": "https://news.google.com/rss/articles/CBMikgFBVV95cUxNYUZ5ZzdRbHVsajg4RjNWeVozbFpOT3JndTE1emExNmdNVHpCeW95ZzdWb19Sbk1Jc05fRTNUM2VORmhMQmpqb1RfWUdkajBramJPa1ZhNXhNNi1aeU5Mdmt2Ql9lRElGMGdfR3NBY29NblpXbVhJTlVQNl9aM1RfVEJ4d1hldjdQOUt0WmU4OXlOZw?oc=5",
+   "titel": "Aldi-Clan, Matthias Döpfner und Co.: So rechnen sich Reiche arm",
+   "quelle": "Spiegel",
+   "link": "https://news.google.com/rss/articles/CBMizwFBVV95cUxNLWxJeFZwVlpCYjRLN1B0QVpWRGl2U2J5TTcweUlMTnpKN3dKOFpUMFZueWFZdVQtUndCeTE2MHpRWlRIYzhPMUJvX1kwU0Z5ZkxlRVBwSEs1NkdNM0NkaVktbFpIbDJFVG83Y09NWTZBQnk4NGJwU0EzV004MXFWSzcwbEplWmFmMEdNa2pKb0NsVGlKdjdpMTlfc05TbTg1Y21RUVFzaHVieElnVEJmME1Mb1dicDFadzlMQkR5YXlZaGxNUmFrSXdZVkdrRlU?oc=5",
    "datum": "2026-11-26",
    "sprache": "de"
   },
@@ -34,7 +48,7 @@
   },
   {
    "titel": "Deutsche Bank Is Among Biggest S&P 500 Bulls With 9,000 Target",
-   "quelle": "Bloomberg",
+   "quelle": "Bloomberg.com",
    "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxQT0ZSX0RRcTI4RGNURnJSeXk2VEZfWExCQXRoeTJUOHdTTXR6RnV2cUFJaGJzYTE5bnk5anJXUGtReWhxY3lvNl9HRUw0QVNZcmgxZ0pNbjJ0WDRwZ1VWRDZTSlRRX3hNS0dSOE9iYndPWEFfcUJxNzJZWFF1RmZFbUJaVWU0WGdhdy1hOG5McUhjdEJaUnJBa01qbWhvLUgwY2Zvd1k4NDRaT1ZtMHFvbDRVbw?oc=5",
    "datum": "2026-11-25",
    "sprache": "en"
@@ -45,20 +59,6 @@
    "link": "https://news.google.com/rss/articles/CBMijwJBVV95cUxONElFbEdqZHFBU1E3eVNUWUluUU44eFZBRklxal9fOUxvRVRHM0lNS25naDJoNGVqaFFoZVRYa3JKcV9aNWhsVXdOQ2FCUF9rUUIzMkRtZW1WRGx5djMzTTVjaU5fY1RieTMyR3RSNnpyS0swaHRaUnlZbXQ5cmlKR1NfbFhNU3I0RXdfQ0VOTzh1TlFTMi04eUxlWDNrVU9WTnBmZEN1aFh4aUN2T1pDMWZMSFBaQmM1emt6eGJrQlhsNkNsVXhZc0lRTkJ2amdxZHV5WjZoWEJOMnBsblhFazFKNjFDcFFDOEN0TDRRTWg3cmxCU3BxUkFmWTlwS2o3cDhpWmdNQ0swbUtVVldF?oc=5",
    "datum": "2026-11-24",
    "sprache": "de"
-  },
-  {
-   "titel": "Why Deutsche Bank Sees the S&P 500 Surging Nearly 25% Next Year",
-   "quelle": "Barron's",
-   "link": "https://news.google.com/rss/articles/CBMiigFBVV95cUxNTXBzTE9hcjRuaVFGM0QtdFFoUzVEemVUQmJybGVXM0dZZ0NTcnJzQXVtdnhaeVQtMUlTNFFzS3gzaXB4ZkZMeGxzRUNZX2JWRXRJSFhYVHdyWGU5MmxrLW41U0E2dUs1V0YwTEpZT3FBa2tjcDVKWThhektCc0xUOFZReXl4VlBRV2c?oc=5",
-   "datum": "2026-11-24",
-   "sprache": "en"
-  },
-  {
-   "titel": "Deutsche Bank on the AI dollar: USD is becoming more reliant on riskier equity inflows",
-   "quelle": "CNBC",
-   "link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxPekVYdWFWeUZvQ3c4SDhWVkgwVFFYUC1OM2E0NVB2eEViTVpzbkZUd090NGM0dHNLeTJ3a1oySjNKaE9ZcnQtYUJOblAyZW9RaGtrR00tbUpQd3NGN2ZNZ2FRWjNXRlVoOUxLdkRreW5URjJqS0hZT2ZEQ2NSV0N0cS0zNlRUeVdDSnJ3eHdXUGkxek9PWmgzS2xQTVBPaC0xdVdTbEZ5VjR3Yk5GaW9NMw?oc=5",
-   "datum": "2026-11-23",
-   "sprache": "en"
   }
  ]
 }
