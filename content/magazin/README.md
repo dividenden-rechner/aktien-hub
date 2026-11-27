@@ -3,13 +3,18 @@
 <!-- uebersicht-start -->
 ## Übersicht (wird automatisch erstellt, neueste zuerst)
 
-### Vorschau auf der Testseite (3)
+### Vorschau auf der Testseite (8)
 
 Nur auf der GitHub-Testseite unter vorschau/ sichtbar. Freigeben: Datei anklicken, Stift-Symbol, Zeile `vorschau: ja` löschen und speichern.
 
 | Datum | Titel | Datei |
 |---|---|---|
+| 29.11.2026 12:00 | Infineon: Warum die Aktie im November fast ein Fünftel verloren hat | [79738870_2026-11-29/9066_1200-infineon-aktie-kursrutsch-november-2026.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/79738870_2026-11-29/9066_1200-infineon-aktie-kursrutsch-november-2026.md) |
 | 29.11.2026 10:00 | Das Imperium des Andrea Orcel: Die UniCredit-Aktie ist seit 2021 fast auf das Neunfache gestiegen | [79738870_2026-11-29/9070_1000-orcel-unicredit-imperium-bank-of-europe.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/79738870_2026-11-29/9070_1000-orcel-unicredit-imperium-bank-of-europe.md) |
+| 29.11.2026 09:00 | VICI Properties kaufen? Sieben Argumente dafür und sieben dagegen | [79738870_2026-11-29/9067_0900-vici-properties-pro-contra-kauf.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/79738870_2026-11-29/9067_0900-vici-properties-pro-contra-kauf.md) |
+| 28.11.2026 15:00 | Hormel Foods erhöht die Dividende zum 61. Mal in Folge, aber nur um 1 % | [79738871_2026-11-28/9068_1500-hormel-foods-dividende-61-jahre-erhoehung-1-prozent.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/79738871_2026-11-28/9068_1500-hormel-foods-dividende-61-jahre-erhoehung-1-prozent.md) |
+| 28.11.2026 12:00 | VICI Properties: 7,2 % Rendite aus Casinomieten, und die Dividende steigt weiter um 2 % | [79738871_2026-11-28/9069_1200-vici-properties-casino-mieten-dividende-7-prozent.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/79738871_2026-11-28/9069_1200-vici-properties-casino-mieten-dividende-7-prozent.md) |
+| 28.11.2026 10:15 | Wochenausblick: Hormel, Salesforce und der Arbeitsmarktbericht vor der Fed-Sitzung | [79738871_2026-11-28/9070_1015-wochenausblick-30-november-bis-4-dezember-2026.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/79738871_2026-11-28/9070_1015-wochenausblick-30-november-bis-4-dezember-2026.md) |
 | 28.11.2026 09:00 | Altria will zurück in die Welt: Was ein Zugriff auf Imperial Brands für Philip Morris und BAT bedeutet | [79738871_2026-11-28/9071_0900-altria-imperial-japan-tobacco-philip-morris-bat.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/79738871_2026-11-28/9071_0900-altria-imperial-japan-tobacco-philip-morris-bat.md) |
 | 26.11.2026 14:00 | technotrans gewinnt Rekordauftrag für Laserkühlung, die Aktie steht trotzdem fast 30 % tiefer | [79738873_2026-11-26/9070_1400-technotrans-laserkuehlung-rekordauftrag.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/79738873_2026-11-26/9070_1400-technotrans-laserkuehlung-rekordauftrag.md) |
 
