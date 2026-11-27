@@ -803,6 +803,21 @@ def build_post(p, posts, ordner="news"):
               '<figcaption style="font-size:.85rem;color:#5d6b78;margin-top:.4rem">Das Video zum Artikel auf unserem YouTube-Kanal · '
               '<a href="https://www.youtube.com/watch?v=' + vid + '" rel="noopener" target="_blank">Auf YouTube ansehen</a></figcaption></figure>')
         body = re.sub(r"(<h2[ >])", yt + r"\1", body, count=1) if "<h2" in body else body + yt
+    if p.get("instagram"):                             # eigener Instagram-Post, lädt erst nach Klick (Datenschutz)
+        m_ig = re.search(r"instagram\.com/(?:p|reel)/([A-Za-z0-9_-]+)", p["instagram"])
+        if m_ig:
+            kind = "reel" if "/reel/" in p["instagram"] else "p"
+            ig_id = html.escape(m_ig.group(1)); ig_url = html.escape(p["instagram"].split("?")[0])
+            ig = ('<figure class="ig-post" style="margin:1.4rem 0"><div data-ig="' + ig_id + '" data-kind="' + kind + '" style="max-width:420px;border:1px solid #dfe5ea;border-radius:10px;'
+                  'padding:1.1rem;text-align:center;background:#f7f9fa"><button type="button" onclick="var d=this.parentNode;d.style.padding=0;d.style.background=\'none\';'
+                  'd.innerHTML=\'<iframe src=&quot;https://www.instagram.com/\'+d.dataset.kind+\'/\'+d.dataset.ig+\'/embed&quot; title=&quot;Instagram-Beitrag&quot; loading=&quot;lazy&quot; '
+                  'style=&quot;width:100%;height:720px;border:0;border-radius:10px&quot; allowfullscreen></iframe>\'" '
+                  'style="font:600 1rem/1 inherit;background:#2f9e5b;color:#fff;border:0;border-radius:999px;padding:.8rem 1.3rem;cursor:pointer">Instagram-Beitrag anzeigen</button>'
+                  '<small style="display:block;margin-top:.7rem;color:#5d6b78">Beim Anzeigen wird der Beitrag von Instagram geladen. Dabei werden Daten an Instagram übertragen.</small></div>'
+                  '<figcaption style="font-size:.85rem;color:#5d6b78;margin-top:.4rem">Unser Beitrag auf Instagram · <a href="' + ig_url + '" rel="noopener" target="_blank">Auf Instagram ansehen</a></figcaption></figure>')
+            vor = (p.get("instagram_vor") or "").strip()
+            mh = re.search(r"<h2[^>]*>\s*" + re.escape(vor), body) if vor else None
+            body = body[:mh.start()] + ig + body[mh.start():] if mh else body + ig
     hits = glossar.analyse(p, body)                    # Stichworte -> Erklaerartikel
     body = glossar.verlinke(body, hits, pre)
     n_words = words(body); mins = max(1, round(n_words / 200))
