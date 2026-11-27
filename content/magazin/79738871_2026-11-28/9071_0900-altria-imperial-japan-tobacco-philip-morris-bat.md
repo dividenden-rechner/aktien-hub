@@ -21,6 +21,7 @@ instagram_vor: "Philip Morris"
 <!-- PRÜFEN: Aufteilung (Altria international, Japan Tobacco USA, Afrika, Naher Osten) ist ein Szenario von Analysten und Medien, von keinem der drei Konzerne bestätigt. Im Text so gekennzeichnet. -->
 <!-- PRÜFEN: Winston gehört außerhalb der USA bereits Japan Tobacco (aus der Übernahme von RJR International 1999); in den USA liegt die Marke bei Imperials Tochter ITG Brands. Vor Veröffentlichung gegenprüfen. -->
 <!-- PRÜFEN: Regionalgrafik: Umsätze aus Imperial FY26-RNS (Tabak und NGP), JT Präsentation FY2025 (Tabak Core Revenue, ohne Pharma), PMI/BAT/Altria Jahreszahlen 2025; EZB-Kurs 25.11. (1,0935 USD, 0,8373 GBP, 174,22 JPY) als Näherung. Auslandsanteil 19 % und Zuordnung Amerika=USA bei Imperial sind eigene Annahmen. Quelle des Instagram-Posts und Foto-Credits (Logan Weaver, Mdreza Jalali) prüfen. -->
+<!-- PRÜFEN: Margenabschnitt: Hub-Werte Stand kennzahlen.json (Geschäftsjahr 2025); Gewinnrückgang Altria -38 % ist der Hub-Wert (Ursache nicht geprüft, vermutlich Einmaleffekte im Vorjahr/Abschreibungen), vor Veröffentlichung gegen Altria-Bericht prüfen. Imperial-Marge 44 % = (1.774+1.210+805)/8.506 Mio. £ eigene Berechnung vor Zentralkosten. Begründung zu JT-Marge (Lebensmittel, Zusatzkosten) prüfen. -->
 <!-- PRÜFEN: Das Rechenbeispiel mit 30 % Aufschlag ist eine eigene Überlegung, kein berichteter Preis. -->
 <!-- PRÜFEN: Hub-Kennzahlen Stand Schlusskurse 26.11.2026 (Imperial nach dem Kurssprung, Japan Tobacco Tradegate vor dem Plus vom Freitag). -->
 
@@ -34,7 +35,11 @@ Altria hat in den USA ein Problem, das sich nicht wegverkaufen lässt: Der Markt
 
 ## Was bekannt ist
 
+### Das Angebot, das noch keines ist
+
 Altria bestätigte in einer Pflichtmitteilung, dass der Konzern ein Barangebot für Imperial erwägt. Einen Preis nennt die Mitteilung nicht, und es gebe keine Gewissheit, dass ein Angebot kommt. Zugleich führt Altria Gespräche mit einem Dritten über den Kauf eines Teils von Imperial. Nach den britischen Übernahmeregeln muss Altria bis zum 24. Dezember um 17 Uhr Londoner Zeit ein festes Angebot ankündigen oder verzichten. Eine Verlängerung braucht die Zustimmung der Aufsicht.
+
+### Die Reaktion von Imperial und der Börse
 
 Imperial selbst erklärte, es habe weder mit Altria noch mit einem Dritten gesprochen und kein Angebot erhalten. Der Verwaltungsrat werde jeden Vorschlag prüfen. Die Aktie schloss in London 13,3 % höher bei 34,32 Pfund, der Börsenwert liegt bei rund 26 Milliarden Pfund. Japan Tobacco, nach Bloomberg-Informationen der mögliche Partner, kommentiert nichts und legte am Freitag in Tokio um 4,5 % zu.
 
@@ -44,14 +49,20 @@ Drei Konzerne auf drei Kontinenten, Altria in den USA, Imperial in Europa und Ja
 
 ## Wer wo wie viel umsetzt
 
+### Wo die Konzerne ihr Geld verdienen
+
 Um die möglichen Aufteilungen einzuordnen, hilft ein Blick auf die Regionen. Altria ist ein reines US-Unternehmen: Der gesamte Umsatz von rund 18,4 Milliarden Euro (ohne Tabaksteuer) kommt von dort. Imperial setzt insgesamt 10,2 Milliarden Euro um, davon 42 % in Europa, 34 % in Amerika, das dürfte überwiegend die USA sein, und 24 % in Afrika, Asien, Australien und Osteuropa. Japan Tobacco setzt im Tabakgeschäft 18,3 Milliarden Euro um, die Hälfte davon im Verbund aus Eurasien, Nahost und Afrika, die USA weist der Konzern nicht gesondert aus. Philip Morris (37,2 Milliarden Euro) ist stark in Europa, BAT (30,6 Milliarden Euro) macht fast die Hälfte des Umsatzes in den USA.
 
 ![Umsatz der fünf Tabakkonzerne nach Region, Euro und Anteil am Umsatz](/assets/magazin/tabakkonzerne-umsatz-regionen-grafik.png)
 *Die Regionen sind bei jedem Konzern anders zugeschnitten und deshalb nur grob vergleichbar. Japan Tobacco ohne das ausgelagerte Pharmageschäft, Altria ohne Tabaksteuer.*
 
+### Was das für die Aufteilung heißt
+
 Rechnet man das Szenario grob nach, ergibt sich vermutlich dieses Bild: Das Europageschäft von Imperial mit 4,3 Milliarden Euro würde zu Altria gehen, das Amerikageschäft mit 3,5 Milliarden Euro zu Japan Tobacco. Wie die übrigen 2,4 Milliarden Euro aus Afrika, Asien, Australien und Osteuropa verteilt würden, ist offen, weil Imperial sie in einem Block ausweist. Selbst mit ganz Europa käme Altria damit nur auf einen Auslandsanteil von knapp 19 % des Umsatzes, der Rest bliebe der schrumpfende US-Markt. Für Philip Morris, das nur 12 % in Amerika umsetzt, wäre ein neuer Wettbewerber also vor allem in Europa spürbar, für BAT mit seinem hohen US-Anteil vor allem im Heimatmarkt von Altria.
 
 ## Das Szenario: Die Welt wird geteilt
+
+### Wer was bekommen könnte
 
 Wie eine Aufteilung aussehen könnte, ist bislang Sache der Analysten. Offenbar am meisten diskutiert wird diese Variante:
 
@@ -65,11 +76,17 @@ Wie eine Aufteilung aussehen könnte, ist bislang Sache der Analysten. Offenbar 
 
 ![Zigarettenauslage mit Winston- und Camel-Packungen in einem Schaufenster (Foto: Mdreza Jalali auf Unsplash)](/assets/magazin/zigaretten-winston-camel-auslage-foto.jpg)
 
+### Warum die Aufteilung so aussieht
+
 Die Logik dahinter ist vermutlich Kartellrecht. Würde Altria die US-Marken von Imperial selbst kaufen, träfe es mit Marlboro, die im dritten Quartal 39,5 % des US-Zigarettenumsatzes im Handel hielt, auf scharfe Prüfung durch die Wettbewerbsbehörde. Japan Tobacco dagegen hat in den USA bisher einen kleineren Auftritt und würde mit ITG vermutlich aufsteigen. Beide Konzerne arbeiten dort bereits zusammen: Im Gemeinschaftsunternehmen Horizon Innovations, das erhitzten Tabak in den USA aufbaut, hält Altria 75 % und Japan Tobacco 25 %. Die Marken von ITG gehen auf einen Zwangsverkauf zurück: 2015 musste Reynolds American im Zuge der Lorillard-Übernahme Winston, Kool und Salem abgeben, Imperial zahlte damals 7,1 Milliarden Dollar.
 
 ## Für Altria geht es um die Region
 
+### Der schrumpfende Heimatmarkt
+
 Für Altria ist die geografische Verteilung der Kern des Geschäfts. Seit der Abspaltung von Philip Morris International 2008 verkauft der Konzern Zigaretten ausschließlich in den USA. Damals hatte die Trennung gute Gründe: Klagen und Behördendruck zu Hause, dazu mehr Spielraum für die internationale Firma, in Schwellenländern zu wachsen. Altria behielt Marlboro für die USA, Philip Morris bekam den Rest der Welt.
+
+### Der Preis der Trennung von 2008
 
 18 Jahre später zeigt sich der Preis dieser Entscheidung. Das US-Geschäft wirft hohe Margen ab, kommt aber kaum noch voran. Preiswerte Marken erreichten im dritten Quartal 34,1 % des US-Handelsumsatzes, zwei Punkte mehr als ein Jahr zuvor. Altria hält mit Preiserhöhungen und den Nikotinbeuteln on! dagegen, die Preise sichern die Margen, die Menge retten sie nicht. Ein internationales Portfolio würde die Abhängigkeit vom schrumpfenden Heimatmarkt verringern, und Imperial wäre dafür ein vergleichsweise günstiger Weg: Das erwartete Kurs-Gewinn-Verhältnis liegt bei 8,3, bei Altria bei 12,6 und bei Japan Tobacco bei 17,7. Selbst nach dem Kurssprung verlangt der Markt für Imperial deutlich weniger als für die Konkurrenz.
 
@@ -79,7 +96,11 @@ Für Philip Morris International ist die Meldung eine Rückkehr der Vergangenhei
 
 ![Marlboro-Schachtel mit Zigarette und Feuerzeug auf einem Stein (Foto: Logan Weaver auf Unsplash)](/assets/magazin/marlboro-schachtel-zippo-foto.jpg)
 
+### Der Hebel ist kleiner als gedacht
+
 Der Hebel ist allerdings kleiner, als es klingt. Marlboro gehört außerhalb der USA weiter Philip Morris, Altria müsste also mit den Marken von Imperial antreten. Dazu zählen Davidoff, Gauloises, West und Rizla. Imperial selbst hat zuletzt vor allem Marktanteile abgegeben: In Großbritannien verlor die Marke im Geschäftsjahr 70 Basispunkte, das Tabakvolumen fiel um 3,4 % auf 180,6 Milliarden Stück, das Unternehmen streicht bis zu 4.600 Stellen. Dass Philip Morris bei den Kursen am Donnerstag kaum zulegte und nicht verlor, spricht für eine gelassene Einschätzung des Marktes. Der Konzern wird mit einem Gewinn-Multiple von gut 27 bewertet, knapp dem Doppelten von Altria, weil Anleger ihm die Umstellung auf rauchfreie Produkte zutrauen.
+
+### Die Gegenposition
 
 Bernstein-Analyst Callum Elliott sieht Imperial in einer schwierigen strategischen Lage, Japan Tobacco und Altria in geringerem Maß. Keiner der drei habe genug finanzielle Kraft, um Philip Morris und BAT wirklich anzugreifen. Das ist die Gegenposition zur Idee vom großen Comeback.
 
@@ -87,15 +108,41 @@ Bernstein-Analyst Callum Elliott sieht Imperial in einer schwierigen strategisch
 
 Für BAT liegen die Folgen weniger in der Zahl der Konkurrenten als in ihrer Stärke. In den USA ist die Tochter Reynolds mit Camel, Newport und Pall Mall der zweite große Anbieter hinter Altria. Käme Japan Tobacco mit ITG dazu, entstünde ein dritter Wettbewerber, der nach Einschätzung von Jefferies-Analyst Andrei Andon-Ionita auf Dauer ein ernst zu nehmender, breit aufgestellter und preisbewusster Konkurrent mit Kostenvorteilen sein könnte. Das trifft vor allem das Preissegment, in dem BAT ohnehin um Kunden kämpft. Wer den US-Markt von unten aufrollt, drückt die Preise.
 
+### Afrika als zweite Front
+
 Dazu kommt Afrika. Japan Tobacco baut dort bereits aus, mit Imperials Geschäft in Afrika und im Nahen Osten bekäme es mehr Vertrieb und Marken. BAT ist in diesen Märkten traditionell stark. Die BAT-Aktie gab am Donnerstag im Xetra-Handel 1,5 % nach, ein Zeichen für leichte Sorge, aber keine Panik. Auf der anderen Seite rückt der Sektor insgesamt in den Fokus: Wenn Imperial mit rund dem Achtfachen des erwarteten Gewinns bewertet wird und Anleger Angebote über dem fünfjährigen Höchststand von 9,6 erwarten, kann das auch für BAT mit einem Gewinn-Multiple von 13 die Bewertung stützen.
 
 ## Die Kosten: Altrias Bilanz und die Dividende
+
+### Die Finanzierung
 
 Der entscheidende Punkt für Dividendenanleger ist die Finanzierung. Altria zahlt eine Quartalsdividende von 1,11 Dollar und hat sie zuletzt um 4,7 % angehoben. Im Hub liegt die Ausschüttungsquote bei 92 %, die Rendite bei 5,9 %. Zum 30. September stand die Verschuldung bei 1,9-fachem EBITDA, die liquiden Mittel beliefen sich auf 2,7 Milliarden Dollar.
 
 Imperial ist an der Börse rund 34 Milliarden Dollar wert. Ein Rechenbeispiel: Bei einem Aufschlag von 30 % wären es etwa 44 Milliarden Dollar, gut ein Drittel von Altrias eigenem Börsenwert von knapp 127 Milliarden Dollar. Dazu kommen Imperials Schulden von 8,8 Milliarden Pfund. Altria würde nur einen Teil des Geschäfts behalten, trägt aber bei einem Barangebot zunächst die gesamte Last, bis Japan Tobacco seinen Anteil bezahlt hat. Morningstar-Analyst Kristoffer Inton warnt, dass Altria dadurch die höchste Netto-Verschuldung ihrer Geschichte erreichen könnte und mehrere Jahre zum Abbau bräuchte, selbst wenn die Aktienrückkäufe pausieren. BTIG-Analyst Owen Bennett hält die Finanzierung für machbar, ohne die Kreditbewertung zu verändern, weil Japan Tobacco bis zu 7,4 Milliarden Dollar durch den Verkauf eigener Aktien aufbringen könnte.
 
+### Die Dividende bei hoher Schuldenlast
+
 Bei einer Quote von 92 % bleibt wenig Luft für eine hohe Schuldenlast. Imperial zahlt für das Geschäftsjahr 2026 eine Dividende von 166,72 Pence (+4 %), schüttet im Hub 75 % aus und hat für das neue Jahr einen Rückkauf über 1,5 Milliarden Pfund angekündigt. Bei einem Eigentümerwechsel stünde beides zur Disposition. Als Gegenwert bringt Imperial einen freien Cashflow von zuletzt 2,6 Milliarden Pfund mit, aus dem sich die Zinsen auf die Übernahmeschulden bedienen ließen.
+
+## Margen und Cashflow im Vergleich
+
+### Wer am meisten verdient
+
+Die Margen zeigen, wie unterschiedlich die fünf Geschäfte sind. Altria erzielt im US-Markt eine operative Marge von 42,5 % und liegt damit vor Philip Morris (36,6 %) und BAT (39,0 %). Japan Tobacco kommt auf 25,0 %, was offenbar auch am noch laufenden Lebensmittelgeschäft und dem hohen Anteil an Wachstumsmärkten liegt. Imperial fällt mit 10,8 % auf den ersten Blick weit zurück. Das ist vermutlich ein Effekt der Berichtsweise: Imperial weist den Umsatz einschließlich der Tabaksteuer aus, in der Marge steckt also ein sehr großer Durchlaufposten. Rechnet man das bereinigte Betriebsergebnis der drei Tabakregionen (3,79 Mrd. £) auf den Tabak- und NGP-Umsatz von 8,51 Mrd. £, ergibt sich eine Marge von rund 44 %. Diese Zahl ist eine eigene Berechnung vor Zentralkosten und deshalb mit den Hub-Werten nur grob vergleichbar.
+
+| Unternehmen | Operative Marge | Nettomarge | Dividende in % des Gewinns | Dividende in % des freien Cashflows |
+|---|---|---|---|---|
+| Altria | 42,5 % | 29,8 % | 92 % | 78 % |
+| BAT | 39,0 % | 30,3 % | 68 % | 90 % |
+| Philip Morris | 36,6 % | 27,9 % | 88 % | 68 % |
+| Japan Tobacco | 25,0 % | 14,7 % | 81 % | 96 % |
+| Imperial Brands* | 10,8 % | 6,4 % | 75 % | 45 % |
+
+*Imperial weist den Umsatz einschließlich Tabaksteuer aus, die Margen sind deshalb nicht mit den anderen vergleichbar. Die Werte stammen aus dem [Aktien-Hub](/aktien-hub/vergleich/), jeweils für das letzte volle Geschäftsjahr. Die einzelnen Firmen: [Altria](/aktien-hub/altria/), [BAT](/aktien-hub/british-american-tobacco-p-l-c/), [Philip Morris](/aktien-hub/philip-morris-international/), [Japan Tobacco](/aktien-hub/japan-tobacco/), [Imperial Brands](/aktien-hub/imperial-brands/).
+
+### Altrias Cashflow wird enger
+
+Bei Altria sieht das Bild für Dividendenanleger weniger beruhigend aus, als die Marge vermuten lässt. Der Gewinn sank im Geschäftsjahr 2025 um 38 %, der Umsatz um 3,1 %. Von der Dividende wird mit 92 % fast der ganze Gewinn ausgeschüttet, und auch der freie Cashflow ist mit 78 % deutlich weniger üppig gedeckt als bei Imperial (45 %) oder Philip Morris (68 %). BAT (90 %) und Japan Tobacco (96 %) liegen allerdings noch enger. Dazu kommt die Verschuldung: Das Verhältnis von Nettoschulden zu EBITDA liegt bei Altria im Hub bei 2,1, bei Philip Morris bei 2,4, bei BAT bei 2,5 und bei Japan Tobacco bei nur 0,8. Altria hat also bei den Schulden noch Luft, aber bei einem schuldenfinanzierten Zukauf würde dieser Abstand rasch kleiner. Die Dividendenrendite von 5,9 % ist zugleich die höchste der fünf, und die Erhöhungsserie läuft seit 57 Jahren.
 
 ## Die Konzerne im Vergleich
 
