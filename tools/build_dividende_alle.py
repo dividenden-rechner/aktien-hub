@@ -91,14 +91,12 @@ def seite(sym, r, slug, name, faq_extra, head_vorlage, kopf, fuss):
     tabelle = "".join(f'<tr><td>{esc(a)}{(" <span class=\"hint\">" + esc(c) + "</span>") if c else ""}</td><td class="n">{esc(b)}</td></tr>' for a, b, c in zeilen)
     tabelle = f'<div class="tablewrap"><table><tbody>{tabelle}</tbody></table></div>' if tabelle else ""
 
-    faq = []
-    if div is not None:
-        faq.append((f"Wie hoch ist die Dividende von {name}?",
-                    f"Aufs Jahr gerechnet zahlt {name} {zahl(div)} {waehrung} je Aktie" + (f", das entspricht einer Rendite von rund {pct(rend)}." if rend is not None else ".")
-                    + ("" if waehrung == "USD" else f" Der Betrag ist in {einheit} angegeben.")))
+    # Die vier Standardfragen jeder Dividendenseite (Höhe, Zahltermine, Ausschüttungsquote, Dividendenwachstum), dann die weiteren aus den Daten
+    vier = B.faq_vier(name, r, waehrung)
+    ersetzt = ("In welchen Monaten zahlt", "Wie ist die Dividende von")
     # faq_dynamisch erwartet die Rendite als Anteil (0,058 statt 5,8)
     r_faq = dict(r, rendite=(r.get('rendite') / 100) if r.get('rendite') is not None else None)
-    faq += B.faq_dynamisch(r_faq, name)
+    faq = vier + [(q, a) for q, a in B.faq_dynamisch(r_faq, name) if not q.startswith(ersetzt)]
     faq += faq_extra
     faq_html = "".join(f"<details><summary>{esc(q)}</summary><p>{esc(a)}</p></details>" for q, a in faq)
 
