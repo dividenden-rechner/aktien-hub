@@ -3,7 +3,7 @@
 <!-- uebersicht-start -->
 ## Übersicht (wird automatisch erstellt, neueste zuerst)
 
-### Vorschau auf der Testseite (8)
+### Vorschau auf der Testseite (7)
 
 Nur auf der GitHub-Testseite unter vorschau/ sichtbar. Freigeben: Datei anklicken, Stift-Symbol, Zeile `vorschau: ja` löschen und speichern.
 
@@ -16,7 +16,6 @@ Nur auf der GitHub-Testseite unter vorschau/ sichtbar. Freigeben: Datei anklicke
 | 28.11.2026 12:00 | VICI Properties: 7,2 % Rendite aus Casinomieten, und die Dividende steigt weiter um 2 % | [79738871_2026-11-28/9069_1200-vici-properties-casino-mieten-dividende-7-prozent.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/79738871_2026-11-28/9069_1200-vici-properties-casino-mieten-dividende-7-prozent.md) |
 | 28.11.2026 10:15 | Wochenausblick: Hormel, Salesforce und der Arbeitsmarktbericht vor der Fed-Sitzung | [79738871_2026-11-28/9070_1015-wochenausblick-30-november-bis-4-dezember-2026.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/79738871_2026-11-28/9070_1015-wochenausblick-30-november-bis-4-dezember-2026.md) |
 | 28.11.2026 09:00 | Altria will zurück in die Welt: Was ein Zugriff auf Imperial Brands für Philip Morris und BAT bedeutet | [79738871_2026-11-28/9071_0900-altria-imperial-japan-tobacco-philip-morris-bat.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/79738871_2026-11-28/9071_0900-altria-imperial-japan-tobacco-philip-morris-bat.md) |
-| 26.11.2026 14:00 | technotrans gewinnt Rekordauftrag für Laserkühlung, die Aktie steht trotzdem fast 30 % tiefer | [79738873_2026-11-26/9070_1400-technotrans-laserkuehlung-rekordauftrag.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/79738873_2026-11-26/9070_1400-technotrans-laserkuehlung-rekordauftrag.md) |
 
 ### Zur Freigabe: Entwürfe (10)
 
