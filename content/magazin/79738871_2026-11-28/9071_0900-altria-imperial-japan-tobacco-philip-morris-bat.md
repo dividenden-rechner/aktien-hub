@@ -10,8 +10,12 @@ logo_name: "Altria"
 logo_symbol: MO
 logo_domain: altria.com
 logo_file: assets/logos/mo.png
+image: assets/magazin/altria-marlboro-regal-foto.jpg
+image_alt: "Zigarettenregal mit Marlboro-Packungen und Preisschildern in einem US-Geschäft"
+image_credit: "Foto: Jacob Skowronek auf Unsplash"
+image_source: "https://unsplash.com/de/fotos/regale-mit-verschiedenen-zigarettenmarken-und-preisen-gefullt-apqDAiF_WIY?utm_source=dividenden-rechner&utm_medium=referral"
+image_lizenz: Unsplash
 ---
-<!-- PRÜFEN: Aufmacherfoto fehlt. Über die Unsplash-Anfrage ein Foto suchen lassen (Zigarettenfabrik, Hafen mit Containern, Weltkarte oder Händedruck, kein erkennbares Markenlogo) und image, image_alt, image_credit, image_source, image_lizenz ergänzen. -->
 <!-- PRÜFEN: Aufteilung (Altria international, Japan Tobacco USA, Afrika, Naher Osten) ist ein Szenario von Analysten und Medien, von keinem der drei Konzerne bestätigt. Im Text so gekennzeichnet. -->
 <!-- PRÜFEN: Winston gehört außerhalb der USA bereits Japan Tobacco (aus der Übernahme von RJR International 1999); in den USA liegt die Marke bei Imperials Tochter ITG Brands. Vor Veröffentlichung gegenprüfen. -->
 <!-- PRÜFEN: Das Rechenbeispiel mit 30 % Aufschlag ist eine eigene Überlegung, kein berichteter Preis. -->
@@ -31,6 +35,8 @@ Altria bestätigte in einer Pflichtmitteilung, dass der Konzern ein Barangebot f
 
 Imperial selbst erklärte, es habe weder mit Altria noch mit einem Dritten gesprochen und kein Angebot erhalten. Der Verwaltungsrat werde jeden Vorschlag prüfen. Die Aktie schloss in London 13,3 % höher bei 34,32 Pfund, der Börsenwert liegt bei rund 26 Milliarden Pfund. Japan Tobacco, nach Bloomberg-Informationen der mögliche Partner, kommentiert nichts und legte am Freitag in Tokio um 4,5 % zu.
 
+![Imperial Brands: Produkt der Marke blu (Pressebild Imperial Brands)](/assets/magazin/imperial-brands-blu-produkt-foto.jpg)
+
 ## Das Szenario: Die Welt wird geteilt
 
 Wie eine Aufteilung aussehen könnte, ist bislang Sache der Analysten. Am meisten diskutiert wird diese Variante:
@@ -42,6 +48,8 @@ Wie eine Aufteilung aussehen könnte, ist bislang Sache der Analysten. Am meiste
 | Afrika und Naher Osten | Japan Tobacco | wachsende Märkte, passen zum eigenen Afrika-Geschäft |
 
 *Szenario nach Einschätzung von Analysten, von Altria, Japan Tobacco und Imperial nicht bestätigt.*
+
+![Zigarettenauslage mit Winston- und Camel-Packungen in einem Schaufenster (Foto: Mdreza Jalali auf Unsplash)](/assets/magazin/zigaretten-winston-camel-auslage-foto.jpg)
 
 Die Logik dahinter ist Kartellrecht. Würde Altria die US-Marken von Imperial selbst kaufen, träfe es mit Marlboro, die im dritten Quartal 39,5 % des US-Zigarettenumsatzes im Handel hielt, auf scharfe Prüfung durch die Wettbewerbsbehörde. Japan Tobacco dagegen hat in den USA bisher einen kleineren Auftritt und würde mit ITG aufsteigen. Beide Konzerne arbeiten dort bereits zusammen: Im Gemeinschaftsunternehmen Horizon Innovations, das erhitzten Tabak in den USA aufbaut, hält Altria 75 % und Japan Tobacco 25 %. Die Marken von ITG gehen auf einen Zwangsverkauf zurück: 2015 musste Reynolds American im Zuge der Lorillard-Übernahme Winston, Kool und Salem abgeben, Imperial zahlte damals 7,1 Milliarden Dollar.
 
