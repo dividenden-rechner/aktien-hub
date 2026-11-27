@@ -255,11 +255,11 @@
    "abgerufen": "2026-11-21"
   },
   "unitplus": {
-   "titel": "UnitPlus: Altersvorsorgedepot",
+   "titel": "UnitPlus: Altersvorsorgedepot (Anbieter-Datenblatt, per E-Mail erhalten)",
    "url": "https://unitplus.eu/altersvorsorgedepot",
    "typ": "primaer",
-   "datum": null,
-   "abgerufen": "2026-11-21"
+   "datum": "2026-11",
+   "abgerufen": "2026-11-27"
   },
   "raisin": {
    "titel": "Raisin: Altersvorsorgedepot (Stand 06.09.2026)",
@@ -1850,23 +1850,37 @@
    "typ": "Fintech",
    "domain": "unitplus.eu",
    "herkunft": "neu geprüft",
-   "hinweis": "",
+   "hinweis": "Konditionen aus dem Anbieter-Datenblatt (Stand November 2026, per E-Mail erhalten). Start Januar 2027, derzeit Warteliste. Die Produktkosten der ETFs sind laut Anbieter kalkuliert (0,19 bis 0,25 %); im Rechner wird der obere Wert angesetzt.",
    "produkte": [
     {
      "id": "unitplus-avd",
      "name": "Altersvorsorgedepot",
      "art": "gesteuert",
      "pruefstatus": "primary_verified",
-     "konditionen": "offen",
-     "kosten_text": "Konditionen für das Altersvorsorgedepot nicht veröffentlicht",
-     "depot_text": "noch offen",
-     "auswahl_text": "Aktiv gemanagte ETF-Portfolios (mit J.P. Morgan AM)",
-     "hinweis": "",
-     "bestandteile": [],
+     "konditionen": "veroeffentlicht",
+     "kosten_text": "Gesamtkosten 0,49 bis 0,55 % p. a. (0,30 % Anbieter, 0,19 bis 0,25 % aktive ETFs kalkuliert), ohne gesonderte Transaktions-, Börsen- und Depotgebühren.",
+     "depot_text": "Start Januar 2027, derzeit Warteliste. Förderung: Grundzulage 540 €, Kinderzulage 300 € je Kind, Bonus 200 € unter 25 (Stand Anbieter).",
+     "auswahl_text": "Comfort (Aktienquote 0 bis 100 % wählbar) und ZukunftPlus (fünf aktive ETFs), beide mit J.P. Morgan AM",
+     "hinweis": "Die Renditen des Anbieters sind Backtests vor Kosten und werden im Rechner nicht verwendet. Der Rechner rechnet mit 6 % Standardrendite abzüglich der Kosten.",
+     "bestandteile": [
+      {
+       "art": "management_fee",
+       "pct": 0.3,
+       "bedingung": "UnitPlus Altersvorsorgedepot, laut Datenblatt",
+       "quelle": "unitplus"
+      },
+      {
+       "art": "fund_ter",
+       "pct": 0.25,
+       "ca": true,
+       "bedingung": "Produktkosten aktiver ETFs, kalkuliert 0,19 bis 0,25 % p. a.; oberer Wert angesetzt",
+       "quelle": "unitplus"
+      }
+     ],
      "quellen": [
       "unitplus"
      ],
-     "im_rechner": false
+     "im_rechner": true
     }
    ]
   },
