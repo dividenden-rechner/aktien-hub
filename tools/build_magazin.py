@@ -1057,7 +1057,8 @@ def build_index(posts):
     o += f'<script src="{pre}assets/navigation.js"></script>\n<script src="{pre}assets/logos.js"></script>\n<main class="wrap">\n'
     o += f'<nav class="crumbs" aria-label="Brotkrumen"><a href="{pre}">Start</a> › <span aria-current="page">News</span></nav>\n<h1>News</h1>\n'
     # Aufmacher: Standard ist der neueste Artikel; mit "aufmacher: ja" im Kopfbereich wird ein Artikel vom selben Tag wie der neueste zum Hauptthema (aeltere Artikel nie)
-    longp = [x for x in posts if x.get("typ") != "kurz"] or posts
+    # Evergreen-Ratgeber (typ: evergreen) sind nie Thema des Tages, sonst stehen sie als Aufmacher oben
+    longp = [x for x in posts if x.get("typ") not in ("kurz", "evergreen")] or posts
     hero = longp[0]
     for x in longp:
         if x.get("aufmacher", "").lower() in ("ja", "true", "1", "yes") and x["dt"].date() == posts[0]["dt"].date():
