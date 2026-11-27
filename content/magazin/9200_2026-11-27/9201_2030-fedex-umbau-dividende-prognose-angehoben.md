@@ -1,8 +1,7 @@
 ---
 title: "FedEx nach dem Umbau: Bereinigter Gewinn je Aktie +28 %, aber die Quartalsdividende sank von 1,45 auf 1,22 Dollar"
 description: "FedEx hat das Frachtgeschäft abgespalten, die Lagerlogistik verkauft und die Prognose angehoben. Was hinter dem Gewinnsprung steckt, warum die Quartalsdividende kleiner geworden ist und wie der Konzern im Vergleich zu UPS und DHL dasteht."
-date: 2026-11-29 15:00
-vorschau: ja
+date: 2026-11-27 20:30
 author: "Kilian Treß"
 category: Analyse
 quelle_name: "FedEx Corporation, Präsentation zum dritten Quartal des Kalenderjahres 2026 vom 28. Oktober 2026; Quartalsbericht (Form 10-Q) für den Zeitraum bis 30. September 2026"

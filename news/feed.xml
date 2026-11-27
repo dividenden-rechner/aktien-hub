@@ -1,6 +1,101 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:dc="http://purl.org/dc/elements/1.1/">
-<channel><title>Dividenden-Rechner Aktien-Hub: News</title><link>https://dividenden-rechner.github.io/aktien-hub/news/</link><description>Dividenden, Kennzahlen und Steuern erklärt</description><language>de-DE</language><lastBuildDate>Fri, 27 Nov 2026 19:26:16 +0000</lastBuildDate><atom:link href="https://dividenden-rechner.github.io/aktien-hub/news/feed.xml" rel="self" type="application/rss+xml"/>
+<channel><title>Dividenden-Rechner Aktien-Hub: News</title><link>https://dividenden-rechner.github.io/aktien-hub/news/</link><description>Dividenden, Kennzahlen und Steuern erklärt</description><language>de-DE</language><lastBuildDate>Fri, 27 Nov 2026 19:27:03 +0000</lastBuildDate><atom:link href="https://dividenden-rechner.github.io/aktien-hub/news/feed.xml" rel="self" type="application/rss+xml"/>
+<item><title>FedEx nach dem Umbau: Bereinigter Gewinn je Aktie +28 %, aber die Quartalsdividende sank von 1,45 auf 1,22 Dollar</title><link>https://dividenden-rechner.github.io/aktien-hub/news/fedex-umbau-dividende-prognose-angehoben/</link><guid isPermaLink="true">https://dividenden-rechner.github.io/aktien-hub/news/fedex-umbau-dividende-prognose-angehoben/</guid><pubDate>Fri, 27 Nov 2026 20:30:00 +0100</pubDate><category>Analyse</category><dc:creator>Kilian Treß</dc:creator><description>FedEx hat das Frachtgeschäft abgespalten, die Lagerlogistik verkauft und die Prognose angehoben. Was hinter dem Gewinnsprung steckt, warum die Quartalsdividende kleiner geworden ist und wie der Konzern im Vergleich zu UPS und DHL dasteht.</description><enclosure url="https://dividenden-rechner.github.io/aktien-hub/assets/magazin/fedex-lieferwagen-dampf-foto.jpg" type="image/jpeg" length="0"/><content:encoded><![CDATA[<div class="admonition kurz">
+<p class="admonition-title">Kurz gesagt</p>
+<p><strong>Die Zahlen:</strong> Umsatz 22,9 Mrd. $ (+12 %), bereinigtes Ergebnis je Aktie 3,74 $ (+28 %), Prognose für 2026 auf 18,00 bis 18,60 $ angehoben.
+<strong>Der Haken:</strong> Etwa vier Prozentpunkte des Umsatzwachstums kommen aus höheren Treibstoffzuschlägen, und nach Steuern bleiben 290 Mio. $ (-55 %).
+<strong>Die Dividende:</strong> 1,22 $ je Quartal statt zuvor 1,45 $. Die Kennzahlen im Hub gehen noch vom alten Betrag aus.
+<strong>Der Vergleich:</strong> Mit 1,6 % Rendite ist FedEx der Wachstumswert unter den Paketkonzernen, UPS zahlt mehr als das Dreifache.</p>
+</div>
+<p>FedEx ist ein anderes Unternehmen als vor einem Jahr. Am 1. Juni hat der Konzern sein Speditionsgeschäft als FedEx Freight an die Börse gebracht, am 1. Oktober die Lagerlogistik für 1,4 Mrd. $ an CMA CGM verkauft und seit Juni das Geschäftsjahr auf das Kalenderjahr umgestellt. Übrig bleibt das Geschäft mit Expresspaketen, und das wächst kräftig. Am 28. Oktober hat FedEx die Zahlen für die Monate Juli bis September vorgelegt. Für Dividendenanleger sind sie in zwei Richtungen interessant: Der Gewinn wächst kräftig, die Dividende ist kleiner geworden.</p>
+<h2 id="die-zahlen-wachstum-mit-gegenwind">Die Zahlen: Wachstum mit Gegenwind</h2>
+<h3 id="was-das-quartal-gebracht-hat">Was das Quartal gebracht hat</h3>
+<p>Der Umsatz stieg im dritten Quartal um 12 % auf 22,9 Mrd. $, das bereinigte operative Ergebnis um 16 % auf 1,2 Mrd. $, die bereinigte Marge auf 5,3 %. Je Aktie blieben 3,74 $, 28 % mehr als im Vorjahr. Die Prognose für das Kalenderjahr hat der Konzern auf 18,00 bis 18,60 $ je Aktie angehoben, nach zuvor 16,90 bis 18,10 $. Die Mitte der Spanne entspricht einem Plus von 23 %. Dazu kommt ein bereinigter freier Cashflow von rund 4 Mrd. $.</p>
+<div class="tablewrap"><table>
+<thead>
+<tr>
+<th>Segment</th>
+<th>Umsatz</th>
+<th>Veränderung</th>
+<th>Bereinigtes operatives Ergebnis</th>
+<th>Veränderung</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>U.S. Domestic</td>
+<td>14,7 Mrd. $</td>
+<td>+10 %</td>
+<td>972 Mio. $</td>
+<td>+7 %</td>
+</tr>
+<tr>
+<td>International</td>
+<td>7,5 Mrd. $</td>
+<td>+17 %</td>
+<td>297 Mio. $</td>
+<td>+52 %</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="woher-das-wachstum-kommt">Woher das Wachstum kommt</h3>
+<p>Das internationale Geschäft trägt den Sprung. Der Export wächst mit höheren Preisen und mehr Menge, vor allem aus Asien und den USA, und die Luftfracht in Pfund legte im Quartal in jedem Monat zweistellig zu. Im Inlandsgeschäft stieg die Zahl der Pakete bei Priority und Ground nur um wenige Prozent, die Erlöse je Paket dagegen deutlich. Die Marge im US-Geschäft ging trotzdem leicht zurück, weil Subunternehmer mehr kosten, der neue Pilotenvertrag Geld verschlingt und der Treibstoff die Marge belastet.</p>
+<p>Eine Einschränkung gehört dazu. Für das Gesamtjahr erwartet FedEx ein Umsatzplus von rund 12 %, davon etwa vier Punkte aus Treibstoffzuschlägen. Im vierten Quartal sollen es im Inland drei, im Auslandsgeschäft sieben Punkte sein. Zuschläge geben die Kosten des Konzerns an Kunden weiter. Sie lassen den Umsatz steigen, bringen aber nur dann Gewinn, wenn der Treibstoff nicht schneller teurer wird als der Zuschlag. Der Bericht räumt ein, dass das bisher meist gelungen sei.</p>
+<h3 id="warum-nach-steuern-nur-290-millionen-dollar-bleiben">Warum nach Steuern nur 290 Millionen Dollar bleiben</h3>
+<p>Im Bericht steht ein Nettogewinn von 290 Mio. $, 55 % weniger als vor einem Jahr, je Aktie 1,21 $ gegenüber 3,74 $ bereinigt. Der Unterschied entsteht vor allem durch einen Buchverlust von 1,2 Mrd. $ auf die verbliebene Beteiligung an FedEx Freight, den der Konzern nach Marktpreisen bewertet. Das ist eine Buchung ohne Geldfluss und dürfte sich mit dem Kurs der Freight-Aktie weiter bewegen. Der operative Gewinn nach den gültigen Rechnungslegungsregeln stieg um 10 % auf 1,1 Mrd. $.</p>
+<h2 id="die-dividende-kleiner-offenbar-durch-die-abspaltung">Die Dividende: kleiner, offenbar durch die Abspaltung</h2>
+<p>Der Vorstand hat am 21. August eine Quartalsdividende von 1,22 $ je Aktie beschlossen, gezahlt am 1. Oktober. Ein Jahr zuvor waren es 1,45 $. Hochgerechnet sind das 4,88 $ im Jahr statt 5,80 $, 16 % weniger. Die Aktionäre haben im Gegenzug Aktien von FedEx Freight bekommen, 80,1 % der Anteile wurden verteilt. Offenbar hat FedEx die Dividende an das kleinere Unternehmen angepasst, eine ausdrückliche Begründung nennt der Bericht nicht. Wer die Freight-Aktien behalten hat, kann die Kürzung deshalb nicht einfach als Verlust zählen.</p>
+<p>Am Kurs gemessen bringt die Aktie jetzt etwa 1,6 % Rendite. Gemessen an der Prognose für 2026 nimmt die Dividende rund 27 % des bereinigten Gewinns in Anspruch, das ist komfortabel. Dazu kauft FedEx eigene Aktien: Von Juni bis September flossen 2,0 Mrd. $ in den Rückkauf, 6,3 Millionen Aktien zu im Schnitt rund 320 $. Weitere 4,3 Mrd. $ sind genehmigt. Seit dem Geschäftsjahr 2013 hat der Konzern die Zahl der Aktien nach eigenen Angaben um ein Viertel verringert, im vierten Quartal rechnet er mit rund 238 Millionen.</p>
+<h2 id="fedex-im-vergleich">FedEx im Vergleich</h2>
+<p>Die drei Paketkonzerne gehören nach Geschäftsmodell zusammen: UPS im Inland, DHL im internationalen Express- und Paketgeschäft, FedEx dazwischen.</p>
+<div class="tablewrap"><table>
+<thead>
+<tr>
+<th>Unternehmen</th>
+<th>Rendite</th>
+<th>KGV</th>
+<th>Dividende in % des freien Cashflows</th>
+<th>Operative Marge</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><img class="tl" src="https://dividenden-rechner.github.io/aktien-hub/assets/logos/fdx.png" alt="" width="24" height="24" loading="lazy"><a href="https://dividenden-rechner.github.io/aktien-hub/aktien-hub/fedex/">FedEx</a></td>
+<td>1,6 %</td>
+<td>16,4</td>
+<td>27 %</td>
+<td>5,8 %</td>
+</tr>
+<tr>
+<td><img class="tl" src="https://dividenden-rechner.github.io/aktien-hub/assets/logos/ups.png" alt="" width="24" height="24" loading="lazy"><a href="https://dividenden-rechner.github.io/aktien-hub/aktien-hub/united-parcel-service/">UPS</a></td>
+<td>5,9 %</td>
+<td>21,4</td>
+<td>85 %</td>
+<td>8,9 %</td>
+</tr>
+<tr>
+<td><span class="tl tl-0"></span><a href="https://dividenden-rechner.github.io/aktien-hub/aktien-hub/dhl-group/">DHL Group</a></td>
+<td>3,3 %</td>
+<td>18,7</td>
+<td>34 %</td>
+<td>7,4 %</td>
+</tr>
+</tbody>
+</table></div>
+<p>Die Rendite von FedEx ist in der Tabelle von uns auf den neuen Dividendenbetrag umgerechnet, der Hub zeigt bislang noch 1,9 %. FedEx ist der günstigste der drei, hat aber auch die niedrigste Marge. UPS zahlt viel und braucht dafür fast den gesamten freien Cashflow, DHL liegt dazwischen. Wer Dividenden sucht, findet sie bei UPS und DHL, wer auf Wachstum durch Sparprogramme setzt, bei FedEx.</p>
+<h2 id="wo-der-konzern-sparen-will">Wo der Konzern sparen will</h2>
+<p>Das Sparprogramm Network 2.0 legt Stationen zusammen. Rund 630 sind umgebaut, mehr als 260 geschlossen, etwa 65 % der geeigneten Sendungen laufen schon über das neue Netz. Bis Jahresende soll es rund 1 Mrd. $ an Einsparungen bringen, bis Ende 2027 sollen es 2 Mrd. $ sein. Parallel baut FedEx das Europageschäft um und beteiligt sich im Konsortium an dem Paketautomaten-Betreiber InPost. Bis 2029 will der Konzern 6 Mrd. $ bereinigten freien Cashflow erreichen, die Investitionen sollen dann bei 4 % des Umsatzes liegen, in diesem Jahr sind es 3,9 Mrd. $.</p>
+<h2 id="was-dagegen-spricht">Was dagegen spricht</h2>
+<p>Die Kosten für das Hauptgeschäft steigen weiter, vom Pilotenvertrag bis zu den Subunternehmern. Für das vierte Quartal erwartet der Konzern im Inland eine Marge, die moderat unter dem Vorjahr liegt, und eine Wachstumsrate, die ohne Treibstoffzuschläge niedriger ausfällt. Der Verkehr in der Ground-Economy-Sparte schrumpft weiter. Hinzu kommt die Folge des Zollurteils: Nachdem der Oberste Gerichtshof im Februar die Notstandszölle für ungültig erklärt hat, muss FedEx Rückerstattungen an Kunden weiterreichen. Im bereinigten freien Cashflow sind 2,0 Mrd. $ dafür abgezogen. Vierzehn Sammelklagen von Kunden laufen, der Konzern kann die finanziellen Folgen nach eigenen Angaben noch nicht abschätzen. Der Finanzchef führt das Amt derzeit kommissarisch.</p>
+<h2 id="was-als-nachstes-ansteht">Was als Nächstes ansteht</h2>
+<p>Das Weihnachtsgeschäft entscheidet über das vierte Quartal. Der Konzern hat für das Quartal ein bereinigtes Ergebnis von 6,03 bis 6,63 $ je Aktie eingeplant, ein Wert, der deutlich höher liegt als im dritten Quartal. Ob er erreicht wird, zeigt sich mit dem Bericht zum Jahresende.</p>
+<p>Das ist keine Anlageberatung.</p>
+<details class="quellen"><summary>Quellen</summary><ul>
+<li>FedEx, Calendar Third Quarter 2026 Earnings Presentation, 28.10.2026</li>
+<li>FedEx, Quartalsbericht Form 10-Q für den Zeitraum bis 30.09.2026</li>
+<li>Eigene Auswertung der Kennzahlen im Aktien-Hub, Stand 26./27.11.2026</li>
+</ul></details><p class="google-quelle"><a href="https://www.google.com/preferences/source?q=dividenden-rechner.de" rel="noopener" target="_blank">Bei Google als bevorzugte Quelle hinzufügen</a></p>]]></content:encoded></item>
 <item><title>Infineon: Rechenzentren fast verdoppelt, 2027 soll der Umsatz um mehr als 20 % wachsen</title><link>https://dividenden-rechner.github.io/aktien-hub/news/infineon-rechenzentren-hanebeck-geschaeftsjahr-2027/</link><guid isPermaLink="true">https://dividenden-rechner.github.io/aktien-hub/news/infineon-rechenzentren-hanebeck-geschaeftsjahr-2027/</guid><pubDate>Fri, 27 Nov 2026 10:30:00 +0100</pubDate><category>Quartalszahlen</category><dc:creator>Kilian Treß</dc:creator><description>Infineon hat das Geschäftsjahr 2026 mit einem Rekordquartal beendet. Konzernchef Jochen Hanebeck setzt auf die Stromversorgung für KI-Rechenzentren, die Aktie legt heute um knapp 5 % zu. Was die Zahlen zeigen und wo die Risiken liegen.</description><enclosure url="https://dividenden-rechner.github.io/aktien-hub/assets/magazin/infineon-q4-2026-foto.jpg" type="image/jpeg" length="0"/><content:encoded><![CDATA[<div class="admonition kurz">
 <p class="admonition-title">Kurz gesagt</p>
 <p><strong>Umsatz Geschäftsjahr 2026:</strong> 16,4 Mrd. Euro (+12 %)
@@ -628,52 +723,5 @@
 <li><a href="https://seekingalpha.com/news/4675768-hewlett-packard-enterprise-surges-18-as-tech-stocks-rally-earnings-on-tap" rel="noopener">Seeking Alpha: Hewlett Packard Enterprise surges 18% as tech stocks rally, earnings on tap</a></li>
 <li><a href="https://investors.hpe.com/?lang=en" rel="noopener">HPE Investor Relations</a></li>
 <li>Aktien-Hub von dividenden-rechner.de, Daten der SEC</li>
-</ul></details><p class="google-quelle"><a href="https://www.google.com/preferences/source?q=dividenden-rechner.de" rel="noopener" target="_blank">Bei Google als bevorzugte Quelle hinzufügen</a></p>]]></content:encoded></item>
-<item><title>BHP und das Kupfer-Dilemma: Das Erz wird ärmer, die Minen teurer</title><link>https://dividenden-rechner.github.io/aktien-hub/news/bhp-erzgehalt-sinkt-kupfer-olympic-dam-block-caving/</link><guid isPermaLink="true">https://dividenden-rechner.github.io/aktien-hub/news/bhp-erzgehalt-sinkt-kupfer-olympic-dam-block-caving/</guid><pubDate>Mon, 23 Nov 2026 07:25:00 +0100</pubDate><category>Analyse</category><dc:creator>Kilian Treß</dc:creator><description>Weltweit sinkt der Kupfergehalt im Erz, neue Minen kosten dreimal so viel wie vor 20 Jahren. Wie BHP in Südaustralien mit Block Caving gegensteuert und was das für die Dividende heißt.</description><enclosure url="https://dividenden-rechner.github.io/aktien-hub/assets/magazin/bhp-jimblebar-eisenerz-foerderanlage.jpg" type="image/jpeg" length="0"/><content:encoded><![CDATA[<div class="admonition kurz">
-<p class="admonition-title">Kurz gesagt</p>
-<p><strong>Das Problem:</strong> Der durchschnittliche Kupfergehalt im Erz fällt weltweit von 0,93 auf 0,62 %. Eine neue Mine kostet je Tonne Jahreskapazität rund dreimal so viel wie noch vor 20 Jahren.
-<strong>Die Antwort:</strong> BHP will die Kupferproduktion bis 2035 um 40 % auf rund 2 Mio. Tonnen im Jahr steigern. In Südaustralien soll sie von 321.000 auf etwa 500.000 Tonnen wachsen.
-<strong>Die Dividende:</strong> Das Kupfergeschäft erzeugte im Geschäftsjahr 2026 rund 5 Mrd. Dollar freien Cashflow und soll sein Wachstum nach BHPs Planung selbst bezahlen. Zuletzt zahlte BHP 6,4 Mrd. Dollar aus, gedeckt von 9,3 Mrd. Dollar freiem Cashflow.
-<strong>Das Risiko:</strong> Die Planung hängt an Großprojekten im Untergrund und an einer neuen Schmelze. Verzögerungen und Kostenüberschreitungen gehören zum Geschäft.</p>
-</div>
-<h2 id="ein-rohstoff-der-schneller-knapp-wird-als-gedacht">Ein Rohstoff, der schneller knapp wird als gedacht</h2>
-<p>Kupfer ist der Rohstoff hinter Stromnetzen, Elektroautos und Rechenzentren. Die weltweite Nachfrage dürfte von rund 35 Millionen Tonnen in diesem Jahr auf etwa 47 Millionen Tonnen im Jahr 2040 steigen. Gleichzeitig schrumpft die Förderung der bestehenden Minen. Bis Ende der 2030er Jahre fehlen demnach bis zu 10 Millionen Tonnen neues Primärkupfer im Jahr.</p>
-<p>Das ist die eine Hälfte der Geschichte. Die andere ist der sinkende Erzgehalt, und er verändert die Kosten jeder neuen Mine.</p>
-<h2 id="erzgehalt-auf-talfahrt-kosten-im-aufwind">Erzgehalt auf Talfahrt, Kosten im Aufwind</h2>
-<p><img alt="BHP-Folie: Kapitalintensität neuer Kupferprojekte und Erzgehalt" src="https://dividenden-rechner.github.io/aktien-hub/assets/magazin/bhp-folie-erzgehalt-kapitalintensitaet.jpg" />
-<em>Folie 10 der BHP-Präsentation vom November 2026: Kapitalintensität neuer Kupferprojekte (blau, links) und weltweiter Erzgehalt (orange). Rechts die weltweiten Wachstumsinvestitionen in Milliarden Dollar.</em></p>
-<p>Der durchschnittliche Gehalt des verarbeiteten Erzes lag Anfang der 2000er Jahre bei rund 0,93 % Kupfer und ist heute auf etwa 0,62 % gefallen. Wer dieselbe Tonne Metall will, muss also deutlich mehr Gestein bewegen, mahlen und aufbereiten. Dazu kommen tiefere und abgelegenere Lagerstätten, strengere Genehmigungen und politische Risiken in den Förderländern.</p>
-<p>Die Rechnung dazu liefert die blaue Säule: Für 2001 bis 2005 setzt BHP rund 9.000 Dollar Investition je Tonne Jahreskapazität an. Für Projekte der Jahre 2026 bis 2035 sind es rund 27.000 Dollar, das Dreifache. Zugleich investiert die Branche weniger in Wachstum. Die weltweiten Ausgaben liegen mit 15 bis 16 Mrd. Dollar nur noch bei weniger als der Hälfte des Höchststands von rund 35 Mrd. Dollar im Jahr 2013. Wenn die Nachfrage steigt und das Angebot teurer wird, hilft das den Förderern, die bereits Zugriff auf große Vorkommen haben.</p>
-<h2 id="bhps-plan-weniger-gehalt-aber-viel-niedrigere-kosten">BHPs Plan: weniger Gehalt, aber viel niedrigere Kosten</h2>
-<p>BHP sitzt auf einem solchen Vorkommen. Olympic Dam in Südaustralien enthält nach Unternehmensangaben 88,1 Mio. Tonnen Kupfer (+2 %) und soll rund 80 Jahre produzieren. Auch hier sinkt der Gehalt: Beim Übergang auf Block Caving fällt er im Olympic-Dam-Erz von 2,0 auf 1,6 %. Bei Carrapateena geht er von 1,2 auf 1,1 % zurück.</p>
-<p>Block Caving ist ein Abbauverfahren für große, vergleichsweise arme Erzkörper. Statt jede Tonne einzeln herauszusprengen, schneidet der Betrieb den Erzkörper am unteren Ende an und unterhöhlt ihn. Das Gestein darüber bricht unter seinem eigenen Gewicht in Brocken. Sie rutschen in trichterförmige Entnahmepunkte am Boden des Berges und werden dort von Radladern abtransportiert. Nach oben setzt sich das Gebirge nach, an der Oberfläche entsteht eine Senke.</p>
-<p><img alt="Schema eines Block Caves: Erzkörper, gebrochenes Erz, nachgebrochenes Deckgebirge und Senke an der Oberfläche" src="https://dividenden-rechner.github.io/aktien-hub/assets/magazin/block-caving-schema-groundhog.jpg" />
-<em>So funktioniert ein Block Cave: Der Erzkörper (orange) wird unterhöhlt, bricht und läuft in die Entnahmepunkte am Boden. Darüber sackt das Gebirge ab. Grafik: GroundHog, aus dem LinkedIn-Newsletter „Mine Digitization &amp; Automation“ vom 8. Juli 2025.</em></p>
-<p>Der Reiz liegt in den Kosten: Das Verfahren erlaubt große Mengen bei niedrigen Stückkosten, weil die Schwerkraft einen Teil der Arbeit übernimmt. Es braucht weniger Personal als der gezielte Abbau im Untergrund, die Fixkosten verteilen sich auf mehr Tonnen und Maschinen lassen sich leichter automatisieren. Der Preis dafür ist hohe Betriebsdisziplin. Wie das Gestein bricht und wo es abfließt, lässt sich nur begrenzt steuern, und genau deshalb gilt die Kontrolle des laufenden Betriebs als die Schwachstelle des Verfahrens.</p>
-<p><img alt="BHP-Folie: Block Caving senkt die Förderkosten" src="https://dividenden-rechner.github.io/aktien-hub/assets/magazin/bhp-folie-block-caving-kosten.jpg" />
-<em>Folie 40 der BHP-Präsentation: Betriebskosten der Förderung in Dollar je Pfund Kupfer (links) und geplante Produktion nach Abbauverfahren in Kilotonnen (rechts).</em></p>
-<p>Das Ergebnis überzeugt: In Olympic Dam fallen die Förderkosten von 1,6 auf 1,0 Dollar je Pfund (-35 %), in Carrapateena von 1,7 auf 0,7 Dollar (-55 %). Der geringere Gehalt kostet also weniger, als die neue Methode spart. Die Produktion soll damit von 321.000 Tonnen im Geschäftsjahr 2026 auf rund 500.000 Tonnen 2035 und bis zu 650.000 Tonnen 2040 steigen. Den Zuwachs liefert fast vollständig das Block Caving: 220.000 Tonnen 2035, 370.000 Tonnen 2040.</p>
-<h2 id="die-schmelze-und-die-nebenprodukte">Die Schmelze und die Nebenprodukte</h2>
-<p>Ärmeres Erz hat eine zweite Folge. Das Verhältnis von Kupfer zu Schwefel fällt unter 1,5, und das stellt die bestehende Schmelze vor ein Problem. BHP plant deshalb eine zweistufige Anlage. Sie kostet 3,2 bis 4,1 Mrd. Dollar, die Investitionsentscheidung soll im zweiten Halbjahr 2027 fallen, die erste Produktion für 2032 anvisiert ist.</p>
-<p>Ein Teil der Kosten holt BHP über Nebenprodukte herein. Im Geschäftsjahr 2026 brachten sie in Südaustralien 2,3 Mrd. Dollar ein. Die Stückkosten des Standorts lagen dadurch bei nur 0,32 Dollar je Pfund Kupfer. Bis 2035 soll die Menge der Nebenprodukte um die Hälfte auf rund 300.000 Tonnen Kupferäquivalent steigen. Der Standort erzielte zuletzt ein Rekord-EBITDA von 3,2 Mrd. Dollar und rund 1,0 Mrd. Dollar freien Cashflow.</p>
-<h2 id="ist-die-dividende-gedeckt">Ist die Dividende gedeckt?</h2>
-<p>BHP schüttet nach der Dividendenpolitik mindestens 50 % des bereinigten Gewinns aus. Die Dividende folgt damit dem Rohstoffzyklus.</p>
-<p><img alt="Dividende je Aktie von BHP, Geschäftsjahre 2016 bis 2025" src="https://dividenden-rechner.github.io/aktien-hub/assets/magazin/bhp-hub-dividende-je-aktie.jpg" />
-<em>Dividende je Aktie nach Geschäftsjahr (endet jeweils am 30. Juni). Aktien-Hub von dividenden-rechner.de, Daten aus den Jahresberichten bei der SEC.</em></p>
-<p>Auf den Spitzenwert von 3,52 Dollar im Geschäftsjahr 2022 folgten drei Rückgänge auf zuletzt 1,26 Dollar (-16,7 % zum Vorjahr). Wer BHP wegen der Dividende hält, kauft einen Wert mit schwankender Ausschüttung. Die Rendite liegt beim Kurs von 30,55 Euro bei 3,75 %.</p>
-<p><img alt="Freier Cashflow von BHP, Geschäftsjahre 2016 bis 2025" src="https://dividenden-rechner.github.io/aktien-hub/assets/magazin/bhp-hub-free-cashflow.jpg" />
-<em>Freier Cashflow nach Geschäftsjahr. Aktien-Hub von dividenden-rechner.de.</em></p>
-<p>Gedeckt ist die Zahlung klar: Im Geschäftsjahr 2025 flossen 6,4 Mrd. Dollar an die Aktionäre, das sind 69 % des freien Cashflows von 9,3 Mrd. Dollar. Die <a class="glossar-link" href="https://dividenden-rechner.github.io/aktien-hub/grundlagen/ausschuettungsquote/" title="Ausschüttungsquote (Payout Ratio): Wie sicher ist die Dividende?">Ausschüttungsquote</a> auf den Gewinn lag bei 71 %. Für das Geschäftsjahr 2026 meldete BHP einen um 30 % höheren bereinigten Gewinn von 13 Mrd. Dollar. Das spricht für eine höhere Dividende im nächsten Zyklus, auch wenn der freie Cashflow seit dem Rekord von 26,3 Mrd. Dollar 2022 gesunken ist.</p>
-<p>Wie teuer das Kupferwachstum wird, zeigt die Phase 1 der Planung: Die Minen kosten 5,8 bis 7,5 Mrd. Dollar, die Spitze liegt bei rund 3 Mrd. Dollar im Jahr. Dagegen stehen rund 35 Mrd. Dollar freier Cashflow aus Kupfer bis 2035. BHP kalkuliert mit einer Rendite von 14 bis 17 % je Projekt und einem Break-even von 1,70 Dollar je Pfund. Bei Wettbewerbern sind es im Schnitt 3,10 Dollar. Der Kupferpreis lag im Geschäftsjahr 2026 bei rund 5,5 bis 5,6 Dollar.</p>
-<h2 id="einordnung">Einordnung</h2>
-<p>BHP macht aus einem Branchenproblem ein Argument. Sinkende Gehalte treiben die Preise, und wer die Kosten pro Pfund in dieser Lage senkt, verdient doppelt. Für Olympic Dam und Carrapateena sind die Zahlen glaubwürdig. Für Dividendenanleger ist wichtig, dass der Konzern Kupfer aus eigener Kraft finanzieren will und die Ausschüttung nicht dafür kürzen muss.</p>
-<p>Offene Punkte bleiben: Die Größe des geplanten Block Caves ist noch in der Studie, die Schmelzen-Entscheidung fällt erst 2027, die Wasser- und Stromversorgung muss mitwachsen. Und BHP hat mit dem Kaliprojekt Jansen gerade gezeigt, dass Großprojekte teurer werden können als geplant. Nach eigener Angabe liefen seit 2016 immerhin 80 % der Projekte im Zeit- und Kostenrahmen. Die Dividende bleibt von den Rohstoffpreisen abhängig, das gilt für Kupfer wie für Eisenerz. Der Kupferanteil im Konzern wächst dabei weiter.</p>
-<details class="quellen"><summary>Quellen</summary><ul>
-<li><a href="https://www.bhp.com/what-we-do/global-locations/australia/south-australia/olympic-dam" rel="noopener">BHP: Olympic Dam, South Australia</a></li>
-<li><a href="https://www.miningweekly.com/article/olympic-dam-growth-projects-australia-update-2026-09-11" rel="noopener">Mining Weekly: Olympic Dam growth projects, Update vom 11.09.2026</a></li>
-<li><a href="https://www.indailysa.com.au/news/business/2026/10/20/truly-enormous-australias-biggest-copper-mine-even-bigger" rel="noopener">InDaily: Australia's biggest copper mine even bigger, 20.10.2026</a></li>
-<li>GroundHog: „Week 1: Inside the Cave - How Block Caving Really Works“, LinkedIn-Newsletter Mine Digitization &amp; Automation, 08.07.2025</li>
-<li>BHP-Präsentation "Copper South Australia: Unlocking a world-class copper province", Standortbesichtigung, November 2026</li>
-<li>Aktien-Hub von dividenden-rechner.de, Daten der SEC, Stand 20.11.2026</li>
 </ul></details><p class="google-quelle"><a href="https://www.google.com/preferences/source?q=dividenden-rechner.de" rel="noopener" target="_blank">Bei Google als bevorzugte Quelle hinzufügen</a></p>]]></content:encoded></item>
 </channel></rss>
