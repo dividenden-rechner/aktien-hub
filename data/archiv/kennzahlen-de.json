@@ -22869,6 +22869,66 @@
      "geprueft": false
     }
    ]
+  },
+  "IFX.DE": {
+   "isin": "DE0006231004",
+   "werte": [
+    {
+     "jahr": "2025",
+     "kennzahl": "umsatz",
+     "wert": 14662000,
+     "einheit": "tsd",
+     "waehrung": "EUR",
+     "quelle": "https://www.infineon.com/ (Investor Presentation Q4 FY26, 2026-11-10, Datei b083890e-2026-11-10-q4-fy26-investor-presentation-v01-00-en.pdf)",
+     "seite": 47,
+     "hinweis": "Gesamtumsatz FY25 laut Präsentation; nicht gegen Geschäftsbericht geprüft",
+     "geprueft": false
+    },
+    {
+     "jahr": "2026",
+     "kennzahl": "umsatz",
+     "wert": 16353000,
+     "einheit": "tsd",
+     "waehrung": "EUR",
+     "quelle": "https://www.infineon.com/ (Investor Presentation Q4 FY26, 2026-11-10, Datei b083890e-2026-11-10-q4-fy26-investor-presentation-v01-00-en.pdf)",
+     "seite": 47,
+     "hinweis": "Gesamtumsatz FY26 laut Präsentation; nicht gegen Geschäftsbericht geprüft",
+     "geprueft": false
+    },
+    {
+     "jahr": "2025",
+     "kennzahl": "segmentergebnis",
+     "wert": 2560000,
+     "einheit": "tsd",
+     "waehrung": "EUR",
+     "quelle": "https://www.infineon.com/ (Investor Presentation Q4 FY26, 2026-11-10, Datei b083890e-2026-11-10-q4-fy26-investor-presentation-v01-00-en.pdf)",
+     "seite": 47,
+     "hinweis": "Segmentergebnis Gruppe FY25 laut Präsentation",
+     "geprueft": false
+    },
+    {
+     "jahr": "2026",
+     "kennzahl": "segmentergebnis",
+     "wert": 3223000,
+     "einheit": "tsd",
+     "waehrung": "EUR",
+     "quelle": "https://www.infineon.com/ (Investor Presentation Q4 FY26, 2026-11-10, Datei b083890e-2026-11-10-q4-fy26-investor-presentation-v01-00-en.pdf)",
+     "seite": 47,
+     "hinweis": "Segmentergebnis Gruppe FY26 laut Präsentation",
+     "geprueft": false
+    },
+    {
+     "jahr": "2026",
+     "kennzahl": "dividende_je_aktie",
+     "wert": 0.38,
+     "einheit": "je Aktie",
+     "waehrung": "EUR",
+     "quelle": "https://www.infineon.com/ (Investor Presentation Q4 FY26, 2026-11-10, Datei b083890e-2026-11-10-q4-fy26-investor-presentation-v01-00-en.pdf)",
+     "seite": "1-16",
+     "hinweis": "Aus früherer Auswertung der Seiten 1–16, Seite noch nicht erneut geprüft",
+     "geprueft": false
+    }
+   ]
   }
  }
 }
