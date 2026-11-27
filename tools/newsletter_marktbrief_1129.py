@@ -3,16 +3,16 @@ src=open('newsletter-archiv/2026-11-14-marktbrief.html').read()
 head=src[:src.find('<tr><td style="padding:18px 28px 0')]
 head=head.replace('Wochenende, 14. November 2026','Sonntag, 29. November 2026')
 foot=src[src.find('<tr><td style="padding:24px 28px 8px 28px'):]
-foot=re.sub(r'Fotos: .*?<br>','Fotos: Jacob Skowronek (Unsplash), UniCredit (Pressefoto).<br>',foot,count=1,flags=re.S)
+foot=re.sub(r'Fotos: .*?<br>','Fotos: Jacob Skowronek (Unsplash), Scott K (Unsplash), Orcel-Bild KI-generiert.<br>',foot,count=1,flags=re.S)
 B='https://www.dividenden-rechner.de'
 intro=("Hallo zusammen,<br><br>ein Tabakkonzern greift nach der halben Welt, ein Vermieter von Casinos zahlt 7 Prozent, "
 "ein Dividendenkönig erhöht um gerade mal ein Prozent, und die Fed rückt näher. Vier Geschichten und der Ausblick auf die neue Woche.<br><br>Viel Spaß beim Lesen<br>Divi")
 items=[
 ("ALTRIA","Altria will zurück in die Welt","altria-imperial-japan-tobacco-philip-morris-bat","assets/magazin/altria-marlboro-regal-foto.jpg","Zigarettenregal mit Marlboro-Packungen in einem US-Geschäft",
  "Zu Hause verkauft Altria die Marlboro, im Rest der Welt gehört die Marke Philip Morris. Nun soll offenbar ein Zugriff auf Imperial Brands den Konzern zurück auf die Weltkarte bringen. Wer dabei mitspielen könnte und was das für Japan Tobacco und BAT bedeuten könnte, lest ihr im Artikel."),
-("UNICREDIT","Das Imperium des Andrea Orcel","orcel-unicredit-imperium-bank-of-europe","assets/magazin/unicredit-orcel-2026-11-26-foto.jpg","UniCredit-Chef Andrea Orcel",
+("UNICREDIT","Das Imperium des Andrea Orcel","orcel-unicredit-imperium-bank-of-europe","assets/magazin/unicredit-orcel-ki-mailand-foto.jpg","Silhouette eines Bankchefs vor dem Mailänder Dom (KI-Bild)",
  "Als Andrea Orcel 2021 antrat, galt die UniCredit als Sanierungsfall. Heute greift die Bank nach Beteiligungen quer durch Europa, und die Aktie hat sich beinahe verneunfacht. Wie weit reicht der Plan, und was macht ihn so schwer zu stoppen?"),
-("VICI PROPERTIES","Casinomieten mit 7 Prozent Rendite","vici-properties-casino-mieten-dividende-7-prozent",None,None,
+("VICI PROPERTIES","Casinomieten mit 7 Prozent Rendite","vici-properties-casino-mieten-dividende-7-prozent","assets/magazin/vici-las-vegas-strip-foto.jpg","Las Vegas Strip in der Abenddämmerung",
  "Wer in Las Vegas spielt, zahlt am Ende auch die Miete für VICI. Der Vermieter von Caesars Palace und Co. führt im Hub die Rendite-Liste an und schüttet nur einen Teil des Geldes aus. Wo das Wachstum herkommen soll und was die Bilanz verrät."),
 ("HORMEL","Zum 61. Mal erhöht, aber nur um einen Hauch","hormel-foods-dividende-61-jahre-erhoehung-1-prozent",None,None,
  "SPAM, Planters, Jennie-O: Hormel zahlt seit 1928 ohne Pause Dividende. Die Erhöhung fällt diesmal winzig aus, der Gewinn ist geschrumpft, und am Donnerstag kommen die Zahlen. Reicht das Geschäft für die Serie?"),

@@ -10,8 +10,12 @@ logo_name: "VICI Properties"
 logo_symbol: VICI
 logo_domain: viciproperties.com
 logo_file: assets/logos/hub/VICI.png
+image: assets/magazin/vici-las-vegas-sphere-foto.jpg
+image_alt: "Luftbild der Las Vegas Sphere mit violetter Beleuchtung vor Hotels und Bergen"
+image_credit: "Foto: Erik McLean auf Unsplash"
+image_source: "https://unsplash.com/de/fotos/X6xlM8Job2k?utm_source=dividenden-rechner&utm_medium=referral"
+image_lizenz: Unsplash
 ---
-<!-- PRÜFEN: Aufmacherfoto fehlt. Unsplash-Foto auswählen (z. B. Las-Vegas-Strip, anderes Motiv als im Artikel vom Samstag) und image, image_alt, image_credit, image_source, image_lizenz ergänzen. -->
 <!-- PRÜFEN: Zinsvergleich nutzt die Rendite zehnjähriger US-Staatsanleihen von rund 4,9 % (Stand 27.11.2026, Vorbörse). Aktuellen Wert vor Veröffentlichung prüfen. -->
 <!-- PRÜFEN: Aussagen zu Mieteranteilen und Kursverlust seit Jahresbeginn stammen aus einer Analystenauswertung (Substack), nicht aus VICI-Unterlagen. -->
 
