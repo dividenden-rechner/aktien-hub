@@ -856,7 +856,7 @@ def build_post(p, posts, ordner="news"):
     fs = _sym_slug().get(re.sub(r"\.NE$", "", sym_norm(p)))
     if fs:
         o += (f'<aside class="related"><h2>Zur Firma</h2><ul><li><a href="{pre}dividende/{fs[1]}/">{esc(fs[0])}: Dividende, Kennzahlen und Vergleich mit ähnlichen Aktien</a></li></ul></aside>\n')
-    others = [x for x in posts if x["slug"] != slug and x.get("typ") != "kurz"][:3]
+    others = [x for x in posts if x["slug"] != slug and x.get("typ") not in ("kurz", "evergreen")][:3]
     if others:
         o += '<aside class="related"><h2>Weitere Artikel</h2><ul>\n' + "\n".join(f'<li><a href="{pre}news/{x["slug"]}/">{esc(x["title"])}</a></li>' for x in others) + "\n</ul></aside>\n"
     o += (f'<aside class="note" style="background:#f0fdf4;border-left-color:#10b981"><strong>Passende Werkzeuge:</strong> Prüfe Aktien im <a href="{pre}aktien-hub/">Aktien-Hub</a>, '
@@ -1294,14 +1294,17 @@ def main():
             import shutil; shutil.rmtree(x)
     posts = [build_post(p, posts) for p in posts]
     build_vorschau(vorschau, posts)
+    # Evergreen-Ranglisten (typ: evergreen) sind nur fuer den Newsletter gedacht: Seiten bleiben erreichbar,
+    # stehen aber in keiner Liste (Startseite, News-Uebersicht, Feeds)
+    sicht = [x for x in posts if x.get("typ") != "evergreen"]
     if posts:
-        build_index(posts); build_feed(posts)
+        build_index(sicht); build_feed(sicht)
     else:
         for f in ("news/index.html", "news/feed.xml"):
             if os.path.exists(f): os.remove(f)
-    longp = [x for x in posts if x.get("typ") != "kurz"]
+    longp = [x for x in sicht if x.get("typ") != "kurz"]
     glossar.patch_erklaerseiten(longp)
-    patch_sitemap(posts); patch_llms(posts); patch_home(longp); patch_news(posts); write_mag_index(posts); patch_nav_everywhere(bool(posts))
+    patch_sitemap(posts); patch_llms(sicht); patch_home(longp); patch_news(sicht); write_mag_index(sicht); patch_nav_everywhere(bool(posts))
     pruefe_bildrechte(allp)
     write_overview(allp)
     write_redirects(posts)
