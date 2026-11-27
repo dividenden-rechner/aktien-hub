@@ -800,9 +800,12 @@ def build_post(p, posts, ordner="news"):
               'title=&quot;Video&quot; allow=&quot;autoplay; encrypted-media; picture-in-picture&quot; allowfullscreen style=&quot;position:absolute;inset:0;width:100%;height:100%;border:0;border-radius:10px&quot;></iframe>\'" '
               'style="font:600 1rem/1 inherit;background:#2f9e5b;color:#fff;border:0;border-radius:999px;padding:.9rem 1.4rem;cursor:pointer">▶ Video abspielen</button>'
               '<small style="opacity:.75;max-width:34rem">Beim Abspielen wird das Video von YouTube geladen. Dabei werden Daten an YouTube übertragen.</small></div>'
-              '<figcaption style="font-size:.85rem;color:#5d6b78;margin-top:.4rem">Das Video zum Artikel auf unserem YouTube-Kanal · '
+              '<figcaption style="font-size:.85rem;color:#5d6b78;margin-top:.4rem">' + html.escape(p.get("youtube_hinweis") or "Das Video zum Artikel auf unserem YouTube-Kanal") + ' · '
               '<a href="https://www.youtube.com/watch?v=' + vid + '" rel="noopener" target="_blank">Auf YouTube ansehen</a></figcaption></figure>')
-        body = re.sub(r"(<h2[ >])", yt + r"\1", body, count=1) if "<h2" in body else body + yt
+        _yv = (p.get("youtube_vor") or "").strip()
+        _mh = re.search(r"<h2[^>]*>\s*" + re.escape(_yv), body) if _yv else None
+        if _mh: body = body[:_mh.start()] + yt + body[_mh.start():]
+        else: body = re.sub(r"(<h2[ >])", yt + r"\1", body, count=1) if "<h2" in body else body + yt
     if p.get("instagram"):                             # eigener Instagram-Post, lädt erst nach Klick (Datenschutz)
         m_ig = re.search(r"instagram\.com/(?:p|reel)/([A-Za-z0-9_-]+)", p["instagram"])
         if m_ig:
