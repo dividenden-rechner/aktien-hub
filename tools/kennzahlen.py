@@ -25,6 +25,8 @@ def asien_werte(out, rate, tag):
     m = re.match(r"(\d{2})\.(\d{2})\.(\d{4})", str(json.load(open("data/asien-kurse-sheet.json", encoding="utf-8")).get("stand", "")))
     stand_iso = f"{m.group(3)}-{m.group(2)}-{m.group(1)}" if m else tag
     for t, k in kurse.items():
+        if (out.get(t) or {}).get("isin") and (out.get(t) or {}).get("gj"):
+            continue   # Firma mit vollständigen Jahreszahlen (data/asien/firma) und Xetra-Kurs: nicht mit der Sheet-Zeile überschreiben
         f = fund.get(t)
         heimat = k.get("kurs_heimat")
         # Heimatwaehrung nach Land: Japan = JPY, Korea = KRW (die Sheet-Spalte Waehrung zeigt fuer Japan USD)
