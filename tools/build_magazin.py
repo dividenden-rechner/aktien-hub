@@ -403,7 +403,7 @@ def nav_html(depth, cur, with_mag=True):
 def footer_html(depth):
     p = "../" * depth
     l = "".join(f'<a href="{p}{u}">{n}</a>' for k, u, n in NAV)
-    return (f'<footer class="site-footer"><div class="wrap">\n<div class="cols">\n{l}\n<a href="{p}ueber-uns/">Über uns</a><a href="{p}impressum/">Impressum</a><a href="{p}datenschutz/">Datenschutz</a><a href="https://www.instagram.com/dividenden.rechner" rel="noopener nofollow me" target="_blank">Instagram</a>\n</div>\n'
+    return (f'<footer class="site-footer"><div class="wrap">\n<div class="cols">\n{l}\n<a href="{p}ranglisten/">Ranglisten</a><a href="{p}ueber-uns/">Über uns</a><a href="{p}impressum/">Impressum</a><a href="{p}datenschutz/">Datenschutz</a><a href="https://www.instagram.com/dividenden.rechner" rel="noopener nofollow me" target="_blank">Instagram</a>\n</div>\n'
             '<p>Alle Inhalte dienen der allgemeinen Information und sind keine Anlage-, Steuer- oder Rechtsberatung. Kapitalanlagen sind mit Risiken verbunden.</p>\n</div></footer>')
 
 def _cssv():
@@ -816,7 +816,7 @@ def build_post(p, posts, ordner="news"):
     ld = [
         {"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [
             {"@type": "ListItem", "position": 1, "name": "Start", "item": BASE},
-            {"@type": "ListItem", "position": 2, "name": "News", "item": BASE + "news/"},
+            {"@type": "ListItem", "position": 2, "name": "Ranglisten" if p.get("typ") == "evergreen" else "News", "item": BASE + ("ranglisten/" if p.get("typ") == "evergreen" else "news/")},
             {"@type": "ListItem", "position": 3, "name": p["title"], "item": BASE + url}]},
         {"@context": "https://schema.org", "@type": "NewsArticle", "headline": p["title"][:110], "description": p["description"],
          "inLanguage": "de", "datePublished": iso(p["dt"]), "dateModified": iso(p["upd"]), "mainEntityOfPage": BASE + url,
@@ -830,7 +830,7 @@ def build_post(p, posts, ordner="news"):
     extra += "".join('<script type="application/ld+json">%s</script>\n' % json.dumps(x, ensure_ascii=False) for x in ld)
     o = head(depth, p["title"], p["description"], url, "article", absu(make_share_card(p, slug, (p.get("share_image") or "").lstrip("/") or img)).replace("&", "&amp;"), extra) + nav_html(depth, "news") + "</nav></div></header>\n"
     o += f'<script src="{pre}assets/navigation.js"></script>\n<script src="{pre}assets/logos.js"></script>\n<script src="{pre}assets/fkearn.js"></script>\n<main class="wrap"><article class="post">\n'
-    o += f'<nav class="crumbs" aria-label="Brotkrumen"><a href="{pre}">Start</a> › <a href="{pre}news/">News</a> › <span aria-current="page">{esc(p["title"])}</span></nav>\n'
+    o += f'<nav class="crumbs" aria-label="Brotkrumen"><a href="{pre}">Start</a> › <a href="{pre}{'ranglisten' if p.get('typ') == 'evergreen' else 'news'}/">{'Ranglisten' if p.get('typ') == 'evergreen' else 'News'}</a> › <span aria-current="page">{esc(p["title"])}</span></nav>\n'
     o += f'<p class="kicker">{esc(p["category"])}</p>\n{logo_html(p)}{kurs_chip(p)}<p class="lead">{esc(p["description"])}</p>\n'
     upd = f' · Aktualisiert: <time datetime="{iso(p["upd"])}">{de_date(p["upd"])}</time>' if p["upd"].date() > p["dt"].date() else ""
     o += f'<p class="byline">{('<strong><a href="' + pre + 'ueber-uns/">Aus der Redaktion</a></strong>') if 'redaktion' in author.lower() else 'Von <strong>' + esc(author) + '</strong>'} · <time datetime="{iso(p["dt"])}">{de_dt(p["dt"])}</time>{upd} · {mins} Min. Lesezeit</p>\n'
@@ -856,7 +856,13 @@ def build_post(p, posts, ordner="news"):
     fs = _sym_slug().get(re.sub(r"\.NE$", "", sym_norm(p)))
     if fs:
         o += (f'<aside class="related"><h2>Zur Firma</h2><ul><li><a href="{pre}dividende/{fs[1]}/">{esc(fs[0])}: Dividende, Kennzahlen und Vergleich mit ähnlichen Aktien</a></li></ul></aside>\n')
+    if p.get("typ") == "evergreen":
+        evs = [x for x in posts if x.get("typ") == "evergreen" and x["slug"] != slug]
+        verw = [x for x in evs if x.get("region") == p.get("region")][:3] + [x for x in evs if x.get("gruppe") == p.get("gruppe") and x.get("region") != p.get("region")][:3]
+        if verw:
+            o += '<aside class="related"><h2>Weitere Ranglisten</h2><ul>\n' + "\n".join(f'<li><a href="{pre}ranglisten/{x["slug"]}/">{esc(x["title"])}</a></li>' for x in verw) + f'\n<li><a href="{pre}ranglisten/">Alle Ranglisten</a></li>\n</ul></aside>\n'
     others = [x for x in posts if x["slug"] != slug and x.get("typ") not in ("kurz", "evergreen")][:3]
+    if p.get("typ") == "evergreen": others = []
     if others:
         o += '<aside class="related"><h2>Weitere Artikel</h2><ul>\n' + "\n".join(f'<li><a href="{pre}news/{x["slug"]}/">{esc(x["title"])}</a></li>' for x in others) + "\n</ul></aside>\n"
     o += (f'<aside class="note" style="background:#f0fdf4;border-left-color:#10b981"><strong>Passende Werkzeuge:</strong> Prüfe Aktien im <a href="{pre}aktien-hub/">Aktien-Hub</a>, '
@@ -1045,6 +1051,38 @@ else if(m=/#branche=([^&]+)/.exec(h)){document.querySelector(".rsw").classList.a
     return h
 
 
+def write_ranglisten_index(evs):
+    """Uebersicht /ranglisten/: alle Evergreen-Listen nach Gruppe (Front matter: gruppe, region)."""
+    if not evs:
+        if os.path.isdir("ranglisten"):
+            for f in ("ranglisten/index.html",):
+                if os.path.exists(f): os.remove(f)
+        return
+    depth = 1; pre = "../"; url = "ranglisten/"
+    title = "Ranglisten: Beste Dividendenaktien nach Land und Kennzahl"
+    desc = "Top-10-Listen zu Dividendenaktien aus den USA, Europa und Japan: beste Werte, höchste Rendite, Dividendenwachstum, Umsatzwachstum, Monatszahler und mehr, laufend aus den Hub-Daten berechnet."
+    ld = {"@context": "https://schema.org", "@type": "CollectionPage", "name": title, "description": desc, "url": BASE + url, "inLanguage": "de",
+          "mainEntity": {"@type": "ItemList", "itemListElement": [{"@type": "ListItem", "position": i, "url": f'{BASE}ranglisten/{x["slug"]}/', "name": x["title"]} for i, x in enumerate(evs, 1)]}}
+    extra = '<script type="application/ld+json">%s</script>\n' % json.dumps(ld, ensure_ascii=False)
+    o = head(depth, title, desc, url, "website", BASE + "assets/logo.png", extra) + nav_html(depth, "") + "</nav></div></header>\n"
+    o += f'<script src="{pre}assets/navigation.js"></script>\n<script src="{pre}assets/logos.js"></script>\n<main class="wrap">\n'
+    o += f'<nav class="crumbs" aria-label="Brotkrumen"><a href="{pre}">Start</a> › <span aria-current="page">Ranglisten</span></nav>\n<h1>Ranglisten für Dividendenaktien</h1>\n'
+    o += (f'<p class="lead">{len(evs)} Top-Listen aus dem Aktien-Hub: Welche Dividendenaktien aus den USA, Europa und Japan haben die höchste Rendite, '
+          'das stärkste Dividendenwachstum oder das größte Umsatzwachstum? Jede Firma bekommt eine kurze Einordnung mit Geschäftsmodell, letztem Jahr und den letzten fünf Jahren.</p>\n')
+    gruppen = {}
+    for x in evs: gruppen.setdefault(x.get("gruppe") or "Weitere", []).append(x)
+    reihenfolge = ["Die Besten", "Rendite und Sicherheit", "Wachstum", "Aristokraten und Kings", "Die Größten", "Günstig und profitabel", "Zahlrhythmus"]
+    for g in reihenfolge + [k for k in gruppen if k not in reihenfolge]:
+        if g not in gruppen: continue
+        o += f'<h2>{esc(g)}</h2>\n<ul class="related-list">\n'
+        for x in sorted(gruppen[g], key=lambda y: y["file"]):
+            o += f'<li><a href="{x["slug"]}/">{esc(x["title"])}</a></li>\n'
+        o += '</ul>\n'
+    o += HINT + "\n</main>\n" + footer_html(depth) + "\n</body>\n</html>\n"
+    os.makedirs("ranglisten", exist_ok=True)
+    open("ranglisten/index.html", "w", encoding="utf-8").write(o)
+
+
 def build_index(posts):
     depth = 1; pre = "../"; url = "news/"
     title = "News: Dividenden, Kennzahlen und Steuern erklärt"
@@ -1122,17 +1160,23 @@ def build_feed(posts):
 
 def patch_sitemap(posts):
     s = open("sitemap.xml", encoding="utf-8").read()
-    s = re.sub(r"<url><loc>%snews/[^<]*</loc>.*?</url>\n?" % re.escape(BASE), "", s)
+    s = re.sub(r"<url><loc>%s(news|ranglisten)/[^<]*</loc>.*?</url>\n?" % re.escape(BASE), "", s)
     add = f"<url><loc>{BASE}news/</loc><lastmod>{posts[0]['upd'].date()}</lastmod><priority>0.8</priority></url>\n" if posts else ""
+    evs = [x for x in posts if x.get("typ") == "evergreen"]
+    if evs: add += f"<url><loc>{BASE}ranglisten/</loc><lastmod>{evs[0]['upd'].date()}</lastmod><priority>0.7</priority></url>\n"
     for x in posts:
-        add += f"<url><loc>{BASE}news/{x['slug']}/</loc><lastmod>{x['upd'].date()}</lastmod><priority>0.8</priority></url>\n"
+        add += f"<url><loc>{BASE}{'ranglisten' if x.get('typ') == 'evergreen' else 'news'}/{x['slug']}/</loc><lastmod>{x['upd'].date()}</lastmod><priority>0.8</priority></url>\n"
     s = s.replace("</urlset>", add + "</urlset>")
     open("sitemap.xml", "w", encoding="utf-8").write(s)
 
 def patch_llms(posts):
     s = open("llms.txt", encoding="utf-8").read()
-    s = re.sub(r"- \[[^\]]*\]\(%snews/[^)]*\)[^\n]*\n" % re.escape(BASE), "", s)
-    add = "".join(f"- [{x['title']}]({BASE}news/{x['slug']}/): {x['description']}\n" for x in posts)
+    s = re.sub(r"- \[[^\]]*\]\(%s(news|ranglisten)/[^)]*\)[^\n]*\n" % re.escape(BASE), "", s)
+    evs = [x for x in posts if x.get("typ") == "evergreen"]
+    add = "".join(f"- [{x['title']}]({BASE}ranglisten/{x['slug']}/): {x['description']}\n" for x in evs)
+    if evs: add = f"- [Ranglisten: Beste Dividendenaktien nach Land und Kennzahl]({BASE}ranglisten/)\n" + add
+    posts = [x for x in posts if x.get("typ") != "evergreen"]
+    add += "".join(f"- [{x['title']}]({BASE}news/{x['slug']}/): {x['description']}\n" for x in posts)
     if posts: add = f"- [News: Artikel zu Dividenden, Kennzahlen und Steuern]({BASE}news/)\n" + add
     s = s.replace("\n## Hinweis", "\n" + add + "\n## Hinweis", 1) if "\n## Hinweis" in s else s + "\n" + add
     open("llms.txt", "w", encoding="utf-8").write(s)
@@ -1245,8 +1289,11 @@ def write_redirects(posts):
             f'<script>location.replace("{"../" * depth}{target}"+location.search+location.hash)</script></head>'
             f'<body><p>Diese Seite ist umgezogen: <a href="{"../" * depth}{target}">{t}</a></p></body></html>\n')
     stub("magazin/index.html", "news/", 1)
+    for alt in ("die-10-besten-dividendenaktien", "die-10-besten-dividendenaktien-europa", "dividendenwachstum-die-staerksten-steigerungen", "high-yield-hohe-dividendenrenditen-mit-deckung",
+                "dividende-aktien-mit-vielen-zahlmonaten", "monatszahler-dividenden-aktien-jeden-monat", "halbjaehrliche-dividende-aktien-mit-zwei-zahlungen", "top-dividendenwerte-ueber-10-prozent-rendite"):
+        stub(f"news/{alt}/index.html", "ranglisten/", 2)
     for x in posts:
-        stub(f"magazin/{x['slug']}/index.html", f"news/{x['slug']}/", 2)
+        stub(f"magazin/{x['slug']}/index.html", f"{'ranglisten' if x.get('typ') == 'evergreen' else 'news'}/{x['slug']}/", 2)
     if os.path.exists("news/feed.xml"):
         shutil.copy("news/feed.xml", "magazin/feed.xml")
 
@@ -1289,10 +1336,15 @@ def main():
         if p["dt"] > datetime.datetime.now() + datetime.timedelta(days=1): print("Zukunftsdatum übersprungen:", f); continue
         posts.append(p)
     posts.sort(key=lambda x: (x["dt"], x["upd"], x["slug"]), reverse=True)
+    import shutil
     for x in glob.glob("news/*/"):
-        if os.path.basename(os.path.normpath(x)) not in [p["slug"] for p in posts]:
-            import shutil; shutil.rmtree(x)
-    posts = [build_post(p, posts) for p in posts]
+        if os.path.basename(os.path.normpath(x)) not in [p["slug"] for p in posts if p.get("typ") != "evergreen"]:
+            shutil.rmtree(x)
+    for x in glob.glob("ranglisten/*/"):
+        if os.path.basename(os.path.normpath(x)) not in [p["slug"] for p in posts if p.get("typ") == "evergreen"]:
+            shutil.rmtree(x)
+    posts = [build_post(p, posts, "ranglisten" if p.get("typ") == "evergreen" else "news") for p in posts]
+    write_ranglisten_index([x for x in posts if x.get("typ") == "evergreen"])
     build_vorschau(vorschau, posts)
     # Evergreen-Ranglisten (typ: evergreen) sind nur fuer den Newsletter gedacht: Seiten bleiben erreichbar,
     # stehen aber in keiner Liste (Startseite, News-Uebersicht, Feeds)
@@ -1304,7 +1356,7 @@ def main():
             if os.path.exists(f): os.remove(f)
     longp = [x for x in sicht if x.get("typ") != "kurz"]
     glossar.patch_erklaerseiten(longp)
-    patch_sitemap(posts); patch_llms(sicht); patch_home(longp); patch_news(sicht); write_mag_index(sicht); patch_nav_everywhere(bool(posts))
+    patch_sitemap(posts); patch_llms(posts); patch_home(longp); patch_news(sicht); write_mag_index(sicht); patch_nav_everywhere(bool(posts))
     pruefe_bildrechte(allp)
     write_overview(allp)
     write_redirects(posts)
