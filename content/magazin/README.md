@@ -3,13 +3,12 @@
 <!-- uebersicht-start -->
 ## Übersicht (wird automatisch erstellt, neueste zuerst)
 
-### Vorschau auf der Testseite (8)
+### Vorschau auf der Testseite (7)
 
 Nur auf der GitHub-Testseite unter vorschau/ sichtbar. Freigeben: Datei anklicken, Stift-Symbol, Zeile `vorschau: ja` löschen und speichern.
 
 | Datum | Titel | Datei |
 |---|---|---|
-| 29.11.2026 15:00 | FedEx nach dem Umbau: Bereinigter Gewinn je Aktie +28 %, aber die Quartalsdividende sank von 1,45 auf 1,22 Dollar | [79738870_2026-11-29/9065_1500-fedex-umbau-dividende-prognose-angehoben.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/79738870_2026-11-29/9065_1500-fedex-umbau-dividende-prognose-angehoben.md) |
 | 29.11.2026 12:00 | Infineon: Warum die Aktie im November fast ein Fünftel verloren hat | [79738870_2026-11-29/9066_1200-infineon-aktie-kursrutsch-november-2026.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/79738870_2026-11-29/9066_1200-infineon-aktie-kursrutsch-november-2026.md) |
 | 29.11.2026 10:00 | Das Imperium des Andrea Orcel: Die UniCredit-Aktie ist seit 2021 fast auf das Neunfache gestiegen | [79738870_2026-11-29/9070_1000-orcel-unicredit-imperium-bank-of-europe.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/79738870_2026-11-29/9070_1000-orcel-unicredit-imperium-bank-of-europe.md) |
 | 29.11.2026 09:00 | VICI Properties kaufen? Sieben Argumente dafür und sieben dagegen | [79738870_2026-11-29/9067_0900-vici-properties-pro-contra-kauf.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/79738870_2026-11-29/9067_0900-vici-properties-pro-contra-kauf.md) |
@@ -35,10 +34,11 @@ Datei anklicken, dann Stift-Symbol: Zeile `draft: true` löschen und speichern, 
 | 29.10.2026 22:42 | Amazon steigert Umsatz im dritten Quartal auf 201,9 Milliarden Dollar | [79738970_2026-10-29/7757_2242-amazon-q3-2026-zahlen.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/79738970_2026-10-29/7757_2242-amazon-q3-2026-zahlen.md) |
 | 29.10.2026 10:12 | Shell erzielt im dritten Quartal 10,8 Milliarden Dollar Gewinn | [79738970_2026-10-29/8987_1012-shell-q3-2026-ergebnisse.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/79738970_2026-10-29/8987_1012-shell-q3-2026-ergebnisse.md) |
 
-### Online (561)
+### Online (562)
 
 | Datum | Titel | Datei |
 |---|---|---|
+| 27.11.2026 20:30 | FedEx nach dem Umbau: Bereinigter Gewinn je Aktie +28 %, aber die Quartalsdividende sank von 1,45 auf 1,22 Dollar | [9200_2026-11-27/9201_2030-fedex-umbau-dividende-prognose-angehoben.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/9200_2026-11-27/9201_2030-fedex-umbau-dividende-prognose-angehoben.md) |
 | 27.11.2026 10:30 | Infineon: Rechenzentren fast verdoppelt, 2027 soll der Umsatz um mehr als 20 % wachsen | [9106_2026-11-27/9610_1030-infineon-rechenzentren-hanebeck-geschaeftsjahr-2027.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/9106_2026-11-27/9610_1030-infineon-rechenzentren-hanebeck-geschaeftsjahr-2027.md) |
 | 27.11.2026 09:00 | Umsatzsprung weltweit: Dividendenaktien mit dem größten Plus im letzten Jahr | [9200_2026-11-27/9235_1127-umsatzsprung-weltweit.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/9200_2026-11-27/9235_1127-umsatzsprung-weltweit.md) |
 | 27.11.2026 09:00 | Umsatzsprung USA: Dividendenaktien mit dem größten Plus im letzten Jahr | [9200_2026-11-27/9236_1127-umsatzsprung-usa.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/9200_2026-11-27/9236_1127-umsatzsprung-usa.md) |
