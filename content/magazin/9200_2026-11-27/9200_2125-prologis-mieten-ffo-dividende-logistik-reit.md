@@ -19,7 +19,7 @@ image_lizenz: Pressebild
 <!-- PRÜFEN: Eigene Rechnungen: Ausschüttung 68 % des Core FFO (4,28 durch Mitte der Prognose 6,27 $); 87 % des AFFO im dritten Quartal (1.045 Mio. $ Dividenden durch 1.207 Mio. $ AFFO). -->
 <!-- PRÜFEN: Fotos sind Pressebilder von Prologis (von Divi geschickt), als markierte Ausnahme. Das zweite Foto zeigt eine Prologis-Halle (Ort unbekannt), Bildtext bleibt allgemein. -->
 <!-- PRÜFEN: Folien stammen aus dem Quartr-Screenshot der Investorenpräsentation (Oberflächenrahmen abgeschnitten). -->
-<!-- PRÜFEN: Vergleich nach Kurs zu FFO (Hub) mit STAG, Realty Income, NNN REIT. Für Segro und WDP hat der Hub keine FFO-Daten. Kein KGV bei REITs (Vorgabe von Divi). Hub-Rendite für Prologis ist defekt, 3,3 % und +5,9 % sind eigene Rechnung. -->
+<!-- PRÜFEN: Prologis/STAG aus dem Hub (Kurs zu FFO). Segro: bereinigter EPS 2025 36,5 p, Dividende 31,1 p (+6,1 %), Kurs 9,05 £ (Hub 10,80 EUR), eigene Rechnung. WDP: EPRA-EPS-Prognose 2026 1,60 EUR, Dividende 1,29 EUR, Kurs 19,58 EUR, eigene Rechnung; Hub zeigt für WDP Dividende 0,64 EUR und Rendite 3,3 % (vermutlich falsch), Wachstum offen. Übernahme Segro: 0,092 PLD-Aktien je Aktie, Aktionäre 28.09. mit 98 %, Abschluss 1. Halbjahr 2027. Kein KGV bei REITs (Vorgabe von Divi). -->
 
 !!! kurz "Kurz gesagt"
     **Die Zahlen:** Umsatz 2,39 Mrd. $ (+8 %), Core FFO je Aktie 1,60 $ (+7 %), die Prognose für 2026 liegt bei 6,25 bis 6,29 $.
@@ -63,16 +63,18 @@ Der größte neue Hebel sind Rechenzentren. Prologis besitzt Grundstücke mit St
 
 ## Prologis im Vergleich
 
-Die Tabelle stellt Prologis dem Logistik-REIT STAG und den beiden bekanntesten Dividenden-REITs im Hub gegenüber, Realty Income und NNN REIT. Als Maßstab dient das Verhältnis von Kurs zu FFO je Aktie, weil Gewinnkennzahlen bei REITs durch Abschreibungen und Neubewertungen verzerrt sind.
+Die Tabelle stellt Prologis drei börsennotierten Logistik-REITs gegenüber: STAG in den USA, Segro in Großbritannien und Europa sowie WDP in Belgien und den Niederlanden. Als Maßstab dient das Verhältnis von Kurs zu FFO je Aktie, weil Gewinnkennzahlen bei REITs durch Abschreibungen und Neubewertungen verzerrt sind. Bei den europäischen Gesellschaften steht an dieser Stelle der bereinigte Gewinn je Aktie, den die Unternehmen nach dem EPRA-Standard ausweisen und der dem FFO entspricht.
 
 | Unternehmen | Rendite | Kurs zu FFO | FFO-Ausschüttung | Dividendenwachstum 1 Jahr |
 |---|---|---|---|---|
 | {{logo:pld}}[Prologis](/aktien-hub/prologis/) | 3,3 % | 20,6 | 63 % | +5,9 % |
 | {{logo:stag}}[STAG Industrial](/aktien-hub/stag-industrial/) | 3,9 % | 12,4 | 49 % | +0,7 % |
-| {{logo:o}}[Realty Income](/aktien-hub/realty-income/) | 5,3 % | 15,3 | 82 % | +2,9 % |
-| {{logo:nnn}}[NNN REIT](/aktien-hub/nnn-reit/) | 5,8 % | 12,2 | 67 % | +3,1 % |
+| {{logo:segro}}[Segro](/aktien-hub/segro/) | 3,4 % | 24,8 | 85 % | +6,1 % |
+| {{logo:wdp-br}}[Warehouses De Pauw](/aktien-hub/warehouses-de-pauw/) | 6,6 % | 12,2 | 81 % | – |
 
-Prologis kostet das 21-Fache des FFO je Aktie, die drei anderen zwischen dem 12- und 15-Fachen. Dafür fällt die Rendite am niedrigsten aus, die Dividende wächst aber mit knapp 6 % am schnellsten. Für den Aufschlag bekommt der Anleger Größe, Rechenzentren und eine Entwicklungsmaschine, die die anderen nicht in dem Umfang haben. Für europäische Logistik-REITs wie Segro oder WDP liegen im Hub bisher keine FFO-Daten vor.
+Segro und WDP beruhen auf dem bereinigten Gewinn je Aktie für 2025 (Segro 36,5 Pence) bzw. der Prognose für 2026 (WDP 1,60 Euro).
+
+Prologis kostet das 21-Fache des FFO je Aktie, STAG und WDP nur das 12-Fache. Segro liegt mit dem 25-Fachen sogar darüber, aber dessen Kurs hängt inzwischen am Übernahmeangebot von Prologis. Prologis bietet 0,092 eigene Aktien je Segro-Aktie, auf Wunsch bis zu 25 % in bar, insgesamt rund 14 Milliarden Pfund. Der Verwaltungsrat von Segro hat im August zugestimmt, die Aktionäre haben die Übernahme Ende September mit mehr als 98 % gebilligt. Offen sind die gerichtliche Genehmigung und weitere Bedingungen, der Abschluss wird für die erste Jahreshälfte 2027 erwartet. Gelingt der Zukauf, gehört der größte europäische Logistik-Vermieter künftig zu Prologis. Die Ausschüttung von WDP zehrt mit 81 % des bereinigten Gewinns einen großen Teil auf, bei Prologis sind es 63 %, bei STAG 49 %.
 
 ## Was dagegen spricht
 
@@ -81,6 +83,8 @@ Die Neuvermietungen bringen weniger Aufschlag als vor einem Jahr, und die Mieten
 ## Was als Nächstes ansteht
 
 Mit den Zahlen zum Jahresende kommt die Prognose für 2027. Entscheidend wird, ob die Mieten bei Neuabschlüssen weiter zweistellig über dem Bestand liegen und wie viel das Geschäft mit Rechenzentren beiträgt.
+
+Zusätzlich lohnt der Blick auf die Übernahme von Segro: Sie würde das Europageschäft von Prologis deutlich vergrößern.
 
 Das ist keine Anlageberatung.
 
