@@ -3,12 +3,13 @@
 <!-- uebersicht-start -->
 ## Übersicht (wird automatisch erstellt, neueste zuerst)
 
-### Vorschau auf der Testseite (7)
+### Vorschau auf der Testseite (8)
 
 Nur auf der GitHub-Testseite unter vorschau/ sichtbar. Freigeben: Datei anklicken, Stift-Symbol, Zeile `vorschau: ja` löschen und speichern.
 
 | Datum | Titel | Datei |
 |---|---|---|
+| 29.11.2026 15:00 | FedEx nach dem Umbau: Bereinigter Gewinn je Aktie +28 %, aber die Quartalsdividende sank von 1,45 auf 1,22 Dollar | [79738870_2026-11-29/9065_1500-fedex-umbau-dividende-prognose-angehoben.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/79738870_2026-11-29/9065_1500-fedex-umbau-dividende-prognose-angehoben.md) |
 | 29.11.2026 12:00 | Infineon: Warum die Aktie im November fast ein Fünftel verloren hat | [79738870_2026-11-29/9066_1200-infineon-aktie-kursrutsch-november-2026.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/79738870_2026-11-29/9066_1200-infineon-aktie-kursrutsch-november-2026.md) |
 | 29.11.2026 10:00 | Das Imperium des Andrea Orcel: Die UniCredit-Aktie ist seit 2021 fast auf das Neunfache gestiegen | [79738870_2026-11-29/9070_1000-orcel-unicredit-imperium-bank-of-europe.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/79738870_2026-11-29/9070_1000-orcel-unicredit-imperium-bank-of-europe.md) |
 | 29.11.2026 09:00 | VICI Properties kaufen? Sieben Argumente dafür und sieben dagegen | [79738870_2026-11-29/9067_0900-vici-properties-pro-contra-kauf.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/79738870_2026-11-29/9067_0900-vici-properties-pro-contra-kauf.md) |
