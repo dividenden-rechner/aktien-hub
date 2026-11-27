@@ -38,6 +38,8 @@ Altria bestätigte in einer Pflichtmitteilung, dass der Konzern ein Barangebot f
 
 Imperial selbst erklärte, es habe weder mit Altria noch mit einem Dritten gesprochen und kein Angebot erhalten. Der Verwaltungsrat werde jeden Vorschlag prüfen. Die Aktie schloss in London 13,3 % höher bei 34,32 Pfund, der Börsenwert liegt bei rund 26 Milliarden Pfund. Japan Tobacco, nach Bloomberg-Informationen der mögliche Partner, kommentiert nichts und legte am Freitag in Tokio um 4,5 % zu.
 
+Drei Konzerne auf drei Kontinenten, Altria in den USA, Imperial in Europa und Japan Tobacco in Asien, könnten damit die nächste Konsolidierungswelle der Branche auslösen. Käme der Deal zustande, wäre es vermutlich die größte Übernahme im Tabaksektor seit mehr als zehn Jahren.
+
 ![Imperial Brands: Produkt der Marke blu (Pressebild Imperial Brands)](/assets/magazin/imperial-brands-blu-produkt-foto.jpg)
 
 ## Wer wo wie viel umsetzt
