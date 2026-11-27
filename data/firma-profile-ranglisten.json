@@ -1,0 +1,1280 @@
+{
+ "firmen": {
+  "1605.T": {
+   "text": "INPEX ist Japans größter Öl- und Gasförderer und betreibt unter anderem das Ichthys-Flüssiggasprojekt in Australien.",
+   "pruefen": true
+  },
+  "1802.T": {
+   "text": "Obayashi ist einer der fünf großen japanischen Baukonzerne und baut Hochhäuser, Infrastruktur und Kraftwerke im In- und Ausland.",
+   "pruefen": true
+  },
+  "1928.T": {
+   "text": "Sekisui House baut Fertighäuser in Japan und entwickelt Wohnanlagen, mit wachsendem Geschäft in den USA, Australien und Asien.",
+   "pruefen": true
+  },
+  "2413.T": {
+   "text": "M3 betreibt Online-Plattformen für Ärzte, über die Pharmafirmen Mediziner erreichen, dazu Dienste für klinische Studien und Gesundheitsdaten.",
+   "pruefen": true
+  },
+  "2768.T": {
+   "text": "Sojitz ist ein japanisches Handelshaus, das Rohstoffe, Maschinen, Chemie und Konsumgüter weltweit vermittelt und eigene Beteiligungen hält.",
+   "pruefen": true
+  },
+  "3382.T": {
+   "text": "Seven & i betreibt die Convenience-Kette 7-Eleven mit Tausenden Läden in Japan und Nordamerika und hat zudem Supermärkte und Kaufhäuser.",
+   "pruefen": true
+  },
+  "4503.T": {
+   "text": "Astellas Pharma entwickelt Arzneimittel, vor allem gegen Krebs und Harnwegserkrankungen, und verkauft sie in Japan, den USA und Europa.",
+   "pruefen": true
+  },
+  "4507.T": {
+   "text": "Shionogi ist ein japanischer Pharmakonzern mit Schwerpunkt auf Infektionskrankheiten und hält eine große Beteiligung am HIV-Spezialisten ViiV.",
+   "pruefen": true
+  },
+  "4F1.DE": {
+   "text": "Fluidra aus Spanien stellt Ausrüstung für Schwimmbäder her, von Pumpen und Filtern bis zu Reinigungsrobotern und Wasserpflege.",
+   "pruefen": true
+  },
+  "5020.T": {
+   "text": "ENEOS ist Japans größter Mineralölkonzern mit Raffinerien, Tankstellen und einem wachsenden Geschäft mit Wasserstoff und Strom.",
+   "pruefen": true
+  },
+  "5101.T": {
+   "text": "Yokohama Rubber stellt Autoreifen unter der Marke Yokohama und Spezialreifen für Landmaschinen und Industrie her.",
+   "pruefen": true
+  },
+  "5108.T": {
+   "text": "Bridgestone ist einer der weltgrößten Reifenhersteller und beliefert Autobauer und den Handel auf allen Kontinenten.",
+   "pruefen": true
+  },
+  "5201.T": {
+   "text": "AGC produziert Flachglas für Gebäude und Autos, dazu Chemikalien und Glas für Elektronik und Displays.",
+   "pruefen": true
+  },
+  "5333.T": {
+   "text": "NGK stellt Keramikprodukte her, darunter Zündkerzen, Abgasfilter für Fahrzeuge und Isolatoren für Stromnetze.",
+   "pruefen": true
+  },
+  "5713.T": {
+   "text": "Sumitomo Metal Mining fördert und verarbeitet Kupfer, Gold und Nickel und liefert Batteriematerial für Elektroautos.",
+   "pruefen": true
+  },
+  "5CI.DE": {
+   "text": "Logista ist ein spanischer Großhändler, der Tabakwaren, Zeitschriften und Convenience-Produkte an Kioske und Tankstellen in Südeuropa liefert.",
+   "pruefen": true
+  },
+  "6178.T": {
+   "text": "Japan Post Holdings führt Post, Paketdienst, Sparkasse und Lebensversicherung unter einem Dach und erreicht fast jeden japanischen Haushalt.",
+   "pruefen": true
+  },
+  "6503.T": {
+   "text": "Mitsubishi Electric baut Aufzüge, Klimaanlagen, Industrieautomation und Energietechnik und liefert Teile für Autos und Satelliten.",
+   "pruefen": true
+  },
+  "6841.T": {
+   "text": "Yokogawa Electric stellt Mess- und Leitsysteme für Chemie-, Öl- und Energieanlagen her.",
+   "pruefen": true
+  },
+  "6857.T": {
+   "text": "Advantest baut Testsysteme, mit denen Chiphersteller ihre Halbleiter prüfen, und profitiert vom Bedarf an KI-Prozessoren.",
+   "pruefen": true
+  },
+  "7011.T": {
+   "text": "Mitsubishi Heavy Industries baut Kraftwerke, Schiffe, Flugzeugteile und Raketen und ist Japans größter Rüstungslieferant.",
+   "pruefen": true
+  },
+  "7202.T": {
+   "text": "Isuzu Motors ist Spezialist für Lastwagen und Dieselmotoren und verkauft Pick-ups vor allem in Südostasien.",
+   "pruefen": true
+  },
+  "7270.T": {
+   "text": "Subaru baut Fahrzeuge mit Allradantrieb und macht den Großteil seines Geschäfts in den USA.",
+   "pruefen": true
+  },
+  "7453.T": {
+   "text": "Ryohin Keikaku betreibt die Einzelhandelskette Muji mit Haushaltswaren, Mode und Lebensmitteln in Japan und weltweit.",
+   "pruefen": true
+  },
+  "7733.T": {
+   "text": "Olympus stellt Endoskope und medizinische Geräte her und hat bei Magen- und Darmspiegelungen einen sehr hohen Marktanteil.",
+   "pruefen": true
+  },
+  "7735.T": {
+   "text": "SCREEN Holdings baut Reinigungs- und Beschichtungsanlagen für die Chipfertigung und Drucktechnik.",
+   "pruefen": true
+  },
+  "7752.T": {
+   "text": "Ricoh stellt Drucker, Kopierer und Büro-Dienstleistungen her und wandelt sich zum Anbieter digitaler Arbeitsplätze.",
+   "pruefen": true
+  },
+  "7912.T": {
+   "text": "Dai Nippon Printing ist Japans größter Druckkonzern und fertigt neben Verpackungen auch Bauteile für Displays und Batterien.",
+   "pruefen": true
+  },
+  "8001.T": {
+   "text": "Itochu ist ein japanisches Handelshaus mit Schwerpunkten bei Textilien, Maschinen, Rohstoffen und Lebensmitteln und betreibt die Convenience-Kette FamilyMart mit.",
+   "pruefen": true
+  },
+  "8015.T": {
+   "text": "Toyota Tsusho ist das Handelshaus der Toyota-Gruppe und handelt mit Autoteilen, Metallen, Chemie und Energie.",
+   "pruefen": true
+  },
+  "8035.T": {
+   "text": "Tokyo Electron baut Maschinen für die Chipfertigung und gehört weltweit zu den größten Ausrüstern der Branche.",
+   "pruefen": true
+  },
+  "8303.T": {
+   "text": "SBI Shinsei Bank ist eine japanische Bank, die zur SBI-Gruppe gehört und Privat- und Firmenkunden betreut.",
+   "pruefen": true
+  },
+  "8308.T": {
+   "text": "Resona Holdings ist eine japanische Bankengruppe mit Schwerpunkt auf Privatkunden und Mittelstand im Großraum Osaka und Tokio.",
+   "pruefen": true
+  },
+  "8331.T": {
+   "text": "Die Chiba Bank ist eine regionale Geschäftsbank in der Präfektur Chiba östlich von Tokio.",
+   "pruefen": true
+  },
+  "8601.T": {
+   "text": "Daiwa Securities ist eines der größten japanischen Wertpapierhäuser mit Wertpapierhandel, Vermögensverwaltung und Investmentbanking.",
+   "pruefen": true
+  },
+  "8604.T": {
+   "text": "Nomura ist Japans größtes Wertpapierhaus und bietet Investmentbanking, Vermögensverwaltung und Wertpapierhandel in Asien, Europa und den USA.",
+   "pruefen": true
+  },
+  "8697.T": {
+   "text": "Japan Exchange Group betreibt die Börse Tokio und verdient an Handelsgebühren, Börsengängen und Marktdaten.",
+   "pruefen": true
+  },
+  "8750.T": {
+   "text": "Daiichi Life ist eine der großen japanischen Lebensversicherungen und expandiert mit Zukäufen in Australien, Indien und den USA.",
+   "pruefen": true
+  },
+  "8795.T": {
+   "text": "T&D Holdings ist eine japanische Versicherungsgruppe mit Lebensversicherungen unter den Marken Taiyo Life und Daido Life.",
+   "pruefen": true
+  },
+  "9022.T": {
+   "text": "Central Japan Railway betreibt den Shinkansen zwischen Tokio, Nagoya und Osaka und baut die Magnetschwebebahn Chuo Shinkansen.",
+   "pruefen": true
+  },
+  "9101.T": {
+   "text": "NYK Line ist eine der größten japanischen Reedereien mit Containerterminals, Autotransportern und Flüssiggastankern.",
+   "pruefen": true
+  },
+  "9104.T": {
+   "text": "Mitsui O.S.K. Lines betreibt eine große Flotte aus Massengutfrachtern, Tankern und Autotransportern.",
+   "pruefen": true
+  },
+  "9107.T": {
+   "text": "Kawasaki Kisen, bekannt als K Line, betreibt Massengutfrachter, Autotransporter und hält Anteile an der Container-Reederei ONE.",
+   "pruefen": true
+  },
+  "9201.T": {
+   "text": "Japan Airlines ist die Fluggesellschaft mit Heimatflughäfen Tokio-Haneda und Narita und fliegt im Inland und nach Übersee.",
+   "pruefen": true
+  },
+  "9502.T": {
+   "text": "Chubu Electric Power versorgt den Großraum Nagoya mit Strom und Gas und betreibt Kernkraftwerke.",
+   "pruefen": true
+  },
+  "9503.T": {
+   "text": "Kansai Electric Power versorgt den Raum Osaka mit Strom und setzt stark auf Kernenergie.",
+   "pruefen": true
+  },
+  "9531.T": {
+   "text": "Tokyo Gas ist Japans größter Gasversorger und liefert Gas, Strom und Energiedienste im Großraum Tokio.",
+   "pruefen": true
+  },
+  "9532.T": {
+   "text": "Osaka Gas versorgt den Raum Osaka mit Gas und Strom und investiert in Flüssiggas und Wärmeprojekte im Ausland.",
+   "pruefen": true
+  },
+  "9602.T": {
+   "text": "Toho betreibt Kinos, produziert und vertreibt Filme wie Godzilla und Anime und vermietet Immobilien in Tokio.",
+   "pruefen": true
+  },
+  "9766.T": {
+   "text": "Konami entwickelt Videospiele wie Pro Evolution Soccer und Metal Gear und betreibt Fitnessstudios und Spielautomaten in Japan.",
+   "pruefen": true
+  },
+  "A2A.MI": {
+   "text": "A2A ist ein italienischer Versorger aus Mailand mit Strom, Gas, Fernwärme, Müllverbrennung und erneuerbaren Energien.",
+   "pruefen": true
+  },
+  "AAF.L": {
+   "text": "Airtel Africa bietet Mobilfunk und Mobile-Money-Dienste in 14 afrikanischen Ländern und ist am Standort Großbritannien notiert.",
+   "pruefen": true
+  },
+  "AAPL": {
+   "text": "Apple verkauft iPhone, Mac, iPad und Wearables und verdient zunehmend mit Diensten wie App Store, iCloud und Apple Music.",
+   "pruefen": true
+  },
+  "ABBN.SW": {
+   "text": "ABB liefert Elektrifizierungs-, Robotik- und Automatisierungstechnik für Industrie, Gebäude und Energienetze.",
+   "pruefen": true
+  },
+  "ABBV": {
+   "text": "AbbVie ist ein US-Pharmakonzern mit Immunologie-Medikamenten wie Skyrizi und Rinvoq und Botox in der Ästhetik.",
+   "pruefen": true
+  },
+  "ABI.BR": {
+   "text": "Anheuser-Busch InBev ist der größte Brauer der Welt mit Marken wie Budweiser, Corona und Stella Artois.",
+   "pruefen": true
+  },
+  "AC.PA": {
+   "text": "Accor betreibt Hotelketten wie Ibis, Novotel, Sofitel und Raffles und verdient überwiegend an Franchise- und Managementverträgen.",
+   "pruefen": true
+  },
+  "ACA.PA": {
+   "text": "Crédit Agricole ist die größte französische Bankengruppe mit genossenschaftlichem Retail-Geschäft, Vermögensverwaltung und Versicherung.",
+   "pruefen": true
+  },
+  "ACKB.BR": {
+   "text": "Ackermans & van Haaren ist eine belgische Holding mit Beteiligungen an Baggerbau, Privatbanken, Immobilien und Energie.",
+   "pruefen": true
+  },
+  "ACN": {
+   "text": "Accenture berät Unternehmen und Behörden bei Digitalisierung, Cloud und KI und betreibt IT-Dienste für Kunden weltweit.",
+   "pruefen": true
+  },
+  "ADI": {
+   "text": "Analog Devices entwickelt Analog- und Mixed-Signal-Chips für Industrie, Auto, Kommunikation und Medizintechnik.",
+   "pruefen": true
+  },
+  "ADM.L": {
+   "text": "Admiral ist ein britischer Autoversicherer, der in Großbritannien, Spanien, Italien und den USA verkauft.",
+   "pruefen": true
+  },
+  "AENA.MC": {
+   "text": "Aena betreibt die spanischen Flughäfen, darunter Madrid-Barajas und Barcelona, und hält Anteile an Flughäfen in Großbritannien und Lateinamerika.",
+   "pruefen": true
+  },
+  "AKE.PA": {
+   "text": "Arkema ist ein französischer Spezialchemiekonzern, der Materialien, Klebstoffe und Beschichtungen herstellt.",
+   "pruefen": true
+  },
+  "AKER.OL": {
+   "text": "Aker ASA ist eine norwegische Industrieholding mit Beteiligungen an Öl, Software und Meeresfrüchten.",
+   "pruefen": true
+  },
+  "ALC.SW": {
+   "text": "Alcon stellt Augenlinsen, Kontaktlinsen und Medizinprodukte für Augenoperationen her.",
+   "pruefen": true
+  },
+  "ALV.DE": {
+   "text": "Allianz ist einer der größten Versicherer der Welt mit Schaden-, Unfall-, Lebensversicherung und der Vermögensverwaltung PIMCO.",
+   "pruefen": true
+  },
+  "AMP": {
+   "text": "Ameriprise Financial berät Privatanleger in den USA und verwaltet Vermögen unter der Marke Columbia Threadneedle.",
+   "pruefen": true
+  },
+  "AMS.MC": {
+   "text": "Amadeus entwickelt die Buchungssysteme, über die Reisebüros, Airlines und Hotels Flüge und Zimmer verkaufen.",
+   "pruefen": true
+  },
+  "ANDR.VI": {
+   "text": "Andritz baut Anlagen für Wasserkraft, Papierherstellung, Metallverarbeitung und Umwelttechnik.",
+   "pruefen": true
+  },
+  "ANTO.L": {
+   "text": "Antofagasta fördert Kupfer in Chile und ist an der Londoner Börse notiert.",
+   "pruefen": true
+  },
+  "APA": {
+   "text": "APA Corporation fördert Öl und Gas in den USA, Ägypten und der Nordsee.",
+   "pruefen": true
+  },
+  "APH": {
+   "text": "Amphenol stellt Steckverbinder und Sensoren her, die in Rechenzentren, Autos, Industrie und Flugzeugen stecken.",
+   "pruefen": true
+  },
+  "ARCC": {
+   "text": "Ares Capital ist die größte börsennotierte Business Development Company der USA und vergibt Kredite an mittelständische Firmen.",
+   "pruefen": true
+  },
+  "AUTO.L": {
+   "text": "Auto Trader betreibt Britanniens größten Online-Marktplatz für Gebrauchtwagen und verdient an Händlerabos.",
+   "pruefen": true
+  },
+  "AVGO": {
+   "text": "Broadcom stellt Chips für Netzwerke und KI-Rechenzentren her und besitzt dazu das Softwaregeschäft von VMware.",
+   "pruefen": true
+  },
+  "AXP": {
+   "text": "American Express gibt Kreditkarten für gehobene Kunden aus und verdient an Gebühren, Zinsen und Händlerprovisionen.",
+   "pruefen": true
+  },
+  "AZN": {
+   "text": "AstraZeneca ist ein britisch-schwedischer Pharmakonzern mit Schwerpunkten bei Krebs, Herz-Kreislauf-Erkrankungen und seltenen Krankheiten.",
+   "pruefen": true
+  },
+  "BA.L": {
+   "text": "BAE Systems baut Kampfflugzeuge, U-Boote, Fahrzeuge und Elektronik und ist Großbritanniens größter Rüstungskonzern.",
+   "pruefen": true
+  },
+  "BAC": {
+   "text": "Bank of America ist eine der größten US-Banken mit Privatkunden, Firmenkunden, Investmentbanking und Vermögensverwaltung.",
+   "pruefen": true
+  },
+  "BAER.SW": {
+   "text": "Julius Baer ist die größte reine Schweizer Privatbank und betreut vermögende Kunden weltweit.",
+   "pruefen": true
+  },
+  "BALN.SW": {
+   "text": "Helvetia Baloise ist ein Schweizer Versicherungskonzern, der durch die Fusion von Helvetia und Baloise entstand.",
+   "pruefen": true
+  },
+  "BAMI.MI": {
+   "text": "Banco BPM ist die drittgrößte italienische Bank mit Schwerpunkt auf Privatkunden im Norden des Landes.",
+   "pruefen": true
+  },
+  "BARN.SW": {
+   "text": "Barry Callebaut ist der weltgrößte Schokoladenhersteller für die Industrie und beliefert Marken wie Nestlé und Mondelez.",
+   "pruefen": true
+  },
+  "BATS.L": {
+   "text": "British American Tobacco verkauft Zigaretten wie Lucky Strike und Dunhill und baut das Geschäft mit E-Zigaretten und Tabakerhitzern aus.",
+   "pruefen": true
+  },
+  "BBVA.MC": {
+   "text": "BBVA ist eine spanische Großbank mit starkem Geschäft in Mexiko und der Türkei.",
+   "pruefen": true
+  },
+  "BCP.LS": {
+   "text": "Banco Comercial Português ist die größte private Bank Portugals und tritt unter der Marke Millennium bcp auf.",
+   "pruefen": true
+  },
+  "BCS": {
+   "text": "Barclays ist eine britische Großbank mit Privatkundengeschäft, Kreditkarten und Investmentbanking.",
+   "pruefen": true
+  },
+  "BEI.DE": {
+   "text": "Beiersdorf stellt Hautpflege her, mit Marken wie Nivea, Eucerin und Labello.",
+   "pruefen": true
+  },
+  "BG": {
+   "text": "Bunge handelt und verarbeitet Getreide und Ölsaaten und produziert Pflanzenöle und Mehl.",
+   "pruefen": true
+  },
+  "BIRG.IR": {
+   "text": "Bank of Ireland ist eine der führenden Banken der Republik Irland mit Privat- und Firmenkunden.",
+   "pruefen": true
+  },
+  "BMW.DE": {
+   "text": "BMW baut Autos der Marken BMW, Mini und Rolls-Royce und Motorräder und bietet Finanzierungen an.",
+   "pruefen": true
+  },
+  "BP.L": {
+   "text": "BP ist ein britischer Energiekonzern mit Öl, Gas, Tankstellennetz und Investitionen in erneuerbare Energien.",
+   "pruefen": true
+  },
+  "BTRW.L": {
+   "text": "Barratt Redrow ist Großbritanniens größter Wohnungsbauer und entstand aus der Fusion von Barratt und Redrow.",
+   "pruefen": true
+  },
+  "CA.PA": {
+   "text": "Carrefour betreibt Supermärkte und Hypermärkte in Frankreich, Spanien, Italien und Brasilien.",
+   "pruefen": true
+  },
+  "CBK.DE": {
+   "text": "Die Commerzbank ist Deutschlands Bank für den Mittelstand und für Privatkunden mit Sitz in Frankfurt.",
+   "pruefen": true
+  },
+  "CCH.L": {
+   "text": "Coca-Cola HBC füllt und vertreibt Coca-Cola-Getränke in Europa, Nigeria und Ägypten.",
+   "pruefen": true
+  },
+  "CF": {
+   "text": "CF Industries produziert Stickstoffdünger aus Erdgas für die Landwirtschaft in Nordamerika und Europa.",
+   "pruefen": true
+  },
+  "CFR.SW": {
+   "text": "Richemont besitzt Luxusmarken wie Cartier, Van Cleef & Arpels, IWC und Montblanc.",
+   "pruefen": true
+  },
+  "CLN.SW": {
+   "text": "Clariant ist ein Schweizer Spezialchemiekonzern mit Katalysatoren, Pflegechemie und Zusatzstoffen.",
+   "pruefen": true
+  },
+  "CMCSA": {
+   "text": "Comcast betreibt Kabelnetze und Internet in den USA, besitzt NBCUniversal und die Freizeitparks Universal.",
+   "pruefen": true
+  },
+  "CME": {
+   "text": "CME Group betreibt Terminbörsen für Zinsen, Rohstoffe und Aktienindizes und verdient an Handelsgebühren.",
+   "pruefen": true
+  },
+  "COF": {
+   "text": "Capital One ist ein US-Kreditkartenanbieter und Bank für Privatkunden und hat Discover übernommen.",
+   "pruefen": true
+  },
+  "CON.DE": {
+   "text": "Continental stellt Autoreifen und Industrieprodukte her und hat sich von der Autozuliefersparte getrennt.",
+   "pruefen": true
+  },
+  "CS.PA": {
+   "text": "AXA ist ein französischer Versicherungskonzern mit Schaden-, Lebens- und Krankenversicherung und Vermögensverwaltung.",
+   "pruefen": true
+  },
+  "CSCO": {
+   "text": "Cisco stellt Netzwerktechnik, Sicherheitslösungen und Software her.",
+   "pruefen": true
+  },
+  "CVS": {
+   "text": "CVS Health betreibt Apotheken, die Krankenversicherung Aetna und einen Medikamenteneinkauf für Versicherer.",
+   "pruefen": true
+  },
+  "CVX": {
+   "text": "Chevron ist einer der größten US-Ölkonzerne mit Förderung, Raffinerien und Chemie.",
+   "pruefen": true
+  },
+  "DAL": {
+   "text": "Delta Air Lines ist eine der größten US-Fluggesellschaften mit Drehkreuzen in Atlanta und New York.",
+   "pruefen": true
+  },
+  "DANSKE.CO": {
+   "text": "Danske Bank ist die größte Bank Dänemarks mit Privat- und Firmenkunden in den nordischen Ländern.",
+   "pruefen": true
+  },
+  "DB1.DE": {
+   "text": "Deutsche Börse betreibt die Frankfurter Börse, den Terminmarkt Eurex und die Abwicklung Clearstream.",
+   "pruefen": true
+  },
+  "DBK.DE": {
+   "text": "Die Deutsche Bank ist Deutschlands größte Bank mit Privatkunden, Unternehmensbank, Investmentbank und Vermögensverwaltung.",
+   "pruefen": true
+  },
+  "DG.PA": {
+   "text": "Vinci baut Autobahnen, Flughäfen und Infrastruktur und betreibt Konzessionen in Frankreich und weltweit.",
+   "pruefen": true
+  },
+  "DHL.DE": {
+   "text": "DHL Group ist ein Logistikkonzern mit Paketdienst, Expressversand, Luft- und Seefracht sowie Post in Deutschland.",
+   "pruefen": true
+  },
+  "DIS": {
+   "text": "Disney besitzt Filmstudios, Streaming mit Disney+, Fernsehsender und Freizeitparks.",
+   "pruefen": true
+  },
+  "DRI": {
+   "text": "Darden betreibt Restaurantketten wie Olive Garden und LongHorn Steakhouse in den USA.",
+   "pruefen": true
+  },
+  "DSV.CO": {
+   "text": "DSV ist ein dänischer Logistikkonzern mit Luft-, See- und Landfracht und gehört nach der Übernahme von Schenker zu den größten der Welt.",
+   "pruefen": true
+  },
+  "DTE.DE": {
+   "text": "Die Deutsche Telekom betreibt Mobilfunk und Festnetz in Deutschland und Europa und hält die Mehrheit an T-Mobile US.",
+   "pruefen": true
+  },
+  "DTG.DE": {
+   "text": "Daimler Truck baut Lastwagen und Busse unter Marken wie Mercedes-Benz, Freightliner und Fuso.",
+   "pruefen": true
+  },
+  "DVN": {
+   "text": "Devon Energy fördert Öl und Erdgas in den USA, vor allem im Permian-Becken.",
+   "pruefen": true
+  },
+  "EDEN.PA": {
+   "text": "Edenred gibt Essens-, Mobilitäts- und Benefit-Karten für Beschäftigte aus und verdient an Gebühren von Arbeitgebern und Händlern.",
+   "pruefen": true
+  },
+  "EIX": {
+   "text": "Edison International ist der Mutterkonzern des kalifornischen Stromversorgers Southern California Edison.",
+   "pruefen": true
+  },
+  "ELIS.PA": {
+   "text": "Elis vermietet und wäscht Arbeitskleidung, Tischwäsche und Hygieneprodukte für Firmen in Europa und Lateinamerika.",
+   "pruefen": true
+  },
+  "ELISA.HE": {
+   "text": "Elisa ist ein finnischer Telekomkonzern mit Mobilfunk, Festnetz und digitalen Diensten.",
+   "pruefen": true
+  },
+  "EME": {
+   "text": "EMCOR plant und installiert Elektro-, Heizungs- und Klimatechnik in Gebäuden und Rechenzentren in den USA.",
+   "pruefen": true
+  },
+  "EN.PA": {
+   "text": "Bouygues ist ein französischer Konzern mit Bau, Telekom über Bouygues Telecom und dem Sender TF1.",
+   "pruefen": true
+  },
+  "ENEL.MI": {
+   "text": "Enel ist Italiens größter Stromversorger und betreibt Netze, Kraftwerke und erneuerbare Energien in Europa und Amerika.",
+   "pruefen": true
+  },
+  "ENGI.PA": {
+   "text": "Engie ist ein französischer Energieversorger mit Gas, Strom, erneuerbaren Energien und Energiedienstleistungen.",
+   "pruefen": true
+  },
+  "ENI.MI": {
+   "text": "Eni ist Italiens größter Energiekonzern mit Öl- und Gasförderung, Raffinerien, Biokraftstoffen und Stromgeschäft.",
+   "pruefen": true
+  },
+  "ENR.DE": {
+   "text": "Siemens Energy baut Gasturbinen, Netztechnik und Windkraftanlagen über die Tochter Siemens Gamesa.",
+   "pruefen": true
+  },
+  "EOG": {
+   "text": "EOG Resources fördert Öl und Erdgas in den USA und gilt als einer der kosteneffizientesten Förderer des Landes.",
+   "pruefen": true
+  },
+  "EQNR.OL": {
+   "text": "Equinor ist Norwegens staatlich kontrollierter Energiekonzern mit Öl- und Gasförderung in der Nordsee und Investitionen in Wind.",
+   "pruefen": true
+  },
+  "EQT": {
+   "text": "EQT Corporation ist einer der größten Erdgasproduzenten der USA im Appalachen-Becken.",
+   "pruefen": true
+  },
+  "EQT.ST": {
+   "text": "EQT AB ist ein schwedischer Finanzinvestor, der Beteiligungen an Unternehmen und Infrastruktur verwaltet.",
+   "pruefen": true
+  },
+  "ERIC": {
+   "text": "Ericsson baut Mobilfunknetze und liefert Ausrüstung für 4G- und 5G-Netze an Telekomfirmen.",
+   "pruefen": true
+  },
+  "ERIC-A.ST": {
+   "text": "Ericsson baut Mobilfunknetze und liefert Ausrüstung für 4G- und 5G-Netze an Telekomfirmen.",
+   "pruefen": true
+  },
+  "ERIC-B.ST": {
+   "text": "Ericsson baut Mobilfunknetze und liefert Ausrüstung für 4G- und 5G-Netze an Telekomfirmen.",
+   "pruefen": true
+  },
+  "ES0122060314": {
+   "text": "FCC ist ein spanischer Konzern für Bau, Wasser, Abfall und Stadtreinigung.",
+   "pruefen": true
+  },
+  "ES0125220311": {
+   "text": "Acciona baut Infrastruktur und betreibt erneuerbare Energien und Wasseranlagen in Spanien und weltweit.",
+   "pruefen": true
+  },
+  "ESS": {
+   "text": "Essex Property Trust besitzt Mehrfamilienhäuser an der US-Westküste in Kalifornien und Seattle.",
+   "pruefen": true
+  },
+  "ESSITY-B.ST": {
+   "text": "Essity stellt Hygieneprodukte her, mit Marken wie Zewa, Tork und Tena.",
+   "pruefen": true
+  },
+  "EXE": {
+   "text": "Expand Energy ist der größte Erdgasproduzent der USA und entstand aus der Fusion von Chesapeake und Southwestern.",
+   "pruefen": true
+  },
+  "EXR": {
+   "text": "Extra Space Storage betreibt Lagerflächen zur Selbstlagerung für Privat- und Firmenkunden in den USA.",
+   "pruefen": true
+  },
+  "F": {
+   "text": "Ford baut Autos und Lieferwagen wie den F-150 und Elektrofahrzeuge und betreibt eine eigene Finanzierung.",
+   "pruefen": true
+  },
+  "FANG": {
+   "text": "Diamondback Energy fördert Öl im Permian-Becken in Texas und New Mexico.",
+   "pruefen": true
+  },
+  "FDJU.PA": {
+   "text": "La Française des Jeux betreibt Lotterien und Sportwetten in Frankreich und besitzt den Wettanbieter Kindred.",
+   "pruefen": true
+  },
+  "FDX": {
+   "text": "FedEx betreibt Paket-, Express- und Frachtdienste mit eigener Flugzeugflotte.",
+   "pruefen": true
+  },
+  "FIS": {
+   "text": "Fidelity National Information Services liefert Software und Zahlungsabwicklung für Banken und Händler.",
+   "pruefen": true
+  },
+  "FIX": {
+   "text": "Comfort Systems USA baut und wartet Heizung, Lüftung und Klimatechnik für Gewerbebauten und Rechenzentren.",
+   "pruefen": true
+  },
+  "FME.DE": {
+   "text": "Fresenius Medical Care betreibt Dialysekliniken und stellt Dialysegeräte her.",
+   "pruefen": true
+  },
+  "FRES.L": {
+   "text": "Fresnillo ist der weltgrößte Silberförderer mit Minen in Mexiko.",
+   "pruefen": true
+  },
+  "G24.DE": {
+   "text": "Scout24 betreibt ImmoScout24, Deutschlands größtes Immobilienportal.",
+   "pruefen": true
+  },
+  "GE": {
+   "text": "General Electric baut Triebwerke für Flugzeuge und Wartung für Airlines, seit der Aufspaltung ohne Energiesparten.",
+   "pruefen": true
+  },
+  "GIS": {
+   "text": "General Mills stellt Lebensmittel her, mit Marken wie Cheerios, Pillsbury, Häagen-Dazs und Blue Buffalo.",
+   "pruefen": true
+  },
+  "GRMN": {
+   "text": "Garmin baut Navigationsgeräte, Sportuhren und Avionik für Flugzeuge.",
+   "pruefen": true
+  },
+  "GS": {
+   "text": "Goldman Sachs ist eine Investmentbank mit Beratung, Handel, Vermögensverwaltung und Privatkundengeschäft.",
+   "pruefen": true
+  },
+  "GSK.L": {
+   "text": "GSK ist ein britischer Pharmakonzern mit Impfstoffen, HIV-Medikamenten und Spezialmedikamenten.",
+   "pruefen": true
+  },
+  "HAS": {
+   "text": "Hasbro stellt Spielzeug und Spiele her, mit Marken wie Monopoly, Transformers und Magic: The Gathering.",
+   "pruefen": true
+  },
+  "HBAN": {
+   "text": "Huntington Bancshares ist eine Regionalbank im Mittleren Westen der USA mit Privat- und Firmenkunden.",
+   "pruefen": true
+  },
+  "HBC1.DE": {
+   "text": "HSBC ist eine britische Großbank mit starkem Geschäft in Asien, Hongkong und im internationalen Handel.",
+   "pruefen": true
+  },
+  "HD": {
+   "text": "Home Depot ist die größte Baumarktkette der USA für Heimwerker und Profis.",
+   "pruefen": true
+  },
+  "HEI.DE": {
+   "text": "Heidelberg Materials produziert Zement, Beton und Zuschlagstoffe und ist einer der größten Baustoffkonzerne der Welt.",
+   "pruefen": true
+  },
+  "HLT": {
+   "text": "Hilton betreibt Hotelmarken wie Hilton, Hampton und Conrad und verdient vor allem an Franchise- und Managementgebühren.",
+   "pruefen": true
+  },
+  "HNR1.DE": {
+   "text": "Hannover Rück ist einer der größten Rückversicherer der Welt und versichert andere Versicherer gegen große Schäden.",
+   "pruefen": true
+  },
+  "HOLN.SW": {
+   "text": "Holcim stellt Zement, Beton und Baulösungen her mit Schwerpunkt auf Europa und Nordamerika.",
+   "pruefen": true
+  },
+  "HPQ": {
+   "text": "HP verkauft PCs, Laptops und Drucker samt Tinte und Toner.",
+   "pruefen": true
+  },
+  "HRL": {
+   "text": "Hormel Foods stellt Fleischprodukte und Fertiggerichte her, mit Marken wie Spam, Skippy und Planters.",
+   "pruefen": true
+  },
+  "HST": {
+   "text": "Host Hotels & Resorts ist ein US-Immobilienkonzern, der Luxus- und Konferenzhotels besitzt.",
+   "pruefen": true
+  },
+  "HWM": {
+   "text": "Howmet Aerospace fertigt Triebwerksteile und Verbindungselemente für Flugzeuge.",
+   "pruefen": true
+  },
+  "IAG.MC": {
+   "text": "IAG ist die Holding von British Airways, Iberia, Aer Lingus und Vueling.",
+   "pruefen": true
+  },
+  "IBKR": {
+   "text": "Interactive Brokers ist ein US-Onlinebroker mit Zugang zu Börsen in über 100 Märkten und günstigen Gebühren.",
+   "pruefen": true
+  },
+  "IFX.DE": {
+   "text": "Infineon stellt Leistungshalbleiter für Auto, Industrie und KI-Rechenzentren her und ist der größte deutsche Chipkonzern.",
+   "pruefen": true
+  },
+  "IHG.L": {
+   "text": "InterContinental Hotels Group betreibt Marken wie Holiday Inn, Crowne Plaza und Intercontinental, überwiegend im Franchise.",
+   "pruefen": true
+  },
+  "INDT.ST": {
+   "text": "Indutrade ist ein schwedischer Konzern, der Nischenfirmen für Industriekomponenten, Ventile und Messtechnik zukauft.",
+   "pruefen": true
+  },
+  "IP": {
+   "text": "International Paper stellt Verpackungen aus Wellpappe und Papier her.",
+   "pruefen": true
+  },
+  "ISP.MI": {
+   "text": "Intesa Sanpaolo ist Italiens größte Bank mit Privatkunden, Unternehmen und Vermögensverwaltung.",
+   "pruefen": true
+  },
+  "ITX.MC": {
+   "text": "Inditex ist der Mutterkonzern von Zara, Massimo Dutti und Bershka und der größte Modehändler der Welt.",
+   "pruefen": true
+  },
+  "JD.L": {
+   "text": "JD Sports Fashion verkauft Sportschuhe und Sportmode über Läden und Online-Shops in Europa und den USA.",
+   "pruefen": true
+  },
+  "JNJ": {
+   "text": "Johnson & Johnson ist ein US-Konzern mit Medikamenten und Medizintechnik, seit der Abspaltung der Konsumsparte als reiner Gesundheitskonzern.",
+   "pruefen": true
+  },
+  "JPM": {
+   "text": "JPMorgan Chase ist die größte US-Bank mit Privatkunden, Kreditkarten, Investmentbanking und Vermögensverwaltung.",
+   "pruefen": true
+  },
+  "KEY": {
+   "text": "KeyCorp ist eine US-Regionalbank mit Privat- und Firmenkunden, vor allem im Nordosten und Mittleren Westen.",
+   "pruefen": true
+  },
+  "KGF.L": {
+   "text": "Kingfisher betreibt Baumärkte unter den Marken B&Q, Castorama und Brico Dépôt in Großbritannien und Frankreich.",
+   "pruefen": true
+  },
+  "KHC": {
+   "text": "Kraft Heinz stellt Lebensmittel her, mit Marken wie Heinz Ketchup, Kraft Käse und Oscar Mayer.",
+   "pruefen": true
+  },
+  "KO": {
+   "text": "Coca-Cola verkauft Sirup und Konzentrate für Getränke wie Coca-Cola, Fanta und Sprite an Abfüller weltweit.",
+   "pruefen": true
+  },
+  "LGEN.L": {
+   "text": "Legal & General ist ein britischer Versicherer für Rente, Lebensversicherung und Vermögensverwaltung.",
+   "pruefen": true
+  },
+  "LLY": {
+   "text": "Eli Lilly entwickelt Medikamente, vor allem Mittel gegen Diabetes und Übergewicht wie Mounjaro und Zepbound.",
+   "pruefen": true
+  },
+  "LOGN.SW": {
+   "text": "Logitech stellt Computermäuse, Tastaturen, Headsets und Webcams her.",
+   "pruefen": true
+  },
+  "LONN.SW": {
+   "text": "Lonza fertigt Medikamente und Wirkstoffe im Auftrag von Pharma- und Biotechfirmen.",
+   "pruefen": true
+  },
+  "LOOMIS.ST": {
+   "text": "Loomis transportiert und verwaltet Bargeld für Banken und Händler in Europa und den USA.",
+   "pruefen": true
+  },
+  "LSEG.L": {
+   "text": "London Stock Exchange Group betreibt die Londoner Börse und verdient vor allem mit Finanzdaten über Refinitiv.",
+   "pruefen": true
+  },
+  "LVS": {
+   "text": "Las Vegas Sands betreibt Casino-Resorts in Macau und Singapur, nach dem Verkauf der Häuser in Las Vegas.",
+   "pruefen": true
+  },
+  "MA": {
+   "text": "Mastercard betreibt ein Zahlungsnetz und verdient an Gebühren für jede Kartenzahlung.",
+   "pruefen": true
+  },
+  "MB.MI": {
+   "text": "Mediobanca ist eine italienische Investmentbank mit Vermögensverwaltung und Beteiligungen an Versicherern.",
+   "pruefen": true
+  },
+  "MBG.DE": {
+   "text": "Mercedes-Benz baut Pkw, Geländewagen und Vans der Luxusklasse und bietet Finanzierungen an.",
+   "pruefen": true
+  },
+  "MC.PA": {
+   "text": "LVMH ist der weltgrößte Luxuskonzern mit Marken wie Louis Vuitton, Dior, Moët & Chandon und Sephora.",
+   "pruefen": true
+  },
+  "MDT": {
+   "text": "Medtronic stellt Herzschrittmacher, Insulinpumpen und chirurgische Geräte her.",
+   "pruefen": true
+  },
+  "MET": {
+   "text": "MetLife verkauft Lebensversicherungen und Betriebsrenten in den USA und weltweit.",
+   "pruefen": true
+  },
+  "MKC": {
+   "text": "McCormick ist der weltgrößte Gewürzhersteller und verkauft Marken wie Schwartz und Frank's RedHot.",
+   "pruefen": true
+  },
+  "MNG.L": {
+   "text": "M&G ist ein britischer Vermögensverwalter und Versicherer, der aus der Prudential abgespalten wurde.",
+   "pruefen": true
+  },
+  "MO": {
+   "text": "Altria verkauft Zigaretten wie Marlboro in den USA und besitzt Anteile an Tabakerhitzern und Nikotinbeuteln.",
+   "pruefen": true
+  },
+  "MOWI.OL": {
+   "text": "Mowi ist der weltgrößte Lachszüchter mit Zuchtbetrieben in Norwegen, Chile und Kanada.",
+   "pruefen": true
+  },
+  "MPC": {
+   "text": "Marathon Petroleum betreibt Raffinerien und Tankstellen in den USA und Pipelines über die Beteiligung MPLX.",
+   "pruefen": true
+  },
+  "MPWR": {
+   "text": "Monolithic Power Systems stellt Stromversorgungschips für Rechenzentren, Auto und Industrie her.",
+   "pruefen": true
+  },
+  "MRK": {
+   "text": "Merck & Co. ist ein US-Pharmakonzern mit dem Krebsmittel Keytruda und Impfstoffen.",
+   "pruefen": true
+  },
+  "MRSH": {
+   "text": "Marsh McLennan ist der weltgrößte Versicherungsmakler und berät Firmen in Risiko- und Personalfragen.",
+   "pruefen": true
+  },
+  "MRVL": {
+   "text": "Marvell Technology stellt Chips für Rechenzentren, Netzwerke und Datenspeicher her.",
+   "pruefen": true
+  },
+  "MSFT": {
+   "text": "Microsoft verkauft Software wie Windows und Office, die Cloud Azure und betreibt LinkedIn und Xbox.",
+   "pruefen": true
+  },
+  "MTX.DE": {
+   "text": "MTU Aero Engines baut und wartet Triebwerke für Passagierflugzeuge und Militärjets.",
+   "pruefen": true
+  },
+  "MU": {
+   "text": "Micron stellt Arbeitsspeicher und Datenspeicher her und beliefert KI-Rechenzentren mit Hochleistungsspeicher.",
+   "pruefen": true
+  },
+  "MUFG": {
+   "text": "Mitsubishi UFJ ist Japans größte Bankengruppe mit Privat- und Firmenkunden in Asien und den USA.",
+   "pruefen": true
+  },
+  "MUV2.DE": {
+   "text": "Munich Re ist einer der größten Rückversicherer der Welt und versichert Versicherer gegen Großschäden.",
+   "pruefen": true
+  },
+  "NESN.SW": {
+   "text": "Nestlé ist der weltgrößte Lebensmittelkonzern mit Nescafé, Nespresso, KitKat und Tierfutter.",
+   "pruefen": true
+  },
+  "NOK": {
+   "text": "Nokia liefert Netzwerktechnik für Mobilfunk und Festnetz und ist von Handys zum Netzausrüster geworden.",
+   "pruefen": true
+  },
+  "NOVN.SW": {
+   "text": "Novartis ist ein Schweizer Pharmakonzern, der sich nach Abspaltung von Sandoz auf neue Medikamente konzentriert.",
+   "pruefen": true
+  },
+  "NOVO-B.CO": {
+   "text": "Novo Nordisk ist der Hersteller von Insulin und Abnehmmitteln wie Ozempic und Wegovy.",
+   "pruefen": true
+  },
+  "NRG": {
+   "text": "NRG Energy verkauft Strom an Privat- und Firmenkunden in den USA und betreibt Kraftwerke.",
+   "pruefen": true
+  },
+  "NVDA": {
+   "text": "Nvidia entwickelt Grafikprozessoren und KI-Chips, die die meisten KI-Rechenzentren antreiben.",
+   "pruefen": true
+  },
+  "NVO": {
+   "text": "Novo Nordisk ist der Hersteller von Insulin und Abnehmmitteln wie Ozempic und Wegovy.",
+   "pruefen": true
+  },
+  "NVS": {
+   "text": "Novartis ist ein Schweizer Pharmakonzern, der sich nach Abspaltung von Sandoz auf neue Medikamente konzentriert.",
+   "pruefen": true
+  },
+  "NWG.L": {
+   "text": "NatWest ist eine britische Großbank, die mehrheitlich dem Staat gehörte, mit Privat- und Firmenkunden.",
+   "pruefen": true
+  },
+  "NXT.L": {
+   "text": "Next ist ein britischer Modehändler mit Läden, Online-Shop und dem Katalog Next Directory.",
+   "pruefen": true
+  },
+  "O": {
+   "text": "Realty Income vermietet Einzelhandelsimmobilien an Ketten wie Walgreens und Dollar General und zahlt die Dividende monatlich.",
+   "pruefen": true
+  },
+  "ODFL": {
+   "text": "Old Dominion Freight Line ist ein US-Spediteur für Stückgut mit Lastwagen und Terminals.",
+   "pruefen": true
+  },
+  "OKE": {
+   "text": "ONEOK betreibt Pipelines und Aufbereitungsanlagen für Erdgas und Flüssiggas in den USA.",
+   "pruefen": true
+  },
+  "OMC": {
+   "text": "Omnicom ist eine der größten Werbeagenturgruppen der Welt mit Marken wie BBDO und DDB.",
+   "pruefen": true
+  },
+  "OR.PA": {
+   "text": "L'Oréal ist der weltgrößte Kosmetikkonzern mit Marken wie Maybelline, Lancôme und Garnier.",
+   "pruefen": true
+  },
+  "ORCL": {
+   "text": "Oracle verkauft Datenbanken, Unternehmenssoftware und Cloud-Rechenleistung.",
+   "pruefen": true
+  },
+  "OTIS": {
+   "text": "Otis baut, wartet und modernisiert Aufzüge und Rolltreppen weltweit.",
+   "pruefen": true
+  },
+  "PAH3.DE": {
+   "text": "Porsche SE ist die Holding der Familien Porsche und Piëch mit Anteilen an Volkswagen und Porsche AG.",
+   "pruefen": true
+  },
+  "PFE": {
+   "text": "Pfizer ist ein US-Pharmakonzern mit Impfstoffen, Krebsmedikamenten und dem Corona-Impfstoff.",
+   "pruefen": true
+  },
+  "PFG": {
+   "text": "Principal Financial Group bietet Altersvorsorge, Vermögensverwaltung und Versicherungen.",
+   "pruefen": true
+  },
+  "PG": {
+   "text": "Procter & Gamble stellt Haushalts- und Pflegeprodukte her, mit Marken wie Ariel, Pampers und Gillette.",
+   "pruefen": true
+  },
+  "PGHN.SW": {
+   "text": "Partners Group ist ein Schweizer Vermögensverwalter, der in Private Equity, Immobilien und Infrastruktur investiert.",
+   "pruefen": true
+  },
+  "PGR": {
+   "text": "Progressive ist ein großer US-Autoversicherer mit Direktvertrieb und Online-Abschluss.",
+   "pruefen": true
+  },
+  "PHNX.L": {
+   "text": "Phoenix Group, früher Standard Life, verwaltet Rentenpolicen und Lebensversicherungen in Großbritannien.",
+   "pruefen": true
+  },
+  "PSA": {
+   "text": "Public Storage ist der größte Betreiber von Selbstlagerflächen in den USA.",
+   "pruefen": true
+  },
+  "PSON.L": {
+   "text": "Pearson ist ein britischer Bildungskonzern mit Lernmaterial, Prüfungen und Online-Kursen.",
+   "pruefen": true
+  },
+  "PSX": {
+   "text": "Phillips 66 betreibt Raffinerien, Chemie und Tankstellen in den USA.",
+   "pruefen": true
+  },
+  "QCOM": {
+   "text": "Qualcomm entwickelt Chips und Lizenzen für Smartphones, Autos und mobile Geräte.",
+   "pruefen": true
+  },
+  "QIA.DE": {
+   "text": "Qiagen stellt Testsysteme für Labore und Diagnostik her, etwa für Krebs und Infektionen.",
+   "pruefen": true
+  },
+  "RACE.MI": {
+   "text": "Ferrari baut Luxussportwagen in begrenzter Stückzahl und verdient zudem mit Marke und Rennsport.",
+   "pruefen": true
+  },
+  "RBREW.CO": {
+   "text": "Royal Unibrew ist eine dänische Brauerei mit Bier und Limonade in Nordeuropa und Italien.",
+   "pruefen": true
+  },
+  "RED.MC": {
+   "text": "Redeia betreibt das spanische Stromnetz und verdient an regulierten Netzentgelten.",
+   "pruefen": true
+  },
+  "REL.L": {
+   "text": "RELX liefert Fachinformationen und Analysen für Wissenschaft, Recht und Risikomanagement.",
+   "pruefen": true
+  },
+  "RHM.DE": {
+   "text": "Rheinmetall baut Panzer, Munition, Militärfahrzeuge und Rüstungselektronik.",
+   "pruefen": true
+  },
+  "RI.PA": {
+   "text": "Pernod Ricard verkauft Spirituosen und Wein, mit Marken wie Absolut, Jameson und Chivas Regal.",
+   "pruefen": true
+  },
+  "RIO.L": {
+   "text": "Rio Tinto fördert Eisenerz, Aluminium und Kupfer und gehört zu den größten Bergbaukonzernen der Welt.",
+   "pruefen": true
+  },
+  "RKT.L": {
+   "text": "Reckitt stellt Haushalts- und Gesundheitsprodukte her, mit Marken wie Dettol, Durex und Finish.",
+   "pruefen": true
+  },
+  "RMS.PA": {
+   "text": "Hermès fertigt Luxus-Lederwaren wie die Birkin Bag, Seidentücher und Mode.",
+   "pruefen": true
+  },
+  "RNO.PA": {
+   "text": "Renault baut Autos der Marken Renault, Dacia und Alpine und hält Anteile an Nissan.",
+   "pruefen": true
+  },
+  "ROG.SW": {
+   "text": "Roche ist ein Schweizer Pharma- und Diagnostikkonzern mit Krebsmedikamenten und Labortests.",
+   "pruefen": true
+  },
+  "RUI.PA": {
+   "text": "Rubis vertreibt Flüssiggas, Heizöl und Kraftstoffe in Europa, Afrika und der Karibik.",
+   "pruefen": true
+  },
+  "RWE.DE": {
+   "text": "RWE erzeugt Strom aus Wind, Sonne, Gas und Kohle und handelt Energie in Europa und den USA.",
+   "pruefen": true
+  },
+  "SAAB-B.ST": {
+   "text": "Saab baut Kampfflugzeuge wie den Gripen, U-Boote und Radarsysteme.",
+   "pruefen": true
+  },
+  "SAB.MC": {
+   "text": "Banco Sabadell ist eine spanische Bank mit Privat- und Firmenkunden und der britischen Tochter TSB.",
+   "pruefen": true
+  },
+  "SAF.PA": {
+   "text": "Safran baut Triebwerke, Bremsen und Ausrüstung für Flugzeuge.",
+   "pruefen": true
+  },
+  "SAN.MC": {
+   "text": "Banco Santander ist eine spanische Großbank mit starkem Geschäft in Brasilien, Großbritannien und den USA.",
+   "pruefen": true
+  },
+  "SAP": {
+   "text": "SAP liefert Unternehmenssoftware für Finanzen, Personal und Logistik und baut sein Cloud-Geschäft aus.",
+   "pruefen": true
+  },
+  "SAP.DE": {
+   "text": "SAP liefert Unternehmenssoftware für Finanzen, Personal und Logistik und baut sein Cloud-Geschäft aus.",
+   "pruefen": true
+  },
+  "SBAC": {
+   "text": "SBA Communications besitzt und vermietet Funkmasten an Mobilfunkfirmen in den USA und Lateinamerika.",
+   "pruefen": true
+  },
+  "SBMO.AS": {
+   "text": "SBM Offshore baut und betreibt schwimmende Förderschiffe für Ölfelder auf hoher See.",
+   "pruefen": true
+  },
+  "SBRY.L": {
+   "text": "Sainsbury's ist die zweitgrößte Supermarktkette Großbritanniens und betreibt zudem Argos.",
+   "pruefen": true
+  },
+  "SCMN.SW": {
+   "text": "Swisscom ist der größte Schweizer Telekomkonzern mit Mobilfunk, Festnetz und der italienischen Tochter Fastweb.",
+   "pruefen": true
+  },
+  "SGO.PA": {
+   "text": "Saint-Gobain stellt Baustoffe wie Glas, Dämmung, Gips und Mörtel her und beliefert Bau und Industrie.",
+   "pruefen": true
+  },
+  "SGRO.L": {
+   "text": "Segro besitzt und vermietet Lagerhallen und Logistikflächen in Großbritannien und Europa.",
+   "pruefen": true
+  },
+  "SHB-A.ST": {
+   "text": "Handelsbanken ist eine schwedische Bank mit dezentralem Filialmodell und Kunden in den nordischen Ländern und Großbritannien.",
+   "pruefen": true
+  },
+  "SHEL": {
+   "text": "Shell ist einer der größten Energiekonzerne der Welt mit Öl, Flüssiggas, Raffinerien und Tankstellen.",
+   "pruefen": true
+  },
+  "SHEL.L": {
+   "text": "Shell ist einer der größten Energiekonzerne der Welt mit Öl, Flüssiggas, Raffinerien und Tankstellen.",
+   "pruefen": true
+  },
+  "SIE.DE": {
+   "text": "Siemens baut Automatisierung, Gebäudetechnik, Bahntechnik und Software für die Industrie.",
+   "pruefen": true
+  },
+  "SIKA.SW": {
+   "text": "Sika stellt Dichtstoffe, Klebstoffe und Betonzusätze für die Bauindustrie her.",
+   "pruefen": true
+  },
+  "SKA-B.ST": {
+   "text": "Skanska baut Gebäude, Infrastruktur und Wohnungen in Nordeuropa und den USA.",
+   "pruefen": true
+  },
+  "SKF-B.ST": {
+   "text": "SKF stellt Wälzlager und Dichtungen für Maschinen, Autos und Windkraftanlagen her.",
+   "pruefen": true
+  },
+  "SLHN.SW": {
+   "text": "Swiss Life ist der größte Schweizer Lebensversicherer und verwaltet Vermögen und Immobilien.",
+   "pruefen": true
+  },
+  "SMFG": {
+   "text": "Sumitomo Mitsui Financial Group ist eine der drei großen japanischen Bankengruppen mit Firmen- und Privatkundengeschäft.",
+   "pruefen": true
+  },
+  "SNY": {
+   "text": "Sanofi ist ein französischer Pharmakonzern mit Impfstoffen und dem Hautmittel Dupixent.",
+   "pruefen": true
+  },
+  "SPG": {
+   "text": "Simon Property Group besitzt und betreibt die größten Einkaufszentren und Outlets der USA.",
+   "pruefen": true
+  },
+  "SPSN.SW": {
+   "text": "Swiss Prime Site besitzt Büro- und Einzelhandelsimmobilien in der Schweiz.",
+   "pruefen": true
+  },
+  "SREN.SW": {
+   "text": "Swiss Re ist einer der größten Rückversicherer der Welt und versichert Naturkatastrophen und Lebensrisiken.",
+   "pruefen": true
+  },
+  "SRG.MI": {
+   "text": "Snam betreibt das italienische Erdgasnetz mit Speichern und Flüssiggasterminals.",
+   "pruefen": true
+  },
+  "SU.PA": {
+   "text": "Schneider Electric liefert Energiemanagement, Stromverteilung und Automatisierung für Gebäude, Rechenzentren und Industrie.",
+   "pruefen": true
+  },
+  "SW": {
+   "text": "Smurfit Westrock ist der größte Verpackungshersteller aus Wellpappe, entstanden aus der Fusion von Smurfit Kappa und WestRock.",
+   "pruefen": true
+  },
+  "SWED-A.ST": {
+   "text": "Swedbank ist eine schwedische Bank mit Privatkunden und Sparkassenwurzeln in Schweden und dem Baltikum.",
+   "pruefen": true
+  },
+  "SY1.DE": {
+   "text": "Symrise stellt Duftstoffe, Aromen und Inhaltsstoffe für Parfüm, Lebensmittel und Tierfutter her.",
+   "pruefen": true
+  },
+  "TEF.MC": {
+   "text": "Telefónica betreibt Mobilfunk und Festnetz in Spanien, Deutschland, Brasilien und Großbritannien.",
+   "pruefen": true
+  },
+  "TEL.OL": {
+   "text": "Telenor ist ein norwegischer Telekomkonzern mit Mobilfunk in Skandinavien und Asien.",
+   "pruefen": true
+  },
+  "TEL2-A.ST": {
+   "text": "Tele2 ist ein schwedischer Mobilfunkanbieter in Nordeuropa und dem Baltikum.",
+   "pruefen": true
+  },
+  "TEL2-B.ST": {
+   "text": "Tele2 ist ein schwedischer Mobilfunkanbieter in Nordeuropa und dem Baltikum.",
+   "pruefen": true
+  },
+  "TEP.PA": {
+   "text": "Teleperformance betreibt Callcenter und Kundendienst für Unternehmen und ist der größte Anbieter weltweit.",
+   "pruefen": true
+  },
+  "TMUS": {
+   "text": "T-Mobile US betreibt Mobilfunk in den USA und gehört mehrheitlich der Deutschen Telekom.",
+   "pruefen": true
+  },
+  "TREL-B.ST": {
+   "text": "Trelleborg stellt Dichtungen, Reifen für Landmaschinen und Schwingungsdämpfer aus Polymeren her.",
+   "pruefen": true
+  },
+  "TRN.MI": {
+   "text": "Terna betreibt das italienische Höchstspannungsnetz und verdient an regulierten Netzentgelten.",
+   "pruefen": true
+  },
+  "TROW": {
+   "text": "T. Rowe Price verwaltet Investmentfonds und Altersvorsorge für Privatanleger in den USA.",
+   "pruefen": true
+  },
+  "TTE.PA": {
+   "text": "TotalEnergies ist ein französischer Energiekonzern mit Öl, Flüssiggas, Strom und Tankstellen.",
+   "pruefen": true
+  },
+  "UBSG.SW": {
+   "text": "UBS ist die größte Schweizer Bank, Vermögensverwalter der Reichen und hat die Credit Suisse übernommen.",
+   "pruefen": true
+  },
+  "UCG.MI": {
+   "text": "UniCredit ist eine italienische Großbank mit starkem Geschäft in Deutschland, Österreich und Osteuropa.",
+   "pruefen": true
+  },
+  "UDR": {
+   "text": "UDR besitzt Mehrfamilienhäuser in den USA, vor allem an den Küsten und in Großstädten.",
+   "pruefen": true
+  },
+  "UL": {
+   "text": "Unilever stellt Konsumgüter her, mit Marken wie Dove, Knorr, Omo und Axe.",
+   "pruefen": true
+  },
+  "UNH": {
+   "text": "UnitedHealth betreibt Krankenversicherung, Ärztenetzwerke und Medikamentenmanagement in den USA.",
+   "pruefen": true
+  },
+  "UPM.HE": {
+   "text": "UPM-Kymmene ist ein finnischer Konzern für Zellstoff, Papier, Etiketten und Biokraftstoffe.",
+   "pruefen": true
+  },
+  "UPS": {
+   "text": "UPS liefert Pakete aus und betreibt Fracht und Lieferketten-Dienste weltweit.",
+   "pruefen": true
+  },
+  "VICI": {
+   "text": "VICI Properties besitzt Casino- und Freizeitimmobilien wie Caesars Palace und vermietet sie langfristig an die Betreiber.",
+   "pruefen": true
+  },
+  "VIE.PA": {
+   "text": "Veolia betreibt Wasser-, Abfall- und Energiedienste für Städte und Industrie.",
+   "pruefen": true
+  },
+  "VNA.DE": {
+   "text": "Vonovia ist Deutschlands größter Wohnungsvermieter mit mehr als einer halben Million Wohnungen.",
+   "pruefen": true
+  },
+  "VOE.VI": {
+   "text": "voestalpine stellt Spezialstahl und Weiterverarbeitung für Auto, Bahn und Luftfahrt her.",
+   "pruefen": true
+  },
+  "VOW3.DE": {
+   "text": "Volkswagen ist Europas größter Autohersteller mit Marken wie VW, Audi, Skoda und Seat.",
+   "pruefen": true
+  },
+  "VPK.AS": {
+   "text": "Vopak vermietet Lagertanks für Öl, Chemie und Gas in großen Häfen weltweit.",
+   "pruefen": true
+  },
+  "VZ": {
+   "text": "Verizon betreibt Mobilfunk und Glasfasernetze in den USA.",
+   "pruefen": true
+  },
+  "WAWI.OL": {
+   "text": "Wallenius Wilhelmsen betreibt Spezialschiffe für den Transport von Autos, Lastwagen und schwerem Gerät.",
+   "pruefen": true
+  },
+  "WFC": {
+   "text": "Wells Fargo ist eine der größten US-Banken mit Privat- und Firmenkunden.",
+   "pruefen": true
+  },
+  "XD4.DE": {
+   "text": "Strabag ist ein österreichischer Baukonzern, der Straßen, Hochbau und Tunnel baut.",
+   "pruefen": true
+  },
+  "YAR.OL": {
+   "text": "Yara ist ein norwegischer Düngemittelhersteller mit Stickstoff- und Mehrnährstoffdüngern.",
+   "pruefen": true
+  },
+  "ZURN.SW": {
+   "text": "Zurich Insurance ist ein Schweizer Versicherer mit Schaden-, Lebens- und Firmenversicherung weltweit.",
+   "pruefen": true
+  },
+  "ADC": {
+   "text": "Agree Realty besitzt Einzelhandelsimmobilien, die an Händler wie Walmart, Home Depot und Tractor Supply vermietet sind, und zahlt die Dividende monatlich.",
+   "pruefen": true
+  },
+  "ES0129743318": {
+   "text": "Elecnor ist ein spanischer Konzern für Elektro- und Energieinfrastruktur, der Netze, Solar- und Windparks baut und betreibt.",
+   "pruefen": true
+  },
+  "HAUTO.OL": {
+   "text": "Höegh Autoliners betreibt Spezialschiffe für den Transport von Autos, Lastwagen und schwerem Gerät.",
+   "pruefen": true
+  },
+  "MAIN": {
+   "text": "Main Street Capital ist ein US-Finanzierer, der Kredite und Beteiligungen an kleine und mittlere Firmen vergibt und die Dividende monatlich zahlt.",
+   "pruefen": true
+  },
+  "SOLB.BR": {
+   "text": "Solvay ist ein belgischer Spezialchemiekonzern mit Materialien für Batterien, Luftfahrt und Auto und nach der Abspaltung von Syensqo deutlich kleiner.",
+   "pruefen": true
+  },
+  "TW.L": {
+   "text": "Taylor Wimpey ist einer der größten britischen Wohnungsbauer und baut Häuser und Wohnungen für Eigennutzer.",
+   "pruefen": true
+  },
+  "VRLA.PA": {
+   "text": "Verallia ist der größte europäische Hersteller von Glasflaschen für Wein, Spirituosen und Lebensmittel.",
+   "pruefen": true
+  }
+ }
+}

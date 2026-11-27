@@ -188,3 +188,10 @@ article p,article li,article td{overflow-wrap:anywhere}
 .post table img.tlogo{display:inline-block;vertical-align:middle;margin:-2px 8px 0 0;border-radius:3px;object-fit:contain;background:#fff}
 .post table:has(img.tlogo) th,.post table:has(img.tlogo) td{padding-left:6px;padding-right:6px;font-size:.92rem}
 .post table:has(img.tlogo) th img.tlogo{display:block;margin:0 0 4px}
+/* Ranglisten: Logo und Name in einer Zeile, Tabelle bleibt auf dem Handy in der Breite */
+.post table .arlogo{display:inline-flex;width:28px;height:28px;flex:none;padding:3px;border-radius:7px;vertical-align:middle;margin:-3px 8px 0 2px}
+.post table:has(.arlogo) th,.post table:has(.arlogo) td{padding-left:6px;padding-right:6px;font-size:.92rem}
+.post table:has(.arlogo) td:not(:first-child),.post table:has(.arlogo) th:not(:first-child){white-space:nowrap}
+.related-list{list-style:none;padding:0;margin:0 0 1rem}.related-list li{padding:.45rem 0;border-bottom:1px solid #e6ece8}
+.post table:has(.arlogo) td:first-child{white-space:normal;overflow-wrap:anywhere;min-width:0}
+.post table:has(.arlogo){table-layout:auto;width:100%}
