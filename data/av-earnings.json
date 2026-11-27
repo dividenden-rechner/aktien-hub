@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-26 15:43 UTC",
+ "updated": "2026-11-27 04:32 UTC",
  "quelle": "Alpha Vantage",
  "items": [
   {
@@ -1099,6 +1099,19 @@
    "rep_date": "2026-11-25"
   },
   {
+   "sym": "BHP",
+   "datum": "2026-12-01",
+   "name": "BHP GROUP LIMITED",
+   "fiscal": "2025-03-31",
+   "cur": "USD",
+   "zeit": "",
+   "eps_est": 0.0,
+   "eps_n": 0,
+   "rev_est": 0.0,
+   "rev_n": 0,
+   "est_stand": "2026-11-27"
+  },
+  {
    "sym": "CPRT",
    "datum": "2026-12-01",
    "eps_est": 0.3969,
@@ -1109,7 +1122,7 @@
    "eps_n": 7,
    "rev_est": 1190866710.0,
    "rev_n": 7,
-   "est_stand": "2026-11-26"
+   "est_stand": "2026-11-27"
   },
   {
    "sym": "CRWD",
@@ -1122,7 +1135,7 @@
    "eps_n": 45,
    "rev_est": 1528559430.0,
    "rev_n": 43,
-   "est_stand": "2026-11-26"
+   "est_stand": "2026-11-27"
   },
   {
    "sym": "MRVL",
@@ -1135,7 +1148,7 @@
    "eps_n": 32,
    "rev_est": 3152214940.0,
    "rev_n": 31,
-   "est_stand": "2026-11-26"
+   "est_stand": "2026-11-27"
   },
   {
    "sym": "NTAP",
@@ -1148,7 +1161,7 @@
    "eps_n": 19,
    "rev_est": 2108285380.0,
    "rev_n": 17,
-   "est_stand": "2026-11-26"
+   "est_stand": "2026-11-27"
   },
   {
    "sym": "TCOM",
@@ -1161,7 +1174,7 @@
    "eps_n": 15,
    "rev_est": 18927296580.0,
    "rev_n": 16,
-   "est_stand": "2026-11-26"
+   "est_stand": "2026-11-27"
   },
   {
    "sym": "CRM",
@@ -1174,7 +1187,7 @@
    "eps_n": 42,
    "rev_est": 11462305880.0,
    "rev_n": 40,
-   "est_stand": "2026-11-26"
+   "est_stand": "2026-11-27"
   },
   {
    "sym": "COO",
@@ -1187,7 +1200,7 @@
    "eps_n": 16,
    "rev_est": 1067935900.0,
    "rev_n": 15,
-   "est_stand": "2026-11-26"
+   "est_stand": "2026-11-27"
   },
   {
    "sym": "DG",
@@ -1200,7 +1213,7 @@
    "eps_n": 26,
    "rev_est": 11138118020.0,
    "rev_n": 24,
-   "est_stand": "2026-11-26"
+   "est_stand": "2026-11-27"
   },
   {
    "sym": "HRL",
@@ -1246,7 +1259,7 @@
    "eps_n": 25,
    "rev_est": 935160110.0,
    "rev_n": 24,
-   "est_stand": "2026-11-26"
+   "est_stand": "2026-11-27"
   },
   {
    "sym": "AZO",
@@ -1264,6 +1277,16 @@
    "eps_est": 6.01,
    "eps_src": "kalender",
    "name": "CASEYS GENERAL STORES INCORPORATED",
+   "fiscal": "2026-10-31",
+   "cur": "USD",
+   "zeit": "nach"
+  },
+  {
+   "sym": "LULU",
+   "datum": "2026-12-08",
+   "eps_est": 0.98,
+   "eps_src": "kalender",
+   "name": "LULULEMON ATHLETICA INCORPORATED",
    "fiscal": "2026-10-31",
    "cur": "USD",
    "zeit": "nach"
