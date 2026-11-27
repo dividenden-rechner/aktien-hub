@@ -35,6 +35,10 @@ FedEx ist ein anderes Unternehmen als vor einem Jahr. Am 1. Juni hat der Konzern
 
 Der Umsatz stieg im dritten Quartal um 12 % auf 22,9 Mrd. $, das bereinigte operative Ergebnis um 16 % auf 1,20 Mrd. $, die bereinigte Marge auf 5,3 %. Je Aktie blieben 3,74 $, 28 % mehr als im Vorjahr. Die Prognose für das Kalenderjahr hat der Konzern auf 18,00 bis 18,60 $ je Aktie angehoben, nach zuvor 16,90 bis 18,10 $. Die Mitte der Spanne entspricht einem Plus von 23 %. Dazu kommt ein bereinigter freier Cashflow von rund 4 Mrd. $.
 
+Wie weit die Anhebung reicht, zeigt die Prognosetabelle des Konzerns. Die Spanne für das Ergebnis je Aktie ist enger geworden, die untere Grenze stieg um 1,10 $ und die obere um 0,50 $. Auch das erwartete Umsatzwachstum wurde von rund 11 auf rund 12 % erhöht, die Steuerquote von 23 auf 22,5 % gesenkt. Neu ist die Angabe zum freien Cashflow.
+
+![Prognose von FedEx für das Kalenderjahr 2026 im Vergleich Juni und Oktober (Folie aus der Investorenpräsentation vom 28. Oktober 2026)](/assets/magazin/fedex-prognose-2026-folie.png)
+
 | Segment | Umsatz | Veränderung | Bereinigtes operatives Ergebnis | Veränderung |
 |---|---|---|---|---|
 | U.S. Domestic | 14,7 Mrd. $ | +10 % | 972 Mio. $ | +7 % |
@@ -64,7 +68,7 @@ Die drei Paketkonzerne gehören nach Geschäftsmodell zusammen: UPS im Inland, D
 |---|---|---|---|---|
 | {{logo:fdx}}[FedEx](/aktien-hub/fedex/) | 1,6 % | 16,4 | 27 % | 5,8 % |
 | {{logo:ups}}[UPS](/aktien-hub/united-parcel-service/) | 5,9 % | 21,4 | 85 % | 8,9 % |
-| {{logo:dhl.de}}[DHL Group](/aktien-hub/dhl-group/) | 3,3 % | 18,7 | 34 % | 7,4 % |
+| {{logo:dhl-de}}[DHL Group](/aktien-hub/dhl-group/) | 3,3 % | 18,7 | 34 % | 7,4 % |
 
 FedEx ist der günstigste der drei, hat aber auch die niedrigste Marge. UPS zahlt viel und braucht dafür fast den gesamten freien Cashflow, DHL liegt dazwischen. Wer Dividenden sucht, findet sie bei UPS und DHL, wer auf Wachstum durch Sparprogramme setzt, bei FedEx.
 
