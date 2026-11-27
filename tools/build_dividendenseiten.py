@@ -307,6 +307,62 @@ def peer_block(sym, recs, gruppen):
             f'<p><a href="/dividende/aristokraten/">Alle Dividendenaristokraten und Dividend Kings im Vergleich</a></p>')
 
 
+def faq_vier(name, v, wae_name, termin=None, rhythmus_txt=None, dps_text=None):
+    """Die vier Standardfragen jeder Dividendenseite (SEO und KI-Antworten): Höhe, Zahltermine, Ausschüttungsquote, Dividendenwachstum.
+    v = Kennzahlen-Eintrag der Firma (data/kennzahlen.json). Eine Frage erscheint nur, wenn die Daten dafür vorliegen."""
+    out = []
+    def z(x, n=1):
+        return de(x, n) + " %"
+    # 1 Höhe
+    if dps_text or v.get("dividende"):
+        a = dps_text or f"Zuletzt {de(v['dividende'], 2)} {wae_name} je Aktie" + (f" (Geschäftsjahr {v['gj']})" if v.get("gj") else "")
+        if v.get("rendite") is not None and not dps_text:
+            a += f", das entspricht beim aktuellen Kurs einer Dividendenrendite von {z(v['rendite'], 2)}"
+        out.append((f"Wie hoch ist die Dividende von {name}?", a.rstrip(".") + "."))
+    # 2 Zahltermine
+    lang = {"Jan": "Januar", "Feb": "Februar", "Mär": "März", "Apr": "April", "Mai": "Mai", "Jun": "Juni", "Jul": "Juli",
+            "Aug": "August", "Sep": "September", "Okt": "Oktober", "Nov": "November", "Dez": "Dezember"}
+    teile = []
+    if v.get("zahlmonate"):
+        if v["zahlmonate"] == "jeden Monat":
+            teile.append(f"{name} zahlt die Dividende jeden Monat.")
+        else:
+            ms = [lang.get(m.strip(), m.strip()) for m in v["zahlmonate"].split(",")]
+            monate = ", ".join(ms[:-1]) + " und " + ms[-1] if len(ms) > 1 else ms[0]
+            teile.append(f"{name} zahlt die Dividende {v.get('zahlweise') or 'regelmäßig'}, und zwar {'im Monat' if len(ms) == 1 else 'in den Monaten'} {monate}.")
+    elif rhythmus_txt:
+        teile.append(f"{name} zahlt die Dividende {rhythmus_txt}.")
+    if termin:
+        teile.append(f"Zuletzt wurden {betrag(termin['betrag'])} {wae_name} je Aktie beschlossen" + (f", Ex-Tag ist der {datum(termin['ex_tag'])}" if termin.get("ex_tag") else "")
+                     + (f", ausgezahlt wird am {datum(termin['zahltag'])}." if termin.get("zahltag") else "."))
+    else:
+        teile.append("Für die nächste Zahlung liegt noch kein beschlossener Termin vor. Ex-Tag und Zahltag stehen hier, sobald das Unternehmen sie veröffentlicht.")
+    out.append((f"Wann zahlt {name} Dividende?", " ".join(teile)))
+    # 3 Ausschüttungsquote
+    if v.get("ausschuettung") is not None:
+        q = v["ausschuettung"]
+        a = f"Die Ausschüttungsquote liegt bei {z(q, 0)} des Gewinns je Aktie" + (f" (Geschäftsjahr {v['gj']})" if v.get("gj") else "") + ". "
+        a += ("Das ist ein niedriger Wert, die Dividende ist gut aus dem Gewinn gedeckt." if q < 50 else
+              "Das ist ein solider Wert, die Dividende ist aus dem Gewinn gedeckt." if q <= 75 else
+              "Das ist ein hoher Wert, der Spielraum für Erhöhungen ist begrenzt." if q <= 100 else
+              "Die Dividende übersteigt den Gewinn und ist daraus nicht gedeckt.")
+        if v.get("fcf_ausschuettung") is not None:
+            a += f" Gemessen am freien Cashflow sind es {z(v['fcf_ausschuettung'], 0)}."
+        out.append((f"Wie hoch ist die Ausschüttungsquote von {name}?", a))
+    # 4 Dividendenwachstum
+    w = []
+    if v.get("div_wachstum_1j") is not None: w.append(f"im letzten Jahr um {z(v['div_wachstum_1j'])}")
+    if v.get("div_wachstum_5j") is not None: w.append(f"in den vergangenen fünf Jahren im Schnitt um {z(v['div_wachstum_5j'])} pro Jahr")
+    if v.get("div_wachstum_10j") is not None: w.append(f"in den vergangenen zehn Jahren im Schnitt um {z(v['div_wachstum_10j'])} pro Jahr")
+    if w:
+        a = f"Die Dividende je Aktie wuchs " + ", ".join(w[:-1]) + (" und " if len(w) > 1 else "") + w[-1] + "."
+        sj = v.get("dividendenserie")
+        if sj and sj >= 2:
+            a += f" {name} hat die Dividende {sj} Jahre in Folge erhöht."
+        out.append((f"Wie hoch ist das Dividendenwachstum von {name}?", a))
+    return out
+
+
 def faq_dynamisch(r, name):
     """Fragen und Antworten, die sich aus den Kennzahlen des Firmen-Hubs ergeben. Eine Frage erscheint nur, wenn die Daten dafuer vorliegen."""
     out = []
@@ -525,6 +581,14 @@ a.addEventListener("input",function(){{b.value="";r()}});b.addEventListener("inp
     elif se and sj == 0:
         faq.insert(1, (f"Erhöht {name} die Dividende jedes Jahr?", se.get("text", "")))
     faq.extend(faq_dynamisch(r, name))
+    _kz = dict(r.get("kz") or {}); _kz.setdefault("gj", r.get("gj_letzt"))
+    vier = faq_vier(name, _kz, "US-Dollar" if r.get("wae", "USD") == "USD" else WAEHR_NAME.get(r.get("wae"), r.get("wae")), t, rhythmus,
+                    dps_text=((f"Die reguläre Dividende liegt aufs Jahr gerechnet bei {de(r['dps_jahr'])} US-Dollar je Aktie" if r["dps_jahr"] else
+                               f"Im Geschäftsjahr {r['gj_letzt']} zahlte {name} {de(r['dps_letzt'])} US-Dollar je Aktie")
+                              + (f", das entspricht beim aktuellen Kurs einer Rendite von rund {rend}" if rend else "")
+                              + (f". Dazu kamen in den letzten zwölf Monaten Sonderdividenden von {de(r['sonder_jahr'])} US-Dollar" if r["sonder_jahr"] else "")))
+    _ersetzt = ("Wie hoch ist die Dividende von", "Wann zahlt", "Wie oft zahlt", "In welchen Monaten zahlt", "Wie ist die Dividende von", "Wie hoch ist die Ausschüttungsquote")
+    faq = vier + [(q, a) for q, a in faq if not q.startswith(_ersetzt)]
     if kennung:
         faq.append((f"Welche WKN und ISIN hat die {name}-Aktie?",
                     f"Die {name}-Aktie hat " + (f"die ISIN {r['isin']}" if r.get("isin") else "") + (" und " if r.get("isin") and r.get("wkn") else "")
@@ -927,6 +991,7 @@ def main():
             r["wkn"] = f.get("wkn") or WKN.get(r.get("isin") or "")
             for feld in ("umsatz_wachstum", "gewinn_wachstum", "fcf_ausschuettung", "div_wachstum_5j", "div_wachstum_10j", "fcf_rendite", "zahlmonate", "zahlweise"):
                 r[feld] = kz.get(feld)
+            r["kz"] = kz
             og_bild(r)
             recs[f["sym"]] = r
     for g in gruppen:
