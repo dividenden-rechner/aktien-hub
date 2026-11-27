@@ -15,7 +15,7 @@ logo_file: assets/logos/mo.png
 <!-- PRÜFEN: Aufteilung (Altria international, Japan Tobacco USA, Afrika, Naher Osten) ist ein Szenario von Analysten und Medien, von keinem der drei Konzerne bestätigt. Im Text so gekennzeichnet. -->
 <!-- PRÜFEN: Winston gehört außerhalb der USA bereits Japan Tobacco (aus der Übernahme von RJR International 1999); in den USA liegt die Marke bei Imperials Tochter ITG Brands. Vor Veröffentlichung gegenprüfen. -->
 <!-- PRÜFEN: Das Rechenbeispiel mit 30 % Aufschlag ist eine eigene Überlegung, kein berichteter Preis. -->
-<!-- PRÜFEN: Hub-Kennzahlen Stand Xetra-Schlusskurse 26.11.2026 (Imperial damit nach dem Kurssprung), Japan Tobacco nur Börsenwert Stand 15.11. -->
+<!-- PRÜFEN: Hub-Kennzahlen Stand Schlusskurse 26.11.2026 (Imperial nach dem Kurssprung, Japan Tobacco Tradegate vor dem Plus vom Freitag). -->
 
 !!! kurz "Kurz gesagt"
     **Der Stand:** Altria prüft ein Barangebot für Imperial Brands und verhandelt mit einem Dritten über einen Teil des Geschäfts. Ein Angebot ist nicht sicher, Frist ist der 24. Dezember.
@@ -80,10 +80,10 @@ Bei einer Quote von 92 % bleibt wenig Luft für eine hohe Schuldenlast. Imperial
 | <img class="tlogo" src="https://images.financialmodelingprep.com/symbol/PM.png" width="20" height="20" alt="" onerror="this.onerror=null;this.src='https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https://pmi.com&size=64'"> Philip Morris | 264 Mrd € | 27,2 | 3,2 % |
 | <img class="tlogo" src="/assets/logos/bti.png" width="20" height="20" alt="" onerror="this.onerror=null;this.src='https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https://bat.com&size=64'"> BAT | 119 Mrd € | 13,0 | 5,3 % |
 | <img class="tlogo" src="/assets/logos/mo.png" width="20" height="20" alt="" onerror="this.onerror=null;this.src='https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https://altria.com&size=64'"> Altria | 115 Mrd € | 15,5 | 5,9 % |
-| <img class="tlogo" src="/assets/logos/2914.png" width="20" height="20" alt="" onerror="this.onerror=null;this.src='https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https://jti.com&size=64'"> Japan Tobacco | 68 Mrd € | – | – |
+| <img class="tlogo" src="/assets/logos/2914.png" width="20" height="20" alt="" onerror="this.onerror=null;this.src='https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https://jti.com&size=64'"> Japan Tobacco | 56 Mrd € | 19,1 | 4,3 % |
 | <img class="tlogo" src="/assets/logos/imb-l.png" width="20" height="20" alt="" onerror="this.onerror=null;this.src='https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https://imperialbrandsplc.com&size=64'"> Imperial Brands | 34 Mrd € | 13,7 | 5,5 % |
 
-Die Kennzahlen stammen aus dem Hub, Stand Xetra-Schlusskurse vom 26. November, bei Imperial also nach dem Kurssprung. Für Japan Tobacco liegt nur der Börsenwert vom 15. November vor. Imperials KGV von 13,7 bezieht sich auf das letzte berichtete Jahr, das erwartete KGV von 8,3 (LSEG) rechnet mit den Gewinnen des laufenden Jahres.
+Die Kennzahlen stammen aus dem Hub, Stand Schlusskurse vom 26. November, bei Imperial also nach dem Kurssprung. Japan Tobacco ist mit dem Kurs vor dem Anstieg vom Freitag gerechnet, die Dividende von 234 Yen entspricht 81 % des Gewinns je Aktie von 287 Yen. Imperials KGV von 13,7 bezieht sich auf das letzte berichtete Jahr, das erwartete KGV von 8,3 (LSEG) rechnet mit den Gewinnen des laufenden Jahres.
 
 ## Was jetzt passieren kann
 
