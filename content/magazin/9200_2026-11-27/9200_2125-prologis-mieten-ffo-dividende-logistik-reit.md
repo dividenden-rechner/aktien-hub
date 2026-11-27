@@ -19,7 +19,7 @@ image_lizenz: Pressebild
 <!-- PRÜFEN: Eigene Rechnungen: Ausschüttung 68 % des Core FFO (4,28 durch Mitte der Prognose 6,27 $); 87 % des AFFO im dritten Quartal (1.045 Mio. $ Dividenden durch 1.207 Mio. $ AFFO). -->
 <!-- PRÜFEN: Fotos sind Pressebilder von Prologis (von Divi geschickt), als markierte Ausnahme. Das zweite Foto zeigt eine Prologis-Halle (Ort unbekannt), Bildtext bleibt allgemein. -->
 <!-- PRÜFEN: Folien stammen aus dem Quartr-Screenshot der Investorenpräsentation (Oberflächenrahmen abgeschnitten). -->
-<!-- PRÜFEN: Peers aus dem Hub (STAG, Segro, WDP). Für Segro und WDP fehlen im Hub einige Werte (Dividendenwachstum, FFO). KGV bei REITs ist wegen Abschreibungen und Neubewertungen eingeschränkt aussagekräftig. -->
+<!-- PRÜFEN: Vergleich nach Kurs zu FFO (Hub) mit STAG, Realty Income, NNN REIT. Für Segro und WDP hat der Hub keine FFO-Daten. Kein KGV bei REITs (Vorgabe von Divi). Hub-Rendite für Prologis ist defekt, 3,3 % und +5,9 % sind eigene Rechnung. -->
 
 !!! kurz "Kurz gesagt"
     **Die Zahlen:** Umsatz 2,39 Mrd. $ (+8 %), Core FFO je Aktie 1,60 $ (+7 %), die Prognose für 2026 liegt bei 6,25 bis 6,29 $.
@@ -63,16 +63,16 @@ Der größte neue Hebel sind Rechenzentren. Prologis besitzt Grundstücke mit St
 
 ## Prologis im Vergleich
 
-Die Tabelle stellt Prologis anderen börsennotierten Logistik-REITs aus dem Hub gegenüber: STAG in den USA, Segro in Großbritannien und Europa, WDP in Belgien und den Niederlanden.
+Die Tabelle stellt Prologis dem Logistik-REIT STAG und den beiden bekanntesten Dividenden-REITs im Hub gegenüber, Realty Income und NNN REIT. Als Maßstab dient das Verhältnis von Kurs zu FFO je Aktie, weil Gewinnkennzahlen bei REITs durch Abschreibungen und Neubewertungen verzerrt sind.
 
-| Unternehmen | Rendite | KGV | Dividendenwachstum 1 Jahr |
-|---|---|---|---|
-| {{logo:pld}}[Prologis](/aktien-hub/prologis/) | 3,3 % | 36,0 | +5,9 % |
-| {{logo:stag}}[STAG Industrial](/aktien-hub/stag-industrial/) | 3,9 % | 26,1 | +0,7 % |
-| {{logo:segro}}[Segro](/aktien-hub/segro/) | 3,4 % | 22,1 | +6,9 % |
-| {{logo:wdp-br}}[Warehouses De Pauw](/aktien-hub/warehouses-de-pauw/) | 3,3 % | 10,0 | – |
+| Unternehmen | Rendite | Kurs zu FFO | FFO-Ausschüttung | Dividendenwachstum 1 Jahr |
+|---|---|---|---|---|
+| {{logo:pld}}[Prologis](/aktien-hub/prologis/) | 3,3 % | 20,6 | 63 % | +5,9 % |
+| {{logo:stag}}[STAG Industrial](/aktien-hub/stag-industrial/) | 3,9 % | 12,4 | 49 % | +0,7 % |
+| {{logo:o}}[Realty Income](/aktien-hub/realty-income/) | 5,3 % | 15,3 | 82 % | +2,9 % |
+| {{logo:nnn}}[NNN REIT](/aktien-hub/nnn-reit/) | 5,8 % | 12,2 | 67 % | +3,1 % |
 
-Die Renditen liegen alle um 3 bis 4 %, und die Unterschiede entstehen bei der Bewertung. Prologis kostet das 21-Fache des FFO je Aktie, STAG das 12-Fache. Das KGV ist bei REITs wegen der Abschreibungen und Neubewertungen wenig aussagekräftig, WDP fällt mit 10 deshalb optisch heraus. Segro wächst mit der Dividende ähnlich schnell wie Prologis, STAG kaum. Für den Aufschlag bekommt der Anleger Größe, Rechenzentren und eine Entwicklungsmaschine, die andere nicht in dem Umfang haben.
+Prologis kostet das 21-Fache des FFO je Aktie, die drei anderen zwischen dem 12- und 15-Fachen. Dafür fällt die Rendite am niedrigsten aus, die Dividende wächst aber mit knapp 6 % am schnellsten. Für den Aufschlag bekommt der Anleger Größe, Rechenzentren und eine Entwicklungsmaschine, die die anderen nicht in dem Umfang haben. Für europäische Logistik-REITs wie Segro oder WDP liegen im Hub bisher keine FFO-Daten vor.
 
 ## Was dagegen spricht
 
