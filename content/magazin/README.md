@@ -38,7 +38,7 @@ Datei anklicken, dann Stift-Symbol: Zeile `draft: true` löschen und speichern, 
 
 | Datum | Titel | Datei |
 |---|---|---|
-| 27.11.2026 20:30 | FedEx nach dem Umbau: Bereinigter Gewinn je Aktie +28 %, aber die Quartalsdividende sank von 1,45 auf 1,22 Dollar | [9200_2026-11-27/9201_2030-fedex-umbau-dividende-prognose-angehoben.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/9200_2026-11-27/9201_2030-fedex-umbau-dividende-prognose-angehoben.md) |
+| 27.11.2026 20:30 | FedEx nach dem Umbau: Bereinigter Gewinn je Aktie +28 %, Prognose für 2026 angehoben | [9200_2026-11-27/9201_2030-fedex-umbau-dividende-prognose-angehoben.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/9200_2026-11-27/9201_2030-fedex-umbau-dividende-prognose-angehoben.md) |
 | 27.11.2026 10:30 | Infineon: Rechenzentren fast verdoppelt, 2027 soll der Umsatz um mehr als 20 % wachsen | [9106_2026-11-27/9610_1030-infineon-rechenzentren-hanebeck-geschaeftsjahr-2027.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/9106_2026-11-27/9610_1030-infineon-rechenzentren-hanebeck-geschaeftsjahr-2027.md) |
 | 27.11.2026 09:00 | Umsatzsprung weltweit: Dividendenaktien mit dem größten Plus im letzten Jahr | [9200_2026-11-27/9235_1127-umsatzsprung-weltweit.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/9200_2026-11-27/9235_1127-umsatzsprung-weltweit.md) |
 | 27.11.2026 09:00 | Umsatzsprung USA: Dividendenaktien mit dem größten Plus im letzten Jahr | [9200_2026-11-27/9236_1127-umsatzsprung-usa.md](https://github.com/dividenden-rechner/aktien-hub/edit/main/content/magazin/9200_2026-11-27/9236_1127-umsatzsprung-usa.md) |
