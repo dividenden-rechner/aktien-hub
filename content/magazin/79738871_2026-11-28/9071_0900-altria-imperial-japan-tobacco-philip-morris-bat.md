@@ -17,6 +17,7 @@ image_source: "https://unsplash.com/de/fotos/regale-mit-verschiedenen-zigaretten
 image_lizenz: Unsplash
 instagram: "https://www.instagram.com/p/Ddg5BVvAoTu/"
 instagram_vor: "Philip Morris"
+youtube: P7Wt-gEfZJQ
 ---
 <!-- PRÜFEN: Aufteilung (Altria international, Japan Tobacco USA, Afrika, Naher Osten) ist ein Szenario von Analysten und Medien, von keinem der drei Konzerne bestätigt. Im Text so gekennzeichnet. -->
 <!-- PRÜFEN: Winston gehört außerhalb der USA bereits Japan Tobacco (aus der Übernahme von RJR International 1999); in den USA liegt die Marke bei Imperials Tochter ITG Brands. Vor Veröffentlichung gegenprüfen. -->
