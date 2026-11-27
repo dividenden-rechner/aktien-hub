@@ -1,8 +1,7 @@
 ---
 title: "Prologis: Neue Mietverträge bringen 38 % mehr Miete, der FFO je Aktie steigt um 7 %"
 description: "Einer der größten Logistik-Vermieter der Welt rechnet für 2026 mit 6,25 bis 6,29 Dollar FFO je Aktie, zahlt 1,07 Dollar Quartalsdividende und baut Rechenzentren. Wie gut die Dividende gedeckt ist, wo das Wachstum herkommen soll und was Prologis gegenüber Segro, STAG und WDP kostet."
-date: 2026-11-29 18:00
-vorschau: ja
+date: 2026-11-27 21:25
 author: "Kilian Treß"
 category: Analyse
 quelle_name: "Prologis, Inc., Supplemental Information zum dritten Quartal 2026; Investorenpräsentation 2026"
