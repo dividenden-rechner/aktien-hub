@@ -1850,7 +1850,7 @@
    "typ": "Fintech",
    "domain": "unitplus.eu",
    "herkunft": "neu geprüft",
-   "hinweis": "Konditionen aus dem Anbieter-Datenblatt (Stand November 2026, per E-Mail erhalten). Start Januar 2027, derzeit Warteliste. Die Produktkosten der ETFs sind laut Anbieter kalkuliert (0,19 bis 0,25 %); im Rechner wird der obere Wert angesetzt.",
+   "hinweis": "Konditionen aus dem Anbieter-Datenblatt (Stand November 2026, per E-Mail erhalten). Start Januar 2027, derzeit Warteliste. Die ETF-Produktkosten sind laut Anbieter kalkuliert (0,19 bis 0,25 %); im Rechner steht der untere Wert, Gesamtkosten 0,49 %.",
    "produkte": [
     {
      "id": "unitplus-avd",
@@ -1871,9 +1871,9 @@
       },
       {
        "art": "fund_ter",
-       "pct": 0.25,
+       "pct": 0.19,
        "ca": true,
-       "bedingung": "Produktkosten aktiver ETFs, kalkuliert 0,19 bis 0,25 % p. a.; oberer Wert angesetzt",
+       "bedingung": "Produktkosten aktiver ETFs, kalkuliert 0,19 bis 0,25 % p. a.; unterer Wert angesetzt (Gesamt 0,49 %)",
        "quelle": "unitplus"
       }
      ],
