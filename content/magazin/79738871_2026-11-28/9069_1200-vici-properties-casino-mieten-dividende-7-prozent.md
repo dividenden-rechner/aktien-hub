@@ -10,8 +10,12 @@ logo_name: "VICI Properties"
 logo_symbol: VICI
 logo_domain: viciproperties.com
 logo_file: assets/logos/hub/VICI.png
+image: assets/magazin/vici-las-vegas-strip-foto.jpg
+image_alt: "Las Vegas Strip in der Abenddämmerung mit Bellagio-Fontänen, Caesars Palace und Eiffelturm-Nachbau"
+image_credit: "Foto: Scott K auf Unsplash"
+image_source: "https://unsplash.com/de/fotos/jlTy96QYNRU?utm_source=dividenden-rechner&utm_medium=referral"
+image_lizenz: Unsplash
 ---
-<!-- PRÜFEN: Aufmacherfoto fehlt. Unsplash-Foto auswählen (Las-Vegas-Strip bei Abend oder ein Casino-Foyer, ohne erkennbare Markenlogos) und image, image_alt, image_credit, image_source, image_lizenz ergänzen. -->
 <!-- PRÜFEN: Mieter-Anteile (MGM und Caesars rund 70 %, Las Vegas knapp die Hälfte der Mieten) stammen aus einer Analystenauswertung, nicht aus der Mitteilung von VICI. Vor Veröffentlichung mit dem Geschäftsbericht abgleichen. -->
 <!-- PRÜFEN: Ausschüttung 74 % der AFFO ist eigene Rechnung (1,84 $ geteilt durch 2,475 $ Mitte der Prognose); VICI selbst nennt rund 75 %. -->
 <!-- PRÜFEN: „Wiki Properties" in der Anfrage wurde als VICI Properties gelesen. -->

@@ -11,11 +11,11 @@ logo_name: "UniCredit"
 logo_symbol: UCG.MI
 logo_domain: unicredit.eu
 logo_file: assets/logos/ucg-mi.png
-image: assets/magazin/unicredit-orcel-2026-11-26-foto.jpg
-image_alt: "UniCredit-Chef Andrea Orcel im dunklen Anzug vor einer Fensterfront mit dem UniCredit-Logo"
-image_credit: "Foto: UniCredit (Pressefoto)"
-image_source: "https://www.unicredit.eu"
-image_lizenz: Pressebild
+image: assets/magazin/unicredit-orcel-ki-mailand-foto.jpg
+image_alt: "Mann im dunklen Anzug blickt von einem Büro auf Mailand mit Dom und Bosco Verticale"
+image_credit: "Bild: KI-generiert (Symbolbild)"
+image_source: "https://www.dividenden-rechner.de"
+image_lizenz: "KI-generiert"
 ---
 !!! kurz "Kurz gesagt"
     **Aktie:** 74,94 Euro, das 8,7-Fache des Kurses vom April 2021 (8,58 Euro)
