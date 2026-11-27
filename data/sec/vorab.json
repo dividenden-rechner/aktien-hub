@@ -14,6 +14,18 @@
     "dividenden_gezahlt": 2088000000,
     "aktienrueckkauf": 3324000000
    }
+  },
+  "IFX.DE": {
+   "w": "EUR",
+   "gj": "2026-09-30",
+   "meldung": "2026-11-10",
+   "k": {
+    "umsatz": 16353000000,
+    "gewinn": 1512000000,
+    "dividende_je_aktie": 0.38,
+    "dividenden_gezahlt": 456000000,
+    "capex": 2184000000
+   }
   }
  }
 }
