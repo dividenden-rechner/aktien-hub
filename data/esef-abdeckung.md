@@ -1,6 +1,6 @@
-# ESEF-Jahreszahlen Europa: Abdeckung (Stand 2026-11-26)
+# ESEF-Jahreszahlen Europa: Abdeckung (Stand 2026-11-27)
 
-452 Firmen in der Liste, mit Jahreszahlen: **267**, davon mit Börsenkurs (ISIN): **252**.
+452 Firmen in der Liste, mit Jahreszahlen: **328**, davon mit Börsenkurs (ISIN): **307**.
 
 | Kürzel | Name | Rechtsträger laut Bericht | Jahre | Kern | Kurs | fehlt |
 |---|---|---|---|---|---|---|
@@ -300,79 +300,79 @@
 | HAUTO.OL | HÖEGH AUTOLINERS ASA | HÖEGH AUTOLINERS ASA | 2021–2025 (USD) | 7/7 | ja | – |
 | CRBN.AS | Corbion N.V. | Corbion N.V. | 2019–2024 (EUR) | 6/7 | ja | capex |
 | GN.CO | GN STORE NORD A/S | GN STORE NORD A/S | 2019–2025 (DKK) | 7/7 | ja | – |
-| VIS.DE | VISCOFAN SA | – | noch nicht geprüft | | | |
-| BFSA.DE | BEFESA S.A. | – | noch nicht geprüft | | | |
-| GRS282183003 | JUMBO ΑΝΩΝΥΜΗ ΕΜΠΟΡΙΚΗ ΕΤΑΙΡΕΙΑ | – | noch nicht geprüft | | | |
-| DIA.MI | DIASORIN S.P.A. | – | noch nicht geprüft | | | |
-| BONHR.OL | Bonheur ASA | – | noch nicht geprüft | | | |
-| SYSR.ST | Systemair Aktiebolag | – | noch nicht geprüft | | | |
-| ES0157097017 | ALMIRALL S.A. | – | noch nicht geprüft | | | |
-| NORCO.OL | Norconsult ASA | – | noch nicht geprüft | | | |
-| WWI.OL | WILH. WILHELMSEN HOLDING ASA | – | noch nicht geprüft | | | |
-| ENAV.MI | ENAV S.P.A. | – | noch nicht geprüft | | | |
-| ES0105836003 | INMOCEMENTO S.A. | – | noch nicht geprüft | | | |
-| LAGR-B.ST | Lagercrantz Group Aktiebolag | – | noch nicht geprüft | | | |
-| C5H.IR | Cairn Homes Public Limited Company | – | noch nicht geprüft | | | |
-| COM.MI | COMER INDUSTRIES S.P.A. | – | noch nicht geprüft | | | |
-| RCO.PA | REMY COINTREAU | – | noch nicht geprüft | | | |
-| MELE.BR | MELEXIS | – | noch nicht geprüft | | | |
-| ALIF-B.ST | AddLife AB | – | noch nicht geprüft | | | |
-| ITP.PA | INTERPARFUMS | – | noch nicht geprüft | | | |
-| TGYM.MI | TECHNOGYM S.P.A. | – | noch nicht geprüft | | | |
-| ES01717430J3 | PROMOTORA DE INFORMACIONES, S.A. | – | noch nicht geprüft | | | |
-| DNR.MI | INDUSTRIE DE NORA S.P.A. | – | noch nicht geprüft | | | |
-| BE0003874915 | FAGRON | – | noch nicht geprüft | | | |
-| ES0105287009 | AEDAS HOMES SA | – | noch nicht geprüft | | | |
-| AMBU-B.CO | AMBU A/S | – | noch nicht geprüft | | | |
-| CMBT.BR | CMB.TECH | – | noch nicht geprüft | | | |
-| CAST.ST | Castellum Aktiebolag | – | noch nicht geprüft | | | |
-| NEWA-B.ST | New Wave Group AB | – | noch nicht geprüft | | | |
-| NOLA-B.ST | Nolato Aktiebolag | – | noch nicht geprüft | | | |
-| AQ.ST | AQ Group AB | – | noch nicht geprüft | | | |
-| GTT.PA | GAZTRANSPORT ET TECHNIGAZ | – | noch nicht geprüft | | | |
-| ITM.MI | ITALMOBILIARE SOCIETA' PER AZIONI O IN FORMA ABBREVIATA ITALMOBILIARE SPA | – | noch nicht geprüft | | | |
-| HRPODRRA0004 | PODRAVKA prehrambena industrija, d.d. | – | noch nicht geprüft | | | |
-| CLA-B.ST | Cloetta AB | – | noch nicht geprüft | | | |
-| AT0000A21KS2 | CPI Europe AG | – | noch nicht geprüft | | | |
-| 41L.DE | LABORATORIOS FARMACEUTICOS ROVI SA | – | noch nicht geprüft | | | |
-| KBHL.CO | KØBENHAVNS LUFTHAVNE A/S | – | noch nicht geprüft | | | |
-| KIT.OL | KITRON ASA | – | noch nicht geprüft | | | |
-| BRG.OL | BORREGAARD ASA | – | noch nicht geprüft | | | |
-| MYCR.ST | Mycronic AB (publ) | – | noch nicht geprüft | | | |
-| ES0105251005 | NEINOR HOMES SA | – | noch nicht geprüft | | | |
-| ES0105122024 | METROVACESA SA | – | noch nicht geprüft | | | |
-| MOL.MI | "MOLTIPLY GROUP S.P.A.", OVVERO, IN BREVE, "MOL GROUP S.P.A." O ANCHE "GRUPPO MOL S.P.A." | – | noch nicht geprüft | | | |
-| PNDX-B.ST | Pandox Aktiebolag | – | noch nicht geprüft | | | |
-| CRL.MI | CAREL INDUSTRIES S.P.A. | – | noch nicht geprüft | | | |
-| ALIG.ST | Alimak Group AB (publ) | – | noch nicht geprüft | | | |
-| ES0134950F36 | FAES FARMA SA | – | noch nicht geprüft | | | |
-| ELN.MI | EL.EN. - S.P.A. | – | noch nicht geprüft | | | |
-| VAIAS.HE | Vaisala Oyj | – | noch nicht geprüft | | | |
-| VEND.OL | VEND MARKETPLACES ASA | – | noch nicht geprüft | | | |
-| AVIO.MI | AVIO S.P.A. | – | noch nicht geprüft | | | |
-| KIN.BR | KINEPOLIS GROUP | – | noch nicht geprüft | | | |
-| VETO.PA | VETOQUINOL S.A | – | noch nicht geprüft | | | |
-| REINA.AS | REINET INVESTMENTS S.C.A. | – | noch nicht geprüft | | | |
-| SCATC.OL | SCATEC ASA | – | noch nicht geprüft | | | |
-| CY0106002112 | ATALAYA MINING PLC | – | noch nicht geprüft | | | |
-| EXA.PA | EXAIL TECHNOLOGIES | – | noch nicht geprüft | | | |
-| MPCC.OL | MPC CONTAINER SHIPS ASA | – | noch nicht geprüft | | | |
-| EXENS.PA | EXOSENS | – | noch nicht geprüft | | | |
-| LUMO.HE | Lumo Kodit Oyj | – | noch nicht geprüft | | | |
-| PUUILO.HE | Puuilo Oyj | – | noch nicht geprüft | | | |
-| SKIS-B.ST | SkiStar Aktiebolag | – | noch nicht geprüft | | | |
-| RF.PA | EURAZEO | – | noch nicht geprüft | | | |
-| HRRIVPRA0000 | Valamar Riviera dioničko društvo za turizam | – | noch nicht geprüft | | | |
-| SIP.BR | SIPEF | – | noch nicht geprüft | | | |
-| SPA.BR | SOCIÉTÉ DE SERVICES, DE PARTICIPATIONS, DE DIRECTION ET D'ELABORATION | – | noch nicht geprüft | | | |
-| GRS359353000 | ΕΤΑΙΡΙΑ ΥΔΡΕΥΣΕΩΣ ΚΑΙ ΑΠΟΧΕΤΕΥΣΕΩΣ ΠΡΩΤΕΥΟΥΣΗΣ ΑΝΩΝΥΜΗ ΕΤΑΙΡΙΑ | – | noch nicht geprüft | | | |
-| FABG.ST | Fabege AB | – | noch nicht geprüft | | | |
-| SI0031101346 | LUKA KOPER, pristaniški in logistični sistem, delniška družba | – | noch nicht geprüft | | | |
-| ALMA.HE | Alma Media Oyj | – | noch nicht geprüft | | | |
-| VIT-B.ST | Vitec Software Group AB (publ) | – | noch nicht geprüft | | | |
-| ALTRA.ST | Altra Fastigheter AB | – | noch nicht geprüft | | | |
-| SECT-B.ST | SECTRA Aktiebolag | – | noch nicht geprüft | | | |
-| VIV.PA | VIVENDI SE | – | noch nicht geprüft | | | |
+| VIS.DE | VISCOFAN SA | VISCOFAN SA | 2019–2025 (EUR) | 7/7 | ja | – |
+| BFSA.DE | BEFESA S.A. | BEFESA S.A. | 2020–2024 (EUR) | 7/7 | fehlt | – |
+| GRS282183003 | JUMBO ΑΝΩΝΥΜΗ ΕΜΠΟΡΙΚΗ ΕΤΑΙΡΕΙΑ | JUMBO ΑΝΩΝΥΜΗ ΕΜΠΟΡΙΚΗ ΕΤΑΙΡΕΙΑ | 2020–2025 (EUR) | 7/7 | ja | – |
+| DIA.MI | DIASORIN S.P.A. | DIASORIN S.P.A. | 2020–2025 (EUR) | 7/7 | ja | – |
+| BONHR.OL | Bonheur ASA | Bonheur ASA | 2020–2025 (NOK) | 7/7 | ja | – |
+| SYSR.ST | Systemair Aktiebolag | Systemair Aktiebolag | 2021–2026 (SEK) | 7/7 | ja | – |
+| ES0157097017 | ALMIRALL S.A. | ALMIRALL S.A. | 2020–2025 (EUR) | 7/7 | ja | – |
+| NORCO.OL | Norconsult ASA | Norconsult ASA | 2022–2025 (NOK) | 7/7 | ja | – |
+| WWI.OL | WILH. WILHELMSEN HOLDING ASA | WILH. WILHELMSEN HOLDING ASA | keine Berichte | | | |
+| ENAV.MI | ENAV S.P.A. | ENAV S.P.A. | 2020–2025 (EUR) | 7/7 | ja | – |
+| ES0105836003 | INMOCEMENTO S.A. | INMOCEMENTO S.A. | 2023–2025 (EUR) | 7/7 | ja | – |
+| LAGR-B.ST | Lagercrantz Group Aktiebolag | – | nicht gefunden | | | |
+| C5H.IR | Cairn Homes Public Limited Company | – | nicht gefunden | | | |
+| COM.MI | COMER INDUSTRIES S.P.A. | COMER INDUSTRIES S.P.A. | 2022–2024 (EUR) | 6/7 | ja | capex |
+| RCO.PA | REMY COINTREAU | REMY COINTREAU | 2020–2026 (EUR) | 7/7 | ja | – |
+| MELE.BR | MELEXIS | MELEXIS | 2020–2024 (EUR) | 7/7 | ja | – |
+| ALIF-B.ST | AddLife AB | AddLife AB | 2020–2025 (SEK) | 7/7 | ja | – |
+| ITP.PA | INTERPARFUMS | INTERPARFUMS | 2020–2025 (EUR) | 7/7 | ja | – |
+| TGYM.MI | TECHNOGYM S.P.A. | TECHNOGYM S.P.A. | 2020–2024 (EUR) | 7/7 | ja | – |
+| ES01717430J3 | PROMOTORA DE INFORMACIONES, S.A. | PROMOTORA DE INFORMACIONES, S.A. | 2019–2025 (EUR) | 7/7 | ja | – |
+| DNR.MI | INDUSTRIE DE NORA S.P.A. | INDUSTRIE DE NORA S.P.A. | 2021–2025 (EUR) | 7/7 | ja | – |
+| BE0003874915 | FAGRON | Fagron | 2020–2024 (EUR) | 7/7 | ja | – |
+| ES0105287009 | AEDAS HOMES SA | AEDAS HOMES SA | 2021–2026 (EUR) | 7/7 | ja | – |
+| AMBU-B.CO | AMBU A/S | AMBU A/S | 2021–2026 (DKK) | 7/7 | ja | – |
+| CMBT.BR | CMB.TECH | CMB.TECH | 2018–2024 (USD) | 7/7 | ja | – |
+| CAST.ST | Castellum Aktiebolag | Castellum Aktiebolag | 2020–2025 (SEK) | 7/7 | ja | – |
+| NEWA-B.ST | New Wave Group AB | New Wave Group AB | 2020–2024 (SEK) | 7/7 | ja | – |
+| NOLA-B.ST | Nolato Aktiebolag | Nolato Aktiebolag | 2021–2025 (SEK) | 6/7 | ja | eps_verw |
+| AQ.ST | AQ Group AB | AQ Group AB | 2021–2025 (SEK) | 7/7 | ja | – |
+| GTT.PA | GAZTRANSPORT ET TECHNIGAZ | GAZTRANSPORT ET TECHNIGAZ | 2019–2025 (EUR) | 7/7 | ja | – |
+| ITM.MI | ITALMOBILIARE SOCIETA' PER AZIONI O IN FORMA ABBREVIATA ITALMOBILIARE SPA | ITALMOBILIARE SOCIETA' PER AZIONI O IN FORMA ABBREVIATA ITALMOBILIARE SPA | 2020–2025 (EUR) | 6/7 | ja | eps_verw |
+| HRPODRRA0004 | PODRAVKA prehrambena industrija, d.d. | PODRAVKA prehrambena industrija, d.d. | keine Berichte | | | |
+| CLA-B.ST | Cloetta AB | Cloetta AB | 2019–2025 (SEK) | 7/7 | ja | – |
+| AT0000A21KS2 | CPI Europe AG | CPI Europe AG | 2019–2025 (EUR) | 6/7 | ja | capex |
+| 41L.DE | LABORATORIOS FARMACEUTICOS ROVI SA | LABORATORIOS FARMACEUTICOS ROVI SA | 2020–2025 (EUR) | 7/7 | ja | – |
+| KBHL.CO | KØBENHAVNS LUFTHAVNE A/S | KØBENHAVNS LUFTHAVNE A/S | 2020–2025 (DKK) | 7/7 | ja | – |
+| KIT.OL | KITRON ASA | KITRON ASA | 2022–2025 (EUR) | 7/7 | ja | – |
+| BRG.OL | BORREGAARD ASA | BORREGAARD ASA | 2020–2025 (NOK) | 7/7 | ja | – |
+| MYCR.ST | Mycronic AB (publ) | – | nicht gefunden | | | |
+| ES0105251005 | NEINOR HOMES SA | NEINOR HOMES SA | 2019–2025 (EUR) | 6/7 | ja | capex |
+| ES0105122024 | METROVACESA SA | METROVACESA SA | 2020–2025 (EUR) | 6/7 | ja | capex |
+| MOL.MI | "MOLTIPLY GROUP S.P.A.", OVVERO, IN BREVE, "MOL GROUP S.P.A." O ANCHE "GRUPPO MOL S.P.A." | – | nicht gefunden | | | |
+| PNDX-B.ST | Pandox Aktiebolag | Pandox Aktiebolag | 2020–2025 (SEK) | 7/7 | ja | – |
+| CRL.MI | CAREL INDUSTRIES S.P.A. | CAREL INDUSTRIES S.P.A. | 2020–2025 (EUR) | 7/7 | ja | – |
+| ALIG.ST | Alimak Group AB (publ) | – | nicht gefunden | | | |
+| ES0134950F36 | FAES FARMA SA | FAES FARMA SA | 2019–2025 (EUR) | 7/7 | ja | – |
+| ELN.MI | EL.EN. - S.P.A. | EL.EN. - S.P.A. | 2020–2025 (EUR) | 6/7 | ja | capex |
+| VAIAS.HE | Vaisala Oyj | Vaisala Oyj | 2020–2025 (EUR) | 7/7 | fehlt | – |
+| VEND.OL | VEND MARKETPLACES ASA | VEND MARKETPLACES ASA | 2020–2025 (NOK) | 7/7 | ja | – |
+| AVIO.MI | AVIO S.P.A. | AVIO S.P.A. | 2020–2025 (EUR) | 7/7 | ja | – |
+| KIN.BR | KINEPOLIS GROUP | KINEPOLIS GROUP | 2020–2024 (EUR) | 7/7 | ja | – |
+| VETO.PA | VETOQUINOL S.A | VETOQUINOL S.A | 2020–2025 (EUR) | 7/7 | ja | – |
+| REINA.AS | REINET INVESTMENTS S.C.A. | REINET INVESTMENTS S.C.A. | 2022–2024 (EUR) | 6/7 | fehlt | capex |
+| SCATC.OL | SCATEC ASA | SCATEC ASA | 2020–2022 (NOK) | 5/7 | fehlt | operativer_cf, capex |
+| CY0106002112 | ATALAYA MINING PLC | – | nicht gefunden | | | |
+| EXA.PA | EXAIL TECHNOLOGIES | EXAIL TECHNOLOGIES | 2020–2025 (EUR) | 6/7 | ja | operativer_cf |
+| MPCC.OL | MPC CONTAINER SHIPS ASA | MPC CONTAINER SHIPS ASA | 2020–2025 (USD) | 6/7 | ja | capex |
+| EXENS.PA | EXOSENS | EXOSENS | 2023–2025 (EUR) | 6/7 | ja | capex |
+| LUMO.HE | Lumo Kodit Oyj | – | nicht gefunden | | | |
+| PUUILO.HE | Puuilo Oyj | Puuilo Oyj | 2021–2026 (EUR) | 7/7 | fehlt | – |
+| SKIS-B.ST | SkiStar Aktiebolag | SkiStar Aktiebolag | 2021–2026 (SEK) | 7/7 | ja | – |
+| RF.PA | EURAZEO | EURAZEO | 2020–2025 (EUR) | 7/7 | ja | – |
+| HRRIVPRA0000 | Valamar Riviera dioničko društvo za turizam | Valamar Riviera dioničko društvo za turizam | keine Berichte | | | |
+| SIP.BR | SIPEF | SIPEF | 2020–2024 (USD) | 7/7 | ja | – |
+| SPA.BR | SOCIÉTÉ DE SERVICES, DE PARTICIPATIONS, DE DIRECTION ET D'ELABORATION | SOCIÉTÉ DE SERVICES, DE PARTICIPATIONS, DE DIRECTION ET D'ELABORATION | 2020–2025 (EUR) | 7/7 | ja | – |
+| GRS359353000 | ΕΤΑΙΡΙΑ ΥΔΡΕΥΣΕΩΣ ΚΑΙ ΑΠΟΧΕΤΕΥΣΕΩΣ ΠΡΩΤΕΥΟΥΣΗΣ ΑΝΩΝΥΜΗ ΕΤΑΙΡΙΑ | – | nicht gefunden | | | |
+| FABG.ST | Fabege AB | Fabege AB | 2020–2025 (SEK) | 7/7 | ja | – |
+| SI0031101346 | LUKA KOPER, pristaniški in logistični sistem, delniška družba | LUKA KOPER, pristaniški in logistični sistem, delniška družba | 2019–2024 (EUR) | 7/7 | ja | – |
+| ALMA.HE | Alma Media Oyj | Alma Media Oyj | 2020–2025 (EUR) | 7/7 | fehlt | – |
+| VIT-B.ST | Vitec Software Group AB (publ) | – | nicht gefunden | | | |
+| ALTRA.ST | Altra Fastigheter AB | Altra Fastigheter AB | 2020–2025 (SEK) | 7/7 | ja | – |
+| SECT-B.ST | SECTRA Aktiebolag | SECTRA Aktiebolag | 2021–2026 (SEK) | 7/7 | ja | – |
+| VIV.PA | VIVENDI SE | VIVENDI SE | 2020–2025 (EUR) | 7/7 | ja | – |
 | VITR.ST | Vitrolife AB | – | noch nicht geprüft | | | |
 | ES0173908015 | REALIA BUSINESS, S.A. | – | noch nicht geprüft | | | |
 | HUFV-A.ST | HUFVUDSTADEN AB | – | noch nicht geprüft | | | |
@@ -463,4 +463,8 @@
 - SOP.PA: URL can't contain control characters. '/96950020QIOHAAK9V551/2020-12-31/ESEF/FR/0/SOPRA STERIA GROUP
 - DIM.PA: URL can't contain control characters. '/52990006IVXY7GCSSR39/2025-12-31/ESEF/FR/0/sartoriusstedimbio
 - DOFG.OL: URL can't contain control characters. '/213800GIV9N2A714T434/2023-12-31/ESEF/NO/0/DOF Group ASA-2023
+- WWI.OL: URL can't contain control characters. '/54930050TPKOLSE1ZZ71/2021-12-31/ESEF/NO/0/Wilhelmsen Holding
+- HRPODRRA0004: URL can't contain control characters. '/549300TMC6BYESPQ7W85/2021-12-31/ESEF/HR/0/FS-101 FS Podravka
+- SCATC.OL: URL can't contain control characters. '/5967007LIEEXZXIARK36/2023-12-31/ESEF/NO/0/Scatec Annual Repo
+- HRRIVPRA0000: URL can't contain control characters. '/529900DUWS1DGNEK4C68/2021-12-31/ESEF/HR/0/HRV Godisnje izvje
 - Zeitbudget erreicht, Rest im nächsten Lauf
