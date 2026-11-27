@@ -25,7 +25,9 @@
    "name": "Tabak",
    "members": [
     "MO",
-    "UVV"
+    "UVV",
+    "BTI",
+    "2914.T"
    ]
   },
   {
@@ -198,7 +200,10 @@
    "id": "landwirtschaft",
    "name": "Landwirtschaft & Agrar",
    "members": [
-    "DE", "ADM", "CAT", "EMR"
+    "DE",
+    "ADM",
+    "CAT",
+    "EMR"
    ]
   },
   {

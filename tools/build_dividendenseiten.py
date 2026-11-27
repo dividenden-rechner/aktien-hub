@@ -85,6 +85,10 @@ def wert_am(serie, d):
     return None
 
 
+def kurs_txt(r):
+    return f"{de(r['kurs_eur'])} €"
+
+
 def kennzahlen(f, sec, kurse, iz, usd_je_eur, termine, wae="USD", fx_wae=1.0):
     s = sec.get(f["sym"])
     if not s:
