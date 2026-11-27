@@ -37,3 +37,5 @@ balance: Aus der Bilanz: liquide Mittel (cash), kurzfristige Finanzschulden inkl
 industry: Wähle die Branche. Business Development Companies (BDC, Kreditgeber an Mittelständler mit NAV je Aktie und Net Investment Income) sind "BDC".
 
 details: Bis zu 12 kurze Fakten aus dem Dokument, jeweils mit topic, fact, direction (positiv, negativ, neutral) und Seite. Erfasse die Entwicklung nach Weltregionen oder Kontinenten, nach Produkten oder Marken (was wächst, was schrumpft, neue Produkte gegenüber dem klassischen Geschäft), Mengen und Preise, und ausdrücklich auch Negatives (Rückgänge, Abschreibungen, Rechtsrisiken, Kostendruck, Margenverlust). Bei BDCs zusätzlich: NAV je Aktie (jetzt und Vorquartal), Net Investment Income je Aktie, Dividende je Aktie, Anteil der PIK-Erträge, Non-Accruals (Anteil am Portfolio), Verschuldungsgrad, Fälligkeiten und Refinanzierung der Schulden. Bei REITs: FFO/AFFO je Aktie, Belegung, Fälligkeiten. Zahlen exakt wie im Dokument, nichts berechnen.
+
+Tech- und Wachstumswerte mit kleiner Dividende: Dividende nur knapp erfassen (je Aktie, Veränderung). Keine Deckungs- oder Ausschüttungsanalyse (Vorgabe der Redaktion).
