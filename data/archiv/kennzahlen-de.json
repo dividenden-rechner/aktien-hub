@@ -22881,8 +22881,8 @@
      "waehrung": "EUR",
      "quelle": "https://www.infineon.com/ (Investor Presentation Q4 FY26, 2026-11-10, Datei b083890e-2026-11-10-q4-fy26-investor-presentation-v01-00-en.pdf)",
      "seite": 47,
-     "hinweis": "Gesamtumsatz FY25 laut Präsentation; nicht gegen Geschäftsbericht geprüft",
-     "geprueft": false
+     "hinweis": "Gesamtumsatz FY25 laut Präsentation; direkt von Folie 47 der Originalpräsentation abgelesen",
+     "geprueft": true
     },
     {
      "jahr": "2026",
@@ -22892,8 +22892,8 @@
      "waehrung": "EUR",
      "quelle": "https://www.infineon.com/ (Investor Presentation Q4 FY26, 2026-11-10, Datei b083890e-2026-11-10-q4-fy26-investor-presentation-v01-00-en.pdf)",
      "seite": 47,
-     "hinweis": "Gesamtumsatz FY26 laut Präsentation; nicht gegen Geschäftsbericht geprüft",
-     "geprueft": false
+     "hinweis": "Gesamtumsatz FY26 laut Präsentation; direkt von Folie 47 der Originalpräsentation abgelesen",
+     "geprueft": true
     },
     {
      "jahr": "2025",
@@ -22904,7 +22904,7 @@
      "quelle": "https://www.infineon.com/ (Investor Presentation Q4 FY26, 2026-11-10, Datei b083890e-2026-11-10-q4-fy26-investor-presentation-v01-00-en.pdf)",
      "seite": 47,
      "hinweis": "Segmentergebnis Gruppe FY25 laut Präsentation",
-     "geprueft": false
+     "geprueft": true
     },
     {
      "jahr": "2026",
@@ -22915,7 +22915,7 @@
      "quelle": "https://www.infineon.com/ (Investor Presentation Q4 FY26, 2026-11-10, Datei b083890e-2026-11-10-q4-fy26-investor-presentation-v01-00-en.pdf)",
      "seite": 47,
      "hinweis": "Segmentergebnis Gruppe FY26 laut Präsentation",
-     "geprueft": false
+     "geprueft": true
     },
     {
      "jahr": "2026",
