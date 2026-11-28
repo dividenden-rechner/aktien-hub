@@ -21,9 +21,9 @@ logo_file: assets/logos/ifx-de.png
     **Der Kurs:** Von 52,32 € am 11. November auf 42,63 € am 26. November, ein Minus von 18,5 %. Am Freitag erholte sich die Aktie auf rund 44,70 €.
     **Der Anlass:** Offenbar keiner aus dem Unternehmen selbst. Die Zahlen zum Geschäftsjahr waren solide, der Ausblick wurde bestätigt.
     **Das Umfeld:** Chipwerte und KI-Titel fielen im ganzen November, der Nasdaq 100 berührte zwischenzeitlich die Marke für einen Bärenmarkt.
-    **Die Dividende:** 0,38 € für das Geschäftsjahr 2026, das sind rund 0,9 % Rendite. Infineon ist ein Wachstumswert mit Dividende, kein klassischer Dividendenwert.
+    **Die Dividende:** 0,38 € für das Geschäftsjahr 2026, das sind rund 0,9 % Rendite. Für Infineon spielt die Dividende neben dem Wachstum nur eine Nebenrolle.
 
-Wenn eine Aktie in zwei Wochen fast ein Fünftel verliert, suchen Anleger nach der schlechten Nachricht. Bei Infineon fällt die Suche schwer. Das Unternehmen hat Mitte November Zahlen vorgelegt, die den Erwartungen offenbar entsprachen, und danach rutschte der Kurs trotzdem Tag für Tag ab. Hier ist, was sich über die Gründe sagen lässt und was nicht.
+Wenn eine Aktie in zwei Wochen fast ein Fünftel verliert, suchen Anleger nach der schlechten Nachricht. Bei Infineon fällt die Suche schwer. Das Unternehmen hat Mitte November Zahlen vorgelegt, die den Erwartungen offenbar entsprachen, und danach rutschte der Kurs trotzdem Tag für Tag ab.
 
 ## Der Kursverlauf
 
