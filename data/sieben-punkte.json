@@ -1,5 +1,5 @@
 {
- "stand": "2026-11-26",
+ "stand": "2026-11-27",
  "aktien": [
   {
    "ticker": "ADP",
@@ -20,7 +20,7 @@
      "feld": "gewinn_wachstum_5j"
     },
     "rendite": {
-     "wert": 2.16,
+     "wert": 2.13,
      "punkte": 1,
      "feld": "rendite"
     },
@@ -40,13 +40,13 @@
      "feld": "nettoschulden_ebitda"
     },
     "bewertung": {
-     "wert": 4.12,
+     "wert": 4.08,
      "punkte": 2,
      "feld": "fcf_rendite"
     }
    },
-   "kurs_eur": 287.4,
-   "stand": "2026-11-26"
+   "kurs_eur": 291.2,
+   "stand": "2026-11-27"
   },
   {
    "ticker": "TJX",
@@ -67,7 +67,7 @@
      "feld": "gewinn_wachstum_5j"
     },
     "rendite": {
-     "wert": 1.23,
+     "wert": 1.27,
      "punkte": 1,
      "feld": "rendite"
     },
@@ -87,13 +87,13 @@
      "feld": "nettoschulden_ebitda"
     },
     "bewertung": {
-     "wert": 3.54,
+     "wert": 3.64,
      "punkte": 1,
      "feld": "fcf_rendite"
     }
    },
-   "kurs_eur": 134,
-   "stand": "2026-11-26"
+   "kurs_eur": 130.5,
+   "stand": "2026-11-27"
   },
   {
    "ticker": "MO",
@@ -114,7 +114,7 @@
      "feld": "gewinn_wachstum_5j"
     },
     "rendite": {
-     "wert": 5.91,
+     "wert": 5.76,
      "punkte": 3,
      "feld": "rendite"
     },
@@ -134,13 +134,13 @@
      "feld": "nettoschulden_ebitda"
     },
     "bewertung": {
-     "wert": 7.18,
+     "wert": 7.0,
      "punkte": 3,
      "feld": "fcf_rendite"
     }
    },
-   "kurs_eur": 68.4,
-   "stand": "2026-11-26"
+   "kurs_eur": 70.32,
+   "stand": "2026-11-27"
   }
  ]
 }
