@@ -1,6 +1,6 @@
-# ESEF-Jahreszahlen Europa: Abdeckung (Stand 2026-11-27)
+# ESEF-Jahreszahlen Europa: Abdeckung (Stand 2026-11-28)
 
-452 Firmen in der Liste, mit Jahreszahlen: **328**, davon mit Börsenkurs (ISIN): **307**.
+452 Firmen in der Liste, mit Jahreszahlen: **399**, davon mit Börsenkurs (ISIN): **363**.
 
 | Kürzel | Name | Rechtsträger laut Bericht | Jahre | Kern | Kurs | fehlt |
 |---|---|---|---|---|---|---|
@@ -373,89 +373,89 @@
 | ALTRA.ST | Altra Fastigheter AB | Altra Fastigheter AB | 2020–2025 (SEK) | 7/7 | ja | – |
 | SECT-B.ST | SECTRA Aktiebolag | SECTRA Aktiebolag | 2021–2026 (SEK) | 7/7 | ja | – |
 | VIV.PA | VIVENDI SE | VIVENDI SE | 2020–2025 (EUR) | 7/7 | ja | – |
-| VITR.ST | Vitrolife AB | – | noch nicht geprüft | | | |
-| ES0173908015 | REALIA BUSINESS, S.A. | – | noch nicht geprüft | | | |
-| HUFV-A.ST | HUFVUDSTADEN AB | – | noch nicht geprüft | | | |
-| ANTIN.PA | ANTIN INFRASTRUCTURE PARTNERS | – | noch nicht geprüft | | | |
-| ECMPM.MI | Eurocommercial Properties N.V. | – | noch nicht geprüft | | | |
-| HMS.ST | HMS Networks AB | – | noch nicht geprüft | | | |
-| CMB.MI | CEMBRE S.P.A. | – | noch nicht geprüft | | | |
-| JDAN.CO | JEUDAN A/S | – | noch nicht geprüft | | | |
-| FREY.PA | FREY | – | noch nicht geprüft | | | |
-| ES0169501022 | PHARMA MAR, S.A. | – | noch nicht geprüft | | | |
-| PLNW.PA | PLANISWARE | – | noch nicht geprüft | | | |
-| MILDEF.ST | MilDef Group AB | – | noch nicht geprüft | | | |
-| BITTI.HE | Bittium Oyj | – | noch nicht geprüft | | | |
-| MIPS.ST | Mips AB | – | noch nicht geprüft | | | |
-| TIP.MI | TAMBURI INVESTMENT PARTNERS S.P.A. IN VIA BREVE T.I.P. S.P.A. OV VERO TIP S.P.A. | – | noch nicht geprüft | | | |
-| ALMB.CO | ALM. BRAND A/S | – | noch nicht geprüft | | | |
-| ALSYDB.CO | AL Sydbank A/S | – | noch nicht geprüft | | | |
-| ALTA.PA | ALTAREA | – | noch nicht geprüft | | | |
-| AMBEA.ST | Ambea AB ( publ ) | – | noch nicht geprüft | | | |
-| ANIM.MI | ANIMA HOLDING S.P.A. | – | noch nicht geprüft | | | |
-| ARG.PA | ARGAN | – | noch nicht geprüft | | | |
-| AT0000641352 | CA Immobilien Anlagen Aktiengesellschaft | – | noch nicht geprüft | | | |
-| AXFO.ST | Axfood AB | – | noch nicht geprüft | | | |
-| AYV.PA | AYVENS | – | noch nicht geprüft | | | |
-| AZA.ST | Avanza Bank Holding AB | – | noch nicht geprüft | | | |
-| AZM.MI | AZIMUT HOLDING S.P.A. | – | noch nicht geprüft | | | |
-| BE0003853703 | MONTEA | – | noch nicht geprüft | | | |
-| BETS-B.ST | Betsson AB | – | noch nicht geprüft | | | |
-| BILL.ST | Billerud Aktiebolag (publ) | – | noch nicht geprüft | | | |
-| BURE.ST | Bure Equity AB | – | noch nicht geprüft | | | |
-| CARM.PA | Carmila | – | noch nicht geprüft | | | |
-| CATE.ST | Catena AB | – | noch nicht geprüft | | | |
-| CE.MI | CREDITO EMILIANO S.P.A. ABBREVIABILE IN CREDEMBANCA E IN CREDEM | – | noch nicht geprüft | | | |
-| CLAS-B.ST | Clas Ohlson Aktiebolag | – | noch nicht geprüft | | | |
-| COFA.PA | COFACE SA | – | noch nicht geprüft | | | |
-| COV.PA | COVIVIO | – | noch nicht geprüft | | | |
-| COVH.PA | COVIVIO HOTELS | – | noch nicht geprüft | | | |
-| ENTRA.OL | ENTRA ASA | – | noch nicht geprüft | | | |
-| ES0105546008 | LINEA DIRECTA ASEGURADORA SOCIEDAD ANONIMA COMPAÑIA DE SEGUROS Y REASEGUROS | – | noch nicht geprüft | | | |
-| ES0139140174 | COLONIAL SFL SOCIMI SA | – | noch nicht geprüft | | | |
-| ES0176252718 | MELIA HOTELS INTERNATIONAL SA | – | noch nicht geprüft | | | |
-| ES0180907000 | UNICAJA BANCO SA | – | noch nicht geprüft | | | |
-| EVO.ST | Evolution AB (publ) | – | noch nicht geprüft | | | |
-| FLUX.BR | FLUXYS BELGIUM | – | noch nicht geprüft | | | |
-| GFC.PA | GECINA | – | noch nicht geprüft | | | |
-| GIMB.BR | Gimv | – | noch nicht geprüft | | | |
-| GRS533003000 | ΤΡΑΠΕΖΑ OPTIMA BANK A.E. | – | noch nicht geprüft | | | |
-| GRS830003000 | ΑΛΦΑ ΤΡΑΠΕΖΑ Α.Ε. | – | noch nicht geprüft | | | |
-| GRS831003009 | ΤΡΑΠΕΖΑ ΠΕΙΡΑΙΩΣ ΑΝΩΝΥΜΟΣ ΕΤΑΙΡΕΙΑ | – | noch nicht geprüft | | | |
-| HACK.ST | Hacksaw AB | – | noch nicht geprüft | | | |
-| HOFI.ST | Hoist Finance AB | – | noch nicht geprüft | | | |
-| HU0000061726 | OTP Bank Nyrt. | – | noch nicht geprüft | | | |
-| IE00BD5B1Y92 | BANK OF CYPRUS HOLDINGS PUBLIC LIMITED COMPANY | – | noch nicht geprüft | | | |
-| IG.MI | ITALGAS S.P.A. | – | noch nicht geprüft | | | |
-| INTEA-B.ST | Intea Fastigheter AB (publ) | – | noch nicht geprüft | | | |
-| LI.PA | KLEPIERRE | – | noch nicht geprüft | | | |
-| MAU.PA | ETABLISSEMENTS MAUREL ET PROM | – | noch nicht geprüft | | | |
-| MCOV-B.ST | Medicover AB | – | noch nicht geprüft | | | |
-| NCC-B.ST | NCC AKTIEBOLAG | – | noch nicht geprüft | | | |
-| NEXI.MI | NEXI SPA | – | noch nicht geprüft | | | |
-| NOS.LS | NOS, SGPS, S.A. | – | noch nicht geprüft | | | |
-| NP3.ST | NP3 Fastigheter AB | – | noch nicht geprüft | | | |
-| NRP.AS | NEPI ROCKCASTLE N.V. | – | noch nicht geprüft | | | |
-| OEM-B.ST | OEM International Aktiebolag | – | noch nicht geprüft | | | |
-| PEUG.PA | PEUGEOT INVEST | – | noch nicht geprüft | | | |
-| RUSTA.ST | Rusta AB (publ) | – | noch nicht geprüft | | | |
-| SAGA-A.ST | AB Sagax | – | noch nicht geprüft | | | |
-| SAN.PA | SANOFI | – | noch nicht geprüft | | | |
-| SAVE.ST | Nordnet AB (publ) | – | noch nicht geprüft | | | |
-| SCR.PA | SCOR SE | – | noch nicht geprüft | | | |
-| SCST.ST | Scandi Standard AB (publ) | – | noch nicht geprüft | | | |
-| SI0021111651 | ZAVAROVALNICA TRIGLAV, d.d. | – | noch nicht geprüft | | | |
-| SI0021117344 | NOVA LJUBLJANSKA BANKA d.d., Ljubljana | – | noch nicht geprüft | | | |
-| SJF.CO | SJF Bank A/S | – | noch nicht geprüft | | | |
-| SOF.BR | SOFINA | – | noch nicht geprüft | | | |
-| SOMA.OL | SOLSTAD MARITIME ASA | – | noch nicht geprüft | | | |
-| THULE.ST | Thule Group AB | – | noch nicht geprüft | | | |
-| TKO.PA | TIKEHAU CAPITAL | – | noch nicht geprüft | | | |
-| UN9.DE | UNIQA Insurance Group AG | – | noch nicht geprüft | | | |
-| VAR.OL | VÅR ENERGI ASA | – | noch nicht geprüft | | | |
-| WALL-B.ST | WALLENSTAM AB | – | noch nicht geprüft | | | |
-| WIHL.ST | Wihlborgs Fastigheter AB | – | noch nicht geprüft | | | |
-| XIOR.BR | XIOR STUDENT HOUSING | – | noch nicht geprüft | | | |
+| VITR.ST | Vitrolife AB | Vitrolife AB | 2020–2025 (SEK) | 7/7 | ja | – |
+| ES0173908015 | REALIA BUSINESS, S.A. | REALIA BUSINESS, S.A. | 2019–2023 (EUR) | 6/7 | fehlt | capex |
+| HUFV-A.ST | HUFVUDSTADEN AB | HUFVUDSTADEN AB | 2020–2025 (SEK) | 7/7 | ja | – |
+| ANTIN.PA | ANTIN INFRASTRUCTURE PARTNERS | ANTIN INFRASTRUCTURE PARTNERS | 2020–2025 (EUR) | 7/7 | ja | – |
+| ECMPM.MI | Eurocommercial Properties N.V. | Eurocommercial Properties N.V. | 2020–2025 (EUR) | 7/7 | fehlt | – |
+| HMS.ST | HMS Networks AB | HMS Networks AB | 2020–2024 (SEK) | 6/7 | ja | operativer_cf |
+| CMB.MI | CEMBRE S.P.A. | CEMBRE S.P.A. | 2020–2025 (EUR) | 7/7 | ja | – |
+| JDAN.CO | JEUDAN A/S | JEUDAN A/S | 2020–2025 (DKK) | 6/7 | ja | capex |
+| FREY.PA | FREY | FREY | 2020–2025 (EUR) | 6/7 | fehlt | capex |
+| ES0169501022 | PHARMA MAR, S.A. | PHARMA MAR, S.A. | 2019–2025 (EUR) | 7/7 | ja | – |
+| PLNW.PA | PLANISWARE | PLANISWARE | 2023–2025 (EUR) | 7/7 | ja | – |
+| MILDEF.ST | MilDef Group AB | MilDef Group AB | 2020–2025 (SEK) | 7/7 | ja | – |
+| BITTI.HE | Bittium Oyj | Bittium Oyj | 2020–2025 (EUR) | 7/7 | fehlt | – |
+| MIPS.ST | Mips AB | Mips AB | 2020–2025 (SEK) | 7/7 | ja | – |
+| TIP.MI | TAMBURI INVESTMENT PARTNERS S.P.A. IN VIA BREVE T.I.P. S.P.A. OV VERO TIP S.P.A. | TAMBURI INVESTMENT PARTNERS S.P.A. IN VIA BREVE T.I.P. S.P.A. OV VERO TIP S.P.A. | 2023–2025 (EUR) | 6/7 | ja | capex |
+| ALMB.CO | ALM. BRAND A/S | ALM. Brand A/S | 2023–2024 (DKK) | 6/7 | ja | umsatz |
+| ALSYDB.CO | AL Sydbank A/S | – | nicht gefunden | | | |
+| ALTA.PA | ALTAREA | ALTAREA | 2019–2024 (EUR) | 6/7 | fehlt | umsatz |
+| AMBEA.ST | Ambea AB ( publ ) | – | nicht gefunden | | | |
+| ANIM.MI | ANIMA HOLDING S.P.A. | – | nicht gefunden | | | |
+| ARG.PA | ARGAN | ARGAN | 2022–2025 (EUR) | 6/7 | fehlt | umsatz |
+| AT0000641352 | CA Immobilien Anlagen Aktiengesellschaft | CA Immobilien Anlagen Aktiengesellschaft | 2019–2025 (EUR) | 6/7 | ja | umsatz |
+| AXFO.ST | Axfood AB | Axfood AB | 2020–2025 (SEK) | 6/7 | ja | umsatz |
+| AYV.PA | AYVENS | AYVENS | 2019–2025 (EUR) | 5/7 | ja | umsatz, operativer_cf |
+| AZA.ST | Avanza Bank Holding AB | Avanza Bank Holding AB | 2020–2025 (SEK) | 6/7 | ja | umsatz |
+| AZM.MI | AZIMUT HOLDING S.P.A. | – | nicht gefunden | | | |
+| BE0003853703 | MONTEA | MONTEA | 2020–2024 (EUR) | 6/7 | fehlt | umsatz |
+| BETS-B.ST | Betsson AB | Betsson AB | 2021–2025 (EUR) | 6/7 | ja | umsatz |
+| BILL.ST | Billerud Aktiebolag (publ) | Billerud Aktiebolag (publ) | 2020–2025 (SEK) | 6/7 | ja | umsatz |
+| BURE.ST | Bure Equity AB | Bure Equity AB | 2021–2025 (SEK) | 5/7 | ja | operativer_cf, capex |
+| CARM.PA | Carmila | Carmila | 2022–2024 (EUR) | 5/7 | fehlt | umsatz, capex |
+| CATE.ST | Catena AB | Catena AB | 2020–2025 (SEK) | 5/7 | ja | umsatz, capex |
+| CE.MI | CREDITO EMILIANO S.P.A. ABBREVIABILE IN CREDEMBANCA E IN CREDEM | CREDITO EMILIANO S.P.A. ABBREVIABILE IN CREDEMBANCA E IN CREDEM | 2021–2025 (EUR) | 5/7 | ja | umsatz, eigenkapital |
+| CLAS-B.ST | Clas Ohlson Aktiebolag | Clas Ohlson Aktiebolag | 2021–2026 (SEK) | 6/7 | ja | umsatz |
+| COFA.PA | COFACE SA | COFACE SA | 2019–2025 (EUR) | 6/7 | ja | umsatz |
+| COV.PA | COVIVIO | COVIVIO | 2020–2025 (EUR) | 6/7 | fehlt | umsatz |
+| COVH.PA | COVIVIO HOTELS | COVIVIO HOTELS | 2021–2025 (EUR) | 6/7 | fehlt | umsatz |
+| ENTRA.OL | ENTRA ASA | ENTRA ASA | 2020–2025 (NOK) | 5/7 | ja | umsatz, capex |
+| ES0105546008 | LINEA DIRECTA ASEGURADORA SOCIEDAD ANONIMA COMPAÑIA DE SEGUROS Y REASEGUROS | LINEA DIRECTA ASEGURADORA SOCIEDAD ANONIMA COMPAÑIA DE SEGUROS Y REASEGUROS | 2020–2025 (EUR) | 5/7 | ja | umsatz, operativer_cf |
+| ES0139140174 | COLONIAL SFL SOCIMI SA | COLONIAL SFL SOCIMI SA | 2020–2025 (EUR) | 6/7 | fehlt | umsatz |
+| ES0176252718 | MELIA HOTELS INTERNATIONAL SA | MELIA HOTELS INTERNATIONAL SA | 2019–2025 (EUR) | 6/7 | ja | umsatz |
+| ES0180907000 | UNICAJA BANCO SA | UNICAJA BANCO SA | 2019–2025 (EUR) | 6/7 | ja | umsatz |
+| EVO.ST | Evolution AB (publ) | – | nicht gefunden | | | |
+| FLUX.BR | FLUXYS BELGIUM | FLUXYS BELGIUM | 2020–2025 (EUR) | 6/7 | ja | umsatz |
+| GFC.PA | GECINA | GECINA | 2019–2025 (EUR) | 6/7 | fehlt | umsatz |
+| GIMB.BR | Gimv | Gimv | 2019–2025 (EUR) | 6/7 | ja | umsatz |
+| GRS533003000 | ΤΡΑΠΕΖΑ OPTIMA BANK A.E. | ΤΡΑΠΕΖΑ OPTIMA BANK A.E. | 2022–2025 (EUR) | 6/7 | ja | umsatz |
+| GRS830003000 | ΑΛΦΑ ΤΡΑΠΕΖΑ Α.Ε. | ΑΛΦΑ ΤΡΑΠΕΖΑ Α.Ε. | 2024–2025 (EUR) | 5/7 | ja | umsatz, operativer_cf |
+| GRS831003009 | ΤΡΑΠΕΖΑ ΠΕΙΡΑΙΩΣ ΑΝΩΝΥΜΟΣ ΕΤΑΙΡΕΙΑ | – | nicht gefunden | | | |
+| HACK.ST | Hacksaw AB | Hacksaw AB | 2024–2025 (EUR) | 6/7 | ja | umsatz |
+| HOFI.ST | Hoist Finance AB | Hoist Finance AB | 2020–2025 (SEK) | 5/7 | ja | umsatz, capex |
+| HU0000061726 | OTP Bank Nyrt. | OTP Bank Nyrt. | 2021–2025 (HUF) | 6/7 | fehlt | umsatz |
+| IE00BD5B1Y92 | BANK OF CYPRUS HOLDINGS PUBLIC LIMITED COMPANY | – | nicht gefunden | | | |
+| IG.MI | ITALGAS S.P.A. | ITALGAS S.P.A. | 2020–2025 (EUR) | 5/7 | ja | umsatz, operativer_cf |
+| INTEA-B.ST | Intea Fastigheter AB (publ) | – | nicht gefunden | | | |
+| LI.PA | KLEPIERRE | KLEPIERRE | 2020–2025 (EUR) | 5/7 | fehlt | umsatz, capex |
+| MAU.PA | ETABLISSEMENTS MAUREL ET PROM | ETABLISSEMENTS MAUREL ET PROM | 2019–2025 (USD) | 6/7 | ja | umsatz |
+| MCOV-B.ST | Medicover AB | Medicover AB | 2020–2025 (EUR) | 5/7 | ja | umsatz, eps_verw |
+| NCC-B.ST | NCC AKTIEBOLAG | NCC AKTIEBOLAG | 2020–2025 (SEK) | 6/7 | ja | umsatz |
+| NEXI.MI | NEXI SPA | NEXI SPA | 2020–2024 (EUR) | 6/7 | ja | umsatz |
+| NOS.LS | NOS, SGPS, S.A. | NOS, SGPS, S.A. | 2020–2025 (EUR) | 6/7 | ja | umsatz |
+| NP3.ST | NP3 Fastigheter AB | NP3 Fastigheter AB | 2020–2025 (SEK) | 5/7 | ja | umsatz, capex |
+| NRP.AS | NEPI ROCKCASTLE N.V. | NEPI ROCKCASTLE N.V. | 2020–2025 (EUR) | 6/7 | ja | umsatz |
+| OEM-B.ST | OEM International Aktiebolag | OEM International Aktiebolag | 2020–2025 (SEK) | 6/7 | ja | umsatz |
+| PEUG.PA | PEUGEOT INVEST | PEUGEOT INVEST | 2019–2025 (EUR) | 6/7 | ja | umsatz |
+| RUSTA.ST | Rusta AB (publ) | – | nicht gefunden | | | |
+| SAGA-A.ST | AB Sagax | AB Sagax | 2020–2025 (SEK) | 5/7 | ja | umsatz, capex |
+| SAN.PA | SANOFI | SANOFI | 2018–2025 (EUR) | 6/7 | ja | umsatz |
+| SAVE.ST | Nordnet AB (publ) | – | nicht gefunden | | | |
+| SCR.PA | SCOR SE | SCOR SE | 2019–2024 (EUR) | 6/7 | ja | umsatz |
+| SCST.ST | Scandi Standard AB (publ) | – | nicht gefunden | | | |
+| SI0021111651 | ZAVAROVALNICA TRIGLAV, d.d. | ZAVAROVALNICA TRIGLAV, d.d. | 2020–2025 (EUR) | 6/7 | ja | umsatz |
+| SI0021117344 | NOVA LJUBLJANSKA BANKA d.d., Ljubljana | NOVA LJUBLJANSKA BANKA d.d., Ljubljana | 2020–2025 (EUR) | 6/7 | ja | umsatz |
+| SJF.CO | SJF Bank A/S | – | nicht gefunden | | | |
+| SOF.BR | SOFINA | SOFINA | 2020–2025 (EUR) | 6/7 | ja | umsatz |
+| SOMA.OL | SOLSTAD MARITIME ASA | SOLSTAD MARITIME ASA | 2024–2025 (USD) | 6/7 | ja | umsatz |
+| THULE.ST | Thule Group AB | Thule Group AB | 2020–2025 (SEK) | 6/7 | ja | umsatz |
+| TKO.PA | TIKEHAU CAPITAL | TIKEHAU CAPITAL | 2020–2025 (EUR) | 4/7 | ja | umsatz, operativer_cf, capex |
+| UN9.DE | UNIQA Insurance Group AG | UNIQA Insurance Group AG | 2019–2025 (EUR) | 6/7 | ja | umsatz |
+| VAR.OL | VÅR ENERGI ASA | VÅR ENERGI ASA | 2020–2025 (USD) | 6/7 | ja | umsatz |
+| WALL-B.ST | WALLENSTAM AB | WALLENSTAM AB | 2020–2025 (SEK) | 5/7 | ja | umsatz, capex |
+| WIHL.ST | Wihlborgs Fastigheter AB | Wihlborgs Fastigheter AB | 2020–2025 (SEK) | 6/7 | ja | umsatz |
+| XIOR.BR | XIOR STUDENT HOUSING | XIOR STUDENT HOUSING | 2020–2025 (EUR) | 6/7 | fehlt | umsatz |
 
 ## Hinweise
 
@@ -467,4 +467,5 @@
 - HRPODRRA0004: URL can't contain control characters. '/549300TMC6BYESPQ7W85/2021-12-31/ESEF/HR/0/FS-101 FS Podravka
 - SCATC.OL: URL can't contain control characters. '/5967007LIEEXZXIARK36/2023-12-31/ESEF/NO/0/Scatec Annual Repo
 - HRRIVPRA0000: URL can't contain control characters. '/529900DUWS1DGNEK4C68/2021-12-31/ESEF/HR/0/HRV Godisnje izvje
+- ES0173908015: 'ascii' codec can't encode character '\xed' in position 85: ordinal not in range(128)
 - Zeitbudget erreicht, Rest im nächsten Lauf
