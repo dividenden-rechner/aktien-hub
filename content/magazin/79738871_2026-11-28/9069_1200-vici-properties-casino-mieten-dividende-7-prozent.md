@@ -23,7 +23,7 @@ image_lizenz: Unsplash
 !!! kurz "Kurz gesagt"
     **Die Dividende:** 0,46 $ je Quartal (1,84 $ im Jahr), 2,2 % mehr als vor einem Jahr. Die Rendite liegt im Hub bei 7,2 %.
     **Das Geschäft:** 103 Immobilien, darunter 63 Casinos, alle langfristig an Betreiber vermietet. Im dritten Quartal stieg der Umsatz um 5,8 %, der operative Gewinn je Aktie (AFFO) um 4,3 %.
-    **Die Deckung:** Die Dividende entspricht rund 74 % des operativen Gewinns, im Hub sind es 83 % des Gewinns und 74 % des freien Cashflows.
+    **Die Deckung:** Die Dividende entspricht rund 74 % des operativen Gewinns (AFFO): 1,84 $ je Aktie gegen 2,47 bis 2,48 $ Prognose für 2026.
     **Die Schwäche:** Der Konzern hängt von wenigen Mietern ab, vor allem Caesars und MGM. Für Caesars hat VICI im Quartal eine hohe Vorsorge gebucht.
 
 Wer VICI Properties kauft, wird zum Vermieter von Las Vegas. Dem Konzern gehören Caesars Palace, der Venetian, MGM Grand und ein Strauß weiterer Spielbanken und Freizeitanlagen, insgesamt 103 Immobilien mit rund 66.000 Hotelzimmern. Betrieben werden sie von anderen, VICI kassiert die Miete. Das Modell ist langweilig und lukrativ zugleich, und es erklärt, warum die Aktie in den Dividendenlisten weit oben steht: Die Rendite liegt im Hub bei 7,2 % und damit deutlich über der von Realty Income und NNN REIT.
@@ -48,13 +48,13 @@ Die Quartalsdividende stieg auf 0,46 $ je Aktie, das sind 2,2 % mehr als vor ein
 
 ### Wie gut ist sie gedeckt?
 
-Bei Immobilienkonzernen taugt der Gewinn nach Steuern wenig als Maßstab, weil Abschreibungen und Bewertungseffekte ihn verzerren. Im dritten Quartal sank der Gewinn je Aktie auf 0,31 $, nach 0,71 $ im Vorjahr. Den Rückgang verursachte eine Vorsorge für mögliche Zahlungsausfälle, die ohne Geldabfluss bleibt. Der Hub weist daher zwei Werte aus: 83 % des Gewinns und 74 % des freien Cashflows fließen in die Dividende. Gemessen am AFFO, wie VICI es selbst tut, sind es rund 74 %. Ein Viertel des operativen Gewinns bleibt im Unternehmen, für Zukäufe und den Abbau von Schulden.
+Bei Immobilienkonzernen taugt der Gewinn nach Steuern wenig als Maßstab, weil Abschreibungen und Bewertungseffekte ihn verzerren. Im dritten Quartal sank der Gewinn je Aktie auf 0,31 $, nach 0,71 $ im Vorjahr. Den Rückgang verursachte eine Vorsorge für mögliche Zahlungsausfälle, die ohne Geldabfluss bleibt. Maßstab ist deshalb der operative Gewinn (AFFO), wie ihn VICI selbst ausweist: Im dritten Quartal standen 0,62 $ je Aktie einer Dividende von 0,46 $ gegenüber, das sind rund 74 %. Ein Viertel des operativen Gewinns bleibt im Unternehmen, für Zukäufe und den Abbau von Schulden.
 
 ## Die Bilanz und die Risiken
 
 ### Viel Schulden, günstige Zinsen noch bis Februar
 
-Die Schulden belaufen sich auf 17,2 Mrd. $, die Nettoschulden im Hub auf das 4,5-Fache des operativen Gewinns vor Abschreibungen. Bei einem Immobilienkonzern mit langen Verträgen ist das üblich. Die Zinsdeckung liegt im Hub bei 4,3. Die nächste Probe kommt im Februar 2027, wenn Anleihen über 1,5 Mrd. $ fällig werden. Eine davon trägt nur 3,75 % Zins, neue Anleihen kosten VICI im August und Oktober gut 5,4 %. Das Management rechnet deshalb mit leichtem Gegenwind beim operativen Gewinn.
+Die Schulden belaufen sich auf 17,2 Mrd. $, die Nettoschulden auf das 4,8-Fache des auf das Jahr hochgerechneten Ergebnisses vor Zinsen, Steuern und Abschreibungen. Bei einem Immobilienkonzern mit langen Verträgen ist das üblich. Die Zinsdeckung liegt bei 4,1, die Anleihebedingungen verlangen mindestens 1,5. Die Ratings stehen mit Baa3 und BBB- an der untersten Stufe der Anlagequalität. Die nächste Probe kommt im Februar 2027, wenn zwei Anleihen über je 750 Mio. $ fällig werden, mit 5,75 % und mit nur 3,75 % Zins. Die im August ausgegebenen neuen Anleihen kosten 5,4 % bei fünf und 5,75 % bei zehn Jahren Laufzeit. Das Management rechnet deshalb mit leichtem Gegenwind beim operativen Gewinn.
 
 ### Der Mieter Caesars
 
