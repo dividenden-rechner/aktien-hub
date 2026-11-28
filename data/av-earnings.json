@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-27 15:33 UTC",
+ "updated": "2026-11-28 04:14 UTC",
  "quelle": "Alpha Vantage",
  "items": [
   {
@@ -1130,20 +1130,20 @@
    "eps_n": 0,
    "rev_est": 0.0,
    "rev_n": 0,
-   "est_stand": "2026-11-27"
+   "est_stand": "2026-11-28"
   },
   {
    "sym": "CPRT",
    "datum": "2026-12-01",
-   "eps_est": 0.3969,
+   "eps_est": 0.3925,
    "name": "COPART INCORPORATED",
    "fiscal": "2026-10-31",
    "cur": "USD",
    "zeit": "vor",
-   "eps_n": 7,
-   "rev_est": 1190866710.0,
-   "rev_n": 7,
-   "est_stand": "2026-11-27"
+   "eps_n": 8,
+   "rev_est": 1190079620.0,
+   "rev_n": 8,
+   "est_stand": "2026-11-28"
   },
   {
    "sym": "CRWD",
@@ -1156,7 +1156,7 @@
    "eps_n": 45,
    "rev_est": 1528559430.0,
    "rev_n": 43,
-   "est_stand": "2026-11-27"
+   "est_stand": "2026-11-28"
   },
   {
    "sym": "MRVL",
@@ -1169,7 +1169,7 @@
    "eps_n": 32,
    "rev_est": 3152214940.0,
    "rev_n": 31,
-   "est_stand": "2026-11-27"
+   "est_stand": "2026-11-28"
   },
   {
    "sym": "NTAP",
@@ -1182,7 +1182,7 @@
    "eps_n": 19,
    "rev_est": 2108285380.0,
    "rev_n": 17,
-   "est_stand": "2026-11-27"
+   "est_stand": "2026-11-28"
   },
   {
    "sym": "TCOM",
@@ -1195,20 +1195,20 @@
    "eps_n": 15,
    "rev_est": 18927296580.0,
    "rev_n": 16,
-   "est_stand": "2026-11-27"
+   "est_stand": "2026-11-28"
   },
   {
    "sym": "CRM",
    "datum": "2026-12-02",
-   "eps_est": 3.4463,
+   "eps_est": 3.4466,
    "name": "SALESFORCE INCORPORATED",
    "fiscal": "2026-10-31",
    "cur": "USD",
    "zeit": "nach",
    "eps_n": 42,
-   "rev_est": 11462305880.0,
+   "rev_est": 11462939140.0,
    "rev_n": 40,
-   "est_stand": "2026-11-27"
+   "est_stand": "2026-11-28"
   },
   {
    "sym": "COO",
@@ -1221,7 +1221,7 @@
    "eps_n": 16,
    "rev_est": 1067935900.0,
    "rev_n": 15,
-   "est_stand": "2026-11-27"
+   "est_stand": "2026-11-28"
   },
   {
    "sym": "DG",
@@ -1234,7 +1234,7 @@
    "eps_n": 26,
    "rev_est": 11138118020.0,
    "rev_n": 24,
-   "est_stand": "2026-11-27"
+   "est_stand": "2026-11-28"
   },
   {
    "sym": "HRL",
@@ -1278,9 +1278,9 @@
    "cur": "USD",
    "zeit": "nach",
    "eps_n": 25,
-   "rev_est": 935160110.0,
+   "rev_est": 935197610.0,
    "rev_n": 24,
-   "est_stand": "2026-11-27"
+   "est_stand": "2026-11-28"
   },
   {
    "sym": "AZO",
