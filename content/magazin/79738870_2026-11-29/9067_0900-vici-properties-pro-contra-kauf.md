@@ -17,7 +17,7 @@ image_source: "https://unsplash.com/de/fotos/X6xlM8Job2k?utm_source=dividenden-r
 image_lizenz: Unsplash
 ---
 <!-- PRÜFEN: Zinsvergleich nutzt die Rendite zehnjähriger US-Staatsanleihen von rund 4,9 % (Stand 27.11.2026, Vorbörse). Aktuellen Wert vor Veröffentlichung prüfen. -->
-<!-- PRÜFEN: Aussagen zu Mieteranteilen und Kursverlust seit Jahresbeginn stammen aus einer Analystenauswertung (Substack), nicht aus VICI-Unterlagen. -->
+<!-- PRÜFEN: Mieteranteile, Las-Vegas-Anteil, Kreditkennzahlen und Rückstellung sind jetzt mit der Präsentation und dem 10-Q zum dritten Quartal belegt. Aussagen zu Spirit, den Casino-Umsätzen und den Gesprächen mit Caesars stammen weiter aus der Telefonkonferenz bzw. Pressestimmen. -->
 
 !!! kurz "Kurz gesagt"
     **Dafür:** hohe Rendite von 7,2 %, langlaufende Mietverträge mit eingebauten Erhöhungen, eine Dividende, die rund 74 % des operativen Gewinns kostet, und eine Aktie, die im Hub unter Buchwert gehandelt wird.
@@ -34,11 +34,13 @@ Die Dividendenrendite von 7,2 % liegt rund 2,3 Prozentpunkte über der Rendite z
 
 ### 2. Die Verträge laufen lange und enthalten Erhöhungen
 
-VICI vermietet nach dem Muster langer Verträge, bei denen der Mieter Steuern, Versicherung und Instandhaltung trägt. Die Mieten steigen jedes Jahr, gestaffelt oder an die Inflation gekoppelt. Das erklärt, warum der operative Gewinn je Aktie auch in einem schwierigen Quartal um 4,3 % wuchs. Die Prognose für 2026 hob das Management auf 2,47 bis 2,48 $ je Aktie an.
+VICI vermietet nach dem Muster langer Verträge, bei denen der Mieter Steuern, Versicherung und Instandhaltung trägt. Die Restlaufzeit aller Verträge beträgt im Schnitt 39,4 Jahre, und bei den großen Mietern steigt die Miete jedes Jahr um mindestens 2 % oder um die Inflation, bei MGM und dem Venetian gedeckelt auf 3 %. Zusätzlich haften bei 88 % der Miete Muttergesellschaften der Mieter. Das erklärt, warum der operative Gewinn je Aktie auch in einem schwierigen Quartal um 4,3 % auf 0,62 $ wuchs. Die Prognose für 2026 hob das Management auf 2,47 bis 2,48 $ je Aktie an.
+
+![Laufzeiten und jährliche Mietsteigerungen der großen Mietverträge von VICI (Folie 19 der Präsentation zum dritten Quartal 2026)](/assets/magazin/vici-folie-mietvertraege.png)
 
 ### 3. Die Dividende ist solide gedeckt
 
-1,84 $ Dividende je Aktie stehen 2,47 bis 2,48 $ operativer Gewinn gegenüber, das sind rund 74 %. Im Hub fließen 74 % des freien Cashflows in die Ausschüttung. Das lässt Raum für Erhöhungen, ohne dass der Konzern Schulden aufnehmen muss, um die Dividende zu zahlen.
+1,84 $ Dividende je Aktie stehen 2,47 bis 2,48 $ operativer Gewinn gegenüber, das sind rund 74 %. Im dritten Quartal standen 0,62 $ operativer Gewinn je Aktie einer Quartalsdividende von 0,46 $ gegenüber, die Quote lag also gleich hoch. Das lässt Raum für Erhöhungen, ohne dass der Konzern Schulden aufnehmen muss, um die Dividende zu zahlen.
 
 ### 4. Las Vegas und regionale Casinos laufen
 
@@ -50,7 +52,7 @@ Im Hub kostet die Aktie das 0,96-Fache des Buchwerts, Realty Income das 1,4-Fach
 
 ### 6. Das Management hat Spielraum
 
-Der Verwaltungsrat genehmigte einen Aktienrückkauf über bis zu 2 Mrd. $. Außerdem hat VICI mit knapp 2,5 Mrd. $ Liquidität Luft für die Refinanzierung. Die Zahl der Mieter wächst, im laufenden Jahr kamen mehrere neue hinzu.
+Der Verwaltungsrat genehmigte am 27. Oktober einen Aktienrückkauf über bis zu 2 Mrd. $, der bis September 2029 läuft. VICI muss nichts zurückkaufen, kann aber bei niedrigem Kurs eigene Aktien erwerben. Außerdem hat VICI mit 2,5 Mrd. $ Liquidität Luft für die Refinanzierung. Die Zahl der Mieter wächst, im laufenden Jahr kamen unter anderem Golden Entertainment, Clairvest und mit dem Kauf von Gamehost ein neuer Betreiber in Kanada hinzu.
 
 ### 7. Der Gewinn wächst auch ohne große Zukäufe
 
@@ -60,19 +62,23 @@ Der Umsatz stieg im Hub um 4,1 %, der Gewinn um 3,6 %. Wer eine Aktie sucht, die
 
 ### 1. Wenige Mieter bestimmen das Ergebnis
 
-Caesars und MGM stellen Schätzungen zufolge zusammen rund 70 % der Mieten. Fällt einer der beiden aus oder verlangt niedrigere Mieten, trifft das den Konzern direkt. Mit Caesars verhandelt VICI offenbar bereits über die Zukunft des Vertrags über die regionalen Casinos, einen Zeitplan nennt das Management nicht.
+Caesars stellt 38 % der vertraglichen Jahresmiete, MGM 32 %, zusammen also 70 %. Weitere 9 % entfallen auf den Betreiber des Venetian. Fällt einer der beiden Großen aus oder verlangt niedrigere Mieten, trifft das den Konzern direkt. Mit Caesars verhandelt VICI offenbar bereits über die Zukunft des Vertrags über die regionalen Casinos, einen Zeitplan nennt das Management nicht.
+
+![Anteil der Mieter an der vertraglichen Jahresmiete von VICI, Stand Oktober 2026 (Folie 14 der Präsentation zum dritten Quartal 2026)](/assets/magazin/vici-folie-mieter-anteile.png)
 
 ### 2. Las Vegas ist fast die Hälfte der Miete
 
-Knapp die Hälfte der Einnahmen kommt aus einer einzigen Stadt. Im Sommer wirkte sich der Wegfall der Fluggesellschaft Spirit auf die Besucherzahlen aus. Ein Abschwung in Las Vegas träfe VICI deutlich stärker als einen breit gestreuten Vermieter.
+Die Casinos am Strip von Las Vegas stehen für 46 % der vertraglichen Miete und im dritten Quartal für 48 % der Mieteinnahmen, also knapp die Hälfte aus einer einzigen Stadt. Im Sommer belastete offenbar der Wegfall der Fluggesellschaft Spirit die Besucherzahlen. Ein Abschwung in Las Vegas träfe VICI deutlich stärker als einen breit gestreuten Vermieter.
 
 ### 3. Die Vorsorge für Caesars war hoch
 
-Im dritten Quartal buchte VICI 458 Mio. $ für mögliche Ausfälle, davon 313 Mio. $ für Caesars. Der Gewinn nach Steuern sank dadurch um 55 %. Geld ist nicht abgeflossen, aber die Zahl zeigt, wie der Konzern selbst das Risiko einschätzt.
+Im dritten Quartal buchte VICI 458 Mio. $ für mögliche Ausfälle, davon 313 Mio. $ für Caesars. Anlass war die Herabstufung des Kreditratings von Caesars, mit der eine Ratingagentur die Kapitalstruktur nach der geplanten Übernahme des Konzerns einpreist. Dazu kamen neue Schätzungen für die Verlängerungsperioden des Vertrags über die regionalen Casinos, die ab August 2035 beginnen. Der Gewinn nach Steuern sank dadurch von 762 auf 343 Mio. $, also um 55 %. Geld ist nicht abgeflossen, und der operative Gewinn blieb unberührt, aber die Zahl zeigt, wie VICI das Risiko bei seinem größten Mieter einschätzt.
 
 ### 4. Die Refinanzierung wird teurer
 
-Im Februar 2027 werden Anleihen über 1,5 Mrd. $ fällig, eine davon mit nur 3,75 % Zins. Neue Anleihen kosten VICI zuletzt etwas mehr als 5,4 %. Die Nettoschulden betragen im Hub das 4,5-Fache des operativen Gewinns vor Abschreibungen, die Zinsdeckung liegt bei 4,3. Höhere Zinsen drücken auf den Gewinn und lassen weniger Raum für die Dividendenerhöhung.
+Im Februar 2027 werden zwei Anleihen über je 750 Mio. $ fällig, eine mit 5,75 % und eine mit nur 3,75 % Zins. Die im August ausgegebenen neuen Anleihen kosten 5,4 % bei fünf und 5,75 % bei zehn Jahren Laufzeit. Die Nettoschulden betragen das 4,8-Fache des auf das Jahr hochgerechneten Ergebnisses vor Zinsen, Steuern und Abschreibungen, die Zinsdeckung liegt bei 4,1, die Anleihebedingungen verlangen mindestens 1,5. Die Ratings stehen mit Baa3 und BBB- an der untersten Stufe der Anlagequalität. Höhere Zinsen drücken auf den Gewinn und lassen weniger Raum für die Dividendenerhöhung.
+
+![Verschuldung, Zinsdeckung und Kreditratings von VICI zum 30. September 2026 (Folie 16 der Präsentation zum dritten Quartal 2026)](/assets/magazin/vici-folie-kreditkennzahlen.png)
 
 ### 5. Die Notenbank erhöht die Zinsen
 
@@ -97,6 +103,8 @@ Das ist keine Anlageberatung.
 ## Quellen
 
 - [VICI Properties, Third Quarter 2026 Results, 28.10.2026](https://investors.viciproperties.com/news-releases/news-release-details/vici-properties-inc-announces-third-quarter-2026-results)
+- [VICI Properties, Supplemental Financial & Operating Data, drittes Quartal 2026](https://investors.viciproperties.com)
+- [VICI Properties, Quartalsbericht (10-Q) zum 30. September 2026](https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001705696&type=10-Q)
 - [Investing.com, Earnings call transcript: VICI Properties Q3 2026, 29.10.2026](https://www.investing.com/news/transcripts/earnings-call-transcript-vici-properties-posts-mixed-q3-2026-results-shares-rise-93CH-4984560)
 - [Crawford is an Analyst, VICI’s Scared. I’m Starting to Sweat (a Little), 2026](https://crawfordisananalyst.substack.com/p/vicis-scared-im-starting-to-sweat)
 - [xtb, Marktbericht Börse 27.11.2026](https://www.xtb.com/de/Marktanalysen/Trading-News/boerse-aktuell-nasdaq-erholt-sich-von-der-baerenmarkt-schwelle-27-11-2026)
