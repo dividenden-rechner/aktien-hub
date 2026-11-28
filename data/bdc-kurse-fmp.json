@@ -1,52 +1,52 @@
 {
- "stand": "2026-11-27 04:17 UTC",
+ "stand": "2026-11-28 03:55 UTC",
  "kurse": {
   "HTGC": {
-   "kurs": 15.89,
+   "kurs": 16.1,
    "boerse": "NYSE"
   },
   "TSLX": {
-   "kurs": 17.46,
+   "kurs": 17.61,
    "boerse": "NYSE"
   },
   "MSDL": {
-   "kurs": 13.3,
+   "kurs": 13.41,
    "boerse": "NYSE"
   },
   "PSEC": {
-   "kurs": 1.43,
+   "kurs": 1.4,
    "boerse": "NASDAQ"
   },
   "CSWC": {
-   "kurs": 23.47,
+   "kurs": 23.67,
    "boerse": "NASDAQ"
   },
   "NMFC": {
-   "kurs": 6.82,
+   "kurs": 6.9,
    "boerse": "NASDAQ"
   },
   "CGBD": {
-   "kurs": 10.86,
+   "kurs": 10.9,
    "boerse": "NASDAQ"
   },
   "SLRC": {
-   "kurs": 11.09,
+   "kurs": 11.22,
    "boerse": "NASDAQ"
   },
   "NCDL": {
-   "kurs": 11.6,
+   "kurs": 11.72,
    "boerse": "NYSE"
   },
   "MSIF": {
-   "kurs": 12.12,
+   "kurs": 12.22,
    "boerse": "NYSE"
   },
   "CCAP": {
-   "kurs": 10.07,
+   "kurs": 10.12,
    "boerse": "NASDAQ"
   },
   "CION": {
-   "kurs": 6.05,
+   "kurs": 6.15,
    "boerse": "NYSE"
   },
   "PSBD": {
@@ -54,11 +54,11 @@
    "boerse": "NYSE"
   },
   "SAR": {
-   "kurs": 10.86,
+   "kurs": 11.21,
    "boerse": "NYSE"
   },
   "SCM": {
-   "kurs": 6.18,
+   "kurs": 6.37,
    "boerse": "NYSE"
   },
   "HRZN": {
@@ -66,75 +66,75 @@
    "boerse": "NASDAQ"
   },
   "LIEN": {
-   "kurs": 8.65,
+   "kurs": 8.72,
    "boerse": "NASDAQ"
   },
   "TPVG": {
-   "kurs": 3.67,
+   "kurs": 3.77,
    "boerse": "NYSE"
   },
   "WHF": {
-   "kurs": 8.19,
+   "kurs": 8.24,
    "boerse": "NASDAQ"
   },
   "GECC": {
-   "kurs": 4.95,
+   "kurs": 5.07,
    "boerse": "NASDAQ"
   },
   "OFS": {
-   "kurs": 3.42,
+   "kurs": 3.48,
    "boerse": "NASDAQ"
   },
   "ICMB": {
-   "kurs": 0.9579,
+   "kurs": 0.962,
    "boerse": "NASDAQ"
   },
   "RAND": {
-   "kurs": 8.8752,
+   "kurs": 8.7,
    "boerse": "NASDAQ"
   },
   "GBDC": {
-   "kurs": 12.6,
+   "kurs": 12.69,
    "boerse": "NASDAQ"
   },
   "ARCC": {
-   "kurs": 18.95,
+   "kurs": 19.11,
    "boerse": "NASDAQ"
   },
   "MAIN": {
-   "kurs": 57.69,
+   "kurs": 58.12,
    "boerse": "NYSE"
   },
   "OBDC": {
-   "kurs": 10.99,
+   "kurs": 11.07,
    "boerse": "NYSE"
   },
   "BXSL": {
-   "kurs": 23.22,
+   "kurs": 23.29,
    "boerse": "NYSE"
   },
   "FSK": {
-   "kurs": 11.37,
+   "kurs": 11.6,
    "boerse": "NYSE"
   },
   "OCSL": {
-   "kurs": 12.26,
+   "kurs": 12.33,
    "boerse": "NASDAQ"
   },
   "GSBD": {
-   "kurs": 7.87,
+   "kurs": 7.84,
    "boerse": "NYSE"
   },
   "MFIC": {
-   "kurs": 10.1,
+   "kurs": 10.17,
    "boerse": "NASDAQ"
   },
   "TRIN": {
-   "kurs": 17.31,
+   "kurs": 17.47,
    "boerse": "NYSE"
   },
   "BBDC": {
-   "kurs": 8.52,
+   "kurs": 8.59,
    "boerse": "NYSE"
   },
   "BCSF": {
@@ -142,31 +142,31 @@
    "boerse": "NYSE"
   },
   "PFLT": {
-   "kurs": 6.49,
+   "kurs": 6.58,
    "boerse": "NYSE"
   },
   "FDUS": {
-   "kurs": 18.98,
+   "kurs": 19.19,
    "boerse": "NASDAQ"
   },
   "GAIN": {
-   "kurs": 13.95,
+   "kurs": 14.21,
    "boerse": "NASDAQ"
   },
   "TCPC": {
-   "kurs": 4.24,
+   "kurs": 4.27,
    "boerse": "NASDAQ"
   },
   "GLAD": {
-   "kurs": 18.12,
+   "kurs": 18.27,
    "boerse": "NASDAQ"
   },
   "PNNT": {
-   "kurs": 2.89,
+   "kurs": 2.95,
    "boerse": "NYSE"
   },
   "RWAY": {
-   "kurs": 6.22,
+   "kurs": 6.32,
    "boerse": "NASDAQ"
   },
   "SSSS": {
@@ -178,19 +178,19 @@
    "boerse": "NASDAQ"
   },
   "OXSQ": {
-   "kurs": 0.657,
+   "kurs": 0.6836,
    "boerse": "NASDAQ"
   },
   "KBDC": {
-   "kurs": 12.16,
+   "kurs": 12.2,
    "boerse": "NYSE"
   },
   "PFX": {
-   "kurs": 38.81,
+   "kurs": 41,
    "boerse": "NASDAQ"
   },
   "NSLR": {
-   "kurs": 5.12,
+   "kurs": 5.13,
    "boerse": "NASDAQ"
   }
  },
