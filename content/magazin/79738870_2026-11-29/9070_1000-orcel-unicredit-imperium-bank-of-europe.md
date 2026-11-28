@@ -74,7 +74,7 @@ Zahlen helfen beim Einordnen. Die größten Banken Europas nach Bilanzsumme zum 
 
 Zum Vergleich liegen UniCredit allein auf Platz 39 (1.023) und die Commerzbank auf Platz 59 (693).
 
-UniCredit allein ist damit kleiner als Deutsche Bank und UBS. Zusammen mit der Commerzbank überholt die Gruppe beide knapp, liegt weltweit auf Platz 23 und in Europa auf Platz acht, hinter BNP Paribas, HSBC, Crédit Agricole, Santander, Barclays, BPCE und Société Générale. Das sind rund 1,5 Billionen Euro (UniCredit gut 900 Milliarden, Commerzbank umgerechnet knapp 600 Milliarden). Die drei großen Häuser BNP Paribas, HSBC und Crédit Agricole sind fast doppelt so groß, Santander ist gut ein Viertel größer. Zur Einordnung: Das ist eine Billion und fünfhundert Milliarden, keine Billiarde, und es ist die Summe aller Vermögenswerte in den Büchern, nicht das Geld der Kunden. Eine gemeinsame Zahl für die Kundeneinlagen liegt noch nicht vor. Die Bilanzsumme entspricht grob einem Drittel der jährlichen Wirtschaftsleistung Deutschlands.
+UniCredit allein ist damit kleiner als Deutsche Bank und UBS. Zusammen mit der Commerzbank überholt die Gruppe beide knapp, liegt weltweit auf Platz 23 und in Europa auf Platz acht, hinter BNP Paribas, HSBC, Crédit Agricole, Santander, Barclays, BPCE und Société Générale. Das sind rund 1,5 Billionen Euro (UniCredit gut 900 Milliarden, Commerzbank umgerechnet knapp 600 Milliarden). Die drei großen Häuser BNP Paribas, HSBC und Crédit Agricole sind fast doppelt so groß, Santander ist gut ein Viertel größer. Eine gemeinsame Zahl für die Kundeneinlagen liegt noch nicht vor. Die Bilanzsumme entspricht grob einem Drittel der jährlichen Wirtschaftsleistung Deutschlands.
 
 Der Börsenwert beider Banken liegt zusammen bei rund 165 Milliarden Euro. Wie die beiden Häuser zueinander stehen, zeigt die Gegenüberstellung (Börsenwert vom 25.11., Erträge und Gewinn der ersten neun Monate 2026):
 
@@ -88,7 +88,7 @@ Der Börsenwert beider Banken liegt zusammen bei rund 165 Milliarden Euro. Wie d
 
 Beide Banken verdienen gut. UniCredit gibt für jeden Euro Ertrag 34 Cent aus, die Commerzbank 53 Cent. Dazu kommt die Eigenkapitalrendite: Die Commerzbank erreichte in den ersten neun Monaten 12,4 %, UniCredit lag 2025 bei 19,2 %. Genau in diesem Abstand liegt das Versprechen der Übernahme.
 
-UniCredit ist bisher in 13 Märkten aktiv, von Italien über Deutschland und Österreich bis nach Tschechien, Ungarn, Rumänien und auf den Balkan, mit der mBank kommt Polen dazu. In diesen Ländern leben grob gerechnet gut 250 Millionen Menschen. Das ist die Einwohnerzahl, keine Kundenzahl. Den Sitz behält die Gruppe in Mailand.
+UniCredit ist bisher in 13 Märkten aktiv, von Italien über Deutschland und Österreich bis nach Tschechien, Ungarn, Rumänien und auf den Balkan, mit der mBank kommt Polen dazu. In diesen Ländern leben grob gerechnet gut 250 Millionen Menschen. Den Sitz behält die Gruppe in Mailand.
 
 ## Ist die Dividende gedeckt, und woher kommt das Wachstum?
 
